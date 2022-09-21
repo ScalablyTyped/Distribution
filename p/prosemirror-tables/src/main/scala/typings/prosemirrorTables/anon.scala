@@ -1,7 +1,9 @@
 package typings.prosemirrorTables
 
+import org.scalablytyped.runtime.Instantiable3
+import typings.prosemirrorModel.mod.Node
 import typings.prosemirrorModel.mod.NodeType
-import typings.prosemirrorModel.mod.Schema
+import typings.prosemirrorView.mod.EditorView
 import typings.prosemirrorView.mod.NodeView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,30 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Anchor extends StObject {
+  trait Bottom extends StObject {
     
-    var anchor: Double
-    
-    var head: Double
-  }
-  object Anchor {
-    
-    inline def apply(anchor: Double, head: Double): Anchor = {
-      val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Anchor]
-    }
-    
-    extension [Self <: Anchor](x: Self) {
-      
-      inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
-      
-      inline def setHead(value: Double): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Buttom extends StObject {
-    
-    var buttom: Double
+    var bottom: Double
     
     var left: Double
     
@@ -40,16 +21,16 @@ object anon {
     
     var top: Double
   }
-  object Buttom {
+  object Bottom {
     
-    inline def apply(buttom: Double, left: Double, right: Double, top: Double): Buttom = {
-      val __obj = js.Dynamic.literal(buttom = buttom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Buttom]
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): Bottom = {
+      val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Buttom](x: Self) {
+    extension [Self <: Bottom](x: Self) {
       
-      inline def setButtom(value: Double): Self = StObject.set(x, "buttom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -59,9 +40,11 @@ object anon {
     }
   }
   
-  trait CellMinWidth[S /* <: Schema[js.Any, js.Any] */] extends StObject {
+  trait CellMinWidth extends StObject {
     
-    var View: js.UndefOr[NodeView[S]] = js.undefined
+    var View: js.UndefOr[
+        Instantiable3[/* node */ Node, /* cellMinWidth */ Double, /* view */ EditorView, NodeView]
+      ] = js.undefined
     
     var cellMinWidth: js.UndefOr[Double] = js.undefined
     
@@ -69,12 +52,12 @@ object anon {
   }
   object CellMinWidth {
     
-    inline def apply[S /* <: Schema[js.Any, js.Any] */](): CellMinWidth[S] = {
+    inline def apply(): CellMinWidth = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CellMinWidth[S]]
+      __obj.asInstanceOf[CellMinWidth]
     }
     
-    extension [Self <: CellMinWidth[?], S /* <: Schema[js.Any, js.Any] */](x: Self & CellMinWidth[S]) {
+    extension [Self <: CellMinWidth](x: Self) {
       
       inline def setCellMinWidth(value: Double): Self = StObject.set(x, "cellMinWidth", value.asInstanceOf[js.Any])
       
@@ -84,44 +67,39 @@ object anon {
       
       inline def setHandleWidthUndefined: Self = StObject.set(x, "handleWidth", js.undefined)
       
-      inline def setView(value: NodeView[S]): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
+      inline def setView(value: Instantiable3[/* node */ Node, /* cellMinWidth */ Double, /* view */ EditorView, NodeView]): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
       
       inline def setViewUndefined: Self = StObject.set(x, "View", js.undefined)
     }
   }
   
-  /* Inlined std.Record<prosemirror-tables.prosemirror-tables.TableRoles, prosemirror-model.prosemirror-model.NodeType<any>> */
-  trait RecordTableRolesNodeTypea extends StObject {
+  /* Inlined std.Record<prosemirror-tables.prosemirror-tables.TableRoles, prosemirror-model.prosemirror-model.NodeType> */
+  trait RecordTableRolesNodeType extends StObject {
     
-    var cell: NodeType[js.Any]
+    var cell: NodeType
     
-    var header_cell: NodeType[js.Any]
+    var header_cell: NodeType
     
-    var row: NodeType[js.Any]
+    var row: NodeType
     
-    var table: NodeType[js.Any]
+    var table: NodeType
   }
-  object RecordTableRolesNodeTypea {
+  object RecordTableRolesNodeType {
     
-    inline def apply(
-      cell: NodeType[js.Any],
-      header_cell: NodeType[js.Any],
-      row: NodeType[js.Any],
-      table: NodeType[js.Any]
-    ): RecordTableRolesNodeTypea = {
+    inline def apply(cell: NodeType, header_cell: NodeType, row: NodeType, table: NodeType): RecordTableRolesNodeType = {
       val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], header_cell = header_cell.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RecordTableRolesNodeTypea]
+      __obj.asInstanceOf[RecordTableRolesNodeType]
     }
     
-    extension [Self <: RecordTableRolesNodeTypea](x: Self) {
+    extension [Self <: RecordTableRolesNodeType](x: Self) {
       
-      inline def setCell(value: NodeType[js.Any]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: NodeType): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
-      inline def setHeader_cell(value: NodeType[js.Any]): Self = StObject.set(x, "header_cell", value.asInstanceOf[js.Any])
+      inline def setHeader_cell(value: NodeType): Self = StObject.set(x, "header_cell", value.asInstanceOf[js.Any])
       
-      inline def setRow(value: NodeType[js.Any]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: NodeType): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      inline def setTable(value: NodeType[js.Any]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: NodeType): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
   }
   

@@ -1,7 +1,6 @@
 package typings.vscodeLanguageclient.mod
 
 import typings.vscodeLanguageclient.vscodeLanguageclientStrings.textDocumentSlashrangeFormatting
-import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.DocumentRangeFormattingParams
 import typings.vscodeLanguageserverProtocol.protocolMod.DocumentRangeFormattingRegistrationOptions
 import org.scalablytyped.runtime.StObject
@@ -10,13 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DocumentRangeFormattingRequest {
   
+  @JSImport("vscode-languageclient", "DocumentRangeFormattingRequest.messageDirection")
+  @js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  
   @JSImport("vscode-languageclient", "DocumentRangeFormattingRequest.method")
   @js.native
   val method: textDocumentSlashrangeFormatting = js.native
   
   @JSImport("vscode-languageclient", "DocumentRangeFormattingRequest.type")
   @js.native
-  val `type`: ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
     DocumentRangeFormattingParams, 
     js.Array[typings.vscodeLanguageserverTypes.mod.TextEdit] | Null, 
     scala.Nothing, 

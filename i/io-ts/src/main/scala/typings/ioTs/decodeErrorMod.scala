@@ -28,7 +28,7 @@ object decodeErrorMod {
   
   inline def `lazy`[E](id: String, errors: FreeSemigroup[DecodeError[E]]): DecodeError[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(id.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[DecodeError[E]]
   
-  inline def leaf[E](actual: js.Any, error: E): DecodeError[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("leaf")(actual.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[DecodeError[E]]
+  inline def leaf[E](actual: Any, error: E): DecodeError[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("leaf")(actual.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[DecodeError[E]]
   
   inline def member[E](index: Double, errors: FreeSemigroup[DecodeError[E]]): DecodeError[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("member")(index.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[DecodeError[E]]
   
@@ -68,7 +68,7 @@ object decodeErrorMod {
       __obj.asInstanceOf[typings.ioTs.decodeErrorMod.Lazy_[E]]
     }
     
-    inline def Leaf_[E](actual: js.Any, error: E): typings.ioTs.decodeErrorMod.Leaf_[E] = {
+    inline def Leaf_[E](actual: Any, error: E): typings.ioTs.decodeErrorMod.Leaf_[E] = {
       val __obj = js.Dynamic.literal(_tag = "Leaf", actual = actual.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ioTs.decodeErrorMod.Leaf_[E]]
     }
@@ -191,20 +191,20 @@ object decodeErrorMod {
     
     val _tag: Leaf
     
-    val actual: js.Any
+    val actual: Any
     
     val error: E
   }
   object Leaf_ {
     
-    inline def apply[E](actual: js.Any, error: E): Leaf_[E] = {
+    inline def apply[E](actual: Any, error: E): Leaf_[E] = {
       val __obj = js.Dynamic.literal(_tag = "Leaf", actual = actual.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[Leaf_[E]]
     }
     
     extension [Self <: Leaf_[?], E](x: Self & Leaf_[E]) {
       
-      inline def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
       inline def setError(value: E): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

@@ -13,7 +13,7 @@ object domEventRegisterMod {
   
   @JSImport("wonder.js/dist/es2015/event/binder/DomEventRegister", "DomEventRegister")
   @js.native
-  class DomEventRegister () extends EventRegister {
+  open class DomEventRegister () extends EventRegister {
     
     def getDomHandler(dom: HTMLElement, eventName: EEventName): js.Function = js.native
     
@@ -25,17 +25,17 @@ object domEventRegisterMod {
     def register(
       dom: HTMLElement,
       eventName: EEventName,
-      eventData: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ js.Any,
+      eventData: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ Any,
       handler: js.Function,
       originHandler: js.Function,
       domHandler: js.Function,
       priority: Double
     ): Unit = js.native
     
-    def remove(dom: HTMLElement, eventName: EEventName): js.Any = js.native
-    def remove(dom: HTMLElement, eventName: EEventName, handler: js.Function): js.Any = js.native
-    def remove(eventName: EEventName): js.Any = js.native
-    def remove(eventName: EEventName, handler: js.Function): js.Any = js.native
+    def remove(dom: HTMLElement, eventName: EEventName): Any = js.native
+    def remove(dom: HTMLElement, eventName: EEventName, handler: js.Function): Any = js.native
+    def remove(eventName: EEventName): Any = js.native
+    def remove(eventName: EEventName, handler: js.Function): Any = js.native
   }
   /* static members */
   object DomEventRegister {
@@ -44,7 +44,7 @@ object domEventRegisterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+    inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
   }
   
   trait DomEventRegisterData extends StObject {
@@ -53,7 +53,7 @@ object domEventRegisterMod {
     
     var domHandler: js.Function
     
-    var eventData: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ js.Any
+    var eventData: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ Any
     
     var handler: js.Function
     
@@ -67,7 +67,7 @@ object domEventRegisterMod {
     
     inline def apply(
       domHandler: js.Function,
-      eventData: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ js.Any,
+      eventData: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ Any,
       handler: js.Function,
       originHandler: js.Function,
       priority: Double
@@ -85,7 +85,7 @@ object domEventRegisterMod {
       inline def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
       
       inline def setEventData(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<any> */ Any
       ): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
       
       inline def setHandler(value: js.Function): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])

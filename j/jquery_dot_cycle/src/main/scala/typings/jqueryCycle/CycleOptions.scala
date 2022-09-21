@@ -24,10 +24,10 @@ trait CycleOptions extends StObject {
   var allowPagerClickBubble: js.UndefOr[Boolean] = js.undefined
   
   // allows or prevents click event on pager anchors from bubbling
-  var animIn: js.UndefOr[js.Any] = js.undefined
+  var animIn: js.UndefOr[Any] = js.undefined
   
   // properties that define how the slide animates in
-  var animOut: js.UndefOr[js.Any] = js.undefined
+  var animOut: js.UndefOr[Any] = js.undefined
   
   // properties that define how the slide animates out
   var aspect: js.UndefOr[Boolean] = js.undefined
@@ -71,10 +71,10 @@ trait CycleOptions extends StObject {
   var continuous: js.UndefOr[Boolean] = js.undefined
   
   // true to start next transition immediately after current one completes
-  var cssAfter: js.UndefOr[js.Any] = js.undefined
+  var cssAfter: js.UndefOr[Any] = js.undefined
   
   // properties that defined the state of the slide after transitioning out
-  var cssBefore: js.UndefOr[js.Any] = js.undefined
+  var cssBefore: js.UndefOr[Any] = js.undefined
   
   // properties that define the initial state of the slide before transitioning in
   var delay: js.UndefOr[Double] = js.undefined
@@ -113,7 +113,7 @@ trait CycleOptions extends StObject {
   ] = js.undefined
   
   // function used to control the transition: function(currSlideElement, nextSlideElement, options, afterCalback, forwardFlag)
-  var height: js.UndefOr[js.Any] = js.undefined
+  var height: js.UndefOr[Any] = js.undefined
   
   // container height (if the 'fit' option is true, the slides will be set to this height as well)
   var manualTrump: js.UndefOr[Boolean] = js.undefined
@@ -122,7 +122,7 @@ trait CycleOptions extends StObject {
   var metaAttr: js.UndefOr[String] = js.undefined
   
   // data- attribute that holds the option data for the slideshow
-  var next: js.UndefOr[js.Any] = js.undefined
+  var next: js.UndefOr[Any] = js.undefined
   
   // element, jQuery object, or jQuery selector string for the element to use as event trigger for next slide
   var nowrap: js.UndefOr[Boolean] = js.undefined
@@ -141,7 +141,7 @@ trait CycleOptions extends StObject {
   ] = js.undefined
   
   // callback fn for prev/next events: function(isNext, zeroBasedSlideIndex, slideElement)
-  var pager: js.UndefOr[js.Any] = js.undefined
+  var pager: js.UndefOr[Any] = js.undefined
   
   // element, jQuery object, or jQuery selector string for the element to use as pager container
   var pagerAnchorBuilder: js.UndefOr[js.Function2[/* index */ Double, /* DOMelement */ Element, String]] = js.undefined
@@ -156,7 +156,7 @@ trait CycleOptions extends StObject {
   var pauseOnPagerHover: js.UndefOr[Boolean] = js.undefined
   
   // true to pause when hovering over pager link
-  var prev: js.UndefOr[js.Any] = js.undefined
+  var prev: js.UndefOr[Any] = js.undefined
   
   // element, jQuery object, or jQuery selector string for the element to use as event trigger for previous slide
   var prevNextEvent: js.UndefOr[String] = js.undefined
@@ -177,7 +177,7 @@ trait CycleOptions extends StObject {
   var rev: js.UndefOr[Boolean] = js.undefined
   
   // causes animations to transition in reverse (for effects that support it such as scrollHorz/scrollVert/shuffle)
-  var shuffle: js.UndefOr[js.Any] = js.undefined
+  var shuffle: js.UndefOr[Any] = js.undefined
   
   // coords for shuffle animation, ex: { top:15, left: 200 }
   var skipInitializationCallbacks: js.UndefOr[Boolean] = js.undefined
@@ -189,13 +189,13 @@ trait CycleOptions extends StObject {
   var slideResize: js.UndefOr[Boolean] = js.undefined
   
   // force slide width/height to fixed size before every transition
-  var speed: js.UndefOr[js.Any] = js.undefined
+  var speed: js.UndefOr[Any] = js.undefined
   
   // speed of the transition (any valid fx speed value)
-  var speedIn: js.UndefOr[js.Any] = js.undefined
+  var speedIn: js.UndefOr[Any] = js.undefined
   
   // speed of the 'in' transition
-  var speedOut: js.UndefOr[js.Any] = js.undefined
+  var speedOut: js.UndefOr[Any] = js.undefined
   
   // speed of the 'out' transition
   var startingSlide: js.UndefOr[Double] = js.undefined
@@ -219,11 +219,11 @@ trait CycleOptions extends StObject {
   
   // callback for determining per-slide timeout value:  function(currSlideElement, nextSlideElement, options, forwardFlag)
   var updateActivePagerLink: js.UndefOr[
-    js.Function3[/* pager */ js.Any, /* currSlide */ Double, /* clsName */ String, Unit]
+    js.Function3[/* pager */ Any, /* currSlide */ Double, /* clsName */ String, Unit]
   ] = js.undefined
   
   // callback fn invoked to update the active pager link (adds/removes activePagerClass style)
-  var width: js.UndefOr[js.Any] = js.undefined
+  var width: js.UndefOr[Any] = js.undefined
 }
 object CycleOptions {
   
@@ -248,11 +248,11 @@ object CycleOptions {
     
     inline def setAllowPagerClickBubbleUndefined: Self = StObject.set(x, "allowPagerClickBubble", js.undefined)
     
-    inline def setAnimIn(value: js.Any): Self = StObject.set(x, "animIn", value.asInstanceOf[js.Any])
+    inline def setAnimIn(value: Any): Self = StObject.set(x, "animIn", value.asInstanceOf[js.Any])
     
     inline def setAnimInUndefined: Self = StObject.set(x, "animIn", js.undefined)
     
-    inline def setAnimOut(value: js.Any): Self = StObject.set(x, "animOut", value.asInstanceOf[js.Any])
+    inline def setAnimOut(value: Any): Self = StObject.set(x, "animOut", value.asInstanceOf[js.Any])
     
     inline def setAnimOutUndefined: Self = StObject.set(x, "animOut", js.undefined)
     
@@ -302,11 +302,11 @@ object CycleOptions {
     
     inline def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
     
-    inline def setCssAfter(value: js.Any): Self = StObject.set(x, "cssAfter", value.asInstanceOf[js.Any])
+    inline def setCssAfter(value: Any): Self = StObject.set(x, "cssAfter", value.asInstanceOf[js.Any])
     
     inline def setCssAfterUndefined: Self = StObject.set(x, "cssAfter", js.undefined)
     
-    inline def setCssBefore(value: js.Any): Self = StObject.set(x, "cssBefore", value.asInstanceOf[js.Any])
+    inline def setCssBefore(value: Any): Self = StObject.set(x, "cssBefore", value.asInstanceOf[js.Any])
     
     inline def setCssBeforeUndefined: Self = StObject.set(x, "cssBefore", js.undefined)
     
@@ -348,7 +348,7 @@ object CycleOptions {
     
     inline def setFxUndefined: Self = StObject.set(x, "fx", js.undefined)
     
-    inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
@@ -360,7 +360,7 @@ object CycleOptions {
     
     inline def setMetaAttrUndefined: Self = StObject.set(x, "metaAttr", js.undefined)
     
-    inline def setNext(value: js.Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
@@ -378,7 +378,7 @@ object CycleOptions {
     
     inline def setOnPrevNextEventUndefined: Self = StObject.set(x, "onPrevNextEvent", js.undefined)
     
-    inline def setPager(value: js.Any): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+    inline def setPager(value: Any): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
     
     inline def setPagerAnchorBuilder(value: (/* index */ Double, /* DOMelement */ Element) => String): Self = StObject.set(x, "pagerAnchorBuilder", js.Any.fromFunction2(value))
     
@@ -398,7 +398,7 @@ object CycleOptions {
     
     inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
     
-    inline def setPrev(value: js.Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    inline def setPrev(value: Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
     inline def setPrevNextEvent(value: String): Self = StObject.set(x, "prevNextEvent", value.asInstanceOf[js.Any])
     
@@ -426,7 +426,7 @@ object CycleOptions {
     
     inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
-    inline def setShuffle(value: js.Any): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
+    inline def setShuffle(value: Any): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
     
     inline def setShuffleUndefined: Self = StObject.set(x, "shuffle", js.undefined)
     
@@ -442,13 +442,13 @@ object CycleOptions {
     
     inline def setSlideResizeUndefined: Self = StObject.set(x, "slideResize", js.undefined)
     
-    inline def setSpeed(value: js.Any): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Any): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    inline def setSpeedIn(value: js.Any): Self = StObject.set(x, "speedIn", value.asInstanceOf[js.Any])
+    inline def setSpeedIn(value: Any): Self = StObject.set(x, "speedIn", value.asInstanceOf[js.Any])
     
     inline def setSpeedInUndefined: Self = StObject.set(x, "speedIn", js.undefined)
     
-    inline def setSpeedOut(value: js.Any): Self = StObject.set(x, "speedOut", value.asInstanceOf[js.Any])
+    inline def setSpeedOut(value: Any): Self = StObject.set(x, "speedOut", value.asInstanceOf[js.Any])
     
     inline def setSpeedOutUndefined: Self = StObject.set(x, "speedOut", js.undefined)
     
@@ -472,11 +472,11 @@ object CycleOptions {
     
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    inline def setUpdateActivePagerLink(value: (/* pager */ js.Any, /* currSlide */ Double, /* clsName */ String) => Unit): Self = StObject.set(x, "updateActivePagerLink", js.Any.fromFunction3(value))
+    inline def setUpdateActivePagerLink(value: (/* pager */ Any, /* currSlide */ Double, /* clsName */ String) => Unit): Self = StObject.set(x, "updateActivePagerLink", js.Any.fromFunction3(value))
     
     inline def setUpdateActivePagerLinkUndefined: Self = StObject.set(x, "updateActivePagerLink", js.undefined)
     
-    inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

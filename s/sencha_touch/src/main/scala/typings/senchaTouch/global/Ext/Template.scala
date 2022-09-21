@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.Template")
 @js.native
-class Template ()
+open class Template ()
   extends StObject
      with typings.senchaTouch.Ext.Template
 /* static members */
@@ -22,34 +22,34 @@ object Template {
     * @param members Object
     */
   inline def addMembers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMembers")().asInstanceOf[Unit]
-  inline def addMembers(members: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMembers")(members.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addMembers(members: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMembers")(members.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Add  override static properties of this class
     * @param members Object
     * @returns Ext.Base this
     */
   inline def addStatics(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("addStatics")().asInstanceOf[IBase]
-  inline def addStatics(members: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("addStatics")(members.asInstanceOf[js.Any]).asInstanceOf[IBase]
+  inline def addStatics(members: Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("addStatics")(members.asInstanceOf[js.Any]).asInstanceOf[IBase]
   
   /** [Method]
     * @param args Object
     */
   inline def callParent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[Unit]
-  inline def callParent(args: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def callParent(args: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Create a new instance of this Class
     * @returns Object the created instance.
     */
-  inline def create(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
+  inline def create(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Any]
   
   /** [Method] Create aliases for existing prototype methods
     * @param alias String/Object The new method name, or an object to set multiple aliases. See flexSetter
     * @param origin String/Object The original method name
     */
   inline def createAlias(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")().asInstanceOf[Unit]
-  inline def createAlias(alias: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def createAlias(alias: js.Any, origin: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def createAlias(alias: Unit, origin: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createAlias(alias: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def createAlias(alias: Any, origin: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createAlias(alias: Unit, origin: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createAlias")(alias.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Creates a template from the passed element s value display none textarea preferred or innerHTML
     * @param el String/HTMLElement A DOM element or its id.
@@ -57,9 +57,9 @@ object Template {
     * @returns Ext.Template The created template.
     */
   inline def from(): ITemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[ITemplate]
-  inline def from(el: js.Any): ITemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(el.asInstanceOf[js.Any]).asInstanceOf[ITemplate]
-  inline def from(el: js.Any, config: js.Any): ITemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(el.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ITemplate]
-  inline def from(el: Unit, config: js.Any): ITemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(el.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ITemplate]
+  inline def from(el: Any): ITemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(el.asInstanceOf[js.Any]).asInstanceOf[ITemplate]
+  inline def from(el: Any, config: Any): ITemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(el.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ITemplate]
+  inline def from(el: Unit, config: Any): ITemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(el.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ITemplate]
   
   /** [Method] Get the current class name in string format
     * @returns String className
@@ -71,5 +71,5 @@ object Template {
     * @returns Ext.Base this class
     */
   inline def `override`(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("override")().asInstanceOf[IBase]
-  inline def `override`(members: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("override")(members.asInstanceOf[js.Any]).asInstanceOf[IBase]
+  inline def `override`(members: Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("override")(members.asInstanceOf[js.Any]).asInstanceOf[IBase]
 }

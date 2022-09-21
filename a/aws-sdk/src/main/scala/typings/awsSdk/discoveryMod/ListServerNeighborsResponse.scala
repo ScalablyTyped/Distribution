@@ -36,7 +36,7 @@ object ListServerNeighborsResponse {
     
     inline def setNeighbors(value: NeighborDetailsList): Self = StObject.set(x, "neighbors", value.asInstanceOf[js.Any])
     
-    inline def setNeighborsVarargs(value: NeighborConnectionDetail*): Self = StObject.set(x, "neighbors", js.Array(value :_*))
+    inline def setNeighborsVarargs(value: NeighborConnectionDetail*): Self = StObject.set(x, "neighbors", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

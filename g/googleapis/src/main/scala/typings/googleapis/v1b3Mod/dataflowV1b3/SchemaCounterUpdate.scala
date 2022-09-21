@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An update to a Counter sent from a worker.
-  */
 trait SchemaCounterUpdate extends StObject {
   
   /**
     * Boolean value for And, Or.
     */
-  var boolean: js.UndefOr[Boolean] = js.undefined
+  var boolean: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * True if this counter is reported as the total cumulative aggregate value
-    * accumulated since the worker started working on this WorkItem. By default
-    * this is false, indicating that this counter is reported as a delta.
+    * True if this counter is reported as the total cumulative aggregate value accumulated since the worker started working on this WorkItem. By default this is false, indicating that this counter is reported as a delta.
     */
-  var cumulative: js.UndefOr[Boolean] = js.undefined
+  var cumulative: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Distribution data
@@ -29,7 +24,7 @@ trait SchemaCounterUpdate extends StObject {
   /**
     * Floating point value for Sum, Max, Min.
     */
-  var floatingPoint: js.UndefOr[Double] = js.undefined
+  var floatingPoint: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * List of floating point numbers, for Set.
@@ -64,7 +59,7 @@ trait SchemaCounterUpdate extends StObject {
   /**
     * Value for internally-defined counters used by the Dataflow service.
     */
-  var internal: js.UndefOr[js.Any] = js.undefined
+  var internal: js.UndefOr[Any | Null] = js.undefined
   
   /**
     * Counter name and aggregation type.
@@ -72,10 +67,9 @@ trait SchemaCounterUpdate extends StObject {
   var nameAndKind: js.UndefOr[SchemaNameAndKind] = js.undefined
   
   /**
-    * The service-generated short identifier for this counter. The short_id
-    * -&gt; (name, metadata) mapping is constant for the lifetime of a job.
+    * The service-generated short identifier for this counter. The short_id -\> (name, metadata) mapping is constant for the lifetime of a job.
     */
-  var shortId: js.UndefOr[String] = js.undefined
+  var shortId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * List of strings, for Set.
@@ -98,9 +92,13 @@ object SchemaCounterUpdate {
     
     inline def setBoolean(value: Boolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
+    inline def setBooleanNull: Self = StObject.set(x, "boolean", null)
+    
     inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
     
     inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    
+    inline def setCumulativeNull: Self = StObject.set(x, "cumulative", null)
     
     inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
     
@@ -117,6 +115,8 @@ object SchemaCounterUpdate {
     inline def setFloatingPointMean(value: SchemaFloatingPointMean): Self = StObject.set(x, "floatingPointMean", value.asInstanceOf[js.Any])
     
     inline def setFloatingPointMeanUndefined: Self = StObject.set(x, "floatingPointMean", js.undefined)
+    
+    inline def setFloatingPointNull: Self = StObject.set(x, "floatingPoint", null)
     
     inline def setFloatingPointUndefined: Self = StObject.set(x, "floatingPoint", js.undefined)
     
@@ -136,7 +136,9 @@ object SchemaCounterUpdate {
     
     inline def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
     
-    inline def setInternal(value: js.Any): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+    inline def setInternal(value: Any): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+    
+    inline def setInternalNull: Self = StObject.set(x, "internal", null)
     
     inline def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
     
@@ -145,6 +147,8 @@ object SchemaCounterUpdate {
     inline def setNameAndKindUndefined: Self = StObject.set(x, "nameAndKind", js.undefined)
     
     inline def setShortId(value: String): Self = StObject.set(x, "shortId", value.asInstanceOf[js.Any])
+    
+    inline def setShortIdNull: Self = StObject.set(x, "shortId", null)
     
     inline def setShortIdUndefined: Self = StObject.set(x, "shortId", js.undefined)
     

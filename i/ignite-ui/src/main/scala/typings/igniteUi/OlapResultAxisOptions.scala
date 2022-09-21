@@ -10,7 +10,7 @@ trait OlapResultAxisOptions
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Optional="false" the count of the $.ig.OlapResultAxisMember objects of each tuple.
@@ -20,7 +20,7 @@ trait OlapResultAxisOptions
   /**
     * Optional="false" array of $.ig.OlapResultTuple objects which form the axis.
     */
-  var tuples: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var tuples: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object OlapResultAxisOptions {
   
@@ -35,10 +35,10 @@ object OlapResultAxisOptions {
     
     inline def setTupleSizeUndefined: Self = StObject.set(x, "tupleSize", js.undefined)
     
-    inline def setTuples(value: js.Array[js.Any]): Self = StObject.set(x, "tuples", value.asInstanceOf[js.Any])
+    inline def setTuples(value: js.Array[Any]): Self = StObject.set(x, "tuples", value.asInstanceOf[js.Any])
     
     inline def setTuplesUndefined: Self = StObject.set(x, "tuples", js.undefined)
     
-    inline def setTuplesVarargs(value: js.Any*): Self = StObject.set(x, "tuples", js.Array(value :_*))
+    inline def setTuplesVarargs(value: Any*): Self = StObject.set(x, "tuples", js.Array(value*))
   }
 }

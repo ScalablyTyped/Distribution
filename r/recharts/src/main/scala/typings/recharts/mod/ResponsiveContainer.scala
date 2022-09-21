@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "ResponsiveContainer")
 @js.native
-class ResponsiveContainer protected ()
-  extends Component[ResponsiveContainerProps, ContainerSize, js.Any] {
+open class ResponsiveContainer protected () extends Component[ResponsiveContainerProps, ContainerSize, Any] {
   def this(props: ResponsiveContainerProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ResponsiveContainerProps, context: js.Any) = this()
+  def this(props: ResponsiveContainerProps, context: Any) = this()
 }

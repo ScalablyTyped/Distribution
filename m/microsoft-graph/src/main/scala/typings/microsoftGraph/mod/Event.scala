@@ -9,14 +9,14 @@ trait Event
      with OutlookItem {
   
   /**
-    * True if the meeting organizer allows invitees to propose a new time when responding, false otherwise. Optional. Default
-    * is true.
+    * true if the meeting organizer allows invitees to propose a new time when responding; otherwise, false. Optional.
+    * Default is true.
     */
   var allowNewTimeProposals: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
-    * The collection of fileAttachment and itemAttachment attachments for the event. Navigation property. Read-only.
-    * Nullable.
+    * The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation
+    * property. Read-only. Nullable.
     */
   var attachments: js.UndefOr[NullableOption[js.Array[Attachment]]] = js.undefined
   
@@ -35,11 +35,17 @@ trait Event
   // The date, time, and time zone that the event ends. By default, the end time is in UTC.
   var end: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
-  // The collection of open extensions defined for the event. Read-only. Nullable.
+  // The collection of open extensions defined for the event. Nullable.
   var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.undefined
   
   // Set to true if the event has attachments.
   var hasAttachments: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  /**
+    * When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list. Default is
+    * false.
+    */
+  var hideAttendees: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series.
@@ -47,129 +53,73 @@ trait Event
     */
   var iCalUId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The importance of the event. The possible values are: low, normal, high.
   var importance: js.UndefOr[NullableOption[Importance]] = js.undefined
   
-  // The instances of the event. Navigation property. Read-only. Nullable.
+  /**
+    * The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are
+    * part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been
+    * cancelled from the series. Navigation property. Read-only. Nullable.
+    */
   var instances: js.UndefOr[NullableOption[js.Array[Event]]] = js.undefined
   
-  // Set to true if the event lasts all day.
   var isAllDay: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // Set to true if the event has been canceled.
   var isCancelled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   var isDraft: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // True if this event has online meeting information, false otherwise. Default is false. Optional.
   var isOnlineMeeting: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  /**
-    * Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event
-    * (specified by the organizer property of the event). This also applies if a delegate organized the event on behalf of
-    * the owner.
-    */
   var isOrganizer: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // Set to true if an alert is set to remind the user of the event.
   var isReminderOn: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // The location of the event.
   var location: js.UndefOr[NullableOption[Location]] = js.undefined
   
-  /**
-    * The locations where the event is held or attended from. The location and locations properties always correspond with
-    * each other. If you update the location property, any prior locations in the locations collection would be removed and
-    * replaced by the new location value.
-    */
   var locations: js.UndefOr[NullableOption[js.Array[Location]]] = js.undefined
   
   // The collection of multi-value extended properties defined for the event. Read-only. Nullable.
   var multiValueExtendedProperties: js.UndefOr[NullableOption[js.Array[MultiValueLegacyExtendedProperty]]] = js.undefined
   
-  // Details for an attendee to join the meeting online. Read-only.
   var onlineMeeting: js.UndefOr[NullableOption[OnlineMeetingInfo]] = js.undefined
   
-  /**
-    * Represents the online meeting service provider. The possible values are teamsForBusiness, skypeForBusiness, and
-    * skypeForConsumer. Optional.
-    */
   var onlineMeetingProvider: js.UndefOr[NullableOption[OnlineMeetingProviderType]] = js.undefined
   
-  /**
-    * A URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as
-    * a Skype meeting. Read-only.
-    */
   var onlineMeetingUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The organizer of the event.
   var organizer: js.UndefOr[NullableOption[Recipient]] = js.undefined
   
-  /**
-    * The end time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy
-    * custom time zone was set in desktop Outlook.
-    */
   var originalEndTimeZone: js.UndefOr[NullableOption[String]] = js.undefined
   
-  /**
-    * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
-    * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
-    */
   var originalStart: js.UndefOr[NullableOption[String]] = js.undefined
   
-  /**
-    * The start time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a
-    * legacy custom time zone was set in desktop Outlook.
-    */
   var originalStartTimeZone: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The recurrence pattern for the event.
   var recurrence: js.UndefOr[NullableOption[PatternedRecurrence]] = js.undefined
   
-  // The number of minutes before the event start time that the reminder alert occurs.
   var reminderMinutesBeforeStart: js.UndefOr[NullableOption[Double]] = js.undefined
   
-  // Default is true, which represents the organizer would like an invitee to send a response to the event.
   var responseRequested: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // Indicates the type of response sent in response to an event message.
   var responseStatus: js.UndefOr[NullableOption[ResponseStatus]] = js.undefined
   
-  // The possible values are: normal, personal, private, confidential.
   var sensitivity: js.UndefOr[NullableOption[Sensitivity]] = js.undefined
   
-  // The ID for the recurring series master item, if this event is part of a recurring series.
   var seriesMasterId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The status to show. The possible values are: free, tentative, busy, oof, workingElsewhere, unknown.
   var showAs: js.UndefOr[NullableOption[FreeBusyStatus]] = js.undefined
   
   // The collection of single-value extended properties defined for the event. Read-only. Nullable.
   var singleValueExtendedProperties: js.UndefOr[NullableOption[js.Array[SingleValueLegacyExtendedProperty]]] = js.undefined
   
-  // The date, time, and time zone that the event starts. By default, the start time is in UTC.
   var start: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
-  // The text of the event's subject line.
   var subject: js.UndefOr[NullableOption[String]] = js.undefined
   
-  /**
-    * A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client
-    * retries to create the same event. This is useful when low network connectivity causes the client to time out before
-    * receiving a response from the server for the client's prior create-event request. After you set transactionId when
-    * creating an event, you cannot change transactionId in a subsequent update. This property is only returned in a response
-    * payload if an app has set it. Optional.
-    */
   var transactionId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The event type. The possible values are: singleInstance, occurrence, exception, seriesMaster. Read-only.
   var `type`: js.UndefOr[NullableOption[EventType]] = js.undefined
   
-  /**
-    * The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in
-    * to your mailbox. Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an
-    * iFrame.
-    */
   var webLink: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Event {
@@ -193,7 +143,7 @@ object Event {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value*))
     
     inline def setAttendees(value: NullableOption[js.Array[Attendee]]): Self = StObject.set(x, "attendees", value.asInstanceOf[js.Any])
     
@@ -201,7 +151,7 @@ object Event {
     
     inline def setAttendeesUndefined: Self = StObject.set(x, "attendees", js.undefined)
     
-    inline def setAttendeesVarargs(value: Attendee*): Self = StObject.set(x, "attendees", js.Array(value :_*))
+    inline def setAttendeesVarargs(value: Attendee*): Self = StObject.set(x, "attendees", js.Array(value*))
     
     inline def setBody(value: NullableOption[ItemBody]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
@@ -233,13 +183,19 @@ object Event {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setHasAttachments(value: NullableOption[Boolean]): Self = StObject.set(x, "hasAttachments", value.asInstanceOf[js.Any])
     
     inline def setHasAttachmentsNull: Self = StObject.set(x, "hasAttachments", null)
     
     inline def setHasAttachmentsUndefined: Self = StObject.set(x, "hasAttachments", js.undefined)
+    
+    inline def setHideAttendees(value: NullableOption[Boolean]): Self = StObject.set(x, "hideAttendees", value.asInstanceOf[js.Any])
+    
+    inline def setHideAttendeesNull: Self = StObject.set(x, "hideAttendees", null)
+    
+    inline def setHideAttendeesUndefined: Self = StObject.set(x, "hideAttendees", js.undefined)
     
     inline def setICalUId(value: NullableOption[String]): Self = StObject.set(x, "iCalUId", value.asInstanceOf[js.Any])
     
@@ -259,7 +215,7 @@ object Event {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    inline def setInstancesVarargs(value: Event*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: Event*): Self = StObject.set(x, "instances", js.Array(value*))
     
     inline def setIsAllDay(value: NullableOption[Boolean]): Self = StObject.set(x, "isAllDay", value.asInstanceOf[js.Any])
     
@@ -309,7 +265,7 @@ object Event {
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setMultiValueExtendedProperties(value: NullableOption[js.Array[MultiValueLegacyExtendedProperty]]): Self = StObject.set(x, "multiValueExtendedProperties", value.asInstanceOf[js.Any])
     
@@ -317,7 +273,7 @@ object Event {
     
     inline def setMultiValueExtendedPropertiesUndefined: Self = StObject.set(x, "multiValueExtendedProperties", js.undefined)
     
-    inline def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value :_*))
+    inline def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value*))
     
     inline def setOnlineMeeting(value: NullableOption[OnlineMeetingInfo]): Self = StObject.set(x, "onlineMeeting", value.asInstanceOf[js.Any])
     
@@ -409,7 +365,7 @@ object Event {
     
     inline def setSingleValueExtendedPropertiesUndefined: Self = StObject.set(x, "singleValueExtendedProperties", js.undefined)
     
-    inline def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value :_*))
+    inline def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value*))
     
     inline def setStart(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     

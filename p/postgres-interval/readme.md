@@ -1,7 +1,7 @@
 
 # Scala.js typings for postgres-interval
 
-Typings are for version 1.2.0
+Typings are for version 4.0.0
 
 ## Library description:
 Parse Postgres interval columns
@@ -10,10 +10,10 @@ Parse Postgres interval columns
 | ------------------ | :-------------: |
 | Full name          | postgres-interval |
 | Keywords           | postgres, interval, parser |
-| # releases         | 5 |
-| # dependents       | 14 |
-| # downloads        | 66704578 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1987453E7 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](https://github.com/bendrucker/postgres-interval#readme)

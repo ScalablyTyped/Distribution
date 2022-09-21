@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with BlockParent
      with Loop
      with Scopable
+     with Standardized
      with Statement
      with While {
   

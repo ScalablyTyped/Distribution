@@ -1,6 +1,5 @@
 package typings.xdate
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object mod {
   //------------
   //Constructors
   //------------
-  class ^ ()
+  open class ^ ()
     extends StObject
        with XDate {
     /**
@@ -29,7 +28,7 @@ object mod {
       * constructor
       * @param {Date} [nativeDate] - JavaScript native date
       */
-    def this(nativeDate: Date) = this()
+    def this(nativeDate: js.Date) = this()
     def this(utcmode: Boolean) = this()
     /**
       * constructor
@@ -37,7 +36,7 @@ object mod {
     def this(xdate: XDate) = this()
     def this(dateString: String, utcmode: Boolean) = this()
     def this(milliseconds: Double, utcmode: Boolean) = this()
-    def this(nativeDate: Date, utcmode: Boolean) = this()
+    def this(nativeDate: js.Date, utcmode: Boolean) = this()
     def this(xdate: XDate, utcmode: Boolean) = this()
     /**
       * constructor
@@ -624,7 +623,7 @@ object mod {
     /*
       *Returns a conversion to a native Date
       */
-    def toDate(): Date = js.native
+    def toDate(): js.Date = js.native
     
     /*
       *Same as native Date's toDateString
@@ -746,11 +745,11 @@ object mod {
       
       inline def setDayNamesShortUndefined: Self = StObject.set(x, "dayNamesShort", js.undefined)
       
-      inline def setDayNamesShortVarargs(value: String*): Self = StObject.set(x, "dayNamesShort", js.Array(value :_*))
+      inline def setDayNamesShortVarargs(value: String*): Self = StObject.set(x, "dayNamesShort", js.Array(value*))
       
       inline def setDayNamesUndefined: Self = StObject.set(x, "dayNames", js.undefined)
       
-      inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
+      inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value*))
       
       inline def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
       
@@ -758,11 +757,11 @@ object mod {
       
       inline def setMonthNamesShortUndefined: Self = StObject.set(x, "monthNamesShort", js.undefined)
       
-      inline def setMonthNamesShortVarargs(value: String*): Self = StObject.set(x, "monthNamesShort", js.Array(value :_*))
+      inline def setMonthNamesShortVarargs(value: String*): Self = StObject.set(x, "monthNamesShort", js.Array(value*))
       
       inline def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
       
-      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value*))
       
       inline def setPmDesignator(value: String): Self = StObject.set(x, "pmDesignator", value.asInstanceOf[js.Any])
       

@@ -13,7 +13,7 @@ object http2ServerMod {
   
   @JSImport("roads-server/types/http2Server", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Server {
     /**
@@ -40,7 +40,7 @@ object http2ServerMod {
       * @param {object} headers
       */
     /* protected */ /* CompleteClass */
-    override def onStream(stream: ServerHttp2Stream, headers: StringDictionary[js.Any]): Unit = js.native
+    override def onStream(stream: ServerHttp2Stream, headers: StringDictionary[Any]): Unit = js.native
     
     /**
       * This is the road object that will handle all requests
@@ -84,7 +84,7 @@ object http2ServerMod {
       * @param {ServerHttp2Stream} stream
       * @param {object} headers
       */
-    /* protected */ def onStream(stream: ServerHttp2Stream, headers: StringDictionary[js.Any]): Unit
+    /* protected */ def onStream(stream: ServerHttp2Stream, headers: StringDictionary[Any]): Unit
     
     /**
       * This is the road object that will handle all requests
@@ -111,7 +111,7 @@ object http2ServerMod {
     
     inline def apply(
       listen: (Double, String) => Http2Server,
-      onStream: (ServerHttp2Stream, StringDictionary[js.Any]) => Unit,
+      onStream: (ServerHttp2Stream, StringDictionary[Any]) => Unit,
       road: Road,
       sendResponse: (ServerHttp2Stream, Response) => Unit,
       server: Http2Server
@@ -124,7 +124,7 @@ object http2ServerMod {
       
       inline def setListen(value: (Double, String) => Http2Server): Self = StObject.set(x, "listen", js.Any.fromFunction2(value))
       
-      inline def setOnStream(value: (ServerHttp2Stream, StringDictionary[js.Any]) => Unit): Self = StObject.set(x, "onStream", js.Any.fromFunction2(value))
+      inline def setOnStream(value: (ServerHttp2Stream, StringDictionary[Any]) => Unit): Self = StObject.set(x, "onStream", js.Any.fromFunction2(value))
       
       inline def setRoad(value: Road): Self = StObject.set(x, "road", value.asInstanceOf[js.Any])
       

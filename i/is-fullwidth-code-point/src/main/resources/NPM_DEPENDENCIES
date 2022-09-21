@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-fullwidth-code-point" : "3.0.0"
+      "is-fullwidth-code-point" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "is-fullwidth-code-point" : "3.0.0"
+      "is-fullwidth-code-point" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

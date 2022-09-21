@@ -35,7 +35,7 @@ object ISearch {
     
     inline def setData(value: js.Array[IObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: IObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: IObject*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setPaging(value: Next): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
     

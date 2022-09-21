@@ -8,7 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matrix-appservice-bridge", "PrometheusMetrics")
 @js.native
-class PrometheusMetrics ()
+/**
+  * Constructs a new Prometheus Metrics instance.
+  * The metric `app_version` will be set here, so ensure that `getBridgeVersion`
+  * will return the correct bridge version.
+  * @param register A custom registry to provide, if not using the global default.
+  */
+open class PrometheusMetrics ()
   extends typings.matrixAppserviceBridge.prometheusmetricsMod.PrometheusMetrics {
   def this(register: Registry) = this()
 }

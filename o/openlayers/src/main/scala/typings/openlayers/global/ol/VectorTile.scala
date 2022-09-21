@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ol.VectorTile")
 @js.native
-class VectorTile protected ()
+open class VectorTile protected ()
   extends typings.openlayers.mod.VectorTile {
   /**
     * @param tileCoord Tile coordinate.

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.WebMethodAdaptor")
 @js.native
-class WebMethodAdaptor ()
+open class WebMethodAdaptor ()
   extends StObject
      with typings.ejWebAll.ej.WebMethodAdaptor

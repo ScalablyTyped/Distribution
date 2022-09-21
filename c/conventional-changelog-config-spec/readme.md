@@ -10,10 +10,10 @@ a spec describing the config options supported by conventional-config for upstre
 | ------------------ | :-------------: |
 | Full name          | conventional-changelog-config-spec |
 | Keywords           | conventional-changelog, conventional, changelog, spec |
-| # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 6872912 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1948766.6666666667 |
+| # stars            | 75.0 |
 
 ## Links
 - [Homepage](https://github.com/conventional-changelog/conventional-changelog-config-spec#readme)

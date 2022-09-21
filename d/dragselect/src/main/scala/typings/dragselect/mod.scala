@@ -51,7 +51,7 @@ object mod {
     *     are keys that are provided via the event object. So far: <kbd>ctrlKey</kbd>, <kbd>shiftKey</kbd>, <kbd>metaKey</kbd> and <kbd>altKey</kbd>. Provide an empty array `[]` if you want to turn
     *     off the functionality.
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with DragSelect {
     def this(options: PartialareaHTMLElementSVG) = this()

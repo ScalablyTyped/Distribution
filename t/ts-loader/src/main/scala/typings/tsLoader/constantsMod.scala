@@ -1,6 +1,5 @@
 package typings.tsLoader
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,47 +26,51 @@ object constantsMod {
   @js.native
   val LineFeedCode: /* 1 */ Double = js.native
   
+  @JSImport("ts-loader/dist/constants", "declarationRegex")
+  @js.native
+  val declarationRegex: js.RegExp = js.native
+  
   @JSImport("ts-loader/dist/constants", "dtsDtsxOrDtsDtsxMapRegex")
   @js.native
-  val dtsDtsxOrDtsDtsxMapRegex: RegExp = js.native
+  val dtsDtsxOrDtsDtsxMapRegex: js.RegExp = js.native
   
   @JSImport("ts-loader/dist/constants", "dtsTsTsxJsJsxRegex")
   @js.native
-  val dtsTsTsxJsJsxRegex: RegExp = js.native
+  val dtsTsTsxJsJsxRegex: js.RegExp = js.native
   
   @JSImport("ts-loader/dist/constants", "dtsTsTsxRegex")
   @js.native
-  val dtsTsTsxRegex: RegExp = js.native
+  val dtsTsTsxRegex: js.RegExp = js.native
   
   @JSImport("ts-loader/dist/constants", "extensionRegex")
   @js.native
-  val extensionRegex: RegExp = js.native
+  val extensionRegex: js.RegExp = js.native
   
   @JSImport("ts-loader/dist/constants", "jsJsx")
   @js.native
-  val jsJsx: RegExp = js.native
+  val jsJsx: js.RegExp = js.native
   
   @JSImport("ts-loader/dist/constants", "jsJsxMap")
   @js.native
-  val jsJsxMap: RegExp = js.native
+  val jsJsxMap: js.RegExp = js.native
   
   @JSImport("ts-loader/dist/constants", "jsonRegex")
   @js.native
-  val jsonRegex: RegExp = js.native
+  val jsonRegex: js.RegExp = js.native
   
   @JSImport("ts-loader/dist/constants", "nodeModules")
   @js.native
-  val nodeModules: RegExp = js.native
+  val nodeModules: js.RegExp = js.native
   
   @JSImport("ts-loader/dist/constants", "tsTsxJsJsxRegex")
   @js.native
-  val tsTsxJsJsxRegex: RegExp = js.native
+  val tsTsxJsJsxRegex: js.RegExp = js.native
   
   @JSImport("ts-loader/dist/constants", "tsTsxRegex")
   @js.native
-  val tsTsxRegex: RegExp = js.native
+  val tsTsxRegex: js.RegExp = js.native
   
   @JSImport("ts-loader/dist/constants", "tsxRegex")
   @js.native
-  val tsxRegex: RegExp = js.native
+  val tsxRegex: js.RegExp = js.native
 }

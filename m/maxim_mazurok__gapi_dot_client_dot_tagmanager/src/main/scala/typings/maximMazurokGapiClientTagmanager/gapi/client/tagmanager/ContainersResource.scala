@@ -5,8 +5,8 @@ import typings.maximMazurokGapiClientTagmanager.anon.Alt
 import typings.maximMazurokGapiClientTagmanager.anon.Callback
 import typings.maximMazurokGapiClientTagmanager.anon.Fields
 import typings.maximMazurokGapiClientTagmanager.anon.Oauthtoken
-import typings.maximMazurokGapiClientTagmanager.anon.ParentPrettyPrint
-import typings.maximMazurokGapiClientTagmanager.anon.ResourceUploadType
+import typings.maximMazurokGapiClientTagmanager.anon.UploadTypeUploadprotocol
+import typings.maximMazurokGapiClientTagmanager.anon.UploadprotocolXgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait ContainersResource extends StObject {
   
   def create(request: Alt, body: Container): Request[Container] = js.native
   /** Creates a Container. */
-  def create(request: ParentPrettyPrint): Request[Container] = js.native
+  def create(request: UploadTypeUploadprotocol): Request[Container] = js.native
   
   /** Deletes a Container. */
   def delete(): Request[Unit] = js.native
@@ -34,7 +34,7 @@ trait ContainersResource extends StObject {
   
   def update(request: Oauthtoken, body: Container): Request[Container] = js.native
   /** Updates a Container. */
-  def update(request: ResourceUploadType): Request[Container] = js.native
+  def update(request: UploadprotocolXgafv): Request[Container] = js.native
   
   var version_headers: VersionHeadersResource = js.native
   

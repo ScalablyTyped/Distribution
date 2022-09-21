@@ -21,13 +21,13 @@ object MediaDevice {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   inline def addEventListener_defaultaudiocapturedevicechanged(
     `type`: defaultaudiocapturedevicechanged,
     listener: TypedEventHandler[
-      js.Any, 
+      Any, 
       typings.winrtUwp.Windows.Media.Devices.DefaultAudioCaptureDeviceChangedEventArgs
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -36,7 +36,7 @@ object MediaDevice {
   inline def addEventListener_defaultaudiorenderdevicechanged(
     `type`: defaultaudiorenderdevicechanged,
     listener: TypedEventHandler[
-      js.Any, 
+      Any, 
       typings.winrtUwp.Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -83,12 +83,12 @@ object MediaDevice {
   @JSGlobal("Windows.Media.Devices.MediaDevice.ondefaultaudiocapturedevicechanged")
   @js.native
   def ondefaultaudiocapturedevicechanged: TypedEventHandler[
-    js.Any, 
+    Any, 
     typings.winrtUwp.Windows.Media.Devices.DefaultAudioCaptureDeviceChangedEventArgs
   ] = js.native
   inline def ondefaultaudiocapturedevicechanged_=(
     x: TypedEventHandler[
-      js.Any, 
+      Any, 
       typings.winrtUwp.Windows.Media.Devices.DefaultAudioCaptureDeviceChangedEventArgs
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondefaultaudiocapturedevicechanged")(x.asInstanceOf[js.Any])
@@ -98,24 +98,24 @@ object MediaDevice {
   @JSGlobal("Windows.Media.Devices.MediaDevice.ondefaultaudiorenderdevicechanged")
   @js.native
   def ondefaultaudiorenderdevicechanged: TypedEventHandler[
-    js.Any, 
+    Any, 
     typings.winrtUwp.Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs
   ] = js.native
   inline def ondefaultaudiorenderdevicechanged_=(
     x: TypedEventHandler[
-      js.Any, 
+      Any, 
       typings.winrtUwp.Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondefaultaudiorenderdevicechanged")(x.asInstanceOf[js.Any])
   
   /* static member */
-  inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   inline def removeEventListener_defaultaudiocapturedevicechanged(
     `type`: defaultaudiocapturedevicechanged,
     listener: TypedEventHandler[
-      js.Any, 
+      Any, 
       typings.winrtUwp.Windows.Media.Devices.DefaultAudioCaptureDeviceChangedEventArgs
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -124,7 +124,7 @@ object MediaDevice {
   inline def removeEventListener_defaultaudiorenderdevicechanged(
     `type`: defaultaudiorenderdevicechanged,
     listener: TypedEventHandler[
-      js.Any, 
+      Any, 
       typings.winrtUwp.Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]

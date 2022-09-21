@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SmartHomeV1SyncDevices extends StObject {
   
-  var attributes: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var attributes: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
-  var customData: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var customData: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   var deviceInfo: js.UndefOr[SmartHomeV1SyncDeviceInfo] = js.undefined
   
@@ -43,11 +43,11 @@ object SmartHomeV1SyncDevices {
   
   extension [Self <: SmartHomeV1SyncDevices](x: Self) {
     
-    inline def setAttributes(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setCustomData(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
     
@@ -63,7 +63,7 @@ object SmartHomeV1SyncDevices {
     
     inline def setOtherDeviceIdsUndefined: Self = StObject.set(x, "otherDeviceIds", js.undefined)
     
-    inline def setOtherDeviceIdsVarargs(value: SmartHomeV1SyncOtherDeviceIds*): Self = StObject.set(x, "otherDeviceIds", js.Array(value :_*))
+    inline def setOtherDeviceIdsVarargs(value: SmartHomeV1SyncOtherDeviceIds*): Self = StObject.set(x, "otherDeviceIds", js.Array(value*))
     
     inline def setRoomHint(value: String): Self = StObject.set(x, "roomHint", value.asInstanceOf[js.Any])
     
@@ -71,7 +71,7 @@ object SmartHomeV1SyncDevices {
     
     inline def setTraits(value: js.Array[String]): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
     
-    inline def setTraitsVarargs(value: String*): Self = StObject.set(x, "traits", js.Array(value :_*))
+    inline def setTraitsVarargs(value: String*): Self = StObject.set(x, "traits", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -25,6 +25,11 @@ trait DocumentClassifierInputDataConfig extends StObject {
     * The Amazon S3 URI for the input data. The S3 bucket must be in the same region as the API endpoint that you are calling. The URI can point to a single input file or it can provide the prefix for a collection of input files. For example, if you use the URI S3://bucketName/prefix, if the prefix is a single file, Amazon Comprehend uses that file as input. If more than one file begins with the prefix, Amazon Comprehend uses all of them as input. This parameter is required if you set DataFormat to COMPREHEND_CSV.
     */
   var S3Uri: js.UndefOr[typings.awsSdk.comprehendMod.S3Uri] = js.undefined
+  
+  /**
+    * The Amazon S3 URI for the input data. The Amazon S3 bucket must be in the same AWS Region as the API endpoint that you are calling. The URI can point to a single input file or it can provide the prefix for a collection of input files. 
+    */
+  var TestS3Uri: js.UndefOr[S3Uri] = js.undefined
 }
 object DocumentClassifierInputDataConfig {
   
@@ -39,7 +44,7 @@ object DocumentClassifierInputDataConfig {
     
     inline def setAugmentedManifestsUndefined: Self = StObject.set(x, "AugmentedManifests", js.undefined)
     
-    inline def setAugmentedManifestsVarargs(value: AugmentedManifestsListItem*): Self = StObject.set(x, "AugmentedManifests", js.Array(value :_*))
+    inline def setAugmentedManifestsVarargs(value: AugmentedManifestsListItem*): Self = StObject.set(x, "AugmentedManifests", js.Array(value*))
     
     inline def setDataFormat(value: DocumentClassifierDataFormat): Self = StObject.set(x, "DataFormat", value.asInstanceOf[js.Any])
     
@@ -52,5 +57,9 @@ object DocumentClassifierInputDataConfig {
     inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
     
     inline def setS3UriUndefined: Self = StObject.set(x, "S3Uri", js.undefined)
+    
+    inline def setTestS3Uri(value: S3Uri): Self = StObject.set(x, "TestS3Uri", value.asInstanceOf[js.Any])
+    
+    inline def setTestS3UriUndefined: Self = StObject.set(x, "TestS3Uri", js.undefined)
   }
 }

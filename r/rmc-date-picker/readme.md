@@ -10,10 +10,10 @@ React Mobile DatePicker Component for web and react-native
 | ------------------ | :-------------: |
 | Full name          | rmc-date-picker |
 | Keywords           | react, react-component, react-mobile-date-picker, date-picker |
-| # releases         | 3 |
-| # dependents       | 84 |
-| # downloads        | 1137869 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 132562.33333333334 |
+| # stars            | 390.0 |
 
 ## Links
 - [Homepage](https://github.com/react-component/m-date-picker)

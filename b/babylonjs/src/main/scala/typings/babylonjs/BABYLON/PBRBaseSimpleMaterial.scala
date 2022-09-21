@@ -36,12 +36,12 @@ trait PBRBaseSimpleMaterial
   /**
     * Emissivie texture used to self-illuminate the model.
     */
-  var emissiveTexture: BaseTexture = js.native
+  var emissiveTexture: Nullable[BaseTexture] = js.native
   
   /**
     * Environment Texture used in the material (this is use for both reflection and environment lighting).
     */
-  var environmentTexture: BaseTexture = js.native
+  var environmentTexture: Nullable[BaseTexture] = js.native
   
   /**
     * If sets to true, x component of normal map value will invert (x = 1.0 - x).
@@ -56,7 +56,7 @@ trait PBRBaseSimpleMaterial
   /**
     * Stores the pre-calculated light information of a mesh in a texture.
     */
-  var lightmapTexture: BaseTexture = js.native
+  var lightmapTexture: Nullable[BaseTexture] = js.native
   
   /**
     * Number of Simultaneous lights allowed on the material.
@@ -66,17 +66,17 @@ trait PBRBaseSimpleMaterial
   /**
     * Normal map used in the model.
     */
-  var normalTexture: BaseTexture = js.native
+  var normalTexture: Nullable[BaseTexture] = js.native
   
   /**
-    * Occlusion Channel Strenght.
+    * Occlusion Channel Strength.
     */
   var occlusionStrength: Double = js.native
   
   /**
     * Occlusion Texture of the material (adding extra occlusion effects).
     */
-  var occlusionTexture: BaseTexture = js.native
+  var occlusionTexture: Nullable[BaseTexture] = js.native
   
   /**
     * If true, the light map contains occlusion information instead of lighting info.

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aws-sdk", "FileSystemCredentials")
 @js.native
-class FileSystemCredentials protected ()
+open class FileSystemCredentials protected ()
   extends typings.awsSdk.coreMod.FileSystemCredentials {
   /**
     * Creates a new FileSystemCredentials object from a filename.

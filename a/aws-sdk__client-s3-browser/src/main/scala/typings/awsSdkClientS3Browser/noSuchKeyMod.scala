@@ -8,5 +8,5 @@ object noSuchKeyMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/NoSuchKey", "NoSuchKey")
   @js.native
-  val NoSuchKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val NoSuchKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

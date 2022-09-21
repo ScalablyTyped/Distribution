@@ -1,102 +1,122 @@
 package typings.std
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.std.anon.AcceptNode
+import typings.std.anon.LookupNamespaceURI
+import typings.std.stdStrings.`public-key`
+import typings.std.stdStrings.auto
+import typings.std.stdStrings.password
+import typings.std.stdStrings.require
+import typings.std.stdStrings.vibration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AlgorithmIdentifier = java.lang.String | typings.std.Algorithm
+type AlgorithmIdentifier = Algorithm | java.lang.String
 
-type AudioWorklet = typings.std.Worklet
+type ArrayBufferLike = SharedArrayBuffer | js.typedarray.ArrayBuffer
 
-type AutoKeyword = typings.std.stdStrings.auto
+/** Available only in secure contexts. */
+type AudioWorklet = Worklet
 
-type BigInteger = typings.std.Uint8Array
+type AutoKeyword = auto
 
-type BlobCallback = js.Function1[/* blob */ typings.std.Blob | scala.Null, scala.Unit]
+/**
+  * Recursively unwraps the "awaited type" of a type. Non-promise "thenables" should resolve to `never`. This emulates the behavior of `await`.
+  */
+type Awaited[T] = (// the argument to `then` was not callable
+T) | Any
 
-/* Rewritten from type alias, can be one of: 
-  - typings.std.BufferSource
-  - typings.std.Blob
-  - java.lang.String
-*/
-type BlobPart = typings.std._BlobPart | java.lang.String
+type BigInteger = js.typedarray.Uint8Array
 
-/* Rewritten from type alias, can be one of: 
-  - typings.std.Blob
-  - typings.std.BufferSource
-  - typings.std.FormData
-  - typings.std.URLSearchParams
-  - typings.std.ReadableStream[typings.std.Uint8Array]
-  - java.lang.String
-*/
-type BodyInit = typings.std._BodyInit | typings.std.ReadableStream[typings.std.Uint8Array] | java.lang.String
+type BinaryData = js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView
+
+type BlobCallback = js.Function1[/* blob */ Blob | Null, Unit]
+
+type BlobPart = BufferSource | Blob | java.lang.String
+
+type BodyInit = ReadableStream[Any] | XMLHttpRequestBodyInit
+
+type BufferSource = js.typedarray.ArrayBufferView | js.typedarray.ArrayBuffer
 
 /** A CDATA section that can be used within XML to include extended portions of unescaped text. The symbols < and & don’t need escaping as they normally do when inside a CDATA section. */
-type CDATASection = typings.std.Text
+type CDATASection = Text
 
-type COSEAlgorithmIdentifier = scala.Double
+type COSEAlgorithmIdentifier = Double
+
+type CSSNumberish = Double
 
 /** An object representing a single CSS @supports at-rule. It implements the CSSConditionRule interface, and therefore the CSSRule and CSSGroupingRule interfaces with a type value of 12 (CSSRule.SUPPORTS_RULE). */
-type CSSSupportsRule = typings.std.CSSConditionRule
+type CSSSupportsRule = CSSConditionRule
 
 /**
   * Convert first character of string literal type to uppercase
   */
-type Capitalize[S /* <: java.lang.String */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify intrinsic */ js.Any
+type Capitalize[S /* <: java.lang.String */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify intrinsic */ Any
 
 /** The ChannelMergerNode interface, often used in conjunction with its opposite, ChannelSplitterNode, reunites different mono inputs into a single output. Each input is used to fill a channel of the output. This is useful for accessing each channels separately, e.g. for performing channel mixing where gain must be separately controlled on each channel. */
-type ChannelMergerNode = typings.std.AudioNode
+type ChannelMergerNode = AudioNode
 
 /** The ChannelSplitterNode interface, often used in conjunction with its opposite, ChannelMergerNode, separates the different channels of an audio source into a set of mono outputs. This is useful for accessing each channel separately, e.g. for performing channel mixing where gain must be separately controlled on each channel. */
-type ChannelSplitterNode = typings.std.AudioNode
+type ChannelSplitterNode = AudioNode
 
-type ClassDecorator = js.Function1[/* target */ js.Function, js.Function | scala.Unit]
+type ClassDecorator = js.Function1[/* target */ js.Function, js.Function | Unit]
+
+/** @deprecated */
+type ClientRect = DOMRect
+
+type ClipboardItemData = js.Promise[java.lang.String | Blob]
+
+type ClipboardItems = js.Array[ClipboardItem]
 
 /** Textual notations within markup; although it is generally not visually shown, such comments are available to be read in the source view. */
-type Comment = typings.std.CharacterData
+type Comment = CharacterData
 
-type ConstrainBoolean = scala.Boolean | typings.std.ConstrainBooleanParameters
+type ConstrainBoolean = scala.Boolean | ConstrainBooleanParameters
 
-type ConstrainDOMString = java.lang.String | js.Array[java.lang.String] | typings.std.ConstrainDOMStringParameters
+type ConstrainDOMString = java.lang.String | js.Array[java.lang.String] | ConstrainDOMStringParameters
 
-type ConstrainDouble = scala.Double | typings.std.ConstrainDoubleRange
+type ConstrainDouble = Double | ConstrainDoubleRange
 
-type ConstrainULong = scala.Double | typings.std.ConstrainULongRange
+type ConstrainULong = Double | ConstrainULongRange
 
 /**
   * Obtain the parameters of a constructor function type in a tuple
   */
-type ConstructorParameters[T /* <: org.scalablytyped.runtime.Instantiable1[/* args */ js.Any, js.Any] */] = js.Any
+type ConstructorParameters[T /* <: Instantiable1[/* args */ Any, Any] */] = Any
 
-type DOMHighResTimeStamp = scala.Double
+type DOMHighResTimeStamp = Double
 
 /** Used by the dataset HTML attribute to represent data for custom attributes added to elements. */
-type DOMStringMap = org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
+type DOMStringMap = /* standard dom */
+StringDictionary[js.UndefOr[java.lang.String]]
 
-type DOMTimeStamp = scala.Double
+type DecodeErrorCallback = js.Function1[/* error */ DOMException, Unit]
 
-type DecodeErrorCallback = js.Function1[/* error */ typings.std.DOMException, scala.Unit]
+type DecodeSuccessCallback = js.Function1[/* decodedData */ AudioBuffer, Unit]
 
-type DecodeSuccessCallback = js.Function1[/* decodedData */ typings.std.AudioBuffer, scala.Unit]
-
-type DocumentTimeline = typings.std.AnimationTimeline
+type DocumentTimeline = AnimationTimeline
 
 /** @deprecated Directly use HTMLElementTagNameMap or SVGElementTagNameMap as appropriate, instead. */
-type ElementTagNameMap = typings.std.HTMLElementTagNameMap & (typings.std.Pick[
-typings.std.SVGElementTagNameMap, 
-typings.std.Exclude[
-  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any, 
-  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
+type ElementTagNameMap = HTMLElementTagNameMap & (Pick[
+SVGElementTagNameMap, 
+Exclude[
+  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any, 
+  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any
 ]])
 
-type EvalError = typings.std.Error
+type EpochTimeStamp = Double
 
-type EventHandlerNonNull = js.Function1[/* event */ typings.std.Event, js.Any]
+type ErrorCallback = js.Function1[/* err */ DOMException, Unit]
 
-type EventListener = js.Function1[/* evt */ typings.std.Event, scala.Unit]
+type EvalError = js.Error
 
-type EventListenerOrEventListenerObject = typings.std.EventListener | typings.std.EventListenerObject
+type EventListener = js.Function1[/* evt */ Event, Unit]
+
+type EventListenerOrEventListenerObject = EventListener | EventListenerObject
 
 /**
   * Exclude from T those types that are assignable to U
@@ -108,361 +128,337 @@ type Exclude[T, U] = T
   */
 type Extract[T, U] = T
 
-type FlatArray[Arr, Depth /* <: scala.Double */] = /* import warning: importer.ImportType#apply Failed type conversion: std.anon.Done<Arr>[Depth extends -1 ? 'done' : 'recur'] */ js.Any
+type FileCallback = js.Function1[/* file */ File, Unit]
 
-type Float32List = typings.std.Float32Array | js.Array[typings.std.GLfloat]
+type FileSystemEntriesCallback = js.Function1[/* entries */ js.Array[FileSystemEntry], Unit]
 
-type ForEachCallback = js.Function2[
-/* keyId */ typings.std.Int8Array | typings.std.Int16Array | typings.std.Int32Array | typings.std.Uint8Array | typings.std.Uint16Array | typings.std.Uint32Array | typings.std.Uint8ClampedArray | typings.std.Float32Array | typings.std.Float64Array | typings.std.DataView | typings.std.ArrayBuffer | scala.Null, 
-/* status */ typings.std.MediaKeyStatus, 
-scala.Unit]
+type FileSystemEntryCallback = js.Function1[/* entry */ FileSystemEntry, Unit]
 
-type FormDataEntryValue = typings.std.File | java.lang.String
+type FlatArray[Arr, Depth /* <: Double */] = /* import warning: importer.ImportType#apply Failed type conversion: std.anon.Done<Arr, Depth>[Depth extends -1 ? 'done' : 'recur'] */ js.Any
 
-type FrameRequestCallback = js.Function1[/* time */ scala.Double, scala.Unit]
+type Float32List = js.typedarray.Float32Array | js.Array[GLfloat]
 
-type FunctionStringCallback = js.Function1[/* data */ java.lang.String, scala.Unit]
+type FormDataEntryValue = File | java.lang.String
 
-type GLbitfield = scala.Double
+type FrameRequestCallback = js.Function1[/* time */ DOMHighResTimeStamp, Unit]
+
+type FunctionStringCallback = js.Function1[/* data */ java.lang.String, Unit]
+
+type GLbitfield = Double
 
 type GLboolean = scala.Boolean
 
-type GLclampf = scala.Double
+type GLclampf = Double
 
-type GLenum = scala.Double
+type GLenum = Double
 
-type GLfloat = scala.Double
+type GLfloat = Double
 
-type GLint = scala.Double
+type GLint = Double
 
-type GLint64 = scala.Double
+type GLint64 = Double
 
-type GLintptr = scala.Double
+type GLintptr = Double
 
-type GLsizei = scala.Double
+type GLsizei = Double
 
-type GLsizeiptr = scala.Double
+type GLsizeiptr = Double
 
-type GLuint = scala.Double
+type GLuint = Double
 
-type GLuint64 = scala.Double
+type GLuint64 = Double
 
-type GamepadHapticActuatorType = typings.std.stdStrings.vibration
+type GamepadHapticActuatorType = vibration
 
-type HashAlgorithmIdentifier = typings.std.AlgorithmIdentifier
+type HashAlgorithmIdentifier = AlgorithmIdentifier
 
-type HeadersInit = typings.std.Headers | js.Array[js.Array[java.lang.String]] | (typings.std.Record[java.lang.String, java.lang.String])
+type HeadersInit = (js.Array[js.Tuple2[java.lang.String, java.lang.String]]) | (Record[java.lang.String, java.lang.String]) | Headers
 
-type IDBKeyPath = java.lang.String
+type IDBValidKey = Double | java.lang.String | js.Date | BufferSource | js.Array[Any]
 
-/* Rewritten from type alias, can be one of: 
-  - scala.Double
-  - java.lang.String
-  - typings.std.Date
-  - typings.std.BufferSource
-  - typings.std.IDBArrayKey
-*/
-type IDBValidKey = typings.std._IDBValidKey | scala.Double | java.lang.String
+type IdleRequestCallback = js.Function1[/* deadline */ IdleDeadline, Unit]
+
+/**
+  * The type for the `assert` property of the optional second argument to `import()`.
+  */
+type ImportAssertions = /* standard es5 */
+StringDictionary[java.lang.String]
+
+type InputDeviceInfo = MediaDeviceInfo
 
 /**
   * Obtain the return type of a constructor function type
   */
-type InstanceType[T /* <: org.scalablytyped.runtime.Instantiable1[/* args */ js.Any, js.Any] */] = js.Any
+type InstanceType[T /* <: Instantiable1[/* args */ Any, Any] */] = Any
 
-type Int32List = typings.std.Int32Array | js.Array[typings.std.GLint]
+type Int32List = js.typedarray.Int32Array | js.Array[GLint]
 
 type IntersectionObserverCallback = js.Function2[
-/* entries */ js.Array[typings.std.IntersectionObserverEntry], 
-/* observer */ typings.std.IntersectionObserver, 
-scala.Unit]
+/* entries */ js.Array[IntersectionObserverEntry], 
+/* observer */ IntersectionObserver, 
+Unit]
 
-type LineAndPositionSetting = scala.Double | typings.std.AutoKeyword
+type LineAndPositionSetting = Double | AutoKeyword
+
+type LockGrantedCallback = js.Function1[/* lock */ Lock | Null, Any]
 
 /**
   * Convert string literal type to lowercase
   */
-type Lowercase[S /* <: java.lang.String */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify intrinsic */ js.Any
+type Lowercase[S /* <: java.lang.String */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify intrinsic */ Any
 
-type MSCredentialType = typings.std.stdStrings.FIDO_2_0
-
-type MSLaunchUriCallback = js.Function0[scala.Unit]
-
-type MediaStreamTrackAudioSourceNode = typings.std.AudioNode
+type MediaSessionActionHandler = js.Function1[/* details */ MediaSessionActionDetails, Unit]
 
 /* Rewritten from type alias, can be one of: 
   - typings.std.WindowProxy
   - typings.std.MessagePort
   - typings.std.ServiceWorker
 */
-type MessageEventSource = typings.std._MessageEventSource | typings.std.WindowProxy
+type MessageEventSource = _MessageEventSource | WindowProxy
 
 type MethodDecorator = js.Function3[
 /* target */ js.Object, 
 /* propertyKey */ java.lang.String | js.Symbol, 
-/* descriptor */ typings.std.TypedPropertyDescriptor[js.Any], 
-typings.std.TypedPropertyDescriptor[js.Any] | scala.Unit]
+/* descriptor */ TypedPropertyDescriptor[Any], 
+TypedPropertyDescriptor[Any] | Unit]
 
-/** @deprecated */
-type MouseWheelEvent = typings.std.WheelEvent
-
-type MutationCallback = js.Function2[
-/* mutations */ js.Array[typings.std.MutationRecord], 
-/* observer */ typings.std.MutationObserver, 
-scala.Unit]
+type MutationCallback = js.Function2[/* mutations */ js.Array[MutationRecord], /* observer */ MutationObserver, Unit]
 
 type NamedCurve = java.lang.String
 
-type NavigatorUserMediaErrorCallback = js.Function1[/* error */ typings.std.MediaStreamError, scala.Unit]
-
-type NavigatorUserMediaSuccessCallback = js.Function1[/* stream */ typings.std.MediaStream, scala.Unit]
+type NodeFilter = (js.Function1[/* node */ Node, Double]) | AcceptNode
 
 /**
   * Exclude null and undefined from T
   */
-type NonNullable[T] = T
+type NonNullable[T] = T & js.Object
 
-type NotificationPermissionCallback = js.Function1[/* permission */ typings.std.NotificationPermission, scala.Unit]
+type NotificationPermissionCallback = js.Function1[/* permission */ NotificationPermission, Unit]
 
 /**
   * Construct a type with the properties of T except for those in type K.
   */
-type Omit[T, K /* <: /* keyof any */ java.lang.String */] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
+type Omit[T, K /* <: /* keyof any */ java.lang.String */] = Pick[T, Exclude[/* keyof T */ java.lang.String, K]]
 
 /**
   * Removes the 'this' parameter from a function type.
   */
-type OmitThisParameter[T] = T | (js.Function1[/* args */ js.Any, js.Any])
+type OmitThisParameter[T] = T | (js.Function1[/* args */ Any, Any])
 
-type OnBeforeUnloadEventHandler = typings.std.OnBeforeUnloadEventHandlerNonNull | scala.Null
+type OnBeforeUnloadEventHandler = OnBeforeUnloadEventHandlerNonNull | Null
 
-type OnBeforeUnloadEventHandlerNonNull = js.Function1[/* event */ typings.std.Event, java.lang.String | scala.Null]
+type OnBeforeUnloadEventHandlerNonNull = js.Function1[/* event */ Event, java.lang.String | Null]
 
-type OnErrorEventHandler = typings.std.OnErrorEventHandlerNonNull | scala.Null
+type OnErrorEventHandler = OnErrorEventHandlerNonNull | Null
 
 type OnErrorEventHandlerNonNull = js.Function5[
-/* event */ typings.std.Event | java.lang.String, 
+/* event */ Event | java.lang.String, 
 /* source */ js.UndefOr[java.lang.String], 
-/* lineno */ js.UndefOr[scala.Double], 
-/* colno */ js.UndefOr[scala.Double], 
-/* error */ js.UndefOr[typings.std.Error], 
-js.Any]
+/* lineno */ js.UndefOr[Double], 
+/* colno */ js.UndefOr[Double], 
+/* error */ js.UndefOr[js.Error], 
+Any]
 
 type ParameterDecorator = js.Function3[
 /* target */ js.Object, 
 /* propertyKey */ java.lang.String | js.Symbol, 
-/* parameterIndex */ scala.Double, 
-scala.Unit]
+/* parameterIndex */ Double, 
+Unit]
 
 /**
   * Obtain the parameters of a function type in a tuple
   */
-type Parameters[T /* <: js.Function1[/* args */ js.Any, js.Any] */] = js.Any
+type Parameters[T /* <: js.Function1[/* args */ Any, Any] */] = Any
 
 /**
   * Make all properties in T optional
   */
 type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in keyof T ]:? T[P]}
-  */ typings.std.stdStrings.Partial & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.std.stdStrings.Partial & TopLevel[T]
 
-type PaymentRequestUpdateEventInit = typings.std.EventInit
+type PaymentRequestUpdateEventInit = EventInit
 
-type PerformanceEntryList = js.Array[typings.std.PerformanceEntry]
+type PerformanceEntryList = js.Array[PerformanceEntry]
 
-/** PerformanceMark is an abstract interface for PerformanceEntry objects with an entryType of "mark". Entries of this type are created by calling performance.mark() to add a named DOMHighResTimeStamp (the mark) to the browser's performance timeline. */
-type PerformanceMark = typings.std.PerformanceEntry
+type PerformanceObserverCallback = js.Function2[/* entries */ PerformanceObserverEntryList, /* observer */ PerformanceObserver, Unit]
 
-/** PerformanceMeasure is an abstract interface for PerformanceEntry objects with an entryType of "measure". Entries of this type are created by calling performance.measure() to add a named DOMHighResTimeStamp (the measure) between two marks to the browser's performance timeline. */
-type PerformanceMeasure = typings.std.PerformanceEntry
-
-type PerformanceObserverCallback = js.Function2[
-/* entries */ typings.std.PerformanceObserverEntryList, 
-/* observer */ typings.std.PerformanceObserver, 
-scala.Unit]
+type PerformancePaintTiming = PerformanceEntry
 
 /**
   * From T, pick a set of properties whose keys are in the union K
   */
 type Pick[T, K /* <: /* keyof T */ java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in K ]: T[P]}
-  */ typings.std.stdStrings.Pick & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.std.stdStrings.Pick & TopLevel[T]
 
-type PositionCallback = js.Function1[/* position */ typings.std.GeolocationPosition, scala.Unit]
+type PositionCallback = js.Function1[/* position */ GeolocationPosition, Unit]
 
-type PositionErrorCallback = js.Function1[/* positionError */ typings.std.GeolocationPositionError, scala.Unit]
+type PositionErrorCallback = js.Function1[/* positionError */ GeolocationPositionError, Unit]
 
-type PromiseConstructorLike = org.scalablytyped.runtime.Instantiable1[
+type PromiseConstructorLike = Instantiable1[
 /* executor */ js.Function2[
-  /* resolve */ js.Function1[/* value */ js.Object | js.Thenable[js.Object], scala.Unit], 
-  /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 
-  scala.Unit
+  /* resolve */ js.Function1[/* value */ js.Object | js.Thenable[js.Object], Unit], 
+  /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
+  Unit
 ], 
 js.Thenable[js.Object]]
 
-type PropertyDecorator = js.Function2[/* target */ js.Object, /* propertyKey */ java.lang.String | js.Symbol, scala.Unit]
+type PropertyDecorator = js.Function2[/* target */ js.Object, /* propertyKey */ java.lang.String | js.Symbol, Unit]
 
-type PropertyDescriptorMap = org.scalablytyped.runtime.StringDictionary[typings.std.PropertyDescriptor]
+type PropertyDescriptorMap = /* standard es5 */
+StringDictionary[js.PropertyDescriptor]
 
-type PropertyKey = java.lang.String | scala.Double | js.Symbol
+type PropertyKey = java.lang.String | Double | js.Symbol
 
-type PublicKeyCredentialType = typings.std.stdStrings.`public-key`
+type PublicKeyCredentialType = `public-key`
 
-type QueuingStrategySizeCallback[T] = js.Function1[/* chunk */ T, scala.Double]
+type QueuingStrategySize[T] = js.Function1[/* chunk */ T, Double]
 
-type RTCAnswerOptions = typings.std.RTCOfferAnswerOptions
+type RTCAnswerOptions = RTCOfferAnswerOptions
 
-type RTCPeerConnectionErrorCallback = js.Function1[/* error */ typings.std.DOMException, scala.Unit]
+type RTCIceCredentialType = password
 
-type RTCRtpDecodingParameters = typings.std.RTCRtpCodingParameters
+type RTCPeerConnectionErrorCallback = js.Function1[/* error */ DOMException, Unit]
 
-type RTCSessionDescriptionCallback = js.Function1[/* description */ typings.std.RTCSessionDescriptionInit, scala.Unit]
+type RTCRtcpMuxPolicy = require
 
-type RTCStatsCallback = js.Function1[/* report */ typings.std.RTCStatsReport, scala.Unit]
+type RTCRtpReceiveParameters = RTCRtpParameters
 
-type RangeError = typings.std.Error
+type RTCRtpSynchronizationSource = RTCRtpContributingSource
 
-type ReadableByteStreamControllerCallback = js.Function1[
-/* controller */ typings.std.ReadableByteStreamController, 
-scala.Unit | js.Thenable[scala.Unit]]
+type RTCSessionDescriptionCallback = js.Function1[/* description */ RTCSessionDescriptionInit, Unit]
 
-type ReadableStreamDefaultControllerCallback[R] = js.Function1[
-/* controller */ typings.std.ReadableStreamDefaultController[R], 
-scala.Unit | js.Thenable[scala.Unit]]
+type RangeError = js.Error
 
-type ReadableStreamErrorCallback = js.Function1[/* reason */ js.Any, scala.Unit | js.Thenable[scala.Unit]]
+type ReadableStreamController[T] = ReadableStreamDefaultController[T]
+
+type ReadableStreamReader[T] = ReadableStreamDefaultReader[T]
 
 /**
   * Make all properties in T readonly
   */
 type Readonly[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {readonly [ P in keyof T ]: T[P]}
-  */ typings.std.stdStrings.Readonly & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.std.stdStrings.Readonly & TopLevel[T]
 
 /**
   * Construct a type with a set of properties K of type T
   */
-type Record[K /* <: /* keyof any */ java.lang.String */, T] = org.scalablytyped.runtime.StringDictionary[T]
+type Record[K /* <: /* keyof any */ java.lang.String */, T] = StringDictionary[T]
 
-type ReferenceError = typings.std.Error
+type ReferenceError = js.Error
 
-type RequestInfo = typings.std.Request | java.lang.String
+type RemotePlaybackAvailabilityCallback = js.Function1[/* available */ scala.Boolean, Unit]
+
+type RequestInfo = Request | java.lang.String
 
 /**
   * Make all properties in T required
   */
 type Required[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in keyof T ]: -? T[P]}
-  */ typings.std.stdStrings.Required & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.std.stdStrings.Required & TopLevel[T]
+
+type ResizeObserverCallback = js.Function2[/* entries */ js.Array[ResizeObserverEntry], /* observer */ ResizeObserver, Unit]
 
 /**
   * Obtain the return type of a function type
   */
-type ReturnType[T /* <: js.Function1[/* args */ js.Any, js.Any] */] = js.Any
+type ReturnType[T /* <: js.Function1[/* args */ Any, Any] */] = Any
 
-type SVGMatrix = typings.std.DOMMatrix
+type SVGMatrix = DOMMatrix
 
-type SVGPathSegClosePath = typings.std.SVGPathSeg
+type SVGPoint = DOMPoint
 
-type SVGPoint = typings.std.DOMPoint
+type SVGRect = DOMRect
 
-type SVGRect = typings.std.DOMRect
+type StaticRange = AbstractRange
 
-type ScopedCredentialType = typings.std.stdStrings.ScopedCred
-
-type StaticRange = typings.std.AbstractRange
-
-type SyntaxError = typings.std.Error
+type SyntaxError = js.Error
 
 /**
   * Extracts the type of the 'this' parameter of a function type, or 'unknown' if the function type has no 'this' parameter.
   */
-type ThisParameterType[T] = js.Any
+type ThisParameterType[T] = Any
 
 type TimerHandler = java.lang.String | js.Function
 
-type TransformStreamDefaultControllerCallback[O] = js.Function1[
-/* controller */ typings.std.TransformStreamDefaultController[O], 
-scala.Unit | js.Thenable[scala.Unit]]
+/* Rewritten from type alias, can be one of: 
+  - js.typedarray.ArrayBuffer
+  - typings.std.MessagePort
+  - typings.std.ImageBitmap
+*/
+type Transferable = _Transferable | js.typedarray.ArrayBuffer
 
-type TransformStreamDefaultControllerTransformCallback[I, O] = js.Function2[
+type TransformerFlushCallback[O] = js.Function1[/* controller */ TransformStreamDefaultController[O], Unit | js.Thenable[Unit]]
+
+type TransformerStartCallback[O] = js.Function1[/* controller */ TransformStreamDefaultController[O], Any]
+
+type TransformerTransformCallback[I, O] = js.Function2[
 /* chunk */ I, 
-/* controller */ typings.std.TransformStreamDefaultController[O], 
-scala.Unit | js.Thenable[scala.Unit]]
+/* controller */ TransformStreamDefaultController[O], 
+Unit | js.Thenable[Unit]]
 
-type TypeError = typings.std.Error
+type TypeError = js.Error
 
-type URIError = typings.std.Error
+type URIError = js.Error
 
-type Uint32List = typings.std.Uint32Array | js.Array[typings.std.GLuint]
+type Uint32List = js.typedarray.Uint32Array | js.Array[GLuint]
 
 /**
   * Convert first character of string literal type to lowercase
   */
-type Uncapitalize[S /* <: java.lang.String */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify intrinsic */ js.Any
+type Uncapitalize[S /* <: java.lang.String */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify intrinsic */ Any
+
+type UnderlyingSinkAbortCallback = js.Function1[/* reason */ js.UndefOr[Any], Unit | js.Thenable[Unit]]
+
+type UnderlyingSinkCloseCallback = js.Function0[Unit | js.Thenable[Unit]]
+
+type UnderlyingSinkStartCallback = js.Function1[/* controller */ WritableStreamDefaultController, Any]
+
+type UnderlyingSinkWriteCallback[W] = js.Function2[
+/* chunk */ W, 
+/* controller */ WritableStreamDefaultController, 
+Unit | js.Thenable[Unit]]
+
+type UnderlyingSourceCancelCallback = js.Function1[/* reason */ js.UndefOr[Any], Unit | js.Thenable[Unit]]
+
+type UnderlyingSourcePullCallback[R] = js.Function1[/* controller */ ReadableStreamController[R], Unit | js.Thenable[Unit]]
+
+type UnderlyingSourceStartCallback[R] = js.Function1[/* controller */ ReadableStreamController[R], Any]
 
 /**
   * Convert string literal type to uppercase
   */
-type Uppercase[S /* <: java.lang.String */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify intrinsic */ js.Any
+type Uppercase[S /* <: java.lang.String */] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify intrinsic */ Any
 
-type UvmEntries = js.Array[typings.std.UvmEntry]
+type UvmEntries = js.Array[UvmEntry]
 
-type UvmEntry = js.Array[scala.Double]
+type UvmEntry = js.Array[Double]
 
-type VibratePattern = scala.Double | js.Array[scala.Double]
+type VibratePattern = Double | js.Array[Double]
 
-type VoidFunction = js.Function0[scala.Unit]
+type VideoFrameRequestCallback = js.Function2[/* now */ DOMHighResTimeStamp, /* metadata */ VideoFrameMetadata, Unit]
 
-/** Part of the WebGL API and represents an opaque buffer object storing data such as vertices or colors. */
-type WebGLBuffer = typings.std.WebGLObject
+type VoidFunction = js.Function0[Unit]
 
-/** Part of the WebGL API and represents a collection of buffers that serve as a rendering destination. */
-type WebGLFramebuffer = typings.std.WebGLObject
+type WebKitCSSMatrix = DOMMatrix
 
-/** The WebGLProgram is part of the WebGL API and is a combination of two compiled WebGLShaders consisting of a vertex shader and a fragment shader (both written in GLSL). */
-type WebGLProgram = typings.std.WebGLObject
+type WindowProxy = Window
 
-type WebGLQuery = typings.std.WebGLObject
-
-/** Part of the WebGL API and represents a buffer that can contain an image, or can be source or target of an rendering operation. */
-type WebGLRenderbuffer = typings.std.WebGLObject
-
-type WebGLSampler = typings.std.WebGLObject
-
-/** The WebGLShader is part of the WebGL API and can either be a vertex or a fragment shader. A WebGLProgram requires both types of shaders. */
-type WebGLShader = typings.std.WebGLObject
-
-type WebGLSync = typings.std.WebGLObject
-
-/** Part of the WebGL API and represents an opaque texture object providing storage and state for texturing operations. */
-type WebGLTexture = typings.std.WebGLObject
-
-type WebGLTransformFeedback = typings.std.WebGLObject
-
-type WebGLVertexArrayObject = typings.std.WebGLObject
-
-type WebGLVertexArrayObjectOES = typings.std.WebGLObject
-
-type WebKitCSSMatrix = typings.std.DOMMatrix
-
-type WindowProxy = typings.std.Window
-
-type WritableStreamDefaultControllerCloseCallback = js.Function0[scala.Unit | js.Thenable[scala.Unit]]
-
-type WritableStreamDefaultControllerStartCallback = js.Function1[
-/* controller */ typings.std.WritableStreamDefaultController, 
-scala.Unit | js.Thenable[scala.Unit]]
-
-type WritableStreamDefaultControllerWriteCallback[W] = js.Function2[
-/* chunk */ W, 
-/* controller */ typings.std.WritableStreamDefaultController, 
-scala.Unit | js.Thenable[scala.Unit]]
-
-type WritableStreamErrorCallback = js.Function1[/* reason */ js.Any, scala.Unit | js.Thenable[scala.Unit]]
+/* Rewritten from type alias, can be one of: 
+  - typings.std.Blob
+  - typings.std.BufferSource
+  - typings.std.FormData
+  - typings.std.URLSearchParams
+  - java.lang.String
+*/
+type XMLHttpRequestBodyInit = _XMLHttpRequestBodyInit | BufferSource | java.lang.String
 
 /** The XPathEvaluator interface allows to compile and evaluate XPath expressions. */
-type XPathEvaluator = typings.std.XPathEvaluatorBase
+type XPathEvaluator = XPathEvaluatorBase
 
-type XPathNSResolver = (js.Function1[/* prefix */ java.lang.String | scala.Null, java.lang.String | scala.Null]) | typings.std.anon.LookupNamespaceURI
+type XPathNSResolver = (js.Function1[/* prefix */ java.lang.String | Null, java.lang.String | Null]) | LookupNamespaceURI
 
-type webkitURL = typings.std.URL
+type webkitURL = URL

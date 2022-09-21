@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var checkChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var fieldDefaults: js.UndefOr[js.Any] = js.undefined
+  var fieldDefaults: js.UndefOr[Any] = js.undefined
   
   /** [Method] Provides access to the Form which this Panel contains
     * @returns Ext.form.Basic The Form which this Panel contains.
@@ -41,7 +41,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
       /* dirtyOnly */ js.UndefOr[Boolean], 
       /* includeEmptyText */ js.UndefOr[Boolean], 
       /* useDataValues */ js.UndefOr[Boolean], 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -64,7 +64,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] This is a proxy for the underlying BasicForm s Ext form Basic load call
     * @param options Object The options to pass to the action (see Ext.form.Basic.load and Ext.form.Basic.doAction for details)
     */
-  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Loads an Ext data Model into this form internally just calls Ext form Basic loadRecord See also trackResetOnLoad
     * @param record Ext.data.Model The record to load
@@ -103,7 +103,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   /** [Method] This is a proxy for the underlying BasicForm s Ext form Basic submit call
     * @param options Object The options to pass to the action (see Ext.form.Basic.submit and Ext.form.Basic.doAction for details)
     */
-  var submit: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var submit: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Persists the values in this form into the passed Ext data Model object in a beginEdit endEdit block
     * @param record Ext.data.Model The record to edit
@@ -124,7 +124,7 @@ object IFormPanel {
     
     inline def setCheckChangeUndefined: Self = StObject.set(x, "checkChange", js.undefined)
     
-    inline def setFieldDefaults(value: js.Any): Self = StObject.set(x, "fieldDefaults", value.asInstanceOf[js.Any])
+    inline def setFieldDefaults(value: Any): Self = StObject.set(x, "fieldDefaults", value.asInstanceOf[js.Any])
     
     inline def setFieldDefaultsUndefined: Self = StObject.set(x, "fieldDefaults", js.undefined)
     
@@ -137,7 +137,7 @@ object IFormPanel {
     inline def setGetRecordUndefined: Self = StObject.set(x, "getRecord", js.undefined)
     
     inline def setGetValues(
-      value: (/* asString */ js.UndefOr[Boolean], /* dirtyOnly */ js.UndefOr[Boolean], /* includeEmptyText */ js.UndefOr[Boolean], /* useDataValues */ js.UndefOr[Boolean]) => js.Any
+      value: (/* asString */ js.UndefOr[Boolean], /* dirtyOnly */ js.UndefOr[Boolean], /* includeEmptyText */ js.UndefOr[Boolean], /* useDataValues */ js.UndefOr[Boolean]) => Any
     ): Self = StObject.set(x, "getValues", js.Any.fromFunction4(value))
     
     inline def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
@@ -158,7 +158,7 @@ object IFormPanel {
     
     inline def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
     
-    inline def setLoad(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: /* options */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
     inline def setLoadRecord(value: /* record */ js.UndefOr[IModel] => IBasic): Self = StObject.set(x, "loadRecord", js.Any.fromFunction1(value))
     
@@ -190,7 +190,7 @@ object IFormPanel {
     
     inline def setStopPollingUndefined: Self = StObject.set(x, "stopPolling", js.undefined)
     
-    inline def setSubmit(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
+    inline def setSubmit(value: /* options */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
     
     inline def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
     

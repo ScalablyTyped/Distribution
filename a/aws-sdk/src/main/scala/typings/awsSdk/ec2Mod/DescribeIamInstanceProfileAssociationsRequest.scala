@@ -39,13 +39,13 @@ object DescribeIamInstanceProfileAssociationsRequest {
     
     inline def setAssociationIdsUndefined: Self = StObject.set(x, "AssociationIds", js.undefined)
     
-    inline def setAssociationIdsVarargs(value: IamInstanceProfileAssociationId*): Self = StObject.set(x, "AssociationIds", js.Array(value :_*))
+    inline def setAssociationIdsVarargs(value: IamInstanceProfileAssociationId*): Self = StObject.set(x, "AssociationIds", js.Array(value*))
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: DescribeIamInstanceProfileAssociationsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

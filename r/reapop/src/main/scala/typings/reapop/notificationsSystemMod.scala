@@ -47,7 +47,7 @@ object notificationsSystemMod {
       
       inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value*))
       
       inline def setSmallScreenBreakpoint(value: Double): Self = StObject.set(x, "smallScreenBreakpoint", value.asInstanceOf[js.Any])
       

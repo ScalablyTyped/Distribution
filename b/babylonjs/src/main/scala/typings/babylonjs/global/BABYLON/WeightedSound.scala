@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WeightedSound")
 @js.native
-class WeightedSound protected ()
+open class WeightedSound protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WeightedSound {
   /**

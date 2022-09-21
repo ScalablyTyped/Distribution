@@ -24,6 +24,6 @@ object AcceptVpcEndpointConnectionsResult {
     
     inline def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
     
-    inline def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
+    inline def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value*))
   }
 }

@@ -101,6 +101,6 @@ object ScanRun {
     
     inline def setWarningTracesUndefined: Self = StObject.set(x, "warningTraces", js.undefined)
     
-    inline def setWarningTracesVarargs(value: ScanRunWarningTrace*): Self = StObject.set(x, "warningTraces", js.Array(value :_*))
+    inline def setWarningTracesVarargs(value: ScanRunWarningTrace*): Self = StObject.set(x, "warningTraces", js.Array(value*))
   }
 }

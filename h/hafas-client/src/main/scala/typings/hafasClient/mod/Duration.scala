@@ -23,6 +23,6 @@ object Duration {
     
     inline def setStations(value: js.Array[Station | Stop | Location]): Self = StObject.set(x, "stations", value.asInstanceOf[js.Any])
     
-    inline def setStationsVarargs(value: (Station | Stop | Location)*): Self = StObject.set(x, "stations", js.Array(value :_*))
+    inline def setStationsVarargs(value: (Station | Stop | Location)*): Self = StObject.set(x, "stations", js.Array(value*))
   }
 }

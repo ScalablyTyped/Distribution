@@ -28,18 +28,18 @@ object SymbolEncodeEntry {
     
     inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    inline def setAngleVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "angle", js.Array(value :_*))
+    inline def setAngleVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "angle", js.Array(value*))
     
     inline def setShape(value: ProductionRule[ScaledValueRef[SymbolShape]]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    inline def setShapeVarargs(value: (Test & ScaledValueRef[SymbolShape])*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setShapeVarargs(value: (Test & ScaledValueRef[SymbolShape])*): Self = StObject.set(x, "shape", js.Array(value*))
     
     inline def setSize(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSizeVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "size", js.Array(value*))
   }
 }

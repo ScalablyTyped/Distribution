@@ -9,7 +9,7 @@ trait DeleteLifecycleHookType extends StObject {
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName
+  var AutoScalingGroupName: XmlStringMaxLen255
   
   /**
     * The name of the lifecycle hook.
@@ -18,14 +18,14 @@ trait DeleteLifecycleHookType extends StObject {
 }
 object DeleteLifecycleHookType {
   
-  inline def apply(AutoScalingGroupName: ResourceName, LifecycleHookName: AsciiStringMaxLen255): DeleteLifecycleHookType = {
+  inline def apply(AutoScalingGroupName: XmlStringMaxLen255, LifecycleHookName: AsciiStringMaxLen255): DeleteLifecycleHookType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], LifecycleHookName = LifecycleHookName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLifecycleHookType]
   }
   
   extension [Self <: DeleteLifecycleHookType](x: Self) {
     
-    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     inline def setLifecycleHookName(value: AsciiStringMaxLen255): Self = StObject.set(x, "LifecycleHookName", value.asInstanceOf[js.Any])
   }

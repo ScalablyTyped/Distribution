@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticsearch", "errors.ServiceUnavailable")
 @js.native
-class ServiceUnavailable () extends Abstract
+open class ServiceUnavailable () extends Abstract

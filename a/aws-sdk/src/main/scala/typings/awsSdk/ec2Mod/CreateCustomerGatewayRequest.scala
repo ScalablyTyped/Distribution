@@ -27,7 +27,12 @@ trait CreateCustomerGatewayRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The Internet-routable IP address for the customer gateway's outside interface. The address must be static.
+    *  IPv4 address for the customer gateway device's outside interface. The address must be static. 
+    */
+  var IpAddress: js.UndefOr[String] = js.undefined
+  
+  /**
+    *  This member has been deprecated. The Internet-routable IP address for the customer gateway's outside interface. The address must be static.
     */
   var PublicIp: js.UndefOr[String] = js.undefined
   
@@ -64,6 +69,10 @@ object CreateCustomerGatewayRequest {
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
+    inline def setIpAddress(value: String): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
+    
+    inline def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
+    
     inline def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     
     inline def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
@@ -72,7 +81,7 @@ object CreateCustomerGatewayRequest {
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
     
     inline def setType(value: GatewayType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

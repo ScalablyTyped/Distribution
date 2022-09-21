@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ListLevel")
 @js.native
-/* private */ class ListLevel ()
+/* private */ open class ListLevel ()
   extends StObject
      with typings.activexWord.Word.ListLevel {
   
@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var NumberStyle: WdListNumberStyle = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val PictureBullet: typings.activexWord.Word.InlineShape = js.native

@@ -18,9 +18,9 @@ trait TreemapProps
   
   var className: js.UndefOr[String] = js.undefined
   
-  var content: js.UndefOr[ReactElement | ContentRenderer[js.Any]] = js.undefined
+  var content: js.UndefOr[ReactElement | ContentRenderer[Any]] = js.undefined
   
-  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[js.Array[Any]] = js.undefined
   
   var dataKey: js.UndefOr[DataKey] = js.undefined
   
@@ -53,29 +53,29 @@ object TreemapProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setContent(value: ReactElement | ContentRenderer[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ReactElement | ContentRenderer[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setContentFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+    inline def setContentFunction1(value: Any => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
-    inline def setDataKeyFunction1(value: /* dataObject */ js.Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
+    inline def setDataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
     
     inline def setDataKeyUndefined: Self = StObject.set(x, "dataKey", js.undefined)
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

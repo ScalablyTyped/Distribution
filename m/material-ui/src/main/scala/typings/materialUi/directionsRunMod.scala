@@ -10,10 +10,10 @@ object directionsRunMod {
   
   @JSImport("material-ui/svg-icons/maps/directions-run", JSImport.Default)
   @js.native
-  class default () extends MapsDirectionsRun
+  open class default () extends MapsDirectionsRun
   
   @JSImport("material-ui/svg-icons/maps/directions-run", "MapsDirectionsRun")
   @js.native
-  class MapsDirectionsRun ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsDirectionsRun ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

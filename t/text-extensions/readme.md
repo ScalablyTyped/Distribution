@@ -1,7 +1,7 @@
 
 # Scala.js typings for text-extensions
 
-Typings are for version 2.1.0
+Typings are for version 2.4.0
 
 ## Library description:
 List of text file extensions
@@ -10,15 +10,12 @@ List of text file extensions
 | ------------------ | :-------------: |
 | Full name          | text-extensions |
 | Keywords           | text, ascii, extensions, extension, file, json, list, array |
-| # releases         | 6 |
-| # dependents       | 36 |
-| # downloads        | 81322720 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3927721666666666E7 |
+| # stars            | 42.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/text-extensions#readme)
-- [Bugs](https://github.com/sindresorhus/text-extensions/issues)
-- [Repository](https://github.com/sindresorhus/text-extensions)
 - [Npm](https://www.npmjs.com/package/text-extensions)
     
 

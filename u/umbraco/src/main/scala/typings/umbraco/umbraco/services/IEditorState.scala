@@ -10,20 +10,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait IEditorState extends StObject {
   
-  var current: js.Any
+  var current: Any
   
   var state: IState
 }
 object IEditorState {
   
-  inline def apply(current: js.Any, state: IState): IEditorState = {
+  inline def apply(current: Any, state: IState): IEditorState = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorState]
   }
   
   extension [Self <: IEditorState](x: Self) {
     
-    inline def setCurrent(value: js.Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
     inline def setState(value: IState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

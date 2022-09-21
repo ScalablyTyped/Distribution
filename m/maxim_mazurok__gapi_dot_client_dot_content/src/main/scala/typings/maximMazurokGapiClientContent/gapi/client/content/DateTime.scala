@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DateTime extends StObject {
   
-  /** Required. Day of month. Must be from 1 to 31 and valid for the year and month. */
+  /** Optional. Day of month. Must be from 1 to 31 and valid for the year and month, or 0 if specifying a datetime without a day. */
   var day: js.UndefOr[Double] = js.undefined
   
-  /** Required. Hours of day in 24 hour format. Should be from 0 to 23. An API may choose to allow the value "24:00:00" for scenarios like business closing time. */
+  /** Optional. Hours of day in 24 hour format. Should be from 0 to 23, defaults to 0 (midnight). An API may choose to allow the value "24:00:00" for scenarios like business closing time. */
   var hours: js.UndefOr[Double] = js.undefined
   
-  /** Required. Minutes of hour of day. Must be from 0 to 59. */
+  /** Optional. Minutes of hour of day. Must be from 0 to 59, defaults to 0. */
   var minutes: js.UndefOr[Double] = js.undefined
   
-  /** Required. Month of year. Must be from 1 to 12. */
+  /** Optional. Month of year. Must be from 1 to 12, or 0 if specifying a datetime without a month. */
   var month: js.UndefOr[Double] = js.undefined
   
-  /** Required. Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999. */
+  /** Optional. Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999, defaults to 0. */
   var nanos: js.UndefOr[Double] = js.undefined
   
-  /** Required. Seconds of minutes of the time. Must normally be from 0 to 59. An API may allow the value 60 if it allows leap-seconds. */
+  /** Optional. Seconds of minutes of the time. Must normally be from 0 to 59, defaults to 0. An API may allow the value 60 if it allows leap-seconds. */
   var seconds: js.UndefOr[Double] = js.undefined
   
   /** Time zone. */

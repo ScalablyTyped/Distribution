@@ -50,7 +50,7 @@ object submission {
     inline def apply(
       acquire: () => Unit,
       addSubmissionVetoListener: XSubmissionVetoListener => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeSubmissionVetoListener: XSubmissionVetoListener => Unit,
       submit: () => Unit,
@@ -85,12 +85,7 @@ object submission {
   }
   object XSubmissionSupplier {
     
-    inline def apply(
-      Submission: XSubmission,
-      acquire: () => Unit,
-      queryInterface: `type` => js.Any,
-      release: () => Unit
-    ): XSubmissionSupplier = {
+    inline def apply(Submission: XSubmission, acquire: () => Unit, queryInterface: `type` => Any, release: () => Unit): XSubmissionSupplier = {
       val __obj = js.Dynamic.literal(Submission = Submission.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
       __obj.asInstanceOf[XSubmissionSupplier]
     }
@@ -121,7 +116,7 @@ object submission {
     inline def apply(
       acquire: () => Unit,
       disposing: EventObject => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       submitting: EventObject => Unit
     ): XSubmissionVetoListener = {

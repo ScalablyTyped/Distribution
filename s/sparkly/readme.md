@@ -1,7 +1,7 @@
 
 # Scala.js typings for sparkly
 
-Typings are for version 5.0.0
+Typings are for version 6.0.0
 
 ## Library description:
 Generate sparklines `▁▂▃▅▂▇`
@@ -10,15 +10,12 @@ Generate sparklines `▁▂▃▅▂▇`
 | ------------------ | :-------------: |
 | Full name          | sparkly |
 | Keywords           | spark, sparkly, line, sparkline, sparklines, unicode, data, graph, plot, ascii |
-| # releases         | 2 |
-| # dependents       | 14 |
-| # downloads        | 3055 |
-| # stars            | 13 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2014.3333333333333 |
+| # stars            | 386.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/sparkly#readme)
-- [Bugs](https://github.com/sindresorhus/sparkly/issues)
-- [Repository](https://github.com/sindresorhus/sparkly)
 - [Npm](https://www.npmjs.com/package/sparkly)
     
 

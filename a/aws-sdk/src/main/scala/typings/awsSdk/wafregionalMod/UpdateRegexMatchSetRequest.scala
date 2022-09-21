@@ -36,6 +36,6 @@ object UpdateRegexMatchSetRequest {
     
     inline def setUpdates(value: RegexMatchSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
-    inline def setUpdatesVarargs(value: RegexMatchSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: RegexMatchSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value*))
   }
 }

@@ -11,7 +11,7 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def removeSensitiveLogs(
-    obj: js.Any,
-    member: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Member */ js.Any
+    obj: Any,
+    member: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Member */ Any
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeSensitiveLogs")(obj.asInstanceOf[js.Any], member.asInstanceOf[js.Any])).asInstanceOf[String]
 }

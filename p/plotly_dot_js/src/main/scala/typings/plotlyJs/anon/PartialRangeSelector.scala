@@ -1,5 +1,6 @@
 package typings.plotlyJs.anon
 
+import typings.plotlyJs.mod.Font
 import typings.plotlyJs.mod.RangeSelectorButton
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.bottom
@@ -26,7 +27,7 @@ trait PartialRangeSelector extends StObject {
   
   var buttons: js.UndefOr[js.Array[Partial[RangeSelectorButton]]] = js.undefined
   
-  var font: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.undefined
+  var font: js.UndefOr[Partial[Font]] = js.undefined
   
   var visible: js.UndefOr[Boolean] = js.undefined
   
@@ -67,9 +68,9 @@ object PartialRangeSelector {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: Partial[RangeSelectorButton]*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: Partial[RangeSelectorButton]*): Self = StObject.set(x, "buttons", js.Array(value*))
     
-    inline def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Partial[Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     

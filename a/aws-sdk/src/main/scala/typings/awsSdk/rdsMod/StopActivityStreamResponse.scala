@@ -12,7 +12,7 @@ trait StopActivityStreamResponse extends StObject {
   var KinesisStreamName: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS KMS key identifier used for encrypting messages in the database activity stream.
+    * The Amazon Web Services KMS key identifier used for encrypting messages in the database activity stream. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   

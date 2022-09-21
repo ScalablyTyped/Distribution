@@ -10,13 +10,13 @@ A reusable radar chart in SVG.
 | ------------------ | :-------------: |
 | Full name          | react-svg-radar-chart |
 | Keywords           | svg, radar, chart, data, visualization, react |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 26302 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5045.333333333333 |
+| # stars            | 41.0 |
 
 ## Links
-- [Homepage](https://github.com/Spyna/react-svg-radar-chart/#readme)
+- [Homepage](https://spyna.github.io/react-svg-radar-chart/)
 - [Bugs](https://github.com/Spyna/react-svg-radar-chart/issues)
 - [Repository](https://github.com/Spyna/react-svg-radar-chart)
 - [Npm](https://www.npmjs.com/package/react-svg-radar-chart)

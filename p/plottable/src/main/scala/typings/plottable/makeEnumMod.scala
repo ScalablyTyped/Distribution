@@ -13,7 +13,7 @@ object makeEnumMod {
   
   inline def makeEnum[T /* <: String */](values: js.Array[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in T ]: K}
-    */ typings.plottable.plottableStrings.makeEnum & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeEnum")(values.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    */ typings.plottable.plottableStrings.makeEnum & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeEnum")(values.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in T ]: K}
-    */ typings.plottable.plottableStrings.makeEnum & TopLevel[js.Any]]
+    */ typings.plottable.plottableStrings.makeEnum & TopLevel[Any]]
 }

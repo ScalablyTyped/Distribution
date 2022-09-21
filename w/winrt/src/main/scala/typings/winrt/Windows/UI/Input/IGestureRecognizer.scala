@@ -42,23 +42,23 @@ trait IGestureRecognizer extends StObject {
   
   var mouseWheelParameters: MouseWheelParameters
   
-  var oncrosssliding: js.Any
+  var oncrosssliding: Any
   
-  var ondragging: js.Any
+  var ondragging: Any
   
-  var onholding: js.Any
+  var onholding: Any
   
-  var onmanipulationcompleted: js.Any
+  var onmanipulationcompleted: Any
   
-  var onmanipulationinertiastarting: js.Any
+  var onmanipulationinertiastarting: Any
   
-  var onmanipulationstarted: js.Any
+  var onmanipulationstarted: Any
   
-  var onmanipulationupdated: js.Any
+  var onmanipulationupdated: Any
   
-  var onrighttapped: js.Any
+  var onrighttapped: Any
   
-  var ontapped: js.Any
+  var ontapped: Any
   
   var pivotCenter: Point
   
@@ -96,15 +96,15 @@ object IGestureRecognizer {
     isInertial: Boolean,
     manipulationExact: Boolean,
     mouseWheelParameters: MouseWheelParameters,
-    oncrosssliding: js.Any,
-    ondragging: js.Any,
-    onholding: js.Any,
-    onmanipulationcompleted: js.Any,
-    onmanipulationinertiastarting: js.Any,
-    onmanipulationstarted: js.Any,
-    onmanipulationupdated: js.Any,
-    onrighttapped: js.Any,
-    ontapped: js.Any,
+    oncrosssliding: Any,
+    ondragging: Any,
+    onholding: Any,
+    onmanipulationcompleted: Any,
+    onmanipulationinertiastarting: Any,
+    onmanipulationstarted: Any,
+    onmanipulationupdated: Any,
+    onrighttapped: Any,
+    ontapped: Any,
     pivotCenter: Point,
     pivotRadius: Double,
     processDownEvent: PointerPoint => Unit,
@@ -154,23 +154,23 @@ object IGestureRecognizer {
     
     inline def setMouseWheelParameters(value: MouseWheelParameters): Self = StObject.set(x, "mouseWheelParameters", value.asInstanceOf[js.Any])
     
-    inline def setOncrosssliding(value: js.Any): Self = StObject.set(x, "oncrosssliding", value.asInstanceOf[js.Any])
+    inline def setOncrosssliding(value: Any): Self = StObject.set(x, "oncrosssliding", value.asInstanceOf[js.Any])
     
-    inline def setOndragging(value: js.Any): Self = StObject.set(x, "ondragging", value.asInstanceOf[js.Any])
+    inline def setOndragging(value: Any): Self = StObject.set(x, "ondragging", value.asInstanceOf[js.Any])
     
-    inline def setOnholding(value: js.Any): Self = StObject.set(x, "onholding", value.asInstanceOf[js.Any])
+    inline def setOnholding(value: Any): Self = StObject.set(x, "onholding", value.asInstanceOf[js.Any])
     
-    inline def setOnmanipulationcompleted(value: js.Any): Self = StObject.set(x, "onmanipulationcompleted", value.asInstanceOf[js.Any])
+    inline def setOnmanipulationcompleted(value: Any): Self = StObject.set(x, "onmanipulationcompleted", value.asInstanceOf[js.Any])
     
-    inline def setOnmanipulationinertiastarting(value: js.Any): Self = StObject.set(x, "onmanipulationinertiastarting", value.asInstanceOf[js.Any])
+    inline def setOnmanipulationinertiastarting(value: Any): Self = StObject.set(x, "onmanipulationinertiastarting", value.asInstanceOf[js.Any])
     
-    inline def setOnmanipulationstarted(value: js.Any): Self = StObject.set(x, "onmanipulationstarted", value.asInstanceOf[js.Any])
+    inline def setOnmanipulationstarted(value: Any): Self = StObject.set(x, "onmanipulationstarted", value.asInstanceOf[js.Any])
     
-    inline def setOnmanipulationupdated(value: js.Any): Self = StObject.set(x, "onmanipulationupdated", value.asInstanceOf[js.Any])
+    inline def setOnmanipulationupdated(value: Any): Self = StObject.set(x, "onmanipulationupdated", value.asInstanceOf[js.Any])
     
-    inline def setOnrighttapped(value: js.Any): Self = StObject.set(x, "onrighttapped", value.asInstanceOf[js.Any])
+    inline def setOnrighttapped(value: Any): Self = StObject.set(x, "onrighttapped", value.asInstanceOf[js.Any])
     
-    inline def setOntapped(value: js.Any): Self = StObject.set(x, "ontapped", value.asInstanceOf[js.Any])
+    inline def setOntapped(value: Any): Self = StObject.set(x, "ontapped", value.asInstanceOf[js.Any])
     
     inline def setPivotCenter(value: Point): Self = StObject.set(x, "pivotCenter", value.asInstanceOf[js.Any])
     

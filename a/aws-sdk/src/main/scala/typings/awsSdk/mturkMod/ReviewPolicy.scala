@@ -29,7 +29,7 @@ object ReviewPolicy {
     
     inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    inline def setParametersVarargs(value: PolicyParameter*): Self = StObject.set(x, "Parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: PolicyParameter*): Self = StObject.set(x, "Parameters", js.Array(value*))
     
     inline def setPolicyName(value: String): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
   }

@@ -7,43 +7,64 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** The RTCIceCandidate interface—part of the WebRTC API—represents a candidate Internet Connectivity Establishment (ICE) configuration which may be used to establish an RTCPeerConnection. */
 trait RTCIceCandidate extends StObject {
   
+  /* standard dom */
+  val address: java.lang.String | Null
+  
+  /* standard dom */
   val candidate: java.lang.String
   
+  /* standard dom */
   val component: RTCIceComponent | Null
   
+  /* standard dom */
   val foundation: java.lang.String | Null
   
+  /* standard dom */
   val port: Double | Null
   
+  /* standard dom */
   val priority: Double | Null
   
+  /* standard dom */
   val protocol: RTCIceProtocol | Null
   
+  /* standard dom */
   val relatedAddress: java.lang.String | Null
   
+  /* standard dom */
   val relatedPort: Double | Null
   
+  /* standard dom */
   val sdpMLineIndex: Double | Null
   
+  /* standard dom */
   val sdpMid: java.lang.String | Null
   
+  /* standard dom */
   val tcpType: RTCIceTcpCandidateType | Null
   
+  /* standard dom */
   def toJSON(): RTCIceCandidateInit
   
+  /* standard dom */
   val `type`: RTCIceCandidateType | Null
   
+  /* standard dom */
   val usernameFragment: java.lang.String | Null
 }
 object RTCIceCandidate {
   
   inline def apply(candidate: java.lang.String, toJSON: () => RTCIceCandidateInit): RTCIceCandidate = {
-    val __obj = js.Dynamic.literal(candidate = candidate.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), component = null, foundation = null, port = null, priority = null, protocol = null, relatedAddress = null, relatedPort = null, sdpMLineIndex = null, sdpMid = null, tcpType = null, usernameFragment = null)
+    val __obj = js.Dynamic.literal(candidate = candidate.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), address = null, component = null, foundation = null, port = null, priority = null, protocol = null, relatedAddress = null, relatedPort = null, sdpMLineIndex = null, sdpMid = null, tcpType = null, usernameFragment = null)
     __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[RTCIceCandidate]
   }
   
   extension [Self <: RTCIceCandidate](x: Self) {
+    
+    inline def setAddress(value: java.lang.String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressNull: Self = StObject.set(x, "address", null)
     
     inline def setCandidate(value: java.lang.String): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
     

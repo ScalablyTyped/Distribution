@@ -15,7 +15,7 @@ object linkModelMod {
   
   @JSImport("storm-react-diagrams/dist/src/models/LinkModel", "LinkModel")
   @js.native
-  class LinkModel[T /* <: LinkModelListener */] () extends BaseModel[DiagramModel, T] {
+  open class LinkModel[T /* <: LinkModelListener */] () extends BaseModel[DiagramModel, T] {
     def this(linkType: String) = this()
     def this(linkType: String, id: String) = this()
     def this(linkType: Unit, id: String) = this()
@@ -25,7 +25,7 @@ object linkModelMod {
     def addPoint[P /* <: PointModel */](pointModel: P): P = js.native
     def addPoint[P /* <: PointModel */](pointModel: P, index: Double): P = js.native
     
-    def doClone(lookupTable: js.Object, clone: js.Any): Unit = js.native
+    def doClone(lookupTable: js.Object, clone: Any): Unit = js.native
     
     def generatePoint(): PointModel = js.native
     def generatePoint(x: Double): PointModel = js.native

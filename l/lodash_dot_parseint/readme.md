@@ -10,10 +10,10 @@ The lodash method `_.parseInt` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.parseint |
 | Keywords           | lodash-modularized, parseint |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 13133 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1211.6666666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

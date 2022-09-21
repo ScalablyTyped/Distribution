@@ -14,6 +14,11 @@ trait EncodedTokensProvider extends StObject {
   /**
     * Tokenize a line given the state at the beginning of the line.
     */
+  var tokenize: js.UndefOr[js.Function2[/* line */ String, /* state */ IState, ILineTokens]] = js.undefined
+  
+  /**
+    * Tokenize a line given the state at the beginning of the line.
+    */
   def tokenizeEncoded(line: String, state: IState): IEncodedLineTokens
 }
 object EncodedTokensProvider {
@@ -27,6 +32,10 @@ object EncodedTokensProvider {
     
     inline def setGetInitialState(value: () => IState): Self = StObject.set(x, "getInitialState", js.Any.fromFunction0(value))
     
+    inline def setTokenize(value: (/* line */ String, /* state */ IState) => ILineTokens): Self = StObject.set(x, "tokenize", js.Any.fromFunction2(value))
+    
     inline def setTokenizeEncoded(value: (String, IState) => IEncodedLineTokens): Self = StObject.set(x, "tokenizeEncoded", js.Any.fromFunction2(value))
+    
+    inline def setTokenizeUndefined: Self = StObject.set(x, "tokenize", js.undefined)
   }
 }

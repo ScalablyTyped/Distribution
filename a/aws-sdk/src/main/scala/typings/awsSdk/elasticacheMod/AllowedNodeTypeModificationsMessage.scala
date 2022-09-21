@@ -29,12 +29,12 @@ object AllowedNodeTypeModificationsMessage {
     
     inline def setScaleDownModificationsUndefined: Self = StObject.set(x, "ScaleDownModifications", js.undefined)
     
-    inline def setScaleDownModificationsVarargs(value: String*): Self = StObject.set(x, "ScaleDownModifications", js.Array(value :_*))
+    inline def setScaleDownModificationsVarargs(value: String*): Self = StObject.set(x, "ScaleDownModifications", js.Array(value*))
     
     inline def setScaleUpModifications(value: NodeTypeList): Self = StObject.set(x, "ScaleUpModifications", value.asInstanceOf[js.Any])
     
     inline def setScaleUpModificationsUndefined: Self = StObject.set(x, "ScaleUpModifications", js.undefined)
     
-    inline def setScaleUpModificationsVarargs(value: String*): Self = StObject.set(x, "ScaleUpModifications", js.Array(value :_*))
+    inline def setScaleUpModificationsVarargs(value: String*): Self = StObject.set(x, "ScaleUpModifications", js.Array(value*))
   }
 }

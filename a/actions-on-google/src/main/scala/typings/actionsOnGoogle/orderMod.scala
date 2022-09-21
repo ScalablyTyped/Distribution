@@ -11,7 +11,7 @@ object orderMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/order", "OrderUpdate")
   @js.native
-  class OrderUpdate protected ()
+  open class OrderUpdate protected ()
     extends StObject
        with GoogleActionsV2OrdersOrderUpdate
        with _RichResponseItem {

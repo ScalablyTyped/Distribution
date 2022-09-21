@@ -13,25 +13,22 @@ object exchange {
   inline def authorizationCode(issue: IssueExchangeCodeFunction): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("authorizationCode")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
   inline def authorizationCode(options: Options, issue: IssueExchangeCodeFunction): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("authorizationCode")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   
-  inline def clientCredentials(issue: js.Function2[/* client */ js.Any, /* issued */ ExchangeDoneFunction, Unit]): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("clientCredentials")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
+  inline def clientCredentials(issue: js.Function2[/* client */ Any, /* issued */ ExchangeDoneFunction, Unit]): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("clientCredentials")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
   inline def clientCredentials(
     issue: js.Function3[
-      /* client */ js.Any, 
+      /* client */ Any, 
       /* scope */ js.Array[String], 
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
   ): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("clientCredentials")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
   // arity == 2; issue(client, issued);
-  inline def clientCredentials(
-    options: Options,
-    issue: js.Function2[/* client */ js.Any, /* issued */ ExchangeDoneFunction, Unit]
-  ): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("clientCredentials")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
+  inline def clientCredentials(options: Options, issue: js.Function2[/* client */ Any, /* issued */ ExchangeDoneFunction, Unit]): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("clientCredentials")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   // arity == 3; issue(client, scope, issued);
   inline def clientCredentials(
     options: Options,
     issue: js.Function3[
-      /* client */ js.Any, 
+      /* client */ Any, 
       /* scope */ js.Array[String], 
       /* issued */ ExchangeDoneFunction, 
       Unit
@@ -41,9 +38,9 @@ object exchange {
   inline def clientCredentials(
     options: Options,
     issue: js.Function4[
-      /* client */ js.Any, 
+      /* client */ Any, 
       /* scope */ js.Array[String], 
-      /* body */ js.Any, 
+      /* body */ Any, 
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
@@ -52,10 +49,10 @@ object exchange {
   inline def clientCredentials(
     options: Options,
     issue: js.Function5[
-      /* client */ js.Any, 
+      /* client */ Any, 
       /* scope */ js.Array[String], 
-      /* body */ js.Any, 
-      /* authInfo */ js.Any, 
+      /* body */ Any, 
+      /* authInfo */ Any, 
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
@@ -66,7 +63,7 @@ object exchange {
   
   inline def password(
     issue: js.Function4[
-      /* client */ js.Any, 
+      /* client */ Any, 
       /* username */ String, 
       /* password */ String, 
       /* issued */ ExchangeDoneFunction, 
@@ -75,7 +72,7 @@ object exchange {
   ): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("password")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
   inline def password(
     issue: js.Function5[
-      /* client */ js.Any, 
+      /* client */ Any, 
       /* username */ String, 
       /* password */ String, 
       /* scope */ js.Array[String], 
@@ -87,7 +84,7 @@ object exchange {
   inline def password(
     options: Options,
     issue: js.Function4[
-      /* client */ js.Any, 
+      /* client */ Any, 
       /* username */ String, 
       /* password */ String, 
       /* issued */ ExchangeDoneFunction, 
@@ -98,7 +95,7 @@ object exchange {
   inline def password(
     options: Options,
     issue: js.Function5[
-      /* client */ js.Any, 
+      /* client */ Any, 
       /* username */ String, 
       /* password */ String, 
       /* scope */ js.Array[String], 
@@ -110,11 +107,11 @@ object exchange {
   inline def password(
     options: Options,
     issue: js.Function6[
-      /* client */ js.Any, 
+      /* client */ Any, 
       /* username */ String, 
       /* password */ String, 
       /* scope */ js.Array[String], 
-      /* body */ js.Any, 
+      /* body */ Any, 
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
@@ -123,28 +120,23 @@ object exchange {
   inline def password(
     options: Options,
     issue: js.Function7[
-      /* client */ js.Any, 
+      /* client */ Any, 
       /* username */ String, 
       /* password */ String, 
       /* scope */ js.Array[String], 
-      /* body */ js.Any, 
-      /* authInfo */ js.Any, 
+      /* body */ Any, 
+      /* authInfo */ Any, 
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
   ): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("password")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   
   inline def refreshToken(
-    issue: js.Function3[
-      /* client */ js.Any, 
-      /* refreshToken */ String, 
-      /* issued */ ExchangeDoneFunction, 
-      Unit
-    ]
+    issue: js.Function3[/* client */ Any, /* refreshToken */ String, /* issued */ ExchangeDoneFunction, Unit]
   ): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
   inline def refreshToken(
     issue: js.Function4[
-      /* client */ js.Any, 
+      /* client */ Any, 
       /* refreshToken */ String, 
       /* scope */ js.Array[String], 
       /* issued */ ExchangeDoneFunction, 
@@ -154,18 +146,13 @@ object exchange {
   // arity == 3; issue(client, refreshToken, issued);
   inline def refreshToken(
     options: Options,
-    issue: js.Function3[
-      /* client */ js.Any, 
-      /* refreshToken */ String, 
-      /* issued */ ExchangeDoneFunction, 
-      Unit
-    ]
+    issue: js.Function3[/* client */ Any, /* refreshToken */ String, /* issued */ ExchangeDoneFunction, Unit]
   ): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   // arity == 4; issue(client, refreshToken, scope, issued);
   inline def refreshToken(
     options: Options,
     issue: js.Function4[
-      /* client */ js.Any, 
+      /* client */ Any, 
       /* refreshToken */ String, 
       /* scope */ js.Array[String], 
       /* issued */ ExchangeDoneFunction, 
@@ -176,10 +163,10 @@ object exchange {
   inline def refreshToken(
     options: Options,
     issue: js.Function5[
-      /* client */ js.Any, 
+      /* client */ Any, 
       /* refreshToken */ String, 
       /* scope */ js.Array[String], 
-      /* body */ js.Any, 
+      /* body */ Any, 
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
@@ -188,11 +175,11 @@ object exchange {
   inline def refreshToken(
     options: Options,
     issue: js.Function6[
-      /* client */ js.Any, 
+      /* client */ Any, 
       /* refreshToken */ String, 
       /* scope */ js.Array[String], 
-      /* body */ js.Any, 
-      /* authInfo */ js.Any, 
+      /* body */ Any, 
+      /* authInfo */ Any, 
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]

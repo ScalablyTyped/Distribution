@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Activation
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppointmentsProviderShowAppointmentDetailsActivatedEventArgs extends StObject {
   
   /** Gets the start date of the appointment instance for which the app should display details. */
-  var instanceStartDate: Date
+  var instanceStartDate: js.Date
   
   /** Gets the activation type. */
   var kind: ActivationKind
@@ -32,7 +31,7 @@ trait AppointmentsProviderShowAppointmentDetailsActivatedEventArgs extends StObj
 object AppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
   
   inline def apply(
-    instanceStartDate: Date,
+    instanceStartDate: js.Date,
     kind: ActivationKind,
     localId: String,
     previousExecutionState: ApplicationExecutionState,
@@ -46,7 +45,7 @@ object AppointmentsProviderShowAppointmentDetailsActivatedEventArgs {
   
   extension [Self <: AppointmentsProviderShowAppointmentDetailsActivatedEventArgs](x: Self) {
     
-    inline def setInstanceStartDate(value: Date): Self = StObject.set(x, "instanceStartDate", value.asInstanceOf[js.Any])
+    inline def setInstanceStartDate(value: js.Date): Self = StObject.set(x, "instanceStartDate", value.asInstanceOf[js.Any])
     
     inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

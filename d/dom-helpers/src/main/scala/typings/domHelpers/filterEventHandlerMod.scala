@@ -7,13 +7,16 @@ import typings.domHelpers.domHelpersStrings.animationend
 import typings.domHelpers.domHelpersStrings.animationiteration
 import typings.domHelpers.domHelpersStrings.animationstart
 import typings.domHelpers.domHelpersStrings.auxclick
+import typings.domHelpers.domHelpersStrings.beforeinput
 import typings.domHelpers.domHelpersStrings.blur
-import typings.domHelpers.domHelpersStrings.cancel
 import typings.domHelpers.domHelpersStrings.canplay
 import typings.domHelpers.domHelpersStrings.canplaythrough
 import typings.domHelpers.domHelpersStrings.change
 import typings.domHelpers.domHelpersStrings.click
 import typings.domHelpers.domHelpersStrings.close
+import typings.domHelpers.domHelpersStrings.compositionend
+import typings.domHelpers.domHelpersStrings.compositionstart
+import typings.domHelpers.domHelpersStrings.compositionupdate
 import typings.domHelpers.domHelpersStrings.contextmenu
 import typings.domHelpers.domHelpersStrings.copy
 import typings.domHelpers.domHelpersStrings.cuechange
@@ -22,7 +25,6 @@ import typings.domHelpers.domHelpersStrings.dblclick
 import typings.domHelpers.domHelpersStrings.drag
 import typings.domHelpers.domHelpersStrings.dragend
 import typings.domHelpers.domHelpersStrings.dragenter
-import typings.domHelpers.domHelpersStrings.dragexit
 import typings.domHelpers.domHelpersStrings.dragleave
 import typings.domHelpers.domHelpersStrings.dragover
 import typings.domHelpers.domHelpersStrings.dragstart
@@ -34,6 +36,7 @@ import typings.domHelpers.domHelpersStrings.error
 import typings.domHelpers.domHelpersStrings.focus
 import typings.domHelpers.domHelpersStrings.focusin
 import typings.domHelpers.domHelpersStrings.focusout
+import typings.domHelpers.domHelpersStrings.formdata
 import typings.domHelpers.domHelpersStrings.fullscreenchange
 import typings.domHelpers.domHelpersStrings.fullscreenerror
 import typings.domHelpers.domHelpersStrings.gotpointercapture
@@ -77,6 +80,7 @@ import typings.domHelpers.domHelpersStrings.seeking
 import typings.domHelpers.domHelpersStrings.select
 import typings.domHelpers.domHelpersStrings.selectionchange
 import typings.domHelpers.domHelpersStrings.selectstart
+import typings.domHelpers.domHelpersStrings.slotchange
 import typings.domHelpers.domHelpersStrings.stalled
 import typings.domHelpers.domHelpersStrings.submit
 import typings.domHelpers.domHelpersStrings.suspend
@@ -92,6 +96,10 @@ import typings.domHelpers.domHelpersStrings.transitionrun
 import typings.domHelpers.domHelpersStrings.transitionstart
 import typings.domHelpers.domHelpersStrings.volumechange
 import typings.domHelpers.domHelpersStrings.waiting
+import typings.domHelpers.domHelpersStrings.webkitanimationend
+import typings.domHelpers.domHelpersStrings.webkitanimationiteration
+import typings.domHelpers.domHelpersStrings.webkitanimationstart
+import typings.domHelpers.domHelpersStrings.webkittransitionend
 import typings.domHelpers.domHelpersStrings.wheel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -115,9 +123,9 @@ object filterEventHandlerMod {
   
   inline def default_auxclick(selector: String, handler: EventHandler[auxclick]): EventHandler[auxclick] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[auxclick]]
   
-  inline def default_blur(selector: String, handler: EventHandler[blur]): EventHandler[blur] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[blur]]
+  inline def default_beforeinput(selector: String, handler: EventHandler[beforeinput]): EventHandler[beforeinput] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[beforeinput]]
   
-  inline def default_cancel(selector: String, handler: EventHandler[cancel]): EventHandler[cancel] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[cancel]]
+  inline def default_blur(selector: String, handler: EventHandler[blur]): EventHandler[blur] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[blur]]
   
   inline def default_canplay(selector: String, handler: EventHandler[canplay]): EventHandler[canplay] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[canplay]]
   
@@ -128,6 +136,12 @@ object filterEventHandlerMod {
   inline def default_click(selector: String, handler: EventHandler[click]): EventHandler[click] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[click]]
   
   inline def default_close(selector: String, handler: EventHandler[close]): EventHandler[close] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[close]]
+  
+  inline def default_compositionend(selector: String, handler: EventHandler[compositionend]): EventHandler[compositionend] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[compositionend]]
+  
+  inline def default_compositionstart(selector: String, handler: EventHandler[compositionstart]): EventHandler[compositionstart] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[compositionstart]]
+  
+  inline def default_compositionupdate(selector: String, handler: EventHandler[compositionupdate]): EventHandler[compositionupdate] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[compositionupdate]]
   
   inline def default_contextmenu(selector: String, handler: EventHandler[contextmenu]): EventHandler[contextmenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[contextmenu]]
   
@@ -144,8 +158,6 @@ object filterEventHandlerMod {
   inline def default_dragend(selector: String, handler: EventHandler[dragend]): EventHandler[dragend] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[dragend]]
   
   inline def default_dragenter(selector: String, handler: EventHandler[dragenter]): EventHandler[dragenter] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[dragenter]]
-  
-  inline def default_dragexit(selector: String, handler: EventHandler[dragexit]): EventHandler[dragexit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[dragexit]]
   
   inline def default_dragleave(selector: String, handler: EventHandler[dragleave]): EventHandler[dragleave] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[dragleave]]
   
@@ -168,6 +180,8 @@ object filterEventHandlerMod {
   inline def default_focusin(selector: String, handler: EventHandler[focusin]): EventHandler[focusin] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[focusin]]
   
   inline def default_focusout(selector: String, handler: EventHandler[focusout]): EventHandler[focusout] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[focusout]]
+  
+  inline def default_formdata(selector: String, handler: EventHandler[formdata]): EventHandler[formdata] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[formdata]]
   
   inline def default_fullscreenchange(selector: String, handler: EventHandler[fullscreenchange]): EventHandler[fullscreenchange] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[fullscreenchange]]
   
@@ -255,6 +269,8 @@ object filterEventHandlerMod {
   
   inline def default_selectstart(selector: String, handler: EventHandler[selectstart]): EventHandler[selectstart] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[selectstart]]
   
+  inline def default_slotchange(selector: String, handler: EventHandler[slotchange]): EventHandler[slotchange] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[slotchange]]
+  
   inline def default_stalled(selector: String, handler: EventHandler[stalled]): EventHandler[stalled] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[stalled]]
   
   inline def default_submit(selector: String, handler: EventHandler[submit]): EventHandler[submit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[submit]]
@@ -284,6 +300,14 @@ object filterEventHandlerMod {
   inline def default_volumechange(selector: String, handler: EventHandler[volumechange]): EventHandler[volumechange] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[volumechange]]
   
   inline def default_waiting(selector: String, handler: EventHandler[waiting]): EventHandler[waiting] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[waiting]]
+  
+  inline def default_webkitanimationend(selector: String, handler: EventHandler[webkitanimationend]): EventHandler[webkitanimationend] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[webkitanimationend]]
+  
+  inline def default_webkitanimationiteration(selector: String, handler: EventHandler[webkitanimationiteration]): EventHandler[webkitanimationiteration] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[webkitanimationiteration]]
+  
+  inline def default_webkitanimationstart(selector: String, handler: EventHandler[webkitanimationstart]): EventHandler[webkitanimationstart] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[webkitanimationstart]]
+  
+  inline def default_webkittransitionend(selector: String, handler: EventHandler[webkittransitionend]): EventHandler[webkittransitionend] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[webkittransitionend]]
   
   inline def default_wheel(selector: String, handler: EventHandler[wheel]): EventHandler[wheel] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[wheel]]
 }

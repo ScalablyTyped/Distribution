@@ -1,8 +1,10 @@
 package typings.autolinker
 
+import typings.autolinker.abstractMatchMod.AbstractMatch
+import typings.autolinker.abstractMatchMod.AbstractMatchConfig
 import typings.autolinker.anchorTagBuilderMod.AnchorTagBuilder
+import typings.autolinker.hashtagUtilsMod.HashtagService
 import typings.autolinker.matchMatchMod.Match
-import typings.autolinker.matchMatchMod.MatchConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +13,9 @@ object hashtagMatchMod {
   
   @JSImport("autolinker/dist/commonjs/match/hashtag-match", "HashtagMatch")
   @js.native
-  class HashtagMatch protected () extends Match {
+  open class HashtagMatch protected ()
+    extends AbstractMatch
+       with Match {
     /**
       * @method constructor
       * @param {Object} cfg The configuration properties for the Match
@@ -32,14 +36,14 @@ object hashtagMatchMod {
       *
       * @return {String}
       */
-    def getServiceName(): String = js.native
+    def getServiceName(): HashtagService = js.native
     
     /**
       * @cfg {String} hashtag (required)
       *
       * The HashtagMatch that was matched, without the '#'.
       */
-    /* private */ val hashtag: js.Any = js.native
+    /* private */ val hashtag: Any = js.native
     
     /**
       * @cfg {String} serviceName
@@ -47,16 +51,27 @@ object hashtagMatchMod {
       * The service to point hashtag matches to. See {@link Autolinker#hashtag}
       * for available values.
       */
-    /* private */ val serviceName: js.Any = js.native
+    /* private */ val serviceName: Any = js.native
+    
+    /**
+      * @public
+      * @property {'hashtag'} type
+      *
+      * A string name for the type of match that this class represents. Can be
+      * used in a TypeScript discriminating union to type-narrow from the
+      * `Match` type.
+      */
+    @JSName("type")
+    val type_HashtagMatch: typings.autolinker.autolinkerStrings.hashtag = js.native
   }
   
   trait HashtagMatchConfig
     extends StObject
-       with MatchConfig {
+       with AbstractMatchConfig {
     
     var hashtag: String
     
-    var serviceName: String
+    var serviceName: HashtagService
   }
   object HashtagMatchConfig {
     
@@ -64,7 +79,7 @@ object hashtagMatchMod {
       hashtag: String,
       matchedText: String,
       offset: Double,
-      serviceName: String,
+      serviceName: HashtagService,
       tagBuilder: AnchorTagBuilder
     ): HashtagMatchConfig = {
       val __obj = js.Dynamic.literal(hashtag = hashtag.asInstanceOf[js.Any], matchedText = matchedText.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], tagBuilder = tagBuilder.asInstanceOf[js.Any])
@@ -75,7 +90,7 @@ object hashtagMatchMod {
       
       inline def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
       
-      inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: HashtagService): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     }
   }
 }

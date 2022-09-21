@@ -18,11 +18,20 @@ trait FieldElement
   var domain: CodedValueDomain | RangeDomain = js.native
   
   /**
-    * Indicates whether the field can be edited.
+    * A Boolean determining whether users can edit this form element.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#editable)
     */
   var editable: Boolean = js.native
+  
+  /**
+    * A reference to the [name](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#name) of an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression defined in the [expressionInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html#expressionInfos) of the FormTemplate.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#editableExpression)
+    */
+  var editableExpression: String = js.native
   
   /**
     * The field name as defined by the feature layer.
@@ -39,14 +48,14 @@ trait FieldElement
   var hint: String = js.native
   
   /**
-    * The input user interface to use for the element.
+    * The input to use for the element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#input)
     */
-  var input: TextBoxInput | TextAreaInput | DateTimePickerInput = js.native
+  var input: TextBoxInput | TextAreaInput | DateTimePickerInput | BarcodeScannerInput | ComboBoxInput | RadioButtonsInput | SwitchInput = js.native
   
   /**
-    * A reference to an [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a boolean value.
+    * A reference to the [name](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#name) of an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression defined in the [expressionInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html#expressionInfos) of the FormTemplate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#requiredExpression)
     */
@@ -58,5 +67,12 @@ trait FieldElement
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#type)
     */
   @JSName("type")
-  var type_FieldElement: field = js.native
+  val type_FieldElement: field = js.native
+  
+  /**
+    * A reference to the [name](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#name) of an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression defined in the [expressionInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html#expressionInfos) of the FormTemplate.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#valueExpression)
+    */
+  var valueExpression: String = js.native
 }

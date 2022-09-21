@@ -1,39 +1,38 @@
 package typings.firebaseFirestore.indexeddbSchemaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbClientMetadata")
-@js.native
-class DbClientMetadata protected () extends js.Object {
-  def this(
-    /** The auto-generated client id assigned at client startup. */
-  clientId: String,
-    /** The last time this state was updated. */
-  updateTimeMs: Double,
-    /** Whether the client's network connection is enabled. */
-  networkEnabled: Boolean,
-    /** Whether this client is running in a foreground tab. */
-  inForeground: Boolean
-  ) = this()
+trait DbClientMetadata extends StObject {
+  
   /** The auto-generated client id assigned at client startup. */
-  var clientId: String = js.native
+  var clientId: String
+  
   /** Whether this client is running in a foreground tab. */
-  var inForeground: Boolean = js.native
+  var inForeground: Boolean
+  
   /** Whether the client's network connection is enabled. */
-  var networkEnabled: Boolean = js.native
+  var networkEnabled: Boolean
+  
   /** The last time this state was updated. */
-  var updateTimeMs: Double = js.native
+  var updateTimeMs: Double
 }
-
-/* static members */
-@JSImport("@firebase/firestore/dist/packages/firestore/src/local/indexeddb_schema", "DbClientMetadata")
-@js.native
-object DbClientMetadata extends js.Object {
-  /** Keys are automatically assigned via the clientId properties. */
-  var keyPath: String = js.native
-  /** Name of the IndexedDb object store. */
-  var store: String = js.native
+object DbClientMetadata {
+  
+  inline def apply(clientId: String, inForeground: Boolean, networkEnabled: Boolean, updateTimeMs: Double): DbClientMetadata = {
+    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], inForeground = inForeground.asInstanceOf[js.Any], networkEnabled = networkEnabled.asInstanceOf[js.Any], updateTimeMs = updateTimeMs.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DbClientMetadata]
+  }
+  
+  extension [Self <: DbClientMetadata](x: Self) {
+    
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    
+    inline def setInForeground(value: Boolean): Self = StObject.set(x, "inForeground", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkEnabled(value: Boolean): Self = StObject.set(x, "networkEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeMs(value: Double): Self = StObject.set(x, "updateTimeMs", value.asInstanceOf[js.Any])
+  }
 }
-

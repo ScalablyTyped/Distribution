@@ -34,7 +34,7 @@ object PacketMirroringFilter {
     
     inline def setCidrRangesUndefined: Self = StObject.set(x, "cidrRanges", js.undefined)
     
-    inline def setCidrRangesVarargs(value: String*): Self = StObject.set(x, "cidrRanges", js.Array(value :_*))
+    inline def setCidrRangesVarargs(value: String*): Self = StObject.set(x, "cidrRanges", js.Array(value*))
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object PacketMirroringFilter {
     
     inline def setIPProtocolsUndefined: Self = StObject.set(x, "IPProtocols", js.undefined)
     
-    inline def setIPProtocolsVarargs(value: String*): Self = StObject.set(x, "IPProtocols", js.Array(value :_*))
+    inline def setIPProtocolsVarargs(value: String*): Self = StObject.set(x, "IPProtocols", js.Array(value*))
   }
 }

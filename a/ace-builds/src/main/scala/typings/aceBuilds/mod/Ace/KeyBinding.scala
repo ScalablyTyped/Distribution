@@ -4,46 +4,23 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait KeyBinding extends StObject {
   
-  def addKeyboardHandler(handler: KeyboardHandler, pos: Double): Unit
+  def addKeyboardHandler(handler: KeyboardHandler): Unit = js.native
+  def addKeyboardHandler(handler: KeyboardHandler, pos: Double): Unit = js.native
   
-  def getKeyboardHandler(): KeyboardHandler
+  def getKeyboardHandler(): KeyboardHandler = js.native
   
-  def getStatusText(): String
+  def getStatusText(): String = js.native
   
-  def removeKeyboardHandler(handler: KeyboardHandler): Boolean
+  def onCommandKey(e: Any, hashId: Double, keyCode: Double): Boolean = js.native
   
-  def setDefaultHandler(handler: KeyboardHandler): Unit
+  def onTextInput(text: String): Boolean = js.native
   
-  def setKeyboardHandler(handler: KeyboardHandler): Unit
-}
-object KeyBinding {
+  def removeKeyboardHandler(handler: KeyboardHandler): Boolean = js.native
   
-  inline def apply(
-    addKeyboardHandler: (KeyboardHandler, Double) => Unit,
-    getKeyboardHandler: () => KeyboardHandler,
-    getStatusText: () => String,
-    removeKeyboardHandler: KeyboardHandler => Boolean,
-    setDefaultHandler: KeyboardHandler => Unit,
-    setKeyboardHandler: KeyboardHandler => Unit
-  ): KeyBinding = {
-    val __obj = js.Dynamic.literal(addKeyboardHandler = js.Any.fromFunction2(addKeyboardHandler), getKeyboardHandler = js.Any.fromFunction0(getKeyboardHandler), getStatusText = js.Any.fromFunction0(getStatusText), removeKeyboardHandler = js.Any.fromFunction1(removeKeyboardHandler), setDefaultHandler = js.Any.fromFunction1(setDefaultHandler), setKeyboardHandler = js.Any.fromFunction1(setKeyboardHandler))
-    __obj.asInstanceOf[KeyBinding]
-  }
+  def setDefaultHandler(handler: KeyboardHandler): Unit = js.native
   
-  extension [Self <: KeyBinding](x: Self) {
-    
-    inline def setAddKeyboardHandler(value: (KeyboardHandler, Double) => Unit): Self = StObject.set(x, "addKeyboardHandler", js.Any.fromFunction2(value))
-    
-    inline def setGetKeyboardHandler(value: () => KeyboardHandler): Self = StObject.set(x, "getKeyboardHandler", js.Any.fromFunction0(value))
-    
-    inline def setGetStatusText(value: () => String): Self = StObject.set(x, "getStatusText", js.Any.fromFunction0(value))
-    
-    inline def setRemoveKeyboardHandler(value: KeyboardHandler => Boolean): Self = StObject.set(x, "removeKeyboardHandler", js.Any.fromFunction1(value))
-    
-    inline def setSetDefaultHandler(value: KeyboardHandler => Unit): Self = StObject.set(x, "setDefaultHandler", js.Any.fromFunction1(value))
-    
-    inline def setSetKeyboardHandler(value: KeyboardHandler => Unit): Self = StObject.set(x, "setKeyboardHandler", js.Any.fromFunction1(value))
-  }
+  def setKeyboardHandler(handler: KeyboardHandler): Unit = js.native
 }

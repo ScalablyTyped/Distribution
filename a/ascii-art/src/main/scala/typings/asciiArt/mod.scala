@@ -8,11 +8,11 @@ object mod {
   
   @JSImport("ascii-art", "Figlet")
   @js.native
-  val Figlet: js.Any = js.native
+  val Figlet: Any = js.native
   
   @JSImport("ascii-art", "Image")
   @js.native
-  val Image_ : js.Any = js.native
+  val Image_ : Any = js.native
   
   @JSImport("ascii-art", "artwork")
   @js.native
@@ -77,15 +77,15 @@ object mod {
     @JSName("image")
     var image_Original: ImageType
     
-    def join(options: js.Any*): Art
+    def join(options: Any*): Art
     @JSName("join")
     var join_Original: JoinType
     
-    def lines(options: js.Any*): Art
+    def lines(options: Any*): Art
     @JSName("lines")
     var lines_Original: LinesType
     
-    def overlay(options: js.Any*): Art
+    def overlay(options: Any*): Art
     @JSName("overlay")
     var overlay_Original: OverlayType
     
@@ -166,25 +166,25 @@ object mod {
   @js.native
   trait JoinType extends StObject {
     
-    def apply(options: js.Any*): Art = js.native
+    def apply(options: Any*): Art = js.native
   }
   
   @js.native
   trait LinesType extends StObject {
     
-    def apply(options: js.Any*): Art = js.native
+    def apply(options: Any*): Art = js.native
   }
   
   @js.native
   trait OverlayType extends StObject {
     
-    def apply(options: js.Any*): Art = js.native
+    def apply(options: Any*): Art = js.native
   }
   
   @js.native
   trait StringsType extends StObject {
     
-    def apply(options: js.Any*): Art = js.native
+    def apply(options: Any*): Art = js.native
   }
   
   type StyleType = js.Function3[

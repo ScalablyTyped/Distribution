@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("dashjs", "KeyError")
 @js.native
-class KeyError protected () extends StObject {
+open class KeyError protected () extends StObject {
   def this(sessionToken: SessionToken, errorString: String) = this()
   
   var error: String = js.native

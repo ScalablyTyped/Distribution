@@ -11,8 +11,8 @@ object keyboardEventMod {
   
   @JSImport("wonder.js/dist/es2015/event/object/KeyboardEvent", "KeyboardEvent")
   @js.native
-  class KeyboardEvent protected () extends DomEvent {
-    def this(event: js.Any, eventName: EEventName) = this()
+  open class KeyboardEvent protected () extends DomEvent {
+    def this(event: Any, eventName: EEventName) = this()
     
     val altKey: Double = js.native
     
@@ -21,11 +21,11 @@ object keyboardEventMod {
     @JSName("event")
     var event_KeyboardEvent: IKeyboardEventData = js.native
     
-    val key: js.Any = js.native
+    val key: Any = js.native
     
     val keyCode: Double = js.native
     
-    var keyState: js.Any = js.native
+    var keyState: Any = js.native
     
     val metaKey: Double = js.native
     
@@ -38,6 +38,6 @@ object keyboardEventMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(event: js.Any, eventName: EEventName): KeyboardEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(event.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[KeyboardEvent]
+    inline def create(event: Any, eventName: EEventName): KeyboardEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(event.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[KeyboardEvent]
   }
 }

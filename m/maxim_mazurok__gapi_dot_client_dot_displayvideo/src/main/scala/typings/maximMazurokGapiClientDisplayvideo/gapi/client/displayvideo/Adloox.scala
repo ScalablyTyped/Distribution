@@ -22,6 +22,6 @@ object Adloox {
     
     inline def setExcludedAdlooxCategoriesUndefined: Self = StObject.set(x, "excludedAdlooxCategories", js.undefined)
     
-    inline def setExcludedAdlooxCategoriesVarargs(value: String*): Self = StObject.set(x, "excludedAdlooxCategories", js.Array(value :_*))
+    inline def setExcludedAdlooxCategoriesVarargs(value: String*): Self = StObject.set(x, "excludedAdlooxCategories", js.Array(value*))
   }
 }

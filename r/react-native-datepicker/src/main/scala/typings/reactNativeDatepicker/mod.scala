@@ -13,7 +13,6 @@ import typings.reactNativeDatepicker.reactNativeDatepickerStrings.date
 import typings.reactNativeDatepicker.reactNativeDatepickerStrings.datetime
 import typings.reactNativeDatepicker.reactNativeDatepickerStrings.spinner
 import typings.reactNativeDatepicker.reactNativeDatepickerStrings.time
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,13 +21,13 @@ object mod {
   
   @JSImport("react-native-datepicker", JSImport.Default)
   @js.native
-  class default protected () extends DatePicker {
+  open class default protected () extends DatePicker {
     def this(props: DatePickerProps) = this()
   }
   
   @js.native
   trait DatePicker
-    extends Component[DatePickerProps, js.Object, js.Any] {
+    extends Component[DatePickerProps, js.Object, Any] {
     
     def onPressCancel(): Unit = js.native
     
@@ -37,9 +36,9 @@ object mod {
   
   trait DatePickerCustomStylesProps extends StObject {
     
-    var btnCancel: js.UndefOr[StyleProp[js.Any]] = js.undefined
+    var btnCancel: js.UndefOr[StyleProp[Any]] = js.undefined
     
-    var btnConfirm: js.UndefOr[StyleProp[js.Any]] = js.undefined
+    var btnConfirm: js.UndefOr[StyleProp[Any]] = js.undefined
     
     var btnTextCancel: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
@@ -70,13 +69,13 @@ object mod {
     
     extension [Self <: DatePickerCustomStylesProps](x: Self) {
       
-      inline def setBtnCancel(value: StyleProp[js.Any]): Self = StObject.set(x, "btnCancel", value.asInstanceOf[js.Any])
+      inline def setBtnCancel(value: StyleProp[Any]): Self = StObject.set(x, "btnCancel", value.asInstanceOf[js.Any])
       
       inline def setBtnCancelNull: Self = StObject.set(x, "btnCancel", null)
       
       inline def setBtnCancelUndefined: Self = StObject.set(x, "btnCancel", js.undefined)
       
-      inline def setBtnConfirm(value: StyleProp[js.Any]): Self = StObject.set(x, "btnConfirm", value.asInstanceOf[js.Any])
+      inline def setBtnConfirm(value: StyleProp[Any]): Self = StObject.set(x, "btnConfirm", value.asInstanceOf[js.Any])
       
       inline def setBtnConfirmNull: Self = StObject.set(x, "btnConfirm", null)
       
@@ -146,7 +145,7 @@ object mod {
   
   trait DatePickerProps extends StObject {
     
-    var TouchableComponent: js.UndefOr[Component[js.Object, js.Object, js.Any]] = js.undefined
+    var TouchableComponent: js.UndefOr[Component[js.Object, js.Object, Any]] = js.undefined
     
     var allowFontScaling: js.UndefOr[Boolean] = js.undefined
     
@@ -164,7 +163,7 @@ object mod {
     
     var customStyles: js.UndefOr[DatePickerCustomStylesProps] = js.undefined
     
-    var date: js.UndefOr[String | Date | Moment] = js.undefined
+    var date: js.UndefOr[String | js.Date | Moment] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -172,7 +171,7 @@ object mod {
     
     var format: js.UndefOr[String] = js.undefined
     
-    var getDateStr: js.UndefOr[js.Function1[/* date */ Date, String]] = js.undefined
+    var getDateStr: js.UndefOr[js.Function1[/* date */ js.Date, String]] = js.undefined
     
     var height: js.UndefOr[Double] = js.undefined
     
@@ -186,19 +185,19 @@ object mod {
     
     var locale: js.UndefOr[String] = js.undefined
     
-    var maxDate: js.UndefOr[String | Date] = js.undefined
+    var maxDate: js.UndefOr[String | js.Date] = js.undefined
     
-    var minDate: js.UndefOr[String | Date] = js.undefined
+    var minDate: js.UndefOr[String | js.Date] = js.undefined
     
     var minuteInterval: js.UndefOr[Double] = js.undefined
     
-    var modalOnResponderTerminationRequest: js.UndefOr[js.Function1[/* e */ js.Any, Boolean]] = js.undefined
+    var modalOnResponderTerminationRequest: js.UndefOr[js.Function1[/* e */ Any, Boolean]] = js.undefined
     
     var mode: js.UndefOr[date | datetime | time] = js.undefined
     
     var onCloseModal: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onDateChange: js.UndefOr[js.Function2[/* dateStr */ String, /* date */ Date, Unit]] = js.undefined
+    var onDateChange: js.UndefOr[js.Function2[/* dateStr */ String, /* date */ js.Date, Unit]] = js.undefined
     
     var onOpenModal: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -208,7 +207,7 @@ object mod {
     
     var showIcon: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[StyleProp[js.Any]] = js.undefined
+    var style: js.UndefOr[StyleProp[Any]] = js.undefined
     
     var testID: js.UndefOr[String] = js.undefined
     
@@ -251,7 +250,7 @@ object mod {
       
       inline def setCustomStylesUndefined: Self = StObject.set(x, "customStyles", js.undefined)
       
-      inline def setDate(value: String | Date | Moment): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String | js.Date | Moment): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -267,7 +266,7 @@ object mod {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setGetDateStr(value: /* date */ Date => String): Self = StObject.set(x, "getDateStr", js.Any.fromFunction1(value))
+      inline def setGetDateStr(value: /* date */ js.Date => String): Self = StObject.set(x, "getDateStr", js.Any.fromFunction1(value))
       
       inline def setGetDateStrUndefined: Self = StObject.set(x, "getDateStr", js.undefined)
       
@@ -295,11 +294,11 @@ object mod {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setMaxDate(value: String | Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: String | js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: String | Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: String | js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -307,7 +306,7 @@ object mod {
       
       inline def setMinuteIntervalUndefined: Self = StObject.set(x, "minuteInterval", js.undefined)
       
-      inline def setModalOnResponderTerminationRequest(value: /* e */ js.Any => Boolean): Self = StObject.set(x, "modalOnResponderTerminationRequest", js.Any.fromFunction1(value))
+      inline def setModalOnResponderTerminationRequest(value: /* e */ Any => Boolean): Self = StObject.set(x, "modalOnResponderTerminationRequest", js.Any.fromFunction1(value))
       
       inline def setModalOnResponderTerminationRequestUndefined: Self = StObject.set(x, "modalOnResponderTerminationRequest", js.undefined)
       
@@ -319,7 +318,7 @@ object mod {
       
       inline def setOnCloseModalUndefined: Self = StObject.set(x, "onCloseModal", js.undefined)
       
-      inline def setOnDateChange(value: (/* dateStr */ String, /* date */ Date) => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction2(value))
+      inline def setOnDateChange(value: (/* dateStr */ String, /* date */ js.Date) => Unit): Self = StObject.set(x, "onDateChange", js.Any.fromFunction2(value))
       
       inline def setOnDateChangeUndefined: Self = StObject.set(x, "onDateChange", js.undefined)
       
@@ -339,7 +338,7 @@ object mod {
       
       inline def setShowIconUndefined: Self = StObject.set(x, "showIcon", js.undefined)
       
-      inline def setStyle(value: StyleProp[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleNull: Self = StObject.set(x, "style", null)
       
@@ -353,7 +352,7 @@ object mod {
       
       inline def setTimeZoneOffsetInMinutesUndefined: Self = StObject.set(x, "timeZoneOffsetInMinutes", js.undefined)
       
-      inline def setTouchableComponent(value: Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "TouchableComponent", value.asInstanceOf[js.Any])
+      inline def setTouchableComponent(value: Component[js.Object, js.Object, Any]): Self = StObject.set(x, "TouchableComponent", value.asInstanceOf[js.Any])
       
       inline def setTouchableComponentUndefined: Self = StObject.set(x, "TouchableComponent", js.undefined)
     }

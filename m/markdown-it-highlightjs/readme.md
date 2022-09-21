@@ -10,13 +10,13 @@ Preset to use highlight.js with markdown-it.
 | ------------------ | :-------------: |
 | Full name          | markdown-it-highlightjs |
 | Keywords           | markdown-it-plugin |
-| # releases         | 6 |
-| # dependents       | 62 |
-| # downloads        | 111928 |
-| # stars            | 4 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 38011.666666666664 |
+| # stars            | 38.0 |
 
 ## Links
-- [Homepage](https://github.com/valeriangalliat/markdown-it-highlightjs)
+- [Homepage](https://github.com/valeriangalliat/markdown-it-highlightjs#readme)
 - [Bugs](https://github.com/valeriangalliat/markdown-it-highlightjs/issues)
 - [Repository](https://github.com/valeriangalliat/markdown-it-highlightjs)
 - [Npm](https://www.npmjs.com/package/markdown-it-highlightjs)

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.BreadcrumbItem")
 @js.native
-class BreadcrumbItem ()
+open class BreadcrumbItem ()
   extends typings.reactBootstrap.mod.BreadcrumbItem

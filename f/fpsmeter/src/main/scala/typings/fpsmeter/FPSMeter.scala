@@ -16,7 +16,7 @@ trait FPSMeter extends StObject {
   
   def resume(): FPSMeter
   
-  def set(name: String, value: js.Any): FPSMeter
+  def set(name: String, value: Any): FPSMeter
   
   def show(): FPSMeter
   
@@ -38,7 +38,7 @@ object FPSMeter {
     options: FPSMeterOptions,
     pause: () => FPSMeter,
     resume: () => FPSMeter,
-    set: (String, js.Any) => FPSMeter,
+    set: (String, Any) => FPSMeter,
     show: () => FPSMeter,
     showDuration: () => FPSMeter,
     showFps: () => FPSMeter,
@@ -62,7 +62,7 @@ object FPSMeter {
     
     inline def setResume(value: () => FPSMeter): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     
-    inline def setSet(value: (String, js.Any) => FPSMeter): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (String, Any) => FPSMeter): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     inline def setShow(value: () => FPSMeter): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     

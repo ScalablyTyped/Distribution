@@ -2,17 +2,23 @@ package typings.yeomanEnvironment
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
+import typings.commander.mod.Command
+import typings.execa.mod.ExecaChildProcess
+import typings.execa.mod.ExecaSyncReturnValue
+import typings.execa.mod.SyncOptions
 import typings.inquirer.mod.DistinctQuestion
 import typings.inquirer.mod.QuestionCollection
 import typings.memFs.mod.Store
 import typings.node.eventsMod.EventEmitter
-import typings.node.eventsMod.EventEmitterOptions
-import typings.std.Error
-import typings.std.Parameters
+import typings.node.streamMod.Stream
+import typings.node.streamMod.Transform
+import typings.std.Console
+import typings.std.ReadableStream
 import typings.std.Record
-import typings.std.RegExp
-import typings.yeomanEnvironment.anon.FnCall
-import typings.yeomanEnvironment.anon.LoggerDefaultCategories
+import typings.yeomanEnvironment.conflicterMod.ConflicterOptions
+import typings.yeomanEnvironment.logMod.DefaultCategories
+import typings.yeomanEnvironment.yeomanEnvironmentBooleans.`false`
+import typings.yeomanEnvironment.yeomanEnvironmentBooleans.`true`
 import typings.yeomanGenerator.mod.GeneratorConstructor
 import typings.yeomanGenerator.mod.GeneratorOptions
 import org.scalablytyped.runtime.StObject
@@ -43,7 +49,7 @@ object mod {
     * @param opts The options for the environment.
     * @param adapter A `TerminalAdapter` instance for handling input/output.
     */
-  class ^[TOptions /* <: Options */] () extends Environment[TOptions] {
+  open class ^[TOptions /* <: Options */] () extends Environment[TOptions] {
     def this(args: String) = this()
     def this(args: js.Array[String]) = this()
     def this(args: String, opts: TOptions) = this()
@@ -61,11 +67,12 @@ object mod {
   val ^ : js.Any = js.native
   
   /**
-    * Createas a new `Environment` instance.
+    * Creates a new `Environment` instance.
     *
     * @param args The arguments to pass to the environment.
     * @param opts The options for the environment.
     * @param adapter A `TerminalAdapter` instance for handling input/output.
+    * @returns The newly created environment.
     */
   /* static member */
   inline def createEnv[TOptions /* <: Options */](): Environment[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnv")().asInstanceOf[Environment[TOptions]]
@@ -88,6 +95,7 @@ object mod {
     * @param args The arguments to pass to the environment.
     * @param opts The options for the environment.
     * @param adapter A `TerminalAdapter` instance for handling input/output.
+    * @returns The newly created environment.
     */
   /* static member */
   inline def createEnvWithVersion[TOptions /* <: Options */](version: String): Environment[TOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnvWithVersion")(version.asInstanceOf[js.Any]).asInstanceOf[Environment[TOptions]]
@@ -117,10 +125,22 @@ object mod {
     *
     * @param namespace The namespace of the generator to search.
     * @param options Options for searching the generator.
+    * @returns The path to the generator which was found.
     */
   /* static member */
   inline def lookupGenerator(namespace: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupGenerator")(namespace.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def lookupGenerator(namespace: String, options: GeneratorLookupOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupGenerator")(namespace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def lookupGenerator(namespace: String, options: ArrayGeneratorLookupOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupGenerator")(namespace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def lookupGenerator(namespace: String, options: SingleGeneratorLookupOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupGenerator")(namespace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  /**
+    * Invokes a lookup for a specific generator.
+    *
+    * @param namespace The namespace of the generator to search.
+    * @param options Options for searching the generator.
+    * @returns The paths to the generators which were found.
+    */
+  /* static member */
+  inline def lookupGenerator_Array(namespace: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupGenerator")(namespace.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   /**
     * Converts a generator namespace to its name.
@@ -129,6 +149,25 @@ object mod {
     */
   /* static member */
   inline def namespaceToName(namespace: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("namespaceToName")(namespace.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * Prepares a command for cli support.
+    *
+    * @param generatorClass The generator class to create a command for.
+    * @returns The prepared command.
+    */
+  /* static member */
+  inline def prepareCommand(generatorClass: GeneratorConstructor): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareCommand")(generatorClass.asInstanceOf[js.Any]).asInstanceOf[Command]
+  
+  /**
+    * Prepares a command for cli support.
+    *
+    * @param command The command to prepare.
+    * @param generatorClass The constructor of the generator to prepare the command for.
+    * @returns The prepared command.
+    */
+  /* static member */
+  inline def prepareGeneratorCommand(command: Command, generatorClass: GeneratorConstructor): Command = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareGeneratorCommand")(command.asInstanceOf[js.Any], generatorClass.asInstanceOf[js.Any])).asInstanceOf[Command]
   
   /**
     * The utilities of the module.
@@ -163,7 +202,7 @@ object mod {
     /**
       * The pattern to match.
       */
-    var `match`: RegExp
+    var `match`: js.RegExp
     
     /**
       * The replacement of the `match`.
@@ -172,7 +211,7 @@ object mod {
   }
   object Alias {
     
-    inline def apply(`match`: RegExp, value: String): Alias = {
+    inline def apply(`match`: js.RegExp, value: String): Alias = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Alias]
@@ -180,7 +219,7 @@ object mod {
     
     extension [Self <: Alias](x: Self) {
       
-      inline def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: js.RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -192,6 +231,34 @@ object mod {
   type Answers = typings.inquirer.mod.Answers
   
   /**
+    * Provides options array generator lookups.
+    */
+  trait ArrayGeneratorLookupOptions
+    extends StObject
+       with GeneratorLookupOptions {
+    
+    /**
+      * @inheritdoc
+      */
+    @JSName("singleResult")
+    var singleResult_ArrayGeneratorLookupOptions: js.UndefOr[`false`] = js.undefined
+  }
+  object ArrayGeneratorLookupOptions {
+    
+    inline def apply(): ArrayGeneratorLookupOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ArrayGeneratorLookupOptions]
+    }
+    
+    extension [Self <: ArrayGeneratorLookupOptions](x: Self) {
+      
+      inline def setSingleResult(value: `false`): Self = StObject.set(x, "singleResult", value.asInstanceOf[js.Any])
+      
+      inline def setSingleResultUndefined: Self = StObject.set(x, "singleResult", js.undefined)
+    }
+  }
+  
+  /**
     * Provides the functionality to handle callbacks.
     */
   type Callback = /**
@@ -199,7 +266,7 @@ object mod {
     *
     * @param err The error that occurred.
     */
-  js.Function1[/* err */ Error | Null, Unit]
+  js.Function1[/* err */ js.Error | Null, Unit]
   
   /**
     * `Environment` object is responsible of handling the lifecycle and bootstrap
@@ -245,7 +312,7 @@ object mod {
       * // => generator-foo:all
       */
     def alias(`match`: String, value: String): Unit = js.native
-    def alias(`match`: RegExp, value: String): Unit = js.native
+    def alias(`match`: js.RegExp, value: String): Unit = js.native
     /**
       * Gets the alias for the specified `name`.
       */
@@ -257,28 +324,52 @@ object mod {
     var aliases: js.Array[Alias] = js.native
     
     /**
+      * Applies the specified transform streams to the files in the `sharedFs`.
+      *
+      * @param transformStreams The transforms to apply.
+      * @param stream The file stream to apply the transforms on.
+      */
+    def applyTransforms(transformStreams: js.Array[Transform]): js.Promise[Unit] = js.native
+    def applyTransforms(transformStreams: js.Array[Transform], stream: ReadableStream[Any]): js.Promise[Unit] = js.native
+    
+    /**
       * The arguments passed to this environment.
       */
     var arguments: js.Array[String] = js.native
     
     /**
+      * Commits the `mem-fs` to the disk.
+      *
+      * @param stream The files to commit.
+      */
+    def commitSharedFs(stream: Stream): js.Promise[Unit] = js.native
+    
+    /**
+      * Composes with a generator.
+      *
+      * @param namespaceOrPath The namespace of the generator or the path to a generator.
+      * @param args The options to pass to the generator.
+      * @param options The options to pass to the generator.
+      * @returns The instantiated generator or a singleton instance.
+      */
+    def composeWith(namespaceOrPath: String, args: js.Array[String], options: GeneratorOptions): typings.yeomanGenerator.mod.^[GeneratorOptions] = js.native
+    
+    /**
       * Creates a new generator.
       *
       * @param namespaceOrPath The namespace of the generator or the path to a generator.
+      * @param args The arguments to pass to the generator.
       * @param options The options to pass to the generator.
-      *
       * @returns Either the newly created generator or the error that occurred.
       */
-    def create[TOptions /* <: GeneratorOptions */](namespaceOrPath: String): typings.yeomanGenerator.mod.^[TOptions] | Error = js.native
-    def create[TOptions /* <: GeneratorOptions */](namespaceOrPath: String, options: InstantiateOptions[TOptions]): typings.yeomanGenerator.mod.^[TOptions] | Error = js.native
+    def create[TOptions /* <: GeneratorOptions */](namespaceOrPath: String, args: js.Array[String]): typings.yeomanGenerator.mod.^[TOptions] | js.Error = js.native
+    def create[TOptions /* <: GeneratorOptions */](namespaceOrPath: String, args: js.Array[String], options: InstantiateOptions[TOptions]): typings.yeomanGenerator.mod.^[TOptions] | js.Error = js.native
     
     /**
       * The working-directory of the environment.
       */
     var cwd: String = js.native
     
-    def error(error: js.Object): Error = js.native
-    def error(error: js.Object, verifyListener: Boolean): Error = js.native
     /**
       * Handles the specified `error`.
       *
@@ -286,10 +377,9 @@ object mod {
       * If no `error` listener is registered, the error is thrown.
       *
       * @param error An object representing the error.
-      * @param verifyListener A value indicating whether an error should be thrown if no `error` listener is present.
       */
-    def error(error: Error): Error = js.native
-    def error(error: Error, verifyListener: Boolean): Error = js.native
+    def error(error: js.Error): js.Error = js.native
+    def error(error: js.Object): js.Error = js.native
     
     /**
       * Searches npm for every available generator.
@@ -316,7 +406,7 @@ object mod {
     def get(namespaceOrPath: String): js.UndefOr[
         Instantiable2[
           /* args */ String, 
-          /* import warning: RewrittenClass.unapply cls was tparam T */ /* options */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam T */ /* options */ Any, 
           typings.yeomanGenerator.mod.^[GeneratorOptions]
         ]
       ] = js.native
@@ -330,7 +420,7 @@ object mod {
     def getByPath(path: String): js.UndefOr[
         Instantiable2[
           /* args */ String, 
-          /* import warning: RewrittenClass.unapply cls was tparam T */ /* options */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam T */ /* options */ Any, 
           typings.yeomanGenerator.mod.^[GeneratorOptions]
         ]
       ] = js.native
@@ -403,10 +493,15 @@ object mod {
     /**
       * Instantiates a generator.
       *
-      * @param name The constructor of the generator.
+      * @param generator The constructor of the generator.
+      * @param args The arguments to pass to the generator.
       * @param options The options to pass to the generator.
       */
-    def instantiate(name: GeneratorConstructor, options: InstantiateOptions[GeneratorOptions]): typings.yeomanGenerator.mod.^[GeneratorOptions] = js.native
+    def instantiate(
+      generator: GeneratorConstructor,
+      args: js.Array[String],
+      options: InstantiateOptions[GeneratorOptions]
+    ): typings.yeomanGenerator.mod.^[GeneratorOptions] = js.native
     
     /**
       * Checks whether a package with the specified `packageNamespace` has been registered.
@@ -416,6 +511,22 @@ object mod {
       */
     def isPackageRegistered(): Boolean = js.native
     def isPackageRegistered(packageNamespace: String): Boolean = js.native
+    
+    /**
+      * Applies the specified `options` to the environment.
+      *
+      * @param options The options to load.
+      * @returns The new options of the environment.
+      */
+    def loadEnvironmentOptions(options: Options): Options = js.native
+    
+    /**
+      * Loads the specified `options` into the environment for passing to the generators.
+      *
+      * @param options The options to load.
+      * @return the new shared options of the environment.
+      */
+    def loadSharedOptions(options: GeneratorOptions): GeneratorOptions = js.native
     
     /**
       * Searches for generators and their sub-generators.
@@ -430,13 +541,10 @@ object mod {
       * So the index file `node_modules/generator-dummy/lib/generators/yo/index.js` would be registered as `dummy:yo` generator.
       *
       * @param options The options for the lookup.
-      * @param cb A callback that is called once the lookup has been finished.
       * @returns A list of generators.
       */
     def lookup(): js.Array[LookupGeneratorMeta] = js.native
-    def lookup(options: Unit, cb: js.Function1[/* err */ Null | Error, Unit]): js.Array[LookupGeneratorMeta] = js.native
     def lookup(options: LookupOptions): js.Array[LookupGeneratorMeta] = js.native
-    def lookup(options: LookupOptions, cb: js.Function1[/* err */ Null | Error, Unit]): js.Array[LookupGeneratorMeta] = js.native
     
     /**
       * Searches and registers generators inside the custom local repository.
@@ -469,6 +577,26 @@ object mod {
       * The options of the environment.
       */
     var options: TOptions = js.native
+    
+    /**
+      * Queue's the environment's commit task.
+      */
+    def queueConflicter(): Unit = js.native
+    
+    /**
+      * Queues the specified `generator`.
+      *
+      * @param generator The generator to queue.
+      * @param schedule A value indicating whether the execution of the generator should be scheduled.
+      * @returns The queued generator.
+      */
+    def queueGenerator(generator: typings.yeomanGenerator.mod.^[GeneratorOptions]): typings.yeomanGenerator.mod.^[GeneratorOptions] = js.native
+    def queueGenerator(generator: typings.yeomanGenerator.mod.^[GeneratorOptions], schedule: Boolean): typings.yeomanGenerator.mod.^[GeneratorOptions] = js.native
+    
+    /**
+      * Queues the package manager installation task.
+      */
+    def queuePackageManagerInstall(): Unit = js.native
     
     /**
       * Registers a specific `generator` to this environment.
@@ -505,10 +633,20 @@ object mod {
     def resolveModulePath(moduleId: String): String = js.native
     
     /**
+      * Resolves a package name with a specific version.
+      *
+      * @param packageName The name of the package to resolve.
+      * @param packageVersion The version or the version range of the package to resolve.
+      */
+    def resolvePackage(packageName: String, packageVersion: String): js.Tuple2[String, String] = js.native
+    
+    /**
       * Gets the first generator that was queued to run in this environment.
       */
     def rootGenerator(): typings.yeomanGenerator.mod.^[GeneratorOptions] = js.native
     
+    def run(args: Array[String]): js.Promise[Unit] = js.native
+    def run(args: Array[String], options: GeneratorOptions): js.Promise[Unit] = js.native
     /**
       * Tries to locate and run a specific generator.
       * The lookup is done depending on the provided arguments, options and the list of registered generators.
@@ -516,31 +654,10 @@ object mod {
       * When the environment was unable to resolve a generator, an error is raised.
       *
       * @param args The arguments to pass to the generator.
-      * @param done The callback.
+      * @param options The options to pass to the generator.
       */
-    def run(args: String, done: Callback): Unit = js.native
-    /**
-      * Tries to locate and run a specific generator.
-      * The lookup is done depending on the provided arguments, options and the list of registered generators.
-      *
-      * When the environment was unable to resolve a generator, an error is raised.
-      *
-      * @param args The arguments to pass to the generator.
-      * @param options The options for creating the generator.
-      * @param done The callback.
-      */
-    def run(args: String, options: js.Object, done: Callback): Unit = js.native
-    def run(args: js.Array[String], done: Callback): Unit = js.native
-    def run(args: js.Array[String], options: js.Object, done: Callback): Unit = js.native
-    /**
-      * Tries to locate and run a specific generator.
-      * The lookup is done depending on the provided arguments, options and the list of registered generators.
-      *
-      * When the environment was unable to resolve a generator, an error is raised.
-      *
-      * @param done The callback.
-      */
-    def run(done: Callback): Unit = js.native
+    def run(args: String): js.Promise[Unit] = js.native
+    def run(args: String, options: GeneratorOptions): js.Promise[Unit] = js.native
     
     /**
       * Runs the specified generator.
@@ -548,15 +665,38 @@ object mod {
       * See [#101](https://github.com/yeoman/environment/pull/101) for more info.
       *
       * @param generator The generator to run.
-      * @param callback The callback.
       */
     def runGenerator(generator: typings.yeomanGenerator.mod.^[GeneratorOptions]): js.Promise[Unit] = js.native
-    def runGenerator(generator: typings.yeomanGenerator.mod.^[GeneratorOptions], callback: Callback): js.Promise[Unit] = js.native
     
     /**
       * The file-system of the environment.
       */
     var sharedFs: Store = js.native
+    
+    /**
+      * Spawns a command asynchronously.
+      *
+      * @param command The command to execute.
+      * @param args The arguments to pass to the program.
+      * @param options The options to use for running the command.
+      */
+    def spawnCommand(command: String, args: js.Array[String], options: Options): ExecaChildProcess[String] = js.native
+    
+    /**
+      * Spawns a command synchronously.
+      *
+      * @param command The command to execute.
+      * @param args The arguments to pass to the program.
+      * @param options The options to use for running the command.
+      */
+    def spawnCommandSync(command: String, args: js.Array[String], options: SyncOptions[String]): ExecaSyncReturnValue[String] = js.native
+    
+    /**
+      * Starts the environment queue.
+      *
+      * @param options The conflicter options.
+      */
+    def start(options: ConflicterOptions): js.Promise[Unit] = js.native
     
     /**
       * The config-storage of the environment.
@@ -660,7 +800,7 @@ object mod {
       
       inline def setPackagePatternsUndefined: Self = StObject.set(x, "packagePatterns", js.undefined)
       
-      inline def setPackagePatternsVarargs(value: String*): Self = StObject.set(x, "packagePatterns", js.Array(value :_*))
+      inline def setPackagePatternsVarargs(value: String*): Self = StObject.set(x, "packagePatterns", js.Array(value*))
     }
   }
   
@@ -692,7 +832,7 @@ object mod {
       
       inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
       
-      inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value*))
       
       inline def setOptions(value: TOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -703,143 +843,7 @@ object mod {
   /**
     * Represents a component for logging messages.
     */
-  /* Inlined yeoman-environment.yeoman-environment/lib/util/log.Logger<yeoman-environment.yeoman-environment/lib/util/log.DefaultCategories> */
-  @js.native
-  trait Logger extends StObject {
-    
-    /**
-      * Writes a log-message.
-      *
-      * @param format
-      * The format of the log-messages.
-      * See <https://github.com/mikeal/logref> for more info.
-      *
-      * @param params
-      * The parameters to replace variables with.
-      */
-    def apply(): LoggerDefaultCategories = js.native
-    /**
-      * Writes a log-message.
-      */
-    def apply(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Console['error']> is not an array type */ args: Parameters[js.Function1[/* repeated */ js.Any, Unit]]
-    ): LoggerDefaultCategories = js.native
-    def apply(format: String): LoggerDefaultCategories = js.native
-    def apply(format: String, params: Record[String, js.Any]): LoggerDefaultCategories = js.native
-    def apply(format: Unit, params: Record[String, js.Any]): LoggerDefaultCategories = js.native
-    
-    def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    var conflict: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
-        LoggerDefaultCategories
-      ] = js.native
-    
-    var create: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
-        LoggerDefaultCategories
-      ] = js.native
-    
-    def emit(event: String, args: js.Any*): Boolean = js.native
-    def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-    
-    /**
-      * Writes an error-message with a prepended cross mark.
-      */
-    def error(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
-    ): LoggerDefaultCategories = js.native
-    
-    def eventNames(): js.Array[String | js.Symbol] = js.native
-    
-    var force: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
-        LoggerDefaultCategories
-      ] = js.native
-    
-    def getMaxListeners(): Double = js.native
-    
-    var identical: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
-        LoggerDefaultCategories
-      ] = js.native
-    
-    var info: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
-        LoggerDefaultCategories
-      ] = js.native
-    
-    var invoke: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
-        LoggerDefaultCategories
-      ] = js.native
-    
-    def listenerCount(event: String): Double = js.native
-    def listenerCount(event: js.Symbol): Double = js.native
-    
-    def listeners(event: String): js.Array[js.Function] = js.native
-    def listeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    /**
-      * Writes a success status with a check mark `✔`.
-      */
-    def ok(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
-    ): LoggerDefaultCategories = js.native
-    
-    def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    // Added in Node 6...
-    def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def rawListeners(event: String): js.Array[js.Function] = js.native
-    def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    def removeAllListeners(): this.type = js.native
-    def removeAllListeners(event: String): this.type = js.native
-    def removeAllListeners(event: js.Symbol): this.type = js.native
-    
-    def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def setMaxListeners(n: Double): this.type = js.native
-    
-    var skip: js.Function1[
-        /* args */ Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]], 
-        LoggerDefaultCategories
-      ] = js.native
-    
-    /**
-      * Writes a table to the console.
-      */
-    var table: FnCall = js.native
-    
-    /**
-      * Writes a log-message.
-      */
-    def write(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
-    ): LoggerDefaultCategories = js.native
-    
-    /**
-      * Writes a log-message with an appended newline character.
-      */
-    def writeln(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof format> is not an array type */ args: Parameters[js.Function2[/* format */ js.Any, /* repeated */ js.Any, String]]
-    ): LoggerDefaultCategories = js.native
-  }
+  type Logger = typings.yeomanEnvironment.logMod.Logger[DefaultCategories]
   
   /**
     * Provides information about a generator.
@@ -941,7 +945,7 @@ object mod {
       
       inline def setFilePatternsUndefined: Self = StObject.set(x, "filePatterns", js.undefined)
       
-      inline def setFilePatternsVarargs(value: String*): Self = StObject.set(x, "filePatterns", js.Array(value :_*))
+      inline def setFilePatternsVarargs(value: String*): Self = StObject.set(x, "filePatterns", js.Array(value*))
       
       inline def setGlobbyDeep(value: Double): Self = StObject.set(x, "globbyDeep", value.asInstanceOf[js.Any])
       
@@ -951,19 +955,19 @@ object mod {
       
       inline def setNpmPathsUndefined: Self = StObject.set(x, "npmPaths", js.undefined)
       
-      inline def setNpmPathsVarargs(value: String*): Self = StObject.set(x, "npmPaths", js.Array(value :_*))
+      inline def setNpmPathsVarargs(value: String*): Self = StObject.set(x, "npmPaths", js.Array(value*))
       
       inline def setPackagePaths(value: js.Array[String]): Self = StObject.set(x, "packagePaths", value.asInstanceOf[js.Any])
       
       inline def setPackagePathsUndefined: Self = StObject.set(x, "packagePaths", js.undefined)
       
-      inline def setPackagePathsVarargs(value: String*): Self = StObject.set(x, "packagePaths", js.Array(value :_*))
+      inline def setPackagePathsVarargs(value: String*): Self = StObject.set(x, "packagePaths", js.Array(value*))
       
       inline def setPackagePatterns(value: js.Array[String]): Self = StObject.set(x, "packagePatterns", value.asInstanceOf[js.Any])
       
       inline def setPackagePatternsUndefined: Self = StObject.set(x, "packagePatterns", js.undefined)
       
-      inline def setPackagePatternsVarargs(value: String*): Self = StObject.set(x, "packagePatterns", js.Array(value :_*))
+      inline def setPackagePatternsVarargs(value: String*): Self = StObject.set(x, "packagePatterns", js.Array(value*))
       
       inline def setSingleResult(value: Boolean): Self = StObject.set(x, "singleResult", value.asInstanceOf[js.Any])
       
@@ -1006,12 +1010,42 @@ object mod {
        with /**
     * Additional options.
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
+    
+    /**
+      * A console instance for logging messages.
+      */
+    var console: js.UndefOr[Console] = js.undefined
     
     /**
       * The working-directory of the environment.
       */
     var cwd: js.UndefOr[String] = js.undefined
+    
+    /**
+      * A value indicating whether the experimental features should be enabled.
+      */
+    var experimental: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The options to pass to generators.
+      */
+    var sharedOptions: js.UndefOr[GeneratorOptions] = js.undefined
+    
+    /**
+      * A stream to write error messages to.
+      */
+    var stderr: js.UndefOr[Stream] = js.undefined
+    
+    /**
+      * A stream for receiving data from.
+      */
+    var stdin: js.UndefOr[Stream] = js.undefined
+    
+    /**
+      * A stream to write normal messages to.
+      */
+    var stdout: js.UndefOr[Stream] = js.undefined
   }
   object Options {
     
@@ -1022,19 +1056,69 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
+      inline def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
+      
+      inline def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
+      
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      
+      inline def setExperimental(value: Boolean): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+      
+      inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
+      
+      inline def setSharedOptions(value: GeneratorOptions): Self = StObject.set(x, "sharedOptions", value.asInstanceOf[js.Any])
+      
+      inline def setSharedOptionsUndefined: Self = StObject.set(x, "sharedOptions", js.undefined)
+      
+      inline def setStderr(value: Stream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      
+      inline def setStdin(value: Stream): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      
+      inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+      
+      inline def setStdout(value: Stream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      
+      inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     }
   }
   
   /**
     * Represents a question.
     */
-  type Question[T] = DistinctQuestion[T]
+  type Question[T /* <: typings.inquirer.mod.Answers */] = DistinctQuestion[T]
   
   /**
     * Represents a collection of questions.
     */
-  type Questions[T] = QuestionCollection[T]
+  type Questions[T /* <: typings.inquirer.mod.Answers */] = QuestionCollection[T]
+  
+  /**
+    * Provides options for single generator lookups.
+    */
+  trait SingleGeneratorLookupOptions
+    extends StObject
+       with GeneratorLookupOptions {
+    
+    /**
+      * @inheritdoc
+      */
+    @JSName("singleResult")
+    var singleResult_SingleGeneratorLookupOptions: `true`
+  }
+  object SingleGeneratorLookupOptions {
+    
+    inline def apply(): SingleGeneratorLookupOptions = {
+      val __obj = js.Dynamic.literal(singleResult = true)
+      __obj.asInstanceOf[SingleGeneratorLookupOptions]
+    }
+    
+    extension [Self <: SingleGeneratorLookupOptions](x: Self) {
+      
+      inline def setSingleResult(value: `true`): Self = StObject.set(x, "singleResult", value.asInstanceOf[js.Any])
+    }
+  }
 }

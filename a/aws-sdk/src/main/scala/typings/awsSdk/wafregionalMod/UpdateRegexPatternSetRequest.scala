@@ -36,6 +36,6 @@ object UpdateRegexPatternSetRequest {
     
     inline def setUpdates(value: RegexPatternSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
-    inline def setUpdatesVarargs(value: RegexPatternSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: RegexPatternSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ Creates a url with query params and creates and object/list of params using the 
 | ------------------ | :-------------: |
 | Full name          | query-string-params |
 | Keywords           | query-string, query, url-string |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 32521 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2279.3333333333335 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/bansalrachita/url-query-string#readme)

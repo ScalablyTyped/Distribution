@@ -1,6 +1,7 @@
 package typings.reactHighlightJs
 
 import org.scalablytyped.runtime.Shortcut
+import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
@@ -14,10 +15,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-highlight.js", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[HighlightProps, ComponentState, js.Any] {
+  open class default protected () extends Component[HighlightProps, ComponentState, Any] {
     def this(props: HighlightProps) = this()
-    def this(props: HighlightProps, context: js.Any) = this()
+    def this(props: HighlightProps, context: Any) = this()
   }
   /**
     * A lightweight React wrapper around the Highlight.js syntax highlighting library.
@@ -36,7 +36,17 @@ object mod extends Shortcut {
     /**
       * Language name to use as a class to signal type to highlight.js.
       */
+    var className: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Language name to use as a class to signal type to highlight.js.
+      */
     var language: String
+    
+    /**
+      * Inline styles to apply to the rendered <pre> tag.
+      */
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object HighlightProps {
     
@@ -51,7 +61,15 @@ object mod extends Shortcut {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

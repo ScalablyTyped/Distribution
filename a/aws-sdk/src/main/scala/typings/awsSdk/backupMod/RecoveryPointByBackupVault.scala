@@ -17,7 +17,7 @@ trait RecoveryPointByBackupVault extends StObject {
   var BackupVaultArn: js.UndefOr[ARN] = js.undefined
   
   /**
-    * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
+    * The name of a logical container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the Amazon Web Services Region where they are created. They consist of lowercase letters, numbers, and hyphens.
     */
   var BackupVaultName: js.UndefOr[typings.awsSdk.backupMod.BackupVaultName] = js.undefined
   
@@ -29,7 +29,7 @@ trait RecoveryPointByBackupVault extends StObject {
   /**
     * The date and time a job to restore a recovery point is completed, in Unix format and Coordinated Universal Time (UTC). The value of CompletionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CompletionDate: js.UndefOr[timestamp] = js.undefined
+  var CompletionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Contains identifying information about the creation of a recovery point, including the BackupPlanArn, BackupPlanId, BackupPlanVersion, and BackupRuleId of the backup plan that is used to create it.
@@ -39,7 +39,7 @@ trait RecoveryPointByBackupVault extends StObject {
   /**
     * The date and time a recovery point is created, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CreationDate: js.UndefOr[timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The server-side encryption key that is used to protect your backups; for example, arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab.
@@ -59,10 +59,10 @@ trait RecoveryPointByBackupVault extends StObject {
   /**
     * The date and time a recovery point was last restored, in Unix format and Coordinated Universal Time (UTC). The value of LastRestoreTime is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var LastRestoreTime: js.UndefOr[timestamp] = js.undefined
+  var LastRestoreTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The lifecycle defines when a protected resource is transitioned to cold storage and when it expires. AWS Backup transitions and expires backups automatically according to the lifecycle that you define.  Backups transitioned to cold storage must be stored in cold storage for a minimum of 90 days. Therefore, the “expire after days” setting must be 90 days greater than the “transition to cold after days” setting. The “transition to cold after days” setting cannot be changed after a backup has been transitioned to cold. 
+    * The lifecycle defines when a protected resource is transitioned to cold storage and when it expires. Backup transitions and expires backups automatically according to the lifecycle that you define.  Backups transitioned to cold storage must be stored in cold storage for a minimum of 90 days. Therefore, the “retention” setting must be 90 days greater than the “transition to cold after days” setting. The “transition to cold after days” setting cannot be changed after a backup has been transitioned to cold.  Resource types that are able to be transitioned to cold storage are listed in the "Lifecycle to cold storage" section of the  Feature availability by resource table. Backup ignores this expression for other resource types.
     */
   var Lifecycle: js.UndefOr[typings.awsSdk.backupMod.Lifecycle] = js.undefined
   
@@ -77,7 +77,7 @@ trait RecoveryPointByBackupVault extends StObject {
   var ResourceArn: js.UndefOr[ARN] = js.undefined
   
   /**
-    * The type of AWS resource saved as a recovery point; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database. For VSS Windows backups, the only supported resource type is Amazon EC2.
+    * The type of Amazon Web Services resource saved as a recovery point; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database. For Windows Volume Shadow Copy Service (VSS) backups, the only supported resource type is Amazon EC2.
     */
   var ResourceType: js.UndefOr[typings.awsSdk.backupMod.ResourceType] = js.undefined
   
@@ -90,6 +90,11 @@ trait RecoveryPointByBackupVault extends StObject {
     * A status code specifying the state of the recovery point.
     */
   var Status: js.UndefOr[RecoveryPointStatus] = js.undefined
+  
+  /**
+    * A message explaining the reason of the recovery point deletion failure.
+    */
+  var StatusMessage: js.UndefOr[String] = js.undefined
 }
 object RecoveryPointByBackupVault {
   
@@ -116,7 +121,7 @@ object RecoveryPointByBackupVault {
     
     inline def setCalculatedLifecycleUndefined: Self = StObject.set(x, "CalculatedLifecycle", js.undefined)
     
-    inline def setCompletionDate(value: timestamp): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
+    inline def setCompletionDate(value: js.Date): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
     
     inline def setCompletionDateUndefined: Self = StObject.set(x, "CompletionDate", js.undefined)
     
@@ -124,7 +129,7 @@ object RecoveryPointByBackupVault {
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    inline def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -140,7 +145,7 @@ object RecoveryPointByBackupVault {
     
     inline def setIsEncryptedUndefined: Self = StObject.set(x, "IsEncrypted", js.undefined)
     
-    inline def setLastRestoreTime(value: timestamp): Self = StObject.set(x, "LastRestoreTime", value.asInstanceOf[js.Any])
+    inline def setLastRestoreTime(value: js.Date): Self = StObject.set(x, "LastRestoreTime", value.asInstanceOf[js.Any])
     
     inline def setLastRestoreTimeUndefined: Self = StObject.set(x, "LastRestoreTime", js.undefined)
     
@@ -165,6 +170,10 @@ object RecoveryPointByBackupVault {
     inline def setSourceBackupVaultArnUndefined: Self = StObject.set(x, "SourceBackupVaultArn", js.undefined)
     
     inline def setStatus(value: RecoveryPointStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }

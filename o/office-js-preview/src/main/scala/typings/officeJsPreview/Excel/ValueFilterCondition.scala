@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ValueFilterCondition extends StObject
 /**
-  *
   * Enum representing all accepted conditions by which a value filter can be applied.
   Used to configure the type of PivotFilter that is applied to the field.
-  `PivotFilter.exclusive` can be set to true to invert many of these conditions.
+  `PivotFilter.exclusive` can be set to `true` to invert many of these conditions.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @JSGlobal("Excel.ValueFilterCondition")
@@ -23,7 +23,8 @@ object ValueFilterCondition extends StObject {
     
     Required Criteria: {`value`, `lowerBound`, `upperBound`}.
     Optional Criteria: {`exclusive`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait between
@@ -34,7 +35,8 @@ object ValueFilterCondition extends StObject {
     * In bottom N (`threshold`) [items, percent, sum] of value category.
     
     Required Criteria: {`value`, `threshold`, `selectionType`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait bottomN
@@ -46,7 +48,8 @@ object ValueFilterCondition extends StObject {
     
     Required Criteria: {`value`, `comparator`}.
     Optional Criteria: {`exclusive`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait equals
@@ -57,7 +60,8 @@ object ValueFilterCondition extends StObject {
     * Greater than comparator criterion.
     
     Required Criteria: {`value`, `comparator`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait greaterThan
@@ -68,7 +72,8 @@ object ValueFilterCondition extends StObject {
     * Greater than or equal to comparator criterion.
     
     Required Criteria: {`value`, `comparator`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait greaterThanOrEqualTo
@@ -79,7 +84,8 @@ object ValueFilterCondition extends StObject {
     * Less than comparator criterion.
     
     Required Criteria: {`value`, `comparator`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait lessThan
@@ -90,7 +96,8 @@ object ValueFilterCondition extends StObject {
     * Less than or equal to comparator criterion.
     
     Required Criteria: {`value`, `comparator`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait lessThanOrEqualTo
@@ -101,7 +108,8 @@ object ValueFilterCondition extends StObject {
     * In top N (`threshold`) [items, percent, sum] of value category.
     
     Required Criteria: {`value`, `threshold`, `selectionType`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait topN
@@ -109,8 +117,9 @@ object ValueFilterCondition extends StObject {
        with ValueFilterCondition
   
   /**
-    * ValueFilterCondition is unknown or unsupported.
-    *
+    * `ValueFilterCondition` is unknown or unsupported.
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait unknown

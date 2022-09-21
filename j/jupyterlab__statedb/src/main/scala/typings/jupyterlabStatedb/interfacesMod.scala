@@ -59,7 +59,7 @@ object interfacesMod {
       * tested for. For example, some back-ends may return a copy of the item of
       * type `T` being removed while others may return no content.
       */
-    def remove(id: V): js.Promise[js.Any] = js.native
+    def remove(id: V): js.Promise[Any] = js.native
     
     /**
       * Save a value using the data connector.
@@ -76,7 +76,7 @@ object interfacesMod {
       * tested for. For example, some back-ends may return a copy of the item of
       * type `T` being saved while others may return no content.
       */
-    def save(id: V, value: U): js.Promise[js.Any] = js.native
+    def save(id: V, value: U): js.Promise[Any] = js.native
   }
   
   trait IObjectPool[T /* <: IObservableDisposable */]
@@ -258,7 +258,7 @@ object interfacesMod {
     }
   }
   
-  trait IRestorer[T /* <: IRestorable[U, js.Any] */, U /* <: IObservableDisposable */, V] extends StObject {
+  trait IRestorer[T /* <: IRestorable[U, Any] */, U /* <: IObservableDisposable */, V] extends StObject {
     
     /**
       * Restore the objects in a given restorable collection.
@@ -279,7 +279,7 @@ object interfacesMod {
   }
   object IRestorer {
     
-    inline def apply[T /* <: IRestorable[U, js.Any] */, U /* <: IObservableDisposable */, V](
+    inline def apply[T /* <: IRestorable[U, Any] */, U /* <: IObservableDisposable */, V](
       restore: (T, typings.jupyterlabStatedb.interfacesMod.IRestorable.IOptions[U]) => js.Promise[V],
       restored: js.Promise[V]
     ): IRestorer[T, U, V] = {
@@ -312,7 +312,7 @@ object interfacesMod {
       /**
         * The point after which it is safe to restore state.
         */
-      var when: js.UndefOr[js.Promise[js.Any] | js.Array[js.Promise[js.Any]]] = js.undefined
+      var when: js.UndefOr[js.Promise[Any] | js.Array[js.Promise[Any]]] = js.undefined
     }
     object IOptions {
       
@@ -331,15 +331,15 @@ object interfacesMod {
         
         inline def setName(value: T => String): Self = StObject.set(x, "name", js.Any.fromFunction1(value))
         
-        inline def setWhen(value: js.Promise[js.Any] | js.Array[js.Promise[js.Any]]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+        inline def setWhen(value: js.Promise[Any] | js.Array[js.Promise[Any]]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
         
         inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
         
-        inline def setWhenVarargs(value: js.Promise[js.Any]*): Self = StObject.set(x, "when", js.Array(value :_*))
+        inline def setWhenVarargs(value: js.Promise[Any]*): Self = StObject.set(x, "when", js.Array(value*))
       }
     }
     
-    extension [Self <: IRestorer[?, ?, ?], T /* <: IRestorable[U, js.Any] */, U /* <: IObservableDisposable */, V](x: Self & (IRestorer[T, U, V])) {
+    extension [Self <: IRestorer[?, ?, ?], T /* <: IRestorable[U, Any] */, U /* <: IObservableDisposable */, V](x: Self & (IRestorer[T, U, V])) {
       
       inline def setRestore(value: (T, typings.jupyterlabStatedb.interfacesMod.IRestorable.IOptions[U]) => js.Promise[V]): Self = StObject.set(x, "restore", js.Any.fromFunction2(value))
       

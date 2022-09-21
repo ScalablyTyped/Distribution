@@ -28,7 +28,7 @@ object simpleGeometryMod {
     
     /* protected */ var flatCoordinates: js.Array[Double] = js.native
     
-    def getCoordinates(): js.Array[js.Any] = js.native
+    def getCoordinates(): js.Array[Any] = js.native
     
     /**
       * Return the first coordinate of the geometry.
@@ -53,13 +53,13 @@ object simpleGeometryMod {
     
     /* protected */ var layout: GeometryLayout = js.native
     
-    def setCoordinates(coordinates: js.Array[js.Any]): Unit = js.native
-    def setCoordinates(coordinates: js.Array[js.Any], opt_layout: GeometryLayout): Unit = js.native
+    def setCoordinates(coordinates: js.Array[Any]): Unit = js.native
+    def setCoordinates(coordinates: js.Array[Any], opt_layout: GeometryLayout): Unit = js.native
     
     def setFlatCoordinates(layout: GeometryLayout, flatCoordinates: js.Array[Double]): Unit = js.native
     
-    /* protected */ def setLayout(layout: Unit, coordinates: js.Array[js.Any], nesting: Double): Unit = js.native
-    /* protected */ def setLayout(layout: GeometryLayout, coordinates: js.Array[js.Any], nesting: Double): Unit = js.native
+    /* protected */ def setLayout(layout: Unit, coordinates: js.Array[Any], nesting: Double): Unit = js.native
+    /* protected */ def setLayout(layout: GeometryLayout, coordinates: js.Array[Any], nesting: Double): Unit = js.native
     
     /* protected */ var stride: Double = js.native
   }

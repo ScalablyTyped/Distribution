@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.UI.AttractModeControl")
 @js.native
-class AttractModeControl ()
+open class AttractModeControl ()
   extends StObject
      with typings.sharepoint.SP.UI.AttractModeControl {
   
@@ -97,7 +97,7 @@ class AttractModeControl ()
     *      An EventHandlerList object that contains references to all the events and handlers for this component.
     */
   /* CompleteClass */
-  override def get_events(): js.Any = js.native
+  override def get_events(): Any = js.native
   
   /**
     * Gets the ID of the current Component object.
@@ -108,7 +108,7 @@ class AttractModeControl ()
   override def get_id(): String = js.native
   
   /* CompleteClass */
-  override def get_imageElement(): js.Any = js.native
+  override def get_imageElement(): Any = js.native
   
   /**
     * Gets a value indicating whether the current Component object is initialized.
@@ -151,7 +151,7 @@ class AttractModeControl ()
     *      false in all cases.
     */
   /* CompleteClass */
-  override def onBubbleEvent(source: js.Any, args: js.Any): Boolean = js.native
+  override def onBubbleEvent(source: Any, args: Any): Boolean = js.native
   
   /**
     * Calls the onBubbleEvent method of the parent control.
@@ -167,7 +167,7 @@ class AttractModeControl ()
     *          The event arguments.
     */
   /* CompleteClass */
-  override def raiseBubbleEvent(source: js.Any, args: js.Any): Unit = js.native
+  override def raiseBubbleEvent(source: Any, args: Any): Unit = js.native
   
   /**
     * Raises the propertyChanged event for the specified property.

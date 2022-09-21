@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gcp-metadata" : "4.2.1"
+      "gcp-metadata" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "gcp-metadata" : "4.2.1"
+      "gcp-metadata" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

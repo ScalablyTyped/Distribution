@@ -12,6 +12,11 @@ trait SimulationJobSummary extends StObject {
   var arn: js.UndefOr[Arn] = js.undefined
   
   /**
+    * The compute type for the simulation job summary.
+    */
+  var computeType: js.UndefOr[ComputeType] = js.undefined
+  
+  /**
     * The names of the data sources.
     */
   var dataSourceNames: js.UndefOr[DataSourceNames] = js.undefined
@@ -19,7 +24,7 @@ trait SimulationJobSummary extends StObject {
   /**
     * The time, in milliseconds since the epoch, when the simulation job was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the simulation job.
@@ -54,13 +59,17 @@ object SimulationJobSummary {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
+    inline def setComputeType(value: ComputeType): Self = StObject.set(x, "computeType", value.asInstanceOf[js.Any])
+    
+    inline def setComputeTypeUndefined: Self = StObject.set(x, "computeType", js.undefined)
+    
     inline def setDataSourceNames(value: DataSourceNames): Self = StObject.set(x, "dataSourceNames", value.asInstanceOf[js.Any])
     
     inline def setDataSourceNamesUndefined: Self = StObject.set(x, "dataSourceNames", js.undefined)
     
-    inline def setDataSourceNamesVarargs(value: Name*): Self = StObject.set(x, "dataSourceNames", js.Array(value :_*))
+    inline def setDataSourceNamesVarargs(value: Name*): Self = StObject.set(x, "dataSourceNames", js.Array(value*))
     
-    inline def setLastUpdatedAt(value: LastUpdatedAt): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
@@ -72,13 +81,13 @@ object SimulationJobSummary {
     
     inline def setRobotApplicationNamesUndefined: Self = StObject.set(x, "robotApplicationNames", js.undefined)
     
-    inline def setRobotApplicationNamesVarargs(value: Name*): Self = StObject.set(x, "robotApplicationNames", js.Array(value :_*))
+    inline def setRobotApplicationNamesVarargs(value: Name*): Self = StObject.set(x, "robotApplicationNames", js.Array(value*))
     
     inline def setSimulationApplicationNames(value: SimulationApplicationNames): Self = StObject.set(x, "simulationApplicationNames", value.asInstanceOf[js.Any])
     
     inline def setSimulationApplicationNamesUndefined: Self = StObject.set(x, "simulationApplicationNames", js.undefined)
     
-    inline def setSimulationApplicationNamesVarargs(value: Name*): Self = StObject.set(x, "simulationApplicationNames", js.Array(value :_*))
+    inline def setSimulationApplicationNamesVarargs(value: Name*): Self = StObject.set(x, "simulationApplicationNames", js.Array(value*))
     
     inline def setStatus(value: SimulationJobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

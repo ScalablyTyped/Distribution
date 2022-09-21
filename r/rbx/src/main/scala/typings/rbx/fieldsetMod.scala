@@ -53,7 +53,7 @@ object fieldsetMod {
   
   @JSImport("rbx/elements/form/fieldset", "Fieldset")
   @js.native
-  val Fieldset: ForwardRefAsExoticComponent[FieldsetProps, ElementType[js.Any]] = js.native
+  val Fieldset: ForwardRefAsExoticComponent[FieldsetProps, ElementType[Any]] = js.native
   
   trait FieldsetModifierProps extends StObject {
     

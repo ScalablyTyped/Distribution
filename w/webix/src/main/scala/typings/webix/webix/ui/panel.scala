@@ -11,17 +11,17 @@ trait panel
      with baseview {
   
   @JSName("$resizeEnd")
-  def $resizeEnd(pos: Double): Unit = js.native
+  def $resizeEnd(pos: Any): Unit = js.native
   
   @JSName("$resizeMove")
-  def $resizeMove(pos: Double): Unit = js.native
+  def $resizeMove(pos: Any): Unit = js.native
   
   def attachEvent(`type`: panelEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: panelEventName, functor: WebixCallback, id: String): String | Double = js.native
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   @JSName("config")
   var config_panel: panelConfig = js.native
@@ -30,7 +30,7 @@ trait panel
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
   def unblockEvent(): Unit = js.native
 }

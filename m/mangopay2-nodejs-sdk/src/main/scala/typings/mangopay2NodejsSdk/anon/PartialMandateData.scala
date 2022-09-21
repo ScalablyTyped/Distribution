@@ -1,15 +1,15 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.mod.mandate.MandateCultureCode
-import typings.mangopay2NodejsSdk.mod.mandate.MandateExecutionType
-import typings.mangopay2NodejsSdk.mod.mandate.MandateScheme
-import typings.mangopay2NodejsSdk.mod.mandate.MandateStatus
-import typings.mangopay2NodejsSdk.mod.mandate.MandateType
+import typings.mangopay2NodejsSdk.mandateMod.mandate.MandateCultureCode
+import typings.mangopay2NodejsSdk.mandateMod.mandate.MandateExecutionType
+import typings.mangopay2NodejsSdk.mandateMod.mandate.MandateScheme
+import typings.mangopay2NodejsSdk.mandateMod.mandate.MandateStatus
+import typings.mangopay2NodejsSdk.mandateMod.mandate.MandateType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.mandate.MandateData> */
+/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/mandate.mandate.MandateData> */
 trait PartialMandateData extends StObject {
   
   var BankAccountId: js.UndefOr[String] = js.undefined
@@ -26,7 +26,7 @@ trait PartialMandateData extends StObject {
   
   var Id: js.UndefOr[String] = js.undefined
   
-  var MandateType: js.UndefOr[typings.mangopay2NodejsSdk.mod.mandate.MandateType] = js.undefined
+  var MandateType: js.UndefOr[typings.mangopay2NodejsSdk.mandateMod.mandate.MandateType] = js.undefined
   
   var RedirectURL: js.UndefOr[String] = js.undefined
   

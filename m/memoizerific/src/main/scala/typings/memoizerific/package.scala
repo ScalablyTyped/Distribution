@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 type memoize = js.Function1[
-/* fn */ js.Function1[/* repeated */ js.Any, js.Any], 
-js.Function1[/* repeated */ js.Any, js.Any]]
+/* fn */ js.Function1[/* repeated */ Any, Any], 
+js.Function1[/* repeated */ Any, Any]]

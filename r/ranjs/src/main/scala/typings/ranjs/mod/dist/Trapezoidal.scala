@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.Trapezoidal")
 @js.native
-class Trapezoidal ()
+open class Trapezoidal ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.Trapezoidal] {
   def this(a: Double) = this()

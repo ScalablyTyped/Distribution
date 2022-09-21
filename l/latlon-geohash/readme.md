@@ -10,10 +10,10 @@ Gustavo Niemeyer’s geocoding system
 | ------------------ | :-------------: |
 | Full name          | latlon-geohash |
 | Keywords           | geohash, geocode, geolocation, latitude, longitude |
-| # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 490210 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 42762.333333333336 |
+| # stars            | 239.0 |
 
 ## Links
 - [Homepage](http://www.movable-type.co.uk/scripts/geohash.html)

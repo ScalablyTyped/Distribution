@@ -12,14 +12,11 @@ trait Element extends StObject {
   
   var element: typings.std.Element
   
-  var model: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]
+  var model: BaseModel[BaseEntity[BaseListener[Any]], BaseModelListener]
 }
 object Element {
   
-  inline def apply(
-    element: typings.std.Element,
-    model: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]
-  ): Element = {
+  inline def apply(element: typings.std.Element, model: BaseModel[BaseEntity[BaseListener[Any]], BaseModelListener]): Element = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
@@ -28,6 +25,6 @@ object Element {
     
     inline def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    inline def setModel(value: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: BaseModel[BaseEntity[BaseListener[Any]], BaseModelListener]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
 }

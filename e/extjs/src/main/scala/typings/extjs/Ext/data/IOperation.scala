@@ -2,7 +2,6 @@ package typings.extjs.Ext.data
 
 import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +14,10 @@ trait IOperation
   var action: js.UndefOr[String] = js.undefined
   
   /** [Property] (RegExp) */
-  var actionCommitRecordsRe: js.UndefOr[RegExp] = js.undefined
+  var actionCommitRecordsRe: js.UndefOr[js.RegExp] = js.undefined
   
   /** [Property] (RegExp) */
-  var actionSkipSyncRe: js.UndefOr[RegExp] = js.undefined
+  var actionSkipSyncRe: js.UndefOr[js.RegExp] = js.undefined
   
   /** [Method] Checks whether this operation should cause writing to occur
     * @returns Boolean Whether the operation should cause a write to occur.
@@ -29,7 +28,7 @@ trait IOperation
   var batch: js.UndefOr[IBatch] = js.undefined
   
   /** [Config Option] (Function) */
-  var callback: js.UndefOr[js.Any] = js.undefined
+  var callback: js.UndefOr[Any] = js.undefined
   
   /** [Method] This method is called to commit data to this instance s records given the records in the server response
     * @param serverRecords Ext.data.Model[] An array of Ext.data.Model objects returned by the server.
@@ -42,7 +41,7 @@ trait IOperation
   /** [Method] Returns the error string or object that was set using setException
     * @returns String/Object The error object
     */
-  var getError: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getError: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the records associated with this operation
     * @returns Ext.data.Model[]
@@ -81,10 +80,10 @@ trait IOperation
   var limit: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Object) */
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
   
   /** [Method] Marks the Operation as completed  */
   var setCompleted: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -92,7 +91,7 @@ trait IOperation
   /** [Method] Marks the Operation as having experienced an exception
     * @param error String/Object error string/object
     */
-  var setException: js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setException: js.UndefOr[js.Function1[/* error */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Marks the Operation as started  */
   var setStarted: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -125,11 +124,11 @@ object IOperation {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setActionCommitRecordsRe(value: RegExp): Self = StObject.set(x, "actionCommitRecordsRe", value.asInstanceOf[js.Any])
+    inline def setActionCommitRecordsRe(value: js.RegExp): Self = StObject.set(x, "actionCommitRecordsRe", value.asInstanceOf[js.Any])
     
     inline def setActionCommitRecordsReUndefined: Self = StObject.set(x, "actionCommitRecordsRe", js.undefined)
     
-    inline def setActionSkipSyncRe(value: RegExp): Self = StObject.set(x, "actionSkipSyncRe", value.asInstanceOf[js.Any])
+    inline def setActionSkipSyncRe(value: js.RegExp): Self = StObject.set(x, "actionSkipSyncRe", value.asInstanceOf[js.Any])
     
     inline def setActionSkipSyncReUndefined: Self = StObject.set(x, "actionSkipSyncRe", js.undefined)
     
@@ -143,7 +142,7 @@ object IOperation {
     
     inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
-    inline def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
@@ -155,7 +154,7 @@ object IOperation {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setGetError(value: () => js.Any): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
+    inline def setGetError(value: () => Any): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
     
     inline def setGetErrorUndefined: Self = StObject.set(x, "getError", js.undefined)
     
@@ -191,11 +190,11 @@ object IOperation {
     
     inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
@@ -203,7 +202,7 @@ object IOperation {
     
     inline def setSetCompletedUndefined: Self = StObject.set(x, "setCompleted", js.undefined)
     
-    inline def setSetException(value: /* error */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setException", js.Any.fromFunction1(value))
+    inline def setSetException(value: /* error */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setException", js.Any.fromFunction1(value))
     
     inline def setSetExceptionUndefined: Self = StObject.set(x, "setException", js.undefined)
     

@@ -34,7 +34,7 @@ object DescribeConformancePackStatusRequest {
     
     inline def setConformancePackNamesUndefined: Self = StObject.set(x, "ConformancePackNames", js.undefined)
     
-    inline def setConformancePackNamesVarargs(value: ConformancePackName*): Self = StObject.set(x, "ConformancePackNames", js.Array(value :_*))
+    inline def setConformancePackNamesVarargs(value: ConformancePackName*): Self = StObject.set(x, "ConformancePackNames", js.Array(value*))
     
     inline def setLimit(value: PageSizeLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

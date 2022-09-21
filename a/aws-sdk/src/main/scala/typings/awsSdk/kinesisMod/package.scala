@@ -1,21 +1,24 @@
 package typings.awsSdk.kinesisMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.UNIFORM_SCALING
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BooleanObject = scala.Boolean
+type BooleanObject = Boolean
 
-type ChildShardList = js.Array[typings.awsSdk.kinesisMod.ChildShard]
+type ChildShardList = js.Array[ChildShard]
 
-type ConsumerARN = java.lang.String
+type ConsumerARN = String
 
-type ConsumerCountObject = scala.Double
+type ConsumerCountObject = Double
 
-type ConsumerList = js.Array[typings.awsSdk.kinesisMod.Consumer]
+type ConsumerList = js.Array[Consumer]
 
-type ConsumerName = java.lang.String
+type ConsumerName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -23,38 +26,38 @@ type ConsumerName = java.lang.String
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - java.lang.String
 */
-type ConsumerStatus = typings.awsSdk.kinesisMod._ConsumerStatus | java.lang.String
+type ConsumerStatus = _ConsumerStatus | String
 
-type Data = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.kinesisMod.Blob | java.lang.String
+type Data = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type DescribeStreamInputLimit = scala.Double
+type DescribeStreamInputLimit = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.KMS
   - java.lang.String
 */
-type EncryptionType = typings.awsSdk.kinesisMod._EncryptionType | java.lang.String
+type EncryptionType = _EncryptionType | String
 
-type EnhancedMonitoringList = js.Array[typings.awsSdk.kinesisMod.EnhancedMetrics]
+type EnhancedMonitoringList = js.Array[EnhancedMetrics]
 
-type ErrorCode = java.lang.String
+type ErrorCode = String
 
-type ErrorMessage = java.lang.String
+type ErrorMessage = String
 
-type GetRecordsInputLimit = scala.Double
+type GetRecordsInputLimit = Double
 
-type HashKey = java.lang.String
+type HashKey = String
 
-type KeyId = java.lang.String
+type KeyId = String
 
-type ListShardsInputLimit = scala.Double
+type ListShardsInputLimit = Double
 
-type ListStreamConsumersInputLimit = scala.Double
+type ListStreamConsumersInputLimit = Double
 
-type ListStreamsInputLimit = scala.Double
+type ListStreamsInputLimit = Double
 
-type ListTagsForStreamInputLimit = scala.Double
+type ListTagsForStreamInputLimit = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IncomingBytes
@@ -67,31 +70,35 @@ type ListTagsForStreamInputLimit = scala.Double
   - typings.awsSdk.awsSdkStrings.ALL
   - java.lang.String
 */
-type MetricsName = typings.awsSdk.kinesisMod._MetricsName | java.lang.String
+type MetricsName = _MetricsName | String
 
-type MetricsNameList = js.Array[typings.awsSdk.kinesisMod.MetricsName]
+type MetricsNameList = js.Array[MetricsName]
 
-type MillisBehindLatest = scala.Double
+type MillisBehindLatest = Double
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type PartitionKey = java.lang.String
+type OnDemandStreamCountLimitObject = Double
 
-type PositiveIntegerObject = scala.Double
+type OnDemandStreamCountObject = Double
 
-type PutRecordsRequestEntryList = js.Array[typings.awsSdk.kinesisMod.PutRecordsRequestEntry]
+type PartitionKey = String
 
-type PutRecordsResultEntryList = js.Array[typings.awsSdk.kinesisMod.PutRecordsResultEntry]
+type PositiveIntegerObject = Double
 
-type RecordList = js.Array[typings.awsSdk.kinesisMod.Record]
+type PutRecordsRequestEntryList = js.Array[PutRecordsRequestEntry]
 
-type RetentionPeriodHours = scala.Double
+type PutRecordsResultEntryList = js.Array[PutRecordsResultEntry]
 
-type ScalingType = typings.awsSdk.awsSdkStrings.UNIFORM_SCALING | java.lang.String
+type RecordList = js.Array[Record]
 
-type SequenceNumber = java.lang.String
+type RetentionPeriodHours = Double
 
-type ShardCountObject = scala.Double
+type ScalingType = UNIFORM_SCALING | String
+
+type SequenceNumber = String
+
+type ShardCountObject = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AFTER_SHARD_ID
@@ -102,13 +109,13 @@ type ShardCountObject = scala.Double
   - typings.awsSdk.awsSdkStrings.FROM_TIMESTAMP
   - java.lang.String
 */
-type ShardFilterType = typings.awsSdk.kinesisMod._ShardFilterType | java.lang.String
+type ShardFilterType = _ShardFilterType | String
 
-type ShardId = java.lang.String
+type ShardId = String
 
-type ShardIdList = js.Array[typings.awsSdk.kinesisMod.ShardId]
+type ShardIdList = js.Array[ShardId]
 
-type ShardIterator = java.lang.String
+type ShardIterator = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AT_SEQUENCE_NUMBER
@@ -118,15 +125,22 @@ type ShardIterator = java.lang.String
   - typings.awsSdk.awsSdkStrings.AT_TIMESTAMP
   - java.lang.String
 */
-type ShardIteratorType = typings.awsSdk.kinesisMod._ShardIteratorType | java.lang.String
+type ShardIteratorType = _ShardIteratorType | String
 
-type ShardList = js.Array[typings.awsSdk.kinesisMod.Shard]
+type ShardList = js.Array[Shard]
 
-type StreamARN = java.lang.String
+type StreamARN = String
 
-type StreamName = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PROVISIONED
+  - typings.awsSdk.awsSdkStrings.ON_DEMAND
+  - java.lang.String
+*/
+type StreamMode = _StreamMode | String
 
-type StreamNameList = js.Array[typings.awsSdk.kinesisMod.StreamName]
+type StreamName = String
+
+type StreamNameList = js.Array[StreamName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -135,23 +149,23 @@ type StreamNameList = js.Array[typings.awsSdk.kinesisMod.StreamName]
   - typings.awsSdk.awsSdkStrings.UPDATING
   - java.lang.String
 */
-type StreamStatus = typings.awsSdk.kinesisMod._StreamStatus | java.lang.String
+type StreamStatus = _StreamStatus | String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.kinesisMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.kinesisMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.kinesisMod.TagValue]
+type TagMap = StringDictionary[TagValue]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2013-12-02`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.kinesisMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

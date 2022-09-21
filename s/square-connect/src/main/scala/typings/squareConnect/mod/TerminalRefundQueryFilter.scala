@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "TerminalRefundQueryFilter")
 @js.native
-class TerminalRefundQueryFilter () extends StObject {
+open class TerminalRefundQueryFilter () extends StObject {
   
   /**
     * Timestamp for the beginning of the reporting period, in RFC 3339 format. Inclusive. Default: The current time minus one day.

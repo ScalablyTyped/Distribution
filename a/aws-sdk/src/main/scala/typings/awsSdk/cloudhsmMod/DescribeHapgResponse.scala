@@ -72,19 +72,19 @@ object DescribeHapgResponse {
     
     inline def setHsmsLastActionFailedUndefined: Self = StObject.set(x, "HsmsLastActionFailed", js.undefined)
     
-    inline def setHsmsLastActionFailedVarargs(value: HsmArn*): Self = StObject.set(x, "HsmsLastActionFailed", js.Array(value :_*))
+    inline def setHsmsLastActionFailedVarargs(value: HsmArn*): Self = StObject.set(x, "HsmsLastActionFailed", js.Array(value*))
     
     inline def setHsmsPendingDeletion(value: HsmList): Self = StObject.set(x, "HsmsPendingDeletion", value.asInstanceOf[js.Any])
     
     inline def setHsmsPendingDeletionUndefined: Self = StObject.set(x, "HsmsPendingDeletion", js.undefined)
     
-    inline def setHsmsPendingDeletionVarargs(value: HsmArn*): Self = StObject.set(x, "HsmsPendingDeletion", js.Array(value :_*))
+    inline def setHsmsPendingDeletionVarargs(value: HsmArn*): Self = StObject.set(x, "HsmsPendingDeletion", js.Array(value*))
     
     inline def setHsmsPendingRegistration(value: HsmList): Self = StObject.set(x, "HsmsPendingRegistration", value.asInstanceOf[js.Any])
     
     inline def setHsmsPendingRegistrationUndefined: Self = StObject.set(x, "HsmsPendingRegistration", js.undefined)
     
-    inline def setHsmsPendingRegistrationVarargs(value: HsmArn*): Self = StObject.set(x, "HsmsPendingRegistration", js.Array(value :_*))
+    inline def setHsmsPendingRegistrationVarargs(value: HsmArn*): Self = StObject.set(x, "HsmsPendingRegistration", js.Array(value*))
     
     inline def setLabel(value: Label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
@@ -98,7 +98,7 @@ object DescribeHapgResponse {
     
     inline def setPartitionSerialListUndefined: Self = StObject.set(x, "PartitionSerialList", js.undefined)
     
-    inline def setPartitionSerialListVarargs(value: PartitionSerial*): Self = StObject.set(x, "PartitionSerialList", js.Array(value :_*))
+    inline def setPartitionSerialListVarargs(value: PartitionSerial*): Self = StObject.set(x, "PartitionSerialList", js.Array(value*))
     
     inline def setState(value: CloudHsmObjectState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

@@ -12,4 +12,6 @@ object getRoleMod {
   val ^ : js.Any = js.native
   
   inline def default(element: Element): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  
+  inline def getLocalName(element: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalName")(element.asInstanceOf[js.Any]).asInstanceOf[String]
 }

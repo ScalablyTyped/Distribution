@@ -29,7 +29,7 @@ object ListComponentsResponse {
     
     inline def setApplicationComponentListUndefined: Self = StObject.set(x, "ApplicationComponentList", js.undefined)
     
-    inline def setApplicationComponentListVarargs(value: ApplicationComponent*): Self = StObject.set(x, "ApplicationComponentList", js.Array(value :_*))
+    inline def setApplicationComponentListVarargs(value: ApplicationComponent*): Self = StObject.set(x, "ApplicationComponentList", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

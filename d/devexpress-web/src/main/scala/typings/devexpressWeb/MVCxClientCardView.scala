@@ -23,13 +23,13 @@ trait MVCxClientCardView
     * @param data An object containing any information that needs to be passed to a handling Action specified via the GridSettingsBase.CustomDataActionRouteValues property.
     * @param onCallback A ASPxClientCardViewValuesCallback object that represents the JavaScript function which receives the information on the client side.
     */
-  def GetValuesOnCustomCallback(data: js.Any, onCallback: ASPxClientCardViewValuesCallback): Unit = js.native
+  def GetValuesOnCustomCallback(data: Any, onCallback: ASPxClientCardViewValuesCallback): Unit = js.native
   
   /**
     * Sends a callback with a parameter to update the CardView by processing the passed information on the server, in an Action specified via the CardView's GridSettingsBase.CustomActionRouteValues property.
     * @param data An object containing any information that needs to be passed to a handling Action specified via the CardView's GridSettingsBase.CustomActionRouteValues property.
     * @param onSuccess A client action to perform if the server round-trip completed successfully.
     */
-  def PerformCallback(data: js.Any): Unit = js.native
-  def PerformCallback(data: js.Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
+  def PerformCallback(data: Any): Unit = js.native
+  def PerformCallback(data: Any, onSuccess: js.Function1[/* arg */ String, Unit]): Unit = js.native
 }

@@ -12,7 +12,7 @@ object strokeMod {
   
   @JSImport("ol/style/Stroke", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Stroke {
     def this(opt_options: Options) = this()
@@ -47,7 +47,7 @@ object strokeMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setLineCap(value: CanvasLineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
       
@@ -61,7 +61,7 @@ object strokeMod {
       
       inline def setLineDashUndefined: Self = StObject.set(x, "lineDash", js.undefined)
       
-      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
+      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value*))
       
       inline def setLineJoin(value: CanvasLineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
       

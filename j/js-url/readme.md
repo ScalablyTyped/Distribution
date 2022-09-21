@@ -10,10 +10,10 @@ A simple, lightweight url parser for JavaScript (~1.7 Kb minified, ~0.7Kb gzippe
 | ------------------ | :-------------: |
 | Full name          | js-url |
 | Keywords           | js, url |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 93838 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7470.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/WillZWL/)

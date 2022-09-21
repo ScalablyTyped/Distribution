@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TreeListColumnFilterable extends StObject {
   
+  var cell: js.UndefOr[TreeListColumnFilterableCell] = js.undefined
+  
   var ui: js.UndefOr[String | js.Function] = js.undefined
 }
 object TreeListColumnFilterable {
@@ -16,6 +18,10 @@ object TreeListColumnFilterable {
   }
   
   extension [Self <: TreeListColumnFilterable](x: Self) {
+    
+    inline def setCell(value: TreeListColumnFilterableCell): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    
+    inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
     inline def setUi(value: String | js.Function): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     

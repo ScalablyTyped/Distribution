@@ -22,7 +22,7 @@ trait VpcPeeringConnectionVpcInfo extends StObject {
   var Ipv6CidrBlockSet: js.UndefOr[typings.awsSdk.ec2Mod.Ipv6CidrBlockSet] = js.undefined
   
   /**
-    * The AWS account ID of the VPC owner.
+    * The ID of the Amazon Web Services account that owns the VPC.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -56,7 +56,7 @@ object VpcPeeringConnectionVpcInfo {
     
     inline def setCidrBlockSetUndefined: Self = StObject.set(x, "CidrBlockSet", js.undefined)
     
-    inline def setCidrBlockSetVarargs(value: CidrBlock*): Self = StObject.set(x, "CidrBlockSet", js.Array(value :_*))
+    inline def setCidrBlockSetVarargs(value: CidrBlock*): Self = StObject.set(x, "CidrBlockSet", js.Array(value*))
     
     inline def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
     
@@ -64,7 +64,7 @@ object VpcPeeringConnectionVpcInfo {
     
     inline def setIpv6CidrBlockSetUndefined: Self = StObject.set(x, "Ipv6CidrBlockSet", js.undefined)
     
-    inline def setIpv6CidrBlockSetVarargs(value: Ipv6CidrBlock*): Self = StObject.set(x, "Ipv6CidrBlockSet", js.Array(value :_*))
+    inline def setIpv6CidrBlockSetVarargs(value: Ipv6CidrBlock*): Self = StObject.set(x, "Ipv6CidrBlockSet", js.Array(value*))
     
     inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     

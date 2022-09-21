@@ -1,7 +1,6 @@
 package typings.moviedb
 
 import typings.moviedb.mod.MovieDB.IMovieDB
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,18 +38,18 @@ object mod {
     
     trait IMovieDB extends StObject {
       
-      def movieImages(options: InfoOptions, callback: js.Function2[/* err */ js.Any, /* images */ MovieImages, Unit]): Unit
+      def movieImages(options: InfoOptions, callback: js.Function2[/* err */ Any, /* images */ MovieImages, Unit]): Unit
       
-      def movieInfo(options: InfoOptions, callback: js.Function2[/* err */ js.Any, /* curMovie */ Movie, Unit]): Unit
+      def movieInfo(options: InfoOptions, callback: js.Function2[/* err */ Any, /* curMovie */ Movie, Unit]): Unit
       
-      def searchMovie(params: SearchOptions, callback: js.Function2[/* err */ js.Any, /* movies */ SearchResults, Unit]): Unit
+      def searchMovie(params: SearchOptions, callback: js.Function2[/* err */ Any, /* movies */ SearchResults, Unit]): Unit
     }
     object IMovieDB {
       
       inline def apply(
-        movieImages: (InfoOptions, js.Function2[/* err */ js.Any, /* images */ MovieImages, Unit]) => Unit,
-        movieInfo: (InfoOptions, js.Function2[/* err */ js.Any, /* curMovie */ Movie, Unit]) => Unit,
-        searchMovie: (SearchOptions, js.Function2[/* err */ js.Any, /* movies */ SearchResults, Unit]) => Unit
+        movieImages: (InfoOptions, js.Function2[/* err */ Any, /* images */ MovieImages, Unit]) => Unit,
+        movieInfo: (InfoOptions, js.Function2[/* err */ Any, /* curMovie */ Movie, Unit]) => Unit,
+        searchMovie: (SearchOptions, js.Function2[/* err */ Any, /* movies */ SearchResults, Unit]) => Unit
       ): IMovieDB = {
         val __obj = js.Dynamic.literal(movieImages = js.Any.fromFunction2(movieImages), movieInfo = js.Any.fromFunction2(movieInfo), searchMovie = js.Any.fromFunction2(searchMovie))
         __obj.asInstanceOf[IMovieDB]
@@ -58,11 +57,11 @@ object mod {
       
       extension [Self <: IMovieDB](x: Self) {
         
-        inline def setMovieImages(value: (InfoOptions, js.Function2[/* err */ js.Any, /* images */ MovieImages, Unit]) => Unit): Self = StObject.set(x, "movieImages", js.Any.fromFunction2(value))
+        inline def setMovieImages(value: (InfoOptions, js.Function2[/* err */ Any, /* images */ MovieImages, Unit]) => Unit): Self = StObject.set(x, "movieImages", js.Any.fromFunction2(value))
         
-        inline def setMovieInfo(value: (InfoOptions, js.Function2[/* err */ js.Any, /* curMovie */ Movie, Unit]) => Unit): Self = StObject.set(x, "movieInfo", js.Any.fromFunction2(value))
+        inline def setMovieInfo(value: (InfoOptions, js.Function2[/* err */ Any, /* curMovie */ Movie, Unit]) => Unit): Self = StObject.set(x, "movieInfo", js.Any.fromFunction2(value))
         
-        inline def setSearchMovie(value: (SearchOptions, js.Function2[/* err */ js.Any, /* movies */ SearchResults, Unit]) => Unit): Self = StObject.set(x, "searchMovie", js.Any.fromFunction2(value))
+        inline def setSearchMovie(value: (SearchOptions, js.Function2[/* err */ Any, /* movies */ SearchResults, Unit]) => Unit): Self = StObject.set(x, "searchMovie", js.Any.fromFunction2(value))
       }
     }
     
@@ -95,7 +94,7 @@ object mod {
       
       var backdrop_path: String
       
-      var belongs_to_collection: js.Any
+      var belongs_to_collection: Any
       
       var budget: Double
       
@@ -119,7 +118,7 @@ object mod {
       
       var production_countries: js.Array[ProductionCountry]
       
-      var release_date: Date
+      var release_date: js.Date
       
       var revenue: Double
       
@@ -142,7 +141,7 @@ object mod {
       inline def apply(
         adult: Boolean,
         backdrop_path: String,
-        belongs_to_collection: js.Any,
+        belongs_to_collection: Any,
         budget: Double,
         genres: js.Array[Genre],
         homepage: String,
@@ -154,7 +153,7 @@ object mod {
         poster_path: String,
         production_companies: js.Array[ProductionCompany],
         production_countries: js.Array[ProductionCountry],
-        release_date: Date,
+        release_date: js.Date,
         revenue: Double,
         runtime: Double,
         spoken_languages: js.Array[SpokenLanguage],
@@ -174,13 +173,13 @@ object mod {
         
         inline def setBackdrop_path(value: String): Self = StObject.set(x, "backdrop_path", value.asInstanceOf[js.Any])
         
-        inline def setBelongs_to_collection(value: js.Any): Self = StObject.set(x, "belongs_to_collection", value.asInstanceOf[js.Any])
+        inline def setBelongs_to_collection(value: Any): Self = StObject.set(x, "belongs_to_collection", value.asInstanceOf[js.Any])
         
         inline def setBudget(value: Double): Self = StObject.set(x, "budget", value.asInstanceOf[js.Any])
         
         inline def setGenres(value: js.Array[Genre]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
         
-        inline def setGenresVarargs(value: Genre*): Self = StObject.set(x, "genres", js.Array(value :_*))
+        inline def setGenresVarargs(value: Genre*): Self = StObject.set(x, "genres", js.Array(value*))
         
         inline def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
         
@@ -198,13 +197,13 @@ object mod {
         
         inline def setProduction_companies(value: js.Array[ProductionCompany]): Self = StObject.set(x, "production_companies", value.asInstanceOf[js.Any])
         
-        inline def setProduction_companiesVarargs(value: ProductionCompany*): Self = StObject.set(x, "production_companies", js.Array(value :_*))
+        inline def setProduction_companiesVarargs(value: ProductionCompany*): Self = StObject.set(x, "production_companies", js.Array(value*))
         
         inline def setProduction_countries(value: js.Array[ProductionCountry]): Self = StObject.set(x, "production_countries", value.asInstanceOf[js.Any])
         
-        inline def setProduction_countriesVarargs(value: ProductionCountry*): Self = StObject.set(x, "production_countries", js.Array(value :_*))
+        inline def setProduction_countriesVarargs(value: ProductionCountry*): Self = StObject.set(x, "production_countries", js.Array(value*))
         
-        inline def setRelease_date(value: Date): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
+        inline def setRelease_date(value: js.Date): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
         
         inline def setRevenue(value: Double): Self = StObject.set(x, "revenue", value.asInstanceOf[js.Any])
         
@@ -212,7 +211,7 @@ object mod {
         
         inline def setSpoken_languages(value: js.Array[SpokenLanguage]): Self = StObject.set(x, "spoken_languages", value.asInstanceOf[js.Any])
         
-        inline def setSpoken_languagesVarargs(value: SpokenLanguage*): Self = StObject.set(x, "spoken_languages", js.Array(value :_*))
+        inline def setSpoken_languagesVarargs(value: SpokenLanguage*): Self = StObject.set(x, "spoken_languages", js.Array(value*))
         
         inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
@@ -294,13 +293,13 @@ object mod {
         
         inline def setBackdrops(value: js.Array[MovieImage]): Self = StObject.set(x, "backdrops", value.asInstanceOf[js.Any])
         
-        inline def setBackdropsVarargs(value: MovieImage*): Self = StObject.set(x, "backdrops", js.Array(value :_*))
+        inline def setBackdropsVarargs(value: MovieImage*): Self = StObject.set(x, "backdrops", js.Array(value*))
         
         inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
         inline def setPosters(value: js.Array[MovieImage]): Self = StObject.set(x, "posters", value.asInstanceOf[js.Any])
         
-        inline def setPostersVarargs(value: MovieImage*): Self = StObject.set(x, "posters", js.Array(value :_*))
+        inline def setPostersVarargs(value: MovieImage*): Self = StObject.set(x, "posters", js.Array(value*))
       }
     }
     
@@ -383,7 +382,7 @@ object mod {
       
       var poster_path: String
       
-      var release_date: Date
+      var release_date: js.Date
       
       var title: String
       
@@ -400,7 +399,7 @@ object mod {
         original_title: String,
         popularity: Double,
         poster_path: String,
-        release_date: Date,
+        release_date: js.Date,
         title: String,
         vote_average: Double,
         vote_count: Double
@@ -423,7 +422,7 @@ object mod {
         
         inline def setPoster_path(value: String): Self = StObject.set(x, "poster_path", value.asInstanceOf[js.Any])
         
-        inline def setRelease_date(value: Date): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
+        inline def setRelease_date(value: js.Date): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
@@ -456,7 +455,7 @@ object mod {
         
         inline def setResults(value: js.Array[SearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
         
-        inline def setResultsVarargs(value: SearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+        inline def setResultsVarargs(value: SearchResult*): Self = StObject.set(x, "results", js.Array(value*))
         
         inline def setTotal_Pages(value: Double): Self = StObject.set(x, "total_Pages", value.asInstanceOf[js.Any])
         

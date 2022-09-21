@@ -1,78 +1,58 @@
 package typings.cloneRegexp
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-  Clone and modify a [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) instance.
-  @param regexp - Regex to clone.
-  @example
-  ```
-  import cloneRegexp = require('clone-regexp');
-  const regex = /[a-z]/gi;
-  cloneRegexp(regex);
-  //=> /[a-z]/gi
-  cloneRegexp(regex) === regex;
-  //=> false
-  cloneRegexp(regex, {global: false});
-  //=> /[a-z]/i
-  cloneRegexp(regex, {multiline: true});
-  //=> /[a-z]/gim
-  cloneRegexp(regex, {source: 'unicorn'});
-  //=> /unicorn/gi
-  ```
-  */
-  inline def apply(regexp: RegExp): RegExp = ^.asInstanceOf[js.Dynamic].apply(regexp.asInstanceOf[js.Any]).asInstanceOf[RegExp]
-  inline def apply(regexp: RegExp, options: Options): RegExp = (^.asInstanceOf[js.Dynamic].apply(regexp.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
-  
   @JSImport("clone-regexp", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(regexp: js.RegExp): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(regexp.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
+  inline def default(regexp: js.RegExp, options: Options): js.RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(regexp.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.RegExp]
+  
   trait Options extends StObject {
     
     /**
-    		Modifies the [`dotAll`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll) property of the cloned `RegExp` instance.
-    		*/
+    	Modifies the [`dotAll`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll) property of the cloned `RegExp` instance.
+    	*/
     var dotAll: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Modifies the [`global`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/global) property of the cloned `RegExp` instance.
-    		*/
+    	Modifies the [`global`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/global) property of the cloned `RegExp` instance.
+    	*/
     var global: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Modifies the [`ignoreCase`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase) property of the cloned `RegExp` instance.
-    		*/
+    	Modifies the [`ignoreCase`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/ignoreCase) property of the cloned `RegExp` instance.
+    	*/
     var ignoreCase: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Modifies the [`lastIndex`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastIndex) property of the cloned `RegExp` instance.
-    		*/
+    	Modifies the [`lastIndex`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/lastIndex) property of the cloned `RegExp` instance.
+    	*/
     var lastIndex: js.UndefOr[Double] = js.undefined
     
     /**
-    		Modifies the [`multiline`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline) property of the cloned `RegExp` instance.
-    		*/
+    	Modifies the [`multiline`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/multiline) property of the cloned `RegExp` instance.
+    	*/
     var multiline: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Modifies the [`source`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/source) property of the cloned `RegExp` instance.
-    		*/
+    	Modifies the [`source`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/source) property of the cloned `RegExp` instance.
+    	*/
     var source: js.UndefOr[String] = js.undefined
     
     /**
-    		Modifies the [`sticky`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky) property of the cloned `RegExp` instance.
-    		*/
+    	Modifies the [`sticky`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/sticky) property of the cloned `RegExp` instance.
+    	*/
     var sticky: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Modifies the [`unicode`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode) property of the cloned `RegExp` instance.
-    		*/
+    	Modifies the [`unicode`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode) property of the cloned `RegExp` instance.
+    	*/
     var unicode: js.UndefOr[Boolean] = js.undefined
   }
   object Options {

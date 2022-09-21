@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "Month")
 @js.native
-/* private */ class Month () extends Temporal {
+/* private */ open class Month () extends Temporal {
   
   def adjustInto(temporal: Temporal): Temporal = js.native
   

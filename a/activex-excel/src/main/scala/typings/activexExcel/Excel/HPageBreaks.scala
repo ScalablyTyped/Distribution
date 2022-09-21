@@ -19,7 +19,7 @@ trait HPageBreaks extends StObject {
   
   def Item(Index: Double): HPageBreak = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Default(Index: Double): HPageBreak = js.native
 }

@@ -24,6 +24,6 @@ object VirtualInterfaces {
     
     inline def setVirtualInterfacesUndefined: Self = StObject.set(x, "virtualInterfaces", js.undefined)
     
-    inline def setVirtualInterfacesVarargs(value: VirtualInterface*): Self = StObject.set(x, "virtualInterfaces", js.Array(value :_*))
+    inline def setVirtualInterfacesVarargs(value: VirtualInterface*): Self = StObject.set(x, "virtualInterfaces", js.Array(value*))
   }
 }

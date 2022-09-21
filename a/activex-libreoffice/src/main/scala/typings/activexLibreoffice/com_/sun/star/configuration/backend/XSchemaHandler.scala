@@ -53,7 +53,7 @@ trait XSchemaHandler
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a group or extensible node in progress currentlyif a property with
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addPropertyWithDefault(aName: String, aAttributes: Double, aDefaultValue: js.Any): Unit
+  def addPropertyWithDefault(aName: String, aAttributes: Double, aDefaultValue: Any): Unit
   
   /**
     * receives notification that a component description is complete.
@@ -175,13 +175,13 @@ object XSchemaHandler {
     addInstance: (String, TemplateIdentifier) => Unit,
     addItemType: TemplateIdentifier => Unit,
     addProperty: (String, Double, `type`) => Unit,
-    addPropertyWithDefault: (String, Double, js.Any) => Unit,
+    addPropertyWithDefault: (String, Double, Any) => Unit,
     endComponent: () => Unit,
     endNode: () => Unit,
     endSchema: () => Unit,
     endTemplate: () => Unit,
     importComponent: String => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     startComponent: String => Unit,
     startGroup: (String, Double) => Unit,
@@ -202,7 +202,7 @@ object XSchemaHandler {
     
     inline def setAddProperty(value: (String, Double, `type`) => Unit): Self = StObject.set(x, "addProperty", js.Any.fromFunction3(value))
     
-    inline def setAddPropertyWithDefault(value: (String, Double, js.Any) => Unit): Self = StObject.set(x, "addPropertyWithDefault", js.Any.fromFunction3(value))
+    inline def setAddPropertyWithDefault(value: (String, Double, Any) => Unit): Self = StObject.set(x, "addPropertyWithDefault", js.Any.fromFunction3(value))
     
     inline def setEndComponent(value: () => Unit): Self = StObject.set(x, "endComponent", js.Any.fromFunction0(value))
     

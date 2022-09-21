@@ -10,10 +10,10 @@ The lodash method `_.keys` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.keys |
 | Keywords           | lodash-modularized, keys |
-| # releases         | 0 |
-| # dependents       | 218 |
-| # downloads        | 192851241 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5410714666666666E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

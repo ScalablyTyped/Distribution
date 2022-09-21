@@ -51,32 +51,32 @@ object Comments {
       
       inline def setComments(value: js.Array[typings.nodeZendesk.mod.Tickets.Comments.ResponseModel]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      inline def setCommentsVarargs(value: typings.nodeZendesk.mod.Tickets.Comments.ResponseModel*): Self = StObject.set(x, "comments", js.Array(value :_*))
+      inline def setCommentsVarargs(value: typings.nodeZendesk.mod.Tickets.Comments.ResponseModel*): Self = StObject.set(x, "comments", js.Array(value*))
     }
   }
   
   trait Metadata extends StObject {
     
-    var flag_options: js.Any
+    var flag_options: Any
     
     var flags: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object Metadata {
     
-    inline def apply(flag_options: js.Any): Metadata = {
+    inline def apply(flag_options: Any): Metadata = {
       val __obj = js.Dynamic.literal(flag_options = flag_options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Metadata]
     }
     
     extension [Self <: Metadata](x: Self) {
       
-      inline def setFlag_options(value: js.Any): Self = StObject.set(x, "flag_options", value.asInstanceOf[js.Any])
+      inline def setFlag_options(value: Any): Self = StObject.set(x, "flag_options", value.asInstanceOf[js.Any])
       
       inline def setFlags(value: js.Array[Double]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
       inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      inline def setFlagsVarargs(value: Double*): Self = StObject.set(x, "flags", js.Array(value :_*))
+      inline def setFlagsVarargs(value: Double*): Self = StObject.set(x, "flags", js.Array(value*))
     }
   }
   

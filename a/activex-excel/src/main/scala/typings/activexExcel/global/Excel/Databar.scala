@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Databar")
 @js.native
-/* private */ class Databar ()
+/* private */ open class Databar ()
   extends StObject
      with typings.activexExcel.Excel.Databar {
   
@@ -75,7 +75,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val PTCondition: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var PercentMax: Double = js.native

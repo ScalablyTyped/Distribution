@@ -1,53 +1,43 @@
 package typings.mysql.mod
 
+import typings.mysql.anon.ToSqlString
+import typings.mysql.anon.UntypedFieldInfotypestrin
+import typings.mysql.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def createConnection(connectionUri: java.lang.String): typings.mysql.mod.Connection = typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(connectionUri.asInstanceOf[js.Any]).asInstanceOf[typings.mysql.mod.Connection]
-inline def createConnection(connectionUri: typings.mysql.mod.ConnectionConfig): typings.mysql.mod.Connection = typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(connectionUri.asInstanceOf[js.Any]).asInstanceOf[typings.mysql.mod.Connection]
+inline def createConnection(connectionUri: String): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(connectionUri.asInstanceOf[js.Any]).asInstanceOf[Connection]
+inline def createConnection(connectionUri: ConnectionConfig): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(connectionUri.asInstanceOf[js.Any]).asInstanceOf[Connection]
 
-inline def createPool(config: java.lang.String): typings.mysql.mod.Pool = typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(config.asInstanceOf[js.Any]).asInstanceOf[typings.mysql.mod.Pool]
-inline def createPool(config: typings.mysql.mod.PoolConfig): typings.mysql.mod.Pool = typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(config.asInstanceOf[js.Any]).asInstanceOf[typings.mysql.mod.Pool]
+inline def createPool(config: String): Pool = ^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(config.asInstanceOf[js.Any]).asInstanceOf[Pool]
+inline def createPool(config: PoolConfig): Pool = ^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(config.asInstanceOf[js.Any]).asInstanceOf[Pool]
 
-inline def createPoolCluster(): typings.mysql.mod.PoolCluster = typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createPoolCluster")().asInstanceOf[typings.mysql.mod.PoolCluster]
-inline def createPoolCluster(config: typings.mysql.mod.PoolClusterConfig): typings.mysql.mod.PoolCluster = typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createPoolCluster")(config.asInstanceOf[js.Any]).asInstanceOf[typings.mysql.mod.PoolCluster]
+inline def createPoolCluster(): PoolCluster = ^.asInstanceOf[js.Dynamic].applyDynamic("createPoolCluster")().asInstanceOf[PoolCluster]
+inline def createPoolCluster(config: PoolClusterConfig): PoolCluster = ^.asInstanceOf[js.Dynamic].applyDynamic("createPoolCluster")(config.asInstanceOf[js.Any]).asInstanceOf[PoolCluster]
 
-inline def escape(value: js.Any): java.lang.String = typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def escape(value: js.Any, stringifyObjects: scala.Boolean): java.lang.String = (typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any], stringifyObjects.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def escape(value: js.Any, stringifyObjects: scala.Boolean, timeZone: java.lang.String): java.lang.String = (typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any], stringifyObjects.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def escape(value: js.Any, stringifyObjects: scala.Unit, timeZone: java.lang.String): java.lang.String = (typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any], stringifyObjects.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def escape(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def escape(value: Any, stringifyObjects: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any], stringifyObjects.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def escape(value: Any, stringifyObjects: Boolean, timeZone: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any], stringifyObjects.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def escape(value: Any, stringifyObjects: Unit, timeZone: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any], stringifyObjects.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def escapeId(value: java.lang.String): java.lang.String = typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("escapeId")(value.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def escapeId(value: java.lang.String, forbidQualified: scala.Boolean): java.lang.String = (typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("escapeId")(value.asInstanceOf[js.Any], forbidQualified.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def escapeId(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeId")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def escapeId(value: String, forbidQualified: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("escapeId")(value.asInstanceOf[js.Any], forbidQualified.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def format(sql: java.lang.String, values: js.Array[js.Any]): java.lang.String = (typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def format(sql: java.lang.String, values: js.Array[js.Any], stringifyObjects: scala.Boolean): java.lang.String = (typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], stringifyObjects.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def format(
-  sql: java.lang.String,
-  values: js.Array[js.Any],
-  stringifyObjects: scala.Boolean,
-  timeZone: java.lang.String
-): java.lang.String = (typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], stringifyObjects.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def format(
-  sql: java.lang.String,
-  values: js.Array[js.Any],
-  stringifyObjects: scala.Unit,
-  timeZone: java.lang.String
-): java.lang.String = (typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], stringifyObjects.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def format(sql: String, values: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def format(sql: String, values: js.Array[Any], stringifyObjects: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], stringifyObjects.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def format(sql: String, values: js.Array[Any], stringifyObjects: Boolean, timeZone: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], stringifyObjects.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def format(sql: String, values: js.Array[Any], stringifyObjects: Unit, timeZone: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(sql.asInstanceOf[js.Any], values.asInstanceOf[js.Any], stringifyObjects.asInstanceOf[js.Any], timeZone.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def raw(sql: java.lang.String): typings.mysql.anon.ToSqlString = typings.mysql.mod.^.asInstanceOf[js.Dynamic].applyDynamic("raw")(sql.asInstanceOf[js.Any]).asInstanceOf[typings.mysql.anon.ToSqlString]
+inline def raw(sql: String): ToSqlString = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")(sql.asInstanceOf[js.Any]).asInstanceOf[ToSqlString]
 
-type TypeCast = scala.Boolean | (js.Function2[
-/* field */ typings.mysql.anon.UntypedFieldInfotypestrin, 
-/* next */ js.Function0[scala.Unit], 
-js.Any])
+type TypeCast = Boolean | (js.Function2[/* field */ UntypedFieldInfotypestrin, /* next */ js.Function0[Unit], Any])
 
-type packetCallback = js.Function1[/* packet */ js.Any, scala.Unit]
+type packetCallback = js.Function1[/* packet */ Any, Unit]
 
 type queryCallback = js.Function3[
-/* err */ typings.mysql.mod.MysqlError | scala.Null, 
-/* results */ js.UndefOr[js.Any], 
-/* fields */ js.UndefOr[js.Array[typings.mysql.mod.FieldInfo]], 
-scala.Unit]
+/* err */ MysqlError | Null, 
+/* results */ js.UndefOr[Any], 
+/* fields */ js.UndefOr[js.Array[FieldInfo]], 
+Unit]

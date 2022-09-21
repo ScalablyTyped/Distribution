@@ -9,7 +9,7 @@ object statementMod {
   
   @JSImport("sqlite/build/Statement", "Statement")
   @js.native
-  class Statement[S /* <: typings.sqlite.sqlite3Mod.Statement */] protected () extends StObject {
+  open class Statement[S /* <: typings.sqlite.sqlite3Mod.Statement */] protected () extends StObject {
     def this(stmt: S) = this()
     
     /**
@@ -28,7 +28,7 @@ object statementMod {
       *
       * @see https://github.com/mapbox/node-sqlite3/wiki/API#databaseallsql-param--callback
       */
-    def all[T](params: js.Any*): js.Promise[T] = js.native
+    def all[T](params: Any*): js.Promise[T] = js.native
     
     /**
       * Binds parameters to the prepared statement.
@@ -36,7 +36,7 @@ object statementMod {
       * Binding parameters with this function completely resets the statement object and row cursor
       * and removes all previously bound parameters, if any.
       */
-    def bind(params: js.Any*): js.Promise[Unit] = js.native
+    def bind(params: Any*): js.Promise[Unit] = js.native
     
     /**
       * Binds parameters, executes the statement and calls the callback for each result row.
@@ -60,16 +60,11 @@ object statementMod {
       * @see https://github.com/mapbox/node-sqlite3/wiki/API#statementeachparam--callback-complete
       * @returns Promise<number> Number of rows returned
       */
-    def each[T](callback: js.Function2[/* err */ js.Any, /* row */ T, Unit]): js.Promise[Double] = js.native
-    def each[T](param1: js.Any, callback: js.Function2[/* err */ js.Any, /* row */ T, Unit]): js.Promise[Double] = js.native
-    def each[T](param1: js.Any, param2: js.Any, callback: js.Function2[/* err */ js.Any, /* row */ T, Unit]): js.Promise[Double] = js.native
-    def each[T](
-      param1: js.Any,
-      param2: js.Any,
-      param3: js.Any,
-      callback: js.Function2[/* err */ js.Any, /* row */ T, Unit]
-    ): js.Promise[Double] = js.native
-    def each[T](params: js.Any*): js.Promise[Double] = js.native
+    def each[T](callback: js.Function2[/* err */ Any, /* row */ T, Unit]): js.Promise[Double] = js.native
+    def each[T](param1: Any, callback: js.Function2[/* err */ Any, /* row */ T, Unit]): js.Promise[Double] = js.native
+    def each[T](param1: Any, param2: Any, callback: js.Function2[/* err */ Any, /* row */ T, Unit]): js.Promise[Double] = js.native
+    def each[T](param1: Any, param2: Any, param3: Any, callback: js.Function2[/* err */ Any, /* row */ T, Unit]): js.Promise[Double] = js.native
+    def each[T](params: Any*): js.Promise[Double] = js.native
     
     /**
       * Binds parameters, executes the statement and retrieves the first result row.
@@ -86,7 +81,7 @@ object statementMod {
       * the function's arguments, as an array, and as an object for named
       * parameters. This automatically sanitizes inputs.
       */
-    def get[T](params: js.Any*): js.Promise[js.UndefOr[T]] = js.native
+    def get[T](params: Any*): js.Promise[js.UndefOr[T]] = js.native
     
     /**
       * Returns the underlying sqlite3 Statement instance
@@ -114,7 +109,7 @@ object statementMod {
       * the function's arguments, as an array, and as an object for named
       * parameters. This automatically sanitizes inputs.
       */
-    def run(params: js.Any*): js.Promise[RunResult[typings.sqlite.sqlite3Mod.Statement]] = js.native
+    def run(params: Any*): js.Promise[RunResult[typings.sqlite.sqlite3Mod.Statement]] = js.native
     
     var stmt: S = js.native
   }

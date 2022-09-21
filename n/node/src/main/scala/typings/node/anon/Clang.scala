@@ -6,35 +6,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Clang extends StObject {
   
-  var clang: Double
+  val clang: Double
   
-  var host_arch: String
+  val host_arch: String
   
-  var node_install_npm: Boolean
+  val node_install_npm: Boolean
   
-  var node_install_waf: Boolean
+  val node_install_waf: Boolean
   
-  var node_prefix: String
+  val node_prefix: String
   
-  var node_shared_openssl: Boolean
+  val node_shared_openssl: Boolean
   
-  var node_shared_v8: Boolean
+  val node_shared_v8: Boolean
   
-  var node_shared_zlib: Boolean
+  val node_shared_zlib: Boolean
   
-  var node_use_dtrace: Boolean
+  val node_use_dtrace: Boolean
   
-  var node_use_etw: Boolean
+  val node_use_etw: Boolean
   
-  var node_use_openssl: Boolean
+  val node_use_openssl: Boolean
   
-  var target_arch: String
+  val target_arch: String
   
-  var v8_no_strict_aliasing: Double
+  val v8_no_strict_aliasing: Double
   
-  var v8_use_snapshot: Boolean
+  val v8_use_snapshot: Boolean
   
-  var visibility: String
+  val visibility: String
 }
 object Clang {
   

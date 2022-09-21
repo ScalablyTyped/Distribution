@@ -12,7 +12,7 @@ trait DescribeUserProfileRequest extends StObject {
   var DomainId: typings.awsSdk.sagemakerMod.DomainId
   
   /**
-    * The user profile name.
+    * The user profile name. This value is not case sensitive.
     */
   var UserProfileName: typings.awsSdk.sagemakerMod.UserProfileName
 }

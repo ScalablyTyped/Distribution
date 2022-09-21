@@ -10,10 +10,10 @@ Simple in-memory vinyl file store
 | ------------------ | :-------------: |
 | Full name          | mem-fs |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 274 |
-| # downloads        | 13519213 |
-| # stars            | 2 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2817565.3333333335 |
+| # stars            | 104.0 |
 
 ## Links
 - [Homepage](https://github.com/SBoudrias/mem-fs#readme)

@@ -72,7 +72,7 @@ object textareaMod {
   
   @JSImport("rbx/elements/form/textarea", "Textarea")
   @js.native
-  val Textarea: ForwardRefAsExoticComponent[TextareaProps, ElementType[js.Any]] = js.native
+  val Textarea: ForwardRefAsExoticComponent[TextareaProps, ElementType[Any]] = js.native
   
   trait TextareaModifierProps extends StObject {
     

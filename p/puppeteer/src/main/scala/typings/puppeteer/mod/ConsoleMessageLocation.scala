@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConsoleMessageLocation extends StObject {
   
   /**
-    * Column number in the resource if known.
+    * 0-based column number in the resource if known or `undefined` otherwise.
     */
   var columnNumber: js.UndefOr[Double] = js.undefined
   
   /**
-    * Line number in the resource if known
+    * 0-based line number in the resource if known or `undefined` otherwise.
     */
   var lineNumber: js.UndefOr[Double] = js.undefined
   
   /**
-    * URL of the resource if known.
+    * URL of the resource if known or `undefined` otherwise.
     */
   var url: js.UndefOr[String] = js.undefined
 }

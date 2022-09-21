@@ -27,7 +27,7 @@ object ListIPSetsResponse {
     
     inline def setIpSetIds(value: IpSetIds): Self = StObject.set(x, "IpSetIds", value.asInstanceOf[js.Any])
     
-    inline def setIpSetIdsVarargs(value: String*): Self = StObject.set(x, "IpSetIds", js.Array(value :_*))
+    inline def setIpSetIdsVarargs(value: String*): Self = StObject.set(x, "IpSetIds", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

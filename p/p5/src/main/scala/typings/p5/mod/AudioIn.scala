@@ -27,7 +27,7 @@ trait AudioIn extends StObject {
   
   /**
     *   Connect to an audio unit. If no parameter is
-    *   provided, will connect to the master output (i.e.
+    *   provided, will connect to the main output (i.e.
     *   your speakers).
     *   @param [unit] An object that accepts audio input,
     *   such as an FFT
@@ -48,7 +48,7 @@ trait AudioIn extends StObject {
   /**
     *   Client must allow browser to access their
     *   microphone / audioin source. Default: false. Will
-    *   become true when the client enables acces.
+    *   become true when the client enables access.
     */
   var enabled: Boolean = js.native
   
@@ -68,11 +68,8 @@ trait AudioIn extends StObject {
   
   /**
     *   Returns a list of available input sources. This is
-    *   a wrapper for <a
-    *   title="MediaDevices.enumerateDevices() - Web APIs
-    *   | MDN" target="_blank" href=
-    *   "https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/enumerateDevices"
-    *   and it returns a Promise.
+    *   a wrapper for  MediaDevices.enumerateDevices() -
+    *   Web APIs | MDN and it returns a Promise.
     *   @param [successCallback] This callback function
     *   handles the sources when they have been
     *   enumerated. The callback function receives the
@@ -83,13 +80,13 @@ trait AudioIn extends StObject {
     *   place of the callbacks, similar to the
     *   enumerateDevices() method
     */
-  def getSources(): js.Promise[js.Any] = js.native
-  def getSources(successCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def getSources(): js.Promise[Any] = js.native
+  def getSources(successCallback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def getSources(
-    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def getSources(successCallback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+    successCallback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def getSources(successCallback: Unit, errorCallback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   
   var input: GainNode = js.native
   
@@ -101,11 +98,8 @@ trait AudioIn extends StObject {
     *   Set the input source. Accepts a number
     *   representing a position in the array returned by
     *   getSources(). This is only available in browsers
-    *   that support <a
-    *   title="MediaDevices.enumerateDevices() - Web APIs
-    *   | MDN" target="_blank" href=
-    *   "https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/enumerateDevices"
-    *   navigator.mediaDevices.enumerateDevices().
+    *   that support
+    *   navigator.mediaDevices.enumerateDevices()
     *   @param num position of input source in the array
     */
   def setSource(num: Double): Unit = js.native
@@ -130,12 +124,12 @@ trait AudioIn extends StObject {
     *   do not support getUserMedia.
     */
   def start(): Unit = js.native
-  def start(successCallback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+  def start(successCallback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
   def start(
-    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    successCallback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
   ): Unit = js.native
-  def start(successCallback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+  def start(successCallback: Unit, errorCallback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
   
   /**
     *   Turn the AudioIn off. If the AudioIn is stopped,

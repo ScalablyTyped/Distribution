@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The serving context for this restriction.
-  */
 trait SchemaServingContext extends StObject {
   
   /**
     * Matches all contexts.
     */
-  var all: js.UndefOr[String] = js.undefined
+  var all: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Matches impressions for a particular app type.
@@ -25,8 +22,7 @@ trait SchemaServingContext extends StObject {
   var auctionType: js.UndefOr[SchemaAuctionContext] = js.undefined
   
   /**
-    * Matches impressions coming from users *or* publishers in a specific
-    * location.
+    * Matches impressions coming from users *or* publishers in a specific location.
     */
   var location: js.UndefOr[SchemaLocationContext] = js.undefined
   
@@ -50,6 +46,8 @@ object SchemaServingContext {
   extension [Self <: SchemaServingContext](x: Self) {
     
     inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    
+    inline def setAllNull: Self = StObject.set(x, "all", null)
     
     inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     

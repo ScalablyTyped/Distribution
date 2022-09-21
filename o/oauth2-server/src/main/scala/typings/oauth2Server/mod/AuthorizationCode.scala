@@ -1,7 +1,6 @@
 package typings.oauth2Server.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait AuthorizationCode
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var authorizationCode: String
   
   var client: Client
   
-  var expiresAt: Date
+  var expiresAt: js.Date
   
   var redirectUri: String
   
@@ -27,7 +26,7 @@ trait AuthorizationCode
 }
 object AuthorizationCode {
   
-  inline def apply(authorizationCode: String, client: Client, expiresAt: Date, redirectUri: String, user: User): AuthorizationCode = {
+  inline def apply(authorizationCode: String, client: Client, expiresAt: js.Date, redirectUri: String, user: User): AuthorizationCode = {
     val __obj = js.Dynamic.literal(authorizationCode = authorizationCode.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], expiresAt = expiresAt.asInstanceOf[js.Any], redirectUri = redirectUri.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationCode]
   }
@@ -38,7 +37,7 @@ object AuthorizationCode {
     
     inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    inline def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+    inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
     
     inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
@@ -46,7 +45,7 @@ object AuthorizationCode {
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
     
     inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }

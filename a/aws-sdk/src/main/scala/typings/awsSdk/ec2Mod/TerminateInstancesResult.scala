@@ -24,6 +24,6 @@ object TerminateInstancesResult {
     
     inline def setTerminatingInstancesUndefined: Self = StObject.set(x, "TerminatingInstances", js.undefined)
     
-    inline def setTerminatingInstancesVarargs(value: InstanceStateChange*): Self = StObject.set(x, "TerminatingInstances", js.Array(value :_*))
+    inline def setTerminatingInstancesVarargs(value: InstanceStateChange*): Self = StObject.set(x, "TerminatingInstances", js.Array(value*))
   }
 }

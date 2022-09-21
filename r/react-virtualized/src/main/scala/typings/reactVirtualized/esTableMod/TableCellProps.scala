@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TableCellProps extends StObject {
   
-  var cellData: js.UndefOr[js.Any] = js.undefined
+  var cellData: js.UndefOr[Any] = js.undefined
   
-  var columnData: js.UndefOr[js.Any] = js.undefined
+  var columnData: js.UndefOr[Any] = js.undefined
   
   var columnIndex: Double
   
@@ -16,26 +16,26 @@ trait TableCellProps extends StObject {
   
   var isScrolling: Boolean
   
-  var parent: js.UndefOr[js.Any] = js.undefined
+  var parent: js.UndefOr[Any] = js.undefined
   
-  var rowData: js.Any
+  var rowData: Any
   
   var rowIndex: Double
 }
 object TableCellProps {
   
-  inline def apply(columnIndex: Double, dataKey: String, isScrolling: Boolean, rowData: js.Any, rowIndex: Double): TableCellProps = {
+  inline def apply(columnIndex: Double, dataKey: String, isScrolling: Boolean, rowData: Any, rowIndex: Double): TableCellProps = {
     val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], dataKey = dataKey.asInstanceOf[js.Any], isScrolling = isScrolling.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCellProps]
   }
   
   extension [Self <: TableCellProps](x: Self) {
     
-    inline def setCellData(value: js.Any): Self = StObject.set(x, "cellData", value.asInstanceOf[js.Any])
+    inline def setCellData(value: Any): Self = StObject.set(x, "cellData", value.asInstanceOf[js.Any])
     
     inline def setCellDataUndefined: Self = StObject.set(x, "cellData", js.undefined)
     
-    inline def setColumnData(value: js.Any): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
+    inline def setColumnData(value: Any): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
     
     inline def setColumnDataUndefined: Self = StObject.set(x, "columnData", js.undefined)
     
@@ -45,11 +45,11 @@ object TableCellProps {
     
     inline def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+    inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
     inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
   }

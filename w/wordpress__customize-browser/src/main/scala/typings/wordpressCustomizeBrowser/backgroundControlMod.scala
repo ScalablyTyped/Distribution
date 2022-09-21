@@ -9,7 +9,7 @@ object backgroundControlMod {
   
   @JSImport("@wordpress/customize-browser/BackgroundControl", "BackgroundControl")
   @js.native
-  class BackgroundControl protected () extends UploadControl {
+  open class BackgroundControl protected () extends UploadControl {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
   }

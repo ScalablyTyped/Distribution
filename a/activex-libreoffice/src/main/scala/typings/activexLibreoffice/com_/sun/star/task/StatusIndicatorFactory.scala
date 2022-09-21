@@ -23,7 +23,7 @@ object StatusIndicatorFactory {
     createStatusIndicator: () => XStatusIndicator,
     createWithFrame: (XFrame, Boolean, Boolean) => Unit,
     createWithWindow: (XWindow, Boolean, Boolean) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): StatusIndicatorFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createStatusIndicator = js.Any.fromFunction0(createStatusIndicator), createWithFrame = js.Any.fromFunction3(createWithFrame), createWithWindow = js.Any.fromFunction3(createWithWindow), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

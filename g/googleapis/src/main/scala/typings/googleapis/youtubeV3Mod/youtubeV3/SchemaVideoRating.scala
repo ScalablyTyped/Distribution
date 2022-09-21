@@ -6,9 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaVideoRating extends StObject {
   
-  var rating: js.UndefOr[String] = js.undefined
+  /**
+    * Rating of a video.
+    */
+  var rating: js.UndefOr[String | Null] = js.undefined
   
-  var videoId: js.UndefOr[String] = js.undefined
+  /**
+    * The ID that YouTube uses to uniquely identify the video.
+    */
+  var videoId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaVideoRating {
   
@@ -21,9 +27,13 @@ object SchemaVideoRating {
     
     inline def setRating(value: String): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     
+    inline def setRatingNull: Self = StObject.set(x, "rating", null)
+    
     inline def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
     
     inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    
+    inline def setVideoIdNull: Self = StObject.set(x, "videoId", null)
     
     inline def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
   }

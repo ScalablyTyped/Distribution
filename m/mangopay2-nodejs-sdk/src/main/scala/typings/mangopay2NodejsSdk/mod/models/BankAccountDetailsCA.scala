@@ -1,18 +1,18 @@
 package typings.mangopay2NodejsSdk.mod.models
 
+import typings.mangopay2NodejsSdk.addressMod.address.AddressType
+import typings.mangopay2NodejsSdk.bankAccountMod.bankAccount.CADetails
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CA
-import typings.mangopay2NodejsSdk.mod.address.AddressType
-import typings.mangopay2NodejsSdk.mod.bankAccount.CADetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.BankAccountDetailsCA")
 @js.native
-class BankAccountDetailsCA protected ()
+open class BankAccountDetailsCA protected ()
   extends BankAccountDetails
      with CADetails {
-  def this(data: js.Any) = this()
+  def this(data: Any) = this()
   
   /**
     * The account number of the bank account. Must be numbers only. Canadian account numbers must be a maximum of 20 digits.

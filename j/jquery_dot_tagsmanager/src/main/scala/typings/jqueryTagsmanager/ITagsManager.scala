@@ -24,8 +24,8 @@ trait ITagsManager extends StObject {
   
   var objName: String = js.native
   
-  def onTypeaheadAjaxSuccess(data: js.Any, isSetTypeaheadSource: Boolean): Unit = js.native
-  def onTypeaheadAjaxSuccess(data: js.Any, isSetTypeaheadSource: Boolean, process: js.Function): Unit = js.native
+  def onTypeaheadAjaxSuccess(data: Any, isSetTypeaheadSource: Boolean): Unit = js.native
+  def onTypeaheadAjaxSuccess(data: Any, isSetTypeaheadSource: Boolean, process: js.Function): Unit = js.native
   
   def popTag(): Unit = js.native
   
@@ -41,7 +41,7 @@ trait ITagsManager extends StObject {
   def processTags(command: Unit, context: JQuery): JQuery = js.native
   def processTags(command: Unit, context: JQuery, tagToManipulate: String): JQuery = js.native
   
-  def pushTag(tag: String, objToPush: js.Any, isValid: Boolean): Unit = js.native
+  def pushTag(tag: String, objToPush: Any, isValid: Boolean): Unit = js.native
   
   var queuedTag: String = js.native
   
@@ -52,11 +52,11 @@ trait ITagsManager extends StObject {
   
   def setOptions(options: ITagsManagerOptions): Unit = js.native
   
-  def setTypeaheadSource(source: js.Any): Unit = js.native
+  def setTypeaheadSource(source: Any): Unit = js.native
   
   def setupTypeahead(): Unit = js.native
   
-  def spliceTag(tagId: Double, eventData: js.Any): Unit = js.native
+  def spliceTag(tagId: Double, eventData: Any): Unit = js.native
   
   var tagManagerOptions: ITagsManagerOptions = js.native
   

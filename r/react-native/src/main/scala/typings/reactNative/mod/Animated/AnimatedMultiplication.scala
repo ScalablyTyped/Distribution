@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native", "Animated.AnimatedMultiplication")
 @js.native
-class AnimatedMultiplication () extends AnimatedInterpolation
+open class AnimatedMultiplication[OutputT /* <: Double | String */] () extends AnimatedInterpolation[OutputT]

@@ -22,7 +22,7 @@ object XTitleChangeBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addTitleChangeListener: XTitleChangeListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeTitleChangeListener: XTitleChangeListener => Unit
   ): XTitleChangeBroadcaster = {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Comment extends StObject {
   
-  /** A region of the document represented as a JSON string. See anchor documentation for details on how to define and interpret anchor properties. */
+  /** A region of the document represented as a JSON string. For details on defining anchor properties, refer to  Add comments and replies. */
   var anchor: js.UndefOr[String] = js.undefined
   
   /** The author of the comment. The author's email address and permission ID will not be populated. */
@@ -96,7 +96,7 @@ object Comment {
     
     inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
-    inline def setRepliesVarargs(value: Reply*): Self = StObject.set(x, "replies", js.Array(value :_*))
+    inline def setRepliesVarargs(value: Reply*): Self = StObject.set(x, "replies", js.Array(value*))
     
     inline def setResolved(value: Boolean): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
     

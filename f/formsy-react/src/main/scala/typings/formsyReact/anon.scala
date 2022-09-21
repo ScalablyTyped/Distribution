@@ -1,5 +1,6 @@
 package typings.formsyReact
 
+import typings.formsyReact.formsyMod.FormElementType
 import typings.formsyReact.formsyMod.OnSubmitCallback
 import typings.formsyReact.formsyReactStrings.`additions removals`
 import typings.formsyReact.formsyReactStrings.`additions text`
@@ -59,6 +60,7 @@ import typings.propTypes.mod.Requireable
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -80,6 +82,7 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
+import typings.react.mod.ReactChildren
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -91,6 +94,7 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
@@ -99,25 +103,64 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait Children extends StObject {
+    
+    var children: js.UndefOr[ReactChildren] = js.undefined
+    
+    var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    var onReset: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]] = js.undefined
+    
+    var onSubmit: js.UndefOr[js.Function1[/* e */ SyntheticEvent[Element, Event], Unit]] = js.undefined
+  }
+  object Children {
+    
+    inline def apply(): Children = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Children]
+    }
+    
+    extension [Self <: Children](x: Self) {
+      
+      inline def setChildren(value: ReactChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
+      inline def setOnReset(value: /* e */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      
+      inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      
+      inline def setOnSubmit(value: /* e */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      
+      inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
+    }
+  }
+  
   trait Disabled extends StObject {
     
     var disabled: Requireable[Boolean]
     
-    var mapping: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+    var formElement: Requireable[String | js.Object]
     
-    var onChange: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+    var mapping: Requireable[js.Function1[/* repeated */ Any, Any]]
     
-    var onInvalid: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+    var onChange: Requireable[js.Function1[/* repeated */ Any, Any]]
     
-    var onInvalidSubmit: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+    var onInvalid: Requireable[js.Function1[/* repeated */ Any, Any]]
     
-    var onReset: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+    var onInvalidSubmit: Requireable[js.Function1[/* repeated */ Any, Any]]
     
-    var onSubmit: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+    var onReset: Requireable[js.Function1[/* repeated */ Any, Any]]
     
-    var onValid: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+    var onSubmit: Requireable[js.Function1[/* repeated */ Any, Any]]
     
-    var onValidSubmit: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+    var onValid: Requireable[js.Function1[/* repeated */ Any, Any]]
+    
+    var onValidSubmit: Requireable[js.Function1[/* repeated */ Any, Any]]
     
     var preventDefaultSubmit: Requireable[Boolean]
     
@@ -129,19 +172,20 @@ object anon {
     
     inline def apply(
       disabled: Requireable[Boolean],
-      mapping: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
-      onChange: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
-      onInvalid: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
-      onInvalidSubmit: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
-      onReset: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
-      onSubmit: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
-      onValid: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
-      onValidSubmit: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      formElement: Requireable[String | js.Object],
+      mapping: Requireable[js.Function1[/* repeated */ Any, Any]],
+      onChange: Requireable[js.Function1[/* repeated */ Any, Any]],
+      onInvalid: Requireable[js.Function1[/* repeated */ Any, Any]],
+      onInvalidSubmit: Requireable[js.Function1[/* repeated */ Any, Any]],
+      onReset: Requireable[js.Function1[/* repeated */ Any, Any]],
+      onSubmit: Requireable[js.Function1[/* repeated */ Any, Any]],
+      onValid: Requireable[js.Function1[/* repeated */ Any, Any]],
+      onValidSubmit: Requireable[js.Function1[/* repeated */ Any, Any]],
       preventDefaultSubmit: Requireable[Boolean],
       preventExternalInvalidation: Requireable[Boolean],
       validationErrors: Requireable[js.Object]
     ): Disabled = {
-      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], mapping = mapping.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], onInvalid = onInvalid.asInstanceOf[js.Any], onInvalidSubmit = onInvalidSubmit.asInstanceOf[js.Any], onReset = onReset.asInstanceOf[js.Any], onSubmit = onSubmit.asInstanceOf[js.Any], onValid = onValid.asInstanceOf[js.Any], onValidSubmit = onValidSubmit.asInstanceOf[js.Any], preventDefaultSubmit = preventDefaultSubmit.asInstanceOf[js.Any], preventExternalInvalidation = preventExternalInvalidation.asInstanceOf[js.Any], validationErrors = validationErrors.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], formElement = formElement.asInstanceOf[js.Any], mapping = mapping.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], onInvalid = onInvalid.asInstanceOf[js.Any], onInvalidSubmit = onInvalidSubmit.asInstanceOf[js.Any], onReset = onReset.asInstanceOf[js.Any], onSubmit = onSubmit.asInstanceOf[js.Any], onValid = onValid.asInstanceOf[js.Any], onValidSubmit = onValidSubmit.asInstanceOf[js.Any], preventDefaultSubmit = preventDefaultSubmit.asInstanceOf[js.Any], preventExternalInvalidation = preventExternalInvalidation.asInstanceOf[js.Any], validationErrors = validationErrors.asInstanceOf[js.Any])
       __obj.asInstanceOf[Disabled]
     }
     
@@ -149,21 +193,23 @@ object anon {
       
       inline def setDisabled(value: Requireable[Boolean]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      inline def setMapping(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+      inline def setFormElement(value: Requireable[String | js.Object]): Self = StObject.set(x, "formElement", value.asInstanceOf[js.Any])
       
-      inline def setOnChange(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+      inline def setMapping(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
       
-      inline def setOnInvalid(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onInvalid", value.asInstanceOf[js.Any])
+      inline def setOnChange(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
-      inline def setOnInvalidSubmit(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onInvalidSubmit", value.asInstanceOf[js.Any])
+      inline def setOnInvalid(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "onInvalid", value.asInstanceOf[js.Any])
       
-      inline def setOnReset(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onReset", value.asInstanceOf[js.Any])
+      inline def setOnInvalidSubmit(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "onInvalidSubmit", value.asInstanceOf[js.Any])
       
-      inline def setOnSubmit(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onSubmit", value.asInstanceOf[js.Any])
+      inline def setOnReset(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "onReset", value.asInstanceOf[js.Any])
       
-      inline def setOnValid(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onValid", value.asInstanceOf[js.Any])
+      inline def setOnSubmit(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "onSubmit", value.asInstanceOf[js.Any])
       
-      inline def setOnValidSubmit(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onValidSubmit", value.asInstanceOf[js.Any])
+      inline def setOnValid(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "onValid", value.asInstanceOf[js.Any])
+      
+      inline def setOnValidSubmit(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "onValidSubmit", value.asInstanceOf[js.Any])
       
       inline def setPreventDefaultSubmit(value: Requireable[Boolean]): Self = StObject.set(x, "preventDefaultSubmit", value.asInstanceOf[js.Any])
       
@@ -196,7 +242,7 @@ object anon {
       
       inline def setValidationError(value: js.Array[ValidationError]): Self = StObject.set(x, "validationError", value.asInstanceOf[js.Any])
       
-      inline def setValidationErrorVarargs(value: ValidationError*): Self = StObject.set(x, "validationError", js.Array(value :_*))
+      inline def setValidationErrorVarargs(value: ValidationError*): Self = StObject.set(x, "validationError", js.Array(value*))
     }
   }
   
@@ -213,11 +259,11 @@ object anon {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -235,21 +281,21 @@ object anon {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -263,11 +309,11 @@ object anon {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -279,13 +325,13 @@ object anon {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -295,7 +341,7 @@ object anon {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -343,11 +389,13 @@ object anon {
     
     var encType: js.UndefOr[String] = js.undefined
     
+    var formElement: js.UndefOr[FormElementType] = js.undefined
+    
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -549,11 +597,13 @@ object anon {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -612,7 +662,7 @@ object anon {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -620,7 +670,7 @@ object anon {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -656,7 +706,7 @@ object anon {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -668,7 +718,7 @@ object anon {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -676,7 +726,7 @@ object anon {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -684,7 +734,7 @@ object anon {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -712,15 +762,15 @@ object anon {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -744,7 +794,7 @@ object anon {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -754,7 +804,7 @@ object anon {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -774,7 +824,7 @@ object anon {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -854,7 +904,7 @@ object anon {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -872,6 +922,10 @@ object anon {
       
       inline def setEncTypeUndefined: Self = StObject.set(x, "encType", js.undefined)
       
+      inline def setFormElement(value: FormElementType): Self = StObject.set(x, "formElement", value.asInstanceOf[js.Any])
+      
+      inline def setFormElementUndefined: Self = StObject.set(x, "formElement", js.undefined)
+      
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
       inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
@@ -880,7 +934,7 @@ object anon {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -958,7 +1012,7 @@ object anon {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLFormElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLFormElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1058,7 +1112,7 @@ object anon {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLFormElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLFormElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1069,7 +1123,7 @@ object anon {
       inline def setOnInvalid(value: () => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction0(value))
       
       inline def setOnInvalidSubmit(
-        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[js.Any], Event]) => Unit
+        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event]) => Unit
       ): Self = StObject.set(x, "onInvalidSubmit", js.Any.fromFunction4(value))
       
       inline def setOnInvalidSubmitUndefined: Self = StObject.set(x, "onInvalidSubmit", js.undefined)
@@ -1213,7 +1267,7 @@ object anon {
       inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
       inline def setOnSubmit(
-        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[js.Any], Event]) => Unit
+        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event]) => Unit
       ): Self = StObject.set(x, "onSubmit", js.Any.fromFunction4(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
@@ -1249,7 +1303,7 @@ object anon {
       inline def setOnValid(value: () => Unit): Self = StObject.set(x, "onValid", js.Any.fromFunction0(value))
       
       inline def setOnValidSubmit(
-        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[js.Any], Event]) => Unit
+        value: (/* model */ IModel, /* resetModel */ IResetModel, /* updateInputsWithError */ IUpdateInputsWithError, /* event */ SyntheticEvent[FormHTMLAttributes[Any], Event]) => Unit
       ): Self = StObject.set(x, "onValidSubmit", js.Any.fromFunction4(value))
       
       inline def setOnValidSubmitUndefined: Self = StObject.set(x, "onValidSubmit", js.undefined)
@@ -1292,6 +1346,10 @@ object anon {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1300,7 +1358,7 @@ object anon {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       

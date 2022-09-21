@@ -29,6 +29,6 @@ object ListRowAccessPoliciesResponse {
     
     inline def setRowAccessPoliciesUndefined: Self = StObject.set(x, "rowAccessPolicies", js.undefined)
     
-    inline def setRowAccessPoliciesVarargs(value: RowAccessPolicy*): Self = StObject.set(x, "rowAccessPolicies", js.Array(value :_*))
+    inline def setRowAccessPoliciesVarargs(value: RowAccessPolicy*): Self = StObject.set(x, "rowAccessPolicies", js.Array(value*))
   }
 }

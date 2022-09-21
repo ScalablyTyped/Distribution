@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.HighlightLayer")
 @js.native
-class HighlightLayer protected ()
+open class HighlightLayer protected ()
   extends StObject
      with typings.babylonjs.BABYLON.HighlightLayer {
   /**
@@ -16,7 +16,9 @@ class HighlightLayer protected ()
     * @param scene The scene to use the layer in
     * @param options Sets of none mandatory options to use with the layer (see IHighlightLayerOptions for more information)
     */
+  def this(name: String) = this()
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene) = this()
+  def this(name: String, scene: Unit, options: PartialIHighlightLayerOptAlphaBlendingMode) = this()
   def this(
     name: String,
     scene: typings.babylonjs.BABYLON.Scene,
@@ -35,7 +37,7 @@ object HighlightLayer {
     */
   @JSGlobal("BABYLON.HighlightLayer.EffectName")
   @js.native
-  val EffectName: String = js.native
+  val EffectName: /* "HighlightLayer" */ String = js.native
   
   /**
     * Stencil value used for glowing meshes.
@@ -69,5 +71,5 @@ object HighlightLayer {
     * @param rootUrl defines the root URL containing the Highlight layer information
     * @returns a parsed Highlight layer
     */
-  inline def Parse(parsedHightlightLayer: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.HighlightLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedHightlightLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.HighlightLayer]
+  inline def Parse(parsedHightlightLayer: Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.HighlightLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedHightlightLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.HighlightLayer]
 }

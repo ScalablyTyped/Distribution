@@ -10,10 +10,10 @@ Markdown Validator
 | ------------------ | :-------------: |
 | Full name          | mdv |
 | Keywords           | markdown, validator, validation, link, links, image, images, a11y, accessibility |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 9105 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 769.0 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/Mermade/mdv#readme)

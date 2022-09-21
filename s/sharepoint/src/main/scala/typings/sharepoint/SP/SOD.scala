@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SOD extends StObject {
   
-  def delayUntilEventNotified(func: js.Function1[/* repeated */ js.Any, Unit], eventName: String): Unit = js.native
+  def delayUntilEventNotified(func: js.Function1[/* repeated */ Any, Unit], eventName: String): Unit = js.native
   
-  def execute(fileName: String, functionName: String, args: js.Any*): Unit = js.native
+  def execute(fileName: String, functionName: String, args: Any*): Unit = js.native
   
   def executeFunc(fileName: String, typeName: String, fn: js.Function0[Unit]): Unit = js.native
   
-  def executeOrDelayUntilEventNotified(func: js.Function1[/* repeated */ js.Any, Unit], eventName: String): Boolean = js.native
+  def executeOrDelayUntilEventNotified(func: js.Function1[/* repeated */ Any, Unit], eventName: String): Boolean = js.native
   
   def executeOrDelayUntilScriptLoaded(func: js.Function0[Unit], depScriptFileName: String): Boolean = js.native
   
@@ -25,7 +25,7 @@ trait SOD extends StObject {
   def loadMultiple(keys: js.Array[String], fn: js.Function0[Unit], bSync: Boolean): Unit = js.native
   
   def notifyEventAndExecuteWaitingJobs(eventName: String): Unit = js.native
-  def notifyEventAndExecuteWaitingJobs(eventName: String, args: js.Array[js.Any]): Unit = js.native
+  def notifyEventAndExecuteWaitingJobs(eventName: String, args: js.Array[Any]): Unit = js.native
   
   def notifyScriptLoadedAndExecuteWaitingJobs(scriptFileName: String): Unit = js.native
   

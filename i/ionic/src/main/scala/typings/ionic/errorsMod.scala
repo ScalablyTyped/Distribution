@@ -9,19 +9,19 @@ object errorsMod {
   
   @JSImport("ionic/lib/errors", "BaseException")
   @js.native
-  class BaseException protected () extends BaseError {
+  open class BaseException protected () extends BaseError {
     def this(message: String) = this()
   }
   
   @JSImport("ionic/lib/errors", "BuildCLIProgramNotFoundException")
   @js.native
-  class BuildCLIProgramNotFoundException protected () extends BaseException {
+  open class BuildCLIProgramNotFoundException protected () extends BaseException {
     def this(message: String) = this()
   }
   
   @JSImport("ionic/lib/errors", "FatalException")
   @js.native
-  class FatalException () extends BaseException {
+  open class FatalException () extends BaseException {
     def this(message: String) = this()
     def this(message: String, exitCode: Double) = this()
     def this(message: Unit, exitCode: Double) = this()
@@ -34,43 +34,43 @@ object errorsMod {
   
   @JSImport("ionic/lib/errors", "HookException")
   @js.native
-  class HookException protected () extends BaseException {
+  open class HookException protected () extends BaseException {
     def this(message: String) = this()
   }
   
   @JSImport("ionic/lib/errors", "IntegrationException")
   @js.native
-  class IntegrationException protected () extends BaseException {
+  open class IntegrationException protected () extends BaseException {
     def this(message: String) = this()
   }
   
   @JSImport("ionic/lib/errors", "IntegrationNotFoundException")
   @js.native
-  class IntegrationNotFoundException protected () extends IntegrationException {
+  open class IntegrationNotFoundException protected () extends IntegrationException {
     def this(message: String) = this()
   }
   
   @JSImport("ionic/lib/errors", "RunnerException")
   @js.native
-  class RunnerException protected () extends BaseException {
+  open class RunnerException protected () extends BaseException {
     def this(message: String) = this()
   }
   
   @JSImport("ionic/lib/errors", "RunnerNotFoundException")
   @js.native
-  class RunnerNotFoundException protected () extends RunnerException {
+  open class RunnerNotFoundException protected () extends RunnerException {
     def this(message: String) = this()
   }
   
   @JSImport("ionic/lib/errors", "ServeCLIProgramNotFoundException")
   @js.native
-  class ServeCLIProgramNotFoundException protected () extends BaseException {
+  open class ServeCLIProgramNotFoundException protected () extends BaseException {
     def this(message: String) = this()
   }
   
   @JSImport("ionic/lib/errors", "SessionException")
   @js.native
-  class SessionException protected () extends BaseException {
+  open class SessionException protected () extends BaseException {
     def this(message: String) = this()
   }
 }

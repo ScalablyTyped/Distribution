@@ -38,13 +38,13 @@ object LintResult {
     
     inline def setFailures(value: js.Array[typings.tslint.ruleMod.RuleFailure]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    inline def setFailuresVarargs(value: typings.tslint.ruleMod.RuleFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: typings.tslint.ruleMod.RuleFailure*): Self = StObject.set(x, "failures", js.Array(value*))
     
     inline def setFixes(value: js.Array[typings.tslint.ruleMod.RuleFailure]): Self = StObject.set(x, "fixes", value.asInstanceOf[js.Any])
     
     inline def setFixesUndefined: Self = StObject.set(x, "fixes", js.undefined)
     
-    inline def setFixesVarargs(value: typings.tslint.ruleMod.RuleFailure*): Self = StObject.set(x, "fixes", js.Array(value :_*))
+    inline def setFixesVarargs(value: typings.tslint.ruleMod.RuleFailure*): Self = StObject.set(x, "fixes", js.Array(value*))
     
     inline def setFormat(value: String | FormatterConstructor): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

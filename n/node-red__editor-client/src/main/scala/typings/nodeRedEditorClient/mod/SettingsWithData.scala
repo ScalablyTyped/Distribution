@@ -13,13 +13,13 @@ trait SettingsWithData
 object SettingsWithData {
   
   inline def apply(
-    get: (String, js.Any) => js.Any,
+    get: (String, Any) => Any,
     init: (ApiRootUrl, js.Function0[Unit]) => Unit,
     load: js.Function0[Unit] => Unit,
     loadUserSettings: js.Function0[Unit] => Unit,
     remove: String => Unit,
-    set: (String, js.Any) => Unit,
-    theme: (String, js.Any) => js.Any,
+    set: (String, Any) => Unit,
+    theme: (String, Any) => Any,
     uiHost: String,
     uiPort: Double
   ): SettingsWithData = {

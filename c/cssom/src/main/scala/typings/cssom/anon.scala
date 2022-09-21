@@ -8,18 +8,18 @@ object anon {
   
   trait Error extends StObject {
     
-    var error: js.Any
+    var error: Any
   }
   object Error {
     
-    inline def apply(error: js.Any): Error = {
+    inline def apply(error: Any): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
     extension [Self <: Error](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   

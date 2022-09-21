@@ -15,12 +15,12 @@ trait Appflow extends Service {
   var config_Appflow: ConfigBase & ClientConfiguration = js.native
   
   /**
-    *  Creates a new connector profile associated with your AWS account. There is a soft quota of 100 connector profiles per AWS account. If you need more connector profiles than this quota allows, you can submit a request to the Amazon AppFlow team through the Amazon AppFlow support channel. 
+    *  Creates a new connector profile associated with your Amazon Web Services account. There is a soft quota of 100 connector profiles per Amazon Web Services account. If you need more connector profiles than this quota allows, you can submit a request to the Amazon AppFlow team through the Amazon AppFlow support channel. In each connector profile that you create, you can provide the credentials and properties for only one connector.
     */
   def createConnectorProfile(): Request[CreateConnectorProfileResponse, AWSError] = js.native
   def createConnectorProfile(callback: js.Function2[/* err */ AWSError, /* data */ CreateConnectorProfileResponse, Unit]): Request[CreateConnectorProfileResponse, AWSError] = js.native
   /**
-    *  Creates a new connector profile associated with your AWS account. There is a soft quota of 100 connector profiles per AWS account. If you need more connector profiles than this quota allows, you can submit a request to the Amazon AppFlow team through the Amazon AppFlow support channel. 
+    *  Creates a new connector profile associated with your Amazon Web Services account. There is a soft quota of 100 connector profiles per Amazon Web Services account. If you need more connector profiles than this quota allows, you can submit a request to the Amazon AppFlow team through the Amazon AppFlow support channel. In each connector profile that you create, you can provide the credentials and properties for only one connector.
     */
   def createConnectorProfile(params: CreateConnectorProfileRequest): Request[CreateConnectorProfileResponse, AWSError] = js.native
   def createConnectorProfile(
@@ -71,12 +71,26 @@ trait Appflow extends Service {
   ): Request[DeleteFlowResponse, AWSError] = js.native
   
   /**
-    *  Provides details regarding the entity used with the connector, with a description of the data model for each entity. 
+    * Describes the given custom connector registered in your Amazon Web Services account. This API can be used for custom connectors that are registered in your account and also for Amazon authored connectors.
+    */
+  def describeConnector(): Request[DescribeConnectorResponse, AWSError] = js.native
+  def describeConnector(callback: js.Function2[/* err */ AWSError, /* data */ DescribeConnectorResponse, Unit]): Request[DescribeConnectorResponse, AWSError] = js.native
+  /**
+    * Describes the given custom connector registered in your Amazon Web Services account. This API can be used for custom connectors that are registered in your account and also for Amazon authored connectors.
+    */
+  def describeConnector(params: DescribeConnectorRequest): Request[DescribeConnectorResponse, AWSError] = js.native
+  def describeConnector(
+    params: DescribeConnectorRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeConnectorResponse, Unit]
+  ): Request[DescribeConnectorResponse, AWSError] = js.native
+  
+  /**
+    *  Provides details regarding the entity used with the connector, with a description of the data model for each field in that entity. 
     */
   def describeConnectorEntity(): Request[DescribeConnectorEntityResponse, AWSError] = js.native
   def describeConnectorEntity(callback: js.Function2[/* err */ AWSError, /* data */ DescribeConnectorEntityResponse, Unit]): Request[DescribeConnectorEntityResponse, AWSError] = js.native
   /**
-    *  Provides details regarding the entity used with the connector, with a description of the data model for each entity. 
+    *  Provides details regarding the entity used with the connector, with a description of the data model for each field in that entity. 
     */
   def describeConnectorEntity(params: DescribeConnectorEntityRequest): Request[DescribeConnectorEntityResponse, AWSError] = js.native
   def describeConnectorEntity(
@@ -155,6 +169,20 @@ trait Appflow extends Service {
   ): Request[ListConnectorEntitiesResponse, AWSError] = js.native
   
   /**
+    * Returns the list of all registered custom connectors in your Amazon Web Services account. This API lists only custom connectors registered in this account, not the Amazon Web Services authored connectors. 
+    */
+  def listConnectors(): Request[ListConnectorsResponse, AWSError] = js.native
+  def listConnectors(callback: js.Function2[/* err */ AWSError, /* data */ ListConnectorsResponse, Unit]): Request[ListConnectorsResponse, AWSError] = js.native
+  /**
+    * Returns the list of all registered custom connectors in your Amazon Web Services account. This API lists only custom connectors registered in this account, not the Amazon Web Services authored connectors. 
+    */
+  def listConnectors(params: ListConnectorsRequest): Request[ListConnectorsResponse, AWSError] = js.native
+  def listConnectors(
+    params: ListConnectorsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListConnectorsResponse, Unit]
+  ): Request[ListConnectorsResponse, AWSError] = js.native
+  
+  /**
     *  Lists all of the flows associated with your account. 
     */
   def listFlows(): Request[ListFlowsResponse, AWSError] = js.native
@@ -181,6 +209,20 @@ trait Appflow extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
+  /**
+    * Registers a new connector with your Amazon Web Services account. Before you can register the connector, you must deploy lambda in your account.
+    */
+  def registerConnector(): Request[RegisterConnectorResponse, AWSError] = js.native
+  def registerConnector(callback: js.Function2[/* err */ AWSError, /* data */ RegisterConnectorResponse, Unit]): Request[RegisterConnectorResponse, AWSError] = js.native
+  /**
+    * Registers a new connector with your Amazon Web Services account. Before you can register the connector, you must deploy lambda in your account.
+    */
+  def registerConnector(params: RegisterConnectorRequest): Request[RegisterConnectorResponse, AWSError] = js.native
+  def registerConnector(
+    params: RegisterConnectorRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RegisterConnectorResponse, Unit]
+  ): Request[RegisterConnectorResponse, AWSError] = js.native
   
   /**
     *  Activates an existing flow. For on-demand flows, this operation runs the flow immediately. For schedule and event-triggered flows, this operation activates the flow. 
@@ -223,6 +265,20 @@ trait Appflow extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
+  /**
+    * Unregisters the custom connector registered in your account that matches the connectorLabel provided in the request.
+    */
+  def unregisterConnector(): Request[UnregisterConnectorResponse, AWSError] = js.native
+  def unregisterConnector(callback: js.Function2[/* err */ AWSError, /* data */ UnregisterConnectorResponse, Unit]): Request[UnregisterConnectorResponse, AWSError] = js.native
+  /**
+    * Unregisters the custom connector registered in your account that matches the connectorLabel provided in the request.
+    */
+  def unregisterConnector(params: UnregisterConnectorRequest): Request[UnregisterConnectorResponse, AWSError] = js.native
+  def unregisterConnector(
+    params: UnregisterConnectorRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UnregisterConnectorResponse, Unit]
+  ): Request[UnregisterConnectorResponse, AWSError] = js.native
   
   /**
     *  Removes a tag from the specified flow. 

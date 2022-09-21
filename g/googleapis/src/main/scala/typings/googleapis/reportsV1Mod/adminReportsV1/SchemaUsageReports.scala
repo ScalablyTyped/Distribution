@@ -5,25 +5,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON template for a collection of usage reports.
-  */
 trait SchemaUsageReports extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The kind of object.
+    * The type of API resource. For a usage report, the value is `admin#reports#usageReports`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Token for retrieving the next page
+    * Token to specify next page. A report with multiple pages has a `nextPageToken` property in the response. For your follow-on requests getting all of the report's pages, enter the `nextPageToken` value in the `pageToken` query string.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Various application parameter records.
@@ -31,9 +28,9 @@ trait SchemaUsageReports extends StObject {
   var usageReports: js.UndefOr[js.Array[SchemaUsageReport]] = js.undefined
   
   /**
-    * Warnings if any.
+    * Warnings, if any.
     */
-  var warnings: js.UndefOr[js.Array[Code]] = js.undefined
+  var warnings: js.UndefOr[js.Array[Code] | Null] = js.undefined
 }
 object SchemaUsageReports {
   
@@ -46,13 +43,19 @@ object SchemaUsageReports {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
@@ -60,12 +63,14 @@ object SchemaUsageReports {
     
     inline def setUsageReportsUndefined: Self = StObject.set(x, "usageReports", js.undefined)
     
-    inline def setUsageReportsVarargs(value: SchemaUsageReport*): Self = StObject.set(x, "usageReports", js.Array(value :_*))
+    inline def setUsageReportsVarargs(value: SchemaUsageReport*): Self = StObject.set(x, "usageReports", js.Array(value*))
     
     inline def setWarnings(value: js.Array[Code]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
+    inline def setWarningsNull: Self = StObject.set(x, "warnings", null)
+    
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

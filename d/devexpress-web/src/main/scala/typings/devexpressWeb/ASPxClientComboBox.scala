@@ -19,12 +19,12 @@ trait ASPxClientComboBox
     * @param imageUrl A string value specifying the path to the image displayed by the item.
     */
   def AddItem(text: String): Double = js.native
-  def AddItem(text: String, value: js.Any): Double = js.native
-  def AddItem(text: String, value: js.Any, imageUrl: String): Double = js.native
+  def AddItem(text: String, value: Any): Double = js.native
+  def AddItem(text: String, value: Any, imageUrl: String): Double = js.native
   def AddItem(text: String, value: Unit, imageUrl: String): Double = js.native
   def AddItem(text: js.Array[String]): Double = js.native
-  def AddItem(text: js.Array[String], value: js.Any): Double = js.native
-  def AddItem(text: js.Array[String], value: js.Any, imageUrl: String): Double = js.native
+  def AddItem(text: js.Array[String], value: Any): Double = js.native
+  def AddItem(text: js.Array[String], value: Any, imageUrl: String): Double = js.native
   def AddItem(text: js.Array[String], value: Unit, imageUrl: String): Double = js.native
   
   /**
@@ -81,7 +81,7 @@ trait ASPxClientComboBox
     * Determines whether the drop-down content is loaded; if not - loads the content.
     * @param callbackFunction An object that is the JavaScript function that receives the callback data as a parameter. The function is performed after the combo box content is loaded.
     */
-  def EnsureDropDownLoaded(callbackFunction: js.Any): Unit = js.native
+  def EnsureDropDownLoaded(callbackFunction: Any): Unit = js.native
   
   /**
     * Returns a combo box item by its text. A ASPxClientListEditItem object that represents the combo box item. null (Nothing in Visual Basic) if the item was not found.
@@ -93,7 +93,7 @@ trait ASPxClientComboBox
     * Returns a combo box item by its value. A ASPxClientListEditItem object that represents the combo box item. null (Nothing in Visual Basic) if the item was not found.
     * @param value An object that specifies the item's value.
     */
-  def FindItemByValue(value: js.Any): ASPxClientListEditItem = js.native
+  def FindItemByValue(value: Any): ASPxClientListEditItem = js.native
   
   /**
     * Returns an item specified by its index within the combo box editor's item collection. An ASPxClientListEditItem object representing the collection item found.
@@ -123,12 +123,12 @@ trait ASPxClientComboBox
     * @param imageUrl A String value specifying the path to the image displayed by the item.
     */
   def InsertItem(index: Double, text: String): Unit = js.native
-  def InsertItem(index: Double, text: String, value: js.Any): Unit = js.native
-  def InsertItem(index: Double, text: String, value: js.Any, imageUrl: String): Unit = js.native
+  def InsertItem(index: Double, text: String, value: Any): Unit = js.native
+  def InsertItem(index: Double, text: String, value: Any, imageUrl: String): Unit = js.native
   def InsertItem(index: Double, text: String, value: Unit, imageUrl: String): Unit = js.native
   def InsertItem(index: Double, text: js.Array[String]): Unit = js.native
-  def InsertItem(index: Double, text: js.Array[String], value: js.Any): Unit = js.native
-  def InsertItem(index: Double, text: js.Array[String], value: js.Any, imageUrl: String): Unit = js.native
+  def InsertItem(index: Double, text: js.Array[String], value: Any): Unit = js.native
+  def InsertItem(index: Double, text: js.Array[String], value: Any, imageUrl: String): Unit = js.native
   def InsertItem(index: Double, text: js.Array[String], value: Unit, imageUrl: String): Unit = js.native
   
   /**

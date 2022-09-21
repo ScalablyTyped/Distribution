@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for the Acknowledge method.
-  */
 trait SchemaAcknowledgeRequest extends StObject {
   
   /**
-    * The acknowledgment ID for the messages being acknowledged that was
-    * returned by the Pub/Sub system in the `Pull` response. Must not be empty.
+    * The acknowledgment ID for the messages being acknowledged that was returned by the Pub/Sub system in the `Pull` response. Must not be empty.
     */
-  var ackIds: js.UndefOr[js.Array[String]] = js.undefined
+  var ackIds: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaAcknowledgeRequest {
   
@@ -26,8 +22,10 @@ object SchemaAcknowledgeRequest {
     
     inline def setAckIds(value: js.Array[String]): Self = StObject.set(x, "ackIds", value.asInstanceOf[js.Any])
     
+    inline def setAckIdsNull: Self = StObject.set(x, "ackIds", null)
+    
     inline def setAckIdsUndefined: Self = StObject.set(x, "ackIds", js.undefined)
     
-    inline def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value :_*))
+    inline def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value*))
   }
 }

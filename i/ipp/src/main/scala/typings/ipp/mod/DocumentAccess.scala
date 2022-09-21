@@ -29,7 +29,7 @@ object DocumentAccess {
     
     inline def `setAccess-oauth-tokenUndefined`: Self = StObject.set(x, "access-oauth-token", js.undefined)
     
-    inline def `setAccess-oauth-tokenVarargs`(value: String*): Self = StObject.set(x, "access-oauth-token", js.Array(value :_*))
+    inline def `setAccess-oauth-tokenVarargs`(value: String*): Self = StObject.set(x, "access-oauth-token", js.Array(value*))
     
     inline def `setAccess-oauth-uri`(value: String): Self = StObject.set(x, "access-oauth-uri", value.asInstanceOf[js.Any])
     

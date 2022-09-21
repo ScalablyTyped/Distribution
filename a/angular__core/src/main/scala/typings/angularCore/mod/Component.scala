@@ -10,11 +10,11 @@ trait Component
   
   /**
     * One or more animation `trigger()` calls, containing
-    * `state()` and `transition()` definitions.
+    * [`state()`](api/animations/state) and `transition()` definitions.
     * See the [Animations guide](/guide/animations) and animations API documentation.
     *
     */
-  var animations: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var animations: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * The change-detection strategy to use for this component.
@@ -28,18 +28,19 @@ trait Component
   var changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.undefined
   
   /**
-    * An encapsulation policy for the template and CSS styles. One of:
-    * - `ViewEncapsulation.Emulated`: Use shimmed CSS that
-    * emulates the native behavior.
-    * - `ViewEncapsulation.None`: Use global CSS without any
-    * encapsulation.
-    * - `ViewEncapsulation.ShadowDom`: Use Shadow DOM v1 to encapsulate styles.
+    * An encapsulation policy for the component's styling.
+    * Possible values:
+    * - `ViewEncapsulation.Emulated`: Apply modified component styles in order to emulate
+    *                                 a native Shadow DOM CSS encapsulation behavior.
+    * - `ViewEncapsulation.None`: Apply component styles globally without any sort of encapsulation.
+    * - `ViewEncapsulation.ShadowDom`: Use the browser's native Shadow DOM API to encapsulate styles.
     *
-    * If not supplied, the value is taken from `CompilerOptions`. The default compiler option is
-    * `ViewEncapsulation.Emulated`.
+    * If not supplied, the value is taken from the `CompilerOptions`
+    * which defaults to `ViewEncapsulation.Emulated`.
     *
-    * If the policy is set to `ViewEncapsulation.Emulated` and the component has no `styles`
-    * or `styleUrls` specified, the policy is automatically switched to `ViewEncapsulation.None`.
+    * If the policy is `ViewEncapsulation.Emulated` and the component has no
+    * {@link Component#styles styles} nor {@link Component#styleUrls styleUrls},
+    * the policy is automatically switched to `ViewEncapsulation.None`.
     */
   var encapsulation: js.UndefOr[ViewEncapsulation] = js.undefined
   
@@ -50,10 +51,25 @@ trait Component
     * {@link ComponentFactoryResolver}.
     * @deprecated Since 9.0.0. With Ivy, this property is no longer necessary.
     */
-  var entryComponents: js.UndefOr[js.Array[Type[js.Any] | js.Array[js.Any]]] = js.undefined
+  var entryComponents: js.UndefOr[js.Array[Type[Any] | js.Array[Any]]] = js.undefined
   
   /**
-    * Overrides the default encapsulation start and end delimiters (`{{` and `}}`)
+    * The imports property specifies the standalone component's template dependencies — those
+    * directives, components, and pipes that can be used within its template. Standalone components
+    * can import other standalone components, directives and pipes as well as existing NgModules.
+    *
+    * This property is only available for standalone components - specifying it for components
+    * declared in an NgModule generates a compilation error.
+    *
+    * More information about standalone components, directives and pipes can be found in [this
+    * guide](guide/standalone-components).
+    *
+    * @developerPreview
+    */
+  var imports: js.UndefOr[js.Array[Type[Any] | js.Array[Any]]] = js.undefined
+  
+  /**
+    * Overrides the default interpolation start and end delimiters (`{{` and `}}`).
     */
   var interpolation: js.UndefOr[js.Tuple2[String, String]] = js.undefined
   
@@ -73,6 +89,18 @@ trait Component
     * overridden in compiler options.
     */
   var preserveWhitespaces: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The set of schemas that declare elements to be allowed in a standalone component. Elements and
+    * properties that are neither Angular components nor directives must be declared in a schema.
+    *
+    * This property is only available for standalone components - specifying it for components
+    * declared in an NgModule generates a compilation error.
+    *
+    * More information about standalone components, directives and pipes can be found in [this
+    * guide](guide/standalone-components).
+    */
+  var schemas: js.UndefOr[js.Array[SchemaMetadata]] = js.undefined
   
   /**
     * One or more relative paths or absolute URLs for files containing CSS stylesheets to use
@@ -115,11 +143,11 @@ object Component {
   
   extension [Self <: Component](x: Self) {
     
-    inline def setAnimations(value: js.Array[js.Any]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    inline def setAnimations(value: js.Array[Any]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     inline def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
     
-    inline def setAnimationsVarargs(value: js.Any*): Self = StObject.set(x, "animations", js.Array(value :_*))
+    inline def setAnimationsVarargs(value: Any*): Self = StObject.set(x, "animations", js.Array(value*))
     
     inline def setChangeDetection(value: ChangeDetectionStrategy): Self = StObject.set(x, "changeDetection", value.asInstanceOf[js.Any])
     
@@ -129,11 +157,17 @@ object Component {
     
     inline def setEncapsulationUndefined: Self = StObject.set(x, "encapsulation", js.undefined)
     
-    inline def setEntryComponents(value: js.Array[Type[js.Any] | js.Array[js.Any]]): Self = StObject.set(x, "entryComponents", value.asInstanceOf[js.Any])
+    inline def setEntryComponents(value: js.Array[Type[Any] | js.Array[Any]]): Self = StObject.set(x, "entryComponents", value.asInstanceOf[js.Any])
     
     inline def setEntryComponentsUndefined: Self = StObject.set(x, "entryComponents", js.undefined)
     
-    inline def setEntryComponentsVarargs(value: (Type[js.Any] | js.Array[js.Any])*): Self = StObject.set(x, "entryComponents", js.Array(value :_*))
+    inline def setEntryComponentsVarargs(value: (Type[Any] | js.Array[Any])*): Self = StObject.set(x, "entryComponents", js.Array(value*))
+    
+    inline def setImports(value: js.Array[Type[Any] | js.Array[Any]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    
+    inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
+    
+    inline def setImportsVarargs(value: (Type[Any] | js.Array[Any])*): Self = StObject.set(x, "imports", js.Array(value*))
     
     inline def setInterpolation(value: js.Tuple2[String, String]): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
@@ -147,17 +181,23 @@ object Component {
     
     inline def setPreserveWhitespacesUndefined: Self = StObject.set(x, "preserveWhitespaces", js.undefined)
     
+    inline def setSchemas(value: js.Array[SchemaMetadata]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    
+    inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
+    
+    inline def setSchemasVarargs(value: SchemaMetadata*): Self = StObject.set(x, "schemas", js.Array(value*))
+    
     inline def setStyleUrls(value: js.Array[String]): Self = StObject.set(x, "styleUrls", value.asInstanceOf[js.Any])
     
     inline def setStyleUrlsUndefined: Self = StObject.set(x, "styleUrls", js.undefined)
     
-    inline def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
+    inline def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value*))
     
     inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value*))
     
     inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
@@ -171,6 +211,6 @@ object Component {
     
     inline def setViewProvidersUndefined: Self = StObject.set(x, "viewProviders", js.undefined)
     
-    inline def setViewProvidersVarargs(value: Provider*): Self = StObject.set(x, "viewProviders", js.Array(value :_*))
+    inline def setViewProvidersVarargs(value: Provider*): Self = StObject.set(x, "viewProviders", js.Array(value*))
   }
 }

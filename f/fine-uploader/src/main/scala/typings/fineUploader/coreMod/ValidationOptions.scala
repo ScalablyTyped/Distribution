@@ -13,7 +13,7 @@ trait ValidationOptions extends StObject {
     *
     * @default `null`
     */
-  var acceptFiles: js.UndefOr[js.Any] = js.undefined
+  var acceptFiles: js.UndefOr[Any] = js.undefined
   
   /**
     * Specify file valid file extensions here to restrict uploads to specific types
@@ -66,7 +66,7 @@ object ValidationOptions {
   
   extension [Self <: ValidationOptions](x: Self) {
     
-    inline def setAcceptFiles(value: js.Any): Self = StObject.set(x, "acceptFiles", value.asInstanceOf[js.Any])
+    inline def setAcceptFiles(value: Any): Self = StObject.set(x, "acceptFiles", value.asInstanceOf[js.Any])
     
     inline def setAcceptFilesUndefined: Self = StObject.set(x, "acceptFiles", js.undefined)
     
@@ -74,7 +74,7 @@ object ValidationOptions {
     
     inline def setAllowedExtensionsUndefined: Self = StObject.set(x, "allowedExtensions", js.undefined)
     
-    inline def setAllowedExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedExtensions", js.Array(value :_*))
+    inline def setAllowedExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedExtensions", js.Array(value*))
     
     inline def setImage(value: ImageOptions): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

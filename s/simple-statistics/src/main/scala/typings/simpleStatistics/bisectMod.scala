@@ -11,7 +11,7 @@ object bisectMod {
   val ^ : js.Any = js.native
   
   inline def default(
-    func: js.Function1[/* x */ js.Any, Double],
+    func: js.Function1[/* x */ Any, Double],
     start: Double,
     end: Double,
     maxIterations: Double,

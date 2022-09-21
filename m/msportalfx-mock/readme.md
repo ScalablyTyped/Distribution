@@ -1,7 +1,7 @@
 
 # Scala.js typings for msportalfx-mock
 
-Typings are for version 0.3.4
+Typings are for version 2.2.7
 
 ## Library description:
 msportalfx-mock
@@ -10,10 +10,10 @@ msportalfx-mock
 | ------------------ | :-------------: |
 | Full name          | msportalfx-mock |
 | Keywords           | Azure Portal, test framework, testing, test, mock |
-| # releases         | 16 |
-| # dependents       | 0 |
-| # downloads        | 1665450 |
-| # stars            | 0 |
+| # releases         | 30 |
+| # dependents       | 0.0 |
+| # downloads        | 12555.333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/msportalfx-mock)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@aws-sdk/karma-credential-loader" : "3.40.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@aws-sdk/karma-credential-loader" : "3.40.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

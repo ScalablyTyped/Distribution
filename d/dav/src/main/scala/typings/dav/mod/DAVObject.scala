@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("dav", "DAVObject")
 @js.native
-class DAVObject protected () extends StObject {
+open class DAVObject protected () extends StObject {
   def this(options: DAVObjectOptions) = this()
   
   var data: String = js.native

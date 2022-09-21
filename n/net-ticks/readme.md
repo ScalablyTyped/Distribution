@@ -10,10 +10,10 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | net-ticks |
 | Keywords           | .net, date, ticks |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 534 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 16.666666666666668 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/koonuf/net-ticks)

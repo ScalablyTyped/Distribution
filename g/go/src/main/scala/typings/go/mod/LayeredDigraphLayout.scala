@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a LayeredDigraphLayout with no Layout.network and with no owning Layout.diagram.
   */
-class LayeredDigraphLayout () extends Layout {
+open class LayeredDigraphLayout () extends Layout {
   
   /**Gets or sets which aggressive option is being used to look for link crossings.*/
   var aggressiveOption: EnumValue = js.native

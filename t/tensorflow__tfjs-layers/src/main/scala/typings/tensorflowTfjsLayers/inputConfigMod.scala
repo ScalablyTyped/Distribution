@@ -44,7 +44,7 @@ object inputConfigMod {
       
       inline def setBatch_input_shapeUndefined: Self = StObject.set(x, "batch_input_shape", js.undefined)
       
-      inline def setBatch_input_shapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batch_input_shape", js.Array(value :_*))
+      inline def setBatch_input_shapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batch_input_shape", js.Array(value*))
       
       inline def setBatch_size(value: Double): Self = StObject.set(x, "batch_size", value.asInstanceOf[js.Any])
       
@@ -58,7 +58,7 @@ object inputConfigMod {
       
       inline def setInput_shapeUndefined: Self = StObject.set(x, "input_shape", js.undefined)
       
-      inline def setInput_shapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "input_shape", js.Array(value :_*))
+      inline def setInput_shapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "input_shape", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

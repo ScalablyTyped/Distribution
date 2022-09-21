@@ -48,7 +48,7 @@ object SketchMSGradient {
     
     inline def setStops(value: js.Array[SketchMSGradientStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    inline def setStopsVarargs(value: SketchMSGradientStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: SketchMSGradientStop*): Self = StObject.set(x, "stops", js.Array(value*))
     
     inline def setTo(value: X): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IUtil
   extends StObject
+     with IUtilImage
      with IUtilAnimation
      with IUtilArc
      with IObservable[IUtil]

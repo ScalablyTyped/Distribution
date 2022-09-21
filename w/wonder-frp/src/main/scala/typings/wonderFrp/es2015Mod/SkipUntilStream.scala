@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/es2015", "SkipUntilStream")
 @js.native
-class SkipUntilStream protected ()
+open class SkipUntilStream protected ()
   extends typings.wonderFrp.streamSkipUntilStreamMod.SkipUntilStream {
   def this(
     source: typings.wonderFrp.coreStreamMod.Stream,

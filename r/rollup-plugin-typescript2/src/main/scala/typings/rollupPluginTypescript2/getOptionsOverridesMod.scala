@@ -1,6 +1,6 @@
 package typings.rollupPluginTypescript2
 
-import typings.rollupPluginTypescript2.contextMod.IContext
+import typings.rollupPluginTypescript2.contextMod.RollupContext
 import typings.rollupPluginTypescript2.ioptionsMod.IOptions
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.ParsedCommandLine
@@ -14,8 +14,8 @@ object getOptionsOverridesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createFilter(context: IContext, pluginOptions: IOptions, parsedConfig: ParsedCommandLine): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")(context.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any], parsedConfig.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createFilter(context: RollupContext, pluginOptions: IOptions, parsedConfig: ParsedCommandLine): js.Function1[/* id */ Any, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")(context.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any], parsedConfig.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* id */ Any, Boolean]]
   
-  inline def getOptionsOverrides(hasUseTsconfigDeclarationDirCacheRootCwd: IOptions): CompilerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionsOverrides")(hasUseTsconfigDeclarationDirCacheRootCwd.asInstanceOf[js.Any]).asInstanceOf[CompilerOptions]
-  inline def getOptionsOverrides(hasUseTsconfigDeclarationDirCacheRootCwd: IOptions, preParsedTsconfig: ParsedCommandLine): CompilerOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionsOverrides")(hasUseTsconfigDeclarationDirCacheRootCwd.asInstanceOf[js.Any], preParsedTsconfig.asInstanceOf[js.Any])).asInstanceOf[CompilerOptions]
+  inline def getOptionsOverrides(hasUseTsconfigDeclarationDirCacheRoot: IOptions): CompilerOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionsOverrides")(hasUseTsconfigDeclarationDirCacheRoot.asInstanceOf[js.Any]).asInstanceOf[CompilerOptions]
+  inline def getOptionsOverrides(hasUseTsconfigDeclarationDirCacheRoot: IOptions, preParsedTsconfig: ParsedCommandLine): CompilerOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionsOverrides")(hasUseTsconfigDeclarationDirCacheRoot.asInstanceOf[js.Any], preParsedTsconfig.asInstanceOf[js.Any])).asInstanceOf[CompilerOptions]
 }

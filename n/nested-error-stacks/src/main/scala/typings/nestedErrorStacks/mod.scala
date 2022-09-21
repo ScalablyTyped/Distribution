@@ -9,19 +9,21 @@ object mod {
   
   @JSImport("nested-error-stacks", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Error {
-    def this(message: js.Any) = this()
-    def this(message: js.Any, nested: Error) = this()
-    def this(message: Unit, nested: Error) = this()
+    def this(message: Any) = this()
+    def this(message: Any, nested: js.Error) = this()
+    def this(message: Unit, nested: js.Error) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
-  type NestedError = Error
+  type NestedError = js.Error
 }

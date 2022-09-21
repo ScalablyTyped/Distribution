@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap/lib", "ModalHeader")
 @js.native
-class ModalHeader () extends ^
+open class ModalHeader () extends ^

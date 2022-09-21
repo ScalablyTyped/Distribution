@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "clone-regexp" : "2.2.0"
+      "clone-regexp" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "clone-regexp" : "2.2.0"
+      "clone-regexp" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

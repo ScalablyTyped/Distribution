@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * GeoJSON
   * @param options 选项
   */
-class GeoJSON[ExtraData] ()
+open class GeoJSON[ExtraData] ()
   extends StObject
      with typings.amapJsApi.AMap.GeoJSON[ExtraData] {
   def this(options: Options) = this()

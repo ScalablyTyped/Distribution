@@ -22,6 +22,6 @@ object CustomerListDpcsResponse {
     
     inline def setDpcsUndefined: Self = StObject.set(x, "dpcs", js.undefined)
     
-    inline def setDpcsVarargs(value: Dpc*): Self = StObject.set(x, "dpcs", js.Array(value :_*))
+    inline def setDpcsVarargs(value: Dpc*): Self = StObject.set(x, "dpcs", js.Array(value*))
   }
 }

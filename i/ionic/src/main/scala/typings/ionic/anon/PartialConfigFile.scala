@@ -105,19 +105,19 @@ object PartialConfigFile {
     
     inline def setSslDotcafileUndefined: Self = StObject.set(x, "ssl.cafile", js.undefined)
     
-    inline def setSslDotcafileVarargs(value: String*): Self = StObject.set(x, "ssl.cafile", js.Array(value :_*))
+    inline def setSslDotcafileVarargs(value: String*): Self = StObject.set(x, "ssl.cafile", js.Array(value*))
     
     inline def setSslDotcertfile(value: String | js.Array[String]): Self = StObject.set(x, "ssl.certfile", value.asInstanceOf[js.Any])
     
     inline def setSslDotcertfileUndefined: Self = StObject.set(x, "ssl.certfile", js.undefined)
     
-    inline def setSslDotcertfileVarargs(value: String*): Self = StObject.set(x, "ssl.certfile", js.Array(value :_*))
+    inline def setSslDotcertfileVarargs(value: String*): Self = StObject.set(x, "ssl.certfile", js.Array(value*))
     
     inline def setSslDotkeyfile(value: String | js.Array[String]): Self = StObject.set(x, "ssl.keyfile", value.asInstanceOf[js.Any])
     
     inline def setSslDotkeyfileUndefined: Self = StObject.set(x, "ssl.keyfile", js.undefined)
     
-    inline def setSslDotkeyfileVarargs(value: String*): Self = StObject.set(x, "ssl.keyfile", js.Array(value :_*))
+    inline def setSslDotkeyfileVarargs(value: String*): Self = StObject.set(x, "ssl.keyfile", js.Array(value*))
     
     inline def setTelemetry(value: Boolean): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
     

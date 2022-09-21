@@ -8,7 +8,7 @@ object openfilesMod {
   
   @JSImport("node-os-utils/lib/openfiles", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with OpenFiles {
     

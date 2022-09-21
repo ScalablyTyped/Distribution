@@ -5,11 +5,13 @@ import typings.antd.linkMod.LinkProps
 import typings.antd.textMod.TextProps
 import typings.antd.typographyParagraphMod.ParagraphProps
 import typings.antd.typographyTitleMod.TitleProps
-import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.FunctionComponent
 import typings.react.mod.RefAttributes
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.HTMLHeadingElement
+import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,11 +29,11 @@ object typographyMod extends Shortcut {
     
     var Link: ForwardRefExoticComponent[LinkProps & RefAttributes[HTMLElement]] = js.native
     
-    var Paragraph: FC[ParagraphProps] = js.native
+    var Paragraph: ForwardRefExoticComponent[ParagraphProps & RefAttributes[HTMLDivElement]] = js.native
     
-    var Text: FC[TextProps] = js.native
+    var Text: ForwardRefExoticComponent[TextProps & RefAttributes[HTMLSpanElement]] = js.native
     
-    var Title: FC[TitleProps] = js.native
+    var Title: ForwardRefExoticComponent[TitleProps & RefAttributes[HTMLHeadingElement]] = js.native
   }
   
   type _To = TypographyProps

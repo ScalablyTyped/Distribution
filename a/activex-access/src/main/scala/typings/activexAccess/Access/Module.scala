@@ -108,7 +108,7 @@ trait Module extends StObject {
   
   var Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def ProcBodyLine(ProcName: String, ProcKind: vbextProcKind): Double = js.native
   

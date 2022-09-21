@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait IHarness extends StObject {
   
-  var alsoPreload: js.Array[js.Any]
+  var alsoPreload: js.Array[Any]
   
   var autoCheckGlobals: Boolean
   
   var cachePreload: Boolean
   
-  def configure(config: js.Any): Unit
+  def configure(config: Any): Unit
   
   var defaultTimeout: Boolean
   
@@ -31,7 +31,7 @@ trait IHarness extends StObject {
   
   var keepResults: Boolean
   
-  var listenters: StringDictionary[js.Function2[/* event */ Event, /* repeated */ js.Any, Unit]]
+  var listenters: StringDictionary[js.Function2[/* event */ Event, /* repeated */ Any, Unit]]
   
   var maxThreads: Double
   
@@ -41,11 +41,11 @@ trait IHarness extends StObject {
   
   var pauseBetweenTests: Double
   
-  var preload: js.Array[js.Any]
+  var preload: js.Array[Any]
   
   var runCore: String
   
-  def start(descriptors: js.Any*): Unit
+  def start(descriptors: Any*): Unit
   
   var subTestTimeout: Double
   
@@ -60,24 +60,24 @@ trait IHarness extends StObject {
 object IHarness {
   
   inline def apply(
-    alsoPreload: js.Array[js.Any],
+    alsoPreload: js.Array[Any],
     autoCheckGlobals: Boolean,
     cachePreload: Boolean,
-    configure: js.Any => Unit,
+    configure: Any => Unit,
     defaultTimeout: Boolean,
     disableColoring: Boolean,
     expectedGlobals: js.Array[String],
     isReadyTimeout: Double,
     keepNLastResults: Double,
     keepResults: Boolean,
-    listenters: StringDictionary[js.Function2[/* event */ Event, /* repeated */ js.Any, Unit]],
+    listenters: StringDictionary[js.Function2[/* event */ Event, /* repeated */ Any, Unit]],
     maxThreads: Double,
     needDone: Boolean,
     overrideSetTimeout: Boolean,
     pauseBetweenTests: Double,
-    preload: js.Array[js.Any],
+    preload: js.Array[Any],
     runCore: String,
-    start: /* repeated */ js.Any => Unit,
+    start: /* repeated */ Any => Unit,
     subTestTimeout: Double,
     testClass: ITest,
     title: String,
@@ -90,15 +90,15 @@ object IHarness {
   
   extension [Self <: IHarness](x: Self) {
     
-    inline def setAlsoPreload(value: js.Array[js.Any]): Self = StObject.set(x, "alsoPreload", value.asInstanceOf[js.Any])
+    inline def setAlsoPreload(value: js.Array[Any]): Self = StObject.set(x, "alsoPreload", value.asInstanceOf[js.Any])
     
-    inline def setAlsoPreloadVarargs(value: js.Any*): Self = StObject.set(x, "alsoPreload", js.Array(value :_*))
+    inline def setAlsoPreloadVarargs(value: Any*): Self = StObject.set(x, "alsoPreload", js.Array(value*))
     
     inline def setAutoCheckGlobals(value: Boolean): Self = StObject.set(x, "autoCheckGlobals", value.asInstanceOf[js.Any])
     
     inline def setCachePreload(value: Boolean): Self = StObject.set(x, "cachePreload", value.asInstanceOf[js.Any])
     
-    inline def setConfigure(value: js.Any => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
+    inline def setConfigure(value: Any => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
     
     inline def setDefaultTimeout(value: Boolean): Self = StObject.set(x, "defaultTimeout", value.asInstanceOf[js.Any])
     
@@ -106,7 +106,7 @@ object IHarness {
     
     inline def setExpectedGlobals(value: js.Array[String]): Self = StObject.set(x, "expectedGlobals", value.asInstanceOf[js.Any])
     
-    inline def setExpectedGlobalsVarargs(value: String*): Self = StObject.set(x, "expectedGlobals", js.Array(value :_*))
+    inline def setExpectedGlobalsVarargs(value: String*): Self = StObject.set(x, "expectedGlobals", js.Array(value*))
     
     inline def setIsReadyTimeout(value: Double): Self = StObject.set(x, "isReadyTimeout", value.asInstanceOf[js.Any])
     
@@ -114,7 +114,7 @@ object IHarness {
     
     inline def setKeepResults(value: Boolean): Self = StObject.set(x, "keepResults", value.asInstanceOf[js.Any])
     
-    inline def setListenters(value: StringDictionary[js.Function2[/* event */ Event, /* repeated */ js.Any, Unit]]): Self = StObject.set(x, "listenters", value.asInstanceOf[js.Any])
+    inline def setListenters(value: StringDictionary[js.Function2[/* event */ Event, /* repeated */ Any, Unit]]): Self = StObject.set(x, "listenters", value.asInstanceOf[js.Any])
     
     inline def setMaxThreads(value: Double): Self = StObject.set(x, "maxThreads", value.asInstanceOf[js.Any])
     
@@ -124,13 +124,13 @@ object IHarness {
     
     inline def setPauseBetweenTests(value: Double): Self = StObject.set(x, "pauseBetweenTests", value.asInstanceOf[js.Any])
     
-    inline def setPreload(value: js.Array[js.Any]): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+    inline def setPreload(value: js.Array[Any]): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
-    inline def setPreloadVarargs(value: js.Any*): Self = StObject.set(x, "preload", js.Array(value :_*))
+    inline def setPreloadVarargs(value: Any*): Self = StObject.set(x, "preload", js.Array(value*))
     
     inline def setRunCore(value: String): Self = StObject.set(x, "runCore", value.asInstanceOf[js.Any])
     
-    inline def setStart(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* repeated */ Any => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     inline def setSubTestTimeout(value: Double): Self = StObject.set(x, "subTestTimeout", value.asInstanceOf[js.Any])
     

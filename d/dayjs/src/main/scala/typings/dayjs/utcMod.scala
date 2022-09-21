@@ -10,12 +10,12 @@ object utcMod extends Shortcut {
   
   @JSImport("dayjs/esm/plugin/utc", JSImport.Namespace)
   @js.native
-  val ^ : PluginFunc[js.Any] = js.native
+  val ^ : PluginFunc[Any] = js.native
   
-  type _To = PluginFunc[js.Any]
+  type _To = PluginFunc[Any]
   
   /* This means you don't have to write `^`, but can instead just say `utcMod.foo` */
-  override def _to: PluginFunc[js.Any] = ^
+  override def _to: PluginFunc[Any] = ^
   
   /* augmented module */
   object dayjsEsmAugmentingMod {
@@ -30,6 +30,8 @@ object utcMod extends Shortcut {
       def utc(): Dayjs = js.native
       def utc(keepLocalTime: Boolean): Dayjs = js.native
       
+      def utcOffset(offset: String): Dayjs = js.native
+      def utcOffset(offset: String, keepLocalTime: Boolean): Dayjs = js.native
       def utcOffset(offset: Double): Dayjs = js.native
       def utcOffset(offset: Double, keepLocalTime: Boolean): Dayjs = js.native
     }

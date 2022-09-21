@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the format properties for the chart data labels.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartDataLabelFormat")
 @js.native
-class ChartDataLabelFormat ()
+open class ChartDataLabelFormat ()
   extends StObject
      with typings.officeJs.Excel.ChartDataLabelFormat {
   

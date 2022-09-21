@@ -12,7 +12,7 @@ trait AccountsAuthInfoResponse extends StObject {
     */
   var accountIdentifiers: js.UndefOr[js.Array[AccountIdentifier]] = js.undefined
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#accountsAuthInfoResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#accountsAuthInfoResponse`". */
   var kind: js.UndefOr[String] = js.undefined
 }
 object AccountsAuthInfoResponse {
@@ -28,7 +28,7 @@ object AccountsAuthInfoResponse {
     
     inline def setAccountIdentifiersUndefined: Self = StObject.set(x, "accountIdentifiers", js.undefined)
     
-    inline def setAccountIdentifiersVarargs(value: AccountIdentifier*): Self = StObject.set(x, "accountIdentifiers", js.Array(value :_*))
+    inline def setAccountIdentifiersVarargs(value: AccountIdentifier*): Self = StObject.set(x, "accountIdentifiers", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

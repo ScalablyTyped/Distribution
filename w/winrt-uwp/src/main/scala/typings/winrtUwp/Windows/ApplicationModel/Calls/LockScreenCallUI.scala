@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LockScreenCallUI extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_closed(`type`: closed, listener: TypedEventHandler[LockScreenCallUI, js.Any]): Unit = js.native
+  def addEventListener_closed(`type`: closed, listener: TypedEventHandler[LockScreenCallUI, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_endrequested(
     `type`: endrequested,
@@ -29,10 +29,10 @@ trait LockScreenCallUI extends StObject {
   def dismiss(): Unit = js.native
   
   /** Occurs when the lock screen interaction is complete. */
-  def onclosed(ev: js.Any & WinRTEvent[LockScreenCallUI]): Unit = js.native
+  def onclosed(ev: Any & WinRTEvent[LockScreenCallUI]): Unit = js.native
   /** Occurs when the lock screen interaction is complete. */
   @JSName("onclosed")
-  var onclosed_Original: TypedEventHandler[LockScreenCallUI, js.Any] = js.native
+  var onclosed_Original: TypedEventHandler[LockScreenCallUI, Any] = js.native
   
   /** Occurs when the lock screen wants to end the call. */
   def onendrequested(ev: LockScreenCallEndRequestedEventArgs & WinRTEvent[LockScreenCallUI]): Unit = js.native
@@ -40,9 +40,9 @@ trait LockScreenCallUI extends StObject {
   @JSName("onendrequested")
   var onendrequested_Original: TypedEventHandler[LockScreenCallUI, LockScreenCallEndRequestedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_closed(`type`: closed, listener: TypedEventHandler[LockScreenCallUI, js.Any]): Unit = js.native
+  def removeEventListener_closed(`type`: closed, listener: TypedEventHandler[LockScreenCallUI, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_endrequested(
     `type`: endrequested,

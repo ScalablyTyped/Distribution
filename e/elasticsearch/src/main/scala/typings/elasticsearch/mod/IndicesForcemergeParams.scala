@@ -22,7 +22,7 @@ trait IndicesForcemergeParams
   
   var onlyExpungeDeletes: js.UndefOr[Boolean] = js.undefined
   
-  var operationThreading: js.UndefOr[js.Any] = js.undefined
+  var operationThreading: js.UndefOr[Any] = js.undefined
   
   // even the docs don't know what this does
   var waitForMerge: js.UndefOr[Boolean] = js.undefined
@@ -54,7 +54,7 @@ object IndicesForcemergeParams {
     
     inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setMaxNumSegments(value: Double): Self = StObject.set(x, "maxNumSegments", value.asInstanceOf[js.Any])
     
@@ -64,7 +64,7 @@ object IndicesForcemergeParams {
     
     inline def setOnlyExpungeDeletesUndefined: Self = StObject.set(x, "onlyExpungeDeletes", js.undefined)
     
-    inline def setOperationThreading(value: js.Any): Self = StObject.set(x, "operationThreading", value.asInstanceOf[js.Any])
+    inline def setOperationThreading(value: Any): Self = StObject.set(x, "operationThreading", value.asInstanceOf[js.Any])
     
     inline def setOperationThreadingUndefined: Self = StObject.set(x, "operationThreading", js.undefined)
     

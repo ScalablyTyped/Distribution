@@ -1,6 +1,7 @@
 package typings.consoleUi
 
 import typings.consoleUi.anon.Ci
+import typings.inquirer.mod.Answers
 import typings.inquirer.mod.QuestionCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +16,7 @@ object mod {
     */
   @JSImport("console-ui", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with UI {
     def this(options: Ci) = this()
@@ -33,8 +34,8 @@ object mod {
       * Launch the prompt interface (inquiry session) with (Array of Questions || Question)
       * See [Inquirer.js#question](https://github.com/SBoudrias/Inquirer.js#question) for Question properties
       */
-    def prompt[T](questions: QuestionCollection[T]): js.Promise[T] = js.native
-    def prompt[T](questions: QuestionCollection[T], callback: js.Function1[/* answers */ T, Unit]): js.Promise[T] = js.native
+    def prompt[T /* <: Answers */](questions: QuestionCollection[T]): js.Promise[T] = js.native
+    def prompt[T /* <: Answers */](questions: QuestionCollection[T], callback: js.Function1[/* answers */ T, Unit]): js.Promise[T] = js.native
     
     /**
       * Sets the write level for the UI. Valid write levels are 'DEBUG', 'INFO',

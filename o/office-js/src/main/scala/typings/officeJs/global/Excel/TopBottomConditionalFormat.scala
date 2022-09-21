@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a top/bottom conditional format.
   *
-  * Represents a Top/Bottom conditional format.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.TopBottomConditionalFormat")
 @js.native
-class TopBottomConditionalFormat ()
+open class TopBottomConditionalFormat ()
   extends StObject
      with typings.officeJs.Excel.TopBottomConditionalFormat {
   

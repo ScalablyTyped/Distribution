@@ -106,6 +106,9 @@ object Geometry {
   
   inline def create(`type`: Double): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
+  inline def fromGeoJson(geojson: js.Object): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGeoJson")(geojson.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  inline def fromGeoJson(geojson: js.Object, srs: SpatialReference): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromGeoJson")(geojson.asInstanceOf[js.Any], srs.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+  
   inline def fromWKB(wkb: Double): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWKB")(wkb.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   inline def fromWKB(wkb: Double, srs: SpatialReference): Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWKB")(wkb.asInstanceOf[js.Any], srs.asInstanceOf[js.Any])).asInstanceOf[Geometry]
   

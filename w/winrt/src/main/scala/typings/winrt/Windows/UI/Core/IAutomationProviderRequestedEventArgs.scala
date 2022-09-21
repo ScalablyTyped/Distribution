@@ -8,17 +8,17 @@ trait IAutomationProviderRequestedEventArgs
   extends StObject
      with ICoreWindowEventArgs {
   
-  var automationProvider: js.Any
+  var automationProvider: Any
 }
 object IAutomationProviderRequestedEventArgs {
   
-  inline def apply(automationProvider: js.Any, handled: Boolean): IAutomationProviderRequestedEventArgs = {
+  inline def apply(automationProvider: Any, handled: Boolean): IAutomationProviderRequestedEventArgs = {
     val __obj = js.Dynamic.literal(automationProvider = automationProvider.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAutomationProviderRequestedEventArgs]
   }
   
   extension [Self <: IAutomationProviderRequestedEventArgs](x: Self) {
     
-    inline def setAutomationProvider(value: js.Any): Self = StObject.set(x, "automationProvider", value.asInstanceOf[js.Any])
+    inline def setAutomationProvider(value: Any): Self = StObject.set(x, "automationProvider", value.asInstanceOf[js.Any])
   }
 }

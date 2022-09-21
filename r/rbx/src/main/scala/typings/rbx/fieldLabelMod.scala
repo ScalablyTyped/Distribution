@@ -65,7 +65,7 @@ object fieldLabelMod {
   
   @JSImport("rbx/elements/form/field-label", "FieldLabel")
   @js.native
-  val FieldLabel: ForwardRefAsExoticComponent[FieldLabelProps, ElementType[js.Any]] = js.native
+  val FieldLabel: ForwardRefAsExoticComponent[FieldLabelProps, ElementType[Any]] = js.native
   
   trait FieldLabelModifierProps extends StObject {
     

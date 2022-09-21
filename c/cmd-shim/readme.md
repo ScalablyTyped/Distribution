@@ -1,7 +1,7 @@
 
 # Scala.js typings for cmd-shim
 
-Typings are for version 2.0
+Typings are for version 5.0
 
 ## Library description:
 Used in npm for command line application support
@@ -10,10 +10,10 @@ Used in npm for command line application support
 | ------------------ | :-------------: |
 | Full name          | cmd-shim |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 127 |
-| # downloads        | 43246460 |
-| # stars            | 4 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 8831392.333333334 |
+| # stars            | 65.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/cmd-shim#readme)

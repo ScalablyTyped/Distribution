@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BasemapToggleViewModelConstructor
   extends StObject
-     with Instantiable0[BasemapToggleViewModel]
+     with /**
+  * Provides the logic for the [BasemapToggle](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle-BasemapToggleViewModel.html)
+  */
+Instantiable0[BasemapToggleViewModel]
      with Instantiable1[/* properties */ BasemapToggleViewModelProperties, BasemapToggleViewModel] {
   
   /**

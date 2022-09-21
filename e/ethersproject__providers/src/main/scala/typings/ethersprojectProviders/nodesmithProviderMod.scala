@@ -11,10 +11,10 @@ object nodesmithProviderMod {
   
   @JSImport("@ethersproject/providers/lib/nodesmith-provider", "NodesmithProvider")
   @js.native
-  class NodesmithProvider () extends UrlJsonRpcProvider {
+  open class NodesmithProvider () extends UrlJsonRpcProvider {
     def this(network: Networkish) = this()
-    def this(network: Unit, apiKey: js.Any) = this()
-    def this(network: Networkish, apiKey: js.Any) = this()
+    def this(network: Unit, apiKey: Any) = this()
+    def this(network: Networkish, apiKey: Any) = this()
   }
   /* static members */
   object NodesmithProvider {
@@ -23,9 +23,9 @@ object nodesmithProviderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getApiKey(apiKey: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getApiKey(apiKey: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def getUrl(network: Network): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def getUrl(network: Network, apiKey: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getUrl(network: Network, apiKey: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(network.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

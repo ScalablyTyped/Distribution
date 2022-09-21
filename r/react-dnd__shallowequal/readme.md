@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dnd__shallowequal
 
-Typings are for version 2.0.0
+Typings are for version 4.0.2
 
 ## Library description:
 Like lodash isEqualWith but for shallow equal.
@@ -10,15 +10,12 @@ Like lodash isEqualWith but for shallow equal.
 | ------------------ | :-------------: |
 | Full name          | @react-dnd/shallowequal |
 | Keywords           | shallowequal, shallow, equal, isequal, compare, isequalwith |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 10380030 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 3683966.0 |
+| # stars            | 17847.0 |
 
 ## Links
-- [Homepage](https://github.com/react-dnd/shallowequal#readme)
-- [Bugs](https://github.com/react-dnd/shallowequal/issues)
-- [Repository](https://github.com/react-dnd/shallowequal)
 - [Npm](https://www.npmjs.com/package/%40react-dnd%2Fshallowequal)
     
 

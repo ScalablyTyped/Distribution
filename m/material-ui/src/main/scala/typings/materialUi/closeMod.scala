@@ -10,10 +10,10 @@ object closeMod {
   
   @JSImport("material-ui/svg-icons/navigation/close", JSImport.Default)
   @js.native
-  class default () extends NavigationClose
+  open class default () extends NavigationClose
   
   @JSImport("material-ui/svg-icons/navigation/close", "NavigationClose")
   @js.native
-  class NavigationClose ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationClose ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

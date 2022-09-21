@@ -10,10 +10,10 @@ object cloudQueueMod {
   
   @JSImport("material-ui/svg-icons/file/cloud-queue", JSImport.Default)
   @js.native
-  class default () extends FileCloudQueue
+  open class default () extends FileCloudQueue
   
   @JSImport("material-ui/svg-icons/file/cloud-queue", "FileCloudQueue")
   @js.native
-  class FileCloudQueue ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class FileCloudQueue ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

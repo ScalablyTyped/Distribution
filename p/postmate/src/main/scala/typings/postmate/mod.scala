@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("postmate", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Promise[ParentAPI] {
     /**
@@ -32,7 +32,7 @@ object mod {
     */
   @JSImport("postmate", "Model")
   @js.native
-  class Model protected ()
+  open class Model protected ()
     extends StObject
        with Promise[ChildAPI] {
     /**
@@ -41,7 +41,7 @@ object mod {
       * @param model An object of gettable properties to expose to the parent. Value types may be anything
       * accepted in postMessage. Promises may also be set as values or returned from functions. Default: {}
       */
-    def this(model: js.Any) = this()
+    def this(model: Any) = this()
   }
   
   /**
@@ -50,8 +50,8 @@ object mod {
   /* static member */
   @JSImport("postmate", "Promise")
   @js.native
-  def Promise: js.Promise[js.Any] = js.native
-  inline def Promise_=(x: js.Promise[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
+  def Promise: js.Promise[Any] = js.native
+  inline def Promise_=(x: js.Promise[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
   
   /**
     * Set to true to enable logging of additional information. Default: false
@@ -75,7 +75,7 @@ object mod {
       * @param data event data
       */
     def emit(name: String): Unit = js.native
-    def emit(name: String, data: js.Any): Unit = js.native
+    def emit(name: String, data: Any): Unit = js.native
   }
   
   /**
@@ -91,7 +91,7 @@ object mod {
       * @param data The optional data to send to the child function
       */
     def call(key: String): Unit = js.native
-    def call(key: String, data: js.Any): Unit = js.native
+    def call(key: String, data: Any): Unit = js.native
     
     /**
       * Removes the iFrame element and destroys any message event listeners
@@ -109,7 +109,7 @@ object mod {
       * @param key The string property to lookup in the child's model
       * @returns child model property value
       */
-    def get(key: String): js.Promise[js.Any] = js.native
+    def get(key: String): js.Promise[Any] = js.native
     
     /**
       * Listen to a particular event from the child
@@ -117,7 +117,7 @@ object mod {
       * @param eventName the name of the event
       * @param callback the event handler function
       */
-    def on(eventName: String, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def on(eventName: String, callback: js.Function1[/* data */ js.UndefOr[Any], Unit]): Unit = js.native
   }
   
   type Postmate = js.Promise[ParentAPI]
@@ -140,7 +140,7 @@ object mod {
     /**
       * An object literal to represent the default values of the child's model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /**
       * A name which is used for the name attribute of the created iFrame
@@ -165,7 +165,7 @@ object mod {
       
       inline def setClassListArrayUndefined: Self = StObject.set(x, "classListArray", js.undefined)
       
-      inline def setClassListArrayVarargs(value: String*): Self = StObject.set(x, "classListArray", js.Array(value :_*))
+      inline def setClassListArrayVarargs(value: String*): Self = StObject.set(x, "classListArray", js.Array(value*))
       
       inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -173,7 +173,7 @@ object mod {
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       

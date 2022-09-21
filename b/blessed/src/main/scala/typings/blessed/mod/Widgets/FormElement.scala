@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("blessed", "Widgets.FormElement")
 @js.native
-class FormElement[TFormData] protected () extends BoxElement {
+open class FormElement[TFormData] protected () extends BoxElement {
   def this(opts: FormOptions) = this()
   
   /**
@@ -27,10 +27,7 @@ class FormElement[TFormData] protected () extends BoxElement {
     */
   def focusPrevious(): Unit = js.native
   
-  @JSName("on")
-  def on_cancel(event: cancel, callback: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_reset(event: reset, callback: js.Function0[Unit]): this.type = js.native
+  def on(event: cancel | reset, callback: js.Function0[Unit]): this.type = js.native
   /** Form is submitted. Receives a data object. */
   @JSName("on")
   def on_submit(event: submit, callback: js.Function1[/* out */ TFormData, Unit]): this.type = js.native

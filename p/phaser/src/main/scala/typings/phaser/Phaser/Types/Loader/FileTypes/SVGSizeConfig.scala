@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.Types.Loader.FileTypes
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait SVGSizeConfig extends StObject {
   /**
     * An optional height. The SVG will be resized to this size before being rendered to a texture.
     */
-  var height: js.UndefOr[integer] = js.undefined
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * An optional scale. If given it overrides the width / height properties. The SVG is scaled by the scale factor before being rendered to a texture.
@@ -20,7 +19,7 @@ trait SVGSizeConfig extends StObject {
   /**
     * An optional width. The SVG will be resized to this size before being rendered to a texture.
     */
-  var width: js.UndefOr[integer] = js.undefined
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SVGSizeConfig {
   
@@ -31,7 +30,7 @@ object SVGSizeConfig {
   
   extension [Self <: SVGSizeConfig](x: Self) {
     
-    inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
@@ -39,7 +38,7 @@ object SVGSizeConfig {
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    inline def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

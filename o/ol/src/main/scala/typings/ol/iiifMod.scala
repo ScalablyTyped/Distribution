@@ -15,7 +15,7 @@ object iiifMod {
   
   @JSImport("ol/source/IIIF", JSImport.Default)
   @js.native
-  class default () extends IIIF {
+  open class default () extends IIIF {
     def this(opt_options: Options) = this()
   }
   
@@ -31,7 +31,7 @@ object iiifMod {
     
     var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[Null | String] = js.undefined
     
     var extent: js.UndefOr[Extent] = js.undefined
     
@@ -86,13 +86,15 @@ object iiifMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       
       inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -124,7 +126,7 @@ object iiifMod {
       
       inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
       
-      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value*))
       
       inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,7 @@ object iiifMod {
       
       inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
       
-      inline def setSizesVarargs(value: Size*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+      inline def setSizesVarargs(value: Size*): Self = StObject.set(x, "sizes", js.Array(value*))
       
       inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,7 @@ object iiifMod {
       
       inline def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
       
-      inline def setSupportsVarargs(value: String*): Self = StObject.set(x, "supports", js.Array(value :_*))
+      inline def setSupportsVarargs(value: String*): Self = StObject.set(x, "supports", js.Array(value*))
       
       inline def setTilePixelRatio(value: Double): Self = StObject.set(x, "tilePixelRatio", value.asInstanceOf[js.Any])
       

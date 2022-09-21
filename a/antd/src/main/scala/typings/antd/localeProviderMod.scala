@@ -1,17 +1,23 @@
 package typings.antd
 
+import typings.antd.anon.Back
+import typings.antd.anon.Copied
 import typings.antd.anon.DefaultValidateMessages
+import typings.antd.anon.Localeexistbooleanundefin
 import typings.antd.anon.PartialTransferLocale
-import typings.antd.anon.`0`
+import typings.antd.anon.Preview
+import typings.antd.anon.`3`
 import typings.antd.emptyMod.TransferLocale
 import typings.antd.generatePickerMod.PickerLocale
 import typings.antd.localeMod.ModalLocale
-import typings.antd.paginationPaginationMod.PaginationLocale
-import typings.antd.popconfirmMod.PopconfirmLocale
+import typings.antd.purePanelMod.PopconfirmLocale
 import typings.antd.tableInterfaceMod.TableLocale
 import typings.antd.uploadInterfaceMod.UploadLocale
+import typings.memoizeOne.mod.MemoizedFn
+import typings.rcPagination.mod.PaginationLocale
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +26,7 @@ object localeProviderMod {
   
   @JSImport("antd/lib/locale-provider", JSImport.Default)
   @js.native
-  class default protected () extends LocaleProvider {
+  open class default protected () extends LocaleProvider {
     def this(props: LocaleProviderProps) = this()
   }
   /* static members */
@@ -32,8 +38,8 @@ object localeProviderMod {
     
     @JSImport("antd/lib/locale-provider", "default.defaultProps")
     @js.native
-    def defaultProps: `0` = js.native
-    inline def defaultProps_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: `3` = js.native
+    inline def defaultProps_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("antd/lib/locale-provider", "ANT_MARK")
@@ -42,7 +48,7 @@ object localeProviderMod {
   
   trait Locale extends StObject {
     
-    var Calendar: js.UndefOr[js.Object] = js.undefined
+    var Calendar: js.UndefOr[Record[String, Any]] = js.undefined
     
     var DatePicker: js.UndefOr[PickerLocale] = js.undefined
     
@@ -50,29 +56,31 @@ object localeProviderMod {
     
     var Form: js.UndefOr[DefaultValidateMessages] = js.undefined
     
-    var Icon: js.UndefOr[js.Object] = js.undefined
+    var Icon: js.UndefOr[Record[String, Any]] = js.undefined
+    
+    var Image: js.UndefOr[Preview] = js.undefined
     
     var Modal: js.UndefOr[ModalLocale] = js.undefined
     
-    var PageHeader: js.UndefOr[js.Object] = js.undefined
+    var PageHeader: js.UndefOr[Back] = js.undefined
     
     var Pagination: js.UndefOr[PaginationLocale] = js.undefined
     
     var Popconfirm: js.UndefOr[PopconfirmLocale] = js.undefined
     
-    var Select: js.UndefOr[js.Object] = js.undefined
+    var Select: js.UndefOr[Record[String, Any]] = js.undefined
     
     var Table: js.UndefOr[TableLocale] = js.undefined
     
-    var Text: js.UndefOr[js.Object] = js.undefined
+    var Text: js.UndefOr[Copied] = js.undefined
     
-    var TimePicker: js.UndefOr[js.Object] = js.undefined
+    var TimePicker: js.UndefOr[Record[String, Any]] = js.undefined
     
     var Transfer: js.UndefOr[PartialTransferLocale] = js.undefined
     
     var Upload: js.UndefOr[UploadLocale] = js.undefined
     
-    var global: js.UndefOr[js.Object] = js.undefined
+    var global: js.UndefOr[Record[String, Any]] = js.undefined
     
     var locale: String
   }
@@ -85,7 +93,7 @@ object localeProviderMod {
     
     extension [Self <: Locale](x: Self) {
       
-      inline def setCalendar(value: js.Object): Self = StObject.set(x, "Calendar", value.asInstanceOf[js.Any])
+      inline def setCalendar(value: Record[String, Any]): Self = StObject.set(x, "Calendar", value.asInstanceOf[js.Any])
       
       inline def setCalendarUndefined: Self = StObject.set(x, "Calendar", js.undefined)
       
@@ -101,13 +109,17 @@ object localeProviderMod {
       
       inline def setFormUndefined: Self = StObject.set(x, "Form", js.undefined)
       
-      inline def setGlobal(value: js.Object): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Record[String, Any]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
       inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      inline def setIcon(value: js.Object): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Record[String, Any]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
+      
+      inline def setImage(value: Preview): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+      
+      inline def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -115,7 +127,7 @@ object localeProviderMod {
       
       inline def setModalUndefined: Self = StObject.set(x, "Modal", js.undefined)
       
-      inline def setPageHeader(value: js.Object): Self = StObject.set(x, "PageHeader", value.asInstanceOf[js.Any])
+      inline def setPageHeader(value: Back): Self = StObject.set(x, "PageHeader", value.asInstanceOf[js.Any])
       
       inline def setPageHeaderUndefined: Self = StObject.set(x, "PageHeader", js.undefined)
       
@@ -127,7 +139,7 @@ object localeProviderMod {
       
       inline def setPopconfirmUndefined: Self = StObject.set(x, "Popconfirm", js.undefined)
       
-      inline def setSelect(value: js.Object): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: Record[String, Any]): Self = StObject.set(x, "Select", value.asInstanceOf[js.Any])
       
       inline def setSelectUndefined: Self = StObject.set(x, "Select", js.undefined)
       
@@ -135,11 +147,11 @@ object localeProviderMod {
       
       inline def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
       
-      inline def setText(value: js.Object): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+      inline def setText(value: Copied): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
       
       inline def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
       
-      inline def setTimePicker(value: js.Object): Self = StObject.set(x, "TimePicker", value.asInstanceOf[js.Any])
+      inline def setTimePicker(value: Record[String, Any]): Self = StObject.set(x, "TimePicker", value.asInstanceOf[js.Any])
       
       inline def setTimePickerUndefined: Self = StObject.set(x, "TimePicker", js.undefined)
       
@@ -154,14 +166,18 @@ object localeProviderMod {
   }
   
   @js.native
-  trait LocaleProvider
-    extends Component[LocaleProviderProps, js.Any, js.Any] {
+  trait LocaleProvider extends Component[LocaleProviderProps, Any, Any] {
+    
+    @JSName("componentDidMount")
+    def componentDidMount_MLocaleProvider(): Unit = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MLocaleProvider(prevProps: LocaleProviderProps): Unit = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MLocaleProvider(): Unit = js.native
+    
+    var getMemoizedContextValue: MemoizedFn[js.Function1[/* localeValue */ Locale, Localeexistbooleanundefin]] = js.native
   }
   
   trait LocaleProviderProps extends StObject {

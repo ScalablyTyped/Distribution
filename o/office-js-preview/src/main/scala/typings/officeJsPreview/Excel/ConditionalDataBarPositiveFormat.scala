@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a conditional format for the positive side of the data bar.
   *
-  * Represents a conditional format DataBar Format for the positive side of the data bar.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @js.native
@@ -22,10 +22,10 @@ trait ConditionalDataBarPositiveFormat
      with ClientObject {
   
   /**
+    * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+    Value is "" (an empty string) if no border is present or set.
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    "" (empty string) if no border is present or set.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var borderColor: String = js.native
@@ -35,17 +35,17 @@ trait ConditionalDataBarPositiveFormat
   var context_ConditionalDataBarPositiveFormat: RequestContext = js.native
   
   /**
+    * HTML color code representing the fill color, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
-    * HTML color code representing the fill color, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var fillColor: String = js.native
   
   /**
+    * Specifies if the data bar has a gradient.
     *
-    * Specifies if the DataBar has a gradient.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var gradientFill: Boolean = js.native
@@ -63,14 +63,8 @@ trait ConditionalDataBarPositiveFormat
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ConditionalDataBarPositiveFormat): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ConditionalDataBarPositiveFormat): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

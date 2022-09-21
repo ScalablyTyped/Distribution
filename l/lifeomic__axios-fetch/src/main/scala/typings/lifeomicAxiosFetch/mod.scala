@@ -1,10 +1,10 @@
 package typings.lifeomicAxiosFetch
 
-import typings.axios.mod.AxiosInstance
-import typings.axios.mod.AxiosTransformer
-import typings.nodeFetch.mod.RequestInfo
-import typings.nodeFetch.mod.RequestInit
-import typings.nodeFetch.mod.Response
+import typings.lifeomicAxiosFetch.axiosTypesMod.AxiosInstance
+import typings.lifeomicAxiosFetch.axiosTypesMod.AxiosRequestConfig
+import typings.std.RequestInfo
+import typings.std.RequestInit
+import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,6 +15,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def buildAxiosFetch(axios: AxiosInstance): js.Function2[/* url */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildAxiosFetch")(axios.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* url */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]]]
-  inline def buildAxiosFetch(axios: AxiosInstance, transformer: AxiosTransformer): js.Function2[/* url */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildAxiosFetch")(axios.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* url */ RequestInfo, /* init */ js.UndefOr[RequestInit], js.Promise[Response]]]
+  inline def buildAxiosFetch[Init /* <: RequestInit */](axios: AxiosInstance): js.Function2[/* input */ RequestInfo, /* init */ js.UndefOr[Init], js.Promise[Response]] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildAxiosFetch")(axios.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* input */ RequestInfo, /* init */ js.UndefOr[Init], js.Promise[Response]]]
+  inline def buildAxiosFetch[Init /* <: RequestInit */](axios: AxiosInstance, transformer: AxiosTransformer[Init]): js.Function2[/* input */ RequestInfo, /* init */ js.UndefOr[Init], js.Promise[Response]] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildAxiosFetch")(axios.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* input */ RequestInfo, /* init */ js.UndefOr[Init], js.Promise[Response]]]
+  
+  type AxiosTransformer[Init /* <: RequestInit */] = js.Function3[
+    /* config */ AxiosRequestConfig, 
+    /* input */ RequestInfo, 
+    /* init */ js.UndefOr[Init], 
+    AxiosRequestConfig
+  ]
 }

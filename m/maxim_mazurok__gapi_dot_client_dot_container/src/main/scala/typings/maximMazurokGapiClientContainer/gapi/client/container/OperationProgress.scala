@@ -34,7 +34,7 @@ object OperationProgress {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -44,7 +44,7 @@ object OperationProgress {
     
     inline def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
     
-    inline def setStagesVarargs(value: OperationProgress*): Self = StObject.set(x, "stages", js.Array(value :_*))
+    inline def setStagesVarargs(value: OperationProgress*): Self = StObject.set(x, "stages", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

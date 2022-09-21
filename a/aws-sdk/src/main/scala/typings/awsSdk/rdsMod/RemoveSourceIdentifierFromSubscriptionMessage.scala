@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RemoveSourceIdentifierFromSubscriptionMessage extends StObject {
   
   /**
-    *  The source identifier to be removed from the subscription, such as the DB instance identifier for a DB instance or the name of a security group. 
+    * The source identifier to be removed from the subscription, such as the DB instance identifier for a DB instance or the name of a security group.
     */
   var SourceIdentifier: String
   

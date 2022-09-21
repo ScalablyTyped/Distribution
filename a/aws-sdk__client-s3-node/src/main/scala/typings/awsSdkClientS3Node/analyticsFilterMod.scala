@@ -8,5 +8,5 @@ object analyticsFilterMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_AnalyticsFilter", "_AnalyticsFilter")
   @js.native
-  val AnalyticsFilter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val AnalyticsFilter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

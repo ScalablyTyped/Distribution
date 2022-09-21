@@ -10,7 +10,7 @@ trait Point extends StObject {
   
   var point: typings.bmapgl.BMapGL.Point
   
-  var target: js.Any
+  var target: Any
   
   var `type`: String
   
@@ -21,7 +21,7 @@ object Point {
   inline def apply(
     pixel: typings.bmapgl.BMapGL.Pixel,
     point: typings.bmapgl.BMapGL.Point,
-    target: js.Any,
+    target: Any,
     `type`: String,
     zoom: Double
   ): Point = {
@@ -36,7 +36,7 @@ object Point {
     
     inline def setPoint(value: typings.bmapgl.BMapGL.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

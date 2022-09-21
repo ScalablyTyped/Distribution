@@ -14,7 +14,7 @@ trait InsightEvent extends StObject {
   /**
     * The time, in Unix seconds, at which the event was recorded.
     */
-  var EventTime: js.UndefOr[Timestamp] = js.undefined
+  var EventTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The impact statistics of the root cause service. This includes the number of requests to the client service and whether the requests were faults or okay.
@@ -44,7 +44,7 @@ object InsightEvent {
     
     inline def setClientRequestImpactStatisticsUndefined: Self = StObject.set(x, "ClientRequestImpactStatistics", js.undefined)
     
-    inline def setEventTime(value: Timestamp): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
+    inline def setEventTime(value: js.Date): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
     
     inline def setEventTimeUndefined: Self = StObject.set(x, "EventTime", js.undefined)
     
@@ -60,6 +60,6 @@ object InsightEvent {
     
     inline def setTopAnomalousServicesUndefined: Self = StObject.set(x, "TopAnomalousServices", js.undefined)
     
-    inline def setTopAnomalousServicesVarargs(value: AnomalousService*): Self = StObject.set(x, "TopAnomalousServices", js.Array(value :_*))
+    inline def setTopAnomalousServicesVarargs(value: AnomalousService*): Self = StObject.set(x, "TopAnomalousServices", js.Array(value*))
   }
 }

@@ -25,7 +25,7 @@ object anon {
       
       inline def setRenderedClassNames(value: js.Array[String]): Self = StObject.set(x, "renderedClassNames", value.asInstanceOf[js.Any])
       
-      inline def setRenderedClassNamesVarargs(value: String*): Self = StObject.set(x, "renderedClassNames", js.Array(value :_*))
+      inline def setRenderedClassNamesVarargs(value: String*): Self = StObject.set(x, "renderedClassNames", js.Array(value*))
     }
   }
   

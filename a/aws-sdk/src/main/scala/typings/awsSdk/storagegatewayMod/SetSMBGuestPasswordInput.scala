@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetSMBGuestPasswordInput extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the file gateway the SMB file share is associated with.
+    * The Amazon Resource Name (ARN) of the S3 File Gateway the SMB file share is associated with.
     */
   var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN
   

@@ -9,10 +9,10 @@ trait DescribeHumanLoopResponse extends StObject {
   /**
     * The creation time when Amazon Augmented AI created the human loop.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
-    * A failure code that identifies the type of failure.
+    * A failure code that identifies the type of failure. Possible values: ValidationError, Expired, InternalError 
     */
   var FailureCode: js.UndefOr[String] = js.undefined
   
@@ -49,7 +49,7 @@ trait DescribeHumanLoopResponse extends StObject {
 object DescribeHumanLoopResponse {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     FlowDefinitionArn: FlowDefinitionArn,
     HumanLoopArn: HumanLoopArn,
     HumanLoopName: HumanLoopName,
@@ -61,7 +61,7 @@ object DescribeHumanLoopResponse {
   
   extension [Self <: DescribeHumanLoopResponse](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setFailureCode(value: String): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
     

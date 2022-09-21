@@ -35,7 +35,7 @@ object global {
     
     @JSGlobal("MSForms.CheckBox")
     @js.native
-    /* private */ class CheckBox ()
+    /* private */ open class CheckBox ()
       extends StObject
          with typings.activexMsforms.MSForms.CheckBox {
       
@@ -131,7 +131,7 @@ object global {
       override val Valid: Boolean = js.native
       
       /* CompleteClass */
-      var Value: js.Any = js.native
+      var Value: Any = js.native
       
       /* CompleteClass */
       var WordWrap: Boolean = js.native
@@ -142,13 +142,13 @@ object global {
     
     @JSGlobal("MSForms.ComboBox")
     @js.native
-    /* private */ class ComboBox ()
+    /* private */ open class ComboBox ()
       extends StObject
          with typings.activexMsforms.MSForms.ComboBox
     
     @JSGlobal("MSForms.CommandButton")
     @js.native
-    /* private */ class CommandButton ()
+    /* private */ open class CommandButton ()
       extends StObject
          with typings.activexMsforms.MSForms.CommandButton {
       
@@ -231,25 +231,25 @@ object global {
     
     @JSGlobal("MSForms.Control")
     @js.native
-    /* private */ class Control ()
+    /* private */ open class Control ()
       extends StObject
          with typings.activexMsforms.MSForms.Control
     
     @JSGlobal("MSForms.DataObject")
     @js.native
-    /* private */ class DataObject ()
+    /* private */ open class DataObject ()
       extends StObject
          with typings.activexMsforms.MSForms.DataObject
     
     @JSGlobal("MSForms.Frame")
     @js.native
-    /* private */ class Frame ()
+    /* private */ open class Frame ()
       extends StObject
          with typings.activexMsforms.MSForms.Frame
     
     @JSGlobal("MSForms.HTMLCheckbox")
     @js.native
-    /* private */ class HTMLCheckbox ()
+    /* private */ open class HTMLCheckbox ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLCheckbox {
       
@@ -272,7 +272,7 @@ object global {
     
     @JSGlobal("MSForms.HTMLHidden")
     @js.native
-    /* private */ class HTMLHidden ()
+    /* private */ open class HTMLHidden ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLHidden {
       
@@ -292,7 +292,7 @@ object global {
     
     @JSGlobal("MSForms.HTMLImage")
     @js.native
-    /* private */ class HTMLImage ()
+    /* private */ open class HTMLImage ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLImage {
       
@@ -321,7 +321,7 @@ object global {
     
     @JSGlobal("MSForms.HTMLOption")
     @js.native
-    /* private */ class HTMLOption ()
+    /* private */ open class HTMLOption ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLOption {
       
@@ -347,7 +347,7 @@ object global {
     
     @JSGlobal("MSForms.HTMLPassword")
     @js.native
-    /* private */ class HTMLPassword ()
+    /* private */ open class HTMLPassword ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLPassword {
       
@@ -373,7 +373,7 @@ object global {
     
     @JSGlobal("MSForms.HTMLReset")
     @js.native
-    /* private */ class HTMLReset ()
+    /* private */ open class HTMLReset ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLReset {
       
@@ -393,12 +393,12 @@ object global {
     
     @JSGlobal("MSForms.HTMLSelect")
     @js.native
-    /* private */ class HTMLSelect ()
+    /* private */ open class HTMLSelect ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLSelect {
       
       /* CompleteClass */
-      var DisplayValues: js.Any = js.native
+      var DisplayValues: Any = js.native
       
       /* CompleteClass */
       var HTMLName: String = js.native
@@ -417,12 +417,12 @@ object global {
       var Size: Double = js.native
       
       /* CompleteClass */
-      var Values: js.Any = js.native
+      var Values: Any = js.native
     }
     
     @JSGlobal("MSForms.HTMLSubmit")
     @js.native
-    /* private */ class HTMLSubmit ()
+    /* private */ open class HTMLSubmit ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLSubmit {
       
@@ -451,7 +451,7 @@ object global {
     
     @JSGlobal("MSForms.HTMLText")
     @js.native
-    /* private */ class HTMLText ()
+    /* private */ open class HTMLText ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLText {
       
@@ -477,7 +477,7 @@ object global {
     
     @JSGlobal("MSForms.HTMLTextArea")
     @js.native
-    /* private */ class HTMLTextArea ()
+    /* private */ open class HTMLTextArea ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLTextArea {
       
@@ -503,7 +503,7 @@ object global {
     
     @JSGlobal("MSForms.Image")
     @js.native
-    /* private */ class Image ()
+    /* private */ open class Image ()
       extends StObject
          with typings.activexMsforms.MSForms.Image {
       
@@ -553,7 +553,7 @@ object global {
     
     @JSGlobal("MSForms.Label")
     @js.native
-    /* private */ class Label ()
+    /* private */ open class Label ()
       extends StObject
          with typings.activexMsforms.MSForms.Label {
       
@@ -642,13 +642,13 @@ object global {
     
     @JSGlobal("MSForms.ListBox")
     @js.native
-    /* private */ class ListBox ()
+    /* private */ open class ListBox ()
       extends StObject
          with typings.activexMsforms.MSForms.ListBox
     
     @JSGlobal("MSForms.MultiPage")
     @js.native
-    /* private */ class MultiPage ()
+    /* private */ open class MultiPage ()
       extends StObject
          with typings.activexMsforms.MSForms.MultiPage {
       
@@ -693,7 +693,7 @@ object global {
       var MultiRow: Boolean = js.native
       
       /* CompleteClass */
-      override def Pages(varg: js.Any): js.Any = js.native
+      override def Pages(varg: Any): Any = js.native
       /* CompleteClass */
       @JSName("Pages")
       override val Pages_Original: Pages = js.native
@@ -734,7 +734,7 @@ object global {
     
     @JSGlobal("MSForms.NewFont")
     @js.native
-    /* private */ class NewFont ()
+    /* private */ open class NewFont ()
       extends StObject
          with typings.activexMsforms.MSForms.NewFont {
       
@@ -769,7 +769,7 @@ object global {
     
     @JSGlobal("MSForms.OptionButton")
     @js.native
-    /* private */ class OptionButton ()
+    /* private */ open class OptionButton ()
       extends StObject
          with typings.activexMsforms.MSForms.OptionButton {
       
@@ -865,7 +865,7 @@ object global {
       override val Valid: Boolean = js.native
       
       /* CompleteClass */
-      var Value: js.Any = js.native
+      var Value: Any = js.native
       
       /* CompleteClass */
       var WordWrap: Boolean = js.native
@@ -876,13 +876,13 @@ object global {
     
     @JSGlobal("MSForms.Page")
     @js.native
-    /* private */ class Page ()
+    /* private */ open class Page ()
       extends StObject
          with typings.activexMsforms.MSForms.Page
     
     @JSGlobal("MSForms.ReturnBoolean")
     @js.native
-    /* private */ class ReturnBoolean ()
+    /* private */ open class ReturnBoolean ()
       extends StObject
          with typings.activexMsforms.MSForms.ReturnBoolean {
       
@@ -896,7 +896,7 @@ object global {
     
     @JSGlobal("MSForms.ReturnEffect")
     @js.native
-    /* private */ class ReturnEffect ()
+    /* private */ open class ReturnEffect ()
       extends StObject
          with typings.activexMsforms.MSForms.ReturnEffect {
       
@@ -910,7 +910,7 @@ object global {
     
     @JSGlobal("MSForms.ReturnInteger")
     @js.native
-    /* private */ class ReturnInteger ()
+    /* private */ open class ReturnInteger ()
       extends StObject
          with typings.activexMsforms.MSForms.ReturnInteger {
       
@@ -924,7 +924,7 @@ object global {
     
     @JSGlobal("MSForms.ReturnSingle")
     @js.native
-    /* private */ class ReturnSingle ()
+    /* private */ open class ReturnSingle ()
       extends StObject
          with typings.activexMsforms.MSForms.ReturnSingle {
       
@@ -938,7 +938,7 @@ object global {
     
     @JSGlobal("MSForms.ReturnString")
     @js.native
-    /* private */ class ReturnString ()
+    /* private */ open class ReturnString ()
       extends StObject
          with typings.activexMsforms.MSForms.ReturnString {
       
@@ -952,7 +952,7 @@ object global {
     
     @JSGlobal("MSForms.ScrollBar")
     @js.native
-    /* private */ class ScrollBar ()
+    /* private */ open class ScrollBar ()
       extends StObject
          with typings.activexMsforms.MSForms.ScrollBar {
       
@@ -1002,7 +1002,7 @@ object global {
     
     @JSGlobal("MSForms.SpinButton")
     @js.native
-    /* private */ class SpinButton ()
+    /* private */ open class SpinButton ()
       extends StObject
          with typings.activexMsforms.MSForms.SpinButton {
       
@@ -1046,7 +1046,7 @@ object global {
     
     @JSGlobal("MSForms.Tab")
     @js.native
-    /* private */ class Tab ()
+    /* private */ open class Tab ()
       extends StObject
          with typings.activexMsforms.MSForms.Tab {
       
@@ -1081,7 +1081,7 @@ object global {
     
     @JSGlobal("MSForms.TabStrip")
     @js.native
-    /* private */ class TabStrip ()
+    /* private */ open class TabStrip ()
       extends StObject
          with typings.activexMsforms.MSForms.TabStrip {
       
@@ -1159,7 +1159,7 @@ object global {
       var TabOrientation: fmTabOrientation = js.native
       
       /* CompleteClass */
-      override def Tabs(varg: js.Any): js.Any = js.native
+      override def Tabs(varg: Any): Any = js.native
       /* CompleteClass */
       @JSName("Tabs")
       override val Tabs_Original: Tabs = js.native
@@ -1197,7 +1197,7 @@ object global {
     
     @JSGlobal("MSForms.TextBox")
     @js.native
-    /* private */ class TextBox ()
+    /* private */ open class TextBox ()
       extends StObject
          with typings.activexMsforms.MSForms.TextBox {
       
@@ -1368,7 +1368,7 @@ object global {
       override val Valid: Boolean = js.native
       
       /* CompleteClass */
-      var Value: js.Any = js.native
+      var Value: Any = js.native
       
       /* CompleteClass */
       var WordWrap: Boolean = js.native
@@ -1379,7 +1379,7 @@ object global {
     
     @JSGlobal("MSForms.ToggleButton")
     @js.native
-    /* private */ class ToggleButton ()
+    /* private */ open class ToggleButton ()
       extends StObject
          with typings.activexMsforms.MSForms.ToggleButton {
       
@@ -1475,7 +1475,7 @@ object global {
       override val Valid: Boolean = js.native
       
       /* CompleteClass */
-      var Value: js.Any = js.native
+      var Value: Any = js.native
       
       /* CompleteClass */
       var WordWrap: Boolean = js.native
@@ -1486,7 +1486,7 @@ object global {
     
     @JSGlobal("MSForms.UserForm")
     @js.native
-    /* private */ class UserForm ()
+    /* private */ open class UserForm ()
       extends StObject
          with typings.activexMsforms.MSForms.UserForm
   }

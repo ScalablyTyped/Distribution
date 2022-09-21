@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Border extends StObject {
   
-  /** The color of the border. */
+  /** The color of the border. Deprecated: Use color_style. */
   var color: js.UndefOr[Color] = js.undefined
   
   /** The color of the border. If color is also set, this field takes precedence. */

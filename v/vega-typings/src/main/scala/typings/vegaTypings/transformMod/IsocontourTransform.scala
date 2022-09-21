@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IsocontourTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var as: js.UndefOr[String | Null | SignalRef] = js.undefined
   
@@ -78,13 +78,13 @@ object IsocontourTransform {
     
     inline def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
     
-    inline def setThresholdsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
+    inline def setThresholdsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "thresholds", js.Array(value*))
     
     inline def setTranslate(value: js.Array[Double] | TransformField): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
-    inline def setTranslateVarargs(value: Double*): Self = StObject.set(x, "translate", js.Array(value :_*))
+    inline def setTranslateVarargs(value: Double*): Self = StObject.set(x, "translate", js.Array(value*))
     
     inline def setType(value: isocontour): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

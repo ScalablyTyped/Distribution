@@ -2,7 +2,6 @@ package typings.microsoftAjax.global.Sys
 
 import typings.microsoftAjax.Sys.Net.WebRequest
 import typings.microsoftAjax.Sys.Net.WebRequestExecutor
-import typings.std.Error
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -23,7 +22,7 @@ object WebForms {
     */
   @JSGlobal("Sys.WebForms.BeginRequestEventArgs")
   @js.native
-  class BeginRequestEventArgs protected ()
+  open class BeginRequestEventArgs protected ()
     extends StObject
        with typings.microsoftAjax.Sys.WebForms.BeginRequestEventArgs {
     //#region Constructors
@@ -36,7 +35,7 @@ object WebForms {
       * @param updatePanelsToUpdate
       *           (Optional) A list of UniqueIDs for UpdatePanel controls that are requested to update their rendering by the client. Server-side processing may update additional UpdatePanels.
       */
-    def this(request: WebRequest, postBackElement: js.Any, updatePanelsToUpdate: js.Array[String]) = this()
+    def this(request: WebRequest, postBackElement: Any, updatePanelsToUpdate: js.Array[String]) = this()
     
     /**
       * An object of type EventArgs that is used as a convenient way to specify an empty EventArgs instance.
@@ -48,7 +47,6 @@ object WebForms {
     //#region Properties
     /**
       * Gets the postback element that initiated the asynchronous postback. This property is read-only.
-      * @readonly
       * @return An HTML DOM element.
       */
     /* CompleteClass */
@@ -76,7 +74,7 @@ object WebForms {
     */
   @JSGlobal("Sys.WebForms.EndRequestEventArgs")
   @js.native
-  class EndRequestEventArgs protected ()
+  open class EndRequestEventArgs protected ()
     extends StObject
        with typings.microsoftAjax.Sys.WebForms.EndRequestEventArgs {
     //#region Constructors
@@ -89,7 +87,7 @@ object WebForms {
       * @param response
       *           An object of type Sys.Net.WebRequestExecutor.
       */
-    def this(error: Error, dataItems: js.Any, response: WebRequestExecutor) = this()
+    def this(error: js.Error, dataItems: Any, response: WebRequestExecutor) = this()
     
     /**
       * An object of type EventArgs that is used as a convenient way to specify an empty EventArgs instance.
@@ -105,14 +103,14 @@ object WebForms {
       * @return A JSON data structure that contains name/value pairs that were registered as data items by using the RegisterDataItem method of the ScriptManager class.
       */
     /* CompleteClass */
-    override def get_dataItems(): js.Any = js.native
+    override def get_dataItems(): Any = js.native
     
     /**
       * Gets the Error object.
       * @return A base ECMAScript (JavaScript) Error object.
       */
     /* CompleteClass */
-    override def get_error(): Error = js.native
+    override def get_error(): js.Error = js.native
     
     /**
       * Get or sets a value that indicates whether the error has been handled.
@@ -146,7 +144,7 @@ object WebForms {
     */
   @JSGlobal("Sys.WebForms.InitializeRequestEventArgs")
   @js.native
-  class InitializeRequestEventArgs protected ()
+  open class InitializeRequestEventArgs protected ()
     extends StObject
        with typings.microsoftAjax.Sys.WebForms.InitializeRequestEventArgs {
     //#region Constructors
@@ -159,7 +157,7 @@ object WebForms {
       * @param updatePanelsToUpdate
       *           (Optional) A list of UniqueID values for UpdatePanel controls that are being requested to update their rendering by the client. Server-side processing might update additional UpdatePanel controls.
       */
-    def this(request: WebRequest, postBackElement: js.Any, updatePanelsToUpdate: js.Array[String]) = this()
+    def this(request: WebRequest, postBackElement: Any, updatePanelsToUpdate: js.Array[String]) = this()
     
     /**
       * An object of type EventArgs that is used as a convenient way to specify an empty EventArgs instance.
@@ -202,7 +200,7 @@ object WebForms {
   /**
     * Initializes a new instance of the PageLoadedEventArgs class.
     */
-  class PageLoadedEventArgs ()
+  open class PageLoadedEventArgs ()
     extends StObject
        with typings.microsoftAjax.Sys.WebForms.PageLoadedEventArgs {
     
@@ -223,7 +221,7 @@ object WebForms {
       * @return A JSON data structure that contains name/value pairs that were registered as data items that use the RegisterDataItem method of the ScriptManager class.
       */
     /* CompleteClass */
-    override def get_dataItems(): js.Any = js.native
+    override def get_dataItems(): Any = js.native
     
     /**
       * Gets an array of HTML div elements that represent UpdatePanel controls that were created when the DOM was updated during the last asynchronous postback.
@@ -254,7 +252,7 @@ object WebForms {
   /**
     * Initializes a new instance of the PageLoadingEventArgs class.
     */
-  class PageLoadingEventArgs ()
+  open class PageLoadingEventArgs ()
     extends StObject
        with typings.microsoftAjax.Sys.WebForms.PageLoadingEventArgs {
     
@@ -275,7 +273,7 @@ object WebForms {
       * @return A JSON data structure that contains name/value pairs that were registered as data items by using the RegisterDataItem method of the ScriptManager class.
       */
     /* CompleteClass */
-    override def get_dataItems(): js.Any = js.native
+    override def get_dataItems(): Any = js.native
     
     /**
       * Gets an array of HTML <div> elements that represent UpdatePanel controls that will be deleted from the DOM as a result of the current asynchronous postback.
@@ -306,7 +304,7 @@ object WebForms {
   /**
     * Initializes a new instance of the Sys.WebForms.PageRequestManager Class.
     */
-  class PageRequestManager ()
+  open class PageRequestManager ()
     extends StObject
        with typings.microsoftAjax.Sys.WebForms.PageRequestManager
   object PageRequestManager {
@@ -334,7 +332,7 @@ object WebForms {
     */
   @JSGlobal("Sys.WebForms.PageRequestManagerParserErrorException")
   @js.native
-  class PageRequestManagerParserErrorException ()
+  open class PageRequestManagerParserErrorException ()
     extends StObject
        with typings.microsoftAjax.Sys.WebForms.PageRequestManagerParserErrorException
   
@@ -347,7 +345,7 @@ object WebForms {
     */
   @JSGlobal("Sys.WebForms.PageRequestManagerServerErrorException")
   @js.native
-  class PageRequestManagerServerErrorException ()
+  open class PageRequestManagerServerErrorException ()
     extends StObject
        with typings.microsoftAjax.Sys.WebForms.PageRequestManagerServerErrorException
   
@@ -360,7 +358,7 @@ object WebForms {
     */
   @JSGlobal("Sys.WebForms.PageRequestManagerTimeoutException")
   @js.native
-  class PageRequestManagerTimeoutException ()
+  open class PageRequestManagerTimeoutException ()
     extends StObject
        with typings.microsoftAjax.Sys.WebForms.PageRequestManagerTimeoutException
 }

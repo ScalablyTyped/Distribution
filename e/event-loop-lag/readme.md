@@ -10,10 +10,10 @@ Measure event loop lag
 | ------------------ | :-------------: |
 | Full name          | event-loop-lag |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 691910 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 132819.66666666666 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/pebble/event-loop-lag#readme)

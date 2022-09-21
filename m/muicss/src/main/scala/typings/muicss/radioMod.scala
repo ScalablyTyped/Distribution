@@ -10,8 +10,8 @@ object radioMod {
   
   @JSImport("muicss/lib/react/radio", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[RadioProps, js.Object, js.Any]
+  open class default ()
+    extends Component[RadioProps, js.Object, Any]
   
-  type Radio = Component[RadioProps, js.Object, js.Any]
+  type Radio = Component[RadioProps, js.Object, Any]
 }

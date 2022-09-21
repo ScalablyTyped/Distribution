@@ -10,10 +10,10 @@ object gamepadMod {
   
   @JSImport("material-ui/svg-icons/hardware/gamepad", JSImport.Default)
   @js.native
-  class default () extends HardwareGamepad
+  open class default () extends HardwareGamepad
   
   @JSImport("material-ui/svg-icons/hardware/gamepad", "HardwareGamepad")
   @js.native
-  class HardwareGamepad ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareGamepad ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -10,10 +10,10 @@ Concats a list of videos together using ffmpeg with sexy OpenGL transitions.
 | ------------------ | :-------------: |
 | Full name          | ffmpeg-concat |
 | Keywords           | ffmpeg, fluent-ffmpeg, opengl, gl, gl-transition, transition, concat, concatenate, video |
-| # releases         | 10 |
-| # dependents       | 4 |
-| # downloads        | 11001 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1102.3333333333333 |
+| # stars            | 616.0 |
 
 ## Links
 - [Homepage](https://github.com/transitive-bullshit/ffmpeg-concat#readme)

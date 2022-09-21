@@ -28,18 +28,18 @@ object Metrics {
     
     inline def setActiveUsersUndefined: Self = StObject.set(x, "activeUsers", js.undefined)
     
-    inline def setActiveUsersVarargs(value: MetricsValue*): Self = StObject.set(x, "activeUsers", js.Array(value :_*))
+    inline def setActiveUsersVarargs(value: MetricsValue*): Self = StObject.set(x, "activeUsers", js.Array(value*))
     
     inline def setFailedExecutions(value: js.Array[MetricsValue]): Self = StObject.set(x, "failedExecutions", value.asInstanceOf[js.Any])
     
     inline def setFailedExecutionsUndefined: Self = StObject.set(x, "failedExecutions", js.undefined)
     
-    inline def setFailedExecutionsVarargs(value: MetricsValue*): Self = StObject.set(x, "failedExecutions", js.Array(value :_*))
+    inline def setFailedExecutionsVarargs(value: MetricsValue*): Self = StObject.set(x, "failedExecutions", js.Array(value*))
     
     inline def setTotalExecutions(value: js.Array[MetricsValue]): Self = StObject.set(x, "totalExecutions", value.asInstanceOf[js.Any])
     
     inline def setTotalExecutionsUndefined: Self = StObject.set(x, "totalExecutions", js.undefined)
     
-    inline def setTotalExecutionsVarargs(value: MetricsValue*): Self = StObject.set(x, "totalExecutions", js.Array(value :_*))
+    inline def setTotalExecutionsVarargs(value: MetricsValue*): Self = StObject.set(x, "totalExecutions", js.Array(value*))
   }
 }

@@ -10,7 +10,7 @@ trait ValueCount extends StObject {
   var count: js.UndefOr[Double] = js.undefined
   
   /** The return value of the expression */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object ValueCount {
   
@@ -25,7 +25,7 @@ object ValueCount {
     
     inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

@@ -8,10 +8,10 @@
 | ------------------ | :-------------: |
 | Full name          | filesystem |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 48321 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3108.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/filesystem)

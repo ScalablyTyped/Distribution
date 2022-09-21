@@ -179,7 +179,7 @@ object ToolComponent {
     
     inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     
-    inline def setContentsVarargs(value: contents*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: contents*): Self = StObject.set(x, "contents", js.Array(value*))
     
     inline def setDottedQuadFileVersion(value: String): Self = StObject.set(x, "dottedQuadFileVersion", value.asInstanceOf[js.Any])
     
@@ -225,7 +225,7 @@ object ToolComponent {
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: ArtifactLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: ArtifactLocation*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setMinimumRequiredLocalizedDataSemanticVersion(value: String): Self = StObject.set(x, "minimumRequiredLocalizedDataSemanticVersion", value.asInstanceOf[js.Any])
     
@@ -237,7 +237,7 @@ object ToolComponent {
     
     inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
     
-    inline def setNotificationsVarargs(value: ReportingDescriptor*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+    inline def setNotificationsVarargs(value: ReportingDescriptor*): Self = StObject.set(x, "notifications", js.Array(value*))
     
     inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
@@ -263,7 +263,7 @@ object ToolComponent {
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: ReportingDescriptor*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: ReportingDescriptor*): Self = StObject.set(x, "rules", js.Array(value*))
     
     inline def setSemanticVersion(value: String): Self = StObject.set(x, "semanticVersion", value.asInstanceOf[js.Any])
     
@@ -277,13 +277,13 @@ object ToolComponent {
     
     inline def setSupportedTaxonomiesUndefined: Self = StObject.set(x, "supportedTaxonomies", js.undefined)
     
-    inline def setSupportedTaxonomiesVarargs(value: ToolComponentReference*): Self = StObject.set(x, "supportedTaxonomies", js.Array(value :_*))
+    inline def setSupportedTaxonomiesVarargs(value: ToolComponentReference*): Self = StObject.set(x, "supportedTaxonomies", js.Array(value*))
     
     inline def setTaxa(value: js.Array[ReportingDescriptor]): Self = StObject.set(x, "taxa", value.asInstanceOf[js.Any])
     
     inline def setTaxaUndefined: Self = StObject.set(x, "taxa", js.undefined)
     
-    inline def setTaxaVarargs(value: ReportingDescriptor*): Self = StObject.set(x, "taxa", js.Array(value :_*))
+    inline def setTaxaVarargs(value: ReportingDescriptor*): Self = StObject.set(x, "taxa", js.Array(value*))
     
     inline def setTranslationMetadata(value: TranslationMetadata): Self = StObject.set(x, "translationMetadata", value.asInstanceOf[js.Any])
     

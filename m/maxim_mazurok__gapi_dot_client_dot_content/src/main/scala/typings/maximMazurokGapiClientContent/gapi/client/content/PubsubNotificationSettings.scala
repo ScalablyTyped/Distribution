@@ -36,6 +36,6 @@ object PubsubNotificationSettings {
     
     inline def setRegisteredEventsUndefined: Self = StObject.set(x, "registeredEvents", js.undefined)
     
-    inline def setRegisteredEventsVarargs(value: String*): Self = StObject.set(x, "registeredEvents", js.Array(value :_*))
+    inline def setRegisteredEventsVarargs(value: String*): Self = StObject.set(x, "registeredEvents", js.Array(value*))
   }
 }

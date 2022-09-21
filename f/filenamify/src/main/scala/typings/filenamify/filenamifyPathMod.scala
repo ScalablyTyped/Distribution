@@ -7,13 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object filenamifyPathMod {
   
-  /**
-  Convert the filename in a path a valid filename and return the augmented path.
-  */
-  inline def apply(path: String): String = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(path: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  
   @JSImport("filenamify/filenamify-path", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(path: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

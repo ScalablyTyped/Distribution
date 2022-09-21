@@ -25,7 +25,7 @@ object GoogleCloudDialogflowV2IntentMessageQuickReplies {
     
     inline def setQuickRepliesUndefined: Self = StObject.set(x, "quickReplies", js.undefined)
     
-    inline def setQuickRepliesVarargs(value: String*): Self = StObject.set(x, "quickReplies", js.Array(value :_*))
+    inline def setQuickRepliesVarargs(value: String*): Self = StObject.set(x, "quickReplies", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

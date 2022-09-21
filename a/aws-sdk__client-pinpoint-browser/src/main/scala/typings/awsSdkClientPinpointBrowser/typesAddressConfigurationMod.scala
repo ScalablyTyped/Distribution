@@ -11,7 +11,6 @@ import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.CU
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.EMAIL
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.GCM
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.SMS
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +36,7 @@ object typesAddressConfigurationMod {
     /**
       * A map of custom attributes to attributes to be attached to the message for this address. This payload is added to the push notification's 'data.pinpoint' object or added to the email/sms delivery receipt event attributes.
       */
-    var Context: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var Context: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * The Raw JSON formatted string to be used as the payload. This value overrides the message.
@@ -48,7 +47,7 @@ object typesAddressConfigurationMod {
       * A map of substitution values for the message to be merged with the DefaultMessage's substitutions. Substitutions on this map take precedence over the all other substitutions.
       */
     var Substitutions: js.UndefOr[
-        (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
+        (StringDictionary[js.Array[String] | js.Iterable[String]]) | (js.Iterable[js.Tuple2[String, js.Array[String] | js.Iterable[String]]])
       ] = js.undefined
     
     /**
@@ -75,7 +74,7 @@ object typesAddressConfigurationMod {
       
       inline def setChannelTypeUndefined: Self = StObject.set(x, "ChannelType", js.undefined)
       
-      inline def setContext(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+      inline def setContext(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
       
@@ -84,7 +83,7 @@ object typesAddressConfigurationMod {
       inline def setRawContentUndefined: Self = StObject.set(x, "RawContent", js.undefined)
       
       inline def setSubstitutions(
-        value: (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
+        value: (StringDictionary[js.Array[String] | js.Iterable[String]]) | (js.Iterable[js.Tuple2[String, js.Array[String] | js.Iterable[String]]])
       ): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
       
       inline def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)

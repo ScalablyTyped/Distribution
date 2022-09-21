@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.std.ArrayBuffer
 import typings.wechatMiniprogram.wechatMiniprogramStrings.`ucs-2`
 import typings.wechatMiniprogram.wechatMiniprogramStrings.`utf-16le`
 import typings.wechatMiniprogram.wechatMiniprogramStrings.`utf-8`
@@ -22,7 +21,7 @@ trait AppendFileOption extends StObject {
   var complete: js.UndefOr[AppendFileCompleteCallback] = js.undefined
   
   /** 要追加的文本或二进制数据 */
-  var data: String | ArrayBuffer
+  var data: String | js.typedarray.ArrayBuffer
   
   /** 指定写入文件的字符编码
     *
@@ -53,7 +52,7 @@ trait AppendFileOption extends StObject {
 }
 object AppendFileOption {
   
-  inline def apply(data: String | ArrayBuffer, filePath: String): AppendFileOption = {
+  inline def apply(data: String | js.typedarray.ArrayBuffer, filePath: String): AppendFileOption = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppendFileOption]
   }
@@ -64,7 +63,7 @@ object AppendFileOption {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setEncoding(
       value: ascii | base64 | binary | hex | ucs2 | `ucs-2` | utf16le | `utf-16le` | `utf-8` | utf8 | latin1

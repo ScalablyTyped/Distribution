@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSelectedTabPageChangedEventArgs")
 @js.native
-class ASPxClientSelectedTabPageChangedEventArgs ()
+open class ASPxClientSelectedTabPageChangedEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSelectedTabPageChangedEventArgs {
   

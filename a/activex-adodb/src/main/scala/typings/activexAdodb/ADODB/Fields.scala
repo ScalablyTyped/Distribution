@@ -16,24 +16,12 @@ trait Fields extends StObject {
     */
   def Append(Name: String, Type: DataTypeEnum): Unit = js.native
   def Append(Name: String, Type: DataTypeEnum, DefinedSize: Double): Unit = js.native
-  def Append(Name: String, Type: DataTypeEnum, DefinedSize: Double, Attrib: Unit, FieldValue: js.Any): Unit = js.native
+  def Append(Name: String, Type: DataTypeEnum, DefinedSize: Double, Attrib: Unit, FieldValue: Any): Unit = js.native
   def Append(Name: String, Type: DataTypeEnum, DefinedSize: Double, Attrib: FieldAttributeEnum): Unit = js.native
-  def Append(
-    Name: String,
-    Type: DataTypeEnum,
-    DefinedSize: Double,
-    Attrib: FieldAttributeEnum,
-    FieldValue: js.Any
-  ): Unit = js.native
-  def Append(Name: String, Type: DataTypeEnum, DefinedSize: Unit, Attrib: Unit, FieldValue: js.Any): Unit = js.native
+  def Append(Name: String, Type: DataTypeEnum, DefinedSize: Double, Attrib: FieldAttributeEnum, FieldValue: Any): Unit = js.native
+  def Append(Name: String, Type: DataTypeEnum, DefinedSize: Unit, Attrib: Unit, FieldValue: Any): Unit = js.native
   def Append(Name: String, Type: DataTypeEnum, DefinedSize: Unit, Attrib: FieldAttributeEnum): Unit = js.native
-  def Append(
-    Name: String,
-    Type: DataTypeEnum,
-    DefinedSize: Unit,
-    Attrib: FieldAttributeEnum,
-    FieldValue: js.Any
-  ): Unit = js.native
+  def Append(Name: String, Type: DataTypeEnum, DefinedSize: Unit, Attrib: FieldAttributeEnum, FieldValue: Any): Unit = js.native
   
   def CancelUpdate(): Unit = js.native
   

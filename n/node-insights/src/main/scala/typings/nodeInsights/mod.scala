@@ -1,6 +1,5 @@
 package typings.nodeInsights
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object mod {
   
   @JSImport("node-insights", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Insights {
     /**
@@ -39,7 +38,7 @@ object mod {
   def queryBaseURL: String = js.native
   inline def queryBaseURL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryBaseURL")(x.asInstanceOf[js.Any])
   
-  type CallbackFunc = js.Function2[/* err */ js.UndefOr[Error | Null], /* responseBody */ String, Unit]
+  type CallbackFunc = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* responseBody */ String, Unit]
   
   trait Config extends StObject {
     

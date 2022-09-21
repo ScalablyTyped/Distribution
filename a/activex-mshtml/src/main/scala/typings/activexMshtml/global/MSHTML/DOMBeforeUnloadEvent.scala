@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMBeforeUnloadEvent")
 @js.native
-/* private */ class DOMBeforeUnloadEvent ()
+/* private */ open class DOMBeforeUnloadEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMBeforeUnloadEvent {
   
@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def preventDefault(): Unit = js.native
   
   /* CompleteClass */
-  var returnValue: js.Any = js.native
+  var returnValue: Any = js.native
   
   /* CompleteClass */
   override val srcElement: typings.activexMshtml.MSHTML.IHTMLElement = js.native

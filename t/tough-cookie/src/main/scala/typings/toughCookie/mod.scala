@@ -1,8 +1,6 @@
 package typings.toughCookie
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
-import typings.std.Error
 import typings.toughCookie.mod.Cookie.ParseOptions
 import typings.toughCookie.mod.Cookie.Properties
 import typings.toughCookie.mod.CookieJar.GetCookiesOptions
@@ -23,11 +21,11 @@ object mod {
   
   @JSImport("tough-cookie", "Cookie")
   @js.native
-  class Cookie () extends StObject {
+  open class Cookie () extends StObject {
     def this(properties: Properties) = this()
     
     def TTL(): Double = js.native
-    def TTL(now: Date): Double = js.native
+    def TTL(now: js.Date): Double = js.native
     
     def canonicalizedDomain(): String | Null = js.native
     
@@ -35,16 +33,16 @@ object mod {
     
     def cookieString(): String = js.native
     
-    var creation: Date | Null = js.native
+    var creation: js.Date | Null = js.native
     
     var creationIndex: Double = js.native
     
     var domain: String | Null = js.native
     
-    var expires: Date | Infinity = js.native
+    var expires: js.Date | Infinity = js.native
     
-    def expiryDate(): Date = js.native
-    def expiryDate(now: Double): Date = js.native
+    def expiryDate(): js.Date = js.native
+    def expiryDate(now: Double): js.Date = js.native
     
     def expiryTime(): Double = js.native
     def expiryTime(now: Double): Double = js.native
@@ -61,7 +59,7 @@ object mod {
     
     var key: String = js.native
     
-    var lastAccessed: Date | Null = js.native
+    var lastAccessed: js.Date | Null = js.native
     
     var maxAge: Double | Infinity | `-Infinity` = js.native
     
@@ -74,11 +72,11 @@ object mod {
     var secure: Boolean = js.native
     
     def setExpires(exp: String): Unit = js.native
-    def setExpires(exp: Date): Unit = js.native
+    def setExpires(exp: js.Date): Unit = js.native
     
     def setMaxAge(number: Double): Unit = js.native
     
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
     
     def validate(): Boolean | String = js.native
     
@@ -118,13 +116,13 @@ object mod {
     
     trait Properties extends StObject {
       
-      var creation: js.UndefOr[Date] = js.undefined
+      var creation: js.UndefOr[js.Date] = js.undefined
       
       var creationIndex: js.UndefOr[Double] = js.undefined
       
       var domain: js.UndefOr[String] = js.undefined
       
-      var expires: js.UndefOr[Date] = js.undefined
+      var expires: js.UndefOr[js.Date | Infinity] = js.undefined
       
       var extensions: js.UndefOr[js.Array[String]] = js.undefined
       
@@ -134,7 +132,7 @@ object mod {
       
       var key: js.UndefOr[String] = js.undefined
       
-      var lastAccessed: js.UndefOr[Date] = js.undefined
+      var lastAccessed: js.UndefOr[js.Date] = js.undefined
       
       var maxAge: js.UndefOr[Double | Infinity | `-Infinity`] = js.undefined
       
@@ -157,7 +155,7 @@ object mod {
       
       extension [Self <: Properties](x: Self) {
         
-        inline def setCreation(value: Date): Self = StObject.set(x, "creation", value.asInstanceOf[js.Any])
+        inline def setCreation(value: js.Date): Self = StObject.set(x, "creation", value.asInstanceOf[js.Any])
         
         inline def setCreationIndex(value: Double): Self = StObject.set(x, "creationIndex", value.asInstanceOf[js.Any])
         
@@ -169,7 +167,7 @@ object mod {
         
         inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
         
-        inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+        inline def setExpires(value: js.Date | Infinity): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
         
         inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
         
@@ -177,7 +175,7 @@ object mod {
         
         inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
         
-        inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+        inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
         
         inline def setHostOnly(value: Boolean): Self = StObject.set(x, "hostOnly", value.asInstanceOf[js.Any])
         
@@ -191,7 +189,7 @@ object mod {
         
         inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        inline def setLastAccessed(value: Date): Self = StObject.set(x, "lastAccessed", value.asInstanceOf[js.Any])
+        inline def setLastAccessed(value: js.Date): Self = StObject.set(x, "lastAccessed", value.asInstanceOf[js.Any])
         
         inline def setLastAccessedUndefined: Self = StObject.set(x, "lastAccessed", js.undefined)
         
@@ -221,66 +219,72 @@ object mod {
       }
     }
     
-    type Serialized = StringDictionary[js.Any]
+    type Serialized = StringDictionary[Any]
   }
   
   @JSImport("tough-cookie", "CookieJar")
   @js.native
-  class CookieJar () extends StObject {
+  open class CookieJar () extends StObject {
     def this(store: Store) = this()
     def this(store: Unit, options: Options) = this()
     def this(store: Store, options: Options) = this()
     
-    def clone(cb: js.Function2[/* err */ Error | Null, /* newJar */ this.type, Unit]): Unit = js.native
+    def clone(cb: js.Function2[/* err */ js.Error | Null, /* newJar */ this.type, Unit]): Unit = js.native
     def clone(store: Store): js.Promise[CookieJar] = js.native
-    def clone(store: Store, cb: js.Function2[/* err */ Error | Null, /* newJar */ this.type, Unit]): Unit = js.native
+    def clone(store: Store, cb: js.Function2[/* err */ js.Error | Null, /* newJar */ this.type, Unit]): Unit = js.native
     
     def cloneSync(): CookieJar = js.native
     def cloneSync(store: Store): CookieJar = js.native
     
     def getCookieString(currentUrl: String): js.Promise[String] = js.native
-    def getCookieString(currentUrl: String, cb: js.Function2[/* err */ Error | Null, /* cookies */ String, Unit]): Unit = js.native
+    def getCookieString(currentUrl: String, cb: js.Function2[/* err */ js.Error | Null, /* cookies */ String, Unit]): Unit = js.native
     def getCookieString(currentUrl: String, options: GetCookiesOptions): js.Promise[String] = js.native
     def getCookieString(
       currentUrl: String,
       options: GetCookiesOptions,
-      cb: js.Function2[/* err */ Error | Null, /* cookies */ String, Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* cookies */ String, Unit]
     ): Unit = js.native
     
     def getCookieStringSync(currentUrl: String): String = js.native
     def getCookieStringSync(currentUrl: String, options: GetCookiesOptions): String = js.native
     
     def getCookies(currentUrl: String): js.Promise[js.Array[Cookie]] = js.native
-    def getCookies(currentUrl: String, cb: js.Function2[/* err */ Error | Null, /* cookies */ js.Array[Cookie], Unit]): Unit = js.native
+    def getCookies(
+      currentUrl: String,
+      cb: js.Function2[/* err */ js.Error | Null, /* cookies */ js.Array[Cookie], Unit]
+    ): Unit = js.native
     def getCookies(currentUrl: String, options: GetCookiesOptions): js.Promise[js.Array[Cookie]] = js.native
     def getCookies(
       currentUrl: String,
       options: GetCookiesOptions,
-      cb: js.Function2[/* err */ Error | Null, /* cookies */ js.Array[Cookie], Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* cookies */ js.Array[Cookie], Unit]
     ): Unit = js.native
     
     def getCookiesSync(currentUrl: String): js.Array[Cookie] = js.native
     def getCookiesSync(currentUrl: String, options: GetCookiesOptions): js.Array[Cookie] = js.native
     
     def getSetCookieStrings(currentUrl: String): js.Promise[js.Array[String]] = js.native
-    def getSetCookieStrings(currentUrl: String, cb: js.Function2[/* err */ Error | Null, /* cookies */ js.Array[String], Unit]): Unit = js.native
+    def getSetCookieStrings(
+      currentUrl: String,
+      cb: js.Function2[/* err */ js.Error | Null, /* cookies */ js.Array[String], Unit]
+    ): Unit = js.native
     def getSetCookieStrings(currentUrl: String, options: GetCookiesOptions): js.Promise[js.Array[String]] = js.native
     def getSetCookieStrings(
       currentUrl: String,
       options: GetCookiesOptions,
-      cb: js.Function2[/* err */ Error | Null, /* cookies */ js.Array[String], Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* cookies */ js.Array[String], Unit]
     ): Unit = js.native
     
     def getSetCookieStringsSync(currentUrl: String): js.Array[String] = js.native
     def getSetCookieStringsSync(currentUrl: String, options: GetCookiesOptions): js.Array[String] = js.native
     
     def removeAllCookies(): js.Promise[Unit] = js.native
-    def removeAllCookies(cb: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def removeAllCookies(cb: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
     
     def removeAllCookiesSync(): Unit = js.native
     
     def serialize(): js.Promise[Serialized] = js.native
-    def serialize(cb: js.Function2[/* err */ Error | Null, /* serializedObject */ Serialized, Unit]): Unit = js.native
+    def serialize(cb: js.Function2[/* err */ js.Error | Null, /* serializedObject */ Serialized, Unit]): Unit = js.native
     
     def serializeSync(): Serialized = js.native
     
@@ -288,27 +292,27 @@ object mod {
     def setCookie(
       cookieOrString: String,
       currentUrl: String,
-      cb: js.Function2[/* err */ Error | Null, /* cookie */ Cookie, Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* cookie */ Cookie, Unit]
     ): Unit = js.native
     def setCookie(cookieOrString: String, currentUrl: String, options: SetCookieOptions): js.Promise[Cookie] = js.native
     def setCookie(
       cookieOrString: String,
       currentUrl: String,
       options: SetCookieOptions,
-      cb: js.Function2[/* err */ Error | Null, /* cookie */ Cookie, Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* cookie */ Cookie, Unit]
     ): Unit = js.native
     def setCookie(cookieOrString: Cookie, currentUrl: String): js.Promise[Cookie] = js.native
     def setCookie(
       cookieOrString: Cookie,
       currentUrl: String,
-      cb: js.Function2[/* err */ Error | Null, /* cookie */ Cookie, Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* cookie */ Cookie, Unit]
     ): Unit = js.native
     def setCookie(cookieOrString: Cookie, currentUrl: String, options: SetCookieOptions): js.Promise[Cookie] = js.native
     def setCookie(
       cookieOrString: Cookie,
       currentUrl: String,
       options: SetCookieOptions,
-      cb: js.Function2[/* err */ Error | Null, /* cookie */ Cookie, Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* cookie */ Cookie, Unit]
     ): Unit = js.native
     
     def setCookieSync(cookieOrString: String, currentUrl: String): Cookie = js.native
@@ -326,20 +330,20 @@ object mod {
     val ^ : js.Any = js.native
     
     inline def deserialize(serialized: String): js.Promise[CookieJar] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CookieJar]]
-    inline def deserialize(serialized: String, cb: js.Function2[/* err */ Error | Null, /* object */ this.type, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def deserialize(serialized: String, cb: js.Function2[/* err */ js.Error | Null, /* object */ this.type, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def deserialize(serialized: String, store: Store): js.Promise[CookieJar] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any], store.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CookieJar]]
     inline def deserialize(
       serialized: String,
       store: Store,
-      cb: js.Function2[/* err */ Error | Null, /* object */ this.type, Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* object */ this.type, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any], store.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def deserialize(serialized: Serialized): js.Promise[CookieJar] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CookieJar]]
-    inline def deserialize(serialized: Serialized, cb: js.Function2[/* err */ Error | Null, /* object */ this.type, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def deserialize(serialized: Serialized, cb: js.Function2[/* err */ js.Error | Null, /* object */ this.type, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def deserialize(serialized: Serialized, store: Store): js.Promise[CookieJar] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any], store.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CookieJar]]
     inline def deserialize(
       serialized: Serialized,
       store: Store,
-      cb: js.Function2[/* err */ Error | Null, /* object */ this.type, Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* object */ this.type, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any], store.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def deserializeSync(serialized: String): CookieJar = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeSync")(serialized.asInstanceOf[js.Any]).asInstanceOf[CookieJar]
@@ -357,7 +361,7 @@ object mod {
       
       var http: js.UndefOr[Boolean] = js.undefined
       
-      var now: js.UndefOr[Date] = js.undefined
+      var now: js.UndefOr[js.Date] = js.undefined
       
       var secure: js.UndefOr[Boolean] = js.undefined
     }
@@ -382,7 +386,7 @@ object mod {
         
         inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
         
-        inline def setNow(value: Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+        inline def setNow(value: js.Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
         
         inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
         
@@ -455,7 +459,7 @@ object mod {
         
         inline def setCookies(value: js.Array[typings.toughCookie.mod.Cookie.Serialized]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
         
-        inline def setCookiesVarargs(value: typings.toughCookie.mod.Cookie.Serialized*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+        inline def setCookiesVarargs(value: typings.toughCookie.mod.Cookie.Serialized*): Self = StObject.set(x, "cookies", js.Array(value*))
         
         inline def setRejectPublicSuffixes(value: Boolean): Self = StObject.set(x, "rejectPublicSuffixes", value.asInstanceOf[js.Any])
         
@@ -471,7 +475,7 @@ object mod {
       
       var ignoreError: js.UndefOr[Boolean] = js.undefined
       
-      var now: js.UndefOr[Date] = js.undefined
+      var now: js.UndefOr[js.Date] = js.undefined
       
       var secure: js.UndefOr[Boolean] = js.undefined
     }
@@ -492,7 +496,7 @@ object mod {
         
         inline def setIgnoreErrorUndefined: Self = StObject.set(x, "ignoreError", js.undefined)
         
-        inline def setNow(value: Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+        inline def setNow(value: js.Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
         
         inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
         
@@ -505,7 +509,28 @@ object mod {
   
   @JSImport("tough-cookie", "MemoryCookieStore")
   @js.native
-  class MemoryCookieStore () extends Store
+  open class MemoryCookieStore () extends Store {
+    
+    def findCookie(domain: String, path: String, key: String): js.Promise[Cookie | Null] = js.native
+    
+    def findCookies(domain: String, path: String): js.Promise[js.Array[Cookie]] = js.native
+    def findCookies(domain: String, path: String, allowSpecialUseDomain: Boolean): js.Promise[js.Array[Cookie]] = js.native
+    def findCookies(
+      domain: String,
+      path: String,
+      cb: js.Function2[/* err */ js.Error | Null, /* cookie */ js.Array[Cookie], Unit]
+    ): Unit = js.native
+    
+    def getAllCookies(): js.Promise[js.Array[Cookie]] = js.native
+    
+    def putCookie(cookie: Cookie): js.Promise[Unit] = js.native
+    
+    def removeCookie(domain: String, path: String, key: String): js.Promise[Unit] = js.native
+    
+    def removeCookies(domain: String, path: String): js.Promise[Unit] = js.native
+    
+    def updateCookie(oldCookie: Cookie, newCookie: Cookie): js.Promise[Unit] = js.native
+  }
   
   /* Inlined std.Readonly<{  DISABLED :string,   SILENT :string,   STRICT :string}> */
   object PrefixSecurityEnum {
@@ -531,27 +556,27 @@ object mod {
       domain: String,
       path: String,
       key: String,
-      cb: js.Function2[/* err */ Error | Null, /* cookie */ Cookie | Null, Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* cookie */ Cookie | Null, Unit]
     ): Unit = js.native
     
     def findCookies(
       domain: String,
       path: String,
       allowSpecialUseDomain: Boolean,
-      cb: js.Function2[/* err */ Error | Null, /* cookie */ js.Array[Cookie], Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* cookie */ js.Array[Cookie], Unit]
     ): Unit = js.native
     
-    def getAllCookies(cb: js.Function2[/* err */ Error | Null, /* cookie */ js.Array[Cookie], Unit]): Unit = js.native
+    def getAllCookies(cb: js.Function2[/* err */ js.Error | Null, /* cookie */ js.Array[Cookie], Unit]): Unit = js.native
     
-    def putCookie(cookie: Cookie, cb: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def putCookie(cookie: Cookie, cb: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
     
-    def removeCookie(domain: String, path: String, key: String, cb: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def removeCookie(domain: String, path: String, key: String, cb: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
     
-    def removeCookies(domain: String, path: String, cb: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def removeCookies(domain: String, path: String, cb: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
     
     var synchronous: Boolean = js.native
     
-    def updateCookie(oldCookie: Cookie, newCookie: Cookie, cb: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def updateCookie(oldCookie: Cookie, newCookie: Cookie, cb: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
   }
   
   inline def canonicalDomain(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("canonicalDomain")(str.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -563,7 +588,7 @@ object mod {
   inline def domainMatch(str: String, domStr: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("domainMatch")(str.asInstanceOf[js.Any], domStr.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def domainMatch(str: String, domStr: String, canonicalize: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("domainMatch")(str.asInstanceOf[js.Any], domStr.asInstanceOf[js.Any], canonicalize.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def formatDate(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatDate(date: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def fromJSON(string: String): Cookie = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(string.asInstanceOf[js.Any]).asInstanceOf[Cookie]
   
@@ -572,7 +597,7 @@ object mod {
   inline def parse(cookieString: String): js.UndefOr[Cookie] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cookieString.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Cookie]]
   inline def parse(cookieString: String, options: ParseOptions): js.UndefOr[Cookie] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cookieString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Cookie]]
   
-  inline def parseDate(string: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(string.asInstanceOf[js.Any]).asInstanceOf[Date]
+  inline def parseDate(string: String): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(string.asInstanceOf[js.Any]).asInstanceOf[js.Date]
   
   inline def pathMatch(reqPath: String, cookiePath: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pathMatch")(reqPath.asInstanceOf[js.Any], cookiePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

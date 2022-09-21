@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Calendar")
 @js.native
-class Calendar protected ()
+open class Calendar protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Calendar {
   def this(element: Element) = this()

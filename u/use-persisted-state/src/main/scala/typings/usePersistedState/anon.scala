@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object anon {
   
   @js.native
-  trait FnCall extends StObject {
+  trait FnCall[S] extends StObject {
     
-    def apply[S](): js.Tuple2[js.UndefOr[S], Dispatch[SetStateAction[js.UndefOr[S]]]] = js.native
-    def apply[S](initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
-    def apply[S](initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
+    def apply(): js.Tuple2[js.UndefOr[S], Dispatch[SetStateAction[js.UndefOr[S]]]] = js.native
+    def apply(initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
+    def apply(initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
   }
   
   /* Inlined std.Pick<std.Storage, 'getItem' | 'setItem'> */

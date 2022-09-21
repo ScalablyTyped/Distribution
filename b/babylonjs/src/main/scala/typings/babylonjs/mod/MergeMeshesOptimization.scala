@@ -9,9 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates the SceneOptimization object
   * @param priority defines the priority of this optimization (0 by default which means first in the list)
-  * @param desc defines the description associated with the optimization
   */
-class MergeMeshesOptimization ()
+open class MergeMeshesOptimization ()
   extends typings.babylonjs.legacyMod.MergeMeshesOptimization {
   def this(/**
     * Defines the priority of this optimization (0 by default which means first in the list)
@@ -27,6 +26,6 @@ object MergeMeshesOptimization {
   
   @JSImport("babylonjs", "MergeMeshesOptimization._UpdateSelectionTree")
   @js.native
-  def _UpdateSelectionTree: js.Any = js.native
-  inline def _UpdateSelectionTree_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpdateSelectionTree")(x.asInstanceOf[js.Any])
+  def _UpdateSelectionTree: Any = js.native
+  inline def _UpdateSelectionTree_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpdateSelectionTree")(x.asInstanceOf[js.Any])
 }

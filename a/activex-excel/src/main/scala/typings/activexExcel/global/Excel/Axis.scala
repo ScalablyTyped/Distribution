@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Axis")
 @js.native
-/* private */ class Axis ()
+/* private */ open class Axis ()
   extends StObject
      with typings.activexExcel.Excel.Axis {
   
@@ -59,7 +59,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var CrossesAt: Double = js.native
   
   /* CompleteClass */
-  override def Delete(): js.Any = js.native
+  override def Delete(): Any = js.native
   
   /* CompleteClass */
   var DisplayUnit: XlDisplayUnit = js.native
@@ -141,7 +141,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MinorUnitScale: XlTimeUnit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var ReversePlotOrder: Boolean = js.native
@@ -150,7 +150,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ScaleType: XlScaleType = js.native
   
   /* CompleteClass */
-  override def Select(): js.Any = js.native
+  override def Select(): Any = js.native
   
   /* CompleteClass */
   var TickLabelPosition: XlTickLabelPosition = js.native

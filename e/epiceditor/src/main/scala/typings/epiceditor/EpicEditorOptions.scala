@@ -14,7 +14,7 @@ trait EpicEditorOptions extends StObject {
   
   var clientSideStorage: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[js.Any] = js.undefined
+  var container: js.UndefOr[Any] = js.undefined
   
   var file: js.UndefOr[AutoSave] = js.undefined
   
@@ -22,13 +22,13 @@ trait EpicEditorOptions extends StObject {
   
   var localStorageName: js.UndefOr[String] = js.undefined
   
-  var parser: js.UndefOr[js.Any] = js.undefined
+  var parser: js.UndefOr[Any] = js.undefined
   
   var shortcut: js.UndefOr[Fullscreen] = js.undefined
   
   var string: js.UndefOr[ToggleEdit] = js.undefined
   
-  var textarea: js.UndefOr[js.Any] = js.undefined
+  var textarea: js.UndefOr[Any] = js.undefined
   
   var theme: js.UndefOr[Base] = js.undefined
   
@@ -51,7 +51,7 @@ object EpicEditorOptions {
     
     inline def setClientSideStorageUndefined: Self = StObject.set(x, "clientSideStorage", js.undefined)
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
@@ -67,7 +67,7 @@ object EpicEditorOptions {
     
     inline def setLocalStorageNameUndefined: Self = StObject.set(x, "localStorageName", js.undefined)
     
-    inline def setParser(value: js.Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+    inline def setParser(value: Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
     
     inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
     
@@ -79,7 +79,7 @@ object EpicEditorOptions {
     
     inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     
-    inline def setTextarea(value: js.Any): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
+    inline def setTextarea(value: Any): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
     
     inline def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
     

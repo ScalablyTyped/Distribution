@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "DatePicker")
 @js.native
-class DatePicker ()
+open class DatePicker ()
   extends typings.materialUi.MaterialUI.DatePicker.DatePicker

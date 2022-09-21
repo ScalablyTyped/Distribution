@@ -10,5 +10,5 @@ object linkMod {
   
   @JSImport("@nulogy/components/src/Link", "Link")
   @js.native
-  val Link: ComponentType[StringDictionary[js.Any]] = js.native
+  val Link: ComponentType[StringDictionary[Any]] = js.native
 }

@@ -22,6 +22,6 @@ object PlatformContext {
     
     inline def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
     
-    inline def setPlatformsVarargs(value: String*): Self = StObject.set(x, "platforms", js.Array(value :_*))
+    inline def setPlatformsVarargs(value: String*): Self = StObject.set(x, "platforms", js.Array(value*))
   }
 }

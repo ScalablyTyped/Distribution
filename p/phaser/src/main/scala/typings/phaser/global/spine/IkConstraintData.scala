@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.IkConstraintData")
 @js.native
-class IkConstraintData protected ()
+open class IkConstraintData protected ()
   extends StObject
      with typings.phaser.spine.IkConstraintData {
   def this(name: String) = this()

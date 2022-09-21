@@ -22,8 +22,8 @@ trait OrderLineItem extends StObject {
   var price: js.UndefOr[Price] = js.undefined
   
   /**
-    * Product data as seen by customer from the time of the order placement. Note that certain attributes values (e.g. title or gtin) might be reformatted and no longer match values
-    * submitted via product feed.
+    * Product data as seen by customer from the time of the order placement. Note that certain attributes values (for example, title or gtin) might be reformatted and no longer match
+    * values submitted through product feed.
     */
   var product: js.UndefOr[OrderLineItemProduct] = js.undefined
   
@@ -76,19 +76,19 @@ object OrderLineItem {
     
     inline def setAdjustmentsUndefined: Self = StObject.set(x, "adjustments", js.undefined)
     
-    inline def setAdjustmentsVarargs(value: OrderLineItemAdjustment*): Self = StObject.set(x, "adjustments", js.Array(value :_*))
+    inline def setAdjustmentsVarargs(value: OrderLineItemAdjustment*): Self = StObject.set(x, "adjustments", js.Array(value*))
     
     inline def setAnnotations(value: js.Array[OrderMerchantProvidedAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    inline def setAnnotationsVarargs(value: OrderMerchantProvidedAnnotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: OrderMerchantProvidedAnnotation*): Self = StObject.set(x, "annotations", js.Array(value*))
     
     inline def setCancellations(value: js.Array[OrderCancellation]): Self = StObject.set(x, "cancellations", value.asInstanceOf[js.Any])
     
     inline def setCancellationsUndefined: Self = StObject.set(x, "cancellations", js.undefined)
     
-    inline def setCancellationsVarargs(value: OrderCancellation*): Self = StObject.set(x, "cancellations", js.Array(value :_*))
+    inline def setCancellationsVarargs(value: OrderCancellation*): Self = StObject.set(x, "cancellations", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -142,7 +142,7 @@ object OrderLineItem {
     
     inline def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
     
-    inline def setReturnsVarargs(value: OrderReturn*): Self = StObject.set(x, "returns", js.Array(value :_*))
+    inline def setReturnsVarargs(value: OrderReturn*): Self = StObject.set(x, "returns", js.Array(value*))
     
     inline def setShippingDetails(value: OrderLineItemShippingDetails): Self = StObject.set(x, "shippingDetails", value.asInstanceOf[js.Any])
     

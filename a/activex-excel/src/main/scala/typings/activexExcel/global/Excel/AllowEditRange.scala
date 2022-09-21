@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.AllowEditRange")
 @js.native
-/* private */ class AllowEditRange ()
+/* private */ open class AllowEditRange ()
   extends StObject
      with typings.activexExcel.Excel.AllowEditRange

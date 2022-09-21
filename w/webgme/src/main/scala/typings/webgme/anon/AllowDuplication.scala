@@ -45,7 +45,7 @@ object AllowDuplication {
     
     inline def setBasePaths(value: js.Array[String]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
     
-    inline def setBasePathsVarargs(value: String*): Self = StObject.set(x, "basePaths", js.Array(value :_*))
+    inline def setBasePathsVarargs(value: String*): Self = StObject.set(x, "basePaths", js.Array(value*))
     
     inline def setDefaultProject(value: String): Self = StObject.set(x, "defaultProject", value.asInstanceOf[js.Any])
     

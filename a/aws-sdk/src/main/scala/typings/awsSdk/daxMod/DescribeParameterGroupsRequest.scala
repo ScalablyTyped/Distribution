@@ -42,6 +42,6 @@ object DescribeParameterGroupsRequest {
     
     inline def setParameterGroupNamesUndefined: Self = StObject.set(x, "ParameterGroupNames", js.undefined)
     
-    inline def setParameterGroupNamesVarargs(value: String*): Self = StObject.set(x, "ParameterGroupNames", js.Array(value :_*))
+    inline def setParameterGroupNamesVarargs(value: String*): Self = StObject.set(x, "ParameterGroupNames", js.Array(value*))
   }
 }

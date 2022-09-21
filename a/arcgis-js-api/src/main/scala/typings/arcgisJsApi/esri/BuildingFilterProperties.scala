@@ -44,7 +44,7 @@ object BuildingFilterProperties {
     
     inline def setFilterBlocksUndefined: Self = StObject.set(x, "filterBlocks", js.undefined)
     
-    inline def setFilterBlocksVarargs(value: BuildingFilterBlock*): Self = StObject.set(x, "filterBlocks", js.Array(value :_*))
+    inline def setFilterBlocksVarargs(value: BuildingFilterBlock*): Self = StObject.set(x, "filterBlocks", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

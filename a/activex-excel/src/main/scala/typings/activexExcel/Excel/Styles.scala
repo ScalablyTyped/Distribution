@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Styles extends StObject {
   
-  def apply(Index: js.Any): Style = js.native
+  def apply(Index: Any): Style = js.native
   
   def Add(Name: String): Style = js.native
-  def Add(Name: String, BasedOn: js.Any): Style = js.native
+  def Add(Name: String, BasedOn: Any): Style = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -21,9 +21,9 @@ trait Styles extends StObject {
   def Item(Index: String): Style = js.native
   def Item(Index: Double): Style = js.native
   
-  def Merge(Workbook: Workbook): js.Any = js.native
+  def Merge(Workbook: Workbook): Any = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): Style = js.native
+  def _Default(Index: Any): Style = js.native
 }

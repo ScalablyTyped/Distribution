@@ -143,6 +143,12 @@ object pgProtocolStrings {
   inline def notification: notification = "notification".asInstanceOf[notification]
   
   @js.native
+  sealed trait parameterDescription
+    extends StObject
+       with MessageName
+  inline def parameterDescription: parameterDescription = "parameterDescription".asInstanceOf[parameterDescription]
+  
+  @js.native
   sealed trait parameterStatus
     extends StObject
        with MessageName

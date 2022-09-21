@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the border of an object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.RangeBorder")
 @js.native
-class RangeBorder ()
+open class RangeBorder ()
   extends StObject
      with typings.officeJs.Excel.RangeBorder {
   

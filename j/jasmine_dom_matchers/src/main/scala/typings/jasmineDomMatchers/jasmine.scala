@@ -1,7 +1,6 @@
 package typings.jasmineDomMatchers
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,8 +48,8 @@ object jasmine {
       * Checks if text substring is contained within element.
       */
     def toContainText(text: String): Boolean = js.native
+    def toContainText(text: js.RegExp): Boolean = js.native
     def toContainText(text: Double): Boolean = js.native
-    def toContainText(text: RegExp): Boolean = js.native
     
     /**
       * True if the element exists, does not have to be in the DOM.
@@ -63,8 +62,8 @@ object jasmine {
       */
     def toHaveAttr(attributeName: String): Boolean = js.native
     def toHaveAttr(attributeName: String, attributeValue: String): Boolean = js.native
+    def toHaveAttr(attributeName: String, attributeValue: js.RegExp): Boolean = js.native
     def toHaveAttr(attributeName: String, attributeValue: Double): Boolean = js.native
-    def toHaveAttr(attributeName: String, attributeValue: RegExp): Boolean = js.native
     
     /**
       * Checks for presence of classes on the element.
@@ -77,7 +76,7 @@ object jasmine {
       * Checks if all styles are present.
       * `styles` is an object, all styles given in that object will be checked.
       */
-    def toHaveCss(styles: StringDictionary[String | Double | RegExp]): Boolean = js.native
+    def toHaveCss(styles: StringDictionary[String | Double | js.RegExp]): Boolean = js.native
     
     /**
       * Checks for length number of html elements.
@@ -91,21 +90,21 @@ object jasmine {
       */
     def toHaveProp(propertyName: String): Boolean = js.native
     def toHaveProp(propertyName: String, propertyValue: String): Boolean = js.native
+    def toHaveProp(propertyName: String, propertyValue: js.RegExp): Boolean = js.native
     def toHaveProp(propertyName: String, propertyValue: Double): Boolean = js.native
-    def toHaveProp(propertyName: String, propertyValue: RegExp): Boolean = js.native
     
     /**
       * Checks for exact match with text, after trimming whitespace.
       */
     def toHaveText(text: String): Boolean = js.native
+    def toHaveText(text: js.RegExp): Boolean = js.native
     def toHaveText(text: Double): Boolean = js.native
-    def toHaveText(text: RegExp): Boolean = js.native
     
     /**
       * Checks the `value` of eligible elements (like inputs).
       */
     def toHaveValue(value: String): Boolean = js.native
+    def toHaveValue(value: js.RegExp): Boolean = js.native
     def toHaveValue(value: Double): Boolean = js.native
-    def toHaveValue(value: RegExp): Boolean = js.native
   }
 }

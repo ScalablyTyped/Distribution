@@ -33,6 +33,6 @@ object DescribeVpcEndpointConnectionsResult {
     
     inline def setVpcEndpointConnectionsUndefined: Self = StObject.set(x, "VpcEndpointConnections", js.undefined)
     
-    inline def setVpcEndpointConnectionsVarargs(value: VpcEndpointConnection*): Self = StObject.set(x, "VpcEndpointConnections", js.Array(value :_*))
+    inline def setVpcEndpointConnectionsVarargs(value: VpcEndpointConnection*): Self = StObject.set(x, "VpcEndpointConnections", js.Array(value*))
   }
 }

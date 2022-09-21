@@ -11,9 +11,9 @@ Parse a github URL into an object.
 | Full name          | parse-github-url |
 | Keywords           | branch, git, github, match, parse, regex, repo, test, url, user, username |
 | # releases         | 1 |
-| # dependents       | 162 |
-| # downloads        | 16087796 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3853587.0 |
+| # stars            | 102.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/parse-github-url)

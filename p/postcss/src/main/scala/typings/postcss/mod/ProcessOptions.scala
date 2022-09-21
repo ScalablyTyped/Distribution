@@ -1,6 +1,8 @@
 package typings.postcss.mod
 
 import typings.postcss.anon.PickProcessOptionsmapfrom
+import typings.postcss.anon.ToString
+import typings.postcss.nodeMod.AnyNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProcessOptions extends StObject {
   
   /**
-    * The path of the CSS source file. You should always set "from", because it is
-    * used in source map generation and syntax error messages.
+    * The path of the CSS source file. You should always set `from`,
+    * because it is used in source map generation and syntax error messages.
     */
   var from: js.UndefOr[String] = js.undefined
   
@@ -21,12 +23,14 @@ trait ProcessOptions extends StObject {
   /**
     * Function to generate AST by string.
     */
-  var parser: js.UndefOr[Parser] = js.undefined
+  var parser: js.UndefOr[
+    Syntax | (Parser[typings.postcss.rootMod.default | typings.postcss.documentMod.default])
+  ] = js.undefined
   
   /**
     * Class to generate string by AST.
     */
-  var stringifier: js.UndefOr[Stringifier] = js.undefined
+  var stringifier: js.UndefOr[Syntax | Stringifier] = js.undefined
   
   /**
     * Object with parse and stringify.
@@ -34,7 +38,7 @@ trait ProcessOptions extends StObject {
   var syntax: js.UndefOr[Syntax] = js.undefined
   
   /**
-    * The path where you'll put the output CSS file. You should always set "to"
+    * The path where you'll put the output CSS file. You should always set `to`
     * to generate correct source maps.
     */
   var to: js.UndefOr[String] = js.undefined
@@ -56,11 +60,17 @@ object ProcessOptions {
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    inline def setParser(value: (/* css */ ParserInput, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => Root_): Self = StObject.set(x, "parser", js.Any.fromFunction2(value))
+    inline def setParser(value: Syntax | (Parser[typings.postcss.rootMod.default | typings.postcss.documentMod.default])): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+    
+    inline def setParserFunction2(
+      value: (/* css */ String | ToString, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => typings.postcss.rootMod.default | typings.postcss.documentMod.default
+    ): Self = StObject.set(x, "parser", js.Any.fromFunction2(value))
     
     inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
     
-    inline def setStringifier(value: (/* node */ Node, /* builder */ Builder) => Unit): Self = StObject.set(x, "stringifier", js.Any.fromFunction2(value))
+    inline def setStringifier(value: Syntax | Stringifier): Self = StObject.set(x, "stringifier", value.asInstanceOf[js.Any])
+    
+    inline def setStringifierFunction2(value: (/* node */ AnyNode, /* builder */ Builder) => Unit): Self = StObject.set(x, "stringifier", js.Any.fromFunction2(value))
     
     inline def setStringifierUndefined: Self = StObject.set(x, "stringifier", js.undefined)
     

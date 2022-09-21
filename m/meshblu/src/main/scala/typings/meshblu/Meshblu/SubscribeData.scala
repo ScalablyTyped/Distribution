@@ -25,13 +25,13 @@ object SubscribeData {
     
     inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
     
-    inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
+    inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value*))
     
     inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "TabBar")
 @js.native
-class TabBar protected ()
-  extends Component[TabBarProps, js.Object, js.Any] {
+open class TabBar protected ()
+  extends Component[TabBarProps, js.Object, Any] {
   def this(props: TabBarProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TabBarProps, context: js.Any) = this()
+  def this(props: TabBarProps, context: Any) = this()
 }

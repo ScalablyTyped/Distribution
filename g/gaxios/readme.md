@@ -1,7 +1,7 @@
 
 # Scala.js typings for gaxios
 
-Typings are for version 4.0.1
+Typings are for version 5.0.1
 
 ## Library description:
 A simple common HTTP client specifically for Google APIs and services.
@@ -10,10 +10,10 @@ A simple common HTTP client specifically for Google APIs and services.
 | ------------------ | :-------------: |
 | Full name          | gaxios |
 | Keywords           | google |
-| # releases         | 29 |
-| # dependents       | 39 |
-| # downloads        | 190986908 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 2.2316943E7 |
+| # stars            | 511.0 |
 
 ## Links
 - [Homepage](https://github.com/googleapis/gaxios#readme)

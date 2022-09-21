@@ -10,13 +10,13 @@ Webpack configuration following open-wc recommendations
 | ------------------ | :-------------: |
 | Full name          | @open-wc/webpack-import-meta-loader |
 | Keywords           | webpack, meta-loader, import-meta |
-| # releases         | 24 |
-| # dependents       | 2 |
-| # downloads        | 116795 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 61874.0 |
+| # stars            | 1836.0 |
 
 ## Links
-- [Homepage](https://github.com/open-wc/open-wc/tree/master/packages/webpack-import-meta-loader)
+- [Homepage](https://github.com/open-wc/open-wc#readme)
 - [Bugs](https://github.com/open-wc/open-wc/issues)
 - [Repository](https://github.com/open-wc/open-wc)
 - [Npm](https://www.npmjs.com/package/%40open-wc%2Fwebpack-import-meta-loader)

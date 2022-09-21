@@ -28,7 +28,7 @@ object AdvertisersListResponse {
     
     inline def setAdvertisersUndefined: Self = StObject.set(x, "advertisers", js.undefined)
     
-    inline def setAdvertisersVarargs(value: Advertiser*): Self = StObject.set(x, "advertisers", js.Array(value :_*))
+    inline def setAdvertisersVarargs(value: Advertiser*): Self = StObject.set(x, "advertisers", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

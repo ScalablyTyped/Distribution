@@ -15,7 +15,7 @@ trait IValidationMessages extends StObject {
   def addTemplateOptionValueMessage(name: String, prop: String, prefix: String, suffix: String, alternate: String): Unit
   
   var messages: StringDictionary[
-    js.Function3[/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope, String]
+    js.Function3[/* $viewValue */ Any, /* $modelValue */ Any, /* scope */ ITemplateScope, String]
   ]
 }
 object IValidationMessages {
@@ -24,7 +24,7 @@ object IValidationMessages {
     addStringMessage: (String, String) => Unit,
     addTemplateOptionValueMessage: (String, String, String, String, String) => Unit,
     messages: StringDictionary[
-      js.Function3[/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope, String]
+      js.Function3[/* $viewValue */ Any, /* $modelValue */ Any, /* scope */ ITemplateScope, String]
     ]
   ): IValidationMessages = {
     val __obj = js.Dynamic.literal(addStringMessage = js.Any.fromFunction2(addStringMessage), addTemplateOptionValueMessage = js.Any.fromFunction5(addTemplateOptionValueMessage), messages = messages.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object IValidationMessages {
     
     inline def setMessages(
       value: StringDictionary[
-          js.Function3[/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope, String]
+          js.Function3[/* $viewValue */ Any, /* $modelValue */ Any, /* scope */ ITemplateScope, String]
         ]
     ): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
   }

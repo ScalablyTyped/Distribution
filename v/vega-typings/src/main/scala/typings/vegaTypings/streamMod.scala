@@ -1,10 +1,11 @@
 package typings.vegaTypings
 
-import typings.vegaTypings.anon.Source
-import typings.vegaTypings.anon.Type
 import typings.vegaTypings.exprMod.Expr
 import typings.vegaTypings.marktypeMod.MarkType
-import typings.vegaTypings.onEventsMod._EventListener
+import typings.vegaTypings.onEventsMod.EventListener
+import typings.vegaTypings.vegaTypingsStrings.scope
+import typings.vegaTypings.vegaTypingsStrings.view
+import typings.vegaTypings.vegaTypingsStrings.window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ object streamMod {
   trait DerivedStream
     extends StObject
        with StreamParameters
-       with _Stream {
+       with Stream {
     
     var stream: Stream
   }
@@ -31,9 +32,29 @@ object streamMod {
     }
   }
   
-  type EventSource = (/* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/stream.EventStream['source'] */ js.Any) & js.Object
+  type EventSource = (js.UndefOr[view | scope | window]) & js.Object
   
-  type EventStream = StreamParameters & (Source | Type)
+  /* Rewritten from type alias, can be one of: 
+    - typings.vegaTypings.anon.sourceviewscopeundefinedt
+    - typings.vegaTypings.anon.sourcewindowtypeWindowEveBetween
+  */
+  trait EventStream
+    extends StObject
+       with Stream
+  object EventStream {
+    
+    inline def sourceviewscopeundefinedt(`type`: EventType): typings.vegaTypings.anon.sourceviewscopeundefinedt = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.vegaTypings.anon.sourceviewscopeundefinedt]
+    }
+    
+    inline def sourcewindowtypeWindowEveBetween(`type`: WindowEventType): typings.vegaTypings.anon.sourcewindowtypeWindowEveBetween = {
+      val __obj = js.Dynamic.literal(source = "window")
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.vegaTypings.anon.sourcewindowtypeWindowEveBetween]
+    }
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaTypings.vegaTypingsStrings.click
@@ -101,7 +122,7 @@ object streamMod {
   trait MergedStream
     extends StObject
        with StreamParameters
-       with _Stream {
+       with Stream {
     
     var merge: js.Array[Stream]
   }
@@ -116,7 +137,7 @@ object streamMod {
       
       inline def setMerge(value: js.Array[Stream]): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
       
-      inline def setMergeVarargs(value: Stream*): Self = StObject.set(x, "merge", js.Array(value :_*))
+      inline def setMergeVarargs(value: Stream*): Self = StObject.set(x, "merge", js.Array(value*))
     }
   }
   
@@ -125,7 +146,33 @@ object streamMod {
     - typings.vegaTypings.streamMod.DerivedStream
     - typings.vegaTypings.streamMod.MergedStream
   */
-  type Stream = _Stream | EventStream
+  trait Stream
+    extends StObject
+       with EventListener
+  object Stream {
+    
+    inline def DerivedStream(stream: Stream): typings.vegaTypings.streamMod.DerivedStream = {
+      val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.vegaTypings.streamMod.DerivedStream]
+    }
+    
+    inline def MergedStream(merge: js.Array[Stream]): typings.vegaTypings.streamMod.MergedStream = {
+      val __obj = js.Dynamic.literal(merge = merge.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.vegaTypings.streamMod.MergedStream]
+    }
+    
+    inline def sourceviewscopeundefinedt(`type`: EventType): typings.vegaTypings.anon.sourceviewscopeundefinedt = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.vegaTypings.anon.sourceviewscopeundefinedt]
+    }
+    
+    inline def sourcewindowtypeWindowEveBetween(`type`: WindowEventType): typings.vegaTypings.anon.sourcewindowtypeWindowEveBetween = {
+      val __obj = js.Dynamic.literal(source = "window")
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.vegaTypings.anon.sourcewindowtypeWindowEveBetween]
+    }
+  }
   
   trait StreamParameters extends StObject {
     
@@ -156,7 +203,7 @@ object streamMod {
       
       inline def setBetweenUndefined: Self = StObject.set(x, "between", js.undefined)
       
-      inline def setBetweenVarargs(value: Stream*): Self = StObject.set(x, "between", js.Array(value :_*))
+      inline def setBetweenVarargs(value: Stream*): Self = StObject.set(x, "between", js.Array(value*))
       
       inline def setConsume(value: Boolean): Self = StObject.set(x, "consume", value.asInstanceOf[js.Any])
       
@@ -170,7 +217,7 @@ object streamMod {
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      inline def setFilterVarargs(value: Expr*): Self = StObject.set(x, "filter", js.Array(value :_*))
+      inline def setFilterVarargs(value: Expr*): Self = StObject.set(x, "filter", js.Array(value*))
       
       inline def setMarkname(value: String): Self = StObject.set(x, "markname", value.asInstanceOf[js.Any])
       
@@ -187,20 +234,4 @@ object streamMod {
   }
   
   type WindowEventType = EventType | String
-  
-  trait _Stream
-    extends StObject
-       with _EventListener
-  object _Stream {
-    
-    inline def DerivedStream(stream: Stream): typings.vegaTypings.streamMod.DerivedStream = {
-      val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.vegaTypings.streamMod.DerivedStream]
-    }
-    
-    inline def MergedStream(merge: js.Array[Stream]): typings.vegaTypings.streamMod.MergedStream = {
-      val __obj = js.Dynamic.literal(merge = merge.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.vegaTypings.streamMod.MergedStream]
-    }
-  }
 }

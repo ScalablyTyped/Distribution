@@ -2,7 +2,6 @@ package typings.reactFns
 
 import typings.react.mod.Component
 import typings.reactFns.typesMod.SharedRenderProps
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +10,13 @@ object networkNetworkMod {
   
   @JSImport("react-fns/dist/Network/Network", "Network")
   @js.native
-  class Network protected ()
-    extends Component[SharedRenderProps[NetworkProps], NetworkProps, js.Any] {
+  open class Network protected () extends Component[SharedRenderProps[NetworkProps], NetworkProps, Any] {
     def this(props: SharedRenderProps[NetworkProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SharedRenderProps[NetworkProps], context: js.Any) = this()
+    def this(props: SharedRenderProps[NetworkProps], context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MNetwork(): Unit = js.native
@@ -33,7 +31,7 @@ object networkNetworkMod {
   
   trait NetworkProps extends StObject {
     
-    var offlineAt: js.UndefOr[Date] = js.undefined
+    var offlineAt: js.UndefOr[js.Date] = js.undefined
     
     var online: Boolean
   }
@@ -46,7 +44,7 @@ object networkNetworkMod {
     
     extension [Self <: NetworkProps](x: Self) {
       
-      inline def setOfflineAt(value: Date): Self = StObject.set(x, "offlineAt", value.asInstanceOf[js.Any])
+      inline def setOfflineAt(value: js.Date): Self = StObject.set(x, "offlineAt", value.asInstanceOf[js.Any])
       
       inline def setOfflineAtUndefined: Self = StObject.set(x, "offlineAt", js.undefined)
       

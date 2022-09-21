@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Lomax")
 @js.native
-class Lomax ()
+open class Lomax ()
   extends typings.ranjs.mod.dist.Lomax {
   def this(lambda: Double) = this()
   def this(lambda: Double, alpha: Double) = this()

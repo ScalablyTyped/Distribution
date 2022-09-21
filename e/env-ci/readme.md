@@ -9,16 +9,16 @@ Get environment variables exposed by CI services
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | env-ci |
-| Keywords           | appveyor, bamboo, bitbucket, bitrise, buddy, buildkite, ci, circle, cirrus, codebuild, codefresh, codeship, drone, environment, git, github, gitlab, jenkins, puppet, sail, scrutinizer, semaphore, shippable, teamcity, travis, variable, vsts, wercker |
-| # releases         | 17 |
-| # dependents       | 76 |
-| # downloads        | 46997151 |
-| # stars            | 0 |
+| Keywords           | appveyor, azure-pipelines, bamboo, bitbucket, bitrise, buddy, buildkite, ci, circle, cirrus, cloudflare, codebuild, codefresh, codeship, drone, environment, git, github, gitlab, jenkins, netlify, puppet, sail, scrutinizer, semaphore, shippable, teamcity, travis, variable, wercker, woodpecker |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 5819279.666666667 |
+| # stars            | 205.0 |
 
 ## Links
-- [Homepage](https://github.com/pvdlg/env-ci#readme)
-- [Bugs](https://github.com/pvdlg/github-parser/issues)
-- [Repository](https://github.com/pvdlg/env-ci)
+- [Homepage](https://github.com/semantic-release/env-ci#readme)
+- [Bugs](https://github.com/semantic-release/env-ci/issues)
+- [Repository](https://github.com/semantic-release/env-ci)
 - [Npm](https://www.npmjs.com/package/env-ci)
     
 

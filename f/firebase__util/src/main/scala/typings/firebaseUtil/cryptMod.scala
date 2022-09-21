@@ -2,24 +2,25 @@ package typings.firebaseUtil
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cryptMod {
   
-  @JSImport("@firebase/util/dist/src/crypt", JSImport.Namespace)
+  @JSImport("@firebase/util/dist/node-esm/src/crypt", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@firebase/util/dist/src/crypt", "base64")
+  @JSImport("@firebase/util/dist/node-esm/src/crypt", "base64")
   @js.native
   val base64: Base64_ = js.native
   
   inline def base64Decode(str: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Decode")(str.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   inline def base64Encode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Encode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def base64urlEncodeWithoutPadding(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64urlEncodeWithoutPadding")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait Base64_ extends StObject {
@@ -46,8 +47,8 @@ object cryptMod {
     
     def encodeByteArray(input: js.Array[Double]): String = js.native
     def encodeByteArray(input: js.Array[Double], webSafe: Boolean): String = js.native
-    def encodeByteArray(input: Uint8Array): String = js.native
-    def encodeByteArray(input: Uint8Array, webSafe: Boolean): String = js.native
+    def encodeByteArray(input: js.typedarray.Uint8Array): String = js.native
+    def encodeByteArray(input: js.typedarray.Uint8Array, webSafe: Boolean): String = js.native
     
     def encodeString(input: String): String = js.native
     def encodeString(input: String, webSafe: Boolean): String = js.native

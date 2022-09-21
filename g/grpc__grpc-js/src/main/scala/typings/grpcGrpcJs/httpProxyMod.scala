@@ -1,7 +1,7 @@
 package typings.grpcGrpcJs
 
 import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
-import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
+import typings.grpcGrpcJs.subchannelAddressMod.SubchannelAddress
 import typings.grpcGrpcJs.uriParserMod.GrpcUri
 import typings.node.netMod.Socket
 import typings.node.tlsMod.ConnectionOptions

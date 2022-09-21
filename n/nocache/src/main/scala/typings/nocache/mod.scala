@@ -10,12 +10,12 @@ object mod {
   
   inline def apply(): js.Function3[
     /* _req */ IncomingMessage, 
-    /* res */ ServerResponse, 
+    /* res */ ServerResponse[IncomingMessage], 
     /* next */ js.Function0[Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function3[
     /* _req */ IncomingMessage, 
-    /* res */ ServerResponse, 
+    /* res */ ServerResponse[IncomingMessage], 
     /* next */ js.Function0[Unit], 
     Unit
   ]]

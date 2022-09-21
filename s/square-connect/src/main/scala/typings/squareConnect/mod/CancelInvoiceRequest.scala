@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CancelInvoiceRequest")
 @js.native
-class CancelInvoiceRequest () extends StObject {
+open class CancelInvoiceRequest () extends StObject {
   
   /**
     * The version of the `invoice` to cancel.

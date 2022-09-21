@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLDefaults")
 @js.native
-/* private */ class HTMLDefaults ()
+/* private */ open class HTMLDefaults ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLDefaults {
   
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var canHaveHTML: Boolean = js.native
   
   /* CompleteClass */
-  override val constructor: js.Any = js.native
+  override val constructor: Any = js.native
   
   /* CompleteClass */
   var contentEditable: String = js.native

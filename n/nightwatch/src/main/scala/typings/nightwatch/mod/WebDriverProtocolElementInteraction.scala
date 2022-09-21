@@ -9,6 +9,9 @@ trait WebDriverProtocolElementInteraction extends StObject {
   
   /**
     * Scrolls into view a submittable element excluding buttons or editable element, and then attempts to clear its value, reset the checked state, or text content.
+    *
+    * @example
+    * browser.elementIdClear(elementId);
     */
   def elementIdClear(id: String): this.type = js.native
   def elementIdClear(
@@ -17,31 +20,33 @@ trait WebDriverProtocolElementInteraction extends StObject {
   ): this.type = js.native
   
   /**
-    * Scrolls into view the element and clicks the in-view center point. If the element is not pointer-interactable, an <code>element not interactable</code> error is returned.
+    * Scrolls into view the element and clicks the in-view center point.
+    * If the element is not pointer-interactable,
+    * an <code>element not interactable</code> error is returned.
+    *
+    * @example
+    * browser.elementIdClick(elementId);
     */
-  def elementIdClick(id: String): this.type = js.native
+  def elementIdClick(id: String): Awaitable[this.type, Null] = js.native
   def elementIdClick(
     id: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Scrolls into view the form control element and then sends the provided keys to the element, or returns the current value of the element.
     * In case the element is not keyboard interactable, an <code>element not interactable error</code> is returned.
     */
   def elementIdValue(id: String): this.type = js.native
-  def elementIdValue(
-    id: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
-  /**
-    * Scrolls into view the form control element and then sends the provided keys to the element, or returns the current value of the element.
-    * In case the element is not keyboard interactable, an <code>element not interactable error</code> is returned.
-    */
   def elementIdValue(id: String, value: String): this.type = js.native
   def elementIdValue(
     id: String,
     value: String,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def elementIdValue(
+    id: String,
+    value: Unit,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
   
@@ -52,7 +57,18 @@ trait WebDriverProtocolElementInteraction extends StObject {
     *
     * Rather than the `setValue`, the modifiers are not released at the end of the call. The state of the modifier keys is kept between calls,
     * so mouse interactions can be performed while modifier keys are depressed.
+    *
+    * @example
+    * browser
+    * .keys(browser.Keys.CONTROL) // hold down CONTROL key
+    * .click('#element')
+    * .keys(browser.Keys.NULL) // release all keys
     */
+  def keys(keysToSend: String): this.type = js.native
+  def keys(
+    keysToSend: String,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
   def keys(keysToSend: js.Array[String]): this.type = js.native
   def keys(
     keysToSend: js.Array[String],
@@ -61,6 +77,9 @@ trait WebDriverProtocolElementInteraction extends StObject {
   
   /**
     * Submit a FORM element. The submit command may also be applied to any element that is a descendant of a FORM element.
+    *
+    * @example
+    * browser.submit(elementID);
     */
   def submit(id: String): this.type = js.native
   def submit(

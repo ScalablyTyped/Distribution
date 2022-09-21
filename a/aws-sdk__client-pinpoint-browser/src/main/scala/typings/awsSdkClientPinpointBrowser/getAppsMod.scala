@@ -8,5 +8,5 @@ object getAppsMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/GetApps", "GetApps")
   @js.native
-  val GetApps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetApps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

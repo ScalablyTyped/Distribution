@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Arguments extends StObject {
   
-  var arguments: js.UndefOr[js.Any] = js.undefined
+  var arguments: js.UndefOr[Any] = js.undefined
   
   var command: String
   
@@ -25,7 +25,7 @@ object Arguments {
   
   extension [Self <: Arguments](x: Self) {
     
-    inline def setArguments(value: js.Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     

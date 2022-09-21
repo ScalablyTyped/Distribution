@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Get multiple tracks
-  * 
+  *
   * GET /v1/tracks?ids={ids}
   * https://developer.spotify.com/web-api/get-several-tracks/
   */
@@ -25,6 +25,6 @@ object MultipleTracksResponse {
     
     inline def setTracks(value: js.Array[TrackObjectFull]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
-    inline def setTracksVarargs(value: TrackObjectFull*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: TrackObjectFull*): Self = StObject.set(x, "tracks", js.Array(value*))
   }
 }

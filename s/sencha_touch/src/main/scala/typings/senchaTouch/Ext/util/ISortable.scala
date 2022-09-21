@@ -28,7 +28,7 @@ trait ISortable
     */
   var sort: js.UndefOr[
     js.Function4[
-      /* sorters */ js.UndefOr[js.Any], 
+      /* sorters */ js.UndefOr[Any], 
       /* direction */ js.UndefOr[String], 
       /* where */ js.UndefOr[String], 
       /* doSort */ js.UndefOr[Boolean], 
@@ -64,7 +64,7 @@ object ISortable {
     inline def setIsSortableUndefined: Self = StObject.set(x, "isSortable", js.undefined)
     
     inline def setSort(
-      value: (/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String], /* where */ js.UndefOr[String], /* doSort */ js.UndefOr[Boolean]) => Array
+      value: (/* sorters */ js.UndefOr[Any], /* direction */ js.UndefOr[String], /* where */ js.UndefOr[String], /* doSort */ js.UndefOr[Boolean]) => Array
     ): Self = StObject.set(x, "sort", js.Any.fromFunction4(value))
     
     inline def setSortRoot(value: String): Self = StObject.set(x, "sortRoot", value.asInstanceOf[js.Any])

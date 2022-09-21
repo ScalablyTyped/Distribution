@@ -47,7 +47,7 @@ object baseExtendedPickerTypesMod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value*))
     }
   }
   
@@ -199,7 +199,7 @@ object baseExtendedPickerTypesMod {
       
       inline def setDefaultSelectedItemsUndefined: Self = StObject.set(x, "defaultSelectedItems", js.undefined)
       
-      inline def setDefaultSelectedItemsVarargs(value: T*): Self = StObject.set(x, "defaultSelectedItems", js.Array(value :_*))
+      inline def setDefaultSelectedItemsVarargs(value: T*): Self = StObject.set(x, "defaultSelectedItems", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -223,7 +223,7 @@ object baseExtendedPickerTypesMod {
       
       inline def setItemLimitUndefined: Self = StObject.set(x, "itemLimit", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement | Autofill] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement | Autofill, typings.std.Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -231,7 +231,7 @@ object baseExtendedPickerTypesMod {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement | Autofill] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement | Autofill, typings.std.Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -261,13 +261,13 @@ object baseExtendedPickerTypesMod {
       
       inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
-      inline def setSelectedItemsVarargs(value: T*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+      inline def setSelectedItemsVarargs(value: T*): Self = StObject.set(x, "selectedItems", js.Array(value*))
       
       inline def setSuggestionItems(value: js.Array[T]): Self = StObject.set(x, "suggestionItems", value.asInstanceOf[js.Any])
       
       inline def setSuggestionItemsUndefined: Self = StObject.set(x, "suggestionItems", js.undefined)
       
-      inline def setSuggestionItemsVarargs(value: T*): Self = StObject.set(x, "suggestionItems", js.Array(value :_*))
+      inline def setSuggestionItemsVarargs(value: T*): Self = StObject.set(x, "suggestionItems", js.Array(value*))
     }
   }
 }

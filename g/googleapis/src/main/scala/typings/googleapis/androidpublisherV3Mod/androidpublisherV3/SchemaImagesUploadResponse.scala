@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaImagesUploadResponse extends StObject {
   
+  /**
+    * The uploaded image.
+    */
   var image: js.UndefOr[SchemaImage] = js.undefined
 }
 object SchemaImagesUploadResponse {

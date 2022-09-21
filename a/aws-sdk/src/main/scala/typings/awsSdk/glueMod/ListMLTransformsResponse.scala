@@ -31,6 +31,6 @@ object ListMLTransformsResponse {
     
     inline def setTransformIds(value: TransformIdList): Self = StObject.set(x, "TransformIds", value.asInstanceOf[js.Any])
     
-    inline def setTransformIdsVarargs(value: HashString*): Self = StObject.set(x, "TransformIds", js.Array(value :_*))
+    inline def setTransformIdsVarargs(value: HashString*): Self = StObject.set(x, "TransformIds", js.Array(value*))
   }
 }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "PolarGrid")
 @js.native
-class PolarGrid protected ()
-  extends Component[PolarGridProps, js.Object, js.Any] {
+open class PolarGrid protected ()
+  extends Component[PolarGridProps, js.Object, Any] {
   def this(props: PolarGridProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: PolarGridProps, context: js.Any) = this()
+  def this(props: PolarGridProps, context: Any) = this()
 }

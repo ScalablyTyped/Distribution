@@ -16,7 +16,7 @@ object panelMod {
     *
     * @param options - The options for initializing the panel.
     */
-  class Panel () extends Widget {
+  open class Panel () extends Widget {
     def this(options: IOptions) = this()
     
     /**

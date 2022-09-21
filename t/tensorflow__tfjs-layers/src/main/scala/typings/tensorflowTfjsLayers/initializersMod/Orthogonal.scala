@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/initializers", "Orthogonal")
 @js.native
-class Orthogonal () extends Initializer {
+open class Orthogonal () extends Initializer {
   def this(args: OrthogonalArgs) = this()
   
   val DEFAULT_GAIN: /* 1 */ Double = js.native

@@ -22,17 +22,17 @@ trait PopupTemplate
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#content)
     */
-  var content: js.Array[Content_] | String | js.Function | js.Promise[js.Any] = js.native
+  var content: js.Array[Content_] | String | js.Function | js.Promise[Any] = js.native
   
   /**
-    * An array of objects or [ExpressionInfo[]](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html) that reference [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions.
+    * An array of objects or [ExpressionInfo[]](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html) that reference [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expressions following the specification defined by the [Arcade Popup Profile](https://developers.arcgis.com/javascript/latest/arcade/#popup).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#expressionInfos)
     */
   var expressionInfos: js.Array[popupExpressionInfo] = js.native
   
   /**
-    * An array of [FieldInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html) that defines how fields in the dataset or values from [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions participate in a popup.
+    * An array of [FieldInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html) that defines how fields in the dataset or values from [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expressions participate in a popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#fieldInfos)
     */
@@ -40,6 +40,8 @@ trait PopupTemplate
   
   /**
     * Indicates whether or not editor tracking should display.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#lastEditInfoEnabled)
     */
@@ -55,12 +57,16 @@ trait PopupTemplate
   /**
     * An array of field names used in the PopupTemplate.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#outFields)
     */
   var outFields: js.Array[String] = js.native
   
   /**
     * Indicates whether actions should replace existing [popup actions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#actions).
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#overwriteActions)
     */
@@ -74,9 +80,18 @@ trait PopupTemplate
   var relatedRecordsInfo: RelatedRecordsInfo = js.native
   
   /**
+    * Indicates whether to include the feature's geometry for use by the template.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#returnGeometry)
+    */
+  var returnGeometry: Boolean = js.native
+  
+  /**
     * The template for defining how to format the title used in a popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#title)
     */
-  var title: String | js.Function | js.Promise[js.Any] = js.native
+  var title: String | js.Function | js.Promise[Any] = js.native
 }

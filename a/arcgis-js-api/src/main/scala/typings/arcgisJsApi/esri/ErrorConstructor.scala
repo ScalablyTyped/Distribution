@@ -10,11 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ErrorConstructor
   extends StObject
-     with Instantiable1[/* name */ String, Error]
+     with /**
+  * Error is a class that enhances the debugging and error handling process.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html)
+  */
+Instantiable1[/* name */ String, Error]
      with Instantiable2[/* name */ String, /* message */ String, Error]
      with Instantiable3[
       /* name */ String, 
-      (/* message */ String) | (/* message */ Unit), 
-      /* details */ js.Any, 
+      (/* message */ String) | (/* message */ scala.Unit), 
+      /* details */ Any, 
       Error
     ]

@@ -1,6 +1,6 @@
 package typings.streamBuffers
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
 import typings.node.streamMod.Writable
@@ -30,7 +30,7 @@ object mod {
   
   @JSImport("stream-buffers", "ReadableStreamBuffer")
   @js.native
-  class ReadableStreamBuffer () extends Readable {
+  open class ReadableStreamBuffer () extends Readable {
     def this(options: ReadableStreamBufferOptions) = this()
     
     def maxSize(): Double = js.native
@@ -47,7 +47,7 @@ object mod {
   
   @JSImport("stream-buffers", "WritableStreamBuffer")
   @js.native
-  class WritableStreamBuffer () extends Writable {
+  open class WritableStreamBuffer () extends Writable {
     def this(options: WritableStreamBufferOptions) = this()
     
     def getContents(): Buffer | `false` = js.native

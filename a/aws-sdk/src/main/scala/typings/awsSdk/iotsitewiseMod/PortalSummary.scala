@@ -9,7 +9,7 @@ trait PortalSummary extends StObject {
   /**
     * The date the portal was created, in Unix epoch time.
     */
-  var creationDate: js.UndefOr[Timestamp] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The portal's description.
@@ -24,7 +24,7 @@ trait PortalSummary extends StObject {
   /**
     * The date the portal was last updated, in Unix epoch time.
     */
-  var lastUpdateDate: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the portal.
@@ -32,12 +32,12 @@ trait PortalSummary extends StObject {
   var name: Name
   
   /**
-    * The ARN of the service role that allows the portal's users to access your AWS IoT SiteWise resources on your behalf. For more information, see Using service roles for AWS IoT SiteWise Monitor in the AWS IoT SiteWise User Guide.
+    * The ARN of the service role that allows the portal's users to access your IoT SiteWise resources on your behalf. For more information, see Using service roles for IoT SiteWise Monitor in the IoT SiteWise User Guide.
     */
   var roleArn: js.UndefOr[ARN] = js.undefined
   
   /**
-    * The URL for the AWS IoT SiteWise Monitor portal. You can use this URL to access portals that use AWS SSO for authentication. For portals that use IAM for authentication, you must use the CreatePresignedPortalUrl operation to create a URL that you can use to access the portal.
+    * The URL for the IoT SiteWise Monitor portal. You can use this URL to access portals that use Amazon Web Services SSO for authentication. For portals that use IAM for authentication, you must use the IoT SiteWise console to get a URL that you can use to access the portal.
     */
   var startUrl: Url
   
@@ -52,7 +52,7 @@ object PortalSummary {
   
   extension [Self <: PortalSummary](x: Self) {
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
@@ -62,7 +62,7 @@ object PortalSummary {
     
     inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdateDate(value: Timestamp): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdateDate(value: js.Date): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateDateUndefined: Self = StObject.set(x, "lastUpdateDate", js.undefined)
     

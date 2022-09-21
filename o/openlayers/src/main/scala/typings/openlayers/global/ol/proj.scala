@@ -46,7 +46,7 @@ object proj {
     */
   @JSGlobal("ol.proj.Projection")
   @js.native
-  class Projection protected ()
+  open class Projection protected ()
     extends typings.openlayers.mod.proj.Projection {
     /**
       * @classdesc
@@ -200,7 +200,7 @@ object proj {
     * @param proj4 Proj4.
     * @api
     */
-  inline def setProj4(proj4: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setProj4")(proj4.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setProj4(proj4: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setProj4")(proj4.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Transforms a coordinate to longitude/latitude.

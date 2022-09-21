@@ -12,12 +12,10 @@ object hueHueMod {
   
   @JSImport("react-color/lib/components/hue/Hue", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[HuePickerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[HuePickerProps, js.Object, Any]
   
-  @js.native
-  trait HuePicker
-    extends Component[HuePickerProps, js.Object, js.Any]
+  type HuePicker = Component[HuePickerProps, js.Object, Any]
   
   trait HuePickerProps
     extends StObject

@@ -20,7 +20,7 @@ object events {
     */
   @JSImport("openlayers", "events.Event")
   @js.native
-  class Event protected () extends StObject {
+  open class Event protected () extends StObject {
     /**
       * @classdesc
       * Stripped down implementation of the W3C DOM Level 2 Event interface.
@@ -94,7 +94,7 @@ object events {
     *    returns false.
     *
     */
-  class EventTarget () extends Disposable
+  open class EventTarget () extends Disposable
   
   object condition {
     

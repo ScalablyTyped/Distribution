@@ -10,6 +10,7 @@ object mod {
     * Clear the terminal screen if possible.
     */
   inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(clear: Boolean): Unit = ^.asInstanceOf[js.Dynamic].apply(clear.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def apply(opts: ClearOptions): Unit = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("clear", JSImport.Namespace)

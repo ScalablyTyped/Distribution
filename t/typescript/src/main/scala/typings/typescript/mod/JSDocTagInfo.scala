@@ -8,7 +8,7 @@ trait JSDocTagInfo extends StObject {
   
   var name: java.lang.String
   
-  var text: js.UndefOr[java.lang.String] = js.undefined
+  var text: js.UndefOr[js.Array[SymbolDisplayPart]] = js.undefined
 }
 object JSDocTagInfo {
   
@@ -21,8 +21,10 @@ object JSDocTagInfo {
     
     inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: js.Array[SymbolDisplayPart]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setTextVarargs(value: SymbolDisplayPart*): Self = StObject.set(x, "text", js.Array(value*))
   }
 }

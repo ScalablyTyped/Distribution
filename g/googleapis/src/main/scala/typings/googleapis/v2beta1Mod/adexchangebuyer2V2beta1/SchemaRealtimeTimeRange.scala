@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An open-ended realtime time range specified by the start timestamp. For
-  * filter sets that specify a realtime time range RTB metrics continue to be
-  * aggregated throughout the lifetime of the filter set.
-  */
 trait SchemaRealtimeTimeRange extends StObject {
   
   /**
     * The start timestamp of the real-time RTB metrics aggregation.
     */
-  var startTimestamp: js.UndefOr[String] = js.undefined
+  var startTimestamp: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaRealtimeTimeRange {
   
@@ -26,6 +21,8 @@ object SchemaRealtimeTimeRange {
   extension [Self <: SchemaRealtimeTimeRange](x: Self) {
     
     inline def setStartTimestamp(value: String): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimestampNull: Self = StObject.set(x, "startTimestamp", null)
     
     inline def setStartTimestampUndefined: Self = StObject.set(x, "startTimestamp", js.undefined)
   }

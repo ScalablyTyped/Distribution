@@ -12,11 +12,11 @@ trait ButtonClick extends StObject {
   
   var buttonType: String
   
-  var styles: StringDictionary[RegisteredStyle[js.Any]]
+  var styles: StringDictionary[RegisteredStyle[Any]]
 }
 object ButtonClick {
   
-  inline def apply(buttonClick: () => Unit, buttonType: String, styles: StringDictionary[RegisteredStyle[js.Any]]): ButtonClick = {
+  inline def apply(buttonClick: () => Unit, buttonType: String, styles: StringDictionary[RegisteredStyle[Any]]): ButtonClick = {
     val __obj = js.Dynamic.literal(buttonClick = js.Any.fromFunction0(buttonClick), buttonType = buttonType.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonClick]
   }
@@ -27,6 +27,6 @@ object ButtonClick {
     
     inline def setButtonType(value: String): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
     
-    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

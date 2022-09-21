@@ -31,31 +31,31 @@ object anon {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCancelVarargs(value: Double*): Self = StObject.set(x, "cancel", js.Array(value :_*))
+      inline def setCancelVarargs(value: Double*): Self = StObject.set(x, "cancel", js.Array(value*))
       
       inline def setDown(value: js.Array[Double]): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       
       inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
       
-      inline def setDownVarargs(value: Double*): Self = StObject.set(x, "down", js.Array(value :_*))
+      inline def setDownVarargs(value: Double*): Self = StObject.set(x, "down", js.Array(value*))
       
       inline def setDrop(value: js.Array[Double]): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
       
       inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
       
-      inline def setDropVarargs(value: Double*): Self = StObject.set(x, "drop", js.Array(value :_*))
+      inline def setDropVarargs(value: Double*): Self = StObject.set(x, "drop", js.Array(value*))
       
       inline def setLift(value: js.Array[Double]): Self = StObject.set(x, "lift", value.asInstanceOf[js.Any])
       
       inline def setLiftUndefined: Self = StObject.set(x, "lift", js.undefined)
       
-      inline def setLiftVarargs(value: Double*): Self = StObject.set(x, "lift", js.Array(value :_*))
+      inline def setLiftVarargs(value: Double*): Self = StObject.set(x, "lift", js.Array(value*))
       
       inline def setUp(value: js.Array[Double]): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
       
       inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
       
-      inline def setUpVarargs(value: Double*): Self = StObject.set(x, "up", js.Array(value :_*))
+      inline def setUpVarargs(value: Double*): Self = StObject.set(x, "up", js.Array(value*))
     }
   }
   

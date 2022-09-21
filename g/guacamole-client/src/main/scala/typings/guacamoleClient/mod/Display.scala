@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "Display")
 @js.native
-class Display ()
+open class Display ()
   extends typings.guacamoleClient.displayMod.Display

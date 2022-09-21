@@ -12,7 +12,7 @@ trait UpdateMaintenanceWindowRequest extends StObject {
   var AllowUnassociatedTargets: js.UndefOr[MaintenanceWindowAllowUnassociatedTargets] = js.undefined
   
   /**
-    * The number of hours before the end of the maintenance window that Systems Manager stops scheduling new tasks for execution.
+    * The number of hours before the end of the maintenance window that Amazon Web Services Systems Manager stops scheduling new tasks for execution.
     */
   var Cutoff: js.UndefOr[MaintenanceWindowCutoff] = js.undefined
   
@@ -42,7 +42,7 @@ trait UpdateMaintenanceWindowRequest extends StObject {
   var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   
   /**
-    * If True, then all fields that are required by the CreateMaintenanceWindow action are also required for this API request. Optional fields that are not specified are set to null. 
+    * If True, then all fields that are required by the CreateMaintenanceWindow operation are also required for this API request. Optional fields that aren't specified are set to null. 
     */
   var Replace: js.UndefOr[Boolean] = js.undefined
   
@@ -52,17 +52,17 @@ trait UpdateMaintenanceWindowRequest extends StObject {
   var Schedule: js.UndefOr[MaintenanceWindowSchedule] = js.undefined
   
   /**
-    * The number of days to wait after the date and time specified by a CRON expression before running the maintenance window. For example, the following cron expression schedules a maintenance window to run the third Tuesday of every month at 11:30 PM.  cron(0 30 23 ? * TUE#3 *)  If the schedule offset is 2, the maintenance window won't run until two days later.
+    * The number of days to wait after the date and time specified by a cron expression before running the maintenance window. For example, the following cron expression schedules a maintenance window to run the third Tuesday of every month at 11:30 PM.  cron(30 23 ? * TUE#3 *)  If the schedule offset is 2, the maintenance window won't run until two days later.
     */
   var ScheduleOffset: js.UndefOr[MaintenanceWindowOffset] = js.undefined
   
   /**
-    * The time zone that the scheduled maintenance window executions are based on, in Internet Assigned Numbers Authority (IANA) format. For example: "America/Los_Angeles", "etc/UTC", or "Asia/Seoul". For more information, see the Time Zone Database on the IANA website.
+    * The time zone that the scheduled maintenance window executions are based on, in Internet Assigned Numbers Authority (IANA) format. For example: "America/Los_Angeles", "UTC", or "Asia/Seoul". For more information, see the Time Zone Database on the IANA website.
     */
   var ScheduleTimezone: js.UndefOr[MaintenanceWindowTimezone] = js.undefined
   
   /**
-    * The time zone that the scheduled maintenance window executions are based on, in Internet Assigned Numbers Authority (IANA) format. For example: "America/Los_Angeles", "etc/UTC", or "Asia/Seoul". For more information, see the Time Zone Database on the IANA website.
+    * The date and time, in ISO-8601 Extended format, for when you want the maintenance window to become active. StartDate allows you to delay activation of the maintenance window until the specified future date.
     */
   var StartDate: js.UndefOr[MaintenanceWindowStringDateTime] = js.undefined
   

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "Radio")
 @js.native
-class Radio protected () extends _MDLComponent[RadioProps] {
+open class Radio protected () extends _MDLComponent[RadioProps] {
   def this(props: RadioProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: RadioProps, context: js.Any) = this()
+  def this(props: RadioProps, context: Any) = this()
 }

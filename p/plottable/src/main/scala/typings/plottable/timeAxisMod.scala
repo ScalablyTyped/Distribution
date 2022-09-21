@@ -13,7 +13,6 @@ import typings.plottable.plottableStrings.second
 import typings.plottable.plottableStrings.top
 import typings.plottable.plottableStrings.week
 import typings.plottable.plottableStrings.year
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +43,8 @@ object timeAxisMod {
   
   @JSImport("plottable/build/src/axes/timeAxis", "Time")
   @js.native
-  class Time protected () extends Axis[Date] {
+  open class Time protected ()
+    extends Axis[js.Date] {
     /**
       * Constructs a Time Axis.
       *
@@ -63,58 +63,58 @@ object timeAxisMod {
       * Check if tier configuration fits in the current width and satisfied the
       * max TimeInterval precision limit.
       */
-    /* private */ def _checkTimeAxisTierConfiguration(config: js.Any): js.Any = js.native
+    /* private */ var _checkTimeAxisTierConfiguration: Any = js.native
     
-    /* private */ def _cleanTiers(): js.Any = js.native
+    /* private */ var _cleanTiers: Any = js.native
     
-    /* private */ def _generateLabellessTicks(): js.Any = js.native
+    /* private */ var _generateLabellessTicks: Any = js.native
     
-    /* private */ def _getIntervalLength(config: js.Any): js.Any = js.native
+    /* private */ var _getIntervalLength: Any = js.native
     
     /**
       * Gets the index of the most precise TimeAxisConfiguration that will fit in the current width.
       */
-    /* private */ def _getMostPreciseConfigurationIndex(): js.Any = js.native
+    /* private */ var _getMostPreciseConfigurationIndex: Any = js.native
     
-    /* private */ def _getTickIntervalValues(config: js.Any): js.Any = js.native
+    /* private */ var _getTickIntervalValues: Any = js.native
     
-    /* private */ def _getTickValuesForConfiguration(config: js.Any): js.Any = js.native
+    /* private */ var _getTickValuesForConfiguration: Any = js.native
     
-    /* private */ def _hideOverflowingTiers(): js.Any = js.native
+    /* private */ var _hideOverflowingTiers: Any = js.native
     
-    /* private */ def _hideOverlappingAndCutOffLabels(index: js.Any): js.Any = js.native
+    /* private */ var _hideOverlappingAndCutOffLabels: Any = js.native
     
-    /* private */ var _maxTimeIntervalPrecision: js.Any = js.native
+    /* private */ var _maxTimeIntervalPrecision: Any = js.native
     
-    /* private */ def _maxWidthForInterval(config: js.Any): js.Any = js.native
+    /* private */ var _maxWidthForInterval: Any = js.native
     
-    /* private */ var _measurer: js.Any = js.native
+    /* private */ var _measurer: Any = js.native
     
-    /* private */ var _mostPreciseConfigIndex: js.Any = js.native
+    /* private */ var _mostPreciseConfigIndex: Any = js.native
     
-    /* private */ var _numTiers: js.Any = js.native
+    /* private */ var _numTiers: Any = js.native
     
-    /* private */ var _possibleTimeAxisConfigurations: js.Any = js.native
+    /* private */ var _possibleTimeAxisConfigurations: Any = js.native
     
-    /* private */ def _renderLabellessTickMarks(tickValues: js.Any): js.Any = js.native
+    /* private */ var _renderLabellessTickMarks: Any = js.native
     
-    /* private */ def _renderTickMarks(tickValues: js.Any, index: js.Any): js.Any = js.native
+    /* private */ var _renderTickMarks: Any = js.native
     
-    /* private */ def _renderTierLabels(container: js.Any, config: js.Any, index: js.Any): js.Any = js.native
+    /* private */ var _renderTierLabels: Any = js.native
     
-    /* private */ def _setupDomElements(): js.Any = js.native
+    /* private */ var _setupDomElements: Any = js.native
     
-    /* private */ var _tierBaselines: js.Any = js.native
+    /* private */ var _tierBaselines: Any = js.native
     
-    /* private */ var _tierHeights: js.Any = js.native
+    /* private */ var _tierHeights: Any = js.native
     
-    /* private */ var _tierLabelContainers: js.Any = js.native
+    /* private */ var _tierLabelContainers: Any = js.native
     
-    /* private */ var _tierLabelPositions: js.Any = js.native
+    /* private */ var _tierLabelPositions: Any = js.native
     
-    /* private */ var _tierMarkContainers: js.Any = js.native
+    /* private */ var _tierMarkContainers: Any = js.native
     
-    /* private */ var _useUTC: js.Any = js.native
+    /* private */ var _useUTC: Any = js.native
     
     /**
       * Gets the possible TimeAxisConfigurations.
@@ -186,18 +186,18 @@ object timeAxisMod {
     
     @JSImport("plottable/build/src/axes/timeAxis", "Time._DEFAULT_TIME_AXIS_CONFIGURATIONS")
     @js.native
-    def _DEFAULT_TIME_AXIS_CONFIGURATIONS: js.Any = js.native
-    inline def _DEFAULT_TIME_AXIS_CONFIGURATIONS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_TIME_AXIS_CONFIGURATIONS")(x.asInstanceOf[js.Any])
+    def _DEFAULT_TIME_AXIS_CONFIGURATIONS: Any = js.native
+    inline def _DEFAULT_TIME_AXIS_CONFIGURATIONS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_TIME_AXIS_CONFIGURATIONS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/timeAxis", "Time._LONG_DATE")
     @js.native
-    def _LONG_DATE: js.Any = js.native
-    inline def _LONG_DATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LONG_DATE")(x.asInstanceOf[js.Any])
+    def _LONG_DATE: Any = js.native
+    inline def _LONG_DATE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LONG_DATE")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/timeAxis", "Time._SORTED_TIME_INTERVAL_INDEX")
     @js.native
-    def _SORTED_TIME_INTERVAL_INDEX: js.Any = js.native
-    inline def _SORTED_TIME_INTERVAL_INDEX_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SORTED_TIME_INTERVAL_INDEX")(x.asInstanceOf[js.Any])
+    def _SORTED_TIME_INTERVAL_INDEX: Any = js.native
+    inline def _SORTED_TIME_INTERVAL_INDEX_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SORTED_TIME_INTERVAL_INDEX")(x.asInstanceOf[js.Any])
   }
   
   /* keyof plottable.anon.Top */ /* Rewritten from type alias, can be one of: 
@@ -282,7 +282,7 @@ object timeAxisMod {
       * Formatter used to format tick labels. Tick values will be passed through the formatter
       * before being displayed.
       */
-    def formatter(value: js.Any): String
+    def formatter(value: Any): String
     /**
       * Formatter used to format tick labels. Tick values will be passed through the formatter
       * before being displayed.
@@ -302,14 +302,14 @@ object timeAxisMod {
   }
   object TimeAxisTierConfiguration {
     
-    inline def apply(formatter: /* value */ js.Any => String, interval: String, step: Double): TimeAxisTierConfiguration = {
+    inline def apply(formatter: /* value */ Any => String, interval: String, step: Double): TimeAxisTierConfiguration = {
       val __obj = js.Dynamic.literal(formatter = js.Any.fromFunction1(formatter), interval = interval.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimeAxisTierConfiguration]
     }
     
     extension [Self <: TimeAxisTierConfiguration](x: Self) {
       
-      inline def setFormatter(value: /* value */ js.Any => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: /* value */ Any => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       
       inline def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       

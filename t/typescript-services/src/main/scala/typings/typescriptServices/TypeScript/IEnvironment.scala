@@ -1,7 +1,6 @@
 package typings.typescriptServices.TypeScript
 
 import typings.std.ITextWriter
-import typings.std.RegExp
 import typings.typescriptServices.anon.Recursive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,9 +20,9 @@ trait IEnvironment extends StObject {
   def fileExists(path: String): Boolean = js.native
   
   def listFiles(path: String): js.Array[String] = js.native
+  def listFiles(path: String, re: js.RegExp): js.Array[String] = js.native
+  def listFiles(path: String, re: js.RegExp, options: Recursive): js.Array[String] = js.native
   def listFiles(path: String, re: Unit, options: Recursive): js.Array[String] = js.native
-  def listFiles(path: String, re: RegExp): js.Array[String] = js.native
-  def listFiles(path: String, re: RegExp, options: Recursive): js.Array[String] = js.native
   
   var newLine: String = js.native
   

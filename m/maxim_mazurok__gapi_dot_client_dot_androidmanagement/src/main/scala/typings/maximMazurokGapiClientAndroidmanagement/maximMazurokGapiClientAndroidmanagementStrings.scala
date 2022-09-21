@@ -11,6 +11,10 @@ object maximMazurokGapiClientAndroidmanagementStrings {
   inline def ApplicationPolicy: ApplicationPolicy = "ApplicationPolicy".asInstanceOf[ApplicationPolicy]
   
   @js.native
+  sealed trait ClearAppsDataStatus extends StObject
+  inline def ClearAppsDataStatus: ClearAppsDataStatus = "ClearAppsDataStatus".asInstanceOf[ClearAppsDataStatus]
+  
+  @js.native
   sealed trait Device extends StObject
   inline def Device: Device = "Device".asInstanceOf[Device]
   

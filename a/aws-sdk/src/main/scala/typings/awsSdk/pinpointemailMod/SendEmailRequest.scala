@@ -62,7 +62,7 @@ object SendEmailRequest {
     
     inline def setEmailTagsUndefined: Self = StObject.set(x, "EmailTags", js.undefined)
     
-    inline def setEmailTagsVarargs(value: MessageTag*): Self = StObject.set(x, "EmailTags", js.Array(value :_*))
+    inline def setEmailTagsVarargs(value: MessageTag*): Self = StObject.set(x, "EmailTags", js.Array(value*))
     
     inline def setFeedbackForwardingEmailAddress(value: EmailAddress): Self = StObject.set(x, "FeedbackForwardingEmailAddress", value.asInstanceOf[js.Any])
     
@@ -76,6 +76,6 @@ object SendEmailRequest {
     
     inline def setReplyToAddressesUndefined: Self = StObject.set(x, "ReplyToAddresses", js.undefined)
     
-    inline def setReplyToAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value :_*))
+    inline def setReplyToAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value*))
   }
 }

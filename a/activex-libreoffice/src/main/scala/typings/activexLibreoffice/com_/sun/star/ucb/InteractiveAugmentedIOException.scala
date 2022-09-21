@@ -17,12 +17,12 @@ trait InteractiveAugmentedIOException
     *
     * See {@link com.sun.star.task.InteractionHandler} for a description of well-known arguments.
     */
-  var Arguments: SafeArray[js.Any]
+  var Arguments: SafeArray[Any]
 }
 object InteractiveAugmentedIOException {
   
   inline def apply(
-    Arguments: SafeArray[js.Any],
+    Arguments: SafeArray[Any],
     Classification: InteractionClassification,
     Code: IOErrorCode,
     Context: XInterface,
@@ -34,6 +34,6 @@ object InteractiveAugmentedIOException {
   
   extension [Self <: InteractiveAugmentedIOException](x: Self) {
     
-    inline def setArguments(value: SafeArray[js.Any]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: SafeArray[Any]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fastify-plugin" : "2.3.4"
+      "fastify-plugin" : "4.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "fastify-plugin" : "2.3.4"
+      "fastify-plugin" : "4.2.1"
     }
   ],
   "compile-devDependencies" : [

@@ -10,10 +10,10 @@ JSON AST parser
 | ------------------ | :-------------: |
 | Full name          | json-to-ast |
 | Keywords           | json-parser, parser, ast, json, tree |
-| # releases         | 7 |
-| # dependents       | 17 |
-| # downloads        | 10905461 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1557841.6666666667 |
+| # stars            | 206.0 |
 
 ## Links
 - [Homepage](https://github.com/vtrushin/json-to-ast)

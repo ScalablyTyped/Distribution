@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "DirectSettingsMixin")
 @js.native
-class DirectSettingsMixin () extends StObject {
+open class DirectSettingsMixin () extends StObject {
   
   /*
     Sets the accuracy.  How similar the suggested terms at least

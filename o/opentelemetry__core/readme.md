@@ -1,22 +1,22 @@
 
 # Scala.js typings for opentelemetry__core
 
-Typings are for version 0.11.0
+Typings are for version 1.7.0
 
 ## Library description:
-OpenTelemetry Core provides default and no-op implementations of the OpenTelemetry types for trace and metrics
+OpenTelemetry Core provides constants and utilities shared by all OpenTelemetry SDK packages.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/core |
 | Keywords           | opentelemetry, nodejs, browser, tracing, profiling, metrics, stats |
-| # releases         | 51 |
-| # dependents       | 99 |
-| # downloads        | 6591365 |
-| # stars            | 0 |
+| # releases         | 117 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0183053666666666E7 |
+| # stars            | 1462.0 |
 
 ## Links
-- [Homepage](https://github.com/open-telemetry/opentelemetry-js#readme)
+- [Homepage](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-core)
 - [Bugs](https://github.com/open-telemetry/opentelemetry-js/issues)
 - [Repository](https://github.com/open-telemetry/opentelemetry-js)
 - [Npm](https://www.npmjs.com/package/%40opentelemetry%2Fcore)

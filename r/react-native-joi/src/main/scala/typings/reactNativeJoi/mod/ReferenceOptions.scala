@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReferenceOptions extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.undefined
+  var default: js.UndefOr[Any] = js.undefined
   
   var contextPrefix: js.UndefOr[String] = js.undefined
   
@@ -29,7 +29,7 @@ object ReferenceOptions {
     
     inline def setContextPrefixUndefined: Self = StObject.set(x, "contextPrefix", js.undefined)
     
-    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     

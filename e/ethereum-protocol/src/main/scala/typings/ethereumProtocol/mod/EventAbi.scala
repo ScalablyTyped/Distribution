@@ -31,7 +31,7 @@ object EventAbi {
     
     inline def setInputs(value: js.Array[EventParameter]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    inline def setInputsVarargs(value: EventParameter*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: EventParameter*): Self = StObject.set(x, "inputs", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,7 @@ object reader {
        with typings.extjs.Ext.data.reader.IReader {
     
     /** [Property] (Object) */
-    var jsonData: js.UndefOr[js.Any] = js.undefined
+    var jsonData: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var metaProperty: js.UndefOr[String] = js.undefined
@@ -43,7 +43,7 @@ object reader {
     
     extension [Self <: IJson](x: Self) {
       
-      inline def setJsonData(value: js.Any): Self = StObject.set(x, "jsonData", value.asInstanceOf[js.Any])
+      inline def setJsonData(value: Any): Self = StObject.set(x, "jsonData", value.asInstanceOf[js.Any])
       
       inline def setJsonDataUndefined: Self = StObject.set(x, "jsonData", js.undefined)
       
@@ -69,7 +69,7 @@ object reader {
       * @param response Object The response object
       * @returns Ext.data.ResultSet A ResultSet object
       */
-    var getResponseData: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IResultSet]] = js.undefined
+    var getResponseData: js.UndefOr[js.Function1[/* response */ js.UndefOr[Any], IResultSet]] = js.undefined
     
     /** [Config Option] (String) */
     var idProperty: js.UndefOr[String] = js.undefined
@@ -81,22 +81,22 @@ object reader {
     var messageProperty: js.UndefOr[String] = js.undefined
     
     /** [Property] (Object) */
-    var metaData: js.UndefOr[js.Any] = js.undefined
+    var metaData: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Object) */
-    var rawData: js.UndefOr[js.Any] = js.undefined
+    var rawData: js.UndefOr[Any] = js.undefined
     
     /** [Method] Reads the given response object
       * @param response Object The response object. This may be either an XMLHttpRequest object or a plain JS object
       * @returns Ext.data.ResultSet The parsed or default ResultSet object
       */
-    var read: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IResultSet]] = js.undefined
+    var read: js.UndefOr[js.Function1[/* response */ js.UndefOr[Any], IResultSet]] = js.undefined
     
     /** [Method] Abstracts common functionality used by all Reader subclasses
       * @param data Object The raw data object
       * @returns Ext.data.ResultSet A ResultSet object
       */
-    var readRecords: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], IResultSet]] = js.undefined
+    var readRecords: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], IResultSet]] = js.undefined
     
     /** [Config Option] (Boolean) */
     var readRecordsOnFailure: js.UndefOr[Boolean] = js.undefined
@@ -119,7 +119,7 @@ object reader {
     
     extension [Self <: typings.extjs.Ext.data.reader.IReader](x: Self) {
       
-      inline def setGetResponseData(value: /* response */ js.UndefOr[js.Any] => IResultSet): Self = StObject.set(x, "getResponseData", js.Any.fromFunction1(value))
+      inline def setGetResponseData(value: /* response */ js.UndefOr[Any] => IResultSet): Self = StObject.set(x, "getResponseData", js.Any.fromFunction1(value))
       
       inline def setGetResponseDataUndefined: Self = StObject.set(x, "getResponseData", js.undefined)
       
@@ -135,17 +135,17 @@ object reader {
       
       inline def setMessagePropertyUndefined: Self = StObject.set(x, "messageProperty", js.undefined)
       
-      inline def setMetaData(value: js.Any): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
+      inline def setMetaData(value: Any): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
       
       inline def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
       
-      inline def setRawData(value: js.Any): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+      inline def setRawData(value: Any): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
       
       inline def setRawDataUndefined: Self = StObject.set(x, "rawData", js.undefined)
       
-      inline def setRead(value: /* response */ js.UndefOr[js.Any] => IResultSet): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: /* response */ js.UndefOr[Any] => IResultSet): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      inline def setReadRecords(value: /* data */ js.UndefOr[js.Any] => IResultSet): Self = StObject.set(x, "readRecords", js.Any.fromFunction1(value))
+      inline def setReadRecords(value: /* data */ js.UndefOr[Any] => IResultSet): Self = StObject.set(x, "readRecords", js.Any.fromFunction1(value))
       
       inline def setReadRecordsOnFailure(value: Boolean): Self = StObject.set(x, "readRecordsOnFailure", value.asInstanceOf[js.Any])
       
@@ -177,7 +177,7 @@ object reader {
       * @param data Object The raw data object
       * @returns Object The documentElement property of the data object if present, or the same object if not.
       */
-    var getData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    var getData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], Any]] = js.undefined
     
     /** [Config Option] (String) */
     var namespace: js.UndefOr[String] = js.undefined
@@ -186,7 +186,7 @@ object reader {
     var record: js.UndefOr[String] = js.undefined
     
     /** [Property] (Object) */
-    var xmlData: js.UndefOr[js.Any] = js.undefined
+    var xmlData: js.UndefOr[Any] = js.undefined
   }
   object IXml {
     
@@ -197,7 +197,7 @@ object reader {
     
     extension [Self <: IXml](x: Self) {
       
-      inline def setGetData(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+      inline def setGetData(value: /* data */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
       
       inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
       
@@ -209,7 +209,7 @@ object reader {
       
       inline def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
       
-      inline def setXmlData(value: js.Any): Self = StObject.set(x, "xmlData", value.asInstanceOf[js.Any])
+      inline def setXmlData(value: Any): Self = StObject.set(x, "xmlData", value.asInstanceOf[js.Any])
       
       inline def setXmlDataUndefined: Self = StObject.set(x, "xmlData", js.undefined)
     }

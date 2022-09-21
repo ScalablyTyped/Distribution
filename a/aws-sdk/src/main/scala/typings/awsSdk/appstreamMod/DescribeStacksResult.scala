@@ -33,6 +33,6 @@ object DescribeStacksResult {
     
     inline def setStacksUndefined: Self = StObject.set(x, "Stacks", js.undefined)
     
-    inline def setStacksVarargs(value: Stack*): Self = StObject.set(x, "Stacks", js.Array(value :_*))
+    inline def setStacksVarargs(value: Stack*): Self = StObject.set(x, "Stacks", js.Array(value*))
   }
 }

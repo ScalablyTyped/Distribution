@@ -12,7 +12,7 @@ object logoMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/logo/logo", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Logo {
     def this(hasEventEmitterTextMapTooltipServiceTheme: TextMap) = this()
@@ -26,7 +26,7 @@ object logoMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("playable/dist/src/modules/ui/controls/logo/logo", "default.View")
     @js.native
-    class View protected ()
+    open class View protected ()
       extends typings.playable.logoViewMod.default {
       def this(config: ILogoViewConfig) = this()
     }
@@ -55,31 +55,31 @@ object logoMod {
     extends StObject
        with ILogoControl {
     
-    /* private */ var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: Any = js.native
     
-    /* private */ var _callback: js.Any = js.native
+    /* private */ var _callback: Any = js.native
     
-    /* private */ var _destroyInterceptor: js.Any = js.native
+    /* private */ var _destroyInterceptor: Any = js.native
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ var _initInterceptor: js.Any = js.native
+    /* private */ var _initInterceptor: Any = js.native
     
-    /* private */ var _initUI: js.Any = js.native
+    /* private */ var _initUI: Any = js.native
     
-    /* private */ var _interceptor: js.Any = js.native
+    /* private */ var _interceptor: Any = js.native
     
-    /* private */ var _logoSrc: js.Any = js.native
+    /* private */ var _logoSrc: Any = js.native
     
-    /* private */ var _setProperDisplayState: js.Any = js.native
+    /* private */ var _setProperDisplayState: Any = js.native
     
-    /* private */ var _textMap: js.Any = js.native
+    /* private */ var _textMap: Any = js.native
     
-    /* private */ var _theme: js.Any = js.native
+    /* private */ var _theme: Any = js.native
     
-    /* private */ var _tooltipService: js.Any = js.native
+    /* private */ var _tooltipService: Any = js.native
     
-    /* private */ var _triggerCallback: js.Any = js.native
+    /* private */ var _triggerCallback: Any = js.native
     
     var isHidden: Boolean = js.native
     

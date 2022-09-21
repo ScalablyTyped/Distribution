@@ -1,14 +1,13 @@
 package typings.coinbase.mod
 
 import typings.coinbase.coinbaseStrings.sell
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("coinbase", "Sell")
 @js.native
-class Sell ()
+open class Sell ()
   extends StObject
      with Resource {
   
@@ -18,13 +17,18 @@ class Sell ()
   var amount: MoneyHash = js.native
   
   /**
+    * Reference to Coinbase client
+    */
+  var client: Client = js.native
+  
+  /**
     * Completes a sell that is created in commit: false state.
     * If the exchange rate has changed since the sell was created, this call will fail with the error “The exchange rate updated while you
     * were waiting. The new total is shown below”. The buy’s total will also be updated. You can repeat the `commit` call to accept the new
     * values and start the buy at the new rates.
     * Scope: wallet:sells:create
     */
-  def commit(cb: js.Function2[/* error */ Error | Null, /* result */ this.type, Unit]): Unit = js.native
+  def commit(cb: js.Function2[/* error */ js.Error | Null, /* result */ this.type, Unit]): Unit = js.native
   
   /**
     * Has this sell been committed?
@@ -34,7 +38,8 @@ class Sell ()
   /**
     * ISO timestamp
     */
-  var created_at: String = js.native
+  @JSName("created_at")
+  var created_at_Sell: String = js.native
   
   /**
     * Fees associated to this sell
@@ -95,7 +100,8 @@ class Sell ()
   /**
     * ISO timestamp
     */
-  var updated_at: String = js.native
+  @JSName("updated_at")
+  var updated_at_Sell: String = js.native
   
   /**
     * Reference code shown in user's dashboard.

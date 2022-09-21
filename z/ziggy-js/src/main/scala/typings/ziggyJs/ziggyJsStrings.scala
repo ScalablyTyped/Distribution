@@ -33,12 +33,4 @@ object ziggyJsStrings {
   @js.native
   sealed trait PUT extends StObject
   inline def PUT: PUT = "PUT".asInstanceOf[PUT]
-  
-  @js.native
-  sealed trait http extends StObject
-  inline def http: http = "http".asInstanceOf[http]
-  
-  @js.native
-  sealed trait https extends StObject
-  inline def https: https = "https".asInstanceOf[https]
 }

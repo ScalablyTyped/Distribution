@@ -4,10 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A lightweight reference to the target of activity.
-  */
 trait SchemaTargetReference extends StObject {
+  
+  /**
+    * The target is a shared drive.
+    */
+  var drive: js.UndefOr[SchemaDriveReference] = js.undefined
   
   /**
     * The target is a Drive item.
@@ -15,7 +17,7 @@ trait SchemaTargetReference extends StObject {
   var driveItem: js.UndefOr[SchemaDriveItemReference] = js.undefined
   
   /**
-    * The target is a Team Drive.
+    * This field is deprecated; please use the `drive` field instead.
     */
   var teamDrive: js.UndefOr[SchemaTeamDriveReference] = js.undefined
 }
@@ -28,9 +30,13 @@ object SchemaTargetReference {
   
   extension [Self <: SchemaTargetReference](x: Self) {
     
+    inline def setDrive(value: SchemaDriveReference): Self = StObject.set(x, "drive", value.asInstanceOf[js.Any])
+    
     inline def setDriveItem(value: SchemaDriveItemReference): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
     
     inline def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
+    
+    inline def setDriveUndefined: Self = StObject.set(x, "drive", js.undefined)
     
     inline def setTeamDrive(value: SchemaTeamDriveReference): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
     

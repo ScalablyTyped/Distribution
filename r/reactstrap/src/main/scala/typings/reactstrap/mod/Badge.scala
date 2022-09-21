@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "Badge")
+@JSImport("reactstrap", "Badge")
 @js.native
-class Badge () extends default
+open class Badge () extends default

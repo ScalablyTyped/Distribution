@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UploadPartCopyOutput extends StObject {
   
   /**
+    * Indicates whether the multipart upload uses an S3 Bucket Key for server-side encryption with Amazon Web Services KMS (SSE-KMS).
+    */
+  var BucketKeyEnabled: js.UndefOr[typings.awsSdk.s3Mod.BucketKeyEnabled] = js.undefined
+  
+  /**
     * Container for all response elements.
     */
   var CopyPartResult: js.UndefOr[typings.awsSdk.s3Mod.CopyPartResult] = js.undefined
@@ -29,7 +34,7 @@ trait UploadPartCopyOutput extends StObject {
   var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.undefined
   
   /**
-    * If present, specifies the ID of the AWS Key Management Service (AWS KMS) symmetric customer managed customer master key (CMK) that was used for the object.
+    * If present, specifies the ID of the Amazon Web Services Key Management Service (Amazon Web Services KMS) symmetric customer managed key that was used for the object.
     */
   var SSEKMSKeyId: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSKeyId] = js.undefined
   
@@ -46,6 +51,10 @@ object UploadPartCopyOutput {
   }
   
   extension [Self <: UploadPartCopyOutput](x: Self) {
+    
+    inline def setBucketKeyEnabled(value: BucketKeyEnabled): Self = StObject.set(x, "BucketKeyEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setBucketKeyEnabledUndefined: Self = StObject.set(x, "BucketKeyEnabled", js.undefined)
     
     inline def setCopyPartResult(value: CopyPartResult): Self = StObject.set(x, "CopyPartResult", value.asInstanceOf[js.Any])
     

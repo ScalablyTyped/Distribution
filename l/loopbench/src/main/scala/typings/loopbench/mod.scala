@@ -27,20 +27,14 @@ object mod {
   @js.native
   trait LoopBench extends EventEmitter {
     
-    @JSName("addListener")
-    def addListener_load(event: load, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_unload(event: unload, listener: js.Function0[Unit]): this.type = js.native
+    def addListener(event: load | unload, listener: js.Function0[Unit]): this.type = js.native
     
     /**
       * The delay in milliseconds (and fractions) from the expected run. It might be negative (in older nodes).
       */
     val delay: Double = js.native
     
-    @JSName("emit")
-    def emit_load(event: load): Boolean = js.native
-    @JSName("emit")
-    def emit_unload(event: unload): Boolean = js.native
+    def emit(event: load | unload): Boolean = js.native
     
     /**
       * The maximum amount of delay that is tolerated before `overLimit` becomes true,
@@ -48,60 +42,30 @@ object mod {
       */
     val limit: Double = js.native
     
-    @JSName("listenerCount")
-    def listenerCount_load(`type`: load): Double = js.native
-    @JSName("listenerCount")
-    def listenerCount_unload(`type`: unload): Double = js.native
+    def listenerCount(`type`: load | unload): Double = js.native
     
-    @JSName("listeners")
-    def listeners_load(event: load): js.Array[js.Function0[Unit]] = js.native
-    @JSName("listeners")
-    def listeners_unload(event: unload): js.Array[js.Function0[Unit]] = js.native
+    def listeners(event: load | unload): js.Array[js.Function0[Unit]] = js.native
     
-    @JSName("off")
-    def off_load(event: load, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("off")
-    def off_unload(event: unload, listener: js.Function0[Unit]): this.type = js.native
+    def off(event: load | unload, listener: js.Function0[Unit]): this.type = js.native
     
-    @JSName("on")
-    def on_load(event: load, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_unload(event: unload, listener: js.Function0[Unit]): this.type = js.native
+    def on(event: load | unload, listener: js.Function0[Unit]): this.type = js.native
     
-    @JSName("once")
-    def once_load(event: load, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_unload(event: unload, listener: js.Function0[Unit]): this.type = js.native
+    def once(event: load | unload, listener: js.Function0[Unit]): this.type = js.native
     
     /**
       * Is `true` if the `instance.delay > instance.limit`.
       */
     val overLimit: Boolean = js.native
     
-    @JSName("prependListener")
-    def prependListener_load(event: load, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_unload(event: unload, listener: js.Function0[Unit]): this.type = js.native
+    def prependListener(event: load | unload, listener: js.Function0[Unit]): this.type = js.native
     
-    @JSName("prependOnceListener")
-    def prependOnceListener_load(event: load, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_unload(event: unload, listener: js.Function0[Unit]): this.type = js.native
+    def prependOnceListener(event: load | unload, listener: js.Function0[Unit]): this.type = js.native
     
-    @JSName("rawListeners")
-    def rawListeners_load(event: load): js.Array[js.Function0[Unit]] = js.native
-    @JSName("rawListeners")
-    def rawListeners_unload(event: unload): js.Array[js.Function0[Unit]] = js.native
+    def rawListeners(event: load | unload): js.Array[js.Function0[Unit]] = js.native
     
-    @JSName("removeAllListeners")
-    def removeAllListeners_load(event: load): this.type = js.native
-    @JSName("removeAllListeners")
-    def removeAllListeners_unload(event: unload): this.type = js.native
+    def removeAllListeners(event: load | unload): this.type = js.native
     
-    @JSName("removeListener")
-    def removeListener_load(event: load, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_unload(event: unload, listener: js.Function0[Unit]): this.type = js.native
+    def removeListener(event: load | unload, listener: js.Function0[Unit]): this.type = js.native
     
     /**
       * Stops the sampling.

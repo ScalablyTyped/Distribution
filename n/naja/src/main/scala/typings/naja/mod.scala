@@ -1,6 +1,14 @@
 package typings.naja
 
 import org.scalablytyped.runtime.Shortcut
+import typings.naja.anon.Instantiable
+import typings.naja.anon.InstantiableFormsHandler
+import typings.naja.anon.InstantiableHistoryHandler
+import typings.naja.anon.InstantiableRedirectHandler
+import typings.naja.anon.InstantiableScriptLoader
+import typings.naja.anon.InstantiableSnippetCache
+import typings.naja.anon.InstantiableSnippetHandler
+import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +21,25 @@ object mod extends Shortcut {
   
   @JSImport("naja", "HttpError")
   @js.native
-  class HttpError ()
-    extends typings.naja.najaMod.HttpError
+  open class HttpError protected ()
+    extends typings.naja.najaMod.HttpError {
+    def this(response: Response) = this()
+  }
   
   @JSImport("naja", "Naja")
   @js.native
-  class Naja ()
-    extends typings.naja.najaMod.Naja
+  open class Naja protected ()
+    extends typings.naja.najaMod.Naja {
+    def this(
+      uiHandler: js.UndefOr[Instantiable],
+      redirectHandler: js.UndefOr[InstantiableRedirectHandler],
+      snippetHandler: js.UndefOr[InstantiableSnippetHandler],
+      formsHandler: js.UndefOr[InstantiableFormsHandler],
+      historyHandler: js.UndefOr[InstantiableHistoryHandler],
+      snippetCache: js.UndefOr[InstantiableSnippetCache],
+      scriptLoader: js.UndefOr[InstantiableScriptLoader]
+    ) = this()
+  }
   
   type _To = typings.naja.najaMod.Naja
   

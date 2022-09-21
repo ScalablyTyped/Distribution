@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DashboardGroup extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   /**
     * A list of Dashboards held by the Dashboard Group
@@ -28,7 +28,7 @@ trait DashboardGroup extends StObject {
 object DashboardGroup {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     dashboardEntries: js.Array[DashboardGroupEntry],
     permission: GroupMemberPermission,
     teamDashboardPermission: TeamDashboardPermission,
@@ -42,7 +42,7 @@ object DashboardGroup {
     
     inline def setDashboardEntries(value: js.Array[DashboardGroupEntry]): Self = StObject.set(x, "dashboardEntries", value.asInstanceOf[js.Any])
     
-    inline def setDashboardEntriesVarargs(value: DashboardGroupEntry*): Self = StObject.set(x, "dashboardEntries", js.Array(value :_*))
+    inline def setDashboardEntriesVarargs(value: DashboardGroupEntry*): Self = StObject.set(x, "dashboardEntries", js.Array(value*))
     
     inline def setPermission(value: GroupMemberPermission): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
@@ -50,6 +50,6 @@ object DashboardGroup {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

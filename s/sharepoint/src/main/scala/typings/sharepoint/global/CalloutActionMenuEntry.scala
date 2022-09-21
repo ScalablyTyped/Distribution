@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines a callout action menu entry */
 @JSGlobal("CalloutActionMenuEntry")
 @js.native
-class CalloutActionMenuEntry protected ()
+open class CalloutActionMenuEntry protected ()
   extends StObject
      with typings.sharepoint.CalloutActionMenuEntry {
   /** Creates a callout action menu entry

@@ -12,5 +12,5 @@ object platformProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(environment: Environment): js.Function1[/* userOverrideFn */ OverrideCallback[js.Any], js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(environment.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* userOverrideFn */ OverrideCallback[js.Any], js.Promise[Unit]]]
+  inline def default(environment: Environment): js.Function1[/* userOverrideFn */ OverrideCallback[Any], js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(environment.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* userOverrideFn */ OverrideCallback[Any], js.Promise[Unit]]]
 }

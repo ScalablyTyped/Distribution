@@ -2,10 +2,7 @@ package typings.reactNavigationRouters
 
 import typings.reactNavigationRouters.anon.KeyType
 import typings.reactNavigationRouters.anon.NameParams
-import typings.reactNavigationRouters.anon.Payload
-import typings.reactNavigationRouters.anon.PayloadSourceTargetType
-import typings.reactNavigationRouters.anon.Source
-import typings.reactNavigationRouters.anon.Type
+import typings.reactNavigationRouters.commonActionsMod.Action
 import typings.reactNavigationRouters.drawerRouterMod.DrawerActionType
 import typings.reactNavigationRouters.reactNavigationRoutersBooleans.`false`
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.JUMP_TO
@@ -15,7 +12,6 @@ import typings.reactNavigationRouters.typesMod.NavigationRoute
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import typings.reactNavigationRouters.typesMod.Router
 import typings.std.Extract
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,13 +22,7 @@ object tabRouterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasInitialRouteNameBackBehavior: TabRouterOptions): Router[
-    TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
-    Source | Payload | PayloadSourceTargetType | Type | TabActionType
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasInitialRouteNameBackBehavior.asInstanceOf[js.Any]).asInstanceOf[Router[
-    TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
-    Source | Payload | PayloadSourceTargetType | Type | TabActionType
-  ]]
+  inline def default(hasInitialRouteNameBackBehavior: TabRouterOptions): Router[TabNavigationState[ParamListBase], Action | TabActionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasInitialRouteNameBackBehavior.asInstanceOf[js.Any]).asInstanceOf[Router[TabNavigationState[ParamListBase], Action | TabActionType]]
   
   object TabActions {
     
@@ -46,12 +36,15 @@ object tabRouterMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactNavigationRouters.reactNavigationRoutersStrings.initialRoute
-    - typings.reactNavigationRouters.reactNavigationRoutersStrings.order
+    - typings.reactNavigationRouters.reactNavigationRoutersStrings.firstRoute
     - typings.reactNavigationRouters.reactNavigationRoutersStrings.history
+    - typings.reactNavigationRouters.reactNavigationRoutersStrings.order
     - typings.reactNavigationRouters.reactNavigationRoutersStrings.none
   */
   trait BackBehavior extends StObject
   object BackBehavior {
+    
+    inline def firstRoute: typings.reactNavigationRouters.reactNavigationRoutersStrings.firstRoute = "firstRoute".asInstanceOf[typings.reactNavigationRouters.reactNavigationRoutersStrings.firstRoute]
     
     inline def history: typings.reactNavigationRouters.reactNavigationRoutersStrings.history = "history".asInstanceOf[typings.reactNavigationRouters.reactNavigationRoutersStrings.history]
     
@@ -71,19 +64,19 @@ object tabRouterMod {
       * @param [params] Params object for the route.
       */
     def jumpTo[RouteName /* <: Extract[/* keyof ParamList */ String, String] */](
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]] is not an array type */ args: (js.Tuple2[
-          RouteName, 
-          /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
-        ]) | js.Array[RouteName]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type undefined extends ParamList[RouteName] ? [screen: RouteName] | [screen: RouteName, params: ParamList[RouteName]] : [screen: RouteName, params: ParamList[RouteName]] is not an array type */ args: (js.Tuple2[
+          /* screen */ RouteName, 
+          /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ /* params */ js.Any
+        ]) | (js.Array[/* screen */ RouteName])
     ): Unit
   }
   object TabActionHelpers {
     
     inline def apply[ParamList /* <: ParamListBase */](
       jumpTo: (js.Tuple2[
-          js.Any, 
-          /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
-        ]) | js.Array[js.Any] => Unit
+          Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ /* params */ js.Any
+        ]) | js.Array[Any] => Unit
     ): TabActionHelpers[ParamList] = {
       val __obj = js.Dynamic.literal(jumpTo = js.Any.fromFunction1(jumpTo))
       __obj.asInstanceOf[TabActionHelpers[ParamList]]
@@ -93,9 +86,9 @@ object tabRouterMod {
       
       inline def setJumpTo(
         value: (js.Tuple2[
-              js.Any, 
-              /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
-            ]) | js.Array[js.Any] => Unit
+              Any, 
+              /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ /* params */ js.Any
+            ]) | js.Array[Any] => Unit
       ): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
     }
   }
@@ -178,7 +171,7 @@ object tabRouterMod {
       
       inline def setHistory(value: js.Array[KeyType]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      inline def setHistoryVarargs(value: KeyType*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: KeyType*): Self = StObject.set(x, "history", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -186,11 +179,11 @@ object tabRouterMod {
       
       inline def setRouteNames(value: js.Array[Extract[/* keyof ParamList */ String, String]]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
       
-      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value*))
       
       inline def setRoutes(value: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       

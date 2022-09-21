@@ -129,22 +129,17 @@ object mod {
     @js.native
     trait DeviceEventEmitterStatic extends StObject {
       
+      def addListener(event: Accelerometer | Gyroscope | Magnetometer, callback: js.Function1[/* data */ X, Unit]): Any = js.native
       @JSName("addListener")
-      def addListener_Accelerometer(event: Accelerometer, callback: js.Function1[/* data */ X, Unit]): js.Any = js.native
+      def addListener_LightSensor(event: LightSensor, callback: js.Function1[/* data */ Light, Unit]): Any = js.native
       @JSName("addListener")
-      def addListener_Gyroscope(event: Gyroscope, callback: js.Function1[/* data */ X, Unit]): js.Any = js.native
+      def addListener_Orientation(event: Orientation, callback: js.Function1[/* data */ Azimuth, Unit]): Any = js.native
       @JSName("addListener")
-      def addListener_LightSensor(event: LightSensor, callback: js.Function1[/* data */ Light, Unit]): js.Any = js.native
+      def addListener_Proximity(event: Proximity, callback: js.Function1[/* data */ IsNear, Unit]): Any = js.native
       @JSName("addListener")
-      def addListener_Magnetometer(event: Magnetometer, callback: js.Function1[/* data */ X, Unit]): js.Any = js.native
+      def addListener_StepCounter(event: StepCounter, callback: js.Function1[/* data */ Steps, Unit]): Any = js.native
       @JSName("addListener")
-      def addListener_Orientation(event: Orientation, callback: js.Function1[/* data */ Azimuth, Unit]): js.Any = js.native
-      @JSName("addListener")
-      def addListener_Proximity(event: Proximity, callback: js.Function1[/* data */ IsNear, Unit]): js.Any = js.native
-      @JSName("addListener")
-      def addListener_StepCounter(event: StepCounter, callback: js.Function1[/* data */ Steps, Unit]): js.Any = js.native
-      @JSName("addListener")
-      def addListener_Thermometer(event: Thermometer, callback: js.Function1[/* data */ Temp, Unit]): js.Any = js.native
+      def addListener_Thermometer(event: Thermometer, callback: js.Function1[/* data */ Temp, Unit]): Any = js.native
     }
     
     trait NativeModulesStatic extends StObject {

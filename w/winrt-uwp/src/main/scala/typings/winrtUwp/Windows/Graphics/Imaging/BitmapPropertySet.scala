@@ -18,7 +18,7 @@ trait BitmapPropertySet extends StObject {
     * Returns an iterator to enumerate the items in the property set.
     * @return The iterator. The current position of the iterator is index 0, or the end of the property set if the property set is empty.
     */
-  def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+  def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
   
   /**
     * Gets an immutable view of the property set.

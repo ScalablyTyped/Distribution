@@ -1,26 +1,8 @@
 package typings.reactNativeCommunityCliServerApi
 
-import typings.node.Buffer
-import typings.node.BufferEncoding
-import typings.node.NodeJS.Dict
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
-import typings.node.eventsMod.EventEmitterOptions
-import typings.node.httpMod.IncomingHttpHeaders
-import typings.node.httpMod.Server
-import typings.node.netMod.Socket
-import typings.node.streamMod.ReadableOptions
-import typings.reactNativeCommunityCliServerApi.reactNativeCommunityCliServerApiStrings.close
-import typings.reactNativeCommunityCliServerApi.reactNativeCommunityCliServerApiStrings.data
-import typings.reactNativeCommunityCliServerApi.reactNativeCommunityCliServerApiStrings.end
-import typings.reactNativeCommunityCliServerApi.reactNativeCommunityCliServerApiStrings.error
-import typings.reactNativeCommunityCliServerApi.reactNativeCommunityCliServerApiStrings.pause
-import typings.reactNativeCommunityCliServerApi.reactNativeCommunityCliServerApiStrings.readable
-import typings.reactNativeCommunityCliServerApi.reactNativeCommunityCliServerApiStrings.resume
-import typings.std.Error
 import typings.std.Record
-import typings.std.Uint8Array
+import typings.ws.mod.Server
+import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,319 +10,97 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object anon {
   
   @js.native
-  trait AttachToServer extends StObject {
-    
-    def attachToServer(server: Server): DebuggerProxy = js.native
-    def attachToServer(server: typings.node.httpsMod.Server): DebuggerProxy = js.native
-    
-    var middleware: js.Any = js.native
-  }
-  
-  @js.native
   trait Broadcast extends StObject {
     
     def broadcast(method: String): Unit = js.native
-    def broadcast(method: String, params: Record[String, js.Any]): Unit = js.native
+    def broadcast(method: String, params: Record[String, Any]): Unit = js.native
+    
+    var server: Server[WebSocket] = js.native
   }
   
-  trait DebuggerProxy extends StObject {
+  trait DebuggerProxyEndpoint extends StObject {
     
-    var debuggerProxy: IsDebuggerConnected
+    var debuggerProxyEndpoint: IsDebuggerConnected
     
-    var eventsSocket: ReportEvent
+    var eventsSocketEndpoint: ReportEvent
     
-    var messageSocket: Broadcast
+    var messageSocketEndpoint: Broadcast
+    
+    var middleware: Any
+    
+    var websocketEndpoints: Debuggerproxy
   }
-  object DebuggerProxy {
+  object DebuggerProxyEndpoint {
     
-    inline def apply(debuggerProxy: IsDebuggerConnected, eventsSocket: ReportEvent, messageSocket: Broadcast): DebuggerProxy = {
-      val __obj = js.Dynamic.literal(debuggerProxy = debuggerProxy.asInstanceOf[js.Any], eventsSocket = eventsSocket.asInstanceOf[js.Any], messageSocket = messageSocket.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DebuggerProxy]
+    inline def apply(
+      debuggerProxyEndpoint: IsDebuggerConnected,
+      eventsSocketEndpoint: ReportEvent,
+      messageSocketEndpoint: Broadcast,
+      middleware: Any,
+      websocketEndpoints: Debuggerproxy
+    ): DebuggerProxyEndpoint = {
+      val __obj = js.Dynamic.literal(debuggerProxyEndpoint = debuggerProxyEndpoint.asInstanceOf[js.Any], eventsSocketEndpoint = eventsSocketEndpoint.asInstanceOf[js.Any], messageSocketEndpoint = messageSocketEndpoint.asInstanceOf[js.Any], middleware = middleware.asInstanceOf[js.Any], websocketEndpoints = websocketEndpoints.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DebuggerProxyEndpoint]
     }
     
-    extension [Self <: DebuggerProxy](x: Self) {
+    extension [Self <: DebuggerProxyEndpoint](x: Self) {
       
-      inline def setDebuggerProxy(value: IsDebuggerConnected): Self = StObject.set(x, "debuggerProxy", value.asInstanceOf[js.Any])
+      inline def setDebuggerProxyEndpoint(value: IsDebuggerConnected): Self = StObject.set(x, "debuggerProxyEndpoint", value.asInstanceOf[js.Any])
       
-      inline def setEventsSocket(value: ReportEvent): Self = StObject.set(x, "eventsSocket", value.asInstanceOf[js.Any])
+      inline def setEventsSocketEndpoint(value: ReportEvent): Self = StObject.set(x, "eventsSocketEndpoint", value.asInstanceOf[js.Any])
       
-      inline def setMessageSocket(value: Broadcast): Self = StObject.set(x, "messageSocket", value.asInstanceOf[js.Any])
+      inline def setMessageSocketEndpoint(value: Broadcast): Self = StObject.set(x, "messageSocketEndpoint", value.asInstanceOf[js.Any])
+      
+      inline def setMiddleware(value: Any): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+      
+      inline def setWebsocketEndpoints(value: Debuggerproxy): Self = StObject.set(x, "websocketEndpoints", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined node.http.IncomingMessage & {  rawBody :string} */
-  @js.native
-  trait IncomingMessagerawBodystr extends StObject {
+  trait Debuggerproxy extends StObject {
     
-    def _destroy(error: Null, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
-    def _destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    @JSName("/debugger-proxy")
+    var `Slashdebugger-proxy`: Server[WebSocket]
     
-    def _read(size: Double): Unit = js.native
+    @JSName("/events")
+    var Slashevents: Server[WebSocket]
     
-    var aborted: Boolean = js.native
+    @JSName("/message")
+    var Slashmessage: Server[WebSocket]
+  }
+  object Debuggerproxy {
     
-    def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /**
-      * Event emitter
-      * The defined events on documents including:
-      * 1. close
-      * 2. data
-      * 3. end
-      * 4. error
-      * 5. pause
-      * 6. readable
-      * 7. resume
-      */
-    @JSName("addListener")
-    def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_data(event: data, listener: js.Function1[/* chunk */ js.Any, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
+    inline def apply(
+      `Slashdebugger-proxy`: Server[WebSocket],
+      Slashevents: Server[WebSocket],
+      Slashmessage: Server[WebSocket]
+    ): Debuggerproxy = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("/debugger-proxy")(`Slashdebugger-proxy`.asInstanceOf[js.Any])
+      __obj.updateDynamic("/events")(Slashevents.asInstanceOf[js.Any])
+      __obj.updateDynamic("/message")(Slashmessage.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Debuggerproxy]
+    }
     
-    var complete: Boolean = js.native
-    
-    /**
-      * @deprecate Use `socket` instead.
-      */
-    var connection: Socket = js.native
-    
-    def destroy(): Unit = js.native
-    def destroy(error: Error): Unit = js.native
-    
-    var destroyed: Boolean = js.native
-    
-    def emit(event: String, args: js.Any*): Boolean = js.native
-    def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-    @JSName("emit")
-    def emit_close(event: close): Boolean = js.native
-    @JSName("emit")
-    def emit_data(event: data, chunk: js.Any): Boolean = js.native
-    @JSName("emit")
-    def emit_end(event: end): Boolean = js.native
-    @JSName("emit")
-    def emit_error(event: error, err: Error): Boolean = js.native
-    @JSName("emit")
-    def emit_pause(event: pause): Boolean = js.native
-    @JSName("emit")
-    def emit_readable(event: readable): Boolean = js.native
-    @JSName("emit")
-    def emit_resume(event: resume): Boolean = js.native
-    
-    def eventNames(): js.Array[String | js.Symbol] = js.native
-    
-    def getMaxListeners(): Double = js.native
-    
-    var headers: IncomingHttpHeaders = js.native
-    
-    var httpVersion: String = js.native
-    
-    var httpVersionMajor: Double = js.native
-    
-    var httpVersionMinor: Double = js.native
-    
-    def isPaused(): Boolean = js.native
-    
-    def listenerCount(event: String): Double = js.native
-    def listenerCount(event: js.Symbol): Double = js.native
-    
-    def listeners(event: String): js.Array[js.Function] = js.native
-    def listeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    /**
-      * Only valid for request obtained from http.Server.
-      */
-    var method: js.UndefOr[String] = js.native
-    
-    def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_data(event: data, listener: js.Function1[/* chunk */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-    
-    def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("once")
-    def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_data(event: data, listener: js.Function1[/* chunk */ js.Any, Unit]): this.type = js.native
-    @JSName("once")
-    def once_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
-    @JSName("once")
-    def once_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-    
-    def pause(): this.type = js.native
-    
-    def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
-    
-    def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_data(event: data, listener: js.Function1[/* chunk */ js.Any, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-    
-    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_data(event: data, listener: js.Function1[/* chunk */ js.Any, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-    
-    def push(chunk: js.Any): Boolean = js.native
-    def push(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
-    
-    var rawBody: String = js.native
-    
-    var rawHeaders: js.Array[String] = js.native
-    
-    def rawListeners(event: String): js.Array[js.Function] = js.native
-    def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    var rawTrailers: js.Array[String] = js.native
-    
-    def read(): js.Any = js.native
-    def read(size: Double): js.Any = js.native
-    @JSName("read")
-    def read_Union(): String | Buffer = js.native
-    @JSName("read")
-    def read_Union(size: Double): String | Buffer = js.native
-    
-    var readable: Boolean = js.native
-    
-    val readableEncoding: BufferEncoding | Null = js.native
-    
-    val readableEnded: Boolean = js.native
-    
-    val readableFlowing: Boolean | Null = js.native
-    
-    val readableHighWaterMark: Double = js.native
-    
-    val readableLength: Double = js.native
-    
-    val readableObjectMode: Boolean = js.native
-    
-    def removeAllListeners(): this.type = js.native
-    def removeAllListeners(event: String): this.type = js.native
-    def removeAllListeners(event: js.Symbol): this.type = js.native
-    
-    def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_data(event: data, listener: js.Function1[/* chunk */ js.Any, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-    
-    def resume(): this.type = js.native
-    
-    def setEncoding(encoding: BufferEncoding): this.type = js.native
-    
-    def setMaxListeners(n: Double): this.type = js.native
-    
-    def setTimeout(msecs: Double): this.type = js.native
-    def setTimeout(msecs: Double, callback: js.Function0[Unit]): this.type = js.native
-    
-    var socket: Socket = js.native
-    
-    /**
-      * Only valid for response obtained from http.ClientRequest.
-      */
-    var statusCode: js.UndefOr[Double] = js.native
-    
-    /**
-      * Only valid for response obtained from http.ClientRequest.
-      */
-    var statusMessage: js.UndefOr[String] = js.native
-    
-    var trailers: Dict[String] = js.native
-    
-    def unpipe(): this.type = js.native
-    def unpipe(destination: WritableStream): this.type = js.native
-    
-    def unshift(chunk: String): Unit = js.native
-    def unshift(chunk: String, encoding: BufferEncoding): Unit = js.native
-    def unshift(chunk: js.Any): Unit = js.native
-    def unshift(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
-    def unshift(chunk: Uint8Array): Unit = js.native
-    def unshift(chunk: Uint8Array, encoding: BufferEncoding): Unit = js.native
-    
-    /**
-      * Only valid for request obtained from http.Server.
-      */
-    var url: js.UndefOr[String] = js.native
-    
-    def wrap(oldStream: ReadableStream): this.type = js.native
+    extension [Self <: Debuggerproxy](x: Self) {
+      
+      inline def `setSlashdebugger-proxy`(value: Server[WebSocket]): Self = StObject.set(x, "/debugger-proxy", value.asInstanceOf[js.Any])
+      
+      inline def setSlashevents(value: Server[WebSocket]): Self = StObject.set(x, "/events", value.asInstanceOf[js.Any])
+      
+      inline def setSlashmessage(value: Server[WebSocket]): Self = StObject.set(x, "/message", value.asInstanceOf[js.Any])
+    }
   }
   
   trait IsDebuggerConnected extends StObject {
     
     def isDebuggerConnected(): Boolean
     
-    var server: typings.ws.mod.Server
+    var server: Server[WebSocket]
   }
   object IsDebuggerConnected {
     
-    inline def apply(isDebuggerConnected: () => Boolean, server: typings.ws.mod.Server): IsDebuggerConnected = {
+    inline def apply(isDebuggerConnected: () => Boolean, server: Server[WebSocket]): IsDebuggerConnected = {
       val __obj = js.Dynamic.literal(isDebuggerConnected = js.Any.fromFunction0(isDebuggerConnected), server = server.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsDebuggerConnected]
     }
@@ -349,24 +109,45 @@ object anon {
       
       inline def setIsDebuggerConnected(value: () => Boolean): Self = StObject.set(x, "isDebuggerConnected", js.Any.fromFunction0(value))
       
-      inline def setServer(value: typings.ws.mod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: Server[WebSocket]): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait RawBody extends StObject {
+    
+    var rawBody: String
+  }
+  object RawBody {
+    
+    inline def apply(rawBody: String): RawBody = {
+      val __obj = js.Dynamic.literal(rawBody = rawBody.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RawBody]
+    }
+    
+    extension [Self <: RawBody](x: Self) {
+      
+      inline def setRawBody(value: String): Self = StObject.set(x, "rawBody", value.asInstanceOf[js.Any])
     }
   }
   
   trait ReportEvent extends StObject {
     
-    def reportEvent(event: js.Any): Unit
+    def reportEvent(event: Any): Unit
+    
+    var server: Server[WebSocket]
   }
   object ReportEvent {
     
-    inline def apply(reportEvent: js.Any => Unit): ReportEvent = {
-      val __obj = js.Dynamic.literal(reportEvent = js.Any.fromFunction1(reportEvent))
+    inline def apply(reportEvent: Any => Unit, server: Server[WebSocket]): ReportEvent = {
+      val __obj = js.Dynamic.literal(reportEvent = js.Any.fromFunction1(reportEvent), server = server.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReportEvent]
     }
     
     extension [Self <: ReportEvent](x: Self) {
       
-      inline def setReportEvent(value: js.Any => Unit): Self = StObject.set(x, "reportEvent", js.Any.fromFunction1(value))
+      inline def setReportEvent(value: Any => Unit): Self = StObject.set(x, "reportEvent", js.Any.fromFunction1(value))
+      
+      inline def setServer(value: Server[WebSocket]): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     }
   }
 }

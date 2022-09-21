@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(app: Application_, options: Unit, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(app: Application_, options: efnOptions, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(app: Application_, options: Unit, args: Any*): Any = (^.asInstanceOf[js.Dynamic].apply((List(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def apply(app: Application_, options: efnOptions, args: Any*): Any = (^.asInstanceOf[js.Dynamic].apply((List(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   @JSImport("express-flash-notification", JSImport.Namespace)
   @js.native
@@ -19,15 +19,15 @@ object mod {
     var afterAllRender: js.UndefOr[
         js.Function2[
           /* htmlFragments */ js.Array[String], 
-          /* callback */ js.Function2[/* err */ js.Any, /* html */ String, Unit], 
+          /* callback */ js.Function2[/* err */ Any, /* html */ String, Unit], 
           Unit
         ]
       ] = js.undefined
     
     var beforeSingleRender: js.UndefOr[
         js.Function2[
-          /* item */ js.Any, 
-          /* callback */ js.Function2[/* err */ js.Any, /* item */ js.Any, Unit], 
+          /* item */ Any, 
+          /* callback */ js.Function2[/* err */ Any, /* item */ Any, Unit], 
           Unit
         ]
       ] = js.undefined
@@ -50,14 +50,12 @@ object mod {
     extension [Self <: efnOptions](x: Self) {
       
       inline def setAfterAllRender(
-        value: (/* htmlFragments */ js.Array[String], /* callback */ js.Function2[/* err */ js.Any, /* html */ String, Unit]) => Unit
+        value: (/* htmlFragments */ js.Array[String], /* callback */ js.Function2[/* err */ Any, /* html */ String, Unit]) => Unit
       ): Self = StObject.set(x, "afterAllRender", js.Any.fromFunction2(value))
       
       inline def setAfterAllRenderUndefined: Self = StObject.set(x, "afterAllRender", js.undefined)
       
-      inline def setBeforeSingleRender(
-        value: (/* item */ js.Any, /* callback */ js.Function2[/* err */ js.Any, /* item */ js.Any, Unit]) => Unit
-      ): Self = StObject.set(x, "beforeSingleRender", js.Any.fromFunction2(value))
+      inline def setBeforeSingleRender(value: (/* item */ Any, /* callback */ js.Function2[/* err */ Any, /* item */ Any, Unit]) => Unit): Self = StObject.set(x, "beforeSingleRender", js.Any.fromFunction2(value))
       
       inline def setBeforeSingleRenderUndefined: Self = StObject.set(x, "beforeSingleRender", js.undefined)
       

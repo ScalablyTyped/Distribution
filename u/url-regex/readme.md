@@ -10,15 +10,12 @@ Regular expression for matching URLs
 | ------------------ | :-------------: |
 | Full name          | url-regex |
 | Keywords           | regex, string, url |
-| # releases         | 1 |
-| # dependents       | 132 |
-| # downloads        | 35291629 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2078291.0 |
+| # stars            | 312.0 |
 
 ## Links
-- [Homepage](https://github.com/kevva/url-regex#readme)
-- [Bugs](https://github.com/kevva/url-regex/issues)
-- [Repository](https://github.com/kevva/url-regex)
 - [Npm](https://www.npmjs.com/package/url-regex)
     
 

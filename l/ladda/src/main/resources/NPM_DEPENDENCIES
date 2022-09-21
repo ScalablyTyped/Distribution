@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ladda" : "2.0.1"
+      "ladda" : "2.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "ladda" : "2.0.1"
+      "ladda" : "2.0.3"
     }
   ],
   "compile-devDependencies" : [

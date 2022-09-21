@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the properties for a region map chart.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait ChartMapOptionsLoadOptions extends StObject {
@@ -19,25 +19,25 @@ trait ChartMapOptionsLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the series map labels strategy of a region map chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var labelStrategy: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the series mapping level of a region map chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var level: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the series projection type of a region map chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var projectionType: js.UndefOr[Boolean] = js.undefined

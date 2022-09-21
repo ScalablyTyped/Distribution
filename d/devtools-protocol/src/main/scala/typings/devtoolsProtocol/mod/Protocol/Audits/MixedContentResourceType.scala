@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.AttributionSrc
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Audio
   - typings.devtoolsProtocol.devtoolsProtocolStrings.Beacon
   - typings.devtoolsProtocol.devtoolsProtocolStrings.CSPReport
@@ -34,6 +35,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait MixedContentResourceType extends StObject
 object MixedContentResourceType {
+  
+  inline def AttributionSrc: typings.devtoolsProtocol.devtoolsProtocolStrings.AttributionSrc = "AttributionSrc".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.AttributionSrc]
   
   inline def Audio: typings.devtoolsProtocol.devtoolsProtocolStrings.Audio = "Audio".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Audio]
   

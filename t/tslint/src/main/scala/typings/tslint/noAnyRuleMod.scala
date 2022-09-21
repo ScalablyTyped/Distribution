@@ -11,7 +11,7 @@ object noAnyRuleMod {
   
   @JSImport("tslint/lib/rules/noAnyRule", "Rule")
   @js.native
-  class Rule protected () extends AbstractRule {
+  open class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
   }
   /* static members */

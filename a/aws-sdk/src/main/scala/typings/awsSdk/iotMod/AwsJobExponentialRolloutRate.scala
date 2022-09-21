@@ -17,7 +17,7 @@ trait AwsJobExponentialRolloutRate extends StObject {
   var incrementFactor: AwsJobRolloutIncrementFactor
   
   /**
-    * The criteria to initiate the increase in rate of rollout for a job. AWS IoT supports up to one digit after the decimal (for example, 1.5, but not 1.55).
+    * The criteria to initiate the increase in rate of rollout for a job. Amazon Web Services IoT Core supports up to one digit after the decimal (for example, 1.5, but not 1.55).
     */
   var rateIncreaseCriteria: AwsJobRateIncreaseCriteria
 }

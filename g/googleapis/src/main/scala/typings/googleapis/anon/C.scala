@@ -21,6 +21,6 @@ object C {
     
     inline def setCUndefined: Self = StObject.set(x, "c", js.undefined)
     
-    inline def setCVarargs(value: V*): Self = StObject.set(x, "c", js.Array(value :_*))
+    inline def setCVarargs(value: V*): Self = StObject.set(x, "c", js.Array(value*))
   }
 }

@@ -36,7 +36,7 @@ object LolStatus {
       
       inline def setUpdates(value: js.Array[Message]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
       
-      inline def setUpdatesVarargs(value: Message*): Self = StObject.set(x, "updates", js.Array(value :_*))
+      inline def setUpdatesVarargs(value: Message*): Self = StObject.set(x, "updates", js.Array(value*))
     }
   }
   
@@ -85,7 +85,7 @@ object LolStatus {
       
       inline def setTranslations(value: js.Array[Translation]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
-      inline def setTranslationsVarargs(value: Translation*): Self = StObject.set(x, "translations", js.Array(value :_*))
+      inline def setTranslationsVarargs(value: Translation*): Self = StObject.set(x, "translations", js.Array(value*))
       
       inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     }
@@ -112,7 +112,7 @@ object LolStatus {
       
       inline def setIncidents(value: js.Array[Incident]): Self = StObject.set(x, "incidents", value.asInstanceOf[js.Any])
       
-      inline def setIncidentsVarargs(value: Incident*): Self = StObject.set(x, "incidents", js.Array(value :_*))
+      inline def setIncidentsVarargs(value: Incident*): Self = StObject.set(x, "incidents", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -147,7 +147,7 @@ object LolStatus {
       
       inline def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
       
-      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -191,7 +191,7 @@ object LolStatus {
       
       inline def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
       
-      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -199,7 +199,7 @@ object LolStatus {
       
       inline def setServices(value: js.Array[Service]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
       
-      inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value :_*))
+      inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value*))
       
       inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     }

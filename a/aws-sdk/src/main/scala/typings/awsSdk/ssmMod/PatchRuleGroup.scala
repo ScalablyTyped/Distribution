@@ -22,6 +22,6 @@ object PatchRuleGroup {
     
     inline def setPatchRules(value: PatchRuleList): Self = StObject.set(x, "PatchRules", value.asInstanceOf[js.Any])
     
-    inline def setPatchRulesVarargs(value: PatchRule*): Self = StObject.set(x, "PatchRules", js.Array(value :_*))
+    inline def setPatchRulesVarargs(value: PatchRule*): Self = StObject.set(x, "PatchRules", js.Array(value*))
   }
 }

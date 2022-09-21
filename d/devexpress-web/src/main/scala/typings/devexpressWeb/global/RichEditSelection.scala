@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("RichEditSelection")
 @js.native
-class RichEditSelection ()
+open class RichEditSelection ()
   extends StObject
      with typings.devexpressWeb.RichEditSelection

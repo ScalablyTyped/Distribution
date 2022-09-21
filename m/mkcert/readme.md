@@ -10,10 +10,10 @@ Create Self Signed Development Certificates
 | ------------------ | :-------------: |
 | Full name          | mkcert |
 | Keywords           | signed, certificate, cert |
-| # releases         | 10 |
-| # dependents       | 14 |
-| # downloads        | 232758 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 72792.66666666667 |
+| # stars            | 72.0 |
 
 ## Links
 - [Homepage](https://github.com/Subash/mkcert#readme)

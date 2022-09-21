@@ -18,7 +18,7 @@ trait RecentFile extends StObject {
   
   def Open(): Document
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Path: String
   
@@ -36,7 +36,7 @@ object RecentFile {
     Index: Double,
     Name: String,
     Open: () => Document,
-    Parent: js.Any,
+    Parent: Any,
     Path: String,
     ReadOnly: Boolean,
     WordDotRecentFile_typekey: RecentFile
@@ -60,7 +60,7 @@ object RecentFile {
     
     inline def setOpen(value: () => Document): Self = StObject.set(x, "Open", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

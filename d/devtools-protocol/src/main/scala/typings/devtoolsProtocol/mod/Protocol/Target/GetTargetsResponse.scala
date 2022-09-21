@@ -22,6 +22,6 @@ object GetTargetsResponse {
     
     inline def setTargetInfos(value: js.Array[TargetInfo]): Self = StObject.set(x, "targetInfos", value.asInstanceOf[js.Any])
     
-    inline def setTargetInfosVarargs(value: TargetInfo*): Self = StObject.set(x, "targetInfos", js.Array(value :_*))
+    inline def setTargetInfosVarargs(value: TargetInfo*): Self = StObject.set(x, "targetInfos", js.Array(value*))
   }
 }

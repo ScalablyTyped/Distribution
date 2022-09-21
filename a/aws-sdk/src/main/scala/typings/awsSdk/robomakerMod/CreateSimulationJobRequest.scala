@@ -22,7 +22,7 @@ trait CreateSimulationJobRequest extends StObject {
   var dataSources: js.UndefOr[DataSourceConfigs] = js.undefined
   
   /**
-    * The failure behavior the simulation job.  Continue  Restart the simulation job in the same host instance.  Fail  Stop the simulation job and terminate the instance.  
+    * The failure behavior the simulation job.  Continue  Leaves the instance running for its maximum timeout duration after a 4XX error code.  Fail  Stop the simulation job and terminate the instance.  
     */
   var failureBehavior: js.UndefOr[FailureBehavior] = js.undefined
   
@@ -87,7 +87,7 @@ object CreateSimulationJobRequest {
     
     inline def setDataSourcesUndefined: Self = StObject.set(x, "dataSources", js.undefined)
     
-    inline def setDataSourcesVarargs(value: DataSourceConfig*): Self = StObject.set(x, "dataSources", js.Array(value :_*))
+    inline def setDataSourcesVarargs(value: DataSourceConfig*): Self = StObject.set(x, "dataSources", js.Array(value*))
     
     inline def setFailureBehavior(value: FailureBehavior): Self = StObject.set(x, "failureBehavior", value.asInstanceOf[js.Any])
     
@@ -109,13 +109,13 @@ object CreateSimulationJobRequest {
     
     inline def setRobotApplicationsUndefined: Self = StObject.set(x, "robotApplications", js.undefined)
     
-    inline def setRobotApplicationsVarargs(value: RobotApplicationConfig*): Self = StObject.set(x, "robotApplications", js.Array(value :_*))
+    inline def setRobotApplicationsVarargs(value: RobotApplicationConfig*): Self = StObject.set(x, "robotApplications", js.Array(value*))
     
     inline def setSimulationApplications(value: SimulationApplicationConfigs): Self = StObject.set(x, "simulationApplications", value.asInstanceOf[js.Any])
     
     inline def setSimulationApplicationsUndefined: Self = StObject.set(x, "simulationApplications", js.undefined)
     
-    inline def setSimulationApplicationsVarargs(value: SimulationApplicationConfig*): Self = StObject.set(x, "simulationApplications", js.Array(value :_*))
+    inline def setSimulationApplicationsVarargs(value: SimulationApplicationConfig*): Self = StObject.set(x, "simulationApplications", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

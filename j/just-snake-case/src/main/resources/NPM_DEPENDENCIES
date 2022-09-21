@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "just-snake-case" : "3.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "just-snake-case" : "3.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

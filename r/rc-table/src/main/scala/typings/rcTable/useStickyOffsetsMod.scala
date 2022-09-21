@@ -16,7 +16,5 @@ object useStickyOffsetsMod {
   /**
     * Get sticky column offset width
     */
-  inline def default_ltr(colWidths: js.Array[Double], columCount: Double, direction: ltr): StickyOffsets = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(colWidths.asInstanceOf[js.Any], columCount.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[StickyOffsets]
-  
-  inline def default_rtl(colWidths: js.Array[Double], columCount: Double, direction: rtl): StickyOffsets = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(colWidths.asInstanceOf[js.Any], columCount.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[StickyOffsets]
+  inline def default(colWidths: js.Array[Double], columnCount: Double, direction: ltr | rtl): StickyOffsets = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(colWidths.asInstanceOf[js.Any], columnCount.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[StickyOffsets]
 }

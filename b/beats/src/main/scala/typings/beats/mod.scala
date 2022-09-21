@@ -1,7 +1,5 @@
 package typings.beats
 
-import typings.std.Float32Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(bins: js.Array[Bin]): js.Function2[
-    /* frequencies */ Uint8Array | Float32Array | js.Array[Double], 
+    /* frequencies */ js.typedarray.Uint8Array | js.typedarray.Float32Array | js.Array[Double], 
     /* dt */ js.UndefOr[Double], 
-    Float32Array
+    js.typedarray.Float32Array
   ] = ^.asInstanceOf[js.Dynamic].apply(bins.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* frequencies */ Uint8Array | Float32Array | js.Array[Double], 
+    /* frequencies */ js.typedarray.Uint8Array | js.typedarray.Float32Array | js.Array[Double], 
     /* dt */ js.UndefOr[Double], 
-    Float32Array
+    js.typedarray.Float32Array
   ]]
   inline def apply(bins: js.Array[Bin], minSeparation: Double): js.Function2[
-    /* frequencies */ Uint8Array | Float32Array | js.Array[Double], 
+    /* frequencies */ js.typedarray.Uint8Array | js.typedarray.Float32Array | js.Array[Double], 
     /* dt */ js.UndefOr[Double], 
-    Float32Array
+    js.typedarray.Float32Array
   ] = (^.asInstanceOf[js.Dynamic].apply(bins.asInstanceOf[js.Any], minSeparation.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-    /* frequencies */ Uint8Array | Float32Array | js.Array[Double], 
+    /* frequencies */ js.typedarray.Uint8Array | js.typedarray.Float32Array | js.Array[Double], 
     /* dt */ js.UndefOr[Double], 
-    Float32Array
+    js.typedarray.Float32Array
   ]]
   
   @JSImport("beats", JSImport.Namespace)

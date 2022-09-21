@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.PartyList")
 @js.native
-class PartyList protected () extends AttributeBase {
+open class PartyList protected () extends AttributeBase {
   /**
     * A PartyList Attribute.
     * @param name The logical name of the attribute.

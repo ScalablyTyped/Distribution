@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //Widgets
 @JSGlobal("photonui.FileManager")
 @js.native
-class FileManager ()
+open class FileManager ()
   extends StObject
      with typings.photonui.photonui.FileManager {
   
@@ -31,7 +31,7 @@ class FileManager ()
   override def open(): Unit = js.native
   
   /* CompleteClass */
-  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: js.Any): Unit = js.native
+  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: Any): Unit = js.native
   
   /* CompleteClass */
   override def removeCallback(id: String): Unit = js.native

@@ -1,11 +1,10 @@
 package typings.dialogflow.mod.google.protobuf
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.long.mod.Long
+import typings.long.mod.^
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Duration.
   * @param [properties] Properties to set
   */
-class Duration ()
+open class Duration ()
   extends StObject
      with IDuration {
   def this(properties: IDuration) = this()
@@ -28,13 +27,13 @@ class Duration ()
   
   /** Duration seconds. */
   @JSName("seconds")
-  var seconds_Duration: Double | Long | String = js.native
+  var seconds_Duration: Double | ^ | String = js.native
   
   /**
     * Converts this Duration to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[scala.Any] = js.native
 }
 object Duration {
   
@@ -51,6 +50,8 @@ object Duration {
   inline def create(): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Duration]
   inline def create(properties: IDuration): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
+  inline def decode(reader: js.typedarray.Uint8Array): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Duration]
   /**
     * Decodes a Duration message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -62,9 +63,8 @@ object Duration {
   /* static member */
   inline def decode(reader: Reader): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Duration]
   inline def decode(reader: Reader, length: Double): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Duration]
-  inline def decode(reader: Uint8Array): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Duration]
-  inline def decode(reader: Uint8Array, length: Double): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Duration]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Duration]
   /**
     * Decodes a Duration message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -74,7 +74,6 @@ object Duration {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Duration]
-  inline def decodeDelimited(reader: Uint8Array): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /**
     * Encodes the specified Duration message. Does not implicitly {@link google.protobuf.Duration.verify|verify} messages.
@@ -102,7 +101,7 @@ object Duration {
     * @returns Duration
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  inline def fromObject(`object`: StringDictionary[scala.Any]): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Duration]
   
   /**
     * Creates a plain object from a Duration message. Also converts values to other types if specified.
@@ -111,8 +110,8 @@ object Duration {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: Duration): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: Duration, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: Duration): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+  inline def toObject(message: Duration, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
   
   /**
     * Verifies a Duration message.
@@ -120,5 +119,5 @@ object Duration {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

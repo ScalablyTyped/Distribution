@@ -22,6 +22,6 @@ object DeleteApplicationsRequest {
     
     inline def setConfigurationIds(value: ApplicationIdsList): Self = StObject.set(x, "configurationIds", value.asInstanceOf[js.Any])
     
-    inline def setConfigurationIdsVarargs(value: ApplicationId*): Self = StObject.set(x, "configurationIds", js.Array(value :_*))
+    inline def setConfigurationIdsVarargs(value: ApplicationId*): Self = StObject.set(x, "configurationIds", js.Array(value*))
   }
 }

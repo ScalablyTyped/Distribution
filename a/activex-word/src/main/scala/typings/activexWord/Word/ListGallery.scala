@@ -14,7 +14,7 @@ trait ListGallery extends StObject {
   
   def Modified(Index: Double): Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Reset(Index: Double): Unit
   
@@ -28,7 +28,7 @@ object ListGallery {
     Creator: Double,
     ListTemplates: ListTemplates,
     Modified: Double => Boolean,
-    Parent: js.Any,
+    Parent: Any,
     Reset: Double => Unit,
     WordDotListGallery_typekey: ListGallery
   ): ListGallery = {
@@ -47,7 +47,7 @@ object ListGallery {
     
     inline def setModified(value: Double => Boolean): Self = StObject.set(x, "Modified", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReset(value: Double => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction1(value))
     

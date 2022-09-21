@@ -14,7 +14,7 @@ trait IMetadataCardSelectionList extends StObject {
   
   val FilteringValue: String
   
-  val Items: js.Any
+  val Items: Any
   
   val MoreResults: Boolean
   
@@ -27,7 +27,7 @@ object IMetadataCardSelectionList {
     Events: IEvents,
     Filter: String,
     FilteringValue: String,
-    Items: js.Any,
+    Items: Any,
     MoreResults: Boolean,
     SetFilter: (String, Double, Double) => Unit
   ): IMetadataCardSelectionList = {
@@ -45,7 +45,7 @@ object IMetadataCardSelectionList {
     
     inline def setFilteringValue(value: String): Self = StObject.set(x, "FilteringValue", value.asInstanceOf[js.Any])
     
-    inline def setItems(value: js.Any): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Any): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
     inline def setMoreResults(value: Boolean): Self = StObject.set(x, "MoreResults", value.asInstanceOf[js.Any])
     

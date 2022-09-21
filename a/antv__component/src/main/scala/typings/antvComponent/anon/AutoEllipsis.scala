@@ -12,11 +12,11 @@ trait AutoEllipsis extends StObject {
   
   var autoEllipsis: Boolean
   
-  var background: js.Any
+  var background: Any
   
   var capture: Boolean
   
-  var container: js.Any
+  var container: Any
   
   var content: String
   
@@ -24,9 +24,9 @@ trait AutoEllipsis extends StObject {
   
   var ellipsisPosition: String
   
-  var events: js.Any
+  var events: Any
   
-  var group: js.Any
+  var group: Any
   
   var id: String
   
@@ -40,7 +40,7 @@ trait AutoEllipsis extends StObject {
   
   var locationType: String
   
-  var maxLength: js.Any
+  var maxLength: Any
   
   var name: String
   
@@ -48,7 +48,7 @@ trait AutoEllipsis extends StObject {
   
   var offsetY: Double
   
-  var rotate: js.Any
+  var rotate: Any
   
   var `type`: String
   
@@ -66,25 +66,25 @@ object AutoEllipsis {
     animate: Boolean,
     animateOption: Appear,
     autoEllipsis: Boolean,
-    background: js.Any,
+    background: Any,
     capture: Boolean,
-    container: js.Any,
+    container: Any,
     content: String,
     defaultCfg: StyleTextAlign,
     ellipsisPosition: String,
-    events: js.Any,
-    group: js.Any,
+    events: Any,
+    group: Any,
     id: String,
     isInit: Boolean,
     isRegister: Boolean,
     isUpdating: Boolean,
     isVertical: Boolean,
     locationType: String,
-    maxLength: js.Any,
+    maxLength: Any,
     name: String,
     offsetX: Double,
     offsetY: Double,
-    rotate: js.Any,
+    rotate: Any,
     `type`: String,
     updateAutoRender: Boolean,
     visible: Boolean,
@@ -104,11 +104,11 @@ object AutoEllipsis {
     
     inline def setAutoEllipsis(value: Boolean): Self = StObject.set(x, "autoEllipsis", value.asInstanceOf[js.Any])
     
-    inline def setBackground(value: js.Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Any): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
@@ -116,9 +116,9 @@ object AutoEllipsis {
     
     inline def setEllipsisPosition(value: String): Self = StObject.set(x, "ellipsisPosition", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -132,7 +132,7 @@ object AutoEllipsis {
     
     inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
-    inline def setMaxLength(value: js.Any): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Any): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -140,7 +140,7 @@ object AutoEllipsis {
     
     inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    inline def setRotate(value: js.Any): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Any): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

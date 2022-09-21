@@ -45,7 +45,7 @@ object tableSortingMod {
       
       inline def setOrder(value: js.Array[SortDefinitionOrder]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      inline def setOrderVarargs(value: SortDefinitionOrder*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: SortDefinitionOrder*): Self = StObject.set(x, "order", js.Array(value*))
       
       inline def setSortedBy(value: SortInitiator): Self = StObject.set(x, "sortedBy", value.asInstanceOf[js.Any])
     }

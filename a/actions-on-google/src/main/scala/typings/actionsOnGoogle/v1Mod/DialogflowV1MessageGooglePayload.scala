@@ -11,7 +11,7 @@ trait DialogflowV1MessageGooglePayload
      with DialogflowV1BaseGoogleMessage[custom_payload]
      with DialogflowV1Message {
   
-  var payload: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var payload: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
 }
 object DialogflowV1MessageGooglePayload {
   
@@ -22,7 +22,7 @@ object DialogflowV1MessageGooglePayload {
   
   extension [Self <: DialogflowV1MessageGooglePayload](x: Self) {
     
-    inline def setPayload(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }

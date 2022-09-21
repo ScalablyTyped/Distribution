@@ -17,7 +17,7 @@ trait DhcpOptions extends StObject {
   var DhcpOptionsId: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the DHCP options set.
+    * The ID of the Amazon Web Services account that owns the DHCP options set.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -39,7 +39,7 @@ object DhcpOptions {
     
     inline def setDhcpConfigurationsUndefined: Self = StObject.set(x, "DhcpConfigurations", js.undefined)
     
-    inline def setDhcpConfigurationsVarargs(value: DhcpConfiguration*): Self = StObject.set(x, "DhcpConfigurations", js.Array(value :_*))
+    inline def setDhcpConfigurationsVarargs(value: DhcpConfiguration*): Self = StObject.set(x, "DhcpConfigurations", js.Array(value*))
     
     inline def setDhcpOptionsId(value: String): Self = StObject.set(x, "DhcpOptionsId", value.asInstanceOf[js.Any])
     
@@ -53,6 +53,6 @@ object DhcpOptions {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

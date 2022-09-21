@@ -27,7 +27,7 @@ object SelectorList {
     
     inline def setSelectors(value: js.Array[Value]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    inline def setSelectorsVarargs(value: Value*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: Value*): Self = StObject.set(x, "selectors", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

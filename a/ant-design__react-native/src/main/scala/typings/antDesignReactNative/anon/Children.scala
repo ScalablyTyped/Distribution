@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Children extends StObject {
   
-  var children: js.Array[js.Any]
+  var children: js.Array[Any]
 }
 object Children {
   
-  inline def apply(children: js.Array[js.Any]): Children = {
+  inline def apply(children: js.Array[Any]): Children = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[Children]
   }
   
   extension [Self <: Children](x: Self) {
     
-    inline def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Any*): Self = StObject.set(x, "children", js.Array(value*))
   }
 }

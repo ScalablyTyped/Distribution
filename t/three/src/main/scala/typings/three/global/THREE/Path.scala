@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.Path")
 @js.native
-class Path ()
+open class Path ()
   extends typings.three.mod.Path {
   def this(points: js.Array[typings.three.vector2Mod.Vector2]) = this()
 }

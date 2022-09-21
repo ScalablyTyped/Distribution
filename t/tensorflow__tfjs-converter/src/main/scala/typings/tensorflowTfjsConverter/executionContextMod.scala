@@ -18,7 +18,7 @@ object executionContextMod {
   
   @JSImport("@tensorflow/tfjs-converter/dist/executor/execution_context", "ExecutionContext")
   @js.native
-  class ExecutionContext () extends StObject {
+  open class ExecutionContext () extends StObject {
     def this(weightMap: NamedTensorsMap) = this()
     def this(weightMap: Unit, tensorArrayMap: TensorArrayMap) = this()
     def this(weightMap: NamedTensorsMap, tensorArrayMap: TensorArrayMap) = this()
@@ -75,15 +75,15 @@ object executionContextMod {
       functionMap: StringDictionary[FunctionExecutor]
     ) = this()
     
-    /* private */ var _currentContextIds: js.Any = js.native
+    /* private */ var _currentContextIds: Any = js.native
     
     def addTensorArray(tensorArray: TensorArray): Unit = js.native
     
     def addTensorList(tensorList: TensorList): Unit = js.native
     
-    /* private */ var contextIdforContexts: js.Any = js.native
+    /* private */ var contextIdforContexts: Any = js.native
     
-    /* private */ var contexts: js.Any = js.native
+    /* private */ var contexts: Any = js.native
     
     /**
       * Set the current context
@@ -119,7 +119,7 @@ object executionContextMod {
     
     val functionMap: StringDictionary[FunctionExecutor] = js.native
     
-    /* private */ var generateCurrentContextIds: js.Any = js.native
+    /* private */ var generateCurrentContextIds: Any = js.native
     
     def getTensorArray(id: Double): TensorArray = js.native
     
@@ -127,9 +127,9 @@ object executionContextMod {
     
     def getWeight(name: String): js.Array[Tensor[Rank]] = js.native
     
-    /* private */ var lastId: js.Any = js.native
+    /* private */ var lastId: Any = js.native
     
-    /* private */ var newFrame: js.Any = js.native
+    /* private */ var newFrame: Any = js.native
     
     /**
       * Enter the next iteration of a loop, the iteration id of last context is
@@ -137,7 +137,7 @@ object executionContextMod {
       */
     def nextIteration(): Unit = js.native
     
-    /* private */ var rootContext: js.Any = js.native
+    /* private */ var rootContext: Any = js.native
     
     val tensorArrayMap: TensorArrayMap = js.native
     

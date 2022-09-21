@@ -13,11 +13,13 @@ trait Checked extends StObject {
   var mode: String
   
   var rowIndex: Double
+  
+  var rowKey: String
 }
 object Checked {
   
-  inline def apply(checked: Boolean, disabled: Boolean, mode: String, rowIndex: Double): Checked = {
-    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any])
+  inline def apply(checked: Boolean, disabled: Boolean, mode: String, rowIndex: Double, rowKey: String): Checked = {
+    val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], rowKey = rowKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Checked]
   }
   
@@ -30,5 +32,7 @@ object Checked {
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    
+    inline def setRowKey(value: String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
   }
 }

@@ -20,7 +20,7 @@ trait Fields extends StObject {
   
   def asArray(): js.Array[Field]
   
-  def build(): js.Array[js.Any]
+  def build(): js.Array[Any]
   
   def forIds(ids: js.Array[String]): Fields
   
@@ -42,7 +42,7 @@ object Fields {
   
   inline def apply(
     asArray: () => js.Array[Field],
-    build: () => js.Array[js.Any],
+    build: () => js.Array[Any],
     forIds: js.Array[String] => Fields,
     getDefaultDimension: () => Field | Null,
     getDefaultMetric: () => Field | Null,
@@ -60,7 +60,7 @@ object Fields {
     
     inline def setAsArray(value: () => js.Array[Field]): Self = StObject.set(x, "asArray", js.Any.fromFunction0(value))
     
-    inline def setBuild(value: () => js.Array[js.Any]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => js.Array[Any]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     inline def setForIds(value: js.Array[String] => Fields): Self = StObject.set(x, "forIds", js.Any.fromFunction1(value))
     

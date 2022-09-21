@@ -43,7 +43,7 @@ trait ASPxClientLoadingPanel
     * Invokes the loading panel, displaying it over the specified HTML element.
     * @param htmlElement An object that specifies the required HTML element.
     */
-  def ShowInElement(htmlElement: js.Any): Unit
+  def ShowInElement(htmlElement: Any): Unit
   
   /**
     * Invokes the loading panel, displaying it over the specified element.
@@ -57,8 +57,8 @@ object ASPxClientLoadingPanel {
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
     GetHeight: () => Double,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
     GetText: () => String,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
@@ -73,7 +73,7 @@ object ASPxClientLoadingPanel {
     SetWidth: Double => Unit,
     Show: () => Unit,
     ShowAtPos: (Double, Double) => Unit,
-    ShowInElement: js.Any => Unit,
+    ShowInElement: Any => Unit,
     ShowInElementByID: String => Unit,
     name: String
   ): ASPxClientLoadingPanel = {
@@ -93,7 +93,7 @@ object ASPxClientLoadingPanel {
     
     inline def setShowAtPos(value: (Double, Double) => Unit): Self = StObject.set(x, "ShowAtPos", js.Any.fromFunction2(value))
     
-    inline def setShowInElement(value: js.Any => Unit): Self = StObject.set(x, "ShowInElement", js.Any.fromFunction1(value))
+    inline def setShowInElement(value: Any => Unit): Self = StObject.set(x, "ShowInElement", js.Any.fromFunction1(value))
     
     inline def setShowInElementByID(value: String => Unit): Self = StObject.set(x, "ShowInElementByID", js.Any.fromFunction1(value))
   }

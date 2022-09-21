@@ -10,10 +10,10 @@ Parse a glob pattern into an object of tokens.
 | ------------------ | :-------------: |
 | Full name          | parse-glob |
 | Keywords           | glob, match, bash, expand, expansion, expression, file, files, filter, find, glob, globbing, globs, globstar, match, matcher, matches, matching, path, pattern, patterns, regex, regexp, regular, shell, wildcard |
-| # releases         | 0 |
-| # dependents       | 75 |
-| # downloads        | 165875381 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1216415333333334E7 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/parse-glob)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("dplayer", JSImport.Default)
 @js.native
-class default protected ()
+open class default protected ()
   extends StObject
      with DPlayer {
   def this(options: DPlayerOptions) = this()
@@ -19,7 +19,7 @@ class default protected ()
   override def destroy(): Unit = js.native
   
   /* CompleteClass */
-  var events: js.Any = js.native
+  var events: Any = js.native
   
   /* CompleteClass */
   var fullScreen: FullScreen = js.native

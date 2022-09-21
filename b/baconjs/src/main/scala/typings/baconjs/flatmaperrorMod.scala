@@ -13,6 +13,6 @@ object flatmaperrorMod {
   
   inline def default[V, V2](
     src: typings.baconjs.observableMod.default[V],
-    f: js.Function1[/* error */ js.Any, typings.baconjs.observableMod.default[V2] | EventOrValue[V2]]
+    f: js.Function1[/* error */ Any, typings.baconjs.observableMod.default[V2] | EventOrValue[V2]]
   ): typings.baconjs.observableMod.default[V | V2] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[V | V2]]
 }

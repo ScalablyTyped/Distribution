@@ -13,9 +13,9 @@ trait AccessObjectProperty extends StObject {
   
   val Name: String
   
-  var Value: js.Any
+  var Value: Any
   
-  val _Value: js.Any
+  val _Value: Any
 }
 object AccessObjectProperty {
   
@@ -23,8 +23,8 @@ object AccessObjectProperty {
     AccessDotAccessObjectProperty_typekey: AccessObjectProperty,
     IsMemberSafe: Double => Boolean,
     Name: String,
-    Value: js.Any,
-    _Value: js.Any
+    Value: Any,
+    _Value: Any
   ): AccessObjectProperty = {
     val __obj = js.Dynamic.literal(IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any], _Value = _Value.asInstanceOf[js.Any])
     __obj.updateDynamic("Access.AccessObjectProperty_typekey")(AccessDotAccessObjectProperty_typekey.asInstanceOf[js.Any])
@@ -39,8 +39,8 @@ object AccessObjectProperty {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    inline def set_Value(value: js.Any): Self = StObject.set(x, "_Value", value.asInstanceOf[js.Any])
+    inline def set_Value(value: Any): Self = StObject.set(x, "_Value", value.asInstanceOf[js.Any])
   }
 }

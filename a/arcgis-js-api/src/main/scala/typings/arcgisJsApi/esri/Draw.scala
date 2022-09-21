@@ -28,48 +28,25 @@ trait Draw
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#complete)
     */
-  def complete(): Unit = js.native
+  def complete(): scala.Unit = js.native
   
-  @JSName("create")
-  def create_circle(drawAction: circle): DrawAction = js.native
-  @JSName("create")
-  def create_circle(drawAction: circle, drawOptions: DrawCreateDrawOptions): DrawAction = js.native
-  @JSName("create")
-  def create_ellipse(drawAction: ellipse): DrawAction = js.native
-  @JSName("create")
-  def create_ellipse(drawAction: ellipse, drawOptions: DrawCreateDrawOptions): DrawAction = js.native
-  @JSName("create")
-  def create_multipoint(drawAction: multipoint): DrawAction = js.native
-  @JSName("create")
-  def create_multipoint(drawAction: multipoint, drawOptions: DrawCreateDrawOptions): DrawAction = js.native
   /**
     * Creates an instance of the requested draw action.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#create)
     */
-  @JSName("create")
-  def create_point(drawAction: point): DrawAction = js.native
-  @JSName("create")
-  def create_point(drawAction: point, drawOptions: DrawCreateDrawOptions): DrawAction = js.native
-  @JSName("create")
-  def create_polygon(drawAction: polygon): DrawAction = js.native
-  @JSName("create")
-  def create_polygon(drawAction: polygon, drawOptions: DrawCreateDrawOptions): DrawAction = js.native
-  @JSName("create")
-  def create_polyline(drawAction: polyline): DrawAction = js.native
-  @JSName("create")
-  def create_polyline(drawAction: polyline, drawOptions: DrawCreateDrawOptions): DrawAction = js.native
-  @JSName("create")
-  def create_rectangle(drawAction: rectangle): DrawAction = js.native
-  @JSName("create")
-  def create_rectangle(drawAction: rectangle, drawOptions: DrawCreateDrawOptions): DrawAction = js.native
+  def create(drawAction: point | multipoint | polyline | polygon | rectangle | circle | ellipse): DrawAction = js.native
+  def create(
+    drawAction: point | multipoint | polyline | polygon | rectangle | circle | ellipse,
+    drawOptions: DrawCreateDrawOptions
+  ): DrawAction = js.native
   
   /**
     * Resets the drawing by clearing the active action.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#reset)
     */
-  def reset(): Unit = js.native
+  def reset(): scala.Unit = js.native
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).

@@ -53,7 +53,7 @@ trait RuleConditions extends StObject {
   /* private */ @JSName("Outlook.RuleConditions_typekey")
   var OutlookDotRuleConditions_typekey: RuleConditions
   
-  val Parent: js.Any
+  val Parent: Any
   
   val RecipientAddress: AddressRuleCondition
   
@@ -97,7 +97,7 @@ object RuleConditions {
     OnOtherMachine: RuleCondition,
     OnlyToMe: RuleCondition,
     OutlookDotRuleConditions_typekey: RuleConditions,
-    Parent: js.Any,
+    Parent: Any,
     RecipientAddress: AddressRuleCondition,
     SenderAddress: AddressRuleCondition,
     SenderInAddressList: SenderInAddressListRuleCondition,
@@ -160,7 +160,7 @@ object RuleConditions {
     
     inline def setOutlookDotRuleConditions_typekey(value: RuleConditions): Self = StObject.set(x, "Outlook.RuleConditions_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRecipientAddress(value: AddressRuleCondition): Self = StObject.set(x, "RecipientAddress", value.asInstanceOf[js.Any])
     

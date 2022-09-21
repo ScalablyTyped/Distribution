@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "Point")
 @js.native
-class Point ()
+open class Point ()
   extends typings.wonderJs.pointMod.Point {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()

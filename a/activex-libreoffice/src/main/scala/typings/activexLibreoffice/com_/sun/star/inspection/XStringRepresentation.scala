@@ -17,7 +17,7 @@ trait XStringRepresentation extends StObject {
     * @returns The converted string representation of the property value.
     * @see XPropertyHandler.convertToControlValue()
     */
-  def convertToControlValue(PropertyValue: js.Any): String
+  def convertToControlValue(PropertyValue: Any): String
   
   /**
     * converts a string into an any with the type defined by the target type.
@@ -25,19 +25,19 @@ trait XStringRepresentation extends StObject {
     * @param ControlValueType The target type of the conversion.
     * @see XPropertyHandler.convertToPropertyValue()
     */
-  def convertToPropertyValue(ControlValue: String, ControlValueType: `type`): js.Any
+  def convertToPropertyValue(ControlValue: String, ControlValueType: `type`): Any
 }
 object XStringRepresentation {
   
-  inline def apply(convertToControlValue: js.Any => String, convertToPropertyValue: (String, `type`) => js.Any): XStringRepresentation = {
+  inline def apply(convertToControlValue: Any => String, convertToPropertyValue: (String, `type`) => Any): XStringRepresentation = {
     val __obj = js.Dynamic.literal(convertToControlValue = js.Any.fromFunction1(convertToControlValue), convertToPropertyValue = js.Any.fromFunction2(convertToPropertyValue))
     __obj.asInstanceOf[XStringRepresentation]
   }
   
   extension [Self <: XStringRepresentation](x: Self) {
     
-    inline def setConvertToControlValue(value: js.Any => String): Self = StObject.set(x, "convertToControlValue", js.Any.fromFunction1(value))
+    inline def setConvertToControlValue(value: Any => String): Self = StObject.set(x, "convertToControlValue", js.Any.fromFunction1(value))
     
-    inline def setConvertToPropertyValue(value: (String, `type`) => js.Any): Self = StObject.set(x, "convertToPropertyValue", js.Any.fromFunction2(value))
+    inline def setConvertToPropertyValue(value: (String, `type`) => Any): Self = StObject.set(x, "convertToPropertyValue", js.Any.fromFunction2(value))
   }
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CxG")
 @js.native
-class CxG ()
+open class CxG ()
   extends StObject
      with typings.openjscad.CxG

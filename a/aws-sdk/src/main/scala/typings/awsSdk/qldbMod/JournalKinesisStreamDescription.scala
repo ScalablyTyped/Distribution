@@ -14,7 +14,7 @@ trait JournalKinesisStreamDescription extends StObject {
   /**
     * The date and time, in epoch time format, when the QLDB journal stream was created. (Epoch time format is the number of seconds elapsed since 12:00:00 AM January 1, 1970 UTC.)
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The error message that describes the reason that a stream has a status of IMPAIRED or FAILED. This is not applicable to streams that have other status values.
@@ -22,17 +22,17 @@ trait JournalKinesisStreamDescription extends StObject {
   var ErrorCause: js.UndefOr[typings.awsSdk.qldbMod.ErrorCause] = js.undefined
   
   /**
-    * The exclusive date and time that specifies when the stream ends. If this parameter is blank, the stream runs indefinitely until you cancel it.
+    * The exclusive date and time that specifies when the stream ends. If this parameter is undefined, the stream runs indefinitely until you cancel it.
     */
-  var ExclusiveEndTime: js.UndefOr[Timestamp] = js.undefined
+  var ExclusiveEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The inclusive start date and time from which to start streaming journal data.
     */
-  var InclusiveStartTime: js.UndefOr[Timestamp] = js.undefined
+  var InclusiveStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The configuration settings of the Amazon Kinesis Data Streams destination for your QLDB journal stream.
+    * The configuration settings of the Amazon Kinesis Data Streams destination for a QLDB journal stream.
     */
   var KinesisConfiguration: typings.awsSdk.qldbMod.KinesisConfiguration
   
@@ -52,7 +52,7 @@ trait JournalKinesisStreamDescription extends StObject {
   var Status: StreamStatus
   
   /**
-    * The unique ID that QLDB assigns to each QLDB journal stream.
+    * The UUID (represented in Base62-encoded text) of the QLDB journal stream.
     */
   var StreamId: UniqueId
   
@@ -81,7 +81,7 @@ object JournalKinesisStreamDescription {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -89,11 +89,11 @@ object JournalKinesisStreamDescription {
     
     inline def setErrorCauseUndefined: Self = StObject.set(x, "ErrorCause", js.undefined)
     
-    inline def setExclusiveEndTime(value: Timestamp): Self = StObject.set(x, "ExclusiveEndTime", value.asInstanceOf[js.Any])
+    inline def setExclusiveEndTime(value: js.Date): Self = StObject.set(x, "ExclusiveEndTime", value.asInstanceOf[js.Any])
     
     inline def setExclusiveEndTimeUndefined: Self = StObject.set(x, "ExclusiveEndTime", js.undefined)
     
-    inline def setInclusiveStartTime(value: Timestamp): Self = StObject.set(x, "InclusiveStartTime", value.asInstanceOf[js.Any])
+    inline def setInclusiveStartTime(value: js.Date): Self = StObject.set(x, "InclusiveStartTime", value.asInstanceOf[js.Any])
     
     inline def setInclusiveStartTimeUndefined: Self = StObject.set(x, "InclusiveStartTime", js.undefined)
     

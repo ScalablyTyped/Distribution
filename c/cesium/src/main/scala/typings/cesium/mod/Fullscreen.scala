@@ -4,48 +4,79 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait Fullscreen extends StObject
-@JSImport("cesium", "Fullscreen")
-@js.native
-object Fullscreen extends StObject {
+object Fullscreen {
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Fullscreen & Double] = js.native
-  
+  @JSImport("cesium", "Fullscreen")
   @js.native
-  sealed trait changeEventName
-    extends StObject
-       with Fullscreen
-  /* 1 */ val changeEventName: typings.cesium.mod.Fullscreen.changeEventName & Double = js.native
+  val ^ : js.Any = js.native
   
+  /**
+    * The name of the event on the document that is fired when fullscreen is
+    * entered or exited.  This event name is intended for use with addEventListener.
+    * In your event handler, to determine if the browser is in fullscreen mode or not,
+    * use {@link Fullscreen#fullscreen}.
+    */
+  @JSImport("cesium", "Fullscreen.changeEventName")
   @js.native
-  sealed trait element
-    extends StObject
-       with Fullscreen
-  /* 0 */ val element: typings.cesium.mod.Fullscreen.element & Double = js.native
+  val changeEventName: String = js.native
   
+  /**
+    * The element that is currently fullscreen, if any.  To simply check if the
+    * browser is in fullscreen mode or not, use {@link Fullscreen#fullscreen}.
+    */
+  @JSImport("cesium", "Fullscreen.element")
   @js.native
-  sealed trait enabled
-    extends StObject
-       with Fullscreen
-  /* 3 */ val enabled: typings.cesium.mod.Fullscreen.enabled & Double = js.native
+  val element: Any = js.native
   
+  /**
+    * Determine whether the browser will allow an element to be made fullscreen, or not.
+    * For example, by default, iframes cannot go fullscreen unless the containing page
+    * adds an "allowfullscreen" attribute (or prefixed equivalent).
+    */
+  @JSImport("cesium", "Fullscreen.enabled")
   @js.native
-  sealed trait errorEventName
-    extends StObject
-       with Fullscreen
-  /* 2 */ val errorEventName: typings.cesium.mod.Fullscreen.errorEventName & Double = js.native
+  val enabled: Boolean = js.native
   
-  def exitFullscreen(): Unit = js.native
-  
+  /**
+    * The name of the event that is fired when a fullscreen error
+    * occurs.  This event name is intended for use with addEventListener.
+    */
+  @JSImport("cesium", "Fullscreen.errorEventName")
   @js.native
-  sealed trait fullscreen
-    extends StObject
-       with Fullscreen
-  /* 4 */ val fullscreen: typings.cesium.mod.Fullscreen.fullscreen & Double = js.native
+  val errorEventName: String = js.native
   
-  def requestFullscreen(element: js.Any): Unit = js.native
+  /**
+    * Asynchronously exits fullscreen mode.  If the browser is not currently
+    * in fullscreen, or if fullscreen mode is not supported by the browser, does nothing.
+    */
+  inline def exitFullscreen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exitFullscreen")().asInstanceOf[Unit]
   
-  def supportsFullscreen(): Boolean = js.native
+  /**
+    * Determines if the browser is currently in fullscreen mode.
+    */
+  @JSImport("cesium", "Fullscreen.fullscreen")
+  @js.native
+  val fullscreen: Boolean = js.native
+  
+  /**
+    * Asynchronously requests the browser to enter fullscreen mode on the given element.
+    * If fullscreen mode is not supported by the browser, does nothing.
+    * @example
+    * // Put the entire page into fullscreen.
+    * Cesium.Fullscreen.requestFullscreen(document.body)
+    *
+    * // Place only the Cesium canvas into fullscreen.
+    * Cesium.Fullscreen.requestFullscreen(scene.canvas)
+    * @param element - The HTML element which will be placed into fullscreen mode.
+    * @param [vrDevice] - The HMDVRDevice device.
+    */
+  inline def requestFullscreen(element: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestFullscreen")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def requestFullscreen(element: Any, vrDevice: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestFullscreen")(element.asInstanceOf[js.Any], vrDevice.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Detects whether the browser supports the standard fullscreen API.
+    * @returns <code>true</code> if the browser supports the standard fullscreen API,
+    * <code>false</code> otherwise.
+    */
+  inline def supportsFullscreen(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsFullscreen")().asInstanceOf[Boolean]
 }

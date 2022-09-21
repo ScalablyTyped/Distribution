@@ -39,7 +39,7 @@ object Stats {
     
     inline def setChannels(value: js.Array[ChannelStats]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    inline def setChannelsVarargs(value: ChannelStats*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: ChannelStats*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setDominant(value: B): Self = StObject.set(x, "dominant", value.asInstanceOf[js.Any])
     

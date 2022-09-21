@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientToolbar")
 @js.native
-class BootstrapClientToolbar ()
+open class BootstrapClientToolbar ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientMenu {
   
@@ -66,7 +66,7 @@ class BootstrapClientToolbar ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Gets a value specifying the menu orientation.
@@ -78,7 +78,7 @@ class BootstrapClientToolbar ()
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a root menu item.

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.CandidateInferenceInfo")
 @js.native
-class CandidateInferenceInfo ()
+open class CandidateInferenceInfo ()
   extends StObject
      with typings.typescriptServices.TypeScript.CandidateInferenceInfo {
   

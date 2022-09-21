@@ -29,6 +29,6 @@ object TextProperty {
     
     inline def setDetectedLanguagesUndefined: Self = StObject.set(x, "detectedLanguages", js.undefined)
     
-    inline def setDetectedLanguagesVarargs(value: DetectedLanguage*): Self = StObject.set(x, "detectedLanguages", js.Array(value :_*))
+    inline def setDetectedLanguagesVarargs(value: DetectedLanguage*): Self = StObject.set(x, "detectedLanguages", js.Array(value*))
   }
 }

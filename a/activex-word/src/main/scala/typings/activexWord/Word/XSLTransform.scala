@@ -23,7 +23,7 @@ trait XSLTransform extends StObject {
   def Location(): String = js.native
   def Location(AllUsers: Boolean): String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.XSLTransform_typekey")
   var WordDotXSLTransform_typekey: XSLTransform = js.native

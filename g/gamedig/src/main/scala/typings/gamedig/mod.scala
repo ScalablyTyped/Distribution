@@ -11,7 +11,7 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def query(options: QueryOptions): js.Promise[QueryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[QueryResult]]
-  inline def query(options: QueryOptions, callback: js.Function2[/* error */ js.Any, /* state */ QueryResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def query(options: QueryOptions, callback: js.Function2[/* error */ Any, /* state */ QueryResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Player extends StObject {
     
@@ -20,6 +20,8 @@ object mod {
     var name: js.UndefOr[String] = js.undefined
     
     var ping: js.UndefOr[Double] = js.undefined
+    
+    var raw: js.UndefOr[js.Object] = js.undefined
     
     var score: js.UndefOr[Double] = js.undefined
     
@@ -46,6 +48,10 @@ object mod {
       
       inline def setPingUndefined: Self = StObject.set(x, "ping", js.undefined)
       
+      inline def setRaw(value: js.Object): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      
       inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
       
       inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
@@ -69,6 +75,8 @@ object mod {
     var maxAttempts: js.UndefOr[Double] = js.undefined
     
     var port: js.UndefOr[Double] = js.undefined
+    
+    var requestRules: js.UndefOr[Boolean] = js.undefined
     
     var socketTimeout: js.UndefOr[Double] = js.undefined
     
@@ -105,6 +113,10 @@ object mod {
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      
+      inline def setRequestRules(value: Boolean): Self = StObject.set(x, "requestRules", value.asInstanceOf[js.Any])
+      
+      inline def setRequestRulesUndefined: Self = StObject.set(x, "requestRules", js.undefined)
       
       inline def setSocketTimeout(value: Double): Self = StObject.set(x, "socketTimeout", value.asInstanceOf[js.Any])
       
@@ -154,7 +166,7 @@ object mod {
       
       inline def setBots(value: js.Array[Player]): Self = StObject.set(x, "bots", value.asInstanceOf[js.Any])
       
-      inline def setBotsVarargs(value: Player*): Self = StObject.set(x, "bots", js.Array(value :_*))
+      inline def setBotsVarargs(value: Player*): Self = StObject.set(x, "bots", js.Array(value*))
       
       inline def setConnect(value: String): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
       
@@ -170,7 +182,7 @@ object mod {
       
       inline def setPlayers(value: js.Array[Player]): Self = StObject.set(x, "players", value.asInstanceOf[js.Any])
       
-      inline def setPlayersVarargs(value: Player*): Self = StObject.set(x, "players", js.Array(value :_*))
+      inline def setPlayersVarargs(value: Player*): Self = StObject.set(x, "players", js.Array(value*))
       
       inline def setRaw(value: js.Object): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       

@@ -12,14 +12,14 @@ trait GetParametersForImportResponse extends StObject {
   var ImportToken: js.UndefOr[CiphertextType] = js.undefined
   
   /**
-    * The Amazon Resource Name (key ARN) of the CMK to use in a subsequent ImportKeyMaterial request. This is the same CMK specified in the GetParametersForImport request.
+    * The Amazon Resource Name (key ARN) of the KMS key to use in a subsequent ImportKeyMaterial request. This is the same KMS key specified in the GetParametersForImport request.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.undefined
   
   /**
     * The time at which the import token and public key are no longer valid. After this time, you cannot use them to make an ImportKeyMaterial request and you must send another GetParametersForImport request to get new ones.
     */
-  var ParametersValidTo: js.UndefOr[DateType] = js.undefined
+  var ParametersValidTo: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The public key to use to encrypt the key material before importing it with ImportKeyMaterial.
@@ -43,7 +43,7 @@ object GetParametersForImportResponse {
     
     inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
-    inline def setParametersValidTo(value: DateType): Self = StObject.set(x, "ParametersValidTo", value.asInstanceOf[js.Any])
+    inline def setParametersValidTo(value: js.Date): Self = StObject.set(x, "ParametersValidTo", value.asInstanceOf[js.Any])
     
     inline def setParametersValidToUndefined: Self = StObject.set(x, "ParametersValidTo", js.undefined)
     

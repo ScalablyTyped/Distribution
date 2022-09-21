@@ -13,7 +13,7 @@ trait FetchBlobResponse extends StObject {
     * Return BASE64 string directly.
     * @return BASE64 string of response body.
     */
-  def base64(): js.Any
+  def base64(): Any
   
   /**
     * Convert result to javascript RNFetchBlob object.
@@ -21,7 +21,7 @@ trait FetchBlobResponse extends StObject {
     */
   def blob(contentType: String, sliceSize: Double): js.Promise[PolyfillBlob]
   
-  var data: js.Any
+  var data: Any
   
   /**
     * Remove cahced file
@@ -32,7 +32,7 @@ trait FetchBlobResponse extends StObject {
     * Convert result to JSON object.
     * @return Parsed javascript object.
     */
-  def json(): js.Any
+  def json(): Any
   
   /**
     * get path of response temp file
@@ -45,7 +45,7 @@ trait FetchBlobResponse extends StObject {
     * a file path, show warning message
     * @param  encode Encode type, should be one of `base64`, `ascrii`, `utf8`.
     */
-  def readFile(encode: Encoding): js.Promise[js.Any] | Null
+  def readFile(encode: Encoding): js.Promise[Any] | Null
   
   /**
     * Start read stream from cached file
@@ -63,25 +63,25 @@ trait FetchBlobResponse extends StObject {
     * Convert result to text.
     * @return Decoded base64 string.
     */
-  def text(): String | js.Promise[js.Any]
+  def text(): String | js.Promise[Any]
   
   var `type`: base64 | path | utf8
 }
 object FetchBlobResponse {
   
   inline def apply(
-    base64: () => js.Any,
+    base64: () => Any,
     blob: (String, Double) => js.Promise[PolyfillBlob],
-    data: js.Any,
+    data: Any,
     flush: () => Unit,
-    json: () => js.Any,
+    json: () => Any,
     path: () => String,
-    readFile: Encoding => js.Promise[js.Any] | Null,
+    readFile: Encoding => js.Promise[Any] | Null,
     readStream: Encoding => RNFetchBlobStream | Null,
     respInfo: RNFetchBlobResponseInfo,
     session: String => RNFetchBlobSession | Null,
     taskId: String,
-    text: () => String | js.Promise[js.Any],
+    text: () => String | js.Promise[Any],
     `type`: base64 | path | utf8
   ): FetchBlobResponse = {
     val __obj = js.Dynamic.literal(base64 = js.Any.fromFunction0(base64), blob = js.Any.fromFunction2(blob), data = data.asInstanceOf[js.Any], flush = js.Any.fromFunction0(flush), json = js.Any.fromFunction0(json), path = js.Any.fromFunction0(path), readFile = js.Any.fromFunction1(readFile), readStream = js.Any.fromFunction1(readStream), respInfo = respInfo.asInstanceOf[js.Any], session = js.Any.fromFunction1(session), taskId = taskId.asInstanceOf[js.Any], text = js.Any.fromFunction0(text))
@@ -91,19 +91,19 @@ object FetchBlobResponse {
   
   extension [Self <: FetchBlobResponse](x: Self) {
     
-    inline def setBase64(value: () => js.Any): Self = StObject.set(x, "base64", js.Any.fromFunction0(value))
+    inline def setBase64(value: () => Any): Self = StObject.set(x, "base64", js.Any.fromFunction0(value))
     
     inline def setBlob(value: (String, Double) => js.Promise[PolyfillBlob]): Self = StObject.set(x, "blob", js.Any.fromFunction2(value))
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    inline def setJson(value: () => js.Any): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+    inline def setJson(value: () => Any): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
     
     inline def setPath(value: () => String): Self = StObject.set(x, "path", js.Any.fromFunction0(value))
     
-    inline def setReadFile(value: Encoding => js.Promise[js.Any] | Null): Self = StObject.set(x, "readFile", js.Any.fromFunction1(value))
+    inline def setReadFile(value: Encoding => js.Promise[Any] | Null): Self = StObject.set(x, "readFile", js.Any.fromFunction1(value))
     
     inline def setReadStream(value: Encoding => RNFetchBlobStream | Null): Self = StObject.set(x, "readStream", js.Any.fromFunction1(value))
     
@@ -113,7 +113,7 @@ object FetchBlobResponse {
     
     inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    inline def setText(value: () => String | js.Promise[js.Any]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+    inline def setText(value: () => String | js.Promise[Any]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     
     inline def setType(value: base64 | path | utf8): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

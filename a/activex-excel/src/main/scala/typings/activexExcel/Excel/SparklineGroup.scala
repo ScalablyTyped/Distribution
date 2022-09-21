@@ -25,9 +25,9 @@ trait SparklineGroup extends StObject {
   /* private */ @JSName("Excel.SparklineGroup_typekey")
   var ExcelDotSparklineGroup_typekey: SparklineGroup
   
-  def Item(Index: js.Any): Sparkline
+  def Item(Index: Any): Sparkline
   
-  var LineWeight: js.Any
+  var LineWeight: Any
   
   def Location(Address: String): Range
   def Location(RowIndex: Double): Range
@@ -43,7 +43,7 @@ trait SparklineGroup extends StObject {
   
   def ModifySourceData(SourceData: String): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PlotBy: XlSparklineRowCol
   
@@ -67,14 +67,14 @@ object SparklineGroup {
     DisplayBlanksAs: XlDisplayBlanksAs,
     DisplayHidden: Boolean,
     ExcelDotSparklineGroup_typekey: SparklineGroup,
-    Item: js.Any => Sparkline,
-    LineWeight: js.Any,
+    Item: Any => Sparkline,
+    LineWeight: Any,
     Location: Range,
     Modify: (Range, String) => Unit,
     ModifyDateRange: String => Unit,
     ModifyLocation: Range => Unit,
     ModifySourceData: String => Unit,
-    Parent: js.Any,
+    Parent: Any,
     PlotBy: XlSparklineRowCol,
     Points: SparkPoints,
     SeriesColor: FormatColor,
@@ -106,9 +106,9 @@ object SparklineGroup {
     
     inline def setExcelDotSparklineGroup_typekey(value: SparklineGroup): Self = StObject.set(x, "Excel.SparklineGroup_typekey", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => Sparkline): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Sparkline): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setLineWeight(value: js.Any): Self = StObject.set(x, "LineWeight", value.asInstanceOf[js.Any])
+    inline def setLineWeight(value: Any): Self = StObject.set(x, "LineWeight", value.asInstanceOf[js.Any])
     
     inline def setLocation(value: Range): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
@@ -120,7 +120,7 @@ object SparklineGroup {
     
     inline def setModifySourceData(value: String => Unit): Self = StObject.set(x, "ModifySourceData", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPlotBy(value: XlSparklineRowCol): Self = StObject.set(x, "PlotBy", value.asInstanceOf[js.Any])
     

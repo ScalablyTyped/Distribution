@@ -366,20 +366,20 @@ object NavigationApi {
     */
   trait OpenFormSuccessResponse extends StObject {
     
-    var savedEntityReference: js.Array[EntityReference]
+    var savedEntityReference: js.Array[LookupValue]
   }
   object OpenFormSuccessResponse {
     
-    inline def apply(savedEntityReference: js.Array[EntityReference]): OpenFormSuccessResponse = {
+    inline def apply(savedEntityReference: js.Array[LookupValue]): OpenFormSuccessResponse = {
       val __obj = js.Dynamic.literal(savedEntityReference = savedEntityReference.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenFormSuccessResponse]
     }
     
     extension [Self <: OpenFormSuccessResponse](x: Self) {
       
-      inline def setSavedEntityReference(value: js.Array[EntityReference]): Self = StObject.set(x, "savedEntityReference", value.asInstanceOf[js.Any])
+      inline def setSavedEntityReference(value: js.Array[LookupValue]): Self = StObject.set(x, "savedEntityReference", value.asInstanceOf[js.Any])
       
-      inline def setSavedEntityReferenceVarargs(value: EntityReference*): Self = StObject.set(x, "savedEntityReference", js.Array(value :_*))
+      inline def setSavedEntityReferenceVarargs(value: LookupValue*): Self = StObject.set(x, "savedEntityReference", js.Array(value*))
     }
   }
   

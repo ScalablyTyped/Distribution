@@ -75,7 +75,7 @@ object XDockableWindow {
     isInPopupMode: () => Boolean,
     isLocked: () => Boolean,
     lock: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeDockableWindowListener: XDockableWindowListener => Unit,
     setFloatingMode: Boolean => Unit,

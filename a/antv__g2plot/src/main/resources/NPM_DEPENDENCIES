@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@antv/g2plot" : "2.4.20"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@antv/g2plot" : "2.4.20"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

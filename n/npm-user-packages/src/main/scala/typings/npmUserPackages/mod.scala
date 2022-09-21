@@ -69,13 +69,13 @@ object mod {
       
       inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       
-      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
       
       inline def setLinks(value: Bugs): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
       inline def setMaintainers(value: js.Array[Username]): Self = StObject.set(x, "maintainers", value.asInstanceOf[js.Any])
       
-      inline def setMaintainersVarargs(value: Username*): Self = StObject.set(x, "maintainers", js.Array(value :_*))
+      inline def setMaintainersVarargs(value: Username*): Self = StObject.set(x, "maintainers", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

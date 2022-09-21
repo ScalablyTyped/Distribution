@@ -12,7 +12,7 @@ trait ExampleObject extends StObject {
   
   var summary: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object ExampleObject {
   
@@ -35,7 +35,7 @@ object ExampleObject {
     
     inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

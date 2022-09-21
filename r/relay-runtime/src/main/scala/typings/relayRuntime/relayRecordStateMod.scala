@@ -6,18 +6,53 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object relayRecordStateMod {
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.relayRuntime.relayRuntimeStrings.EXISTENT
-    - typings.relayRuntime.relayRuntimeStrings.NONEXISTENT
-    - typings.relayRuntime.relayRuntimeStrings.UNKNOWN
-  */
-  trait RecordState extends StObject
-  object RecordState {
+  @JSImport("relay-runtime/lib/store/RelayRecordState", JSImport.Default)
+  @js.native
+  object default extends StObject {
     
-    inline def EXISTENT: typings.relayRuntime.relayRuntimeStrings.EXISTENT = "EXISTENT".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.EXISTENT]
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[RelayRecordState & String] = js.native
     
-    inline def NONEXISTENT: typings.relayRuntime.relayRuntimeStrings.NONEXISTENT = "NONEXISTENT".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.NONEXISTENT]
+    /* "EXISTENT" */ val EXISTENT: typings.relayRuntime.relayRecordStateMod.RelayRecordState.EXISTENT & String = js.native
     
-    inline def UNKNOWN: typings.relayRuntime.relayRuntimeStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.UNKNOWN]
+    /* "NONEXISTENT" */ val NONEXISTENT: typings.relayRuntime.relayRecordStateMod.RelayRecordState.NONEXISTENT & String = js.native
+    
+    /* "UNKNOWN" */ val UNKNOWN: typings.relayRuntime.relayRecordStateMod.RelayRecordState.UNKNOWN & String = js.native
   }
+  
+  @js.native
+  sealed trait RelayRecordState extends StObject
+  @JSImport("relay-runtime/lib/store/RelayRecordState", "RelayRecordState")
+  @js.native
+  object RelayRecordState extends StObject {
+    
+    /**
+      * Record exists (either fetched from the server or produced by a local,
+      * optimistic update).
+      */
+    @js.native
+    sealed trait EXISTENT
+      extends StObject
+         with RelayRecordState
+    
+    /**
+      * Record is known not to exist (either as the result of a mutation, or
+      * because the server returned `null` when queried for the record).
+      */
+    @js.native
+    sealed trait NONEXISTENT
+      extends StObject
+         with RelayRecordState
+    
+    /**
+      * Record State is unknown because it has not yet been fetched from the
+      * server.
+      */
+    @js.native
+    sealed trait UNKNOWN
+      extends StObject
+         with RelayRecordState
+  }
+  
+  type RecordState = /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RelayRecordState * / any */ String
 }

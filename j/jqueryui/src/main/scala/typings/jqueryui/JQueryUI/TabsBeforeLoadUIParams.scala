@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TabsBeforeLoadUIParams extends StObject {
   
-  var ajaxSettings: js.Any
+  var ajaxSettings: Any
   
   var jqXHR: JQueryXHR
   
@@ -18,14 +18,14 @@ trait TabsBeforeLoadUIParams extends StObject {
 }
 object TabsBeforeLoadUIParams {
   
-  inline def apply(ajaxSettings: js.Any, jqXHR: JQueryXHR, panel: JQuery, tab: JQuery): TabsBeforeLoadUIParams = {
+  inline def apply(ajaxSettings: Any, jqXHR: JQueryXHR, panel: JQuery, tab: JQuery): TabsBeforeLoadUIParams = {
     val __obj = js.Dynamic.literal(ajaxSettings = ajaxSettings.asInstanceOf[js.Any], jqXHR = jqXHR.asInstanceOf[js.Any], panel = panel.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabsBeforeLoadUIParams]
   }
   
   extension [Self <: TabsBeforeLoadUIParams](x: Self) {
     
-    inline def setAjaxSettings(value: js.Any): Self = StObject.set(x, "ajaxSettings", value.asInstanceOf[js.Any])
+    inline def setAjaxSettings(value: Any): Self = StObject.set(x, "ajaxSettings", value.asInstanceOf[js.Any])
     
     inline def setJqXHR(value: JQueryXHR): Self = StObject.set(x, "jqXHR", value.asInstanceOf[js.Any])
     

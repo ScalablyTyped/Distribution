@@ -14,13 +14,13 @@ object mod {
   
   @JSImport("@ethersproject/properties", "Description")
   @js.native
-  class Description[T] protected () extends StObject {
+  open class Description[T] protected () extends StObject {
     def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]: T[K]}
       */ typings.ethersprojectProperties.ethersprojectPropertiesStrings.Description & TopLevel[T]) = this()
   }
   
-  inline def checkProperties(`object`: js.Any, properties: StringDictionary[Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkProperties")(`object`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkProperties(`object`: Any, properties: StringDictionary[Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkProperties")(`object`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def deepCopy[T](`object`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
   
@@ -30,7 +30,7 @@ object mod {
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineReadOnly")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def getStatic[T](ctor: js.Any, key: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getStatic")(ctor.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def getStatic[T](ctor: Any, key: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getStatic")(ctor.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def resolveProperties[T](`object`: Deferrable[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveProperties")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
@@ -38,5 +38,5 @@ object mod {
   
   type Deferrable[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: T[K] | std.Promise<T[K]>}
-    */ typings.ethersprojectProperties.ethersprojectPropertiesStrings.Deferrable & TopLevel[js.Any]
+    */ typings.ethersprojectProperties.ethersprojectPropertiesStrings.Deferrable & TopLevel[Any]
 }

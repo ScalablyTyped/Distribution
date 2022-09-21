@@ -12,7 +12,7 @@ trait BatchUpdateSpreadsheetResponse extends StObject {
   /** The spreadsheet the updates were applied to. */
   var spreadsheetId: js.UndefOr[String] = js.undefined
   
-  /** The spreadsheet after updates were applied. This is only set if [BatchUpdateSpreadsheetRequest.include_spreadsheet_in_response] is `true`. */
+  /** The spreadsheet after updates were applied. This is only set if BatchUpdateSpreadsheetRequest.include_spreadsheet_in_response is `true`. */
   var updatedSpreadsheet: js.UndefOr[Spreadsheet] = js.undefined
 }
 object BatchUpdateSpreadsheetResponse {
@@ -28,7 +28,7 @@ object BatchUpdateSpreadsheetResponse {
     
     inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
-    inline def setRepliesVarargs(value: Response*): Self = StObject.set(x, "replies", js.Array(value :_*))
+    inline def setRepliesVarargs(value: Response*): Self = StObject.set(x, "replies", js.Array(value*))
     
     inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     

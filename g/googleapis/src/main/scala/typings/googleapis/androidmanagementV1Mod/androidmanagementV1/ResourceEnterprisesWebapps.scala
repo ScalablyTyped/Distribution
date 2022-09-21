@@ -4,30 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidmanagement/v1", "androidmanagement_v1.Resource$Enterprises$Webapps")
 @js.native
-class ResourceEnterprisesWebapps protected () extends StObject {
+open class ResourceEnterprisesWebapps protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * androidmanagement.enterprises.webApps.create
-    * @desc Creates a web app.
-    * @alias androidmanagement.enterprises.webApps.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.parent The name of the enterprise in the form enterprises/{enterpriseId}.
-    * @param {().WebApp} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaWebApp] = js.native
   def create(callback: BodyResponseCallback[SchemaWebApp]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWebApp] = js.native
@@ -35,8 +24,8 @@ class ResourceEnterprisesWebapps protected () extends StObject {
   def create(params: ParamsResourceEnterprisesWebappsCreate, callback: BodyResponseCallback[SchemaWebApp]): Unit = js.native
   def create(
     params: ParamsResourceEnterprisesWebappsCreate,
-    options: BodyResponseCallback[SchemaWebApp],
-    callback: BodyResponseCallback[SchemaWebApp]
+    options: BodyResponseCallback[Readable | SchemaWebApp],
+    callback: BodyResponseCallback[Readable | SchemaWebApp]
   ): Unit = js.native
   def create(params: ParamsResourceEnterprisesWebappsCreate, options: MethodOptions): GaxiosPromise[SchemaWebApp] = js.native
   def create(
@@ -44,19 +33,81 @@ class ResourceEnterprisesWebapps protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWebApp]
   ): Unit = js.native
-  
   /**
-    * androidmanagement.enterprises.webApps.delete
-    * @desc Deletes a web app.
-    * @alias androidmanagement.enterprises.webApps.delete
-    * @memberOf! ()
+    * Creates a web app.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androidmanagement.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The name of the web app in the form enterprises/{enterpriseId}/webApps/{packageName}.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const androidmanagement = google.androidmanagement('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/androidmanagement'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androidmanagement.enterprises.webApps.create({
+    *     // The name of the enterprise in the form enterprises/{enterpriseId\}.
+    *     parent: 'enterprises/my-enterprise',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "displayMode": "my_displayMode",
+    *       //   "icons": [],
+    *       //   "name": "my_name",
+    *       //   "startUrl": "my_startUrl",
+    *       //   "title": "my_title",
+    *       //   "versionCode": "my_versionCode"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "displayMode": "my_displayMode",
+    *   //   "icons": [],
+    *   //   "name": "my_name",
+    *   //   "startUrl": "my_startUrl",
+    *   //   "title": "my_title",
+    *   //   "versionCode": "my_versionCode"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceEnterprisesWebappsCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceEnterprisesWebappsCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
@@ -64,8 +115,8 @@ class ResourceEnterprisesWebapps protected () extends StObject {
   def delete(params: ParamsResourceEnterprisesWebappsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
     params: ParamsResourceEnterprisesWebappsDelete,
-    options: BodyResponseCallback[SchemaEmpty],
-    callback: BodyResponseCallback[SchemaEmpty]
+    options: BodyResponseCallback[Readable | SchemaEmpty],
+    callback: BodyResponseCallback[Readable | SchemaEmpty]
   ): Unit = js.native
   def delete(params: ParamsResourceEnterprisesWebappsDelete, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
@@ -73,19 +124,61 @@ class ResourceEnterprisesWebapps protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaEmpty]
   ): Unit = js.native
-  
   /**
-    * androidmanagement.enterprises.webApps.get
-    * @desc Gets a web app.
-    * @alias androidmanagement.enterprises.webApps.get
-    * @memberOf! ()
+    * Deletes a web app.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androidmanagement.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The name of the web app in the form enterprises/{enterpriseId}/webApp/{packageName}.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const androidmanagement = google.androidmanagement('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/androidmanagement'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androidmanagement.enterprises.webApps.delete({
+    *     // The name of the web app in the form enterprises/{enterpriseId\}/webApps/{packageName\}.
+    *     name: 'enterprises/my-enterprise/webApps/my-webApp',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceEnterprisesWebappsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceEnterprisesWebappsDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaWebApp] = js.native
   def get(callback: BodyResponseCallback[SchemaWebApp]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWebApp] = js.native
@@ -93,8 +186,8 @@ class ResourceEnterprisesWebapps protected () extends StObject {
   def get(params: ParamsResourceEnterprisesWebappsGet, callback: BodyResponseCallback[SchemaWebApp]): Unit = js.native
   def get(
     params: ParamsResourceEnterprisesWebappsGet,
-    options: BodyResponseCallback[SchemaWebApp],
-    callback: BodyResponseCallback[SchemaWebApp]
+    options: BodyResponseCallback[Readable | SchemaWebApp],
+    callback: BodyResponseCallback[Readable | SchemaWebApp]
   ): Unit = js.native
   def get(params: ParamsResourceEnterprisesWebappsGet, options: MethodOptions): GaxiosPromise[SchemaWebApp] = js.native
   def get(
@@ -102,21 +195,68 @@ class ResourceEnterprisesWebapps protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWebApp]
   ): Unit = js.native
-  
   /**
-    * androidmanagement.enterprises.webApps.list
-    * @desc Lists web apps for a given enterprise.
-    * @alias androidmanagement.enterprises.webApps.list
-    * @memberOf! ()
+    * Gets a web app.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androidmanagement.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {integer=} params.pageSize The requested page size. The actual page size may be fixed to a min or max value.
-    * @param {string=} params.pageToken A token identifying a page of results returned by the server.
-    * @param {string} params.parent The name of the enterprise in the form enterprises/{enterpriseId}.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const androidmanagement = google.androidmanagement('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/androidmanagement'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androidmanagement.enterprises.webApps.get({
+    *     // The name of the web app in the form enterprises/{enterpriseId\}/webApp/{packageName\}.
+    *     name: 'enterprises/my-enterprise/webApps/my-webApp',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "displayMode": "my_displayMode",
+    *   //   "icons": [],
+    *   //   "name": "my_name",
+    *   //   "startUrl": "my_startUrl",
+    *   //   "title": "my_title",
+    *   //   "versionCode": "my_versionCode"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceEnterprisesWebappsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceEnterprisesWebappsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaListWebAppsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListWebAppsResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListWebAppsResponse] = js.native
@@ -127,8 +267,8 @@ class ResourceEnterprisesWebapps protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceEnterprisesWebappsList,
-    options: BodyResponseCallback[SchemaListWebAppsResponse],
-    callback: BodyResponseCallback[SchemaListWebAppsResponse]
+    options: BodyResponseCallback[Readable | SchemaListWebAppsResponse],
+    callback: BodyResponseCallback[Readable | SchemaListWebAppsResponse]
   ): Unit = js.native
   def list(params: ParamsResourceEnterprisesWebappsList, options: MethodOptions): GaxiosPromise[SchemaListWebAppsResponse] = js.native
   def list(
@@ -136,21 +276,68 @@ class ResourceEnterprisesWebapps protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListWebAppsResponse]
   ): Unit = js.native
-  
   /**
-    * androidmanagement.enterprises.webApps.patch
-    * @desc Updates a web app.
-    * @alias androidmanagement.enterprises.webApps.patch
-    * @memberOf! ()
+    * Lists web apps for a given enterprise.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androidmanagement.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name The name of the web app in the form enterprises/{enterpriseId}/webApps/{packageName}.
-    * @param {string=} params.updateMask The field mask indicating the fields to update. If not set, all modifiable fields will be modified.
-    * @param {().WebApp} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const androidmanagement = google.androidmanagement('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/androidmanagement'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androidmanagement.enterprises.webApps.list({
+    *     // The requested page size. This is a hint and the actual page size in the response may be different.
+    *     pageSize: 'placeholder-value',
+    *     // A token identifying a page of results returned by the server.
+    *     pageToken: 'placeholder-value',
+    *     // The name of the enterprise in the form enterprises/{enterpriseId\}.
+    *     parent: 'enterprises/my-enterprise',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "webApps": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceEnterprisesWebappsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceEnterprisesWebappsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaWebApp] = js.native
   def patch(callback: BodyResponseCallback[SchemaWebApp]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWebApp] = js.native
@@ -158,13 +345,89 @@ class ResourceEnterprisesWebapps protected () extends StObject {
   def patch(params: ParamsResourceEnterprisesWebappsPatch, callback: BodyResponseCallback[SchemaWebApp]): Unit = js.native
   def patch(
     params: ParamsResourceEnterprisesWebappsPatch,
-    options: BodyResponseCallback[SchemaWebApp],
-    callback: BodyResponseCallback[SchemaWebApp]
+    options: BodyResponseCallback[Readable | SchemaWebApp],
+    callback: BodyResponseCallback[Readable | SchemaWebApp]
   ): Unit = js.native
   def patch(params: ParamsResourceEnterprisesWebappsPatch, options: MethodOptions): GaxiosPromise[SchemaWebApp] = js.native
   def patch(
     params: ParamsResourceEnterprisesWebappsPatch,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaWebApp]
+  ): Unit = js.native
+  /**
+    * Updates a web app.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/androidmanagement.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const androidmanagement = google.androidmanagement('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/androidmanagement'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await androidmanagement.enterprises.webApps.patch({
+    *     // The name of the web app in the form enterprises/{enterpriseId\}/webApps/{packageName\}.
+    *     name: 'enterprises/my-enterprise/webApps/my-webApp',
+    *     // The field mask indicating the fields to update. If not set, all modifiable fields will be modified.
+    *     updateMask: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "displayMode": "my_displayMode",
+    *       //   "icons": [],
+    *       //   "name": "my_name",
+    *       //   "startUrl": "my_startUrl",
+    *       //   "title": "my_title",
+    *       //   "versionCode": "my_versionCode"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "displayMode": "my_displayMode",
+    *   //   "icons": [],
+    *   //   "name": "my_name",
+    *   //   "startUrl": "my_startUrl",
+    *   //   "title": "my_title",
+    *   //   "versionCode": "my_versionCode"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def patch(params: ParamsResourceEnterprisesWebappsPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceEnterprisesWebappsPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

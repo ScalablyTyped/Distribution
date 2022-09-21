@@ -11,9 +11,9 @@ A falcor server for express.
 | Full name          | falcor-express |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 7 |
-| # downloads        | 6252 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 536.6666666666666 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/Netflix/falcor-express)

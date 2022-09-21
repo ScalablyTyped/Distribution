@@ -12,6 +12,6 @@ object ojtreedataproviderMod {
     extends StObject
        with DataProvider[K, D] {
     
-    def getChildDataProvider(parentKey: js.Any): TreeDataProvider[K, D] = js.native
+    def getChildDataProvider(parentKey: Any): TreeDataProvider[K, D] = js.native
   }
 }

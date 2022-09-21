@@ -14,7 +14,7 @@ trait ProjectDescription extends StObject {
   /**
     * The date when the project was originally created, in UNIX epoch time format.
     */
-  var createdDate: Time
+  var createdDate: js.Date
   
   /**
     * The description of the project.
@@ -39,11 +39,11 @@ trait ProjectDescription extends StObject {
   /**
     * The date when the project was last updated, in UNIX epoch time format. If the project was not updated, then createdDate and updatedDate are the same.
     */
-  var updatedDate: Time
+  var updatedDate: js.Date
 }
 object ProjectDescription {
   
-  inline def apply(createdDate: Time, projectName: ProjectName, updatedDate: Time): ProjectDescription = {
+  inline def apply(createdDate: js.Date, projectName: ProjectName, updatedDate: js.Date): ProjectDescription = {
     val __obj = js.Dynamic.literal(createdDate = createdDate.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], updatedDate = updatedDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectDescription]
   }
@@ -54,7 +54,7 @@ object ProjectDescription {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedDate(value: Time): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -70,6 +70,6 @@ object ProjectDescription {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setUpdatedDate(value: Time): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
+    inline def setUpdatedDate(value: js.Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
   }
 }

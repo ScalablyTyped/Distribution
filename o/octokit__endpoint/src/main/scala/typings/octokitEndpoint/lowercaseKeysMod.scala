@@ -11,6 +11,6 @@ object lowercaseKeysMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def lowercaseKeys(): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("lowercaseKeys")().asInstanceOf[StringDictionary[js.Any]]
-  inline def lowercaseKeys(`object`: StringDictionary[js.Any]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("lowercaseKeys")(`object`.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def lowercaseKeys(): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("lowercaseKeys")().asInstanceOf[StringDictionary[Any]]
+  inline def lowercaseKeys(`object`: StringDictionary[Any]): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("lowercaseKeys")(`object`.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
 }

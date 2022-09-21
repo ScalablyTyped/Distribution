@@ -12,7 +12,7 @@ object global {
     
     @JSGlobal("Wallop")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.wallop.mod.^ {
       /**
         * Implement new instance of Wallop.

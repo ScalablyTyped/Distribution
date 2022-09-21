@@ -19,7 +19,7 @@ object noiseMod {
     /**
       * @param gradients Random gradients
       */
-    class Simplex ()
+    open class Simplex ()
       extends typings.rotJs.simplexMod.default {
       def this(gradients: Double) = this()
     }

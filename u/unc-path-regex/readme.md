@@ -10,10 +10,10 @@ Regular expression for testing if a file path is a windows UNC file path. Can al
 | ------------------ | :-------------: |
 | Full name          | unc-path-regex |
 | Keywords           | absolute, expression, file, filepath, match, matching, path, regex, regexp, regular, unc, win, windows |
-| # releases         | 1 |
-| # dependents       | 12 |
-| # downloads        | 131257004 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.0740805333333332E7 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/regexhq/unc-path-regex)

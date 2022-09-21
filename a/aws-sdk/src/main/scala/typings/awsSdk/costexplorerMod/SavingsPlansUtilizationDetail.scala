@@ -17,7 +17,7 @@ trait SavingsPlansUtilizationDetail extends StObject {
   var Attributes: js.UndefOr[typings.awsSdk.costexplorerMod.Attributes] = js.undefined
   
   /**
-    * The amount saved by using existing Savings Plans. Savings returns both net savings from savings plans as well as the onDemandCostEquivalent of the Savings Plans when considering the utilization rate.
+    * The amount saved by using existing Savings Plans. Savings returns both net savings from savings plans and also the onDemandCostEquivalent of the Savings Plans when considering the utilization rate.
     */
   var Savings: js.UndefOr[SavingsPlansSavings] = js.undefined
   

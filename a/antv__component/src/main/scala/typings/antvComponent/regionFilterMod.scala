@@ -9,12 +9,12 @@ object regionFilterMod {
   
   @JSImport("@antv/component/lib/annotation/region-filter", JSImport.Default)
   @js.native
-  class default () extends RegionFilterAnnotation
+  open class default () extends RegionFilterAnnotation
   
   @js.native
   trait RegionFilterAnnotation
     extends typings.antvComponent.groupComponentMod.default[RegionFilterAnnotationCfg] {
     
-    /* private */ var adjustShapeAttrs: js.Any = js.native
+    /* private */ var adjustShapeAttrs: Any = js.native
   }
 }

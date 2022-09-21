@@ -1,7 +1,7 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientAdexchangebuyer2.anon.AccountIdAlt
+import typings.maximMazurokGapiClientAdexchangebuyer2.anon.CallbackFields
 import typings.maximMazurokGapiClientAdexchangebuyer2.anon.ProductId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,5 +16,5 @@ trait ProductsResource extends StObject {
   
   /** List all products visible to the buyer (optionally filtered by the specified PQL query). */
   def list(): Request[ListProductsResponse] = js.native
-  def list(request: AccountIdAlt): Request[ListProductsResponse] = js.native
+  def list(request: CallbackFields): Request[ListProductsResponse] = js.native
 }

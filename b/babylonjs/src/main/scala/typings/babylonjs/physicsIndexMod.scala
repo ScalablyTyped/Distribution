@@ -28,48 +28,48 @@ object physicsIndexMod {
     * @param ammoInjection can be used to inject your own ammo reference
     * @param overlappingPairCache can be used to specify your own overlapping pair cache
     */
-  class AmmoJSPlugin ()
+  open class AmmoJSPlugin ()
     extends typings.babylonjs.physicsPluginsIndexMod.AmmoJSPlugin {
     def this(_useDeltaForWorldStep: Boolean) = this()
-    def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any) = this()
-    def this(_useDeltaForWorldStep: Unit, ammoInjection: js.Any) = this()
-    def this(_useDeltaForWorldStep: Boolean, ammoInjection: js.Any, overlappingPairCache: js.Any) = this()
-    def this(_useDeltaForWorldStep: Boolean, ammoInjection: Unit, overlappingPairCache: js.Any) = this()
-    def this(_useDeltaForWorldStep: Unit, ammoInjection: js.Any, overlappingPairCache: js.Any) = this()
-    def this(_useDeltaForWorldStep: Unit, ammoInjection: Unit, overlappingPairCache: js.Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, ammoInjection: Any) = this()
+    def this(_useDeltaForWorldStep: Unit, ammoInjection: Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, ammoInjection: Any, overlappingPairCache: Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, ammoInjection: Unit, overlappingPairCache: Any) = this()
+    def this(_useDeltaForWorldStep: Unit, ammoInjection: Any, overlappingPairCache: Any) = this()
+    def this(_useDeltaForWorldStep: Unit, ammoInjection: Unit, overlappingPairCache: Any) = this()
   }
   /* static members */
   object AmmoJSPlugin {
     
-    @JSImport("babylonjs/Physics/index", "AmmoJSPlugin.DISABLE_COLLISION_FLAG")
+    @JSImport("babylonjs/Physics/index", "AmmoJSPlugin._DISABLE_COLLISION_FLAG")
     @js.native
-    val DISABLE_COLLISION_FLAG: js.Any = js.native
+    val _DISABLE_COLLISION_FLAG: Any = js.native
     
-    @JSImport("babylonjs/Physics/index", "AmmoJSPlugin.DISABLE_DEACTIVATION_FLAG")
+    @JSImport("babylonjs/Physics/index", "AmmoJSPlugin._DISABLE_DEACTIVATION_FLAG")
     @js.native
-    val DISABLE_DEACTIVATION_FLAG: js.Any = js.native
+    val _DISABLE_DEACTIVATION_FLAG: Any = js.native
     
-    @JSImport("babylonjs/Physics/index", "AmmoJSPlugin.KINEMATIC_FLAG")
+    @JSImport("babylonjs/Physics/index", "AmmoJSPlugin._KINEMATIC_FLAG")
     @js.native
-    val KINEMATIC_FLAG: js.Any = js.native
+    val _KINEMATIC_FLAG: Any = js.native
   }
   
   @JSImport("babylonjs/Physics/index", "CannonJSPlugin")
   @js.native
-  class CannonJSPlugin ()
+  open class CannonJSPlugin ()
     extends typings.babylonjs.physicsPluginsIndexMod.CannonJSPlugin {
     def this(_useDeltaForWorldStep: Boolean) = this()
     def this(_useDeltaForWorldStep: Boolean, iterations: Double) = this()
     def this(_useDeltaForWorldStep: Unit, iterations: Double) = this()
-    def this(_useDeltaForWorldStep: Boolean, iterations: Double, cannonInjection: js.Any) = this()
-    def this(_useDeltaForWorldStep: Boolean, iterations: Unit, cannonInjection: js.Any) = this()
-    def this(_useDeltaForWorldStep: Unit, iterations: Double, cannonInjection: js.Any) = this()
-    def this(_useDeltaForWorldStep: Unit, iterations: Unit, cannonInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, iterations: Double, cannonInjection: Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, iterations: Unit, cannonInjection: Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Double, cannonInjection: Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Unit, cannonInjection: Any) = this()
   }
   
   @JSImport("babylonjs/Physics/index", "DistanceJoint")
   @js.native
-  class DistanceJoint protected ()
+  open class DistanceJoint protected ()
     extends typings.babylonjs.physicsJointMod.DistanceJoint {
     /**
       *
@@ -80,7 +80,7 @@ object physicsIndexMod {
   
   @JSImport("babylonjs/Physics/index", "Hinge2Joint")
   @js.native
-  class Hinge2Joint protected ()
+  open class Hinge2Joint protected ()
     extends typings.babylonjs.physicsJointMod.Hinge2Joint {
     /**
       * Initializes the Hinge2-Joint
@@ -91,7 +91,7 @@ object physicsIndexMod {
   
   @JSImport("babylonjs/Physics/index", "HingeJoint")
   @js.native
-  class HingeJoint protected ()
+  open class HingeJoint protected ()
     extends typings.babylonjs.physicsJointMod.HingeJoint {
     /**
       * Initializes the Hinge-Joint
@@ -102,32 +102,32 @@ object physicsIndexMod {
   
   @JSImport("babylonjs/Physics/index", "MotorEnabledJoint")
   @js.native
-  class MotorEnabledJoint protected ()
+  open class MotorEnabledJoint protected ()
     extends typings.babylonjs.physicsJointMod.MotorEnabledJoint {
     /**
       * Initializes the Motor-Enabled Joint
       * @param type The type of the joint
-      * @param jointData The physica joint data for the joint
+      * @param jointData The physical joint data for the joint
       */
     def this(`type`: Double, jointData: PhysicsJointData) = this()
   }
   
   @JSImport("babylonjs/Physics/index", "OimoJSPlugin")
   @js.native
-  class OimoJSPlugin ()
+  open class OimoJSPlugin ()
     extends typings.babylonjs.physicsPluginsIndexMod.OimoJSPlugin {
     def this(_useDeltaForWorldStep: Boolean) = this()
     def this(_useDeltaForWorldStep: Boolean, iterations: Double) = this()
     def this(_useDeltaForWorldStep: Unit, iterations: Double) = this()
-    def this(_useDeltaForWorldStep: Boolean, iterations: Double, oimoInjection: js.Any) = this()
-    def this(_useDeltaForWorldStep: Boolean, iterations: Unit, oimoInjection: js.Any) = this()
-    def this(_useDeltaForWorldStep: Unit, iterations: Double, oimoInjection: js.Any) = this()
-    def this(_useDeltaForWorldStep: Unit, iterations: Unit, oimoInjection: js.Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, iterations: Double, oimoInjection: Any) = this()
+    def this(_useDeltaForWorldStep: Boolean, iterations: Unit, oimoInjection: Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Double, oimoInjection: Any) = this()
+    def this(_useDeltaForWorldStep: Unit, iterations: Unit, oimoInjection: Any) = this()
   }
   
   @JSImport("babylonjs/Physics/index", "PhysicsEngine")
   @js.native
-  class PhysicsEngine protected ()
+  open class PhysicsEngine protected ()
     extends typings.babylonjs.physicsEngineMod.PhysicsEngine {
     /**
       * Creates a new Physics Engine
@@ -161,7 +161,7 @@ object physicsIndexMod {
   
   @JSImport("babylonjs/Physics/index", "PhysicsEngineSceneComponent")
   @js.native
-  class PhysicsEngineSceneComponent protected ()
+  open class PhysicsEngineSceneComponent protected ()
     extends typings.babylonjs.physicsEngineComponentMod.PhysicsEngineSceneComponent {
     /**
       * Creates a new instance of the component for the given scene
@@ -172,7 +172,7 @@ object physicsIndexMod {
   
   @JSImport("babylonjs/Physics/index", "PhysicsHelper")
   @js.native
-  class PhysicsHelper protected ()
+  open class PhysicsHelper protected ()
     extends typings.babylonjs.physicsHelperMod.PhysicsHelper {
     /**
       * Initializes the Physics helper
@@ -183,12 +183,12 @@ object physicsIndexMod {
   
   @JSImport("babylonjs/Physics/index", "PhysicsImpostor")
   @js.native
-  class PhysicsImpostor protected ()
+  open class PhysicsImpostor protected ()
     extends typings.babylonjs.physicsImpostorMod.PhysicsImpostor {
     /**
       * Initializes the physics imposter
       * @param object The physics-enabled object used as the physics imposter
-      * @param type The type of the physics imposter
+      * @param type The type of the physics imposter. Types are available as static members of this class.
       * @param _options The options for the physics imposter
       * @param _scene The Babylon scene
       */
@@ -318,7 +318,7 @@ object physicsIndexMod {
     inline def IDENTITY_QUATERNION_=(x: Quaternion): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTITY_QUATERNION")(x.asInstanceOf[js.Any])
     
     /**
-      * Mesh-imposter type
+      * Mesh-imposter type (Only available to objects with vertices data)
       */
     @JSImport("babylonjs/Physics/index", "PhysicsImpostor.MeshImpostor")
     @js.native
@@ -373,20 +373,20 @@ object physicsIndexMod {
     def SphereImpostor: Double = js.native
     inline def SphereImpostor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SphereImpostor")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Physics/index", "PhysicsImpostor._tmpQuat")
+    @JSImport("babylonjs/Physics/index", "PhysicsImpostor._TmpQuat")
     @js.native
-    def _tmpQuat: js.Any = js.native
-    inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    def _TmpQuat: Any = js.native
+    inline def _TmpQuat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpQuat")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Physics/index", "PhysicsImpostor._tmpVecs")
+    @JSImport("babylonjs/Physics/index", "PhysicsImpostor._TmpVecs")
     @js.native
-    def _tmpVecs: js.Any = js.native
-    inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+    def _TmpVecs: Any = js.native
+    inline def _TmpVecs_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpVecs")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Physics/index", "PhysicsJoint")
   @js.native
-  class PhysicsJoint protected ()
+  open class PhysicsJoint protected ()
     extends typings.babylonjs.physicsJointMod.PhysicsJoint {
     /**
       * Initializes the physics joint
@@ -503,7 +503,7 @@ object physicsIndexMod {
   
   @JSImport("babylonjs/Physics/index", "PhysicsRadialExplosionEventOptions")
   @js.native
-  class PhysicsRadialExplosionEventOptions ()
+  open class PhysicsRadialExplosionEventOptions ()
     extends typings.babylonjs.physicsHelperMod.PhysicsRadialExplosionEventOptions
   
   @JSImport("babylonjs/Physics/index", "PhysicsRadialImpulseFalloff")
@@ -520,7 +520,7 @@ object physicsIndexMod {
   
   @JSImport("babylonjs/Physics/index", "PhysicsUpdraftEventOptions")
   @js.native
-  class PhysicsUpdraftEventOptions ()
+  open class PhysicsUpdraftEventOptions ()
     extends typings.babylonjs.physicsHelperMod.PhysicsUpdraftEventOptions
   
   @JSImport("babylonjs/Physics/index", "PhysicsUpdraftMode")
@@ -537,7 +537,7 @@ object physicsIndexMod {
   
   @JSImport("babylonjs/Physics/index", "PhysicsVortexEventOptions")
   @js.native
-  class PhysicsVortexEventOptions ()
+  open class PhysicsVortexEventOptions ()
     extends typings.babylonjs.physicsHelperMod.PhysicsVortexEventOptions
   
   /* augmented module */
@@ -583,7 +583,7 @@ object physicsIndexMod {
         * @see https://www.babylonjs-playground.com/#0BS5U0#0
         */
       def setPhysicsLinkWith(otherMesh: Mesh, pivot1: Vector3, pivot2: Vector3): typings.babylonjs.physicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
-      def setPhysicsLinkWith(otherMesh: Mesh, pivot1: Vector3, pivot2: Vector3, options: js.Any): typings.babylonjs.physicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
+      def setPhysicsLinkWith(otherMesh: Mesh, pivot1: Vector3, pivot2: Vector3, options: Any): typings.babylonjs.physicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
     }
   }
   
@@ -603,7 +603,7 @@ object physicsIndexMod {
         * Deletes a physics compound impostor
         * @param compound defines the compound to delete
         */
-      def deleteCompoundImpostor(compound: js.Any): Unit = js.native
+      def deleteCompoundImpostor(compound: Any): Unit = js.native
       
       /**
         * Disables and disposes the physics engine associated with the scene
@@ -612,10 +612,12 @@ object physicsIndexMod {
       
       /**
         * Enables physics to the current scene
-        * @param gravity defines the scene's gravity for the physics engine
-        * @param plugin defines the physics engine to be used. defaults to OimoJS.
-        * @return a boolean indicating if the physics engine was initialized
+        * @param gravity defines the scene's gravity for the physics engine. defaults to real earth gravity : (0, -9.81, 0)
+        * @param plugin defines the physics engine to be used. defaults to CannonJS.
+        * @returns a boolean indicating if the physics engine was initialized
         */
+      def enablePhysics(): Boolean = js.native
+      def enablePhysics(gravity: Unit, plugin: IPhysicsEnginePlugin): Boolean = js.native
       def enablePhysics(gravity: Nullable[Vector3]): Boolean = js.native
       def enablePhysics(gravity: Nullable[Vector3], plugin: IPhysicsEnginePlugin): Boolean = js.native
       

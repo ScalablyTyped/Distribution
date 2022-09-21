@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("actions-on-google/dist/service/actionssdk/conversation", "Available")
 @js.native
 /** @hidden */
-class Available ()
+open class Available ()
   extends typings.actionsOnGoogle.surfaceMod.Available {
   def this(surfaces: js.Array[GoogleActionsV2Surface]) = this()
 }

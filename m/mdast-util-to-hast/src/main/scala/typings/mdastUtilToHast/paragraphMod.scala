@@ -1,0 +1,21 @@
+package typings.mdastUtilToHast
+
+import typings.hast.mod.ElementContent
+import typings.mdast.mod.Paragraph
+import typings.mdastUtilToHast.libMod.H
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object paragraphMod {
+  
+  @JSImport("mdast-util-to-hast/lib/handlers/paragraph", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def paragraph(h: H, node: Paragraph_): js.UndefOr[ElementContent | js.Array[ElementContent] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("paragraph")(h.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ElementContent | js.Array[ElementContent] | Null]]
+  
+  type Handler = typings.mdastUtilToHast.libMod.Handler
+  
+  type Paragraph_ = Paragraph
+}

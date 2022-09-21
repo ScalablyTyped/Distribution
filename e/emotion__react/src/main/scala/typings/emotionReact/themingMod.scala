@@ -30,13 +30,13 @@ object themingMod {
   @js.native
   val withTheme: typings.emotionReact.themingMod.withTheme = js.native
   type withTheme = js.Function1[
-    /* component */ js.Any, 
-    FC[(DistributiveOmit[PropsOf[js.Any], theme]) & typings.emotionReact.anon.Theme]
+    /* component */ Any, 
+    FC[(DistributiveOmit[PropsOf[Any], theme]) & typings.emotionReact.anon.Theme]
   ]
   
   trait ThemeProviderProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.undefined
+    var children: ReactNode
     
     var theme: js.Object | (js.Function1[/* outerTheme */ Theme, Theme])
   }

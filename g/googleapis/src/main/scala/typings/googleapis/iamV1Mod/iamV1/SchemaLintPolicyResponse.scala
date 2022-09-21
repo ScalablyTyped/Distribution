@@ -4,20 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response of a lint operation. An empty response indicates the operation
-  * was able to fully execute and no lint issue was found.
-  */
 trait SchemaLintPolicyResponse extends StObject {
   
   /**
-    * List of lint results sorted by a composite &lt;severity,
-    * binding_ordinal&gt; key, descending order of severity and ascending order
-    * of binding_ordinal. There is no certain order among the same keys.  For
-    * cross-binding results (only if the input object to lint is instance of
-    * google.iam.v1.Policy), there will be a google.iam.admin.v1.LintResult for
-    * each of the involved bindings, and the associated debug_message may
-    * enumerate the other involved binding ordinal number(s).
+    * List of lint results sorted by `severity` in descending order.
     */
   var lintResults: js.UndefOr[js.Array[SchemaLintResult]] = js.undefined
 }
@@ -34,6 +24,6 @@ object SchemaLintPolicyResponse {
     
     inline def setLintResultsUndefined: Self = StObject.set(x, "lintResults", js.undefined)
     
-    inline def setLintResultsVarargs(value: SchemaLintResult*): Self = StObject.set(x, "lintResults", js.Array(value :_*))
+    inline def setLintResultsVarargs(value: SchemaLintResult*): Self = StObject.set(x, "lintResults", js.Array(value*))
   }
 }

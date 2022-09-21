@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation", "Carousel")
 @js.native
-class Carousel protected ()
+open class Carousel protected ()
   extends typings.actionsOnGoogle.helperMod.Carousel {
   /**
     * @param options Carousel option

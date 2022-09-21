@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "canvas-renderer" : "2.2.0"
+      "canvas-renderer" : "2.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "canvas-renderer" : "2.2.0"
+      "canvas-renderer" : "2.2.1"
     }
   ],
   "compile-devDependencies" : [

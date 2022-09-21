@@ -13,7 +13,7 @@ trait ISlider
     * @returns any The current value of the slider
     */
   @JSName("getValue")
-  var getValue_ISlider: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getValue_ISlider: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Programmatically sets the value of the Slider
     * @param value Number The value to set the slider to. (This will be constrained within minValue and maxValue)
@@ -33,7 +33,7 @@ object ISlider {
   
   extension [Self <: ISlider](x: Self) {
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     

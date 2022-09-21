@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ajv-draft-04" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ajv-draft-04" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

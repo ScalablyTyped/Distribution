@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the paragraph list item format.
   *
+  * @remarks
   * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.ListItem")
 @js.native
-class ListItem ()
+open class ListItem ()
   extends StObject
      with typings.officeJsPreview.Word.ListItem {
   

@@ -16,7 +16,7 @@ trait DidChangeTextDocumentParams extends StObject {
     *
     * To mirror the content of a document using change events use the following approach:
     * - start with the same initial content
-    * - apply the 'textDocument/didChange' notifications in the order you recevie them.
+    * - apply the 'textDocument/didChange' notifications in the order you receive them.
     * - apply the `TextDocumentContentChangeEvent`s in a single notification in the order
     *   you receive them.
     */
@@ -43,7 +43,7 @@ object DidChangeTextDocumentParams {
     
     inline def setContentChanges(value: js.Array[TextDocumentContentChangeEvent]): Self = StObject.set(x, "contentChanges", value.asInstanceOf[js.Any])
     
-    inline def setContentChangesVarargs(value: TextDocumentContentChangeEvent*): Self = StObject.set(x, "contentChanges", js.Array(value :_*))
+    inline def setContentChangesVarargs(value: TextDocumentContentChangeEvent*): Self = StObject.set(x, "contentChanges", js.Array(value*))
     
     inline def setTextDocument(value: VersionedTextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }

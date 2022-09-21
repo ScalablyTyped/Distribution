@@ -19,6 +19,6 @@ object SvnWorkspace {
     
     inline def setMappings(value: js.Array[SvnMappingDetails]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     
-    inline def setMappingsVarargs(value: SvnMappingDetails*): Self = StObject.set(x, "mappings", js.Array(value :_*))
+    inline def setMappingsVarargs(value: SvnMappingDetails*): Self = StObject.set(x, "mappings", js.Array(value*))
   }
 }

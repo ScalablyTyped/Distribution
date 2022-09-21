@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object metaphoneMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(word: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(word.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(word: js.Any, maxPhonemes: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(word.asInstanceOf[js.Any], maxPhonemes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(word: Unit, maxPhonemes: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(word.asInstanceOf[js.Any], maxPhonemes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(word: Any): Any = ^.asInstanceOf[js.Dynamic].apply(word.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(word: Any, maxPhonemes: Any): Any = (^.asInstanceOf[js.Dynamic].apply(word.asInstanceOf[js.Any], maxPhonemes.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(word: Unit, maxPhonemes: Any): Any = (^.asInstanceOf[js.Dynamic].apply(word.asInstanceOf[js.Any], maxPhonemes.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/metaphone", JSImport.Namespace)
   @js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetPublicAccessBlockOutput extends StObject {
   
   /**
-    * The PublicAccessBlock configuration currently in effect for this AWS account.
+    * The PublicAccessBlock configuration currently in effect for this Amazon Web Services account.
     */
   var PublicAccessBlockConfiguration: js.UndefOr[typings.awsSdk.s3controlMod.PublicAccessBlockConfiguration] = js.undefined
 }

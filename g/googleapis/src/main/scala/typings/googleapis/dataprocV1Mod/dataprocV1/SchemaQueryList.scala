@@ -4,21 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A list of queries to run on a cluster.
-  */
 trait SchemaQueryList extends StObject {
   
   /**
-    * Required. The queries to execute. You do not need to terminate a query
-    * with a semicolon. Multiple queries can be specified in one string by
-    * separating each with a semicolon. Here is an example of an Cloud Dataproc
-    * API snippet that uses a QueryList to specify a HiveJob:
-    * &quot;hiveJob&quot;: {   &quot;queryList&quot;: { &quot;queries&quot;: [
-    * &quot;query1&quot;,       &quot;query2&quot;, &quot;query3;query4&quot;,
-    * ]   } }
+    * Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: "hiveJob": { "queryList": { "queries": [ "query1", "query2", "query3;query4", ] \} \}
     */
-  var queries: js.UndefOr[js.Array[String]] = js.undefined
+  var queries: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaQueryList {
   
@@ -31,8 +22,10 @@ object SchemaQueryList {
     
     inline def setQueries(value: js.Array[String]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
+    inline def setQueriesNull: Self = StObject.set(x, "queries", null)
+    
     inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
-    inline def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value*))
   }
 }

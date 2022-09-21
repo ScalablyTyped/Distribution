@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.CallSignature")
 @js.native
-class CallSignature protected ()
+open class CallSignature protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.CallSignature {
   def this(
@@ -16,16 +16,16 @@ class CallSignature protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _astID: js.Any = js.native
+  var _astID: Any = js.native
   
   /* CompleteClass */
   var _end: Double = js.native
   
   /* private */ /* CompleteClass */
-  var _postComments: js.Any = js.native
+  var _postComments: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _preComments: js.Any = js.native
+  var _preComments: Any = js.native
   
   /* CompleteClass */
   var _start: Double = js.native

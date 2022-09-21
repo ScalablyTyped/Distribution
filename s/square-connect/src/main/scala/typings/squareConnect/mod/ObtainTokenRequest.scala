@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ObtainTokenRequest")
 @js.native
-class ObtainTokenRequest () extends StObject {
+open class ObtainTokenRequest () extends StObject {
   
   /**
     * The Square-issued ID of your application, available from the [application dashboard](https://connect.squareup.com/apps).

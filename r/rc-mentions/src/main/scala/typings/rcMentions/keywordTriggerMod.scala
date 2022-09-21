@@ -15,11 +15,11 @@ object keywordTriggerMod {
   
   @JSImport("rc-mentions/es/KeywordTrigger", JSImport.Default)
   @js.native
-  class default () extends KeywordTrigger
+  open class default () extends KeywordTrigger
   
   @js.native
   trait KeywordTrigger
-    extends Component[KeywordTriggerProps, js.Object, js.Any] {
+    extends Component[KeywordTriggerProps, js.Object, Any] {
     
     def getDropDownPlacement(): String = js.native
     
@@ -33,6 +33,8 @@ object keywordTriggerMod {
     var children: js.UndefOr[ReactElement] = js.undefined
     
     var direction: js.UndefOr[Direction] = js.undefined
+    
+    var dropdownClassName: js.UndefOr[String] = js.undefined
     
     var getPopupContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
@@ -65,6 +67,10 @@ object keywordTriggerMod {
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
+      inline def setDropdownClassName(value: String): Self = StObject.set(x, "dropdownClassName", value.asInstanceOf[js.Any])
+      
+      inline def setDropdownClassNameUndefined: Self = StObject.set(x, "dropdownClassName", js.undefined)
+      
       inline def setGetPopupContainer(value: () => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction0(value))
       
       inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
@@ -75,7 +81,7 @@ object keywordTriggerMod {
       
       inline def setOptions(value: js.Array[OptionProps]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: OptionProps*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: OptionProps*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       

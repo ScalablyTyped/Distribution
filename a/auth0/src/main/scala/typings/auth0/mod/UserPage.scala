@@ -21,6 +21,6 @@ object UserPage {
     
     inline def setUsers(value: js.Array[User[A, U]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    inline def setUsersVarargs(value: (User[A, U])*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: (User[A, U])*): Self = StObject.set(x, "users", js.Array(value*))
   }
 }

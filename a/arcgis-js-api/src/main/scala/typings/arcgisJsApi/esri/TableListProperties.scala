@@ -23,14 +23,16 @@ trait TableListProperties
   var listItemCreatedFunction: js.UndefOr[TableListListItemCreatedHandler] = js.undefined
   
   /**
-    * A reference to a [web map](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html) containing the tables.
+    * A reference to a [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) containing the tables.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#map)
     */
-  var map: js.UndefOr[WebMapProperties] = js.undefined
+  var map: js.UndefOr[MapProperties | WebMapProperties] = js.undefined
   
   /**
     * Indicates whether more than one [list item](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html) can be selected by a user at a single time.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#multipleSelectionEnabled)
     */
@@ -45,6 +47,8 @@ trait TableListProperties
   
   /**
     * Indicates whether [list items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html) may be selected by the user.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html#selectionEnabled)
     */
@@ -70,11 +74,11 @@ object TableListProperties {
     
     inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
-    inline def setListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "listItemCreatedFunction", js.Any.fromFunction1(value))
+    inline def setListItemCreatedFunction(value: /* event */ Any => scala.Unit): Self = StObject.set(x, "listItemCreatedFunction", js.Any.fromFunction1(value))
     
     inline def setListItemCreatedFunctionUndefined: Self = StObject.set(x, "listItemCreatedFunction", js.undefined)
     
-    inline def setMap(value: WebMapProperties): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: MapProperties | WebMapProperties): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
@@ -86,7 +90,7 @@ object TableListProperties {
     
     inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
     
-    inline def setSelectedItemsVarargs(value: TableListListItem*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: TableListListItem*): Self = StObject.set(x, "selectedItems", js.Array(value*))
     
     inline def setSelectionEnabled(value: Boolean): Self = StObject.set(x, "selectionEnabled", value.asInstanceOf[js.Any])
     

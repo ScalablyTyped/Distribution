@@ -65,7 +65,7 @@ object LocalSecondaryIndexDescription {
     
     inline def setKeySchemaUndefined: Self = StObject.set(x, "KeySchema", js.undefined)
     
-    inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+    inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value*))
     
     inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
     

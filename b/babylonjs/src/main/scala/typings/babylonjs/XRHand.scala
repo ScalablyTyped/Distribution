@@ -62,5 +62,7 @@ trait XRHand
   
   val WRIST: Double = js.native
   
-  val length: Double = js.native
+  def get(joint: XRHandJoint): XRJointSpace = js.native
+  
+  val size: Double = js.native
 }

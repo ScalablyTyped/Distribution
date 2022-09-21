@@ -22,6 +22,6 @@ object ListSchemaInForm {
     
     inline def setField(value: js.Array[FieldSchemaInForm]): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
-    inline def setFieldVarargs(value: FieldSchemaInForm*): Self = StObject.set(x, "Field", js.Array(value :_*))
+    inline def setFieldVarargs(value: FieldSchemaInForm*): Self = StObject.set(x, "Field", js.Array(value*))
   }
 }

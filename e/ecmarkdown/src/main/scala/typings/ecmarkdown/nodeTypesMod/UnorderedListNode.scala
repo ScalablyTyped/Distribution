@@ -29,7 +29,7 @@ object UnorderedListNode {
     
     inline def setContents(value: js.Array[UnorderedListItemNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    inline def setContentsVarargs(value: UnorderedListItemNode*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: UnorderedListItemNode*): Self = StObject.set(x, "contents", js.Array(value*))
     
     inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     

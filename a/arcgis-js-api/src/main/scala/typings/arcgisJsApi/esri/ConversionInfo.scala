@@ -15,23 +15,23 @@ trait ConversionInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#ConversionInfo)
     */
-  def convert(): Unit
+  def convert(): scala.Unit
   
   /**
     * A function that takes a string and returns a Point.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#ConversionInfo)
     */
-  def reverseConvert(): Unit
+  def reverseConvert(): scala.Unit
 }
 object ConversionInfo {
   
   inline def apply(
     constructor: js.Function,
-    convert: () => Unit,
+    convert: () => scala.Unit,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    reverseConvert: () => Unit
+    reverseConvert: () => scala.Unit
   ): ConversionInfo = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], convert = js.Any.fromFunction0(convert), hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), reverseConvert = js.Any.fromFunction0(reverseConvert))
     __obj.asInstanceOf[ConversionInfo]
@@ -39,8 +39,8 @@ object ConversionInfo {
   
   extension [Self <: ConversionInfo](x: Self) {
     
-    inline def setConvert(value: () => Unit): Self = StObject.set(x, "convert", js.Any.fromFunction0(value))
+    inline def setConvert(value: () => scala.Unit): Self = StObject.set(x, "convert", js.Any.fromFunction0(value))
     
-    inline def setReverseConvert(value: () => Unit): Self = StObject.set(x, "reverseConvert", js.Any.fromFunction0(value))
+    inline def setReverseConvert(value: () => scala.Unit): Self = StObject.set(x, "reverseConvert", js.Any.fromFunction0(value))
   }
 }

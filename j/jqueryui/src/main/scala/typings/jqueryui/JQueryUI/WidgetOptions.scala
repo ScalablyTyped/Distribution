@@ -9,9 +9,9 @@ trait WidgetOptions extends StObject {
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var hide: js.UndefOr[js.Any] = js.undefined
+  var hide: js.UndefOr[Any] = js.undefined
   
-  var show: js.UndefOr[js.Any] = js.undefined
+  var show: js.UndefOr[Any] = js.undefined
 }
 object WidgetOptions {
   
@@ -26,11 +26,11 @@ object WidgetOptions {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setHide(value: js.Any): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    inline def setHide(value: Any): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    inline def setShow(value: js.Any): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Any): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
     inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }

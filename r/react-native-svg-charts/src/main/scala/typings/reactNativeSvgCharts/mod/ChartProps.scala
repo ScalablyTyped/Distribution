@@ -4,6 +4,7 @@ import typings.d3Path.mod.Path_
 import typings.d3Scale.mod.ScaleBand_
 import typings.d3Shape.mod.CurveFactory
 import typings.d3Shape.mod.CurveGenerator
+import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeSvgCharts.anon.Bottom
@@ -19,6 +20,8 @@ trait ChartProps[T] extends StObject {
   
   var animationDuration: js.UndefOr[Double] = js.undefined
   
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
   var contentInset: js.UndefOr[Bottom] = js.undefined
   
   var curve: js.UndefOr[CurveFactory] = js.undefined
@@ -29,7 +32,7 @@ trait ChartProps[T] extends StObject {
   
   var gridMin: js.UndefOr[Double] = js.undefined
   
-  var gridProps: js.UndefOr[GridProps[js.Any]] = js.undefined
+  var gridProps: js.UndefOr[GridProps[Any]] = js.undefined
   
   var height: js.UndefOr[Double] = js.undefined
   
@@ -74,6 +77,10 @@ object ChartProps {
     
     inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
     inline def setContentInset(value: Bottom): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
     
     inline def setContentInsetUndefined: Self = StObject.set(x, "contentInset", js.undefined)
@@ -84,7 +91,7 @@ object ChartProps {
     
     inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setGridMax(value: Double): Self = StObject.set(x, "gridMax", value.asInstanceOf[js.Any])
     
@@ -94,7 +101,7 @@ object ChartProps {
     
     inline def setGridMinUndefined: Self = StObject.set(x, "gridMin", js.undefined)
     
-    inline def setGridProps(value: GridProps[js.Any]): Self = StObject.set(x, "gridProps", value.asInstanceOf[js.Any])
+    inline def setGridProps(value: GridProps[Any]): Self = StObject.set(x, "gridProps", value.asInstanceOf[js.Any])
     
     inline def setGridPropsUndefined: Self = StObject.set(x, "gridProps", js.undefined)
     
@@ -132,7 +139,7 @@ object ChartProps {
     
     inline def setXMinUndefined: Self = StObject.set(x, "xMin", js.undefined)
     
-    inline def setXScale(value: () => (ScaleType[js.Any, js.Any]) | ScaleBand_[js.Any]): Self = StObject.set(x, "xScale", js.Any.fromFunction0(value))
+    inline def setXScale(value: () => (ScaleType[Any, Any]) | ScaleBand_[Any]): Self = StObject.set(x, "xScale", js.Any.fromFunction0(value))
     
     inline def setXScaleUndefined: Self = StObject.set(x, "xScale", js.undefined)
     
@@ -148,7 +155,7 @@ object ChartProps {
     
     inline def setYMinUndefined: Self = StObject.set(x, "yMin", js.undefined)
     
-    inline def setYScale(value: () => (ScaleType[js.Any, js.Any]) | ScaleBand_[js.Any]): Self = StObject.set(x, "yScale", js.Any.fromFunction0(value))
+    inline def setYScale(value: () => (ScaleType[Any, Any]) | ScaleBand_[Any]): Self = StObject.set(x, "yScale", js.Any.fromFunction0(value))
     
     inline def setYScaleUndefined: Self = StObject.set(x, "yScale", js.undefined)
   }

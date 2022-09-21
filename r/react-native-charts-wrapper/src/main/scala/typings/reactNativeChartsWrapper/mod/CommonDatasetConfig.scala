@@ -45,7 +45,7 @@ object CommonDatasetConfig {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setDrawValues(value: Boolean): Self = StObject.set(x, "drawValues", value.asInstanceOf[js.Any])
     
@@ -59,7 +59,7 @@ object CommonDatasetConfig {
     
     inline def setValueFormatterUndefined: Self = StObject.set(x, "valueFormatter", js.undefined)
     
-    inline def setValueFormatterVarargs(value: String*): Self = StObject.set(x, "valueFormatter", js.Array(value :_*))
+    inline def setValueFormatterVarargs(value: String*): Self = StObject.set(x, "valueFormatter", js.Array(value*))
     
     inline def setValueTextColor(value: Color): Self = StObject.set(x, "valueTextColor", value.asInstanceOf[js.Any])
     

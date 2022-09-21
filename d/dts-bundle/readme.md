@@ -9,10 +9,10 @@ Export TypeScript .d.ts files as an external module definition
 | ------------------ | :-------------: |
 | Full name          | dts-bundle |
 | Keywords           | typescript, definition, bundle, export, d.ts |
-| # releases         | 0 |
-| # dependents       | 50 |
-| # downloads        | 527460 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 79708.33333333333 |
+| # stars            | 281.0 |
 
 ## Links
 - [Homepage](https://github.com/grunt-ts/dts-bundle)

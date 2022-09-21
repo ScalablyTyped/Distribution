@@ -66,20 +66,20 @@ object tab {
   
   trait ITabService extends StObject {
     
-    var controller: js.Any
+    var controller: Any
     
     var defaults: ITabOptions
   }
   object ITabService {
     
-    inline def apply(controller: js.Any, defaults: ITabOptions): ITabService = {
+    inline def apply(controller: Any, defaults: ITabOptions): ITabService = {
       val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any], defaults = defaults.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITabService]
     }
     
     extension [Self <: ITabService](x: Self) {
       
-      inline def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
       inline def setDefaults(value: ITabOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }

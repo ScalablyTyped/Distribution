@@ -16,8 +16,8 @@ object baseSelectedItemsListMod {
   
   @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList/BaseSelectedItemsList", "BaseSelectedItemsList")
   @js.native
-  class BaseSelectedItemsList[T, P /* <: IBaseSelectedItemsListProps[T] */] protected ()
-    extends Component[P, IBaseSelectedItemsListState[T], js.Any]
+  open class BaseSelectedItemsList[T, P /* <: IBaseSelectedItemsListProps[T] */] protected ()
+    extends Component[P, IBaseSelectedItemsListState[T], Any]
        with IBaseSelectedItemsList[T] {
     def this(basePickerProps: P) = this()
     
@@ -25,11 +25,11 @@ object baseSelectedItemsListMod {
     def UNSAFE_componentWillReceiveProps_MBaseSelectedItemsList(newProps: P): Unit = js.native
     
     @JSName("UNSAFE_componentWillUpdate")
-    def UNSAFE_componentWillUpdate_MBaseSelectedItemsList(newProps: P, newState: IBaseSelectedItemsListState[js.Any]): Unit = js.native
+    def UNSAFE_componentWillUpdate_MBaseSelectedItemsList(newProps: P, newState: IBaseSelectedItemsListState[Any]): Unit = js.native
     
-    /* private */ var _canRemoveItem: js.Any = js.native
+    /* private */ var _canRemoveItem: Any = js.native
     
-    /* private */ var _onSelectedItemsUpdated: js.Any = js.native
+    /* private */ var _onSelectedItemsUpdated: Any = js.native
     
     /* CompleteClass */
     override def addItems(items: js.Array[T]): Unit = js.native
@@ -59,7 +59,7 @@ object baseSelectedItemsListMod {
     
     def removeItemAt(index: Double): Unit = js.native
     
-    def removeItems(itemsToRemove: js.Array[js.Any]): Unit = js.native
+    def removeItems(itemsToRemove: js.Array[Any]): Unit = js.native
     
     def removeSelectedItems(): Unit = js.native
     
@@ -96,7 +96,7 @@ object baseSelectedItemsListMod {
       
       inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value*))
     }
   }
 }

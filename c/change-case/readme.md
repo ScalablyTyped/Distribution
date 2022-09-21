@@ -1,7 +1,7 @@
 
 # Scala.js typings for change-case
 
-Typings are for version 4.1.1
+Typings are for version 4.1.2
 
 ## Library description:
 Transform a string between `camelCase`, `PascalCase`, `Capital Case`, `snake_case`, `param-case`, `CONSTANT_CASE` and others
@@ -10,15 +10,12 @@ Transform a string between `camelCase`, `PascalCase`, `Capital Case`, `snake_cas
 | ------------------ | :-------------: |
 | Full name          | change-case |
 | Keywords           | change, case, convert, transform, camel-case, pascal-case, param-case, kebab-case, header-case |
-| # releases         | 7 |
-| # dependents       | 1509 |
-| # downloads        | 76412604 |
-| # stars            | 38 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6982446666666668E7 |
+| # stars            | 1780.0 |
 
 ## Links
-- [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/camel-case#readme)
-- [Bugs](https://github.com/blakeembrey/change-case/issues)
-- [Repository](https://github.com/blakeembrey/change-case)
 - [Npm](https://www.npmjs.com/package/change-case)
     
 

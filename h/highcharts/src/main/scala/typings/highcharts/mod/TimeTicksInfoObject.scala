@@ -23,7 +23,7 @@ object TimeTicksInfoObject {
     
     inline def setHigherRanks(value: js.Array[String]): Self = StObject.set(x, "higherRanks", value.asInstanceOf[js.Any])
     
-    inline def setHigherRanksVarargs(value: String*): Self = StObject.set(x, "higherRanks", js.Array(value :_*))
+    inline def setHigherRanksVarargs(value: String*): Self = StObject.set(x, "higherRanks", js.Array(value*))
     
     inline def setTotalRange(value: Double): Self = StObject.set(x, "totalRange", value.asInstanceOf[js.Any])
   }

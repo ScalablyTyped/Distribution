@@ -13,7 +13,7 @@ object splitMod {
   
   @JSImport("vega-lite/build/src/compile/split", "Split")
   @js.native
-  class Split[T /* <: js.Object */] () extends StObject {
+  open class Split[T /* <: js.Object */] () extends StObject {
     def this(explicit: Partial[T]) = this()
     def this(explicit: Unit, `implicit`: Partial[T]) = this()
     def this(explicit: Partial[T], `implicit`: Partial[T]) = this()
@@ -28,7 +28,7 @@ object splitMod {
     
     def copyKeyFromObject[S /* <: T */](key: /* keyof T */ String, s: Partial[S]): Unit = js.native
     
-    def copyKeyFromSplit[S /* <: T */](key: /* keyof T */ String, s: Split[S]): Unit = js.native
+    def copyKeyFromSplit[S /* <: T */](key: /* keyof T */ String, hasExplicitImplicit: Split[S]): Unit = js.native
     
     val explicit: Partial[T] = js.native
     
@@ -48,7 +48,7 @@ object splitMod {
     
     def setWithExplicit[K /* <: /* keyof T */ String */](
       key: K,
-      value: Explicit[
+      hasValueExplicit: Explicit[
           /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
         ]
     ): Unit = js.native

@@ -1,5 +1,6 @@
 package typings.vary
 
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(res: ServerResponse, field: String): Unit = (^.asInstanceOf[js.Dynamic].apply(res.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(res: ServerResponse, field: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].apply(res.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(res: ServerResponse[IncomingMessage], field: String): Unit = (^.asInstanceOf[js.Dynamic].apply(res.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(res: ServerResponse[IncomingMessage], field: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].apply(res.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("vary", JSImport.Namespace)
   @js.native

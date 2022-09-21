@@ -10,5 +10,5 @@ trait ScrollViewFactory
   extends Factory[
       ScrollViewConstructor, 
       InstanceType[ScrollViewConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[ScrollViewConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

@@ -68,12 +68,12 @@ object expandingCardTypesMod {
     /**
       *  Render function to populate compact content area
       */
-    var onRenderCompactCard: js.UndefOr[IRenderFunction[js.Any]] = js.undefined
+    var onRenderCompactCard: js.UndefOr[IRenderFunction[Any]] = js.undefined
     
     /**
       *  Render function to populate expanded content area
       */
-    var onRenderExpandedCard: js.UndefOr[IRenderFunction[js.Any]] = js.undefined
+    var onRenderExpandedCard: js.UndefOr[IRenderFunction[Any]] = js.undefined
   }
   object IExpandingCardProps {
     
@@ -97,13 +97,13 @@ object expandingCardTypesMod {
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
       inline def setOnRenderCompactCard(
-        value: (/* props */ js.UndefOr[js.Any], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Any], Element | Null]]) => Element | Null
+        value: (/* props */ js.UndefOr[Any], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[Any], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderCompactCard", js.Any.fromFunction2(value))
       
       inline def setOnRenderCompactCardUndefined: Self = StObject.set(x, "onRenderCompactCard", js.undefined)
       
       inline def setOnRenderExpandedCard(
-        value: (/* props */ js.UndefOr[js.Any], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Any], Element | Null]]) => Element | Null
+        value: (/* props */ js.UndefOr[Any], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[Any], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderExpandedCard", js.Any.fromFunction2(value))
       
       inline def setOnRenderExpandedCardUndefined: Self = StObject.set(x, "onRenderExpandedCard", js.undefined)

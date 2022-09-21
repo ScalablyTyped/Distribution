@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Active extends StObject {
   
-  var active: js.UndefOr[`3`] = js.undefined
+  var active: js.UndefOr[`4`] = js.undefined
   
   var color: js.UndefOr[ColorType] = js.undefined
   
-  var disabled: js.UndefOr[`3`] = js.undefined
+  var disabled: js.UndefOr[`4`] = js.undefined
   
   var hover: js.UndefOr[ColorExtend] = js.undefined
   
@@ -28,7 +28,7 @@ object Active {
   
   extension [Self <: Active](x: Self) {
     
-    inline def setActive(value: `3`): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: `4`): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
@@ -36,7 +36,7 @@ object Active {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setDisabled(value: `3`): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: `4`): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     

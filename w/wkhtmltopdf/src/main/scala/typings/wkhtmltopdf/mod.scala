@@ -1,8 +1,7 @@
 package typings.wkhtmltopdf
 
-import typings.node.NodeJS.ReadWriteStream
-import typings.std.Error
-import typings.std.RegExp
+import typings.node.bufferMod.global.Buffer
+import typings.node.processMod.global.NodeJS.ReadStream
 import typings.wkhtmltopdf.wkhtmltopdfStrings.A0
 import typings.wkhtmltopdf.wkhtmltopdfStrings.A1
 import typings.wkhtmltopdf.wkhtmltopdfStrings.A2
@@ -49,32 +48,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /**
-    * Call wkhtmltopdf and write PDF directly to specified file
+    * Call wkhtmltopdf and write PDF
+    * If options.output is defined the file will be returned in the stream
     *
     * @param html HTML to convert to PDF
-    * @param [options] Options without the output parameter
+    * @param [options] Options
     */
-  inline def apply(html: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
-  inline def apply(html: String, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
-  /**
-    * Call wkhtmltopdf with a callback
-    *
-    * @param html HTML that needs to be compiled to PDF
-    * @param options Options without the output parameter
-    * @param callback Callback function to handle the incoming PDF
-    */
+  inline def apply(html: String): Any = ^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(
+    html: String,
+    options: Unit,
+    callback: js.Function2[
+      /* err */ js.Error, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ /* stream */ Any, 
+      Unit
+    ]
+  ): Any = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(html: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def apply(
     html: String,
     options: Options,
-    callback: js.Function2[/* err */ Error, /* stream */ ReadWriteStream, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    callback: js.Function2[
+      /* err */ js.Error, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ /* stream */ Any, 
+      Unit
+    ]
+  ): Any = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   /**
-    * Call wkhtmltopdf and write PDF directly to specified file
+    * Call wkhtmltopdf and write PDF
+    * If options.output is defined the file will be returned in the stream
     *
-    * @param url URL to convert to PDF
-    * @param options Options with the output parameter
+    * @param inputStream Input stream of html
+    * @param [options] Options
+    * @param [callback] Callback
     */
-  inline def apply(url: String, options: OptionsOutfile): Unit = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(inputStream: ReadStream): Any = ^.asInstanceOf[js.Dynamic].apply(inputStream.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(inputStream: ReadStream, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(inputStream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("wkhtmltopdf", JSImport.Namespace)
   @js.native
@@ -146,7 +155,7 @@ object mod {
     var customHeaderPropagation: js.UndefOr[Boolean] = js.undefined
     
     /** Debug prints stderr messages */
-    var debug: js.UndefOr[Boolean] = js.undefined
+    var debug: js.UndefOr[Boolean | (js.Function1[/* data */ Buffer, Unit])] = js.undefined
     
     /** Show javascript debugging output */
     var debugJavascript: js.UndefOr[Boolean] = js.undefined
@@ -261,8 +270,8 @@ object mod {
     /** Right aligned footer text */
     var footerRight: js.UndefOr[String] = js.undefined
     
-    /** Spacing between footer and content in mm (e.g 10mm 2cm 0.5in) (default 0) */
-    var footerSpacing: js.UndefOr[String] = js.undefined
+    /** Spacing between footer and content in mm (default 0) */
+    var footerSpacing: js.UndefOr[Double] = js.undefined
     
     /** PDF will be generated in grayscale */
     var grayscale: js.UndefOr[Boolean] = js.undefined
@@ -288,11 +297,11 @@ object mod {
     /** Right aligned header text */
     var headerRight: js.UndefOr[String] = js.undefined
     
-    /** Spacing between header and content in mm (e.g 10mm 2cm 0.5in) (default 0) */
-    var headerSpacing: js.UndefOr[String] = js.undefined
+    /** Spacing between header and content in mm (default 0) */
+    var headerSpacing: js.UndefOr[Double] = js.undefined
     
     /** Ignore warnings */
-    var ignore: js.UndefOr[js.Array[String | RegExp]] = js.undefined
+    var ignore: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
     
     /** When embedding images scale them down to this dpi (default 600) */
     var imageDpi: js.UndefOr[Double] = js.undefined
@@ -380,6 +389,9 @@ object mod {
     
     /** Set the depth of the outline (default 4) */
     var outlineDepth: js.UndefOr[Boolean] = js.undefined
+    
+    /** If defined only output to this path */
+    var output: js.UndefOr[String] = js.undefined
     
     /** Page object */
     var page: js.UndefOr[String] = js.undefined
@@ -492,7 +504,7 @@ object mod {
       
       inline def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
       
-      inline def setAllowVarargs(value: String*): Self = StObject.set(x, "allow", js.Array(value :_*))
+      inline def setAllowVarargs(value: String*): Self = StObject.set(x, "allow", js.Array(value*))
       
       inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -502,7 +514,7 @@ object mod {
       
       inline def setBypassProxyForUndefined: Self = StObject.set(x, "bypassProxyFor", js.undefined)
       
-      inline def setBypassProxyForVarargs(value: String*): Self = StObject.set(x, "bypassProxyFor", js.Array(value :_*))
+      inline def setBypassProxyForVarargs(value: String*): Self = StObject.set(x, "bypassProxyFor", js.Array(value*))
       
       inline def setCacheDir(value: String): Self = StObject.set(x, "cacheDir", value.asInstanceOf[js.Any])
       
@@ -524,7 +536,7 @@ object mod {
       
       inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      inline def setCookieVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "cookie", js.Array(value :_*))
+      inline def setCookieVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "cookie", js.Array(value*))
       
       inline def setCopies(value: Double): Self = StObject.set(x, "copies", value.asInstanceOf[js.Any])
       
@@ -542,9 +554,11 @@ object mod {
       
       inline def setCustomHeaderUndefined: Self = StObject.set(x, "customHeader", js.undefined)
       
-      inline def setCustomHeaderVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "customHeader", js.Array(value :_*))
+      inline def setCustomHeaderVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "customHeader", js.Array(value*))
       
-      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean | (js.Function1[/* data */ Buffer, Unit])): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      
+      inline def setDebugFunction1(value: /* data */ Buffer => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
       inline def setDebugJavascript(value: Boolean): Self = StObject.set(x, "debugJavascript", value.asInstanceOf[js.Any])
       
@@ -680,7 +694,7 @@ object mod {
       
       inline def setFooterRightUndefined: Self = StObject.set(x, "footerRight", js.undefined)
       
-      inline def setFooterSpacing(value: String): Self = StObject.set(x, "footerSpacing", value.asInstanceOf[js.Any])
+      inline def setFooterSpacing(value: Double): Self = StObject.set(x, "footerSpacing", value.asInstanceOf[js.Any])
       
       inline def setFooterSpacingUndefined: Self = StObject.set(x, "footerSpacing", js.undefined)
       
@@ -716,15 +730,15 @@ object mod {
       
       inline def setHeaderRightUndefined: Self = StObject.set(x, "headerRight", js.undefined)
       
-      inline def setHeaderSpacing(value: String): Self = StObject.set(x, "headerSpacing", value.asInstanceOf[js.Any])
+      inline def setHeaderSpacing(value: Double): Self = StObject.set(x, "headerSpacing", value.asInstanceOf[js.Any])
       
       inline def setHeaderSpacingUndefined: Self = StObject.set(x, "headerSpacing", js.undefined)
       
-      inline def setIgnore(value: js.Array[String | RegExp]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setImageDpi(value: Double): Self = StObject.set(x, "imageDpi", value.asInstanceOf[js.Any])
       
@@ -842,6 +856,10 @@ object mod {
       
       inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
       
+      inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      
       inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
       inline def setPageHeight(value: String): Self = StObject.set(x, "pageHeight", value.asInstanceOf[js.Any])
@@ -874,11 +892,11 @@ object mod {
       
       inline def setPostFileUndefined: Self = StObject.set(x, "postFile", js.undefined)
       
-      inline def setPostFileVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "postFile", js.Array(value :_*))
+      inline def setPostFileVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "postFile", js.Array(value*))
       
       inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
       
-      inline def setPostVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "post", js.Array(value :_*))
+      inline def setPostVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "post", js.Array(value*))
       
       inline def setPrintMediaType(value: Boolean): Self = StObject.set(x, "printMediaType", value.asInstanceOf[js.Any])
       
@@ -904,7 +922,7 @@ object mod {
       
       inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
       
-      inline def setReplaceVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "replace", js.Array(value :_*))
+      inline def setReplaceVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "replace", js.Array(value*))
       
       inline def setResolveRelativeLinks(value: Boolean): Self = StObject.set(x, "resolveRelativeLinks", value.asInstanceOf[js.Any])
       
@@ -914,7 +932,7 @@ object mod {
       
       inline def setRunScriptUndefined: Self = StObject.set(x, "runScript", js.undefined)
       
-      inline def setRunScriptVarargs(value: String*): Self = StObject.set(x, "runScript", js.Array(value :_*))
+      inline def setRunScriptVarargs(value: String*): Self = StObject.set(x, "runScript", js.Array(value*))
       
       inline def setSslCrtPath(value: String): Self = StObject.set(x, "sslCrtPath", value.asInstanceOf[js.Any])
       
@@ -975,26 +993,6 @@ object mod {
       inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
       inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
-    }
-  }
-  
-  trait OptionsOutfile
-    extends StObject
-       with Options {
-    
-    /** If defined only output to this path */
-    var output: String
-  }
-  object OptionsOutfile {
-    
-    inline def apply(output: String): OptionsOutfile = {
-      val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
-      __obj.asInstanceOf[OptionsOutfile]
-    }
-    
-    extension [Self <: OptionsOutfile](x: Self) {
-      
-      inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
   }
 }

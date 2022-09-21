@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("recharts", "Legend")
 @js.native
-class Legend protected ()
-  extends Component[LegendProps, BoxSize, js.Any] {
+open class Legend protected () extends Component[LegendProps, BoxSize, Any] {
   def this(props: LegendProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: LegendProps, context: js.Any) = this()
+  def this(props: LegendProps, context: Any) = this()
 }

@@ -1,9 +1,6 @@
 package typings.vue2Datepicker
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Date
-import typings.vue.optionsMod.Component
-import typings.vue2Datepicker.anon.AppendToBody
 import typings.vue2Datepicker.anon.FirstDayOfWeek
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,12 +12,12 @@ object mod {
     
     @JSImport("vue2-datepicker", JSImport.Default)
     @js.native
-    val ^ : Component[js.Any, js.Any, js.Any, AppendToBody] = js.native
+    val ^ : /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<any, any, any, {  type :'date' | 'datetime' | 'year' | 'month' | 'time' | 'week' | undefined,   range :boolean | undefined,   format :string | undefined,   valueType :Datepicker.ValueType | undefined,   lang :string | Datepicker.Lang | undefined,   clearable :boolean | undefined,   confirm :boolean | undefined,   editable :boolean | undefined,   disabled :boolean | undefined,   placeholder :string | undefined,   appendToBody :boolean | undefined,   defaultValue :Date | undefined,   popupStyle :(): {} | undefined,   shortcuts :Array<Datepicker.Shortcuts> | undefined,   timePickerOptions :Datepicker.TimePickerOptions | undefined,   minuteStep :number | undefined,   inputClass :string | undefined,   inputAttr :(): {} | undefined,   confirmText :string | undefined,   rangeSeparator :string | undefined,   disabledDate :(date : Date): boolean | undefined,   disabledTime :(date : Date): boolean | undefined,   inline :boolean | undefined,   open :boolean | undefined,   popupClass :string | undefined,   titleFormat :string | undefined,   partialUpdate :boolean | undefined,   showWeekNumber :boolean | undefined,   hourStep :number | undefined,   secondStep :number | undefined,   hourOptions :Array<number> | undefined,   minuteOptions :Array<number> | undefined,   secondOptions :Array<number> | undefined,   showHour :boolean | undefined,   showMinute :boolean | undefined,   showSecond :boolean | undefined,   use12h :boolean | undefined,   showTimeHeader :boolean | undefined,   timeTitleFormat :string | undefined}> */ Any = js.native
     
-    type _To = Component[js.Any, js.Any, js.Any, AppendToBody]
+    type _To = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<any, any, any, {  type :'date' | 'datetime' | 'year' | 'month' | 'time' | 'week' | undefined,   range :boolean | undefined,   format :string | undefined,   valueType :Datepicker.ValueType | undefined,   lang :string | Datepicker.Lang | undefined,   clearable :boolean | undefined,   confirm :boolean | undefined,   editable :boolean | undefined,   disabled :boolean | undefined,   placeholder :string | undefined,   appendToBody :boolean | undefined,   defaultValue :Date | undefined,   popupStyle :(): {} | undefined,   shortcuts :Array<Datepicker.Shortcuts> | undefined,   timePickerOptions :Datepicker.TimePickerOptions | undefined,   minuteStep :number | undefined,   inputClass :string | undefined,   inputAttr :(): {} | undefined,   confirmText :string | undefined,   rangeSeparator :string | undefined,   disabledDate :(date : Date): boolean | undefined,   disabledTime :(date : Date): boolean | undefined,   inline :boolean | undefined,   open :boolean | undefined,   popupClass :string | undefined,   titleFormat :string | undefined,   partialUpdate :boolean | undefined,   showWeekNumber :boolean | undefined,   hourStep :number | undefined,   secondStep :number | undefined,   hourOptions :Array<number> | undefined,   minuteOptions :Array<number> | undefined,   secondOptions :Array<number> | undefined,   showHour :boolean | undefined,   showMinute :boolean | undefined,   showSecond :boolean | undefined,   use12h :boolean | undefined,   showTimeHeader :boolean | undefined,   timeTitleFormat :string | undefined}> */ Any
     
     /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: Component[js.Any, js.Any, js.Any, AppendToBody] = ^
+    override def _to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<any, any, any, {  type :'date' | 'datetime' | 'year' | 'month' | 'time' | 'week' | undefined,   range :boolean | undefined,   format :string | undefined,   valueType :Datepicker.ValueType | undefined,   lang :string | Datepicker.Lang | undefined,   clearable :boolean | undefined,   confirm :boolean | undefined,   editable :boolean | undefined,   disabled :boolean | undefined,   placeholder :string | undefined,   appendToBody :boolean | undefined,   defaultValue :Date | undefined,   popupStyle :(): {} | undefined,   shortcuts :Array<Datepicker.Shortcuts> | undefined,   timePickerOptions :Datepicker.TimePickerOptions | undefined,   minuteStep :number | undefined,   inputClass :string | undefined,   inputAttr :(): {} | undefined,   confirmText :string | undefined,   rangeSeparator :string | undefined,   disabledDate :(date : Date): boolean | undefined,   disabledTime :(date : Date): boolean | undefined,   inline :boolean | undefined,   open :boolean | undefined,   popupClass :string | undefined,   titleFormat :string | undefined,   partialUpdate :boolean | undefined,   showWeekNumber :boolean | undefined,   hourStep :number | undefined,   secondStep :number | undefined,   hourOptions :Array<number> | undefined,   minuteOptions :Array<number> | undefined,   secondOptions :Array<number> | undefined,   showHour :boolean | undefined,   showMinute :boolean | undefined,   showSecond :boolean | undefined,   use12h :boolean | undefined,   showTimeHeader :boolean | undefined,   timeTitleFormat :string | undefined}> */ Any = ^
   }
   
   object Datepicker {
@@ -52,7 +49,7 @@ object mod {
         
         inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
         
-        inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
+        inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value*))
         
         inline def setFormatLocale(value: FirstDayOfWeek): Self = StObject.set(x, "formatLocale", value.asInstanceOf[js.Any])
         
@@ -64,7 +61,7 @@ object mod {
         
         inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
         
-        inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+        inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
         
         inline def setYearFormat(value: String): Self = StObject.set(x, "yearFormat", value.asInstanceOf[js.Any])
       }
@@ -72,20 +69,20 @@ object mod {
     
     trait Shortcuts extends StObject {
       
-      def onClick(): js.Any
+      def onClick(): Any
       
       var text: String
     }
     object Shortcuts {
       
-      inline def apply(onClick: () => js.Any, text: String): Shortcuts = {
+      inline def apply(onClick: () => Any, text: String): Shortcuts = {
         val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction0(onClick), text = text.asInstanceOf[js.Any])
         __obj.asInstanceOf[Shortcuts]
       }
       
       extension [Self <: Shortcuts](x: Self) {
         
-        inline def setOnClick(value: () => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+        inline def setOnClick(value: () => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
         
         inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       }
@@ -122,7 +119,7 @@ object mod {
     
     trait ValueType extends StObject {
       
-      var date: Date
+      var date: js.Date
       
       var format: String
       
@@ -132,14 +129,14 @@ object mod {
     }
     object ValueType {
       
-      inline def apply(date: Date, format: String, timestamp: Double, token: String): ValueType = {
+      inline def apply(date: js.Date, format: String, timestamp: Double, token: String): ValueType = {
         val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
         __obj.asInstanceOf[ValueType]
       }
       
       extension [Self <: ValueType](x: Self) {
         
-        inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+        inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
         
         inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         

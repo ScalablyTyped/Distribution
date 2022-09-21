@@ -15,7 +15,7 @@ trait ParseHelper extends StObject {
   /**
   	 * @returns true if the given value is a parsed template
   	 */
-  def isParsed(template: js.Any): Boolean = js.native
+  def isParsed(template: Any): Boolean = js.native
   
   /**
   	 * Parse the given template with Ractive.parse.

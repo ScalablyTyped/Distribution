@@ -58,7 +58,7 @@ object PathItemObject {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: (ParameterObject | ReferenceObject)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: (ParameterObject | ReferenceObject)*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setPatch(value: OperationObject): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     

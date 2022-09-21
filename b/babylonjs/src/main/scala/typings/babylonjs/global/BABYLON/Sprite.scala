@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Sprite")
 @js.native
-class Sprite protected ()
+open class Sprite protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Sprite {
   /**
@@ -38,5 +38,5 @@ object Sprite {
     * @param manager defines the hosting manager
     * @returns the new sprite
     */
-  inline def Parse(parsedSprite: js.Any, manager: typings.babylonjs.BABYLON.SpriteManager): typings.babylonjs.BABYLON.Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSprite.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Sprite]
+  inline def Parse(parsedSprite: Any, manager: typings.babylonjs.BABYLON.SpriteManager): typings.babylonjs.BABYLON.Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSprite.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Sprite]
 }

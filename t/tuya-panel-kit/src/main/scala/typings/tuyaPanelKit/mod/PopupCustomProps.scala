@@ -9,6 +9,16 @@ trait PopupCustomProps
   extends StObject
      with PopupProps {
   
+  /**
+    * @language zh-CN
+    * @description 自定义内容
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Custom content
+    * @defaultValue null
+    */
   var content: ReactNode
 }
 object PopupCustomProps {

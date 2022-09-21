@@ -1,26 +1,34 @@
 package typings.miniprogram
 
+import typings.miniprogram.anon.FileList
+import typings.miniprogram.anon.Form
+import typings.miniprogram.anon.From
+import typings.miniprogram.anon.Response
+import typings.miniprogram.anon.Text
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ChoosePhoneContactArgs = typings.miniprogram.AsyncCallback[typings.miniprogram.anon.Mobile]
+type ChoosePhoneContactArgs = AsyncCallback[ChoosePhoneContactCallbackValue]
 
-type EmptyFn = js.Function0[scala.Unit]
+type Common = Record[String, String | Double | Boolean]
 
-type GetClipboardArgs = typings.miniprogram.AsyncCallback[typings.miniprogram.anon.Text]
+type EmptyFn = js.Function0[Unit]
 
-type GetNetworkTypeArgs = typings.miniprogram.AsyncCallback[typings.miniprogram.anon.NetworkAvailable]
+type GetClipboardArgs = AsyncCallback[Text]
 
-type GetOpenUserInfoArgs = typings.miniprogram.AsyncCallback[typings.miniprogram.anon.Response]
+type GetNetworkTypeArgs = AsyncCallback[GetNetworkTypeCallbackValue]
 
-type GetSavedFileListArgs = typings.miniprogram.AsyncCallback[typings.miniprogram.anon.FileList]
+type GetOpenUserInfoArgs = AsyncCallback[Response]
 
-type GetSystemInfoArgs = typings.miniprogram.AsyncCallback[typings.miniprogram.anon.App]
+type GetSavedFileListArgs = AsyncCallback[FileList]
 
-type OnPullDownRefresh = js.Function1[/* opts */ typings.miniprogram.anon.Form, scala.Unit]
+type GetSystemInfoArgs = AsyncCallback[GetSystemInfoCallbackValue]
 
-type OnTabItemTap = js.Function1[/* obj */ typings.miniprogram.anon.From, scala.Unit]
+type OnPullDownRefresh = js.Function1[/* opts */ Form, Unit]
 
-type SelectorQueryExecCallback = js.Function1[/* ret */ js.Any, scala.Unit]
+type OnTabItemTap = js.Function1[/* obj */ From, Unit]
+
+type SelectorQueryExecCallback = js.Function1[/* ret */ Any, Unit]

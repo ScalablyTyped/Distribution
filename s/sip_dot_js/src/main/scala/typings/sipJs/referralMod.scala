@@ -15,7 +15,7 @@ object referralMod {
   
   @JSImport("sip.js/lib/api/referral", "Referral")
   @js.native
-  class Referral protected () extends StObject {
+  open class Referral protected () extends StObject {
     /** @internal */
     def this(incomingReferRequest: IncomingReferRequest, session: Session) = this()
     
@@ -23,9 +23,9 @@ object referralMod {
     def accept(): js.Promise[Unit] = js.native
     def accept(options: ResponseOptions): js.Promise[Unit] = js.native
     
-    /* private */ var incomingReferRequest: js.Any = js.native
+    /* private */ var incomingReferRequest: Any = js.native
     
-    /* private */ var inviter: js.Any = js.native
+    /* private */ var inviter: Any = js.native
     
     /**
       * Creates an inviter which may be used to send an out of dialog INVITE request.
@@ -56,6 +56,6 @@ object referralMod {
     /** Incoming REFER request message. */
     def request: IncomingRequestMessage = js.native
     
-    /* private */ var session: js.Any = js.native
+    /* private */ var session: Any = js.native
   }
 }

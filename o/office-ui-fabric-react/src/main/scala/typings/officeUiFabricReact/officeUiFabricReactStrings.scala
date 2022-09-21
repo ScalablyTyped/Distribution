@@ -337,6 +337,10 @@ object officeUiFabricReactStrings {
   inline def `enum`: `enum` = "enum".asInstanceOf[`enum`]
   
   @js.native
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
+  
+  @js.native
   sealed trait errorBackground extends StObject
   inline def errorBackground: errorBackground = "errorBackground".asInstanceOf[errorBackground]
   
@@ -1059,6 +1063,10 @@ object officeUiFabricReactStrings {
   @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
   sealed trait variantBorder extends StObject

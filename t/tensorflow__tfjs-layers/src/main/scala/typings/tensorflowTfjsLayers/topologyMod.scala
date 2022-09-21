@@ -26,7 +26,7 @@ object topologyMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "InputSpec")
   @js.native
-  class InputSpec protected () extends StObject {
+  open class InputSpec protected () extends StObject {
     def this(args: InputSpecArgs) = this()
     
     /** Dictionary mapping integer axes to a specific dimension value. */
@@ -53,15 +53,15 @@ object topologyMod {
   abstract class Layer () extends Serializable {
     def this(args: LayerArgs) = this()
     
-    /* private */ var _addedWeightNames: js.Any = js.native
+    /* private */ var _addedWeightNames: Any = js.native
     
-    /* private */ var _built: js.Any = js.native
+    /* private */ var _built: Any = js.native
     
-    /* private */ var _callHook: js.Any = js.native
+    /* private */ var _callHook: Any = js.native
     
-    /* private */ var _losses: js.Any = js.native
+    /* private */ var _losses: Any = js.native
     
-    /* private */ var _nonTrainableWeights: js.Any = js.native
+    /* private */ var _nonTrainableWeights: Any = js.native
     
     /* protected */ var _refCount: Double | Null = js.native
     
@@ -69,7 +69,7 @@ object topologyMod {
     
     /* protected */ var _trainableWeights: js.Array[LayerVariable] = js.native
     
-    /* private */ var _updates: js.Any = js.native
+    /* private */ var _updates: Any = js.native
     
     var activityRegularizer: Regularizer = js.native
     
@@ -85,7 +85,7 @@ object topologyMod {
       * @param kwargs Dictionary of keyword arguments that were passed to the
       *   `call` method of the layer at the call that created the node.
       */
-    /* private */ var addInboundNode: js.Any = js.native
+    /* private */ var addInboundNode: Any = js.native
     
     def addLoss(losses: js.Array[RegularizerFn]): Unit = js.native
     /**
@@ -113,214 +113,15 @@ object topologyMod {
       *
       * @doc {heading: 'Models', 'subheading': 'Classes'}
       */
-    /* protected */ def addWeight(name: String, shape: Shape): LayerVariable = js.native
-    /* protected */ def addWeight(name: String, shape: Shape, dtype: Unit, initializer: Unit, regularizer: Unit, trainable: Boolean): LayerVariable = js.native
     /* protected */ def addWeight(
       name: String,
       shape: Shape,
-      dtype: Unit,
-      initializer: Unit,
-      regularizer: Unit,
-      trainable: Boolean,
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: Unit,
-      initializer: Unit,
-      regularizer: Unit,
-      trainable: Unit,
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(name: String, shape: Shape, dtype: Unit, initializer: Unit, regularizer: Regularizer): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: Unit,
-      initializer: Unit,
-      regularizer: Regularizer,
-      trainable: Boolean
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: Unit,
-      initializer: Unit,
-      regularizer: Regularizer,
-      trainable: Boolean,
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: Unit,
-      initializer: Unit,
-      regularizer: Regularizer,
-      trainable: Unit,
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(name: String, shape: Shape, dtype: Unit, initializer: Initializer): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: Unit,
-      initializer: Initializer,
-      regularizer: Unit,
-      trainable: Boolean
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: Unit,
-      initializer: Initializer,
-      regularizer: Unit,
-      trainable: Boolean,
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: Unit,
-      initializer: Initializer,
-      regularizer: Unit,
-      trainable: Unit,
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(name: String, shape: Shape, dtype: Unit, initializer: Initializer, regularizer: Regularizer): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: Unit,
-      initializer: Initializer,
-      regularizer: Regularizer,
-      trainable: Boolean
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: Unit,
-      initializer: Initializer,
-      regularizer: Regularizer,
-      trainable: Boolean,
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: Unit,
-      initializer: Initializer,
-      regularizer: Regularizer,
-      trainable: Unit,
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(name: String, shape: Shape, dtype: DataType): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: Unit,
-      regularizer: Unit,
-      trainable: Boolean
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: Unit,
-      regularizer: Unit,
-      trainable: Boolean,
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: Unit,
-      regularizer: Unit,
-      trainable: Unit,
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(name: String, shape: Shape, dtype: DataType, initializer: Unit, regularizer: Regularizer): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: Unit,
-      regularizer: Regularizer,
-      trainable: Boolean
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: Unit,
-      regularizer: Regularizer,
-      trainable: Boolean,
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: Unit,
-      regularizer: Regularizer,
-      trainable: Unit,
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(name: String, shape: Shape, dtype: DataType, initializer: Initializer): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: Initializer,
-      regularizer: Unit,
-      trainable: Boolean
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: Initializer,
-      regularizer: Unit,
-      trainable: Boolean,
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: Initializer,
-      regularizer: Unit,
-      trainable: Unit,
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(name: String, shape: Shape, dtype: DataType, initializer: Initializer, regularizer: Regularizer): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: Initializer,
-      regularizer: Regularizer,
-      trainable: Boolean
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: Initializer,
-      regularizer: Regularizer,
-      trainable: Boolean,
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: Initializer,
-      regularizer: Regularizer,
-      trainable: Unit,
-      constraint: Constraint
+      dtype: js.UndefOr[DataType],
+      initializer: js.UndefOr[Initializer],
+      regularizer: js.UndefOr[Regularizer],
+      trainable: js.UndefOr[Boolean],
+      constraint: js.UndefOr[Constraint],
+      getInitializerFunc: js.UndefOr[js.Function]
     ): LayerVariable = js.native
     
     @JSName("apply")
@@ -545,7 +346,7 @@ object topologyMod {
     
     var dtype: DataType = js.native
     
-    /* private */ var fastWeightInitDuringBuild: js.Any = js.native
+    /* private */ var fastWeightInitDuringBuild: Any = js.native
     
     /**
       * Retrieves the input tensor(s) of a layer at a given node.
@@ -565,7 +366,7 @@ object topologyMod {
       * @param nodeIndex
       * @param attrName The name of the attribute related to request for this node.
       */
-    /* private */ var getNodeAtIndex: js.Any = js.native
+    /* private */ var getNodeAtIndex: Any = js.native
     
     /**
       * Retrieves the output tensor(s) of a layer at a given node.
@@ -748,7 +549,7 @@ object topologyMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "Node")
   @js.native
-  class Node protected () extends StObject {
+  open class Node protected () extends StObject {
     def this(args: NodeArgs) = this()
     def this(args: NodeArgs, callArgs: Kwargs) = this()
     
@@ -807,7 +608,7 @@ object topologyMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "SymbolicTensor")
   @js.native
-  class SymbolicTensor protected () extends StObject {
+  open class SymbolicTensor protected () extends StObject {
     /**
       *
       * @param dtype
@@ -976,7 +777,7 @@ object topologyMod {
       
       inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      inline def setShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "shape", js.Array(value*))
     }
   }
   
@@ -1042,7 +843,7 @@ object topologyMod {
       
       inline def setBatchInputShapeUndefined: Self = StObject.set(x, "batchInputShape", js.undefined)
       
-      inline def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value :_*))
+      inline def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value*))
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
@@ -1060,7 +861,7 @@ object topologyMod {
       
       inline def setInputShapeUndefined: Self = StObject.set(x, "inputShape", js.undefined)
       
-      inline def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
+      inline def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -1074,7 +875,7 @@ object topologyMod {
       
       inline def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
       
-      inline def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value :_*))
+      inline def setWeightsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "weights", js.Array(value*))
     }
   }
   
@@ -1148,41 +949,41 @@ object topologyMod {
       
       inline def setInboundLayers(value: js.Array[Layer]): Self = StObject.set(x, "inboundLayers", value.asInstanceOf[js.Any])
       
-      inline def setInboundLayersVarargs(value: Layer*): Self = StObject.set(x, "inboundLayers", js.Array(value :_*))
+      inline def setInboundLayersVarargs(value: Layer*): Self = StObject.set(x, "inboundLayers", js.Array(value*))
       
       inline def setInputMasks(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "inputMasks", value.asInstanceOf[js.Any])
       
-      inline def setInputMasksVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "inputMasks", js.Array(value :_*))
+      inline def setInputMasksVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "inputMasks", js.Array(value*))
       
       inline def setInputShapes(value: Shape | js.Array[Shape]): Self = StObject.set(x, "inputShapes", value.asInstanceOf[js.Any])
       
-      inline def setInputShapesVarargs(value: (Double | Null | Shape)*): Self = StObject.set(x, "inputShapes", js.Array(value :_*))
+      inline def setInputShapesVarargs(value: (Double | Null | Shape)*): Self = StObject.set(x, "inputShapes", js.Array(value*))
       
       inline def setInputTensors(value: js.Array[SymbolicTensor]): Self = StObject.set(x, "inputTensors", value.asInstanceOf[js.Any])
       
-      inline def setInputTensorsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "inputTensors", js.Array(value :_*))
+      inline def setInputTensorsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "inputTensors", js.Array(value*))
       
       inline def setNodeIndices(value: js.Array[Double]): Self = StObject.set(x, "nodeIndices", value.asInstanceOf[js.Any])
       
-      inline def setNodeIndicesVarargs(value: Double*): Self = StObject.set(x, "nodeIndices", js.Array(value :_*))
+      inline def setNodeIndicesVarargs(value: Double*): Self = StObject.set(x, "nodeIndices", js.Array(value*))
       
       inline def setOutboundLayer(value: Layer): Self = StObject.set(x, "outboundLayer", value.asInstanceOf[js.Any])
       
       inline def setOutputMasks(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "outputMasks", value.asInstanceOf[js.Any])
       
-      inline def setOutputMasksVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "outputMasks", js.Array(value :_*))
+      inline def setOutputMasksVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "outputMasks", js.Array(value*))
       
       inline def setOutputShapes(value: Shape | js.Array[Shape]): Self = StObject.set(x, "outputShapes", value.asInstanceOf[js.Any])
       
-      inline def setOutputShapesVarargs(value: (Double | Null | Shape)*): Self = StObject.set(x, "outputShapes", js.Array(value :_*))
+      inline def setOutputShapesVarargs(value: (Double | Null | Shape)*): Self = StObject.set(x, "outputShapes", js.Array(value*))
       
       inline def setOutputTensors(value: js.Array[SymbolicTensor]): Self = StObject.set(x, "outputTensors", value.asInstanceOf[js.Any])
       
-      inline def setOutputTensorsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "outputTensors", js.Array(value :_*))
+      inline def setOutputTensorsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "outputTensors", js.Array(value*))
       
       inline def setTensorIndices(value: js.Array[Double]): Self = StObject.set(x, "tensorIndices", value.asInstanceOf[js.Any])
       
-      inline def setTensorIndicesVarargs(value: Double*): Self = StObject.set(x, "tensorIndices", js.Array(value :_*))
+      inline def setTensorIndicesVarargs(value: Double*): Self = StObject.set(x, "tensorIndices", js.Array(value*))
     }
   }
   

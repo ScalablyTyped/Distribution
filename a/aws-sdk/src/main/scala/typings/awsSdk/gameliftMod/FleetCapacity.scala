@@ -7,19 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FleetCapacity extends StObject {
   
   /**
-    * A unique identifier for a fleet.
+    * The Amazon Resource Name (ARN) that is assigned to a GameLift fleet resource and uniquely identifies it. ARNs are unique across all Regions. Format is arn:aws:gamelift:&lt;region&gt;::fleet/fleet-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912.
+    */
+  var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.undefined
+  
+  /**
+    * A unique identifier for the fleet associated with the location.
     */
   var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
   
   /**
-    * Current status of fleet capacity.
+    * The current instance count and capacity settings for the fleet location. 
     */
   var InstanceCounts: js.UndefOr[EC2InstanceCounts] = js.undefined
   
   /**
-    * Name of an EC2 instance type that is supported in Amazon GameLift. A fleet instance type determines the computing resources of each instance in the fleet, including CPU, memory, storage, and networking capacity. Amazon GameLift supports the following EC2 instance types. See Amazon EC2 Instance Types for detailed descriptions.
+    * The Amazon EC2 instance type that is used for all instances in a fleet. The instance type determines the computing resources in use, including CPU, memory, storage, and networking capacity. See Amazon Elastic Compute Cloud Instance Types for detailed descriptions.
     */
   var InstanceType: js.UndefOr[EC2InstanceType] = js.undefined
+  
+  /**
+    * The fleet location for the instance count information, expressed as an Amazon Web Services Region code, such as us-west-2. 
+    */
+  var Location: js.UndefOr[LocationStringModel] = js.undefined
 }
 object FleetCapacity {
   
@@ -29,6 +39,10 @@ object FleetCapacity {
   }
   
   extension [Self <: FleetCapacity](x: Self) {
+    
+    inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
+    
+    inline def setFleetArnUndefined: Self = StObject.set(x, "FleetArn", js.undefined)
     
     inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
@@ -41,5 +55,9 @@ object FleetCapacity {
     inline def setInstanceType(value: EC2InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
     inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    
+    inline def setLocation(value: LocationStringModel): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
   }
 }

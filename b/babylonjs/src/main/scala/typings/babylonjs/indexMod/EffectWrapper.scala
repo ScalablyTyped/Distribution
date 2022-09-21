@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "EffectWrapper")
 @js.native
-class EffectWrapper protected ()
+open class EffectWrapper protected ()
   extends typings.babylonjs.materialsIndexMod.EffectWrapper {
   /**
     * Creates an effect to be renderer

@@ -195,24 +195,24 @@ trait Pivot extends StObject {
   def getXMLACatalogs(proxyURL: String, dataSource: String, callbackHandler: String, username: String): Unit = js.native
   def getXMLACatalogs(proxyURL: String, dataSource: String, callbackHandler: String, username: String, password: String): Unit = js.native
   def getXMLACatalogs(proxyURL: String, dataSource: String, callbackHandler: String, username: Unit, password: String): Unit = js.native
-  def getXMLACatalogs(proxyURL: String, dataSource: String, callbackHandler: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+  def getXMLACatalogs(proxyURL: String, dataSource: String, callbackHandler: js.Function1[/* response */ Any, Unit]): Unit = js.native
   def getXMLACatalogs(
     proxyURL: String,
     dataSource: String,
-    callbackHandler: js.Function1[/* response */ js.Any, Unit],
+    callbackHandler: js.Function1[/* response */ Any, Unit],
     username: String
   ): Unit = js.native
   def getXMLACatalogs(
     proxyURL: String,
     dataSource: String,
-    callbackHandler: js.Function1[/* response */ js.Any, Unit],
+    callbackHandler: js.Function1[/* response */ Any, Unit],
     username: String,
     password: String
   ): Unit = js.native
   def getXMLACatalogs(
     proxyURL: String,
     dataSource: String,
-    callbackHandler: js.Function1[/* response */ js.Any, Unit],
+    callbackHandler: js.Function1[/* response */ Any, Unit],
     username: Unit,
     password: String
   ): Unit = js.native
@@ -239,20 +239,20 @@ trait Pivot extends StObject {
     proxyURL: String,
     dataSource: String,
     catalog: String,
-    callbackHandler: js.Function1[/* response */ js.Any, Unit]
+    callbackHandler: js.Function1[/* response */ Any, Unit]
   ): Unit = js.native
   def getXMLACubes(
     proxyURL: String,
     dataSource: String,
     catalog: String,
-    callbackHandler: js.Function1[/* response */ js.Any, Unit],
+    callbackHandler: js.Function1[/* response */ Any, Unit],
     username: String
   ): Unit = js.native
   def getXMLACubes(
     proxyURL: String,
     dataSource: String,
     catalog: String,
-    callbackHandler: js.Function1[/* response */ js.Any, Unit],
+    callbackHandler: js.Function1[/* response */ Any, Unit],
     username: String,
     password: String
   ): Unit = js.native
@@ -260,7 +260,7 @@ trait Pivot extends StObject {
     proxyURL: String,
     dataSource: String,
     catalog: String,
-    callbackHandler: js.Function1[/* response */ js.Any, Unit],
+    callbackHandler: js.Function1[/* response */ Any, Unit],
     username: Unit,
     password: String
   ): Unit = js.native
@@ -269,17 +269,17 @@ trait Pivot extends StObject {
   def getXMLADataSources(proxyURL: String, callbackHandler: String, username: String): Unit = js.native
   def getXMLADataSources(proxyURL: String, callbackHandler: String, username: String, password: String): Unit = js.native
   def getXMLADataSources(proxyURL: String, callbackHandler: String, username: Unit, password: String): Unit = js.native
-  def getXMLADataSources(proxyURL: String, callbackHandler: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
-  def getXMLADataSources(proxyURL: String, callbackHandler: js.Function1[/* response */ js.Any, Unit], username: String): Unit = js.native
+  def getXMLADataSources(proxyURL: String, callbackHandler: js.Function1[/* response */ Any, Unit]): Unit = js.native
+  def getXMLADataSources(proxyURL: String, callbackHandler: js.Function1[/* response */ Any, Unit], username: String): Unit = js.native
   def getXMLADataSources(
     proxyURL: String,
-    callbackHandler: js.Function1[/* response */ js.Any, Unit],
+    callbackHandler: js.Function1[/* response */ Any, Unit],
     username: String,
     password: String
   ): Unit = js.native
   def getXMLADataSources(
     proxyURL: String,
-    callbackHandler: js.Function1[/* response */ js.Any, Unit],
+    callbackHandler: js.Function1[/* response */ Any, Unit],
     username: Unit,
     password: String
   ): Unit = js.native
@@ -288,17 +288,17 @@ trait Pivot extends StObject {
   def getXMLAProviderName(proxyURL: String, callbackHandler: String, username: String): String = js.native
   def getXMLAProviderName(proxyURL: String, callbackHandler: String, username: String, password: String): String = js.native
   def getXMLAProviderName(proxyURL: String, callbackHandler: String, username: Unit, password: String): String = js.native
-  def getXMLAProviderName(proxyURL: String, callbackHandler: js.Function1[/* response */ js.Any, Unit]): String = js.native
-  def getXMLAProviderName(proxyURL: String, callbackHandler: js.Function1[/* response */ js.Any, Unit], username: String): String = js.native
+  def getXMLAProviderName(proxyURL: String, callbackHandler: js.Function1[/* response */ Any, Unit]): String = js.native
+  def getXMLAProviderName(proxyURL: String, callbackHandler: js.Function1[/* response */ Any, Unit], username: String): String = js.native
   def getXMLAProviderName(
     proxyURL: String,
-    callbackHandler: js.Function1[/* response */ js.Any, Unit],
+    callbackHandler: js.Function1[/* response */ Any, Unit],
     username: String,
     password: String
   ): String = js.native
   def getXMLAProviderName(
     proxyURL: String,
-    callbackHandler: js.Function1[/* response */ js.Any, Unit],
+    callbackHandler: js.Function1[/* response */ Any, Unit],
     username: Unit,
     password: String
   ): String = js.native
@@ -312,10 +312,10 @@ trait Pivot extends StObject {
   
   def off(eventType: String): Unit = js.native
   def off(eventType: String, handler: String): Unit = js.native
-  def off(eventType: String, handler: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+  def off(eventType: String, handler: js.Function1[/* repeated */ Any, Any]): Unit = js.native
   
   def on(eventType: String, handler: String): Unit = js.native
-  def on(eventType: String, handler: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+  def on(eventType: String, handler: js.Function1[/* repeated */ Any, Any]): Unit = js.native
   
   def open(): Unit = js.native
   

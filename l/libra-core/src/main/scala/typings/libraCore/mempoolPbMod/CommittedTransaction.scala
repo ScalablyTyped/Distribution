@@ -6,29 +6,28 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/mempool_pb", "CommittedTransaction")
 @js.native
-class CommittedTransaction () extends Message {
+open class CommittedTransaction () extends Message {
   
   def getIsRejected(): Boolean = js.native
   
-  def getSender(): Uint8Array | String = js.native
+  def getSender(): js.typedarray.Uint8Array | String = js.native
   
   def getSender_asB64(): String = js.native
   
-  def getSender_asU8(): Uint8Array = js.native
+  def getSender_asU8(): js.typedarray.Uint8Array = js.native
   
   def getSequenceNumber(): String = js.native
   
   def setIsRejected(value: Boolean): Unit = js.native
   
   def setSender(value: String): Unit = js.native
-  def setSender(value: Uint8Array): Unit = js.native
+  def setSender(value: js.typedarray.Uint8Array): Unit = js.native
   
   def setSequenceNumber(value: String): Unit = js.native
 }
@@ -39,7 +38,7 @@ object CommittedTransaction {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): CommittedTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[CommittedTransaction]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): CommittedTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[CommittedTransaction]
   
   inline def deserializeBinaryFromReader(message: CommittedTransaction, reader: BinaryReader): CommittedTransaction = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[CommittedTransaction]
   
@@ -62,13 +61,13 @@ object CommittedTransaction {
     
     var isRejected: Boolean
     
-    var sender: Uint8Array | String
+    var sender: js.typedarray.Uint8Array | String
     
     var sequenceNumber: String
   }
   object AsObject {
     
-    inline def apply(isRejected: Boolean, sender: Uint8Array | String, sequenceNumber: String): AsObject = {
+    inline def apply(isRejected: Boolean, sender: js.typedarray.Uint8Array | String, sequenceNumber: String): AsObject = {
       val __obj = js.Dynamic.literal(isRejected = isRejected.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
     }
@@ -77,7 +76,7 @@ object CommittedTransaction {
       
       inline def setIsRejected(value: Boolean): Self = StObject.set(x, "isRejected", value.asInstanceOf[js.Any])
       
-      inline def setSender(value: Uint8Array | String): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+      inline def setSender(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
       
       inline def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
     }

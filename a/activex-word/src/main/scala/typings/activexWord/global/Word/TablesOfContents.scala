@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TablesOfContents")
 @js.native
-/* private */ class TablesOfContents ()
+/* private */ open class TablesOfContents ()
   extends StObject
      with typings.activexWord.Word.TablesOfContents

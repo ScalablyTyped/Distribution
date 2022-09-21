@@ -11,9 +11,9 @@ simple diff for object and arrays with options
 | Full name          | simple-diff |
 | Keywords           | diff |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 24838 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 24888.333333333332 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/redexp/simple-diff#readme)

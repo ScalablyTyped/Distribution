@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@material/slider" : "8.0.0"
+      "@material/slider" : "14.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@material/slider" : "8.0.0"
+      "@material/slider" : "14.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -19,19 +19,19 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("kramed", "kramed.Parser")
     @js.native
-    class Parser protected ()
+    open class Parser protected ()
       extends StObject
          with KramedParser {
       def this(options: KramedOptions) = this()
       
       /* CompleteClass */
-      override def parse(source: js.Array[js.Any]): String = js.native
+      override def parse(source: js.Array[Any]): String = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("kramed", "kramed.Renderer")
     @js.native
-    class Renderer ()
+    open class Renderer ()
       extends StObject
          with KramedRenderer {
       
@@ -224,18 +224,18 @@ object mod {
   
   trait KramedParser extends StObject {
     
-    def parse(source: js.Array[js.Any]): String
+    def parse(source: js.Array[Any]): String
   }
   object KramedParser {
     
-    inline def apply(parse: js.Array[js.Any] => String): KramedParser = {
+    inline def apply(parse: js.Array[Any] => String): KramedParser = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
       __obj.asInstanceOf[KramedParser]
     }
     
     extension [Self <: KramedParser](x: Self) {
       
-      inline def setParse(value: js.Array[js.Any] => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: js.Array[Any] => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }
   }
   
@@ -380,8 +380,8 @@ object mod {
       * @param src String of kramdown source to be compiled
       * @param options Hash of options
       */
-    def lexer(src: String): js.Array[js.Any] = js.native
-    def lexer(src: String, options: KramedOptions): js.Array[js.Any] = js.native
+    def lexer(src: String): js.Array[Any] = js.native
+    def lexer(src: String, options: KramedOptions): js.Array[Any] = js.native
     
     /**
       * Compiles kramdown to HTML.
@@ -407,8 +407,8 @@ object mod {
     /**
       * @param options Hash of options
       */
-    def parser(src: js.Array[js.Any]): String = js.native
-    def parser(src: js.Array[js.Any], options: KramedOptions): String = js.native
+    def parser(src: js.Array[Any]): String = js.native
+    def parser(src: js.Array[Any], options: KramedOptions): String = js.native
     
     /**
       * Sets the default options.

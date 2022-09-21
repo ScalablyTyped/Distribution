@@ -18,9 +18,9 @@ object anon {
     
     var height: Double
     
-    var matrix: js.Any
+    var matrix: Any
     
-    var parent: js.Any
+    var parent: Any
     
     var url: js.UndefOr[String] = js.undefined
     
@@ -37,8 +37,8 @@ object anon {
     inline def apply(
       alpha: Double,
       height: Double,
-      matrix: js.Any,
-      parent: js.Any,
+      matrix: Any,
+      parent: Any,
       width: Double,
       x: Double,
       y: Double,
@@ -54,9 +54,9 @@ object anon {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      inline def setMatrix(value: js.Any): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+      inline def setMatrix(value: Any): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
       
-      inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -76,7 +76,14 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double): Unit = js.native
-    def apply(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, anticlockwise: Boolean): Unit = js.native
+    def apply(
+      x: Double,
+      y: Double,
+      radius: Double,
+      startAngle: Double,
+      endAngle: Double,
+      counterclockwise: Boolean
+    ): Unit = js.native
   }
   
   @js.native

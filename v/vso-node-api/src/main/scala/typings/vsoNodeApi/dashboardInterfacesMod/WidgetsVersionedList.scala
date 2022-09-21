@@ -21,10 +21,10 @@ object WidgetsVersionedList {
     
     inline def setETag(value: js.Array[String]): Self = StObject.set(x, "eTag", value.asInstanceOf[js.Any])
     
-    inline def setETagVarargs(value: String*): Self = StObject.set(x, "eTag", js.Array(value :_*))
+    inline def setETagVarargs(value: String*): Self = StObject.set(x, "eTag", js.Array(value*))
     
     inline def setWidgets(value: js.Array[Widget]): Self = StObject.set(x, "widgets", value.asInstanceOf[js.Any])
     
-    inline def setWidgetsVarargs(value: Widget*): Self = StObject.set(x, "widgets", js.Array(value :_*))
+    inline def setWidgetsVarargs(value: Widget*): Self = StObject.set(x, "widgets", js.Array(value*))
   }
 }

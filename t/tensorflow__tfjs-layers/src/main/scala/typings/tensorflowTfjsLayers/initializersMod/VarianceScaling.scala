@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/initializers", "VarianceScaling")
 @js.native
-class VarianceScaling protected () extends Initializer {
+open class VarianceScaling protected () extends Initializer {
   /**
     * Constructor of VarianceScaling.
     * @throws ValueError for invalid value in scale.
     */
   def this(args: VarianceScalingArgs) = this()
   
-  /* private */ var distribution: js.Any = js.native
+  /* private */ var distribution: Any = js.native
   
-  /* private */ var mode: js.Any = js.native
+  /* private */ var mode: Any = js.native
   
-  /* private */ var scale: js.Any = js.native
+  /* private */ var scale: Any = js.native
   
-  /* private */ var seed: js.Any = js.native
+  /* private */ var seed: Any = js.native
 }
 /* static members */
 object VarianceScaling {

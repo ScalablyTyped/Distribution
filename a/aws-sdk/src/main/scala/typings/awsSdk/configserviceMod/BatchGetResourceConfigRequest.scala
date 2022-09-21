@@ -22,6 +22,6 @@ object BatchGetResourceConfigRequest {
     
     inline def setResourceKeys(value: ResourceKeys): Self = StObject.set(x, "resourceKeys", value.asInstanceOf[js.Any])
     
-    inline def setResourceKeysVarargs(value: ResourceKey*): Self = StObject.set(x, "resourceKeys", js.Array(value :_*))
+    inline def setResourceKeysVarargs(value: ResourceKey*): Self = StObject.set(x, "resourceKeys", js.Array(value*))
   }
 }

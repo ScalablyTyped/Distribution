@@ -34,13 +34,13 @@ object FeaturizationConfig {
     
     inline def setFeaturizationsUndefined: Self = StObject.set(x, "Featurizations", js.undefined)
     
-    inline def setFeaturizationsVarargs(value: Featurization*): Self = StObject.set(x, "Featurizations", js.Array(value :_*))
+    inline def setFeaturizationsVarargs(value: Featurization*): Self = StObject.set(x, "Featurizations", js.Array(value*))
     
     inline def setForecastDimensions(value: ForecastDimensions): Self = StObject.set(x, "ForecastDimensions", value.asInstanceOf[js.Any])
     
     inline def setForecastDimensionsUndefined: Self = StObject.set(x, "ForecastDimensions", js.undefined)
     
-    inline def setForecastDimensionsVarargs(value: Name*): Self = StObject.set(x, "ForecastDimensions", js.Array(value :_*))
+    inline def setForecastDimensionsVarargs(value: Name*): Self = StObject.set(x, "ForecastDimensions", js.Array(value*))
     
     inline def setForecastFrequency(value: Frequency): Self = StObject.set(x, "ForecastFrequency", value.asInstanceOf[js.Any])
   }

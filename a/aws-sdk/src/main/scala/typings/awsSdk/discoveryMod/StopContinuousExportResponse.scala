@@ -9,12 +9,12 @@ trait StopContinuousExportResponse extends StObject {
   /**
     * Timestamp that represents when this continuous export started collecting data.
     */
-  var startTime: js.UndefOr[TimeStamp] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Timestamp that represents when this continuous export was stopped.
     */
-  var stopTime: js.UndefOr[TimeStamp] = js.undefined
+  var stopTime: js.UndefOr[js.Date] = js.undefined
 }
 object StopContinuousExportResponse {
   
@@ -25,11 +25,11 @@ object StopContinuousExportResponse {
   
   extension [Self <: StopContinuousExportResponse](x: Self) {
     
-    inline def setStartTime(value: TimeStamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    inline def setStopTime(value: TimeStamp): Self = StObject.set(x, "stopTime", value.asInstanceOf[js.Any])
+    inline def setStopTime(value: js.Date): Self = StObject.set(x, "stopTime", value.asInstanceOf[js.Any])
     
     inline def setStopTimeUndefined: Self = StObject.set(x, "stopTime", js.undefined)
   }

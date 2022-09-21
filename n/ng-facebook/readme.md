@@ -9,10 +9,10 @@ Angular service to handle facebook api
 | ------------------ | :-------------: |
 | Full name          | ng-facebook |
 | Keywords           | facebook, angularjs, service, ng-facebook, ngFacebook |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 6422 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 267.0 |
+| # stars            | 263.0 |
 
 ## Links
 - [Homepage](https://github.com/GoDisco/ngFacebook)

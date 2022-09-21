@@ -1,928 +1,456 @@
 package typings.csstype.mod
 
+import typings.csstype.mod.Property.All
+import typings.csstype.mod.Property.Animation
+import typings.csstype.mod.Property.Background
+import typings.csstype.mod.Property.BackgroundPosition
+import typings.csstype.mod.Property.Border
+import typings.csstype.mod.Property.BorderBlock
+import typings.csstype.mod.Property.BorderBlockEnd
+import typings.csstype.mod.Property.BorderBlockStart
+import typings.csstype.mod.Property.BorderBottom
+import typings.csstype.mod.Property.BorderColor
+import typings.csstype.mod.Property.BorderImage
+import typings.csstype.mod.Property.BorderInline
+import typings.csstype.mod.Property.BorderInlineEnd
+import typings.csstype.mod.Property.BorderInlineStart
+import typings.csstype.mod.Property.BorderLeft
+import typings.csstype.mod.Property.BorderRadius
+import typings.csstype.mod.Property.BorderRight
+import typings.csstype.mod.Property.BorderStyle
+import typings.csstype.mod.Property.BorderTop
+import typings.csstype.mod.Property.BorderWidth
+import typings.csstype.mod.Property.ColumnRule
+import typings.csstype.mod.Property.Columns
+import typings.csstype.mod.Property.Flex
+import typings.csstype.mod.Property.FlexFlow
+import typings.csstype.mod.Property.Font
+import typings.csstype.mod.Property.Gap
+import typings.csstype.mod.Property.Grid
+import typings.csstype.mod.Property.GridArea
+import typings.csstype.mod.Property.GridColumn
+import typings.csstype.mod.Property.GridRow
+import typings.csstype.mod.Property.GridTemplate
+import typings.csstype.mod.Property.LineClamp
+import typings.csstype.mod.Property.ListStyle
+import typings.csstype.mod.Property.Margin
+import typings.csstype.mod.Property.Mask
+import typings.csstype.mod.Property.MaskBorder
+import typings.csstype.mod.Property.Offset
+import typings.csstype.mod.Property.Outline
+import typings.csstype.mod.Property.Overflow
+import typings.csstype.mod.Property.OverscrollBehavior
+import typings.csstype.mod.Property.Padding
+import typings.csstype.mod.Property.PlaceItems
+import typings.csstype.mod.Property.PlaceSelf
+import typings.csstype.mod.Property.TextDecoration
+import typings.csstype.mod.Property.TextEmphasis
+import typings.csstype.mod.Property.Transition
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StandardShorthandPropertiesFallback[TLength] extends StObject {
+/* Inlined csstype.csstype.Fallback<csstype.csstype.StandardShorthandProperties<TLength, TTime>> */
+trait StandardShorthandPropertiesFallback[TLength, TTime] extends StObject {
   
-  /**
-    * The `**all**` CSS shorthand property sets all of an element's properties (other than `unicode-bidi` and `direction`) to their initial or inherited values, or to the values specified in another stylesheet origin.
-    *
-    * **Syntax**: `initial | inherit | unset | revert`
-    *
-    * **Initial value**: There is no practical initial value for it.
-    *
-    * | Chrome | Firefox | Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :-----: | :----: | :-: |
-    * | **37** | **27**  | **9.1** | **79** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/all
-    */
-  var all: js.UndefOr[Globals | js.Array[Globals]] = js.undefined
+  var all: js.UndefOr[All | js.Array[NonNullable[js.UndefOr[All]]]] = js.undefined
   
-  /**
-    * The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
-    *
-    * **Syntax**: `<single-animation>#`
-    *
-    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
-    * | :-----: | :-----: | :-----: | :----: | :----: |
-    * | **43**  | **16**  |  **9**  | **12** | **10** |
-    * | 3 _-x-_ | 5 _-x-_ | 4 _-x-_ |        |        |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/animation
-    */
-  var animation: js.UndefOr[AnimationProperty | js.Array[AnimationProperty]] = js.undefined
+  var animation: js.UndefOr[Animation[TTime] | js.Array[NonNullable[js.UndefOr[Animation[TTime]]]]] = js.undefined
   
-  /**
-    * The **`background`** shorthand CSS property sets all background style properties at once, such as color, image, origin and size, or repeat method.
-    *
-    * **Syntax**: `[ <bg-layer> , ]* <final-bg-layer>`
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/background
-    */
-  var background: js.UndefOr[BackgroundProperty[TLength] | js.Array[BackgroundProperty[TLength]]] = js.undefined
+  var background: js.UndefOr[Background[TLength] | js.Array[NonNullable[js.UndefOr[Background[TLength]]]]] = js.undefined
   
-  /**
-    * The **`border`** CSS property sets an element's border. It's a shorthand for `border-width`, `border-style`, and `border-color`.
-    *
-    * **Syntax**: `<line-width> || <line-style> || <color>`
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border
-    */
-  var border: js.UndefOr[BorderProperty[TLength] | js.Array[BorderProperty[TLength]]] = js.undefined
-  
-  /**
-    * The **`border-block`** CSS property is a shorthand property for setting the individual logical block border property values in a single place in the style sheet.
-    *
-    * **Syntax**: `<'border-top-width'> || <'border-top-style'> || <'color'>`
-    *
-    * | Chrome | Firefox | Safari |  Edge  | IE  |
-    * | :----: | :-----: | :----: | :----: | :-: |
-    * | **69** | **66**  |   No   | **79** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-block
-    */
-  var borderBlock: js.UndefOr[BorderBlockProperty[TLength] | js.Array[BorderBlockProperty[TLength]]] = js.undefined
-  
-  /**
-    * The **`border-block-end`** CSS property is a shorthand property for setting the individual logical block-end border property values in a single place in the style sheet.
-    *
-    * **Syntax**: `<'border-top-width'> || <'border-top-style'> || <'color'>`
-    *
-    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :------: | :----: | :-: |
-    * | **69** | **41**  | **12.1** | **79** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-block-end
-    */
-  var borderBlockEnd: js.UndefOr[BorderBlockEndProperty[TLength] | js.Array[BorderBlockEndProperty[TLength]]] = js.undefined
-  
-  /**
-    * The **`border-block-start`** CSS property is a shorthand property for setting the individual logical block-start border property values in a single place in the style sheet.
-    *
-    * **Syntax**: `<'border-top-width'> || <'border-top-style'> || <'color'>`
-    *
-    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :------: | :----: | :-: |
-    * | **69** | **41**  | **12.1** | **79** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-block-start
-    */
-  var borderBlockStart: js.UndefOr[BorderBlockStartProperty[TLength] | js.Array[BorderBlockStartProperty[TLength]]] = js.undefined
-  
-  /**
-    * The **`border-bottom`** CSS property is a shorthand that sets the values of `border-bottom-width`, `border-bottom-style` and `border-bottom-color`. These properties set an element's bottom border.
-    *
-    * **Syntax**: `<line-width> || <line-style> || <color>`
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-bottom
-    */
-  var borderBottom: js.UndefOr[BorderBottomProperty[TLength] | js.Array[BorderBottomProperty[TLength]]] = js.undefined
-  
-  /**
-    * The **`border-color`** shorthand CSS property sets the color of all sides of an element's border.
-    *
-    * **Syntax**: `<color>{1,4}`
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-color
-    */
-  var borderColor: js.UndefOr[BorderColorProperty | js.Array[BorderColorProperty]] = js.undefined
-  
-  /**
-    * The **`border-image`** CSS property draws an image in place of an element's `border-style`.
-    *
-    * **Syntax**: `<'border-image-source'> || <'border-image-slice'> [ / <'border-image-width'> | / <'border-image-width'>? / <'border-image-outset'> ]? || <'border-image-repeat'>`
-    *
-    * | Chrome  |  Firefox  | Safari  |  Edge  |   IE   |
-    * | :-----: | :-------: | :-----: | :----: | :----: |
-    * | **16**  |  **15**   |  **6**  | **12** | **11** |
-    * | 7 _-x-_ | 3.5 _-x-_ | 3 _-x-_ |        |        |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-image
-    */
-  var borderImage: js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]] = js.undefined
-  
-  /**
-    * The **`border-inline`** CSS property is a shorthand property for setting the individual logical inline border property values in a single place in the style sheet.
-    *
-    * **Syntax**: `<'border-top-width'> || <'border-top-style'> || <'color'>`
-    *
-    * | Chrome | Firefox | Safari |  Edge  | IE  |
-    * | :----: | :-----: | :----: | :----: | :-: |
-    * | **69** | **66**  |   No   | **79** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-inline
-    */
-  var borderInline: js.UndefOr[BorderInlineProperty[TLength] | js.Array[BorderInlineProperty[TLength]]] = js.undefined
-  
-  /**
-    * The **`border-inline-end`** CSS property is a shorthand property for setting the individual logical inline-end border property values in a single place in the style sheet.
-    *
-    * **Syntax**: `<'border-top-width'> || <'border-top-style'> || <'color'>`
-    *
-    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :------: | :----: | :-: |
-    * | **69** | **41**  | **12.1** | **79** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-end
-    */
-  var borderInlineEnd: js.UndefOr[BorderInlineEndProperty[TLength] | js.Array[BorderInlineEndProperty[TLength]]] = js.undefined
-  
-  /**
-    * The **`border-inline-start`** CSS property is a shorthand property for setting the individual logical inline-start border property values in a single place in the style sheet.
-    *
-    * **Syntax**: `<'border-top-width'> || <'border-top-style'> || <'color'>`
-    *
-    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :------: | :----: | :-: |
-    * | **69** | **41**  | **12.1** | **79** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-start
-    */
-  var borderInlineStart: js.UndefOr[
-    BorderInlineStartProperty[TLength] | js.Array[BorderInlineStartProperty[TLength]]
+  var backgroundPosition: js.UndefOr[
+    BackgroundPosition[TLength] | js.Array[NonNullable[js.UndefOr[BackgroundPosition[TLength]]]]
   ] = js.undefined
   
-  /**
-    * The **`border-left`** CSS property is a shorthand that sets the values of `border-left-width`, `border-left-style` and `border-left-color`. These properties set an element's left border.
-    *
-    * **Syntax**: `<line-width> || <line-style> || <color>`
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-left
-    */
-  var borderLeft: js.UndefOr[BorderLeftProperty[TLength] | js.Array[BorderLeftProperty[TLength]]] = js.undefined
+  var border: js.UndefOr[Border[TLength] | js.Array[NonNullable[js.UndefOr[Border[TLength]]]]] = js.undefined
   
-  /**
-    * The **`border-radius`** CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.
-    *
-    * **Syntax**: `<length-percentage>{1,4} [ / <length-percentage>{1,4} ]?`
-    *
-    * | Chrome  | Firefox | Safari  |  Edge  |  IE   |
-    * | :-----: | :-----: | :-----: | :----: | :---: |
-    * |  **4**  |  **4**  |  **5**  | **12** | **9** |
-    * | 1 _-x-_ |         | 3 _-x-_ |        |       |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-radius
-    */
-  var borderRadius: js.UndefOr[BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]]] = js.undefined
+  var borderBlock: js.UndefOr[BorderBlock[TLength] | js.Array[NonNullable[js.UndefOr[BorderBlock[TLength]]]]] = js.undefined
   
-  /**
-    * The **`border-right`** CSS property is a shorthand that sets the values of `border-right-width`, `border-right-style` and `border-right-color`. These properties set an element's right border.
-    *
-    * **Syntax**: `<line-width> || <line-style> || <color>`
-    *
-    * | Chrome | Firefox | Safari |  Edge  |   IE    |
-    * | :----: | :-----: | :----: | :----: | :-----: |
-    * | **1**  |  **1**  | **1**  | **12** | **5.5** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-right
-    */
-  var borderRight: js.UndefOr[BorderRightProperty[TLength] | js.Array[BorderRightProperty[TLength]]] = js.undefined
+  var borderBlockEnd: js.UndefOr[
+    BorderBlockEnd[TLength] | js.Array[NonNullable[js.UndefOr[BorderBlockEnd[TLength]]]]
+  ] = js.undefined
   
-  /**
-    * The **`border-style`** CSS property is a shorthand property that sets the line style for all four sides of an element's border.
-    *
-    * **Syntax**: `<line-style>{1,4}`
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-style
-    */
-  var borderStyle: js.UndefOr[BorderStyleProperty | js.Array[BorderStyleProperty]] = js.undefined
+  var borderBlockStart: js.UndefOr[
+    BorderBlockStart[TLength] | js.Array[NonNullable[js.UndefOr[BorderBlockStart[TLength]]]]
+  ] = js.undefined
   
-  /**
-    * The **`border-top`** CSS property is a shorthand that sets the values of `border-top-width`, `border-top-style` and `border-top-color`. These properties set an element's top border.
-    *
-    * **Syntax**: `<line-width> || <line-style> || <color>`
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-top
-    */
-  var borderTop: js.UndefOr[BorderTopProperty[TLength] | js.Array[BorderTopProperty[TLength]]] = js.undefined
+  var borderBottom: js.UndefOr[BorderBottom[TLength] | js.Array[NonNullable[js.UndefOr[BorderBottom[TLength]]]]] = js.undefined
   
-  /**
-    * The **`border-width`** shorthand CSS property sets the widths of all four sides of an element's border.
-    *
-    * **Syntax**: `<line-width>{1,4}`
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-width
-    */
-  var borderWidth: js.UndefOr[BorderWidthProperty[TLength] | js.Array[BorderWidthProperty[TLength]]] = js.undefined
+  var borderColor: js.UndefOr[BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]] = js.undefined
   
-  /**
-    * The **`column-rule`** CSS property sets the width, style, and color of the rule (line) drawn between columns in a multi-column layout.
-    *
-    * **Syntax**: `<'column-rule-width'> || <'column-rule-style'> || <'column-rule-color'>`
-    *
-    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
-    * | :-----: | :-----: | :-----: | :----: | :----: |
-    * | **50**  | **52**  |  **9**  | **12** | **10** |
-    * | 1 _-x-_ |         | 3 _-x-_ |        |        |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/column-rule
-    */
-  var columnRule: js.UndefOr[ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]]] = js.undefined
+  var borderImage: js.UndefOr[BorderImage | js.Array[NonNullable[js.UndefOr[BorderImage]]]] = js.undefined
   
-  /**
-    * The **`columns`** CSS property sets the column width and column count of an element.
-    *
-    * **Syntax**: `<'column-width'> || <'column-count'>`
-    *
-    * | Chrome | Firefox | Safari  |  Edge  |   IE   |
-    * | :----: | :-----: | :-----: | :----: | :----: |
-    * | **50** | **52**  |  **9**  | **12** | **10** |
-    * |        |         | 3 _-x-_ |        |        |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/columns
-    */
-  var columns: js.UndefOr[ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]]] = js.undefined
+  var borderInline: js.UndefOr[BorderInline[TLength] | js.Array[NonNullable[js.UndefOr[BorderInline[TLength]]]]] = js.undefined
   
-  /**
-    * The **`flex`** CSS property sets how a flex item will grow or shrink to fit the space available in its flex container. It is a shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`.
-    *
-    * **Syntax**: `none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]`
-    *
-    * |  Chrome  | Firefox |  Safari   |  Edge  |    IE    |
-    * | :------: | :-----: | :-------: | :----: | :------: |
-    * |  **29**  | **20**  |   **9**   | **12** |  **11**  |
-    * | 21 _-x-_ |         | 6.1 _-x-_ |        | 10 _-x-_ |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/flex
-    */
-  var flex: js.UndefOr[FlexProperty[TLength] | js.Array[FlexProperty[TLength]]] = js.undefined
+  var borderInlineEnd: js.UndefOr[
+    BorderInlineEnd[TLength] | js.Array[NonNullable[js.UndefOr[BorderInlineEnd[TLength]]]]
+  ] = js.undefined
   
-  /**
-    * The **`flex-flow`** CSS property is a shorthand property for `flex-direction` and `flex-wrap` properties.
-    *
-    * **Syntax**: `<'flex-direction'> || <'flex-wrap'>`
-    *
-    * |  Chrome  | Firefox |  Safari   |  Edge  |   IE   |
-    * | :------: | :-----: | :-------: | :----: | :----: |
-    * |  **29**  | **28**  |   **9**   | **12** | **11** |
-    * | 21 _-x-_ |         | 6.1 _-x-_ |        |        |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/flex-flow
-    */
-  var flexFlow: js.UndefOr[FlexFlowProperty | js.Array[FlexFlowProperty]] = js.undefined
+  var borderInlineStart: js.UndefOr[
+    BorderInlineStart[TLength] | js.Array[NonNullable[js.UndefOr[BorderInlineStart[TLength]]]]
+  ] = js.undefined
   
-  /**
-    * The **`font`** CSS property is a shorthand for `font-style`, `font-variant`, `font-weight`, `font-size`, `line-height`, and `font-family`. Alternatively, it sets an element's font to a system font.
-    *
-    * **Syntax**: `[ [ <'font-style'> || <font-variant-css21> || <'font-weight'> || <'font-stretch'> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | caption | icon | menu | message-box | small-caption | status-bar`
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **3** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/font
-    */
-  var font: js.UndefOr[FontProperty | js.Array[FontProperty]] = js.undefined
+  var borderLeft: js.UndefOr[BorderLeft[TLength] | js.Array[NonNullable[js.UndefOr[BorderLeft[TLength]]]]] = js.undefined
   
-  /**
-    * The **`gap`** CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for `row-gap` and `column-gap`.
-    *
-    * **Syntax**: `<'row-gap'> <'column-gap'>?`
-    *
-    * ---
-    *
-    * _Supported in Flex Layout_
-    *
-    * | Chrome | Firefox | Safari |  Edge  | IE  |
-    * | :----: | :-----: | :----: | :----: | :-: |
-    * | **84** | **63**  |   No   | **84** | No  |
-    *
-    * ---
-    *
-    * _Supported in Grid Layout_
-    *
-    * |     Chrome      |     Firefox     |      Safari       |  Edge  | IE  |
-    * | :-------------: | :-------------: | :---------------: | :----: | :-: |
-    * |     **66**      |     **61**      |      **12**       | **16** | No  |
-    * | 57 _(grid-gap)_ | 52 _(grid-gap)_ | 10.1 _(grid-gap)_ |        |     |
-    *
-    * ---
-    *
-    * _Supported in Multi-column Layout_
-    *
-    * | Chrome | Firefox | Safari |  Edge  | IE  |
-    * | :----: | :-----: | :----: | :----: | :-: |
-    * | **66** | **61**  |   No   | **16** | No  |
-    *
-    * ---
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/gap
-    */
-  var gap: js.UndefOr[GapProperty[TLength] | js.Array[GapProperty[TLength]]] = js.undefined
+  var borderRadius: js.UndefOr[BorderRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderRadius[TLength]]]]] = js.undefined
   
-  /**
-    * The **`grid`** CSS property is a shorthand property that sets all of the explicit grid properties (`grid-template-rows`, `grid-template-columns`, and `grid-template-areas`), and all the implicit grid properties (`grid-auto-rows`, `grid-auto-columns`, and `grid-auto-flow`), in a single declaration.
-    *
-    * **Syntax**: `<'grid-template'> | <'grid-template-rows'> / [ auto-flow && dense? ] <'grid-auto-columns'>? | [ auto-flow && dense? ] <'grid-auto-rows'>? / <'grid-template-columns'>`
-    *
-    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :------: | :----: | :-: |
-    * | **57** | **52**  | **10.1** | **16** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/grid
-    */
-  var grid: js.UndefOr[GridProperty | js.Array[GridProperty]] = js.undefined
+  var borderRight: js.UndefOr[BorderRight[TLength] | js.Array[NonNullable[js.UndefOr[BorderRight[TLength]]]]] = js.undefined
   
-  /**
-    * The **`grid-area`** CSS property is a shorthand property for `grid-row-start`, `grid-column-start`, `grid-row-end` and `grid-column-end`, specifying a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the edges of its grid area.
-    *
-    * **Syntax**: `<grid-line> [ / <grid-line> ]{0,3}`
-    *
-    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :------: | :----: | :-: |
-    * | **57** | **52**  | **10.1** | **16** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/grid-area
-    */
-  var gridArea: js.UndefOr[GridAreaProperty | js.Array[GridAreaProperty]] = js.undefined
+  var borderStyle: js.UndefOr[BorderStyle | js.Array[NonNullable[js.UndefOr[BorderStyle]]]] = js.undefined
   
-  /**
-    * The **`grid-column`** CSS property is a shorthand property for `grid-column-start` and `grid-column-end` specifying a grid item's size and location within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.
-    *
-    * **Syntax**: `<grid-line> [ / <grid-line> ]?`
-    *
-    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :------: | :----: | :-: |
-    * | **57** | **52**  | **10.1** | **16** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/grid-column
-    */
-  var gridColumn: js.UndefOr[GridColumnProperty | js.Array[GridColumnProperty]] = js.undefined
+  var borderTop: js.UndefOr[BorderTop[TLength] | js.Array[NonNullable[js.UndefOr[BorderTop[TLength]]]]] = js.undefined
   
-  /**
-    * The **`grid-row`** CSS property is a shorthand property for `grid-row-start` and `grid-row-end` specifying a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.
-    *
-    * **Syntax**: `<grid-line> [ / <grid-line> ]?`
-    *
-    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :------: | :----: | :-: |
-    * | **57** | **52**  | **10.1** | **16** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/grid-row
-    */
-  var gridRow: js.UndefOr[GridRowProperty | js.Array[GridRowProperty]] = js.undefined
+  var borderWidth: js.UndefOr[BorderWidth[TLength] | js.Array[NonNullable[js.UndefOr[BorderWidth[TLength]]]]] = js.undefined
   
-  /**
-    * The **`grid-template`** CSS property is a shorthand property for defining grid columns, rows, and areas.
-    *
-    * **Syntax**: `none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?`
-    *
-    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :------: | :----: | :-: |
-    * | **57** | **52**  | **10.1** | **16** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/grid-template
-    */
-  var gridTemplate: js.UndefOr[GridTemplateProperty | js.Array[GridTemplateProperty]] = js.undefined
+  var columnRule: js.UndefOr[ColumnRule[TLength] | js.Array[NonNullable[js.UndefOr[ColumnRule[TLength]]]]] = js.undefined
   
-  /**
-    * **Syntax**: `none | <integer>`
-    *
-    * **Initial value**: `none`
-    */
-  var lineClamp: js.UndefOr[LineClampProperty | js.Array[LineClampProperty]] = js.undefined
+  var columns: js.UndefOr[Columns[TLength] | js.Array[NonNullable[js.UndefOr[Columns[TLength]]]]] = js.undefined
   
-  /**
-    * The **`list-style`** CSS property is a shorthand to set list style properties `list-style-type`, `list-style-image`, and `list-style-position`.
-    *
-    * **Syntax**: `<'list-style-type'> || <'list-style-position'> || <'list-style-image'>`
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/list-style
-    */
-  var listStyle: js.UndefOr[ListStyleProperty | js.Array[ListStyleProperty]] = js.undefined
+  var flex: js.UndefOr[Flex[TLength] | js.Array[NonNullable[js.UndefOr[Flex[TLength]]]]] = js.undefined
   
-  /**
-    * The **`margin`** CSS property sets the margin area on all four sides of an element. It is a shorthand for `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`.
-    *
-    * **Syntax**: `[ <length> | <percentage> | auto ]{1,4}`
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **3** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/margin
-    */
-  var margin: js.UndefOr[MarginProperty[TLength] | js.Array[MarginProperty[TLength]]] = js.undefined
+  var flexFlow: js.UndefOr[FlexFlow | js.Array[NonNullable[js.UndefOr[FlexFlow]]]] = js.undefined
   
-  /**
-    * The **`mask`** CSS property hides an element (partially or fully) by masking or clipping the image at specific points.
-    *
-    * **Syntax**: `<mask-layer>#`
-    *
-    * | Chrome | Firefox | Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :-----: | :----: | :-: |
-    * | **1**  |  **2**  | **3.2** | **12** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/mask
-    */
-  var mask: js.UndefOr[MaskProperty[TLength] | js.Array[MaskProperty[TLength]]] = js.undefined
+  var font: js.UndefOr[Font | js.Array[NonNullable[js.UndefOr[Font]]]] = js.undefined
   
-  /**
-    * The **`mask-border`** CSS property lets you create a mask along the edge of an element's border.
-    *
-    * **Syntax**: `<'mask-border-source'> || <'mask-border-slice'> [ / <'mask-border-width'>? [ / <'mask-border-outset'> ]? ]? || <'mask-border-repeat'> || <'mask-border-mode'>`
-    */
-  var maskBorder: js.UndefOr[MaskBorderProperty | js.Array[MaskBorderProperty]] = js.undefined
+  var gap: js.UndefOr[Gap[TLength] | js.Array[NonNullable[js.UndefOr[Gap[TLength]]]]] = js.undefined
   
-  /**
-    * The **`offset`** CSS property is a shorthand property for animating an element along a defined path.
-    *
-    * **Syntax**: `[ <'offset-position'>? [ <'offset-path'> [ <'offset-distance'> || <'offset-rotate'> ]? ]? ]! [ / <'offset-anchor'> ]?`
-    *
-    * |    Chrome     | Firefox | Safari |  Edge  | IE  |
-    * | :-----------: | :-----: | :----: | :----: | :-: |
-    * |    **55**     | **72**  |   No   | **79** | No  |
-    * | 46 _(motion)_ |         |        |        |     |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/offset
-    */
-  var motion: js.UndefOr[OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]]] = js.undefined
+  var grid: js.UndefOr[Grid | js.Array[NonNullable[js.UndefOr[Grid]]]] = js.undefined
   
-  /**
-    * The **`offset`** CSS property is a shorthand property for animating an element along a defined path.
-    *
-    * **Syntax**: `[ <'offset-position'>? [ <'offset-path'> [ <'offset-distance'> || <'offset-rotate'> ]? ]? ]! [ / <'offset-anchor'> ]?`
-    *
-    * |    Chrome     | Firefox | Safari |  Edge  | IE  |
-    * | :-----------: | :-----: | :----: | :----: | :-: |
-    * |    **55**     | **72**  |   No   | **79** | No  |
-    * | 46 _(motion)_ |         |        |        |     |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/offset
-    */
-  var offset: js.UndefOr[OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]]] = js.undefined
+  var gridArea: js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]] = js.undefined
   
-  /**
-    * The **`outline`** CSS property is a shorthand to set various outline properties in a single declaration: `outline-style`, `outline-width`, and `outline-color`.
-    *
-    * **Syntax**: `[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]`
-    *
-    * | Chrome | Firefox | Safari  |  Edge  |  IE   |
-    * | :----: | :-----: | :-----: | :----: | :---: |
-    * | **1**  | **1.5** | **1.2** | **12** | **8** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/outline
-    */
-  var outline: js.UndefOr[OutlineProperty[TLength] | js.Array[OutlineProperty[TLength]]] = js.undefined
+  var gridColumn: js.UndefOr[GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]] = js.undefined
   
-  /**
-    * The **`overflow`** CSS property sets what to do when an element's content is too big to fit in its block formatting context. It is a shorthand for `overflow-x` and `overflow-y`.
-    *
-    * **Syntax**: `[ visible | hidden | clip | scroll | auto ]{1,2}`
-    *
-    * **Initial value**: `visible`
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/overflow
-    */
-  var overflow: js.UndefOr[OverflowProperty | js.Array[OverflowProperty]] = js.undefined
+  var gridRow: js.UndefOr[GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]] = js.undefined
   
-  /**
-    * The **`padding`** CSS property sets the padding area on all four sides of an element. It is a shorthand for `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`.
-    *
-    * **Syntax**: `[ <length> | <percentage> ]{1,4}`
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/padding
-    */
-  var padding: js.UndefOr[PaddingProperty[TLength] | js.Array[PaddingProperty[TLength]]] = js.undefined
+  var gridTemplate: js.UndefOr[GridTemplate | js.Array[NonNullable[js.UndefOr[GridTemplate]]]] = js.undefined
   
-  /**
-    * The CSS **`place-items`** shorthand property sets the `align-items` and `justify-items` properties, respectively. If the second value is not set, the first value is also used for it.
-    *
-    * **Syntax**: `<'align-items'> <'justify-items'>?`
-    *
-    * ---
-    *
-    * _Supported in Flex Layout_
-    *
-    * | Chrome | Firefox | Safari |  Edge  | IE  |
-    * | :----: | :-----: | :----: | :----: | :-: |
-    * | **59** | **45**  | **11** | **79** | No  |
-    *
-    * ---
-    *
-    * _Supported in Grid Layout_
-    *
-    * | Chrome | Firefox | Safari |  Edge  | IE  |
-    * | :----: | :-----: | :----: | :----: | :-: |
-    * | **59** | **45**  | **11** | **79** | No  |
-    *
-    * ---
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/place-items
-    */
-  var placeItems: js.UndefOr[PlaceItemsProperty | js.Array[PlaceItemsProperty]] = js.undefined
+  var lineClamp: js.UndefOr[LineClamp | js.Array[NonNullable[js.UndefOr[LineClamp]]]] = js.undefined
   
-  /**
-    * The **`place-self`** CSS property is a shorthand property sets both the `align-self` and `justify-self` properties. The first value is the `align-self` property value, the second the `justify-self` one. If the second value is not present, the first value is also used for it.
-    *
-    * **Syntax**: `<'align-self'> <'justify-self'>?`
-    *
-    * ---
-    *
-    * _Supported in Flex Layout_
-    *
-    * | Chrome | Firefox | Safari |  Edge  | IE  |
-    * | :----: | :-----: | :----: | :----: | :-: |
-    * | **59** | **45**  | **11** | **79** | No  |
-    *
-    * ---
-    *
-    * _Supported in Grid Layout_
-    *
-    * | Chrome | Firefox | Safari |  Edge  | IE  |
-    * | :----: | :-----: | :----: | :----: | :-: |
-    * | **59** | **45**  | **11** | **79** | No  |
-    *
-    * ---
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/place-self
-    */
-  var placeSelf: js.UndefOr[PlaceSelfProperty | js.Array[PlaceSelfProperty]] = js.undefined
+  var listStyle: js.UndefOr[ListStyle | js.Array[NonNullable[js.UndefOr[ListStyle]]]] = js.undefined
   
-  /**
-    * The **`text-decoration`** CSS property sets the appearance of decorative lines on text. It is a shorthand for `text-decoration-line`, `text-decoration-color`, and `text-decoration-style`.
-    *
-    * **Syntax**: `<'text-decoration-line'> || <'text-decoration-style'> || <'text-decoration-color'> || <'text-decoration-thickness'>`
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **3** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration
-    */
-  var textDecoration: js.UndefOr[TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]]] = js.undefined
+  var margin: js.UndefOr[Margin[TLength] | js.Array[NonNullable[js.UndefOr[Margin[TLength]]]]] = js.undefined
   
-  /**
-    * The **`text-emphasis`** CSS property applies emphasis marks to text (except spaces and control characters). It is a shorthand for `text-emphasis-style` and `text-emphasis-color`.
-    *
-    * **Syntax**: `<'text-emphasis-style'> || <'text-emphasis-color'>`
-    *
-    * |    Chrome    | Firefox | Safari  |     Edge     | IE  |
-    * | :----------: | :-----: | :-----: | :----------: | :-: |
-    * | **25** _-x-_ | **46**  | **6.1** | **79** _-x-_ | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis
-    */
-  var textEmphasis: js.UndefOr[TextEmphasisProperty | js.Array[TextEmphasisProperty]] = js.undefined
+  var mask: js.UndefOr[Mask[TLength] | js.Array[NonNullable[js.UndefOr[Mask[TLength]]]]] = js.undefined
   
-  /**
-    * The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`.
-    *
-    * **Syntax**: `<single-transition>#`
-    *
-    * | Chrome  | Firefox |  Safari   |  Edge  |   IE   |
-    * | :-----: | :-----: | :-------: | :----: | :----: |
-    * | **26**  | **16**  |   **9**   | **12** | **10** |
-    * | 1 _-x-_ | 4 _-x-_ | 3.1 _-x-_ |        |        |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/transition
-    */
-  var transition: js.UndefOr[TransitionProperty | js.Array[TransitionProperty]] = js.undefined
+  var maskBorder: js.UndefOr[MaskBorder | js.Array[NonNullable[js.UndefOr[MaskBorder]]]] = js.undefined
+  
+  var motion: js.UndefOr[Offset[TLength] | js.Array[NonNullable[js.UndefOr[Offset[TLength]]]]] = js.undefined
+  
+  var offset: js.UndefOr[Offset[TLength] | js.Array[NonNullable[js.UndefOr[Offset[TLength]]]]] = js.undefined
+  
+  var outline: js.UndefOr[Outline[TLength] | js.Array[NonNullable[js.UndefOr[Outline[TLength]]]]] = js.undefined
+  
+  var overflow: js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]] = js.undefined
+  
+  var overscrollBehavior: js.UndefOr[OverscrollBehavior | js.Array[NonNullable[js.UndefOr[OverscrollBehavior]]]] = js.undefined
+  
+  var padding: js.UndefOr[Padding[TLength] | js.Array[NonNullable[js.UndefOr[Padding[TLength]]]]] = js.undefined
+  
+  var placeItems: js.UndefOr[PlaceItems | js.Array[NonNullable[js.UndefOr[PlaceItems]]]] = js.undefined
+  
+  var placeSelf: js.UndefOr[PlaceSelf | js.Array[NonNullable[js.UndefOr[PlaceSelf]]]] = js.undefined
+  
+  var textDecoration: js.UndefOr[
+    TextDecoration[TLength] | js.Array[NonNullable[js.UndefOr[TextDecoration[TLength]]]]
+  ] = js.undefined
+  
+  var textEmphasis: js.UndefOr[TextEmphasis | js.Array[NonNullable[js.UndefOr[TextEmphasis]]]] = js.undefined
+  
+  var transition: js.UndefOr[Transition[TTime] | js.Array[NonNullable[js.UndefOr[Transition[TTime]]]]] = js.undefined
 }
 object StandardShorthandPropertiesFallback {
   
-  inline def apply[TLength](): StandardShorthandPropertiesFallback[TLength] = {
+  inline def apply[TLength, TTime](): StandardShorthandPropertiesFallback[TLength, TTime] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[StandardShorthandPropertiesFallback[TLength]]
+    __obj.asInstanceOf[StandardShorthandPropertiesFallback[TLength, TTime]]
   }
   
-  extension [Self <: StandardShorthandPropertiesFallback[?], TLength](x: Self & StandardShorthandPropertiesFallback[TLength]) {
+  extension [Self <: StandardShorthandPropertiesFallback[?, ?], TLength, TTime](x: Self & (StandardShorthandPropertiesFallback[TLength, TTime])) {
     
-    inline def setAll(value: Globals | js.Array[Globals]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: All | js.Array[NonNullable[js.UndefOr[All]]]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
     inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    inline def setAllVarargs(value: Globals*): Self = StObject.set(x, "all", js.Array(value :_*))
+    inline def setAllVarargs(value: NonNullable[js.UndefOr[All]]*): Self = StObject.set(x, "all", js.Array(value*))
     
-    inline def setAnimation(value: AnimationProperty | js.Array[AnimationProperty]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Animation[TTime] | js.Array[NonNullable[js.UndefOr[Animation[TTime]]]]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setAnimationVarargs(value: AnimationProperty*): Self = StObject.set(x, "animation", js.Array(value :_*))
+    inline def setAnimationVarargs(value: NonNullable[js.UndefOr[Animation[TTime]]]*): Self = StObject.set(x, "animation", js.Array(value*))
     
-    inline def setBackground(value: BackgroundProperty[TLength] | js.Array[BackgroundProperty[TLength]]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Background[TLength] | js.Array[NonNullable[js.UndefOr[Background[TLength]]]]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundPosition(
+      value: BackgroundPosition[TLength] | js.Array[NonNullable[js.UndefOr[BackgroundPosition[TLength]]]]
+    ): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
+    
+    inline def setBackgroundPositionVarargs(value: NonNullable[js.UndefOr[BackgroundPosition[TLength]]]*): Self = StObject.set(x, "backgroundPosition", js.Array(value*))
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setBackgroundVarargs(value: BackgroundProperty[TLength]*): Self = StObject.set(x, "background", js.Array(value :_*))
+    inline def setBackgroundVarargs(value: NonNullable[js.UndefOr[Background[TLength]]]*): Self = StObject.set(x, "background", js.Array(value*))
     
-    inline def setBorder(value: BorderProperty[TLength] | js.Array[BorderProperty[TLength]]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Border[TLength] | js.Array[NonNullable[js.UndefOr[Border[TLength]]]]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    inline def setBorderBlock(value: BorderBlockProperty[TLength] | js.Array[BorderBlockProperty[TLength]]): Self = StObject.set(x, "borderBlock", value.asInstanceOf[js.Any])
+    inline def setBorderBlock(value: BorderBlock[TLength] | js.Array[NonNullable[js.UndefOr[BorderBlock[TLength]]]]): Self = StObject.set(x, "borderBlock", value.asInstanceOf[js.Any])
     
-    inline def setBorderBlockEnd(value: BorderBlockEndProperty[TLength] | js.Array[BorderBlockEndProperty[TLength]]): Self = StObject.set(x, "borderBlockEnd", value.asInstanceOf[js.Any])
+    inline def setBorderBlockEnd(value: BorderBlockEnd[TLength] | js.Array[NonNullable[js.UndefOr[BorderBlockEnd[TLength]]]]): Self = StObject.set(x, "borderBlockEnd", value.asInstanceOf[js.Any])
     
     inline def setBorderBlockEndUndefined: Self = StObject.set(x, "borderBlockEnd", js.undefined)
     
-    inline def setBorderBlockEndVarargs(value: BorderBlockEndProperty[TLength]*): Self = StObject.set(x, "borderBlockEnd", js.Array(value :_*))
+    inline def setBorderBlockEndVarargs(value: NonNullable[js.UndefOr[BorderBlockEnd[TLength]]]*): Self = StObject.set(x, "borderBlockEnd", js.Array(value*))
     
-    inline def setBorderBlockStart(value: BorderBlockStartProperty[TLength] | js.Array[BorderBlockStartProperty[TLength]]): Self = StObject.set(x, "borderBlockStart", value.asInstanceOf[js.Any])
+    inline def setBorderBlockStart(value: BorderBlockStart[TLength] | js.Array[NonNullable[js.UndefOr[BorderBlockStart[TLength]]]]): Self = StObject.set(x, "borderBlockStart", value.asInstanceOf[js.Any])
     
     inline def setBorderBlockStartUndefined: Self = StObject.set(x, "borderBlockStart", js.undefined)
     
-    inline def setBorderBlockStartVarargs(value: BorderBlockStartProperty[TLength]*): Self = StObject.set(x, "borderBlockStart", js.Array(value :_*))
+    inline def setBorderBlockStartVarargs(value: NonNullable[js.UndefOr[BorderBlockStart[TLength]]]*): Self = StObject.set(x, "borderBlockStart", js.Array(value*))
     
     inline def setBorderBlockUndefined: Self = StObject.set(x, "borderBlock", js.undefined)
     
-    inline def setBorderBlockVarargs(value: BorderBlockProperty[TLength]*): Self = StObject.set(x, "borderBlock", js.Array(value :_*))
+    inline def setBorderBlockVarargs(value: NonNullable[js.UndefOr[BorderBlock[TLength]]]*): Self = StObject.set(x, "borderBlock", js.Array(value*))
     
-    inline def setBorderBottom(value: BorderBottomProperty[TLength] | js.Array[BorderBottomProperty[TLength]]): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+    inline def setBorderBottom(value: BorderBottom[TLength] | js.Array[NonNullable[js.UndefOr[BorderBottom[TLength]]]]): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
     inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
     
-    inline def setBorderBottomVarargs(value: BorderBottomProperty[TLength]*): Self = StObject.set(x, "borderBottom", js.Array(value :_*))
+    inline def setBorderBottomVarargs(value: NonNullable[js.UndefOr[BorderBottom[TLength]]]*): Self = StObject.set(x, "borderBottom", js.Array(value*))
     
-    inline def setBorderColor(value: BorderColorProperty | js.Array[BorderColorProperty]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: BorderColor | js.Array[NonNullable[js.UndefOr[BorderColor]]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    inline def setBorderColorVarargs(value: BorderColorProperty*): Self = StObject.set(x, "borderColor", js.Array(value :_*))
+    inline def setBorderColorVarargs(value: NonNullable[js.UndefOr[BorderColor]]*): Self = StObject.set(x, "borderColor", js.Array(value*))
     
-    inline def setBorderImage(value: BorderImageProperty | js.Array[BorderImageProperty]): Self = StObject.set(x, "borderImage", value.asInstanceOf[js.Any])
+    inline def setBorderImage(value: BorderImage | js.Array[NonNullable[js.UndefOr[BorderImage]]]): Self = StObject.set(x, "borderImage", value.asInstanceOf[js.Any])
     
     inline def setBorderImageUndefined: Self = StObject.set(x, "borderImage", js.undefined)
     
-    inline def setBorderImageVarargs(value: BorderImageProperty*): Self = StObject.set(x, "borderImage", js.Array(value :_*))
+    inline def setBorderImageVarargs(value: NonNullable[js.UndefOr[BorderImage]]*): Self = StObject.set(x, "borderImage", js.Array(value*))
     
-    inline def setBorderInline(value: BorderInlineProperty[TLength] | js.Array[BorderInlineProperty[TLength]]): Self = StObject.set(x, "borderInline", value.asInstanceOf[js.Any])
+    inline def setBorderInline(value: BorderInline[TLength] | js.Array[NonNullable[js.UndefOr[BorderInline[TLength]]]]): Self = StObject.set(x, "borderInline", value.asInstanceOf[js.Any])
     
-    inline def setBorderInlineEnd(value: BorderInlineEndProperty[TLength] | js.Array[BorderInlineEndProperty[TLength]]): Self = StObject.set(x, "borderInlineEnd", value.asInstanceOf[js.Any])
+    inline def setBorderInlineEnd(value: BorderInlineEnd[TLength] | js.Array[NonNullable[js.UndefOr[BorderInlineEnd[TLength]]]]): Self = StObject.set(x, "borderInlineEnd", value.asInstanceOf[js.Any])
     
     inline def setBorderInlineEndUndefined: Self = StObject.set(x, "borderInlineEnd", js.undefined)
     
-    inline def setBorderInlineEndVarargs(value: BorderInlineEndProperty[TLength]*): Self = StObject.set(x, "borderInlineEnd", js.Array(value :_*))
+    inline def setBorderInlineEndVarargs(value: NonNullable[js.UndefOr[BorderInlineEnd[TLength]]]*): Self = StObject.set(x, "borderInlineEnd", js.Array(value*))
     
-    inline def setBorderInlineStart(value: BorderInlineStartProperty[TLength] | js.Array[BorderInlineStartProperty[TLength]]): Self = StObject.set(x, "borderInlineStart", value.asInstanceOf[js.Any])
+    inline def setBorderInlineStart(value: BorderInlineStart[TLength] | js.Array[NonNullable[js.UndefOr[BorderInlineStart[TLength]]]]): Self = StObject.set(x, "borderInlineStart", value.asInstanceOf[js.Any])
     
     inline def setBorderInlineStartUndefined: Self = StObject.set(x, "borderInlineStart", js.undefined)
     
-    inline def setBorderInlineStartVarargs(value: BorderInlineStartProperty[TLength]*): Self = StObject.set(x, "borderInlineStart", js.Array(value :_*))
+    inline def setBorderInlineStartVarargs(value: NonNullable[js.UndefOr[BorderInlineStart[TLength]]]*): Self = StObject.set(x, "borderInlineStart", js.Array(value*))
     
     inline def setBorderInlineUndefined: Self = StObject.set(x, "borderInline", js.undefined)
     
-    inline def setBorderInlineVarargs(value: BorderInlineProperty[TLength]*): Self = StObject.set(x, "borderInline", js.Array(value :_*))
+    inline def setBorderInlineVarargs(value: NonNullable[js.UndefOr[BorderInline[TLength]]]*): Self = StObject.set(x, "borderInline", js.Array(value*))
     
-    inline def setBorderLeft(value: BorderLeftProperty[TLength] | js.Array[BorderLeftProperty[TLength]]): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+    inline def setBorderLeft(value: BorderLeft[TLength] | js.Array[NonNullable[js.UndefOr[BorderLeft[TLength]]]]): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
     
     inline def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
     
-    inline def setBorderLeftVarargs(value: BorderLeftProperty[TLength]*): Self = StObject.set(x, "borderLeft", js.Array(value :_*))
+    inline def setBorderLeftVarargs(value: NonNullable[js.UndefOr[BorderLeft[TLength]]]*): Self = StObject.set(x, "borderLeft", js.Array(value*))
     
-    inline def setBorderRadius(value: BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]]): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: BorderRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderRadius[TLength]]]]): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
-    inline def setBorderRadiusVarargs(value: BorderRadiusProperty[TLength]*): Self = StObject.set(x, "borderRadius", js.Array(value :_*))
+    inline def setBorderRadiusVarargs(value: NonNullable[js.UndefOr[BorderRadius[TLength]]]*): Self = StObject.set(x, "borderRadius", js.Array(value*))
     
-    inline def setBorderRight(value: BorderRightProperty[TLength] | js.Array[BorderRightProperty[TLength]]): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
+    inline def setBorderRight(value: BorderRight[TLength] | js.Array[NonNullable[js.UndefOr[BorderRight[TLength]]]]): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
     
     inline def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
     
-    inline def setBorderRightVarargs(value: BorderRightProperty[TLength]*): Self = StObject.set(x, "borderRight", js.Array(value :_*))
+    inline def setBorderRightVarargs(value: NonNullable[js.UndefOr[BorderRight[TLength]]]*): Self = StObject.set(x, "borderRight", js.Array(value*))
     
-    inline def setBorderStyle(value: BorderStyleProperty | js.Array[BorderStyleProperty]): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+    inline def setBorderStyle(value: BorderStyle | js.Array[NonNullable[js.UndefOr[BorderStyle]]]): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
     
-    inline def setBorderStyleVarargs(value: BorderStyleProperty*): Self = StObject.set(x, "borderStyle", js.Array(value :_*))
+    inline def setBorderStyleVarargs(value: NonNullable[js.UndefOr[BorderStyle]]*): Self = StObject.set(x, "borderStyle", js.Array(value*))
     
-    inline def setBorderTop(value: BorderTopProperty[TLength] | js.Array[BorderTopProperty[TLength]]): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
+    inline def setBorderTop(value: BorderTop[TLength] | js.Array[NonNullable[js.UndefOr[BorderTop[TLength]]]]): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
     
     inline def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
     
-    inline def setBorderTopVarargs(value: BorderTopProperty[TLength]*): Self = StObject.set(x, "borderTop", js.Array(value :_*))
+    inline def setBorderTopVarargs(value: NonNullable[js.UndefOr[BorderTop[TLength]]]*): Self = StObject.set(x, "borderTop", js.Array(value*))
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setBorderVarargs(value: BorderProperty[TLength]*): Self = StObject.set(x, "border", js.Array(value :_*))
+    inline def setBorderVarargs(value: NonNullable[js.UndefOr[Border[TLength]]]*): Self = StObject.set(x, "border", js.Array(value*))
     
-    inline def setBorderWidth(value: BorderWidthProperty[TLength] | js.Array[BorderWidthProperty[TLength]]): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: BorderWidth[TLength] | js.Array[NonNullable[js.UndefOr[BorderWidth[TLength]]]]): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
-    inline def setBorderWidthVarargs(value: BorderWidthProperty[TLength]*): Self = StObject.set(x, "borderWidth", js.Array(value :_*))
+    inline def setBorderWidthVarargs(value: NonNullable[js.UndefOr[BorderWidth[TLength]]]*): Self = StObject.set(x, "borderWidth", js.Array(value*))
     
-    inline def setColumnRule(value: ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]]): Self = StObject.set(x, "columnRule", value.asInstanceOf[js.Any])
+    inline def setColumnRule(value: ColumnRule[TLength] | js.Array[NonNullable[js.UndefOr[ColumnRule[TLength]]]]): Self = StObject.set(x, "columnRule", value.asInstanceOf[js.Any])
     
     inline def setColumnRuleUndefined: Self = StObject.set(x, "columnRule", js.undefined)
     
-    inline def setColumnRuleVarargs(value: ColumnRuleProperty[TLength]*): Self = StObject.set(x, "columnRule", js.Array(value :_*))
+    inline def setColumnRuleVarargs(value: NonNullable[js.UndefOr[ColumnRule[TLength]]]*): Self = StObject.set(x, "columnRule", js.Array(value*))
     
-    inline def setColumns(value: ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Columns[TLength] | js.Array[NonNullable[js.UndefOr[Columns[TLength]]]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: ColumnsProperty[TLength]*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: NonNullable[js.UndefOr[Columns[TLength]]]*): Self = StObject.set(x, "columns", js.Array(value*))
     
-    inline def setFlex(value: FlexProperty[TLength] | js.Array[FlexProperty[TLength]]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    inline def setFlex(value: Flex[TLength] | js.Array[NonNullable[js.UndefOr[Flex[TLength]]]]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
-    inline def setFlexFlow(value: FlexFlowProperty | js.Array[FlexFlowProperty]): Self = StObject.set(x, "flexFlow", value.asInstanceOf[js.Any])
+    inline def setFlexFlow(value: FlexFlow | js.Array[NonNullable[js.UndefOr[FlexFlow]]]): Self = StObject.set(x, "flexFlow", value.asInstanceOf[js.Any])
     
     inline def setFlexFlowUndefined: Self = StObject.set(x, "flexFlow", js.undefined)
     
-    inline def setFlexFlowVarargs(value: FlexFlowProperty*): Self = StObject.set(x, "flexFlow", js.Array(value :_*))
+    inline def setFlexFlowVarargs(value: NonNullable[js.UndefOr[FlexFlow]]*): Self = StObject.set(x, "flexFlow", js.Array(value*))
     
     inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
-    inline def setFlexVarargs(value: FlexProperty[TLength]*): Self = StObject.set(x, "flex", js.Array(value :_*))
+    inline def setFlexVarargs(value: NonNullable[js.UndefOr[Flex[TLength]]]*): Self = StObject.set(x, "flex", js.Array(value*))
     
-    inline def setFont(value: FontProperty | js.Array[FontProperty]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Font | js.Array[NonNullable[js.UndefOr[Font]]]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    inline def setFontVarargs(value: FontProperty*): Self = StObject.set(x, "font", js.Array(value :_*))
+    inline def setFontVarargs(value: NonNullable[js.UndefOr[Font]]*): Self = StObject.set(x, "font", js.Array(value*))
     
-    inline def setGap(value: GapProperty[TLength] | js.Array[GapProperty[TLength]]): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setGap(value: Gap[TLength] | js.Array[NonNullable[js.UndefOr[Gap[TLength]]]]): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
     inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    inline def setGapVarargs(value: GapProperty[TLength]*): Self = StObject.set(x, "gap", js.Array(value :_*))
+    inline def setGapVarargs(value: NonNullable[js.UndefOr[Gap[TLength]]]*): Self = StObject.set(x, "gap", js.Array(value*))
     
-    inline def setGrid(value: GridProperty | js.Array[GridProperty]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: Grid | js.Array[NonNullable[js.UndefOr[Grid]]]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    inline def setGridArea(value: GridAreaProperty | js.Array[GridAreaProperty]): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
+    inline def setGridArea(value: GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
     
     inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
     
-    inline def setGridAreaVarargs(value: GridAreaProperty*): Self = StObject.set(x, "gridArea", js.Array(value :_*))
+    inline def setGridAreaVarargs(value: NonNullable[js.UndefOr[GridArea]]*): Self = StObject.set(x, "gridArea", js.Array(value*))
     
-    inline def setGridColumn(value: GridColumnProperty | js.Array[GridColumnProperty]): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
+    inline def setGridColumn(value: GridColumn | js.Array[NonNullable[js.UndefOr[GridColumn]]]): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
     
     inline def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
     
-    inline def setGridColumnVarargs(value: GridColumnProperty*): Self = StObject.set(x, "gridColumn", js.Array(value :_*))
+    inline def setGridColumnVarargs(value: NonNullable[js.UndefOr[GridColumn]]*): Self = StObject.set(x, "gridColumn", js.Array(value*))
     
-    inline def setGridRow(value: GridRowProperty | js.Array[GridRowProperty]): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
+    inline def setGridRow(value: GridRow | js.Array[NonNullable[js.UndefOr[GridRow]]]): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
     
     inline def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
     
-    inline def setGridRowVarargs(value: GridRowProperty*): Self = StObject.set(x, "gridRow", js.Array(value :_*))
+    inline def setGridRowVarargs(value: NonNullable[js.UndefOr[GridRow]]*): Self = StObject.set(x, "gridRow", js.Array(value*))
     
-    inline def setGridTemplate(value: GridTemplateProperty | js.Array[GridTemplateProperty]): Self = StObject.set(x, "gridTemplate", value.asInstanceOf[js.Any])
+    inline def setGridTemplate(value: GridTemplate | js.Array[NonNullable[js.UndefOr[GridTemplate]]]): Self = StObject.set(x, "gridTemplate", value.asInstanceOf[js.Any])
     
     inline def setGridTemplateUndefined: Self = StObject.set(x, "gridTemplate", js.undefined)
     
-    inline def setGridTemplateVarargs(value: GridTemplateProperty*): Self = StObject.set(x, "gridTemplate", js.Array(value :_*))
+    inline def setGridTemplateVarargs(value: NonNullable[js.UndefOr[GridTemplate]]*): Self = StObject.set(x, "gridTemplate", js.Array(value*))
     
     inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    inline def setGridVarargs(value: GridProperty*): Self = StObject.set(x, "grid", js.Array(value :_*))
+    inline def setGridVarargs(value: NonNullable[js.UndefOr[Grid]]*): Self = StObject.set(x, "grid", js.Array(value*))
     
-    inline def setLineClamp(value: LineClampProperty | js.Array[LineClampProperty]): Self = StObject.set(x, "lineClamp", value.asInstanceOf[js.Any])
+    inline def setLineClamp(value: LineClamp | js.Array[NonNullable[js.UndefOr[LineClamp]]]): Self = StObject.set(x, "lineClamp", value.asInstanceOf[js.Any])
     
     inline def setLineClampUndefined: Self = StObject.set(x, "lineClamp", js.undefined)
     
-    inline def setLineClampVarargs(value: LineClampProperty*): Self = StObject.set(x, "lineClamp", js.Array(value :_*))
+    inline def setLineClampVarargs(value: NonNullable[js.UndefOr[LineClamp]]*): Self = StObject.set(x, "lineClamp", js.Array(value*))
     
-    inline def setListStyle(value: ListStyleProperty | js.Array[ListStyleProperty]): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
+    inline def setListStyle(value: ListStyle | js.Array[NonNullable[js.UndefOr[ListStyle]]]): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
     
     inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
     
-    inline def setListStyleVarargs(value: ListStyleProperty*): Self = StObject.set(x, "listStyle", js.Array(value :_*))
+    inline def setListStyleVarargs(value: NonNullable[js.UndefOr[ListStyle]]*): Self = StObject.set(x, "listStyle", js.Array(value*))
     
-    inline def setMargin(value: MarginProperty[TLength] | js.Array[MarginProperty[TLength]]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Margin[TLength] | js.Array[NonNullable[js.UndefOr[Margin[TLength]]]]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    inline def setMarginVarargs(value: MarginProperty[TLength]*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    inline def setMarginVarargs(value: NonNullable[js.UndefOr[Margin[TLength]]]*): Self = StObject.set(x, "margin", js.Array(value*))
     
-    inline def setMask(value: MaskProperty[TLength] | js.Array[MaskProperty[TLength]]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: Mask[TLength] | js.Array[NonNullable[js.UndefOr[Mask[TLength]]]]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    inline def setMaskBorder(value: MaskBorderProperty | js.Array[MaskBorderProperty]): Self = StObject.set(x, "maskBorder", value.asInstanceOf[js.Any])
+    inline def setMaskBorder(value: MaskBorder | js.Array[NonNullable[js.UndefOr[MaskBorder]]]): Self = StObject.set(x, "maskBorder", value.asInstanceOf[js.Any])
     
     inline def setMaskBorderUndefined: Self = StObject.set(x, "maskBorder", js.undefined)
     
-    inline def setMaskBorderVarargs(value: MaskBorderProperty*): Self = StObject.set(x, "maskBorder", js.Array(value :_*))
+    inline def setMaskBorderVarargs(value: NonNullable[js.UndefOr[MaskBorder]]*): Self = StObject.set(x, "maskBorder", js.Array(value*))
     
     inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
-    inline def setMaskVarargs(value: MaskProperty[TLength]*): Self = StObject.set(x, "mask", js.Array(value :_*))
+    inline def setMaskVarargs(value: NonNullable[js.UndefOr[Mask[TLength]]]*): Self = StObject.set(x, "mask", js.Array(value*))
     
-    inline def setMotion(value: OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]]): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
+    inline def setMotion(value: Offset[TLength] | js.Array[NonNullable[js.UndefOr[Offset[TLength]]]]): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
     
     inline def setMotionUndefined: Self = StObject.set(x, "motion", js.undefined)
     
-    inline def setMotionVarargs(value: OffsetProperty[TLength]*): Self = StObject.set(x, "motion", js.Array(value :_*))
+    inline def setMotionVarargs(value: NonNullable[js.UndefOr[Offset[TLength]]]*): Self = StObject.set(x, "motion", js.Array(value*))
     
-    inline def setOffset(value: OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Offset[TLength] | js.Array[NonNullable[js.UndefOr[Offset[TLength]]]]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOffsetVarargs(value: OffsetProperty[TLength]*): Self = StObject.set(x, "offset", js.Array(value :_*))
+    inline def setOffsetVarargs(value: NonNullable[js.UndefOr[Offset[TLength]]]*): Self = StObject.set(x, "offset", js.Array(value*))
     
-    inline def setOutline(value: OutlineProperty[TLength] | js.Array[OutlineProperty[TLength]]): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: Outline[TLength] | js.Array[NonNullable[js.UndefOr[Outline[TLength]]]]): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
     inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    inline def setOutlineVarargs(value: OutlineProperty[TLength]*): Self = StObject.set(x, "outline", js.Array(value :_*))
+    inline def setOutlineVarargs(value: NonNullable[js.UndefOr[Outline[TLength]]]*): Self = StObject.set(x, "outline", js.Array(value*))
     
-    inline def setOverflow(value: OverflowProperty | js.Array[OverflowProperty]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
-    inline def setOverflowVarargs(value: OverflowProperty*): Self = StObject.set(x, "overflow", js.Array(value :_*))
+    inline def setOverflowVarargs(value: NonNullable[js.UndefOr[Overflow]]*): Self = StObject.set(x, "overflow", js.Array(value*))
     
-    inline def setPadding(value: PaddingProperty[TLength] | js.Array[PaddingProperty[TLength]]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setOverscrollBehavior(value: OverscrollBehavior | js.Array[NonNullable[js.UndefOr[OverscrollBehavior]]]): Self = StObject.set(x, "overscrollBehavior", value.asInstanceOf[js.Any])
+    
+    inline def setOverscrollBehaviorUndefined: Self = StObject.set(x, "overscrollBehavior", js.undefined)
+    
+    inline def setOverscrollBehaviorVarargs(value: NonNullable[js.UndefOr[OverscrollBehavior]]*): Self = StObject.set(x, "overscrollBehavior", js.Array(value*))
+    
+    inline def setPadding(value: Padding[TLength] | js.Array[NonNullable[js.UndefOr[Padding[TLength]]]]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPaddingVarargs(value: PaddingProperty[TLength]*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: NonNullable[js.UndefOr[Padding[TLength]]]*): Self = StObject.set(x, "padding", js.Array(value*))
     
-    inline def setPlaceItems(value: PlaceItemsProperty | js.Array[PlaceItemsProperty]): Self = StObject.set(x, "placeItems", value.asInstanceOf[js.Any])
+    inline def setPlaceItems(value: PlaceItems | js.Array[NonNullable[js.UndefOr[PlaceItems]]]): Self = StObject.set(x, "placeItems", value.asInstanceOf[js.Any])
     
     inline def setPlaceItemsUndefined: Self = StObject.set(x, "placeItems", js.undefined)
     
-    inline def setPlaceItemsVarargs(value: PlaceItemsProperty*): Self = StObject.set(x, "placeItems", js.Array(value :_*))
+    inline def setPlaceItemsVarargs(value: NonNullable[js.UndefOr[PlaceItems]]*): Self = StObject.set(x, "placeItems", js.Array(value*))
     
-    inline def setPlaceSelf(value: PlaceSelfProperty | js.Array[PlaceSelfProperty]): Self = StObject.set(x, "placeSelf", value.asInstanceOf[js.Any])
+    inline def setPlaceSelf(value: PlaceSelf | js.Array[NonNullable[js.UndefOr[PlaceSelf]]]): Self = StObject.set(x, "placeSelf", value.asInstanceOf[js.Any])
     
     inline def setPlaceSelfUndefined: Self = StObject.set(x, "placeSelf", js.undefined)
     
-    inline def setPlaceSelfVarargs(value: PlaceSelfProperty*): Self = StObject.set(x, "placeSelf", js.Array(value :_*))
+    inline def setPlaceSelfVarargs(value: NonNullable[js.UndefOr[PlaceSelf]]*): Self = StObject.set(x, "placeSelf", js.Array(value*))
     
-    inline def setTextDecoration(value: TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]]): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
+    inline def setTextDecoration(value: TextDecoration[TLength] | js.Array[NonNullable[js.UndefOr[TextDecoration[TLength]]]]): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     
     inline def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
     
-    inline def setTextDecorationVarargs(value: TextDecorationProperty[TLength]*): Self = StObject.set(x, "textDecoration", js.Array(value :_*))
+    inline def setTextDecorationVarargs(value: NonNullable[js.UndefOr[TextDecoration[TLength]]]*): Self = StObject.set(x, "textDecoration", js.Array(value*))
     
-    inline def setTextEmphasis(value: TextEmphasisProperty | js.Array[TextEmphasisProperty]): Self = StObject.set(x, "textEmphasis", value.asInstanceOf[js.Any])
+    inline def setTextEmphasis(value: TextEmphasis | js.Array[NonNullable[js.UndefOr[TextEmphasis]]]): Self = StObject.set(x, "textEmphasis", value.asInstanceOf[js.Any])
     
     inline def setTextEmphasisUndefined: Self = StObject.set(x, "textEmphasis", js.undefined)
     
-    inline def setTextEmphasisVarargs(value: TextEmphasisProperty*): Self = StObject.set(x, "textEmphasis", js.Array(value :_*))
+    inline def setTextEmphasisVarargs(value: NonNullable[js.UndefOr[TextEmphasis]]*): Self = StObject.set(x, "textEmphasis", js.Array(value*))
     
-    inline def setTransition(value: TransitionProperty | js.Array[TransitionProperty]): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: Transition[TTime] | js.Array[NonNullable[js.UndefOr[Transition[TTime]]]]): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     
-    inline def setTransitionVarargs(value: TransitionProperty*): Self = StObject.set(x, "transition", js.Array(value :_*))
+    inline def setTransitionVarargs(value: NonNullable[js.UndefOr[Transition[TTime]]]*): Self = StObject.set(x, "transition", js.Array(value*))
   }
 }

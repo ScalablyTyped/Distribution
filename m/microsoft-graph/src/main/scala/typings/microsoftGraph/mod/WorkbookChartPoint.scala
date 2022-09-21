@@ -12,7 +12,7 @@ trait WorkbookChartPoint
   var format: js.UndefOr[NullableOption[WorkbookChartPointFormat]] = js.undefined
   
   // Returns the value of a chart point. Read-only.
-  var value: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var value: js.UndefOr[NullableOption[Any]] = js.undefined
 }
 object WorkbookChartPoint {
   
@@ -29,7 +29,7 @@ object WorkbookChartPoint {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setValue(value: NullableOption[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NullableOption[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueNull: Self = StObject.set(x, "value", null)
     

@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "request"
-version := "2.48-dt-20200515Z-287250"
-scalaVersion := "3.0.1"
+version := "2.48-dt-20220101Z-ffe1b3"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "caseless" % "0.12-dt-20200515Z-aa2843",
-  "org.scalablytyped" %%% "form-data" % "3.0.0-1ba95a",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20201002Z-fb70a5")
+  "org.scalablytyped" %%% "caseless" % "0.12-dt-20220624Z-ad2647",
+  "org.scalablytyped" %%% "form-data" % "4.0.0-86693f",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "std" % "4.8-958c79",
+  "org.scalablytyped" %%% "tough-cookie" % "4.0-dt-20220414Z-95204d")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

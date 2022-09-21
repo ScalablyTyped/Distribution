@@ -2,14 +2,14 @@ package typings.bitcoinjsLib
 
 import typings.bitcoinjsLib.paymentsMod.Stack
 import typings.bitcoinjsLib.scriptSignatureMod.ScriptSignature
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scriptMod {
   
-  @JSImport("bitcoinjs-lib/types/script", JSImport.Namespace)
+  @JSImport("bitcoinjs-lib/src/script", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -31,7 +31,7 @@ object scriptMod {
   
   object number {
     
-    @JSImport("bitcoinjs-lib/types/script", "number")
+    @JSImport("bitcoinjs-lib/src/script", "number")
     @js.native
     val ^ : js.Any = js.native
     
@@ -45,7 +45,7 @@ object scriptMod {
   
   object signature {
     
-    @JSImport("bitcoinjs-lib/types/script", "signature")
+    @JSImport("bitcoinjs-lib/src/script", "signature")
     @js.native
     val ^ : js.Any = js.native
     
@@ -59,6 +59,4 @@ object scriptMod {
   
   inline def toStack(chunks: js.Array[Double | Buffer]): js.Array[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toStack")(chunks.asInstanceOf[js.Any]).asInstanceOf[js.Array[Buffer]]
   inline def toStack(chunks: Buffer): js.Array[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toStack")(chunks.asInstanceOf[js.Any]).asInstanceOf[js.Array[Buffer]]
-  
-  type OpCode = Double
 }

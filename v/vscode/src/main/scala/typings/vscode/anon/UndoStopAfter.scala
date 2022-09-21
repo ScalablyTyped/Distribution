@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UndoStopAfter extends StObject {
   
-  var undoStopAfter: Boolean
+  val undoStopAfter: Boolean
   
-  var undoStopBefore: Boolean
+  val undoStopBefore: Boolean
 }
 object UndoStopAfter {
   

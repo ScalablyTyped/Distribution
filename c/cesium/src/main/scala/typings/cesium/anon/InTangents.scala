@@ -31,18 +31,18 @@ object InTangents {
     
     inline def setInTangents(value: js.Array[Cartesian3]): Self = StObject.set(x, "inTangents", value.asInstanceOf[js.Any])
     
-    inline def setInTangentsVarargs(value: Cartesian3*): Self = StObject.set(x, "inTangents", js.Array(value :_*))
+    inline def setInTangentsVarargs(value: Cartesian3*): Self = StObject.set(x, "inTangents", js.Array(value*))
     
     inline def setOutTangents(value: js.Array[Cartesian3]): Self = StObject.set(x, "outTangents", value.asInstanceOf[js.Any])
     
-    inline def setOutTangentsVarargs(value: Cartesian3*): Self = StObject.set(x, "outTangents", js.Array(value :_*))
+    inline def setOutTangentsVarargs(value: Cartesian3*): Self = StObject.set(x, "outTangents", js.Array(value*))
     
     inline def setPoints(value: js.Array[Cartesian3]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: Cartesian3*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Cartesian3*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setTimes(value: js.Array[Double]): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     
-    inline def setTimesVarargs(value: Double*): Self = StObject.set(x, "times", js.Array(value :_*))
+    inline def setTimesVarargs(value: Double*): Self = StObject.set(x, "times", js.Array(value*))
   }
 }

@@ -1,13 +1,12 @@
 package typings.miniprogram
 
-import typings.miniprogram.anon.Header
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait UploadFileArgs
   extends StObject
-     with AsyncCallback[Header] {
+     with AsyncCallback[UploadFileCallbackValue] {
   
   var fileName: String
   
@@ -15,9 +14,9 @@ trait UploadFileArgs
   
   var fileType: String
   
-  var formData: js.UndefOr[js.Any] = js.undefined
+  var formData: js.UndefOr[Any] = js.undefined
   
-  var header: js.UndefOr[js.Any] = js.undefined
+  var header: js.UndefOr[Any] = js.undefined
   
   var url: String
 }
@@ -36,11 +35,11 @@ object UploadFileArgs {
     
     inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
-    inline def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
-    inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     

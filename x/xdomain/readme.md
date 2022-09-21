@@ -11,14 +11,11 @@ A pure JavaScript CORS alternative
 | Full name          | xdomain |
 | Keywords           | cors, ie8, polyfill |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 44726 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4671.0 |
+| # stars            | 3053.0 |
 
 ## Links
-- [Homepage](https://github.com/jpillora/xdomain#readme)
-- [Bugs](https://github.com/jpillora/xdomain/issues)
-- [Repository](https://github.com/jpillora/xdomain)
 - [Npm](https://www.npmjs.com/package/xdomain)
     
 

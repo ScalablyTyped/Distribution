@@ -14,7 +14,7 @@ object direct {
     /** [Method] Return the raw data for this event
       * @returns Mixed The data from the event
       */
-    var getData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getData: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Return the name for this event
       * @returns String The name of event
@@ -30,7 +30,7 @@ object direct {
     
     extension [Self <: IEvent](x: Self) {
       
-      inline def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      inline def setGetData(value: () => Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
       inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
       
@@ -50,13 +50,13 @@ object direct {
       * @param response Object Response object
       * @returns Ext.direct.Event The event
       */
-    var createEvent: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IEvent]] = js.undefined
+    var createEvent: js.UndefOr[js.Function1[/* response */ js.UndefOr[Any], IEvent]] = js.undefined
     
     /** [Method] Creates a set of events based on the XHR response
       * @param response Object The XHR response
       * @returns Ext.direct.Event[] An array of Ext.direct.Event
       */
-    var createEvents: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], Array]] = js.undefined
+    var createEvents: js.UndefOr[js.Function1[/* response */ js.UndefOr[Any], Array]] = js.undefined
   }
   object IJsonProvider {
     
@@ -67,11 +67,11 @@ object direct {
     
     extension [Self <: IJsonProvider](x: Self) {
       
-      inline def setCreateEvent(value: /* response */ js.UndefOr[js.Any] => IEvent): Self = StObject.set(x, "createEvent", js.Any.fromFunction1(value))
+      inline def setCreateEvent(value: /* response */ js.UndefOr[Any] => IEvent): Self = StObject.set(x, "createEvent", js.Any.fromFunction1(value))
       
       inline def setCreateEventUndefined: Self = StObject.set(x, "createEvent", js.undefined)
       
-      inline def setCreateEvents(value: /* response */ js.UndefOr[js.Any] => Array): Self = StObject.set(x, "createEvents", js.Any.fromFunction1(value))
+      inline def setCreateEvents(value: /* response */ js.UndefOr[Any] => Array): Self = StObject.set(x, "createEvents", js.Any.fromFunction1(value))
       
       inline def setCreateEventsUndefined: Self = StObject.set(x, "createEvents", js.undefined)
     }
@@ -93,13 +93,13 @@ object direct {
        with IJsonProvider {
     
     /** [Config Option] (Object) */
-    var baseParams: js.UndefOr[js.Any] = js.undefined
+    var baseParams: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number) */
     var interval: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String/Function) */
-    var url: js.UndefOr[js.Any] = js.undefined
+    var url: js.UndefOr[Any] = js.undefined
   }
   object IPollingProvider {
     
@@ -110,7 +110,7 @@ object direct {
     
     extension [Self <: IPollingProvider](x: Self) {
       
-      inline def setBaseParams(value: js.Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
+      inline def setBaseParams(value: Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
       
       inline def setBaseParamsUndefined: Self = StObject.set(x, "baseParams", js.undefined)
       
@@ -118,7 +118,7 @@ object direct {
       
       inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
@@ -206,7 +206,7 @@ object direct {
       * @param args Array The arguments passed to the direct call
       * @returns Object An object with 3 properties: args, callback &amp; scope.
       */
-    var getCallData: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], js.Any]] = js.undefined
+    var getCallData: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], Any]] = js.undefined
   }
   object IRemotingMethod {
     
@@ -217,7 +217,7 @@ object direct {
     
     extension [Self <: IRemotingMethod](x: Self) {
       
-      inline def setGetCallData(value: /* args */ js.UndefOr[Array] => js.Any): Self = StObject.set(x, "getCallData", js.Any.fromFunction1(value))
+      inline def setGetCallData(value: /* args */ js.UndefOr[Array] => Any): Self = StObject.set(x, "getCallData", js.Any.fromFunction1(value))
       
       inline def setGetCallDataUndefined: Self = StObject.set(x, "getCallData", js.undefined)
     }
@@ -228,13 +228,13 @@ object direct {
        with IJsonProvider {
     
     /** [Config Option] (Object) */
-    var actions: js.UndefOr[js.Any] = js.undefined
+    var actions: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var disableNestedActions: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number/Boolean) */
-    var enableBuffer: js.UndefOr[js.Any] = js.undefined
+    var enableBuffer: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var enableUrlEncode: js.UndefOr[java.lang.String] = js.undefined
@@ -243,7 +243,7 @@ object direct {
     var maxRetries: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var namespace: js.UndefOr[js.Any] = js.undefined
+    var namespace: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number) */
     var timeout: js.UndefOr[Double] = js.undefined
@@ -260,7 +260,7 @@ object direct {
     
     extension [Self <: IRemotingProvider](x: Self) {
       
-      inline def setActions(value: js.Any): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: Any): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
       inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
@@ -268,7 +268,7 @@ object direct {
       
       inline def setDisableNestedActionsUndefined: Self = StObject.set(x, "disableNestedActions", js.undefined)
       
-      inline def setEnableBuffer(value: js.Any): Self = StObject.set(x, "enableBuffer", value.asInstanceOf[js.Any])
+      inline def setEnableBuffer(value: Any): Self = StObject.set(x, "enableBuffer", value.asInstanceOf[js.Any])
       
       inline def setEnableBufferUndefined: Self = StObject.set(x, "enableBuffer", js.undefined)
       
@@ -280,7 +280,7 @@ object direct {
       
       inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      inline def setNamespace(value: js.Any): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Any): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
       inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       

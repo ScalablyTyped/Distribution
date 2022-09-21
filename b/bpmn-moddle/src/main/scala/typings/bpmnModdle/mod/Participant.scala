@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * as Camunda properties
     */
   @JSName("$attrs")
-  var $attrs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var $attrs: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
     * Documentation for the element
@@ -68,7 +68,7 @@ object Participant {
   
   extension [Self <: Participant](x: Self) {
     
-    inline def set$attrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "$attrs", value.asInstanceOf[js.Any])
+    inline def set$attrs(value: StringDictionary[Any]): Self = StObject.set(x, "$attrs", value.asInstanceOf[js.Any])
     
     inline def set$attrsUndefined: Self = StObject.set(x, "$attrs", js.undefined)
     
@@ -76,17 +76,17 @@ object Participant {
     
     inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    inline def setDocumentationVarargs(value: Documentation*): Self = StObject.set(x, "documentation", js.Array(value :_*))
+    inline def setDocumentationVarargs(value: Documentation*): Self = StObject.set(x, "documentation", js.Array(value*))
     
     inline def setEndPointRefs(value: js.Array[EndPoint]): Self = StObject.set(x, "endPointRefs", value.asInstanceOf[js.Any])
     
-    inline def setEndPointRefsVarargs(value: EndPoint*): Self = StObject.set(x, "endPointRefs", js.Array(value :_*))
+    inline def setEndPointRefsVarargs(value: EndPoint*): Self = StObject.set(x, "endPointRefs", js.Array(value*))
     
     inline def setExtensionDefinitions(value: js.Array[ExtensionDefinition]): Self = StObject.set(x, "extensionDefinitions", value.asInstanceOf[js.Any])
     
     inline def setExtensionDefinitionsUndefined: Self = StObject.set(x, "extensionDefinitions", js.undefined)
     
-    inline def setExtensionDefinitionsVarargs(value: ExtensionDefinition*): Self = StObject.set(x, "extensionDefinitions", js.Array(value :_*))
+    inline def setExtensionDefinitionsVarargs(value: ExtensionDefinition*): Self = StObject.set(x, "extensionDefinitions", js.Array(value*))
     
     inline def setExtensionElements(value: ExtensionElements): Self = StObject.set(x, "extensionElements", value.asInstanceOf[js.Any])
     
@@ -96,7 +96,7 @@ object Participant {
     
     inline def setInterfaceRef(value: js.Array[Interface]): Self = StObject.set(x, "interfaceRef", value.asInstanceOf[js.Any])
     
-    inline def setInterfaceRefVarargs(value: Interface*): Self = StObject.set(x, "interfaceRef", js.Array(value :_*))
+    inline def setInterfaceRefVarargs(value: Interface*): Self = StObject.set(x, "interfaceRef", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

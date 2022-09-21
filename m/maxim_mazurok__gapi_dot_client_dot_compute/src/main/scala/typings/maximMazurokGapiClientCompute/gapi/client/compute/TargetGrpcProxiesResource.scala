@@ -1,11 +1,11 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientCompute.anon.AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdResource
-import typings.maximMazurokGapiClientCompute.anon.FieldsKey
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
+import typings.maximMazurokGapiClientCompute.anon.QuotaUserRequestIdResourceUploadTypeUploadprotocolUserIp
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserTargetGrpcProxy
 import typings.maximMazurokGapiClientCompute.anon.ResourceTargetGrpcProxy
+import typings.maximMazurokGapiClientCompute.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,8 +22,8 @@ trait TargetGrpcProxiesResource extends StObject {
   def get(request: QuotaUserTargetGrpcProxy): Request[TargetGrpcProxy] = js.native
   
   /** Creates a TargetGrpcProxy in the specified project in the given scope using the parameters that are included in the request. */
-  def insert(request: AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdResource): Request[Operation] = js.native
-  def insert(request: FieldsKey, body: TargetGrpcProxy): Request[Operation] = js.native
+  def insert(request: QuotaUserRequestIdResourceUploadTypeUploadprotocolUserIp): Request[Operation] = js.native
+  def insert(request: Xgafv, body: TargetGrpcProxy): Request[Operation] = js.native
   
   /** Lists the TargetGrpcProxies for a project in the given scope. */
   def list(): Request[TargetGrpcProxyList] = js.native

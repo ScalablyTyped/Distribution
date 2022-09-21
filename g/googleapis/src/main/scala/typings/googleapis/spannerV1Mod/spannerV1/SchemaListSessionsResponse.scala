@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response for ListSessions.
-  */
 trait SchemaListSessionsResponse extends StObject {
   
   /**
-    * `next_page_token` can be sent in a subsequent ListSessions call to fetch
-    * more of the matching sessions.
+    * `next_page_token` can be sent in a subsequent ListSessions call to fetch more of the matching sessions.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The list of requested sessions.
@@ -31,12 +27,14 @@ object SchemaListSessionsResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setSessions(value: js.Array[SchemaSession]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
     
     inline def setSessionsUndefined: Self = StObject.set(x, "sessions", js.undefined)
     
-    inline def setSessionsVarargs(value: SchemaSession*): Self = StObject.set(x, "sessions", js.Array(value :_*))
+    inline def setSessionsVarargs(value: SchemaSession*): Self = StObject.set(x, "sessions", js.Array(value*))
   }
 }

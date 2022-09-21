@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines a field that is an instant messaging (IM) address. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactInstantMessageField")
 @js.native
-class ContactInstantMessageField protected ()
+open class ContactInstantMessageField protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactInstantMessageField {
   /**

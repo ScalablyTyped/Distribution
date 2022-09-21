@@ -1,7 +1,7 @@
 
 # Scala.js typings for material-components-web
 
-Typings are for version 8.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 Modular and customizable Material Design UI components for the web
@@ -10,10 +10,10 @@ Modular and customizable Material Design UI components for the web
 | ------------------ | :-------------: |
 | Full name          | material-components-web |
 | Keywords           | material components, material design |
-| # releases         | 813 |
-| # dependents       | 153 |
-| # downloads        | 1739395 |
-| # stars            | 13 |
+| # releases         | 710 |
+| # dependents       | 0.0 |
+| # downloads        | 241280.66666666666 |
+| # stars            | 16381.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

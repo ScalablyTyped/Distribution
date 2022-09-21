@@ -11,14 +11,11 @@ A <marquee> component for react.
 | Full name          | react-text-marquee |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 9755 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 499.0 |
+| # stars            | 8.0 |
 
 ## Links
-- [Homepage](https://github.com/jcgertig/react-text-marquee#readme)
-- [Bugs](https://github.com/jcgertig/react-text-marquee/issues)
-- [Repository](https://github.com/jcgertig/react-text-marquee)
 - [Npm](https://www.npmjs.com/package/react-text-marquee)
     
 

@@ -22,6 +22,6 @@ object WeeklyCycle {
     
     inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
-    inline def setScheduleVarargs(value: Schedule*): Self = StObject.set(x, "schedule", js.Array(value :_*))
+    inline def setScheduleVarargs(value: Schedule*): Self = StObject.set(x, "schedule", js.Array(value*))
   }
 }

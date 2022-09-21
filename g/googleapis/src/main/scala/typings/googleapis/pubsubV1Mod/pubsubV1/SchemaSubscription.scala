@@ -5,95 +5,92 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A subscription resource.
-  */
 trait SchemaSubscription extends StObject {
   
   /**
-    * The approximate amount of time (on a best-effort basis) Pub/Sub waits for
-    * the subscriber to acknowledge receipt before resending the message. In
-    * the interval after the message is delivered and before it is
-    * acknowledged, it is considered to be &lt;i&gt;outstanding&lt;/i&gt;.
-    * During that time period, the message will not be redelivered (on a
-    * best-effort basis).  For pull subscriptions, this value is used as the
-    * initial value for the ack deadline. To override this value for a given
-    * message, call `ModifyAckDeadline` with the corresponding `ack_id` if
-    * using non-streaming pull or send the `ack_id` in a
-    * `StreamingModifyAckDeadlineRequest` if using streaming pull. The minimum
-    * custom deadline you can specify is 10 seconds. The maximum custom
-    * deadline you can specify is 600 seconds (10 minutes). If this parameter
-    * is 0, a default value of 10 seconds is used.  For push delivery, this
-    * value is also used to set the request timeout for the call to the push
-    * endpoint.  If the subscriber never acknowledges the message, the Pub/Sub
-    * system will eventually redeliver the message.
+    * The approximate amount of time (on a best-effort basis) Pub/Sub waits for the subscriber to acknowledge receipt before resending the message. In the interval after the message is delivered and before it is acknowledged, it is considered to be *outstanding*. During that time period, the message will not be redelivered (on a best-effort basis). For pull subscriptions, this value is used as the initial value for the ack deadline. To override this value for a given message, call `ModifyAckDeadline` with the corresponding `ack_id` if using non-streaming pull or send the `ack_id` in a `StreamingModifyAckDeadlineRequest` if using streaming pull. The minimum custom deadline you can specify is 10 seconds. The maximum custom deadline you can specify is 600 seconds (10 minutes). If this parameter is 0, a default value of 10 seconds is used. For push delivery, this value is also used to set the request timeout for the call to the push endpoint. If the subscriber never acknowledges the message, the Pub/Sub system will eventually redeliver the message.
     */
-  var ackDeadlineSeconds: js.UndefOr[Double] = js.undefined
+  var ackDeadlineSeconds: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * A policy that specifies the conditions for this subscription&#39;s
-    * expiration. A subscription is considered active as long as any connected
-    * subscriber is successfully consuming messages from the subscription or is
-    * issuing operations on the subscription. If `expiration_policy` is not
-    * set, a *default policy* with `ttl` of 31 days will be used. The minimum
-    * allowed value for `expiration_policy.ttl` is 1 day.
-    * &lt;b&gt;BETA:&lt;/b&gt; This feature is part of a beta release. This API
-    * might be changed in backward-incompatible ways and is not recommended for
-    * production use. It is not subject to any SLA or deprecation policy.
+    * If delivery to BigQuery is used with this subscription, this field is used to configure it.
+    */
+  var bigqueryConfig: js.UndefOr[SchemaBigQueryConfig] = js.undefined
+  
+  /**
+    * A policy that specifies the conditions for dead lettering messages in this subscription. If dead_letter_policy is not set, dead lettering is disabled. The Cloud Pub/Sub service account associated with this subscriptions's parent project (i.e., service-{project_number\}@gcp-sa-pubsub.iam.gserviceaccount.com) must have permission to Acknowledge() messages on this subscription.
+    */
+  var deadLetterPolicy: js.UndefOr[SchemaDeadLetterPolicy] = js.undefined
+  
+  /**
+    * Indicates whether the subscription is detached from its topic. Detached subscriptions don't receive messages from their topic and don't retain any backlog. `Pull` and `StreamingPull` requests will return FAILED_PRECONDITION. If the subscription is a push subscription, pushes to the endpoint will not be made.
+    */
+  var detached: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * If true, Pub/Sub provides the following guarantees for the delivery of a message with a given value of `message_id` on this subscription: * The message sent to a subscriber is guaranteed not to be resent before the message's acknowledgement deadline expires. * An acknowledged message will not be resent to a subscriber. Note that subscribers may still receive multiple copies of a message when `enable_exactly_once_delivery` is true if the message was published multiple times by a publisher client. These copies are considered distinct by Pub/Sub and have distinct `message_id` values.
+    */
+  var enableExactlyOnceDelivery: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * If true, messages published with the same `ordering_key` in `PubsubMessage` will be delivered to the subscribers in the order in which they are received by the Pub/Sub system. Otherwise, they may be delivered in any order.
+    */
+  var enableMessageOrdering: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * A policy that specifies the conditions for this subscription's expiration. A subscription is considered active as long as any connected subscriber is successfully consuming messages from the subscription or is issuing operations on the subscription. If `expiration_policy` is not set, a *default policy* with `ttl` of 31 days will be used. The minimum allowed value for `expiration_policy.ttl` is 1 day. If `expiration_policy` is set, but `expiration_policy.ttl` is not set, the subscription never expires.
     */
   var expirationPolicy: js.UndefOr[SchemaExpirationPolicy] = js.undefined
   
   /**
-    * See &lt;a
-    * href=&quot;https://cloud.google.com/pubsub/docs/labels&quot;&gt; Creating
-    * and managing labels&lt;/a&gt;.
+    * An expression written in the Pub/Sub [filter language](https://cloud.google.com/pubsub/docs/filtering). If non-empty, then only `PubsubMessage`s whose `attributes` field matches the filter are delivered on this subscription. If empty, then no messages are filtered out.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
+  var filter: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * How long to retain unacknowledged messages in the subscription&#39;s
-    * backlog, from the moment a message is published. If
-    * `retain_acked_messages` is true, then this also configures the retention
-    * of acknowledged messages, and thus configures how far back in time a
-    * `Seek` can be done. Defaults to 7 days. Cannot be more than 7 days or
-    * less than 10 minutes.
+    * See Creating and managing labels.
     */
-  var messageRetentionDuration: js.UndefOr[String] = js.undefined
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /**
-    * The name of the subscription. It must have the format
-    * `&quot;projects/{project}/subscriptions/{subscription}&quot;`.
-    * `{subscription}` must start with a letter, and contain only letters
-    * (`[A-Za-z]`), numbers (`[0-9]`), dashes (`-`), underscores (`_`), periods
-    * (`.`), tildes (`~`), plus (`+`) or percent signs (`%`). It must be
-    * between 3 and 255 characters in length, and it must not start with
-    * `&quot;goog&quot;`.
+    * How long to retain unacknowledged messages in the subscription's backlog, from the moment a message is published. If `retain_acked_messages` is true, then this also configures the retention of acknowledged messages, and thus configures how far back in time a `Seek` can be done. Defaults to 7 days. Cannot be more than 7 days or less than 10 minutes.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var messageRetentionDuration: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * If push delivery is used with this subscription, this field is used to
-    * configure it. An empty `pushConfig` signifies that the subscriber will
-    * pull and ack messages using API methods.
+    * Required. The name of the subscription. It must have the format `"projects/{project\}/subscriptions/{subscription\}"`. `{subscription\}` must start with a letter, and contain only letters (`[A-Za-z]`), numbers (`[0-9]`), dashes (`-`), underscores (`_`), periods (`.`), tildes (`~`), plus (`+`) or percent signs (`%`). It must be between 3 and 255 characters in length, and it must not start with `"goog"`.
+    */
+  var name: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * If push delivery is used with this subscription, this field is used to configure it.
     */
   var pushConfig: js.UndefOr[SchemaPushConfig] = js.undefined
   
   /**
-    * Indicates whether to retain acknowledged messages. If true, then messages
-    * are not expunged from the subscription&#39;s backlog, even if they are
-    * acknowledged, until they fall out of the `message_retention_duration`
-    * window. This must be true if you would like to &lt;a
-    * href=&quot;https://cloud.google.com/pubsub/docs/replay-overview#seek_to_a_time&quot;&gt;
-    * Seek to a timestamp&lt;/a&gt;.
+    * Indicates whether to retain acknowledged messages. If true, then messages are not expunged from the subscription's backlog, even if they are acknowledged, until they fall out of the `message_retention_duration` window. This must be true if you would like to [`Seek` to a timestamp] (https://cloud.google.com/pubsub/docs/replay-overview#seek_to_a_time) in the past to replay previously-acknowledged messages.
     */
-  var retainAckedMessages: js.UndefOr[Boolean] = js.undefined
+  var retainAckedMessages: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * The name of the topic from which this subscription is receiving messages.
-    * Format is `projects/{project}/topics/{topic}`. The value of this field
-    * will be `_deleted-topic_` if the topic has been deleted.
+    * A policy that specifies how Pub/Sub retries message delivery for this subscription. If not set, the default retry policy is applied. This generally implies that messages will be retried as soon as possible for healthy subscribers. RetryPolicy will be triggered on NACKs or acknowledgement deadline exceeded events for a given message.
     */
-  var topic: js.UndefOr[String] = js.undefined
+  var retryPolicy: js.UndefOr[SchemaRetryPolicy] = js.undefined
+  
+  /**
+    * Output only. An output-only field indicating whether or not the subscription can receive messages.
+    */
+  var state: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required. The name of the topic from which this subscription is receiving messages. Format is `projects/{project\}/topics/{topic\}`. The value of this field will be `_deleted-topic_` if the topic has been deleted.
+    */
+  var topic: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Output only. Indicates the minimum duration for which a message is retained after it is published to the subscription's topic. If this field is set, messages published to the subscription's topic in the last `topic_message_retention_duration` are always available to subscribers. See the `message_retention_duration` field in `Topic`. This field is set only in responses from the server; it is ignored if it is set in any requests.
+    */
+  var topicMessageRetentionDuration: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSubscription {
   
@@ -106,21 +103,61 @@ object SchemaSubscription {
     
     inline def setAckDeadlineSeconds(value: Double): Self = StObject.set(x, "ackDeadlineSeconds", value.asInstanceOf[js.Any])
     
+    inline def setAckDeadlineSecondsNull: Self = StObject.set(x, "ackDeadlineSeconds", null)
+    
     inline def setAckDeadlineSecondsUndefined: Self = StObject.set(x, "ackDeadlineSeconds", js.undefined)
+    
+    inline def setBigqueryConfig(value: SchemaBigQueryConfig): Self = StObject.set(x, "bigqueryConfig", value.asInstanceOf[js.Any])
+    
+    inline def setBigqueryConfigUndefined: Self = StObject.set(x, "bigqueryConfig", js.undefined)
+    
+    inline def setDeadLetterPolicy(value: SchemaDeadLetterPolicy): Self = StObject.set(x, "deadLetterPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setDeadLetterPolicyUndefined: Self = StObject.set(x, "deadLetterPolicy", js.undefined)
+    
+    inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+    
+    inline def setDetachedNull: Self = StObject.set(x, "detached", null)
+    
+    inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+    
+    inline def setEnableExactlyOnceDelivery(value: Boolean): Self = StObject.set(x, "enableExactlyOnceDelivery", value.asInstanceOf[js.Any])
+    
+    inline def setEnableExactlyOnceDeliveryNull: Self = StObject.set(x, "enableExactlyOnceDelivery", null)
+    
+    inline def setEnableExactlyOnceDeliveryUndefined: Self = StObject.set(x, "enableExactlyOnceDelivery", js.undefined)
+    
+    inline def setEnableMessageOrdering(value: Boolean): Self = StObject.set(x, "enableMessageOrdering", value.asInstanceOf[js.Any])
+    
+    inline def setEnableMessageOrderingNull: Self = StObject.set(x, "enableMessageOrdering", null)
+    
+    inline def setEnableMessageOrderingUndefined: Self = StObject.set(x, "enableMessageOrdering", js.undefined)
     
     inline def setExpirationPolicy(value: SchemaExpirationPolicy): Self = StObject.set(x, "expirationPolicy", value.asInstanceOf[js.Any])
     
     inline def setExpirationPolicyUndefined: Self = StObject.set(x, "expirationPolicy", js.undefined)
     
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterNull: Self = StObject.set(x, "filter", null)
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
     inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsNull: Self = StObject.set(x, "labels", null)
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     inline def setMessageRetentionDuration(value: String): Self = StObject.set(x, "messageRetentionDuration", value.asInstanceOf[js.Any])
     
+    inline def setMessageRetentionDurationNull: Self = StObject.set(x, "messageRetentionDuration", null)
+    
     inline def setMessageRetentionDurationUndefined: Self = StObject.set(x, "messageRetentionDuration", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -130,9 +167,29 @@ object SchemaSubscription {
     
     inline def setRetainAckedMessages(value: Boolean): Self = StObject.set(x, "retainAckedMessages", value.asInstanceOf[js.Any])
     
+    inline def setRetainAckedMessagesNull: Self = StObject.set(x, "retainAckedMessages", null)
+    
     inline def setRetainAckedMessagesUndefined: Self = StObject.set(x, "retainAckedMessages", js.undefined)
     
+    inline def setRetryPolicy(value: SchemaRetryPolicy): Self = StObject.set(x, "retryPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setRetryPolicyUndefined: Self = StObject.set(x, "retryPolicy", js.undefined)
+    
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
     inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    
+    inline def setTopicMessageRetentionDuration(value: String): Self = StObject.set(x, "topicMessageRetentionDuration", value.asInstanceOf[js.Any])
+    
+    inline def setTopicMessageRetentionDurationNull: Self = StObject.set(x, "topicMessageRetentionDuration", null)
+    
+    inline def setTopicMessageRetentionDurationUndefined: Self = StObject.set(x, "topicMessageRetentionDuration", js.undefined)
+    
+    inline def setTopicNull: Self = StObject.set(x, "topic", null)
     
     inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }

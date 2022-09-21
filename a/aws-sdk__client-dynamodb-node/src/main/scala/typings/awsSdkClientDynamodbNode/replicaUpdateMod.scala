@@ -8,5 +8,5 @@ object replicaUpdateMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/_ReplicaUpdate", "_ReplicaUpdate")
   @js.native
-  val ReplicaUpdate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ReplicaUpdate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

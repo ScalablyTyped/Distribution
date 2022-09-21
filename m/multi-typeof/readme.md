@@ -10,10 +10,10 @@ Check something against an array of types.
 | ------------------ | :-------------: |
 | Full name          | multi-typeof |
 | Keywords           | check, multi, multiple, test, type, typeof |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 6241 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1024.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/gillstrom/multi-typeof#readme)

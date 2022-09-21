@@ -9,7 +9,7 @@ trait NotificationOptions extends StObject {
   
   var allowHideAfter: js.UndefOr[Double] = js.undefined
   
-  var animation: js.UndefOr[js.Any | Boolean] = js.undefined
+  var animation: js.UndefOr[Any | Boolean] = js.undefined
   
   var appendTo: js.UndefOr[String | JQuery] = js.undefined
   
@@ -33,6 +33,8 @@ trait NotificationOptions extends StObject {
   
   var templates: js.UndefOr[js.Array[NotificationTemplate]] = js.undefined
   
+  var title: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double | String] = js.undefined
 }
 object NotificationOptions {
@@ -48,7 +50,7 @@ object NotificationOptions {
     
     inline def setAllowHideAfterUndefined: Self = StObject.set(x, "allowHideAfter", js.undefined)
     
-    inline def setAnimation(value: js.Any | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Any | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
@@ -96,7 +98,11 @@ object NotificationOptions {
     
     inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
-    inline def setTemplatesVarargs(value: NotificationTemplate*): Self = StObject.set(x, "templates", js.Array(value :_*))
+    inline def setTemplatesVarargs(value: NotificationTemplate*): Self = StObject.set(x, "templates", js.Array(value*))
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

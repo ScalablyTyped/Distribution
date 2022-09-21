@@ -10,13 +10,13 @@ The official low-level Elasticsearch client for Node.js and the browser.
 | ------------------ | :-------------: |
 | Full name          | elasticsearch |
 | Keywords           | elasticsearch, mapping, REST |
-| # releases         | 17 |
-| # dependents       | 859 |
-| # downloads        | 14031044 |
-| # stars            | 123 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1327304.3333333333 |
+| # stars            | 57.0 |
 
 ## Links
-- [Homepage](https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/16.x/index.html)
+- [Homepage](https://www.elastic.co/guide/en/elasticsearch/client/elasticsearch-js/16.x/index.html)
 - [Bugs](https://github.com/elastic/elasticsearch-js-legacy/issues)
 - [Repository](https://github.com/elastic/elasticsearch-js-legacy)
 - [Npm](https://www.npmjs.com/package/elasticsearch)

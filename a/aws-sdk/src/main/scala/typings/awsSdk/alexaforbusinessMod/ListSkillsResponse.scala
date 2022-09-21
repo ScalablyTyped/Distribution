@@ -33,6 +33,6 @@ object ListSkillsResponse {
     
     inline def setSkillSummariesUndefined: Self = StObject.set(x, "SkillSummaries", js.undefined)
     
-    inline def setSkillSummariesVarargs(value: SkillSummary*): Self = StObject.set(x, "SkillSummaries", js.Array(value :_*))
+    inline def setSkillSummariesVarargs(value: SkillSummary*): Self = StObject.set(x, "SkillSummaries", js.Array(value*))
   }
 }

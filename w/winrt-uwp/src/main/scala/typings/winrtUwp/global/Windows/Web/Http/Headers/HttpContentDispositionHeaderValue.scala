@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents the value of the Content-Disposition HTTP header on HTTP content in a request or a response. */
 @JSGlobal("Windows.Web.Http.Headers.HttpContentDispositionHeaderValue")
 @js.native
-class HttpContentDispositionHeaderValue protected ()
+open class HttpContentDispositionHeaderValue protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpContentDispositionHeaderValue {
   /**

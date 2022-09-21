@@ -10,10 +10,10 @@ backend layer for i18next using browsers xhr
 | ------------------ | :-------------: |
 | Full name          | i18next-sprintf-postprocessor |
 | Keywords           | i18next, i18next-postProcessor, i18next-sprintf |
-| # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 464690 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 65967.0 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/i18next/i18next-sprintf-postProcessor)

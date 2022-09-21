@@ -24,7 +24,7 @@ object anon {
   
   trait `0`
     extends StObject
-       with DiffOp[js.Any] {
+       with DiffOp[Any] {
     
     var o: `-_`
   }
@@ -47,11 +47,11 @@ object anon {
     
     var o: L
     
-    var v: NumberDictionary[js.Any]
+    var v: NumberDictionary[DiffOp[Any]]
   }
   object `1` {
     
-    inline def apply[T](v: NumberDictionary[js.Any]): `1`[T] = {
+    inline def apply[T](v: NumberDictionary[DiffOp[Any]]): `1`[T] = {
       val __obj = js.Dynamic.literal(o = "L", v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[`1`[T]]
     }
@@ -60,7 +60,7 @@ object anon {
       
       inline def setO(value: L): Self = StObject.set(x, "o", value.asInstanceOf[js.Any])
       
-      inline def setV(value: NumberDictionary[js.Any]): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: NumberDictionary[DiffOp[Any]]): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,7 +161,7 @@ object anon {
   
   trait OV
     extends StObject
-       with DiffOp[js.Any] {
+       with DiffOp[Any] {
     
     var o: I
     
@@ -230,7 +230,7 @@ object anon {
   
   trait Type
     extends StObject
-       with LocalQueuedChange[js.Any] {
+       with LocalQueuedChange[Any] {
     
     var id: EntityId
     
@@ -277,7 +277,7 @@ object anon {
   
   trait VDMPDiff
     extends StObject
-       with DiffOp[js.Any] {
+       with DiffOp[Any] {
     
     var o: d
     

@@ -24,7 +24,7 @@ abstract class CurveTimeline protected ()
   ): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var curves: js.Any = js.native
+  var curves: Any = js.native
   
   /* CompleteClass */
   override def getCurvePercent(frameIndex: Double, percent: Double): Double = js.native

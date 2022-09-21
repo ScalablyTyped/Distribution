@@ -32,9 +32,7 @@ object mod {
     var logLevel: js.UndefOr[`0` | `1` | `2`] = js.undefined
     
     /** Takes an array of Connect-compatible middleware that are injected into the server middleware stack. */
-    var middleware: js.UndefOr[
-        js.Array[js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ js.Any, Unit]]
-      ] = js.undefined
+    var middleware: js.UndefOr[js.Array[js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit]]] = js.undefined
     
     /** Mount a directory to a route. */
     var mount: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
@@ -77,17 +75,17 @@ object mod {
       
       inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
-      inline def setMiddleware(value: js.Array[js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ js.Any, Unit]]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+      inline def setMiddleware(value: js.Array[js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit]]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
       
       inline def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)
       
-      inline def setMiddlewareVarargs(value: (js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ js.Any, Unit])*): Self = StObject.set(x, "middleware", js.Array(value :_*))
+      inline def setMiddlewareVarargs(value: (js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit])*): Self = StObject.set(x, "middleware", js.Array(value*))
       
       inline def setMount(value: js.Array[js.Array[String]]): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
       
       inline def setMountUndefined: Self = StObject.set(x, "mount", js.undefined)
       
-      inline def setMountVarargs(value: js.Array[String]*): Self = StObject.set(x, "mount", js.Array(value :_*))
+      inline def setMountVarargs(value: js.Array[String]*): Self = StObject.set(x, "mount", js.Array(value*))
       
       inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       

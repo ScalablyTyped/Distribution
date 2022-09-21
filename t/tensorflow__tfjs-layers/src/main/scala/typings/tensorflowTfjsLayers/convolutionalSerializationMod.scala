@@ -92,7 +92,7 @@ object convolutionalSerializationMod {
       
       inline def setDilation_rateUndefined: Self = StObject.set(x, "dilation_rate", js.undefined)
       
-      inline def setDilation_rateVarargs(value: Double*): Self = StObject.set(x, "dilation_rate", js.Array(value :_*))
+      inline def setDilation_rateVarargs(value: Double*): Self = StObject.set(x, "dilation_rate", js.Array(value*))
       
       inline def setKernel_constraint(value: ConstraintSerialization): Self = StObject.set(x, "kernel_constraint", value.asInstanceOf[js.Any])
       
@@ -108,7 +108,7 @@ object convolutionalSerializationMod {
       
       inline def setKernel_size(value: Double | js.Array[Double]): Self = StObject.set(x, "kernel_size", value.asInstanceOf[js.Any])
       
-      inline def setKernel_sizeVarargs(value: Double*): Self = StObject.set(x, "kernel_size", js.Array(value :_*))
+      inline def setKernel_sizeVarargs(value: Double*): Self = StObject.set(x, "kernel_size", js.Array(value*))
       
       inline def setPadding(value: PaddingMode): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
@@ -118,7 +118,7 @@ object convolutionalSerializationMod {
       
       inline def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
       
-      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value*))
       
       inline def setUse_bias(value: Boolean): Self = StObject.set(x, "use_bias", value.asInstanceOf[js.Any])
       
@@ -293,7 +293,7 @@ object convolutionalSerializationMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+      inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value*))
     }
   }
   

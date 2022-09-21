@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.Uint8ClampedAttribute")
 @js.native
-class Uint8ClampedAttribute protected ()
+open class Uint8ClampedAttribute protected ()
   extends typings.three.mod.Uint8ClampedAttribute {
-  def this(array: js.Any, itemSize: Double) = this()
+  def this(array: Any, itemSize: Double) = this()
 }

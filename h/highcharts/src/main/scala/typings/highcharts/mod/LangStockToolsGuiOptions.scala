@@ -8,7 +8,7 @@ trait LangStockToolsGuiOptions extends StObject {
   
   var advanced: js.UndefOr[String] = js.undefined
   
-  var arrowLine: js.UndefOr[String] = js.undefined
+  var arrowInfinityLine: js.UndefOr[String] = js.undefined
   
   var arrowRay: js.UndefOr[String] = js.undefined
   
@@ -28,7 +28,11 @@ trait LangStockToolsGuiOptions extends StObject {
   
   var elliott5: js.UndefOr[String] = js.undefined
   
+  var ellipse: js.UndefOr[String] = js.undefined
+  
   var fibonacci: js.UndefOr[String] = js.undefined
+  
+  var fibonacciTimeZones: js.UndefOr[String] = js.undefined
   
   var flagCirclepin: js.UndefOr[String] = js.undefined
   
@@ -76,11 +80,19 @@ trait LangStockToolsGuiOptions extends StObject {
   
   var simpleShapes: js.UndefOr[String] = js.undefined
   
+  var timeCycles: js.UndefOr[String] = js.undefined
+  
   var toggleAnnotations: js.UndefOr[String] = js.undefined
   
   var typeCandlestick: js.UndefOr[String] = js.undefined
   
   var typeChange: js.UndefOr[String] = js.undefined
+  
+  var typeHLC: js.UndefOr[String] = js.undefined
+  
+  var typeHeikinAshi: js.UndefOr[String] = js.undefined
+  
+  var typeHollowCandlestick: js.UndefOr[String] = js.undefined
   
   var typeLine: js.UndefOr[String] = js.undefined
   
@@ -117,9 +129,9 @@ object LangStockToolsGuiOptions {
     
     inline def setAdvancedUndefined: Self = StObject.set(x, "advanced", js.undefined)
     
-    inline def setArrowLine(value: String): Self = StObject.set(x, "arrowLine", value.asInstanceOf[js.Any])
+    inline def setArrowInfinityLine(value: String): Self = StObject.set(x, "arrowInfinityLine", value.asInstanceOf[js.Any])
     
-    inline def setArrowLineUndefined: Self = StObject.set(x, "arrowLine", js.undefined)
+    inline def setArrowInfinityLineUndefined: Self = StObject.set(x, "arrowInfinityLine", js.undefined)
     
     inline def setArrowRay(value: String): Self = StObject.set(x, "arrowRay", value.asInstanceOf[js.Any])
     
@@ -157,7 +169,15 @@ object LangStockToolsGuiOptions {
     
     inline def setElliott5Undefined: Self = StObject.set(x, "elliott5", js.undefined)
     
+    inline def setEllipse(value: String): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
+    
+    inline def setEllipseUndefined: Self = StObject.set(x, "ellipse", js.undefined)
+    
     inline def setFibonacci(value: String): Self = StObject.set(x, "fibonacci", value.asInstanceOf[js.Any])
+    
+    inline def setFibonacciTimeZones(value: String): Self = StObject.set(x, "fibonacciTimeZones", value.asInstanceOf[js.Any])
+    
+    inline def setFibonacciTimeZonesUndefined: Self = StObject.set(x, "fibonacciTimeZones", js.undefined)
     
     inline def setFibonacciUndefined: Self = StObject.set(x, "fibonacci", js.undefined)
     
@@ -253,6 +273,10 @@ object LangStockToolsGuiOptions {
     
     inline def setSimpleShapesUndefined: Self = StObject.set(x, "simpleShapes", js.undefined)
     
+    inline def setTimeCycles(value: String): Self = StObject.set(x, "timeCycles", value.asInstanceOf[js.Any])
+    
+    inline def setTimeCyclesUndefined: Self = StObject.set(x, "timeCycles", js.undefined)
+    
     inline def setToggleAnnotations(value: String): Self = StObject.set(x, "toggleAnnotations", value.asInstanceOf[js.Any])
     
     inline def setToggleAnnotationsUndefined: Self = StObject.set(x, "toggleAnnotations", js.undefined)
@@ -264,6 +288,18 @@ object LangStockToolsGuiOptions {
     inline def setTypeChange(value: String): Self = StObject.set(x, "typeChange", value.asInstanceOf[js.Any])
     
     inline def setTypeChangeUndefined: Self = StObject.set(x, "typeChange", js.undefined)
+    
+    inline def setTypeHLC(value: String): Self = StObject.set(x, "typeHLC", value.asInstanceOf[js.Any])
+    
+    inline def setTypeHLCUndefined: Self = StObject.set(x, "typeHLC", js.undefined)
+    
+    inline def setTypeHeikinAshi(value: String): Self = StObject.set(x, "typeHeikinAshi", value.asInstanceOf[js.Any])
+    
+    inline def setTypeHeikinAshiUndefined: Self = StObject.set(x, "typeHeikinAshi", js.undefined)
+    
+    inline def setTypeHollowCandlestick(value: String): Self = StObject.set(x, "typeHollowCandlestick", value.asInstanceOf[js.Any])
+    
+    inline def setTypeHollowCandlestickUndefined: Self = StObject.set(x, "typeHollowCandlestick", js.undefined)
     
     inline def setTypeLine(value: String): Self = StObject.set(x, "typeLine", value.asInstanceOf[js.Any])
     

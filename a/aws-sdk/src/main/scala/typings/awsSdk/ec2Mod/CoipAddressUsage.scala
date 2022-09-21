@@ -12,12 +12,12 @@ trait CoipAddressUsage extends StObject {
   var AllocationId: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS account ID.
+    * The Amazon Web Services account ID.
     */
   var AwsAccountId: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS service.
+    * The Amazon Web Services service.
     */
   var AwsService: js.UndefOr[String] = js.undefined
   

@@ -29,7 +29,7 @@ object AssemblyCall {
     
     inline def setArguments(value: js.Array[AssemblyExpression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    inline def setArgumentsVarargs(value: AssemblyExpression*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: AssemblyExpression*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     

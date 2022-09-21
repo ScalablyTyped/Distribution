@@ -10,8 +10,8 @@ object hoistMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def hoistMethods(destination: js.Any, source: js.Any): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistMethods")(destination.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  inline def hoistMethods(destination: js.Any, source: js.Any, exclusions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistMethods")(destination.asInstanceOf[js.Any], source.asInstanceOf[js.Any], exclusions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def hoistMethods(destination: Any, source: Any): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistMethods")(destination.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def hoistMethods(destination: Any, source: Any, exclusions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistMethods")(destination.asInstanceOf[js.Any], source.asInstanceOf[js.Any], exclusions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  inline def unhoistMethods(source: js.Any, methodNames: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unhoistMethods")(source.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unhoistMethods(source: Any, methodNames: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unhoistMethods")(source.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

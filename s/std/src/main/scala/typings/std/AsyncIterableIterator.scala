@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AsyncIterableIterator[T]
   extends StObject
-     with AsyncIterator[T, js.Any, Unit]
+     with AsyncIterator[T, Any, Unit]

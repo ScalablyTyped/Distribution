@@ -26,7 +26,7 @@ object cardMod {
   
   @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/Stack/Card", JSImport.Default)
   @js.native
-  class default () extends Card
+  open class default () extends Card
   /* static members */
   object default {
     
@@ -42,9 +42,9 @@ object cardMod {
   
   @js.native
   trait Card
-    extends Component[Props, js.Object, js.Any] {
+    extends Component[Props, js.Object, Any] {
     
-    /* private */ var animate: js.Any = js.native
+    /* private */ var animate: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MCard(): Unit = js.native
@@ -55,46 +55,47 @@ object cardMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MCard(): Unit = js.native
     
-    /* private */ var contentRef: js.Any = js.native
+    /* private */ var contentRef: Any = js.native
     
-    /* private */ var gestureActivationCriteria: js.Any = js.native
+    /* private */ var gestureActivationCriteria: Any = js.native
     
-    /* private */ var getAnimateToValue: js.Any = js.native
+    /* private */ var getAnimateToValue: Any = js.native
     
-    /* private */ var getCardAnimationContext: js.Any = js.native
+    /* private */ var getCardAnimationContext: Any = js.native
     
-    /* private */ var getInterpolatedStyle: js.Any = js.native
+    /* private */ var getInterpolatedStyle: Any = js.native
     
-    /* private */ var handleEndInteraction: js.Any = js.native
+    /* private */ var handleEndInteraction: Any = js.native
     
-    /* private */ var handleGestureStateChange: js.Any = js.native
+    /* private */ var handleGestureStateChange: Any = js.native
     
-    /* private */ var handleStartInteraction: js.Any = js.native
+    /* private */ var handleStartInteraction: Any = js.native
     
-    /* private */ var interactionHandle: js.Any = js.native
+    /* private */ var interactionHandle: Any = js.native
     
-    /* private */ var inverted: js.Any = js.native
+    /* private */ var inverted: Any = js.native
     
-    /* private */ var isClosing: js.Any = js.native
+    /* private */ var isClosing: Any = js.native
     
-    /* private */ var isCurrentlyMounted: js.Any = js.native
+    /* private */ var isCurrentlyMounted: Any = js.native
     
-    /* private */ var isSwiping: js.Any = js.native
+    /* private */ var isSwiping: Any = js.native
     
-    /* private */ var lastToValue: js.Any = js.native
+    /* private */ var lastToValue: Any = js.native
     
-    /* private */ var layout: js.Any = js.native
+    /* private */ var layout: Any = js.native
     
-    /* private */ var pendingGestureCallback: js.Any = js.native
+    /* private */ var pendingGestureCallback: Any = js.native
     
-    /* private */ var setPointerEventsEnabled: js.Any = js.native
+    /* private */ var setPointerEventsEnabled: Any = js.native
   }
   
   trait Props
     extends StObject
        with ViewProps {
     
-    var children: ReactNode
+    @JSName("children")
+    var children_Props: ReactNode
     
     var closing: Boolean
     
@@ -102,7 +103,7 @@ object cardMod {
     
     var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var current: AnimatedInterpolation
+    var current: AnimatedInterpolation[Double | String]
     
     var gesture: Value
     
@@ -120,7 +121,7 @@ object cardMod {
     
     var layout: Layout
     
-    var next: js.UndefOr[AnimatedInterpolation] = js.undefined
+    var next: js.UndefOr[AnimatedInterpolation[Double | String]] = js.undefined
     
     def onClose(): Unit
     
@@ -150,7 +151,7 @@ object cardMod {
     
     inline def apply(
       closing: Boolean,
-      current: AnimatedInterpolation,
+      current: AnimatedInterpolation[Double | String],
       gesture: Value,
       gestureDirection: GestureDirection,
       gestureEnabled: Boolean,
@@ -191,7 +192,7 @@ object cardMod {
       
       inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
       
-      inline def setCurrent(value: AnimatedInterpolation): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: AnimatedInterpolation[Double | String]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
       inline def setGesture(value: Value): Self = StObject.set(x, "gesture", value.asInstanceOf[js.Any])
       
@@ -211,7 +212,7 @@ object cardMod {
       
       inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      inline def setNext(value: AnimatedInterpolation): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: AnimatedInterpolation[Double | String]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
       inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       

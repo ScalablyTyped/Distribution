@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructor
   * @param opt_options {H.map.Object.Options=} - The values to initialize this object
   */
-class Object ()
+open class Object ()
   extends StObject
      with typings.heremaps.H.map.Object {
   def this(opt_options: Options) = this()

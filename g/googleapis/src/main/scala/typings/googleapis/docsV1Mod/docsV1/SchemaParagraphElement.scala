@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A ParagraphElement describes content within a Paragraph.
-  */
 trait SchemaParagraphElement extends StObject {
   
   /**
@@ -20,10 +17,9 @@ trait SchemaParagraphElement extends StObject {
   var columnBreak: js.UndefOr[SchemaColumnBreak] = js.undefined
   
   /**
-    * The zero-base end index of this paragraph element, exclusive, in UTF-16
-    * code units.
+    * The zero-base end index of this paragraph element, exclusive, in UTF-16 code units.
     */
-  var endIndex: js.UndefOr[Double] = js.undefined
+  var endIndex: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * An equation paragraph element.
@@ -51,10 +47,19 @@ trait SchemaParagraphElement extends StObject {
   var pageBreak: js.UndefOr[SchemaPageBreak] = js.undefined
   
   /**
-    * The zero-based start index of this paragraph element, in UTF-16 code
-    * units.
+    * A paragraph element that links to a person or email address.
     */
-  var startIndex: js.UndefOr[Double] = js.undefined
+  var person: js.UndefOr[SchemaPerson] = js.undefined
+  
+  /**
+    * A paragraph element that links to a Google resource (such as a file in Drive, a Youtube video, a Calendar event, etc.)
+    */
+  var richLink: js.UndefOr[SchemaRichLink] = js.undefined
+  
+  /**
+    * The zero-based start index of this paragraph element, in UTF-16 code units.
+    */
+  var startIndex: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * A text run paragraph element.
@@ -80,6 +85,8 @@ object SchemaParagraphElement {
     
     inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
+    inline def setEndIndexNull: Self = StObject.set(x, "endIndex", null)
+    
     inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
     inline def setEquation(value: SchemaEquation): Self = StObject.set(x, "equation", value.asInstanceOf[js.Any])
@@ -102,7 +109,17 @@ object SchemaParagraphElement {
     
     inline def setPageBreakUndefined: Self = StObject.set(x, "pageBreak", js.undefined)
     
+    inline def setPerson(value: SchemaPerson): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
+    
+    inline def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
+    
+    inline def setRichLink(value: SchemaRichLink): Self = StObject.set(x, "richLink", value.asInstanceOf[js.Any])
+    
+    inline def setRichLinkUndefined: Self = StObject.set(x, "richLink", js.undefined)
+    
     inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    
+    inline def setStartIndexNull: Self = StObject.set(x, "startIndex", null)
     
     inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
     

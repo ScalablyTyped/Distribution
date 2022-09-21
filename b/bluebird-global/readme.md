@@ -10,15 +10,12 @@ Patches global.Promise to use bluebird and returns a bluebird instance
 | ------------------ | :-------------: |
 | Full name          | bluebird-global |
 | Keywords           | polyfill, promise-library, promise, performance, promises, promises-a, promises-aplus, async, await |
-| # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 209031 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 18130.333333333332 |
+| # stars            | 3.0 |
 
 ## Links
-- [Homepage](https://github.com/kaatt/bluebird-global#readme)
-- [Bugs](https://github.com/kaatt/bluebird-global/issues)
-- [Repository](https://github.com/kaatt/bluebird-global)
 - [Npm](https://www.npmjs.com/package/bluebird-global)
     
 

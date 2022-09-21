@@ -6,19 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("kdbxweb", "Int64")
 @js.native
-class Int64 protected () extends StObject {
+open class Int64 ()
+  extends typings.kdbxweb.int64Mod.Int64 {
+  def this(lo: Double) = this()
   def this(lo: Double, hi: Double) = this()
-  
-  var hi: Double = js.native
-  
-  var lo: Double = js.native
+  def this(lo: Unit, hi: Double) = this()
 }
-/* static members */
 object Int64 {
   
   @JSImport("kdbxweb", "Int64")
   @js.native
   val ^ : js.Any = js.native
   
-  inline def from(value: Double): Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[Int64]
+  /* static member */
+  inline def from(value: Double): typings.kdbxweb.int64Mod.Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.kdbxweb.int64Mod.Int64]
 }

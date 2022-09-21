@@ -22,23 +22,20 @@ trait PageSize extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** The standard list filter. */
-  var filter: js.UndefOr[String] = js.undefined
-  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
-  
-  /** The resource that owns the locations collection, if applicable. */
-  var name: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The standard list page size. */
+  /** The maximum number of items to return. If not specified, 100 is used. May not be larger than 1000. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** The standard list page token. */
+  /** The next_page_token value returned from a previous List request, if any. */
   var pageToken: js.UndefOr[String] = js.undefined
+  
+  /** The name of the project whose datasets should be listed. For example, `projects/{project_id}/locations/{location_id}`. */
+  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -54,8 +51,8 @@ trait PageSize extends StObject {
 }
 object PageSize {
   
-  inline def apply(name: String): PageSize = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(parent: String): PageSize = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageSize]
   }
   
@@ -81,15 +78,9 @@ object PageSize {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
-    
-    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
-    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-    
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
@@ -102,6 +93,8 @@ object PageSize {
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Context[T] extends StObject {
   
-  def Consumer(props: RenderableProps[`0`[T], js.Any]): VNode[js.Any] | Null
-  def Consumer(props: RenderableProps[`0`[T], js.Any], context: js.Any): VNode[js.Any] | Null
+  def Consumer(props: RenderableProps[`0`[T], Any]): VNode[Any] | Null
+  def Consumer(props: RenderableProps[`0`[T], Any], context: Any): VNode[Any] | Null
   @JSName("Consumer")
   var Consumer_Original: Consumer[T]
   
-  def Provider(props: RenderableProps[Value[T], js.Any]): VNode[js.Any] | Null
-  def Provider(props: RenderableProps[Value[T], js.Any], context: js.Any): VNode[js.Any] | Null
+  def Provider(props: RenderableProps[Value[T], Any]): VNode[Any] | Null
+  def Provider(props: RenderableProps[Value[T], Any], context: Any): VNode[Any] | Null
   @JSName("Provider")
   var Provider_Original: Provider[T]
   

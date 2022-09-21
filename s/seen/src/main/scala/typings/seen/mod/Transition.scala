@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Transition")
 @js.native
-class Transition () extends StObject {
+open class Transition () extends StObject {
   def this(options: `1`) = this()
   
   var defaults: Duration = js.native

@@ -141,6 +141,12 @@ trait Room extends StObject {
     */
   var energyCapacityAvailable: Double = js.native
   
+  def find[S /* <: AnyStructure */](`type`: FIND_HOSTILE_STRUCTURES): js.Array[S] = js.native
+  def find[S /* <: AnyStructure */](`type`: FIND_HOSTILE_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES, S]): js.Array[S] = js.native
+  def find[S /* <: AnyStructure */](`type`: FIND_MY_STRUCTURES): js.Array[S] = js.native
+  def find[S /* <: AnyStructure */](`type`: FIND_MY_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES, S]): js.Array[S] = js.native
+  def find[S /* <: AnyStructure */](`type`: FIND_STRUCTURES): js.Array[S] = js.native
+  def find[S /* <: AnyStructure */](`type`: FIND_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES, S]): js.Array[S] = js.native
   /**
     * Find all objects of the specified type in the room.
     * @param type One of the following constants:
@@ -165,18 +171,8 @@ trait Room extends StObject {
     * @param opts An object with additional options
     * @returns An array with the objects found.
     */
-  def find[K /* <: FindConstant */](`type`: K): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any
-  ] = js.native
-  def find[K /* <: FindConstant */](`type`: K, opts: FilterOptions[K]): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any
-  ] = js.native
-  def find[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES): js.Array[T] = js.native
-  def find[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES]): js.Array[T] = js.native
-  def find[T /* <: Structure[StructureConstant] */](`type`: FIND_MY_STRUCTURES): js.Array[T] = js.native
-  def find[T /* <: Structure[StructureConstant] */](`type`: FIND_MY_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES]): js.Array[T] = js.native
-  def find[T /* <: Structure[StructureConstant] */](`type`: FIND_STRUCTURES): js.Array[T] = js.native
-  def find[T /* <: Structure[StructureConstant] */](`type`: FIND_STRUCTURES, opts: FilterOptions[FIND_STRUCTURES]): js.Array[T] = js.native
+  def find[K /* <: FindConstant */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any */](`type`: K): js.Array[S] = js.native
+  def find[K /* <: FindConstant */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any */](`type`: K, opts: FilterOptions[K, S]): js.Array[S] = js.native
   
   /**
     * Find the exit direction en route to another room.
@@ -288,8 +284,8 @@ trait Room extends StObject {
   def lookForAtArea(`type`: deposit, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Deposit, deposit] = js.native
   def lookForAtArea(`type`: energy, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Resource[RESOURCE_ENERGY], energy] = js.native
   def lookForAtArea(`type`: energy, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Resource[RESOURCE_ENERGY], energy] = js.native
-  def lookForAtArea(`type`: exit, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[js.Any, exit] = js.native
-  def lookForAtArea(`type`: exit, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[js.Any, exit] = js.native
+  def lookForAtArea(`type`: exit, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Any, exit] = js.native
+  def lookForAtArea(`type`: exit, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Any, exit] = js.native
   def lookForAtArea(`type`: flag, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Flag, flag] = js.native
   def lookForAtArea(`type`: flag, top: Double, left: Double, bottom: Double, right: Double, asArray: `true`): LookForAtAreaResultArray[Flag, flag] = js.native
   def lookForAtArea(`type`: mineral, top: Double, left: Double, bottom: Double, right: Double, asArray: `false`): LookForAtAreaResultMatrix[Mineral[MineralConstant], mineral] = js.native
@@ -329,7 +325,7 @@ trait Room extends StObject {
   @JSName("lookForAtArea")
   def lookForAtArea_energy(`type`: energy, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Resource[RESOURCE_ENERGY], energy] = js.native
   @JSName("lookForAtArea")
-  def lookForAtArea_exit(`type`: exit, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[js.Any, exit] = js.native
+  def lookForAtArea_exit(`type`: exit, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Any, exit] = js.native
   @JSName("lookForAtArea")
   def lookForAtArea_flag(`type`: flag, top: Double, left: Double, bottom: Double, right: Double): LookForAtAreaResultMatrix[Flag, flag] = js.native
   @JSName("lookForAtArea")
@@ -389,11 +385,11 @@ trait Room extends StObject {
   @JSName("lookForAt")
   def lookForAt_energy(`type`: energy, x: Double, y: Double): js.Array[Resource[RESOURCE_ENERGY]] = js.native
   @JSName("lookForAt")
-  def lookForAt_exit(`type`: exit, target: HasRoomPosition): js.Array[js.Any] = js.native
+  def lookForAt_exit(`type`: exit, target: HasRoomPosition): js.Array[Any] = js.native
   @JSName("lookForAt")
-  def lookForAt_exit(`type`: exit, target: RoomPosition): js.Array[js.Any] = js.native
+  def lookForAt_exit(`type`: exit, target: RoomPosition): js.Array[Any] = js.native
   @JSName("lookForAt")
-  def lookForAt_exit(`type`: exit, x: Double, y: Double): js.Array[js.Any] = js.native
+  def lookForAt_exit(`type`: exit, x: Double, y: Double): js.Array[Any] = js.native
   @JSName("lookForAt")
   def lookForAt_flag(`type`: flag, target: HasRoomPosition): js.Array[Flag] = js.native
   @JSName("lookForAt")

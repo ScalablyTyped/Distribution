@@ -8,6 +8,8 @@ trait CreatePackagingGroupRequest extends StObject {
   
   var Authorization: js.UndefOr[typings.awsSdk.mediapackagevodMod.Authorization] = js.undefined
   
+  var EgressAccessLogs: js.UndefOr[typings.awsSdk.mediapackagevodMod.EgressAccessLogs] = js.undefined
+  
   /**
     * The ID of the PackagingGroup.
     */
@@ -27,6 +29,10 @@ object CreatePackagingGroupRequest {
     inline def setAuthorization(value: Authorization): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     
     inline def setAuthorizationUndefined: Self = StObject.set(x, "Authorization", js.undefined)
+    
+    inline def setEgressAccessLogs(value: EgressAccessLogs): Self = StObject.set(x, "EgressAccessLogs", value.asInstanceOf[js.Any])
+    
+    inline def setEgressAccessLogsUndefined: Self = StObject.set(x, "EgressAccessLogs", js.undefined)
     
     inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

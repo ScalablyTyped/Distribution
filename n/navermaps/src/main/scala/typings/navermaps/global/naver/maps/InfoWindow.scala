@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.InfoWindow")
 @js.native
-class InfoWindow protected ()
+open class InfoWindow protected ()
   extends StObject
      with typings.navermaps.naver.maps.InfoWindow {
   def this(options: InfoWindowOptions) = this()

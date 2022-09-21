@@ -1,7 +1,6 @@
 package typings.phaser.global.Phaser.GameObjects
 
 import typings.phaser.Phaser.Scene
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Phaser.GameObjects.GameObject")
 @js.native
-class GameObject protected ()
+open class GameObject protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.GameObject {
   /**
@@ -31,5 +30,5 @@ object GameObject {
   /* static member */
   @JSGlobal("Phaser.GameObjects.GameObject.RENDER_MASK")
   @js.native
-  val RENDER_MASK: integer = js.native
+  val RENDER_MASK: Double = js.native
 }

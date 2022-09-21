@@ -42,7 +42,7 @@ object SignatureHelpItems {
     
     inline def setItems(value: js.Array[SignatureHelpItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: SignatureHelpItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SignatureHelpItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setSelectedItemIndex(value: Double): Self = StObject.set(x, "selectedItemIndex", value.asInstanceOf[js.Any])
   }

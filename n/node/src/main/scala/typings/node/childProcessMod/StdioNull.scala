@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.node.nodeStrings.inherit
   - typings.node.nodeStrings.ignore
-  - typings.node.streamMod.Stream
+  - typings.node.nodeStreamMod.Stream
 */
 trait StdioNull extends StObject

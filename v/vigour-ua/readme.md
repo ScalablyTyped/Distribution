@@ -11,9 +11,9 @@ lightweight ua parser
 | Full name          | vigour-ua |
 | Keywords           | useragent, browserify |
 | # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 6801 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 623.0 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/vigour-io/ua#readme)

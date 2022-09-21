@@ -1,124 +1,104 @@
 package typings.minappEnv
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.minappEnv.anon.OptionalRecordcompletesuc
+import typings.minappEnv.minappEnvStrings.complete
+import typings.minappEnv.minappEnvStrings.fail
+import typings.minappEnv.minappEnvStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AnyArray = typings.minappEnv.Array[js.Any]
+type AnyArray = Array[Any]
 
-type AnyObject = org.scalablytyped.runtime.StringDictionary[js.Any]
+type AnyObject = StringDictionary[Any]
 
-type ClassDecorator = js.Function1[/* target */ typings.minappEnv.Function, typings.minappEnv.Function | scala.Unit]
+type ClassDecorator = js.Function1[/* target */ Function, Function | Unit]
 
 type Exclude[T, U] = T
 
-type IAPIFunction[T, P /* <: typings.minappEnv.IAPIParam[T] */] = js.Function1[/* param */ P, typings.minappEnv.Promise[T] | js.Any]
+type IAPIFunction[T, P /* <: IAPIParam[T] */] = js.Function1[/* param */ P, Promise[T] | Any]
 
-type IAnyObject = typings.minappEnv.Record[java.lang.String, js.Any]
+type IAnyObject = Record[java.lang.String, Any]
 
-type ICloudServices = org.scalablytyped.runtime.StringDictionary[typings.minappEnv.ICloudService]
+type ICloudServices = StringDictionary[ICloudService]
 
 type KVInfer[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof T ]: T[K]}
-  */ typings.minappEnv.minappEnvStrings.KVInfer & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.minappEnv.minappEnvStrings.KVInfer & TopLevel[T]
 
 type MethodDecorator = js.Function3[
-/* target */ typings.minappEnv.Object, 
+/* target */ Object, 
 /* propertyKey */ java.lang.String | js.Symbol, 
-/* descriptor */ typings.minappEnv.TypedPropertyDescriptor[js.Any], 
-typings.minappEnv.TypedPropertyDescriptor[js.Any] | scala.Unit]
+/* descriptor */ TypedPropertyDescriptor[Any], 
+TypedPropertyDescriptor[Any] | Unit]
 
-type OQ[T /* <: typings.minappEnv.anon.OptionalRecordcompletesuc */] = (typings.minappEnv.RQ[T] & (typings.minappEnv.Required[typings.minappEnv.Pick[T, typings.minappEnv.minappEnvStrings.success]])) | (typings.minappEnv.RQ[T] & (typings.minappEnv.Required[typings.minappEnv.Pick[T, typings.minappEnv.minappEnvStrings.fail]])) | (typings.minappEnv.RQ[T] & (typings.minappEnv.Required[typings.minappEnv.Pick[T, typings.minappEnv.minappEnvStrings.complete]])) | (typings.minappEnv.RQ[T] & (typings.minappEnv.Required[
-typings.minappEnv.Pick[
-  T, 
-  typings.minappEnv.minappEnvStrings.success | typings.minappEnv.minappEnvStrings.fail
-]])) | (typings.minappEnv.RQ[T] & (typings.minappEnv.Required[
-typings.minappEnv.Pick[
-  T, 
-  typings.minappEnv.minappEnvStrings.success | typings.minappEnv.minappEnvStrings.complete
-]])) | (typings.minappEnv.RQ[T] & (typings.minappEnv.Required[
-typings.minappEnv.Pick[
-  T, 
-  typings.minappEnv.minappEnvStrings.fail | typings.minappEnv.minappEnvStrings.complete
-]])) | (typings.minappEnv.RQ[T] & (typings.minappEnv.Required[
-typings.minappEnv.Pick[
-  T, 
-  typings.minappEnv.minappEnvStrings.fail | typings.minappEnv.minappEnvStrings.complete | typings.minappEnv.minappEnvStrings.success
-]]))
+type OQ[T /* <: OptionalRecordcompletesuc */] = (RQ[T] & (Required[Pick[T, success]])) | (RQ[T] & (Required[Pick[T, fail]])) | (RQ[T] & (Required[Pick[T, complete]])) | (RQ[T] & (Required[Pick[T, success | fail]])) | (RQ[T] & (Required[Pick[T, success | complete]])) | (RQ[T] & (Required[Pick[T, fail | complete]])) | (RQ[T] & (Required[Pick[T, fail | complete | success]]))
 
 type Optional[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof T ]:? T[K]}
-  */ typings.minappEnv.minappEnvStrings.Optional & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.minappEnv.minappEnvStrings.Optional & TopLevel[T]
 
 type ParameterDecorator = js.Function3[
-/* target */ typings.minappEnv.Object, 
+/* target */ Object, 
 /* propertyKey */ java.lang.String | js.Symbol, 
-/* parameterIndex */ scala.Double, 
-scala.Unit]
+/* parameterIndex */ Double, 
+Unit]
 
 /**
   * Make all properties in T optional
   */
 type Partial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in keyof T ]:? T[P]}
-  */ typings.minappEnv.minappEnvStrings.Partial & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.minappEnv.minappEnvStrings.Partial & TopLevel[T]
 
-type PartialOptional[T, K /* <: /* keyof T */ java.lang.String */] = (typings.minappEnv.Partial[typings.minappEnv.Pick[T, K]]) & (typings.minappEnv.Pick[T, typings.minappEnv.Exclude[/* keyof T */ java.lang.String, K]])
+type PartialOptional[T, K /* <: /* keyof T */ java.lang.String */] = (Partial[Pick[T, K]]) & (Pick[T, Exclude[/* keyof T */ java.lang.String, K]])
 
 /**
   * From T pick a set of properties K
   */
 type Pick[T, K /* <: /* keyof T */ java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in K ]: T[P]}
-  */ typings.minappEnv.minappEnvStrings.Pick & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.minappEnv.minappEnvStrings.Pick & TopLevel[T]
 
-type PromiseConstructorLike = org.scalablytyped.runtime.Instantiable1[
+type PromiseConstructorLike = Instantiable1[
 /* executor */ js.Function2[
-  /* resolve */ js.Function1[
-    /* value */ js.UndefOr[js.Object | typings.minappEnv.PromiseLike[js.Object]], 
-    scala.Unit
-  ], 
-  /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 
-  scala.Unit
+  /* resolve */ js.Function1[/* value */ js.UndefOr[js.Object | PromiseLike[js.Object]], Unit], 
+  /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
+  Unit
 ], 
-typings.minappEnv.PromiseLike[js.Object]]
+PromiseLike[js.Object]]
 
-type PropertyDecorator = js.Function2[
-/* target */ typings.minappEnv.Object, 
-/* propertyKey */ java.lang.String | js.Symbol, 
-scala.Unit]
+type PropertyDecorator = js.Function2[/* target */ Object, /* propertyKey */ java.lang.String | js.Symbol, Unit]
 
-type PropertyDescriptorMap = org.scalablytyped.runtime.StringDictionary[typings.minappEnv.PropertyDescriptor]
+type PropertyDescriptorMap = StringDictionary[PropertyDescriptor]
 
-type PropertyKey = java.lang.String | scala.Double | js.Symbol
+type PropertyKey = java.lang.String | Double | js.Symbol
 
-type RQ[T /* <: typings.minappEnv.anon.OptionalRecordcompletesuc */] = typings.minappEnv.Pick[
-T, 
-typings.minappEnv.Exclude[
-  /* keyof T */ java.lang.String, 
-  typings.minappEnv.minappEnvStrings.complete | typings.minappEnv.minappEnvStrings.success | typings.minappEnv.minappEnvStrings.fail
-]]
+type RQ[T /* <: OptionalRecordcompletesuc */] = Pick[T, Exclude[/* keyof T */ java.lang.String, complete | success | fail]]
 
 /**
   * Make all properties in T readonly
   */
 type Readonly[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {readonly [ P in keyof T ]: T[P]}
-  */ typings.minappEnv.minappEnvStrings.Readonly & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.minappEnv.minappEnvStrings.Readonly & TopLevel[T]
 
 /**
   * Construct a type with a set of properties K of type T
   */
 type Record[K /* <: java.lang.String */, T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in K ]: T}
-  */ typings.minappEnv.minappEnvStrings.Record & org.scalablytyped.runtime.TopLevel[js.Any]
+  */ typings.minappEnv.minappEnvStrings.Record & TopLevel[Any]
 
 /**
   * Utils
   */
 type Required[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in keyof T ]: -? T[P]}
-  */ typings.minappEnv.minappEnvStrings.Required & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.minappEnv.minappEnvStrings.Required & TopLevel[T]
 
-type Void[T] = js.UndefOr[T | scala.Null]
+type Void[T] = js.UndefOr[T | Null]

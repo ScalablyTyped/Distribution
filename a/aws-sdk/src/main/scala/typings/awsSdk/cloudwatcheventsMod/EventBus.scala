@@ -17,7 +17,7 @@ trait EventBus extends StObject {
   var Name: js.UndefOr[String] = js.undefined
   
   /**
-    * The permissions policy of the event bus, describing which other AWS accounts can write events to this event bus.
+    * The permissions policy of the event bus, describing which other Amazon Web Services accounts can write events to this event bus.
     */
   var Policy: js.UndefOr[String] = js.undefined
 }

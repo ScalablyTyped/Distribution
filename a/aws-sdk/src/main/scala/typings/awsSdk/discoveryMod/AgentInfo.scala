@@ -73,7 +73,7 @@ object AgentInfo {
     
     inline def setAgentNetworkInfoListUndefined: Self = StObject.set(x, "agentNetworkInfoList", js.undefined)
     
-    inline def setAgentNetworkInfoListVarargs(value: AgentNetworkInfo*): Self = StObject.set(x, "agentNetworkInfoList", js.Array(value :_*))
+    inline def setAgentNetworkInfoListVarargs(value: AgentNetworkInfo*): Self = StObject.set(x, "agentNetworkInfoList", js.Array(value*))
     
     inline def setAgentType(value: String): Self = StObject.set(x, "agentType", value.asInstanceOf[js.Any])
     

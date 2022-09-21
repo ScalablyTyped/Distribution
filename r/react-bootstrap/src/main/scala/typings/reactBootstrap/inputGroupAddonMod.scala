@@ -10,12 +10,10 @@ object inputGroupAddonMod {
   
   @JSImport("react-bootstrap/lib/InputGroupAddon", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[InputGroupAddonProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[InputGroupAddonProps, js.Object, Any]
   
-  @js.native
-  trait InputGroupAddon
-    extends Component[InputGroupAddonProps, js.Object, js.Any]
+  type InputGroupAddon = Component[InputGroupAddonProps, js.Object, Any]
   
   trait InputGroupAddonProps
     extends StObject

@@ -4,26 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response to a SourceSplitRequest.
-  */
 trait SchemaSourceSplitResponse extends StObject {
   
   /**
-    * If outcome is SPLITTING_HAPPENED, then this is a list of bundles into
-    * which the source was split. Otherwise this field is ignored. This list
-    * can be empty, which means the source represents an empty input.
+    * If outcome is SPLITTING_HAPPENED, then this is a list of bundles into which the source was split. Otherwise this field is ignored. This list can be empty, which means the source represents an empty input.
     */
   var bundles: js.UndefOr[js.Array[SchemaDerivedSource]] = js.undefined
   
   /**
-    * Indicates whether splitting happened and produced a list of bundles. If
-    * this is USE_CURRENT_SOURCE_AS_IS, the current source should be processed
-    * &quot;as is&quot; without splitting. &quot;bundles&quot; is ignored in
-    * this case. If this is SPLITTING_HAPPENED, then &quot;bundles&quot;
-    * contains a list of bundles into which the source was split.
+    * Indicates whether splitting happened and produced a list of bundles. If this is USE_CURRENT_SOURCE_AS_IS, the current source should be processed "as is" without splitting. "bundles" is ignored in this case. If this is SPLITTING_HAPPENED, then "bundles" contains a list of bundles into which the source was split.
     */
-  var outcome: js.UndefOr[String] = js.undefined
+  var outcome: js.UndefOr[String | Null] = js.undefined
   
   /**
     * DEPRECATED in favor of bundles.
@@ -43,9 +34,11 @@ object SchemaSourceSplitResponse {
     
     inline def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
     
-    inline def setBundlesVarargs(value: SchemaDerivedSource*): Self = StObject.set(x, "bundles", js.Array(value :_*))
+    inline def setBundlesVarargs(value: SchemaDerivedSource*): Self = StObject.set(x, "bundles", js.Array(value*))
     
     inline def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
+    
+    inline def setOutcomeNull: Self = StObject.set(x, "outcome", null)
     
     inline def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
     
@@ -53,6 +46,6 @@ object SchemaSourceSplitResponse {
     
     inline def setShardsUndefined: Self = StObject.set(x, "shards", js.undefined)
     
-    inline def setShardsVarargs(value: SchemaSourceSplitShard*): Self = StObject.set(x, "shards", js.Array(value :_*))
+    inline def setShardsVarargs(value: SchemaSourceSplitShard*): Self = StObject.set(x, "shards", js.Array(value*))
   }
 }

@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("draggabilly", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Draggabilly {
     def this(element: String) = this()

@@ -8,5 +8,5 @@ object aliasMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/_Alias", "_Alias")
   @js.native
-  val Alias: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Alias: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GeographicTransformationStepConstructor
   extends StObject
-     with Instantiable0[GeographicTransformationStep]
-     with Instantiable1[/* properties */ js.Any, GeographicTransformationStep]
+     with /**
+  * Represents a step in the process of transforming coordinates from one geographic coordinate system to another.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-GeographicTransformationStep.html)
+  */
+Instantiable0[GeographicTransformationStep]
+     with Instantiable1[/* properties */ Any, GeographicTransformationStep]

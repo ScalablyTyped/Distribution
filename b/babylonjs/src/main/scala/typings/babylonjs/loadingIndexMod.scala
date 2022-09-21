@@ -26,7 +26,7 @@ object loadingIndexMod {
   
   @JSImport("babylonjs/Loading/index", "BabylonFileLoaderConfiguration")
   @js.native
-  class BabylonFileLoaderConfiguration ()
+  open class BabylonFileLoaderConfiguration ()
     extends typings.babylonjs.pluginsIndexMod.BabylonFileLoaderConfiguration
   /* static members */
   object BabylonFileLoaderConfiguration {
@@ -36,14 +36,14 @@ object loadingIndexMod {
     val ^ : js.Any = js.native
     
     /**
-      * The loader does not allow injecting custom physix engine into the plugins.
+      * The loader does not allow injecting custom physics engine into the plugins.
       * Unfortunately in ES6, we need to manually inject them into the plugin.
       * So you could set this variable to your engine import to make it work.
       */
     @JSImport("babylonjs/Loading/index", "BabylonFileLoaderConfiguration.LoaderInjectedPhysicsEngine")
     @js.native
-    def LoaderInjectedPhysicsEngine: js.Any = js.native
-    inline def LoaderInjectedPhysicsEngine_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LoaderInjectedPhysicsEngine")(x.asInstanceOf[js.Any])
+    def LoaderInjectedPhysicsEngine: Any = js.native
+    inline def LoaderInjectedPhysicsEngine_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LoaderInjectedPhysicsEngine")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Loading/index", "_BabylonLoaderRegistered")
@@ -54,7 +54,7 @@ object loadingIndexMod {
   
   @JSImport("babylonjs/Loading/index", "DefaultLoadingScreen")
   @js.native
-  class DefaultLoadingScreen protected ()
+  open class DefaultLoadingScreen protected ()
     extends typings.babylonjs.loadingScreenMod.DefaultLoadingScreen {
     /**
       * Creates a new default loading screen
@@ -89,7 +89,7 @@ object loadingIndexMod {
   
   @JSImport("babylonjs/Loading/index", "SceneLoader")
   @js.native
-  class SceneLoader ()
+  open class SceneLoader ()
     extends typings.babylonjs.sceneLoaderMod.SceneLoader
   /* static members */
   object SceneLoader {
@@ -117,7 +117,7 @@ object loadingIndexMod {
       onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
       onError: js.UndefOr[
           Nullable[
-            js.Function3[/* scene */ Scene, /* message */ String, /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function3[/* scene */ Scene, /* message */ String, /* exception */ js.UndefOr[Any], Unit]
           ]
         ],
       pluginExtension: js.UndefOr[Nullable[String]]
@@ -260,7 +260,7 @@ object loadingIndexMod {
     ): js.Promise[Scene] = (^.asInstanceOf[js.Dynamic].applyDynamic("AppendAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Scene]]
     
     /**
-      * Detailled logging while loading
+      * Detailed logging while loading
       */
     @JSImport("babylonjs/Loading/index", "SceneLoader.DETAILED_LOGGING")
     @js.native
@@ -298,12 +298,12 @@ object loadingIndexMod {
       scene: js.UndefOr[Nullable[Scene]],
       overwriteAnimations: js.UndefOr[Boolean],
       animationGroupLoadingMode: js.UndefOr[SceneLoaderAnimationGroupLoadingMode],
-      targetConverter: js.UndefOr[Nullable[js.Function1[/* target */ js.Any, js.Any]]],
+      targetConverter: js.UndefOr[Nullable[js.Function1[/* target */ Any, Any]]],
       onSuccess: js.UndefOr[Nullable[js.Function1[/* scene */ Scene, Unit]]],
       onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
       onError: js.UndefOr[
           Nullable[
-            js.Function3[/* scene */ Scene, /* message */ String, /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function3[/* scene */ Scene, /* message */ String, /* exception */ js.UndefOr[Any], Unit]
           ]
         ],
       pluginExtension: js.UndefOr[Nullable[String]]
@@ -329,12 +329,12 @@ object loadingIndexMod {
       scene: js.UndefOr[Nullable[Scene]],
       overwriteAnimations: js.UndefOr[Boolean],
       animationGroupLoadingMode: js.UndefOr[SceneLoaderAnimationGroupLoadingMode],
-      targetConverter: js.UndefOr[Nullable[js.Function1[/* target */ js.Any, js.Any]]],
+      targetConverter: js.UndefOr[Nullable[js.Function1[/* target */ Any, Any]]],
       onSuccess: js.UndefOr[Nullable[js.Function1[/* scene */ Scene, Unit]]],
       onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
       onError: js.UndefOr[
           Nullable[
-            js.Function3[/* scene */ Scene, /* message */ String, /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function3[/* scene */ Scene, /* message */ String, /* exception */ js.UndefOr[Any], Unit]
           ]
         ],
       pluginExtension: js.UndefOr[Nullable[String]]
@@ -353,7 +353,7 @@ object loadingIndexMod {
       * @returns The loaded plugin
       */
     inline def ImportMesh(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: js.UndefOr[String | File],
       scene: js.UndefOr[Nullable[Scene]],
@@ -361,7 +361,7 @@ object loadingIndexMod {
       onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
       onError: js.UndefOr[
           Nullable[
-            js.Function3[/* scene */ Scene, /* message */ String, /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function3[/* scene */ Scene, /* message */ String, /* exception */ js.UndefOr[Any], Unit]
           ]
         ],
       pluginExtension: js.UndefOr[Nullable[String]]
@@ -377,10 +377,10 @@ object loadingIndexMod {
       * @param pluginExtension the extension used to determine the plugin
       * @returns The loaded list of imported meshes, particle systems, skeletons, and animation groups
       */
-    inline def ImportMeshAsync(meshNames: js.Any, rootUrl: String): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
-    inline def ImportMeshAsync(meshNames: js.Any, rootUrl: String, sceneFilename: String): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+    inline def ImportMeshAsync(meshNames: Any, rootUrl: String): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+    inline def ImportMeshAsync(meshNames: Any, rootUrl: String, sceneFilename: String): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: String,
       scene: Unit,
@@ -388,23 +388,23 @@ object loadingIndexMod {
       pluginExtension: Nullable[String]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: String,
       scene: Unit,
       onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: String,
       scene: Unit,
       onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
       pluginExtension: Nullable[String]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
-    inline def ImportMeshAsync(meshNames: js.Any, rootUrl: String, sceneFilename: String, scene: Nullable[Scene]): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+    inline def ImportMeshAsync(meshNames: Any, rootUrl: String, sceneFilename: String, scene: Nullable[Scene]): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: String,
       scene: Nullable[Scene],
@@ -412,14 +412,14 @@ object loadingIndexMod {
       pluginExtension: Nullable[String]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: String,
       scene: Nullable[Scene],
       onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: String,
       scene: Nullable[Scene],
@@ -427,7 +427,7 @@ object loadingIndexMod {
       pluginExtension: Nullable[String]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: Unit,
       scene: Unit,
@@ -435,23 +435,23 @@ object loadingIndexMod {
       pluginExtension: Nullable[String]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: Unit,
       scene: Unit,
       onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: Unit,
       scene: Unit,
       onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
       pluginExtension: Nullable[String]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
-    inline def ImportMeshAsync(meshNames: js.Any, rootUrl: String, sceneFilename: Unit, scene: Nullable[Scene]): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+    inline def ImportMeshAsync(meshNames: Any, rootUrl: String, sceneFilename: Unit, scene: Nullable[Scene]): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: Unit,
       scene: Nullable[Scene],
@@ -459,23 +459,23 @@ object loadingIndexMod {
       pluginExtension: Nullable[String]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: Unit,
       scene: Nullable[Scene],
       onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: Unit,
       scene: Nullable[Scene],
       onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
       pluginExtension: Nullable[String]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
-    inline def ImportMeshAsync(meshNames: js.Any, rootUrl: String, sceneFilename: File): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+    inline def ImportMeshAsync(meshNames: Any, rootUrl: String, sceneFilename: File): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: File,
       scene: Unit,
@@ -483,23 +483,23 @@ object loadingIndexMod {
       pluginExtension: Nullable[String]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: File,
       scene: Unit,
       onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: File,
       scene: Unit,
       onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
       pluginExtension: Nullable[String]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
-    inline def ImportMeshAsync(meshNames: js.Any, rootUrl: String, sceneFilename: File, scene: Nullable[Scene]): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
+    inline def ImportMeshAsync(meshNames: Any, rootUrl: String, sceneFilename: File, scene: Nullable[Scene]): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: File,
       scene: Nullable[Scene],
@@ -507,14 +507,14 @@ object loadingIndexMod {
       pluginExtension: Nullable[String]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: File,
       scene: Nullable[Scene],
       onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
     ): js.Promise[ISceneLoaderAsyncResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("ImportMeshAsync")(meshNames.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ISceneLoaderAsyncResult]]
     inline def ImportMeshAsync(
-      meshNames: js.Any,
+      meshNames: Any,
       rootUrl: String,
       sceneFilename: File,
       scene: Nullable[Scene],
@@ -548,7 +548,7 @@ object loadingIndexMod {
       onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
       onError: js.UndefOr[
           Nullable[
-            js.Function3[/* scene */ Scene, /* message */ String, /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function3[/* scene */ Scene, /* message */ String, /* exception */ js.UndefOr[Any], Unit]
           ]
         ],
       pluginExtension: js.UndefOr[Nullable[String]]
@@ -573,7 +573,7 @@ object loadingIndexMod {
       onProgress: js.UndefOr[Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]],
       onError: js.UndefOr[
           Nullable[
-            js.Function3[/* scene */ Scene, /* message */ String, /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function3[/* scene */ Scene, /* message */ String, /* exception */ js.UndefOr[Any], Unit]
           ]
         ],
       pluginExtension: js.UndefOr[Nullable[String]]
@@ -668,6 +668,48 @@ object loadingIndexMod {
     inline def LoadAssetContainerAsync(
       rootUrl: String,
       sceneFilename: Unit,
+      scene: Nullable[Scene],
+      onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+      pluginExtension: Nullable[String]
+    ): js.Promise[AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AssetContainer]]
+    inline def LoadAssetContainerAsync(rootUrl: String, sceneFilename: File): js.Promise[AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AssetContainer]]
+    inline def LoadAssetContainerAsync(
+      rootUrl: String,
+      sceneFilename: File,
+      scene: Unit,
+      onProgress: Unit,
+      pluginExtension: Nullable[String]
+    ): js.Promise[AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AssetContainer]]
+    inline def LoadAssetContainerAsync(
+      rootUrl: String,
+      sceneFilename: File,
+      scene: Unit,
+      onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+    ): js.Promise[AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AssetContainer]]
+    inline def LoadAssetContainerAsync(
+      rootUrl: String,
+      sceneFilename: File,
+      scene: Unit,
+      onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
+      pluginExtension: Nullable[String]
+    ): js.Promise[AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AssetContainer]]
+    inline def LoadAssetContainerAsync(rootUrl: String, sceneFilename: File, scene: Nullable[Scene]): js.Promise[AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AssetContainer]]
+    inline def LoadAssetContainerAsync(
+      rootUrl: String,
+      sceneFilename: File,
+      scene: Nullable[Scene],
+      onProgress: Unit,
+      pluginExtension: Nullable[String]
+    ): js.Promise[AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], pluginExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AssetContainer]]
+    inline def LoadAssetContainerAsync(
+      rootUrl: String,
+      sceneFilename: File,
+      scene: Nullable[Scene],
+      onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]]
+    ): js.Promise[AssetContainer] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadAssetContainerAsync")(rootUrl.asInstanceOf[js.Any], sceneFilename.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AssetContainer]]
+    inline def LoadAssetContainerAsync(
+      rootUrl: String,
+      sceneFilename: File,
       scene: Nullable[Scene],
       onProgress: Nullable[js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]],
       pluginExtension: Nullable[String]
@@ -845,45 +887,50 @@ object loadingIndexMod {
     @js.native
     val SUMMARY_LOGGING: Double = js.native
     
+    @JSImport("babylonjs/Loading/index", "SceneLoader._FormatErrorMessage")
+    @js.native
+    def _FormatErrorMessage: Any = js.native
+    inline def _FormatErrorMessage_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FormatErrorMessage")(x.asInstanceOf[js.Any])
+    
     @JSImport("babylonjs/Loading/index", "SceneLoader._GetDirectLoad")
     @js.native
-    def _GetDirectLoad: js.Any = js.native
-    inline def _GetDirectLoad_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetDirectLoad")(x.asInstanceOf[js.Any])
+    def _GetDirectLoad: Any = js.native
+    inline def _GetDirectLoad_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetDirectLoad")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Loading/index", "SceneLoader._GetFileInfo")
     @js.native
-    def _GetFileInfo: js.Any = js.native
-    inline def _GetFileInfo_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFileInfo")(x.asInstanceOf[js.Any])
+    def _GetFileInfo: Any = js.native
+    inline def _GetFileInfo_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFileInfo")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Loading/index", "SceneLoader._GetPluginForDirectLoad")
     @js.native
-    def _GetPluginForDirectLoad: js.Any = js.native
-    inline def _GetPluginForDirectLoad_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetPluginForDirectLoad")(x.asInstanceOf[js.Any])
+    def _GetPluginForDirectLoad: Any = js.native
+    inline def _GetPluginForDirectLoad_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetPluginForDirectLoad")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Loading/index", "SceneLoader._GetPluginForExtension")
     @js.native
-    def _GetPluginForExtension: js.Any = js.native
-    inline def _GetPluginForExtension_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetPluginForExtension")(x.asInstanceOf[js.Any])
+    def _GetPluginForExtension: Any = js.native
+    inline def _GetPluginForExtension_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetPluginForExtension")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Loading/index", "SceneLoader._GetPluginForFilename")
     @js.native
-    def _GetPluginForFilename: js.Any = js.native
-    inline def _GetPluginForFilename_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetPluginForFilename")(x.asInstanceOf[js.Any])
+    def _GetPluginForFilename: Any = js.native
+    inline def _GetPluginForFilename_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetPluginForFilename")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Loading/index", "SceneLoader._LoadData")
     @js.native
-    def _LoadData: js.Any = js.native
-    inline def _LoadData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LoadData")(x.asInstanceOf[js.Any])
+    def _LoadData: Any = js.native
+    inline def _LoadData_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LoadData")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Loading/index", "SceneLoader._registeredPlugins")
+    @JSImport("babylonjs/Loading/index", "SceneLoader._RegisteredPlugins")
     @js.native
-    def _registeredPlugins: js.Any = js.native
-    inline def _registeredPlugins_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_registeredPlugins")(x.asInstanceOf[js.Any])
+    def _RegisteredPlugins: Any = js.native
+    inline def _RegisteredPlugins_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RegisteredPlugins")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Loading/index", "SceneLoader._showingLoadingScreen")
+    @JSImport("babylonjs/Loading/index", "SceneLoader._ShowingLoadingScreen")
     @js.native
-    def _showingLoadingScreen: js.Any = js.native
-    inline def _showingLoadingScreen_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_showingLoadingScreen")(x.asInstanceOf[js.Any])
+    def _ShowingLoadingScreen: Any = js.native
+    inline def _ShowingLoadingScreen_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ShowingLoadingScreen")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Loading/index", "SceneLoaderAnimationGroupLoadingMode")
@@ -904,7 +951,7 @@ object loadingIndexMod {
   
   @JSImport("babylonjs/Loading/index", "SceneLoaderFlags")
   @js.native
-  class SceneLoaderFlags ()
+  open class SceneLoaderFlags ()
     extends typings.babylonjs.sceneLoaderFlagsMod.SceneLoaderFlags
   /* static members */
   object SceneLoaderFlags {
@@ -915,22 +962,22 @@ object loadingIndexMod {
     
     @JSImport("babylonjs/Loading/index", "SceneLoaderFlags._CleanBoneMatrixWeights")
     @js.native
-    def _CleanBoneMatrixWeights: js.Any = js.native
-    inline def _CleanBoneMatrixWeights_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CleanBoneMatrixWeights")(x.asInstanceOf[js.Any])
+    def _CleanBoneMatrixWeights: Any = js.native
+    inline def _CleanBoneMatrixWeights_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CleanBoneMatrixWeights")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Loading/index", "SceneLoaderFlags._ForceFullSceneLoadingForIncremental")
     @js.native
-    def _ForceFullSceneLoadingForIncremental: js.Any = js.native
-    inline def _ForceFullSceneLoadingForIncremental_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ForceFullSceneLoadingForIncremental")(x.asInstanceOf[js.Any])
+    def _ForceFullSceneLoadingForIncremental: Any = js.native
+    inline def _ForceFullSceneLoadingForIncremental_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ForceFullSceneLoadingForIncremental")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Loading/index", "SceneLoaderFlags._LoggingLevel")
+    @js.native
+    def _LoggingLevel: Any = js.native
+    inline def _LoggingLevel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LoggingLevel")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Loading/index", "SceneLoaderFlags._ShowLoadingScreen")
     @js.native
-    def _ShowLoadingScreen: js.Any = js.native
-    inline def _ShowLoadingScreen_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ShowLoadingScreen")(x.asInstanceOf[js.Any])
-    
-    @JSImport("babylonjs/Loading/index", "SceneLoaderFlags._loggingLevel")
-    @js.native
-    def _loggingLevel: js.Any = js.native
-    inline def _loggingLevel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_loggingLevel")(x.asInstanceOf[js.Any])
+    def _ShowLoadingScreen: Any = js.native
+    inline def _ShowLoadingScreen_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ShowLoadingScreen")(x.asInstanceOf[js.Any])
   }
 }

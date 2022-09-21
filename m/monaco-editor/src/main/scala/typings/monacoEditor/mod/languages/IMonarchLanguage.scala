@@ -5,7 +5,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IMonarchLanguage extends StObject {
+trait IMonarchLanguage
+  extends StObject
+     with /**
+  * Other keys that can be referred to by the tokenizer.
+  */
+/* key */ StringDictionary[Any] {
   
   /**
     * for example [['{','}','delimiter.curly']]
@@ -21,6 +26,12 @@ trait IMonarchLanguage extends StObject {
     * is the language case insensitive?
     */
   var ignoreCase: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * include line feeds (in the form of a \n character) at the end of lines
+    * Defaults to false
+    */
+  var includeLF: js.UndefOr[Boolean] = js.undefined
   
   /**
     * start symbol in the tokenizer (by default the first entry is used)
@@ -55,7 +66,7 @@ object IMonarchLanguage {
     
     inline def setBracketsUndefined: Self = StObject.set(x, "brackets", js.undefined)
     
-    inline def setBracketsVarargs(value: IMonarchLanguageBracket*): Self = StObject.set(x, "brackets", js.Array(value :_*))
+    inline def setBracketsVarargs(value: IMonarchLanguageBracket*): Self = StObject.set(x, "brackets", js.Array(value*))
     
     inline def setDefaultToken(value: String): Self = StObject.set(x, "defaultToken", value.asInstanceOf[js.Any])
     
@@ -64,6 +75,10 @@ object IMonarchLanguage {
     inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
     inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+    
+    inline def setIncludeLF(value: Boolean): Self = StObject.set(x, "includeLF", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeLFUndefined: Self = StObject.set(x, "includeLF", js.undefined)
     
     inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     

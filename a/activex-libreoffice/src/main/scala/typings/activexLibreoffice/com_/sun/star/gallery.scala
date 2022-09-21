@@ -82,13 +82,13 @@ object gallery {
       addPropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: String => js.Any,
+      getPropertyValue: String => Any,
       getType: () => Double,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (String, js.Any) => Unit
+      setPropertyValue: (String, Any) => Unit
     ): GalleryItem = {
       val __obj = js.Dynamic.literal(Drawing = Drawing.asInstanceOf[js.Any], GalleryItemType = GalleryItemType.asInstanceOf[js.Any], Graphic = Graphic.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Thumbnail = Thumbnail.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getType = js.Any.fromFunction0(getType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
       __obj.asInstanceOf[GalleryItem]
@@ -151,14 +151,14 @@ object gallery {
       ElementNames: SafeArray[String],
       ElementType: `type`,
       acquire: () => Unit,
-      getByName: String => js.Any,
+      getByName: String => Any,
       getElementNames: () => SafeArray[String],
       getElementType: () => `type`,
       hasByName: String => Boolean,
       hasElements: () => Boolean,
-      initialize: SeqEquiv[js.Any] => Unit,
+      initialize: SeqEquiv[Any] => Unit,
       insertNewByName: String => XGalleryTheme,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeByName: String => Unit
     ): GalleryThemeProvider = {
@@ -192,7 +192,7 @@ object gallery {
       Type: Double,
       acquire: () => Unit,
       getType: () => Double,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XGalleryItem = {
       val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getType = js.Any.fromFunction0(getType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -283,7 +283,7 @@ object gallery {
       ElementType: `type`,
       Name: String,
       acquire: () => Unit,
-      getByIndex: Double => js.Any,
+      getByIndex: Double => Any,
       getCount: () => Double,
       getElementType: () => `type`,
       getName: () => String,
@@ -291,7 +291,7 @@ object gallery {
       insertDrawingByIndex: (XComponent, Double) => Double,
       insertGraphicByIndex: (XGraphic, Double) => Double,
       insertURLByIndex: (String, Double) => Double,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeByIndex: Double => Unit,
       update: () => Unit
@@ -331,7 +331,7 @@ object gallery {
     /**
       * creates a new Gallery theme and adds it to the collection.
       * @param ThemeName The name of the Gallery theme to be added to the collection. The name must be unique.
-      * @returns {@link XGalleryTheme} The created theme interface
+      * @returns The created theme interface
       * @see com.sun.star.container.ElementExistException
       */
     def insertNewByName(ThemeName: String): XGalleryTheme
@@ -349,13 +349,13 @@ object gallery {
       ElementNames: SafeArray[String],
       ElementType: `type`,
       acquire: () => Unit,
-      getByName: String => js.Any,
+      getByName: String => Any,
       getElementNames: () => SafeArray[String],
       getElementType: () => `type`,
       hasByName: String => Boolean,
       hasElements: () => Boolean,
       insertNewByName: String => XGalleryTheme,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeByName: String => Unit
     ): XGalleryThemeProvider = {

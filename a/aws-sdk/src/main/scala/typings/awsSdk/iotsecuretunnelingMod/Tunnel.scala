@@ -9,7 +9,7 @@ trait Tunnel extends StObject {
   /**
     * The time when the tunnel was created.
     */
-  var createdAt: js.UndefOr[DateType] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of the tunnel.
@@ -29,7 +29,7 @@ trait Tunnel extends StObject {
   /**
     * The last time the tunnel was updated.
     */
-  var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The connection state of the source application.
@@ -52,7 +52,7 @@ trait Tunnel extends StObject {
   var timeoutConfig: js.UndefOr[TimeoutConfig] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of a tunnel. The tunnel ARN format is arn:aws:tunnel:&lt;region&gt;:&lt;account-id&gt;:tunnel/&lt;tunnel-id&gt; 
+    * The Amazon Resource Name (ARN) of a tunnel.
     */
   var tunnelArn: js.UndefOr[TunnelArn] = js.undefined
   
@@ -70,7 +70,7 @@ object Tunnel {
   
   extension [Self <: Tunnel](x: Self) {
     
-    inline def setCreatedAt(value: DateType): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -86,7 +86,7 @@ object Tunnel {
     
     inline def setDestinationConnectionStateUndefined: Self = StObject.set(x, "destinationConnectionState", js.undefined)
     
-    inline def setLastUpdatedAt(value: DateType): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
@@ -102,7 +102,7 @@ object Tunnel {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTimeoutConfig(value: TimeoutConfig): Self = StObject.set(x, "timeoutConfig", value.asInstanceOf[js.Any])
     

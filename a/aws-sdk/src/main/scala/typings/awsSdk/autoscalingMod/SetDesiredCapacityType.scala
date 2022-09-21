@@ -9,7 +9,7 @@ trait SetDesiredCapacityType extends StObject {
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName
+  var AutoScalingGroupName: XmlStringMaxLen255
   
   /**
     * The desired capacity is the initial capacity of the Auto Scaling group after this operation completes and the capacity it attempts to maintain.
@@ -23,14 +23,14 @@ trait SetDesiredCapacityType extends StObject {
 }
 object SetDesiredCapacityType {
   
-  inline def apply(AutoScalingGroupName: ResourceName, DesiredCapacity: AutoScalingGroupDesiredCapacity): SetDesiredCapacityType = {
+  inline def apply(AutoScalingGroupName: XmlStringMaxLen255, DesiredCapacity: AutoScalingGroupDesiredCapacity): SetDesiredCapacityType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], DesiredCapacity = DesiredCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDesiredCapacityType]
   }
   
   extension [Self <: SetDesiredCapacityType](x: Self) {
     
-    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     inline def setDesiredCapacity(value: AutoScalingGroupDesiredCapacity): Self = StObject.set(x, "DesiredCapacity", value.asInstanceOf[js.Any])
     

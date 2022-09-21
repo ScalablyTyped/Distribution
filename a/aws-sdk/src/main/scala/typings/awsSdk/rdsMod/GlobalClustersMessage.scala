@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GlobalClustersMessage extends StObject {
   
   /**
-    *  The list of global clusters returned by this request. 
+    * The list of global clusters returned by this request.
     */
   var GlobalClusters: js.UndefOr[GlobalClusterList] = js.undefined
   
   /**
-    *  An optional pagination token provided by a previous DescribeGlobalClusters request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
+    * An optional pagination token provided by a previous DescribeGlobalClusters request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
   var Marker: js.UndefOr[String] = js.undefined
 }
@@ -29,7 +29,7 @@ object GlobalClustersMessage {
     
     inline def setGlobalClustersUndefined: Self = StObject.set(x, "GlobalClusters", js.undefined)
     
-    inline def setGlobalClustersVarargs(value: GlobalCluster*): Self = StObject.set(x, "GlobalClusters", js.Array(value :_*))
+    inline def setGlobalClustersVarargs(value: GlobalCluster*): Self = StObject.set(x, "GlobalClusters", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.tarn
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,10 +8,10 @@ object promiseInspectionMod {
   
   @JSImport("tarn/dist/PromiseInspection", "PromiseInspection")
   @js.native
-  class PromiseInspection[T] protected () extends StObject {
+  open class PromiseInspection[T] protected () extends StObject {
     def this(args: PromiseInspectionArgs[T]) = this()
     
-    var _error: Error | Unit = js.native
+    var _error: js.Error | Unit = js.native
     
     var _value: T | Unit = js.native
     
@@ -20,7 +19,7 @@ object promiseInspectionMod {
     
     def isRejected(): Boolean = js.native
     
-    def reason(): Unit | Error = js.native
+    def reason(): Unit | js.Error = js.native
     
     def value(): Unit | T = js.native
   }
@@ -37,7 +36,7 @@ object promiseInspectionMod {
       __obj.asInstanceOf[typings.tarn.anon.Error[T]]
     }
     
-    inline def Value[T](error: Error): typings.tarn.anon.Value[T] = {
+    inline def Value[T](error: js.Error): typings.tarn.anon.Value[T] = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.tarn.anon.Value[T]]
     }

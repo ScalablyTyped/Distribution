@@ -1,7 +1,6 @@
 package typings.vscodeLanguageclient.mod
 
 import typings.vscodeLanguageclient.vscodeLanguageclientStrings.textDocumentSlashdocumentSymbol
-import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.DocumentSymbolParams
 import typings.vscodeLanguageserverProtocol.protocolMod.DocumentSymbolRegistrationOptions
 import org.scalablytyped.runtime.StObject
@@ -10,22 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DocumentSymbolRequest {
   
+  @JSImport("vscode-languageclient", "DocumentSymbolRequest.messageDirection")
+  @js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  
   @JSImport("vscode-languageclient", "DocumentSymbolRequest.method")
   @js.native
   val method: textDocumentSlashdocumentSymbol = js.native
   
-  /** @deprecated Use DocumentSymbolRequest.type */
-  @JSImport("vscode-languageclient", "DocumentSymbolRequest.resultType")
-  @js.native
-  val resultType: typings.vscodeJsonrpc.mod.ProgressType[
-    js.Array[
-      typings.vscodeLanguageserverTypes.mod.DocumentSymbol | typings.vscodeLanguageserverTypes.mod.SymbolInformation
-    ]
-  ] = js.native
-  
   @JSImport("vscode-languageclient", "DocumentSymbolRequest.type")
   @js.native
-  val `type`: ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
     DocumentSymbolParams, 
     (js.Array[
       typings.vscodeLanguageserverTypes.mod.DocumentSymbol | typings.vscodeLanguageserverTypes.mod.SymbolInformation

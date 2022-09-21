@@ -41,9 +41,9 @@ trait Bridge extends StObject {
   
   var SandboxKey: String
   
-  var SecondaryIPAddresses: js.UndefOr[js.Any] = js.undefined
+  var SecondaryIPAddresses: js.UndefOr[Any] = js.undefined
   
-  var SecondaryIPv6Addresses: js.UndefOr[js.Any] = js.undefined
+  var SecondaryIPv6Addresses: js.UndefOr[Any] = js.undefined
 }
 object Bridge {
   
@@ -107,11 +107,11 @@ object Bridge {
     
     inline def setSandboxKey(value: String): Self = StObject.set(x, "SandboxKey", value.asInstanceOf[js.Any])
     
-    inline def setSecondaryIPAddresses(value: js.Any): Self = StObject.set(x, "SecondaryIPAddresses", value.asInstanceOf[js.Any])
+    inline def setSecondaryIPAddresses(value: Any): Self = StObject.set(x, "SecondaryIPAddresses", value.asInstanceOf[js.Any])
     
     inline def setSecondaryIPAddressesUndefined: Self = StObject.set(x, "SecondaryIPAddresses", js.undefined)
     
-    inline def setSecondaryIPv6Addresses(value: js.Any): Self = StObject.set(x, "SecondaryIPv6Addresses", value.asInstanceOf[js.Any])
+    inline def setSecondaryIPv6Addresses(value: Any): Self = StObject.set(x, "SecondaryIPv6Addresses", value.asInstanceOf[js.Any])
     
     inline def setSecondaryIPv6AddressesUndefined: Self = StObject.set(x, "SecondaryIPv6Addresses", js.undefined)
   }

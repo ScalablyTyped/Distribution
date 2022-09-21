@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Fn")
 @js.native
-class Fn () extends StObject
+open class Fn () extends StObject
 /* static members */
 object Fn {
   

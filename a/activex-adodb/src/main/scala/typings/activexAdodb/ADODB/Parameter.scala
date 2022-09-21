@@ -9,7 +9,7 @@ trait Parameter extends StObject {
   /* private */ @JSName("ADODB.Parameter_typekey")
   var ADODBDotParameter_typekey: Parameter
   
-  def AppendChunk(Val: js.Any): Unit
+  def AppendChunk(Val: Any): Unit
   
   /** Sum of one or more of the values in the **ParameterAttributesEnum** enum */
   var Attributes: ParameterAttributesEnum
@@ -31,13 +31,13 @@ trait Parameter extends StObject {
   
   var Type: DataTypeEnum
   
-  var Value: js.Any
+  var Value: Any
 }
 object Parameter {
   
   inline def apply(
     ADODBDotParameter_typekey: Parameter,
-    AppendChunk: js.Any => Unit,
+    AppendChunk: Any => Unit,
     Attributes: ParameterAttributesEnum,
     Direction: ParameterDirectionEnum,
     Name: String,
@@ -46,7 +46,7 @@ object Parameter {
     Properties: Properties,
     Size: Double,
     Type: DataTypeEnum,
-    Value: js.Any
+    Value: Any
   ): Parameter = {
     val __obj = js.Dynamic.literal(AppendChunk = js.Any.fromFunction1(AppendChunk), Attributes = Attributes.asInstanceOf[js.Any], Direction = Direction.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NumericScale = NumericScale.asInstanceOf[js.Any], Precision = Precision.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("ADODB.Parameter_typekey")(ADODBDotParameter_typekey.asInstanceOf[js.Any])
@@ -57,7 +57,7 @@ object Parameter {
     
     inline def setADODBDotParameter_typekey(value: Parameter): Self = StObject.set(x, "ADODB.Parameter_typekey", value.asInstanceOf[js.Any])
     
-    inline def setAppendChunk(value: js.Any => Unit): Self = StObject.set(x, "AppendChunk", js.Any.fromFunction1(value))
+    inline def setAppendChunk(value: Any => Unit): Self = StObject.set(x, "AppendChunk", js.Any.fromFunction1(value))
     
     inline def setAttributes(value: ParameterAttributesEnum): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
@@ -75,6 +75,6 @@ object Parameter {
     
     inline def setType(value: DataTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -10,10 +10,10 @@ The lodash method `_.bind` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.bind |
 | Keywords           | lodash-modularized, bind |
-| # releases         | 0 |
-| # dependents       | 45 |
-| # downloads        | 57057027 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6389927.666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

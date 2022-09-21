@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("blessed", "Widgets.Program")
 @js.native
-class Program () extends StObject {
+open class Program () extends StObject {
   
   /**
     * Wrap the given text in terminal formatting codes corresponding to the given attribute

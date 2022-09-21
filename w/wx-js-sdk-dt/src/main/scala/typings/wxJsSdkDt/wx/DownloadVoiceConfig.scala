@@ -22,11 +22,11 @@ trait DownloadVoiceConfig
     * 下载成功回调
     */
   @JSName("success")
-  def success_MDownloadVoiceConfig(res: js.Any): Unit
+  def success_MDownloadVoiceConfig(res: Any): Unit
 }
 object DownloadVoiceConfig {
   
-  inline def apply(serverId: String, success: js.Any => Unit): DownloadVoiceConfig = {
+  inline def apply(serverId: String, success: Any => Unit): DownloadVoiceConfig = {
     val __obj = js.Dynamic.literal(serverId = serverId.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[DownloadVoiceConfig]
   }
@@ -39,6 +39,6 @@ object DownloadVoiceConfig {
     
     inline def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
     
-    inline def setSuccess(value: js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DevicePicker extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_devicepickerdismissed(`type`: devicepickerdismissed, listener: TypedEventHandler[DevicePicker, js.Any]): Unit = js.native
+  def addEventListener_devicepickerdismissed(`type`: devicepickerdismissed, listener: TypedEventHandler[DevicePicker, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_deviceselected(`type`: deviceselected, listener: TypedEventHandler[DevicePicker, DeviceSelectedEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -39,10 +39,10 @@ trait DevicePicker extends StObject {
   def hide(): Unit = js.native
   
   /** Indicates that the device picker was light dismissed by the user. Light dismiss happens when the user clicks somewhere other than the picker UI and the picker UI disappears. */
-  def ondevicepickerdismissed(ev: js.Any & WinRTEvent[DevicePicker]): Unit = js.native
+  def ondevicepickerdismissed(ev: Any & WinRTEvent[DevicePicker]): Unit = js.native
   /** Indicates that the device picker was light dismissed by the user. Light dismiss happens when the user clicks somewhere other than the picker UI and the picker UI disappears. */
   @JSName("ondevicepickerdismissed")
-  var ondevicepickerdismissed_Original: TypedEventHandler[DevicePicker, js.Any] = js.native
+  var ondevicepickerdismissed_Original: TypedEventHandler[DevicePicker, Any] = js.native
   
   /** Indicates that the user selected a device in the picker. */
   def ondeviceselected(ev: DeviceSelectedEventArgs & WinRTEvent[DevicePicker]): Unit = js.native
@@ -70,9 +70,9 @@ trait DevicePicker extends StObject {
     */
   def pickSingleDeviceAsync(selection: Rect, placement: Placement): IPromiseWithIAsyncOperation[DeviceInformation] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_devicepickerdismissed(`type`: devicepickerdismissed, listener: TypedEventHandler[DevicePicker, js.Any]): Unit = js.native
+  def removeEventListener_devicepickerdismissed(`type`: devicepickerdismissed, listener: TypedEventHandler[DevicePicker, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_deviceselected(`type`: deviceselected, listener: TypedEventHandler[DevicePicker, DeviceSelectedEventArgs]): Unit = js.native
   @JSName("removeEventListener")

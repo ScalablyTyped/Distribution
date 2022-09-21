@@ -19,7 +19,7 @@ trait MoveOrCopyRuleAction extends StObject {
   /* private */ @JSName("Outlook.MoveOrCopyRuleAction_typekey")
   var OutlookDotMoveOrCopyRuleAction_typekey: MoveOrCopyRuleAction
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -32,7 +32,7 @@ object MoveOrCopyRuleAction {
     Enabled: Boolean,
     Folder: Folder,
     OutlookDotMoveOrCopyRuleAction_typekey: MoveOrCopyRuleAction,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): MoveOrCopyRuleAction = {
     val __obj = js.Dynamic.literal(ActionType = ActionType.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Folder = Folder.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object MoveOrCopyRuleAction {
     
     inline def setOutlookDotMoveOrCopyRuleAction_typekey(value: MoveOrCopyRuleAction): Self = StObject.set(x, "Outlook.MoveOrCopyRuleAction_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

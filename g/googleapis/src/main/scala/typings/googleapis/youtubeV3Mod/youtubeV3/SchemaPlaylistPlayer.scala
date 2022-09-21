@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaPlaylistPlayer extends StObject {
   
   /**
-    * An &lt;iframe&gt; tag that embeds a player that will play the playlist.
+    * An <iframe\> tag that embeds a player that will play the playlist.
     */
-  var embedHtml: js.UndefOr[String] = js.undefined
+  var embedHtml: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPlaylistPlayer {
   
@@ -21,6 +21,8 @@ object SchemaPlaylistPlayer {
   extension [Self <: SchemaPlaylistPlayer](x: Self) {
     
     inline def setEmbedHtml(value: String): Self = StObject.set(x, "embedHtml", value.asInstanceOf[js.Any])
+    
+    inline def setEmbedHtmlNull: Self = StObject.set(x, "embedHtml", null)
     
     inline def setEmbedHtmlUndefined: Self = StObject.set(x, "embedHtml", js.undefined)
   }

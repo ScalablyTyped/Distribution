@@ -12,7 +12,7 @@ trait ListPackagesResult extends StObject {
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    *  The list of returned  PackageSummary  objects. 
+    *  The list of returned PackageSummary objects. 
     */
   var packages: js.UndefOr[PackageSummaryList] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListPackagesResult {
     
     inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
     
-    inline def setPackagesVarargs(value: PackageSummary*): Self = StObject.set(x, "packages", js.Array(value :_*))
+    inline def setPackagesVarargs(value: PackageSummary*): Self = StObject.set(x, "packages", js.Array(value*))
   }
 }

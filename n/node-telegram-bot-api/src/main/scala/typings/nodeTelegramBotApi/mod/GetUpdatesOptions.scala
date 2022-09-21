@@ -27,7 +27,7 @@ object GetUpdatesOptions {
     
     inline def setAllowed_updatesUndefined: Self = StObject.set(x, "allowed_updates", js.undefined)
     
-    inline def setAllowed_updatesVarargs(value: String*): Self = StObject.set(x, "allowed_updates", js.Array(value :_*))
+    inline def setAllowed_updatesVarargs(value: String*): Self = StObject.set(x, "allowed_updates", js.Array(value*))
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

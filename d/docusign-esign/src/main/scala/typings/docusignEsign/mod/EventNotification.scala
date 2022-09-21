@@ -110,7 +110,7 @@ object EventNotification {
     
     inline def setEnvelopeEventsUndefined: Self = StObject.set(x, "envelopeEvents", js.undefined)
     
-    inline def setEnvelopeEventsVarargs(value: (/* For which envelope events should your webhook be called? */ EnvelopeEvent)*): Self = StObject.set(x, "envelopeEvents", js.Array(value :_*))
+    inline def setEnvelopeEventsVarargs(value: (/* For which envelope events should your webhook be called? */ EnvelopeEvent)*): Self = StObject.set(x, "envelopeEvents", js.Array(value*))
     
     inline def setEventData(value: ConnectEventData): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
     
@@ -156,7 +156,7 @@ object EventNotification {
     
     inline def setRecipientEventsUndefined: Self = StObject.set(x, "recipientEvents", js.undefined)
     
-    inline def setRecipientEventsVarargs(value: RecipientEvent*): Self = StObject.set(x, "recipientEvents", js.Array(value :_*))
+    inline def setRecipientEventsVarargs(value: RecipientEvent*): Self = StObject.set(x, "recipientEvents", js.Array(value*))
     
     inline def setRequireAcknowledgment(value: String): Self = StObject.set(x, "requireAcknowledgment", value.asInstanceOf[js.Any])
     

@@ -12,6 +12,11 @@ trait CreateChannelRequest extends StObject {
   var AppInstanceArn: ChimeArn
   
   /**
+    * The AppInstanceUserArn of the user that makes the API call.
+    */
+  var ChimeBearer: js.UndefOr[ChimeArn] = js.undefined
+  
+  /**
     * The client token for the request. An Idempotency token.
     */
   var ClientRequestToken: typings.awsSdk.chimeMod.ClientRequestToken
@@ -32,10 +37,13 @@ trait CreateChannelRequest extends StObject {
   var Name: NonEmptyResourceName
   
   /**
-    * The channel's privacy level: PUBLIC or PRIVATE. Private channels aren't discoverable by users outside the channel. Public channels are discoverable by anyone in the app instance.
+    * The channel's privacy level: PUBLIC or PRIVATE. Private channels aren't discoverable by users outside the channel. Public channels are discoverable by anyone in the AppInstance.
     */
   var Privacy: js.UndefOr[ChannelPrivacy] = js.undefined
   
+  /**
+    * The tags for the creation request.
+    */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateChannelRequest {
@@ -48,6 +56,10 @@ object CreateChannelRequest {
   extension [Self <: CreateChannelRequest](x: Self) {
     
     inline def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearerUndefined: Self = StObject.set(x, "ChimeBearer", js.undefined)
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
@@ -69,6 +81,6 @@ object CreateChannelRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

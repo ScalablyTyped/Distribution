@@ -67,9 +67,9 @@ trait Stream extends StObject {
   def adjustAudioMixingVolume(level: Double): Unit = js.native
   
   /**
-    * Closes the Audio/Video Stream
+    * Closes the Stream
     *
-    * This method closes the video/audio stream.
+    * This method closes the stream.
     *
     * After calling this method, the camera and microphone authorizations are reset.
     */
@@ -84,7 +84,7 @@ trait Stream extends StObject {
     *
     * It works only when the audio flag is `true` in the stream.
     */
-  def disableAudio(): Unit = js.native
+  def disableAudio(): Boolean = js.native
   
   /**
     * Disables the Video
@@ -95,7 +95,7 @@ trait Stream extends StObject {
     *
     * It works only when the video flag is `true` in the stream.
     */
-  def disableVideo(): Unit = js.native
+  def disableVideo(): Boolean = js.native
   
   /**
     * Enables the Audio
@@ -108,7 +108,7 @@ trait Stream extends StObject {
     *
     * By default the audio track is enabled. If you call {@link disableAudio}, call this method to enable audio.
     */
-  def enableAudio(): Unit = js.native
+  def enableAudio(): Boolean = js.native
   
   /**
     * Enables the Video
@@ -122,7 +122,7 @@ trait Stream extends StObject {
     * By default the video track is enabled. If you call {@link disableVideo}, call this method to enable video.
     *
     */
-  def enableVideo(): Unit = js.native
+  def enableVideo(): Boolean = js.native
   
   /**
     * Retrieves the Current Audio Level
@@ -345,7 +345,7 @@ trait Stream extends StObject {
     * - `true`: Success.
     * - `false`: Failure. Possible reasons include no audio, stream not initialized, and audio track already disabled.
     */
-  def muteAudio(): Unit = js.native
+  def muteAudio(): Boolean = js.native
   
   /**
     * Disables the Video
@@ -360,17 +360,17 @@ trait Stream extends StObject {
     * - `true`: Success.
     * - `false`: Failure. Possible reasons include no video, stream not initialized, and video track already disabled.
     */
-  def muteVideo(): Unit = js.native
+  def muteVideo(): Boolean = js.native
   
   /** Occurs when the user gives access to the camera and microphone. */
   @JSName("on")
-  def on_accessAllowed(event: accessAllowed, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_accessAllowed(event: accessAllowed, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /** Occurs when the user denies access to the camera and microphone. */
   @JSName("on")
-  def on_accessDenied(event: accessDenied, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_accessDenied(event: accessDenied, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /** Occurs when the last audio mixing stream playback finishes. */
   @JSName("on")
-  def on_audioMixingFinished(event: audioMixingFinished, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_audioMixingFinished(event: audioMixingFinished, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when the audio mixing stream playback starts/resumes.
     *
@@ -378,14 +378,14 @@ trait Stream extends StObject {
     * This callback is triggered when the audio mixing stream is loaded and starts playing, or when the paused audio mixing stream resumes playing.
     */
   @JSName("on")
-  def on_audioMixingPlayed(event: audioMixingPlayed, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_audioMixingPlayed(event: audioMixingPlayed, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when the audio track no longer provides data to the stream.
     *
     * Possible reasons include device removal and deauthorization. See [Media​Stream​Track​.onended](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/onended).
     */
   @JSName("on")
-  def on_audioTrackEnded(event: audioTrackEnded, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_audioTrackEnded(event: audioTrackEnded, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when the stream playback status changes.
     *
@@ -428,17 +428,17 @@ trait Stream extends StObject {
     *
     */
   @JSName("on")
-  def on_playerstatuschange(event: `player-status-change`, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_playerstatuschange(event: `player-status-change`, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /** Occurs when screen-sharing stops. */
   @JSName("on")
-  def on_stopScreenSharing(event: stopScreenSharing, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_stopScreenSharing(event: stopScreenSharing, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   /**
     * Occurs when the video track no longer provides data to the stream.
     *
     * Possible reasons include device removal and deauthorization. See [Media​Stream​Track​.onended](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/onended).
     */
   @JSName("on")
-  def on_videoTrackEnded(event: videoTrackEnded, callback: js.Function1[/* evt */ js.Any, Unit]): Unit = js.native
+  def on_videoTrackEnded(event: videoTrackEnded, callback: js.Function1[/* evt */ Any, Unit]): Unit = js.native
   
   /**
     * Pauses all audio effects.
@@ -668,7 +668,7 @@ trait Stream extends StObject {
     *
     * This method needs to be triggered by a user gesture. See [Autoplay Policy Changes](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes) for more information.
     */
-  def resume(): js.Promise[js.Any] = js.native
+  def resume(): js.Promise[Any] = js.native
   
   /**
     * Resumes playing all audio effects.
@@ -741,12 +741,6 @@ trait Stream extends StObject {
   def setAudioOutput(deviceId: String, onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   def setAudioOutput(deviceId: String, onSuccess: Unit, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   
-  @JSName("setAudioProfile")
-  def setAudioProfile_highquality(profile: high_quality): Unit = js.native
-  @JSName("setAudioProfile")
-  def setAudioProfile_highqualitystereo(profile: high_quality_stereo): Unit = js.native
-  @JSName("setAudioProfile")
-  def setAudioProfile_musicstandard(profile: music_standard): Unit = js.native
   /**
     * Sets the Audio Profile
     *
@@ -760,7 +754,7 @@ trait Stream extends StObject {
     *
     * - Firefox does not support setting the audio encoding rate.
     * - Safari does not support stereo audio.
-    * - Google Chrome does not support playing stereo audio, but supports sending a stereo audio stream. If the audio profile is set to stereo, the `AEC`, `AGC`, and `ANS` options in {@link audioProcessing} are automatically disabled.
+    * - On Google Chrome, if the audio profile is set to stereo, the `AEC`, `AGC`, and `ANS` options in {@link audioProcessing} are automatically disabled.
     *
     * @param profile The audio profile has the following options:
     * - `"speech_low_quality"`: Sample rate 16 kHz, mono, encoding rate 24 Kbps.
@@ -770,12 +764,9 @@ trait Stream extends StObject {
     * - `"high_quality"`: Sample rate 48 kHz, mono, encoding rate 128 Kbps.
     * - `"high_quality_stereo"`: Sample rate 48 kHz, stereo, encoding rate 192 Kbps.
     */
-  @JSName("setAudioProfile")
-  def setAudioProfile_speechlowquality(profile: speech_low_quality): Unit = js.native
-  @JSName("setAudioProfile")
-  def setAudioProfile_speechstandard(profile: speech_standard): Unit = js.native
-  @JSName("setAudioProfile")
-  def setAudioProfile_standardstereo(profile: standard_stereo): Unit = js.native
+  def setAudioProfile(
+    profile: speech_low_quality | speech_standard | music_standard | standard_stereo | high_quality | high_quality_stereo
+  ): Unit = js.native
   
   /**
     * Sets the Volume
@@ -784,7 +775,7 @@ trait Stream extends StObject {
     *
     * It can be called either before or after the remote stream is played.
     *
-    * @param volume Ranges from 0 (muted) to 100 (loudest).
+    * @param volume Ranges from 0 (muted) to 100 (loudest). The default value is 100.
     */
   def setAudioVolume(volume: Double): Unit = js.native
   
@@ -793,6 +784,11 @@ trait Stream extends StObject {
     *
     * **Since**
     * <br>&emsp;&emsp;&emsp;*3.0.0*
+    *
+    * This method is asynchronous, and must be called with `Promise` or `async`/`await` keywords.
+    *
+    * The image enhancement function involves real-time compute-intensive processing. Though it is based on hardware acceleration, the processing has high GPU and CPU overheads.
+    * For low-end devices, enabling image enhancement affects the system performance. When the video resolution is set as 360p, 720p or higher, and the frame rate is set as 30 fps or 15 fps, do not enable image enhancement.
     *
     * This method supports the following browsers:
     *   * Safari 12 or later
@@ -803,33 +799,38 @@ trait Stream extends StObject {
     *
     * - This function does not support mobile devices.
     * - If the dual-stream mode is enabled ({@link enableDualStream}), the image enhancement options apply only to the high-quality video stream.
+    * - To enable image enhancement for video streams created by {@link replaceTrack} or {@link addTrack}, call `setBeautyEffectOptions` after the method call of `replaceTrack` or `addTrack` succeeds.
     * - If image enhancement is enabled, you must call this method to disable it before calling the following methods:
     *   - {@link leave}
     *   - {@link stop}
+    *   - {@link replaceTrack}
     *   - {@link removeTrack}
     *   - {@link unpublish}
-    * - The image enhancement function involves real-time compute-intensive processing. Though it is based on hardware acceleration, the processing has high GPU and CPU overheads.
-    * For low-end devices, enabling image enhancement affects the system performance. When the video resolution is set as 360p, 720p or higher, and the frame rate is set as 30 fps or 15 fps, do not enable image enhancement.
+    * - To enable image enhancement immediately after creating a video stream, call this method in the `Client.on("stream-published")` callback.
     *
-    * @param enabled Sets whether to enable image enhancement:
+    * @param enabled Whether to enable image enhancement:
     *
-    * - `true`: Enables image enhancement.
-    * - `false`: (Default) Disables image enhancement.
+    * - `true`: Enable image enhancement.
+    * - `false`: (Default) Disable image enhancement.
     * @param options The image enhancement options.
+    * @returns A promise object, which is resolved after the method call succeeds.
     *
     * @example **Sample code**
     *
     * ``` javascript
-    * stream.setBeautyEffectOptions(true, {
-    *     lighteningContrastLevel: 1,
-    *     lighteningLevel: 0.7,
-    *     smoothnessLevel: 0.5,
-    *     rednessLevel: 0.1
-    * });
-    *
+    * var streamPublishedHandler = async function() {
+    *     await localStream.setBeautyEffectOptions(true, {
+    *         lighteningContrastLevel: 1,
+    *         lighteningLevel: 0.7,
+    *         smoothnessLevel: 0.5,
+    *         rednessLevel: 0.1
+    *     });
+    *     client.off("stream-published", streamPublishedHandler);
+    * }
+    * client.on("stream-published", streamPublishedHandler);
     * ```
     */
-  def setBeautyEffectOptions(enabled: Boolean, options: LighteningContrastLevel): Unit = js.native
+  def setBeautyEffectOptions(enabled: Boolean, options: LighteningContrastLevel): js.Promise[Unit] = js.native
   
   /**
     * Sets the volume of the audio effects.
@@ -871,34 +872,36 @@ trait Stream extends StObject {
     * **Note**
     *
     * - This method works for local streams only.
-    * - Do not call this method when publishing streams.
-    * - If you enable dual streams ({@link enableDualStream}), we do not support increasing the video resolution in this method. This is a [known issue](https://bugs.chromium.org/p/chromium/issues/detail?id=768205) of Chromium.
+    * - Do not call this method during the execution of the {@link publish} method.
+    * - In the dual-stream mode ({@link enableDualStream}), this method sets the video profile of the high‑quality video stream. To set the video profile of the low‑quality video stream, call {@link setLowStreamParameter} before {@link publish}.
     * - On some iOS devices, when you update the video encoder configuration after {@link Stream.init}, black bars might appear around your video.
     * - The actual resolution, frame rate, and bitrate depend on the device, see [Media​Stream​Track​.apply​Constraints()](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/applyConstraints) for more information.
     * - This method works on Chrome 63 or later and is not fully functional on other browsers with the following issues:
-    *   - The frame rate setting does not take effect on Safari 12 or earlier.
+    *   - The frame rate setting does not take effect on Safari 13 or earlier.
     *   - Safari 11 or earlier only supports specific resolutions.
     *   - Safari on iOS does not support low resolutions in H.264 codec.
+    *   - Firefox only supports a fixed frame rate, 30 fps.
+    * - For custom streams (the streams created by setting the `audioSource` and `videoSource` properties), the resolution and frame rate setting does not take effect.
     *
     * @example **Sample code**
     * ```javascript
-    *      stream.setVideoEncoderConfiguration({
-    *          // Video resolution
-    *          resolution: {
-    *              width: 640,
-    *              height: 480
-    *          },
-    *          // Video encoding frame rate. We recommend 15 fps. Do not set this to a value greater than 30.
-    *          frameRate: {
-    *              min: 15,
-    *              max: 30
-    *          },
-    *          // Video encoding bitrate.
-    *          bitrate: {
-    *              min: 1000,
-    *              max: 5000
-    *          }
-    *      });
+    * stream.setVideoEncoderConfiguration({
+    *     // Video resolution
+    *     resolution: {
+    *         width: 640,
+    *         height: 480
+    *     },
+    *     // Video encoding frame rate. We recommend 15 fps. Do not set this to a value greater than 30.
+    *     frameRate: {
+    *         min: 15,
+    *         max: 30
+    *     },
+    *     // Video encoding bitrate.
+    *     bitrate: {
+    *         min: 1000,
+    *         max: 5000
+    *     }
+    * });
     * ```
     *
     */
@@ -913,11 +916,13 @@ trait Stream extends StObject {
     *
     * **Note**
     *
-    * - This method works for local streams only.
+    * - This method works for local streams only. Do not  call this method for remote streams.
     * - Do not call this method when publishing streams.
     * - If you enable dual streams ({@link enableDualStream}), we do not support increasing the video resolution in this method. This is a [known issue](https://bugs.chromium.org/p/chromium/issues/detail?id=768205) of Chromium.
     * - On some iOS devices, when you update the video profile after {@link Stream.init}, black bars might appear around your video.
     * - Changing the video profile after {@link Stream.init} works only on Chrome 63 or later and Safari 11 or later.
+    * - For custom streams (the streams created by setting the `audioSource` and `videoSource` properties), the resolution and frame rate setting does not take effect.
+    *
     * @example `setVideoProfile("480p");`
     * @param profile The video profile. See the following table for its definition and supported profiles in different scenarios.
     *
@@ -991,15 +996,14 @@ trait Stream extends StObject {
     *         return;
     *     }
     *     // Processes after stream playing
-    * })
-    *
+    * });
     * ```
     */
   def startAudioMixing(options: CacheResource): Unit = js.native
   def startAudioMixing(options: CacheResource, callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
   
   /**
-    * Stops the Audio/Video Stream Playback
+    * Stops the Stream Playback
     *
     * Call this method to stop playing the stream set by {@link Stream.play}.
     */
@@ -1024,8 +1028,6 @@ trait Stream extends StObject {
   
   /**
     * Stops Audio Mixing
-    *
-    * When the audio mixing file playback is stopped, the SDK triggers the `Stream.on("audioMixingFinished")` callback on the local client.
     */
   def stopAudioMixing(): Unit = js.native
   def stopAudioMixing(callback: js.Function1[/* err */ String | Null, Unit]): Unit = js.native
@@ -1075,32 +1077,20 @@ trait Stream extends StObject {
     * @param onSuccess The callback when the method succeeds.
     * @param onFailure The callback when the method fails.
     */
-  @JSName("switchDevice")
-  def switchDevice_audio(`type`: audio, deviceId: String): Unit = js.native
-  @JSName("switchDevice")
-  def switchDevice_audio(`type`: audio, deviceId: String, onSuccess: js.Function0[Unit]): Unit = js.native
-  @JSName("switchDevice")
-  def switchDevice_audio(
-    `type`: audio,
+  def switchDevice(`type`: audio | video, deviceId: String): Unit = js.native
+  def switchDevice(`type`: audio | video, deviceId: String, onSuccess: js.Function0[Unit]): Unit = js.native
+  def switchDevice(
+    `type`: audio | video,
     deviceId: String,
     onSuccess: js.Function0[Unit],
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
-  @JSName("switchDevice")
-  def switchDevice_audio(`type`: audio, deviceId: String, onSuccess: Unit, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
-  @JSName("switchDevice")
-  def switchDevice_video(`type`: video, deviceId: String): Unit = js.native
-  @JSName("switchDevice")
-  def switchDevice_video(`type`: video, deviceId: String, onSuccess: js.Function0[Unit]): Unit = js.native
-  @JSName("switchDevice")
-  def switchDevice_video(
-    `type`: video,
+  def switchDevice(
+    `type`: audio | video,
     deviceId: String,
-    onSuccess: js.Function0[Unit],
+    onSuccess: Unit,
     onFailure: js.Function1[/* err */ String, Unit]
   ): Unit = js.native
-  @JSName("switchDevice")
-  def switchDevice_video(`type`: video, deviceId: String, onSuccess: Unit, onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   
   /**
     * Releases a specified preloaded audio effect from the memory.
@@ -1136,7 +1126,7 @@ trait Stream extends StObject {
     * - `true`: Success.
     * - `false`: Failure. Possible reasons include no audio, stream not initialized, and audio track already enabled.
     */
-  def unmuteAudio(): Unit = js.native
+  def unmuteAudio(): Boolean = js.native
   
   /**
     * Enables the Video
@@ -1152,5 +1142,5 @@ trait Stream extends StObject {
     * - `true`: Success.
     * - `false`: Failure. Possible reasons include no video, stream not initialized, and video track already enabled.
     */
-  def unmuteVideo(): Unit = js.native
+  def unmuteVideo(): Boolean = js.native
 }

@@ -24,6 +24,6 @@ object AudioSelectorGroup {
     
     inline def setAudioSelectorNamesUndefined: Self = StObject.set(x, "AudioSelectorNames", js.undefined)
     
-    inline def setAudioSelectorNamesVarargs(value: stringMin1*): Self = StObject.set(x, "AudioSelectorNames", js.Array(value :_*))
+    inline def setAudioSelectorNamesVarargs(value: stringMin1*): Self = StObject.set(x, "AudioSelectorNames", js.Array(value*))
   }
 }

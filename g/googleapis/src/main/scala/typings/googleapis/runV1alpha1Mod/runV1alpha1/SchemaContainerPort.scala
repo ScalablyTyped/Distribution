@@ -4,41 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * ContainerPort represents a network port in a single container.
-  */
 trait SchemaContainerPort extends StObject {
   
   /**
-    * Number of port to expose on the pod&#39;s IP address. This must be a
-    * valid port number, 0 &lt; x &lt; 65536.
+    * (Optional) Port number the container listens on. This must be a valid port number, 0 < x < 65536.
     */
-  var containerPort: js.UndefOr[Double] = js.undefined
+  var containerPort: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * What host IP to bind the external port to. +optional
+    * (Optional) If specified, used to specify which protocol to use. Allowed values are "http1" and "h2c".
     */
-  var hostIP: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Number of port to expose on the host. If specified, this must be a valid
-    * port number, 0 &lt; x &lt; 65536. If HostNetwork is specified, this must
-    * match ContainerPort. Most containers do not need this. +optional
+    * (Optional) Protocol for port. Must be "TCP". Defaults to "TCP".
     */
-  var hostPort: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * If specified, this must be an IANA_SVC_NAME and unique within the pod.
-    * Each named port in a pod must have a unique name. Name for the port that
-    * can be referred to by services. +optional
-    */
-  var name: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Protocol for port. Must be UDP or TCP. Defaults to &quot;TCP&quot;.
-    * +optional
-    */
-  var protocol: js.UndefOr[String] = js.undefined
+  var protocol: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaContainerPort {
   
@@ -51,21 +32,19 @@ object SchemaContainerPort {
     
     inline def setContainerPort(value: Double): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     
+    inline def setContainerPortNull: Self = StObject.set(x, "containerPort", null)
+    
     inline def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
     
-    inline def setHostIP(value: String): Self = StObject.set(x, "hostIP", value.asInstanceOf[js.Any])
-    
-    inline def setHostIPUndefined: Self = StObject.set(x, "hostIP", js.undefined)
-    
-    inline def setHostPort(value: Double): Self = StObject.set(x, "hostPort", value.asInstanceOf[js.Any])
-    
-    inline def setHostPortUndefined: Self = StObject.set(x, "hostPort", js.undefined)
-    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolNull: Self = StObject.set(x, "protocol", null)
     
     inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
   }

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
+  - typings.pdfmake.pdfmakeStrings.decimal
   - typings.pdfmake.pdfmakeStrings.`lower-alpha`
   - typings.pdfmake.pdfmakeStrings.`upper-alpha`
   - typings.pdfmake.pdfmakeStrings.`lower-roman`
@@ -13,6 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait OrderedListType extends StObject
 object OrderedListType {
+  
+  inline def decimal: typings.pdfmake.pdfmakeStrings.decimal = "decimal".asInstanceOf[typings.pdfmake.pdfmakeStrings.decimal]
   
   inline def `lower-alpha`: typings.pdfmake.pdfmakeStrings.`lower-alpha` = "lower-alpha".asInstanceOf[typings.pdfmake.pdfmakeStrings.`lower-alpha`]
   

@@ -11,6 +11,8 @@ trait PictureMarkerSymbolProperties
   /**
     * The height of the image in points.
     *
+    * @default 12
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#height)
     */
   var height: js.UndefOr[Double | String] = js.undefined
@@ -24,6 +26,8 @@ trait PictureMarkerSymbolProperties
   
   /**
     * The width of the image in points.
+    *
+    * @default 12
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#width)
     */

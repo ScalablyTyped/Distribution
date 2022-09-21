@@ -29,12 +29,12 @@ object EnvelopeIdsRequest {
     
     inline def setEnvelopeIdsUndefined: Self = StObject.set(x, "envelopeIds", js.undefined)
     
-    inline def setEnvelopeIdsVarargs(value: String*): Self = StObject.set(x, "envelopeIds", js.Array(value :_*))
+    inline def setEnvelopeIdsVarargs(value: String*): Self = StObject.set(x, "envelopeIds", js.Array(value*))
     
     inline def setTransactionIds(value: js.Array[String]): Self = StObject.set(x, "transactionIds", value.asInstanceOf[js.Any])
     
     inline def setTransactionIdsUndefined: Self = StObject.set(x, "transactionIds", js.undefined)
     
-    inline def setTransactionIdsVarargs(value: String*): Self = StObject.set(x, "transactionIds", js.Array(value :_*))
+    inline def setTransactionIdsVarargs(value: String*): Self = StObject.set(x, "transactionIds", js.Array(value*))
   }
 }

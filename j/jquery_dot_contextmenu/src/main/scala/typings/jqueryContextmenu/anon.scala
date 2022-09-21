@@ -39,9 +39,9 @@ object anon {
   
   trait Hide extends StObject {
     
-    var hide: js.UndefOr[js.Function1[/* options */ js.Any, Boolean]] = js.undefined
+    var hide: js.UndefOr[js.Function1[/* options */ Any, Boolean]] = js.undefined
     
-    var show: js.UndefOr[js.Function1[/* options */ js.Any, Boolean]] = js.undefined
+    var show: js.UndefOr[js.Function1[/* options */ Any, Boolean]] = js.undefined
   }
   object Hide {
     
@@ -52,11 +52,11 @@ object anon {
     
     extension [Self <: Hide](x: Self) {
       
-      inline def setHide(value: /* options */ js.Any => Boolean): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
+      inline def setHide(value: /* options */ Any => Boolean): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
       
       inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      inline def setShow(value: /* options */ js.Any => Boolean): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+      inline def setShow(value: /* options */ Any => Boolean): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
       
       inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     }

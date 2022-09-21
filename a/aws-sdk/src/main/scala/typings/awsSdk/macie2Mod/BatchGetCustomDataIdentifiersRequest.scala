@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchGetCustomDataIdentifiersRequest extends StObject {
   
   /**
-    * An array of strings that lists the unique identifiers for the custom data identifiers to retrieve information about.
+    * An array of custom data identifier IDs, one for each custom data identifier to retrieve information about.
     */
   var ids: js.UndefOr[listOfString] = js.undefined
 }
@@ -24,6 +24,6 @@ object BatchGetCustomDataIdentifiersRequest {
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: string*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: string*): Self = StObject.set(x, "ids", js.Array(value*))
   }
 }

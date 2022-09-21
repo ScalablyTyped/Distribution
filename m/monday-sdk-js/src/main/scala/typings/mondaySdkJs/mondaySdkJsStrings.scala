@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mondaySdkJsStrings {
   
   @js.native
+  sealed trait closeAppFeatureModal extends StObject
+  inline def closeAppFeatureModal: closeAppFeatureModal = "closeAppFeatureModal".asInstanceOf[closeAppFeatureModal]
+  
+  @js.native
   sealed trait columns extends StObject
   inline def columns: columns = "columns".asInstanceOf[columns]
   
@@ -46,6 +50,14 @@ object mondaySdkJsStrings {
   inline def notice: notice = "notice".asInstanceOf[notice]
   
   @js.native
+  sealed trait openAppFeatureModal extends StObject
+  inline def openAppFeatureModal: openAppFeatureModal = "openAppFeatureModal".asInstanceOf[openAppFeatureModal]
+  
+  @js.native
+  sealed trait openFilesDialog extends StObject
+  inline def openFilesDialog: openFilesDialog = "openFilesDialog".asInstanceOf[openFilesDialog]
+  
+  @js.native
   sealed trait openItemCard extends StObject
   inline def openItemCard: openItemCard = "openItemCard".asInstanceOf[openItemCard]
   
@@ -62,6 +74,10 @@ object mondaySdkJsStrings {
   @js.native
   sealed trait success extends StObject
   inline def success: success = "success".asInstanceOf[success]
+  
+  @js.native
+  sealed trait triggerFilesUpload extends StObject
+  inline def triggerFilesUpload: triggerFilesUpload = "triggerFilesUpload".asInstanceOf[triggerFilesUpload]
   
   @js.native
   sealed trait updates extends StObject

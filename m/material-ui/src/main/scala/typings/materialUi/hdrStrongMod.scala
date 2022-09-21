@@ -10,10 +10,10 @@ object hdrStrongMod {
   
   @JSImport("material-ui/svg-icons/image/hdr-strong", JSImport.Default)
   @js.native
-  class default () extends ImageHdrStrong
+  open class default () extends ImageHdrStrong
   
   @JSImport("material-ui/svg-icons/image/hdr-strong", "ImageHdrStrong")
   @js.native
-  class ImageHdrStrong ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageHdrStrong ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

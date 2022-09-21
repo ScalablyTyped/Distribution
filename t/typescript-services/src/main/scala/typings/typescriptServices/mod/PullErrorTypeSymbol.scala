@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "PullErrorTypeSymbol")
 @js.native
-class PullErrorTypeSymbol protected ()
+open class PullErrorTypeSymbol protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.PullErrorTypeSymbol {
   def this(_anyType: typings.typescriptServices.TypeScript.PullTypeSymbol, name: String) = this()

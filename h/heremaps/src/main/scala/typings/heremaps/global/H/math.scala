@@ -15,7 +15,7 @@ object math {
     */
   @JSGlobal("H.math.Point")
   @js.native
-  class Point protected ()
+  open class Point protected ()
     extends StObject
        with typings.heremaps.H.math.Point {
     /**
@@ -51,7 +51,7 @@ object math {
     */
   @JSGlobal("H.math.Rect")
   @js.native
-  class Rect protected ()
+  open class Rect protected ()
     extends StObject
        with typings.heremaps.H.math.Rect {
     /**
@@ -119,7 +119,7 @@ object math {
     */
   @JSGlobal("H.math.Size")
   @js.native
-  class Size protected ()
+  open class Size protected ()
     extends StObject
        with typings.heremaps.H.math.Size {
     /**

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object loggerMod {
   
-  @JSImport("@firebase/analytics/dist/src/logger", "logger")
+  @JSImport("@firebase/analytics/dist/esm/src/logger", "logger")
   @js.native
   val logger: Logger = js.native
 }

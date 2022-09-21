@@ -1,6 +1,6 @@
 package typings.pg.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,6 +40,6 @@ object BindConfig {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: (js.UndefOr[Buffer | Null | String])*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: (js.UndefOr[Buffer | Null | String])*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

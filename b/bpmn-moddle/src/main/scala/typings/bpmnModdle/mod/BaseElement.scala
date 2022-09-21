@@ -14,7 +14,7 @@ trait BaseElement
     * as Camunda properties
     */
   @JSName("$attrs")
-  var $attrs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var $attrs: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
     * Documentation for the element
@@ -45,7 +45,7 @@ object BaseElement {
   
   extension [Self <: BaseElement](x: Self) {
     
-    inline def set$attrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "$attrs", value.asInstanceOf[js.Any])
+    inline def set$attrs(value: StringDictionary[Any]): Self = StObject.set(x, "$attrs", value.asInstanceOf[js.Any])
     
     inline def set$attrsUndefined: Self = StObject.set(x, "$attrs", js.undefined)
     
@@ -53,13 +53,13 @@ object BaseElement {
     
     inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    inline def setDocumentationVarargs(value: Documentation*): Self = StObject.set(x, "documentation", js.Array(value :_*))
+    inline def setDocumentationVarargs(value: Documentation*): Self = StObject.set(x, "documentation", js.Array(value*))
     
     inline def setExtensionDefinitions(value: js.Array[ExtensionDefinition]): Self = StObject.set(x, "extensionDefinitions", value.asInstanceOf[js.Any])
     
     inline def setExtensionDefinitionsUndefined: Self = StObject.set(x, "extensionDefinitions", js.undefined)
     
-    inline def setExtensionDefinitionsVarargs(value: ExtensionDefinition*): Self = StObject.set(x, "extensionDefinitions", js.Array(value :_*))
+    inline def setExtensionDefinitionsVarargs(value: ExtensionDefinition*): Self = StObject.set(x, "extensionDefinitions", js.Array(value*))
     
     inline def setExtensionElements(value: ExtensionElements): Self = StObject.set(x, "extensionElements", value.asInstanceOf[js.Any])
     

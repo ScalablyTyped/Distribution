@@ -19,15 +19,15 @@ object XAutoTextContainer2 {
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
-    getByIndex: Double => js.Any,
-    getByName: String => js.Any,
+    getByIndex: Double => Any,
+    getByName: String => Any,
     getCount: () => Double,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
     insertNewByName: String => XAutoTextGroup,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByName: String => Unit
   ): XAutoTextContainer2 = {

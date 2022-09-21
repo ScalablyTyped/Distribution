@@ -25,12 +25,12 @@ object AuthSettings {
     
     inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
-    inline def setAccessVarargs(value: AccessSetting*): Self = StObject.set(x, "access", js.Array(value :_*))
+    inline def setAccessVarargs(value: AccessSetting*): Self = StObject.set(x, "access", js.Array(value*))
     
     inline def setMode(value: AuthMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setStrategies(value: js.Array[String]): Self = StObject.set(x, "strategies", value.asInstanceOf[js.Any])
     
-    inline def setStrategiesVarargs(value: String*): Self = StObject.set(x, "strategies", js.Array(value :_*))
+    inline def setStrategiesVarargs(value: String*): Self = StObject.set(x, "strategies", js.Array(value*))
   }
 }

@@ -16,12 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param element The DOM element hosts the new SplitViewPaneToggle.
   * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
   **/
-class SplitViewPaneToggle ()
+open class SplitViewPaneToggle ()
   extends StObject
      with typings.winjs.WinJS.UI.SplitViewPaneToggle {
   def this(element: HTMLButtonElement) = this()
-  def this(element: Unit, options: js.Any) = this()
-  def this(element: HTMLButtonElement, options: js.Any) = this()
+  def this(element: Unit, options: Any) = this()
+  def this(element: HTMLButtonElement, options: Any) = this()
 }
 object SplitViewPaneToggle {
   

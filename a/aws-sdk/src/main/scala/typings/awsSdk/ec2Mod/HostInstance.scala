@@ -17,7 +17,7 @@ trait HostInstance extends StObject {
   var InstanceType: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the instance.
+    * The ID of the Amazon Web Services account that owns the instance.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
 }

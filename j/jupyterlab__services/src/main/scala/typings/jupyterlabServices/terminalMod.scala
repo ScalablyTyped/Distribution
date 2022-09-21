@@ -37,7 +37,13 @@ object terminalMod {
     inline def shutdownTerminal(name: String, settings: ISettings): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("shutdownTerminal")(name.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
     inline def startNew(): js.Promise[IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("startNew")().asInstanceOf[js.Promise[IModel]]
+    inline def startNew(settings: Unit, name: String): js.Promise[IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IModel]]
+    inline def startNew(settings: Unit, name: String, cwd: String): js.Promise[IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IModel]]
+    inline def startNew(settings: Unit, name: Unit, cwd: String): js.Promise[IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IModel]]
     inline def startNew(settings: ISettings): js.Promise[IModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IModel]]
+    inline def startNew(settings: ISettings, name: String): js.Promise[IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IModel]]
+    inline def startNew(settings: ISettings, name: String, cwd: String): js.Promise[IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IModel]]
+    inline def startNew(settings: ISettings, name: Unit, cwd: String): js.Promise[IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(settings.asInstanceOf[js.Any], name.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IModel]]
   }
   
   @JSImport("@jupyterlab/services/lib/terminal", "TerminalManager")
@@ -45,7 +51,7 @@ object terminalMod {
   /**
     * Construct a new terminal manager.
     */
-  class TerminalManager ()
+  open class TerminalManager ()
     extends typings.jupyterlabServices.terminalManagerMod.TerminalManager {
     def this(options: IOptions) = this()
   }

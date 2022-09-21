@@ -132,7 +132,7 @@ object `210SchemaJsonMod` extends Shortcut {
       
       inline def setIssuePrefixesUndefined: Self = StObject.set(x, "issuePrefixes", js.undefined)
       
-      inline def setIssuePrefixesVarargs(value: String*): Self = StObject.set(x, "issuePrefixes", js.Array(value :_*))
+      inline def setIssuePrefixesVarargs(value: String*): Self = StObject.set(x, "issuePrefixes", js.Array(value*))
       
       inline def setIssueUrlFormat(value: String): Self = StObject.set(x, "issueUrlFormat", value.asInstanceOf[js.Any])
       
@@ -150,7 +150,7 @@ object `210SchemaJsonMod` extends Shortcut {
       
       inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      inline def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value*))
       
       inline def setUserUrlFormat(value: String): Self = StObject.set(x, "userUrlFormat", value.asInstanceOf[js.Any])
       

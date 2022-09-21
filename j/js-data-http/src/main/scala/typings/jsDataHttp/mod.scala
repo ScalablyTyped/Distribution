@@ -16,160 +16,160 @@ object mod {
   
   @JSImport("js-data-http", "HttpAdapter")
   @js.native
-  class HttpAdapter () extends Adapter {
+  open class HttpAdapter () extends Adapter {
     def this(opts: IBaseHttpAdapter) = this()
     
-    def DEL(url: String): js.Promise[js.Any] = js.native
-    def DEL(url: String, config: js.Any): js.Promise[js.Any] = js.native
-    def DEL(url: String, config: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
-    def DEL(url: String, config: Unit, opts: js.Any): js.Promise[js.Any] = js.native
+    def DEL(url: String): js.Promise[Any] = js.native
+    def DEL(url: String, config: Any): js.Promise[Any] = js.native
+    def DEL(url: String, config: Any, opts: Any): js.Promise[Any] = js.native
+    def DEL(url: String, config: Unit, opts: Any): js.Promise[Any] = js.native
     
-    def GET(url: String): js.Promise[js.Any] = js.native
-    def GET(url: String, config: js.Any): js.Promise[js.Any] = js.native
-    def GET(url: String, config: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
-    def GET(url: String, config: Unit, opts: js.Any): js.Promise[js.Any] = js.native
+    def GET(url: String): js.Promise[Any] = js.native
+    def GET(url: String, config: Any): js.Promise[Any] = js.native
+    def GET(url: String, config: Any, opts: Any): js.Promise[Any] = js.native
+    def GET(url: String, config: Unit, opts: Any): js.Promise[Any] = js.native
     
-    def HTTP(config: js.Any): js.Promise[js.Any] = js.native
-    def HTTP(config: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def HTTP(config: Any): js.Promise[Any] = js.native
+    def HTTP(config: Any, opts: Any): js.Promise[Any] = js.native
     
-    def POST(url: String, data: js.Any): js.Promise[js.Any] = js.native
-    def POST(url: String, data: js.Any, config: js.Any): js.Promise[js.Any] = js.native
-    def POST(url: String, data: js.Any, config: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
-    def POST(url: String, data: js.Any, config: Unit, opts: js.Any): js.Promise[js.Any] = js.native
+    def POST(url: String, data: Any): js.Promise[Any] = js.native
+    def POST(url: String, data: Any, config: Any): js.Promise[Any] = js.native
+    def POST(url: String, data: Any, config: Any, opts: Any): js.Promise[Any] = js.native
+    def POST(url: String, data: Any, config: Unit, opts: Any): js.Promise[Any] = js.native
     
-    def PUT(url: String, data: js.Any): js.Promise[js.Any] = js.native
-    def PUT(url: String, data: js.Any, config: js.Any): js.Promise[js.Any] = js.native
-    def PUT(url: String, data: js.Any, config: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
-    def PUT(url: String, data: js.Any, config: Unit, opts: js.Any): js.Promise[js.Any] = js.native
+    def PUT(url: String, data: Any): js.Promise[Any] = js.native
+    def PUT(url: String, data: Any, config: Any): js.Promise[Any] = js.native
+    def PUT(url: String, data: Any, config: Any, opts: Any): js.Promise[Any] = js.native
+    def PUT(url: String, data: Any, config: Unit, opts: Any): js.Promise[Any] = js.native
     
-    def _count(mapper: js.Any, query: js.Any): js.Promise[js.Any] = js.native
-    def _count(mapper: js.Any, query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def _count(mapper: Any, query: Any): js.Promise[Any] = js.native
+    def _count(mapper: Any, query: Any, opts: Any): js.Promise[Any] = js.native
     
-    def _create(mapper: js.Any, props: js.Any): js.Promise[js.Any] = js.native
-    def _create(mapper: js.Any, props: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def _create(mapper: Any, props: Any): js.Promise[Any] = js.native
+    def _create(mapper: Any, props: Any, opts: Any): js.Promise[Any] = js.native
     
-    def _createMany(mapper: js.Any, props: js.Any): js.Promise[js.Any] = js.native
-    def _createMany(mapper: js.Any, props: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def _createMany(mapper: Any, props: Any): js.Promise[Any] = js.native
+    def _createMany(mapper: Any, props: Any, opts: Any): js.Promise[Any] = js.native
     
-    def _destroy(mapper: js.Any, id: String): js.Promise[js.Any] = js.native
-    def _destroy(mapper: js.Any, id: String, opts: js.Any): js.Promise[js.Any] = js.native
-    def _destroy(mapper: js.Any, id: Double): js.Promise[js.Any] = js.native
-    def _destroy(mapper: js.Any, id: Double, opts: js.Any): js.Promise[js.Any] = js.native
+    def _destroy(mapper: Any, id: String): js.Promise[Any] = js.native
+    def _destroy(mapper: Any, id: String, opts: Any): js.Promise[Any] = js.native
+    def _destroy(mapper: Any, id: Double): js.Promise[Any] = js.native
+    def _destroy(mapper: Any, id: Double, opts: Any): js.Promise[Any] = js.native
     
-    def _destroyAll(mapper: js.Any, query: js.Any): js.Promise[js.Any] = js.native
-    def _destroyAll(mapper: js.Any, query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def _destroyAll(mapper: Any, query: Any): js.Promise[Any] = js.native
+    def _destroyAll(mapper: Any, query: Any, opts: Any): js.Promise[Any] = js.native
     
-    def _end(mapper: js.Any, opts: js.Any, response: js.Any): js.Any = js.native
+    def _end(mapper: Any, opts: Any, response: Any): Any = js.native
     
-    def _find(mapper: js.Any, id: String): js.Promise[js.Any] = js.native
-    def _find(mapper: js.Any, id: String, opts: js.Any): js.Promise[js.Any] = js.native
-    def _find(mapper: js.Any, id: Double): js.Promise[js.Any] = js.native
-    def _find(mapper: js.Any, id: Double, opts: js.Any): js.Promise[js.Any] = js.native
+    def _find(mapper: Any, id: String): js.Promise[Any] = js.native
+    def _find(mapper: Any, id: String, opts: Any): js.Promise[Any] = js.native
+    def _find(mapper: Any, id: Double): js.Promise[Any] = js.native
+    def _find(mapper: Any, id: Double, opts: Any): js.Promise[Any] = js.native
     
-    def _findAll(mapper: js.Any, query: js.Any): js.Promise[js.Any] = js.native
-    def _findAll(mapper: js.Any, query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def _findAll(mapper: Any, query: Any): js.Promise[Any] = js.native
+    def _findAll(mapper: Any, query: Any, opts: Any): js.Promise[Any] = js.native
     
-    def _sum(mapper: js.Any, field: js.Any, query: js.Any): js.Promise[js.Any] = js.native
-    def _sum(mapper: js.Any, field: js.Any, query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def _sum(mapper: Any, field: Any, query: Any): js.Promise[Any] = js.native
+    def _sum(mapper: Any, field: Any, query: Any, opts: Any): js.Promise[Any] = js.native
     
-    def _update(mapper: js.Any, id: js.Any, props: js.Any): js.Promise[js.Any] = js.native
-    def _update(mapper: js.Any, id: js.Any, props: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def _update(mapper: Any, id: Any, props: Any): js.Promise[Any] = js.native
+    def _update(mapper: Any, id: Any, props: Any, opts: Any): js.Promise[Any] = js.native
     
-    def _updateAll(mapper: js.Any, props: js.Any, query: js.Any): js.Promise[js.Any] = js.native
-    def _updateAll(mapper: js.Any, props: js.Any, query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def _updateAll(mapper: Any, props: Any, query: Any): js.Promise[Any] = js.native
+    def _updateAll(mapper: Any, props: Any, query: Any, opts: Any): js.Promise[Any] = js.native
     
-    def _updateMany(mapper: js.Any, records: js.Any): js.Promise[js.Any] = js.native
-    def _updateMany(mapper: js.Any, records: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def _updateMany(mapper: Any, records: Any): js.Promise[Any] = js.native
+    def _updateMany(mapper: Any, records: Any, opts: Any): js.Promise[Any] = js.native
     
-    def afterDEL(url: String, config: js.Any, opts: js.Any, response: js.Any): js.Any = js.native
+    def afterDEL(url: String, config: Any, opts: Any, response: Any): Any = js.native
     
-    def afterGET(url: String, config: js.Any, opts: js.Any, response: js.Any): js.Any = js.native
+    def afterGET(url: String, config: Any, opts: Any, response: Any): Any = js.native
     
-    def afterHTTP(config: js.Any, opts: js.Any, response: js.Any): js.Any = js.native
+    def afterHTTP(config: Any, opts: Any, response: Any): Any = js.native
     
-    def afterPOST(url: String, data: js.Any, config: js.Any, opts: js.Any, response: js.Any): js.Any = js.native
+    def afterPOST(url: String, data: Any, config: Any, opts: Any, response: Any): Any = js.native
     
-    def afterPUT(url: String, data: js.Any, config: js.Any, opts: js.Any, response: js.Any): js.Any = js.native
+    def afterPUT(url: String, data: Any, config: Any, opts: Any, response: Any): Any = js.native
     
-    def beforeDEL(url: String, config: js.Any, opts: js.Any): js.Any = js.native
+    def beforeDEL(url: String, config: Any, opts: Any): Any = js.native
     
-    def beforeGET(url: String, config: js.Any, opts: js.Any): js.Any = js.native
+    def beforeGET(url: String, config: Any, opts: Any): Any = js.native
     
-    def beforeHTTP(config: js.Any, opts: js.Any): js.Any = js.native
+    def beforeHTTP(config: Any, opts: Any): Any = js.native
     
-    def beforePOST(url: String, data: js.Any, config: js.Any, opts: js.Any): js.Any = js.native
+    def beforePOST(url: String, data: Any, config: Any, opts: Any): Any = js.native
     
-    def beforePUT(url: String, data: js.Any, config: js.Any, opts: js.Any): js.Any = js.native
+    def beforePUT(url: String, data: Any, config: Any, opts: Any): Any = js.native
     
-    def count(mapper: js.Any, query: js.Any): js.Promise[js.Any] = js.native
-    def count(mapper: js.Any, query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def count(mapper: Any, query: Any): js.Promise[Any] = js.native
+    def count(mapper: Any, query: Any, opts: Any): js.Promise[Any] = js.native
     
-    def create(mapper: js.Any, props: js.Any): js.Promise[js.Any] = js.native
-    def create(mapper: js.Any, props: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def create(mapper: Any, props: Any): js.Promise[Any] = js.native
+    def create(mapper: Any, props: Any, opts: Any): js.Promise[Any] = js.native
     
-    def createMany(mapper: js.Any, props: js.Any): js.Promise[js.Any] = js.native
-    def createMany(mapper: js.Any, props: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def createMany(mapper: Any, props: Any): js.Promise[Any] = js.native
+    def createMany(mapper: Any, props: Any, opts: Any): js.Promise[Any] = js.native
     
-    def deserialize(mapper: js.Any, response: js.Any): js.Any = js.native
-    def deserialize(mapper: js.Any, response: js.Any, opts: js.Any): js.Any = js.native
+    def deserialize(mapper: Any, response: Any): Any = js.native
+    def deserialize(mapper: Any, response: Any, opts: Any): Any = js.native
     
-    def destroy(mapper: js.Any, id: String): js.Promise[js.Any] = js.native
-    def destroy(mapper: js.Any, id: String, opts: js.Any): js.Promise[js.Any] = js.native
-    def destroy(mapper: js.Any, id: Double): js.Promise[js.Any] = js.native
-    def destroy(mapper: js.Any, id: Double, opts: js.Any): js.Promise[js.Any] = js.native
+    def destroy(mapper: Any, id: String): js.Promise[Any] = js.native
+    def destroy(mapper: Any, id: String, opts: Any): js.Promise[Any] = js.native
+    def destroy(mapper: Any, id: Double): js.Promise[Any] = js.native
+    def destroy(mapper: Any, id: Double, opts: Any): js.Promise[Any] = js.native
     
-    def destroyAll(mapper: js.Any, query: js.Any): js.Promise[js.Any] = js.native
-    def destroyAll(mapper: js.Any, query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def destroyAll(mapper: Any, query: Any): js.Promise[Any] = js.native
+    def destroyAll(mapper: Any, query: Any, opts: Any): js.Promise[Any] = js.native
     
-    def error(args: js.Any*): Unit = js.native
+    def error(args: Any*): Unit = js.native
     
-    def fetch(config: js.Any): js.Promise[js.Any] = js.native
-    def fetch(config: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def fetch(config: Any): js.Promise[Any] = js.native
+    def fetch(config: Any, opts: Any): js.Promise[Any] = js.native
     
-    def find(mapper: js.Any, id: String): js.Promise[js.Any] = js.native
-    def find(mapper: js.Any, id: String, opts: js.Any): js.Promise[js.Any] = js.native
-    def find(mapper: js.Any, id: Double): js.Promise[js.Any] = js.native
-    def find(mapper: js.Any, id: Double, opts: js.Any): js.Promise[js.Any] = js.native
+    def find(mapper: Any, id: String): js.Promise[Any] = js.native
+    def find(mapper: Any, id: String, opts: Any): js.Promise[Any] = js.native
+    def find(mapper: Any, id: Double): js.Promise[Any] = js.native
+    def find(mapper: Any, id: Double, opts: Any): js.Promise[Any] = js.native
     
-    def findAll(mapper: js.Any, query: js.Any): js.Promise[js.Any] = js.native
-    def findAll(mapper: js.Any, query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def findAll(mapper: Any, query: Any): js.Promise[Any] = js.native
+    def findAll(mapper: Any, query: Any, opts: Any): js.Promise[Any] = js.native
     
-    def getEndpoint(mapper: js.Any, id: String): js.Any = js.native
-    def getEndpoint(mapper: js.Any, id: String, opts: js.Any): js.Any = js.native
-    def getEndpoint(mapper: js.Any, id: Double): js.Any = js.native
-    def getEndpoint(mapper: js.Any, id: Double, opts: js.Any): js.Any = js.native
+    def getEndpoint(mapper: Any, id: String): Any = js.native
+    def getEndpoint(mapper: Any, id: String, opts: Any): Any = js.native
+    def getEndpoint(mapper: Any, id: Double): Any = js.native
+    def getEndpoint(mapper: Any, id: Double, opts: Any): Any = js.native
     
-    def getParams(): js.Any = js.native
-    def getParams(opts: js.Any): js.Any = js.native
+    def getParams(): Any = js.native
+    def getParams(opts: Any): Any = js.native
     
-    def getPath(method: String, mapper: js.Any, id: js.Any): js.Any = js.native
-    def getPath(method: String, mapper: js.Any, id: js.Any, opts: js.Any): js.Any = js.native
+    def getPath(method: String, mapper: Any, id: Any): Any = js.native
+    def getPath(method: String, mapper: Any, id: Any, opts: Any): Any = js.native
     
-    def getSuffix(mapper: js.Any): js.Any = js.native
-    def getSuffix(mapper: js.Any, opts: js.Any): js.Any = js.native
+    def getSuffix(mapper: Any): Any = js.native
+    def getSuffix(mapper: Any, opts: Any): Any = js.native
     
-    def queryTransform(mapper: js.Any, params: js.Any): js.Any = js.native
-    def queryTransform(mapper: js.Any, params: js.Any, opts: js.Any): js.Any = js.native
+    def queryTransform(mapper: Any, params: Any): Any = js.native
+    def queryTransform(mapper: Any, params: Any, opts: Any): Any = js.native
     
-    def responseError(err: js.Any): js.Any = js.native
-    def responseError(err: js.Any, config: js.Any): js.Any = js.native
-    def responseError(err: js.Any, config: js.Any, opts: js.Any): js.Any = js.native
-    def responseError(err: js.Any, config: Unit, opts: js.Any): js.Any = js.native
+    def responseError(err: Any): Any = js.native
+    def responseError(err: Any, config: Any): Any = js.native
+    def responseError(err: Any, config: Any, opts: Any): Any = js.native
+    def responseError(err: Any, config: Unit, opts: Any): Any = js.native
     
-    def serialize(mapper: js.Any, data: js.Any): js.Promise[js.Any] = js.native
-    def serialize(mapper: js.Any, data: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def serialize(mapper: Any, data: Any): js.Promise[Any] = js.native
+    def serialize(mapper: Any, data: Any, opts: Any): js.Promise[Any] = js.native
     
-    def sum(mapper: js.Any, field: js.Any, query: js.Any): js.Promise[js.Any] = js.native
-    def sum(mapper: js.Any, field: js.Any, query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def sum(mapper: Any, field: Any, query: Any): js.Promise[Any] = js.native
+    def sum(mapper: Any, field: Any, query: Any, opts: Any): js.Promise[Any] = js.native
     
-    def update(mapper: js.Any, id: js.Any, props: js.Any): js.Promise[js.Any] = js.native
-    def update(mapper: js.Any, id: js.Any, props: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def update(mapper: Any, id: Any, props: Any): js.Promise[Any] = js.native
+    def update(mapper: Any, id: Any, props: Any, opts: Any): js.Promise[Any] = js.native
     
-    def updateAll(mapper: js.Any, props: js.Any, query: js.Any): js.Promise[js.Any] = js.native
-    def updateAll(mapper: js.Any, props: js.Any, query: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def updateAll(mapper: Any, props: Any, query: Any): js.Promise[Any] = js.native
+    def updateAll(mapper: Any, props: Any, query: Any, opts: Any): js.Promise[Any] = js.native
     
-    def updateMany(mapper: js.Any, records: js.Any): js.Promise[js.Any] = js.native
-    def updateMany(mapper: js.Any, records: js.Any, opts: js.Any): js.Promise[js.Any] = js.native
+    def updateMany(mapper: Any, records: Any): js.Promise[Any] = js.native
+    def updateMany(mapper: Any, records: Any, opts: Any): js.Promise[Any] = js.native
   }
   /* static members */
   object HttpAdapter {
@@ -272,7 +272,7 @@ object mod {
     
     var forceTrailingSlash: js.UndefOr[Boolean] = js.undefined
     
-    var http: js.UndefOr[js.Any] = js.undefined
+    var http: js.UndefOr[Any] = js.undefined
     
     var httpConfig: js.UndefOr[IDict] = js.undefined
     
@@ -297,7 +297,7 @@ object mod {
       
       inline def setForceTrailingSlashUndefined: Self = StObject.set(x, "forceTrailingSlash", js.undefined)
       
-      inline def setHttp(value: js.Any): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: Any): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
       inline def setHttpConfig(value: IDict): Self = StObject.set(x, "httpConfig", value.asInstanceOf[js.Any])
       
@@ -315,5 +315,5 @@ object mod {
     }
   }
   
-  type IDict = StringDictionary[js.Any]
+  type IDict = StringDictionary[Any]
 }

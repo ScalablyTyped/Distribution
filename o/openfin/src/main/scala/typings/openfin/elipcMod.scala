@@ -9,8 +9,8 @@ object elipcMod {
   
   @JSImport("openfin/_v2/transport/elipc", JSImport.Default)
   @js.native
-  class default protected () extends ElIPCTransport {
-    def this(onmessage: js.Function1[/* data */ js.Any, Unit]) = this()
+  open class default protected () extends ElIPCTransport {
+    def this(onmessage: js.Function1[/* data */ Any, Unit]) = this()
   }
   /* static members */
   object default {
@@ -21,17 +21,17 @@ object elipcMod {
     
     @JSImport("openfin/_v2/transport/elipc", "default.READY_STATE")
     @js.native
-    def READY_STATE: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof READY_STATE */ js.Any = js.native
-    inline def READY_STATE_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof READY_STATE */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READY_STATE")(x.asInstanceOf[js.Any])
+    def READY_STATE: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof READY_STATE */ Any = js.native
+    inline def READY_STATE_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof READY_STATE */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READY_STATE")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait ElIPCTransport extends Wire {
     
-    def onmessage(data: js.Any): Unit = js.native
+    def onmessage(data: Any): Unit = js.native
     
-    def send(data: js.Any, flags: js.Any): js.Promise[js.Any] = js.native
+    def send(data: Any, flags: Any): js.Promise[Any] = js.native
     
-    /* protected */ var wire: js.Any = js.native
+    /* protected */ var wire: Any = js.native
   }
 }

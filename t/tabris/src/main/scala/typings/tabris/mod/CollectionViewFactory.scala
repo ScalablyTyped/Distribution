@@ -10,5 +10,5 @@ trait CollectionViewFactory
   extends Factory[
       CollectionViewConstructor, 
       InstanceType[CollectionViewConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[CollectionViewConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

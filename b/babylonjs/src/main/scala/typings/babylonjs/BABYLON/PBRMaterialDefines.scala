@@ -4,13 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babylonjs.BABYLON.IMaterialDetailMapDefines because var conflicts: _areTexturesDirty. Inlined DETAIL, DETAILDIRECTUV, DETAIL_NORMALBLENDMETHOD
-- typings.babylonjs.BABYLON.IMaterialSubSurfaceDefines because var conflicts: _areTexturesDirty. Inlined SUBSURFACE, SS_REFRACTION, SS_TRANSLUCENCY, SS_SCATTERING, SS_THICKNESSANDMASK_TEXTURE, SS_THICKNESSANDMASK_TEXTUREDIRECTUV, SS_REFRACTIONMAP_3D, SS_REFRACTIONMAP_OPPOSITEZ, SS_LODINREFRACTIONALPHA, SS_GAMMAREFRACTION, SS_RGBDREFRACTION, SS_LINEARSPECULARREFRACTION, SS_LINKREFRACTIONTOTRANSPARENCY, SS_ALBEDOFORREFRACTIONTINT, SS_MASK_FROM_THICKNESS_TEXTURE, SS_MASK_FROM_THICKNESS_TEXTURE_GLTF
-- typings.babylonjs.BABYLON.IMaterialSheenDefines because var conflicts: _areTexturesDirty. Inlined SHEEN, SHEEN_TEXTURE, SHEEN_TEXTURE_ROUGHNESS, SHEEN_TEXTUREDIRECTUV, SHEEN_TEXTURE_ROUGHNESSDIRECTUV, SHEEN_LINKWITHALBEDO, SHEEN_ROUGHNESS, SHEEN_ALBEDOSCALING, SHEEN_USE_ROUGHNESS_FROM_MAINTEXTURE, SHEEN_TEXTURE_ROUGHNESS_IDENTICAL
-- typings.babylonjs.BABYLON.IMaterialBRDFDefines because var conflicts: _areMiscDirty. Inlined BRDF_V_HEIGHT_CORRELATED, MS_BRDF_ENERGY_CONSERVATION, SPHERICAL_HARMONICS, SPECULAR_GLOSSINESS_ENERGY_CONSERVATION
-- typings.babylonjs.BABYLON.IMaterialAnisotropicDefines because var conflicts: _areTexturesDirty, _needUVs. Inlined ANISOTROPIC, ANISOTROPIC_TEXTURE, ANISOTROPIC_TEXTUREDIRECTUV, MAINUV1
-- typings.babylonjs.BABYLON.IMaterialClearCoatDefines because var conflicts: _areTexturesDirty. Inlined CLEARCOAT, CLEARCOAT_DEFAULTIOR, CLEARCOAT_TEXTURE, CLEARCOAT_TEXTURE_ROUGHNESS, CLEARCOAT_TEXTUREDIRECTUV, CLEARCOAT_TEXTURE_ROUGHNESSDIRECTUV, CLEARCOAT_BUMP, CLEARCOAT_BUMPDIRECTUV, CLEARCOAT_USE_ROUGHNESS_FROM_MAINTEXTURE, CLEARCOAT_TEXTURE_ROUGHNESS_IDENTICAL, CLEARCOAT_REMAP_F0, CLEARCOAT_TINT, CLEARCOAT_TINT_TEXTURE, CLEARCOAT_TINT_TEXTUREDIRECTUV */ @js.native
+@js.native
 trait PBRMaterialDefines
   extends StObject
      with MaterialDefines
@@ -36,53 +30,19 @@ trait PBRMaterialDefines
   
   var AMBIENTINGRAYSCALE: Boolean = js.native
   
-  var ANISOTROPIC: Boolean = js.native
-  
-  var ANISOTROPIC_TEXTURE: Boolean = js.native
-  
-  var ANISOTROPIC_TEXTUREDIRECTUV: Double = js.native
-  
   var AOSTOREINMETALMAPRED: Boolean = js.native
+  
+  var BAKED_VERTEX_ANIMATION_TEXTURE: Boolean = js.native
   
   var BONES_VELOCITY_ENABLED: Boolean = js.native
   
   var BONETEXTURE: Boolean = js.native
-  
-  var BRDF_V_HEIGHT_CORRELATED: Boolean = js.native
   
   var BUMP: Boolean = js.native
   
   var BUMPDIRECTUV: Double = js.native
   
   var BonesPerMesh: Double = js.native
-  
-  var CLEARCOAT: Boolean = js.native
-  
-  var CLEARCOAT_BUMP: Boolean = js.native
-  
-  var CLEARCOAT_BUMPDIRECTUV: Double = js.native
-  
-  var CLEARCOAT_DEFAULTIOR: Boolean = js.native
-  
-  var CLEARCOAT_REMAP_F0: Boolean = js.native
-  
-  var CLEARCOAT_TEXTURE: Boolean = js.native
-  
-  var CLEARCOAT_TEXTUREDIRECTUV: Double = js.native
-  
-  var CLEARCOAT_TEXTURE_ROUGHNESS: Boolean = js.native
-  
-  var CLEARCOAT_TEXTURE_ROUGHNESSDIRECTUV: Double = js.native
-  
-  var CLEARCOAT_TEXTURE_ROUGHNESS_IDENTICAL: Boolean = js.native
-  
-  var CLEARCOAT_TINT: Boolean = js.native
-  
-  var CLEARCOAT_TINT_TEXTURE: Boolean = js.native
-  
-  var CLEARCOAT_TINT_TEXTUREDIRECTUV: Double = js.native
-  
-  var CLEARCOAT_USE_ROUGHNESS_FROM_MAINTEXTURE: Boolean = js.native
   
   var CLIPPLANE: Boolean = js.native
   
@@ -100,12 +60,6 @@ trait PBRMaterialDefines
   
   var DEPTHPREPASS: Boolean = js.native
   
-  var DETAIL: Boolean = js.native
-  
-  var DETAILDIRECTUV: Double = js.native
-  
-  var DETAIL_NORMALBLENDMETHOD: Double = js.native
-  
   var EMISSIVE: Boolean = js.native
   
   var EMISSIVEDIRECTUV: Double = js.native
@@ -120,6 +74,8 @@ trait PBRMaterialDefines
   
   var GAMMAALBEDO: Boolean = js.native
   
+  var GAMMAEMISSIVE: Boolean = js.native
+  
   var GAMMALIGHTMAP: Boolean = js.native
   
   var GAMMAREFLECTION: Boolean = js.native
@@ -127,6 +83,8 @@ trait PBRMaterialDefines
   var HORIZONOCCLUSION: Boolean = js.native
   
   var INSTANCES: Boolean = js.native
+  
+  var INSTANCESCOLOR: Boolean = js.native
   
   var INVERTCUBICMAP: Boolean = js.native
   
@@ -148,11 +106,23 @@ trait PBRMaterialDefines
   
   var MAINUV2: Boolean = js.native
   
+  var MAINUV3: Boolean = js.native
+  
+  var MAINUV4: Boolean = js.native
+  
+  var MAINUV5: Boolean = js.native
+  
+  var MAINUV6: Boolean = js.native
+  
   var METALLICWORKFLOW: Boolean = js.native
   
   var METALLIC_REFLECTANCE: Boolean = js.native
   
   var METALLIC_REFLECTANCEDIRECTUV: Double = js.native
+  
+  var METALLIC_REFLECTANCE_GAMMA: Boolean = js.native
+  
+  var METALLIC_REFLECTANCE_USE_ALPHA_ONLY: Boolean = js.native
   
   var METALLNESSSTOREINMETALMAPBLUE: Boolean = js.native
   
@@ -170,9 +140,9 @@ trait PBRMaterialDefines
   
   var MORPHTARGETS_TANGENT: Boolean = js.native
   
-  var MORPHTARGETS_UV: Boolean = js.native
+  var MORPHTARGETS_TEXTURE: Boolean = js.native
   
-  var MS_BRDF_ENERGY_CONSERVATION: Boolean = js.native
+  var MORPHTARGETS_UV: Boolean = js.native
   
   var MULTIVIEW: Boolean = js.native
   
@@ -196,6 +166,10 @@ trait PBRMaterialDefines
   
   var OPACITYRGB: Boolean = js.native
   
+  var ORDER_INDEPENDENT_TRANSPARENCY: Boolean = js.native
+  
+  var ORDER_INDEPENDENT_TRANSPARENCY_16BITS: Boolean = js.native
+  
   var PARALLAX: Boolean = js.native
   
   var PARALLAXOCCLUSION: Boolean = js.native
@@ -208,17 +182,21 @@ trait PBRMaterialDefines
   
   var PREPASS: Boolean = js.native
   
-  var PREPASS_ALBEDO: Boolean = js.native
+  var PREPASS_ALBEDO_SQRT: Boolean = js.native
   
-  var PREPASS_ALBEDO_INDEX: Double = js.native
+  var PREPASS_ALBEDO_SQRT_INDEX: Double = js.native
   
-  var PREPASS_DEPTHNORMAL: Boolean = js.native
+  var PREPASS_DEPTH: Boolean = js.native
   
-  var PREPASS_DEPTHNORMAL_INDEX: Double = js.native
+  var PREPASS_DEPTH_INDEX: Double = js.native
   
   var PREPASS_IRRADIANCE: Boolean = js.native
   
   var PREPASS_IRRADIANCE_INDEX: Double = js.native
+  
+  var PREPASS_NORMAL: Boolean = js.native
+  
+  var PREPASS_NORMAL_INDEX: Double = js.native
   
   var PREPASS_POSITION: Boolean = js.native
   
@@ -237,6 +215,12 @@ trait PBRMaterialDefines
   var RADIANCEOVERALPHA: Boolean = js.native
   
   var REALTIME_FILTERING: Boolean = js.native
+  
+  var REFLECTANCE: Boolean = js.native
+  
+  var REFLECTANCEDIRECTUV: Double = js.native
+  
+  var REFLECTANCE_GAMMA: Boolean = js.native
   
   var REFLECTION: Boolean = js.native
   
@@ -266,6 +250,8 @@ trait PBRMaterialDefines
   
   var REFLECTIVITYDIRECTUV: Double = js.native
   
+  var REFLECTIVITY_GAMMA: Boolean = js.native
+  
   var RGBDLIGHTMAP: Boolean = js.native
   
   var RGBDREFLECTION: Boolean = js.native
@@ -278,67 +264,11 @@ trait PBRMaterialDefines
   
   var SHADOWFLOAT: Boolean = js.native
   
-  var SHEEN: Boolean = js.native
-  
-  var SHEEN_ALBEDOSCALING: Boolean = js.native
-  
-  var SHEEN_LINKWITHALBEDO: Boolean = js.native
-  
-  var SHEEN_ROUGHNESS: Boolean = js.native
-  
-  var SHEEN_TEXTURE: Boolean = js.native
-  
-  var SHEEN_TEXTUREDIRECTUV: Double = js.native
-  
-  var SHEEN_TEXTURE_ROUGHNESS: Boolean = js.native
-  
-  var SHEEN_TEXTURE_ROUGHNESSDIRECTUV: Double = js.native
-  
-  var SHEEN_TEXTURE_ROUGHNESS_IDENTICAL: Boolean = js.native
-  
-  var SHEEN_USE_ROUGHNESS_FROM_MAINTEXTURE: Boolean = js.native
-  
   var SPECULARAA: Boolean = js.native
   
   var SPECULAROVERALPHA: Boolean = js.native
   
   var SPECULARTERM: Boolean = js.native
-  
-  var SPECULAR_GLOSSINESS_ENERGY_CONSERVATION: Boolean = js.native
-  
-  var SPHERICAL_HARMONICS: Boolean = js.native
-  
-  var SS_ALBEDOFORREFRACTIONTINT: Boolean = js.native
-  
-  var SS_GAMMAREFRACTION: Boolean = js.native
-  
-  var SS_LINEARSPECULARREFRACTION: Boolean = js.native
-  
-  var SS_LINKREFRACTIONTOTRANSPARENCY: Boolean = js.native
-  
-  var SS_LODINREFRACTIONALPHA: Boolean = js.native
-  
-  var SS_MASK_FROM_THICKNESS_TEXTURE: Boolean = js.native
-  
-  var SS_MASK_FROM_THICKNESS_TEXTURE_GLTF: Boolean = js.native
-  
-  var SS_REFRACTION: Boolean = js.native
-  
-  var SS_REFRACTIONMAP_3D: Boolean = js.native
-  
-  var SS_REFRACTIONMAP_OPPOSITEZ: Boolean = js.native
-  
-  var SS_RGBDREFRACTION: Boolean = js.native
-  
-  var SS_SCATTERING: Boolean = js.native
-  
-  var SS_THICKNESSANDMASK_TEXTURE: Boolean = js.native
-  
-  var SS_THICKNESSANDMASK_TEXTUREDIRECTUV: Double = js.native
-  
-  var SS_TRANSLUCENCY: Boolean = js.native
-  
-  var SUBSURFACE: Boolean = js.native
   
   var TANGENT: Boolean = js.native
   
@@ -365,6 +295,14 @@ trait PBRMaterialDefines
   var UV1: Boolean = js.native
   
   var UV2: Boolean = js.native
+  
+  var UV3: Boolean = js.native
+  
+  var UV4: Boolean = js.native
+  
+  var UV5: Boolean = js.native
+  
+  var UV6: Boolean = js.native
   
   var VERTEXALPHA: Boolean = js.native
   

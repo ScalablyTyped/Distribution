@@ -1,5 +1,6 @@
 package typings.gestalt.mod
 
+import typings.gestalt.anon.DangerouslydangerouslyDisableOnNavigation
 import typings.gestalt.anon.Event
 import typings.gestalt.gestaltNumbers.`-1`
 import typings.gestalt.gestaltNumbers.`0`
@@ -13,7 +14,7 @@ import typings.gestalt.gestaltNumbers.`7`
 import typings.gestalt.gestaltNumbers.`8`
 import typings.gestalt.gestaltStrings.blank
 import typings.gestalt.gestaltStrings.button
-import typings.gestalt.gestaltStrings.circule
+import typings.gestalt.gestaltStrings.circle
 import typings.gestalt.gestaltStrings.compress
 import typings.gestalt.gestaltStrings.copy
 import typings.gestalt.gestaltStrings.grab
@@ -33,6 +34,7 @@ import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
+import typings.std.Element
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
@@ -61,9 +63,17 @@ trait TapAreaProps extends StObject {
   
   var mouseCursor: js.UndefOr[copy | grab | grabbing | move | noDrop | pointer | zoomIn | zoomOut] = js.undefined
   
-  var onBlur: js.UndefOr[AbstractEventHandler[FocusEvent[HTMLDivElement | HTMLAnchorElement], js.Object]] = js.undefined
+  var onBlur: js.UndefOr[
+    AbstractEventHandler[FocusEvent[HTMLDivElement | HTMLAnchorElement, Element], js.Object]
+  ] = js.undefined
   
-  var onFocus: js.UndefOr[AbstractEventHandler[FocusEvent[HTMLDivElement | HTMLAnchorElement], js.Object]] = js.undefined
+  var onFocus: js.UndefOr[
+    AbstractEventHandler[FocusEvent[HTMLDivElement | HTMLAnchorElement, Element], js.Object]
+  ] = js.undefined
+  
+  var onMouseDown: js.UndefOr[
+    AbstractEventHandler[MouseEvent[HTMLDivElement | HTMLAnchorElement, NativeMouseEvent], js.Object]
+  ] = js.undefined
   
   var onMouseEnter: js.UndefOr[
     AbstractEventHandler[MouseEvent[HTMLDivElement | HTMLAnchorElement, NativeMouseEvent], js.Object]
@@ -73,18 +83,13 @@ trait TapAreaProps extends StObject {
     AbstractEventHandler[MouseEvent[HTMLDivElement | HTMLAnchorElement, NativeMouseEvent], js.Object]
   ] = js.undefined
   
-  var onTap: js.UndefOr[
-    AbstractEventHandler[
-      (MouseEvent[HTMLAnchorElement | HTMLDivElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLDivElement]), 
-      js.Object
-    ]
-  ] = js.undefined
+  var onTap: js.UndefOr[OnTapType] = js.undefined
   
   var rel: js.UndefOr[none | nofollow] = js.undefined
   
   var role: js.UndefOr[button | link] = js.undefined
   
-  var rounding: js.UndefOr[pill | circule | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`] = js.undefined
+  var rounding: js.UndefOr[pill | circle | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`] = js.undefined
   
   var tabIndex: js.UndefOr[`-1` | `0`] = js.undefined
   
@@ -141,13 +146,23 @@ object TapAreaProps {
     
     inline def setMouseCursorUndefined: Self = StObject.set(x, "mouseCursor", js.undefined)
     
-    inline def setOnBlur(value: /* arg */ js.Object & (Event[FocusEvent[HTMLDivElement | HTMLAnchorElement]]) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(
+      value: /* arg */ js.Object & (Event[FocusEvent[HTMLDivElement | HTMLAnchorElement, Element]]) => Unit
+    ): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    inline def setOnFocus(value: /* arg */ js.Object & (Event[FocusEvent[HTMLDivElement | HTMLAnchorElement]]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(
+      value: /* arg */ js.Object & (Event[FocusEvent[HTMLDivElement | HTMLAnchorElement, Element]]) => Unit
+    ): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+    
+    inline def setOnMouseDown(
+      value: /* arg */ js.Object & (Event[MouseEvent[HTMLDivElement | HTMLAnchorElement, NativeMouseEvent]]) => Unit
+    ): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+    
+    inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
     inline def setOnMouseEnter(
       value: /* arg */ js.Object & (Event[MouseEvent[HTMLDivElement | HTMLAnchorElement, NativeMouseEvent]]) => Unit
@@ -162,7 +177,7 @@ object TapAreaProps {
     inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     
     inline def setOnTap(
-      value: /* arg */ js.Object & (Event[
+      value: /* arg */ DangerouslydangerouslyDisableOnNavigation & (Event[
           (MouseEvent[HTMLAnchorElement | HTMLDivElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLDivElement])
         ]) => Unit
     ): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
@@ -177,7 +192,7 @@ object TapAreaProps {
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    inline def setRounding(value: pill | circule | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
+    inline def setRounding(value: pill | circle | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
     
     inline def setRoundingUndefined: Self = StObject.set(x, "rounding", js.undefined)
     

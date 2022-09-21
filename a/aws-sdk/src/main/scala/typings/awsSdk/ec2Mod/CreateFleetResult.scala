@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateFleetResult extends StObject {
   
   /**
-    * Information about the instances that could not be launched by the fleet. Valid only when Type is set to instant.
+    * Information about the instances that could not be launched by the fleet. Supported only for fleets of type instant.
     */
   var Errors: js.UndefOr[CreateFleetErrorsSet] = js.undefined
   
@@ -17,7 +17,7 @@ trait CreateFleetResult extends StObject {
   var FleetId: js.UndefOr[typings.awsSdk.ec2Mod.FleetId] = js.undefined
   
   /**
-    * Information about the instances that were launched by the fleet. Valid only when Type is set to instant.
+    * Information about the instances that were launched by the fleet. Supported only for fleets of type instant.
     */
   var Instances: js.UndefOr[CreateFleetInstancesSet] = js.undefined
 }
@@ -34,7 +34,7 @@ object CreateFleetResult {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: CreateFleetError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: CreateFleetError*): Self = StObject.set(x, "Errors", js.Array(value*))
     
     inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object CreateFleetResult {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    inline def setInstancesVarargs(value: CreateFleetInstance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: CreateFleetInstance*): Self = StObject.set(x, "Instances", js.Array(value*))
   }
 }

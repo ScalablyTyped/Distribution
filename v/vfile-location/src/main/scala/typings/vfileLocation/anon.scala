@@ -1,54 +1,32 @@
 package typings.vfileLocation
 
+import typings.vfileLocation.mod.FullPoint
+import typings.vfileLocation.mod.Offset
+import typings.vfileLocation.mod.PositionalPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Column extends StObject {
+  trait ToOffset extends StObject {
     
-    var column: Double
+    def toOffset(point: PositionalPoint): Offset
     
-    var line: Double
+    def toPoint(offset: Offset): FullPoint
   }
-  object Column {
+  object ToOffset {
     
-    inline def apply(column: Double, line: Double): Column = {
-      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Column]
+    inline def apply(toOffset: PositionalPoint => Offset, toPoint: Offset => FullPoint): ToOffset = {
+      val __obj = js.Dynamic.literal(toOffset = js.Any.fromFunction1(toOffset), toPoint = js.Any.fromFunction1(toPoint))
+      __obj.asInstanceOf[ToOffset]
     }
     
-    extension [Self <: Column](x: Self) {
+    extension [Self <: ToOffset](x: Self) {
       
-      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setToOffset(value: PositionalPoint => Offset): Self = StObject.set(x, "toOffset", js.Any.fromFunction1(value))
       
-      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Line extends StObject {
-    
-    var column: Double
-    
-    var line: Double
-    
-    var offset: Double
-  }
-  object Line {
-    
-    inline def apply(column: Double, line: Double, offset: Double): Line = {
-      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Line]
-    }
-    
-    extension [Self <: Line](x: Self) {
-      
-      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
-      
-      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
-      
-      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setToPoint(value: Offset => FullPoint): Self = StObject.set(x, "toPoint", js.Any.fromFunction1(value))
     }
   }
 }

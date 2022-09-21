@@ -1,18 +1,16 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.iconMod.IIconProps
-import typings.react.mod.DOMAttributes
-import typings.std.HTMLElement
+import typings.blueprintjsCore.anon.IconPropsOmitHTMLAttribut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Icon")
 @js.native
-class Icon protected ()
+open class Icon protected ()
   extends typings.blueprintjsCore.componentsMod.Icon {
-  def this(props: IIconProps & DOMAttributes[HTMLElement]) = this()
-  def this(props: IIconProps & DOMAttributes[HTMLElement], context: js.Any) = this()
+  def this(props: IconPropsOmitHTMLAttribut) = this()
+  def this(props: IconPropsOmitHTMLAttribut, context: Any) = this()
 }
 /* static members */
 object Icon {
@@ -20,14 +18,6 @@ object Icon {
   @JSImport("@blueprintjs/core", "Icon")
   @js.native
   val ^ : js.Any = js.native
-  
-  @JSImport("@blueprintjs/core", "Icon.SIZE_LARGE")
-  @js.native
-  val SIZE_LARGE: /* 20 */ Double = js.native
-  
-  @JSImport("@blueprintjs/core", "Icon.SIZE_STANDARD")
-  @js.native
-  val SIZE_STANDARD: /* 16 */ Double = js.native
   
   @JSImport("@blueprintjs/core", "Icon.displayName")
   @js.native

@@ -66,7 +66,7 @@ object bookmarks {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: BookmarkTreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: BookmarkTreeNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDateAdded(value: Double): Self = StObject.set(x, "dateAdded", value.asInstanceOf[js.Any])
       
@@ -233,7 +233,7 @@ object bookmarks {
       
       inline def setChildIds(value: js.Array[String]): Self = StObject.set(x, "childIds", value.asInstanceOf[js.Any])
       
-      inline def setChildIdsVarargs(value: String*): Self = StObject.set(x, "childIds", js.Array(value :_*))
+      inline def setChildIdsVarargs(value: String*): Self = StObject.set(x, "childIds", js.Array(value*))
     }
   }
   

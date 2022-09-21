@@ -10,11 +10,19 @@ trait TVVIEWERBGNOTEXECUTABLE extends StObject {
   
   /**
     * Background execution is supported
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var TV_VIEWER_BG_EXECUTABLE: `1`
   
   /**
     * Background execution is not supported
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var TV_VIEWER_BG_NOT_EXECUTABLE: `0`
 }

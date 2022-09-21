@@ -4,16 +4,16 @@
 Typings are for version 3.0
 
 ## Library description:
-Mac OS X Plist parser/builder for Node.js and browsers
+Apple's property list parser/builder for Node.js and browsers
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | plist |
 | Keywords           | apple, browser, mac, plist, parser, xml |
-| # releases         | 0 |
-| # dependents       | 774 |
-| # downloads        | 60310796 |
-| # stars            | 15 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 9291990.666666666 |
+| # stars            | 409.0 |
 
 ## Links
 - [Homepage](https://github.com/TooTallNate/node-plist#readme)

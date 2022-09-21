@@ -34,7 +34,7 @@ trait PieProps extends StObject {
   
   var activeIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var activeShape: js.UndefOr[js.Object | ContentRenderer[js.Any] | ReactElement] = js.undefined
+  var activeShape: js.UndefOr[js.Object | ContentRenderer[Any] | ReactElement] = js.undefined
   
   var alignmentBaseline: js.UndefOr[String] = js.undefined
   
@@ -51,6 +51,8 @@ trait PieProps extends StObject {
   var baselineShift: js.UndefOr[String] = js.undefined
   
   var blendStroke: js.UndefOr[Boolean] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -125,8 +127,6 @@ trait PieProps extends StObject {
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
-  
   var height: js.UndefOr[Double] = js.undefined
   
   var hide: js.UndefOr[Boolean] = js.undefined
@@ -143,7 +143,7 @@ trait PieProps extends StObject {
   
   var label: js.UndefOr[OffsetRadius | ReactElement | ContentRenderer[PieLabelRenderProps] | Boolean] = js.undefined
   
-  var labelLine: js.UndefOr[js.Object | (ContentRenderer[LineProps & js.Any]) | ReactElement | Boolean] = js.undefined
+  var labelLine: js.UndefOr[js.Object | (ContentRenderer[LineProps & Any]) | ReactElement | Boolean] = js.undefined
   
   var legendType: js.UndefOr[LegendType] = js.undefined
   
@@ -165,7 +165,7 @@ trait PieProps extends StObject {
   
   var minAngle: js.UndefOr[Double] = js.undefined
   
-  var nameKey: js.UndefOr[String | Double | (js.Function1[/* dataObject */ js.Any, Double])] = js.undefined
+  var nameKey: js.UndefOr[String | Double | (js.Function1[/* dataObject */ Any, Double])] = js.undefined
   
   var onAnimationEnd: js.UndefOr[RechartsFunction] = js.undefined
   
@@ -245,7 +245,7 @@ trait PieProps extends StObject {
   
   var unicodeBidi: js.UndefOr[String] = js.undefined
   
-  var valueKey: js.UndefOr[String | Double | (js.Function1[/* dataObject */ js.Any, Double])] = js.undefined
+  var valueKey: js.UndefOr[String | Double | (js.Function1[/* dataObject */ Any, Double])] = js.undefined
   
   var visibility: js.UndefOr[String] = js.undefined
   
@@ -272,11 +272,11 @@ object PieProps {
     
     inline def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
     
-    inline def setActiveIndexVarargs(value: Double*): Self = StObject.set(x, "activeIndex", js.Array(value :_*))
+    inline def setActiveIndexVarargs(value: Double*): Self = StObject.set(x, "activeIndex", js.Array(value*))
     
-    inline def setActiveShape(value: js.Object | ContentRenderer[js.Any] | ReactElement): Self = StObject.set(x, "activeShape", value.asInstanceOf[js.Any])
+    inline def setActiveShape(value: js.Object | ContentRenderer[Any] | ReactElement): Self = StObject.set(x, "activeShape", value.asInstanceOf[js.Any])
     
-    inline def setActiveShapeFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "activeShape", js.Any.fromFunction1(value))
+    inline def setActiveShapeFunction1(value: Any => ReactNode): Self = StObject.set(x, "activeShape", js.Any.fromFunction1(value))
     
     inline def setActiveShapeUndefined: Self = StObject.set(x, "activeShape", js.undefined)
     
@@ -311,6 +311,10 @@ object PieProps {
     inline def setBlendStroke(value: Boolean): Self = StObject.set(x, "blendStroke", value.asInstanceOf[js.Any])
     
     inline def setBlendStrokeUndefined: Self = StObject.set(x, "blendStroke", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -368,11 +372,11 @@ object PieProps {
     
     inline def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
-    inline def setDataKeyFunction1(value: /* dataObject */ js.Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
+    inline def setDataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
@@ -456,10 +460,6 @@ object PieProps {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
-    
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
@@ -492,9 +492,9 @@ object PieProps {
     
     inline def setLabelFunction1(value: PieLabelRenderProps => ReactNode): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     
-    inline def setLabelLine(value: js.Object | (ContentRenderer[LineProps & js.Any]) | ReactElement | Boolean): Self = StObject.set(x, "labelLine", value.asInstanceOf[js.Any])
+    inline def setLabelLine(value: js.Object | (ContentRenderer[LineProps & Any]) | ReactElement | Boolean): Self = StObject.set(x, "labelLine", value.asInstanceOf[js.Any])
     
-    inline def setLabelLineFunction1(value: LineProps & js.Any => ReactNode): Self = StObject.set(x, "labelLine", js.Any.fromFunction1(value))
+    inline def setLabelLineFunction1(value: LineProps & Any => ReactNode): Self = StObject.set(x, "labelLine", js.Any.fromFunction1(value))
     
     inline def setLabelLineUndefined: Self = StObject.set(x, "labelLine", js.undefined)
     
@@ -540,9 +540,9 @@ object PieProps {
     
     inline def setMinAngleUndefined: Self = StObject.set(x, "minAngle", js.undefined)
     
-    inline def setNameKey(value: String | Double | (js.Function1[/* dataObject */ js.Any, Double])): Self = StObject.set(x, "nameKey", value.asInstanceOf[js.Any])
+    inline def setNameKey(value: String | Double | (js.Function1[/* dataObject */ Any, Double])): Self = StObject.set(x, "nameKey", value.asInstanceOf[js.Any])
     
-    inline def setNameKeyFunction1(value: /* dataObject */ js.Any => Double): Self = StObject.set(x, "nameKey", js.Any.fromFunction1(value))
+    inline def setNameKeyFunction1(value: /* dataObject */ Any => Double): Self = StObject.set(x, "nameKey", js.Any.fromFunction1(value))
     
     inline def setNameKeyUndefined: Self = StObject.set(x, "nameKey", js.undefined)
     
@@ -630,7 +630,7 @@ object PieProps {
     
     inline def setSectorsUndefined: Self = StObject.set(x, "sectors", js.undefined)
     
-    inline def setSectorsVarargs(value: js.Object*): Self = StObject.set(x, "sectors", js.Array(value :_*))
+    inline def setSectorsVarargs(value: js.Object*): Self = StObject.set(x, "sectors", js.Array(value*))
     
     inline def setShapeRendering(value: auto | optimizeSpeed | crispEdges | geometricPrecision | inherit): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
     
@@ -704,9 +704,9 @@ object PieProps {
     
     inline def setUnicodeBidiUndefined: Self = StObject.set(x, "unicodeBidi", js.undefined)
     
-    inline def setValueKey(value: String | Double | (js.Function1[/* dataObject */ js.Any, Double])): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
+    inline def setValueKey(value: String | Double | (js.Function1[/* dataObject */ Any, Double])): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
     
-    inline def setValueKeyFunction1(value: /* dataObject */ js.Any => Double): Self = StObject.set(x, "valueKey", js.Any.fromFunction1(value))
+    inline def setValueKeyFunction1(value: /* dataObject */ Any => Double): Self = StObject.set(x, "valueKey", js.Any.fromFunction1(value))
     
     inline def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)
     

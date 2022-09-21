@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaTableCell extends StObject {
   
-  var v: js.UndefOr[js.Any] = js.undefined
+  var v: js.UndefOr[Any | Null] = js.undefined
 }
 object SchemaTableCell {
   
@@ -17,7 +17,9 @@ object SchemaTableCell {
   
   extension [Self <: SchemaTableCell](x: Self) {
     
-    inline def setV(value: js.Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    
+    inline def setVNull: Self = StObject.set(x, "v", null)
     
     inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for marked
 
-Typings are for version 1.2
+Typings are for version 4.0
 
 ## Library description:
 A markdown parser built for speed
@@ -10,10 +10,10 @@ A markdown parser built for speed
 | ------------------ | :-------------: |
 | Full name          | marked |
 | Keywords           | markdown, markup, html |
-| # releases         | 21 |
-| # dependents       | 4771 |
-| # downloads        | 175362697 |
-| # stars            | 230 |
+| # releases         | 52 |
+| # dependents       | 0.0 |
+| # downloads        | 2.3099885E7 |
+| # stars            | 28175.0 |
 
 ## Links
 - [Homepage](https://marked.js.org)

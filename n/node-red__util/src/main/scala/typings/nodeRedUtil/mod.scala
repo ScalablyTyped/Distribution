@@ -2,15 +2,28 @@ package typings.nodeRedUtil
 
 import org.scalablytyped.runtime.Shortcut
 import typings.jsonata.mod.Expression
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
-import typings.nodeRedRegistry.mod.Node
 import typings.nodeRedRegistry.mod.NodeMessage
 import typings.nodeRedUtil.anon.Format
+import typings.nodeRedUtil.anon.Id
+import typings.nodeRedUtil.anon.IdNode
 import typings.nodeRedUtil.anon.Key
 import typings.nodeRedUtil.anon.MaxLength
 import typings.nodeRedUtil.anon.Msg
-import typings.std.Error
+import typings.nodeRedUtil.anon.Node
+import typings.nodeRedUtil.nodeRedUtilBooleans.`false`
+import typings.nodeRedUtil.nodeRedUtilStrings.onComplete
+import typings.nodeRedUtil.nodeRedUtilStrings.onReceive
+import typings.nodeRedUtil.nodeRedUtilStrings.onSend
+import typings.nodeRedUtil.nodeRedUtilStrings.postDeliver
+import typings.nodeRedUtil.nodeRedUtilStrings.postInstall
+import typings.nodeRedUtil.nodeRedUtilStrings.postReceive
+import typings.nodeRedUtil.nodeRedUtilStrings.postUninstall
+import typings.nodeRedUtil.nodeRedUtilStrings.preDeliver
+import typings.nodeRedUtil.nodeRedUtilStrings.preInstall
+import typings.nodeRedUtil.nodeRedUtilStrings.preRoute
+import typings.nodeRedUtil.nodeRedUtilStrings.preUninstall
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,6 +34,195 @@ object mod extends Shortcut {
   @JSImport("@node-red/util", JSImport.Namespace)
   @js.native
   val ^ : UtilModule = js.native
+  
+  trait CompleteEvent extends StObject {
+    
+    var error: js.UndefOr[js.Error] = js.undefined
+    
+    var msg: NodeMessage
+    
+    var node: IdNode
+  }
+  object CompleteEvent {
+    
+    inline def apply(msg: NodeMessage, node: IdNode): CompleteEvent = {
+      val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CompleteEvent]
+    }
+    
+    extension [Self <: CompleteEvent](x: Self) {
+      
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      
+      inline def setMsg(value: NodeMessage): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      
+      inline def setNode(value: IdNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  // Used `boolean` in PromiseLike instead of `false` because it caused problems with `async` functions
+  type HandlerFunction[T] = js.Function2[
+    /* payload */ T, 
+    /* callback */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
+    Unit | `false` | (js.Thenable[Unit | Boolean])
+  ]
+  
+  // tslint:disable-line:void-return
+  @js.native
+  trait Hooks extends StObject {
+    
+    // tslint:disable-line:unified-signatures
+    /**
+      * Register a new hook handler.
+      *
+      * @see https://nodered.org/docs/api/hooks/#methods-add
+      */
+    def add(hookName: String, handlerFunction: HandlerFunction[Any]): Unit = js.native
+    // tslint:disable-line:unified-signatures
+    /**
+      * A node has completed with a message or logged an error for it.
+      *
+      * The hook is passed a `CompleteEvent`.
+      */
+    @JSName("add")
+    def add_onComplete(hookName: onComplete, handlerFunction: HandlerFunction[CompleteEvent]): Unit = js.native
+    // tslint:disable-line:unified-signatures
+    /**
+      * A message is about to be received by a node.
+      *
+      * The hook is passed a `ReceiveEvent`.
+      *
+      * If the hook returns `false`, the messages will not proceed any further.
+      */
+    @JSName("add")
+    def add_onReceive(hookName: onReceive, handlerFunction: HandlerFunction[ReceiveEvent]): Unit = js.native
+    /**
+      * A node has called `node.send()` with one or more messages.
+      *
+      * The hook is passed an array of `SendEvent` objects.
+      * The messages inside these objects are exactly what the node has passed to `node.send`
+      * - meaning there could be duplicate references to the same message object.
+      *
+      * This hook should complete synchronously in order to avoid unexpected behaviour.
+      *
+      * If it needs to do asynchronously work, it must clone and replace the message object in the event it receives.
+      * It must also set the `cloneMessage` property to `false` to ensure no subsequent cloning happens on the message.
+      *
+      * If the hook returns `false`, the messages will not proceed any further.
+      */
+    @JSName("add")
+    def add_onSend(hookName: onSend, hookHandler: HandlerFunction[js.Array[SendEvent]]): Unit = js.native
+    // tslint:disable-line:unified-signatures
+    /**
+      * A message has been dispatched to its destination.
+      *
+      * The hook is passed a single `SendEvent`. The message is delivered asynchronously to the hooks execution.
+      */
+    @JSName("add")
+    def add_postDeliver(hookName: postDeliver, handlerFunction: HandlerFunction[SendEvent]): Unit = js.native
+    /**
+      * Called after `npm install` finishes installing an npm module.
+      *
+      * Note if a `preInstall` hook returned `false`, `npm install` will not have been run, but this hook will still get invoked.
+      *
+      * This hook can be used to run any post-install activity needed.
+      *
+      * If the hook throws an error, the install will be cleanly failed.
+      *
+      * If the preceding `npm install` returned an error, this hook will not be invoked.
+      */
+    @JSName("add")
+    def add_postInstall(hookName: postInstall, handlerFunction: HandlerFunction[InstallEvent]): Unit = js.native
+    /**
+      * A message has been received by a node.
+      *
+      * The hook is passed `ReceiveEvent` when the message has been given to the node’s `input` handler.
+      */
+    @JSName("add")
+    def add_postReceive(hookName: postReceive, handlerFunction: HandlerFunction[ReceiveEvent]): Unit = js.native
+    /**
+      * Called after `npm remove` finishes removing an npm module.
+      *
+      * Note if a `preUninstall` hook returned `false`, `npm remove` will not have been run, but this hook will still get invoked.
+      *
+      * This hook can be used to run any post-uninstall activity needed.
+      *
+      * If the hook throws an error, it will be logged, but the uninstall will complete cleanly as we cannot rollback an `npm remove` after it has completed.
+      */
+    @JSName("add")
+    def add_postUninstall(hookName: postUninstall, handlerFunction: HandlerFunction[UninstallEvent]): Unit = js.native
+    /**
+      * A message is about to be delivered
+      *
+      * The hook is passed a single `SendEvent`.
+      * At this point, the local router has identified the node it is going to send to and set the `destination.node` property of the `SendEvent`.
+      *
+      * The message will have been cloned if needed.
+      *
+      * If the hook returns `false`, the messages will not proceed any further.
+      */
+    @JSName("add")
+    def add_preDeliver(hookName: preDeliver, handlerFunction: HandlerFunction[SendEvent]): Unit = js.native
+    /**
+      * Called before running `npm install` to install an npm module.
+      *
+      * The hook is passed an `InstallEvent` object that contains information about the module to be installed.
+      *
+      * The hook can modify the InstallEvent to change how npm is run.
+      * For example, the `args` array can be modified to change what arguments are passed to `npm`.
+      *
+      * If the hook returns `false`, the `npm install` will be skipped and the processing continue as if it had been run.
+      * This would allow some alternative mechanism to be used - as long as it results in the module being installed under the expected `node_modules` directory.
+      *
+      * If the hook throws an error, the install will be cleanly failed.
+      */
+    @JSName("add")
+    def add_preInstall(hookName: preInstall, handlerFunction: HandlerFunction[InstallEvent]): Unit = js.native
+    /**
+      * A message is about to be routed to its destination.
+      *
+      * The hook is passed a single `SendEvent`.
+      *
+      * This hook should complete synchronously in order to avoid unexpected behaviour.
+      *
+      * If it needs to do asynchronously work, it must clone and replace
+      * the message object in the event it receives.
+      * It must also set the `cloneMessage` property to `false` to ensure no subsequent cloning happens on the message.
+      *
+      * If the hook returns `false`, the message will not proceed any further.
+      */
+    @JSName("add")
+    def add_preRoute(hookName: preRoute, handlerFunction: HandlerFunction[SendEvent]): Unit = js.native
+    // tslint:disable-line:unified-signatures
+    /**
+      * Called before running `npm remove` to uninstall an npm module.
+      *
+      * The hook is passed an `UninstallEvent` object that contains information about the module to be removed.
+      *
+      * The hook can modify the UninstallEvent to change how npm is run.
+      * For example, the args array can be modified to change what arguments are passed to npm.
+      *
+      * If the hook returns false, the npm remove will be skipped and the processing continue as if it had been run.
+      * This would allow some alternative mechanism to be used.
+      *
+      * If the hook throws an error, the uninstall will be cleanly failed.
+      */
+    @JSName("add")
+    def add_preUninstall(hookName: preUninstall, handlerFunction: HandlerFunction[UninstallEvent]): Unit = js.native
+    
+    def has(hookName: String): Boolean = js.native
+    
+    /**
+      * Remove a hook handler.
+      *
+      * Only handlers that were registered with a labelled name (for example `onSend.my-hooks`) can be removed.
+      *
+      * To remove all hooks with a given label, `*.my-hooks` can be used.
+      */
+    def remove(hookName: String): Unit = js.native
+  }
   
   // tslint:disable-next-line:interface-name
   trait I18n extends StObject {
@@ -88,6 +290,60 @@ object mod extends Shortcut {
   
   // tslint:disable-next-line:interface-name
   type I18nTFunction = js.Function2[/* id */ String, /* tplStrs */ js.UndefOr[Record[String, String | Double]], String]
+  
+  trait InstallEvent extends StObject {
+    
+    /** Array of args that will be passed to npm */
+    var args: js.Array[String]
+    
+    /** Directory to run the install in */
+    var dir: String
+    
+    var isExisting: js.UndefOr[Boolean] = js.undefined
+    
+    var isUpgrade: js.UndefOr[Boolean] = js.undefined
+    
+    /** npm module name */
+    var module: String
+    
+    /** Optional url to install from */
+    var url: js.UndefOr[String] = js.undefined
+    
+    /** Version of the module that is being installed */
+    var version: String
+  }
+  object InstallEvent {
+    
+    inline def apply(args: js.Array[String], dir: String, module: String, version: String): InstallEvent = {
+      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InstallEvent]
+    }
+    
+    extension [Self <: InstallEvent](x: Self) {
+      
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
+      
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      
+      inline def setIsExisting(value: Boolean): Self = StObject.set(x, "isExisting", value.asInstanceOf[js.Any])
+      
+      inline def setIsExistingUndefined: Self = StObject.set(x, "isExisting", js.undefined)
+      
+      inline def setIsUpgrade(value: Boolean): Self = StObject.set(x, "isUpgrade", value.asInstanceOf[js.Any])
+      
+      inline def setIsUpgradeUndefined: Self = StObject.set(x, "isUpgrade", js.undefined)
+      
+      inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    }
+  }
   
   @js.native
   trait Log extends StObject {
@@ -182,7 +438,7 @@ object mod extends Shortcut {
     def warn(msg: LogMessage): Unit = js.native
   }
   
-  type LogMessage = js.Any
+  type LogMessage = Any
   
   trait LogMessageObject extends StObject {
     
@@ -250,6 +506,87 @@ object mod extends Shortcut {
     }
   }
   
+  trait ReceiveEvent extends StObject {
+    
+    var destination: IdNode
+    
+    var msg: NodeMessage
+  }
+  object ReceiveEvent {
+    
+    inline def apply(destination: IdNode, msg: NodeMessage): ReceiveEvent = {
+      val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ReceiveEvent]
+    }
+    
+    extension [Self <: ReceiveEvent](x: Self) {
+      
+      inline def setDestination(value: IdNode): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      
+      inline def setMsg(value: NodeMessage): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  //#region Hook Event Objects
+  trait SendEvent extends StObject {
+    
+    var cloneMessage: Boolean
+    
+    var destination: Node
+    
+    var msg: NodeMessage
+    
+    var source: Id
+  }
+  object SendEvent {
+    
+    inline def apply(cloneMessage: Boolean, destination: Node, msg: NodeMessage, source: Id): SendEvent = {
+      val __obj = js.Dynamic.literal(cloneMessage = cloneMessage.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SendEvent]
+    }
+    
+    extension [Self <: SendEvent](x: Self) {
+      
+      inline def setCloneMessage(value: Boolean): Self = StObject.set(x, "cloneMessage", value.asInstanceOf[js.Any])
+      
+      inline def setDestination(value: Node): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      
+      inline def setMsg(value: NodeMessage): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      
+      inline def setSource(value: Id): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait UninstallEvent extends StObject {
+    
+    /** Array of args that will be passed to npm */
+    var args: js.Array[String]
+    
+    /** Directory to run the remove in */
+    var dir: String
+    
+    /** npm module name */
+    var module: String
+  }
+  object UninstallEvent {
+    
+    inline def apply(args: js.Array[String], dir: String, module: String): UninstallEvent = {
+      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UninstallEvent]
+    }
+    
+    extension [Self <: UninstallEvent](x: Self) {
+      
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
+      
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      
+      inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    }
+  }
+  
   @js.native
   trait Util extends StObject {
     
@@ -291,7 +628,7 @@ object mod extends Shortcut {
       * @param o - the property to convert to a Buffer
       * @returns the Buffer version
       */
-    def ensureBuffer(o: js.Any): Buffer = js.native
+    def ensureBuffer(o: Any): Buffer = js.native
     
     /**
       * Converts the provided argument to a String, using type-dependent
@@ -300,7 +637,7 @@ object mod extends Shortcut {
       * @param o - the property to convert to a String
       * @returns the stringified version
       */
-    def ensureString(o: js.Any): String = js.native
+    def ensureString(o: Any): String = js.native
     
     /**
       * Checks if a String contains any Environment Variable specifiers and returns
@@ -312,7 +649,7 @@ object mod extends Shortcut {
       * @param node - the node evaluating the property
       * @returns The parsed string
       */
-    def evaluateEnvProperty(value: String, node: Node[js.Object]): String = js.native
+    def evaluateEnvProperty(value: String, node: typings.nodeRedRegistry.mod.Node[js.Object]): String = js.native
     
     /**
       * Evaluates a JSONata expression.
@@ -324,11 +661,11 @@ object mod extends Shortcut {
       * @param   callback - (optional) called when the expression is evaluated
       * @returns If no callback was provided, the result of the expression
       */
-    def evaluateJSONataExpression(expr: Expression, msg: js.Object): js.Any = js.native
+    def evaluateJSONataExpression(expr: Expression, msg: js.Object): Any = js.native
     def evaluateJSONataExpression(
       expr: Expression,
       msg: js.Object,
-      callback: js.Function2[/* err */ Error | Null, /* resp */ js.Any, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* resp */ Any, Unit]
     ): Unit = js.native
     
     /**
@@ -341,13 +678,13 @@ object mod extends Shortcut {
       * @param   callback - (optional) called when the property is evaluated
       * @returns The evaluted property, if no `callback` is provided
       */
-    def evaluateNodeProperty(value: String, `type`: String, node: Node[js.Object], msg: js.Object): js.Any = js.native
+    def evaluateNodeProperty(value: String, `type`: String, node: typings.nodeRedRegistry.mod.Node[js.Object], msg: js.Object): Any = js.native
     def evaluateNodeProperty(
       value: String,
       `type`: String,
-      node: Node[js.Object],
+      node: typings.nodeRedRegistry.mod.Node[js.Object],
       msg: js.Object,
-      callback: js.Function2[/* err */ Error | Null, /* result */ js.Any, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* result */ Any, Unit]
     ): Unit = js.native
     
     /**
@@ -366,7 +703,7 @@ object mod extends Shortcut {
       * @param expr - the property expression
       * @returns the message property, or undefined if it does not exist
       */
-    def getMessageProperty(msg: js.Object, expr: String): js.Any = js.native
+    def getMessageProperty(msg: js.Object, expr: String): Any = js.native
     
     /**
       * Gets a property of an object.
@@ -375,7 +712,7 @@ object mod extends Shortcut {
       * @param expr - the property expression
       * @returns the object property, or undefined if it does not exist
       */
-    def getObjectProperty(msg: js.Object, expr: String): js.Any = js.native
+    def getObjectProperty(msg: js.Object, expr: String): Any = js.native
     
     /**
       * Get value of environment variable.
@@ -383,7 +720,7 @@ object mod extends Shortcut {
       * @param name - name of variable
       * @returns value of env var
       */
-    def getSetting(node: Node[js.Object], name: String): String = js.native
+    def getSetting(node: typings.nodeRedRegistry.mod.Node[js.Object], name: String): String = js.native
     
     /**
       * Normalise a node type name to camel case.
@@ -426,7 +763,7 @@ object mod extends Shortcut {
       * @param node  - the node evaluating the property
       * @returns The JSONata expression that can be evaluated
       */
-    def prepareJSONataExpression(value: String, node: Node[js.Object]): Expression = js.native
+    def prepareJSONataExpression(value: String, node: typings.nodeRedRegistry.mod.Node[js.Object]): Expression = js.native
     
     /**
       * Sets a property of a message object.
@@ -439,8 +776,8 @@ object mod extends Shortcut {
       * @param  value         - the value to set
       * @param  createMissing - whether to create missing parent properties
       */
-    def setMessageProperty(msg: js.Object, prop: String, value: js.Any): Boolean = js.native
-    def setMessageProperty(msg: js.Object, prop: String, value: js.Any, createMissing: Boolean): Boolean = js.native
+    def setMessageProperty(msg: js.Object, prop: String, value: Any): Boolean = js.native
+    def setMessageProperty(msg: js.Object, prop: String, value: Any, createMissing: Boolean): Boolean = js.native
     
     /**
       * Sets a property of an object.
@@ -450,11 +787,17 @@ object mod extends Shortcut {
       * @param  value         - the value to set
       * @param  createMissing - whether to create missing parent properties
       */
-    def setObjectProperty(msg: js.Object, prop: String, value: js.Any): Boolean = js.native
-    def setObjectProperty(msg: js.Object, prop: String, value: js.Any, createMissing: Boolean): Boolean = js.native
+    def setObjectProperty(msg: js.Object, prop: String, value: Any): Boolean = js.native
+    def setObjectProperty(msg: js.Object, prop: String, value: Any, createMissing: Boolean): Boolean = js.native
   }
   
+  //#endregion
   trait UtilModule extends StObject {
+    
+    /**
+      * Runtime hooks engine
+      */
+    var hooks: Hooks
     
     /**
       * Internationalization utilities
@@ -466,7 +809,7 @@ object mod extends Shortcut {
       * @param settings
       */
     def init(
-      settings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify runtime.LocalSettings */ js.Any
+      settings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify runtime.LocalSettings */ Any
     ): Unit
     
     /**
@@ -482,21 +825,24 @@ object mod extends Shortcut {
   object UtilModule {
     
     inline def apply(
+      hooks: Hooks,
       i18n: I18n,
-      init: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify runtime.LocalSettings */ js.Any => Unit,
+      init: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify runtime.LocalSettings */ Any => Unit,
       log: Log,
       util: Util
     ): UtilModule = {
-      val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any], init = js.Any.fromFunction1(init), log = log.asInstanceOf[js.Any], util = util.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(hooks = hooks.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], init = js.Any.fromFunction1(init), log = log.asInstanceOf[js.Any], util = util.asInstanceOf[js.Any])
       __obj.asInstanceOf[UtilModule]
     }
     
     extension [Self <: UtilModule](x: Self) {
       
+      inline def setHooks(value: Hooks): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+      
       inline def setI18n(value: I18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
       inline def setInit(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify runtime.LocalSettings */ js.Any => Unit
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify runtime.LocalSettings */ Any => Unit
       ): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
       inline def setLog(value: Log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])

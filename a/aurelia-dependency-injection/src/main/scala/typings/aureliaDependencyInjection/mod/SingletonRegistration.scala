@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-dependency-injection", "SingletonRegistration")
 @js.native
-class SingletonRegistration[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] ()
+open class SingletonRegistration[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] ()
   extends StObject
      with Registration_[TBase, TImpl, TArgs] {
   def this(keyOrRegisterInChild: Boolean) = this()

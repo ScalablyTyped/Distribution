@@ -9,12 +9,12 @@ trait Resource extends StObject {
   
   /**
     * Annotations is an unstructured key-value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be
-    * preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+    * preserved when modifying objects. More info: https://kubernetes.io/docs/user-guide/annotations
     */
   var annotations: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Resource & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Resource & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The timestamp when the resource was created. This may be either the time creation was initiated or when it was completed. */
@@ -36,8 +36,15 @@ trait Resource extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Resource & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Resource & TopLevel[Any]
   ] = js.undefined
+  
+  /**
+    * Immutable. The location of the resource. The location encoding is specific to the service provider, and new encoding may be introduced as the service evolves. For Google Cloud
+    * products, the encoding is what is used by Google Cloud APIs, such as `us-east1`, `aws-us-east-1`, and `azure-eastus2`. The semantics of `location` is identical to the
+    * `cloud.googleapis.com/location` label used by some Google Cloud APIs.
+    */
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * The stable identifier (name) of a resource on the `service`. A resource can be logically identified as "//{resource.service}/{resource.name}". The differences between a resource
@@ -52,7 +59,7 @@ trait Resource extends StObject {
   
   /**
     * The type of the resource. The syntax is platform-specific because different platforms define their resources differently. For Google APIs, the type format must be
-    * "{service}/{kind}".
+    * "{service}/{kind}", such as "pubsub.googleapis.com/Topic".
     */
   var `type`: js.UndefOr[String] = js.undefined
   
@@ -80,7 +87,7 @@ object Resource {
     inline def setAnnotations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Resource & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Resource & TopLevel[Any]
     ): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
@@ -104,10 +111,14 @@ object Resource {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Resource & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Resource & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

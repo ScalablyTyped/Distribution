@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.Pushpin")
 @js.native
-class Pushpin protected ()
+open class Pushpin protected ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.Pushpin {
   /**

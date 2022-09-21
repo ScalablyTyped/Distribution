@@ -8,5 +8,5 @@ object notFoundExceptionMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/NotFoundException", "NotFoundException")
   @js.native
-  val NotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val NotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

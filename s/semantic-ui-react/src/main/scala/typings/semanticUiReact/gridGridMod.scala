@@ -2,9 +2,9 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticTEXTALIGNMENTS
 import typings.semanticUiReact.genericMod.SemanticVERTICALALIGNMENTS
 import typings.semanticUiReact.genericMod.SemanticWIDTHS
@@ -30,15 +30,15 @@ object gridGridMod extends Shortcut {
     extends StObject
        with FunctionComponent[GridProps] {
     
-    var Column: StatelessComponent[GridColumnProps] = js.native
+    var Column: FC[GridColumnProps] = js.native
     
-    var Row: StatelessComponent[GridRowProps] = js.native
+    var Row: FC[GridRowProps] = js.native
   }
   
   trait GridProps
     extends StObject
        with StrictGridProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object GridProps {
     
     inline def apply(): GridProps = {
@@ -61,7 +61,7 @@ object gridGridMod extends Shortcut {
   trait StrictGridProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A grid can have rows divided into cells. */
     var celled: js.UndefOr[Boolean | internally] = js.undefined
@@ -78,7 +78,7 @@ object gridGridMod extends Shortcut {
     /** Represents column count per row in Grid. */
     var columns: js.UndefOr[SemanticWIDTHS | equal] = js.undefined
     
-    /** A grid can be combined with a container to use avaiable layout and alignment. */
+    /** A grid can be combined with a container to use available layout and alignment. */
     var container: js.UndefOr[Boolean] = js.undefined
     
     /** A grid can have dividers between its columns. */
@@ -102,7 +102,7 @@ object gridGridMod extends Shortcut {
     /** A grid can have its columns stack on-top of each other after reaching mobile breakpoints. */
     var stackable: js.UndefOr[Boolean] = js.undefined
     
-    /** An can stretch its contents to take up the entire grid height. */
+    /** A grid can stretch its contents to take up the entire grid height. */
     var stretched: js.UndefOr[Boolean] = js.undefined
     
     /** A grid can specify its text alignment. */
@@ -120,7 +120,7 @@ object gridGridMod extends Shortcut {
     
     extension [Self <: StrictGridProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

@@ -59,7 +59,7 @@ object XLogHandler {
     dispose: () => Unit,
     flush: () => Unit,
     publish: LogRecord => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit
   ): XLogHandler = {

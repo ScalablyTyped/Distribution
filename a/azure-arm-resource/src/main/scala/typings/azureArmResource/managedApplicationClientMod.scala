@@ -18,7 +18,7 @@ object managedApplicationClientMod {
   
   @JSImport("azure-arm-resource/lib/managedApplicationClient", JSImport.Default)
   @js.native
-  class default protected () extends ManagedApplicationClient {
+  open class default protected () extends ManagedApplicationClient {
     /**
       * Initializes a new instance of the ManagedApplicationClient class.
       * @constructor
@@ -64,7 +64,7 @@ object managedApplicationClientMod {
   
   @JSImport("azure-arm-resource/lib/managedApplicationClient", "ManagedApplicationClient")
   @js.native
-  class ManagedApplicationClient protected () extends AzureServiceClient {
+  open class ManagedApplicationClient protected () extends AzureServiceClient {
     /**
       * Initializes a new instance of the ManagedApplicationClient class.
       * @constructor
@@ -239,12 +239,12 @@ object managedApplicationClientMod {
     
     @JSImport("azure-arm-resource/lib/managedApplicationClient", "ManagedApplicationModels.BaseResource")
     @js.native
-    class BaseResource ()
+    open class BaseResource ()
       extends typings.azureArmResource.libModelsMod.BaseResource
     
     @JSImport("azure-arm-resource/lib/managedApplicationClient", "ManagedApplicationModels.CloudError")
     @js.native
-    class CloudError protected ()
+    open class CloudError protected ()
       extends typings.azureArmResource.libModelsMod.CloudError {
       def this(parameters: CloudErrorParameters) = this()
     }

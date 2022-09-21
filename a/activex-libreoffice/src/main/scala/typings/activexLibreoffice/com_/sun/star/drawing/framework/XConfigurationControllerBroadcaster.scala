@@ -21,7 +21,7 @@ trait XConfigurationControllerBroadcaster extends StObject {
     * @param sEventType The event type that the listener is interested in. The set of event types is not fixed and there can be no exhaustive list. The empty
     * @param aUserData Arbitrary data that is passed to the listener when it is called for the specified event type. When one listener is registered for more
     */
-  def addConfigurationChangeListener(xListener: XConfigurationChangeListener, sEventType: String, aUserData: js.Any): Unit
+  def addConfigurationChangeListener(xListener: XConfigurationChangeListener, sEventType: String, aUserData: Any): Unit
   
   /** With this method other objects can send events to all the registered listeners. */
   def notifyEvent(aEvent: ConfigurationChangeEvent): Unit
@@ -35,7 +35,7 @@ trait XConfigurationControllerBroadcaster extends StObject {
 object XConfigurationControllerBroadcaster {
   
   inline def apply(
-    addConfigurationChangeListener: (XConfigurationChangeListener, String, js.Any) => Unit,
+    addConfigurationChangeListener: (XConfigurationChangeListener, String, Any) => Unit,
     notifyEvent: ConfigurationChangeEvent => Unit,
     removeConfigurationChangeListener: XConfigurationChangeListener => Unit
   ): XConfigurationControllerBroadcaster = {
@@ -45,7 +45,7 @@ object XConfigurationControllerBroadcaster {
   
   extension [Self <: XConfigurationControllerBroadcaster](x: Self) {
     
-    inline def setAddConfigurationChangeListener(value: (XConfigurationChangeListener, String, js.Any) => Unit): Self = StObject.set(x, "addConfigurationChangeListener", js.Any.fromFunction3(value))
+    inline def setAddConfigurationChangeListener(value: (XConfigurationChangeListener, String, Any) => Unit): Self = StObject.set(x, "addConfigurationChangeListener", js.Any.fromFunction3(value))
     
     inline def setNotifyEvent(value: ConfigurationChangeEvent => Unit): Self = StObject.set(x, "notifyEvent", js.Any.fromFunction1(value))
     

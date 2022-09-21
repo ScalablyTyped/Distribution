@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ndn.HmacWithSha25Signature")
 @js.native
-class HmacWithSha25Signature ()
+open class HmacWithSha25Signature ()
   extends typings.ndnJs.mod.HmacWithSha25Signature

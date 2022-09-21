@@ -1,7 +1,7 @@
 
 # Scala.js typings for date-time
 
-Typings are for version 3.1.0
+Typings are for version 4.0.0
 
 ## Library description:
 Pretty datetime: `2014-01-09 06:46:01`
@@ -10,10 +10,10 @@ Pretty datetime: `2014-01-09 06:46:01`
 | ------------------ | :-------------: |
 | Full name          | date-time |
 | Keywords           | datetime, date-time, date, time, utc, iso, timezone, zone, timestamp |
-| # releases         | 3 |
-| # dependents       | 44 |
-| # downloads        | 26519933 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2414032.6666666665 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/date-time#readme)

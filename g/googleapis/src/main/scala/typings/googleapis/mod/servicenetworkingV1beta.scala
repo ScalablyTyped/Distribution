@@ -11,44 +11,28 @@ object servicenetworkingV1beta {
   
   @JSImport("googleapis", "servicenetworking_v1beta.Resource$Operations")
   @js.native
-  class ResourceOperations protected ()
+  open class ResourceOperations protected ()
     extends typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.ResourceOperations {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "servicenetworking_v1beta.Resource$Services")
   @js.native
-  class ResourceServices protected ()
+  open class ResourceServices protected ()
     extends typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.ResourceServices {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "servicenetworking_v1beta.Resource$Services$Connections")
   @js.native
-  class ResourceServicesConnections protected ()
+  open class ResourceServicesConnections protected ()
     extends typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.ResourceServicesConnections {
     def this(context: APIRequestContext) = this()
   }
   
-  /**
-    * Service Networking API
-    *
-    * Provides automatic management of network configurations necessary for
-    * certain services.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const servicenetworking = google.servicenetworking('v1beta');
-    *
-    * @namespace servicenetworking
-    * @type {Function}
-    * @version v1beta
-    * @variation v1beta
-    * @param {object=} options Options for Servicenetworking
-    */
   @JSImport("googleapis", "servicenetworking_v1beta.Servicenetworking")
   @js.native
-  class Servicenetworking protected ()
+  open class Servicenetworking protected ()
     extends typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()

@@ -1,19 +1,26 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DocumentMask extends js.Object {
+trait DocumentMask extends StObject {
+  
   var fieldPaths: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object DocumentMask {
-  @scala.inline
-  def apply(fieldPaths: js.Array[String] = null): DocumentMask = {
+  
+  inline def apply(): DocumentMask = {
     val __obj = js.Dynamic.literal()
-    if (fieldPaths != null) __obj.updateDynamic("fieldPaths")(fieldPaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentMask]
   }
+  
+  extension [Self <: DocumentMask](x: Self) {
+    
+    inline def setFieldPaths(value: js.Array[String]): Self = StObject.set(x, "fieldPaths", value.asInstanceOf[js.Any])
+    
+    inline def setFieldPathsUndefined: Self = StObject.set(x, "fieldPaths", js.undefined)
+    
+    inline def setFieldPathsVarargs(value: String*): Self = StObject.set(x, "fieldPaths", js.Array(value*))
+  }
 }
-

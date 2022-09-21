@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceAreaSolveResultConstructor
   extends StObject
      with /**
-  * The result from [ServiceAreaTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ServiceAreaTask.html).
+  * The result from [serviceArea](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-serviceArea.html).
   *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html)
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ServiceAreaSolveResult.html)
   */
 Instantiable0[ServiceAreaSolveResult]
      with Instantiable1[/* properties */ ServiceAreaSolveResultProperties, ServiceAreaSolveResult] {
   
-  def fromJSON(json: js.Any): ServiceAreaSolveResult = js.native
+  def fromJSON(json: Any): ServiceAreaSolveResult = js.native
 }

@@ -56,7 +56,7 @@ object URLFetch {
     inline def put: typings.googleAppsScript.googleAppsScriptStrings.put = "put".asInstanceOf[typings.googleAppsScript.googleAppsScriptStrings.put]
   }
   
-  type Payload = String | StringDictionary[js.Any] | Blob
+  type Payload = String | StringDictionary[Any] | Blob
   
   trait URLFetchRequest
     extends StObject

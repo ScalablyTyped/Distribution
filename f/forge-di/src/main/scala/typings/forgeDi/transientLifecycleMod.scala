@@ -10,7 +10,7 @@ object transientLifecycleMod {
   
   @JSImport("forge-di/dist/lifecycles/TransientLifecycle", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with TransientLifecycle {
     
@@ -19,7 +19,7 @@ object transientLifecycleMod {
       resolver: typings.forgeDi.resolverMod.default,
       context: typings.forgeDi.contextMod.default,
       args: Arguments
-    ): js.Any = js.native
+    ): Any = js.native
   }
   
   trait TransientLifecycle
@@ -28,7 +28,7 @@ object transientLifecycleMod {
   object TransientLifecycle {
     
     inline def apply(
-      resolve: (typings.forgeDi.resolverMod.default, typings.forgeDi.contextMod.default, Arguments) => js.Any
+      resolve: (typings.forgeDi.resolverMod.default, typings.forgeDi.contextMod.default, Arguments) => Any
     ): TransientLifecycle = {
       val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction3(resolve))
       __obj.asInstanceOf[TransientLifecycle]

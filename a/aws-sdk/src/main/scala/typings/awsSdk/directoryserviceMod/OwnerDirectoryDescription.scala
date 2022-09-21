@@ -12,7 +12,7 @@ trait OwnerDirectoryDescription extends StObject {
   var AccountId: js.UndefOr[CustomerId] = js.undefined
   
   /**
-    * Identifier of the AWS Managed Microsoft AD directory in the directory owner account.
+    * Identifier of the Managed Microsoft AD directory in the directory owner account.
     */
   var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
@@ -57,7 +57,7 @@ object OwnerDirectoryDescription {
     
     inline def setDnsIpAddrsUndefined: Self = StObject.set(x, "DnsIpAddrs", js.undefined)
     
-    inline def setDnsIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "DnsIpAddrs", js.Array(value :_*))
+    inline def setDnsIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "DnsIpAddrs", js.Array(value*))
     
     inline def setRadiusSettings(value: RadiusSettings): Self = StObject.set(x, "RadiusSettings", value.asInstanceOf[js.Any])
     

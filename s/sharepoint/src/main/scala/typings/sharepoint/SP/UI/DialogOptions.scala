@@ -23,7 +23,7 @@ trait DialogOptions
   
   /** callback that is called after dialog is closed */
   @JSName("dialogReturnValueCallback")
-  def dialogReturnValueCallback_MDialogOptions(dialogResult: DialogResult, returnValue: js.Any): Unit
+  def dialogReturnValueCallback_MDialogOptions(dialogResult: DialogResult, returnValue: Any): Unit
   /** callback that is called after dialog is closed */
   @JSName("dialogReturnValueCallback")
   var dialogReturnValueCallback_Original: DialogReturnValueCallback
@@ -74,7 +74,7 @@ object DialogOptions {
     allowMaximize: Boolean,
     autoSize: Boolean,
     autoSizeStartWidth: Double,
-    dialogReturnValueCallback: (/* dialogResult */ DialogResult, /* returnValue */ js.Any) => Unit,
+    dialogReturnValueCallback: (/* dialogResult */ DialogResult, /* returnValue */ Any) => Unit,
     height: Double,
     html: HTMLElement,
     includeScrollBarPadding: Boolean,
@@ -98,7 +98,7 @@ object DialogOptions {
     
     inline def setAutoSizeStartWidth(value: Double): Self = StObject.set(x, "autoSizeStartWidth", value.asInstanceOf[js.Any])
     
-    inline def setDialogReturnValueCallback(value: (/* dialogResult */ DialogResult, /* returnValue */ js.Any) => Unit): Self = StObject.set(x, "dialogReturnValueCallback", js.Any.fromFunction2(value))
+    inline def setDialogReturnValueCallback(value: (/* dialogResult */ DialogResult, /* returnValue */ Any) => Unit): Self = StObject.set(x, "dialogReturnValueCallback", js.Any.fromFunction2(value))
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

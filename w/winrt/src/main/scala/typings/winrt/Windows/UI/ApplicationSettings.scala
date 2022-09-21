@@ -28,35 +28,35 @@ object ApplicationSettings {
   
   trait ISettingsCommandFactory extends StObject {
     
-    def create(settingsCommandId: js.Any, label: String, handler: UICommandInvokedHandler): SettingsCommand
+    def create(settingsCommandId: Any, label: String, handler: UICommandInvokedHandler): SettingsCommand
   }
   object ISettingsCommandFactory {
     
-    inline def apply(create: (js.Any, String, UICommandInvokedHandler) => SettingsCommand): ISettingsCommandFactory = {
+    inline def apply(create: (Any, String, UICommandInvokedHandler) => SettingsCommand): ISettingsCommandFactory = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction3(create))
       __obj.asInstanceOf[ISettingsCommandFactory]
     }
     
     extension [Self <: ISettingsCommandFactory](x: Self) {
       
-      inline def setCreate(value: (js.Any, String, UICommandInvokedHandler) => SettingsCommand): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
+      inline def setCreate(value: (Any, String, UICommandInvokedHandler) => SettingsCommand): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
     }
   }
   
   trait ISettingsPane extends StObject {
     
-    var oncommandsrequested: js.Any
+    var oncommandsrequested: Any
   }
   object ISettingsPane {
     
-    inline def apply(oncommandsrequested: js.Any): ISettingsPane = {
+    inline def apply(oncommandsrequested: Any): ISettingsPane = {
       val __obj = js.Dynamic.literal(oncommandsrequested = oncommandsrequested.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISettingsPane]
     }
     
     extension [Self <: ISettingsPane](x: Self) {
       
-      inline def setOncommandsrequested(value: js.Any): Self = StObject.set(x, "oncommandsrequested", value.asInstanceOf[js.Any])
+      inline def setOncommandsrequested(value: Any): Self = StObject.set(x, "oncommandsrequested", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,7 +124,7 @@ object ApplicationSettings {
        with IUICommand
   object SettingsCommand {
     
-    inline def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): SettingsCommand = {
+    inline def apply(id: Any, invoked: /* command */ IUICommand => Unit, label: String): SettingsCommand = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[SettingsCommand]
     }
@@ -135,7 +135,7 @@ object ApplicationSettings {
        with ISettingsPane
   object SettingsPane {
     
-    inline def apply(oncommandsrequested: js.Any): SettingsPane = {
+    inline def apply(oncommandsrequested: Any): SettingsPane = {
       val __obj = js.Dynamic.literal(oncommandsrequested = oncommandsrequested.asInstanceOf[js.Any])
       __obj.asInstanceOf[SettingsPane]
     }

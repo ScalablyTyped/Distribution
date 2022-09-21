@@ -25,7 +25,7 @@ object dialogflowConvMod {
   @JSImport("actions-on-google/dist/service/dialogflow/conv", "DialogflowConversation")
   @js.native
   /** @public */
-  class DialogflowConversation[TConvData, TUserStorage, TContexts /* <: Contexts */] () extends Conversation[TUserStorage] {
+  open class DialogflowConversation[TConvData, TUserStorage, TContexts /* <: Contexts */] () extends Conversation[TUserStorage] {
     def this(options: DialogflowConversationOptions[TConvData, TUserStorage]) = this()
     
     /** @hidden */
@@ -239,7 +239,7 @@ object dialogflowConvMod {
       
       inline def setNoInputPromptsUndefined: Self = StObject.set(x, "noInputPrompts", js.undefined)
       
-      inline def setNoInputPromptsVarargs(value: GoogleActionsV2SimpleResponse*): Self = StObject.set(x, "noInputPrompts", js.Array(value :_*))
+      inline def setNoInputPromptsVarargs(value: GoogleActionsV2SimpleResponse*): Self = StObject.set(x, "noInputPrompts", js.Array(value*))
       
       inline def setRichResponse(value: GoogleActionsV2RichResponse): Self = StObject.set(x, "richResponse", value.asInstanceOf[js.Any])
       
@@ -249,7 +249,7 @@ object dialogflowConvMod {
       
       inline def setSpeechBiasingHintsUndefined: Self = StObject.set(x, "speechBiasingHints", js.undefined)
       
-      inline def setSpeechBiasingHintsVarargs(value: String*): Self = StObject.set(x, "speechBiasingHints", js.Array(value :_*))
+      inline def setSpeechBiasingHintsVarargs(value: String*): Self = StObject.set(x, "speechBiasingHints", js.Array(value*))
       
       inline def setSystemIntent(value: SystemIntent): Self = StObject.set(x, "systemIntent", value.asInstanceOf[js.Any])
       

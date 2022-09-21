@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetAnalyzedResourceResponse extends StObject {
   
   /**
-    * An AnalyedResource object that contains information that Access Analyzer found when it analyzed the resource.
+    * An AnalyzedResource object that contains information that IAM Access Analyzer found when it analyzed the resource.
     */
   var resource: js.UndefOr[AnalyzedResource] = js.undefined
 }

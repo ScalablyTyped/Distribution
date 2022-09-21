@@ -41,7 +41,7 @@ object StageState {
     
     inline def setActionStatesUndefined: Self = StObject.set(x, "actionStates", js.undefined)
     
-    inline def setActionStatesVarargs(value: ActionState*): Self = StObject.set(x, "actionStates", js.Array(value :_*))
+    inline def setActionStatesVarargs(value: ActionState*): Self = StObject.set(x, "actionStates", js.Array(value*))
     
     inline def setInboundExecution(value: StageExecution): Self = StObject.set(x, "inboundExecution", value.asInstanceOf[js.Any])
     

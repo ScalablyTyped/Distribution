@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeInstanceInformationResult extends StObject {
   
   /**
-    * The instance information list.
+    * The managed node information list.
     */
   var InstanceInformationList: js.UndefOr[typings.awsSdk.ssmMod.InstanceInformationList] = js.undefined
   
@@ -29,7 +29,7 @@ object DescribeInstanceInformationResult {
     
     inline def setInstanceInformationListUndefined: Self = StObject.set(x, "InstanceInformationList", js.undefined)
     
-    inline def setInstanceInformationListVarargs(value: InstanceInformation*): Self = StObject.set(x, "InstanceInformationList", js.Array(value :_*))
+    inline def setInstanceInformationListVarargs(value: InstanceInformation*): Self = StObject.set(x, "InstanceInformationList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

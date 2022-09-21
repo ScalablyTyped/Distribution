@@ -10,15 +10,12 @@ Fetches the contents of a file accross node and browsers.
 | ------------------ | :-------------: |
 | Full name          | @protobufjs/fetch |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 149622954 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7739096333333332E7 |
+| # stars            | 8342.0 |
 
 ## Links
-- [Homepage](https://github.com/dcodeIO/protobuf.js#readme)
-- [Bugs](https://github.com/dcodeIO/protobuf.js/issues)
-- [Repository](https://github.com/dcodeIO/protobuf.js)
 - [Npm](https://www.npmjs.com/package/%40protobufjs%2Ffetch)
     
 

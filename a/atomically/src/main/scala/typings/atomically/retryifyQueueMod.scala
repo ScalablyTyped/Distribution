@@ -1,6 +1,6 @@
 package typings.atomically
 
-import typings.node.NodeJS.Timeout
+import typings.node.timersMod.global.NodeJS.Timeout
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridColumnMovingTargetPosition")
 @js.native
-class ASPxClientGridColumnMovingTargetPosition ()
+open class ASPxClientGridColumnMovingTargetPosition ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridColumnMovingTargetPosition {
   

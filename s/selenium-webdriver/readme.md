@@ -1,7 +1,7 @@
 
 # Scala.js typings for selenium-webdriver
 
-Typings are for version 4.0
+Typings are for version 4.1
 
 ## Library description:
 The official WebDriver JavaScript bindings from the Selenium project
@@ -10,10 +10,10 @@ The official WebDriver JavaScript bindings from the Selenium project
 | ------------------ | :-------------: |
 | Full name          | selenium-webdriver |
 | Keywords           | automation, selenium, testing, webdriver, webdriverjs |
-| # releases         | 7 |
-| # dependents       | 572 |
-| # downloads        | 86598527 |
-| # stars            | 159 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0676233666666666E7 |
+| # stars            | 24273.0 |
 
 ## Links
 - [Homepage](https://github.com/SeleniumHQ/selenium/tree/trunk/javascript/node/selenium-webdriver#readme)

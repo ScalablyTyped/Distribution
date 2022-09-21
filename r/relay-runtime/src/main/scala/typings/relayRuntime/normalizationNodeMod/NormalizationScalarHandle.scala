@@ -8,14 +8,19 @@ trait NormalizationScalarHandle
   extends StObject
      with NormalizationHandle {
   
-  // 'ScalarHandle';
+  // "ScalarHandle";
   val alias: js.UndefOr[String | Null] = js.undefined
   
   val args: js.UndefOr[js.Array[NormalizationArgument] | Null] = js.undefined
   
+  // NOTE: this property is optional because it's expected to be rarely used
+  val dynamicKey: js.UndefOr[NormalizationArgument | Null] = js.undefined
+  
   val filters: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   val handle: String
+  
+  val handleArgs: js.UndefOr[js.Array[NormalizationArgument]] = js.undefined
   
   val key: String
   
@@ -44,7 +49,13 @@ object NormalizationScalarHandle {
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: NormalizationArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: NormalizationArgument*): Self = StObject.set(x, "args", js.Array(value*))
+    
+    inline def setDynamicKey(value: NormalizationArgument): Self = StObject.set(x, "dynamicKey", value.asInstanceOf[js.Any])
+    
+    inline def setDynamicKeyNull: Self = StObject.set(x, "dynamicKey", null)
+    
+    inline def setDynamicKeyUndefined: Self = StObject.set(x, "dynamicKey", js.undefined)
     
     inline def setFilters(value: js.Array[String]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
@@ -52,9 +63,15 @@ object NormalizationScalarHandle {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: String*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: String*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    
+    inline def setHandleArgs(value: js.Array[NormalizationArgument]): Self = StObject.set(x, "handleArgs", value.asInstanceOf[js.Any])
+    
+    inline def setHandleArgsUndefined: Self = StObject.set(x, "handleArgs", js.undefined)
+    
+    inline def setHandleArgsVarargs(value: NormalizationArgument*): Self = StObject.set(x, "handleArgs", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

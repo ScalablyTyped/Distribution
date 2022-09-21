@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ClipboardEventTypes")
 @js.native
-class ClipboardEventTypes ()
+open class ClipboardEventTypes ()
   extends StObject
      with typings.babylonjs.BABYLON.ClipboardEventTypes
 /* static members */
@@ -17,19 +17,19 @@ object ClipboardEventTypes {
     */
   @JSGlobal("BABYLON.ClipboardEventTypes.COPY")
   @js.native
-  val COPY: Double = js.native
+  val COPY: /* 1 */ Double = js.native
   
   /**
     *  The clipboard event is fired when a cut command is active (pressed).
     */
   @JSGlobal("BABYLON.ClipboardEventTypes.CUT")
   @js.native
-  val CUT: Double = js.native
+  val CUT: /* 2 */ Double = js.native
   
   /**
     * The clipboard event is fired when a paste command is active (pressed).
     */
   @JSGlobal("BABYLON.ClipboardEventTypes.PASTE")
   @js.native
-  val PASTE: Double = js.native
+  val PASTE: /* 3 */ Double = js.native
 }

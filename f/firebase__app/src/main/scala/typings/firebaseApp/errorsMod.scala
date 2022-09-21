@@ -1,9 +1,12 @@
 package typings.firebaseApp
 
-import typings.firebaseApp.anon.AppName
 import typings.firebaseApp.firebaseAppStrings.`app-deleted`
 import typings.firebaseApp.firebaseAppStrings.`bad-app-name`
 import typings.firebaseApp.firebaseAppStrings.`duplicate-app`
+import typings.firebaseApp.firebaseAppStrings.`idb-delete`
+import typings.firebaseApp.firebaseAppStrings.`idb-get`
+import typings.firebaseApp.firebaseAppStrings.`idb-open`
+import typings.firebaseApp.firebaseAppStrings.`idb-set`
 import typings.firebaseApp.firebaseAppStrings.`invalid-app-argument`
 import typings.firebaseApp.firebaseAppStrings.`invalid-log-argument`
 import typings.firebaseApp.firebaseAppStrings.`no-app`
@@ -14,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object errorsMod {
   
-  @JSImport("@firebase/app/dist/packages/app/src/errors", "ERROR_FACTORY")
+  @JSImport("@firebase/app/dist/app/src/errors", "ERROR_FACTORY")
   @js.native
   val ERROR_FACTORY: ErrorFactory[AppError, ErrorParams] = js.native
   
@@ -25,6 +28,10 @@ object errorsMod {
     - typings.firebaseApp.firebaseAppStrings.`app-deleted`
     - typings.firebaseApp.firebaseAppStrings.`invalid-app-argument`
     - typings.firebaseApp.firebaseAppStrings.`invalid-log-argument`
+    - typings.firebaseApp.firebaseAppStrings.`idb-open`
+    - typings.firebaseApp.firebaseAppStrings.`idb-get`
+    - typings.firebaseApp.firebaseAppStrings.`idb-set`
+    - typings.firebaseApp.firebaseAppStrings.`idb-delete`
   */
   trait AppError extends StObject
   object AppError {
@@ -35,6 +42,14 @@ object errorsMod {
     
     inline def DUPLICATE_APP: `duplicate-app` = "duplicate-app".asInstanceOf[`duplicate-app`]
     
+    inline def IDB_DELETE: `idb-delete` = "idb-delete".asInstanceOf[`idb-delete`]
+    
+    inline def IDB_GET: `idb-get` = "idb-get".asInstanceOf[`idb-get`]
+    
+    inline def IDB_OPEN: `idb-open` = "idb-open".asInstanceOf[`idb-open`]
+    
+    inline def IDB_WRITE: `idb-set` = "idb-set".asInstanceOf[`idb-set`]
+    
     inline def INVALID_APP_ARGUMENT: `invalid-app-argument` = "invalid-app-argument".asInstanceOf[`invalid-app-argument`]
     
     inline def INVALID_LOG_ARGUMENT: `invalid-log-argument` = "invalid-log-argument".asInstanceOf[`invalid-log-argument`]
@@ -42,54 +57,6 @@ object errorsMod {
     inline def NO_APP: `no-app` = "no-app".asInstanceOf[`no-app`]
   }
   
-  /* Inlined {[ key in @firebase/app.@firebase/app/dist/packages/app/src/errors.AppError ]: {  appName :string}} */
-  trait ErrorParams extends StObject {
-    
-    var `app-deleted`: AppName
-    
-    var `bad-app-name`: AppName
-    
-    var `duplicate-app`: AppName
-    
-    var `invalid-app-argument`: AppName
-    
-    var `invalid-log-argument`: AppName
-    
-    var `no-app`: AppName
-  }
-  object ErrorParams {
-    
-    inline def apply(
-      `app-deleted`: AppName,
-      `bad-app-name`: AppName,
-      `duplicate-app`: AppName,
-      `invalid-app-argument`: AppName,
-      `invalid-log-argument`: AppName,
-      `no-app`: AppName
-    ): ErrorParams = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("app-deleted")(`app-deleted`.asInstanceOf[js.Any])
-      __obj.updateDynamic("bad-app-name")(`bad-app-name`.asInstanceOf[js.Any])
-      __obj.updateDynamic("duplicate-app")(`duplicate-app`.asInstanceOf[js.Any])
-      __obj.updateDynamic("invalid-app-argument")(`invalid-app-argument`.asInstanceOf[js.Any])
-      __obj.updateDynamic("invalid-log-argument")(`invalid-log-argument`.asInstanceOf[js.Any])
-      __obj.updateDynamic("no-app")(`no-app`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ErrorParams]
-    }
-    
-    extension [Self <: ErrorParams](x: Self) {
-      
-      inline def `setApp-deleted`(value: AppName): Self = StObject.set(x, "app-deleted", value.asInstanceOf[js.Any])
-      
-      inline def `setBad-app-name`(value: AppName): Self = StObject.set(x, "bad-app-name", value.asInstanceOf[js.Any])
-      
-      inline def `setDuplicate-app`(value: AppName): Self = StObject.set(x, "duplicate-app", value.asInstanceOf[js.Any])
-      
-      inline def `setInvalid-app-argument`(value: AppName): Self = StObject.set(x, "invalid-app-argument", value.asInstanceOf[js.Any])
-      
-      inline def `setInvalid-log-argument`(value: AppName): Self = StObject.set(x, "invalid-log-argument", value.asInstanceOf[js.Any])
-      
-      inline def `setNo-app`(value: AppName): Self = StObject.set(x, "no-app", value.asInstanceOf[js.Any])
-    }
-  }
+  @js.native
+  trait ErrorParams extends StObject
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ComponentRef extends StObject {
   
-  var componentRef: js.UndefOr[js.Function1[/* ref */ js.Any, Unit]] = js.undefined
+  var componentRef: js.UndefOr[js.Function1[/* ref */ Any, Unit]] = js.undefined
 }
 object ComponentRef {
   
@@ -17,7 +17,7 @@ object ComponentRef {
   
   extension [Self <: ComponentRef](x: Self) {
     
-    inline def setComponentRef(value: /* ref */ js.Any => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+    inline def setComponentRef(value: /* ref */ Any => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
     
     inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
   }

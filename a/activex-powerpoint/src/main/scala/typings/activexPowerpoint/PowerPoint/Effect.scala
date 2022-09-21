@@ -33,7 +33,7 @@ trait Effect extends StObject {
   
   var Paragraph: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Effect_typekey")
   var PowerPointDotEffect_typekey: Effect
@@ -62,7 +62,7 @@ object Effect {
     MoveBefore: Effect => Unit,
     MoveTo: Double => Unit,
     Paragraph: Double,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotEffect_typekey: Effect,
     Shape: Shape,
     TextRangeLength: Double,
@@ -102,7 +102,7 @@ object Effect {
     
     inline def setParagraph(value: Double): Self = StObject.set(x, "Paragraph", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotEffect_typekey(value: Effect): Self = StObject.set(x, "PowerPoint.Effect_typekey", value.asInstanceOf[js.Any])
     

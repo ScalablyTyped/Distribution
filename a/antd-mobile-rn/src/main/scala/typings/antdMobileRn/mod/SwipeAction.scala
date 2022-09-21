@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "SwipeAction")
 @js.native
-class SwipeAction () extends default
+open class SwipeAction () extends default

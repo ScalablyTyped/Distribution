@@ -1,22 +1,23 @@
 package typings.antDesignProLayout
 
-import org.scalablytyped.runtime.Shortcut
-import typings.antDesignProLayout.anon.DefaultOpenAll
+import typings.antDesignProLayout.anon.AutoClose
 import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
+import typings.antDesignProLayout.antDesignProLayoutStrings.group
+import typings.antDesignProLayout.antDesignProLayoutStrings.light
 import typings.antDesignProLayout.antDesignProLayoutStrings.mix
 import typings.antDesignProLayout.antDesignProLayoutStrings.realDark
 import typings.antDesignProLayout.antDesignProLayoutStrings.side
+import typings.antDesignProLayout.antDesignProLayoutStrings.sub
 import typings.antDesignProLayout.antDesignProLayoutStrings.top
-import typings.antd.menuContextMod.MenuTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object defaultSettingsMod extends Shortcut {
+object defaultSettingsMod {
   
-  @JSImport("@ant-design/pro-layout/lib/defaultSettings", JSImport.Default)
+  @JSImport("@ant-design/pro-layout/es/defaultSettings", "defaultSettings")
   @js.native
-  val default: ProSettings = js.native
+  val defaultSettings: ProSettings = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.antDesignProLayout.antDesignProLayoutStrings.Fluid
@@ -36,92 +37,96 @@ object defaultSettingsMod extends Shortcut {
        with RenderSetting
   object ProSettings {
     
-    inline def apply(title: String | `false`): ProSettings = {
-      val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    inline def apply(): ProSettings = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProSettings]
     }
   }
   
   trait PureSettings extends StObject {
     
-    /**
-      * @name 全局增加滤镜
-      */
+    /** @name 主色，需要配合 umi 使用 */
+    var colorPrimary: js.UndefOr[String] = js.undefined
+    
+    /** @name 全局增加滤镜 */
     var colorWeak: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * @name layout of content: `Fluid` or `Fixed`, only works when layout is top
-      */
+    /** @name layout of content: `Fluid` or `Fixed`, only works when layout is top */
     var contentWidth: js.UndefOr[ContentWidth] = js.undefined
     
-    /**
-      * @name sticky siderbar
-      */
+    /** @name sticky siderbar */
     var fixSiderbar: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * @name sticky header
-      */
+    /** @name sticky header */
     var fixedHeader: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * @name nav menu position: `side` or `top`
-      */
-    var headerHeight: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * @name 顶部菜单的颜色，mix 模式下生效
-      */
-    var headerTheme: js.UndefOr[MenuTheme] = js.undefined
-    
-    /**
-      * Your custom iconfont Symbol script Url
-      * eg：//at.alicdn.com/t/font_1039637_btcrd5co4w.js
-      * 注意：如果需要图标多色，Iconfont 图标项目里要进行批量去色处理
-      * Usage: https://github.com/ant-design/ant-design-pro/pull/3517
+      * Your custom iconfont Symbol script Url eg：//at.alicdn.com/t/font_1039637_btcrd5co4w.js
+      * 注意：如果需要图标多色，Iconfont 图标项目里要进行批量去色处理 Usage: https://github.com/ant-design/ant-design-pro/pull/3517
       */
     var iconfontUrl: js.UndefOr[String] = js.undefined
     
     /**
-      * @name customize header height
+      * @name layout 的布局方式
+      * @type  'side' | 'top' | 'mix'
+      *
+      * @example 顶部菜单 layout="top"
+      * @example 侧边菜单 layout="side"
+      * @example 混合布局 既有顶部也有侧边 layout="mix"
       */
     var layout: js.UndefOr[side | top | mix] = js.undefined
     
     /**
-      * @name menu 相关的一些配置
+      * @name menu 相关的一些配置，可以配置菜单的行为
+      *
+      * @example 关闭菜单国际化  menu={{ locale: false }}
+      * @example 默认打开所有的菜单 menu={{ defaultOpenAll:true }}
+      * @example 让菜单处于loading 状态 menu={{ loading: true }}
+      * @example 异步加载菜单数据 menu={{params:{ pathname } request: async (params) => { return [{name:"主页",path=params.pathname}]} }}
+      * @example 使用 MenuGroup 来聚合菜单 menu={{ mode: 'group' }}
+      * @example 取消自动关闭菜单 menu={{ autoClose: false }}
+      * @example 忽略收起时自动关闭菜单 menu={{ ignoreFlatMenu: true }}
       */
-    var menu: js.UndefOr[DefaultOpenAll] = js.undefined
+    var menu: js.UndefOr[AutoClose] = js.undefined
     
     /**
       * @name theme for nav menu
+      *
+      * @type  "light" | "dark" | "realDark"
       */
-    var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
+    var navTheme: js.UndefOr[realDark | light] = js.undefined
     
     /**
-      * @name 主色，需要配合 umi 使用
+      * 侧边菜单模式
       */
-    var primaryColor: js.UndefOr[String] = js.undefined
+    var siderMenuType: js.UndefOr[sub | group] = js.undefined
     
     /**
+      * 只在 mix 模式下生效
+      *
       * @name 切割菜单
-      * @description 只在 mix 模式下生效
       */
     var splitMenus: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * 设置为 false，在 layout 中只展示 pageName，而不是 pageName - title
+      *
       * @name Layout 的 title，也会显示在浏览器标签上
-      * @description 设置为 false，在 layout 中只展示 pageName，而不是 pageName - title
       */
-    var title: String | `false`
+    var title: js.UndefOr[String | `false`] = js.undefined
   }
   object PureSettings {
     
-    inline def apply(title: String | `false`): PureSettings = {
-      val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    inline def apply(): PureSettings = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PureSettings]
     }
     
     extension [Self <: PureSettings](x: Self) {
+      
+      inline def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
+      
+      inline def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
       
       inline def setColorWeak(value: Boolean): Self = StObject.set(x, "colorWeak", value.asInstanceOf[js.Any])
       
@@ -139,14 +144,6 @@ object defaultSettingsMod extends Shortcut {
       
       inline def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
       
-      inline def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
-      
-      inline def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
-      
-      inline def setHeaderTheme(value: MenuTheme): Self = StObject.set(x, "headerTheme", value.asInstanceOf[js.Any])
-      
-      inline def setHeaderThemeUndefined: Self = StObject.set(x, "headerTheme", js.undefined)
-      
       inline def setIconfontUrl(value: String): Self = StObject.set(x, "iconfontUrl", value.asInstanceOf[js.Any])
       
       inline def setIconfontUrlUndefined: Self = StObject.set(x, "iconfontUrl", js.undefined)
@@ -155,23 +152,25 @@ object defaultSettingsMod extends Shortcut {
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      inline def setMenu(value: DefaultOpenAll): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: AutoClose): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
       inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
       
-      inline def setNavTheme(value: MenuTheme | realDark): Self = StObject.set(x, "navTheme", value.asInstanceOf[js.Any])
+      inline def setNavTheme(value: realDark | light): Self = StObject.set(x, "navTheme", value.asInstanceOf[js.Any])
       
       inline def setNavThemeUndefined: Self = StObject.set(x, "navTheme", js.undefined)
       
-      inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
+      inline def setSiderMenuType(value: sub | group): Self = StObject.set(x, "siderMenuType", value.asInstanceOf[js.Any])
       
-      inline def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
+      inline def setSiderMenuTypeUndefined: Self = StObject.set(x, "siderMenuType", js.undefined)
       
       inline def setSplitMenus(value: Boolean): Self = StObject.set(x, "splitMenus", value.asInstanceOf[js.Any])
       
       inline def setSplitMenusUndefined: Self = StObject.set(x, "splitMenus", js.undefined)
       
       inline def setTitle(value: String | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -211,9 +210,4 @@ object defaultSettingsMod extends Shortcut {
       inline def setMenuRenderUndefined: Self = StObject.set(x, "menuRender", js.undefined)
     }
   }
-  
-  type _To = ProSettings
-  
-  /* This means you don't have to write `default`, but can instead just say `defaultSettingsMod.foo` */
-  override def _to: ProSettings = default
 }

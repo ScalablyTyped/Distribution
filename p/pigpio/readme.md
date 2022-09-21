@@ -1,7 +1,7 @@
 
 # Scala.js typings for pigpio
 
-Typings are for version 1.2
+Typings are for version 3.3.1
 
 ## Library description:
 Fast GPIO, PWM, servo control, state change notification, and interrupt handling on the Raspberry Pi
@@ -10,10 +10,10 @@ Fast GPIO, PWM, servo control, state change notification, and interrupt handling
 | ------------------ | :-------------: |
 | Full name          | pigpio |
 | Keywords           | gpio, pwm, servo, iot, interrupt, raspberry, raspi, rpi, pi |
-| # releases         | 16 |
-| # dependents       | 47 |
-| # downloads        | 31004 |
-| # stars            | 11 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1556.6666666666667 |
+| # stars            | 856.0 |
 
 ## Links
 - [Homepage](https://github.com/fivdi/pigpio#readme)
@@ -24,7 +24,7 @@ Fast GPIO, PWM, servo control, state change notification, and interrupt handling
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -65,7 +65,15 @@ trait ReflectionTextureBaseBlock
   /** @hidden */
   var _reflectionMatrixName: String = js.native
   
+  /** @hidden */
+  var _reflectionPositionName: String = js.native
+  
+  /** @hidden */
+  var _reflectionSizeName: String = js.native
+  
   /* protected */ var _reflectionVectorName: String = js.native
+  
+  /* protected */ var _texture: Nullable[BaseTexture] = js.native
   
   /**
     * Gets the camera (or eye) position component
@@ -88,12 +96,32 @@ trait ReflectionTextureBaseBlock
     * @param worldNormalVarName name of the world normal variable
     * @param worldPos name of the world position variable. If not provided, will use the world position connected to this block
     * @param onlyReflectionVector if true, generates code only for the reflection vector computation, not for the reflection coordinates
+    * @param doNotEmitInvertZ if true, does not emit the invertZ code
     * @returns the shader code
     */
   def handleFragmentSideCodeReflectionCoords(worldNormalVarName: String): String = js.native
   def handleFragmentSideCodeReflectionCoords(worldNormalVarName: String, worldPos: String): String = js.native
   def handleFragmentSideCodeReflectionCoords(worldNormalVarName: String, worldPos: String, onlyReflectionVector: Boolean): String = js.native
+  def handleFragmentSideCodeReflectionCoords(
+    worldNormalVarName: String,
+    worldPos: String,
+    onlyReflectionVector: Boolean,
+    doNotEmitInvertZ: Boolean
+  ): String = js.native
+  def handleFragmentSideCodeReflectionCoords(
+    worldNormalVarName: String,
+    worldPos: String,
+    onlyReflectionVector: Unit,
+    doNotEmitInvertZ: Boolean
+  ): String = js.native
   def handleFragmentSideCodeReflectionCoords(worldNormalVarName: String, worldPos: Unit, onlyReflectionVector: Boolean): String = js.native
+  def handleFragmentSideCodeReflectionCoords(
+    worldNormalVarName: String,
+    worldPos: Unit,
+    onlyReflectionVector: Boolean,
+    doNotEmitInvertZ: Boolean
+  ): String = js.native
+  def handleFragmentSideCodeReflectionCoords(worldNormalVarName: String, worldPos: Unit, onlyReflectionVector: Unit, doNotEmitInvertZ: Boolean): String = js.native
   
   /**
     * Handles the inits for the fragment code path
@@ -118,7 +146,8 @@ trait ReflectionTextureBaseBlock
   /**
     * Gets or sets the texture associated with the node
     */
-  var texture: Nullable[BaseTexture] = js.native
+  def texture: Nullable[BaseTexture] = js.native
+  def texture_=(texture: Nullable[BaseTexture]): Unit = js.native
   
   /**
     * Gets the view input component

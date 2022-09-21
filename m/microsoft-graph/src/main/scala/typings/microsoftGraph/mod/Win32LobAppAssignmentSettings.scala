@@ -8,6 +8,12 @@ trait Win32LobAppAssignmentSettings
   extends StObject
      with MobileAppAssignmentSettings {
   
+  /**
+    * The delivery optimization priority for this app assignment. This setting is not supported in National Cloud
+    * environments. Possible values are: notConfigured, foreground.
+    */
+  var deliveryOptimizationPriority: js.UndefOr[Win32LobAppDeliveryOptimizationPriority] = js.undefined
+  
   // The install time settings to apply for this app assignment.
   var installTimeSettings: js.UndefOr[NullableOption[MobileAppInstallTimeSettings]] = js.undefined
   
@@ -25,6 +31,10 @@ object Win32LobAppAssignmentSettings {
   }
   
   extension [Self <: Win32LobAppAssignmentSettings](x: Self) {
+    
+    inline def setDeliveryOptimizationPriority(value: Win32LobAppDeliveryOptimizationPriority): Self = StObject.set(x, "deliveryOptimizationPriority", value.asInstanceOf[js.Any])
+    
+    inline def setDeliveryOptimizationPriorityUndefined: Self = StObject.set(x, "deliveryOptimizationPriority", js.undefined)
     
     inline def setInstallTimeSettings(value: NullableOption[MobileAppInstallTimeSettings]): Self = StObject.set(x, "installTimeSettings", value.asInstanceOf[js.Any])
     

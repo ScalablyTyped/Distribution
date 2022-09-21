@@ -35,7 +35,7 @@ object mod {
       
       inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      inline def setFlagsVarargs(value: PolyfillFlag*): Self = StObject.set(x, "flags", js.Array(value :_*))
+      inline def setFlagsVarargs(value: PolyfillFlag*): Self = StObject.set(x, "flags", js.Array(value*))
     }
   }
   
@@ -89,7 +89,7 @@ object mod {
       
       inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
       
-      inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+      inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value*))
       
       inline def setFeatures(value: Features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       

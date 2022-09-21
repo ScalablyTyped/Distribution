@@ -22,11 +22,6 @@ trait GoogleActionsV2UiElementsLinkOutSuggestion extends StObject {
     * https://developer.chrome.com/multidevice/android/intents
     */
   var openUrlAction: js.UndefOr[GoogleActionsV2UiElementsOpenUrlAction] = js.undefined
-  
-  /**
-    * Deprecated. Use OpenUrlAction instead.
-    */
-  var url: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2UiElementsLinkOutSuggestion {
   
@@ -44,9 +39,5 @@ object GoogleActionsV2UiElementsLinkOutSuggestion {
     inline def setOpenUrlAction(value: GoogleActionsV2UiElementsOpenUrlAction): Self = StObject.set(x, "openUrlAction", value.asInstanceOf[js.Any])
     
     inline def setOpenUrlActionUndefined: Self = StObject.set(x, "openUrlAction", js.undefined)
-    
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    
-    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

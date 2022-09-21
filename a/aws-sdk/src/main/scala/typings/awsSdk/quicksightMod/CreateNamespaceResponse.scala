@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateNamespaceResponse extends StObject {
   
   /**
-    * The ARN of the QuickSight namespace you created. 
+    * The ARN of the Amazon QuickSight namespace you created. 
     */
   var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
-    * The AWS Region that you want to use for the free SPICE capacity for the new namespace. This is set to the region that you run CreateNamespace in. 
+    * The Amazon Web Services Region; that you want to use for the free SPICE capacity for the new namespace. This is set to the region that you run CreateNamespace in. 
     */
   var CapacityRegion: js.UndefOr[String] = js.undefined
   
@@ -32,7 +32,7 @@ trait CreateNamespaceResponse extends StObject {
   var Name: js.UndefOr[Namespace] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   

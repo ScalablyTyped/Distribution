@@ -47,12 +47,12 @@ trait ReadFileOption extends StObject {
   /** 指定文件的长度，如果不指定，则读到文件末尾。有效范围：[1, fileLength]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  var length: js.UndefOr[String] = js.undefined
+  var length: js.UndefOr[Double] = js.undefined
   
   /** 从文件指定位置开始读，如果不指定，则从文件头开始读。读取的范围应该是左闭右开区间 [position, position+length)。有效范围：[0, fileLength - 1]。单位：byte
     *
     * 最低基础库： `2.10.0` */
-  var position: js.UndefOr[String] = js.undefined
+  var position: js.UndefOr[Double] = js.undefined
   
   /** 接口调用成功的回调函数 */
   var success: js.UndefOr[ReadFileSuccessCallback] = js.undefined
@@ -82,11 +82,11 @@ object ReadFileOption {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    inline def setLength(value: String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
     inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     

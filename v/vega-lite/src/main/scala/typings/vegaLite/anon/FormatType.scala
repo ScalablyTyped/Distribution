@@ -1,6 +1,7 @@
 package typings.vegaLite.anon
 
-import typings.std.Record
+import typings.vegaLite.utilMod.Dict
+import typings.vegaTypings.encodeMod.Text
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.titleMod.TitleAnchor
 import org.scalablytyped.runtime.StObject
@@ -9,77 +10,86 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FormatType extends StObject {
   
-  var format: js.UndefOr[String | (Record[String, js.Any])] = js.undefined
+  /**
+    * When used with the default `"number"` and `"time"` format type, the text formatting pattern for labels of guides (axes, legends, headers) and text marks.
+    *
+    * - If the format type is `"number"` (e.g., for quantitative fields), this is D3's [number format pattern](https://github.com/d3/d3-format#locale_format).
+    * - If the format type is `"time"` (e.g., for temporal fields), this is D3's [time format pattern](https://github.com/d3/d3-time-format#locale_format).
+    *
+    * See the [format documentation](https://vega.github.io/vega-lite/docs/format.html) for more examples.
+    *
+    * When used with a [custom `formatType`](https://vega.github.io/vega-lite/docs/config.html#custom-format-type), this value will be passed as `format` alongside `datum.value` to the registered function.
+    *
+    * __Default value:__  Derived from [numberFormat](https://vega.github.io/vega-lite/docs/config.html#format) config for number format and from [timeFormat](https://vega.github.io/vega-lite/docs/config.html#format) config for time format.
+    */
+  var format: js.UndefOr[String | Dict[Any]] = js.undefined
   
+  /**
+    * The format type for labels. One of `"number"`, `"time"`, or a [registered custom format type](https://vega.github.io/vega-lite/docs/config.html#custom-format-type).
+    *
+    * __Default value:__
+    * - `"time"` for temporal fields and ordinal and nominal fields with `timeUnit`.
+    * - `"number"` for quantitative fields as well as ordinal and nominal fields without `timeUnit`.
+    */
   var formatType: js.UndefOr[String] = js.undefined
   
-  var labelAlign: js.UndefOr[js.Any] = js.undefined
+  var labelAlign: js.UndefOr[Any] = js.undefined
   
   var labelAnchor: js.UndefOr[TitleAnchor] = js.undefined
   
   var labelAngle: js.UndefOr[Double] = js.undefined
   
-  var labelBaseline: js.UndefOr[js.Any] = js.undefined
+  var labelBaseline: js.UndefOr[Any] = js.undefined
   
-  var labelColor: js.UndefOr[js.Any] = js.undefined
+  var labelColor: js.UndefOr[Any] = js.undefined
   
   var labelExpr: js.UndefOr[String] = js.undefined
   
-  var labelFont: js.UndefOr[js.Any] = js.undefined
+  var labelFont: js.UndefOr[Any] = js.undefined
   
-  var labelFontSize: js.UndefOr[js.Any] = js.undefined
+  var labelFontSize: js.UndefOr[Any] = js.undefined
   
-  var labelFontStyle: js.UndefOr[js.Any] = js.undefined
+  var labelFontStyle: js.UndefOr[Any] = js.undefined
   
-  var labelFontWeight: js.UndefOr[js.Any] = js.undefined
+  var labelFontWeight: js.UndefOr[Any] = js.undefined
   
-  var labelLimit: js.UndefOr[js.Any] = js.undefined
+  var labelLimit: js.UndefOr[Any] = js.undefined
   
-  var labelLineHeight: js.UndefOr[js.Any] = js.undefined
+  var labelLineHeight: js.UndefOr[Any] = js.undefined
   
   var labelOrient: typings.vegaTypings.encodeMod.Orient
   
-  var labelPadding: js.UndefOr[js.Any] = js.undefined
+  var labelPadding: js.UndefOr[Any] = js.undefined
   
   var labels: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String | js.Array[String] | SignalRef] = js.undefined
+  var title: js.UndefOr[SignalRef | Text] = js.undefined
   
-  var titleAlign: js.UndefOr[js.Any] = js.undefined
+  var titleAlign: js.UndefOr[Any] = js.undefined
   
   var titleAnchor: js.UndefOr[TitleAnchor] = js.undefined
   
   var titleAngle: js.UndefOr[Double] = js.undefined
   
-  var titleBaseline: js.UndefOr[js.Any] = js.undefined
+  var titleBaseline: js.UndefOr[Any] = js.undefined
   
-  var titleColor: js.UndefOr[js.Any] = js.undefined
+  var titleColor: js.UndefOr[Any] = js.undefined
   
-  var titleFont: js.UndefOr[js.Any] = js.undefined
+  var titleFont: js.UndefOr[Any] = js.undefined
   
-  var titleFontSize: js.UndefOr[js.Any] = js.undefined
+  var titleFontSize: js.UndefOr[Any] = js.undefined
   
-  var titleFontStyle: js.UndefOr[js.Any] = js.undefined
+  var titleFontStyle: js.UndefOr[Any] = js.undefined
   
-  /**
-    * A ValueDef with Condition<ValueDef | FieldDef> where either the condition or the value are optional.
-    * {
-    *   condition: {field: ...} | {value: ...},
-    *   value: ...,
-    * }
-    */
-  /**
-    * @minProperties 1
-    */
-  var titleFontWeight: js.UndefOr[js.Any] = js.undefined
+  var titleFontWeight: js.UndefOr[Any] = js.undefined
   
-  var titleLimit: js.UndefOr[js.Any] = js.undefined
+  var titleLimit: js.UndefOr[Any] = js.undefined
   
-  var titleLineHeight: js.UndefOr[js.Any] = js.undefined
+  var titleLineHeight: js.UndefOr[Any] = js.undefined
   
   var titleOrient: typings.vegaTypings.encodeMod.Orient
   
-  var titlePadding: js.UndefOr[js.Any] = js.undefined
+  var titlePadding: js.UndefOr[Any] = js.undefined
 }
 object FormatType {
   
@@ -93,7 +103,7 @@ object FormatType {
   
   extension [Self <: FormatType](x: Self) {
     
-    inline def setFormat(value: String | (Record[String, js.Any])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String | Dict[Any]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
     
@@ -101,7 +111,7 @@ object FormatType {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setLabelAlign(value: js.Any): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
+    inline def setLabelAlign(value: Any): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
     
     inline def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
     
@@ -115,11 +125,11 @@ object FormatType {
     
     inline def setLabelAngleUndefined: Self = StObject.set(x, "labelAngle", js.undefined)
     
-    inline def setLabelBaseline(value: js.Any): Self = StObject.set(x, "labelBaseline", value.asInstanceOf[js.Any])
+    inline def setLabelBaseline(value: Any): Self = StObject.set(x, "labelBaseline", value.asInstanceOf[js.Any])
     
     inline def setLabelBaselineUndefined: Self = StObject.set(x, "labelBaseline", js.undefined)
     
-    inline def setLabelColor(value: js.Any): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
+    inline def setLabelColor(value: Any): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
     
     inline def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
     
@@ -127,33 +137,33 @@ object FormatType {
     
     inline def setLabelExprUndefined: Self = StObject.set(x, "labelExpr", js.undefined)
     
-    inline def setLabelFont(value: js.Any): Self = StObject.set(x, "labelFont", value.asInstanceOf[js.Any])
+    inline def setLabelFont(value: Any): Self = StObject.set(x, "labelFont", value.asInstanceOf[js.Any])
     
-    inline def setLabelFontSize(value: js.Any): Self = StObject.set(x, "labelFontSize", value.asInstanceOf[js.Any])
+    inline def setLabelFontSize(value: Any): Self = StObject.set(x, "labelFontSize", value.asInstanceOf[js.Any])
     
     inline def setLabelFontSizeUndefined: Self = StObject.set(x, "labelFontSize", js.undefined)
     
-    inline def setLabelFontStyle(value: js.Any): Self = StObject.set(x, "labelFontStyle", value.asInstanceOf[js.Any])
+    inline def setLabelFontStyle(value: Any): Self = StObject.set(x, "labelFontStyle", value.asInstanceOf[js.Any])
     
     inline def setLabelFontStyleUndefined: Self = StObject.set(x, "labelFontStyle", js.undefined)
     
     inline def setLabelFontUndefined: Self = StObject.set(x, "labelFont", js.undefined)
     
-    inline def setLabelFontWeight(value: js.Any): Self = StObject.set(x, "labelFontWeight", value.asInstanceOf[js.Any])
+    inline def setLabelFontWeight(value: Any): Self = StObject.set(x, "labelFontWeight", value.asInstanceOf[js.Any])
     
     inline def setLabelFontWeightUndefined: Self = StObject.set(x, "labelFontWeight", js.undefined)
     
-    inline def setLabelLimit(value: js.Any): Self = StObject.set(x, "labelLimit", value.asInstanceOf[js.Any])
+    inline def setLabelLimit(value: Any): Self = StObject.set(x, "labelLimit", value.asInstanceOf[js.Any])
     
     inline def setLabelLimitUndefined: Self = StObject.set(x, "labelLimit", js.undefined)
     
-    inline def setLabelLineHeight(value: js.Any): Self = StObject.set(x, "labelLineHeight", value.asInstanceOf[js.Any])
+    inline def setLabelLineHeight(value: Any): Self = StObject.set(x, "labelLineHeight", value.asInstanceOf[js.Any])
     
     inline def setLabelLineHeightUndefined: Self = StObject.set(x, "labelLineHeight", js.undefined)
     
     inline def setLabelOrient(value: typings.vegaTypings.encodeMod.Orient): Self = StObject.set(x, "labelOrient", value.asInstanceOf[js.Any])
     
-    inline def setLabelPadding(value: js.Any): Self = StObject.set(x, "labelPadding", value.asInstanceOf[js.Any])
+    inline def setLabelPadding(value: Any): Self = StObject.set(x, "labelPadding", value.asInstanceOf[js.Any])
     
     inline def setLabelPaddingUndefined: Self = StObject.set(x, "labelPadding", js.undefined)
     
@@ -161,9 +171,9 @@ object FormatType {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setTitle(value: String | js.Array[String] | SignalRef): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: SignalRef | Text): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    inline def setTitleAlign(value: js.Any): Self = StObject.set(x, "titleAlign", value.asInstanceOf[js.Any])
+    inline def setTitleAlign(value: Any): Self = StObject.set(x, "titleAlign", value.asInstanceOf[js.Any])
     
     inline def setTitleAlignUndefined: Self = StObject.set(x, "titleAlign", js.undefined)
     
@@ -177,46 +187,46 @@ object FormatType {
     
     inline def setTitleAngleUndefined: Self = StObject.set(x, "titleAngle", js.undefined)
     
-    inline def setTitleBaseline(value: js.Any): Self = StObject.set(x, "titleBaseline", value.asInstanceOf[js.Any])
+    inline def setTitleBaseline(value: Any): Self = StObject.set(x, "titleBaseline", value.asInstanceOf[js.Any])
     
     inline def setTitleBaselineUndefined: Self = StObject.set(x, "titleBaseline", js.undefined)
     
-    inline def setTitleColor(value: js.Any): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
+    inline def setTitleColor(value: Any): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
     
     inline def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
     
-    inline def setTitleFont(value: js.Any): Self = StObject.set(x, "titleFont", value.asInstanceOf[js.Any])
+    inline def setTitleFont(value: Any): Self = StObject.set(x, "titleFont", value.asInstanceOf[js.Any])
     
-    inline def setTitleFontSize(value: js.Any): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
+    inline def setTitleFontSize(value: Any): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
     
     inline def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
     
-    inline def setTitleFontStyle(value: js.Any): Self = StObject.set(x, "titleFontStyle", value.asInstanceOf[js.Any])
+    inline def setTitleFontStyle(value: Any): Self = StObject.set(x, "titleFontStyle", value.asInstanceOf[js.Any])
     
     inline def setTitleFontStyleUndefined: Self = StObject.set(x, "titleFontStyle", js.undefined)
     
     inline def setTitleFontUndefined: Self = StObject.set(x, "titleFont", js.undefined)
     
-    inline def setTitleFontWeight(value: js.Any): Self = StObject.set(x, "titleFontWeight", value.asInstanceOf[js.Any])
+    inline def setTitleFontWeight(value: Any): Self = StObject.set(x, "titleFontWeight", value.asInstanceOf[js.Any])
     
     inline def setTitleFontWeightUndefined: Self = StObject.set(x, "titleFontWeight", js.undefined)
     
-    inline def setTitleLimit(value: js.Any): Self = StObject.set(x, "titleLimit", value.asInstanceOf[js.Any])
+    inline def setTitleLimit(value: Any): Self = StObject.set(x, "titleLimit", value.asInstanceOf[js.Any])
     
     inline def setTitleLimitUndefined: Self = StObject.set(x, "titleLimit", js.undefined)
     
-    inline def setTitleLineHeight(value: js.Any): Self = StObject.set(x, "titleLineHeight", value.asInstanceOf[js.Any])
+    inline def setTitleLineHeight(value: Any): Self = StObject.set(x, "titleLineHeight", value.asInstanceOf[js.Any])
     
     inline def setTitleLineHeightUndefined: Self = StObject.set(x, "titleLineHeight", js.undefined)
     
     inline def setTitleOrient(value: typings.vegaTypings.encodeMod.Orient): Self = StObject.set(x, "titleOrient", value.asInstanceOf[js.Any])
     
-    inline def setTitlePadding(value: js.Any): Self = StObject.set(x, "titlePadding", value.asInstanceOf[js.Any])
+    inline def setTitlePadding(value: Any): Self = StObject.set(x, "titlePadding", value.asInstanceOf[js.Any])
     
     inline def setTitlePaddingUndefined: Self = StObject.set(x, "titlePadding", js.undefined)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value*))
   }
 }

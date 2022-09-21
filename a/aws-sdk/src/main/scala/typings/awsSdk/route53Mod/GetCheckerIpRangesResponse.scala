@@ -22,6 +22,6 @@ object GetCheckerIpRangesResponse {
     
     inline def setCheckerIpRanges(value: CheckerIpRanges): Self = StObject.set(x, "CheckerIpRanges", value.asInstanceOf[js.Any])
     
-    inline def setCheckerIpRangesVarargs(value: IPAddressCidr*): Self = StObject.set(x, "CheckerIpRanges", js.Array(value :_*))
+    inline def setCheckerIpRangesVarargs(value: IPAddressCidr*): Self = StObject.set(x, "CheckerIpRanges", js.Array(value*))
   }
 }

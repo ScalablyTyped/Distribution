@@ -33,6 +33,6 @@ object DescribeOrganizationConformancePackStatusesResponse {
     
     inline def setOrganizationConformancePackStatusesUndefined: Self = StObject.set(x, "OrganizationConformancePackStatuses", js.undefined)
     
-    inline def setOrganizationConformancePackStatusesVarargs(value: OrganizationConformancePackStatus*): Self = StObject.set(x, "OrganizationConformancePackStatuses", js.Array(value :_*))
+    inline def setOrganizationConformancePackStatusesVarargs(value: OrganizationConformancePackStatus*): Self = StObject.set(x, "OrganizationConformancePackStatuses", js.Array(value*))
   }
 }

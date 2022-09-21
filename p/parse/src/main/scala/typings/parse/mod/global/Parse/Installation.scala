@@ -20,7 +20,7 @@ trait Installation[T /* <: Attributes */]
   
   var appVersion: String = js.native
   
-  var badge: js.Any = js.native
+  var badge: Any = js.native
   
   var channelUris: String = js.native
   
@@ -36,7 +36,7 @@ trait Installation[T /* <: Attributes */]
   
   var pushType: String = js.native
   
-  var timeZone: js.Any = js.native
+  var timeZone: Any = js.native
 }
 object Installation {
   

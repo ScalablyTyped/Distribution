@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Dispatch extends StObject {
   
-  def apply(`type`: String): js.Promise[js.Any] = js.native
-  def apply(`type`: String, payload: js.Any): js.Promise[js.Any] = js.native
-  def apply(`type`: String, payload: js.Any, options: DispatchOptions): js.Promise[js.Any] = js.native
-  def apply(`type`: String, payload: Unit, options: DispatchOptions): js.Promise[js.Any] = js.native
-  def apply[P /* <: Payload */](payloadWithType: P): js.Promise[js.Any] = js.native
-  def apply[P /* <: Payload */](payloadWithType: P, options: DispatchOptions): js.Promise[js.Any] = js.native
+  def apply(`type`: String): js.Promise[Any] = js.native
+  def apply(`type`: String, payload: Any): js.Promise[Any] = js.native
+  def apply(`type`: String, payload: Any, options: DispatchOptions): js.Promise[Any] = js.native
+  def apply(`type`: String, payload: Unit, options: DispatchOptions): js.Promise[Any] = js.native
+  def apply[P /* <: Payload */](payloadWithType: P): js.Promise[Any] = js.native
+  def apply[P /* <: Payload */](payloadWithType: P, options: DispatchOptions): js.Promise[Any] = js.native
 }

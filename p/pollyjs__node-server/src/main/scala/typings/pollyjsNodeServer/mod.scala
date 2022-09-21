@@ -1,16 +1,15 @@
 package typings.pollyjsNodeServer
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.cors.mod.CorsOptions
 import typings.express.mod.Express
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
+import typings.expressServeStaticCore.mod.Application
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.pollyjsNodeServer.anon.PartialConfig
 import typings.pollyjsNodeServer.anon.PartialServerConfig
 import typings.pollyjsNodeServer.anon.PickConfigrecordingsDir
-import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object mod {
   
   @JSImport("@pollyjs/node-server", "API")
   @js.native
-  class API protected () extends StObject {
+  open class API protected () extends StObject {
     def this(options: PickConfigrecordingsDir) = this()
     
     def deleteRecording(recording: String): APIResponse = js.native
@@ -33,9 +32,9 @@ object mod {
     def getRecordings(recording: String): APIResponse = js.native
     
     def respond(status: Double): APIResponse = js.native
-    def respond(status: Double, data: js.Any): APIResponse = js.native
+    def respond(status: Double, data: Any): APIResponse = js.native
     
-    def saveRecording(recording: String, data: js.Any): APIResponse = js.native
+    def saveRecording(recording: String, data: Any): APIResponse = js.native
   }
   
   @JSImport("@pollyjs/node-server", "Defaults")
@@ -44,35 +43,60 @@ object mod {
   
   @JSImport("@pollyjs/node-server", "Server")
   @js.native
-  class Server () extends StObject {
+  open class Server () extends StObject {
     def this(options: PartialServerConfig) = this()
     
-    /**
-      * Express instance itself is a request handler, which could be invoked without
-      * third argument.
-      */
-    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any = js.native
-    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any = js.native
-    def app(req: IncomingMessage, res: Response[js.Any, Double]): js.Any = js.native
-    def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
+    def app(): Application = js.native
     @JSName("app")
     var app_Original: Express = js.native
     
     var config: ServerConfig = js.native
     
-    def listen(): typings.node.httpMod.Server = js.native
-    def listen(port: Double): typings.node.httpMod.Server = js.native
-    def listen(port: Double, host: String): typings.node.httpMod.Server = js.native
-    def listen(port: Unit, host: String): typings.node.httpMod.Server = js.native
+    def listen(): typings.node.httpMod.Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Double): typings.node.httpMod.Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Double, host: String): typings.node.httpMod.Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
+    def listen(port: Unit, host: String): typings.node.httpMod.Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ] = js.native
     
-    var server: js.UndefOr[typings.node.httpMod.Server] = js.native
+    var server: js.UndefOr[
+        typings.node.httpMod.Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]
+      ] = js.native
   }
   
   inline def registerExpressAPI(app: Express, config: PartialConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerExpressAPI")(app.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait APIResponse extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[Any] = js.undefined
     
     var status: Double
   }
@@ -85,7 +109,7 @@ object mod {
     
     extension [Self <: APIResponse](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       

@@ -11,6 +11,13 @@ trait RealWorldSize
      with Object {
   
   /**
+    * See [axis](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#axis).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#RealWorldSize)
+    */
+  var axis: js.UndefOr[String] = js.undefined
+  
+  /**
     * See [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#field).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#RealWorldSize)
@@ -50,7 +57,7 @@ trait RealWorldSize
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#RealWorldSize)
     */
-  var valueUnit: String
+  var valueUnit: js.UndefOr[String] = js.undefined
 }
 object RealWorldSize {
   
@@ -58,15 +65,18 @@ object RealWorldSize {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    `type`: String,
-    valueUnit: String
+    `type`: String
   ): RealWorldSize = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), valueUnit = valueUnit.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealWorldSize]
   }
   
   extension [Self <: RealWorldSize](x: Self) {
+    
+    inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
@@ -87,5 +97,7 @@ object RealWorldSize {
     inline def setValueRepresentationUndefined: Self = StObject.set(x, "valueRepresentation", js.undefined)
     
     inline def setValueUnit(value: String): Self = StObject.set(x, "valueUnit", value.asInstanceOf[js.Any])
+    
+    inline def setValueUnitUndefined: Self = StObject.set(x, "valueUnit", js.undefined)
   }
 }

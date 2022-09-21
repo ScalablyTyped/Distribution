@@ -1,7 +1,6 @@
 package typings.hexoLog
 
 import typings.hexoLog.anon.Debug
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,11 +30,11 @@ object mod {
       * (including the stack) and sets `msg` to the exception
       * message or you can specify the `msg`.
       */
-    def d(error: Error, params: js.Any*): Unit = js.native
+    def d(error: js.Error, params: Any*): Unit = js.native
     /**
       * Uses `util.format` for msg formatting.
       */
-    def d(format: js.Any, params: js.Any*): Unit = js.native
+    def d(format: Any, params: Any*): Unit = js.native
     /**
       * The first field can optionally be a "fields" object, which
       * is merged into the log record.
@@ -43,7 +42,7 @@ object mod {
       * To pass in an Error *and* other fields, use the `err`
       * field name for the Error instance.
       */
-    def d(obj: js.Object, params: js.Any*): Unit = js.native
+    def d(obj: js.Object, params: Any*): Unit = js.native
     
     /**
       * Returns a boolean: is the `error` level enabled?
@@ -57,11 +56,11 @@ object mod {
       * (including the stack) and sets `msg` to the exception
       * message or you can specify the `msg`.
       */
-    def e(error: Error, params: js.Any*): Unit = js.native
+    def e(error: js.Error, params: Any*): Unit = js.native
     /**
       * Uses `util.format` for msg formatting.
       */
-    def e(format: js.Any, params: js.Any*): Unit = js.native
+    def e(format: Any, params: Any*): Unit = js.native
     /**
       * The first field can optionally be a "fields" object, which
       * is merged into the log record.
@@ -69,7 +68,7 @@ object mod {
       * To pass in an Error *and* other fields, use the `err`
       * field name for the Error instance.
       */
-    def e(obj: js.Object, params: js.Any*): Unit = js.native
+    def e(obj: js.Object, params: Any*): Unit = js.native
     
     /**
       * Returns a boolean: is the `info` level enabled?
@@ -83,11 +82,11 @@ object mod {
       * (including the stack) and sets `msg` to the exception
       * message or you can specify the `msg`.
       */
-    def i(error: Error, params: js.Any*): Unit = js.native
+    def i(error: js.Error, params: Any*): Unit = js.native
     /**
       * Uses `util.format` for msg formatting.
       */
-    def i(format: js.Any, params: js.Any*): Unit = js.native
+    def i(format: Any, params: Any*): Unit = js.native
     /**
       * The first field can optionally be a "fields" object, which
       * is merged into the log record.
@@ -95,7 +94,7 @@ object mod {
       * To pass in an Error *and* other fields, use the `err`
       * field name for the Error instance.
       */
-    def i(obj: js.Object, params: js.Any*): Unit = js.native
+    def i(obj: js.Object, params: Any*): Unit = js.native
     
     /**
       * Returns a boolean: is the `info` level enabled?
@@ -109,11 +108,11 @@ object mod {
       * (including the stack) and sets `msg` to the exception
       * message or you can specify the `msg`.
       */
-    def log(error: Error, params: js.Any*): Unit = js.native
+    def log(error: js.Error, params: Any*): Unit = js.native
     /**
       * Uses `util.format` for msg formatting.
       */
-    def log(format: js.Any, params: js.Any*): Unit = js.native
+    def log(format: Any, params: Any*): Unit = js.native
     /**
       * The first field can optionally be a "fields" object, which
       * is merged into the log record.
@@ -121,7 +120,7 @@ object mod {
       * To pass in an Error *and* other fields, use the `err`
       * field name for the Error instance.
       */
-    def log(obj: js.Object, params: js.Any*): Unit = js.native
+    def log(obj: js.Object, params: Any*): Unit = js.native
     
     /**
       * Returns a boolean: is the `warn` level enabled?
@@ -135,11 +134,11 @@ object mod {
       * (including the stack) and sets `msg` to the exception
       * message or you can specify the `msg`.
       */
-    def w(error: Error, params: js.Any*): Unit = js.native
+    def w(error: js.Error, params: Any*): Unit = js.native
     /**
       * Uses `util.format` for msg formatting.
       */
-    def w(format: js.Any, params: js.Any*): Unit = js.native
+    def w(format: Any, params: Any*): Unit = js.native
     /**
       * The first field can optionally be a "fields" object, which
       * is merged into the log record.
@@ -147,6 +146,6 @@ object mod {
       * To pass in an Error *and* other fields, use the `err`
       * field name for the Error instance.
       */
-    def w(obj: js.Object, params: js.Any*): Unit = js.native
+    def w(obj: js.Object, params: Any*): Unit = js.native
   }
 }

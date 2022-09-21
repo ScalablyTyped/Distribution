@@ -10,10 +10,10 @@ object assistantMod {
   
   @JSImport("material-ui/svg-icons/image/assistant", JSImport.Default)
   @js.native
-  class default () extends ImageAssistant
+  open class default () extends ImageAssistant
   
   @JSImport("material-ui/svg-icons/image/assistant", "ImageAssistant")
   @js.native
-  class ImageAssistant ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageAssistant ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

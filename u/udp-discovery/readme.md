@@ -10,10 +10,10 @@ Provides zero-config discovery service using broadcast UDP.
 | ------------------ | :-------------: |
 | Full name          | udp-discovery |
 | Keywords           | discovery, distributed, supercluster, udp, multicast, tcp |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 3047 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 137.0 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/stdarg/udp-discovery#readme)

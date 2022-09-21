@@ -10,10 +10,10 @@ Compiles an evaluating function for a C expression
 | ------------------ | :-------------: |
 | Full name          | @tannin/compile |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 1018909 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 136527.33333333334 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/aduth/tannin)

@@ -53,7 +53,7 @@ object paginationLinkMod {
   
   @JSImport("rbx/components/pagination/pagination-link", "PaginationLink")
   @js.native
-  val PaginationLink: ForwardRefAsExoticComponent[PaginationLinkProps, ElementType[js.Any]] = js.native
+  val PaginationLink: ForwardRefAsExoticComponent[PaginationLinkProps, ElementType[Any]] = js.native
   
   trait PaginationLinkModifiers extends StObject {
     

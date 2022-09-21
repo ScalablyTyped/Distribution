@@ -11,10 +11,10 @@ object filterWithStateObserverMod {
   
   @JSImport("wonder-frp/dist/commonjs/observer/FilterWithStateObserver", "FilterWithStateObserver")
   @js.native
-  class FilterWithStateObserver protected () extends FilterObserver {
-    def this(prevObserver: IObserver, predicate: js.Function1[/* value */ js.Any, Boolean], source: Stream) = this()
+  open class FilterWithStateObserver protected () extends FilterObserver {
+    def this(prevObserver: IObserver, predicate: js.Function1[/* value */ Any, Boolean], source: Stream) = this()
     
-    /* private */ var _isTrigger: js.Any = js.native
+    /* private */ var _isTrigger: Any = js.native
   }
   /* static members */
   object FilterWithStateObserver {
@@ -26,7 +26,7 @@ object filterWithStateObserverMod {
     inline def create(
       prevObserver: IObserver,
       predicate: js.Function3[
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* index */ js.UndefOr[Double], 
           /* source */ js.UndefOr[Stream], 
           Boolean

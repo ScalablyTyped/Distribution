@@ -38,7 +38,7 @@ object DropoutLayerArgs {
     
     inline def setNoiseShapeUndefined: Self = StObject.set(x, "noiseShape", js.undefined)
     
-    inline def setNoiseShapeVarargs(value: Double*): Self = StObject.set(x, "noiseShape", js.Array(value :_*))
+    inline def setNoiseShapeVarargs(value: Double*): Self = StObject.set(x, "noiseShape", js.Array(value*))
     
     inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     

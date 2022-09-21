@@ -8,7 +8,6 @@ import typings.googleCloudStorage.googleCloudStorageStrings.PUT
 import typings.googleCloudStorage.googleCloudStorageStrings.v2
 import typings.googleCloudStorage.googleCloudStorageStrings.v4
 import typings.node.httpMod.OutgoingHttpHeaders
-import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,30 +19,60 @@ object signerMod {
   @js.native
   val PATH_STYLED_HOST: /* "https://storage.googleapis.com" */ String = js.native
   
+  @js.native
+  sealed trait SignerExceptionMessages extends StObject
+  @JSImport("@google-cloud/storage/build/src/signer", "SignerExceptionMessages")
+  @js.native
+  object SignerExceptionMessages extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[SignerExceptionMessages & String] = js.native
+    
+    @js.native
+    sealed trait ACCESSIBLE_DATE_INVALID
+      extends StObject
+         with SignerExceptionMessages
+    /* "The accessible at date provided was invalid." */ val ACCESSIBLE_DATE_INVALID: typings.googleCloudStorage.signerMod.SignerExceptionMessages.ACCESSIBLE_DATE_INVALID & String = js.native
+    
+    @js.native
+    sealed trait EXPIRATION_BEFORE_ACCESSIBLE_DATE
+      extends StObject
+         with SignerExceptionMessages
+    /* "An expiration date cannot be before accessible date." */ val EXPIRATION_BEFORE_ACCESSIBLE_DATE: typings.googleCloudStorage.signerMod.SignerExceptionMessages.EXPIRATION_BEFORE_ACCESSIBLE_DATE & String = js.native
+    
+    @js.native
+    sealed trait X_GOOG_CONTENT_SHA256
+      extends StObject
+         with SignerExceptionMessages
+    /* "The header X-Goog-Content-SHA256 must be a hexadecimal string." */ val X_GOOG_CONTENT_SHA256: typings.googleCloudStorage.signerMod.SignerExceptionMessages.X_GOOG_CONTENT_SHA256 & String = js.native
+  }
+  
   @JSImport("@google-cloud/storage/build/src/signer", "SigningError")
   @js.native
-  class SigningError ()
+  open class SigningError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("@google-cloud/storage/build/src/signer", "URLSigner")
   @js.native
-  class URLSigner protected () extends StObject {
+  open class URLSigner protected () extends StObject {
     def this(authClient: AuthClient, bucket: BucketI) = this()
     def this(authClient: AuthClient, bucket: BucketI, file: FileI) = this()
     
-    /* private */ var authClient: js.Any = js.native
+    /* private */ var authClient: Any = js.native
     
-    /* private */ var bucket: js.Any = js.native
+    /* private */ var bucket: Any = js.native
     
-    /* private */ var file: js.Any = js.native
+    /* private */ var file: Any = js.native
     
     /**
       * Create canonical headers for signing v4 url.
@@ -77,21 +106,21 @@ object signerMod {
     
     def getSignedUrl(cfg: SignerGetSignedUrlConfig): js.Promise[SignerGetSignedUrlResponse] = js.native
     
-    /* private */ var getSignedUrlV2: js.Any = js.native
+    /* private */ var getSignedUrlV2: Any = js.native
     
-    /* private */ var getSignedUrlV4: js.Any = js.native
+    /* private */ var getSignedUrlV4: Any = js.native
     
     def parseAccessibleAt(): Double = js.native
     def parseAccessibleAt(accessibleAt: String): Double = js.native
+    def parseAccessibleAt(accessibleAt: js.Date): Double = js.native
     def parseAccessibleAt(accessibleAt: Double): Double = js.native
-    def parseAccessibleAt(accessibleAt: Date): Double = js.native
     
     def parseExpires(expires: String): Double = js.native
-    def parseExpires(expires: String, current: Date): Double = js.native
+    def parseExpires(expires: String, current: js.Date): Double = js.native
+    def parseExpires(expires: js.Date): Double = js.native
+    def parseExpires(expires: js.Date, current: js.Date): Double = js.native
     def parseExpires(expires: Double): Double = js.native
-    def parseExpires(expires: Double, current: Date): Double = js.native
-    def parseExpires(expires: Date): Double = js.native
-    def parseExpires(expires: Date, current: Date): Double = js.native
+    def parseExpires(expires: Double, current: js.Date): Double = js.native
   }
   
   trait AuthClient extends StObject {
@@ -168,11 +197,11 @@ object signerMod {
     }
   }
   
-  type GetSignedUrlCallback = js.Function2[/* err */ Error | Null, /* url */ js.UndefOr[String], Unit]
+  type GetSignedUrlCallback = js.Function2[/* err */ js.Error | Null, /* url */ js.UndefOr[String], Unit]
   
   trait GetSignedUrlConfigInternal extends StObject {
     
-    var accessibleAt: js.UndefOr[Date] = js.undefined
+    var accessibleAt: js.UndefOr[js.Date] = js.undefined
     
     var bucket: String
     
@@ -201,7 +230,7 @@ object signerMod {
     
     extension [Self <: GetSignedUrlConfigInternal](x: Self) {
       
-      inline def setAccessibleAt(value: Date): Self = StObject.set(x, "accessibleAt", value.asInstanceOf[js.Any])
+      inline def setAccessibleAt(value: js.Date): Self = StObject.set(x, "accessibleAt", value.asInstanceOf[js.Any])
       
       inline def setAccessibleAtUndefined: Self = StObject.set(x, "accessibleAt", js.undefined)
       
@@ -243,7 +272,7 @@ object signerMod {
   
   trait SignerGetSignedUrlConfig extends StObject {
     
-    var accessibleAt: js.UndefOr[String | Double | Date] = js.undefined
+    var accessibleAt: js.UndefOr[String | Double | js.Date] = js.undefined
     
     var cname: js.UndefOr[String] = js.undefined
     
@@ -251,7 +280,7 @@ object signerMod {
     
     var contentType: js.UndefOr[String] = js.undefined
     
-    var expires: String | Double | Date
+    var expires: String | Double | js.Date
     
     var extensionHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
@@ -265,14 +294,14 @@ object signerMod {
   }
   object SignerGetSignedUrlConfig {
     
-    inline def apply(expires: String | Double | Date, method: GET | PUT | DELETE | POST): SignerGetSignedUrlConfig = {
+    inline def apply(expires: String | Double | js.Date, method: GET | PUT | DELETE | POST): SignerGetSignedUrlConfig = {
       val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignerGetSignedUrlConfig]
     }
     
     extension [Self <: SignerGetSignedUrlConfig](x: Self) {
       
-      inline def setAccessibleAt(value: String | Double | Date): Self = StObject.set(x, "accessibleAt", value.asInstanceOf[js.Any])
+      inline def setAccessibleAt(value: String | Double | js.Date): Self = StObject.set(x, "accessibleAt", value.asInstanceOf[js.Any])
       
       inline def setAccessibleAtUndefined: Self = StObject.set(x, "accessibleAt", js.undefined)
       
@@ -288,7 +317,7 @@ object signerMod {
       
       inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      inline def setExpires(value: String | Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: String | Double | js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setExtensionHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "extensionHeaders", value.asInstanceOf[js.Any])
       

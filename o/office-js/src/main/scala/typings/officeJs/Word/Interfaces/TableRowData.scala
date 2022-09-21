@@ -19,81 +19,81 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableRowData extends StObject {
   
   /**
-    *
     * Gets the number of cells in the row. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var cellCount: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Gets cells. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var cells: js.UndefOr[js.Array[TableCellData]] = js.undefined
   
   /**
-    *
     * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var font: js.UndefOr[FontData] = js.undefined
   
   /**
-    *
     * Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   
   /**
-    *
     * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var isHeader: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets the preferred height of the row in points.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var preferredHeight: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Gets the index of the row in its parent table. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var rowIndex: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var shadingColor: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets and sets the text values in the row, as a 2D Javascript array.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var values: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
   /**
-    *
     * Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var verticalAlignment: js.UndefOr[VerticalAlignment | Mixed | Top | Center | Bottom] = js.undefined
@@ -115,7 +115,7 @@ object TableRowData {
     
     inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
-    inline def setCellsVarargs(value: TableCellData*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: TableCellData*): Self = StObject.set(x, "cells", js.Array(value*))
     
     inline def setFont(value: FontData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
@@ -145,7 +145,7 @@ object TableRowData {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: js.Array[String]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Array[String]*): Self = StObject.set(x, "values", js.Array(value*))
     
     inline def setVerticalAlignment(value: VerticalAlignment | Mixed | Top | Center | Bottom): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     

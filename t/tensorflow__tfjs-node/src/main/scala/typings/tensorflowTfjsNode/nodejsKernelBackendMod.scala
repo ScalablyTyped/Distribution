@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsNode
 
-import typings.std.Uint8Array
 import typings.tensorflowTfjs.mod.KernelBackend
 import typings.tensorflowTfjsCore.distTensorMod.Scalar
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
@@ -10,18 +9,13 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
-import typings.tensorflowTfjsCore.distTypesMod.Rank.R1
-import typings.tensorflowTfjsCore.distTypesMod.Rank.R2
-import typings.tensorflowTfjsCore.distTypesMod.Rank.R4
 import typings.tensorflowTfjsCore.distTypesMod.ScalarLike
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import typings.tensorflowTfjsCore.modelTypesMod.ModelTensorInfo
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings._empty
-import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.bilinear
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.cm
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.grayscale
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.in
-import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.nearest
 import typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.rgb
 import typings.tensorflowTfjsNode.tfjsBindingMod.TFEOpAttr
 import typings.tensorflowTfjsNode.tfjsBindingMod.TFJSBinding
@@ -37,14 +31,28 @@ object nodejsKernelBackendMod {
   
   @JSImport("@tensorflow/tfjs-node/dist/nodejs_kernel_backend", "NodeJSKernelBackend")
   @js.native
-  class NodeJSKernelBackend protected () extends KernelBackend {
+  open class NodeJSKernelBackend protected () extends KernelBackend {
     def this(binding: TFJSBinding, packageName: String) = this()
     
-    /* private */ var applyActivation: js.Any = js.native
+    def applyActivation[T /* <: Tensor[Rank] */](input: T, activation: String): T = js.native
+    def applyActivation[T /* <: Tensor[Rank] */](input: T, activation: String, preluActivationWeights: Unit, leakyreluAlpha: Double): T = js.native
+    def applyActivation[T /* <: Tensor[Rank] */](input: T, activation: String, preluActivationWeights: Tensor[Rank]): T = js.native
+    def applyActivation[T /* <: Tensor[Rank] */](input: T, activation: String, preluActivationWeights: Tensor[Rank], leakyreluAlpha: Double): T = js.native
     
     var binding: TFJSBinding = js.native
     
-    /* private */ var createOutputTensor: js.Any = js.native
+    /**
+      * Group data into histogram buckets.
+      *
+      * @param data A `Tensor` of any shape. Must be castable to `float32`
+      * @param bucketCount Optional positive `number`
+      * @returns A `Tensor` of shape `[k, 3]` and type `float32`. The `i`th row is
+      *   a triple `[leftEdge, rightEdge, count]` for a single bucket. The value of
+      *   `k` is either `bucketCount`, `1` or `0`.
+      */
+    /* private */ var buckets: Any = js.native
+    
+    /* private */ var createOutputTensor: Any = js.native
     
     def createReductionOpAttrs(tensor: TensorInfo): js.Array[TFEOpAttr] = js.native
     def createReductionOpAttrs(tensor: TensorInfo, keepDims: Boolean): js.Array[TFEOpAttr] = js.native
@@ -82,31 +90,12 @@ object nodejsKernelBackendMod {
       filenameSuffix: String
     ): Unit = js.native
     
-    @JSName("cropAndResize")
-    def cropAndResize_bilinear(
-      image: Tensor[R4],
-      boxes: Tensor[R2],
-      boxIndex: Tensor[R1],
-      cropSize: js.Tuple2[Double, Double],
-      method: bilinear,
-      extrapolationValue: Double
-    ): Tensor[R4] = js.native
-    @JSName("cropAndResize")
-    def cropAndResize_nearest(
-      image: Tensor[R4],
-      boxes: Tensor[R2],
-      boxIndex: Tensor[R1],
-      cropSize: js.Tuple2[Double, Double],
-      method: nearest,
-      extrapolationValue: Double
-    ): Tensor[R4] = js.native
+    def decodeBmp(contents: js.typedarray.Uint8Array, channels: Double): Tensor3D = js.native
     
-    def decodeBmp(contents: Uint8Array, channels: Double): Tensor3D = js.native
-    
-    def decodeGif(contents: Uint8Array): Tensor4D = js.native
+    def decodeGif(contents: js.typedarray.Uint8Array): Tensor4D = js.native
     
     def decodeJpeg(
-      contents: Uint8Array,
+      contents: js.typedarray.Uint8Array,
       channels: Double,
       ratio: Double,
       fancyUpscaling: Boolean,
@@ -115,7 +104,7 @@ object nodejsKernelBackendMod {
       dctMethod: String
     ): Tensor3D = js.native
     
-    def decodePng(contents: Uint8Array, channels: Double): Tensor3D = js.native
+    def decodePng(contents: js.typedarray.Uint8Array, channels: Double): Tensor3D = js.native
     
     def deleteSavedModel(id: Double): Unit = js.native
     
@@ -124,89 +113,27 @@ object nodejsKernelBackendMod {
     def divide(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = js.native
     
     def encodeJpeg(
-      imageData: Uint8Array,
+      imageData: js.typedarray.Uint8Array,
       imageShape: js.Array[Double],
-      format: grayscale,
+      format: _empty | grayscale | rgb,
       quality: Double,
       progressive: Boolean,
       optimizeSize: Boolean,
       chromaDownsampling: Boolean,
-      densityUnit: cm,
-      xDensity: Double,
-      yDensity: Double,
-      xmpMetadata: String
-    ): Tensor[Rank] = js.native
-    def encodeJpeg(
-      imageData: Uint8Array,
-      imageShape: js.Array[Double],
-      format: grayscale,
-      quality: Double,
-      progressive: Boolean,
-      optimizeSize: Boolean,
-      chromaDownsampling: Boolean,
-      densityUnit: in,
-      xDensity: Double,
-      yDensity: Double,
-      xmpMetadata: String
-    ): Tensor[Rank] = js.native
-    def encodeJpeg(
-      imageData: Uint8Array,
-      imageShape: js.Array[Double],
-      format: rgb,
-      quality: Double,
-      progressive: Boolean,
-      optimizeSize: Boolean,
-      chromaDownsampling: Boolean,
-      densityUnit: cm,
-      xDensity: Double,
-      yDensity: Double,
-      xmpMetadata: String
-    ): Tensor[Rank] = js.native
-    def encodeJpeg(
-      imageData: Uint8Array,
-      imageShape: js.Array[Double],
-      format: rgb,
-      quality: Double,
-      progressive: Boolean,
-      optimizeSize: Boolean,
-      chromaDownsampling: Boolean,
-      densityUnit: in,
-      xDensity: Double,
-      yDensity: Double,
-      xmpMetadata: String
-    ): Tensor[Rank] = js.native
-    @JSName("encodeJpeg")
-    def encodeJpeg_cm(
-      imageData: Uint8Array,
-      imageShape: js.Array[Double],
-      format: _empty,
-      quality: Double,
-      progressive: Boolean,
-      optimizeSize: Boolean,
-      chromaDownsampling: Boolean,
-      densityUnit: cm,
-      xDensity: Double,
-      yDensity: Double,
-      xmpMetadata: String
-    ): Tensor[Rank] = js.native
-    @JSName("encodeJpeg")
-    def encodeJpeg_in(
-      imageData: Uint8Array,
-      imageShape: js.Array[Double],
-      format: _empty,
-      quality: Double,
-      progressive: Boolean,
-      optimizeSize: Boolean,
-      chromaDownsampling: Boolean,
-      densityUnit: in,
+      densityUnit: in | cm,
       xDensity: Double,
       yDensity: Double,
       xmpMetadata: String
     ): Tensor[Rank] = js.native
     
-    def encodePng(imageData: Uint8Array, imageShape: js.Array[Double], compression: Double): Tensor[Rank] = js.native
+    def encodePng(imageData: js.typedarray.Uint8Array, imageShape: js.Array[Double], compression: Double): Tensor[Rank] = js.native
     
-    def executeEncodeImageOp(name: String, opAttrs: js.Array[TFEOpAttr], imageData: Uint8Array, imageShape: js.Array[Double]): Tensor[Rank] = js.native
+    def executeEncodeImageOp(
+      name: String,
+      opAttrs: js.Array[TFEOpAttr],
+      imageData: js.typedarray.Uint8Array,
+      imageShape: js.Array[Double]
+    ): Tensor[Rank] = js.native
     
     /**
       * Executes a TensorFlow Eager Op that provides multiple output Tensors.
@@ -238,28 +165,21 @@ object nodejsKernelBackendMod {
     
     def flushSummaryWriter(resourceHandle: Tensor[Rank]): Unit = js.native
     
-    /* private */ var getDTypeInteger: js.Any = js.native
+    def getDTypeInteger(dtype: DataType): Double = js.native
     
-    /* private */ var getInputTensorIds: js.Any = js.native
+    /* private */ var getInputTensorIds: Any = js.native
     
-    /* private */ var getMappedInputTensorIds: js.Any = js.native
+    /* private */ var getMappedInputTensorIds: Any = js.native
     
     def getNumOfSavedModels(): Double = js.native
+    
+    def int[T /* <: Tensor[Rank] */](x: T): T = js.native
     
     var isGPUPackage: Boolean = js.native
     
     var isUsingGpuDevice: Boolean = js.native
     
     def loadSavedModelMetaGraph(path: String, tags: String): Double = js.native
-    
-    def nonMaxSuppression(boxes: Tensor2D, scores: Tensor1D, maxOutputSize: Double): Tensor1D = js.native
-    def nonMaxSuppression(
-      boxes: Tensor2D,
-      scores: Tensor1D,
-      maxOutputSize: Double,
-      iouThreshold: Unit,
-      scoreThreshold: Double
-    ): Tensor1D = js.native
     
     def runSavedModel(
       id: Double,
@@ -270,17 +190,34 @@ object nodejsKernelBackendMod {
     
     def summaryWriter(logdir: String): Tensor1D = js.native
     
-    /* private */ var tensorMap: js.Any = js.native
+    /* private */ var tensorMap: Any = js.native
     
     def topKIndices(x: Tensor[Rank], k: Double): Tensor1D = js.native
     
     def topKValues[T /* <: Tensor[Rank] */](x: T, k: Double): Tensor1D = js.native
     
-    def topk[T /* <: Tensor[Rank] */](x: T): js.Tuple2[T, T] = js.native
-    def topk[T /* <: Tensor[Rank] */](x: T, k: Double): js.Tuple2[T, T] = js.native
-    def topk[T /* <: Tensor[Rank] */](x: T, k: Unit, sorted: Boolean): js.Tuple2[T, T] = js.native
+    /* private */ var typeAttributeFromTensor: Any = js.native
     
-    /* private */ var typeAttributeFromTensor: js.Any = js.native
+    def where(condition: Tensor[Rank]): Tensor2D = js.native
+    
+    def writeHistogramSummary(resourceHandle: Tensor[Rank], step: Double, name: String, data: Tensor[Rank]): Unit = js.native
+    def writeHistogramSummary(resourceHandle: Tensor[Rank], step: Double, name: String, data: Tensor[Rank], bucketCount: Double): Unit = js.native
+    def writeHistogramSummary(
+      resourceHandle: Tensor[Rank],
+      step: Double,
+      name: String,
+      data: Tensor[Rank],
+      bucketCount: Double,
+      description: String
+    ): Unit = js.native
+    def writeHistogramSummary(
+      resourceHandle: Tensor[Rank],
+      step: Double,
+      name: String,
+      data: Tensor[Rank],
+      bucketCount: Unit,
+      description: String
+    ): Unit = js.native
     
     def writeScalarSummary(resourceHandle: Tensor[Rank], step: Double, name: String, value: Double): Unit = js.native
     def writeScalarSummary(resourceHandle: Tensor[Rank], step: Double, name: String, value: Scalar): Unit = js.native

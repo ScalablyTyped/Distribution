@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.ListViewWebPartData")
 @js.native
-class ListViewWebPartData ()
+open class ListViewWebPartData ()
   extends StObject
      with typings.sharepoint.SP.Ribbon.ToolbarRibbonAdapterData

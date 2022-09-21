@@ -8,5 +8,5 @@ object analyticsConfigurationMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_AnalyticsConfiguration", "_AnalyticsConfiguration")
   @js.native
-  val AnalyticsConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val AnalyticsConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

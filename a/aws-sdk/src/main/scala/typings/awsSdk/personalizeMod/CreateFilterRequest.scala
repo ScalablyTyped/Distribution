@@ -12,7 +12,7 @@ trait CreateFilterRequest extends StObject {
   var datasetGroupArn: Arn
   
   /**
-    * The filter expression that designates the interaction types that the filter will filter out. A filter expression must follow the following format:  EXCLUDE itemId WHERE INTERACTIONS.event_type in ("EVENT_TYPE")  Where "EVENT_TYPE" is the type of event to filter out. To filter out all items with any interactions history, set "*" as the EVENT_TYPE. For more information, see Using Filters with Amazon Personalize.
+    * The filter expression defines which items are included or excluded from recommendations. Filter expression must follow specific format rules. For information about filter expression structure and syntax, see Filter expressions.
     */
   var filterExpression: FilterExpression
   
@@ -20,6 +20,11 @@ trait CreateFilterRequest extends StObject {
     * The name of the filter to create.
     */
   var name: Name
+  
+  /**
+    * A list of tags to apply to the filter.
+    */
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object CreateFilterRequest {
   
@@ -35,5 +40,11 @@ object CreateFilterRequest {
     inline def setFilterExpression(value: FilterExpression): Self = StObject.set(x, "filterExpression", value.asInstanceOf[js.Any])
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

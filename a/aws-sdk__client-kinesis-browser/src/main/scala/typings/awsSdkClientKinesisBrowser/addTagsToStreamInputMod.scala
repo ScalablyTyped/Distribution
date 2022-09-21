@@ -8,5 +8,5 @@ object addTagsToStreamInputMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/AddTagsToStreamInput", "AddTagsToStreamInput")
   @js.native
-  val AddTagsToStreamInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val AddTagsToStreamInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

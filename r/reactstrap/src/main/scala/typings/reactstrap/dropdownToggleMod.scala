@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ElementType
 import typings.react.mod.HTMLAttributes
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dropdownToggleMod {
   
-  @JSImport("reactstrap/lib/DropdownToggle", JSImport.Default)
+  @JSImport("reactstrap/types/lib/DropdownToggle", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DropdownToggleProps, js.Object, js.Any]
+  open class default ()
+    extends Component[DropdownToggleProps, js.Object, Any]
   
-  type DropdownToggle = Component[DropdownToggleProps, js.Object, js.Any]
+  type DropdownToggle = Component[DropdownToggleProps, js.Object, Any]
   
   trait DropdownToggleProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     @JSName("aria-haspopup")
     var `aria-haspopup_DropdownToggleProps`: js.UndefOr[Boolean] = js.undefined
@@ -43,7 +43,7 @@ object dropdownToggleMod {
     
     var split: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
   }
   object DropdownToggleProps {
     
@@ -90,7 +90,7 @@ object dropdownToggleMod {
       
       inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }

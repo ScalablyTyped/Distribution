@@ -9,7 +9,6 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Contexts.UpdateCon
 import typings.dialogflow.mod.google.protobuf.Empty
 import typings.protobufjs.mod.RPCImpl
 import typings.protobufjs.mod.rpc.Service
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a Contexts */
 @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Contexts")
 @js.native
-class Contexts protected () extends Service {
+open class Contexts protected () extends Service {
   /**
     * Constructs a new Contexts service.
     * @param rpcImpl RPC implementation
@@ -131,40 +130,40 @@ object Contexts {
     * @param error Error, if any
     * @param [response] Context
     */
-  type CreateContextCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Context], Unit]
+  type CreateContextCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Context], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.Contexts#deleteAllContexts}.
     * @param error Error, if any
     * @param [response] Empty
     */
-  type DeleteAllContextsCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Empty], Unit]
+  type DeleteAllContextsCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Empty], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.Contexts#deleteContext}.
     * @param error Error, if any
     * @param [response] Empty
     */
-  type DeleteContextCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Empty], Unit]
+  type DeleteContextCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Empty], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.Contexts#getContext}.
     * @param error Error, if any
     * @param [response] Context
     */
-  type GetContextCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Context], Unit]
+  type GetContextCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Context], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.Contexts#listContexts}.
     * @param error Error, if any
     * @param [response] ListContextsResponse
     */
-  type ListContextsCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[ListContextsResponse], Unit]
+  type ListContextsCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[ListContextsResponse], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.Contexts#updateContext}.
     * @param error Error, if any
     * @param [response] Context
     */
-  type UpdateContextCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[Context], Unit]
+  type UpdateContextCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[Context], Unit]
 }

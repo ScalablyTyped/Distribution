@@ -10,7 +10,7 @@ object pathIntersectionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(path1: js.Any, path2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path1.asInstanceOf[js.Any], path2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(path1: Any, path2: Any): Double | js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path1.asInstanceOf[js.Any], path2.asInstanceOf[js.Any])).asInstanceOf[Double | js.Array[Any]]
   
   trait BoundPoint extends StObject {
     

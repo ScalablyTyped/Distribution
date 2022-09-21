@@ -1,5 +1,6 @@
 package typings.sipJs
 
+import typings.sipJs.levelsMod.Levels
 import typings.sipJs.loggerFactoryMod.LoggerFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,23 +10,26 @@ object loggerMod {
   
   @JSImport("sip.js/lib/core/log/logger", "Logger")
   @js.native
-  class Logger protected () extends StObject {
+  open class Logger protected () extends StObject {
     def this(logger: LoggerFactory, category: String) = this()
     def this(logger: LoggerFactory, category: String, label: String) = this()
     
-    /* private */ var category: js.Any = js.native
+    /* private */ var category: Any = js.native
     
     def debug(content: String): Unit = js.native
     
     def error(content: String): Unit = js.native
     
-    /* private */ var genericLog: js.Any = js.native
+    /* private */ var genericLog: Any = js.native
     
-    /* private */ var label: js.Any = js.native
+    /* private */ var label: Any = js.native
+    
+    def level: Levels = js.native
+    def level_=(newLevel: Levels): Unit = js.native
     
     def log(content: String): Unit = js.native
     
-    /* private */ var logger: js.Any = js.native
+    /* private */ var logger: Any = js.native
     
     def warn(content: String): Unit = js.native
   }

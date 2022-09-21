@@ -13,13 +13,13 @@ object writerMod {
   @js.native
   trait Writer extends EventEmitter {
     
-    def apply(impl: js.Any): Writer = js.native
+    def apply(impl: Any): Writer = js.native
     
     def buildResourceCacheKey(cacheKey: String, lassoContext: default): String = js.native
     
-    def checkBundleUpToDate(bundle: Bundle, lassoContext: default, callback: js.Any): js.Any = js.native
+    def checkBundleUpToDate(bundle: Bundle, lassoContext: default, callback: Any): Any = js.native
     
-    def checkResourceUpToDate(path: String, lassoContext: default, callback: js.Any): js.Any = js.native
+    def checkResourceUpToDate(path: String, lassoContext: default, callback: Any): Any = js.native
     
     var config: LassoConfig = js.native
     
@@ -29,16 +29,16 @@ object writerMod {
     
     def getLasso(): typings.lasso.lassoMod.default = js.native
     
-    var impl: js.Any = js.native
+    var impl: Any = js.native
     
     var lasso: typings.lasso.lassoMod.default = js.native
     
     def setLasso(lasso: typings.lasso.lassoMod.default): Unit = js.native
     
-    def writeBundle(bundle: Bundle, onBundleWrittenCallback: js.Any, lassoContext: default, callback: js.Any): js.Any = js.native
+    def writeBundle(bundle: Bundle, onBundleWrittenCallback: Any, lassoContext: default, callback: Any): Any = js.native
     
-    def writeBundles(iteratorFunc: js.Any, onBundleWrittenCallback: js.Any, lassoContext: default, callback: js.Any): Unit = js.native
+    def writeBundles(iteratorFunc: Any, onBundleWrittenCallback: Any, lassoContext: default, callback: Any): Unit = js.native
     
-    def writeResource(path: String, lassoContext: default, callback: js.Any): js.Any = js.native
+    def writeResource(path: String, lassoContext: default, callback: Any): Any = js.native
   }
 }

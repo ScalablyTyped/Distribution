@@ -29,7 +29,7 @@ trait StartJobRequest extends StObject {
   /**
     *  The commit date and time for the job. 
     */
-  var commitTime: js.UndefOr[CommitTime] = js.undefined
+  var commitTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The unique ID for an existing job. This is required if the value of jobType is RETRY. 
@@ -67,7 +67,7 @@ object StartJobRequest {
     
     inline def setCommitMessageUndefined: Self = StObject.set(x, "commitMessage", js.undefined)
     
-    inline def setCommitTime(value: CommitTime): Self = StObject.set(x, "commitTime", value.asInstanceOf[js.Any])
+    inline def setCommitTime(value: js.Date): Self = StObject.set(x, "commitTime", value.asInstanceOf[js.Any])
     
     inline def setCommitTimeUndefined: Self = StObject.set(x, "commitTime", js.undefined)
     

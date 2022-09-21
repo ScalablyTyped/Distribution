@@ -10,10 +10,10 @@ A client for enabling, and interacting with, webpack Hot Module Replacement
 | ------------------ | :-------------: |
 | Full name          | webpack-hot-client |
 | Keywords           | webpack |
-| # releases         | 2 |
-| # dependents       | 59 |
-| # downloads        | 2452792 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 112480.66666666667 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/shellscape/webpack-hot-client)

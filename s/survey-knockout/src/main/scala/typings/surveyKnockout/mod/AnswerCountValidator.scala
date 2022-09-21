@@ -6,18 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "AnswerCountValidator")
 @js.native
-class AnswerCountValidator () extends SurveyValidator {
+open class AnswerCountValidator () extends SurveyValidator {
   def this(minCount: Double) = this()
   def this(minCount: Double, maxCount: Double) = this()
   def this(minCount: Unit, maxCount: Double) = this()
   
-  /**
+  /*
     * The maxCount property.
     */
-  var maxCount: Double = js.native
+  def maxCount: Double = js.native
+  def maxCount_=(`val`: Double): Unit = js.native
   
-  /**
+  /*
     * The minCount property.
     */
-  var minCount: Double = js.native
+  def minCount: Double = js.native
+  def minCount_=(`val`: Double): Unit = js.native
 }

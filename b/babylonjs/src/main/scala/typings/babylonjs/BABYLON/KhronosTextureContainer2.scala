@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait KhronosTextureContainer2 extends StObject {
   
-  /* protected */ def _createTexture(data: js.Any, internalTexture: InternalTexture): Unit = js.native
-  /* protected */ def _createTexture(data: js.Any, internalTexture: InternalTexture, options: js.Any): Unit = js.native
+  /* protected */ def _createTexture(data: Any, internalTexture: InternalTexture): Unit = js.native
+  /* protected */ def _createTexture(data: Any, internalTexture: InternalTexture, options: Any): Unit = js.native
   
-  /* private */ var _engine: js.Any = js.native
+  /* private */ var _engine: Any = js.native
   
   /**
-    * Stop all async operations and release resources.
+    * @param data
+    * @param internalTexture
+    * @param options
+    * @hidden
     */
-  def dispose(): Unit = js.native
-  
-  /** @hidden */
-  def uploadAsync(data: ArrayBufferView, internalTexture: InternalTexture): js.Promise[Unit] = js.native
-  def uploadAsync(data: ArrayBufferView, internalTexture: InternalTexture, options: js.Any): js.Promise[Unit] = js.native
+  def uploadAsync(data: js.typedarray.ArrayBufferView, internalTexture: InternalTexture): js.Promise[Unit] = js.native
+  def uploadAsync(data: js.typedarray.ArrayBufferView, internalTexture: InternalTexture, options: Any): js.Promise[Unit] = js.native
 }

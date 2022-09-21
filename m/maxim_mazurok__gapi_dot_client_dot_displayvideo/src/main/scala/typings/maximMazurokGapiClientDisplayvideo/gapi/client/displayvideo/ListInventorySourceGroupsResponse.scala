@@ -28,7 +28,7 @@ object ListInventorySourceGroupsResponse {
     
     inline def setInventorySourceGroupsUndefined: Self = StObject.set(x, "inventorySourceGroups", js.undefined)
     
-    inline def setInventorySourceGroupsVarargs(value: InventorySourceGroup*): Self = StObject.set(x, "inventorySourceGroups", js.Array(value :_*))
+    inline def setInventorySourceGroupsVarargs(value: InventorySourceGroup*): Self = StObject.set(x, "inventorySourceGroups", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

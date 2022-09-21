@@ -29,7 +29,7 @@ object HistoricalMetricResult {
     
     inline def setCollectionsUndefined: Self = StObject.set(x, "Collections", js.undefined)
     
-    inline def setCollectionsVarargs(value: HistoricalMetricData*): Self = StObject.set(x, "Collections", js.Array(value :_*))
+    inline def setCollectionsVarargs(value: HistoricalMetricData*): Self = StObject.set(x, "Collections", js.Array(value*))
     
     inline def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

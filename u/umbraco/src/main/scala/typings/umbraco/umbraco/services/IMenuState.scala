@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IMenuState extends StObject {
   
   //The tree node that the ctx menu is launched for
-  var currentNode: js.Any
+  var currentNode: Any
   
   //the title to display in the context menu dialog
   var dialogTitle: String
   
   //this list of menu items to display
-  var menuActions: js.Any
+  var menuActions: Any
   
   //Whether the context menu is being shown or not
   var showMenu: Boolean
@@ -27,9 +27,9 @@ trait IMenuState extends StObject {
 object IMenuState {
   
   inline def apply(
-    currentNode: js.Any,
+    currentNode: Any,
     dialogTitle: String,
-    menuActions: js.Any,
+    menuActions: Any,
     showMenu: Boolean,
     showMenuDialog: Boolean
   ): IMenuState = {
@@ -39,11 +39,11 @@ object IMenuState {
   
   extension [Self <: IMenuState](x: Self) {
     
-    inline def setCurrentNode(value: js.Any): Self = StObject.set(x, "currentNode", value.asInstanceOf[js.Any])
+    inline def setCurrentNode(value: Any): Self = StObject.set(x, "currentNode", value.asInstanceOf[js.Any])
     
     inline def setDialogTitle(value: String): Self = StObject.set(x, "dialogTitle", value.asInstanceOf[js.Any])
     
-    inline def setMenuActions(value: js.Any): Self = StObject.set(x, "menuActions", value.asInstanceOf[js.Any])
+    inline def setMenuActions(value: Any): Self = StObject.set(x, "menuActions", value.asInstanceOf[js.Any])
     
     inline def setShowMenu(value: Boolean): Self = StObject.set(x, "showMenu", value.asInstanceOf[js.Any])
     

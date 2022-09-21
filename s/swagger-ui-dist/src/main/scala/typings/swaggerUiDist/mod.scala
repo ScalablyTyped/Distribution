@@ -14,10 +14,10 @@ object mod {
   @js.native
   trait SwaggerUIBundle
     extends StObject
-       with /* k */ StringDictionary[js.Any] {
+       with /* k */ StringDictionary[Any] {
     
-    def apply(): js.Any = js.native
-    def apply(a: SwaggerConfigs): js.Any = js.native
+    def apply(): Any = js.native
+    def apply(a: SwaggerConfigs): Any = js.native
     
     def getConfigs(): SwaggerConfigs = js.native
   }
@@ -27,7 +27,7 @@ object mod {
   
   @JSImport("swagger-ui-dist", "SwaggerUIStandalonePreset")
   @js.native
-  val SwaggerUIStandalonePreset: js.Any = js.native
+  val SwaggerUIStandalonePreset: Any = js.native
   
   @JSImport("swagger-ui-dist", "absolutePath")
   @js.native
@@ -37,11 +37,11 @@ object mod {
   @js.native
   val getAbsoluteFSPath: js.Function0[String] = js.native
   
-  type Spec = StringDictionary[js.Any]
+  type Spec = StringDictionary[Any]
   
   trait SwaggerConfigs
     extends StObject
-       with /* k */ StringDictionary[js.Any] {
+       with /* k */ StringDictionary[Any] {
     
     /**
       * URL to fetch external configuration document from.
@@ -88,12 +88,12 @@ object mod {
     /**
       * An array of plugin functions to use in Swagger UI.
       */
-    var plugins: js.UndefOr[js.Any] = js.undefined
+    var plugins: js.UndefOr[Any] = js.undefined
     
     /**
       * An array of presets to use in Swagger UI. Usually, you'll want to include ApisPreset if you use this option.
       */
-    var presets: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var presets: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       *  Function to intercept remote definition, "Try it out", and OAuth 2.0 requests.
@@ -169,15 +169,15 @@ object mod {
       
       inline def setOperationsSorterUndefined: Self = StObject.set(x, "operationsSorter", js.undefined)
       
-      inline def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPresets(value: js.Array[js.Any]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
+      inline def setPresets(value: js.Array[Any]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
       
       inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
       
-      inline def setPresetsVarargs(value: js.Any*): Self = StObject.set(x, "presets", js.Array(value :_*))
+      inline def setPresetsVarargs(value: Any*): Self = StObject.set(x, "presets", js.Array(value*))
       
       inline def setRequestInterceptor(value: /* request */ SwaggerRequest => SwaggerRequest): Self = StObject.set(x, "requestInterceptor", js.Any.fromFunction1(value))
       
@@ -199,13 +199,13 @@ object mod {
       
       inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
       
-      inline def setUrlsVarargs(value: Url*): Self = StObject.set(x, "urls", js.Array(value :_*))
+      inline def setUrlsVarargs(value: Url*): Self = StObject.set(x, "urls", js.Array(value*))
     }
   }
   
   trait SwaggerRequest
     extends StObject
-       with /* k */ StringDictionary[js.Any] {
+       with /* k */ StringDictionary[Any] {
     
     var credentials: String
     
@@ -226,7 +226,7 @@ object mod {
     }
   }
   
-  type SwaggerResponse = StringDictionary[js.Any]
+  type SwaggerResponse = StringDictionary[Any]
   
   trait Url extends StObject {
     

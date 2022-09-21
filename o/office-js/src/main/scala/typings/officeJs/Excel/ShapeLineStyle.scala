@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ShapeLineStyle extends StObject
 /**
-  *
   * The style for a line.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeLineStyle")
@@ -18,7 +18,8 @@ object ShapeLineStyle extends StObject {
   
   /**
     * Single line.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait single
@@ -27,7 +28,8 @@ object ShapeLineStyle extends StObject {
   
   /**
     * Thick line with a thin line on each side.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait thickBetweenThin
@@ -36,7 +38,8 @@ object ShapeLineStyle extends StObject {
   
   /**
     * Thick line next to thin line. For horizontal lines, the thick line is above the thin line. For vertical lines, the thick line is to the left of the thin line.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait thickThin
@@ -45,7 +48,8 @@ object ShapeLineStyle extends StObject {
   
   /**
     * Thick line next to thin line. For horizontal lines, the thick line is below the thin line. For vertical lines, the thick line is to the right of the thin line.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait thinThick
@@ -54,7 +58,8 @@ object ShapeLineStyle extends StObject {
   
   /**
     * Two thin lines.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait thinThin

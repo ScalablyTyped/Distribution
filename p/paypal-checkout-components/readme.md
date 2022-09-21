@@ -10,10 +10,10 @@ PayPal Checkout components, for integrating checkout products.
 | ------------------ | :-------------: |
 | Full name          | paypal-checkout-components |
 | Keywords           | cross-domain, cross domain, components, component, krakenjs, kraken |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2890 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 593.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://developer.paypal.com/)

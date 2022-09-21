@@ -13,7 +13,7 @@ trait AckBundleInstallationWarning extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** Must be set to true if the bundle installation may trigger a warning on user devices (for example, if installation size may be over a threshold, typically 100 MB). */
+  /** Must be set to true if the app bundle installation may trigger a warning on user devices (for example, if installation size may be over a threshold, typically 100 MB). */
   var ackBundleInstallationWarning: js.UndefOr[Boolean] = js.undefined
   
   /** Data format for response. */

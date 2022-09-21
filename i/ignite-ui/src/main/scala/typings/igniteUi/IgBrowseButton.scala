@@ -10,14 +10,14 @@ trait IgBrowseButton
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   var autoselect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * M.H. 13 Feb 2014 Fix for bug #164347: Move input  from document body to the upload container
     */
-  var container: js.UndefOr[js.Any] = js.undefined
+  var container: js.UndefOr[Any] = js.undefined
   
   var multipleFiles: js.UndefOr[Boolean] = js.undefined
 }
@@ -34,7 +34,7 @@ object IgBrowseButton {
     
     inline def setAutoselectUndefined: Self = StObject.set(x, "autoselect", js.undefined)
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     

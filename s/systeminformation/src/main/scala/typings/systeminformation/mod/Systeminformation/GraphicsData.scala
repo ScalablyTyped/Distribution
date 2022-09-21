@@ -21,10 +21,10 @@ object GraphicsData {
     
     inline def setControllers(value: js.Array[GraphicsControllerData]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
     
-    inline def setControllersVarargs(value: GraphicsControllerData*): Self = StObject.set(x, "controllers", js.Array(value :_*))
+    inline def setControllersVarargs(value: GraphicsControllerData*): Self = StObject.set(x, "controllers", js.Array(value*))
     
     inline def setDisplays(value: js.Array[GraphicsDisplayData]): Self = StObject.set(x, "displays", value.asInstanceOf[js.Any])
     
-    inline def setDisplaysVarargs(value: GraphicsDisplayData*): Self = StObject.set(x, "displays", js.Array(value :_*))
+    inline def setDisplaysVarargs(value: GraphicsDisplayData*): Self = StObject.set(x, "displays", js.Array(value*))
   }
 }

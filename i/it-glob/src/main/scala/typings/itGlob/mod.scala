@@ -8,10 +8,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  /**
+    * @typedef {string} Glob
+    * @typedef {object} OptionsExt
+    * @property {string} [cwd=process.cwd()]
+    * @property {boolean} [absolute=false] - If true produces absolute paths
+    * @property {boolean} [nodir] - If true yields file paths and skip directories
+    *
+    * @typedef {OptionsExt & minimatch.IOptions} Options
+    */
+  /**
+    * Async iterable filename pattern matcher
+    *
+    * @param {string} dir
+    * @param {string} pattern
+    * @param {Options} [options]
+    * @returns {AsyncIterable<string>}
+    */
   inline def apply(dir: String, pattern: String): AsyncIterable[String] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[String]]
-  inline def apply(dir: String, pattern: String, options: OptionsExt & IOptions): AsyncIterable[String] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[String]]
+  inline def apply(dir: String, pattern: String, options: Options): AsyncIterable[String] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[String]]
   
-  @JSImport("it-glob/dist", JSImport.Namespace)
+  @JSImport("it-glob", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -39,11 +56,6 @@ object mod {
     var cwd: js.UndefOr[String] = js.undefined
     
     /**
-      * - Glob patterns to ignore
-      */
-    var ignore: js.UndefOr[js.Array[String]] = js.undefined
-    
-    /**
       * - If true yields file paths and skip directories
       */
     var nodir: js.UndefOr[Boolean] = js.undefined
@@ -64,12 +76,6 @@ object mod {
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
-      
-      inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
-      
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
       inline def setNodir(value: Boolean): Self = StObject.set(x, "nodir", value.asInstanceOf[js.Any])
       

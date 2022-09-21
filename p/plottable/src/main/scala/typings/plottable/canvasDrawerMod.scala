@@ -20,7 +20,7 @@ object canvasDrawerMod {
   
   @JSImport("plottable/build/src/drawers/canvasDrawer", "CanvasDrawer")
   @js.native
-  class CanvasDrawer protected ()
+  open class CanvasDrawer protected ()
     extends StObject
        with IDrawer {
     /**
@@ -29,9 +29,9 @@ object canvasDrawerMod {
       */
     def this(_context: CanvasRenderingContext2D, _drawStep: CanvasDrawStep) = this()
     
-    /* private */ var _context: js.Any = js.native
+    /* private */ var _context: Any = js.native
     
-    /* private */ var _drawStep: js.Any = js.native
+    /* private */ var _drawStep: Any = js.native
     
     /**
       * Mutate the surface to reflect the data being passed in. This method is responsible
@@ -40,7 +40,7 @@ object canvasDrawerMod {
       * @param drawSteps The draw steps that the data go through.
       */
     /* CompleteClass */
-    override def draw(data: js.Array[js.Any], drawSteps: js.Array[AppliedDrawStep]): Unit = js.native
+    override def draw(data: js.Array[Any], drawSteps: js.Array[AppliedDrawStep]): Unit = js.native
     
     def getDrawStep(): CanvasDrawStep = js.native
     
@@ -68,33 +68,28 @@ object canvasDrawerMod {
   @js.native
   val ContextStyleAttrs: js.Array[String] = js.native
   
-  inline def getStrokeDashArray(style: Record[String, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrokeDashArray")(style.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def getStrokeDashArray(style: Record[String, Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrokeDashArray")(style.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  inline def getStrokeWidth(style: Record[String, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrokeWidth")(style.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getStrokeWidth(style: Record[String, Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrokeWidth")(style.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def renderArea(
     context: CanvasRenderingContext2D,
-    d3Area: Area_[js.Any],
-    data: js.Array[js.Any],
+    d3Area: Area_[Any],
+    data: js.Array[Any],
     style: IFillStyle & IStrokeStyle
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderArea")(context.asInstanceOf[js.Any], d3Area.asInstanceOf[js.Any], data.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def renderLine(
-    context: CanvasRenderingContext2D,
-    d3Line: Line_[js.Any],
-    data: js.Array[js.Any],
-    style: IStrokeStyle
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderLine")(context.asInstanceOf[js.Any], d3Line.asInstanceOf[js.Any], data.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderLine(context: CanvasRenderingContext2D, d3Line: Line_[Any], data: js.Array[Any], style: IStrokeStyle): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderLine")(context.asInstanceOf[js.Any], d3Line.asInstanceOf[js.Any], data.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def renderPathWithStyle(context: CanvasRenderingContext2D, style: Record[String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderPathWithStyle")(context.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderPathWithStyle(context: CanvasRenderingContext2D, style: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderPathWithStyle")(context.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def resolveAttributes(projector: AttributeToAppliedProjector, attrKeys: js.Array[String], datum: js.Any, index: Double): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAttributes")(projector.asInstanceOf[js.Any], attrKeys.asInstanceOf[js.Any], datum.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  inline def resolveAttributes(projector: AttributeToAppliedProjector, attrKeys: js.Array[String], datum: Any, index: Double): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAttributes")(projector.asInstanceOf[js.Any], attrKeys.asInstanceOf[js.Any], datum.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
   
-  inline def resolveAttributesSubsetWithStyles(projector: AttributeToAppliedProjector, extraKeys: js.Array[String], datum: js.Any, index: Double): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAttributesSubsetWithStyles")(projector.asInstanceOf[js.Any], extraKeys.asInstanceOf[js.Any], datum.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  inline def resolveAttributesSubsetWithStyles(projector: AttributeToAppliedProjector, extraKeys: js.Array[String], datum: Any, index: Double): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAttributesSubsetWithStyles")(projector.asInstanceOf[js.Any], extraKeys.asInstanceOf[js.Any], datum.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
   
   type CanvasDrawStep = js.Function3[
     /* context */ CanvasRenderingContext2D, 
-    /* data */ js.Array[js.Any], 
+    /* data */ js.Array[Any], 
     /* attrToAppliedProjector */ AttributeToAppliedProjector, 
     Unit
   ]

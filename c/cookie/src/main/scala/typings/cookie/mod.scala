@@ -1,12 +1,14 @@
 package typings.cookie
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.cookie.cookieBooleans.`false`
 import typings.cookie.cookieBooleans.`true`
+import typings.cookie.cookieStrings.high
 import typings.cookie.cookieStrings.lax
+import typings.cookie.cookieStrings.low
+import typings.cookie.cookieStrings.medium
 import typings.cookie.cookieStrings.none
 import typings.cookie.cookieStrings.strict
-import typings.std.Date
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,8 +19,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def parse(str: String): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
-  inline def parse(str: String, options: CookieParseOptions): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
+  inline def parse(str: String): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
+  inline def parse(str: String, options: CookieParseOptions): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
   
   inline def serialize(name: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def serialize(name: String, value: String, options: CookieSerializeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -85,7 +87,7 @@ object mod {
       * possible not all clients by obey this, so if both are set, they should
       * point to the same date and time.
       */
-    var expires: js.UndefOr[Date] = js.undefined
+    var expires: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Specifies the boolean value for the {@link https://tools.ietf.org/html/rfc6265#section-5.2.6|`HttpOnly` `Set-Cookie` attribute}.
@@ -114,6 +116,21 @@ object mod {
       * By default, the path is considered the "default path".
       */
     var path: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Specifies the `string` to be the value for the [`Priority` `Set-Cookie` attribute][rfc-west-cookie-priority-00-4.1].
+      *
+      * - `'low'` will set the `Priority` attribute to `Low`.
+      * - `'medium'` will set the `Priority` attribute to `Medium`, the default priority when not set.
+      * - `'high'` will set the `Priority` attribute to `High`.
+      *
+      * More information about the different priority levels can be found in
+      * [the specification][rfc-west-cookie-priority-00-4.1].
+      *
+      * **note** This is an attribute that has not yet been fully standardized, and may change in the future.
+      * This also means many clients may ignore this attribute until they understand it.
+      */
+    var priority: js.UndefOr[low | medium | high] = js.undefined
     
     /**
       * Specifies the boolean or string to be the value for the {@link https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-03#section-4.1.2.7|`SameSite` `Set-Cookie` attribute}.
@@ -161,7 +178,7 @@ object mod {
       
       inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
@@ -176,6 +193,10 @@ object mod {
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      
+      inline def setPriority(value: low | medium | high): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
       inline def setSameSite(value: `true` | `false` | lax | strict | none): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
       

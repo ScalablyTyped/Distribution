@@ -1,6 +1,7 @@
 package typings.rcFieldForm
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.rcFieldForm.anon.Metadestroybooleanundefin
 import typings.rcFieldForm.anon.Source
 import typings.rcFieldForm.interfaceMod.EventArgs
 import typings.rcFieldForm.interfaceMod.FormInstance
@@ -29,7 +30,7 @@ object fieldMod {
   
   inline def default[Values](hasNameRestProps: FieldProps[Values]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasNameRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  type ChildProps = StringDictionary[js.Any]
+  type ChildProps = StringDictionary[Any]
   
   /* Inlined parent std.Omit<rc-field-form.rc-field-form/es/Field.InternalFieldProps<Values>, 'name' | 'fieldContext'> */
   trait FieldProps[Values] extends StObject {
@@ -42,9 +43,9 @@ object fieldMod {
     
     var getValueFromEvent: js.UndefOr[js.Function1[/* args */ EventArgs, StoreValue]] = js.undefined
     
-    var getValueProps: js.UndefOr[js.Function1[/* value */ StoreValue, js.Object]] = js.undefined
+    var getValueProps: js.UndefOr[js.Function1[/* value */ StoreValue, Record[String, Any]]] = js.undefined
     
-    var initialValue: js.UndefOr[js.Any] = js.undefined
+    var initialValue: js.UndefOr[Any] = js.undefined
     
     var isList: js.UndefOr[Boolean] = js.undefined
     
@@ -57,6 +58,8 @@ object fieldMod {
     var normalize: js.UndefOr[
         js.Function3[/* value */ StoreValue, /* prevValue */ StoreValue, /* allValues */ Store, StoreValue]
       ] = js.undefined
+    
+    var onMetaChange: js.UndefOr[js.Function1[/* meta */ Metadestroybooleanundefin, Unit]] = js.undefined
     
     var onReset: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -95,17 +98,17 @@ object fieldMod {
       
       inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      inline def setDependenciesVarargs(value: NamePath*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: NamePath*): Self = StObject.set(x, "dependencies", js.Array(value*))
       
       inline def setGetValueFromEvent(value: /* args */ EventArgs => StoreValue): Self = StObject.set(x, "getValueFromEvent", js.Any.fromFunction1(value))
       
       inline def setGetValueFromEventUndefined: Self = StObject.set(x, "getValueFromEvent", js.undefined)
       
-      inline def setGetValueProps(value: /* value */ StoreValue => js.Object): Self = StObject.set(x, "getValueProps", js.Any.fromFunction1(value))
+      inline def setGetValueProps(value: /* value */ StoreValue => Record[String, Any]): Self = StObject.set(x, "getValueProps", js.Any.fromFunction1(value))
       
       inline def setGetValuePropsUndefined: Self = StObject.set(x, "getValueProps", js.undefined)
       
-      inline def setInitialValue(value: js.Any): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+      inline def setInitialValue(value: Any): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
       
       inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
       
@@ -125,11 +128,15 @@ object fieldMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value :_*))
+      inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value*))
       
       inline def setNormalize(value: (/* value */ StoreValue, /* prevValue */ StoreValue, /* allValues */ Store) => StoreValue): Self = StObject.set(x, "normalize", js.Any.fromFunction3(value))
       
       inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+      
+      inline def setOnMetaChange(value: /* meta */ Metadestroybooleanundefin => Unit): Self = StObject.set(x, "onMetaChange", js.Any.fromFunction1(value))
+      
+      inline def setOnMetaChangeUndefined: Self = StObject.set(x, "onMetaChange", js.undefined)
       
       inline def setOnReset(value: () => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction0(value))
       
@@ -143,7 +150,7 @@ object fieldMod {
       
       inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value*))
       
       inline def setShouldUpdate(value: ShouldUpdate[Values]): Self = StObject.set(x, "shouldUpdate", value.asInstanceOf[js.Any])
       
@@ -163,7 +170,7 @@ object fieldMod {
       
       inline def setValidateTriggerUndefined: Self = StObject.set(x, "validateTrigger", js.undefined)
       
-      inline def setValidateTriggerVarargs(value: String*): Self = StObject.set(x, "validateTrigger", js.Array(value :_*))
+      inline def setValidateTriggerVarargs(value: String*): Self = StObject.set(x, "validateTrigger", js.Array(value*))
       
       inline def setValuePropName(value: String): Self = StObject.set(x, "valuePropName", value.asInstanceOf[js.Any])
       
@@ -207,9 +214,9 @@ object fieldMod {
     
     var getValueFromEvent: js.UndefOr[js.Function1[/* args */ EventArgs, StoreValue]] = js.undefined
     
-    var getValueProps: js.UndefOr[js.Function1[/* value */ StoreValue, js.Object]] = js.undefined
+    var getValueProps: js.UndefOr[js.Function1[/* value */ StoreValue, Record[String, Any]]] = js.undefined
     
-    var initialValue: js.UndefOr[js.Any] = js.undefined
+    var initialValue: js.UndefOr[Any] = js.undefined
     
     /** @private Passed by Form.List props. Do not use since it will break by path check. */
     var isList: js.UndefOr[Boolean] = js.undefined
@@ -224,6 +231,8 @@ object fieldMod {
     var normalize: js.UndefOr[
         js.Function3[/* value */ StoreValue, /* prevValue */ StoreValue, /* allValues */ Store, StoreValue]
       ] = js.undefined
+    
+    var onMetaChange: js.UndefOr[js.Function1[/* meta */ Metadestroybooleanundefin, Unit]] = js.undefined
     
     var onReset: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -262,7 +271,7 @@ object fieldMod {
       
       inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      inline def setDependenciesVarargs(value: NamePath*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: NamePath*): Self = StObject.set(x, "dependencies", js.Array(value*))
       
       inline def setFieldContext(value: InternalFormInstance): Self = StObject.set(x, "fieldContext", value.asInstanceOf[js.Any])
       
@@ -272,11 +281,11 @@ object fieldMod {
       
       inline def setGetValueFromEventUndefined: Self = StObject.set(x, "getValueFromEvent", js.undefined)
       
-      inline def setGetValueProps(value: /* value */ StoreValue => js.Object): Self = StObject.set(x, "getValueProps", js.Any.fromFunction1(value))
+      inline def setGetValueProps(value: /* value */ StoreValue => Record[String, Any]): Self = StObject.set(x, "getValueProps", js.Any.fromFunction1(value))
       
       inline def setGetValuePropsUndefined: Self = StObject.set(x, "getValueProps", js.undefined)
       
-      inline def setInitialValue(value: js.Any): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+      inline def setInitialValue(value: Any): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
       
       inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
       
@@ -296,11 +305,15 @@ object fieldMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value :_*))
+      inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value*))
       
       inline def setNormalize(value: (/* value */ StoreValue, /* prevValue */ StoreValue, /* allValues */ Store) => StoreValue): Self = StObject.set(x, "normalize", js.Any.fromFunction3(value))
       
       inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+      
+      inline def setOnMetaChange(value: /* meta */ Metadestroybooleanundefin => Unit): Self = StObject.set(x, "onMetaChange", js.Any.fromFunction1(value))
+      
+      inline def setOnMetaChangeUndefined: Self = StObject.set(x, "onMetaChange", js.undefined)
       
       inline def setOnReset(value: () => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction0(value))
       
@@ -314,7 +327,7 @@ object fieldMod {
       
       inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value*))
       
       inline def setShouldUpdate(value: ShouldUpdate[Values]): Self = StObject.set(x, "shouldUpdate", value.asInstanceOf[js.Any])
       
@@ -334,7 +347,7 @@ object fieldMod {
       
       inline def setValidateTriggerUndefined: Self = StObject.set(x, "validateTrigger", js.undefined)
       
-      inline def setValidateTriggerVarargs(value: String*): Self = StObject.set(x, "validateTrigger", js.Array(value :_*))
+      inline def setValidateTriggerVarargs(value: String*): Self = StObject.set(x, "validateTrigger", js.Array(value*))
       
       inline def setValuePropName(value: String): Self = StObject.set(x, "valuePropName", value.asInstanceOf[js.Any])
       

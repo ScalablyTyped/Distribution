@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Utils
 trait KnockoutUtils extends StObject {
   
-  def objectForEach(obj: js.Any, action: js.Function): Unit
+  def objectForEach(obj: Any, action: js.Function): Unit
   
-  def objectMap(source: js.Any, mapping: js.Function): js.Any
+  def objectMap(source: Any, mapping: js.Function): Any
 }
 object KnockoutUtils {
   
-  inline def apply(objectForEach: (js.Any, js.Function) => Unit, objectMap: (js.Any, js.Function) => js.Any): KnockoutUtils = {
+  inline def apply(objectForEach: (Any, js.Function) => Unit, objectMap: (Any, js.Function) => Any): KnockoutUtils = {
     val __obj = js.Dynamic.literal(objectForEach = js.Any.fromFunction2(objectForEach), objectMap = js.Any.fromFunction2(objectMap))
     __obj.asInstanceOf[KnockoutUtils]
   }
   
   extension [Self <: KnockoutUtils](x: Self) {
     
-    inline def setObjectForEach(value: (js.Any, js.Function) => Unit): Self = StObject.set(x, "objectForEach", js.Any.fromFunction2(value))
+    inline def setObjectForEach(value: (Any, js.Function) => Unit): Self = StObject.set(x, "objectForEach", js.Any.fromFunction2(value))
     
-    inline def setObjectMap(value: (js.Any, js.Function) => js.Any): Self = StObject.set(x, "objectMap", js.Any.fromFunction2(value))
+    inline def setObjectMap(value: (Any, js.Function) => Any): Self = StObject.set(x, "objectMap", js.Any.fromFunction2(value))
   }
 }

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.invityApi.invityApiStrings.bestRate
   - typings.invityApi.invityApiStrings.favorite
   - typings.invityApi.invityApiStrings.wantCrypto
+  - typings.invityApi.invityApiStrings.widget
 */
 trait BuyTradeTag extends StObject
 object BuyTradeTag {
@@ -23,4 +24,6 @@ object BuyTradeTag {
   inline def renewed: typings.invityApi.invityApiStrings.renewed = "renewed".asInstanceOf[typings.invityApi.invityApiStrings.renewed]
   
   inline def wantCrypto: typings.invityApi.invityApiStrings.wantCrypto = "wantCrypto".asInstanceOf[typings.invityApi.invityApiStrings.wantCrypto]
+  
+  inline def widget: typings.invityApi.invityApiStrings.widget = "widget".asInstanceOf[typings.invityApi.invityApiStrings.widget]
 }

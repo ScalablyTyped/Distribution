@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("selenium-webdriver", "Logs")
 @js.native
-class Logs protected () extends StObject {
+open class Logs protected () extends StObject {
   // region Constructors
   /**
     * @param {!WebDriver} driver The parent driver.

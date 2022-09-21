@@ -17,7 +17,7 @@ object webXRControllerPhysicsMod {
   
   @JSImport("babylonjs/XR/features/WebXRControllerPhysics", "IWebXRControllerPhysicsOptions")
   @js.native
-  class IWebXRControllerPhysicsOptions () extends StObject {
+  open class IWebXRControllerPhysicsOptions () extends StObject {
     
     /**
       * Should the headset get its own impostor
@@ -42,7 +42,7 @@ object webXRControllerPhysicsMod {
   
   @JSImport("babylonjs/XR/features/WebXRControllerPhysics", "WebXRControllerPhysics")
   @js.native
-  class WebXRControllerPhysics protected () extends WebXRAbstractFeature {
+  open class WebXRControllerPhysics protected () extends WebXRAbstractFeature {
     /**
       * Construct a new Controller Physics Feature
       * @param _xrSessionManager the corresponding xr session manager
@@ -50,15 +50,17 @@ object webXRControllerPhysicsMod {
       */
     def this(_xrSessionManager: WebXRSessionManager, _options: IWebXRControllerPhysicsOptions) = this()
     
-    /* private */ var _attachController: js.Any = js.native
+    /* private */ var _attachController: Any = js.native
     
-    /* private */ var _controllers: js.Any = js.native
+    /* private */ var _controllers: Any = js.native
     
-    /* private */ var _debugMode: js.Any = js.native
+    /* private */ var _createPhysicsImpostor: Any = js.native
     
-    /* private */ var _delta: js.Any = js.native
+    /* private */ var _debugMode: Any = js.native
     
-    /* private */ var _detachController: js.Any = js.native
+    /* private */ var _delta: Any = js.native
+    
+    /* private */ var _detachController: Any = js.native
     
     /**
       * @hidden
@@ -66,19 +68,19 @@ object webXRControllerPhysicsMod {
       */
     def _enablePhysicsDebug(): Unit = js.native
     
-    /* private */ var _headsetImpostor: js.Any = js.native
+    /* private */ var _headsetImpostor: Any = js.native
     
-    /* private */ var _headsetMesh: js.Any = js.native
+    /* private */ var _headsetMesh: Any = js.native
     
-    /* private */ var _lastTimestamp: js.Any = js.native
+    /* private */ var _lastTimestamp: Any = js.native
     
-    /* protected */ def _onXRFrame(_xrFrame: js.Any): Unit = js.native
+    /* protected */ def _onXRFrame(_xrFrame: Any): Unit = js.native
     
-    /* private */ val _options: js.Any = js.native
+    /* private */ val _options: Any = js.native
     
-    /* private */ var _tmpQuaternion: js.Any = js.native
+    /* private */ var _tmpQuaternion: Any = js.native
     
-    /* private */ var _tmpVector: js.Any = js.native
+    /* private */ var _tmpVector: Any = js.native
     
     /**
       * Manually add a controller (if no xrInput was provided or physics engine was not enabled)
@@ -104,6 +106,10 @@ object webXRControllerPhysicsMod {
     /**
       * Update the physics properties provided in the constructor
       * @param newProperties the new properties object
+      * @param newProperties.impostorType
+      * @param newProperties.impostorSize
+      * @param newProperties.friction
+      * @param newProperties.restitution
       */
     def setPhysicsProperties(newProperties: ImpostorType): Unit = js.native
   }

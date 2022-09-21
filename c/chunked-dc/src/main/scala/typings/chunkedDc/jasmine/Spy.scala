@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Spy extends StObject {
   
-  def apply(params: js.Any*): js.Any = js.native
+  def apply(params: scala.Any*): scala.Any = js.native
   
   var and: SpyAnd = js.native
   
-  var argsForCall: js.Array[js.Any] = js.native
+  var argsForCall: js.Array[scala.Any] = js.native
   
   var calls: Calls = js.native
   

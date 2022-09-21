@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object utilsMod {
   
-  type FunctionRet[T] = js.Array[js.Function1[/* props */ js.Array[js.Any] | scala.Nothing, T]]
+  type FunctionRet[T] = js.Array[js.Function1[/* props */ js.Array[Any] | scala.Nothing, T]]
   
   type GetIntersectionFromPlugins[PluginFuncArr /* <: FunctionRet[JimpPlugin[Image] | JimpType[Image]] */] = UnionToIntersection[Exclude[GetPluginFuncArrValues[PluginFuncArr], Unit]]
   
@@ -26,29 +26,29 @@ object utilsMod {
   
   type GetPluginFuncArrConsts[PluginFuncArr] = js.UndefOr[
     // Get the plugin constants, may be ill-formed or well-formed
-  GetPluginConst[js.Any]
+  GetPluginConst[Any]
   ]
   
   type GetPluginFuncArrDecoders[PluginFuncArr] = js.UndefOr[
     // Get the plugin decoders, may be ill-formed or well-formed
-  GetPluginDecoders[js.Any]
+  GetPluginDecoders[Any]
   ]
   
   type GetPluginFuncArrEncoders[PluginFuncArr] = js.UndefOr[
     // Get the plugin encoders, may be ill-formed or well-formed
-  GetPluginEncoders[js.Any]
+  GetPluginEncoders[Any]
   ]
   
   type GetPluginFuncArrValues[PluginFuncArr] = js.UndefOr[// Get the plugin value, may be ill-formed or well-formed
-  GetPluginVal[js.Any]]
+  GetPluginVal[Any]]
   
   type GetPluginVal[Q] = Q | WellFormedValues[Q]
   
   type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  type UnionToIntersection[U] = js.Any
+  type UnionToIntersection[U] = Any
   
-  type WellFormedConstants[T /* <: js.Any */] = js.Object
+  type WellFormedConstants[T /* <: Any */] = js.Object
   
-  type WellFormedValues[T /* <: js.Any */] = js.Object
+  type WellFormedValues[T /* <: Any */] = js.Object
 }

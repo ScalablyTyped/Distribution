@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RDSInstanceDetails extends StObject {
   
   /**
-    * Whether the recommendation is for a current-generation instance. 
+    * Determines whether the recommendation is for a current-generation instance. 
     */
   var CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined
   
@@ -22,7 +22,7 @@ trait RDSInstanceDetails extends StObject {
   var DatabaseEngine: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * Whether the recommendation is for a reservation in a single Availability Zone or a reservation with a backup in a second Availability Zone.
+    * Determines whether the recommendation is for a reservation in a single Availability Zone or a reservation with a backup in a second Availability Zone.
     */
   var DeploymentOption: js.UndefOr[GenericString] = js.undefined
   
@@ -32,7 +32,7 @@ trait RDSInstanceDetails extends StObject {
   var Family: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The type of instance that AWS recommends.
+    * The type of instance that Amazon Web Services recommends.
     */
   var InstanceType: js.UndefOr[GenericString] = js.undefined
   
@@ -42,12 +42,12 @@ trait RDSInstanceDetails extends StObject {
   var LicenseModel: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The AWS Region of the recommended reservation.
+    * The Amazon Web Services Region of the recommended reservation.
     */
   var Region: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * Whether the recommended reservation is size flexible.
+    * Determines whether the recommended reservation is size flexible.
     */
   var SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined
 }

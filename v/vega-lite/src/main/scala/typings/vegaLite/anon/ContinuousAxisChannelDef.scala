@@ -15,7 +15,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ContinuousAxisChannelDef[MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDef | ErrorBandDef) */, M /* <: ErrorBar | ErrorBand */] extends StObject {
+trait ContinuousAxisChannelDef[MD /* <: (ErrorBarDef & GenericCompositeMarkDef[M]) | (ErrorBandDef & GenericCompositeMarkDef[M]) */, M /* <: ErrorBar | ErrorBand */] extends StObject {
   
   var continuousAxis: x | y
   
@@ -37,7 +37,7 @@ trait ContinuousAxisChannelDef[MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDe
 }
 object ContinuousAxisChannelDef {
   
-  inline def apply[MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDef | ErrorBandDef) */, M /* <: ErrorBar | ErrorBand */](
+  inline def apply[MD /* <: (ErrorBarDef & GenericCompositeMarkDef[M]) | (ErrorBandDef & GenericCompositeMarkDef[M]) */, M /* <: ErrorBar | ErrorBand */](
     continuousAxis: x | y,
     continuousAxisChannelDef: PositionFieldDef[String],
     encodingWithoutContinuousAxis: ErrorEncoding[String],
@@ -52,7 +52,7 @@ object ContinuousAxisChannelDef {
     __obj.asInstanceOf[ContinuousAxisChannelDef[MD, M]]
   }
   
-  extension [Self <: ContinuousAxisChannelDef[?, ?], MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDef | ErrorBandDef) */, M /* <: ErrorBar | ErrorBand */](x: Self & (ContinuousAxisChannelDef[MD, M])) {
+  extension [Self <: ContinuousAxisChannelDef[?, ?], MD /* <: (ErrorBarDef & GenericCompositeMarkDef[M]) | (ErrorBandDef & GenericCompositeMarkDef[M]) */, M /* <: ErrorBar | ErrorBand */](x: Self & (ContinuousAxisChannelDef[MD, M])) {
     
     inline def setContinuousAxis(value: typings.vegaLite.vegaLiteStrings.x | y): Self = StObject.set(x, "continuousAxis", value.asInstanceOf[js.Any])
     
@@ -62,7 +62,7 @@ object ContinuousAxisChannelDef {
     
     inline def setGroupby(value: js.Array[String]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    inline def setGroupbyVarargs(value: String*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: String*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setMarkDef(value: MD): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
     
@@ -74,6 +74,6 @@ object ContinuousAxisChannelDef {
     
     inline def setTransform(value: js.Array[Transform]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value*))
   }
 }

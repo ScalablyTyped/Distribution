@@ -12,12 +12,14 @@ trait IEditorScrollbarOptions extends StObject {
   /**
     * Always consume mouse wheel events (always call preventDefault() and stopPropagation() on the browser events).
     * Defaults to true.
+    * **NOTE**: This option cannot be updated using `updateOptions()`
     */
   var alwaysConsumeMouseWheel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The size of arrows (if displayed).
     * Defaults to 11.
+    * **NOTE**: This option cannot be updated using `updateOptions()`
     */
   var arrowSize: js.UndefOr[Double] = js.undefined
   
@@ -36,6 +38,7 @@ trait IEditorScrollbarOptions extends StObject {
   /**
     * Render arrows at the left and right of the horizontal scrollbar.
     * Defaults to false.
+    * **NOTE**: This option cannot be updated using `updateOptions()`
     */
   var horizontalHasArrows: js.UndefOr[Boolean] = js.undefined
   
@@ -48,12 +51,20 @@ trait IEditorScrollbarOptions extends StObject {
   /**
     * Height in pixels for the horizontal slider.
     * Defaults to `horizontalScrollbarSize`.
+    * **NOTE**: This option cannot be updated using `updateOptions()`
     */
   var horizontalSliderSize: js.UndefOr[Double] = js.undefined
   
   /**
+    * Scroll gutter clicks move by page vs jump to position.
+    * Defaults to false.
+    */
+  var scrollByPage: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Cast horizontal and vertical shadows when the content is scrolled.
     * Defaults to true.
+    * **NOTE**: This option cannot be updated using `updateOptions()`
     */
   var useShadows: js.UndefOr[Boolean] = js.undefined
   
@@ -66,6 +77,7 @@ trait IEditorScrollbarOptions extends StObject {
   /**
     * Render arrows at the top and bottom of the vertical scrollbar.
     * Defaults to false.
+    * **NOTE**: This option cannot be updated using `updateOptions()`
     */
   var verticalHasArrows: js.UndefOr[Boolean] = js.undefined
   
@@ -78,6 +90,7 @@ trait IEditorScrollbarOptions extends StObject {
   /**
     * Width in pixels for the vertical slider.
     * Defaults to `verticalScrollbarSize`.
+    * **NOTE**: This option cannot be updated using `updateOptions()`
     */
   var verticalSliderSize: js.UndefOr[Double] = js.undefined
 }
@@ -117,6 +130,10 @@ object IEditorScrollbarOptions {
     inline def setHorizontalSliderSizeUndefined: Self = StObject.set(x, "horizontalSliderSize", js.undefined)
     
     inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    
+    inline def setScrollByPage(value: Boolean): Self = StObject.set(x, "scrollByPage", value.asInstanceOf[js.Any])
+    
+    inline def setScrollByPageUndefined: Self = StObject.set(x, "scrollByPage", js.undefined)
     
     inline def setUseShadows(value: Boolean): Self = StObject.set(x, "useShadows", value.asInstanceOf[js.Any])
     

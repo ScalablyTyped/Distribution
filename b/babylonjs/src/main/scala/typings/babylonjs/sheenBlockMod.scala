@@ -12,7 +12,7 @@ object sheenBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/PBR/sheenBlock", "SheenBlock")
   @js.native
-  class SheenBlock protected () extends NodeMaterialBlock {
+  open class SheenBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new SheenBlock
       * @param name defines the block name

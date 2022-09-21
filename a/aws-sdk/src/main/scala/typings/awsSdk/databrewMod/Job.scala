@@ -7,19 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Job extends StObject {
   
   /**
-    * The ID of the AWS account that owns the job.
+    * The ID of the Amazon Web Services account that owns the job.
     */
   var AccountId: js.UndefOr[typings.awsSdk.databrewMod.AccountId] = js.undefined
   
   /**
     * The date and time that the job was created.
     */
-  var CreateDate: js.UndefOr[Date] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The identifier (the user name) of the user who created the job.
+    * The Amazon Resource Name (ARN) of the user who created the job.
     */
   var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.undefined
+  
+  /**
+    * One or more artifacts that represent the Glue Data Catalog output from running the job.
+    */
+  var DataCatalogOutputs: js.UndefOr[DataCatalogOutputList] = js.undefined
+  
+  /**
+    * Represents a list of JDBC database output objects which defines the output destination for a DataBrew recipe job to write into.
+    */
+  var DatabaseOutputs: js.UndefOr[DatabaseOutputList] = js.undefined
   
   /**
     * A dataset that the job is to process.
@@ -27,24 +37,29 @@ trait Job extends StObject {
   var DatasetName: js.UndefOr[typings.awsSdk.databrewMod.DatasetName] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of an encryption key that is used to protect a job.
+    * The Amazon Resource Name (ARN) of an encryption key that is used to protect the job output. For more information, see Encrypting data written by DataBrew jobs 
     */
   var EncryptionKeyArn: js.UndefOr[typings.awsSdk.databrewMod.EncryptionKeyArn] = js.undefined
   
   /**
-    * The encryption mode for the job, which can be one of the following:    SSE-KMS - Server-side encryption with AWS KMS-managed keys.    SSE-S3 - Server-side encryption with keys managed by Amazon S3.  
+    * The encryption mode for the job, which can be one of the following:    SSE-KMS - Server-side encryption with keys managed by KMS.    SSE-S3 - Server-side encryption with keys managed by Amazon S3.  
     */
   var EncryptionMode: js.UndefOr[typings.awsSdk.databrewMod.EncryptionMode] = js.undefined
   
   /**
-    * The identifier (the user name) of the user who last modified the job.
+    * A sample configuration for profile jobs only, which determines the number of rows on which the profile job is run. If a JobSample value isn't provided, the default value is used. The default value is CUSTOM_ROWS for the mode parameter and 20,000 for the size parameter.
+    */
+  var JobSample: js.UndefOr[typings.awsSdk.databrewMod.JobSample] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the user who last modified the job.
     */
   var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.undefined
   
   /**
     * The modification date and time of the job.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The current status of Amazon CloudWatch logging for the job.
@@ -87,7 +102,7 @@ trait Job extends StObject {
   var ResourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the role that will be assumed for this job.
+    * The Amazon Resource Name (ARN) of the role to be assumed for this job.
     */
   var RoleArn: js.UndefOr[Arn] = js.undefined
   
@@ -105,6 +120,11 @@ trait Job extends StObject {
     * The job type of the job, which must be one of the following:    PROFILE - A job to analyze a dataset, to determine its size, data types, data distribution, and more.    RECIPE - A job to apply one or more transformations to a dataset.  
     */
   var Type: js.UndefOr[JobType] = js.undefined
+  
+  /**
+    * List of validation configurations that are applied to the profile job.
+    */
+  var ValidationConfigurations: js.UndefOr[ValidationConfigurationList] = js.undefined
 }
 object Job {
   
@@ -119,13 +139,25 @@ object Job {
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    inline def setCreateDate(value: Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
     inline def setCreatedBy(value: CreatedBy): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
+    
+    inline def setDataCatalogOutputs(value: DataCatalogOutputList): Self = StObject.set(x, "DataCatalogOutputs", value.asInstanceOf[js.Any])
+    
+    inline def setDataCatalogOutputsUndefined: Self = StObject.set(x, "DataCatalogOutputs", js.undefined)
+    
+    inline def setDataCatalogOutputsVarargs(value: DataCatalogOutput*): Self = StObject.set(x, "DataCatalogOutputs", js.Array(value*))
+    
+    inline def setDatabaseOutputs(value: DatabaseOutputList): Self = StObject.set(x, "DatabaseOutputs", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseOutputsUndefined: Self = StObject.set(x, "DatabaseOutputs", js.undefined)
+    
+    inline def setDatabaseOutputsVarargs(value: DatabaseOutput*): Self = StObject.set(x, "DatabaseOutputs", js.Array(value*))
     
     inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
@@ -139,11 +171,15 @@ object Job {
     
     inline def setEncryptionModeUndefined: Self = StObject.set(x, "EncryptionMode", js.undefined)
     
+    inline def setJobSample(value: JobSample): Self = StObject.set(x, "JobSample", value.asInstanceOf[js.Any])
+    
+    inline def setJobSampleUndefined: Self = StObject.set(x, "JobSample", js.undefined)
+    
     inline def setLastModifiedBy(value: LastModifiedBy): Self = StObject.set(x, "LastModifiedBy", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
@@ -165,7 +201,7 @@ object Job {
     
     inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
-    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value*))
     
     inline def setProjectName(value: ProjectName): Self = StObject.set(x, "ProjectName", value.asInstanceOf[js.Any])
     
@@ -194,5 +230,11 @@ object Job {
     inline def setType(value: JobType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    
+    inline def setValidationConfigurations(value: ValidationConfigurationList): Self = StObject.set(x, "ValidationConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setValidationConfigurationsUndefined: Self = StObject.set(x, "ValidationConfigurations", js.undefined)
+    
+    inline def setValidationConfigurationsVarargs(value: ValidationConfiguration*): Self = StObject.set(x, "ValidationConfigurations", js.Array(value*))
   }
 }

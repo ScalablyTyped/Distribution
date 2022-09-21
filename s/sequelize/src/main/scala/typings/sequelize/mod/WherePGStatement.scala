@@ -26,10 +26,10 @@ object WherePGStatement {
     
     inline def set$all(value: js.Array[String | Double]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    inline def set$allVarargs(value: (String | Double)*): Self = StObject.set(x, "$all", js.Array(value :_*))
+    inline def set$allVarargs(value: (String | Double)*): Self = StObject.set(x, "$all", js.Array(value*))
     
     inline def set$any(value: js.Array[String | Double]): Self = StObject.set(x, "$any", value.asInstanceOf[js.Any])
     
-    inline def set$anyVarargs(value: (String | Double)*): Self = StObject.set(x, "$any", js.Array(value :_*))
+    inline def set$anyVarargs(value: (String | Double)*): Self = StObject.set(x, "$any", js.Array(value*))
   }
 }

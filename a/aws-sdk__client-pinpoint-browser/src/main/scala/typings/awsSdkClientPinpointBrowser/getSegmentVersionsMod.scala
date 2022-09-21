@@ -8,5 +8,5 @@ object getSegmentVersionsMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/GetSegmentVersions", "GetSegmentVersions")
   @js.native
-  val GetSegmentVersions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetSegmentVersions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

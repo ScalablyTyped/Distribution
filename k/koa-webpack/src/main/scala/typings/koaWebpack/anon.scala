@@ -13,11 +13,11 @@ object anon {
     
     var options: Options
     
-    var server: js.Any
+    var server: Any
   }
   object Close {
     
-    inline def apply(close: () => Unit, options: Options, server: js.Any): Close = {
+    inline def apply(close: () => Unit, options: Options, server: Any): Close = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), options = options.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
       __obj.asInstanceOf[Close]
     }
@@ -28,7 +28,7 @@ object anon {
       
       inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setServer(value: js.Any): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: Any): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     }
   }
 }

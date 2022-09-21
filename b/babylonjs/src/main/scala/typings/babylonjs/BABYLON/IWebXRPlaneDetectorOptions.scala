@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import typings.babylonjs.XRGeometryDetectorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +12,11 @@ trait IWebXRPlaneDetectorOptions extends StObject {
     * If not defined, planes will be removed from the array when the feature is detached or the session ended.
     */
   var doNotRemovePlanesOnSessionEnded: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Preferred detector configuration, not all preferred options will be supported by all platforms.
+    */
+  var preferredDetectorOptions: js.UndefOr[XRGeometryDetectorOptions] = js.undefined
   
   /**
     * The node to use to transform the local results to world coordinates
@@ -29,6 +35,10 @@ object IWebXRPlaneDetectorOptions {
     inline def setDoNotRemovePlanesOnSessionEnded(value: Boolean): Self = StObject.set(x, "doNotRemovePlanesOnSessionEnded", value.asInstanceOf[js.Any])
     
     inline def setDoNotRemovePlanesOnSessionEndedUndefined: Self = StObject.set(x, "doNotRemovePlanesOnSessionEnded", js.undefined)
+    
+    inline def setPreferredDetectorOptions(value: XRGeometryDetectorOptions): Self = StObject.set(x, "preferredDetectorOptions", value.asInstanceOf[js.Any])
+    
+    inline def setPreferredDetectorOptionsUndefined: Self = StObject.set(x, "preferredDetectorOptions", js.undefined)
     
     inline def setWorldParentNode(value: TransformNode): Self = StObject.set(x, "worldParentNode", value.asInstanceOf[js.Any])
     

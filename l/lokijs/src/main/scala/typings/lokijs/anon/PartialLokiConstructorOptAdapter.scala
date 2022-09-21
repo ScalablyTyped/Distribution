@@ -24,12 +24,12 @@ trait PartialLokiConstructorOptAdapter extends StObject {
   
   var autoload: Boolean = js.native
   
-  def autoloadCallback(err: js.Any): Unit = js.native
+  def autoloadCallback(err: Any): Unit = js.native
   
   var autosave: Boolean = js.native
   
   def autosaveCallback(): Unit = js.native
-  def autosaveCallback(err: js.Any): Unit = js.native
+  def autosaveCallback(err: Any): Unit = js.native
   
   var autosaveInterval: String | Double = js.native
   

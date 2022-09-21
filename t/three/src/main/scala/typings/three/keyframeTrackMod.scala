@@ -1,10 +1,10 @@
 package typings.three
 
-import typings.std.Float32Array
-import typings.three.constantsMod.InterpolationModes
+import typings.std.ArrayLike
 import typings.three.cubicInterpolantMod.CubicInterpolant
 import typings.three.discreteInterpolantMod.DiscreteInterpolant
 import typings.three.linearInterpolantMod.LinearInterpolant
+import typings.three.srcConstantsMod.InterpolationModes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,30 +13,30 @@ object keyframeTrackMod {
   
   @JSImport("three/src/animation/KeyframeTrack", "KeyframeTrack")
   @js.native
-  class KeyframeTrack protected () extends StObject {
+  open class KeyframeTrack protected () extends StObject {
     /**
-    	 * @param name
-    	 * @param times
-    	 * @param values
-    	 * @param [interpolation=THREE.InterpolateLinear]
-    	 */
-    def this(name: String, times: js.Array[js.Any], values: js.Array[js.Any]) = this()
-    def this(name: String, times: js.Array[js.Any], values: js.Array[js.Any], interpolation: InterpolationModes) = this()
+      * @param name
+      * @param times
+      * @param values
+      * @param [interpolation=THREE.InterpolateLinear]
+      */
+    def this(name: String, times: ArrayLike[Any], values: ArrayLike[Any]) = this()
+    def this(name: String, times: ArrayLike[Any], values: ArrayLike[Any], interpolation: InterpolationModes) = this()
     
     /**
-    	 * @default THREE.InterpolateLinear
-    	 */
+      * @default THREE.InterpolateLinear
+      */
     var DefaultInterpolation: InterpolationModes = js.native
     
-    def InterpolantFactoryMethodDiscrete(result: js.Any): DiscreteInterpolant = js.native
+    def InterpolantFactoryMethodDiscrete(result: Any): DiscreteInterpolant = js.native
     
-    def InterpolantFactoryMethodLinear(result: js.Any): LinearInterpolant = js.native
+    def InterpolantFactoryMethodLinear(result: Any): LinearInterpolant = js.native
     
-    def InterpolantFactoryMethodSmooth(result: js.Any): CubicInterpolant = js.native
+    def InterpolantFactoryMethodSmooth(result: Any): CubicInterpolant = js.native
     
-    var TimeBufferType: Float32Array = js.native
+    var TimeBufferType: js.typedarray.Float32Array = js.native
     
-    var ValueBufferType: Float32Array = js.native
+    var ValueBufferType: js.typedarray.Float32Array = js.native
     
     var ValueTypeName: String = js.native
     
@@ -54,13 +54,13 @@ object keyframeTrackMod {
     
     def shift(timeOffset: Double): KeyframeTrack = js.native
     
-    var times: Float32Array = js.native
+    var times: js.typedarray.Float32Array = js.native
     
     def trim(startTime: Double, endTime: Double): KeyframeTrack = js.native
     
     def validate(): Boolean = js.native
     
-    var values: Float32Array = js.native
+    var values: js.typedarray.Float32Array = js.native
   }
   /* static members */
   object KeyframeTrack {
@@ -69,6 +69,6 @@ object keyframeTrackMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def toJSON(track: KeyframeTrack): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(track.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def toJSON(track: KeyframeTrack): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(track.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
 }

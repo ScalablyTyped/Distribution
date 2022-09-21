@@ -30,10 +30,11 @@ object BlockCodegenNode {
   inline def VNodeCall(
     disableTracking: Boolean,
     isBlock: Boolean,
+    isComponent: Boolean,
     loc: SourceLocation,
     tag: String | js.Symbol | CallExpression
   ): typings.vueCompilerCore.mod.VNodeCall = {
-    val __obj = js.Dynamic.literal(disableTracking = disableTracking.asInstanceOf[js.Any], isBlock = isBlock.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(disableTracking = disableTracking.asInstanceOf[js.Any], isBlock = isBlock.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(13)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.VNodeCall]
   }

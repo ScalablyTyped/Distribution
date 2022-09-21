@@ -23,7 +23,7 @@ object ItemsArray {
     
     inline def setItems(value: js.Array[IKeyValuePair[String, ResourceMap]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: (IKeyValuePair[String, ResourceMap])*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: (IKeyValuePair[String, ResourceMap])*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }

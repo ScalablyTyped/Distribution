@@ -10,10 +10,10 @@ A Node.js module to convert text files with DOS line breaks to Unix line breaks,
 | ------------------ | :-------------: |
 | Full name          | dos2unix |
 | Keywords           | dos2unix, unix2dos, crlf, lf, carriage return, line feed, newline, new line, line endings |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 4952 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3060.0 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/JamesMGreene/node-dos2unix)

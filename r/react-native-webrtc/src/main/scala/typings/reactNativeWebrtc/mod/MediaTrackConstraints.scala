@@ -29,6 +29,6 @@ object MediaTrackConstraints {
     
     inline def setOptional(value: js.Array[MediaSources]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    inline def setOptionalVarargs(value: MediaSources*): Self = StObject.set(x, "optional", js.Array(value :_*))
+    inline def setOptionalVarargs(value: MediaSources*): Self = StObject.set(x, "optional", js.Array(value*))
   }
 }

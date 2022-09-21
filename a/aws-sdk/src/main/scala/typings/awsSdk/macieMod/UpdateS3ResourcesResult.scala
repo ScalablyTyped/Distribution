@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateS3ResourcesResult extends StObject {
   
   /**
-    * The S3 resources whose classification types can't be updated. An error code and an error message are provided for each failed item. 
+    * (Discontinued) The S3 resources whose classification types can't be updated. An error code and an error message are provided for each failed item.
     */
   var failedS3Resources: js.UndefOr[FailedS3Resources] = js.undefined
 }
@@ -24,6 +24,6 @@ object UpdateS3ResourcesResult {
     
     inline def setFailedS3ResourcesUndefined: Self = StObject.set(x, "failedS3Resources", js.undefined)
     
-    inline def setFailedS3ResourcesVarargs(value: FailedS3Resource*): Self = StObject.set(x, "failedS3Resources", js.Array(value :_*))
+    inline def setFailedS3ResourcesVarargs(value: FailedS3Resource*): Self = StObject.set(x, "failedS3Resources", js.Array(value*))
   }
 }

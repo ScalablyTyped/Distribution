@@ -33,6 +33,6 @@ object ListWebACLsResponse {
     
     inline def setWebACLsUndefined: Self = StObject.set(x, "WebACLs", js.undefined)
     
-    inline def setWebACLsVarargs(value: WebACLSummary*): Self = StObject.set(x, "WebACLs", js.Array(value :_*))
+    inline def setWebACLsVarargs(value: WebACLSummary*): Self = StObject.set(x, "WebACLs", js.Array(value*))
   }
 }

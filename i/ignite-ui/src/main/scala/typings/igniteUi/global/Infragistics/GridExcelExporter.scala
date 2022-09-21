@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.GridExcelExporter")
 @js.native
-class GridExcelExporter protected ()
+open class GridExcelExporter protected ()
   extends StObject
      with typings.igniteUi.Infragistics.GridExcelExporter {
   def this(callbacks: GridExcelExporterCallbacks) = this()

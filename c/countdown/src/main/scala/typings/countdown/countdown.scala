@@ -1,6 +1,5 @@
 package typings.countdown
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,7 +71,7 @@ object countdown {
   
   type DateFunction = js.Function1[/* timespan */ Timespan, Unit]
   
-  type DateTime = js.UndefOr[Double | Date | DateFunction | Null]
+  type DateTime = js.UndefOr[Double | js.Date | DateFunction | Null]
   
   trait Format extends StObject {
     
@@ -123,13 +122,13 @@ object countdown {
       
       inline def setPluralUndefined: Self = StObject.set(x, "plural", js.undefined)
       
-      inline def setPluralVarargs(value: String*): Self = StObject.set(x, "plural", js.Array(value :_*))
+      inline def setPluralVarargs(value: String*): Self = StObject.set(x, "plural", js.Array(value*))
       
       inline def setSingular(value: String | js.Array[String]): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
       
       inline def setSingularUndefined: Self = StObject.set(x, "singular", js.undefined)
       
-      inline def setSingularVarargs(value: String*): Self = StObject.set(x, "singular", js.Array(value :_*))
+      inline def setSingularVarargs(value: String*): Self = StObject.set(x, "singular", js.Array(value*))
     }
   }
   
@@ -142,7 +141,7 @@ object countdown {
     
     var decades: js.UndefOr[Double] = js.native
     
-    var end: js.UndefOr[Date] = js.native
+    var end: js.UndefOr[js.Date] = js.native
     
     var hours: js.UndefOr[Double] = js.native
     
@@ -156,7 +155,7 @@ object countdown {
     
     var seconds: js.UndefOr[Double] = js.native
     
-    var start: js.UndefOr[Date] = js.native
+    var start: js.UndefOr[js.Date] = js.native
     
     def toHTML(): String = js.native
     def toHTML(tagName: String): String = js.native

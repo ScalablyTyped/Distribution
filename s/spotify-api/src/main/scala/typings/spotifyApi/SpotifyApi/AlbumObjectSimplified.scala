@@ -77,6 +77,11 @@ trait AlbumObjectSimplified
     */
   var restrictions: js.UndefOr[RestrictionsObject] = js.undefined
   
+  /**
+    * The number of tracks in the album.
+    */
+  var total_tracks: Double
+  
   @JSName("type")
   var type_AlbumObjectSimplified: album
 }
@@ -92,9 +97,10 @@ object AlbumObjectSimplified {
     name: String,
     release_date: String,
     release_date_precision: year | month | day,
+    total_tracks: Double,
     uri: String
   ): AlbumObjectSimplified = {
-    val __obj = js.Dynamic.literal(album_type = album_type.asInstanceOf[js.Any], artists = artists.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], release_date = release_date.asInstanceOf[js.Any], release_date_precision = release_date_precision.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(album_type = album_type.asInstanceOf[js.Any], artists = artists.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], release_date = release_date.asInstanceOf[js.Any], release_date_precision = release_date_precision.asInstanceOf[js.Any], total_tracks = total_tracks.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("album")
     __obj.asInstanceOf[AlbumObjectSimplified]
   }
@@ -109,19 +115,19 @@ object AlbumObjectSimplified {
     
     inline def setArtists(value: js.Array[ArtistObjectSimplified]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     
-    inline def setArtistsVarargs(value: ArtistObjectSimplified*): Self = StObject.set(x, "artists", js.Array(value :_*))
+    inline def setArtistsVarargs(value: ArtistObjectSimplified*): Self = StObject.set(x, "artists", js.Array(value*))
     
     inline def setAvailable_markets(value: js.Array[String]): Self = StObject.set(x, "available_markets", value.asInstanceOf[js.Any])
     
     inline def setAvailable_marketsUndefined: Self = StObject.set(x, "available_markets", js.undefined)
     
-    inline def setAvailable_marketsVarargs(value: String*): Self = StObject.set(x, "available_markets", js.Array(value :_*))
+    inline def setAvailable_marketsVarargs(value: String*): Self = StObject.set(x, "available_markets", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setImages(value: js.Array[ImageObject]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    inline def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -132,6 +138,8 @@ object AlbumObjectSimplified {
     inline def setRestrictions(value: RestrictionsObject): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
     inline def setRestrictionsUndefined: Self = StObject.set(x, "restrictions", js.undefined)
+    
+    inline def setTotal_tracks(value: Double): Self = StObject.set(x, "total_tracks", value.asInstanceOf[js.Any])
     
     inline def setType(value: album): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

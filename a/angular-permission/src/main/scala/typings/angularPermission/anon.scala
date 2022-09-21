@@ -11,9 +11,9 @@ object anon {
   
   trait Except extends StObject {
     
-    var except: js.UndefOr[js.Function0[Unit] | String | js.Array[String] | IPromise[js.Any]] = js.undefined
+    var except: js.UndefOr[js.Function0[Unit] | String | js.Array[String] | IPromise[Any]] = js.undefined
     
-    var only: js.UndefOr[js.Function0[Unit] | String | js.Array[String] | IPromise[js.Any]] = js.undefined
+    var only: js.UndefOr[js.Function0[Unit] | String | js.Array[String] | IPromise[Any]] = js.undefined
     
     var redirectTo: String | (js.Function0[PermissionRedirectConfigation | String]) | StringDictionary[PermissionRedirectConfigation]
   }
@@ -28,21 +28,21 @@ object anon {
     
     extension [Self <: Except](x: Self) {
       
-      inline def setExcept(value: js.Function0[Unit] | String | js.Array[String] | IPromise[js.Any]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
+      inline def setExcept(value: js.Function0[Unit] | String | js.Array[String] | IPromise[Any]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
       
       inline def setExceptFunction0(value: () => Unit): Self = StObject.set(x, "except", js.Any.fromFunction0(value))
       
       inline def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
       
-      inline def setExceptVarargs(value: String*): Self = StObject.set(x, "except", js.Array(value :_*))
+      inline def setExceptVarargs(value: String*): Self = StObject.set(x, "except", js.Array(value*))
       
-      inline def setOnly(value: js.Function0[Unit] | String | js.Array[String] | IPromise[js.Any]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+      inline def setOnly(value: js.Function0[Unit] | String | js.Array[String] | IPromise[Any]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       
       inline def setOnlyFunction0(value: () => Unit): Self = StObject.set(x, "only", js.Any.fromFunction0(value))
       
       inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
       
-      inline def setOnlyVarargs(value: String*): Self = StObject.set(x, "only", js.Array(value :_*))
+      inline def setOnlyVarargs(value: String*): Self = StObject.set(x, "only", js.Array(value*))
       
       inline def setRedirectTo(
         value: String | (js.Function0[PermissionRedirectConfigation | String]) | StringDictionary[PermissionRedirectConfigation]

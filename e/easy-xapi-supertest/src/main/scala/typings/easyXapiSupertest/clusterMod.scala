@@ -14,7 +14,7 @@ object clusterMod {
   
   @JSImport("cluster", "Worker")
   @js.native
-  class Worker_ () extends EventEmitter {
+  open class Worker_ () extends EventEmitter {
     
     def destroy(): Unit = js.native
     def destroy(signal: String): Unit = js.native
@@ -28,8 +28,8 @@ object clusterMod {
     
     var process: ChildProcess = js.native
     
-    def send(message: js.Any): Unit = js.native
-    def send(message: js.Any, sendHandle: js.Any): Unit = js.native
+    def send(message: Any): Unit = js.native
+    def send(message: Any, sendHandle: Any): Unit = js.native
     
     var suicide: Boolean = js.native
   }
@@ -39,10 +39,10 @@ object clusterMod {
   inline def disconnect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")().asInstanceOf[Unit]
   inline def disconnect(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def emit(event: String, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def emit(event: String, args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(List(event.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
   
   inline def fork(): Worker_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")().asInstanceOf[Worker_]
-  inline def fork(env: js.Any): Worker_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")(env.asInstanceOf[js.Any]).asInstanceOf[Worker_]
+  inline def fork(env: Any): Worker_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")(env.asInstanceOf[js.Any]).asInstanceOf[Worker_]
   
   @JSImport("cluster", "isMaster")
   @js.native
@@ -56,7 +56,7 @@ object clusterMod {
   
   inline def listeners(event: String): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("listeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
   
-  inline def on(event: String, listener: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def on(event: String, listener: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def once(event: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -106,7 +106,7 @@ object clusterMod {
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setExec(value: String): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
       

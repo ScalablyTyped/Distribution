@@ -1,7 +1,7 @@
 
 # Scala.js typings for images
 
-Typings are for version 2.2
+Typings are for version 3.2.4
 
 ## Library description:
 Cross-platform image decoder(webp/png/jpeg/gif) and encoder(webp/png/jpeg) for Node.js
@@ -10,10 +10,10 @@ Cross-platform image decoder(webp/png/jpeg/gif) and encoder(webp/png/jpeg) for N
 | ------------------ | :-------------: |
 | Full name          | images |
 | Keywords           | image, decoder, encoder, webp, png, jpeg, gif, cross-platform, images |
-| # releases         | 6 |
-| # dependents       | 106 |
-| # downloads        | 157128 |
-| # stars            | 26 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 38177.333333333336 |
+| # stars            | 1475.0 |
 
 ## Links
 - [Homepage](https://github.com/zhangyuanwei/node-images#readme)
@@ -24,7 +24,7 @@ Cross-platform image decoder(webp/png/jpeg/gif) and encoder(webp/png/jpeg) for N
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

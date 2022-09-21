@@ -10,13 +10,13 @@ trait Bucket extends StObject {
   
   var configurationId: String
   
-  var `object`: ETag
+  var `object`: ETag_
   
   var s3SchemaVersion: String
 }
 object Bucket {
   
-  inline def apply(bucket: Arn, configurationId: String, `object`: ETag, s3SchemaVersion: String): Bucket = {
+  inline def apply(bucket: Arn, configurationId: String, `object`: ETag_, s3SchemaVersion: String): Bucket = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], configurationId = configurationId.asInstanceOf[js.Any], s3SchemaVersion = s3SchemaVersion.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bucket]
@@ -28,7 +28,7 @@ object Bucket {
     
     inline def setConfigurationId(value: String): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
     
-    inline def setObject(value: ETag): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: ETag_): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     inline def setS3SchemaVersion(value: String): Self = StObject.set(x, "s3SchemaVersion", value.asInstanceOf[js.Any])
   }

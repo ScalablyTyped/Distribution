@@ -8,7 +8,7 @@ trait SignalEvent extends StObject {
   
   var channel: String
   
-  var message: js.Any
+  var message: Any
   
   var publisher: String
   
@@ -18,7 +18,7 @@ trait SignalEvent extends StObject {
 }
 object SignalEvent {
   
-  inline def apply(channel: String, message: js.Any, publisher: String, subscription: String, timetoken: String): SignalEvent = {
+  inline def apply(channel: String, message: Any, publisher: String, subscription: String, timetoken: String): SignalEvent = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], publisher = publisher.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignalEvent]
   }
@@ -27,7 +27,7 @@ object SignalEvent {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     

@@ -24,6 +24,6 @@ object NullableStringSchema {
     
     inline def setType(value: js.Array[string | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: (string | `null`)*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: (string | `null`)*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

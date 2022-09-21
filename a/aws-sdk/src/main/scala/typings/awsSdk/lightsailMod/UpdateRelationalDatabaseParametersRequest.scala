@@ -27,7 +27,7 @@ object UpdateRelationalDatabaseParametersRequest {
     
     inline def setParameters(value: RelationalDatabaseParameterList): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setParametersVarargs(value: RelationalDatabaseParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: RelationalDatabaseParameter*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
   }

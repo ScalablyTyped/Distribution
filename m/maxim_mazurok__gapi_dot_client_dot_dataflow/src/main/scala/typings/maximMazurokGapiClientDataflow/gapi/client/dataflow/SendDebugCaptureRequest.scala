@@ -12,6 +12,9 @@ trait SendDebugCaptureRequest extends StObject {
   /** The encoded debug information. */
   var data: js.UndefOr[String] = js.undefined
   
+  /** Format for the data field above (id=5). */
+  var dataFormat: js.UndefOr[String] = js.undefined
+  
   /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains the job specified by job_id. */
   var location: js.UndefOr[String] = js.undefined
   
@@ -32,6 +35,10 @@ object SendDebugCaptureRequest {
     inline def setComponentIdUndefined: Self = StObject.set(x, "componentId", js.undefined)
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataFormat(value: String): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
+    
+    inline def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

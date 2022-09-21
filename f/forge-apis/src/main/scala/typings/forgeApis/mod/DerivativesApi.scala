@@ -1,8 +1,10 @@
 package typings.forgeApis.mod
 
 import typings.forgeApis.anon.AcceptEncoding
+import typings.forgeApis.anon.Forceget
 import typings.forgeApis.anon.Height
-import typings.forgeApis.anon.Range
+import typings.forgeApis.anon.IfModifiedSince
+import typings.forgeApis.anon.Objectid
 import typings.forgeApis.anon.XAdsForce
 import typings.forgeApis.anon.`0`
 import org.scalablytyped.runtime.StObject
@@ -11,7 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forge-apis", "DerivativesApi")
 @js.native
-class DerivativesApi () extends StObject {
+open class DerivativesApi () extends StObject {
+  def this(apiClient: Any) = this()
+  def this(apiClient: Any, region: String) = this()
+  def this(apiClient: Unit, region: String) = this()
   
   /**
     * Deletes the manifest and all its translated output files (derivatives). However, it does not delete the design source file.
@@ -24,14 +29,25 @@ class DerivativesApi () extends StObject {
     * calling most of the Model Derivative endpoints. A derivative URN is generated for each translated output file format, and is used for downloading the output
     * design files. You can set the range of bytes that are returned when downloading the derivative, using the range header.
     */
-  def getDerivativeManifest(urn: String, derivativeUrn: String, opts: Range, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def getDerivativeManifest(
+    urn: String,
+    derivativeUrn: String,
+    opts: AcceptEncoding,
+    oauth2Client: AuthClient,
+    credentials: AuthToken
+  ): js.Promise[ApiResponse] = js.native
+  
+  /**
+    * Returns information about the specified derivative.
+    */
+  def getDerivativeManifestInfo(urn: String, derivativeUrn: String, opts: Any, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   
   /**
     * Returns an up-to-date list of Forge-supported translations, that you can use to identify which types of derivatives are supported for each source file type.
     * You can set this endpoint to only return the list of supported translations if they have been updated since a specified date. See the Supported Translation
     * Formats table for more details about supported translations. Note that we are constantly adding new file formats to the list of Forge translations.
     */
-  def getFormats(opts: AcceptEncoding, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def getFormats(opts: IfModifiedSince, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   
   /**
     * Returns information about derivatives that correspond to a specific source file, including derviative URNs and statuses.
@@ -59,7 +75,7 @@ class DerivativesApi () extends StObject {
     * models with multiple model views (e.g., HVAC, architecture, perspective). Note that you can only retrieve metadata from an
     * input file that has been translated into an SVF file.
     */
-  def getModelviewMetadata(urn: String, guid: String, opts: `0`, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def getModelviewMetadata(urn: String, guid: String, opts: Forceget, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   
   /**
     * Returns a list of properties for each object in an object tree. Properties are returned according to object ID and do not
@@ -68,7 +84,7 @@ class DerivativesApi () extends StObject {
     * for a design input model. Select a model view (metadata) ID to use when calling the Get Properties endpoint. Note that
     * you can only get properties from a design input file that was previously translated into an SVF file.
     */
-  def getModelviewProperties(urn: String, guid: String, opts: `0`, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def getModelviewProperties(urn: String, guid: String, opts: Objectid, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   
   /**
     * Returns the thumbnail for the source file.
@@ -76,9 +92,45 @@ class DerivativesApi () extends StObject {
   def getThumbnail(urn: String, opts: Height, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
   
   /**
+    * To create references for a composite design in Model Derivative. The description of references is stored in
+    * Model Derivative. To use it with the POST job endpoint, you need to set checkReferences to true.
+    */
+  def setReferences(urn: String, body: Any, opts: Any, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  
+  /**
     * Translate a source file from one format to another. Derivatives are stored in a manifest that is updated each time this endpoint
     * is used on a source file. Note that this endpoint is asynchronous and initiates a process that runs in the background, rather
     * than keeping an open HTTP connection until completion. Use the GET {urn}/manifest endpoint to poll for the job’s completion.
     */
   def translate(job: JobPayload, opts: XAdsForce, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+}
+object DerivativesApi {
+  
+  @js.native
+  sealed trait RegionEnum extends StObject
+  @JSImport("forge-apis", "DerivativesApi.RegionEnum")
+  @js.native
+  object RegionEnum extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[RegionEnum & String] = js.native
+    
+    @js.native
+    sealed trait EMEA
+      extends StObject
+         with RegionEnum
+    /* "EMEA" */ val EMEA: typings.forgeApis.mod.DerivativesApi.RegionEnum.EMEA & String = js.native
+    
+    @js.native
+    sealed trait EU
+      extends StObject
+         with RegionEnum
+    /* "EMEA" */ val EU: typings.forgeApis.mod.DerivativesApi.RegionEnum.EU & String = js.native
+    
+    @js.native
+    sealed trait US
+      extends StObject
+         with RegionEnum
+    /* "US" */ val US: typings.forgeApis.mod.DerivativesApi.RegionEnum.US & String = js.native
+  }
 }

@@ -39,7 +39,7 @@ object TaskAgentMessage {
     
     inline def setIV(value: js.Array[Double]): Self = StObject.set(x, "iV", value.asInstanceOf[js.Any])
     
-    inline def setIVVarargs(value: Double*): Self = StObject.set(x, "iV", js.Array(value :_*))
+    inline def setIVVarargs(value: Double*): Self = StObject.set(x, "iV", js.Array(value*))
     
     inline def setMessageId(value: Double): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     

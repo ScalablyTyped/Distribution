@@ -12,7 +12,7 @@ object ojmoduleElementUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createView(options: Require): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createView")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def createView(options: Require): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createView")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
-  inline def createViewModel(options: ViewModelPath): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createViewModel")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def createViewModel(options: ViewModelPath): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createViewModel")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 }

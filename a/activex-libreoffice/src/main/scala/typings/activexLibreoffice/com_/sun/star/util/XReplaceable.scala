@@ -39,7 +39,7 @@ object XReplaceable {
     findAll: XSearchDescriptor => XIndexAccess,
     findFirst: XSearchDescriptor => XInterface,
     findNext: (XInterface, XSearchDescriptor) => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     replaceAll: XSearchDescriptor => Double
   ): XReplaceable = {

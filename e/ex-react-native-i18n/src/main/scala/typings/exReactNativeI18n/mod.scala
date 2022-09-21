@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("ex-react-native-i18n", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with i18n
   /* static members */
@@ -48,11 +48,11 @@ object mod {
     @JSImport("ex-react-native-i18n", "default.translations")
     @js.native
     def translations: StringDictionary[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequireFunction */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequireFunction */ Any
       ] = js.native
     inline def translations_=(
       x: StringDictionary[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequireFunction */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeRequireFunction */ Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("translations")(x.asInstanceOf[js.Any])
   }

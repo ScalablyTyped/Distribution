@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * This object represents the font attributes (such as font name, font size, and color) for a chart object.
   *
-  * This object represents the font attributes (font name, font size, color, etc.) for a chart object.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait ChartFontLoadOptions extends StObject {
@@ -19,49 +19,49 @@ trait ChartFontLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the bold status of font.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var color: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the italic status of the font.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Font name (e.g., "Calibri")
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Size of the font (e.g., 11)
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var size: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Type of underline applied to the font. See `Excel.ChartUnderlineStyle` for details.
     *
-    * Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var underline: js.UndefOr[Boolean] = js.undefined

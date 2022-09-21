@@ -1,5 +1,6 @@
 package typings.fuzzyset
 
+import typings.fuzzyset.fuzzysetBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,42 +28,22 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  @js.native
   trait FuzzySet extends StObject {
     
-    def add(value: String): Boolean
+    def add(value: String): js.UndefOr[`false`] = js.native
     
-    def get(candidate: String): js.Array[js.Tuple2[Double, String]]
+    def get(candidate: String): (js.Array[js.Tuple2[Double, String]]) | Null = js.native
+    def get[DEFAULT](candidate: String, `def`: DEFAULT): (js.Array[js.Tuple2[Double, String]]) | DEFAULT = js.native
+    def get[DEFAULT](candidate: String, `def`: DEFAULT, minScore: Double): (js.Array[js.Tuple2[Double, String]]) | DEFAULT = js.native
+    def get[DEFAULT](candidate: String, `def`: Unit, minScore: Double): (js.Array[js.Tuple2[Double, String]]) | DEFAULT = js.native
+    @JSName("get")
+    def get_DEFAULT[DEFAULT](candidate: String): (js.Array[js.Tuple2[Double, String]]) | DEFAULT = js.native
     
-    def isEmpty(): Boolean
+    def isEmpty(): Boolean = js.native
     
-    def length(): Double
+    def length(): Double = js.native
     
-    def values(): js.Array[String]
-  }
-  object FuzzySet {
-    
-    inline def apply(
-      add: String => Boolean,
-      get: String => js.Array[js.Tuple2[Double, String]],
-      isEmpty: () => Boolean,
-      length: () => Double,
-      values: () => js.Array[String]
-    ): FuzzySet = {
-      val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), get = js.Any.fromFunction1(get), isEmpty = js.Any.fromFunction0(isEmpty), length = js.Any.fromFunction0(length), values = js.Any.fromFunction0(values))
-      __obj.asInstanceOf[FuzzySet]
-    }
-    
-    extension [Self <: FuzzySet](x: Self) {
-      
-      inline def setAdd(value: String => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
-      
-      inline def setGet(value: String => js.Array[js.Tuple2[Double, String]]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
-      
-      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
-      
-      inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
-      
-      inline def setValues(value: () => js.Array[String]): Self = StObject.set(x, "values", js.Any.fromFunction0(value))
-    }
+    def values(): js.Array[String] = js.native
   }
 }

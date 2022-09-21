@@ -11,14 +11,13 @@ object scrollScrollMod {
   
   @JSImport("react-fns/dist/Scroll/Scroll", "Scroll")
   @js.native
-  class Scroll protected ()
-    extends Component[ScrollConfig & SharedRenderProps[ScrollProps], ScrollProps, js.Any] {
+  open class Scroll protected () extends Component[ScrollConfig & SharedRenderProps[ScrollProps], ScrollProps, Any] {
     def this(props: ScrollConfig & SharedRenderProps[ScrollProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ScrollConfig & SharedRenderProps[ScrollProps], context: js.Any) = this()
+    def this(props: ScrollConfig & SharedRenderProps[ScrollProps], context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MScroll(): Unit = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("CopyCommand")
 @js.native
-class CopyCommand ()
+open class CopyCommand ()
   extends StObject
      with typings.devexpressWeb.CopyCommand {
   

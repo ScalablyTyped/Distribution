@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "tree-changes-hook" : "0.10.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "tree-changes-hook" : "0.10.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

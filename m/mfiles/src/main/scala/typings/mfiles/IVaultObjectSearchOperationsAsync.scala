@@ -20,13 +20,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     RelativePath: String,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectFileAndVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def FindFile(
     RelativePath: String,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectFileAndVersion, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def FindFile(
@@ -40,13 +40,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     RelativePath: String,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def FindFile(
     RelativePath: String,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def FindFile(
@@ -67,13 +67,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     RelativePath: String,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def FindObjectVersionAndProperties(
     RelativePath: String,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def FindObjectVersionAndProperties(
@@ -87,13 +87,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     RelativePath: String,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def FindObjectVersionAndProperties(
     RelativePath: String,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def FindObjectVersionAndProperties(
@@ -123,7 +123,7 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     FacetValuesMaxCount: Double,
     Flags: MFFacetSearchFlags,
     successCallback: js.Function1[/* result */ IStringData, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetFacetValues(
     SearchConditions: ISearchConditions,
@@ -131,7 +131,7 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     FacetValuesMaxCount: Double,
     Flags: MFFacetSearchFlags,
     successCallback: js.Function1[/* result */ IStringData, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetFacetValues(
@@ -149,7 +149,7 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     FacetValuesMaxCount: Double,
     Flags: MFFacetSearchFlags,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetFacetValues(
     SearchConditions: ISearchConditions,
@@ -157,7 +157,7 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     FacetValuesMaxCount: Double,
     Flags: MFFacetSearchFlags,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetFacetValues(
@@ -184,7 +184,7 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     FacetValuesMaxCount: Double,
     Flags: MFFacetSearchFlags,
     successCallback: js.Function1[/* result */ IStringData, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetFacetValuesByPath(
     RelativePath: String,
@@ -192,7 +192,7 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     FacetValuesMaxCount: Double,
     Flags: MFFacetSearchFlags,
     successCallback: js.Function1[/* result */ IStringData, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetFacetValuesByPath(
@@ -210,7 +210,7 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     FacetValuesMaxCount: Double,
     Flags: MFFacetSearchFlags,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetFacetValuesByPath(
     RelativePath: String,
@@ -218,7 +218,7 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     FacetValuesMaxCount: Double,
     Flags: MFFacetSearchFlags,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetFacetValuesByPath(
@@ -241,13 +241,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     SearchConditions: ISearchConditions,
     SearchFlags: MFSearchFlags,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectCountInSearch(
     SearchConditions: ISearchConditions,
     SearchFlags: MFSearchFlags,
     successCallback: js.Function1[/* result */ Double, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectCountInSearch(
@@ -261,13 +261,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     SearchConditions: ISearchConditions,
     SearchFlags: MFSearchFlags,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectCountInSearch(
     SearchConditions: ISearchConditions,
     SearchFlags: MFSearchFlags,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectCountInSearch(
@@ -290,14 +290,14 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     SortResults: Boolean,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectSearchResults, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectsInPath(
     RelativePath: String,
     SortResults: Boolean,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectSearchResults, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectsInPath(
@@ -313,14 +313,14 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     SortResults: Boolean,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetObjectsInPath(
     RelativePath: String,
     SortResults: Boolean,
     UpdateFromServer: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetObjectsInPath(
@@ -342,13 +342,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     Input: String,
     SearchCondition: ISearchCondition,
     successCallback: js.Function1[/* result */ IStrings, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetSearchHits(
     Input: String,
     SearchCondition: ISearchCondition,
     successCallback: js.Function1[/* result */ IStrings, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetSearchHits(
@@ -362,13 +362,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     Input: String,
     SearchCondition: ISearchCondition,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetSearchHits(
     Input: String,
     SearchCondition: ISearchCondition,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def GetSearchHits(
@@ -384,12 +384,12 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
   def IsObjectPathInMFiles(
     RelativePath: String,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def IsObjectPathInMFiles(
     RelativePath: String,
     successCallback: js.Function1[/* result */ Boolean, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def IsObjectPathInMFiles(
@@ -401,12 +401,12 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
   def IsObjectPathInMFiles(
     RelativePath: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def IsObjectPathInMFiles(
     RelativePath: String,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def IsObjectPathInMFiles(
@@ -426,13 +426,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     SearchCondition: ISearchCondition,
     SortResults: Boolean,
     successCallback: js.Function1[/* result */ IObjectSearchResults, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SearchForObjectsByCondition(
     SearchCondition: ISearchCondition,
     SortResults: Boolean,
     successCallback: js.Function1[/* result */ IObjectSearchResults, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SearchForObjectsByCondition(
@@ -446,13 +446,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     SearchCondition: ISearchCondition,
     SortResults: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SearchForObjectsByCondition(
     SearchCondition: ISearchCondition,
     SortResults: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SearchForObjectsByCondition(
@@ -475,14 +475,14 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     SearchFlags: MFSearchFlags,
     SortResults: Boolean,
     successCallback: js.Function1[/* result */ IObjectSearchResults, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SearchForObjectsByConditions(
     SearchConditions: ISearchConditions,
     SearchFlags: MFSearchFlags,
     SortResults: Boolean,
     successCallback: js.Function1[/* result */ IObjectSearchResults, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SearchForObjectsByConditions(
@@ -498,14 +498,14 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     SearchFlags: MFSearchFlags,
     SortResults: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SearchForObjectsByConditions(
     SearchConditions: ISearchConditions,
     SearchFlags: MFSearchFlags,
     SortResults: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SearchForObjectsByConditions(
@@ -539,7 +539,7 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     MaxResultCount: Double,
     SearchTimeoutInSeconds: Double,
     successCallback: js.Function1[/* result */ IObjectSearchResults, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SearchForObjectsByConditionsEx(
     SearchConditions: ISearchConditions,
@@ -548,7 +548,7 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     MaxResultCount: Double,
     SearchTimeoutInSeconds: Double,
     successCallback: js.Function1[/* result */ IObjectSearchResults, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SearchForObjectsByConditionsEx(
@@ -568,7 +568,7 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     MaxResultCount: Double,
     SearchTimeoutInSeconds: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SearchForObjectsByConditionsEx(
     SearchConditions: ISearchConditions,
@@ -577,7 +577,7 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     MaxResultCount: Double,
     SearchTimeoutInSeconds: Double,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SearchForObjectsByConditionsEx(
@@ -601,13 +601,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     SearchConditions: ISearchConditions,
     SortResults: Boolean,
     successCallback: js.Function1[/* result */ IXMLSearchResult, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SearchForObjectsByConditionsXML(
     SearchConditions: ISearchConditions,
     SortResults: Boolean,
     successCallback: js.Function1[/* result */ IXMLSearchResult, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SearchForObjectsByConditionsXML(
@@ -621,13 +621,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     SearchConditions: ISearchConditions,
     SortResults: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SearchForObjectsByConditionsXML(
     SearchConditions: ISearchConditions,
     SortResults: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SearchForObjectsByConditionsXML(
@@ -648,13 +648,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     ExportedSearchString: String,
     SortResults: Boolean,
     successCallback: js.Function1[/* result */ IObjectSearchResults, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SearchForObjectsByExportedSearchConditions(
     ExportedSearchString: String,
     SortResults: Boolean,
     successCallback: js.Function1[/* result */ IObjectSearchResults, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SearchForObjectsByExportedSearchConditions(
@@ -668,13 +668,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     ExportedSearchString: String,
     SortResults: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SearchForObjectsByExportedSearchConditions(
     ExportedSearchString: String,
     SortResults: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SearchForObjectsByExportedSearchConditions(
@@ -695,13 +695,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     SearchString: String,
     SortResults: Boolean,
     successCallback: js.Function1[/* result */ IXMLSearchResult, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SearchForObjectsByExportedSearchConditionsXML(
     SearchString: String,
     SortResults: Boolean,
     successCallback: js.Function1[/* result */ IXMLSearchResult, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SearchForObjectsByExportedSearchConditionsXML(
@@ -715,13 +715,13 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     SearchString: String,
     SortResults: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SearchForObjectsByExportedSearchConditionsXML(
     SearchString: String,
     SortResults: Boolean,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SearchForObjectsByExportedSearchConditionsXML(
@@ -744,14 +744,14 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     SortResults: Boolean,
     FullTextSearchFlags: MFFullTextSearchFlags,
     successCallback: js.Function1[/* result */ IObjectSearchResults, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SearchForObjectsByString(
     SearchString: String,
     SortResults: Boolean,
     FullTextSearchFlags: MFFullTextSearchFlags,
     successCallback: js.Function1[/* result */ IObjectSearchResults, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SearchForObjectsByString(
@@ -767,14 +767,14 @@ trait IVaultObjectSearchOperationsAsync extends StObject {
     SortResults: Boolean,
     FullTextSearchFlags: MFFullTextSearchFlags,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SearchForObjectsByString(
     SearchString: String,
     SortResults: Boolean,
     FullTextSearchFlags: MFFullTextSearchFlags,
     successCallback: Unit,
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
   def SearchForObjectsByString(

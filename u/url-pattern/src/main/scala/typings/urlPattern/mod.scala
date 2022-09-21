@@ -1,6 +1,5 @@
 package typings.urlPattern
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,22 +8,22 @@ object mod {
   
   @JSImport("url-pattern", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with UrlPattern {
     def this(pattern: String) = this()
-    def this(pattern: RegExp) = this()
+    def this(pattern: js.RegExp) = this()
     def this(pattern: String, options: UrlPatternOptions) = this()
-    def this(pattern: RegExp, groupNames: js.Array[String]) = this()
+    def this(pattern: js.RegExp, groupNames: js.Array[String]) = this()
   }
   
   @js.native
   trait UrlPattern extends StObject {
     
-    def `match`(url: String): js.Any = js.native
+    def `match`(url: String): Any = js.native
     
     def stringify(): String = js.native
-    def stringify(values: js.Any): String = js.native
+    def stringify(values: Any): String = js.native
   }
   
   trait UrlPatternOptions extends StObject {

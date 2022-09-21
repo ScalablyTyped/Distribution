@@ -14,7 +14,7 @@ trait SpotPlacement extends StObject {
   /**
     * The name of the placement group.
     */
-  var GroupName: js.UndefOr[String] = js.undefined
+  var GroupName: js.UndefOr[PlacementGroupName] = js.undefined
   
   /**
     * The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of dedicated runs on single-tenant hardware. The host tenancy is not supported for Spot Instances.
@@ -34,7 +34,7 @@ object SpotPlacement {
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    inline def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
     inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     

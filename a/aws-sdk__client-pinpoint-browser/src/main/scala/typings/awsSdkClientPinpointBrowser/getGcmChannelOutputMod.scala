@@ -8,5 +8,5 @@ object getGcmChannelOutputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/GetGcmChannelOutput", "GetGcmChannelOutput")
   @js.native
-  val GetGcmChannelOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetGcmChannelOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

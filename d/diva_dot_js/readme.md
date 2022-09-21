@@ -10,10 +10,10 @@ Diva.js
 | ------------------ | :-------------: |
 | Full name          | diva.js |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 1297 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 175.33333333333334 |
+| # stars            | 244.0 |
 
 ## Links
 - [Homepage](https://github.com/DDMAL/diva.js#readme)

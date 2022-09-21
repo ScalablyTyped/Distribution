@@ -29,6 +29,6 @@ object GoogleCloudAssuredworkloadsV1ListWorkloadsResponse {
     
     inline def setWorkloadsUndefined: Self = StObject.set(x, "workloads", js.undefined)
     
-    inline def setWorkloadsVarargs(value: GoogleCloudAssuredworkloadsV1Workload*): Self = StObject.set(x, "workloads", js.Array(value :_*))
+    inline def setWorkloadsVarargs(value: GoogleCloudAssuredworkloadsV1Workload*): Self = StObject.set(x, "workloads", js.Array(value*))
   }
 }

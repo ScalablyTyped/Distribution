@@ -10,10 +10,10 @@ The lodash method `_.minBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.minby |
 | Keywords           | lodash-modularized, minby |
-| # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 499051 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 61099.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

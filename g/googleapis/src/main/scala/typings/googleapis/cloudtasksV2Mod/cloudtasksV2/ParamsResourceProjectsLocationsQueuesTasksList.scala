@@ -1,9 +1,5 @@
 package typings.googleapis.cloudtasksV2Mod.cloudtasksV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,42 +9,22 @@ trait ParamsResourceProjectsLocationsQueuesTasksList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Requested page size. Fewer tasks than requested might be returned.  The
-    * maximum page size is 1000. If unspecified, the page size will be the
-    * maximum. Fewer tasks than requested might be returned, even if more tasks
-    * exist; use next_page_token in the response to determine if more tasks
-    * exist.
+    * Maximum page size. Fewer tasks than requested might be returned, even if more tasks exist; use next_page_token in the response to determine if more tasks exist. The maximum page size is 1000. If unspecified, the page size will be the maximum.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * A token identifying the page of results to return.  To request the first
-    * page results, page_token must be empty. To request the next page of
-    * results, page_token must be the value of next_page_token returned from
-    * the previous call to ListTasks method.  The page token is valid for only
-    * 2 hours.
+    * A token identifying the page of results to return. To request the first page results, page_token must be empty. To request the next page of results, page_token must be the value of next_page_token returned from the previous call to ListTasks method. The page token is valid for only 2 hours.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Required.  The queue name. For example:
-    * `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID`
+    * Required. The queue name. For example: `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID`
     */
   var parent: js.UndefOr[String] = js.undefined
   
   /**
-    * The response_view specifies which subset of the Task will be returned. By
-    * default response_view is BASIC; not all information is retrieved by
-    * default because some data, such as payloads, might be desirable to return
-    * only when needed because of its large size or because of the sensitivity
-    * of data that it contains.  Authorization for FULL requires
-    * `cloudtasks.tasks.fullView` [Google IAM](https://cloud.google.com/iam/)
-    * permission on the Task resource.
+    * The response_view specifies which subset of the Task will be returned. By default response_view is BASIC; not all information is retrieved by default because some data, such as payloads, might be desirable to return only when needed because of its large size or because of the sensitivity of data that it contains. Authorization for FULL requires `cloudtasks.tasks.fullView` [Google IAM](https://cloud.google.com/iam/) permission on the Task resource.
     */
   var responseView: js.UndefOr[String] = js.undefined
 }
@@ -60,10 +36,6 @@ object ParamsResourceProjectsLocationsQueuesTasksList {
   }
   
   extension [Self <: ParamsResourceProjectsLocationsQueuesTasksList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

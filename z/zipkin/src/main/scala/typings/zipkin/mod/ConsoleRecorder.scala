@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zipkin", "ConsoleRecorder")
 @js.native
-class ConsoleRecorder ()
+open class ConsoleRecorder ()
   extends StObject
      with Recorder {
   def this(logger: js.Function1[/* message */ String, Unit]) = this()

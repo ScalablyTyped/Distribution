@@ -10,6 +10,8 @@ import typings.rcMotion.interfaceMod.MotionPrepareEventHandler
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.react.mod.Ref
+import typings.std.DOMHighResTimeStamp
+import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -17,6 +19,110 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  /* Inlined std.AnimationEvent & {  deadline :boolean | undefined} */
+  @js.native
+  trait AnimationEventdeadlineboo
+    extends StObject
+       with MotionEvent {
+    
+    /* standard dom */
+    val AT_TARGET: Double = js.native
+    
+    /* standard dom */
+    val BUBBLING_PHASE: Double = js.native
+    
+    /* standard dom */
+    val CAPTURING_PHASE: Double = js.native
+    
+    /* standard dom */
+    val NONE: Double = js.native
+    
+    /* standard dom */
+    val animationName: String = js.native
+    
+    /** Returns true or false depending on how event was initialized. True if event goes through its target's ancestors in reverse tree order, and false otherwise. */
+    /* standard dom */
+    val bubbles: Boolean = js.native
+    
+    /* standard dom */
+    var cancelBubble: Boolean = js.native
+    
+    /** Returns true or false depending on how event was initialized. Its return value does not always carry meaning, but true can indicate that part of the operation during which event was dispatched, can be canceled by invoking the preventDefault() method. */
+    /* standard dom */
+    val cancelable: Boolean = js.native
+    
+    /** Returns true or false depending on how event was initialized. True if event invokes listeners past a ShadowRoot node that is the root of its target, and false otherwise. */
+    /* standard dom */
+    val composed: Boolean = js.native
+    
+    /** Returns the invocation target objects of event's path (objects on which listeners will be invoked), except for any nodes in shadow trees of which the shadow root's mode is "closed" that are not reachable from event's currentTarget. */
+    /* standard dom */
+    def composedPath(): js.Array[EventTarget] = js.native
+    
+    /** Returns the object whose event listener's callback is currently being invoked. */
+    /* standard dom */
+    val currentTarget: EventTarget | Null = js.native
+    
+    var deadline: js.UndefOr[Boolean] = js.native
+    
+    /** Returns true if preventDefault() was invoked successfully to indicate cancelation, and false otherwise. */
+    /* standard dom */
+    val defaultPrevented: Boolean = js.native
+    
+    /* standard dom */
+    val elapsedTime: Double = js.native
+    
+    /** Returns the event's phase, which is one of NONE, CAPTURING_PHASE, AT_TARGET, and BUBBLING_PHASE. */
+    /* standard dom */
+    val eventPhase: Double = js.native
+    
+    /** @deprecated */
+    /* standard dom */
+    def initEvent(`type`: String): Unit = js.native
+    def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
+    def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def initEvent(`type`: String, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    
+    /** Returns true if event was dispatched by the user agent, and false otherwise. */
+    /* standard dom */
+    val isTrusted: Boolean = js.native
+    
+    /** If invoked when the cancelable attribute value is true, and while executing a listener for the event with passive set to false, signals to the operation that caused event to be dispatched that it needs to be canceled. */
+    /* standard dom */
+    def preventDefault(): Unit = js.native
+    
+    /* standard dom */
+    val pseudoElement: String = js.native
+    
+    /** @deprecated */
+    /* standard dom */
+    var returnValue: Boolean = js.native
+    
+    /** @deprecated */
+    /* standard dom */
+    val srcElement: EventTarget | Null = js.native
+    
+    /** Invoking this method prevents event from reaching any registered event listeners after the current one finishes running and, when dispatched in a tree, also prevents event from reaching any other objects. */
+    /* standard dom */
+    def stopImmediatePropagation(): Unit = js.native
+    
+    /** When dispatched in a tree, invoking this method prevents event from reaching any objects other than the current object. */
+    /* standard dom */
+    def stopPropagation(): Unit = js.native
+    
+    /** Returns the object to which event is dispatched (its target). */
+    /* standard dom */
+    val target: EventTarget | Null = js.native
+    
+    /** Returns the event's timestamp as the number of milliseconds measured relative to the time origin. */
+    /* standard dom */
+    val timeStamp: DOMHighResTimeStamp = js.native
+    
+    /** Returns the type of event, e.g. "click", "hashchange", or "submit". */
+    /* standard dom */
+    val `type`: String = js.native
+  }
   
   trait Animationend extends StObject {
     
@@ -92,7 +198,7 @@ object anon {
   trait CSSMotionPropsrefRefanyun extends StObject {
     
     var children: js.UndefOr[
-        js.Function2[/* props */ Dictkey, /* ref */ js.Function1[/* node */ js.Any, Unit], ReactElement]
+        js.Function2[/* props */ Dictkey, /* ref */ js.Function1[/* node */ Any, Unit], ReactElement]
       ] = js.undefined
     
     /** @private Used by CSSMotionList. Do not use in your production. */
@@ -104,7 +210,7 @@ object anon {
       */
     var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var internalRef: js.UndefOr[Ref[js.Any]] = js.undefined
+    var internalRef: js.UndefOr[Ref[Any]] = js.undefined
     
     var leavedClassName: js.UndefOr[String] = js.undefined
     
@@ -147,7 +253,7 @@ object anon {
     /** This will always trigger after final visible changed. Even if no motion configured. */
     var onVisibleChanged: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var ref: js.UndefOr[Ref[js.Any]] = js.undefined
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
     
     /**
       * Remove element when motion end. This will not work when `forceRender` is set.
@@ -165,7 +271,7 @@ object anon {
     
     extension [Self <: CSSMotionPropsrefRefanyun](x: Self) {
       
-      inline def setChildren(value: (/* props */ Dictkey, /* ref */ js.Function1[/* node */ js.Any, Unit]) => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+      inline def setChildren(value: (/* props */ Dictkey, /* ref */ js.Function1[/* node */ Any, Unit]) => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -177,9 +283,9 @@ object anon {
       
       inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
-      inline def setInternalRef(value: Ref[js.Any]): Self = StObject.set(x, "internalRef", value.asInstanceOf[js.Any])
+      inline def setInternalRef(value: Ref[Any]): Self = StObject.set(x, "internalRef", value.asInstanceOf[js.Any])
       
-      inline def setInternalRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "internalRef", js.Any.fromFunction1(value))
+      inline def setInternalRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "internalRef", js.Any.fromFunction1(value))
       
       inline def setInternalRefNull: Self = StObject.set(x, "internalRef", null)
       
@@ -221,7 +327,7 @@ object anon {
       
       inline def setOnAppearEndUndefined: Self = StObject.set(x, "onAppearEnd", js.undefined)
       
-      inline def setOnAppearPrepare(value: /* element */ HTMLElement => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onAppearPrepare", js.Any.fromFunction1(value))
+      inline def setOnAppearPrepare(value: /* element */ HTMLElement => js.Promise[Any] | Unit): Self = StObject.set(x, "onAppearPrepare", js.Any.fromFunction1(value))
       
       inline def setOnAppearPrepareUndefined: Self = StObject.set(x, "onAppearPrepare", js.undefined)
       
@@ -237,7 +343,7 @@ object anon {
       
       inline def setOnEnterEndUndefined: Self = StObject.set(x, "onEnterEnd", js.undefined)
       
-      inline def setOnEnterPrepare(value: /* element */ HTMLElement => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onEnterPrepare", js.Any.fromFunction1(value))
+      inline def setOnEnterPrepare(value: /* element */ HTMLElement => js.Promise[Any] | Unit): Self = StObject.set(x, "onEnterPrepare", js.Any.fromFunction1(value))
       
       inline def setOnEnterPrepareUndefined: Self = StObject.set(x, "onEnterPrepare", js.undefined)
       
@@ -253,7 +359,7 @@ object anon {
       
       inline def setOnLeaveEndUndefined: Self = StObject.set(x, "onLeaveEnd", js.undefined)
       
-      inline def setOnLeavePrepare(value: /* element */ HTMLElement => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onLeavePrepare", js.Any.fromFunction1(value))
+      inline def setOnLeavePrepare(value: /* element */ HTMLElement => js.Promise[Any] | Unit): Self = StObject.set(x, "onLeavePrepare", js.Any.fromFunction1(value))
       
       inline def setOnLeavePrepareUndefined: Self = StObject.set(x, "onLeavePrepare", js.undefined)
       
@@ -265,9 +371,9 @@ object anon {
       
       inline def setOnVisibleChangedUndefined: Self = StObject.set(x, "onVisibleChanged", js.undefined)
       
-      inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setRefNull: Self = StObject.set(x, "ref", null)
       
@@ -283,28 +389,9 @@ object anon {
     }
   }
   
-  trait Deadline extends StObject {
-    
-    var deadline: js.UndefOr[Boolean] = js.undefined
-  }
-  object Deadline {
-    
-    inline def apply(): Deadline = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Deadline]
-    }
-    
-    extension [Self <: Deadline](x: Self) {
-      
-      inline def setDeadline(value: Boolean): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
-      
-      inline def setDeadlineUndefined: Self = StObject.set(x, "deadline", js.undefined)
-    }
-  }
-  
   trait Dictkey
     extends StObject
-       with /* name */ StringDictionary[js.Any] {
+       with /* name */ StringDictionary[Any] {
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -337,7 +424,7 @@ object anon {
   
   trait Dictname
     extends StObject
-       with /* name */ StringDictionary[js.Any] {
+       with /* name */ StringDictionary[Any] {
     
     var key: typings.react.mod.Key
   }
@@ -435,5 +522,109 @@ object anon {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
+  }
+  
+  /* Inlined std.TransitionEvent & {  deadline :boolean | undefined} */
+  @js.native
+  trait TransitionEventdeadlinebo
+    extends StObject
+       with MotionEvent {
+    
+    /* standard dom */
+    val AT_TARGET: Double = js.native
+    
+    /* standard dom */
+    val BUBBLING_PHASE: Double = js.native
+    
+    /* standard dom */
+    val CAPTURING_PHASE: Double = js.native
+    
+    /* standard dom */
+    val NONE: Double = js.native
+    
+    /** Returns true or false depending on how event was initialized. True if event goes through its target's ancestors in reverse tree order, and false otherwise. */
+    /* standard dom */
+    val bubbles: Boolean = js.native
+    
+    /* standard dom */
+    var cancelBubble: Boolean = js.native
+    
+    /** Returns true or false depending on how event was initialized. Its return value does not always carry meaning, but true can indicate that part of the operation during which event was dispatched, can be canceled by invoking the preventDefault() method. */
+    /* standard dom */
+    val cancelable: Boolean = js.native
+    
+    /** Returns true or false depending on how event was initialized. True if event invokes listeners past a ShadowRoot node that is the root of its target, and false otherwise. */
+    /* standard dom */
+    val composed: Boolean = js.native
+    
+    /** Returns the invocation target objects of event's path (objects on which listeners will be invoked), except for any nodes in shadow trees of which the shadow root's mode is "closed" that are not reachable from event's currentTarget. */
+    /* standard dom */
+    def composedPath(): js.Array[EventTarget] = js.native
+    
+    /** Returns the object whose event listener's callback is currently being invoked. */
+    /* standard dom */
+    val currentTarget: EventTarget | Null = js.native
+    
+    var deadline: js.UndefOr[Boolean] = js.native
+    
+    /** Returns true if preventDefault() was invoked successfully to indicate cancelation, and false otherwise. */
+    /* standard dom */
+    val defaultPrevented: Boolean = js.native
+    
+    /* standard dom */
+    val elapsedTime: Double = js.native
+    
+    /** Returns the event's phase, which is one of NONE, CAPTURING_PHASE, AT_TARGET, and BUBBLING_PHASE. */
+    /* standard dom */
+    val eventPhase: Double = js.native
+    
+    /** @deprecated */
+    /* standard dom */
+    def initEvent(`type`: String): Unit = js.native
+    def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
+    def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def initEvent(`type`: String, bubbles: Unit, cancelable: Boolean): Unit = js.native
+    
+    /** Returns true if event was dispatched by the user agent, and false otherwise. */
+    /* standard dom */
+    val isTrusted: Boolean = js.native
+    
+    /** If invoked when the cancelable attribute value is true, and while executing a listener for the event with passive set to false, signals to the operation that caused event to be dispatched that it needs to be canceled. */
+    /* standard dom */
+    def preventDefault(): Unit = js.native
+    
+    /* standard dom */
+    val propertyName: String = js.native
+    
+    /* standard dom */
+    val pseudoElement: String = js.native
+    
+    /** @deprecated */
+    /* standard dom */
+    var returnValue: Boolean = js.native
+    
+    /** @deprecated */
+    /* standard dom */
+    val srcElement: EventTarget | Null = js.native
+    
+    /** Invoking this method prevents event from reaching any registered event listeners after the current one finishes running and, when dispatched in a tree, also prevents event from reaching any other objects. */
+    /* standard dom */
+    def stopImmediatePropagation(): Unit = js.native
+    
+    /** When dispatched in a tree, invoking this method prevents event from reaching any objects other than the current object. */
+    /* standard dom */
+    def stopPropagation(): Unit = js.native
+    
+    /** Returns the object to which event is dispatched (its target). */
+    /* standard dom */
+    val target: EventTarget | Null = js.native
+    
+    /** Returns the event's timestamp as the number of milliseconds measured relative to the time origin. */
+    /* standard dom */
+    val timeStamp: DOMHighResTimeStamp = js.native
+    
+    /** Returns the type of event, e.g. "click", "hashchange", or "submit". */
+    /* standard dom */
+    val `type`: String = js.native
   }
 }

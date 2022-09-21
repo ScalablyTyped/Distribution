@@ -30,6 +30,11 @@ trait HierarchyGroup extends StObject {
     * The name of the hierarchy group.
     */
   var Name: js.UndefOr[HierarchyGroupName] = js.undefined
+  
+  /**
+    * The tags used to organize, track, or control access for this resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
+    */
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object HierarchyGroup {
   
@@ -59,5 +64,9 @@ object HierarchyGroup {
     inline def setName(value: HierarchyGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

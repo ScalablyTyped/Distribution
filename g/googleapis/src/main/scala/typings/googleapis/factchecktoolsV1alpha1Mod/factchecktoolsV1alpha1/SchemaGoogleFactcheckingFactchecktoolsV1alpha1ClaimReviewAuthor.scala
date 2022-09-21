@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about the claim review author.
-  */
 trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor extends StObject {
   
   /**
     * Corresponds to `ClaimReview.author.image`.
     */
-  var imageUrl: js.UndefOr[String] = js.undefined
+  var imageUrl: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Name of the organization that is publishing the fact check.&lt;br&gt;
-    * Corresponds to `ClaimReview.author.name`.
+    * Name of the organization that is publishing the fact check. Corresponds to `ClaimReview.author.name`.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor {
   
@@ -31,9 +27,13 @@ object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewAuthor {
     
     inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
+    inline def setImageUrlNull: Self = StObject.set(x, "imageUrl", null)
+    
     inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

@@ -1,7 +1,6 @@
 package typings.octokitRequest
 
 import typings.nodeFetch.mod.Response
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,5 +11,5 @@ object getBufferResponseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(response: Response): js.Promise[ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(response.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def default(response: Response): js.Promise[js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(response.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
 }

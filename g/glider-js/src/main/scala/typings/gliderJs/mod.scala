@@ -1,11 +1,11 @@
 package typings.gliderJs
 
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Shortcut
 import typings.gliderJs.anon.Next
+import typings.gliderJs.anon.Prev
 import typings.gliderJs.anon.Scroll
 import typings.gliderJs.anon.Slide
 import typings.gliderJs.anon.Type
+import typings.gliderJs.gliderJsBooleans.`false`
 import typings.gliderJs.gliderJsStrings.`glider-add`
 import typings.gliderJs.gliderJsStrings.`glider-animated`
 import typings.gliderJs.gliderJsStrings.`glider-destroy`
@@ -15,29 +15,42 @@ import typings.gliderJs.gliderJsStrings.`glider-remove`
 import typings.gliderJs.gliderJsStrings.`glider-slide-hidden`
 import typings.gliderJs.gliderJsStrings.`glider-slide-visible`
 import typings.gliderJs.gliderJsStrings.auto
-import typings.gliderJs.mod.global.Element
+import typings.gliderJs.gliderJsStrings.next
+import typings.gliderJs.gliderJsStrings.prev
+import typings.gliderJs.mod.global.HTMLDivElement
+import typings.gliderJs.mod.global.HTMLElement
 import typings.std.AddEventListenerOptions
+import typings.std.Element
 import typings.std.HTMLCollection
-import typings.std.HTMLDivElement
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  inline def apply[T /* <: HTMLElement */](element: T): Glider[T] = ^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any]).asInstanceOf[Glider[T]]
+  
   @JSImport("glider-js", JSImport.Namespace)
   @js.native
-  class ^[T /* <: HTMLElement */] protected ()
+  open class ^[T /* <: HTMLElement */] protected ()
     extends StObject
-       with Static[T] {
-    // tslint:disable-next-line no-misused-new
+       with Glider[T] {
+    def this(ref: T) = this()
     def this(ref: T, options: Options) = this()
   }
   @JSImport("glider-js", JSImport.Namespace)
   @js.native
-  val ^ : Static[HTMLDivElement] = js.native
+  val ^ : js.Any = js.native
+  
+  @js.native
+  trait Arrow
+    extends StObject
+       with HTMLElement {
+    
+    var _func: js.UndefOr[
+        js.Function2[/* glider */ Glider[HTMLDivElement], /* direction */ next | prev, `false`]
+      ] = js.native
+  }
   
   trait Breakpoint extends StObject {
     
@@ -61,6 +74,108 @@ object mod extends Shortcut {
   }
   
   type EasingFunction = js.Function5[/* x */ Double, /* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double, Double]
+  
+  @js.native
+  trait Glider[T /* <: HTMLElement */] extends StObject {
+    
+    /* private */ var _opt: Options = js.native
+    
+    /**
+      * Add an item to the list
+      * @param element HTMLElement
+      */
+    def addItem(element: HTMLElement): Unit = js.native
+    
+    var animate_id: Double = js.native
+    
+    var arrows: Prev = js.native
+    
+    var breakpoint: Double = js.native
+    
+    var containerWidth: Double = js.native
+    
+    /**
+      * Destroy Glider.js.
+      */
+    def destroy(): Unit = js.native
+    
+    var dots: HTMLElement = js.native
+    
+    var ele: T = js.native
+    
+    def init(): Unit = js.native
+    
+    var isDrag: Boolean = js.native
+    
+    var itemWidth: Double = js.native
+    
+    def mouse(): Unit = js.native
+    
+    var opt: Options = js.native
+    
+    var page: Double = js.native
+    
+    var preventClick: Boolean = js.native
+    
+    /**
+      * Force a refresh of Glider.js. If rebuildPaging is true, paging
+      * controls will force a rebuild as well. This arument must be true
+      * if any options affecting paging controls (dots/arrows) are
+      * modified.
+      * @param rebuildPaging boolean
+      */
+    def refresh(): Unit = js.native
+    def refresh(rebuildPaging: Boolean): Unit = js.native
+    
+    /**
+      * Remove an item from the list
+      * @param itemIndex number
+      */
+    def removeItem(itemIndex: Double): Unit = js.native
+    
+    def resize(): Unit = js.native
+    
+    /**
+      * Scroll to any slide or page. If second argument is explicitly
+      * true, then the first argument will refer to the page to scroll
+      * to, as opposed to the slide.
+      * @param slideIndexs string | number
+      * @param isActuallyDotIndex boolean
+      */
+    def scrollItem(slideIndex: String, isActuallyDotIndex: Boolean): Unit = js.native
+    def scrollItem(slideIndex: Double, isActuallyDotIndex: Boolean): Unit = js.native
+    
+    /**
+      * Scroll directly to supplied scroll position in pixels
+      * @param pixelOffset number
+      */
+    def scrollTo(pixelOffset: Double): Unit = js.native
+    
+    /**
+      * Overrides options set during initialization. If called when a
+      * breakpoint is active, the settings for the active breakpoint are
+      * updated. If second argument is true, the global settings are
+      * updated regardless of active breakpoint. Required for overriding
+      * `responsive` setting itself
+      * @param arguments Glider.Options
+      * @param global Boolean
+      */
+    def setOption(arguments: Options): Unit = js.native
+    def setOption(arguments: Options, global: Boolean): Unit = js.native
+    
+    var slide: Double = js.native
+    
+    var slides: HTMLCollection = js.native
+    
+    var track: HTMLElement = js.native
+    
+    var trackWidth: Double = js.native
+    
+    /**
+      * Force a refresh of Glider.js navigation controls
+      */
+    def updateControls(): Unit = js.native
+  }
   
   trait GliderEvent[T] extends StObject {
     
@@ -332,7 +447,7 @@ object mod extends Shortcut {
       
       inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
       
-      inline def setResponsiveVarargs(value: Breakpoint*): Self = StObject.set(x, "responsive", js.Array(value :_*))
+      inline def setResponsiveVarargs(value: Breakpoint*): Self = StObject.set(x, "responsive", js.Array(value*))
       
       inline def setRewind(value: Boolean): Self = StObject.set(x, "rewind", value.asInstanceOf[js.Any])
       
@@ -369,111 +484,127 @@ object mod extends Shortcut {
   // from JS to TS
   type Selector = Element | String
   
-  @js.native
-  trait Static[T /* <: HTMLElement */]
-    extends StObject
-       with // tslint:disable-next-line no-misused-new
-  Instantiable2[/* ref */ HTMLElement, /* options */ Options, Static[HTMLElement]] {
-    
-    /**
-      * Add an item to the list
-      * @param element HTMLElement
-      */
-    def addItem(element: HTMLElement): Unit = js.native
-    
-    var animate_id: Double = js.native
-    
-    var arrows: js.Object = js.native
-    
-    var breakpoint: Double = js.native
-    
-    var containerWidth: Double = js.native
-    
-    /**
-      * Destroy Glider.js.
-      */
-    def destroy(): Unit = js.native
-    
-    var dots: HTMLElement = js.native
-    
-    var ele: T = js.native
-    
-    var isDrag: Boolean = js.native
-    
-    var itemWidth: Double = js.native
-    
-    var opt: Options = js.native
-    
-    var page: Double = js.native
-    
-    var preventClick: Boolean = js.native
-    
-    /**
-      * Force a refresh of Glider.js. If rebuildPaging is true, paging
-      * controls will force a rebuild as well. This arument must be true
-      * if any options affecting paging controls (dots/arrows) are
-      * modified.
-      * @param rebuildPaging boolean
-      */
-    def refresh(rebuildPaging: Boolean): Unit = js.native
-    
-    /**
-      * Remove an item from the list
-      * @param itemIndex number
-      */
-    def removeItem(itemIndex: Double): Unit = js.native
-    
-    /**
-      * Scroll to any slide or page. If second argument is explicitly
-      * true, then the first argument will refer to the page to scroll
-      * to, as opposed to the slide.
-      * @param slideIndexs string | number
-      * @param isActuallyDotIndex boolean
-      */
-    def scrollItem(slideIndex: String, isActuallyDotIndex: Boolean): Unit = js.native
-    def scrollItem(slideIndex: Double, isActuallyDotIndex: Boolean): Unit = js.native
-    
-    /**
-      * Scroll directly to supplied scroll position in pixels
-      * @param pixelOffset number
-      */
-    def scrollTo(pixelOffset: Double): Unit = js.native
-    
-    /**
-      * Overrides options set during initialization. If called when a
-      * breakpoint is active, the settings for the active breakpoint are
-      * updated. If second argument is true, the global settings are
-      * updated regardless of active breakpoint. Required for overriding
-      * `responsive` setting itself
-      * @param arguments Glider.Options
-      * @param global Boolean
-      */
-    def setOption(arguments: Options): Unit = js.native
-    def setOption(arguments: Options, global: Boolean): Unit = js.native
-    
-    var slide: Double = js.native
-    
-    var slides: HTMLCollection = js.native
-    
-    var track: HTMLElement = js.native
-    
-    var trackWidth: Double = js.native
-    
-    /**
-      * Force a refresh of Glider.js navigation controls
-      */
-    def updateControls(): Unit = js.native
-  }
-  
-  type _To = Static[HTMLDivElement]
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Static[HTMLDivElement] = ^
-  
   object global {
     
     @js.native
-    trait Element extends StObject {
+    trait HTMLDivElement extends StObject {
+      
+      @JSName("addEventListener")
+      def addEventListener_glideradd(`type`: `glider-add`, listener: js.Function1[/* event */ GliderEvent[Scroll], Unit]): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_glideradd(
+        `type`: `glider-add`,
+        listener: js.Function1[/* event */ GliderEvent[Scroll], Unit],
+        options: Boolean
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_glideradd(
+        `type`: `glider-add`,
+        listener: js.Function1[/* event */ GliderEvent[Scroll], Unit],
+        options: AddEventListenerOptions
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_glideranimated(`type`: `glider-animated`, listener: js.Function1[/* event */ GliderEvent[Type], Unit]): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_glideranimated(
+        `type`: `glider-animated`,
+        listener: js.Function1[/* event */ GliderEvent[Type], Unit],
+        options: Boolean
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_glideranimated(
+        `type`: `glider-animated`,
+        listener: js.Function1[/* event */ GliderEvent[Type], Unit],
+        options: AddEventListenerOptions
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderdestroy(`type`: `glider-destroy`, listener: js.Function1[/* event */ GliderEvent[Unit], Unit]): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderdestroy(
+        `type`: `glider-destroy`,
+        listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+        options: Boolean
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderdestroy(
+        `type`: `glider-destroy`,
+        listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+        options: AddEventListenerOptions
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderloaded(`type`: `glider-loaded`, listener: js.Function1[/* event */ GliderEvent[Unit], Unit]): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderloaded(
+        `type`: `glider-loaded`,
+        listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+        options: Boolean
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderloaded(
+        `type`: `glider-loaded`,
+        listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+        options: AddEventListenerOptions
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderrefresh(`type`: `glider-refresh`, listener: js.Function1[/* event */ GliderEvent[Unit], Unit]): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderrefresh(
+        `type`: `glider-refresh`,
+        listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+        options: Boolean
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderrefresh(
+        `type`: `glider-refresh`,
+        listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+        options: AddEventListenerOptions
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderremove(`type`: `glider-remove`, listener: js.Function1[/* event */ GliderEvent[Unit], Unit]): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderremove(
+        `type`: `glider-remove`,
+        listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+        options: Boolean
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderremove(
+        `type`: `glider-remove`,
+        listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+        options: AddEventListenerOptions
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderslidehidden(`type`: `glider-slide-hidden`, listener: js.Function1[/* event */ GliderEvent[Slide], Unit]): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderslidehidden(
+        `type`: `glider-slide-hidden`,
+        listener: js.Function1[/* event */ GliderEvent[Slide], Unit],
+        options: Boolean
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderslidehidden(
+        `type`: `glider-slide-hidden`,
+        listener: js.Function1[/* event */ GliderEvent[Slide], Unit],
+        options: AddEventListenerOptions
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderslidevisible(`type`: `glider-slide-visible`, listener: js.Function1[/* event */ GliderEvent[Slide], Unit]): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderslidevisible(
+        `type`: `glider-slide-visible`,
+        listener: js.Function1[/* event */ GliderEvent[Slide], Unit],
+        options: Boolean
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_gliderslidevisible(
+        `type`: `glider-slide-visible`,
+        listener: js.Function1[/* event */ GliderEvent[Slide], Unit],
+        options: AddEventListenerOptions
+      ): Unit = js.native
+    }
+    
+    @js.native
+    trait HTMLElement extends StObject {
       
       @JSName("addEventListener")
       def addEventListener_glideradd(`type`: `glider-add`, listener: js.Function1[/* event */ GliderEvent[Scroll], Unit]): Unit = js.native

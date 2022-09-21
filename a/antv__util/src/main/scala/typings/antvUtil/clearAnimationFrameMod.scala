@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object clearAnimationFrameMod {
   
-  @JSImport("@antv/util/lib/clear-animation-frame", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/clear-animation-frame", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

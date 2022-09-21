@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SpyData extends StObject {
   
-  var args: js.Array[js.Any]
+  var args: js.Array[Any]
   
   var method: String | Double
   
@@ -16,7 +16,7 @@ trait SpyData extends StObject {
 }
 object SpyData {
   
-  inline def apply(args: js.Array[js.Any], method: String | Double, `type`: Double): SpyData = {
+  inline def apply(args: js.Array[Any], method: String | Double, `type`: Double): SpyData = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpyData]
@@ -24,9 +24,9 @@ object SpyData {
   
   extension [Self <: SpyData](x: Self) {
     
-    inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setMethod(value: String | Double): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

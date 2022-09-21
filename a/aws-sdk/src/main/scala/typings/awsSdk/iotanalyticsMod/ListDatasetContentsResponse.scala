@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDatasetContentsResponse extends StObject {
   
   /**
-    * Summary information about data set contents that have been created.
+    * Summary information about dataset contents that have been created.
     */
   var datasetContentSummaries: js.UndefOr[DatasetContentSummaries] = js.undefined
   
@@ -29,7 +29,7 @@ object ListDatasetContentsResponse {
     
     inline def setDatasetContentSummariesUndefined: Self = StObject.set(x, "datasetContentSummaries", js.undefined)
     
-    inline def setDatasetContentSummariesVarargs(value: DatasetContentSummary*): Self = StObject.set(x, "datasetContentSummaries", js.Array(value :_*))
+    inline def setDatasetContentSummariesVarargs(value: DatasetContentSummary*): Self = StObject.set(x, "datasetContentSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

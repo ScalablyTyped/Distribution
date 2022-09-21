@@ -10,7 +10,7 @@ object bufferUtilsMod {
   
   @JSImport("wonder.js/dist/es2015/utils/BufferUtils", "BufferUtils")
   @js.native
-  class BufferUtils () extends StObject
+  open class BufferUtils () extends StObject
   /* static members */
   object BufferUtils {
     
@@ -18,6 +18,6 @@ object bufferUtilsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def convertArrayToArrayBuffer(`type`: EVariableType, value: js.Array[js.Any]): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convertArrayToArrayBuffer")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+    inline def convertArrayToArrayBuffer(`type`: EVariableType, value: js.Array[Any]): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convertArrayToArrayBuffer")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
   }
 }

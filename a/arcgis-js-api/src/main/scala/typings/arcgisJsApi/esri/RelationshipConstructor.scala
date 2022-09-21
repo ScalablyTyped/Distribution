@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RelationshipConstructor
   extends StObject
-     with Instantiable0[Relationship_]
+     with /**
+  * Describes a [layer's](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) relationship with another layer or table.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html)
+  */
+Instantiable0[Relationship_]
      with Instantiable1[/* properties */ RelationshipProperties, Relationship_]

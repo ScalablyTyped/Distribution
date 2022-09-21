@@ -6,7 +6,6 @@ import typings.moment.mod.MomentInput
 import typings.moment.mod.unitOfTime.Diff
 import typings.momentRange.mod.DateRange
 import typings.momentRange.mod.MomentRangeStaticMethods
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -158,7 +157,7 @@ object anon {
   trait MomentRangeNoneinpundefin extends StObject {
     
     def apply(): Moment = js.native
-    def apply(args: js.Any*): MomentRangeStaticMethods & Moment = js.native
+    def apply(args: Any*): MomentRangeStaticMethods & Moment = js.native
     def apply(inp: Unit, format: Unit, language: String): Moment = js.native
     def apply(inp: Unit, format: Unit, language: String, strict: Boolean): Moment = js.native
     def apply(inp: Unit, format: Unit, language: Unit, strict: Boolean): Moment = js.native
@@ -186,20 +185,20 @@ object anon {
     
     def range(): DateRange = js.native
     def range(range: String): DateRange = js.native
-    def range(range: js.Tuple2[Date | Moment, Date | Moment]): DateRange = js.native
+    def range(range: js.Tuple2[js.Date | Moment, js.Date | Moment]): DateRange = js.native
+    def range(start: js.Date, end: js.Date): DateRange = js.native
+    def range(start: js.Date, end: Moment): DateRange = js.native
+    def range(start: Moment, end: js.Date): DateRange = js.native
     def range(start: Moment, end: Moment): DateRange = js.native
-    def range(start: Moment, end: Date): DateRange = js.native
-    def range(start: Date, end: Moment): DateRange = js.native
-    def range(start: Date, end: Date): DateRange = js.native
     
     def rangeFromISOString(isoTimeInterval: String): DateRange = js.native
     
     def rangeFromInterval(interval: Diff): DateRange = js.native
     def rangeFromInterval(interval: Diff, count: Double): DateRange = js.native
+    def rangeFromInterval(interval: Diff, count: Double, date: js.Date): DateRange = js.native
     def rangeFromInterval(interval: Diff, count: Double, date: Moment): DateRange = js.native
-    def rangeFromInterval(interval: Diff, count: Double, date: Date): DateRange = js.native
+    def rangeFromInterval(interval: Diff, count: Unit, date: js.Date): DateRange = js.native
     def rangeFromInterval(interval: Diff, count: Unit, date: Moment): DateRange = js.native
-    def rangeFromInterval(interval: Diff, count: Unit, date: Date): DateRange = js.native
   }
   
   trait Step extends StObject {

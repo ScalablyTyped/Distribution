@@ -16,23 +16,23 @@ trait DataAccessPage extends StObject {
   
   var ConnectionString: String
   
-  val CurrentSelection: js.Any
+  val CurrentSelection: Any
   
   val CurrentView: Double
   
-  val Document: js.Any
+  val Document: Any
   
-  val FieldListConnection: js.Any
+  val FieldListConnection: Any
   
   def IsMemberSafe(dispid: Double): Boolean
   
-  val MSODSC: js.Any
+  val MSODSC: Any
   
   val MailEnvelope: MsoEnvelope
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   var RemovePersonalInformation: Boolean
   
@@ -55,15 +55,15 @@ object DataAccessPage {
     Application: Application,
     ApplyTheme: String => Unit,
     ConnectionString: String,
-    CurrentSelection: js.Any,
+    CurrentSelection: Any,
     CurrentView: Double,
-    Document: js.Any,
-    FieldListConnection: js.Any,
+    Document: Any,
+    FieldListConnection: Any,
     IsMemberSafe: Double => Boolean,
-    MSODSC: js.Any,
+    MSODSC: Any,
     MailEnvelope: MsoEnvelope,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     RemovePersonalInformation: Boolean,
     Tag: String,
     Visible: Boolean,
@@ -87,23 +87,23 @@ object DataAccessPage {
     
     inline def setConnectionString(value: String): Self = StObject.set(x, "ConnectionString", value.asInstanceOf[js.Any])
     
-    inline def setCurrentSelection(value: js.Any): Self = StObject.set(x, "CurrentSelection", value.asInstanceOf[js.Any])
+    inline def setCurrentSelection(value: Any): Self = StObject.set(x, "CurrentSelection", value.asInstanceOf[js.Any])
     
     inline def setCurrentView(value: Double): Self = StObject.set(x, "CurrentView", value.asInstanceOf[js.Any])
     
-    inline def setDocument(value: js.Any): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Any): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
-    inline def setFieldListConnection(value: js.Any): Self = StObject.set(x, "FieldListConnection", value.asInstanceOf[js.Any])
+    inline def setFieldListConnection(value: Any): Self = StObject.set(x, "FieldListConnection", value.asInstanceOf[js.Any])
     
     inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    inline def setMSODSC(value: js.Any): Self = StObject.set(x, "MSODSC", value.asInstanceOf[js.Any])
+    inline def setMSODSC(value: Any): Self = StObject.set(x, "MSODSC", value.asInstanceOf[js.Any])
     
     inline def setMailEnvelope(value: MsoEnvelope): Self = StObject.set(x, "MailEnvelope", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRemovePersonalInformation(value: Boolean): Self = StObject.set(x, "RemovePersonalInformation", value.asInstanceOf[js.Any])
     

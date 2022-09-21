@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object parameterStrings {
   
   @js.native
+  sealed trait ParameterRules extends StObject
+  inline def ParameterRules: ParameterRules = "ParameterRules".asInstanceOf[ParameterRules]
+  
+  @js.native
   sealed trait array
     extends StObject
        with _ParameterRuleAbbr

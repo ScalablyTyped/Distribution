@@ -18,15 +18,15 @@ object quantitativeScaleMod {
     *
     * @constructor
     */
-  class QuantitativeScale[D] ()
+  open class QuantitativeScale[D] ()
     extends Scale[D, Double]
        with ITransformableScale {
     
     /* protected */ def _defaultExtent(): js.Array[D] = js.native
     
-    /* private */ var _domainMax: js.Any = js.native
+    /* private */ var _domainMax: Any = js.native
     
-    /* private */ var _domainMin: js.Any = js.native
+    /* private */ var _domainMin: Any = js.native
     
     /* protected */ def _expandSingleValueDomain(singleValueDomain: js.Array[D]): js.Array[D] = js.native
     
@@ -40,15 +40,15 @@ object quantitativeScaleMod {
     /* protected */ def _niceDomain(domain: js.Array[D]): js.Array[D] = js.native
     /* protected */ def _niceDomain(domain: js.Array[D], count: Double): js.Array[D] = js.native
     
-    /* private */ def _padDomain(domain: js.Any): js.Any = js.native
+    /* private */ var _padDomain: Any = js.native
     
-    /* private */ var _padProportion: js.Any = js.native
+    /* private */ var _padProportion: Any = js.native
     
-    /* private */ var _paddingExceptionsProviders: js.Any = js.native
+    /* private */ var _paddingExceptionsProviders: Any = js.native
     
-    /* private */ var _snappingDomainEnabled: js.Any = js.native
+    /* private */ var _snappingDomainEnabled: Any = js.native
     
-    /* private */ var _tickGenerator: js.Any = js.native
+    /* private */ var _tickGenerator: Any = js.native
     
     /**
       * Adds a padding exception provider.

@@ -7,16 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaOrderMerchantProvidedAnnotation extends StObject {
   
   /**
-    * Key for additional merchant provided (as key-value pairs) annotation
-    * about the line item.
+    * Key for additional merchant provided (as key-value pairs) annotation about the line item.
     */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Value for additional merchant provided (as key-value pairs) annotation
-    * about the line item.
+    * Value for additional merchant provided (as key-value pairs) annotation about the line item.
     */
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrderMerchantProvidedAnnotation {
   
@@ -29,9 +27,13 @@ object SchemaOrderMerchantProvidedAnnotation {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
+    
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

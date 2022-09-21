@@ -4,7 +4,6 @@ import typings.popperjsCore.enumsMod.Boundary
 import typings.popperjsCore.enumsMod.RootBoundary
 import typings.popperjsCore.preventOverflowMod.TetherOffset
 import typings.popperjsCore.typesMod.Padding
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +48,7 @@ object PartialOptionsAltAxis {
     
     inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
-    inline def setBoundaryVarargs(value: HTMLElement*): Self = StObject.set(x, "boundary", js.Array(value :_*))
+    inline def setBoundaryVarargs(value: typings.std.Element*): Self = StObject.set(x, "boundary", js.Array(value*))
     
     inline def setMainAxis(value: Boolean): Self = StObject.set(x, "mainAxis", value.asInstanceOf[js.Any])
     
@@ -67,7 +66,7 @@ object PartialOptionsAltAxis {
     
     inline def setTetherOffset(value: TetherOffset): Self = StObject.set(x, "tetherOffset", value.asInstanceOf[js.Any])
     
-    inline def setTetherOffsetFunction1(value: /* arg0 */ Placement => Double): Self = StObject.set(x, "tetherOffset", js.Any.fromFunction1(value))
+    inline def setTetherOffsetFunction1(value: /* arg0 */ Placement => Double | AltAxis): Self = StObject.set(x, "tetherOffset", js.Any.fromFunction1(value))
     
     inline def setTetherOffsetUndefined: Self = StObject.set(x, "tetherOffset", js.undefined)
     

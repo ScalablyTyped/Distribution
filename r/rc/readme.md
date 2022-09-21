@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 hardwired configuration loader
@@ -10,10 +10,10 @@ hardwired configuration loader
 | ------------------ | :-------------: |
 | Full name          | rc |
 | Keywords           | config, rc, unix, defaults |
-| # releases         | 0 |
-| # dependents       | 1037 |
-| # downloads        | 487959009 |
-| # stars            | 78 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 5.9197735666666664E7 |
+| # stars            | 969.0 |
 
 ## Links
 - [Homepage](https://github.com/dominictarr/rc#readme)

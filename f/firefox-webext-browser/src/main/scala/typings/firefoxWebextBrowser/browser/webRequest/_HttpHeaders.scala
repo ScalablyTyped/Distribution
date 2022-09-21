@@ -30,7 +30,7 @@ object _HttpHeaders {
     
     inline def setBinaryValueUndefined: Self = StObject.set(x, "binaryValue", js.undefined)
     
-    inline def setBinaryValueVarargs(value: Double*): Self = StObject.set(x, "binaryValue", js.Array(value :_*))
+    inline def setBinaryValueVarargs(value: Double*): Self = StObject.set(x, "binaryValue", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

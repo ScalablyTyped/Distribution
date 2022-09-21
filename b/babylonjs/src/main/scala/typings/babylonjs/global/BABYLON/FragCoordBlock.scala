@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.FragCoordBlock")
 @js.native
-class FragCoordBlock protected ()
+open class FragCoordBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.FragCoordBlock {
   /**

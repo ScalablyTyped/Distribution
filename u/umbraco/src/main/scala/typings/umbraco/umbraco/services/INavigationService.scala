@@ -50,7 +50,7 @@ trait INavigationService extends StObject {
   def changeSection(sectionAlias: String, force: Boolean): Unit
   
   /** Executes a given menu action */
-  def executeMenuAction(action: js.Any, node: js.Any, section: js.Any): Unit
+  def executeMenuAction(action: Any, node: Any, section: Any): Unit
   
   /**
     * @ngdoc method
@@ -116,7 +116,7 @@ trait INavigationService extends StObject {
   def loadLegacyIFrame(source: String): Unit
   
   //TODO: This should return a promise
-  def reloadNode(node: js.Any): Unit
+  def reloadNode(node: Any): Unit
   
   //TODO: This should return a promise
   def reloadSection(sectionAlias: String): Unit
@@ -125,7 +125,7 @@ trait INavigationService extends StObject {
     Called to assign the main tree event handler - this is called by the navigation controller.
     TODO: Potentially another dev could call this which would kind of mung the whole app so potentially there's a better way.
     */
-  def setupTreeEvents(treeEventHandler: js.Any): Unit
+  def setupTreeEvents(treeEventHandler: Any): Unit
   
   /**
     * @ngdoc method
@@ -171,7 +171,7 @@ trait INavigationService extends StObject {
     *
     * @param {Event} event the click event triggering the method, passed from the DOM element
     */
-  def showMenu(event: Event, args: js.Any*): Unit
+  def showMenu(event: Event, args: Any*): Unit
   
   /**
     * @ngdoc method
@@ -227,7 +227,7 @@ trait INavigationService extends StObject {
     * @param {Boolean} args.forceReload optional, specifies whether to force reload the node data from the server even if it already exists in the tree currently
     * @param {Boolean} args.activate optional, specifies whether to set the synced node to be the active node, this will default to true if not specified
     */
-  def syncTree(args: ISyncTreeArgs): js.Any
+  def syncTree(args: ISyncTreeArgs): Any
 }
 object INavigationService {
   
@@ -235,7 +235,7 @@ object INavigationService {
     _setActiveTreeType: (String, Boolean) => Unit,
     _syncPath: (js.Array[String], Boolean) => Unit,
     changeSection: (String, Boolean) => Unit,
-    executeMenuAction: (js.Any, js.Any, js.Any) => Unit,
+    executeMenuAction: (Any, Any, Any) => Unit,
     hideDialog: Boolean => Unit,
     hideMenu: () => Unit,
     hideNavigation: () => Unit,
@@ -243,17 +243,17 @@ object INavigationService {
     hideTray: () => Unit,
     hideTree: () => Unit,
     loadLegacyIFrame: String => Unit,
-    reloadNode: js.Any => Unit,
+    reloadNode: Any => Unit,
     reloadSection: String => Unit,
-    setupTreeEvents: js.Any => Unit,
+    setupTreeEvents: Any => Unit,
     showDialog: IShowDialogArgs => Unit,
     showHelpDialog: () => Unit,
-    showMenu: (Event, /* repeated */ js.Any) => Unit,
+    showMenu: (Event, /* repeated */ Any) => Unit,
     showSearch: () => Unit,
     showTray: () => Unit,
     showTree: (String, ISyncTreeArgs) => Unit,
     showUserDialog: () => Unit,
-    syncTree: ISyncTreeArgs => js.Any
+    syncTree: ISyncTreeArgs => Any
   ): INavigationService = {
     val __obj = js.Dynamic.literal(_setActiveTreeType = js.Any.fromFunction2(_setActiveTreeType), _syncPath = js.Any.fromFunction2(_syncPath), changeSection = js.Any.fromFunction2(changeSection), executeMenuAction = js.Any.fromFunction3(executeMenuAction), hideDialog = js.Any.fromFunction1(hideDialog), hideMenu = js.Any.fromFunction0(hideMenu), hideNavigation = js.Any.fromFunction0(hideNavigation), hideSearch = js.Any.fromFunction0(hideSearch), hideTray = js.Any.fromFunction0(hideTray), hideTree = js.Any.fromFunction0(hideTree), loadLegacyIFrame = js.Any.fromFunction1(loadLegacyIFrame), reloadNode = js.Any.fromFunction1(reloadNode), reloadSection = js.Any.fromFunction1(reloadSection), setupTreeEvents = js.Any.fromFunction1(setupTreeEvents), showDialog = js.Any.fromFunction1(showDialog), showHelpDialog = js.Any.fromFunction0(showHelpDialog), showMenu = js.Any.fromFunction2(showMenu), showSearch = js.Any.fromFunction0(showSearch), showTray = js.Any.fromFunction0(showTray), showTree = js.Any.fromFunction2(showTree), showUserDialog = js.Any.fromFunction0(showUserDialog), syncTree = js.Any.fromFunction1(syncTree))
     __obj.asInstanceOf[INavigationService]
@@ -263,7 +263,7 @@ object INavigationService {
     
     inline def setChangeSection(value: (String, Boolean) => Unit): Self = StObject.set(x, "changeSection", js.Any.fromFunction2(value))
     
-    inline def setExecuteMenuAction(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "executeMenuAction", js.Any.fromFunction3(value))
+    inline def setExecuteMenuAction(value: (Any, Any, Any) => Unit): Self = StObject.set(x, "executeMenuAction", js.Any.fromFunction3(value))
     
     inline def setHideDialog(value: Boolean => Unit): Self = StObject.set(x, "hideDialog", js.Any.fromFunction1(value))
     
@@ -279,17 +279,17 @@ object INavigationService {
     
     inline def setLoadLegacyIFrame(value: String => Unit): Self = StObject.set(x, "loadLegacyIFrame", js.Any.fromFunction1(value))
     
-    inline def setReloadNode(value: js.Any => Unit): Self = StObject.set(x, "reloadNode", js.Any.fromFunction1(value))
+    inline def setReloadNode(value: Any => Unit): Self = StObject.set(x, "reloadNode", js.Any.fromFunction1(value))
     
     inline def setReloadSection(value: String => Unit): Self = StObject.set(x, "reloadSection", js.Any.fromFunction1(value))
     
-    inline def setSetupTreeEvents(value: js.Any => Unit): Self = StObject.set(x, "setupTreeEvents", js.Any.fromFunction1(value))
+    inline def setSetupTreeEvents(value: Any => Unit): Self = StObject.set(x, "setupTreeEvents", js.Any.fromFunction1(value))
     
     inline def setShowDialog(value: IShowDialogArgs => Unit): Self = StObject.set(x, "showDialog", js.Any.fromFunction1(value))
     
     inline def setShowHelpDialog(value: () => Unit): Self = StObject.set(x, "showHelpDialog", js.Any.fromFunction0(value))
     
-    inline def setShowMenu(value: (Event, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "showMenu", js.Any.fromFunction2(value))
+    inline def setShowMenu(value: (Event, /* repeated */ Any) => Unit): Self = StObject.set(x, "showMenu", js.Any.fromFunction2(value))
     
     inline def setShowSearch(value: () => Unit): Self = StObject.set(x, "showSearch", js.Any.fromFunction0(value))
     
@@ -299,7 +299,7 @@ object INavigationService {
     
     inline def setShowUserDialog(value: () => Unit): Self = StObject.set(x, "showUserDialog", js.Any.fromFunction0(value))
     
-    inline def setSyncTree(value: ISyncTreeArgs => js.Any): Self = StObject.set(x, "syncTree", js.Any.fromFunction1(value))
+    inline def setSyncTree(value: ISyncTreeArgs => Any): Self = StObject.set(x, "syncTree", js.Any.fromFunction1(value))
     
     inline def set_setActiveTreeType(value: (String, Boolean) => Unit): Self = StObject.set(x, "_setActiveTreeType", js.Any.fromFunction2(value))
     

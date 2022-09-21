@@ -17,7 +17,7 @@ trait Endpoint extends StObject {
   var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
-    * The settings in JSON format for the DMS transfer type of source endpoint.  Possible settings include the following:    ServiceAccessRoleArn - The IAM role that has permission to access the Amazon S3 bucket.    BucketName - The name of the S3 bucket to use.    CompressionType - An optional parameter to use GZIP to compress the target files. To use GZIP, set this value to NONE (the default). To keep the files uncompressed, don't use this value.   Shorthand syntax for these settings is as follows: ServiceAccessRoleArn=string,BucketName=string,CompressionType=string  JSON syntax for these settings is as follows: { "ServiceAccessRoleArn": "string", "BucketName": "string", "CompressionType": "none"|"gzip" }  
+    * The settings for the DMS Transfer type source. For more information, see the DmsTransferSettings structure. 
     */
   var DmsTransferSettings: js.UndefOr[typings.awsSdk.dmsMod.DmsTransferSettings] = js.undefined
   
@@ -29,7 +29,7 @@ trait Endpoint extends StObject {
   var DynamoDbSettings: js.UndefOr[typings.awsSdk.dmsMod.DynamoDbSettings] = js.undefined
   
   /**
-    * The settings for the Elasticsearch source endpoint. For more information, see the ElasticsearchSettings structure.
+    * The settings for the OpenSearch source endpoint. For more information, see the ElasticsearchSettings structure.
     */
   var ElasticsearchSettings: js.UndefOr[typings.awsSdk.dmsMod.ElasticsearchSettings] = js.undefined
   
@@ -54,7 +54,7 @@ trait Endpoint extends StObject {
   var EngineDisplayName: js.UndefOr[String] = js.undefined
   
   /**
-    * The database engine name. Valid values, depending on the EndpointType, include "mysql", "oracle", "postgres", "mariadb", "aurora", "aurora-postgresql", "redshift", "s3", "db2", "azuredb", "sybase", "dynamodb", "mongodb", "kinesis", "kafka", "elasticsearch", "documentdb", "sqlserver", and "neptune".
+    * The database engine name. Valid values, depending on the EndpointType, include "mysql", "oracle", "postgres", "mariadb", "aurora", "aurora-postgresql", "opensearch", "redshift", "s3", "db2", "azuredb", "sybase", "dynamodb", "mongodb", "kinesis", "kafka", "elasticsearch", "documentdb", "sqlserver", and "neptune".
     */
   var EngineName: js.UndefOr[String] = js.undefined
   
@@ -74,6 +74,11 @@ trait Endpoint extends StObject {
   var ExtraConnectionAttributes: js.UndefOr[String] = js.undefined
   
   /**
+    * Settings in JSON format for the source GCP MySQL endpoint.
+    */
+  var GcpMySQLSettings: js.UndefOr[typings.awsSdk.dmsMod.GcpMySQLSettings] = js.undefined
+  
+  /**
     * The settings for the IBM Db2 LUW source endpoint. For more information, see the IBMDb2Settings structure. 
     */
   var IBMDb2Settings: js.UndefOr[typings.awsSdk.dmsMod.IBMDb2Settings] = js.undefined
@@ -89,7 +94,7 @@ trait Endpoint extends StObject {
   var KinesisSettings: js.UndefOr[typings.awsSdk.dmsMod.KinesisSettings] = js.undefined
   
   /**
-    * An AWS KMS key identifier that is used to encrypt the connection parameters for the endpoint. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
+    * An KMS key identifier that is used to encrypt the connection parameters for the endpoint. If you don't specify a value for the KmsKeyId parameter, then DMS uses your default encryption key. KMS creates the default encryption key for your Amazon Web Services account. Your Amazon Web Services account has a different default encryption key for each Amazon Web Services Region.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -129,6 +134,11 @@ trait Endpoint extends StObject {
   var PostgreSQLSettings: js.UndefOr[typings.awsSdk.dmsMod.PostgreSQLSettings] = js.undefined
   
   /**
+    * The settings for the Redis target endpoint. For more information, see the RedisSettings structure.
+    */
+  var RedisSettings: js.UndefOr[typings.awsSdk.dmsMod.RedisSettings] = js.undefined
+  
+  /**
     * Settings for the Amazon Redshift endpoint.
     */
   var RedshiftSettings: js.UndefOr[typings.awsSdk.dmsMod.RedshiftSettings] = js.undefined
@@ -144,7 +154,7 @@ trait Endpoint extends StObject {
   var ServerName: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) used by the service access IAM role.
+    * The Amazon Resource Name (ARN) used by the service to access the IAM role. The role must allow the iam:PassRole action.
     */
   var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
   
@@ -233,6 +243,10 @@ object Endpoint {
     
     inline def setExtraConnectionAttributesUndefined: Self = StObject.set(x, "ExtraConnectionAttributes", js.undefined)
     
+    inline def setGcpMySQLSettings(value: GcpMySQLSettings): Self = StObject.set(x, "GcpMySQLSettings", value.asInstanceOf[js.Any])
+    
+    inline def setGcpMySQLSettingsUndefined: Self = StObject.set(x, "GcpMySQLSettings", js.undefined)
+    
     inline def setIBMDb2Settings(value: IBMDb2Settings): Self = StObject.set(x, "IBMDb2Settings", value.asInstanceOf[js.Any])
     
     inline def setIBMDb2SettingsUndefined: Self = StObject.set(x, "IBMDb2Settings", js.undefined)
@@ -276,6 +290,10 @@ object Endpoint {
     inline def setPostgreSQLSettings(value: PostgreSQLSettings): Self = StObject.set(x, "PostgreSQLSettings", value.asInstanceOf[js.Any])
     
     inline def setPostgreSQLSettingsUndefined: Self = StObject.set(x, "PostgreSQLSettings", js.undefined)
+    
+    inline def setRedisSettings(value: RedisSettings): Self = StObject.set(x, "RedisSettings", value.asInstanceOf[js.Any])
+    
+    inline def setRedisSettingsUndefined: Self = StObject.set(x, "RedisSettings", js.undefined)
     
     inline def setRedshiftSettings(value: RedshiftSettings): Self = StObject.set(x, "RedshiftSettings", value.asInstanceOf[js.Any])
     

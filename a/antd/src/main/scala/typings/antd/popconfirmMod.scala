@@ -1,8 +1,8 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
+import typings.antd.buttonButtonMod.ButtonProps
 import typings.antd.buttonButtonMod.LegacyButtonType
-import typings.antd.buttonButtonMod.NativeButtonProps
 import typings.antd.getRenderPropValueMod.RenderFunction
 import typings.antd.tooltipMod.AbstractTooltipProps
 import typings.react.mod.ForwardRefExoticComponent
@@ -21,34 +21,13 @@ object popconfirmMod extends Shortcut {
   
   @JSImport("antd/lib/popconfirm", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[PopconfirmProps & RefAttributes[js.Any]] = js.native
-  
-  trait PopconfirmLocale extends StObject {
-    
-    var cancelText: String
-    
-    var okText: String
-  }
-  object PopconfirmLocale {
-    
-    inline def apply(cancelText: String, okText: String): PopconfirmLocale = {
-      val __obj = js.Dynamic.literal(cancelText = cancelText.asInstanceOf[js.Any], okText = okText.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PopconfirmLocale]
-    }
-    
-    extension [Self <: PopconfirmLocale](x: Self) {
-      
-      inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
-      
-      inline def setOkText(value: String): Self = StObject.set(x, "okText", value.asInstanceOf[js.Any])
-    }
-  }
+  val default: ForwardRefExoticComponent[PopconfirmProps & RefAttributes[Any]] = js.native
   
   trait PopconfirmProps
     extends StObject
        with AbstractTooltipProps {
     
-    var cancelButtonProps: js.UndefOr[NativeButtonProps] = js.undefined
+    var cancelButtonProps: js.UndefOr[ButtonProps] = js.undefined
     
     var cancelText: js.UndefOr[ReactNode] = js.undefined
     
@@ -56,7 +35,7 @@ object popconfirmMod extends Shortcut {
     
     var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var okButtonProps: js.UndefOr[NativeButtonProps] = js.undefined
+    var okButtonProps: js.UndefOr[ButtonProps] = js.undefined
     
     var okText: js.UndefOr[ReactNode] = js.undefined
     
@@ -70,6 +49,19 @@ object popconfirmMod extends Shortcut {
         js.Function1[/* e */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], Unit]
       ] = js.undefined
     
+    @JSName("onOpenChange")
+    var onOpenChange_PopconfirmProps: js.UndefOr[
+        js.Function2[
+          /* open */ Boolean, 
+          /* e */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLDivElement]], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * @deprecated `onVisibleChange` is deprecated which will be removed in next major version. Please
+      *   use `onOpenChange` instead.
+      */
     @JSName("onVisibleChange")
     var onVisibleChange_PopconfirmProps: js.UndefOr[
         js.Function2[
@@ -78,6 +70,8 @@ object popconfirmMod extends Shortcut {
           Unit
         ]
       ] = js.undefined
+    
+    var showCancel: js.UndefOr[Boolean] = js.undefined
     
     var title: ReactNode | RenderFunction
   }
@@ -90,7 +84,7 @@ object popconfirmMod extends Shortcut {
     
     extension [Self <: PopconfirmProps](x: Self) {
       
-      inline def setCancelButtonProps(value: NativeButtonProps): Self = StObject.set(x, "cancelButtonProps", value.asInstanceOf[js.Any])
+      inline def setCancelButtonProps(value: ButtonProps): Self = StObject.set(x, "cancelButtonProps", value.asInstanceOf[js.Any])
       
       inline def setCancelButtonPropsUndefined: Self = StObject.set(x, "cancelButtonProps", js.undefined)
       
@@ -106,7 +100,7 @@ object popconfirmMod extends Shortcut {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setOkButtonProps(value: NativeButtonProps): Self = StObject.set(x, "okButtonProps", value.asInstanceOf[js.Any])
+      inline def setOkButtonProps(value: ButtonProps): Self = StObject.set(x, "okButtonProps", value.asInstanceOf[js.Any])
       
       inline def setOkButtonPropsUndefined: Self = StObject.set(x, "okButtonProps", js.undefined)
       
@@ -126,11 +120,21 @@ object popconfirmMod extends Shortcut {
       
       inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
       
+      inline def setOnOpenChange(
+        value: (/* open */ Boolean, /* e */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLDivElement]]) => Unit
+      ): Self = StObject.set(x, "onOpenChange", js.Any.fromFunction2(value))
+      
+      inline def setOnOpenChangeUndefined: Self = StObject.set(x, "onOpenChange", js.undefined)
+      
       inline def setOnVisibleChange(
         value: (/* visible */ Boolean, /* e */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLDivElement]]) => Unit
       ): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction2(value))
       
       inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
+      
+      inline def setShowCancel(value: Boolean): Self = StObject.set(x, "showCancel", value.asInstanceOf[js.Any])
+      
+      inline def setShowCancelUndefined: Self = StObject.set(x, "showCancel", js.undefined)
       
       inline def setTitle(value: ReactNode | RenderFunction): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -142,7 +146,7 @@ object popconfirmMod extends Shortcut {
   
   trait PopconfirmState extends StObject {
     
-    var visible: js.UndefOr[Boolean] = js.undefined
+    var open: js.UndefOr[Boolean] = js.undefined
   }
   object PopconfirmState {
     
@@ -153,14 +157,14 @@ object popconfirmMod extends Shortcut {
     
     extension [Self <: PopconfirmState](x: Self) {
       
-      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     }
   }
   
-  type _To = ForwardRefExoticComponent[PopconfirmProps & RefAttributes[js.Any]]
+  type _To = ForwardRefExoticComponent[PopconfirmProps & RefAttributes[Any]]
   
   /* This means you don't have to write `default`, but can instead just say `popconfirmMod.foo` */
-  override def _to: ForwardRefExoticComponent[PopconfirmProps & RefAttributes[js.Any]] = default
+  override def _to: ForwardRefExoticComponent[PopconfirmProps & RefAttributes[Any]] = default
 }

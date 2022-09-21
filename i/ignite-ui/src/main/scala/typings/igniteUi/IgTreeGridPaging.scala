@@ -11,7 +11,7 @@ trait IgTreeGridPaging
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Sets/gets (it is set via  $.html()) delimiter between ancestors in the breadcrumb trail. It is used only when contextRowMode is breadcrumb
@@ -224,7 +224,7 @@ trait IgTreeGridPaging
     * Predefined page sizes that are available to the end user to switch their grid paging to, through a drop down in the grid header.
     *
     */
-  var pageSizeList: js.UndefOr[js.Any] = js.undefined
+  var pageSizeList: js.UndefOr[Any] = js.undefined
   
   /**
     * Denotes the name of the encoded URL parameter that will state what is the currently requested page size.
@@ -472,7 +472,7 @@ object IgTreeGridPaging {
     
     inline def setPageSizeDropDownTrailingLabelUndefined: Self = StObject.set(x, "pageSizeDropDownTrailingLabel", js.undefined)
     
-    inline def setPageSizeList(value: js.Any): Self = StObject.set(x, "pageSizeList", value.asInstanceOf[js.Any])
+    inline def setPageSizeList(value: Any): Self = StObject.set(x, "pageSizeList", value.asInstanceOf[js.Any])
     
     inline def setPageSizeListUndefined: Self = StObject.set(x, "pageSizeList", js.undefined)
     

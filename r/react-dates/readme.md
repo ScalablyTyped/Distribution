@@ -10,10 +10,10 @@ A responsive and accessible date range picker component built with React
 | ------------------ | :-------------: |
 | Full name          | react-dates |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 283 |
-| # downloads        | 20214301 |
-| # stars            | 26 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2314696.0 |
+| # stars            | 11877.0 |
 
 ## Links
 - [Homepage](https://github.com/airbnb/react-dates#readme)

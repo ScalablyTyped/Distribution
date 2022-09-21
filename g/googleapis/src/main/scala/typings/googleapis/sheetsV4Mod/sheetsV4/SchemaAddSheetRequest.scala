@@ -4,19 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Adds a new sheet. When a sheet is added at a given index, all subsequent
-  * sheets&#39; indexes are incremented. To add an object sheet, use
-  * AddChartRequest instead and specify EmbeddedObjectPosition.sheetId or
-  * EmbeddedObjectPosition.newSheet.
-  */
 trait SchemaAddSheetRequest extends StObject {
   
   /**
-    * The properties the new sheet should have. All properties are optional.
-    * The sheetId field is optional; if one is not set, an id will be randomly
-    * generated. (It is an error to specify the ID of a sheet that already
-    * exists.)
+    * The properties the new sheet should have. All properties are optional. The sheetId field is optional; if one is not set, an id will be randomly generated. (It is an error to specify the ID of a sheet that already exists.)
     */
   var properties: js.UndefOr[SchemaSheetProperties] = js.undefined
 }

@@ -10,10 +10,10 @@ Node.js printer bindings
 | ------------------ | :-------------: |
 | Full name          | printer |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 28350 |
-| # stars            | 12 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1508.6666666666667 |
+| # stars            | 1371.0 |
 
 ## Links
 - [Homepage](http://github.com/tojocky/node-printer)

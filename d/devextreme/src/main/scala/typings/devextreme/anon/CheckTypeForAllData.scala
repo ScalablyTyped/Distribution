@@ -6,11 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CheckTypeForAllData extends StObject {
   
+  /**
+    * Validates the type of each value coming from the data source.
+    */
   var checkTypeForAllData: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Converts data coming from a data source into a data type supported by the axis.
+    */
   var convertToAxisDataType: js.UndefOr[Boolean] = js.undefined
   
-  var sortingMethod: js.UndefOr[Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])] = js.undefined
+  /**
+    * Specifies the sorting order in which series points should be drawn.
+    */
+  var sortingMethod: js.UndefOr[Boolean | (js.Function2[/* a */ Any, /* b */ Any, Double])] = js.undefined
 }
 object CheckTypeForAllData {
   
@@ -29,9 +38,9 @@ object CheckTypeForAllData {
     
     inline def setConvertToAxisDataTypeUndefined: Self = StObject.set(x, "convertToAxisDataType", js.undefined)
     
-    inline def setSortingMethod(value: Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])): Self = StObject.set(x, "sortingMethod", value.asInstanceOf[js.Any])
+    inline def setSortingMethod(value: Boolean | (js.Function2[/* a */ Any, /* b */ Any, Double])): Self = StObject.set(x, "sortingMethod", value.asInstanceOf[js.Any])
     
-    inline def setSortingMethodFunction2(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = StObject.set(x, "sortingMethod", js.Any.fromFunction2(value))
+    inline def setSortingMethodFunction2(value: (/* a */ Any, /* b */ Any) => Double): Self = StObject.set(x, "sortingMethod", js.Any.fromFunction2(value))
     
     inline def setSortingMethodUndefined: Self = StObject.set(x, "sortingMethod", js.undefined)
   }

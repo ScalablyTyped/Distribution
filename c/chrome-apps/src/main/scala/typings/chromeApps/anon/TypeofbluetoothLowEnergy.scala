@@ -9,7 +9,6 @@ import typings.chromeApps.chrome.bluetoothLowEnergy.IResponse
 import typings.chromeApps.chrome.bluetoothLowEnergy.Service
 import typings.chromeApps.chrome.events.Event
 import typings.chromeApps.chrome.integer
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -254,7 +253,7 @@ trait TypeofbluetoothLowEnergy extends StObject {
     * @param serviceId Unique ID of a created service.
     * @param callback Callback with the result of the register operation.
     */
-  def registerService(serviceId: String, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def registerService(serviceId: String, callback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * Remove the specified service, unregistering it if it was registered.
@@ -340,7 +339,7 @@ trait TypeofbluetoothLowEnergy extends StObject {
     * @param serviceId Unique ID of a current registered service.
     * @param callback Callback with the result of the register operation.
     */
-  def unregisterService(serviceId: String, callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def unregisterService(serviceId: String, callback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * Write the value of a specified characteristic from a remote peripheral.
@@ -348,7 +347,7 @@ trait TypeofbluetoothLowEnergy extends StObject {
     * @param value The value that should be sent to the remote characteristic as part of the write request.
     * @param callback Called when the write request has completed.
     */
-  def writeCharacteristicValue(characteristicId: String, value: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+  def writeCharacteristicValue(characteristicId: String, value: js.typedarray.ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
   
   /**
     * Write the value of a specified characteristic descriptor from a remote peripheral.
@@ -356,5 +355,5 @@ trait TypeofbluetoothLowEnergy extends StObject {
     * @param value The value that should be sent to the remote descriptor as part of the write request.
     * @param callback Called when the write request has completed.
     */
-  def writeDescriptorValue(descriptorId: String, value: ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
+  def writeDescriptorValue(descriptorId: String, value: js.typedarray.ArrayBuffer, callback: js.Function0[Unit]): Unit = js.native
 }

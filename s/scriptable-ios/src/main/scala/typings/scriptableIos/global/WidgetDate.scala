@@ -1,6 +1,5 @@
 package typings.scriptableIos.global
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("WidgetDate")
 @js.native
-class WidgetDate ()
+open class WidgetDate ()
   extends StObject
      with typings.scriptableIos.WidgetDate {
   
@@ -79,7 +78,7 @@ class WidgetDate ()
     * @see https://docs.scriptable.app/widgetdate/#date
     */
   /* CompleteClass */
-  var date: Date = js.native
+  var date: js.Date = js.native
   
   /**
     * _Font and text size of the text._
@@ -178,7 +177,7 @@ class WidgetDate ()
     * _URL to open._
     *
     * The URL will be opened when the text is tapped. This is only supported in medium and large widgets. Small widgets can only have a single tap target, which is specified by the `url`
-    * property on the widget.
+    * property in the widget configurator.
     * @see https://docs.scriptable.app/widgetdate/#url
     */
   /* CompleteClass */

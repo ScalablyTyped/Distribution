@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.KiiPushMessageBuilder")
 @js.native
-class KiiPushMessageBuilder protected ()
+open class KiiPushMessageBuilder protected ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.KiiPushMessageBuilder {
   /**
@@ -22,5 +22,5 @@ class KiiPushMessageBuilder protected ()
     *
     * @param data sent to all push channels (gcm, apns, jpush, mqtt).
     */
-  def this(data: js.Any) = this()
+  def this(data: Any) = this()
 }

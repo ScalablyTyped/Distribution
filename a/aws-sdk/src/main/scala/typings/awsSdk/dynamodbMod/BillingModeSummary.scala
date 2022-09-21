@@ -14,7 +14,7 @@ trait BillingModeSummary extends StObject {
   /**
     * Represents the time when PAY_PER_REQUEST was last set as the read/write capacity mode.
     */
-  var LastUpdateToPayPerRequestDateTime: js.UndefOr[Date] = js.undefined
+  var LastUpdateToPayPerRequestDateTime: js.UndefOr[js.Date] = js.undefined
 }
 object BillingModeSummary {
   
@@ -29,7 +29,7 @@ object BillingModeSummary {
     
     inline def setBillingModeUndefined: Self = StObject.set(x, "BillingMode", js.undefined)
     
-    inline def setLastUpdateToPayPerRequestDateTime(value: Date): Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateToPayPerRequestDateTime(value: js.Date): Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateToPayPerRequestDateTimeUndefined: Self = StObject.set(x, "LastUpdateToPayPerRequestDateTime", js.undefined)
   }

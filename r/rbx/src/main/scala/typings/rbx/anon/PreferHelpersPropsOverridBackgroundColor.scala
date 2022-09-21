@@ -118,7 +118,7 @@ trait PreferHelpersPropsOverridBackgroundColor extends StObject {
   var tooltipResponsive: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'}
-    */ typings.rbx.rbxStrings.PreferHelpersPropsOverridBackgroundColor & TopLevel[js.Any]
+    */ typings.rbx.rbxStrings.PreferHelpersPropsOverridBackgroundColor & TopLevel[Any]
   ] = js.undefined
   
   var unselectable: js.UndefOr[Boolean] = js.undefined
@@ -263,7 +263,7 @@ object PreferHelpersPropsOverridBackgroundColor {
     inline def setTooltipResponsive(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'}
-      */ typings.rbx.rbxStrings.PreferHelpersPropsOverridBackgroundColor & TopLevel[js.Any]
+      */ typings.rbx.rbxStrings.PreferHelpersPropsOverridBackgroundColor & TopLevel[Any]
     ): Self = StObject.set(x, "tooltipResponsive", value.asInstanceOf[js.Any])
     
     inline def setTooltipResponsiveUndefined: Self = StObject.set(x, "tooltipResponsive", js.undefined)

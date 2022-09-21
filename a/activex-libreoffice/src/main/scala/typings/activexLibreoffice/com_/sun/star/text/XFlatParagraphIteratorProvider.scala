@@ -28,7 +28,7 @@ object XFlatParagraphIteratorProvider {
   inline def apply(
     acquire: () => Unit,
     getFlatParagraphIterator: (Double, Boolean) => XFlatParagraphIterator,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XFlatParagraphIteratorProvider = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getFlatParagraphIterator = js.Any.fromFunction2(getFlatParagraphIterator), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

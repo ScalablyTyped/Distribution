@@ -44,19 +44,19 @@ object IGeoXmlDataSet {
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: (Layer | GroundOverlay)*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: (Layer | GroundOverlay)*): Self = StObject.set(x, "layers", js.Array(value*))
     
     inline def setScreenOverlays(value: js.Array[KmlScreenOverlay]): Self = StObject.set(x, "screenOverlays", value.asInstanceOf[js.Any])
     
     inline def setScreenOverlaysUndefined: Self = StObject.set(x, "screenOverlays", js.undefined)
     
-    inline def setScreenOverlaysVarargs(value: KmlScreenOverlay*): Self = StObject.set(x, "screenOverlays", js.Array(value :_*))
+    inline def setScreenOverlaysVarargs(value: KmlScreenOverlay*): Self = StObject.set(x, "screenOverlays", js.Array(value*))
     
     inline def setShapes(value: js.Array[IPrimitive]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
     inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    inline def setShapesVarargs(value: IPrimitive*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: IPrimitive*): Self = StObject.set(x, "shapes", js.Array(value*))
     
     inline def setStats(value: IGeoXmlStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     

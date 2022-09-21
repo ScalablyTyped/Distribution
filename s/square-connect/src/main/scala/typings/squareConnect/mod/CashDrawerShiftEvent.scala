@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CashDrawerShiftEvent")
 @js.native
-class CashDrawerShiftEvent () extends StObject {
+open class CashDrawerShiftEvent () extends StObject {
   
   /**
     * The event time in ISO 8601 format.

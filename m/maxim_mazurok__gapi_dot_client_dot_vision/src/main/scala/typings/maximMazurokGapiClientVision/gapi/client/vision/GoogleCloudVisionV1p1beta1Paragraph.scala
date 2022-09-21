@@ -47,6 +47,6 @@ object GoogleCloudVisionV1p1beta1Paragraph {
     
     inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
-    inline def setWordsVarargs(value: GoogleCloudVisionV1p1beta1Word*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: GoogleCloudVisionV1p1beta1Word*): Self = StObject.set(x, "words", js.Array(value*))
   }
 }

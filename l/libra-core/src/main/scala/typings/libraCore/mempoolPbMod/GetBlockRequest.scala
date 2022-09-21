@@ -6,14 +6,13 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/mempool_pb", "GetBlockRequest")
 @js.native
-class GetBlockRequest () extends Message {
+open class GetBlockRequest () extends Message {
   
   def addTransactions(): TransactionExclusion = js.native
   def addTransactions(value: Unit, index: Double): TransactionExclusion = js.native
@@ -37,7 +36,7 @@ object GetBlockRequest {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): GetBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetBlockRequest]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): GetBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetBlockRequest]
   
   inline def deserializeBinaryFromReader(message: GetBlockRequest, reader: BinaryReader): GetBlockRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetBlockRequest]
   
@@ -78,7 +77,7 @@ object GetBlockRequest {
       
       inline def setTransactionsList(value: js.Array[typings.libraCore.mempoolPbMod.TransactionExclusion.AsObject]): Self = StObject.set(x, "transactionsList", value.asInstanceOf[js.Any])
       
-      inline def setTransactionsListVarargs(value: typings.libraCore.mempoolPbMod.TransactionExclusion.AsObject*): Self = StObject.set(x, "transactionsList", js.Array(value :_*))
+      inline def setTransactionsListVarargs(value: typings.libraCore.mempoolPbMod.TransactionExclusion.AsObject*): Self = StObject.set(x, "transactionsList", js.Array(value*))
     }
   }
 }

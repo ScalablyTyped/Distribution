@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteVocabularyRequest extends StObject {
   
   /**
-    * The name of the vocabulary to delete. 
+    * The name of the custom vocabulary you want to delete. Vocabulary names are case sensitive.
     */
   var VocabularyName: typings.awsSdk.transcribeserviceMod.VocabularyName
 }

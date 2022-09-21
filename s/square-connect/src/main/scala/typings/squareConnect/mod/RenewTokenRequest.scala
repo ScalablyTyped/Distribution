@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "RenewTokenRequest")
 @js.native
-class RenewTokenRequest () extends StObject {
+open class RenewTokenRequest () extends StObject {
   
   /**
     * The token you want to renew.

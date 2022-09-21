@@ -23,7 +23,7 @@ object ReturnTypeCollectClassNamesResponse {
     
     inline def setParamsType(value: js.Array[CollectClassNamesRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: CollectClassNamesRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: CollectClassNamesRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: CollectClassNamesResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

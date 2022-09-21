@@ -10,10 +10,10 @@ The lodash method `_.isLength` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.islength |
 | Keywords           | lodash-modularized, islength |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 7461765 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 261865.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

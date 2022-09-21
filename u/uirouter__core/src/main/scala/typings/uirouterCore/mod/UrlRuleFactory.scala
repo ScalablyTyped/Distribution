@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/core", "UrlRuleFactory")
 @js.native
-class UrlRuleFactory protected ()
+open class UrlRuleFactory protected ()
   extends typings.uirouterCore.libUrlMod.UrlRuleFactory {
   def this(router: typings.uirouterCore.routerMod.UIRouter) = this()
 }
@@ -17,5 +17,5 @@ object UrlRuleFactory {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isUrlRule(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrlRule")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUrlRule(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrlRule")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -5,41 +5,6 @@ import typings.semanticUiModal.SemanticUI.Modal.ClassNameSettings
 import typings.semanticUiModal.SemanticUI.Modal.ClassNameSettings.Param
 import typings.semanticUiModal.SemanticUI.Modal.ErrorSettings
 import typings.semanticUiModal.SemanticUI.Modal.SelectorSettings
-import typings.semanticUiModal.anon.PartialPickImplkeyofImpl
-import typings.semanticUiModal.anon.PartialPickImplkeyofImplActive
-import typings.semanticUiModal.anon.PartialPickImplkeyofImplApprove
-import typings.semanticUiModal.anon.PickImplactive
-import typings.semanticUiModal.anon.PickImplallowMultiple
-import typings.semanticUiModal.anon.PickImplapprove
-import typings.semanticUiModal.anon.PickImplautofocus
-import typings.semanticUiModal.anon.PickImplclassName
-import typings.semanticUiModal.anon.PickImplclosable
-import typings.semanticUiModal.anon.PickImplclose
-import typings.semanticUiModal.anon.PickImplcontext
-import typings.semanticUiModal.anon.PickImpldebug
-import typings.semanticUiModal.anon.PickImpldeny
-import typings.semanticUiModal.anon.PickImpldetachable
-import typings.semanticUiModal.anon.PickImpldimmerSettings
-import typings.semanticUiModal.anon.PickImplduration
-import typings.semanticUiModal.anon.PickImplerror
-import typings.semanticUiModal.anon.PickImplkeyboardShortcuts
-import typings.semanticUiModal.anon.PickImplname
-import typings.semanticUiModal.anon.PickImplnamespace
-import typings.semanticUiModal.anon.PickImplobserveChanges
-import typings.semanticUiModal.anon.PickImploffset
-import typings.semanticUiModal.anon.PickImplonApprove
-import typings.semanticUiModal.anon.PickImplonDeny
-import typings.semanticUiModal.anon.PickImplonHidden
-import typings.semanticUiModal.anon.PickImplonHide
-import typings.semanticUiModal.anon.PickImplonShow
-import typings.semanticUiModal.anon.PickImplonVisible
-import typings.semanticUiModal.anon.PickImplperformance
-import typings.semanticUiModal.anon.PickImplqueue
-import typings.semanticUiModal.anon.PickImplscrolling
-import typings.semanticUiModal.anon.PickImplselector
-import typings.semanticUiModal.anon.PickImplsilent
-import typings.semanticUiModal.anon.PickImpltransition
-import typings.semanticUiModal.anon.PickImplverbose
 import typings.semanticUiModal.semanticUiModalBooleans.`false`
 import typings.semanticUiModal.semanticUiModalStrings.`attach events`
 import typings.semanticUiModal.semanticUiModalStrings.`cache sizes`
@@ -50,39 +15,12 @@ import typings.semanticUiModal.semanticUiModalStrings.`hide others`
 import typings.semanticUiModal.semanticUiModalStrings.`is active`
 import typings.semanticUiModal.semanticUiModalStrings.`set active`
 import typings.semanticUiModal.semanticUiModalStrings.`show dimmer`
-import typings.semanticUiModal.semanticUiModalStrings.allowMultiple
-import typings.semanticUiModal.semanticUiModalStrings.autofocus
-import typings.semanticUiModal.semanticUiModalStrings.className
-import typings.semanticUiModal.semanticUiModalStrings.closable
-import typings.semanticUiModal.semanticUiModalStrings.context
-import typings.semanticUiModal.semanticUiModalStrings.debug
 import typings.semanticUiModal.semanticUiModalStrings.destroy
-import typings.semanticUiModal.semanticUiModalStrings.detachable
-import typings.semanticUiModal.semanticUiModalStrings.dimmerSettings
-import typings.semanticUiModal.semanticUiModalStrings.duration
-import typings.semanticUiModal.semanticUiModalStrings.error
 import typings.semanticUiModal.semanticUiModalStrings.hide
-import typings.semanticUiModal.semanticUiModalStrings.keyboardShortcuts
-import typings.semanticUiModal.semanticUiModalStrings.name
-import typings.semanticUiModal.semanticUiModalStrings.namespace
-import typings.semanticUiModal.semanticUiModalStrings.observeChanges
-import typings.semanticUiModal.semanticUiModalStrings.offset
-import typings.semanticUiModal.semanticUiModalStrings.onApprove
-import typings.semanticUiModal.semanticUiModalStrings.onDeny
-import typings.semanticUiModal.semanticUiModalStrings.onHidden
-import typings.semanticUiModal.semanticUiModalStrings.onHide
-import typings.semanticUiModal.semanticUiModalStrings.onShow
-import typings.semanticUiModal.semanticUiModalStrings.onVisible
-import typings.semanticUiModal.semanticUiModalStrings.performance
-import typings.semanticUiModal.semanticUiModalStrings.queue
 import typings.semanticUiModal.semanticUiModalStrings.refresh
-import typings.semanticUiModal.semanticUiModalStrings.selector
 import typings.semanticUiModal.semanticUiModalStrings.setting
 import typings.semanticUiModal.semanticUiModalStrings.show
-import typings.semanticUiModal.semanticUiModalStrings.silent
 import typings.semanticUiModal.semanticUiModalStrings.toggle
-import typings.semanticUiModal.semanticUiModalStrings.transition
-import typings.semanticUiModal.semanticUiModalStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -138,73 +76,6 @@ object SemanticUI {
       * Refreshes centering of modal on page
       */
     def apply(behavior: refresh): JQuery = js.native
-    def apply(behavior: setting, name: allowMultiple, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: allowMultiple, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: autofocus, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: autofocus, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
-    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: closable, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: closable, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: context, value: String): JQuery = js.native
-    def apply(behavior: setting, name: context, value: Unit): String | JQuery = js.native
-    def apply(behavior: setting, name: context, value: JQuery): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: detachable, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: detachable, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: dimmerSettings, value: Unit): DimmerSettings = js.native
-    def apply(behavior: setting, name: dimmerSettings, value: DimmerSettings): JQuery = js.native
-    def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: duration, value: Unit): Double = js.native
-    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
-    def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: keyboardShortcuts, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: keyboardShortcuts, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
-    def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: Unit): String = js.native
-    def apply(behavior: setting, name: observeChanges, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: observeChanges, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: offset, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: offset, value: Unit): Double = js.native
-    def apply(
-      behavior: setting,
-      name: onApprove,
-      value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: onApprove, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
-    def apply(
-      behavior: setting,
-      name: onDeny,
-      value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: onDeny, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
-    def apply(behavior: setting, name: onHidden, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onHidden, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(
-      behavior: setting,
-      name: onHide,
-      value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: onHide, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
-    def apply(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onShow, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: onVisible, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onVisible, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-    def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: queue, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: queue, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
-    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: transition, value: String): JQuery = js.native
-    def apply(behavior: setting, name: transition, value: Unit): String = js.native
-    def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: ModalSettings): JQuery = js.native
     /**
       * Shows the modal
@@ -215,6 +86,12 @@ object SemanticUI {
       */
     def apply(behavior: toggle): JQuery = js.native
     def apply(settings: ModalSettings): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-modal.SemanticUI.ModalSettings */ String */](
+      behavior: setting,
+      name: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-modal.SemanticUI.ModalSettings._Impl[K] */ js.Any
+    ): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-modal.SemanticUI.ModalSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-modal.SemanticUI.ModalSettings._Impl[K] */ js.Any = js.native
     
     var settings: ModalSettings = js.native
   }
@@ -249,7 +126,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplactive | PickImplscrolling) & PartialPickImplkeyofImplActive
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiModal.anon.PickImplactivePartialPick
+        - typings.semanticUiModal.anon.PickImplscrollingPartialP
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplactivePartialPick(active: String & js.UndefOr[String]): typings.semanticUiModal.anon.PickImplactivePartialPick = {
+          val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplactivePartialPick]
+        }
+        
+        inline def PickImplscrollingPartialP(scrolling: String & js.UndefOr[String]): typings.semanticUiModal.anon.PickImplscrollingPartialP = {
+          val __obj = js.Dynamic.literal(scrolling = scrolling.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplscrollingPartialP]
+        }
+      }
     }
     type ClassNameSettings = Param
     
@@ -345,7 +238,29 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplclose | PickImplapprove | PickImpldeny) & PartialPickImplkeyofImplApprove
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiModal.anon.PickImplclosePartialPickI
+        - typings.semanticUiModal.anon.PickImplapprovePartialPic
+        - typings.semanticUiModal.anon.PickImpldenyPartialPickIm
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplapprovePartialPic(approve: String & js.UndefOr[String]): typings.semanticUiModal.anon.PickImplapprovePartialPic = {
+          val __obj = js.Dynamic.literal(approve = approve.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplapprovePartialPic]
+        }
+        
+        inline def PickImplclosePartialPickI(close: String & js.UndefOr[String]): typings.semanticUiModal.anon.PickImplclosePartialPickI = {
+          val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplclosePartialPickI]
+        }
+        
+        inline def PickImpldenyPartialPickIm(deny: String & js.UndefOr[String]): typings.semanticUiModal.anon.PickImpldenyPartialPickIm = {
+          val __obj = js.Dynamic.literal(deny = deny.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiModal.anon.PickImpldenyPartialPickIm]
+        }
+      }
     }
     type SelectorSettings = typings.semanticUiModal.SemanticUI.Modal.SelectorSettings.Param
   }
@@ -610,7 +525,185 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImpldetachable | PickImplautofocus | PickImplobserveChanges | PickImplallowMultiple | PickImplkeyboardShortcuts | PickImploffset | PickImplcontext | PickImplclosable | PickImpldimmerSettings | PickImpltransition | PickImplduration | PickImplqueue | PickImplonShow | PickImplonVisible | PickImplonHide | PickImplonHidden | PickImplonApprove | PickImplonDeny | PickImplselector | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
+    /* Rewritten from type alias, can be one of: 
+      - typings.semanticUiModal.anon.PickImpldetachablePartial
+      - typings.semanticUiModal.anon.PickImplautofocusPartialP
+      - typings.semanticUiModal.anon.PickImplobserveChangesPar
+      - typings.semanticUiModal.anon.PickImplallowMultiplePart
+      - typings.semanticUiModal.anon.PickImplkeyboardShortcuts
+      - typings.semanticUiModal.anon.PickImploffsetPartialPick
+      - typings.semanticUiModal.anon.PickImplcontextPartialPic
+      - typings.semanticUiModal.anon.PickImplclosablePartialPi
+      - typings.semanticUiModal.anon.PickImpldimmerSettingsPar
+      - typings.semanticUiModal.anon.PickImpltransitionPartial
+      - typings.semanticUiModal.anon.PickImpldurationPartialPi
+      - typings.semanticUiModal.anon.PickImplqueuePartialPickI
+      - typings.semanticUiModal.anon.PickImplonShowPartialPick
+      - typings.semanticUiModal.anon.PickImplonVisiblePartialP
+      - typings.semanticUiModal.anon.PickImplonHidePartialPick
+      - typings.semanticUiModal.anon.PickImplonHiddenPartialPi
+      - typings.semanticUiModal.anon.PickImplonApprovePartialP
+      - typings.semanticUiModal.anon.PickImplonDenyPartialPick
+      - typings.semanticUiModal.anon.PickImplselectorPartialPi
+      - typings.semanticUiModal.anon.PickImplclassNamePartialP
+      - typings.semanticUiModal.anon.PickImplerrorPartialPickI
+      - typings.semanticUiModal.anon.PickImplnamespacePartialP
+      - typings.semanticUiModal.anon.PickImplnamePartialPickIm
+      - typings.semanticUiModal.anon.PickImplsilentPartialPick
+      - typings.semanticUiModal.anon.PickImpldebugPartialPickI
+      - typings.semanticUiModal.anon.PickImplperformancePartia
+      - typings.semanticUiModal.anon.PickImplverbosePartialPic
+    */
+    trait Param extends StObject
+    object Param {
+      
+      inline def PickImplallowMultiplePart(allowMultiple: Boolean & js.UndefOr[Boolean]): typings.semanticUiModal.anon.PickImplallowMultiplePart = {
+        val __obj = js.Dynamic.literal(allowMultiple = allowMultiple.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplallowMultiplePart]
+      }
+      
+      inline def PickImplautofocusPartialP(autofocus: Boolean & js.UndefOr[Boolean]): typings.semanticUiModal.anon.PickImplautofocusPartialP = {
+        val __obj = js.Dynamic.literal(autofocus = autofocus.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplautofocusPartialP]
+      }
+      
+      inline def PickImplclassNamePartialP(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): typings.semanticUiModal.anon.PickImplclassNamePartialP = {
+        val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplclassNamePartialP]
+      }
+      
+      inline def PickImplclosablePartialPi(closable: Boolean & js.UndefOr[Boolean]): typings.semanticUiModal.anon.PickImplclosablePartialPi = {
+        val __obj = js.Dynamic.literal(closable = closable.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplclosablePartialPi]
+      }
+      
+      inline def PickImplcontextPartialPic(context: (String | JQuery) & (js.UndefOr[String | JQuery])): typings.semanticUiModal.anon.PickImplcontextPartialPic = {
+        val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplcontextPartialPic]
+      }
+      
+      inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiModal.anon.PickImpldebugPartialPickI = {
+        val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImpldebugPartialPickI]
+      }
+      
+      inline def PickImpldetachablePartial(detachable: Boolean & js.UndefOr[Boolean]): typings.semanticUiModal.anon.PickImpldetachablePartial = {
+        val __obj = js.Dynamic.literal(detachable = detachable.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImpldetachablePartial]
+      }
+      
+      inline def PickImpldimmerSettingsPar(dimmerSettings: DimmerSettings & js.UndefOr[DimmerSettings]): typings.semanticUiModal.anon.PickImpldimmerSettingsPar = {
+        val __obj = js.Dynamic.literal(dimmerSettings = dimmerSettings.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImpldimmerSettingsPar]
+      }
+      
+      inline def PickImpldurationPartialPi(duration: Double & js.UndefOr[Double]): typings.semanticUiModal.anon.PickImpldurationPartialPi = {
+        val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImpldurationPartialPi]
+      }
+      
+      inline def PickImplerrorPartialPickI(error: ErrorSettings & js.UndefOr[ErrorSettings]): typings.semanticUiModal.anon.PickImplerrorPartialPickI = {
+        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplerrorPartialPickI]
+      }
+      
+      inline def PickImplkeyboardShortcuts(keyboardShortcuts: Boolean & js.UndefOr[Boolean]): typings.semanticUiModal.anon.PickImplkeyboardShortcuts = {
+        val __obj = js.Dynamic.literal(keyboardShortcuts = keyboardShortcuts.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplkeyboardShortcuts]
+      }
+      
+      inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiModal.anon.PickImplnamePartialPickIm = {
+        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplnamePartialPickIm]
+      }
+      
+      inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiModal.anon.PickImplnamespacePartialP = {
+        val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplnamespacePartialP]
+      }
+      
+      inline def PickImplobserveChangesPar(observeChanges: Boolean & js.UndefOr[Boolean]): typings.semanticUiModal.anon.PickImplobserveChangesPar = {
+        val __obj = js.Dynamic.literal(observeChanges = observeChanges.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplobserveChangesPar]
+      }
+      
+      inline def PickImploffsetPartialPick(offset: Double & js.UndefOr[Double]): typings.semanticUiModal.anon.PickImploffsetPartialPick = {
+        val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImploffsetPartialPick]
+      }
+      
+      inline def PickImplonApprovePartialP(
+        onApprove: (js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]])
+      ): typings.semanticUiModal.anon.PickImplonApprovePartialP = {
+        val __obj = js.Dynamic.literal(onApprove = onApprove.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplonApprovePartialP]
+      }
+      
+      inline def PickImplonDenyPartialPick(
+        onDeny: (js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]])
+      ): typings.semanticUiModal.anon.PickImplonDenyPartialPick = {
+        val __obj = js.Dynamic.literal(onDeny = onDeny.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplonDenyPartialPick]
+      }
+      
+      inline def PickImplonHiddenPartialPi(
+        onHidden: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiModal.anon.PickImplonHiddenPartialPi = {
+        val __obj = js.Dynamic.literal(onHidden = onHidden.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplonHiddenPartialPi]
+      }
+      
+      inline def PickImplonHidePartialPick(
+        onHide: (js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]])
+      ): typings.semanticUiModal.anon.PickImplonHidePartialPick = {
+        val __obj = js.Dynamic.literal(onHide = onHide.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplonHidePartialPick]
+      }
+      
+      inline def PickImplonShowPartialPick(
+        onShow: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiModal.anon.PickImplonShowPartialPick = {
+        val __obj = js.Dynamic.literal(onShow = onShow.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplonShowPartialPick]
+      }
+      
+      inline def PickImplonVisiblePartialP(
+        onVisible: (js.ThisFunction0[/* this */ JQuery, Unit]) & (js.UndefOr[js.ThisFunction0[/* this */ JQuery, Unit]])
+      ): typings.semanticUiModal.anon.PickImplonVisiblePartialP = {
+        val __obj = js.Dynamic.literal(onVisible = onVisible.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplonVisiblePartialP]
+      }
+      
+      inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiModal.anon.PickImplperformancePartia = {
+        val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplperformancePartia]
+      }
+      
+      inline def PickImplqueuePartialPickI(queue: Boolean & js.UndefOr[Boolean]): typings.semanticUiModal.anon.PickImplqueuePartialPickI = {
+        val __obj = js.Dynamic.literal(queue = queue.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplqueuePartialPickI]
+      }
+      
+      inline def PickImplselectorPartialPi(selector: SelectorSettings & js.UndefOr[SelectorSettings]): typings.semanticUiModal.anon.PickImplselectorPartialPi = {
+        val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplselectorPartialPi]
+      }
+      
+      inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiModal.anon.PickImplsilentPartialPick = {
+        val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplsilentPartialPick]
+      }
+      
+      inline def PickImpltransitionPartial(transition: String & js.UndefOr[String]): typings.semanticUiModal.anon.PickImpltransitionPartial = {
+        val __obj = js.Dynamic.literal(transition = transition.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImpltransitionPartial]
+      }
+      
+      inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiModal.anon.PickImplverbosePartialPic = {
+        val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiModal.anon.PickImplverbosePartialPic]
+      }
+    }
   }
   /**
     * @see {@link http://semantic-ui.com/modules/modal.html#/settings}

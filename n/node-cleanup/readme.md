@@ -10,10 +10,10 @@ installs custom cleanup handlers that run on exiting node
 | ------------------ | :-------------: |
 | Full name          | node-cleanup |
 | Keywords           | node, exit, cleanup, sigint, ctrl-c |
-| # releases         | 0 |
-| # dependents       | 77 |
-| # downloads        | 15423925 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2784320.3333333335 |
+| # stars            | 155.0 |
 
 ## Links
 - [Homepage](https://github.com/jtlapp/node-cleanup#readme)

@@ -113,11 +113,11 @@ object TL {
       
       inline def setErasUndefined: Self = StObject.set(x, "eras", js.undefined)
       
-      inline def setErasVarargs(value: ITimelineEra*): Self = StObject.set(x, "eras", js.Array(value :_*))
+      inline def setErasVarargs(value: ITimelineEra*): Self = StObject.set(x, "eras", js.Array(value*))
       
       inline def setEvents(value: js.Array[ITimelineSlideData]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setEventsVarargs(value: ITimelineSlideData*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: ITimelineSlideData*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setScale(value: human | cosmological): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
@@ -240,24 +240,24 @@ object TL {
   trait ITimelineEvents extends StObject {
     
     def addEventListener(`type`: String, fn: js.Function0[Unit]): ITimelineEvents = js.native
-    def addEventListener(`type`: String, fn: js.Function0[Unit], context: js.Any): ITimelineEvents = js.native
+    def addEventListener(`type`: String, fn: js.Function0[Unit], context: Any): ITimelineEvents = js.native
     
     def fire(`type`: String): ITimelineEvents = js.native
-    def fire(`type`: String, data: js.Any): ITimelineEvents = js.native
+    def fire(`type`: String, data: Any): ITimelineEvents = js.native
     
     def fireEvent(`type`: String): ITimelineEvents = js.native
-    def fireEvent(`type`: String, data: js.Any): ITimelineEvents = js.native
+    def fireEvent(`type`: String, data: Any): ITimelineEvents = js.native
     
     def hasEventListeners(`type`: String): Boolean = js.native
     
     def off(`type`: String, fn: js.Function0[Unit]): ITimelineEvents = js.native
-    def off(`type`: String, fn: js.Function0[Unit], context: js.Any): ITimelineEvents = js.native
+    def off(`type`: String, fn: js.Function0[Unit], context: Any): ITimelineEvents = js.native
     
     def on(`type`: String, fn: js.Function0[Unit]): ITimelineEvents = js.native
-    def on(`type`: String, fn: js.Function0[Unit], context: js.Any): ITimelineEvents = js.native
+    def on(`type`: String, fn: js.Function0[Unit], context: Any): ITimelineEvents = js.native
     
     def removeEventListener(`type`: String, fn: js.Function0[Unit]): ITimelineEvents = js.native
-    def removeEventListener(`type`: String, fn: js.Function0[Unit], context: js.Any): ITimelineEvents = js.native
+    def removeEventListener(`type`: String, fn: js.Function0[Unit], context: Any): ITimelineEvents = js.native
   }
   
   trait ITimelineMedia extends StObject {
@@ -348,7 +348,7 @@ object TL {
       * Default: null
       * Google Analytics ID.
       */
-    var ga_property_id: js.UndefOr[js.Any] = js.undefined
+    var ga_property_id: js.UndefOr[Any] = js.undefined
     
     /*
       * Default: false
@@ -533,7 +533,7 @@ object TL {
       
       inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
-      inline def setGa_property_id(value: js.Any): Self = StObject.set(x, "ga_property_id", value.asInstanceOf[js.Any])
+      inline def setGa_property_id(value: Any): Self = StObject.set(x, "ga_property_id", value.asInstanceOf[js.Any])
       
       inline def setGa_property_idUndefined: Self = StObject.set(x, "ga_property_id", js.undefined)
       
@@ -629,7 +629,7 @@ object TL {
       
       inline def setTrack_eventsUndefined: Self = StObject.set(x, "track_events", js.undefined)
       
-      inline def setTrack_eventsVarargs(value: (back_to_start | nav_next | nav_previous | zoom_in | zoom_out)*): Self = StObject.set(x, "track_events", js.Array(value :_*))
+      inline def setTrack_eventsVarargs(value: (back_to_start | nav_next | nav_previous | zoom_in | zoom_out)*): Self = StObject.set(x, "track_events", js.Array(value*))
       
       inline def setUse_bc(value: Boolean): Self = StObject.set(x, "use_bc", value.asInstanceOf[js.Any])
       
@@ -643,7 +643,7 @@ object TL {
       
       inline def setZoom_sequenceUndefined: Self = StObject.set(x, "zoom_sequence", js.undefined)
       
-      inline def setZoom_sequenceVarargs(value: Double*): Self = StObject.set(x, "zoom_sequence", js.Array(value :_*))
+      inline def setZoom_sequenceVarargs(value: Double*): Self = StObject.set(x, "zoom_sequence", js.Array(value*))
     }
   }
   

@@ -9,12 +9,12 @@ trait ChildGridRenderedEventUIParam extends StObject {
   /**
     * Gets reference to the child grid.
     */
-  var childgrid: js.UndefOr[js.Any] = js.undefined
+  var childgrid: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets access the hierarchical grid object.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets access the row element for the row that's about to be populated.
@@ -30,11 +30,11 @@ object ChildGridRenderedEventUIParam {
   
   extension [Self <: ChildGridRenderedEventUIParam](x: Self) {
     
-    inline def setChildgrid(value: js.Any): Self = StObject.set(x, "childgrid", value.asInstanceOf[js.Any])
+    inline def setChildgrid(value: Any): Self = StObject.set(x, "childgrid", value.asInstanceOf[js.Any])
     
     inline def setChildgridUndefined: Self = StObject.set(x, "childgrid", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

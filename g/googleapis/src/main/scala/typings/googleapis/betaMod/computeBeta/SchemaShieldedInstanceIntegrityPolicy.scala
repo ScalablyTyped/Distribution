@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The policy describes the baseline against which Instance boot integrity is
-  * measured.
-  */
 trait SchemaShieldedInstanceIntegrityPolicy extends StObject {
   
   /**
-    * Updates the integrity policy baseline using the measurements from the VM
-    * instance&#39;s most recent boot.
+    * Updates the integrity policy baseline using the measurements from the VM instance's most recent boot.
     */
-  var updateAutoLearnPolicy: js.UndefOr[Boolean] = js.undefined
+  var updateAutoLearnPolicy: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaShieldedInstanceIntegrityPolicy {
   
@@ -26,6 +21,8 @@ object SchemaShieldedInstanceIntegrityPolicy {
   extension [Self <: SchemaShieldedInstanceIntegrityPolicy](x: Self) {
     
     inline def setUpdateAutoLearnPolicy(value: Boolean): Self = StObject.set(x, "updateAutoLearnPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateAutoLearnPolicyNull: Self = StObject.set(x, "updateAutoLearnPolicy", null)
     
     inline def setUpdateAutoLearnPolicyUndefined: Self = StObject.set(x, "updateAutoLearnPolicy", js.undefined)
   }

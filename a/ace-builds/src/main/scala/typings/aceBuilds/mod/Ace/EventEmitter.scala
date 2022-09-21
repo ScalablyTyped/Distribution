@@ -17,6 +17,9 @@ trait EventEmitter extends StObject {
   
   def once(name: String, callback: js.Function): Unit = js.native
   
+  def removeAllListeners(): Unit = js.native
+  def removeAllListeners(name: String): Unit = js.native
+  
   def removeDefaultHandler(name: String, callback: js.Function): Unit = js.native
   
   def removeEventListener(name: String, callback: js.Function): Unit = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ChargeRequest")
 @js.native
-class ChargeRequest () extends StObject {
+open class ChargeRequest () extends StObject {
   
   /**
     * The basic primitive of multi-party transaction. The value is optional. The transaction facilitated by you can be

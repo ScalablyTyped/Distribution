@@ -10,12 +10,12 @@ object babelPluginReactHtmlAttrsBooleans {
   @js.native
   sealed trait `false`
     extends StObject
-       with IsExactlyAny[js.Any]
+       with IsExactlyAny[Any]
   inline def `false`: `false` = false.asInstanceOf[`false`]
   
   @js.native
   sealed trait `true`
     extends StObject
-       with IsExactlyAny[js.Any]
+       with IsExactlyAny[Any]
   inline def `true`: `true` = true.asInstanceOf[`true`]
 }

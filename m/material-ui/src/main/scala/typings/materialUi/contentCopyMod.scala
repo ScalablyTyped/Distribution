@@ -10,10 +10,10 @@ object contentCopyMod {
   
   @JSImport("material-ui/svg-icons/content/content-copy", JSImport.Default)
   @js.native
-  class default () extends ContentContentCopy
+  open class default () extends ContentContentCopy
   
   @JSImport("material-ui/svg-icons/content/content-copy", "ContentContentCopy")
   @js.native
-  class ContentContentCopy ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentContentCopy ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -36,6 +36,12 @@ trait CSSPseudoSelectorProps
   @JSName(":-moz-read-write")
   var `Colon-moz-read-write`: js.UndefOr[SystemStyleObject] = js.undefined
   
+  @JSName(":-moz-ui-invalid")
+  var `Colon-moz-ui-invalid`: js.UndefOr[SystemStyleObject] = js.undefined
+  
+  @JSName(":-moz-ui-valid")
+  var `Colon-moz-ui-valid`: js.UndefOr[SystemStyleObject] = js.undefined
+  
   @JSName(":-ms-fullscreen")
   var `Colon-ms-fullscreen`: js.UndefOr[SystemStyleObject] = js.undefined
   
@@ -80,6 +86,9 @@ trait CSSPseudoSelectorProps
   
   @JSName("::-ms-clear")
   var `ColonColon-ms-clear`: js.UndefOr[SystemStyleObject] = js.undefined
+  
+  @JSName("::-ms-expand")
+  var `ColonColon-ms-expand`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-fill")
   var `ColonColon-ms-fill`: js.UndefOr[SystemStyleObject] = js.undefined
@@ -177,6 +186,9 @@ trait CSSPseudoSelectorProps
   @JSName("::spelling-error")
   var `ColonColonspelling-error`: js.UndefOr[SystemStyleObject] = js.undefined
   
+  @JSName("::target-text")
+  var `ColonColontarget-text`: js.UndefOr[SystemStyleObject] = js.undefined
+  
   @JSName(":active")
   var Colonactive: js.UndefOr[SystemStyleObject] = js.undefined
   
@@ -194,6 +206,9 @@ trait CSSPseudoSelectorProps
   
   @JSName(":checked")
   var Colonchecked: js.UndefOr[SystemStyleObject] = js.undefined
+  
+  @JSName(":current")
+  var Coloncurrent: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":default")
   var Colondefault: js.UndefOr[SystemStyleObject] = js.undefined
@@ -240,6 +255,9 @@ trait CSSPseudoSelectorProps
   @JSName(":fullscreen")
   var Colonfullscreen: js.UndefOr[SystemStyleObject] = js.undefined
   
+  @JSName(":future")
+  var Colonfuture: js.UndefOr[SystemStyleObject] = js.undefined
+  
   @JSName(":has")
   var Colonhas: js.UndefOr[SystemStyleObject] = js.undefined
   
@@ -279,6 +297,9 @@ trait CSSPseudoSelectorProps
   @JSName(":link")
   var Colonlink: js.UndefOr[SystemStyleObject] = js.undefined
   
+  @JSName(":local-link")
+  var `Colonlocal-link`: js.UndefOr[SystemStyleObject] = js.undefined
+  
   @JSName(":matches()")
   var ColonmatchesLeftparenthesisRightparenthesis: js.UndefOr[SystemStyleObject] = js.undefined
   
@@ -288,8 +309,14 @@ trait CSSPseudoSelectorProps
   @JSName(":nth-child")
   var `Colonnth-child`: js.UndefOr[SystemStyleObject] = js.undefined
   
+  @JSName(":nth-col")
+  var `Colonnth-col`: js.UndefOr[SystemStyleObject] = js.undefined
+  
   @JSName(":nth-last-child")
   var `Colonnth-last-child`: js.UndefOr[SystemStyleObject] = js.undefined
+  
+  @JSName(":nth-last-col")
+  var `Colonnth-last-col`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":nth-last-of-type")
   var `Colonnth-last-of-type`: js.UndefOr[SystemStyleObject] = js.undefined
@@ -309,8 +336,20 @@ trait CSSPseudoSelectorProps
   @JSName(":out-of-range")
   var `Colonout-of-range`: js.UndefOr[SystemStyleObject] = js.undefined
   
+  @JSName(":past")
+  var Colonpast: js.UndefOr[SystemStyleObject] = js.undefined
+  
+  @JSName(":paused")
+  var Colonpaused: js.UndefOr[SystemStyleObject] = js.undefined
+  
+  @JSName(":picture-in-picture")
+  var `Colonpicture-in-picture`: js.UndefOr[SystemStyleObject] = js.undefined
+  
   @JSName(":placeholder-shown")
   var `Colonplaceholder-shown`: js.UndefOr[SystemStyleObject] = js.undefined
+  
+  @JSName(":playing")
+  var Colonplaying: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":read-only")
   var `Colonread-only`: js.UndefOr[SystemStyleObject] = js.undefined
@@ -332,6 +371,15 @@ trait CSSPseudoSelectorProps
   
   @JSName(":target")
   var Colontarget: js.UndefOr[SystemStyleObject] = js.undefined
+  
+  @JSName(":target-within")
+  var `Colontarget-within`: js.UndefOr[SystemStyleObject] = js.undefined
+  
+  @JSName(":user-invalid")
+  var `Colonuser-invalid`: js.UndefOr[SystemStyleObject] = js.undefined
+  
+  @JSName(":user-valid")
+  var `Colonuser-valid`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":valid")
   var Colonvalid: js.UndefOr[SystemStyleObject] = js.undefined
@@ -404,6 +452,18 @@ object CSSPseudoSelectorProps {
     inline def `setColon-moz-read-writeNull`: Self = StObject.set(x, ":-moz-read-write", null)
     
     inline def `setColon-moz-read-writeUndefined`: Self = StObject.set(x, ":-moz-read-write", js.undefined)
+    
+    inline def `setColon-moz-ui-invalid`(value: SystemStyleObject): Self = StObject.set(x, ":-moz-ui-invalid", value.asInstanceOf[js.Any])
+    
+    inline def `setColon-moz-ui-invalidNull`: Self = StObject.set(x, ":-moz-ui-invalid", null)
+    
+    inline def `setColon-moz-ui-invalidUndefined`: Self = StObject.set(x, ":-moz-ui-invalid", js.undefined)
+    
+    inline def `setColon-moz-ui-valid`(value: SystemStyleObject): Self = StObject.set(x, ":-moz-ui-valid", value.asInstanceOf[js.Any])
+    
+    inline def `setColon-moz-ui-validNull`: Self = StObject.set(x, ":-moz-ui-valid", null)
+    
+    inline def `setColon-moz-ui-validUndefined`: Self = StObject.set(x, ":-moz-ui-valid", js.undefined)
     
     inline def `setColon-ms-fullscreen`(value: SystemStyleObject): Self = StObject.set(x, ":-ms-fullscreen", value.asInstanceOf[js.Any])
     
@@ -494,6 +554,12 @@ object CSSPseudoSelectorProps {
     inline def `setColonColon-ms-clearNull`: Self = StObject.set(x, "::-ms-clear", null)
     
     inline def `setColonColon-ms-clearUndefined`: Self = StObject.set(x, "::-ms-clear", js.undefined)
+    
+    inline def `setColonColon-ms-expand`(value: SystemStyleObject): Self = StObject.set(x, "::-ms-expand", value.asInstanceOf[js.Any])
+    
+    inline def `setColonColon-ms-expandNull`: Self = StObject.set(x, "::-ms-expand", null)
+    
+    inline def `setColonColon-ms-expandUndefined`: Self = StObject.set(x, "::-ms-expand", js.undefined)
     
     inline def `setColonColon-ms-fill`(value: SystemStyleObject): Self = StObject.set(x, "::-ms-fill", value.asInstanceOf[js.Any])
     
@@ -687,6 +753,12 @@ object CSSPseudoSelectorProps {
     
     inline def `setColonColonspelling-errorUndefined`: Self = StObject.set(x, "::spelling-error", js.undefined)
     
+    inline def `setColonColontarget-text`(value: SystemStyleObject): Self = StObject.set(x, "::target-text", value.asInstanceOf[js.Any])
+    
+    inline def `setColonColontarget-textNull`: Self = StObject.set(x, "::target-text", null)
+    
+    inline def `setColonColontarget-textUndefined`: Self = StObject.set(x, "::target-text", js.undefined)
+    
     inline def setColonactive(value: SystemStyleObject): Self = StObject.set(x, ":active", value.asInstanceOf[js.Any])
     
     inline def setColonactiveNull: Self = StObject.set(x, ":active", null)
@@ -722,6 +794,12 @@ object CSSPseudoSelectorProps {
     inline def setColoncheckedNull: Self = StObject.set(x, ":checked", null)
     
     inline def setColoncheckedUndefined: Self = StObject.set(x, ":checked", js.undefined)
+    
+    inline def setColoncurrent(value: SystemStyleObject): Self = StObject.set(x, ":current", value.asInstanceOf[js.Any])
+    
+    inline def setColoncurrentNull: Self = StObject.set(x, ":current", null)
+    
+    inline def setColoncurrentUndefined: Self = StObject.set(x, ":current", js.undefined)
     
     inline def setColondefault(value: SystemStyleObject): Self = StObject.set(x, ":default", value.asInstanceOf[js.Any])
     
@@ -813,6 +891,12 @@ object CSSPseudoSelectorProps {
     
     inline def setColonfullscreenUndefined: Self = StObject.set(x, ":fullscreen", js.undefined)
     
+    inline def setColonfuture(value: SystemStyleObject): Self = StObject.set(x, ":future", value.asInstanceOf[js.Any])
+    
+    inline def setColonfutureNull: Self = StObject.set(x, ":future", null)
+    
+    inline def setColonfutureUndefined: Self = StObject.set(x, ":future", js.undefined)
+    
     inline def setColonhas(value: SystemStyleObject): Self = StObject.set(x, ":has", value.asInstanceOf[js.Any])
     
     inline def setColonhasNull: Self = StObject.set(x, ":has", null)
@@ -891,6 +975,12 @@ object CSSPseudoSelectorProps {
     
     inline def setColonlinkUndefined: Self = StObject.set(x, ":link", js.undefined)
     
+    inline def `setColonlocal-link`(value: SystemStyleObject): Self = StObject.set(x, ":local-link", value.asInstanceOf[js.Any])
+    
+    inline def `setColonlocal-linkNull`: Self = StObject.set(x, ":local-link", null)
+    
+    inline def `setColonlocal-linkUndefined`: Self = StObject.set(x, ":local-link", js.undefined)
+    
     inline def setColonmatchesLeftparenthesisRightparenthesis(value: SystemStyleObject): Self = StObject.set(x, ":matches()", value.asInstanceOf[js.Any])
     
     inline def setColonmatchesLeftparenthesisRightparenthesisNull: Self = StObject.set(x, ":matches()", null)
@@ -909,11 +999,23 @@ object CSSPseudoSelectorProps {
     
     inline def `setColonnth-childUndefined`: Self = StObject.set(x, ":nth-child", js.undefined)
     
+    inline def `setColonnth-col`(value: SystemStyleObject): Self = StObject.set(x, ":nth-col", value.asInstanceOf[js.Any])
+    
+    inline def `setColonnth-colNull`: Self = StObject.set(x, ":nth-col", null)
+    
+    inline def `setColonnth-colUndefined`: Self = StObject.set(x, ":nth-col", js.undefined)
+    
     inline def `setColonnth-last-child`(value: SystemStyleObject): Self = StObject.set(x, ":nth-last-child", value.asInstanceOf[js.Any])
     
     inline def `setColonnth-last-childNull`: Self = StObject.set(x, ":nth-last-child", null)
     
     inline def `setColonnth-last-childUndefined`: Self = StObject.set(x, ":nth-last-child", js.undefined)
+    
+    inline def `setColonnth-last-col`(value: SystemStyleObject): Self = StObject.set(x, ":nth-last-col", value.asInstanceOf[js.Any])
+    
+    inline def `setColonnth-last-colNull`: Self = StObject.set(x, ":nth-last-col", null)
+    
+    inline def `setColonnth-last-colUndefined`: Self = StObject.set(x, ":nth-last-col", js.undefined)
     
     inline def `setColonnth-last-of-type`(value: SystemStyleObject): Self = StObject.set(x, ":nth-last-of-type", value.asInstanceOf[js.Any])
     
@@ -951,11 +1053,35 @@ object CSSPseudoSelectorProps {
     
     inline def `setColonout-of-rangeUndefined`: Self = StObject.set(x, ":out-of-range", js.undefined)
     
+    inline def setColonpast(value: SystemStyleObject): Self = StObject.set(x, ":past", value.asInstanceOf[js.Any])
+    
+    inline def setColonpastNull: Self = StObject.set(x, ":past", null)
+    
+    inline def setColonpastUndefined: Self = StObject.set(x, ":past", js.undefined)
+    
+    inline def setColonpaused(value: SystemStyleObject): Self = StObject.set(x, ":paused", value.asInstanceOf[js.Any])
+    
+    inline def setColonpausedNull: Self = StObject.set(x, ":paused", null)
+    
+    inline def setColonpausedUndefined: Self = StObject.set(x, ":paused", js.undefined)
+    
+    inline def `setColonpicture-in-picture`(value: SystemStyleObject): Self = StObject.set(x, ":picture-in-picture", value.asInstanceOf[js.Any])
+    
+    inline def `setColonpicture-in-pictureNull`: Self = StObject.set(x, ":picture-in-picture", null)
+    
+    inline def `setColonpicture-in-pictureUndefined`: Self = StObject.set(x, ":picture-in-picture", js.undefined)
+    
     inline def `setColonplaceholder-shown`(value: SystemStyleObject): Self = StObject.set(x, ":placeholder-shown", value.asInstanceOf[js.Any])
     
     inline def `setColonplaceholder-shownNull`: Self = StObject.set(x, ":placeholder-shown", null)
     
     inline def `setColonplaceholder-shownUndefined`: Self = StObject.set(x, ":placeholder-shown", js.undefined)
+    
+    inline def setColonplaying(value: SystemStyleObject): Self = StObject.set(x, ":playing", value.asInstanceOf[js.Any])
+    
+    inline def setColonplayingNull: Self = StObject.set(x, ":playing", null)
+    
+    inline def setColonplayingUndefined: Self = StObject.set(x, ":playing", js.undefined)
     
     inline def `setColonread-only`(value: SystemStyleObject): Self = StObject.set(x, ":read-only", value.asInstanceOf[js.Any])
     
@@ -995,9 +1121,27 @@ object CSSPseudoSelectorProps {
     
     inline def setColontarget(value: SystemStyleObject): Self = StObject.set(x, ":target", value.asInstanceOf[js.Any])
     
+    inline def `setColontarget-within`(value: SystemStyleObject): Self = StObject.set(x, ":target-within", value.asInstanceOf[js.Any])
+    
+    inline def `setColontarget-withinNull`: Self = StObject.set(x, ":target-within", null)
+    
+    inline def `setColontarget-withinUndefined`: Self = StObject.set(x, ":target-within", js.undefined)
+    
     inline def setColontargetNull: Self = StObject.set(x, ":target", null)
     
     inline def setColontargetUndefined: Self = StObject.set(x, ":target", js.undefined)
+    
+    inline def `setColonuser-invalid`(value: SystemStyleObject): Self = StObject.set(x, ":user-invalid", value.asInstanceOf[js.Any])
+    
+    inline def `setColonuser-invalidNull`: Self = StObject.set(x, ":user-invalid", null)
+    
+    inline def `setColonuser-invalidUndefined`: Self = StObject.set(x, ":user-invalid", js.undefined)
+    
+    inline def `setColonuser-valid`(value: SystemStyleObject): Self = StObject.set(x, ":user-valid", value.asInstanceOf[js.Any])
+    
+    inline def `setColonuser-validNull`: Self = StObject.set(x, ":user-valid", null)
+    
+    inline def `setColonuser-validUndefined`: Self = StObject.set(x, ":user-valid", js.undefined)
     
     inline def setColonvalid(value: SystemStyleObject): Self = StObject.set(x, ":valid", value.asInstanceOf[js.Any])
     

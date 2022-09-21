@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
@@ -45,7 +44,7 @@ trait AppointmentCalendar extends StObject {
     * @param instanceStartTime The start time of the appointment instance to be deleted.
     * @return An asynchronous action.
     */
-  def deleteAppointmentInstanceAsync(localId: String, instanceStartTime: Date): IPromiseWithIAsyncAction = js.native
+  def deleteAppointmentInstanceAsync(localId: String, instanceStartTime: js.Date): IPromiseWithIAsyncAction = js.native
   
   /**
     * Asynchronously deletes the appointment calendar.
@@ -66,7 +65,7 @@ trait AppointmentCalendar extends StObject {
     * @param rangeLength The length of the time window for which appointment instances are retrieved.
     * @return An asynchronous operation that returns IVectorView on successful completion.
     */
-  def findAllInstancesAsync(masterLocalId: String, rangeStart: Date, rangeLength: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findAllInstancesAsync(masterLocalId: String, rangeStart: js.Date, rangeLength: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   /**
     * Asynchronously retrieves a list of appointment instances of the specified master appointment that meet the specified criteria.
     * @param masterLocalId The LocalId of the master appointment for which appointment instances are retrieved.
@@ -75,7 +74,7 @@ trait AppointmentCalendar extends StObject {
     * @param pOptions A FindAppointmentsOptions object that is used to specify more options for this operation.
     * @return An asynchronous operation that returns IVectorView on successful completion.
     */
-  def findAllInstancesAsync(masterLocalId: String, rangeStart: Date, rangeLength: Double, pOptions: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findAllInstancesAsync(masterLocalId: String, rangeStart: js.Date, rangeLength: Double, pOptions: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Asynchronously retrieves a list of appointments belonging to the current AppointmentCalendar that meet the specified criteria.
@@ -83,7 +82,7 @@ trait AppointmentCalendar extends StObject {
     * @param rangeLength The length of the time window for which appointments are retrieved.
     * @return An asynchronous operation that returns IVectorView on successful completion.
     */
-  def findAppointmentsAsync(rangeStart: Date, rangeLength: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findAppointmentsAsync(rangeStart: js.Date, rangeLength: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   /**
     * Asynchronously retrieves a list of appointments belonging to the current AppointmentCalendar that meet the specified criteria.
     * @param rangeStart The start time of the time window for which appointments are retrieved.
@@ -91,26 +90,26 @@ trait AppointmentCalendar extends StObject {
     * @param options A FindAppointmentsOptions object that is used to specify more options for this operation.
     * @return An asynchronous operation that returns IVectorView on successful completion.
     */
-  def findAppointmentsAsync(rangeStart: Date, rangeLength: Double, options: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findAppointmentsAsync(rangeStart: js.Date, rangeLength: Double, options: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Asynchronously retrieves a list of appointment instances that are exceptions from the specified master appointment.
     * @param masterLocalId The LocalId of the master appointment for which exceptional appointment instances are retrieved.
     * @return An asynchronous operation that returns IVectorView on successful completion.
     */
-  def findExceptionsFromMasterAsync(masterLocalId: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findExceptionsFromMasterAsync(masterLocalId: String): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Asynchronously retrieves a list of appointments that meet the specified criteria.
     * @return An asynchronous operation that returns IVectorView on successful completion.
     */
-  def findUnexpandedAppointmentsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findUnexpandedAppointmentsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   /**
     * Asynchronously retrieves a list of appointments that meet the specified criteria.
     * @param options A FindAppointmentsOptions object that is used to specify more options for this operation.
     * @return An asynchronous operation that returns IVectorView on successful completion.
     */
-  def findUnexpandedAppointmentsAsync(options: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findUnexpandedAppointmentsAsync(options: FindAppointmentsOptions): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Asynchronously retrieves the Appointment with the specified ID.
@@ -132,7 +131,7 @@ trait AppointmentCalendar extends StObject {
     * @param instanceStartTime The start time of the appointment instance to be retrieved.
     * @return An asynchronous operation that returns Appointment on successful completion.
     */
-  def getAppointmentInstanceAsync(localId: String, instanceStartTime: Date): IPromiseWithIAsyncOperation[Appointment] = js.native
+  def getAppointmentInstanceAsync(localId: String, instanceStartTime: js.Date): IPromiseWithIAsyncOperation[Appointment] = js.native
   
   /** Gets whether the AppointmentCalendar is hidden in the device's built-in calendar UI. */
   var isHidden: Boolean = js.native
@@ -218,7 +217,7 @@ trait AppointmentCalendar extends StObject {
     * @param comment The body of the meeting invitation.
     * @return A Boolean value indicating if the operation was successful.
     */
-  def tryProposeNewTimeForMeetingAsync(meeting: Appointment, newStartTime: Date, newDuration: Double, subject: String, comment: String): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def tryProposeNewTimeForMeetingAsync(meeting: Appointment, newStartTime: js.Date, newDuration: Double, subject: String, comment: String): IPromiseWithIAsyncOperation[Boolean] = js.native
   
   /**
     * Asynchronously attempts to update the response to a meeting invitation.

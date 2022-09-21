@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/core", "IterableDiffers")
 @js.native
-class IterableDiffers protected () extends StObject {
+open class IterableDiffers protected () extends StObject {
   def this(factories: js.Array[IterableDifferFactory]) = this()
   
   /**
@@ -14,7 +14,7 @@ class IterableDiffers protected () extends StObject {
     */
   var factories: js.Array[IterableDifferFactory] = js.native
   
-  def find(iterable: js.Any): IterableDifferFactory = js.native
+  def find(iterable: Any): IterableDifferFactory = js.native
 }
 /* static members */
 object IterableDiffers {
@@ -47,4 +47,10 @@ object IterableDiffers {
     * ```
     */
   inline def extend(factories: js.Array[IterableDifferFactory]): StaticProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(factories.asInstanceOf[js.Any]).asInstanceOf[StaticProvider]
+  
+  /** @nocollapse */
+  @JSImport("@angular/core", "IterableDiffers.\u0275prov")
+  @js.native
+  def ɵprov: Any = js.native
+  inline def ɵprov_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
 }

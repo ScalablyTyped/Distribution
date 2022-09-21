@@ -33,6 +33,6 @@ object PrinterContact {
     
     inline def `setContact-vcardUndefined`: Self = StObject.set(x, "contact-vcard", js.undefined)
     
-    inline def `setContact-vcardVarargs`(value: String*): Self = StObject.set(x, "contact-vcard", js.Array(value :_*))
+    inline def `setContact-vcardVarargs`(value: String*): Self = StObject.set(x, "contact-vcard", js.Array(value*))
   }
 }

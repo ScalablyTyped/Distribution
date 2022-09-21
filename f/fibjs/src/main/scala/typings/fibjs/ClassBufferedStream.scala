@@ -52,8 +52,8 @@ trait ClassBufferedStream
     * 
     * 
     */
-  def readLines(): js.Array[js.Any] = js.native
-  def readLines(maxlines: Double): js.Array[js.Any] = js.native
+  def readLines(): js.Array[Any] = js.native
+  def readLines(maxlines: Double): js.Array[Any] = js.native
   
   /**
     * 

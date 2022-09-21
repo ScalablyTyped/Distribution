@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ToolbarBuilder
   extends StObject
-     with ContainerBuilder[ToolbarContainer, ToolbarLayout, js.Any] {
+     with ContainerBuilder[ToolbarContainer, ToolbarLayout, Any, ContainerProperties] {
   
   /**
     * Creates a child component and adds it to this container.
@@ -23,5 +23,5 @@ trait ToolbarBuilder
     */
   def addToolbarItems(toolbarComponents: js.Array[ToolbarComponent]): Unit = js.native
   
-  def withToolbarItems(components: js.Array[ToolbarComponent]): ContainerBuilder[ToolbarContainer, ToolbarLayout, js.Any] = js.native
+  def withToolbarItems(components: js.Array[ToolbarComponent]): ContainerBuilder[ToolbarContainer, ToolbarLayout, Any, ContainerProperties] = js.native
 }

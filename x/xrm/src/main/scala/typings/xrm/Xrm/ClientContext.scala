@@ -28,6 +28,11 @@ trait ClientContext extends StObject {
   def getFormFactor(): ClientFormFactor
   
   /**
+    * Returns information whether the network is available or not.
+    */
+  def isNetworkAvailable(): Boolean
+  
+  /**
     * Returns information whether the server is online or offline.
     */
   def isOffline(): Boolean
@@ -38,9 +43,10 @@ object ClientContext {
     getClient: () => Client,
     getClientState: () => ClientState,
     getFormFactor: () => ClientFormFactor,
+    isNetworkAvailable: () => Boolean,
     isOffline: () => Boolean
   ): ClientContext = {
-    val __obj = js.Dynamic.literal(getClient = js.Any.fromFunction0(getClient), getClientState = js.Any.fromFunction0(getClientState), getFormFactor = js.Any.fromFunction0(getFormFactor), isOffline = js.Any.fromFunction0(isOffline))
+    val __obj = js.Dynamic.literal(getClient = js.Any.fromFunction0(getClient), getClientState = js.Any.fromFunction0(getClientState), getFormFactor = js.Any.fromFunction0(getFormFactor), isNetworkAvailable = js.Any.fromFunction0(isNetworkAvailable), isOffline = js.Any.fromFunction0(isOffline))
     __obj.asInstanceOf[ClientContext]
   }
   
@@ -51,6 +57,8 @@ object ClientContext {
     inline def setGetClientState(value: () => ClientState): Self = StObject.set(x, "getClientState", js.Any.fromFunction0(value))
     
     inline def setGetFormFactor(value: () => ClientFormFactor): Self = StObject.set(x, "getFormFactor", js.Any.fromFunction0(value))
+    
+    inline def setIsNetworkAvailable(value: () => Boolean): Self = StObject.set(x, "isNetworkAvailable", js.Any.fromFunction0(value))
     
     inline def setIsOffline(value: () => Boolean): Self = StObject.set(x, "isOffline", js.Any.fromFunction0(value))
   }

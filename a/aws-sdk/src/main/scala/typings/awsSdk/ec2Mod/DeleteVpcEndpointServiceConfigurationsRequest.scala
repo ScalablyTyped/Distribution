@@ -31,6 +31,6 @@ object DeleteVpcEndpointServiceConfigurationsRequest {
     
     inline def setServiceIds(value: VpcEndpointServiceIdList): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
     
-    inline def setServiceIdsVarargs(value: VpcEndpointServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+    inline def setServiceIdsVarargs(value: VpcEndpointServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value*))
   }
 }

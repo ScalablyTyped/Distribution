@@ -5,7 +5,7 @@ import typings.ethereumjsVm.exceptionsMod.VmError
 import typings.ethereumjsVm.opFnsMod.OpHandler
 import typings.ethereumjsVm.opcodesMod.Opcode
 import typings.ethereumjsVm.stateMod.StateManager
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +14,10 @@ object interpreterMod {
   
   @JSImport("ethereumjs-vm/dist/evm/interpreter", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Interpreter {
-    def this(vm: js.Any, eei: typings.ethereumjsVm.eeiMod.default) = this()
+    def this(vm: Any, eei: typings.ethereumjsVm.eeiMod.default) = this()
   }
   
   @js.native
@@ -33,7 +33,7 @@ object interpreterMod {
     
     var _state: typings.ethereumjsVm.promisifiedMod.default = js.native
     
-    var _vm: js.Any = js.native
+    var _vm: Any = js.native
     
     /**
       * Get the handler function for an opcode.
@@ -157,7 +157,7 @@ object interpreterMod {
       
       inline def setMemory(value: js.Array[Double]): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      inline def setMemoryVarargs(value: Double*): Self = StObject.set(x, "memory", js.Array(value :_*))
+      inline def setMemoryVarargs(value: Double*): Self = StObject.set(x, "memory", js.Array(value*))
       
       inline def setMemoryWordCount(value: ^): Self = StObject.set(x, "memoryWordCount", value.asInstanceOf[js.Any])
       
@@ -167,7 +167,7 @@ object interpreterMod {
       
       inline def setStack(value: js.Array[^]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      inline def setStackVarargs(value: ^ *): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: ^ *): Self = StObject.set(x, "stack", js.Array(value*))
       
       inline def setStateManager(value: StateManager): Self = StObject.set(x, "stateManager", value.asInstanceOf[js.Any])
     }
@@ -238,7 +238,7 @@ object interpreterMod {
       
       inline def setValidJumps(value: js.Array[Double]): Self = StObject.set(x, "validJumps", value.asInstanceOf[js.Any])
       
-      inline def setValidJumpsVarargs(value: Double*): Self = StObject.set(x, "validJumps", js.Array(value :_*))
+      inline def setValidJumpsVarargs(value: Double*): Self = StObject.set(x, "validJumps", js.Array(value*))
       
       inline def set_common(value: typings.ethereumjsCommon.mod.default): Self = StObject.set(x, "_common", value.asInstanceOf[js.Any])
     }

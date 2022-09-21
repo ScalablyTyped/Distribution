@@ -13,19 +13,19 @@ object mod {
     
     def bindAll[T](
       resourceName: String,
-      params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
+      params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSFilterParams */ Any,
       scope: IScope,
       expr: String
     ): js.Function = js.native
     def bindAll[T](
       resourceName: String,
-      params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
+      params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSFilterParams */ Any,
       scope: IScope,
       expr: String,
       cb: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ Any, 
           /* items */ js.Array[
-            T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any)
+            T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ Any)
           ], 
           Unit
         ]
@@ -38,8 +38,8 @@ object mod {
       scope: IScope,
       expr: String,
       cb: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
-          /* item */ T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ Any, 
+          /* item */ T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ Any), 
           Unit
         ]
     ): js.Function = js.native
@@ -50,8 +50,8 @@ object mod {
       scope: IScope,
       expr: String,
       cb: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
-          /* item */ T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ Any, 
+          /* item */ T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ Any), 
           Unit
         ]
     ): js.Function = js.native
@@ -59,12 +59,12 @@ object mod {
   
   trait DSProvider extends StObject {
     
-    var defaults: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSConfiguration */ js.Any
+    var defaults: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSConfiguration */ Any
   }
   object DSProvider {
     
     inline def apply(
-      defaults: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSConfiguration */ js.Any
+      defaults: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSConfiguration */ Any
     ): DSProvider = {
       val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
       __obj.asInstanceOf[DSProvider]
@@ -73,7 +73,7 @@ object mod {
     extension [Self <: DSProvider](x: Self) {
       
       inline def setDefaults(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSConfiguration */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSConfiguration */ Any
       ): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }
   }
@@ -82,18 +82,18 @@ object mod {
   trait DSResourceDefinition[T] extends StObject {
     
     def bindAll(
-      params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
+      params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSFilterParams */ Any,
       scope: IScope,
       expr: String
     ): js.Function = js.native
     def bindAll(
-      params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
+      params: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSFilterParams */ Any,
       scope: IScope,
       expr: String,
       cb: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ Any, 
           /* items */ js.Array[
-            T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any)
+            T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ Any)
           ], 
           Unit
         ]
@@ -105,8 +105,8 @@ object mod {
       scope: IScope,
       expr: String,
       cb: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
-          /* item */ T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ Any, 
+          /* item */ T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ Any), 
           Unit
         ]
     ): js.Function = js.native
@@ -116,8 +116,8 @@ object mod {
       scope: IScope,
       expr: String,
       cb: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
-          /* item */ T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ Any, 
+          /* item */ T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ Any), 
           Unit
         ]
     ): js.Function = js.native

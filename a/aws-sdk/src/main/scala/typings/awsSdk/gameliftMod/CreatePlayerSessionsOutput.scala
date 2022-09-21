@@ -24,6 +24,6 @@ object CreatePlayerSessionsOutput {
     
     inline def setPlayerSessionsUndefined: Self = StObject.set(x, "PlayerSessions", js.undefined)
     
-    inline def setPlayerSessionsVarargs(value: PlayerSession*): Self = StObject.set(x, "PlayerSessions", js.Array(value :_*))
+    inline def setPlayerSessionsVarargs(value: PlayerSession*): Self = StObject.set(x, "PlayerSessions", js.Array(value*))
   }
 }

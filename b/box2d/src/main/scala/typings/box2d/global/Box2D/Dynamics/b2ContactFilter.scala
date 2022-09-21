@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Box2D.Dynamics.b2ContactFilter")
 @js.native
-class b2ContactFilter ()
+open class b2ContactFilter ()
   extends StObject
      with typings.box2d.Box2D.Dynamics.b2ContactFilter {
   
@@ -19,7 +19,7 @@ class b2ContactFilter ()
     * @return True if the fixture should be considered for ray intersection, otherwise false.
     **/
   /* CompleteClass */
-  override def RayCollide(userData: js.Any): Boolean = js.native
+  override def RayCollide(userData: Any): Boolean = js.native
   
   /**
     * Return true if contact calculations should be performed between these two fixtures.

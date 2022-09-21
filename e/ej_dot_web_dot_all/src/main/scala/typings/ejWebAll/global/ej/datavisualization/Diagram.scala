@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.datavisualization.Diagram")
 @js.native
-class Diagram protected ()
+open class Diagram protected ()
   extends StObject
      with typings.ejWebAll.ej.datavisualization.Diagram {
   def this(element: JQuery) = this()
@@ -916,8 +916,8 @@ object Diagram {
   /* static member */
   @JSGlobal("ej.datavisualization.Diagram.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.datavisualization.Diagram.Multiplicity")
   @js.native

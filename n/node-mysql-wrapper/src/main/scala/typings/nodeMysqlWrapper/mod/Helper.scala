@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @returnTye {U}
   * @return {U}
   */
-class Helper () extends StObject
+open class Helper () extends StObject
 object Helper {
   
   @JSImport("node-mysql-wrapper", "Helper")
@@ -64,7 +64,7 @@ object Helper {
     * @return boolean
     */
   /* static member */
-  inline def hasRules(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasRules")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasRules(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasRules")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Checks if anything is a function.
@@ -72,7 +72,7 @@ object Helper {
     * @return boolean
     */
   /* static member */
-  inline def isFunction(functionToCheck: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(functionToCheck.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFunction(functionToCheck: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(functionToCheck.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Converts any_string to anyString and returns it.

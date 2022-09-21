@@ -1,12 +1,15 @@
 package typings.blueprintjsCore
 
+import typings.blueprintjsCore.anon.IsHandleTooltip
 import typings.blueprintjsCore.anon.LabelPrecision
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.handlePropsMod.IHandleProps
 import typings.blueprintjsCore.intentMod.Intent
 import typings.blueprintjsCore.propsMod.IIntentProps
 import typings.blueprintjsCore.propsMod.IProps
-import typings.react.mod.FunctionComponent
+import typings.react.mod.FC
+import typings.react.mod.PropsWithChildren
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,61 +19,63 @@ object multiSliderMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/slider/multiSlider", "MultiSlider")
   @js.native
-  class MultiSlider protected ()
-    extends AbstractPureComponent2[IMultiSliderProps, ISliderState, js.Object] {
-    def this(props: IMultiSliderProps) = this()
-    def this(props: IMultiSliderProps, context: js.Any) = this()
+  open class MultiSlider protected ()
+    extends AbstractPureComponent2[MultiSliderProps, ISliderState, js.Object] {
+    def this(props: MultiSliderProps) = this()
+    def this(props: MultiSliderProps, context: Any) = this()
     
-    /* private */ var addHandleRef: js.Any = js.native
+    /* private */ var addHandleRef: Any = js.native
     
-    /* private */ var canHandleTrackEvent: js.Any = js.native
+    /* private */ var canHandleTrackEvent: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MMultiSlider(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MMultiSlider(prevProps: IMultiSliderProps, prevState: ISliderState): Unit = js.native
+    def componentDidUpdate_MMultiSlider(prevProps: MultiSliderProps, prevState: ISliderState): Unit = js.native
     
-    /* private */ var findFirstLockedHandleIndex: js.Any = js.native
+    /* private */ var findFirstLockedHandleIndex: Any = js.native
     
-    /* private */ var formatLabel: js.Any = js.native
+    /* private */ var formatLabel: Any = js.native
     
-    /* private */ var getHandlerForIndex: js.Any = js.native
+    /* private */ var getHandlerForIndex: Any = js.native
     
-    /* private */ var getLabelValues: js.Any = js.native
+    /* private */ var getLabelValues: Any = js.native
     
-    /* private */ var getNewHandleValues: js.Any = js.native
+    /* private */ var getNewHandleValues: Any = js.native
     
-    /* private */ var getOffsetRatio: js.Any = js.native
+    /* private */ var getOffsetRatio: Any = js.native
     
     @JSName("getSnapshotBeforeUpdate")
-    def getSnapshotBeforeUpdate_MMultiSlider(prevProps: IMultiSliderProps): Null = js.native
+    def getSnapshotBeforeUpdate_MMultiSlider(prevProps: MultiSliderProps): Null = js.native
     
-    /* private */ var getTrackIntent: js.Any = js.native
+    /* private */ var getTrackIntent: Any = js.native
     
-    /* private */ var handleChange: js.Any = js.native
+    /* private */ var handleChange: Any = js.native
     
-    /* private */ var handleElements: js.Any = js.native
+    /* private */ var handleElements: Any = js.native
     
-    /* private */ var handleRelease: js.Any = js.native
+    /* private */ var handleRelease: Any = js.native
     
-    /* private */ var maybeHandleTrackClick: js.Any = js.native
+    /* private */ var maybeHandleTrackClick: Any = js.native
     
-    /* private */ var maybeHandleTrackTouch: js.Any = js.native
+    /* private */ var maybeHandleTrackTouch: Any = js.native
     
-    /* private */ var nearestHandleForValue: js.Any = js.native
+    /* private */ var nearestHandleForValue: Any = js.native
     
-    /* private */ var renderHandles: js.Any = js.native
+    /* private */ var renderHandles: Any = js.native
     
-    /* private */ var renderLabels: js.Any = js.native
+    /* private */ var renderLabels: Any = js.native
     
-    /* private */ var renderTrackFill: js.Any = js.native
+    /* private */ var renderTrackFill: Any = js.native
     
-    /* private */ var renderTracks: js.Any = js.native
+    /* private */ var renderTracks: Any = js.native
     
-    /* private */ var trackElement: js.Any = js.native
+    /* private */ var trackElement: Any = js.native
     
-    /* private */ var updateTickSize: js.Any = js.native
+    /* private */ var updateTickSize: Any = js.native
+    
+    /* protected */ def validateProps(props: PropsWithChildren[MultiSliderProps]): Unit = js.native
   }
   /* static members */
   object MultiSlider {
@@ -81,13 +86,13 @@ object multiSliderMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/slider/multiSlider", "MultiSlider.Handle")
     @js.native
-    def Handle: FunctionComponent[IHandleProps] = js.native
-    inline def Handle_=(x: FunctionComponent[IHandleProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Handle")(x.asInstanceOf[js.Any])
+    def Handle: FC[IHandleProps] = js.native
+    inline def Handle_=(x: FC[IHandleProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Handle")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/slider/multiSlider", "MultiSlider.defaultProps")
     @js.native
-    def defaultProps: IMultiSliderProps = js.native
-    inline def defaultProps_=(x: IMultiSliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: MultiSliderProps = js.native
+    inline def defaultProps_=(x: MultiSliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/slider/multiSlider", "MultiSlider.defaultSliderProps")
     @js.native
@@ -99,12 +104,12 @@ object multiSliderMod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps(props: IMultiSliderProps): LabelPrecision = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any]).asInstanceOf[LabelPrecision]
+    inline def getDerivedStateFromProps(props: MultiSliderProps): LabelPrecision = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any]).asInstanceOf[LabelPrecision]
     
     @JSImport("@blueprintjs/core/lib/esm/components/slider/multiSlider", "MultiSlider.getLabelPrecision")
     @js.native
-    def getLabelPrecision: js.Any = js.native
-    inline def getLabelPrecision_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getLabelPrecision")(x.asInstanceOf[js.Any])
+    def getLabelPrecision: Any = js.native
+    inline def getLabelPrecision_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getLabelPrecision")(x.asInstanceOf[js.Any])
   }
   
   trait IMultiSliderProps
@@ -148,8 +153,11 @@ object multiSliderMod {
        with IProps
        with IIntentProps {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /**
       * Whether the slider is non-interactive.
+      *
       * @default false
       */
     var disabled: js.UndefOr[Boolean] = js.undefined
@@ -158,6 +166,7 @@ object multiSliderMod {
       * Number of decimal places to use when rendering label value. Default value is the number of
       * decimals used in the `stepSize` prop. This prop has _no effect_ if you supply a custom
       * `labelRenderer` callback.
+      *
       * @default inferred from stepSize
       */
     var labelPrecision: js.UndefOr[Double] = js.undefined
@@ -166,12 +175,19 @@ object multiSliderMod {
       * Callback to render a single label. Useful for formatting numbers as currency or percentages.
       * If `true`, labels will use number value formatted to `labelPrecision` decimal places.
       * If `false`, labels will not be shown.
+      *
+      * The callback is provided a numeric value and optional rendering options, which include:
+      * - isHandleTooltip: whether this label is being rendered within a handle tooltip
+      *
       * @default true
       */
-    var labelRenderer: js.UndefOr[Boolean | (js.Function1[/* value */ Double, String | Element])] = js.undefined
+    var labelRenderer: js.UndefOr[
+        Boolean | (js.Function2[/* value */ Double, /* opts */ js.UndefOr[IsHandleTooltip], String | Element])
+      ] = js.undefined
     
     /**
       * Increment between successive labels. Must be greater than zero.
+      *
       * @default inferred (if labelStepSize is undefined)
       */
     var labelStepSize: js.UndefOr[Double] = js.undefined
@@ -184,12 +200,14 @@ object multiSliderMod {
     
     /**
       * Maximum value of the slider.
+      *
       * @default 10
       */
     var max: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum value of the slider.
+      *
       * @default 0
       */
     var min: js.UndefOr[Double] = js.undefined
@@ -197,18 +215,21 @@ object multiSliderMod {
     /**
       * Whether a solid bar should be rendered on the track between current and initial values,
       * or between handles for `RangeSlider`.
+      *
       * @default true
       */
     var showTrackFill: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Increment between successive values; amount by which the handle moves. Must be greater than zero.
+      *
       * @default 1
       */
     var stepSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether to show the slider in a vertical orientation.
+      *
       * @default false
       */
     var vertical: js.UndefOr[Boolean] = js.undefined
@@ -222,6 +243,10 @@ object multiSliderMod {
     
     extension [Self <: ISliderBaseProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
@@ -230,9 +255,11 @@ object multiSliderMod {
       
       inline def setLabelPrecisionUndefined: Self = StObject.set(x, "labelPrecision", js.undefined)
       
-      inline def setLabelRenderer(value: Boolean | (js.Function1[/* value */ Double, String | Element])): Self = StObject.set(x, "labelRenderer", value.asInstanceOf[js.Any])
+      inline def setLabelRenderer(
+        value: Boolean | (js.Function2[/* value */ Double, /* opts */ js.UndefOr[IsHandleTooltip], String | Element])
+      ): Self = StObject.set(x, "labelRenderer", value.asInstanceOf[js.Any])
       
-      inline def setLabelRendererFunction1(value: /* value */ Double => String | Element): Self = StObject.set(x, "labelRenderer", js.Any.fromFunction1(value))
+      inline def setLabelRendererFunction2(value: (/* value */ Double, /* opts */ js.UndefOr[IsHandleTooltip]) => String | Element): Self = StObject.set(x, "labelRenderer", js.Any.fromFunction2(value))
       
       inline def setLabelRendererUndefined: Self = StObject.set(x, "labelRenderer", js.undefined)
       
@@ -244,7 +271,7 @@ object multiSliderMod {
       
       inline def setLabelValuesUndefined: Self = StObject.set(x, "labelValues", js.undefined)
       
-      inline def setLabelValuesVarargs(value: Double*): Self = StObject.set(x, "labelValues", js.Array(value :_*))
+      inline def setLabelValuesVarargs(value: Double*): Self = StObject.set(x, "labelValues", js.Array(value*))
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -294,4 +321,6 @@ object multiSliderMod {
       inline def setTickSizeRatio(value: Double): Self = StObject.set(x, "tickSizeRatio", value.asInstanceOf[js.Any])
     }
   }
+  
+  type MultiSliderProps = IMultiSliderProps
 }

@@ -29,7 +29,7 @@ object ViewBillingResponse {
     
     inline def setBillingRecordsUndefined: Self = StObject.set(x, "BillingRecords", js.undefined)
     
-    inline def setBillingRecordsVarargs(value: BillingRecord*): Self = StObject.set(x, "BillingRecords", js.Array(value :_*))
+    inline def setBillingRecordsVarargs(value: BillingRecord*): Self = StObject.set(x, "BillingRecords", js.Array(value*))
     
     inline def setNextPageMarker(value: PageMarker): Self = StObject.set(x, "NextPageMarker", value.asInstanceOf[js.Any])
     

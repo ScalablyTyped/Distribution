@@ -8,5 +8,5 @@ object encryptionMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/_Encryption", "_Encryption")
   @js.native
-  val Encryption: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Encryption: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -3,6 +3,7 @@ package typings.reactScrollspy
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
+import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,11 +13,11 @@ object mod {
   
   @JSImport("react-scrollspy", JSImport.Default)
   @js.native
-  class default () extends Scrollspy
+  open class default () extends Scrollspy
   
   @js.native
   trait Scrollspy
-    extends Component[ScrollspyProps, js.Object, js.Any] {
+    extends Component[ScrollspyProps, js.Object, Any] {
     
     // Remove event listener of scrollspy.
     def offEvent(): Unit = js.native
@@ -26,6 +27,8 @@ object mod {
   }
   
   trait ScrollspyProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     // ClassName attribute to be passed to the generated <ul /> element
     var className: js.UndefOr[String] = js.undefined
@@ -63,6 +66,10 @@ object mod {
     
     extension [Self <: ScrollspyProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
@@ -75,7 +82,7 @@ object mod {
       
       inline def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

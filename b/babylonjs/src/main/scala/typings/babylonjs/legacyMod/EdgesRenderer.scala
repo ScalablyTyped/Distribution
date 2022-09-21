@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "EdgesRenderer")
 @js.native
-class EdgesRenderer protected ()
+open class EdgesRenderer protected ()
   extends typings.babylonjs.indexMod.EdgesRenderer {
   /**
     * Creates an instance of the EdgesRenderer. It is primarily use to display edges of a mesh.
@@ -118,8 +118,8 @@ object EdgesRenderer {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("babylonjs/Legacy/legacy", "EdgesRenderer.GetShader")
+  @JSImport("babylonjs/Legacy/legacy", "EdgesRenderer._GetShader")
   @js.native
-  def GetShader: js.Any = js.native
-  inline def GetShader_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetShader")(x.asInstanceOf[js.Any])
+  def _GetShader: Any = js.native
+  inline def _GetShader_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetShader")(x.asInstanceOf[js.Any])
 }

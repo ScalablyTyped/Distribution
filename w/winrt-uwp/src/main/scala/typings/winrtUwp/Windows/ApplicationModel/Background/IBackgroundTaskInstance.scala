@@ -33,7 +33,7 @@ trait IBackgroundTaskInstance extends StObject {
   var task: BackgroundTaskRegistration
   
   /** Gets additional information associated with a background task instance. */
-  var triggerDetails: js.Any
+  var triggerDetails: Any
 }
 object IBackgroundTaskInstance {
   
@@ -44,7 +44,7 @@ object IBackgroundTaskInstance {
     progress: Double,
     suspendedCount: Double,
     task: BackgroundTaskRegistration,
-    triggerDetails: js.Any
+    triggerDetails: Any
   ): IBackgroundTaskInstance = {
     val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral), getThrottleCount = js.Any.fromFunction1(getThrottleCount), instanceId = instanceId.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], suspendedCount = suspendedCount.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], triggerDetails = triggerDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBackgroundTaskInstance]
@@ -64,6 +64,6 @@ object IBackgroundTaskInstance {
     
     inline def setTask(value: BackgroundTaskRegistration): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    inline def setTriggerDetails(value: js.Any): Self = StObject.set(x, "triggerDetails", value.asInstanceOf[js.Any])
+    inline def setTriggerDetails(value: Any): Self = StObject.set(x, "triggerDetails", value.asInstanceOf[js.Any])
   }
 }

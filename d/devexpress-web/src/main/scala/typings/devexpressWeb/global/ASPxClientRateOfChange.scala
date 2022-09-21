@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRateOfChange")
 @js.native
-class ASPxClientRateOfChange ()
+open class ASPxClientRateOfChange ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRateOfChange {
   

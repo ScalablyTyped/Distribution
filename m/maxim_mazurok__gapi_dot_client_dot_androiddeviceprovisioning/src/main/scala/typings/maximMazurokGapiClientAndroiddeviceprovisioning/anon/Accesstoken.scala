@@ -29,7 +29,10 @@ trait Accesstoken extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The customer that manages the configuration. An API resource name in the format `customers/[CUSTOMER_ID]`. */
+  /**
+    * Required. The customer that manages the configuration. An API resource name in the format `customers/[CUSTOMER_ID]`. This field has custom validation in
+    * CreateConfigurationRequestValidator
+    */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

@@ -1,6 +1,5 @@
 package typings.sawtoothSdk.protobufMod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait IBlock extends StObject {
   var batches: js.UndefOr[js.Array[IBatch] | Null] = js.undefined
   
   /** Block header */
-  var header: js.UndefOr[Uint8Array | Null] = js.undefined
+  var header: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
   
   /** Block headerSignature */
   var headerSignature: js.UndefOr[String | Null] = js.undefined
@@ -31,9 +30,9 @@ object IBlock {
     
     inline def setBatchesUndefined: Self = StObject.set(x, "batches", js.undefined)
     
-    inline def setBatchesVarargs(value: IBatch*): Self = StObject.set(x, "batches", js.Array(value :_*))
+    inline def setBatchesVarargs(value: IBatch*): Self = StObject.set(x, "batches", js.Array(value*))
     
-    inline def setHeader(value: Uint8Array): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: js.typedarray.Uint8Array): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
     inline def setHeaderNull: Self = StObject.set(x, "header", null)
     

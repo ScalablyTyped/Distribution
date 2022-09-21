@@ -75,10 +75,10 @@ object mod {
     */
   methods: Methods
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def apply(request: Unit, response: ServerResponse): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def apply(request: Unit, response: ServerResponse[IncomingMessage]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def apply(
     request: Unit,
-    response: ServerResponse,
+    response: ServerResponse[IncomingMessage],
     /**
     * If you want to customize the package's default behaviour, you can use
     * this argument to pass any of the configuration options provided.
@@ -99,7 +99,7 @@ object mod {
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def apply(
     request: Unit,
-    response: ServerResponse,
+    response: ServerResponse[IncomingMessage],
     /**
     * If you want to customize the package's default behaviour, you can use
     * this argument to pass any of the configuration options provided.
@@ -110,7 +110,7 @@ object mod {
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def apply(
     request: Unit,
-    response: ServerResponse,
+    response: ServerResponse[IncomingMessage],
     /**
     * If you want to customize the package's default behaviour, you can use
     * this argument to pass any of the configuration options provided.
@@ -183,10 +183,10 @@ object mod {
     */
   methods: Methods
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def apply(request: IncomingMessage, response: ServerResponse): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def apply(request: IncomingMessage, response: ServerResponse[IncomingMessage]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def apply(
     request: IncomingMessage,
-    response: ServerResponse,
+    response: ServerResponse[IncomingMessage],
     /**
     * If you want to customize the package's default behaviour, you can use
     * this argument to pass any of the configuration options provided.
@@ -207,7 +207,7 @@ object mod {
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def apply(
     request: IncomingMessage,
-    response: ServerResponse,
+    response: ServerResponse[IncomingMessage],
     /**
     * If you want to customize the package's default behaviour, you can use
     * this argument to pass any of the configuration options provided.
@@ -218,7 +218,7 @@ object mod {
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def apply(
     request: IncomingMessage,
-    response: ServerResponse,
+    response: ServerResponse[IncomingMessage],
     /**
     * If you want to customize the package's default behaviour, you can use
     * this argument to pass any of the configuration options provided.
@@ -396,13 +396,13 @@ object mod {
       
       inline def setCleanUrlsUndefined: Self = StObject.set(x, "cleanUrls", js.undefined)
       
-      inline def setCleanUrlsVarargs(value: String*): Self = StObject.set(x, "cleanUrls", js.Array(value :_*))
+      inline def setCleanUrlsVarargs(value: String*): Self = StObject.set(x, "cleanUrls", js.Array(value*))
       
       inline def setDirectoryListing(value: Boolean | js.Array[String]): Self = StObject.set(x, "directoryListing", value.asInstanceOf[js.Any])
       
       inline def setDirectoryListingUndefined: Self = StObject.set(x, "directoryListing", js.undefined)
       
-      inline def setDirectoryListingVarargs(value: String*): Self = StObject.set(x, "directoryListing", js.Array(value :_*))
+      inline def setDirectoryListingVarargs(value: String*): Self = StObject.set(x, "directoryListing", js.Array(value*))
       
       inline def setEtag(value: Boolean): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
@@ -412,7 +412,7 @@ object mod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: Header*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: Header*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setPublic(value: String): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
@@ -422,7 +422,7 @@ object mod {
       
       inline def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
       
-      inline def setRedirectsVarargs(value: Redirect*): Self = StObject.set(x, "redirects", js.Array(value :_*))
+      inline def setRedirectsVarargs(value: Redirect*): Self = StObject.set(x, "redirects", js.Array(value*))
       
       inline def setRenderSingle(value: Boolean): Self = StObject.set(x, "renderSingle", value.asInstanceOf[js.Any])
       
@@ -432,7 +432,7 @@ object mod {
       
       inline def setRewritesUndefined: Self = StObject.set(x, "rewrites", js.undefined)
       
-      inline def setRewritesVarargs(value: Rewrite*): Self = StObject.set(x, "rewrites", js.Array(value :_*))
+      inline def setRewritesVarargs(value: Rewrite*): Self = StObject.set(x, "rewrites", js.Array(value*))
       
       inline def setSymlinks(value: Boolean): Self = StObject.set(x, "symlinks", value.asInstanceOf[js.Any])
       
@@ -446,7 +446,7 @@ object mod {
       
       inline def setUnlistedUndefined: Self = StObject.set(x, "unlisted", js.undefined)
       
-      inline def setUnlistedVarargs(value: String*): Self = StObject.set(x, "unlisted", js.Array(value :_*))
+      inline def setUnlistedVarargs(value: String*): Self = StObject.set(x, "unlisted", js.Array(value*))
     }
   }
   
@@ -467,7 +467,7 @@ object mod {
       
       inline def setHeaders(value: js.Array[Key]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setHeadersVarargs(value: Key*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: Key*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
@@ -511,7 +511,7 @@ object mod {
       inline def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
       
       inline def setSendError(
-        value: (/* absolutePath */ js.UndefOr[String], /* response */ js.UndefOr[ServerResponse], /* acceptsJSON */ js.UndefOr[Boolean], /* current */ js.UndefOr[String], /* handlers */ js.UndefOr[Methods], /* config */ js.UndefOr[Config], /* spec */ js.UndefOr[js.Any]) => js.Promise[Unit]
+        value: (/* absolutePath */ js.UndefOr[String], /* response */ js.UndefOr[ServerResponse[IncomingMessage]], /* acceptsJSON */ js.UndefOr[Boolean], /* current */ js.UndefOr[String], /* handlers */ js.UndefOr[Methods], /* config */ js.UndefOr[Config], /* spec */ js.UndefOr[Any]) => js.Promise[Unit]
       ): Self = StObject.set(x, "sendError", js.Any.fromFunction7(value))
       
       inline def setSendErrorUndefined: Self = StObject.set(x, "sendError", js.undefined)
@@ -561,12 +561,12 @@ object mod {
   
   type SendErrorHandler = js.Function7[
     /* absolutePath */ js.UndefOr[String], 
-    /* response */ js.UndefOr[ServerResponse], 
+    /* response */ js.UndefOr[ServerResponse[IncomingMessage]], 
     /* acceptsJSON */ js.UndefOr[Boolean], 
     /* current */ js.UndefOr[String], 
     /* handlers */ js.UndefOr[Methods], 
     /* config */ js.UndefOr[Config], 
-    /* spec */ js.UndefOr[js.Any], 
+    /* spec */ js.UndefOr[Any], 
     js.Promise[Unit]
   ]
 }

@@ -10,10 +10,10 @@ A query library for ECMAScript AST using a CSS selector like query language.
 | ------------------ | :-------------: |
 | Full name          | esquery |
 | Keywords           | ast, ecmascript, javascript, query |
-| # releases         | 5 |
-| # dependents       | 154 |
-| # downloads        | 522961179 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 8.5382514E7 |
+| # stars            | 614.0 |
 
 ## Links
 - [Homepage](https://github.com/estools/esquery/)

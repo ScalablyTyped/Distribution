@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("photonui.Label")
 @js.native
-class Label ()
+open class Label ()
   extends StObject
      with typings.photonui.photonui.Label {
   def this(name: String) = this()
-  def this(params: StringDictionary[js.Any]) = this()
-  def this(name: String, params: StringDictionary[js.Any]) = this()
+  def this(params: StringDictionary[Any]) = this()
+  def this(name: String, params: StringDictionary[Any]) = this()
   
   /* CompleteClass */
   var absolutePosition: X = js.native
@@ -46,7 +46,7 @@ class Label ()
   
   // readonly
   /* CompleteClass */
-  var layoutOptions: StringDictionary[js.Any] = js.native
+  var layoutOptions: StringDictionary[Any] = js.native
   
   /* CompleteClass */
   var name: String = js.native
@@ -66,7 +66,7 @@ class Label ()
   var parentName: String = js.native
   
   /* CompleteClass */
-  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: js.Any): Unit = js.native
+  override def registerCallback(id: String, wEvent: String, callback: js.Function, thisArg: Any): Unit = js.native
   
   /* CompleteClass */
   override def removeCallback(id: String): Unit = js.native

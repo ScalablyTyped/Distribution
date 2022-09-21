@@ -10,7 +10,7 @@ object geometryUtilsMod {
   
   @JSImport("wonder.js/dist/es2015/component/geometry/GeometryUtils", "GeometryUtils")
   @js.native
-  class GeometryUtils () extends StObject
+  open class GeometryUtils () extends StObject
   /* static members */
   object GeometryUtils {
     
@@ -23,11 +23,11 @@ object geometryUtilsMod {
     
     inline def getThreeComponent(sourceData: js.Array[Double], index: Double): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("getThreeComponent")(sourceData.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Vector3]
     
-    inline def hasData(data: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasData")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def hasData(data: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasData")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def iterateThreeComponent(dataArr: js.Array[Double], iterator: js.Function1[/* v */ Vector3, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateThreeComponent")(dataArr.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def setThreeComponent(targetData: js.Array[Double], sourceData: js.Array[Double], index: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setThreeComponent")(targetData.asInstanceOf[js.Any], sourceData.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def setThreeComponent(targetData: js.Array[Double], sourceData: Vector3, index: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setThreeComponent")(targetData.asInstanceOf[js.Any], sourceData.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def setThreeComponent(targetData: js.Array[Double], sourceData: js.Array[Double], index: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setThreeComponent")(targetData.asInstanceOf[js.Any], sourceData.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def setThreeComponent(targetData: js.Array[Double], sourceData: Vector3, index: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setThreeComponent")(targetData.asInstanceOf[js.Any], sourceData.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
 }

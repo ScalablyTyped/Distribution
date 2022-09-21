@@ -10,10 +10,10 @@ Left pad a string with zeros or a specified string. Fastest implementation.
 | ------------------ | :-------------: |
 | Full name          | pad-left |
 | Keywords           | align, fill, left, pad, pad-left, padded, padding, spaces, string, zero, zero-fill, zeros |
-| # releases         | 0 |
-| # dependents       | 77 |
-| # downloads        | 4942301 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 653602.6666666666 |
+| # stars            | 43.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/pad-left)

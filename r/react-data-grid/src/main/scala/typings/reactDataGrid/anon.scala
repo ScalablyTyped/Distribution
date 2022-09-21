@@ -55,30 +55,30 @@ object anon {
   
   trait Data extends StObject {
     
-    var Data: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Data */ js.Any
+    var Data: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Data */ Any
     
-    var DraggableHeader: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DraggableHeader */ js.Any
+    var DraggableHeader: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DraggableHeader */ Any
     
-    var Editors: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Editors */ js.Any
+    var Editors: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Editors */ Any
     
-    var Filters: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Filters */ js.Any
+    var Filters: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Filters */ Any
     
-    var Formatters: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Formatters */ js.Any
+    var Formatters: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Formatters */ Any
     
-    var Menu: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Menu */ js.Any
+    var Menu: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Menu */ Any
     
-    var Toolbar: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Toolbar */ js.Any
+    var Toolbar: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Toolbar */ Any
   }
   object Data {
     
     inline def apply(
-      Data: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Data */ js.Any,
-      DraggableHeader: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DraggableHeader */ js.Any,
-      Editors: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Editors */ js.Any,
-      Filters: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Filters */ js.Any,
-      Formatters: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Formatters */ js.Any,
-      Menu: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Menu */ js.Any,
-      Toolbar: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Toolbar */ js.Any
+      Data: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Data */ Any,
+      DraggableHeader: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DraggableHeader */ Any,
+      Editors: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Editors */ Any,
+      Filters: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Filters */ Any,
+      Formatters: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Formatters */ Any,
+      Menu: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Menu */ Any,
+      Toolbar: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Toolbar */ Any
     ): Data = {
       val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], DraggableHeader = DraggableHeader.asInstanceOf[js.Any], Editors = Editors.asInstanceOf[js.Any], Filters = Filters.asInstanceOf[js.Any], Formatters = Formatters.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], Toolbar = Toolbar.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
@@ -86,21 +86,21 @@ object anon {
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Data */ js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Data */ Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
       inline def setDraggableHeader(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DraggableHeader */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DraggableHeader */ Any
       ): Self = StObject.set(x, "DraggableHeader", value.asInstanceOf[js.Any])
       
-      inline def setEditors(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Editors */ js.Any): Self = StObject.set(x, "Editors", value.asInstanceOf[js.Any])
+      inline def setEditors(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Editors */ Any): Self = StObject.set(x, "Editors", value.asInstanceOf[js.Any])
       
-      inline def setFilters(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Filters */ js.Any): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Filters */ Any): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
       
-      inline def setFormatters(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Formatters */ js.Any): Self = StObject.set(x, "Formatters", value.asInstanceOf[js.Any])
+      inline def setFormatters(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Formatters */ Any): Self = StObject.set(x, "Formatters", value.asInstanceOf[js.Any])
       
-      inline def setMenu(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Menu */ js.Any): Self = StObject.set(x, "Menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Menu */ Any): Self = StObject.set(x, "Menu", value.asInstanceOf[js.Any])
       
-      inline def setToolbar(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Toolbar */ js.Any): Self = StObject.set(x, "Toolbar", value.asInstanceOf[js.Any])
+      inline def setToolbar(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Toolbar */ Any): Self = StObject.set(x, "Toolbar", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,20 +149,20 @@ object anon {
   
   trait Id extends StObject {
     
-    var id: js.Any
+    var id: Any
     
     var title: String
   }
   object Id {
     
-    inline def apply(id: js.Any, title: String): Id = {
+    inline def apply(id: Any, title: String): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
     extension [Self <: Id](x: Self) {
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
@@ -210,7 +210,7 @@ object anon {
       
       inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
       
-      inline def setIndexesVarargs(value: Double*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+      inline def setIndexesVarargs(value: Double*): Self = StObject.set(x, "indexes", js.Array(value*))
       
       inline def setIsSelectedKey(value: String): Self = StObject.set(x, "isSelectedKey", value.asInstanceOf[js.Any])
       
@@ -251,11 +251,11 @@ object anon {
     
     var rowKey: String
     
-    var values: js.Array[js.Any]
+    var values: js.Array[Any]
   }
   object RowKey {
     
-    inline def apply(rowKey: String, values: js.Array[js.Any]): RowKey = {
+    inline def apply(rowKey: String, values: js.Array[Any]): RowKey = {
       val __obj = js.Dynamic.literal(rowKey = rowKey.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowKey]
     }
@@ -264,9 +264,9 @@ object anon {
       
       inline def setRowKey(value: String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   

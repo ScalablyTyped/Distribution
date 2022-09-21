@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "WebGL2ShaderProcessor")
 @js.native
-class WebGL2ShaderProcessor ()
+open class WebGL2ShaderProcessor ()
   extends typings.babylonjs.indexMod.WebGL2ShaderProcessor

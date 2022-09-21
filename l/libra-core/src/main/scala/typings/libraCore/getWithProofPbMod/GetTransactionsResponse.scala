@@ -7,14 +7,13 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.transactionPbMod.TransactionListWithProof
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetTransactionsResponse")
 @js.native
-class GetTransactionsResponse () extends Message {
+open class GetTransactionsResponse () extends Message {
   
   def clearTxnListWithProof(): Unit = js.native
   
@@ -32,7 +31,7 @@ object GetTransactionsResponse {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): GetTransactionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetTransactionsResponse]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): GetTransactionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetTransactionsResponse]
   
   inline def deserializeBinaryFromReader(message: GetTransactionsResponse, reader: BinaryReader): GetTransactionsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetTransactionsResponse]
   

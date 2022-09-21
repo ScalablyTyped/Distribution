@@ -42,7 +42,7 @@ object StartAssetImportResponse {
     
     inline def setAssetImportMessagesUndefined: Self = StObject.set(x, "assetImportMessages", js.undefined)
     
-    inline def setAssetImportMessagesVarargs(value: AssetImportMessage*): Self = StObject.set(x, "assetImportMessages", js.Array(value :_*))
+    inline def setAssetImportMessagesVarargs(value: AssetImportMessage*): Self = StObject.set(x, "assetImportMessages", js.Array(value*))
     
     inline def setPublishUrl(value: String): Self = StObject.set(x, "publishUrl", value.asInstanceOf[js.Any])
     

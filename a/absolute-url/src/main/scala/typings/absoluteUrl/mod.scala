@@ -3,8 +3,7 @@ package typings.absoluteUrl
 import org.scalablytyped.runtime.Shortcut
 import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +17,23 @@ object mod extends Shortcut {
   @js.native
   trait AbsoluteUrl extends StObject {
     
-    def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def apply(): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
-    def attach(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
+    def attach(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): Unit = js.native
   }
   
   type _To = AbsoluteUrl

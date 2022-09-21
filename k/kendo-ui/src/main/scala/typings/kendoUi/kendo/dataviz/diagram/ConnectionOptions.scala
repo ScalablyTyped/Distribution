@@ -77,7 +77,7 @@ object ConnectionOptions {
     
     inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    inline def setPointsVarargs(value: ConnectionPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: ConnectionPoint*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     

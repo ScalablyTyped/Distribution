@@ -8,7 +8,6 @@ import typings.maximMazurokGapiClientServicemanagement.anon.Resource
 import typings.maximMazurokGapiClientServicemanagement.anon.ServiceName
 import typings.maximMazurokGapiClientServicemanagement.anon.UploadType
 import typings.maximMazurokGapiClientServicemanagement.anon.Uploadprotocol
-import typings.maximMazurokGapiClientServicemanagement.anon.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,10 +34,6 @@ trait ServicesResource extends StObject {
   def delete(): Request[Operation] = js.native
   def delete(request: Fields): Request[Operation] = js.native
   
-  def enable(request: Fields, body: EnableServiceRequest): Request[Operation] = js.native
-  /** Enables a service for a project, so it can be used for the project. See [Cloud Auth Guide](https://cloud.google.com/docs/authentication) for more information. Operation */
-  def enable(request: ServiceName): Request[Operation] = js.native
-  
   def generateConfigReport(request: UploadType, body: GenerateConfigReportRequest): Request[GenerateConfigReportResponse] = js.native
   /**
     * Generates and returns a report (errors, warnings and changes from existing configurations) associated with GenerateConfigReportRequest.new_value If
@@ -54,15 +49,12 @@ trait ServicesResource extends StObject {
   
   /** Gets a service configuration (version) for a managed service. */
   def getConfig(): Request[Service] = js.native
-  def getConfig(request: View): Request[Service] = js.native
+  def getConfig(request: ServiceName): Request[Service] = js.native
   
   /** Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. */
   def getIamPolicy(request: PrettyPrint, body: GetIamPolicyRequest): Request[Policy] = js.native
   
-  /**
-    * Lists managed services. Returns all public services. For authenticated users, also returns all services the calling user has "servicemanagement.services.get" permission for.
-    * **BETA:** If the caller specifies the `consumer_id`, it returns only the services enabled on the consumer. The `consumer_id` must have the format of "project:{PROJECT-ID}".
-    */
+  /** Lists managed services. Returns all public services. For authenticated users, also returns all services the calling user has "servicemanagement.services.get" permission for. */
   def list(): Request[ListServicesResponse] = js.native
   def list(request: ConsumerId): Request[ListServicesResponse] = js.native
   

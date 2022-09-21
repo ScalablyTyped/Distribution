@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-virtualized", "AutoSizer")
 @js.native
-class AutoSizer protected ()
+open class AutoSizer protected ()
   extends typings.reactVirtualized.esAutoSizerMod.AutoSizer {
   def this(props: AutoSizerProps) = this()
 }

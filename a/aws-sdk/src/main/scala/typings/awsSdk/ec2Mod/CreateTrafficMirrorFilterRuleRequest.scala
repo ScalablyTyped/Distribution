@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateTrafficMirrorFilterRuleRequest extends StObject {
   
   /**
-    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to ensure idempotency.
     */
   var ClientToken: js.UndefOr[String] = js.undefined
   
@@ -37,7 +37,7 @@ trait CreateTrafficMirrorFilterRuleRequest extends StObject {
   var Protocol: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The action to take (accept | reject) on the filtered traffic.
+    * The action to take on the filtered traffic.
     */
   var RuleAction: TrafficMirrorRuleAction
   
@@ -57,7 +57,7 @@ trait CreateTrafficMirrorFilterRuleRequest extends StObject {
   var SourcePortRange: js.UndefOr[TrafficMirrorPortRangeRequest] = js.undefined
   
   /**
-    * The type of traffic (ingress | egress).
+    * The type of traffic.
     */
   var TrafficDirection: typings.awsSdk.ec2Mod.TrafficDirection
   

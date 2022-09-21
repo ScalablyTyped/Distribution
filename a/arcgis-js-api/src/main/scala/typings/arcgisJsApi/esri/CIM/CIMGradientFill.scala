@@ -17,7 +17,7 @@ trait CIMGradientFill
   /**
     * The color scheme that is applied to the fill.
     */
-  var colorRamp: js.UndefOr[js.Any] = js.undefined
+  var colorRamp: js.UndefOr[Any] = js.undefined
   
   /**
     * A value which specifies how the gradient is applied within the fill.
@@ -67,7 +67,7 @@ object CIMGradientFill {
     
     inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    inline def setColorRamp(value: js.Any): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
+    inline def setColorRamp(value: Any): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
     
     inline def setColorRampUndefined: Self = StObject.set(x, "colorRamp", js.undefined)
     

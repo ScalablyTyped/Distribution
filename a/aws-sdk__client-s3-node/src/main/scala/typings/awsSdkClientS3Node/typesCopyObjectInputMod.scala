@@ -20,8 +20,6 @@ import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.requester_
 import typings.awsSdkClientS3Node.inputTypesUnionMod._InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
 import typings.awsSdkTypes.cryptoMod.SourceData
-import typings.std.Date
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -72,7 +70,7 @@ object typesCopyObjectInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -149,7 +147,7 @@ object typesCopyObjectInputMod {
     /**
       * <p>Copies the object if it has been modified since the specified time.</p>
       */
-    var CopySourceIfModifiedSince: js.UndefOr[Date | String | Double] = js.undefined
+    var CopySourceIfModifiedSince: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>Copies the object if its entity tag (ETag) is different than the specified ETag.</p>
@@ -159,7 +157,7 @@ object typesCopyObjectInputMod {
     /**
       * <p>Copies the object if it hasn't been modified since the specified time.</p>
       */
-    var CopySourceIfUnmodifiedSince: js.UndefOr[Date | String | Double] = js.undefined
+    var CopySourceIfUnmodifiedSince: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>Specifies the algorithm to use when decrypting the source object (e.g., AES256).</p>
@@ -169,7 +167,7 @@ object typesCopyObjectInputMod {
     /**
       * <p>The date and time at which the object is no longer cacheable.</p>
       */
-    var Expires: js.UndefOr[Date | String | Double] = js.undefined
+    var Expires: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>Gives the grantee READ, READ_ACP, and WRITE_ACP permissions on the object.</p>
@@ -199,7 +197,7 @@ object typesCopyObjectInputMod {
     /**
       * <p>A map of metadata to store with the object in S3.</p>
       */
-    var Metadata: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var Metadata: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * <p>Specifies whether the metadata is copied from the source object or replaced with metadata provided in the request.</p>
@@ -272,7 +270,7 @@ object typesCopyObjectInputMod {
       inline def set$forcePathStyleUndefined: Self = StObject.set(x, "$forcePathStyle", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -327,7 +325,7 @@ object typesCopyObjectInputMod {
       
       inline def setCopySourceIfMatchUndefined: Self = StObject.set(x, "CopySourceIfMatch", js.undefined)
       
-      inline def setCopySourceIfModifiedSince(value: Date | String | Double): Self = StObject.set(x, "CopySourceIfModifiedSince", value.asInstanceOf[js.Any])
+      inline def setCopySourceIfModifiedSince(value: js.Date | String | Double): Self = StObject.set(x, "CopySourceIfModifiedSince", value.asInstanceOf[js.Any])
       
       inline def setCopySourceIfModifiedSinceUndefined: Self = StObject.set(x, "CopySourceIfModifiedSince", js.undefined)
       
@@ -335,7 +333,7 @@ object typesCopyObjectInputMod {
       
       inline def setCopySourceIfNoneMatchUndefined: Self = StObject.set(x, "CopySourceIfNoneMatch", js.undefined)
       
-      inline def setCopySourceIfUnmodifiedSince(value: Date | String | Double): Self = StObject.set(x, "CopySourceIfUnmodifiedSince", value.asInstanceOf[js.Any])
+      inline def setCopySourceIfUnmodifiedSince(value: js.Date | String | Double): Self = StObject.set(x, "CopySourceIfUnmodifiedSince", value.asInstanceOf[js.Any])
       
       inline def setCopySourceIfUnmodifiedSinceUndefined: Self = StObject.set(x, "CopySourceIfUnmodifiedSince", js.undefined)
       
@@ -343,7 +341,7 @@ object typesCopyObjectInputMod {
       
       inline def setCopySourceSSECustomerAlgorithmUndefined: Self = StObject.set(x, "CopySourceSSECustomerAlgorithm", js.undefined)
       
-      inline def setExpires(value: Date | String | Double): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date | String | Double): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
       
       inline def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
       
@@ -365,7 +363,7 @@ object typesCopyObjectInputMod {
       
       inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
-      inline def setMetadata(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
       
       inline def setMetadataDirective(value: COPY | REPLACE | String): Self = StObject.set(x, "MetadataDirective", value.asInstanceOf[js.Any])
       

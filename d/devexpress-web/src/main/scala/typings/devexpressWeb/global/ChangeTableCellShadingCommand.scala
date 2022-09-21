@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeTableCellShadingCommand")
 @js.native
-class ChangeTableCellShadingCommand ()
+open class ChangeTableCellShadingCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeTableCellShadingCommand {
   

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".syllable-lG6WqZzp" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".syllable-lG6WqZzp" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

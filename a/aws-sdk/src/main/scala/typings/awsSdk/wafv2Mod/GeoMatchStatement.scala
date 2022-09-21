@@ -12,7 +12,7 @@ trait GeoMatchStatement extends StObject {
   var CountryCodes: js.UndefOr[typings.awsSdk.wafv2Mod.CountryCodes] = js.undefined
   
   /**
-    * The configuration for inspecting IP addresses in an HTTP header that you specify, instead of using the IP address that's reported by the web request origin. Commonly, this is the X-Forwarded-For (XFF) header, but you can specify any header name.   If the specified header isn't present in the request, AWS WAF doesn't apply the rule to the web request at all. 
+    * The configuration for inspecting IP addresses in an HTTP header that you specify, instead of using the IP address that's reported by the web request origin. Commonly, this is the X-Forwarded-For (XFF) header, but you can specify any header name.   If the specified header isn't present in the request, WAF doesn't apply the rule to the web request at all. 
     */
   var ForwardedIPConfig: js.UndefOr[typings.awsSdk.wafv2Mod.ForwardedIPConfig] = js.undefined
 }
@@ -29,7 +29,7 @@ object GeoMatchStatement {
     
     inline def setCountryCodesUndefined: Self = StObject.set(x, "CountryCodes", js.undefined)
     
-    inline def setCountryCodesVarargs(value: CountryCode*): Self = StObject.set(x, "CountryCodes", js.Array(value :_*))
+    inline def setCountryCodesVarargs(value: CountryCode*): Self = StObject.set(x, "CountryCodes", js.Array(value*))
     
     inline def setForwardedIPConfig(value: ForwardedIPConfig): Self = StObject.set(x, "ForwardedIPConfig", value.asInstanceOf[js.Any])
     

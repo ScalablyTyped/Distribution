@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.InputFieldGroup")
 @js.native
-class InputFieldGroupCls ()
+/**
+  * This is a read-only support class that represents a group of input fields.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html)
+  */
+open class InputFieldGroupCls ()
   extends StObject
      with typings.arcgisJsApi.esri.InputFieldGroup {
   def this(properties: InputFieldGroupProperties) = this()

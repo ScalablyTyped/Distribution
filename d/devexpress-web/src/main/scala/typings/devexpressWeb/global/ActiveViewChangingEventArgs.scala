@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ActiveViewChangingEventArgs")
 @js.native
-class ActiveViewChangingEventArgs protected ()
+open class ActiveViewChangingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ActiveViewChangingEventArgs {
   /**

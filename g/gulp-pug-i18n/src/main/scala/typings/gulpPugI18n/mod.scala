@@ -18,7 +18,7 @@ object mod {
     extends StObject
        with typings.pug.mod.Options {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var i18n: Default
   }
@@ -31,7 +31,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       

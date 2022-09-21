@@ -29,7 +29,7 @@ object ListV2LoggingLevelsResponse {
     
     inline def setLogTargetConfigurationsUndefined: Self = StObject.set(x, "logTargetConfigurations", js.undefined)
     
-    inline def setLogTargetConfigurationsVarargs(value: LogTargetConfiguration*): Self = StObject.set(x, "logTargetConfigurations", js.Array(value :_*))
+    inline def setLogTargetConfigurationsVarargs(value: LogTargetConfiguration*): Self = StObject.set(x, "logTargetConfigurations", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

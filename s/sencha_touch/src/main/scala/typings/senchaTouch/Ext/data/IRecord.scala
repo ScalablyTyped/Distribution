@@ -17,7 +17,7 @@ trait IRecord
   var beginEdit: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String/Object/String[]/Object[]) */
-  var belongsTo: js.UndefOr[js.Any] = js.undefined
+  var belongsTo: js.UndefOr[Any] = js.undefined
   
   /** [Method] Cancels all changes made in the current edit operation  */
   var cancelEdit: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -55,23 +55,21 @@ trait IRecord
     * @param scope Object The scope to run your callback method in. This is only used if you passed a function as the first argument.
     * @returns Ext.data.Model The Model instance.
     */
-  var erase: js.UndefOr[
-    js.Function2[/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IModel]
-  ] = js.undefined
+  var erase: js.UndefOr[js.Function2[/* options */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], IModel]] = js.undefined
   
   /** [Config Option] (Object[]/String[]) */
-  var fields: js.UndefOr[js.Any] = js.undefined
+  var fields: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns the value of the given field
     * @param fieldName String The field to fetch the value for.
     * @returns Object The value.
     */
-  var get: js.UndefOr[js.Function1[/* fieldName */ js.UndefOr[String], js.Any]] = js.undefined
+  var get: js.UndefOr[js.Function1[/* fieldName */ js.UndefOr[String], Any]] = js.undefined
   
   /** [Method] Gets all of the data from this Models loaded associations
     * @returns Object The nested data set for the Model's loaded associations.
     */
-  var getAssociatedData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getAssociatedData: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of associations
     * @returns Object[]
@@ -81,12 +79,12 @@ trait IRecord
   /** [Method] Returns the value of belongsTo
     * @returns String/Object/String[]/Object[]
     */
-  var getBelongsTo: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getBelongsTo: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Gets a hash of only the fields that have been modified since this Model was created or committed
     * @returns Object
     */
-  var getChanges: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getChanges: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of clientIdProperty
     * @returns String
@@ -97,22 +95,22 @@ trait IRecord
     * @param includeAssociated Boolean true to include the associated data.
     * @returns Object The data.
     */
-  var getData: js.UndefOr[js.Function1[/* includeAssociated */ js.UndefOr[Boolean], js.Any]] = js.undefined
+  var getData: js.UndefOr[js.Function1[/* includeAssociated */ js.UndefOr[Boolean], Any]] = js.undefined
   
   /** [Method] Returns the value of fields
     * @returns Object[]/String[]
     */
-  var getFields: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getFields: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of hasMany
     * @returns String/Object/String[]/Object[]
     */
-  var getHasMany: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getHasMany: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of hasOne
     * @returns String/Object/String[]/Object[]
     */
-  var getHasOne: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getHasOne: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of idProperty
     * @returns String
@@ -122,7 +120,7 @@ trait IRecord
   /** [Method] Returns the value of identifier
     * @returns Object/String
     */
-  var getIdentifier: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getIdentifier: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns true if the record has been erased on the server  */
   var getIsErased: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -130,7 +128,7 @@ trait IRecord
   /** [Method] Returns the value of proxy
     * @returns Object/Ext.data.Proxy
     */
-  var getProxy: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getProxy: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of useCache
     * @returns Boolean
@@ -143,16 +141,16 @@ trait IRecord
   var getValidations: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Config Option] (String/Object/String[]/Object[]) */
-  var hasMany: js.UndefOr[js.Any] = js.undefined
+  var hasMany: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Object/String[]/Object[]) */
-  var hasOne: js.UndefOr[js.Any] = js.undefined
+  var hasOne: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var idProperty: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object/String) */
-  var identifier: js.UndefOr[js.Any] = js.undefined
+  var identifier: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns true if the passed field name has been modified since the load or last commit
     * @param fieldName String Ext.data.Field.name
@@ -171,16 +169,16 @@ trait IRecord
   var join: js.UndefOr[js.Function1[/* store */ js.UndefOr[IStore], Unit]] = js.undefined
   
   /** [Property] (Object) */
-  var modified: js.UndefOr[js.Any] = js.undefined
+  var modified: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Boolean) */
   var phantom: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object/Ext.data.Proxy) */
-  var proxy: js.UndefOr[js.Any] = js.undefined
+  var proxy: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Object) */
-  var raw: js.UndefOr[js.Any] = js.undefined
+  var raw: js.UndefOr[Any] = js.undefined
   
   /** [Method] Usually called by the Ext data Store to which this model instance has been joined
     * @param silent Boolean true to skip notification of the owning store of the change.
@@ -194,7 +192,7 @@ trait IRecord
     */
   @JSName("relayEvents")
   var relayEvents_IRecord: js.UndefOr[
-    js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+    js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
   ] = js.undefined
   
   /** [Method] Saves the model instance using the configured proxy
@@ -202,17 +200,13 @@ trait IRecord
     * @param scope Object The scope to run your callback method in. This is only used if you passed a function as the first argument.
     * @returns Ext.data.Model The Model instance
     */
-  var save: js.UndefOr[
-    js.Function2[/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IModel]
-  ] = js.undefined
+  var save: js.UndefOr[js.Function2[/* options */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], IModel]] = js.undefined
   
   /** [Method] Sets the given field to the given value marks the instance as dirty
     * @param fieldName String/Object The field to set, or an object containing key/value pairs.
     * @param value Object The value to set.
     */
-  var set: js.UndefOr[
-    js.Function2[/* fieldName */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var set: js.UndefOr[js.Function2[/* fieldName */ js.UndefOr[Any], /* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of associations
     * @param associations Object[] The new value.
@@ -222,7 +216,7 @@ trait IRecord
   /** [Method] Sets the value of belongsTo
     * @param belongsTo String/Object/String[]/Object[] The new value.
     */
-  var setBelongsTo: js.UndefOr[js.Function1[/* belongsTo */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBelongsTo: js.UndefOr[js.Function1[/* belongsTo */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of clientIdProperty
     * @param clientIdProperty String The new value.
@@ -233,13 +227,13 @@ trait IRecord
     * @param data Object
     * @returns Ext.data.Model This Record.
     */
-  var setConvertedData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], IModel]] = js.undefined
+  var setConvertedData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], IModel]] = js.undefined
   
   /** [Method] This method is used to set the data for this Record instance
     * @param rawData Object
     * @returns Ext.data.Model This record.
     */
-  var setData: js.UndefOr[js.Function1[/* rawData */ js.UndefOr[js.Any], IModel]] = js.undefined
+  var setData: js.UndefOr[js.Function1[/* rawData */ js.UndefOr[Any], IModel]] = js.undefined
   
   /** [Method] Marks this Record as dirty  */
   var setDirty: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -248,22 +242,22 @@ trait IRecord
     * @param fields Array
     * @returns any
     */
-  var setFields: js.UndefOr[js.Function1[/* fields */ js.UndefOr[Array], js.Any]] = js.undefined
+  var setFields: js.UndefOr[js.Function1[/* fields */ js.UndefOr[Array], Any]] = js.undefined
   
   /** [Method] Sets the value of hasMany
     * @param hasMany String/Object/String[]/Object[] The new value.
     */
-  var setHasMany: js.UndefOr[js.Function1[/* hasMany */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setHasMany: js.UndefOr[js.Function1[/* hasMany */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of hasOne
     * @param hasOne String/Object/String[]/Object[] The new value.
     */
-  var setHasOne: js.UndefOr[js.Function1[/* hasOne */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setHasOne: js.UndefOr[js.Function1[/* hasOne */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the model instance s id field to the given id
     * @param id Number/String The new id
     */
-  var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of idProperty
     * @param idProperty String The new value.
@@ -273,12 +267,12 @@ trait IRecord
   /** [Method] Sets the value of identifier
     * @param identifier Object/String The new value.
     */
-  var setIdentifier: js.UndefOr[js.Function1[/* identifier */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setIdentifier: js.UndefOr[js.Function1[/* identifier */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of proxy
     * @param proxy Object/Ext.data.Proxy The new value.
     */
-  var setProxy: js.UndefOr[js.Function1[/* proxy */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setProxy: js.UndefOr[js.Function1[/* proxy */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of useCache
     * @param useCache Boolean The new value.
@@ -331,7 +325,7 @@ object IRecord {
     
     inline def setBeginEditUndefined: Self = StObject.set(x, "beginEdit", js.undefined)
     
-    inline def setBelongsTo(value: js.Any): Self = StObject.set(x, "belongsTo", value.asInstanceOf[js.Any])
+    inline def setBelongsTo(value: Any): Self = StObject.set(x, "belongsTo", value.asInstanceOf[js.Any])
     
     inline def setBelongsToUndefined: Self = StObject.set(x, "belongsTo", js.undefined)
     
@@ -363,17 +357,17 @@ object IRecord {
     
     inline def setEndEditUndefined: Self = StObject.set(x, "endEdit", js.undefined)
     
-    inline def setErase(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IModel): Self = StObject.set(x, "erase", js.Any.fromFunction2(value))
+    inline def setErase(value: (/* options */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IModel): Self = StObject.set(x, "erase", js.Any.fromFunction2(value))
     
     inline def setEraseUndefined: Self = StObject.set(x, "erase", js.undefined)
     
-    inline def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setGet(value: /* fieldName */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* fieldName */ js.UndefOr[String] => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    inline def setGetAssociatedData(value: () => js.Any): Self = StObject.set(x, "getAssociatedData", js.Any.fromFunction0(value))
+    inline def setGetAssociatedData(value: () => Any): Self = StObject.set(x, "getAssociatedData", js.Any.fromFunction0(value))
     
     inline def setGetAssociatedDataUndefined: Self = StObject.set(x, "getAssociatedData", js.undefined)
     
@@ -381,11 +375,11 @@ object IRecord {
     
     inline def setGetAssociationsUndefined: Self = StObject.set(x, "getAssociations", js.undefined)
     
-    inline def setGetBelongsTo(value: () => js.Any): Self = StObject.set(x, "getBelongsTo", js.Any.fromFunction0(value))
+    inline def setGetBelongsTo(value: () => Any): Self = StObject.set(x, "getBelongsTo", js.Any.fromFunction0(value))
     
     inline def setGetBelongsToUndefined: Self = StObject.set(x, "getBelongsTo", js.undefined)
     
-    inline def setGetChanges(value: () => js.Any): Self = StObject.set(x, "getChanges", js.Any.fromFunction0(value))
+    inline def setGetChanges(value: () => Any): Self = StObject.set(x, "getChanges", js.Any.fromFunction0(value))
     
     inline def setGetChangesUndefined: Self = StObject.set(x, "getChanges", js.undefined)
     
@@ -393,19 +387,19 @@ object IRecord {
     
     inline def setGetClientIdPropertyUndefined: Self = StObject.set(x, "getClientIdProperty", js.undefined)
     
-    inline def setGetData(value: /* includeAssociated */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+    inline def setGetData(value: /* includeAssociated */ js.UndefOr[Boolean] => Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     
     inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
     
-    inline def setGetFields(value: () => js.Any): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
+    inline def setGetFields(value: () => Any): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
     
     inline def setGetFieldsUndefined: Self = StObject.set(x, "getFields", js.undefined)
     
-    inline def setGetHasMany(value: () => js.Any): Self = StObject.set(x, "getHasMany", js.Any.fromFunction0(value))
+    inline def setGetHasMany(value: () => Any): Self = StObject.set(x, "getHasMany", js.Any.fromFunction0(value))
     
     inline def setGetHasManyUndefined: Self = StObject.set(x, "getHasMany", js.undefined)
     
-    inline def setGetHasOne(value: () => js.Any): Self = StObject.set(x, "getHasOne", js.Any.fromFunction0(value))
+    inline def setGetHasOne(value: () => Any): Self = StObject.set(x, "getHasOne", js.Any.fromFunction0(value))
     
     inline def setGetHasOneUndefined: Self = StObject.set(x, "getHasOne", js.undefined)
     
@@ -413,7 +407,7 @@ object IRecord {
     
     inline def setGetIdPropertyUndefined: Self = StObject.set(x, "getIdProperty", js.undefined)
     
-    inline def setGetIdentifier(value: () => js.Any): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
+    inline def setGetIdentifier(value: () => Any): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction0(value))
     
     inline def setGetIdentifierUndefined: Self = StObject.set(x, "getIdentifier", js.undefined)
     
@@ -421,7 +415,7 @@ object IRecord {
     
     inline def setGetIsErasedUndefined: Self = StObject.set(x, "getIsErased", js.undefined)
     
-    inline def setGetProxy(value: () => js.Any): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
+    inline def setGetProxy(value: () => Any): Self = StObject.set(x, "getProxy", js.Any.fromFunction0(value))
     
     inline def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
     
@@ -435,11 +429,11 @@ object IRecord {
     
     inline def setGetValidationsUndefined: Self = StObject.set(x, "getValidations", js.undefined)
     
-    inline def setHasMany(value: js.Any): Self = StObject.set(x, "hasMany", value.asInstanceOf[js.Any])
+    inline def setHasMany(value: Any): Self = StObject.set(x, "hasMany", value.asInstanceOf[js.Any])
     
     inline def setHasManyUndefined: Self = StObject.set(x, "hasMany", js.undefined)
     
-    inline def setHasOne(value: js.Any): Self = StObject.set(x, "hasOne", value.asInstanceOf[js.Any])
+    inline def setHasOne(value: Any): Self = StObject.set(x, "hasOne", value.asInstanceOf[js.Any])
     
     inline def setHasOneUndefined: Self = StObject.set(x, "hasOne", js.undefined)
     
@@ -447,7 +441,7 @@ object IRecord {
     
     inline def setIdPropertyUndefined: Self = StObject.set(x, "idProperty", js.undefined)
     
-    inline def setIdentifier(value: js.Any): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Any): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
@@ -463,7 +457,7 @@ object IRecord {
     
     inline def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
     
-    inline def setModified(value: js.Any): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: Any): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
     inline def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
     
@@ -471,11 +465,11 @@ object IRecord {
     
     inline def setPhantomUndefined: Self = StObject.set(x, "phantom", js.undefined)
     
-    inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    inline def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
@@ -483,21 +477,21 @@ object IRecord {
     
     inline def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
     
-    inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+    inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
-    inline def setSave(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IModel): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
+    inline def setSave(value: (/* options */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IModel): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    inline def setSet(value: (/* fieldName */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (/* fieldName */ js.UndefOr[Any], /* value */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     inline def setSetAssociations(value: /* associations */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setAssociations", js.Any.fromFunction1(value))
     
     inline def setSetAssociationsUndefined: Self = StObject.set(x, "setAssociations", js.undefined)
     
-    inline def setSetBelongsTo(value: /* belongsTo */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBelongsTo", js.Any.fromFunction1(value))
+    inline def setSetBelongsTo(value: /* belongsTo */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBelongsTo", js.Any.fromFunction1(value))
     
     inline def setSetBelongsToUndefined: Self = StObject.set(x, "setBelongsTo", js.undefined)
     
@@ -505,11 +499,11 @@ object IRecord {
     
     inline def setSetClientIdPropertyUndefined: Self = StObject.set(x, "setClientIdProperty", js.undefined)
     
-    inline def setSetConvertedData(value: /* data */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "setConvertedData", js.Any.fromFunction1(value))
+    inline def setSetConvertedData(value: /* data */ js.UndefOr[Any] => IModel): Self = StObject.set(x, "setConvertedData", js.Any.fromFunction1(value))
     
     inline def setSetConvertedDataUndefined: Self = StObject.set(x, "setConvertedData", js.undefined)
     
-    inline def setSetData(value: /* rawData */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+    inline def setSetData(value: /* rawData */ js.UndefOr[Any] => IModel): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
     
     inline def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
     
@@ -517,19 +511,19 @@ object IRecord {
     
     inline def setSetDirtyUndefined: Self = StObject.set(x, "setDirty", js.undefined)
     
-    inline def setSetFields(value: /* fields */ js.UndefOr[Array] => js.Any): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
+    inline def setSetFields(value: /* fields */ js.UndefOr[Array] => Any): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
     
     inline def setSetFieldsUndefined: Self = StObject.set(x, "setFields", js.undefined)
     
-    inline def setSetHasMany(value: /* hasMany */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHasMany", js.Any.fromFunction1(value))
+    inline def setSetHasMany(value: /* hasMany */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setHasMany", js.Any.fromFunction1(value))
     
     inline def setSetHasManyUndefined: Self = StObject.set(x, "setHasMany", js.undefined)
     
-    inline def setSetHasOne(value: /* hasOne */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setHasOne", js.Any.fromFunction1(value))
+    inline def setSetHasOne(value: /* hasOne */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setHasOne", js.Any.fromFunction1(value))
     
     inline def setSetHasOneUndefined: Self = StObject.set(x, "setHasOne", js.undefined)
     
-    inline def setSetId(value: /* id */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
+    inline def setSetId(value: /* id */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
     
     inline def setSetIdProperty(value: /* idProperty */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setIdProperty", js.Any.fromFunction1(value))
     
@@ -537,11 +531,11 @@ object IRecord {
     
     inline def setSetIdUndefined: Self = StObject.set(x, "setId", js.undefined)
     
-    inline def setSetIdentifier(value: /* identifier */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setIdentifier", js.Any.fromFunction1(value))
+    inline def setSetIdentifier(value: /* identifier */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setIdentifier", js.Any.fromFunction1(value))
     
     inline def setSetIdentifierUndefined: Self = StObject.set(x, "setIdentifier", js.undefined)
     
-    inline def setSetProxy(value: /* proxy */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setProxy", js.Any.fromFunction1(value))
+    inline def setSetProxy(value: /* proxy */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setProxy", js.Any.fromFunction1(value))
     
     inline def setSetProxyUndefined: Self = StObject.set(x, "setProxy", js.undefined)
     

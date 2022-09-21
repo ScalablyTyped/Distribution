@@ -1,7 +1,7 @@
 
 # Scala.js typings for execall
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Find multiple RegExp matches in a string
@@ -11,9 +11,9 @@ Find multiple RegExp matches in a string
 | Full name          | execall |
 | Keywords           | regex, regexp, regular, expression, exec, match, matches, execall, all, find, findall, immutable, string, multiple, many, global |
 | # releases         | 2 |
-| # dependents       | 49 |
-| # downloads        | 92035785 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4764849E7 |
+| # stars            | 89.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/execall#readme)

@@ -1,9 +1,5 @@
 package typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,17 +9,12 @@ trait ParamsResourceProjectsCreate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * Request body metadata
     */
   var requestBody: js.UndefOr[SchemaProject] = js.undefined
   
   /**
-    * A safety hatch to opt out of the new reliable project creation process.
+    * A now unused experiment opt-out option.
     */
   var useLegacyStack: js.UndefOr[Boolean] = js.undefined
 }
@@ -35,10 +26,6 @@ object ParamsResourceProjectsCreate {
   }
   
   extension [Self <: ParamsResourceProjectsCreate](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setRequestBody(value: SchemaProject): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

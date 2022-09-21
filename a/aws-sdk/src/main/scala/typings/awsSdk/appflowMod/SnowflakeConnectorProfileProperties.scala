@@ -27,7 +27,7 @@ trait SnowflakeConnectorProfileProperties extends StObject {
   var privateLinkServiceName: js.UndefOr[PrivateLinkServiceName] = js.undefined
   
   /**
-    *  The AWS Region of the Snowflake account. 
+    *  The Amazon Web Services Region of the Snowflake account. 
     */
   var region: js.UndefOr[Region] = js.undefined
   

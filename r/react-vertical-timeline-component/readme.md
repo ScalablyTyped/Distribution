@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-vertical-timeline-component
 
-Typings are for version 3.0
+Typings are for version 3.3
 
 ## Library description:
 Vertical timeline for React.js
@@ -10,10 +10,10 @@ Vertical timeline for React.js
 | ------------------ | :-------------: |
 | Full name          | react-vertical-timeline-component |
 | Keywords           | react, reactjs, React Vertical Timeline |
-| # releases         | 15 |
-| # dependents       | 3 |
-| # downloads        | 386367 |
-| # stars            | 2 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 63555.666666666664 |
+| # stars            | 820.0 |
 
 ## Links
 - [Homepage](https://stephane-monnot.github.io/react-vertical-timeline/)

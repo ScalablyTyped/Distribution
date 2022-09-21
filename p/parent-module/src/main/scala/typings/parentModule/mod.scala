@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.UndefOr[String]]
-  inline def apply(filePath: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
-  
   @JSImport("parent-module", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.UndefOr[String]]
+  inline def default(filePath: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

@@ -75,7 +75,7 @@ object anon {
       
       inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
       
-      inline def setBehaviorVarargs(value: Position*): Self = StObject.set(x, "behavior", js.Array(value :_*))
+      inline def setBehaviorVarargs(value: Position*): Self = StObject.set(x, "behavior", js.Array(value*))
       
       inline def setBoundariesElement(value: Boundary | Element): Self = StObject.set(x, "boundariesElement", value.asInstanceOf[js.Any])
       
@@ -367,7 +367,7 @@ object anon {
       
       inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      inline def setPriorityVarargs(value: Position*): Self = StObject.set(x, "priority", js.Array(value :_*))
+      inline def setPriorityVarargs(value: Position*): Self = StObject.set(x, "priority", js.Array(value*))
     }
   }
   

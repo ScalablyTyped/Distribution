@@ -10,7 +10,7 @@ trait SpriteMap
      with ISpriteMap {
   
   /** Texture Buffer of Float32 that holds Animation Data*/
-  /* private */ var _animationMap: js.Any = js.native
+  /* private */ var _animationMap: Any = js.native
   
   /**
     * Creates the "frame" texture Buffer
@@ -24,14 +24,14 @@ trait SpriteMap
     * "sourceSize": {"w":32,"h":32}
     * @returns RawTexture of the frameMap
     */
-  /* private */ var _createFrameBuffer: js.Any = js.native
+  /* private */ var _createFrameBuffer: Any = js.native
   
   /**
     * Creates the animationMap texture Buffer
     * @param buffer normally and array of numbers, or a false to generate from scratch
     * @returns RawTexture of the animationMap
     */
-  /* private */ var _createTileAnimationBuffer: js.Any = js.native
+  /* private */ var _createTileAnimationBuffer: Any = js.native
   
   /**
     * Creates the tileMap texture Buffer
@@ -39,25 +39,25 @@ trait SpriteMap
     * @param _layer indicates what layer for a logic trigger dealing with the baseTile.  The system uses this
     * @returns RawTexture of the tileMap
     */
-  /* private */ var _createTileBuffer: js.Any = js.native
+  /* private */ var _createTileBuffer: Any = js.native
   
   /** Texture Buffer of Float32 that holds tile frame data*/
-  /* private */ var _frameMap: js.Any = js.native
+  /* private */ var _frameMap: Any = js.native
   
   /** Custom ShaderMaterial Central to the System*/
-  /* private */ var _material: js.Any = js.native
+  /* private */ var _material: Any = js.native
   
   /** Custom ShaderMaterial Central to the System*/
-  /* private */ var _output: js.Any = js.native
+  /* private */ var _output: Any = js.native
   
   /** Scene that the SpriteMap was created in */
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
   /** Texture Buffers of Float32 that holds tileMap data*/
-  /* private */ var _tileMaps: js.Any = js.native
+  /* private */ var _tileMaps: Any = js.native
   
   /** Systems Time Ticker*/
-  /* private */ var _time: js.Any = js.native
+  /* private */ var _time: Any = js.native
   
   /**
     * Modifies the data of the animationMap

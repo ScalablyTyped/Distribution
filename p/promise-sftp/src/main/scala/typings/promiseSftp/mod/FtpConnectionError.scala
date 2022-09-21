@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("promise-sftp", "FtpConnectionError")
 @js.native
-class FtpConnectionError ()
+open class FtpConnectionError ()
   extends typings.promiseFtpCommon.mod.FtpConnectionError

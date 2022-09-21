@@ -10,8 +10,6 @@ import typings.momentRange.anon.FnCall
 import typings.momentRange.anon.MomentRangeNoneinpundefin
 import typings.momentRange.anon.Step
 import typings.momentRange.anon.`0`
-import typings.std.Date
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,38 +22,38 @@ object mod {
   
   @JSImport("moment-range", "DateRange")
   @js.native
-  class DateRange () extends StObject {
+  open class DateRange () extends StObject {
     def this(range: String) = this()
-    def this(range: js.Tuple2[Date | Moment, Date | Moment]) = this()
+    def this(range: js.Tuple2[js.Date | Moment, js.Date | Moment]) = this()
+    def this(start: js.Date, end: js.Date) = this()
+    def this(start: js.Date, end: Moment) = this()
+    def this(start: Moment, end: js.Date) = this()
     def this(start: Moment, end: Moment) = this()
-    def this(start: Moment, end: Date) = this()
-    def this(start: Date, end: Moment) = this()
-    def this(start: Date, end: Date) = this()
     
     def add(other: DateRange): DateRange | Null = js.native
     def add(other: DateRange, options: Adjacent): DateRange | Null = js.native
     
     def adjacent(other: DateRange): Boolean = js.native
     
-    def by(interval: Diff): Iterable[Moment] = js.native
-    def by(interval: Diff, options: ExcludeEnd): Iterable[Moment] = js.native
-    def by(interval: Diff, options: Exclusive): Iterable[Moment] = js.native
+    def by(interval: Diff): js.Iterable[Moment] = js.native
+    def by(interval: Diff, options: ExcludeEnd): js.Iterable[Moment] = js.native
+    def by(interval: Diff, options: Exclusive): js.Iterable[Moment] = js.native
     
-    def byRange(interval: DateRange): Iterable[Moment] = js.native
-    def byRange(interval: DateRange, options: ExcludeEnd): Iterable[Moment] = js.native
-    def byRange(interval: DateRange, options: Exclusive): Iterable[Moment] = js.native
+    def byRange(interval: DateRange): js.Iterable[Moment] = js.native
+    def byRange(interval: DateRange, options: ExcludeEnd): js.Iterable[Moment] = js.native
+    def byRange(interval: DateRange, options: Exclusive): js.Iterable[Moment] = js.native
     
     def center(): Moment = js.native
     
+    def contains(other: js.Date): Boolean = js.native
+    def contains(other: js.Date, options: ExcludeStart): Boolean = js.native
+    def contains(other: js.Date, options: `0`): Boolean = js.native
     def contains(other: Moment): Boolean = js.native
     def contains(other: Moment, options: ExcludeStart): Boolean = js.native
     def contains(other: Moment, options: `0`): Boolean = js.native
     def contains(other: DateRange): Boolean = js.native
     def contains(other: DateRange, options: ExcludeStart): Boolean = js.native
     def contains(other: DateRange, options: `0`): Boolean = js.native
-    def contains(other: Date): Boolean = js.native
-    def contains(other: Date, options: ExcludeStart): Boolean = js.native
-    def contains(other: Date, options: `0`): Boolean = js.native
     
     def diff(): Double = js.native
     def diff(unit: Unit, precise: Boolean): Double = js.native
@@ -78,13 +76,13 @@ object mod {
     def overlaps(other: DateRange): Boolean = js.native
     def overlaps(other: DateRange, options: Adjacent): Boolean = js.native
     
-    def reverseBy(interval: Diff): Iterable[Moment] = js.native
-    def reverseBy(interval: Diff, options: Exclusive): Iterable[Moment] = js.native
-    def reverseBy(interval: Diff, options: Step): Iterable[Moment] = js.native
+    def reverseBy(interval: Diff): js.Iterable[Moment] = js.native
+    def reverseBy(interval: Diff, options: Exclusive): js.Iterable[Moment] = js.native
+    def reverseBy(interval: Diff, options: Step): js.Iterable[Moment] = js.native
     
-    def reverseByRange(interval: DateRange): Iterable[Moment] = js.native
-    def reverseByRange(interval: DateRange, options: Exclusive): Iterable[Moment] = js.native
-    def reverseByRange(interval: DateRange, options: Step): Iterable[Moment] = js.native
+    def reverseByRange(interval: DateRange): js.Iterable[Moment] = js.native
+    def reverseByRange(interval: DateRange, options: Exclusive): js.Iterable[Moment] = js.native
+    def reverseByRange(interval: DateRange, options: Step): js.Iterable[Moment] = js.native
     
     def snapTo(interval: Diff): DateRange = js.native
     
@@ -92,7 +90,7 @@ object mod {
     
     def subtract(other: DateRange): js.Array[DateRange] = js.native
     
-    def toDate(): js.Tuple2[Date, Date] = js.native
+    def toDate(): js.Tuple2[js.Date, js.Date] = js.native
   }
   
   inline def extendMoment(momentClass: FnCall): MomentRangeNoneinpundefin = ^.asInstanceOf[js.Dynamic].applyDynamic("extendMoment")(momentClass.asInstanceOf[js.Any]).asInstanceOf[MomentRangeNoneinpundefin]
@@ -102,7 +100,7 @@ object mod {
     extends StObject
        with MomentRangeStaticMethods {
     
-    def apply(args: js.Any*): MomentRangeStaticMethods & Moment = js.native
+    def apply(args: Any*): MomentRangeStaticMethods & Moment = js.native
   }
   
   @js.native
@@ -113,20 +111,20 @@ object mod {
     
     def range(): DateRange = js.native
     def range(range: String): DateRange = js.native
-    def range(range: js.Tuple2[Date | Moment, Date | Moment]): DateRange = js.native
+    def range(range: js.Tuple2[js.Date | Moment, js.Date | Moment]): DateRange = js.native
+    def range(start: js.Date, end: js.Date): DateRange = js.native
+    def range(start: js.Date, end: Moment): DateRange = js.native
+    def range(start: Moment, end: js.Date): DateRange = js.native
     def range(start: Moment, end: Moment): DateRange = js.native
-    def range(start: Moment, end: Date): DateRange = js.native
-    def range(start: Date, end: Moment): DateRange = js.native
-    def range(start: Date, end: Date): DateRange = js.native
     
     def rangeFromISOString(isoTimeInterval: String): DateRange = js.native
     
     def rangeFromInterval(interval: Diff): DateRange = js.native
     def rangeFromInterval(interval: Diff, count: Double): DateRange = js.native
+    def rangeFromInterval(interval: Diff, count: Double, date: js.Date): DateRange = js.native
     def rangeFromInterval(interval: Diff, count: Double, date: Moment): DateRange = js.native
-    def rangeFromInterval(interval: Diff, count: Double, date: Date): DateRange = js.native
+    def rangeFromInterval(interval: Diff, count: Unit, date: js.Date): DateRange = js.native
     def rangeFromInterval(interval: Diff, count: Unit, date: Moment): DateRange = js.native
-    def rangeFromInterval(interval: Diff, count: Unit, date: Date): DateRange = js.native
   }
   
   /* augmented module */
@@ -134,20 +132,20 @@ object mod {
     
     trait Moment extends StObject {
       
-      def isRange(range: js.Any): Boolean
+      def isRange(range: Any): Boolean
       
       def within(range: DateRange): Boolean
     }
     object Moment {
       
-      inline def apply(isRange: js.Any => Boolean, within: DateRange => Boolean): typings.momentRange.mod.momentAugmentingMod.Moment = {
+      inline def apply(isRange: Any => Boolean, within: DateRange => Boolean): typings.momentRange.mod.momentAugmentingMod.Moment = {
         val __obj = js.Dynamic.literal(isRange = js.Any.fromFunction1(isRange), within = js.Any.fromFunction1(within))
         __obj.asInstanceOf[typings.momentRange.mod.momentAugmentingMod.Moment]
       }
       
       extension [Self <: typings.momentRange.mod.momentAugmentingMod.Moment](x: Self) {
         
-        inline def setIsRange(value: js.Any => Boolean): Self = StObject.set(x, "isRange", js.Any.fromFunction1(value))
+        inline def setIsRange(value: Any => Boolean): Self = StObject.set(x, "isRange", js.Any.fromFunction1(value))
         
         inline def setWithin(value: DateRange => Boolean): Self = StObject.set(x, "within", js.Any.fromFunction1(value))
       }

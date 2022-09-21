@@ -11,36 +11,35 @@ object searchBoxBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/SearchBox/SearchBox.base", "SearchBoxBase")
   @js.native
-  class SearchBoxBase protected ()
-    extends Component[ISearchBoxProps, ISearchBoxState, js.Any] {
+  open class SearchBoxBase protected () extends Component[ISearchBoxProps, ISearchBoxState, Any] {
     def this(props: ISearchBoxProps) = this()
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MSearchBoxBase(newProps: ISearchBoxProps): Unit = js.native
     
-    /* private */ var _callOnChange: js.Any = js.native
+    /* private */ var _callOnChange: Any = js.native
     
-    /* private */ var _fallbackId: js.Any = js.native
+    /* private */ var _fallbackId: Any = js.native
     
-    /* private */ var _inputElement: js.Any = js.native
+    /* private */ var _inputElement: Any = js.native
     
-    /* private */ var _latestValue: js.Any = js.native
+    /* private */ var _latestValue: Any = js.native
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onClear: js.Any = js.native
+    /* private */ var _onClear: Any = js.native
     
-    /* private */ var _onClearClick: js.Any = js.native
+    /* private */ var _onClearClick: Any = js.native
     
-    /* private */ var _onClickFocus: js.Any = js.native
+    /* private */ var _onClickFocus: Any = js.native
     
-    /* private */ var _onFocusCapture: js.Any = js.native
+    /* private */ var _onFocusCapture: Any = js.native
     
-    /* private */ var _onInputChange: js.Any = js.native
+    /* private */ var _onInputChange: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _rootElement: js.Any = js.native
+    /* private */ var _rootElement: Any = js.native
     
     /**
       * Sets focus to the search box input field

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.Vector2")
 @js.native
-class Vector2 ()
+open class Vector2 ()
   extends StObject
      with typings.phaser.spine.Vector2 {
   def this(x: Double) = this()

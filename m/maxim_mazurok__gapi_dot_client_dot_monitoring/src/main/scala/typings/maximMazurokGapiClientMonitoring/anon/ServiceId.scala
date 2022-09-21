@@ -29,7 +29,7 @@ trait ServiceId extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Resource name of the parent workspace. The format is: projects/[PROJECT_ID_OR_NUMBER] */
+  /** Required. Resource name (https://cloud.google.com/monitoring/api/v3#project_name) of the parent Metrics Scope. The format is: projects/[PROJECT_ID_OR_NUMBER] */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

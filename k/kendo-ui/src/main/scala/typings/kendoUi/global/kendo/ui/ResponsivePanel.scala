@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.ResponsivePanel")
 @js.native
-class ResponsivePanel protected ()
+open class ResponsivePanel protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.ResponsivePanel {
   def this(element: Element) = this()

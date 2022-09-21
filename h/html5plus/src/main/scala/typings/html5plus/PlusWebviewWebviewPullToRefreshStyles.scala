@@ -26,7 +26,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var contentdown: js.UndefOr[js.Any] = js.undefined
+  var contentdown: js.UndefOr[Any] = js.undefined
   
   /**
     * 在释放可刷新状态时显示的内容
@@ -35,7 +35,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var contentover: js.UndefOr[js.Any] = js.undefined
+  var contentover: js.UndefOr[Any] = js.undefined
   
   /**
     * 在正在刷新状态时显示的内容
@@ -44,7 +44,7 @@ trait PlusWebviewWebviewPullToRefreshStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var contentrefresh: js.UndefOr[js.Any] = js.undefined
+  var contentrefresh: js.UndefOr[Any] = js.undefined
   
   /**
     * 窗口的下拉刷新控件进入刷新状态的拉拽高度
@@ -105,15 +105,15 @@ object PlusWebviewWebviewPullToRefreshStyles {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setContentdown(value: js.Any): Self = StObject.set(x, "contentdown", value.asInstanceOf[js.Any])
+    inline def setContentdown(value: Any): Self = StObject.set(x, "contentdown", value.asInstanceOf[js.Any])
     
     inline def setContentdownUndefined: Self = StObject.set(x, "contentdown", js.undefined)
     
-    inline def setContentover(value: js.Any): Self = StObject.set(x, "contentover", value.asInstanceOf[js.Any])
+    inline def setContentover(value: Any): Self = StObject.set(x, "contentover", value.asInstanceOf[js.Any])
     
     inline def setContentoverUndefined: Self = StObject.set(x, "contentover", js.undefined)
     
-    inline def setContentrefresh(value: js.Any): Self = StObject.set(x, "contentrefresh", value.asInstanceOf[js.Any])
+    inline def setContentrefresh(value: Any): Self = StObject.set(x, "contentrefresh", value.asInstanceOf[js.Any])
     
     inline def setContentrefreshUndefined: Self = StObject.set(x, "contentrefresh", js.undefined)
     

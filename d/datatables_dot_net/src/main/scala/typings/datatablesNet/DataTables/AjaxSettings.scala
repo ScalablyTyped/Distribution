@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AjaxSettings
   extends StObject
-     with typings.jquery.JQuery.AjaxSettings[js.Any] {
+     with typings.jquery.JQuery.AjaxSettings[Any] {
   
   /**
     * Data property or manipulation method for table data. Since: 1.10
     */
-  var dataSrc: js.UndefOr[String | (js.Function1[/* data */ js.Any, js.Array[js.Any]])] = js.undefined
+  var dataSrc: js.UndefOr[String | (js.Function1[/* data */ Any, js.Array[Any]])] = js.undefined
 }
 object AjaxSettings {
   
@@ -22,9 +22,9 @@ object AjaxSettings {
   
   extension [Self <: AjaxSettings](x: Self) {
     
-    inline def setDataSrc(value: String | (js.Function1[/* data */ js.Any, js.Array[js.Any]])): Self = StObject.set(x, "dataSrc", value.asInstanceOf[js.Any])
+    inline def setDataSrc(value: String | (js.Function1[/* data */ Any, js.Array[Any]])): Self = StObject.set(x, "dataSrc", value.asInstanceOf[js.Any])
     
-    inline def setDataSrcFunction1(value: /* data */ js.Any => js.Array[js.Any]): Self = StObject.set(x, "dataSrc", js.Any.fromFunction1(value))
+    inline def setDataSrcFunction1(value: /* data */ Any => js.Array[Any]): Self = StObject.set(x, "dataSrc", js.Any.fromFunction1(value))
     
     inline def setDataSrcUndefined: Self = StObject.set(x, "dataSrc", js.undefined)
   }

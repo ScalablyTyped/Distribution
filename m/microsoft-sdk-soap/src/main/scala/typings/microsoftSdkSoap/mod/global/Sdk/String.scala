@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.String")
 @js.native
-class String protected () extends AttributeBase {
+open class String protected () extends AttributeBase {
   /**
     * A String Attribute.
     * @param name The logical name of the attribute.

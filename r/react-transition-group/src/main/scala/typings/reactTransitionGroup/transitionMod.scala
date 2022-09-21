@@ -55,8 +55,8 @@ object transitionMod {
     */
   @JSImport("react-transition-group/Transition", JSImport.Default)
   @js.native
-  class default[RefElement /* <: js.UndefOr[HTMLElement] */] ()
-    extends Component[TransitionProps[RefElement], js.Object, js.Any]
+  open class default[RefElement /* <: js.UndefOr[HTMLElement] */] ()
+    extends Component[TransitionProps[RefElement], js.Object, Any]
   
   @JSImport("react-transition-group/Transition", "ENTERED")
   @js.native
@@ -80,7 +80,7 @@ object transitionMod {
   
   trait BaseTransitionProps[RefElement /* <: js.UndefOr[HTMLElement] */]
     extends StObject
-       with /* prop */ StringDictionary[js.Any] {
+       with /* prop */ StringDictionary[Any] {
     
     /**
       * A function child can be used instead of a React element. This function is
@@ -287,7 +287,7 @@ object transitionMod {
   
   type ExitHandler[E /* <: js.UndefOr[HTMLElement] */] = RefHandler[E, js.Function1[/* node */ HTMLElement, Unit], js.Function0[Unit]]
   
-  type RefHandler[RefElement /* <: js.UndefOr[HTMLElement] */, ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ js.Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ js.Any, Unit] */] = /* import warning: importer.ImportType#apply Failed type conversion: react-transition-group.anon.Explicit<ImplicitRefHandler, ExplicitRefHandler>[RefElement extends undefined ? 'implicit' : 'explicit'] */ js.Any
+  type RefHandler[RefElement /* <: js.UndefOr[HTMLElement] */, ImplicitRefHandler /* <: js.Function2[/* node */ HTMLElement, /* repeated */ Any, Unit] */, ExplicitRefHandler /* <: js.Function1[/* repeated */ Any, Unit] */] = /* import warning: importer.ImportType#apply Failed type conversion: react-transition-group.anon.Explicit<ImplicitRefHandler, ExplicitRefHandler>[RefElement extends undefined ? 'implicit' : 'explicit'] */ js.Any
   
   trait TimeoutProps[RefElement /* <: js.UndefOr[HTMLElement] */]
     extends StObject
@@ -380,7 +380,7 @@ object transitionMod {
     * ```
     *
     */
-  type Transition[RefElement /* <: js.UndefOr[HTMLElement] */] = Component[TransitionProps[RefElement], js.Object, js.Any]
+  type Transition[RefElement /* <: js.UndefOr[HTMLElement] */] = Component[TransitionProps[RefElement], js.Object, Any]
   
   trait TransitionActions extends StObject {
     

@@ -25,7 +25,7 @@ object factoryMod {
   @js.native
   val makePropTypesFactory: MakePropTypesFactoryFunction = js.native
   
-  inline def makeRootValidatingTransformFactory[T /* <: js.Array[MakeValidatingTransformFunction[js.Any, js.Any]] */](
+  inline def makeRootValidatingTransformFactory[T /* <: js.Array[MakeValidatingTransformFunction[Any, Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param mvtfs because its type T is not an array type */ mvtfs: T
   ): js.Function1[
     /* variables */ PartialVariablesDefinitio, 
@@ -86,16 +86,16 @@ object factoryMod {
     transformFunc: TransformFunction[TTransformProps, TNewProps]
   ): MakeValidatingTransformFunction[TTransformProps, TNewProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeValidatingTransformFactory")(makePropTypesFunc.asInstanceOf[js.Any], transformFunc.asInstanceOf[js.Any])).asInstanceOf[MakeValidatingTransformFunction[TTransformProps, TNewProps]]
   
-  type ExtractTNewProps[T /* <: MakeValidatingTransformFunction[js.Any, js.Any] */] = js.Any
+  type ExtractTNewProps[T /* <: MakeValidatingTransformFunction[Any, Any] */] = Any
   
-  type ExtractTTransformProps[T /* <: MakeValidatingTransformFunction[js.Any, js.Any] */] = js.Any
+  type ExtractTTransformProps[T /* <: MakeValidatingTransformFunction[Any, Any] */] = Any
   
   type MakePropTypesFactoryFunction = js.Function1[
-    /* makePropTypes */ js.Function1[/* variables */ VariablesDefinitions, ValidationMap[js.Any]], 
+    /* makePropTypes */ js.Function1[/* variables */ VariablesDefinitions, ValidationMap[Any]], 
     MakePropTypesFunction
   ]
   
-  type MakePropTypesFunction = js.Function1[/* variables */ js.UndefOr[PartialVariablesDefinitio], ValidationMap[js.Any]]
+  type MakePropTypesFunction = js.Function1[/* variables */ js.UndefOr[PartialVariablesDefinitio], ValidationMap[Any]]
   
   type MakeValidatingTransformFunction[TTransformProps /* <: js.Object */, TNewProps /* <: js.Object */] = js.Function1[
     /* variables */ js.UndefOr[VariablesDefinitions], 

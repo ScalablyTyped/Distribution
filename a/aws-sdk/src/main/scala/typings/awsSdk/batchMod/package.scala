@@ -1,5 +1,6 @@
 package typings.awsSdk.batchMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +11,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.SEQUENTIAL
   - java.lang.String
 */
-type ArrayJobDependency = typings.awsSdk.batchMod._ArrayJobDependency | java.lang.String
+type ArrayJobDependency = _ArrayJobDependency | java.lang.String
 
-type ArrayJobStatusSummary = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.batchMod.Integer]
+type ArrayJobStatusSummary = StringDictionary[Integer]
 
-type AttemptDetails = js.Array[typings.awsSdk.batchMod.AttemptDetail]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type AssignPublicIp = _AssignPublicIp | java.lang.String
+
+type AttemptDetails = js.Array[AttemptDetail]
 
 type Boolean = scala.Boolean
 
@@ -23,7 +31,7 @@ type Boolean = scala.Boolean
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type CEState = typings.awsSdk.batchMod._CEState | java.lang.String
+type CEState = _CEState | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -34,14 +42,14 @@ type CEState = typings.awsSdk.batchMod._CEState | java.lang.String
   - typings.awsSdk.awsSdkStrings.INVALID
   - java.lang.String
 */
-type CEStatus = typings.awsSdk.batchMod._CEStatus | java.lang.String
+type CEStatus = _CEStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MANAGED
   - typings.awsSdk.awsSdkStrings.UNMANAGED
   - java.lang.String
 */
-type CEType = typings.awsSdk.batchMod._CEType | java.lang.String
+type CEType = _CEType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BEST_FIT
@@ -49,18 +57,27 @@ type CEType = typings.awsSdk.batchMod._CEType | java.lang.String
   - typings.awsSdk.awsSdkStrings.SPOT_CAPACITY_OPTIMIZED
   - java.lang.String
 */
-type CRAllocationStrategy = typings.awsSdk.batchMod._CRAllocationStrategy | java.lang.String
+type CRAllocationStrategy = _CRAllocationStrategy | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EC2
   - typings.awsSdk.awsSdkStrings.SPOT
+  - typings.awsSdk.awsSdkStrings.FARGATE
+  - typings.awsSdk.awsSdkStrings.FARGATE_SPOT
   - java.lang.String
 */
-type CRType = typings.awsSdk.batchMod._CRType | java.lang.String
+type CRType = _CRType | java.lang.String
 
-type ComputeEnvironmentDetailList = js.Array[typings.awsSdk.batchMod.ComputeEnvironmentDetail]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BEST_FIT_PROGRESSIVE
+  - typings.awsSdk.awsSdkStrings.SPOT_CAPACITY_OPTIMIZED
+  - java.lang.String
+*/
+type CRUpdateAllocationStrategy = _CRUpdateAllocationStrategy | java.lang.String
 
-type ComputeEnvironmentOrders = js.Array[typings.awsSdk.batchMod.ComputeEnvironmentOrder]
+type ComputeEnvironmentDetailList = js.Array[ComputeEnvironmentDetail]
+
+type ComputeEnvironmentOrders = js.Array[ComputeEnvironmentOrder]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.READ
@@ -68,24 +85,46 @@ type ComputeEnvironmentOrders = js.Array[typings.awsSdk.batchMod.ComputeEnvironm
   - typings.awsSdk.awsSdkStrings.MKNOD
   - java.lang.String
 */
-type DeviceCgroupPermission = typings.awsSdk.batchMod._DeviceCgroupPermission | java.lang.String
+type DeviceCgroupPermission = _DeviceCgroupPermission | java.lang.String
 
-type DeviceCgroupPermissions = js.Array[typings.awsSdk.batchMod.DeviceCgroupPermission]
+type DeviceCgroupPermissions = js.Array[DeviceCgroupPermission]
 
-type DevicesList = js.Array[typings.awsSdk.batchMod.Device]
-
-type EnvironmentVariables = js.Array[typings.awsSdk.batchMod.KeyValuePair]
-
-type EvaluateOnExitList = js.Array[typings.awsSdk.batchMod.EvaluateOnExit]
-
-type Integer = scala.Double
+type DevicesList = js.Array[Device]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type JQState = typings.awsSdk.batchMod._JQState | java.lang.String
+type EFSAuthorizationConfigIAM = _EFSAuthorizationConfigIAM | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type EFSTransitEncryption = _EFSTransitEncryption | java.lang.String
+
+type Ec2ConfigurationList = js.Array[Ec2Configuration]
+
+type EnvironmentVariables = js.Array[KeyValuePair]
+
+type EvaluateOnExitList = js.Array[EvaluateOnExit]
+
+type Float = Double
+
+type ImageIdOverride = java.lang.String
+
+type ImageType = java.lang.String
+
+type Integer = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type JQState = _JQState | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -96,22 +135,24 @@ type JQState = typings.awsSdk.batchMod._JQState | java.lang.String
   - typings.awsSdk.awsSdkStrings.INVALID
   - java.lang.String
 */
-type JQStatus = typings.awsSdk.batchMod._JQStatus | java.lang.String
+type JQStatus = _JQStatus | java.lang.String
 
-type JobDefinitionList = js.Array[typings.awsSdk.batchMod.JobDefinition]
+type JobDefinitionList = js.Array[JobDefinition]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.container_
   - typings.awsSdk.awsSdkStrings.multinode
   - java.lang.String
 */
-type JobDefinitionType = typings.awsSdk.batchMod._JobDefinitionType | java.lang.String
+type JobDefinitionType = _JobDefinitionType | java.lang.String
 
-type JobDependencyList = js.Array[typings.awsSdk.batchMod.JobDependency]
+type JobDependencyList = js.Array[JobDependency]
 
-type JobDetailList = js.Array[typings.awsSdk.batchMod.JobDetail]
+type JobDetailList = js.Array[JobDetail]
 
-type JobQueueDetailList = js.Array[typings.awsSdk.batchMod.JobQueueDetail]
+type JobExecutionTimeoutMinutes = Double
+
+type JobQueueDetailList = js.Array[JobQueueDetail]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUBMITTED
@@ -123,11 +164,13 @@ type JobQueueDetailList = js.Array[typings.awsSdk.batchMod.JobQueueDetail]
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type JobStatus = typings.awsSdk.batchMod._JobStatus | java.lang.String
+type JobStatus = _JobStatus | java.lang.String
 
-type JobSummaryList = js.Array[typings.awsSdk.batchMod.JobSummary]
+type JobSummaryList = js.Array[JobSummary]
 
-type LogConfigurationOptionsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.batchMod.String]
+type ListJobsFilterList = js.Array[KeyValuesPair]
+
+type LogConfigurationOptionsMap = StringDictionary[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`json-file`
@@ -139,56 +182,77 @@ type LogConfigurationOptionsMap = org.scalablytyped.runtime.StringDictionary[typ
   - typings.awsSdk.awsSdkStrings.splunk
   - java.lang.String
 */
-type LogDriver = typings.awsSdk.batchMod._LogDriver | java.lang.String
+type LogDriver = _LogDriver | java.lang.String
 
-type Long = scala.Double
+type Long = Double
 
-type MountPoints = js.Array[typings.awsSdk.batchMod.MountPoint]
+type MountPoints = js.Array[MountPoint]
 
-type NetworkInterfaceList = js.Array[typings.awsSdk.batchMod.NetworkInterface]
+type NetworkInterfaceList = js.Array[NetworkInterface]
 
-type NodePropertyOverrides = js.Array[typings.awsSdk.batchMod.NodePropertyOverride]
+type NodePropertyOverrides = js.Array[NodePropertyOverride]
 
-type NodeRangeProperties = js.Array[typings.awsSdk.batchMod.NodeRangeProperty]
+type NodeRangeProperties = js.Array[NodeRangeProperty]
 
-type ParametersMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.batchMod.String]
+type ParametersMap = StringDictionary[String]
 
-type ResourceRequirements = js.Array[typings.awsSdk.batchMod.ResourceRequirement]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EC2
+  - typings.awsSdk.awsSdkStrings.FARGATE
+  - java.lang.String
+*/
+type PlatformCapability = _PlatformCapability | java.lang.String
 
-type ResourceType = typings.awsSdk.awsSdkStrings.GPU | java.lang.String
+type PlatformCapabilityList = js.Array[PlatformCapability]
+
+type ResourceRequirements = js.Array[ResourceRequirement]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.GPU
+  - typings.awsSdk.awsSdkStrings.VCPU
+  - typings.awsSdk.awsSdkStrings.MEMORY
+  - java.lang.String
+*/
+type ResourceType = _ResourceType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RETRY
   - typings.awsSdk.awsSdkStrings.EXIT
   - java.lang.String
 */
-type RetryAction = typings.awsSdk.batchMod._RetryAction | java.lang.String
+type RetryAction = _RetryAction | java.lang.String
 
-type SecretList = js.Array[typings.awsSdk.batchMod.Secret]
+type SchedulingPolicyDetailList = js.Array[SchedulingPolicyDetail]
+
+type SchedulingPolicyListingDetailList = js.Array[SchedulingPolicyListingDetail]
+
+type SecretList = js.Array[Secret]
+
+type ShareAttributesList = js.Array[ShareAttributes]
 
 type String = java.lang.String
 
-type StringList = js.Array[typings.awsSdk.batchMod.String]
+type StringList = js.Array[String]
 
 type TagKey = java.lang.String
 
-type TagKeysList = js.Array[typings.awsSdk.batchMod.TagKey]
+type TagKeysList = js.Array[TagKey]
 
 type TagValue = java.lang.String
 
-type TagrisTagsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.batchMod.TagValue]
+type TagrisTagsMap = StringDictionary[TagValue]
 
-type TagsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.batchMod.String]
+type TagsMap = StringDictionary[String]
 
-type TmpfsList = js.Array[typings.awsSdk.batchMod.Tmpfs]
+type TmpfsList = js.Array[Tmpfs]
 
-type Ulimits = js.Array[typings.awsSdk.batchMod.Ulimit]
+type Ulimits = js.Array[Ulimit]
 
-type Volumes = js.Array[typings.awsSdk.batchMod.Volume]
+type Volumes = js.Array[Volume]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2016-08-10`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.batchMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

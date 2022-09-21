@@ -11,9 +11,9 @@ Convert html strings to PDF documents using React Native
 | Full name          | react-native-html-to-pdf |
 | Keywords           | html, pdf, react-native |
 | # releases         | 5 |
-| # dependents       | 4 |
-| # downloads        | 113228 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 38051.0 |
+| # stars            | 372.0 |
 
 ## Links
 - [Homepage](https://github.com/christopherdro/react-native-html-to-pdf)

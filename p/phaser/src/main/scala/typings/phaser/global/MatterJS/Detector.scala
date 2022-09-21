@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MatterJS.Detector")
 @js.native
-class Detector ()
+open class Detector ()
   extends StObject
      with typings.phaser.MatterJS.Detector
 object Detector {

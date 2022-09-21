@@ -9,7 +9,12 @@ trait UnassignIpv6AddressesRequest extends StObject {
   /**
     * The IPv6 addresses to unassign from the network interface.
     */
-  var Ipv6Addresses: Ipv6AddressList
+  var Ipv6Addresses: js.UndefOr[Ipv6AddressList] = js.undefined
+  
+  /**
+    * One or more IPv6 prefixes to unassign from the network interface.
+    */
+  var Ipv6Prefixes: js.UndefOr[IpPrefixList] = js.undefined
   
   /**
     * The ID of the network interface.
@@ -18,8 +23,8 @@ trait UnassignIpv6AddressesRequest extends StObject {
 }
 object UnassignIpv6AddressesRequest {
   
-  inline def apply(Ipv6Addresses: Ipv6AddressList, NetworkInterfaceId: NetworkInterfaceId): UnassignIpv6AddressesRequest = {
-    val __obj = js.Dynamic.literal(Ipv6Addresses = Ipv6Addresses.asInstanceOf[js.Any], NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any])
+  inline def apply(NetworkInterfaceId: NetworkInterfaceId): UnassignIpv6AddressesRequest = {
+    val __obj = js.Dynamic.literal(NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnassignIpv6AddressesRequest]
   }
   
@@ -27,7 +32,15 @@ object UnassignIpv6AddressesRequest {
     
     inline def setIpv6Addresses(value: Ipv6AddressList): Self = StObject.set(x, "Ipv6Addresses", value.asInstanceOf[js.Any])
     
-    inline def setIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value :_*))
+    inline def setIpv6AddressesUndefined: Self = StObject.set(x, "Ipv6Addresses", js.undefined)
+    
+    inline def setIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value*))
+    
+    inline def setIpv6Prefixes(value: IpPrefixList): Self = StObject.set(x, "Ipv6Prefixes", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6PrefixesUndefined: Self = StObject.set(x, "Ipv6Prefixes", js.undefined)
+    
+    inline def setIpv6PrefixesVarargs(value: String*): Self = StObject.set(x, "Ipv6Prefixes", js.Array(value*))
     
     inline def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
   }

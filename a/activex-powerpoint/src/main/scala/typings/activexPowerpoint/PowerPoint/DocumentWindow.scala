@@ -59,7 +59,7 @@ trait DocumentWindow extends StObject {
   
   val Panes: typings.activexPowerpoint.PowerPoint.Panes = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PointsToScreenPixelsX(Points: Double): Double = js.native
   
@@ -70,7 +70,7 @@ trait DocumentWindow extends StObject {
   
   val Presentation: typings.activexPowerpoint.PowerPoint.Presentation = js.native
   
-  def RangeFromPoint(X: Double, Y: Double): js.Any = js.native
+  def RangeFromPoint(X: Double, Y: Double): Any = js.native
   
   /** @param Office.MsoTriState [Start=-1] */
   def ScrollIntoView(Left: Double, Top: Double, Width: Double, Height: Double): Unit = js.native

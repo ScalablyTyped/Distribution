@@ -13,7 +13,7 @@ object notificationhubserviceMod {
   
   @JSImport("azure-sb/lib/notificationhubservice", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with NotificationHubService {
     def this(
@@ -31,131 +31,131 @@ object notificationhubserviceMod {
     
     def createOrUpdateInstallation(
       installation: NotificationHubInstallation,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     def createOrUpdateInstallation(
       installation: NotificationHubInstallation,
-      options: js.Any,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      options: Any,
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     
     def createOrUpdateRegistration(
       registration: NotificationHubRegistration,
       options: Etag,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     
     def createRegistrationId(
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     
     def deleteInstallation(
       installationId: String,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     def deleteInstallation(
       installationId: String,
-      options: js.Any,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      options: Any,
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     
     def deleteRegistration(
       registrationId: String,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     def deleteRegistration(
       registrationId: String,
       options: Etag,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     
     var gcm: typings.azureSb.gcmserviceMod.^ = js.native
     
     def getInstallation(
       installationId: String,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     def getInstallation(
       installationId: String,
-      options: js.Any,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      options: Any,
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     
     def getRegistration(
       registrationId: String,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     def getRegistration(
       registrationId: String,
-      options: js.Any,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      options: Any,
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     
     var hubName: String = js.native
     
     def listRegistrations(
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     def listRegistrations(
       options: ListNotificationHubsOptions,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     
     def listRegistrationsByTag(
       tag: String,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     def listRegistrationsByTag(
       tag: String,
       options: ListNotificationHubsOptions,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     
     var mpns: typings.azureSb.mpnserviceMod.^ = js.native
     
     def patchInstallation(
       installationId: String,
-      partialUpdateOperations: js.Array[js.Any],
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      partialUpdateOperations: js.Array[Any],
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     def patchInstallation(
       installationId: String,
-      partialUpdateOperations: js.Array[js.Any],
-      options: js.Any,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      partialUpdateOperations: js.Array[Any],
+      options: Any,
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     
     def send(
       tags: String,
       payload: String,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     def send(
       tags: String,
       payload: String,
       options: HeadersObject,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     def send(
       tags: String,
       payload: js.Object,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     def send(
       tags: String,
       payload: js.Object,
       options: HeadersObject,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     
     def updateRegistration(
       registration: NotificationHubRegistration,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     def updateRegistration(
       registration: NotificationHubRegistration,
       options: Etag,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Callback */ Any
     ): Unit = js.native
     
     var wns: typings.azureSb.wnsserviceMod.^ = js.native

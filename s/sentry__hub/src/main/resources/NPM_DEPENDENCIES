@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sentry/hub" : "5.27.4"
+      "@sentry/hub" : "7.13.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@sentry/hub" : "5.27.4"
+      "@sentry/hub" : "7.13.0"
     }
   ],
   "compile-devDependencies" : [

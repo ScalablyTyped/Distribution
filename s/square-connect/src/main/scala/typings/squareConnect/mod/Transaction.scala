@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "Transaction")
 @js.native
-class Transaction () extends StObject {
+open class Transaction () extends StObject {
   
   /**
     * If the transaction was created in the Square Point of Sale app, this value is the ID generated for the

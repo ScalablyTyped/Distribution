@@ -10,7 +10,7 @@ trait IgValidatorField
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets the target element (input or control target) to be validated. This field setting is required.

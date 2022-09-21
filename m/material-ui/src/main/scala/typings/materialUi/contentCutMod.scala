@@ -10,10 +10,10 @@ object contentCutMod {
   
   @JSImport("material-ui/svg-icons/content/content-cut", JSImport.Default)
   @js.native
-  class default () extends ContentContentCut
+  open class default () extends ContentContentCut
   
   @JSImport("material-ui/svg-icons/content/content-cut", "ContentContentCut")
   @js.native
-  class ContentContentCut ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentContentCut ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -25,6 +25,6 @@ object ObjectPropertyOptions {
     
     inline def setSubobjectPropertiesUndefined: Self = StObject.set(x, "subobjectProperties", js.undefined)
     
-    inline def setSubobjectPropertiesVarargs(value: PropertyDefinition*): Self = StObject.set(x, "subobjectProperties", js.Array(value :_*))
+    inline def setSubobjectPropertiesVarargs(value: PropertyDefinition*): Self = StObject.set(x, "subobjectProperties", js.Array(value*))
   }
 }

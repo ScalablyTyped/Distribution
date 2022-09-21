@@ -44,7 +44,7 @@ object MenuItem {
     
     inline def setSubmenuUndefined: Self = StObject.set(x, "submenu", js.undefined)
     
-    inline def setSubmenuVarargs(value: MenuItem*): Self = StObject.set(x, "submenu", js.Array(value :_*))
+    inline def setSubmenuVarargs(value: MenuItem*): Self = StObject.set(x, "submenu", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

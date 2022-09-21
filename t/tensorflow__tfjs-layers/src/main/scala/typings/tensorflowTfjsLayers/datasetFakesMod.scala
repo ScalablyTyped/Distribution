@@ -15,7 +15,7 @@ object datasetFakesMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/engine/dataset_fakes", "FakeNumericDataset")
   @js.native
-  class FakeNumericDataset protected () extends Dataset[FitDatasetElement] {
+  open class FakeNumericDataset protected () extends Dataset[FitDatasetElement] {
     def this(args: FakeDatasetArgs) = this()
     
     val args: FakeDatasetArgs = js.native
@@ -23,7 +23,7 @@ object datasetFakesMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/engine/dataset_fakes", "FakeNumericDatasetLegacyArrayForm")
   @js.native
-  class FakeNumericDatasetLegacyArrayForm protected ()
+  open class FakeNumericDatasetLegacyArrayForm protected ()
     extends Dataset[js.Tuple2[TensorOrArrayOrMap, TensorOrArrayOrMap]] {
     def this(args: FakeDatasetArgs) = this()
     
@@ -92,7 +92,7 @@ object datasetFakesMod {
       
       inline def setXShape(value: Shape | StringDictionary[Shape]): Self = StObject.set(x, "xShape", value.asInstanceOf[js.Any])
       
-      inline def setXShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "xShape", js.Array(value :_*))
+      inline def setXShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "xShape", js.Array(value*))
       
       inline def setXTensorsFunc(value: () => js.Array[Tensor[Rank]] | StringDictionary[js.Array[Tensor[Rank]]]): Self = StObject.set(x, "xTensorsFunc", js.Any.fromFunction0(value))
       
@@ -100,7 +100,7 @@ object datasetFakesMod {
       
       inline def setYShape(value: Shape | StringDictionary[Shape]): Self = StObject.set(x, "yShape", value.asInstanceOf[js.Any])
       
-      inline def setYShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "yShape", js.Array(value :_*))
+      inline def setYShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "yShape", js.Array(value*))
       
       inline def setYTensorsFunc(value: () => js.Array[Tensor[Rank]] | StringDictionary[js.Array[Tensor[Rank]]]): Self = StObject.set(x, "yTensorsFunc", js.Any.fromFunction0(value))
       

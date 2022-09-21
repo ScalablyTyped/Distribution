@@ -21,7 +21,7 @@ object ionicAngularServeMod {
   
   @JSImport("ionic/lib/project/ionic-angular/serve", "IonicAngularServeRunner")
   @js.native
-  class IonicAngularServeRunner protected () extends ServeRunner[IonicAngularServeOptions] {
+  open class IonicAngularServeRunner protected () extends ServeRunner[IonicAngularServeOptions] {
     def this(e: IonicAngularServeRunnerDeps) = this()
     
     /* protected */ @JSName("e")

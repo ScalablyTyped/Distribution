@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetRandomPasswordResponse extends StObject {
   
   /**
-    * A string with the generated password.
+    * A string with the password.
     */
   var RandomPassword: js.UndefOr[RandomPasswordType] = js.undefined
 }

@@ -58,7 +58,7 @@ object ActivityRule {
     
     inline def setActionNamesUndefined: Self = StObject.set(x, "actionNames", js.undefined)
     
-    inline def setActionNamesVarargs(value: String*): Self = StObject.set(x, "actionNames", js.Array(value :_*))
+    inline def setActionNamesVarargs(value: String*): Self = StObject.set(x, "actionNames", js.Array(value*))
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
@@ -84,7 +84,7 @@ object ActivityRule {
     
     inline def setSupersededAlertsUndefined: Self = StObject.set(x, "supersededAlerts", js.undefined)
     
-    inline def setSupersededAlertsVarargs(value: String*): Self = StObject.set(x, "supersededAlerts", js.Array(value :_*))
+    inline def setSupersededAlertsVarargs(value: String*): Self = StObject.set(x, "supersededAlerts", js.Array(value*))
     
     inline def setSupersedingAlert(value: String): Self = StObject.set(x, "supersedingAlert", value.asInstanceOf[js.Any])
     

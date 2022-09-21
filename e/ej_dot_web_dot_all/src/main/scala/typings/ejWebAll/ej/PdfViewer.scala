@@ -119,7 +119,7 @@ trait PdfViewer
     * @param {any} Set the JSON data that are formed for rendering the document content.
     * @returns {void}
     */
-  def setJSONData(jsonData: js.Any): Unit = js.native
+  def setJSONData(jsonData: Any): Unit = js.native
   
   /** Shows/hides the download tool in the toolbar.
     * @param {boolean} shows/hides download button in the toolbar
@@ -385,7 +385,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -404,7 +404,7 @@ object PdfViewer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -426,7 +426,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -449,7 +449,7 @@ object PdfViewer {
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -467,7 +467,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the response data on ajax success.
       */
@@ -490,7 +490,7 @@ object PdfViewer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -508,7 +508,7 @@ object PdfViewer {
     
     /** Returns the bounds of the annotation added in the page of the PDF document.
       */
-    var annotationBound: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var annotationBound: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the id of the annotation added in the page of the PDF document.
       */
@@ -516,7 +516,7 @@ object PdfViewer {
     
     /** Returns the settings of the annotation added to the PDF document.
       */
-    var annotationSettings: js.UndefOr[js.Any] = js.undefined
+    var annotationSettings: js.UndefOr[Any] = js.undefined
     
     /** Returns the type of the annotation added in the page of the PDF document.
       */
@@ -528,7 +528,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the page number in which the annotation is added.
       */
@@ -547,17 +547,17 @@ object PdfViewer {
     
     extension [Self <: AnnotationAddEventArgs](x: Self) {
       
-      inline def setAnnotationBound(value: js.Array[js.Any]): Self = StObject.set(x, "annotationBound", value.asInstanceOf[js.Any])
+      inline def setAnnotationBound(value: js.Array[Any]): Self = StObject.set(x, "annotationBound", value.asInstanceOf[js.Any])
       
       inline def setAnnotationBoundUndefined: Self = StObject.set(x, "annotationBound", js.undefined)
       
-      inline def setAnnotationBoundVarargs(value: js.Any*): Self = StObject.set(x, "annotationBound", js.Array(value :_*))
+      inline def setAnnotationBoundVarargs(value: Any*): Self = StObject.set(x, "annotationBound", js.Array(value*))
       
       inline def setAnnotationID(value: Double): Self = StObject.set(x, "annotationID", value.asInstanceOf[js.Any])
       
       inline def setAnnotationIDUndefined: Self = StObject.set(x, "annotationID", js.undefined)
       
-      inline def setAnnotationSettings(value: js.Any): Self = StObject.set(x, "annotationSettings", value.asInstanceOf[js.Any])
+      inline def setAnnotationSettings(value: Any): Self = StObject.set(x, "annotationSettings", value.asInstanceOf[js.Any])
       
       inline def setAnnotationSettingsUndefined: Self = StObject.set(x, "annotationSettings", js.undefined)
       
@@ -569,7 +569,7 @@ object PdfViewer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -652,7 +652,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the page number in which the annotation is added.
       */
@@ -691,7 +691,7 @@ object PdfViewer {
       
       inline def setIsOpacityChangedUndefined: Self = StObject.set(x, "isOpacityChanged", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -721,7 +721,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the page number in which the annotation is removed.
       */
@@ -752,7 +752,7 @@ object PdfViewer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -774,7 +774,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -793,7 +793,7 @@ object PdfViewer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -815,7 +815,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -838,7 +838,7 @@ object PdfViewer {
       
       inline def setIsBufferingUndefined: Self = StObject.set(x, "isBuffering", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -860,7 +860,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -883,7 +883,7 @@ object PdfViewer {
       
       inline def setIsBufferingUndefined: Self = StObject.set(x, "isBuffering", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -901,7 +901,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -920,7 +920,7 @@ object PdfViewer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -942,7 +942,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -965,7 +965,7 @@ object PdfViewer {
       
       inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -983,7 +983,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -1002,7 +1002,7 @@ object PdfViewer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1024,7 +1024,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the status about the download is completed or aborted.
       */
@@ -1051,7 +1051,7 @@ object PdfViewer {
       
       inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1077,7 +1077,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the status about the download is started.
       */
@@ -1104,7 +1104,7 @@ object PdfViewer {
       
       inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1191,7 +1191,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -1214,7 +1214,7 @@ object PdfViewer {
       
       inline def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1665,7 +1665,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -1688,7 +1688,7 @@ object PdfViewer {
       
       inline def setCurrentPageNumberUndefined: Self = StObject.set(x, "currentPageNumber", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1706,7 +1706,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the current X position
       */
@@ -1733,7 +1733,7 @@ object PdfViewer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1804,7 +1804,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the page number in which the signature is added.
       */
@@ -1812,11 +1812,11 @@ object PdfViewer {
     
     /** Returns the bounds of the signature added in the page of the PDF document.
       */
-    var signatureBound: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var signatureBound: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the settings of the signature added to the PDF document.
       */
-    var signatureSettings: js.UndefOr[js.Any] = js.undefined
+    var signatureSettings: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -1835,7 +1835,7 @@ object PdfViewer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1843,13 +1843,13 @@ object PdfViewer {
       
       inline def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
       
-      inline def setSignatureBound(value: js.Array[js.Any]): Self = StObject.set(x, "signatureBound", value.asInstanceOf[js.Any])
+      inline def setSignatureBound(value: js.Array[Any]): Self = StObject.set(x, "signatureBound", value.asInstanceOf[js.Any])
       
       inline def setSignatureBoundUndefined: Self = StObject.set(x, "signatureBound", js.undefined)
       
-      inline def setSignatureBoundVarargs(value: js.Any*): Self = StObject.set(x, "signatureBound", js.Array(value :_*))
+      inline def setSignatureBoundVarargs(value: Any*): Self = StObject.set(x, "signatureBound", js.Array(value*))
       
-      inline def setSignatureSettings(value: js.Any): Self = StObject.set(x, "signatureSettings", value.asInstanceOf[js.Any])
+      inline def setSignatureSettings(value: Any): Self = StObject.set(x, "signatureSettings", value.asInstanceOf[js.Any])
       
       inline def setSignatureSettingsUndefined: Self = StObject.set(x, "signatureSettings", js.undefined)
       
@@ -1867,7 +1867,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the page number in which the signature is removed.
       */
@@ -1890,7 +1890,7 @@ object PdfViewer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1928,7 +1928,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the page number in which the signature properties is changed.
       */
@@ -1975,7 +1975,7 @@ object PdfViewer {
       
       inline def setIsOpacityChangeUndefined: Self = StObject.set(x, "isOpacityChange", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2005,7 +2005,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the page number in which the signature is added.
       */
@@ -2013,15 +2013,15 @@ object PdfViewer {
     
     /** Returns the current bounds of the signature resized in the page of the PDF document.
       */
-    var signatureCurrentBound: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var signatureCurrentBound: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the previous bounds of the signature resized in the page of the PDF document.
       */
-    var signaturePreviousBound: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var signaturePreviousBound: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the settings of the signature added to the PDF document.
       */
-    var signatureSettings: js.UndefOr[js.Any] = js.undefined
+    var signatureSettings: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -2040,7 +2040,7 @@ object PdfViewer {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2048,19 +2048,19 @@ object PdfViewer {
       
       inline def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
       
-      inline def setSignatureCurrentBound(value: js.Array[js.Any]): Self = StObject.set(x, "signatureCurrentBound", value.asInstanceOf[js.Any])
+      inline def setSignatureCurrentBound(value: js.Array[Any]): Self = StObject.set(x, "signatureCurrentBound", value.asInstanceOf[js.Any])
       
       inline def setSignatureCurrentBoundUndefined: Self = StObject.set(x, "signatureCurrentBound", js.undefined)
       
-      inline def setSignatureCurrentBoundVarargs(value: js.Any*): Self = StObject.set(x, "signatureCurrentBound", js.Array(value :_*))
+      inline def setSignatureCurrentBoundVarargs(value: Any*): Self = StObject.set(x, "signatureCurrentBound", js.Array(value*))
       
-      inline def setSignaturePreviousBound(value: js.Array[js.Any]): Self = StObject.set(x, "signaturePreviousBound", value.asInstanceOf[js.Any])
+      inline def setSignaturePreviousBound(value: js.Array[Any]): Self = StObject.set(x, "signaturePreviousBound", value.asInstanceOf[js.Any])
       
       inline def setSignaturePreviousBoundUndefined: Self = StObject.set(x, "signaturePreviousBound", js.undefined)
       
-      inline def setSignaturePreviousBoundVarargs(value: js.Any*): Self = StObject.set(x, "signaturePreviousBound", js.Array(value :_*))
+      inline def setSignaturePreviousBoundVarargs(value: Any*): Self = StObject.set(x, "signaturePreviousBound", js.Array(value*))
       
-      inline def setSignatureSettings(value: js.Any): Self = StObject.set(x, "signatureSettings", value.asInstanceOf[js.Any])
+      inline def setSignatureSettings(value: Any): Self = StObject.set(x, "signatureSettings", value.asInstanceOf[js.Any])
       
       inline def setSignatureSettingsUndefined: Self = StObject.set(x, "signatureSettings", js.undefined)
       
@@ -2315,7 +2315,7 @@ object PdfViewer {
     
     /** Returns the PDF viewer model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous zoom percentage of the PDF viewer control
       */
@@ -2342,7 +2342,7 @@ object PdfViewer {
       
       inline def setCurrentZoomPercentageUndefined: Self = StObject.set(x, "currentZoomPercentage", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       

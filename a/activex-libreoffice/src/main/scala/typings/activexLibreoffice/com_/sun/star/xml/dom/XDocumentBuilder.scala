@@ -52,7 +52,7 @@ object XDocumentBuilder {
     newDocument: () => XDocument,
     parse: XInputStream => XDocument,
     parseURI: String => XDocument,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setEntityResolver: XEntityResolver => Unit,
     setErrorHandler: XErrorHandler => Unit

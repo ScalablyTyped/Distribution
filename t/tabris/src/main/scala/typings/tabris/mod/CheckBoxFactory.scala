@@ -10,5 +10,5 @@ trait CheckBoxFactory
   extends Factory[
       CheckBoxConstructor, 
       InstanceType[CheckBoxConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[CheckBoxConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

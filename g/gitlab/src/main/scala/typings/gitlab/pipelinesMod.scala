@@ -7,7 +7,6 @@ import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object pipelinesMod {
   
   @JSImport("gitlab/dist/types/core/services/Pipelines", "Pipelines")
   @js.native
-  class Pipelines () extends BaseService {
+  open class Pipelines () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[GetResponse] = js.native
@@ -62,7 +61,7 @@ object pipelinesMod {
   
   trait PipelineSchema extends StObject {
     
-    var created_at: Date
+    var created_at: js.Date
     
     var id: Double
     
@@ -72,19 +71,19 @@ object pipelinesMod {
     
     var status: String
     
-    var updated_at: Date
+    var updated_at: js.Date
     
     var web_url: String
   }
   object PipelineSchema {
     
     inline def apply(
-      created_at: Date,
+      created_at: js.Date,
       id: Double,
       ref: String,
       sha: String,
       status: String,
-      updated_at: Date,
+      updated_at: js.Date,
       web_url: String
     ): PipelineSchema = {
       val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], web_url = web_url.asInstanceOf[js.Any])
@@ -93,7 +92,7 @@ object pipelinesMod {
     
     extension [Self <: PipelineSchema](x: Self) {
       
-      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: js.Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -103,7 +102,7 @@ object pipelinesMod {
       
       inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      inline def setUpdated_at(value: Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+      inline def setUpdated_at(value: js.Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
       
       inline def setWeb_url(value: String): Self = StObject.set(x, "web_url", value.asInstanceOf[js.Any])
     }

@@ -37,13 +37,13 @@ object GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs {
     
     inline def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
-    inline def setDirectoriesVarargs(value: String*): Self = StObject.set(x, "directories", js.Array(value :_*))
+    inline def setDirectoriesVarargs(value: String*): Self = StObject.set(x, "directories", js.Array(value*))
     
     inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setStderrDestination(value: String): Self = StObject.set(x, "stderrDestination", value.asInstanceOf[js.Any])
     

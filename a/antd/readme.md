@@ -1,7 +1,7 @@
 
 # Scala.js typings for antd
 
-Typings are for version 4.8.5
+Typings are for version 4.23.2
 
 ## Library description:
 An enterprise-class UI design language and React components implementation
@@ -10,10 +10,10 @@ An enterprise-class UI design language and React components implementation
 | ------------------ | :-------------: |
 | Full name          | antd |
 | Keywords           | ant, component, components, design, framework, frontend, react, react-component, ui |
-| # releases         | 175 |
-| # dependents       | 3680 |
-| # downloads        | 23954034 |
-| # stars            | 53 |
+| # releases         | 153 |
+| # dependents       | 0.0 |
+| # downloads        | 3791945.0 |
+| # stars            | 81939.0 |
 
 ## Links
 - [Homepage](https://ant.design)

@@ -8,5 +8,5 @@ object multipartUploadListMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_MultipartUploadList", "_MultipartUploadList")
   @js.native
-  val MultipartUploadList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val MultipartUploadList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

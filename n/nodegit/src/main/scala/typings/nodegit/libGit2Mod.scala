@@ -21,7 +21,7 @@ object libGit2Mod {
   
   @JSImport("nodegit/lib-git2", "Libgit2")
   @js.native
-  class Libgit2 () extends StObject
+  open class Libgit2 () extends StObject
   /* static members */
   object Libgit2 {
     

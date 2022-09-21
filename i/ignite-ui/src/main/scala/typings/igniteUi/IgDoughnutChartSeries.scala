@@ -10,23 +10,23 @@ trait IgDoughnutChartSeries
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets or sets the palette of brushes to use for coloring the slices.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var brushes: js.UndefOr[js.Any] = js.undefined
+  var brushes: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets or gets a function which takes an object that produces a formatted label for displaying in the chart.
     */
-  var formatLabel: js.UndefOr[js.Any] = js.undefined
+  var formatLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets or gets a function which takes an object that produces a formatted label for displaying in the chart's legend.
     */
-  var formatLegendLabel: js.UndefOr[js.Any] = js.undefined
+  var formatLegendLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets whether all surface interactions with the plot area should be disabled.
@@ -36,7 +36,7 @@ trait IgDoughnutChartSeries
   /**
     * Gets or sets the data source for the chart.
     */
-  var itemsSource: js.UndefOr[js.Any] = js.undefined
+  var itemsSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the pixel amount by which the labels are offset from the edge of the slices.
@@ -78,7 +78,7 @@ trait IgDoughnutChartSeries
   /**
     * Gets or sets the style for the leader lines.
     */
-  var leaderLineStyle: js.UndefOr[js.Any] = js.undefined
+  var leaderLineStyle: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets what type of leader lines will be used for the outside end labels.
@@ -102,7 +102,7 @@ trait IgDoughnutChartSeries
   /**
     * Gets or sets the legend used for the current chart.
     */
-  var legend: js.UndefOr[js.Any] = js.undefined
+  var legend: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the property name that contains the legend labels.
@@ -132,7 +132,7 @@ trait IgDoughnutChartSeries
     * Gets or sets the palette of brushes to use for outlines on the slices.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var outlines: js.UndefOr[js.Any] = js.undefined
+  var outlines: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the scaling factor of the chart's radius. Value between 0 and 1.
@@ -142,7 +142,7 @@ trait IgDoughnutChartSeries
   /**
     * Gets or sets the style used when a slice is selected.
     */
-  var selectedStyle: js.UndefOr[js.Any] = js.undefined
+  var selectedStyle: js.UndefOr[Any] = js.undefined
   
   /**
     * Whether the series should render a tooltip.
@@ -182,15 +182,15 @@ object IgDoughnutChartSeries {
   
   extension [Self <: IgDoughnutChartSeries](x: Self) {
     
-    inline def setBrushes(value: js.Any): Self = StObject.set(x, "brushes", value.asInstanceOf[js.Any])
+    inline def setBrushes(value: Any): Self = StObject.set(x, "brushes", value.asInstanceOf[js.Any])
     
     inline def setBrushesUndefined: Self = StObject.set(x, "brushes", js.undefined)
     
-    inline def setFormatLabel(value: js.Any): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
+    inline def setFormatLabel(value: Any): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
     
     inline def setFormatLabelUndefined: Self = StObject.set(x, "formatLabel", js.undefined)
     
-    inline def setFormatLegendLabel(value: js.Any): Self = StObject.set(x, "formatLegendLabel", value.asInstanceOf[js.Any])
+    inline def setFormatLegendLabel(value: Any): Self = StObject.set(x, "formatLegendLabel", value.asInstanceOf[js.Any])
     
     inline def setFormatLegendLabelUndefined: Self = StObject.set(x, "formatLegendLabel", js.undefined)
     
@@ -198,7 +198,7 @@ object IgDoughnutChartSeries {
     
     inline def setIsSurfaceInteractionDisabledUndefined: Self = StObject.set(x, "isSurfaceInteractionDisabled", js.undefined)
     
-    inline def setItemsSource(value: js.Any): Self = StObject.set(x, "itemsSource", value.asInstanceOf[js.Any])
+    inline def setItemsSource(value: Any): Self = StObject.set(x, "itemsSource", value.asInstanceOf[js.Any])
     
     inline def setItemsSourceUndefined: Self = StObject.set(x, "itemsSource", js.undefined)
     
@@ -226,7 +226,7 @@ object IgDoughnutChartSeries {
     
     inline def setLeaderLineMarginUndefined: Self = StObject.set(x, "leaderLineMargin", js.undefined)
     
-    inline def setLeaderLineStyle(value: js.Any): Self = StObject.set(x, "leaderLineStyle", value.asInstanceOf[js.Any])
+    inline def setLeaderLineStyle(value: Any): Self = StObject.set(x, "leaderLineStyle", value.asInstanceOf[js.Any])
     
     inline def setLeaderLineStyleUndefined: Self = StObject.set(x, "leaderLineStyle", js.undefined)
     
@@ -238,7 +238,7 @@ object IgDoughnutChartSeries {
     
     inline def setLeaderLineVisibilityUndefined: Self = StObject.set(x, "leaderLineVisibility", js.undefined)
     
-    inline def setLegend(value: js.Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setLegendLabelMemberPath(value: String): Self = StObject.set(x, "legendLabelMemberPath", value.asInstanceOf[js.Any])
     
@@ -258,7 +258,7 @@ object IgDoughnutChartSeries {
     
     inline def setOthersCategoryTypeUndefined: Self = StObject.set(x, "othersCategoryType", js.undefined)
     
-    inline def setOutlines(value: js.Any): Self = StObject.set(x, "outlines", value.asInstanceOf[js.Any])
+    inline def setOutlines(value: Any): Self = StObject.set(x, "outlines", value.asInstanceOf[js.Any])
     
     inline def setOutlinesUndefined: Self = StObject.set(x, "outlines", js.undefined)
     
@@ -266,7 +266,7 @@ object IgDoughnutChartSeries {
     
     inline def setRadiusFactorUndefined: Self = StObject.set(x, "radiusFactor", js.undefined)
     
-    inline def setSelectedStyle(value: js.Any): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
+    inline def setSelectedStyle(value: Any): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
     
     inline def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
     

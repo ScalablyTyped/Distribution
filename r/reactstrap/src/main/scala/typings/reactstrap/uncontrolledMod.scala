@@ -1,6 +1,7 @@
 package typings.reactstrap
 
 import typings.react.mod.Component
+import typings.reactstrap.accordionMod.UncontrolledAccordionProps
 import typings.reactstrap.alertMod.UncontrolledAlertProps
 import typings.reactstrap.carouselMod.UncontrolledCarouselProps
 import typings.reactstrap.collapseMod.UncontrolledCollapseProps
@@ -13,87 +14,99 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object uncontrolledMod {
   
-  @JSImport("reactstrap/lib/Uncontrolled", "UncontrolledAlert")
+  @JSImport("reactstrap/types/lib/Uncontrolled", "UncontrolledAccordion")
   @js.native
-  class UncontrolledAlert protected ()
-    extends Component[UncontrolledAlertProps, js.Object, js.Any] {
+  open class UncontrolledAccordion protected ()
+    extends Component[UncontrolledAccordionProps, js.Object, Any] {
+    def this(props: UncontrolledAccordionProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: UncontrolledAccordionProps, context: Any) = this()
+  }
+  
+  @JSImport("reactstrap/types/lib/Uncontrolled", "UncontrolledAlert")
+  @js.native
+  open class UncontrolledAlert protected ()
+    extends Component[UncontrolledAlertProps, js.Object, Any] {
     def this(props: UncontrolledAlertProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: UncontrolledAlertProps, context: js.Any) = this()
+    def this(props: UncontrolledAlertProps, context: Any) = this()
   }
   
-  @JSImport("reactstrap/lib/Uncontrolled", "UncontrolledButtonDropdown")
+  @JSImport("reactstrap/types/lib/Uncontrolled", "UncontrolledButtonDropdown")
   @js.native
-  class UncontrolledButtonDropdown protected ()
-    extends Component[UncontrolledDropdownProps, js.Object, js.Any] {
+  open class UncontrolledButtonDropdown protected ()
+    extends Component[UncontrolledDropdownProps, js.Object, Any] {
     def this(props: UncontrolledDropdownProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: UncontrolledDropdownProps, context: js.Any) = this()
+    def this(props: UncontrolledDropdownProps, context: Any) = this()
   }
   
-  @JSImport("reactstrap/lib/Uncontrolled", "UncontrolledCarousel")
+  @JSImport("reactstrap/types/lib/Uncontrolled", "UncontrolledCarousel")
   @js.native
-  class UncontrolledCarousel protected ()
-    extends Component[UncontrolledCarouselProps, js.Object, js.Any] {
+  open class UncontrolledCarousel protected ()
+    extends Component[UncontrolledCarouselProps, js.Object, Any] {
     def this(props: UncontrolledCarouselProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: UncontrolledCarouselProps, context: js.Any) = this()
+    def this(props: UncontrolledCarouselProps, context: Any) = this()
   }
   
-  @JSImport("reactstrap/lib/Uncontrolled", "UncontrolledCollapse")
+  @JSImport("reactstrap/types/lib/Uncontrolled", "UncontrolledCollapse")
   @js.native
-  class UncontrolledCollapse protected ()
-    extends Component[UncontrolledCollapseProps, js.Object, js.Any] {
+  open class UncontrolledCollapse protected ()
+    extends Component[UncontrolledCollapseProps, js.Object, Any] {
     def this(props: UncontrolledCollapseProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: UncontrolledCollapseProps, context: js.Any) = this()
+    def this(props: UncontrolledCollapseProps, context: Any) = this()
   }
   
-  @JSImport("reactstrap/lib/Uncontrolled", "UncontrolledDropdown")
+  @JSImport("reactstrap/types/lib/Uncontrolled", "UncontrolledDropdown")
   @js.native
-  class UncontrolledDropdown protected ()
-    extends Component[UncontrolledDropdownProps, js.Object, js.Any] {
+  open class UncontrolledDropdown protected ()
+    extends Component[UncontrolledDropdownProps, js.Object, Any] {
     def this(props: UncontrolledDropdownProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: UncontrolledDropdownProps, context: js.Any) = this()
+    def this(props: UncontrolledDropdownProps, context: Any) = this()
   }
   
-  @JSImport("reactstrap/lib/Uncontrolled", "UncontrolledPopover")
+  @JSImport("reactstrap/types/lib/Uncontrolled", "UncontrolledPopover")
   @js.native
-  class UncontrolledPopover protected ()
-    extends Component[UncontrolledPopoverProps, js.Object, js.Any] {
+  open class UncontrolledPopover protected ()
+    extends Component[UncontrolledPopoverProps, js.Object, Any] {
     def this(props: UncontrolledPopoverProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: UncontrolledPopoverProps, context: js.Any) = this()
+    def this(props: UncontrolledPopoverProps, context: Any) = this()
   }
   
-  @JSImport("reactstrap/lib/Uncontrolled", "UncontrolledTooltip")
+  @JSImport("reactstrap/types/lib/Uncontrolled", "UncontrolledTooltip")
   @js.native
-  class UncontrolledTooltip protected ()
-    extends Component[UncontrolledTooltipProps, js.Object, js.Any] {
+  open class UncontrolledTooltip protected ()
+    extends Component[UncontrolledTooltipProps, js.Object, Any] {
     def this(props: UncontrolledTooltipProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: UncontrolledTooltipProps, context: js.Any) = this()
+    def this(props: UncontrolledTooltipProps, context: Any) = this()
   }
 }

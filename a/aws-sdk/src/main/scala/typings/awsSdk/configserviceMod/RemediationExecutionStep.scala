@@ -19,7 +19,7 @@ trait RemediationExecutionStep extends StObject {
   /**
     * The time when the step started.
     */
-  var StartTime: js.UndefOr[Date] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The valid status of the step.
@@ -29,7 +29,7 @@ trait RemediationExecutionStep extends StObject {
   /**
     * The time when the step stopped.
     */
-  var StopTime: js.UndefOr[Date] = js.undefined
+  var StopTime: js.UndefOr[js.Date] = js.undefined
 }
 object RemediationExecutionStep {
   
@@ -48,7 +48,7 @@ object RemediationExecutionStep {
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
@@ -56,7 +56,7 @@ object RemediationExecutionStep {
     
     inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    inline def setStopTime(value: Date): Self = StObject.set(x, "StopTime", value.asInstanceOf[js.Any])
+    inline def setStopTime(value: js.Date): Self = StObject.set(x, "StopTime", value.asInstanceOf[js.Any])
     
     inline def setStopTimeUndefined: Self = StObject.set(x, "StopTime", js.undefined)
   }

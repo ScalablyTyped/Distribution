@@ -10,10 +10,10 @@ Pub/Sub library providing wildcard subscriptions, complex message handling, etc.
 | ------------------ | :-------------: |
 | Full name          | postal |
 | Keywords           | pub/sub, pub, sub, messaging, message, bus, event, mediator, broker, envelope |
-| # releases         | 0 |
-| # dependents       | 84 |
-| # downloads        | 1594152 |
-| # stars            | 12 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 147436.0 |
+| # stars            | 2755.0 |
 
 ## Links
 - [Homepage](http://github.com/postaljs/postal.js)

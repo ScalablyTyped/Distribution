@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Networking.Connectivity
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait IDataPlanStatus extends StObject {
   
   var maxTransferSizeInMegabytes: Double
   
-  var nextBillingCycle: Date
+  var nextBillingCycle: js.Date
   
   var outboundBitsPerSecond: Double
 }
@@ -26,7 +25,7 @@ object IDataPlanStatus {
     dataPlanUsage: DataPlanUsage,
     inboundBitsPerSecond: Double,
     maxTransferSizeInMegabytes: Double,
-    nextBillingCycle: Date,
+    nextBillingCycle: js.Date,
     outboundBitsPerSecond: Double
   ): IDataPlanStatus = {
     val __obj = js.Dynamic.literal(dataLimitInMegabytes = dataLimitInMegabytes.asInstanceOf[js.Any], dataPlanUsage = dataPlanUsage.asInstanceOf[js.Any], inboundBitsPerSecond = inboundBitsPerSecond.asInstanceOf[js.Any], maxTransferSizeInMegabytes = maxTransferSizeInMegabytes.asInstanceOf[js.Any], nextBillingCycle = nextBillingCycle.asInstanceOf[js.Any], outboundBitsPerSecond = outboundBitsPerSecond.asInstanceOf[js.Any])
@@ -43,7 +42,7 @@ object IDataPlanStatus {
     
     inline def setMaxTransferSizeInMegabytes(value: Double): Self = StObject.set(x, "maxTransferSizeInMegabytes", value.asInstanceOf[js.Any])
     
-    inline def setNextBillingCycle(value: Date): Self = StObject.set(x, "nextBillingCycle", value.asInstanceOf[js.Any])
+    inline def setNextBillingCycle(value: js.Date): Self = StObject.set(x, "nextBillingCycle", value.asInstanceOf[js.Any])
     
     inline def setOutboundBitsPerSecond(value: Double): Self = StObject.set(x, "outboundBitsPerSecond", value.asInstanceOf[js.Any])
   }

@@ -191,7 +191,7 @@ object mod {
       
       inline def setBlockquoteUndefined: Self = StObject.set(x, "blockquote", js.undefined)
       
-      inline def setBlockquoteVarargs(value: String*): Self = StObject.set(x, "blockquote", js.Array(value :_*))
+      inline def setBlockquoteVarargs(value: String*): Self = StObject.set(x, "blockquote", js.Array(value*))
       
       inline def setCode(value: CodeInput): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -201,55 +201,55 @@ object mod {
       
       inline def setH1Undefined: Self = StObject.set(x, "h1", js.undefined)
       
-      inline def setH1Varargs(value: String*): Self = StObject.set(x, "h1", js.Array(value :_*))
+      inline def setH1Varargs(value: String*): Self = StObject.set(x, "h1", js.Array(value*))
       
       inline def setH2(value: String | js.Array[String]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
       
       inline def setH2Undefined: Self = StObject.set(x, "h2", js.undefined)
       
-      inline def setH2Varargs(value: String*): Self = StObject.set(x, "h2", js.Array(value :_*))
+      inline def setH2Varargs(value: String*): Self = StObject.set(x, "h2", js.Array(value*))
       
       inline def setH3(value: String | js.Array[String]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
       
       inline def setH3Undefined: Self = StObject.set(x, "h3", js.undefined)
       
-      inline def setH3Varargs(value: String*): Self = StObject.set(x, "h3", js.Array(value :_*))
+      inline def setH3Varargs(value: String*): Self = StObject.set(x, "h3", js.Array(value*))
       
       inline def setH4(value: String | js.Array[String]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
       
       inline def setH4Undefined: Self = StObject.set(x, "h4", js.undefined)
       
-      inline def setH4Varargs(value: String*): Self = StObject.set(x, "h4", js.Array(value :_*))
+      inline def setH4Varargs(value: String*): Self = StObject.set(x, "h4", js.Array(value*))
       
       inline def setH5(value: String | js.Array[String]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
       
       inline def setH5Undefined: Self = StObject.set(x, "h5", js.undefined)
       
-      inline def setH5Varargs(value: String*): Self = StObject.set(x, "h5", js.Array(value :_*))
+      inline def setH5Varargs(value: String*): Self = StObject.set(x, "h5", js.Array(value*))
       
       inline def setH6(value: String | js.Array[String]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
       
       inline def setH6Undefined: Self = StObject.set(x, "h6", js.undefined)
       
-      inline def setH6Varargs(value: String*): Self = StObject.set(x, "h6", js.Array(value :_*))
+      inline def setH6Varargs(value: String*): Self = StObject.set(x, "h6", js.Array(value*))
       
       inline def setImg(value: ImgInput | js.Array[ImgInput]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       
       inline def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
       
-      inline def setImgVarargs(value: ImgInput*): Self = StObject.set(x, "img", js.Array(value :_*))
+      inline def setImgVarargs(value: ImgInput*): Self = StObject.set(x, "img", js.Array(value*))
       
       inline def setOl(value: js.Array[String]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
       
       inline def setOlUndefined: Self = StObject.set(x, "ol", js.undefined)
       
-      inline def setOlVarargs(value: String*): Self = StObject.set(x, "ol", js.Array(value :_*))
+      inline def setOlVarargs(value: String*): Self = StObject.set(x, "ol", js.Array(value*))
       
       inline def setP(value: String | js.Array[String]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
       inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
-      inline def setPVarargs(value: String*): Self = StObject.set(x, "p", js.Array(value :_*))
+      inline def setPVarargs(value: String*): Self = StObject.set(x, "p", js.Array(value*))
       
       inline def setTable(value: TableInput): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
@@ -259,7 +259,7 @@ object mod {
       
       inline def setUlUndefined: Self = StObject.set(x, "ul", js.undefined)
       
-      inline def setUlVarargs(value: String*): Self = StObject.set(x, "ul", js.Array(value :_*))
+      inline def setUlVarargs(value: String*): Self = StObject.set(x, "ul", js.Array(value*))
     }
   }
   
@@ -282,7 +282,7 @@ object mod {
         
         inline def setContent(value: String | js.Array[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        inline def setContentVarargs(value: String*): Self = StObject.set(x, "content", js.Array(value :_*))
+        inline def setContentVarargs(value: String*): Self = StObject.set(x, "content", js.Array(value*))
         
         inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
         
@@ -292,7 +292,7 @@ object mod {
     
     trait Converters
       extends StObject
-         with /* converter */ StringDictionary[js.Any] {
+         with /* converter */ StringDictionary[Any] {
       
       var blockquote: String | js.Array[String]
       
@@ -345,51 +345,51 @@ object mod {
         
         inline def setBlockquote(value: String | js.Array[String]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
         
-        inline def setBlockquoteVarargs(value: String*): Self = StObject.set(x, "blockquote", js.Array(value :_*))
+        inline def setBlockquoteVarargs(value: String*): Self = StObject.set(x, "blockquote", js.Array(value*))
         
         inline def setCode(value: CodeInput): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
         inline def setH1(value: String | js.Array[String]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
         
-        inline def setH1Varargs(value: String*): Self = StObject.set(x, "h1", js.Array(value :_*))
+        inline def setH1Varargs(value: String*): Self = StObject.set(x, "h1", js.Array(value*))
         
         inline def setH2(value: String | js.Array[String]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
         
-        inline def setH2Varargs(value: String*): Self = StObject.set(x, "h2", js.Array(value :_*))
+        inline def setH2Varargs(value: String*): Self = StObject.set(x, "h2", js.Array(value*))
         
         inline def setH3(value: String | js.Array[String]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
         
-        inline def setH3Varargs(value: String*): Self = StObject.set(x, "h3", js.Array(value :_*))
+        inline def setH3Varargs(value: String*): Self = StObject.set(x, "h3", js.Array(value*))
         
         inline def setH4(value: String | js.Array[String]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
         
-        inline def setH4Varargs(value: String*): Self = StObject.set(x, "h4", js.Array(value :_*))
+        inline def setH4Varargs(value: String*): Self = StObject.set(x, "h4", js.Array(value*))
         
         inline def setH5(value: String | js.Array[String]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
         
-        inline def setH5Varargs(value: String*): Self = StObject.set(x, "h5", js.Array(value :_*))
+        inline def setH5Varargs(value: String*): Self = StObject.set(x, "h5", js.Array(value*))
         
         inline def setH6(value: String | js.Array[String]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
         
-        inline def setH6Varargs(value: String*): Self = StObject.set(x, "h6", js.Array(value :_*))
+        inline def setH6Varargs(value: String*): Self = StObject.set(x, "h6", js.Array(value*))
         
         inline def setImg(value: ImgInput | js.Array[ImgInput]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
         
-        inline def setImgVarargs(value: ImgInput*): Self = StObject.set(x, "img", js.Array(value :_*))
+        inline def setImgVarargs(value: ImgInput*): Self = StObject.set(x, "img", js.Array(value*))
         
         inline def setOl(value: js.Array[String]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
         
-        inline def setOlVarargs(value: String*): Self = StObject.set(x, "ol", js.Array(value :_*))
+        inline def setOlVarargs(value: String*): Self = StObject.set(x, "ol", js.Array(value*))
         
         inline def setP(value: String | js.Array[String]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
         
-        inline def setPVarargs(value: String*): Self = StObject.set(x, "p", js.Array(value :_*))
+        inline def setPVarargs(value: String*): Self = StObject.set(x, "p", js.Array(value*))
         
         inline def setTable(value: TableInput): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
         
         inline def setUl(value: js.Array[String]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
         
-        inline def setUlVarargs(value: String*): Self = StObject.set(x, "ul", js.Array(value :_*))
+        inline def setUlVarargs(value: String*): Self = StObject.set(x, "ul", js.Array(value*))
       }
     }
     
@@ -431,14 +431,14 @@ object mod {
         
         inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
-        inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+        inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
         
         inline def setRows(value: js.Array[js.Array[String] | StringDictionary[String]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
         
-        inline def setRowsVarargs(value: (js.Array[String] | StringDictionary[String])*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: (js.Array[String] | StringDictionary[String])*): Self = StObject.set(x, "rows", js.Array(value*))
       }
     }
   }
   
-  type json2md = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof json2md */ js.Any
+  type json2md = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof json2md */ Any
 }

@@ -4,92 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dns/v1", "dns_v1.Resource$Changes")
 @js.native
-class ResourceChanges protected () extends StObject {
+open class ResourceChanges protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * dns.changes.create
-    * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Google Cloud DNS API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/dns
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
-    *
-    * var google = require('googleapis');
-    * var dns = google.dns('v1');
-    *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Identifies the project addressed by this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // Identifies the managed zone addressed by this request. Can be the
-    * managed zone name or id. managedZone: 'my-managed-zone',  // TODO: Update
-    * placeholder value.
-    *
-    *     resource: {
-    *       // TODO: Add desired properties to the request body.
-    *     },
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   dns.changes.create(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
-    *   });
-    * });
-    *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias dns.changes.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string=} params.clientOperationId
-    * @param {string} params.managedZone
-    * @param {string} params.project
-    * @param {().Change} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaChange] = js.native
   def create(callback: BodyResponseCallback[SchemaChange]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChange] = js.native
@@ -97,8 +24,8 @@ class ResourceChanges protected () extends StObject {
   def create(params: ParamsResourceChangesCreate, callback: BodyResponseCallback[SchemaChange]): Unit = js.native
   def create(
     params: ParamsResourceChangesCreate,
-    options: BodyResponseCallback[SchemaChange],
-    callback: BodyResponseCallback[SchemaChange]
+    options: BodyResponseCallback[Readable | SchemaChange],
+    callback: BodyResponseCallback[Readable | SchemaChange]
   ): Unit = js.native
   def create(params: ParamsResourceChangesCreate, options: MethodOptions): GaxiosPromise[SchemaChange] = js.native
   def create(
@@ -106,82 +33,90 @@ class ResourceChanges protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChange]
   ): Unit = js.native
-  
   /**
-    * dns.changes.get
+    * Atomically updates the ResourceRecordSet collection.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Google Cloud DNS API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/dns
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dns.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var dns = google.dns('v1');
+    * const {google} = require('googleapis');
+    * const dns = google.dns('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
-    *     // Identifies the project addressed by this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
-    *
-    *     // Identifies the managed zone addressed by this request. Can be the
-    * managed zone name or id. managedZone: 'my-managed-zone',  // TODO: Update
-    * placeholder value.
-    *
-    *     // The identifier of the requested change, from a previous
-    * ResourceRecordSetsChangeResponse. changeId: 'my-change-id',  // TODO:
-    * Update placeholder value.
-    *
-    *     auth: authClient,
-    *   };
-    *
-    *   dns.changes.get(request, function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     // TODO: Change code below to process the `response` object:
-    *     console.log(JSON.stringify(response, null, 2));
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/ndev.clouddns.readwrite',
+    *     ],
     *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dns.changes.create({
+    *     // For mutating operation requests only. An optional identifier specified by the client. Must be unique for operation resources in the Operations collection.
+    *     clientOperationId: 'placeholder-value',
+    *     // Identifies the managed zone addressed by this request. Can be the managed zone name or ID.
+    *     managedZone: 'placeholder-value',
+    *     // Identifies the project addressed by this request.
+    *     project: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "additions": [],
+    *       //   "deletions": [],
+    *       //   "id": "my_id",
+    *       //   "isServing": false,
+    *       //   "kind": "my_kind",
+    *       //   "startTime": "my_startTime",
+    *       //   "status": "my_status"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "additions": [],
+    *   //   "deletions": [],
+    *   //   "id": "my_id",
+    *   //   "isServing": false,
+    *   //   "kind": "my_kind",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias dns.changes.get
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.changeId
-    * @param {string=} params.clientOperationId
-    * @param {string} params.managedZone
-    * @param {string} params.project
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceChangesCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceChangesCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaChange] = js.native
   def get(callback: BodyResponseCallback[SchemaChange]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChange] = js.native
@@ -189,8 +124,8 @@ class ResourceChanges protected () extends StObject {
   def get(params: ParamsResourceChangesGet, callback: BodyResponseCallback[SchemaChange]): Unit = js.native
   def get(
     params: ParamsResourceChangesGet,
-    options: BodyResponseCallback[SchemaChange],
-    callback: BodyResponseCallback[SchemaChange]
+    options: BodyResponseCallback[Readable | SchemaChange],
+    callback: BodyResponseCallback[Readable | SchemaChange]
   ): Unit = js.native
   def get(params: ParamsResourceChangesGet, options: MethodOptions): GaxiosPromise[SchemaChange] = js.native
   def get(
@@ -198,93 +133,80 @@ class ResourceChanges protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChange]
   ): Unit = js.native
-  
   /**
-    * dns.changes.list
+    * Fetches the representation of an existing Change.
     * @example
-    * * // BEFORE RUNNING:
-    * // ---------------
-    * // 1. If not already done, enable the Google Cloud DNS API
-    * //    and check the quota for your project at
-    * //    https://console.developers.google.com/apis/api/dns
-    * // 2. This sample uses Application Default Credentials for
-    * authentication.
-    * //    If not already done, install the gcloud CLI from
-    * //    https://cloud.google.com/sdk and run
-    * //    `gcloud beta auth application-default login`.
-    * //    For more information, see
-    * //
-    * https://developers.google.com/identity/protocols/application-default-credentials
-    * // 3. Install the Node.js client library by running
-    * //    `npm install googleapis --save`
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dns.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * var google = require('googleapis');
-    * var dns = google.dns('v1');
+    * const {google} = require('googleapis');
+    * const dns = google.dns('v1');
     *
-    * authorize(function(authClient) {
-    *   var request = {
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloud-platform.read-only',
+    *       'https://www.googleapis.com/auth/ndev.clouddns.readonly',
+    *       'https://www.googleapis.com/auth/ndev.clouddns.readwrite',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dns.changes.get({
+    *     // The identifier of the requested change, from a previous ResourceRecordSetsChangeResponse.
+    *     changeId: 'placeholder-value',
+    *     // For mutating operation requests only. An optional identifier specified by the client. Must be unique for operation resources in the Operations collection.
+    *     clientOperationId: 'placeholder-value',
+    *     // Identifies the managed zone addressed by this request. Can be the managed zone name or ID.
+    *     managedZone: 'placeholder-value',
     *     // Identifies the project addressed by this request.
-    *     project: 'my-project',  // TODO: Update placeholder value.
+    *     project: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
     *
-    *     // Identifies the managed zone addressed by this request. Can be the
-    * managed zone name or id. managedZone: 'my-managed-zone',  // TODO: Update
-    * placeholder value.
+    *   // Example response
+    *   // {
+    *   //   "additions": [],
+    *   //   "deletions": [],
+    *   //   "id": "my_id",
+    *   //   "isServing": false,
+    *   //   "kind": "my_kind",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status"
+    *   // }
+    * }
     *
-    *     auth: authClient,
-    *   };
-    *
-    *   var handlePage = function(err, response) {
-    *     if (err) {
-    *       console.error(err);
-    *       return;
-    *     }
-    *
-    *     var changesPage = response['changes'];
-    *     if (!changesPage) {
-    *       return;
-    *     }
-    *     for (var i = 0; i < changesPage.length; i++) {
-    *       // TODO: Change code below to process each resource in
-    * `changesPage`: console.log(JSON.stringify(changesPage[i], null, 2));
-    *     }
-    *
-    *     if (response.nextPageToken) {
-    *       request.pageToken = response.nextPageToken;
-    *       dns.changes.list(request, handlePage);
-    *     }
-    *   };
-    *
-    *   dns.changes.list(request, handlePage);
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
     * });
     *
-    * function authorize(callback) {
-    *   google.auth.getApplicationDefault(function(err, authClient) {
-    *     if (err) {
-    *       console.error('authentication failed: ', err);
-    *       return;
-    *     }
-    *     if (authClient.createScopedRequired &&
-    * authClient.createScopedRequired()) { var scopes =
-    * ['https://www.googleapis.com/auth/cloud-platform']; authClient =
-    * authClient.createScoped(scopes);
-    *     }
-    *     callback(authClient);
-    *   });
-    * }
-    * @alias dns.changes.list
-    * @memberOf! ()
+    * ```
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.managedZone
-    * @param {integer=} params.maxResults
-    * @param {string=} params.pageToken
-    * @param {string} params.project
-    * @param {string=} params.sortBy
-    * @param {string=} params.sortOrder
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceChangesGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceChangesGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaChangesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaChangesListResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChangesListResponse] = js.native
@@ -292,13 +214,87 @@ class ResourceChanges protected () extends StObject {
   def list(params: ParamsResourceChangesList, callback: BodyResponseCallback[SchemaChangesListResponse]): Unit = js.native
   def list(
     params: ParamsResourceChangesList,
-    options: BodyResponseCallback[SchemaChangesListResponse],
-    callback: BodyResponseCallback[SchemaChangesListResponse]
+    options: BodyResponseCallback[Readable | SchemaChangesListResponse],
+    callback: BodyResponseCallback[Readable | SchemaChangesListResponse]
   ): Unit = js.native
   def list(params: ParamsResourceChangesList, options: MethodOptions): GaxiosPromise[SchemaChangesListResponse] = js.native
   def list(
     params: ParamsResourceChangesList,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaChangesListResponse]
+  ): Unit = js.native
+  /**
+    * Enumerates Changes to a ResourceRecordSet collection.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dns.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const dns = google.dns('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloud-platform.read-only',
+    *       'https://www.googleapis.com/auth/ndev.clouddns.readonly',
+    *       'https://www.googleapis.com/auth/ndev.clouddns.readwrite',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dns.changes.list({
+    *     // Identifies the managed zone addressed by this request. Can be the managed zone name or ID.
+    *     managedZone: 'placeholder-value',
+    *     // Optional. Maximum number of results to be returned. If unspecified, the server decides how many results to return.
+    *     maxResults: 'placeholder-value',
+    *     // Optional. A tag returned by a previous list request that was truncated. Use this parameter to continue a previous list request.
+    *     pageToken: 'placeholder-value',
+    *     // Identifies the project addressed by this request.
+    *     project: 'placeholder-value',
+    *     // Sorting criterion. The only supported value is change sequence.
+    *     sortBy: 'placeholder-value',
+    *     // Sorting order direction: 'ascending' or 'descending'.
+    *     sortOrder: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "changes": [],
+    *   //   "header": {},
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceChangesList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceChangesList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

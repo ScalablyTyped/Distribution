@@ -8,6 +8,6 @@ object mod {
   
   @JSImport("node-sql-parser", "Parser")
   @js.native
-  class Parser ()
+  open class Parser ()
     extends typings.nodeSqlParser.typesMod.Parser
 }

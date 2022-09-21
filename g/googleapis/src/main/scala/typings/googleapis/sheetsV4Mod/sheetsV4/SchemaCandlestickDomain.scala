@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The domain of a CandlestickChart.
-  */
 trait SchemaCandlestickDomain extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaCandlestickDomain extends StObject {
   /**
     * True to reverse the order of the domain values (horizontal axis).
     */
-  var reversed: js.UndefOr[Boolean] = js.undefined
+  var reversed: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaCandlestickDomain {
   
@@ -33,6 +30,8 @@ object SchemaCandlestickDomain {
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+    
+    inline def setReversedNull: Self = StObject.set(x, "reversed", null)
     
     inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
   }

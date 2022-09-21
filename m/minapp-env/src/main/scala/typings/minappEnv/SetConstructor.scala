@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SetConstructor
   extends StObject
-     with Instantiable0[Set[js.Any | js.Object]]
+     with Instantiable0[Set[Any | js.Object]]
      with Instantiable1[
       (/* values */ Array[js.Object]) | (/* iterable */ Iterable[js.Object]), 
       Set[js.Object]

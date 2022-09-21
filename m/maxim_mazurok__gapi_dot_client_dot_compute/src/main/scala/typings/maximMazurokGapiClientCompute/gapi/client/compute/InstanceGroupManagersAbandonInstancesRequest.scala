@@ -22,6 +22,6 @@ object InstanceGroupManagersAbandonInstancesRequest {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value*))
   }
 }

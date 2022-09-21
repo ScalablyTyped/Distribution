@@ -8,21 +8,21 @@ object multiPickerPropsMod {
   
   trait IMultiPickerProps extends StObject {
     
-    var children: js.UndefOr[js.Any] = js.undefined
+    var children: js.UndefOr[Any] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
-    var onScrollChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.undefined
+    var onScrollChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[Any], /* i */ js.UndefOr[Double], Unit]] = js.undefined
     
-    var onValueChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double], Unit]] = js.undefined
+    var onValueChange: js.UndefOr[js.Function2[/* v */ js.UndefOr[Any], /* i */ js.UndefOr[Double], Unit]] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var rootNativeProps: js.UndefOr[js.Any] = js.undefined
+    var rootNativeProps: js.UndefOr[Any] = js.undefined
     
-    var selectedValue: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectedValue: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
   }
   object IMultiPickerProps {
     
@@ -33,7 +33,7 @@ object multiPickerPropsMod {
     
     extension [Self <: IMultiPickerProps](x: Self) {
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -41,11 +41,11 @@ object multiPickerPropsMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setOnScrollChange(value: (/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onScrollChange", js.Any.fromFunction2(value))
+      inline def setOnScrollChange(value: (/* v */ js.UndefOr[Any], /* i */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onScrollChange", js.Any.fromFunction2(value))
       
       inline def setOnScrollChangeUndefined: Self = StObject.set(x, "onScrollChange", js.undefined)
       
-      inline def setOnValueChange(value: (/* v */ js.UndefOr[js.Any], /* i */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction2(value))
+      inline def setOnValueChange(value: (/* v */ js.UndefOr[Any], /* i */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction2(value))
       
       inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
       
@@ -53,17 +53,17 @@ object multiPickerPropsMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setRootNativeProps(value: js.Any): Self = StObject.set(x, "rootNativeProps", value.asInstanceOf[js.Any])
+      inline def setRootNativeProps(value: Any): Self = StObject.set(x, "rootNativeProps", value.asInstanceOf[js.Any])
       
       inline def setRootNativePropsUndefined: Self = StObject.set(x, "rootNativeProps", js.undefined)
       
-      inline def setSelectedValue(value: js.Array[js.Any]): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
+      inline def setSelectedValue(value: js.Array[Any]): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
       
       inline def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
       
-      inline def setSelectedValueVarargs(value: js.Any*): Self = StObject.set(x, "selectedValue", js.Array(value :_*))
+      inline def setSelectedValueVarargs(value: Any*): Self = StObject.set(x, "selectedValue", js.Array(value*))
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
@@ -73,7 +73,7 @@ object multiPickerPropsMod {
     
     var key: js.UndefOr[String] = js.undefined
     
-    var props: js.UndefOr[js.Any] = js.undefined
+    var props: js.UndefOr[Any] = js.undefined
   }
   object IPickerCol {
     
@@ -88,7 +88,7 @@ object multiPickerPropsMod {
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     }

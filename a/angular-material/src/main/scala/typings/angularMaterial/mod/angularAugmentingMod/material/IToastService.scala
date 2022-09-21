@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IToastService extends StObject {
   
-  def build(): IToastPreset[js.Any] = js.native
+  def build(): IToastPreset[Any] = js.native
   
   def cancel(): Unit = js.native
-  def cancel(response: js.Any): Unit = js.native
+  def cancel(response: Any): Unit = js.native
   
   def hide(): Unit = js.native
-  def hide(response: js.Any): Unit = js.native
+  def hide(response: Any): Unit = js.native
   
-  def show(optionsOrPreset: IToastOptions): IPromise[js.Any] = js.native
-  def show(optionsOrPreset: IToastPreset[js.Any]): IPromise[js.Any] = js.native
+  def show(optionsOrPreset: IToastOptions): IPromise[Any] = js.native
+  def show(optionsOrPreset: IToastPreset[Any]): IPromise[Any] = js.native
   
-  def showSimple(content: String): IPromise[js.Any] = js.native
+  def showSimple(content: String): IPromise[Any] = js.native
   
   def simple(): ISimpleToastPreset = js.native
   

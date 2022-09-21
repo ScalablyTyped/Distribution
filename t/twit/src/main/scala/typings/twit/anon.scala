@@ -1,5 +1,6 @@
 package typings.twit
 
+import typings.twit.mod.Twitter.MediaEntity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,6 +46,25 @@ object anon {
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setId_str(value: String): Self = StObject.set(x, "id_str", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Media extends StObject {
+    
+    var media: js.Array[MediaEntity]
+  }
+  object Media {
+    
+    inline def apply(media: js.Array[MediaEntity]): Media = {
+      val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Media]
+    }
+    
+    extension [Self <: Media](x: Self) {
+      
+      inline def setMedia(value: js.Array[MediaEntity]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      
+      inline def setMediaVarargs(value: MediaEntity*): Self = StObject.set(x, "media", js.Array(value*))
     }
   }
   

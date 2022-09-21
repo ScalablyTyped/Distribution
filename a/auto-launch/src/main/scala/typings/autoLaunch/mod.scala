@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("auto-launch", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with AutoLaunch {
     def this(options: AutoLaunchOptions) = this()

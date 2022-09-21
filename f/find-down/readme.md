@@ -10,10 +10,10 @@ Find a file by walking down parent directories.
 | ------------------ | :-------------: |
 | Full name          | find-down |
 | Keywords           | find, down, find-down, finddown, look-down, look, file, files, search, match, package, resolve, parent, parents, folder, directory, directories, dir, dirs, walk, walking, path, paths |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 25939 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 21532.333333333332 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/sholladay/find-down)

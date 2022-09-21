@@ -10,10 +10,10 @@ Small event emitter for using in es6 and plain js
 | ------------------ | :-------------: |
 | Full name          | event-emitter-es6 |
 | Keywords           | eventemitter, event-emitter, event-emitter-es6 |
-| # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 61387 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14122.333333333334 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](https://github.com/insane-jo/event-emitter#readme)

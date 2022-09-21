@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VoiceCommandServiceConnection extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_voicecommandcompleted(
     `type`: voicecommandcompleted,
@@ -37,7 +37,7 @@ trait VoiceCommandServiceConnection extends StObject {
   @JSName("onvoicecommandcompleted")
   var onvoicecommandcompleted_Original: TypedEventHandler[VoiceCommandServiceConnection, VoiceCommandCompletedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_voicecommandcompleted(
     `type`: voicecommandcompleted,

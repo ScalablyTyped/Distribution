@@ -2,6 +2,7 @@ package typings.reactCalendar
 
 import typings.reactCalendar.mod.CalendarType
 import typings.reactCalendar.mod.Detail
+import typings.reactCalendar.mod.ViewType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,12 +37,14 @@ object reactCalendarStrings {
   sealed trait century
     extends StObject
        with Detail
+       with ViewType
   inline def century: century = "century".asInstanceOf[century]
   
   @js.native
   sealed trait decade
     extends StObject
        with Detail
+       with ViewType
   inline def decade: decade = "decade".asInstanceOf[decade]
   
   @js.native
@@ -52,6 +55,7 @@ object reactCalendarStrings {
   sealed trait month
     extends StObject
        with Detail
+       with ViewType
   inline def month: month = "month".asInstanceOf[month]
   
   @js.native
@@ -66,5 +70,6 @@ object reactCalendarStrings {
   sealed trait year
     extends StObject
        with Detail
+       with ViewType
   inline def year: year = "year".asInstanceOf[year]
 }

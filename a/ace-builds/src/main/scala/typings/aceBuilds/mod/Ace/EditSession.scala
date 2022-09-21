@@ -1,6 +1,7 @@
 package typings.aceBuilds.mod.Ace
 
 import typings.aceBuilds.aceBuildsStrings.auto
+import typings.aceBuilds.aceBuildsStrings.change
 import typings.aceBuilds.aceBuildsStrings.changeFold
 import typings.aceBuilds.aceBuildsStrings.changeScrollLeft
 import typings.aceBuilds.aceBuildsStrings.changeScrollTop
@@ -30,7 +31,6 @@ import typings.aceBuilds.aceBuildsStrings.wrapMethod
 import typings.aceBuilds.anon.Action
 import typings.aceBuilds.anon.Data
 import typings.aceBuilds.anon.Max
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,27 +39,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditSession
   extends StObject
      with EventEmitter
-     with OptionsProvider
-     with Folding {
+     with OptionsProvider {
   
   def addDynamicMarker(marker: MarkerLike, inFront: Boolean): MarkerLike = js.native
   
   def addGutterDecoration(row: Double, className: String): Unit = js.native
   
+  def addMarker(range: Range, className: String, `type`: fullLine | screenLine | text): Double = js.native
+  def addMarker(range: Range, className: String, `type`: fullLine | screenLine | text, inFront: Boolean): Double = js.native
   def addMarker(range: Range, className: String, `type`: MarkerRenderer): Double = js.native
   def addMarker(range: Range, className: String, `type`: MarkerRenderer, inFront: Boolean): Double = js.native
-  @JSName("addMarker")
-  def addMarker_fullLine(range: Range, className: String, `type`: fullLine): Double = js.native
-  @JSName("addMarker")
-  def addMarker_fullLine(range: Range, className: String, `type`: fullLine, inFront: Boolean): Double = js.native
-  @JSName("addMarker")
-  def addMarker_screenLine(range: Range, className: String, `type`: screenLine): Double = js.native
-  @JSName("addMarker")
-  def addMarker_screenLine(range: Range, className: String, `type`: screenLine, inFront: Boolean): Double = js.native
-  @JSName("addMarker")
-  def addMarker_text(range: Range, className: String, `type`: text): Double = js.native
-  @JSName("addMarker")
-  def addMarker_text(range: Range, className: String, `type`: text, inFront: Boolean): Double = js.native
   
   def adjustWrapLimit(desiredLimit: Double): Boolean = js.native
   
@@ -71,10 +60,12 @@ trait EditSession
   
   def destroy(): Unit = js.native
   
+  val doc: Document = js.native
+  
   def documentToScreenColumn(row: Double, docColumn: Double): Double = js.native
   
-  def documentToScreenPosition(docRow: Double, docColumn: Double): Point = js.native
-  def documentToScreenPosition(position: Point): Point = js.native
+  def documentToScreenPosition(docRow: Double, docColumn: Double): Position = js.native
+  def documentToScreenPosition(position: Position): Position = js.native
   
   def documentToScreenRow(docRow: Double, docColumn: Double): Double = js.native
   
@@ -182,18 +173,18 @@ trait EditSession
   
   def getWrapLimitRange(): Max = js.native
   
-  def getdocumentLastRowColumnPosition(docRow: Double, docColumn: Double): Point = js.native
+  def getdocumentLastRowColumnPosition(docRow: Double, docColumn: Double): Position = js.native
   
-  def highlight(re: RegExp): Unit = js.native
+  def highlight(re: js.RegExp): Unit = js.native
   
   def highlightLines(startRow: Double, endRow: Double, className: String): Range = js.native
   def highlightLines(startRow: Double, endRow: Double, className: String, inFront: Boolean): Range = js.native
   
   def indentRows(startRow: Double, endRow: Double, indentString: String): Unit = js.native
   
-  def insert(position: Point, text: String): Unit = js.native
+  def insert(position: Position, text: String): Unit = js.native
   
-  def isTabStop(position: Point): Boolean = js.native
+  def isTabStop(position: Position): Boolean = js.native
   
   def markUndoGroup(): Unit = js.native
   
@@ -201,9 +192,12 @@ trait EditSession
   
   def moveLinesUp(firstRow: Double, lastRow: Double): Unit = js.native
   
-  def moveText(fromRange: Range, toPosition: Point): Unit = js.native
-  def moveText(fromRange: Range, toPosition: Point, copy: Boolean): Unit = js.native
+  def moveText(fromRange: Range, toPosition: Position): Unit = js.native
+  def moveText(fromRange: Range, toPosition: Position, copy: Boolean): Unit = js.native
   
+  @JSName("on")
+  def on_change(name: change, callback: js.Function0[Unit]): js.Function = js.native
+  // TODO: define BackgroundTokenizer
   @JSName("on")
   def on_changeFold(name: changeFold, callback: js.Function1[/* obj */ Action, Unit]): js.Function = js.native
   @JSName("on")
@@ -232,8 +226,8 @@ trait EditSession
   
   def screenToDocumentColumn(screenRow: Double, screenColumn: Double): Double = js.native
   
-  def screenToDocumentPosition(screenRow: Double, screenColumn: Double): Point = js.native
-  def screenToDocumentPosition(screenRow: Double, screenColumn: Double, offsetX: Double): Point = js.native
+  def screenToDocumentPosition(screenRow: Double, screenColumn: Double): Position = js.native
+  def screenToDocumentPosition(screenRow: Double, screenColumn: Double, offsetX: Double): Position = js.native
   
   def screenToDocumentRow(screenRow: Double, screenColumn: Double): Double = js.native
   
@@ -256,15 +250,9 @@ trait EditSession
   
   def setNewLineMode(newLineMode: NewLineMode): Unit = js.native
   
-  def setOption(name: foldStyle, value: manual): Unit = js.native
-  def setOption(name: foldStyle, value: markbegin): Unit = js.native
-  def setOption(name: foldStyle, value: markbeginend): Unit = js.native
-  def setOption(name: wrapMethod, value: auto): Unit = js.native
-  def setOption(name: wrapMethod, value: code): Unit = js.native
-  def setOption(name: wrapMethod, value: text): Unit = js.native
-  def setOption(name: wrap, value: free): Unit = js.native
-  def setOption(name: wrap, value: off): Unit = js.native
-  def setOption(name: wrap, value: printmargin_): Unit = js.native
+  def setOption(name: foldStyle, value: markbegin | markbeginend | manual): Unit = js.native
+  def setOption(name: wrapMethod, value: code | text | auto): Unit = js.native
+  def setOption(name: wrap, value: off | free | printmargin_): Unit = js.native
   @JSName("setOption")
   def setOption_firstLineNumber(name: firstLineNumber, value: Double): Unit = js.native
   @JSName("setOption")

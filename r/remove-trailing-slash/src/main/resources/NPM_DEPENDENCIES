@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "remove-trailing-slash" : "0.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "remove-trailing-slash" : "0.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -31,9 +31,9 @@ trait DesignPackageInfo
 object DesignPackageInfo {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_majorVersion: () => Double,
     get_minorVersion: () => Double,
     get_packageGuid: () => Guid,

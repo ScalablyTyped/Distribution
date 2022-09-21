@@ -33,6 +33,6 @@ object ListSatellitesResponse {
     
     inline def setSatellitesUndefined: Self = StObject.set(x, "satellites", js.undefined)
     
-    inline def setSatellitesVarargs(value: SatelliteListItem*): Self = StObject.set(x, "satellites", js.Array(value :_*))
+    inline def setSatellitesVarargs(value: SatelliteListItem*): Self = StObject.set(x, "satellites", js.Array(value*))
   }
 }

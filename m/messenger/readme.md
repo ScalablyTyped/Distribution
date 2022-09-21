@@ -10,10 +10,10 @@ A json communication layer for node.js
 | ------------------ | :-------------: |
 | Full name          | messenger |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 9060 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3975.6666666666665 |
+| # stars            | 718.0 |
 
 ## Links
 - [Homepage](https://github.com/weixiyen/messenger.js#readme)

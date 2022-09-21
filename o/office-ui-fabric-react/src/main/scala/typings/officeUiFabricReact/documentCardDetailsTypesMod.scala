@@ -1,8 +1,6 @@
 package typings.officeUiFabricReact
 
 import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.officeUiFabricReact.documentCardDetailsBaseMod.DocumentCardDetailsBase
-import typings.react.mod.Props
 import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
@@ -15,9 +13,8 @@ object documentCardDetailsTypesMod {
   
   trait IDocumentCardDetails extends StObject
   
-  trait IDocumentCardDetailsProps
-    extends StObject
-       with Props[DocumentCardDetailsBase] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.Props<DocumentCardDetailsBase> * / any */ trait IDocumentCardDetailsProps extends StObject {
     
     /**
       * Optional override class name

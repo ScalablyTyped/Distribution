@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetWasmBytecodeResponse extends StObject {
   
   /**
-    * Script source.
+    * Script source. (Encoded as a base64 string when passed over JSON)
     */
   var bytecode: String
 }

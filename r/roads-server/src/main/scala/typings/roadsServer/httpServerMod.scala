@@ -1,11 +1,12 @@
 package typings.roadsServer
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.node.httpsMod.ServerOptions
+import typings.node.nodeNetMod.Socket
 import typings.roads.mod.Response
 import typings.roads.mod.Road
-import typings.std.Error
+import typings.roadsServer.anon.Enabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ object httpServerMod {
   
   @JSImport("roads-server/types/httpServer", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Server {
     /**
@@ -27,8 +28,33 @@ object httpServerMod {
       */
     def this(road: Road) = this()
     def this(road: Road, error_handler: js.Function) = this()
-    def this(road: Road, error_handler: js.Function, httpsOptions: ServerOptions) = this()
-    def this(road: Road, error_handler: Unit, httpsOptions: ServerOptions) = this()
+    def this(road: Road, error_handler: js.Function, options: RoadsServerOptions) = this()
+    def this(road: Road, error_handler: Unit, options: RoadsServerOptions) = this()
+  }
+  
+  trait RoadsServerOptions extends StObject {
+    
+    var https: js.UndefOr[Enabled] = js.undefined
+    
+    var maxRequestBodySize: js.UndefOr[Double] = js.undefined
+  }
+  object RoadsServerOptions {
+    
+    inline def apply(): RoadsServerOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RoadsServerOptions]
+    }
+    
+    extension [Self <: RoadsServerOptions](x: Self) {
+      
+      inline def setHttps(value: Enabled): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+      
+      inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+      
+      inline def setMaxRequestBodySize(value: Double): Self = StObject.set(x, "maxRequestBodySize", value.asInstanceOf[js.Any])
+      
+      inline def setMaxRequestBodySizeUndefined: Self = StObject.set(x, "maxRequestBodySize", js.undefined)
+    }
   }
   
   @js.native
@@ -53,7 +79,7 @@ object httpServerMod {
       * @param  HTTPResponse http_response
       * @param  Error error
       */
-    /* protected */ def error_handler(http_response: ServerResponse, error: Error): Unit = js.native
+    /* protected */ def error_handler(http_response: ServerResponse[IncomingMessage], error: js.Error): Unit = js.native
     
     /**
       * Start the http server.
@@ -62,7 +88,12 @@ object httpServerMod {
       * @param string host
       */
     def listen(port: Double, host: String): Unit = js.native
-    def listen(port: Double, host: String, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+    def listen(port: Double, host: String, callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = js.native
+    
+    /**
+      * The maximum sizze we should allow for any incoming request body. We will stop reading incoming data at this point.
+      */
+    /* protected */ var maxRequestBodySize: Double = js.native
     
     /**
       * Standard logic for turning each request into a road request, and communicating the response
@@ -71,7 +102,7 @@ object httpServerMod {
       * @param  HTTPRequest http_request
       * @param  HTTPResponse http_response
       */
-    /* protected */ def onRequest(http_request: IncomingMessage, http_response: ServerResponse): Unit = js.native
+    /* protected */ def onRequest(http_request: IncomingMessage, http_response: ServerResponse[IncomingMessage]): Unit = js.native
     
     /**
       * This is the road object that will handle all requests
@@ -85,13 +116,25 @@ object httpServerMod {
       * @param  HTTPResponse http_response
       * @param  Response response
       */
-    /* protected */ def sendResponse(http_response: ServerResponse, response: Response): Unit = js.native
+    /* protected */ def sendResponse(http_response: ServerResponse[IncomingMessage], response: Response): Unit = js.native
     
     /**
       * This is the node.js http server from the http library.
       * @todo  support HTTPS
       * @type HTTPServer
       */
-    /* protected */ var server: typings.node.httpMod.Server = js.native
+    /* protected */ var server: (typings.node.httpMod.Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ]) | (typings.node.httpsMod.Server[
+        Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        ]
+      ]) = js.native
   }
 }

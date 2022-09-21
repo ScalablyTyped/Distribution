@@ -12,32 +12,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * _Holds reminders and events._
   * @see https://docs.scriptable.app/calendar
   */
-@js.native
 trait Calendar extends StObject {
   
   /**
     * _Indicates whether items can be added, edited, and deleted in the calendar._
     * @see https://docs.scriptable.app/calendar/#allowscontentmodifications
     */
-  var allowsContentModifications: Boolean = js.native
+  var allowsContentModifications: Boolean
   
   /**
     * _Color of calendar._
     * @see https://docs.scriptable.app/calendar/#color
     */
-  var color: Color = js.native
+  var color: Color
   
   /**
     * _Calendar identifier._
     * @see https://docs.scriptable.app/calendar/#identifier
     */
-  var identifier: String = js.native
+  var identifier: String
   
   /**
     * _Whether the calendar is a subscribed calendar._
     * @see https://docs.scriptable.app/calendar/#issubscribed
     */
-  var isSubscribed: Boolean = js.native
+  var isSubscribed: Boolean
   
   /**
     * _Removes calendar._
@@ -45,7 +44,7 @@ trait Calendar extends StObject {
     * The calendar is removed immediately. This cannot be undone.
     * @see https://docs.scriptable.app/calendar/#-remove
     */
-  def remove(): Unit = js.native
+  def remove(): Unit
   
   /**
     * _Saves calendar._
@@ -53,7 +52,7 @@ trait Calendar extends StObject {
     * Saves changes to the calendar.
     * @see https://docs.scriptable.app/calendar/#-save
     */
-  def save(): Unit = js.native
+  def save(): Unit
   
   /**
     * _Checks if the calendar supports availability._
@@ -70,18 +69,46 @@ trait Calendar extends StObject {
     * @param availability - Availability to check against.
     * @see https://docs.scriptable.app/calendar/#-supportsavailability
     */
-  @JSName("supportsAvailability")
-  def supportsAvailability_busy(availability: busy): Boolean = js.native
-  @JSName("supportsAvailability")
-  def supportsAvailability_free(availability: free): Boolean = js.native
-  @JSName("supportsAvailability")
-  def supportsAvailability_tentative(availability: tentative): Boolean = js.native
-  @JSName("supportsAvailability")
-  def supportsAvailability_unavailable(availability: unavailable): Boolean = js.native
+  def supportsAvailability(availability: busy | free | tentative | unavailable): Boolean
   
   /**
     * _Title of calendar._
     * @see https://docs.scriptable.app/calendar/#title
     */
-  var title: String = js.native
+  var title: String
+}
+object Calendar {
+  
+  inline def apply(
+    allowsContentModifications: Boolean,
+    color: Color,
+    identifier: String,
+    isSubscribed: Boolean,
+    remove: () => Unit,
+    save: () => Unit,
+    supportsAvailability: busy | free | tentative | unavailable => Boolean,
+    title: String
+  ): Calendar = {
+    val __obj = js.Dynamic.literal(allowsContentModifications = allowsContentModifications.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], isSubscribed = isSubscribed.asInstanceOf[js.Any], remove = js.Any.fromFunction0(remove), save = js.Any.fromFunction0(save), supportsAvailability = js.Any.fromFunction1(supportsAvailability), title = title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Calendar]
+  }
+  
+  extension [Self <: Calendar](x: Self) {
+    
+    inline def setAllowsContentModifications(value: Boolean): Self = StObject.set(x, "allowsContentModifications", value.asInstanceOf[js.Any])
+    
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    
+    inline def setIsSubscribed(value: Boolean): Self = StObject.set(x, "isSubscribed", value.asInstanceOf[js.Any])
+    
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+    
+    inline def setSupportsAvailability(value: busy | free | tentative | unavailable => Boolean): Self = StObject.set(x, "supportsAvailability", js.Any.fromFunction1(value))
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+  }
 }

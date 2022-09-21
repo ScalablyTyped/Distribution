@@ -20,7 +20,7 @@ object ControlFontDialog {
     acquire: () => Unit,
     createWithGridModel: XPropertySet => Unit,
     execute: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setTitle: String => Unit
   ): ControlFontDialog = {

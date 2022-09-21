@@ -1,13 +1,16 @@
 package typings.obliterator
 
-import typings.std.Iterator
+import typings.obliterator.typesMod.IntoInterator
+import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("obliterator/chain", JSImport.Namespace)
-@js.native
-object chainMod extends js.Object {
-  def default[T](iterators: (Iterator[T, _, js.UndefOr[scala.Nothing]])*): typings.obliterator.iteratorMod.default[T] = js.native
+object chainMod {
+  
+  @JSImport("obliterator/chain", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[T](iterables: IntoInterator[T]*): IterableIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterables.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IterableIterator[T]]
 }
-

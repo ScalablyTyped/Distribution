@@ -15,10 +15,10 @@ object fresnelParametersMod {
     *
     * @param options provide your own settings to optionally to override defaults
     */
-  class FresnelParameters () extends StObject {
+  open class FresnelParameters () extends StObject {
     def this(options: IFresnelParametersCreationOptions) = this()
     
-    /* private */ var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: Any = js.native
     
     /**
       * Define bias applied to computed fresnel term
@@ -55,7 +55,7 @@ object fresnelParametersMod {
     
     /**
       * Serializes the current fresnel parameters to a JSON representation.
-      * @return the JSON serialization
+      * @returns the JSON serialization
       */
     def serialize(): IFresnelParametersSerialized = js.native
   }
@@ -174,7 +174,7 @@ object fresnelParametersMod {
       
       inline def setLeftColor(value: js.Array[Double]): Self = StObject.set(x, "leftColor", value.asInstanceOf[js.Any])
       
-      inline def setLeftColorVarargs(value: Double*): Self = StObject.set(x, "leftColor", js.Array(value :_*))
+      inline def setLeftColorVarargs(value: Double*): Self = StObject.set(x, "leftColor", js.Array(value*))
       
       inline def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
       
@@ -182,7 +182,7 @@ object fresnelParametersMod {
       
       inline def setRightColor(value: js.Array[Double]): Self = StObject.set(x, "rightColor", value.asInstanceOf[js.Any])
       
-      inline def setRightColorVarargs(value: Double*): Self = StObject.set(x, "rightColor", js.Array(value :_*))
+      inline def setRightColorVarargs(value: Double*): Self = StObject.set(x, "rightColor", js.Array(value*))
     }
   }
 }

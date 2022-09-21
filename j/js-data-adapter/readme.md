@@ -10,15 +10,12 @@ Base adapter class that all other js-data adapters extend.
 | ------------------ | :-------------: |
 | Full name          | js-data-adapter |
 | Keywords           | js-data, jsdata, adapter |
-| # releases         | 2 |
-| # dependents       | 15 |
-| # downloads        | 109068 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6768.666666666667 |
+| # stars            | 7.0 |
 
 ## Links
-- [Homepage](https://github.com/js-data/js-data-adapter)
-- [Bugs](https://github.com/js-data/js-data-adapter/issues)
-- [Repository](https://github.com/js-data/js-data-adapter)
 - [Npm](https://www.npmjs.com/package/js-data-adapter)
     
 

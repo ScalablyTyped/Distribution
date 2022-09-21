@@ -1,7 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.collapsed
-import typings.arcgisJsApi.arcgisJsApiStrings.expanded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,13 +17,11 @@ trait FieldGroupConfig
   var description: String = js.native
   
   /**
-    * The field configurations belonging to a group.
+    * An array of field configurations belonging to a group.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#fieldConfig)
     */
   var fieldConfig: js.Array[FieldConfig] = js.native
-  
-  var initialState: expanded | collapsed = js.native
   
   /**
     * The field's label.
@@ -35,7 +31,10 @@ trait FieldGroupConfig
   var label: String = js.native
   
   /**
-    * A reference to an [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a boolean value.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Constraint Arcade Profile](https://developers.arcgis.com/javascript/latest/arcade/#forms).
+    *
+    * @default null
+    * @deprecated since version 4.23. Set fields via the {@link module:esri/form/elements/GroupElement#visibilityExpression GroupElement.visibilityExpression}
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#visibilityExpression)
     */

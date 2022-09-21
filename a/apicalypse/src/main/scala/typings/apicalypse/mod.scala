@@ -31,10 +31,10 @@ object mod {
     
     def query(endpoint: String, name: String): Apicalypse = js.native
     
-    def request(url: String): js.Promise[AxiosResponse[js.Any]] = js.native
+    def request(url: String): js.Promise[AxiosResponse[Any, Any]] = js.native
     
-    def requestAll(url: String): js.Promise[js.Array[js.Any]] = js.native
-    def requestAll(url: String, options: RequestAllConfig): js.Promise[js.Array[js.Any]] = js.native
+    def requestAll(url: String): js.Promise[js.Array[Any]] = js.native
+    def requestAll(url: String, options: RequestAllConfig): js.Promise[js.Array[Any]] = js.native
     
     def search(search: String): Apicalypse = js.native
     
@@ -47,7 +47,7 @@ object mod {
   
   trait ApicalypseConfig
     extends StObject
-       with AxiosRequestConfig {
+       with AxiosRequestConfig[Any] {
     
     var queryMethod: js.UndefOr[QueryMethod] = js.undefined
   }

@@ -18,12 +18,12 @@ object utilsMod {
   
   @JSImport("smooth-scrollbar/utils", "TouchRecord")
   @js.native
-  class TouchRecord ()
+  open class TouchRecord ()
     extends typings.smoothScrollbar.touchRecordMod.TouchRecord
   
   @JSImport("smooth-scrollbar/utils", "Tracker")
   @js.native
-  class Tracker protected ()
+  open class Tracker protected ()
     extends typings.smoothScrollbar.touchRecordMod.Tracker {
     def this(touch: Touch) = this()
   }
@@ -32,12 +32,12 @@ object utilsMod {
   
   inline def eventScope(scrollbar: Scrollbar): js.Function3[/* elem */ EventTarget, /* events */ String, /* fn */ EventHandler, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventScope")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* elem */ EventTarget, /* events */ String, /* fn */ EventHandler, Unit]]
   
-  inline def getPointerData(evt: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerData")(evt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getPointerData(evt: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerData")(evt.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getPosition(evt: js.Any): XY = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(evt.asInstanceOf[js.Any]).asInstanceOf[XY]
+  inline def getPosition(evt: Any): XY = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(evt.asInstanceOf[js.Any]).asInstanceOf[XY]
   
-  inline def isOneOf(a: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def isOneOf(a: js.Any, b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isOneOf(a: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isOneOf(a: Any, b: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def setStyle(elem: HTMLElement, styles: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(elem.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setStyle(elem: HTMLElement, styles: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(elem.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

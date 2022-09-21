@@ -18,7 +18,7 @@ trait DynamicScopedRouteConfigs extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicScopedRouteConfigs & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicScopedRouteConfigs & TopLevel[Any]
     ]
   ] = js.undefined
   
@@ -46,7 +46,7 @@ object DynamicScopedRouteConfigs {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicScopedRouteConfigs & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicScopedRouteConfigs & TopLevel[Any]
         ]
     ): Self = StObject.set(x, "scopedRouteConfigs", value.asInstanceOf[js.Any])
     
@@ -55,8 +55,8 @@ object DynamicScopedRouteConfigs {
     inline def setScopedRouteConfigsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicScopedRouteConfigs & TopLevel[js.Any])*
-    ): Self = StObject.set(x, "scopedRouteConfigs", js.Array(value :_*))
+      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicScopedRouteConfigs & TopLevel[Any])*
+    ): Self = StObject.set(x, "scopedRouteConfigs", js.Array(value*))
     
     inline def setVersionInfo(value: String): Self = StObject.set(x, "versionInfo", value.asInstanceOf[js.Any])
     

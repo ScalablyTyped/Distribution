@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sentryTypes.anon.Data
 import typings.sentryTypes.anon.Description
 import typings.sentryTypes.anon.PickSpanContextExcludekey
+import typings.sentryTypes.miscMod.Primitive
 import typings.sentryTypes.transactionMod.Transaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,17 +18,10 @@ object spanMod {
        with SpanContext {
     
     /**
-      * Use {@link startChild}
-      * @deprecated
-      */
-    def child(): Span = js.native
-    def child(spanContext: PickSpanContextExcludekey): Span = js.native
-    
-    /**
       * @inheritDoc
       */
     @JSName("data")
-    var data_Span: StringDictionary[js.Any] = js.native
+    var data_Span: StringDictionary[Any] = js.native
     
     /**
       * Sets the finish timestamp on the current span.
@@ -49,7 +43,7 @@ object spanMod {
       * @param key Data key
       * @param value Data value
       */
-    def setData(key: String, value: js.Any): this.type = js.native
+    def setData(key: String, value: Any): this.type = js.native
     
     /**
       * Sets the status attribute on the current span based on the http code
@@ -65,11 +59,14 @@ object spanMod {
     def setStatus(status: String): this.type = js.native
     
     /**
-      * Sets the tag attribute on the current span
+      * Sets the tag attribute on the current span.
+      *
+      * Can also be used to unset a tag, by passing `undefined`.
+      *
       * @param key Tag key
       * @param value Tag value
       */
-    def setTag(key: String, value: String): this.type = js.native
+    def setTag(key: String, value: Primitive): this.type = js.native
     
     /**
       * @inheritDoc
@@ -94,7 +91,10 @@ object spanMod {
       * @inheritDoc
       */
     @JSName("tags")
-    var tags_Span: StringDictionary[String] = js.native
+    var tags_Span: StringDictionary[Primitive] = js.native
+    
+    /** Returns the current span properties as a `SpanContext` */
+    def toContext(): SpanContext = js.native
     
     /** Convert the object to JSON */
     def toJSON(): Description = js.native
@@ -112,6 +112,9 @@ object spanMod {
       * The transaction containing this span
       */
     var transaction: js.UndefOr[Transaction] = js.native
+    
+    /** Updates the current span with a new `SpanContext` */
+    def updateWithContext(spanContext: SpanContext): this.type = js.native
   }
   
   trait SpanContext extends StObject {
@@ -119,7 +122,7 @@ object spanMod {
     /**
       * Data of the Span.
       */
-    var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var data: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /**
       * Description of the Span.
@@ -165,7 +168,7 @@ object spanMod {
     /**
       * Tags of the Span.
       */
-    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
+    var tags: js.UndefOr[StringDictionary[Primitive]] = js.undefined
     
     /**
       * Trace ID
@@ -181,7 +184,7 @@ object spanMod {
     
     extension [Self <: SpanContext](x: Self) {
       
-      inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -217,7 +220,7 @@ object spanMod {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[Primitive]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       

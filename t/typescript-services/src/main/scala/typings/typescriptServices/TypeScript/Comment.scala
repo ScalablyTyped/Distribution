@@ -10,7 +10,7 @@ trait Comment extends StObject {
   
   var _start: Double
   
-  /* private */ var _trivia: js.Any
+  /* private */ var _trivia: Any
   
   def end(): Double
   
@@ -29,7 +29,7 @@ object Comment {
   inline def apply(
     _end: Double,
     _start: Double,
-    _trivia: js.Any,
+    _trivia: Any,
     end: () => Double,
     endsLine: Boolean,
     fullText: () => String,
@@ -59,6 +59,6 @@ object Comment {
     
     inline def set_start(value: Double): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
     
-    inline def set_trivia(value: js.Any): Self = StObject.set(x, "_trivia", value.asInstanceOf[js.Any])
+    inline def set_trivia(value: Any): Self = StObject.set(x, "_trivia", value.asInstanceOf[js.Any])
   }
 }

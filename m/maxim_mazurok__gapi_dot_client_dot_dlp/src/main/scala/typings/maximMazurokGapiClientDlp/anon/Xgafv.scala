@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDlp.anon
 
-import typings.maximMazurokGapiClientDlp.gapi.client.dlp.GooglePrivacyDlpV2CancelDlpJobRequest
+import typings.maximMazurokGapiClientDlp.gapi.client.dlp.GooglePrivacyDlpV2UpdateJobTriggerRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait Xgafv extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the DlpJob resource to be cancelled. */
+  /** Required. Resource name of the project and the triggeredJob, for example `projects/dlp-test-project/jobTriggers/53234423`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait Xgafv extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GooglePrivacyDlpV2CancelDlpJobRequest
+  var resource: GooglePrivacyDlpV2UpdateJobTriggerRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait Xgafv extends StObject {
 }
 object Xgafv {
   
-  inline def apply(name: String, resource: GooglePrivacyDlpV2CancelDlpJobRequest): Xgafv = {
+  inline def apply(name: String, resource: GooglePrivacyDlpV2UpdateJobTriggerRequest): Xgafv = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xgafv]
   }
@@ -94,7 +94,7 @@ object Xgafv {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GooglePrivacyDlpV2CancelDlpJobRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GooglePrivacyDlpV2UpdateJobTriggerRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

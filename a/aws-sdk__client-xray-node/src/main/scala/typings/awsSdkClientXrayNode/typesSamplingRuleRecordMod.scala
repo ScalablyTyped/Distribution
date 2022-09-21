@@ -2,7 +2,6 @@ package typings.awsSdkClientXrayNode
 
 import typings.awsSdkClientXrayNode.typesSamplingRuleMod.SamplingRule
 import typings.awsSdkClientXrayNode.typesSamplingRuleMod.UnmarshalledSamplingRule
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,12 +13,12 @@ object typesSamplingRuleRecordMod {
     /**
       * <p>When the rule was created.</p>
       */
-    var CreatedAt: js.UndefOr[Date | String | Double] = js.undefined
+    var CreatedAt: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>When the rule was last modified.</p>
       */
-    var ModifiedAt: js.UndefOr[Date | String | Double] = js.undefined
+    var ModifiedAt: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * <p>The sampling rule.</p>
@@ -35,11 +34,11 @@ object typesSamplingRuleRecordMod {
     
     extension [Self <: SamplingRuleRecord](x: Self) {
       
-      inline def setCreatedAt(value: Date | String | Double): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: js.Date | String | Double): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
       
       inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
       
-      inline def setModifiedAt(value: Date | String | Double): Self = StObject.set(x, "ModifiedAt", value.asInstanceOf[js.Any])
+      inline def setModifiedAt(value: js.Date | String | Double): Self = StObject.set(x, "ModifiedAt", value.asInstanceOf[js.Any])
       
       inline def setModifiedAtUndefined: Self = StObject.set(x, "ModifiedAt", js.undefined)
       
@@ -57,13 +56,13 @@ object typesSamplingRuleRecordMod {
       * <p>When the rule was created.</p>
       */
     @JSName("CreatedAt")
-    var CreatedAt_UnmarshalledSamplingRuleRecord: js.UndefOr[Date] = js.undefined
+    var CreatedAt_UnmarshalledSamplingRuleRecord: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>When the rule was last modified.</p>
       */
     @JSName("ModifiedAt")
-    var ModifiedAt_UnmarshalledSamplingRuleRecord: js.UndefOr[Date] = js.undefined
+    var ModifiedAt_UnmarshalledSamplingRuleRecord: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>The sampling rule.</p>
@@ -80,11 +79,11 @@ object typesSamplingRuleRecordMod {
     
     extension [Self <: UnmarshalledSamplingRuleRecord](x: Self) {
       
-      inline def setCreatedAt(value: Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
       
       inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
       
-      inline def setModifiedAt(value: Date): Self = StObject.set(x, "ModifiedAt", value.asInstanceOf[js.Any])
+      inline def setModifiedAt(value: js.Date): Self = StObject.set(x, "ModifiedAt", value.asInstanceOf[js.Any])
       
       inline def setModifiedAtUndefined: Self = StObject.set(x, "ModifiedAt", js.undefined)
       

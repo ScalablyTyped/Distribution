@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.CompletionHelpers")
 @js.native
-class CompletionHelpers ()
+open class CompletionHelpers ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.CompletionHelpers
 object CompletionHelpers {
@@ -35,7 +35,7 @@ object CompletionHelpers {
   inline def getNonIdentifierCompleteTokenOnLeft(sourceUnit: SourceUnitSyntax, position: Double): PositionedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("getNonIdentifierCompleteTokenOnLeft")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[PositionedToken]
   
   /* static member */
-  inline def getSpan(ast: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpan")(ast.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getSpan(ast: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpan")(ast.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /* static member */
   inline def getValidCompletionEntryDisplayName(displayName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getValidCompletionEntryDisplayName")(displayName.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -50,5 +50,5 @@ object CompletionHelpers {
   inline def isRightOfIllegalDot(sourceUnit: SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRightOfIllegalDot")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  inline def symbolDeclarationIntersectsPosition(symbol: js.Any, fileName: js.Any, position: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("symbolDeclarationIntersectsPosition")(symbol.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def symbolDeclarationIntersectsPosition(symbol: Any, fileName: Any, position: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("symbolDeclarationIntersectsPosition")(symbol.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

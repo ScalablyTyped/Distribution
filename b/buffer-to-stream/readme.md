@@ -10,10 +10,10 @@ convert buffer to readable stream
 | ------------------ | :-------------: |
 | Full name          | buffer-to-stream |
 | Keywords           | buffer, stream |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 161889 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15113.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/creeperyang/buffer-to-stream#readme)

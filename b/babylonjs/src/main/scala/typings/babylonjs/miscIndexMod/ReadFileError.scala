@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Misc/index", "ReadFileError")
 @js.native
-class ReadFileError protected ()
+open class ReadFileError protected ()
   extends typings.babylonjs.fileToolsMod.ReadFileError {
   /**
     * Creates a new ReadFileError

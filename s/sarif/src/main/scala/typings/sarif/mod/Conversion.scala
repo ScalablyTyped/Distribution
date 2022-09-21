@@ -39,7 +39,7 @@ object Conversion {
     
     inline def setAnalysisToolLogFilesUndefined: Self = StObject.set(x, "analysisToolLogFiles", js.undefined)
     
-    inline def setAnalysisToolLogFilesVarargs(value: ArtifactLocation*): Self = StObject.set(x, "analysisToolLogFiles", js.Array(value :_*))
+    inline def setAnalysisToolLogFilesVarargs(value: ArtifactLocation*): Self = StObject.set(x, "analysisToolLogFiles", js.Array(value*))
     
     inline def setInvocation(value: Invocation): Self = StObject.set(x, "invocation", value.asInstanceOf[js.Any])
     

@@ -11,9 +11,9 @@ Color themes for Redux DevTools monitors
 | Full name          | redux-devtools-themes |
 | Keywords           | base16, color schemes |
 | # releases         | 0 |
-| # dependents       | 55 |
-| # downloads        | 2503577 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 190889.0 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/gaearon/redux-devtools-themes)

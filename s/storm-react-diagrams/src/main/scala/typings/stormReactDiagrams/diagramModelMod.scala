@@ -24,20 +24,20 @@ object diagramModelMod {
   
   @JSImport("storm-react-diagrams/dist/src/models/DiagramModel", "DiagramModel")
   @js.native
-  class DiagramModel () extends BaseEntity[DiagramListener] {
+  open class DiagramModel () extends BaseEntity[DiagramListener] {
     
-    def addAll(models: (BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener])*): js.Array[BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]] = js.native
+    def addAll(models: (BaseModel[BaseEntity[BaseListener[Any]], BaseModelListener])*): js.Array[BaseModel[BaseEntity[BaseListener[Any]], BaseModelListener]] = js.native
     
     def addLink(link: LinkModel[LinkModelListener]): LinkModel[LinkModelListener] = js.native
     
     def addNode(node: NodeModel): NodeModel = js.native
     
     def clearSelection(): Unit = js.native
-    def clearSelection(ignore: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]): Unit = js.native
+    def clearSelection(ignore: BaseModel[BaseEntity[BaseListener[Any]], BaseModelListener]): Unit = js.native
     
-    def deSerializeDiagram(`object`: js.Any, diagramEngine: DiagramEngine): Unit = js.native
+    def deSerializeDiagram(`object`: Any, diagramEngine: DiagramEngine): Unit = js.native
     
-    def getGridPosition(pos: js.Any): js.Any = js.native
+    def getGridPosition(pos: Any): Any = js.native
     
     def getLink(link: String): LinkModel[LinkModelListener] | Null = js.native
     def getLink(link: LinkModel[LinkModelListener]): LinkModel[LinkModelListener] | Null = js.native
@@ -53,7 +53,7 @@ object diagramModelMod {
     
     def getOffsetY(): Double = js.native
     
-    def getSelectedItems(filters: BaseEntityType*): js.Array[BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]] = js.native
+    def getSelectedItems(filters: BaseEntityType*): js.Array[BaseModel[BaseEntity[BaseListener[Any]], BaseModelListener]] = js.native
     
     def getZoomLevel(): Double = js.native
     
@@ -93,7 +93,7 @@ object diagramModelMod {
   
   trait DiagramListener
     extends StObject
-       with BaseListener[js.Any] {
+       with BaseListener[Any] {
     
     var gridUpdated: js.UndefOr[js.Function1[/* event */ BaseEventDiagramModelsize, Unit]] = js.undefined
     

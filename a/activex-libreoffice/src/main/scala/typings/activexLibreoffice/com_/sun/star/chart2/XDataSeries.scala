@@ -33,7 +33,7 @@ object XDataSeries {
   inline def apply(
     acquire: () => Unit,
     getDataPointByIndex: Double => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     resetAllDataPoints: () => Unit,
     resetDataPoint: Double => Unit

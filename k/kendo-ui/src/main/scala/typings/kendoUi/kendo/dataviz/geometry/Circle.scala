@@ -26,7 +26,7 @@ trait Circle
   
   var radius: Double = js.native
   
-  def setCenter(value: js.Any): typings.kendoUi.kendo.geometry.Point = js.native
+  def setCenter(value: Any): typings.kendoUi.kendo.geometry.Point = js.native
   def setCenter(value: typings.kendoUi.kendo.geometry.Point): typings.kendoUi.kendo.geometry.Point = js.native
   
   def setRadius(value: Double): typings.kendoUi.kendo.geometry.Circle = js.native

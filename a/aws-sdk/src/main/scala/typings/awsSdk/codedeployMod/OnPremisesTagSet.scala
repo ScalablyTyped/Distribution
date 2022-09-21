@@ -24,6 +24,6 @@ object OnPremisesTagSet {
     
     inline def setOnPremisesTagSetListUndefined: Self = StObject.set(x, "onPremisesTagSetList", js.undefined)
     
-    inline def setOnPremisesTagSetListVarargs(value: TagFilterList*): Self = StObject.set(x, "onPremisesTagSetList", js.Array(value :_*))
+    inline def setOnPremisesTagSetListVarargs(value: TagFilterList*): Self = StObject.set(x, "onPremisesTagSetList", js.Array(value*))
   }
 }

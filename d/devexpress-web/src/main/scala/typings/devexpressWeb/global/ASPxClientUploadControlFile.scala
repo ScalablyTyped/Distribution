@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientUploadControlFile")
 @js.native
-class ASPxClientUploadControlFile ()
+open class ASPxClientUploadControlFile ()
   extends StObject
      with typings.devexpressWeb.ASPxClientUploadControlFile {
   
@@ -29,5 +29,5 @@ class ASPxClientUploadControlFile ()
     * Provides access to the file as a native Javascript object.
     */
   /* CompleteClass */
-  var sourceFileObject: js.Any = js.native
+  var sourceFileObject: Any = js.native
 }

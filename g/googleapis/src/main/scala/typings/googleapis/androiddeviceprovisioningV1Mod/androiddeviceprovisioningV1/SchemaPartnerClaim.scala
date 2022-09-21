@@ -4,18 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Identifies one claim request.
-  */
 trait SchemaPartnerClaim extends StObject {
   
   /**
     * Required. The ID of the customer for whom the device is being claimed.
     */
-  var customerId: js.UndefOr[String] = js.undefined
+  var customerId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Required. Device identifier of the device.
+    * Required. Required. Device identifier of the device.
     */
   var deviceIdentifier: js.UndefOr[SchemaDeviceIdentifier] = js.undefined
   
@@ -25,9 +22,9 @@ trait SchemaPartnerClaim extends StObject {
   var deviceMetadata: js.UndefOr[SchemaDeviceMetadata] = js.undefined
   
   /**
-    * Required. The section type of the device&#39;s provisioning record.
+    * Required. The section type of the device's provisioning record.
     */
-  var sectionType: js.UndefOr[String] = js.undefined
+  var sectionType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPartnerClaim {
   
@@ -40,6 +37,8 @@ object SchemaPartnerClaim {
     
     inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
+    inline def setCustomerIdNull: Self = StObject.set(x, "customerId", null)
+    
     inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
     inline def setDeviceIdentifier(value: SchemaDeviceIdentifier): Self = StObject.set(x, "deviceIdentifier", value.asInstanceOf[js.Any])
@@ -51,6 +50,8 @@ object SchemaPartnerClaim {
     inline def setDeviceMetadataUndefined: Self = StObject.set(x, "deviceMetadata", js.undefined)
     
     inline def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
+    
+    inline def setSectionTypeNull: Self = StObject.set(x, "sectionType", null)
     
     inline def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
   }

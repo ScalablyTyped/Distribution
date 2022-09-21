@@ -10,10 +10,10 @@ object lineWeightMod {
   
   @JSImport("material-ui/svg-icons/action/line-weight", JSImport.Default)
   @js.native
-  class default () extends ActionLineWeight
+  open class default () extends ActionLineWeight
   
   @JSImport("material-ui/svg-icons/action/line-weight", "ActionLineWeight")
   @js.native
-  class ActionLineWeight ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionLineWeight ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

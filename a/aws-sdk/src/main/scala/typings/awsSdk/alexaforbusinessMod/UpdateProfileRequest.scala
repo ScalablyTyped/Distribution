@@ -12,6 +12,11 @@ trait UpdateProfileRequest extends StObject {
   var Address: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Address] = js.undefined
   
   /**
+    * Whether data retention of the profile is enabled.
+    */
+  var DataRetentionOptIn: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The updated distance unit for the room profile.
     */
   var DistanceUnit: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DistanceUnit] = js.undefined
@@ -83,6 +88,10 @@ object UpdateProfileRequest {
     inline def setAddress(value: Address): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
     inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
+    
+    inline def setDataRetentionOptIn(value: Boolean): Self = StObject.set(x, "DataRetentionOptIn", value.asInstanceOf[js.Any])
+    
+    inline def setDataRetentionOptInUndefined: Self = StObject.set(x, "DataRetentionOptIn", js.undefined)
     
     inline def setDistanceUnit(value: DistanceUnit): Self = StObject.set(x, "DistanceUnit", value.asInstanceOf[js.Any])
     

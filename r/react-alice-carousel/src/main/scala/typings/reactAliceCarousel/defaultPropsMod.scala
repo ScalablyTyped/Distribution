@@ -102,15 +102,30 @@ object defaultPropsMod {
     def infinite: Boolean = js.native
     inline def infinite_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("infinite")(x.asInstanceOf[js.Any])
     
+    @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.innerWidth")
+    @js.native
+    def innerWidth: Double = js.native
+    inline def innerWidth_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("innerWidth")(x.asInstanceOf[js.Any])
+    
     @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.items")
     @js.native
     def items: Unit = js.native
     inline def items_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("items")(x.asInstanceOf[js.Any])
     
+    @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.keyboardNavigation")
+    @js.native
+    def keyboardNavigation: Boolean = js.native
+    inline def keyboardNavigation_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("keyboardNavigation")(x.asInstanceOf[js.Any])
+    
     @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.mouseTracking")
     @js.native
     def mouseTracking: Boolean = js.native
     inline def mouseTracking_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseTracking")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.name")
+    @js.native
+    def name: String = js.native
+    inline def name_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
     
     inline def onInitialized(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onInitialized")().asInstanceOf[Unit]
     
@@ -139,6 +154,11 @@ object defaultPropsMod {
     @js.native
     def responsive: Unit = js.native
     inline def responsive_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("responsive")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.ssrSilentMode")
+    @js.native
+    def ssrSilentMode: Boolean = js.native
+    inline def ssrSilentMode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ssrSilentMode")(x.asInstanceOf[js.Any])
     
     @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.swipeDelta")
     @js.native

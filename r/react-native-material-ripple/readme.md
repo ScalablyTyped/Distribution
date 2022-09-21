@@ -10,10 +10,10 @@ Base component for touchable elements
 | ------------------ | :-------------: |
 | Full name          | react-native-material-ripple |
 | Keywords           | react, react-component, react-native, ios, android, ripple, material |
-| # releases         | 3 |
-| # dependents       | 45 |
-| # downloads        | 1703034 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 157194.66666666666 |
+| # stars            | 390.0 |
 
 ## Links
 - [Homepage](https://github.com/n4kz/react-native-material-ripple#readme)

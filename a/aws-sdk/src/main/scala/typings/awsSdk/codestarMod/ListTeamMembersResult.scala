@@ -31,6 +31,6 @@ object ListTeamMembersResult {
     
     inline def setTeamMembers(value: TeamMemberResult): Self = StObject.set(x, "teamMembers", value.asInstanceOf[js.Any])
     
-    inline def setTeamMembersVarargs(value: TeamMember*): Self = StObject.set(x, "teamMembers", js.Array(value :_*))
+    inline def setTeamMembersVarargs(value: TeamMember*): Self = StObject.set(x, "teamMembers", js.Array(value*))
   }
 }

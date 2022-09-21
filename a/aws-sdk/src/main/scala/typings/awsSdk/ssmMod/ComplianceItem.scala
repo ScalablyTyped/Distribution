@@ -27,7 +27,7 @@ trait ComplianceItem extends StObject {
   var Id: js.UndefOr[ComplianceItemId] = js.undefined
   
   /**
-    * An ID for the resource. For a managed instance, this is the instance ID.
+    * An ID for the resource. For a managed node, this is the node ID.
     */
   var ResourceId: js.UndefOr[ComplianceResourceId] = js.undefined
   

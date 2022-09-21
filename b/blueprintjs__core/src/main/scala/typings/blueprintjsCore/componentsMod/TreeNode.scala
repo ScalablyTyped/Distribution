@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@blueprintjs/core/lib/esm/components", "TreeNode")
 @js.native
-class TreeNode[T] protected ()
+open class TreeNode[T] protected ()
   extends typings.blueprintjsCore.treeNodeMod.TreeNode[T] {
   def this(props: ITreeNodeProps[T]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ITreeNodeProps[T], context: js.Any) = this()
+  def this(props: ITreeNodeProps[T], context: Any) = this()
 }
 /* static members */
 object TreeNode {

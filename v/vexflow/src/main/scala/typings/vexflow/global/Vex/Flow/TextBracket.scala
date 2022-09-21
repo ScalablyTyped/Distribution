@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.TextBracket")
 @js.native
-class TextBracket protected ()
+open class TextBracket protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.TextBracket {
   def this(bracket_data: Position) = this()

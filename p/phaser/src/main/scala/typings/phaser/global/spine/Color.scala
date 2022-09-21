@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.Color")
 @js.native
-class Color ()
+open class Color ()
   extends StObject
      with typings.phaser.spine.Color {
   def this(r: Double) = this()

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/querystring-parser" : "1.0.0-rc.7"
+      "@aws-sdk/querystring-parser" : "3.171.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/querystring-parser" : "1.0.0-rc.7"
+      "@aws-sdk/querystring-parser" : "3.171.0"
     }
   ],
   "compile-devDependencies" : [

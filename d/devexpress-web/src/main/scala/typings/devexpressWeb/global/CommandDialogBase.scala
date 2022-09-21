@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("CommandDialogBase")
 @js.native
-class CommandDialogBase ()
+open class CommandDialogBase ()
   extends StObject
      with typings.devexpressWeb.CommandBase

@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IFunction extends StObject {
   
-  def isCalled(fn: String, host: js.Any, desc: String): Unit = js.native
-  def isCalled(fn: js.Function, host: js.Any, desc: String): Unit = js.native
+  def isCalled(fn: String, host: Any, desc: String): Unit = js.native
+  def isCalled(fn: js.Function, host: Any, desc: String): Unit = js.native
   
-  def isCalledNTimes(fn: String, host: js.Any, n: Double, desc: String): Unit = js.native
-  def isCalledNTimes(fn: js.Function, host: js.Any, n: Double, desc: String): Unit = js.native
+  def isCalledNTimes(fn: String, host: Any, n: Double, desc: String): Unit = js.native
+  def isCalledNTimes(fn: js.Function, host: Any, n: Double, desc: String): Unit = js.native
   
-  def isCalledOnce(fn: String, host: js.Any, desc: String): Unit = js.native
-  def isCalledOnce(fn: js.Function, host: js.Any, desc: String): Unit = js.native
+  def isCalledOnce(fn: String, host: Any, desc: String): Unit = js.native
+  def isCalledOnce(fn: js.Function, host: Any, desc: String): Unit = js.native
   
-  def isntCalled(fn: String, host: js.Any, n: Double, desc: String): Unit = js.native
-  def isntCalled(fn: js.Function, host: js.Any, n: Double, desc: String): Unit = js.native
+  def isntCalled(fn: String, host: Any, n: Double, desc: String): Unit = js.native
+  def isntCalled(fn: js.Function, host: Any, n: Double, desc: String): Unit = js.native
   
   def methodIsCalled(fn: String, className: String, desc: String): Unit = js.native
   def methodIsCalled(fn: String, className: js.Function, desc: String): Unit = js.native

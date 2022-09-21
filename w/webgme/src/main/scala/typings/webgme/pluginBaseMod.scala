@@ -12,7 +12,7 @@ object pluginBaseMod {
     */
   @JSImport("plugin/PluginBase", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with PluginBase
 }

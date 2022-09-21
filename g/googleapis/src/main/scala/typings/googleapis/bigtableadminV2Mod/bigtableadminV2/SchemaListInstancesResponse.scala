@@ -4,20 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for BigtableInstanceAdmin.ListInstances.
-  */
 trait SchemaListInstancesResponse extends StObject {
   
   /**
-    * Locations from which Instance information could not be retrieved, due to
-    * an outage or some other transient condition. Instances whose Clusters are
-    * all in one of the failed locations may be missing from `instances`, and
-    * Instances with at least one Cluster in a failed location may only have
-    * partial information returned. Values are of the form
-    * `projects/&lt;project&gt;/locations/&lt;zone_id&gt;`
+    * Locations from which Instance information could not be retrieved, due to an outage or some other transient condition. Instances whose Clusters are all in one of the failed locations may be missing from `instances`, and Instances with at least one Cluster in a failed location may only have partial information returned. Values are of the form `projects//locations/`
     */
-  var failedLocations: js.UndefOr[js.Array[String]] = js.undefined
+  var failedLocations: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * The list of requested instances.
@@ -27,7 +19,7 @@ trait SchemaListInstancesResponse extends StObject {
   /**
     * DEPRECATED: This field is unused and ignored.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListInstancesResponse {
   
@@ -40,17 +32,21 @@ object SchemaListInstancesResponse {
     
     inline def setFailedLocations(value: js.Array[String]): Self = StObject.set(x, "failedLocations", value.asInstanceOf[js.Any])
     
+    inline def setFailedLocationsNull: Self = StObject.set(x, "failedLocations", null)
+    
     inline def setFailedLocationsUndefined: Self = StObject.set(x, "failedLocations", js.undefined)
     
-    inline def setFailedLocationsVarargs(value: String*): Self = StObject.set(x, "failedLocations", js.Array(value :_*))
+    inline def setFailedLocationsVarargs(value: String*): Self = StObject.set(x, "failedLocations", js.Array(value*))
     
     inline def setInstances(value: js.Array[SchemaInstance]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
     inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    inline def setInstancesVarargs(value: SchemaInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: SchemaInstance*): Self = StObject.set(x, "instances", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

@@ -10,10 +10,10 @@ object addShoppingCartMod {
   
   @JSImport("material-ui/svg-icons/action/add-shopping-cart", JSImport.Default)
   @js.native
-  class default () extends ActionAddShoppingCart
+  open class default () extends ActionAddShoppingCart
   
   @JSImport("material-ui/svg-icons/action/add-shopping-cart", "ActionAddShoppingCart")
   @js.native
-  class ActionAddShoppingCart ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionAddShoppingCart ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,11 +1,10 @@
 package typings.gestalt.mod
 
 import typings.gestalt.gestaltStrings.circle
-import typings.gestalt.gestaltStrings.darkGray
+import typings.gestalt.gestaltStrings.default
+import typings.gestalt.gestaltStrings.error
 import typings.gestalt.gestaltStrings.rectangle
-import typings.gestalt.gestaltStrings.red
 import typings.gestalt.gestaltStrings.square
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,13 +14,13 @@ trait ToastProps extends StObject {
   
   var button: js.UndefOr[ReactNode] = js.undefined
   
-  var color: js.UndefOr[darkGray | red] = js.undefined
-  
-  var text: js.UndefOr[String | ReactElement] = js.undefined
+  var text: js.UndefOr[String | ReactNode] = js.undefined
   
   var thumbnail: js.UndefOr[ReactNode] = js.undefined
   
   var thumbnailShape: js.UndefOr[circle | rectangle | square] = js.undefined
+  
+  var variant: js.UndefOr[default | error] = js.undefined
 }
 object ToastProps {
   
@@ -36,11 +35,7 @@ object ToastProps {
     
     inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    inline def setColor(value: darkGray | red): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-    
-    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-    
-    inline def setText(value: String | ReactElement): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String | ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
@@ -51,5 +46,9 @@ object ToastProps {
     inline def setThumbnailShapeUndefined: Self = StObject.set(x, "thumbnailShape", js.undefined)
     
     inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+    
+    inline def setVariant(value: default | error): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    
+    inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }
 }

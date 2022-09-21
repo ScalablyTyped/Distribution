@@ -25,7 +25,7 @@ trait Accesstoken extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Resource name for the location. */
+  /** Required. The name of the projectSettings resource. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */

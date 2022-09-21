@@ -1,7 +1,7 @@
 
 # Scala.js typings for unused-filename
 
-Typings are for version 2.1.0
+Typings are for version 4.0.1
 
 ## Library description:
 Get an unused filename by appending a number if it exists: `file.txt` → `file (1).txt`
@@ -10,10 +10,10 @@ Get an unused filename by appending a number if it exists: `file.txt` → `file 
 | ------------------ | :-------------: |
 | Full name          | unused-filename |
 | Keywords           | unused, filename, filepath, file, name, available, safe, unique, usable, filesystem, fs, exists, path |
-| # releases         | 3 |
-| # dependents       | 18 |
-| # downloads        | 1040433 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 129105.33333333333 |
+| # stars            | 134.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/unused-filename#readme)

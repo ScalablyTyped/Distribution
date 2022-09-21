@@ -17,7 +17,7 @@ trait S3Destination extends StObject {
   var keyPrefix: js.UndefOr[string] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use for encryption of the results. This must be the ARN of an existing CMK that's in the same AWS Region as the bucket.
+    * The Amazon Resource Name (ARN) of the customer managed KMS key to use for encryption of the results. This must be the ARN of an existing, symmetric encryption KMS key that's in the same Amazon Web Services Region as the bucket.
     */
   var kmsKeyArn: string
 }

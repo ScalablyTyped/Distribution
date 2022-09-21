@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.VariableStatementSyntax")
 @js.native
-class VariableStatementSyntax protected ()
+open class VariableStatementSyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.VariableStatementSyntax {
   def this(
@@ -23,7 +23,7 @@ class VariableStatementSyntax protected ()
   ) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): ISyntaxElement = js.native

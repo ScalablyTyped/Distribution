@@ -62,9 +62,14 @@ trait ScalingPolicy extends StObject {
   var PolicyName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
-    * One of the following policy types:     TargetTrackingScaling     StepScaling     SimpleScaling (default)   For more information, see Target tracking scaling policies and Step and simple scaling policies in the Amazon EC2 Auto Scaling User Guide.
+    * One of the following policy types:     TargetTrackingScaling     StepScaling     SimpleScaling (default)    PredictiveScaling    For more information, see Target tracking scaling policies and Step and simple scaling policies in the Amazon EC2 Auto Scaling User Guide.
     */
   var PolicyType: js.UndefOr[XmlStringMaxLen64] = js.undefined
+  
+  /**
+    * A predictive scaling policy.
+    */
+  var PredictiveScalingConfiguration: js.UndefOr[typings.awsSdk.autoscalingMod.PredictiveScalingConfiguration] = js.undefined
   
   /**
     * The amount by which to scale, based on the specified adjustment type. A positive value adds to the current capacity while a negative number removes from the current capacity.
@@ -98,7 +103,7 @@ object ScalingPolicy {
     
     inline def setAlarmsUndefined: Self = StObject.set(x, "Alarms", js.undefined)
     
-    inline def setAlarmsVarargs(value: Alarm*): Self = StObject.set(x, "Alarms", js.Array(value :_*))
+    inline def setAlarmsVarargs(value: Alarm*): Self = StObject.set(x, "Alarms", js.Array(value*))
     
     inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
@@ -140,6 +145,10 @@ object ScalingPolicy {
     
     inline def setPolicyTypeUndefined: Self = StObject.set(x, "PolicyType", js.undefined)
     
+    inline def setPredictiveScalingConfiguration(value: PredictiveScalingConfiguration): Self = StObject.set(x, "PredictiveScalingConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setPredictiveScalingConfigurationUndefined: Self = StObject.set(x, "PredictiveScalingConfiguration", js.undefined)
+    
     inline def setScalingAdjustment(value: PolicyIncrement): Self = StObject.set(x, "ScalingAdjustment", value.asInstanceOf[js.Any])
     
     inline def setScalingAdjustmentUndefined: Self = StObject.set(x, "ScalingAdjustment", js.undefined)
@@ -148,7 +157,7 @@ object ScalingPolicy {
     
     inline def setStepAdjustmentsUndefined: Self = StObject.set(x, "StepAdjustments", js.undefined)
     
-    inline def setStepAdjustmentsVarargs(value: StepAdjustment*): Self = StObject.set(x, "StepAdjustments", js.Array(value :_*))
+    inline def setStepAdjustmentsVarargs(value: StepAdjustment*): Self = StObject.set(x, "StepAdjustments", js.Array(value*))
     
     inline def setTargetTrackingConfiguration(value: TargetTrackingConfiguration): Self = StObject.set(x, "TargetTrackingConfiguration", value.asInstanceOf[js.Any])
     

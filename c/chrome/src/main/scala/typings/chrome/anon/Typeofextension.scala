@@ -23,8 +23,10 @@ trait Typeofextension extends StObject {
   
   var inIncognitoContext: Boolean = js.native
   
+  def isAllowedFileSchemeAccess(): js.Promise[Boolean] = js.native
   def isAllowedFileSchemeAccess(callback: js.Function1[/* isAllowedAccess */ Boolean, Unit]): Unit = js.native
   
+  def isAllowedIncognitoAccess(): js.Promise[Boolean] = js.native
   def isAllowedIncognitoAccess(callback: js.Function1[/* isAllowedAccess */ Boolean, Unit]): Unit = js.native
   
   var lastError: LastError = js.native
@@ -33,10 +35,14 @@ trait Typeofextension extends StObject {
   
   var onRequestExternal: OnRequestEvent = js.native
   
-  def sendRequest(extensionId: String, request: js.Any): Unit = js.native
-  def sendRequest(extensionId: String, request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
-  def sendRequest(request: js.Any): Unit = js.native
-  def sendRequest(request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+  def sendRequest[Request, Response](extensionId: String, request: Request): Unit = js.native
+  def sendRequest[Request, Response](
+    extensionId: String,
+    request: Request,
+    responseCallback: js.Function1[/* response */ Response, Unit]
+  ): Unit = js.native
+  def sendRequest[Request, Response](request: Request): Unit = js.native
+  def sendRequest[Request, Response](request: Request, responseCallback: js.Function1[/* response */ Response, Unit]): Unit = js.native
   
   def setUpdateUrlData(data: String): Unit = js.native
 }

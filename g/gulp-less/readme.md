@@ -9,10 +9,10 @@ Less for Gulp
 | ------------------ | :-------------: |
 | Full name          | gulp-less |
 | Keywords           | gulpplugin, gulp, less |
-| # releases         | 0 |
-| # dependents       | 767 |
-| # downloads        | 7720010 |
-| # stars            | 135 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 611796.3333333334 |
+| # stars            | 567.0 |
 
 ## Links
 - [Homepage](https://github.com/gulp-community/gulp-less#readme)

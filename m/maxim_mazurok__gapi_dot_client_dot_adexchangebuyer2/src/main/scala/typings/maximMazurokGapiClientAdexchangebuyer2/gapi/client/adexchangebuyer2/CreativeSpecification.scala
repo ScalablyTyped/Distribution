@@ -25,7 +25,7 @@ object CreativeSpecification {
     
     inline def setCreativeCompanionSizesUndefined: Self = StObject.set(x, "creativeCompanionSizes", js.undefined)
     
-    inline def setCreativeCompanionSizesVarargs(value: AdSize*): Self = StObject.set(x, "creativeCompanionSizes", js.Array(value :_*))
+    inline def setCreativeCompanionSizesVarargs(value: AdSize*): Self = StObject.set(x, "creativeCompanionSizes", js.Array(value*))
     
     inline def setCreativeSize(value: AdSize): Self = StObject.set(x, "creativeSize", value.asInstanceOf[js.Any])
     

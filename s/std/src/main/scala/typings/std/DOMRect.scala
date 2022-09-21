@@ -14,7 +14,7 @@ object DOMRect {
     height: Double,
     left: Double,
     right: Double,
-    toJSON: () => js.Any,
+    toJSON: () => Any,
     top: Double,
     width: Double,
     x: Double,

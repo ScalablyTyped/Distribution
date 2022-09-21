@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A PageElement kind representing a non-connector line, straight connector,
-  * curved connector, or bent connector.
-  */
 trait SchemaLine extends StObject {
   
   /**
-    * The category of the line.  It matches the `category` specified in
-    * CreateLineRequest, and can be updated with UpdateLineCategoryRequest.
+    * The category of the line. It matches the `category` specified in CreateLineRequest, and can be updated with UpdateLineCategoryRequest.
     */
-  var lineCategory: js.UndefOr[String] = js.undefined
+  var lineCategory: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The properties of the line.
@@ -24,7 +19,7 @@ trait SchemaLine extends StObject {
   /**
     * The type of the line.
     */
-  var lineType: js.UndefOr[String] = js.undefined
+  var lineType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLine {
   
@@ -37,6 +32,8 @@ object SchemaLine {
     
     inline def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
     
+    inline def setLineCategoryNull: Self = StObject.set(x, "lineCategory", null)
+    
     inline def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
     
     inline def setLineProperties(value: SchemaLineProperties): Self = StObject.set(x, "lineProperties", value.asInstanceOf[js.Any])
@@ -44,6 +41,8 @@ object SchemaLine {
     inline def setLinePropertiesUndefined: Self = StObject.set(x, "lineProperties", js.undefined)
     
     inline def setLineType(value: String): Self = StObject.set(x, "lineType", value.asInstanceOf[js.Any])
+    
+    inline def setLineTypeNull: Self = StObject.set(x, "lineType", null)
     
     inline def setLineTypeUndefined: Self = StObject.set(x, "lineType", js.undefined)
   }

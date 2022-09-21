@@ -3,8 +3,6 @@ package typings.awsSdkClientS3Node
 import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.requester_
 import typings.awsSdkTypes.abortMod.AbortSignal
 import typings.awsSdkTypes.cryptoMod.SourceData
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +45,7 @@ object typesUploadPartInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -77,7 +75,7 @@ object typesUploadPartInputMod {
     /**
       * <p>Object data.</p>
       */
-    var Body: js.UndefOr[ArrayBuffer | ArrayBufferView | String | StreamType] = js.undefined
+    var Body: js.UndefOr[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String | StreamType] = js.undefined
     
     /**
       * <p>Name of the bucket to which the multipart upload was initiated.</p>
@@ -141,7 +139,7 @@ object typesUploadPartInputMod {
       inline def set$forcePathStyleUndefined: Self = StObject.set(x, "$forcePathStyle", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -162,7 +160,7 @@ object typesUploadPartInputMod {
       
       inline def set$useDualstackEndpointUndefined: Self = StObject.set(x, "$useDualstackEndpoint", js.undefined)
       
-      inline def setBody(value: ArrayBuffer | ArrayBufferView | String | StreamType): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String | StreamType): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
       

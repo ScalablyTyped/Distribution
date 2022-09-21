@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 地物对象的经纬度矩形范围。
   * @param coords 由西南角，东北角经纬度组成的数组，分别是[西南角经度， 西南角纬度，东北角经度，东北角纬度]
   */
-class Bounds ()
+open class Bounds ()
   extends StObject
      with typings.amapJsApi.AMap.Bounds {
   def this(coords: js.Tuple4[Double, Double, Double, Double]) = this()

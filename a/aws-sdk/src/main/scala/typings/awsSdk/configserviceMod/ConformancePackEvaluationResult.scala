@@ -12,29 +12,29 @@ trait ConformancePackEvaluationResult extends StObject {
   var Annotation: js.UndefOr[typings.awsSdk.configserviceMod.Annotation] = js.undefined
   
   /**
-    * The compliance type. The allowed values are COMPLIANT and NON_COMPLIANT. 
+    * The compliance type. The allowed values are COMPLIANT and NON_COMPLIANT. INSUFFICIENT_DATA is not supported.
     */
   var ComplianceType: ConformancePackComplianceType
   
   /**
-    * The time when AWS Config rule evaluated AWS resource.
+    * The time when Config rule evaluated Amazon Web Services resource.
     */
-  var ConfigRuleInvokedTime: Date
+  var ConfigRuleInvokedTime: js.Date
   
   var EvaluationResultIdentifier: typings.awsSdk.configserviceMod.EvaluationResultIdentifier
   
   /**
-    * The time when AWS Config recorded the evaluation result. 
+    * The time when Config recorded the evaluation result. 
     */
-  var ResultRecordedTime: Date
+  var ResultRecordedTime: js.Date
 }
 object ConformancePackEvaluationResult {
   
   inline def apply(
     ComplianceType: ConformancePackComplianceType,
-    ConfigRuleInvokedTime: Date,
+    ConfigRuleInvokedTime: js.Date,
     EvaluationResultIdentifier: EvaluationResultIdentifier,
-    ResultRecordedTime: Date
+    ResultRecordedTime: js.Date
   ): ConformancePackEvaluationResult = {
     val __obj = js.Dynamic.literal(ComplianceType = ComplianceType.asInstanceOf[js.Any], ConfigRuleInvokedTime = ConfigRuleInvokedTime.asInstanceOf[js.Any], EvaluationResultIdentifier = EvaluationResultIdentifier.asInstanceOf[js.Any], ResultRecordedTime = ResultRecordedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConformancePackEvaluationResult]
@@ -48,10 +48,10 @@ object ConformancePackEvaluationResult {
     
     inline def setComplianceType(value: ConformancePackComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
-    inline def setConfigRuleInvokedTime(value: Date): Self = StObject.set(x, "ConfigRuleInvokedTime", value.asInstanceOf[js.Any])
+    inline def setConfigRuleInvokedTime(value: js.Date): Self = StObject.set(x, "ConfigRuleInvokedTime", value.asInstanceOf[js.Any])
     
     inline def setEvaluationResultIdentifier(value: EvaluationResultIdentifier): Self = StObject.set(x, "EvaluationResultIdentifier", value.asInstanceOf[js.Any])
     
-    inline def setResultRecordedTime(value: Date): Self = StObject.set(x, "ResultRecordedTime", value.asInstanceOf[js.Any])
+    inline def setResultRecordedTime(value: js.Date): Self = StObject.set(x, "ResultRecordedTime", value.asInstanceOf[js.Any])
   }
 }

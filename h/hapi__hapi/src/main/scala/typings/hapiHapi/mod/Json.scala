@@ -38,11 +38,11 @@ object Json {
       
       inline def setReplacer(value: StringifyReplacer): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
       
-      inline def setReplacerFunction2(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      inline def setReplacerFunction2(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
       inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
       
-      inline def setReplacerVarargs(value: (String | Double)*): Self = StObject.set(x, "replacer", js.Array(value :_*))
+      inline def setReplacerVarargs(value: (String | Double)*): Self = StObject.set(x, "replacer", js.Array(value*))
       
       inline def setSpace(value: StringifySpace): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
@@ -58,7 +58,7 @@ object Json {
     * @see {@link https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify#The_replacer_parameter}
     */
   type StringifyReplacer = js.UndefOr[
-    (js.Function2[/* key */ String, /* value */ js.Any, js.Any]) | (js.Array[String | Double])
+    (js.Function2[/* key */ String, /* value */ Any, Any]) | (js.Array[String | Double])
   ]
   
   /**

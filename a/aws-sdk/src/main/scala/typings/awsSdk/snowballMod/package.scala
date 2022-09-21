@@ -1,5 +1,6 @@
 package typings.awsSdk.snowballMod
 
+import typings.awsSdk.awsSdkStrings.TB
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type AddressId = java.lang.String
 
-type AddressList = js.Array[typings.awsSdk.snowballMod.Address]
+type AddressList = js.Array[Address]
 
 type AmiId = java.lang.String
 
@@ -15,7 +16,7 @@ type Boolean = scala.Boolean
 
 type ClusterId = java.lang.String
 
-type ClusterListEntryList = js.Array[typings.awsSdk.snowballMod.ClusterListEntry]
+type ClusterListEntryList = js.Array[ClusterListEntry]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AwaitingQuorum
@@ -25,23 +26,32 @@ type ClusterListEntryList = js.Array[typings.awsSdk.snowballMod.ClusterListEntry
   - typings.awsSdk.awsSdkStrings.Cancelled_
   - java.lang.String
 */
-type ClusterState = typings.awsSdk.snowballMod._ClusterState | java.lang.String
+type ClusterState = _ClusterState | java.lang.String
 
-type CompatibleImageList = js.Array[typings.awsSdk.snowballMod.CompatibleImage]
+type CompatibleImageList = js.Array[CompatibleImage]
 
-type Ec2AmiResourceList = js.Array[typings.awsSdk.snowballMod.Ec2AmiResource]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NFS_ON_DEVICE_SERVICE
+  - typings.awsSdk.awsSdkStrings.S3_ON_DEVICE_SERVICE
+  - java.lang.String
+*/
+type DeviceServiceName = _DeviceServiceName | java.lang.String
 
-type EventTriggerDefinitionList = js.Array[typings.awsSdk.snowballMod.EventTriggerDefinition]
+type Ec2AmiResourceList = js.Array[Ec2AmiResource]
+
+type EventTriggerDefinitionList = js.Array[EventTriggerDefinition]
 
 type GSTIN = java.lang.String
 
-type Integer = scala.Double
+type Integer = Double
+
+type JavaBoolean = scala.Boolean
 
 type JobId = java.lang.String
 
-type JobListEntryList = js.Array[typings.awsSdk.snowballMod.JobListEntry]
+type JobListEntryList = js.Array[JobListEntry]
 
-type JobMetadataList = js.Array[typings.awsSdk.snowballMod.JobMetadata]
+type JobMetadataList = js.Array[JobMetadata]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.New_
@@ -59,9 +69,9 @@ type JobMetadataList = js.Array[typings.awsSdk.snowballMod.JobMetadata]
   - typings.awsSdk.awsSdkStrings.Pending_
   - java.lang.String
 */
-type JobState = typings.awsSdk.snowballMod._JobState | java.lang.String
+type JobState = _JobState | java.lang.String
 
-type JobStateList = js.Array[typings.awsSdk.snowballMod.JobState]
+type JobStateList = js.Array[JobState]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IMPORT
@@ -69,28 +79,48 @@ type JobStateList = js.Array[typings.awsSdk.snowballMod.JobState]
   - typings.awsSdk.awsSdkStrings.LOCAL_USE
   - java.lang.String
 */
-type JobType = typings.awsSdk.snowballMod._JobType | java.lang.String
+type JobType = _JobType | java.lang.String
 
 type KmsKeyARN = java.lang.String
 
-type LambdaResourceList = js.Array[typings.awsSdk.snowballMod.LambdaResource]
+type LambdaResourceList = js.Array[LambdaResource]
 
-type ListLimit = scala.Double
+type ListLimit = Double
 
-type Long = scala.Double
+type Long = Double
+
+type LongTermPricingAssociatedJobIdList = js.Array[JobId]
+
+type LongTermPricingEntryList = js.Array[LongTermPricingListEntry]
+
+type LongTermPricingId = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.OneYear
+  - typings.awsSdk.awsSdkStrings.ThreeYear
+  - java.lang.String
+*/
+type LongTermPricingType = _LongTermPricingType | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INSTALLED_ONLY
+  - typings.awsSdk.awsSdkStrings.INSTALLED_AUTOSTART
+  - java.lang.String
+*/
+type RemoteManagement = _RemoteManagement | java.lang.String
 
 type ResourceARN = java.lang.String
 
 type RoleARN = java.lang.String
 
-type S3ResourceList = js.Array[typings.awsSdk.snowballMod.S3Resource]
+type S3ResourceList = js.Array[S3Resource]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RECEIVED
   - typings.awsSdk.awsSdkStrings.RETURNED
   - java.lang.String
 */
-type ShipmentState = typings.awsSdk.snowballMod._ShipmentState | java.lang.String
+type ShipmentState = _ShipmentState | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.InProgress_
@@ -99,7 +129,7 @@ type ShipmentState = typings.awsSdk.snowballMod._ShipmentState | java.lang.Strin
   - typings.awsSdk.awsSdkStrings.Failed_
   - java.lang.String
 */
-type ShippingLabelStatus = typings.awsSdk.snowballMod._ShippingLabelStatus | java.lang.String
+type ShippingLabelStatus = _ShippingLabelStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SECOND_DAY
@@ -108,7 +138,7 @@ type ShippingLabelStatus = typings.awsSdk.snowballMod._ShippingLabelStatus | jav
   - typings.awsSdk.awsSdkStrings.STANDARD
   - java.lang.String
 */
-type ShippingOption = typings.awsSdk.snowballMod._ShippingOption | java.lang.String
+type ShippingOption = _ShippingOption | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.T50
@@ -117,10 +147,11 @@ type ShippingOption = typings.awsSdk.snowballMod._ShippingOption | java.lang.Str
   - typings.awsSdk.awsSdkStrings.T42
   - typings.awsSdk.awsSdkStrings.T98
   - typings.awsSdk.awsSdkStrings.T8
+  - typings.awsSdk.awsSdkStrings.T14
   - typings.awsSdk.awsSdkStrings.NoPreference
   - java.lang.String
 */
-type SnowballCapacity = typings.awsSdk.snowballMod._SnowballCapacity | java.lang.String
+type SnowballCapacity = _SnowballCapacity | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STANDARD
@@ -129,19 +160,34 @@ type SnowballCapacity = typings.awsSdk.snowballMod._SnowballCapacity | java.lang
   - typings.awsSdk.awsSdkStrings.EDGE_CG
   - typings.awsSdk.awsSdkStrings.EDGE_S
   - typings.awsSdk.awsSdkStrings.SNC1_HDD
+  - typings.awsSdk.awsSdkStrings.SNC1_SSD
   - java.lang.String
 */
-type SnowballType = typings.awsSdk.snowballMod._SnowballType | java.lang.String
+type SnowballType = _SnowballType | java.lang.String
 
 type SnsTopicARN = java.lang.String
 
+type StorageLimit = Double
+
+type StorageUnit = TB | java.lang.String
+
 type String = java.lang.String
 
-type Timestamp = typings.std.Date
+type TargetOnDeviceServiceList = js.Array[TargetOnDeviceService]
+
+type Timestamp = js.Date
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IMPORT
+  - typings.awsSdk.awsSdkStrings.EXPORT
+  - typings.awsSdk.awsSdkStrings.LOCAL_USE
+  - java.lang.String
+*/
+type TransferOption = _TransferOption | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2016-06-30`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.snowballMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

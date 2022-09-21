@@ -9,7 +9,7 @@ object boxGeometryMod {
   
   @JSImport("wonder.js/dist/es2015/component/geometry/BoxGeometry", "BoxGeometry")
   @js.native
-  class BoxGeometry () extends Geometry {
+  open class BoxGeometry () extends Geometry {
     
     var depth: Double = js.native
     

@@ -1,45 +1,61 @@
 package typings.log4js.mod
 
 import typings.log4js.anon.Worker
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait LoggingEvent extends StObject {
   
+  var callStack: js.UndefOr[String] = js.undefined
+  
   var categoryName: String
   
   var cluster: js.UndefOr[Worker] = js.undefined
   
-  var context: js.Any
+  var columnNumber: js.UndefOr[Double] = js.undefined
+  
+  var context: Any
   
   // level of message
-  var data: js.Array[js.Any]
+  var data: js.Array[Any]
+  
+  var fileName: js.UndefOr[String] = js.undefined
+  
+  var functionName: js.UndefOr[String] = js.undefined
   
   // name of category
   var level: Level
   
+  var lineNumber: js.UndefOr[Double] = js.undefined
+  
   var pid: Double
   
+  def serialise(): String
+  
   // objects to log
-  var startTime: Date
+  var startTime: js.Date
 }
 object LoggingEvent {
   
   inline def apply(
     categoryName: String,
-    context: js.Any,
-    data: js.Array[js.Any],
+    context: Any,
+    data: js.Array[Any],
     level: Level,
     pid: Double,
-    startTime: Date
+    serialise: () => String,
+    startTime: js.Date
   ): LoggingEvent = {
-    val __obj = js.Dynamic.literal(categoryName = categoryName.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(categoryName = categoryName.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], serialise = js.Any.fromFunction0(serialise), startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingEvent]
   }
   
   extension [Self <: LoggingEvent](x: Self) {
+    
+    inline def setCallStack(value: String): Self = StObject.set(x, "callStack", value.asInstanceOf[js.Any])
+    
+    inline def setCallStackUndefined: Self = StObject.set(x, "callStack", js.undefined)
     
     inline def setCategoryName(value: String): Self = StObject.set(x, "categoryName", value.asInstanceOf[js.Any])
     
@@ -47,16 +63,34 @@ object LoggingEvent {
     
     inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
-    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    
+    inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+    
+    inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
     
     inline def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    
+    inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+    
     inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setSerialise(value: () => String): Self = StObject.set(x, "serialise", js.Any.fromFunction0(value))
+    
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.VizResizeEvent")
 @js.native
-class VizResizeEvent ()
+open class VizResizeEvent ()
   extends StObject
      with typings.tableau.tableau.VizResizeEvent {
   

@@ -11,7 +11,6 @@ import typings.jpm.jpmStrings.message
 import typings.jpm.jpmStrings.ready
 import typings.jpm.jpmStrings.show
 import typings.jpm.jpmStrings.start
-import typings.std.Error
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,7 +30,7 @@ object panelMod {
     
     var contentScriptFile: js.UndefOr[String | js.Array[String]] = js.native
     
-    var contentScriptOptions: js.UndefOr[js.Any] = js.native
+    var contentScriptOptions: js.UndefOr[Any] = js.native
     
     var contentScriptWhen: start | ready | end = js.native
     
@@ -47,14 +46,10 @@ object panelMod {
     
     var isShowing: Boolean = js.native
     
-    @JSName("on")
-    def on_error(event: error, handler: js.Function1[/* arg */ js.UndefOr[Error | js.Any], js.Any]): Unit = js.native
-    @JSName("on")
-    def on_hide(event: hide, handler: js.Function1[/* arg */ js.UndefOr[Error | js.Any], js.Any]): Unit = js.native
-    @JSName("on")
-    def on_message(event: message, handler: js.Function1[/* arg */ js.UndefOr[Error | js.Any], js.Any]): Unit = js.native
-    @JSName("on")
-    def on_show(event: show, handler: js.Function1[/* arg */ js.UndefOr[Error | js.Any], js.Any]): Unit = js.native
+    def on(
+      event: show | hide | message | error,
+      handler: js.Function1[/* arg */ js.UndefOr[js.Error | Any], Any]
+    ): Unit = js.native
     
     var port: Port = js.native
     

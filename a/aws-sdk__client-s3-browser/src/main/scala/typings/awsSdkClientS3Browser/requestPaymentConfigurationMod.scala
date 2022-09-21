@@ -8,5 +8,5 @@ object requestPaymentConfigurationMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_RequestPaymentConfiguration", "_RequestPaymentConfiguration")
   @js.native
-  val RequestPaymentConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val RequestPaymentConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

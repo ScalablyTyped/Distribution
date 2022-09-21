@@ -37,7 +37,7 @@ object WorkItemComments {
     
     inline def setComments(value: js.Array[WorkItemComment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    inline def setCommentsVarargs(value: WorkItemComment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: WorkItemComment*): Self = StObject.set(x, "comments", js.Array(value*))
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

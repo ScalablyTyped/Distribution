@@ -4,55 +4,40 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A rollout resource that defines how service configuration versions are
-  * pushed to control plane systems. Typically, you create a new version of the
-  * service config, and then create a Rollout to push the service config.
-  */
 trait SchemaRollout extends StObject {
   
   /**
     * Creation time of the rollout. Readonly.
     */
-  var createTime: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The user who created the Rollout. Readonly.
     */
-  var createdBy: js.UndefOr[String] = js.undefined
+  var createdBy: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The strategy associated with a rollout to delete a `ManagedService`.
-    * Readonly.
+    * The strategy associated with a rollout to delete a `ManagedService`. Readonly.
     */
   var deleteServiceStrategy: js.UndefOr[SchemaDeleteServiceStrategy] = js.undefined
   
   /**
-    * Optional unique identifier of this Rollout. Only lower case letters,
-    * digits  and &#39;-&#39; are allowed.  If not specified by client, the
-    * server will generate one. The generated id will have the form of
-    * &lt;date&gt;&lt;revision number&gt;, where &quot;date&quot; is the create
-    * date in ISO 8601 format.  &quot;revision number&quot; is a monotonically
-    * increasing positive number that is reset every day for each service. An
-    * example of the generated rollout_id is &#39;2016-02-16r1&#39;
+    * Optional. Unique identifier of this Rollout. Must be no longer than 63 characters and only lower case letters, digits, '.', '_' and '-' are allowed. If not specified by client, the server will generate one. The generated id will have the form of , where "date" is the create date in ISO 8601 format. "revision number" is a monotonically increasing positive number that is reset every day for each service. An example of the generated rollout_id is '2016-02-16r1'
     */
-  var rolloutId: js.UndefOr[String] = js.undefined
+  var rolloutId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The name of the service associated with this Rollout.
     */
-  var serviceName: js.UndefOr[String] = js.undefined
+  var serviceName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The status of this rollout. Readonly. In case of a failed rollout, the
-    * system will automatically rollback to the current Rollout version.
-    * Readonly.
+    * The status of this rollout. Readonly. In case of a failed rollout, the system will automatically rollback to the current Rollout version. Readonly.
     */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Google Service Control selects service configurations based on traffic
-    * percentage.
+    * Google Service Control selects service configurations based on traffic percentage.
     */
   var trafficPercentStrategy: js.UndefOr[SchemaTrafficPercentStrategy] = js.undefined
 }
@@ -67,9 +52,13 @@ object SchemaRollout {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
+    inline def setCreateTimeNull: Self = StObject.set(x, "createTime", null)
+    
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     inline def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedByNull: Self = StObject.set(x, "createdBy", null)
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
@@ -79,13 +68,19 @@ object SchemaRollout {
     
     inline def setRolloutId(value: String): Self = StObject.set(x, "rolloutId", value.asInstanceOf[js.Any])
     
+    inline def setRolloutIdNull: Self = StObject.set(x, "rolloutId", null)
+    
     inline def setRolloutIdUndefined: Self = StObject.set(x, "rolloutId", js.undefined)
     
     inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
+    inline def setServiceNameNull: Self = StObject.set(x, "serviceName", null)
+    
     inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     

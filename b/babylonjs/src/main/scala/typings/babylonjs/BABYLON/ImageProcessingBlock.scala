@@ -15,6 +15,11 @@ trait ImageProcessingBlock
   def color: NodeMaterialConnectionPoint = js.native
   
   /**
+    * Defines if the input should be converted to linear space (default: true)
+    */
+  var convertInputToLinearSpace: Boolean = js.native
+  
+  /**
     * Gets the output component
     */
   def output: NodeMaterialConnectionPoint = js.native

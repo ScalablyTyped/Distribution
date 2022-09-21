@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@esfx/internal-guards" : "1.0.0-pre.11"
+      "@esfx/internal-guards" : "1.0.0-pre.23"
     }
   ],
   "test-dependencies" : [
     {
-      "@esfx/internal-guards" : "1.0.0-pre.11"
+      "@esfx/internal-guards" : "1.0.0-pre.23"
     }
   ],
   "compile-devDependencies" : [

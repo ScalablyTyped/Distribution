@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("milkcocoa.MilkCocoa")
     @js.native
-    class MilkCocoa protected ()
+    open class MilkCocoa protected ()
       extends StObject
          with typings.milkcocoa.milkcocoa.MilkCocoa {
       def this(host: String) = this()

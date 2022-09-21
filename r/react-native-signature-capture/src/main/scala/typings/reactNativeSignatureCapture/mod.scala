@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("react-native-signature-capture", JSImport.Default)
   @js.native
-  class default () extends SignatureCapture
+  open class default () extends SignatureCapture
   
   trait SaveEventParams extends StObject {
     
@@ -43,7 +43,7 @@ object mod {
   
   @js.native
   trait SignatureCapture
-    extends Component[SignatureCaptureProps, js.Object, js.Any] {
+    extends Component[SignatureCaptureProps, js.Object, Any] {
     
     /**
       * When called it will clear the image on the canvas
@@ -73,7 +73,7 @@ object mod {
       *
       * @param event - the event when a drag is performed
       */
-    var onDragEvent: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+    var onDragEvent: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
     
     /**
       * Triggered when saveImage() is called, which return Base64 Encoded String and image file path.
@@ -130,7 +130,7 @@ object mod {
       
       inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      inline def setOnDragEvent(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onDragEvent", js.Any.fromFunction1(value))
+      inline def setOnDragEvent(value: /* event */ Any => Unit): Self = StObject.set(x, "onDragEvent", js.Any.fromFunction1(value))
       
       inline def setOnDragEventUndefined: Self = StObject.set(x, "onDragEvent", js.undefined)
       

@@ -22,32 +22,33 @@ trait LogEntry extends StObject {
   var jsonPayload: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[Any]
   ] = js.undefined
   
-  /** Optional. A set of user-defined (key, value) data that provides additional information about the log entry. */
+  /**
+    * Optional. A map of key, value pairs that provides additional information about the log entry. The labels can be user-defined or system-defined.User-defined labels are arbitrary key,
+    * value pairs that you can use to classify logs.System-defined labels are defined by GCP services for platform logs. They have two components - a service namespace component and the
+    * attribute name. For example: compute.googleapis.com/resource_name.Cloud Logging truncates label keys that exceed 512 B and label values that exceed 64 KB upon their associated log
+    * entry being written. The truncation is indicated by an ellipsis at the end of the character string.
+    */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[Any]
   ] = js.undefined
   
   /**
     * Required. The resource name of the log to which this log entry belongs: "projects/[PROJECT_ID]/logs/[LOG_ID]" "organizations/[ORGANIZATION_ID]/logs/[LOG_ID]"
     * "billingAccounts/[BILLING_ACCOUNT_ID]/logs/[LOG_ID]" "folders/[FOLDER_ID]/logs/[LOG_ID]" A project number may be used in place of PROJECT_ID. The project number is translated to its
     * corresponding PROJECT_ID internally and the log_name field will contain PROJECT_ID in queries and exports.[LOG_ID] must be URL-encoded within log_name. Example:
-    * "organizations/1234567890/logs/cloudresourcemanager.googleapis.com%2Factivity". [LOG_ID] must be less than 512 characters long and can only include the following characters: upper
+    * "organizations/1234567890/logs/cloudresourcemanager.googleapis.com%2Factivity".[LOG_ID] must be less than 512 characters long and can only include the following characters: upper
     * and lower case alphanumeric characters, forward-slash, underscore, hyphen, and period.For backward compatibility, if log_name begins with a forward-slash, such as /projects/...,
-    * then the log entry is ingested as usual but the forward-slash is removed. Listing the log entry will not show the leading slash and filtering for a log name with a leading slash
+    * then the log entry is ingested as usual, but the forward-slash is removed. Listing the log entry will not show the leading slash and filtering for a log name with a leading slash
     * will never return any results.
     */
   var logName: js.UndefOr[String] = js.undefined
   
-  /**
-    * Output only. Deprecated. Additional metadata about the monitored resource.Only k8s_container, k8s_pod, and k8s_node MonitoredResources have this field populated for GKE versions
-    * older than 1.12.6. For GKE versions 1.12.6 and above, the metadata field has been deprecated. The Kubernetes pod labels that used to be in metadata.userLabels will now be present in
-    * the labels field with a key prefix of k8s-pod/. The system labels that were present in the metadata.systemLabels field will no longer be available in the LogEntry.
-    */
+  /** Output only. Deprecated. This field is not used by Logging. Any value written to it is cleared. */
   var metadata: js.UndefOr[MonitoredResourceMetadata] = js.undefined
   
   /** Optional. Information about an operation associated with the log entry, if applicable. */
@@ -60,7 +61,7 @@ trait LogEntry extends StObject {
   var protoPayload: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The time the log entry was received by Logging. */
@@ -79,10 +80,19 @@ trait LogEntry extends StObject {
   var sourceLocation: js.UndefOr[LogEntrySourceLocation] = js.undefined
   
   /**
-    * Optional. The span ID within the trace associated with the log entry.For Trace spans, this is the same format that the Trace API v2 uses: a 16-character hexadecimal encoding of an
-    * 8-byte array, such as 000000000000004a.
+    * Optional. The ID of the Cloud Trace (https://cloud.google.com/trace) span associated with the current operation in which the log is being written. For example, if a span has the
+    * REST resource name of "projects/some-project/traces/some-trace/spans/some-span-id", then the span_id field is "some-span-id".A Span
+    * (https://cloud.google.com/trace/docs/reference/v2/rest/v2/projects.traces/batchWrite#Span) represents a single operation within a trace. Whereas a trace may involve multiple
+    * different microservices running on multiple different machines, a span generally corresponds to a single logical operation being performed in a single instance of a microservice on
+    * one specific machine. Spans are the nodes within the tree that is a trace.Applications that are instrumented for tracing (https://cloud.google.com/trace/docs/setup) will generally
+    * assign a new, unique span ID on each incoming request. It is also common to create and record additional spans corresponding to internal processing elements as well as issuing
+    * requests to dependencies.The span ID is expected to be a 16-character, hexadecimal encoding of an 8-byte array and should not be zero. It should be unique within the trace and
+    * should, ideally, be generated in a manner that is uniformly random.Example values: 000000000000004a 7a2190356c3fc94b 0000f00300090021 d39223e101960076
     */
   var spanId: js.UndefOr[String] = js.undefined
+  
+  /** Optional. Information indicating this LogEntry is part of a sequence of multiple log entries split from a single LogEntry. */
+  var split: js.UndefOr[LogSplit] = js.undefined
   
   /** The log entry payload, represented as a Unicode string (UTF-8). */
   var textPayload: js.UndefOr[String] = js.undefined
@@ -96,8 +106,9 @@ trait LogEntry extends StObject {
   var timestamp: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. Resource name of the trace associated with the log entry, if any. If it contains a relative resource name, the name is assumed to be relative to //tracing.googleapis.com.
-    * Example: projects/my-projectid/traces/06796866738c859f2f19b7cfb3214824
+    * Optional. The REST resource name of the trace being written to Cloud Trace (https://cloud.google.com/trace) in association with this log entry. For example, if your trace data is
+    * stored in the Cloud project "my-trace-project" and if the service that is creating the log entry receives a trace header that includes the trace ID "12345", then the service should
+    * use "projects/my-tracing-project/traces/12345".The trace field provides the link between logs and traces. By using this field, you can navigate from a log entry to a trace.
     */
   var trace: js.UndefOr[String] = js.undefined
   
@@ -128,7 +139,7 @@ object LogEntry {
     inline def setJsonPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[Any]
     ): Self = StObject.set(x, "jsonPayload", value.asInstanceOf[js.Any])
     
     inline def setJsonPayloadUndefined: Self = StObject.set(x, "jsonPayload", js.undefined)
@@ -136,7 +147,7 @@ object LogEntry {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -156,7 +167,7 @@ object LogEntry {
     inline def setProtoPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogEntry & TopLevel[Any]
     ): Self = StObject.set(x, "protoPayload", value.asInstanceOf[js.Any])
     
     inline def setProtoPayloadUndefined: Self = StObject.set(x, "protoPayload", js.undefined)
@@ -180,6 +191,10 @@ object LogEntry {
     inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
     
     inline def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
+    
+    inline def setSplit(value: LogSplit): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+    
+    inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
     
     inline def setTextPayload(value: String): Self = StObject.set(x, "textPayload", value.asInstanceOf[js.Any])
     

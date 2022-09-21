@@ -10,10 +10,10 @@ calendar generator
 | ------------------ | :-------------: |
 | Full name          | calendar |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 28 |
-| # downloads        | 827032 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 46725.333333333336 |
+| # stars            | 123.0 |
 
 ## Links
 - [Homepage](https://github.com/ramalho/calendar.js#readme)

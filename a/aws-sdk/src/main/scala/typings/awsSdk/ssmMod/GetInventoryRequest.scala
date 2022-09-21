@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetInventoryRequest extends StObject {
   
   /**
-    * Returns counts of inventory types based on one or more expressions. For example, if you aggregate by using an expression that uses the AWS:InstanceInformation.PlatformType type, you can see a count of how many Windows and Linux instances exist in your inventoried fleet.
+    * Returns counts of inventory types based on one or more expressions. For example, if you aggregate by using an expression that uses the AWS:InstanceInformation.PlatformType type, you can see a count of how many Windows and Linux managed nodes exist in your inventoried fleet.
     */
   var Aggregators: js.UndefOr[InventoryAggregatorList] = js.undefined
   
@@ -44,13 +44,13 @@ object GetInventoryRequest {
     
     inline def setAggregatorsUndefined: Self = StObject.set(x, "Aggregators", js.undefined)
     
-    inline def setAggregatorsVarargs(value: InventoryAggregator*): Self = StObject.set(x, "Aggregators", js.Array(value :_*))
+    inline def setAggregatorsVarargs(value: InventoryAggregator*): Self = StObject.set(x, "Aggregators", js.Array(value*))
     
     inline def setFilters(value: InventoryFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: InventoryFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: InventoryFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -64,6 +64,6 @@ object GetInventoryRequest {
     
     inline def setResultAttributesUndefined: Self = StObject.set(x, "ResultAttributes", js.undefined)
     
-    inline def setResultAttributesVarargs(value: ResultAttribute*): Self = StObject.set(x, "ResultAttributes", js.Array(value :_*))
+    inline def setResultAttributesVarargs(value: ResultAttribute*): Self = StObject.set(x, "ResultAttributes", js.Array(value*))
   }
 }

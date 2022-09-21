@@ -11,9 +11,9 @@ Lazy Object Streaming Pipeline for JavaScript - inspired by the Java 8 Streams A
 | Full name          | streamjs |
 | Keywords           | functional, collection, pipeline, stream, lazy, utils, java, array |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 2380 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 675.6666666666666 |
+| # stars            | 861.0 |
 
 ## Links
 - [Homepage](https://github.com/winterbe/streamjs)

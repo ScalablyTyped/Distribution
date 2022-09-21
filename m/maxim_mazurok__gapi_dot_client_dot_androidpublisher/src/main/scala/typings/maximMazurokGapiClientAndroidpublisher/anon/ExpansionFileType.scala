@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAndroidpublisher.anon
 
-import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.ExpansionFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ trait ExpansionFileType extends StObject {
   /** Identifier of the edit. */
   var editId: String
   
-  /** The file type of the file configuration which is being read or modified. */
+  /** The file type of the expansion file configuration which is being updated. */
   var expansionFileType: String
   
   /** Selector specifying which fields to include in a partial response. */
@@ -47,9 +46,6 @@ trait ExpansionFileType extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: ExpansionFile
-  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -58,14 +54,8 @@ trait ExpansionFileType extends StObject {
 }
 object ExpansionFileType {
   
-  inline def apply(
-    apkVersionCode: Double,
-    editId: String,
-    expansionFileType: String,
-    packageName: String,
-    resource: ExpansionFile
-  ): ExpansionFileType = {
-    val __obj = js.Dynamic.literal(apkVersionCode = apkVersionCode.asInstanceOf[js.Any], editId = editId.asInstanceOf[js.Any], expansionFileType = expansionFileType.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(apkVersionCode: Double, editId: String, expansionFileType: String, packageName: String): ExpansionFileType = {
+    val __obj = js.Dynamic.literal(apkVersionCode = apkVersionCode.asInstanceOf[js.Any], editId = editId.asInstanceOf[js.Any], expansionFileType = expansionFileType.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpansionFileType]
   }
   
@@ -114,8 +104,6 @@ object ExpansionFileType {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: ExpansionFile): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

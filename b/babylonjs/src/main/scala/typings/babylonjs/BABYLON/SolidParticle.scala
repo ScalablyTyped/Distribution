@@ -7,10 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SolidParticle extends StObject {
   
-  /**
-    * @hidden Particle BoundingInfo object (Internal use)
-    */
-  var _boundingInfo: BoundingInfo = js.native
+  /* private */ var _boundingInfo: Any = js.native
   
   /**
     * @hidden Internal global position in the SPS.
@@ -83,10 +80,22 @@ trait SolidParticle extends StObject {
   var cullingStrategy: Double = js.native
   
   /**
+    * Particle BoundingInfo object
+    * @returns a BoundingInfo
+    */
+  def getBoundingInfo(): BoundingInfo = js.native
+  
+  /**
     * get the rotation matrix of the particle
+    * @param m
     * @hidden
     */
   def getRotationMatrix(m: Matrix): Unit = js.native
+  
+  /**
+    * Returns true if there is already a bounding info
+    */
+  def hasBoundingInfo: Boolean = js.native
   
   /**
     * particle identifier
@@ -149,7 +158,7 @@ trait SolidParticle extends StObject {
   /**
     * Custom object or properties.
     */
-  var props: Nullable[js.Any] = js.native
+  var props: Nullable[Any] = js.native
   
   /**
     * Legacy support, changed quaternion to rotationQuaternion

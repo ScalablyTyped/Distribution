@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-array-sorted" : "2.0.0"
+      "is-array-sorted" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "is-array-sorted" : "2.0.0"
+      "is-array-sorted" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

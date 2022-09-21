@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class IoTThingsGraph ()
+open class IoTThingsGraph ()
   extends typings.awsSdk.mod.IoTThingsGraph {
   def this(options: ClientConfiguration) = this()
 }

@@ -66,7 +66,7 @@ trait PlusMapsMarker extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var onDrag: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var onDrag: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.native
   
   /**
     * 用户点击地图标点事件
@@ -115,7 +115,7 @@ trait PlusMapsMarker extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def setIcons(): Unit = js.native
-  def setIcons(icons: js.Array[js.Any]): Unit = js.native
+  def setIcons(icons: js.Array[Any]): Unit = js.native
   
   /**
     * 设置标点上显示的文本标注

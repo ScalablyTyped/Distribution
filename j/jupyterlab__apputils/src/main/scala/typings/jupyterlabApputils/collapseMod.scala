@@ -12,31 +12,31 @@ object collapseMod {
   
   @JSImport("@jupyterlab/apputils/lib/collapse", "Collapse")
   @js.native
-  class Collapse[T /* <: Widget */] protected () extends Widget {
+  open class Collapse[T /* <: Widget */] protected () extends Widget {
     def this(options: IOptions[T]) = this()
     
-    /* private */ var _collapse: js.Any = js.native
+    /* private */ var _collapse: Any = js.native
     
-    /* private */ var _collapseChanged: js.Any = js.native
+    /* private */ var _collapseChanged: Any = js.native
     
-    /* private */ var _collapsed: js.Any = js.native
+    /* private */ var _collapsed: Any = js.native
     
-    /* private */ var _content: js.Any = js.native
+    /* private */ var _content: Any = js.native
     
-    /* private */ var _evtClick: js.Any = js.native
+    /* private */ var _evtClick: Any = js.native
     
-    /* private */ var _header: js.Any = js.native
+    /* private */ var _header: Any = js.native
     
     /**
       * Handle the `changed` signal of a title object.
       */
-    /* private */ var _onTitleChanged: js.Any = js.native
+    /* private */ var _onTitleChanged: Any = js.native
     
-    /* private */ var _setHeader: js.Any = js.native
+    /* private */ var _setHeader: Any = js.native
     
-    /* private */ var _uncollapse: js.Any = js.native
+    /* private */ var _uncollapse: Any = js.native
     
-    /* private */ var _widget: js.Any = js.native
+    /* private */ var _widget: Any = js.native
     
     /**
       * A signal for when the widget collapse state changes.

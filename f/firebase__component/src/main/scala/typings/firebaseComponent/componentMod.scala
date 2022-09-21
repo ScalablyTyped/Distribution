@@ -4,17 +4,19 @@ import typings.firebaseComponent.componentContainerMod.ComponentContainer
 import typings.firebaseComponent.typesMod.ComponentType
 import typings.firebaseComponent.typesMod.Dictionary
 import typings.firebaseComponent.typesMod.InstanceFactory
+import typings.firebaseComponent.typesMod.InstanceFactoryOptions
 import typings.firebaseComponent.typesMod.InstantiationMode
 import typings.firebaseComponent.typesMod.Name
+import typings.firebaseComponent.typesMod.onInstanceCreatedCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
   
-  @JSImport("@firebase/component/dist/src/component", "Component")
+  @JSImport("@firebase/component/dist/esm/src/component", "Component")
   @js.native
-  class Component[T /* <: Name */] protected () extends StObject {
+  open class Component[T /* <: Name */] protected () extends StObject {
     /**
       *
       * @param name The public service name, e.g. app, auth, firestore, database
@@ -23,8 +25,7 @@ object componentMod {
       */
     def this(name: T, instanceFactory: InstanceFactory[T], `type`: ComponentType) = this()
     
-    def instanceFactory(container: ComponentContainer): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any = js.native
-    def instanceFactory(container: ComponentContainer, instanceIdentifier: String): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[T] */ js.Any = js.native
+    def instanceFactory(container: ComponentContainer, options: InstanceFactoryOptions): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/component.@firebase/component/dist/esm/src/types.NameServiceMapping[T] */ js.Any = js.native
     
     var instantiationMode: InstantiationMode = js.native
     
@@ -32,10 +33,14 @@ object componentMod {
     
     val name: T = js.native
     
+    var onInstanceCreated: onInstanceCreatedCallback[T] | Null = js.native
+    
     /**
       * Properties to be added to the service namespace
       */
     var serviceProps: Dictionary = js.native
+    
+    def setInstanceCreatedCallback(callback: onInstanceCreatedCallback[T]): this.type = js.native
     
     def setInstantiationMode(mode: InstantiationMode): this.type = js.native
     

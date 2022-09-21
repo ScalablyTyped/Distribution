@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "EmployeeWage")
 @js.native
-class EmployeeWage () extends StObject {
+open class EmployeeWage () extends StObject {
   
   /**
     * The `Employee` that this wage is assigned to.

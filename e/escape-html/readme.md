@@ -10,10 +10,10 @@ Escape string for use in HTML
 | ------------------ | :-------------: |
 | Full name          | escape-html |
 | Keywords           | escape, html, utility |
-| # releases         | 0 |
-| # dependents       | 927 |
-| # downloads        | 675513091 |
-| # stars            | 37 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.00135354E8 |
+| # stars            | 381.0 |
 
 ## Links
 - [Homepage](https://github.com/component/escape-html)

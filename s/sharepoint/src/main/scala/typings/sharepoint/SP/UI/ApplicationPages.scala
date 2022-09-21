@@ -91,15 +91,15 @@ object ApplicationPages {
   object BaseSelectorComponent {
     
     inline def apply(
-      get_callback: () => js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit],
+      get_callback: () => js.Function2[/* sender */ Any, /* e */ EventArgs, Unit],
       get_componentType: () => SelectorType,
       get_scopeKey: () => String,
-      get_selectedEntities: () => js.Any,
+      get_selectedEntities: () => Any,
       removeEntity: ResolveEntity => Unit,
       revertTo: ResolveEntity => Unit,
       setEntity: ResolveEntity => Unit,
-      set_callback: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit] => Unit,
-      set_selectedEntities: js.Any => Unit
+      set_callback: js.Function2[/* sender */ Any, /* e */ EventArgs, Unit] => Unit,
+      set_selectedEntities: Any => Unit
     ): BaseSelectorComponent = {
       val __obj = js.Dynamic.literal(get_callback = js.Any.fromFunction0(get_callback), get_componentType = js.Any.fromFunction0(get_componentType), get_scopeKey = js.Any.fromFunction0(get_scopeKey), get_selectedEntities = js.Any.fromFunction0(get_selectedEntities), removeEntity = js.Any.fromFunction1(removeEntity), revertTo = js.Any.fromFunction1(revertTo), setEntity = js.Any.fromFunction1(setEntity), set_callback = js.Any.fromFunction1(set_callback), set_selectedEntities = js.Any.fromFunction1(set_selectedEntities))
       __obj.asInstanceOf[BaseSelectorComponent]
@@ -116,7 +116,7 @@ object ApplicationPages {
       scopeKey: String,
       people: Boolean,
       resource: Boolean,
-      handler: js.Function2[/* sender */ js.Any, /* selection */ SelectorSelectionEventArgs, Unit]
+      handler: js.Function2[/* sender */ Any, /* selection */ SelectorSelectionEventArgs, Unit]
     ): Unit
     
     def getSelector(`type`: SelectorType, scopeKey: String): ISelectorComponent
@@ -130,14 +130,14 @@ object ApplicationPages {
   object CalendarSelector {
     
     inline def apply(
-      addHandler: (String, Boolean, Boolean, js.Function2[/* sender */ js.Any, /* selection */ SelectorSelectionEventArgs, Unit]) => Unit,
+      addHandler: (String, Boolean, Boolean, js.Function2[/* sender */ Any, /* selection */ SelectorSelectionEventArgs, Unit]) => Unit,
       add_disposing: js.Function => Unit,
       add_propertyChanged: js.Function => Unit,
       beginUpdate: () => Unit,
       dispose: () => Unit,
       endUpdate: () => Unit,
       getSelector: (SelectorType, String) => ISelectorComponent,
-      get_events: () => js.Any,
+      get_events: () => Any,
       get_id: () => String,
       get_isInitialized: () => Boolean,
       get_isUpdating: () => Boolean,
@@ -158,7 +158,7 @@ object ApplicationPages {
     extension [Self <: CalendarSelector](x: Self) {
       
       inline def setAddHandler(
-        value: (String, Boolean, Boolean, js.Function2[/* sender */ js.Any, /* selection */ SelectorSelectionEventArgs, Unit]) => Unit
+        value: (String, Boolean, Boolean, js.Function2[/* sender */ Any, /* selection */ SelectorSelectionEventArgs, Unit]) => Unit
       ): Self = StObject.set(x, "addHandler", js.Any.fromFunction4(value))
       
       inline def setGetSelector(value: (SelectorType, String) => ISelectorComponent): Self = StObject.set(x, "getSelector", js.Any.fromFunction2(value))
@@ -238,9 +238,9 @@ object ApplicationPages {
   object ClientPeoplePickerQueryParameters {
     
     inline def apply(
-      customFromJson: js.Any => Boolean,
+      customFromJson: Any => Boolean,
       customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-      fromJson: js.Any => Unit,
+      fromJson: Any => Unit,
       get_allUrlZones: () => Boolean,
       get_allowEmailAddresses: () => Boolean,
       get_allowMultipleEntities: () => Boolean,
@@ -410,13 +410,13 @@ object ApplicationPages {
   
   trait ISelectorComponent extends StObject {
     
-    def get_callback(): js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]
+    def get_callback(): js.Function2[/* sender */ Any, /* e */ EventArgs, Unit]
     
     def get_componentType(): SelectorType
     
     def get_scopeKey(): String
     
-    def get_selectedEntities(): js.Any
+    def get_selectedEntities(): Any
     
     def removeEntity(ent: ResolveEntity): Unit
     
@@ -424,22 +424,22 @@ object ApplicationPages {
     
     def setEntity(ent: ResolveEntity): Unit
     
-    def set_callback(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]): Unit
+    def set_callback(value: js.Function2[/* sender */ Any, /* e */ EventArgs, Unit]): Unit
     
-    def set_selectedEntities(value: js.Any): Unit
+    def set_selectedEntities(value: Any): Unit
   }
   object ISelectorComponent {
     
     inline def apply(
-      get_callback: () => js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit],
+      get_callback: () => js.Function2[/* sender */ Any, /* e */ EventArgs, Unit],
       get_componentType: () => SelectorType,
       get_scopeKey: () => String,
-      get_selectedEntities: () => js.Any,
+      get_selectedEntities: () => Any,
       removeEntity: ResolveEntity => Unit,
       revertTo: ResolveEntity => Unit,
       setEntity: ResolveEntity => Unit,
-      set_callback: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit] => Unit,
-      set_selectedEntities: js.Any => Unit
+      set_callback: js.Function2[/* sender */ Any, /* e */ EventArgs, Unit] => Unit,
+      set_selectedEntities: Any => Unit
     ): ISelectorComponent = {
       val __obj = js.Dynamic.literal(get_callback = js.Any.fromFunction0(get_callback), get_componentType = js.Any.fromFunction0(get_componentType), get_scopeKey = js.Any.fromFunction0(get_scopeKey), get_selectedEntities = js.Any.fromFunction0(get_selectedEntities), removeEntity = js.Any.fromFunction1(removeEntity), revertTo = js.Any.fromFunction1(revertTo), setEntity = js.Any.fromFunction1(setEntity), set_callback = js.Any.fromFunction1(set_callback), set_selectedEntities = js.Any.fromFunction1(set_selectedEntities))
       __obj.asInstanceOf[ISelectorComponent]
@@ -447,13 +447,13 @@ object ApplicationPages {
     
     extension [Self <: ISelectorComponent](x: Self) {
       
-      inline def setGet_callback(value: () => js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit]): Self = StObject.set(x, "get_callback", js.Any.fromFunction0(value))
+      inline def setGet_callback(value: () => js.Function2[/* sender */ Any, /* e */ EventArgs, Unit]): Self = StObject.set(x, "get_callback", js.Any.fromFunction0(value))
       
       inline def setGet_componentType(value: () => SelectorType): Self = StObject.set(x, "get_componentType", js.Any.fromFunction0(value))
       
       inline def setGet_scopeKey(value: () => String): Self = StObject.set(x, "get_scopeKey", js.Any.fromFunction0(value))
       
-      inline def setGet_selectedEntities(value: () => js.Any): Self = StObject.set(x, "get_selectedEntities", js.Any.fromFunction0(value))
+      inline def setGet_selectedEntities(value: () => Any): Self = StObject.set(x, "get_selectedEntities", js.Any.fromFunction0(value))
       
       inline def setRemoveEntity(value: ResolveEntity => Unit): Self = StObject.set(x, "removeEntity", js.Any.fromFunction1(value))
       
@@ -461,9 +461,9 @@ object ApplicationPages {
       
       inline def setSetEntity(value: ResolveEntity => Unit): Self = StObject.set(x, "setEntity", js.Any.fromFunction1(value))
       
-      inline def setSet_callback(value: js.Function2[/* sender */ js.Any, /* e */ EventArgs, Unit] => Unit): Self = StObject.set(x, "set_callback", js.Any.fromFunction1(value))
+      inline def setSet_callback(value: js.Function2[/* sender */ Any, /* e */ EventArgs, Unit] => Unit): Self = StObject.set(x, "set_callback", js.Any.fromFunction1(value))
       
-      inline def setSet_selectedEntities(value: js.Any => Unit): Self = StObject.set(x, "set_selectedEntities", js.Any.fromFunction1(value))
+      inline def setSet_selectedEntities(value: Any => Unit): Self = StObject.set(x, "set_selectedEntities", js.Any.fromFunction1(value))
     }
   }
   
@@ -536,7 +536,7 @@ object ApplicationPages {
       
       inline def setMembers(value: js.Array[ResolveEntity]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      inline def setMembersVarargs(value: ResolveEntity*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: ResolveEntity*): Self = StObject.set(x, "members", js.Array(value*))
       
       inline def setNeedResolve(value: Boolean): Self = StObject.set(x, "needResolve", value.asInstanceOf[js.Any])
       
@@ -554,18 +554,18 @@ object ApplicationPages {
     extends StObject
        with EventArgs {
     
-    def get_entities(): js.Any
+    def get_entities(): Any
   }
   object SelectorSelectionEventArgs {
     
-    inline def apply(Empty: EventArgs, get_entities: () => js.Any): SelectorSelectionEventArgs = {
+    inline def apply(Empty: EventArgs, get_entities: () => Any): SelectorSelectionEventArgs = {
       val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any], get_entities = js.Any.fromFunction0(get_entities))
       __obj.asInstanceOf[SelectorSelectionEventArgs]
     }
     
     extension [Self <: SelectorSelectionEventArgs](x: Self) {
       
-      inline def setGet_entities(value: () => js.Any): Self = StObject.set(x, "get_entities", js.Any.fromFunction0(value))
+      inline def setGet_entities(value: () => Any): Self = StObject.set(x, "get_entities", js.Any.fromFunction0(value))
     }
   }
 }

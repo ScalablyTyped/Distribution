@@ -1,6 +1,7 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.anon.EnablePhysics
+import typings.babylonjs.anon.CustomMeshes
+import typings.babylonjs.anon.Invisible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IWebXRHandTrackingOptions extends StObject {
   
   /**
-    * Configuration object for the joint meshes
+    * Configuration object for the hand meshes.
     */
-  var jointMeshes: js.UndefOr[EnablePhysics] = js.undefined
+  var handMeshes: js.UndefOr[CustomMeshes] = js.undefined
+  
+  /**
+    * Configuration object for the joint meshes.
+    */
+  var jointMeshes: js.UndefOr[Invisible] = js.undefined
   
   /**
     * The xrInput that will be used as source for new hands
@@ -26,7 +32,11 @@ object IWebXRHandTrackingOptions {
   
   extension [Self <: IWebXRHandTrackingOptions](x: Self) {
     
-    inline def setJointMeshes(value: EnablePhysics): Self = StObject.set(x, "jointMeshes", value.asInstanceOf[js.Any])
+    inline def setHandMeshes(value: CustomMeshes): Self = StObject.set(x, "handMeshes", value.asInstanceOf[js.Any])
+    
+    inline def setHandMeshesUndefined: Self = StObject.set(x, "handMeshes", js.undefined)
+    
+    inline def setJointMeshes(value: Invisible): Self = StObject.set(x, "jointMeshes", value.asInstanceOf[js.Any])
     
     inline def setJointMeshesUndefined: Self = StObject.set(x, "jointMeshes", js.undefined)
     

@@ -6,27 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "TextValidator")
 @js.native
-class TextValidator () extends SurveyValidator {
-  def this(minLength: Double) = this()
-  def this(minLength: Double, maxLength: Double) = this()
-  def this(minLength: Unit, maxLength: Double) = this()
-  def this(minLength: Double, maxLength: Double, allowDigits: Boolean) = this()
-  def this(minLength: Double, maxLength: Unit, allowDigits: Boolean) = this()
-  def this(minLength: Unit, maxLength: Double, allowDigits: Boolean) = this()
-  def this(minLength: Unit, maxLength: Unit, allowDigits: Boolean) = this()
+open class TextValidator () extends SurveyValidator {
   
-  /**
+  /*
     * The allowDigits property.
     */
-  var allowDigits: Boolean = js.native
+  def allowDigits: Boolean = js.native
+  def allowDigits_=(`val`: Boolean): Unit = js.native
   
-  /**
+  /*
     * The maxLength property.
     */
-  var maxLength: Double = js.native
+  def maxLength: Double = js.native
+  def maxLength_=(`val`: Double): Unit = js.native
   
-  /**
+  /*
     * The minLength property.
     */
-  var minLength: Double = js.native
+  def minLength: Double = js.native
+  def minLength_=(`val`: Double): Unit = js.native
 }

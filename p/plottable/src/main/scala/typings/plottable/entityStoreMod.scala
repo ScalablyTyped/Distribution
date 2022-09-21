@@ -11,13 +11,13 @@ object entityStoreMod {
   
   @JSImport("plottable/build/src/utils/entityStore", "EntityStore")
   @js.native
-  class EntityStore[T /* <: IPositionedEntity */] ()
+  open class EntityStore[T /* <: IPositionedEntity */] ()
     extends StObject
        with IEntityStore[T] {
     
-    /* private */ var _entities: js.Any = js.native
+    /* private */ var _entities: Any = js.native
     
-    /* private */ var _rtree: js.Any = js.native
+    /* private */ var _rtree: Any = js.native
   }
   
   @js.native

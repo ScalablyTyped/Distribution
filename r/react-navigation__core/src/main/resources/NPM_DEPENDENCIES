@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-navigation/core" : "5.14.4"
+      "@react-navigation/core" : "6.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-navigation/core" : "5.14.4"
+      "@react-navigation/core" : "6.4.0"
     }
   ],
   "compile-devDependencies" : [

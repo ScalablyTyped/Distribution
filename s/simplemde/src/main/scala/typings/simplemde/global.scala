@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("SimpleMDE")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.simplemde.mod.^ {
       def this(options: Options) = this()
     }

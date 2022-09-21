@@ -38,7 +38,7 @@ object DrawerHeaderProps {
     
     inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    inline def setImageVarargs(value: Image*): Self = StObject.set(x, "image", js.Array(value :_*))
+    inline def setImageVarargs(value: Image*): Self = StObject.set(x, "image", js.Array(value*))
     
     inline def setStyle(value: ContainerContentContainer): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

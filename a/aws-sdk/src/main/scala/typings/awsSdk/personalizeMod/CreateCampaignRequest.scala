@@ -14,7 +14,7 @@ trait CreateCampaignRequest extends StObject {
   /**
     * Specifies the requested minimum provisioned transactions (recommendations) per second that Amazon Personalize will support.
     */
-  var minProvisionedTPS: TransactionsPerSecond
+  var minProvisionedTPS: js.UndefOr[TransactionsPerSecond] = js.undefined
   
   /**
     * A name for the new campaign. The campaign name must be unique within your account.
@@ -25,11 +25,16 @@ trait CreateCampaignRequest extends StObject {
     * The Amazon Resource Name (ARN) of the solution version to deploy.
     */
   var solutionVersionArn: Arn
+  
+  /**
+    * A list of tags to apply to the campaign.
+    */
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object CreateCampaignRequest {
   
-  inline def apply(minProvisionedTPS: TransactionsPerSecond, name: Name, solutionVersionArn: Arn): CreateCampaignRequest = {
-    val __obj = js.Dynamic.literal(minProvisionedTPS = minProvisionedTPS.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], solutionVersionArn = solutionVersionArn.asInstanceOf[js.Any])
+  inline def apply(name: Name, solutionVersionArn: Arn): CreateCampaignRequest = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], solutionVersionArn = solutionVersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCampaignRequest]
   }
   
@@ -41,8 +46,16 @@ object CreateCampaignRequest {
     
     inline def setMinProvisionedTPS(value: TransactionsPerSecond): Self = StObject.set(x, "minProvisionedTPS", value.asInstanceOf[js.Any])
     
+    inline def setMinProvisionedTPSUndefined: Self = StObject.set(x, "minProvisionedTPS", js.undefined)
+    
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setSolutionVersionArn(value: Arn): Self = StObject.set(x, "solutionVersionArn", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

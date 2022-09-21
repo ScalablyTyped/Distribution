@@ -6,12 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NotificationEventMap extends StObject {
   
+  /* standard dom */
   var click: Event
   
+  /* standard dom */
   var close: Event
   
+  /* standard dom */
   var error: Event
   
+  /* standard dom */
   var show: Event
 }
 object NotificationEventMap {

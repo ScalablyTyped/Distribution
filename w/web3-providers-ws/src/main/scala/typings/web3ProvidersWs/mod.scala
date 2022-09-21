@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("web3-providers-ws", "WebsocketProvider")
   @js.native
-  class WebsocketProvider protected () extends WebsocketProviderBase {
+  open class WebsocketProvider protected () extends WebsocketProviderBase {
     def this(host: String) = this()
     def this(host: String, options: WebsocketProviderOptions) = this()
   }

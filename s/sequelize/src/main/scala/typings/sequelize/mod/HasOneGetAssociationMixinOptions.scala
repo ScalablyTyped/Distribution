@@ -13,7 +13,7 @@ trait HasOneGetAssociationMixinOptions extends StObject {
   /**
     * Apply a scope on the related model, or remove its default scope by passing false.
     */
-  var scope: js.UndefOr[String | Boolean] = js.undefined
+  var scope: js.UndefOr[String | Boolean | Null] = js.undefined
 }
 object HasOneGetAssociationMixinOptions {
   
@@ -25,6 +25,8 @@ object HasOneGetAssociationMixinOptions {
   extension [Self <: HasOneGetAssociationMixinOptions](x: Self) {
     
     inline def setScope(value: String | Boolean): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeNull: Self = StObject.set(x, "scope", null)
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }

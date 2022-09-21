@@ -9,7 +9,7 @@ trait GetRelationalDatabaseMasterUserPasswordResult extends StObject {
   /**
     * The timestamp when the specified version of the master user password was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The master user password for the password version specified.
@@ -25,7 +25,7 @@ object GetRelationalDatabaseMasterUserPasswordResult {
   
   extension [Self <: GetRelationalDatabaseMasterUserPasswordResult](x: Self) {
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     

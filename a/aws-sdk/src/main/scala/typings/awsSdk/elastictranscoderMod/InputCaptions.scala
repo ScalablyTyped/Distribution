@@ -29,7 +29,7 @@ object InputCaptions {
     
     inline def setCaptionSourcesUndefined: Self = StObject.set(x, "CaptionSources", js.undefined)
     
-    inline def setCaptionSourcesVarargs(value: CaptionSource*): Self = StObject.set(x, "CaptionSources", js.Array(value :_*))
+    inline def setCaptionSourcesVarargs(value: CaptionSource*): Self = StObject.set(x, "CaptionSources", js.Array(value*))
     
     inline def setMergePolicy(value: CaptionMergePolicy): Self = StObject.set(x, "MergePolicy", value.asInstanceOf[js.Any])
     

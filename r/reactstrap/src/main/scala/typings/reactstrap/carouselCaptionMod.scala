@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object carouselCaptionMod {
   
-  @JSImport("reactstrap/lib/CarouselCaption", JSImport.Default)
+  @JSImport("reactstrap/types/lib/CarouselCaption", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CarouselCaptionProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CarouselCaptionProps, js.Object, Any]
   
-  type CarouselCaption = Component[CarouselCaptionProps, js.Object, js.Any]
+  type CarouselCaption = Component[CarouselCaptionProps, js.Object, Any]
   
   trait CarouselCaptionProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var captionHeader: js.UndefOr[ReactNode] = js.undefined
     

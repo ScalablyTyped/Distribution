@@ -29,6 +29,6 @@ object BatchUpdateUserRequest {
     
     inline def setUpdateUserRequestItems(value: UpdateUserRequestItemList): Self = StObject.set(x, "UpdateUserRequestItems", value.asInstanceOf[js.Any])
     
-    inline def setUpdateUserRequestItemsVarargs(value: UpdateUserRequestItem*): Self = StObject.set(x, "UpdateUserRequestItems", js.Array(value :_*))
+    inline def setUpdateUserRequestItemsVarargs(value: UpdateUserRequestItem*): Self = StObject.set(x, "UpdateUserRequestItems", js.Array(value*))
   }
 }

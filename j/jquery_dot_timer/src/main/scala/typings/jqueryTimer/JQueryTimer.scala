@@ -33,7 +33,7 @@ trait JQueryTimer extends StObject {
   
   var remaining: Number = js.native
   
-  def set(x: js.Any): js.Object = js.native
+  def set(x: Any): js.Object = js.native
   
   def stop(): js.Object = js.native
   

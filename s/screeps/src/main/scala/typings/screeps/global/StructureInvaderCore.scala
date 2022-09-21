@@ -3,6 +3,7 @@ package typings.screeps.global
 import typings.screeps.Id
 import typings.screeps.RoomObjectEffect
 import typings.screeps.ScreepsReturnCode
+import typings.screeps.Spawning
 import typings.screeps.StructureInvaderCoreConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("StructureInvaderCore")
 @js.native
-class StructureInvaderCore protected ()
+open class StructureInvaderCore protected ()
   extends StObject
      with typings.screeps.StructureInvaderCore {
   def this(id: Id[typings.screeps.StructureInvaderCore]) = this()
@@ -84,6 +85,12 @@ class StructureInvaderCore protected ()
   /* CompleteClass */
   @JSName("room")
   var room_Structure: typings.screeps.Room = js.native
+  
+  /**
+    * If the core is in process of spawning a new creep, this object will contain a `StructureSpawn.Spawning` object, or `null` otherwise.
+    */
+  /* CompleteClass */
+  var spawning: Spawning | Null = js.native
   
   /**
     * One of the STRUCTURE_* constants.

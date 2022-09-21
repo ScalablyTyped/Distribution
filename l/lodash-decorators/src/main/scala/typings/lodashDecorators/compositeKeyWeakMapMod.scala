@@ -8,14 +8,14 @@ object compositeKeyWeakMapMod {
   
   @JSImport("lodash-decorators/utils/CompositeKeyWeakMap", "CompositeKeyWeakMap")
   @js.native
-  class CompositeKeyWeakMap[T] () extends StObject {
+  open class CompositeKeyWeakMap[T] () extends StObject {
     
-    /* private */ var _weakMap: js.Any = js.native
+    /* private */ var _weakMap: Any = js.native
     
-    def get(keys: js.Array[js.Any]): T = js.native
+    def get(keys: js.Array[Any]): T = js.native
     
-    def has(keys: js.Array[js.Any]): Boolean = js.native
+    def has(keys: js.Array[Any]): Boolean = js.native
     
-    def set(keys: js.Array[js.Any], value: T): Unit = js.native
+    def set(keys: js.Array[Any], value: T): Unit = js.native
   }
 }

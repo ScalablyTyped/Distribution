@@ -1,6 +1,5 @@
 package typings.peerjsJsBinarypack
 
-import typings.std.ArrayBuffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def pack(data: js.Any): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(data.asInstanceOf[js.Any]).asInstanceOf[Blob]
+  inline def pack(data: Any): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(data.asInstanceOf[js.Any]).asInstanceOf[Blob]
   
-  inline def unpack(data: ArrayBuffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def unpack(data: js.typedarray.ArrayBuffer): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(data.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

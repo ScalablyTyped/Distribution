@@ -19,7 +19,7 @@ trait EventAttachment extends StObject {
     */
   var fileUrl: js.UndefOr[String] = js.undefined
   
-  /** URL link to the attachment's icon. Read-only. */
+  /** URL link to the attachment's icon. This field can only be modified for custom third-party attachments. */
   var iconLink: js.UndefOr[String] = js.undefined
   
   /** Internet media type (MIME type) of the attachment. */

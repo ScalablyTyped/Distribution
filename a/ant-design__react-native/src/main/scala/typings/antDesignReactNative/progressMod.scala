@@ -17,7 +17,7 @@ object progressMod {
   
   @JSImport("@ant-design/react-native/lib/progress", JSImport.Default)
   @js.native
-  class default protected () extends Progress {
+  open class default protected () extends Progress {
     def this(props: ProgressProps) = this()
   }
   /* static members */
@@ -34,8 +34,7 @@ object progressMod {
   }
   
   @js.native
-  trait Progress
-    extends Component[ProgressProps, js.Any, js.Any] {
+  trait Progress extends Component[ProgressProps, Any, Any] {
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MProgress(nextProps: ProgressProps): Unit = js.native
@@ -46,8 +45,8 @@ object progressMod {
     def getWidth(): Double = js.native
     def getWidth(percent: Double): Double = js.native
     
-    def normalPercent(): js.Any = js.native
-    def normalPercent(percent: Double): js.Any = js.native
+    def normalPercent(): Any = js.native
+    def normalPercent(percent: Double): Any = js.native
     
     def onLayout(e: LayoutChangeEvent): Unit = js.native
   }

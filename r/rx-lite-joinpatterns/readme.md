@@ -11,9 +11,9 @@ Lightweight library with join pattern functions for composing asynchronous and e
 | Full name          | rx-lite-joinpatterns |
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 758 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 97.33333333333333 |
+| # stars            | 19624.0 |
 
 ## Links
 - [Homepage](https://github.com/Reactive-Extensions/RxJS)

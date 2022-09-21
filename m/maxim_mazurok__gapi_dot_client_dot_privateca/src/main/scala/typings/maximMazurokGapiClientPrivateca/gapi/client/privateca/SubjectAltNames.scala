@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SubjectAltNames extends StObject {
   
-  /** Contains additional subject alternative name values. */
+  /** Contains additional subject alternative name values. For each custom_san, the `value` field must contain an ASN.1 encoded UTF8String. */
   var customSans: js.UndefOr[js.Array[X509Extension]] = js.undefined
   
   /** Contains only valid, fully-qualified host names. */
@@ -34,30 +34,30 @@ object SubjectAltNames {
     
     inline def setCustomSansUndefined: Self = StObject.set(x, "customSans", js.undefined)
     
-    inline def setCustomSansVarargs(value: X509Extension*): Self = StObject.set(x, "customSans", js.Array(value :_*))
+    inline def setCustomSansVarargs(value: X509Extension*): Self = StObject.set(x, "customSans", js.Array(value*))
     
     inline def setDnsNames(value: js.Array[String]): Self = StObject.set(x, "dnsNames", value.asInstanceOf[js.Any])
     
     inline def setDnsNamesUndefined: Self = StObject.set(x, "dnsNames", js.undefined)
     
-    inline def setDnsNamesVarargs(value: String*): Self = StObject.set(x, "dnsNames", js.Array(value :_*))
+    inline def setDnsNamesVarargs(value: String*): Self = StObject.set(x, "dnsNames", js.Array(value*))
     
     inline def setEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
     
     inline def setEmailAddressesUndefined: Self = StObject.set(x, "emailAddresses", js.undefined)
     
-    inline def setEmailAddressesVarargs(value: String*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
+    inline def setEmailAddressesVarargs(value: String*): Self = StObject.set(x, "emailAddresses", js.Array(value*))
     
     inline def setIpAddresses(value: js.Array[String]): Self = StObject.set(x, "ipAddresses", value.asInstanceOf[js.Any])
     
     inline def setIpAddressesUndefined: Self = StObject.set(x, "ipAddresses", js.undefined)
     
-    inline def setIpAddressesVarargs(value: String*): Self = StObject.set(x, "ipAddresses", js.Array(value :_*))
+    inline def setIpAddressesVarargs(value: String*): Self = StObject.set(x, "ipAddresses", js.Array(value*))
     
     inline def setUris(value: js.Array[String]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
     
     inline def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
     
-    inline def setUrisVarargs(value: String*): Self = StObject.set(x, "uris", js.Array(value :_*))
+    inline def setUrisVarargs(value: String*): Self = StObject.set(x, "uris", js.Array(value*))
   }
 }

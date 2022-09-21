@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // there is no way to use the Globals class from within Javascript
 @JSGlobal("Excel.Graphic")
 @js.native
-/* private */ class Graphic ()
+/* private */ open class Graphic ()
   extends StObject
      with typings.activexExcel.Excel.Graphic {
   
@@ -55,7 +55,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var LockAspectRatio: MsoTriState = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Width: Double = js.native

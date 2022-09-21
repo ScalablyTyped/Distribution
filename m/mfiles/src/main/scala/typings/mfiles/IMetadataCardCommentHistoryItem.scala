@@ -10,7 +10,7 @@ trait IMetadataCardCommentHistoryItem extends StObject {
   
   def GetCommentText(): String
   
-  def GetCommentTimestamp(): js.Any
+  def GetCommentTimestamp(): Any
   
   def GetCommentVersion(): Double
 }
@@ -19,7 +19,7 @@ object IMetadataCardCommentHistoryItem {
   inline def apply(
     GetCommentAuthor: () => String,
     GetCommentText: () => String,
-    GetCommentTimestamp: () => js.Any,
+    GetCommentTimestamp: () => Any,
     GetCommentVersion: () => Double
   ): IMetadataCardCommentHistoryItem = {
     val __obj = js.Dynamic.literal(GetCommentAuthor = js.Any.fromFunction0(GetCommentAuthor), GetCommentText = js.Any.fromFunction0(GetCommentText), GetCommentTimestamp = js.Any.fromFunction0(GetCommentTimestamp), GetCommentVersion = js.Any.fromFunction0(GetCommentVersion))
@@ -32,7 +32,7 @@ object IMetadataCardCommentHistoryItem {
     
     inline def setGetCommentText(value: () => String): Self = StObject.set(x, "GetCommentText", js.Any.fromFunction0(value))
     
-    inline def setGetCommentTimestamp(value: () => js.Any): Self = StObject.set(x, "GetCommentTimestamp", js.Any.fromFunction0(value))
+    inline def setGetCommentTimestamp(value: () => Any): Self = StObject.set(x, "GetCommentTimestamp", js.Any.fromFunction0(value))
     
     inline def setGetCommentVersion(value: () => Double): Self = StObject.set(x, "GetCommentVersion", js.Any.fromFunction0(value))
   }

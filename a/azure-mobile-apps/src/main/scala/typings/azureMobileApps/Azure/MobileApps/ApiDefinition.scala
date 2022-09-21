@@ -39,7 +39,7 @@ object ApiDefinition {
     
     inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
-    inline def setDeleteVarargs(value: Middleware*): Self = StObject.set(x, "delete", js.Array(value :_*))
+    inline def setDeleteVarargs(value: Middleware*): Self = StObject.set(x, "delete", js.Array(value*))
     
     inline def setGet(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
@@ -47,7 +47,7 @@ object ApiDefinition {
     
     inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    inline def setGetVarargs(value: Middleware*): Self = StObject.set(x, "get", js.Array(value :_*))
+    inline def setGetVarargs(value: Middleware*): Self = StObject.set(x, "get", js.Array(value*))
     
     inline def setPatch(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     
@@ -55,7 +55,7 @@ object ApiDefinition {
     
     inline def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
     
-    inline def setPatchVarargs(value: Middleware*): Self = StObject.set(x, "patch", js.Array(value :_*))
+    inline def setPatchVarargs(value: Middleware*): Self = StObject.set(x, "patch", js.Array(value*))
     
     inline def setPost(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
@@ -63,7 +63,7 @@ object ApiDefinition {
     
     inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
-    inline def setPostVarargs(value: Middleware*): Self = StObject.set(x, "post", js.Array(value :_*))
+    inline def setPostVarargs(value: Middleware*): Self = StObject.set(x, "post", js.Array(value*))
     
     inline def setPut(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
     
@@ -71,6 +71,6 @@ object ApiDefinition {
     
     inline def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
     
-    inline def setPutVarargs(value: Middleware*): Self = StObject.set(x, "put", js.Array(value :_*))
+    inline def setPutVarargs(value: Middleware*): Self = StObject.set(x, "put", js.Array(value*))
   }
 }

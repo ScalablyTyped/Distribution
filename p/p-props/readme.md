@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-props
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Like `Promise.all()` but for `Map` and `Object`
@@ -10,10 +10,10 @@ Like `Promise.all()` but for `Map` and `Object`
 | ------------------ | :-------------: |
 | Full name          | p-props |
 | Keywords           | promise, props, map, object, values, properties, entries, async, await, promises, concurrently, concurrency, parallel, bluebird |
-| # releases         | 6 |
-| # dependents       | 40 |
-| # downloads        | 533496 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 67882.66666666667 |
+| # stars            | 165.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-props#readme)

@@ -33,7 +33,7 @@ trait TileLayer
   def getZIndex(): Double
   
   /** Optional property to store any additional metadata for this layer. */
-  var metadata: js.Any
+  var metadata: Any
   
   /**
     * Sets the opacity of the tile layer. Value must be a number between 0 and 1.
@@ -66,7 +66,7 @@ object TileLayer {
     getTileSource: () => TileSource,
     getVisible: () => Boolean,
     getZIndex: () => Double,
-    metadata: js.Any,
+    metadata: Any,
     setOpacity: Double => Unit,
     setOptions: ITileLayerOptions => Unit,
     setVisible: Boolean => Unit,
@@ -86,7 +86,7 @@ object TileLayer {
     
     inline def setGetZIndex(value: () => Double): Self = StObject.set(x, "getZIndex", js.Any.fromFunction0(value))
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setSetOpacity(value: Double => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
     

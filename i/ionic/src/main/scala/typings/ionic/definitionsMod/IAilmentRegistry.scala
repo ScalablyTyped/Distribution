@@ -23,7 +23,7 @@ object IAilmentRegistry {
     
     inline def setAilments(value: js.Array[IAilment]): Self = StObject.set(x, "ailments", value.asInstanceOf[js.Any])
     
-    inline def setAilmentsVarargs(value: IAilment*): Self = StObject.set(x, "ailments", js.Array(value :_*))
+    inline def setAilmentsVarargs(value: IAilment*): Self = StObject.set(x, "ailments", js.Array(value*))
     
     inline def setGet(value: String => js.UndefOr[IAilment]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

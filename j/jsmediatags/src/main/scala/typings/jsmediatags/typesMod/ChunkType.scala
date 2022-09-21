@@ -21,7 +21,7 @@ object ChunkType {
     
     inline def setData(value: DataType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }

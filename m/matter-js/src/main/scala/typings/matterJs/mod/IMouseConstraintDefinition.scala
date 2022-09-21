@@ -21,7 +21,7 @@ trait IMouseConstraintDefinition extends StObject {
     * See `body.collisionFilter` for more information.
     *
     * @property collisionFilter
-    * @type object
+    * @type {any}
     */
   var collisionFilter: js.UndefOr[ICollisionFilter] = js.undefined
   
@@ -29,9 +29,9 @@ trait IMouseConstraintDefinition extends StObject {
     * The `Constraint` object that is used to move the body during interaction.
     *
     * @property constraint
-    * @type constraint
+    * @type {IConstraintDefinition}
     */
-  var constraint: js.UndefOr[Constraint] = js.undefined
+  var constraint: js.UndefOr[IConstraintDefinition] = js.undefined
   
   /**
     * The `Mouse` instance in use. If not supplied in `MouseConstraint.create`, one will be created.
@@ -46,7 +46,7 @@ trait IMouseConstraintDefinition extends StObject {
     * A `String` denoting the type of object.
     *
     * @property type
-    * @type string
+    * @type {string}
     * @default "constraint"
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -68,7 +68,7 @@ object IMouseConstraintDefinition {
     
     inline def setCollisionFilterUndefined: Self = StObject.set(x, "collisionFilter", js.undefined)
     
-    inline def setConstraint(value: Constraint): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    inline def setConstraint(value: IConstraintDefinition): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
     inline def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
     

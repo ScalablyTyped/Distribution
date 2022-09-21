@@ -10,11 +10,17 @@ trait WebXRHandTracking
   extends StObject
      with WebXRAbstractFeature {
   
-  /* private */ var _attachHand: js.Any = js.native
+  /* private */ var _attachHand: Any = js.native
   
-  /* private */ var _detachHand: js.Any = js.native
+  /* private */ var _attachedHands: Any = js.native
   
-  /* private */ var _hands: js.Any = js.native
+  /* private */ var _detachHand: Any = js.native
+  
+  /* private */ var _detachHandById: Any = js.native
+  
+  /* private */ var _handResources: Any = js.native
+  
+  /* private */ var _trackingHands: Any = js.native
   
   /**
     * Get the hand object according to the controller id
@@ -40,8 +46,6 @@ trait WebXRHandTracking
     */
   var onHandRemovedObservable: Observable[WebXRHand] = js.native
   
-  /**
-    * options to use when constructing this feature
-    */
+  /** Options to use when constructing this feature. */
   val options: IWebXRHandTrackingOptions = js.native
 }

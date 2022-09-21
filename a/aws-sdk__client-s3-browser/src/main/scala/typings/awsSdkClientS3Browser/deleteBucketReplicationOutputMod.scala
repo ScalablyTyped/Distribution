@@ -8,5 +8,5 @@ object deleteBucketReplicationOutputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/DeleteBucketReplicationOutput", "DeleteBucketReplicationOutput")
   @js.native
-  val DeleteBucketReplicationOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteBucketReplicationOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

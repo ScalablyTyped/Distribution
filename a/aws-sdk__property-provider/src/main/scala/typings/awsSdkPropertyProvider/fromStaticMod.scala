@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object fromStaticMod {
   
-  @JSImport("@aws-sdk/property-provider/dist/cjs/fromStatic", JSImport.Namespace)
+  @JSImport("@aws-sdk/property-provider/dist-types/fromStatic", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

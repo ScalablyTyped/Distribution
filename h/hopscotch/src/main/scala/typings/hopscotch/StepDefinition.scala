@@ -97,7 +97,7 @@ object StepDefinition {
     
     inline def setOnCTAUndefined: Self = StObject.set(x, "onCTA", js.undefined)
     
-    inline def setOnCTAVarargs(value: String*): Self = StObject.set(x, "onCTA", js.Array(value :_*))
+    inline def setOnCTAVarargs(value: String*): Self = StObject.set(x, "onCTA", js.Array(value*))
     
     inline def setOnNext(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onNext", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object StepDefinition {
     
     inline def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
     
-    inline def setOnNextVarargs(value: String*): Self = StObject.set(x, "onNext", js.Array(value :_*))
+    inline def setOnNextVarargs(value: String*): Self = StObject.set(x, "onNext", js.Array(value*))
     
     inline def setOnPrev(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onPrev", value.asInstanceOf[js.Any])
     
@@ -113,7 +113,7 @@ object StepDefinition {
     
     inline def setOnPrevUndefined: Self = StObject.set(x, "onPrev", js.undefined)
     
-    inline def setOnPrevVarargs(value: String*): Self = StObject.set(x, "onPrev", js.Array(value :_*))
+    inline def setOnPrevVarargs(value: String*): Self = StObject.set(x, "onPrev", js.Array(value*))
     
     inline def setOnShow(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
     
@@ -121,7 +121,7 @@ object StepDefinition {
     
     inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
-    inline def setOnShowVarargs(value: String*): Self = StObject.set(x, "onShow", js.Array(value :_*))
+    inline def setOnShowVarargs(value: String*): Self = StObject.set(x, "onShow", js.Array(value*))
     
     inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
@@ -147,7 +147,7 @@ object StepDefinition {
     
     inline def setTarget(value: String | HTMLElement | (js.Array[String | HTMLElement])): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setTargetVarargs(value: (String | HTMLElement)*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: (String | HTMLElement)*): Self = StObject.set(x, "target", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

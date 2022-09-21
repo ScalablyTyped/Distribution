@@ -10,10 +10,10 @@ object blurLinearMod {
   
   @JSImport("material-ui/svg-icons/image/blur-linear", JSImport.Default)
   @js.native
-  class default () extends ImageBlurLinear
+  open class default () extends ImageBlurLinear
   
   @JSImport("material-ui/svg-icons/image/blur-linear", "ImageBlurLinear")
   @js.native
-  class ImageBlurLinear ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageBlurLinear ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

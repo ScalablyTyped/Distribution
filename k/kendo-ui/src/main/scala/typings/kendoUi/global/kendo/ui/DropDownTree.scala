@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.DropDownTree")
 @js.native
-class DropDownTree protected ()
+open class DropDownTree protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.DropDownTree {
   def this(element: Element) = this()

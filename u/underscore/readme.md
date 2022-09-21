@@ -1,7 +1,7 @@
 
 # Scala.js typings for underscore
 
-Typings are for version 1.10
+Typings are for version 1.11
 
 ## Library description:
 JavaScript's functional programming helper library.
@@ -10,10 +10,10 @@ JavaScript's functional programming helper library.
 | ------------------ | :-------------: |
 | Full name          | underscore |
 | Keywords           | util, functional, server, client, browser |
-| # releases         | 7 |
-| # dependents       | 17609 |
-| # downloads        | 373770361 |
-| # stars            | 574 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 3.9372862333333336E7 |
+| # stars            | 26542.0 |
 
 ## Links
 - [Homepage](https://underscorejs.org)

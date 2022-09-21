@@ -22,7 +22,7 @@ object sketchViewModelMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with SketchViewModel {
     def this(properties: SketchViewModelProperties) = this()

@@ -9,7 +9,7 @@ trait SpacingProps extends StObject {
   
   val bottom: js.UndefOr[Boolean] = js.undefined
   
-  val children: js.UndefOr[js.Any] = js.undefined
+  val children: js.UndefOr[Any] = js.undefined
   
   val `inline`: js.UndefOr[Boolean] = js.undefined
   
@@ -38,7 +38,7 @@ object SpacingProps {
     
     inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

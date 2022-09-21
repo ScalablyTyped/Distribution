@@ -9,7 +9,7 @@ object eventHandlerFactoryMod {
   
   @JSImport("wonder.js/dist/es2015/event/factory/EventHandlerFactory", "EventHandlerFactory")
   @js.native
-  class EventHandlerFactory () extends StObject
+  open class EventHandlerFactory () extends StObject
   /* static members */
   object EventHandlerFactory {
     
@@ -17,6 +17,6 @@ object eventHandlerFactoryMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createEventHandler(eventType: EEventType): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventHandler")(eventType.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def createEventHandler(eventType: EEventType): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventHandler")(eventType.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
 }

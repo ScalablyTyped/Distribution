@@ -8,7 +8,7 @@ object stringUtilMod {
   
   @JSImport("samchon/library/utils/StringUtil", "StringUtil")
   @js.native
-  class StringUtil () extends StObject
+  open class StringUtil () extends StObject
   /* static members */
   object StringUtil {
     
@@ -21,24 +21,24 @@ object stringUtilMod {
       */
     @JSImport("samchon/library/utils/StringUtil", "StringUtil.SPACE_ARRAY")
     @js.native
-    def SPACE_ARRAY: js.Any = js.native
-    inline def SPACE_ARRAY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACE_ARRAY")(x.asInstanceOf[js.Any])
+    def SPACE_ARRAY: Any = js.native
+    inline def SPACE_ARRAY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACE_ARRAY")(x.asInstanceOf[js.Any])
     
     /**
       * @hidden
       */
     @JSImport("samchon/library/utils/StringUtil", "StringUtil._Fetch_substitute_index")
     @js.native
-    def _Fetch_substitute_index: js.Any = js.native
-    inline def _Fetch_substitute_index_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Fetch_substitute_index")(x.asInstanceOf[js.Any])
+    def _Fetch_substitute_index: Any = js.native
+    inline def _Fetch_substitute_index_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Fetch_substitute_index")(x.asInstanceOf[js.Any])
     
     /**
       * @hidden
       */
     @JSImport("samchon/library/utils/StringUtil", "StringUtil._Substitute_sql_string")
     @js.native
-    def _Substitute_sql_string: js.Any = js.native
-    inline def _Substitute_sql_string_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Substitute_sql_string")(x.asInstanceOf[js.Any])
+    def _Substitute_sql_string: Any = js.native
+    inline def _Substitute_sql_string_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Substitute_sql_string")(x.asInstanceOf[js.Any])
     
     /**
       * Generate a substring.
@@ -98,7 +98,7 @@ object stringUtilMod {
       *
       * @return Updated string where designated characters was removed from the beginning
       */
-    inline def ltrim(str: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(str.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def ltrim(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     /**
       * Number to formatted string with &quot;,&quot; sign.
@@ -155,8 +155,8 @@ object stringUtilMod {
       */
     inline def replaceAll(
       str: String,
-      pairs: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.Pair<string, string> */ js.Any)*
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceAll")(str.asInstanceOf[js.Any], pairs.asInstanceOf[js.Any])).asInstanceOf[String]
+      pairs: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.Pair<string, string> */ Any)*
+    ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceAll")(List(str.asInstanceOf[js.Any]).`++`(pairs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     /**
       * Remove all designated characters from the end of the specified string.
@@ -166,7 +166,7 @@ object stringUtilMod {
       *
       * @return Updated string where designated characters was removed from the end.
       */
-    inline def rtrim(str: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(str.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def rtrim(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     /**
       * Substitute `{n}` tokens within the specified string.
@@ -180,7 +180,7 @@ object stringUtilMod {
       *
       * @return New string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
-    inline def substitute(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("substitute")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def substitute(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("substitute")(List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     /**
       * Substitute `{n}` tokens within the specified SQL-string.
@@ -194,7 +194,7 @@ object stringUtilMod {
       *
       * @return New SQL-string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
-    inline def substituteSQL(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("substituteSQL")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def substituteSQL(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("substituteSQL")(List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
     
     /**
       * Remove all designated characters from the beginning and end of the specified string.
@@ -204,6 +204,6 @@ object stringUtilMod {
       *
       * @return Updated string where designated characters was removed from the beginning and end.
       */
-    inline def trim(str: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(str.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def trim(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   }
 }

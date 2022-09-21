@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("scroll-behavior", JSImport.Default)
   @js.native
-  class default[TLocation /* <: LocationBase */, TContext] protected ()
+  open class default[TLocation /* <: LocationBase */, TContext] protected ()
     extends StObject
        with ScrollBehavior[TLocation, TContext] {
     def this(options: ScrollBehaviorOptions[TLocation, TContext]) = this()
@@ -39,6 +39,8 @@ object mod {
       inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     }
   }
+  
+  type NavigationListener = js.Function0[Unit]
   
   @js.native
   trait ScrollBehavior[TLocation /* <: LocationBase */, TContext] extends StObject {
@@ -68,7 +70,7 @@ object mod {
   
   trait ScrollBehaviorOptions[TLocation /* <: LocationBase */, TContext] extends StObject {
     
-    def addTransitionHook(hook: TransitionHook): js.Function0[Unit]
+    def addNavigationListener(listener: NavigationListener): js.Function0[Unit]
     
     def getCurrentLocation(): TLocation
     
@@ -79,17 +81,17 @@ object mod {
   object ScrollBehaviorOptions {
     
     inline def apply[TLocation /* <: LocationBase */, TContext](
-      addTransitionHook: TransitionHook => js.Function0[Unit],
+      addNavigationListener: NavigationListener => js.Function0[Unit],
       getCurrentLocation: () => TLocation,
       stateStorage: Read[TLocation]
     ): ScrollBehaviorOptions[TLocation, TContext] = {
-      val __obj = js.Dynamic.literal(addTransitionHook = js.Any.fromFunction1(addTransitionHook), getCurrentLocation = js.Any.fromFunction0(getCurrentLocation), stateStorage = stateStorage.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(addNavigationListener = js.Any.fromFunction1(addNavigationListener), getCurrentLocation = js.Any.fromFunction0(getCurrentLocation), stateStorage = stateStorage.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScrollBehaviorOptions[TLocation, TContext]]
     }
     
     extension [Self <: ScrollBehaviorOptions[?, ?], TLocation /* <: LocationBase */, TContext](x: Self & (ScrollBehaviorOptions[TLocation, TContext])) {
       
-      inline def setAddTransitionHook(value: TransitionHook => js.Function0[Unit]): Self = StObject.set(x, "addTransitionHook", js.Any.fromFunction1(value))
+      inline def setAddNavigationListener(value: NavigationListener => js.Function0[Unit]): Self = StObject.set(x, "addNavigationListener", js.Any.fromFunction1(value))
       
       inline def setGetCurrentLocation(value: () => TLocation): Self = StObject.set(x, "getCurrentLocation", js.Any.fromFunction0(value))
       
@@ -106,6 +108,4 @@ object mod {
   type ScrollTarget = js.UndefOr[ScrollPosition | String | Boolean | Null]
   
   type ShouldUpdateScroll[TContext] = js.Function2[/* prevContext */ TContext | Null, /* context */ TContext, ScrollTarget]
-  
-  type TransitionHook = js.Function0[Unit]
 }

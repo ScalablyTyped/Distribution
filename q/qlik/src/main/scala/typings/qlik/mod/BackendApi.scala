@@ -11,25 +11,25 @@ trait BackendApi extends StObject {
   
   def acceptSearch(toggleMode: Boolean): Unit = js.native
   
-  def applyPatches(qPatches: js.Array[Patch], qSoftPatch: Boolean): js.Promise[js.Any] = js.native
+  def applyPatches(qPatches: js.Array[Patch], qSoftPatch: Boolean): js.Promise[Any] = js.native
   
   def clearSelections(): Unit = js.native
   
-  def clearSoftPatches(): js.Promise[js.Any] = js.native
+  def clearSoftPatches(): js.Promise[Any] = js.native
   
-  def collapseLeft(qRow: Double, qCol: Double): js.Promise[js.Any] = js.native
-  def collapseLeft(qRow: Double, qCol: Double, qAll: Boolean): js.Promise[js.Any] = js.native
+  def collapseLeft(qRow: Double, qCol: Double): js.Promise[Any] = js.native
+  def collapseLeft(qRow: Double, qCol: Double, qAll: Boolean): js.Promise[Any] = js.native
   
-  def collapseTop(qRow: Double, qCol: Double): js.Promise[js.Any] = js.native
-  def collapseTop(qRow: Double, qCol: Double, qAll: Boolean): js.Promise[js.Any] = js.native
+  def collapseTop(qRow: Double, qCol: Double): js.Promise[Any] = js.native
+  def collapseTop(qRow: Double, qCol: Double, qAll: Boolean): js.Promise[Any] = js.native
   
   def eachDataRow(callback: js.Function2[/* i */ Double, /* d */ NxCellRows, Boolean | Unit]): NxCellRows = js.native
   
-  def expandLeft(qRow: Double, qCol: Double): js.Promise[js.Any] = js.native
-  def expandLeft(qRow: Double, qCol: Double, qAll: Boolean): js.Promise[js.Any] = js.native
+  def expandLeft(qRow: Double, qCol: Double): js.Promise[Any] = js.native
+  def expandLeft(qRow: Double, qCol: Double, qAll: Boolean): js.Promise[Any] = js.native
   
-  def expandTop(qRow: Double, qCol: Double): js.Promise[js.Any] = js.native
-  def expandTop(qRow: Double, qCol: Double, qAll: Boolean): js.Promise[js.Any] = js.native
+  def expandTop(qRow: Double, qCol: Double): js.Promise[Any] = js.native
+  def expandTop(qRow: Double, qCol: Double, qAll: Boolean): js.Promise[Any] = js.native
   
   def getData(qPages: js.Array[NxPage]): js.Promise[js.Array[NxDataPage]] = js.native
   
@@ -53,7 +53,7 @@ trait BackendApi extends StObject {
   
   def search(term: String): Unit = js.native
   
-  def selectProperties(props: js.Object): js.Promise[js.Any] = js.native
+  def selectProperties(props: js.Object): js.Promise[Any] = js.native
   
   // TODO: selectRange(qRanges: Ranges, qOrMode: boolean): void;
   def selectValues(qDimNo: Double, qValues: js.Array[Double], qToggleMode: Boolean): Unit = js.native

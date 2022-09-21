@@ -1,24 +1,23 @@
 package typings.antd.anon
 
+import typings.antd.transferMod.TransferDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Direction extends StObject {
   
-  var direction: js.UndefOr[String] = js.undefined
+  var direction: TransferDirection
 }
 object Direction {
   
-  inline def apply(): Direction = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(direction: TransferDirection): Direction = {
+    val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Direction]
   }
   
   extension [Self <: Direction](x: Self) {
     
-    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
-    
-    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirection(value: TransferDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }
 }

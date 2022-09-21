@@ -13,7 +13,7 @@ trait IPrimaryExpressionSyntax
 object IPrimaryExpressionSyntax {
   
   inline def apply(
-    accept: ISyntaxVisitor => js.Any,
+    accept: ISyntaxVisitor => Any,
     childAt: Double => ISyntaxElement,
     childCount: () => Double,
     collectTextElements: js.Array[String] => Unit,

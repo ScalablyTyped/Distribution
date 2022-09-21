@@ -2,7 +2,6 @@ package typings.humanDate
 
 import typings.humanDate.anon.RelativeTimeOptionsreturn
 import typings.humanDate.anon.RelativeTimeOptionsreturnAllUnits
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,29 +13,32 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def monthName(arg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("monthName")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def monthName(arg: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("monthName")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def monthName(arg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("monthName")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def monthName(arg: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("monthName")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def prettyPrint(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")().asInstanceOf[String]
   inline def prettyPrint(arg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def prettyPrint(arg: String, options: PrettyPrintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def prettyPrint(arg: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def prettyPrint(arg: js.Date, options: PrettyPrintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def prettyPrint(arg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def prettyPrint(arg: Double, options: PrettyPrintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def prettyPrint(arg: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def prettyPrint(arg: Date, options: PrettyPrintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def prettyPrint(arg: Unit, options: PrettyPrintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def relativeTime(arg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def relativeTime(arg: String, options: RelativeTimeOptionsreturn): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def relativeTime(arg: String, options: RelativeTimeOptionsreturnAllUnits): RelativeTimeReturns = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeReturns]
+  inline def relativeTime(arg: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def relativeTime(arg: js.Date, options: RelativeTimeOptionsreturn): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def relativeTime(arg: js.Date, options: RelativeTimeOptionsreturnAllUnits): RelativeTimeReturns = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeReturns]
   inline def relativeTime(arg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def relativeTime(arg: Double, options: RelativeTimeOptionsreturn): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def relativeTime(arg: Double, options: RelativeTimeOptionsreturnAllUnits): RelativeTimeReturns = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeReturns]
-  inline def relativeTime(arg: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def relativeTime(arg: Date, options: RelativeTimeOptionsreturn): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def relativeTime(arg: Date, options: RelativeTimeOptionsreturnAllUnits): RelativeTimeReturns = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeReturns]
   
-  inline def toUTC(arg: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toUTC")(arg.asInstanceOf[js.Any]).asInstanceOf[Date]
-  inline def toUTC(arg: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toUTC")(arg.asInstanceOf[js.Any]).asInstanceOf[Date]
-  inline def toUTC(arg: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toUTC")(arg.asInstanceOf[js.Any]).asInstanceOf[Date]
+  inline def toUTC(): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toUTC")().asInstanceOf[js.Date]
+  inline def toUTC(arg: String): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toUTC")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+  inline def toUTC(arg: js.Date): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toUTC")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+  inline def toUTC(arg: Double): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toUTC")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Date]
   
   trait PrettyPrintOptions extends StObject {
     

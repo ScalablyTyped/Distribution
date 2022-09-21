@@ -12,7 +12,7 @@ trait RegexPatternSetSummary extends StObject {
   var ARN: js.UndefOr[ResourceArn] = js.undefined
   
   /**
-    * A description of the set that helps with identification. You cannot change the description of a set after you create it.
+    * A description of the set that helps with identification. 
     */
   var Description: js.UndefOr[EntityDescription] = js.undefined
   
@@ -22,7 +22,7 @@ trait RegexPatternSetSummary extends StObject {
   var Id: js.UndefOr[EntityId] = js.undefined
   
   /**
-    * A token used for optimistic locking. AWS WAF returns a token to your get and list requests, to mark the state of the entity at the time of the request. To make changes to the entity associated with the token, you provide the token to operations like update and delete. AWS WAF uses the token to ensure that no changes have been made to the entity since you last retrieved it. If a change has been made, the update fails with a WAFOptimisticLockException. If this happens, perform another get, and use the new token returned by that operation. 
+    * A token used for optimistic locking. WAF returns a token to your get and list requests, to mark the state of the entity at the time of the request. To make changes to the entity associated with the token, you provide the token to operations like update and delete. WAF uses the token to ensure that no changes have been made to the entity since you last retrieved it. If a change has been made, the update fails with a WAFOptimisticLockException. If this happens, perform another get, and use the new token returned by that operation. 
     */
   var LockToken: js.UndefOr[typings.awsSdk.wafv2Mod.LockToken] = js.undefined
   

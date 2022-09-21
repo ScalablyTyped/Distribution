@@ -9,11 +9,10 @@ object giphyMod {
   
   @JSImport("@storybook/addon-notes/dist/giphy", JSImport.Default)
   @js.native
-  class default () extends Giphy
+  open class default () extends Giphy
   
   @js.native
-  trait Giphy
-    extends Component[Props, State, js.Any] {
+  trait Giphy extends Component[Props, State, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MGiphy(): Unit = js.native

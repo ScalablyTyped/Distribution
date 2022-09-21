@@ -3,7 +3,6 @@ package typings.lunr
 import typings.lunr.mod.ConfigFunction
 import typings.lunr.mod.Index.Attributes
 import typings.lunr.mod.PipelineFunction
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,7 +55,7 @@ object global {
       */
     @JSGlobal("lunr.Builder")
     @js.native
-    class Builder ()
+    open class Builder ()
       extends typings.lunr.mod.Builder
     
     /**
@@ -69,7 +68,7 @@ object global {
       */
     @JSGlobal("lunr.Index")
     @js.native
-    class Index protected ()
+    open class Index protected ()
       extends typings.lunr.mod.Index {
       /**
         * @param attrs The attributes of the built search index.
@@ -98,7 +97,7 @@ object global {
       */
     @JSGlobal("lunr.MatchData")
     @js.native
-    class MatchData protected ()
+    open class MatchData protected ()
       extends typings.lunr.mod.MatchData {
       /**
         * @param term - The term this match data is associated with
@@ -137,7 +136,7 @@ object global {
       */
     @JSGlobal("lunr.Pipeline")
     @js.native
-    class Pipeline ()
+    open class Pipeline ()
       extends typings.lunr.mod.Pipeline
     object Pipeline {
       
@@ -182,7 +181,7 @@ object global {
       */
     @JSGlobal("lunr.Query")
     @js.native
-    class Query protected ()
+    open class Query protected ()
       extends typings.lunr.mod.Query {
       /**
         * @param allFields An array of all available fields in a lunr.Index.
@@ -225,7 +224,7 @@ object global {
     
     @JSGlobal("lunr.QueryParseError")
     @js.native
-    class QueryParseError protected ()
+    open class QueryParseError protected ()
       extends typings.lunr.mod.QueryParseError {
       def this(message: String, start: String, end: String) = this()
     }
@@ -236,7 +235,7 @@ object global {
       */
     @JSGlobal("lunr.Token")
     @js.native
-    class Token protected ()
+    open class Token protected ()
       extends typings.lunr.mod.Token {
       /**
         * @param [str=''] - The string token being wrapped.
@@ -266,7 +265,7 @@ object global {
       */
     @JSGlobal("lunr.TokenSet")
     @js.native
-    class TokenSet ()
+    open class TokenSet ()
       extends typings.lunr.mod.TokenSet
     
     /**
@@ -284,7 +283,7 @@ object global {
       */
     @JSGlobal("lunr.Vector")
     @js.native
-    class Vector protected ()
+    open class Vector protected ()
       extends typings.lunr.mod.Vector {
       /**
         * @param [elements] - The flat list of element index and element value pairs.
@@ -360,8 +359,8 @@ object global {
         */
       @JSGlobal("lunr.tokenizer.separator")
       @js.native
-      def separator: RegExp = js.native
-      inline def separator_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("separator")(x.asInstanceOf[js.Any])
+      def separator: js.RegExp = js.native
+      inline def separator_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("separator")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -399,7 +398,7 @@ object global {
         * @param obj The object to convert to a string.
         * @return string representation of the passed object.
         */
-      inline def asString(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asString")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def asString(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asString")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
       
       /**
         * Print a warning message to the console.

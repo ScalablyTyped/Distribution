@@ -28,42 +28,42 @@ object gmlbaseMod {
     
     /* protected */ var featureType: js.Array[String] | String = js.native
     
-    def lineStringMemberParser(node: Element, objectStack: js.Array[js.Any]): Unit = js.native
+    def lineStringMemberParser(node: Element, objectStack: js.Array[Any]): Unit = js.native
     
-    def pointMemberParser(node: Element, objectStack: js.Array[js.Any]): Unit = js.native
+    def pointMemberParser(node: Element, objectStack: js.Array[Any]): Unit = js.native
     
-    def polygonMemberParser(node: Element, objectStack: js.Array[js.Any]): Unit = js.native
+    def polygonMemberParser(node: Element, objectStack: js.Array[Any]): Unit = js.native
     
-    def readFeatureElement(node: Element, objectStack: js.Array[js.Any]): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
+    def readFeatureElement(node: Element, objectStack: js.Array[Any]): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] = js.native
     
-    def readFeatureElementInternal(node: Element, objectStack: js.Array[js.Any], asFeature: Boolean): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] | js.Object = js.native
+    def readFeatureElementInternal(node: Element, objectStack: js.Array[Any], asFeature: Boolean): typings.ol.olFeatureMod.default[typings.ol.geometryMod.default] | js.Object = js.native
     
-    def readFeaturesInternal(node: Element, objectStack: js.Array[js.Any]): js.UndefOr[js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]] = js.native
+    def readFeaturesInternal(node: Element, objectStack: js.Array[Any]): js.UndefOr[js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]] = js.native
     
-    def readFlatCoordinatesFromNode(node: Element, objectStack: js.Array[js.Any]): js.Array[Double] = js.native
+    def readFlatCoordinatesFromNode(node: Element, objectStack: js.Array[Any]): js.Array[Double] = js.native
     
-    def readFlatLinearRing(node: Element, objectStack: js.Array[js.Any]): js.UndefOr[js.Array[Double]] = js.native
+    def readFlatLinearRing(node: Element, objectStack: js.Array[Any]): js.UndefOr[js.Array[Double]] = js.native
     
-    def readGeometryElement(node: Element, objectStack: js.Array[js.Any]): js.UndefOr[typings.ol.geometryMod.default | Extent] = js.native
+    def readGeometryElement(node: Element, objectStack: js.Array[Any]): js.UndefOr[typings.ol.geometryMod.default | Extent] = js.native
     
     /* protected */ @JSName("readGeometryFromNode")
     def readGeometryFromNode_default(node: Element): typings.ol.geometryMod.default = js.native
     /* protected */ @JSName("readGeometryFromNode")
     def readGeometryFromNode_default(node: Element, opt_options: ReadOptions): typings.ol.geometryMod.default = js.native
     
-    def readLineString(node: Element, objectStack: js.Array[js.Any]): js.UndefOr[typings.ol.lineStringMod.default] = js.native
+    def readLineString(node: Element, objectStack: js.Array[Any]): js.UndefOr[typings.ol.lineStringMod.default] = js.native
     
-    def readLinearRing(node: Element, objectStack: js.Array[js.Any]): js.UndefOr[typings.ol.linearRingMod.default] = js.native
+    def readLinearRing(node: Element, objectStack: js.Array[Any]): js.UndefOr[typings.ol.linearRingMod.default] = js.native
     
-    def readMultiLineString(node: Element, objectStack: js.Array[js.Any]): js.UndefOr[typings.ol.multiLineStringMod.default] = js.native
+    def readMultiLineString(node: Element, objectStack: js.Array[Any]): js.UndefOr[typings.ol.multiLineStringMod.default] = js.native
     
-    def readMultiPoint(node: Element, objectStack: js.Array[js.Any]): js.UndefOr[typings.ol.multiPointMod.default] = js.native
+    def readMultiPoint(node: Element, objectStack: js.Array[Any]): js.UndefOr[typings.ol.multiPointMod.default] = js.native
     
-    def readMultiPolygon(node: Element, objectStack: js.Array[js.Any]): js.UndefOr[typings.ol.multiPolygonMod.default] = js.native
+    def readMultiPolygon(node: Element, objectStack: js.Array[Any]): js.UndefOr[typings.ol.multiPolygonMod.default] = js.native
     
-    def readPoint(node: Element, objectStack: js.Array[js.Any]): js.UndefOr[typings.ol.pointMod.default] = js.native
+    def readPoint(node: Element, objectStack: js.Array[Any]): js.UndefOr[typings.ol.pointMod.default] = js.native
     
-    def readPolygon(node: Element, objectStack: js.Array[js.Any]): js.UndefOr[typings.ol.polygonMod.default] = js.native
+    def readPolygon(node: Element, objectStack: js.Array[Any]): js.UndefOr[typings.ol.polygonMod.default] = js.native
     
     /* protected */ var schemaLocation: String = js.native
     
@@ -111,7 +111,7 @@ object gmlbaseMod {
       
       inline def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
       
-      inline def setFeatureTypeVarargs(value: String*): Self = StObject.set(x, "featureType", js.Array(value :_*))
+      inline def setFeatureTypeVarargs(value: String*): Self = StObject.set(x, "featureType", js.Array(value*))
       
       inline def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
       

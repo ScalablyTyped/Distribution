@@ -4,6 +4,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * The goal here is to make sure that the browser DOM API is the Renderer.
+  * We do this by defining a subset of DOM API to be the renderer and then
+  * use that at runtime for rendering.
+  *
+  * At runtime we can then use the DOM api directly, in server or web-worker
+  * it will be easy to implement such API.
+  */
 /* Rewritten from type alias, can be one of: 
   - typings.angularCore.angularCoreStrings.document
   - typings.angularCore.angularCoreStrings.window

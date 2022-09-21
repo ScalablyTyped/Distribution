@@ -10,13 +10,13 @@ object controllersIndexMod {
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "DaydreamController")
   @js.native
-  class DaydreamController protected ()
+  open class DaydreamController protected ()
     extends typings.babylonjs.daydreamControllerMod.DaydreamController {
     /**
       * Creates a new DaydreamController from a gamepad
       * @param vrGamepad the gamepad that the controller should be created from
       */
-    def this(vrGamepad: js.Any) = this()
+    def this(vrGamepad: Any) = this()
   }
   /* static members */
   object DaydreamController {
@@ -51,13 +51,13 @@ object controllersIndexMod {
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "GearVRController")
   @js.native
-  class GearVRController protected ()
+  open class GearVRController protected ()
     extends typings.babylonjs.gearVRControllerMod.GearVRController {
     /**
       * Creates a new GearVRController from a gamepad
       * @param vrGamepad the gamepad that the controller should be created from
       */
-    def this(vrGamepad: js.Any) = this()
+    def this(vrGamepad: Any) = this()
   }
   /* static members */
   object GearVRController {
@@ -92,13 +92,13 @@ object controllersIndexMod {
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "GenericController")
   @js.native
-  class GenericController protected ()
+  open class GenericController protected ()
     extends typings.babylonjs.genericControllerMod.GenericController {
     /**
       * Creates a new GenericController from a gamepad
       * @param vrGamepad the gamepad that the controller should be created from
       */
-    def this(vrGamepad: js.Any) = this()
+    def this(vrGamepad: Any) = this()
   }
   /* static members */
   object GenericController {
@@ -120,13 +120,13 @@ object controllersIndexMod {
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "OculusTouchController")
   @js.native
-  class OculusTouchController protected ()
+  open class OculusTouchController protected ()
     extends typings.babylonjs.oculusTouchControllerMod.OculusTouchController {
     /**
       * Creates a new OculusTouchController from a gamepad
       * @param vrGamepad the gamepad that the controller should be created from
       */
-    def this(vrGamepad: js.Any) = this()
+    def this(vrGamepad: Any) = this()
   }
   /* static members */
   object OculusTouchController {
@@ -179,13 +179,13 @@ object controllersIndexMod {
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "PoseEnabledController")
   @js.native
-  class PoseEnabledController protected ()
+  open class PoseEnabledController protected ()
     extends typings.babylonjs.poseEnabledControllerMod.PoseEnabledController {
     /**
       * Creates a new PoseEnabledController from a gamepad
       * @param browserGamepad the gamepad that the PoseEnabledController should be created from
       */
-    def this(browserGamepad: js.Any) = this()
+    def this(browserGamepad: Any) = this()
   }
   /* static members */
   object PoseEnabledController {
@@ -200,7 +200,7 @@ object controllersIndexMod {
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "PoseEnabledControllerHelper")
   @js.native
-  class PoseEnabledControllerHelper ()
+  open class PoseEnabledControllerHelper ()
     extends typings.babylonjs.poseEnabledControllerMod.PoseEnabledControllerHelper
   /* static members */
   object PoseEnabledControllerHelper {
@@ -214,7 +214,7 @@ object controllersIndexMod {
       * @param vrGamepad the gamepad to initialized
       * @returns a vr controller of the type the gamepad identified as
       */
-    inline def InitiateController(vrGamepad: js.Any): typings.babylonjs.gamepadMod.Gamepad = ^.asInstanceOf[js.Dynamic].applyDynamic("InitiateController")(vrGamepad.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.gamepadMod.Gamepad]
+    inline def InitiateController(vrGamepad: Any): typings.babylonjs.gamepadMod.Gamepad = ^.asInstanceOf[js.Dynamic].applyDynamic("InitiateController")(vrGamepad.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.gamepadMod.Gamepad]
     
     /** @hidden */
     @JSImport("babylonjs/Gamepads/Controllers/index", "PoseEnabledControllerHelper._ControllerFactories")
@@ -225,8 +225,8 @@ object controllersIndexMod {
     /** @hidden */
     @JSImport("babylonjs/Gamepads/Controllers/index", "PoseEnabledControllerHelper._DefaultControllerFactory")
     @js.native
-    def _DefaultControllerFactory: Nullable[js.Function1[/* gamepadInfo */ js.Any, typings.babylonjs.gamepadMod.Gamepad]] = js.native
-    inline def _DefaultControllerFactory_=(x: Nullable[js.Function1[/* gamepadInfo */ js.Any, typings.babylonjs.gamepadMod.Gamepad]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultControllerFactory")(x.asInstanceOf[js.Any])
+    def _DefaultControllerFactory: Nullable[js.Function1[/* gamepadInfo */ Any, typings.babylonjs.gamepadMod.Gamepad]] = js.native
+    inline def _DefaultControllerFactory_=(x: Nullable[js.Function1[/* gamepadInfo */ Any, typings.babylonjs.gamepadMod.Gamepad]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultControllerFactory")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "PoseEnabledControllerType")
@@ -251,13 +251,13 @@ object controllersIndexMod {
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "ViveController")
   @js.native
-  class ViveController protected ()
+  open class ViveController protected ()
     extends typings.babylonjs.viveControllerMod.ViveController {
     /**
       * Creates a new ViveController from a gamepad
       * @param vrGamepad the gamepad that the controller should be created from
       */
-    def this(vrGamepad: js.Any) = this()
+    def this(vrGamepad: Any) = this()
   }
   /* static members */
   object ViveController {
@@ -291,18 +291,18 @@ object controllersIndexMod {
       * Creates a new WebVRController from a gamepad
       * @param vrGamepad the gamepad that the WebVRController should be created from
       */
-    def this(vrGamepad: js.Any) = this()
+    def this(vrGamepad: Any) = this()
   }
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "WindowsMotionController")
   @js.native
-  class WindowsMotionController protected ()
+  open class WindowsMotionController protected ()
     extends typings.babylonjs.windowsMotionControllerMod.WindowsMotionController {
     /**
       * Creates a new WindowsMotionController from a gamepad
       * @param vrGamepad the gamepad that the controller should be created from
       */
-    def this(vrGamepad: js.Any) = this()
+    def this(vrGamepad: Any) = this()
   }
   /* static members */
   object WindowsMotionController {
@@ -316,7 +316,7 @@ object controllersIndexMod {
       */
     @JSImport("babylonjs/Gamepads/Controllers/index", "WindowsMotionController.GAMEPAD_ID_PATTERN")
     @js.native
-    val GAMEPAD_ID_PATTERN: js.Any = js.native
+    val GAMEPAD_ID_PATTERN: Any = js.native
     
     /**
       * The controller name prefix for this controller type
@@ -352,13 +352,13 @@ object controllersIndexMod {
   
   @JSImport("babylonjs/Gamepads/Controllers/index", "XRWindowsMotionController")
   @js.native
-  class XRWindowsMotionController protected ()
+  open class XRWindowsMotionController protected ()
     extends typings.babylonjs.windowsMotionControllerMod.XRWindowsMotionController {
     /**
       * Construct a new XR-Based windows motion controller
       *
       * @param gamepadInfo the gamepad object from the browser
       */
-    def this(gamepadInfo: js.Any) = this()
+    def this(gamepadInfo: Any) = this()
   }
 }

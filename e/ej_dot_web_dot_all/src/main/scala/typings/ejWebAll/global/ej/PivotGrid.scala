@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.PivotGrid")
 @js.native
-class PivotGrid protected ()
+open class PivotGrid protected ()
   extends StObject
      with typings.ejWebAll.ej.PivotGrid {
   def this(element: JQuery) = this()
@@ -41,8 +41,8 @@ object PivotGrid {
   /* static member */
   @JSGlobal("ej.PivotGrid.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("ej.PivotGrid.fn")

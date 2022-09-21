@@ -10,10 +10,10 @@ A pure-JavaScript, bottom-up CSS selector engine designed to be easily dropped i
 | ------------------ | :-------------: |
 | Full name          | sizzle |
 | Keywords           | sizzle, javascript, CSS, selector, jquery |
-| # releases         | 2 |
-| # dependents       | 38 |
-| # downloads        | 797818 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 53632.666666666664 |
+| # stars            | 6158.0 |
 
 ## Links
 - [Homepage](https://sizzlejs.com)

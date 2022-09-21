@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.relinkingTool, which you can modify.
   */
-class RelinkingTool () extends LinkingBaseTool {
+open class RelinkingTool () extends LinkingBaseTool {
   
   /**
     * Make a temporary link look and act like the real Link being relinked.

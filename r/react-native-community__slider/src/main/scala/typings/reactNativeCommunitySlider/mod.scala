@@ -1,6 +1,7 @@
 package typings.reactNativeCommunitySlider
 
 import typings.react.mod.Component
+import typings.react.mod.LegacyRef
 import typings.react.mod.MutableRefObject
 import typings.reactNative.mod.ImageURISource
 import typings.reactNative.mod.ViewProps
@@ -12,17 +13,17 @@ object mod {
   
   @JSImport("@react-native-community/slider", JSImport.Default)
   @js.native
-  class default () extends Slider
+  open class default () extends Slider
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @js.native
   trait Slider
-    extends Component[SliderProps, js.Object, js.Any]
+    extends Component[SliderProps, js.Object, Any]
   
   /**
   * A component used to select a single value from a range of values.
   */
-  type SliderComponent = Component[SliderProps, js.Object, js.Any]
+  type SliderComponent = Component[SliderProps, js.Object, Any]
   
   type SliderIOS = Slider
   
@@ -34,13 +35,15 @@ object mod {
   - typings.reactNative.mod.TVViewPropsIOS because Already inherited
   - js.Any because Already inherited
   - typings.reactNative.mod.AccessibilityProps because Already inherited
+  - typings.reactNative.mod.PointerEvents because Already inherited
   - typings.reactNative.mod.Touchable because Already inherited
   - typings.reactNative.mod.GestureResponderHandlers because Already inherited
   - typings.reactNative.mod.ViewPropsIOS because Already inherited
   - typings.reactNative.mod.ViewPropsAndroid because Already inherited
   - js.Object because Already inherited
   - typings.reactNative.mod.ViewProps because Already inherited
-  - typings.reactNativeCommunitySlider.mod.SliderPropsAndroid because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, collapsable, focusable, hasTVPreferredFocus, hitSlop, importantForAccessibility, isTVSelectable, nativeID, needsOffscreenAlphaCompositing, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, onTouchCancel, onTouchEnd, onTouchEndCapture, onTouchMove, onTouchStart, pointerEvents, removeClippedSubviews, renderToHardwareTextureAndroid, shouldRasterizeIOS, style, testID, tvParallaxMagnification, tvParallaxProperties, tvParallaxShiftDistanceX, tvParallaxShiftDistanceY, tvParallaxTiltAngle. Inlined thumbTintColor */ trait SliderProps
+  - typings.reactNativeCommunitySlider.mod.SliderPropsWindows because var conflicts: accessibilityActions, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLabelledBy, accessibilityLanguage, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityValue, accessibilityViewIsModal, accessible, children, collapsable, focusable, hasTVPreferredFocus, hitSlop, importantForAccessibility, isTVSelectable, nativeID, needsOffscreenAlphaCompositing, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onPointerCancel, onPointerCancelCapture, onPointerDown, onPointerDownCapture, onPointerEnter, onPointerEnterCapture, onPointerLeave, onPointerLeaveCapture, onPointerMove, onPointerMoveCapture, onPointerUp, onPointerUpCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, onTouchCancel, onTouchEnd, onTouchEndCapture, onTouchMove, onTouchStart, pointerEvents, removeClippedSubviews, renderToHardwareTextureAndroid, shouldRasterizeIOS, style, testID, tvParallaxMagnification, tvParallaxProperties, tvParallaxShiftDistanceX, tvParallaxShiftDistanceY, tvParallaxTiltAngle. Inlined vertical
+  - typings.reactNativeCommunitySlider.mod.SliderPropsAndroid because var conflicts: accessibilityActions, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLabelledBy, accessibilityLanguage, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityValue, accessibilityViewIsModal, accessible, children, collapsable, focusable, hasTVPreferredFocus, hitSlop, importantForAccessibility, isTVSelectable, nativeID, needsOffscreenAlphaCompositing, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onPointerCancel, onPointerCancelCapture, onPointerDown, onPointerDownCapture, onPointerEnter, onPointerEnterCapture, onPointerLeave, onPointerLeaveCapture, onPointerMove, onPointerMoveCapture, onPointerUp, onPointerUpCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, onTouchCancel, onTouchEnd, onTouchEndCapture, onTouchMove, onTouchStart, pointerEvents, removeClippedSubviews, renderToHardwareTextureAndroid, shouldRasterizeIOS, style, testID, tvParallaxMagnification, tvParallaxProperties, tvParallaxShiftDistanceX, tvParallaxShiftDistanceY, tvParallaxTiltAngle. Inlined thumbTintColor */ trait SliderProps
     extends StObject
        with SliderPropsIOS {
     
@@ -112,7 +115,7 @@ object mod {
     /**
       * Reference object.
       */
-    var ref: js.UndefOr[MutableRefObject[SliderRef]] = js.undefined
+    var ref: js.UndefOr[SliderReferenceType] = js.undefined
     
     /**
       * Step value of the slider. The value should be between 0 and (maximumValue - minimumValue). Default value is 0.
@@ -125,13 +128,22 @@ object mod {
     var thumbTintColor: js.UndefOr[String] = js.undefined
     
     /**
-      * Initial value of the slider. The value should be between minimumValue
-      * and maximumValue, which default to 0 and 1 respectively.
+      * Write-only property representing the value of the slider.
+      * Can be used to programmatically control the position of the thumb.
+      * Entered once at the beginning still acts as an initial value.
+      * The value should be between minimumValue and maximumValue,
+      * which default to 0 and 1 respectively.
       * Default value is 0.
-      * This is not a controlled component, you don't need to update
-      * the value during dragging.
+      *
+      * This is not a controlled component, you don't need to update the
+      * value during dragging.
       */
     var value: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Controls the orientation of the slider, default value is 'false' (horizontal).
+      */
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object SliderProps {
     
@@ -146,7 +158,7 @@ object mod {
       
       inline def setAccessibilityIncrementsUndefined: Self = StObject.set(x, "accessibilityIncrements", js.undefined)
       
-      inline def setAccessibilityIncrementsVarargs(value: String*): Self = StObject.set(x, "accessibilityIncrements", js.Array(value :_*))
+      inline def setAccessibilityIncrementsVarargs(value: String*): Self = StObject.set(x, "accessibilityIncrements", js.Array(value*))
       
       inline def setAccessibilityUnits(value: String): Self = StObject.set(x, "accessibilityUnits", value.asInstanceOf[js.Any])
       
@@ -188,7 +200,7 @@ object mod {
       
       inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
       
-      inline def setRef(value: MutableRefObject[SliderRef]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: SliderReferenceType): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
@@ -203,6 +215,10 @@ object mod {
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
   
@@ -247,6 +263,12 @@ object mod {
     var minimumTrackImage: js.UndefOr[ImageURISource] = js.undefined
     
     /**
+      * Permits tapping on the slider track to set the thumb position.
+      * Defaults to false on iOS. No effect on Android or Windows.
+      */
+    var tapToSeek: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Sets an image for the thumb. Only static images are supported.
       */
     var thumbImage: js.UndefOr[ImageURISource] = js.undefined
@@ -275,6 +297,10 @@ object mod {
       
       inline def setMinimumTrackImageUndefined: Self = StObject.set(x, "minimumTrackImage", js.undefined)
       
+      inline def setTapToSeek(value: Boolean): Self = StObject.set(x, "tapToSeek", value.asInstanceOf[js.Any])
+      
+      inline def setTapToSeekUndefined: Self = StObject.set(x, "tapToSeek", js.undefined)
+      
       inline def setThumbImage(value: ImageURISource): Self = StObject.set(x, "thumbImage", value.asInstanceOf[js.Any])
       
       inline def setThumbImageUndefined: Self = StObject.set(x, "thumbImage", js.undefined)
@@ -282,6 +308,30 @@ object mod {
       inline def setTrackImage(value: ImageURISource): Self = StObject.set(x, "trackImage", value.asInstanceOf[js.Any])
       
       inline def setTrackImageUndefined: Self = StObject.set(x, "trackImage", js.undefined)
+    }
+  }
+  
+  trait SliderPropsWindows
+    extends StObject
+       with ViewProps {
+    
+    /**
+      * Controls the orientation of the slider, default value is 'false' (horizontal).
+      */
+    var vertical: js.UndefOr[Boolean] = js.undefined
+  }
+  object SliderPropsWindows {
+    
+    inline def apply(): SliderPropsWindows = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SliderPropsWindows]
+    }
+    
+    extension [Self <: SliderPropsWindows](x: Self) {
+      
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
   
@@ -301,4 +351,6 @@ object mod {
       inline def setUpdateValue(value: Double => Unit): Self = StObject.set(x, "updateValue", js.Any.fromFunction1(value))
     }
   }
+  
+  type SliderReferenceType = js.UndefOr[MutableRefObject[SliderRef] & LegacyRef[Slider]]
 }

@@ -2,8 +2,6 @@ package typings.moo
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.moo.mooBooleans.`true`
-import typings.std.Iterator
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,12 +71,12 @@ object mod {
     def formatError(token: Token, message: String): String = js.native
     
     /**
-      * Can be used by parsers like nearley to check whether a given token type can be parsed by this lexer.
+      * @deprecated since 0.5.0. Now just returns true
       */
     def has(tokenType: String): Boolean = js.native
     
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[Iterator[Token, js.Any, Unit]] = js.native
+    var iterator: js.Function0[js.Iterator[Token]] = js.native
     
     /**
       * When you reach the end of Moo's internal buffer, next() will return undefined.
@@ -156,7 +154,7 @@ object mod {
       */
     var lineBreaks: js.UndefOr[Boolean] = js.undefined
     
-    var `match`: js.UndefOr[RegExp | String | js.Array[String]] = js.undefined
+    var `match`: js.UndefOr[js.RegExp | String | js.Array[String]] = js.undefined
     
     /**
       * Moves to a new state, but does not affect the stack.
@@ -202,11 +200,11 @@ object mod {
       
       inline def setLineBreaksUndefined: Self = StObject.set(x, "lineBreaks", js.undefined)
       
-      inline def setMatch(value: RegExp | String | js.Array[String]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: js.RegExp | String | js.Array[String]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
+      inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value*))
       
       inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
@@ -230,7 +228,7 @@ object mod {
     }
   }
   
-  type Rules = StringDictionary[RegExp | String | (js.Array[Rule | String]) | Rule | ErrorRule | FallbackRule]
+  type Rules = StringDictionary[js.RegExp | String | (js.Array[Rule | String]) | Rule | ErrorRule | FallbackRule]
   
   trait Token extends StObject {
     

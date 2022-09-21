@@ -1,144 +1,150 @@
 package typings.vscodeJsonrpc
 
-import typings.node.BufferEncoding
-import typings.node.NodeJS.WritableStream
-import typings.node.childProcessMod.ChildProcess
-import typings.node.netMod.Socket
-import typings.node.processMod.global.NodeJS.Process
-import typings.std.Error
-import typings.vscodeJsonrpc.eventsMod.Disposable
+import typings.vscodeJsonrpc.disposableMod.Disposable
+import typings.vscodeJsonrpc.encodingMod.ContentEncoder
+import typings.vscodeJsonrpc.encodingMod.ContentTypeEncoder
 import typings.vscodeJsonrpc.eventsMod.Event
 import typings.vscodeJsonrpc.messagesMod.Message
+import typings.vscodeJsonrpc.ralMod.RAL.MessageBufferEncoding
+import typings.vscodeJsonrpc.ralMod.RAL.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageWriterMod {
   
-  @JSImport("vscode-jsonrpc/lib/messageWriter", "AbstractMessageWriter")
+  @JSImport("vscode-jsonrpc/lib/common/messageWriter", "AbstractMessageWriter")
   @js.native
   abstract class AbstractMessageWriter () extends StObject {
     
-    /* private */ var asError: js.Any = js.native
+    /* private */ var asError: Any = js.native
     
-    /* private */ var closeEmitter: js.Any = js.native
+    /* private */ var closeEmitter: Any = js.native
     
     def dispose(): Unit = js.native
     
-    /* private */ var errorEmitter: js.Any = js.native
+    /* private */ var errorEmitter: Any = js.native
     
     /* protected */ def fireClose(): Unit = js.native
     
-    /* protected */ def fireError(error: js.Any): Unit = js.native
-    /* protected */ def fireError(error: js.Any, message: Unit, count: Double): Unit = js.native
-    /* protected */ def fireError(error: js.Any, message: Message): Unit = js.native
-    /* protected */ def fireError(error: js.Any, message: Message, count: Double): Unit = js.native
+    /* protected */ def fireError(error: Any): Unit = js.native
+    /* protected */ def fireError(error: Any, message: Unit, count: Double): Unit = js.native
+    /* protected */ def fireError(error: Any, message: Message): Unit = js.native
+    /* protected */ def fireError(error: Any, message: Message, count: Double): Unit = js.native
     
     def onClose: Event[Unit] = js.native
     
-    def onError: Event[js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]]] = js.native
-  }
-  
-  @JSImport("vscode-jsonrpc/lib/messageWriter", "IPCMessageWriter")
-  @js.native
-  class IPCMessageWriter protected ()
-    extends AbstractMessageWriter
-       with MessageWriter {
-    def this(process: ChildProcess) = this()
-    def this(process: Process) = this()
-    
-    /* InferMemberOverrides */
-    override def dispose(): Unit = js.native
-    
-    def doWriteMessage(msg: Message): Unit = js.native
-    
-    /* private */ var errorCount: js.Any = js.native
-    
-    /* private */ var process: js.Any = js.native
-    
-    /* private */ var queue: js.Any = js.native
-    
-    /* private */ var sending: js.Any = js.native
+    def onError: Event[js.Tuple3[js.Error, js.UndefOr[Message], js.UndefOr[Double]]] = js.native
   }
   
   @js.native
   trait MessageWriter extends StObject {
     
+    /** Releases resources incurred from writing or raising events. Does NOT close the underlying transport, if any. */
     def dispose(): Unit = js.native
     
-    def onClose(listener: js.Function1[/* e */ Unit, js.Any]): Disposable = js.native
-    def onClose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): Disposable = js.native
-    def onClose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-    def onClose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+    /**
+      * Call when the connection using this message writer ends
+      * (e.g. MessageConnection.end() is called)
+      */
+    def end(): Unit = js.native
     
-    def onError(listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any]): Disposable = js.native
+    /**
+      * An event raised when the underlying transport has closed and writing is no longer possible.
+      */
+    def onClose(listener: js.Function1[/* e */ Unit, Any]): Disposable = js.native
+    def onClose(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any): Disposable = js.native
+    def onClose(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+    def onClose(listener: js.Function1[/* e */ Unit, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+    
+    /**
+      * Raised whenever an error occurs while writing a message.
+      */
+    def onError(listener: js.Function1[/* e */ js.Tuple3[js.Error, js.UndefOr[Message], js.UndefOr[Double]], Any]): Disposable = js.native
     def onError(
-      listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any],
-      thisArgs: js.Any
+      listener: js.Function1[/* e */ js.Tuple3[js.Error, js.UndefOr[Message], js.UndefOr[Double]], Any],
+      thisArgs: Any
     ): Disposable = js.native
     def onError(
-      listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any],
-      thisArgs: js.Any,
+      listener: js.Function1[/* e */ js.Tuple3[js.Error, js.UndefOr[Message], js.UndefOr[Double]], Any],
+      thisArgs: Any,
       disposables: js.Array[Disposable]
     ): Disposable = js.native
     def onError(
-      listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any],
+      listener: js.Function1[/* e */ js.Tuple3[js.Error, js.UndefOr[Message], js.UndefOr[Double]], Any],
       thisArgs: Unit,
       disposables: js.Array[Disposable]
     ): Disposable = js.native
     
-    def write(msg: Message): Unit = js.native
+    /**
+      * Sends a JSON-RPC message.
+      * @param msg The JSON-RPC message to be sent.
+      * @description Implementations should guarantee messages are transmitted in the same order that they are received by this method.
+      */
+    def write(msg: Message): js.Promise[Unit] = js.native
   }
   object MessageWriter {
     
-    @JSImport("vscode-jsonrpc/lib/messageWriter", "MessageWriter")
+    @JSImport("vscode-jsonrpc/lib/common/messageWriter", "MessageWriter")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/messageWriter.MessageWriter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/messageWriter.MessageWriter */ Boolean]
+    inline def is(value: Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/common/messageWriter.MessageWriter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/common/messageWriter.MessageWriter */ Boolean]
   }
   
-  @JSImport("vscode-jsonrpc/lib/messageWriter", "SocketMessageWriter")
+  @JSImport("vscode-jsonrpc/lib/common/messageWriter", "WriteableStreamMessageWriter")
   @js.native
-  class SocketMessageWriter protected ()
-    extends AbstractMessageWriter
-       with MessageWriter {
-    def this(socket: Socket) = this()
-    def this(socket: Socket, encoding: BufferEncoding) = this()
-    
-    /* InferMemberOverrides */
-    override def dispose(): Unit = js.native
-    
-    def doWriteMessage(msg: Message): Unit = js.native
-    
-    /* private */ var encoding: js.Any = js.native
-    
-    /* private */ var errorCount: js.Any = js.native
-    
-    /* private */ var handleError: js.Any = js.native
-    
-    /* private */ var queue: js.Any = js.native
-    
-    /* private */ var sending: js.Any = js.native
-    
-    /* private */ var socket: js.Any = js.native
-  }
-  
-  @JSImport("vscode-jsonrpc/lib/messageWriter", "StreamMessageWriter")
-  @js.native
-  class StreamMessageWriter protected ()
+  open class WriteableStreamMessageWriter protected ()
     extends AbstractMessageWriter
        with MessageWriter {
     def this(writable: WritableStream) = this()
-    def this(writable: WritableStream, encoding: BufferEncoding) = this()
+    def this(writable: WritableStream, options: MessageWriterOptions) = this()
+    def this(writable: WritableStream, options: MessageBufferEncoding) = this()
     
     /* InferMemberOverrides */
     override def dispose(): Unit = js.native
     
-    /* private */ var encoding: js.Any = js.native
+    /* private */ var doWrite: Any = js.native
     
-    /* private */ var errorCount: js.Any = js.native
+    /* private */ var errorCount: Any = js.native
     
-    /* private */ var writable: js.Any = js.native
+    /* private */ var handleError: Any = js.native
+    
+    /* private */ var options: Any = js.native
+    
+    /* private */ var writable: Any = js.native
+    
+    /* private */ var writeSemaphore: Any = js.native
+  }
+  
+  trait MessageWriterOptions extends StObject {
+    
+    var charset: js.UndefOr[MessageBufferEncoding] = js.undefined
+    
+    var contentEncoder: js.UndefOr[ContentEncoder] = js.undefined
+    
+    var contentTypeEncoder: js.UndefOr[ContentTypeEncoder] = js.undefined
+  }
+  object MessageWriterOptions {
+    
+    inline def apply(): MessageWriterOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MessageWriterOptions]
+    }
+    
+    extension [Self <: MessageWriterOptions](x: Self) {
+      
+      inline def setCharset(value: MessageBufferEncoding): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      
+      inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+      
+      inline def setContentEncoder(value: ContentEncoder): Self = StObject.set(x, "contentEncoder", value.asInstanceOf[js.Any])
+      
+      inline def setContentEncoderUndefined: Self = StObject.set(x, "contentEncoder", js.undefined)
+      
+      inline def setContentTypeEncoder(value: ContentTypeEncoder): Self = StObject.set(x, "contentTypeEncoder", value.asInstanceOf[js.Any])
+      
+      inline def setContentTypeEncoderUndefined: Self = StObject.set(x, "contentTypeEncoder", js.undefined)
+    }
   }
 }

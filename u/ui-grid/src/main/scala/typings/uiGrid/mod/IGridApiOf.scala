@@ -111,7 +111,7 @@ trait IGridApiOf[TEntity] extends StObject {
     * eventObjectMap must be in this format (multiple features allowed)
     * @param eventObjectMap map of feature/event names
     */
-  def registerEventsFromObject(eventObjectMap: js.Any): Unit = js.native
+  def registerEventsFromObject(eventObjectMap: Any): Unit = js.native
   
   /**
     * Registers a new event for the given feature
@@ -120,7 +120,7 @@ trait IGridApiOf[TEntity] extends StObject {
     * @param callBackFn function to execute
     * @param _this binds to callBackFn. Defaults to gridApi.grid
     */
-  def registerMethod(featureName: String, methodName: String, callBackFn: js.Function, _this: js.Any): Unit = js.native
+  def registerMethod(featureName: String, methodName: String, callBackFn: js.Function, _this: Any): Unit = js.native
   
   /**
     * Registers features and methods from a simple objectMap.
@@ -129,7 +129,7 @@ trait IGridApiOf[TEntity] extends StObject {
     * @param eventObjectMap map of feature/event names
     * @param _this binds this to _this for all functions. Defaults to gridApi.grid
     */
-  def registerMethodsFromObject(eventObjectMap: js.Any, _this: js.Any): Unit = js.native
+  def registerMethodsFromObject(eventObjectMap: Any, _this: Any): Unit = js.native
   
   /**
     * Grid Row Edit Api

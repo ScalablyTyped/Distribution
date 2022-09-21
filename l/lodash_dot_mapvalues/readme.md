@@ -10,10 +10,10 @@ The lodash method `_.mapValues` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.mapvalues |
 | Keywords           | lodash-modularized, mapvalues |
-| # releases         | 0 |
-| # dependents       | 327 |
-| # downloads        | 51719362 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9107882.666666666 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

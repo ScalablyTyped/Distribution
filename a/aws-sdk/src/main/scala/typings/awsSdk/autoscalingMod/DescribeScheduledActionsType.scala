@@ -9,12 +9,12 @@ trait DescribeScheduledActionsType extends StObject {
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: js.UndefOr[ResourceName] = js.undefined
+  var AutoScalingGroupName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
-    * The latest scheduled start time to return. If scheduled action names are provided, this parameter is ignored.
+    * The latest scheduled start time to return. If scheduled action names are provided, this property is ignored.
     */
-  var EndTime: js.UndefOr[TimestampType] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum number of items to return with this call. The default value is 50 and the maximum value is 100.
@@ -27,14 +27,14 @@ trait DescribeScheduledActionsType extends StObject {
   var NextToken: js.UndefOr[XmlString] = js.undefined
   
   /**
-    * The names of one or more scheduled actions. You can specify up to 50 actions. If you omit this parameter, all scheduled actions are described. If you specify an unknown scheduled action, it is ignored with no error.
+    * The names of one or more scheduled actions. If you omit this property, all scheduled actions are described. If you specify an unknown scheduled action, it is ignored with no error. Array Members: Maximum number of 50 actions.
     */
   var ScheduledActionNames: js.UndefOr[typings.awsSdk.autoscalingMod.ScheduledActionNames] = js.undefined
   
   /**
-    * The earliest scheduled start time to return. If scheduled action names are provided, this parameter is ignored.
+    * The earliest scheduled start time to return. If scheduled action names are provided, this property is ignored.
     */
-  var StartTime: js.UndefOr[TimestampType] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object DescribeScheduledActionsType {
   
@@ -45,11 +45,11 @@ object DescribeScheduledActionsType {
   
   extension [Self <: DescribeScheduledActionsType](x: Self) {
     
-    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     inline def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
     
-    inline def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -65,9 +65,9 @@ object DescribeScheduledActionsType {
     
     inline def setScheduledActionNamesUndefined: Self = StObject.set(x, "ScheduledActionNames", js.undefined)
     
-    inline def setScheduledActionNamesVarargs(value: ResourceName*): Self = StObject.set(x, "ScheduledActionNames", js.Array(value :_*))
+    inline def setScheduledActionNamesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "ScheduledActionNames", js.Array(value*))
     
-    inline def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

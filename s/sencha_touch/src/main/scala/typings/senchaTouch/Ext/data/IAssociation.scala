@@ -36,12 +36,12 @@ trait IAssociation
   /** [Method] Returns the value of name
     * @returns Object
     */
-  var getName: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getName: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of ownerModel
     * @returns Ext.data.Model/String
     */
-  var getOwnerModel: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getOwnerModel: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of ownerName
     * @returns String
@@ -64,7 +64,7 @@ trait IAssociation
   var getType: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Config Option] (Ext.data.Model/String) */
-  var ownerModel: js.UndefOr[js.Any] = js.undefined
+  var ownerModel: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var primaryKey: js.UndefOr[String] = js.undefined
@@ -90,12 +90,12 @@ trait IAssociation
   /** [Method] Sets the value of name
     * @param name Object The new value.
     */
-  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of ownerModel
     * @param ownerModel Ext.data.Model/String The new value.
     */
-  var setOwnerModel: js.UndefOr[js.Function1[/* ownerModel */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setOwnerModel: js.UndefOr[js.Function1[/* ownerModel */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of ownerName
     * @param ownerName String The new value.
@@ -155,11 +155,11 @@ object IAssociation {
     
     inline def setGetAssociationKeyUndefined: Self = StObject.set(x, "getAssociationKey", js.undefined)
     
-    inline def setGetName(value: () => js.Any): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => Any): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     inline def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
     
-    inline def setGetOwnerModel(value: () => js.Any): Self = StObject.set(x, "getOwnerModel", js.Any.fromFunction0(value))
+    inline def setGetOwnerModel(value: () => Any): Self = StObject.set(x, "getOwnerModel", js.Any.fromFunction0(value))
     
     inline def setGetOwnerModelUndefined: Self = StObject.set(x, "getOwnerModel", js.undefined)
     
@@ -179,7 +179,7 @@ object IAssociation {
     
     inline def setGetTypeUndefined: Self = StObject.set(x, "getType", js.undefined)
     
-    inline def setOwnerModel(value: js.Any): Self = StObject.set(x, "ownerModel", value.asInstanceOf[js.Any])
+    inline def setOwnerModel(value: Any): Self = StObject.set(x, "ownerModel", value.asInstanceOf[js.Any])
     
     inline def setOwnerModelUndefined: Self = StObject.set(x, "ownerModel", js.undefined)
     
@@ -203,11 +203,11 @@ object IAssociation {
     
     inline def setSetAssociationKeyUndefined: Self = StObject.set(x, "setAssociationKey", js.undefined)
     
-    inline def setSetName(value: /* name */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    inline def setSetName(value: /* name */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
     
     inline def setSetNameUndefined: Self = StObject.set(x, "setName", js.undefined)
     
-    inline def setSetOwnerModel(value: /* ownerModel */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOwnerModel", js.Any.fromFunction1(value))
+    inline def setSetOwnerModel(value: /* ownerModel */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setOwnerModel", js.Any.fromFunction1(value))
     
     inline def setSetOwnerModelUndefined: Self = StObject.set(x, "setOwnerModel", js.undefined)
     

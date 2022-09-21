@@ -14,7 +14,7 @@ trait SocialFeedManager
      with ClientObject {
   
   /** Creates an image attachment for a future post. */
-  def createImageAttachment(name: String, description: String, imageData: js.Any): SocialAttachment = js.native
+  def createImageAttachment(name: String, description: String, imageData: Any): SocialAttachment = js.native
   
   /** Creates a post in the current user's newsfeed, in the specified user's feed, or in the specified thread.
     This method returns a new or a modified thread.
@@ -63,7 +63,7 @@ trait SocialFeedManager
     @param url Specifies the URL of the preview image relative to the personal site portal.
     @param key Specifies the URL-encoded key to decrypt the image.
     @param iv Specifies the URL-encoded initialization vector for decrypting the image. */
-  def getPreviewImage(url: String, key: String, iv: String): js.Any = js.native
+  def getPreviewImage(url: String, key: String, iv: String): Any = js.native
   
   /** Returns the server's count of unread mentions of the current user.
     The server maintains a count of unread mentions in posts, but does not track which mentions have been read.

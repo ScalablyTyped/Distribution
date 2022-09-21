@@ -109,7 +109,7 @@ object Controls {
       
       inline def setSettingsLinksUndefined: Self = StObject.set(x, "settingsLinks", js.undefined)
       
-      inline def setSettingsLinksVarargs(value: ISettingsLink*): Self = StObject.set(x, "settingsLinks", js.Array(value :_*))
+      inline def setSettingsLinksVarargs(value: ISettingsLink*): Self = StObject.set(x, "settingsLinks", js.Array(value*))
       
       inline def setSiteTitle(value: String): Self = StObject.set(x, "siteTitle", value.asInstanceOf[js.Any])
       

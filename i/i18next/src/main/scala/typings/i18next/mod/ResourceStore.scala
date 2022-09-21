@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("i18next", "ResourceStore")
 @js.native
-class ResourceStore protected () extends StObject {
+open class ResourceStore protected () extends StObject {
   def this(data: Resource, options: InitOptions) = this()
   
   var data: Resource = js.native
@@ -17,22 +17,13 @@ class ResourceStore protected () extends StObject {
     * Remove event listener
     * removes all callback when callback not specified
     */
-  @JSName("off")
-  def off_added(event: added): Unit = js.native
-  @JSName("off")
-  def off_added(event: added, callback: js.Function2[/* lng */ String, /* ns */ String, Unit]): Unit = js.native
-  @JSName("off")
-  def off_removed(event: removed): Unit = js.native
-  @JSName("off")
-  def off_removed(event: removed, callback: js.Function2[/* lng */ String, /* ns */ String, Unit]): Unit = js.native
+  def off(event: added | removed): Unit = js.native
+  def off(event: added | removed, callback: js.Function2[/* lng */ String, /* ns */ String, Unit]): Unit = js.native
   
   /**
     * Gets fired when resources got added or removed
     */
-  @JSName("on")
-  def on_added(event: added, callback: js.Function2[/* lng */ String, /* ns */ String, Unit]): Unit = js.native
-  @JSName("on")
-  def on_removed(event: removed, callback: js.Function2[/* lng */ String, /* ns */ String, Unit]): Unit = js.native
+  def on(event: added | removed, callback: js.Function2[/* lng */ String, /* ns */ String, Unit]): Unit = js.native
   
   var options: InitOptions = js.native
 }

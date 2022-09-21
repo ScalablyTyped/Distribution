@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 // -----------------------------------
-type BaseIcon = typings.photonui.photonui.Widget
+type BaseIcon = Widget
 
-type PopupMenu = typings.photonui.photonui.PopupWindow
+type PopupMenu = PopupWindow
 
-type Switch = typings.photonui.photonui.CheckBox
+type Switch = CheckBox
 
-type ToggleButton = typings.photonui.photonui.CheckBox
+type ToggleButton = CheckBox

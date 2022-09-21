@@ -17,7 +17,7 @@ trait GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult exte
   var itemMetadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult & TopLevel[Any]
   ] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult {
@@ -36,7 +36,7 @@ object GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult {
     inline def setItemMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult & TopLevel[Any]
     ): Self = StObject.set(x, "itemMetadata", value.asInstanceOf[js.Any])
     
     inline def setItemMetadataUndefined: Self = StObject.set(x, "itemMetadata", js.undefined)

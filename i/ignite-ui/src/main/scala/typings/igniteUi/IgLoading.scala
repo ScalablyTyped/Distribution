@@ -10,9 +10,9 @@ trait IgLoading
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
-  var cssClass: js.UndefOr[js.Any] = js.undefined
+  var cssClass: js.UndefOr[Any] = js.undefined
   
   var includeVerticalOffset: js.UndefOr[Boolean] = js.undefined
 }
@@ -25,7 +25,7 @@ object IgLoading {
   
   extension [Self <: IgLoading](x: Self) {
     
-    inline def setCssClass(value: js.Any): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    inline def setCssClass(value: Any): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
     inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     

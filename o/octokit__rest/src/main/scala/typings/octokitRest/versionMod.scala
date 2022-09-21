@@ -8,5 +8,5 @@ object versionMod {
   
   @JSImport("@octokit/rest/dist-types/version", "VERSION")
   @js.native
-  val VERSION: /* "18.0.9" */ String = js.native
+  val VERSION: /* "19.0.4" */ String = js.native
 }

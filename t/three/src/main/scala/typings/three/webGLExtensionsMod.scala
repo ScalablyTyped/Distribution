@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.std.WebGLRenderingContext
+import typings.three.webGLCapabilitiesMod.WebGLCapabilities
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,11 +10,13 @@ object webGLExtensionsMod {
   
   @JSImport("three/src/renderers/webgl/WebGLExtensions", "WebGLExtensions")
   @js.native
-  class WebGLExtensions protected () extends StObject {
+  open class WebGLExtensions protected () extends StObject {
     def this(gl: WebGLRenderingContext) = this()
     
-    def get(name: String): js.Any = js.native
+    def get(name: String): Any = js.native
     
     def has(name: String): Boolean = js.native
+    
+    def init(capabilities: WebGLCapabilities): Unit = js.native
   }
 }

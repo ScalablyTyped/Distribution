@@ -1,13 +1,14 @@
 package typings.xstate
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Partial
 import typings.std.Record
-import typings.xstate.anon.ContextTContext
-import typings.xstate.anon.`4`
-import typings.xstate.mod.State
+import typings.xstate.anon.Context
+import typings.xstate.anon.`8`
+import typings.xstate.stateMod.State
 import typings.xstate.stateNodeMod.StateNode
+import typings.xstate.typegenTypesMod.TypegenDisabled
 import typings.xstate.typesMod.Action
 import typings.xstate.typesMod.ActionType
 import typings.xstate.typesMod.ActionTypes.NullEvent
@@ -21,8 +22,10 @@ import typings.xstate.typesMod.Guard
 import typings.xstate.typesMod.HistoryValue
 import typings.xstate.typesMod.InvokeSourceDefinition
 import typings.xstate.typesMod.Mapper
+import typings.xstate.typesMod.Observer
 import typings.xstate.typesMod.PropertyMapper
 import typings.xstate.typesMod.SCXML.Event
+import typings.xstate.typesMod.ServiceMap
 import typings.xstate.typesMod.SingleOrArray
 import typings.xstate.typesMod.StateLike
 import typings.xstate.typesMod.StateValue
@@ -39,42 +42,46 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def createInvokeId(stateNodeId: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createInvokeId")(stateNodeId.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   inline def evaluateGuard[TContext, TEvent /* <: EventObject */](
-    machine: StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]],
+    machine: StateNode[TContext, Any, TEvent, Any, Any, TypegenDisabled],
     guard: Guard[TContext, TEvent],
     context: TContext,
     _event: Event[TEvent],
-    state: State[TContext, TEvent, js.Any, ContextTContext[TContext]]
+    state: State[TContext, TEvent, Any, Context[TContext], TypegenDisabled]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateGuard")(machine.asInstanceOf[js.Any], guard.asInstanceOf[js.Any], context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def flatten[T](array: js.Array[T | js.Array[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  inline def getActionType(action: Action[js.Any, js.Any]): ActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("getActionType")(action.asInstanceOf[js.Any]).asInstanceOf[ActionType]
+  inline def getActionType(action: Action[Any, Any]): ActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("getActionType")(action.asInstanceOf[js.Any]).asInstanceOf[ActionType]
   
   inline def getEventType[TEvent /* <: EventObject */](event: typings.xstate.typesMod.Event[TEvent]): /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventType")(event.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any]
   
-  inline def isActor(value: js.Any): /* is xstate.xstate/lib/Actor.Actor<any, xstate.xstate/lib/types.AnyEventObject> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActor")(value.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/Actor.Actor<any, xstate.xstate/lib/types.AnyEventObject> */ Boolean]
+  inline def isActor(value: Any): /* is xstate.xstate/lib/Actor.Actor<any, xstate.xstate/lib/types.AnyEventObject> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActor")(value.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/Actor.Actor<any, xstate.xstate/lib/types.AnyEventObject> */ Boolean]
   
-  inline def isArray(value: js.Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
+  inline def isArray(value: Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
+  
+  inline def isBehavior(value: Any): /* is xstate.xstate/lib/types.Behavior<any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBehavior")(value.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.Behavior<any, any> */ Boolean]
   
   inline def isBuiltInEvent(eventType: EventType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuiltInEvent")(eventType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isFunction(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
+  inline def isFunction(value: Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
-  inline def isMachine(value: js.Any): /* is xstate.xstate/lib/types.StateMachine<any, any, any, xstate.anon.ContextAny> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMachine")(value.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.StateMachine<any, any, any, xstate.anon.ContextAny> */ Boolean]
+  inline def isMachine(value: Any): /* is xstate.xstate/lib/types.AnyStateMachine */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMachine")(value.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.AnyStateMachine */ Boolean]
   
-  inline def isObservable[T](value: js.Any): /* is xstate.xstate/lib/types.Subscribable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.Subscribable<T> */ Boolean]
+  inline def isObservable[T](value: Any): /* is xstate.xstate/lib/types.Subscribable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObservable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.Subscribable<T> */ Boolean]
   
-  inline def isPromiseLike(value: js.Any): /* is std.PromiseLike<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromiseLike")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.PromiseLike<any> */ Boolean]
+  inline def isPromiseLike(value: Any): /* is std.PromiseLike<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromiseLike")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.PromiseLike<any> */ Boolean]
   
-  inline def isStateLike(state: js.Any): /* is xstate.xstate/lib/types.StateLike<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateLike")(state.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.StateLike<any> */ Boolean]
+  inline def isStateLike(state: Any): /* is xstate.xstate/lib/types.StateLike<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStateLike")(state.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.StateLike<any> */ Boolean]
   
-  inline def isString(value: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
+  inline def isString(value: Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
   inline def keys[T /* <: js.Object */](value: T): js.Array[/* keyof T */ String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[/* keyof T */ String]]
   
-  inline def mapContext[TContext, TEvent /* <: EventObject */](mapper: Mapper[TContext, TEvent, js.Any], context: TContext, _event: Event[TEvent]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapContext")(mapper.asInstanceOf[js.Any], context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def mapContext[TContext, TEvent /* <: EventObject */](mapper: PropertyMapper[TContext, TEvent, js.Any], context: TContext, _event: Event[TEvent]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapContext")(mapper.asInstanceOf[js.Any], context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mapContext[TContext, TEvent /* <: EventObject */](mapper: Mapper[TContext, TEvent, Any], context: TContext, _event: Event[TEvent]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapContext")(mapper.asInstanceOf[js.Any], context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def mapContext[TContext, TEvent /* <: EventObject */](mapper: PropertyMapper[TContext, TEvent, Any], context: TContext, _event: Event[TEvent]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mapContext")(mapper.asInstanceOf[js.Any], context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def mapFilterValues[T, P](
     collection: StringDictionary[T],
@@ -82,40 +89,62 @@ object utilsMod {
     predicate: js.Function1[/* item */ T, Boolean]
   ): StringDictionary[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapFilterValues")(collection.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[P]]
   
-  inline def mapValues[T, P](
-    collection: StringDictionary[T],
-    iteratee: js.Function4[/* item */ T, /* key */ String, /* collection */ StringDictionary[T], /* i */ Double, P]
-  ): StringDictionary[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapValues")(collection.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[P]]
+  inline def mapValues[P, O /* <: Record[String, Any] */](
+    collection: O,
+    iteratee: js.Function4[
+      /* import warning: importer.ImportType#apply Failed type conversion: O[keyof O] */ /* item */ js.Any, 
+      /* keyof O */ /* key */ String, 
+      /* collection */ O, 
+      /* i */ Double, 
+      P
+    ]
+  ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in keyof O ]: P}
+    */ typings.xstate.xstateStrings.mapValues & TopLevel[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapValues")(collection.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in keyof O ]: P}
+    */ typings.xstate.xstateStrings.mapValues & TopLevel[Any]]
   
   inline def matchesState(parentStateId: StateValue, childStateId: StateValue): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesState")(parentStateId.asInstanceOf[js.Any], childStateId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def matchesState(parentStateId: StateValue, childStateId: StateValue, delimiter: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesState")(parentStateId.asInstanceOf[js.Any], childStateId.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def nestedPath[T /* <: Record[String, js.Any] */](props: js.Array[String], accessorProp: /* keyof T */ String): js.Function1[/* object */ T, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nestedPath")(props.asInstanceOf[js.Any], accessorProp.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* object */ T, T]]
+  inline def nestedPath[T /* <: Record[String, Any] */](props: js.Array[String], accessorProp: /* keyof T */ String): js.Function1[/* object */ T, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("nestedPath")(props.asInstanceOf[js.Any], accessorProp.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* object */ T, T]]
   
   inline def normalizeTarget[TContext, TEvent /* <: EventObject */](): js.UndefOr[
-    js.Array[String | (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])]
+    js.Array[
+      String | (StateNode[TContext, Any, TEvent, Context[TContext], ServiceMap, TypegenDisabled])
+    ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTarget")().asInstanceOf[js.UndefOr[
-    js.Array[String | (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])]
+    js.Array[
+      String | (StateNode[TContext, Any, TEvent, Context[TContext], ServiceMap, TypegenDisabled])
+    ]
   ]]
-  inline def normalizeTarget[TContext, TEvent /* <: EventObject */](target: SingleOrArray[String | (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])]): js.UndefOr[
-    js.Array[String | (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])]
+  inline def normalizeTarget[TContext, TEvent /* <: EventObject */](
+    target: SingleOrArray[
+      String | (StateNode[TContext, Any, TEvent, Context[TContext], ServiceMap, TypegenDisabled])
+    ]
+  ): js.UndefOr[
+    js.Array[
+      String | (StateNode[TContext, Any, TEvent, Context[TContext], ServiceMap, TypegenDisabled])
+    ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTarget")(target.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
-    js.Array[String | (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]])]
+    js.Array[
+      String | (StateNode[TContext, Any, TEvent, Context[TContext], ServiceMap, TypegenDisabled])
+    ]
   ]]
   
   inline def partition[T, A /* <: T */, B /* <: T */](items: js.Array[T], predicate: js.Function1[/* item */ T, /* is A */ Boolean]): js.Tuple2[js.Array[A], js.Array[B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("partition")(items.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[A], js.Array[B]]]
   
-  inline def path[T /* <: Record[String, js.Any] */](props: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("path")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def path[T /* <: Record[String, Any] */](props: js.Array[String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("path")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def pathToStateValue(statePath: js.Array[String]): StateValue = ^.asInstanceOf[js.Dynamic].applyDynamic("pathToStateValue")(statePath.asInstanceOf[js.Any]).asInstanceOf[StateValue]
   
   inline def pathsToStateValue(paths: js.Array[js.Array[String]]): StateValue = ^.asInstanceOf[js.Dynamic].applyDynamic("pathsToStateValue")(paths.asInstanceOf[js.Any]).asInstanceOf[StateValue]
   
-  inline def reportUnhandledExceptionOnInvocation(originalError: js.Any, currentError: js.Any, id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reportUnhandledExceptionOnInvocation")(originalError.asInstanceOf[js.Any], currentError.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def reportUnhandledExceptionOnInvocation(originalError: Any, currentError: Any, id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reportUnhandledExceptionOnInvocation")(originalError.asInstanceOf[js.Any], currentError.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("xstate/lib/utils", "symbolObservable")
   @js.native
-  val symbolObservable: String | js.Symbol = js.native
+  val symbolObservable: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Symbol.observable */ Any = js.native
   
   inline def toArray[T](): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")().asInstanceOf[js.Array[T]]
   inline def toArray[T](value: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
@@ -138,6 +167,35 @@ object utilsMod {
   inline def toInvokeSource(src: String): InvokeSourceDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("toInvokeSource")(src.asInstanceOf[js.Any]).asInstanceOf[InvokeSourceDefinition]
   inline def toInvokeSource(src: InvokeSourceDefinition): InvokeSourceDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("toInvokeSource")(src.asInstanceOf[js.Any]).asInstanceOf[InvokeSourceDefinition]
   
+  inline def toObserver[T](): Observer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObserver")().asInstanceOf[Observer[T]]
+  inline def toObserver[T](nextHandler: js.Function1[/* value */ T, Unit]): Observer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObserver")(nextHandler.asInstanceOf[js.Any]).asInstanceOf[Observer[T]]
+  inline def toObserver[T](nextHandler: js.Function1[/* value */ T, Unit], errorHandler: js.Function1[/* error */ Any, Unit]): Observer[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObserver")(nextHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[Observer[T]]
+  inline def toObserver[T](
+    nextHandler: js.Function1[/* value */ T, Unit],
+    errorHandler: js.Function1[/* error */ Any, Unit],
+    completionHandler: js.Function0[Unit]
+  ): Observer[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObserver")(nextHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], completionHandler.asInstanceOf[js.Any])).asInstanceOf[Observer[T]]
+  inline def toObserver[T](
+    nextHandler: js.Function1[/* value */ T, Unit],
+    errorHandler: Unit,
+    completionHandler: js.Function0[Unit]
+  ): Observer[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObserver")(nextHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], completionHandler.asInstanceOf[js.Any])).asInstanceOf[Observer[T]]
+  inline def toObserver[T](nextHandler: Unit, errorHandler: js.Function1[/* error */ Any, Unit]): Observer[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObserver")(nextHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[Observer[T]]
+  inline def toObserver[T](
+    nextHandler: Unit,
+    errorHandler: js.Function1[/* error */ Any, Unit],
+    completionHandler: js.Function0[Unit]
+  ): Observer[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObserver")(nextHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], completionHandler.asInstanceOf[js.Any])).asInstanceOf[Observer[T]]
+  inline def toObserver[T](nextHandler: Unit, errorHandler: Unit, completionHandler: js.Function0[Unit]): Observer[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObserver")(nextHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], completionHandler.asInstanceOf[js.Any])).asInstanceOf[Observer[T]]
+  inline def toObserver[T](nextHandler: Partial[Observer[T]]): Observer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObserver")(nextHandler.asInstanceOf[js.Any]).asInstanceOf[Observer[T]]
+  inline def toObserver[T](nextHandler: Partial[Observer[T]], errorHandler: js.Function1[/* error */ Any, Unit]): Observer[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObserver")(nextHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[Observer[T]]
+  inline def toObserver[T](
+    nextHandler: Partial[Observer[T]],
+    errorHandler: js.Function1[/* error */ Any, Unit],
+    completionHandler: js.Function0[Unit]
+  ): Observer[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObserver")(nextHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], completionHandler.asInstanceOf[js.Any])).asInstanceOf[Observer[T]]
+  inline def toObserver[T](nextHandler: Partial[Observer[T]], errorHandler: Unit, completionHandler: js.Function0[Unit]): Observer[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObserver")(nextHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], completionHandler.asInstanceOf[js.Any])).asInstanceOf[Observer[T]]
+  
   inline def toSCXMLEvent[TEvent /* <: EventObject */](event: typings.xstate.typesMod.Event[TEvent]): Event[TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("toSCXMLEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Event[TEvent]]
   inline def toSCXMLEvent[TEvent /* <: EventObject */](event: typings.xstate.typesMod.Event[TEvent], scxmlEvent: Partial[Event[TEvent]]): Event[TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("toSCXMLEvent")(event.asInstanceOf[js.Any], scxmlEvent.asInstanceOf[js.Any])).asInstanceOf[Event[TEvent]]
   inline def toSCXMLEvent[TEvent /* <: EventObject */](event: Event[TEvent]): Event[TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("toSCXMLEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Event[TEvent]]
@@ -150,7 +208,7 @@ object utilsMod {
   inline def toStatePaths(stateValue: StateValue): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toStatePaths")(stateValue.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
   
   inline def toStateValue(stateValue: js.Array[String], delimiter: String): StateValue = (^.asInstanceOf[js.Dynamic].applyDynamic("toStateValue")(stateValue.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[StateValue]
-  inline def toStateValue(stateValue: StateLike[js.Any], delimiter: String): StateValue = (^.asInstanceOf[js.Dynamic].applyDynamic("toStateValue")(stateValue.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[StateValue]
+  inline def toStateValue(stateValue: StateLike[Any], delimiter: String): StateValue = (^.asInstanceOf[js.Dynamic].applyDynamic("toStateValue")(stateValue.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[StateValue]
   inline def toStateValue(stateValue: StateValue, delimiter: String): StateValue = (^.asInstanceOf[js.Dynamic].applyDynamic("toStateValue")(stateValue.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[StateValue]
   
   inline def toTransitionConfigArray[TContext, TEvent /* <: EventObject */](
@@ -158,20 +216,20 @@ object utilsMod {
     configLike: SingleOrArray[
       (TransitionConfig[TContext, TEvent]) | (TransitionConfigTarget[TContext, TEvent])
     ]
-  ): js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTransitionConfigArray")(event.asInstanceOf[js.Any], configLike.asInstanceOf[js.Any])).asInstanceOf[js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]]]
+  ): js.Array[(TransitionConfig[TContext, TEvent]) & `8`[TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTransitionConfigArray")(event.asInstanceOf[js.Any], configLike.asInstanceOf[js.Any])).asInstanceOf[js.Array[(TransitionConfig[TContext, TEvent]) & `8`[TEvent]]]
   inline def toTransitionConfigArray[TContext, TEvent /* <: EventObject */](
     event: Asterisk,
     configLike: SingleOrArray[
       (TransitionConfig[TContext, TEvent]) | (TransitionConfigTarget[TContext, TEvent])
     ]
-  ): js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTransitionConfigArray")(event.asInstanceOf[js.Any], configLike.asInstanceOf[js.Any])).asInstanceOf[js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]]]
+  ): js.Array[(TransitionConfig[TContext, TEvent]) & `8`[TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTransitionConfigArray")(event.asInstanceOf[js.Any], configLike.asInstanceOf[js.Any])).asInstanceOf[js.Array[(TransitionConfig[TContext, TEvent]) & `8`[TEvent]]]
   
   inline def toTransitionConfigArray_type[TContext, TEvent /* <: EventObject */](
     event: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any,
     configLike: SingleOrArray[
       (TransitionConfig[TContext, TEvent]) | (TransitionConfigTarget[TContext, TEvent])
     ]
-  ): js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTransitionConfigArray")(event.asInstanceOf[js.Any], configLike.asInstanceOf[js.Any])).asInstanceOf[js.Array[(TransitionConfig[TContext, TEvent]) & `4`[TEvent]]]
+  ): js.Array[(TransitionConfig[TContext, TEvent]) & `8`[TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTransitionConfigArray")(event.asInstanceOf[js.Any], configLike.asInstanceOf[js.Any])).asInstanceOf[js.Array[(TransitionConfig[TContext, TEvent]) & `8`[TEvent]]]
   
   inline def uniqueId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueId")().asInstanceOf[String]
   
@@ -180,7 +238,7 @@ object utilsMod {
     context: TContext,
     _event: Event[TEvent],
     assignActions: js.Array[AssignAction[TContext, TEvent]],
-    state: State[TContext, TEvent, js.Any, ContextTContext[TContext]]
+    state: State[TContext, TEvent, Any, Context[TContext], TypegenDisabled]
   ): TContext = (^.asInstanceOf[js.Dynamic].applyDynamic("updateContext")(context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], assignActions.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TContext]
   
   inline def updateHistoryStates(hist: HistoryValue, stateValue: StateValue): Record[String, js.UndefOr[HistoryValue]] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateHistoryStates")(hist.asInstanceOf[js.Any], stateValue.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.UndefOr[HistoryValue]]]
@@ -189,6 +247,6 @@ object utilsMod {
   
   @JSImport("xstate/lib/utils", "warn")
   @js.native
-  def warn: js.Function2[/* condition */ Boolean | Error, /* message */ String, Unit] = js.native
-  inline def warn_=(x: js.Function2[/* condition */ Boolean | Error, /* message */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warn")(x.asInstanceOf[js.Any])
+  def warn: js.Function2[/* condition */ Boolean | js.Error, /* message */ String, Unit] = js.native
+  inline def warn_=(x: js.Function2[/* condition */ Boolean | js.Error, /* message */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warn")(x.asInstanceOf[js.Any])
 }

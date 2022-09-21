@@ -6,25 +6,24 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/mempool_pb", "TransactionExclusion")
 @js.native
-class TransactionExclusion () extends Message {
+open class TransactionExclusion () extends Message {
   
-  def getSender(): Uint8Array | String = js.native
+  def getSender(): js.typedarray.Uint8Array | String = js.native
   
   def getSender_asB64(): String = js.native
   
-  def getSender_asU8(): Uint8Array = js.native
+  def getSender_asU8(): js.typedarray.Uint8Array = js.native
   
   def getSequenceNumber(): String = js.native
   
   def setSender(value: String): Unit = js.native
-  def setSender(value: Uint8Array): Unit = js.native
+  def setSender(value: js.typedarray.Uint8Array): Unit = js.native
   
   def setSequenceNumber(value: String): Unit = js.native
 }
@@ -35,7 +34,7 @@ object TransactionExclusion {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): TransactionExclusion = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[TransactionExclusion]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): TransactionExclusion = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[TransactionExclusion]
   
   inline def deserializeBinaryFromReader(message: TransactionExclusion, reader: BinaryReader): TransactionExclusion = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[TransactionExclusion]
   
@@ -56,20 +55,20 @@ object TransactionExclusion {
   
   trait AsObject extends StObject {
     
-    var sender: Uint8Array | String
+    var sender: js.typedarray.Uint8Array | String
     
     var sequenceNumber: String
   }
   object AsObject {
     
-    inline def apply(sender: Uint8Array | String, sequenceNumber: String): AsObject = {
+    inline def apply(sender: js.typedarray.Uint8Array | String, sequenceNumber: String): AsObject = {
       val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
     }
     
     extension [Self <: AsObject](x: Self) {
       
-      inline def setSender(value: Uint8Array | String): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+      inline def setSender(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
       
       inline def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
     }

@@ -16,7 +16,7 @@ trait RegionConstructionOptions extends StObject {
     * a selector string, a raw DOM node reference or a jQuery wrapped
     * DOM node.
     */
-  var el: js.UndefOr[js.Any] = js.undefined
+  var el: js.UndefOr[Any] = js.undefined
   
   /**
     * Element to use as context when finding el via jQuery. Defaults to the
@@ -43,7 +43,7 @@ object RegionConstructionOptions {
     
     inline def setAllowMissingElUndefined: Self = StObject.set(x, "allowMissingEl", js.undefined)
     
-    inline def setEl(value: js.Any): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: Any): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
     

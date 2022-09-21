@@ -29,7 +29,7 @@ object GetResourcePoliciesResponse {
     
     inline def setGetResourcePoliciesResponseListUndefined: Self = StObject.set(x, "GetResourcePoliciesResponseList", js.undefined)
     
-    inline def setGetResourcePoliciesResponseListVarargs(value: GluePolicy*): Self = StObject.set(x, "GetResourcePoliciesResponseList", js.Array(value :_*))
+    inline def setGetResourcePoliciesResponseListVarargs(value: GluePolicy*): Self = StObject.set(x, "GetResourcePoliciesResponseList", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

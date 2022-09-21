@@ -1,14 +1,13 @@
 package typings.denodeify
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(fn: F): js.Function1[/* repeated */ js.Any, js.Promise[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Promise[js.Any]]]
-  inline def apply(fn: F, transformer: M): js.Function1[/* repeated */ js.Any, js.Promise[js.Any]] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Promise[js.Any]]]
+  inline def apply(fn: F): js.Function1[/* repeated */ Any, js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, js.Promise[Any]]]
+  inline def apply(fn: F, transformer: M): js.Function1[/* repeated */ Any, js.Promise[Any]] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ Any, js.Promise[Any]]]
   inline def apply[R](fn: F0[R]): js.Function0[js.Promise[R]] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[R]]]
   inline def apply[R](fn: F0[R], transformer: M): js.Function0[js.Promise[R]] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Promise[R]]]
   inline def apply[A, R](fn: F1[A, R]): js.Function1[/* a */ A, js.Promise[R]] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, js.Promise[R]]]
@@ -72,27 +71,27 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback[R] = js.Function2[/* err */ Error, /* result */ R, js.Any]
+  type Callback[R] = js.Function2[/* err */ js.Error, /* result */ R, Any]
   
   @js.native
   trait F extends StObject {
     
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(args: Any*): Any = js.native
   }
   
-  type F0[R] = js.Function1[/* cb */ Callback[R], js.Any]
+  type F0[R] = js.Function1[/* cb */ Callback[R], Any]
   
-  type F1[A, R] = js.Function2[/* a */ A, /* cb */ Callback[R], js.Any]
+  type F1[A, R] = js.Function2[/* a */ A, /* cb */ Callback[R], Any]
   
-  type F2[A, B, R] = js.Function3[/* a */ A, /* b */ B, /* cb */ Callback[R], js.Any]
+  type F2[A, B, R] = js.Function3[/* a */ A, /* b */ B, /* cb */ Callback[R], Any]
   
-  type F3[A, B, C, R] = js.Function4[/* a */ A, /* b */ B, /* c */ C, /* cb */ Callback[R], js.Any]
+  type F3[A, B, C, R] = js.Function4[/* a */ A, /* b */ B, /* c */ C, /* cb */ Callback[R], Any]
   
-  type F4[A, B, C, D, R] = js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* cb */ Callback[R], js.Any]
+  type F4[A, B, C, D, R] = js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* cb */ Callback[R], Any]
   
-  type F5[A, B, C, D, E, R] = js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* cb */ Callback[R], js.Any]
+  type F5[A, B, C, D, E, R] = js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* cb */ Callback[R], Any]
   
-  type F6[A, B, C, D, E, F, R] = js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* cb */ Callback[R], js.Any]
+  type F6[A, B, C, D, E, F, R] = js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* cb */ Callback[R], Any]
   
   type F7[A, B, C, D, E, F, G, R] = js.Function8[
     /* a */ A, 
@@ -103,7 +102,7 @@ object mod {
     /* f */ F, 
     /* g */ G, 
     /* cb */ Callback[R], 
-    js.Any
+    Any
   ]
   
   type F8[A, B, C, D, E, F, G, H, R] = js.Function9[
@@ -116,12 +115,12 @@ object mod {
     /* g */ G, 
     /* h */ H, 
     /* cb */ Callback[R], 
-    js.Any
+    Any
   ]
   
   @js.native
   trait M extends StObject {
     
-    def apply(err: Error, args: js.Any*): js.Array[js.Any] = js.native
+    def apply(err: js.Error, args: Any*): js.Array[Any] = js.native
   }
 }

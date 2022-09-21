@@ -9,4 +9,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * is a common service for table cell styles.
   * @see com.sun.star.sheet.TableCellStyle
   */
-type CellStyle = typings.activexLibreoffice.com_.sun.star.style.Style
+type CellStyle = Style

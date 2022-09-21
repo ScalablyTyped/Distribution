@@ -14,7 +14,7 @@ trait ListGalleries extends StObject {
   
   def Item(Index: WdListGalleryType): ListGallery
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.ListGalleries_typekey")
   var WordDotListGalleries_typekey: ListGalleries
@@ -26,7 +26,7 @@ object ListGalleries {
     Count: Double,
     Creator: Double,
     Item: WdListGalleryType => ListGallery,
-    Parent: js.Any,
+    Parent: Any,
     WordDotListGalleries_typekey: ListGalleries
   ): ListGalleries = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object ListGalleries {
     
     inline def setItem(value: WdListGalleryType => ListGallery): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotListGalleries_typekey(value: ListGalleries): Self = StObject.set(x, "Word.ListGalleries_typekey", value.asInstanceOf[js.Any])
   }

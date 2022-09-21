@@ -12,10 +12,10 @@ object hotkeysHotkeysMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeys", "Hotkeys")
   @js.native
-  class Hotkeys protected ()
+  open class Hotkeys protected ()
     extends AbstractPureComponent2[IHotkeysProps, js.Object, js.Object] {
     def this(props: IHotkeysProps) = this()
-    def this(props: IHotkeysProps, context: js.Any) = this()
+    def this(props: IHotkeysProps, context: Any) = this()
     
     /* protected */ def validateProps(props: IHotkeysPropschildrenReac): Unit = js.native
   }

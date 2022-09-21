@@ -22,7 +22,7 @@ object helpersIndexMod {
   
   @JSImport("babylonjs/Helpers/index", "EnvironmentHelper")
   @js.native
-  class EnvironmentHelper protected ()
+  open class EnvironmentHelper protected ()
     extends typings.babylonjs.environmentHelperMod.EnvironmentHelper {
     /**
       * constructor
@@ -41,45 +41,59 @@ object helpersIndexMod {
     /**
       * Default environment texture URL.
       */
-    @JSImport("babylonjs/Helpers/index", "EnvironmentHelper._environmentTextureCDNUrl")
+    @JSImport("babylonjs/Helpers/index", "EnvironmentHelper._EnvironmentTextureCDNUrl")
     @js.native
-    def _environmentTextureCDNUrl: js.Any = js.native
-    inline def _environmentTextureCDNUrl_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_environmentTextureCDNUrl")(x.asInstanceOf[js.Any])
+    def _EnvironmentTextureCDNUrl: Any = js.native
+    inline def _EnvironmentTextureCDNUrl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EnvironmentTextureCDNUrl")(x.asInstanceOf[js.Any])
     
     /**
       * Creates the default options for the helper.
       */
-    @JSImport("babylonjs/Helpers/index", "EnvironmentHelper._getDefaultOptions")
+    @JSImport("babylonjs/Helpers/index", "EnvironmentHelper._GetDefaultOptions")
     @js.native
-    def _getDefaultOptions: js.Any = js.native
-    inline def _getDefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getDefaultOptions")(x.asInstanceOf[js.Any])
+    def _GetDefaultOptions: Any = js.native
+    inline def _GetDefaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetDefaultOptions")(x.asInstanceOf[js.Any])
     
     /**
       * Default ground texture URL.
       */
-    @JSImport("babylonjs/Helpers/index", "EnvironmentHelper._groundTextureCDNUrl")
+    @JSImport("babylonjs/Helpers/index", "EnvironmentHelper._GroundTextureCDNUrl")
     @js.native
-    def _groundTextureCDNUrl: js.Any = js.native
-    inline def _groundTextureCDNUrl_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_groundTextureCDNUrl")(x.asInstanceOf[js.Any])
+    def _GroundTextureCDNUrl: Any = js.native
+    inline def _GroundTextureCDNUrl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GroundTextureCDNUrl")(x.asInstanceOf[js.Any])
     
     /**
       * Default skybox texture URL.
       */
-    @JSImport("babylonjs/Helpers/index", "EnvironmentHelper._skyboxTextureCDNUrl")
+    @JSImport("babylonjs/Helpers/index", "EnvironmentHelper._SkyboxTextureCDNUrl")
     @js.native
-    def _skyboxTextureCDNUrl: js.Any = js.native
-    inline def _skyboxTextureCDNUrl_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_skyboxTextureCDNUrl")(x.asInstanceOf[js.Any])
+    def _SkyboxTextureCDNUrl: Any = js.native
+    inline def _SkyboxTextureCDNUrl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SkyboxTextureCDNUrl")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Helpers/index", "PhotoDome")
   @js.native
-  class PhotoDome protected ()
+  open class PhotoDome protected ()
     extends typings.babylonjs.photoDomeMod.PhotoDome {
     /**
       * Create an instance of this class and pass through the parameters to the relevant classes- Texture, StandardMaterial, and Mesh.
       * @param name Element's name, child elements will append suffixes for their own names.
       * @param textureUrlOrElement defines the url(s) or the (video) HTML element to use
       * @param options An object containing optional or exposed sub element properties
+      * @param options.resolution
+      * @param options.clickToPlay
+      * @param options.autoPlay
+      * @param options.loop
+      * @param options.size
+      * @param options.poster
+      * @param options.faceForward
+      * @param options.useDirectMapping
+      * @param options.halfDomeMode
+      * @param options.crossEyeMode
+      * @param options.generateMipMaps
+      * @param options.mesh
+      * @param scene
+      * @param onError
       */
     def this(name: String, textureUrlOrElement: String, options: AutoPlay, scene: Scene) = this()
     def this(name: String, textureUrlOrElement: js.Array[String], options: AutoPlay, scene: Scene) = this()
@@ -90,7 +104,7 @@ object helpersIndexMod {
       options: AutoPlay,
       scene: Scene,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
     def this(
@@ -99,7 +113,7 @@ object helpersIndexMod {
       options: AutoPlay,
       scene: Scene,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
     def this(
@@ -108,7 +122,7 @@ object helpersIndexMod {
       options: AutoPlay,
       scene: Scene,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
   }
@@ -139,13 +153,27 @@ object helpersIndexMod {
   
   @JSImport("babylonjs/Helpers/index", "VideoDome")
   @js.native
-  class VideoDome protected ()
+  open class VideoDome protected ()
     extends typings.babylonjs.videoDomeMod.VideoDome {
     /**
       * Create an instance of this class and pass through the parameters to the relevant classes- Texture, StandardMaterial, and Mesh.
       * @param name Element's name, child elements will append suffixes for their own names.
       * @param textureUrlOrElement defines the url(s) or the (video) HTML element to use
       * @param options An object containing optional or exposed sub element properties
+      * @param options.resolution
+      * @param options.clickToPlay
+      * @param options.autoPlay
+      * @param options.loop
+      * @param options.size
+      * @param options.poster
+      * @param options.faceForward
+      * @param options.useDirectMapping
+      * @param options.halfDomeMode
+      * @param options.crossEyeMode
+      * @param options.generateMipMaps
+      * @param options.mesh
+      * @param scene
+      * @param onError
       */
     def this(name: String, textureUrlOrElement: String, options: AutoPlay, scene: Scene) = this()
     def this(name: String, textureUrlOrElement: js.Array[String], options: AutoPlay, scene: Scene) = this()
@@ -156,7 +184,7 @@ object helpersIndexMod {
       options: AutoPlay,
       scene: Scene,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
     def this(
@@ -165,7 +193,7 @@ object helpersIndexMod {
       options: AutoPlay,
       scene: Scene,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
     def this(
@@ -174,7 +202,7 @@ object helpersIndexMod {
       options: AutoPlay,
       scene: Scene,
       onError: Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
   }
@@ -233,7 +261,7 @@ object helpersIndexMod {
       
       /**
         * Creates a default camera and a default light.
-        * @see https://doc.babylonjs.com/how_to/Fast_Build#create-default-camera-or-light
+        * @see https://doc.babylonjs.com/divingDeeper/scene/fastBuildWorld#create-default-camera-or-light
         * @param createArcRotateCamera has the default false which creates a free camera, when true creates an arc rotate camera
         * @param replace has the default false, when true replaces the active camera/light in the scene
         * @param attachCameraControls has the default false, when true attaches camera controls to the canvas.
@@ -266,7 +294,7 @@ object helpersIndexMod {
       
       /**
         * Creates a new sky box
-        * @see https://doc.babylonjs.com/how_to/Fast_Build#create-default-skybox
+        * @see https://doc.babylonjs.com/divingDeeper/scene/fastBuildWorld#create-default-skybox
         * @param environmentTexture defines the texture to use as environment texture
         * @param pbr has default false which requires the StandardMaterial to be used, when true PBRMaterial must be used
         * @param scale defines the overall scale of the skybox
@@ -351,8 +379,9 @@ object helpersIndexMod {
       
       /**
         * Creates a new VREXperienceHelper
-        * @see https://doc.babylonjs.com/how_to/webvr_helper
+        * @see https://doc.babylonjs.com/divingDeeper/cameras/webVRHelper
         * @param webVROptions defines the options used to create the new VREXperienceHelper
+        * @deprecated Please use createDefaultXRExperienceAsync instead
         * @returns a new VREXperienceHelper
         */
       def createDefaultVRExperience(): VRExperienceHelper = js.native
@@ -364,6 +393,7 @@ object helpersIndexMod {
         * @param options experience options
         * @returns a promise for a new WebXRDefaultExperience
         */
+      def createDefaultXRExperienceAsync(): js.Promise[WebXRDefaultExperience] = js.native
       def createDefaultXRExperienceAsync(options: WebXRDefaultExperienceOptions): js.Promise[WebXRDefaultExperience] = js.native
     }
   }

@@ -111,7 +111,7 @@ object LoginAccount {
     
     inline def setLoginAccountSettingsVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
-    ): Self = StObject.set(x, "loginAccountSettings", js.Array(value :_*))
+    ): Self = StObject.set(x, "loginAccountSettings", js.Array(value*))
     
     inline def setLoginUserSettings(
       value: js.Array[
@@ -123,7 +123,7 @@ object LoginAccount {
     
     inline def setLoginUserSettingsVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
-    ): Self = StObject.set(x, "loginUserSettings", js.Array(value :_*))
+    ): Self = StObject.set(x, "loginUserSettings", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

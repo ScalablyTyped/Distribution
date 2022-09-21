@@ -31,11 +31,11 @@ object PolyPolygonDescriptor {
     
     inline def setGeometry(value: PointSequenceSequence): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
     
-    inline def setGeometryVarargs(value: PointSequence*): Self = StObject.set(x, "Geometry", js.Array(value :_*))
+    inline def setGeometryVarargs(value: PointSequence*): Self = StObject.set(x, "Geometry", js.Array(value*))
     
     inline def setPolyPolygon(value: PointSequenceSequence): Self = StObject.set(x, "PolyPolygon", value.asInstanceOf[js.Any])
     
-    inline def setPolyPolygonVarargs(value: PointSequence*): Self = StObject.set(x, "PolyPolygon", js.Array(value :_*))
+    inline def setPolyPolygonVarargs(value: PointSequence*): Self = StObject.set(x, "PolyPolygon", js.Array(value*))
     
     inline def setPolygonKind(value: PolygonKind): Self = StObject.set(x, "PolygonKind", value.asInstanceOf[js.Any])
   }

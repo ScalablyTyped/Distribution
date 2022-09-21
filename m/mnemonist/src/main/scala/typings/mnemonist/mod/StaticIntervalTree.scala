@@ -3,25 +3,25 @@ package typings.mnemonist.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.mnemonist.staticIntervalTreeMod.StaticIntervalTreeGettersTuple
 import typings.mnemonist.staticIntervalTreeMod.default
-import typings.std.Iterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mnemonist", "StaticIntervalTree")
 @js.native
-class StaticIntervalTree[T] protected () extends default[T] {
+open class StaticIntervalTree[T] protected () extends default[T] {
   // Constructor
   def this(intervals: js.Array[T]) = this()
   def this(intervals: js.Array[T], getters: StaticIntervalTreeGettersTuple[T]) = this()
 }
-
 /* static members */
-@JSImport("mnemonist", "StaticIntervalTree")
-@js.native
-object StaticIntervalTree extends js.Object {
-  def from[I](iterable: StringDictionary[I]): typings.mnemonist.staticIntervalTreeMod.StaticIntervalTree[I] = js.native
+object StaticIntervalTree {
+  
+  @JSImport("mnemonist", "StaticIntervalTree")
+  @js.native
+  val ^ : js.Any = js.native
+  
   // Statics
-  def from[I](iterable: Iterable[I]): typings.mnemonist.staticIntervalTreeMod.StaticIntervalTree[I] = js.native
+  inline def from[I](iterable: js.Iterable[I]): typings.mnemonist.staticIntervalTreeMod.StaticIntervalTree[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[typings.mnemonist.staticIntervalTreeMod.StaticIntervalTree[I]]
+  inline def from[I](iterable: StringDictionary[I]): typings.mnemonist.staticIntervalTreeMod.StaticIntervalTree[I] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[typings.mnemonist.staticIntervalTreeMod.StaticIntervalTree[I]]
 }
-

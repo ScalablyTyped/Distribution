@@ -10,15 +10,15 @@ SMTP Server and Web Interface for reading and testing emails during development
 | ------------------ | :-------------: |
 | Full name          | maildev |
 | Keywords           | email, e-mail, mail, maildev, mailcatcher, testing, development, smtp |
-| # releases         | 6 |
-| # dependents       | 7 |
-| # downloads        | 1249392 |
-| # stars            | 20 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 100084.33333333333 |
+| # stars            | 3427.0 |
 
 ## Links
-- [Homepage](http://djfarrelly.github.io/MailDev/)
-- [Bugs](https://github.com/djfarrelly/maildev/issues)
-- [Repository](https://github.com/djfarrelly/maildev)
+- [Homepage](http://maildev.github.io/maildev/)
+- [Bugs](https://github.com/maildev/maildev/issues)
+- [Repository](https://github.com/maildev/maildev)
 - [Npm](https://www.npmjs.com/package/maildev)
     
 

@@ -24,7 +24,7 @@ object reporters {
     */
   @JSImport("mocha", "reporters.Base")
   @js.native
-  class Base_ protected ()
+  open class Base_ protected ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     def this(runner: typings.mocha.Mocha.Runner) = this()
@@ -183,7 +183,7 @@ object reporters {
     */
   @JSImport("mocha", "reporters.Doc")
   @js.native
-  class Doc_ ()
+  open class Doc_ ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -221,7 +221,7 @@ object reporters {
     */
   @JSImport("mocha", "reporters.Dot")
   @js.native
-  class Dot_ ()
+  open class Dot_ ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -261,7 +261,7 @@ object reporters {
     */
   @JSImport("mocha", "reporters.HTML")
   @js.native
-  class HTML_ ()
+  open class HTML_ ()
     extends StObject
        with typings.mocha.Mocha.reporters.HTML_ {
     
@@ -323,7 +323,7 @@ object reporters {
     */
   @JSImport("mocha", "reporters.JSONStream")
   @js.native
-  class JSONStream ()
+  open class JSONStream ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -361,7 +361,7 @@ object reporters {
     */
   @JSImport("mocha", "reporters.JSON")
   @js.native
-  class JSON_ ()
+  open class JSON_ ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -399,7 +399,7 @@ object reporters {
     */
   @JSImport("mocha", "reporters.Landing")
   @js.native
-  class Landing_ ()
+  open class Landing_ ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -437,7 +437,7 @@ object reporters {
     */
   @JSImport("mocha", "reporters.List")
   @js.native
-  class List_ ()
+  open class List_ ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -475,7 +475,7 @@ object reporters {
     */
   @JSImport("mocha", "reporters.Markdown")
   @js.native
-  class Markdown_ ()
+  open class Markdown_ ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -513,7 +513,7 @@ object reporters {
     */
   @JSImport("mocha", "reporters.Min")
   @js.native
-  class Min ()
+  open class Min ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -551,33 +551,33 @@ object reporters {
     */
   @JSImport("mocha", "reporters.Nyan")
   @js.native
-  class Nyan_ ()
+  open class Nyan_ ()
     extends StObject
        with typings.mocha.Mocha.reporters.Nyan_ {
     
     /* private */ /* CompleteClass */
-    var appendRainbow: js.Any = js.native
+    var appendRainbow: Any = js.native
     
     /* private */ /* CompleteClass */
-    var colorIndex: js.Any = js.native
+    var colorIndex: Any = js.native
     
     /* private */ /* CompleteClass */
-    var cursorDown: js.Any = js.native
+    var cursorDown: Any = js.native
     
     /* private */ /* CompleteClass */
-    var cursorUp: js.Any = js.native
+    var cursorUp: Any = js.native
     
     /* private */ /* CompleteClass */
-    var draw: js.Any = js.native
+    var draw: Any = js.native
     
     /* private */ /* CompleteClass */
-    var drawNyanCat: js.Any = js.native
+    var drawNyanCat: Any = js.native
     
     /* private */ /* CompleteClass */
-    var drawRainbow: js.Any = js.native
+    var drawRainbow: Any = js.native
     
     /* private */ /* CompleteClass */
-    var drawScoreboard: js.Any = js.native
+    var drawScoreboard: Any = js.native
     
     /**
       * Output common epilogue used by many of the bundled reporters.
@@ -588,7 +588,7 @@ object reporters {
     override def epilogue(): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var face: js.Any = js.native
+    var face: Any = js.native
     
     /**
       * Test failures
@@ -597,16 +597,16 @@ object reporters {
     var failures: js.Array[Test] = js.native
     
     /* private */ /* CompleteClass */
-    var generateColors: js.Any = js.native
+    var generateColors: Any = js.native
     
     /* private */ /* CompleteClass */
-    var numberOfLines: js.Any = js.native
+    var numberOfLines: Any = js.native
     
     /* private */ /* CompleteClass */
-    var rainbowColors: js.Any = js.native
+    var rainbowColors: Any = js.native
     
     /* private */ /* CompleteClass */
-    var rainbowify: js.Any = js.native
+    var rainbowify: Any = js.native
     
     /**
       * The configured runner
@@ -615,7 +615,7 @@ object reporters {
     var runner: typings.mocha.Mocha.Runner = js.native
     
     /* private */ /* CompleteClass */
-    var scoreboardWidth: js.Any = js.native
+    var scoreboardWidth: Any = js.native
     
     /**
       * Test run statistics
@@ -624,13 +624,13 @@ object reporters {
     var stats: Stats = js.native
     
     /* private */ /* CompleteClass */
-    var tick: js.Any = js.native
+    var tick: Any = js.native
     
     /* private */ /* CompleteClass */
-    var trajectories: js.Any = js.native
+    var trajectories: Any = js.native
     
     /* private */ /* CompleteClass */
-    var trajectoryWidthMax: js.Any = js.native
+    var trajectoryWidthMax: Any = js.native
   }
   
   /**
@@ -640,7 +640,7 @@ object reporters {
     */
   @JSImport("mocha", "reporters.Progress")
   @js.native
-  class Progress_ protected ()
+  open class Progress_ protected ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     def this(runner: typings.mocha.Mocha.Runner) = this()
@@ -680,7 +680,7 @@ object reporters {
     */
   @JSImport("mocha", "reporters.Spec")
   @js.native
-  class Spec_ ()
+  open class Spec_ ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -718,7 +718,7 @@ object reporters {
     */
   @JSImport("mocha", "reporters.TAP")
   @js.native
-  class TAP_ ()
+  open class TAP_ ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -756,7 +756,7 @@ object reporters {
     */
   @JSImport("mocha", "reporters.XUnit")
   @js.native
-  class XUnit_ protected ()
+  open class XUnit_ protected ()
     extends StObject
        with typings.mocha.Mocha.reporters.XUnit_ {
     def this(runner: typings.mocha.Mocha.Runner) = this()
@@ -825,7 +825,7 @@ object reporters {
   /* was `typeof Base` */
   @JSImport("mocha", "reporters.base")
   @js.native
-  class base protected ()
+  open class base protected ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     def this(runner: typings.mocha.Mocha.Runner) = this()
@@ -986,7 +986,7 @@ object reporters {
   /* was `typeof Doc` */
   @JSImport("mocha", "reporters.doc")
   @js.native
-  class doc ()
+  open class doc ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -1025,7 +1025,7 @@ object reporters {
   /* was `typeof Dot` */
   @JSImport("mocha", "reporters.dot")
   @js.native
-  class dot ()
+  open class dot ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -1066,7 +1066,7 @@ object reporters {
   /* was `typeof HTML` */
   @JSImport("mocha", "reporters.html")
   @js.native
-  class html ()
+  open class html ()
     extends StObject
        with typings.mocha.Mocha.reporters.HTML_ {
     
@@ -1129,7 +1129,7 @@ object reporters {
   /* was `typeof JSON` */
   @JSImport("mocha", "reporters.json")
   @js.native
-  class json ()
+  open class json ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -1168,7 +1168,7 @@ object reporters {
   /* was `typeof Landing` */
   @JSImport("mocha", "reporters.landing")
   @js.native
-  class landing ()
+  open class landing ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -1207,7 +1207,7 @@ object reporters {
   /* was `typeof List` */
   @JSImport("mocha", "reporters.list")
   @js.native
-  class list ()
+  open class list ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -1246,7 +1246,7 @@ object reporters {
   /* was `typeof Markdown` */
   @JSImport("mocha", "reporters.markdown")
   @js.native
-  class markdown ()
+  open class markdown ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -1285,33 +1285,33 @@ object reporters {
   /* was `typeof Nyan` */
   @JSImport("mocha", "reporters.nyan")
   @js.native
-  class nyan ()
+  open class nyan ()
     extends StObject
        with typings.mocha.Mocha.reporters.Nyan_ {
     
     /* private */ /* CompleteClass */
-    var appendRainbow: js.Any = js.native
+    var appendRainbow: Any = js.native
     
     /* private */ /* CompleteClass */
-    var colorIndex: js.Any = js.native
+    var colorIndex: Any = js.native
     
     /* private */ /* CompleteClass */
-    var cursorDown: js.Any = js.native
+    var cursorDown: Any = js.native
     
     /* private */ /* CompleteClass */
-    var cursorUp: js.Any = js.native
+    var cursorUp: Any = js.native
     
     /* private */ /* CompleteClass */
-    var draw: js.Any = js.native
+    var draw: Any = js.native
     
     /* private */ /* CompleteClass */
-    var drawNyanCat: js.Any = js.native
+    var drawNyanCat: Any = js.native
     
     /* private */ /* CompleteClass */
-    var drawRainbow: js.Any = js.native
+    var drawRainbow: Any = js.native
     
     /* private */ /* CompleteClass */
-    var drawScoreboard: js.Any = js.native
+    var drawScoreboard: Any = js.native
     
     /**
       * Output common epilogue used by many of the bundled reporters.
@@ -1322,7 +1322,7 @@ object reporters {
     override def epilogue(): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var face: js.Any = js.native
+    var face: Any = js.native
     
     /**
       * Test failures
@@ -1331,16 +1331,16 @@ object reporters {
     var failures: js.Array[Test] = js.native
     
     /* private */ /* CompleteClass */
-    var generateColors: js.Any = js.native
+    var generateColors: Any = js.native
     
     /* private */ /* CompleteClass */
-    var numberOfLines: js.Any = js.native
+    var numberOfLines: Any = js.native
     
     /* private */ /* CompleteClass */
-    var rainbowColors: js.Any = js.native
+    var rainbowColors: Any = js.native
     
     /* private */ /* CompleteClass */
-    var rainbowify: js.Any = js.native
+    var rainbowify: Any = js.native
     
     /**
       * The configured runner
@@ -1349,7 +1349,7 @@ object reporters {
     var runner: typings.mocha.Mocha.Runner = js.native
     
     /* private */ /* CompleteClass */
-    var scoreboardWidth: js.Any = js.native
+    var scoreboardWidth: Any = js.native
     
     /**
       * Test run statistics
@@ -1358,13 +1358,13 @@ object reporters {
     var stats: Stats = js.native
     
     /* private */ /* CompleteClass */
-    var tick: js.Any = js.native
+    var tick: Any = js.native
     
     /* private */ /* CompleteClass */
-    var trajectories: js.Any = js.native
+    var trajectories: Any = js.native
     
     /* private */ /* CompleteClass */
-    var trajectoryWidthMax: js.Any = js.native
+    var trajectoryWidthMax: Any = js.native
   }
   
   /**
@@ -1375,7 +1375,7 @@ object reporters {
   /* was `typeof Progress` */
   @JSImport("mocha", "reporters.progress")
   @js.native
-  class progress protected ()
+  open class progress protected ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     def this(runner: typings.mocha.Mocha.Runner) = this()
@@ -1416,7 +1416,7 @@ object reporters {
   /* was `typeof Spec` */
   @JSImport("mocha", "reporters.spec")
   @js.native
-  class spec ()
+  open class spec ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -1455,7 +1455,7 @@ object reporters {
   /* was `typeof TAP` */
   @JSImport("mocha", "reporters.tap")
   @js.native
-  class tap ()
+  open class tap ()
     extends StObject
        with typings.mocha.Mocha.reporters.Base_ {
     
@@ -1494,7 +1494,7 @@ object reporters {
   /* was `typeof XUnit` */
   @JSImport("mocha", "reporters.xunit")
   @js.native
-  class xunit protected ()
+  open class xunit protected ()
     extends StObject
        with typings.mocha.Mocha.reporters.XUnit_ {
     def this(runner: typings.mocha.Mocha.Runner) = this()

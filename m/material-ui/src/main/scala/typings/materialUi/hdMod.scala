@@ -10,10 +10,10 @@ object hdMod {
   
   @JSImport("material-ui/svg-icons/av/hd", JSImport.Default)
   @js.native
-  class default () extends AvHd
+  open class default () extends AvHd
   
   @JSImport("material-ui/svg-icons/av/hd", "AvHd")
   @js.native
-  class AvHd ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvHd ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

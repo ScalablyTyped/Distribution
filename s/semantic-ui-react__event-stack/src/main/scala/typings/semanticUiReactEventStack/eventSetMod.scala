@@ -10,7 +10,7 @@ object eventSetMod {
   
   @JSImport("@semantic-ui-react/event-stack/lib/types/lib/EventSet", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with EventSet {
     /**
@@ -32,7 +32,7 @@ object eventSetMod {
     override def dispatchEvent(event: Event, dispatchAll: Boolean): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override val handlers: js.Any = js.native
+    override val handlers: Any = js.native
     
     /* CompleteClass */
     override def hasHandlers(): Boolean = js.native
@@ -57,7 +57,7 @@ object eventSetMod {
       */
     def dispatchEvent(event: Event, dispatchAll: Boolean): Unit
     
-    /* private */ val handlers: js.Any
+    /* private */ val handlers: Any
     
     def hasHandlers(): Boolean
     
@@ -71,7 +71,7 @@ object eventSetMod {
     inline def apply(
       addHandlers: EventListeners => EventSet,
       dispatchEvent: (Event, Boolean) => Unit,
-      handlers: js.Any,
+      handlers: Any,
       hasHandlers: () => Boolean,
       removeHandlers: EventListeners => EventSet
     ): EventSet = {
@@ -85,7 +85,7 @@ object eventSetMod {
       
       inline def setDispatchEvent(value: (Event, Boolean) => Unit): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction2(value))
       
-      inline def setHandlers(value: js.Any): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+      inline def setHandlers(value: Any): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
       inline def setHasHandlers(value: () => Boolean): Self = StObject.set(x, "hasHandlers", js.Any.fromFunction0(value))
       

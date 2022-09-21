@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HumanLoopConfig extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the human task user interface.
+    * The Amazon Resource Name (ARN) of the human task user interface. You can use standard HTML and Crowd HTML Elements to create a custom worker task template. You use this template to create a human task UI. To learn how to create a custom HTML template, see Create Custom Worker Task Template. To learn how to create a human task UI, which is a worker task template that can be used in a flow definition, see Create and Delete a Worker Task Templates.
     */
   var HumanTaskUiArn: typings.awsSdk.sagemakerMod.HumanTaskUiArn
   
@@ -34,7 +34,7 @@ trait HumanLoopConfig extends StObject {
   var TaskKeywords: js.UndefOr[FlowDefinitionTaskKeywords] = js.undefined
   
   /**
-    * The amount of time that a worker has to complete a task. The default value is 3,600 seconds (1 hour)
+    * The amount of time that a worker has to complete a task. The default value is 3,600 seconds (1 hour).
     */
   var TaskTimeLimitInSeconds: js.UndefOr[FlowDefinitionTaskTimeLimitInSeconds] = js.undefined
   
@@ -44,7 +44,7 @@ trait HumanLoopConfig extends StObject {
   var TaskTitle: FlowDefinitionTaskTitle
   
   /**
-    * Amazon Resource Name (ARN) of a team of workers.
+    * Amazon Resource Name (ARN) of a team of workers. To learn more about the types of workforces and work teams you can create and use with Amazon A2I, see Create and Manage Workforces.
     */
   var WorkteamArn: typings.awsSdk.sagemakerMod.WorkteamArn
 }
@@ -81,7 +81,7 @@ object HumanLoopConfig {
     
     inline def setTaskKeywordsUndefined: Self = StObject.set(x, "TaskKeywords", js.undefined)
     
-    inline def setTaskKeywordsVarargs(value: FlowDefinitionTaskKeyword*): Self = StObject.set(x, "TaskKeywords", js.Array(value :_*))
+    inline def setTaskKeywordsVarargs(value: FlowDefinitionTaskKeyword*): Self = StObject.set(x, "TaskKeywords", js.Array(value*))
     
     inline def setTaskTimeLimitInSeconds(value: FlowDefinitionTaskTimeLimitInSeconds): Self = StObject.set(x, "TaskTimeLimitInSeconds", value.asInstanceOf[js.Any])
     

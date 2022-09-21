@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("athenajs", "Tile")
 @js.native
-class Tile protected () extends StObject {
+open class Tile protected () extends StObject {
   def this(options: JSObject) = this()
   
   var downCollide: Boolean = js.native

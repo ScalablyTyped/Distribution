@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a new RoomPermissions instance.
   */
-class RoomPermissions ()
+open class RoomPermissions ()
   extends StObject
      with typings.smartFoxServer.SFS2X.Requests.RoomPermissions {
   

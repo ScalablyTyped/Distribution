@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.ApplicationTrigger")
 @js.native
 /** Creates a new ApplicationTrigger class */
-class ApplicationTrigger ()
+open class ApplicationTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.ApplicationTrigger

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_firebasedynamiclinks
 
-Typings are for version 1.0.20201113
+Typings are for version 1.0.20220810
 
 ## Library description:
 TypeScript typings for Firebase Dynamic Links API v1
@@ -10,10 +10,10 @@ TypeScript typings for Firebase Dynamic Links API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.firebasedynamiclinks |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 1 |
-| # downloads        | 1254 |
-| # stars            | 0 |
+| # releases         | 107 |
+| # dependents       | 0.0 |
+| # downloads        | 1254.6666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

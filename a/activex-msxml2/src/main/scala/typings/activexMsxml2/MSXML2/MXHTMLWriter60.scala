@@ -29,7 +29,7 @@ trait MXHTMLWriter60 extends StObject {
   var omitXMLDeclaration: Boolean
   
   /** Set or get the output. */
-  var output: js.Any
+  var output: Any
   
   /** Set or get the standalone document declaration. */
   var standalone: Boolean
@@ -47,7 +47,7 @@ object MXHTMLWriter60 {
     flush: () => Unit,
     indent: Boolean,
     omitXMLDeclaration: Boolean,
-    output: js.Any,
+    output: Any,
     standalone: Boolean,
     version: String
   ): MXHTMLWriter60 = {
@@ -72,7 +72,7 @@ object MXHTMLWriter60 {
     
     inline def setOmitXMLDeclaration(value: Boolean): Self = StObject.set(x, "omitXMLDeclaration", value.asInstanceOf[js.Any])
     
-    inline def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
     

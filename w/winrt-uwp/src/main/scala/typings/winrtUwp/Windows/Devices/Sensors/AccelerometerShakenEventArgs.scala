@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccelerometerShakenEventArgs extends StObject {
   
   /** Gets the time at which the sensor reported the shaken event. */
-  var timestamp: Date
+  var timestamp: js.Date
 }
 object AccelerometerShakenEventArgs {
   
-  inline def apply(timestamp: Date): AccelerometerShakenEventArgs = {
+  inline def apply(timestamp: js.Date): AccelerometerShakenEventArgs = {
     val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccelerometerShakenEventArgs]
   }
   
   extension [Self <: AccelerometerShakenEventArgs](x: Self) {
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

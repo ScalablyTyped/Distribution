@@ -15,7 +15,7 @@ trait Form
   @JSName("options")
   var options_Form: FormOptions = js.native
   
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   
   def validate(): Unit = js.native
   

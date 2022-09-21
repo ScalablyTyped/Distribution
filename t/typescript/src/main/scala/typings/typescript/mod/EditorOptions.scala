@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** @deprecated - consider using EditorSettings instead */
 trait EditorOptions extends StObject {
   
   var BaseIndentSize: js.UndefOr[Double] = js.undefined

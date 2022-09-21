@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RemovalChange
   extends StObject
-     with Change[js.Any] {
+     with Change[Any] {
   
   var ccid: String
   

@@ -6,36 +6,36 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Provides information about the table that raised the filter applied event.
   *
+  * @remarks
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
 trait TableFilteredEventArgs extends StObject {
   
   /**
+    * Gets the ID of the table in which the filter is applied.
     *
-    * Gets the id of the table in which the filter is applied.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var tableId: String
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var `type`: TableFiltered
   
   /**
+    * Gets the ID of the worksheet which contains the table.
     *
-    * Gets the id of the worksheet which contains the table.
-    *
+    * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */

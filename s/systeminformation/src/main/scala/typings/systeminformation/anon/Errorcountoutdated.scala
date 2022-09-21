@@ -41,6 +41,6 @@ object Errorcountoutdated {
     
     inline def setTable(value: js.Array[Lifetimehours]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    inline def setTableVarargs(value: Lifetimehours*): Self = StObject.set(x, "table", js.Array(value :_*))
+    inline def setTableVarargs(value: Lifetimehours*): Self = StObject.set(x, "table", js.Array(value*))
   }
 }

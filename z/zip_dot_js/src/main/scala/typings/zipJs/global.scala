@@ -15,7 +15,7 @@ object global {
     
     @JSGlobal("zip.BlobReader")
     @js.native
-    class BlobReader protected ()
+    open class BlobReader protected ()
       extends StObject
          with typings.zipJs.zip.Reader {
       def this(blob: Blob) = this()
@@ -23,7 +23,7 @@ object global {
     
     @JSGlobal("zip.BlobWriter")
     @js.native
-    class BlobWriter protected ()
+    open class BlobWriter protected ()
       extends StObject
          with typings.zipJs.zip.Writer {
       def this(contentType: String) = this()
@@ -31,7 +31,7 @@ object global {
     
     @JSGlobal("zip.Data64URIReader")
     @js.native
-    class Data64URIReader protected ()
+    open class Data64URIReader protected ()
       extends StObject
          with typings.zipJs.zip.Reader {
       def this(dataURI: String) = this()
@@ -39,7 +39,7 @@ object global {
     
     @JSGlobal("zip.Data64URIWriter")
     @js.native
-    class Data64URIWriter ()
+    open class Data64URIWriter ()
       extends StObject
          with typings.zipJs.zip.Writer {
       def this(mimeString: String) = this()
@@ -47,7 +47,7 @@ object global {
     
     @JSGlobal("zip.FileWriter")
     @js.native
-    class FileWriter protected ()
+    open class FileWriter protected ()
       extends StObject
          with typings.zipJs.zip.Writer {
       def this(fileEntry: FileEntry) = this()
@@ -55,7 +55,7 @@ object global {
     
     @JSGlobal("zip.HttpReader")
     @js.native
-    class HttpReader protected ()
+    open class HttpReader protected ()
       extends StObject
          with typings.zipJs.zip.Reader {
       def this(url: String) = this()
@@ -63,13 +63,13 @@ object global {
     
     @JSGlobal("zip.Reader")
     @js.native
-    class Reader ()
+    open class Reader ()
       extends StObject
          with typings.zipJs.zip.Reader
     
     @JSGlobal("zip.TextReader")
     @js.native
-    class TextReader protected ()
+    open class TextReader protected ()
       extends StObject
          with typings.zipJs.zip.Reader {
       def this(text: String) = this()
@@ -77,7 +77,7 @@ object global {
     
     @JSGlobal("zip.TextWriter")
     @js.native
-    class TextWriter protected ()
+    open class TextWriter protected ()
       extends StObject
          with typings.zipJs.zip.Writer {
       def this(encoding: String) = this()
@@ -85,19 +85,19 @@ object global {
     
     @JSGlobal("zip.Writer")
     @js.native
-    class Writer ()
+    open class Writer ()
       extends StObject
          with typings.zipJs.zip.Writer
     
     @JSGlobal("zip.ZipReader")
     @js.native
-    class ZipReader ()
+    open class ZipReader ()
       extends StObject
          with typings.zipJs.zip.ZipReader
     
     @JSGlobal("zip.ZipWriter")
     @js.native
-    class ZipWriter ()
+    open class ZipWriter ()
       extends StObject
          with typings.zipJs.zip.ZipWriter
     
@@ -108,7 +108,7 @@ object global {
     inline def createReader(
       reader: typings.zipJs.zip.Reader,
       callback: js.Function1[/* zipReader */ typings.zipJs.zip.ZipReader, Unit],
-      onerror: js.Function1[/* error */ js.Any, Unit]
+      onerror: js.Function1[/* error */ Any, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createReader")(reader.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def createWriter(
@@ -118,12 +118,12 @@ object global {
     inline def createWriter(
       writer: typings.zipJs.zip.Writer,
       callback: js.Function1[/* zipWriter */ typings.zipJs.zip.ZipWriter, Unit],
-      onerror: js.Function1[/* error */ js.Any, Unit]
+      onerror: js.Function1[/* error */ Any, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def createWriter(
       writer: typings.zipJs.zip.Writer,
       callback: js.Function1[/* zipWriter */ typings.zipJs.zip.ZipWriter, Unit],
-      onerror: js.Function1[/* error */ js.Any, Unit],
+      onerror: js.Function1[/* error */ Any, Unit],
       dontDeflate: Boolean
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriter")(writer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onerror.asInstanceOf[js.Any], dontDeflate.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def createWriter(

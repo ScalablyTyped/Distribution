@@ -14,11 +14,11 @@ trait BstrUrl extends StObject {
   
   val dwFlags: Double
   
-  var ppDisp: js.Any
+  var ppDisp: Any
 }
 object BstrUrl {
   
-  inline def apply(Cancel: Boolean, bstrUrl: String, bstrUrlContext: String, dwFlags: Double, ppDisp: js.Any): BstrUrl = {
+  inline def apply(Cancel: Boolean, bstrUrl: String, bstrUrlContext: String, dwFlags: Double, ppDisp: Any): BstrUrl = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], bstrUrl = bstrUrl.asInstanceOf[js.Any], bstrUrlContext = bstrUrlContext.asInstanceOf[js.Any], dwFlags = dwFlags.asInstanceOf[js.Any], ppDisp = ppDisp.asInstanceOf[js.Any])
     __obj.asInstanceOf[BstrUrl]
   }
@@ -33,6 +33,6 @@ object BstrUrl {
     
     inline def setDwFlags(value: Double): Self = StObject.set(x, "dwFlags", value.asInstanceOf[js.Any])
     
-    inline def setPpDisp(value: js.Any): Self = StObject.set(x, "ppDisp", value.asInstanceOf[js.Any])
+    inline def setPpDisp(value: Any): Self = StObject.set(x, "ppDisp", value.asInstanceOf[js.Any])
   }
 }

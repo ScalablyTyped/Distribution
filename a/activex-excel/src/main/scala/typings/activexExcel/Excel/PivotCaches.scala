@@ -13,30 +13,24 @@ trait PivotCaches extends StObject {
   def apply(Index: Double): PivotCache = js.native
   
   def Add(SourceType: XlPivotTableSourceType): PivotCache = js.native
-  def Add(SourceType: XlPivotTableSourceType, SourceData: js.Any): PivotCache = js.native
+  def Add(SourceType: XlPivotTableSourceType, SourceData: Any): PivotCache = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
   val Count: Double = js.native
   
-  @JSName("Create")
-  def Create_1(SourceType: `1`, SourceData: String): PivotCache = js.native
-  @JSName("Create")
-  def Create_1(SourceType: `1`, SourceData: String, Version: XlPivotTableVersionList): PivotCache = js.native
+  def Create(SourceType: `1` | `3`, SourceData: String): PivotCache = js.native
+  def Create(SourceType: `1` | `3`, SourceData: String, Version: XlPivotTableVersionList): PivotCache = js.native
   @JSName("Create")
   def Create_2(SourceType: `2`, SourceData: WorkbookConnection): PivotCache = js.native
   @JSName("Create")
   def Create_2(SourceType: `2`, SourceData: WorkbookConnection, Version: XlPivotTableVersionList): PivotCache = js.native
-  @JSName("Create")
-  def Create_3(SourceType: `3`, SourceData: String): PivotCache = js.native
-  @JSName("Create")
-  def Create_3(SourceType: `3`, SourceData: String, Version: XlPivotTableVersionList): PivotCache = js.native
   
   val Creator: XlCreator = js.native
   
   def Item(Index: Double): PivotCache = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): PivotCache = js.native
+  def _Default(Index: Any): PivotCache = js.native
 }

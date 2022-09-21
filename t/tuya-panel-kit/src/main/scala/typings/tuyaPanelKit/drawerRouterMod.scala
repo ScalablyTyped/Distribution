@@ -70,9 +70,9 @@ object drawerRouterMod {
     inline def apply[ParamList /* <: ParamListBase */](
       closeDrawer: () => Unit,
       jumpTo: (js.Tuple2[
-          js.Any, 
+          Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
-        ]) | js.Array[js.Any] => Unit,
+        ]) | js.Array[Any] => Unit,
       openDrawer: () => Unit,
       toggleDrawer: () => Unit
     ): DrawerActionHelpers[ParamList] = {
@@ -152,7 +152,7 @@ object drawerRouterMod {
       
       inline def setHistory(value: js.Array[KeyType | `14`]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      inline def setHistoryVarargs(value: (KeyType | `14`)*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: (KeyType | `14`)*): Self = StObject.set(x, "history", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -160,11 +160,11 @@ object drawerRouterMod {
       
       inline def setRouteNames(value: js.Array[Extract[/* keyof ParamList */ String, String]]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
       
-      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value*))
       
       inline def setRoutes(value: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       

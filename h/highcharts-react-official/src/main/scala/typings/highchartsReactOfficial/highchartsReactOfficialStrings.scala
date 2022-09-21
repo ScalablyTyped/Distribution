@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object highchartsReactOfficialStrings {
   
   @js.native
+  sealed trait AST extends StObject
+  inline def AST: AST = "AST".asInstanceOf[AST]
+  
+  @js.native
   sealed trait Annotation extends StObject
   inline def Annotation: Annotation = "Annotation".asInstanceOf[Annotation]
   
@@ -59,6 +63,10 @@ object highchartsReactOfficialStrings {
   inline def Series: Series = "Series".asInstanceOf[Series]
   
   @js.native
+  sealed trait SeriesPalettes extends StObject
+  inline def SeriesPalettes: SeriesPalettes = "SeriesPalettes".asInstanceOf[SeriesPalettes]
+  
+  @js.native
   sealed trait Tick extends StObject
   inline def Tick: Tick = "Tick".asInstanceOf[Tick]
   
@@ -93,6 +101,10 @@ object highchartsReactOfficialStrings {
   @js.native
   sealed trait attr extends StObject
   inline def attr: attr = "attr".asInstanceOf[attr]
+  
+  @js.native
+  sealed trait callout extends StObject
+  inline def callout: callout = "callout".asInstanceOf[callout]
   
   @js.native
   sealed trait chart_ extends StObject
@@ -191,6 +203,10 @@ object highchartsReactOfficialStrings {
   inline def getOptions: getOptions = "getOptions".asInstanceOf[getOptions]
   
   @js.native
+  sealed trait getRendererType extends StObject
+  inline def getRendererType: getRendererType = "getRendererType".asInstanceOf[getRendererType]
+  
+  @js.native
   sealed trait getStyle extends StObject
   inline def getStyle: getStyle = "getStyle".asInstanceOf[getStyle]
   
@@ -265,6 +281,10 @@ object highchartsReactOfficialStrings {
   @js.native
   sealed trait reduce extends StObject
   inline def reduce: reduce = "reduce".asInstanceOf[reduce]
+  
+  @js.native
+  sealed trait registerRendererType extends StObject
+  inline def registerRendererType: registerRendererType = "registerRendererType".asInstanceOf[registerRendererType]
   
   @js.native
   sealed trait relativeLength extends StObject

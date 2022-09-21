@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_BufferedStream")
 @js.native
-class ClassBufferedStream protected ()
+open class ClassBufferedStream protected ()
   extends StObject
      with typings.fibjs.ClassBufferedStream {
   /**

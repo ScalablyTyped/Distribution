@@ -57,7 +57,7 @@ trait CellFormat extends StObject {
   
   var Orientation: Double | XlOrientation
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ShrinkToFit: Boolean | Null
   
@@ -80,7 +80,7 @@ object CellFormat {
     Interior: Interior,
     MergeCells: Boolean,
     Orientation: Double | XlOrientation,
-    Parent: js.Any,
+    Parent: Any,
     VerticalAlignment: VerticalAlignments
   ): CellFormat = {
     val __obj = js.Dynamic.literal(AddIndent = AddIndent.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Borders = Borders.asInstanceOf[js.Any], Clear = js.Any.fromFunction0(Clear), Creator = Creator.asInstanceOf[js.Any], Font = Font.asInstanceOf[js.Any], HorizontalAlignment = HorizontalAlignment.asInstanceOf[js.Any], IndentLevel = IndentLevel.asInstanceOf[js.Any], Interior = Interior.asInstanceOf[js.Any], MergeCells = MergeCells.asInstanceOf[js.Any], Orientation = Orientation.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], VerticalAlignment = VerticalAlignment.asInstanceOf[js.Any], FormulaHidden = null, Locked = null, NumberFormat = null, NumberFormatLocal = null, ShrinkToFit = null, WrapText = null)
@@ -132,7 +132,7 @@ object CellFormat {
     
     inline def setOrientation(value: Double | XlOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setShrinkToFit(value: Boolean): Self = StObject.set(x, "ShrinkToFit", value.asInstanceOf[js.Any])
     

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ValidationError extends StObject {
   
   /**
-    * The error code that indicates why the parameter or parameter combination is not valid. For more information about error codes, see Error Codes.
+    * The error code that indicates why the parameter or parameter combination is not valid. For more information about error codes, see Error codes.
     */
   var Code: js.UndefOr[String] = js.undefined
   
   /**
-    * The error message that describes why the parameter or parameter combination is not valid. For more information about error messages, see Error Codes.
+    * The error message that describes why the parameter or parameter combination is not valid. For more information about error messages, see Error codes.
     */
   var Message: js.UndefOr[String] = js.undefined
 }

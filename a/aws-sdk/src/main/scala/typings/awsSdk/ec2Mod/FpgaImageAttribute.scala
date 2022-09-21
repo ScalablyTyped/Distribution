@@ -52,7 +52,7 @@ object FpgaImageAttribute {
     
     inline def setLoadPermissionsUndefined: Self = StObject.set(x, "LoadPermissions", js.undefined)
     
-    inline def setLoadPermissionsVarargs(value: LoadPermission*): Self = StObject.set(x, "LoadPermissions", js.Array(value :_*))
+    inline def setLoadPermissionsVarargs(value: LoadPermission*): Self = StObject.set(x, "LoadPermissions", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -62,6 +62,6 @@ object FpgaImageAttribute {
     
     inline def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
-    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
+    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value*))
   }
 }

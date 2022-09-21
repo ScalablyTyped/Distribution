@@ -44,9 +44,9 @@ object mod {
     def createCanonicaliser(kind: String): Canonicalize = js.native
     def createCanonicaliser(kind: String, options: Options): Canonicalize = js.native
     
-    def getAlgorithm(uri: String): js.Any = js.native
+    def getAlgorithm(uri: String): Any = js.native
     
-    def registerAlgorithm(uri: String, implementation: js.Any): js.Any = js.native
+    def registerAlgorithm(uri: String, implementation: Any): Any = js.native
   }
   
   trait Options extends StObject {
@@ -74,5 +74,5 @@ object mod {
     }
   }
   
-  type canonicaliseCb = js.Function2[/* err */ js.Any, /* data */ String, Unit]
+  type canonicaliseCb = js.Function2[/* err */ Any, /* data */ String, Unit]
 }

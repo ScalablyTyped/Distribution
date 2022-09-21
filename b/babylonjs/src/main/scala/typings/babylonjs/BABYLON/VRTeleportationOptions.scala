@@ -57,7 +57,7 @@ object VRTeleportationOptions {
     
     inline def setFloorMeshesUndefined: Self = StObject.set(x, "floorMeshes", js.undefined)
     
-    inline def setFloorMeshesVarargs(value: Mesh*): Self = StObject.set(x, "floorMeshes", js.Array(value :_*))
+    inline def setFloorMeshesVarargs(value: Mesh*): Self = StObject.set(x, "floorMeshes", js.Array(value*))
     
     inline def setTeleportationMode(value: Double): Self = StObject.set(x, "teleportationMode", value.asInstanceOf[js.Any])
     

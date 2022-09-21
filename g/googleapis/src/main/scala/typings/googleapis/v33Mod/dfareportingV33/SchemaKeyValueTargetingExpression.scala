@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Key Value Targeting Expression.
-  */
 trait SchemaKeyValueTargetingExpression extends StObject {
   
   /**
     * Keyword expression being targeted by the ad.
     */
-  var expression: js.UndefOr[String] = js.undefined
+  var expression: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaKeyValueTargetingExpression {
   
@@ -24,6 +21,8 @@ object SchemaKeyValueTargetingExpression {
   extension [Self <: SchemaKeyValueTargetingExpression](x: Self) {
     
     inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    
+    inline def setExpressionNull: Self = StObject.set(x, "expression", null)
     
     inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
   }

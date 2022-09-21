@@ -10,10 +10,10 @@ object toolbarToolbarMod {
   
   @JSImport("material-ui/Toolbar/Toolbar", JSImport.Default)
   @js.native
-  class default () extends Toolbar
+  open class default () extends Toolbar
   
   @JSImport("material-ui/Toolbar/Toolbar", "Toolbar")
   @js.native
-  class Toolbar ()
-    extends Component[ToolbarProps, js.Object, js.Any]
+  open class Toolbar ()
+    extends Component[ToolbarProps, js.Object, Any]
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for tildify
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Convert an absolute path to a tilde path: `/Users/sindresorhus/dev` → `~/dev`
@@ -10,10 +10,10 @@ Convert an absolute path to a tilde path: `/Users/sindresorhus/dev` → `~/dev`
 | ------------------ | :-------------: |
 | Full name          | tildify |
 | Keywords           | unexpand, homedir, tilde, tildify, collapse, path, home, directory, user, expand, convert |
-| # releases         | 2 |
-| # dependents       | 469 |
-| # downloads        | 55076529 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5779289.333333333 |
+| # stars            | 79.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/tildify#readme)

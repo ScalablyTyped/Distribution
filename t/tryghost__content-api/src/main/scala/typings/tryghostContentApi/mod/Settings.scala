@@ -30,6 +30,8 @@ trait Settings
   
   var navigation: js.UndefOr[js.Array[Label]] = js.undefined
   
+  var secondary_navigation: js.UndefOr[js.Array[Label]] = js.undefined
+  
   var timezone: js.UndefOr[String] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
@@ -87,7 +89,13 @@ object Settings {
     
     inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
     
-    inline def setNavigationVarargs(value: Label*): Self = StObject.set(x, "navigation", js.Array(value :_*))
+    inline def setNavigationVarargs(value: Label*): Self = StObject.set(x, "navigation", js.Array(value*))
+    
+    inline def setSecondary_navigation(value: js.Array[Label]): Self = StObject.set(x, "secondary_navigation", value.asInstanceOf[js.Any])
+    
+    inline def setSecondary_navigationUndefined: Self = StObject.set(x, "secondary_navigation", js.undefined)
+    
+    inline def setSecondary_navigationVarargs(value: Label*): Self = StObject.set(x, "secondary_navigation", js.Array(value*))
     
     inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     

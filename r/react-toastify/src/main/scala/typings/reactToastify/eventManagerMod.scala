@@ -1,6 +1,7 @@
 package typings.reactToastify
 
 import typings.react.mod.ReactNode
+import typings.reactToastify.anon.TypeofsetTimeout
 import typings.reactToastify.reactToastifyNumbers.`0`
 import typings.reactToastify.reactToastifyNumbers.`1`
 import typings.reactToastify.reactToastifyNumbers.`2`
@@ -11,6 +12,7 @@ import typings.reactToastify.typesMod.ClearWaitingQueueParams
 import typings.reactToastify.typesMod.Id
 import typings.reactToastify.typesMod.NotValidatedToastProps
 import typings.reactToastify.typesMod.ToastContent
+import typings.reactToastify.typesMod.ToastItem
 import typings.reactToastify.useToastContainerMod.ContainerInstance
 import typings.std.Map
 import typings.std.ReturnType
@@ -70,11 +72,7 @@ object eventManagerMod {
     @JSName("emit")
     def emit_3(event: `3`, containerInstance: ContainerInstance): Unit = js.native
     @JSName("emit")
-    def emit_4(event: `4`, toast: Double): Unit = js.native
-    @JSName("emit")
-    def emit_4(event: `4`, toast: Double, containerId: String): Unit = js.native
-    @JSName("emit")
-    def emit_4(event: `4`, toast: Double, containerId: Double): Unit = js.native
+    def emit_4(event: `4`, data: ToastItem[js.Object]): Unit = js.native
     @JSName("emit")
     def emit_5(event: `5`, params: ClearWaitingQueueParams): Unit = js.native
     
@@ -97,7 +95,7 @@ object eventManagerMod {
     def on_5(event: `5`, callback: OnClearWaitingQueue): EventManager_ = js.native
   }
   
-  type OnChangeCallback = js.Function2[/* toast */ Double, /* containerId */ js.UndefOr[Double | String], Unit]
+  type OnChangeCallback = js.Function1[/* toast */ ToastItem[js.Object], Unit]
   
   type OnClearCallback = js.Function1[/* id */ js.UndefOr[Id], Unit]
   
@@ -105,11 +103,9 @@ object eventManagerMod {
   
   type OnDidMountCallback = js.Function1[/* containerInstance */ ContainerInstance, Unit]
   
-  type OnShowCallback = js.Function2[/* content */ ToastContent, /* options */ NotValidatedToastProps, Unit]
+  type OnShowCallback = js.Function2[/* content */ ToastContent[Any], /* options */ NotValidatedToastProps, Unit]
   
   type OnWillUnmountCallback = OnDidMountCallback
   
-  type TimeoutId = ReturnType[
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.setTimeout */ js.Any
-  ]
+  type TimeoutId = ReturnType[TypeofsetTimeout]
 }

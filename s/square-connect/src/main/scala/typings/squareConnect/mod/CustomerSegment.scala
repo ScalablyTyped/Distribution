@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CustomerSegment")
 @js.native
-class CustomerSegment () extends StObject {
+open class CustomerSegment () extends StObject {
   
   /**
     * The timestamp when the segment was created, in RFC 3339 format.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsRequest extends StObject {
   
   /**
-    * The function's Amazon Resource Name (ARN).
+    * The function's Amazon Resource Name (ARN). Note: Lambda does not support adding tags to aliases or versions.
     */
   var Resource: FunctionArn
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.XHRRequest")
 @js.native
-class XHRRequest protected ()
+open class XHRRequest protected ()
   extends StObject
      with typings.preloadjs.createjs.XHRRequest {
   def this(item: js.Object) = this()

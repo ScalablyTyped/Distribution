@@ -1,6 +1,5 @@
 package typings.reactHtmlParser
 
-import typings.domhandler.mod.DomElement
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,15 +14,31 @@ object mod {
   inline def default(html: String): js.Array[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(html.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactElement]]
   inline def default(html: String, options: Options): js.Array[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactElement]]
   
-  inline def convertNodeToElement(node: DomElement, index: Double, transform: Transform): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("convertNodeToElement")(node.asInstanceOf[js.Any], index.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def convertNodeToElement(
+    node: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DomElement */ Any,
+    index: Double,
+    transform: Transform
+  ): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("convertNodeToElement")(node.asInstanceOf[js.Any], index.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   
-  inline def processNodes(nodes: js.Array[DomElement], transform: Transform): js.Array[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("processNodes")(nodes.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactElement]]
+  inline def processNodes(
+    nodes: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DomElement */ Any
+    ],
+    transform: Transform
+  ): js.Array[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("processNodes")(nodes.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactElement]]
   
   trait Options extends StObject {
     
     var decodeEntities: js.UndefOr[Boolean] = js.undefined
     
-    var preprocessNodes: js.UndefOr[js.Function1[/* nodes */ js.Array[DomElement], js.Any]] = js.undefined
+    var preprocessNodes: js.UndefOr[
+        js.Function1[
+          /* nodes */ js.Array[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DomElement */ Any
+          ], 
+          Any
+        ]
+      ] = js.undefined
     
     var transform: js.UndefOr[Transform] = js.undefined
   }
@@ -40,7 +55,11 @@ object mod {
       
       inline def setDecodeEntitiesUndefined: Self = StObject.set(x, "decodeEntities", js.undefined)
       
-      inline def setPreprocessNodes(value: /* nodes */ js.Array[DomElement] => js.Any): Self = StObject.set(x, "preprocessNodes", js.Any.fromFunction1(value))
+      inline def setPreprocessNodes(
+        value: /* nodes */ js.Array[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DomElement */ Any
+            ] => Any
+      ): Self = StObject.set(x, "preprocessNodes", js.Any.fromFunction1(value))
       
       inline def setPreprocessNodesUndefined: Self = StObject.set(x, "preprocessNodes", js.undefined)
       
@@ -53,7 +72,14 @@ object mod {
   @js.native
   trait Transform extends StObject {
     
-    def apply(node: DomElement, index: Double): ReactElement | Unit | Null = js.native
-    def apply(node: DomElement, index: Double, transform: Transform): ReactElement | Unit | Null = js.native
+    def apply(
+      node: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DomElement */ Any,
+      index: Double
+    ): ReactElement | Unit | Null = js.native
+    def apply(
+      node: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DomElement */ Any,
+      index: Double,
+      transform: Transform
+    ): ReactElement | Unit | Null = js.native
   }
 }

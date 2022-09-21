@@ -15,7 +15,7 @@ object motionBlurPostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/motionBlurPostProcess", "MotionBlurPostProcess")
   @js.native
-  class MotionBlurPostProcess protected () extends PostProcess {
+  open class MotionBlurPostProcess protected () extends PostProcess {
     /**
       * Creates a new instance MotionBlurPostProcess
       * @param name The name of the effect.
@@ -45,36 +45,38 @@ object motionBlurPostProcessMod {
     /**
       * Called on the mode changed (object based or screen based).
       */
-    /* private */ var _applyMode: js.Any = js.native
+    /* private */ var _applyMode: Any = js.native
     
-    /* private */ var _forceGeometryBuffer: js.Any = js.native
+    /* private */ var _forceGeometryBuffer: Any = js.native
     
-    /* private */ var _geometryBufferRenderer: js.Any = js.native
+    /* private */ def _geometryBufferRenderer: Any = js.native
     
-    /* private */ var _invViewProjection: js.Any = js.native
+    /* private */ var _invViewProjection: Any = js.native
     
-    /* private */ var _isObjectBased: js.Any = js.native
+    /* private */ var _isObjectBased: Any = js.native
     
-    /* private */ var _motionBlurSamples: js.Any = js.native
+    /* private */ var _motionBlurSamples: Any = js.native
     
     /**
       * Called on the effect is applied when the motion blur post-process is in object based mode.
+      * @param effect
       */
-    /* private */ var _onApplyObjectBased: js.Any = js.native
+    /* private */ var _onApplyObjectBased: Any = js.native
     
     /**
       * Called on the effect is applied when the motion blur post-process is in screen based mode.
+      * @param effect
       */
-    /* private */ var _onApplyScreenBased: js.Any = js.native
+    /* private */ var _onApplyScreenBased: Any = js.native
     
-    /* private */ var _prePassRenderer: js.Any = js.native
+    /* private */ def _prePassRenderer: Any = js.native
     
-    /* private */ var _previousViewProjection: js.Any = js.native
+    /* private */ var _previousViewProjection: Any = js.native
     
     /**
       * Called on the effect must be updated (changed mode, samples count, etc.).
       */
-    /* private */ var _updateEffect: js.Any = js.native
+    /* private */ var _updateEffect: Any = js.native
     
     /**
       * Excludes the given skinned mesh from computing bones velocities.
@@ -84,11 +86,11 @@ object motionBlurPostProcessMod {
     def excludeSkinnedMesh(skinnedMesh: AbstractMesh): Unit = js.native
     
     /**
-      * Gets wether or not the motion blur post-process is in object based mode.
+      * Gets whether or not the motion blur post-process is in object based mode.
       */
     def isObjectBased: Boolean = js.native
     /**
-      * Sets wether or not the motion blur post-process is in object based mode.
+      * Sets whether or not the motion blur post-process is in object based mode.
       */
     def isObjectBased_=(value: Boolean): Unit = js.native
     
@@ -120,7 +122,13 @@ object motionBlurPostProcessMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** @hidden */
-    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[MotionBlurPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[MotionBlurPostProcess]]
+    /**
+      * @param parsedPostProcess
+      * @param targetCamera
+      * @param scene
+      * @param rootUrl
+      * @hidden
+      */
+    inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[MotionBlurPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[MotionBlurPostProcess]]
   }
 }

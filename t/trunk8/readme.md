@@ -9,10 +9,10 @@ trunk8 is an intelligent text truncation extension to jQuery
 | ------------------ | :-------------: |
 | Full name          | trunk8 |
 | Keywords           | truncate, trunk8, jquery, text, cut-off, spill-over |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 38308 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 54049.666666666664 |
+| # stars            | 710.0 |
 
 ## Links
 - [Homepage](https://github.com/rviscomi/trunk8#readme)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("knockout", "subscribable")
 @js.native
-class subscribable[T] () extends SubscribableFunctions[T]
+open class subscribable[T] () extends SubscribableFunctions[T]
 object subscribable {
   
   @JSImport("knockout", "subscribable")
@@ -16,6 +16,6 @@ object subscribable {
   
   @JSImport("knockout", "subscribable.fn")
   @js.native
-  def fn: SubscribableFunctions[js.Any] = js.native
-  inline def fn_=(x: SubscribableFunctions[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  def fn: SubscribableFunctions[Any] = js.native
+  inline def fn_=(x: SubscribableFunctions[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

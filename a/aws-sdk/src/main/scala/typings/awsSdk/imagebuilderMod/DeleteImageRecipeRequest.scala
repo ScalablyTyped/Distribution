@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteImageRecipeRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the image recipe to delete. 
+    * The Amazon Resource Name (ARN) of the image recipe to delete.
     */
   var imageRecipeArn: ImageRecipeArn
 }

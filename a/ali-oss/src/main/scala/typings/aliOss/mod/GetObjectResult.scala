@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetObjectResult extends StObject {
   
-  var content: js.UndefOr[js.Any] = js.undefined
+  /** file content buffer if file parameter is null or ignore */
+  var content: js.UndefOr[Any] = js.undefined
   
-  // file content buffer if file parameter is null or ignore
   var res: NormalSuccessResponse
 }
 object GetObjectResult {
@@ -20,7 +20,7 @@ object GetObjectResult {
   
   extension [Self <: GetObjectResult](x: Self) {
     
-    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     

@@ -20,27 +20,27 @@ object anon {
     
     var arrowSize: Requireable[InferProps[X]]
     
-    var arrowStyle: Requireable[js.Any]
+    var arrowStyle: Requireable[Any]
     
-    var backgroundStyle: Requireable[js.Any]
+    var backgroundStyle: Requireable[Any]
     
-    var contentStyle: Requireable[js.Any]
+    var contentStyle: Requireable[Any]
     
     var displayArea: Requireable[InferProps[Height]]
     
     var duration: Requireable[Double]
     
-    var easing: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+    var easing: Requireable[js.Function1[/* repeated */ Any, Any]]
     
     var fromRect: Requireable[InferProps[Height]]
     
-    var onClose: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+    var onClose: Requireable[js.Function1[/* repeated */ Any, Any]]
     
-    var onDismiss: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+    var onDismiss: Requireable[js.Function1[/* repeated */ Any, Any]]
     
     var placement: Requireable[String]
     
-    var popoverStyle: Requireable[js.Any]
+    var popoverStyle: Requireable[Any]
     
     var visible: Requireable[Boolean]
   }
@@ -48,17 +48,17 @@ object anon {
     
     inline def apply(
       arrowSize: Requireable[InferProps[X]],
-      arrowStyle: Requireable[js.Any],
-      backgroundStyle: Requireable[js.Any],
-      contentStyle: Requireable[js.Any],
+      arrowStyle: Requireable[Any],
+      backgroundStyle: Requireable[Any],
+      contentStyle: Requireable[Any],
       displayArea: Requireable[InferProps[Height]],
       duration: Requireable[Double],
-      easing: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      easing: Requireable[js.Function1[/* repeated */ Any, Any]],
       fromRect: Requireable[InferProps[Height]],
-      onClose: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
-      onDismiss: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      onClose: Requireable[js.Function1[/* repeated */ Any, Any]],
+      onDismiss: Requireable[js.Function1[/* repeated */ Any, Any]],
       placement: Requireable[String],
-      popoverStyle: Requireable[js.Any],
+      popoverStyle: Requireable[Any],
       visible: Requireable[Boolean]
     ): ArrowSize = {
       val __obj = js.Dynamic.literal(arrowSize = arrowSize.asInstanceOf[js.Any], arrowStyle = arrowStyle.asInstanceOf[js.Any], backgroundStyle = backgroundStyle.asInstanceOf[js.Any], contentStyle = contentStyle.asInstanceOf[js.Any], displayArea = displayArea.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], fromRect = fromRect.asInstanceOf[js.Any], onClose = onClose.asInstanceOf[js.Any], onDismiss = onDismiss.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], popoverStyle = popoverStyle.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
@@ -69,27 +69,27 @@ object anon {
       
       inline def setArrowSize(value: Requireable[InferProps[X]]): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
       
-      inline def setArrowStyle(value: Requireable[js.Any]): Self = StObject.set(x, "arrowStyle", value.asInstanceOf[js.Any])
+      inline def setArrowStyle(value: Requireable[Any]): Self = StObject.set(x, "arrowStyle", value.asInstanceOf[js.Any])
       
-      inline def setBackgroundStyle(value: Requireable[js.Any]): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
+      inline def setBackgroundStyle(value: Requireable[Any]): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
       
-      inline def setContentStyle(value: Requireable[js.Any]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      inline def setContentStyle(value: Requireable[Any]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
       inline def setDisplayArea(value: Requireable[InferProps[Height]]): Self = StObject.set(x, "displayArea", value.asInstanceOf[js.Any])
       
       inline def setDuration(value: Requireable[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      inline def setEasing(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
       inline def setFromRect(value: Requireable[InferProps[Height]]): Self = StObject.set(x, "fromRect", value.asInstanceOf[js.Any])
       
-      inline def setOnClose(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
+      inline def setOnClose(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
       
-      inline def setOnDismiss(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onDismiss", value.asInstanceOf[js.Any])
+      inline def setOnDismiss(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "onDismiss", value.asInstanceOf[js.Any])
       
       inline def setPlacement(value: Requireable[String]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      inline def setPopoverStyle(value: Requireable[js.Any]): Self = StObject.set(x, "popoverStyle", value.asInstanceOf[js.Any])
+      inline def setPopoverStyle(value: Requireable[Any]): Self = StObject.set(x, "popoverStyle", value.asInstanceOf[js.Any])
       
       inline def setVisible(value: Requireable[Boolean]): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
@@ -97,18 +97,18 @@ object anon {
   
   trait Children extends StObject {
     
-    var children: Validator[js.Function1[/* repeated */ js.Any, js.Any]]
+    var children: Validator[js.Function1[/* repeated */ Any, Any]]
   }
   object Children {
     
-    inline def apply(children: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Children = {
+    inline def apply(children: Validator[js.Function1[/* repeated */ Any, Any]]): Children = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[Children]
     }
     
     extension [Self <: Children](x: Self) {
       
-      inline def setChildren(value: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Validator[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,18 +148,18 @@ object anon {
   
   trait OnPopoverDisplayed extends StObject {
     
-    var onPopoverDisplayed: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+    var onPopoverDisplayed: Requireable[js.Function1[/* repeated */ Any, Any]]
   }
   object OnPopoverDisplayed {
     
-    inline def apply(onPopoverDisplayed: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): OnPopoverDisplayed = {
+    inline def apply(onPopoverDisplayed: Requireable[js.Function1[/* repeated */ Any, Any]]): OnPopoverDisplayed = {
       val __obj = js.Dynamic.literal(onPopoverDisplayed = onPopoverDisplayed.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnPopoverDisplayed]
     }
     
     extension [Self <: OnPopoverDisplayed](x: Self) {
       
-      inline def setOnPopoverDisplayed(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onPopoverDisplayed", value.asInstanceOf[js.Any])
+      inline def setOnPopoverDisplayed(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "onPopoverDisplayed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,6 +171,8 @@ object anon {
     var arrowStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     var backgroundStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+    
+    var calculateStatusBar: js.UndefOr[Boolean] = js.undefined
     
     var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
@@ -221,6 +223,10 @@ object anon {
       
       inline def setBackgroundStyleUndefined: Self = StObject.set(x, "backgroundStyle", js.undefined)
       
+      inline def setCalculateStatusBar(value: Boolean): Self = StObject.set(x, "calculateStatusBar", value.asInstanceOf[js.Any])
+      
+      inline def setCalculateStatusBarUndefined: Self = StObject.set(x, "calculateStatusBar", js.undefined)
+      
       inline def setContentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
       inline def setContentStyleNull: Self = StObject.set(x, "contentStyle", null)
@@ -265,7 +271,7 @@ object anon {
       
       inline def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
       
-      inline def setSupportedOrientationsVarargs(value: Orientation*): Self = StObject.set(x, "supportedOrientations", js.Array(value :_*))
+      inline def setSupportedOrientationsVarargs(value: Orientation*): Self = StObject.set(x, "supportedOrientations", js.Array(value*))
       
       inline def setUseNativeDriver(value: Boolean): Self = StObject.set(x, "useNativeDriver", value.asInstanceOf[js.Any])
       

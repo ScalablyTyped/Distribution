@@ -11,17 +11,17 @@ object effectFallbacksMod {
   
   @JSImport("babylonjs/Materials/effectFallbacks", "EffectFallbacks")
   @js.native
-  class EffectFallbacks ()
+  open class EffectFallbacks ()
     extends StObject
        with IEffectFallbacks {
     
-    /* private */ var _currentRank: js.Any = js.native
+    /* private */ var _currentRank: Any = js.native
     
-    /* private */ var _defines: js.Any = js.native
+    /* private */ var _defines: Any = js.native
     
-    /* private */ var _maxRank: js.Any = js.native
+    /* private */ var _maxRank: Any = js.native
     
-    /* private */ var _mesh: js.Any = js.native
+    /* private */ var _mesh: Any = js.native
     
     /**
       * Sets the mesh to use CPU skinning when needing to fallback.
@@ -38,12 +38,12 @@ object effectFallbacksMod {
     def addFallback(rank: Double, define: String): Unit = js.native
     
     /**
-      * Checks to see if more fallbacks are still availible.
+      * Checks to see if more fallbacks are still available.
       */
     /* CompleteClass */
     var hasMoreFallbacks: Boolean = js.native
     /**
-      * Checks to see if more fallbacks are still availible.
+      * Checks to see if more fallbacks are still available.
       */
     @JSName("hasMoreFallbacks")
     def hasMoreFallbacks_MEffectFallbacks: Boolean = js.native

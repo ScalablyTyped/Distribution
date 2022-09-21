@@ -10,15 +10,12 @@ A D-Bus binding for Node
 | ------------------ | :-------------: |
 | Full name          | dbus |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 26 |
-| # downloads        | 41800 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2531.0 |
+| # stars            | 145.0 |
 
 ## Links
-- [Homepage](https://github.com/Shouqun/node-dbus#readme)
-- [Bugs](https://github.com/Shouqun/node-dbus/issues)
-- [Repository](https://github.com/Shouqun/node-dbus)
 - [Npm](https://www.npmjs.com/package/dbus)
     
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_file
 
-Typings are for version 1.0.20201103
+Typings are for version 1.0.20220729
 
 ## Library description:
 TypeScript typings for Cloud Filestore API v1
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Filestore API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.file |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 912 |
-| # stars            | 0 |
+| # releases         | 40 |
+| # dependents       | 0.0 |
+| # downloads        | 676.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

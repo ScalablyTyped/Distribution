@@ -10,10 +10,10 @@ easy javascript drag select functionality for your projects
 | ------------------ | :-------------: |
 | Full name          | dragselect |
 | Keywords           | drag, select, plain, js, javascript, vanillajs |
-| # releases         | 16 |
-| # dependents       | 5 |
-| # downloads        | 200064 |
-| # stars            | 0 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 24899.333333333332 |
+| # stars            | 430.0 |
 
 ## Links
 - [Homepage](https://ThibaultJanBeyer.com/)

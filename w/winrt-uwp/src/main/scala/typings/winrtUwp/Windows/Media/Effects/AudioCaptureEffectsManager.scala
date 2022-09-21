@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AudioCaptureEffectsManager extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_audiocaptureeffectschanged(
-    `type`: audiocaptureeffectschanged,
-    listener: TypedEventHandler[AudioCaptureEffectsManager, js.Any]
-  ): Unit = js.native
+  def addEventListener_audiocaptureeffectschanged(`type`: audiocaptureeffectschanged, listener: TypedEventHandler[AudioCaptureEffectsManager, Any]): Unit = js.native
   
   /**
     * Gets the list of audio effects on the device.
@@ -27,15 +24,12 @@ trait AudioCaptureEffectsManager extends StObject {
   def getAudioCaptureEffects(): IVectorView[AudioEffect] = js.native
   
   /** Occurs when audio process chain changes. */
-  def onaudiocaptureeffectschanged(ev: js.Any & WinRTEvent[AudioCaptureEffectsManager]): Unit = js.native
+  def onaudiocaptureeffectschanged(ev: Any & WinRTEvent[AudioCaptureEffectsManager]): Unit = js.native
   /** Occurs when audio process chain changes. */
   @JSName("onaudiocaptureeffectschanged")
-  var onaudiocaptureeffectschanged_Original: TypedEventHandler[AudioCaptureEffectsManager, js.Any] = js.native
+  var onaudiocaptureeffectschanged_Original: TypedEventHandler[AudioCaptureEffectsManager, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_audiocaptureeffectschanged(
-    `type`: audiocaptureeffectschanged,
-    listener: TypedEventHandler[AudioCaptureEffectsManager, js.Any]
-  ): Unit = js.native
+  def removeEventListener_audiocaptureeffectschanged(`type`: audiocaptureeffectschanged, listener: TypedEventHandler[AudioCaptureEffectsManager, Any]): Unit = js.native
 }

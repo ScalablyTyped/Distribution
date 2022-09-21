@@ -1,11 +1,10 @@
 package typings.babylonjs
 
-import typings.babylonjs.anon.Width
-import typings.babylonjs.anon.Y
+import typings.babylonjs.anon.Height
+import typings.babylonjs.anon.X
 import typings.babylonjs.sceneMod.Scene
+import typings.babylonjs.typesMod.Nullable
 import typings.std.AudioNode
-import typings.std.Float32Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,12 +13,12 @@ object analyserMod {
   
   @JSImport("babylonjs/Audio/analyser", "Analyser")
   @js.native
-  class Analyser protected () extends StObject {
-    /**
-      * Creates a new analyser
-      * @param scene defines hosting scene
-      */
-    def this(scene: Scene) = this()
+  /**
+    * Creates a new analyser
+    * @param scene defines hosting scene
+    */
+  open class Analyser () extends StObject {
+    def this(scene: Nullable[Scene]) = this()
     
     /**
       * Gets or sets the bar graph amplitude
@@ -31,13 +30,13 @@ object analyserMod {
       * Gets or sets the position of the debug canvas
       * @ignorenaming
       */
-    var DEBUGCANVASPOS: Y = js.native
+    var DEBUGCANVASPOS: X = js.native
     
     /**
       * Gets or sets the debug canvas size
       * @ignorenaming
       */
-    var DEBUGCANVASSIZE: Width = js.native
+    var DEBUGCANVASSIZE: Height = js.native
     
     /**
       * Gets or sets the FFT table size
@@ -51,23 +50,23 @@ object analyserMod {
       */
     var SMOOTHING: Double = js.native
     
-    /* private */ var _audioEngine: js.Any = js.native
+    /* private */ var _audioEngine: Any = js.native
     
-    /* private */ var _byteFreqs: js.Any = js.native
+    /* private */ var _byteFreqs: Any = js.native
     
-    /* private */ var _byteTime: js.Any = js.native
+    /* private */ var _byteTime: Any = js.native
     
-    /* private */ var _debugCanvas: js.Any = js.native
+    /* private */ var _debugCanvas: Any = js.native
     
-    /* private */ var _debugCanvasContext: js.Any = js.native
+    /* private */ var _debugCanvasContext: Any = js.native
     
-    /* private */ var _floatFreqs: js.Any = js.native
+    /* private */ var _floatFreqs: Any = js.native
     
-    /* private */ var _registerFunc: js.Any = js.native
+    /* private */ var _registerFunc: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _webAudioAnalyser: js.Any = js.native
+    /* private */ var _webAudioAnalyser: Any = js.native
     
     /**
       * Connects two audio nodes
@@ -91,21 +90,21 @@ object analyserMod {
       * @see https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteFrequencyData
       * @returns a Uint8Array
       */
-    def getByteFrequencyData(): Uint8Array = js.native
+    def getByteFrequencyData(): js.typedarray.Uint8Array = js.native
     
     /**
       * Gets the current waveform as a byte array
       * @see https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteTimeDomainData
       * @returns a Uint8Array
       */
-    def getByteTimeDomainData(): Uint8Array = js.native
+    def getByteTimeDomainData(): js.typedarray.Uint8Array = js.native
     
     /**
       * Gets the current frequency data as a float array
       * @see https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/getByteFrequencyData
       * @returns a Float32Array
       */
-    def getFloatFrequencyData(): Float32Array = js.native
+    def getFloatFrequencyData(): js.typedarray.Float32Array = js.native
     
     /**
       * Get the number of data values you will have to play with for the visualization

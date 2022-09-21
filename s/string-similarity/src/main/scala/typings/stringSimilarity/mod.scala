@@ -37,7 +37,7 @@ object mod {
       
       inline def setRatings(value: js.Array[Rating]): Self = StObject.set(x, "ratings", value.asInstanceOf[js.Any])
       
-      inline def setRatingsVarargs(value: Rating*): Self = StObject.set(x, "ratings", js.Array(value :_*))
+      inline def setRatingsVarargs(value: Rating*): Self = StObject.set(x, "ratings", js.Array(value*))
     }
   }
   

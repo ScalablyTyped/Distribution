@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("viewport-mercator-project", JSImport.Default)
 @js.native
-class default () extends WebMercatorViewport {
+open class default () extends WebMercatorViewport {
   def this(opts: WebMercatorViewportOptions) = this()
 }

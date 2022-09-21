@@ -10,10 +10,10 @@ object spaceBarMod {
   
   @JSImport("material-ui/svg-icons/editor/space-bar", JSImport.Default)
   @js.native
-  class default () extends EditorSpaceBar
+  open class default () extends EditorSpaceBar
   
   @JSImport("material-ui/svg-icons/editor/space-bar", "EditorSpaceBar")
   @js.native
-  class EditorSpaceBar ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorSpaceBar ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

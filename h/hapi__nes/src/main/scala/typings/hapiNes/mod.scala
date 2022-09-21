@@ -21,7 +21,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@hapi/nes", "Client")
   @js.native
-  class ClientCls protected ()
+  open class ClientCls protected ()
     extends typings.hapiNes.clientMod.Client {
     def this(url: String) = this()
     def this(url: String, options: typings.hapiNes.clientMod.Client.ClientOptions) = this()
@@ -69,18 +69,18 @@ object mod extends Shortcut {
   
   trait ServerBroadcastOptions extends StObject {
     
-    var user: js.Any
+    var user: Any
   }
   object ServerBroadcastOptions {
     
-    inline def apply(user: js.Any): ServerBroadcastOptions = {
+    inline def apply(user: Any): ServerBroadcastOptions = {
       val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerBroadcastOptions]
     }
     
     extension [Self <: ServerBroadcastOptions](x: Self) {
       
-      inline def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,7 +88,7 @@ object mod extends Shortcut {
     
     var subscription: js.UndefOr[String] = js.undefined
     
-    var user: js.UndefOr[js.Any] = js.undefined
+    var user: js.UndefOr[Any] = js.undefined
   }
   object ServerEachSocketOptions {
     
@@ -103,7 +103,7 @@ object mod extends Shortcut {
       
       inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
       
-      inline def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
       inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
@@ -111,21 +111,21 @@ object mod extends Shortcut {
   
   type ServerOnSubscribe = ServerOnSubscribeWithParams | ServerOnSubscribeWithoutParams
   
-  type ServerOnSubscribeWithParams = js.Function3[/* socket */ Socket, /* path */ String, /* params */ js.Any, js.Promise[js.Any]]
+  type ServerOnSubscribeWithParams = js.Function3[/* socket */ Socket, /* path */ String, /* params */ Any, js.Promise[Any]]
   
-  type ServerOnSubscribeWithoutParams = js.Function2[/* socket */ Socket, /* path */ String, js.Promise[js.Any]]
+  type ServerOnSubscribeWithoutParams = js.Function2[/* socket */ Socket, /* path */ String, js.Promise[Any]]
   
   type ServerOnUnSubscribe = ServerOnUnSubscribeWithParams | ServerOnUnSubscribeWithoutParams
   
-  type ServerOnUnSubscribeWithParams = js.Function3[/* socket */ Socket, /* path */ String, /* params */ js.Any, Unit]
+  type ServerOnUnSubscribeWithParams = js.Function3[/* socket */ Socket, /* path */ String, /* params */ Any, Unit]
   
   type ServerOnUnSubscribeWithoutParams = js.Function2[/* socket */ Socket, /* path */ String, Unit]
   
   trait ServerPublishOptions extends StObject {
     
-    var internal: js.UndefOr[js.Any] = js.undefined
+    var internal: js.UndefOr[Any] = js.undefined
     
-    var user: js.UndefOr[js.Any] = js.undefined
+    var user: js.UndefOr[Any] = js.undefined
   }
   object ServerPublishOptions {
     
@@ -136,11 +136,11 @@ object mod extends Shortcut {
     
     extension [Self <: ServerPublishOptions](x: Self) {
       
-      inline def setInternal(value: js.Any): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+      inline def setInternal(value: Any): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
       
       inline def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
       
-      inline def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
       inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
@@ -153,9 +153,9 @@ object mod extends Shortcut {
     var filter: js.UndefOr[
         js.Function4[
           /* path */ String, 
-          /* message */ js.Any, 
+          /* message */ Any, 
           /* options */ ServerSubscriptionOptionsFilterOptions, 
-          /* next */ js.Function2[/* isMatch */ Boolean, /* override */ js.UndefOr[js.Any], Unit], 
+          /* next */ js.Function2[/* isMatch */ Boolean, /* override */ js.UndefOr[Any], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -178,16 +178,16 @@ object mod extends Shortcut {
       inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
       inline def setFilter(
-        value: (/* path */ String, /* message */ js.Any, /* options */ ServerSubscriptionOptionsFilterOptions, /* next */ js.Function2[/* isMatch */ Boolean, /* override */ js.UndefOr[js.Any], Unit]) => Unit
+        value: (/* path */ String, /* message */ Any, /* options */ ServerSubscriptionOptionsFilterOptions, /* next */ js.Function2[/* isMatch */ Boolean, /* override */ js.UndefOr[Any], Unit]) => Unit
       ): Self = StObject.set(x, "filter", js.Any.fromFunction4(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
       inline def setOnSubscribe(value: ServerOnSubscribe): Self = StObject.set(x, "onSubscribe", value.asInstanceOf[js.Any])
       
-      inline def setOnSubscribeFunction2(value: (/* socket */ Socket, /* path */ String) => js.Promise[js.Any]): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction2(value))
+      inline def setOnSubscribeFunction2(value: (/* socket */ Socket, /* path */ String) => js.Promise[Any]): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction2(value))
       
-      inline def setOnSubscribeFunction3(value: (/* socket */ Socket, /* path */ String, /* params */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction3(value))
+      inline def setOnSubscribeFunction3(value: (/* socket */ Socket, /* path */ String, /* params */ Any) => js.Promise[Any]): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction3(value))
       
       inline def setOnSubscribeUndefined: Self = StObject.set(x, "onSubscribe", js.undefined)
       
@@ -195,7 +195,7 @@ object mod extends Shortcut {
       
       inline def setOnUnsubscribeFunction2(value: (/* socket */ Socket, /* path */ String) => Unit): Self = StObject.set(x, "onUnsubscribe", js.Any.fromFunction2(value))
       
-      inline def setOnUnsubscribeFunction3(value: (/* socket */ Socket, /* path */ String, /* params */ js.Any) => Unit): Self = StObject.set(x, "onUnsubscribe", js.Any.fromFunction3(value))
+      inline def setOnUnsubscribeFunction3(value: (/* socket */ Socket, /* path */ String, /* params */ Any) => Unit): Self = StObject.set(x, "onUnsubscribe", js.Any.fromFunction3(value))
       
       inline def setOnUnsubscribeUndefined: Self = StObject.set(x, "onUnsubscribe", js.undefined)
     }
@@ -236,15 +236,15 @@ object mod extends Shortcut {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
     }
   }
   
   trait ServerSubscriptionOptionsFilterOptions extends StObject {
     
-    var credentials: js.UndefOr[js.Any] = js.undefined
+    var credentials: js.UndefOr[Any] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
     var socket: Socket
   }
@@ -257,11 +257,11 @@ object mod extends Shortcut {
     
     extension [Self <: ServerSubscriptionOptionsFilterOptions](x: Self) {
       
-      inline def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -275,26 +275,26 @@ object mod extends Shortcut {
     
     var auth: SocketAuthObject
     
-    def disconnect(): js.Promise[js.Any]
+    def disconnect(): js.Promise[Any]
     
     var id: String
     
-    def publish(path: String, message: js.Any): js.Promise[js.Any]
+    def publish(path: String, message: Any): js.Promise[Any]
     
-    def revoke(path: String, message: js.Any): js.Promise[js.Any]
+    def revoke(path: String, message: Any): js.Promise[Any]
     
-    def send(message: js.Any): js.Promise[js.Any]
+    def send(message: Any): js.Promise[Any]
   }
   object Socket {
     
     inline def apply(
       app: js.Object,
       auth: SocketAuthObject,
-      disconnect: () => js.Promise[js.Any],
+      disconnect: () => js.Promise[Any],
       id: String,
-      publish: (String, js.Any) => js.Promise[js.Any],
-      revoke: (String, js.Any) => js.Promise[js.Any],
-      send: js.Any => js.Promise[js.Any]
+      publish: (String, Any) => js.Promise[Any],
+      revoke: (String, Any) => js.Promise[Any],
+      send: Any => js.Promise[Any]
     ): Socket = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], auth = auth.asInstanceOf[js.Any], disconnect = js.Any.fromFunction0(disconnect), id = id.asInstanceOf[js.Any], publish = js.Any.fromFunction2(publish), revoke = js.Any.fromFunction2(revoke), send = js.Any.fromFunction1(send))
       __obj.asInstanceOf[Socket]
@@ -306,38 +306,38 @@ object mod extends Shortcut {
       
       inline def setAuth(value: SocketAuthObject): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      inline def setDisconnect(value: () => js.Promise[js.Any]): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      inline def setDisconnect(value: () => js.Promise[Any]): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setPublish(value: (String, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
+      inline def setPublish(value: (String, Any) => js.Promise[Any]): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
       
-      inline def setRevoke(value: (String, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "revoke", js.Any.fromFunction2(value))
+      inline def setRevoke(value: (String, Any) => js.Promise[Any]): Self = StObject.set(x, "revoke", js.Any.fromFunction2(value))
       
-      inline def setSend(value: js.Any => js.Promise[js.Any]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: Any => js.Promise[Any]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
   }
   
   trait SocketAuthObject extends StObject {
     
-    var artifacts: js.Any
+    var artifacts: Any
     
-    var credentials: js.Any
+    var credentials: Any
     
     var isAuthenticated: Boolean
   }
   object SocketAuthObject {
     
-    inline def apply(artifacts: js.Any, credentials: js.Any, isAuthenticated: Boolean): SocketAuthObject = {
+    inline def apply(artifacts: Any, credentials: Any, isAuthenticated: Boolean): SocketAuthObject = {
       val __obj = js.Dynamic.literal(artifacts = artifacts.asInstanceOf[js.Any], credentials = credentials.asInstanceOf[js.Any], isAuthenticated = isAuthenticated.asInstanceOf[js.Any])
       __obj.asInstanceOf[SocketAuthObject]
     }
     
     extension [Self <: SocketAuthObject](x: Self) {
       
-      inline def setArtifacts(value: js.Any): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+      inline def setArtifacts(value: Any): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
       
-      inline def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
       inline def setIsAuthenticated(value: Boolean): Self = StObject.set(x, "isAuthenticated", value.asInstanceOf[js.Any])
     }
@@ -371,14 +371,14 @@ object mod extends Shortcut {
     @js.native
     trait Server extends StObject {
       
-      def broadcast(message: js.Any): Unit = js.native
-      def broadcast(message: js.Any, options: ServerBroadcastOptions): Unit = js.native
+      def broadcast(message: Any): Unit = js.native
+      def broadcast(message: Any, options: ServerBroadcastOptions): Unit = js.native
       
       def eachSocket(each: js.Function1[/* socket */ Socket, Unit]): Unit = js.native
       def eachSocket(each: js.Function1[/* socket */ Socket, Unit], options: ServerEachSocketOptions): Unit = js.native
       
-      def publish(path: String, message: js.Any): Unit = js.native
-      def publish(path: String, message: js.Any, options: ServerPublishOptions): Unit = js.native
+      def publish(path: String, message: Any): Unit = js.native
+      def publish(path: String, message: Any, options: ServerPublishOptions): Unit = js.native
       
       def subscription(path: String): Unit = js.native
       def subscription(path: String, options: ServerSubscriptionOptions): Unit = js.native

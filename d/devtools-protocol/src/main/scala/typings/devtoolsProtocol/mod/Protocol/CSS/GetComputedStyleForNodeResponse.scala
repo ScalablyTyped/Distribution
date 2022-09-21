@@ -22,6 +22,6 @@ object GetComputedStyleForNodeResponse {
     
     inline def setComputedStyle(value: js.Array[CSSComputedStyleProperty]): Self = StObject.set(x, "computedStyle", value.asInstanceOf[js.Any])
     
-    inline def setComputedStyleVarargs(value: CSSComputedStyleProperty*): Self = StObject.set(x, "computedStyle", js.Array(value :_*))
+    inline def setComputedStyleVarargs(value: CSSComputedStyleProperty*): Self = StObject.set(x, "computedStyle", js.Array(value*))
   }
 }

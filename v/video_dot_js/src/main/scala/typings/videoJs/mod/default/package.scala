@@ -1,14 +1,41 @@
 package typings.videoJs.mod.default
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
+import typings.std.ConstructorParameters
+import typings.std.Element
+import typings.std.InstanceType
+import typings.std.Record
+import typings.videoJs.mod.default.^
+import typings.videoJs.mod.videojs.Browser
+import typings.videoJs.mod.videojs.Dom
+import typings.videoJs.mod.videojs.EventTarget.Event
+import typings.videoJs.mod.videojs.EventTarget.EventListener
+import typings.videoJs.mod.videojs.Hook.BeforeSetup
+import typings.videoJs.mod.videojs.Hook.Setup
+import typings.videoJs.mod.videojs.LanguageTranslations
+import typings.videoJs.mod.videojs.Log
+import typings.videoJs.mod.videojs.Middleware
+import typings.videoJs.mod.videojs.PlayerOptions
+import typings.videoJs.mod.videojs.ReadyCallback
+import typings.videoJs.mod.videojs.TimeRange
+import typings.videoJs.mod.videojs.XhrObject
+import typings.videoJs.mod.videojs.url.URLObject
+import typings.videoJs.videoJsStrings.beforesetup
+import typings.videoJs.videoJsStrings.setup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def apply(id: js.Any): typings.videoJs.mod.videojs.Player = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any]).asInstanceOf[typings.videoJs.mod.videojs.Player]
-inline def apply(id: js.Any, options: scala.Unit, ready: js.Function0[scala.Unit]): typings.videoJs.mod.videojs.Player = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any], ready.asInstanceOf[js.Any])).asInstanceOf[typings.videoJs.mod.videojs.Player]
-inline def apply(id: js.Any, options: typings.videoJs.mod.videojs.PlayerOptions): typings.videoJs.mod.videojs.Player = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.videoJs.mod.videojs.Player]
-inline def apply(id: js.Any, options: typings.videoJs.mod.videojs.PlayerOptions, ready: js.Function0[scala.Unit]): typings.videoJs.mod.videojs.Player = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any], ready.asInstanceOf[js.Any])).asInstanceOf[typings.videoJs.mod.videojs.Player]
+inline def apply(id: String): typings.videoJs.mod.videojs.Player = ^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any]).asInstanceOf[typings.videoJs.mod.videojs.Player]
+inline def apply(id: String, options: Unit, ready: ReadyCallback): typings.videoJs.mod.videojs.Player = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any], ready.asInstanceOf[js.Any])).asInstanceOf[typings.videoJs.mod.videojs.Player]
+inline def apply(id: String, options: PlayerOptions): typings.videoJs.mod.videojs.Player = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.videoJs.mod.videojs.Player]
+inline def apply(id: String, options: PlayerOptions, ready: ReadyCallback): typings.videoJs.mod.videojs.Player = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any], ready.asInstanceOf[js.Any])).asInstanceOf[typings.videoJs.mod.videojs.Player]
+inline def apply(id: Element): typings.videoJs.mod.videojs.Player = ^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any]).asInstanceOf[typings.videoJs.mod.videojs.Player]
+inline def apply(id: Element, options: Unit, ready: ReadyCallback): typings.videoJs.mod.videojs.Player = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any], ready.asInstanceOf[js.Any])).asInstanceOf[typings.videoJs.mod.videojs.Player]
+inline def apply(id: Element, options: PlayerOptions): typings.videoJs.mod.videojs.Player = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.videoJs.mod.videojs.Player]
+inline def apply(id: Element, options: PlayerOptions, ready: ReadyCallback): typings.videoJs.mod.videojs.Player = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any], ready.asInstanceOf[js.Any])).asInstanceOf[typings.videoJs.mod.videojs.Player]
 
 /**
   * Whether or not the browser supports touch events. Included for backward
@@ -17,13 +44,13 @@ inline def apply(id: js.Any, options: typings.videoJs.mod.videojs.PlayerOptions,
   *
   * @deprecated since version 5.0
   */
-inline def TOUCH_ENABLED: scala.Boolean = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("TOUCH_ENABLED").asInstanceOf[scala.Boolean]
+inline def TOUCH_ENABLED: Boolean = ^.asInstanceOf[js.Dynamic].selectDynamic("TOUCH_ENABLED").asInstanceOf[Boolean]
 
 /**
   * Current software version. Follows semver.
   *
   */
-inline def VERSION: java.lang.String = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
+inline def VERSION: String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[String]
 
 /**
   * Adding languages so that they're available to all players.
@@ -37,7 +64,7 @@ inline def VERSION: java.lang.String = typings.videoJs.mod.default.^.asInstanceO
   *
   * @return The resulting language dictionary object
   */
-inline def addLanguage(code: java.lang.String, data: typings.videoJs.mod.videojs.LanguageTranslations): typings.videoJs.mod.videojs.LanguageTranslations = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("addLanguage")(code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.videoJs.mod.videojs.LanguageTranslations]
+inline def addLanguage(code: String, data: LanguageTranslations): LanguageTranslations = (^.asInstanceOf[js.Dynamic].applyDynamic("addLanguage")(code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LanguageTranslations]
 
 /**
   * Bind (a.k.a proxy or Context). A simple method for changing the context of a function
@@ -54,14 +81,14 @@ inline def addLanguage(code: java.lang.String, data: typings.videoJs.mod.videojs
   *
   * @return The new function that will be bound into the context given
   */
-inline def bind[F /* <: js.Function0[js.Any] */](context: js.Any, fn: F): F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("bind")(context.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[F]
-inline def bind[F /* <: js.Function0[js.Any] */](context: js.Any, fn: F, uid: scala.Double): F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("bind")(context.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], uid.asInstanceOf[js.Any])).asInstanceOf[F]
+inline def bind[F /* <: js.Function0[Any] */](context: Any, fn: F): F = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(context.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[F]
+inline def bind[F /* <: js.Function0[Any] */](context: Any, fn: F, uid: Double): F = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(context.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], uid.asInstanceOf[js.Any])).asInstanceOf[F]
 
 /**
   * A suite of browser and device tests from {@link browser}.
   *
   */
-inline def browser: typings.videoJs.mod.videojs.Browser = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("browser").asInstanceOf[typings.videoJs.mod.videojs.Browser]
+inline def browser: Browser = ^.asInstanceOf[js.Dynamic].selectDynamic("browser").asInstanceOf[Browser]
 
 /**
   * Should create a fake `TimeRange` object which mimics an HTML5 time range instance.
@@ -72,14 +99,26 @@ inline def browser: typings.videoJs.mod.videojs.Browser = typings.videoJs.mod.de
   * @param end
   *        The end of a single range.
   */
-inline def createTimeRanges(): typings.videoJs.mod.videojs.TimeRange = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("createTimeRanges")().asInstanceOf[typings.videoJs.mod.videojs.TimeRange]
-inline def createTimeRanges(start: js.Array[typings.videoJs.mod.videojs.TimeRange]): typings.videoJs.mod.videojs.TimeRange = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("createTimeRanges")(start.asInstanceOf[js.Any]).asInstanceOf[typings.videoJs.mod.videojs.TimeRange]
-inline def createTimeRanges(start: js.Array[typings.videoJs.mod.videojs.TimeRange], end: scala.Double): typings.videoJs.mod.videojs.TimeRange = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("createTimeRanges")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.videoJs.mod.videojs.TimeRange]
-inline def createTimeRanges(start: scala.Double): typings.videoJs.mod.videojs.TimeRange = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("createTimeRanges")(start.asInstanceOf[js.Any]).asInstanceOf[typings.videoJs.mod.videojs.TimeRange]
-inline def createTimeRanges(start: scala.Double, end: scala.Double): typings.videoJs.mod.videojs.TimeRange = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("createTimeRanges")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.videoJs.mod.videojs.TimeRange]
-inline def createTimeRanges(start: scala.Unit, end: scala.Double): typings.videoJs.mod.videojs.TimeRange = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("createTimeRanges")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.videoJs.mod.videojs.TimeRange]
+inline def createTimeRanges(): TimeRange = ^.asInstanceOf[js.Dynamic].applyDynamic("createTimeRanges")().asInstanceOf[TimeRange]
+inline def createTimeRanges(start: js.Array[TimeRange]): TimeRange = ^.asInstanceOf[js.Dynamic].applyDynamic("createTimeRanges")(start.asInstanceOf[js.Any]).asInstanceOf[TimeRange]
+inline def createTimeRanges(start: js.Array[TimeRange], end: Double): TimeRange = (^.asInstanceOf[js.Dynamic].applyDynamic("createTimeRanges")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[TimeRange]
+inline def createTimeRanges(start: Double): TimeRange = ^.asInstanceOf[js.Dynamic].applyDynamic("createTimeRanges")(start.asInstanceOf[js.Any]).asInstanceOf[TimeRange]
+inline def createTimeRanges(start: Double, end: Double): TimeRange = (^.asInstanceOf[js.Dynamic].applyDynamic("createTimeRanges")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[TimeRange]
+inline def createTimeRanges(start: Unit, end: Double): TimeRange = (^.asInstanceOf[js.Dynamic].applyDynamic("createTimeRanges")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[TimeRange]
 
-inline def dom: typings.videoJs.mod.videojs.Dom = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("dom").asInstanceOf[typings.videoJs.mod.videojs.Dom]
+inline def dom: Dom = ^.asInstanceOf[js.Dynamic].selectDynamic("dom").asInstanceOf[Dom]
+
+/**
+  * Used to subclass an existing class by emulating ES subclassing using the extends keyword.
+  * @param superClass super component to extend
+  * @param [subClassMethods] methods sub class will add to super
+  */
+inline def extend[TSuper /* <: Instantiable1[/* args (repeated) */ Any, Any] */, TSubClassMethods /* <: Record[
+String | js.Symbol, 
+js.ThisFunction1[/* this */ InstanceType[TSuper], /* repeated */ Any, Any]] */](superClass: TSuper): Instantiable1[/* args */ ConstructorParameters[TSuper], InstanceType[TSuper] & TSubClassMethods] = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(superClass.asInstanceOf[js.Any]).asInstanceOf[Instantiable1[/* args */ ConstructorParameters[TSuper], InstanceType[TSuper] & TSubClassMethods]]
+inline def extend[TSuper /* <: Instantiable1[/* args (repeated) */ Any, Any] */, TSubClassMethods /* <: Record[
+String | js.Symbol, 
+js.ThisFunction1[/* this */ InstanceType[TSuper], /* repeated */ Any, Any]] */](superClass: TSuper, subClassMethods: TSubClassMethods): Instantiable1[/* args */ ConstructorParameters[TSuper], InstanceType[TSuper] & TSubClassMethods] = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(superClass.asInstanceOf[js.Any], subClassMethods.asInstanceOf[js.Any])).asInstanceOf[Instantiable1[/* args */ ConstructorParameters[TSuper], InstanceType[TSuper] & TSubClassMethods]]
 
 /**
   * Format seconds as a time string, H:MM:SS or M:SS. Supplying a guide (in seconds)
@@ -93,7 +132,7 @@ inline def dom: typings.videoJs.mod.videojs.Dom = typings.videoJs.mod.default.^.
   *
   * @return Time formatted as H:MM:SS or M:SS
   */
-inline def formatTime(seconds: scala.Double, guide: scala.Double): java.lang.String = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("formatTime")(seconds.asInstanceOf[js.Any], guide.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def formatTime(seconds: Double, guide: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTime")(seconds.asInstanceOf[js.Any], guide.asInstanceOf[js.Any])).asInstanceOf[String]
 
 /**
   * Returns an array of all current players.
@@ -103,7 +142,7 @@ inline def formatTime(seconds: scala.Double, guide: scala.Double): java.lang.Str
   *         JavaScript engines.
   *
   */
-inline def getAllPlayers(): js.Array[typings.videoJs.mod.videojs.Player] = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("getAllPlayers")().asInstanceOf[js.Array[typings.videoJs.mod.videojs.Player]]
+inline def getAllPlayers(): js.Array[typings.videoJs.mod.videojs.Player] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllPlayers")().asInstanceOf[js.Array[typings.videoJs.mod.videojs.Player]]
 
 /**
   * Get a component class object by name
@@ -111,7 +150,7 @@ inline def getAllPlayers(): js.Array[typings.videoJs.mod.videojs.Player] = typin
   * @borrows Component.getComponent as getComponent
   */
 /* was `typeof Component.getComponent` */
-inline def getComponent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Component.getComponent */ js.Any = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("getComponent").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Component.getComponent */ js.Any]
+inline def getComponent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Component.getComponent */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("getComponent").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Component.getComponent */ Any]
 
 /**
   * Get a single player based on an ID or DOM element.
@@ -126,14 +165,15 @@ inline def getComponent: /* import warning: ResolveTypeQueries.resolve Couldn't 
   * @return    A player instance or `undefined` if there is no player instance
   *          matching the argument.
   */
-inline def getPlayer(id: java.lang.String): typings.videoJs.mod.videojs.Player = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("getPlayer")(id.asInstanceOf[js.Any]).asInstanceOf[typings.videoJs.mod.videojs.Player]
+inline def getPlayer(id: String): js.UndefOr[typings.videoJs.mod.videojs.Player] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlayer")(id.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.videoJs.mod.videojs.Player]]
+inline def getPlayer(id: Element): js.UndefOr[typings.videoJs.mod.videojs.Player] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlayer")(id.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.videoJs.mod.videojs.Player]]
 
 /**
   * Get an object with the currently created players, keyed by player ID
   *
   * @return    The created players
   */
-inline def getPlayers(): org.scalablytyped.runtime.StringDictionary[typings.videoJs.mod.videojs.Player] = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("getPlayers")().asInstanceOf[org.scalablytyped.runtime.StringDictionary[typings.videoJs.mod.videojs.Player]]
+inline def getPlayers(): StringDictionary[typings.videoJs.mod.videojs.Player] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlayers")().asInstanceOf[StringDictionary[typings.videoJs.mod.videojs.Player]]
 
 /**
   * Gets a plugin by name if it exists.
@@ -144,7 +184,7 @@ inline def getPlayers(): org.scalablytyped.runtime.StringDictionary[typings.vide
   * @return    The plugin (or `undefined`).
   */
 /* was `typeof Plugin.getPlugin` */
-inline def getPlugin: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugin */ js.Any = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("getPlugin").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugin */ js.Any]
+inline def getPlugin: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugin */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("getPlugin").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugin */ Any]
 
 /**
   * Gets a plugin's version, if available
@@ -155,7 +195,7 @@ inline def getPlugin: /* import warning: ResolveTypeQueries.resolve Couldn't res
   * @return    The plugin's version or an empty string.
   */
 /* was `typeof Plugin.getPluginVersion` */
-inline def getPluginVersion: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPluginVersion */ js.Any = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("getPluginVersion").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPluginVersion */ js.Any]
+inline def getPluginVersion: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPluginVersion */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("getPluginVersion").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPluginVersion */ Any]
 
 /**
   * Gets an object containing multiple Video.js plugins.
@@ -168,7 +208,7 @@ inline def getPluginVersion: /* import warning: ResolveTypeQueries.resolve Could
   *         `undefined` if no matching plugins exist).
   */
 /* was `typeof Plugin.getPlugins` */
-inline def getPlugins: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugins */ js.Any = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("getPlugins").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugins */ js.Any]
+inline def getPlugins: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugins */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("getPlugins").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.getPlugins */ Any]
 
 /**
   * Get a Tech class object by name
@@ -176,7 +216,7 @@ inline def getPlugins: /* import warning: ResolveTypeQueries.resolve Couldn't re
   * @borrows Tech.getTech as getTech
   */
 /* was `typeof Tech.getTech` */
-inline def getTech: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Tech.getTech */ js.Any = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("getTech").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Tech.getTech */ js.Any]
+inline def getTech: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Tech.getTech */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("getTech").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Tech.getTech */ Any]
 
 /**
   * Add a function hook that will only run once to a specific videojs lifecycle.
@@ -187,20 +227,14 @@ inline def getTech: /* import warning: ResolveTypeQueries.resolve Couldn't resol
   * @param fn
   *        The function or array of functions to attach.
   */
-inline def hookOnce(`type`: java.lang.String): scala.Unit = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("hookOnce")(`type`.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def hookOnce(`type`: java.lang.String, fn: js.Array[js.Function0[js.Any]]): scala.Unit = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("hookOnce")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def hookOnce(`type`: java.lang.String, fn: js.Function0[js.Any]): scala.Unit = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("hookOnce")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def hookOnce(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hookOnce")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def hookOnce(`type`: String, fn: js.Array[js.Function0[Any]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hookOnce")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def hookOnce(`type`: String, fn: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hookOnce")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def hook_beforesetup(
-  `type`: typings.videoJs.videoJsStrings.beforesetup,
-  fn: js.Array[typings.videoJs.mod.videojs.Hook.BeforeSetup]
-): scala.Unit = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("hook")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def hook_beforesetup(
-  `type`: typings.videoJs.videoJsStrings.beforesetup,
-  fn: typings.videoJs.mod.videojs.Hook.BeforeSetup
-): scala.Unit = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("hook")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def hook_beforesetup(`type`: beforesetup, fn: js.Array[BeforeSetup]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def hook_beforesetup(`type`: beforesetup, fn: BeforeSetup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def hook_setup(`type`: typings.videoJs.videoJsStrings.setup, fn: js.Array[typings.videoJs.mod.videojs.Hook.Setup]): scala.Unit = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("hook")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def hook_setup(`type`: setup, fn: js.Array[Setup]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
 /**
   * Add a function hook to a specific videojs lifecycle.
   *
@@ -210,7 +244,7 @@ inline def hook_setup(`type`: typings.videoJs.videoJsStrings.setup, fn: js.Array
   * @param fn
   *        The function or array of functions to attach.
   */
-inline def hook_setup(`type`: typings.videoJs.videoJsStrings.setup, fn: typings.videoJs.mod.videojs.Hook.Setup): scala.Unit = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("hook")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def hook_setup(`type`: setup, fn: Setup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hook")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 /**
   * Get a list of hooks for a specific lifecycle
@@ -223,9 +257,9 @@ inline def hook_setup(`type`: typings.videoJs.videoJsStrings.setup, fn: typings.
   *
   * @return    an array of hooks, or an empty array if there are none.
   */
-inline def hooks(`type`: java.lang.String): scala.Unit = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("hooks")(`type`.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def hooks(`type`: java.lang.String, fn: js.Array[js.Function0[js.Any]]): scala.Unit = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("hooks")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def hooks(`type`: java.lang.String, fn: js.Function0[js.Any]): scala.Unit = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("hooks")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def hooks(`type`: String): js.Array[js.Function0[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("hooks")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function0[Any]]]
+inline def hooks(`type`: String, fn: js.Array[js.Function0[Any]]): js.Array[js.Function0[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("hooks")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Function0[Any]]]
+inline def hooks(`type`: String, fn: js.Function0[Any]): js.Array[js.Function0[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("hooks")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Function0[Any]]]
 
 /**
   * Returns whether the url passed is a cross domain request or not.
@@ -235,14 +269,14 @@ inline def hooks(`type`: java.lang.String, fn: js.Function0[js.Any]): scala.Unit
   *
   * @return    Whether it is a cross domain request or not.
   */
-inline def isCrossOrigin(url: java.lang.String): scala.Boolean = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("isCrossOrigin")(url.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def isCrossOrigin(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCrossOrigin")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
 /**
   * Log messages
   *
   * @borrows log:log as log
   */
-inline def log: typings.videoJs.mod.videojs.Log = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("log").asInstanceOf[typings.videoJs.mod.videojs.Log]
+inline def log: Log = ^.asInstanceOf[js.Dynamic].selectDynamic("log").asInstanceOf[Log]
 
 /**
   * Deep-merge one or more options objects, recursively merging **only** plain
@@ -253,45 +287,38 @@ inline def log: typings.videoJs.mod.videojs.Log = typings.videoJs.mod.default.^.
   *
   * @return    A new object that is the merged result of all sources.
   */
-inline def mergeOptions[A, B, C, D, E, F](option: A): A & B & C & D & E & F = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any]).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: D): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: D, option5: E): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: D, option5: E, option6: F): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: D, option5: scala.Unit, option6: F): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: scala.Unit, option5: E): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: scala.Unit, option5: E, option6: F): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: scala.Unit, option5: scala.Unit, option6: F): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: scala.Unit, option4: D): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: scala.Unit, option4: D, option5: E): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: scala.Unit, option4: D, option5: E, option6: F): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: scala.Unit, option4: D, option5: scala.Unit, option6: F): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: scala.Unit, option4: scala.Unit, option5: E): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: scala.Unit, option4: scala.Unit, option5: E, option6: F): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: scala.Unit, option4: scala.Unit, option5: scala.Unit, option6: F): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: scala.Unit, option3: C): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: scala.Unit, option3: C, option4: D): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: scala.Unit, option3: C, option4: D, option5: E): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: scala.Unit, option3: C, option4: D, option5: E, option6: F): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: scala.Unit, option3: C, option4: D, option5: scala.Unit, option6: F): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: scala.Unit, option3: C, option4: scala.Unit, option5: E): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: scala.Unit, option3: C, option4: scala.Unit, option5: E, option6: F): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: scala.Unit, option3: C, option4: scala.Unit, option5: scala.Unit, option6: F): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: scala.Unit, option3: scala.Unit, option4: D): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: scala.Unit, option3: scala.Unit, option4: D, option5: E): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: scala.Unit, option3: scala.Unit, option4: D, option5: E, option6: F): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: scala.Unit, option3: scala.Unit, option4: D, option5: scala.Unit, option6: F): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: scala.Unit, option3: scala.Unit, option4: scala.Unit, option5: E): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](option: A, option2: scala.Unit, option3: scala.Unit, option4: scala.Unit, option5: E, option6: F): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
-inline def mergeOptions[A, B, C, D, E, F](
-  option: A,
-  option2: scala.Unit,
-  option3: scala.Unit,
-  option4: scala.Unit,
-  option5: scala.Unit,
-  option6: F
-): A & B & C & D & E & F = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A): A & B & C & D & E & F = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any]).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: D): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: D, option5: E): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: D, option5: E, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: D, option5: Unit, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: Unit, option5: E): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: Unit, option5: E, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: C, option4: Unit, option5: Unit, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: Unit, option4: D): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: Unit, option4: D, option5: E): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: Unit, option4: D, option5: E, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: Unit, option4: D, option5: Unit, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: Unit, option4: Unit, option5: E): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: Unit, option4: Unit, option5: E, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: B, option3: Unit, option4: Unit, option5: Unit, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: Unit, option3: C): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: Unit, option3: C, option4: D): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: Unit, option3: C, option4: D, option5: E): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: Unit, option3: C, option4: D, option5: E, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: Unit, option3: C, option4: D, option5: Unit, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: Unit, option3: C, option4: Unit, option5: E): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: Unit, option3: C, option4: Unit, option5: E, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: Unit, option3: C, option4: Unit, option5: Unit, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: Unit, option3: Unit, option4: D): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: Unit, option3: Unit, option4: D, option5: E): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: Unit, option3: Unit, option4: D, option5: E, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: Unit, option3: Unit, option4: D, option5: Unit, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: Unit, option3: Unit, option4: Unit, option5: E): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: Unit, option3: Unit, option4: Unit, option5: E, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
+inline def mergeOptions[A, B, C, D, E, F](option: A, option2: Unit, option3: Unit, option4: Unit, option5: Unit, option6: F): A & B & C & D & E & F = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(option.asInstanceOf[js.Any], option2.asInstanceOf[js.Any], option3.asInstanceOf[js.Any], option4.asInstanceOf[js.Any], option5.asInstanceOf[js.Any], option6.asInstanceOf[js.Any])).asInstanceOf[A & B & C & D & E & F]
 
 /**
   * Removes event listeners from an element
@@ -306,11 +333,7 @@ inline def mergeOptions[A, B, C, D, E, F](
   *        Specific listener to remove. Don't include to remove listeners for an event
   *        type.
   */
-inline def off(
-  elem: typings.std.Element,
-  `type`: java.lang.String,
-  fn: typings.videoJs.mod.videojs.EventTarget.EventListener
-): scala.Unit = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("off")(elem.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def off(elem: Element, `type`: String, fn: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(elem.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 /**
   * Add an event listener to element
@@ -327,16 +350,8 @@ inline def off(
   * @param fn
   *        Event listener.
   */
-inline def on(
-  elem: typings.std.Element,
-  `type`: java.lang.String,
-  fn: typings.videoJs.mod.videojs.EventTarget.EventListener
-): scala.Unit = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("on")(elem.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def on(
-  elem: typings.std.Element,
-  `type`: js.Array[java.lang.String],
-  fn: typings.videoJs.mod.videojs.EventTarget.EventListener
-): scala.Unit = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("on")(elem.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def on(elem: Element, `type`: String, fn: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(elem.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def on(elem: Element, `type`: js.Array[String], fn: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(elem.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 /**
   * Trigger a listener only once for an event
@@ -350,23 +365,15 @@ inline def on(
   * @param fn
   *        Event Listener function
   */
-inline def one(
-  elem: typings.std.Element,
-  `type`: java.lang.String,
-  fn: typings.videoJs.mod.videojs.EventTarget.EventListener
-): scala.Unit = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("one")(elem.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def one(
-  elem: typings.std.Element,
-  `type`: js.Array[java.lang.String],
-  fn: typings.videoJs.mod.videojs.EventTarget.EventListener
-): scala.Unit = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("one")(elem.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def one(elem: Element, `type`: String, fn: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("one")(elem.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def one(elem: Element, `type`: js.Array[String], fn: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("one")(elem.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 /**
   * The global options object. These are the settings that take effect
   * if no overrides are specified when the player is created.
   *
   */
-inline def options: typings.videoJs.mod.videojs.PlayerOptions = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("options").asInstanceOf[typings.videoJs.mod.videojs.PlayerOptions]
+inline def options: PlayerOptions = ^.asInstanceOf[js.Dynamic].selectDynamic("options").asInstanceOf[PlayerOptions]
 
 /**
   * Resolve and parse the elements of a URL.
@@ -376,7 +383,7 @@ inline def options: typings.videoJs.mod.videojs.PlayerOptions = typings.videoJs.
   *
   * @return    An object of url details
   */
-inline def parseUrl(url: java.lang.String): typings.videoJs.mod.videojs.url.URLObject = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(url.asInstanceOf[js.Any]).asInstanceOf[typings.videoJs.mod.videojs.url.URLObject]
+inline def parseUrl(url: String): URLObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(url.asInstanceOf[js.Any]).asInstanceOf[URLObject]
 
 /**
   * Register a Video.js plugin.
@@ -395,7 +402,7 @@ inline def parseUrl(url: java.lang.String): typings.videoJs.mod.videojs.url.URLO
   *         basic plugins, a wrapper function that initializes the plugin.
   */
 /* was `typeof Plugin.registerPlugin` */
-inline def plugin: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.registerPlugin */ js.Any = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("plugin").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.registerPlugin */ js.Any]
+inline def plugin: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.registerPlugin */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("plugin").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.registerPlugin */ Any]
 
 /**
   * Register a component so it can referred to by name. Used when adding to other
@@ -414,7 +421,7 @@ inline def plugin: /* import warning: ResolveTypeQueries.resolve Couldn't resolv
   * @return    The newly registered component
   */
 /* was `typeof Component.registerComponent` */
-inline def registerComponent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Component.registerComponent */ js.Any = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("registerComponent").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Component.registerComponent */ js.Any]
+inline def registerComponent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Component.registerComponent */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("registerComponent").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Component.registerComponent */ Any]
 
 /**
   * Register a Video.js plugin.
@@ -433,7 +440,7 @@ inline def registerComponent: /* import warning: ResolveTypeQueries.resolve Coul
   *         basic plugins, a wrapper function that initializes the plugin.
   */
 /* was `typeof Plugin.registerPlugin` */
-inline def registerPlugin: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.registerPlugin */ js.Any = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("registerPlugin").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.registerPlugin */ js.Any]
+inline def registerPlugin: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.registerPlugin */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("registerPlugin").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Plugin.registerPlugin */ Any]
 
 /**
   * Register a Tech so it can referred to by name.
@@ -442,7 +449,7 @@ inline def registerPlugin: /* import warning: ResolveTypeQueries.resolve Couldn'
   * @borrows Tech.registerTech as registerTech
   */
 /* was `typeof Tech.registerTech` */
-inline def registerTech: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Tech.registerTech */ js.Any = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("registerTech").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Tech.registerTech */ js.Any]
+inline def registerTech: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Tech.registerTech */ Any = ^.asInstanceOf[js.Dynamic].selectDynamic("registerTech").asInstanceOf[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Tech.registerTech */ Any]
 
 /**
   * Remove a hook from a specific videojs lifecycle.
@@ -455,12 +462,12 @@ inline def registerTech: /* import warning: ResolveTypeQueries.resolve Couldn't 
   *
   * @return    The function that was removed or undef
   */
-inline def removeHook(`type`: java.lang.String, fn: js.Function0[js.Any]): scala.Boolean = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("removeHook")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def removeHook(`type`: String, fn: js.Function0[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("removeHook")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 /**
   * Resets formatTime to the default implementation.
   */
-inline def resetFormatTime(): scala.Unit = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("resetFormatTime")().asInstanceOf[scala.Unit]
+inline def resetFormatTime(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetFormatTime")().asInstanceOf[Unit]
 
 /**
   * Replaces the default formatTime implementation with a custom implementation.
@@ -469,12 +476,10 @@ inline def resetFormatTime(): scala.Unit = typings.videoJs.mod.default.^.asInsta
   *        A function which will be used in place of the default formatTime implementation.
   *        Will receive the current time in seconds and the guide (in seconds) as arguments.
   */
-inline def setFormatTime(
-  customImplementation: js.Function2[/* seconds */ scala.Double, /* guide */ scala.Double, java.lang.String]
-): scala.Unit = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("setFormatTime")(customImplementation.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setFormatTime(customImplementation: js.Function2[/* seconds */ Double, /* guide */ Double, String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFormatTime")(customImplementation.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def trigger(elem: typings.std.Element, event: java.lang.String): js.UndefOr[scala.Boolean] = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(elem.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[scala.Boolean]]
-inline def trigger(elem: typings.std.Element, event: java.lang.String, hash: js.Any): js.UndefOr[scala.Boolean] = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(elem.asInstanceOf[js.Any], event.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[scala.Boolean]]
+inline def trigger(elem: Element, event: String): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(elem.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+inline def trigger(elem: Element, event: String, hash: Any): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(elem.asInstanceOf[js.Any], event.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
 /**
   * Trigger an event for an element
   *
@@ -490,8 +495,8 @@ inline def trigger(elem: typings.std.Element, event: java.lang.String, hash: js.
   * @return    - Returns the opposite of `defaultPrevented` if default was prevented
   *         - Otherwise returns undefined
   */
-inline def trigger(elem: typings.std.Element, event: typings.videoJs.mod.videojs.EventTarget.Event): js.UndefOr[scala.Boolean] = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(elem.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[scala.Boolean]]
-inline def trigger(elem: typings.std.Element, event: typings.videoJs.mod.videojs.EventTarget.Event, hash: js.Any): js.UndefOr[scala.Boolean] = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(elem.asInstanceOf[js.Any], event.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[scala.Boolean]]
+inline def trigger(elem: Element, event: Event): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(elem.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+inline def trigger(elem: Element, event: Event, hash: Any): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(elem.asInstanceOf[js.Any], event.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
 
 /**
   * Register a middleware to a source type.
@@ -500,12 +505,9 @@ inline def trigger(elem: typings.std.Element, event: typings.videoJs.mod.videojs
   * @param middleware A middleware factory that takes a player.
   */
 inline def use(
-  `type`: java.lang.String,
-  middleware: js.Function1[
-  /* player */ typings.videoJs.mod.videojs.Player, 
-  typings.videoJs.mod.videojs.Middleware
-]
-): scala.Unit = (typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("use")(`type`.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  `type`: String,
+  middleware: js.Function1[/* player */ typings.videoJs.mod.videojs.Player, Middleware]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(`type`.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 /**
   * A cross-browser XMLHttpRequest wrapper. Here's a simple example:
@@ -517,4 +519,4 @@ inline def use(
   *
   * @see https://github.com/Raynos/xhr
   */
-inline def xhr: typings.videoJs.mod.videojs.XhrObject = typings.videoJs.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("xhr").asInstanceOf[typings.videoJs.mod.videojs.XhrObject]
+inline def xhr: XhrObject = ^.asInstanceOf[js.Dynamic].selectDynamic("xhr").asInstanceOf[XhrObject]

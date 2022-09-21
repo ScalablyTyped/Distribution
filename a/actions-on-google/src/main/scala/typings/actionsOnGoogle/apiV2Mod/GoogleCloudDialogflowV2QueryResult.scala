@@ -11,7 +11,7 @@ trait GoogleCloudDialogflowV2QueryResult extends StObject {
   
   var allRequiredParamsPresent: js.UndefOr[Boolean] = js.undefined
   
-  var diagnosticInfo: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var diagnosticInfo: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   var fulfillmentMessages: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessage]] = js.undefined
   
@@ -25,13 +25,13 @@ trait GoogleCloudDialogflowV2QueryResult extends StObject {
   
   var outputContexts: js.UndefOr[js.Array[GoogleCloudDialogflowV2Context]] = js.undefined
   
-  var parameters: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var parameters: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   var queryText: js.UndefOr[String] = js.undefined
   
   var speechRecognitionConfidence: js.UndefOr[Double] = js.undefined
   
-  var webhookPayload: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var webhookPayload: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   var webhookSource: js.UndefOr[String] = js.undefined
 }
@@ -52,7 +52,7 @@ object GoogleCloudDialogflowV2QueryResult {
     
     inline def setAllRequiredParamsPresentUndefined: Self = StObject.set(x, "allRequiredParamsPresent", js.undefined)
     
-    inline def setDiagnosticInfo(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "diagnosticInfo", value.asInstanceOf[js.Any])
+    inline def setDiagnosticInfo(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "diagnosticInfo", value.asInstanceOf[js.Any])
     
     inline def setDiagnosticInfoUndefined: Self = StObject.set(x, "diagnosticInfo", js.undefined)
     
@@ -60,7 +60,7 @@ object GoogleCloudDialogflowV2QueryResult {
     
     inline def setFulfillmentMessagesUndefined: Self = StObject.set(x, "fulfillmentMessages", js.undefined)
     
-    inline def setFulfillmentMessagesVarargs(value: GoogleCloudDialogflowV2IntentMessage*): Self = StObject.set(x, "fulfillmentMessages", js.Array(value :_*))
+    inline def setFulfillmentMessagesVarargs(value: GoogleCloudDialogflowV2IntentMessage*): Self = StObject.set(x, "fulfillmentMessages", js.Array(value*))
     
     inline def setFulfillmentText(value: String): Self = StObject.set(x, "fulfillmentText", value.asInstanceOf[js.Any])
     
@@ -82,9 +82,9 @@ object GoogleCloudDialogflowV2QueryResult {
     
     inline def setOutputContextsUndefined: Self = StObject.set(x, "outputContexts", js.undefined)
     
-    inline def setOutputContextsVarargs(value: GoogleCloudDialogflowV2Context*): Self = StObject.set(x, "outputContexts", js.Array(value :_*))
+    inline def setOutputContextsVarargs(value: GoogleCloudDialogflowV2Context*): Self = StObject.set(x, "outputContexts", js.Array(value*))
     
-    inline def setParameters(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
@@ -96,7 +96,7 @@ object GoogleCloudDialogflowV2QueryResult {
     
     inline def setSpeechRecognitionConfidenceUndefined: Self = StObject.set(x, "speechRecognitionConfidence", js.undefined)
     
-    inline def setWebhookPayload(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "webhookPayload", value.asInstanceOf[js.Any])
+    inline def setWebhookPayload(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "webhookPayload", value.asInstanceOf[js.Any])
     
     inline def setWebhookPayloadUndefined: Self = StObject.set(x, "webhookPayload", js.undefined)
     

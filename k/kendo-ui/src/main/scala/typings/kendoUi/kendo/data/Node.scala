@@ -9,13 +9,13 @@ trait Node
   extends StObject
      with Model {
   
-  def append(model: js.Any): Unit = js.native
+  def append(model: Any): Unit = js.native
   
   var children: HierarchicalDataSource = js.native
   
   def level(): Double = js.native
   
-  def load(id: js.Any): Unit = js.native
+  def load(): Unit = js.native
   
   def loaded(): Boolean = js.native
   def loaded(value: Boolean): Unit = js.native

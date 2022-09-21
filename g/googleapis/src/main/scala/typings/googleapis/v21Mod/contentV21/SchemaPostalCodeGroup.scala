@@ -7,15 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaPostalCodeGroup extends StObject {
   
   /**
-    * The CLDR territory code of the country the postal code group applies to.
-    * Required.
+    * The CLDR territory code of the country the postal code group applies to. Required.
     */
-  var country: js.UndefOr[String] = js.undefined
+  var country: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The name of the postal code group, referred to in headers. Required.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A range of postal codes. Required.
@@ -33,9 +32,13 @@ object SchemaPostalCodeGroup {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
+    inline def setCountryNull: Self = StObject.set(x, "country", null)
+    
     inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -43,6 +46,6 @@ object SchemaPostalCodeGroup {
     
     inline def setPostalCodeRangesUndefined: Self = StObject.set(x, "postalCodeRanges", js.undefined)
     
-    inline def setPostalCodeRangesVarargs(value: SchemaPostalCodeRange*): Self = StObject.set(x, "postalCodeRanges", js.Array(value :_*))
+    inline def setPostalCodeRangesVarargs(value: SchemaPostalCodeRange*): Self = StObject.set(x, "postalCodeRanges", js.Array(value*))
   }
 }

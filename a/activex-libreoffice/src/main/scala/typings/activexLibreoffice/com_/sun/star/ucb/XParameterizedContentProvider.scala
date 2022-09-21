@@ -37,7 +37,7 @@ object XParameterizedContentProvider {
   inline def apply(
     acquire: () => Unit,
     deregisterInstance: (String, String) => XContentProvider,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerInstance: (String, String, Boolean) => XContentProvider,
     release: () => Unit
   ): XParameterizedContentProvider = {

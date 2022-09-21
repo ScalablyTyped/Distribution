@@ -54,7 +54,7 @@ object ContactGetResponse {
     
     inline def setContactsUndefined: Self = StObject.set(x, "contacts", js.undefined)
     
-    inline def setContactsVarargs(value: Contact*): Self = StObject.set(x, "contacts", js.Array(value :_*))
+    inline def setContactsVarargs(value: Contact*): Self = StObject.set(x, "contacts", js.Array(value*))
     
     inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NextArgs extends StObject {
+trait NextArgs[T] extends StObject {
   
   var avoidConstraints: Boolean
   
@@ -14,26 +14,26 @@ trait NextArgs extends StObject {
   
   var key: js.UndefOr[String | Double | js.Symbol] = js.undefined
   
-  var serviceIdentifier: ServiceIdentifier[js.Any]
+  var serviceIdentifier: ServiceIdentifier[T]
   
   var targetType: TargetType
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object NextArgs {
   
-  inline def apply(
+  inline def apply[T](
     avoidConstraints: Boolean,
     contextInterceptor: Context => Context,
     isMultiInject: Boolean,
-    serviceIdentifier: ServiceIdentifier[js.Any],
+    serviceIdentifier: ServiceIdentifier[T],
     targetType: TargetType
-  ): NextArgs = {
+  ): NextArgs[T] = {
     val __obj = js.Dynamic.literal(avoidConstraints = avoidConstraints.asInstanceOf[js.Any], contextInterceptor = js.Any.fromFunction1(contextInterceptor), isMultiInject = isMultiInject.asInstanceOf[js.Any], serviceIdentifier = serviceIdentifier.asInstanceOf[js.Any], targetType = targetType.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NextArgs]
+    __obj.asInstanceOf[NextArgs[T]]
   }
   
-  extension [Self <: NextArgs](x: Self) {
+  extension [Self <: NextArgs[?], T](x: Self & NextArgs[T]) {
     
     inline def setAvoidConstraints(value: Boolean): Self = StObject.set(x, "avoidConstraints", value.asInstanceOf[js.Any])
     
@@ -45,11 +45,11 @@ object NextArgs {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setServiceIdentifier(value: ServiceIdentifier[js.Any]): Self = StObject.set(x, "serviceIdentifier", value.asInstanceOf[js.Any])
+    inline def setServiceIdentifier(value: ServiceIdentifier[T]): Self = StObject.set(x, "serviceIdentifier", value.asInstanceOf[js.Any])
     
     inline def setTargetType(value: TargetType): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

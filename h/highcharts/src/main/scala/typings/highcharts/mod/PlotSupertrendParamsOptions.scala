@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PlotSupertrendParamsOptions extends StObject {
   
+  var index: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highstock) Multiplier for Supertrend Indicator.
     */
@@ -26,6 +28,10 @@ object PlotSupertrendParamsOptions {
   }
   
   extension [Self <: PlotSupertrendParamsOptions](x: Self) {
+    
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     inline def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
     

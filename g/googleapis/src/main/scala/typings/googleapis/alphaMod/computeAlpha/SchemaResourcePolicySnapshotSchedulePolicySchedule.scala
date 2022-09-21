@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A schedule for disks where the schedueled operations are performed.
-  */
 trait SchemaResourcePolicySnapshotSchedulePolicySchedule extends StObject {
   
   var dailySchedule: js.UndefOr[SchemaResourcePolicyDailyCycle] = js.undefined

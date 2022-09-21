@@ -9,16 +9,24 @@ trait BuyTrade extends StObject {
   // timestamp in ISO format of offer validity
   var cid: js.UndefOr[String] = js.undefined
   
+  var country: js.UndefOr[String] = js.undefined
+  
   // state of trade after confirmTrade
   var error: js.UndefOr[String] = js.undefined
   
   // hash of tx from exchange to user
   var exchange: js.UndefOr[String] = js.undefined
   
-  // 1000
+  var fiatAmount: js.UndefOr[Double] = js.undefined
+  
+  // 1000 - will pay fiat amount
   var fiatCurrency: js.UndefOr[String] = js.undefined
   
+  // 1000 - DEPRECATED, used only for TREZOR
   var fiatStringAmount: js.UndefOr[String] = js.undefined
+  
+  // arbitrary data specific for the partner
+  var id: js.UndefOr[String] = js.undefined
   
   var infoNote: js.UndefOr[String] = js.undefined
   
@@ -34,12 +42,15 @@ trait BuyTrade extends StObject {
   // ID of the quote assigned by exchange
   var orderId: js.UndefOr[String] = js.undefined
   
-  // ID of the order assigned by us
+  // ID of the payment assigned by us or by partner
   var originalPaymentId: js.UndefOr[String] = js.undefined
   
   var partnerData: js.UndefOr[String] = js.undefined
   
-  // ID of the payment assigned by us and later changed by the partner
+  // arbitrary data specific for the partner
+  var partnerData2: js.UndefOr[String] = js.undefined
+  
+  // ID of the order assigned by us
   var paymentId: js.UndefOr[String] = js.undefined
   
   var paymentMethod: js.UndefOr[BuyCryptoPaymentMethod] = js.undefined
@@ -47,32 +58,41 @@ trait BuyTrade extends StObject {
   // 100
   var quoteId: js.UndefOr[String] = js.undefined
   
-  // users address for receive tx
+  // Extra ID for receive tx to exchange for networks that require it (destinationTag)
   var rate: js.UndefOr[Double] = js.undefined
   
   // 0.12345
   var receiveAddress: js.UndefOr[String] = js.undefined
   
+  // users address for receive tx
+  var receiveAddressExtraId: js.UndefOr[String] = js.undefined
+  
+  // BTC
+  var receiveAmount: js.UndefOr[Double] = js.undefined
+  
   // EUR
   var receiveCurrency: js.UndefOr[String] = js.undefined
   
-  // BTC
+  // 0.12345 - DEPRECATED, used only for TREZOR
   var receiveStringAmount: js.UndefOr[String] = js.undefined
   
   // something went wrong after confirmTrade
   var receiveTxHash: js.UndefOr[String] = js.undefined
   
-  // ID of the payment assigned by us or by partner
+  // ID of the payment assigned by us and later changed by the partner
   var status: js.UndefOr[BuyTradeStatus] = js.undefined
   
-  // arbitrary data specific for the partner
   var tags: js.UndefOr[js.Array[BuyTradeTag]] = js.undefined
   
+  // internal DB id
   // locally used data types
   var tradeForm: js.UndefOr[BuyTradeFormResponse] = js.undefined
   
   // which exchange this trade belongs to, used for discrimination in ExchangeService
   var validUntil: js.UndefOr[String] = js.undefined
+  
+  // CZ
+  var wantCrypto: js.UndefOr[Boolean] = js.undefined
 }
 object BuyTrade {
   
@@ -87,6 +107,10 @@ object BuyTrade {
     
     inline def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
     
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
@@ -95,6 +119,10 @@ object BuyTrade {
     
     inline def setExchangeUndefined: Self = StObject.set(x, "exchange", js.undefined)
     
+    inline def setFiatAmount(value: Double): Self = StObject.set(x, "fiatAmount", value.asInstanceOf[js.Any])
+    
+    inline def setFiatAmountUndefined: Self = StObject.set(x, "fiatAmount", js.undefined)
+    
     inline def setFiatCurrency(value: String): Self = StObject.set(x, "fiatCurrency", value.asInstanceOf[js.Any])
     
     inline def setFiatCurrencyUndefined: Self = StObject.set(x, "fiatCurrency", js.undefined)
@@ -102,6 +130,10 @@ object BuyTrade {
     inline def setFiatStringAmount(value: String): Self = StObject.set(x, "fiatStringAmount", value.asInstanceOf[js.Any])
     
     inline def setFiatStringAmountUndefined: Self = StObject.set(x, "fiatStringAmount", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setInfoNote(value: String): Self = StObject.set(x, "infoNote", value.asInstanceOf[js.Any])
     
@@ -133,6 +165,10 @@ object BuyTrade {
     
     inline def setPartnerData(value: String): Self = StObject.set(x, "partnerData", value.asInstanceOf[js.Any])
     
+    inline def setPartnerData2(value: String): Self = StObject.set(x, "partnerData2", value.asInstanceOf[js.Any])
+    
+    inline def setPartnerData2Undefined: Self = StObject.set(x, "partnerData2", js.undefined)
+    
     inline def setPartnerDataUndefined: Self = StObject.set(x, "partnerData", js.undefined)
     
     inline def setPaymentId(value: String): Self = StObject.set(x, "paymentId", value.asInstanceOf[js.Any])
@@ -153,7 +189,15 @@ object BuyTrade {
     
     inline def setReceiveAddress(value: String): Self = StObject.set(x, "receiveAddress", value.asInstanceOf[js.Any])
     
+    inline def setReceiveAddressExtraId(value: String): Self = StObject.set(x, "receiveAddressExtraId", value.asInstanceOf[js.Any])
+    
+    inline def setReceiveAddressExtraIdUndefined: Self = StObject.set(x, "receiveAddressExtraId", js.undefined)
+    
     inline def setReceiveAddressUndefined: Self = StObject.set(x, "receiveAddress", js.undefined)
+    
+    inline def setReceiveAmount(value: Double): Self = StObject.set(x, "receiveAmount", value.asInstanceOf[js.Any])
+    
+    inline def setReceiveAmountUndefined: Self = StObject.set(x, "receiveAmount", js.undefined)
     
     inline def setReceiveCurrency(value: String): Self = StObject.set(x, "receiveCurrency", value.asInstanceOf[js.Any])
     
@@ -175,7 +219,7 @@ object BuyTrade {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: BuyTradeTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: BuyTradeTag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTradeForm(value: BuyTradeFormResponse): Self = StObject.set(x, "tradeForm", value.asInstanceOf[js.Any])
     
@@ -184,5 +228,9 @@ object BuyTrade {
     inline def setValidUntil(value: String): Self = StObject.set(x, "validUntil", value.asInstanceOf[js.Any])
     
     inline def setValidUntilUndefined: Self = StObject.set(x, "validUntil", js.undefined)
+    
+    inline def setWantCrypto(value: Boolean): Self = StObject.set(x, "wantCrypto", value.asInstanceOf[js.Any])
+    
+    inline def setWantCryptoUndefined: Self = StObject.set(x, "wantCrypto", js.undefined)
   }
 }

@@ -69,7 +69,7 @@ object DescribeAssetResponse {
     
     inline def setEgressEndpointsUndefined: Self = StObject.set(x, "EgressEndpoints", js.undefined)
     
-    inline def setEgressEndpointsVarargs(value: EgressEndpoint*): Self = StObject.set(x, "EgressEndpoints", js.Array(value :_*))
+    inline def setEgressEndpointsVarargs(value: EgressEndpoint*): Self = StObject.set(x, "EgressEndpoints", js.Array(value*))
     
     inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateVpcEndpointServiceConfigurationRequest extends StObject {
   
   /**
-    * Indicates whether requests from service consumers to create an endpoint to your service must be accepted. To accept a request, use AcceptVpcEndpointConnections.
+    * Indicates whether requests from service consumers to create an endpoint to your service must be accepted manually.
     */
   var AcceptanceRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to ensure idempotency.
     */
   var ClientToken: js.UndefOr[String] = js.undefined
   
@@ -35,6 +35,11 @@ trait CreateVpcEndpointServiceConfigurationRequest extends StObject {
     * (Interface endpoint configuration) The private DNS name to assign to the VPC endpoint service.
     */
   var PrivateDnsName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The supported IP address types. The possible values are ipv4 and ipv6.
+    */
+  var SupportedIpAddressTypes: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The tags to associate with the service.
@@ -66,22 +71,28 @@ object CreateVpcEndpointServiceConfigurationRequest {
     
     inline def setGatewayLoadBalancerArnsUndefined: Self = StObject.set(x, "GatewayLoadBalancerArns", js.undefined)
     
-    inline def setGatewayLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "GatewayLoadBalancerArns", js.Array(value :_*))
+    inline def setGatewayLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "GatewayLoadBalancerArns", js.Array(value*))
     
     inline def setNetworkLoadBalancerArns(value: ValueStringList): Self = StObject.set(x, "NetworkLoadBalancerArns", value.asInstanceOf[js.Any])
     
     inline def setNetworkLoadBalancerArnsUndefined: Self = StObject.set(x, "NetworkLoadBalancerArns", js.undefined)
     
-    inline def setNetworkLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "NetworkLoadBalancerArns", js.Array(value :_*))
+    inline def setNetworkLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "NetworkLoadBalancerArns", js.Array(value*))
     
     inline def setPrivateDnsName(value: String): Self = StObject.set(x, "PrivateDnsName", value.asInstanceOf[js.Any])
     
     inline def setPrivateDnsNameUndefined: Self = StObject.set(x, "PrivateDnsName", js.undefined)
     
+    inline def setSupportedIpAddressTypes(value: ValueStringList): Self = StObject.set(x, "SupportedIpAddressTypes", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedIpAddressTypesUndefined: Self = StObject.set(x, "SupportedIpAddressTypes", js.undefined)
+    
+    inline def setSupportedIpAddressTypesVarargs(value: String*): Self = StObject.set(x, "SupportedIpAddressTypes", js.Array(value*))
+    
     inline def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
   }
 }

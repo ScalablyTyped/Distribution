@@ -1,10 +1,10 @@
 package typings.wixUiIconsCommon
 
-import typings.fuseJs.mod.FuseOptions
-import typings.fuseJs.mod.^
+import typings.fuseJs.mod.default
 import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import typings.react.mod.SVGAttributes
+import typings.std.Record
 import typings.std.SVGElement
 import typings.wixUiIconsCommon.typesMod.IconMetadata
 import org.scalablytyped.runtime.StObject
@@ -30,7 +30,7 @@ object storiesTypesMod {
       
       inline def setIconsMetadata(value: js.Array[IconMetadata]): Self = StObject.set(x, "iconsMetadata", value.asInstanceOf[js.Any])
       
-      inline def setIconsMetadataVarargs(value: IconMetadata*): Self = StObject.set(x, "iconsMetadata", js.Array(value :_*))
+      inline def setIconsMetadataVarargs(value: IconMetadata*): Self = StObject.set(x, "iconsMetadata", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
@@ -38,7 +38,36 @@ object storiesTypesMod {
   
   type CategoryTableRow = js.Array[ReactNode]
   
-  type GeneralTableRow = js.Tuple5[ReactNode, js.UndefOr[String], ReactNode, js.UndefOr[String], js.UndefOr[String]]
+  trait GeneralCategoryListProps extends StObject {
+    
+    var iconComponents: Record[String, FC[IconProps]]
+    
+    var iconSizes: js.UndefOr[js.Array[Double]] = js.undefined
+    
+    var iconsMetadata: js.Array[IconMetadata]
+  }
+  object GeneralCategoryListProps {
+    
+    inline def apply(iconComponents: Record[String, FC[IconProps]], iconsMetadata: js.Array[IconMetadata]): GeneralCategoryListProps = {
+      val __obj = js.Dynamic.literal(iconComponents = iconComponents.asInstanceOf[js.Any], iconsMetadata = iconsMetadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GeneralCategoryListProps]
+    }
+    
+    extension [Self <: GeneralCategoryListProps](x: Self) {
+      
+      inline def setIconComponents(value: Record[String, FC[IconProps]]): Self = StObject.set(x, "iconComponents", value.asInstanceOf[js.Any])
+      
+      inline def setIconSizes(value: js.Array[Double]): Self = StObject.set(x, "iconSizes", value.asInstanceOf[js.Any])
+      
+      inline def setIconSizesUndefined: Self = StObject.set(x, "iconSizes", js.undefined)
+      
+      inline def setIconSizesVarargs(value: Double*): Self = StObject.set(x, "iconSizes", js.Array(value*))
+      
+      inline def setIconsMetadata(value: js.Array[IconMetadata]): Self = StObject.set(x, "iconsMetadata", value.asInstanceOf[js.Any])
+      
+      inline def setIconsMetadataVarargs(value: IconMetadata*): Self = StObject.set(x, "iconsMetadata", js.Array(value*))
+    }
+  }
   
   trait IconDescriptor extends StObject {
     
@@ -69,7 +98,7 @@ object storiesTypesMod {
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object IconProps {
     
@@ -80,13 +109,36 @@ object storiesTypesMod {
     
     extension [Self <: IconProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type IconsMetadataIndex = ^[IconMetadata, FuseOptions[IconMetadata]]
+  type IconsMetadataIndex = default[IconMetadata]
+  
+  trait SystemCategoryListProps extends StObject {
+    
+    var iconComponents: Record[String, FC[IconProps]]
+    
+    var iconsMetadata: js.Array[IconMetadata]
+  }
+  object SystemCategoryListProps {
+    
+    inline def apply(iconComponents: Record[String, FC[IconProps]], iconsMetadata: js.Array[IconMetadata]): SystemCategoryListProps = {
+      val __obj = js.Dynamic.literal(iconComponents = iconComponents.asInstanceOf[js.Any], iconsMetadata = iconsMetadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SystemCategoryListProps]
+    }
+    
+    extension [Self <: SystemCategoryListProps](x: Self) {
+      
+      inline def setIconComponents(value: Record[String, FC[IconProps]]): Self = StObject.set(x, "iconComponents", value.asInstanceOf[js.Any])
+      
+      inline def setIconsMetadata(value: js.Array[IconMetadata]): Self = StObject.set(x, "iconsMetadata", value.asInstanceOf[js.Any])
+      
+      inline def setIconsMetadataVarargs(value: IconMetadata*): Self = StObject.set(x, "iconsMetadata", js.Array(value*))
+    }
+  }
   
   type SystemTableRow = js.Tuple3[String, ReactNode, js.UndefOr[String]]
 }

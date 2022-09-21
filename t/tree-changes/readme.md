@@ -1,7 +1,7 @@
 
 # Scala.js typings for tree-changes
 
-Typings are for version 0.5.1
+Typings are for version 0.10.0
 
 ## Library description:
 Get changes between two versions of data with similar shape
@@ -11,9 +11,9 @@ Get changes between two versions of data with similar shape
 | Full name          | tree-changes |
 | Keywords           | comparison, tree |
 | # releases         | 10 |
-| # dependents       | 18 |
-| # downloads        | 2890047 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1194007.3333333333 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/gilbarbara/tree-changes#readme)

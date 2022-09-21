@@ -16,11 +16,11 @@ object mod {
   
   @JSImport("@tinajs/tina", "Component")
   @js.native
-  class Component () extends StObject {
+  open class Component () extends StObject {
     
-    var data: StringDictionary[js.Any] = js.native
+    var data: StringDictionary[Any] = js.native
     
-    def setData(data: StringDictionary[js.Any]): Unit = js.native
+    def setData(data: StringDictionary[Any]): Unit = js.native
   }
   /* static members */
   object Component {
@@ -36,7 +36,7 @@ object mod {
   
   @JSImport("@tinajs/tina", "Page")
   @js.native
-  class Page () extends Component
+  open class Page () extends Component
   /* static members */
   object Page {
     
@@ -49,17 +49,17 @@ object mod {
     inline def mixin(definitions: PartialPageDefinitionsAttached): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(definitions.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  inline def use(plugin: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugin.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def use(plugin: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugin.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait ComponentDefinitions
     extends StObject
        with ComponentLifecycles {
     
-    def compute(data: StringDictionary[js.Any]): StringDictionary[js.Any]
+    def compute(data: StringDictionary[Any]): StringDictionary[Any]
     
-    var data: StringDictionary[js.Any]
+    var data: StringDictionary[Any]
     
-    var methods: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]
+    var methods: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ Any, Any]]
     
     var mixins: js.Array[PartialComponentDefinitio]
     
@@ -69,11 +69,11 @@ object mod {
     
     inline def apply(
       attached: () => Unit,
-      compute: StringDictionary[js.Any] => StringDictionary[js.Any],
+      compute: StringDictionary[Any] => StringDictionary[Any],
       created: () => Unit,
-      data: StringDictionary[js.Any],
+      data: StringDictionary[Any],
       detached: () => Unit,
-      methods: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]],
+      methods: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ Any, Any]],
       mixins: js.Array[PartialComponentDefinitio],
       moved: () => Unit,
       properties: ComponentProperties,
@@ -85,15 +85,15 @@ object mod {
     
     extension [Self <: ComponentDefinitions](x: Self) {
       
-      inline def setCompute(value: StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
+      inline def setCompute(value: StringDictionary[Any] => StringDictionary[Any]): Self = StObject.set(x, "compute", js.Any.fromFunction1(value))
       
-      inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: StringDictionary[js.ThisFunction1[/* this */ Component, /* repeated */ Any, Any]]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       inline def setMixins(value: js.Array[PartialComponentDefinitio]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
       
-      inline def setMixinsVarargs(value: PartialComponentDefinitio*): Self = StObject.set(x, "mixins", js.Array(value :_*))
+      inline def setMixinsVarargs(value: PartialComponentDefinitio*): Self = StObject.set(x, "mixins", js.Array(value*))
       
       inline def setProperties(value: ComponentProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
@@ -138,7 +138,7 @@ object mod {
     }
   }
   
-  type ComponentProperties = StringDictionary[js.Any]
+  type ComponentProperties = StringDictionary[Any]
   
   @js.native
   trait PageDefinitions
@@ -193,7 +193,7 @@ object mod {
     def onHide(): Unit = js.native
     
     def onLoad(): Unit = js.native
-    def onLoad(options: js.Any): Unit = js.native
+    def onLoad(options: Any): Unit = js.native
     
     def onReady(): Unit = js.native
     

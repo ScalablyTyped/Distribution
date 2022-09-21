@@ -1,6 +1,5 @@
 package typings.relayRuntime
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object relayObservableMod {
   
   @JSImport("relay-runtime/lib/network/RelayObservable", "RelayObservable")
   @js.native
-  class RelayObservable[T] protected ()
+  open class RelayObservable[T] protected ()
     extends StObject
        with Subscribable[T] {
     // Use RelayObservable.create(source);
@@ -22,7 +21,7 @@ object relayObservableMod {
       * If the catch handler throws a new error, it will appear as an error event
       * on the resulting Observable.
       */
-    def `catch`[U](fn: js.Function1[/* error */ Error, RelayObservable[U]]): RelayObservable[T | U] = js.native
+    def `catch`[U](fn: js.Function1[/* error */ js.Error, RelayObservable[U]]): RelayObservable[T | U] = js.native
     
     /**
       * Returns a new Observable which first yields values from this Observable,
@@ -51,7 +50,7 @@ object relayObservableMod {
       *
       * This is useful for cleanup such as resource finalization.
       */
-    def `finally`(fn: js.Function0[js.Any]): RelayObservable[T] = js.native
+    def `finally`(fn: js.Function0[Any]): RelayObservable[T] = js.native
     
     /**
       * Returns a new Observable which is identical to this one, unless this
@@ -133,7 +132,7 @@ object relayObservableMod {
       *    application flow such as network failure, and may not have useful
       *    stack traces.
       */
-    inline def onUnhandledError(callback: js.Function2[/* error */ Error, /* isUncaughtThrownError */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUnhandledError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onUnhandledError(callback: js.Function2[/* error */ js.Error, /* isUncaughtThrownError */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUnhandledError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   type ObservableFromValue[T] = Subscribable[T] | js.Promise[T] | T
@@ -142,7 +141,7 @@ object relayObservableMod {
     
     val complete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    val error: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+    val error: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
     
     val next: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
     
@@ -163,7 +162,7 @@ object relayObservableMod {
       
       inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      inline def setError(value: /* error */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -188,13 +187,13 @@ object relayObservableMod {
     
     def complete(): Unit = js.native
     
-    def error(error: Error): Unit = js.native
-    def error(error: Error, isUncaughtThrownError: Boolean): Unit = js.native
+    def error(error: js.Error): Unit = js.native
+    def error(error: js.Error, isUncaughtThrownError: Boolean): Unit = js.native
     
     def next(value: T): Unit = js.native
   }
   
-  type Source[T] = js.Function1[/* sink */ Sink[T], Unit | Subscription | js.Function0[js.Any]]
+  type Source[T] = js.Function1[/* sink */ Sink[T], Unit | Subscription | js.Function0[Any]]
   
   @js.native
   trait Subscribable[T] extends StObject {

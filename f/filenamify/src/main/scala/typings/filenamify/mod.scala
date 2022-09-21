@@ -7,28 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  	Convert a string to a valid filename.
-  	@example
-  	```
-  	import filenamify = require('filenamify');
-  	filenamify('<foo/bar>');
-  	//=> 'foo!bar'
-  	filenamify('foo:"bar"', {replacement: '🐴'});
-  	//=> 'foo🐴bar'
-  	```
-  	*/
-  inline def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  
   @JSImport("filenamify", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("filenamify", "path")
-  @js.native
-  def path: js.Function2[/* path */ String, /* options */ js.UndefOr[Options], String] = js.native
-  inline def path(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("path")(path.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def path(path: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("path")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def path_=(x: js.Function2[/* path */ String, /* options */ js.UndefOr[Options], String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
+  inline def default(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def filenamifyPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("filenamifyPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def filenamifyPath(path: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("filenamifyPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

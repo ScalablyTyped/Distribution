@@ -8,5 +8,5 @@ object notificationConfigurationFilterMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_NotificationConfigurationFilter", "_NotificationConfigurationFilter")
   @js.native
-  val NotificationConfigurationFilter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val NotificationConfigurationFilter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

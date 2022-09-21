@@ -49,6 +49,6 @@ object PutTelemetryRecordsRequest {
     
     inline def setTelemetryRecords(value: TelemetryRecordList): Self = StObject.set(x, "TelemetryRecords", value.asInstanceOf[js.Any])
     
-    inline def setTelemetryRecordsVarargs(value: TelemetryRecord*): Self = StObject.set(x, "TelemetryRecords", js.Array(value :_*))
+    inline def setTelemetryRecordsVarargs(value: TelemetryRecord*): Self = StObject.set(x, "TelemetryRecords", js.Array(value*))
   }
 }

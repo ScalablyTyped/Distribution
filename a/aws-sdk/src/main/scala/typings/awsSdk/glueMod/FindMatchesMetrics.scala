@@ -12,6 +12,11 @@ trait FindMatchesMetrics extends StObject {
   var AreaUnderPRCurve: js.UndefOr[GenericBoundedDouble] = js.undefined
   
   /**
+    * A list of ColumnImportance structures containing column importance metrics, sorted in order of descending importance.
+    */
+  var ColumnImportances: js.UndefOr[ColumnImportanceList] = js.undefined
+  
+  /**
     * The confusion matrix shows you what your transform is predicting accurately and what types of errors it is making. For more information, see Confusion matrix in Wikipedia.
     */
   var ConfusionMatrix: js.UndefOr[typings.awsSdk.glueMod.ConfusionMatrix] = js.undefined
@@ -43,6 +48,12 @@ object FindMatchesMetrics {
     inline def setAreaUnderPRCurve(value: GenericBoundedDouble): Self = StObject.set(x, "AreaUnderPRCurve", value.asInstanceOf[js.Any])
     
     inline def setAreaUnderPRCurveUndefined: Self = StObject.set(x, "AreaUnderPRCurve", js.undefined)
+    
+    inline def setColumnImportances(value: ColumnImportanceList): Self = StObject.set(x, "ColumnImportances", value.asInstanceOf[js.Any])
+    
+    inline def setColumnImportancesUndefined: Self = StObject.set(x, "ColumnImportances", js.undefined)
+    
+    inline def setColumnImportancesVarargs(value: ColumnImportance*): Self = StObject.set(x, "ColumnImportances", js.Array(value*))
     
     inline def setConfusionMatrix(value: ConfusionMatrix): Self = StObject.set(x, "ConfusionMatrix", value.asInstanceOf[js.Any])
     

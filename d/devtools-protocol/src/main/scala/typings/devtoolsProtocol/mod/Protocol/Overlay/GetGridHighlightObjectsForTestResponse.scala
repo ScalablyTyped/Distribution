@@ -9,17 +9,17 @@ trait GetGridHighlightObjectsForTestResponse extends StObject {
   /**
     * Grid Highlight data for the node ids provided.
     */
-  var highlights: js.Any
+  var highlights: Any
 }
 object GetGridHighlightObjectsForTestResponse {
   
-  inline def apply(highlights: js.Any): GetGridHighlightObjectsForTestResponse = {
+  inline def apply(highlights: Any): GetGridHighlightObjectsForTestResponse = {
     val __obj = js.Dynamic.literal(highlights = highlights.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGridHighlightObjectsForTestResponse]
   }
   
   extension [Self <: GetGridHighlightObjectsForTestResponse](x: Self) {
     
-    inline def setHighlights(value: js.Any): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
+    inline def setHighlights(value: Any): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
   }
 }

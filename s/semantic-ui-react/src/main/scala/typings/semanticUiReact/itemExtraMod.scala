@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +13,12 @@ object itemExtraMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/views/Item/ItemExtra", JSImport.Default)
   @js.native
-  val default: StatelessComponent[ItemExtraProps] = js.native
+  val default: FC[ItemExtraProps] = js.native
   
   trait ItemExtraProps
     extends StObject
        with StrictItemExtraProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ItemExtraProps {
     
     inline def apply(): ItemExtraProps = {
@@ -30,7 +30,7 @@ object itemExtraMod extends Shortcut {
   trait StrictItemExtraProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -50,7 +50,7 @@ object itemExtraMod extends Shortcut {
     
     extension [Self <: StrictItemExtraProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -68,8 +68,8 @@ object itemExtraMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[ItemExtraProps]
+  type _To = FC[ItemExtraProps]
   
   /* This means you don't have to write `default`, but can instead just say `itemExtraMod.foo` */
-  override def _to: StatelessComponent[ItemExtraProps] = default
+  override def _to: FC[ItemExtraProps] = default
 }

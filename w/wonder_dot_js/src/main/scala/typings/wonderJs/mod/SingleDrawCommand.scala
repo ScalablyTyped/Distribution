@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "SingleDrawCommand")
 @js.native
-class SingleDrawCommand ()
+open class SingleDrawCommand ()
   extends typings.wonderJs.singleDrawCommandMod.SingleDrawCommand
 /* static members */
 object SingleDrawCommand {

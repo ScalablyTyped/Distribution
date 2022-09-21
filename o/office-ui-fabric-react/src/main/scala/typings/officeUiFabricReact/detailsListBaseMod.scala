@@ -24,53 +24,51 @@ object detailsListBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsList.base", "DetailsListBase")
   @js.native
-  class DetailsListBase protected ()
-    extends Component[IDetailsListProps, IDetailsListState, js.Any]
+  open class DetailsListBase protected ()
+    extends Component[IDetailsListProps, IDetailsListState, Any]
        with IDetailsList {
     def this(props: IDetailsListProps) = this()
     
-    /* private */ var _activeRows: js.Any = js.native
+    /* private */ var _activeRows: Any = js.native
     
-    /* private */ var _adjustColumns: js.Any = js.native
+    /* private */ var _adjustColumns: Any = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _columnOverrides: js.Any = js.native
+    /* private */ var _columnOverrides: Any = js.native
     
-    /* private */ var _dragDropHelper: js.Any = js.native
+    /* private */ var _dragDropHelper: Any = js.native
     
-    /* private */ var _focusZone: js.Any = js.native
+    /* private */ var _focusZone: Any = js.native
     
-    /* private */ var _forceListUpdates: js.Any = js.native
+    /* private */ var _forceListUpdates: Any = js.native
     
     /** Returns adjusted columns, given the viewport size and layout mode. */
-    /* private */ var _getAdjustedColumns: js.Any = js.native
+    /* private */ var _getAdjustedColumns: Any = js.native
     
-    /* private */ var _getColumnOverride: js.Any = js.native
+    /* private */ var _getColumnOverride: Any = js.native
     
-    /* private */ var _getDerivedStateFromProps: js.Any = js.native
+    /* private */ var _getDerivedStateFromProps: Any = js.native
     
     /** Builds a set of columns based on the given columns mixed with the current overrides. */
-    /* private */ var _getFixedColumns: js.Any = js.native
+    /* private */ var _getFixedColumns: Any = js.native
     
-    /* private */ var _getGroupNestingDepth: js.Any = js.native
+    /* private */ var _getGroupNestingDepth: Any = js.native
     
-    /* private */ var _getItemKey: js.Any = js.native
+    /* private */ var _getItemKey: Any = js.native
     
     /** Builds a set of columns to fix within the viewport width. */
-    /* private */ var _getJustifiedColumns: js.Any = js.native
+    /* private */ var _getJustifiedColumns: Any = js.native
     
-    /* private */ var _getJustifiedColumnsAfterResize: js.Any = js.native
+    /* private */ var _groupedList: Any = js.native
     
-    /* private */ var _groupedList: js.Any = js.native
+    /* private */ var _header: Any = js.native
     
-    /* private */ var _header: js.Any = js.native
+    /* private */ var _initialFocusedIndex: Any = js.native
     
-    /* private */ var _initialFocusedIndex: js.Any = js.native
+    /* private */ var _list: Any = js.native
     
-    /* private */ var _list: js.Any = js.native
-    
-    /* private */ var _notifyColumnsResized: js.Any = js.native
+    /* private */ var _notifyColumnsResized: Any = js.native
     
     /**
       * Call back function when an element in FocusZone becomes active. It will translate it into item
@@ -79,9 +77,9 @@ object detailsListBaseMod {
       * @param row - element that became active in Focus Zone
       * @param focus - event from Focus Zone
       */
-    /* private */ var _onActiveRowChanged: js.Any = js.native
+    /* private */ var _onActiveRowChanged: Any = js.native
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
     /**
       * Callback function when double clicked on the details header column resizer
@@ -93,34 +91,34 @@ object detailsListBaseMod {
       * TODO: min width 100 should be changed to const value and should be consistent with the
       * value used on _onSizerMove method in DetailsHeader
       */
-    /* private */ var _onColumnAutoResized: js.Any = js.native
+    /* private */ var _onColumnAutoResized: Any = js.native
     
-    /* private */ var _onColumnIsSizingChanged: js.Any = js.native
+    /* private */ var _onColumnIsSizingChanged: Any = js.native
     
-    /* private */ var _onColumnResized: js.Any = js.native
+    /* private */ var _onColumnResized: Any = js.native
     
-    /* private */ var _onGroupExpandStateChanged: js.Any = js.native
+    /* private */ var _onGroupExpandStateChanged: Any = js.native
     
     /* protected */ def _onRenderRow(props: IDetailsRowProps): Element = js.native
     /* protected */ def _onRenderRow(props: IDetailsRowProps, defaultRender: IRenderFunction[IDetailsRowProps]): Element = js.native
     
-    /* private */ var _onRowDidMount: js.Any = js.native
+    /* private */ var _onRowDidMount: Any = js.native
     
-    /* private */ var _onRowWillUnmount: js.Any = js.native
+    /* private */ var _onRowWillUnmount: Any = js.native
     
-    /* private */ var _onToggleCollapse: js.Any = js.native
+    /* private */ var _onToggleCollapse: Any = js.native
     
-    /* private */ var _rememberCalculatedWidth: js.Any = js.native
+    /* private */ var _rememberCalculatedWidth: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
-    /* private */ var _selection: js.Any = js.native
+    /* private */ var _selection: Any = js.native
     
-    /* private */ var _selectionZone: js.Any = js.native
+    /* private */ var _selectionZone: Any = js.native
     
-    /* private */ var _setFocusToRow: js.Any = js.native
+    /* private */ var _setFocusToRow: Any = js.native
     
-    /* private */ var _setFocusToRowIfPending: js.Any = js.native
+    /* private */ var _setFocusToRowIfPending: Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MDetailsListBase(prevProps: IDetailsListProps, prevState: IDetailsListState): Unit = js.native
@@ -150,7 +148,7 @@ object detailsListBaseMod {
   }
   
   inline def buildColumns(
-    items: js.Array[js.Any],
+    items: js.Array[Any],
     canResizeColumns: js.UndefOr[Boolean],
     onColumnClick: js.UndefOr[
       js.Function2[/* ev */ MouseEvent[HTMLElement, NativeMouseEvent], /* column */ IColumn, Unit]
@@ -194,7 +192,7 @@ object detailsListBaseMod {
       
       inline def setAdjustedColumns(value: js.Array[IColumn]): Self = StObject.set(x, "adjustedColumns", value.asInstanceOf[js.Any])
       
-      inline def setAdjustedColumnsVarargs(value: IColumn*): Self = StObject.set(x, "adjustedColumns", js.Array(value :_*))
+      inline def setAdjustedColumnsVarargs(value: IColumn*): Self = StObject.set(x, "adjustedColumns", js.Array(value*))
       
       inline def setFocusedItemIndex(value: Double): Self = StObject.set(x, "focusedItemIndex", value.asInstanceOf[js.Any])
       

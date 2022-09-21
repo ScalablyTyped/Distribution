@@ -78,7 +78,7 @@ trait IDragSource
     */
   var afterValidDrop: js.UndefOr[
     js.Function3[
-      /* target */ js.UndefOr[js.Any], 
+      /* target */ js.UndefOr[Any], 
       /* e */ js.UndefOr[Event], 
       /* id */ js.UndefOr[String], 
       Unit
@@ -171,7 +171,7 @@ trait IDragSource
   var ddGroup: js.UndefOr[String] = js.undefined
   
   /** [Property] (Object) */
-  var dragData: js.UndefOr[js.Any] = js.undefined
+  var dragData: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var dropAllowed: js.UndefOr[String] = js.undefined
@@ -183,7 +183,7 @@ trait IDragSource
     * @param e Object
     * @returns Object data An object containing arbitrary data
     */
-  var getDragData: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getDragData: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns the drag source s underlying Ext dd StatusProxy
     * @returns Ext.dd.StatusProxy proxy The StatusProxy
@@ -198,7 +198,7 @@ trait IDragSource
     * @param e Event The event object
     * @returns Boolean isValid True if the drag event is valid, else false to cancel
     */
-  var onBeforeDrag: js.UndefOr[js.Function2[/* data */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event], Boolean]] = js.undefined
+  var onBeforeDrag: js.UndefOr[js.Function2[/* data */ js.UndefOr[Any], /* e */ js.UndefOr[Event], Boolean]] = js.undefined
   
   /** [Method] An empty function by default but provided so that you can perform a custom action once the initial drag event has be
     * @param x Number The x position of the click on the dragged object
@@ -247,7 +247,7 @@ object IDragSource {
     inline def setAfterInvalidDropUndefined: Self = StObject.set(x, "afterInvalidDrop", js.undefined)
     
     inline def setAfterValidDrop(
-      value: (/* target */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit
+      value: (/* target */ js.UndefOr[Any], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Unit
     ): Self = StObject.set(x, "afterValidDrop", js.Any.fromFunction3(value))
     
     inline def setAfterValidDropUndefined: Self = StObject.set(x, "afterValidDrop", js.undefined)
@@ -294,7 +294,7 @@ object IDragSource {
     
     inline def setDdGroupUndefined: Self = StObject.set(x, "ddGroup", js.undefined)
     
-    inline def setDragData(value: js.Any): Self = StObject.set(x, "dragData", value.asInstanceOf[js.Any])
+    inline def setDragData(value: Any): Self = StObject.set(x, "dragData", value.asInstanceOf[js.Any])
     
     inline def setDragDataUndefined: Self = StObject.set(x, "dragData", js.undefined)
     
@@ -306,7 +306,7 @@ object IDragSource {
     
     inline def setDropNotAllowedUndefined: Self = StObject.set(x, "dropNotAllowed", js.undefined)
     
-    inline def setGetDragData(value: /* e */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getDragData", js.Any.fromFunction1(value))
+    inline def setGetDragData(value: /* e */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getDragData", js.Any.fromFunction1(value))
     
     inline def setGetDragDataUndefined: Self = StObject.set(x, "getDragData", js.undefined)
     
@@ -318,7 +318,7 @@ object IDragSource {
     
     inline def setHideProxyUndefined: Self = StObject.set(x, "hideProxy", js.undefined)
     
-    inline def setOnBeforeDrag(value: (/* data */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event]) => Boolean): Self = StObject.set(x, "onBeforeDrag", js.Any.fromFunction2(value))
+    inline def setOnBeforeDrag(value: (/* data */ js.UndefOr[Any], /* e */ js.UndefOr[Event]) => Boolean): Self = StObject.set(x, "onBeforeDrag", js.Any.fromFunction2(value))
     
     inline def setOnBeforeDragUndefined: Self = StObject.set(x, "onBeforeDrag", js.undefined)
     

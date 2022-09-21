@@ -25,7 +25,7 @@ object ListInstanceConfigsResponse {
     
     inline def setInstanceConfigsUndefined: Self = StObject.set(x, "instanceConfigs", js.undefined)
     
-    inline def setInstanceConfigsVarargs(value: InstanceConfig*): Self = StObject.set(x, "instanceConfigs", js.Array(value :_*))
+    inline def setInstanceConfigsVarargs(value: InstanceConfig*): Self = StObject.set(x, "instanceConfigs", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

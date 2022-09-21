@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BaseSchema extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.undefined
+  var default: js.UndefOr[Any] = js.undefined
   
   var description: js.UndefOr[String] = js.undefined
   
-  var `enum`: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var `enum`: js.UndefOr[js.Array[Any]] = js.undefined
   
   var exclusiveMaximum: js.UndefOr[Boolean] = js.undefined
   
@@ -55,7 +55,7 @@ object BaseSchema {
   
   extension [Self <: BaseSchema](x: Self) {
     
-    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
@@ -63,11 +63,11 @@ object BaseSchema {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setEnum(value: js.Array[js.Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    inline def setEnum(value: js.Array[Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
     inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
-    inline def setEnumVarargs(value: js.Any*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: Any*): Self = StObject.set(x, "enum", js.Array(value*))
     
     inline def setExclusiveMaximum(value: Boolean): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
     
@@ -85,7 +85,7 @@ object BaseSchema {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Schema*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Schema*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
     

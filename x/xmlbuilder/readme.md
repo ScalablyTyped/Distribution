@@ -10,10 +10,10 @@ An XML builder for node.js
 | ------------------ | :-------------: |
 | Full name          | xmlbuilder |
 | Keywords           | xml, xmlbuilder |
-| # releases         | 14 |
-| # dependents       | 884 |
-| # downloads        | 500313985 |
-| # stars            | 29 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8.5466827E7 |
+| # stars            | 889.0 |
 
 ## Links
 - [Homepage](http://github.com/oozcitak/xmlbuilder-js)

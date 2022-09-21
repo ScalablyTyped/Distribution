@@ -14,7 +14,7 @@ trait AppearTransition extends StObject {
   
   var position: String
   
-  var styles: StringDictionary[RegisteredStyle[js.Any]]
+  var styles: StringDictionary[RegisteredStyle[Any]]
   
   var unfilled: Boolean
 }
@@ -24,7 +24,7 @@ object AppearTransition {
     appearTransition: Boolean,
     percent: Double,
     position: String,
-    styles: StringDictionary[RegisteredStyle[js.Any]],
+    styles: StringDictionary[RegisteredStyle[Any]],
     unfilled: Boolean
   ): AppearTransition = {
     val __obj = js.Dynamic.literal(appearTransition = appearTransition.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], unfilled = unfilled.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object AppearTransition {
     
     inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setUnfilled(value: Boolean): Self = StObject.set(x, "unfilled", value.asInstanceOf[js.Any])
   }

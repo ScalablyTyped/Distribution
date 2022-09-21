@@ -10,10 +10,10 @@ object highQualityMod {
   
   @JSImport("material-ui/svg-icons/av/high-quality", JSImport.Default)
   @js.native
-  class default () extends AvHighQuality
+  open class default () extends AvHighQuality
   
   @JSImport("material-ui/svg-icons/av/high-quality", "AvHighQuality")
   @js.native
-  class AvHighQuality ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvHighQuality ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

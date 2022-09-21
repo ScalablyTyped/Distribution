@@ -17,7 +17,7 @@ trait EffectParameters extends StObject {
   
   var FontName: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.EffectParameters_typekey")
   var PowerPointDotEffectParameters_typekey: EffectParameters
@@ -34,7 +34,7 @@ object EffectParameters {
     Color2: ColorFormat,
     Direction: MsoAnimDirection,
     FontName: String,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotEffectParameters_typekey: EffectParameters,
     Relative: MsoTriState,
     Size: Double
@@ -56,7 +56,7 @@ object EffectParameters {
     
     inline def setFontName(value: String): Self = StObject.set(x, "FontName", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotEffectParameters_typekey(value: EffectParameters): Self = StObject.set(x, "PowerPoint.EffectParameters_typekey", value.asInstanceOf[js.Any])
     

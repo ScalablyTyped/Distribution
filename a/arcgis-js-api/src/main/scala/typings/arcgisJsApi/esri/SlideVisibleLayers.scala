@@ -31,7 +31,7 @@ object SlideVisibleLayers {
     hasOwnProperty: PropertyKey => Boolean,
     id: String,
     propertyIsEnumerable: PropertyKey => Boolean,
-    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ js.Any, SlideVisibleLayers]]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], SlideVisibleLayers]]),
+    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, SlideVisibleLayers]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], SlideVisibleLayers]]),
     sublayerIds: js.Array[Double]
   ): SlideVisibleLayers = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), id = id.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any], sublayerIds = sublayerIds.asInstanceOf[js.Any])
@@ -44,6 +44,6 @@ object SlideVisibleLayers {
     
     inline def setSublayerIds(value: js.Array[Double]): Self = StObject.set(x, "sublayerIds", value.asInstanceOf[js.Any])
     
-    inline def setSublayerIdsVarargs(value: Double*): Self = StObject.set(x, "sublayerIds", js.Array(value :_*))
+    inline def setSublayerIdsVarargs(value: Double*): Self = StObject.set(x, "sublayerIds", js.Array(value*))
   }
 }

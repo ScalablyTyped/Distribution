@@ -7,9 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.EngineView")
 @js.native
-class EngineView ()
+open class EngineView ()
   extends StObject
      with typings.babylonjs.BABYLON.EngineView {
+  
+  /** Indicates if the view is enabled (true by default) */
+  /* CompleteClass */
+  var enabled: Boolean = js.native
+  
+  /**
+    * A randomly generated unique id
+    */
+  /* CompleteClass */
+  override val id: String = js.native
   
   /** Defines the canvas where to render the view */
   /* CompleteClass */

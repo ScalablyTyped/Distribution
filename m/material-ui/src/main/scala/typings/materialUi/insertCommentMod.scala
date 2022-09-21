@@ -10,10 +10,10 @@ object insertCommentMod {
   
   @JSImport("material-ui/svg-icons/editor/insert-comment", JSImport.Default)
   @js.native
-  class default () extends EditorInsertComment
+  open class default () extends EditorInsertComment
   
   @JSImport("material-ui/svg-icons/editor/insert-comment", "EditorInsertComment")
   @js.native
-  class EditorInsertComment ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorInsertComment ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

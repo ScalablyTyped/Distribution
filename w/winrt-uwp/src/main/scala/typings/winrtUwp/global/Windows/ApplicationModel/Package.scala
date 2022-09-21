@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.Storage.StorageFolder
@@ -28,7 +27,7 @@ abstract class Package ()
   var displayName: String = js.native
   
   /* CompleteClass */
-  var getAppListEntriesAsync: js.Any = js.native
+  var getAppListEntriesAsync: Any = js.native
   
   /* unmapped type */
   /**
@@ -44,11 +43,11 @@ abstract class Package ()
   
   /** Windows Phone only. Gets the date the application package was installed on the user's phone. */
   /* CompleteClass */
-  var installDate: Date = js.native
+  var installDate: js.Date = js.native
   
   /** Gets the date on which the application package was installed or last updated. */
   /* CompleteClass */
-  var installedDate: Date = js.native
+  var installedDate: js.Date = js.native
   
   /** Gets the location of the installed package. */
   /* CompleteClass */
@@ -86,7 +85,7 @@ abstract class Package ()
   var publisherDisplayName: String = js.native
   
   /* CompleteClass */
-  var status: js.Any = js.native
+  var status: Any = js.native
 }
 object Package {
   

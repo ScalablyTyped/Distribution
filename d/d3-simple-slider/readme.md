@@ -10,10 +10,10 @@ Renders an SVG slider
 | ------------------ | :-------------: |
 | Full name          | d3-simple-slider |
 | Keywords           | d3, d3-module, slider, visualization |
-| # releases         | 20 |
-| # dependents       | 1 |
-| # downloads        | 41140 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 7805.333333333333 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/johnwalley/d3-simple-slider)

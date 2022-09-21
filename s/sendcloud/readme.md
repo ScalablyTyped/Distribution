@@ -10,10 +10,10 @@ Node for sendcloud. send email quickly and simply.
 | ------------------ | :-------------: |
 | Full name          | sendcloud |
 | Keywords           | email, sendcloud, mail |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 5494 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1126.6666666666667 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/shanelau/sendcloud)

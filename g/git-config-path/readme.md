@@ -10,15 +10,12 @@ Resolve the path to the user's local or global .gitconfig.
 | ------------------ | :-------------: |
 | Full name          | git-config-path |
 | Keywords           | config, git, gitconfig, global, path, resolve |
-| # releases         | 0 |
-| # dependents       | 95 |
-| # downloads        | 21082973 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5271757.333333333 |
+| # stars            | 13.0 |
 
 ## Links
-- [Homepage](https://github.com/jonschlinkert/git-config-path)
-- [Bugs](https://github.com/jonschlinkert/git-config-path/issues)
-- [Repository](https://github.com/jonschlinkert/git-config-path)
 - [Npm](https://www.npmjs.com/package/git-config-path)
     
 

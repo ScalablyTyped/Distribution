@@ -19,7 +19,7 @@ object global {
       */
     @JSGlobal("Architect.Hopfield")
     @js.native
-    class Hopfield protected ()
+    open class Hopfield protected ()
       extends typings.synaptic.mod.global.Architect.Hopfield {
       /**
         * The Hopfield architecture serves as content-addressable memory. They are trained to remember patterns and then when feeding new patterns to the network it returns the most similar one from the patterns it was trained to remember.
@@ -33,7 +33,7 @@ object global {
       */
     @JSGlobal("Architect.LSTM")
     @js.native
-    class LSTM protected ()
+    open class LSTM protected ()
       extends typings.synaptic.mod.global.Architect.LSTM {
       /**
         * The long short-term memory is an architecture well-suited to learn from experience to classify, process and predict time series when there are very long time lags of unknown size between important events.
@@ -47,7 +47,7 @@ object global {
       */
     @JSGlobal("Architect.Liquid")
     @js.native
-    class Liquid protected ()
+    open class Liquid protected ()
       extends typings.synaptic.mod.global.Architect.Liquid {
       /**
         * The Liquid architecture allows you to create Liquid State Machines. In these networks, neurons are randomly connected to each other. The recurrent nature of the connections turns the time varying input into a spatio-temporal pattern of activations in the network nodes.
@@ -65,7 +65,7 @@ object global {
       */
     @JSGlobal("Architect.Perceptron")
     @js.native
-    class Perceptron protected ()
+    open class Perceptron protected ()
       extends typings.synaptic.mod.global.Architect.Perceptron {
       /**
         * This architecture allows you to create multilayer perceptrons, also known as feed-forward neural networks. They consist of a sequence of layers, each fully connected to the next one.
@@ -78,7 +78,7 @@ object global {
   /* was `typeof Synaptic.Layer` */
   @JSGlobal("Layer")
   @js.native
-  class Layer protected ()
+  open class Layer protected ()
     extends typings.synaptic.mod.global.Layer {
     /**
       * Normally you won't work with single neurons, but use Layers instead. A layer is basically an array of neurons, they can do pretty much the same things as neurons do, but it makes the programming process faster.
@@ -94,7 +94,7 @@ object global {
       */
     @JSGlobal("Layer.LayerConnection")
     @js.native
-    class LayerConnection ()
+    open class LayerConnection ()
       extends typings.synaptic.mod.global.Layer.LayerConnection
     object LayerConnection {
       
@@ -112,7 +112,7 @@ object global {
     /* was `typeof LayerConnection` */
     @JSGlobal("Layer.connection")
     @js.native
-    class connection ()
+    open class connection ()
       extends typings.synaptic.mod.global.Layer.connection
     /* was `typeof LayerConnection` */
     object connection {
@@ -166,7 +166,7 @@ object global {
   /**
     * Networks are basically an array of layers. They have an input layer, a number of hidden layers, and an output layer.
     */
-  class Network ()
+  open class Network ()
     extends typings.synaptic.mod.global.Network {
     def this(options: Options) = this()
   }
@@ -180,7 +180,7 @@ object global {
     /**
       * Rebuild a network that has been stored in a json using the method toJSON().
       */
-    inline def fromJSON(exported: js.Any): typings.synaptic.mod.Network = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(exported.asInstanceOf[js.Any]).asInstanceOf[typings.synaptic.mod.Network]
+    inline def fromJSON(exported: Any): typings.synaptic.mod.Network = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(exported.asInstanceOf[js.Any]).asInstanceOf[typings.synaptic.mod.Network]
     
     /**
       * Creates a static String to store the source code of the functions that are identical for all the workers (train, _trainSet, test).
@@ -195,7 +195,7 @@ object global {
   /**
     * Neurons are the basic unit of the neural network. They can be connected together, or used to gate connections between other neurons.
     */
-  class Neuron ()
+  open class Neuron ()
     extends typings.synaptic.mod.global.Neuron
   /* static members */
   /* was `typeof Synaptic.Neuron` */
@@ -207,7 +207,7 @@ object global {
     
     @JSGlobal("Neuron.Connection")
     @js.native
-    class Connection_ protected ()
+    open class Connection_ protected ()
       extends typings.synaptic.mod.global.Neuron.Connection_ {
       def this(from: Double, to: Double) = this()
       def this(from: Double, to: Double, weight: Double) = this()
@@ -225,7 +225,7 @@ object global {
     /* was `typeof Connection` */
     @JSGlobal("Neuron.connection")
     @js.native
-    class connection protected ()
+    open class connection protected ()
       extends typings.synaptic.mod.global.Neuron.connection {
       def this(from: Double, to: Double) = this()
       def this(from: Double, to: Double, weight: Double) = this()
@@ -272,7 +272,7 @@ object global {
   /* was `typeof Synaptic.Trainer` */
   @JSGlobal("Trainer")
   @js.native
-  class Trainer protected ()
+  open class Trainer protected ()
     extends typings.synaptic.mod.global.Trainer {
     /**
       * The Trainer makes it easier to train any set to any network, no matter its architecture. The trainer also contains built-in tasks to test the performance of your network.

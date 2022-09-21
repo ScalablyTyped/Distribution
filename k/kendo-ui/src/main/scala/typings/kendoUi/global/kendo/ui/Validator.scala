@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Validator")
 @js.native
-class Validator protected ()
+open class Validator protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Validator {
   def this(element: Element) = this()

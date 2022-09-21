@@ -156,7 +156,7 @@ trait PlotVectorOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.undefined
+  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
@@ -192,6 +192,15 @@ trait PlotVectorOptions extends StObject {
   var crisp: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highstock) Cumulative Sum feature replaces points' values with the
+    * following formula: `sum of all previous points' values + current point's
+    * value`. Works only for points in a visible range. Adds the
+    * `cumulativeSum` field to each point object that can be accessed e.g. in
+    * the tooltip.pointFormat.
+    */
+  var cumulative: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts, Highstock) You can set the cursor to "pointer" if you have
     * click events attached to the series, to signal to the user that the
     * points and lines can be clicked.
@@ -206,7 +215,13 @@ trait PlotVectorOptions extends StObject {
     * for customized functionality. Here you can add additional data for your
     * own event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) Indicates data is structured as columns instead
+    * of rows.
+    */
+  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
@@ -322,7 +337,7 @@ trait PlotVectorOptions extends StObject {
   var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   
   /**
-    * (Highcharts, Highstock) The line width for each vector arrow.
+    * (Highcharts, Highstock) The width of the line connecting the data points.
     */
   var lineWidth: js.UndefOr[Double] = js.undefined
   
@@ -337,6 +352,8 @@ trait PlotVectorOptions extends StObject {
     * order as the master one.
     */
   var linkedTo: js.UndefOr[String] = js.undefined
+  
+  var marker: js.UndefOr[Any] = js.undefined
   
   /**
     * (Highstock) Options for the corresponding navigator series if
@@ -357,6 +374,12 @@ trait PlotVectorOptions extends StObject {
   var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
+    * (Highcharts, Highstock) Options for the _Series on point_ feature. Only
+    * `pie` and `sunburst` series are supported at this moment.
+    */
+  var onPoint: js.UndefOr[js.Object | PlotVectorOnPointOptions] = js.undefined
+  
+  /**
     * (Highcharts, Highstock) Opacity of a series parts: line, fill (e.g. area)
     * and dataLabels.
     */
@@ -368,8 +391,9 @@ trait PlotVectorOptions extends StObject {
   var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Same as accessibility.pointDescriptionFormatter,
-    * but for an individual series. Overrides the chart wide configuration.
+    * (Highcharts, Highstock) Same as
+    * accessibility.series.descriptionFormatter, but for an individual series.
+    * Overrides the chart wide configuration.
     */
   var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
   
@@ -382,6 +406,9 @@ trait PlotVectorOptions extends StObject {
     *
     * It can be also be combined with `pointIntervalUnit` to draw irregular
     * time intervals.
+    *
+    * If combined with `relativeXValue`, an x value can be set on each point,
+    * and the `pointInterval` is added x times to the `pointStart` setting.
     *
     * Please note that this options applies to the _series data_, not the
     * interval of the axis ticks, which is independent.
@@ -416,16 +443,24 @@ trait PlotVectorOptions extends StObject {
     * a series, pointStart defines on what value to start. For example, if a
     * series contains one yearly value starting from 1945, set pointStart to
     * 1945.
+    *
+    * If combined with `relativeXValue`, an x value can be set on each point.
+    * The x value from the point options is multiplied by `pointInterval` and
+    * added to `pointStart` to produce a modified x value.
     */
   var pointStart: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock) What part of the vector it should be rotated
-    * around. Can be one of `start`, `center` and `end`. When `start`, the
-    * vectors will start from the given [x, y] position, and when `end` the
-    * vectors will end in the [x, y] position.
+    * (Highcharts, Highstock) When true, X values in the data set are relative
+    * to the current `pointStart`, `pointInterval` and `pointIntervalUnit`
+    * settings. This allows compression of the data for datasets with irregular
+    * X values.
+    *
+    * The real X values are computed on the formula `f(x) = ax + b`, where `a`
+    * is the `pointInterval` (optionally with a time unit given by
+    * `pointIntervalUnit`), and `b` is the `pointStart`.
     */
-  var rotationOrigin: js.UndefOr[OptionsRotationOriginValue] = js.undefined
+  var relativeXValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) Whether to select the series initially. If
@@ -475,11 +510,11 @@ trait PlotVectorOptions extends StObject {
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Sticky tracking of mouse events. When true, the
-    * `mouseOut` event on a series isn't triggered until the mouse moves over
-    * another series, or out of the plot area. When false, the `mouseOut` event
-    * on a series is triggered when the mouse leaves the area around the
-    * series' graph or markers. This also implies the tooltip. When
+    * (Highcharts, Highstock, Highmaps) Sticky tracking of mouse events. When
+    * true, the `mouseOut` event on a series isn't triggered until the mouse
+    * moves over another series, or out of the plot area. When false, the
+    * `mouseOut` event on a series is triggered when the mouse leaves the area
+    * around the series' graph or markers. This also implies the tooltip. When
     * `stickyTracking` is false and `tooltip.shared` is false, the tooltip will
     * be hidden when moving the mouse between series.
     */
@@ -490,15 +525,15 @@ trait PlotVectorOptions extends StObject {
     * level. For line type series this is only used in conjunction with
     * negativeColor.
     */
-  var threshold: js.UndefOr[Double] = js.undefined
+  var threshold: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * (Highcharts, Highstock) A configuration object for the tooltip rendering
-    * of each single series. Properties are inherited from tooltip. Overridable
-    * properties are `headerFormat`, `pointFormat`, `yDecimals`, `xDateFormat`,
-    * `yPrefix` and `ySuffix`. Unlike other series, in a scatter plot the
-    * series.name by default shows in the headerFormat and point.x and point.y
-    * in the pointFormat.
+    * (Highcharts, Highstock, Highmaps) A configuration object for the tooltip
+    * rendering of each single series. Properties are inherited from tooltip.
+    * Overridable properties are `headerFormat`, `pointFormat`, `yDecimals`,
+    * `xDateFormat`, `yPrefix` and `ySuffix`. Unlike other series, in a scatter
+    * plot the series.name by default shows in the headerFormat and point.x and
+    * point.y in the pointFormat.
     */
   var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   
@@ -514,12 +549,6 @@ trait PlotVectorOptions extends StObject {
     * two dimensional arrays are allowed.
     */
   var turboThreshold: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) Maximum length of the arrows in the vector plot.
-    * The individual arrow length is computed between 0 and this value.
-    */
-  var vectorLength: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) Set the initial visibility of the series.
@@ -613,7 +642,7 @@ object PlotVectorOptions {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
     inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
@@ -633,19 +662,27 @@ object PlotVectorOptions {
     
     inline def setCrispUndefined: Self = StObject.set(x, "crisp", js.undefined)
     
+    inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    
+    inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+    
     inline def setCursor(value: String | CursorValue): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    inline def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
+    
+    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
     
     inline def setDataLabels(value: PlotVectorDataLabelsOptions | js.Array[PlotVectorDataLabelsOptions]): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDataLabelsVarargs(value: PlotVectorDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(value: PlotVectorDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDataSorting(value: DataSortingOptionsObject | PlotVectorDataSortingOptions): Self = StObject.set(x, "dataSorting", value.asInstanceOf[js.Any])
     
@@ -679,13 +716,13 @@ object PlotVectorOptions {
     
     inline def setJoinByUndefined: Self = StObject.set(x, "joinBy", js.undefined)
     
-    inline def setJoinByVarargs(value: String*): Self = StObject.set(x, "joinBy", js.Array(value :_*))
+    inline def setJoinByVarargs(value: String*): Self = StObject.set(x, "joinBy", js.Array(value*))
     
     inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setLabel(value: SeriesLabelOptionsObject): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
@@ -707,6 +744,10 @@ object PlotVectorOptions {
     
     inline def setLinkedToUndefined: Self = StObject.set(x, "linkedTo", js.undefined)
     
+    inline def setMarker(value: Any): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    
     inline def setNavigatorOptions(value: PlotSeriesOptions): Self = StObject.set(x, "navigatorOptions", value.asInstanceOf[js.Any])
     
     inline def setNavigatorOptionsUndefined: Self = StObject.set(x, "navigatorOptions", js.undefined)
@@ -714,6 +755,10 @@ object PlotVectorOptions {
     inline def setNegativeColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
     
     inline def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
+    
+    inline def setOnPoint(value: js.Object | PlotVectorOnPointOptions): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
@@ -743,9 +788,9 @@ object PlotVectorOptions {
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
-    inline def setRotationOrigin(value: OptionsRotationOriginValue): Self = StObject.set(x, "rotationOrigin", value.asInstanceOf[js.Any])
+    inline def setRelativeXValue(value: Boolean): Self = StObject.set(x, "relativeXValue", value.asInstanceOf[js.Any])
     
-    inline def setRotationOriginUndefined: Self = StObject.set(x, "rotationOrigin", js.undefined)
+    inline def setRelativeXValueUndefined: Self = StObject.set(x, "relativeXValue", js.undefined)
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
@@ -781,6 +826,8 @@ object PlotVectorOptions {
     
     inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
+    inline def setThresholdNull: Self = StObject.set(x, "threshold", null)
+    
     inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
     inline def setTooltip(value: SeriesTooltipOptionsObject): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
@@ -790,10 +837,6 @@ object PlotVectorOptions {
     inline def setTurboThreshold(value: Double): Self = StObject.set(x, "turboThreshold", value.asInstanceOf[js.Any])
     
     inline def setTurboThresholdUndefined: Self = StObject.set(x, "turboThreshold", js.undefined)
-    
-    inline def setVectorLength(value: Double): Self = StObject.set(x, "vectorLength", value.asInstanceOf[js.Any])
-    
-    inline def setVectorLengthUndefined: Self = StObject.set(x, "vectorLength", js.undefined)
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
@@ -811,6 +854,6 @@ object PlotVectorOptions {
     
     inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    inline def setZonesVarargs(value: SeriesZonesOptionsObject*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: SeriesZonesOptionsObject*): Self = StObject.set(x, "zones", js.Array(value*))
   }
 }

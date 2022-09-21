@@ -10,10 +10,10 @@ The Final Countdown for jQuery
 | ------------------ | :-------------: |
 | Full name          | jquery-countdown |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 459436 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 40270.666666666664 |
+| # stars            | 2288.0 |
 
 ## Links
 - [Homepage](http://hilios.github.io/jQuery.countdown/)

@@ -15,7 +15,7 @@ object agreeItemNativeMod {
   
   @JSImport("antd-mobile-rn/lib/checkbox/AgreeItem.native", JSImport.Default)
   @js.native
-  class default () extends AgreeItem
+  open class default () extends AgreeItem
   /* static members */
   object default {
     
@@ -30,8 +30,7 @@ object agreeItemNativeMod {
   }
   
   @js.native
-  trait AgreeItem
-    extends Component[AgreeItemNativeProps, js.Any, js.Any] {
+  trait AgreeItem extends Component[AgreeItemNativeProps, Any, Any] {
     
     def handleClick(): Unit = js.native
   }

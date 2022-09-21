@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md
 
-Typings are for version 2.4.3
+Typings are for version 5.1.4
 
 ## Library description:
 This is the full react-md library bundled together for convenience.
@@ -10,10 +10,10 @@ This is the full react-md library bundled together for convenience.
 | ------------------ | :-------------: |
 | Full name          | react-md |
 | Keywords           | react-md, material design, react, component, components |
-| # releases         | 61 |
-| # dependents       | 20 |
-| # downloads        | 348581 |
-| # stars            | 2 |
+| # releases         | 57 |
+| # dependents       | 0.0 |
+| # downloads        | 46013.666666666664 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev)

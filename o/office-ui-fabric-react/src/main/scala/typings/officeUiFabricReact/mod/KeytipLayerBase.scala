@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.officeUiFabricReact.keytipLayerMod.KeytipLayerBase because Already inherited
 - typings.officeUiFabricReact.libKeytipLayerMod.KeytipLayerBase because Inheritance from two classes. Inlined  */ @JSImport("office-ui-fabric-react", "KeytipLayerBase")
 @js.native
-class KeytipLayerBase protected ()
+open class KeytipLayerBase protected ()
   extends typings.officeUiFabricReact.libKeytipsMod.KeytipLayerBase {
-  def this(props: IKeytipLayerProps, context: js.Any) = this()
+  def this(props: IKeytipLayerProps, context: Any) = this()
 }
 /* static members */
 object KeytipLayerBase {

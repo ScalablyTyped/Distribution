@@ -17,7 +17,7 @@ object cacheFirstMod {
   
   @JSImport("workbox-strategies/CacheFirst", "CacheFirst")
   @js.native
-  class CacheFirst ()
+  open class CacheFirst ()
     extends StObject
        with RouteHandlerObject {
     def this(options: CacheFirstOptions) = this()
@@ -68,7 +68,7 @@ object cacheFirstMod {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
 }

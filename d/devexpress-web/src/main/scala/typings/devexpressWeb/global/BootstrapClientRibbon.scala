@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientRibbon")
 @js.native
-class BootstrapClientRibbon ()
+open class BootstrapClientRibbon ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientRibbon {
   
@@ -89,13 +89,13 @@ class BootstrapClientRibbon ()
     * @param name A string value specifying the name of the item.
     */
   /* CompleteClass */
-  override def GetItemValueByName(name: String): js.Any = js.native
+  override def GetItemValueByName(name: String): Any = js.native
   
   /**
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Gets a value specifying whether the ribbon is minimized.
@@ -107,7 +107,7 @@ class BootstrapClientRibbon ()
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /* CompleteClass */
   override def GetQuickAccessToolbarItem(name: String): typings.devexpressWeb.ASPxClientRibbonItem = js.native
@@ -226,7 +226,7 @@ class BootstrapClientRibbon ()
     * @param value An object that is the new item value.
     */
   /* CompleteClass */
-  override def SetItemValueByName(name: String, value: js.Any): Unit = js.native
+  override def SetItemValueByName(name: String, value: Any): Unit = js.native
   
   /**
     * Specifies whether the ribbon is minimized.

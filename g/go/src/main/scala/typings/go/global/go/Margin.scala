@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * If zero arguments are supplied, zero is used for all four sides.
   */
-class Margin ()
+open class Margin ()
   extends typings.go.mod.Margin {
   /**
     * If one argument is supplied, that number is used for all four sides.

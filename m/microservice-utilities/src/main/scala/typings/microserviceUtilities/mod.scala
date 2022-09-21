@@ -9,27 +9,27 @@ object mod {
   
   @JSImport("microservice-utilities", "Authorizer")
   @js.native
-  class Authorizer protected () extends StObject {
-    def this(logFunction: js.Function1[/* msg */ js.Any, Unit], configuration: AuthorizerConfiguration) = this()
+  open class Authorizer protected () extends StObject {
+    def this(logFunction: js.Function1[/* msg */ Any, Unit], configuration: AuthorizerConfiguration) = this()
     
     def getPolicy(request: js.Object): js.Promise[AuthorizerPolicy] = js.native
   }
   
   @JSImport("microservice-utilities", "PlatformClient")
   @js.native
-  class PlatformClient protected () extends StObject {
-    def this(logFunction: js.Function1[/* msg */ js.Any, Unit]) = this()
+  open class PlatformClient protected () extends StObject {
+    def this(logFunction: js.Function1[/* msg */ Any, Unit]) = this()
     def this(
-      logFunction: js.Function1[/* msg */ js.Any, Unit],
+      logFunction: js.Function1[/* msg */ Any, Unit],
       tokenResolverFunction: js.Function0[js.Promise[String]]
     ) = this()
     def this(
-      logFunction: js.Function1[/* msg */ js.Any, Unit],
+      logFunction: js.Function1[/* msg */ Any, Unit],
       tokenResolverFunction: js.Function0[js.Promise[String]],
       configuration: PlatformClientConfiguration
     ) = this()
     def this(
-      logFunction: js.Function1[/* msg */ js.Any, Unit],
+      logFunction: js.Function1[/* msg */ Any, Unit],
       tokenResolverFunction: Unit,
       configuration: PlatformClientConfiguration
     ) = this()
@@ -60,15 +60,15 @@ object mod {
   
   @JSImport("microservice-utilities", "RequestLogger")
   @js.native
-  class RequestLogger () extends StObject {
+  open class RequestLogger () extends StObject {
     def this(configuration: RequestLoggerConfiguration) = this()
     
-    def log(msg: js.Any): Unit = js.native
+    def log(msg: Any): Unit = js.native
   }
   
   @JSImport("microservice-utilities", "ServiceTokenProvider")
   @js.native
-  class ServiceTokenProvider protected () extends StObject {
+  open class ServiceTokenProvider protected () extends StObject {
     def this(httpClient: js.Object, kmsClient: js.Object) = this()
     def this(httpClient: js.Object, kmsClient: js.Object, configuration: ServiceTokenProviderConfiguration) = this()
     
@@ -144,9 +144,9 @@ object mod {
     
     var data: js.UndefOr[T] = js.undefined
     
-    var headers: js.Any
+    var headers: Any
     
-    var request: js.UndefOr[js.Any] = js.undefined
+    var request: js.UndefOr[Any] = js.undefined
     
     var status: Double
     
@@ -154,7 +154,7 @@ object mod {
   }
   object PlatformClientResponse {
     
-    inline def apply[T](config: js.Object, headers: js.Any, status: Double, statusText: String): PlatformClientResponse[T] = {
+    inline def apply[T](config: js.Object, headers: Any, status: Double, statusText: String): PlatformClientResponse[T] = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlatformClientResponse[T]]
     }
@@ -167,9 +167,9 @@ object mod {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
@@ -185,7 +185,7 @@ object mod {
     
     var jsonSpace: js.UndefOr[Double] = js.undefined
     
-    var logFunction: js.UndefOr[js.Function1[/* msg */ js.Any, Unit]] = js.undefined
+    var logFunction: js.UndefOr[js.Function1[/* msg */ Any, Unit]] = js.undefined
   }
   object RequestLoggerConfiguration {
     
@@ -204,7 +204,7 @@ object mod {
       
       inline def setJsonSpaceUndefined: Self = StObject.set(x, "jsonSpace", js.undefined)
       
-      inline def setLogFunction(value: /* msg */ js.Any => Unit): Self = StObject.set(x, "logFunction", js.Any.fromFunction1(value))
+      inline def setLogFunction(value: /* msg */ Any => Unit): Self = StObject.set(x, "logFunction", js.Any.fromFunction1(value))
       
       inline def setLogFunctionUndefined: Self = StObject.set(x, "logFunction", js.undefined)
     }

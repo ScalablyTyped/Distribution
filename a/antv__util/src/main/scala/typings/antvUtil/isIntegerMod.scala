@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isIntegerMod {
   
-  @JSImport("@antv/util/lib/is-integer", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/is-integer", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(number: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -25,7 +25,7 @@ object VerifyIdTokenOptions {
     
     inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
-    inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
+    inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value*))
     
     inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     

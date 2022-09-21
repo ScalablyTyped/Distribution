@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("H.map.GeoShape")
 @js.native
-class GeoShape protected ()
+open class GeoShape protected ()
   extends StObject
      with typings.heremaps.H.map.GeoShape {
   /**

@@ -1,8 +1,6 @@
 package typings.diagnosticChannelPublishers
 
 import typings.diagnosticChannel.patchRequireMod.IModulePatcher
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,19 +21,19 @@ object redisPubMod {
     
     var address: String
     
-    var commandObj: js.Any
+    var commandObj: Any
     
     var duration: Double
     
-    var err: Error
+    var err: js.Error
     
-    var result: js.Any
+    var result: Any
     
-    var time: Date
+    var time: js.Date
   }
   object IRedisData {
     
-    inline def apply(address: String, commandObj: js.Any, duration: Double, err: Error, result: js.Any, time: Date): IRedisData = {
+    inline def apply(address: String, commandObj: Any, duration: Double, err: js.Error, result: Any, time: js.Date): IRedisData = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], commandObj = commandObj.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], err = err.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRedisData]
     }
@@ -44,15 +42,15 @@ object redisPubMod {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      inline def setCommandObj(value: js.Any): Self = StObject.set(x, "commandObj", value.asInstanceOf[js.Any])
+      inline def setCommandObj(value: Any): Self = StObject.set(x, "commandObj", value.asInstanceOf[js.Any])
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
 }

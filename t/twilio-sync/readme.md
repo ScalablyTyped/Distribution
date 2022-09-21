@@ -1,7 +1,7 @@
 
 # Scala.js typings for twilio-sync
 
-Typings are for version 0.12.4
+Typings are for version 3.1.0
 
 ## Library description:
 Twilio Sync client library
@@ -10,10 +10,10 @@ Twilio Sync client library
 | ------------------ | :-------------: |
 | Full name          | twilio-sync |
 | Keywords           | - |
-| # releases         | 54 |
-| # dependents       | 10 |
-| # downloads        | 3339392 |
-| # stars            | 0 |
+| # releases         | 73 |
+| # dependents       | 0.0 |
+| # downloads        | 491043.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/twilio-sync)

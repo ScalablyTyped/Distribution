@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Specifies a Collaborative Application Markup Language (CAML) query on a list. */
 @JSGlobal("SP.CamlQuery")
 @js.native
-class CamlQuery ()
+open class CamlQuery ()
   extends StObject
      with typings.sharepoint.SP.CamlQuery {
   
   /* CompleteClass */
-  override def customFromJson(obj: js.Any): Boolean = js.native
+  override def customFromJson(obj: Any): Boolean = js.native
   
   /* CompleteClass */
   override def customWriteToXml(
@@ -21,7 +21,7 @@ class CamlQuery ()
   ): Boolean = js.native
   
   /* CompleteClass */
-  override def fromJson(obj: js.Any): Unit = js.native
+  override def fromJson(obj: Any): Unit = js.native
   
   /** Returns true if the query returns dates in Coordinated Universal Time (UTC) format. */
   /* CompleteClass */

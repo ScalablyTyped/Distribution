@@ -11,9 +11,9 @@ Murmur hash optimized for performance, not collision avoidance.
 | Full name          | quick-hash |
 | Keywords           | hash, murmur, murmur hash, fast, performance, quick |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 8240 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 563.6666666666666 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/vigour-io/quick-hash#readme)

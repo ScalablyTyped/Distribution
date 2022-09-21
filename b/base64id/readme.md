@@ -10,10 +10,10 @@ Generates a base64 id
 | ------------------ | :-------------: |
 | Full name          | base64id |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 59 |
-| # downloads        | 172823266 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8056081333333332E7 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/faeldt/base64id#readme)

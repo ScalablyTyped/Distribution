@@ -5,8 +5,7 @@ import typings.arangodb.ArangoDB.HttpStatus
 import typings.arangodb.anon.Cause
 import typings.arangodb.anon.Domain
 import typings.arangodb.anon.LastModified
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,9 +28,9 @@ trait Response extends StObject {
   
   def getHeader(name: String): js.UndefOr[String] = js.native
   
-  var headers: StringDictionary[js.Any] = js.native
+  var headers: StringDictionary[Any] = js.native
   
-  def json(data: js.Any): this.type = js.native
+  def json(data: Any): this.type = js.native
   
   def redirect(path: String): this.type = js.native
   def redirect(status: Double, path: String): this.type = js.native
@@ -39,8 +38,8 @@ trait Response extends StObject {
   
   def removeHeader(name: String): this.type = js.native
   
-  def send(data: js.Any): this.type = js.native
-  def send(data: js.Any, `type`: String): this.type = js.native
+  def send(data: Any): this.type = js.native
+  def send(data: Any, `type`: String): this.type = js.native
   
   def sendFile(path: String): this.type = js.native
   def sendFile(path: String, options: LastModified): this.type = js.native
@@ -59,16 +58,16 @@ trait Response extends StObject {
   var statusCode: Double = js.native
   
   def `throw`(status: Double): scala.Nothing = js.native
-  def `throw`(status: Double, error: Error): scala.Nothing = js.native
+  def `throw`(status: Double, error: js.Error): scala.Nothing = js.native
   def `throw`(status: Double, options: Cause): scala.Nothing = js.native
   def `throw`(status: Double, reason: String): scala.Nothing = js.native
-  def `throw`(status: Double, reason: String, error: Error): scala.Nothing = js.native
+  def `throw`(status: Double, reason: String, error: js.Error): scala.Nothing = js.native
   def `throw`(status: Double, reason: String, options: Cause): scala.Nothing = js.native
   def `throw`(status: HttpStatus): scala.Nothing = js.native
-  def `throw`(status: HttpStatus, error: Error): scala.Nothing = js.native
+  def `throw`(status: HttpStatus, error: js.Error): scala.Nothing = js.native
   def `throw`(status: HttpStatus, options: Cause): scala.Nothing = js.native
   def `throw`(status: HttpStatus, reason: String): scala.Nothing = js.native
-  def `throw`(status: HttpStatus, reason: String, error: Error): scala.Nothing = js.native
+  def `throw`(status: HttpStatus, reason: String, error: js.Error): scala.Nothing = js.native
   def `throw`(status: HttpStatus, reason: String, options: Cause): scala.Nothing = js.native
   
   def `type`(): String = js.native

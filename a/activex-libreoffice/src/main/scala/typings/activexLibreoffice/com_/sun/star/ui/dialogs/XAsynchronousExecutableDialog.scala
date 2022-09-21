@@ -27,7 +27,7 @@ object XAsynchronousExecutableDialog {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDialogTitle: String => Unit,
     startExecuteModal: XDialogClosedListener => Unit

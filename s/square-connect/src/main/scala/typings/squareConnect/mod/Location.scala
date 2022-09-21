@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "Location")
 @js.native
-class Location () extends StObject {
+open class Location () extends StObject {
   
   /**
     * The physical address of the location.

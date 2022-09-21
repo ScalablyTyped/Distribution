@@ -1,6 +1,7 @@
 package typings.lottieWeb
 
 import typings.lottieWeb.mod.AnimationEventName
+import typings.lottieWeb.mod.RendererType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,9 @@ object lottieWebStrings {
   inline def DOMLoaded: DOMLoaded = "DOMLoaded".asInstanceOf[DOMLoaded]
   
   @js.native
-  sealed trait canvas extends StObject
+  sealed trait canvas
+    extends StObject
+       with RendererType
   inline def canvas: canvas = "canvas".asInstanceOf[canvas]
   
   @js.native
@@ -60,7 +63,9 @@ object lottieWebStrings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait html extends StObject
+  sealed trait html
+    extends StObject
+       with RendererType
   inline def html: html = "html".asInstanceOf[html]
   
   @js.native
@@ -82,6 +87,8 @@ object lottieWebStrings {
   inline def segmentStart: segmentStart = "segmentStart".asInstanceOf[segmentStart]
   
   @js.native
-  sealed trait svg extends StObject
+  sealed trait svg
+    extends StObject
+       with RendererType
   inline def svg: svg = "svg".asInstanceOf[svg]
 }

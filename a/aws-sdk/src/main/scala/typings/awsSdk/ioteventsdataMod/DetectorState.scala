@@ -34,10 +34,10 @@ object DetectorState {
     
     inline def setTimers(value: Timers): Self = StObject.set(x, "timers", value.asInstanceOf[js.Any])
     
-    inline def setTimersVarargs(value: Timer*): Self = StObject.set(x, "timers", js.Array(value :_*))
+    inline def setTimersVarargs(value: Timer*): Self = StObject.set(x, "timers", js.Array(value*))
     
     inline def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    inline def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: Variable*): Self = StObject.set(x, "variables", js.Array(value*))
   }
 }

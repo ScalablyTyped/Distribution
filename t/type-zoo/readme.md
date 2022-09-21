@@ -1,7 +1,7 @@
 
 # Scala.js typings for type-zoo
 
-Typings are for version 3.1.1
+Typings are for version 3.4.1
 
 ## Library description:
 A menagerie of useful type operators for TypeScript
@@ -10,10 +10,10 @@ A menagerie of useful type operators for TypeScript
 | ------------------ | :-------------: |
 | Full name          | type-zoo |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 17 |
-| # downloads        | 378443 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 30735.0 |
+| # stars            | 468.0 |
 
 ## Links
 - [Homepage](https://github.com/pelotom/type-zoo#readme)

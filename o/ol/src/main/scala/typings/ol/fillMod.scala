@@ -10,7 +10,7 @@ object fillMod {
   
   @JSImport("ol/style/Fill", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Fill {
     def this(opt_options: Options) = this()
@@ -48,7 +48,7 @@ object fillMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     }
   }
 }

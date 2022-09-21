@@ -32,7 +32,7 @@ object mod {
     
     var headers: Entries
     
-    def json(): js.Promise[js.Any]
+    def json(): js.Promise[Any]
     
     var ok: Boolean
     
@@ -49,7 +49,7 @@ object mod {
     inline def apply(
       blob: () => js.Promise[Blob],
       headers: Entries,
-      json: () => js.Promise[js.Any],
+      json: () => js.Promise[Any],
       ok: Boolean,
       status: Double,
       statusText: String,
@@ -66,7 +66,7 @@ object mod {
       
       inline def setHeaders(value: Entries): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      inline def setJson(value: () => js.Promise[Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
       
       inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       

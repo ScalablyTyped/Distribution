@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A SourceContext is a reference to a tree of files. A SourceContext together
-  * with a path point to a unique revision of a single file or directory.
-  */
 trait SchemaSourceContext extends StObject {
   
   /**

@@ -10,10 +10,10 @@ object queryBuilderMod {
   
   @JSImport("material-ui/svg-icons/action/query-builder", JSImport.Default)
   @js.native
-  class default () extends ActionQueryBuilder
+  open class default () extends ActionQueryBuilder
   
   @JSImport("material-ui/svg-icons/action/query-builder", "ActionQueryBuilder")
   @js.native
-  class ActionQueryBuilder ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionQueryBuilder ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,26 +1,32 @@
 package typings.loopback.mod
 
+import typings.express.mod.RequestHandler
+import typings.loopback.anon.Cookies
+import typings.loopback.mod.^
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def apply(): typings.loopback.mod.LoopBackApplication = typings.loopback.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.loopback.mod.LoopBackApplication]
+inline def apply(): LoopBackApplication = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[LoopBackApplication]
 
 // END OF PERSISTED MODEL
 /**
   * Serve the LoopBack favicon.
   * @header loopback.favicon(
   */
-inline def favicon(): typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query] = typings.loopback.mod.^.asInstanceOf[js.Dynamic].applyDynamic("favicon")().asInstanceOf[typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query]]
+inline def favicon(): RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("favicon")().asInstanceOf[RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]]]
 
 /**
   * Expose models over REST
@@ -31,28 +37,32 @@ typings.expressServeStaticCore.mod.Query]]
   * For more information, see [Exposing models over a REST API](docs.strongloop.com/display/DOC/Exposing+models+over+a+REST+API).
   * @header loopback.rest(
   */
-inline def rest(): typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query] = typings.loopback.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rest")().asInstanceOf[typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query]]
+inline def rest(): RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("rest")().asInstanceOf[RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]]]
 
 /**
   * Rewrite the url to replace current user literal with the logged in user id
   */
-inline def rewriteUserLiteral(): typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query] = typings.loopback.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rewriteUserLiteral")().asInstanceOf[typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query]]
+inline def rewriteUserLiteral(): RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("rewriteUserLiteral")().asInstanceOf[RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]]]
 
 /**
   * Serve static assets of a LoopBack application
@@ -63,24 +73,28 @@ typings.expressServeStaticCore.mod.Query]]
   *   for the full list of available options.
   * @header loopback.static(root, [options])
   */
-inline def static(root: java.lang.String): typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query] = typings.loopback.mod.^.asInstanceOf[js.Dynamic].applyDynamic("static")(root.asInstanceOf[js.Any]).asInstanceOf[typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query]]
-inline def static(root: java.lang.String, options: js.Any): typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query] = (typings.loopback.mod.^.asInstanceOf[js.Dynamic].applyDynamic("static")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query]]
+inline def static(root: String): RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("static")(root.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]]]
+inline def static(root: String, options: Any): RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("static")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]]]
 
 /**
   * Return HTTP response with basic application status information:
@@ -92,15 +106,17 @@ typings.expressServeStaticCore.mod.Query]]
   * }
   * ```
   */
-inline def status(): typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query] = typings.loopback.mod.^.asInstanceOf[js.Dynamic].applyDynamic("status")().asInstanceOf[typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query]]
+inline def status(): RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("status")().asInstanceOf[RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]]]
 
 /**
   * Check for an access token in cookies, headers, and query string parameters.
@@ -133,45 +149,51 @@ typings.expressServeStaticCore.mod.Query]]
   * @property {string} [currentUserLiteral] string literal for the current user.
   * @header loopback.token([options])
   */
-inline def token(): typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query] = typings.loopback.mod.^.asInstanceOf[js.Dynamic].applyDynamic("token")().asInstanceOf[typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query]]
-inline def token(options: typings.loopback.anon.Cookies): typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query] = typings.loopback.mod.^.asInstanceOf[js.Dynamic].applyDynamic("token")(options.asInstanceOf[js.Any]).asInstanceOf[typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query]]
+inline def token(): RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("token")().asInstanceOf[RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]]]
+inline def token(options: Cookies): RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("token")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]]]
 
 /**
   * Convert any request not handled so far to a 404 error
   * to be handled by error-handling middleware.
   * @header loopback.urlNotFound(
   */
-inline def urlNotFound(): typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query] = typings.loopback.mod.^.asInstanceOf[js.Dynamic].applyDynamic("urlNotFound")().asInstanceOf[typings.express.mod.RequestHandler[
-typings.expressServeStaticCore.mod.ParamsDictionary, 
-js.Any, 
-js.Any, 
-typings.expressServeStaticCore.mod.Query]]
+inline def urlNotFound(): RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlNotFound")().asInstanceOf[RequestHandler[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+Any, 
+Any, 
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+Record[String, Any]]]
 
-type CallbackWithMultipleResults[T, G] = js.Function3[/* err */ typings.std.Error | scala.Null, /* arg0 */ T, /* arg1 */ G, js.Any]
+type CallbackWithMultipleResults[T, G] = js.Function3[/* err */ js.Error | Null, /* arg0 */ T, /* arg1 */ G, Any]
 
-type CallbackWithResult[T] = js.Function2[/* err */ typings.std.Error | scala.Null, /* result */ T, js.Any]
+type CallbackWithResult[T] = js.Function2[/* err */ js.Error | Null, /* result */ T, Any]
 
 /**
   * General type for a callback to an async function.
   */
-type CallbackWithoutResult = js.Function1[/* err */ typings.std.Error | scala.Null, js.Any]
+type CallbackWithoutResult = js.Function1[/* err */ js.Error | Null, Any]

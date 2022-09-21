@@ -19,11 +19,11 @@ trait ConstructorProvider
   /**
     * An injection token. Typically an instance of `Type` or `InjectionToken`, but can be `any`.
     */
-  var provide: Type[js.Any]
+  var provide: Type[Any]
 }
 object ConstructorProvider {
   
-  inline def apply(provide: Type[js.Any]): ConstructorProvider = {
+  inline def apply(provide: Type[Any]): ConstructorProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorProvider]
   }
@@ -34,6 +34,6 @@ object ConstructorProvider {
     
     inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
-    inline def setProvide(value: Type[js.Any]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+    inline def setProvide(value: Type[Any]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
   }
 }

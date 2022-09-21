@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateContactFlowContentRequest extends StObject {
   
   /**
-    * The identifier of the contact flow.
+    * The identifier of the flow.
     */
   var ContactFlowId: typings.awsSdk.connectMod.ContactFlowId
   
   /**
-    * The JSON string that represents contact flow’s content. For an example, see Example contact flow in Amazon Connect Flow language in the Amazon Connect Administrator Guide. 
+    * The JSON string that represents flow's content. For an example, see Example contact flow in Amazon Connect Flow language in the Amazon Connect Administrator Guide. 
     */
   var Content: ContactFlowContent
   

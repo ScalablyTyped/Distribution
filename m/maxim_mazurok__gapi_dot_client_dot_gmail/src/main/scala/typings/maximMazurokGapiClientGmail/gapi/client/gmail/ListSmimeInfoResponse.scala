@@ -22,6 +22,6 @@ object ListSmimeInfoResponse {
     
     inline def setSmimeInfoUndefined: Self = StObject.set(x, "smimeInfo", js.undefined)
     
-    inline def setSmimeInfoVarargs(value: SmimeInfo*): Self = StObject.set(x, "smimeInfo", js.Array(value :_*))
+    inline def setSmimeInfoVarargs(value: SmimeInfo*): Self = StObject.set(x, "smimeInfo", js.Array(value*))
   }
 }

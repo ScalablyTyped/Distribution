@@ -8,6 +8,7 @@ trait StereoPannerOptions
   extends StObject
      with AudioNodeOptions {
   
+  /* standard dom */
   var pan: js.UndefOr[Double] = js.undefined
 }
 object StereoPannerOptions {

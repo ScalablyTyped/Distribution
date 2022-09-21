@@ -9,21 +9,21 @@ object browserLocationConfigMod {
   
   @JSImport("@uirouter/core/lib/vanilla/browserLocationConfig", "BrowserLocationConfig")
   @js.native
-  class BrowserLocationConfig ()
+  open class BrowserLocationConfig ()
     extends StObject
        with LocationConfig {
-    def this(router: js.Any) = this()
-    def this(router: js.Any, _isHtml5: Boolean) = this()
+    def this(router: Any) = this()
+    def this(router: Any, _isHtml5: Boolean) = this()
     def this(router: Unit, _isHtml5: Boolean) = this()
     
-    /* private */ var _baseHref: js.Any = js.native
+    /* private */ var _baseHref: Any = js.native
     
-    /* private */ var _hashPrefix: js.Any = js.native
+    /* private */ var _hashPrefix: Any = js.native
     
-    /* private */ var _isHtml5: js.Any = js.native
+    /* private */ var _isHtml5: Any = js.native
     
     def baseHref(href: String): String = js.native
     
-    /* private */ var getBaseHref: js.Any = js.native
+    /* private */ var getBaseHref: Any = js.native
   }
 }

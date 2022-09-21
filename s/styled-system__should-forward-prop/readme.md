@@ -10,10 +10,10 @@ Utility for filtering Styled System props with Emotion's shouldForwardProp optio
 | ------------------ | :-------------: |
 | Full name          | @styled-system/should-forward-prop |
 | Keywords           | - |
-| # releases         | 27 |
-| # dependents       | 80 |
-| # downloads        | 4621351 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 776949.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40styled-system%2Fshould-forward-prop)

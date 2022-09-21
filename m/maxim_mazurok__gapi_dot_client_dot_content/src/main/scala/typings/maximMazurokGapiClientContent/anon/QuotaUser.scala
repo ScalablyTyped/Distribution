@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.Account
+import typings.maximMazurokGapiClientContent.gapi.client.content.AccountReturnCarrier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,20 +14,23 @@ trait QuotaUser extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
+  /** Required. The Merchant Center Account Id under which the Return Carrier is to be linked. */
+  var accountId: String
+  
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /** Required. The Google-provided unique carrier ID, used to update the resource. */
+  var carrierAccountId: String
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
-  
-  /** The ID of the managing account. This must be a multi-client account. */
-  var merchantId: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
@@ -39,7 +42,7 @@ trait QuotaUser extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Account
+  var resource: AccountReturnCarrier
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +52,8 @@ trait QuotaUser extends StObject {
 }
 object QuotaUser {
   
-  inline def apply(merchantId: String, resource: Account): QuotaUser = {
-    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(accountId: String, carrierAccountId: String, resource: AccountReturnCarrier): QuotaUser = {
+    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], carrierAccountId = carrierAccountId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUser]
   }
   
@@ -64,6 +67,8 @@ object QuotaUser {
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
@@ -72,6 +77,8 @@ object QuotaUser {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
+    inline def setCarrierAccountId(value: String): Self = StObject.set(x, "carrierAccountId", value.asInstanceOf[js.Any])
+    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -79,8 +86,6 @@ object QuotaUser {
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-    
-    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
@@ -94,7 +99,7 @@ object QuotaUser {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Account): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: AccountReturnCarrier): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

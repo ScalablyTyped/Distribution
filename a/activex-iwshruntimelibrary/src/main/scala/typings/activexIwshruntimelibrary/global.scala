@@ -12,7 +12,7 @@ object global {
     
     @JSGlobal("IWshRuntimeLibrary.TextStreamBase")
     @js.native
-    class TextStreamBase ()
+    open class TextStreamBase ()
       extends StObject
          with typings.activexIwshruntimelibrary.IWshRuntimeLibrary.TextStreamBase {
       
@@ -39,7 +39,7 @@ object global {
     
     @JSGlobal("IWshRuntimeLibrary.TextStreamReader")
     @js.native
-    /* private */ class TextStreamReader ()
+    /* private */ open class TextStreamReader ()
       extends StObject
          with typings.activexIwshruntimelibrary.IWshRuntimeLibrary.TextStreamReader {
       
@@ -120,7 +120,7 @@ object global {
     
     @JSGlobal("IWshRuntimeLibrary.TextStreamWriter")
     @js.native
-    /* private */ class TextStreamWriter ()
+    /* private */ open class TextStreamWriter ()
       extends StObject
          with typings.activexIwshruntimelibrary.IWshRuntimeLibrary.TextStreamWriter {
       
@@ -170,7 +170,7 @@ object global {
     /** WSHExec object */
     @JSGlobal("IWshRuntimeLibrary.WshExec")
     @js.native
-    /* private */ class WshExec ()
+    /* private */ open class WshExec ()
       extends StObject
          with typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshExec {
       
@@ -203,21 +203,21 @@ object global {
     /** Network Object */
     @JSGlobal("IWshRuntimeLibrary.WshNetwork")
     @js.native
-    /* private */ class WshNetwork ()
+    /* private */ open class WshNetwork ()
       extends StObject
          with typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshNetwork
     
     /** Shell Object */
     @JSGlobal("IWshRuntimeLibrary.WshShell")
     @js.native
-    /* private */ class WshShell ()
+    /* private */ open class WshShell ()
       extends StObject
          with typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshShell
     
     /** Shortcut Object */
     @JSGlobal("IWshRuntimeLibrary.WshShortcut")
     @js.native
-    /* private */ class WshShortcut ()
+    /* private */ open class WshShortcut ()
       extends StObject
          with typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshShortcut {
       
@@ -270,7 +270,7 @@ object global {
     /** URLShortcut Object */
     @JSGlobal("IWshRuntimeLibrary.WshURLShortcut")
     @js.native
-    /* private */ class WshURLShortcut ()
+    /* private */ open class WshURLShortcut ()
       extends StObject
          with typings.activexIwshruntimelibrary.IWshRuntimeLibrary.WshURLShortcut {
       
@@ -296,7 +296,7 @@ object global {
     
     @JSGlobal("ScriptSigner.Signer")
     @js.native
-    /* private */ class Signer ()
+    /* private */ open class Signer ()
       extends StObject
          with typings.activexIwshruntimelibrary.ScriptSigner.Signer
   }
@@ -305,7 +305,7 @@ object global {
     
     @JSGlobal("WSHControllerLibrary.WSHController")
     @js.native
-    /* private */ class WSHController ()
+    /* private */ open class WSHController ()
       extends StObject
          with typings.activexIwshruntimelibrary.WSHControllerLibrary.WSHController
   }

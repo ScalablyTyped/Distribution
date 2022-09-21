@@ -1,105 +1,50 @@
 package typings.antdMobile
 
-import typings.antdMobile.anon.AntLocale
-import typings.antdMobile.anon.MinuteStep
-import typings.antdMobile.datePickerPropsTypeMod.DatePickerPropsType
-import typings.react.mod.Component
+import typings.antdMobile.anon.OmitDatePickerPropsvaluev
+import typings.antdMobile.anon.PartialvalueDatenullundef
+import typings.antdMobile.anon.WeakValidationMapvalueDat
+import typings.antdMobile.anon.valueDatenullundefineddef
+import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerMod {
   
-  @JSImport("antd-mobile/lib/date-picker", JSImport.Default)
-  @js.native
-  class default () extends DatePicker
-  /* static members */
+  /* Inlined react.react.ForwardRefExoticComponent<{  value :std.Date | null | undefined,   defaultValue :std.Date | null | undefined,   onSelect :(value : std.Date): void | undefined,   onConfirm :(value : std.Date): void | undefined,   min :std.Date | undefined,   max :std.Date | undefined,   precision :antd-mobile.antd-mobile/es/components/date-picker/date-picker-utils.Precision | undefined,   children :(value : std.Date | null, actions : antd-mobile.antd-mobile/es/components/picker.PickerActions): react.react.ReactNode | undefined,   renderLabel :(type : antd-mobile.antd-mobile/es/components/date-picker/date-picker-utils.Precision, data : number): react.react.ReactNode | undefined,   filter :std.Partial<std.Record<antd-mobile.antd-mobile/es/components/date-picker/date-picker-utils.Precision, (val : number, extend : {  date :std.Date}): boolean>> | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<never, string>> | undefined,   tabIndex :number | undefined} & std.Pick<antd-mobile.antd-mobile/es/components/picker.PickerProps, 'style' | 'title' | 'onClick' | 'visible' | 'destroyOnClose' | 'forceRender' | 'getContainer' | 'afterShow' | 'afterClose' | 'stopPropagation' | 'onCancel' | 'onClose' | 'loading' | 'closeOnMaskClick' | 'cancelText' | 'mouseWheel' | 'loadingContent' | 'confirmText'> & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/picker.PickerActions>> & {  prompt :(props : std.Omit<antd-mobile.antd-mobile/es/components/date-picker/date-picker.DatePickerProps, 'value' | 'visible' | 'children'>): std.Promise<std.Date | null>} */
   object default {
     
-    @JSImport("antd-mobile/lib/date-picker", JSImport.Default)
+    /**
+      * **NOTE**: Exotic components are not callable.
+      */
+    inline def apply(props: valueDatenullundefineddef): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    
+    @JSImport("antd-mobile/es/components/date-picker", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("antd-mobile/lib/date-picker", "default.contextTypes")
+    @JSImport("antd-mobile/es/components/date-picker", "default.defaultProps")
     @js.native
-    def contextTypes: AntLocale = js.native
-    inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def defaultProps: js.UndefOr[PartialvalueDatenullundef] = js.native
+    inline def defaultProps_=(x: js.UndefOr[PartialvalueDatenullundef]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("antd-mobile/lib/date-picker", "default.defaultProps")
+    @JSImport("antd-mobile/es/components/date-picker", "default.displayName")
     @js.native
-    def defaultProps: MinuteStep = js.native
-    inline def defaultProps_=(x: MinuteStep): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
-  
-  @js.native
-  trait DatePicker
-    extends Component[PropsType, js.Any, js.Any] {
+    def displayName: js.UndefOr[String] = js.native
+    inline def displayName_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    def fixOnOk(picker: js.Any): Unit = js.native
+    @JSImport("antd-mobile/es/components/date-picker", "default.prompt")
+    @js.native
+    def prompt: js.Function1[/* props */ OmitDatePickerPropsvaluev, js.Promise[js.Date | Null]] = js.native
+    inline def prompt_=(x: js.Function1[/* props */ OmitDatePickerPropsvaluev, js.Promise[js.Date | Null]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prompt")(x.asInstanceOf[js.Any])
     
-    def onOk(v: js.Any): Unit = js.native
+    @JSImport("antd-mobile/es/components/date-picker", "default.propTypes")
+    @js.native
+    def propTypes: js.UndefOr[WeakValidationMapvalueDat] = js.native
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapvalueDat]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    def onVisibleChange(visible: Boolean): Unit = js.native
-    
-    /* private */ var scrollValue: js.Any = js.native
-    
-    def setScrollValue(v: js.Any): Unit = js.native
-  }
-  
-  trait PropsType
-    extends StObject
-       with DatePickerPropsType {
-    
-    var className: js.UndefOr[String] = js.undefined
-    
-    var onOk: js.UndefOr[js.Function1[/* x */ js.Any, Unit]] = js.undefined
-    
-    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
-    
-    var pickerPrefixCls: js.UndefOr[String] = js.undefined
-    
-    var popupPrefixCls: js.UndefOr[String] = js.undefined
-    
-    var prefixCls: js.UndefOr[String] = js.undefined
-    
-    var use12Hours: js.UndefOr[Boolean] = js.undefined
-  }
-  object PropsType {
-    
-    inline def apply(): PropsType = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PropsType]
-    }
-    
-    extension [Self <: PropsType](x: Self) {
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      inline def setOnOk(value: /* x */ js.Any => Unit): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
-      
-      inline def setOnOkUndefined: Self = StObject.set(x, "onOk", js.undefined)
-      
-      inline def setOnVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
-      
-      inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
-      
-      inline def setPickerPrefixCls(value: String): Self = StObject.set(x, "pickerPrefixCls", value.asInstanceOf[js.Any])
-      
-      inline def setPickerPrefixClsUndefined: Self = StObject.set(x, "pickerPrefixCls", js.undefined)
-      
-      inline def setPopupPrefixCls(value: String): Self = StObject.set(x, "popupPrefixCls", value.asInstanceOf[js.Any])
-      
-      inline def setPopupPrefixClsUndefined: Self = StObject.set(x, "popupPrefixCls", js.undefined)
-      
-      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
-      
-      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
-      
-      inline def setUse12Hours(value: Boolean): Self = StObject.set(x, "use12Hours", value.asInstanceOf[js.Any])
-      
-      inline def setUse12HoursUndefined: Self = StObject.set(x, "use12Hours", js.undefined)
-    }
+    @JSImport("antd-mobile/es/components/date-picker", "default.$$typeof")
+    @js.native
+    val typeof: js.Symbol = js.native
   }
 }

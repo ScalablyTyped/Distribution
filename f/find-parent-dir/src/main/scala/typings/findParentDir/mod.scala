@@ -9,7 +9,7 @@ object mod {
   inline def apply(
     currentFullPath: String,
     clue: String,
-    cb: js.Function2[/* err */ js.Any, /* dir */ String | Null, Unit]
+    cb: js.Function2[/* err */ Any, /* dir */ String | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(currentFullPath.asInstanceOf[js.Any], clue.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("find-parent-dir", JSImport.Namespace)

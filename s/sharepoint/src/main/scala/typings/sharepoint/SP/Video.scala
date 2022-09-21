@@ -49,9 +49,9 @@ object Video {
   object EmbedCodeConfiguration {
     
     inline def apply(
-      customFromJson: js.Any => Boolean,
+      customFromJson: Any => Boolean,
       customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-      fromJson: js.Any => Unit,
+      fromJson: Any => Unit,
       get_autoPlay: () => Boolean,
       get_displayTitle: () => Boolean,
       get_linkToOwnerProfilePage: () => Boolean,

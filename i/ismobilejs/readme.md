@@ -10,10 +10,10 @@ A simple JS library that detects mobile devices.
 | ------------------ | :-------------: |
 | Full name          | ismobilejs |
 | Keywords           | ismobile, device detection, mobile devices, useragent |
-| # releases         | 11 |
-| # dependents       | 148 |
-| # downloads        | 8236084 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 891111.0 |
+| # stars            | 2214.0 |
 
 ## Links
 - [Homepage](https://github.com/kaimallea/isMobile)

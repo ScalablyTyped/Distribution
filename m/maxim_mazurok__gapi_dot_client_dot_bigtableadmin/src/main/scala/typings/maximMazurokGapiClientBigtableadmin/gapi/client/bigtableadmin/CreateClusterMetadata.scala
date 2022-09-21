@@ -23,7 +23,7 @@ trait CreateClusterMetadata extends StObject {
   var tables: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.TableProgress}
-    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateClusterMetadata & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateClusterMetadata & TopLevel[Any]
   ] = js.undefined
 }
 object CreateClusterMetadata {
@@ -50,7 +50,7 @@ object CreateClusterMetadata {
     inline def setTables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.TableProgress}
-      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateClusterMetadata & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateClusterMetadata & TopLevel[Any]
     ): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
     inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)

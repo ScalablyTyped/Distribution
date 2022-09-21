@@ -41,8 +41,8 @@ trait ResourceRuleId extends StObject {
   /** Request body */
   var resource: RepricingRule
   
-  /** Required. The id of the rule to update. */
-  var ruleId: String
+  /** Required. The id of the rule to create. */
+  var ruleId: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,8 +52,8 @@ trait ResourceRuleId extends StObject {
 }
 object ResourceRuleId {
   
-  inline def apply(merchantId: String, resource: RepricingRule, ruleId: String): ResourceRuleId = {
-    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
+  inline def apply(merchantId: String, resource: RepricingRule): ResourceRuleId = {
+    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceRuleId]
   }
   
@@ -100,6 +100,8 @@ object ResourceRuleId {
     inline def setResource(value: RepricingRule): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
+    
+    inline def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

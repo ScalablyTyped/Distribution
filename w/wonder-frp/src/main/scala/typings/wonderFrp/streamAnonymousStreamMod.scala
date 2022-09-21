@@ -11,15 +11,15 @@ object streamAnonymousStreamMod {
   
   @JSImport("wonder-frp/dist/es2015/stream/AnonymousStream", "AnonymousStream")
   @js.native
-  class AnonymousStream protected () extends Stream {
+  open class AnonymousStream protected () extends Stream {
     def this(subscribeFunc: js.Function) = this()
     
     def subscribe(observer: IObserver): IDisposable = js.native
-    def subscribe(onNext: js.Function1[/* value */ js.Any, Unit]): IDisposable = js.native
-    def subscribe(onNext: js.Function1[/* value */ js.Any, Unit], onError: js.Function1[/* e */ js.Any, Unit]): IDisposable = js.native
+    def subscribe(onNext: js.Function1[/* value */ Any, Unit]): IDisposable = js.native
+    def subscribe(onNext: js.Function1[/* value */ Any, Unit], onError: js.Function1[/* e */ Any, Unit]): IDisposable = js.native
     def subscribe(
-      onNext: js.Function1[/* value */ js.Any, Unit],
-      onError: js.Function1[/* e */ js.Any, Unit],
+      onNext: js.Function1[/* value */ Any, Unit],
+      onError: js.Function1[/* e */ Any, Unit],
       onComplete: js.Function0[Unit]
     ): IDisposable = js.native
   }

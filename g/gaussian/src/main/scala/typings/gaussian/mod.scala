@@ -19,7 +19,7 @@ object mod {
       * returns the result of adding this and the given
       * distribution's means and variances
       */
-    def add(x: Gaussian): Double = js.native
+    def add(x: Gaussian): Gaussian = js.native
     
     /**
       * the cumulative distribution function, which describes the
@@ -31,8 +31,8 @@ object mod {
       * returns the quotient distribution of this and the given
       * distribution; equivalent to scale(1/d) when d is a constant
       */
-    def div(x: Double): Double = js.native
-    def div(x: Gaussian): Double = js.native
+    def div(x: Double): Gaussian = js.native
+    def div(x: Gaussian): Gaussian = js.native
     
     /**
       * the mean (μ) of the distribution
@@ -43,8 +43,8 @@ object mod {
       * returns the product distribution of this and the given
       * distribution; equivalent to scale(d) when d is a constant
       */
-    def mul(x: Double): Double = js.native
-    def mul(x: Gaussian): Double = js.native
+    def mul(x: Double): Gaussian = js.native
+    def mul(x: Gaussian): Gaussian = js.native
     
     /**
       * the probability density function, which describes the
@@ -58,10 +58,16 @@ object mod {
     def ppf(x: Double): Double = js.native
     
     /**
+      * generates given number of samples of the distribution
+      */
+    def random(x: Double): js.Array[Double] = js.native
+    def random(x: Double, randFn: js.Function0[Double]): js.Array[Double] = js.native
+    
+    /**
       * returns the result of scaling this distribution by the
       * given constant
       */
-    def scale(x: Double): Double = js.native
+    def scale(x: Double): Gaussian = js.native
     
     /**
       * the standard deviation (σ) of the distribution
@@ -72,7 +78,7 @@ object mod {
       * returns the result of subtracting this and the given
       * distribution's means and variances
       */
-    def sub(x: Gaussian): Double = js.native
+    def sub(x: Gaussian): Gaussian = js.native
     
     /**
       * the variance (σ^2) of the distribution

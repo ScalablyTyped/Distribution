@@ -29,6 +29,6 @@ object GoogleCloudRecommendationengineV1beta1ListPredictionApiKeyRegistrationsRe
     
     inline def setPredictionApiKeyRegistrationsUndefined: Self = StObject.set(x, "predictionApiKeyRegistrations", js.undefined)
     
-    inline def setPredictionApiKeyRegistrationsVarargs(value: GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration*): Self = StObject.set(x, "predictionApiKeyRegistrations", js.Array(value :_*))
+    inline def setPredictionApiKeyRegistrationsVarargs(value: GoogleCloudRecommendationengineV1beta1PredictionApiKeyRegistration*): Self = StObject.set(x, "predictionApiKeyRegistrations", js.Array(value*))
   }
 }

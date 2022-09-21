@@ -8,5 +8,5 @@ object repositoryTriggerDestinationArnRequiredExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/RepositoryTriggerDestinationArnRequiredException", "RepositoryTriggerDestinationArnRequiredException")
   @js.native
-  val RepositoryTriggerDestinationArnRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val RepositoryTriggerDestinationArnRequiredException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

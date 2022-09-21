@@ -1,7 +1,6 @@
 package typings.triplesec
 
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def decrypt(arg: Arguments, cb: js.Function2[/* err */ Error | Null, /* buff */ Buffer | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(arg.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decrypt(arg: Arguments, cb: js.Function2[/* err */ js.Error | Null, /* buff */ Buffer | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(arg.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def encrypt(arg: Arguments, cb: js.Function2[/* err */ Error | Null, /* buff */ Buffer | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(arg.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def encrypt(arg: Arguments, cb: js.Function2[/* err */ js.Error | Null, /* buff */ Buffer | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(arg.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object prng {
     
@@ -100,7 +99,7 @@ object mod {
       
       inline def setWords(value: js.Array[Double]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      inline def setWordsVarargs(value: Double*): Self = StObject.set(x, "words", js.Array(value :_*))
+      inline def setWordsVarargs(value: Double*): Self = StObject.set(x, "words", js.Array(value*))
     }
   }
 }

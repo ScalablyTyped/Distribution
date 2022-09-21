@@ -11,7 +11,7 @@ trait DeleteFileOptions extends StObject {
     *
     * @default `{}`
     */
-  var customHeaders: js.UndefOr[js.Any] = js.undefined
+  var customHeaders: js.UndefOr[Any] = js.undefined
   
   /**
     * Enable or disable deletion of uploaded files
@@ -41,7 +41,7 @@ trait DeleteFileOptions extends StObject {
     *
     * @default `{}`
     */
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Any] = js.undefined
 }
 object DeleteFileOptions {
   
@@ -52,7 +52,7 @@ object DeleteFileOptions {
   
   extension [Self <: DeleteFileOptions](x: Self) {
     
-    inline def setCustomHeaders(value: js.Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+    inline def setCustomHeaders(value: Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
     
     inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
     
@@ -68,7 +68,7 @@ object DeleteFileOptions {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }

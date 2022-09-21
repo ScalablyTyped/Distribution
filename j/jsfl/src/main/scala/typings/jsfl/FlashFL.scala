@@ -12,14 +12,14 @@ trait FlashFL extends StObject {
   
   var actionsPanel: FlashActionsPanel = js.native
   
-  def addEventListener(eventType: js.Any, callbackFunction: js.Any): js.Any = js.native
+  def addEventListener(eventType: Any, callbackFunction: Any): Any = js.native
   
   //activeEffect;
   var as3PackagePaths: String = js.native
   
-  def browseForFileURL(browseType: js.Any, title: js.Any, previewArea: js.Any, fileFilter: js.Any): js.Any = js.native
+  def browseForFileURL(browseType: Any, title: Any, previewArea: Any, fileFilter: Any): Any = js.native
   
-  def browseForFolderURL(description: String): js.Any = js.native
+  def browseForFolderURL(description: String): Any = js.native
   
   def clearPublishCache(): Unit = js.native
   
@@ -30,8 +30,8 @@ trait FlashFL extends StObject {
   
   def closeAllPlayerDocuments(): Boolean = js.native
   
-  def closeDocument(documentObject: FlashDocument): js.Any = js.native
-  def closeDocument(documentObject: FlashDocument, bPromptToSaveChanges: Boolean): js.Any = js.native
+  def closeDocument(documentObject: FlashDocument): Any = js.native
+  def closeDocument(documentObject: FlashDocument, bPromptToSaveChanges: Boolean): Any = js.native
   
   var compilerErrors: FlashCompilerErrors = js.native
   
@@ -75,11 +75,11 @@ trait FlashFL extends StObject {
   def findObjectInDocByName(instanceName: String, document: FlashDocument): js.Array[Keyframe] = js.native
   
   /** elementType = "shape", "text", "instance", or "shapeObj". */
-  def findObjectInDocByType(elementType: String, document: FlashDocument): js.Array[js.Any] = js.native
+  def findObjectInDocByType(elementType: String, document: FlashDocument): js.Array[Any] = js.native
   
   var flexSDKPath: String = js.native
   
-  def getAppMemoryInfo(memType: Double): js.Any = js.native
+  def getAppMemoryInfo(memType: Double): Any = js.native
   
   /*
     * Method; retrieves the DOM (Document object) of the currently active document (FLA file).
@@ -90,11 +90,11 @@ trait FlashFL extends StObject {
   def getDocumentDOM(): FlashDocument = js.native
   
   //getProject();
-  def getSwfPanel(): js.Any = js.native
+  def getSwfPanel(): Any = js.native
   
-  var installedPlayers: js.Array[js.Any] = js.native
+  var installedPlayers: js.Array[Any] = js.native
   
-  def isFontInstalled(): js.Any = js.native
+  def isFontInstalled(): Any = js.native
   
   var languageCode: String = js.native
   
@@ -148,10 +148,10 @@ trait FlashFL extends StObject {
   def revertDocument(document: FlashDocument): Unit = js.native
   
   //revertDocumentToLastVersion();
-  def runScript(fileURI: String): js.Any = js.native
-  def runScript(fileURI: String, funcName: js.Function): js.Any = js.native
-  def runScript(fileURI: String, funcName: js.Function, args: js.Array[js.Any]): js.Any = js.native
-  def runScript(fileURI: String, funcName: Unit, args: js.Array[js.Any]): js.Any = js.native
+  def runScript(fileURI: String): Any = js.native
+  def runScript(fileURI: String, funcName: js.Function): Any = js.native
+  def runScript(fileURI: String, funcName: js.Function, args: js.Array[Any]): Any = js.native
+  def runScript(fileURI: String, funcName: Unit, args: js.Array[Any]): Any = js.native
   
   def saveAll(): Unit = js.native
   
@@ -178,12 +178,12 @@ trait FlashFL extends StObject {
   
   var swfPanels: js.Array[FlashSwfPanel] = js.native
   
-  def toggleBreakpoint(): js.Any = js.native
+  def toggleBreakpoint(): Any = js.native
   
   var tools: js.Array[FlashTools] = js.native
   
   //synchronizeDocumentWithHeadVersion();
-  def trace(message: js.Any): Unit = js.native
+  def trace(message: Any): Unit = js.native
   
   var version: String = js.native
   

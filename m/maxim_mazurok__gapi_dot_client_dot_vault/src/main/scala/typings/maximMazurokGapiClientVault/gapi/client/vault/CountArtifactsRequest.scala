@@ -9,7 +9,7 @@ trait CountArtifactsRequest extends StObject {
   /** The search query. */
   var query: js.UndefOr[Query] = js.undefined
   
-  /** Specifies the granularity of the count result returned in response. */
+  /** Sets the granularity of the count results. */
   var view: js.UndefOr[String] = js.undefined
 }
 object CountArtifactsRequest {

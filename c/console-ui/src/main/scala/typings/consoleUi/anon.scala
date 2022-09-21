@@ -1,8 +1,8 @@
 package typings.consoleUi
 
 import typings.consoleUi.mod.WriteLevel
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +13,11 @@ object anon {
     
     var ci: js.UndefOr[Boolean] = js.undefined
     
-    var errorStream: js.UndefOr[WritableStream] = js.undefined
+    var errorStream: js.UndefOr[WritableStream[Any]] = js.undefined
     
-    var inputStream: js.UndefOr[ReadableStream] = js.undefined
+    var inputStream: js.UndefOr[ReadableStream[Any]] = js.undefined
     
-    var outputStream: js.UndefOr[WritableStream] = js.undefined
+    var outputStream: js.UndefOr[WritableStream[Any]] = js.undefined
     
     var writeLevel: js.UndefOr[WriteLevel] = js.undefined
   }
@@ -34,15 +34,15 @@ object anon {
       
       inline def setCiUndefined: Self = StObject.set(x, "ci", js.undefined)
       
-      inline def setErrorStream(value: WritableStream): Self = StObject.set(x, "errorStream", value.asInstanceOf[js.Any])
+      inline def setErrorStream(value: WritableStream[Any]): Self = StObject.set(x, "errorStream", value.asInstanceOf[js.Any])
       
       inline def setErrorStreamUndefined: Self = StObject.set(x, "errorStream", js.undefined)
       
-      inline def setInputStream(value: ReadableStream): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
+      inline def setInputStream(value: ReadableStream[Any]): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
       
       inline def setInputStreamUndefined: Self = StObject.set(x, "inputStream", js.undefined)
       
-      inline def setOutputStream(value: WritableStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
+      inline def setOutputStream(value: WritableStream[Any]): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
       
       inline def setOutputStreamUndefined: Self = StObject.set(x, "outputStream", js.undefined)
       

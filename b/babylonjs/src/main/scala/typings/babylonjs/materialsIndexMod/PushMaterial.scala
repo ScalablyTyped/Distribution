@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "PushMaterial")
 @js.native
-class PushMaterial protected ()
+open class PushMaterial protected ()
   extends typings.babylonjs.pushMaterialMod.PushMaterial {
+  def this(name: String) = this()
   def this(name: String, scene: Scene) = this()
+  def this(name: String, scene: Unit, storeEffectOnSubMeshes: Boolean) = this()
+  def this(name: String, scene: Scene, storeEffectOnSubMeshes: Boolean) = this()
 }

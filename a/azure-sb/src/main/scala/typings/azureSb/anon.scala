@@ -64,7 +64,7 @@ object anon {
     
     var expiry: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.undefined
+    var headers: js.UndefOr[Any] = js.undefined
     
     var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
@@ -83,7 +83,7 @@ object anon {
       
       inline def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -91,7 +91,7 @@ object anon {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   
@@ -152,18 +152,18 @@ object anon {
   
   trait Etag extends StObject {
     
-    var etag: js.Any
+    var etag: Any
   }
   object Etag {
     
-    inline def apply(etag: js.Any): Etag = {
+    inline def apply(etag: Any): Etag = {
       val __obj = js.Dynamic.literal(etag = etag.asInstanceOf[js.Any])
       __obj.asInstanceOf[Etag]
     }
     
     extension [Self <: Etag](x: Self) {
       
-      inline def setEtag(value: js.Any): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: Any): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -241,7 +241,7 @@ object anon {
     
     var tags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var templates: js.UndefOr[js.Any] = js.undefined
+    var templates: js.UndefOr[Any] = js.undefined
   }
   object PushChannel {
     
@@ -258,9 +258,9 @@ object anon {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
       
-      inline def setTemplates(value: js.Any): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+      inline def setTemplates(value: Any): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
       
       inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     }
@@ -268,18 +268,18 @@ object anon {
   
   trait SignRequest extends StObject {
     
-    def signRequest(webResource: js.Any, callback: js.Function0[Unit]): Unit
+    def signRequest(webResource: Any, callback: js.Function0[Unit]): Unit
   }
   object SignRequest {
     
-    inline def apply(signRequest: (js.Any, js.Function0[Unit]) => Unit): SignRequest = {
+    inline def apply(signRequest: (Any, js.Function0[Unit]) => Unit): SignRequest = {
       val __obj = js.Dynamic.literal(signRequest = js.Any.fromFunction2(signRequest))
       __obj.asInstanceOf[SignRequest]
     }
     
     extension [Self <: SignRequest](x: Self) {
       
-      inline def setSignRequest(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "signRequest", js.Any.fromFunction2(value))
+      inline def setSignRequest(value: (Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "signRequest", js.Any.fromFunction2(value))
     }
   }
   

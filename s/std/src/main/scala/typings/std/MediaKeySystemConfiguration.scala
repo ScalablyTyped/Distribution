@@ -6,18 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MediaKeySystemConfiguration extends StObject {
   
+  /* standard dom */
   var audioCapabilities: js.UndefOr[js.Array[MediaKeySystemMediaCapability]] = js.undefined
   
+  /* standard dom */
   var distinctiveIdentifier: js.UndefOr[MediaKeysRequirement] = js.undefined
   
+  /* standard dom */
   var initDataTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
+  /* standard dom */
   var label: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var persistentState: js.UndefOr[MediaKeysRequirement] = js.undefined
   
+  /* standard dom */
   var sessionTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
+  /* standard dom */
   var videoCapabilities: js.UndefOr[js.Array[MediaKeySystemMediaCapability]] = js.undefined
 }
 object MediaKeySystemConfiguration {
@@ -33,7 +40,7 @@ object MediaKeySystemConfiguration {
     
     inline def setAudioCapabilitiesUndefined: Self = StObject.set(x, "audioCapabilities", js.undefined)
     
-    inline def setAudioCapabilitiesVarargs(value: MediaKeySystemMediaCapability*): Self = StObject.set(x, "audioCapabilities", js.Array(value :_*))
+    inline def setAudioCapabilitiesVarargs(value: MediaKeySystemMediaCapability*): Self = StObject.set(x, "audioCapabilities", js.Array(value*))
     
     inline def setDistinctiveIdentifier(value: MediaKeysRequirement): Self = StObject.set(x, "distinctiveIdentifier", value.asInstanceOf[js.Any])
     
@@ -43,7 +50,7 @@ object MediaKeySystemConfiguration {
     
     inline def setInitDataTypesUndefined: Self = StObject.set(x, "initDataTypes", js.undefined)
     
-    inline def setInitDataTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "initDataTypes", js.Array(value :_*))
+    inline def setInitDataTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "initDataTypes", js.Array(value*))
     
     inline def setLabel(value: java.lang.String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
@@ -57,12 +64,12 @@ object MediaKeySystemConfiguration {
     
     inline def setSessionTypesUndefined: Self = StObject.set(x, "sessionTypes", js.undefined)
     
-    inline def setSessionTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "sessionTypes", js.Array(value :_*))
+    inline def setSessionTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "sessionTypes", js.Array(value*))
     
     inline def setVideoCapabilities(value: js.Array[MediaKeySystemMediaCapability]): Self = StObject.set(x, "videoCapabilities", value.asInstanceOf[js.Any])
     
     inline def setVideoCapabilitiesUndefined: Self = StObject.set(x, "videoCapabilities", js.undefined)
     
-    inline def setVideoCapabilitiesVarargs(value: MediaKeySystemMediaCapability*): Self = StObject.set(x, "videoCapabilities", js.Array(value :_*))
+    inline def setVideoCapabilitiesVarargs(value: MediaKeySystemMediaCapability*): Self = StObject.set(x, "videoCapabilities", js.Array(value*))
   }
 }

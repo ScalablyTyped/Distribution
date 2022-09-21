@@ -9,31 +9,31 @@ trait PullInstantiatedTypeReferenceSymbol
   extends StObject
      with PullTypeReferenceSymbol {
   
-  /* private */ var _allInstantiatedMemberNameCache: js.Any = js.native
+  /* private */ var _allInstantiatedMemberNameCache: Any = js.native
   
-  /* private */ var _generativeTypeClassification: js.Any = js.native
+  /* private */ var _generativeTypeClassification: Any = js.native
   
-  /* private */ var _instantiatedAssociatedContainerType: js.Any = js.native
+  /* private */ var _instantiatedAssociatedContainerType: Any = js.native
   
-  /* private */ var _instantiatedCallSignatures: js.Any = js.native
+  /* private */ var _instantiatedCallSignatures: Any = js.native
   
-  /* private */ var _instantiatedConstructSignatures: js.Any = js.native
+  /* private */ var _instantiatedConstructSignatures: Any = js.native
   
-  /* private */ var _instantiatedConstructorMethod: js.Any = js.native
+  /* private */ var _instantiatedConstructorMethod: Any = js.native
   
-  /* private */ var _instantiatedIndexSignatures: js.Any = js.native
+  /* private */ var _instantiatedIndexSignatures: Any = js.native
   
-  /* private */ var _instantiatedMemberNameCache: js.Any = js.native
+  /* private */ var _instantiatedMemberNameCache: Any = js.native
   
-  /* private */ var _instantiatedMembers: js.Any = js.native
+  /* private */ var _instantiatedMembers: Any = js.native
   
-  /* private */ var _isArray: js.Any = js.native
+  /* private */ var _isArray: Any = js.native
   
-  /* private */ var _typeArgumentReferences: js.Any = js.native
+  /* private */ var _typeArgumentReferences: Any = js.native
   
-  /* private */ var _typeParameterArgumentMap: js.Any = js.native
+  /* private */ var _typeParameterArgumentMap: Any = js.native
   
   var isInstanceReferenceType: Boolean = js.native
   
-  /* private */ def populateInstantiatedMemberFromReferencedMember(referencedMember: js.Any): js.Any = js.native
+  /* private */ def populateInstantiatedMemberFromReferencedMember(referencedMember: Any): Any = js.native
 }

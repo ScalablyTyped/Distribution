@@ -35,13 +35,13 @@ trait IReader
   /** [Method] Returns the value of model
     * @returns Object
     */
-  var getModel: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getModel: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Takes a raw response object as passed to this read and returns the useful data segment of it
     * @param response Object The response object
     * @returns Object The useful data from the response
     */
-  var getResponseData: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getResponseData: js.UndefOr[js.Function1[/* response */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns the value of rootProperty
     * @returns String
@@ -51,12 +51,12 @@ trait IReader
   /** [Method] Returns the value of successProperty
     * @returns any
     */
-  var getSuccessProperty: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getSuccessProperty: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of totalProperty
     * @returns any
     */
-  var getTotalProperty: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getTotalProperty: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (String) */
   var idProperty: js.UndefOr[String] = js.undefined
@@ -68,22 +68,22 @@ trait IReader
   var messageProperty: js.UndefOr[String] = js.undefined
   
   /** [Property] (Object) */
-  var metaData: js.UndefOr[js.Any] = js.undefined
+  var metaData: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Object) */
-  var rawData: js.UndefOr[js.Any] = js.undefined
+  var rawData: js.UndefOr[Any] = js.undefined
   
   /** [Method] Reads the given response object
     * @param response Object The response object. This may be either an XMLHttpRequest object or a plain JS object
     * @returns Ext.data.ResultSet The parsed ResultSet object
     */
-  var read: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IResultSet]] = js.undefined
+  var read: js.UndefOr[js.Function1[/* response */ js.UndefOr[Any], IResultSet]] = js.undefined
   
   /** [Method] Abstracts common functionality used by all Reader subclasses
     * @param data Object The raw data object
     * @returns Ext.data.ResultSet A ResultSet object
     */
-  var readRecords: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], IResultSet]] = js.undefined
+  var readRecords: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], IResultSet]] = js.undefined
   
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
@@ -92,7 +92,7 @@ trait IReader
     */
   @JSName("relayEvents")
   var relayEvents_IReader: js.UndefOr[
-    js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+    js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
   ] = js.undefined
   
   /** [Config Option] (String) */
@@ -124,7 +124,7 @@ trait IReader
   /** [Method] Sets the value of model
     * @param model Object The new value.
     */
-  var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of rootProperty
     * @param rootProperty String The new value.
@@ -176,11 +176,11 @@ object IReader {
     
     inline def setGetMessagePropertyUndefined: Self = StObject.set(x, "getMessageProperty", js.undefined)
     
-    inline def setGetModel(value: () => js.Any): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
+    inline def setGetModel(value: () => Any): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
     
     inline def setGetModelUndefined: Self = StObject.set(x, "getModel", js.undefined)
     
-    inline def setGetResponseData(value: /* response */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getResponseData", js.Any.fromFunction1(value))
+    inline def setGetResponseData(value: /* response */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getResponseData", js.Any.fromFunction1(value))
     
     inline def setGetResponseDataUndefined: Self = StObject.set(x, "getResponseData", js.undefined)
     
@@ -188,11 +188,11 @@ object IReader {
     
     inline def setGetRootPropertyUndefined: Self = StObject.set(x, "getRootProperty", js.undefined)
     
-    inline def setGetSuccessProperty(value: () => js.Any): Self = StObject.set(x, "getSuccessProperty", js.Any.fromFunction0(value))
+    inline def setGetSuccessProperty(value: () => Any): Self = StObject.set(x, "getSuccessProperty", js.Any.fromFunction0(value))
     
     inline def setGetSuccessPropertyUndefined: Self = StObject.set(x, "getSuccessProperty", js.undefined)
     
-    inline def setGetTotalProperty(value: () => js.Any): Self = StObject.set(x, "getTotalProperty", js.Any.fromFunction0(value))
+    inline def setGetTotalProperty(value: () => Any): Self = StObject.set(x, "getTotalProperty", js.Any.fromFunction0(value))
     
     inline def setGetTotalPropertyUndefined: Self = StObject.set(x, "getTotalProperty", js.undefined)
     
@@ -208,23 +208,23 @@ object IReader {
     
     inline def setMessagePropertyUndefined: Self = StObject.set(x, "messageProperty", js.undefined)
     
-    inline def setMetaData(value: js.Any): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
+    inline def setMetaData(value: Any): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     
     inline def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
     
-    inline def setRawData(value: js.Any): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    inline def setRawData(value: Any): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
     inline def setRawDataUndefined: Self = StObject.set(x, "rawData", js.undefined)
     
-    inline def setRead(value: /* response */ js.UndefOr[js.Any] => IResultSet): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: /* response */ js.UndefOr[Any] => IResultSet): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
-    inline def setReadRecords(value: /* data */ js.UndefOr[js.Any] => IResultSet): Self = StObject.set(x, "readRecords", js.Any.fromFunction1(value))
+    inline def setReadRecords(value: /* data */ js.UndefOr[Any] => IResultSet): Self = StObject.set(x, "readRecords", js.Any.fromFunction1(value))
     
     inline def setReadRecordsUndefined: Self = StObject.set(x, "readRecords", js.undefined)
     
     inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+    inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
@@ -252,7 +252,7 @@ object IReader {
     
     inline def setSetMessagePropertyUndefined: Self = StObject.set(x, "setMessageProperty", js.undefined)
     
-    inline def setSetModel(value: /* model */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
+    inline def setSetModel(value: /* model */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
     
     inline def setSetModelUndefined: Self = StObject.set(x, "setModel", js.undefined)
     

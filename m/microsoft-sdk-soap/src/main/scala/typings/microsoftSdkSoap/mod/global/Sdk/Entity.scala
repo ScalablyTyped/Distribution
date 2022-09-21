@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Entity")
 @js.native
-class Entity protected () extends StObject {
+open class Entity protected () extends StObject {
   /**
     * Represents an instance of an entity (a record).
     * @param type The logical name of the entity.
@@ -89,7 +89,7 @@ class Entity protected () extends StObject {
     * Gets the value of the specified attribute.
     * @param logicalName The logical name of the attribute.
     */
-  def getValue(logicalName: java.lang.String): js.Any = js.native
+  def getValue(logicalName: java.lang.String): Any = js.native
   
   /**
     * Generates properties for the entity based on metadata.

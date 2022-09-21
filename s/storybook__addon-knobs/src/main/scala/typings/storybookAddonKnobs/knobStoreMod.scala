@@ -13,7 +13,7 @@ object knobStoreMod {
   
   @JSImport("@storybook/addon-knobs/dist/KnobStore", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with KnobStore {
     
@@ -51,7 +51,7 @@ object knobStoreMod {
     override def update(key: String, options: Partial[KnobStoreKnob]): Unit = js.native
   }
   
-  type Callback = js.Function0[js.Any]
+  type Callback = js.Function0[Any]
   
   trait KnobStore extends StObject {
     
@@ -102,7 +102,7 @@ object knobStoreMod {
       
       inline def setCallbacks(value: js.Array[Callback]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      inline def setCallbacksVarargs(value: Callback*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
+      inline def setCallbacksVarargs(value: Callback*): Self = StObject.set(x, "callbacks", js.Array(value*))
       
       inline def setGet(value: String => typeanygroupIdstringundef | DefaultValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -130,5 +130,5 @@ object knobStoreMod {
     }
   }
   
-  type KnobStoreKnob = Knob[js.Any] & typings.storybookAddonKnobs.anon.Callback
+  type KnobStoreKnob = Knob[Any] & typings.storybookAddonKnobs.anon.Callback
 }

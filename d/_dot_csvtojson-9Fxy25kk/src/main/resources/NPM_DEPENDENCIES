@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".csvtojson-9Fxy25kk" : "2.0.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".csvtojson-9Fxy25kk" : "2.0.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

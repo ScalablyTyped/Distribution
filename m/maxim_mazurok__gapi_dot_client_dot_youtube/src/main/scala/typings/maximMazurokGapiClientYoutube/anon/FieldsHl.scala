@@ -40,7 +40,7 @@ trait FieldsHl extends StObject {
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** The *part* parameter specifies the superChatEvent resource parts that the API response will include. Supported values are id and snippet. */
+  /** The *part* parameter specifies the superChatEvent resource parts that the API response will include. This parameter is currently not supported. */
   var part: String | js.Array[String]
   
   /** Returns response with indentations and line breaks. */
@@ -106,7 +106,7 @@ object FieldsHl {
     
     inline def setPart(value: String | js.Array[String]): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value :_*))
+    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value*))
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

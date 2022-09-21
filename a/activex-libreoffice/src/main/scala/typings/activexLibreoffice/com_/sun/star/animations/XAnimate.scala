@@ -41,7 +41,7 @@ trait XAnimate
     * specified.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-by
     */
-  var By: js.Any
+  var By: Any
   
   /**
     * Specifies the interpolation mode for the animation. ;  If the target attribute does not support linear interpolation (e.g. for strings), or if the
@@ -61,7 +61,7 @@ trait XAnimate
     * specified.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-from
     */
-  var From: js.Any
+  var From: Any
   
   var KeyTimes: SafeArray[Double]
   
@@ -72,7 +72,7 @@ trait XAnimate
   var SubItem: Double
   
   /** This attribute specifies the target element to be animated. ;  See documentation of used animation engine for supported targets. */
-  var Target: js.Any
+  var Target: Any
   
   /** todo: timeFilter="0,0; 0.14,0.36; 0.43,0.73; 0.71,0.91; 1.0,1.0" ? */
   var TimeFilter: SafeArray[TimeFilterPair]
@@ -82,7 +82,7 @@ trait XAnimate
     * specified.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-to
     */
-  var To: js.Any
+  var To: Any
   
   /** @see AnimationValueType */
   var ValueType: Double
@@ -91,7 +91,7 @@ trait XAnimate
     * A sequence of one or more values, each of which must be a legal value for the specified attribute.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-values
     */
-  var Values: SafeArray[js.Any]
+  var Values: SafeArray[Any]
 }
 object XAnimate {
   
@@ -101,34 +101,34 @@ object XAnimate {
     Additive: Double,
     AttributeName: String,
     AutoReverse: Boolean,
-    Begin: js.Any,
-    By: js.Any,
+    Begin: Any,
+    By: Any,
     CalcMode: Double,
     Decelerate: Double,
-    Duration: js.Any,
-    End: js.Any,
-    EndSync: js.Any,
+    Duration: Any,
+    End: Any,
+    EndSync: Any,
     Fill: Double,
     FillDefault: Double,
     Formula: String,
-    From: js.Any,
+    From: Any,
     KeyTimes: SafeArray[Double],
     Parent: XInterface,
-    RepeatCount: js.Any,
-    RepeatDuration: js.Any,
+    RepeatCount: Any,
+    RepeatDuration: Any,
     Restart: Double,
     RestartDefault: Double,
     SubItem: Double,
-    Target: js.Any,
+    Target: Any,
     TimeFilter: SafeArray[TimeFilterPair],
-    To: js.Any,
+    To: Any,
     Type: Double,
     UserData: SafeArray[NamedValue],
     ValueType: Double,
-    Values: SafeArray[js.Any],
+    Values: SafeArray[Any],
     acquire: () => Unit,
     getParent: () => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setParent: XInterface => Unit
   ): XAnimate = {
@@ -144,26 +144,26 @@ object XAnimate {
     
     inline def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    inline def setBy(value: js.Any): Self = StObject.set(x, "By", value.asInstanceOf[js.Any])
+    inline def setBy(value: Any): Self = StObject.set(x, "By", value.asInstanceOf[js.Any])
     
     inline def setCalcMode(value: Double): Self = StObject.set(x, "CalcMode", value.asInstanceOf[js.Any])
     
     inline def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
-    inline def setFrom(value: js.Any): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Any): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
     inline def setKeyTimes(value: SafeArray[Double]): Self = StObject.set(x, "KeyTimes", value.asInstanceOf[js.Any])
     
     inline def setSubItem(value: Double): Self = StObject.set(x, "SubItem", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
     inline def setTimeFilter(value: SafeArray[TimeFilterPair]): Self = StObject.set(x, "TimeFilter", value.asInstanceOf[js.Any])
     
-    inline def setTo(value: js.Any): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: Any): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
     inline def setValueType(value: Double): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
     
-    inline def setValues(value: SafeArray[js.Any]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: SafeArray[Any]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
   }
 }

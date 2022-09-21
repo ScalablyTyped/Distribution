@@ -50,7 +50,7 @@ trait HttpLanguageHeaderValueCollection
     */
   def getView(): IVectorView[Language] = js.native
   
-  def indexOf(value: Language, extra: js.Any*): Index = js.native
+  def indexOf(value: Language, extra: Any*): Index = js.native
   /**
     * Determines the index of a specific item in the collection.
     * @param item The object to locate in the collection.

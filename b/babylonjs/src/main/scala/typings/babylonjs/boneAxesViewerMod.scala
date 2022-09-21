@@ -14,7 +14,7 @@ object boneAxesViewerMod {
   
   @JSImport("babylonjs/Debug/boneAxesViewer", "BoneAxesViewer")
   @js.native
-  class BoneAxesViewer protected () extends AxesViewer {
+  open class BoneAxesViewer protected () extends AxesViewer {
     /**
       * Creates a new BoneAxesViewer
       * @param scene defines the hosting scene

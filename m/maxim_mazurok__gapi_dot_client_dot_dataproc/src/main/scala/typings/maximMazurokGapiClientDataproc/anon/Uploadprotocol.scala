@@ -34,7 +34,7 @@ trait Uploadprotocol extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** Required. The ID of the Google Cloud Platform project that the cluster belongs to. */
+  /** Required. The ID of the Google Cloud Platform project the cluster belongs to. */
   var projectId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */

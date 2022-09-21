@@ -12,10 +12,10 @@ trait XFootnotesSettingsSupplier
   extends StObject
      with XInterface {
   
-  /** @returns {@link FootnoteSettings} of the object. */
+  /** @returns The {@link FootnoteSettings} of the object. */
   val FootnotesSettings: XPropertySet
   
-  /** @returns {@link FootnoteSettings} of the object. */
+  /** @returns The {@link FootnoteSettings} of the object. */
   def getFootnotesSettings(): XPropertySet
 }
 object XFootnotesSettingsSupplier {
@@ -24,7 +24,7 @@ object XFootnotesSettingsSupplier {
     FootnotesSettings: XPropertySet,
     acquire: () => Unit,
     getFootnotesSettings: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XFootnotesSettingsSupplier = {
     val __obj = js.Dynamic.literal(FootnotesSettings = FootnotesSettings.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getFootnotesSettings = js.Any.fromFunction0(getFootnotesSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -10,10 +10,10 @@ object doNotDisturbAltMod {
   
   @JSImport("material-ui/svg-icons/notification/do-not-disturb-alt", JSImport.Default)
   @js.native
-  class default () extends NotificationDoNotDisturbAlt
+  open class default () extends NotificationDoNotDisturbAlt
   
   @JSImport("material-ui/svg-icons/notification/do-not-disturb-alt", "NotificationDoNotDisturbAlt")
   @js.native
-  class NotificationDoNotDisturbAlt ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationDoNotDisturbAlt ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

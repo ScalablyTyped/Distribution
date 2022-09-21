@@ -13,7 +13,7 @@ trait ICanvas extends StObject {
   
   var height: Double
   
-  def setPixelRatio(pixelRatio: Double): js.Any
+  def setPixelRatio(pixelRatio: Double): Any
   
   var width: Double
 }
@@ -23,7 +23,7 @@ object ICanvas {
     _canvas: HTMLCanvasElement,
     getPixelRatio: () => Double,
     height: Double,
-    setPixelRatio: Double => js.Any,
+    setPixelRatio: Double => Any,
     width: Double
   ): ICanvas = {
     val __obj = js.Dynamic.literal(_canvas = _canvas.asInstanceOf[js.Any], getPixelRatio = js.Any.fromFunction0(getPixelRatio), height = height.asInstanceOf[js.Any], setPixelRatio = js.Any.fromFunction1(setPixelRatio), width = width.asInstanceOf[js.Any])
@@ -36,7 +36,7 @@ object ICanvas {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setSetPixelRatio(value: Double => js.Any): Self = StObject.set(x, "setPixelRatio", js.Any.fromFunction1(value))
+    inline def setSetPixelRatio(value: Double => Any): Self = StObject.set(x, "setPixelRatio", js.Any.fromFunction1(value))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

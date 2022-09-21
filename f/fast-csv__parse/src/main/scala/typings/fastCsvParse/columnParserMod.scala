@@ -12,14 +12,14 @@ object columnParserMod {
   
   @JSImport("@fast-csv/parse/build/src/parser/column/ColumnParser", "ColumnParser")
   @js.native
-  class ColumnParser protected () extends StObject {
+  open class ColumnParser protected () extends StObject {
     def this(parserOptions: ParserOptions) = this()
     
     val nonQuotedColumnParser: NonQuotedColumnParser = js.native
     
     def parse(scanner: Scanner): String | Null = js.native
     
-    /* private */ val parserOptions: js.Any = js.native
+    /* private */ val parserOptions: Any = js.native
     
     val quotedColumnParser: QuotedColumnParser = js.native
   }

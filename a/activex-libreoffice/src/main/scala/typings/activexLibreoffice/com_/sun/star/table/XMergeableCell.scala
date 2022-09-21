@@ -45,7 +45,7 @@ object XMergeableCell {
     getType: () => CellContentType,
     getValue: () => Double,
     isMerged: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setFormula: String => Unit,
     setValue: Double => Unit

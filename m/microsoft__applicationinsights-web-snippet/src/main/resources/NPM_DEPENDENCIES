@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@microsoft/applicationinsights-web-snippet" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@microsoft/applicationinsights-web-snippet" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

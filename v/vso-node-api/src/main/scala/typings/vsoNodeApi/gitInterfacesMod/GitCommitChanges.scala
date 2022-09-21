@@ -23,6 +23,6 @@ object GitCommitChanges {
     
     inline def setChanges(value: js.Array[GitChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    inline def setChangesVarargs(value: GitChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: GitChange*): Self = StObject.set(x, "changes", js.Array(value*))
   }
 }

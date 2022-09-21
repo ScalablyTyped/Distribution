@@ -17,7 +17,7 @@ trait ResourceToImport extends StObject {
   var ResourceIdentifier: ResourceIdentifierProperties
   
   /**
-    * The type of resource to import into your stack, such as AWS::S3::Bucket. For a list of supported resource types, see Resources that support import operations in the AWS CloudFormation User Guide.
+    * The type of resource to import into your stack, such as AWS::S3::Bucket. For a list of supported resource types, see Resources that support import operations in the CloudFormation User Guide.
     */
   var ResourceType: typings.awsSdk.cloudformationMod.ResourceType
 }

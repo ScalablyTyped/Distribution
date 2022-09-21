@@ -108,7 +108,7 @@ trait Config extends StObject {
     */
   var positionToHash: js.UndefOr[Boolean] = js.undefined
   
-  var postJax: js.UndefOr[js.Any] = js.undefined
+  var postJax: js.UndefOr[Any] = js.undefined
   
   /*Patterns to remove from before and after math script tags. If you are not using one of the preprocessors, you
     * need to insert something extra into your HTML file in order to avoid a bug in Internet Explorer. IE removes
@@ -132,7 +132,7 @@ trait Config extends StObject {
     *
     * preJax: "\\[\\[", postJax: "\\]\\]" makes it so jax scripts must be enclosed in double brackets.
     */
-  var preJax: js.UndefOr[js.Any] = js.undefined
+  var preJax: js.UndefOr[Any] = js.undefined
   
   /*This is the CSS class name for math previews that will be removed preceding a MathJax SCRIPT tag. If the tag
     * just before the MathJax <script> tag is of this class, its contents are removed when MathJax processes the
@@ -187,7 +187,7 @@ trait Config extends StObject {
   /*CSS styles to be defined dynamically at startup time. These are in the form selector:rules (see CSS Style
     * Objects for complete details).
     */
-  var styles: js.UndefOr[js.Any] = js.undefined
+  var styles: js.UndefOr[Any] = js.undefined
   
   var tex2jax: js.UndefOr[TEX2jaxPreprocessor] = js.undefined
   
@@ -219,7 +219,7 @@ object Config {
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    inline def setConfigVarargs(value: String*): Self = StObject.set(x, "config", js.Array(value :_*))
+    inline def setConfigVarargs(value: String*): Self = StObject.set(x, "config", js.Array(value*))
     
     inline def setDelayStartupUntil(value: String): Self = StObject.set(x, "delayStartupUntil", value.asInstanceOf[js.Any])
     
@@ -237,7 +237,7 @@ object Config {
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value*))
     
     inline def setErrorSettings(value: ErrorSettings): Self = StObject.set(x, "errorSettings", value.asInstanceOf[js.Any])
     
@@ -247,7 +247,7 @@ object Config {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setFontWarnings(value: FontWarnings): Self = StObject.set(x, "FontWarnings", value.asInstanceOf[js.Any])
     
@@ -261,7 +261,7 @@ object Config {
     
     inline def setJaxUndefined: Self = StObject.set(x, "jax", js.undefined)
     
-    inline def setJaxVarargs(value: String*): Self = StObject.set(x, "jax", js.Array(value :_*))
+    inline def setJaxVarargs(value: String*): Self = StObject.set(x, "jax", js.Array(value*))
     
     inline def setJsMath2jax(value: JSMath2jaxPreprocessor): Self = StObject.set(x, "jsMath2jax", value.asInstanceOf[js.Any])
     
@@ -311,11 +311,11 @@ object Config {
     
     inline def setPositionToHashUndefined: Self = StObject.set(x, "positionToHash", js.undefined)
     
-    inline def setPostJax(value: js.Any): Self = StObject.set(x, "postJax", value.asInstanceOf[js.Any])
+    inline def setPostJax(value: Any): Self = StObject.set(x, "postJax", value.asInstanceOf[js.Any])
     
     inline def setPostJaxUndefined: Self = StObject.set(x, "postJax", js.undefined)
     
-    inline def setPreJax(value: js.Any): Self = StObject.set(x, "preJax", value.asInstanceOf[js.Any])
+    inline def setPreJax(value: Any): Self = StObject.set(x, "preJax", value.asInstanceOf[js.Any])
     
     inline def setPreJaxUndefined: Self = StObject.set(x, "preJax", js.undefined)
     
@@ -351,9 +351,9 @@ object Config {
     
     inline def setStyleSheetsUndefined: Self = StObject.set(x, "styleSheets", js.undefined)
     
-    inline def setStyleSheetsVarargs(value: String*): Self = StObject.set(x, "styleSheets", js.Array(value :_*))
+    inline def setStyleSheetsVarargs(value: String*): Self = StObject.set(x, "styleSheets", js.Array(value*))
     
-    inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     

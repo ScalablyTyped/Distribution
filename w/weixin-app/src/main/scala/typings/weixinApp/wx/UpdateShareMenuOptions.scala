@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UpdateShareMenuOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /** 是否使用带 shareTicket 的转发详情 */
   var withShareTicket: js.UndefOr[Boolean] = js.undefined

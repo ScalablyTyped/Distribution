@@ -13,12 +13,18 @@ object ReferenceFrame extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ReferenceFrame & Double] = js.native
   
+  /**
+    * The fixed frame.
+    */
   @js.native
   sealed trait FIXED
     extends StObject
        with ReferenceFrame
   /* 0 */ val FIXED: typings.cesium.mod.ReferenceFrame.FIXED & Double = js.native
   
+  /**
+    * The inertial frame.
+    */
   @js.native
   sealed trait INERTIAL
     extends StObject

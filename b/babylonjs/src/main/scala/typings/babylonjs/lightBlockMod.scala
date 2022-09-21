@@ -12,16 +12,16 @@ object lightBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Dual/lightBlock", "LightBlock")
   @js.native
-  class LightBlock protected () extends NodeMaterialBlock {
+  open class LightBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new LightBlock
       * @param name defines the block name
       */
     def this(name: String) = this()
     
-    /* private */ var _injectVertexCode: js.Any = js.native
+    /* private */ var _injectVertexCode: Any = js.native
     
-    /* private */ var _lightId: js.Any = js.native
+    /* private */ var _lightId: Any = js.native
     
     /**
       * Gets the camera (or eye) position component
@@ -39,7 +39,7 @@ object lightBlockMod {
     def diffuseOutput: NodeMaterialConnectionPoint = js.native
     
     /**
-      * Gets the glossinness power component
+      * Gets the glossiness power component
       */
     def glossPower: NodeMaterialConnectionPoint = js.native
     

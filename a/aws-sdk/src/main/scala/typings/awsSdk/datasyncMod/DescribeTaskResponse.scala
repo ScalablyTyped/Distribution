@@ -14,7 +14,7 @@ trait DescribeTaskResponse extends StObject {
   /**
     * The time that the task was created.
     */
-  var CreationTime: js.UndefOr[Time] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the task execution that is syncing files.
@@ -22,17 +22,17 @@ trait DescribeTaskResponse extends StObject {
   var CurrentTaskExecutionArn: js.UndefOr[TaskExecutionArn] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS storage resource's location.
+    * The Amazon Resource Name (ARN) of the Amazon Web Services storage resource's location.
     */
   var DestinationLocationArn: js.UndefOr[LocationArn] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the destination ENIs (Elastic Network Interface) that was created for your subnet.
+    * The Amazon Resource Names (ARNs) of the destination elastic network interfaces (ENIs) that were created for your subnet.
     */
   var DestinationNetworkInterfaceArns: js.UndefOr[typings.awsSdk.datasyncMod.DestinationNetworkInterfaceArns] = js.undefined
   
   /**
-    * Errors that AWS DataSync encountered during execution of the task. You can use this error code to help troubleshoot issues.
+    * Errors that DataSync encountered during execution of the task. You can use this error code to help troubleshoot issues.
     */
   var ErrorCode: js.UndefOr[String] = js.undefined
   
@@ -42,9 +42,14 @@ trait DescribeTaskResponse extends StObject {
   var ErrorDetail: js.UndefOr[String] = js.undefined
   
   /**
-    * A list of filter rules that determines which files to exclude from a task. The list should contain a single filter string that consists of the patterns to exclude. The patterns are delimited by "|" (that is, a pipe), for example: "/folder1|/folder2"   
+    * A list of filter rules that determines which files to exclude from a task. The list should contain a single filter string that consists of the patterns to exclude. The patterns are delimited by "|" (that is, a pipe), for example, "/folder1|/folder2".   
     */
   var Excludes: js.UndefOr[FilterList] = js.undefined
+  
+  /**
+    * A list of filter rules that determines which files to include when running a task. The pattern contains a single filter string that consists of the patterns to include. The patterns are delimited by "|" (that is, a pipe), for example, "/folder1|/folder2".
+    */
+  var Includes: js.UndefOr[FilterList] = js.undefined
   
   /**
     * The name of the task that was described.
@@ -52,7 +57,7 @@ trait DescribeTaskResponse extends StObject {
   var Name: js.UndefOr[TagValue] = js.undefined
   
   /**
-    * The set of configuration options that control the behavior of a single execution of the task that occurs when you call StartTaskExecution. You can configure these options to preserve metadata such as user ID (UID) and group (GID), file permissions, data integrity verification, and so on. For each individual task execution, you can override these options by specifying the overriding OverrideOptions value to operation. 
+    * The set of configuration options that control the behavior of a single execution of the task that occurs when you call StartTaskExecution. You can configure these options to preserve metadata such as user ID (UID) and group (GID), file permissions, data integrity verification, and so on. For each individual task execution, you can override these options by specifying the overriding OverrideOptions value to StartTaskExecution operation. 
     */
   var Options: js.UndefOr[typings.awsSdk.datasyncMod.Options] = js.undefined
   
@@ -67,12 +72,12 @@ trait DescribeTaskResponse extends StObject {
   var SourceLocationArn: js.UndefOr[LocationArn] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the source ENIs (Elastic Network Interface) that was created for your subnet.
+    * The Amazon Resource Names (ARNs) of the source elastic network interfaces (ENIs) that were created for your subnet.
     */
   var SourceNetworkInterfaceArns: js.UndefOr[typings.awsSdk.datasyncMod.SourceNetworkInterfaceArns] = js.undefined
   
   /**
-    * The status of the task that was described. For detailed information about task execution statuses, see Understanding Task Statuses in the AWS DataSync User Guide.
+    * The status of the task that was described. For detailed information about task execution statuses, see Understanding Task Statuses in the DataSync User Guide.
     */
   var Status: js.UndefOr[TaskStatus] = js.undefined
   
@@ -94,7 +99,7 @@ object DescribeTaskResponse {
     
     inline def setCloudWatchLogGroupArnUndefined: Self = StObject.set(x, "CloudWatchLogGroupArn", js.undefined)
     
-    inline def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -110,7 +115,7 @@ object DescribeTaskResponse {
     
     inline def setDestinationNetworkInterfaceArnsUndefined: Self = StObject.set(x, "DestinationNetworkInterfaceArns", js.undefined)
     
-    inline def setDestinationNetworkInterfaceArnsVarargs(value: NetworkInterfaceArn*): Self = StObject.set(x, "DestinationNetworkInterfaceArns", js.Array(value :_*))
+    inline def setDestinationNetworkInterfaceArnsVarargs(value: NetworkInterfaceArn*): Self = StObject.set(x, "DestinationNetworkInterfaceArns", js.Array(value*))
     
     inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
@@ -124,7 +129,13 @@ object DescribeTaskResponse {
     
     inline def setExcludesUndefined: Self = StObject.set(x, "Excludes", js.undefined)
     
-    inline def setExcludesVarargs(value: FilterRule*): Self = StObject.set(x, "Excludes", js.Array(value :_*))
+    inline def setExcludesVarargs(value: FilterRule*): Self = StObject.set(x, "Excludes", js.Array(value*))
+    
+    inline def setIncludes(value: FilterList): Self = StObject.set(x, "Includes", value.asInstanceOf[js.Any])
+    
+    inline def setIncludesUndefined: Self = StObject.set(x, "Includes", js.undefined)
+    
+    inline def setIncludesVarargs(value: FilterRule*): Self = StObject.set(x, "Includes", js.Array(value*))
     
     inline def setName(value: TagValue): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -146,7 +157,7 @@ object DescribeTaskResponse {
     
     inline def setSourceNetworkInterfaceArnsUndefined: Self = StObject.set(x, "SourceNetworkInterfaceArns", js.undefined)
     
-    inline def setSourceNetworkInterfaceArnsVarargs(value: NetworkInterfaceArn*): Self = StObject.set(x, "SourceNetworkInterfaceArns", js.Array(value :_*))
+    inline def setSourceNetworkInterfaceArnsVarargs(value: NetworkInterfaceArn*): Self = StObject.set(x, "SourceNetworkInterfaceArns", js.Array(value*))
     
     inline def setStatus(value: TaskStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

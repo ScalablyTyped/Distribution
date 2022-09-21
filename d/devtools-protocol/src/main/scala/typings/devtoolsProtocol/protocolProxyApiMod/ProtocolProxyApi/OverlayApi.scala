@@ -21,15 +21,20 @@ import typings.devtoolsProtocol.mod.Protocol.Overlay.ScreenshotRequestedEvent
 import typings.devtoolsProtocol.mod.Protocol.Overlay.SetInspectModeRequest
 import typings.devtoolsProtocol.mod.Protocol.Overlay.SetPausedInDebuggerMessageRequest
 import typings.devtoolsProtocol.mod.Protocol.Overlay.SetShowAdHighlightsRequest
+import typings.devtoolsProtocol.mod.Protocol.Overlay.SetShowContainerQueryOverlaysRequest
 import typings.devtoolsProtocol.mod.Protocol.Overlay.SetShowDebugBordersRequest
 import typings.devtoolsProtocol.mod.Protocol.Overlay.SetShowFPSCounterRequest
+import typings.devtoolsProtocol.mod.Protocol.Overlay.SetShowFlexOverlaysRequest
 import typings.devtoolsProtocol.mod.Protocol.Overlay.SetShowGridOverlaysRequest
 import typings.devtoolsProtocol.mod.Protocol.Overlay.SetShowHingeRequest
 import typings.devtoolsProtocol.mod.Protocol.Overlay.SetShowHitTestBordersRequest
+import typings.devtoolsProtocol.mod.Protocol.Overlay.SetShowIsolatedElementsRequest
 import typings.devtoolsProtocol.mod.Protocol.Overlay.SetShowLayoutShiftRegionsRequest
 import typings.devtoolsProtocol.mod.Protocol.Overlay.SetShowPaintRectsRequest
 import typings.devtoolsProtocol.mod.Protocol.Overlay.SetShowScrollBottleneckRectsRequest
+import typings.devtoolsProtocol.mod.Protocol.Overlay.SetShowScrollSnapOverlaysRequest
 import typings.devtoolsProtocol.mod.Protocol.Overlay.SetShowViewportSizeOnResizeRequest
+import typings.devtoolsProtocol.mod.Protocol.Overlay.SetShowWebVitalsRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,6 +74,9 @@ trait OverlayApi extends StObject {
   
   /**
     * Highlights owner element of the frame with given id.
+    * Deprecated: Doesn't work reliablity and cannot be fixed due to process
+    * separatation (the owner node might be in a different process). Determine
+    * the owner node in the client and use highlightNode.
     */
   def highlightFrame(params: HighlightFrameRequest): js.Promise[Unit] = js.native
   
@@ -132,6 +140,8 @@ trait OverlayApi extends StObject {
     */
   def setShowAdHighlights(params: SetShowAdHighlightsRequest): js.Promise[Unit] = js.native
   
+  def setShowContainerQueryOverlays(params: SetShowContainerQueryOverlaysRequest): js.Promise[Unit] = js.native
+  
   /**
     * Requests that backend shows debug borders on layers
     */
@@ -141,6 +151,8 @@ trait OverlayApi extends StObject {
     * Requests that backend shows the FPS counter
     */
   def setShowFPSCounter(params: SetShowFPSCounterRequest): js.Promise[Unit] = js.native
+  
+  def setShowFlexOverlays(params: SetShowFlexOverlaysRequest): js.Promise[Unit] = js.native
   
   /**
     * Highlight multiple elements with the CSS Grid overlay.
@@ -153,9 +165,14 @@ trait OverlayApi extends StObject {
   def setShowHinge(params: SetShowHingeRequest): js.Promise[Unit] = js.native
   
   /**
-    * Requests that backend shows hit-test borders on layers
+    * Deprecated, no longer has any effect.
     */
   def setShowHitTestBorders(params: SetShowHitTestBordersRequest): js.Promise[Unit] = js.native
+  
+  /**
+    * Show elements in isolation mode with overlays.
+    */
+  def setShowIsolatedElements(params: SetShowIsolatedElementsRequest): js.Promise[Unit] = js.native
   
   /**
     * Requests that backend shows layout shift regions
@@ -172,8 +189,15 @@ trait OverlayApi extends StObject {
     */
   def setShowScrollBottleneckRects(params: SetShowScrollBottleneckRectsRequest): js.Promise[Unit] = js.native
   
+  def setShowScrollSnapOverlays(params: SetShowScrollSnapOverlaysRequest): js.Promise[Unit] = js.native
+  
   /**
     * Paints viewport size upon main frame resize.
     */
   def setShowViewportSizeOnResize(params: SetShowViewportSizeOnResizeRequest): js.Promise[Unit] = js.native
+  
+  /**
+    * Request that backend shows an overlay with web vital metrics.
+    */
+  def setShowWebVitals(params: SetShowWebVitalsRequest): js.Promise[Unit] = js.native
 }

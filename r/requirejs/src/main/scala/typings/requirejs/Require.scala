@@ -12,7 +12,7 @@ trait Require extends StObject {
     * @param module Module to load
     * @return The loaded module
     */
-  def apply(module: String): js.Any = js.native
+  def apply(module: String): Any = js.native
   /**
     * Start the main app logic.
     * Callback is optional.

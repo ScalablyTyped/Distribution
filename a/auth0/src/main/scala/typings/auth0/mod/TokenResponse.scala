@@ -12,6 +12,8 @@ trait TokenResponse extends StObject {
   
   var id_token: js.UndefOr[String] = js.undefined
   
+  var refresh_token: js.UndefOr[String] = js.undefined
+  
   var scope: js.UndefOr[String] = js.undefined
   
   var token_type: String
@@ -32,6 +34,10 @@ object TokenResponse {
     inline def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
     
     inline def setId_tokenUndefined: Self = StObject.set(x, "id_token", js.undefined)
+    
+    inline def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
+    
+    inline def setRefresh_tokenUndefined: Self = StObject.set(x, "refresh_token", js.undefined)
     
     inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

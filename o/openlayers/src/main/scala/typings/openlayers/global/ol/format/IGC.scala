@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api
   */
-class IGC ()
+open class IGC ()
   extends typings.openlayers.mod.format.IGC {
   def this(opt_options: IGCOptions) = this()
 }

@@ -4,10 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Output configuration for export assets destination.
-  */
 trait SchemaOutputConfig extends StObject {
+  
+  /**
+    * Destination on BigQuery. The output table stores the fields in asset Protobuf as columns in BigQuery.
+    */
+  var bigqueryDestination: js.UndefOr[SchemaBigQueryDestination] = js.undefined
   
   /**
     * Destination on Cloud Storage.
@@ -22,6 +24,10 @@ object SchemaOutputConfig {
   }
   
   extension [Self <: SchemaOutputConfig](x: Self) {
+    
+    inline def setBigqueryDestination(value: SchemaBigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
+    
+    inline def setBigqueryDestinationUndefined: Self = StObject.set(x, "bigqueryDestination", js.undefined)
     
     inline def setGcsDestination(value: SchemaGcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     

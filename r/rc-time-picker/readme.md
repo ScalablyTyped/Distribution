@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-time-picker
 
-Typings are for version 3.4
+Typings are for version 3.7.3
 
 ## Library description:
 React TimePicker
@@ -10,10 +10,10 @@ React TimePicker
 | ------------------ | :-------------: |
 | Full name          | rc-time-picker |
 | Keywords           | react, react-time-picker, react-component, timepicker, time-picker, ui component, ui, component |
-| # releases         | 12 |
-| # dependents       | 259 |
-| # downloads        | 13450365 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 868387.3333333334 |
+| # stars            | 444.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/time-picker)
@@ -24,7 +24,7 @@ React TimePicker
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

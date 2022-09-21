@@ -12,7 +12,7 @@ trait AddApplicationInputRequest extends StObject {
   var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName
   
   /**
-    * The current version of your application. You can use the DescribeApplication operation to find the current application version.
+    * The current version of your application. You must provide the ApplicationVersionID or the ConditionalToken.You can use the DescribeApplication operation to find the current application version.
     */
   var CurrentApplicationVersionId: ApplicationVersionId
   

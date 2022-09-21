@@ -3,11 +3,10 @@ package typings.jsftp
 import typings.jsftp.anon.Code
 import typings.jsftp.anon.Host
 import typings.jsftp.anon.Name
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
-import typings.std.Error
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,14 +15,16 @@ object mod {
   
   @JSImport("jsftp", JSImport.Default)
   @js.native
-  class default protected () extends Ftp {
+  open class default protected () extends Ftp {
     def this(opts: JsftpOpts) = this()
   }
   
-  type ErrorCallback = js.Function1[/* err */ Error, Unit]
+  type ErrorCallback = js.Function1[/* err */ js.Error, Unit]
   
   @js.native
   trait Ftp extends EventEmitter {
+    
+    def auth(user: String, pass: String, callback: RawCallback): Unit = js.native
     
     def destroy(): Unit = js.native
     
@@ -39,19 +40,19 @@ object mod {
     
     def put(source: String, remotePath: String, callback: ErrorCallback): Unit = js.native
     def put(source: Buffer, remotePath: String, callback: ErrorCallback): Unit = js.native
-    def put(source: ReadableStream, remotePath: String, callback: ErrorCallback): Unit = js.native
+    def put(source: ReadableStream[Any], remotePath: String, callback: ErrorCallback): Unit = js.native
     
-    def raw(command: String, arg1: js.Any, arg2: js.Any, arg3: js.Any, arg4: js.Any, callback: RawCallback): Unit = js.native
-    def raw(command: String, arg1: js.Any, arg2: js.Any, arg3: js.Any, callback: RawCallback): Unit = js.native
-    def raw(command: String, arg1: js.Any, arg2: js.Any, callback: RawCallback): Unit = js.native
-    def raw(command: String, arg1: js.Any, callback: RawCallback): Unit = js.native
+    def raw(command: String, arg1: Any, arg2: Any, arg3: Any, arg4: Any, callback: RawCallback): Unit = js.native
+    def raw(command: String, arg1: Any, arg2: Any, arg3: Any, callback: RawCallback): Unit = js.native
+    def raw(command: String, arg1: Any, arg2: Any, callback: RawCallback): Unit = js.native
+    def raw(command: String, arg1: Any, callback: RawCallback): Unit = js.native
     // Ftp.raw(command, params, callback)
     def raw(command: String, callback: RawCallback): Unit = js.native
     
     def rename(from: String, to: String, callback: ErrorCallback): Unit = js.native
   }
   
-  type GetCallback = js.Function2[/* err */ Error, /* socket */ Socket, Unit]
+  type GetCallback = js.Function2[/* err */ js.Error, /* socket */ Socket, Unit]
   
   trait JsftpOpts extends StObject {
     
@@ -104,9 +105,9 @@ object mod {
     }
   }
   
-  type ListCallback = js.Function2[/* err */ Error, /* dirContents */ String, Unit]
+  type ListCallback = js.Function2[/* err */ js.Error, /* dirContents */ String, Unit]
   
-  type LsCallback = js.Function2[/* err */ Error, /* res */ js.Array[Name], Unit]
+  type LsCallback = js.Function2[/* err */ js.Error, /* res */ js.Array[Name], Unit]
   
-  type RawCallback = js.Function2[/* err */ Error, /* data */ Code, Unit]
+  type RawCallback = js.Function2[/* err */ js.Error, /* data */ Code, Unit]
 }

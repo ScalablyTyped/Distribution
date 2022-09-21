@@ -1,10 +1,8 @@
 package typings.googleapis.anon
 
-import typings.googleapis.googleapisStrings.v1
-import typings.googleapis.googleapisStrings.v1alpha
-import typings.googleapis.googleapisStrings.v2
-import typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1.Options
-import typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1.Remotebuildexecution
+import typings.googleapis.firebaseV1beta1Mod.firebaseV1beta1.Firebase
+import typings.googleapis.firebaseV1beta1Mod.firebaseV1beta1.Options
+import typings.googleapis.googleapisStrings.v1beta1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn108 extends StObject {
   
-  def apply(options: Options): Remotebuildexecution = js.native
-  def apply(options: typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Options): typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Remotebuildexecution = js.native
-  def apply(options: typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Options): typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Remotebuildexecution = js.native
-  def apply(version: v1): Remotebuildexecution = js.native
-  def apply(version: v1alpha): typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Remotebuildexecution = js.native
-  def apply(version: v2): typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Remotebuildexecution = js.native
+  def apply(options: Options): Firebase = js.native
+  def apply(version: v1beta1): Firebase = js.native
 }

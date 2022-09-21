@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "AnimationPropertiesOverride")
 @js.native
-class AnimationPropertiesOverride ()
+open class AnimationPropertiesOverride ()
   extends typings.babylonjs.indexMod.AnimationPropertiesOverride

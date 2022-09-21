@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Specifies the delay introduced by Loadbalancer before forwarding the
-  * request to the backend service as part of fault injection.
-  */
 trait SchemaHttpFaultDelay extends StObject {
   
   /**
@@ -16,11 +12,9 @@ trait SchemaHttpFaultDelay extends StObject {
   var fixedDelay: js.UndefOr[SchemaDuration] = js.undefined
   
   /**
-    * The percentage of traffic (connections/operations/requests) on which
-    * delay will be introduced as part of fault injection. The value must be
-    * between 0.0 and 100.0 inclusive.
+    * The percentage of traffic for connections, operations, or requests for which a delay is introduced as part of fault injection. The value must be from 0.0 to 100.0 inclusive.
     */
-  var percentage: js.UndefOr[Double] = js.undefined
+  var percentage: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaHttpFaultDelay {
   
@@ -36,6 +30,8 @@ object SchemaHttpFaultDelay {
     inline def setFixedDelayUndefined: Self = StObject.set(x, "fixedDelay", js.undefined)
     
     inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+    
+    inline def setPercentageNull: Self = StObject.set(x, "percentage", null)
     
     inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
   }

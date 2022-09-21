@@ -1,9 +1,5 @@
 package typings.googleapis.v41Mod.adsensehostV41
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +9,9 @@ trait ParamsResourceAssociationsessionsStart
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * The URL to redirect the user to once association is completed. It receives a token parameter that can then be used to retrieve the associated account.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var callbackUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Products to associate with the user.
@@ -46,15 +42,15 @@ object ParamsResourceAssociationsessionsStart {
   
   extension [Self <: ParamsResourceAssociationsessionsStart](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
     
     inline def setProductCode(value: js.Array[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
     
     inline def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
     
-    inline def setProductCodeVarargs(value: String*): Self = StObject.set(x, "productCode", js.Array(value :_*))
+    inline def setProductCodeVarargs(value: String*): Self = StObject.set(x, "productCode", js.Array(value*))
     
     inline def setUserLocale(value: String): Self = StObject.set(x, "userLocale", value.asInstanceOf[js.Any])
     

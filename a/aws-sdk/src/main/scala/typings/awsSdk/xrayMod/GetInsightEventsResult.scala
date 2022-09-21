@@ -29,7 +29,7 @@ object GetInsightEventsResult {
     
     inline def setInsightEventsUndefined: Self = StObject.set(x, "InsightEvents", js.undefined)
     
-    inline def setInsightEventsVarargs(value: InsightEvent*): Self = StObject.set(x, "InsightEvents", js.Array(value :_*))
+    inline def setInsightEventsVarargs(value: InsightEvent*): Self = StObject.set(x, "InsightEvents", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

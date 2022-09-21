@@ -1,165 +1,174 @@
 package typings.firebaseDatabase
 
 import org.scalablytyped.runtime.Instantiable2
-import typings.firebaseDatabase.anon.FnCallOnfulfilledOnrejected
-import typings.firebaseDatabase.anon.FnCallOnrejected
-import typings.firebaseDatabase.dataSnapshotMod.DataSnapshot
-import typings.firebaseDatabase.databaseMod.Database
-import typings.firebaseDatabase.onDisconnectMod.OnDisconnect
+import typings.firebaseDatabase.eventRegistrationMod.QueryContext
 import typings.firebaseDatabase.pathMod.Path
-import typings.firebaseDatabase.queryMod.Query
+import typings.firebaseDatabase.queryParamsMod.QueryParams
 import typings.firebaseDatabase.repoMod.Repo
-import typings.firebaseDatabase.transactionResultMod.TransactionResult
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object referenceMod {
   
-  @JSImport("@firebase/database/dist/src/api/Reference", "Reference")
   @js.native
-  class Reference protected () extends Query {
+  trait DatabaseReference
+    extends StObject
+       with Query {
+    
     /**
-      * Call options:
-      *   new Reference(Repo, Path) or
-      *   new Reference(url: string, string|RepoManager)
+      * The last part of the `DatabaseReference`'s path.
       *
-      * Externally - this is the firebase.database.Reference type.
+      * For example, `"ada"` is the key for
+      * `https://<DATABASE_NAME>.firebaseio.com/users/ada`.
       *
-      * @param {!Repo} repo
-      * @param {(!Path)} path
-      * @extends {Query}
+      * The key of a root `DatabaseReference` is `null`.
       */
-    def this(repo: Repo, path: Path) = this()
-    
-    def `catch`[TResult](): js.Promise[Reference | TResult] = js.native
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[Reference | TResult] = js.native
-    @JSName("catch")
-    var catch_Original: FnCallOnrejected = js.native
+    val key: String | Null = js.native
     
     /**
-      * @param {!(string|Path)} pathString
-      * @return {!Reference}
+      * The parent location of a `DatabaseReference`.
+      *
+      * The parent of a root `DatabaseReference` is `null`.
       */
-    def child(pathString: String): Reference = js.native
-    def child(pathString: Path): Reference = js.native
+    val parent: DatabaseReference | Null = js.native
     
-    def database: Database = js.native
+    /** The root `DatabaseReference` of the Database. */
+    val root: DatabaseReference = js.native
+  }
+  
+  trait ListenOptions extends StObject {
     
-    /** @return {!Database} */
-    def databaseProp(): Database = js.native
+    /** Whether to remove the listener after its first invocation. */
+    val onlyOnce: js.UndefOr[Boolean] = js.undefined
+  }
+  object ListenOptions {
     
-    /** @return {?string} */
-    def getKey(): String | Null = js.native
+    inline def apply(): ListenOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ListenOptions]
+    }
     
-    /** @return {?Reference} */
-    def getParent(): Reference | Null = js.native
-    
-    /** @return {!Reference} */
-    def getRoot(): Reference = js.native
-    
-    def key: String | Null = js.native
+    extension [Self <: ListenOptions](x: Self) {
+      
+      inline def setOnlyOnce(value: Boolean): Self = StObject.set(x, "onlyOnce", value.asInstanceOf[js.Any])
+      
+      inline def setOnlyOnceUndefined: Self = StObject.set(x, "onlyOnce", js.undefined)
+    }
+  }
+  
+  @js.native
+  trait Query
+    extends StObject
+       with QueryContext {
     
     /**
-      * @return {!OnDisconnect}
+      * Returns whether or not the current and provided queries represent the same
+      * location, have the same query parameters, and are from the same instance of
+      * `FirebaseApp`.
+      *
+      * Two `DatabaseReference` objects are equivalent if they represent the same location
+      * and are from the same instance of `FirebaseApp`.
+      *
+      * Two `Query` objects are equivalent if they represent the same location,
+      * have the same query parameters, and are from the same instance of
+      * `FirebaseApp`. Equivalent queries share the same sort order, limits, and
+      * starting and ending points.
+      *
+      * @param other - The query to compare against.
+      * @returns Whether or not the current and provided queries are equivalent.
       */
-    def onDisconnect(): OnDisconnect = js.native
+    def isEqual(): Boolean = js.native
+    def isEqual(other: Query): Boolean = js.native
     
-    def parent: Reference | Null = js.native
+    /** The `DatabaseReference` for the `Query`'s location. */
+    val ref: DatabaseReference = js.native
     
     /**
-      * @param {*=} value
-      * @param {function(?Error)=} onComplete
-      * @return {!Reference}
+      * Returns a JSON-serializable representation of this object.
+      *
+      * @returns A JSON-serializable representation of this object.
       */
-    def push(): Reference = js.native
-    def push(value: js.Any): Reference = js.native
-    def push(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, Unit]): Reference = js.native
-    def push(value: Unit, onComplete: js.Function1[/* a */ Error | Null, Unit]): Reference = js.native
-    
-    /**
-      * @param {function(?Error)=} onComplete
-      * @return {!Promise}
-      */
-    def remove(): js.Promise[js.Any] = js.native
-    def remove(onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
-    
-    def root: Reference = js.native
-    
-    /**
-      * @param {*} newVal
-      * @param {function(?Error)=} onComplete
-      * @return {!Promise}
-      */
-    def set(newVal: js.Any): js.Promise[js.Any] = js.native
-    def set(newVal: js.Any, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
-    
-    /**
-      * @param {string|number|null} priority
-      * @param {function(?Error)=} onComplete
-      * @return {!Promise}
-      */
-    def setPriority(): js.Promise[js.Any] = js.native
-    def setPriority(priority: String): js.Promise[js.Any] = js.native
-    def setPriority(priority: String, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
-    def setPriority(priority: Double): js.Promise[js.Any] = js.native
-    def setPriority(priority: Double, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
-    def setPriority(priority: Null, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
-    
-    /**
-      * @param {*} newVal
-      * @param {string|number|null} newPriority
-      * @param {function(?Error)=} onComplete
-      * @return {!Promise}
-      */
-    def setWithPriority(newVal: js.Any): js.Promise[js.Any] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: String): js.Promise[js.Any] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: String, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: Double): js.Promise[js.Any] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: Double, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: Null, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
-    
-    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Reference, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ Reference, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-    ): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
-    @JSName("then")
-    var then_Original: FnCallOnfulfilledOnrejected = js.native
-    
-    /**
-      * @param {function(*):*} transactionUpdate
-      * @param {(function(?Error, boolean, ?DataSnapshot))=} onComplete
-      * @param {boolean=} applyLocally
-      * @return {!Promise}
-      */
-    def transaction(transactionUpdate: js.Function1[/* a */ js.Any, js.Any]): js.Promise[TransactionResult] = js.native
-    def transaction(
-      transactionUpdate: js.Function1[/* a */ js.Any, js.Any],
-      onComplete: js.Function3[/* a */ Error | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, Unit]
-    ): js.Promise[TransactionResult] = js.native
-    def transaction(
-      transactionUpdate: js.Function1[/* a */ js.Any, js.Any],
-      onComplete: js.Function3[/* a */ Error | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, Unit],
-      applyLocally: Boolean
-    ): js.Promise[TransactionResult] = js.native
-    def transaction(transactionUpdate: js.Function1[/* a */ js.Any, js.Any], onComplete: Unit, applyLocally: Boolean): js.Promise[TransactionResult] = js.native
-    
-    /**
-      * @param {!Object} objectToMerge
-      * @param {function(?Error)=} onComplete
-      * @return {!Promise}
-      */
-    def update(objectToMerge: js.Object): js.Promise[js.Any] = js.native
-    def update(objectToMerge: js.Object, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
+    def toJSON(): String = js.native
   }
   
   @js.native
   trait ReferenceConstructor
     extends StObject
-       with Instantiable2[/* repo */ Repo, /* path */ Path, Reference]
+       with Instantiable2[/* repo */ Repo, /* path */ Path, DatabaseReference]
+  
+  /* Inlined parent @firebase/database.@firebase/database/dist/node-esm/src/api/Reference.DatabaseReference */
+  /* Inlined parent std.Pick<std.Promise<@firebase/database.@firebase/database/dist/node-esm/src/api/Reference.DatabaseReference>, 'then' | 'catch'> */
+  @js.native
+  trait ThenableReference extends StObject {
+    
+    val _path: Path = js.native
+    
+    val _queryIdentifier: String = js.native
+    
+    val _queryObject: js.Object = js.native
+    
+    val _queryParams: QueryParams = js.native
+    
+    val _repo: Repo = js.native
+    
+    def `catch`[TResult](): js.Promise[DatabaseReference | TResult] = js.native
+    @JSName("catch")
+    var catch_Original: js.Function0[js.Promise[DatabaseReference | scala.Nothing]] = js.native
+    
+    /**
+      * Returns whether or not the current and provided queries represent the same
+      * location, have the same query parameters, and are from the same instance of
+      * `FirebaseApp`.
+      *
+      * Two `DatabaseReference` objects are equivalent if they represent the same location
+      * and are from the same instance of `FirebaseApp`.
+      *
+      * Two `Query` objects are equivalent if they represent the same location,
+      * have the same query parameters, and are from the same instance of
+      * `FirebaseApp`. Equivalent queries share the same sort order, limits, and
+      * starting and ending points.
+      *
+      * @param other - The query to compare against.
+      * @returns Whether or not the current and provided queries are equivalent.
+      */
+    def isEqual(): Boolean = js.native
+    def isEqual(other: Query): Boolean = js.native
+    
+    /**
+      * The last part of the `DatabaseReference`'s path.
+      *
+      * For example, `"ada"` is the key for
+      * `https://<DATABASE_NAME>.firebaseio.com/users/ada`.
+      *
+      * The key of a root `DatabaseReference` is `null`.
+      */
+    val key: String | Null = js.native
+    
+    /**
+      * The parent location of a `DatabaseReference`.
+      *
+      * The parent of a root `DatabaseReference` is `null`.
+      */
+    val parent: DatabaseReference | Null = js.native
+    
+    /** The `DatabaseReference` for the `Query`'s location. */
+    val ref: DatabaseReference = js.native
+    
+    /** The root `DatabaseReference` of the Database. */
+    val root: DatabaseReference = js.native
+    
+    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+    @JSName("then")
+    var then_Original: js.Function0[js.Promise[DatabaseReference | scala.Nothing]] = js.native
+    
+    /**
+      * Returns a JSON-serializable representation of this object.
+      *
+      * @returns A JSON-serializable representation of this object.
+      */
+    def toJSON(): String = js.native
+  }
+  
+  type Unsubscribe = js.Function0[Unit]
 }

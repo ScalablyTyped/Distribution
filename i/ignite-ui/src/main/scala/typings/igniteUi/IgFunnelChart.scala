@@ -11,7 +11,7 @@ trait IgFunnelChart
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets or sets whether to allow slices to be selected.
@@ -37,7 +37,7 @@ trait IgFunnelChart
     * Gets or sets the palette of brushes to use for coloring the slices.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var brushes: js.UndefOr[js.Any] = js.undefined
+  var brushes: js.UndefOr[Any] = js.undefined
   
   /**
     * Event which is raised before data binding.
@@ -62,7 +62,7 @@ trait IgFunnelChart
     * That can be instance of array or primitives, array of objects, instance of $.ig.DataSource, or any other data accepted by $.ig.DataSource.
     * Note: if it is set to string and "dataSourceType" option is not set, then $.ig.JSONPDataSource is used.
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets sets data source type (such as "json", "xml", etc). Please refer to the documentation of $.ig.DataSource and its type property
@@ -77,12 +77,12 @@ trait IgFunnelChart
   /**
     * Gets or sets the formatter function for inner labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to the funnel chart.
     */
-  var formatInnerLabel: js.UndefOr[js.Any] = js.undefined
+  var formatInnerLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the formatter function for outer labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to the funnel chart.
     */
-  var formatOuterLabel: js.UndefOr[js.Any] = js.undefined
+  var formatOuterLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets how the heights of the funnel slices should be configured.
@@ -139,7 +139,7 @@ trait IgFunnelChart
     * legend: { element: "idOfDiv", width: 300 }
     * legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }
     */
-  var legend: js.UndefOr[js.Any] = js.undefined
+  var legend: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the LegendItemBadgeTemplate to use for the legend items.
@@ -164,7 +164,7 @@ trait IgFunnelChart
     *     isHitTestRender: [if true, indicates that this is a special render pass for hit testing, in which case the brushes from the data should be used]
     * }
     */
-  var legendItemBadgeTemplate: js.UndefOr[js.Any] = js.undefined
+  var legendItemBadgeTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets sets maximum number of displayed records in chart.
@@ -213,7 +213,7 @@ trait IgFunnelChart
     * Gets or sets the palette of brushes to use for outlines on the slices.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var outlines: js.UndefOr[js.Any] = js.undefined
+  var outlines: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the scaling value used to affect the pixel density of the control.
@@ -236,7 +236,7 @@ trait IgFunnelChart
     * Gets or sets the style to use for selected slices.
     * That can be used to set stroke (outline color), fill (background color) and opacity.
     */
-  var selectedSliceStyle: js.UndefOr[js.Any] = js.undefined
+  var selectedSliceStyle: js.UndefOr[Any] = js.undefined
   
   /**
     * Event which is raised when a slice is clicked.
@@ -273,7 +273,7 @@ trait IgFunnelChart
     * Gets or sets the style to use for unselected slices.
     * That can be used to set stroke (outline color), fill (background color) and opacity.
     */
-  var unselectedSliceStyle: js.UndefOr[js.Any] = js.undefined
+  var unselectedSliceStyle: js.UndefOr[Any] = js.undefined
   
   /**
     * Event which is raised before tooltip is updated.
@@ -334,7 +334,7 @@ object IgFunnelChart {
     
     inline def setBottomEdgeWidthUndefined: Self = StObject.set(x, "bottomEdgeWidth", js.undefined)
     
-    inline def setBrushes(value: js.Any): Self = StObject.set(x, "brushes", value.asInstanceOf[js.Any])
+    inline def setBrushes(value: Any): Self = StObject.set(x, "brushes", value.asInstanceOf[js.Any])
     
     inline def setBrushesUndefined: Self = StObject.set(x, "brushes", js.undefined)
     
@@ -346,7 +346,7 @@ object IgFunnelChart {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
@@ -358,11 +358,11 @@ object IgFunnelChart {
     
     inline def setDataSourceUrlUndefined: Self = StObject.set(x, "dataSourceUrl", js.undefined)
     
-    inline def setFormatInnerLabel(value: js.Any): Self = StObject.set(x, "formatInnerLabel", value.asInstanceOf[js.Any])
+    inline def setFormatInnerLabel(value: Any): Self = StObject.set(x, "formatInnerLabel", value.asInstanceOf[js.Any])
     
     inline def setFormatInnerLabelUndefined: Self = StObject.set(x, "formatInnerLabel", js.undefined)
     
-    inline def setFormatOuterLabel(value: js.Any): Self = StObject.set(x, "formatOuterLabel", value.asInstanceOf[js.Any])
+    inline def setFormatOuterLabel(value: Any): Self = StObject.set(x, "formatOuterLabel", value.asInstanceOf[js.Any])
     
     inline def setFormatOuterLabelUndefined: Self = StObject.set(x, "formatOuterLabel", js.undefined)
     
@@ -390,9 +390,9 @@ object IgFunnelChart {
     
     inline def setIsInvertedUndefined: Self = StObject.set(x, "isInverted", js.undefined)
     
-    inline def setLegend(value: js.Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
-    inline def setLegendItemBadgeTemplate(value: js.Any): Self = StObject.set(x, "legendItemBadgeTemplate", value.asInstanceOf[js.Any])
+    inline def setLegendItemBadgeTemplate(value: Any): Self = StObject.set(x, "legendItemBadgeTemplate", value.asInstanceOf[js.Any])
     
     inline def setLegendItemBadgeTemplateUndefined: Self = StObject.set(x, "legendItemBadgeTemplate", js.undefined)
     
@@ -426,7 +426,7 @@ object IgFunnelChart {
     
     inline def setOutlineThicknessUndefined: Self = StObject.set(x, "outlineThickness", js.undefined)
     
-    inline def setOutlines(value: js.Any): Self = StObject.set(x, "outlines", value.asInstanceOf[js.Any])
+    inline def setOutlines(value: Any): Self = StObject.set(x, "outlines", value.asInstanceOf[js.Any])
     
     inline def setOutlinesUndefined: Self = StObject.set(x, "outlines", js.undefined)
     
@@ -442,7 +442,7 @@ object IgFunnelChart {
     
     inline def setResponseTotalRecCountKeyUndefined: Self = StObject.set(x, "responseTotalRecCountKey", js.undefined)
     
-    inline def setSelectedSliceStyle(value: js.Any): Self = StObject.set(x, "selectedSliceStyle", value.asInstanceOf[js.Any])
+    inline def setSelectedSliceStyle(value: Any): Self = StObject.set(x, "selectedSliceStyle", value.asInstanceOf[js.Any])
     
     inline def setSelectedSliceStyleUndefined: Self = StObject.set(x, "selectedSliceStyle", js.undefined)
     
@@ -466,7 +466,7 @@ object IgFunnelChart {
     
     inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
-    inline def setUnselectedSliceStyle(value: js.Any): Self = StObject.set(x, "unselectedSliceStyle", value.asInstanceOf[js.Any])
+    inline def setUnselectedSliceStyle(value: Any): Self = StObject.set(x, "unselectedSliceStyle", value.asInstanceOf[js.Any])
     
     inline def setUnselectedSliceStyleUndefined: Self = StObject.set(x, "unselectedSliceStyle", js.undefined)
     

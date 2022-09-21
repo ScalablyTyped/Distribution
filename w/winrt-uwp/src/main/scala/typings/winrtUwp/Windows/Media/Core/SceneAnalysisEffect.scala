@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SceneAnalysisEffect extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_sceneanalyzed(`type`: sceneanalyzed, listener: TypedEventHandler[SceneAnalysisEffect, SceneAnalyzedEventArgs]): Unit = js.native
   
@@ -29,7 +29,7 @@ trait SceneAnalysisEffect extends StObject {
   @JSName("onsceneanalyzed")
   var onsceneanalyzed_Original: TypedEventHandler[SceneAnalysisEffect, SceneAnalyzedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_sceneanalyzed(`type`: sceneanalyzed, listener: TypedEventHandler[SceneAnalysisEffect, SceneAnalyzedEventArgs]): Unit = js.native
   

@@ -68,6 +68,6 @@ object WorkspaceList {
     
     inline def setWorkspacesUndefined: Self = StObject.set(x, "workspaces", js.undefined)
     
-    inline def setWorkspacesVarargs(value: (/* A DocuSign workspace is a collaboration area for sharing files and data. */ Workspace)*): Self = StObject.set(x, "workspaces", js.Array(value :_*))
+    inline def setWorkspacesVarargs(value: (/* A DocuSign workspace is a collaboration area for sharing files and data. */ Workspace)*): Self = StObject.set(x, "workspaces", js.Array(value*))
   }
 }

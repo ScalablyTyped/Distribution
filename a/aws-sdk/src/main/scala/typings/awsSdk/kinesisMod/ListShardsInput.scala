@@ -12,7 +12,7 @@ trait ListShardsInput extends StObject {
   var ExclusiveStartShardId: js.UndefOr[ShardId] = js.undefined
   
   /**
-    * The maximum number of shards to return in a single call to ListShards. The minimum value you can specify for this parameter is 1, and the maximum is 10,000, which is also the default. When the number of shards to be listed is greater than the value of MaxResults, the response contains a NextToken value that you can use in a subsequent call to ListShards to list the next set of shards.
+    * The maximum number of shards to return in a single call to ListShards. The maximum number of shards to return in a single call. The default value is 1000. If you specify a value greater than 1000, at most 1000 results are returned.  When the number of shards to be listed is greater than the value of MaxResults, the response contains a NextToken value that you can use in a subsequent call to ListShards to list the next set of shards.
     */
   var MaxResults: js.UndefOr[ListShardsInputLimit] = js.undefined
   
@@ -21,12 +21,15 @@ trait ListShardsInput extends StObject {
     */
   var NextToken: js.UndefOr[typings.awsSdk.kinesisMod.NextToken] = js.undefined
   
+  /**
+    * Enables you to filter out the response of the ListShards API. You can only specify one filter at a time.  If you use the ShardFilter parameter when invoking the ListShards API, the Type is the required property and must be specified. If you specify the AT_TRIM_HORIZON, FROM_TRIM_HORIZON, or AT_LATEST types, you do not need to specify either the ShardId or the Timestamp optional properties.  If you specify the AFTER_SHARD_ID type, you must also provide the value for the optional ShardId property. The ShardId property is identical in fuctionality to the ExclusiveStartShardId parameter of the ListShards API. When ShardId property is specified, the response includes the shards starting with the shard whose ID immediately follows the ShardId that you provided.  If you specify the AT_TIMESTAMP or FROM_TIMESTAMP_ID type, you must also provide the value for the optional Timestamp property. If you specify the AT_TIMESTAMP type, then all shards that were open at the provided timestamp are returned. If you specify the FROM_TIMESTAMP type, then all shards starting from the provided timestamp to TIP are returned. 
+    */
   var ShardFilter: js.UndefOr[typings.awsSdk.kinesisMod.ShardFilter] = js.undefined
   
   /**
     * Specify this input parameter to distinguish data streams that have the same name. For example, if you create a data stream and then delete it, and you later create another data stream with the same name, you can use this input parameter to specify which of the two streams you want to list the shards for. You cannot specify this parameter if you specify the NextToken parameter.
     */
-  var StreamCreationTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var StreamCreationTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the data stream whose shards you want to list.  You cannot specify this parameter if you specify the NextToken parameter.
@@ -58,7 +61,7 @@ object ListShardsInput {
     
     inline def setShardFilterUndefined: Self = StObject.set(x, "ShardFilter", js.undefined)
     
-    inline def setStreamCreationTimestamp(value: Timestamp): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
+    inline def setStreamCreationTimestamp(value: js.Date): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
     
     inline def setStreamCreationTimestampUndefined: Self = StObject.set(x, "StreamCreationTimestamp", js.undefined)
     

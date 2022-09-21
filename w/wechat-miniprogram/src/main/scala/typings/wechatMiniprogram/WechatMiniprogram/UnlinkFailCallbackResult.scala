@@ -11,7 +11,8 @@ trait UnlinkFailCallbackResult extends StObject {
     * 可选值：
     * - 'fail permission denied, open ${path}': 指定的 path 路径没有读权限;
     * - 'fail no such file or directory ${path}': 文件不存在;
-    * - 'fail operation not permitted, unlink ${filePath}': 传入的 filePath 是一个目录; */
+    * - 'fail operation not permitted, unlink ${filePath}': 传入的 filePath 是一个目录;
+    * - 'fail sdcard not mounted': Android sdcard 挂载失败; */
   var errMsg: String
 }
 object UnlinkFailCallbackResult {

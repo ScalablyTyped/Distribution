@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeLocationObjectStorageRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the self-managed object storage server location that was described.
+    * The Amazon Resource Name (ARN) of the object storage system location that you want information about.
     */
   var LocationArn: typings.awsSdk.datasyncMod.LocationArn
 }

@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutSecretValueResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) for the secret for which you just created a version.
+    * The ARN of the secret.
     */
   var ARN: js.UndefOr[SecretARNType] = js.undefined
   
   /**
-    * The friendly name of the secret for which you just created or updated a version.
+    * The name of the secret.
     */
   var Name: js.UndefOr[SecretNameType] = js.undefined
   
   /**
-    * The unique identifier of the version of the secret you just created or updated.
+    * The unique identifier of the version of the secret.
     */
   var VersionId: js.UndefOr[SecretVersionIdType] = js.undefined
   
   /**
-    * The list of staging labels that are currently attached to this version of the secret. Staging labels are used to track a version as it progresses through the secret rotation process.
+    * The list of staging labels that are currently attached to this version of the secret. Secrets Manager uses staging labels to track a version as it progresses through the secret rotation process.
     */
   var VersionStages: js.UndefOr[SecretVersionStagesType] = js.undefined
 }
@@ -51,6 +51,6 @@ object PutSecretValueResponse {
     
     inline def setVersionStagesUndefined: Self = StObject.set(x, "VersionStages", js.undefined)
     
-    inline def setVersionStagesVarargs(value: SecretVersionStageType*): Self = StObject.set(x, "VersionStages", js.Array(value :_*))
+    inline def setVersionStagesVarargs(value: SecretVersionStageType*): Self = StObject.set(x, "VersionStages", js.Array(value*))
   }
 }

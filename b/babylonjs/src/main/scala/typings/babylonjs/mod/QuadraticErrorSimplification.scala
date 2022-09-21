@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "QuadraticErrorSimplification")
 @js.native
-class QuadraticErrorSimplification protected ()
+open class QuadraticErrorSimplification protected ()
   extends typings.babylonjs.legacyMod.QuadraticErrorSimplification {
   /**
     * Creates a new QuadraticErrorSimplification

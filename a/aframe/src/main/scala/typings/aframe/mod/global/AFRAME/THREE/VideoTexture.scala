@@ -1,11 +1,11 @@
 package typings.aframe.mod.global.AFRAME.THREE
 
 import typings.std.HTMLVideoElement
-import typings.three.constantsMod.Mapping
-import typings.three.constantsMod.PixelFormat
-import typings.three.constantsMod.TextureDataType
-import typings.three.constantsMod.TextureFilter
-import typings.three.constantsMod.Wrapping
+import typings.three.srcConstantsMod.Mapping
+import typings.three.srcConstantsMod.PixelFormat
+import typings.three.srcConstantsMod.TextureDataType
+import typings.three.srcConstantsMod.TextureFilter
+import typings.three.srcConstantsMod.Wrapping
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.VideoTexture")
 @js.native
-class VideoTexture protected ()
+open class VideoTexture protected ()
   extends typings.three.mod.VideoTexture {
   /**
-  	 * @param video
-  	 * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
-  	 * @param [wrapS=THREE.ClampToEdgeWrapping]
-  	 * @param [wrapT=THREE.ClampToEdgeWrapping]
-  	 * @param [magFilter=THREE.LinearFilter]
-  	 * @param [minFilter=THREE.LinearFilter]
-  	 * @param [format=THREE.RGBFormat]
-  	 * @param [type=THREE.UnsignedByteType]
-  	 * @param [anisotropy=1]
-  	 */
+    * @param video
+    * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+    * @param [wrapS=THREE.ClampToEdgeWrapping]
+    * @param [wrapT=THREE.ClampToEdgeWrapping]
+    * @param [magFilter=THREE.LinearFilter]
+    * @param [minFilter=THREE.LinearFilter]
+    * @param [format=THREE.RGBAFormat]
+    * @param [type=THREE.UnsignedByteType]
+    * @param [anisotropy=1]
+    */
   def this(
     video: HTMLVideoElement,
     mapping: js.UndefOr[Mapping],

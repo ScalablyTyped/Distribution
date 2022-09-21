@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   // register is typeof require('prom-client').Registry which has its own .d.ts
-  inline def apply(register: js.Any): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(register.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
-  inline def apply(register: js.Any, config: Config): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].apply(register.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def apply(register: Any): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(register.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def apply(register: Any, config: Config): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].apply(register.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   @JSImport("prometheus-gc-stats", JSImport.Namespace)
   @js.native

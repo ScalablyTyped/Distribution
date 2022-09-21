@@ -25,7 +25,7 @@ object DialogProvider {
     createDialog: String => XDialog,
     createWithModel: XModel => Unit,
     createWithModelAndScripting: (XModel, XInputStream, XNameContainer, XScriptListener) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): DialogProvider = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDialog = js.Any.fromFunction1(createDialog), createWithModel = js.Any.fromFunction1(createWithModel), createWithModelAndScripting = js.Any.fromFunction4(createWithModelAndScripting), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

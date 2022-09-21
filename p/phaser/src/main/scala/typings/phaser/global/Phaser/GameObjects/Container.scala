@@ -1,7 +1,6 @@
 package typings.phaser.global.Phaser.GameObjects
 
 import typings.phaser.Phaser.Scene
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * The position of the Game Object automatically becomes relative to the position of the Container.
   * 
-  * The origin of a Container is 0x0 (in local space) and that cannot be changed. The children you add to the
+  * The transform point of a Container is 0x0 (in local space) and that cannot be changed. The children you add to the
   * Container should be positioned with this value in mind. I.e. you should treat 0x0 as being the center of
   * the Container, and position children positively and negative around it as required.
   * 
@@ -33,6 +32,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Containers can be enabled for input. Because they do not have a texture you need to provide a shape for them
   * to use as their hit area. Container children can also be enabled for input, independent of the Container.
   * 
+  * If input enabling a _child_ you should not set both the `origin` and a **negative** scale factor on the child,
+  * or the input area will become misaligned.
+  * 
   * Containers can be given a physics body for either Arcade Physics, Impact Physics or Matter Physics. However,
   * if Container _children_ are enabled for physics you may get unexpected results, such as offset bodies,
   * if the Container itself, or any of its ancestors, is positioned anywhere other than at 0 x 0. Container children
@@ -47,7 +49,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Phaser.GameObjects.Container")
 @js.native
-class Container protected ()
+open class Container protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.Container {
   /**
@@ -128,7 +130,7 @@ class Container protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the display size of this Game Object.

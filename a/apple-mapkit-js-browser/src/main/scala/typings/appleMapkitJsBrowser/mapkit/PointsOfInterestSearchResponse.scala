@@ -25,6 +25,6 @@ object PointsOfInterestSearchResponse {
     
     inline def setPlaces(value: js.Array[Place]): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
     
-    inline def setPlacesVarargs(value: Place*): Self = StObject.set(x, "places", js.Array(value :_*))
+    inline def setPlacesVarargs(value: Place*): Self = StObject.set(x, "places", js.Array(value*))
   }
 }

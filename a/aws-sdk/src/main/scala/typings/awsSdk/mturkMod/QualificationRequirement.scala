@@ -55,13 +55,13 @@ object QualificationRequirement {
     
     inline def setIntegerValuesUndefined: Self = StObject.set(x, "IntegerValues", js.undefined)
     
-    inline def setIntegerValuesVarargs(value: Integer*): Self = StObject.set(x, "IntegerValues", js.Array(value :_*))
+    inline def setIntegerValuesVarargs(value: Integer*): Self = StObject.set(x, "IntegerValues", js.Array(value*))
     
     inline def setLocaleValues(value: LocaleList): Self = StObject.set(x, "LocaleValues", value.asInstanceOf[js.Any])
     
     inline def setLocaleValuesUndefined: Self = StObject.set(x, "LocaleValues", js.undefined)
     
-    inline def setLocaleValuesVarargs(value: Locale*): Self = StObject.set(x, "LocaleValues", js.Array(value :_*))
+    inline def setLocaleValuesVarargs(value: Locale*): Self = StObject.set(x, "LocaleValues", js.Array(value*))
     
     inline def setQualificationTypeId(value: String): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
     

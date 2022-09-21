@@ -20,7 +20,7 @@ trait TenantProjectConfig extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.TenantProjectConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.TenantProjectConfig & TopLevel[Any]
   ] = js.undefined
   
   /** Configuration for the IAM service account on the tenant project. */
@@ -32,7 +32,7 @@ trait TenantProjectConfig extends StObject {
     */
   var services: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** Describes ownership and policies for the new tenant project. Required. */
+  /** Describes ownership and policies for the new tenant project. */
   var tenantProjectPolicy: js.UndefOr[TenantProjectPolicy] = js.undefined
 }
 object TenantProjectConfig {
@@ -55,7 +55,7 @@ object TenantProjectConfig {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.TenantProjectConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.TenantProjectConfig & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -68,7 +68,7 @@ object TenantProjectConfig {
     
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value*))
     
     inline def setTenantProjectPolicy(value: TenantProjectPolicy): Self = StObject.set(x, "tenantProjectPolicy", value.asInstanceOf[js.Any])
     

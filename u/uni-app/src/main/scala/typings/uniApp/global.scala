@@ -10,21 +10,21 @@ object global {
   
   @JSGlobal("Uni")
   @js.native
-  class Uni_ ()
+  open class Uni_ ()
     extends StObject
        with Uni
   
   @JSGlobal("createApp")
   @js.native
-  val createApp: js.Any = js.native
+  val createApp: Any = js.native
   
   @JSGlobal("createComponent")
   @js.native
-  val createComponent: js.Any = js.native
+  val createComponent: Any = js.native
   
   @JSGlobal("createPage")
   @js.native
-  val createPage: js.Any = js.native
+  val createPage: Any = js.native
   
   @JSGlobal("getApp")
   @js.native

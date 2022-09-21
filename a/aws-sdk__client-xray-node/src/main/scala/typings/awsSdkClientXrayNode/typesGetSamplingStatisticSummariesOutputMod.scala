@@ -48,7 +48,7 @@ object typesGetSamplingStatisticSummariesOutputMod {
       
       inline def setSamplingStatisticSummariesUndefined: Self = StObject.set(x, "SamplingStatisticSummaries", js.undefined)
       
-      inline def setSamplingStatisticSummariesVarargs(value: UnmarshalledSamplingStatisticSummary*): Self = StObject.set(x, "SamplingStatisticSummaries", js.Array(value :_*))
+      inline def setSamplingStatisticSummariesVarargs(value: UnmarshalledSamplingStatisticSummary*): Self = StObject.set(x, "SamplingStatisticSummaries", js.Array(value*))
     }
   }
 }

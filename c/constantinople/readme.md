@@ -10,10 +10,10 @@ Determine whether a JavaScript expression evaluates to a constant
 | ------------------ | :-------------: |
 | Full name          | constantinople |
 | Keywords           | constant, ast, tooling |
-| # releases         | 3 |
-| # dependents       | 49 |
-| # downloads        | 61047455 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6402403.333333333 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/ForbesLindesay/constantinople#readme)

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Message defining a field of a BigQuery table.
-  */
 trait SchemaGooglePrivacyDlpV2BigQueryField extends StObject {
   
   /**

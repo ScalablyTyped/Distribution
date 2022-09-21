@@ -1,49 +1,86 @@
 package typings.cesium.anon
 
-import typings.cesium.mod.JulianDate
+import typings.cesium.mod.Resource
+import typings.cesium.mod.Resource.RetryCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Data extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
-  var isStartIncluded: js.UndefOr[Boolean] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
-  var isStopIncluded: js.UndefOr[Boolean] = js.undefined
+  var overrideMimeType: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[JulianDate] = js.undefined
+  var proxy: js.UndefOr[typings.cesium.mod.Proxy] = js.undefined
   
-  var stop: js.UndefOr[JulianDate] = js.undefined
+  var queryParameters: js.UndefOr[Any] = js.undefined
+  
+  var request: js.UndefOr[typings.cesium.mod.Request] = js.undefined
+  
+  var responseType: js.UndefOr[String] = js.undefined
+  
+  var retryAttempts: js.UndefOr[Double] = js.undefined
+  
+  var retryCallback: js.UndefOr[RetryCallback] = js.undefined
+  
+  var templateValues: js.UndefOr[Any] = js.undefined
+  
+  var url: String
 }
 object Data {
   
-  inline def apply(): Data = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(url: String): Data = {
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }
   
   extension [Self <: Data](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setIsStartIncluded(value: Boolean): Self = StObject.set(x, "isStartIncluded", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    inline def setIsStartIncludedUndefined: Self = StObject.set(x, "isStartIncluded", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setIsStopIncluded(value: Boolean): Self = StObject.set(x, "isStopIncluded", value.asInstanceOf[js.Any])
+    inline def setOverrideMimeType(value: String): Self = StObject.set(x, "overrideMimeType", value.asInstanceOf[js.Any])
     
-    inline def setIsStopIncludedUndefined: Self = StObject.set(x, "isStopIncluded", js.undefined)
+    inline def setOverrideMimeTypeUndefined: Self = StObject.set(x, "overrideMimeType", js.undefined)
     
-    inline def setStart(value: JulianDate): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setProxy(value: typings.cesium.mod.Proxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    inline def setStop(value: JulianDate): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setQueryParameters(value: Any): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
-    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+    inline def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
+    
+    inline def setRequest(value: typings.cesium.mod.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    
+    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    
+    inline def setRetryAttempts(value: Double): Self = StObject.set(x, "retryAttempts", value.asInstanceOf[js.Any])
+    
+    inline def setRetryAttemptsUndefined: Self = StObject.set(x, "retryAttempts", js.undefined)
+    
+    inline def setRetryCallback(
+      value: (/* resource */ js.UndefOr[Resource], /* error */ js.UndefOr[js.Error]) => Boolean | js.Promise[Boolean]
+    ): Self = StObject.set(x, "retryCallback", js.Any.fromFunction2(value))
+    
+    inline def setRetryCallbackUndefined: Self = StObject.set(x, "retryCallback", js.undefined)
+    
+    inline def setTemplateValues(value: Any): Self = StObject.set(x, "templateValues", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateValuesUndefined: Self = StObject.set(x, "templateValues", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

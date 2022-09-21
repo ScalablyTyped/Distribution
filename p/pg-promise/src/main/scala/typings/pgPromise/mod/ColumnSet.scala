@@ -10,29 +10,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // API: http://vitaly-t.github.io/pg-promise/helpers.ColumnSet.html
 @JSImport("pg-promise", "ColumnSet")
 @js.native
-class ColumnSet[S] protected () extends StObject {
-  def this(columns: js.Array[String | IColumnConfig[S] | Column[S]]) = this()
+open class ColumnSet[T] protected ()
+  extends StObject
+     with _QueryColumns[T] {
+  def this(columns: js.Array[String | IColumnConfig[T] | Column[T]]) = this()
   def this(columns: js.Object) = this()
-  def this(columns: Column[S]) = this()
-  def this(columns: js.Array[String | IColumnConfig[S] | Column[S]], options: IColumnSetOptions) = this()
+  def this(columns: Column[T]) = this()
+  def this(columns: js.Array[String | IColumnConfig[T] | Column[T]], options: IColumnSetOptions) = this()
   def this(columns: js.Object, options: IColumnSetOptions) = this()
-  def this(columns: Column[S], options: IColumnSetOptions) = this()
+  def this(columns: Column[T], options: IColumnSetOptions) = this()
   
   def assign(): String = js.native
   def assign(source: Prefix): String = js.native
   
   def assignColumns(): String = js.native
-  def assignColumns(options: From[S]): String = js.native
+  def assignColumns(options: From[T]): String = js.native
   
-  val columns: js.Array[Column[S]] = js.native
+  val columns: js.Array[Column[T]] = js.native
   
-  def extend(columns: js.Array[String | IColumnConfig[js.Any] | Column[js.Any]]): ColumnSet[js.Any] = js.native
-  def extend(columns: Column[js.Any]): ColumnSet[js.Any] = js.native
-  def extend(columns: ColumnSet[js.Any]): ColumnSet[js.Any] = js.native
+  def extend[S](columns: js.Array[String | IColumnConfig[T] | Column[T]]): ColumnSet[S] = js.native
+  def extend[S](columns: Column[T]): ColumnSet[S] = js.native
+  def extend[S](columns: ColumnSet[T]): ColumnSet[S] = js.native
   
-  def merge(columns: js.Array[String | IColumnConfig[js.Any] | Column[js.Any]]): ColumnSet[js.Any] = js.native
-  def merge(columns: Column[js.Any]): ColumnSet[js.Any] = js.native
-  def merge(columns: ColumnSet[js.Any]): ColumnSet[js.Any] = js.native
+  def merge[S](columns: js.Array[String | IColumnConfig[T] | Column[T]]): ColumnSet[S] = js.native
+  def merge[S](columns: Column[T]): ColumnSet[S] = js.native
+  def merge[S](columns: ColumnSet[T]): ColumnSet[S] = js.native
   
   val names: String = js.native
   

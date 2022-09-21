@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents credentials received.
   * @param {object} options - Override the default (1s) timeout period.
   */
-class ECSCredentials ()
+open class ECSCredentials ()
   extends typings.awsSdk.mod.ECSCredentials {
   def this(options: ECSCredentialsOptions) = this()
 }

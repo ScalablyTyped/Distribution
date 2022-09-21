@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native", "SwipeableListView")
 @js.native
-class SwipeableListView protected ()
-  extends Component[SwipeableListViewProps, js.Object, js.Any] {
+open class SwipeableListView protected ()
+  extends Component[SwipeableListViewProps, js.Object, Any] {
   def this(props: SwipeableListViewProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SwipeableListViewProps, context: js.Any) = this()
+  def this(props: SwipeableListViewProps, context: Any) = this()
 }
 /* static members */
 object SwipeableListView {

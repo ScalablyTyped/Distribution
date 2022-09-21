@@ -13,19 +13,19 @@ object datePickerMod {
   
   @JSImport("fundamental-react/lib/DatePicker/DatePicker", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DatePickerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[DatePickerProps, js.Object, Any]
   
-  type DatePicker = Component[DatePickerProps, js.Object, js.Any]
+  type DatePicker = Component[DatePickerProps, js.Object, Any]
   
   trait DatePickerProps
     extends StObject
        with CalendarBaseProps
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
     var buttonLabel: js.UndefOr[String] = js.undefined
     
-    var buttonProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var buttonProps: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var compact: js.UndefOr[Boolean] = js.undefined
     
@@ -33,7 +33,7 @@ object datePickerMod {
     
     var enableRangeSelection: js.UndefOr[Boolean] = js.undefined
     
-    var inputProps: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var inputProps: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var locale: js.UndefOr[String] = js.undefined
     
@@ -54,7 +54,7 @@ object datePickerMod {
       
       inline def setButtonLabelUndefined: Self = StObject.set(x, "buttonLabel", js.undefined)
       
-      inline def setButtonProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
+      inline def setButtonProps(value: StringDictionary[Any]): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       
       inline def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
       
@@ -70,7 +70,7 @@ object datePickerMod {
       
       inline def setEnableRangeSelectionUndefined: Self = StObject.set(x, "enableRangeSelection", js.undefined)
       
-      inline def setInputProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      inline def setInputProps(value: StringDictionary[Any]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
       inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       

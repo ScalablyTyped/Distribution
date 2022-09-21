@@ -10,10 +10,10 @@ A markdown (kramdown compatible) parser and compiler. Built for speed.
 | ------------------ | :-------------: |
 | Full name          | kramed |
 | Keywords           | markdown, markup, html, kramdown, kramed, parser |
-| # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 645750 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 46060.666666666664 |
+| # stars            | 223.0 |
 
 ## Links
 - [Homepage](https://github.com/GitbookIO/kramed)

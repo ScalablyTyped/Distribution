@@ -37,6 +37,8 @@ trait PartialPlotMarkerCauto extends StObject {
   
   var pad: js.UndefOr[PartialPadding] = js.undefined
   
+  var pattern: js.UndefOr[PartialPattern] = js.undefined
+  
   var reversescale: js.UndefOr[Boolean] = js.undefined
   
   var showscale: js.UndefOr[Boolean] = js.undefined
@@ -88,7 +90,7 @@ object PartialPlotMarkerCauto {
       value: (js.UndefOr[
           (js.Array[js.UndefOr[String | Double | Null]]) | typings.plotlyJs.mod.Color | Double | Null | String
         ])*
-    ): Self = StObject.set(x, "color", js.Array(value :_*))
+    ): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setColorbar(value: PartialColorBarBgcolor): Self = StObject.set(x, "colorbar", value.asInstanceOf[js.Any])
     
@@ -98,13 +100,13 @@ object PartialPlotMarkerCauto {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: typings.plotlyJs.mod.Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: typings.plotlyJs.mod.Color*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setColorscale(value: ColorScale): Self = StObject.set(x, "colorscale", value.asInstanceOf[js.Any])
     
     inline def setColorscaleUndefined: Self = StObject.set(x, "colorscale", js.undefined)
     
-    inline def setColorscaleVarargs(value: (String | (js.Tuple2[Double, String]))*): Self = StObject.set(x, "colorscale", js.Array(value :_*))
+    inline def setColorscaleVarargs(value: (String | (js.Tuple2[Double, String]))*): Self = StObject.set(x, "colorscale", js.Array(value*))
     
     inline def setGradient(value: Colorsrc): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
@@ -122,11 +124,15 @@ object PartialPlotMarkerCauto {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setOpacityVarargs(value: Double*): Self = StObject.set(x, "opacity", js.Array(value :_*))
+    inline def setOpacityVarargs(value: Double*): Self = StObject.set(x, "opacity", js.Array(value*))
     
     inline def setPad(value: PartialPadding): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
+    
+    inline def setPattern(value: PartialPattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
     inline def setReversescale(value: Boolean): Self = StObject.set(x, "reversescale", value.asInstanceOf[js.Any])
     
@@ -140,7 +146,7 @@ object PartialPlotMarkerCauto {
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value*))
     
     inline def setSizemax(value: Double): Self = StObject.set(x, "sizemax", value.asInstanceOf[js.Any])
     
@@ -162,7 +168,7 @@ object PartialPlotMarkerCauto {
     
     inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    inline def setSymbolVarargs(value: (String | Double)*): Self = StObject.set(x, "symbol", js.Array(value :_*))
+    inline def setSymbolVarargs(value: (String | Double)*): Self = StObject.set(x, "symbol", js.Array(value*))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

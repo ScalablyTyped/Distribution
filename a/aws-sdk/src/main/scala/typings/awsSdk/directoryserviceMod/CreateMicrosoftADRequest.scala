@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateMicrosoftADRequest extends StObject {
   
   /**
-    * A description for the directory. This label will appear on the AWS console Directory Details page after the directory is created.
+    * A description for the directory. This label will appear on the Amazon Web Services console Directory Details page after the directory is created.
     */
   var Description: js.UndefOr[typings.awsSdk.directoryserviceMod.Description] = js.undefined
   
   /**
-    * AWS Managed Microsoft AD is available in two editions: Standard and Enterprise. Enterprise is the default.
+    * Managed Microsoft AD is available in two editions: Standard and Enterprise. Enterprise is the default.
     */
   var Edition: js.UndefOr[DirectoryEdition] = js.undefined
   
   /**
-    * The fully qualified domain name for the AWS Managed Microsoft AD directory, such as corp.example.com. This name will resolve inside your VPC only. It does not need to be publicly resolvable.
+    * The fully qualified domain name for the Managed Microsoft AD directory, such as corp.example.com. This name will resolve inside your VPC only. It does not need to be publicly resolvable.
     */
   var Name: DirectoryName
   
@@ -32,7 +32,7 @@ trait CreateMicrosoftADRequest extends StObject {
   var ShortName: js.UndefOr[DirectoryShortName] = js.undefined
   
   /**
-    * The tags to be assigned to the AWS Managed Microsoft AD directory.
+    * The tags to be assigned to the Managed Microsoft AD directory.
     */
   var Tags: js.UndefOr[typings.awsSdk.directoryserviceMod.Tags] = js.undefined
   
@@ -70,7 +70,7 @@ object CreateMicrosoftADRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVpcSettings(value: DirectoryVpcSettings): Self = StObject.set(x, "VpcSettings", value.asInstanceOf[js.Any])
   }

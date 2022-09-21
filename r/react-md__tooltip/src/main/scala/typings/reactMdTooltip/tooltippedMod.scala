@@ -13,9 +13,10 @@ import typings.react.mod.ReactNode
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
 import typings.reactMdPortal.getContainerMod.PortalInto
-import typings.reactMdTooltip.useHandlersMod.MergableHandlers
-import typings.reactMdUtils.typesMod.SimplePosition
-import typings.reactMdUtils.useModeDetectionMod.UserInteractionMode
+import typings.reactMdTransition.typesMod.TransitionEnterHandler
+import typings.reactMdTransition.typesMod.TransitionExitHandler
+import typings.reactMdUtils.positioningTypesMod.SimplePosition
+import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,104 +24,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tooltippedMod {
   
-  object Tooltipped {
-    
-    inline def apply(
-      hasIdChildrenTooltipChildrenDenseVhMarginVwMarginHoverDelayFocusDelayTouchTimeoutSpacingDenseSpacingPropPositionPositionThresholdPortalPortalIntoPortalIntoIdOnMouseEnterOnMouseLeaveOnTouchStartOnTouchMoveOnContextMenuOnFocusOnKeyDownOnShowOnHideDisableHoverModeDescribedByDefaultPositionDisableSwappingMountOnEnterUnmountOnExitDisableAutoSpacingProps: TooltippedProps
-    ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasIdChildrenTooltipChildrenDenseVhMarginVwMarginHoverDelayFocusDelayTouchTimeoutSpacingDenseSpacingPropPositionPositionThresholdPortalPortalIntoPortalIntoIdOnMouseEnterOnMouseLeaveOnTouchStartOnTouchMoveOnContextMenuOnFocusOnKeyDownOnShowOnHideDisableHoverModeDescribedByDefaultPositionDisableSwappingMountOnEnterUnmountOnExitDisableAutoSpacingProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-    
-    @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    object propTypes {
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.defaultPosition")
-      @js.native
-      def defaultPosition: js.Any = js.native
-      inline def defaultPosition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultPosition")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.dense")
-      @js.native
-      def dense: js.Any = js.native
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.denseSpacing")
-      @js.native
-      def denseSpacing: js.Any = js.native
-      inline def denseSpacing_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("denseSpacing")(x.asInstanceOf[js.Any])
-      
-      inline def dense_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dense")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.disableAutoSpacing")
-      @js.native
-      def disableAutoSpacing: js.Any = js.native
-      inline def disableAutoSpacing_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableAutoSpacing")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.focusDelay")
-      @js.native
-      def focusDelay: js.Any = js.native
-      inline def focusDelay_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focusDelay")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.hoverDelay")
-      @js.native
-      def hoverDelay: js.Any = js.native
-      inline def hoverDelay_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hoverDelay")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.lineWrap")
-      @js.native
-      def lineWrap: js.Any = js.native
-      inline def lineWrap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineWrap")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.mountOnEnter")
-      @js.native
-      def mountOnEnter: js.Any = js.native
-      inline def mountOnEnter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mountOnEnter")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.portal")
-      @js.native
-      def portal: js.Any = js.native
-      inline def portal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portal")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.positionThreshold")
-      @js.native
-      def positionThreshold: js.Any = js.native
-      inline def positionThreshold_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("positionThreshold")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.spacing")
-      @js.native
-      def spacing: js.Any = js.native
-      inline def spacing_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.tooltipId")
-      @js.native
-      def tooltipId: js.Any = js.native
-      inline def tooltipId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tooltipId")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.touchTimeout")
-      @js.native
-      def touchTimeout: js.Any = js.native
-      inline def touchTimeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("touchTimeout")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.unmountOnExit")
-      @js.native
-      def unmountOnExit: js.Any = js.native
-      inline def unmountOnExit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unmountOnExit")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.vhMargin")
-      @js.native
-      def vhMargin: js.Any = js.native
-      inline def vhMargin_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vhMargin")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/tooltip/types/Tooltipped", "Tooltipped.propTypes.vwMargin")
-      @js.native
-      def vwMargin: js.Any = js.native
-      inline def vwMargin_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vwMargin")(x.asInstanceOf[js.Any])
-    }
-  }
+  @JSImport("@react-md/tooltip/types/Tooltipped", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def Tooltipped(
+    hasIdStyleChildrenTooltipChildrenDenseVhMarginVwMarginSpacingDenseSpacingPropPositionThresholdOnClickOnMouseEnterOnMouseLeaveOnTouchStartOnContextMenuOnBlurOnFocusOnKeyDownDescribedByDefaultPositionTemporaryDisableSwappingDisableHoverModeDisableAutoSpacingProps: TooltippedProps
+  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Tooltipped")(hasIdStyleChildrenTooltipChildrenDenseVhMarginVwMarginSpacingDenseSpacingPropPositionThresholdOnClickOnMouseEnterOnMouseLeaveOnTouchStartOnContextMenuOnBlurOnFocusOnKeyDownDescribedByDefaultPositionTemporaryDisableSwappingDisableHoverModeDisableAutoSpacingProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   type ChildElement = ReactElement
   
@@ -133,6 +43,8 @@ object tooltippedMod {
     
     var onBlur: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
     
+    var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
+    
     var onContextMenu: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
@@ -142,8 +54,6 @@ object tooltippedMod {
     var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
     
     var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
-    
-    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLElement]] = js.undefined
     
     var onTouchStart: js.UndefOr[TouchEventHandler[HTMLElement]] = js.undefined
   }
@@ -164,15 +74,19 @@ object tooltippedMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      
+      inline def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       inline def setOnContextMenu(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
       inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -188,10 +102,6 @@ object tooltippedMod {
       
       inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      inline def setOnTouchMove(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
-      
-      inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
-      
       inline def setOnTouchStart(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
       inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
@@ -201,9 +111,8 @@ object tooltippedMod {
   type ChildrenRenderer = js.Function1[/* props */ TooltippedProvidedProps, ReactElement]
   
   /* Inlined parent @react-md/portal.@react-md/portal.RenderConditionalPortalProps */
-  /* Inlined parent std.Omit<@react-md/tooltip.@react-md/tooltip/types/useTooltipState.TooltipStateOptions, 'defaultPosition'> */
-  /* Inlined parent std.Partial<std.Pick<@react-md/tooltip.@react-md/tooltip/types/useTooltipState.TooltipStateOptions, 'defaultPosition'>> */
-  /* Inlined parent std.Pick<@react-md/tooltip.@react-md/tooltip/types/Tooltip.TooltipProps, 'dense' | 'lineWrap' | 'mountOnEnter' | 'unmountOnExit'> */
+  /* Inlined parent @react-md/tooltip.@react-md/tooltip/types/useTooltip.BaseTooltipHookOptions<std.HTMLElement> */
+  /* Inlined parent std.Pick<@react-md/tooltip.@react-md/tooltip/types/Tooltip.TooltipProps, 'dense' | 'lineWrap' | 'temporary'> */
   trait TooltippedProps extends StObject {
     
     /**
@@ -237,8 +146,23 @@ object tooltippedMod {
       */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * An optional position to use before the positioning calculation has
+      * occurred. This is also used to determine if the position should be
+      * horizontal vs vertical.
+      *
+      * Vertical - `"below"` or `"above"`
+      * Horizontal - `"left"` or `"right"`
+      *
+      * @defaultValue `"below"`
+      */
     var defaultPosition: js.UndefOr[SimplePosition] = js.undefined
     
+    /**
+      * Boolean if the tooltip is using the dense spec. This will reduce the
+      * padding, margin and font size for the tooltip and is usually used for
+      * desktop displays.
+      */
     var dense: js.UndefOr[Boolean] = js.undefined
     
     /**
@@ -249,7 +173,7 @@ object tooltippedMod {
     
     /**
       * Since `react-md` provides mixins to automatically apply a dense spec
-      * through mixins via mexia queries, the dense spec might be applied in css
+      * through mixins via media queries, the dense spec might be applied in css
       * instead of in JS. This component will actually check the current spacing
       * amount that has been applied when the tooltip becomes visible.
       *
@@ -257,13 +181,18 @@ object tooltippedMod {
       * use the provided `spacing` or `denseSpacing` props based on the `dense`
       * prop.
       *
-      * Note: This will be defaulted to `true` when the `process.env.NODE_ENV ===
-      * 'test'` since test environments normally don't have a default
-      * `window.getComgetComputedStyle` value that is not `NaN` which will display
-      * errors in your tests.
+      * Note: This will be defaulted to `true` when the
+      * `process.env.NODE_ENV === 'test'` since test environments normally don't
+      * have a default `window.getComputedStyle` value that is not `NaN`
+      * which will display errors in your tests.
       */
     var disableAutoSpacing: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Boolean if the hover mode functionality should be disabled for this
+      * instance instead of inheriting the value from the
+      * {@link HoverModeProvider}.
+      */
     var disableHoverMode: js.UndefOr[Boolean] = js.undefined
     
     /**
@@ -273,9 +202,72 @@ object tooltippedMod {
       */
     var disableSwapping: js.UndefOr[Boolean] = js.undefined
     
-    var focusDelay: js.UndefOr[Double] = js.undefined
+    /**
+      * Boolean if the event handlers should no longer attempt to show a tooltip. This
+      * should be set to `true` when your component might not have a tooltip associated
+      * with it.
+      *
+      * @example
+      * Real World Example
+      * ```tsx
+      * import type { ReactElement, ReactNode } from "react";
+      * import { Button, ButtonProps } from "@react-md/button";
+      * import { Tooltip, useTooltip } from "@react-md/tooltip":
+      *
+      * export interface TooltippedButtonProps extends ButtonProps {
+      *   id: string;
+      *   tooltip?: ReactNode;
+      * }
+      *
+      * export function TooltippedButton({
+      *   id,
+      *   tooltip,
+      *   children,
+      *   onClick,
+      *   onBlur,
+      *   onFocus,
+      *   onKeyDown,
+      *   onMouseEnter,
+      *   onMouseLeave,
+      *   onTouchStart,
+      *   onContextMenu,
+      *   ...props
+      * }: TooltippedButtonProps): ReactElement {
+      *   const { elementProps, tooltipProps } = useTooltip({
+      *     disabled: !tooltip,
+      *     baseId: id,
+      *     onClick,
+      *     onBlur,
+      *     onFocus,
+      *     onKeyDown,
+      *     onMouseEnter,
+      *     onMouseLeave,
+      *     onTouchStart,
+      *     onContextMenu,
+      *   });
+      *
+      *   return (
+      *     <>
+      *       <Button {...props} {...elementProps}>
+      *         {children}
+      *       </Button>
+      *       <Tooltip {...tooltipProps}>{tooltip}</Tooltip>
+      *     </>
+      *   );
+      * }
+      * ```
+      *
+      * @defaultValue `false`
+      * @remarks \@since 5.1.0
+      */
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var hoverDelay: js.UndefOr[Double] = js.undefined
+    /**
+      * The amount of time to wait (in ms) before showing the tooltip after a
+      * keyboard user has triggered a `focus` event. You _probably_ won't ever need
+      * to change this value.
+      */
+    var focusTime: js.UndefOr[Double] = js.undefined
     
     /**
       * The id for the element that has a tooltip. This is always required since it
@@ -287,25 +279,67 @@ object tooltippedMod {
     
     var lineWrap: js.UndefOr[Boolean] = js.undefined
     
-    var mountOnEnter: js.UndefOr[js.Any] = js.undefined
-    
     var onBlur: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
+    
+    var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
     
     var onContextMenu: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
+    /**
+      * This function will be called once the {@link TransitionStage} has been set
+      * to `"enter"`.
+      *
+      * @see {@link TransitionEnterHandler}
+      */
+    var onEnter: js.UndefOr[TransitionEnterHandler] = js.undefined
     
-    var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
+    /**
+      * This function will be called once the {@link TransitionStage} has been set
+      * to `"entering"`.
+      *
+      * @see {@link TransitionEnterHandler}
+      */
+    var onEntered: js.UndefOr[TransitionEnterHandler] = js.undefined
+    
+    /**
+      * This function will be called once the {@link TransitionStage} has been set
+      * to `"enter"`.
+      *
+      * @see {@link TransitionEnterHandler}
+      */
+    var onEntering: js.UndefOr[TransitionEnterHandler] = js.undefined
+    
+    /**
+      * This function will be called once the {@link TransitionStage} has been set
+      * to `"entered"`.
+      *
+      * @see {@link TransitionEnterHandler}
+      */
+    var onExit: js.UndefOr[TransitionExitHandler] = js.undefined
+    
+    /**
+      * This function will be called once the {@link TransitionStage} has been set
+      * to `"exited"`.
+      *
+      * @see {@link TransitionExitHandler}
+      */
+    var onExited: js.UndefOr[TransitionExitHandler] = js.undefined
+    
+    /**
+      * This function will be called once the {@link TransitionStage} has been set
+      * to `"exiting"`.
+      *
+      * @see {@link TransitionExitHandler}
+      */
+    var onExiting: js.UndefOr[TransitionExitHandler] = js.undefined
+    
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
     
     var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.undefined
     
     var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
     
     var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
-    
-    var onShow: js.UndefOr[js.Function1[/* mode */ UserInteractionMode, Unit]] = js.undefined
-    
-    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLElement]] = js.undefined
     
     var onTouchStart: js.UndefOr[TouchEventHandler[HTMLElement]] = js.undefined
     
@@ -315,18 +349,20 @@ object tooltippedMod {
     var portal: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * @see {@link Portal#into}
+      * @see {@link PortalProps.into}
       */
     var portalInto: js.UndefOr[PortalInto] = js.undefined
     
     /**
-      * @see {@link Portal#intoId}
+      * @see {@link PortalProps.intoId}
       */
     var portalIntoId: js.UndefOr[String] = js.undefined
     
+    /**
+      * An optional controlled position to use that will disable the functionality
+      * to determine the "best" position to render the tooltip within the viewport.
+      */
     var position: js.UndefOr[SimplePosition] = js.undefined
-    
-    var positionThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * The amount of spacing to use for a non-dense tooltip. This is the distance
@@ -339,6 +375,17 @@ object tooltippedMod {
       */
     var style: js.UndefOr[CSSProperties] = js.undefined
     
+    var temporary: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * This value should be between 0 and 1 and will be multiplied by either the
+      * viewport height or viewport width to determine the best position to render
+      * the tooltip based on available space within the viewport.
+      *
+      * You _probably_ won't ever really need to update this value.
+      */
+    var threshold: js.UndefOr[Double] = js.undefined
+    
     /**
       * The tooltip to display. When this is false-ish, the children renderer will
       * always return `null` for the `tooltip` prop.
@@ -346,26 +393,26 @@ object tooltippedMod {
     var tooltip: js.UndefOr[ReactNode] = js.undefined
     
     /**
-      * An optional id for the tooltip. When this is omitted, it will be set as
-      * `${id}-tooltip`.
+      * The amount of time to wait (in ms) before showing the tooltip after
+      * triggering a `touchstart` event. You _probably_ won't ever need to change
+      * this value.
+      *
+      * The default time is about the same it takes to display the context menu
+      * with a "long touch" and cancel displaying the context menu.
       */
-    var tooltipId: js.UndefOr[String] = js.undefined
-    
-    var touchTimeout: js.UndefOr[Double] = js.undefined
-    
-    var unmountOnExit: js.UndefOr[js.Any] = js.undefined
+    var touchTime: js.UndefOr[Double] = js.undefined
     
     /**
-      * This is the viewheight margin to use in the positioning calculation. This
-      * is just used so that the tooltip can be placed with some spacing between
-      * the top and abottom edges of the viewport if desired.
+      * This is the viewport height margin to use in the positioning calculation.
+      * This is just used so that the tooltip can be placed with some spacing
+      * between the top and bottom edges of the viewport if desired.
       */
     var vhMargin: js.UndefOr[Double] = js.undefined
     
     /**
-      * This is the viewwidth margin to use in the positioning calculation. This is
-      * just used so that the tooltip can be placed with some spacing between the
-      * left and right edges of the viewport if desired.
+      * This is the viewport width margin to use in the positioning calculation.
+      * This is just used so that the tooltip can be placed with some spacing
+      * between the left and right edges of the viewport if desired.
       */
     var vwMargin: js.UndefOr[Double] = js.undefined
   }
@@ -414,13 +461,13 @@ object tooltippedMod {
       
       inline def setDisableSwappingUndefined: Self = StObject.set(x, "disableSwapping", js.undefined)
       
-      inline def setFocusDelay(value: Double): Self = StObject.set(x, "focusDelay", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      inline def setFocusDelayUndefined: Self = StObject.set(x, "focusDelay", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setHoverDelay(value: Double): Self = StObject.set(x, "hoverDelay", value.asInstanceOf[js.Any])
+      inline def setFocusTime(value: Double): Self = StObject.set(x, "focusTime", value.asInstanceOf[js.Any])
       
-      inline def setHoverDelayUndefined: Self = StObject.set(x, "hoverDelay", js.undefined)
+      inline def setFocusTimeUndefined: Self = StObject.set(x, "focusTime", js.undefined)
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -428,25 +475,45 @@ object tooltippedMod {
       
       inline def setLineWrapUndefined: Self = StObject.set(x, "lineWrap", js.undefined)
       
-      inline def setMountOnEnter(value: js.Any): Self = StObject.set(x, "mountOnEnter", value.asInstanceOf[js.Any])
-      
-      inline def setMountOnEnterUndefined: Self = StObject.set(x, "mountOnEnter", js.undefined)
-      
-      inline def setOnBlur(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      
+      inline def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       inline def setOnContextMenu(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
       
       inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnEnter(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+      
+      inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+      
+      inline def setOnEntered(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEntered", js.Any.fromFunction1(value))
+      
+      inline def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
+      
+      inline def setOnEntering(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEntering", js.Any.fromFunction1(value))
+      
+      inline def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
+      
+      inline def setOnExit(value: () => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction0(value))
+      
+      inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
+      
+      inline def setOnExited(value: () => Unit): Self = StObject.set(x, "onExited", js.Any.fromFunction0(value))
+      
+      inline def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
+      
+      inline def setOnExiting(value: () => Unit): Self = StObject.set(x, "onExiting", js.Any.fromFunction0(value))
+      
+      inline def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
+      
+      inline def setOnFocus(value: FocusEvent[HTMLElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
-      
-      inline def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
-      
-      inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
       inline def setOnKeyDown(value: KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
@@ -459,14 +526,6 @@ object tooltippedMod {
       inline def setOnMouseLeave(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
       inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
-      
-      inline def setOnShow(value: /* mode */ UserInteractionMode => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
-      
-      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
-      
-      inline def setOnTouchMove(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
-      
-      inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
       
       inline def setOnTouchStart(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
@@ -490,10 +549,6 @@ object tooltippedMod {
       
       inline def setPosition(value: SimplePosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      inline def setPositionThreshold(value: Double): Self = StObject.set(x, "positionThreshold", value.asInstanceOf[js.Any])
-      
-      inline def setPositionThresholdUndefined: Self = StObject.set(x, "positionThreshold", js.undefined)
-      
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
       inline def setSpacing(value: Double | String): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
@@ -504,21 +559,21 @@ object tooltippedMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
+      inline def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
+      
+      inline def setTemporaryUndefined: Self = StObject.set(x, "temporary", js.undefined)
+      
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      
       inline def setTooltip(value: ReactNode): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
-      
-      inline def setTooltipId(value: String): Self = StObject.set(x, "tooltipId", value.asInstanceOf[js.Any])
-      
-      inline def setTooltipIdUndefined: Self = StObject.set(x, "tooltipId", js.undefined)
       
       inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      inline def setTouchTimeout(value: Double): Self = StObject.set(x, "touchTimeout", value.asInstanceOf[js.Any])
+      inline def setTouchTime(value: Double): Self = StObject.set(x, "touchTime", value.asInstanceOf[js.Any])
       
-      inline def setTouchTimeoutUndefined: Self = StObject.set(x, "touchTimeout", js.undefined)
-      
-      inline def setUnmountOnExit(value: js.Any): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
-      
-      inline def setUnmountOnExitUndefined: Self = StObject.set(x, "unmountOnExit", js.undefined)
+      inline def setTouchTimeUndefined: Self = StObject.set(x, "touchTime", js.undefined)
       
       inline def setVhMargin(value: Double): Self = StObject.set(x, "vhMargin", value.asInstanceOf[js.Any])
       
@@ -530,13 +585,28 @@ object tooltippedMod {
     }
   }
   
-  trait TooltippedProvidedProps
-    extends StObject
-       with MergableHandlers {
+  /* Inlined parent @react-md/tooltip.@react-md/tooltip/types/useTooltip.TooltippedElementEventHandlers<std.HTMLElement> */
+  trait TooltippedProvidedProps extends StObject {
     
     var `aria-describedby`: js.UndefOr[String] = js.undefined
     
     var id: String
+    
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
+    
+    var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
+    
+    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
+    
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
+    
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.undefined
+    
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
+    
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
+    
+    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLElement]] = js.undefined
     
     var tooltip: ReactNode
   }
@@ -554,6 +624,38 @@ object tooltippedMod {
       inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setOnBlur(value: FocusEvent[HTMLElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      
+      inline def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      
+      inline def setOnContextMenu(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+      
+      inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
+      
+      inline def setOnFocus(value: FocusEvent[HTMLElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      
+      inline def setOnMouseEnter(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      
+      inline def setOnMouseLeave(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      
+      inline def setOnTouchStart(value: TouchEvent[HTMLElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      
+      inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
       
       inline def setTooltip(value: ReactNode): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-diff
 
-Typings are for version 26.6.2
+Typings are for version 29.0.3
 
 ## Library description:
 Display differences clearly so people can review changes confidently.
@@ -10,10 +10,10 @@ Display differences clearly so people can review changes confidently.
 | ------------------ | :-------------: |
 | Full name          | jest-diff |
 | Keywords           | - |
-| # releases         | 41 |
-| # dependents       | 179 |
-| # downloads        | 620392567 |
-| # stars            | 0 |
+| # releases         | 60 |
+| # dependents       | 0.0 |
+| # downloads        | 1.21634889E8 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

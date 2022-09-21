@@ -13,14 +13,14 @@ trait CSSMathSum
 object CSSMathSum {
   
   inline def apply(
-    add: /* repeated */ CSSNumberish => CSSNumericValue,
-    div: /* repeated */ CSSNumberish => CSSNumericValue,
-    equals_ : /* repeated */ CSSNumberish => Boolean,
-    max: /* repeated */ CSSNumberish => CSSNumericValue,
-    min: /* repeated */ CSSNumberish => CSSNumericValue,
-    mul: /* repeated */ CSSNumberish => CSSNumericValue,
+    add: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
+    div: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
+    equals_ : /* repeated */ CSSNumberOrNumeric => Boolean,
+    max: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
+    min: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
+    mul: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
     operator: CSSMathOperator,
-    sub: /* repeated */ CSSNumberish => CSSNumericValue,
+    sub: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
     to: String => CSSUnitValue,
     toSum: /* repeated */ String => CSSMathSum,
     `type`: () => CSSNumericType,

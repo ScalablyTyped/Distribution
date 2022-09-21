@@ -1,101 +1,148 @@
 package typings.zchatBrowser.mod
 
+import typings.std.File
+import typings.zchatBrowser.anon.Cleardeptidonchatended
+import typings.zchatBrowser.anon.Comment
+import typings.zchatBrowser.anon.Count
+import typings.zchatBrowser.anon.PartialVisitorInfo
+import typings.zchatBrowser.anon.Title
+import typings.zchatBrowser.mod.^
+import typings.zchatBrowser.zchatBrowserStrings.account_status
+import typings.zchatBrowser.zchatBrowserStrings.agent_update
+import typings.zchatBrowser.zchatBrowserStrings.away
+import typings.zchatBrowser.zchatBrowserStrings.bad
+import typings.zchatBrowser.zchatBrowserStrings.chat
+import typings.zchatBrowser.zchatBrowserStrings.closed
+import typings.zchatBrowser.zchatBrowserStrings.connected
+import typings.zchatBrowser.zchatBrowserStrings.connecting
+import typings.zchatBrowser.zchatBrowserStrings.connection_update
+import typings.zchatBrowser.zchatBrowserStrings.department_update
+import typings.zchatBrowser.zchatBrowserStrings.error
+import typings.zchatBrowser.zchatBrowserStrings.good
+import typings.zchatBrowser.zchatBrowserStrings.history
+import typings.zchatBrowser.zchatBrowserStrings.offline
+import typings.zchatBrowser.zchatBrowserStrings.online
+import typings.zchatBrowser.zchatBrowserStrings.visitor_update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def addTags(tags: js.Array[java.lang.String]): scala.Unit = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addTags")(tags.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def addTags(tags: js.Array[java.lang.String], callback: js.Function1[/* err */ typings.std.Error, scala.Unit]): scala.Unit = (typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addTags")(tags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def EMAIL_REGEX: js.RegExp = ^.asInstanceOf[js.Dynamic].selectDynamic("EMAIL_REGEX").asInstanceOf[js.RegExp]
 
-inline def clearVisitorDefaultDepartment(): scala.Unit = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearVisitorDefaultDepartment")().asInstanceOf[scala.Unit]
-inline def clearVisitorDefaultDepartment(callback: js.Function1[/* err */ typings.std.Error, scala.Unit]): scala.Unit = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clearVisitorDefaultDepartment")(callback.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def addTags(tags: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTags")(tags.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def addTags(tags: js.Array[String], callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTags")(tags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def getAccountStatus(): typings.zchatBrowser.zchatBrowserStrings.online | typings.zchatBrowser.zchatBrowserStrings.offline | typings.zchatBrowser.zchatBrowserStrings.away = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getAccountStatus")().asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.online | typings.zchatBrowser.zchatBrowserStrings.offline | typings.zchatBrowser.zchatBrowserStrings.away]
+inline def clearVisitorDefaultDepartment(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearVisitorDefaultDepartment")().asInstanceOf[Unit]
+inline def clearVisitorDefaultDepartment(callback: js.Function1[/* err */ js.Error, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearVisitorDefaultDepartment")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def getAllDepartments(): js.Array[typings.zchatBrowser.mod.Department] = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getAllDepartments")().asInstanceOf[js.Array[typings.zchatBrowser.mod.Department]]
+inline def endChat(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("endChat")().asInstanceOf[Unit]
+inline def endChat(options: Unit, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("endChat")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def endChat(options: Cleardeptidonchatended): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("endChat")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def endChat(options: Cleardeptidonchatended, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("endChat")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def getChatInfo(): typings.zchatBrowser.anon.Comment = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getChatInfo")().asInstanceOf[typings.zchatBrowser.anon.Comment]
+inline def fetchChatHistory(callback: js.Function2[/* err */ js.Error, /* data */ Count, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchChatHistory")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def getChatLog(): js.Array[typings.zchatBrowser.mod.ChatEvent.ChatEventData] = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getChatLog")().asInstanceOf[js.Array[typings.zchatBrowser.mod.ChatEvent.ChatEventData]]
+inline def getAccountStatus(): online | offline | away = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountStatus")().asInstanceOf[online | offline | away]
 
-inline def getConnectionStatus(): typings.zchatBrowser.zchatBrowserStrings.connected | typings.zchatBrowser.zchatBrowserStrings.connecting | typings.zchatBrowser.zchatBrowserStrings.closed = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionStatus")().asInstanceOf[typings.zchatBrowser.zchatBrowserStrings.connected | typings.zchatBrowser.zchatBrowserStrings.connecting | typings.zchatBrowser.zchatBrowserStrings.closed]
+inline def getAllDepartments(): js.Array[Department] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllDepartments")().asInstanceOf[js.Array[Department]]
 
-inline def getDepartment(id: scala.Double): typings.zchatBrowser.mod.Department = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDepartment")(id.asInstanceOf[js.Any]).asInstanceOf[typings.zchatBrowser.mod.Department]
+inline def getChatInfo(): Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("getChatInfo")().asInstanceOf[Comment]
 
-inline def getQueuePosition(): scala.Double = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getQueuePosition")().asInstanceOf[scala.Double]
+inline def getChatLog(): js.Array[ChatEventData] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChatLog")().asInstanceOf[js.Array[ChatEventData]]
 
-inline def getVisitorDefaultDepartment(): typings.zchatBrowser.mod.Department = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getVisitorDefaultDepartment")().asInstanceOf[typings.zchatBrowser.mod.Department]
-inline def getVisitorDefaultDepartment(id: scala.Double): typings.zchatBrowser.mod.Department = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getVisitorDefaultDepartment")(id.asInstanceOf[js.Any]).asInstanceOf[typings.zchatBrowser.mod.Department]
+inline def getConnectionStatus(): connected | connecting | closed = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionStatus")().asInstanceOf[connected | connecting | closed]
 
-inline def getVisitorInfo(): typings.zchatBrowser.mod.VisitorInfo = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getVisitorInfo")().asInstanceOf[typings.zchatBrowser.mod.VisitorInfo]
+inline def getDepartment(id: Double): Department = ^.asInstanceOf[js.Dynamic].applyDynamic("getDepartment")(id.asInstanceOf[js.Any]).asInstanceOf[Department]
 
-inline def init(initProps: typings.zchatBrowser.mod.InitProps): scala.Unit = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("init")(initProps.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def getOperatingHours(): js.UndefOr[OperatingHours] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOperatingHours")().asInstanceOf[js.UndefOr[OperatingHours]]
 
-inline def isChatting(): scala.Boolean = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isChatting")().asInstanceOf[scala.Boolean]
+inline def getQueuePosition(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueuePosition")().asInstanceOf[Double]
 
-inline def on(
-  event_name: typings.zchatBrowser.mod.EventName,
-  handler: js.Function1[/* event_data */ js.UndefOr[typings.zchatBrowser.mod.EventData], scala.Unit]
-): scala.Unit = (typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("on")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def getServingAgentsInfo(): js.Array[AgentInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServingAgentsInfo")().asInstanceOf[js.Array[AgentInfo]]
 
-inline def removeTags(tags: js.Array[java.lang.String]): scala.Unit = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeTags")(tags.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def removeTags(tags: js.Array[java.lang.String], callback: js.Function1[/* err */ typings.std.Error, scala.Unit]): scala.Unit = (typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("removeTags")(tags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def getVisitorDefaultDepartment(): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisitorDefaultDepartment")().asInstanceOf[js.UndefOr[Double]]
 
-inline def sendChatComment(comment: java.lang.String): scala.Unit = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendChatComment")(comment.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def sendChatComment(comment: java.lang.String, callback: js.Function1[/* err */ typings.std.Error, scala.Unit]): scala.Unit = (typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendChatComment")(comment.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def getVisitorInfo(): VisitorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisitorInfo")().asInstanceOf[VisitorInfo]
 
-inline def sendChatMsg(msg: java.lang.String): scala.Unit = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendChatMsg")(msg.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def sendChatMsg(msg: java.lang.String, callback: js.Function1[/* err */ typings.std.Error, scala.Unit]): scala.Unit = (typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendChatMsg")(msg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def init(options: InitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def sendChatRating(): scala.Unit = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendChatRating")().asInstanceOf[scala.Unit]
-inline def sendChatRating(rating: scala.Unit, callback: js.Function1[/* err */ typings.std.Error, scala.Unit]): scala.Unit = (typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendChatRating")(rating.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def isChatting(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isChatting")().asInstanceOf[Boolean]
 
-inline def sendChatRating_bad(rating: typings.zchatBrowser.zchatBrowserStrings.bad): scala.Unit = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendChatRating")(rating.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def sendChatRating_bad(
-  rating: typings.zchatBrowser.zchatBrowserStrings.bad,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendChatRating")(rating.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def logout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")().asInstanceOf[Unit]
 
-inline def sendChatRating_good(rating: typings.zchatBrowser.zchatBrowserStrings.good): scala.Unit = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendChatRating")(rating.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def sendChatRating_good(
-  rating: typings.zchatBrowser.zchatBrowserStrings.good,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendChatRating")(rating.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def markAsRead(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markAsRead")().asInstanceOf[Unit]
 
-inline def sendFile(file: typings.std.File): scala.Unit = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendFile")(file.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def sendFile(
-  file: typings.std.File,
-  callback: js.Function2[
-  /* err */ typings.zchatBrowser.mod.SendFileErrorMessage, 
-  /* data */ typings.zchatBrowser.anon.Mimetype, 
-  scala.Unit
-]
-): scala.Unit = (typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def on_accountstatus(event_name: account_status, handler: js.Function1[/* event_data */ AccountsStatusEventData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def sendOfflineMsg(
-  options: typings.zchatBrowser.anon.Department,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendOfflineMsg")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def on_agentupdate(event_name: agent_update, handler: js.Function1[/* event_data */ AgentInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def sendTyping(is_typing: scala.Boolean): scala.Unit = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendTyping")(is_typing.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def on_chat(event_name: chat, handler: js.Function1[/* event_data */ ChatEventData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def sendVisitorPath(options: typings.zchatBrowser.anon.Title): scala.Unit = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendVisitorPath")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def sendVisitorPath(
-  options: typings.zchatBrowser.anon.Title,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("sendVisitorPath")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def on_connectionupdate(
+  event_name: connection_update,
+  handler: js.Function1[/* event_data */ ConnectionUpdateEventData, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def setVisitorDefaultDepartment(id: scala.Double): scala.Unit = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setVisitorDefaultDepartment")(id.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def setVisitorDefaultDepartment(id: scala.Double, callback: js.Function1[/* err */ typings.std.Error, scala.Unit]): scala.Unit = (typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setVisitorDefaultDepartment")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def on_departmentupdate(event_name: department_update, handler: js.Function1[/* event_data */ Department, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def setVisitorInfo(options: typings.zchatBrowser.anon.PartialVisitorInfo): scala.Unit = typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setVisitorInfo")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def setVisitorInfo(
-  options: typings.zchatBrowser.anon.PartialVisitorInfo,
-  callback: js.Function1[/* err */ typings.std.Error, scala.Unit]
-): scala.Unit = (typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setVisitorInfo")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def on_error(event_name: error, handler: js.Function1[/* event_data */ ErrorEventData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def un(
-  event_name: typings.zchatBrowser.mod.EventName,
-  handler: js.Function1[/* event_data */ js.UndefOr[typings.zchatBrowser.mod.EventData], scala.Unit]
-): scala.Unit = (typings.zchatBrowser.mod.^.asInstanceOf[js.Dynamic].applyDynamic("un")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def on_history(event_name: history, handler: js.Function1[/* event_data */ HistoryEventData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def on_visitorupdate(event_name: visitor_update, handler: js.Function1[/* event_data */ VisitorInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def reconnect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reconnect")().asInstanceOf[Unit]
+
+inline def removeTags(tags: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTags")(tags.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def removeTags(tags: js.Array[String], callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTags")(tags.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def sendChatComment(comment: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendChatComment")(comment.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def sendChatComment(comment: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendChatComment")(comment.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def sendChatMsg(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendChatMsg")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def sendChatMsg(msg: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendChatMsg")(msg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def sendChatRating(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendChatRating")().asInstanceOf[Unit]
+inline def sendChatRating(rating: good | bad): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendChatRating")(rating.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def sendChatRating(rating: good | bad, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendChatRating")(rating.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def sendChatRating(rating: Null, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendChatRating")(rating.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def sendEmailTranscript(email: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendEmailTranscript")(email.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def sendEmailTranscript(email: String, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendEmailTranscript")(email.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def sendFile(file: File): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendFile")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def sendFile(file: File, callback: js.Function2[/* err */ SendFileError, /* data */ SendFileCallbackData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendFile")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def sendOfflineMsg(options: SendOfflineMsgOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendOfflineMsg")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def sendOfflineMsg(options: SendOfflineMsgOptions, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendOfflineMsg")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def sendTyping(is_typing: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendTyping")(is_typing.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def sendVisitorPath(options: Title): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendVisitorPath")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def sendVisitorPath(options: Title, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendVisitorPath")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def setVisitorDefaultDepartment(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVisitorDefaultDepartment")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def setVisitorDefaultDepartment(id: Double, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVisitorDefaultDepartment")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def setVisitorInfo(options: PartialVisitorInfo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVisitorInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def setVisitorInfo(options: PartialVisitorInfo, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVisitorInfo")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def un_accountstatus(event_name: account_status, handler: js.Function1[/* event_data */ AccountsStatusEventData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def un_agentupdate(event_name: agent_update, handler: js.Function1[/* event_data */ AgentInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def un_chat(event_name: chat, handler: js.Function1[/* event_data */ ChatEventData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def un_connectionupdate(
+  event_name: connection_update,
+  handler: js.Function1[/* event_data */ ConnectionUpdateEventData, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def un_departmentupdate(event_name: department_update, handler: js.Function1[/* event_data */ Department, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def un_error(event_name: error, handler: js.Function1[/* event_data */ ErrorEventData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def un_history(event_name: history, handler: js.Function1[/* event_data */ HistoryEventData, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def un_visitorupdate(event_name: visitor_update, handler: js.Function1[/* event_data */ VisitorInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("un")(event_name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]

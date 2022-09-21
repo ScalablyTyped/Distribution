@@ -10,10 +10,10 @@ Recursive directory reader with a delightful API
 | ------------------ | :-------------: |
 | Full name          | rrdir |
 | Keywords           | recursive readdir, readdir, recursive, walk, walkdir, directory, crawl, crawler, scandir |
-| # releases         | 32 |
-| # dependents       | 8 |
-| # downloads        | 40441 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 4845.666666666667 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/silverwind/rrdir#readme)

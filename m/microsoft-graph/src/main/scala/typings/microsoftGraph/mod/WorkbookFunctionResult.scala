@@ -10,7 +10,7 @@ trait WorkbookFunctionResult
   
   var error: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var value: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var value: js.UndefOr[NullableOption[Any]] = js.undefined
 }
 object WorkbookFunctionResult {
   
@@ -27,7 +27,7 @@ object WorkbookFunctionResult {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setValue(value: NullableOption[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NullableOption[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueNull: Self = StObject.set(x, "value", null)
     

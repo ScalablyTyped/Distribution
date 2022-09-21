@@ -23,7 +23,7 @@ trait Upload
   
   def focus(): Unit = js.native
   
-  def getFiles(): js.Any = js.native
+  def getFiles(): Any = js.native
   
   @JSName("options")
   var options_Upload: UploadOptions = js.native

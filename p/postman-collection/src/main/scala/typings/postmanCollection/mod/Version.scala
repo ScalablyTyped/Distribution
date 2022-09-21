@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.postmanCollection.mod.PropertyBaseDefinition because Already inherited
 - typings.postmanCollection.mod.VersionDefinition because var conflicts: description. Inlined build, major, minor, patch, prerelease, raw, version */ @JSImport("postman-collection", "Version")
 @js.native
-class Version () extends PropertyBase[VersionDefinition] {
+open class Version () extends PropertyBase[VersionDefinition] {
   def this(options: String) = this()
   def this(options: VersionDefinition) = this()
   

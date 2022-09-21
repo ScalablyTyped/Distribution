@@ -10,10 +10,10 @@ create the content of an html file with one function call
 | ------------------ | :-------------: |
 | Full name          | create-html |
 | Keywords           | html, static, sites, index.html |
-| # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 71002 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 11737.333333333334 |
+| # stars            | 69.0 |
 
 ## Links
 - [Homepage](https://github.com/sethvincent/create-html#readme)

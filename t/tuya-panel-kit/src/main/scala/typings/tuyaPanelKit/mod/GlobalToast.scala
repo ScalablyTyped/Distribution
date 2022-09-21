@@ -1,14 +1,17 @@
 package typings.tuyaPanelKit.mod
 
+import typings.tuyaPanelKit.anon.OmitGlobalToastPropsshow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tuya-panel-kit", "GlobalToast")
-@js.native
-class GlobalToast () extends StObject {
+object GlobalToast {
   
-  def hide(): Unit = js.native
+  @JSImport("tuya-panel-kit", "GlobalToast")
+  @js.native
+  val ^ : js.Any = js.native
   
-  def show(option: GlobalToastProps): Unit = js.native
+  inline def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
+  
+  inline def show(option: OmitGlobalToastPropsshow): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

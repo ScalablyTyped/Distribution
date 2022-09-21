@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxDesignerControlsFactory")
 @js.native
-class ASPxDesignerControlsFactory ()
+open class ASPxDesignerControlsFactory ()
   extends StObject
      with typings.devexpressWeb.ASPxDesignerControlsFactory {
   
@@ -20,7 +20,7 @@ class ASPxDesignerControlsFactory ()
   override def getControlInfo(controlType: String): typings.devexpressWeb.ASPxDesignerToolboxItem = js.native
   
   /* CompleteClass */
-  override def getControlType(model: js.Any): String = js.native
+  override def getControlType(model: Any): String = js.native
   
   /* CompleteClass */
   override def getPropertyInfo(controlType: String, propertyDisplayName: String): typings.devexpressWeb.ASPxDesignerElementSerializationInfo = js.native

@@ -14,11 +14,11 @@ trait IExplorerExtensibilityGroup extends StObject {
   /**
     * Defines a predicate to test if a given type mut be extended
     */
-  def predicate(entity: js.Any): Boolean
+  def predicate(entity: Any): Boolean
 }
 object IExplorerExtensibilityGroup {
   
-  inline def apply(entries: js.Array[IExplorerExtensibilityOption], predicate: js.Any => Boolean): IExplorerExtensibilityGroup = {
+  inline def apply(entries: js.Array[IExplorerExtensibilityOption], predicate: Any => Boolean): IExplorerExtensibilityGroup = {
     val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], predicate = js.Any.fromFunction1(predicate))
     __obj.asInstanceOf[IExplorerExtensibilityGroup]
   }
@@ -27,8 +27,8 @@ object IExplorerExtensibilityGroup {
     
     inline def setEntries(value: js.Array[IExplorerExtensibilityOption]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    inline def setEntriesVarargs(value: IExplorerExtensibilityOption*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: IExplorerExtensibilityOption*): Self = StObject.set(x, "entries", js.Array(value*))
     
-    inline def setPredicate(value: js.Any => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
+    inline def setPredicate(value: Any => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
   }
 }

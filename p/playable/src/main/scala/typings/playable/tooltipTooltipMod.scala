@@ -12,7 +12,7 @@ object tooltipTooltipMod {
   
   @JSImport("playable/dist/src/modules/ui/core/tooltip/tooltip", JSImport.Default)
   @js.native
-  class default () extends Tooltip {
+  open class default () extends Tooltip {
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -42,18 +42,18 @@ object tooltipTooltipMod {
        with ITooltip {
     
     /* private */ @JSName("_$rootElement")
-    var _$rootElement: js.Any = js.native
+    var _$rootElement: Any = js.native
     
     /* private */ @JSName("_$tooltipInner")
-    var _$tooltipInner: js.Any = js.native
+    var _$tooltipInner: Any = js.native
     
-    /* private */ var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: Any = js.native
     
-    /* private */ var _isHidden: js.Any = js.native
+    /* private */ var _isHidden: Any = js.native
     
-    /* private */ var _showAsElement: js.Any = js.native
+    /* private */ var _showAsElement: Any = js.native
     
-    /* private */ var _showAsText: js.Any = js.native
+    /* private */ var _showAsText: Any = js.native
     
     def clearElement(): Unit = js.native
     
@@ -62,6 +62,6 @@ object tooltipTooltipMod {
     
     def setElement(element: HTMLElement): Unit = js.native
     
-    def setStyle(style: js.Any): Unit = js.native
+    def setStyle(style: Any): Unit = js.native
   }
 }

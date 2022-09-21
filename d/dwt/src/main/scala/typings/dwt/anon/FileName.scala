@@ -16,13 +16,13 @@ trait FileName extends StObject {
     * Custom form fields.
     * Example: {"UploadedBy": "Dynamsoft"}
     */
-  var formFields: js.UndefOr[js.Any] = js.undefined
+  var formFields: js.UndefOr[Any] = js.undefined
   
   /**
     * Custom headers in the form.
     * Example: {md5: ""}
     */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   /**
     * The maximum size of a file to be uploaded (in bytes).
@@ -59,11 +59,11 @@ object FileName {
     
     inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    inline def setFormFields(value: js.Any): Self = StObject.set(x, "formFields", value.asInstanceOf[js.Any])
+    inline def setFormFields(value: Any): Self = StObject.set(x, "formFields", value.asInstanceOf[js.Any])
     
     inline def setFormFieldsUndefined: Self = StObject.set(x, "formFields", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     

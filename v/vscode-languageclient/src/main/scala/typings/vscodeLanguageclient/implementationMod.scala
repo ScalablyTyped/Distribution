@@ -2,13 +2,14 @@ package typings.vscodeLanguageclient
 
 import typings.vscode.mod.Definition
 import typings.vscode.mod.DefinitionLink
+import typings.vscode.mod.Disposable
 import typings.vscode.mod.ImplementationProvider
 import typings.vscode.mod.Position
 import typings.vscode.mod.ProviderResult
 import typings.vscode.mod.TextDocument
 import typings.vscodeJsonrpc.cancellationMod.CancellationToken
-import typings.vscodeLanguageclient.clientMod.BaseLanguageClient
-import typings.vscodeLanguageclient.clientMod.TextDocumentFeature
+import typings.vscodeLanguageclient.featuresMod.FeatureClient
+import typings.vscodeLanguageclient.featuresMod.TextDocumentLanguageFeature
 import typings.vscodeLanguageserverProtocol.protocolImplementationMod.ImplementationOptions
 import typings.vscodeLanguageserverProtocol.protocolImplementationMod.ImplementationRegistrationOptions
 import org.scalablytyped.runtime.StObject
@@ -17,14 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object implementationMod {
   
-  @JSImport("vscode-languageclient/lib/implementation", "ImplementationFeature")
+  @JSImport("vscode-languageclient/lib/common/implementation", "ImplementationFeature")
   @js.native
-  class ImplementationFeature protected () extends TextDocumentFeature[
+  open class ImplementationFeature protected ()
+    extends TextDocumentLanguageFeature[
           Boolean | ImplementationOptions, 
           ImplementationRegistrationOptions, 
-          ImplementationProvider
+          ImplementationProvider, 
+          ImplementationMiddleware, 
+          js.Object
         ] {
-    def this(client: BaseLanguageClient) = this()
+    def this(client: FeatureClient[ImplementationMiddleware, js.Object]) = this()
+    
+    /* protected */ def registerLanguageProvider(options: ImplementationRegistrationOptions): js.Tuple2[Disposable, ImplementationProvider] = js.native
+    
+    /* private */ var registerProvider: Any = js.native
   }
   
   trait ImplementationMiddleware extends StObject {

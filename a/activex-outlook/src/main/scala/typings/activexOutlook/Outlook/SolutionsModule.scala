@@ -19,7 +19,7 @@ trait SolutionsModule extends StObject {
   /* private */ @JSName("Outlook.SolutionsModule_typekey")
   var OutlookDotSolutionsModule_typekey: SolutionsModule
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: Double
   
@@ -36,7 +36,7 @@ object SolutionsModule {
     Name: String,
     NavigationModuleType: OlNavigationModuleType,
     OutlookDotSolutionsModule_typekey: SolutionsModule,
-    Parent: js.Any,
+    Parent: Any,
     Position: Double,
     Session: NameSpace,
     Visible: Boolean
@@ -60,7 +60,7 @@ object SolutionsModule {
     
     inline def setOutlookDotSolutionsModule_typekey(value: SolutionsModule): Self = StObject.set(x, "Outlook.SolutionsModule_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     

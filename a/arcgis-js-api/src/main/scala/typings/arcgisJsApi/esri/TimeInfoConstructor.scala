@@ -17,5 +17,5 @@ trait TimeInfoConstructor
 Instantiable0[TimeInfo]
      with Instantiable1[/* properties */ TimeInfoProperties, TimeInfo] {
   
-  def fromJSON(json: js.Any): TimeInfo = js.native
+  def fromJSON(json: Any): TimeInfo = js.native
 }

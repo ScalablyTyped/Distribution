@@ -3,7 +3,6 @@ package typings.hapi.mod
 import typings.hapi.mod.Lifecycle.FailAction
 import typings.hapi.mod.Lifecycle.Method
 import typings.hapi.mod.Lifecycle.ReturnValue
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ trait RouteOptionsPreObject extends StObject {
     * a lifecycle method.
     */
   def method(request: Request, h: ResponseToolkit): ReturnValue
-  def method(request: Request, h: ResponseToolkit, err: Error): ReturnValue
+  def method(request: Request, h: ResponseToolkit, err: js.Error): ReturnValue
   /**
     * a lifecycle method.
     */
@@ -34,7 +33,7 @@ trait RouteOptionsPreObject extends StObject {
 object RouteOptionsPreObject {
   
   inline def apply(
-    method: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
+    method: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue
   ): RouteOptionsPreObject = {
     val __obj = js.Dynamic.literal(method = js.Any.fromFunction3(method))
     __obj.asInstanceOf[RouteOptionsPreObject]
@@ -49,13 +48,13 @@ object RouteOptionsPreObject {
     inline def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
     
     inline def setFailActionFunction3(
-      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
+      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue
     ): Self = StObject.set(x, "failAction", js.Any.fromFunction3(value))
     
     inline def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
     
     inline def setMethod(
-      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
+      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue
     ): Self = StObject.set(x, "method", js.Any.fromFunction3(value))
   }
 }

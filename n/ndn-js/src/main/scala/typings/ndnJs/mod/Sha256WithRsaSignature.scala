@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ndn-js", "Sha256WithRsaSignature")
 @js.native
-class Sha256WithRsaSignature ()
+open class Sha256WithRsaSignature ()
   extends typings.ndnJs.signatureMod.Sha256WithRsaSignature

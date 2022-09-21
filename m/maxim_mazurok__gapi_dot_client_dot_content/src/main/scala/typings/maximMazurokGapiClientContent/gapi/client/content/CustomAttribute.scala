@@ -28,7 +28,7 @@ object CustomAttribute {
     
     inline def setGroupValuesUndefined: Self = StObject.set(x, "groupValues", js.undefined)
     
-    inline def setGroupValuesVarargs(value: CustomAttribute*): Self = StObject.set(x, "groupValues", js.Array(value :_*))
+    inline def setGroupValuesVarargs(value: CustomAttribute*): Self = StObject.set(x, "groupValues", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

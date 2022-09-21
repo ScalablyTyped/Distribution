@@ -31,7 +31,7 @@ object IntrospectionSchema {
     
     inline def setDirectives(value: js.Array[IntrospectionDirective]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
-    inline def setDirectivesVarargs(value: IntrospectionDirective*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: IntrospectionDirective*): Self = StObject.set(x, "directives", js.Array(value*))
     
     inline def setMutationType(value: IntrospectionNamedTypeRef): Self = StObject.set(x, "mutationType", value.asInstanceOf[js.Any])
     
@@ -45,6 +45,6 @@ object IntrospectionSchema {
     
     inline def setTypes(value: js.Array[IntrospectionType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: IntrospectionType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: IntrospectionType*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

@@ -83,6 +83,8 @@ trait SpreadsheetOptions extends StObject {
   var unhideColumn: js.UndefOr[js.Function1[/* e */ SpreadsheetUnhideColumnEvent, Unit]] = js.undefined
   
   var unhideRow: js.UndefOr[js.Function1[/* e */ SpreadsheetUnhideRowEvent, Unit]] = js.undefined
+  
+  var useCultureDecimals: js.UndefOr[Boolean] = js.undefined
 }
 object SpreadsheetOptions {
   
@@ -233,7 +235,7 @@ object SpreadsheetOptions {
     
     inline def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
     
-    inline def setSheetsVarargs(value: SpreadsheetSheet*): Self = StObject.set(x, "sheets", js.Array(value :_*))
+    inline def setSheetsVarargs(value: SpreadsheetSheet*): Self = StObject.set(x, "sheets", js.Array(value*))
     
     inline def setSheetsbar(value: Boolean): Self = StObject.set(x, "sheetsbar", value.asInstanceOf[js.Any])
     
@@ -250,5 +252,9 @@ object SpreadsheetOptions {
     inline def setUnhideRow(value: /* e */ SpreadsheetUnhideRowEvent => Unit): Self = StObject.set(x, "unhideRow", js.Any.fromFunction1(value))
     
     inline def setUnhideRowUndefined: Self = StObject.set(x, "unhideRow", js.undefined)
+    
+    inline def setUseCultureDecimals(value: Boolean): Self = StObject.set(x, "useCultureDecimals", value.asInstanceOf[js.Any])
+    
+    inline def setUseCultureDecimalsUndefined: Self = StObject.set(x, "useCultureDecimals", js.undefined)
   }
 }

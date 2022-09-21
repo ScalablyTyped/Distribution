@@ -28,7 +28,7 @@ object KMLOptions {
     
     inline def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
     
-    inline def setDefaultStyleVarargs(value: Style*): Self = StObject.set(x, "defaultStyle", js.Array(value :_*))
+    inline def setDefaultStyleVarargs(value: Style*): Self = StObject.set(x, "defaultStyle", js.Array(value*))
     
     inline def setExtractStyles(value: Boolean): Self = StObject.set(x, "extractStyles", value.asInstanceOf[js.Any])
     

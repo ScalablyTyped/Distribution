@@ -92,7 +92,7 @@ object anon {
   /* Inlined std.Pick<emoji-mart.emoji-mart/dist-es.EmojiData, 'id'> */
   trait PickEmojiDataid extends StObject {
     
-    var id: js.UndefOr[js.Any] = js.undefined
+    var id: js.UndefOr[Any] = js.undefined
   }
   object PickEmojiDataid {
     
@@ -103,7 +103,7 @@ object anon {
     
     extension [Self <: PickEmojiDataid](x: Self) {
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }

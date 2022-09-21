@@ -34,7 +34,7 @@ object XLevelsSupplier {
     Levels: XNameAccess,
     acquire: () => Unit,
     getLevels: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XLevelsSupplier = {
     val __obj = js.Dynamic.literal(Levels = Levels.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getLevels = js.Any.fromFunction0(getLevels), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -1,11 +1,14 @@
 package typings.awsSdk.route53Mod
 
+import typings.awsSdk.awsSdkStrings.MAX_ZONES_BY_REUSABLE_DELEGATION_SET
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AWSAccountID = java.lang.String
+type ARN = String
+
+type AWSAccountID = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MAX_HEALTH_CHECKS_BY_OWNER
@@ -15,13 +18,13 @@ type AWSAccountID = java.lang.String
   - typings.awsSdk.awsSdkStrings.MAX_TRAFFIC_POLICIES_BY_OWNER
   - java.lang.String
 */
-type AccountLimitType = typings.awsSdk.route53Mod._AccountLimitType | java.lang.String
+type AccountLimitType = _AccountLimitType | String
 
-type AlarmName = java.lang.String
+type AlarmName = String
 
-type AliasHealthEnabled = scala.Boolean
+type AliasHealthEnabled = Boolean
 
-type AssociateVPCComment = java.lang.String
+type AssociateVPCComment = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE
@@ -29,22 +32,45 @@ type AssociateVPCComment = java.lang.String
   - typings.awsSdk.awsSdkStrings.UPSERT
   - java.lang.String
 */
-type ChangeAction = typings.awsSdk.route53Mod._ChangeAction | java.lang.String
+type ChangeAction = _ChangeAction | String
+
+type ChangeId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
   - typings.awsSdk.awsSdkStrings.INSYNC
   - java.lang.String
 */
-type ChangeStatus = typings.awsSdk.route53Mod._ChangeStatus | java.lang.String
+type ChangeStatus = _ChangeStatus | String
 
-type Changes = js.Array[typings.awsSdk.route53Mod.Change]
+type Changes = js.Array[Change]
 
-type CheckerIpRanges = js.Array[typings.awsSdk.route53Mod.IPAddressCidr]
+type CheckerIpRanges = js.Array[IPAddressCidr]
 
-type ChildHealthCheckList = js.Array[typings.awsSdk.route53Mod.HealthCheckId]
+type ChildHealthCheckList = js.Array[HealthCheckId]
 
-type CloudWatchLogsLogGroupArn = java.lang.String
+type Cidr = String
+
+type CidrBlockSummaries = js.Array[CidrBlockSummary]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PUT
+  - typings.awsSdk.awsSdkStrings.DELETE_IF_EXISTS
+  - java.lang.String
+*/
+type CidrCollectionChangeAction = _CidrCollectionChangeAction | String
+
+type CidrCollectionChanges = js.Array[CidrCollectionChange]
+
+type CidrList = js.Array[Cidr]
+
+type CidrLocationNameDefaultAllowed = String
+
+type CidrLocationNameDefaultNotAllowed = String
+
+type CidrNonce = String
+
+type CloudWatchLogsLogGroupArn = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`us-east-1`
@@ -58,9 +84,11 @@ type CloudWatchLogsLogGroupArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.`eu-west-3`
   - typings.awsSdk.awsSdkStrings.`ap-east-1`
   - typings.awsSdk.awsSdkStrings.`me-south-1`
+  - typings.awsSdk.awsSdkStrings.`me-central-1`
   - typings.awsSdk.awsSdkStrings.`ap-south-1`
   - typings.awsSdk.awsSdkStrings.`ap-southeast-1`
   - typings.awsSdk.awsSdkStrings.`ap-southeast-2`
+  - typings.awsSdk.awsSdkStrings.`ap-southeast-3`
   - typings.awsSdk.awsSdkStrings.`ap-northeast-1`
   - typings.awsSdk.awsSdkStrings.`ap-northeast-2`
   - typings.awsSdk.awsSdkStrings.`ap-northeast-3`
@@ -73,10 +101,17 @@ type CloudWatchLogsLogGroupArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.`us-gov-west-1`
   - typings.awsSdk.awsSdkStrings.`us-gov-east-1`
   - typings.awsSdk.awsSdkStrings.`us-iso-east-1`
+  - typings.awsSdk.awsSdkStrings.`us-iso-west-1`
   - typings.awsSdk.awsSdkStrings.`us-isob-east-1`
   - java.lang.String
 */
-type CloudWatchRegion = typings.awsSdk.route53Mod._CloudWatchRegion | java.lang.String
+type CloudWatchRegion = _CloudWatchRegion | String
+
+type CollectionName = String
+
+type CollectionSummaries = js.Array[CollectionSummary]
+
+type CollectionVersion = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GreaterThanOrEqualToThreshold
@@ -85,53 +120,53 @@ type CloudWatchRegion = typings.awsSdk.route53Mod._CloudWatchRegion | java.lang.
   - typings.awsSdk.awsSdkStrings.LessThanOrEqualToThreshold
   - java.lang.String
 */
-type ComparisonOperator = typings.awsSdk.route53Mod._ComparisonOperator | java.lang.String
+type ComparisonOperator = _ComparisonOperator | String
 
-type DNSName = java.lang.String
+type DNSName = String
 
-type DNSRCode = java.lang.String
+type DNSRCode = String
 
-type DelegationSetNameServers = js.Array[typings.awsSdk.route53Mod.DNSName]
+type DelegationSetNameServers = js.Array[DNSName]
 
-type DelegationSets = js.Array[typings.awsSdk.route53Mod.DelegationSet]
+type DelegationSets = js.Array[DelegationSet]
 
-type DimensionField = java.lang.String
+type DimensionField = String
 
-type DimensionList = js.Array[typings.awsSdk.route53Mod.Dimension]
+type DimensionList = js.Array[Dimension]
 
-type Disabled = scala.Boolean
+type Disabled = Boolean
 
-type DisassociateVPCComment = java.lang.String
+type DisassociateVPCComment = String
 
-type EnableSNI = scala.Boolean
+type EnableSNI = Boolean
 
-type EvaluationPeriods = scala.Double
+type EvaluationPeriods = Double
 
-type FailureThreshold = scala.Double
+type FailureThreshold = Double
 
-type FullyQualifiedDomainName = java.lang.String
+type FullyQualifiedDomainName = String
 
-type GeoLocationContinentCode = java.lang.String
+type GeoLocationContinentCode = String
 
-type GeoLocationContinentName = java.lang.String
+type GeoLocationContinentName = String
 
-type GeoLocationCountryCode = java.lang.String
+type GeoLocationCountryCode = String
 
-type GeoLocationCountryName = java.lang.String
+type GeoLocationCountryName = String
 
-type GeoLocationDetailsList = js.Array[typings.awsSdk.route53Mod.GeoLocationDetails]
+type GeoLocationDetailsList = js.Array[GeoLocationDetails]
 
-type GeoLocationSubdivisionCode = java.lang.String
+type GeoLocationSubdivisionCode = String
 
-type GeoLocationSubdivisionName = java.lang.String
+type GeoLocationSubdivisionName = String
 
-type HealthCheckCount = scala.Double
+type HealthCheckCount = Double
 
-type HealthCheckId = java.lang.String
+type HealthCheckId = String
 
-type HealthCheckNonce = java.lang.String
+type HealthCheckNonce = String
 
-type HealthCheckObservations = js.Array[typings.awsSdk.route53Mod.HealthCheckObservation]
+type HealthCheckObservations = js.Array[HealthCheckObservation]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`us-east-1`
@@ -144,9 +179,9 @@ type HealthCheckObservations = js.Array[typings.awsSdk.route53Mod.HealthCheckObs
   - typings.awsSdk.awsSdkStrings.`sa-east-1`
   - java.lang.String
 */
-type HealthCheckRegion = typings.awsSdk.route53Mod._HealthCheckRegion | java.lang.String
+type HealthCheckRegion = _HealthCheckRegion | String
 
-type HealthCheckRegionList = js.Array[typings.awsSdk.route53Mod.HealthCheckRegion]
+type HealthCheckRegionList = js.Array[HealthCheckRegion]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HTTP
@@ -156,36 +191,37 @@ type HealthCheckRegionList = js.Array[typings.awsSdk.route53Mod.HealthCheckRegio
   - typings.awsSdk.awsSdkStrings.TCP
   - typings.awsSdk.awsSdkStrings.CALCULATED
   - typings.awsSdk.awsSdkStrings.CLOUDWATCH_METRIC
+  - typings.awsSdk.awsSdkStrings.RECOVERY_CONTROL
   - java.lang.String
 */
-type HealthCheckType = typings.awsSdk.route53Mod._HealthCheckType | java.lang.String
+type HealthCheckType = _HealthCheckType | String
 
-type HealthCheckVersion = scala.Double
+type HealthCheckVersion = Double
 
-type HealthChecks = js.Array[typings.awsSdk.route53Mod.HealthCheck]
+type HealthChecks = js.Array[HealthCheck]
 
-type HealthThreshold = scala.Double
+type HealthThreshold = Double
 
-type HostedZoneCount = scala.Double
+type HostedZoneCount = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MAX_RRSETS_BY_ZONE
   - typings.awsSdk.awsSdkStrings.MAX_VPCS_ASSOCIATED_BY_ZONE
   - java.lang.String
 */
-type HostedZoneLimitType = typings.awsSdk.route53Mod._HostedZoneLimitType | java.lang.String
+type HostedZoneLimitType = _HostedZoneLimitType | String
 
-type HostedZoneOwningService = java.lang.String
+type HostedZoneOwningService = String
 
-type HostedZoneRRSetCount = scala.Double
+type HostedZoneRRSetCount = Double
 
-type HostedZoneSummaries = js.Array[typings.awsSdk.route53Mod.HostedZoneSummary]
+type HostedZoneSummaries = js.Array[HostedZoneSummary]
 
-type HostedZones = js.Array[typings.awsSdk.route53Mod.HostedZone]
+type HostedZones = js.Array[HostedZone]
 
-type IPAddress = java.lang.String
+type IPAddress = String
 
-type IPAddressCidr = java.lang.String
+type IPAddressCidr = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Healthy_
@@ -193,45 +229,49 @@ type IPAddressCidr = java.lang.String
   - typings.awsSdk.awsSdkStrings.LastKnownStatus
   - java.lang.String
 */
-type InsufficientDataHealthStatus = typings.awsSdk.route53Mod._InsufficientDataHealthStatus | java.lang.String
+type InsufficientDataHealthStatus = _InsufficientDataHealthStatus | String
 
-type Inverted = scala.Boolean
+type Inverted = Boolean
 
-type IsPrivateZone = scala.Boolean
+type IsPrivateZone = Boolean
 
-type LimitValue = scala.Double
+type KeySigningKeys = js.Array[KeySigningKey]
 
-type MaxResults = java.lang.String
+type LimitValue = Double
 
-type MeasureLatency = scala.Boolean
+type LocationSummaries = js.Array[LocationSummary]
 
-type Message = java.lang.String
+type MaxResults = String
 
-type MetricName = java.lang.String
+type MeasureLatency = Boolean
 
-type Nameserver = java.lang.String
+type Message = String
 
-type Namespace = java.lang.String
+type MetricName = String
 
-type Nonce = java.lang.String
+type Nameserver = String
 
-type PageMarker = java.lang.String
+type Namespace = String
 
-type PageMaxItems = java.lang.String
+type Nonce = String
 
-type PageTruncated = scala.Boolean
+type PageMarker = String
 
-type PaginationToken = java.lang.String
+type PageMaxItems = String
 
-type Period = scala.Double
+type PageTruncated = Boolean
 
-type Port = scala.Double
+type PaginationToken = String
 
-type QueryLoggingConfigId = java.lang.String
+type Period = Double
 
-type QueryLoggingConfigs = js.Array[typings.awsSdk.route53Mod.QueryLoggingConfig]
+type Port = Double
 
-type RData = java.lang.String
+type QueryLoggingConfigId = String
+
+type QueryLoggingConfigs = js.Array[QueryLoggingConfig]
+
+type RData = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SOA
@@ -246,15 +286,16 @@ type RData = java.lang.String
   - typings.awsSdk.awsSdkStrings.SPF
   - typings.awsSdk.awsSdkStrings.AAAA
   - typings.awsSdk.awsSdkStrings.CAA
+  - typings.awsSdk.awsSdkStrings.DS
   - java.lang.String
 */
-type RRType = typings.awsSdk.route53Mod._RRType | java.lang.String
+type RRType = _RRType | String
 
-type RecordData = js.Array[typings.awsSdk.route53Mod.RecordDataEntry]
+type RecordData = js.Array[RecordDataEntry]
 
-type RecordDataEntry = java.lang.String
+type RecordDataEntry = String
 
-type RequestInterval = scala.Double
+type RequestInterval = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FullyQualifiedDomainName
@@ -263,26 +304,26 @@ type RequestInterval = scala.Double
   - typings.awsSdk.awsSdkStrings.ChildHealthChecks
   - java.lang.String
 */
-type ResettableElementName = typings.awsSdk.route53Mod._ResettableElementName | java.lang.String
+type ResettableElementName = _ResettableElementName | String
 
-type ResettableElementNameList = js.Array[typings.awsSdk.route53Mod.ResettableElementName]
+type ResettableElementNameList = js.Array[ResettableElementName]
 
-type ResourceDescription = java.lang.String
+type ResourceDescription = String
 
-type ResourceId = java.lang.String
+type ResourceId = String
 
-type ResourcePath = java.lang.String
+type ResourcePath = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PRIMARY
   - typings.awsSdk.awsSdkStrings.SECONDARY
   - java.lang.String
 */
-type ResourceRecordSetFailover = typings.awsSdk.route53Mod._ResourceRecordSetFailover | java.lang.String
+type ResourceRecordSetFailover = _ResourceRecordSetFailover | String
 
-type ResourceRecordSetIdentifier = java.lang.String
+type ResourceRecordSetIdentifier = String
 
-type ResourceRecordSetMultiValueAnswer = scala.Boolean
+type ResourceRecordSetMultiValueAnswer = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`us-east-1`
@@ -296,6 +337,7 @@ type ResourceRecordSetMultiValueAnswer = scala.Boolean
   - typings.awsSdk.awsSdkStrings.`eu-central-1`
   - typings.awsSdk.awsSdkStrings.`ap-southeast-1`
   - typings.awsSdk.awsSdkStrings.`ap-southeast-2`
+  - typings.awsSdk.awsSdkStrings.`ap-southeast-3`
   - typings.awsSdk.awsSdkStrings.`ap-northeast-1`
   - typings.awsSdk.awsSdkStrings.`ap-northeast-2`
   - typings.awsSdk.awsSdkStrings.`ap-northeast-3`
@@ -310,23 +352,39 @@ type ResourceRecordSetMultiValueAnswer = scala.Boolean
   - typings.awsSdk.awsSdkStrings.`eu-south-1`
   - java.lang.String
 */
-type ResourceRecordSetRegion = typings.awsSdk.route53Mod._ResourceRecordSetRegion | java.lang.String
+type ResourceRecordSetRegion = _ResourceRecordSetRegion | String
 
-type ResourceRecordSetWeight = scala.Double
+type ResourceRecordSetWeight = Double
 
-type ResourceRecordSets = js.Array[typings.awsSdk.route53Mod.ResourceRecordSet]
+type ResourceRecordSets = js.Array[ResourceRecordSet]
 
-type ResourceRecords = js.Array[typings.awsSdk.route53Mod.ResourceRecord]
+type ResourceRecords = js.Array[ResourceRecord]
 
-type ResourceTagSetList = js.Array[typings.awsSdk.route53Mod.ResourceTagSet]
+type ResourceTagSetList = js.Array[ResourceTagSet]
 
-type ResourceURI = java.lang.String
+type ResourceURI = String
 
-type ReusableDelegationSetLimitType = typings.awsSdk.awsSdkStrings.MAX_ZONES_BY_REUSABLE_DELEGATION_SET | java.lang.String
+type ReusableDelegationSetLimitType = MAX_ZONES_BY_REUSABLE_DELEGATION_SET | String
 
-type SearchString = java.lang.String
+type RoutingControlArn = String
 
-type ServicePrincipal = java.lang.String
+type SearchString = String
+
+type ServeSignature = String
+
+type ServicePrincipal = String
+
+type SigningKeyInteger = Double
+
+type SigningKeyName = String
+
+type SigningKeyStatus = String
+
+type SigningKeyStatusMessage = String
+
+type SigningKeyString = String
+
+type SigningKeyTag = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Average_
@@ -336,66 +394,68 @@ type ServicePrincipal = java.lang.String
   - typings.awsSdk.awsSdkStrings.Minimum_
   - java.lang.String
 */
-type Statistic = typings.awsSdk.route53Mod._Statistic | java.lang.String
+type Statistic = _Statistic | String
 
-type Status = java.lang.String
+type Status = String
 
-type SubnetMask = java.lang.String
+type SubnetMask = String
 
-type TTL = scala.Double
+type TTL = Double
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.route53Mod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.route53Mod.Tag]
+type TagList = js.Array[Tag]
 
-type TagResourceId = java.lang.String
+type TagResourceId = String
 
-type TagResourceIdList = js.Array[typings.awsSdk.route53Mod.TagResourceId]
+type TagResourceIdList = js.Array[TagResourceId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.healthcheck
   - typings.awsSdk.awsSdkStrings.hostedzone
   - java.lang.String
 */
-type TagResourceType = typings.awsSdk.route53Mod._TagResourceType | java.lang.String
+type TagResourceType = _TagResourceType | String
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type Threshold = scala.Double
+type Threshold = Double
 
-type TimeStamp = typings.std.Date
+type TimeStamp = js.Date
 
-type TrafficPolicies = js.Array[typings.awsSdk.route53Mod.TrafficPolicy]
+type TrafficPolicies = js.Array[TrafficPolicy]
 
-type TrafficPolicyComment = java.lang.String
+type TrafficPolicyComment = String
 
-type TrafficPolicyDocument = java.lang.String
+type TrafficPolicyDocument = String
 
-type TrafficPolicyId = java.lang.String
+type TrafficPolicyId = String
 
-type TrafficPolicyInstanceCount = scala.Double
+type TrafficPolicyInstanceCount = Double
 
-type TrafficPolicyInstanceId = java.lang.String
+type TrafficPolicyInstanceId = String
 
-type TrafficPolicyInstanceState = java.lang.String
+type TrafficPolicyInstanceState = String
 
-type TrafficPolicyInstances = js.Array[typings.awsSdk.route53Mod.TrafficPolicyInstance]
+type TrafficPolicyInstances = js.Array[TrafficPolicyInstance]
 
-type TrafficPolicyName = java.lang.String
+type TrafficPolicyName = String
 
-type TrafficPolicySummaries = js.Array[typings.awsSdk.route53Mod.TrafficPolicySummary]
+type TrafficPolicySummaries = js.Array[TrafficPolicySummary]
 
-type TrafficPolicyVersion = scala.Double
+type TrafficPolicyVersion = Double
 
-type TrafficPolicyVersionMarker = java.lang.String
+type TrafficPolicyVersionMarker = String
 
-type TransportProtocol = java.lang.String
+type TransportProtocol = String
 
-type UsageCount = scala.Double
+type UUID = String
 
-type VPCId = java.lang.String
+type UsageCount = Double
+
+type VPCId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`us-east-1`
@@ -411,9 +471,12 @@ type VPCId = java.lang.String
   - typings.awsSdk.awsSdkStrings.`us-gov-west-1`
   - typings.awsSdk.awsSdkStrings.`us-gov-east-1`
   - typings.awsSdk.awsSdkStrings.`us-iso-east-1`
+  - typings.awsSdk.awsSdkStrings.`us-iso-west-1`
   - typings.awsSdk.awsSdkStrings.`us-isob-east-1`
+  - typings.awsSdk.awsSdkStrings.`me-central-1`
   - typings.awsSdk.awsSdkStrings.`ap-southeast-1`
   - typings.awsSdk.awsSdkStrings.`ap-southeast-2`
+  - typings.awsSdk.awsSdkStrings.`ap-southeast-3`
   - typings.awsSdk.awsSdkStrings.`ap-south-1`
   - typings.awsSdk.awsSdkStrings.`ap-northeast-1`
   - typings.awsSdk.awsSdkStrings.`ap-northeast-2`
@@ -426,13 +489,13 @@ type VPCId = java.lang.String
   - typings.awsSdk.awsSdkStrings.`eu-south-1`
   - java.lang.String
 */
-type VPCRegion = typings.awsSdk.route53Mod._VPCRegion | java.lang.String
+type VPCRegion = _VPCRegion | String
 
-type VPCs = js.Array[typings.awsSdk.route53Mod.VPC]
+type VPCs = js.Array[VPC]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2013-04-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.route53Mod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

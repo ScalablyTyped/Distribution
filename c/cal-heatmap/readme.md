@@ -10,10 +10,10 @@ Cal-Heatmap is a javascript module to create calendar heatmap to visualize time 
 | ------------------ | :-------------: |
 | Full name          | cal-heatmap |
 | Keywords           | calendar, graph, d3js, heat map |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 141243 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 11204.333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/wa0x6e/cal-heatmap)

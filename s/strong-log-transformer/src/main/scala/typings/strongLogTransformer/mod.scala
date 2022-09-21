@@ -1,7 +1,6 @@
 package typings.strongLogTransformer
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.NodeJS.ReadWriteStream
 import typings.strongLogTransformer.anon.PartialOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -45,8 +44,8 @@ object mod extends Shortcut {
   @js.native
   trait StrongLogTransformer extends StObject {
     
-    def apply(): ReadWriteStream = js.native
-    def apply(options: PartialOptions): ReadWriteStream = js.native
+    def apply(): Any = js.native
+    def apply(options: PartialOptions): Any = js.native
     
     var DEFAULTS: Options = js.native
     

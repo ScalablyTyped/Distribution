@@ -1,16 +1,21 @@
 package typings.antDesignProLayout.anon
 
 import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
+import typings.antDesignProLayout.antDesignProLayoutStrings.group
+import typings.antDesignProLayout.antDesignProLayoutStrings.light
 import typings.antDesignProLayout.antDesignProLayoutStrings.mix
 import typings.antDesignProLayout.antDesignProLayoutStrings.realDark
 import typings.antDesignProLayout.antDesignProLayoutStrings.side
+import typings.antDesignProLayout.antDesignProLayoutStrings.sub
 import typings.antDesignProLayout.antDesignProLayoutStrings.top
 import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
 import typings.antDesignProLayout.defaultSettingsMod.PureSettings
+import typings.antDesignProLayout.footerToolbarMod.FooterToolbarProps
 import typings.antDesignProLayout.getBreadcrumbPropsMod.BreadcrumbListReturn
 import typings.antDesignProLayout.routeContextMod.RouteContextType
 import typings.antDesignProLayout.typingsMod.MenuDataItem
-import typings.antd.menuContextMod.MenuTheme
+import typings.antDesignProLayout.waterMarkMod.WaterMarkProps
+import typings.antd.breadcrumbBreadcrumbMod.BreadcrumbProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.Dispatch
 import typings.react.mod.ReactNode
@@ -20,14 +25,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined @ant-design/pro-layout.@ant-design/pro-layout/lib/FooterToolbar.FooterToolbarProps & @ant-design/pro-layout.@ant-design/pro-layout.RouteContextType & {  leftWidth :string | undefined} */
+/* Inlined @ant-design/pro-layout.@ant-design/pro-layout/es/components/FooterToolbar.FooterToolbarProps & @ant-design/pro-layout.@ant-design/pro-layout.RouteContextType & {  leftWidth :string | undefined} */
 trait FooterToolbarPropsRouteCo extends StObject {
   
   var breadcrumb: js.UndefOr[BreadcrumbListReturn] = js.undefined
   
+  /** PageHeader 的 BreadcrumbProps 配置，会透传下去 */
+  var breadcrumbProps: js.UndefOr[BreadcrumbProps] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
   
   var collapsed: js.UndefOr[Boolean] = js.undefined
+  
+  var colorPrimary: js.UndefOr[String] = js.undefined
   
   var colorWeak: js.UndefOr[Boolean] = js.undefined
   
@@ -47,11 +59,9 @@ trait FooterToolbarPropsRouteCo extends StObject {
   
   var hasHeader: js.UndefOr[Boolean] = js.undefined
   
+  var hasPageContainer: js.UndefOr[Boolean] = js.undefined
+  
   var hasSiderMenu: js.UndefOr[Boolean] = js.undefined
-  
-  var headerHeight: js.UndefOr[Double] = js.undefined
-  
-  var headerTheme: js.UndefOr[MenuTheme] = js.undefined
   
   var iconfontUrl: js.UndefOr[String] = js.undefined
   
@@ -67,23 +77,29 @@ trait FooterToolbarPropsRouteCo extends StObject {
   
   var matchMenus: js.UndefOr[js.Array[MenuDataItem]] = js.undefined
   
-  var menu: js.UndefOr[DefaultOpenAll] = js.undefined
+  var menu: js.UndefOr[AutoClose] = js.undefined
   
   var menuData: js.UndefOr[js.Array[MenuDataItem]] = js.undefined
   
-  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
+  var navTheme: js.UndefOr[realDark | light] = js.undefined
   
   var pageTitleInfo: js.UndefOr[Id] = js.undefined
   
   var prefixCls: js.UndefOr[String] = js.undefined
   
-  var primaryColor: js.UndefOr[String] = js.undefined
-  
   var renderContent: js.UndefOr[
-    js.Function2[/* props */ this.type & RouteContextType & LeftWidth, /* dom */ Element, ReactNode]
+    js.Function2[
+      /* props */ FooterToolbarProps & RouteContextType & LeftWidth, 
+      /* dom */ Element, 
+      ReactNode
+    ]
   ] = js.undefined
   
   var setHasFooterToolbar: js.UndefOr[Dispatch[SetStateAction[Boolean]]] = js.undefined
+  
+  var setHasPageContainer: js.UndefOr[Dispatch[SetStateAction[Boolean]]] = js.undefined
+  
+  var siderMenuType: js.UndefOr[sub | group] = js.undefined
   
   var siderWidth: js.UndefOr[Double] = js.undefined
   
@@ -92,6 +108,8 @@ trait FooterToolbarPropsRouteCo extends StObject {
   var style: js.UndefOr[CSSProperties] = js.undefined
   
   var title: js.UndefOr[String | `false`] = js.undefined
+  
+  var waterMarkProps: js.UndefOr[WaterMarkProps] = js.undefined
 }
 object FooterToolbarPropsRouteCo {
   
@@ -104,7 +122,15 @@ object FooterToolbarPropsRouteCo {
     
     inline def setBreadcrumb(value: BreadcrumbListReturn): Self = StObject.set(x, "breadcrumb", value.asInstanceOf[js.Any])
     
+    inline def setBreadcrumbProps(value: BreadcrumbProps): Self = StObject.set(x, "breadcrumbProps", value.asInstanceOf[js.Any])
+    
+    inline def setBreadcrumbPropsUndefined: Self = StObject.set(x, "breadcrumbProps", js.undefined)
+    
     inline def setBreadcrumbUndefined: Self = StObject.set(x, "breadcrumb", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -113,6 +139,10 @@ object FooterToolbarPropsRouteCo {
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    
+    inline def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
+    
+    inline def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
     
     inline def setColorWeak(value: Boolean): Self = StObject.set(x, "colorWeak", value.asInstanceOf[js.Any])
     
@@ -150,17 +180,13 @@ object FooterToolbarPropsRouteCo {
     
     inline def setHasHeaderUndefined: Self = StObject.set(x, "hasHeader", js.undefined)
     
+    inline def setHasPageContainer(value: Boolean): Self = StObject.set(x, "hasPageContainer", value.asInstanceOf[js.Any])
+    
+    inline def setHasPageContainerUndefined: Self = StObject.set(x, "hasPageContainer", js.undefined)
+    
     inline def setHasSiderMenu(value: Boolean): Self = StObject.set(x, "hasSiderMenu", value.asInstanceOf[js.Any])
     
     inline def setHasSiderMenuUndefined: Self = StObject.set(x, "hasSiderMenu", js.undefined)
-    
-    inline def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
-    
-    inline def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
-    
-    inline def setHeaderTheme(value: MenuTheme): Self = StObject.set(x, "headerTheme", value.asInstanceOf[js.Any])
-    
-    inline def setHeaderThemeUndefined: Self = StObject.set(x, "headerTheme", js.undefined)
     
     inline def setIconfontUrl(value: String): Self = StObject.set(x, "iconfontUrl", value.asInstanceOf[js.Any])
     
@@ -186,25 +212,25 @@ object FooterToolbarPropsRouteCo {
     
     inline def setMatchMenuKeysUndefined: Self = StObject.set(x, "matchMenuKeys", js.undefined)
     
-    inline def setMatchMenuKeysVarargs(value: String*): Self = StObject.set(x, "matchMenuKeys", js.Array(value :_*))
+    inline def setMatchMenuKeysVarargs(value: String*): Self = StObject.set(x, "matchMenuKeys", js.Array(value*))
     
     inline def setMatchMenus(value: js.Array[MenuDataItem]): Self = StObject.set(x, "matchMenus", value.asInstanceOf[js.Any])
     
     inline def setMatchMenusUndefined: Self = StObject.set(x, "matchMenus", js.undefined)
     
-    inline def setMatchMenusVarargs(value: MenuDataItem*): Self = StObject.set(x, "matchMenus", js.Array(value :_*))
+    inline def setMatchMenusVarargs(value: MenuDataItem*): Self = StObject.set(x, "matchMenus", js.Array(value*))
     
-    inline def setMenu(value: DefaultOpenAll): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: AutoClose): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     inline def setMenuData(value: js.Array[MenuDataItem]): Self = StObject.set(x, "menuData", value.asInstanceOf[js.Any])
     
     inline def setMenuDataUndefined: Self = StObject.set(x, "menuData", js.undefined)
     
-    inline def setMenuDataVarargs(value: MenuDataItem*): Self = StObject.set(x, "menuData", js.Array(value :_*))
+    inline def setMenuDataVarargs(value: MenuDataItem*): Self = StObject.set(x, "menuData", js.Array(value*))
     
     inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
-    inline def setNavTheme(value: MenuTheme | realDark): Self = StObject.set(x, "navTheme", value.asInstanceOf[js.Any])
+    inline def setNavTheme(value: realDark | light): Self = StObject.set(x, "navTheme", value.asInstanceOf[js.Any])
     
     inline def setNavThemeUndefined: Self = StObject.set(x, "navTheme", js.undefined)
     
@@ -216,12 +242,8 @@ object FooterToolbarPropsRouteCo {
     
     inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     
-    inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
-    
-    inline def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
-    
     inline def setRenderContent(
-      value: (/* props */ FooterToolbarPropsRouteCo & RouteContextType & LeftWidth, /* dom */ Element) => ReactNode
+      value: (/* props */ FooterToolbarProps & RouteContextType & LeftWidth, /* dom */ Element) => ReactNode
     ): Self = StObject.set(x, "renderContent", js.Any.fromFunction2(value))
     
     inline def setRenderContentUndefined: Self = StObject.set(x, "renderContent", js.undefined)
@@ -229,6 +251,14 @@ object FooterToolbarPropsRouteCo {
     inline def setSetHasFooterToolbar(value: SetStateAction[Boolean] => Unit): Self = StObject.set(x, "setHasFooterToolbar", js.Any.fromFunction1(value))
     
     inline def setSetHasFooterToolbarUndefined: Self = StObject.set(x, "setHasFooterToolbar", js.undefined)
+    
+    inline def setSetHasPageContainer(value: SetStateAction[Boolean] => Unit): Self = StObject.set(x, "setHasPageContainer", js.Any.fromFunction1(value))
+    
+    inline def setSetHasPageContainerUndefined: Self = StObject.set(x, "setHasPageContainer", js.undefined)
+    
+    inline def setSiderMenuType(value: sub | group): Self = StObject.set(x, "siderMenuType", value.asInstanceOf[js.Any])
+    
+    inline def setSiderMenuTypeUndefined: Self = StObject.set(x, "siderMenuType", js.undefined)
     
     inline def setSiderWidth(value: Double): Self = StObject.set(x, "siderWidth", value.asInstanceOf[js.Any])
     
@@ -245,5 +275,9 @@ object FooterToolbarPropsRouteCo {
     inline def setTitle(value: String | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setWaterMarkProps(value: WaterMarkProps): Self = StObject.set(x, "waterMarkProps", value.asInstanceOf[js.Any])
+    
+    inline def setWaterMarkPropsUndefined: Self = StObject.set(x, "waterMarkProps", js.undefined)
   }
 }

@@ -57,7 +57,7 @@ object navbarLinkMod {
   
   @JSImport("rbx/components/navbar/navbar-link", "NavbarLink")
   @js.native
-  val NavbarLink: ForwardRefAsExoticComponent[NavbarLinkProps, ElementType[js.Any]] = js.native
+  val NavbarLink: ForwardRefAsExoticComponent[NavbarLinkProps, ElementType[Any]] = js.native
   
   trait NavbarLinkModifierProps extends StObject {
     

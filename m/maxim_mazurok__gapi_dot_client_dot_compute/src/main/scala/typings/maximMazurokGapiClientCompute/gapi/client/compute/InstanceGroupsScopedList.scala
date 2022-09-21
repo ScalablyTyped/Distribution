@@ -26,7 +26,7 @@ object InstanceGroupsScopedList {
     
     inline def setInstanceGroupsUndefined: Self = StObject.set(x, "instanceGroups", js.undefined)
     
-    inline def setInstanceGroupsVarargs(value: InstanceGroup*): Self = StObject.set(x, "instanceGroups", js.Array(value :_*))
+    inline def setInstanceGroupsVarargs(value: InstanceGroup*): Self = StObject.set(x, "instanceGroups", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

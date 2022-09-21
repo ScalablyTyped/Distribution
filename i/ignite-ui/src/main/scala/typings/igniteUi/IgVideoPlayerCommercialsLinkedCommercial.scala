@@ -10,7 +10,7 @@ trait IgVideoPlayerCommercialsLinkedCommercial
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets the link to open on linked commercial click.
@@ -22,7 +22,7 @@ trait IgVideoPlayerCommercialsLinkedCommercial
     * Gets/Sets the sources of the linked commercial video.
     *
     */
-  var sources: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var sources: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets/Sets the second in the video at which the linked commercial should play.
@@ -49,11 +49,11 @@ object IgVideoPlayerCommercialsLinkedCommercial {
     
     inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    inline def setSources(value: js.Array[js.Any]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Array[Any]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: js.Any*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Any*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

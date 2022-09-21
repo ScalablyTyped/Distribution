@@ -1,7 +1,6 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.mathColorMod.Color3
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait AlphaFilter extends StObject {
   
   var alphaFilter: Double
   
-  var buffer: Uint8Array
+  var buffer: js.typedarray.Uint8Array
   
   var bufferHeight: Double
   
@@ -32,7 +31,7 @@ object AlphaFilter {
   
   inline def apply(
     alphaFilter: Double,
-    buffer: Uint8Array,
+    buffer: js.typedarray.Uint8Array,
     bufferHeight: Double,
     bufferWidth: Double,
     colorFilter: Color3,
@@ -50,7 +49,7 @@ object AlphaFilter {
     
     inline def setAlphaFilter(value: Double): Self = StObject.set(x, "alphaFilter", value.asInstanceOf[js.Any])
     
-    inline def setBuffer(value: Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     inline def setBufferHeight(value: Double): Self = StObject.set(x, "bufferHeight", value.asInstanceOf[js.Any])
     

@@ -22,10 +22,10 @@ object storage {
       * Gets one or more items from storage.
       * @param [keys] A single key to get, list of keys to get, or a dictionary specifying default values (see description of the object). An empty list or object will return an empty result object. Pass in `null` to get the entire contents of storage.
       */
-    def get(): js.Promise[StringDictionary[js.Any]] = js.native
-    def get(keys: String): js.Promise[StringDictionary[js.Any]] = js.native
-    def get(keys: js.Array[String]): js.Promise[StringDictionary[js.Any]] = js.native
-    def get(keys: StringDictionary[js.Any]): js.Promise[StringDictionary[js.Any]] = js.native
+    def get(): js.Promise[StringDictionary[Any]] = js.native
+    def get(keys: String): js.Promise[StringDictionary[Any]] = js.native
+    def get(keys: js.Array[String]): js.Promise[StringDictionary[Any]] = js.native
+    def get(keys: StringDictionary[Any]): js.Promise[StringDictionary[Any]] = js.native
     
     /**
       * Gets the amount of space (in bytes) being used by one or more items.
@@ -49,7 +49,7 @@ object storage {
       *
       * Primitive values such as numbers will serialize as expected. Values with a `typeof` `"object"` and `"function"` will typically serialize to `{}`, with the exception of `Array` (serializes as expected), `Date`, and `Regex` (serialize using their `String` representation).
       */
-    def set(items: StringDictionary[js.Any]): js.Promise[Unit] = js.native
+    def set(items: StringDictionary[Any]): js.Promise[Unit] = js.native
   }
   
   @js.native
@@ -62,10 +62,10 @@ object storage {
       * Gets one or more items from storage.
       * @param [keys] A single key to get, list of keys to get, or a dictionary specifying default values (see description of the object). An empty list or object will return an empty result object. Pass in `null` to get the entire contents of storage.
       */
-    def get(): js.Promise[StringDictionary[js.Any]] = js.native
-    def get(keys: String): js.Promise[StringDictionary[js.Any]] = js.native
-    def get(keys: js.Array[String]): js.Promise[StringDictionary[js.Any]] = js.native
-    def get(keys: StringDictionary[js.Any]): js.Promise[StringDictionary[js.Any]] = js.native
+    def get(): js.Promise[StringDictionary[Any]] = js.native
+    def get(keys: String): js.Promise[StringDictionary[Any]] = js.native
+    def get(keys: js.Array[String]): js.Promise[StringDictionary[Any]] = js.native
+    def get(keys: StringDictionary[Any]): js.Promise[StringDictionary[Any]] = js.native
     
     /**
       * Gets the amount of space (in bytes) being used by one or more items.
@@ -88,17 +88,17 @@ object storage {
       *
       * Primitive values such as numbers will serialize as expected. Values with a `typeof` `"object"` and `"function"` will typically serialize to `{}`, with the exception of `Array` (serializes as expected), `Date`, and `Regex` (serialize using their `String` representation).
       */
-    def set(items: StringDictionary[js.Any]): js.Promise[Unit] = js.native
+    def set(items: StringDictionary[Any]): js.Promise[Unit] = js.native
   }
   
   /* storage types */
   trait StorageChange extends StObject {
     
     /** The new value of the item, if there is a new value. */
-    var newValue: js.UndefOr[js.Any] = js.undefined
+    var newValue: js.UndefOr[Any] = js.undefined
     
     /** The old value of the item, if there was an old value. */
-    var oldValue: js.UndefOr[js.Any] = js.undefined
+    var oldValue: js.UndefOr[Any] = js.undefined
   }
   object StorageChange {
     
@@ -109,11 +109,11 @@ object storage {
     
     extension [Self <: StorageChange](x: Self) {
       
-      inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
       inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
       
-      inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
       
       inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
     }

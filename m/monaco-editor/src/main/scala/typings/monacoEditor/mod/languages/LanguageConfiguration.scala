@@ -1,7 +1,6 @@
 package typings.monacoEditor.mod.languages
 
 import typings.monacoEditor.anon.DocComment
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,6 +32,12 @@ trait LanguageConfiguration extends StObject {
     * This configuration implicitly affects pressing Enter around these brackets.
     */
   var brackets: js.UndefOr[js.Array[CharacterPair]] = js.undefined
+  
+  /**
+    * Defines a list of bracket pairs that are colorized depending on their nesting level.
+    * If not set, the configured brackets will be used.
+    */
+  var colorizedBracketPairs: js.UndefOr[js.Array[CharacterPair]] = js.undefined
   
   /**
     * The language's comment settings.
@@ -68,7 +73,7 @@ trait LanguageConfiguration extends StObject {
     * e.g.: A regex that matches anything except known separators (and dot is allowed to occur in a floating point number):
     *   /(-?\d*\.\d\w*)|([^\`\~\!\@\#\%\^\&\*\(\)\-\=\+\[\{\]\}\\\|\;\:\'\"\,\.\<\>\/\?\s]+)/g
     */
-  var wordPattern: js.UndefOr[RegExp] = js.undefined
+  var wordPattern: js.UndefOr[js.RegExp] = js.undefined
 }
 object LanguageConfiguration {
   
@@ -87,13 +92,19 @@ object LanguageConfiguration {
     
     inline def setAutoClosingPairsUndefined: Self = StObject.set(x, "autoClosingPairs", js.undefined)
     
-    inline def setAutoClosingPairsVarargs(value: IAutoClosingPairConditional*): Self = StObject.set(x, "autoClosingPairs", js.Array(value :_*))
+    inline def setAutoClosingPairsVarargs(value: IAutoClosingPairConditional*): Self = StObject.set(x, "autoClosingPairs", js.Array(value*))
     
     inline def setBrackets(value: js.Array[CharacterPair]): Self = StObject.set(x, "brackets", value.asInstanceOf[js.Any])
     
     inline def setBracketsUndefined: Self = StObject.set(x, "brackets", js.undefined)
     
-    inline def setBracketsVarargs(value: CharacterPair*): Self = StObject.set(x, "brackets", js.Array(value :_*))
+    inline def setBracketsVarargs(value: CharacterPair*): Self = StObject.set(x, "brackets", js.Array(value*))
+    
+    inline def setColorizedBracketPairs(value: js.Array[CharacterPair]): Self = StObject.set(x, "colorizedBracketPairs", value.asInstanceOf[js.Any])
+    
+    inline def setColorizedBracketPairsUndefined: Self = StObject.set(x, "colorizedBracketPairs", js.undefined)
+    
+    inline def setColorizedBracketPairsVarargs(value: CharacterPair*): Self = StObject.set(x, "colorizedBracketPairs", js.Array(value*))
     
     inline def setComments(value: CommentRule): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
@@ -111,15 +122,15 @@ object LanguageConfiguration {
     
     inline def setOnEnterRulesUndefined: Self = StObject.set(x, "onEnterRules", js.undefined)
     
-    inline def setOnEnterRulesVarargs(value: OnEnterRule*): Self = StObject.set(x, "onEnterRules", js.Array(value :_*))
+    inline def setOnEnterRulesVarargs(value: OnEnterRule*): Self = StObject.set(x, "onEnterRules", js.Array(value*))
     
     inline def setSurroundingPairs(value: js.Array[IAutoClosingPair]): Self = StObject.set(x, "surroundingPairs", value.asInstanceOf[js.Any])
     
     inline def setSurroundingPairsUndefined: Self = StObject.set(x, "surroundingPairs", js.undefined)
     
-    inline def setSurroundingPairsVarargs(value: IAutoClosingPair*): Self = StObject.set(x, "surroundingPairs", js.Array(value :_*))
+    inline def setSurroundingPairsVarargs(value: IAutoClosingPair*): Self = StObject.set(x, "surroundingPairs", js.Array(value*))
     
-    inline def setWordPattern(value: RegExp): Self = StObject.set(x, "wordPattern", value.asInstanceOf[js.Any])
+    inline def setWordPattern(value: js.RegExp): Self = StObject.set(x, "wordPattern", value.asInstanceOf[js.Any])
     
     inline def setWordPatternUndefined: Self = StObject.set(x, "wordPattern", js.undefined)
     

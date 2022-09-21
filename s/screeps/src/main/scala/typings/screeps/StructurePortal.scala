@@ -13,7 +13,7 @@ trait StructurePortal
   extends StObject
      with Structure[STRUCTURE_PORTAL]
      with AnyStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * If this is an inter-room portal, then this property contains a RoomPosition object leading to the point in the destination room.

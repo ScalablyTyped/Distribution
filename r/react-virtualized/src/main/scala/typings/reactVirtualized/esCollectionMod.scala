@@ -21,16 +21,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esCollectionMod {
   
-  @JSImport("react-virtualized/dist/es/Collection", "Collection")
+  @JSImport("react-virtualized/dist/es/Collection", JSImport.Default)
   @js.native
-  class Collection protected ()
-    extends PureComponent[CollectionProps, js.Object, js.Any] {
+  open class default protected () extends Collection {
     def this(props: CollectionProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: CollectionProps, context: js.Any) = this()
+    def this(props: CollectionProps, context: Any) = this()
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("react-virtualized/dist/es/Collection", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-virtualized/dist/es/Collection", "default.defaultProps")
+    @js.native
+    def defaultProps: CellGroupRenderer = js.native
+    inline def defaultProps_=(x: CellGroupRenderer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-virtualized/dist/es/Collection", "default.propTypes")
+    @js.native
+    def propTypes: Arialabel = js.native
+    inline def propTypes_=(x: Arialabel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("react-virtualized/dist/es/Collection", "Collection")
+  @js.native
+  open class Collection protected ()
+    extends PureComponent[CollectionProps, js.Object, Any] {
+    def this(props: CollectionProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: CollectionProps, context: Any) = this()
     
     /** CellLayoutManager interface */
     def calculateSizeAndPositionData(): Unit = js.native
@@ -99,7 +127,7 @@ object esCollectionMod {
       
       inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
-      inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+      inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value*))
     }
   }
   
@@ -174,7 +202,7 @@ object esCollectionMod {
     * Check the following link if you want to know more
     * https://github.com/bvaughn/react-virtualized#pass-thru-props
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     var `aria-label`: js.UndefOr[String] = js.undefined
     
@@ -231,13 +259,13 @@ object esCollectionMod {
       * Callback invoked whenever the scroll offset changes within the inner
       * scrollable region: ({ clientHeight, clientWidth, scrollHeight, scrollLeft, scrollTop, scrollWidth }): void
       */
-    var onScroll: js.UndefOr[js.Function1[/* params */ ScrollParams, js.Any]] = js.undefined
+    var onScroll: js.UndefOr[js.Function1[/* params */ ScrollParams, Any]] = js.undefined
     
     /**
       * Callback invoked with information about the section of the Collection
       * that was just rendered: ({ indices: Array<number> }): void
       */
-    var onSectionRendered: js.UndefOr[js.Function1[/* params */ SectionRenderedParams, js.Any]] = js.undefined
+    var onSectionRendered: js.UndefOr[js.Function1[/* params */ SectionRenderedParams, Any]] = js.undefined
     
     /**
       * Horizontal offset
@@ -329,11 +357,11 @@ object esCollectionMod {
       
       inline def setNoContentRendererUndefined: Self = StObject.set(x, "noContentRenderer", js.undefined)
       
-      inline def setOnScroll(value: /* params */ ScrollParams => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(value: /* params */ ScrollParams => Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      inline def setOnSectionRendered(value: /* params */ SectionRenderedParams => js.Any): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
+      inline def setOnSectionRendered(value: /* params */ SectionRenderedParams => Any): Self = StObject.set(x, "onSectionRendered", js.Any.fromFunction1(value))
       
       inline def setOnSectionRenderedUndefined: Self = StObject.set(x, "onSectionRendered", js.undefined)
       

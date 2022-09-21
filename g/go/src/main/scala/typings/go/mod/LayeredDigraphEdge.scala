@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs an edge that does not know about any Link.
   */
-class LayeredDigraphEdge () extends LayoutEdge {
+open class LayeredDigraphEdge () extends LayoutEdge {
   
   /**True if the link is part of the depth first forest.*/
   var forest: Boolean = js.native

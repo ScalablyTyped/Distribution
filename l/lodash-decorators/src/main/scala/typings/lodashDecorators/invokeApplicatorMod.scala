@@ -9,5 +9,5 @@ object invokeApplicatorMod {
   
   @JSImport("lodash-decorators/applicators/InvokeApplicator", "InvokeApplicator")
   @js.native
-  class InvokeApplicator () extends Applicator
+  open class InvokeApplicator () extends Applicator
 }

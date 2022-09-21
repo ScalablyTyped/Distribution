@@ -31,6 +31,6 @@ object ListVirtualNodesOutput {
     
     inline def setVirtualNodes(value: VirtualNodeList): Self = StObject.set(x, "virtualNodes", value.asInstanceOf[js.Any])
     
-    inline def setVirtualNodesVarargs(value: VirtualNodeRef*): Self = StObject.set(x, "virtualNodes", js.Array(value :_*))
+    inline def setVirtualNodesVarargs(value: VirtualNodeRef*): Self = StObject.set(x, "virtualNodes", js.Array(value*))
   }
 }

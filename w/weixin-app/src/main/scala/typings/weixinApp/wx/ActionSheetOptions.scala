@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ActionSheetOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /**
     * 按钮的文字颜色，默认为"#000000"
@@ -40,7 +40,7 @@ object ActionSheetOptions {
     
     inline def setItemList(value: js.Array[String]): Self = StObject.set(x, "itemList", value.asInstanceOf[js.Any])
     
-    inline def setItemListVarargs(value: String*): Self = StObject.set(x, "itemList", js.Array(value :_*))
+    inline def setItemListVarargs(value: String*): Self = StObject.set(x, "itemList", js.Array(value*))
     
     inline def setSuccess(value: /* res */ TapIndex => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

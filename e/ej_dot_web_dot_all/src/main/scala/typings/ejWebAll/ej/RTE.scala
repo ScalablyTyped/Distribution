@@ -15,7 +15,7 @@ trait RTE
   /** Returns the range object.
     * @returns {any}
     */
-  def createRange(): js.Any = js.native
+  def createRange(): Any = js.native
   
   var defaults: Model = js.native
   
@@ -45,8 +45,8 @@ trait RTE
     * @param {boolean} Boolean value to specify whether the argument is textNode or not, this is optional.
     * @returns {void}
     */
-  def executeCommand(cmdName: String, args: js.Any): Unit = js.native
-  def executeCommand(cmdName: String, args: js.Any, textnodeType: Boolean): Unit = js.native
+  def executeCommand(cmdName: String, args: Any): Unit = js.native
+  def executeCommand(cmdName: String, args: Any, textnodeType: Boolean): Unit = js.native
   
   /** Focuses the RTE control.
     * @returns {void}
@@ -208,7 +208,7 @@ object RTE {
     
     /** returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -227,7 +227,7 @@ object RTE {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -241,7 +241,7 @@ object RTE {
     
     /** returns clicked menu item element.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the selected item.
       */
@@ -260,7 +260,7 @@ object RTE {
     
     extension [Self <: ContextMenuClickEventArgs](x: Self) {
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -282,7 +282,7 @@ object RTE {
     
     /** Returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -301,7 +301,7 @@ object RTE {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -319,7 +319,7 @@ object RTE {
     
     /** Returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -338,7 +338,7 @@ object RTE {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -356,7 +356,7 @@ object RTE {
     
     /** Returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -375,7 +375,7 @@ object RTE {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -546,7 +546,7 @@ object RTE {
     
     /** Returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -565,7 +565,7 @@ object RTE {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -583,7 +583,7 @@ object RTE {
     
     /** Returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -602,7 +602,7 @@ object RTE {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -642,7 +642,7 @@ object RTE {
       * @Default {[000000, FFFFFF, C4C4C4, ADADAD, 595959, 262626, 4f81bd, dbe5f1, b8cce4, 95b3d7, 366092, 244061, c0504d, f2dcdb, e5b9b7, d99694, 953734,632423, 9bbb59, ebf1dd, d7e3bc,
       * c3d69b, 76923c, 4f6128, 8064a2, e5e0ec, ccc1d9, b2a2c7, 5f497a, 3f3151, f79646, fdeada, fbd5b5, fac08f,e36c09, 974806]}
       */
-    var colorCode: js.UndefOr[js.Any] = js.undefined
+    var colorCode: js.UndefOr[Any] = js.undefined
     
     /** The number of columns given are rendered in the color palate popup.
       * @Default {6}
@@ -734,13 +734,13 @@ object RTE {
       * Georgia,serif },{text: Impact, value: Impact,Charcoal,sans-serif },{text: Lucida Console, value: Lucida Console,Monaco,Monospace },{text: Tahoma, value: Tahoma,Geneva,sans-serif
       * },{text: Times New Roman, value: Times New Roman },{text: Trebuchet MS, value: Trebuchet MS,Helvetica,sans-serif },{text: Verdana, value: Verdana,Geneva,sans-serif}}
       */
-    var fontName: js.UndefOr[js.Any] = js.undefined
+    var fontName: js.UndefOr[Any] = js.undefined
     
     /** Sets the fontSize in the RTE.
       * @Default {{ text: 1, value: 1 },{ text: 2 (10pt), value: 2 },{ text: 3 (12pt), value: 3 },{ text: 4 (14pt), value: 4 },{ text: 5 (18pt), value: 5 },{ text: 6 (24pt), value: 6 },{
       * text: 7 (36pt), value: 7 }}
       */
-    var fontSize: js.UndefOr[js.Any] = js.undefined
+    var fontSize: js.UndefOr[Any] = js.undefined
     
     /** Sets the format in the RTE.
       * @Default {{ text: Paragraph, value: &lt;p&gt;, spriteCssClass: e-paragraph },{ text: Quotation, value: &lt;blockquote&gt;, spriteCssClass: e-quotation },{ text: Heading 1, value:
@@ -757,12 +757,12 @@ object RTE {
     /** Specifies the HTML Attributes of the ejRTE.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Sets the given attributes to the iframe body element.
       * @Default {{}}
       */
-    var iframeAttributes: js.UndefOr[js.Any] = js.undefined
+    var iframeAttributes: js.UndefOr[Any] = js.undefined
     
     /** This API allows the image browser to support in the RTE control to browse, create, delete, and upload the image files to the specified current directory.
       * @Default {null}
@@ -925,12 +925,12 @@ object RTE {
       * the inner order of the corresponding groups displayed. When the value is not specified, it gets its default display order and tools.
       * @Default {[formatStyle, font, style, effects, alignment, lists, indenting, clipboard, doAction, clear, links, images, media, tables, casing,view, customTools,print,edit]}
       */
-    var toolsList: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var toolsList: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Display the hints for the tools in the Toolbar.
       * @Default {{ associate: mouseenter, showShadow: true, position: { stem: { horizontal: left, vertical: top }  }, tip: { size: { width: 5, height: 5 }, isBalloon: false }}
       */
-    var tooltipSettings: js.UndefOr[js.Any] = js.undefined
+    var tooltipSettings: js.UndefOr[Any] = js.undefined
     
     /** Gets the undo stack limit.
       * @Default {50}
@@ -940,12 +940,12 @@ object RTE {
     /** Sets the jQuery validation error message to the Rich Text Editor.
       * @Default {null}
       */
-    var validationMessage: js.UndefOr[js.Any] = js.undefined
+    var validationMessage: js.UndefOr[Any] = js.undefined
     
     /** Sets the jQuery validation rules to the Rich Text Editor.
       * @Default {null}
       */
-    var validationRules: js.UndefOr[js.Any] = js.undefined
+    var validationRules: js.UndefOr[Any] = js.undefined
     
     /** The given string value is displayed in the editable area.
       * @Default {null}
@@ -991,7 +991,7 @@ object RTE {
       
       inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
-      inline def setColorCode(value: js.Any): Self = StObject.set(x, "colorCode", value.asInstanceOf[js.Any])
+      inline def setColorCode(value: Any): Self = StObject.set(x, "colorCode", value.asInstanceOf[js.Any])
       
       inline def setColorCodeUndefined: Self = StObject.set(x, "colorCode", js.undefined)
       
@@ -1067,11 +1067,11 @@ object RTE {
       
       inline def setFileBrowserUndefined: Self = StObject.set(x, "fileBrowser", js.undefined)
       
-      inline def setFontName(value: js.Any): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+      inline def setFontName(value: Any): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
       
       inline def setFontNameUndefined: Self = StObject.set(x, "fontName", js.undefined)
       
-      inline def setFontSize(value: js.Any): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Any): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
@@ -1083,11 +1083,11 @@ object RTE {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
-      inline def setIframeAttributes(value: js.Any): Self = StObject.set(x, "iframeAttributes", value.asInstanceOf[js.Any])
+      inline def setIframeAttributes(value: Any): Self = StObject.set(x, "iframeAttributes", value.asInstanceOf[js.Any])
       
       inline def setIframeAttributesUndefined: Self = StObject.set(x, "iframeAttributes", js.undefined)
       
@@ -1217,15 +1217,15 @@ object RTE {
       
       inline def setTools(value: Tools): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
       
-      inline def setToolsList(value: js.Array[js.Any]): Self = StObject.set(x, "toolsList", value.asInstanceOf[js.Any])
+      inline def setToolsList(value: js.Array[Any]): Self = StObject.set(x, "toolsList", value.asInstanceOf[js.Any])
       
       inline def setToolsListUndefined: Self = StObject.set(x, "toolsList", js.undefined)
       
-      inline def setToolsListVarargs(value: js.Any*): Self = StObject.set(x, "toolsList", js.Array(value :_*))
+      inline def setToolsListVarargs(value: Any*): Self = StObject.set(x, "toolsList", js.Array(value*))
       
       inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
       
-      inline def setTooltipSettings(value: js.Any): Self = StObject.set(x, "tooltipSettings", value.asInstanceOf[js.Any])
+      inline def setTooltipSettings(value: Any): Self = StObject.set(x, "tooltipSettings", value.asInstanceOf[js.Any])
       
       inline def setTooltipSettingsUndefined: Self = StObject.set(x, "tooltipSettings", js.undefined)
       
@@ -1233,11 +1233,11 @@ object RTE {
       
       inline def setUndoStackLimitUndefined: Self = StObject.set(x, "undoStackLimit", js.undefined)
       
-      inline def setValidationMessage(value: js.Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
+      inline def setValidationMessage(value: Any): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
       
       inline def setValidationMessageUndefined: Self = StObject.set(x, "validationMessage", js.undefined)
       
-      inline def setValidationRules(value: js.Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      inline def setValidationRules(value: Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
       inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
       
@@ -1312,7 +1312,7 @@ object RTE {
     
     /** Returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -1331,7 +1331,7 @@ object RTE {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1349,11 +1349,11 @@ object RTE {
     
     /** Returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** Returns the RTE model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event
       */
@@ -1372,11 +1372,11 @@ object RTE {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1390,19 +1390,19 @@ object RTE {
     
     /** Specifies the alignment tools and the display order of this tool in the RTE toolbar.
       */
-    var alignment: js.UndefOr[js.Any] = js.undefined
+    var alignment: js.UndefOr[Any] = js.undefined
     
     /** Specifies the casing tools and the display order of this tool in the RTE toolbar.
       */
-    var casing: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var casing: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the clear tools and the display order of this tool in the RTE toolbar.
       */
-    var clear: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var clear: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the clipboard tools and the display order of this tool in the RTE toolbar.
       */
-    var clipboard: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var clipboard: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the customOrderedList tools and the display order of this tool in the RTE toolbar.
       */
@@ -1414,63 +1414,63 @@ object RTE {
     
     /** Specifies the doAction tools and the display order of this tool in the RTE toolbar.
       */
-    var doAction: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var doAction: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the edit tools and the displays tool in the RTE toolbar.
       */
-    var edit: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var edit: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the effect of tools and the display order of this tool in RTE toolbar.
       */
-    var effects: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var effects: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the font tools and the display order of this tool in the RTE toolbar.
       */
-    var font: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var font: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the formatStyle tools and the display order of this tool in the RTE toolbar.
       */
-    var formatStyle: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var formatStyle: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the image tools and the display order of this tool in the RTE toolbar.
       */
-    var images: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var images: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the importExport tools and the display order of this tool in the RTE toolbar.
       */
-    var importExport: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var importExport: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the indent tools and the display order of this tool in the RTE toolbar.
       */
-    var indenting: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var indenting: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the link tools and the display order of this tool in the RTE toolbar.
       */
-    var links: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var links: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the list tools and the display order of this tool in the RTE toolbar.
       */
-    var lists: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var lists: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the media tools and the display order of this tool in the RTE toolbar.
       */
-    var media: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var media: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the print tools and the display order of this tool in the RTE toolbar.
       */
-    var print: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var print: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the style tools and the display order of this tool in the RTE toolbar.
       */
-    var style: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var style: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the table tools and the display order of this tool in the RTE toolbar.
       */
-    var tables: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var tables: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies the view tools and the display order of this tool in the RTE toolbar.
       */
-    var view: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var view: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object Tools {
     
@@ -1481,129 +1481,129 @@ object RTE {
     
     extension [Self <: Tools](x: Self) {
       
-      inline def setAlignment(value: js.Any): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+      inline def setAlignment(value: Any): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
       inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
-      inline def setCasing(value: js.Array[js.Any]): Self = StObject.set(x, "casing", value.asInstanceOf[js.Any])
+      inline def setCasing(value: js.Array[Any]): Self = StObject.set(x, "casing", value.asInstanceOf[js.Any])
       
       inline def setCasingUndefined: Self = StObject.set(x, "casing", js.undefined)
       
-      inline def setCasingVarargs(value: js.Any*): Self = StObject.set(x, "casing", js.Array(value :_*))
+      inline def setCasingVarargs(value: Any*): Self = StObject.set(x, "casing", js.Array(value*))
       
-      inline def setClear(value: js.Array[js.Any]): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: js.Array[Any]): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
       inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
       
-      inline def setClearVarargs(value: js.Any*): Self = StObject.set(x, "clear", js.Array(value :_*))
+      inline def setClearVarargs(value: Any*): Self = StObject.set(x, "clear", js.Array(value*))
       
-      inline def setClipboard(value: js.Array[js.Any]): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
+      inline def setClipboard(value: js.Array[Any]): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
       
       inline def setClipboardUndefined: Self = StObject.set(x, "clipboard", js.undefined)
       
-      inline def setClipboardVarargs(value: js.Any*): Self = StObject.set(x, "clipboard", js.Array(value :_*))
+      inline def setClipboardVarargs(value: Any*): Self = StObject.set(x, "clipboard", js.Array(value*))
       
       inline def setCustomOrderedList(value: js.Array[ToolsCustomOrderedList]): Self = StObject.set(x, "customOrderedList", value.asInstanceOf[js.Any])
       
       inline def setCustomOrderedListUndefined: Self = StObject.set(x, "customOrderedList", js.undefined)
       
-      inline def setCustomOrderedListVarargs(value: ToolsCustomOrderedList*): Self = StObject.set(x, "customOrderedList", js.Array(value :_*))
+      inline def setCustomOrderedListVarargs(value: ToolsCustomOrderedList*): Self = StObject.set(x, "customOrderedList", js.Array(value*))
       
       inline def setCustomUnorderedList(value: js.Array[ToolsCustomUnorderedList]): Self = StObject.set(x, "customUnorderedList", value.asInstanceOf[js.Any])
       
       inline def setCustomUnorderedListUndefined: Self = StObject.set(x, "customUnorderedList", js.undefined)
       
-      inline def setCustomUnorderedListVarargs(value: ToolsCustomUnorderedList*): Self = StObject.set(x, "customUnorderedList", js.Array(value :_*))
+      inline def setCustomUnorderedListVarargs(value: ToolsCustomUnorderedList*): Self = StObject.set(x, "customUnorderedList", js.Array(value*))
       
-      inline def setDoAction(value: js.Array[js.Any]): Self = StObject.set(x, "doAction", value.asInstanceOf[js.Any])
+      inline def setDoAction(value: js.Array[Any]): Self = StObject.set(x, "doAction", value.asInstanceOf[js.Any])
       
       inline def setDoActionUndefined: Self = StObject.set(x, "doAction", js.undefined)
       
-      inline def setDoActionVarargs(value: js.Any*): Self = StObject.set(x, "doAction", js.Array(value :_*))
+      inline def setDoActionVarargs(value: Any*): Self = StObject.set(x, "doAction", js.Array(value*))
       
-      inline def setEdit(value: js.Array[js.Any]): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+      inline def setEdit(value: js.Array[Any]): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
       inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
       
-      inline def setEditVarargs(value: js.Any*): Self = StObject.set(x, "edit", js.Array(value :_*))
+      inline def setEditVarargs(value: Any*): Self = StObject.set(x, "edit", js.Array(value*))
       
-      inline def setEffects(value: js.Array[js.Any]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+      inline def setEffects(value: js.Array[Any]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
       
       inline def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
       
-      inline def setEffectsVarargs(value: js.Any*): Self = StObject.set(x, "effects", js.Array(value :_*))
+      inline def setEffectsVarargs(value: Any*): Self = StObject.set(x, "effects", js.Array(value*))
       
-      inline def setFont(value: js.Array[js.Any]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: js.Array[Any]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
       inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      inline def setFontVarargs(value: js.Any*): Self = StObject.set(x, "font", js.Array(value :_*))
+      inline def setFontVarargs(value: Any*): Self = StObject.set(x, "font", js.Array(value*))
       
-      inline def setFormatStyle(value: js.Array[js.Any]): Self = StObject.set(x, "formatStyle", value.asInstanceOf[js.Any])
+      inline def setFormatStyle(value: js.Array[Any]): Self = StObject.set(x, "formatStyle", value.asInstanceOf[js.Any])
       
       inline def setFormatStyleUndefined: Self = StObject.set(x, "formatStyle", js.undefined)
       
-      inline def setFormatStyleVarargs(value: js.Any*): Self = StObject.set(x, "formatStyle", js.Array(value :_*))
+      inline def setFormatStyleVarargs(value: Any*): Self = StObject.set(x, "formatStyle", js.Array(value*))
       
-      inline def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: js.Array[Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
       inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
-      inline def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: Any*): Self = StObject.set(x, "images", js.Array(value*))
       
-      inline def setImportExport(value: js.Array[js.Any]): Self = StObject.set(x, "importExport", value.asInstanceOf[js.Any])
+      inline def setImportExport(value: js.Array[Any]): Self = StObject.set(x, "importExport", value.asInstanceOf[js.Any])
       
       inline def setImportExportUndefined: Self = StObject.set(x, "importExport", js.undefined)
       
-      inline def setImportExportVarargs(value: js.Any*): Self = StObject.set(x, "importExport", js.Array(value :_*))
+      inline def setImportExportVarargs(value: Any*): Self = StObject.set(x, "importExport", js.Array(value*))
       
-      inline def setIndenting(value: js.Array[js.Any]): Self = StObject.set(x, "indenting", value.asInstanceOf[js.Any])
+      inline def setIndenting(value: js.Array[Any]): Self = StObject.set(x, "indenting", value.asInstanceOf[js.Any])
       
       inline def setIndentingUndefined: Self = StObject.set(x, "indenting", js.undefined)
       
-      inline def setIndentingVarargs(value: js.Any*): Self = StObject.set(x, "indenting", js.Array(value :_*))
+      inline def setIndentingVarargs(value: Any*): Self = StObject.set(x, "indenting", js.Array(value*))
       
-      inline def setLinks(value: js.Array[js.Any]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[Any]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
       inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      inline def setLinksVarargs(value: js.Any*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: Any*): Self = StObject.set(x, "links", js.Array(value*))
       
-      inline def setLists(value: js.Array[js.Any]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
+      inline def setLists(value: js.Array[Any]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
       
       inline def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
       
-      inline def setListsVarargs(value: js.Any*): Self = StObject.set(x, "lists", js.Array(value :_*))
+      inline def setListsVarargs(value: Any*): Self = StObject.set(x, "lists", js.Array(value*))
       
-      inline def setMedia(value: js.Array[js.Any]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: js.Array[Any]): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
       inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
       
-      inline def setMediaVarargs(value: js.Any*): Self = StObject.set(x, "media", js.Array(value :_*))
+      inline def setMediaVarargs(value: Any*): Self = StObject.set(x, "media", js.Array(value*))
       
-      inline def setPrint(value: js.Array[js.Any]): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+      inline def setPrint(value: js.Array[Any]): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
       
       inline def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
       
-      inline def setPrintVarargs(value: js.Any*): Self = StObject.set(x, "print", js.Array(value :_*))
+      inline def setPrintVarargs(value: Any*): Self = StObject.set(x, "print", js.Array(value*))
       
-      inline def setStyle(value: js.Array[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Array[Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: js.Any*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: Any*): Self = StObject.set(x, "style", js.Array(value*))
       
-      inline def setTables(value: js.Array[js.Any]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+      inline def setTables(value: js.Array[Any]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
       
       inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
       
-      inline def setTablesVarargs(value: js.Any*): Self = StObject.set(x, "tables", js.Array(value :_*))
+      inline def setTablesVarargs(value: Any*): Self = StObject.set(x, "tables", js.Array(value*))
       
-      inline def setView(value: js.Array[js.Any]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: js.Array[Any]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
       inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
       
-      inline def setViewVarargs(value: js.Any*): Self = StObject.set(x, "view", js.Array(value :_*))
+      inline def setViewVarargs(value: Any*): Self = StObject.set(x, "view", js.Array(value*))
     }
   }
   

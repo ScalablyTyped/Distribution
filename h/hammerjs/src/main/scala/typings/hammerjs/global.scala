@@ -1,6 +1,10 @@
 package typings.hammerjs
 
 import org.scalablytyped.runtime.Shortcut
+import typings.hammerjs.hammerjsNumbers.`1`
+import typings.hammerjs.hammerjsNumbers.`2`
+import typings.hammerjs.hammerjsNumbers.`4`
+import typings.hammerjs.hammerjsNumbers.`8`
 import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.MouseEvent
@@ -16,7 +20,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Hammer")
   @js.native
-  class Hammer protected ()
+  open class Hammer protected ()
     extends StObject
        with HammerManager {
     def this(element: HTMLElement) = this()
@@ -30,10 +34,11 @@ object global {
     @js.native
     val ^ : js.Object & HammerStatic = js.native
     
+    // DIRECTION_HORIZONTAL | DIRECTION_VERTICAL
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Hammer.Manager")
     @js.native
-    class Manager protected ()
+    open class Manager protected ()
       extends StObject
          with HammerManager {
       def this(element: EventTarget) = this()
@@ -43,7 +48,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Hammer.Pan")
     @js.native
-    class Pan ()
+    open class Pan ()
       extends StObject
          with AttrRecognizer {
       def this(options: RecognizerOptions) = this()
@@ -52,7 +57,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Hammer.Pinch")
     @js.native
-    class Pinch ()
+    open class Pinch ()
       extends StObject
          with AttrRecognizer {
       def this(options: RecognizerOptions) = this()
@@ -61,7 +66,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Hammer.Press")
     @js.native
-    class Press ()
+    open class Press ()
       extends StObject
          with AttrRecognizer {
       def this(options: RecognizerOptions) = this()
@@ -70,7 +75,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Hammer.Recognizer")
     @js.native
-    class Recognizer ()
+    open class Recognizer ()
       extends StObject
          with typings.hammerjs.Recognizer {
       def this(options: RecognizerOptions) = this()
@@ -79,7 +84,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Hammer.Rotate")
     @js.native
-    class Rotate ()
+    open class Rotate ()
       extends StObject
          with AttrRecognizer {
       def this(options: RecognizerOptions) = this()
@@ -88,7 +93,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Hammer.Swipe")
     @js.native
-    class Swipe ()
+    open class Swipe ()
       extends StObject
          with AttrRecognizer {
       def this(options: RecognizerOptions) = this()
@@ -97,7 +102,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Hammer.Tap")
     @js.native
-    class Tap ()
+    open class Tap ()
       extends StObject
          with AttrRecognizer {
       def this(options: RecognizerOptions) = this()
@@ -111,7 +116,7 @@ object global {
   
   @JSGlobal("HammerInput")
   @js.native
-  class HammerInput protected ()
+  open class HammerInput protected ()
     extends StObject
        with typings.hammerjs.HammerInput {
     def this(manager: HammerManager, callback: js.Function) = this()
@@ -126,7 +131,7 @@ object global {
     
     /** Array with all new/moved/lost pointers. */
     /* CompleteClass */
-    var changedPointers: js.Array[js.Any] = js.native
+    var changedPointers: js.Array[Any] = js.native
     
     /** Total time in ms since the first input. */
     /* CompleteClass */
@@ -153,7 +158,7 @@ object global {
     
     /** Event type, matches the INPUT constants. */
     /* CompleteClass */
-    var eventType: Double = js.native
+    var eventType: `1` | `2` | `4` | `8` = js.native
     
     /* CompleteClass */
     override def handler(): Unit = js.native
@@ -169,9 +174,22 @@ object global {
     /* CompleteClass */
     var isFirst: Boolean = js.native
     
+    /** Maximum number of pointers detected in the gesture */
+    /* CompleteClass */
+    var maxPointers: Double = js.native
+    
     /** Direction moved from it's starting point. Matches the DIRECTION constants. */
     /* CompleteClass */
     var offsetDirection: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocity: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocityX: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocityY: Double = js.native
     
     /** Primary pointer type, could be touch, mouse, pen or kinect. */
     /* CompleteClass */
@@ -179,7 +197,7 @@ object global {
     
     /** Array with all pointers, including the ended pointers (touchend, mouseup). */
     /* CompleteClass */
-    var pointers: js.Array[js.Any] = js.native
+    var pointers: js.Array[Any] = js.native
     
     /** Reference to the srcEvent.preventDefault() method. Only for experts! */
     /* CompleteClass */
@@ -200,6 +218,10 @@ object global {
     /** Target that received the event. */
     /* CompleteClass */
     var target: HTMLElement = js.native
+    
+    /** Timestamp of a gesture */
+    /* CompleteClass */
+    var timeStamp: Double = js.native
     
     /** Name of the event. Like panstart. */
     /* CompleteClass */
@@ -220,7 +242,7 @@ object global {
   
   @JSGlobal("MouseInput")
   @js.native
-  class MouseInput protected ()
+  open class MouseInput protected ()
     extends StObject
        with typings.hammerjs.HammerInput {
     def this(manager: HammerManager, callback: js.Function) = this()
@@ -235,7 +257,7 @@ object global {
     
     /** Array with all new/moved/lost pointers. */
     /* CompleteClass */
-    var changedPointers: js.Array[js.Any] = js.native
+    var changedPointers: js.Array[Any] = js.native
     
     /** Total time in ms since the first input. */
     /* CompleteClass */
@@ -262,7 +284,7 @@ object global {
     
     /** Event type, matches the INPUT constants. */
     /* CompleteClass */
-    var eventType: Double = js.native
+    var eventType: `1` | `2` | `4` | `8` = js.native
     
     /* CompleteClass */
     override def handler(): Unit = js.native
@@ -278,9 +300,22 @@ object global {
     /* CompleteClass */
     var isFirst: Boolean = js.native
     
+    /** Maximum number of pointers detected in the gesture */
+    /* CompleteClass */
+    var maxPointers: Double = js.native
+    
     /** Direction moved from it's starting point. Matches the DIRECTION constants. */
     /* CompleteClass */
     var offsetDirection: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocity: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocityX: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocityY: Double = js.native
     
     /** Primary pointer type, could be touch, mouse, pen or kinect. */
     /* CompleteClass */
@@ -288,7 +323,7 @@ object global {
     
     /** Array with all pointers, including the ended pointers (touchend, mouseup). */
     /* CompleteClass */
-    var pointers: js.Array[js.Any] = js.native
+    var pointers: js.Array[Any] = js.native
     
     /** Reference to the srcEvent.preventDefault() method. Only for experts! */
     /* CompleteClass */
@@ -309,6 +344,10 @@ object global {
     /** Target that received the event. */
     /* CompleteClass */
     var target: HTMLElement = js.native
+    
+    /** Timestamp of a gesture */
+    /* CompleteClass */
+    var timeStamp: Double = js.native
     
     /** Name of the event. Like panstart. */
     /* CompleteClass */
@@ -329,7 +368,7 @@ object global {
   
   @JSGlobal("PointerEventInput")
   @js.native
-  class PointerEventInput protected ()
+  open class PointerEventInput protected ()
     extends StObject
        with typings.hammerjs.HammerInput {
     def this(manager: HammerManager, callback: js.Function) = this()
@@ -344,7 +383,7 @@ object global {
     
     /** Array with all new/moved/lost pointers. */
     /* CompleteClass */
-    var changedPointers: js.Array[js.Any] = js.native
+    var changedPointers: js.Array[Any] = js.native
     
     /** Total time in ms since the first input. */
     /* CompleteClass */
@@ -371,7 +410,7 @@ object global {
     
     /** Event type, matches the INPUT constants. */
     /* CompleteClass */
-    var eventType: Double = js.native
+    var eventType: `1` | `2` | `4` | `8` = js.native
     
     /* CompleteClass */
     override def handler(): Unit = js.native
@@ -387,9 +426,22 @@ object global {
     /* CompleteClass */
     var isFirst: Boolean = js.native
     
+    /** Maximum number of pointers detected in the gesture */
+    /* CompleteClass */
+    var maxPointers: Double = js.native
+    
     /** Direction moved from it's starting point. Matches the DIRECTION constants. */
     /* CompleteClass */
     var offsetDirection: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocity: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocityX: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocityY: Double = js.native
     
     /** Primary pointer type, could be touch, mouse, pen or kinect. */
     /* CompleteClass */
@@ -397,7 +449,7 @@ object global {
     
     /** Array with all pointers, including the ended pointers (touchend, mouseup). */
     /* CompleteClass */
-    var pointers: js.Array[js.Any] = js.native
+    var pointers: js.Array[Any] = js.native
     
     /** Reference to the srcEvent.preventDefault() method. Only for experts! */
     /* CompleteClass */
@@ -418,6 +470,10 @@ object global {
     /** Target that received the event. */
     /* CompleteClass */
     var target: HTMLElement = js.native
+    
+    /** Timestamp of a gesture */
+    /* CompleteClass */
+    var timeStamp: Double = js.native
     
     /** Name of the event. Like panstart. */
     /* CompleteClass */
@@ -438,7 +494,7 @@ object global {
   
   @JSGlobal("SingleTouchInput")
   @js.native
-  class SingleTouchInput protected ()
+  open class SingleTouchInput protected ()
     extends StObject
        with typings.hammerjs.HammerInput {
     def this(manager: HammerManager, callback: js.Function) = this()
@@ -453,7 +509,7 @@ object global {
     
     /** Array with all new/moved/lost pointers. */
     /* CompleteClass */
-    var changedPointers: js.Array[js.Any] = js.native
+    var changedPointers: js.Array[Any] = js.native
     
     /** Total time in ms since the first input. */
     /* CompleteClass */
@@ -480,7 +536,7 @@ object global {
     
     /** Event type, matches the INPUT constants. */
     /* CompleteClass */
-    var eventType: Double = js.native
+    var eventType: `1` | `2` | `4` | `8` = js.native
     
     /* CompleteClass */
     override def handler(): Unit = js.native
@@ -496,9 +552,22 @@ object global {
     /* CompleteClass */
     var isFirst: Boolean = js.native
     
+    /** Maximum number of pointers detected in the gesture */
+    /* CompleteClass */
+    var maxPointers: Double = js.native
+    
     /** Direction moved from it's starting point. Matches the DIRECTION constants. */
     /* CompleteClass */
     var offsetDirection: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocity: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocityX: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocityY: Double = js.native
     
     /** Primary pointer type, could be touch, mouse, pen or kinect. */
     /* CompleteClass */
@@ -506,7 +575,7 @@ object global {
     
     /** Array with all pointers, including the ended pointers (touchend, mouseup). */
     /* CompleteClass */
-    var pointers: js.Array[js.Any] = js.native
+    var pointers: js.Array[Any] = js.native
     
     /** Reference to the srcEvent.preventDefault() method. Only for experts! */
     /* CompleteClass */
@@ -527,6 +596,10 @@ object global {
     /** Target that received the event. */
     /* CompleteClass */
     var target: HTMLElement = js.native
+    
+    /** Timestamp of a gesture */
+    /* CompleteClass */
+    var timeStamp: Double = js.native
     
     /** Name of the event. Like panstart. */
     /* CompleteClass */
@@ -547,7 +620,7 @@ object global {
   
   @JSGlobal("TouchAction")
   @js.native
-  class TouchAction protected ()
+  open class TouchAction protected ()
     extends StObject
        with typings.hammerjs.TouchAction {
     def this(manager: HammerManager, value: String) = this()
@@ -559,7 +632,7 @@ object global {
     override def preventDefaults(input: typings.hammerjs.HammerInput): Unit = js.native
     
     /* CompleteClass */
-    override def preventSrc(srcEvent: js.Any): Unit = js.native
+    override def preventSrc(srcEvent: Any): Unit = js.native
     
     /* CompleteClass */
     override def set(value: String): Unit = js.native
@@ -570,7 +643,7 @@ object global {
   
   @JSGlobal("TouchInput")
   @js.native
-  class TouchInput protected ()
+  open class TouchInput protected ()
     extends StObject
        with typings.hammerjs.HammerInput {
     def this(manager: HammerManager, callback: js.Function) = this()
@@ -585,7 +658,7 @@ object global {
     
     /** Array with all new/moved/lost pointers. */
     /* CompleteClass */
-    var changedPointers: js.Array[js.Any] = js.native
+    var changedPointers: js.Array[Any] = js.native
     
     /** Total time in ms since the first input. */
     /* CompleteClass */
@@ -612,7 +685,7 @@ object global {
     
     /** Event type, matches the INPUT constants. */
     /* CompleteClass */
-    var eventType: Double = js.native
+    var eventType: `1` | `2` | `4` | `8` = js.native
     
     /* CompleteClass */
     override def handler(): Unit = js.native
@@ -628,9 +701,22 @@ object global {
     /* CompleteClass */
     var isFirst: Boolean = js.native
     
+    /** Maximum number of pointers detected in the gesture */
+    /* CompleteClass */
+    var maxPointers: Double = js.native
+    
     /** Direction moved from it's starting point. Matches the DIRECTION constants. */
     /* CompleteClass */
     var offsetDirection: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocity: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocityX: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocityY: Double = js.native
     
     /** Primary pointer type, could be touch, mouse, pen or kinect. */
     /* CompleteClass */
@@ -638,7 +724,7 @@ object global {
     
     /** Array with all pointers, including the ended pointers (touchend, mouseup). */
     /* CompleteClass */
-    var pointers: js.Array[js.Any] = js.native
+    var pointers: js.Array[Any] = js.native
     
     /** Reference to the srcEvent.preventDefault() method. Only for experts! */
     /* CompleteClass */
@@ -659,6 +745,10 @@ object global {
     /** Target that received the event. */
     /* CompleteClass */
     var target: HTMLElement = js.native
+    
+    /** Timestamp of a gesture */
+    /* CompleteClass */
+    var timeStamp: Double = js.native
     
     /** Name of the event. Like panstart. */
     /* CompleteClass */
@@ -679,7 +769,7 @@ object global {
   
   @JSGlobal("TouchMouseInput")
   @js.native
-  class TouchMouseInput protected ()
+  open class TouchMouseInput protected ()
     extends StObject
        with typings.hammerjs.HammerInput {
     def this(manager: HammerManager, callback: js.Function) = this()
@@ -694,7 +784,7 @@ object global {
     
     /** Array with all new/moved/lost pointers. */
     /* CompleteClass */
-    var changedPointers: js.Array[js.Any] = js.native
+    var changedPointers: js.Array[Any] = js.native
     
     /** Total time in ms since the first input. */
     /* CompleteClass */
@@ -721,7 +811,7 @@ object global {
     
     /** Event type, matches the INPUT constants. */
     /* CompleteClass */
-    var eventType: Double = js.native
+    var eventType: `1` | `2` | `4` | `8` = js.native
     
     /* CompleteClass */
     override def handler(): Unit = js.native
@@ -737,9 +827,22 @@ object global {
     /* CompleteClass */
     var isFirst: Boolean = js.native
     
+    /** Maximum number of pointers detected in the gesture */
+    /* CompleteClass */
+    var maxPointers: Double = js.native
+    
     /** Direction moved from it's starting point. Matches the DIRECTION constants. */
     /* CompleteClass */
     var offsetDirection: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocity: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocityX: Double = js.native
+    
+    /* CompleteClass */
+    var overallVelocityY: Double = js.native
     
     /** Primary pointer type, could be touch, mouse, pen or kinect. */
     /* CompleteClass */
@@ -747,7 +850,7 @@ object global {
     
     /** Array with all pointers, including the ended pointers (touchend, mouseup). */
     /* CompleteClass */
-    var pointers: js.Array[js.Any] = js.native
+    var pointers: js.Array[Any] = js.native
     
     /** Reference to the srcEvent.preventDefault() method. Only for experts! */
     /* CompleteClass */
@@ -768,6 +871,10 @@ object global {
     /** Target that received the event. */
     /* CompleteClass */
     var target: HTMLElement = js.native
+    
+    /** Timestamp of a gesture */
+    /* CompleteClass */
+    var timeStamp: Double = js.native
     
     /** Name of the event. Like panstart. */
     /* CompleteClass */

@@ -131,7 +131,7 @@ object VisualMap {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setController(value: InRange): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
@@ -193,7 +193,7 @@ object VisualMap {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
       
       inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
@@ -203,7 +203,7 @@ object VisualMap {
       
       inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
+      inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value*))
       
       inline def setRealtime(value: Boolean): Self = StObject.set(x, "realtime", value.asInstanceOf[js.Any])
       
@@ -217,7 +217,7 @@ object VisualMap {
       
       inline def setSeriesIndexUndefined: Self = StObject.set(x, "seriesIndex", js.undefined)
       
-      inline def setSeriesIndexVarargs(value: Double*): Self = StObject.set(x, "seriesIndex", js.Array(value :_*))
+      inline def setSeriesIndexVarargs(value: Double*): Self = StObject.set(x, "seriesIndex", js.Array(value*))
       
       inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
@@ -235,7 +235,7 @@ object VisualMap {
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+      inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
       
       inline def setTop(value: Double | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
@@ -417,13 +417,13 @@ object VisualMap {
       
       inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
       
-      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setColor(value: js.Array[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setController(value: InRange): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
@@ -501,13 +501,13 @@ object VisualMap {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
       
       inline def setPieces(value: js.Array[PiecesObject]): Self = StObject.set(x, "pieces", value.asInstanceOf[js.Any])
       
       inline def setPiecesUndefined: Self = StObject.set(x, "pieces", js.undefined)
       
-      inline def setPiecesVarargs(value: PiecesObject*): Self = StObject.set(x, "pieces", js.Array(value :_*))
+      inline def setPiecesVarargs(value: PiecesObject*): Self = StObject.set(x, "pieces", js.Array(value*))
       
       inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
@@ -525,7 +525,7 @@ object VisualMap {
       
       inline def setSeriesIndexUndefined: Self = StObject.set(x, "seriesIndex", js.undefined)
       
-      inline def setSeriesIndexVarargs(value: Double*): Self = StObject.set(x, "seriesIndex", js.Array(value :_*))
+      inline def setSeriesIndexVarargs(value: Double*): Self = StObject.set(x, "seriesIndex", js.Array(value*))
       
       inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
@@ -545,7 +545,7 @@ object VisualMap {
       
       inline def setTextGapUndefined: Self = StObject.set(x, "textGap", js.undefined)
       
-      inline def setTextGapVarargs(value: Double*): Self = StObject.set(x, "textGap", js.Array(value :_*))
+      inline def setTextGapVarargs(value: Double*): Self = StObject.set(x, "textGap", js.Array(value*))
       
       inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
@@ -553,7 +553,7 @@ object VisualMap {
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+      inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
       
       inline def setTop(value: Double | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
@@ -606,35 +606,35 @@ object VisualMap {
       
       inline def setColorAlphaUndefined: Self = StObject.set(x, "colorAlpha", js.undefined)
       
-      inline def setColorAlphaVarargs(value: Double*): Self = StObject.set(x, "colorAlpha", js.Array(value :_*))
+      inline def setColorAlphaVarargs(value: Double*): Self = StObject.set(x, "colorAlpha", js.Array(value*))
       
       inline def setColorHue(value: Double | js.Array[Double]): Self = StObject.set(x, "colorHue", value.asInstanceOf[js.Any])
       
       inline def setColorHueUndefined: Self = StObject.set(x, "colorHue", js.undefined)
       
-      inline def setColorHueVarargs(value: Double*): Self = StObject.set(x, "colorHue", js.Array(value :_*))
+      inline def setColorHueVarargs(value: Double*): Self = StObject.set(x, "colorHue", js.Array(value*))
       
       inline def setColorLightness(value: Double | js.Array[Double]): Self = StObject.set(x, "colorLightness", value.asInstanceOf[js.Any])
       
       inline def setColorLightnessUndefined: Self = StObject.set(x, "colorLightness", js.undefined)
       
-      inline def setColorLightnessVarargs(value: Double*): Self = StObject.set(x, "colorLightness", js.Array(value :_*))
+      inline def setColorLightnessVarargs(value: Double*): Self = StObject.set(x, "colorLightness", js.Array(value*))
       
       inline def setColorSaturation(value: Double | js.Array[Double]): Self = StObject.set(x, "colorSaturation", value.asInstanceOf[js.Any])
       
       inline def setColorSaturationUndefined: Self = StObject.set(x, "colorSaturation", js.undefined)
       
-      inline def setColorSaturationVarargs(value: Double*): Self = StObject.set(x, "colorSaturation", js.Array(value :_*))
+      inline def setColorSaturationVarargs(value: Double*): Self = StObject.set(x, "colorSaturation", js.Array(value*))
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setOpacity(value: Double | js.Array[Double]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setOpacityVarargs(value: Double*): Self = StObject.set(x, "opacity", js.Array(value :_*))
+      inline def setOpacityVarargs(value: Double*): Self = StObject.set(x, "opacity", js.Array(value*))
       
       inline def setSymbol(value: String | js.Array[String]): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
@@ -642,11 +642,11 @@ object VisualMap {
       
       inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
       
-      inline def setSymbolSizeVarargs(value: Double*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+      inline def setSymbolSizeVarargs(value: Double*): Self = StObject.set(x, "symbolSize", js.Array(value*))
       
       inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
-      inline def setSymbolVarargs(value: String*): Self = StObject.set(x, "symbol", js.Array(value :_*))
+      inline def setSymbolVarargs(value: String*): Self = StObject.set(x, "symbol", js.Array(value*))
     }
   }
 }

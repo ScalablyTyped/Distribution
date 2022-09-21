@@ -1,366 +1,281 @@
 package typings.jspdf
 
+import typings.jspdf.jspdfBooleans.`true`
+import typings.jspdf.jspdfStrings.arraybuffer
+import typings.jspdf.jspdfStrings.blob
+import typings.jspdf.jspdfStrings.datauristring
+import typings.jspdf.jspdfStrings.dataurlstring
+import typings.jspdf.jspdfStrings.truetype
+import typings.jspdf.mod.AcroFormButton
+import typings.jspdf.mod.AcroFormCheckBox
+import typings.jspdf.mod.AcroFormChoiceField
+import typings.jspdf.mod.AcroFormComboBox
+import typings.jspdf.mod.AcroFormEditBox
+import typings.jspdf.mod.AcroFormListBox
+import typings.jspdf.mod.AcroFormPasswordField
+import typings.jspdf.mod.AcroFormPushButton
+import typings.jspdf.mod.AcroFormRadioButton
+import typings.jspdf.mod.AcroFormTextField
+import typings.jspdf.mod.Context2d
+import typings.jspdf.mod.Matrix
+import typings.jspdf.mod.PubSub
+import typings.jspdf.mod.jsPDF
+import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Align extends StObject {
+  trait Appearance extends StObject {
     
-    var align: js.UndefOr[String] = js.undefined
+    def Appearance(): Any
     
-    var name: String
+    def Button(): AcroFormButton
     
-    var padding: js.UndefOr[Double] = js.undefined
+    def CheckBox(): AcroFormCheckBox
     
-    var prompt: js.UndefOr[String] = js.undefined
+    def ChoiceField(): AcroFormChoiceField
     
-    var width: js.UndefOr[Double] = js.undefined
+    def ComboBox(): AcroFormComboBox
+    
+    def EditBox(): AcroFormEditBox
+    
+    def ListBox(): AcroFormListBox
+    
+    def PasswordField(): AcroFormPasswordField
+    
+    def PushButton(): AcroFormPushButton
+    
+    def RadioButton(): AcroFormRadioButton
+    
+    def TextField(): AcroFormTextField
   }
-  object Align {
+  object Appearance {
     
-    inline def apply(name: String): Align = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Align]
+    inline def apply(
+      Appearance: () => Any,
+      Button: () => AcroFormButton,
+      CheckBox: () => AcroFormCheckBox,
+      ChoiceField: () => AcroFormChoiceField,
+      ComboBox: () => AcroFormComboBox,
+      EditBox: () => AcroFormEditBox,
+      ListBox: () => AcroFormListBox,
+      PasswordField: () => AcroFormPasswordField,
+      PushButton: () => AcroFormPushButton,
+      RadioButton: () => AcroFormRadioButton,
+      TextField: () => AcroFormTextField
+    ): Appearance = {
+      val __obj = js.Dynamic.literal(Appearance = js.Any.fromFunction0(Appearance), Button = js.Any.fromFunction0(Button), CheckBox = js.Any.fromFunction0(CheckBox), ChoiceField = js.Any.fromFunction0(ChoiceField), ComboBox = js.Any.fromFunction0(ComboBox), EditBox = js.Any.fromFunction0(EditBox), ListBox = js.Any.fromFunction0(ListBox), PasswordField = js.Any.fromFunction0(PasswordField), PushButton = js.Any.fromFunction0(PushButton), RadioButton = js.Any.fromFunction0(RadioButton), TextField = js.Any.fromFunction0(TextField))
+      __obj.asInstanceOf[Appearance]
     }
     
-    extension [Self <: Align](x: Self) {
+    extension [Self <: Appearance](x: Self) {
       
-      inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAppearance(value: () => Any): Self = StObject.set(x, "Appearance", js.Any.fromFunction0(value))
       
-      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setButton(value: () => AcroFormButton): Self = StObject.set(x, "Button", js.Any.fromFunction0(value))
       
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setCheckBox(value: () => AcroFormCheckBox): Self = StObject.set(x, "CheckBox", js.Any.fromFunction0(value))
       
-      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setChoiceField(value: () => AcroFormChoiceField): Self = StObject.set(x, "ChoiceField", js.Any.fromFunction0(value))
       
-      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setComboBox(value: () => AcroFormComboBox): Self = StObject.set(x, "ComboBox", js.Any.fromFunction0(value))
       
-      inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setEditBox(value: () => AcroFormEditBox): Self = StObject.set(x, "EditBox", js.Any.fromFunction0(value))
       
-      inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+      inline def setListBox(value: () => AcroFormListBox): Self = StObject.set(x, "ListBox", js.Any.fromFunction0(value))
       
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setPasswordField(value: () => AcroFormPasswordField): Self = StObject.set(x, "PasswordField", js.Any.fromFunction0(value))
       
-      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setPushButton(value: () => AcroFormPushButton): Self = StObject.set(x, "PushButton", js.Any.fromFunction0(value))
+      
+      inline def setRadioButton(value: () => AcroFormRadioButton): Self = StObject.set(x, "RadioButton", js.Any.fromFunction0(value))
+      
+      inline def setTextField(value: () => AcroFormTextField): Self = StObject.set(x, "TextField", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
-  trait Arc extends StObject {
+  trait Autoencode extends StObject {
     
-    def arc(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, anticlockwise: js.Any): Unit = js.native
+    var autoencode: Boolean
     
-    def beginPath(): Unit = js.native
+    var noBOM: Boolean
+  }
+  object Autoencode {
     
-    def bezierCurveTo(x1: Double, y1: Double, x2: Double, y2: Double, x: Double, y: Double): Unit = js.native
+    inline def apply(autoencode: Boolean, noBOM: Boolean): Autoencode = {
+      val __obj = js.Dynamic.literal(autoencode = autoencode.asInstanceOf[js.Any], noBOM = noBOM.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Autoencode]
+    }
     
-    def clearRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
-    
-    def closePath(): Unit = js.native
-    
-    def drawImage(img: String, x: Double, y: Double, w: Double, h: Double): Unit = js.native
-    def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Double): Unit = js.native
-    def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Double, y2: Double): Unit = js.native
-    def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Double, y2: Double, w2: Double): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: Double,
-      y2: Double,
-      w2: Double,
-      h2: Double
-    ): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: Double,
-      y2: Double,
-      w2: Unit,
-      h2: Double
-    ): Unit = js.native
-    def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Double, y2: Unit, w2: Double): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: Double,
-      y2: Unit,
-      w2: Double,
-      h2: Double
-    ): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: Double,
-      y2: Unit,
-      w2: Unit,
-      h2: Double
-    ): Unit = js.native
-    def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Unit, y2: Double): Unit = js.native
-    def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Unit, y2: Double, w2: Double): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: Unit,
-      y2: Double,
-      w2: Double,
-      h2: Double
-    ): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: Unit,
-      y2: Double,
-      w2: Unit,
-      h2: Double
-    ): Unit = js.native
-    def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Unit, y2: Unit, w2: Double): Unit = js.native
-    def drawImage(
-      img: String,
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      x2: Unit,
-      y2: Unit,
-      w2: Double,
-      h2: Double
-    ): Unit = js.native
-    def drawImage(img: String, x: Double, y: Double, w: Double, h: Double, x2: Unit, y2: Unit, w2: Unit, h2: Double): Unit = js.native
-    
-    def f2(number: Double): Double = js.native
-    
-    def fill(): Unit = js.native
-    
-    def fillRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
-    
-    def fillText(text: String, x: Double, y: Double, maxWidth: Double): Unit = js.native
-    def fillText(text: js.Array[String], x: Double, y: Double, maxWidth: Double): Unit = js.native
-    
-    def getTextBaseline(): String = js.native
-    
-    var lastBreak: Double = js.native
-    
-    def lineTo(x: Double, y: Double): Unit = js.native
-    
-    def measureText(text: String): Width = js.native
-    
-    def moveTo(x: Double, y: Double): Unit = js.native
-    
-    var pageBreaks: js.Array[js.Any] = js.native
-    
-    var pageWrapX: Double = js.native
-    
-    var pageWrapXEnabled: Boolean = js.native
-    
-    var pageWrapY: Double = js.native
-    
-    var pageWrapYEnabled: Boolean = js.native
-    
-    def quadraticCurveTo(x1: Double, y1: Double, x: Double, y: Double): Unit = js.native
-    
-    def restore(): Unit = js.native
-    
-    def save(): Unit = js.native
-    
-    def setFillStyle(style: String): Unit = js.native
-    
-    def setFont(font: String): Unit = js.native
-    
-    def setLineCap(style: String): Unit = js.native
-    
-    def setLineJoin(style: String): Unit = js.native
-    
-    def setLineWidth(width: Double): Unit = js.native
-    
-    def setStrokeStyle(style: String): Unit = js.native
-    
-    def setTextBaseline(baseline: String): Unit = js.native
-    
-    def stroke(): Unit = js.native
-    
-    def strokeRect(x: Double, y: Double, w: Double, h: Double): Unit = js.native
-    
-    def strokeText(text: String, x: Double, y: Double, maxWidth: Double): Unit = js.native
-    def strokeText(text: js.Array[String], x: Double, y: Double, maxWidth: Double): Unit = js.native
-    
-    def translate(x: Double, y: Double): Unit = js.native
+    extension [Self <: Autoencode](x: Self) {
+      
+      inline def setAutoencode(value: Boolean): Self = StObject.set(x, "autoencode", value.asInstanceOf[js.Any])
+      
+      inline def setNoBOM(value: Boolean): Self = StObject.set(x, "noBOM", value.asInstanceOf[js.Any])
+    }
   }
   
-  trait Collections extends StObject {
+  trait Events extends StObject {
     
-    var collections: js.Any
+    var events: PubSub
     
-    var events: js.Any
-    
-    def f2(number: Double): Double
-    
-    def getCoordinateString(value: Double): Double
-    
-    def getCurrentPageInfo(): js.Any
-    
-    def getFont(): js.Any
-    
-    def getFontSize(): Double
-    
-    def getLineHeight(): Double
-    
-    def getNumberOfPages(): Double
-    
-    def getPageInfo(pageNumberOneBased: Double): js.Any
-    
-    def getStyle(style: String): js.Any
-    
-    def getVerticalCoordinateString(value: Double): Double
-    
-    def newAdditionalObject(): js.Any
-    
-    def newObject(): Double
-    
-    def newObjectDeferred(): Double
-    
-    def newObjectDeferredBegin(oid: Double): Unit
-    
-    def out(string: String): Unit
-    
-    def output(`type`: js.Any, options: js.Any): js.Any
+    def getEncryptor(objectId: Double): js.Function1[/* data */ String, String]
     
     var pageSize: GetHeight
     
     var pages: js.Array[Double]
     
-    def pdfEscape(text: String, flags: js.Any): js.Any
-    
-    def putStream(str: String): Unit
-    
     var scaleFactor: Double
-    
-    def write(string1: String): js.Any
   }
-  object Collections {
+  object Events {
     
     inline def apply(
-      collections: js.Any,
-      events: js.Any,
-      f2: Double => Double,
-      getCoordinateString: Double => Double,
-      getCurrentPageInfo: () => js.Any,
-      getFont: () => js.Any,
-      getFontSize: () => Double,
-      getLineHeight: () => Double,
-      getNumberOfPages: () => Double,
-      getPageInfo: Double => js.Any,
-      getStyle: String => js.Any,
-      getVerticalCoordinateString: Double => Double,
-      newAdditionalObject: () => js.Any,
-      newObject: () => Double,
-      newObjectDeferred: () => Double,
-      newObjectDeferredBegin: Double => Unit,
-      out: String => Unit,
-      output: (js.Any, js.Any) => js.Any,
+      events: PubSub,
+      getEncryptor: Double => js.Function1[/* data */ String, String],
       pageSize: GetHeight,
       pages: js.Array[Double],
-      pdfEscape: (String, js.Any) => js.Any,
-      putStream: String => Unit,
-      scaleFactor: Double,
-      write: String => js.Any
-    ): Collections = {
-      val __obj = js.Dynamic.literal(collections = collections.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], f2 = js.Any.fromFunction1(f2), getCoordinateString = js.Any.fromFunction1(getCoordinateString), getCurrentPageInfo = js.Any.fromFunction0(getCurrentPageInfo), getFont = js.Any.fromFunction0(getFont), getFontSize = js.Any.fromFunction0(getFontSize), getLineHeight = js.Any.fromFunction0(getLineHeight), getNumberOfPages = js.Any.fromFunction0(getNumberOfPages), getPageInfo = js.Any.fromFunction1(getPageInfo), getStyle = js.Any.fromFunction1(getStyle), getVerticalCoordinateString = js.Any.fromFunction1(getVerticalCoordinateString), newAdditionalObject = js.Any.fromFunction0(newAdditionalObject), newObject = js.Any.fromFunction0(newObject), newObjectDeferred = js.Any.fromFunction0(newObjectDeferred), newObjectDeferredBegin = js.Any.fromFunction1(newObjectDeferredBegin), out = js.Any.fromFunction1(out), output = js.Any.fromFunction2(output), pageSize = pageSize.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], pdfEscape = js.Any.fromFunction2(pdfEscape), putStream = js.Any.fromFunction1(putStream), scaleFactor = scaleFactor.asInstanceOf[js.Any], write = js.Any.fromFunction1(write))
-      __obj.asInstanceOf[Collections]
+      scaleFactor: Double
+    ): Events = {
+      val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], getEncryptor = js.Any.fromFunction1(getEncryptor), pageSize = pageSize.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], scaleFactor = scaleFactor.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Collections](x: Self) {
+    extension [Self <: Events](x: Self) {
       
-      inline def setCollections(value: js.Any): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
+      inline def setEvents(value: PubSub): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
-      
-      inline def setF2(value: Double => Double): Self = StObject.set(x, "f2", js.Any.fromFunction1(value))
-      
-      inline def setGetCoordinateString(value: Double => Double): Self = StObject.set(x, "getCoordinateString", js.Any.fromFunction1(value))
-      
-      inline def setGetCurrentPageInfo(value: () => js.Any): Self = StObject.set(x, "getCurrentPageInfo", js.Any.fromFunction0(value))
-      
-      inline def setGetFont(value: () => js.Any): Self = StObject.set(x, "getFont", js.Any.fromFunction0(value))
-      
-      inline def setGetFontSize(value: () => Double): Self = StObject.set(x, "getFontSize", js.Any.fromFunction0(value))
-      
-      inline def setGetLineHeight(value: () => Double): Self = StObject.set(x, "getLineHeight", js.Any.fromFunction0(value))
-      
-      inline def setGetNumberOfPages(value: () => Double): Self = StObject.set(x, "getNumberOfPages", js.Any.fromFunction0(value))
-      
-      inline def setGetPageInfo(value: Double => js.Any): Self = StObject.set(x, "getPageInfo", js.Any.fromFunction1(value))
-      
-      inline def setGetStyle(value: String => js.Any): Self = StObject.set(x, "getStyle", js.Any.fromFunction1(value))
-      
-      inline def setGetVerticalCoordinateString(value: Double => Double): Self = StObject.set(x, "getVerticalCoordinateString", js.Any.fromFunction1(value))
-      
-      inline def setNewAdditionalObject(value: () => js.Any): Self = StObject.set(x, "newAdditionalObject", js.Any.fromFunction0(value))
-      
-      inline def setNewObject(value: () => Double): Self = StObject.set(x, "newObject", js.Any.fromFunction0(value))
-      
-      inline def setNewObjectDeferred(value: () => Double): Self = StObject.set(x, "newObjectDeferred", js.Any.fromFunction0(value))
-      
-      inline def setNewObjectDeferredBegin(value: Double => Unit): Self = StObject.set(x, "newObjectDeferredBegin", js.Any.fromFunction1(value))
-      
-      inline def setOut(value: String => Unit): Self = StObject.set(x, "out", js.Any.fromFunction1(value))
-      
-      inline def setOutput(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "output", js.Any.fromFunction2(value))
+      inline def setGetEncryptor(value: Double => js.Function1[/* data */ String, String]): Self = StObject.set(x, "getEncryptor", js.Any.fromFunction1(value))
       
       inline def setPageSize(value: GetHeight): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
       inline def setPages(value: js.Array[Double]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      inline def setPagesVarargs(value: Double*): Self = StObject.set(x, "pages", js.Array(value :_*))
-      
-      inline def setPdfEscape(value: (String, js.Any) => js.Any): Self = StObject.set(x, "pdfEscape", js.Any.fromFunction2(value))
-      
-      inline def setPutStream(value: String => Unit): Self = StObject.set(x, "putStream", js.Any.fromFunction1(value))
+      inline def setPagesVarargs(value: Double*): Self = StObject.set(x, "pages", js.Array(value*))
       
       inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
-      
-      inline def setWrite(value: String => js.Any): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
+  trait Filename extends StObject {
+    
+    var filename: js.UndefOr[String] = js.undefined
+  }
+  object Filename {
+    
+    inline def apply(): Filename = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Filename]
+    }
+    
+    extension [Self <: Filename](x: Self) {
+      
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    }
+  }
+  
+  @js.native
+  trait FnCall extends StObject {
+    
+    def apply(): String = js.native
+    def apply(`type`: datauristring | dataurlstring): String = js.native
+    def apply(`type`: datauristring | dataurlstring, options: Filename): String = js.native
+    def apply(`type`: arraybuffer): js.typedarray.ArrayBuffer = js.native
+    def apply(`type`: blob): Blob = js.native
+  }
+  
+  trait Font extends StObject {
+    
+    var font: js.UndefOr[String] = js.undefined
+    
+    var fontSize: js.UndefOr[Double] = js.undefined
+    
+    var maxWidth: js.UndefOr[Double] = js.undefined
+    
+    var scaleFactor: js.UndefOr[Double] = js.undefined
+  }
+  object Font {
+    
+    inline def apply(): Font = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Font]
+    }
+    
+    extension [Self <: Font](x: Self) {
+      
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      
+      inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+      
+      inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
+    }
+  }
+  
+  trait Fontsize extends StObject {
+    
+    var `font-size`: Double
+  }
+  object Fontsize {
+    
+    inline def apply(`font-size`: Double): Fontsize = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("font-size")(`font-size`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Fontsize]
+    }
+    
+    extension [Self <: Fontsize](x: Self) {
+      
+      inline def `setFont-size`(value: Double): Self = StObject.set(x, "font-size", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Format extends StObject {
+    
+    var format: truetype
+    
+    var url: String
+  }
+  object Format {
+    
+    inline def apply(url: String): Format = {
+      val __obj = js.Dynamic.literal(format = "truetype", url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Format]
+    }
+    
+    extension [Self <: Format](x: Self) {
+      
+      inline def setFormat(value: truetype): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  @js.native
   trait GetContext extends StObject {
     
-    def getContext(): js.Any
+    def getContext(): Context2d = js.native
+    def getContext(`type`: String): Context2d = js.native
     
-    var style: js.Any
-  }
-  object GetContext {
+    var height: Double = js.native
     
-    inline def apply(getContext: () => js.Any, style: js.Any): GetContext = {
-      val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction0(getContext), style = style.asInstanceOf[js.Any])
-      __obj.asInstanceOf[GetContext]
-    }
+    var pdf: jsPDF = js.native
     
-    extension [Self <: GetContext](x: Self) {
-      
-      inline def setGetContext(value: () => js.Any): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
-      
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-    }
+    var style: Any = js.native
+    
+    var width: Double = js.native
   }
   
   trait GetHeight extends StObject {
@@ -392,37 +307,99 @@ object anon {
     }
   }
   
+  trait H extends StObject {
+    
+    var h: Double
+    
+    var w: Double
+    
+    var x: Double
+    
+    var y: Double
+  }
+  object H {
+    
+    inline def apply(h: Double, w: Double, x: Double, y: Double): H = {
+      val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[H]
+    }
+    
+    extension [Self <: H](x: Self) {
+      
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait ReturnPromise extends StObject {
     
-    var returnPromise: Boolean
+    var returnPromise: `true`
   }
   object ReturnPromise {
     
-    inline def apply(returnPromise: Boolean): ReturnPromise = {
-      val __obj = js.Dynamic.literal(returnPromise = returnPromise.asInstanceOf[js.Any])
+    inline def apply(): ReturnPromise = {
+      val __obj = js.Dynamic.literal(returnPromise = true)
       __obj.asInstanceOf[ReturnPromise]
     }
     
     extension [Self <: ReturnPromise](x: Self) {
       
-      inline def setReturnPromise(value: Boolean): Self = StObject.set(x, "returnPromise", value.asInstanceOf[js.Any])
+      inline def setReturnPromise(value: `true`): Self = StObject.set(x, "returnPromise", value.asInstanceOf[js.Any])
     }
   }
   
-  trait Width extends StObject {
+  trait Rotate extends StObject {
     
-    var width: Double
+    var rotate: Matrix
+    
+    var scale: Matrix
+    
+    var skew: Matrix
+    
+    var translate: Matrix
   }
-  object Width {
+  object Rotate {
     
-    inline def apply(width: Double): Width = {
-      val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Width]
+    inline def apply(rotate: Matrix, scale: Matrix, skew: Matrix, translate: Matrix): Rotate = {
+      val __obj = js.Dynamic.literal(rotate = rotate.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], skew = skew.asInstanceOf[js.Any], translate = translate.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Rotate]
     }
     
-    extension [Self <: Width](x: Self) {
+    extension [Self <: Rotate](x: Self) {
       
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Matrix): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      
+      inline def setScale(value: Matrix): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      
+      inline def setSkew(value: Matrix): Self = StObject.set(x, "skew", value.asInstanceOf[js.Any])
+      
+      inline def setTranslate(value: Matrix): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait W extends StObject {
+    
+    var h: Double
+    
+    var w: Double
+  }
+  object W {
+    
+    inline def apply(h: Double, w: Double): W = {
+      val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
+      __obj.asInstanceOf[W]
+    }
+    
+    extension [Self <: W](x: Self) {
+      
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     }
   }
 }

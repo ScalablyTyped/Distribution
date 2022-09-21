@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "framesync" : "4.1.0"
+      "framesync" : "6.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "framesync" : "4.1.0"
+      "framesync" : "6.1.2"
     }
   ],
   "compile-devDependencies" : [

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Database")
 @js.native
-class Database protected ()
+open class Database protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Database {
   /**
@@ -15,10 +15,10 @@ class Database protected ()
     * @param callbackManifestChecked defines the callback to use when manifest is checked
     * @param disableManifestCheck defines a boolean indicating that we want to skip the manifest validation (it will be considered validated and up to date)
     */
-  def this(urlToScene: String, callbackManifestChecked: js.Function1[/* checked */ Boolean, js.Any]) = this()
+  def this(urlToScene: String, callbackManifestChecked: js.Function1[/* checked */ Boolean, Any]) = this()
   def this(
     urlToScene: String,
-    callbackManifestChecked: js.Function1[/* checked */ Boolean, js.Any],
+    callbackManifestChecked: js.Function1[/* checked */ Boolean, Any],
     disableManifestCheck: Boolean
   ) = this()
 }
@@ -30,7 +30,7 @@ object Database {
   val ^ : js.Any = js.native
   
   /**
-    * Gets a boolean indicating if Database storate is enabled (off by default)
+    * Gets a boolean indicating if Database storage is enabled (off by default)
     */
   @JSGlobal("BABYLON.Database.IDBStorageEnabled")
   @js.native
@@ -38,20 +38,20 @@ object Database {
   inline def IDBStorageEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDBStorageEnabled")(x.asInstanceOf[js.Any])
   
   /** Gets a boolean indicating if the user agent supports blob storage (this value will be updated after creating the first Database object) */
-  @JSGlobal("BABYLON.Database.IsUASupportingBlobStorage")
+  @JSGlobal("BABYLON.Database._IsUASupportingBlobStorage")
   @js.native
-  def IsUASupportingBlobStorage: js.Any = js.native
-  inline def IsUASupportingBlobStorage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsUASupportingBlobStorage")(x.asInstanceOf[js.Any])
+  def _IsUASupportingBlobStorage: Any = js.native
+  inline def _IsUASupportingBlobStorage_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsUASupportingBlobStorage")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.Database._ParseURL")
   @js.native
-  def _ParseURL: js.Any = js.native
-  inline def _ParseURL_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ParseURL")(x.asInstanceOf[js.Any])
+  def _ParseURL: Any = js.native
+  inline def _ParseURL_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ParseURL")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.Database._ReturnFullUrlLocation")
   @js.native
-  def _ReturnFullUrlLocation: js.Any = js.native
-  inline def _ReturnFullUrlLocation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ReturnFullUrlLocation")(x.asInstanceOf[js.Any])
+  def _ReturnFullUrlLocation: Any = js.native
+  inline def _ReturnFullUrlLocation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ReturnFullUrlLocation")(x.asInstanceOf[js.Any])
   
   /**
     * Validates if xhr data is correct
@@ -61,6 +61,6 @@ object Database {
     */
   @JSGlobal("BABYLON.Database._ValidateXHRData")
   @js.native
-  def _ValidateXHRData: js.Any = js.native
-  inline def _ValidateXHRData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ValidateXHRData")(x.asInstanceOf[js.Any])
+  def _ValidateXHRData: Any = js.native
+  inline def _ValidateXHRData_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ValidateXHRData")(x.asInstanceOf[js.Any])
 }

@@ -9,7 +9,7 @@ trait MessageDsn extends StObject {
   /**
     * When the message was received by the reporting mail transfer agent (MTA), in RFC 822 date-time format.
     */
-  var ArrivalDate: js.UndefOr[typings.awsSdk.sesMod.ArrivalDate] = js.undefined
+  var ArrivalDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Additional X-headers to include in the DSN.
@@ -30,7 +30,7 @@ object MessageDsn {
   
   extension [Self <: MessageDsn](x: Self) {
     
-    inline def setArrivalDate(value: ArrivalDate): Self = StObject.set(x, "ArrivalDate", value.asInstanceOf[js.Any])
+    inline def setArrivalDate(value: js.Date): Self = StObject.set(x, "ArrivalDate", value.asInstanceOf[js.Any])
     
     inline def setArrivalDateUndefined: Self = StObject.set(x, "ArrivalDate", js.undefined)
     
@@ -38,7 +38,7 @@ object MessageDsn {
     
     inline def setExtensionFieldsUndefined: Self = StObject.set(x, "ExtensionFields", js.undefined)
     
-    inline def setExtensionFieldsVarargs(value: ExtensionField*): Self = StObject.set(x, "ExtensionFields", js.Array(value :_*))
+    inline def setExtensionFieldsVarargs(value: ExtensionField*): Self = StObject.set(x, "ExtensionFields", js.Array(value*))
     
     inline def setReportingMta(value: ReportingMta): Self = StObject.set(x, "ReportingMta", value.asInstanceOf[js.Any])
   }

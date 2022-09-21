@@ -2,6 +2,7 @@ package typings.prosemirrorMarkdown
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.markdownIt.libMod.MarkdownIt
+import typings.prosemirrorMarkdown.anon.EscapeExtraCharacters
 import typings.prosemirrorMarkdown.anon.Leading
 import typings.prosemirrorMarkdown.anon.TightLists
 import typings.prosemirrorModel.mod.Fragment
@@ -21,7 +22,7 @@ object mod {
   
   @JSImport("prosemirror-markdown", "MarkdownParser")
   @js.native
-  class MarkdownParser[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
+  open class MarkdownParser[S /* <: Schema[Any, Any] */] protected () extends StObject {
     /**
       * Create a parser with the given configuration. You can configure
       * the markdown-it parser to parse the dialect you want, and provide
@@ -67,59 +68,77 @@ object mod {
       * and create a ProseMirror document as prescribed by this parser's
       * rules.
       */
-    def parse(text: String): Node[S] = js.native
+    def parse(text: String): Node = js.native
     
     /**
       * The value of the `tokens` object used to construct
       * this parser. Can be useful to copy and modify to base other
       * parsers on.
       */
-    var tokens: StringDictionary[typings.markdownIt.tokenMod.^] = js.native
+    var tokens: StringDictionary[TokenConfig] = js.native
   }
   
   @JSImport("prosemirror-markdown", "MarkdownSerializer")
   @js.native
-  class MarkdownSerializer[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
+  open class MarkdownSerializer[S /* <: Schema[Any, Any] */] protected () extends StObject {
     def this(
       nodes: StringDictionary[
             js.Function4[
               /* state */ MarkdownSerializerState[S], 
-              /* node */ Node[S], 
-              /* parent */ Node[S], 
+              /* node */ Node, 
+              /* parent */ Node, 
               /* index */ Double, 
               Unit
             ]
           ],
-      marks: StringDictionary[MarkSerializerConfig[js.Any]]
+      marks: StringDictionary[MarkSerializerConfig[Any]]
+    ) = this()
+    def this(
+      nodes: StringDictionary[
+            js.Function4[
+              /* state */ MarkdownSerializerState[S], 
+              /* node */ Node, 
+              /* parent */ Node, 
+              /* index */ Double, 
+              Unit
+            ]
+          ],
+      marks: StringDictionary[MarkSerializerConfig[Any]],
+      options: EscapeExtraCharacters
     ) = this()
     
     /**
       * The mark serializer info.
       */
-    var marks: StringDictionary[js.Any] = js.native
+    var marks: StringDictionary[Any] = js.native
     
     /**
       * The node serializer
       * functions for this serializer.
       */
-    var nodes: StringDictionary[js.Function2[/* p1 */ MarkdownSerializerState[S], /* p2 */ Node[S], Unit]] = js.native
+    var nodes: StringDictionary[js.Function2[/* p1 */ MarkdownSerializerState[S], /* p2 */ Node, Unit]] = js.native
+    
+    /**
+      * The options passed to the serializer.
+      */
+    var options: EscapeExtraCharacters = js.native
     
     /**
       * Serialize the content of the given node to
       * [CommonMark](http://commonmark.org/).
       */
-    def serialize(content: Node[S]): String = js.native
-    def serialize(content: Node[S], options: StringDictionary[js.Any]): String = js.native
+    def serialize(content: Node): String = js.native
+    def serialize(content: Node, options: StringDictionary[Any]): String = js.native
   }
   
   @JSImport("prosemirror-markdown", "MarkdownSerializerState")
   @js.native
-  class MarkdownSerializerState[S /* <: Schema[js.Any, js.Any] */] () extends StObject {
+  open class MarkdownSerializerState[S /* <: Schema[Any, Any] */] () extends StObject {
     
     /**
       * Close the block for the given node.
       */
-    def closeBlock(node: Node[S]): Unit = js.native
+    def closeBlock(node: Node): Unit = js.native
     
     /**
       * Ensure the current content ends with a newline.
@@ -154,17 +173,17 @@ object mod {
     /**
       * Render the given node as a block.
       */
-    def render(node: Node[S]): Unit = js.native
+    def render(node: Node): Unit = js.native
     
     /**
       * Render the contents of `parent` as block nodes.
       */
-    def renderContent(parent: Node[S]): Unit = js.native
+    def renderContent(parent: Node): Unit = js.native
     
     /**
       * Render the contents of `parent` as inline content.
       */
-    def renderInline(parent: Node[S]): Unit = js.native
+    def renderInline(parent: Node): Unit = js.native
     
     /**
       * Render a node's content as a list. `delim` should be the extra
@@ -172,7 +191,7 @@ object mod {
       * `firstDelim` is a function going from an item index to a
       * delimiter for the first line of the item.
       */
-    def renderList(node: Node[S], delim: String, firstDelim: js.Function1[/* p */ Double, String]): Unit = js.native
+    def renderList(node: Node, delim: String, firstDelim: js.Function1[/* p */ Double, String]): Unit = js.native
     
     /**
       * Repeat the given string `n` times.
@@ -192,8 +211,8 @@ object mod {
       * the end of the block, and `f` is a function that renders the
       * content of the block.
       */
-    def wrapBlock(delim: String, firstDelim: String, node: Node[S], f: js.Function0[Unit]): Unit = js.native
-    def wrapBlock(delim: String, firstDelim: Unit, node: Node[S], f: js.Function0[Unit]): Unit = js.native
+    def wrapBlock(delim: String, firstDelim: String, node: Node, f: js.Function0[Unit]): Unit = js.native
+    def wrapBlock(delim: String, firstDelim: Unit, node: Node, f: js.Function0[Unit]): Unit = js.native
     
     /**
       * Prepare the state for writing output (closing closed paragraphs,
@@ -206,15 +225,18 @@ object mod {
   
   @JSImport("prosemirror-markdown", "defaultMarkdownParser")
   @js.native
-  def defaultMarkdownParser: MarkdownParser[js.Any] = js.native
-  inline def defaultMarkdownParser_=(x: MarkdownParser[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMarkdownParser")(x.asInstanceOf[js.Any])
+  val defaultMarkdownParser: MarkdownParser[Any] = js.native
   
   @JSImport("prosemirror-markdown", "defaultMarkdownSerializer")
   @js.native
-  def defaultMarkdownSerializer: MarkdownSerializer[js.Any] = js.native
-  inline def defaultMarkdownSerializer_=(x: MarkdownSerializer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMarkdownSerializer")(x.asInstanceOf[js.Any])
+  def defaultMarkdownSerializer: MarkdownSerializer[Any] = js.native
+  inline def defaultMarkdownSerializer_=(x: MarkdownSerializer[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMarkdownSerializer")(x.asInstanceOf[js.Any])
   
-  trait MarkSerializerConfig[S /* <: Schema[js.Any, js.Any] */] extends StObject {
+  @JSImport("prosemirror-markdown", "schema")
+  @js.native
+  val schema: Schema[Any, Any] = js.native
+  
+  trait MarkSerializerConfig[S /* <: Schema[Any, Any] */] extends StObject {
     
     var close: String | MarkSerializerMethod[S]
     
@@ -228,17 +250,17 @@ object mod {
   }
   object MarkSerializerConfig {
     
-    inline def apply[S /* <: Schema[js.Any, js.Any] */](close: String | MarkSerializerMethod[S], open: String | MarkSerializerMethod[S]): MarkSerializerConfig[S] = {
+    inline def apply[S /* <: Schema[Any, Any] */](close: String | MarkSerializerMethod[S], open: String | MarkSerializerMethod[S]): MarkSerializerConfig[S] = {
       val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
       __obj.asInstanceOf[MarkSerializerConfig[S]]
     }
     
-    extension [Self <: MarkSerializerConfig[?], S /* <: Schema[js.Any, js.Any] */](x: Self & MarkSerializerConfig[S]) {
+    extension [Self <: MarkSerializerConfig[?], S /* <: Schema[Any, Any] */](x: Self & MarkSerializerConfig[S]) {
       
       inline def setClose(value: String | MarkSerializerMethod[S]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
       inline def setCloseFunction4(
-        value: (/* state */ MarkdownSerializerState[S], /* mark */ Mark[S], /* parent */ Fragment[S], /* index */ Double) => Unit
+        value: (/* state */ MarkdownSerializerState[S], /* mark */ Mark, /* parent */ Fragment, /* index */ Double) => Unit
       ): Self = StObject.set(x, "close", js.Any.fromFunction4(value))
       
       inline def setEscape(value: Boolean): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
@@ -256,15 +278,15 @@ object mod {
       inline def setOpen(value: String | MarkSerializerMethod[S]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
       inline def setOpenFunction4(
-        value: (/* state */ MarkdownSerializerState[S], /* mark */ Mark[S], /* parent */ Fragment[S], /* index */ Double) => Unit
+        value: (/* state */ MarkdownSerializerState[S], /* mark */ Mark, /* parent */ Fragment, /* index */ Double) => Unit
       ): Self = StObject.set(x, "open", js.Any.fromFunction4(value))
     }
   }
   
-  type MarkSerializerMethod[S /* <: Schema[js.Any, js.Any] */] = js.Function4[
+  type MarkSerializerMethod[S /* <: Schema[Any, Any] */] = js.Function4[
     /* state */ MarkdownSerializerState[S], 
-    /* mark */ Mark[S], 
-    /* parent */ Fragment[S], 
+    /* mark */ Mark, 
+    /* parent */ Fragment, 
     /* index */ Double, 
     Unit
   ]
@@ -275,7 +297,7 @@ object mod {
       * Attributes for the node or mark. When `getAttrs` is provided,
       * it takes precedence.
       */
-    var attrs: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var attrs: js.UndefOr[Record[String, Any]] = js.undefined
     
     /**
       * This token comes in `_open` and `_close` variants (which are
@@ -292,7 +314,7 @@ object mod {
       * token](https://markdown-it.github.io/markdown-it/#Token) and
       * returns an attribute object.
       */
-    var getAttrs: js.UndefOr[js.Function1[/* token */ typings.markdownIt.tokenMod.^, Record[String, js.Any]]] = js.undefined
+    var getAttrs: js.UndefOr[js.Function1[/* token */ typings.markdownIt.tokenMod.^, Record[String, Any]]] = js.undefined
     
     /**
       * When true, ignore content for the matched token.
@@ -305,6 +327,13 @@ object mod {
       * than wrapping it in a node.
       */
     var mark: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Indicates that the [markdown-it token](https://markdown-it.github.io/markdown-it/#Token)
+      * has no `_open` or `_close` for the nodes.
+      * This defaults to true for `code_inline`, `code_block` and `fence`.
+      */
+    var noCloseToken: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This token maps to a single node, whose type can be looked up
@@ -322,7 +351,7 @@ object mod {
     
     extension [Self <: TokenConfig](x: Self) {
       
-      inline def setAttrs(value: Record[String, js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: Record[String, Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
       inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
@@ -330,7 +359,7 @@ object mod {
       
       inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       
-      inline def setGetAttrs(value: /* token */ typings.markdownIt.tokenMod.^ => Record[String, js.Any]): Self = StObject.set(x, "getAttrs", js.Any.fromFunction1(value))
+      inline def setGetAttrs(value: /* token */ typings.markdownIt.tokenMod.^ => Record[String, Any]): Self = StObject.set(x, "getAttrs", js.Any.fromFunction1(value))
       
       inline def setGetAttrsUndefined: Self = StObject.set(x, "getAttrs", js.undefined)
       
@@ -341,6 +370,10 @@ object mod {
       inline def setMark(value: String): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
       
       inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+      
+      inline def setNoCloseToken(value: Boolean): Self = StObject.set(x, "noCloseToken", value.asInstanceOf[js.Any])
+      
+      inline def setNoCloseTokenUndefined: Self = StObject.set(x, "noCloseToken", js.undefined)
       
       inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       

@@ -7,66 +7,78 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-templating", "Animator")
 @js.native
-class Animator () extends StObject {
+open class Animator () extends StObject {
   
   /**
-    * Add a class to an element to trigger an animation.
-    * @param element Element to animate
-    * @param className Properties to animate or name of the effect to use
-    * @returns Resolved when the animation is done
-    */
+  	 * Add a class to an element to trigger an animation.
+  	 * @param element Element to animate
+  	 * @param className Properties to animate or name of the effect to use
+  	 * @returns Resolved when the animation is done
+  	 */
   def addClass(element: HTMLElement, className: String): js.Promise[Boolean] = js.native
   
   def animate(element: js.Array[HTMLElement], className: String): js.Promise[Boolean] = js.native
   /**
-    * Execute a single animation.
-    * @param element Element to animate
-    * @param className Properties to animate or name of the effect to use. For css animators this represents the className to be added and removed right after the animation is done.
-    * @param options options for the animation (duration, easing, ...)
-    * @returns Resolved when the animation is done
-    */
+  	 * Execute a single animation.
+  	 * @param element Element to animate
+  	 * @param className Properties to animate or name of the effect to use. For css animators this represents the className to be added and removed right after the animation is done.
+  	 * @param options options for the animation (duration, easing, ...)
+  	 * @returns Resolved when the animation is done
+  	 */
   def animate(element: HTMLElement, className: String): js.Promise[Boolean] = js.native
   
   /**
-    * Execute an 'enter' animation on an element
-    * @param element Element to animate
-    * @returns Resolved when the animation is done
-    */
+  	 * Execute an 'enter' animation on an element
+  	 * @param element Element to animate
+  	 * @returns Resolved when the animation is done
+  	 */
   def enter(element: HTMLElement): js.Promise[Boolean] = js.native
   
   /**
-    * Execute a 'leave' animation on an element
-    * @param element Element to animate
-    * @returns Resolved when the animation is done
-    */
+  	 * Execute a 'leave' animation on an element
+  	 * @param element Element to animate
+  	 * @returns Resolved when the animation is done
+  	 */
   def leave(element: HTMLElement): js.Promise[Boolean] = js.native
   
   /**
-    * Register an effect (for JS based animators)
-    * @param effectName identifier of the effect
-    * @param properties Object with properties for the effect
-    */
+  	 * Register an effect (for JS based animators)
+  	 * @param effectName identifier of the effect
+  	 * @param properties Object with properties for the effect
+  	 */
   def registerEffect(effectName: String, properties: js.Object): Unit = js.native
   
   /**
-    * Add a class to an element to trigger an animation.
-    * @param element Element to animate
-    * @param className Properties to animate or name of the effect to use
-    * @returns Resolved when the animation is done
-    */
+  	 * Add a class to an element to trigger an animation.
+  	 * @param element Element to animate
+  	 * @param className Properties to animate or name of the effect to use
+  	 * @returns Resolved when the animation is done
+  	 */
   def removeClass(element: HTMLElement, className: String): js.Promise[Boolean] = js.native
   
   /**
-    * Run a sequence of animations one after the other.
-    * for example: animator.runSequence("fadeIn","callout")
-    * @param sequence An array of effectNames or classNames
-    * @returns Resolved when all animations are done
-    */
-  def runSequence(animations: js.Array[js.Any]): js.Promise[Boolean] = js.native
+  	 * Run a sequence of animations one after the other.
+  	 * for example: animator.runSequence("fadeIn","callout")
+  	 * @param sequence An array of effectNames or classNames
+  	 * @returns Resolved when all animations are done
+  	 */
+  def runSequence(animations: js.Array[Any]): js.Promise[Boolean] = js.native
   
   /**
-    * Unregister an effect (for JS based animators)
-    * @param effectName identifier of the effect
-    */
+  	 * Unregister an effect (for JS based animators)
+  	 * @param effectName identifier of the effect
+  	 */
   def unregisterEffect(effectName: String): Unit = js.native
+}
+/* static members */
+object Animator {
+  
+  @JSImport("aurelia-templating", "Animator")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("aurelia-templating", "Animator.instance")
+  @js.native
+  def instance: Animator = js.native
+  inline def instance_=(x: Animator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
 }

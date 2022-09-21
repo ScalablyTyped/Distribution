@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/angularjs", "core.ParamFactory")
 @js.native
-class ParamFactory protected ()
+open class ParamFactory protected ()
   extends typings.uirouterCore.mod.ParamFactory {
   def this(router: typings.uirouterCore.routerMod.UIRouter) = this()
 }

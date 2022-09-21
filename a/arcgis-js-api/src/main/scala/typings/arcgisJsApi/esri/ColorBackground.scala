@@ -13,6 +13,8 @@ trait ColorBackground
   /**
     * The color of the background.
     *
+    * @default black
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-background-ColorBackground.html#color)
     */
   var color: Color_ = js.native

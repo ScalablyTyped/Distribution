@@ -53,7 +53,7 @@ object VmEndpointNatMappingsList {
     
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    inline def setResultVarargs(value: VmEndpointNatMappings*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: VmEndpointNatMappings*): Self = StObject.set(x, "result", js.Array(value*))
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     

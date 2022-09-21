@@ -1,5 +1,7 @@
 package typings.ssh2Streams.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ssh2Streams.mod.PublicKeyAuthMethodData
   - typings.ssh2Streams.mod.HostbasedAuthMethodData
 */
-type AuthMethodData = typings.ssh2Streams.mod._AuthMethodData | java.lang.String
+type AuthMethodData = _AuthMethodData | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.ssh2Streams.mod.TcpipForwardGlobalRequest
   - typings.ssh2Streams.mod.opensshStreamLocalForwardGlobalRequest
-  - typings.node.Buffer
+  - typings.node.bufferMod.global.Buffer
 */
-type GlobalRequest = typings.ssh2Streams.mod._GlobalRequest | typings.node.Buffer
+type GlobalRequest = _GlobalRequest | Buffer
 
-type HostKeys = org.scalablytyped.runtime.StringDictionary[typings.ssh2Streams.mod.HostKey]
+type HostKeys = StringDictionary[HostKey]

@@ -8,7 +8,7 @@ object duringMod {
   
   @JSImport("ol/format/filter/During", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.ol.comparisonMod.default {
     def this(propertyName: String, begin: String, end: String) = this()
   }

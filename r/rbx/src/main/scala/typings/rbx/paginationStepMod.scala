@@ -67,7 +67,7 @@ object paginationStepMod {
   
   @JSImport("rbx/components/pagination/pagination-step", "PaginationStep")
   @js.native
-  val PaginationStep: ForwardRefAsExoticComponent[PaginationStepProps, ElementType[js.Any]] = js.native
+  val PaginationStep: ForwardRefAsExoticComponent[PaginationStepProps, ElementType[Any]] = js.native
   
   trait PaginationStepModifierProps extends StObject {
     

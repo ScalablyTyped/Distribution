@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LookupFunctions extends StObject {
   
-  def bindingBehaviors(name: String): js.Any
+  def bindingBehaviors(name: String): Any
   
-  def valueConverters(name: String): js.Any
+  def valueConverters(name: String): Any
 }
 object LookupFunctions {
   
-  inline def apply(bindingBehaviors: String => js.Any, valueConverters: String => js.Any): LookupFunctions = {
+  inline def apply(bindingBehaviors: String => Any, valueConverters: String => Any): LookupFunctions = {
     val __obj = js.Dynamic.literal(bindingBehaviors = js.Any.fromFunction1(bindingBehaviors), valueConverters = js.Any.fromFunction1(valueConverters))
     __obj.asInstanceOf[LookupFunctions]
   }
   
   extension [Self <: LookupFunctions](x: Self) {
     
-    inline def setBindingBehaviors(value: String => js.Any): Self = StObject.set(x, "bindingBehaviors", js.Any.fromFunction1(value))
+    inline def setBindingBehaviors(value: String => Any): Self = StObject.set(x, "bindingBehaviors", js.Any.fromFunction1(value))
     
-    inline def setValueConverters(value: String => js.Any): Self = StObject.set(x, "valueConverters", js.Any.fromFunction1(value))
+    inline def setValueConverters(value: String => Any): Self = StObject.set(x, "valueConverters", js.Any.fromFunction1(value))
   }
 }

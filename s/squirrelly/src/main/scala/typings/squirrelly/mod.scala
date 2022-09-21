@@ -38,7 +38,7 @@ object mod {
   
   inline def definePartial(name: String, str: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("definePartial")(name.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def express(filePath: String, options: js.Object, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__express")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def express(filePath: String, options: js.Object, callback: js.Function1[/* repeated */ Any, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__express")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def load(options: Options): SqrlFn | String = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(options.asInstanceOf[js.Any]).asInstanceOf[SqrlFn | String]
   inline def load(options: Options, str: String): SqrlFn = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(options.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[SqrlFn]
@@ -131,5 +131,5 @@ object mod {
     }
   }
   
-  type SqrlFn = js.Function2[/* options */ js.Object, /* Sqrl */ js.Any, String]
+  type SqrlFn = js.Function2[/* options */ js.Object, /* Sqrl */ Any, String]
 }

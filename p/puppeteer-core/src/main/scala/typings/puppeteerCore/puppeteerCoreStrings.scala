@@ -1,16 +1,20 @@
 package typings.puppeteerCore
 
-import typings.puppeteerCore.browserFetcherMod.Platform
 import typings.puppeteerCore.browserMod.BrowserContextEmittedEvents
 import typings.puppeteerCore.browserMod.BrowserEmittedEvents
-import typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
-import typings.puppeteerCore.commonHttprequestMod.ErrorCode
+import typings.puppeteerCore.browserMod.Permission
 import typings.puppeteerCore.commonInputMod.MouseButton
-import typings.puppeteerCore.commonLifecycleWatcherMod.ProtocolLifeCycleEvent
-import typings.puppeteerCore.commonLifecycleWatcherMod.PuppeteerLifeCycleEvent
-import typings.puppeteerCore.commonPdfoptionsMod.PaperFormat
-import typings.puppeteerCore.pageMod.PageEmittedEvents
-import typings.puppeteerCore.productMod.Product
+import typings.puppeteerCore.commonTargetManagerMod.TargetManagerEmittedEvents
+import typings.puppeteerCore.mod.ActionResult
+import typings.puppeteerCore.mod.ChromeReleaseChannel
+import typings.puppeteerCore.mod.ConsoleMessageType
+import typings.puppeteerCore.mod.ErrorCode
+import typings.puppeteerCore.mod.LowerCasePaperFormat
+import typings.puppeteerCore.mod.PageEmittedEvents
+import typings.puppeteerCore.mod.Platform
+import typings.puppeteerCore.mod.Product
+import typings.puppeteerCore.mod.ProtocolLifeCycleEvent
+import typings.puppeteerCore.mod.PuppeteerLifeCycleEvent
 import typings.puppeteerCore.uskeyboardlayoutMod.KeyInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,6 +26,7 @@ object puppeteerCoreStrings {
   sealed trait ^
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def ^ : ^ = "^".asInstanceOf[^]
   
@@ -29,6 +34,7 @@ object puppeteerCoreStrings {
   sealed trait $
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def $: $ = "$".asInstanceOf[$]
   
@@ -36,6 +42,7 @@ object puppeteerCoreStrings {
   sealed trait `-_`
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
@@ -43,6 +50,7 @@ object puppeteerCoreStrings {
   sealed trait `0`
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def `0`: `0` = "0".asInstanceOf[`0`]
   
@@ -50,13 +58,19 @@ object puppeteerCoreStrings {
   sealed trait `1`
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def `1`: `1` = "1".asInstanceOf[`1`]
+  
+  @js.native
+  sealed trait `1036745` extends StObject
+  inline def `1036745`: `1036745` = "1036745".asInstanceOf[`1036745`]
   
   @js.native
   sealed trait `2`
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def `2`: `2` = "2".asInstanceOf[`2`]
   
@@ -64,6 +78,7 @@ object puppeteerCoreStrings {
   sealed trait `3`
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def `3`: `3` = "3".asInstanceOf[`3`]
   
@@ -71,6 +86,7 @@ object puppeteerCoreStrings {
   sealed trait `4`
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def `4`: `4` = "4".asInstanceOf[`4`]
   
@@ -78,6 +94,7 @@ object puppeteerCoreStrings {
   sealed trait `5`
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def `5`: `5` = "5".asInstanceOf[`5`]
   
@@ -85,6 +102,7 @@ object puppeteerCoreStrings {
   sealed trait `6`
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def `6`: `6` = "6".asInstanceOf[`6`]
   
@@ -92,6 +110,7 @@ object puppeteerCoreStrings {
   sealed trait `7`
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def `7`: `7` = "7".asInstanceOf[`7`]
   
@@ -99,6 +118,7 @@ object puppeteerCoreStrings {
   sealed trait `8`
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def `8`: `8` = "8".asInstanceOf[`8`]
   
@@ -106,6 +126,7 @@ object puppeteerCoreStrings {
   sealed trait `9`
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def `9`: `9` = "9".asInstanceOf[`9`]
   
@@ -113,6 +134,7 @@ object puppeteerCoreStrings {
   sealed trait `@`
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def `@`: `@` = "@".asInstanceOf[`@`]
   
@@ -120,6 +142,7 @@ object puppeteerCoreStrings {
   sealed trait A
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def A: A = "A".asInstanceOf[A]
   
@@ -127,6 +150,7 @@ object puppeteerCoreStrings {
   sealed trait Abort
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Abort: Abort = "Abort".asInstanceOf[Abort]
   
@@ -134,6 +158,7 @@ object puppeteerCoreStrings {
   sealed trait Accept
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Accept: Accept = "Accept".asInstanceOf[Accept]
   
@@ -146,12 +171,24 @@ object puppeteerCoreStrings {
   inline def AccessibilityDotenable: AccessibilityDotenable = "Accessibility.enable".asInstanceOf[AccessibilityDotenable]
   
   @js.native
+  sealed trait AccessibilityDotgetAXNodeAndAncestors extends StObject
+  inline def AccessibilityDotgetAXNodeAndAncestors: AccessibilityDotgetAXNodeAndAncestors = "Accessibility.getAXNodeAndAncestors".asInstanceOf[AccessibilityDotgetAXNodeAndAncestors]
+  
+  @js.native
+  sealed trait AccessibilityDotgetChildAXNodes extends StObject
+  inline def AccessibilityDotgetChildAXNodes: AccessibilityDotgetChildAXNodes = "Accessibility.getChildAXNodes".asInstanceOf[AccessibilityDotgetChildAXNodes]
+  
+  @js.native
   sealed trait AccessibilityDotgetFullAXTree extends StObject
   inline def AccessibilityDotgetFullAXTree: AccessibilityDotgetFullAXTree = "Accessibility.getFullAXTree".asInstanceOf[AccessibilityDotgetFullAXTree]
   
   @js.native
   sealed trait AccessibilityDotgetPartialAXTree extends StObject
   inline def AccessibilityDotgetPartialAXTree: AccessibilityDotgetPartialAXTree = "Accessibility.getPartialAXTree".asInstanceOf[AccessibilityDotgetPartialAXTree]
+  
+  @js.native
+  sealed trait AccessibilityDotgetRootAXNode extends StObject
+  inline def AccessibilityDotgetRootAXNode: AccessibilityDotgetRootAXNode = "Accessibility.getRootAXNode".asInstanceOf[AccessibilityDotgetRootAXNode]
   
   @js.native
   sealed trait AccessibilityDotqueryAXTree extends StObject
@@ -161,6 +198,7 @@ object puppeteerCoreStrings {
   sealed trait Alt
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Alt: Alt = "Alt".asInstanceOf[Alt]
   
@@ -168,6 +206,7 @@ object puppeteerCoreStrings {
   sealed trait AltGraph
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def AltGraph: AltGraph = "AltGraph".asInstanceOf[AltGraph]
   
@@ -175,6 +214,7 @@ object puppeteerCoreStrings {
   sealed trait AltLeft
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def AltLeft: AltLeft = "AltLeft".asInstanceOf[AltLeft]
   
@@ -182,6 +222,7 @@ object puppeteerCoreStrings {
   sealed trait AltRight
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def AltRight: AltRight = "AltRight".asInstanceOf[AltRight]
   
@@ -189,6 +230,7 @@ object puppeteerCoreStrings {
   sealed trait Ampersand
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Ampersand: Ampersand = "&".asInstanceOf[Ampersand]
   
@@ -236,29 +278,15 @@ object puppeteerCoreStrings {
   sealed trait Apostrophe
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
-  
-  @js.native
-  sealed trait ApplicationCacheDotenable extends StObject
-  inline def ApplicationCacheDotenable: ApplicationCacheDotenable = "ApplicationCache.enable".asInstanceOf[ApplicationCacheDotenable]
-  
-  @js.native
-  sealed trait ApplicationCacheDotgetApplicationCacheForFrame extends StObject
-  inline def ApplicationCacheDotgetApplicationCacheForFrame: ApplicationCacheDotgetApplicationCacheForFrame = "ApplicationCache.getApplicationCacheForFrame".asInstanceOf[ApplicationCacheDotgetApplicationCacheForFrame]
-  
-  @js.native
-  sealed trait ApplicationCacheDotgetFramesWithManifests extends StObject
-  inline def ApplicationCacheDotgetFramesWithManifests: ApplicationCacheDotgetFramesWithManifests = "ApplicationCache.getFramesWithManifests".asInstanceOf[ApplicationCacheDotgetFramesWithManifests]
-  
-  @js.native
-  sealed trait ApplicationCacheDotgetManifestForFrame extends StObject
-  inline def ApplicationCacheDotgetManifestForFrame: ApplicationCacheDotgetManifestForFrame = "ApplicationCache.getManifestForFrame".asInstanceOf[ApplicationCacheDotgetManifestForFrame]
   
   @js.native
   sealed trait ArrowDown
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def ArrowDown: ArrowDown = "ArrowDown".asInstanceOf[ArrowDown]
   
@@ -266,6 +294,7 @@ object puppeteerCoreStrings {
   sealed trait ArrowLeft
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def ArrowLeft: ArrowLeft = "ArrowLeft".asInstanceOf[ArrowLeft]
   
@@ -273,6 +302,7 @@ object puppeteerCoreStrings {
   sealed trait ArrowRight
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def ArrowRight: ArrowRight = "ArrowRight".asInstanceOf[ArrowRight]
   
@@ -280,6 +310,7 @@ object puppeteerCoreStrings {
   sealed trait ArrowUp
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def ArrowUp: ArrowUp = "ArrowUp".asInstanceOf[ArrowUp]
   
@@ -287,6 +318,7 @@ object puppeteerCoreStrings {
   sealed trait Asterisk
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
@@ -294,6 +326,7 @@ object puppeteerCoreStrings {
   sealed trait Attn
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Attn: Attn = "Attn".asInstanceOf[Attn]
   
@@ -301,6 +334,7 @@ object puppeteerCoreStrings {
   sealed trait AudioVolumeDown
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def AudioVolumeDown: AudioVolumeDown = "AudioVolumeDown".asInstanceOf[AudioVolumeDown]
   
@@ -308,6 +342,7 @@ object puppeteerCoreStrings {
   sealed trait AudioVolumeMute
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def AudioVolumeMute: AudioVolumeMute = "AudioVolumeMute".asInstanceOf[AudioVolumeMute]
   
@@ -315,8 +350,13 @@ object puppeteerCoreStrings {
   sealed trait AudioVolumeUp
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def AudioVolumeUp: AudioVolumeUp = "AudioVolumeUp".asInstanceOf[AudioVolumeUp]
+  
+  @js.native
+  sealed trait AuditsDotcheckContrast extends StObject
+  inline def AuditsDotcheckContrast: AuditsDotcheckContrast = "Audits.checkContrast".asInstanceOf[AuditsDotcheckContrast]
   
   @js.native
   sealed trait AuditsDotdisable extends StObject
@@ -334,6 +374,7 @@ object puppeteerCoreStrings {
   sealed trait B
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def B: B = "B".asInstanceOf[B]
   
@@ -357,15 +398,18 @@ object puppeteerCoreStrings {
   sealed trait Backquote
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Backquote: Backquote = "Backquote".asInstanceOf[Backquote]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput because Already inherited
+  - typings.puppeteerCore.mod.KeyInput because Already inherited
   - typings.puppeteerCore.uskeyboardlayoutMod.KeyInput because Already inherited */ @js.native
   sealed trait Backslash
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Backslash: Backslash = "Backslash".asInstanceOf[Backslash]
   
@@ -373,6 +417,7 @@ object puppeteerCoreStrings {
   sealed trait Backspace
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Backspace: Backspace = "Backspace".asInstanceOf[Backspace]
   
@@ -380,6 +425,7 @@ object puppeteerCoreStrings {
   sealed trait BracketLeft
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def BracketLeft: BracketLeft = "BracketLeft".asInstanceOf[BracketLeft]
   
@@ -387,8 +433,13 @@ object puppeteerCoreStrings {
   sealed trait BracketRight
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def BracketRight: BracketRight = "BracketRight".asInstanceOf[BracketRight]
+  
+  @js.native
+  sealed trait BrowserDotcancelDownload extends StObject
+  inline def BrowserDotcancelDownload: BrowserDotcancelDownload = "Browser.cancelDownload".asInstanceOf[BrowserDotcancelDownload]
   
   @js.native
   sealed trait BrowserDotclose extends StObject
@@ -401,6 +452,10 @@ object puppeteerCoreStrings {
   @js.native
   sealed trait BrowserDotcrashGpuProcess extends StObject
   inline def BrowserDotcrashGpuProcess: BrowserDotcrashGpuProcess = "Browser.crashGpuProcess".asInstanceOf[BrowserDotcrashGpuProcess]
+  
+  @js.native
+  sealed trait BrowserDotexecuteBrowserCommand extends StObject
+  inline def BrowserDotexecuteBrowserCommand: BrowserDotexecuteBrowserCommand = "Browser.executeBrowserCommand".asInstanceOf[BrowserDotexecuteBrowserCommand]
   
   @js.native
   sealed trait BrowserDotgetBrowserCommandLine extends StObject
@@ -454,6 +509,7 @@ object puppeteerCoreStrings {
   sealed trait C
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def C: C = "C".asInstanceOf[C]
   
@@ -494,6 +550,10 @@ object puppeteerCoreStrings {
   inline def CSSDotgetInlineStylesForNode: CSSDotgetInlineStylesForNode = "CSS.getInlineStylesForNode".asInstanceOf[CSSDotgetInlineStylesForNode]
   
   @js.native
+  sealed trait CSSDotgetLayersForNode extends StObject
+  inline def CSSDotgetLayersForNode: CSSDotgetLayersForNode = "CSS.getLayersForNode".asInstanceOf[CSSDotgetLayersForNode]
+  
+  @js.native
   sealed trait CSSDotgetMatchedStylesForNode extends StObject
   inline def CSSDotgetMatchedStylesForNode: CSSDotgetMatchedStylesForNode = "CSS.getMatchedStylesForNode".asInstanceOf[CSSDotgetMatchedStylesForNode]
   
@@ -508,6 +568,10 @@ object puppeteerCoreStrings {
   @js.native
   sealed trait CSSDotgetStyleSheetText extends StObject
   inline def CSSDotgetStyleSheetText: CSSDotgetStyleSheetText = "CSS.getStyleSheetText".asInstanceOf[CSSDotgetStyleSheetText]
+  
+  @js.native
+  sealed trait CSSDotsetContainerQueryText extends StObject
+  inline def CSSDotsetContainerQueryText: CSSDotsetContainerQueryText = "CSS.setContainerQueryText".asInstanceOf[CSSDotsetContainerQueryText]
   
   @js.native
   sealed trait CSSDotsetEffectivePropertyValueForNode extends StObject
@@ -530,12 +594,20 @@ object puppeteerCoreStrings {
   inline def CSSDotsetRuleSelector: CSSDotsetRuleSelector = "CSS.setRuleSelector".asInstanceOf[CSSDotsetRuleSelector]
   
   @js.native
+  sealed trait CSSDotsetScopeText extends StObject
+  inline def CSSDotsetScopeText: CSSDotsetScopeText = "CSS.setScopeText".asInstanceOf[CSSDotsetScopeText]
+  
+  @js.native
   sealed trait CSSDotsetStyleSheetText extends StObject
   inline def CSSDotsetStyleSheetText: CSSDotsetStyleSheetText = "CSS.setStyleSheetText".asInstanceOf[CSSDotsetStyleSheetText]
   
   @js.native
   sealed trait CSSDotsetStyleTexts extends StObject
   inline def CSSDotsetStyleTexts: CSSDotsetStyleTexts = "CSS.setStyleTexts".asInstanceOf[CSSDotsetStyleTexts]
+  
+  @js.native
+  sealed trait CSSDotsetSupportsText extends StObject
+  inline def CSSDotsetSupportsText: CSSDotsetSupportsText = "CSS.setSupportsText".asInstanceOf[CSSDotsetSupportsText]
   
   @js.native
   sealed trait CSSDotstartRuleUsageTracking extends StObject
@@ -581,6 +653,7 @@ object puppeteerCoreStrings {
   sealed trait Call
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Call: Call = "Call".asInstanceOf[Call]
   
@@ -588,6 +661,7 @@ object puppeteerCoreStrings {
   sealed trait Camera
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Camera: Camera = "Camera".asInstanceOf[Camera]
   
@@ -595,6 +669,7 @@ object puppeteerCoreStrings {
   sealed trait Cancel
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Cancel: Cancel = "Cancel".asInstanceOf[Cancel]
   
@@ -602,6 +677,7 @@ object puppeteerCoreStrings {
   sealed trait CapsLock
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def CapsLock: CapsLock = "CapsLock".asInstanceOf[CapsLock]
   
@@ -609,6 +685,7 @@ object puppeteerCoreStrings {
   sealed trait Carriagereturn
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Carriagereturn: Carriagereturn = "\r".asInstanceOf[Carriagereturn]
   
@@ -625,6 +702,10 @@ object puppeteerCoreStrings {
   inline def CastDotsetSinkToUse: CastDotsetSinkToUse = "Cast.setSinkToUse".asInstanceOf[CastDotsetSinkToUse]
   
   @js.native
+  sealed trait CastDotstartDesktopMirroring extends StObject
+  inline def CastDotstartDesktopMirroring: CastDotstartDesktopMirroring = "Cast.startDesktopMirroring".asInstanceOf[CastDotstartDesktopMirroring]
+  
+  @js.native
   sealed trait CastDotstartTabMirroring extends StObject
   inline def CastDotstartTabMirroring: CastDotstartTabMirroring = "Cast.startTabMirroring".asInstanceOf[CastDotstartTabMirroring]
   
@@ -636,6 +717,7 @@ object puppeteerCoreStrings {
   sealed trait Clear
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Clear: Clear = "Clear".asInstanceOf[Clear]
   
@@ -643,15 +725,18 @@ object puppeteerCoreStrings {
   sealed trait Colon
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Colon: Colon = ":".asInstanceOf[Colon]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput because Already inherited
+  - typings.puppeteerCore.mod.KeyInput because Already inherited
   - typings.puppeteerCore.uskeyboardlayoutMod.KeyInput because Already inherited */ @js.native
   sealed trait Comma
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Comma: Comma = "Comma".asInstanceOf[Comma]
   
@@ -671,6 +756,7 @@ object puppeteerCoreStrings {
   sealed trait ContextMenu
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def ContextMenu: ContextMenu = "ContextMenu".asInstanceOf[ContextMenu]
   
@@ -678,6 +764,7 @@ object puppeteerCoreStrings {
   sealed trait Control
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Control: Control = "Control".asInstanceOf[Control]
   
@@ -685,6 +772,7 @@ object puppeteerCoreStrings {
   sealed trait ControlLeft
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def ControlLeft: ControlLeft = "ControlLeft".asInstanceOf[ControlLeft]
   
@@ -692,6 +780,7 @@ object puppeteerCoreStrings {
   sealed trait ControlRight
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def ControlRight: ControlRight = "ControlRight".asInstanceOf[ControlRight]
   
@@ -699,6 +788,7 @@ object puppeteerCoreStrings {
   sealed trait Convert
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Convert: Convert = "Convert".asInstanceOf[Convert]
   
@@ -706,6 +796,7 @@ object puppeteerCoreStrings {
   sealed trait CrSel
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def CrSel: CrSel = "CrSel".asInstanceOf[CrSel]
   
@@ -713,6 +804,7 @@ object puppeteerCoreStrings {
   sealed trait D
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def D: D = "D".asInstanceOf[D]
   
@@ -720,6 +812,7 @@ object puppeteerCoreStrings {
   sealed trait DOMContentLoaded
     extends StObject
        with ProtocolLifeCycleEvent
+       with typings.puppeteerCore.commonLifecycleWatcherMod.ProtocolLifeCycleEvent
        with typings.puppeteerCore.lifecycleWatcherMod.ProtocolLifeCycleEvent
   inline def DOMContentLoaded: DOMContentLoaded = "DOMContentLoaded".asInstanceOf[DOMContentLoaded]
   
@@ -742,6 +835,10 @@ object puppeteerCoreStrings {
   @js.native
   sealed trait DOMDebuggerDotremoveXHRBreakpoint extends StObject
   inline def DOMDebuggerDotremoveXHRBreakpoint: DOMDebuggerDotremoveXHRBreakpoint = "DOMDebugger.removeXHRBreakpoint".asInstanceOf[DOMDebuggerDotremoveXHRBreakpoint]
+  
+  @js.native
+  sealed trait DOMDebuggerDotsetBreakOnCSPViolation extends StObject
+  inline def DOMDebuggerDotsetBreakOnCSPViolation: DOMDebuggerDotsetBreakOnCSPViolation = "DOMDebugger.setBreakOnCSPViolation".asInstanceOf[DOMDebuggerDotsetBreakOnCSPViolation]
   
   @js.native
   sealed trait DOMDebuggerDotsetDOMBreakpoint extends StObject
@@ -796,6 +893,10 @@ object puppeteerCoreStrings {
   inline def DOMDotgetBoxModel: DOMDotgetBoxModel = "DOM.getBoxModel".asInstanceOf[DOMDotgetBoxModel]
   
   @js.native
+  sealed trait DOMDotgetContainerForNode extends StObject
+  inline def DOMDotgetContainerForNode: DOMDotgetContainerForNode = "DOM.getContainerForNode".asInstanceOf[DOMDotgetContainerForNode]
+  
+  @js.native
   sealed trait DOMDotgetContentQuads extends StObject
   inline def DOMDotgetContentQuads: DOMDotgetContentQuads = "DOM.getContentQuads".asInstanceOf[DOMDotgetContentQuads]
   
@@ -832,12 +933,20 @@ object puppeteerCoreStrings {
   inline def DOMDotgetOuterHTML: DOMDotgetOuterHTML = "DOM.getOuterHTML".asInstanceOf[DOMDotgetOuterHTML]
   
   @js.native
+  sealed trait DOMDotgetQueryingDescendantsForContainer extends StObject
+  inline def DOMDotgetQueryingDescendantsForContainer: DOMDotgetQueryingDescendantsForContainer = "DOM.getQueryingDescendantsForContainer".asInstanceOf[DOMDotgetQueryingDescendantsForContainer]
+  
+  @js.native
   sealed trait DOMDotgetRelayoutBoundary extends StObject
   inline def DOMDotgetRelayoutBoundary: DOMDotgetRelayoutBoundary = "DOM.getRelayoutBoundary".asInstanceOf[DOMDotgetRelayoutBoundary]
   
   @js.native
   sealed trait DOMDotgetSearchResults extends StObject
   inline def DOMDotgetSearchResults: DOMDotgetSearchResults = "DOM.getSearchResults".asInstanceOf[DOMDotgetSearchResults]
+  
+  @js.native
+  sealed trait DOMDotgetTopLayerElements extends StObject
+  inline def DOMDotgetTopLayerElements: DOMDotgetTopLayerElements = "DOM.getTopLayerElements".asInstanceOf[DOMDotgetTopLayerElements]
   
   @js.native
   sealed trait DOMDothideHighlight extends StObject
@@ -1008,16 +1117,16 @@ object puppeteerCoreStrings {
   inline def DebuggerDotdisable: DebuggerDotdisable = "Debugger.disable".asInstanceOf[DebuggerDotdisable]
   
   @js.native
+  sealed trait DebuggerDotdisassembleWasmModule extends StObject
+  inline def DebuggerDotdisassembleWasmModule: DebuggerDotdisassembleWasmModule = "Debugger.disassembleWasmModule".asInstanceOf[DebuggerDotdisassembleWasmModule]
+  
+  @js.native
   sealed trait DebuggerDotenable extends StObject
   inline def DebuggerDotenable: DebuggerDotenable = "Debugger.enable".asInstanceOf[DebuggerDotenable]
   
   @js.native
   sealed trait DebuggerDotevaluateOnCallFrame extends StObject
   inline def DebuggerDotevaluateOnCallFrame: DebuggerDotevaluateOnCallFrame = "Debugger.evaluateOnCallFrame".asInstanceOf[DebuggerDotevaluateOnCallFrame]
-  
-  @js.native
-  sealed trait DebuggerDotexecuteWasmEvaluator extends StObject
-  inline def DebuggerDotexecuteWasmEvaluator: DebuggerDotexecuteWasmEvaluator = "Debugger.executeWasmEvaluator".asInstanceOf[DebuggerDotexecuteWasmEvaluator]
   
   @js.native
   sealed trait DebuggerDotgetPossibleBreakpoints extends StObject
@@ -1034,6 +1143,10 @@ object puppeteerCoreStrings {
   @js.native
   sealed trait DebuggerDotgetWasmBytecode extends StObject
   inline def DebuggerDotgetWasmBytecode: DebuggerDotgetWasmBytecode = "Debugger.getWasmBytecode".asInstanceOf[DebuggerDotgetWasmBytecode]
+  
+  @js.native
+  sealed trait DebuggerDotnextWasmDisassemblyChunk extends StObject
+  inline def DebuggerDotnextWasmDisassemblyChunk: DebuggerDotnextWasmDisassemblyChunk = "Debugger.nextWasmDisassemblyChunk".asInstanceOf[DebuggerDotnextWasmDisassemblyChunk]
   
   @js.native
   sealed trait DebuggerDotpause extends StObject
@@ -1127,6 +1240,7 @@ object puppeteerCoreStrings {
   sealed trait Delete
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Delete: Delete = "Delete".asInstanceOf[Delete]
   
@@ -1142,6 +1256,7 @@ object puppeteerCoreStrings {
   sealed trait Digit0
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Digit0: Digit0 = "Digit0".asInstanceOf[Digit0]
   
@@ -1149,6 +1264,7 @@ object puppeteerCoreStrings {
   sealed trait Digit1
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Digit1: Digit1 = "Digit1".asInstanceOf[Digit1]
   
@@ -1156,6 +1272,7 @@ object puppeteerCoreStrings {
   sealed trait Digit2
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Digit2: Digit2 = "Digit2".asInstanceOf[Digit2]
   
@@ -1163,6 +1280,7 @@ object puppeteerCoreStrings {
   sealed trait Digit3
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Digit3: Digit3 = "Digit3".asInstanceOf[Digit3]
   
@@ -1170,6 +1288,7 @@ object puppeteerCoreStrings {
   sealed trait Digit4
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Digit4: Digit4 = "Digit4".asInstanceOf[Digit4]
   
@@ -1177,6 +1296,7 @@ object puppeteerCoreStrings {
   sealed trait Digit5
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Digit5: Digit5 = "Digit5".asInstanceOf[Digit5]
   
@@ -1184,6 +1304,7 @@ object puppeteerCoreStrings {
   sealed trait Digit6
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Digit6: Digit6 = "Digit6".asInstanceOf[Digit6]
   
@@ -1191,6 +1312,7 @@ object puppeteerCoreStrings {
   sealed trait Digit7
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Digit7: Digit7 = "Digit7".asInstanceOf[Digit7]
   
@@ -1198,6 +1320,7 @@ object puppeteerCoreStrings {
   sealed trait Digit8
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Digit8: Digit8 = "Digit8".asInstanceOf[Digit8]
   
@@ -1205,6 +1328,7 @@ object puppeteerCoreStrings {
   sealed trait Digit9
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Digit9: Digit9 = "Digit9".asInstanceOf[Digit9]
   
@@ -1212,6 +1336,7 @@ object puppeteerCoreStrings {
   sealed trait Dot
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Dot: Dot = ".".asInstanceOf[Dot]
   
@@ -1219,6 +1344,7 @@ object puppeteerCoreStrings {
   sealed trait E
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def E: E = "E".asInstanceOf[E]
   
@@ -1226,6 +1352,7 @@ object puppeteerCoreStrings {
   sealed trait Eject
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Eject: Eject = "Eject".asInstanceOf[Eject]
   
@@ -1250,6 +1377,14 @@ object puppeteerCoreStrings {
   inline def EmulationDotresetPageScaleFactor: EmulationDotresetPageScaleFactor = "Emulation.resetPageScaleFactor".asInstanceOf[EmulationDotresetPageScaleFactor]
   
   @js.native
+  sealed trait EmulationDotsetAutoDarkModeOverride extends StObject
+  inline def EmulationDotsetAutoDarkModeOverride: EmulationDotsetAutoDarkModeOverride = "Emulation.setAutoDarkModeOverride".asInstanceOf[EmulationDotsetAutoDarkModeOverride]
+  
+  @js.native
+  sealed trait EmulationDotsetAutomationOverride extends StObject
+  inline def EmulationDotsetAutomationOverride: EmulationDotsetAutomationOverride = "Emulation.setAutomationOverride".asInstanceOf[EmulationDotsetAutomationOverride]
+  
+  @js.native
   sealed trait EmulationDotsetCPUThrottlingRate extends StObject
   inline def EmulationDotsetCPUThrottlingRate: EmulationDotsetCPUThrottlingRate = "Emulation.setCPUThrottlingRate".asInstanceOf[EmulationDotsetCPUThrottlingRate]
   
@@ -1260,6 +1395,10 @@ object puppeteerCoreStrings {
   @js.native
   sealed trait EmulationDotsetDeviceMetricsOverride extends StObject
   inline def EmulationDotsetDeviceMetricsOverride: EmulationDotsetDeviceMetricsOverride = "Emulation.setDeviceMetricsOverride".asInstanceOf[EmulationDotsetDeviceMetricsOverride]
+  
+  @js.native
+  sealed trait EmulationDotsetDisabledImageTypes extends StObject
+  inline def EmulationDotsetDisabledImageTypes: EmulationDotsetDisabledImageTypes = "Emulation.setDisabledImageTypes".asInstanceOf[EmulationDotsetDisabledImageTypes]
   
   @js.native
   sealed trait EmulationDotsetDocumentCookieDisabled extends StObject
@@ -1284,6 +1423,10 @@ object puppeteerCoreStrings {
   @js.native
   sealed trait EmulationDotsetGeolocationOverride extends StObject
   inline def EmulationDotsetGeolocationOverride: EmulationDotsetGeolocationOverride = "Emulation.setGeolocationOverride".asInstanceOf[EmulationDotsetGeolocationOverride]
+  
+  @js.native
+  sealed trait EmulationDotsetHardwareConcurrencyOverride extends StObject
+  inline def EmulationDotsetHardwareConcurrencyOverride: EmulationDotsetHardwareConcurrencyOverride = "Emulation.setHardwareConcurrencyOverride".asInstanceOf[EmulationDotsetHardwareConcurrencyOverride]
   
   @js.native
   sealed trait EmulationDotsetIdleOverride extends StObject
@@ -1333,6 +1476,7 @@ object puppeteerCoreStrings {
   sealed trait End
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def End: End = "End".asInstanceOf[End]
   
@@ -1340,6 +1484,7 @@ object puppeteerCoreStrings {
   sealed trait EndCall
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def EndCall: EndCall = "EndCall".asInstanceOf[EndCall]
   
@@ -1347,6 +1492,7 @@ object puppeteerCoreStrings {
   sealed trait Enter
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Enter: Enter = "Enter".asInstanceOf[Enter]
   
@@ -1354,6 +1500,7 @@ object puppeteerCoreStrings {
   sealed trait Equal
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Equal: Equal = "Equal".asInstanceOf[Equal]
   
@@ -1361,6 +1508,7 @@ object puppeteerCoreStrings {
   sealed trait Equalssign
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
@@ -1368,6 +1516,7 @@ object puppeteerCoreStrings {
   sealed trait EraseEof
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def EraseEof: EraseEof = "EraseEof".asInstanceOf[EraseEof]
   
@@ -1375,13 +1524,23 @@ object puppeteerCoreStrings {
   sealed trait Escape
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Escape: Escape = "Escape".asInstanceOf[Escape]
+  
+  @js.native
+  sealed trait EventBreakpointsDotremoveInstrumentationBreakpoint extends StObject
+  inline def EventBreakpointsDotremoveInstrumentationBreakpoint: EventBreakpointsDotremoveInstrumentationBreakpoint = "EventBreakpoints.removeInstrumentationBreakpoint".asInstanceOf[EventBreakpointsDotremoveInstrumentationBreakpoint]
+  
+  @js.native
+  sealed trait EventBreakpointsDotsetInstrumentationBreakpoint extends StObject
+  inline def EventBreakpointsDotsetInstrumentationBreakpoint: EventBreakpointsDotsetInstrumentationBreakpoint = "EventBreakpoints.setInstrumentationBreakpoint".asInstanceOf[EventBreakpointsDotsetInstrumentationBreakpoint]
   
   @js.native
   sealed trait ExSel
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def ExSel: ExSel = "ExSel".asInstanceOf[ExSel]
   
@@ -1389,6 +1548,7 @@ object puppeteerCoreStrings {
   sealed trait Exclamationmark
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Exclamationmark: Exclamationmark = "!".asInstanceOf[Exclamationmark]
   
@@ -1396,6 +1556,7 @@ object puppeteerCoreStrings {
   sealed trait Execute
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Execute: Execute = "Execute".asInstanceOf[Execute]
   
@@ -1403,6 +1564,7 @@ object puppeteerCoreStrings {
   sealed trait F
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F: F = "F".asInstanceOf[F]
   
@@ -1410,6 +1572,7 @@ object puppeteerCoreStrings {
   sealed trait F1
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F1: F1 = "F1".asInstanceOf[F1]
   
@@ -1417,6 +1580,7 @@ object puppeteerCoreStrings {
   sealed trait F10
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F10: F10 = "F10".asInstanceOf[F10]
   
@@ -1424,6 +1588,7 @@ object puppeteerCoreStrings {
   sealed trait F11
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F11: F11 = "F11".asInstanceOf[F11]
   
@@ -1431,6 +1596,7 @@ object puppeteerCoreStrings {
   sealed trait F12
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F12: F12 = "F12".asInstanceOf[F12]
   
@@ -1438,6 +1604,7 @@ object puppeteerCoreStrings {
   sealed trait F13
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F13: F13 = "F13".asInstanceOf[F13]
   
@@ -1445,6 +1612,7 @@ object puppeteerCoreStrings {
   sealed trait F14
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F14: F14 = "F14".asInstanceOf[F14]
   
@@ -1452,6 +1620,7 @@ object puppeteerCoreStrings {
   sealed trait F15
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F15: F15 = "F15".asInstanceOf[F15]
   
@@ -1459,6 +1628,7 @@ object puppeteerCoreStrings {
   sealed trait F16
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F16: F16 = "F16".asInstanceOf[F16]
   
@@ -1466,6 +1636,7 @@ object puppeteerCoreStrings {
   sealed trait F17
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F17: F17 = "F17".asInstanceOf[F17]
   
@@ -1473,6 +1644,7 @@ object puppeteerCoreStrings {
   sealed trait F18
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F18: F18 = "F18".asInstanceOf[F18]
   
@@ -1480,6 +1652,7 @@ object puppeteerCoreStrings {
   sealed trait F19
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F19: F19 = "F19".asInstanceOf[F19]
   
@@ -1487,6 +1660,7 @@ object puppeteerCoreStrings {
   sealed trait F2
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F2: F2 = "F2".asInstanceOf[F2]
   
@@ -1494,6 +1668,7 @@ object puppeteerCoreStrings {
   sealed trait F20
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F20: F20 = "F20".asInstanceOf[F20]
   
@@ -1501,6 +1676,7 @@ object puppeteerCoreStrings {
   sealed trait F21
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F21: F21 = "F21".asInstanceOf[F21]
   
@@ -1508,6 +1684,7 @@ object puppeteerCoreStrings {
   sealed trait F22
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F22: F22 = "F22".asInstanceOf[F22]
   
@@ -1515,6 +1692,7 @@ object puppeteerCoreStrings {
   sealed trait F23
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F23: F23 = "F23".asInstanceOf[F23]
   
@@ -1522,6 +1700,7 @@ object puppeteerCoreStrings {
   sealed trait F24
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F24: F24 = "F24".asInstanceOf[F24]
   
@@ -1529,6 +1708,7 @@ object puppeteerCoreStrings {
   sealed trait F3
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F3: F3 = "F3".asInstanceOf[F3]
   
@@ -1536,6 +1716,7 @@ object puppeteerCoreStrings {
   sealed trait F4
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F4: F4 = "F4".asInstanceOf[F4]
   
@@ -1543,6 +1724,7 @@ object puppeteerCoreStrings {
   sealed trait F5
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F5: F5 = "F5".asInstanceOf[F5]
   
@@ -1550,6 +1732,7 @@ object puppeteerCoreStrings {
   sealed trait F6
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F6: F6 = "F6".asInstanceOf[F6]
   
@@ -1557,6 +1740,7 @@ object puppeteerCoreStrings {
   sealed trait F7
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F7: F7 = "F7".asInstanceOf[F7]
   
@@ -1564,6 +1748,7 @@ object puppeteerCoreStrings {
   sealed trait F8
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F8: F8 = "F8".asInstanceOf[F8]
   
@@ -1571,12 +1756,17 @@ object puppeteerCoreStrings {
   sealed trait F9
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def F9: F9 = "F9".asInstanceOf[F9]
   
   @js.native
   sealed trait FetchDotcontinueRequest extends StObject
   inline def FetchDotcontinueRequest: FetchDotcontinueRequest = "Fetch.continueRequest".asInstanceOf[FetchDotcontinueRequest]
+  
+  @js.native
+  sealed trait FetchDotcontinueResponse extends StObject
+  inline def FetchDotcontinueResponse: FetchDotcontinueResponse = "Fetch.continueResponse".asInstanceOf[FetchDotcontinueResponse]
   
   @js.native
   sealed trait FetchDotcontinueWithAuth extends StObject
@@ -1610,6 +1800,7 @@ object puppeteerCoreStrings {
   sealed trait G
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def G: G = "G".asInstanceOf[G]
   
@@ -1617,6 +1808,7 @@ object puppeteerCoreStrings {
   sealed trait Graveaccent
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Graveaccent: Graveaccent = "`".asInstanceOf[Graveaccent]
   
@@ -1624,6 +1816,7 @@ object puppeteerCoreStrings {
   sealed trait Greaterthansign
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
@@ -1631,6 +1824,7 @@ object puppeteerCoreStrings {
   sealed trait H
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def H: H = "H".asInstanceOf[H]
   
@@ -1698,6 +1892,7 @@ object puppeteerCoreStrings {
   sealed trait Help
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Help: Help = "Help".asInstanceOf[Help]
   
@@ -1705,6 +1900,7 @@ object puppeteerCoreStrings {
   sealed trait Home
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Home: Home = "Home".asInstanceOf[Home]
   
@@ -1712,6 +1908,7 @@ object puppeteerCoreStrings {
   sealed trait I
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def I: I = "I".asInstanceOf[I]
   
@@ -1764,6 +1961,18 @@ object puppeteerCoreStrings {
   inline def IndexedDBDotrequestDatabaseNames: IndexedDBDotrequestDatabaseNames = "IndexedDB.requestDatabaseNames".asInstanceOf[IndexedDBDotrequestDatabaseNames]
   
   @js.native
+  sealed trait InnerLazyParams extends StObject
+  inline def InnerLazyParams: InnerLazyParams = "InnerLazyParams".asInstanceOf[InnerLazyParams]
+  
+  @js.native
+  sealed trait InnerParams extends StObject
+  inline def InnerParams: InnerParams = "InnerParams".asInstanceOf[InnerParams]
+  
+  @js.native
+  sealed trait InputDotdispatchDragEvent extends StObject
+  inline def InputDotdispatchDragEvent: InputDotdispatchDragEvent = "Input.dispatchDragEvent".asInstanceOf[InputDotdispatchDragEvent]
+  
+  @js.native
   sealed trait InputDotdispatchKeyEvent extends StObject
   inline def InputDotdispatchKeyEvent: InputDotdispatchKeyEvent = "Input.dispatchKeyEvent".asInstanceOf[InputDotdispatchKeyEvent]
   
@@ -1780,12 +1989,20 @@ object puppeteerCoreStrings {
   inline def InputDotemulateTouchFromMouseEvent: InputDotemulateTouchFromMouseEvent = "Input.emulateTouchFromMouseEvent".asInstanceOf[InputDotemulateTouchFromMouseEvent]
   
   @js.native
+  sealed trait InputDotimeSetComposition extends StObject
+  inline def InputDotimeSetComposition: InputDotimeSetComposition = "Input.imeSetComposition".asInstanceOf[InputDotimeSetComposition]
+  
+  @js.native
   sealed trait InputDotinsertText extends StObject
   inline def InputDotinsertText: InputDotinsertText = "Input.insertText".asInstanceOf[InputDotinsertText]
   
   @js.native
   sealed trait InputDotsetIgnoreInputEvents extends StObject
   inline def InputDotsetIgnoreInputEvents: InputDotsetIgnoreInputEvents = "Input.setIgnoreInputEvents".asInstanceOf[InputDotsetIgnoreInputEvents]
+  
+  @js.native
+  sealed trait InputDotsetInterceptDrags extends StObject
+  inline def InputDotsetInterceptDrags: InputDotsetInterceptDrags = "Input.setInterceptDrags".asInstanceOf[InputDotsetInterceptDrags]
   
   @js.native
   sealed trait InputDotsynthesizePinchGesture extends StObject
@@ -1803,6 +2020,7 @@ object puppeteerCoreStrings {
   sealed trait Insert
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Insert: Insert = "Insert".asInstanceOf[Insert]
   
@@ -1818,6 +2036,7 @@ object puppeteerCoreStrings {
   sealed trait J
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def J: J = "J".asInstanceOf[J]
   
@@ -1825,6 +2044,7 @@ object puppeteerCoreStrings {
   sealed trait K
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def K: K = "K".asInstanceOf[K]
   
@@ -1832,6 +2052,7 @@ object puppeteerCoreStrings {
   sealed trait KeyA
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyA: KeyA = "KeyA".asInstanceOf[KeyA]
   
@@ -1839,6 +2060,7 @@ object puppeteerCoreStrings {
   sealed trait KeyB
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyB: KeyB = "KeyB".asInstanceOf[KeyB]
   
@@ -1846,6 +2068,7 @@ object puppeteerCoreStrings {
   sealed trait KeyC
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyC: KeyC = "KeyC".asInstanceOf[KeyC]
   
@@ -1853,6 +2076,7 @@ object puppeteerCoreStrings {
   sealed trait KeyD
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyD: KeyD = "KeyD".asInstanceOf[KeyD]
   
@@ -1860,6 +2084,7 @@ object puppeteerCoreStrings {
   sealed trait KeyE
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyE: KeyE = "KeyE".asInstanceOf[KeyE]
   
@@ -1867,6 +2092,7 @@ object puppeteerCoreStrings {
   sealed trait KeyF
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyF: KeyF = "KeyF".asInstanceOf[KeyF]
   
@@ -1874,6 +2100,7 @@ object puppeteerCoreStrings {
   sealed trait KeyG
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyG: KeyG = "KeyG".asInstanceOf[KeyG]
   
@@ -1881,6 +2108,7 @@ object puppeteerCoreStrings {
   sealed trait KeyH
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyH: KeyH = "KeyH".asInstanceOf[KeyH]
   
@@ -1888,6 +2116,7 @@ object puppeteerCoreStrings {
   sealed trait KeyI
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyI: KeyI = "KeyI".asInstanceOf[KeyI]
   
@@ -1895,6 +2124,7 @@ object puppeteerCoreStrings {
   sealed trait KeyJ
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyJ: KeyJ = "KeyJ".asInstanceOf[KeyJ]
   
@@ -1902,6 +2132,7 @@ object puppeteerCoreStrings {
   sealed trait KeyK
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyK: KeyK = "KeyK".asInstanceOf[KeyK]
   
@@ -1909,6 +2140,7 @@ object puppeteerCoreStrings {
   sealed trait KeyL
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyL: KeyL = "KeyL".asInstanceOf[KeyL]
   
@@ -1916,6 +2148,7 @@ object puppeteerCoreStrings {
   sealed trait KeyM
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyM: KeyM = "KeyM".asInstanceOf[KeyM]
   
@@ -1923,6 +2156,7 @@ object puppeteerCoreStrings {
   sealed trait KeyN
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyN: KeyN = "KeyN".asInstanceOf[KeyN]
   
@@ -1930,6 +2164,7 @@ object puppeteerCoreStrings {
   sealed trait KeyO
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyO: KeyO = "KeyO".asInstanceOf[KeyO]
   
@@ -1937,6 +2172,7 @@ object puppeteerCoreStrings {
   sealed trait KeyP
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyP: KeyP = "KeyP".asInstanceOf[KeyP]
   
@@ -1944,6 +2180,7 @@ object puppeteerCoreStrings {
   sealed trait KeyQ
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyQ: KeyQ = "KeyQ".asInstanceOf[KeyQ]
   
@@ -1951,6 +2188,7 @@ object puppeteerCoreStrings {
   sealed trait KeyR
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyR: KeyR = "KeyR".asInstanceOf[KeyR]
   
@@ -1958,6 +2196,7 @@ object puppeteerCoreStrings {
   sealed trait KeyS
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyS: KeyS = "KeyS".asInstanceOf[KeyS]
   
@@ -1965,6 +2204,7 @@ object puppeteerCoreStrings {
   sealed trait KeyT
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyT: KeyT = "KeyT".asInstanceOf[KeyT]
   
@@ -1972,6 +2212,7 @@ object puppeteerCoreStrings {
   sealed trait KeyU
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyU: KeyU = "KeyU".asInstanceOf[KeyU]
   
@@ -1979,6 +2220,7 @@ object puppeteerCoreStrings {
   sealed trait KeyV
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyV: KeyV = "KeyV".asInstanceOf[KeyV]
   
@@ -1986,6 +2228,7 @@ object puppeteerCoreStrings {
   sealed trait KeyW
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyW: KeyW = "KeyW".asInstanceOf[KeyW]
   
@@ -1993,6 +2236,7 @@ object puppeteerCoreStrings {
   sealed trait KeyX
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyX: KeyX = "KeyX".asInstanceOf[KeyX]
   
@@ -2000,6 +2244,7 @@ object puppeteerCoreStrings {
   sealed trait KeyY
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyY: KeyY = "KeyY".asInstanceOf[KeyY]
   
@@ -2007,6 +2252,7 @@ object puppeteerCoreStrings {
   sealed trait KeyZ
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def KeyZ: KeyZ = "KeyZ".asInstanceOf[KeyZ]
   
@@ -2014,6 +2260,7 @@ object puppeteerCoreStrings {
   sealed trait L
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def L: L = "L".asInstanceOf[L]
   
@@ -2057,6 +2304,7 @@ object puppeteerCoreStrings {
   sealed trait Leftcurlybracket
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Leftcurlybracket: Leftcurlybracket = "{".asInstanceOf[Leftcurlybracket]
   
@@ -2064,6 +2312,7 @@ object puppeteerCoreStrings {
   sealed trait Leftparenthesis
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
   
@@ -2071,6 +2320,7 @@ object puppeteerCoreStrings {
   sealed trait Lessthansign
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
@@ -2078,6 +2328,7 @@ object puppeteerCoreStrings {
   sealed trait Linefeed
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Linefeed: Linefeed = "\n".asInstanceOf[Linefeed]
   
@@ -2105,6 +2356,7 @@ object puppeteerCoreStrings {
   sealed trait M
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def M: M = "M".asInstanceOf[M]
   
@@ -2120,6 +2372,7 @@ object puppeteerCoreStrings {
   sealed trait MediaPlayPause
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def MediaPlayPause: MediaPlayPause = "MediaPlayPause".asInstanceOf[MediaPlayPause]
   
@@ -2127,6 +2380,7 @@ object puppeteerCoreStrings {
   sealed trait MediaStop
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def MediaStop: MediaStop = "MediaStop".asInstanceOf[MediaStop]
   
@@ -2134,6 +2388,7 @@ object puppeteerCoreStrings {
   sealed trait MediaTrackNext
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def MediaTrackNext: MediaTrackNext = "MediaTrackNext".asInstanceOf[MediaTrackNext]
   
@@ -2141,6 +2396,7 @@ object puppeteerCoreStrings {
   sealed trait MediaTrackPrevious
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def MediaTrackPrevious: MediaTrackPrevious = "MediaTrackPrevious".asInstanceOf[MediaTrackPrevious]
   
@@ -2188,6 +2444,7 @@ object puppeteerCoreStrings {
   sealed trait Meta
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Meta: Meta = "Meta".asInstanceOf[Meta]
   
@@ -2195,6 +2452,7 @@ object puppeteerCoreStrings {
   sealed trait MetaLeft
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def MetaLeft: MetaLeft = "MetaLeft".asInstanceOf[MetaLeft]
   
@@ -2202,6 +2460,7 @@ object puppeteerCoreStrings {
   sealed trait MetaRight
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def MetaRight: MetaRight = "MetaRight".asInstanceOf[MetaRight]
   
@@ -2209,6 +2468,7 @@ object puppeteerCoreStrings {
   sealed trait Minus
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Minus: Minus = "Minus".asInstanceOf[Minus]
   
@@ -2216,6 +2476,7 @@ object puppeteerCoreStrings {
   sealed trait ModeChange
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def ModeChange: ModeChange = "ModeChange".asInstanceOf[ModeChange]
   
@@ -2223,6 +2484,7 @@ object puppeteerCoreStrings {
   sealed trait N
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def N: N = "N".asInstanceOf[N]
   
@@ -2237,6 +2499,10 @@ object puppeteerCoreStrings {
   @js.native
   sealed trait NetworkDotcanEmulateNetworkConditions extends StObject
   inline def NetworkDotcanEmulateNetworkConditions: NetworkDotcanEmulateNetworkConditions = "Network.canEmulateNetworkConditions".asInstanceOf[NetworkDotcanEmulateNetworkConditions]
+  
+  @js.native
+  sealed trait NetworkDotclearAcceptedEncodingsOverride extends StObject
+  inline def NetworkDotclearAcceptedEncodingsOverride: NetworkDotclearAcceptedEncodingsOverride = "Network.clearAcceptedEncodingsOverride".asInstanceOf[NetworkDotclearAcceptedEncodingsOverride]
   
   @js.native
   sealed trait NetworkDotclearBrowserCache extends StObject
@@ -2265,6 +2531,10 @@ object puppeteerCoreStrings {
   @js.native
   sealed trait NetworkDotenable extends StObject
   inline def NetworkDotenable: NetworkDotenable = "Network.enable".asInstanceOf[NetworkDotenable]
+  
+  @js.native
+  sealed trait NetworkDotenableReportingApi extends StObject
+  inline def NetworkDotenableReportingApi: NetworkDotenableReportingApi = "Network.enableReportingApi".asInstanceOf[NetworkDotenableReportingApi]
   
   @js.native
   sealed trait NetworkDotgetAllCookies extends StObject
@@ -2307,8 +2577,12 @@ object puppeteerCoreStrings {
   inline def NetworkDotsearchInResponseBody: NetworkDotsearchInResponseBody = "Network.searchInResponseBody".asInstanceOf[NetworkDotsearchInResponseBody]
   
   @js.native
-  sealed trait NetworkDotsetAttachDebugHeader extends StObject
-  inline def NetworkDotsetAttachDebugHeader: NetworkDotsetAttachDebugHeader = "Network.setAttachDebugHeader".asInstanceOf[NetworkDotsetAttachDebugHeader]
+  sealed trait NetworkDotsetAcceptedEncodings extends StObject
+  inline def NetworkDotsetAcceptedEncodings: NetworkDotsetAcceptedEncodings = "Network.setAcceptedEncodings".asInstanceOf[NetworkDotsetAcceptedEncodings]
+  
+  @js.native
+  sealed trait NetworkDotsetAttachDebugStack extends StObject
+  inline def NetworkDotsetAttachDebugStack: NetworkDotsetAttachDebugStack = "Network.setAttachDebugStack".asInstanceOf[NetworkDotsetAttachDebugStack]
   
   @js.native
   sealed trait NetworkDotsetBlockedURLs extends StObject
@@ -2331,10 +2605,6 @@ object puppeteerCoreStrings {
   inline def NetworkDotsetCookies: NetworkDotsetCookies = "Network.setCookies".asInstanceOf[NetworkDotsetCookies]
   
   @js.native
-  sealed trait NetworkDotsetDataSizeLimitsForTest extends StObject
-  inline def NetworkDotsetDataSizeLimitsForTest: NetworkDotsetDataSizeLimitsForTest = "Network.setDataSizeLimitsForTest".asInstanceOf[NetworkDotsetDataSizeLimitsForTest]
-  
-  @js.native
   sealed trait NetworkDotsetExtraHTTPHeaders extends StObject
   inline def NetworkDotsetExtraHTTPHeaders: NetworkDotsetExtraHTTPHeaders = "Network.setExtraHTTPHeaders".asInstanceOf[NetworkDotsetExtraHTTPHeaders]
   
@@ -2354,6 +2624,7 @@ object puppeteerCoreStrings {
   sealed trait NonConvert
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def NonConvert: NonConvert = "NonConvert".asInstanceOf[NonConvert]
   
@@ -2361,6 +2632,7 @@ object puppeteerCoreStrings {
   sealed trait Null
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Null: Null = "\u0000".asInstanceOf[Null]
   
@@ -2368,6 +2640,7 @@ object puppeteerCoreStrings {
   sealed trait NumLock
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def NumLock: NumLock = "NumLock".asInstanceOf[NumLock]
   
@@ -2375,6 +2648,7 @@ object puppeteerCoreStrings {
   sealed trait Numbersign
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Numbersign: Numbersign = "#".asInstanceOf[Numbersign]
   
@@ -2382,6 +2656,7 @@ object puppeteerCoreStrings {
   sealed trait Numpad0
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Numpad0: Numpad0 = "Numpad0".asInstanceOf[Numpad0]
   
@@ -2389,6 +2664,7 @@ object puppeteerCoreStrings {
   sealed trait Numpad1
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Numpad1: Numpad1 = "Numpad1".asInstanceOf[Numpad1]
   
@@ -2396,6 +2672,7 @@ object puppeteerCoreStrings {
   sealed trait Numpad2
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Numpad2: Numpad2 = "Numpad2".asInstanceOf[Numpad2]
   
@@ -2403,6 +2680,7 @@ object puppeteerCoreStrings {
   sealed trait Numpad3
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Numpad3: Numpad3 = "Numpad3".asInstanceOf[Numpad3]
   
@@ -2410,6 +2688,7 @@ object puppeteerCoreStrings {
   sealed trait Numpad4
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Numpad4: Numpad4 = "Numpad4".asInstanceOf[Numpad4]
   
@@ -2417,6 +2696,7 @@ object puppeteerCoreStrings {
   sealed trait Numpad5
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Numpad5: Numpad5 = "Numpad5".asInstanceOf[Numpad5]
   
@@ -2424,6 +2704,7 @@ object puppeteerCoreStrings {
   sealed trait Numpad6
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Numpad6: Numpad6 = "Numpad6".asInstanceOf[Numpad6]
   
@@ -2431,6 +2712,7 @@ object puppeteerCoreStrings {
   sealed trait Numpad7
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Numpad7: Numpad7 = "Numpad7".asInstanceOf[Numpad7]
   
@@ -2438,6 +2720,7 @@ object puppeteerCoreStrings {
   sealed trait Numpad8
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Numpad8: Numpad8 = "Numpad8".asInstanceOf[Numpad8]
   
@@ -2445,6 +2728,7 @@ object puppeteerCoreStrings {
   sealed trait Numpad9
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Numpad9: Numpad9 = "Numpad9".asInstanceOf[Numpad9]
   
@@ -2452,6 +2736,7 @@ object puppeteerCoreStrings {
   sealed trait NumpadAdd
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def NumpadAdd: NumpadAdd = "NumpadAdd".asInstanceOf[NumpadAdd]
   
@@ -2459,6 +2744,7 @@ object puppeteerCoreStrings {
   sealed trait NumpadDecimal
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def NumpadDecimal: NumpadDecimal = "NumpadDecimal".asInstanceOf[NumpadDecimal]
   
@@ -2466,6 +2752,7 @@ object puppeteerCoreStrings {
   sealed trait NumpadDivide
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def NumpadDivide: NumpadDivide = "NumpadDivide".asInstanceOf[NumpadDivide]
   
@@ -2473,6 +2760,7 @@ object puppeteerCoreStrings {
   sealed trait NumpadEnter
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def NumpadEnter: NumpadEnter = "NumpadEnter".asInstanceOf[NumpadEnter]
   
@@ -2480,6 +2768,7 @@ object puppeteerCoreStrings {
   sealed trait NumpadEqual
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def NumpadEqual: NumpadEqual = "NumpadEqual".asInstanceOf[NumpadEqual]
   
@@ -2487,6 +2776,7 @@ object puppeteerCoreStrings {
   sealed trait NumpadMultiply
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def NumpadMultiply: NumpadMultiply = "NumpadMultiply".asInstanceOf[NumpadMultiply]
   
@@ -2494,6 +2784,7 @@ object puppeteerCoreStrings {
   sealed trait NumpadSubtract
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def NumpadSubtract: NumpadSubtract = "NumpadSubtract".asInstanceOf[NumpadSubtract]
   
@@ -2501,6 +2792,7 @@ object puppeteerCoreStrings {
   sealed trait O
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def O: O = "O".asInstanceOf[O]
   
@@ -2508,6 +2800,7 @@ object puppeteerCoreStrings {
   sealed trait Open
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Open: Open = "Open".asInstanceOf[Open]
   
@@ -2568,12 +2861,20 @@ object puppeteerCoreStrings {
   inline def OverlayDotsetShowAdHighlights: OverlayDotsetShowAdHighlights = "Overlay.setShowAdHighlights".asInstanceOf[OverlayDotsetShowAdHighlights]
   
   @js.native
+  sealed trait OverlayDotsetShowContainerQueryOverlays extends StObject
+  inline def OverlayDotsetShowContainerQueryOverlays: OverlayDotsetShowContainerQueryOverlays = "Overlay.setShowContainerQueryOverlays".asInstanceOf[OverlayDotsetShowContainerQueryOverlays]
+  
+  @js.native
   sealed trait OverlayDotsetShowDebugBorders extends StObject
   inline def OverlayDotsetShowDebugBorders: OverlayDotsetShowDebugBorders = "Overlay.setShowDebugBorders".asInstanceOf[OverlayDotsetShowDebugBorders]
   
   @js.native
   sealed trait OverlayDotsetShowFPSCounter extends StObject
   inline def OverlayDotsetShowFPSCounter: OverlayDotsetShowFPSCounter = "Overlay.setShowFPSCounter".asInstanceOf[OverlayDotsetShowFPSCounter]
+  
+  @js.native
+  sealed trait OverlayDotsetShowFlexOverlays extends StObject
+  inline def OverlayDotsetShowFlexOverlays: OverlayDotsetShowFlexOverlays = "Overlay.setShowFlexOverlays".asInstanceOf[OverlayDotsetShowFlexOverlays]
   
   @js.native
   sealed trait OverlayDotsetShowGridOverlays extends StObject
@@ -2588,6 +2889,10 @@ object puppeteerCoreStrings {
   inline def OverlayDotsetShowHitTestBorders: OverlayDotsetShowHitTestBorders = "Overlay.setShowHitTestBorders".asInstanceOf[OverlayDotsetShowHitTestBorders]
   
   @js.native
+  sealed trait OverlayDotsetShowIsolatedElements extends StObject
+  inline def OverlayDotsetShowIsolatedElements: OverlayDotsetShowIsolatedElements = "Overlay.setShowIsolatedElements".asInstanceOf[OverlayDotsetShowIsolatedElements]
+  
+  @js.native
   sealed trait OverlayDotsetShowLayoutShiftRegions extends StObject
   inline def OverlayDotsetShowLayoutShiftRegions: OverlayDotsetShowLayoutShiftRegions = "Overlay.setShowLayoutShiftRegions".asInstanceOf[OverlayDotsetShowLayoutShiftRegions]
   
@@ -2600,13 +2905,22 @@ object puppeteerCoreStrings {
   inline def OverlayDotsetShowScrollBottleneckRects: OverlayDotsetShowScrollBottleneckRects = "Overlay.setShowScrollBottleneckRects".asInstanceOf[OverlayDotsetShowScrollBottleneckRects]
   
   @js.native
+  sealed trait OverlayDotsetShowScrollSnapOverlays extends StObject
+  inline def OverlayDotsetShowScrollSnapOverlays: OverlayDotsetShowScrollSnapOverlays = "Overlay.setShowScrollSnapOverlays".asInstanceOf[OverlayDotsetShowScrollSnapOverlays]
+  
+  @js.native
   sealed trait OverlayDotsetShowViewportSizeOnResize extends StObject
   inline def OverlayDotsetShowViewportSizeOnResize: OverlayDotsetShowViewportSizeOnResize = "Overlay.setShowViewportSizeOnResize".asInstanceOf[OverlayDotsetShowViewportSizeOnResize]
+  
+  @js.native
+  sealed trait OverlayDotsetShowWebVitals extends StObject
+  inline def OverlayDotsetShowWebVitals: OverlayDotsetShowWebVitals = "Overlay.setShowWebVitals".asInstanceOf[OverlayDotsetShowWebVitals]
   
   @js.native
   sealed trait P
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def P: P = "P".asInstanceOf[P]
   
@@ -2679,6 +2993,10 @@ object puppeteerCoreStrings {
   inline def PageDotgenerateTestReport: PageDotgenerateTestReport = "Page.generateTestReport".asInstanceOf[PageDotgenerateTestReport]
   
   @js.native
+  sealed trait PageDotgetAppId extends StObject
+  inline def PageDotgetAppId: PageDotgetAppId = "Page.getAppId".asInstanceOf[PageDotgetAppId]
+  
+  @js.native
   sealed trait PageDotgetAppManifest extends StObject
   inline def PageDotgetAppManifest: PageDotgetAppManifest = "Page.getAppManifest".asInstanceOf[PageDotgetAppManifest]
   
@@ -2707,6 +3025,14 @@ object puppeteerCoreStrings {
   inline def PageDotgetNavigationHistory: PageDotgetNavigationHistory = "Page.getNavigationHistory".asInstanceOf[PageDotgetNavigationHistory]
   
   @js.native
+  sealed trait PageDotgetOriginTrials extends StObject
+  inline def PageDotgetOriginTrials: PageDotgetOriginTrials = "Page.getOriginTrials".asInstanceOf[PageDotgetOriginTrials]
+  
+  @js.native
+  sealed trait PageDotgetPermissionsPolicyState extends StObject
+  inline def PageDotgetPermissionsPolicyState: PageDotgetPermissionsPolicyState = "Page.getPermissionsPolicyState".asInstanceOf[PageDotgetPermissionsPolicyState]
+  
+  @js.native
   sealed trait PageDotgetResourceContent extends StObject
   inline def PageDotgetResourceContent: PageDotgetResourceContent = "Page.getResourceContent".asInstanceOf[PageDotgetResourceContent]
   
@@ -2729,6 +3055,10 @@ object puppeteerCoreStrings {
   @js.native
   sealed trait PageDotprintToPDF extends StObject
   inline def PageDotprintToPDF: PageDotprintToPDF = "Page.printToPDF".asInstanceOf[PageDotprintToPDF]
+  
+  @js.native
+  sealed trait PageDotproduceCompilationCache extends StObject
+  inline def PageDotproduceCompilationCache: PageDotproduceCompilationCache = "Page.produceCompilationCache".asInstanceOf[PageDotproduceCompilationCache]
   
   @js.native
   sealed trait PageDotreload extends StObject
@@ -2799,8 +3129,8 @@ object puppeteerCoreStrings {
   inline def PageDotsetLifecycleEventsEnabled: PageDotsetLifecycleEventsEnabled = "Page.setLifecycleEventsEnabled".asInstanceOf[PageDotsetLifecycleEventsEnabled]
   
   @js.native
-  sealed trait PageDotsetProduceCompilationCache extends StObject
-  inline def PageDotsetProduceCompilationCache: PageDotsetProduceCompilationCache = "Page.setProduceCompilationCache".asInstanceOf[PageDotsetProduceCompilationCache]
+  sealed trait PageDotsetSPCTransactionMode extends StObject
+  inline def PageDotsetSPCTransactionMode: PageDotsetSPCTransactionMode = "Page.setSPCTransactionMode".asInstanceOf[PageDotsetSPCTransactionMode]
   
   @js.native
   sealed trait PageDotsetTouchEmulationEnabled extends StObject
@@ -2830,6 +3160,7 @@ object puppeteerCoreStrings {
   sealed trait PageDown
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def PageDown: PageDown = "PageDown".asInstanceOf[PageDown]
   
@@ -2837,6 +3168,7 @@ object puppeteerCoreStrings {
   sealed trait PageUp
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def PageUp: PageUp = "PageUp".asInstanceOf[PageUp]
   
@@ -2844,6 +3176,7 @@ object puppeteerCoreStrings {
   sealed trait Pause
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Pause: Pause = "Pause".asInstanceOf[Pause]
   
@@ -2851,6 +3184,7 @@ object puppeteerCoreStrings {
   sealed trait Percentsign
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
   
@@ -2871,9 +3205,14 @@ object puppeteerCoreStrings {
   inline def PerformanceDotsetTimeDomain: PerformanceDotsetTimeDomain = "Performance.setTimeDomain".asInstanceOf[PerformanceDotsetTimeDomain]
   
   @js.native
+  sealed trait PerformanceTimelineDotenable extends StObject
+  inline def PerformanceTimelineDotenable: PerformanceTimelineDotenable = "PerformanceTimeline.enable".asInstanceOf[PerformanceTimelineDotenable]
+  
+  @js.native
   sealed trait Period
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Period: Period = "Period".asInstanceOf[Period]
   
@@ -2881,6 +3220,7 @@ object puppeteerCoreStrings {
   sealed trait Play
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Play: Play = "Play".asInstanceOf[Play]
   
@@ -2888,6 +3228,7 @@ object puppeteerCoreStrings {
   sealed trait Plussign
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
   
@@ -2895,6 +3236,7 @@ object puppeteerCoreStrings {
   sealed trait Power
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Power: Power = "Power".asInstanceOf[Power]
   
@@ -2902,6 +3244,7 @@ object puppeteerCoreStrings {
   sealed trait Print
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Print: Print = "Print".asInstanceOf[Print]
   
@@ -2909,6 +3252,7 @@ object puppeteerCoreStrings {
   sealed trait PrintScreen
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def PrintScreen: PrintScreen = "PrintScreen".asInstanceOf[PrintScreen]
   
@@ -2917,36 +3261,12 @@ object puppeteerCoreStrings {
   inline def ProfilerDotdisable: ProfilerDotdisable = "Profiler.disable".asInstanceOf[ProfilerDotdisable]
   
   @js.native
-  sealed trait ProfilerDotdisableCounters extends StObject
-  inline def ProfilerDotdisableCounters: ProfilerDotdisableCounters = "Profiler.disableCounters".asInstanceOf[ProfilerDotdisableCounters]
-  
-  @js.native
-  sealed trait ProfilerDotdisableRuntimeCallStats extends StObject
-  inline def ProfilerDotdisableRuntimeCallStats: ProfilerDotdisableRuntimeCallStats = "Profiler.disableRuntimeCallStats".asInstanceOf[ProfilerDotdisableRuntimeCallStats]
-  
-  @js.native
   sealed trait ProfilerDotenable extends StObject
   inline def ProfilerDotenable: ProfilerDotenable = "Profiler.enable".asInstanceOf[ProfilerDotenable]
   
   @js.native
-  sealed trait ProfilerDotenableCounters extends StObject
-  inline def ProfilerDotenableCounters: ProfilerDotenableCounters = "Profiler.enableCounters".asInstanceOf[ProfilerDotenableCounters]
-  
-  @js.native
-  sealed trait ProfilerDotenableRuntimeCallStats extends StObject
-  inline def ProfilerDotenableRuntimeCallStats: ProfilerDotenableRuntimeCallStats = "Profiler.enableRuntimeCallStats".asInstanceOf[ProfilerDotenableRuntimeCallStats]
-  
-  @js.native
   sealed trait ProfilerDotgetBestEffortCoverage extends StObject
   inline def ProfilerDotgetBestEffortCoverage: ProfilerDotgetBestEffortCoverage = "Profiler.getBestEffortCoverage".asInstanceOf[ProfilerDotgetBestEffortCoverage]
-  
-  @js.native
-  sealed trait ProfilerDotgetCounters extends StObject
-  inline def ProfilerDotgetCounters: ProfilerDotgetCounters = "Profiler.getCounters".asInstanceOf[ProfilerDotgetCounters]
-  
-  @js.native
-  sealed trait ProfilerDotgetRuntimeCallStats extends StObject
-  inline def ProfilerDotgetRuntimeCallStats: ProfilerDotgetRuntimeCallStats = "Profiler.getRuntimeCallStats".asInstanceOf[ProfilerDotgetRuntimeCallStats]
   
   @js.native
   sealed trait ProfilerDotsetSamplingInterval extends StObject
@@ -2988,6 +3308,7 @@ object puppeteerCoreStrings {
   sealed trait Props
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Props: Props = "Props".asInstanceOf[Props]
   
@@ -2995,6 +3316,7 @@ object puppeteerCoreStrings {
   sealed trait Q
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Q: Q = "Q".asInstanceOf[Q]
   
@@ -3002,6 +3324,7 @@ object puppeteerCoreStrings {
   sealed trait Questionmark
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Questionmark: Questionmark = "?".asInstanceOf[Questionmark]
   
@@ -3009,6 +3332,7 @@ object puppeteerCoreStrings {
   sealed trait Quotationmark
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   
@@ -3016,6 +3340,7 @@ object puppeteerCoreStrings {
   sealed trait Quote
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Quote: Quote = "Quote".asInstanceOf[Quote]
   
@@ -3023,6 +3348,7 @@ object puppeteerCoreStrings {
   sealed trait R
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def R: R = "R".asInstanceOf[R]
   
@@ -3030,6 +3356,7 @@ object puppeteerCoreStrings {
   sealed trait Rightcurlybracket
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Rightcurlybracket: Rightcurlybracket = "}".asInstanceOf[Rightcurlybracket]
   
@@ -3037,6 +3364,7 @@ object puppeteerCoreStrings {
   sealed trait Rightparenthesis
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
   
@@ -3071,6 +3399,10 @@ object puppeteerCoreStrings {
   @js.native
   sealed trait RuntimeDotevaluate extends StObject
   inline def RuntimeDotevaluate: RuntimeDotevaluate = "Runtime.evaluate".asInstanceOf[RuntimeDotevaluate]
+  
+  @js.native
+  sealed trait RuntimeDotgetExceptionDetails extends StObject
+  inline def RuntimeDotgetExceptionDetails: RuntimeDotgetExceptionDetails = "Runtime.getExceptionDetails".asInstanceOf[RuntimeDotgetExceptionDetails]
   
   @js.native
   sealed trait RuntimeDotgetHeapUsage extends StObject
@@ -3132,6 +3464,7 @@ object puppeteerCoreStrings {
   sealed trait S
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def S: S = "S".asInstanceOf[S]
   
@@ -3143,6 +3476,7 @@ object puppeteerCoreStrings {
   sealed trait ScrollLock
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def ScrollLock: ScrollLock = "ScrollLock".asInstanceOf[ScrollLock]
   
@@ -3170,15 +3504,18 @@ object puppeteerCoreStrings {
   sealed trait Select
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Select: Select = "Select".asInstanceOf[Select]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput because Already inherited
+  - typings.puppeteerCore.mod.KeyInput because Already inherited
   - typings.puppeteerCore.uskeyboardlayoutMod.KeyInput because Already inherited */ @js.native
   sealed trait Semicolon
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Semicolon: Semicolon = "Semicolon".asInstanceOf[Semicolon]
   
@@ -3238,6 +3575,7 @@ object puppeteerCoreStrings {
   sealed trait Shift
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Shift: Shift = "Shift".asInstanceOf[Shift]
   
@@ -3245,6 +3583,7 @@ object puppeteerCoreStrings {
   sealed trait ShiftLeft
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def ShiftLeft: ShiftLeft = "ShiftLeft".asInstanceOf[ShiftLeft]
   
@@ -3252,15 +3591,18 @@ object puppeteerCoreStrings {
   sealed trait ShiftRight
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def ShiftRight: ShiftRight = "ShiftRight".asInstanceOf[ShiftRight]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput because Already inherited
+  - typings.puppeteerCore.mod.KeyInput because Already inherited
   - typings.puppeteerCore.uskeyboardlayoutMod.KeyInput because Already inherited */ @js.native
   sealed trait Slash
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Slash: Slash = "Slash".asInstanceOf[Slash]
   
@@ -3268,6 +3610,7 @@ object puppeteerCoreStrings {
   sealed trait SoftLeft
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def SoftLeft: SoftLeft = "SoftLeft".asInstanceOf[SoftLeft]
   
@@ -3275,15 +3618,18 @@ object puppeteerCoreStrings {
   sealed trait SoftRight
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def SoftRight: SoftRight = "SoftRight".asInstanceOf[SoftRight]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput because Already inherited
+  - typings.puppeteerCore.mod.KeyInput because Already inherited
   - typings.puppeteerCore.uskeyboardlayoutMod.KeyInput because Already inherited */ @js.native
   sealed trait Space
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Space: Space = "Space".asInstanceOf[Space]
   
@@ -3296,8 +3642,28 @@ object puppeteerCoreStrings {
   inline def StorageDotclearDataForOrigin: StorageDotclearDataForOrigin = "Storage.clearDataForOrigin".asInstanceOf[StorageDotclearDataForOrigin]
   
   @js.native
+  sealed trait StorageDotclearDataForStorageKey extends StObject
+  inline def StorageDotclearDataForStorageKey: StorageDotclearDataForStorageKey = "Storage.clearDataForStorageKey".asInstanceOf[StorageDotclearDataForStorageKey]
+  
+  @js.native
+  sealed trait StorageDotclearTrustTokens extends StObject
+  inline def StorageDotclearTrustTokens: StorageDotclearTrustTokens = "Storage.clearTrustTokens".asInstanceOf[StorageDotclearTrustTokens]
+  
+  @js.native
   sealed trait StorageDotgetCookies extends StObject
   inline def StorageDotgetCookies: StorageDotgetCookies = "Storage.getCookies".asInstanceOf[StorageDotgetCookies]
+  
+  @js.native
+  sealed trait StorageDotgetInterestGroupDetails extends StObject
+  inline def StorageDotgetInterestGroupDetails: StorageDotgetInterestGroupDetails = "Storage.getInterestGroupDetails".asInstanceOf[StorageDotgetInterestGroupDetails]
+  
+  @js.native
+  sealed trait StorageDotgetStorageKeyForFrame extends StObject
+  inline def StorageDotgetStorageKeyForFrame: StorageDotgetStorageKeyForFrame = "Storage.getStorageKeyForFrame".asInstanceOf[StorageDotgetStorageKeyForFrame]
+  
+  @js.native
+  sealed trait StorageDotgetTrustTokens extends StObject
+  inline def StorageDotgetTrustTokens: StorageDotgetTrustTokens = "Storage.getTrustTokens".asInstanceOf[StorageDotgetTrustTokens]
   
   @js.native
   sealed trait StorageDotgetUsageAndQuota extends StObject
@@ -3312,6 +3678,10 @@ object puppeteerCoreStrings {
   inline def StorageDotsetCookies: StorageDotsetCookies = "Storage.setCookies".asInstanceOf[StorageDotsetCookies]
   
   @js.native
+  sealed trait StorageDotsetInterestGroupTracking extends StObject
+  inline def StorageDotsetInterestGroupTracking: StorageDotsetInterestGroupTracking = "Storage.setInterestGroupTracking".asInstanceOf[StorageDotsetInterestGroupTracking]
+  
+  @js.native
   sealed trait StorageDottrackCacheStorageForOrigin extends StObject
   inline def StorageDottrackCacheStorageForOrigin: StorageDottrackCacheStorageForOrigin = "Storage.trackCacheStorageForOrigin".asInstanceOf[StorageDottrackCacheStorageForOrigin]
   
@@ -3320,12 +3690,20 @@ object puppeteerCoreStrings {
   inline def StorageDottrackIndexedDBForOrigin: StorageDottrackIndexedDBForOrigin = "Storage.trackIndexedDBForOrigin".asInstanceOf[StorageDottrackIndexedDBForOrigin]
   
   @js.native
+  sealed trait StorageDottrackIndexedDBForStorageKey extends StObject
+  inline def StorageDottrackIndexedDBForStorageKey: StorageDottrackIndexedDBForStorageKey = "Storage.trackIndexedDBForStorageKey".asInstanceOf[StorageDottrackIndexedDBForStorageKey]
+  
+  @js.native
   sealed trait StorageDotuntrackCacheStorageForOrigin extends StObject
   inline def StorageDotuntrackCacheStorageForOrigin: StorageDotuntrackCacheStorageForOrigin = "Storage.untrackCacheStorageForOrigin".asInstanceOf[StorageDotuntrackCacheStorageForOrigin]
   
   @js.native
   sealed trait StorageDotuntrackIndexedDBForOrigin extends StObject
   inline def StorageDotuntrackIndexedDBForOrigin: StorageDotuntrackIndexedDBForOrigin = "Storage.untrackIndexedDBForOrigin".asInstanceOf[StorageDotuntrackIndexedDBForOrigin]
+  
+  @js.native
+  sealed trait StorageDotuntrackIndexedDBForStorageKey extends StObject
+  inline def StorageDotuntrackIndexedDBForStorageKey: StorageDotuntrackIndexedDBForStorageKey = "Storage.untrackIndexedDBForStorageKey".asInstanceOf[StorageDotuntrackIndexedDBForStorageKey]
   
   @js.native
   sealed trait SystemInfoDotgetInfo extends StObject
@@ -3339,6 +3717,7 @@ object puppeteerCoreStrings {
   sealed trait T
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def T: T = "T".asInstanceOf[T]
   
@@ -3346,6 +3725,7 @@ object puppeteerCoreStrings {
   sealed trait Tab
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Tab: Tab = "Tab".asInstanceOf[Tab]
   
@@ -3360,6 +3740,10 @@ object puppeteerCoreStrings {
   @js.native
   sealed trait TargetDotattachToTarget extends StObject
   inline def TargetDotattachToTarget: TargetDotattachToTarget = "Target.attachToTarget".asInstanceOf[TargetDotattachToTarget]
+  
+  @js.native
+  sealed trait TargetDotautoAttachRelated extends StObject
+  inline def TargetDotautoAttachRelated: TargetDotautoAttachRelated = "Target.autoAttachRelated".asInstanceOf[TargetDotautoAttachRelated]
   
   @js.native
   sealed trait TargetDotcloseTarget extends StObject
@@ -3425,6 +3809,7 @@ object puppeteerCoreStrings {
   sealed trait Tilde
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Tilde: Tilde = "~".asInstanceOf[Tilde]
   
@@ -3452,6 +3837,7 @@ object puppeteerCoreStrings {
   sealed trait U
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def U: U = "U".asInstanceOf[U]
   
@@ -3459,6 +3845,7 @@ object puppeteerCoreStrings {
   sealed trait V
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def V: V = "V".asInstanceOf[V]
   
@@ -3466,6 +3853,7 @@ object puppeteerCoreStrings {
   sealed trait Verticalline
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
   
@@ -3473,6 +3861,7 @@ object puppeteerCoreStrings {
   sealed trait VolumeDown
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def VolumeDown: VolumeDown = "VolumeDown".asInstanceOf[VolumeDown]
   
@@ -3480,6 +3869,7 @@ object puppeteerCoreStrings {
   sealed trait VolumeUp
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def VolumeUp: VolumeUp = "VolumeUp".asInstanceOf[VolumeUp]
   
@@ -3487,6 +3877,7 @@ object puppeteerCoreStrings {
   sealed trait W
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def W: W = "W".asInstanceOf[W]
   
@@ -3550,6 +3941,7 @@ object puppeteerCoreStrings {
   sealed trait X
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def X: X = "X".asInstanceOf[X]
   
@@ -3557,6 +3949,7 @@ object puppeteerCoreStrings {
   sealed trait Y
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Y: Y = "Y".asInstanceOf[Y]
   
@@ -3564,6 +3957,7 @@ object puppeteerCoreStrings {
   sealed trait Z
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def Z: Z = "Z".asInstanceOf[Z]
   
@@ -3571,6 +3965,7 @@ object puppeteerCoreStrings {
   sealed trait ZoomOut
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def ZoomOut: ZoomOut = "ZoomOut".asInstanceOf[ZoomOut]
   
@@ -3578,6 +3973,7 @@ object puppeteerCoreStrings {
   sealed trait `[`
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def `[`: `[` = "[".asInstanceOf[`[`]
   
@@ -3585,6 +3981,7 @@ object puppeteerCoreStrings {
   sealed trait `]`
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def `]`: `]` = "]".asInstanceOf[`]`]
   
@@ -3592,78 +3989,113 @@ object puppeteerCoreStrings {
   sealed trait _underscore
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def _underscore: _underscore = "_".asInstanceOf[_underscore]
   
   @js.native
   sealed trait a0
     extends StObject
-       with PaperFormat
-       with typings.puppeteerCore.pdfoptionsMod.PaperFormat
+       with LowerCasePaperFormat
+       with typings.puppeteerCore.commonPdfoptionsMod.LowerCasePaperFormat
+       with typings.puppeteerCore.pdfoptionsMod.LowerCasePaperFormat
   inline def a0: a0 = "a0".asInstanceOf[a0]
   
   @js.native
   sealed trait a1
     extends StObject
-       with PaperFormat
-       with typings.puppeteerCore.pdfoptionsMod.PaperFormat
+       with LowerCasePaperFormat
+       with typings.puppeteerCore.commonPdfoptionsMod.LowerCasePaperFormat
+       with typings.puppeteerCore.pdfoptionsMod.LowerCasePaperFormat
   inline def a1: a1 = "a1".asInstanceOf[a1]
   
   @js.native
   sealed trait a2
     extends StObject
-       with PaperFormat
-       with typings.puppeteerCore.pdfoptionsMod.PaperFormat
+       with LowerCasePaperFormat
+       with typings.puppeteerCore.commonPdfoptionsMod.LowerCasePaperFormat
+       with typings.puppeteerCore.pdfoptionsMod.LowerCasePaperFormat
   inline def a2: a2 = "a2".asInstanceOf[a2]
   
   @js.native
   sealed trait a3
     extends StObject
-       with PaperFormat
-       with typings.puppeteerCore.pdfoptionsMod.PaperFormat
+       with LowerCasePaperFormat
+       with typings.puppeteerCore.commonPdfoptionsMod.LowerCasePaperFormat
+       with typings.puppeteerCore.pdfoptionsMod.LowerCasePaperFormat
   inline def a3: a3 = "a3".asInstanceOf[a3]
   
   @js.native
   sealed trait a4
     extends StObject
-       with PaperFormat
-       with typings.puppeteerCore.pdfoptionsMod.PaperFormat
+       with LowerCasePaperFormat
+       with typings.puppeteerCore.commonPdfoptionsMod.LowerCasePaperFormat
+       with typings.puppeteerCore.pdfoptionsMod.LowerCasePaperFormat
   inline def a4: a4 = "a4".asInstanceOf[a4]
   
   @js.native
   sealed trait a5
     extends StObject
-       with PaperFormat
-       with typings.puppeteerCore.pdfoptionsMod.PaperFormat
+       with LowerCasePaperFormat
+       with typings.puppeteerCore.commonPdfoptionsMod.LowerCasePaperFormat
+       with typings.puppeteerCore.pdfoptionsMod.LowerCasePaperFormat
   inline def a5: a5 = "a5".asInstanceOf[a5]
   
   @js.native
   sealed trait a6
     extends StObject
-       with PaperFormat
-       with typings.puppeteerCore.pdfoptionsMod.PaperFormat
+       with LowerCasePaperFormat
+       with typings.puppeteerCore.commonPdfoptionsMod.LowerCasePaperFormat
+       with typings.puppeteerCore.pdfoptionsMod.LowerCasePaperFormat
   inline def a6: a6 = "a6".asInstanceOf[a6]
   
   @js.native
   sealed trait a_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def a_ : a_ = "a".asInstanceOf[a_]
+  
+  @js.native
+  sealed trait abort_
+    extends StObject
+       with ActionResult
+       with typings.puppeteerCore.commonHttprequestMod.ActionResult
+       with typings.puppeteerCore.httprequestMod.ActionResult
+  inline def abort_ : abort_ = "abort".asInstanceOf[abort_]
   
   @js.native
   sealed trait aborted
     extends StObject
        with ErrorCode
+       with typings.puppeteerCore.commonHttprequestMod.ErrorCode
        with typings.puppeteerCore.httprequestMod.ErrorCode
   inline def aborted: aborted = "aborted".asInstanceOf[aborted]
+  
+  @js.native
+  sealed trait accelerometer
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def accelerometer: accelerometer = "accelerometer".asInstanceOf[accelerometer]
   
   @js.native
   sealed trait accessdenied
     extends StObject
        with ErrorCode
+       with typings.puppeteerCore.commonHttprequestMod.ErrorCode
        with typings.puppeteerCore.httprequestMod.ErrorCode
   inline def accessdenied: accessdenied = "accessdenied".asInstanceOf[accessdenied]
+  
+  @js.native
+  sealed trait `accessibility-events`
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def `accessibility-events`: `accessibility-events` = "accessibility-events".asInstanceOf[`accessibility-events`]
   
   @js.native
   sealed trait achromatopsia extends StObject
@@ -3673,13 +4105,23 @@ object puppeteerCoreStrings {
   sealed trait addressunreachable
     extends StObject
        with ErrorCode
+       with typings.puppeteerCore.commonHttprequestMod.ErrorCode
        with typings.puppeteerCore.httprequestMod.ErrorCode
   inline def addressunreachable: addressunreachable = "addressunreachable".asInstanceOf[addressunreachable]
+  
+  @js.native
+  sealed trait `ambient-light-sensor`
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def `ambient-light-sensor`: `ambient-light-sensor` = "ambient-light-sensor".asInstanceOf[`ambient-light-sensor`]
   
   @js.native
   sealed trait assert
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def assert: assert = "assert".asInstanceOf[assert]
   
@@ -3687,17 +4129,43 @@ object puppeteerCoreStrings {
   sealed trait b_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def b_ : b_ = "b".asInstanceOf[b_]
+  
+  @js.native
+  sealed trait back
+    extends StObject
+       with MouseButton
+       with typings.puppeteerCore.mod.MouseButton
+       with typings.puppeteerCore.inputMod.MouseButton
+  inline def back: back = "back".asInstanceOf[back]
+  
+  @js.native
+  sealed trait `background-sync`
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def `background-sync`: `background-sync` = "background-sync".asInstanceOf[`background-sync`]
   
   @js.native
   sealed trait background_page extends StObject
   inline def background_page: background_page = "background_page".asInstanceOf[background_page]
   
   @js.native
+  sealed trait base64 extends StObject
+  inline def base64: base64 = "base64".asInstanceOf[base64]
+  
+  @js.native
+  sealed trait binary extends StObject
+  inline def binary: binary = "binary".asInstanceOf[binary]
+  
+  @js.native
   sealed trait blockedbyclient
     extends StObject
        with ErrorCode
+       with typings.puppeteerCore.commonHttprequestMod.ErrorCode
        with typings.puppeteerCore.httprequestMod.ErrorCode
   inline def blockedbyclient: blockedbyclient = "blockedbyclient".asInstanceOf[blockedbyclient]
   
@@ -3705,6 +4173,7 @@ object puppeteerCoreStrings {
   sealed trait blockedbyresponse
     extends StObject
        with ErrorCode
+       with typings.puppeteerCore.commonHttprequestMod.ErrorCode
        with typings.puppeteerCore.httprequestMod.ErrorCode
   inline def blockedbyresponse: blockedbyresponse = "blockedbyresponse".asInstanceOf[blockedbyresponse]
   
@@ -3717,37 +4186,101 @@ object puppeteerCoreStrings {
   inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
+  sealed trait buffer extends StObject
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
+  
+  @js.native
   sealed trait c_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def c_ : c_ = "c".asInstanceOf[c_]
   
   @js.native
+  sealed trait camera_
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def camera_ : camera_ = "camera".asInstanceOf[camera_]
+  
+  @js.native
+  sealed trait cdp extends StObject
+  inline def cdp: cdp = "cdp".asInstanceOf[cdp]
+  
+  @js.native
   sealed trait chrome
     extends StObject
+       with ChromeReleaseChannel
+       with typings.puppeteerCore.nodeLaunchOptionsMod.ChromeReleaseChannel
+       with typings.puppeteerCore.launchOptionsMod.ChromeReleaseChannel
        with Product
+       with typings.puppeteerCore.productMod.Product
        with typings.puppeteerCore.commonProductMod.Product
   inline def chrome: chrome = "chrome".asInstanceOf[chrome]
+  
+  @js.native
+  sealed trait `chrome-beta`
+    extends StObject
+       with ChromeReleaseChannel
+       with typings.puppeteerCore.nodeLaunchOptionsMod.ChromeReleaseChannel
+       with typings.puppeteerCore.launchOptionsMod.ChromeReleaseChannel
+  inline def `chrome-beta`: `chrome-beta` = "chrome-beta".asInstanceOf[`chrome-beta`]
+  
+  @js.native
+  sealed trait `chrome-canary`
+    extends StObject
+       with ChromeReleaseChannel
+       with typings.puppeteerCore.nodeLaunchOptionsMod.ChromeReleaseChannel
+       with typings.puppeteerCore.launchOptionsMod.ChromeReleaseChannel
+  inline def `chrome-canary`: `chrome-canary` = "chrome-canary".asInstanceOf[`chrome-canary`]
+  
+  @js.native
+  sealed trait `chrome-dev`
+    extends StObject
+       with ChromeReleaseChannel
+       with typings.puppeteerCore.nodeLaunchOptionsMod.ChromeReleaseChannel
+       with typings.puppeteerCore.launchOptionsMod.ChromeReleaseChannel
+  inline def `chrome-dev`: `chrome-dev` = "chrome-dev".asInstanceOf[`chrome-dev`]
   
   @js.native
   sealed trait clear_
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def clear_ : clear_ = "clear".asInstanceOf[clear_]
+  
+  @js.native
+  sealed trait `clipboard-read`
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def `clipboard-read`: `clipboard-read` = "clipboard-read".asInstanceOf[`clipboard-read`]
+  
+  @js.native
+  sealed trait `clipboard-write`
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def `clipboard-write`: `clipboard-write` = "clipboard-write".asInstanceOf[`clipboard-write`]
   
   @js.native
   sealed trait close
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def close: close = "close".asInstanceOf[close]
   
   @js.native
   sealed trait connectionaborted
     extends StObject
        with ErrorCode
+       with typings.puppeteerCore.commonHttprequestMod.ErrorCode
        with typings.puppeteerCore.httprequestMod.ErrorCode
   inline def connectionaborted: connectionaborted = "connectionaborted".asInstanceOf[connectionaborted]
   
@@ -3755,6 +4288,7 @@ object puppeteerCoreStrings {
   sealed trait connectionclosed
     extends StObject
        with ErrorCode
+       with typings.puppeteerCore.commonHttprequestMod.ErrorCode
        with typings.puppeteerCore.httprequestMod.ErrorCode
   inline def connectionclosed: connectionclosed = "connectionclosed".asInstanceOf[connectionclosed]
   
@@ -3762,6 +4296,7 @@ object puppeteerCoreStrings {
   sealed trait connectionfailed
     extends StObject
        with ErrorCode
+       with typings.puppeteerCore.commonHttprequestMod.ErrorCode
        with typings.puppeteerCore.httprequestMod.ErrorCode
   inline def connectionfailed: connectionfailed = "connectionfailed".asInstanceOf[connectionfailed]
   
@@ -3769,6 +4304,7 @@ object puppeteerCoreStrings {
   sealed trait connectionrefused
     extends StObject
        with ErrorCode
+       with typings.puppeteerCore.commonHttprequestMod.ErrorCode
        with typings.puppeteerCore.httprequestMod.ErrorCode
   inline def connectionrefused: connectionrefused = "connectionrefused".asInstanceOf[connectionrefused]
   
@@ -3776,6 +4312,7 @@ object puppeteerCoreStrings {
   sealed trait connectionreset
     extends StObject
        with ErrorCode
+       with typings.puppeteerCore.commonHttprequestMod.ErrorCode
        with typings.puppeteerCore.httprequestMod.ErrorCode
   inline def connectionreset: connectionreset = "connectionreset".asInstanceOf[connectionreset]
   
@@ -3783,13 +4320,23 @@ object puppeteerCoreStrings {
   sealed trait console
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def console: console = "console".asInstanceOf[console]
+  
+  @js.native
+  sealed trait continue
+    extends StObject
+       with ActionResult
+       with typings.puppeteerCore.commonHttprequestMod.ActionResult
+       with typings.puppeteerCore.httprequestMod.ActionResult
+  inline def continue: continue = "continue".asInstanceOf[continue]
   
   @js.native
   sealed trait count
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def count: count = "count".asInstanceOf[count]
   
@@ -3797,6 +4344,7 @@ object puppeteerCoreStrings {
   sealed trait d_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def d_ : d_ = "d".asInstanceOf[d_]
   
@@ -3804,6 +4352,7 @@ object puppeteerCoreStrings {
   sealed trait debug
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def debug: debug = "debug".asInstanceOf[debug]
   
@@ -3815,13 +4364,15 @@ object puppeteerCoreStrings {
   sealed trait dialog
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
   sealed trait dir
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def dir: dir = "dir".asInstanceOf[dir]
   
@@ -3829,6 +4380,7 @@ object puppeteerCoreStrings {
   sealed trait dirxml
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def dirxml: dirxml = "dirxml".asInstanceOf[dirxml]
   
@@ -3836,15 +4388,18 @@ object puppeteerCoreStrings {
   sealed trait disconnected
     extends StObject
        with BrowserEmittedEvents
-       with typings.puppeteerCore.commonBrowserMod.BrowserEmittedEvents
+       with typings.puppeteerCore.mod.BrowserEmittedEvents
+       with typings.puppeteerCore.apiBrowserMod.BrowserEmittedEvents
   inline def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
   
   @js.native
   sealed trait domcontentloaded_
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
        with PuppeteerLifeCycleEvent
+       with typings.puppeteerCore.commonLifecycleWatcherMod.PuppeteerLifeCycleEvent
        with typings.puppeteerCore.lifecycleWatcherMod.PuppeteerLifeCycleEvent
   inline def domcontentloaded_ : domcontentloaded_ = "domcontentloaded".asInstanceOf[domcontentloaded_]
   
@@ -3852,6 +4407,7 @@ object puppeteerCoreStrings {
   sealed trait e_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def e_ : e_ = "e".asInstanceOf[e_]
   
@@ -3859,6 +4415,7 @@ object puppeteerCoreStrings {
   sealed trait endGroup
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def endGroup: endGroup = "endGroup".asInstanceOf[endGroup]
   
@@ -3866,15 +4423,18 @@ object puppeteerCoreStrings {
   sealed trait error
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait f_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def f_ : f_ = "f".asInstanceOf[f_]
   
@@ -3882,6 +4442,7 @@ object puppeteerCoreStrings {
   sealed trait failed
     extends StObject
        with ErrorCode
+       with typings.puppeteerCore.commonHttprequestMod.ErrorCode
        with typings.puppeteerCore.httprequestMod.ErrorCode
   inline def failed: failed = "failed".asInstanceOf[failed]
   
@@ -3889,41 +4450,71 @@ object puppeteerCoreStrings {
   sealed trait firefox
     extends StObject
        with Product
+       with typings.puppeteerCore.productMod.Product
        with typings.puppeteerCore.commonProductMod.Product
   inline def firefox: firefox = "firefox".asInstanceOf[firefox]
+  
+  @js.native
+  sealed trait forward
+    extends StObject
+       with MouseButton
+       with typings.puppeteerCore.mod.MouseButton
+       with typings.puppeteerCore.inputMod.MouseButton
+  inline def forward: forward = "forward".asInstanceOf[forward]
   
   @js.native
   sealed trait frameattached
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def frameattached: frameattached = "frameattached".asInstanceOf[frameattached]
   
   @js.native
   sealed trait framedetached
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def framedetached: framedetached = "framedetached".asInstanceOf[framedetached]
   
   @js.native
   sealed trait framenavigated
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def framenavigated: framenavigated = "framenavigated".asInstanceOf[framenavigated]
   
   @js.native
   sealed trait g_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def g_ : g_ = "g".asInstanceOf[g_]
+  
+  @js.native
+  sealed trait geolocation
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def geolocation: geolocation = "geolocation".asInstanceOf[geolocation]
+  
+  @js.native
+  sealed trait gyroscope
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def gyroscope: gyroscope = "gyroscope".asInstanceOf[gyroscope]
   
   @js.native
   sealed trait h_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def h_ : h_ = "h".asInstanceOf[h_]
   
@@ -3931,13 +4522,23 @@ object puppeteerCoreStrings {
   sealed trait i_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def i_ : i_ = "i".asInstanceOf[i_]
+  
+  @js.native
+  sealed trait `idle-detection`
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def `idle-detection`: `idle-detection` = "idle-detection".asInstanceOf[`idle-detection`]
   
   @js.native
   sealed trait info
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def info: info = "info".asInstanceOf[info]
   
@@ -3945,6 +4546,7 @@ object puppeteerCoreStrings {
   sealed trait internetdisconnected
     extends StObject
        with ErrorCode
+       with typings.puppeteerCore.commonHttprequestMod.ErrorCode
        with typings.puppeteerCore.httprequestMod.ErrorCode
   inline def internetdisconnected: internetdisconnected = "internetdisconnected".asInstanceOf[internetdisconnected]
   
@@ -3952,6 +4554,7 @@ object puppeteerCoreStrings {
   sealed trait j_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def j_ : j_ = "j".asInstanceOf[j_]
   
@@ -3963,6 +4566,7 @@ object puppeteerCoreStrings {
   sealed trait k_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def k_ : k_ = "k".asInstanceOf[k_]
   
@@ -3970,41 +4574,51 @@ object puppeteerCoreStrings {
   sealed trait l_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def l_ : l_ = "l".asInstanceOf[l_]
   
   @js.native
+  sealed trait latest extends StObject
+  inline def latest: latest = "latest".asInstanceOf[latest]
+  
+  @js.native
   sealed trait ledger
     extends StObject
-       with PaperFormat
-       with typings.puppeteerCore.pdfoptionsMod.PaperFormat
+       with LowerCasePaperFormat
+       with typings.puppeteerCore.commonPdfoptionsMod.LowerCasePaperFormat
+       with typings.puppeteerCore.pdfoptionsMod.LowerCasePaperFormat
   inline def ledger: ledger = "ledger".asInstanceOf[ledger]
   
   @js.native
   sealed trait left
     extends StObject
        with MouseButton
+       with typings.puppeteerCore.mod.MouseButton
        with typings.puppeteerCore.inputMod.MouseButton
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait legal
     extends StObject
-       with PaperFormat
-       with typings.puppeteerCore.pdfoptionsMod.PaperFormat
+       with LowerCasePaperFormat
+       with typings.puppeteerCore.commonPdfoptionsMod.LowerCasePaperFormat
+       with typings.puppeteerCore.pdfoptionsMod.LowerCasePaperFormat
   inline def legal: legal = "legal".asInstanceOf[legal]
   
   @js.native
   sealed trait letter
     extends StObject
-       with PaperFormat
-       with typings.puppeteerCore.pdfoptionsMod.PaperFormat
+       with LowerCasePaperFormat
+       with typings.puppeteerCore.commonPdfoptionsMod.LowerCasePaperFormat
+       with typings.puppeteerCore.pdfoptionsMod.LowerCasePaperFormat
   inline def letter: letter = "letter".asInstanceOf[letter]
   
   @js.native
   sealed trait linux
     extends StObject
        with Platform
+       with typings.puppeteerCore.browserFetcherMod.Platform
        with typings.puppeteerCore.nodeBrowserFetcherMod.Platform
   inline def linux: linux = "linux".asInstanceOf[linux]
   
@@ -4012,10 +4626,13 @@ object puppeteerCoreStrings {
   sealed trait load
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
        with ProtocolLifeCycleEvent
+       with typings.puppeteerCore.commonLifecycleWatcherMod.ProtocolLifeCycleEvent
        with typings.puppeteerCore.lifecycleWatcherMod.ProtocolLifeCycleEvent
        with PuppeteerLifeCycleEvent
+       with typings.puppeteerCore.commonLifecycleWatcherMod.PuppeteerLifeCycleEvent
        with typings.puppeteerCore.lifecycleWatcherMod.PuppeteerLifeCycleEvent
   inline def load: load = "load".asInstanceOf[load]
   
@@ -4023,6 +4640,7 @@ object puppeteerCoreStrings {
   sealed trait log
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def log: log = "log".asInstanceOf[log]
   
@@ -4030,6 +4648,7 @@ object puppeteerCoreStrings {
   sealed trait m_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def m_ : m_ = "m".asInstanceOf[m_]
   
@@ -4037,31 +4656,79 @@ object puppeteerCoreStrings {
   sealed trait mac
     extends StObject
        with Platform
+       with typings.puppeteerCore.browserFetcherMod.Platform
        with typings.puppeteerCore.nodeBrowserFetcherMod.Platform
   inline def mac: mac = "mac".asInstanceOf[mac]
+  
+  @js.native
+  sealed trait mac_arm
+    extends StObject
+       with Platform
+       with typings.puppeteerCore.browserFetcherMod.Platform
+       with typings.puppeteerCore.nodeBrowserFetcherMod.Platform
+  inline def mac_arm: mac_arm = "mac_arm".asInstanceOf[mac_arm]
+  
+  @js.native
+  sealed trait magnetometer
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def magnetometer: magnetometer = "magnetometer".asInstanceOf[magnetometer]
   
   @js.native
   sealed trait metrics
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def metrics: metrics = "metrics".asInstanceOf[metrics]
+  
+  @js.native
+  sealed trait microphone
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def microphone: microphone = "microphone".asInstanceOf[microphone]
   
   @js.native
   sealed trait middle
     extends StObject
        with MouseButton
+       with typings.puppeteerCore.mod.MouseButton
        with typings.puppeteerCore.inputMod.MouseButton
   inline def middle: middle = "middle".asInstanceOf[middle]
+  
+  @js.native
+  sealed trait midi
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def midi: midi = "midi".asInstanceOf[midi]
+  
+  @js.native
+  sealed trait `midi-sysex`
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def `midi-sysex`: `midi-sysex` = "midi-sysex".asInstanceOf[`midi-sysex`]
   
   @js.native
   sealed trait mixed extends StObject
   inline def mixed: mixed = "mixed".asInstanceOf[mixed]
   
   @js.native
+  sealed trait mutation extends StObject
+  inline def mutation: mutation = "mutation".asInstanceOf[mutation]
+  
+  @js.native
   sealed trait n_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def n_ : n_ = "n".asInstanceOf[n_]
   
@@ -4069,6 +4736,7 @@ object puppeteerCoreStrings {
   sealed trait namenotresolved
     extends StObject
        with ErrorCode
+       with typings.puppeteerCore.commonHttprequestMod.ErrorCode
        with typings.puppeteerCore.httprequestMod.ErrorCode
   inline def namenotresolved: namenotresolved = "namenotresolved".asInstanceOf[namenotresolved]
   
@@ -4076,6 +4744,7 @@ object puppeteerCoreStrings {
   sealed trait networkAlmostIdle
     extends StObject
        with ProtocolLifeCycleEvent
+       with typings.puppeteerCore.commonLifecycleWatcherMod.ProtocolLifeCycleEvent
        with typings.puppeteerCore.lifecycleWatcherMod.ProtocolLifeCycleEvent
   inline def networkAlmostIdle: networkAlmostIdle = "networkAlmostIdle".asInstanceOf[networkAlmostIdle]
   
@@ -4083,6 +4752,7 @@ object puppeteerCoreStrings {
   sealed trait networkIdle
     extends StObject
        with ProtocolLifeCycleEvent
+       with typings.puppeteerCore.commonLifecycleWatcherMod.ProtocolLifeCycleEvent
        with typings.puppeteerCore.lifecycleWatcherMod.ProtocolLifeCycleEvent
   inline def networkIdle: networkIdle = "networkIdle".asInstanceOf[networkIdle]
   
@@ -4090,6 +4760,7 @@ object puppeteerCoreStrings {
   sealed trait networkidle0
     extends StObject
        with PuppeteerLifeCycleEvent
+       with typings.puppeteerCore.commonLifecycleWatcherMod.PuppeteerLifeCycleEvent
        with typings.puppeteerCore.lifecycleWatcherMod.PuppeteerLifeCycleEvent
   inline def networkidle0: networkidle0 = "networkidle0".asInstanceOf[networkidle0]
   
@@ -4097,6 +4768,7 @@ object puppeteerCoreStrings {
   sealed trait networkidle2
     extends StObject
        with PuppeteerLifeCycleEvent
+       with typings.puppeteerCore.commonLifecycleWatcherMod.PuppeteerLifeCycleEvent
        with typings.puppeteerCore.lifecycleWatcherMod.PuppeteerLifeCycleEvent
   inline def networkidle2: networkidle2 = "networkidle2".asInstanceOf[networkidle2]
   
@@ -4105,9 +4777,18 @@ object puppeteerCoreStrings {
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
+  sealed trait notifications
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def notifications: notifications = "notifications".asInstanceOf[notifications]
+  
+  @js.native
   sealed trait o_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def o_ : o_ = "o".asInstanceOf[o_]
   
@@ -4119,6 +4800,7 @@ object puppeteerCoreStrings {
   sealed trait p_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def p_ : p_ = "p".asInstanceOf[p_]
   
@@ -4130,8 +4812,25 @@ object puppeteerCoreStrings {
   sealed trait pageerror
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def pageerror: pageerror = "pageerror".asInstanceOf[pageerror]
+  
+  @js.native
+  sealed trait `payment-handler`
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def `payment-handler`: `payment-handler` = "payment-handler".asInstanceOf[`payment-handler`]
+  
+  @js.native
+  sealed trait `persistent-storage`
+    extends StObject
+       with Permission
+       with typings.puppeteerCore.mod.Permission
+       with typings.puppeteerCore.apiBrowserMod.Permission
+  inline def `persistent-storage`: `persistent-storage` = "persistent-storage".asInstanceOf[`persistent-storage`]
   
   @js.native
   sealed trait png extends StObject
@@ -4141,13 +4840,15 @@ object puppeteerCoreStrings {
   sealed trait popup
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
   sealed trait profile
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def profile: profile = "profile".asInstanceOf[profile]
   
@@ -4155,6 +4856,7 @@ object puppeteerCoreStrings {
   sealed trait profileEnd
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def profileEnd: profileEnd = "profileEnd".asInstanceOf[profileEnd]
   
@@ -4166,6 +4868,7 @@ object puppeteerCoreStrings {
   sealed trait q_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def q_ : q_ = "q".asInstanceOf[q_]
   
@@ -4173,41 +4876,67 @@ object puppeteerCoreStrings {
   sealed trait r_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def r_ : r_ = "r".asInstanceOf[r_]
+  
+  @js.native
+  sealed trait raf extends StObject
+  inline def raf: raf = "raf".asInstanceOf[raf]
   
   @js.native
   sealed trait request
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def request: request = "request".asInstanceOf[request]
   
   @js.native
   sealed trait requestfailed
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def requestfailed: requestfailed = "requestfailed".asInstanceOf[requestfailed]
   
   @js.native
   sealed trait requestfinished
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def requestfinished: requestfinished = "requestfinished".asInstanceOf[requestfinished]
+  
+  @js.native
+  sealed trait requestservedfromcache
+    extends StObject
+       with PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
+  inline def requestservedfromcache: requestservedfromcache = "requestservedfromcache".asInstanceOf[requestservedfromcache]
+  
+  @js.native
+  sealed trait respond
+    extends StObject
+       with ActionResult
+       with typings.puppeteerCore.commonHttprequestMod.ActionResult
+       with typings.puppeteerCore.httprequestMod.ActionResult
+  inline def respond: respond = "respond".asInstanceOf[respond]
   
   @js.native
   sealed trait response
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def response: response = "response".asInstanceOf[response]
   
   @js.native
   sealed trait right
     extends StObject
        with MouseButton
+       with typings.puppeteerCore.mod.MouseButton
        with typings.puppeteerCore.inputMod.MouseButton
   inline def right: right = "right".asInstanceOf[right]
   
@@ -4215,6 +4944,7 @@ object puppeteerCoreStrings {
   sealed trait s_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def s_ : s_ = "s".asInstanceOf[s_]
   
@@ -4230,6 +4960,7 @@ object puppeteerCoreStrings {
   sealed trait startGroup
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def startGroup: startGroup = "startGroup".asInstanceOf[startGroup]
   
@@ -4237,6 +4968,7 @@ object puppeteerCoreStrings {
   sealed trait startGroupCollapsed
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def startGroupCollapsed: startGroupCollapsed = "startGroupCollapsed".asInstanceOf[startGroupCollapsed]
   
@@ -4244,6 +4976,7 @@ object puppeteerCoreStrings {
   sealed trait t_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def t_ : t_ = "t".asInstanceOf[t_]
   
@@ -4251,47 +4984,84 @@ object puppeteerCoreStrings {
   sealed trait table
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def table: table = "table".asInstanceOf[table]
   
   @js.native
   sealed trait tabloid
     extends StObject
-       with PaperFormat
-       with typings.puppeteerCore.pdfoptionsMod.PaperFormat
+       with LowerCasePaperFormat
+       with typings.puppeteerCore.commonPdfoptionsMod.LowerCasePaperFormat
+       with typings.puppeteerCore.pdfoptionsMod.LowerCasePaperFormat
   inline def tabloid: tabloid = "tabloid".asInstanceOf[tabloid]
   
   @js.native
-  sealed trait targetchanged
+  sealed trait targetAvailable
+    extends StObject
+       with TargetManagerEmittedEvents
+       with typings.puppeteerCore.targetManagerMod.TargetManagerEmittedEvents
+  inline def targetAvailable: targetAvailable = "targetAvailable".asInstanceOf[targetAvailable]
+  
+  @js.native
+  sealed trait targetChanged
+    extends StObject
+       with TargetManagerEmittedEvents
+       with typings.puppeteerCore.targetManagerMod.TargetManagerEmittedEvents
+  inline def targetChanged: targetChanged = "targetChanged".asInstanceOf[targetChanged]
+  
+  @js.native
+  sealed trait targetDiscovered
+    extends StObject
+       with TargetManagerEmittedEvents
+       with typings.puppeteerCore.targetManagerMod.TargetManagerEmittedEvents
+  inline def targetDiscovered: targetDiscovered = "targetDiscovered".asInstanceOf[targetDiscovered]
+  
+  @js.native
+  sealed trait targetGone
+    extends StObject
+       with TargetManagerEmittedEvents
+       with typings.puppeteerCore.targetManagerMod.TargetManagerEmittedEvents
+  inline def targetGone: targetGone = "targetGone".asInstanceOf[targetGone]
+  
+  @js.native
+  sealed trait targetchanged_
     extends StObject
        with BrowserContextEmittedEvents
-       with typings.puppeteerCore.commonBrowserMod.BrowserContextEmittedEvents
+       with typings.puppeteerCore.mod.BrowserContextEmittedEvents
+       with typings.puppeteerCore.apiBrowserMod.BrowserContextEmittedEvents
        with BrowserEmittedEvents
-       with typings.puppeteerCore.commonBrowserMod.BrowserEmittedEvents
-  inline def targetchanged: targetchanged = "targetchanged".asInstanceOf[targetchanged]
+       with typings.puppeteerCore.mod.BrowserEmittedEvents
+       with typings.puppeteerCore.apiBrowserMod.BrowserEmittedEvents
+  inline def targetchanged_ : targetchanged_ = "targetchanged".asInstanceOf[targetchanged_]
   
   @js.native
   sealed trait targetcreated
     extends StObject
        with BrowserContextEmittedEvents
-       with typings.puppeteerCore.commonBrowserMod.BrowserContextEmittedEvents
+       with typings.puppeteerCore.mod.BrowserContextEmittedEvents
+       with typings.puppeteerCore.apiBrowserMod.BrowserContextEmittedEvents
        with BrowserEmittedEvents
-       with typings.puppeteerCore.commonBrowserMod.BrowserEmittedEvents
+       with typings.puppeteerCore.mod.BrowserEmittedEvents
+       with typings.puppeteerCore.apiBrowserMod.BrowserEmittedEvents
   inline def targetcreated: targetcreated = "targetcreated".asInstanceOf[targetcreated]
   
   @js.native
   sealed trait targetdestroyed
     extends StObject
        with BrowserContextEmittedEvents
-       with typings.puppeteerCore.commonBrowserMod.BrowserContextEmittedEvents
+       with typings.puppeteerCore.mod.BrowserContextEmittedEvents
+       with typings.puppeteerCore.apiBrowserMod.BrowserContextEmittedEvents
        with BrowserEmittedEvents
-       with typings.puppeteerCore.commonBrowserMod.BrowserEmittedEvents
+       with typings.puppeteerCore.mod.BrowserEmittedEvents
+       with typings.puppeteerCore.apiBrowserMod.BrowserEmittedEvents
   inline def targetdestroyed: targetdestroyed = "targetdestroyed".asInstanceOf[targetdestroyed]
   
   @js.native
   sealed trait timeEnd
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def timeEnd: timeEnd = "timeEnd".asInstanceOf[timeEnd]
   
@@ -4299,6 +5069,7 @@ object puppeteerCoreStrings {
   sealed trait timedout
     extends StObject
        with ErrorCode
+       with typings.puppeteerCore.commonHttprequestMod.ErrorCode
        with typings.puppeteerCore.httprequestMod.ErrorCode
   inline def timedout: timedout = "timedout".asInstanceOf[timedout]
   
@@ -4306,6 +5077,7 @@ object puppeteerCoreStrings {
   sealed trait trace
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def trace: trace = "trace".asInstanceOf[trace]
   
@@ -4317,6 +5089,7 @@ object puppeteerCoreStrings {
   sealed trait u_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def u_ : u_ = "u".asInstanceOf[u_]
   
@@ -4324,6 +5097,7 @@ object puppeteerCoreStrings {
   sealed trait v_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def v_ : v_ = "v".asInstanceOf[v_]
   
@@ -4331,6 +5105,7 @@ object puppeteerCoreStrings {
   sealed trait verbose
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def verbose: verbose = "verbose".asInstanceOf[verbose]
   
@@ -4338,6 +5113,7 @@ object puppeteerCoreStrings {
   sealed trait w_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def w_ : w_ = "w".asInstanceOf[w_]
   
@@ -4345,8 +5121,17 @@ object puppeteerCoreStrings {
   sealed trait warning
     extends StObject
        with ConsoleMessageType
+       with typings.puppeteerCore.commonConsoleMessageMod.ConsoleMessageType
        with typings.puppeteerCore.consoleMessageMod.ConsoleMessageType
   inline def warning: warning = "warning".asInstanceOf[warning]
+  
+  @js.native
+  sealed trait webDriverBiDi extends StObject
+  inline def webDriverBiDi: webDriverBiDi = "webDriverBiDi".asInstanceOf[webDriverBiDi]
+  
+  @js.native
+  sealed trait webp extends StObject
+  inline def webp: webp = "webp".asInstanceOf[webp]
   
   @js.native
   sealed trait webview extends StObject
@@ -4356,6 +5141,7 @@ object puppeteerCoreStrings {
   sealed trait win32
     extends StObject
        with Platform
+       with typings.puppeteerCore.browserFetcherMod.Platform
        with typings.puppeteerCore.nodeBrowserFetcherMod.Platform
   inline def win32: win32 = "win32".asInstanceOf[win32]
   
@@ -4363,6 +5149,7 @@ object puppeteerCoreStrings {
   sealed trait win64
     extends StObject
        with Platform
+       with typings.puppeteerCore.browserFetcherMod.Platform
        with typings.puppeteerCore.nodeBrowserFetcherMod.Platform
   inline def win64: win64 = "win64".asInstanceOf[win64]
   
@@ -4370,20 +5157,23 @@ object puppeteerCoreStrings {
   sealed trait workercreated
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def workercreated: workercreated = "workercreated".asInstanceOf[workercreated]
   
   @js.native
   sealed trait workerdestroyed
     extends StObject
        with PageEmittedEvents
-       with typings.puppeteerCore.commonPageMod.PageEmittedEvents
+       with typings.puppeteerCore.pageMod.PageEmittedEvents
+       with typings.puppeteerCore.apiPageMod.PageEmittedEvents
   inline def workerdestroyed: workerdestroyed = "workerdestroyed".asInstanceOf[workerdestroyed]
   
   @js.native
   sealed trait x_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def x_ : x_ = "x".asInstanceOf[x_]
   
@@ -4391,6 +5181,7 @@ object puppeteerCoreStrings {
   sealed trait y_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def y_ : y_ = "y".asInstanceOf[y_]
   
@@ -4398,6 +5189,7 @@ object puppeteerCoreStrings {
   sealed trait z_
     extends StObject
        with KeyInput
+       with typings.puppeteerCore.mod.KeyInput
        with typings.puppeteerCore.commonUskeyboardlayoutMod.KeyInput
   inline def z_ : z_ = "z".asInstanceOf[z_]
 }

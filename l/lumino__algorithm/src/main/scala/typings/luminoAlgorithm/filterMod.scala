@@ -14,7 +14,7 @@ object filterMod {
   
   @JSImport("@lumino/algorithm/types/filter", "FilterIterator")
   @js.native
-  class FilterIterator[T] protected ()
+  open class FilterIterator[T] protected ()
     extends StObject
        with IIterator[T] {
     /**
@@ -26,11 +26,11 @@ object filterMod {
       */
     def this(source: IIterator[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]) = this()
     
-    /* private */ var _fn: js.Any = js.native
+    /* private */ var _fn: Any = js.native
     
-    /* private */ var _index: js.Any = js.native
+    /* private */ var _index: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     /**
       * Get an iterator over the object's values.

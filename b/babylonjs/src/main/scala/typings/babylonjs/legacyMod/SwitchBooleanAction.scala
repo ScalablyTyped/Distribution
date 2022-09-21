@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "SwitchBooleanAction")
 @js.native
-class SwitchBooleanAction protected ()
+open class SwitchBooleanAction protected ()
   extends typings.babylonjs.indexMod.SwitchBooleanAction {
   /**
     * Instantiate the action
@@ -15,10 +15,10 @@ class SwitchBooleanAction protected ()
     * @param propertyPath defines the path to the boolean property in the target object
     * @param condition defines the trigger related conditions
     */
-  def this(triggerOptions: js.Any, target: js.Any, propertyPath: String) = this()
+  def this(triggerOptions: Any, target: Any, propertyPath: String) = this()
   def this(
-    triggerOptions: js.Any,
-    target: js.Any,
+    triggerOptions: Any,
+    target: Any,
     propertyPath: String,
     condition: typings.babylonjs.conditionMod.Condition
   ) = this()

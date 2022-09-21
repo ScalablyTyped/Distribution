@@ -8,6 +8,6 @@ object tabMod {
   
   @JSImport("carbon-components-react/lib/components/Tab", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.carbonComponentsReact.tabTabMod.default
 }

@@ -12,9 +12,14 @@ trait InstanceRefresh extends StObject {
   var AutoScalingGroupName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
+    * Describes the specific update you want to deploy.
+    */
+  var DesiredConfiguration: js.UndefOr[typings.awsSdk.autoscalingMod.DesiredConfiguration] = js.undefined
+  
+  /**
     * The date and time at which the instance refresh ended.
     */
-  var EndTime: js.UndefOr[TimestampType] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The instance refresh ID.
@@ -27,14 +32,21 @@ trait InstanceRefresh extends StObject {
   var InstancesToUpdate: js.UndefOr[typings.awsSdk.autoscalingMod.InstancesToUpdate] = js.undefined
   
   /**
-    * The percentage of the instance refresh that is complete. For each instance replacement, Amazon EC2 Auto Scaling tracks the instance's health status and warm-up time. When the instance's health status changes to healthy and the specified warm-up time passes, the instance is considered updated and added to the percentage complete.
+    * The percentage of the instance refresh that is complete. For each instance replacement, Amazon EC2 Auto Scaling tracks the instance's health status and warm-up time. When the instance's health status changes to healthy and the specified warm-up time passes, the instance is considered updated and is added to the percentage complete.
     */
   var PercentageComplete: js.UndefOr[IntPercent] = js.undefined
+  
+  var Preferences: js.UndefOr[RefreshPreferences] = js.undefined
+  
+  /**
+    * Additional progress details for an Auto Scaling group that has a warm pool.
+    */
+  var ProgressDetails: js.UndefOr[InstanceRefreshProgressDetails] = js.undefined
   
   /**
     * The date and time at which the instance refresh began.
     */
-  var StartTime: js.UndefOr[TimestampType] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The current status for the instance refresh operation:    Pending - The request was created, but the operation has not started.    InProgress - The operation is in progress.    Successful - The operation completed successfully.    Failed - The operation failed to complete. You can troubleshoot using the status reason and the scaling activities.     Cancelling - An ongoing operation is being cancelled. Cancellation does not roll back any replacements that have already been completed, but it prevents new replacements from being started.     Cancelled - The operation is cancelled.   
@@ -59,7 +71,11 @@ object InstanceRefresh {
     
     inline def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
     
-    inline def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setDesiredConfiguration(value: DesiredConfiguration): Self = StObject.set(x, "DesiredConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setDesiredConfigurationUndefined: Self = StObject.set(x, "DesiredConfiguration", js.undefined)
+    
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -75,7 +91,15 @@ object InstanceRefresh {
     
     inline def setPercentageCompleteUndefined: Self = StObject.set(x, "PercentageComplete", js.undefined)
     
-    inline def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setPreferences(value: RefreshPreferences): Self = StObject.set(x, "Preferences", value.asInstanceOf[js.Any])
+    
+    inline def setPreferencesUndefined: Self = StObject.set(x, "Preferences", js.undefined)
+    
+    inline def setProgressDetails(value: InstanceRefreshProgressDetails): Self = StObject.set(x, "ProgressDetails", value.asInstanceOf[js.Any])
+    
+    inline def setProgressDetailsUndefined: Self = StObject.set(x, "ProgressDetails", js.undefined)
+    
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

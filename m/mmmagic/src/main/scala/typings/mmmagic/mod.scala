@@ -1,7 +1,6 @@
 package typings.mmmagic
 
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -114,7 +113,7 @@ object mod {
   
   @JSImport("mmmagic", "Magic")
   @js.native
-  class Magic () extends StObject {
+  open class Magic () extends StObject {
     def this(magicPath: String) = this()
     def this(mask: bitmask) = this()
     def this(magicPath: String, mask: bitmask) = this()
@@ -130,7 +129,7 @@ object mod {
     * Result is a string, except when MAGIC_CONTINUE is set,
     * then it is an array of string
     */
-  type DetectionCallback = js.Function2[/* err */ Error, /* result */ String | js.Array[String], Unit]
+  type DetectionCallback = js.Function2[/* err */ js.Error, /* result */ String | js.Array[String], Unit]
   
   type bitmask = Double
 }

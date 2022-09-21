@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__banner
 
-Typings are for version 8.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components Web banner component.
@@ -10,10 +10,10 @@ The Material Components Web banner component.
 | ------------------ | :-------------: |
 | Full name          | @material/banner |
 | Keywords           | material components, material design, banner |
-| # releases         | 280 |
-| # dependents       | 2 |
-| # downloads        | 107824 |
-| # stars            | 0 |
+| # releases         | 713 |
+| # dependents       | 0.0 |
+| # downloads        | 66018.0 |
+| # stars            | 16381.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

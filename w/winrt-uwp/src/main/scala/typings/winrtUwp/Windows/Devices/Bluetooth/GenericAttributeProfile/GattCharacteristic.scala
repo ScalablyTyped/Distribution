@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GattCharacteristic extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_valuechanged(`type`: valuechanged, listener: TypedEventHandler[GattCharacteristic, GattValueChangedEventArgs]): Unit = js.native
   
@@ -69,7 +69,7 @@ trait GattCharacteristic extends StObject {
     */
   def readValueAsync(cacheMode: BluetoothCacheMode): IPromiseWithIAsyncOperation[GattReadResult] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_valuechanged(`type`: valuechanged, listener: TypedEventHandler[GattCharacteristic, GattValueChangedEventArgs]): Unit = js.native
   

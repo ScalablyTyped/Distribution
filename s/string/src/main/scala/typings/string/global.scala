@@ -9,7 +9,7 @@ object global {
   
   object S {
     
-    inline def apply(o: js.Any): StringJS = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[StringJS]
+    inline def apply(o: Any): StringJS = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[StringJS]
     
     @JSGlobal("S")
     @js.native

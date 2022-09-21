@@ -8,14 +8,15 @@ import typings.d3.d3Strings.`var`
 import typings.d3.d3Strings.a
 import typings.d3.d3Strings.abbr
 import typings.d3.d3Strings.address
-import typings.d3.d3Strings.applet
+import typings.d3.d3Strings.animate
+import typings.d3.d3Strings.animateMotion
+import typings.d3.d3Strings.animateTransform
 import typings.d3.d3Strings.area
 import typings.d3.d3Strings.article
 import typings.d3.d3Strings.aside
 import typings.d3.d3Strings.audio
 import typings.d3.d3Strings.b
 import typings.d3.d3Strings.base
-import typings.d3.d3Strings.basefont
 import typings.d3.d3Strings.bdi
 import typings.d3.d3Strings.bdo
 import typings.d3.d3Strings.blockquote
@@ -39,7 +40,6 @@ import typings.d3.d3Strings.desc
 import typings.d3.d3Strings.details
 import typings.d3.d3Strings.dfn
 import typings.d3.d3Strings.dialog
-import typings.d3.d3Strings.dir
 import typings.d3.d3Strings.div
 import typings.d3.d3Strings.dl
 import typings.d3.d3Strings.dt
@@ -54,6 +54,7 @@ import typings.d3.d3Strings.feConvolveMatrix
 import typings.d3.d3Strings.feDiffuseLighting
 import typings.d3.d3Strings.feDisplacementMap
 import typings.d3.d3Strings.feDistantLight
+import typings.d3.d3Strings.feDropShadow
 import typings.d3.d3Strings.feFlood
 import typings.d3.d3Strings.feFuncA
 import typings.d3.d3Strings.feFuncB
@@ -74,12 +75,9 @@ import typings.d3.d3Strings.fieldset
 import typings.d3.d3Strings.figcaption
 import typings.d3.d3Strings.figure
 import typings.d3.d3Strings.filter
-import typings.d3.d3Strings.font
 import typings.d3.d3Strings.footer
 import typings.d3.d3Strings.foreignObject
 import typings.d3.d3Strings.form
-import typings.d3.d3Strings.frame
-import typings.d3.d3Strings.frameset
 import typings.d3.d3Strings.g
 import typings.d3.d3Strings.h1
 import typings.d3.d3Strings.h2
@@ -109,12 +107,12 @@ import typings.d3.d3Strings.main
 import typings.d3.d3Strings.map
 import typings.d3.d3Strings.mark
 import typings.d3.d3Strings.marker
-import typings.d3.d3Strings.marquee
 import typings.d3.d3Strings.mask
 import typings.d3.d3Strings.menu
 import typings.d3.d3Strings.meta
 import typings.d3.d3Strings.metadata
 import typings.d3.d3Strings.meter
+import typings.d3.d3Strings.mpath
 import typings.d3.d3Strings.nav
 import typings.d3.d3Strings.noscript
 import typings.d3.d3Strings.ol
@@ -122,7 +120,6 @@ import typings.d3.d3Strings.optgroup
 import typings.d3.d3Strings.option
 import typings.d3.d3Strings.output
 import typings.d3.d3Strings.p
-import typings.d3.d3Strings.param
 import typings.d3.d3Strings.path
 import typings.d3.d3Strings.pattern
 import typings.d3.d3Strings.picture
@@ -141,6 +138,7 @@ import typings.d3.d3Strings.samp
 import typings.d3.d3Strings.script
 import typings.d3.d3Strings.section
 import typings.d3.d3Strings.select
+import typings.d3.d3Strings.set
 import typings.d3.d3Strings.slot
 import typings.d3.d3Strings.small
 import typings.d3.d3Strings.source
@@ -187,6 +185,7 @@ import typings.d3Axis.mod.AxisScale
 import typings.d3Brush.mod.BrushBehavior
 import typings.d3Brush.mod.BrushSelection_
 import typings.d3Chord.mod.ChordLayout
+import typings.d3Chord.mod.RibbonArrowGenerator
 import typings.d3Chord.mod.RibbonGenerator
 import typings.d3Chord.mod.RibbonSubgroup
 import typings.d3Chord.mod.Ribbon_
@@ -318,8 +317,8 @@ import typings.d3Shape.mod.DefaultArcObject
 import typings.d3Shape.mod.DefaultLinkObject
 import typings.d3Shape.mod.LineRadial_
 import typings.d3Shape.mod.Line_
-import typings.d3Shape.mod.Link
 import typings.d3Shape.mod.LinkRadial_
+import typings.d3Shape.mod.Link_
 import typings.d3Shape.mod.Pie_
 import typings.d3Shape.mod.RadialArea_
 import typings.d3Shape.mod.RadialLine_
@@ -334,26 +333,18 @@ import typings.d3TimeFormat.mod.TimeLocaleObject
 import typings.d3Timer.mod.Timer_
 import typings.d3Transition.mod.Transition_
 import typings.d3Zoom.mod.ZoomBehavior
-import typings.d3Zoom.mod.ZoomTransform_
 import typings.d3Zoom.mod.ZoomedElementBaseType
 import typings.geojson.mod.GeoJsonProperties
 import typings.geojson.mod.MultiLineString
-import typings.std.ArrayBuffer
 import typings.std.ArrayLike
 import typings.std.Blob
-import typings.std.DataView
-import typings.std.Date
 import typings.std.Document
 import typings.std.Element
-import typings.std.Float32Array
-import typings.std.Float64Array
 import typings.std.HTMLAnchorElement
-import typings.std.HTMLAppletElement
 import typings.std.HTMLAreaElement
 import typings.std.HTMLAudioElement
 import typings.std.HTMLBRElement
 import typings.std.HTMLBaseElement
-import typings.std.HTMLBaseFontElement
 import typings.std.HTMLBodyElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLCanvasElement
@@ -362,15 +353,11 @@ import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
 import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
-import typings.std.HTMLDirectoryElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLEmbedElement
 import typings.std.HTMLFieldSetElement
-import typings.std.HTMLFontElement
 import typings.std.HTMLFormElement
-import typings.std.HTMLFrameElement
-import typings.std.HTMLFrameSetElement
 import typings.std.HTMLHRElement
 import typings.std.HTMLHeadElement
 import typings.std.HTMLHeadingElement
@@ -383,7 +370,6 @@ import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
-import typings.std.HTMLMarqueeElement
 import typings.std.HTMLMenuElement
 import typings.std.HTMLMetaElement
 import typings.std.HTMLMeterElement
@@ -394,7 +380,6 @@ import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
-import typings.std.HTMLParamElement
 import typings.std.HTMLPictureElement
 import typings.std.HTMLPreElement
 import typings.std.HTMLProgressElement
@@ -406,10 +391,9 @@ import typings.std.HTMLSourceElement
 import typings.std.HTMLSpanElement
 import typings.std.HTMLStyleElement
 import typings.std.HTMLTableCaptionElement
+import typings.std.HTMLTableCellElement
 import typings.std.HTMLTableColElement
-import typings.std.HTMLTableDataCellElement
 import typings.std.HTMLTableElement
-import typings.std.HTMLTableHeaderCellElement
 import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTemplateElement
@@ -419,13 +403,11 @@ import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
 import typings.std.HTMLVideoElement
-import typings.std.Int16Array
-import typings.std.Int32Array
-import typings.std.Int8Array
-import typings.std.Iterable
-import typings.std.Map
 import typings.std.NodeListOf
 import typings.std.RequestInit
+import typings.std.SVGAnimateElement
+import typings.std.SVGAnimateMotionElement
+import typings.std.SVGAnimateTransformElement
 import typings.std.SVGCircleElement
 import typings.std.SVGClipPathElement
 import typings.std.SVGDefsElement
@@ -439,6 +421,7 @@ import typings.std.SVGFEConvolveMatrixElement
 import typings.std.SVGFEDiffuseLightingElement
 import typings.std.SVGFEDisplacementMapElement
 import typings.std.SVGFEDistantLightElement
+import typings.std.SVGFEDropShadowElement
 import typings.std.SVGFEFloodElement
 import typings.std.SVGFEFuncAElement
 import typings.std.SVGFEFuncBElement
@@ -461,6 +444,7 @@ import typings.std.SVGGElement
 import typings.std.SVGImageElement
 import typings.std.SVGLineElement
 import typings.std.SVGLinearGradientElement
+import typings.std.SVGMPathElement
 import typings.std.SVGMarkerElement
 import typings.std.SVGMaskElement
 import typings.std.SVGMetadataElement
@@ -471,6 +455,7 @@ import typings.std.SVGPolylineElement
 import typings.std.SVGRadialGradientElement
 import typings.std.SVGRectElement
 import typings.std.SVGSVGElement
+import typings.std.SVGSetElement
 import typings.std.SVGStopElement
 import typings.std.SVGSwitchElement
 import typings.std.SVGSymbolElement
@@ -479,11 +464,6 @@ import typings.std.SVGTextElement
 import typings.std.SVGTextPathElement
 import typings.std.SVGUseElement
 import typings.std.SVGViewElement
-import typings.std.Set
-import typings.std.Uint16Array
-import typings.std.Uint32Array
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
 import typings.std.Window
 import typings.std.XMLDocument
 import org.scalablytyped.runtime.StObject
@@ -503,12 +483,12 @@ object global {
     /**
       * Creates a full precision adder for IEEE 754 floating point numbers, setting its initial value to 0.
       */
-    class Adder ()
+    open class Adder ()
       extends typings.d3.mod.Adder
     
     @JSGlobal("d3.Delaunay")
     @js.native
-    class Delaunay[P] protected ()
+    open class Delaunay[P] protected ()
       extends typings.d3.mod.Delaunay[P] {
       /**
         * Returns the Delaunay triangulation for the given flat array [x0, y0, x1, y1, …] of points.
@@ -522,11 +502,22 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
+      inline def from(points: js.Iterable[Point]): typings.d3Delaunay.mod.Delaunay[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any]).asInstanceOf[typings.d3Delaunay.mod.Delaunay[Point]]
       /**
         * Returns the Delaunay triangulation for the given array or iterable of points where each point is an array in the form: [x, y].
         */
       inline def from(points: ArrayLike[Point]): typings.d3Delaunay.mod.Delaunay[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any]).asInstanceOf[typings.d3Delaunay.mod.Delaunay[Point]]
-      inline def from(points: Iterable[Point]): typings.d3Delaunay.mod.Delaunay[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any]).asInstanceOf[typings.d3Delaunay.mod.Delaunay[Point]]
+      inline def from[P](
+        points: js.Iterable[P],
+        getX: GetCoordinate[P, ArrayLike[P] | js.Iterable[P]],
+        getY: GetCoordinate[P, ArrayLike[P] | js.Iterable[P]]
+      ): typings.d3Delaunay.mod.Delaunay[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any], getX.asInstanceOf[js.Any], getY.asInstanceOf[js.Any])).asInstanceOf[typings.d3Delaunay.mod.Delaunay[P]]
+      inline def from[P](
+        points: js.Iterable[P],
+        getX: GetCoordinate[P, ArrayLike[P] | js.Iterable[P]],
+        getY: GetCoordinate[P, ArrayLike[P] | js.Iterable[P]],
+        that: Any
+      ): typings.d3Delaunay.mod.Delaunay[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any], getX.asInstanceOf[js.Any], getY.asInstanceOf[js.Any], that.asInstanceOf[js.Any])).asInstanceOf[typings.d3Delaunay.mod.Delaunay[P]]
       /**
         * Returns the Delaunay triangulation for the given array or iterable of points.
         * Otherwise, the getX and getY functions are invoked for each point in order, and must return the respective x- and y-coordinate for each point.
@@ -535,31 +526,20 @@ object global {
         */
       inline def from[P](
         points: ArrayLike[P],
-        getX: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
-        getY: GetCoordinate[P, ArrayLike[P] | Iterable[P]]
+        getX: GetCoordinate[P, ArrayLike[P] | js.Iterable[P]],
+        getY: GetCoordinate[P, ArrayLike[P] | js.Iterable[P]]
       ): typings.d3Delaunay.mod.Delaunay[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any], getX.asInstanceOf[js.Any], getY.asInstanceOf[js.Any])).asInstanceOf[typings.d3Delaunay.mod.Delaunay[P]]
       inline def from[P](
         points: ArrayLike[P],
-        getX: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
-        getY: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
-        that: js.Any
-      ): typings.d3Delaunay.mod.Delaunay[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any], getX.asInstanceOf[js.Any], getY.asInstanceOf[js.Any], that.asInstanceOf[js.Any])).asInstanceOf[typings.d3Delaunay.mod.Delaunay[P]]
-      inline def from[P](
-        points: Iterable[P],
-        getX: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
-        getY: GetCoordinate[P, ArrayLike[P] | Iterable[P]]
-      ): typings.d3Delaunay.mod.Delaunay[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any], getX.asInstanceOf[js.Any], getY.asInstanceOf[js.Any])).asInstanceOf[typings.d3Delaunay.mod.Delaunay[P]]
-      inline def from[P](
-        points: Iterable[P],
-        getX: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
-        getY: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
-        that: js.Any
+        getX: GetCoordinate[P, ArrayLike[P] | js.Iterable[P]],
+        getY: GetCoordinate[P, ArrayLike[P] | js.Iterable[P]],
+        that: Any
       ): typings.d3Delaunay.mod.Delaunay[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any], getX.asInstanceOf[js.Any], getY.asInstanceOf[js.Any], that.asInstanceOf[js.Any])).asInstanceOf[typings.d3Delaunay.mod.Delaunay[P]]
     }
     
     @JSGlobal("d3.FormatSpecifier")
     @js.native
-    class FormatSpecifier_ protected ()
+    open class FormatSpecifier_ protected ()
       extends typings.d3.mod.FormatSpecifier_ {
       /**
         * Given the specified specifier object, returning an object with exposed fields that correspond to the format specification mini-language and a toString method that reconstructs the specifier.
@@ -568,10 +548,30 @@ object global {
       def this(specifier: FormatSpecifierObject) = this()
     }
     
+    @JSGlobal("d3.InternMap")
+    @js.native
+    open class InternMap[K, V] ()
+      extends typings.d3.mod.InternMap[K, V]
+    
+    @JSGlobal("d3.InternSet")
+    @js.native
+    open class InternSet[T] ()
+      extends typings.d3.mod.InternSet[T]
+    
     @JSGlobal("d3.Voronoi")
     @js.native
-    class Voronoi[P] ()
+    open class Voronoi[P] ()
       extends typings.d3.mod.Voronoi[P]
+    
+    @JSGlobal("d3.ZoomTransform")
+    @js.native
+    open class ZoomTransform_ protected ()
+      extends typings.d3.mod.ZoomTransform_ {
+      /**
+        * Returns a transform with scale k and translation (x, y).
+        */
+      def this(k: Double, x: Double, y: Double) = this()
+    }
     
     inline def active[Datum, PElement /* <: BaseType */, PDatum](): (Transition_[Null, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")().asInstanceOf[(Transition_[Null, Datum, PElement, PDatum]) | Null]
     inline def active[Datum, PElement /* <: BaseType */, PDatum](node: Null, name: String): (Transition_[Null, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Null, Datum, PElement, PDatum]) | Null]
@@ -584,9 +584,9 @@ object global {
     inline def active[Datum, PElement /* <: BaseType */, PDatum](node: Window): (Transition_[Window, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[Window, Datum, PElement, PDatum]) | Null]
     inline def active[Datum, PElement /* <: BaseType */, PDatum](node: Window, name: String): (Transition_[Window, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Window, Datum, PElement, PDatum]) | Null]
     
-    inline def arc(): Arc_[js.Any, DefaultArcObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[js.Any, DefaultArcObject]]
+    inline def arc(): Arc_[Any, DefaultArcObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[Any, DefaultArcObject]]
     
-    inline def arc_Datum[Datum](): Arc_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[js.Any, Datum]]
+    inline def arc_Datum[Datum](): Arc_[Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[Any, Datum]]
     
     inline def arc_ThisDatum[This, Datum](): Arc_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[This, Datum]]
     
@@ -701,7 +701,7 @@ object global {
     
     inline def bin(): HistogramGeneratorNumber[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("bin")().asInstanceOf[HistogramGeneratorNumber[Double, Double]]
     
-    inline def `bin_DatumValue_UnionDate<undefined>_HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[Date] */](): HistogramGeneratorDate[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("bin")().asInstanceOf[HistogramGeneratorDate[Datum, Value]]
+    inline def `bin_DatumValue_UnionDate<undefined>_HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[js.Date] */](): HistogramGeneratorDate[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("bin")().asInstanceOf[HistogramGeneratorDate[Datum, Value]]
     
     inline def `bin_DatumValue_UnionDouble<undefined>`[Datum, Value /* <: js.UndefOr[Double] */](): HistogramGeneratorNumber[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("bin")().asInstanceOf[HistogramGeneratorNumber[Datum, Value]]
     
@@ -709,53 +709,53 @@ object global {
     inline def bisect(array: ArrayLike[String], x: String, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisect(array: ArrayLike[String], x: String, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisect(array: ArrayLike[String], x: String, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisect(array: ArrayLike[js.Date], x: js.Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisect(array: ArrayLike[js.Date], x: js.Date, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisect(array: ArrayLike[js.Date], x: js.Date, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisect(array: ArrayLike[js.Date], x: js.Date, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisect(array: ArrayLike[Double], x: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisect(array: ArrayLike[Double], x: Double, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisect(array: ArrayLike[Double], x: Double, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisect(array: ArrayLike[Double], x: Double, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisect(array: ArrayLike[Date], x: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisect(array: ArrayLike[Date], x: Date, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisect(array: ArrayLike[Date], x: Date, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisect(array: ArrayLike[Date], x: Date, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisect")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def bisectCenter(array: ArrayLike[String], x: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectCenter(array: ArrayLike[String], x: String, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectCenter(array: ArrayLike[String], x: String, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectCenter(array: ArrayLike[String], x: String, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisectCenter(array: ArrayLike[js.Date], x: js.Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisectCenter(array: ArrayLike[js.Date], x: js.Date, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisectCenter(array: ArrayLike[js.Date], x: js.Date, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisectCenter(array: ArrayLike[js.Date], x: js.Date, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectCenter(array: ArrayLike[Double], x: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectCenter(array: ArrayLike[Double], x: Double, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectCenter(array: ArrayLike[Double], x: Double, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectCenter(array: ArrayLike[Double], x: Double, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisectCenter(array: ArrayLike[Date], x: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisectCenter(array: ArrayLike[Date], x: Date, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisectCenter(array: ArrayLike[Date], x: Date, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisectCenter(array: ArrayLike[Date], x: Date, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectCenter")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def bisectLeft(array: ArrayLike[String], x: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectLeft(array: ArrayLike[String], x: String, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectLeft(array: ArrayLike[String], x: String, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectLeft(array: ArrayLike[String], x: String, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisectLeft(array: ArrayLike[js.Date], x: js.Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisectLeft(array: ArrayLike[js.Date], x: js.Date, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisectLeft(array: ArrayLike[js.Date], x: js.Date, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisectLeft(array: ArrayLike[js.Date], x: js.Date, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectLeft(array: ArrayLike[Double], x: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectLeft(array: ArrayLike[Double], x: Double, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectLeft(array: ArrayLike[Double], x: Double, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectLeft(array: ArrayLike[Double], x: Double, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisectLeft(array: ArrayLike[Date], x: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisectLeft(array: ArrayLike[Date], x: Date, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisectLeft(array: ArrayLike[Date], x: Date, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisectLeft(array: ArrayLike[Date], x: Date, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectLeft")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def bisectRight(array: ArrayLike[String], x: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectRight(array: ArrayLike[String], x: String, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectRight(array: ArrayLike[String], x: String, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectRight(array: ArrayLike[String], x: String, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisectRight(array: ArrayLike[js.Date], x: js.Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisectRight(array: ArrayLike[js.Date], x: js.Date, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisectRight(array: ArrayLike[js.Date], x: js.Date, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def bisectRight(array: ArrayLike[js.Date], x: js.Date, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectRight(array: ArrayLike[Double], x: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectRight(array: ArrayLike[Double], x: Double, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectRight(array: ArrayLike[Double], x: Double, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def bisectRight(array: ArrayLike[Double], x: Double, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisectRight(array: ArrayLike[Date], x: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisectRight(array: ArrayLike[Date], x: Date, lo: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisectRight(array: ArrayLike[Date], x: Date, lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def bisectRight(array: ArrayLike[Date], x: Date, lo: Unit, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("bisectRight")(array.asInstanceOf[js.Any], x.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def bisector[T, U](accessor: js.Function1[/* x */ T, U]): Bisector_[T, U] = ^.asInstanceOf[js.Dynamic].applyDynamic("bisector")(accessor.asInstanceOf[js.Any]).asInstanceOf[Bisector_[T, U]]
     inline def bisector[T, U](comparator: js.Function2[/* a */ T, /* b */ U, Double]): Bisector_[T, U] = ^.asInstanceOf[js.Dynamic].applyDynamic("bisector")(comparator.asInstanceOf[js.Any]).asInstanceOf[Bisector_[T, U]]
@@ -771,8 +771,8 @@ object global {
     
     inline def brushY[Datum](): BrushBehavior[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("brushY")().asInstanceOf[BrushBehavior[Datum]]
     
-    inline def buffer(url: String): js.Promise[ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ArrayBuffer]]
-    inline def buffer(url: String, init: RequestInit): js.Promise[ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer]]
+    inline def buffer(url: String): js.Promise[js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
+    inline def buffer(url: String, init: RequestInit): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
     
     inline def chord(): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("chord")().asInstanceOf[ChordLayout]
     
@@ -790,9 +790,9 @@ object global {
     
     inline def contours(): Contours_ = ^.asInstanceOf[js.Dynamic].applyDynamic("contours")().asInstanceOf[Contours_]
     
-    inline def count[TObject](iterable: Iterable[TObject]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(iterable.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def count(iterable: js.Iterable[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(iterable.asInstanceOf[js.Any]).asInstanceOf[Double]
     inline def count[TObject](
-      iterable: Iterable[TObject],
+      iterable: js.Iterable[TObject],
       accessor: js.Function2[/* a */ TObject, /* b */ TObject, js.UndefOr[Double | Null]]
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Double]
     
@@ -804,7 +804,11 @@ object global {
     
     inline def create_address(name: address): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
     
-    inline def create_applet(name: applet): Selection_[HTMLAppletElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLAppletElement, Unit, Null, Unit]]
+    inline def create_animate(name: animate): Selection_[SVGAnimateElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGAnimateElement, Unit, Null, Unit]]
+    
+    inline def create_animateMotion(name: animateMotion): Selection_[SVGAnimateMotionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGAnimateMotionElement, Unit, Null, Unit]]
+    
+    inline def create_animateTransform(name: animateTransform): Selection_[SVGAnimateTransformElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGAnimateTransformElement, Unit, Null, Unit]]
     
     inline def create_area(name: area): Selection_[HTMLAreaElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLAreaElement, Unit, Null, Unit]]
     
@@ -817,8 +821,6 @@ object global {
     inline def create_b(name: b): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
     
     inline def create_base(name: base): Selection_[HTMLBaseElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLBaseElement, Unit, Null, Unit]]
-    
-    inline def create_basefont(name: basefont): Selection_[HTMLBaseFontElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLBaseFontElement, Unit, Null, Unit]]
     
     inline def create_bdi(name: bdi): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
     
@@ -866,8 +868,6 @@ object global {
     
     inline def create_dialog(name: dialog): Selection_[HTMLDialogElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDialogElement, Unit, Null, Unit]]
     
-    inline def create_dir(name: dir): Selection_[HTMLDirectoryElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDirectoryElement, Unit, Null, Unit]]
-    
     inline def create_div(name: div): Selection_[HTMLDivElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDivElement, Unit, Null, Unit]]
     
     inline def create_dl(name: dl): Selection_[HTMLDListElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLDListElement, Unit, Null, Unit]]
@@ -895,6 +895,8 @@ object global {
     inline def create_feDisplacementMap(name: feDisplacementMap): Selection_[SVGFEDisplacementMapElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEDisplacementMapElement, Unit, Null, Unit]]
     
     inline def create_feDistantLight(name: feDistantLight): Selection_[SVGFEDistantLightElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEDistantLightElement, Unit, Null, Unit]]
+    
+    inline def create_feDropShadow(name: feDropShadow): Selection_[SVGFEDropShadowElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEDropShadowElement, Unit, Null, Unit]]
     
     inline def create_feFlood(name: feFlood): Selection_[SVGFEFloodElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFEFloodElement, Unit, Null, Unit]]
     
@@ -936,17 +938,11 @@ object global {
     
     inline def create_filter(name: filter): Selection_[SVGFilterElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGFilterElement, Unit, Null, Unit]]
     
-    inline def create_font(name: font): Selection_[HTMLFontElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLFontElement, Unit, Null, Unit]]
-    
     inline def create_footer(name: footer): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
     
     inline def create_foreignObject(name: foreignObject): Selection_[SVGForeignObjectElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGForeignObjectElement, Unit, Null, Unit]]
     
     inline def create_form(name: form): Selection_[HTMLFormElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLFormElement, Unit, Null, Unit]]
-    
-    inline def create_frame(name: frame): Selection_[HTMLFrameElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLFrameElement, Unit, Null, Unit]]
-    
-    inline def create_frameset(name: frameset): Selection_[HTMLFrameSetElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLFrameSetElement, Unit, Null, Unit]]
     
     inline def create_g(name: g): Selection_[SVGGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGGElement, Unit, Null, Unit]]
     
@@ -1006,8 +1002,6 @@ object global {
     
     inline def create_marker(name: marker): Selection_[SVGMarkerElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGMarkerElement, Unit, Null, Unit]]
     
-    inline def create_marquee(name: marquee): Selection_[HTMLMarqueeElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMarqueeElement, Unit, Null, Unit]]
-    
     inline def create_mask(name: mask): Selection_[SVGMaskElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGMaskElement, Unit, Null, Unit]]
     
     inline def create_menu(name: menu): Selection_[HTMLMenuElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMenuElement, Unit, Null, Unit]]
@@ -1017,6 +1011,8 @@ object global {
     inline def create_metadata(name: metadata): Selection_[SVGMetadataElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGMetadataElement, Unit, Null, Unit]]
     
     inline def create_meter(name: meter): Selection_[HTMLMeterElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLMeterElement, Unit, Null, Unit]]
+    
+    inline def create_mpath(name: mpath): Selection_[SVGMPathElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGMPathElement, Unit, Null, Unit]]
     
     inline def create_nav(name: nav): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
     
@@ -1033,8 +1029,6 @@ object global {
     inline def create_output(name: output): Selection_[HTMLOutputElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLOutputElement, Unit, Null, Unit]]
     
     inline def create_p(name: p): Selection_[HTMLParagraphElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLParagraphElement, Unit, Null, Unit]]
-    
-    inline def create_param(name: param): Selection_[HTMLParamElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLParamElement, Unit, Null, Unit]]
     
     inline def create_path(name: path): Selection_[SVGPathElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGPathElement, Unit, Null, Unit]]
     
@@ -1072,6 +1066,8 @@ object global {
     
     inline def create_select(name: select): Selection_[HTMLSelectElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLSelectElement, Unit, Null, Unit]]
     
+    inline def create_set(name: set): Selection_[SVGSetElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[SVGSetElement, Unit, Null, Unit]]
+    
     inline def create_slot(name: slot): Selection_[HTMLSlotElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLSlotElement, Unit, Null, Unit]]
     
     inline def create_small(name: small): Selection_[HTMLElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLElement, Unit, Null, Unit]]
@@ -1102,7 +1098,7 @@ object global {
     
     inline def create_tbody(name: tbody): Selection_[HTMLTableSectionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableSectionElement, Unit, Null, Unit]]
     
-    inline def create_td(name: td): Selection_[HTMLTableDataCellElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableDataCellElement, Unit, Null, Unit]]
+    inline def create_td(name: td): Selection_[HTMLTableCellElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableCellElement, Unit, Null, Unit]]
     
     inline def create_template(name: template): Selection_[HTMLTemplateElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTemplateElement, Unit, Null, Unit]]
     
@@ -1114,7 +1110,7 @@ object global {
     
     inline def create_tfoot(name: tfoot): Selection_[HTMLTableSectionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableSectionElement, Unit, Null, Unit]]
     
-    inline def create_th(name: th): Selection_[HTMLTableHeaderCellElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableHeaderCellElement, Unit, Null, Unit]]
+    inline def create_th(name: th): Selection_[HTMLTableCellElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableCellElement, Unit, Null, Unit]]
     
     inline def create_thead(name: thead): Selection_[HTMLTableSectionElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[HTMLTableSectionElement, Unit, Null, Unit]]
     
@@ -1150,7 +1146,11 @@ object global {
     
     inline def creator_address(name: address): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
     
-    inline def creator_applet(name: applet): js.ThisFunction0[/* this */ BaseType, HTMLAppletElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLAppletElement]]
+    inline def creator_animate(name: animate): js.ThisFunction0[/* this */ BaseType, SVGAnimateElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGAnimateElement]]
+    
+    inline def creator_animateMotion(name: animateMotion): js.ThisFunction0[/* this */ BaseType, SVGAnimateMotionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGAnimateMotionElement]]
+    
+    inline def creator_animateTransform(name: animateTransform): js.ThisFunction0[/* this */ BaseType, SVGAnimateTransformElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGAnimateTransformElement]]
     
     inline def creator_area(name: area): js.ThisFunction0[/* this */ BaseType, HTMLAreaElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLAreaElement]]
     
@@ -1163,8 +1163,6 @@ object global {
     inline def creator_b(name: b): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
     
     inline def creator_base(name: base): js.ThisFunction0[/* this */ BaseType, HTMLBaseElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLBaseElement]]
-    
-    inline def creator_basefont(name: basefont): js.ThisFunction0[/* this */ BaseType, HTMLBaseFontElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLBaseFontElement]]
     
     inline def creator_bdi(name: bdi): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
     
@@ -1212,8 +1210,6 @@ object global {
     
     inline def creator_dialog(name: dialog): js.ThisFunction0[/* this */ BaseType, HTMLDialogElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDialogElement]]
     
-    inline def creator_dir(name: dir): js.ThisFunction0[/* this */ BaseType, HTMLDirectoryElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDirectoryElement]]
-    
     inline def creator_div(name: div): js.ThisFunction0[/* this */ BaseType, HTMLDivElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDivElement]]
     
     inline def creator_dl(name: dl): js.ThisFunction0[/* this */ BaseType, HTMLDListElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLDListElement]]
@@ -1241,6 +1237,8 @@ object global {
     inline def creator_feDisplacementMap(name: feDisplacementMap): js.ThisFunction0[/* this */ BaseType, SVGFEDisplacementMapElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEDisplacementMapElement]]
     
     inline def creator_feDistantLight(name: feDistantLight): js.ThisFunction0[/* this */ BaseType, SVGFEDistantLightElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEDistantLightElement]]
+    
+    inline def creator_feDropShadow(name: feDropShadow): js.ThisFunction0[/* this */ BaseType, SVGFEDropShadowElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEDropShadowElement]]
     
     inline def creator_feFlood(name: feFlood): js.ThisFunction0[/* this */ BaseType, SVGFEFloodElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFEFloodElement]]
     
@@ -1282,17 +1280,11 @@ object global {
     
     inline def creator_filter(name: filter): js.ThisFunction0[/* this */ BaseType, SVGFilterElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGFilterElement]]
     
-    inline def creator_font(name: font): js.ThisFunction0[/* this */ BaseType, HTMLFontElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLFontElement]]
-    
     inline def creator_footer(name: footer): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
     
     inline def creator_foreignObject(name: foreignObject): js.ThisFunction0[/* this */ BaseType, SVGForeignObjectElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGForeignObjectElement]]
     
     inline def creator_form(name: form): js.ThisFunction0[/* this */ BaseType, HTMLFormElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLFormElement]]
-    
-    inline def creator_frame(name: frame): js.ThisFunction0[/* this */ BaseType, HTMLFrameElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLFrameElement]]
-    
-    inline def creator_frameset(name: frameset): js.ThisFunction0[/* this */ BaseType, HTMLFrameSetElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLFrameSetElement]]
     
     inline def creator_g(name: g): js.ThisFunction0[/* this */ BaseType, SVGGElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGGElement]]
     
@@ -1352,8 +1344,6 @@ object global {
     
     inline def creator_marker(name: marker): js.ThisFunction0[/* this */ BaseType, SVGMarkerElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGMarkerElement]]
     
-    inline def creator_marquee(name: marquee): js.ThisFunction0[/* this */ BaseType, HTMLMarqueeElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMarqueeElement]]
-    
     inline def creator_mask(name: mask): js.ThisFunction0[/* this */ BaseType, SVGMaskElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGMaskElement]]
     
     inline def creator_menu(name: menu): js.ThisFunction0[/* this */ BaseType, HTMLMenuElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMenuElement]]
@@ -1363,6 +1353,8 @@ object global {
     inline def creator_metadata(name: metadata): js.ThisFunction0[/* this */ BaseType, SVGMetadataElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGMetadataElement]]
     
     inline def creator_meter(name: meter): js.ThisFunction0[/* this */ BaseType, HTMLMeterElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLMeterElement]]
+    
+    inline def creator_mpath(name: mpath): js.ThisFunction0[/* this */ BaseType, SVGMPathElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGMPathElement]]
     
     inline def creator_nav(name: nav): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
     
@@ -1379,8 +1371,6 @@ object global {
     inline def creator_output(name: output): js.ThisFunction0[/* this */ BaseType, HTMLOutputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLOutputElement]]
     
     inline def creator_p(name: p): js.ThisFunction0[/* this */ BaseType, HTMLParagraphElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLParagraphElement]]
-    
-    inline def creator_param(name: param): js.ThisFunction0[/* this */ BaseType, HTMLParamElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLParamElement]]
     
     inline def creator_path(name: path): js.ThisFunction0[/* this */ BaseType, SVGPathElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGPathElement]]
     
@@ -1418,6 +1408,8 @@ object global {
     
     inline def creator_select(name: select): js.ThisFunction0[/* this */ BaseType, HTMLSelectElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLSelectElement]]
     
+    inline def creator_set(name: set): js.ThisFunction0[/* this */ BaseType, SVGSetElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, SVGSetElement]]
+    
     inline def creator_slot(name: slot): js.ThisFunction0[/* this */ BaseType, HTMLSlotElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLSlotElement]]
     
     inline def creator_small(name: small): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
@@ -1448,7 +1440,7 @@ object global {
     
     inline def creator_tbody(name: tbody): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement]]
     
-    inline def creator_td(name: td): js.ThisFunction0[/* this */ BaseType, HTMLTableDataCellElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableDataCellElement]]
+    inline def creator_td(name: td): js.ThisFunction0[/* this */ BaseType, HTMLTableCellElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableCellElement]]
     
     inline def creator_template(name: template): js.ThisFunction0[/* this */ BaseType, HTMLTemplateElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTemplateElement]]
     
@@ -1460,7 +1452,7 @@ object global {
     
     inline def creator_tfoot(name: tfoot): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement]]
     
-    inline def creator_th(name: th): js.ThisFunction0[/* this */ BaseType, HTMLTableHeaderCellElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableHeaderCellElement]]
+    inline def creator_th(name: th): js.ThisFunction0[/* this */ BaseType, HTMLTableCellElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableCellElement]]
     
     inline def creator_thead(name: thead): js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLTableSectionElement]]
     
@@ -1488,8 +1480,8 @@ object global {
     
     inline def creator_wbr(name: wbr): js.ThisFunction0[/* this */ BaseType, HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, HTMLElement]]
     
-    inline def cross[S, T](a: Iterable[S], b: Iterable[T]): js.Array[js.Tuple2[S, T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[S, T]]]
-    inline def cross[S, T, U](a: Iterable[S], b: Iterable[T], reducer: js.Function2[/* a */ S, /* b */ T, U]): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
+    inline def cross[S, T](a: js.Iterable[S], b: js.Iterable[T]): js.Array[js.Tuple2[S, T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[S, T]]]
+    inline def cross[S, T, U](a: js.Iterable[S], b: js.Iterable[T], reducer: js.Function2[/* a */ S, /* b */ T, U]): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
     
     inline def csv[Columns /* <: String */](url: String): js.Promise[DSVRowArray[Columns]] = ^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
     inline def csv[Columns /* <: String */](url: String, init: RequestInit): js.Promise[DSVRowArray[Columns]] = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DSVRowArray[Columns]]]
@@ -1546,11 +1538,11 @@ object global {
     @js.native
     val cubehelix: CubehelixColorFactory = js.native
     
-    inline def cumsum[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): Float64Array = ^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(iterable.asInstanceOf[js.Any]).asInstanceOf[Float64Array]
+    inline def cumsum(iterable: js.Iterable[js.UndefOr[Numeric | Null]]): js.typedarray.Float64Array = ^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float64Array]
     inline def cumsum[T](
-      iterable: Iterable[T],
-      accessor: js.Function3[/* element */ T, /* i */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
-    ): Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Float64Array]
+      iterable: js.Iterable[T],
+      accessor: js.Function3[/* element */ T, /* i */ Double, /* array */ js.Iterable[T], js.UndefOr[Double | Null]]
+    ): js.typedarray.Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float64Array]
     
     @JSGlobal("d3.curveBasis")
     @js.native
@@ -1563,6 +1555,14 @@ object global {
     @JSGlobal("d3.curveBasisOpen")
     @js.native
     val curveBasisOpen: CurveFactory = js.native
+    
+    @JSGlobal("d3.curveBumpX")
+    @js.native
+    val curveBumpX: CurveFactory = js.native
+    
+    @JSGlobal("d3.curveBumpY")
+    @js.native
+    val curveBumpY: CurveFactory = js.native
     
     @JSGlobal("d3.curveBundle")
     @js.native
@@ -1629,17 +1629,22 @@ object global {
     inline def descending(a: Primitive): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("descending")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
     inline def descending(a: Primitive, b: Primitive): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("descending")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def deviation[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("deviation")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+    inline def deviation(iterable: js.Iterable[js.UndefOr[Numeric | Null]]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("deviation")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
     inline def deviation[T](
-      iterable: Iterable[T],
-      accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
+      iterable: js.Iterable[T],
+      accessor: js.Function3[
+          /* datum */ T, 
+          /* index */ Double, 
+          /* array */ js.Iterable[T], 
+          js.UndefOr[Double | Null]
+        ]
     ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("deviation")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
     
-    inline def difference[T](iterable: Iterable[T], others: Iterable[T]*): Set[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(iterable.asInstanceOf[js.Any], others.asInstanceOf[js.Any])).asInstanceOf[Set[T]]
+    inline def difference[T](iterable: js.Iterable[T], others: js.Iterable[T]*): typings.d3Array.mod.InternSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(List(iterable.asInstanceOf[js.Any]).`++`(others.asInstanceOf[Seq[js.Any]])*).asInstanceOf[typings.d3Array.mod.InternSet[T]]
     
-    inline def disjoint[T](a: Iterable[T], b: Iterable[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("disjoint")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def disjoint[T](a: js.Iterable[T], b: js.Iterable[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("disjoint")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def dispatch[T /* <: js.Object */](types: String*): Dispatch_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(types.asInstanceOf[js.Any]).asInstanceOf[Dispatch_[T]]
+    inline def dispatch[T /* <: js.Object */](types: String*): Dispatch_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(types.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Dispatch_[T]]
     
     inline def drag[GElement /* <: DraggedElementBaseType */, Datum](): DragBehavior[GElement, Datum, Datum | SubjectPosition] = ^.asInstanceOf[js.Dynamic].applyDynamic("drag")().asInstanceOf[DragBehavior[GElement, Datum, Datum | SubjectPosition]]
     
@@ -1775,27 +1780,75 @@ object global {
     inline def easeSinOut(normalizedTime: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeSinOut")(normalizedTime.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     inline def every[T](
-      iterable: Iterable[T],
-      test: js.Function3[/* value */ T, /* index */ Double, /* iterable */ Iterable[T], js.Any]
+      iterable: js.Iterable[T],
+      test: js.Function3[/* value */ T, /* index */ Double, /* iterable */ js.Iterable[T], Any]
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(iterable.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def extent(iterable: Iterable[String]): js.Tuple2[String | Unit, String | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("extent")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[String | Unit, String | Unit]]
+    inline def extent(iterable: js.Iterable[String]): js.Tuple2[String | Unit, String | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("extent")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[String | Unit, String | Unit]]
     inline def extent[T](
-      iterable: Iterable[T],
-      accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[String | Null]]
+      iterable: js.Iterable[T],
+      accessor: js.Function3[
+          /* datum */ T, 
+          /* index */ Double, 
+          /* array */ js.Iterable[T], 
+          js.UndefOr[String | Null]
+        ]
     ): js.Tuple2[String | Unit, String | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("extent")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String | Unit, String | Unit]]
     
     inline def extent_TU_Numeric[T, U /* <: Numeric */](
-      iterable: Iterable[T],
-      accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[U | Null]]
+      iterable: js.Iterable[T],
+      accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ js.Iterable[T], js.UndefOr[U | Null]]
     ): js.Tuple2[U | Unit, U | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("extent")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[U | Unit, U | Unit]]
     
-    inline def extent_T_Numeric[T /* <: Numeric */](iterable: Iterable[T]): js.Tuple2[T | Unit, T | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("extent")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T | Unit, T | Unit]]
+    inline def extent_T_Numeric[T /* <: Numeric */](iterable: js.Iterable[T]): js.Tuple2[T | Unit, T | Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("extent")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T | Unit, T | Unit]]
+    
+    inline def fcumsum(values: js.Iterable[js.UndefOr[Numeric | Null]]): js.typedarray.Float64Array = ^.asInstanceOf[js.Dynamic].applyDynamic("fcumsum")(values.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float64Array]
+    inline def fcumsum[T](
+      values: js.Iterable[T],
+      accessor: js.Function3[
+          /* datum */ T, 
+          /* index */ Double, 
+          /* array */ js.Iterable[T], 
+          js.UndefOr[Double | Null]
+        ]
+    ): js.typedarray.Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("fcumsum")(values.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float64Array]
     
     inline def filter[T](
-      iterable: Iterable[T],
-      test: js.Function3[/* value */ T, /* index */ Double, /* iterable */ Iterable[T], js.Any]
+      iterable: js.Iterable[T],
+      test: js.Function3[/* value */ T, /* index */ Double, /* iterable */ js.Iterable[T], Any]
     ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(iterable.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    
+    inline def flatGroup[TObject, TKey](iterable: js.Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): js.Array[js.Tuple2[TKey, js.Array[TObject]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatGroup")(iterable.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey, js.Array[TObject]]]]
+    inline def flatGroup[TObject, TKey1, TKey2](
+      iterable: js.Iterable[TObject],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2]
+    ): js.Array[js.Tuple3[TKey1, TKey2, js.Array[TObject]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatGroup")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple3[TKey1, TKey2, js.Array[TObject]]]]
+    inline def flatGroup[TObject, TKey1, TKey2, TKey3](
+      iterable: js.Iterable[TObject],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2],
+      key3: js.Function1[/* value */ TObject, TKey3]
+    ): js.Array[js.Tuple4[TKey1, TKey2, TKey3, js.Array[TObject]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatGroup")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any], key3.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple4[TKey1, TKey2, TKey3, js.Array[TObject]]]]
+    
+    inline def flatRollup[TObject, TReduce, TKey](
+      iterable: js.Iterable[TObject],
+      reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
+      key: js.Function1[/* value */ TObject, TKey]
+    ): js.Array[js.Tuple2[TKey, TReduce]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatRollup")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey, TReduce]]]
+    inline def flatRollup[TObject, TReduce, TKey1, TKey2](
+      iterable: js.Iterable[TObject],
+      reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2]
+    ): js.Array[js.Tuple3[TKey1, TKey2, TReduce]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatRollup")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple3[TKey1, TKey2, TReduce]]]
+    inline def flatRollup[TObject, TReduce, TKey1, TKey2, TKey3](
+      iterable: js.Iterable[TObject],
+      reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
+      key1: js.Function1[/* value */ TObject, TKey1],
+      key2: js.Function1[/* value */ TObject, TKey2],
+      key3: js.Function1[/* value */ TObject, TKey3]
+    ): js.Array[js.Tuple4[TKey1, TKey2, TKey3, TReduce]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatRollup")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any], key3.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple4[TKey1, TKey2, TKey3, TReduce]]]
     
     inline def forceCenter[NodeDatum /* <: SimulationNodeDatum */](): ForceCenter_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceCenter")().asInstanceOf[ForceCenter_[NodeDatum]]
     inline def forceCenter[NodeDatum /* <: SimulationNodeDatum */](x: Double): ForceCenter_[NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("forceCenter")(x.asInstanceOf[js.Any]).asInstanceOf[ForceCenter_[NodeDatum]]
@@ -1905,10 +1958,15 @@ object global {
     
     inline def formatSpecifier(specifier: String): typings.d3Format.mod.FormatSpecifier_ = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSpecifier")(specifier.asInstanceOf[js.Any]).asInstanceOf[typings.d3Format.mod.FormatSpecifier_]
     
-    inline def fsum[T /* <: Numeric */](values: Iterable[js.UndefOr[T | Null]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fsum")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def fsum(values: js.Iterable[js.UndefOr[Numeric | Null]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fsum")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
     inline def fsum[T](
-      values: Iterable[T],
-      accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
+      values: js.Iterable[T],
+      accessor: js.Function3[
+          /* datum */ T, 
+          /* index */ Double, 
+          /* array */ js.Iterable[T], 
+          js.UndefOr[Double | Null]
+        ]
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fsum")(values.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def geoAlbers(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAlbers")().asInstanceOf[GeoConicProjection]
@@ -1938,9 +1996,9 @@ object global {
     inline def geoCentroid(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
     inline def geoCentroid(`object`: GeoGeometryObjects): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
     
-    inline def geoCircle(): GeoCircleGenerator[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[js.Any, js.Any]]
+    inline def geoCircle(): GeoCircleGenerator[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[Any, Any]]
     
-    inline def geoCircle_Datum[Datum](): GeoCircleGenerator[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[js.Any, Datum]]
+    inline def geoCircle_Datum[Datum](): GeoCircleGenerator[Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[Any, Datum]]
     
     inline def geoCircle_ThisDatum[This, Datum](): GeoCircleGenerator[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[This, Datum]]
     
@@ -2012,21 +2070,21 @@ object global {
     
     inline def geoOrthographicRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoOrthographicRaw")().asInstanceOf[GeoRawProjection]
     
-    inline def geoPath(): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-    inline def geoPath(projection: Null, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-    inline def geoPath(projection: Unit, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-    inline def geoPath(projection: GeoProjection_): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-    inline def geoPath(projection: GeoProjection_, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-    inline def geoPath(projection: GeoStreamWrapper): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
-    inline def geoPath(projection: GeoStreamWrapper, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+    inline def geoPath(): GeoPath_[Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
+    inline def geoPath(projection: Null, context: GeoContext): GeoPath_[Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
+    inline def geoPath(projection: Unit, context: GeoContext): GeoPath_[Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
+    inline def geoPath(projection: GeoProjection_): GeoPath_[Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
+    inline def geoPath(projection: GeoProjection_, context: GeoContext): GeoPath_[Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
+    inline def geoPath(projection: GeoStreamWrapper): GeoPath_[Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
+    inline def geoPath(projection: GeoStreamWrapper, context: GeoContext): GeoPath_[Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, GeoPermissibleObjects]]
     
-    inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[js.Any, DatumObject]]
-    inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
-    inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
-    inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, DatumObject]]
-    inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
-    inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, DatumObject]]
-    inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+    inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[Any, DatumObject]]
+    inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
+    inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
+    inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[Any, DatumObject]]
+    inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
+    inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[Any, DatumObject]]
+    inline def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[Any, DatumObject]]
     
     inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[This, DatumObject]]
     inline def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
@@ -2038,7 +2096,7 @@ object global {
     
     inline def geoProjection(project: GeoRawProjection): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoProjection")(project.asInstanceOf[js.Any]).asInstanceOf[GeoProjection_]
     
-    inline def geoProjectionMutator(factory: js.Function1[/* repeated */ js.Any, GeoRawProjection]): js.Function0[GeoProjection_] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoProjectionMutator")(factory.asInstanceOf[js.Any]).asInstanceOf[js.Function0[GeoProjection_]]
+    inline def geoProjectionMutator(factory: js.Function1[/* repeated */ Any, GeoRawProjection]): js.Function0[GeoProjection_] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoProjectionMutator")(factory.asInstanceOf[js.Any]).asInstanceOf[js.Function0[GeoProjection_]]
     
     inline def geoRotation(angles: js.Tuple2[Double, Double]): GeoRotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoRotation")(angles.asInstanceOf[js.Any]).asInstanceOf[GeoRotation_]
     inline def geoRotation(angles: js.Tuple3[Double, Double, Double]): GeoRotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoRotation")(angles.asInstanceOf[js.Any]).asInstanceOf[GeoRotation_]
@@ -2065,35 +2123,53 @@ object global {
     @js.native
     val gray: GrayColorFactory = js.native
     
-    inline def greatest[T](iterable: Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("greatest")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
-    inline def greatest[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("greatest")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def greatest[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("greatest")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    inline def greatest[T](iterable: js.Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("greatest")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+    inline def greatest[T](iterable: js.Iterable[T], accessor: js.Function1[/* a */ T, Any]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("greatest")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    inline def greatest[T](iterable: js.Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("greatest")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
     
-    inline def greatestIndex[T](iterable: Iterable[T]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("greatestIndex")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
-    inline def greatestIndex[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("greatestIndex")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-    inline def greatestIndex[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("greatestIndex")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
+    inline def greatestIndex(iterable: js.Iterable[Any]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("greatestIndex")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+    inline def greatestIndex[T](iterable: js.Iterable[T], accessor: js.Function1[/* a */ T, Any]): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("greatestIndex")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
+    inline def greatestIndex[T](iterable: js.Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("greatestIndex")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
     
-    inline def group[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): Map[TKey, js.Array[TObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(iterable.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Map[TKey, js.Array[TObject]]]
+    inline def group[TObject, TKey](iterable: js.Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): typings.d3Array.mod.InternMap[TKey, js.Array[TObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(iterable.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.d3Array.mod.InternMap[TKey, js.Array[TObject]]]
     inline def group[TObject, TKey1, TKey2](
-      iterable: Iterable[TObject],
+      iterable: js.Iterable[TObject],
       key1: js.Function1[/* value */ TObject, TKey1],
       key2: js.Function1[/* value */ TObject, TKey2]
-    ): Map[TKey1, Map[TKey2, js.Array[TObject]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[Map[TKey1, Map[TKey2, js.Array[TObject]]]]
+    ): typings.d3Array.mod.InternMap[TKey1, typings.d3Array.mod.InternMap[TKey2, js.Array[TObject]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[typings.d3Array.mod.InternMap[TKey1, typings.d3Array.mod.InternMap[TKey2, js.Array[TObject]]]]
     inline def group[TObject, TKey1, TKey2, TKey3](
-      iterable: Iterable[TObject],
+      iterable: js.Iterable[TObject],
       key1: js.Function1[/* value */ TObject, TKey1],
       key2: js.Function1[/* value */ TObject, TKey2],
       key3: js.Function1[/* value */ TObject, TKey3]
-    ): Map[TKey1, Map[TKey2, Map[TKey3, js.Array[TObject]]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any], key3.asInstanceOf[js.Any])).asInstanceOf[Map[TKey1, Map[TKey2, Map[TKey3, js.Array[TObject]]]]]
+    ): typings.d3Array.mod.InternMap[
+        TKey1, 
+        typings.d3Array.mod.InternMap[TKey2, typings.d3Array.mod.InternMap[TKey3, js.Array[TObject]]]
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any], key3.asInstanceOf[js.Any])).asInstanceOf[typings.d3Array.mod.InternMap[
+        TKey1, 
+        typings.d3Array.mod.InternMap[TKey2, typings.d3Array.mod.InternMap[TKey3, js.Array[TObject]]]
+      ]]
     
-    inline def groups[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): js.Array[js.Tuple2[TKey, js.Array[TObject]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groups")(iterable.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey, js.Array[TObject]]]]
+    inline def groupSort[TObject, TKey](
+      iterable: js.Iterable[TObject],
+      // tslint:disable-next-line:unified-signatures
+    accessor: js.Function1[/* value */ js.Array[TObject], Any],
+      key: js.Function1[/* value */ TObject, TKey]
+    ): js.Array[TKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupSort")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[TKey]]
+    inline def groupSort[TObject, TKey](
+      iterable: js.Iterable[TObject],
+      comparator: js.Function2[/* a */ js.Array[TObject], /* b */ js.Array[TObject], Double],
+      key: js.Function1[/* value */ TObject, TKey]
+    ): js.Array[TKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupSort")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[TKey]]
+    
+    inline def groups[TObject, TKey](iterable: js.Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): js.Array[js.Tuple2[TKey, js.Array[TObject]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groups")(iterable.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey, js.Array[TObject]]]]
     inline def groups[TObject, TKey1, TKey2](
-      iterable: Iterable[TObject],
+      iterable: js.Iterable[TObject],
       key1: js.Function1[/* value */ TObject, TKey1],
       key2: js.Function1[/* value */ TObject, TKey2]
     ): js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, js.Array[TObject]]]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groups")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, js.Array[TObject]]]]]]
     inline def groups[TObject, TKey1, TKey2, TKey3](
-      iterable: Iterable[TObject],
+      iterable: js.Iterable[TObject],
       key1: js.Function1[/* value */ TObject, TKey1],
       key2: js.Function1[/* value */ TObject, TKey2],
       key3: js.Function1[/* value */ TObject, TKey3]
@@ -2108,11 +2184,11 @@ object global {
     val hcl: HCLColorFactory = js.native
     
     inline def hierarchy[Datum](data: Datum): HierarchyNode[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("hierarchy")(data.asInstanceOf[js.Any]).asInstanceOf[HierarchyNode[Datum]]
-    inline def hierarchy[Datum](data: Datum, children: js.Function1[/* d */ Datum, js.UndefOr[Iterable[Datum] | Null]]): HierarchyNode[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("hierarchy")(data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[HierarchyNode[Datum]]
+    inline def hierarchy[Datum](data: Datum, children: js.Function1[/* d */ Datum, js.UndefOr[js.Iterable[Datum] | Null]]): HierarchyNode[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("hierarchy")(data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[HierarchyNode[Datum]]
     
     inline def histogram(): HistogramGeneratorNumber[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("histogram")().asInstanceOf[HistogramGeneratorNumber[Double, Double]]
     
-    inline def `histogram_DatumValue_UnionDate<undefined>_HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[Date] */](): HistogramGeneratorDate[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("histogram")().asInstanceOf[HistogramGeneratorDate[Datum, Value]]
+    inline def `histogram_DatumValue_UnionDate<undefined>_HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[js.Date] */](): HistogramGeneratorDate[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("histogram")().asInstanceOf[HistogramGeneratorDate[Datum, Value]]
     
     inline def `histogram_DatumValue_UnionDouble<undefined>`[Datum, Value /* <: js.UndefOr[Double] */](): HistogramGeneratorNumber[Datum, Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("histogram")().asInstanceOf[HistogramGeneratorNumber[Datum, Value]]
     
@@ -2126,27 +2202,33 @@ object global {
     inline def image(url: String): js.Promise[HTMLImageElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("image")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLImageElement]]
     inline def image(url: String, init: PartialHTMLImageElement): js.Promise[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("image")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLImageElement]]
     
-    inline def index[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): Map[TKey, TObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(iterable.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Map[TKey, TObject]]
+    inline def index[TObject, TKey](iterable: js.Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): typings.d3Array.mod.InternMap[TKey, TObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(iterable.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.d3Array.mod.InternMap[TKey, TObject]]
     inline def index[TObject, TKey1, TKey2](
-      iterable: Iterable[TObject],
+      iterable: js.Iterable[TObject],
       key1: js.Function1[/* value */ TObject, TKey1],
       key2: js.Function1[/* value */ TObject, TKey2]
-    ): Map[TKey1, Map[TKey2, TObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[Map[TKey1, Map[TKey2, TObject]]]
+    ): typings.d3Array.mod.InternMap[TKey1, typings.d3Array.mod.InternMap[TKey2, TObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[typings.d3Array.mod.InternMap[TKey1, typings.d3Array.mod.InternMap[TKey2, TObject]]]
     inline def index[TObject, TKey1, TKey2, TKey3](
-      iterable: Iterable[TObject],
+      iterable: js.Iterable[TObject],
       key1: js.Function1[/* value */ TObject, TKey1],
       key2: js.Function1[/* value */ TObject, TKey2],
       key3: js.Function1[/* value */ TObject, TKey3]
-    ): Map[TKey1, Map[TKey2, Map[TKey3, TObject]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any], key3.asInstanceOf[js.Any])).asInstanceOf[Map[TKey1, Map[TKey2, Map[TKey3, TObject]]]]
+    ): typings.d3Array.mod.InternMap[
+        TKey1, 
+        typings.d3Array.mod.InternMap[TKey2, typings.d3Array.mod.InternMap[TKey3, TObject]]
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("index")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any], key3.asInstanceOf[js.Any])).asInstanceOf[typings.d3Array.mod.InternMap[
+        TKey1, 
+        typings.d3Array.mod.InternMap[TKey2, typings.d3Array.mod.InternMap[TKey3, TObject]]
+      ]]
     
-    inline def indexes[TObject, TKey](iterable: Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): js.Array[js.Tuple2[TKey, TObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexes")(iterable.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey, TObject]]]
+    inline def indexes[TObject, TKey](iterable: js.Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): js.Array[js.Tuple2[TKey, TObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexes")(iterable.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey, TObject]]]
     inline def indexes[TObject, TKey1, TKey2](
-      iterable: Iterable[TObject],
+      iterable: js.Iterable[TObject],
       key1: js.Function1[/* value */ TObject, TKey1],
       key2: js.Function1[/* value */ TObject, TKey2]
     ): js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, TObject]]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexes")(iterable.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, TObject]]]]]
     inline def indexes[TObject, TKey1, TKey2, TKey3](
-      iterable: Iterable[TObject],
+      iterable: js.Iterable[TObject],
       key1: js.Function1[/* value */ TObject, TKey1],
       key2: js.Function1[/* value */ TObject, TKey2],
       key3: js.Function1[/* value */ TObject, TKey3]
@@ -2158,59 +2240,59 @@ object global {
     
     inline def interpolate(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
     inline def interpolate(a: String, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
-    inline def interpolate(a: js.Any, b: Boolean): js.Function1[/* t */ Double, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Boolean]]
-    inline def interpolate(a: js.Any, b: Null): js.Function1[/* t */ Double, Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Null]]
-    inline def interpolate(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
-    inline def interpolate(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
-    inline def interpolate(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
-    inline def interpolate(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
-    inline def interpolate(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
-    inline def interpolate(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
-    inline def interpolate(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
-    inline def interpolate(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
-    inline def interpolate(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
-    inline def interpolate(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
+    inline def interpolate(a: js.Array[Double], b: js.typedarray.DataView): js.Function1[/* t */ Double, js.typedarray.DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.DataView]]
+    inline def interpolate(a: js.Array[Double], b: js.typedarray.Float32Array): js.Function1[/* t */ Double, js.typedarray.Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Float32Array]]
+    inline def interpolate(a: js.Array[Double], b: js.typedarray.Float64Array): js.Function1[/* t */ Double, js.typedarray.Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Float64Array]]
+    inline def interpolate(a: js.Array[Double], b: js.typedarray.Int16Array): js.Function1[/* t */ Double, js.typedarray.Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int16Array]]
+    inline def interpolate(a: js.Array[Double], b: js.typedarray.Int32Array): js.Function1[/* t */ Double, js.typedarray.Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int32Array]]
+    inline def interpolate(a: js.Array[Double], b: js.typedarray.Int8Array): js.Function1[/* t */ Double, js.typedarray.Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int8Array]]
+    inline def interpolate(a: js.Array[Double], b: js.typedarray.Uint16Array): js.Function1[/* t */ Double, js.typedarray.Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint16Array]]
+    inline def interpolate(a: js.Array[Double], b: js.typedarray.Uint32Array): js.Function1[/* t */ Double, js.typedarray.Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint32Array]]
+    inline def interpolate(a: js.Array[Double], b: js.typedarray.Uint8Array): js.Function1[/* t */ Double, js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint8Array]]
+    inline def interpolate(a: js.Array[Double], b: js.typedarray.Uint8ClampedArray): js.Function1[/* t */ Double, js.typedarray.Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint8ClampedArray]]
+    inline def interpolate(a: js.Date, b: js.Date): js.Function1[/* t */ Double, js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Date]]
+    inline def interpolate(a: Any, b: Boolean): js.Function1[/* t */ Double, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Boolean]]
+    inline def interpolate(a: Any, b: Null): js.Function1[/* t */ Double, Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Null]]
     inline def interpolate(a: Double, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
     inline def interpolate(a: Double, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
     inline def interpolate(a: ColorCommonInstance, b: ColorCommonInstance): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
     inline def interpolate(a: ToString, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
     inline def interpolate(a: typings.d3Interpolate.anon.ValueOf, b: Double): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
     inline def interpolate(a: typings.d3Interpolate.anon.ValueOf, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
-    inline def interpolate(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
-    inline def interpolate(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
-    inline def interpolate(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
-    inline def interpolate(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
-    inline def interpolate(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
-    inline def interpolate(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
-    inline def interpolate(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
-    inline def interpolate(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
-    inline def interpolate(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
-    inline def interpolate(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
-    inline def interpolate(a: Date, b: Date): js.Function1[/* t */ Double, Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Date]]
-    inline def interpolate[U /* <: js.Object */](a: js.Any, b: U): js.Function1[/* t */ Double, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, U]]
-    inline def interpolate[U /* <: js.Array[js.Any] */](a: js.Array[js.Any], b: U): js.Function1[/* t */ Double, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, U]]
+    inline def interpolate(a: NumberArray, b: js.typedarray.DataView): js.Function1[/* t */ Double, js.typedarray.DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.DataView]]
+    inline def interpolate(a: NumberArray, b: js.typedarray.Float32Array): js.Function1[/* t */ Double, js.typedarray.Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Float32Array]]
+    inline def interpolate(a: NumberArray, b: js.typedarray.Float64Array): js.Function1[/* t */ Double, js.typedarray.Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Float64Array]]
+    inline def interpolate(a: NumberArray, b: js.typedarray.Int16Array): js.Function1[/* t */ Double, js.typedarray.Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int16Array]]
+    inline def interpolate(a: NumberArray, b: js.typedarray.Int32Array): js.Function1[/* t */ Double, js.typedarray.Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int32Array]]
+    inline def interpolate(a: NumberArray, b: js.typedarray.Int8Array): js.Function1[/* t */ Double, js.typedarray.Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int8Array]]
+    inline def interpolate(a: NumberArray, b: js.typedarray.Uint16Array): js.Function1[/* t */ Double, js.typedarray.Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint16Array]]
+    inline def interpolate(a: NumberArray, b: js.typedarray.Uint32Array): js.Function1[/* t */ Double, js.typedarray.Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint32Array]]
+    inline def interpolate(a: NumberArray, b: js.typedarray.Uint8Array): js.Function1[/* t */ Double, js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint8Array]]
+    inline def interpolate(a: NumberArray, b: js.typedarray.Uint8ClampedArray): js.Function1[/* t */ Double, js.typedarray.Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint8ClampedArray]]
+    inline def interpolate[U /* <: js.Array[Any] */](a: js.Array[Any], b: U): js.Function1[/* t */ Double, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, U]]
+    inline def interpolate[U /* <: js.Object */](a: Any, b: U): js.Function1[/* t */ Double, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, U]]
     
-    inline def interpolateArray(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
-    inline def interpolateArray(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
-    inline def interpolateArray(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
-    inline def interpolateArray(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
-    inline def interpolateArray(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
-    inline def interpolateArray(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
-    inline def interpolateArray(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
-    inline def interpolateArray(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
-    inline def interpolateArray(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
-    inline def interpolateArray(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
-    inline def interpolateArray(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
-    inline def interpolateArray(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
-    inline def interpolateArray(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
-    inline def interpolateArray(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
-    inline def interpolateArray(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
-    inline def interpolateArray(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
-    inline def interpolateArray(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
-    inline def interpolateArray(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
-    inline def interpolateArray(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
-    inline def interpolateArray(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
-    inline def interpolateArray[A /* <: js.Array[js.Any] */](a: js.Array[js.Any], b: A): ArrayInterpolator[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[ArrayInterpolator[A]]
+    inline def interpolateArray(a: js.Array[Double], b: js.typedarray.DataView): js.Function1[/* t */ Double, js.typedarray.DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.DataView]]
+    inline def interpolateArray(a: js.Array[Double], b: js.typedarray.Float32Array): js.Function1[/* t */ Double, js.typedarray.Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Float32Array]]
+    inline def interpolateArray(a: js.Array[Double], b: js.typedarray.Float64Array): js.Function1[/* t */ Double, js.typedarray.Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Float64Array]]
+    inline def interpolateArray(a: js.Array[Double], b: js.typedarray.Int16Array): js.Function1[/* t */ Double, js.typedarray.Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int16Array]]
+    inline def interpolateArray(a: js.Array[Double], b: js.typedarray.Int32Array): js.Function1[/* t */ Double, js.typedarray.Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int32Array]]
+    inline def interpolateArray(a: js.Array[Double], b: js.typedarray.Int8Array): js.Function1[/* t */ Double, js.typedarray.Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int8Array]]
+    inline def interpolateArray(a: js.Array[Double], b: js.typedarray.Uint16Array): js.Function1[/* t */ Double, js.typedarray.Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint16Array]]
+    inline def interpolateArray(a: js.Array[Double], b: js.typedarray.Uint32Array): js.Function1[/* t */ Double, js.typedarray.Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint32Array]]
+    inline def interpolateArray(a: js.Array[Double], b: js.typedarray.Uint8Array): js.Function1[/* t */ Double, js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint8Array]]
+    inline def interpolateArray(a: js.Array[Double], b: js.typedarray.Uint8ClampedArray): js.Function1[/* t */ Double, js.typedarray.Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint8ClampedArray]]
+    inline def interpolateArray(a: NumberArray, b: js.typedarray.DataView): js.Function1[/* t */ Double, js.typedarray.DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.DataView]]
+    inline def interpolateArray(a: NumberArray, b: js.typedarray.Float32Array): js.Function1[/* t */ Double, js.typedarray.Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Float32Array]]
+    inline def interpolateArray(a: NumberArray, b: js.typedarray.Float64Array): js.Function1[/* t */ Double, js.typedarray.Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Float64Array]]
+    inline def interpolateArray(a: NumberArray, b: js.typedarray.Int16Array): js.Function1[/* t */ Double, js.typedarray.Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int16Array]]
+    inline def interpolateArray(a: NumberArray, b: js.typedarray.Int32Array): js.Function1[/* t */ Double, js.typedarray.Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int32Array]]
+    inline def interpolateArray(a: NumberArray, b: js.typedarray.Int8Array): js.Function1[/* t */ Double, js.typedarray.Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int8Array]]
+    inline def interpolateArray(a: NumberArray, b: js.typedarray.Uint16Array): js.Function1[/* t */ Double, js.typedarray.Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint16Array]]
+    inline def interpolateArray(a: NumberArray, b: js.typedarray.Uint32Array): js.Function1[/* t */ Double, js.typedarray.Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint32Array]]
+    inline def interpolateArray(a: NumberArray, b: js.typedarray.Uint8Array): js.Function1[/* t */ Double, js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint8Array]]
+    inline def interpolateArray(a: NumberArray, b: js.typedarray.Uint8ClampedArray): js.Function1[/* t */ Double, js.typedarray.Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint8ClampedArray]]
+    inline def interpolateArray[A /* <: js.Array[Any] */](a: js.Array[Any], b: A): ArrayInterpolator[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[ArrayInterpolator[A]]
     
     inline def interpolateBasis(splineNodes: js.Array[Double]): js.Function1[/* t */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBasis")(splineNodes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, Double]]
     
@@ -2238,7 +2320,7 @@ object global {
     @js.native
     val interpolateCubehelixLong: ColorGammaInterpolationFactory = js.native
     
-    inline def interpolateDate(a: Date, b: Date): js.Function1[/* t */ Double, Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateDate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Date]]
+    inline def interpolateDate(a: js.Date, b: js.Date): js.Function1[/* t */ Double, js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateDate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Date]]
     
     inline def interpolateDiscrete[T](values: js.Array[T]): js.Function1[/* t */ Double, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateDiscrete")(values.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, T]]
     
@@ -2285,29 +2367,29 @@ object global {
     inline def interpolateNumber(a: typings.d3Interpolate.anon.ValueOf, b: typings.d3Interpolate.anon.ValueOf): js.Function1[/* t */ Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumber")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Double]]
     
     inline def interpolateNumberArray(a: js.Array[Double], b: js.Array[Double]): js.Function1[/* t */ Double, js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Array[Double]]]
-    inline def interpolateNumberArray(a: js.Array[Double], b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
-    inline def interpolateNumberArray(a: js.Array[Double], b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
-    inline def interpolateNumberArray(a: js.Array[Double], b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
-    inline def interpolateNumberArray(a: js.Array[Double], b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
-    inline def interpolateNumberArray(a: js.Array[Double], b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
-    inline def interpolateNumberArray(a: js.Array[Double], b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
-    inline def interpolateNumberArray(a: js.Array[Double], b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
-    inline def interpolateNumberArray(a: js.Array[Double], b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
-    inline def interpolateNumberArray(a: js.Array[Double], b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
-    inline def interpolateNumberArray(a: js.Array[Double], b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
+    inline def interpolateNumberArray(a: js.Array[Double], b: js.typedarray.DataView): js.Function1[/* t */ Double, js.typedarray.DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.DataView]]
+    inline def interpolateNumberArray(a: js.Array[Double], b: js.typedarray.Float32Array): js.Function1[/* t */ Double, js.typedarray.Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Float32Array]]
+    inline def interpolateNumberArray(a: js.Array[Double], b: js.typedarray.Float64Array): js.Function1[/* t */ Double, js.typedarray.Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Float64Array]]
+    inline def interpolateNumberArray(a: js.Array[Double], b: js.typedarray.Int16Array): js.Function1[/* t */ Double, js.typedarray.Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int16Array]]
+    inline def interpolateNumberArray(a: js.Array[Double], b: js.typedarray.Int32Array): js.Function1[/* t */ Double, js.typedarray.Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int32Array]]
+    inline def interpolateNumberArray(a: js.Array[Double], b: js.typedarray.Int8Array): js.Function1[/* t */ Double, js.typedarray.Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int8Array]]
+    inline def interpolateNumberArray(a: js.Array[Double], b: js.typedarray.Uint16Array): js.Function1[/* t */ Double, js.typedarray.Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint16Array]]
+    inline def interpolateNumberArray(a: js.Array[Double], b: js.typedarray.Uint32Array): js.Function1[/* t */ Double, js.typedarray.Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint32Array]]
+    inline def interpolateNumberArray(a: js.Array[Double], b: js.typedarray.Uint8Array): js.Function1[/* t */ Double, js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint8Array]]
+    inline def interpolateNumberArray(a: js.Array[Double], b: js.typedarray.Uint8ClampedArray): js.Function1[/* t */ Double, js.typedarray.Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint8ClampedArray]]
     inline def interpolateNumberArray(a: NumberArray, b: js.Array[Double]): js.Function1[/* t */ Double, js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Array[Double]]]
-    inline def interpolateNumberArray(a: NumberArray, b: DataView): js.Function1[/* t */ Double, DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, DataView]]
-    inline def interpolateNumberArray(a: NumberArray, b: Float32Array): js.Function1[/* t */ Double, Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float32Array]]
-    inline def interpolateNumberArray(a: NumberArray, b: Float64Array): js.Function1[/* t */ Double, Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Float64Array]]
-    inline def interpolateNumberArray(a: NumberArray, b: Int16Array): js.Function1[/* t */ Double, Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int16Array]]
-    inline def interpolateNumberArray(a: NumberArray, b: Int32Array): js.Function1[/* t */ Double, Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int32Array]]
-    inline def interpolateNumberArray(a: NumberArray, b: Int8Array): js.Function1[/* t */ Double, Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Int8Array]]
-    inline def interpolateNumberArray(a: NumberArray, b: Uint16Array): js.Function1[/* t */ Double, Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint16Array]]
-    inline def interpolateNumberArray(a: NumberArray, b: Uint32Array): js.Function1[/* t */ Double, Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint32Array]]
-    inline def interpolateNumberArray(a: NumberArray, b: Uint8Array): js.Function1[/* t */ Double, Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8Array]]
-    inline def interpolateNumberArray(a: NumberArray, b: Uint8ClampedArray): js.Function1[/* t */ Double, Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Uint8ClampedArray]]
+    inline def interpolateNumberArray(a: NumberArray, b: js.typedarray.DataView): js.Function1[/* t */ Double, js.typedarray.DataView] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.DataView]]
+    inline def interpolateNumberArray(a: NumberArray, b: js.typedarray.Float32Array): js.Function1[/* t */ Double, js.typedarray.Float32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Float32Array]]
+    inline def interpolateNumberArray(a: NumberArray, b: js.typedarray.Float64Array): js.Function1[/* t */ Double, js.typedarray.Float64Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Float64Array]]
+    inline def interpolateNumberArray(a: NumberArray, b: js.typedarray.Int16Array): js.Function1[/* t */ Double, js.typedarray.Int16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int16Array]]
+    inline def interpolateNumberArray(a: NumberArray, b: js.typedarray.Int32Array): js.Function1[/* t */ Double, js.typedarray.Int32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int32Array]]
+    inline def interpolateNumberArray(a: NumberArray, b: js.typedarray.Int8Array): js.Function1[/* t */ Double, js.typedarray.Int8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Int8Array]]
+    inline def interpolateNumberArray(a: NumberArray, b: js.typedarray.Uint16Array): js.Function1[/* t */ Double, js.typedarray.Uint16Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint16Array]]
+    inline def interpolateNumberArray(a: NumberArray, b: js.typedarray.Uint32Array): js.Function1[/* t */ Double, js.typedarray.Uint32Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint32Array]]
+    inline def interpolateNumberArray(a: NumberArray, b: js.typedarray.Uint8Array): js.Function1[/* t */ Double, js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint8Array]]
+    inline def interpolateNumberArray(a: NumberArray, b: js.typedarray.Uint8ClampedArray): js.Function1[/* t */ Double, js.typedarray.Uint8ClampedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateNumberArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.typedarray.Uint8ClampedArray]]
     
-    inline def interpolateObject[U /* <: js.Object */](a: js.Any, b: U): js.Function1[/* t */ Double, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateObject")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, U]]
+    inline def interpolateObject[U /* <: js.Object */](a: Any, b: U): js.Function1[/* t */ Double, U] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateObject")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, U]]
     
     inline def interpolateOrRd(t: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateOrRd")(t.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -2388,19 +2470,19 @@ object global {
     inline def interrupt(node: BaseType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("interrupt")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def interrupt(node: BaseType, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interrupt")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def intersection[T](iterables: Iterable[T]*): Set[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(iterables.asInstanceOf[js.Any]).asInstanceOf[Set[T]]
+    inline def intersection[T](iterables: js.Iterable[T]*): typings.d3Array.mod.InternSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(iterables.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.d3Array.mod.InternSet[T]]
     
     inline def interval(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any]).asInstanceOf[Timer_]
     inline def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Timer_]
     inline def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
     inline def interval(callback: js.Function1[/* elapsed */ Double, Unit], delay: Unit, time: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("interval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Timer_]
     
-    inline def isoFormat(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isoFormat")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def isoFormat(date: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isoFormat")(date.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def isoParse(dateString: String): Date | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isoParse")(dateString.asInstanceOf[js.Any]).asInstanceOf[Date | Null]
+    inline def isoParse(dateString: String): js.Date | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isoParse")(dateString.asInstanceOf[js.Any]).asInstanceOf[js.Date | Null]
     
-    inline def json[ParsedJSONObject /* <: js.Any */](url: String): js.Promise[js.UndefOr[ParsedJSONObject]] = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[ParsedJSONObject]]]
-    inline def json[ParsedJSONObject /* <: js.Any */](url: String, init: RequestInit): js.Promise[js.UndefOr[ParsedJSONObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[ParsedJSONObject]]]
+    inline def json[ParsedJSONObject /* <: Any */](url: String): js.Promise[js.UndefOr[ParsedJSONObject]] = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[ParsedJSONObject]]]
+    inline def json[ParsedJSONObject /* <: Any */](url: String, init: RequestInit): js.Promise[js.UndefOr[ParsedJSONObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[ParsedJSONObject]]]
     
     @JSGlobal("d3.lab")
     @js.native
@@ -2410,13 +2492,13 @@ object global {
     @js.native
     val lch: LCHColorFactory = js.native
     
-    inline def least[T](iterable: Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("least")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
-    inline def least[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("least")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
-    inline def least[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("least")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    inline def least[T](iterable: js.Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("least")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+    inline def least[T](iterable: js.Iterable[T], accessor: js.Function1[/* a */ T, Any]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("least")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+    inline def least[T](iterable: js.Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("least")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
     
-    inline def leastIndex[T](iterable: Iterable[T]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("leastIndex")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
-    inline def leastIndex[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("leastIndex")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-    inline def leastIndex[T, U](iterable: Iterable[T], accessor: js.Function1[/* a */ T, U]): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("leastIndex")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
+    inline def leastIndex(iterable: js.Iterable[Any]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("leastIndex")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+    inline def leastIndex[T](iterable: js.Iterable[T], accessor: js.Function1[/* a */ T, Any]): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("leastIndex")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
+    inline def leastIndex[T](iterable: js.Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("leastIndex")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
     
     inline def line[Datum](): Line_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("line")().asInstanceOf[Line_[Datum]]
     inline def line[Datum](x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): Line_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("line")(x.asInstanceOf[js.Any]).asInstanceOf[Line_[Datum]]
@@ -2435,94 +2517,116 @@ object global {
     
     inline def lineRadial_Datum[Datum](): LineRadial_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("lineRadial")().asInstanceOf[LineRadial_[Datum]]
     
-    inline def linkHorizontal(): Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
+    inline def link(curve: CurveFactory): Link_[Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(curve.asInstanceOf[js.Any]).asInstanceOf[Link_[Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
     
-    inline def linkHorizontal_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link[js.Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link[js.Any, LinkDatum, NodeDatum]]
+    inline def linkHorizontal(): Link_[Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link_[Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
     
-    inline def linkHorizontal_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link[This, LinkDatum, NodeDatum]]
+    inline def linkHorizontal_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link_[Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link_[Any, LinkDatum, NodeDatum]]
     
-    inline def linkRadial(): LinkRadial_[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
+    inline def linkHorizontal_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link_[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link_[This, LinkDatum, NodeDatum]]
     
-    inline def linkRadial_LinkDatumNodeDatum[LinkDatum, NodeDatum](): LinkRadial_[js.Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[js.Any, LinkDatum, NodeDatum]]
+    inline def linkRadial(): LinkRadial_[Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
+    
+    inline def linkRadial_LinkDatumNodeDatum[LinkDatum, NodeDatum](): LinkRadial_[Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[Any, LinkDatum, NodeDatum]]
     
     inline def linkRadial_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): LinkRadial_[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[This, LinkDatum, NodeDatum]]
     
-    inline def linkVertical(): Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
+    inline def linkVertical(): Link_[Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link_[Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
     
-    inline def linkVertical_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link[js.Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link[js.Any, LinkDatum, NodeDatum]]
+    inline def linkVertical_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link_[Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link_[Any, LinkDatum, NodeDatum]]
     
-    inline def linkVertical_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link[This, LinkDatum, NodeDatum]]
+    inline def linkVertical_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link_[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link_[This, LinkDatum, NodeDatum]]
+    
+    inline def link_LinkDatumNodeDatum[LinkDatum, NodeDatum](curve: CurveFactory): Link_[Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(curve.asInstanceOf[js.Any]).asInstanceOf[Link_[Any, LinkDatum, NodeDatum]]
+    
+    inline def link_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](curve: CurveFactory): Link_[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(curve.asInstanceOf[js.Any]).asInstanceOf[Link_[This, LinkDatum, NodeDatum]]
     
     inline def local[T](): Local_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[Local_[T]]
     
     inline def map[T, U](
-      iterable: Iterable[T],
-      mapper: js.Function3[/* value */ T, /* index */ Double, /* iterable */ Iterable[T], U]
+      iterable: js.Iterable[T],
+      mapper: js.Function3[/* value */ T, /* index */ Double, /* iterable */ js.Iterable[T], U]
     ): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(iterable.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
     
     inline def matcher(selector: String): js.ThisFunction0[/* this */ BaseType, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(selector.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, Boolean]]
     
-    inline def max(iterable: Iterable[String]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def max(iterable: js.Iterable[String]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     inline def max[T](
-      iterable: Iterable[T],
-      accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[String | Null]]
+      iterable: js.Iterable[T],
+      accessor: js.Function3[
+          /* datum */ T, 
+          /* index */ Double, 
+          /* array */ js.Iterable[T], 
+          js.UndefOr[String | Null]
+        ]
     ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
     
-    inline def maxIndex[T](iterable: Iterable[T]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("maxIndex")(iterable.asInstanceOf[js.Any]).asInstanceOf[Double]
-    inline def maxIndex[TDatum, U](
-      iterable: Iterable[TDatum],
-      accessor: js.Function3[
-          /* datum */ TDatum, 
-          /* index */ Double, 
-          /* array */ Iterable[TDatum], 
-          js.UndefOr[U | Null]
-        ]
+    inline def maxIndex(iterable: js.Iterable[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("maxIndex")(iterable.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def maxIndex[TDatum](
+      iterable: js.Iterable[TDatum],
+      accessor: js.Function3[/* datum */ TDatum, /* index */ Double, /* array */ js.Iterable[TDatum], Any]
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("maxIndex")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def max_TU_Numeric[T, U /* <: Numeric */](
-      iterable: Iterable[T],
-      accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[U | Null]]
+      iterable: js.Iterable[T],
+      accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ js.Iterable[T], js.UndefOr[U | Null]]
     ): js.UndefOr[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[U]]
     
-    inline def max_T_Numeric[T /* <: Numeric */](iterable: Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+    inline def max_T_Numeric[T /* <: Numeric */](iterable: js.Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
     
-    inline def mean[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+    inline def mean(iterable: js.Iterable[js.UndefOr[Numeric | Null]]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
     inline def mean[T](
-      iterable: Iterable[T],
-      accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
+      iterable: js.Iterable[T],
+      accessor: js.Function3[
+          /* datum */ T, 
+          /* index */ Double, 
+          /* array */ js.Iterable[T], 
+          js.UndefOr[Double | Null]
+        ]
     ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
     
-    inline def median[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("median")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+    inline def median(iterable: js.Iterable[js.UndefOr[Numeric | Null]]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("median")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
     inline def median[T](
-      iterable: Iterable[T],
-      accessor: js.Function3[/* element */ T, /* i */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
+      iterable: js.Iterable[T],
+      accessor: js.Function3[/* element */ T, /* i */ Double, /* array */ js.Iterable[T], js.UndefOr[Double | Null]]
     ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("median")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
     
-    inline def merge[T](iterables: Iterable[Iterable[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(iterables.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    inline def merge[T](iterables: js.Iterable[js.Iterable[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(iterables.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
     
-    inline def min(iterable: Iterable[String]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def min(iterable: js.Iterable[String]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     inline def min[T](
-      iterable: Iterable[T],
-      accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[String | Null]]
+      iterable: js.Iterable[T],
+      accessor: js.Function3[
+          /* datum */ T, 
+          /* index */ Double, 
+          /* array */ js.Iterable[T], 
+          js.UndefOr[String | Null]
+        ]
     ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
     
-    inline def minIndex[T](iterable: Iterable[T]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minIndex")(iterable.asInstanceOf[js.Any]).asInstanceOf[Double]
-    inline def minIndex[TDatum, U](
-      iterable: Iterable[TDatum],
-      accessor: js.Function3[
-          /* datum */ TDatum, 
-          /* index */ Double, 
-          /* array */ Iterable[TDatum], 
-          js.UndefOr[U | Null]
-        ]
+    inline def minIndex(iterable: js.Iterable[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minIndex")(iterable.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def minIndex[TDatum](
+      iterable: js.Iterable[TDatum],
+      accessor: js.Function3[/* datum */ TDatum, /* index */ Double, /* array */ js.Iterable[TDatum], Any]
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("minIndex")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def min_TU_Numeric[T, U /* <: Numeric */](
-      iterable: Iterable[T],
-      accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[U | Null]]
+      iterable: js.Iterable[T],
+      accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ js.Iterable[T], js.UndefOr[U | Null]]
     ): js.UndefOr[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[U]]
     
-    inline def min_T_Numeric[T /* <: Numeric */](iterable: Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+    inline def min_T_Numeric[T /* <: Numeric */](iterable: js.Iterable[T]): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+    
+    inline def mode(iterable: js.Iterable[js.UndefOr[Numeric | Null]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mode")(iterable.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def mode[T](
+      iterable: js.Iterable[T],
+      accessor: js.Function3[
+          /* datum */ T, 
+          /* index */ Double, 
+          /* array */ js.Iterable[T], 
+          js.UndefOr[Double | Null]
+        ]
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mode")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def namespace(prefixedLocal: String): NamespaceLocalObject | String = ^.asInstanceOf[js.Dynamic].applyDynamic("namespace")(prefixedLocal.asInstanceOf[js.Any]).asInstanceOf[NamespaceLocalObject | String]
     
@@ -2540,23 +2644,23 @@ object global {
     
     inline def packSiblings[Datum /* <: PackRadius */](circles: js.Array[Datum]): js.Array[Datum & PackCircle] = ^.asInstanceOf[js.Dynamic].applyDynamic("packSiblings")(circles.asInstanceOf[js.Any]).asInstanceOf[js.Array[Datum & PackCircle]]
     
-    inline def pairs[T](iterable: Iterable[T]): js.Array[js.Tuple2[T, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pairs")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[T, T]]]
-    inline def pairs[T, U](iterable: Iterable[T], reducer: js.Function2[/* a */ T, /* b */ T, U]): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("pairs")(iterable.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
+    inline def pairs[T](iterable: js.Iterable[T]): js.Array[js.Tuple2[T, T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pairs")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[T, T]]]
+    inline def pairs[T, U](iterable: js.Iterable[T], reducer: js.Function2[/* a */ T, /* b */ T, U]): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("pairs")(iterable.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
     
     inline def partition[Datum](): PartitionLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")().asInstanceOf[PartitionLayout[Datum]]
     
     inline def path(): Path_ = ^.asInstanceOf[js.Dynamic].applyDynamic("path")().asInstanceOf[Path_]
     
-    inline def permute[T](source: NumberDictionary[T], keys: Iterable[Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("permute")(source.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-    inline def permute[T, K /* <: /* keyof T */ String */](source: T, keys: Iterable[K]): js.Array[
+    inline def permute[T](source: NumberDictionary[T], keys: js.Iterable[Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("permute")(source.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    inline def permute[T, K /* <: /* keyof T */ String */](source: T, keys: js.Iterable[K]): js.Array[
         /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("permute")(source.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[
         /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
       ]]
     
-    inline def pie(): Pie_[js.Any, Double | typings.d3Shape.anon.ValueOf] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[js.Any, Double | typings.d3Shape.anon.ValueOf]]
+    inline def pie(): Pie_[Any, Double | typings.d3Shape.anon.ValueOf] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[Any, Double | typings.d3Shape.anon.ValueOf]]
     
-    inline def pie_Datum[Datum](): Pie_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[js.Any, Datum]]
+    inline def pie_Datum[Datum](): Pie_[Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[Any, Datum]]
     
     inline def pie_ThisDatum[This, Datum](): Pie_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[This, Datum]]
     
@@ -2564,25 +2668,25 @@ object global {
       interpolate: js.Function2[/* a */ ZoomView, /* b */ ZoomView, ZoomInterpolator],
       values: js.Array[ZoomView]
     ): ZoomInterpolator = (^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(interpolate.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[ZoomInterpolator]
-    inline def piecewise(values: js.Array[ZoomView]): ZoomInterpolator = ^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(values.asInstanceOf[js.Any]).asInstanceOf[ZoomInterpolator]
+    inline def piecewise(values: js.Array[Any]): js.Function1[/* t */ Double, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(values.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, Any]]
     
-    inline def piecewise_A_ArrayAny_ArrayInterpolator[A /* <: js.Array[js.Any] */](
-      interpolate: js.Function2[/* a */ js.Array[js.Any], /* b */ A, ArrayInterpolator[A]],
+    inline def piecewise_A_ArrayAny_ArrayInterpolator[A /* <: js.Array[Any] */](
+      interpolate: js.Function2[/* a */ js.Array[Any], /* b */ A, ArrayInterpolator[A]],
       values: js.Array[A]
     ): ArrayInterpolator[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(interpolate.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[ArrayInterpolator[A]]
-    inline def piecewise_A_ArrayAny_ArrayInterpolator[A /* <: js.Array[js.Any] */](values: js.Array[A]): ArrayInterpolator[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(values.asInstanceOf[js.Any]).asInstanceOf[ArrayInterpolator[A]]
+    inline def piecewise_A_ArrayAny_ArrayInterpolator[A /* <: js.Array[Any] */](values: js.Array[A]): ArrayInterpolator[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(values.asInstanceOf[js.Any]).asInstanceOf[ArrayInterpolator[A]]
     
-    inline def piecewise_TDataInterpolator_Function1[TData, Interpolator](interpolate: js.Function2[/* a */ TData, /* b */ TData, Interpolator], values: js.Array[TData]): js.Function1[/* t */ Double, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(interpolate.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Any]]
+    inline def piecewise_TData_Function1[TData](interpolate: js.Function2[/* a */ TData, /* b */ TData, Any], values: js.Array[TData]): js.Function1[/* t */ Double, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(interpolate.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, Any]]
     
-    inline def piecewise_TData_Function1[TData](values: js.Array[TData]): js.Function1[/* t */ Double, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(values.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* t */ Double, js.Any]]
+    inline def piecewise_ZoomInterpolator(values: js.Array[ZoomView]): ZoomInterpolator = ^.asInstanceOf[js.Dynamic].applyDynamic("piecewise")(values.asInstanceOf[js.Any]).asInstanceOf[ZoomInterpolator]
     
     inline def pointRadial(angle: Double, radius: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointRadial")(angle.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
     
-    inline def pointer(event: js.Any): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
-    inline def pointer(event: js.Any, target: js.Any): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+    inline def pointer(event: Any): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+    inline def pointer(event: Any, target: Any): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
     
-    inline def pointers(event: js.Any): js.Array[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
-    inline def pointers(event: js.Any, target: js.Any): js.Array[js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
+    inline def pointers(event: Any): js.Array[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
+    inline def pointers(event: Any, target: Any): js.Array[js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
     
     inline def polygonArea(polygon: js.Array[js.Tuple2[Double, Double]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("polygonArea")(polygon.asInstanceOf[js.Any]).asInstanceOf[Double]
     
@@ -2602,18 +2706,16 @@ object global {
     
     inline def quadtree[T](): Quadtree_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")().asInstanceOf[Quadtree_[T]]
     inline def quadtree[T](data: js.Array[T]): Quadtree_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any]).asInstanceOf[Quadtree_[T]]
-    inline def quadtree[T](data: js.Array[T], x: js.Function1[/* d */ T, Double]): Quadtree_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Quadtree_[T]]
     inline def quadtree[T](data: js.Array[T], x: js.Function1[/* d */ T, Double], y: js.Function1[/* d */ T, Double]): Quadtree_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Quadtree_[T]]
-    inline def quadtree[T](data: js.Array[T], x: Unit, y: js.Function1[/* d */ T, Double]): Quadtree_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quadtree")(data.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Quadtree_[T]]
     
-    inline def quantile[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]], p: Double): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("quantile")(iterable.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
+    inline def quantile(iterable: js.Iterable[js.UndefOr[Numeric | Null]], p: Double): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("quantile")(iterable.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
     inline def quantile[T](
-      iterable: Iterable[T],
+      iterable: js.Iterable[T],
       p: Double,
-      accessor: js.Function3[/* element */ T, /* i */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
+      accessor: js.Function3[/* element */ T, /* i */ Double, /* array */ js.Iterable[T], js.UndefOr[Double | Null]]
     ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("quantile")(iterable.asInstanceOf[js.Any], p.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
     
-    inline def quantileSorted[T /* <: Numeric */](array: js.Array[js.UndefOr[T | Null]], p: Double): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("quantileSorted")(array.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
+    inline def quantileSorted(array: js.Array[js.UndefOr[Numeric | Null]], p: Double): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("quantileSorted")(array.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
     inline def quantileSorted[T](
       array: js.Array[T],
       p: Double,
@@ -2630,6 +2732,28 @@ object global {
       k: Double,
       left: Double,
       right: Double,
+      compare: js.Function2[/* a */ js.UndefOr[Primitive], /* b */ js.UndefOr[Primitive], Double]
+    ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quickselect")(array.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    inline def quickselect[T](
+      array: ArrayLike[T],
+      k: Double,
+      left: Double,
+      right: Unit,
+      compare: js.Function2[/* a */ js.UndefOr[Primitive], /* b */ js.UndefOr[Primitive], Double]
+    ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quickselect")(array.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    inline def quickselect[T](array: ArrayLike[T], k: Double, left: Unit, right: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quickselect")(array.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    inline def quickselect[T](
+      array: ArrayLike[T],
+      k: Double,
+      left: Unit,
+      right: Double,
+      compare: js.Function2[/* a */ js.UndefOr[Primitive], /* b */ js.UndefOr[Primitive], Double]
+    ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quickselect")(array.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    inline def quickselect[T](
+      array: ArrayLike[T],
+      k: Double,
+      left: Unit,
+      right: Unit,
       compare: js.Function2[/* a */ js.UndefOr[Primitive], /* b */ js.UndefOr[Primitive], Double]
     ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("quickselect")(array.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
@@ -2716,84 +2840,111 @@ object global {
     inline def range(start: Double, stop: Double, step: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     inline def range(stop: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("range")(stop.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
+    inline def rank(iterable: js.Iterable[js.UndefOr[Numeric | Null]]): js.typedarray.Float64Array = ^.asInstanceOf[js.Dynamic].applyDynamic("rank")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float64Array]
+    inline def rank[T](
+      iterable: js.Iterable[T],
+      accessorOrComparator: js.Function2[/* a */ T, /* b */ T, js.UndefOr[Double | Null]]
+    ): js.typedarray.Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("rank")(iterable.asInstanceOf[js.Any], accessorOrComparator.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float64Array]
+    inline def rank[T](
+      iterable: js.Iterable[T],
+      accessorOrComparator: js.Function3[
+          /* datum */ T, 
+          /* index */ Double, 
+          /* array */ js.Iterable[T], 
+          js.UndefOr[Double | Null]
+        ]
+    ): js.typedarray.Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("rank")(iterable.asInstanceOf[js.Any], accessorOrComparator.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float64Array]
+    
     inline def reduce[T](
-      iterable: Iterable[T],
+      iterable: js.Iterable[T],
       reducer: js.Function4[
           /* previousValue */ T, 
           /* currentValue */ T, 
           /* currentIndex */ Double, 
-          /* iterable */ Iterable[T], 
+          /* iterable */ js.Iterable[T], 
           T
         ]
     ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(iterable.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def reduce[T](
-      iterable: Iterable[T],
+      iterable: js.Iterable[T],
       reducer: js.Function4[
           /* previousValue */ T, 
           /* currentValue */ T, 
           /* currentIndex */ Double, 
-          /* iterable */ Iterable[T], 
+          /* iterable */ js.Iterable[T], 
           T
         ],
       initialValue: T
     ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(iterable.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[T]
     
     inline def reduce_TU_U[T, U](
-      iterable: Iterable[T],
+      iterable: js.Iterable[T],
       reducer: js.Function4[
           /* previousValue */ U, 
           /* currentValue */ T, 
           /* currentIndex */ Double, 
-          /* iterable */ Iterable[T], 
+          /* iterable */ js.Iterable[T], 
           U
         ],
       initialValue: U
     ): U = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(iterable.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[U]
     
-    inline def reverse[T](iterable: Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    inline def reverse[T](iterable: js.Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
     
     @JSGlobal("d3.rgb")
     @js.native
     val rgb: RGBColorFactory = js.native
     
-    inline def ribbon(): RibbonGenerator[js.Any, Ribbon_, RibbonSubgroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[js.Any, Ribbon_, RibbonSubgroup]]
+    inline def ribbon(): RibbonGenerator[Any, Ribbon_, RibbonSubgroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[Any, Ribbon_, RibbonSubgroup]]
     
-    inline def ribbon_DatumSubgroupDatum[Datum, SubgroupDatum](): RibbonGenerator[js.Any, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[js.Any, Datum, SubgroupDatum]]
+    inline def ribbonArrow(): RibbonArrowGenerator[Any, Ribbon_, RibbonSubgroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbonArrow")().asInstanceOf[RibbonArrowGenerator[Any, Ribbon_, RibbonSubgroup]]
+    
+    inline def ribbonArrow_DatumSubgroupDatum[Datum, SubgroupDatum](): RibbonArrowGenerator[Any, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbonArrow")().asInstanceOf[RibbonArrowGenerator[Any, Datum, SubgroupDatum]]
+    
+    inline def ribbonArrow_ThisDatumSubgroupDatum[This, Datum, SubgroupDatum](): RibbonArrowGenerator[This, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbonArrow")().asInstanceOf[RibbonArrowGenerator[This, Datum, SubgroupDatum]]
+    
+    inline def ribbon_DatumSubgroupDatum[Datum, SubgroupDatum](): RibbonGenerator[Any, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[Any, Datum, SubgroupDatum]]
     
     inline def ribbon_ThisDatumSubgroupDatum[This, Datum, SubgroupDatum](): RibbonGenerator[This, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[This, Datum, SubgroupDatum]]
     
     inline def rollup[TObject, TReduce, TKey](
-      iterable: Iterable[TObject],
+      iterable: js.Iterable[TObject],
       reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
       key: js.Function1[/* value */ TObject, TKey]
-    ): Map[TKey, TReduce] = (^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Map[TKey, TReduce]]
+    ): typings.d3Array.mod.InternMap[TKey, TReduce] = (^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.d3Array.mod.InternMap[TKey, TReduce]]
     inline def rollup[TObject, TReduce, TKey1, TKey2](
-      iterable: Iterable[TObject],
+      iterable: js.Iterable[TObject],
       reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
       key1: js.Function1[/* value */ TObject, TKey1],
       key2: js.Function1[/* value */ TObject, TKey2]
-    ): Map[TKey1, Map[TKey2, TReduce]] = (^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[Map[TKey1, Map[TKey2, TReduce]]]
+    ): typings.d3Array.mod.InternMap[TKey1, typings.d3Array.mod.InternMap[TKey2, TReduce]] = (^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[typings.d3Array.mod.InternMap[TKey1, typings.d3Array.mod.InternMap[TKey2, TReduce]]]
     inline def rollup[TObject, TReduce, TKey1, TKey2, TKey3](
-      iterable: Iterable[TObject],
+      iterable: js.Iterable[TObject],
       reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
       key1: js.Function1[/* value */ TObject, TKey1],
       key2: js.Function1[/* value */ TObject, TKey2],
       key3: js.Function1[/* value */ TObject, TKey3]
-    ): Map[TKey1, Map[TKey2, Map[TKey3, TReduce]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any], key3.asInstanceOf[js.Any])).asInstanceOf[Map[TKey1, Map[TKey2, Map[TKey3, TReduce]]]]
+    ): typings.d3Array.mod.InternMap[
+        TKey1, 
+        typings.d3Array.mod.InternMap[TKey2, typings.d3Array.mod.InternMap[TKey3, TReduce]]
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any], key3.asInstanceOf[js.Any])).asInstanceOf[typings.d3Array.mod.InternMap[
+        TKey1, 
+        typings.d3Array.mod.InternMap[TKey2, typings.d3Array.mod.InternMap[TKey3, TReduce]]
+      ]]
     
     inline def rollups[TObject, TReduce, TKey](
-      iterable: Iterable[TObject],
+      iterable: js.Iterable[TObject],
       reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
       key: js.Function1[/* value */ TObject, TKey]
     ): js.Array[js.Tuple2[TKey, TReduce]] = (^.asInstanceOf[js.Dynamic].applyDynamic("rollups")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey, TReduce]]]
     inline def rollups[TObject, TReduce, TKey1, TKey2](
-      iterable: Iterable[TObject],
+      iterable: js.Iterable[TObject],
       reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
       key1: js.Function1[/* value */ TObject, TKey1],
       key2: js.Function1[/* value */ TObject, TKey2]
     ): js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, TReduce]]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("rollups")(iterable.asInstanceOf[js.Any], reduce.asInstanceOf[js.Any], key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[TKey1, js.Array[js.Tuple2[TKey2, TReduce]]]]]
     inline def rollups[TObject, TReduce, TKey1, TKey2, TKey3](
-      iterable: Iterable[TObject],
+      iterable: js.Iterable[TObject],
       reduce: js.Function1[/* value */ js.Array[TObject], TReduce],
       key1: js.Function1[/* value */ TObject, TKey1],
       key2: js.Function1[/* value */ TObject, TKey2],
@@ -2805,33 +2956,33 @@ object global {
       ]]
     
     inline def scaleBand[Domain /* <: typings.d3Scale.anon.ToString */](): ScaleBand_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleBand")().asInstanceOf[ScaleBand_[Domain]]
-    inline def scaleBand[Domain /* <: typings.d3Scale.anon.ToString */](domain: Iterable[Domain], range: Iterable[NumberValue]): ScaleBand_[Domain] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleBand")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleBand_[Domain]]
-    inline def scaleBand[Domain /* <: typings.d3Scale.anon.ToString */](range: Iterable[NumberValue]): ScaleBand_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleBand")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleBand_[Domain]]
+    inline def scaleBand[Domain /* <: typings.d3Scale.anon.ToString */](domain: js.Iterable[Domain], range: js.Iterable[NumberValue]): ScaleBand_[Domain] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleBand")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleBand_[Domain]]
+    inline def scaleBand[Domain /* <: typings.d3Scale.anon.ToString */](range: js.Iterable[NumberValue]): ScaleBand_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleBand")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleBand_[Domain]]
     
     inline def scaleDiverging[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
-    inline def scaleDiverging[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
-    inline def scaleDiverging[Output, Unknown](domain: Iterable[NumberValue], interpolator: Iterable[Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+    inline def scaleDiverging[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+    inline def scaleDiverging[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Iterable[Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
     inline def scaleDiverging[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
-    inline def scaleDiverging[Output, Unknown](interpolator: Iterable[Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+    inline def scaleDiverging[Output, Unknown](interpolator: js.Iterable[Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
     
     inline def scaleDivergingLog[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingLog")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
-    inline def scaleDivergingLog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingLog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+    inline def scaleDivergingLog[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingLog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
     inline def scaleDivergingLog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingLog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
     
     inline def scaleDivergingPow[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingPow")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
-    inline def scaleDivergingPow[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingPow")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+    inline def scaleDivergingPow[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingPow")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
     inline def scaleDivergingPow[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingPow")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
     
     inline def scaleDivergingSqrt[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSqrt")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
-    inline def scaleDivergingSqrt[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSqrt")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+    inline def scaleDivergingSqrt[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSqrt")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
     inline def scaleDivergingSqrt[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSqrt")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
     
     inline def scaleDivergingSymlog[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSymlog")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
-    inline def scaleDivergingSymlog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSymlog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+    inline def scaleDivergingSymlog[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSymlog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
     inline def scaleDivergingSymlog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSymlog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
     
     inline def scaleIdentity[Unknown](): ScaleIdentity_[Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleIdentity")().asInstanceOf[ScaleIdentity_[Unknown]]
-    inline def scaleIdentity[Unknown](range: Iterable[NumberValue]): ScaleIdentity_[Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleIdentity")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleIdentity_[Unknown]]
+    inline def scaleIdentity[Unknown](range: js.Iterable[NumberValue]): ScaleIdentity_[Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleIdentity")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleIdentity_[Unknown]]
     
     object scaleImplicit {
       
@@ -2846,85 +2997,85 @@ object global {
     }
     
     inline def scaleLinear[Range, Output, Unknown](): ScaleLinear_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")().asInstanceOf[ScaleLinear_[Range, Output, Unknown]]
-    inline def scaleLinear[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleLinear_[Range, Output, Unknown]]
-    inline def scaleLinear[Range, Output, Unknown](range: Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleLinear_[Range, Output, Unknown]]
+    inline def scaleLinear[Range, Output, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleLinear_[Range, Output, Unknown]]
+    inline def scaleLinear[Range, Output, Unknown](range: js.Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleLinear_[Range, Output, Unknown]]
     
     inline def scaleLog[Range, Output, Unknown](): ScaleLogarithmic[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLog")().asInstanceOf[ScaleLogarithmic[Range, Output, Unknown]]
-    inline def scaleLog[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLog")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleLogarithmic[Range, Output, Unknown]]
-    inline def scaleLog[Range, Output, Unknown](range: Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLog")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleLogarithmic[Range, Output, Unknown]]
+    inline def scaleLog[Range, Output, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLog")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleLogarithmic[Range, Output, Unknown]]
+    inline def scaleLog[Range, Output, Unknown](range: js.Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLog")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleLogarithmic[Range, Output, Unknown]]
     
     inline def scaleOrdinal[Range](): ScaleOrdinal_[String, Range, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")().asInstanceOf[ScaleOrdinal_[String, Range, scala.Nothing]]
-    inline def scaleOrdinal[Range](range: Iterable[Range]): ScaleOrdinal_[String, Range, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleOrdinal_[String, Range, scala.Nothing]]
-    inline def scaleOrdinal[Domain /* <: typings.d3Scale.anon.ToString */, Range, Unknown](domain: Iterable[Domain], range: Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
+    inline def scaleOrdinal[Range](range: js.Iterable[Range]): ScaleOrdinal_[String, Range, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleOrdinal_[String, Range, scala.Nothing]]
+    inline def scaleOrdinal[Domain /* <: typings.d3Scale.anon.ToString */, Range, Unknown](domain: js.Iterable[Domain], range: js.Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
     
     inline def scaleOrdinal_Domain_ToStringRangeUnknown[Domain /* <: typings.d3Scale.anon.ToString */, Range, Unknown](): ScaleOrdinal_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")().asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
-    inline def scaleOrdinal_Domain_ToStringRangeUnknown[Domain /* <: typings.d3Scale.anon.ToString */, Range, Unknown](range: Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
+    inline def scaleOrdinal_Domain_ToStringRangeUnknown[Domain /* <: typings.d3Scale.anon.ToString */, Range, Unknown](range: js.Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
     
     inline def scalePoint[Domain /* <: typings.d3Scale.anon.ToString */](): ScalePoint_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")().asInstanceOf[ScalePoint_[Domain]]
-    inline def scalePoint[Domain /* <: typings.d3Scale.anon.ToString */](domain: Iterable[Domain], range: Iterable[NumberValue]): ScalePoint_[Domain] = (^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePoint_[Domain]]
-    inline def scalePoint[Domain /* <: typings.d3Scale.anon.ToString */](range: Iterable[NumberValue]): ScalePoint_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")(range.asInstanceOf[js.Any]).asInstanceOf[ScalePoint_[Domain]]
+    inline def scalePoint[Domain /* <: typings.d3Scale.anon.ToString */](domain: js.Iterable[Domain], range: js.Iterable[NumberValue]): ScalePoint_[Domain] = (^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePoint_[Domain]]
+    inline def scalePoint[Domain /* <: typings.d3Scale.anon.ToString */](range: js.Iterable[NumberValue]): ScalePoint_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")(range.asInstanceOf[js.Any]).asInstanceOf[ScalePoint_[Domain]]
     
     inline def scalePow[Range, Output, Unknown](): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePow")().asInstanceOf[ScalePower[Range, Output, Unknown]]
-    inline def scalePow[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScalePower[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scalePow")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePower[Range, Output, Unknown]]
-    inline def scalePow[Range, Output, Unknown](range: Iterable[Range]): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePow")(range.asInstanceOf[js.Any]).asInstanceOf[ScalePower[Range, Output, Unknown]]
+    inline def scalePow[Range, Output, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScalePower[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scalePow")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePower[Range, Output, Unknown]]
+    inline def scalePow[Range, Output, Unknown](range: js.Iterable[Range]): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePow")(range.asInstanceOf[js.Any]).asInstanceOf[ScalePower[Range, Output, Unknown]]
     
     inline def scaleQuantile[Range, Unknown](): ScaleQuantile_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantile")().asInstanceOf[ScaleQuantile_[Range, Unknown]]
-    inline def scaleQuantile[Range, Unknown](domain: Iterable[js.UndefOr[NumberValue | Null]], range: Iterable[Range]): ScaleQuantile_[Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantile")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleQuantile_[Range, Unknown]]
-    inline def scaleQuantile[Range, Unknown](range: Iterable[Range]): ScaleQuantile_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantile")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleQuantile_[Range, Unknown]]
+    inline def scaleQuantile[Range, Unknown](domain: js.Iterable[js.UndefOr[NumberValue | Null]], range: js.Iterable[Range]): ScaleQuantile_[Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantile")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleQuantile_[Range, Unknown]]
+    inline def scaleQuantile[Range, Unknown](range: js.Iterable[Range]): ScaleQuantile_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantile")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleQuantile_[Range, Unknown]]
     
     inline def scaleQuantize[Range, Unknown](): ScaleQuantize_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantize")().asInstanceOf[ScaleQuantize_[Range, Unknown]]
-    inline def scaleQuantize[Range, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleQuantize_[Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantize")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleQuantize_[Range, Unknown]]
-    inline def scaleQuantize[Range, Unknown](range: Iterable[Range]): ScaleQuantize_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantize")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleQuantize_[Range, Unknown]]
+    inline def scaleQuantize[Range, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScaleQuantize_[Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantize")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleQuantize_[Range, Unknown]]
+    inline def scaleQuantize[Range, Unknown](range: js.Iterable[Range]): ScaleQuantize_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantize")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleQuantize_[Range, Unknown]]
     
     inline def scaleRadial[Range, Unknown](): ScaleRadial_[Range, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleRadial")().asInstanceOf[ScaleRadial_[Range, Range, Unknown]]
-    inline def scaleRadial[Range, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleRadial")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleRadial_[Range, Range, Unknown]]
-    inline def scaleRadial[Range, Unknown](range: Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleRadial")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleRadial_[Range, Range, Unknown]]
+    inline def scaleRadial[Range, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleRadial")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleRadial_[Range, Range, Unknown]]
+    inline def scaleRadial[Range, Unknown](range: js.Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleRadial")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleRadial_[Range, Range, Unknown]]
     
     inline def scaleSequential[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")().asInstanceOf[ScaleSequential_[Output, Unknown]]
-    inline def scaleSequential[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
-    inline def scaleSequential[Output, Unknown](domain: Iterable[NumberValue], interpolator: Iterable[Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+    inline def scaleSequential[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+    inline def scaleSequential[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Iterable[Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
     inline def scaleSequential[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
-    inline def scaleSequential[Output, Unknown](interpolator: Iterable[Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
+    inline def scaleSequential[Output, Unknown](interpolator: js.Iterable[Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
     
     inline def scaleSequentialLog[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialLog")().asInstanceOf[ScaleSequential_[Output, Unknown]]
-    inline def scaleSequentialLog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialLog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+    inline def scaleSequentialLog[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialLog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
     inline def scaleSequentialLog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialLog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
     
     inline def scaleSequentialPow[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialPow")().asInstanceOf[ScaleSequential_[Output, Unknown]]
-    inline def scaleSequentialPow[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialPow")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+    inline def scaleSequentialPow[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialPow")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
     inline def scaleSequentialPow[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialPow")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
     
     inline def scaleSequentialQuantile[Output, Unknown](): ScaleSequentialQuantile_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialQuantile")().asInstanceOf[ScaleSequentialQuantile_[Output, Unknown]]
-    inline def scaleSequentialQuantile[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequentialQuantile_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialQuantile")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequentialQuantile_[Output, Unknown]]
+    inline def scaleSequentialQuantile[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequentialQuantile_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialQuantile")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequentialQuantile_[Output, Unknown]]
     inline def scaleSequentialQuantile[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequentialQuantile_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialQuantile")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequentialQuantile_[Output, Unknown]]
     
     inline def scaleSequentialSqrt[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSqrt")().asInstanceOf[ScaleSequential_[Output, Unknown]]
-    inline def scaleSequentialSqrt[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSqrt")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+    inline def scaleSequentialSqrt[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSqrt")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
     inline def scaleSequentialSqrt[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSqrt")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
     
     inline def scaleSequentialSymlog[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSymlog")().asInstanceOf[ScaleSequential_[Output, Unknown]]
-    inline def scaleSequentialSymlog[Output, Unknown](domain: Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSymlog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+    inline def scaleSequentialSymlog[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSymlog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
     inline def scaleSequentialSymlog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSymlog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
     
     inline def scaleSqrt[Range, Output, Unknown](): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSqrt")().asInstanceOf[ScalePower[Range, Output, Unknown]]
-    inline def scaleSqrt[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScalePower[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSqrt")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePower[Range, Output, Unknown]]
-    inline def scaleSqrt[Range, Output, Unknown](range: Iterable[Range]): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSqrt")(range.asInstanceOf[js.Any]).asInstanceOf[ScalePower[Range, Output, Unknown]]
+    inline def scaleSqrt[Range, Output, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScalePower[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSqrt")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePower[Range, Output, Unknown]]
+    inline def scaleSqrt[Range, Output, Unknown](range: js.Iterable[Range]): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSqrt")(range.asInstanceOf[js.Any]).asInstanceOf[ScalePower[Range, Output, Unknown]]
     
     inline def scaleSymlog[Range, Output, Unknown](): ScaleSymLog_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSymlog")().asInstanceOf[ScaleSymLog_[Range, Output, Unknown]]
-    inline def scaleSymlog[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSymlog")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleSymLog_[Range, Output, Unknown]]
-    inline def scaleSymlog[Range, Output, Unknown](range: Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSymlog")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleSymLog_[Range, Output, Unknown]]
+    inline def scaleSymlog[Range, Output, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSymlog")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleSymLog_[Range, Output, Unknown]]
+    inline def scaleSymlog[Range, Output, Unknown](range: js.Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSymlog")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleSymLog_[Range, Output, Unknown]]
     
-    inline def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](): ScaleThreshold_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleThreshold")().asInstanceOf[ScaleThreshold_[Domain, Range, Unknown]]
-    inline def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](domain: Iterable[Domain], range: Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleThreshold")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleThreshold_[Domain, Range, Unknown]]
-    inline def scaleThreshold[Domain /* <: Double | String | Date */, Range, Unknown](range: Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleThreshold")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleThreshold_[Domain, Range, Unknown]]
+    inline def scaleThreshold[Domain /* <: Double | String | js.Date */, Range, Unknown](): ScaleThreshold_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleThreshold")().asInstanceOf[ScaleThreshold_[Domain, Range, Unknown]]
+    inline def scaleThreshold[Domain /* <: Double | String | js.Date */, Range, Unknown](domain: js.Iterable[Domain], range: js.Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleThreshold")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleThreshold_[Domain, Range, Unknown]]
+    inline def scaleThreshold[Domain /* <: Double | String | js.Date */, Range, Unknown](range: js.Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleThreshold")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleThreshold_[Domain, Range, Unknown]]
     
     inline def scaleTime[Range, Output, Unknown](): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleTime")().asInstanceOf[ScaleTime_[Range, Output, Unknown]]
-    inline def scaleTime[Range, Output, Unknown](domain: Iterable[Date | NumberValue], range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTime")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
-    inline def scaleTime[Range, Output, Unknown](range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleTime")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+    inline def scaleTime[Range, Output, Unknown](domain: js.Iterable[js.Date | NumberValue], range: js.Iterable[Range]): ScaleTime_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTime")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+    inline def scaleTime[Range, Output, Unknown](range: js.Iterable[Range]): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleTime")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
     
     inline def scaleUtc[Range, Output, Unknown](): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleUtc")().asInstanceOf[ScaleTime_[Range, Output, Unknown]]
-    inline def scaleUtc[Range, Output, Unknown](domain: Iterable[NumberValue], range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleUtc")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
-    inline def scaleUtc[Range, Output, Unknown](range: Iterable[Range]): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleUtc")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+    inline def scaleUtc[Range, Output, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScaleTime_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleUtc")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+    inline def scaleUtc[Range, Output, Unknown](range: js.Iterable[Range]): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleUtc")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
     
     @JSGlobal("d3.schemeAccent")
     @js.native
@@ -3079,15 +3230,13 @@ object global {
     inline def select[OldDatum](node: Document): Selection_[Document, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Document, OldDatum, Null, Unit]]
     inline def select[OldDatum](node: Element): Selection_[Element, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Element, OldDatum, Null, Unit]]
     inline def select[OldDatum](node: Window): Selection_[Window, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Window, OldDatum, Null, Unit]]
-    inline def select[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, js.Any]]
+    inline def select[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, Any]]
     
     inline def selectAll(): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")().asInstanceOf[Selection_[Null, Unit, Null, Unit]]
-    inline def selectAll(selector: Null): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, Unit, Null, Unit]]
-    inline def selectAll(selector: Unit): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, Unit, Null, Unit]]
     inline def selectAll[GElement /* <: BaseType */, OldDatum](nodes: js.Array[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
+    inline def selectAll[GElement /* <: BaseType */, OldDatum](nodes: js.Iterable[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
     inline def selectAll[GElement /* <: BaseType */, OldDatum](nodes: typings.d3Selection.mod.ArrayLike[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
-    inline def selectAll[GElement /* <: BaseType */, OldDatum](nodes: Iterable[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
-    inline def selectAll[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, js.Any]]
+    inline def selectAll[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, Any]]
     
     @JSGlobal("d3.selection")
     @js.native
@@ -3097,42 +3246,42 @@ object global {
     
     inline def selectorAll[DescElement /* <: Element */](selector: String): js.ThisFunction0[/* this */ BaseType, NodeListOf[DescElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectorAll")(selector.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, NodeListOf[DescElement]]]
     
-    inline def shuffle(array: Float32Array): Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Float32Array]
-    inline def shuffle(array: Float32Array, lo: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
-    inline def shuffle(array: Float32Array, lo: Double, hi: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
-    inline def shuffle(array: Float32Array, lo: Unit, hi: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
-    inline def shuffle(array: Float64Array): Float64Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Float64Array]
-    inline def shuffle(array: Float64Array, lo: Double): Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Float64Array]
-    inline def shuffle(array: Float64Array, lo: Double, hi: Double): Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Float64Array]
-    inline def shuffle(array: Float64Array, lo: Unit, hi: Double): Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Float64Array]
-    inline def shuffle(array: Int16Array): Int16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Int16Array]
-    inline def shuffle(array: Int16Array, lo: Double): Int16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Int16Array]
-    inline def shuffle(array: Int16Array, lo: Double, hi: Double): Int16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Int16Array]
-    inline def shuffle(array: Int16Array, lo: Unit, hi: Double): Int16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Int16Array]
-    inline def shuffle(array: Int32Array): Int32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Int32Array]
-    inline def shuffle(array: Int32Array, lo: Double): Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
-    inline def shuffle(array: Int32Array, lo: Double, hi: Double): Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
-    inline def shuffle(array: Int32Array, lo: Unit, hi: Double): Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
-    inline def shuffle(array: Int8Array): Int8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Int8Array]
-    inline def shuffle(array: Int8Array, lo: Double): Int8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Int8Array]
-    inline def shuffle(array: Int8Array, lo: Double, hi: Double): Int8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Int8Array]
-    inline def shuffle(array: Int8Array, lo: Unit, hi: Double): Int8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Int8Array]
-    inline def shuffle(array: Uint16Array): Uint16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Uint16Array]
-    inline def shuffle(array: Uint16Array, lo: Double): Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Uint16Array]
-    inline def shuffle(array: Uint16Array, lo: Double, hi: Double): Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint16Array]
-    inline def shuffle(array: Uint16Array, lo: Unit, hi: Double): Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint16Array]
-    inline def shuffle(array: Uint32Array): Uint32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Uint32Array]
-    inline def shuffle(array: Uint32Array, lo: Double): Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Uint32Array]
-    inline def shuffle(array: Uint32Array, lo: Double, hi: Double): Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint32Array]
-    inline def shuffle(array: Uint32Array, lo: Unit, hi: Double): Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint32Array]
-    inline def shuffle(array: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-    inline def shuffle(array: Uint8Array, lo: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-    inline def shuffle(array: Uint8Array, lo: Double, hi: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-    inline def shuffle(array: Uint8Array, lo: Unit, hi: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-    inline def shuffle(array: Uint8ClampedArray): Uint8ClampedArray = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[Uint8ClampedArray]
-    inline def shuffle(array: Uint8ClampedArray, lo: Double): Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[Uint8ClampedArray]
-    inline def shuffle(array: Uint8ClampedArray, lo: Double, hi: Double): Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint8ClampedArray]
-    inline def shuffle(array: Uint8ClampedArray, lo: Unit, hi: Double): Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Uint8ClampedArray]
+    inline def shuffle(array: js.typedarray.Float32Array): js.typedarray.Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float32Array]
+    inline def shuffle(array: js.typedarray.Float32Array, lo: Double): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
+    inline def shuffle(array: js.typedarray.Float32Array, lo: Double, hi: Double): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
+    inline def shuffle(array: js.typedarray.Float32Array, lo: Unit, hi: Double): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
+    inline def shuffle(array: js.typedarray.Float64Array): js.typedarray.Float64Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float64Array]
+    inline def shuffle(array: js.typedarray.Float64Array, lo: Double): js.typedarray.Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float64Array]
+    inline def shuffle(array: js.typedarray.Float64Array, lo: Double, hi: Double): js.typedarray.Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float64Array]
+    inline def shuffle(array: js.typedarray.Float64Array, lo: Unit, hi: Double): js.typedarray.Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float64Array]
+    inline def shuffle(array: js.typedarray.Int16Array): js.typedarray.Int16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Int16Array]
+    inline def shuffle(array: js.typedarray.Int16Array, lo: Double): js.typedarray.Int16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Int16Array]
+    inline def shuffle(array: js.typedarray.Int16Array, lo: Double, hi: Double): js.typedarray.Int16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Int16Array]
+    inline def shuffle(array: js.typedarray.Int16Array, lo: Unit, hi: Double): js.typedarray.Int16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Int16Array]
+    inline def shuffle(array: js.typedarray.Int32Array): js.typedarray.Int32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Int32Array]
+    inline def shuffle(array: js.typedarray.Int32Array, lo: Double): js.typedarray.Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Int32Array]
+    inline def shuffle(array: js.typedarray.Int32Array, lo: Double, hi: Double): js.typedarray.Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Int32Array]
+    inline def shuffle(array: js.typedarray.Int32Array, lo: Unit, hi: Double): js.typedarray.Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Int32Array]
+    inline def shuffle(array: js.typedarray.Int8Array): js.typedarray.Int8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Int8Array]
+    inline def shuffle(array: js.typedarray.Int8Array, lo: Double): js.typedarray.Int8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Int8Array]
+    inline def shuffle(array: js.typedarray.Int8Array, lo: Double, hi: Double): js.typedarray.Int8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Int8Array]
+    inline def shuffle(array: js.typedarray.Int8Array, lo: Unit, hi: Double): js.typedarray.Int8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Int8Array]
+    inline def shuffle(array: js.typedarray.Uint16Array): js.typedarray.Uint16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint16Array]
+    inline def shuffle(array: js.typedarray.Uint16Array, lo: Double): js.typedarray.Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint16Array]
+    inline def shuffle(array: js.typedarray.Uint16Array, lo: Double, hi: Double): js.typedarray.Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint16Array]
+    inline def shuffle(array: js.typedarray.Uint16Array, lo: Unit, hi: Double): js.typedarray.Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint16Array]
+    inline def shuffle(array: js.typedarray.Uint32Array): js.typedarray.Uint32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint32Array]
+    inline def shuffle(array: js.typedarray.Uint32Array, lo: Double): js.typedarray.Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint32Array]
+    inline def shuffle(array: js.typedarray.Uint32Array, lo: Double, hi: Double): js.typedarray.Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint32Array]
+    inline def shuffle(array: js.typedarray.Uint32Array, lo: Unit, hi: Double): js.typedarray.Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint32Array]
+    inline def shuffle(array: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def shuffle(array: js.typedarray.Uint8Array, lo: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+    inline def shuffle(array: js.typedarray.Uint8Array, lo: Double, hi: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+    inline def shuffle(array: js.typedarray.Uint8Array, lo: Unit, hi: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+    inline def shuffle(array: js.typedarray.Uint8ClampedArray): js.typedarray.Uint8ClampedArray = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8ClampedArray]
+    inline def shuffle(array: js.typedarray.Uint8ClampedArray, lo: Double): js.typedarray.Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8ClampedArray]
+    inline def shuffle(array: js.typedarray.Uint8ClampedArray, lo: Double, hi: Double): js.typedarray.Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8ClampedArray]
+    inline def shuffle(array: js.typedarray.Uint8ClampedArray, lo: Unit, hi: Double): js.typedarray.Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8ClampedArray]
     inline def shuffle[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
     inline def shuffle[T](array: js.Array[T], lo: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     inline def shuffle[T](array: js.Array[T], lo: Double, hi: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any], lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
@@ -3141,40 +3290,41 @@ object global {
     inline def shuffler(random: js.Function0[Double]): FnCall = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffler")(random.asInstanceOf[js.Any]).asInstanceOf[FnCall]
     
     inline def some[T](
-      iterable: Iterable[T],
-      test: js.Function3[/* value */ T, /* index */ Double, /* iterable */ Iterable[T], js.Any]
+      iterable: js.Iterable[T],
+      test: js.Function3[/* value */ T, /* index */ Double, /* iterable */ js.Iterable[T], Any]
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(iterable.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def sort[T](iterable: Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-    inline def sort[T](iterable: Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    inline def sort[T](iterable: js.Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    inline def sort[T](iterable: js.Iterable[T], accessors: (js.Function1[/* a */ T, Any])*): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(List(iterable.asInstanceOf[js.Any]).`++`(accessors.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[T]]
+    inline def sort[T](iterable: js.Iterable[T], comparator: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(iterable.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
-    inline def stack(): Stack_[js.Any, StringDictionary[Double], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[js.Any, StringDictionary[Double], String]]
+    inline def stack(): Stack_[Any, StringDictionary[Double], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[Any, StringDictionary[Double], String]]
     
-    inline def stackOffsetDiverging(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetDiverging")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def stackOffsetDiverging(series: Series[Any, Any], order: js.Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetDiverging")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def stackOffsetExpand(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetExpand")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def stackOffsetExpand(series: Series[Any, Any], order: js.Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetExpand")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def stackOffsetNone(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetNone")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def stackOffsetNone(series: Series[Any, Any], order: js.Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetNone")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def stackOffsetSilhouette(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetSilhouette")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def stackOffsetSilhouette(series: Series[Any, Any], order: js.Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetSilhouette")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def stackOffsetWiggle(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetWiggle")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def stackOffsetWiggle(series: Series[Any, Any], order: js.Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetWiggle")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def stackOrderAppearance(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderAppearance")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def stackOrderAppearance(series: Series[Any, Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderAppearance")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
-    inline def stackOrderAscending(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderAscending")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def stackOrderAscending(series: Series[Any, Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderAscending")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
-    inline def stackOrderDescending(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderDescending")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def stackOrderDescending(series: Series[Any, Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderDescending")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
-    inline def stackOrderInsideOut(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderInsideOut")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def stackOrderInsideOut(series: Series[Any, Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderInsideOut")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
-    inline def stackOrderNone(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderNone")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def stackOrderNone(series: Series[Any, Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderNone")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
-    inline def stackOrderReverse(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderReverse")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def stackOrderReverse(series: Series[Any, Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderReverse")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
-    inline def stack_Datum[Datum](): Stack_[js.Any, Datum, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[js.Any, Datum, String]]
+    inline def stack_Datum[Datum](): Stack_[Any, Datum, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[Any, Datum, String]]
     
-    inline def stack_DatumKey[Datum, Key](): Stack_[js.Any, Datum, Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[js.Any, Datum, Key]]
+    inline def stack_DatumKey[Datum, Key](): Stack_[Any, Datum, Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[Any, Datum, Key]]
     
     inline def stack_ThisDatumKey[This, Datum, Key](): Stack_[This, Datum, Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[This, Datum, Key]]
     
@@ -3182,40 +3332,46 @@ object global {
     
     inline def style(node: Element, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def subset[T](a: Iterable[T], b: Iterable[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subset")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def subset[T](a: js.Iterable[T], b: js.Iterable[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subset")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def sum[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(iterable.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def sum(iterable: js.Iterable[js.UndefOr[Numeric | Null]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(iterable.asInstanceOf[js.Any]).asInstanceOf[Double]
     inline def sum[T](
-      iterable: Iterable[T],
-      accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
+      iterable: js.Iterable[T],
+      accessor: js.Function3[
+          /* datum */ T, 
+          /* index */ Double, 
+          /* array */ js.Iterable[T], 
+          js.UndefOr[Double | Null]
+        ]
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def superset[T](a: Iterable[T], b: Iterable[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("superset")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def superset[T](a: js.Iterable[T], b: js.Iterable[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("superset")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def svg(url: String): js.Promise[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("svg")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Document]]
     inline def svg(url: String, init: RequestInit): js.Promise[Document] = (^.asInstanceOf[js.Dynamic].applyDynamic("svg")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Document]]
     
-    inline def symbol[Datum](): Symbol_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")().asInstanceOf[Symbol_[js.Any, Datum]]
-    inline def symbol[Datum](`type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType]): Symbol_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[js.Any, Datum]]
+    inline def symbol[Datum](): Symbol_[Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")().asInstanceOf[Symbol_[Any, Datum]]
+    inline def symbol[Datum](`type`: js.ThisFunction2[/* this */ Any, /* d */ Datum, /* repeated */ Any, SymbolType]): Symbol_[Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[Any, Datum]]
     inline def symbol[Datum](
-      `type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType],
-      size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
-    ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
+      `type`: js.ThisFunction2[/* this */ Any, /* d */ Datum, /* repeated */ Any, SymbolType],
+      size: js.ThisFunction2[/* this */ Any, /* d */ Datum, /* repeated */ Any, Double]
+    ): Symbol_[Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[Any, Datum]]
     inline def symbol[Datum](
-      `type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType],
+      `type`: js.ThisFunction2[/* this */ Any, /* d */ Datum, /* repeated */ Any, SymbolType],
       size: Double
-    ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
-    inline def symbol[Datum](
-      `type`: Unit,
-      size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
-    ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
-    inline def symbol[Datum](`type`: Unit, size: Double): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
-    inline def symbol[Datum](`type`: SymbolType): Symbol_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[js.Any, Datum]]
+    ): Symbol_[Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[Any, Datum]]
+    inline def symbol[Datum](`type`: Unit, size: js.ThisFunction2[/* this */ Any, /* d */ Datum, /* repeated */ Any, Double]): Symbol_[Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[Any, Datum]]
+    inline def symbol[Datum](`type`: Unit, size: Double): Symbol_[Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[Any, Datum]]
+    inline def symbol[Datum](`type`: SymbolType): Symbol_[Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[Any, Datum]]
     inline def symbol[Datum](
       `type`: SymbolType,
-      size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
-    ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
-    inline def symbol[Datum](`type`: SymbolType, size: Double): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
+      size: js.ThisFunction2[/* this */ Any, /* d */ Datum, /* repeated */ Any, Double]
+    ): Symbol_[Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[Any, Datum]]
+    inline def symbol[Datum](`type`: SymbolType, size: Double): Symbol_[Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[Any, Datum]]
+    
+    @JSGlobal("d3.symbolAsterisk")
+    @js.native
+    val symbolAsterisk: SymbolType = js.native
     
     @JSGlobal("d3.symbolCircle")
     @js.native
@@ -3229,9 +3385,21 @@ object global {
     @js.native
     val symbolDiamond: SymbolType = js.native
     
+    @JSGlobal("d3.symbolDiamond2")
+    @js.native
+    val symbolDiamond2: SymbolType = js.native
+    
+    @JSGlobal("d3.symbolPlus")
+    @js.native
+    val symbolPlus: SymbolType = js.native
+    
     @JSGlobal("d3.symbolSquare")
     @js.native
     val symbolSquare: SymbolType = js.native
+    
+    @JSGlobal("d3.symbolSquare2")
+    @js.native
+    val symbolSquare2: SymbolType = js.native
     
     @JSGlobal("d3.symbolStar")
     @js.native
@@ -3241,35 +3409,48 @@ object global {
     @js.native
     val symbolTriangle: SymbolType = js.native
     
+    @JSGlobal("d3.symbolTriangle2")
+    @js.native
+    val symbolTriangle2: SymbolType = js.native
+    
     @JSGlobal("d3.symbolWye")
     @js.native
     val symbolWye: SymbolType = js.native
     
+    @JSGlobal("d3.symbolX")
+    @js.native
+    val symbolX: SymbolType = js.native
+    
     inline def symbol_ThisDatum[This, Datum](): Symbol_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")().asInstanceOf[Symbol_[This, Datum]]
-    inline def symbol_ThisDatum[This, Datum](`type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType]): Symbol_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[This, Datum]]
+    inline def symbol_ThisDatum[This, Datum](`type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, SymbolType]): Symbol_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[This, Datum]]
     inline def symbol_ThisDatum[This, Datum](
-      `type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType],
-      size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
+      `type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, SymbolType],
+      size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]
     ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
     inline def symbol_ThisDatum[This, Datum](
-      `type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType],
+      `type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, SymbolType],
       size: Double
     ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
-    inline def symbol_ThisDatum[This, Datum](
-      `type`: Unit,
-      size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
-    ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
+    inline def symbol_ThisDatum[This, Datum](`type`: Unit, size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
     inline def symbol_ThisDatum[This, Datum](`type`: Unit, size: Double): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
     inline def symbol_ThisDatum[This, Datum](`type`: SymbolType): Symbol_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[This, Datum]]
     inline def symbol_ThisDatum[This, Datum](
       `type`: SymbolType,
-      size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
+      size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]
     ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
     inline def symbol_ThisDatum[This, Datum](`type`: SymbolType, size: Double): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
     
     @JSGlobal("d3.symbols")
     @js.native
     val symbols: js.Array[SymbolType] = js.native
+    
+    @JSGlobal("d3.symbolsFill")
+    @js.native
+    val symbolsFill: js.Array[SymbolType] = js.native
+    
+    @JSGlobal("d3.symbolsStroke")
+    @js.native
+    val symbolsStroke: js.Array[SymbolType] = js.native
     
     inline def text(url: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
     inline def text(url: String, init: RequestInit): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
@@ -3293,10 +3474,10 @@ object global {
     @js.native
     val timeDay: CountableTimeInterval = js.native
     
-    inline def timeDays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def timeDays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def timeDays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def timeDays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
-    inline def timeFormat(specifier: String): js.Function1[/* date */ Date, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormat")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* date */ Date, String]]
+    inline def timeFormat(specifier: String): js.Function1[/* date */ js.Date, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormat")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* date */ js.Date, String]]
     
     inline def timeFormatDefaultLocale(definition: TimeLocaleDefinition): TimeLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatDefaultLocale")(definition.asInstanceOf[js.Any]).asInstanceOf[TimeLocaleObject]
     
@@ -3306,117 +3487,121 @@ object global {
     @js.native
     val timeFriday: CountableTimeInterval = js.native
     
-    inline def timeFridays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def timeFridays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def timeFridays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def timeFridays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.timeHour")
     @js.native
     val timeHour: CountableTimeInterval = js.native
     
-    inline def timeHours(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def timeHours(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def timeHours(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def timeHours(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     inline def timeInterval(
-      floor: js.Function1[/* date */ Date, Unit],
-      offset: js.Function2[/* date */ Date, /* step */ Double, Unit]
+      floor: js.Function1[/* date */ js.Date, Unit],
+      offset: js.Function2[/* date */ js.Date, /* step */ Double, Unit]
     ): TimeInterval_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timeInterval")(floor.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[TimeInterval_]
     inline def timeInterval(
-      floor: js.Function1[/* date */ Date, Unit],
-      offset: js.Function2[/* date */ Date, /* step */ Double, Unit],
-      count: js.Function2[/* start */ Date, /* end */ Date, Double]
+      floor: js.Function1[/* date */ js.Date, Unit],
+      offset: js.Function2[/* date */ js.Date, /* step */ Double, Unit],
+      count: js.Function2[/* start */ js.Date, /* end */ js.Date, Double]
     ): CountableTimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("timeInterval")(floor.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[CountableTimeInterval]
     inline def timeInterval(
-      floor: js.Function1[/* date */ Date, Unit],
-      offset: js.Function2[/* date */ Date, /* step */ Double, Unit],
-      count: js.Function2[/* start */ Date, /* end */ Date, Double],
-      field: js.Function1[/* date */ Date, Double]
+      floor: js.Function1[/* date */ js.Date, Unit],
+      offset: js.Function2[/* date */ js.Date, /* step */ Double, Unit],
+      count: js.Function2[/* start */ js.Date, /* end */ js.Date, Double],
+      field: js.Function1[/* date */ js.Date, Double]
     ): CountableTimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("timeInterval")(floor.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], count.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[CountableTimeInterval]
     
     @JSGlobal("d3.timeMillisecond")
     @js.native
     val timeMillisecond: CountableTimeInterval = js.native
     
-    inline def timeMilliseconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def timeMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def timeMilliseconds(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def timeMilliseconds(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.timeMinute")
     @js.native
     val timeMinute: CountableTimeInterval = js.native
     
-    inline def timeMinutes(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def timeMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def timeMinutes(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def timeMinutes(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.timeMonday")
     @js.native
     val timeMonday: CountableTimeInterval = js.native
     
-    inline def timeMondays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def timeMondays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def timeMondays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def timeMondays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.timeMonth")
     @js.native
     val timeMonth: CountableTimeInterval = js.native
     
-    inline def timeMonths(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def timeMonths(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def timeMonths(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def timeMonths(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
-    inline def timeParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeParse")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dateString */ String, Date | Null]]
+    inline def timeParse(specifier: String): js.Function1[/* dateString */ String, js.Date | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeParse")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dateString */ String, js.Date | Null]]
     
     @JSGlobal("d3.timeSaturday")
     @js.native
     val timeSaturday: CountableTimeInterval = js.native
     
-    inline def timeSaturdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def timeSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def timeSaturdays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def timeSaturdays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.timeSecond")
     @js.native
     val timeSecond: CountableTimeInterval = js.native
     
-    inline def timeSeconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def timeSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def timeSeconds(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def timeSeconds(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.timeSunday")
     @js.native
     val timeSunday: CountableTimeInterval = js.native
     
-    inline def timeSundays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def timeSundays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def timeSundays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def timeSundays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.timeThursday")
     @js.native
     val timeThursday: CountableTimeInterval = js.native
     
-    inline def timeThursdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def timeThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def timeThursdays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def timeThursdays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    
+    inline def timeTickInterval(start: js.Date, stop: js.Date, count: Double): TimeInterval_ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("timeTickInterval")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[TimeInterval_ | Null]
+    
+    inline def timeTicks(start: js.Date, stop: js.Date, count: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeTicks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.timeTuesday")
     @js.native
     val timeTuesday: CountableTimeInterval = js.native
     
-    inline def timeTuesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def timeTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def timeTuesdays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def timeTuesdays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.timeWednesday")
     @js.native
     val timeWednesday: CountableTimeInterval = js.native
     
-    inline def timeWednesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def timeWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def timeWednesdays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def timeWednesdays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.timeWeek")
     @js.native
     val timeWeek: CountableTimeInterval = js.native
     
-    inline def timeWeeks(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def timeWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def timeWeeks(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def timeWeeks(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.timeYear")
     @js.native
     val timeYear: CountableTimeInterval = js.native
     
-    inline def timeYears(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def timeYears(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def timeYears(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def timeYears(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("timeYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     inline def timeout(callback: js.Function1[/* elapsed */ Double, Unit]): Timer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(callback.asInstanceOf[js.Any]).asInstanceOf[Timer_]
     inline def timeout(callback: js.Function1[/* elapsed */ Double, Unit], delay: Double): Timer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Timer_]
@@ -3430,9 +3615,9 @@ object global {
     
     inline def timerFlush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("timerFlush")().asInstanceOf[Unit]
     
-    inline def transition[OldDatum](): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")().asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
-    inline def transition[OldDatum](name: String): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(name.asInstanceOf[js.Any]).asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
-    inline def transition[OldDatum](transition: Transition_[BaseType, js.Any, BaseType, js.Any]): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(transition.asInstanceOf[js.Any]).asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
+    inline def transition[OldDatum](): Transition_[BaseType, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")().asInstanceOf[Transition_[BaseType, OldDatum, Null, Unit]]
+    inline def transition[OldDatum](name: String): Transition_[BaseType, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(name.asInstanceOf[js.Any]).asInstanceOf[Transition_[BaseType, OldDatum, Null, Unit]]
+    inline def transition[OldDatum](transition: Transition_[BaseType, Any, BaseType, Any]): Transition_[BaseType, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(transition.asInstanceOf[js.Any]).asInstanceOf[Transition_[BaseType, OldDatum, Null, Unit]]
     
     inline def transpose[T](matrix: ArrayLike[ArrayLike[T]]): js.Array[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(matrix.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[T]]]
     
@@ -3440,17 +3625,17 @@ object global {
     
     inline def treemap[Datum](): TreemapLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("treemap")().asInstanceOf[TreemapLayout[Datum]]
     
-    inline def treemapBinary(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapBinary")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def treemapBinary(node: HierarchyRectangularNode[Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapBinary")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def treemapDice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def treemapDice(node: HierarchyRectangularNode[Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("d3.treemapResquarify")
     @js.native
     val treemapResquarify: RatioSquarifyTilingFactory = js.native
     
-    inline def treemapSlice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSlice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def treemapSlice(node: HierarchyRectangularNode[Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSlice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def treemapSliceDice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSliceDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def treemapSliceDice(node: HierarchyRectangularNode[Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSliceDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("d3.treemapSquarify")
     @js.native
@@ -3507,121 +3692,130 @@ object global {
       row: js.Function2[/* rawRow */ js.Array[String], /* index */ Double, js.UndefOr[ParsedRow | Null]]
     ): js.Array[ParsedRow] = (^.asInstanceOf[js.Dynamic].applyDynamic("tsvParseRows")(tsvString.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParsedRow]]
     
-    inline def union[T](iterables: Iterable[T]*): Set[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(iterables.asInstanceOf[js.Any]).asInstanceOf[Set[T]]
+    inline def union[T](iterables: js.Iterable[T]*): typings.d3Array.mod.InternSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(iterables.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.d3Array.mod.InternSet[T]]
     
     @JSGlobal("d3.utcDay")
     @js.native
     val utcDay: CountableTimeInterval = js.native
     
-    inline def utcDays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def utcDays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def utcDays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def utcDays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcDays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
-    inline def utcFormat(specifier: String): js.Function1[/* date */ Date, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("utcFormat")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* date */ Date, String]]
+    inline def utcFormat(specifier: String): js.Function1[/* date */ js.Date, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("utcFormat")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* date */ js.Date, String]]
     
     @JSGlobal("d3.utcFriday")
     @js.native
     val utcFriday: CountableTimeInterval = js.native
     
-    inline def utcFridays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def utcFridays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def utcFridays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def utcFridays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcFridays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.utcHour")
     @js.native
     val utcHour: CountableTimeInterval = js.native
     
-    inline def utcHours(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def utcHours(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def utcHours(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def utcHours(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcHours")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.utcMillisecond")
     @js.native
     val utcMillisecond: CountableTimeInterval = js.native
     
-    inline def utcMilliseconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def utcMilliseconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def utcMilliseconds(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def utcMilliseconds(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMilliseconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.utcMinute")
     @js.native
     val utcMinute: CountableTimeInterval = js.native
     
-    inline def utcMinutes(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def utcMinutes(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def utcMinutes(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def utcMinutes(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMinutes")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.utcMonday")
     @js.native
     val utcMonday: CountableTimeInterval = js.native
     
-    inline def utcMondays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def utcMondays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def utcMondays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def utcMondays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMondays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.utcMonth")
     @js.native
     val utcMonth: CountableTimeInterval = js.native
     
-    inline def utcMonths(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def utcMonths(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def utcMonths(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def utcMonths(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcMonths")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
-    inline def utcParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("utcParse")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dateString */ String, Date | Null]]
+    inline def utcParse(specifier: String): js.Function1[/* dateString */ String, js.Date | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("utcParse")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dateString */ String, js.Date | Null]]
     
     @JSGlobal("d3.utcSaturday")
     @js.native
     val utcSaturday: CountableTimeInterval = js.native
     
-    inline def utcSaturdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def utcSaturdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def utcSaturdays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def utcSaturdays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSaturdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.utcSecond")
     @js.native
     val utcSecond: CountableTimeInterval = js.native
     
-    inline def utcSeconds(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def utcSeconds(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def utcSeconds(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def utcSeconds(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSeconds")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.utcSunday")
     @js.native
     val utcSunday: CountableTimeInterval = js.native
     
-    inline def utcSundays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def utcSundays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def utcSundays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def utcSundays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcSundays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.utcThursday")
     @js.native
     val utcThursday: CountableTimeInterval = js.native
     
-    inline def utcThursdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def utcThursdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def utcThursdays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def utcThursdays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcThursdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    
+    inline def utcTickInterval(start: js.Date, stop: js.Date, count: Double): TimeInterval_ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("utcTickInterval")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[TimeInterval_ | Null]
+    
+    inline def utcTicks(start: js.Date, stop: js.Date, count: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcTicks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.utcTuesday")
     @js.native
     val utcTuesday: CountableTimeInterval = js.native
     
-    inline def utcTuesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def utcTuesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def utcTuesdays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def utcTuesdays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcTuesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.utcWednesday")
     @js.native
     val utcWednesday: CountableTimeInterval = js.native
     
-    inline def utcWednesdays(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def utcWednesdays(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def utcWednesdays(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def utcWednesdays(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWednesdays")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.utcWeek")
     @js.native
     val utcWeek: CountableTimeInterval = js.native
     
-    inline def utcWeeks(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def utcWeeks(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def utcWeeks(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def utcWeeks(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcWeeks")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
     @JSGlobal("d3.utcYear")
     @js.native
     val utcYear: CountableTimeInterval = js.native
     
-    inline def utcYears(start: Date, stop: Date): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
-    inline def utcYears(start: Date, stop: Date, step: Double): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def utcYears(start: js.Date, stop: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
+    inline def utcYears(start: js.Date, stop: js.Date, step: Double): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("utcYears")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
     
-    inline def variance[T /* <: Numeric */](iterable: Iterable[js.UndefOr[T | Null]]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("variance")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+    inline def variance(iterable: js.Iterable[js.UndefOr[Numeric | Null]]): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("variance")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
     inline def variance[T](
-      iterable: Iterable[T],
-      accessor: js.Function3[/* datum */ T, /* index */ Double, /* array */ Iterable[T], js.UndefOr[Double | Null]]
+      iterable: js.Iterable[T],
+      accessor: js.Function3[
+          /* datum */ T, 
+          /* index */ Double, 
+          /* array */ js.Iterable[T], 
+          js.UndefOr[Double | Null]
+        ]
     ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("variance")(iterable.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
     
     @JSGlobal("d3.version")
@@ -3635,15 +3829,15 @@ object global {
     inline def xml(url: String): js.Promise[XMLDocument] = ^.asInstanceOf[js.Dynamic].applyDynamic("xml")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[XMLDocument]]
     inline def xml(url: String, init: RequestInit): js.Promise[XMLDocument] = (^.asInstanceOf[js.Dynamic].applyDynamic("xml")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[XMLDocument]]
     
-    inline def zip[T](arrays: ArrayLike[T]*): js.Array[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(arrays.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[T]]]
+    inline def zip[T](arrays: ArrayLike[T]*): js.Array[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(arrays.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[js.Array[T]]]
     
     inline def zoom[ZoomRefElement /* <: ZoomedElementBaseType */, Datum](): ZoomBehavior[ZoomRefElement, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("zoom")().asInstanceOf[ZoomBehavior[ZoomRefElement, Datum]]
     
     @JSGlobal("d3.zoomIdentity")
     @js.native
-    val zoomIdentity: ZoomTransform_ = js.native
+    val zoomIdentity: typings.d3Zoom.mod.ZoomTransform_ = js.native
     
-    inline def zoomTransform(node: ZoomedElementBaseType): ZoomTransform_ = ^.asInstanceOf[js.Dynamic].applyDynamic("zoomTransform")(node.asInstanceOf[js.Any]).asInstanceOf[ZoomTransform_]
+    inline def zoomTransform(node: ZoomedElementBaseType): typings.d3Zoom.mod.ZoomTransform_ = ^.asInstanceOf[js.Dynamic].applyDynamic("zoomTransform")(node.asInstanceOf[js.Any]).asInstanceOf[typings.d3Zoom.mod.ZoomTransform_]
     
     /**
       * Extend interface 'Selection' by declaration merging with 'd3-selection'
@@ -3697,7 +3891,7 @@ object global {
           *
           * @param transition A transition instance.
           */
-        def transition(transition: Transition_[BaseType, js.Any, js.Any, js.Any]): Transition_[GElement, Datum, PElement, PDatum] = js.native
+        def transition(transition: Transition_[BaseType, Any, Any, Any]): Transition_[GElement, Datum, PElement, PDatum] = js.native
       }
     }
   }

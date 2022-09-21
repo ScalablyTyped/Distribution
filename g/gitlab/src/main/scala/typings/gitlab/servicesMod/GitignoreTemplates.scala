@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitlab/dist/types/core/services", "GitignoreTemplates")
 @js.native
-class GitignoreTemplates protected ()
+open class GitignoreTemplates protected ()
   extends typings.gitlab.gitignoreTemplatesMod.GitignoreTemplates {
   def this(options: BaseServiceOptions) = this()
 }

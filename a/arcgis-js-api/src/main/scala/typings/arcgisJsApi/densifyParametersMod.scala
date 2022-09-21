@@ -10,14 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object densifyParametersMod extends Shortcut {
   
-  @JSImport("esri/tasks/support/DensifyParameters", JSImport.Namespace)
+  @JSImport("esri/rest/support/DensifyParameters", JSImport.Namespace)
   @js.native
   val ^ : js.Object & DensifyParametersConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("esri/tasks/support/DensifyParameters", JSImport.Namespace)
+  @JSImport("esri/rest/support/DensifyParameters", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Input parameters for the densify() method on the GeometryService.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html)
+    */
+  open class Class ()
     extends StObject
        with DensifyParameters {
     def this(properties: DensifyParametersProperties) = this()

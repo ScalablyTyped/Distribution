@@ -10,6 +10,15 @@ trait WindowsMotionController
   extends StObject
      with WebVRController {
   
+  /* private */ var _createMeshInfo: Any = js.native
+  
+  /**
+    * Called once for each button that changed state since the last frame
+    * @param buttonIdx Which button index changed
+    * @param state New state of the button
+    */
+  /* protected */ def _handleButtonChange(buttonIdx: Double, state: ExtendedGamepadButton): Unit = js.native
+  
   /**
     * Moves the axis on the controller mesh based on its current state
     * @param axis the index of the axis
@@ -25,13 +34,21 @@ trait WindowsMotionController
     */
   /* protected */ def _lerpButtonTransform(buttonName: String, buttonValue: Double): Unit = js.native
   
-  /* private */ var _loadedMeshInfo: js.Any = js.native
+  /* private */ var _loadedMeshInfo: Any = js.native
   
   /* protected */ val _mapping: AxisMeshNames = js.native
   
-  /* protected */ def _updateTrackpad(): Unit = js.native
+  /**
+    * Takes a list of meshes (as loaded from the glTF file) and finds the root node, as well as nodes that
+    * can be transformed by button presses and axes values, based on this._mapping.
+    *
+    * @param scene scene in which the meshes exist
+    * @param meshes list of meshes that make up the controller model to process
+    * @returns structured view of the given meshes, with mapping of buttons and axes to meshes that can be transformed.
+    */
+  /* private */ var _processModel: Any = js.native
   
-  /* private */ var createMeshInfo: js.Any = js.native
+  /* protected */ def _updateTrackpad(): Unit = js.native
   
   def initControllerMesh(scene: Scene, meshLoaded: js.Function1[/* mesh */ AbstractMesh, Unit], forceDefault: Boolean): Unit = js.native
   def initControllerMesh(scene: Scene, meshLoaded: Unit, forceDefault: Boolean): Unit = js.native
@@ -75,16 +92,6 @@ trait WindowsMotionController
     * Fired when the trigger on this controller is modified
     */
   def onTriggerButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
-  
-  /**
-    * Takes a list of meshes (as loaded from the glTF file) and finds the root node, as well as nodes that
-    * can be transformed by button presses and axes values, based on this._mapping.
-    *
-    * @param scene scene in which the meshes exist
-    * @param meshes list of meshes that make up the controller model to process
-    * @return structured view of the given meshes, with mapping of buttons and axes to meshes that can be transformed.
-    */
-  /* private */ var processModel: js.Any = js.native
   
   /**
     * The current x and y values of this controller's trackpad

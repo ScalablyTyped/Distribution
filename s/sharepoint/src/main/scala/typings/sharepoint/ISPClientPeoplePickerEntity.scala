@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ISPClientPeoplePickerEntity
   extends StObject
-     with /* name */ StringDictionary[js.Any] {
+     with /* name */ StringDictionary[Any] {
   
   var Description: js.UndefOr[String] = js.undefined
   
@@ -69,7 +69,7 @@ object ISPClientPeoplePickerEntity {
     
     inline def setMultipleMatches(value: js.Array[ISPClientPeoplePickerEntity]): Self = StObject.set(x, "MultipleMatches", value.asInstanceOf[js.Any])
     
-    inline def setMultipleMatchesVarargs(value: ISPClientPeoplePickerEntity*): Self = StObject.set(x, "MultipleMatches", js.Array(value :_*))
+    inline def setMultipleMatchesVarargs(value: ISPClientPeoplePickerEntity*): Self = StObject.set(x, "MultipleMatches", js.Array(value*))
     
     inline def setProviderDisplayName(value: String): Self = StObject.set(x, "ProviderDisplayName", value.asInstanceOf[js.Any])
     

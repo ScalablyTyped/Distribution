@@ -69,6 +69,6 @@ object AwsIamInstanceProfile {
     
     inline def setRolesUndefined: Self = StObject.set(x, "Roles", js.undefined)
     
-    inline def setRolesVarargs(value: AwsIamInstanceProfileRole*): Self = StObject.set(x, "Roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: AwsIamInstanceProfileRole*): Self = StObject.set(x, "Roles", js.Array(value*))
   }
 }

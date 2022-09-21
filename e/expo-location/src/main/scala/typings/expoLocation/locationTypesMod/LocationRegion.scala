@@ -6,17 +6,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LocationRegion extends StObject {
   
+  /**
+    * The identifier of the region object. Defaults to auto-generated UUID hash.
+    */
   var identifier: js.UndefOr[String] = js.undefined
   
+  /**
+    * The latitude in degrees of region's center point.
+    */
   var latitude: Double
   
+  /**
+    * The longitude in degrees of region's center point.
+    */
   var longitude: Double
   
+  /**
+    * Boolean value whether to call the task if the device enters the region.
+    * @default true
+    */
   var notifyOnEnter: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Boolean value whether to call the task if the device exits the region.
+    * @default true
+    */
   var notifyOnExit: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * The radius measured in meters that defines the region's outer boundary.
+    */
   var radius: Double
+  
+  /**
+    * One of [GeofencingRegionState](#geofencingregionstate) region state. Determines whether the
+    * device is inside or outside a region.
+    */
+  var state: js.UndefOr[LocationGeofencingRegionState] = js.undefined
 }
 object LocationRegion {
   
@@ -44,5 +70,9 @@ object LocationRegion {
     inline def setNotifyOnExitUndefined: Self = StObject.set(x, "notifyOnExit", js.undefined)
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setState(value: LocationGeofencingRegionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

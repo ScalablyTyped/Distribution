@@ -5,18 +5,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A map value.
-  */
 trait SchemaMapValue extends StObject {
   
   /**
-    * The map&#39;s fields.  The map keys represent field names. Field names
-    * matching the regular expression `__.*__` are reserved. Reserved field
-    * names are forbidden except in certain documented contexts. The map keys,
-    * represented as UTF-8, must not exceed 1,500 bytes and cannot be empty.
+    * The map's fields. The map keys represent field names. Field names matching the regular expression `__.*__` are reserved. Reserved field names are forbidden except in certain documented contexts. The map keys, represented as UTF-8, must not exceed 1,500 bytes and cannot be empty.
     */
-  var fields: js.UndefOr[StringDictionary[SchemaValue]] = js.undefined
+  var fields: js.UndefOr[StringDictionary[SchemaValue] | Null] = js.undefined
 }
 object SchemaMapValue {
   
@@ -28,6 +22,8 @@ object SchemaMapValue {
   extension [Self <: SchemaMapValue](x: Self) {
     
     inline def setFields(value: StringDictionary[SchemaValue]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsNull: Self = StObject.set(x, "fields", null)
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
   }

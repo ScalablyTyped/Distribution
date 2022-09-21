@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.DEEP_LINK
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.OPEN_APP
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.URL
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object typesDefaultPushNotificationMessageMod {
     /**
       * The data payload used for a silent push. This payload is added to the notifications' data.pinpoint.jsonBody' object
       */
-    var Data: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var Data: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * Indicates if the message should display on the recipient's device. You can use silent pushes for remote configuration or to deliver messages to in-app notification centers.
@@ -37,7 +36,7 @@ object typesDefaultPushNotificationMessageMod {
       * Default message substitutions. Can be overridden by individual address substitutions.
       */
     var Substitutions: js.UndefOr[
-        (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
+        (StringDictionary[js.Array[String] | js.Iterable[String]]) | (js.Iterable[js.Tuple2[String, js.Array[String] | js.Iterable[String]]])
       ] = js.undefined
     
     /**
@@ -67,7 +66,7 @@ object typesDefaultPushNotificationMessageMod {
       
       inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
       
-      inline def setData(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
       
@@ -76,7 +75,7 @@ object typesDefaultPushNotificationMessageMod {
       inline def setSilentPushUndefined: Self = StObject.set(x, "SilentPush", js.undefined)
       
       inline def setSubstitutions(
-        value: (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
+        value: (StringDictionary[js.Array[String] | js.Iterable[String]]) | (js.Iterable[js.Tuple2[String, js.Array[String] | js.Iterable[String]]])
       ): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
       
       inline def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)

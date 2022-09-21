@@ -10,10 +10,10 @@ object borderClearMod {
   
   @JSImport("material-ui/svg-icons/editor/border-clear", JSImport.Default)
   @js.native
-  class default () extends EditorBorderClear
+  open class default () extends EditorBorderClear
   
   @JSImport("material-ui/svg-icons/editor/border-clear", "EditorBorderClear")
   @js.native
-  class EditorBorderClear ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorBorderClear ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -19,7 +19,7 @@ trait ListOperationsRequest extends StObject {
   /**
     * An optional parameter that lets you get information about all the operations that you submitted after a specified date and time. Specify the date and time in Unix time format and Coordinated Universal time (UTC).
     */
-  var SubmittedSince: js.UndefOr[Timestamp] = js.undefined
+  var SubmittedSince: js.UndefOr[js.Date] = js.undefined
 }
 object ListOperationsRequest {
   
@@ -38,7 +38,7 @@ object ListOperationsRequest {
     
     inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    inline def setSubmittedSince(value: Timestamp): Self = StObject.set(x, "SubmittedSince", value.asInstanceOf[js.Any])
+    inline def setSubmittedSince(value: js.Date): Self = StObject.set(x, "SubmittedSince", value.asInstanceOf[js.Any])
     
     inline def setSubmittedSinceUndefined: Self = StObject.set(x, "SubmittedSince", js.undefined)
   }

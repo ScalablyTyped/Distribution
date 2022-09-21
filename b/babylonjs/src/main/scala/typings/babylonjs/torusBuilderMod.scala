@@ -1,37 +1,52 @@
 package typings.babylonjs
 
+import typings.babylonjs.anon.FrontUVs
 import typings.babylonjs.anon.Thickness
 import typings.babylonjs.meshMod.Mesh
+import typings.babylonjs.meshVertexDataMod.VertexData
+import typings.babylonjs.sceneMod.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object torusBuilderMod {
   
-  @JSImport("babylonjs/Meshes/Builders/torusBuilder", "TorusBuilder")
+  @JSImport("babylonjs/Meshes/Builders/torusBuilder", JSImport.Namespace)
   @js.native
-  class TorusBuilder () extends StObject
-  /* static members */
+  val ^ : js.Any = js.native
+  
+  inline def CreateTorus(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+  inline def CreateTorus(name: String, options: Unit, scene: Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  inline def CreateTorus(name: String, options: Thickness): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  inline def CreateTorus(name: String, options: Thickness, scene: Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+  
+  inline def CreateTorusVertexData(options: FrontUVs): VertexData = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorusVertexData")(options.asInstanceOf[js.Any]).asInstanceOf[VertexData]
+  
   object TorusBuilder {
     
     @JSImport("babylonjs/Meshes/Builders/torusBuilder", "TorusBuilder")
     @js.native
     val ^ : js.Any = js.native
     
-    /**
-      * Creates a torus mesh
-      * * The parameter `diameter` sets the diameter size (float) of the torus (default 1)
-      * * The parameter `thickness` sets the diameter size of the tube of the torus (float, default 0.5)
-      * * The parameter `tessellation` sets the number of torus sides (postive integer, default 16)
-      * * You can also set the mesh side orientation with the values : BABYLON.Mesh.FRONTSIDE (default), BABYLON.Mesh.BACKSIDE or BABYLON.Mesh.DOUBLESIDE
-      * * If you create a double-sided mesh, you can choose what parts of the texture image to crop and stick respectively on the front and the back sides with the parameters `frontUVs` and `backUVs` (Vector4). Detail here : https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation
-      * * The mesh can be set to updatable with the boolean parameter `updatable` (default false) if its internal geometry is supposed to change once created.
-      * @param name defines the name of the mesh
-      * @param options defines the options used to create the mesh
-      * @param scene defines the hosting scene
-      * @returns the torus mesh
-      * @see https://doc.babylonjs.com/how_to/set_shapes#torus
-      */
-    inline def CreateTorus(name: String, options: Thickness, scene: js.Any): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    @JSImport("babylonjs/Meshes/Builders/torusBuilder", "TorusBuilder.CreateTorus")
+    @js.native
+    def CreateTorus: js.Function3[
+        /* name */ String, 
+        /* options */ js.UndefOr[Thickness], 
+        /* scene */ js.UndefOr[Scene], 
+        Mesh
+      ] = js.native
+    inline def CreateTorus(name: String): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any]).asInstanceOf[Mesh]
+    inline def CreateTorus(name: String, options: Unit, scene: Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateTorus(name: String, options: Thickness): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateTorus(name: String, options: Thickness, scene: Scene): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateTorus")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Mesh]
+    inline def CreateTorus_=(
+      x: js.Function3[
+          /* name */ String, 
+          /* options */ js.UndefOr[Thickness], 
+          /* scene */ js.UndefOr[Scene], 
+          Mesh
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateTorus")(x.asInstanceOf[js.Any])
   }
 }

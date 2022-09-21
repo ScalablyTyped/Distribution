@@ -7,6 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataGroupingOptionsObject extends StObject {
   
   /**
+    * (Highstock) Specifies how the points should be located on the X axis
+    * inside the group. Points that are extremes can be set separately.
+    * Available options:
+    *
+    * - `start` places the point at the beginning of the group (e.g. range
+    * 00:00:00 - 23:59:59 -> 00:00:00)
+    *
+    * - `middle` places the point in the middle of the group (e.g. range
+    * 00:00:00 - 23:59:59 -> 12:00:00)
+    *
+    * - `end` places the point at the end of the group (e.g. range 00:00:00 -
+    * 23:59:59 -> 23:59:59)
+    */
+  var anchor: js.UndefOr[String | DataGroupingAnchor] = js.undefined
+  
+  /**
     * (Highstock) The method of approximation inside a group. When for example
     * 30 days are grouped into one month, this determines what value should
     * represent the group. Possible values are "average", "averages", "open",
@@ -32,7 +48,7 @@ trait DataGroupingOptionsObject extends StObject {
     * from the raw data.
     *
     * Defaults to `average` for line-type series, `sum` for columns, `range`
-    * for range series and `ohlc` for OHLC and candlestick.
+    * for range series, `hlc` for HLC, and `ohlc` for OHLC and candlestick.
     */
   var approximation: js.UndefOr[String | DataGroupingApproximationValue | js.Function] = js.undefined
   
@@ -57,6 +73,29 @@ trait DataGroupingOptionsObject extends StObject {
     * (Highstock) Enable or disable data grouping.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highstock) Specifies how the first grouped point is positioned on the
+    * xAxis. If firstAnchor and/or lastAnchor are defined, then those options
+    * take precedence over anchor for the first and/or last grouped points.
+    * Available options:
+    *
+    * -`start` places the point at the beginning of the group (e.g. range
+    * 00:00:00 - 23:59:59 -> 00:00:00)
+    *
+    * -`middle` places the point in the middle of the group (e.g. range
+    * 00:00:00 - 23:59:59 -> 12:00:00)
+    *
+    * -`end` places the point at the end of the group (e.g. range 00:00:00 -
+    * 23:59:59 -> 23:59:59)
+    *
+    * -`firstPoint` the first point in the group (e.g. points at 00:13, 00:35,
+    * 00:59 -> 00:13)
+    *
+    * -`lastPoint` the last point in the group (e.g. points at 00:13, 00:35,
+    * 00:59 -> 00:59)
+    */
+  var firstAnchor: js.UndefOr[String | DataGroupingAnchorExtremes] = js.undefined
   
   /**
     * (Highstock) When data grouping is forced, it runs no matter how small the
@@ -88,14 +127,27 @@ trait DataGroupingOptionsObject extends StObject {
   var groupPixelWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highstock) Normally, a group is indexed by the start of that group, so
-    * for example when 30 daily values are grouped into one month, that month's
-    * x value will be the 1st of the month. This apparently shifts the data to
-    * the left. When the smoothed option is true, this is compensated for. The
-    * data is shifted to the middle of the group, and min and max values are
-    * preserved. Internally, this is used in the Navigator series.
+    * (Highstock) Specifies how the last grouped point is positioned on the
+    * xAxis. If firstAnchor and/or lastAnchor are defined, then those options
+    * take precedence over anchor for the first and/or last grouped points.
+    * Available options:
+    *
+    * -`start` places the point at the beginning of the group (e.g. range
+    * 00:00:00 - 23:59:59 -> 00:00:00)
+    *
+    * -`middle` places the point in the middle of the group (e.g. range
+    * 00:00:00 - 23:59:59 -> 12:00:00)
+    *
+    * -`end` places the point at the end of the group (e.g. range 00:00:00 -
+    * 23:59:59 -> 23:59:59)
+    *
+    * -`firstPoint` the first point in the group (e.g. points at 00:13, 00:35,
+    * 00:59 -> 00:13)
+    *
+    * -`lastPoint` the last point in the group (e.g. points at 00:13, 00:35,
+    * 00:59 -> 00:59)
     */
-  var smoothed: js.UndefOr[Boolean] = js.undefined
+  var lastAnchor: js.UndefOr[String | DataGroupingAnchorExtremes] = js.undefined
   
   /**
     * (Highstock) An array determining what time intervals the data is allowed
@@ -115,6 +167,10 @@ object DataGroupingOptionsObject {
   
   extension [Self <: DataGroupingOptionsObject](x: Self) {
     
+    inline def setAnchor(value: String | DataGroupingAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    
     inline def setApproximation(value: String | DataGroupingApproximationValue | js.Function): Self = StObject.set(x, "approximation", value.asInstanceOf[js.Any])
     
     inline def setApproximationUndefined: Self = StObject.set(x, "approximation", js.undefined)
@@ -126,6 +182,10 @@ object DataGroupingOptionsObject {
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setFirstAnchor(value: String | DataGroupingAnchorExtremes): Self = StObject.set(x, "firstAnchor", value.asInstanceOf[js.Any])
+    
+    inline def setFirstAnchorUndefined: Self = StObject.set(x, "firstAnchor", js.undefined)
     
     inline def setForced(value: Boolean): Self = StObject.set(x, "forced", value.asInstanceOf[js.Any])
     
@@ -139,14 +199,14 @@ object DataGroupingOptionsObject {
     
     inline def setGroupPixelWidthUndefined: Self = StObject.set(x, "groupPixelWidth", js.undefined)
     
-    inline def setSmoothed(value: Boolean): Self = StObject.set(x, "smoothed", value.asInstanceOf[js.Any])
+    inline def setLastAnchor(value: String | DataGroupingAnchorExtremes): Self = StObject.set(x, "lastAnchor", value.asInstanceOf[js.Any])
     
-    inline def setSmoothedUndefined: Self = StObject.set(x, "smoothed", js.undefined)
+    inline def setLastAnchorUndefined: Self = StObject.set(x, "lastAnchor", js.undefined)
     
     inline def setUnits(value: js.Array[js.Tuple2[String, js.Array[Double] | Null]]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
-    inline def setUnitsVarargs(value: (js.Tuple2[String, js.Array[Double] | Null])*): Self = StObject.set(x, "units", js.Array(value :_*))
+    inline def setUnitsVarargs(value: (js.Tuple2[String, js.Array[Double] | Null])*): Self = StObject.set(x, "units", js.Array(value*))
   }
 }

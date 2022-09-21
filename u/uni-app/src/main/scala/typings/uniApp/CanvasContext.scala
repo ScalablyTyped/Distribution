@@ -156,22 +156,8 @@ trait CanvasContext extends StObject {
     */
   def createPattern(): CanvasPattern | Null = js.native
   def createPattern(image: String): CanvasPattern | Null = js.native
-  @JSName("createPattern")
-  def createPattern_norepeat(image: String, repetition: `no-repeat`): CanvasPattern | Null = js.native
-  @JSName("createPattern")
-  def createPattern_norepeat(image: Unit, repetition: `no-repeat`): CanvasPattern | Null = js.native
-  @JSName("createPattern")
-  def createPattern_repeat(image: String, repetition: repeat): CanvasPattern | Null = js.native
-  @JSName("createPattern")
-  def createPattern_repeat(image: Unit, repetition: repeat): CanvasPattern | Null = js.native
-  @JSName("createPattern")
-  def createPattern_repeatx(image: String, repetition: `repeat-x`): CanvasPattern | Null = js.native
-  @JSName("createPattern")
-  def createPattern_repeatx(image: Unit, repetition: `repeat-x`): CanvasPattern | Null = js.native
-  @JSName("createPattern")
-  def createPattern_repeaty(image: String, repetition: `repeat-y`): CanvasPattern | Null = js.native
-  @JSName("createPattern")
-  def createPattern_repeaty(image: Unit, repetition: `repeat-y`): CanvasPattern | Null = js.native
+  def createPattern(image: String, repetition: repeat | `repeat-x` | `repeat-y` | `no-repeat`): CanvasPattern | Null = js.native
+  def createPattern(image: Unit, repetition: repeat | `repeat-x` | `repeat-y` | `no-repeat`): CanvasPattern | Null = js.native
   
   /**
     * 将之前在绘图上下文中的描述（路径、变形、样式）画到 canvas 中
@@ -404,31 +390,21 @@ trait CanvasContext extends StObject {
     * 设置线条的端点样式
     */
   def setLineCap(): Unit = js.native
-  @JSName("setLineCap")
-  def setLineCap_butt(lineCap: butt): Unit = js.native
-  @JSName("setLineCap")
-  def setLineCap_round(lineCap: round): Unit = js.native
-  @JSName("setLineCap")
-  def setLineCap_square(lineCap: square): Unit = js.native
+  def setLineCap(lineCap: butt | round | square): Unit = js.native
   
   /**
     * 设置线条的宽度
     */
   def setLineDash(): Unit = js.native
-  def setLineDash(pattern: js.Array[js.Any]): Unit = js.native
-  def setLineDash(pattern: js.Array[js.Any], offset: Double): Unit = js.native
+  def setLineDash(pattern: js.Array[Any]): Unit = js.native
+  def setLineDash(pattern: js.Array[Any], offset: Double): Unit = js.native
   def setLineDash(pattern: Unit, offset: Double): Unit = js.native
   
   /**
     * 设置线条的交点样式
     */
   def setLineJoin(): Unit = js.native
-  @JSName("setLineJoin")
-  def setLineJoin_bevel(lineJoin: bevel): Unit = js.native
-  @JSName("setLineJoin")
-  def setLineJoin_miter(lineJoin: miter): Unit = js.native
-  @JSName("setLineJoin")
-  def setLineJoin_round(lineJoin: round): Unit = js.native
+  def setLineJoin(lineJoin: bevel | round | miter): Unit = js.native
   
   /**
     * 设置线条的宽度
@@ -474,25 +450,13 @@ trait CanvasContext extends StObject {
     * 设置文字的对齐
     */
   def setTextAlign(): Unit = js.native
-  @JSName("setTextAlign")
-  def setTextAlign_center(align: center): Unit = js.native
-  @JSName("setTextAlign")
-  def setTextAlign_left(align: left): Unit = js.native
-  @JSName("setTextAlign")
-  def setTextAlign_right(align: right): Unit = js.native
+  def setTextAlign(align: left | center | right): Unit = js.native
   
   /**
     * 设置文字的水平对齐
     */
   def setTextBaseline(): Unit = js.native
-  @JSName("setTextBaseline")
-  def setTextBaseline_bottom(textBaseline: bottom): Unit = js.native
-  @JSName("setTextBaseline")
-  def setTextBaseline_middle(textBaseline: middle): Unit = js.native
-  @JSName("setTextBaseline")
-  def setTextBaseline_normal(textBaseline: normal): Unit = js.native
-  @JSName("setTextBaseline")
-  def setTextBaseline_top(textBaseline: top): Unit = js.native
+  def setTextBaseline(textBaseline: top | bottom | middle | normal): Unit = js.native
   
   /**
     * 使用矩阵重新设置（覆盖）当前变换的方法

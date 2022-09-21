@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ContainerAssetTask")
 @js.native
-class ContainerAssetTask protected ()
+open class ContainerAssetTask protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ContainerAssetTask {
   /**
@@ -25,7 +25,7 @@ class ContainerAssetTask protected ()
     /**
     * Defines the list of mesh's names you want to load
     */
-  meshesNames: js.Any,
+  meshesNames: Any,
     /**
     * Defines the root url to use as a base to load your meshes and associated resources
     */
@@ -43,7 +43,7 @@ class ContainerAssetTask protected ()
     /**
     * Defines the list of mesh's names you want to load
     */
-  meshesNames: js.Any,
+  meshesNames: Any,
     /**
     * Defines the root url to use as a base to load your meshes and associated resources
     */

@@ -121,11 +121,11 @@ trait Image extends StObject {
   
   var Name: String = js.native
   
-  var ObjectPalette: js.Any = js.native
+  var ObjectPalette: Any = js.native
   
   var OldBorderStyle: Double = js.native
   
-  val OldValue: js.Any = js.native
+  val OldValue: Any = js.native
   
   var OnClick: String = js.native
   
@@ -147,13 +147,13 @@ trait Image extends StObject {
   
   var OnMouseUpMacro: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Picture: String = js.native
   
   var PictureAlignment: Double = js.native
   
-  var PictureData: js.Any = js.native
+  var PictureData: Any = js.native
   
   var PictureTiling: Boolean = js.native
   
@@ -194,7 +194,7 @@ trait Image extends StObject {
   
   var Width: Double = js.native
   
-  def _Evaluate(bstrExpr: String, ppsa: js.Any*): js.Any = js.native
+  def _Evaluate(bstrExpr: String, ppsa: Any*): Any = js.native
   
   var _Name: String = js.native
 }

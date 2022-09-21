@@ -23,6 +23,6 @@ object TableConstructorExpression {
     
     inline def setFields(value: js.Array[TableKey | TableKeyString | TableValue]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: (TableKey | TableKeyString | TableValue)*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: (TableKey | TableKeyString | TableValue)*): Self = StObject.set(x, "fields", js.Array(value*))
   }
 }

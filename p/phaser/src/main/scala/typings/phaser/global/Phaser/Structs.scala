@@ -1,6 +1,5 @@
 package typings.phaser.global.Phaser
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object Structs {
       */
     @JSGlobal("Phaser.Structs.Events.PROCESS_QUEUE_ADD")
     @js.native
-    val PROCESS_QUEUE_ADD: js.Any = js.native
+    val PROCESS_QUEUE_ADD: Any = js.native
     
     /**
       * The Process Queue Remove Event.
@@ -33,7 +32,7 @@ object Structs {
       */
     @JSGlobal("Phaser.Structs.Events.PROCESS_QUEUE_REMOVE")
     @js.native
-    val PROCESS_QUEUE_REMOVE: js.Any = js.native
+    val PROCESS_QUEUE_REMOVE: Any = js.native
   }
   
   /**
@@ -41,14 +40,14 @@ object Structs {
     */
   @JSGlobal("Phaser.Structs.List")
   @js.native
-  class List[T] protected ()
+  open class List[T] protected ()
     extends StObject
        with typings.phaser.Phaser.Structs.List[T] {
     /**
       * 
       * @param parent The parent of this list.
       */
-    def this(parent: js.Any) = this()
+    def this(parent: Any) = this()
   }
   
   /**
@@ -64,7 +63,7 @@ object Structs {
     */
   @JSGlobal("Phaser.Structs.Map")
   @js.native
-  class Map[K, V] protected ()
+  open class Map[K, V] protected ()
     extends StObject
        with typings.phaser.Phaser.Structs.Map[K, V] {
     /**
@@ -88,7 +87,7 @@ object Structs {
     */
   @JSGlobal("Phaser.Structs.ProcessQueue")
   @js.native
-  class ProcessQueue[T] ()
+  open class ProcessQueue[T] ()
     extends StObject
        with typings.phaser.Phaser.Structs.ProcessQueue[T]
   
@@ -106,7 +105,7 @@ object Structs {
     */
   @JSGlobal("Phaser.Structs.RTree")
   @js.native
-  class RTree ()
+  open class RTree ()
     extends StObject
        with typings.phaser.Phaser.Structs.RTree
   
@@ -119,7 +118,7 @@ object Structs {
     * 
     * @param elements An optional array of elements to insert into this Set.
     */
-  class Set[T] ()
+  open class Set[T] ()
     extends StObject
        with typings.phaser.Phaser.Structs.Set[T] {
     def this(elements: js.Array[T]) = this()
@@ -141,24 +140,24 @@ object Structs {
     * @param aspectMode The aspect mode of the Size component. Defaults to 0, no mode. Default 0.
     * @param parent The parent of this Size component. Can be any object with public `width` and `height` properties. Dimensions are clamped to keep them within the parent bounds where possible. Default null.
     */
-  class Size ()
+  open class Size ()
     extends StObject
        with typings.phaser.Phaser.Structs.Size {
     def this(width: Double) = this()
     def this(width: Double, height: Double) = this()
     def this(width: Unit, height: Double) = this()
-    def this(width: Double, height: Double, aspectMode: integer) = this()
-    def this(width: Double, height: Unit, aspectMode: integer) = this()
-    def this(width: Unit, height: Double, aspectMode: integer) = this()
-    def this(width: Unit, height: Unit, aspectMode: integer) = this()
-    def this(width: Double, height: Double, aspectMode: Unit, parent: js.Any) = this()
-    def this(width: Double, height: Double, aspectMode: integer, parent: js.Any) = this()
-    def this(width: Double, height: Unit, aspectMode: Unit, parent: js.Any) = this()
-    def this(width: Double, height: Unit, aspectMode: integer, parent: js.Any) = this()
-    def this(width: Unit, height: Double, aspectMode: Unit, parent: js.Any) = this()
-    def this(width: Unit, height: Double, aspectMode: integer, parent: js.Any) = this()
-    def this(width: Unit, height: Unit, aspectMode: Unit, parent: js.Any) = this()
-    def this(width: Unit, height: Unit, aspectMode: integer, parent: js.Any) = this()
+    def this(width: Double, height: Double, aspectMode: Double) = this()
+    def this(width: Double, height: Unit, aspectMode: Double) = this()
+    def this(width: Unit, height: Double, aspectMode: Double) = this()
+    def this(width: Unit, height: Unit, aspectMode: Double) = this()
+    def this(width: Double, height: Double, aspectMode: Double, parent: Any) = this()
+    def this(width: Double, height: Double, aspectMode: Unit, parent: Any) = this()
+    def this(width: Double, height: Unit, aspectMode: Double, parent: Any) = this()
+    def this(width: Double, height: Unit, aspectMode: Unit, parent: Any) = this()
+    def this(width: Unit, height: Double, aspectMode: Double, parent: Any) = this()
+    def this(width: Unit, height: Double, aspectMode: Unit, parent: Any) = this()
+    def this(width: Unit, height: Unit, aspectMode: Double, parent: Any) = this()
+    def this(width: Unit, height: Unit, aspectMode: Unit, parent: Any) = this()
   }
   object Size {
     
@@ -168,7 +167,7 @@ object Structs {
     /* static member */
     @JSGlobal("Phaser.Structs.Size.ENVELOP")
     @js.native
-    val ENVELOP: integer = js.native
+    val ENVELOP: Double = js.native
     
     /**
       * The width and height are automatically adjusted to fit inside the given target area, while keeping the aspect ratio. Depending on the aspect ratio there may be some space inside the area which is not covered.
@@ -176,7 +175,7 @@ object Structs {
     /* static member */
     @JSGlobal("Phaser.Structs.Size.FIT")
     @js.native
-    val FIT: integer = js.native
+    val FIT: Double = js.native
     
     /**
       * The width is automatically adjusted based on the height.
@@ -184,7 +183,7 @@ object Structs {
     /* static member */
     @JSGlobal("Phaser.Structs.Size.HEIGHT_CONTROLS_WIDTH")
     @js.native
-    val HEIGHT_CONTROLS_WIDTH: integer = js.native
+    val HEIGHT_CONTROLS_WIDTH: Double = js.native
     
     /**
       * Do not make the size fit the aspect ratio. Change the ratio when the size changes.
@@ -192,7 +191,7 @@ object Structs {
     /* static member */
     @JSGlobal("Phaser.Structs.Size.NONE")
     @js.native
-    val NONE: integer = js.native
+    val NONE: Double = js.native
     
     /**
       * The height is automatically adjusted based on the width.
@@ -200,6 +199,6 @@ object Structs {
     /* static member */
     @JSGlobal("Phaser.Structs.Size.WIDTH_CONTROLS_HEIGHT")
     @js.native
-    val WIDTH_CONTROLS_HEIGHT: integer = js.native
+    val WIDTH_CONTROLS_HEIGHT: Double = js.native
   }
 }

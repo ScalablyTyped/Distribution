@@ -14,7 +14,7 @@ trait CurrentRevision extends StObject {
   /**
     * The date and time when the most recent revision of the artifact was created, in timestamp format.
     */
-  var created: js.UndefOr[Time] = js.undefined
+  var created: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The revision ID of the current version of an artifact.
@@ -37,7 +37,7 @@ object CurrentRevision {
     
     inline def setChangeIdentifier(value: RevisionChangeIdentifier): Self = StObject.set(x, "changeIdentifier", value.asInstanceOf[js.Any])
     
-    inline def setCreated(value: Time): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     

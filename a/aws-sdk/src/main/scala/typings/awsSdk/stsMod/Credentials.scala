@@ -14,7 +14,7 @@ trait Credentials extends StObject {
   /**
     * The date on which the current credentials expire.
     */
-  var Expiration: dateType
+  var Expiration: js.Date
   
   /**
     * The secret access key that can be used to sign requests.
@@ -30,7 +30,7 @@ object Credentials {
   
   inline def apply(
     AccessKeyId: accessKeyIdType,
-    Expiration: dateType,
+    Expiration: js.Date,
     SecretAccessKey: accessKeySecretType,
     SessionToken: tokenType
   ): Credentials = {
@@ -42,7 +42,7 @@ object Credentials {
     
     inline def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
     
-    inline def setExpiration(value: dateType): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: js.Date): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
     
     inline def setSecretAccessKey(value: accessKeySecretType): Self = StObject.set(x, "SecretAccessKey", value.asInstanceOf[js.Any])
     

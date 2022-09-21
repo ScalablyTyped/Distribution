@@ -29,7 +29,7 @@ object XMLOasisBasicExporter {
     cancel: () => Unit,
     createWithHandler: XDocumentHandler => Unit,
     filter: SeqEquiv[PropertyValue] => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setSourceDocument: XComponent => Unit
   ): XMLOasisBasicExporter = {

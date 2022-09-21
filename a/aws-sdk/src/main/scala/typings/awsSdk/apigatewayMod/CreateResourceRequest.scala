@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateResourceRequest extends StObject {
   
   /**
-    * [Required] The parent resource's identifier.
+    * The parent resource's identifier.
     */
   var parentId: String
   
@@ -17,7 +17,7 @@ trait CreateResourceRequest extends StObject {
   var pathPart: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }

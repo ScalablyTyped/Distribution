@@ -20,7 +20,7 @@ object BulkAccess {
   /** Used to load information about files and folders from the results of a query and to bind these file system items to JavaScript ListView or XAML ListView and GridView controls. After information is loaded, an app can then access that information quickly using synchronous operations. */
   @JSGlobal("Windows.Storage.BulkAccess.FileInformationFactory")
   @js.native
-  class FileInformationFactory protected ()
+  open class FileInformationFactory protected ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.BulkAccess.FileInformationFactory {
     /**

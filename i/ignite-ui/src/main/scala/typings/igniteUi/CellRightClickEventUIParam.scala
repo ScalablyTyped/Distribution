@@ -25,7 +25,7 @@ trait CellRightClickEventUIParam extends StObject {
   /**
     * Gets a reference to the grid.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the row DOM element.
@@ -40,7 +40,7 @@ trait CellRightClickEventUIParam extends StObject {
   /**
     * Gets the row key.
     */
-  var rowKey: js.UndefOr[js.Any] = js.undefined
+  var rowKey: js.UndefOr[Any] = js.undefined
 }
 object CellRightClickEventUIParam {
   
@@ -63,7 +63,7 @@ object CellRightClickEventUIParam {
     
     inline def setColKeyUndefined: Self = StObject.set(x, "colKey", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
@@ -73,7 +73,7 @@ object CellRightClickEventUIParam {
     
     inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
-    inline def setRowKey(value: js.Any): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
+    inline def setRowKey(value: Any): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
     
     inline def setRowKeyUndefined: Self = StObject.set(x, "rowKey", js.undefined)
     

@@ -9,16 +9,13 @@ richer JavaScript errors
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | verror |
-| Keywords           | - |
+| Keywords           | error, errors, err, exception, exceptions, custom |
 | # releases         | 1 |
-| # dependents       | 702 |
-| # downloads        | 824405915 |
-| # stars            | 52 |
+| # dependents       | 0.0 |
+| # downloads        | 8.573613266666667E7 |
+| # stars            | 1133.0 |
 
 ## Links
-- [Homepage](https://github.com/davepacheco/node-verror)
-- [Bugs](https://github.com/davepacheco/node-verror/issues)
-- [Repository](https://github.com/davepacheco/node-verror)
 - [Npm](https://www.npmjs.com/package/verror)
     
 

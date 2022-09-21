@@ -93,7 +93,7 @@ object ContainerInspectInfo {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "Args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "Args", js.Array(value*))
     
     inline def setConfig(value: AttachStderr): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object ContainerInspectInfo {
     
     inline def setExecIDsUndefined: Self = StObject.set(x, "ExecIDs", js.undefined)
     
-    inline def setExecIDsVarargs(value: String*): Self = StObject.set(x, "ExecIDs", js.Array(value :_*))
+    inline def setExecIDsVarargs(value: String*): Self = StObject.set(x, "ExecIDs", js.Array(value*))
     
     inline def setGraphDriver(value: Data): Self = StObject.set(x, "GraphDriver", value.asInstanceOf[js.Any])
     
@@ -125,7 +125,7 @@ object ContainerInspectInfo {
     
     inline def setMounts(value: js.Array[Mode]): Self = StObject.set(x, "Mounts", value.asInstanceOf[js.Any])
     
-    inline def setMountsVarargs(value: Mode*): Self = StObject.set(x, "Mounts", js.Array(value :_*))
+    inline def setMountsVarargs(value: Mode*): Self = StObject.set(x, "Mounts", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

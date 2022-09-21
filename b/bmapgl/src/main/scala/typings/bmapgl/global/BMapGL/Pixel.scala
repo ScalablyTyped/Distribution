@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.Pixel")
 @js.native
-class Pixel protected ()
+open class Pixel protected ()
   extends StObject
      with typings.bmapgl.BMapGL.Pixel {
   def this(x: Double, y: Double) = this()

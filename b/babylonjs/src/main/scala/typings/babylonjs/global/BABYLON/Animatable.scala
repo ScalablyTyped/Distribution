@@ -1,12 +1,13 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.Animatable")
 @js.native
-class Animatable protected ()
+open class Animatable protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Animatable {
   /**
@@ -25,7 +26,7 @@ class Animatable protected ()
   def this(
     scene: typings.babylonjs.BABYLON.Scene,
     /** defines the target object */
-  target: js.Any,
+  target: Any,
     /** defines the starting frame number (default is 0) */
   fromFrame: js.UndefOr[Double],
     /** defines the ending frame number (default is 100) */
@@ -34,10 +35,10 @@ class Animatable protected ()
   loopAnimation: js.UndefOr[Boolean],
     speedRatio: js.UndefOr[Double],
     /** defines a callback to call when animation ends if it is not looping */
-  onAnimationEnd: js.UndefOr[js.Function0[Unit] | Null],
+  onAnimationEnd: js.UndefOr[Nullable[js.Function0[Unit]]],
     animations: js.UndefOr[js.Array[typings.babylonjs.BABYLON.Animation]],
     /** defines a callback to call when animation loops */
-  onAnimationLoop: js.UndefOr[js.Function0[Unit] | Null],
+  onAnimationLoop: js.UndefOr[Nullable[js.Function0[Unit]]],
     /** defines whether the animation should be evaluated additively */
   isAdditive: js.UndefOr[Boolean]
   ) = this()

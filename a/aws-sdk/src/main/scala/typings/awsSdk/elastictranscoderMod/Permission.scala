@@ -34,7 +34,7 @@ object Permission {
     
     inline def setAccessUndefined: Self = StObject.set(x, "Access", js.undefined)
     
-    inline def setAccessVarargs(value: AccessControl*): Self = StObject.set(x, "Access", js.Array(value :_*))
+    inline def setAccessVarargs(value: AccessControl*): Self = StObject.set(x, "Access", js.Array(value*))
     
     inline def setGrantee(value: Grantee): Self = StObject.set(x, "Grantee", value.asInstanceOf[js.Any])
     

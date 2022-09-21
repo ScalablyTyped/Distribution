@@ -23,9 +23,9 @@ trait UsageInfo
 object UsageInfo {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_bandwidth: () => Double,
     get_discussionStorage: () => Double,
     get_hits: () => Double,

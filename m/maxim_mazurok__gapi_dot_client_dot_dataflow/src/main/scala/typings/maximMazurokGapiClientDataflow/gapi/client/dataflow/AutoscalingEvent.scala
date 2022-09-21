@@ -21,7 +21,7 @@ trait AutoscalingEvent extends StObject {
   /** The time this event was emitted to indicate a new target or current num_workers value. */
   var time: js.UndefOr[String] = js.undefined
   
-  /** A short and friendly name for the worker pool this event refers to, populated from the value of PoolStageRelation::user_pool_name. */
+  /** A short and friendly name for the worker pool this event refers to. */
   var workerPool: js.UndefOr[String] = js.undefined
 }
 object AutoscalingEvent {

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait DateFilterCondition extends StObject
 /**
-  *
   * Enum representing all accepted conditions by which a date filter can be applied.
   Used to configure the type of PivotFilter that is applied to the field.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @JSGlobal("Excel.DateFilterCondition")
@@ -22,7 +22,8 @@ object DateFilterCondition extends StObject {
     
     Required Criteria: {`comparator`}.
     Optional Criteria: {`wholeDays`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait after
@@ -34,7 +35,8 @@ object DateFilterCondition extends StObject {
     
     Required Criteria: {`comparator`}.
     Optional Criteria: {`wholeDays`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait afterOrEqualTo
@@ -43,7 +45,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in April.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodApril
@@ -52,7 +55,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in August.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodAugust
@@ -61,7 +65,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in December.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodDecember
@@ -70,7 +75,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in February.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodFebruary
@@ -79,7 +85,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in January.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodJanuary
@@ -88,7 +95,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in July.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodJuly
@@ -97,7 +105,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in June.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodJune
@@ -106,7 +115,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in March.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodMarch
@@ -115,7 +125,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in May.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodMay
@@ -124,7 +135,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in November.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodNovember
@@ -133,7 +145,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in October.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodOctober
@@ -142,7 +155,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in Quarter 1.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodQuarter1
@@ -151,7 +165,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in Quarter 2.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodQuarter2
@@ -160,7 +175,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in Quarter 3.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodQuarter3
@@ -169,7 +185,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in Quarter 4.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodQuarter4
@@ -178,7 +195,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in September.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait allDatesInPeriodSeptember
@@ -190,7 +208,8 @@ object DateFilterCondition extends StObject {
     
     Required Criteria: {`comparator`}.
     Optional Criteria: {`wholeDays`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait before
@@ -202,7 +221,8 @@ object DateFilterCondition extends StObject {
     
     Required Criteria: {`comparator`}.
     Optional Criteria: {`wholeDays`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait beforeOrEqualTo
@@ -214,7 +234,8 @@ object DateFilterCondition extends StObject {
     
     Required Criteria: {`lowerBound`, `upperBound`}.
     Optional Criteria: {`wholeDays`, `exclusive`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait between
@@ -226,7 +247,8 @@ object DateFilterCondition extends StObject {
     
     Required Criteria: {`comparator`}.
     Optional Criteria: {`wholeDays`, `exclusive`}.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait equals
@@ -235,7 +257,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is last month.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait lastMonth
@@ -244,7 +267,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is last quarter.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait lastQuarter
@@ -253,7 +277,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is last week.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait lastWeek
@@ -262,7 +287,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is last year.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait lastYear
@@ -271,7 +297,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is next month.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait nextMonth
@@ -280,7 +307,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is next quarter.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait nextQuarter
@@ -289,7 +317,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is next week.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait nextWeek
@@ -298,7 +327,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is next year.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait nextYear
@@ -307,7 +337,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is this month.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait thisMonth
@@ -316,7 +347,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is this quarter.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait thisQuarter
@@ -325,7 +357,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is this week.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait thisWeek
@@ -334,7 +367,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is this year.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait thisYear
@@ -343,7 +377,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is today.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait today
@@ -352,7 +387,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is tomorrow.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait tomorrow
@@ -360,8 +396,9 @@ object DateFilterCondition extends StObject {
        with DateFilterCondition
   
   /**
-    * DateFilterCondition is unknown or unsupported.
-    *
+    * `DateFilterCondition` is unknown or unsupported.
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait unknown
@@ -370,7 +407,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is in the same year to date.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait yearToDate
@@ -379,7 +417,8 @@ object DateFilterCondition extends StObject {
   
   /**
     * Date is yesterday.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait yesterday

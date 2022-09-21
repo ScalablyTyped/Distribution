@@ -13,12 +13,16 @@ trait MapViewHighlightOptionsProperties
   /**
     * The color of the highlight fill.
     *
+    * @default #00ffff
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * The opacity of the fill (area within the halo).
+    *
+    * @default 0.25
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
@@ -33,6 +37,8 @@ trait MapViewHighlightOptionsProperties
   
   /**
     * The opacity of the highlight halo.
+    *
+    * @default 1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
@@ -55,7 +61,7 @@ object MapViewHighlightOptionsProperties {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
@@ -65,7 +71,7 @@ object MapViewHighlightOptionsProperties {
     
     inline def setHaloColorUndefined: Self = StObject.set(x, "haloColor", js.undefined)
     
-    inline def setHaloColorVarargs(value: Double*): Self = StObject.set(x, "haloColor", js.Array(value :_*))
+    inline def setHaloColorVarargs(value: Double*): Self = StObject.set(x, "haloColor", js.Array(value*))
     
     inline def setHaloOpacity(value: Double): Self = StObject.set(x, "haloOpacity", value.asInstanceOf[js.Any])
     

@@ -5,41 +5,41 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Specifies which properties to load on the `format.borders` object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait CellPropertiesBorderLoadOptions extends StObject {
   
   /**
+    * Specifies whether to load the `color` property.
     *
-    * Specifies whether to load on the `color` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies whether to load the `style` property.
     *
-    * Specifies whether to load on the `style` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var style: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies whether to load the `tintAndShade` property.
     *
-    * Specifies whether to load on the `tintAndShade` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies whether to load the `weight` property.
     *
-    * Specifies whether to load on the `weight` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var weight: js.UndefOr[Boolean] = js.undefined

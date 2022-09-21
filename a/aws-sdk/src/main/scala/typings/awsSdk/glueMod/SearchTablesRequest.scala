@@ -58,7 +58,7 @@ object SearchTablesRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: PropertyPredicate*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: PropertyPredicate*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -80,6 +80,6 @@ object SearchTablesRequest {
     
     inline def setSortCriteriaUndefined: Self = StObject.set(x, "SortCriteria", js.undefined)
     
-    inline def setSortCriteriaVarargs(value: SortCriterion*): Self = StObject.set(x, "SortCriteria", js.Array(value :_*))
+    inline def setSortCriteriaVarargs(value: SortCriterion*): Self = StObject.set(x, "SortCriteria", js.Array(value*))
   }
 }

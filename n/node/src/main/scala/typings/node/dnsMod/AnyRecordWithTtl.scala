@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @deprecated Use `AnyARecord` or `AnyAaaaRecord` instead. */
 /* Rewritten from type alias, can be one of: 
   - typings.node.dnsMod.AnyARecord
   - typings.node.dnsMod.AnyAaaaRecord

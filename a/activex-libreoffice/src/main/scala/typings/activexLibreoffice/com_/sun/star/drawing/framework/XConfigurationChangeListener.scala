@@ -24,7 +24,7 @@ object XConfigurationChangeListener {
     acquire: () => Unit,
     disposing: EventObject => Unit,
     notifyConfigurationChange: ConfigurationChangeEvent => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XConfigurationChangeListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), notifyConfigurationChange = js.Any.fromFunction1(notifyConfigurationChange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

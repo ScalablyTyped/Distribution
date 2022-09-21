@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-multipart
 
-Typings are for version 1.0.5
+Typings are for version 2.0.2
 
 ## Library description:
 Async iterable http multipart message parser
@@ -11,12 +11,12 @@ Async iterable http multipart message parser
 | Full name          | it-multipart |
 | Keywords           | - |
 | # releases         | 10 |
-| # dependents       | 3 |
-| # downloads        | 252505 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 26980.0 |
+| # stars            | 200.0 |
 
 ## Links
-- [Homepage](https://github.com/achingbrain/it#readme)
+- [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-multipart#readme)
 - [Bugs](https://github.com/achingbrain/it/issues)
 - [Repository](https://github.com/achingbrain/it)
 - [Npm](https://www.npmjs.com/package/it-multipart)

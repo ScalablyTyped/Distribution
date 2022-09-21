@@ -8,5 +8,5 @@ object getServiceGraphOutputMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/GetServiceGraphOutput", "GetServiceGraphOutput")
   @js.native
-  val GetServiceGraphOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetServiceGraphOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

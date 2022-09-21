@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__MaterialUI.AppCanvas")
 @js.native
-class AppCanvas ()
-  extends Component[AppCanvasProps, js.Object, js.Any]
+open class AppCanvas ()
+  extends Component[AppCanvasProps, js.Object, Any]

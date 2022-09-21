@@ -10,10 +10,10 @@ The lodash method `_.sumBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.sumby |
 | Keywords           | lodash-modularized, sumby |
-| # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 720883 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 92369.66666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region 获取服务器时间 https://docs.alipay.com/mini/api/get-server-time
 trait GetServerTimeOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   @JSName("success")
   var success_GetServerTimeOptions: js.UndefOr[js.Function1[/* res */ Time, Unit]] = js.undefined

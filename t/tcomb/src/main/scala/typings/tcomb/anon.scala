@@ -159,7 +159,7 @@ object anon {
       
       inline def setTypes(value: js.Array[Constructor[T]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      inline def setTypesVarargs(value: Constructor[T]*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: Constructor[T]*): Self = StObject.set(x, "types", js.Array(value*))
     }
   }
   
@@ -171,13 +171,13 @@ object anon {
     
     var name: String
     
-    def predicate(x: js.Any): /* is T */ Boolean
+    def predicate(x: Any): /* is T */ Boolean
     @JSName("predicate")
     var predicate_Original: TypeGuardPredicate[T]
   }
   object Kind {
     
-    inline def apply[T](identity: Boolean, kind: String, name: String, predicate: /* x */ js.Any => /* is T */ Boolean): Kind[T] = {
+    inline def apply[T](identity: Boolean, kind: String, name: String, predicate: /* x */ Any => /* is T */ Boolean): Kind[T] = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], predicate = js.Any.fromFunction1(predicate))
       __obj.asInstanceOf[Kind[T]]
     }
@@ -190,7 +190,7 @@ object anon {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setPredicate(value: /* x */ js.Any => /* is T */ Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
+      inline def setPredicate(value: /* x */ Any => /* is T */ Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
     }
   }
   
@@ -231,7 +231,7 @@ object anon {
     
     var name: String
     
-    def predicate(x: js.Any): /* is T */ Boolean
+    def predicate(x: Any): /* is T */ Boolean
     @JSName("predicate")
     var predicate_Original: TypeGuardPredicate[T]
     
@@ -243,7 +243,7 @@ object anon {
       identity: Boolean,
       kind: String,
       name: String,
-      predicate: /* x */ js.Any => /* is T */ Boolean,
+      predicate: /* x */ Any => /* is T */ Boolean,
       `type`: Constructor[T]
     ): Name[T] = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], predicate = js.Any.fromFunction1(predicate))
@@ -259,7 +259,7 @@ object anon {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setPredicate(value: /* x */ js.Any => /* is T */ Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
+      inline def setPredicate(value: /* x */ Any => /* is T */ Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
       
       inline def setType(value: Constructor[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -336,11 +336,11 @@ object anon {
     
     var name: String
     
-    var types: js.Array[Constructor[js.Any]]
+    var types: js.Array[Constructor[Any]]
   }
   object Types {
     
-    inline def apply(identity: Boolean, kind: String, name: String, types: js.Array[Constructor[js.Any]]): Types = {
+    inline def apply(identity: Boolean, kind: String, name: String, types: js.Array[Constructor[Any]]): Types = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
       __obj.asInstanceOf[Types]
     }
@@ -353,9 +353,9 @@ object anon {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setTypes(value: js.Array[Constructor[js.Any]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[Constructor[Any]]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      inline def setTypesVarargs(value: Constructor[js.Any]*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: Constructor[Any]*): Self = StObject.set(x, "types", js.Array(value*))
     }
   }
 }

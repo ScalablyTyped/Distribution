@@ -12,6 +12,11 @@ trait ConnectorProfileProperties extends StObject {
   var Amplitude: js.UndefOr[AmplitudeConnectorProfileProperties] = js.undefined
   
   /**
+    * The properties required by the custom connector.
+    */
+  var CustomConnector: js.UndefOr[CustomConnectorProfileProperties] = js.undefined
+  
+  /**
     *  The connector-specific properties required by Datadog. 
     */
   var Datadog: js.UndefOr[DatadogConnectorProfileProperties] = js.undefined
@@ -27,6 +32,11 @@ trait ConnectorProfileProperties extends StObject {
   var GoogleAnalytics: js.UndefOr[GoogleAnalyticsConnectorProfileProperties] = js.undefined
   
   /**
+    *  The connector-specific properties required by Amazon Honeycode. 
+    */
+  var Honeycode: js.UndefOr[HoneycodeConnectorProfileProperties] = js.undefined
+  
+  /**
     *  The connector-specific properties required by Infor Nexus. 
     */
   var InforNexus: js.UndefOr[InforNexusConnectorProfileProperties] = js.undefined
@@ -40,6 +50,8 @@ trait ConnectorProfileProperties extends StObject {
     *  The connector-specific properties required by Amazon Redshift. 
     */
   var Redshift: js.UndefOr[RedshiftConnectorProfileProperties] = js.undefined
+  
+  var SAPOData: js.UndefOr[SAPODataConnectorProfileProperties] = js.undefined
   
   /**
     *  The connector-specific properties required by Salesforce. 
@@ -94,6 +106,10 @@ object ConnectorProfileProperties {
     
     inline def setAmplitudeUndefined: Self = StObject.set(x, "Amplitude", js.undefined)
     
+    inline def setCustomConnector(value: CustomConnectorProfileProperties): Self = StObject.set(x, "CustomConnector", value.asInstanceOf[js.Any])
+    
+    inline def setCustomConnectorUndefined: Self = StObject.set(x, "CustomConnector", js.undefined)
+    
     inline def setDatadog(value: DatadogConnectorProfileProperties): Self = StObject.set(x, "Datadog", value.asInstanceOf[js.Any])
     
     inline def setDatadogUndefined: Self = StObject.set(x, "Datadog", js.undefined)
@@ -106,6 +122,10 @@ object ConnectorProfileProperties {
     
     inline def setGoogleAnalyticsUndefined: Self = StObject.set(x, "GoogleAnalytics", js.undefined)
     
+    inline def setHoneycode(value: HoneycodeConnectorProfileProperties): Self = StObject.set(x, "Honeycode", value.asInstanceOf[js.Any])
+    
+    inline def setHoneycodeUndefined: Self = StObject.set(x, "Honeycode", js.undefined)
+    
     inline def setInforNexus(value: InforNexusConnectorProfileProperties): Self = StObject.set(x, "InforNexus", value.asInstanceOf[js.Any])
     
     inline def setInforNexusUndefined: Self = StObject.set(x, "InforNexus", js.undefined)
@@ -117,6 +137,10 @@ object ConnectorProfileProperties {
     inline def setRedshift(value: RedshiftConnectorProfileProperties): Self = StObject.set(x, "Redshift", value.asInstanceOf[js.Any])
     
     inline def setRedshiftUndefined: Self = StObject.set(x, "Redshift", js.undefined)
+    
+    inline def setSAPOData(value: SAPODataConnectorProfileProperties): Self = StObject.set(x, "SAPOData", value.asInstanceOf[js.Any])
+    
+    inline def setSAPODataUndefined: Self = StObject.set(x, "SAPOData", js.undefined)
     
     inline def setSalesforce(value: SalesforceConnectorProfileProperties): Self = StObject.set(x, "Salesforce", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ JavaScript native types loader for the Code ontology
 | ------------------ | :-------------: |
 | Full name          | rdf-loader-code |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 6 |
-| # downloads        | 16090 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4044.3333333333335 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/zazuko/rdf-loader-code)

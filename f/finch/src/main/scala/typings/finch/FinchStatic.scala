@@ -15,16 +15,16 @@ trait FinchStatic extends StObject {
   
   def listen(): Boolean = js.native
   
-  def navigate(queryParams: js.Any): Unit = js.native
-  def navigate(queryParams: js.Any, doUpdate: Boolean): Unit = js.native
+  def navigate(queryParams: Any): Unit = js.native
+  def navigate(queryParams: Any, doUpdate: Boolean): Unit = js.native
   def navigate(uri: String): Unit = js.native
   def navigate(uri: String, doUpdate: Boolean): Unit = js.native
-  def navigate(uri: String, queryParams: js.Any): Unit = js.native
-  def navigate(uri: String, queryParams: js.Any, doUpdate: Boolean): Unit = js.native
+  def navigate(uri: String, queryParams: Any): Unit = js.native
+  def navigate(uri: String, queryParams: Any, doUpdate: Boolean): Unit = js.native
   def navigate(uri: String, queryParams: Unit, doUpdate: Boolean): Unit = js.native
   
   def observe(argN: js.Array[String], callback: js.Function1[/* params */ ObserveCallback, Unit]): Unit = js.native
-  def observe(args: js.Any*): Unit = js.native
+  def observe(args: Any*): Unit = js.native
   def observe(callback: js.Function1[/* params */ ObserveCallback, Unit]): Unit = js.native
   
   def options(options: FinchOptions): Unit = js.native

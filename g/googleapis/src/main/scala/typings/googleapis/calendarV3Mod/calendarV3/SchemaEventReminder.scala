@@ -7,24 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaEventReminder extends StObject {
   
   /**
-    * The method used by this reminder. Possible values are:   -
-    * &quot;email&quot; - Reminders are sent via email.  - &quot;sms&quot; -
-    * Deprecated. Once this feature is shutdown, the API will no longer return
-    * reminders using this method. Any newly added SMS reminders will be
-    * ignored. See  Google Calendar SMS notifications to be removed for more
-    * information. Reminders are sent via SMS. These are only available for G
-    * Suite customers. Requests to set SMS reminders for other account types
-    * are ignored.  - &quot;popup&quot; - Reminders are sent via a UI popup.
+    * The method used by this reminder. Possible values are:
+    * - "email" - Reminders are sent via email.
+    * - "popup" - Reminders are sent via a UI popup.
     * Required when adding a reminder.
     */
-  var method: js.UndefOr[String] = js.undefined
+  var method: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Number of minutes before the start of the event when the reminder should
-    * trigger. Valid values are between 0 and 40320 (4 weeks in minutes).
+    * Number of minutes before the start of the event when the reminder should trigger. Valid values are between 0 and 40320 (4 weeks in minutes).
     * Required when adding a reminder.
     */
-  var minutes: js.UndefOr[Double] = js.undefined
+  var minutes: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaEventReminder {
   
@@ -37,9 +31,13 @@ object SchemaEventReminder {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
+    inline def setMethodNull: Self = StObject.set(x, "method", null)
+    
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+    
+    inline def setMinutesNull: Self = StObject.set(x, "minutes", null)
     
     inline def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
   }

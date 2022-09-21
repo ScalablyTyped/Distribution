@@ -3,7 +3,7 @@ package typings.materialSegmentedButton
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialSegmentedButton.anon.PartialMDCSegmentedButtonAddClass
 import typings.materialSegmentedButton.segmentAdapterMod.MDCSegmentedButtonSegmentAdapter
-import typings.std.ClientRect
+import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +12,13 @@ object segmentFoundationMod {
   
   @JSImport("@material/segmented-button/segment/foundation", "MDCSegmentedButtonSegmentFoundation")
   @js.native
-  class MDCSegmentedButtonSegmentFoundation () extends MDCFoundation[MDCSegmentedButtonSegmentAdapter] {
+  open class MDCSegmentedButtonSegmentFoundation () extends MDCFoundation[MDCSegmentedButtonSegmentAdapter] {
     def this(adapter: PartialMDCSegmentedButtonAddClass) = this()
     
     /**
       * @return Returns bounding rectangle for ripple effect
       */
-    def getDimensions(): ClientRect = js.native
+    def getDimensions(): DOMRect = js.native
     
     /**
       * @return Returns segment's segmentId if it was set by client
@@ -47,7 +47,7 @@ object segmentFoundationMod {
       *
       * @param value Value that represents selected status
       */
-    /* private */ var setAriaAttr: js.Any = js.native
+    /* private */ var setAriaAttr: Any = js.native
     
     /**
       * Sets segment to be selected
@@ -62,6 +62,6 @@ object segmentFoundationMod {
     /**
       * Sets segment from not selected to selected, or selected to not selected
       */
-    /* private */ var toggleSelection: js.Any = js.native
+    /* private */ var toggleSelection: Any = js.native
   }
 }

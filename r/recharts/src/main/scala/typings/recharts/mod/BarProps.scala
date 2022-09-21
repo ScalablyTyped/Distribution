@@ -1,8 +1,8 @@
 package typings.recharts.mod
 
+import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.SFC
 import typings.recharts.rechartsNumbers.`100`
 import typings.recharts.rechartsNumbers.`200`
 import typings.recharts.rechartsNumbers.`300`
@@ -44,11 +44,13 @@ trait BarProps extends StObject {
   
   var animationId: js.UndefOr[Double] = js.undefined
   
-  var background: js.UndefOr[Boolean | ReactElement | ContentRenderer[js.Any] | js.Object] = js.undefined
+  var background: js.UndefOr[Boolean | ReactElement | ContentRenderer[Any] | js.Object] = js.undefined
   
   var barSize: js.UndefOr[Double] = js.undefined
   
   var baselineShift: js.UndefOr[String] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   // As the source code states, dataKey will replace valueKey in 1.1.0 and it'll be required (it's already required in current implementation).
   var className: js.UndefOr[String] = js.undefined
@@ -115,8 +117,6 @@ trait BarProps extends StObject {
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
-  
   var height: js.UndefOr[Double] = js.undefined
   
   var hide: js.UndefOr[Boolean] = js.undefined
@@ -133,7 +133,7 @@ trait BarProps extends StObject {
   
   // see label section at http://recharts.org/#/en-US/api/Bar
   var label: js.UndefOr[
-    Boolean | Label | LabelProps | SFC[LabelProps] | ReactElement | ContentRenderer[js.Any]
+    Boolean | Label | LabelProps | FC[LabelProps] | ReactElement | ContentRenderer[Any]
   ] = js.undefined
   
   var layout: js.UndefOr[LayoutType] = js.undefined
@@ -289,9 +289,9 @@ object BarProps {
     
     inline def setAnimationIdUndefined: Self = StObject.set(x, "animationId", js.undefined)
     
-    inline def setBackground(value: Boolean | ReactElement | ContentRenderer[js.Any] | js.Object): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Boolean | ReactElement | ContentRenderer[Any] | js.Object): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "background", js.Any.fromFunction1(value))
+    inline def setBackgroundFunction1(value: Any => ReactNode): Self = StObject.set(x, "background", js.Any.fromFunction1(value))
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
@@ -302,6 +302,10 @@ object BarProps {
     inline def setBaselineShift(value: String): Self = StObject.set(x, "baselineShift", value.asInstanceOf[js.Any])
     
     inline def setBaselineShiftUndefined: Self = StObject.set(x, "baselineShift", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -347,11 +351,11 @@ object BarProps {
     
     inline def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
-    inline def setDataKeyFunction1(value: /* dataObject */ js.Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
+    inline def setDataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: BarData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: BarData*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
@@ -431,10 +435,6 @@ object BarProps {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
-    
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
@@ -463,9 +463,9 @@ object BarProps {
     
     inline def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
     
-    inline def setLabel(value: Boolean | Label | LabelProps | SFC[LabelProps] | ReactElement | ContentRenderer[js.Any]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Boolean | Label | LabelProps | FC[LabelProps] | ReactElement | ContentRenderer[Any]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    inline def setLabelFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
+    inline def setLabelFunction1(value: Any => ReactNode): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
@@ -589,7 +589,7 @@ object BarProps {
     
     inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    inline def setRadiusVarargs(value: Double*): Self = StObject.set(x, "radius", js.Array(value :_*))
+    inline def setRadiusVarargs(value: Double*): Self = StObject.set(x, "radius", js.Array(value*))
     
     inline def setShape(value: ReactElement | ContentRenderer[RectangleProps]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     

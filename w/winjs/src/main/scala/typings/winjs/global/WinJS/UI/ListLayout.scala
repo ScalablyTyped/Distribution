@@ -16,10 +16,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @constructor
   * @param options An object that contains one or more property/value pairs to apply to the new ListLayout. Each property of the options object corresponds to one of the object's properties or events. Event names must begin with "on".
   **/
-class ListLayout ()
+open class ListLayout ()
   extends StObject
      with typings.winjs.WinJS.UI.ListLayout {
-  def this(options: js.Any) = this()
+  def this(options: Any) = this()
   
   //#endregion Methods
   //#region Properties
@@ -62,7 +62,7 @@ class ListLayout ()
     * @returns An object that describes the next item that should receive focus. It has these properties: index, type.
     **/
   /* CompleteClass */
-  override def getAdjacent(currentItem: js.Any, pressedKey: Key): js.Any = js.native
+  override def getAdjacent(currentItem: Any, pressedKey: Key): Any = js.native
   
   /**
     * Gets or sets the position of group headers.
@@ -100,13 +100,13 @@ class ListLayout ()
     * @param modifiedGroups
     **/
   /* CompleteClass */
-  override def layout(tree: js.Any, changedRange: js.Any, modifiedItems: js.Any, modifiedGroups: js.Any): Unit = js.native
+  override def layout(tree: Any, changedRange: Any, modifiedItems: Any, modifiedGroups: Any): Unit = js.native
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
   /* CompleteClass */
-  var numberOfItemsPerItemsBlock: js.Any = js.native
+  var numberOfItemsPerItemsBlock: Any = js.native
   
   /**
     * Gets or sets the orientation of the GridLayout.

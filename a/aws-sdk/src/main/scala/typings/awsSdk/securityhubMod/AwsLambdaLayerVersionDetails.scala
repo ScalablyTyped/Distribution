@@ -34,7 +34,7 @@ object AwsLambdaLayerVersionDetails {
     
     inline def setCompatibleRuntimesUndefined: Self = StObject.set(x, "CompatibleRuntimes", js.undefined)
     
-    inline def setCompatibleRuntimesVarargs(value: NonEmptyString*): Self = StObject.set(x, "CompatibleRuntimes", js.Array(value :_*))
+    inline def setCompatibleRuntimesVarargs(value: NonEmptyString*): Self = StObject.set(x, "CompatibleRuntimes", js.Array(value*))
     
     inline def setCreatedDate(value: NonEmptyString): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     

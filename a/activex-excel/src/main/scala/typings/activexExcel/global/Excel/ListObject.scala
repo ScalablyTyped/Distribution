@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ListObject")
 @js.native
-/* private */ class ListObject ()
+/* private */ open class ListObject ()
   extends StObject
      with typings.activexExcel.Excel.ListObject

@@ -31,6 +31,8 @@ trait MailboxSettings extends StObject {
   // The default time zone for the user's mailbox.
   var timeZone: js.UndefOr[NullableOption[String]] = js.undefined
   
+  var userPurpose: js.UndefOr[NullableOption[UserPurpose]] = js.undefined
+  
   // The days of the week and hours in a specific time zone that the user works.
   var workingHours: js.UndefOr[NullableOption[WorkingHours]] = js.undefined
 }
@@ -84,6 +86,12 @@ object MailboxSettings {
     inline def setTimeZoneNull: Self = StObject.set(x, "timeZone", null)
     
     inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    
+    inline def setUserPurpose(value: NullableOption[UserPurpose]): Self = StObject.set(x, "userPurpose", value.asInstanceOf[js.Any])
+    
+    inline def setUserPurposeNull: Self = StObject.set(x, "userPurpose", null)
+    
+    inline def setUserPurposeUndefined: Self = StObject.set(x, "userPurpose", js.undefined)
     
     inline def setWorkingHours(value: NullableOption[WorkingHours]): Self = StObject.set(x, "workingHours", value.asInstanceOf[js.Any])
     

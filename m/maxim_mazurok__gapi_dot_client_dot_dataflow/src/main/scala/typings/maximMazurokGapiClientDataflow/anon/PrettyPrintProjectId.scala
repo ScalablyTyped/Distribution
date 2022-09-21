@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataflow.anon
 
-import typings.maximMazurokGapiClientDataflow.gapi.client.dataflow.SnapshotJobRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,14 +22,11 @@ trait PrettyPrintProjectId extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** The job to be snapshotted. */
-  var jobId: String
-  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The location that contains this job. */
-  var location: String
+  /** The location that contains this snapshot. */
+  var location: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
@@ -38,14 +34,14 @@ trait PrettyPrintProjectId extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** The project which owns the job to be snapshotted. */
+  /** The ID of the Cloud Platform project that the snapshot belongs to. */
   var projectId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: SnapshotJobRequest
+  /** The ID of the snapshot. */
+  var snapshotId: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -55,8 +51,8 @@ trait PrettyPrintProjectId extends StObject {
 }
 object PrettyPrintProjectId {
   
-  inline def apply(jobId: String, location: String, projectId: String, resource: SnapshotJobRequest): PrettyPrintProjectId = {
-    val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(projectId: String, snapshotId: String): PrettyPrintProjectId = {
+    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], snapshotId = snapshotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrintProjectId]
   }
   
@@ -82,13 +78,13 @@ object PrettyPrintProjectId {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
-    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
@@ -104,7 +100,7 @@ object PrettyPrintProjectId {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SnapshotJobRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

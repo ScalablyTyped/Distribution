@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait SetCredentialsResponse extends StObject {
   
-  def build(): js.Any
+  def build(): Any
   
   def printJson(): String
   
@@ -29,14 +29,14 @@ trait SetCredentialsResponse extends StObject {
 }
 object SetCredentialsResponse {
   
-  inline def apply(build: () => js.Any, printJson: () => String, setIsValid: Boolean => SetCredentialsResponse): SetCredentialsResponse = {
+  inline def apply(build: () => Any, printJson: () => String, setIsValid: Boolean => SetCredentialsResponse): SetCredentialsResponse = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), printJson = js.Any.fromFunction0(printJson), setIsValid = js.Any.fromFunction1(setIsValid))
     __obj.asInstanceOf[SetCredentialsResponse]
   }
   
   extension [Self <: SetCredentialsResponse](x: Self) {
     
-    inline def setBuild(value: () => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => Any): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     

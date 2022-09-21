@@ -59,7 +59,7 @@ object XCellRangesAccess {
     getCellByPosition: (Double, Double, Double) => XCell,
     getCellRangeByPosition: (Double, Double, Double, Double, Double) => XCellRange,
     getCellRangesByName: String => SafeArray[XCellRange],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCellRangesAccess = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getCellByPosition = js.Any.fromFunction3(getCellByPosition), getCellRangeByPosition = js.Any.fromFunction5(getCellRangeByPosition), getCellRangesByName = js.Any.fromFunction1(getCellRangesByName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

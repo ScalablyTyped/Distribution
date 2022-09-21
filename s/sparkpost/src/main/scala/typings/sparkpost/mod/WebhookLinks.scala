@@ -20,6 +20,6 @@ object WebhookLinks {
     
     inline def setLinks(value: js.Array[Href]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    inline def setLinksVarargs(value: Href*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: Href*): Self = StObject.set(x, "links", js.Array(value*))
   }
 }

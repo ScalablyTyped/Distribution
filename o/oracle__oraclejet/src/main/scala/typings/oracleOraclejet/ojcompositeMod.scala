@@ -69,7 +69,7 @@ object ojcompositeMod {
   
   trait PropertyChangedContext extends StObject {
     
-    var previousValue: js.Any
+    var previousValue: Any
     
     var property: String
     
@@ -77,18 +77,18 @@ object ojcompositeMod {
     
     var updatedFrom: external | internal
     
-    var value: js.Any
+    var value: Any
   }
   object PropertyChangedContext {
     
-    inline def apply(previousValue: js.Any, property: String, updatedFrom: external | internal, value: js.Any): PropertyChangedContext = {
+    inline def apply(previousValue: Any, property: String, updatedFrom: external | internal, value: Any): PropertyChangedContext = {
       val __obj = js.Dynamic.literal(previousValue = previousValue.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], updatedFrom = updatedFrom.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropertyChangedContext]
     }
     
     extension [Self <: PropertyChangedContext](x: Self) {
       
-      inline def setPreviousValue(value: js.Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
+      inline def setPreviousValue(value: Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
       
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
@@ -98,13 +98,13 @@ object ojcompositeMod {
       
       inline def setUpdatedFrom(value: external | internal): Self = StObject.set(x, "updatedFrom", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
   trait ViewModel extends StObject {
     
-    def activated(param0: ViewModelContext): js.Promise[js.Any] | Unit
+    def activated(param0: ViewModelContext): js.Promise[Any] | Unit
     
     def bindingsApplied(param0: ViewModelContext): Unit
     
@@ -117,7 +117,7 @@ object ojcompositeMod {
   object ViewModel {
     
     inline def apply(
-      activated: ViewModelContext => js.Promise[js.Any] | Unit,
+      activated: ViewModelContext => js.Promise[Any] | Unit,
       bindingsApplied: ViewModelContext => Unit,
       connected: ViewModelContext => Unit,
       disconnected: Element => Unit,
@@ -129,7 +129,7 @@ object ojcompositeMod {
     
     extension [Self <: ViewModel](x: Self) {
       
-      inline def setActivated(value: ViewModelContext => js.Promise[js.Any] | Unit): Self = StObject.set(x, "activated", js.Any.fromFunction1(value))
+      inline def setActivated(value: ViewModelContext => js.Promise[Any] | Unit): Self = StObject.set(x, "activated", js.Any.fromFunction1(value))
       
       inline def setBindingsApplied(value: ViewModelContext => Unit): Self = StObject.set(x, "bindingsApplied", js.Any.fromFunction1(value))
       

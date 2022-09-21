@@ -51,7 +51,7 @@ object SlideSorter {
     getCurrentPage: () => XDrawPage,
     getResourceId: () => XResourceId,
     isAnchorOnly: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setCurrentPage: XDrawPage => Unit
   ): SlideSorter = {

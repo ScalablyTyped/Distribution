@@ -39,7 +39,7 @@ trait Slicer extends StObject {
   
   var NumberOfColumns: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var RowHeight: Double
   
@@ -49,7 +49,7 @@ trait Slicer extends StObject {
   
   val SlicerCacheLevel: typings.activexExcel.Excel.SlicerCacheLevel
   
-  var Style: js.Any
+  var Style: Any
   
   var Top: Double
   
@@ -74,12 +74,12 @@ object Slicer {
     Locked: Boolean,
     Name: String,
     NumberOfColumns: Double,
-    Parent: js.Any,
+    Parent: Any,
     RowHeight: Double,
     Shape: Shape,
     SlicerCache: SlicerCache,
     SlicerCacheLevel: SlicerCacheLevel,
-    Style: js.Any,
+    Style: Any,
     Top: Double,
     Width: Double
   ): Slicer = {
@@ -122,7 +122,7 @@ object Slicer {
     
     inline def setNumberOfColumns(value: Double): Self = StObject.set(x, "NumberOfColumns", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRowHeight(value: Double): Self = StObject.set(x, "RowHeight", value.asInstanceOf[js.Any])
     
@@ -132,7 +132,7 @@ object Slicer {
     
     inline def setSlicerCacheLevel(value: SlicerCacheLevel): Self = StObject.set(x, "SlicerCacheLevel", value.asInstanceOf[js.Any])
     
-    inline def setStyle(value: js.Any): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Any): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
     inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     

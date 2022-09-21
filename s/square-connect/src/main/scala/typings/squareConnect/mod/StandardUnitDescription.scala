@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "StandardUnitDescription")
 @js.native
-class StandardUnitDescription () extends StObject {
+open class StandardUnitDescription () extends StObject {
   
   /**
     * UI display abbreviation for the measurement unit. For example, 'lb'.

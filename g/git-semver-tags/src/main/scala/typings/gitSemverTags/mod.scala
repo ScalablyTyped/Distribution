@@ -13,7 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback = js.Function2[/* error */ js.Any, /* tags */ js.Array[String], Unit]
+  type Callback = js.Function2[/* error */ Any, /* tags */ js.Array[String], Unit]
   
   trait Options extends StObject {
     

@@ -45,18 +45,18 @@ object ICalenderStrings {
     
     inline def setQDayNames(value: js.Array[String]): Self = StObject.set(x, "qDayNames", value.asInstanceOf[js.Any])
     
-    inline def setQDayNamesVarargs(value: String*): Self = StObject.set(x, "qDayNames", js.Array(value :_*))
+    inline def setQDayNamesVarargs(value: String*): Self = StObject.set(x, "qDayNames", js.Array(value*))
     
     inline def setQLongDayNames(value: js.Array[String]): Self = StObject.set(x, "qLongDayNames", value.asInstanceOf[js.Any])
     
-    inline def setQLongDayNamesVarargs(value: String*): Self = StObject.set(x, "qLongDayNames", js.Array(value :_*))
+    inline def setQLongDayNamesVarargs(value: String*): Self = StObject.set(x, "qLongDayNames", js.Array(value*))
     
     inline def setQLongMonthNames(value: js.Array[String]): Self = StObject.set(x, "qLongMonthNames", value.asInstanceOf[js.Any])
     
-    inline def setQLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "qLongMonthNames", js.Array(value :_*))
+    inline def setQLongMonthNamesVarargs(value: String*): Self = StObject.set(x, "qLongMonthNames", js.Array(value*))
     
     inline def setQMonthNames(value: js.Array[String]): Self = StObject.set(x, "qMonthNames", value.asInstanceOf[js.Any])
     
-    inline def setQMonthNamesVarargs(value: String*): Self = StObject.set(x, "qMonthNames", js.Array(value :_*))
+    inline def setQMonthNamesVarargs(value: String*): Self = StObject.set(x, "qMonthNames", js.Array(value*))
   }
 }

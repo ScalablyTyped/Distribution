@@ -44,7 +44,7 @@ object XGraphicTransformer {
     applyBrightnessContrast: (XGraphic, Double, Double, Boolean) => XGraphic,
     applyDuotone: (XGraphic, Double, Double) => XGraphic,
     colorChange: (XGraphic, Double, Double, Double, Double) => XGraphic,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XGraphicTransformer = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), applyBrightnessContrast = js.Any.fromFunction4(applyBrightnessContrast), applyDuotone = js.Any.fromFunction3(applyDuotone), colorChange = js.Any.fromFunction5(colorChange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -1,26 +1,28 @@
 package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
+import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientCloudbuild.anon.Accesstoken
+import typings.maximMazurokGapiClientCloudbuild.anon.Alt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait LocationsResource extends StObject {
   
-  var builds: BuildsResource
+  var bitbucketServerConfigs: BitbucketServerConfigsResource = js.native
   
-  var operations: OperationsResource
-}
-object LocationsResource {
+  var builds: BuildsResource = js.native
   
-  inline def apply(builds: BuildsResource, operations: OperationsResource): LocationsResource = {
-    val __obj = js.Dynamic.literal(builds = builds.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LocationsResource]
-  }
+  var githubEnterpriseConfigs: GithubEnterpriseConfigsResource = js.native
   
-  extension [Self <: LocationsResource](x: Self) {
-    
-    inline def setBuilds(value: BuildsResource): Self = StObject.set(x, "builds", value.asInstanceOf[js.Any])
-    
-    inline def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
-  }
+  var operations: OperationsResource = js.native
+  
+  /** ReceiveRegionalWebhook is called when the API receives a regional GitHub webhook. */
+  def regionalWebhook(request: Accesstoken): Request[js.Object] = js.native
+  def regionalWebhook(request: Alt, body: HttpBody): Request[js.Object] = js.native
+  
+  var triggers: TriggersResource = js.native
+  
+  var workerPools: WorkerPoolsResource = js.native
 }

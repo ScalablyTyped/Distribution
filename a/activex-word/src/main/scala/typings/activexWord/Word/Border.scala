@@ -24,7 +24,7 @@ trait Border extends StObject {
   
   var LineWidth: WdLineWidth
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Visible: Boolean
   
@@ -43,7 +43,7 @@ object Border {
     Inside: Boolean,
     LineStyle: WdLineStyle,
     LineWidth: WdLineWidth,
-    Parent: js.Any,
+    Parent: Any,
     Visible: Boolean,
     WordDotBorder_typekey: Border
   ): Border = {
@@ -72,7 +72,7 @@ object Border {
     
     inline def setLineWidth(value: WdLineWidth): Self = StObject.set(x, "LineWidth", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     

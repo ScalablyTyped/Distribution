@@ -14,11 +14,11 @@ trait CreateActivityOutput extends StObject {
   /**
     * The date the activity is created.
     */
-  var creationDate: Timestamp
+  var creationDate: js.Date
 }
 object CreateActivityOutput {
   
-  inline def apply(activityArn: Arn, creationDate: Timestamp): CreateActivityOutput = {
+  inline def apply(activityArn: Arn, creationDate: js.Date): CreateActivityOutput = {
     val __obj = js.Dynamic.literal(activityArn = activityArn.asInstanceOf[js.Any], creationDate = creationDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateActivityOutput]
   }
@@ -27,6 +27,6 @@ object CreateActivityOutput {
     
     inline def setActivityArn(value: Arn): Self = StObject.set(x, "activityArn", value.asInstanceOf[js.Any])
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
   }
 }

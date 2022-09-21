@@ -25,11 +25,11 @@ trait DesktopCapturerSource extends StObject {
   /**
     * Thumbnail of the screen source. See [nativeImage](https://electronjs.org/docs/api/native-image#nativeimage) for supported types.
     */
-  val thumbnail: js.Any
+  val thumbnail: Any
 }
 object DesktopCapturerSource {
   
-  inline def apply(id: String, name: String, thumbnail: js.Any): DesktopCapturerSource = {
+  inline def apply(id: String, name: String, thumbnail: Any): DesktopCapturerSource = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[DesktopCapturerSource]
   }
@@ -40,6 +40,6 @@ object DesktopCapturerSource {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setThumbnail(value: js.Any): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: Any): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
   }
 }

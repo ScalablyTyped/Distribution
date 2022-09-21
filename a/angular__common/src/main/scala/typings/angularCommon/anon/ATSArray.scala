@@ -19,6 +19,6 @@ object ATSArray {
     
     inline def setATS(value: js.Array[String]): Self = StObject.set(x, "ATS", value.asInstanceOf[js.Any])
     
-    inline def setATSVarargs(value: String*): Self = StObject.set(x, "ATS", js.Array(value :_*))
+    inline def setATSVarargs(value: String*): Self = StObject.set(x, "ATS", js.Array(value*))
   }
 }

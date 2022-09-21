@@ -13,7 +13,7 @@ trait AbstractCollectionLikeMemberType
      with AbstractDeclarationMemberType {
   
   @JSName("arguments")
-  var arguments_AbstractCollectionLikeMemberType: js.Array[js.Any]
+  var arguments_AbstractCollectionLikeMemberType: js.Array[Any]
   
   @JSName("async")
   var async_AbstractCollectionLikeMemberType: `false`
@@ -21,7 +21,7 @@ trait AbstractCollectionLikeMemberType
 object AbstractCollectionLikeMemberType {
   
   inline def apply(
-    arguments: js.Array[js.Any],
+    arguments: js.Array[Any],
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     parent: InterfaceMixinType | InterfaceType,
@@ -35,9 +35,9 @@ object AbstractCollectionLikeMemberType {
   
   extension [Self <: AbstractCollectionLikeMemberType](x: Self) {
     
-    inline def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    inline def setArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: Any*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setAsync(value: `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
   }

@@ -54,7 +54,7 @@ object InstrumentOptionsObject {
     
     inline def setAllowedFrequenciesUndefined: Self = StObject.set(x, "allowedFrequencies", js.undefined)
     
-    inline def setAllowedFrequenciesVarargs(value: Double*): Self = StObject.set(x, "allowedFrequencies", js.Array(value :_*))
+    inline def setAllowedFrequenciesVarargs(value: Double*): Self = StObject.set(x, "allowedFrequencies", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

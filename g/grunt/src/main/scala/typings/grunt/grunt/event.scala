@@ -20,7 +20,7 @@ object event {
       * Execute each of the listeners that may be listening for the specified event name
       * in order with the list of arguments.
       */
-    def emit(event: String, args: js.Any*): js.Any
+    def emit(event: String, args: Any*): Any
     
     /**
       * Returns an array of listeners for the specified event.
@@ -84,7 +84,7 @@ object event {
     
     inline def apply(
       addListener: (String, js.Function) => EventModule,
-      emit: (String, /* repeated */ js.Any) => js.Any,
+      emit: (String, /* repeated */ Any) => Any,
       listeners: String => js.Array[js.Function],
       listenersAny: () => js.Array[js.Function],
       many: (String, Double, js.Function) => EventModule,
@@ -105,7 +105,7 @@ object event {
       
       inline def setAddListener(value: (String, js.Function) => EventModule): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      inline def setEmit(value: (String, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, /* repeated */ Any) => Any): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
       inline def setListeners(value: String => js.Array[js.Function]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
       

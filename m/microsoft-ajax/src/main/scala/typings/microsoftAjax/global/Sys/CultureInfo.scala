@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sys.CultureInfo")
 @js.native
-class CultureInfo protected ()
+open class CultureInfo protected ()
   extends StObject
      with typings.microsoftAjax.Sys.CultureInfo {
   //#region Constructors

@@ -20,7 +20,7 @@ object events {
     */
   @JSGlobal("ol.events.Event")
   @js.native
-  class Event protected ()
+  open class Event protected ()
     extends typings.openlayers.mod.events.Event {
     /**
       * @classdesc
@@ -71,7 +71,7 @@ object events {
     *    returns false.
     *
     */
-  class EventTarget ()
+  open class EventTarget ()
     extends typings.openlayers.mod.events.EventTarget
   
   object condition {

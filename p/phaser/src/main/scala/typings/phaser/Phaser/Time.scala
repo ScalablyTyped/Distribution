@@ -15,15 +15,26 @@ object Time {
   trait Clock extends StObject {
     
     /**
-      * Creates a Timer Event and adds it to the Clock at the start of the frame.
-      * @param config The configuration for the Timer Event.
+      * Creates a Timer Event and adds it to this Clock at the start of the next frame.
+      * 
+      * You can pass in either a `TimerEventConfig` object, from with a new `TimerEvent` will
+      * be created, or you can pass in a `TimerEvent` instance.
+      * 
+      * If passing an instance please make sure that this instance hasn't been used before.
+      * If it has ever entered a 'completed' state then it will no longer be suitable to
+      * run again.
+      * 
+      * Also, if the `TimerEvent` instance is being used by _another_ Clock (in another Scene)
+      * it will still be updated by that Clock as well, so be careful when using this feature.
+      * @param config The configuration for the Timer Event, or an existing Timer Event object.
       */
+    def addEvent(config: TimerEvent): TimerEvent = js.native
     def addEvent(config: TimerEventConfig): TimerEvent = js.native
     
     /**
       * Clears and recreates the array of pending Timer Events.
       */
-    def clearPendingEvents(): Clock = js.native
+    def clearPendingEvents(): this.type = js.native
     
     /**
       * Creates a Timer Event and adds it to the Clock at the start of the frame.
@@ -35,9 +46,9 @@ object Time {
       * @param callbackScope The scope (`this` object) to call the function with.
       */
     def delayedCall(delay: Double, callback: js.Function): TimerEvent = js.native
-    def delayedCall(delay: Double, callback: js.Function, args: js.Array[js.Any]): TimerEvent = js.native
-    def delayedCall(delay: Double, callback: js.Function, args: js.Array[js.Any], callbackScope: js.Any): TimerEvent = js.native
-    def delayedCall(delay: Double, callback: js.Function, args: Unit, callbackScope: js.Any): TimerEvent = js.native
+    def delayedCall(delay: Double, callback: js.Function, args: js.Array[Any]): TimerEvent = js.native
+    def delayedCall(delay: Double, callback: js.Function, args: js.Array[Any], callbackScope: Any): TimerEvent = js.native
+    def delayedCall(delay: Double, callback: js.Function, args: Unit, callbackScope: Any): TimerEvent = js.native
     
     /**
       * The current time of the Clock, in milliseconds.
@@ -63,7 +74,17 @@ object Time {
     /**
       * Schedules all active Timer Events for removal at the start of the frame.
       */
-    def removeAllEvents(): Clock = js.native
+    def removeAllEvents(): this.type = js.native
+    
+    def removeEvent(events: js.Array[TimerEvent]): this.type = js.native
+    /**
+      * Removes the given Timer Event, or an array of Timer Events, from this Clock.
+      * 
+      * The events are removed from all internal lists (active, pending and removal),
+      * freeing the event up to be re-used.
+      * @param events The Timer Event, or an array of Timer Events, to remove from this Clock.
+      */
+    def removeEvent(events: TimerEvent): this.type = js.native
     
     /**
       * The Scene which owns this Clock.
@@ -101,7 +122,7 @@ object Time {
     /**
       * Additional arguments to be passed to the callback.
       */
-    var args: js.Array[js.Any] = js.native
+    var args: js.Array[Any] = js.native
     
     /**
       * The callback that will be called when the TimerEvent occurs.
@@ -148,9 +169,29 @@ object Time {
     def getOverallProgress(): Double = js.native
     
     /**
+      * Returns the time interval until the last iteration of the Timer Event.
+      */
+    def getOverallRemaining(): Double = js.native
+    
+    /**
+      * Returns the time interval until the last iteration of the Timer Event in seconds.
+      */
+    def getOverallRemainingSeconds(): Double = js.native
+    
+    /**
       * Gets the progress of the current iteration, not factoring in repeats.
       */
     def getProgress(): Double = js.native
+    
+    /**
+      * Returns the time interval until the next iteration of the Timer Event.
+      */
+    def getRemaining(): Double = js.native
+    
+    /**
+      * Returns the time interval until the next iteration of the Timer Event in seconds.
+      */
+    def getRemainingSeconds(): Double = js.native
     
     /**
       * Returns the number of times this Timer Event will repeat before finishing.

@@ -38,7 +38,7 @@ object DetectModerationLabelsResponse {
     
     inline def setModerationLabelsUndefined: Self = StObject.set(x, "ModerationLabels", js.undefined)
     
-    inline def setModerationLabelsVarargs(value: ModerationLabel*): Self = StObject.set(x, "ModerationLabels", js.Array(value :_*))
+    inline def setModerationLabelsVarargs(value: ModerationLabel*): Self = StObject.set(x, "ModerationLabels", js.Array(value*))
     
     inline def setModerationModelVersion(value: String): Self = StObject.set(x, "ModerationModelVersion", value.asInstanceOf[js.Any])
     

@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ConnectorFormat")
 @js.native
-/* private */ class ConnectorFormat ()
+/* private */ open class ConnectorFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ConnectorFormat {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override def BeginConnect(ConnectedShape: typings.activexPowerpoint.PowerPoint.Shape, ConnectionSite: Double): Unit = js.native
@@ -49,7 +49,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def EndDisconnect(): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.ConnectorFormat_typekey")

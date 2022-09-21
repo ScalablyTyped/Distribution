@@ -1,7 +1,6 @@
 package typings.ejWebAll.ej
 
 import typings.ejWebAll.JQuery
-import typings.std.Date
 import typings.std.HTMLElement
 import typings.std.HTMLTableElement
 import org.scalablytyped.runtime.StObject
@@ -17,13 +16,13 @@ trait Grid
     * @param {any[]} Pass the array of parameters which need to be ignored on exporting
     * @returns {void}
     */
-  def addIgnoreOnExport(propertyNames: js.Array[js.Any]): Unit = js.native
+  def addIgnoreOnExport(propertyNames: js.Array[Any]): Unit = js.native
   
   /** Adds a grid model property which is to be ignored upon OnServerToolbarClick.
     * @param {any[]} Pass the array of parameters which need to be ignored on OnServerToolbarClick
     * @returns {void}
     */
-  def addIgnoreOnToolbarServerClick(propertyNames: js.Array[js.Any]): Unit = js.native
+  def addIgnoreOnToolbarServerClick(propertyNames: js.Array[Any]): Unit = js.native
   
   /** Add a new record in grid control when allowAdding is set as true.Without passing parameters it will add empty row.
     * @param {any[]} Pass the array of added Records
@@ -31,9 +30,9 @@ trait Grid
     * @returns {void}
     */
   def addRecord(): Unit = js.native
-  def addRecord(data: js.Array[js.Any]): Unit = js.native
-  def addRecord(data: js.Array[js.Any], serverChange: js.Array[js.Any]): Unit = js.native
-  def addRecord(data: Unit, serverChange: js.Array[js.Any]): Unit = js.native
+  def addRecord(data: js.Array[Any]): Unit = js.native
+  def addRecord(data: js.Array[Any], serverChange: js.Array[Any]): Unit = js.native
+  def addRecord(data: Unit, serverChange: js.Array[Any]): Unit = js.native
   
   /** Cancel the modified changes in grid control when edit mode is &quot;batch&quot;.
     * @returns {void}
@@ -126,16 +125,16 @@ trait Grid
     * @param {string} optional Pass add/remove action to be performed. By default "add" action will perform
     * @returns {void}
     */
-  def columns(columnDetails: js.Array[js.Any]): Unit = js.native
-  def columns(columnDetails: js.Array[js.Any], action: String): Unit = js.native
+  def columns(columnDetails: js.Array[Any]): Unit = js.native
+  def columns(columnDetails: js.Array[Any], action: String): Unit = js.native
   
   /** Refresh the grid with new data source
     * @param {any} Pass new data source to the grid
     * @param {boolean} optional When templateRefresh is set true, both header and contents get refreshed
     * @returns {void}
     */
-  def dataSource(datasource: js.Any): Unit = js.native
-  def dataSource(datasource: js.Any, templateRefresh: Boolean): Unit = js.native
+  def dataSource(datasource: Any): Unit = js.native
+  def dataSource(datasource: Any, templateRefresh: Boolean): Unit = js.native
   
   var defaults: Model = js.native
   
@@ -144,7 +143,7 @@ trait Grid
     * @param {any} Pass the JSON data of record need to be delete.
     * @returns {void}
     */
-  def deleteRecord(fieldName: String, data: js.Any): Unit = js.native
+  def deleteRecord(fieldName: String, data: Any): Unit = js.native
   
   /** Delete the row based on the given tr element in grid.
     * @param {JQuery} Pass the tr element in grid content to get its row index
@@ -196,18 +195,18 @@ trait Grid
   def `export`(action: String): Unit = js.native
   def `export`(action: String, serverEvent: String): Unit = js.native
   def `export`(action: String, serverEvent: String, multipleExport: Boolean): Unit = js.native
-  def `export`(action: String, serverEvent: String, multipleExport: Boolean, gridIds: js.Array[js.Any]): Unit = js.native
-  def `export`(action: String, serverEvent: String, multipleExport: Unit, gridIds: js.Array[js.Any]): Unit = js.native
+  def `export`(action: String, serverEvent: String, multipleExport: Boolean, gridIds: js.Array[Any]): Unit = js.native
+  def `export`(action: String, serverEvent: String, multipleExport: Unit, gridIds: js.Array[Any]): Unit = js.native
   def `export`(action: String, serverEvent: Unit, multipleExport: Boolean): Unit = js.native
-  def `export`(action: String, serverEvent: Unit, multipleExport: Boolean, gridIds: js.Array[js.Any]): Unit = js.native
-  def `export`(action: String, serverEvent: Unit, multipleExport: Unit, gridIds: js.Array[js.Any]): Unit = js.native
+  def `export`(action: String, serverEvent: Unit, multipleExport: Boolean, gridIds: js.Array[Any]): Unit = js.native
+  def `export`(action: String, serverEvent: Unit, multipleExport: Unit, gridIds: js.Array[Any]): Unit = js.native
   def `export`(action: Unit, serverEvent: String): Unit = js.native
   def `export`(action: Unit, serverEvent: String, multipleExport: Boolean): Unit = js.native
-  def `export`(action: Unit, serverEvent: String, multipleExport: Boolean, gridIds: js.Array[js.Any]): Unit = js.native
-  def `export`(action: Unit, serverEvent: String, multipleExport: Unit, gridIds: js.Array[js.Any]): Unit = js.native
+  def `export`(action: Unit, serverEvent: String, multipleExport: Boolean, gridIds: js.Array[Any]): Unit = js.native
+  def `export`(action: Unit, serverEvent: String, multipleExport: Unit, gridIds: js.Array[Any]): Unit = js.native
   def `export`(action: Unit, serverEvent: Unit, multipleExport: Boolean): Unit = js.native
-  def `export`(action: Unit, serverEvent: Unit, multipleExport: Boolean, gridIds: js.Array[js.Any]): Unit = js.native
-  def `export`(action: Unit, serverEvent: Unit, multipleExport: Unit, gridIds: js.Array[js.Any]): Unit = js.native
+  def `export`(action: Unit, serverEvent: Unit, multipleExport: Boolean, gridIds: js.Array[Any]): Unit = js.native
+  def `export`(action: Unit, serverEvent: Unit, multipleExport: Unit, gridIds: js.Array[Any]): Unit = js.native
   
   def filterColumn(fieldName: String, filterOperator: String, filterValue: String, predicate: String): Unit = js.native
   def filterColumn(
@@ -223,7 +222,7 @@ trait Grid
     filterValue: String,
     predicate: String,
     matchcase: Boolean,
-    actualFilterValue: js.Any
+    actualFilterValue: Any
   ): Unit = js.native
   def filterColumn(
     fieldName: String,
@@ -231,7 +230,7 @@ trait Grid
     filterValue: String,
     predicate: String,
     matchcase: Unit,
-    actualFilterValue: js.Any
+    actualFilterValue: Any
   ): Unit = js.native
   /** Send a filtering request to filter one column in grid.
     * @param {any[]|string} Pass the field name of the column
@@ -242,68 +241,68 @@ trait Grid
     * @param {any} optionalactualFilterValue denote the filter object of current filtered columns.Pass the value to filtered in a column
     * @returns {void}
     */
-  def filterColumn(fieldName: js.Array[js.Any], filterOperator: String, filterValue: String, predicate: String): Unit = js.native
+  def filterColumn(fieldName: js.Array[Any], filterOperator: String, filterValue: String, predicate: String): Unit = js.native
   def filterColumn(
-    fieldName: js.Array[js.Any],
+    fieldName: js.Array[Any],
     filterOperator: String,
     filterValue: String,
     predicate: String,
     matchcase: Boolean
   ): Unit = js.native
   def filterColumn(
-    fieldName: js.Array[js.Any],
+    fieldName: js.Array[Any],
     filterOperator: String,
     filterValue: String,
     predicate: String,
     matchcase: Boolean,
-    actualFilterValue: js.Any
+    actualFilterValue: Any
   ): Unit = js.native
   def filterColumn(
-    fieldName: js.Array[js.Any],
+    fieldName: js.Array[Any],
     filterOperator: String,
     filterValue: String,
     predicate: String,
     matchcase: Unit,
-    actualFilterValue: js.Any
+    actualFilterValue: Any
   ): Unit = js.native
   /** Send a filtering request to filter single or multiple column in grid.
     * @param {any[]} Pass array of filterColumn query for performing filter operation
     * @returns {void}
     */
-  def filterColumn(filterQueries: js.Array[js.Any]): Unit = js.native
+  def filterColumn(filterQueries: js.Array[Any]): Unit = js.native
   
   /** Get the batch changes of edit, delete and add operations of grid.
     * @returns {any}
     */
-  def getBatchChanges(): js.Any = js.native
+  def getBatchChanges(): Any = js.native
   
   /** Get the browser details
     * @returns {any}
     */
-  def getBrowserDetails(): js.Any = js.native
+  def getBrowserDetails(): Any = js.native
   
   /** Get the column details based on the given field in grid
     * @param {string} Pass the field name of the column to get the corresponding column object
     * @returns {any}
     */
-  def getColumnByField(fieldName: String): js.Any = js.native
+  def getColumnByField(fieldName: String): Any = js.native
   
   /** Get the column details based on the given header text in grid.
     * @param {string} Pass the header text of the column to get the corresponding column object
     * @returns {any}
     */
-  def getColumnByHeaderText(headerText: String): js.Any = js.native
+  def getColumnByHeaderText(headerText: String): Any = js.native
   
   /** Get the column details based on the given column index in grid
     * @param {number} Pass the index of the column to get the corresponding column object
     * @returns {any}
     */
-  def getColumnByIndex(columnIndex: Double): js.Any = js.native
+  def getColumnByIndex(columnIndex: Double): Any = js.native
   
   /** Get the list of field names from column collection in grid.
     * @returns {any[]}
     */
-  def getColumnFieldNames(): js.Array[js.Any] = js.native
+  def getColumnFieldNames(): js.Array[Any] = js.native
   
   /** Get the column index of the given field in grid.
     * @param {string} Pass the field name of the column to get the corresponding column index
@@ -332,7 +331,7 @@ trait Grid
   /** Get the data of currently edited cell value in &quot;batch&quot; edit mode
     * @returns {any}
     */
-  def getCurrentEditCellData(): js.Any = js.native
+  def getCurrentEditCellData(): Any = js.native
   
   /** Get the current page index in grid pager.
     * @returns {number}
@@ -342,12 +341,12 @@ trait Grid
   /** Get the current page data source of grid.
     * @returns {any[]}
     */
-  def getCurrentViewData(): js.Array[js.Any] = js.native
+  def getCurrentViewData(): js.Array[Any] = js.native
   
   /** Get the data of given row index in grid.
     * @returns {any}
     */
-  def getDataByIndex(): js.Any = js.native
+  def getDataByIndex(): Any = js.native
   
   /** Get the column field name from the given header text in grid.
     * @param {string} Pass header text of the column to get its corresponding field name
@@ -363,7 +362,7 @@ trait Grid
   /** Get the records filtered or searched in Grid
     * @returns {any[]}
     */
-  def getFilteredRecords(): js.Array[js.Any] = js.native
+  def getFilteredRecords(): js.Array[Any] = js.native
   
   /** Get the footer content of grid.
     * @returns {HTMLElement}
@@ -394,7 +393,7 @@ trait Grid
   /** Get the names of all the hidden column collections in grid.
     * @returns {any[]}
     */
-  def getHiddenColumnNames(): js.Array[js.Any] = js.native
+  def getHiddenColumnNames(): js.Array[Any] = js.native
   
   /** Get the row index based on the given tr element in grid.
     * @param {JQuery} Pass the tr element in grid content to get its row index
@@ -410,7 +409,7 @@ trait Grid
   /** Get the names of primary key columns in Grid
     * @returns {any[]}
     */
-  def getPrimaryKeyFieldNames(): js.Array[js.Any] = js.native
+  def getPrimaryKeyFieldNames(): js.Array[Any] = js.native
   
   /** Get the rows(tr element) from the given from and to row index in grid
     * @param {number} Pass the from index from which the rows to be returned
@@ -437,24 +436,24 @@ trait Grid
   /** Get the selected records details in grid.
     * @returns {any[]}
     */
-  def getSelectedRecords(): js.Array[js.Any] = js.native
+  def getSelectedRecords(): js.Array[Any] = js.native
   
   /** Get the selected row element details in grid.
     * @returns {any[]}
     */
-  def getSelectedRows(): js.Array[js.Any] = js.native
+  def getSelectedRows(): js.Array[Any] = js.native
   
   /** Get the calculated summary values of JSON data passed to it
     * @param {any} Pass Summary Column details
     * @param {any} Pass JSON Array for which its field values to be calculated
     * @returns {number}
     */
-  def getSummaryValues(summaryCol: js.Any, summaryData: js.Any): Double = js.native
+  def getSummaryValues(summaryCol: Any, summaryData: Any): Double = js.native
   
   /** Get the names of all the visible column collections in grid
     * @returns {any[]}
     */
-  def getVisibleColumnNames(): js.Array[js.Any] = js.native
+  def getVisibleColumnNames(): js.Array[Any] = js.native
   
   /** It accepts the string value and returns the field and sorted direction of the column in grid.
     * @param {string} Pass the field of the column to get the sorted direction of the corresponding column in Grid.
@@ -479,7 +478,7 @@ trait Grid
     * @param {any[]|string} you can pass either array of header text of various columns or a header text of a column to hide
     * @returns {void}
     */
-  def hideColumns(headerText: js.Array[js.Any]): Unit = js.native
+  def hideColumns(headerText: js.Array[Any]): Unit = js.native
   
   @JSName("model")
   var model_Grid: Model = js.native
@@ -507,7 +506,7 @@ trait Grid
     * @returns {void}
     */
   def refreshData(): Unit = js.native
-  def refreshData(additionalParameters: js.Any): Unit = js.native
+  def refreshData(additionalParameters: Any): Unit = js.native
   
   /** It is used to refresh the grid header.
     * @returns {void}
@@ -530,7 +529,7 @@ trait Grid
     * collections
     * @returns {void}
     */
-  def removeSortedColumns(fieldName: js.Array[js.Any]): Unit = js.native
+  def removeSortedColumns(fieldName: js.Array[Any]): Unit = js.native
   
   /** Creates a grid control
     * @returns {void}
@@ -549,7 +548,7 @@ trait Grid
     * @param {number} Pass the index of a row where to be reordered.
     * @returns {void}
     */
-  def reorderRows(indexes: js.Array[js.Any], toIndex: Double): Unit = js.native
+  def reorderRows(indexes: js.Array[Any], toIndex: Double): Unit = js.native
   
   /** Reset the model collections like pageSettings, groupSettings, filterSettings, sortSettings and summaryRows.
     * @returns {void}
@@ -585,7 +584,7 @@ trait Grid
     * @param {any} It is used to set the starting index of row and indexes of cells for that corresponding row for selecting cells.
     * @returns {void}
     */
-  def selectCells(rowCellIndexes: js.Any): Unit = js.native
+  def selectCells(rowCellIndexes: Any): Unit = js.native
   
   /** Select the specified columns in grid based on Index provided.
     * @param {number} It is used to set the starting index of column for selecting columns.
@@ -613,14 +612,14 @@ trait Grid
     * @param {any} optionalTarget element which is clicked.
     * @returns {void}
     */
-  def selectRows(from: js.Array[js.Any], to: Double): Unit = js.native
-  def selectRows(from: js.Array[js.Any], to: Double, target: js.Any): Unit = js.native
-  def selectRows(from: Double, to: Double, target: js.Any): Unit = js.native
+  def selectRows(from: js.Array[Any], to: Double): Unit = js.native
+  def selectRows(from: js.Array[Any], to: Double, target: Any): Unit = js.native
+  def selectRows(from: Double, to: Double, target: Any): Unit = js.native
   /** Select rows in grid.
     * @param {any[]} Pass array of rowIndexes for selecting rows
     * @returns {void}
     */
-  def selectRows(rowIndexes: js.Array[js.Any]): Unit = js.native
+  def selectRows(rowIndexes: js.Array[Any]): Unit = js.native
   
   /** Used to update a particular cell value.
     * @returns {void}
@@ -633,7 +632,7 @@ trait Grid
     * @param {any} It is used to set the value for the selected cell.
     * @returns {void}
     */
-  def setCellValue(Index: Double, fieldName: String, value: js.Any): Unit = js.native
+  def setCellValue(Index: Double, fieldName: String, value: Any): Unit = js.native
   
   /** It sets the default data to the column in grid during adding record in batch edit mode.
     * @returns {void}
@@ -663,7 +662,7 @@ trait Grid
     * @param {any} Specify the validation rules for the field
     * @returns {void}
     */
-  def setValidationToField(fieldName: String, rules: js.Any): Unit = js.native
+  def setValidationToField(fieldName: String, rules: Any): Unit = js.native
   
   /** Send a request to grid to refresh the width set to columns
     * @returns {void}
@@ -675,7 +674,7 @@ trait Grid
     * @param {any[]|string} you can pass either array of header text of various columns or a header text of a column to show
     * @returns {void}
     */
-  def showColumns(headerText: js.Array[js.Any]): Unit = js.native
+  def showColumns(headerText: js.Array[Any]): Unit = js.native
   
   /** Send a sorting request in grid.
     * @param {string} Pass the field name of the column as columnName for which sorting have to be performed
@@ -702,7 +701,7 @@ trait Grid
     * @param {any[]} Pass the edited JSON data of record need to be update.
     * @returns {void}
     */
-  def updateRecord(fieldName: String, data: js.Array[js.Any]): Unit = js.native
+  def updateRecord(fieldName: String, data: js.Array[Any]): Unit = js.native
   
   /** It adapts grid to its parent element or to the browsers window.
     * @returns {void}
@@ -1272,11 +1271,11 @@ object Grid {
     
     /** Returns current filtering object.
       */
-    var currentFilterObject: js.UndefOr[js.Any] = js.undefined
+    var currentFilterObject: js.UndefOr[Any] = js.undefined
     
     /** Returns current filtering column field name.
       */
-    var currentFilteringColumn: js.UndefOr[js.Any] = js.undefined
+    var currentFilteringColumn: js.UndefOr[Any] = js.undefined
     
     /** Returns the current selected page number.
       */
@@ -1284,11 +1283,11 @@ object Grid {
     
     /** Returns the record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the dataSource.
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Returns the end row index of that current page.
       */
@@ -1296,15 +1295,15 @@ object Grid {
     
     /** Returns filter details.
       */
-    var filterCollection: js.UndefOr[js.Any] = js.undefined
+    var filterCollection: js.UndefOr[Any] = js.undefined
     
     /** Returns the excel filter model.
       */
-    var filtermodel: js.UndefOr[js.Any] = js.undefined
+    var filtermodel: js.UndefOr[Any] = js.undefined
     
     /** Returns the foreign key record object (JSON).
       */
-    var foreignKeyData: js.UndefOr[js.Any] = js.undefined
+    var foreignKeyData: js.UndefOr[Any] = js.undefined
     
     /** Returns the customfilter option value.
       */
@@ -1312,7 +1311,7 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the current action event type.
       */
@@ -1332,7 +1331,7 @@ object Grid {
     
     /** Returns the query manager.
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Returns request type.
       */
@@ -1340,11 +1339,11 @@ object Grid {
     
     /** Returns current edited row.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns the record object (JSON).
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the edited row index.
       */
@@ -1360,7 +1359,7 @@ object Grid {
     
     /** Returns selected row for delete.
       */
-    var tr: js.UndefOr[js.Any] = js.undefined
+    var tr: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1391,11 +1390,11 @@ object Grid {
       
       inline def setColumnTypeUndefined: Self = StObject.set(x, "columnType", js.undefined)
       
-      inline def setCurrentFilterObject(value: js.Any): Self = StObject.set(x, "currentFilterObject", value.asInstanceOf[js.Any])
+      inline def setCurrentFilterObject(value: Any): Self = StObject.set(x, "currentFilterObject", value.asInstanceOf[js.Any])
       
       inline def setCurrentFilterObjectUndefined: Self = StObject.set(x, "currentFilterObject", js.undefined)
       
-      inline def setCurrentFilteringColumn(value: js.Any): Self = StObject.set(x, "currentFilteringColumn", value.asInstanceOf[js.Any])
+      inline def setCurrentFilteringColumn(value: Any): Self = StObject.set(x, "currentFilteringColumn", value.asInstanceOf[js.Any])
       
       inline def setCurrentFilteringColumnUndefined: Self = StObject.set(x, "currentFilteringColumn", js.undefined)
       
@@ -1403,9 +1402,9 @@ object Grid {
       
       inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -1415,15 +1414,15 @@ object Grid {
       
       inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
       
-      inline def setFilterCollection(value: js.Any): Self = StObject.set(x, "filterCollection", value.asInstanceOf[js.Any])
+      inline def setFilterCollection(value: Any): Self = StObject.set(x, "filterCollection", value.asInstanceOf[js.Any])
       
       inline def setFilterCollectionUndefined: Self = StObject.set(x, "filterCollection", js.undefined)
       
-      inline def setFiltermodel(value: js.Any): Self = StObject.set(x, "filtermodel", value.asInstanceOf[js.Any])
+      inline def setFiltermodel(value: Any): Self = StObject.set(x, "filtermodel", value.asInstanceOf[js.Any])
       
       inline def setFiltermodelUndefined: Self = StObject.set(x, "filtermodel", js.undefined)
       
-      inline def setForeignKeyData(value: js.Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
+      inline def setForeignKeyData(value: Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
       
       inline def setForeignKeyDataUndefined: Self = StObject.set(x, "foreignKeyData", js.undefined)
       
@@ -1431,7 +1430,7 @@ object Grid {
       
       inline def setIsCustomFilterUndefined: Self = StObject.set(x, "isCustomFilter", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1451,7 +1450,7 @@ object Grid {
       
       inline def setPrimaryKeyValueUndefined: Self = StObject.set(x, "primaryKeyValue", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -1459,9 +1458,9 @@ object Grid {
       
       inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -1479,7 +1478,7 @@ object Grid {
       
       inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
       
-      inline def setTr(value: js.Any): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+      inline def setTr(value: Any): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
       
       inline def setTrUndefined: Self = StObject.set(x, "tr", js.undefined)
       
@@ -1509,7 +1508,7 @@ object Grid {
     
     /** Returns current filtering object.
       */
-    var currentFilterObject: js.UndefOr[js.Any] = js.undefined
+    var currentFilterObject: js.UndefOr[Any] = js.undefined
     
     /** Returns current filtering column field name.
       */
@@ -1521,11 +1520,11 @@ object Grid {
     
     /** Returns the record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the dataSource.
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Returns the end row index of that current page.
       */
@@ -1533,15 +1532,15 @@ object Grid {
     
     /** Returns filter details.
       */
-    var filterCollection: js.UndefOr[js.Any] = js.undefined
+    var filterCollection: js.UndefOr[Any] = js.undefined
     
     /** Returns the excel filter model.
       */
-    var filtermodel: js.UndefOr[js.Any] = js.undefined
+    var filtermodel: js.UndefOr[Any] = js.undefined
     
     /** Returns the foreign key record object (JSON).
       */
-    var foreignKeyData: js.UndefOr[js.Any] = js.undefined
+    var foreignKeyData: js.UndefOr[Any] = js.undefined
     
     /** Returns the customfilter option value.
       */
@@ -1549,7 +1548,7 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns current action event type.
       */
@@ -1573,11 +1572,11 @@ object Grid {
     
     /** Returns current edited row.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns the record object (JSON).
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the edited row index.
       */
@@ -1593,11 +1592,11 @@ object Grid {
     
     /** Returns grid element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns selected row for delete.
       */
-    var tr: js.UndefOr[js.Any] = js.undefined
+    var tr: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1628,7 +1627,7 @@ object Grid {
       
       inline def setColumnTypeUndefined: Self = StObject.set(x, "columnType", js.undefined)
       
-      inline def setCurrentFilterObject(value: js.Any): Self = StObject.set(x, "currentFilterObject", value.asInstanceOf[js.Any])
+      inline def setCurrentFilterObject(value: Any): Self = StObject.set(x, "currentFilterObject", value.asInstanceOf[js.Any])
       
       inline def setCurrentFilterObjectUndefined: Self = StObject.set(x, "currentFilterObject", js.undefined)
       
@@ -1640,9 +1639,9 @@ object Grid {
       
       inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -1652,15 +1651,15 @@ object Grid {
       
       inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
       
-      inline def setFilterCollection(value: js.Any): Self = StObject.set(x, "filterCollection", value.asInstanceOf[js.Any])
+      inline def setFilterCollection(value: Any): Self = StObject.set(x, "filterCollection", value.asInstanceOf[js.Any])
       
       inline def setFilterCollectionUndefined: Self = StObject.set(x, "filterCollection", js.undefined)
       
-      inline def setFiltermodel(value: js.Any): Self = StObject.set(x, "filtermodel", value.asInstanceOf[js.Any])
+      inline def setFiltermodel(value: Any): Self = StObject.set(x, "filtermodel", value.asInstanceOf[js.Any])
       
       inline def setFiltermodelUndefined: Self = StObject.set(x, "filtermodel", js.undefined)
       
-      inline def setForeignKeyData(value: js.Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
+      inline def setForeignKeyData(value: Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
       
       inline def setForeignKeyDataUndefined: Self = StObject.set(x, "foreignKeyData", js.undefined)
       
@@ -1668,7 +1667,7 @@ object Grid {
       
       inline def setIsCustomFilterUndefined: Self = StObject.set(x, "isCustomFilter", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1692,9 +1691,9 @@ object Grid {
       
       inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -1712,11 +1711,11 @@ object Grid {
       
       inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setTr(value: js.Any): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+      inline def setTr(value: Any): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
       
       inline def setTrUndefined: Self = StObject.set(x, "tr", js.undefined)
       
@@ -1742,7 +1741,7 @@ object Grid {
     
     /** Returns current filtering object.
       */
-    var currentFilterObject: js.UndefOr[js.Any] = js.undefined
+    var currentFilterObject: js.UndefOr[Any] = js.undefined
     
     /** Returns current filtering column field name.
       */
@@ -1754,7 +1753,7 @@ object Grid {
     
     /** Returns the record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the end row index of that current page.
       */
@@ -1762,19 +1761,19 @@ object Grid {
     
     /** Returns the error return by server.
       */
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
     /** Returns filter details.
       */
-    var filterCollection: js.UndefOr[js.Any] = js.undefined
+    var filterCollection: js.UndefOr[Any] = js.undefined
     
     /** Returns the foreign key record object (JSON).
       */
-    var foreignKeyData: js.UndefOr[js.Any] = js.undefined
+    var foreignKeyData: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns current action event type.
       */
@@ -1798,11 +1797,11 @@ object Grid {
     
     /** Returns current edited row.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns the record object (JSON).
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the edited row index.
       */
@@ -1818,11 +1817,11 @@ object Grid {
     
     /** Returns grid element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns selected row for delete.
       */
-    var tr: js.UndefOr[js.Any] = js.undefined
+    var tr: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1849,7 +1848,7 @@ object Grid {
       
       inline def setColumnSortDirectionUndefined: Self = StObject.set(x, "columnSortDirection", js.undefined)
       
-      inline def setCurrentFilterObject(value: js.Any): Self = StObject.set(x, "currentFilterObject", value.asInstanceOf[js.Any])
+      inline def setCurrentFilterObject(value: Any): Self = StObject.set(x, "currentFilterObject", value.asInstanceOf[js.Any])
       
       inline def setCurrentFilterObjectUndefined: Self = StObject.set(x, "currentFilterObject", js.undefined)
       
@@ -1861,7 +1860,7 @@ object Grid {
       
       inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -1869,19 +1868,19 @@ object Grid {
       
       inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setFilterCollection(value: js.Any): Self = StObject.set(x, "filterCollection", value.asInstanceOf[js.Any])
+      inline def setFilterCollection(value: Any): Self = StObject.set(x, "filterCollection", value.asInstanceOf[js.Any])
       
       inline def setFilterCollectionUndefined: Self = StObject.set(x, "filterCollection", js.undefined)
       
-      inline def setForeignKeyData(value: js.Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
+      inline def setForeignKeyData(value: Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
       
       inline def setForeignKeyDataUndefined: Self = StObject.set(x, "foreignKeyData", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1905,9 +1904,9 @@ object Grid {
       
       inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -1925,11 +1924,11 @@ object Grid {
       
       inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setTr(value: js.Any): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+      inline def setTr(value: Any): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
       
       inline def setTrUndefined: Self = StObject.set(x, "tr", js.undefined)
       
@@ -1947,7 +1946,7 @@ object Grid {
     
     /** Returns the cell object.
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Returns the column index.
       */
@@ -1955,23 +1954,23 @@ object Grid {
     
     /** Returns the column object.
       */
-    var columnObject: js.UndefOr[js.Any] = js.undefined
+    var columnObject: js.UndefOr[Any] = js.undefined
     
     /** Returns deleted data.
       */
-    var defaultData: js.UndefOr[js.Any] = js.undefined
+    var defaultData: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the primaryKey.
       */
-    var primaryKey: js.UndefOr[js.Any] = js.undefined
+    var primaryKey: js.UndefOr[Any] = js.undefined
     
     /** Returns the row element.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1990,7 +1989,7 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
@@ -1998,23 +1997,23 @@ object Grid {
       
       inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
       
-      inline def setColumnObject(value: js.Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
+      inline def setColumnObject(value: Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
       
       inline def setColumnObjectUndefined: Self = StObject.set(x, "columnObject", js.undefined)
       
-      inline def setDefaultData(value: js.Any): Self = StObject.set(x, "defaultData", value.asInstanceOf[js.Any])
+      inline def setDefaultData(value: Any): Self = StObject.set(x, "defaultData", value.asInstanceOf[js.Any])
       
       inline def setDefaultDataUndefined: Self = StObject.set(x, "defaultData", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPrimaryKey(value: js.Any): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+      inline def setPrimaryKey(value: Any): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
       
       inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
       inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
       
@@ -2032,15 +2031,15 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the primary key.
       */
-    var primaryKey: js.UndefOr[js.Any] = js.undefined
+    var primaryKey: js.UndefOr[Any] = js.undefined
     
     /** Returns deleted data.
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the row Index.
       */
@@ -2063,15 +2062,15 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPrimaryKey(value: js.Any): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+      inline def setPrimaryKey(value: Any): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
       
       inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -2093,15 +2092,15 @@ object Grid {
     
     /** Returns the default data object.
       */
-    var defaultData: js.UndefOr[js.Any] = js.undefined
+    var defaultData: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the primaryKey.
       */
-    var primaryKey: js.UndefOr[js.Any] = js.undefined
+    var primaryKey: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -2120,15 +2119,15 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDefaultData(value: js.Any): Self = StObject.set(x, "defaultData", value.asInstanceOf[js.Any])
+      inline def setDefaultData(value: Any): Self = StObject.set(x, "defaultData", value.asInstanceOf[js.Any])
       
       inline def setDefaultDataUndefined: Self = StObject.set(x, "defaultData", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPrimaryKey(value: js.Any): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+      inline def setPrimaryKey(value: Any): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
       
       inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
       
@@ -2142,19 +2141,19 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the primaryKey.
       */
-    var primaryKey: js.UndefOr[js.Any] = js.undefined
+    var primaryKey: js.UndefOr[Any] = js.undefined
     
     /** Returns the row element.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns deleted data.
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index.
       */
@@ -2173,17 +2172,17 @@ object Grid {
     
     extension [Self <: BeforeBatchDeleteEventArgs](x: Self) {
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPrimaryKey(value: js.Any): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+      inline def setPrimaryKey(value: Any): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
       
       inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -2203,11 +2202,11 @@ object Grid {
     
     /** Returns the changed record object.
       */
-    var batchChanges: js.UndefOr[js.Any] = js.undefined
+    var batchChanges: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -2222,11 +2221,11 @@ object Grid {
     
     extension [Self <: BeforeBatchSaveEventArgs](x: Self) {
       
-      inline def setBatchChanges(value: js.Any): Self = StObject.set(x, "batchChanges", value.asInstanceOf[js.Any])
+      inline def setBatchChanges(value: Any): Self = StObject.set(x, "batchChanges", value.asInstanceOf[js.Any])
       
       inline def setBatchChangesUndefined: Self = StObject.set(x, "batchChanges", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2240,15 +2239,15 @@ object Grid {
     
     /** Returns the Grid element.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the selected records.
       */
-    var selectedRows: js.UndefOr[js.Any] = js.undefined
+    var selectedRows: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -2263,15 +2262,15 @@ object Grid {
     
     extension [Self <: BeforePrintEventArgs](x: Self) {
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setSelectedRows(value: js.Any): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
+      inline def setSelectedRows(value: Any): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
       
       inline def setSelectedRowsUndefined: Self = StObject.set(x, "selectedRows", js.undefined)
       
@@ -2289,19 +2288,19 @@ object Grid {
     
     /** Returns the dragged record details
       */
-    var draggedRecords: js.UndefOr[js.Any] = js.undefined
+    var draggedRecords: js.UndefOr[Any] = js.undefined
     
     /** Returns the drop details
       */
-    var dropDetails: js.UndefOr[js.Any] = js.undefined
+    var dropDetails: js.UndefOr[Any] = js.undefined
     
     /** Returns the targeted row.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the targeted row index.
       */
-    var targetIndex: js.UndefOr[js.Any] = js.undefined
+    var targetIndex: js.UndefOr[Any] = js.undefined
   }
   object BeforeRowDropEventArgs {
     
@@ -2316,17 +2315,17 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDraggedRecords(value: js.Any): Self = StObject.set(x, "draggedRecords", value.asInstanceOf[js.Any])
+      inline def setDraggedRecords(value: Any): Self = StObject.set(x, "draggedRecords", value.asInstanceOf[js.Any])
       
       inline def setDraggedRecordsUndefined: Self = StObject.set(x, "draggedRecords", js.undefined)
       
-      inline def setDropDetails(value: js.Any): Self = StObject.set(x, "dropDetails", value.asInstanceOf[js.Any])
+      inline def setDropDetails(value: Any): Self = StObject.set(x, "dropDetails", value.asInstanceOf[js.Any])
       
       inline def setDropDetailsUndefined: Self = StObject.set(x, "dropDetails", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      inline def setTargetIndex(value: js.Any): Self = StObject.set(x, "targetIndex", value.asInstanceOf[js.Any])
+      inline def setTargetIndex(value: Any): Self = StObject.set(x, "targetIndex", value.asInstanceOf[js.Any])
       
       inline def setTargetIndexUndefined: Self = StObject.set(x, "targetIndex", js.undefined)
       
@@ -2342,19 +2341,19 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the primary key.
       */
-    var primaryKey: js.UndefOr[js.Any] = js.undefined
+    var primaryKey: js.UndefOr[Any] = js.undefined
     
     /** Returns the primary key value.
       */
-    var primaryKeyValue: js.UndefOr[js.Any] = js.undefined
+    var primaryKeyValue: js.UndefOr[Any] = js.undefined
     
     /** Returns the current edited row.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns the edited row index.
       */
@@ -2377,19 +2376,19 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPrimaryKey(value: js.Any): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+      inline def setPrimaryKey(value: Any): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
       
       inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
       
-      inline def setPrimaryKeyValue(value: js.Any): Self = StObject.set(x, "primaryKeyValue", value.asInstanceOf[js.Any])
+      inline def setPrimaryKeyValue(value: Any): Self = StObject.set(x, "primaryKeyValue", value.asInstanceOf[js.Any])
       
       inline def setPrimaryKeyValueUndefined: Self = StObject.set(x, "primaryKeyValue", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
       inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
       
@@ -2411,19 +2410,19 @@ object Grid {
     
     /** Returns the deselected cell element.
       */
-    var currentCell: js.UndefOr[js.Any] = js.undefined
+    var currentCell: js.UndefOr[Any] = js.undefined
     
     /** Returns current record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns current record object (JSON).
       */
-    var selectedData: js.UndefOr[js.Any] = js.undefined
+    var selectedData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -2442,19 +2441,19 @@ object Grid {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setCurrentCell(value: js.Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
+      inline def setCurrentCell(value: Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
       
       inline def setCurrentCellUndefined: Self = StObject.set(x, "currentCell", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setSelectedData(value: js.Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
+      inline def setSelectedData(value: Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
       
       inline def setSelectedDataUndefined: Self = StObject.set(x, "selectedData", js.undefined)
       
@@ -2472,11 +2471,11 @@ object Grid {
     
     /** Returns the deselecting cell element.
       */
-    var currentCell: js.UndefOr[js.Any] = js.undefined
+    var currentCell: js.UndefOr[Any] = js.undefined
     
     /** Returns current record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns whether the ctrl key is pressed while deselecting cell
       */
@@ -2488,11 +2487,11 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns current record object (JSON).
       */
-    var selectedData: js.UndefOr[js.Any] = js.undefined
+    var selectedData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -2511,11 +2510,11 @@ object Grid {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setCurrentCell(value: js.Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
+      inline def setCurrentCell(value: Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
       
       inline def setCurrentCellUndefined: Self = StObject.set(x, "currentCell", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -2527,11 +2526,11 @@ object Grid {
       
       inline def setIsShiftKeyPressedUndefined: Self = StObject.set(x, "isShiftKeyPressed", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setSelectedData(value: js.Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
+      inline def setSelectedData(value: Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
       
       inline def setSelectedDataUndefined: Self = StObject.set(x, "selectedData", js.undefined)
       
@@ -2545,7 +2544,7 @@ object Grid {
     
     /** Returns the cell object.
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Returns the column name.
       */
@@ -2553,7 +2552,7 @@ object Grid {
     
     /** Returns the column object.
       */
-    var columnObject: js.UndefOr[js.Any] = js.undefined
+    var columnObject: js.UndefOr[Any] = js.undefined
     
     /** Returns isForeignKey option value.
       */
@@ -2561,7 +2560,7 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous value of the cell.
       */
@@ -2569,7 +2568,7 @@ object Grid {
     
     /** Returns the row data object.
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -2577,7 +2576,7 @@ object Grid {
     
     /** Returns the validation rules.
       */
-    var validationRules: js.UndefOr[js.Any] = js.undefined
+    var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Returns the cell value.
       */
@@ -2592,7 +2591,7 @@ object Grid {
     
     extension [Self <: CellEditEventArgs](x: Self) {
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
@@ -2600,7 +2599,7 @@ object Grid {
       
       inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
       
-      inline def setColumnObject(value: js.Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
+      inline def setColumnObject(value: Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
       
       inline def setColumnObjectUndefined: Self = StObject.set(x, "columnObject", js.undefined)
       
@@ -2608,7 +2607,7 @@ object Grid {
       
       inline def setIsForeignKeyUndefined: Self = StObject.set(x, "isForeignKey", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2616,7 +2615,7 @@ object Grid {
       
       inline def setPreviousValueUndefined: Self = StObject.set(x, "previousValue", js.undefined)
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -2624,7 +2623,7 @@ object Grid {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setValidationRules(value: js.Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      inline def setValidationRules(value: Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
       inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
       
@@ -2638,7 +2637,7 @@ object Grid {
     
     /** Returns the cell object.
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Returns the column name.
       */
@@ -2646,7 +2645,7 @@ object Grid {
     
     /** Returns the column object.
       */
-    var columnObject: js.UndefOr[js.Any] = js.undefined
+    var columnObject: js.UndefOr[Any] = js.undefined
     
     /** Returns isForeignKey option value.
       */
@@ -2654,7 +2653,7 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous value of the cell.
       */
@@ -2662,7 +2661,7 @@ object Grid {
     
     /** Returns the row data object.
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -2681,7 +2680,7 @@ object Grid {
     
     extension [Self <: CellSaveEventArgs](x: Self) {
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
@@ -2689,7 +2688,7 @@ object Grid {
       
       inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
       
-      inline def setColumnObject(value: js.Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
+      inline def setColumnObject(value: Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
       
       inline def setColumnObjectUndefined: Self = StObject.set(x, "columnObject", js.undefined)
       
@@ -2697,7 +2696,7 @@ object Grid {
       
       inline def setIsForeignKeyUndefined: Self = StObject.set(x, "isForeignKey", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2705,7 +2704,7 @@ object Grid {
       
       inline def setPreviousValueUndefined: Self = StObject.set(x, "previousValue", js.undefined)
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -2731,19 +2730,19 @@ object Grid {
     
     /** Returns the selected cell element.
       */
-    var currentCell: js.UndefOr[js.Any] = js.undefined
+    var currentCell: js.UndefOr[Any] = js.undefined
     
     /** Returns current record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected cell element.
       */
-    var previousRowCell: js.UndefOr[js.Any] = js.undefined
+    var previousRowCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected cell index value.
       */
@@ -2751,11 +2750,11 @@ object Grid {
     
     /** Returns current record object (JSON).
       */
-    var selectedData: js.UndefOr[js.Any] = js.undefined
+    var selectedData: js.UndefOr[Any] = js.undefined
     
     /** Returns the selected row cell index values.
       */
-    var selectedRowCellIndex: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectedRowCellIndex: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -2778,19 +2777,19 @@ object Grid {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setCurrentCell(value: js.Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
+      inline def setCurrentCell(value: Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
       
       inline def setCurrentCellUndefined: Self = StObject.set(x, "currentCell", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPreviousRowCell(value: js.Any): Self = StObject.set(x, "previousRowCell", value.asInstanceOf[js.Any])
+      inline def setPreviousRowCell(value: Any): Self = StObject.set(x, "previousRowCell", value.asInstanceOf[js.Any])
       
       inline def setPreviousRowCellIndex(value: Double): Self = StObject.set(x, "previousRowCellIndex", value.asInstanceOf[js.Any])
       
@@ -2798,15 +2797,15 @@ object Grid {
       
       inline def setPreviousRowCellUndefined: Self = StObject.set(x, "previousRowCell", js.undefined)
       
-      inline def setSelectedData(value: js.Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
+      inline def setSelectedData(value: Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
       
       inline def setSelectedDataUndefined: Self = StObject.set(x, "selectedData", js.undefined)
       
-      inline def setSelectedRowCellIndex(value: js.Array[js.Any]): Self = StObject.set(x, "selectedRowCellIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedRowCellIndex(value: js.Array[Any]): Self = StObject.set(x, "selectedRowCellIndex", value.asInstanceOf[js.Any])
       
       inline def setSelectedRowCellIndexUndefined: Self = StObject.set(x, "selectedRowCellIndex", js.undefined)
       
-      inline def setSelectedRowCellIndexVarargs(value: js.Any*): Self = StObject.set(x, "selectedRowCellIndex", js.Array(value :_*))
+      inline def setSelectedRowCellIndexVarargs(value: Any*): Self = StObject.set(x, "selectedRowCellIndex", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -2826,11 +2825,11 @@ object Grid {
     
     /** Returns the selected cell element.
       */
-    var currentCell: js.UndefOr[js.Any] = js.undefined
+    var currentCell: js.UndefOr[Any] = js.undefined
     
     /** Returns current record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns whether the ctrl key is pressed while selecting cell
       */
@@ -2842,11 +2841,11 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected cell element.
       */
-    var previousRowCell: js.UndefOr[js.Any] = js.undefined
+    var previousRowCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected cell index value.
       */
@@ -2854,7 +2853,7 @@ object Grid {
     
     /** Returns current record object (JSON).
       */
-    var selectedData: js.UndefOr[js.Any] = js.undefined
+    var selectedData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -2877,11 +2876,11 @@ object Grid {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setCurrentCell(value: js.Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
+      inline def setCurrentCell(value: Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
       
       inline def setCurrentCellUndefined: Self = StObject.set(x, "currentCell", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -2893,11 +2892,11 @@ object Grid {
       
       inline def setIsShiftKeyPressedUndefined: Self = StObject.set(x, "isShiftKeyPressed", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPreviousRowCell(value: js.Any): Self = StObject.set(x, "previousRowCell", value.asInstanceOf[js.Any])
+      inline def setPreviousRowCell(value: Any): Self = StObject.set(x, "previousRowCell", value.asInstanceOf[js.Any])
       
       inline def setPreviousRowCellIndex(value: Double): Self = StObject.set(x, "previousRowCellIndex", value.asInstanceOf[js.Any])
       
@@ -2905,7 +2904,7 @@ object Grid {
       
       inline def setPreviousRowCellUndefined: Self = StObject.set(x, "previousRowCell", js.undefined)
       
-      inline def setSelectedData(value: js.Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
+      inline def setSelectedData(value: Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
       
       inline def setSelectedDataUndefined: Self = StObject.set(x, "selectedData", js.undefined)
       
@@ -2958,17 +2957,17 @@ object Grid {
     
     /** Gets or sets a value that indicates the attribute values to the td element of a particular column
       */
-    var customAttributes: js.UndefOr[js.Any] = js.undefined
+    var customAttributes: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates to bind the external datasource to the particular column when column editType as dropdownedit and also it is used to bind the datasource to the
       * foreign key column while editing the grid. //Where data is array of JSON objects of text and value for the drop-down and array of JSON objects for foreign key column.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates to display the specified default value while adding a new record to the grid
       */
-    var defaultValue: js.UndefOr[String | Double | Boolean | Date] = js.undefined
+    var defaultValue: js.UndefOr[String | Double | Boolean | js.Date] = js.undefined
     
     /** Gets or sets a value that indicates to render the grid content and header with an HTML elements
       * @Default {false}
@@ -2982,12 +2981,12 @@ object Grid {
     
     /** Gets or sets a value that indicates to customize ejNumericTextbox of an editable column. See editingType
       */
-    var editParams: js.UndefOr[js.Any] = js.undefined
+    var editParams: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a template that displays a custom editor used to edit column values. See editTemplate
       * @Default {null}
       */
-    var editTemplate: js.UndefOr[js.Any] = js.undefined
+    var editTemplate: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates to render the element(based on edit type) for editing the grid record. See editingType
       * @Default {ej.Grid.EditingType.String}
@@ -3006,7 +3005,7 @@ object Grid {
     /** Gets or sets a template that customize the filter control from default . See filterBarTemplate
       * @Default {null}
       */
-    var filterBarTemplate: js.UndefOr[js.Any] = js.undefined
+    var filterBarTemplate: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates to render the excel or menu filter dialog to the grid columns. See filterType
       * @Default {null}
@@ -3091,7 +3090,7 @@ object Grid {
     
     /** Gets or sets a value that indicates to define constraints for saving data to the database.
       */
-    var validationRules: js.UndefOr[js.Any] = js.undefined
+    var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates whether this column is visible in the grid.
       * @Default {true}
@@ -3139,21 +3138,21 @@ object Grid {
       
       inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
       
-      inline def setCommandsVarargs(value: ColumnsCommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: ColumnsCommand*): Self = StObject.set(x, "commands", js.Array(value*))
       
       inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setCustomAttributes(value: js.Any): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
+      inline def setCustomAttributes(value: Any): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
       
       inline def setCustomAttributesUndefined: Self = StObject.set(x, "customAttributes", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDefaultValue(value: String | Double | Boolean | Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String | Double | Boolean | js.Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
@@ -3165,11 +3164,11 @@ object Grid {
       
       inline def setDisplayAsCheckboxUndefined: Self = StObject.set(x, "displayAsCheckbox", js.undefined)
       
-      inline def setEditParams(value: js.Any): Self = StObject.set(x, "editParams", value.asInstanceOf[js.Any])
+      inline def setEditParams(value: Any): Self = StObject.set(x, "editParams", value.asInstanceOf[js.Any])
       
       inline def setEditParamsUndefined: Self = StObject.set(x, "editParams", js.undefined)
       
-      inline def setEditTemplate(value: js.Any): Self = StObject.set(x, "editTemplate", value.asInstanceOf[js.Any])
+      inline def setEditTemplate(value: Any): Self = StObject.set(x, "editTemplate", value.asInstanceOf[js.Any])
       
       inline def setEditTemplateUndefined: Self = StObject.set(x, "editTemplate", js.undefined)
       
@@ -3185,7 +3184,7 @@ object Grid {
       
       inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
       
-      inline def setFilterBarTemplate(value: js.Any): Self = StObject.set(x, "filterBarTemplate", value.asInstanceOf[js.Any])
+      inline def setFilterBarTemplate(value: Any): Self = StObject.set(x, "filterBarTemplate", value.asInstanceOf[js.Any])
       
       inline def setFilterBarTemplateUndefined: Self = StObject.set(x, "filterBarTemplate", js.undefined)
       
@@ -3257,7 +3256,7 @@ object Grid {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setValidationRules(value: js.Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      inline def setValidationRules(value: Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
       inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
       
@@ -3275,7 +3274,7 @@ object Grid {
     
     /** Returns corresponding column object (JSON).
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns the Deselected column index value.
       */
@@ -3283,11 +3282,11 @@ object Grid {
     
     /** Returns the Deselected column header element.
       */
-    var headerCell: js.UndefOr[js.Any] = js.undefined
+    var headerCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -3302,7 +3301,7 @@ object Grid {
     
     extension [Self <: ColumnDeselectedEventArgs](x: Self) {
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
@@ -3310,11 +3309,11 @@ object Grid {
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setHeaderCell(value: js.Any): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
+      inline def setHeaderCell(value: Any): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
       
       inline def setHeaderCellUndefined: Self = StObject.set(x, "headerCell", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -3328,7 +3327,7 @@ object Grid {
     
     /** Returns corresponding column object (JSON).
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns the deselecting column index value.
       */
@@ -3336,7 +3335,7 @@ object Grid {
     
     /** Returns the deselecting column header element.
       */
-    var headerCell: js.UndefOr[js.Any] = js.undefined
+    var headerCell: js.UndefOr[Any] = js.undefined
     
     /** Returns whether the ctrl key is pressed while deselecting column
       */
@@ -3348,7 +3347,7 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -3363,7 +3362,7 @@ object Grid {
     
     extension [Self <: ColumnDeselectingEventArgs](x: Self) {
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
@@ -3371,7 +3370,7 @@ object Grid {
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setHeaderCell(value: js.Any): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
+      inline def setHeaderCell(value: Any): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
       
       inline def setHeaderCellUndefined: Self = StObject.set(x, "headerCell", js.undefined)
       
@@ -3383,7 +3382,7 @@ object Grid {
       
       inline def setIsShiftKeyPressedUndefined: Self = StObject.set(x, "isShiftKeyPressed", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -3401,19 +3400,19 @@ object Grid {
     
     /** Returns the draggable column object.
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns draggable element type.
       */
-    var draggableType: js.UndefOr[js.Any] = js.undefined
+    var draggableType: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns target elements based on mouse move position.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -3432,19 +3431,19 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setDraggableType(value: js.Any): Self = StObject.set(x, "draggableType", value.asInstanceOf[js.Any])
+      inline def setDraggableType(value: Any): Self = StObject.set(x, "draggableType", value.asInstanceOf[js.Any])
       
       inline def setDraggableTypeUndefined: Self = StObject.set(x, "draggableType", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -3462,19 +3461,19 @@ object Grid {
     
     /** Returns the draggable column object.
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns draggable element type.
       */
-    var draggableType: js.UndefOr[js.Any] = js.undefined
+    var draggableType: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns drag start element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -3493,19 +3492,19 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setDraggableType(value: js.Any): Self = StObject.set(x, "draggableType", value.asInstanceOf[js.Any])
+      inline def setDraggableType(value: Any): Self = StObject.set(x, "draggableType", value.asInstanceOf[js.Any])
       
       inline def setDraggableTypeUndefined: Self = StObject.set(x, "draggableType", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -3523,7 +3522,7 @@ object Grid {
     
     /** Returns the draggable column object.
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns draggable element type.
       */
@@ -3531,11 +3530,11 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns dropped dragged element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -3554,7 +3553,7 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
@@ -3562,11 +3561,11 @@ object Grid {
       
       inline def setDraggableTypeUndefined: Self = StObject.set(x, "draggableType", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -3584,7 +3583,7 @@ object Grid {
     
     /** Returns corresponding column object (JSON).
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns the selected cell index value.
       */
@@ -3592,15 +3591,15 @@ object Grid {
     
     /** Returns the selected header cell element.
       */
-    var headerCell: js.UndefOr[js.Any] = js.undefined
+    var headerCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected header cell element.
       */
-    var prevColumnHeaderCell: js.UndefOr[js.Any] = js.undefined
+    var prevColumnHeaderCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected column index value.
       */
@@ -3608,7 +3607,7 @@ object Grid {
     
     /** Returns the selected columns values.
       */
-    var selectedColumnsIndex: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectedColumnsIndex: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -3627,7 +3626,7 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
@@ -3635,15 +3634,15 @@ object Grid {
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setHeaderCell(value: js.Any): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
+      inline def setHeaderCell(value: Any): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
       
       inline def setHeaderCellUndefined: Self = StObject.set(x, "headerCell", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPrevColumnHeaderCell(value: js.Any): Self = StObject.set(x, "prevColumnHeaderCell", value.asInstanceOf[js.Any])
+      inline def setPrevColumnHeaderCell(value: Any): Self = StObject.set(x, "prevColumnHeaderCell", value.asInstanceOf[js.Any])
       
       inline def setPrevColumnHeaderCellUndefined: Self = StObject.set(x, "prevColumnHeaderCell", js.undefined)
       
@@ -3651,11 +3650,11 @@ object Grid {
       
       inline def setPreviousColumnIndexUndefined: Self = StObject.set(x, "previousColumnIndex", js.undefined)
       
-      inline def setSelectedColumnsIndex(value: js.Array[js.Any]): Self = StObject.set(x, "selectedColumnsIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedColumnsIndex(value: js.Array[Any]): Self = StObject.set(x, "selectedColumnsIndex", value.asInstanceOf[js.Any])
       
       inline def setSelectedColumnsIndexUndefined: Self = StObject.set(x, "selectedColumnsIndex", js.undefined)
       
-      inline def setSelectedColumnsIndexVarargs(value: js.Any*): Self = StObject.set(x, "selectedColumnsIndex", js.Array(value :_*))
+      inline def setSelectedColumnsIndexVarargs(value: Any*): Self = StObject.set(x, "selectedColumnsIndex", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -3667,7 +3666,7 @@ object Grid {
     
     /** Returns corresponding column object (JSON).
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns the selected column index value.
       */
@@ -3675,7 +3674,7 @@ object Grid {
     
     /** Returns the selected header cell element.
       */
-    var headerCell: js.UndefOr[js.Any] = js.undefined
+    var headerCell: js.UndefOr[Any] = js.undefined
     
     /** Returns whether the ctrl key is pressed while selecting cell
       */
@@ -3687,11 +3686,11 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected header cell element.
       */
-    var prevColumnHeaderCell: js.UndefOr[js.Any] = js.undefined
+    var prevColumnHeaderCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected column index value.
       */
@@ -3710,7 +3709,7 @@ object Grid {
     
     extension [Self <: ColumnSelectingEventArgs](x: Self) {
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
@@ -3718,7 +3717,7 @@ object Grid {
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setHeaderCell(value: js.Any): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
+      inline def setHeaderCell(value: Any): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
       
       inline def setHeaderCellUndefined: Self = StObject.set(x, "headerCell", js.undefined)
       
@@ -3730,11 +3729,11 @@ object Grid {
       
       inline def setIsShiftKeyPressedUndefined: Self = StObject.set(x, "isShiftKeyPressed", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPrevColumnHeaderCell(value: js.Any): Self = StObject.set(x, "prevColumnHeaderCell", value.asInstanceOf[js.Any])
+      inline def setPrevColumnHeaderCell(value: Any): Self = StObject.set(x, "prevColumnHeaderCell", value.asInstanceOf[js.Any])
       
       inline def setPrevColumnHeaderCellUndefined: Self = StObject.set(x, "prevColumnHeaderCell", js.undefined)
       
@@ -3752,7 +3751,7 @@ object Grid {
     
     /** Gets or sets an object that indicates to define all the button options which are available in ejButton.
       */
-    var buttonOptions: js.UndefOr[js.Any] = js.undefined
+    var buttonOptions: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates to add the command column button. See unboundType
       */
@@ -3767,7 +3766,7 @@ object Grid {
     
     extension [Self <: ColumnsCommand](x: Self) {
       
-      inline def setButtonOptions(value: js.Any): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
+      inline def setButtonOptions(value: Any): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
       
       inline def setButtonOptionsUndefined: Self = StObject.set(x, "buttonOptions", js.undefined)
       
@@ -3785,11 +3784,11 @@ object Grid {
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the status of contextmenu item which denotes its enabled state
       */
@@ -3797,7 +3796,7 @@ object Grid {
     
     /** Returns the target item.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -3816,11 +3815,11 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -3828,7 +3827,7 @@ object Grid {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -3844,12 +3843,12 @@ object Grid {
       * target, if you want selected items from contextmenu you have to mention in the contextMenuItems
       * @Default {[]}
       */
-    var contextMenuItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var contextMenuItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a value that indicates whether to add custom contextMenu items within the toolbar to perform any action in the grid
       * @Default {[]}
       */
-    var customContextMenuItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var customContextMenuItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a value that indicates whether to disable the default context menu items in the grid.
       * @Default {false}
@@ -3874,17 +3873,17 @@ object Grid {
     
     extension [Self <: ContextMenuSettings](x: Self) {
       
-      inline def setContextMenuItems(value: js.Array[js.Any]): Self = StObject.set(x, "contextMenuItems", value.asInstanceOf[js.Any])
+      inline def setContextMenuItems(value: js.Array[Any]): Self = StObject.set(x, "contextMenuItems", value.asInstanceOf[js.Any])
       
       inline def setContextMenuItemsUndefined: Self = StObject.set(x, "contextMenuItems", js.undefined)
       
-      inline def setContextMenuItemsVarargs(value: js.Any*): Self = StObject.set(x, "contextMenuItems", js.Array(value :_*))
+      inline def setContextMenuItemsVarargs(value: Any*): Self = StObject.set(x, "contextMenuItems", js.Array(value*))
       
-      inline def setCustomContextMenuItems(value: js.Array[js.Any]): Self = StObject.set(x, "customContextMenuItems", value.asInstanceOf[js.Any])
+      inline def setCustomContextMenuItems(value: js.Array[Any]): Self = StObject.set(x, "customContextMenuItems", value.asInstanceOf[js.Any])
       
       inline def setCustomContextMenuItemsUndefined: Self = StObject.set(x, "customContextMenuItems", js.undefined)
       
-      inline def setCustomContextMenuItemsVarargs(value: js.Any*): Self = StObject.set(x, "customContextMenuItems", js.Array(value :_*))
+      inline def setCustomContextMenuItemsVarargs(value: Any*): Self = StObject.set(x, "customContextMenuItems", js.Array(value*))
       
       inline def setDisableDefaultItems(value: Boolean): Self = StObject.set(x, "disableDefaultItems", value.asInstanceOf[js.Any])
       
@@ -3898,7 +3897,7 @@ object Grid {
       
       inline def setSubContextMenuUndefined: Self = StObject.set(x, "subContextMenu", js.undefined)
       
-      inline def setSubContextMenuVarargs(value: ContextMenuSettingsSubContextMenu*): Self = StObject.set(x, "subContextMenu", js.Array(value :_*))
+      inline def setSubContextMenuVarargs(value: ContextMenuSettingsSubContextMenu*): Self = StObject.set(x, "subContextMenu", js.Array(value*))
     }
   }
   
@@ -3912,7 +3911,7 @@ object Grid {
     /** Used to get or set the sub menu items to the custom context menu item.
       * @Default {[]}
       */
-    var subMenu: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var subMenu: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Used to get or set the sub menu items to the custom context menu item using JsRender template.
       * @Default {null}
@@ -3932,11 +3931,11 @@ object Grid {
       
       inline def setContextMenuItemUndefined: Self = StObject.set(x, "contextMenuItem", js.undefined)
       
-      inline def setSubMenu(value: js.Array[js.Any]): Self = StObject.set(x, "subMenu", value.asInstanceOf[js.Any])
+      inline def setSubMenu(value: js.Array[Any]): Self = StObject.set(x, "subMenu", value.asInstanceOf[js.Any])
       
       inline def setSubMenuUndefined: Self = StObject.set(x, "subMenu", js.undefined)
       
-      inline def setSubMenuVarargs(value: js.Any*): Self = StObject.set(x, "subMenu", js.Array(value :_*))
+      inline def setSubMenuVarargs(value: Any*): Self = StObject.set(x, "subMenu", js.Array(value*))
       
       inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
@@ -3952,11 +3951,11 @@ object Grid {
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the status of contextmenu item which denotes its enabled state
       */
@@ -3964,7 +3963,7 @@ object Grid {
     
     /** Returns the target item.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -3983,11 +3982,11 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -3995,7 +3994,7 @@ object Grid {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -4013,7 +4012,7 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -4032,7 +4031,7 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -4050,7 +4049,7 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -4069,7 +4068,7 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -4083,7 +4082,7 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -4098,7 +4097,7 @@ object Grid {
     
     extension [Self <: DestroyEventArgs](x: Self) {
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -4116,23 +4115,23 @@ object Grid {
     
     /** Returns detail row element.
       */
-    var detailsRow: js.UndefOr[js.Any] = js.undefined
+    var detailsRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the foreign key record object (JSON).
       */
-    var foreignKeyData: js.UndefOr[js.Any] = js.undefined
+    var foreignKeyData: js.UndefOr[Any] = js.undefined
     
     /** Returns master row of detail row record object (JSON).
       */
-    var masterData: js.UndefOr[js.Any] = js.undefined
+    var masterData: js.UndefOr[Any] = js.undefined
     
     /** Returns master row element.
       */
-    var masterRow: js.UndefOr[js.Any] = js.undefined
+    var masterRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -4151,23 +4150,23 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDetailsRow(value: js.Any): Self = StObject.set(x, "detailsRow", value.asInstanceOf[js.Any])
+      inline def setDetailsRow(value: Any): Self = StObject.set(x, "detailsRow", value.asInstanceOf[js.Any])
       
       inline def setDetailsRowUndefined: Self = StObject.set(x, "detailsRow", js.undefined)
       
-      inline def setForeignKeyData(value: js.Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
+      inline def setForeignKeyData(value: Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
       
       inline def setForeignKeyDataUndefined: Self = StObject.set(x, "foreignKeyData", js.undefined)
       
-      inline def setMasterData(value: js.Any): Self = StObject.set(x, "masterData", value.asInstanceOf[js.Any])
+      inline def setMasterData(value: Any): Self = StObject.set(x, "masterData", value.asInstanceOf[js.Any])
       
       inline def setMasterDataUndefined: Self = StObject.set(x, "masterData", js.undefined)
       
-      inline def setMasterRow(value: js.Any): Self = StObject.set(x, "masterRow", value.asInstanceOf[js.Any])
+      inline def setMasterRow(value: Any): Self = StObject.set(x, "masterRow", value.asInstanceOf[js.Any])
       
       inline def setMasterRowUndefined: Self = StObject.set(x, "masterRow", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -4185,19 +4184,19 @@ object Grid {
     
     /** Returns the details row data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns details row element.
       */
-    var detailsElement: js.UndefOr[js.Any] = js.undefined
+    var detailsElement: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the details row data.
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -4216,19 +4215,19 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDetailsElement(value: js.Any): Self = StObject.set(x, "detailsElement", value.asInstanceOf[js.Any])
+      inline def setDetailsElement(value: Any): Self = StObject.set(x, "detailsElement", value.asInstanceOf[js.Any])
       
       inline def setDetailsElementUndefined: Self = StObject.set(x, "detailsElement", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -4246,23 +4245,23 @@ object Grid {
     
     /** Returns detail row element.
       */
-    var detailsRow: js.UndefOr[js.Any] = js.undefined
+    var detailsRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the foreign key record object (JSON).
       */
-    var foreignKeyData: js.UndefOr[js.Any] = js.undefined
+    var foreignKeyData: js.UndefOr[Any] = js.undefined
     
     /** Returns master row of detail row record object (JSON).
       */
-    var masterData: js.UndefOr[js.Any] = js.undefined
+    var masterData: js.UndefOr[Any] = js.undefined
     
     /** Returns master row element.
       */
-    var masterRow: js.UndefOr[js.Any] = js.undefined
+    var masterRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -4281,23 +4280,23 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDetailsRow(value: js.Any): Self = StObject.set(x, "detailsRow", value.asInstanceOf[js.Any])
+      inline def setDetailsRow(value: Any): Self = StObject.set(x, "detailsRow", value.asInstanceOf[js.Any])
       
       inline def setDetailsRowUndefined: Self = StObject.set(x, "detailsRow", js.undefined)
       
-      inline def setForeignKeyData(value: js.Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
+      inline def setForeignKeyData(value: Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
       
       inline def setForeignKeyDataUndefined: Self = StObject.set(x, "foreignKeyData", js.undefined)
       
-      inline def setMasterData(value: js.Any): Self = StObject.set(x, "masterData", value.asInstanceOf[js.Any])
+      inline def setMasterData(value: Any): Self = StObject.set(x, "masterData", value.asInstanceOf[js.Any])
       
       inline def setMasterDataUndefined: Self = StObject.set(x, "masterData", js.undefined)
       
-      inline def setMasterRow(value: js.Any): Self = StObject.set(x, "masterRow", value.asInstanceOf[js.Any])
+      inline def setMasterRow(value: Any): Self = StObject.set(x, "masterRow", value.asInstanceOf[js.Any])
       
       inline def setMasterRowUndefined: Self = StObject.set(x, "masterRow", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -4450,15 +4449,15 @@ object Grid {
     
     /** Returns added data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns added data.
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -4473,15 +4472,15 @@ object Grid {
     
     extension [Self <: EndAddEventArgs](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -4495,15 +4494,15 @@ object Grid {
     
     /** Returns deleted data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns deleted data.
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -4518,15 +4517,15 @@ object Grid {
     
     extension [Self <: EndDeleteEventArgs](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -4540,15 +4539,15 @@ object Grid {
     
     /** Returns modified data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns modified data.
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -4563,15 +4562,15 @@ object Grid {
     
     extension [Self <: EndEditEventArgs](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -4657,7 +4656,7 @@ object Grid {
       
       inline def setFilteredColumnsUndefined: Self = StObject.set(x, "filteredColumns", js.undefined)
       
-      inline def setFilteredColumnsVarargs(value: FilterSettingsFilteredColumn*): Self = StObject.set(x, "filteredColumns", js.Array(value :_*))
+      inline def setFilteredColumnsVarargs(value: FilterSettingsFilteredColumn*): Self = StObject.set(x, "filteredColumns", js.Array(value*))
       
       inline def setImmediateModeDelay(value: Double): Self = StObject.set(x, "immediateModeDelay", value.asInstanceOf[js.Any])
       
@@ -4745,7 +4744,7 @@ object Grid {
     /** Gets or sets a value that indicates whether to add grouped columns programmatically at initial load
       * @Default {[]}
       */
-    var groupedColumns: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var groupedColumns: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a value that indicates whether to show the group drop area just above the column header. It can be used to avoid ungrouping the already grouped column using
       * groupSettings.
@@ -4759,7 +4758,7 @@ object Grid {
     var showGroupedColumn: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to show the group button image(toggle button)in the column header and also in the grouped column in the group drop area . It can be
-      * used to group/ungroup the columns by click on the toggle button.
+      * used to group/ungroup the columns by clicking on the toggle button.
       * @Default {false}
       */
     var showToggleButton: js.UndefOr[Boolean] = js.undefined
@@ -4786,11 +4785,11 @@ object Grid {
       
       inline def setEnableDropAreaAutoSizingUndefined: Self = StObject.set(x, "enableDropAreaAutoSizing", js.undefined)
       
-      inline def setGroupedColumns(value: js.Array[js.Any]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
+      inline def setGroupedColumns(value: js.Array[Any]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
       
       inline def setGroupedColumnsUndefined: Self = StObject.set(x, "groupedColumns", js.undefined)
       
-      inline def setGroupedColumnsVarargs(value: js.Any*): Self = StObject.set(x, "groupedColumns", js.Array(value :_*))
+      inline def setGroupedColumnsVarargs(value: Any*): Self = StObject.set(x, "groupedColumns", js.Array(value*))
       
       inline def setShowDropArea(value: Boolean): Self = StObject.set(x, "showDropArea", value.asInstanceOf[js.Any])
       
@@ -4818,7 +4817,7 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -4837,7 +4836,7 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -4855,7 +4854,7 @@ object Grid {
     
     /** Returns grid cell.
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Method to merge Grid columns.
       */
@@ -4863,11 +4862,11 @@ object Grid {
     
     /** Returns the column object.
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns current row record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Method to merge Grid rows and columns.
       */
@@ -4875,11 +4874,11 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns current row record object (JSON).
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Method to merge Grid rows.
       */
@@ -4906,7 +4905,7 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
@@ -4914,11 +4913,11 @@ object Grid {
       
       inline def setColMergeUndefined: Self = StObject.set(x, "colMerge", js.undefined)
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -4926,11 +4925,11 @@ object Grid {
       
       inline def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -4952,7 +4951,7 @@ object Grid {
     
     /** Returns the column headers.
       */
-    var columnHeaders: js.UndefOr[js.Any] = js.undefined
+    var columnHeaders: js.UndefOr[Any] = js.undefined
     
     /** Method to merge the header cells.
       */
@@ -4960,7 +4959,7 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
   }
   object MergeHeaderCellInfoEventArgs {
     
@@ -4971,7 +4970,7 @@ object Grid {
     
     extension [Self <: MergeHeaderCellInfoEventArgs](x: Self) {
       
-      inline def setColumnHeaders(value: js.Any): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
+      inline def setColumnHeaders(value: Any): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
       
       inline def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
       
@@ -4979,7 +4978,7 @@ object Grid {
       
       inline def setHeaderCellMergeUndefined: Self = StObject.set(x, "headerCellMerge", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     }
@@ -5143,7 +5142,7 @@ object Grid {
     /** This specifies the grid to add the grid control inside the grid row of the parent with expand/collapse options
       * @Default {null}
       */
-    var childGrid: js.UndefOr[js.Any] = js.undefined
+    var childGrid: js.UndefOr[Any] = js.undefined
     
     /** Triggered after the column is deselected.
       */
@@ -5214,7 +5213,7 @@ object Grid {
     /** Gets or sets the data to render the grid with records
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Triggered when grid going to destroy.
       */
@@ -5334,7 +5333,7 @@ object Grid {
     /** This specifies to change the key in keyboard interaction to grid control
       * @Default {null}
       */
-    var keySettings: js.UndefOr[js.Any] = js.undefined
+    var keySettings: js.UndefOr[Any] = js.undefined
     
     /** Triggered initial load.
       */
@@ -5366,7 +5365,7 @@ object Grid {
     /** Query the dataSource from the table for Grid.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Triggered every time a request is made to access particular cell information, element and data.
       */
@@ -5457,7 +5456,7 @@ object Grid {
     /** Gets a value that display the array of selected records in the Grid.
       * @Default {null}
       */
-    var selectedRecords: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectedRecords: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a value that indicates to select the row while initializing the grid
       * @Default {-1}
@@ -5467,7 +5466,7 @@ object Grid {
     /** Gets or sets a value that indicates the selected rows in grid
       * @Default {[]}
       */
-    var selectedRowIndices: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectedRowIndices: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** This property is used to configure the selection behavior of the grid.
       */
@@ -5664,7 +5663,7 @@ object Grid {
       
       inline def setCellSelectingUndefined: Self = StObject.set(x, "cellSelecting", js.undefined)
       
-      inline def setChildGrid(value: js.Any): Self = StObject.set(x, "childGrid", value.asInstanceOf[js.Any])
+      inline def setChildGrid(value: Any): Self = StObject.set(x, "childGrid", value.asInstanceOf[js.Any])
       
       inline def setChildGridUndefined: Self = StObject.set(x, "childGrid", js.undefined)
       
@@ -5704,7 +5703,7 @@ object Grid {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setCommonWidth(value: Double): Self = StObject.set(x, "commonWidth", value.asInstanceOf[js.Any])
       
@@ -5734,7 +5733,7 @@ object Grid {
       
       inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -5838,7 +5837,7 @@ object Grid {
       
       inline def setIsResponsiveUndefined: Self = StObject.set(x, "isResponsive", js.undefined)
       
-      inline def setKeySettings(value: js.Any): Self = StObject.set(x, "keySettings", value.asInstanceOf[js.Any])
+      inline def setKeySettings(value: Any): Self = StObject.set(x, "keySettings", value.asInstanceOf[js.Any])
       
       inline def setKeySettingsUndefined: Self = StObject.set(x, "keySettings", js.undefined)
       
@@ -5866,7 +5865,7 @@ object Grid {
       
       inline def setPageSettingsUndefined: Self = StObject.set(x, "pageSettings", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryCellInfo(value: /* e */ QueryCellInfoEventArgs => Unit): Self = StObject.set(x, "queryCellInfo", js.Any.fromFunction1(value))
       
@@ -5954,21 +5953,21 @@ object Grid {
       
       inline def setSearchSettingsUndefined: Self = StObject.set(x, "searchSettings", js.undefined)
       
-      inline def setSelectedRecords(value: js.Array[js.Any]): Self = StObject.set(x, "selectedRecords", value.asInstanceOf[js.Any])
+      inline def setSelectedRecords(value: js.Array[Any]): Self = StObject.set(x, "selectedRecords", value.asInstanceOf[js.Any])
       
       inline def setSelectedRecordsUndefined: Self = StObject.set(x, "selectedRecords", js.undefined)
       
-      inline def setSelectedRecordsVarargs(value: js.Any*): Self = StObject.set(x, "selectedRecords", js.Array(value :_*))
+      inline def setSelectedRecordsVarargs(value: Any*): Self = StObject.set(x, "selectedRecords", js.Array(value*))
       
       inline def setSelectedRowIndex(value: Double): Self = StObject.set(x, "selectedRowIndex", value.asInstanceOf[js.Any])
       
       inline def setSelectedRowIndexUndefined: Self = StObject.set(x, "selectedRowIndex", js.undefined)
       
-      inline def setSelectedRowIndices(value: js.Array[js.Any]): Self = StObject.set(x, "selectedRowIndices", value.asInstanceOf[js.Any])
+      inline def setSelectedRowIndices(value: js.Array[Any]): Self = StObject.set(x, "selectedRowIndices", value.asInstanceOf[js.Any])
       
       inline def setSelectedRowIndicesUndefined: Self = StObject.set(x, "selectedRowIndices", js.undefined)
       
-      inline def setSelectedRowIndicesVarargs(value: js.Any*): Self = StObject.set(x, "selectedRowIndices", js.Array(value :_*))
+      inline def setSelectedRowIndicesVarargs(value: Any*): Self = StObject.set(x, "selectedRowIndices", js.Array(value*))
       
       inline def setSelectionSettings(value: SelectionSettings): Self = StObject.set(x, "selectionSettings", value.asInstanceOf[js.Any])
       
@@ -5998,13 +5997,13 @@ object Grid {
       
       inline def setStackedHeaderRowsUndefined: Self = StObject.set(x, "stackedHeaderRows", js.undefined)
       
-      inline def setStackedHeaderRowsVarargs(value: StackedHeaderRow*): Self = StObject.set(x, "stackedHeaderRows", js.Array(value :_*))
+      inline def setStackedHeaderRowsVarargs(value: StackedHeaderRow*): Self = StObject.set(x, "stackedHeaderRows", js.Array(value*))
       
       inline def setSummaryRows(value: js.Array[SummaryRow]): Self = StObject.set(x, "summaryRows", value.asInstanceOf[js.Any])
       
       inline def setSummaryRowsUndefined: Self = StObject.set(x, "summaryRows", js.undefined)
       
-      inline def setSummaryRowsVarargs(value: SummaryRow*): Self = StObject.set(x, "summaryRows", js.Array(value :_*))
+      inline def setSummaryRowsVarargs(value: SummaryRow*): Self = StObject.set(x, "summaryRows", js.Array(value*))
       
       inline def setTemplateRefresh(value: /* e */ TemplateRefreshEventArgs => Unit): Self = StObject.set(x, "templateRefresh", js.Any.fromFunction1(value))
       
@@ -6054,7 +6053,7 @@ object Grid {
     /** Gets or sets different page size values to the Dropdown in Grid Pager, by which number of records in a page can be changed dynamically.
       * @Default {[]}
       */
-    var pageSizeList: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var pageSizeList: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a value that indicates whether to define the number of pages to print. See printMode.
       * @Default {ej.Grid.PrintMode.AllPages}
@@ -6108,11 +6107,11 @@ object Grid {
       
       inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      inline def setPageSizeList(value: js.Array[js.Any]): Self = StObject.set(x, "pageSizeList", value.asInstanceOf[js.Any])
+      inline def setPageSizeList(value: js.Array[Any]): Self = StObject.set(x, "pageSizeList", value.asInstanceOf[js.Any])
       
       inline def setPageSizeListUndefined: Self = StObject.set(x, "pageSizeList", js.undefined)
       
-      inline def setPageSizeListVarargs(value: js.Any*): Self = StObject.set(x, "pageSizeList", js.Array(value :_*))
+      inline def setPageSizeListVarargs(value: Any*): Self = StObject.set(x, "pageSizeList", js.Array(value*))
       
       inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
@@ -6146,27 +6145,27 @@ object Grid {
     
     /** Returns grid cell.
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Returns the column object.
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns current row record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the foreign key record object (JSON).
       */
-    var foreignKeyData: js.UndefOr[js.Any] = js.undefined
+    var foreignKeyData: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns current row record object (JSON).
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the text value in the cell.
       */
@@ -6189,27 +6188,27 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setForeignKeyData(value: js.Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
+      inline def setForeignKeyData(value: Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
       
       inline def setForeignKeyDataUndefined: Self = StObject.set(x, "foreignKeyData", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -6231,7 +6230,7 @@ object Grid {
     
     /** Returns the current selected cell.
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Returns the cell index value.
       */
@@ -6247,19 +6246,19 @@ object Grid {
     
     /** Returns current record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the jQuery object of the current selected row.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns current record object (JSON).
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index of the selected row.
       */
@@ -6282,7 +6281,7 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellIndex(value: Double): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
       
@@ -6298,17 +6297,17 @@ object Grid {
       
       inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -6332,7 +6331,7 @@ object Grid {
     
     /** Returns the current selected cell.
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Returns the selected cell index value.
       */
@@ -6348,19 +6347,19 @@ object Grid {
     
     /** Returns current record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the jQuery object of the current selected row.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns current record object (JSON).
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index of the selected row.
       */
@@ -6383,7 +6382,7 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellIndex(value: Double): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
       
@@ -6399,17 +6398,17 @@ object Grid {
       
       inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -6429,7 +6428,7 @@ object Grid {
     
     /** Returns the column object.
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns the column index.
       */
@@ -6441,7 +6440,7 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the new width value.
       */
@@ -6453,7 +6452,7 @@ object Grid {
     
     /** Returns the grid object.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -6468,7 +6467,7 @@ object Grid {
     
     extension [Self <: ResizeEndEventArgs](x: Self) {
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
@@ -6480,7 +6479,7 @@ object Grid {
       
       inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -6492,7 +6491,7 @@ object Grid {
       
       inline def setOldWidthUndefined: Self = StObject.set(x, "oldWidth", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -6528,7 +6527,7 @@ object Grid {
     
     /** Returns the column object.
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns the column index.
       */
@@ -6536,7 +6535,7 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the old width value.
       */
@@ -6544,7 +6543,7 @@ object Grid {
     
     /** Returns the grid object.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -6559,7 +6558,7 @@ object Grid {
     
     extension [Self <: ResizeStartEventArgs](x: Self) {
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
@@ -6567,7 +6566,7 @@ object Grid {
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -6575,7 +6574,7 @@ object Grid {
       
       inline def setOldWidthUndefined: Self = StObject.set(x, "oldWidth", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -6593,7 +6592,7 @@ object Grid {
     
     /** Returns the column object.
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns the column index.
       */
@@ -6601,7 +6600,7 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the new width value.
       */
@@ -6613,7 +6612,7 @@ object Grid {
     
     /** Returns the grid object.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -6632,7 +6631,7 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
@@ -6640,7 +6639,7 @@ object Grid {
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -6652,7 +6651,7 @@ object Grid {
       
       inline def setOldWidthUndefined: Self = StObject.set(x, "oldWidth", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -6670,7 +6669,7 @@ object Grid {
     
     /** Returns the cell object.
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Returns the cell index of the selected cell.
       */
@@ -6682,23 +6681,23 @@ object Grid {
     
     /** Returns current record object (JSON).
       */
-    var currentData: js.UndefOr[js.Any] = js.undefined
+    var currentData: js.UndefOr[Any] = js.undefined
     
     /** Returns the selected row data object.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the current selected row.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns the selected row data object.
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index of the selected row.
       */
@@ -6721,7 +6720,7 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellIndex(value: Double): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
       
@@ -6733,21 +6732,21 @@ object Grid {
       
       inline def setCellValueUndefined: Self = StObject.set(x, "cellValue", js.undefined)
       
-      inline def setCurrentData(value: js.Any): Self = StObject.set(x, "currentData", value.asInstanceOf[js.Any])
+      inline def setCurrentData(value: Any): Self = StObject.set(x, "currentData", value.asInstanceOf[js.Any])
       
       inline def setCurrentDataUndefined: Self = StObject.set(x, "currentData", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -6771,23 +6770,23 @@ object Grid {
     
     /** Returns current row record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the foreign key record object (JSON).
       */
-    var foreignKeyData: js.UndefOr[js.Any] = js.undefined
+    var foreignKeyData: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns grid row.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns current row record object (JSON).
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -6806,21 +6805,21 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setForeignKeyData(value: js.Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
+      inline def setForeignKeyData(value: Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
       
       inline def setForeignKeyDataUndefined: Self = StObject.set(x, "foreignKeyData", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -6836,15 +6835,15 @@ object Grid {
     
     /** Returns current record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the current deselected row element.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index of the deselected row.
       */
@@ -6852,7 +6851,7 @@ object Grid {
     
     /** Returns current record object (JSON).
       */
-    var selectedData: js.UndefOr[js.Any] = js.undefined
+    var selectedData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -6867,15 +6866,15 @@ object Grid {
     
     extension [Self <: RowDeselectedEventArgs](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
       inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
       
@@ -6883,7 +6882,7 @@ object Grid {
       
       inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
       
-      inline def setSelectedData(value: js.Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
+      inline def setSelectedData(value: Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
       
       inline def setSelectedDataUndefined: Self = StObject.set(x, "selectedData", js.undefined)
       
@@ -6897,7 +6896,7 @@ object Grid {
     
     /** Returns current record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns whether the ctrl key is pressed while deselecting row
       */
@@ -6909,11 +6908,11 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the deselecting row element.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns the deselecting row index value.
       */
@@ -6921,7 +6920,7 @@ object Grid {
     
     /** Returns current record object (JSON).
       */
-    var selectedData: js.UndefOr[js.Any] = js.undefined
+    var selectedData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -6936,7 +6935,7 @@ object Grid {
     
     extension [Self <: RowDeselectingEventArgs](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -6948,11 +6947,11 @@ object Grid {
       
       inline def setIsShiftKeyPressedUndefined: Self = StObject.set(x, "isShiftKeyPressed", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
       inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
       
@@ -6960,7 +6959,7 @@ object Grid {
       
       inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
       
-      inline def setSelectedData(value: js.Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
+      inline def setSelectedData(value: Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
       
       inline def setSelectedDataUndefined: Self = StObject.set(x, "selectedData", js.undefined)
       
@@ -6978,27 +6977,27 @@ object Grid {
     
     /** Returns target elements based on mouse move position.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** Returns JSON data of dragged rows.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns draggable element type.
       */
-    var draggableType: js.UndefOr[js.Any] = js.undefined
+    var draggableType: js.UndefOr[Any] = js.undefined
     
     /** Returns JSON data of dragged rows.
       */
-    var draggedRecords: js.UndefOr[js.Any] = js.undefined
+    var draggedRecords: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the draggable row object.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -7017,27 +7016,27 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDraggableType(value: js.Any): Self = StObject.set(x, "draggableType", value.asInstanceOf[js.Any])
+      inline def setDraggableType(value: Any): Self = StObject.set(x, "draggableType", value.asInstanceOf[js.Any])
       
       inline def setDraggableTypeUndefined: Self = StObject.set(x, "draggableType", js.undefined)
       
-      inline def setDraggedRecords(value: js.Any): Self = StObject.set(x, "draggedRecords", value.asInstanceOf[js.Any])
+      inline def setDraggedRecords(value: Any): Self = StObject.set(x, "draggedRecords", value.asInstanceOf[js.Any])
       
       inline def setDraggedRecordsUndefined: Self = StObject.set(x, "draggedRecords", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -7055,27 +7054,27 @@ object Grid {
     
     /** Returns drag start element cell.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** Returns the JSON data of dragged rows.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns draggable element type.
       */
-    var draggableType: js.UndefOr[js.Any] = js.undefined
+    var draggableType: js.UndefOr[Any] = js.undefined
     
     /** Returns the JSON data of dragged rows.
       */
-    var draggedRecords: js.UndefOr[js.Any] = js.undefined
+    var draggedRecords: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the draggable row object.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -7094,27 +7093,27 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDraggableType(value: js.Any): Self = StObject.set(x, "draggableType", value.asInstanceOf[js.Any])
+      inline def setDraggableType(value: Any): Self = StObject.set(x, "draggableType", value.asInstanceOf[js.Any])
       
       inline def setDraggableTypeUndefined: Self = StObject.set(x, "draggableType", js.undefined)
       
-      inline def setDraggedRecords(value: js.Any): Self = StObject.set(x, "draggedRecords", value.asInstanceOf[js.Any])
+      inline def setDraggedRecords(value: Any): Self = StObject.set(x, "draggedRecords", value.asInstanceOf[js.Any])
       
       inline def setDraggedRecordsUndefined: Self = StObject.set(x, "draggedRecords", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -7132,7 +7131,7 @@ object Grid {
     
     /** Returns the JSON data of dragged rows.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns draggable element type.
       */
@@ -7140,19 +7139,19 @@ object Grid {
     
     /** Returns the JSON data of dragged rows.
       */
-    var droppedRecords: js.UndefOr[js.Any] = js.undefined
+    var droppedRecords: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the draggable row object.
       */
-    var rows: js.UndefOr[js.Any] = js.undefined
+    var rows: js.UndefOr[Any] = js.undefined
     
     /** Returns the current mouse position cell element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -7171,7 +7170,7 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -7179,19 +7178,19 @@ object Grid {
       
       inline def setDraggableTypeUndefined: Self = StObject.set(x, "draggableType", js.undefined)
       
-      inline def setDroppedRecords(value: js.Any): Self = StObject.set(x, "droppedRecords", value.asInstanceOf[js.Any])
+      inline def setDroppedRecords(value: Any): Self = StObject.set(x, "droppedRecords", value.asInstanceOf[js.Any])
       
       inline def setDroppedRecordsUndefined: Self = StObject.set(x, "droppedRecords", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRows(value: js.Any): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Any): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
       inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -7221,7 +7220,7 @@ object Grid {
     /** This specifies the grid to drop the grid rows only at particular target element.
       * @Default {null}
       */
-    var dropTargetID: js.UndefOr[js.Any] = js.undefined
+    var dropTargetID: js.UndefOr[Any] = js.undefined
   }
   object RowDropSettings {
     
@@ -7244,7 +7243,7 @@ object Grid {
       
       inline def setDropMapperUndefined: Self = StObject.set(x, "dropMapper", js.undefined)
       
-      inline def setDropTargetID(value: js.Any): Self = StObject.set(x, "dropTargetID", value.asInstanceOf[js.Any])
+      inline def setDropTargetID(value: Any): Self = StObject.set(x, "dropTargetID", value.asInstanceOf[js.Any])
       
       inline def setDropTargetIDUndefined: Self = StObject.set(x, "dropTargetID", js.undefined)
     }
@@ -7254,19 +7253,19 @@ object Grid {
     
     /** Returns the hovered row cell
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Returns the hovered row.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns the hovered record details
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the hovered row index.
       */
-    var rowIndex: js.UndefOr[js.Any] = js.undefined
+    var rowIndex: js.UndefOr[Any] = js.undefined
   }
   object RowHoverEventArgs {
     
@@ -7277,17 +7276,17 @@ object Grid {
     
     extension [Self <: RowHoverEventArgs](x: Self) {
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
-      inline def setRowIndex(value: js.Any): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+      inline def setRowIndex(value: Any): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
       
       inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
       
@@ -7303,19 +7302,19 @@ object Grid {
     
     /** Returns current record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the foreign key record object (JSON).
       */
-    var foreignKeyData: js.UndefOr[js.Any] = js.undefined
+    var foreignKeyData: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected row element.
       */
-    var prevRow: js.UndefOr[js.Any] = js.undefined
+    var prevRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected row index.
       */
@@ -7323,7 +7322,7 @@ object Grid {
     
     /** Returns the current selected row.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index of the selected row.
       */
@@ -7331,7 +7330,7 @@ object Grid {
     
     /** Returns current record object (JSON).
       */
-    var selectedData: js.UndefOr[js.Any] = js.undefined
+    var selectedData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -7350,19 +7349,19 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setForeignKeyData(value: js.Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
+      inline def setForeignKeyData(value: Any): Self = StObject.set(x, "foreignKeyData", value.asInstanceOf[js.Any])
       
       inline def setForeignKeyDataUndefined: Self = StObject.set(x, "foreignKeyData", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPrevRow(value: js.Any): Self = StObject.set(x, "prevRow", value.asInstanceOf[js.Any])
+      inline def setPrevRow(value: Any): Self = StObject.set(x, "prevRow", value.asInstanceOf[js.Any])
       
       inline def setPrevRowIndex(value: Double): Self = StObject.set(x, "prevRowIndex", value.asInstanceOf[js.Any])
       
@@ -7370,7 +7369,7 @@ object Grid {
       
       inline def setPrevRowUndefined: Self = StObject.set(x, "prevRow", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
       inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
       
@@ -7378,7 +7377,7 @@ object Grid {
       
       inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
       
-      inline def setSelectedData(value: js.Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
+      inline def setSelectedData(value: Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
       
       inline def setSelectedDataUndefined: Self = StObject.set(x, "selectedData", js.undefined)
       
@@ -7396,15 +7395,15 @@ object Grid {
     
     /** Returns current record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected row element.
       */
-    var prevRow: js.UndefOr[js.Any] = js.undefined
+    var prevRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected row index.
       */
@@ -7412,7 +7411,7 @@ object Grid {
     
     /** Returns the selected row element.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns the selected row index value.
       */
@@ -7420,7 +7419,7 @@ object Grid {
     
     /** Returns current record object (JSON).
       */
-    var selectedData: js.UndefOr[js.Any] = js.undefined
+    var selectedData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -7439,15 +7438,15 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPrevRow(value: js.Any): Self = StObject.set(x, "prevRow", value.asInstanceOf[js.Any])
+      inline def setPrevRow(value: Any): Self = StObject.set(x, "prevRow", value.asInstanceOf[js.Any])
       
       inline def setPrevRowIndex(value: Double): Self = StObject.set(x, "prevRowIndex", value.asInstanceOf[js.Any])
       
@@ -7455,7 +7454,7 @@ object Grid {
       
       inline def setPrevRowUndefined: Self = StObject.set(x, "prevRow", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
       inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
       
@@ -7463,7 +7462,7 @@ object Grid {
       
       inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
       
-      inline def setSelectedData(value: js.Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
+      inline def setSelectedData(value: Any): Self = StObject.set(x, "selectedData", value.asInstanceOf[js.Any])
       
       inline def setSelectedDataUndefined: Self = StObject.set(x, "selectedData", js.undefined)
       
@@ -7599,7 +7598,7 @@ object Grid {
     /** This specify the grid to search for the value in particular columns that is mentioned in the field.
       * @Default {[]}
       */
-    var fields: js.UndefOr[js.Any] = js.undefined
+    var fields: js.UndefOr[Any] = js.undefined
     
     /** It enables or disables case-sensitivity while searching the search key in grid.
       * @Default {true}
@@ -7624,7 +7623,7 @@ object Grid {
     
     extension [Self <: SearchSettings](x: Self) {
       
-      inline def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
@@ -7662,7 +7661,7 @@ object Grid {
     /** Gets or sets a value that indicates whether to add the default selection actions as a selection mode.See selectionMode
       * @Default {[row]}
       */
-    var selectionMode: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectionMode: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object SelectionSettings {
     
@@ -7685,11 +7684,11 @@ object Grid {
       
       inline def setEnableToggleUndefined: Self = StObject.set(x, "enableToggle", js.undefined)
       
-      inline def setSelectionMode(value: js.Array[js.Any]): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+      inline def setSelectionMode(value: js.Array[Any]): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
       inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
       
-      inline def setSelectionModeVarargs(value: js.Any*): Self = StObject.set(x, "selectionMode", js.Array(value :_*))
+      inline def setSelectionModeVarargs(value: Any*): Self = StObject.set(x, "selectionMode", js.Array(value*))
     }
   }
   
@@ -7712,7 +7711,7 @@ object Grid {
       
       inline def setSortedColumnsUndefined: Self = StObject.set(x, "sortedColumns", js.undefined)
       
-      inline def setSortedColumnsVarargs(value: SortSettingsSortedColumn*): Self = StObject.set(x, "sortedColumns", js.Array(value :_*))
+      inline def setSortedColumnsVarargs(value: SortSettingsSortedColumn*): Self = StObject.set(x, "sortedColumns", js.Array(value*))
     }
   }
   
@@ -7765,7 +7764,7 @@ object Grid {
       
       inline def setStackedHeaderColumnsUndefined: Self = StObject.set(x, "stackedHeaderColumns", js.undefined)
       
-      inline def setStackedHeaderColumnsVarargs(value: StackedHeaderRowsStackedHeaderColumn*): Self = StObject.set(x, "stackedHeaderColumns", js.Array(value :_*))
+      inline def setStackedHeaderColumnsVarargs(value: StackedHeaderRowsStackedHeaderColumn*): Self = StObject.set(x, "stackedHeaderColumns", js.Array(value*))
     }
   }
   
@@ -7774,7 +7773,7 @@ object Grid {
     /** Gets or sets a value that indicates the header text for the particular stacked header column.
       * @Default {null}
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates class to the corresponding stackedHeaderColumn.
       * @Default {null}
@@ -7805,7 +7804,7 @@ object Grid {
     
     extension [Self <: StackedHeaderRowsStackedHeaderColumn](x: Self) {
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
@@ -7883,7 +7882,7 @@ object Grid {
       
       inline def setSummaryColumnsUndefined: Self = StObject.set(x, "summaryColumns", js.undefined)
       
-      inline def setSummaryColumnsVarargs(value: SummaryRowsSummaryColumn*): Self = StObject.set(x, "summaryColumns", js.Array(value :_*))
+      inline def setSummaryColumnsVarargs(value: SummaryRowsSummaryColumn*): Self = StObject.set(x, "summaryColumns", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -7988,23 +7987,23 @@ object Grid {
     
     /** Returns the cell object.
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Returns the column object.
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns the current row data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the current row data.
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the current row index.
       */
@@ -8027,23 +8026,23 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -8087,11 +8086,11 @@ object Grid {
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** Returns the grid model.
       */
-    var gridModel: js.UndefOr[js.Any] = js.undefined
+    var gridModel: js.UndefOr[Any] = js.undefined
     
     /** Returns the Id of the current toolbar element.
       */
@@ -8107,7 +8106,7 @@ object Grid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the status of toolbar item which denotes its enabled state
       */
@@ -8115,11 +8114,11 @@ object Grid {
     
     /** Returns the target item.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the toolbar object of the selected toolbar element.
       */
-    var toolbarData: js.UndefOr[js.Any] = js.undefined
+    var toolbarData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -8138,11 +8137,11 @@ object Grid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
-      inline def setGridModel(value: js.Any): Self = StObject.set(x, "gridModel", value.asInstanceOf[js.Any])
+      inline def setGridModel(value: Any): Self = StObject.set(x, "gridModel", value.asInstanceOf[js.Any])
       
       inline def setGridModelUndefined: Self = StObject.set(x, "gridModel", js.undefined)
       
@@ -8158,7 +8157,7 @@ object Grid {
       
       inline def setItemNameUndefined: Self = StObject.set(x, "itemName", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -8166,11 +8165,11 @@ object Grid {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setToolbarData(value: js.Any): Self = StObject.set(x, "toolbarData", value.asInstanceOf[js.Any])
+      inline def setToolbarData(value: Any): Self = StObject.set(x, "toolbarData", value.asInstanceOf[js.Any])
       
       inline def setToolbarDataUndefined: Self = StObject.set(x, "toolbarData", js.undefined)
       
@@ -8210,7 +8209,7 @@ object Grid {
       
       inline def setCustomToolbarItemsUndefined: Self = StObject.set(x, "customToolbarItems", js.undefined)
       
-      inline def setCustomToolbarItemsVarargs(value: ToolbarSettingsCustomToolbarItem*): Self = StObject.set(x, "customToolbarItems", js.Array(value :_*))
+      inline def setCustomToolbarItemsVarargs(value: ToolbarSettingsCustomToolbarItem*): Self = StObject.set(x, "customToolbarItems", js.Array(value*))
       
       inline def setShowToolbar(value: Boolean): Self = StObject.set(x, "showToolbar", value.asInstanceOf[js.Any])
       
@@ -8220,7 +8219,7 @@ object Grid {
       
       inline def setToolbarItemsUndefined: Self = StObject.set(x, "toolbarItems", js.undefined)
       
-      inline def setToolbarItemsVarargs(value: (ToolBarItems | String)*): Self = StObject.set(x, "toolbarItems", js.Array(value :_*))
+      inline def setToolbarItemsVarargs(value: (ToolBarItems | String)*): Self = StObject.set(x, "toolbarItems", js.Array(value*))
     }
   }
   

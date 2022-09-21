@@ -18,9 +18,9 @@ trait PartialStateAttributes extends StObject {
   
   var modifiersData: js.UndefOr[Dictkey] = js.undefined
   
-  var options: js.UndefOr[OptionsGeneric[js.Any]] = js.undefined
+  var options: js.UndefOr[OptionsGeneric[Any]] = js.undefined
   
-  var orderedModifiers: js.UndefOr[js.Array[Modifier[js.Any, js.Any]]] = js.undefined
+  var orderedModifiers: js.UndefOr[js.Array[Modifier[Any, Any]]] = js.undefined
   
   var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.undefined
   
@@ -55,15 +55,15 @@ object PartialStateAttributes {
     
     inline def setModifiersDataUndefined: Self = StObject.set(x, "modifiersData", js.undefined)
     
-    inline def setOptions(value: OptionsGeneric[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: OptionsGeneric[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOrderedModifiers(value: js.Array[Modifier[js.Any, js.Any]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
+    inline def setOrderedModifiers(value: js.Array[Modifier[Any, Any]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
     
     inline def setOrderedModifiersUndefined: Self = StObject.set(x, "orderedModifiers", js.undefined)
     
-    inline def setOrderedModifiersVarargs(value: (Modifier[js.Any, js.Any])*): Self = StObject.set(x, "orderedModifiers", js.Array(value :_*))
+    inline def setOrderedModifiersVarargs(value: (Modifier[Any, Any])*): Self = StObject.set(x, "orderedModifiers", js.Array(value*))
     
     inline def setPlacement(value: typings.popperjsCore.enumsMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     

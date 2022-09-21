@@ -1,25 +1,26 @@
 package typings.devextreme.anon
 
-import typings.devextreme.mod.DevExpress.core.dxElement
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid
-import typings.std.Blob
+import typings.devextreme.mod.DevExpress.common.VerticalEdge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Format extends StObject {
   
-  var cancel: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Formats a value before it is displayed in a label.
+    */
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.Format] = js.undefined
   
-  var component: js.UndefOr[dxDataGrid] = js.undefined
+  /**
+    * Specifies whether labels are over or under the scale.
+    */
+  var position: js.UndefOr[VerticalEdge] = js.undefined
   
-  var data: js.UndefOr[Blob] = js.undefined
-  
-  var element: js.UndefOr[dxElement] = js.undefined
-  
-  var fileName: js.UndefOr[String] = js.undefined
-  
-  var format: js.UndefOr[String] = js.undefined
+  /**
+    * Specifies whether slider labels are visible.
+    */
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Format {
   
@@ -30,28 +31,18 @@ object Format {
   
   extension [Self <: Format](x: Self) {
     
-    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setFormat(value: typings.devextreme.mod.DevExpress.ui.Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
-    
-    inline def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-    
-    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
-    
-    inline def setData(value: Blob): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
-    
-    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
-    
-    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
-    
-    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
-    
-    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
-    
-    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormatFunction1(value: js.Date | Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setPosition(value: VerticalEdge): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

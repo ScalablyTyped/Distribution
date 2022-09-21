@@ -38,7 +38,7 @@ trait DefaultWebOptions extends StObject {
   
   var OrganizeInFolder: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PixelsPerInch: Double
   
@@ -74,7 +74,7 @@ object DefaultWebOptions {
     Fonts: WebPageFonts,
     OptimizeForBrowser: Boolean,
     OrganizeInFolder: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     PixelsPerInch: Double,
     RelyOnCSS: Boolean,
     RelyOnVML: Boolean,
@@ -116,7 +116,7 @@ object DefaultWebOptions {
     
     inline def setOrganizeInFolder(value: Boolean): Self = StObject.set(x, "OrganizeInFolder", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPixelsPerInch(value: Double): Self = StObject.set(x, "PixelsPerInch", value.asInstanceOf[js.Any])
     

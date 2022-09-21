@@ -2,8 +2,23 @@ package typings.vueSelect
 
 import org.scalablytyped.runtime.Shortcut
 import typings.std.Event
-import typings.vue.vueMod.Vue
-import typings.vue.vueMod.VueConstructor
+import typings.std.HTMLInputElement
+import typings.std.HTMLUListElement
+import typings.std.InstanceType
+import typings.std.KeyboardEvent
+import typings.std.Record
+import typings.std.ReturnType
+import typings.vueSelect.anon.Attributes
+import typings.vueSelect.anon.AttributesClass
+import typings.vueSelect.anon.ListSlotScopedeselectVueS
+import typings.vueSelect.anon.Loading
+import typings.vueSelect.anon.RecordChildComponentNamea
+import typings.vueSelect.anon.RecordChildComponentNameaDeselect
+import typings.vueSelect.anon.Refs
+import typings.vueSelect.anon.Search
+import typings.vueSelect.vueSelectStrings.auto
+import typings.vueSelect.vueSelectStrings.ltr
+import typings.vueSelect.vueSelectStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,253 +33,509 @@ object mod extends Shortcut {
   @js.native
   val VueSelect: VueSelectConstructor = js.native
   
-  trait DropdownClasses extends StObject {
+  trait CalculatedPosition extends StObject {
     
-    var disabled: Boolean
+    var left: String
+    
+    var top: String
+    
+    var width: String
+  }
+  object CalculatedPosition {
+    
+    inline def apply(left: String, top: String, width: String): CalculatedPosition = {
+      val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CalculatedPosition]
+    }
+    
+    extension [Self <: CalculatedPosition](x: Self) {
+      
+      inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      
+      inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.vueSelect.vueSelectStrings.Deselect
+    - typings.vueSelect.vueSelectStrings.OpenIndicator
+  */
+  trait ChildComponentName extends StObject
+  object ChildComponentName {
+    
+    inline def Deselect: typings.vueSelect.vueSelectStrings.Deselect = "Deselect".asInstanceOf[typings.vueSelect.vueSelectStrings.Deselect]
+    
+    inline def OpenIndicator: typings.vueSelect.vueSelectStrings.OpenIndicator = "OpenIndicator".asInstanceOf[typings.vueSelect.vueSelectStrings.OpenIndicator]
+  }
+  
+  trait ClearSearchOnBlurParameters extends StObject {
+    
+    var clearSearchOnSelect: Boolean
+    
+    var multiple: Boolean
+  }
+  object ClearSearchOnBlurParameters {
+    
+    inline def apply(clearSearchOnSelect: Boolean, multiple: Boolean): ClearSearchOnBlurParameters = {
+      val __obj = js.Dynamic.literal(clearSearchOnSelect = clearSearchOnSelect.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ClearSearchOnBlurParameters]
+    }
+    
+    extension [Self <: ClearSearchOnBlurParameters](x: Self) {
+      
+      inline def setClearSearchOnSelect(value: Boolean): Self = StObject.set(x, "clearSearchOnSelect", value.asInstanceOf[js.Any])
+      
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined {[ K in keyof vue-select.vue-select.VueSelectComputed ]: std.ReturnType<vue-select.vue-select.VueSelectComputed[K]>} */
+  trait ComputedValues extends StObject {
+    
+    var childComponents: ReturnType[js.Function0[RecordChildComponentNamea]]
+    
+    var dropdownOpen: ReturnType[js.Function0[Boolean]]
+    
+    var filteredOptions: ReturnType[js.Function0[js.Array[VueSelectOption]]]
+    
+    var isTrackingValues: ReturnType[js.Function0[Boolean]]
+    
+    var isValueEmpty: ReturnType[js.Function0[Boolean]]
+    
+    var optionList: ReturnType[js.Function0[js.Array[VueSelectOption]]]
+    
+    var scope: ReturnType[js.Function0[VueSelectSlotScope]]
+    
+    var searchEl: ReturnType[js.Function0[HTMLInputElement]]
+    
+    var searchPlaceholder: ReturnType[js.Function0[String]]
+    
+    var searching: ReturnType[js.Function0[Boolean]]
+    
+    var selectedValue: ReturnType[js.Function0[js.Array[VueSelectOption]]]
+    
+    var showClearButton: ReturnType[js.Function0[Boolean]]
+    
+    var stateClasses: ReturnType[js.Function0[StateClasses]]
+  }
+  object ComputedValues {
+    
+    inline def apply(
+      childComponents: ReturnType[js.Function0[RecordChildComponentNamea]],
+      dropdownOpen: ReturnType[js.Function0[Boolean]],
+      filteredOptions: ReturnType[js.Function0[js.Array[VueSelectOption]]],
+      isTrackingValues: ReturnType[js.Function0[Boolean]],
+      isValueEmpty: ReturnType[js.Function0[Boolean]],
+      optionList: ReturnType[js.Function0[js.Array[VueSelectOption]]],
+      scope: ReturnType[js.Function0[VueSelectSlotScope]],
+      searchEl: ReturnType[js.Function0[HTMLInputElement]],
+      searchPlaceholder: ReturnType[js.Function0[String]],
+      searching: ReturnType[js.Function0[Boolean]],
+      selectedValue: ReturnType[js.Function0[js.Array[VueSelectOption]]],
+      showClearButton: ReturnType[js.Function0[Boolean]],
+      stateClasses: ReturnType[js.Function0[StateClasses]]
+    ): ComputedValues = {
+      val __obj = js.Dynamic.literal(childComponents = childComponents.asInstanceOf[js.Any], dropdownOpen = dropdownOpen.asInstanceOf[js.Any], filteredOptions = filteredOptions.asInstanceOf[js.Any], isTrackingValues = isTrackingValues.asInstanceOf[js.Any], isValueEmpty = isValueEmpty.asInstanceOf[js.Any], optionList = optionList.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], searchEl = searchEl.asInstanceOf[js.Any], searchPlaceholder = searchPlaceholder.asInstanceOf[js.Any], searching = searching.asInstanceOf[js.Any], selectedValue = selectedValue.asInstanceOf[js.Any], showClearButton = showClearButton.asInstanceOf[js.Any], stateClasses = stateClasses.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ComputedValues]
+    }
+    
+    extension [Self <: ComputedValues](x: Self) {
+      
+      inline def setChildComponents(value: ReturnType[js.Function0[RecordChildComponentNamea]]): Self = StObject.set(x, "childComponents", value.asInstanceOf[js.Any])
+      
+      inline def setDropdownOpen(value: ReturnType[js.Function0[Boolean]]): Self = StObject.set(x, "dropdownOpen", value.asInstanceOf[js.Any])
+      
+      inline def setFilteredOptions(value: ReturnType[js.Function0[js.Array[VueSelectOption]]]): Self = StObject.set(x, "filteredOptions", value.asInstanceOf[js.Any])
+      
+      inline def setIsTrackingValues(value: ReturnType[js.Function0[Boolean]]): Self = StObject.set(x, "isTrackingValues", value.asInstanceOf[js.Any])
+      
+      inline def setIsValueEmpty(value: ReturnType[js.Function0[Boolean]]): Self = StObject.set(x, "isValueEmpty", value.asInstanceOf[js.Any])
+      
+      inline def setOptionList(value: ReturnType[js.Function0[js.Array[VueSelectOption]]]): Self = StObject.set(x, "optionList", value.asInstanceOf[js.Any])
+      
+      inline def setScope(value: ReturnType[js.Function0[VueSelectSlotScope]]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      
+      inline def setSearchEl(value: ReturnType[js.Function0[HTMLInputElement]]): Self = StObject.set(x, "searchEl", value.asInstanceOf[js.Any])
+      
+      inline def setSearchPlaceholder(value: ReturnType[js.Function0[String]]): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
+      
+      inline def setSearching(value: ReturnType[js.Function0[Boolean]]): Self = StObject.set(x, "searching", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedValue(value: ReturnType[js.Function0[js.Array[VueSelectOption]]]): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
+      
+      inline def setShowClearButton(value: ReturnType[js.Function0[Boolean]]): Self = StObject.set(x, "showClearButton", value.asInstanceOf[js.Any])
+      
+      inline def setStateClasses(value: ReturnType[js.Function0[StateClasses]]): Self = StObject.set(x, "stateClasses", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type KeyEventMap = Record[Double, js.Function1[/* event */ KeyboardEvent, Any]]
+  
+  trait ListSlotScope extends StObject {
+    
+    var filteredOptions: ReturnType[js.Function0[js.Array[VueSelectOption]]]
     
     var loading: Boolean
     
-    var open: Boolean
+    var search: String
     
-    var rtl: Boolean
-    
-    var searchable: Boolean
-    
-    var searching: Boolean
-    
-    var single: Boolean
-    
-    var unsearchable: Boolean
+    var searching: ReturnType[js.Function0[Boolean]]
   }
-  object DropdownClasses {
+  object ListSlotScope {
     
     inline def apply(
-      disabled: Boolean,
+      filteredOptions: ReturnType[js.Function0[js.Array[VueSelectOption]]],
       loading: Boolean,
-      open: Boolean,
-      rtl: Boolean,
-      searchable: Boolean,
-      searching: Boolean,
-      single: Boolean,
-      unsearchable: Boolean
-    ): DropdownClasses = {
-      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], rtl = rtl.asInstanceOf[js.Any], searchable = searchable.asInstanceOf[js.Any], searching = searching.asInstanceOf[js.Any], single = single.asInstanceOf[js.Any], unsearchable = unsearchable.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DropdownClasses]
+      search: String,
+      searching: ReturnType[js.Function0[Boolean]]
+    ): ListSlotScope = {
+      val __obj = js.Dynamic.literal(filteredOptions = filteredOptions.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], searching = searching.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ListSlotScope]
     }
     
-    extension [Self <: DropdownClasses](x: Self) {
+    extension [Self <: ListSlotScope](x: Self) {
       
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setFilteredOptions(value: ReturnType[js.Function0[js.Array[VueSelectOption]]]): Self = StObject.set(x, "filteredOptions", value.asInstanceOf[js.Any])
       
       inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
-      
-      inline def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
-      
-      inline def setSearching(value: Boolean): Self = StObject.set(x, "searching", value.asInstanceOf[js.Any])
-      
-      inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
-      
-      inline def setUnsearchable(value: Boolean): Self = StObject.set(x, "unsearchable", value.asInstanceOf[js.Any])
+      inline def setSearching(value: ReturnType[js.Function0[Boolean]]): Self = StObject.set(x, "searching", value.asInstanceOf[js.Any])
     }
   }
   
-  type OptionConsumer = js.Function1[/* option */ js.Any, Unit]
+  type OptionConsumer[T] = js.Function1[/* option */ VueSelectOption, T]
+  
+  trait StateClasses extends StObject {
+    
+    var `vs--disabled`: Boolean
+    
+    var `vs--loading`: Boolean
+    
+    var `vs--open`: Boolean
+    
+    var `vs--searchable`: Boolean
+    
+    var `vs--searching`: Boolean
+    
+    var `vs--single`: Boolean
+    
+    var `vs--unsearchable`: Boolean
+  }
+  object StateClasses {
+    
+    inline def apply(
+      `vs--disabled`: Boolean,
+      `vs--loading`: Boolean,
+      `vs--open`: Boolean,
+      `vs--searchable`: Boolean,
+      `vs--searching`: Boolean,
+      `vs--single`: Boolean,
+      `vs--unsearchable`: Boolean
+    ): StateClasses = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("vs--disabled")(`vs--disabled`.asInstanceOf[js.Any])
+      __obj.updateDynamic("vs--loading")(`vs--loading`.asInstanceOf[js.Any])
+      __obj.updateDynamic("vs--open")(`vs--open`.asInstanceOf[js.Any])
+      __obj.updateDynamic("vs--searchable")(`vs--searchable`.asInstanceOf[js.Any])
+      __obj.updateDynamic("vs--searching")(`vs--searching`.asInstanceOf[js.Any])
+      __obj.updateDynamic("vs--single")(`vs--single`.asInstanceOf[js.Any])
+      __obj.updateDynamic("vs--unsearchable")(`vs--unsearchable`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[StateClasses]
+    }
+    
+    extension [Self <: StateClasses](x: Self) {
+      
+      inline def `setVs--disabled`(value: Boolean): Self = StObject.set(x, "vs--disabled", value.asInstanceOf[js.Any])
+      
+      inline def `setVs--loading`(value: Boolean): Self = StObject.set(x, "vs--loading", value.asInstanceOf[js.Any])
+      
+      inline def `setVs--open`(value: Boolean): Self = StObject.set(x, "vs--open", value.asInstanceOf[js.Any])
+      
+      inline def `setVs--searchable`(value: Boolean): Self = StObject.set(x, "vs--searchable", value.asInstanceOf[js.Any])
+      
+      inline def `setVs--searching`(value: Boolean): Self = StObject.set(x, "vs--searching", value.asInstanceOf[js.Any])
+      
+      inline def `setVs--single`(value: Boolean): Self = StObject.set(x, "vs--single", value.asInstanceOf[js.Any])
+      
+      inline def `setVs--unsearchable`(value: Boolean): Self = StObject.set(x, "vs--unsearchable", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type UnbindPositionCallback = js.Function0[Unit]
   
   trait VueSelectComputed extends StObject {
     
-    def clearSearchOnBlur(): Boolean
-    
-    def dropdownClasses(): DropdownClasses
+    def childComponents(): RecordChildComponentNamea
     
     def dropdownOpen(): Boolean
     
-    def filteredOptions(): js.Array[js.Any]
+    def filteredOptions(): js.Array[VueSelectOption]
+    
+    def isTrackingValues(): Boolean
     
     def isValueEmpty(): Boolean
     
-    def searchPlaceholder(): Boolean
+    def optionList(): js.Array[VueSelectOption]
+    
+    def scope(): VueSelectSlotScope
+    
+    def searchEl(): HTMLInputElement
+    
+    def searchPlaceholder(): String
     
     def searching(): Boolean
     
+    def selectedValue(): js.Array[VueSelectOption]
+    
     def showClearButton(): Boolean
     
-    def valueAsArray(): js.Array[js.Any]
+    def stateClasses(): StateClasses
   }
   object VueSelectComputed {
     
     inline def apply(
-      clearSearchOnBlur: () => Boolean,
-      dropdownClasses: () => DropdownClasses,
+      childComponents: () => RecordChildComponentNamea,
       dropdownOpen: () => Boolean,
-      filteredOptions: () => js.Array[js.Any],
+      filteredOptions: () => js.Array[VueSelectOption],
+      isTrackingValues: () => Boolean,
       isValueEmpty: () => Boolean,
-      searchPlaceholder: () => Boolean,
+      optionList: () => js.Array[VueSelectOption],
+      scope: () => VueSelectSlotScope,
+      searchEl: () => HTMLInputElement,
+      searchPlaceholder: () => String,
       searching: () => Boolean,
+      selectedValue: () => js.Array[VueSelectOption],
       showClearButton: () => Boolean,
-      valueAsArray: () => js.Array[js.Any]
+      stateClasses: () => StateClasses
     ): VueSelectComputed = {
-      val __obj = js.Dynamic.literal(clearSearchOnBlur = js.Any.fromFunction0(clearSearchOnBlur), dropdownClasses = js.Any.fromFunction0(dropdownClasses), dropdownOpen = js.Any.fromFunction0(dropdownOpen), filteredOptions = js.Any.fromFunction0(filteredOptions), isValueEmpty = js.Any.fromFunction0(isValueEmpty), searchPlaceholder = js.Any.fromFunction0(searchPlaceholder), searching = js.Any.fromFunction0(searching), showClearButton = js.Any.fromFunction0(showClearButton), valueAsArray = js.Any.fromFunction0(valueAsArray))
+      val __obj = js.Dynamic.literal(childComponents = js.Any.fromFunction0(childComponents), dropdownOpen = js.Any.fromFunction0(dropdownOpen), filteredOptions = js.Any.fromFunction0(filteredOptions), isTrackingValues = js.Any.fromFunction0(isTrackingValues), isValueEmpty = js.Any.fromFunction0(isValueEmpty), optionList = js.Any.fromFunction0(optionList), scope = js.Any.fromFunction0(scope), searchEl = js.Any.fromFunction0(searchEl), searchPlaceholder = js.Any.fromFunction0(searchPlaceholder), searching = js.Any.fromFunction0(searching), selectedValue = js.Any.fromFunction0(selectedValue), showClearButton = js.Any.fromFunction0(showClearButton), stateClasses = js.Any.fromFunction0(stateClasses))
       __obj.asInstanceOf[VueSelectComputed]
     }
     
     extension [Self <: VueSelectComputed](x: Self) {
       
-      inline def setClearSearchOnBlur(value: () => Boolean): Self = StObject.set(x, "clearSearchOnBlur", js.Any.fromFunction0(value))
-      
-      inline def setDropdownClasses(value: () => DropdownClasses): Self = StObject.set(x, "dropdownClasses", js.Any.fromFunction0(value))
+      inline def setChildComponents(value: () => RecordChildComponentNamea): Self = StObject.set(x, "childComponents", js.Any.fromFunction0(value))
       
       inline def setDropdownOpen(value: () => Boolean): Self = StObject.set(x, "dropdownOpen", js.Any.fromFunction0(value))
       
-      inline def setFilteredOptions(value: () => js.Array[js.Any]): Self = StObject.set(x, "filteredOptions", js.Any.fromFunction0(value))
+      inline def setFilteredOptions(value: () => js.Array[VueSelectOption]): Self = StObject.set(x, "filteredOptions", js.Any.fromFunction0(value))
+      
+      inline def setIsTrackingValues(value: () => Boolean): Self = StObject.set(x, "isTrackingValues", js.Any.fromFunction0(value))
       
       inline def setIsValueEmpty(value: () => Boolean): Self = StObject.set(x, "isValueEmpty", js.Any.fromFunction0(value))
       
-      inline def setSearchPlaceholder(value: () => Boolean): Self = StObject.set(x, "searchPlaceholder", js.Any.fromFunction0(value))
+      inline def setOptionList(value: () => js.Array[VueSelectOption]): Self = StObject.set(x, "optionList", js.Any.fromFunction0(value))
+      
+      inline def setScope(value: () => VueSelectSlotScope): Self = StObject.set(x, "scope", js.Any.fromFunction0(value))
+      
+      inline def setSearchEl(value: () => HTMLInputElement): Self = StObject.set(x, "searchEl", js.Any.fromFunction0(value))
+      
+      inline def setSearchPlaceholder(value: () => String): Self = StObject.set(x, "searchPlaceholder", js.Any.fromFunction0(value))
       
       inline def setSearching(value: () => Boolean): Self = StObject.set(x, "searching", js.Any.fromFunction0(value))
       
+      inline def setSelectedValue(value: () => js.Array[VueSelectOption]): Self = StObject.set(x, "selectedValue", js.Any.fromFunction0(value))
+      
       inline def setShowClearButton(value: () => Boolean): Self = StObject.set(x, "showClearButton", js.Any.fromFunction0(value))
       
-      inline def setValueAsArray(value: () => js.Array[js.Any]): Self = StObject.set(x, "valueAsArray", js.Any.fromFunction0(value))
+      inline def setStateClasses(value: () => StateClasses): Self = StObject.set(x, "stateClasses", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
-  trait VueSelectConstructor
-    extends StObject
-       with VueConstructor[Vue] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor * / any */ trait VueSelectConstructor extends StObject {
     
-    var computed: VueSelectComputed = js.native
+    var computed: VueSelectComputed
     
-    def data(): VueSelectData = js.native
+    def data(): VueSelectData
     
-    var methods: VueSelectMethods = js.native
+    var methods: VueSelectMethods
     
-    var props: VueSelectProps = js.native
+    var props: VueSelectProps
     
-    var watch: VueSelectWatch = js.native
+    var watch: VueSelectWatch
+  }
+  object VueSelectConstructor {
+    
+    inline def apply(
+      computed: VueSelectComputed,
+      data: () => VueSelectData,
+      methods: VueSelectMethods,
+      props: VueSelectProps,
+      watch: VueSelectWatch
+    ): VueSelectConstructor = {
+      val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], data = js.Any.fromFunction0(data), methods = methods.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any])
+      __obj.asInstanceOf[VueSelectConstructor]
+    }
+    
+    extension [Self <: VueSelectConstructor](x: Self) {
+      
+      inline def setComputed(value: VueSelectComputed): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+      
+      inline def setData(value: () => VueSelectData): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      
+      inline def setMethods(value: VueSelectMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: VueSelectProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setWatch(value: VueSelectWatch): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    }
   }
   
   trait VueSelectData extends StObject {
     
-    var mutableOptions: js.Array[js.Any]
+    var isComposing: Boolean
     
-    var mutableValue: js.Any
+    // in ajax mixin:
+    var mutableLoading: Boolean
     
     var open: Boolean
     
+    var pushedTags: js.Array[VueSelectOption]
+    
     var search: String
+    
+    // in typeAheadPointer mixin:
+    var typeAheadPointer: Double
   }
   object VueSelectData {
     
-    inline def apply(mutableOptions: js.Array[js.Any], mutableValue: js.Any, open: Boolean, search: String): VueSelectData = {
-      val __obj = js.Dynamic.literal(mutableOptions = mutableOptions.asInstanceOf[js.Any], mutableValue = mutableValue.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
+    inline def apply(
+      isComposing: Boolean,
+      mutableLoading: Boolean,
+      open: Boolean,
+      pushedTags: js.Array[VueSelectOption],
+      search: String,
+      typeAheadPointer: Double
+    ): VueSelectData = {
+      val __obj = js.Dynamic.literal(isComposing = isComposing.asInstanceOf[js.Any], mutableLoading = mutableLoading.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], pushedTags = pushedTags.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], typeAheadPointer = typeAheadPointer.asInstanceOf[js.Any])
       __obj.asInstanceOf[VueSelectData]
     }
     
     extension [Self <: VueSelectData](x: Self) {
       
-      inline def setMutableOptions(value: js.Array[js.Any]): Self = StObject.set(x, "mutableOptions", value.asInstanceOf[js.Any])
+      inline def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
       
-      inline def setMutableOptionsVarargs(value: js.Any*): Self = StObject.set(x, "mutableOptions", js.Array(value :_*))
-      
-      inline def setMutableValue(value: js.Any): Self = StObject.set(x, "mutableValue", value.asInstanceOf[js.Any])
+      inline def setMutableLoading(value: Boolean): Self = StObject.set(x, "mutableLoading", value.asInstanceOf[js.Any])
       
       inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
+      inline def setPushedTags(value: js.Array[VueSelectOption]): Self = StObject.set(x, "pushedTags", value.asInstanceOf[js.Any])
+      
+      inline def setPushedTagsVarargs(value: VueSelectOption*): Self = StObject.set(x, "pushedTags", js.Array(value*))
+      
       inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      
+      inline def setTypeAheadPointer(value: Double): Self = StObject.set(x, "typeAheadPointer", value.asInstanceOf[js.Any])
     }
   }
   
+  type VueSelectInstance = (InstanceType[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendedVue<Vue, VueSelectData, VueSelectMethods, ComputedValues, VueSelectProps> */ Any
+  ]) & Refs
+  
+  @js.native
   trait VueSelectMethods extends StObject {
     
-    def clearSelection(): Unit
+    def clearSelection(): Unit = js.native
     
-    def deselect(option: js.Any): Unit
+    def closeSearchOptions(): Unit = js.native
+    
+    def deselect(option: VueSelectOption): Unit = js.native
     @JSName("deselect")
-    var deselect_Original: OptionConsumer
+    var deselect_Original: OptionConsumer[Unit] = js.native
     
-    def isOptionSelected(option: js.Any): Boolean
+    def findOptionFromReducedValue(option: VueSelectOption): Any = js.native
+    @JSName("findOptionFromReducedValue")
+    var findOptionFromReducedValue_Original: OptionConsumer[Any] = js.native
     
-    def maybeDeleteValue(): Unit
+    def getDropdownViewport(): Any = js.native
     
-    def maybePushTag(option: js.Any): Unit
-    @JSName("maybePushTag")
-    var maybePushTag_Original: OptionConsumer
+    def isOptionDeselectable(option: VueSelectOption): Boolean = js.native
+    @JSName("isOptionDeselectable")
+    var isOptionDeselectable_Original: OptionConsumer[Boolean] = js.native
     
-    def onAfterSelect(option: js.Any): Unit
+    def isOptionSelected(option: VueSelectOption): Boolean = js.native
+    @JSName("isOptionSelected")
+    var isOptionSelected_Original: OptionConsumer[Boolean] = js.native
+    
+    // in pointerScroll mixin:
+    def maybeAdjustScroll(): Any = js.native
+    
+    def maybeDeleteValue(): Unit = js.native
+    
+    def normalizeOptionForSlot(option: VueSelectOption): VueSelectOption = js.native
+    @JSName("normalizeOptionForSlot")
+    var normalizeOptionForSlot_Original: OptionConsumer[VueSelectOption] = js.native
+    
+    def onAfterSelect(option: VueSelectOption): Unit = js.native
     @JSName("onAfterSelect")
-    var onAfterSelect_Original: OptionConsumer
+    var onAfterSelect_Original: OptionConsumer[Unit] = js.native
     
-    def onEscape(): Unit
+    def onEscape(): Unit = js.native
     
-    def onSearchBlur(): Unit
+    def onMouseUp(): Unit = js.native
     
-    def onSearchFocus(): Unit
+    def onMousedown(): Unit = js.native
     
-    def optionExists(option: js.Any): Boolean
+    def onSearchBlur(): Unit = js.native
     
-    def select(option: js.Any): Unit
+    def onSearchFocus(): Unit = js.native
+    
+    def onSearchKeyDown(event: KeyboardEvent): Any = js.native
+    
+    def optionComparator(a: js.Object, b: js.Object): Boolean = js.native
+    
+    def optionExists(option: VueSelectOption): Boolean = js.native
+    @JSName("optionExists")
+    var optionExists_Original: OptionConsumer[Boolean] = js.native
+    
+    def pushTag(option: VueSelectOption): Unit = js.native
+    @JSName("pushTag")
+    var pushTag_Original: OptionConsumer[Unit] = js.native
+    
+    def select(option: VueSelectOption): Unit = js.native
     @JSName("select")
-    var select_Original: OptionConsumer
+    var select_Original: OptionConsumer[Unit] = js.native
     
-    def toggleDropdown(e: Event): Unit
+    def setInternalValueFromOptions(option: VueSelectOption): Unit = js.native
+    @JSName("setInternalValueFromOptions")
+    var setInternalValueFromOptions_Original: OptionConsumer[Unit] = js.native
+    
+    def toggleDropdown(e: Event): Unit = js.native
+    
+    // in ajax mixin:
+    def toggleLoading(): Boolean = js.native
+    def toggleLoading(toggle: Boolean): Boolean = js.native
+    
+    def typeAheadDown(): Unit = js.native
+    
+    def typeAheadSelect(): Unit = js.native
+    
+    // in typeAheadPointer mixin:
+    def typeAheadUp(): Unit = js.native
+    
+    def updateValue(value: VueSelectOption): Unit = js.native
   }
-  object VueSelectMethods {
-    
-    inline def apply(
-      clearSelection: () => Unit,
-      deselect: /* option */ js.Any => Unit,
-      isOptionSelected: js.Any => Boolean,
-      maybeDeleteValue: () => Unit,
-      maybePushTag: /* option */ js.Any => Unit,
-      onAfterSelect: /* option */ js.Any => Unit,
-      onEscape: () => Unit,
-      onSearchBlur: () => Unit,
-      onSearchFocus: () => Unit,
-      optionExists: js.Any => Boolean,
-      select: /* option */ js.Any => Unit,
-      toggleDropdown: Event => Unit
-    ): VueSelectMethods = {
-      val __obj = js.Dynamic.literal(clearSelection = js.Any.fromFunction0(clearSelection), deselect = js.Any.fromFunction1(deselect), isOptionSelected = js.Any.fromFunction1(isOptionSelected), maybeDeleteValue = js.Any.fromFunction0(maybeDeleteValue), maybePushTag = js.Any.fromFunction1(maybePushTag), onAfterSelect = js.Any.fromFunction1(onAfterSelect), onEscape = js.Any.fromFunction0(onEscape), onSearchBlur = js.Any.fromFunction0(onSearchBlur), onSearchFocus = js.Any.fromFunction0(onSearchFocus), optionExists = js.Any.fromFunction1(optionExists), select = js.Any.fromFunction1(select), toggleDropdown = js.Any.fromFunction1(toggleDropdown))
-      __obj.asInstanceOf[VueSelectMethods]
-    }
-    
-    extension [Self <: VueSelectMethods](x: Self) {
-      
-      inline def setClearSelection(value: () => Unit): Self = StObject.set(x, "clearSelection", js.Any.fromFunction0(value))
-      
-      inline def setDeselect(value: /* option */ js.Any => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction1(value))
-      
-      inline def setIsOptionSelected(value: js.Any => Boolean): Self = StObject.set(x, "isOptionSelected", js.Any.fromFunction1(value))
-      
-      inline def setMaybeDeleteValue(value: () => Unit): Self = StObject.set(x, "maybeDeleteValue", js.Any.fromFunction0(value))
-      
-      inline def setMaybePushTag(value: /* option */ js.Any => Unit): Self = StObject.set(x, "maybePushTag", js.Any.fromFunction1(value))
-      
-      inline def setOnAfterSelect(value: /* option */ js.Any => Unit): Self = StObject.set(x, "onAfterSelect", js.Any.fromFunction1(value))
-      
-      inline def setOnEscape(value: () => Unit): Self = StObject.set(x, "onEscape", js.Any.fromFunction0(value))
-      
-      inline def setOnSearchBlur(value: () => Unit): Self = StObject.set(x, "onSearchBlur", js.Any.fromFunction0(value))
-      
-      inline def setOnSearchFocus(value: () => Unit): Self = StObject.set(x, "onSearchFocus", js.Any.fromFunction0(value))
-      
-      inline def setOptionExists(value: js.Any => Boolean): Self = StObject.set(x, "optionExists", js.Any.fromFunction1(value))
-      
-      inline def setSelect(value: /* option */ js.Any => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
-      
-      inline def setToggleDropdown(value: Event => Unit): Self = StObject.set(x, "toggleDropdown", js.Any.fromFunction1(value))
-    }
-  }
+  
+  type VueSelectOption = String | js.Object
   
   trait VueSelectProps extends StObject {
     
+    var appendToBody: Boolean
+    
     var autocomplete: String
+    
+    // in pointerScroll mixin:
+    var autoscroll: Boolean
+    
+    def calculatePosition(dropdownList: HTMLUListElement, component: VueSelectInstance, position: CalculatedPosition): Unit | UnbindPositionCallback
+    
+    def clearSearchOnBlur(parameters: ClearSearchOnBlurParameters): Boolean
     
     var clearSearchOnSelect: Boolean
     
@@ -272,49 +543,77 @@ object mod extends Shortcut {
     
     var closeOnSelect: Boolean
     
-    def createOption(option: js.Any): js.Any
+    var components: RecordChildComponentNameaDeselect
     
-    var dir: String
+    def createOption(option: String): VueSelectOption
+    
+    var deselectFromDropdown: Boolean
+    
+    var dir: auto | ltr | rtl
     
     var disabled: Boolean
     
-    def filter(options: js.Array[js.Any], search: String): Boolean
+    def dropdownShouldOpen(vSelect: VueSelectInstance): Boolean
     
-    def filterBy(option: js.Any, label: String, search: String): Boolean
+    def filter(options: js.Array[VueSelectOption], search: String): js.Array[VueSelectOption]
+    
+    def filterBy(option: VueSelectOption, label: String, search: String): Boolean
     
     var filterable: Boolean
     
-    def getOptionLabel(option: js.Any): String
+    def getOptionKey(option: VueSelectOption): String
+    @JSName("getOptionKey")
+    var getOptionKey_Original: OptionConsumer[String]
     
-    var index: String | Null
+    def getOptionLabel(option: VueSelectOption): String
+    @JSName("getOptionLabel")
+    var getOptionLabel_Original: OptionConsumer[String]
     
     var inputId: String | Null
     
     var label: String
     
-    var maxHeight: String
+    // in ajax mixin:
+    var loading: Boolean
+    
+    def mapKeydown(map: KeyEventMap, vm: VueSelectInstance): KeyEventMap
     
     var multiple: Boolean
     
     var noDrop: Boolean
     
-    def onChange(`val`: js.Any): Unit
-    
-    def onInput(`val`: js.Any): Unit
-    
+    /** @deprecated since v3.3 */
     def onTab(): Unit
     
-    var options: js.Array[js.Any]
+    var options: js.Array[VueSelectOption]
     
     var placeholder: String
     
     var pushTags: Boolean
     
-    var resetOnOptionsChange: Boolean
+    def reduce(option: VueSelectOption): Any
+    @JSName("reduce")
+    var reduce_Original: OptionConsumer[Any]
+    
+    var resetOnOptionsChange: Boolean | (js.Function3[
+        /* newOptions */ js.Array[VueSelectOption], 
+        /* oldOptions */ js.Array[VueSelectOption], 
+        /* selectedValue */ js.Array[VueSelectOption], 
+        Boolean
+      ])
+    
+    var searchInputQuerySelector: String
     
     var searchable: Boolean
     
+    var selectOnKeyCodes: js.Array[Double]
+    
+    /** @deprecated since v3.3 - use selectOnKeyCodes instead */
     var selectOnTab: Boolean
+    
+    def selectable(option: VueSelectOption): Boolean
+    @JSName("selectable")
+    var selectable_Original: OptionConsumer[Boolean]
     
     var tabindex: Double | Null
     
@@ -322,46 +621,73 @@ object mod extends Shortcut {
     
     var transition: String
     
-    var value: js.Any
+    var uid: String | Double
+    
+    var value: VueSelectOption
   }
   object VueSelectProps {
     
     inline def apply(
+      appendToBody: Boolean,
       autocomplete: String,
+      autoscroll: Boolean,
+      calculatePosition: (HTMLUListElement, VueSelectInstance, CalculatedPosition) => Unit | UnbindPositionCallback,
+      clearSearchOnBlur: ClearSearchOnBlurParameters => Boolean,
       clearSearchOnSelect: Boolean,
       clearable: Boolean,
       closeOnSelect: Boolean,
-      createOption: js.Any => js.Any,
-      dir: String,
+      components: RecordChildComponentNameaDeselect,
+      createOption: String => VueSelectOption,
+      deselectFromDropdown: Boolean,
+      dir: auto | ltr | rtl,
       disabled: Boolean,
-      filter: (js.Array[js.Any], String) => Boolean,
-      filterBy: (js.Any, String, String) => Boolean,
+      dropdownShouldOpen: VueSelectInstance => Boolean,
+      filter: (js.Array[VueSelectOption], String) => js.Array[VueSelectOption],
+      filterBy: (VueSelectOption, String, String) => Boolean,
       filterable: Boolean,
-      getOptionLabel: js.Any => String,
+      getOptionKey: /* option */ VueSelectOption => String,
+      getOptionLabel: /* option */ VueSelectOption => String,
       label: String,
-      maxHeight: String,
+      loading: Boolean,
+      mapKeydown: (KeyEventMap, VueSelectInstance) => KeyEventMap,
       multiple: Boolean,
       noDrop: Boolean,
-      onChange: js.Any => Unit,
-      onInput: js.Any => Unit,
       onTab: () => Unit,
-      options: js.Array[js.Any],
+      options: js.Array[VueSelectOption],
       placeholder: String,
       pushTags: Boolean,
-      resetOnOptionsChange: Boolean,
+      reduce: /* option */ VueSelectOption => Any,
+      resetOnOptionsChange: Boolean | (js.Function3[
+          /* newOptions */ js.Array[VueSelectOption], 
+          /* oldOptions */ js.Array[VueSelectOption], 
+          /* selectedValue */ js.Array[VueSelectOption], 
+          Boolean
+        ]),
+      searchInputQuerySelector: String,
       searchable: Boolean,
+      selectOnKeyCodes: js.Array[Double],
       selectOnTab: Boolean,
+      selectable: /* option */ VueSelectOption => Boolean,
       taggable: Boolean,
       transition: String,
-      value: js.Any
+      uid: String | Double,
+      value: VueSelectOption
     ): VueSelectProps = {
-      val __obj = js.Dynamic.literal(autocomplete = autocomplete.asInstanceOf[js.Any], clearSearchOnSelect = clearSearchOnSelect.asInstanceOf[js.Any], clearable = clearable.asInstanceOf[js.Any], closeOnSelect = closeOnSelect.asInstanceOf[js.Any], createOption = js.Any.fromFunction1(createOption), dir = dir.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], filter = js.Any.fromFunction2(filter), filterBy = js.Any.fromFunction3(filterBy), filterable = filterable.asInstanceOf[js.Any], getOptionLabel = js.Any.fromFunction1(getOptionLabel), label = label.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any], multiple = multiple.asInstanceOf[js.Any], noDrop = noDrop.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), onInput = js.Any.fromFunction1(onInput), onTab = js.Any.fromFunction0(onTab), options = options.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], pushTags = pushTags.asInstanceOf[js.Any], resetOnOptionsChange = resetOnOptionsChange.asInstanceOf[js.Any], searchable = searchable.asInstanceOf[js.Any], selectOnTab = selectOnTab.asInstanceOf[js.Any], taggable = taggable.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], index = null, inputId = null, tabindex = null)
+      val __obj = js.Dynamic.literal(appendToBody = appendToBody.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autoscroll = autoscroll.asInstanceOf[js.Any], calculatePosition = js.Any.fromFunction3(calculatePosition), clearSearchOnBlur = js.Any.fromFunction1(clearSearchOnBlur), clearSearchOnSelect = clearSearchOnSelect.asInstanceOf[js.Any], clearable = clearable.asInstanceOf[js.Any], closeOnSelect = closeOnSelect.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], createOption = js.Any.fromFunction1(createOption), deselectFromDropdown = deselectFromDropdown.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], dropdownShouldOpen = js.Any.fromFunction1(dropdownShouldOpen), filter = js.Any.fromFunction2(filter), filterBy = js.Any.fromFunction3(filterBy), filterable = filterable.asInstanceOf[js.Any], getOptionKey = js.Any.fromFunction1(getOptionKey), getOptionLabel = js.Any.fromFunction1(getOptionLabel), label = label.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], mapKeydown = js.Any.fromFunction2(mapKeydown), multiple = multiple.asInstanceOf[js.Any], noDrop = noDrop.asInstanceOf[js.Any], onTab = js.Any.fromFunction0(onTab), options = options.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], pushTags = pushTags.asInstanceOf[js.Any], reduce = js.Any.fromFunction1(reduce), resetOnOptionsChange = resetOnOptionsChange.asInstanceOf[js.Any], searchInputQuerySelector = searchInputQuerySelector.asInstanceOf[js.Any], searchable = searchable.asInstanceOf[js.Any], selectOnKeyCodes = selectOnKeyCodes.asInstanceOf[js.Any], selectOnTab = selectOnTab.asInstanceOf[js.Any], selectable = js.Any.fromFunction1(selectable), taggable = taggable.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], inputId = null, tabindex = null)
       __obj.asInstanceOf[VueSelectProps]
     }
     
     extension [Self <: VueSelectProps](x: Self) {
       
+      inline def setAppendToBody(value: Boolean): Self = StObject.set(x, "appendToBody", value.asInstanceOf[js.Any])
+      
       inline def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
+      
+      inline def setAutoscroll(value: Boolean): Self = StObject.set(x, "autoscroll", value.asInstanceOf[js.Any])
+      
+      inline def setCalculatePosition(value: (HTMLUListElement, VueSelectInstance, CalculatedPosition) => Unit | UnbindPositionCallback): Self = StObject.set(x, "calculatePosition", js.Any.fromFunction3(value))
+      
+      inline def setClearSearchOnBlur(value: ClearSearchOnBlurParameters => Boolean): Self = StObject.set(x, "clearSearchOnBlur", js.Any.fromFunction1(value))
       
       inline def setClearSearchOnSelect(value: Boolean): Self = StObject.set(x, "clearSearchOnSelect", value.asInstanceOf[js.Any])
       
@@ -369,23 +695,27 @@ object mod extends Shortcut {
       
       inline def setCloseOnSelect(value: Boolean): Self = StObject.set(x, "closeOnSelect", value.asInstanceOf[js.Any])
       
-      inline def setCreateOption(value: js.Any => js.Any): Self = StObject.set(x, "createOption", js.Any.fromFunction1(value))
+      inline def setComponents(value: RecordChildComponentNameaDeselect): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setCreateOption(value: String => VueSelectOption): Self = StObject.set(x, "createOption", js.Any.fromFunction1(value))
+      
+      inline def setDeselectFromDropdown(value: Boolean): Self = StObject.set(x, "deselectFromDropdown", value.asInstanceOf[js.Any])
+      
+      inline def setDir(value: auto | ltr | rtl): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      inline def setFilter(value: (js.Array[js.Any], String) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      inline def setDropdownShouldOpen(value: VueSelectInstance => Boolean): Self = StObject.set(x, "dropdownShouldOpen", js.Any.fromFunction1(value))
       
-      inline def setFilterBy(value: (js.Any, String, String) => Boolean): Self = StObject.set(x, "filterBy", js.Any.fromFunction3(value))
+      inline def setFilter(value: (js.Array[VueSelectOption], String) => js.Array[VueSelectOption]): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      
+      inline def setFilterBy(value: (VueSelectOption, String, String) => Boolean): Self = StObject.set(x, "filterBy", js.Any.fromFunction3(value))
       
       inline def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
       
-      inline def setGetOptionLabel(value: js.Any => String): Self = StObject.set(x, "getOptionLabel", js.Any.fromFunction1(value))
+      inline def setGetOptionKey(value: /* option */ VueSelectOption => String): Self = StObject.set(x, "getOptionKey", js.Any.fromFunction1(value))
       
-      inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      inline def setIndexNull: Self = StObject.set(x, "index", null)
+      inline def setGetOptionLabel(value: /* option */ VueSelectOption => String): Self = StObject.set(x, "getOptionLabel", js.Any.fromFunction1(value))
       
       inline def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
       
@@ -393,31 +723,50 @@ object mod extends Shortcut {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      inline def setMaxHeight(value: String): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      
+      inline def setMapKeydown(value: (KeyEventMap, VueSelectInstance) => KeyEventMap): Self = StObject.set(x, "mapKeydown", js.Any.fromFunction2(value))
       
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
       inline def setNoDrop(value: Boolean): Self = StObject.set(x, "noDrop", value.asInstanceOf[js.Any])
       
-      inline def setOnChange(value: js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
-      
-      inline def setOnInput(value: js.Any => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
-      
       inline def setOnTab(value: () => Unit): Self = StObject.set(x, "onTab", js.Any.fromFunction0(value))
       
-      inline def setOptions(value: js.Array[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[VueSelectOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: js.Any*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: VueSelectOption*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       inline def setPushTags(value: Boolean): Self = StObject.set(x, "pushTags", value.asInstanceOf[js.Any])
       
-      inline def setResetOnOptionsChange(value: Boolean): Self = StObject.set(x, "resetOnOptionsChange", value.asInstanceOf[js.Any])
+      inline def setReduce(value: /* option */ VueSelectOption => Any): Self = StObject.set(x, "reduce", js.Any.fromFunction1(value))
+      
+      inline def setResetOnOptionsChange(
+        value: Boolean | (js.Function3[
+              /* newOptions */ js.Array[VueSelectOption], 
+              /* oldOptions */ js.Array[VueSelectOption], 
+              /* selectedValue */ js.Array[VueSelectOption], 
+              Boolean
+            ])
+      ): Self = StObject.set(x, "resetOnOptionsChange", value.asInstanceOf[js.Any])
+      
+      inline def setResetOnOptionsChangeFunction3(
+        value: (/* newOptions */ js.Array[VueSelectOption], /* oldOptions */ js.Array[VueSelectOption], /* selectedValue */ js.Array[VueSelectOption]) => Boolean
+      ): Self = StObject.set(x, "resetOnOptionsChange", js.Any.fromFunction3(value))
+      
+      inline def setSearchInputQuerySelector(value: String): Self = StObject.set(x, "searchInputQuerySelector", value.asInstanceOf[js.Any])
       
       inline def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
       
+      inline def setSelectOnKeyCodes(value: js.Array[Double]): Self = StObject.set(x, "selectOnKeyCodes", value.asInstanceOf[js.Any])
+      
+      inline def setSelectOnKeyCodesVarargs(value: Double*): Self = StObject.set(x, "selectOnKeyCodes", js.Array(value*))
+      
       inline def setSelectOnTab(value: Boolean): Self = StObject.set(x, "selectOnTab", value.asInstanceOf[js.Any])
+      
+      inline def setSelectable(value: /* option */ VueSelectOption => Boolean): Self = StObject.set(x, "selectable", js.Any.fromFunction1(value))
       
       inline def setTabindex(value: Double): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
       
@@ -427,51 +776,122 @@ object mod extends Shortcut {
       
       inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setUid(value: String | Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: VueSelectOption): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait VueSelectSlotScope extends StObject {
+    
+    var footer: ListSlotScopedeselectVueS
+    
+    var header: ListSlotScopedeselectVueS
+    
+    var listFooter: ListSlotScope
+    
+    var listHeader: ListSlotScope
+    
+    var noOptions: Search
+    
+    var openIndicator: AttributesClass
+    
+    var search: Attributes
+    
+    var spinner: Loading
+  }
+  object VueSelectSlotScope {
+    
+    inline def apply(
+      footer: ListSlotScopedeselectVueS,
+      header: ListSlotScopedeselectVueS,
+      listFooter: ListSlotScope,
+      listHeader: ListSlotScope,
+      noOptions: Search,
+      openIndicator: AttributesClass,
+      search: Attributes,
+      spinner: Loading
+    ): VueSelectSlotScope = {
+      val __obj = js.Dynamic.literal(footer = footer.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], listFooter = listFooter.asInstanceOf[js.Any], listHeader = listHeader.asInstanceOf[js.Any], noOptions = noOptions.asInstanceOf[js.Any], openIndicator = openIndicator.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], spinner = spinner.asInstanceOf[js.Any])
+      __obj.asInstanceOf[VueSelectSlotScope]
+    }
+    
+    extension [Self <: VueSelectSlotScope](x: Self) {
+      
+      inline def setFooter(value: ListSlotScopedeselectVueS): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      
+      inline def setHeader(value: ListSlotScopedeselectVueS): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      
+      inline def setListFooter(value: ListSlotScope): Self = StObject.set(x, "listFooter", value.asInstanceOf[js.Any])
+      
+      inline def setListHeader(value: ListSlotScope): Self = StObject.set(x, "listHeader", value.asInstanceOf[js.Any])
+      
+      inline def setNoOptions(value: Search): Self = StObject.set(x, "noOptions", value.asInstanceOf[js.Any])
+      
+      inline def setOpenIndicator(value: AttributesClass): Self = StObject.set(x, "openIndicator", value.asInstanceOf[js.Any])
+      
+      inline def setSearch(value: Attributes): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      
+      inline def setSpinner(value: Loading): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
     }
   }
   
   trait VueSelectWatch extends StObject {
     
-    def created(): Unit
+    // in typeAheadPointer mixin:
+    def filteredOptions(): Unit
     
-    def multiple(reset: Boolean): Unit
+    def loading(`val`: Boolean): Unit
     
-    def mutableOptions(): Unit
+    def multiple(): Unit
     
-    def mutableValue(`val`: js.Any, old: js.Any): Unit
+    def open(isOpen: Boolean): Unit
     
-    def options(`val`: js.Any): Unit
+    def options(newOptions: js.Array[VueSelectOption], old: js.Array[VueSelectOption]): Unit
     
-    def value(`val`: js.Any): Unit
+    // in ajax mixin:
+    def search(): Unit
+    
+    // in pointerScroll mixin:
+    def typeAheadPointer(): Unit
+    
+    def value(option: VueSelectOption): Unit
+    @JSName("value")
+    var value_Original: OptionConsumer[Unit]
   }
   object VueSelectWatch {
     
     inline def apply(
-      created: () => Unit,
-      multiple: Boolean => Unit,
-      mutableOptions: () => Unit,
-      mutableValue: (js.Any, js.Any) => Unit,
-      options: js.Any => Unit,
-      value: js.Any => Unit
+      filteredOptions: () => Unit,
+      loading: Boolean => Unit,
+      multiple: () => Unit,
+      open: Boolean => Unit,
+      options: (js.Array[VueSelectOption], js.Array[VueSelectOption]) => Unit,
+      search: () => Unit,
+      typeAheadPointer: () => Unit,
+      value: /* option */ VueSelectOption => Unit
     ): VueSelectWatch = {
-      val __obj = js.Dynamic.literal(created = js.Any.fromFunction0(created), multiple = js.Any.fromFunction1(multiple), mutableOptions = js.Any.fromFunction0(mutableOptions), mutableValue = js.Any.fromFunction2(mutableValue), options = js.Any.fromFunction1(options), value = js.Any.fromFunction1(value))
+      val __obj = js.Dynamic.literal(filteredOptions = js.Any.fromFunction0(filteredOptions), loading = js.Any.fromFunction1(loading), multiple = js.Any.fromFunction0(multiple), open = js.Any.fromFunction1(open), options = js.Any.fromFunction2(options), search = js.Any.fromFunction0(search), typeAheadPointer = js.Any.fromFunction0(typeAheadPointer), value = js.Any.fromFunction1(value))
       __obj.asInstanceOf[VueSelectWatch]
     }
     
     extension [Self <: VueSelectWatch](x: Self) {
       
-      inline def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
+      inline def setFilteredOptions(value: () => Unit): Self = StObject.set(x, "filteredOptions", js.Any.fromFunction0(value))
       
-      inline def setMultiple(value: Boolean => Unit): Self = StObject.set(x, "multiple", js.Any.fromFunction1(value))
+      inline def setLoading(value: Boolean => Unit): Self = StObject.set(x, "loading", js.Any.fromFunction1(value))
       
-      inline def setMutableOptions(value: () => Unit): Self = StObject.set(x, "mutableOptions", js.Any.fromFunction0(value))
+      inline def setMultiple(value: () => Unit): Self = StObject.set(x, "multiple", js.Any.fromFunction0(value))
       
-      inline def setMutableValue(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "mutableValue", js.Any.fromFunction2(value))
+      inline def setOpen(value: Boolean => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
       
-      inline def setOptions(value: js.Any => Unit): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+      inline def setOptions(value: (js.Array[VueSelectOption], js.Array[VueSelectOption]) => Unit): Self = StObject.set(x, "options", js.Any.fromFunction2(value))
       
-      inline def setValue(value: js.Any => Unit): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+      inline def setSearch(value: () => Unit): Self = StObject.set(x, "search", js.Any.fromFunction0(value))
+      
+      inline def setTypeAheadPointer(value: () => Unit): Self = StObject.set(x, "typeAheadPointer", js.Any.fromFunction0(value))
+      
+      inline def setValue(value: /* option */ VueSelectOption => Unit): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
     }
   }
   

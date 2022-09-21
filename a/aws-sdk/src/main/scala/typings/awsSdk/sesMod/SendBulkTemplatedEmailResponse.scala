@@ -22,6 +22,6 @@ object SendBulkTemplatedEmailResponse {
     
     inline def setStatus(value: BulkEmailDestinationStatusList): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    inline def setStatusVarargs(value: BulkEmailDestinationStatus*): Self = StObject.set(x, "Status", js.Array(value :_*))
+    inline def setStatusVarargs(value: BulkEmailDestinationStatus*): Self = StObject.set(x, "Status", js.Array(value*))
   }
 }

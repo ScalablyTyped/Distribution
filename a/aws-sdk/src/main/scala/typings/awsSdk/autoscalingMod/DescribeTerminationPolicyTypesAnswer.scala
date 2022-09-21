@@ -24,6 +24,6 @@ object DescribeTerminationPolicyTypesAnswer {
     
     inline def setTerminationPolicyTypesUndefined: Self = StObject.set(x, "TerminationPolicyTypes", js.undefined)
     
-    inline def setTerminationPolicyTypesVarargs(value: XmlStringMaxLen1600*): Self = StObject.set(x, "TerminationPolicyTypes", js.Array(value :_*))
+    inline def setTerminationPolicyTypesVarargs(value: XmlStringMaxLen1600*): Self = StObject.set(x, "TerminationPolicyTypes", js.Array(value*))
   }
 }

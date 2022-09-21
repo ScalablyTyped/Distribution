@@ -11,9 +11,9 @@ Create themes for your app using styled-components
 | Full name          | styled-theming |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 48 |
-| # downloads        | 1083161 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 168729.33333333334 |
+| # stars            | 1141.0 |
 
 ## Links
 - [Homepage](https://github.com/styled-components/styled-theming#readme)

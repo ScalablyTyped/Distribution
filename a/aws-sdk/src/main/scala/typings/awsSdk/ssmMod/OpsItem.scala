@@ -7,19 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpsItem extends StObject {
   
   /**
+    * The time a runbook workflow ended. Currently reported only for the OpsItem type /aws/changerequest.
+    */
+  var ActualEndTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The time a runbook workflow started. Currently reported only for the OpsItem type /aws/changerequest.
+    */
+  var ActualStartTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * An OpsItem category. Category options include: Availability, Cost, Performance, Recovery, Security.
     */
   var Category: js.UndefOr[OpsItemCategory] = js.undefined
   
   /**
-    * The ARN of the AWS account that created the OpsItem.
+    * The ARN of the Amazon Web Services account that created the OpsItem.
     */
   var CreatedBy: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the OpsItem was created.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The OpsItem description.
@@ -27,22 +37,22 @@ trait OpsItem extends StObject {
   var Description: js.UndefOr[OpsItemDescription] = js.undefined
   
   /**
-    * The ARN of the AWS account that last updated the OpsItem.
+    * The ARN of the Amazon Web Services account that last updated the OpsItem.
     */
   var LastModifiedBy: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the OpsItem was last updated.
     */
-  var LastModifiedTime: js.UndefOr[DateTime] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of an SNS topic where notifications are sent when this OpsItem is edited or changed.
+    * The Amazon Resource Name (ARN) of an Amazon Simple Notification Service (Amazon SNS) topic where notifications are sent when this OpsItem is edited or changed.
     */
   var Notifications: js.UndefOr[OpsItemNotifications] = js.undefined
   
   /**
-    * Operational data is custom data that provides useful reference details about the OpsItem. For example, you can specify log files, error strings, license keys, troubleshooting tips, or other relevant data. You enter operational data as key-value pairs. The key has a maximum length of 128 characters. The value has a maximum size of 20 KB.  Operational data keys can't begin with the following: amazon, aws, amzn, ssm, /amazon, /aws, /amzn, /ssm.  You can choose to make the data searchable by other users in the account or you can restrict search access. Searchable data means that all users with access to the OpsItem Overview page (as provided by the DescribeOpsItems API action) can view and search on the specified data. Operational data that is not searchable is only viewable by users who have access to the OpsItem (as provided by the GetOpsItem API action). Use the /aws/resources key in OperationalData to specify a related resource in the request. Use the /aws/automations key in OperationalData to associate an Automation runbook with the OpsItem. To view AWS CLI example commands that use these keys, see Creating OpsItems manually in the AWS Systems Manager User Guide.
+    * Operational data is custom data that provides useful reference details about the OpsItem. For example, you can specify log files, error strings, license keys, troubleshooting tips, or other relevant data. You enter operational data as key-value pairs. The key has a maximum length of 128 characters. The value has a maximum size of 20 KB.  Operational data keys can't begin with the following: amazon, aws, amzn, ssm, /amazon, /aws, /amzn, /ssm.  You can choose to make the data searchable by other users in the account or you can restrict search access. Searchable data means that all users with access to the OpsItem Overview page (as provided by the DescribeOpsItems API operation) can view and search on the specified data. Operational data that isn't searchable is only viewable by users who have access to the OpsItem (as provided by the GetOpsItem API operation). Use the /aws/resources key in OperationalData to specify a related resource in the request. Use the /aws/automations key in OperationalData to associate an Automation runbook with the OpsItem. To view Amazon Web Services CLI example commands that use these keys, see Creating OpsItems manually in the Amazon Web Services Systems Manager User Guide.
     */
   var OperationalData: js.UndefOr[OpsItemOperationalData] = js.undefined
   
@@ -50,6 +60,21 @@ trait OpsItem extends StObject {
     * The ID of the OpsItem.
     */
   var OpsItemId: js.UndefOr[typings.awsSdk.ssmMod.OpsItemId] = js.undefined
+  
+  /**
+    * The type of OpsItem. Currently, the only valid values are /aws/changerequest and /aws/issue.
+    */
+  var OpsItemType: js.UndefOr[typings.awsSdk.ssmMod.OpsItemType] = js.undefined
+  
+  /**
+    * The time specified in a change request for a runbook workflow to end. Currently supported only for the OpsItem type /aws/changerequest.
+    */
+  var PlannedEndTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The time specified in a change request for a runbook workflow to start. Currently supported only for the OpsItem type /aws/changerequest.
+    */
+  var PlannedStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The importance of this OpsItem in relation to other OpsItems in the system.
@@ -72,7 +97,7 @@ trait OpsItem extends StObject {
   var Source: js.UndefOr[OpsItemSource] = js.undefined
   
   /**
-    * The OpsItem status. Status can be Open, In Progress, or Resolved. For more information, see Editing OpsItem details in the AWS Systems Manager User Guide.
+    * The OpsItem status. Status can be Open, In Progress, or Resolved. For more information, see Editing OpsItem details in the Amazon Web Services Systems Manager User Guide.
     */
   var Status: js.UndefOr[OpsItemStatus] = js.undefined
   
@@ -95,6 +120,14 @@ object OpsItem {
   
   extension [Self <: OpsItem](x: Self) {
     
+    inline def setActualEndTime(value: js.Date): Self = StObject.set(x, "ActualEndTime", value.asInstanceOf[js.Any])
+    
+    inline def setActualEndTimeUndefined: Self = StObject.set(x, "ActualEndTime", js.undefined)
+    
+    inline def setActualStartTime(value: js.Date): Self = StObject.set(x, "ActualStartTime", value.asInstanceOf[js.Any])
+    
+    inline def setActualStartTimeUndefined: Self = StObject.set(x, "ActualStartTime", js.undefined)
+    
     inline def setCategory(value: OpsItemCategory): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
     inline def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
@@ -103,7 +136,7 @@ object OpsItem {
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    inline def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -115,7 +148,7 @@ object OpsItem {
     
     inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    inline def setLastModifiedTime(value: DateTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
@@ -123,7 +156,7 @@ object OpsItem {
     
     inline def setNotificationsUndefined: Self = StObject.set(x, "Notifications", js.undefined)
     
-    inline def setNotificationsVarargs(value: OpsItemNotification*): Self = StObject.set(x, "Notifications", js.Array(value :_*))
+    inline def setNotificationsVarargs(value: OpsItemNotification*): Self = StObject.set(x, "Notifications", js.Array(value*))
     
     inline def setOperationalData(value: OpsItemOperationalData): Self = StObject.set(x, "OperationalData", value.asInstanceOf[js.Any])
     
@@ -133,6 +166,18 @@ object OpsItem {
     
     inline def setOpsItemIdUndefined: Self = StObject.set(x, "OpsItemId", js.undefined)
     
+    inline def setOpsItemType(value: OpsItemType): Self = StObject.set(x, "OpsItemType", value.asInstanceOf[js.Any])
+    
+    inline def setOpsItemTypeUndefined: Self = StObject.set(x, "OpsItemType", js.undefined)
+    
+    inline def setPlannedEndTime(value: js.Date): Self = StObject.set(x, "PlannedEndTime", value.asInstanceOf[js.Any])
+    
+    inline def setPlannedEndTimeUndefined: Self = StObject.set(x, "PlannedEndTime", js.undefined)
+    
+    inline def setPlannedStartTime(value: js.Date): Self = StObject.set(x, "PlannedStartTime", value.asInstanceOf[js.Any])
+    
+    inline def setPlannedStartTimeUndefined: Self = StObject.set(x, "PlannedStartTime", js.undefined)
+    
     inline def setPriority(value: OpsItemPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
     inline def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
@@ -141,7 +186,7 @@ object OpsItem {
     
     inline def setRelatedOpsItemsUndefined: Self = StObject.set(x, "RelatedOpsItems", js.undefined)
     
-    inline def setRelatedOpsItemsVarargs(value: RelatedOpsItem*): Self = StObject.set(x, "RelatedOpsItems", js.Array(value :_*))
+    inline def setRelatedOpsItemsVarargs(value: RelatedOpsItem*): Self = StObject.set(x, "RelatedOpsItems", js.Array(value*))
     
     inline def setSeverity(value: OpsItemSeverity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     

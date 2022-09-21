@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait gamepadGamepadSettingsConstructor
   extends StObject
-     with Instantiable0[gamepadGamepadSettings]
+     with /**
+  * Gamepad navigation specific configuration settings.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-gamepad-GamepadSettings.html)
+  */
+Instantiable0[gamepadGamepadSettings]
      with Instantiable1[/* properties */ gamepadGamepadSettingsProperties, gamepadGamepadSettings]

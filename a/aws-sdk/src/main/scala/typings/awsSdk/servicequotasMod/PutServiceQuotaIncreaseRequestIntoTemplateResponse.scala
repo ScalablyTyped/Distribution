@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutServiceQuotaIncreaseRequestIntoTemplateResponse extends StObject {
   
   /**
-    * A structure that contains information about one service quota increase request.
+    * Information about the quota increase request.
     */
   var ServiceQuotaIncreaseRequestInTemplate: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceQuotaIncreaseRequestInTemplate] = js.undefined
 }

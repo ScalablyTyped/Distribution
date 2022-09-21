@@ -10,10 +10,10 @@ Convert JSON to CSV
 | ------------------ | :-------------: |
 | Full name          | json2csv |
 | Keywords           | json, to, csv, export, convert, parse |
-| # releases         | 15 |
-| # dependents       | 478 |
-| # downloads        | 17698800 |
-| # stars            | 59 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 3679061.0 |
+| # stars            | 2562.0 |
 
 ## Links
 - [Homepage](http://zemirco.github.io/json2csv)

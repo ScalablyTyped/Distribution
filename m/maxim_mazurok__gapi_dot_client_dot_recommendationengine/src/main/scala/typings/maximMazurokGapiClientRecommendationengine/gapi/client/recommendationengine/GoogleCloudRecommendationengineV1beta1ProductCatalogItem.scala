@@ -20,7 +20,7 @@ trait GoogleCloudRecommendationengineV1beta1ProductCatalogItem extends StObject 
   var costs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1ProductCatalogItem & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1ProductCatalogItem & TopLevel[Any]
   ] = js.undefined
   
   /** Optional. Only required if the price is set. Currency code for price/costs. Use three-character ISO-4217 code. */
@@ -58,7 +58,7 @@ object GoogleCloudRecommendationengineV1beta1ProductCatalogItem {
     inline def setCosts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1ProductCatalogItem & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1ProductCatalogItem & TopLevel[Any]
     ): Self = StObject.set(x, "costs", value.asInstanceOf[js.Any])
     
     inline def setCostsUndefined: Self = StObject.set(x, "costs", js.undefined)
@@ -75,7 +75,7 @@ object GoogleCloudRecommendationengineV1beta1ProductCatalogItem {
     
     inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    inline def setImagesVarargs(value: GoogleCloudRecommendationengineV1beta1Image*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: GoogleCloudRecommendationengineV1beta1Image*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setPriceRange(value: GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange): Self = StObject.set(x, "priceRange", value.asInstanceOf[js.Any])
     

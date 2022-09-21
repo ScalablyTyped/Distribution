@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RaxPortal
   extends StObject
-     with RaxElement[js.Any, String | JSXElementConstructor[js.Any]] {
+     with RaxElement[Any, String | JSXElementConstructor[Any]] {
   
   var children: RaxNode
 }
 object RaxPortal {
   
-  inline def apply(props: js.Any, `type`: String | JSXElementConstructor[js.Any]): RaxPortal = {
+  inline def apply(props: Any, `type`: String | JSXElementConstructor[Any]): RaxPortal = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaxPortal]

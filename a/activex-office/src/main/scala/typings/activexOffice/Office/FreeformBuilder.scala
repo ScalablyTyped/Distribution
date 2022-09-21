@@ -148,7 +148,7 @@ trait FreeformBuilder extends StObject {
     Y3: Double
   ): Unit = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   def ConvertToShape(): Shape = js.native
   
@@ -157,5 +157,5 @@ trait FreeformBuilder extends StObject {
   /* private */ @JSName("Office.FreeformBuilder_typekey")
   var OfficeDotFreeformBuilder_typekey: FreeformBuilder = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

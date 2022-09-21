@@ -45,7 +45,7 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.AcquisitionOperation")
   @js.native
-  def AcquisitionOperation: js.Any = js.native
+  def AcquisitionOperation: Any = js.native
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.AcquisitionOperationState")
   @js.native
@@ -57,33 +57,33 @@ object TypeInfo {
   def AcquisitionOperationType: EnumValuesBuy = js.native
   inline def AcquisitionOperationType_=(x: EnumValuesBuy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AcquisitionOperationType")(x.asInstanceOf[js.Any])
   
-  inline def AcquisitionOperation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AcquisitionOperation")(x.asInstanceOf[js.Any])
+  inline def AcquisitionOperation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AcquisitionOperation")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.AcquisitionOptions")
   @js.native
-  def AcquisitionOptions: js.Any = js.native
-  inline def AcquisitionOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AcquisitionOptions")(x.asInstanceOf[js.Any])
+  def AcquisitionOptions: Any = js.native
+  inline def AcquisitionOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AcquisitionOptions")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.AzureRestApiResponseModel")
   @js.native
-  def AzureRestApiResponseModel: js.Any = js.native
-  inline def AzureRestApiResponseModel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AzureRestApiResponseModel")(x.asInstanceOf[js.Any])
+  def AzureRestApiResponseModel: Any = js.native
+  inline def AzureRestApiResponseModel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AzureRestApiResponseModel")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.Concern")
   @js.native
-  def Concern: js.Any = js.native
+  def Concern: Any = js.native
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ConcernCategory")
   @js.native
   def ConcernCategory: EnumValuesAbusive = js.native
   inline def ConcernCategory_=(x: EnumValuesAbusive): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConcernCategory")(x.asInstanceOf[js.Any])
   
-  inline def Concern_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Concern")(x.asInstanceOf[js.Any])
+  inline def Concern_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Concern")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.CustomerLastContact")
   @js.native
-  def CustomerLastContact: js.Any = js.native
-  inline def CustomerLastContact_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomerLastContact")(x.asInstanceOf[js.Any])
+  def CustomerLastContact: Any = js.native
+  inline def CustomerLastContact_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomerLastContact")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.DraftPatchOperation")
   @js.native
@@ -97,18 +97,18 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionAcquisitionRequest")
   @js.native
-  def ExtensionAcquisitionRequest: js.Any = js.native
-  inline def ExtensionAcquisitionRequest_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionAcquisitionRequest")(x.asInstanceOf[js.Any])
+  def ExtensionAcquisitionRequest: Any = js.native
+  inline def ExtensionAcquisitionRequest_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionAcquisitionRequest")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionDailyStat")
   @js.native
-  def ExtensionDailyStat: js.Any = js.native
-  inline def ExtensionDailyStat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionDailyStat")(x.asInstanceOf[js.Any])
+  def ExtensionDailyStat: Any = js.native
+  inline def ExtensionDailyStat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionDailyStat")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionDailyStats")
   @js.native
-  def ExtensionDailyStats: js.Any = js.native
-  inline def ExtensionDailyStats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionDailyStats")(x.asInstanceOf[js.Any])
+  def ExtensionDailyStats: Any = js.native
+  inline def ExtensionDailyStats_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionDailyStats")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionDeploymentTechnology")
   @js.native
@@ -117,29 +117,29 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionDraft")
   @js.native
-  def ExtensionDraft: js.Any = js.native
+  def ExtensionDraft: Any = js.native
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionDraftPatch")
   @js.native
-  def ExtensionDraftPatch: js.Any = js.native
-  inline def ExtensionDraftPatch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionDraftPatch")(x.asInstanceOf[js.Any])
+  def ExtensionDraftPatch: Any = js.native
+  inline def ExtensionDraftPatch_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionDraftPatch")(x.asInstanceOf[js.Any])
   
-  inline def ExtensionDraft_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionDraft")(x.asInstanceOf[js.Any])
+  inline def ExtensionDraft_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionDraft")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionEvent")
   @js.native
-  def ExtensionEvent: js.Any = js.native
-  inline def ExtensionEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionEvent")(x.asInstanceOf[js.Any])
+  def ExtensionEvent: Any = js.native
+  inline def ExtensionEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionEvent")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionEvents")
   @js.native
-  def ExtensionEvents: js.Any = js.native
-  inline def ExtensionEvents_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionEvents")(x.asInstanceOf[js.Any])
+  def ExtensionEvents: Any = js.native
+  inline def ExtensionEvents_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionEvents")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionFilterResult")
   @js.native
-  def ExtensionFilterResult: js.Any = js.native
-  inline def ExtensionFilterResult_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionFilterResult")(x.asInstanceOf[js.Any])
+  def ExtensionFilterResult: Any = js.native
+  inline def ExtensionFilterResult_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionFilterResult")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionLifecycleEventType")
   @js.native
@@ -148,23 +148,23 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionPayload")
   @js.native
-  def ExtensionPayload: js.Any = js.native
-  inline def ExtensionPayload_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionPayload")(x.asInstanceOf[js.Any])
+  def ExtensionPayload: Any = js.native
+  inline def ExtensionPayload_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionPayload")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionPolicy")
   @js.native
-  def ExtensionPolicy: js.Any = js.native
+  def ExtensionPolicy: Any = js.native
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionPolicyFlags")
   @js.native
   def ExtensionPolicyFlags: EnumValuesFirstParty = js.native
   inline def ExtensionPolicyFlags_=(x: EnumValuesFirstParty): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionPolicyFlags")(x.asInstanceOf[js.Any])
   
-  inline def ExtensionPolicy_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionPolicy")(x.asInstanceOf[js.Any])
+  inline def ExtensionPolicy_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionPolicy")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionQuery")
   @js.native
-  def ExtensionQuery: js.Any = js.native
+  def ExtensionQuery: Any = js.native
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionQueryFilterType")
   @js.native
@@ -178,10 +178,10 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionQueryResult")
   @js.native
-  def ExtensionQueryResult: js.Any = js.native
-  inline def ExtensionQueryResult_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionQueryResult")(x.asInstanceOf[js.Any])
+  def ExtensionQueryResult: Any = js.native
+  inline def ExtensionQueryResult_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionQueryResult")(x.asInstanceOf[js.Any])
   
-  inline def ExtensionQuery_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionQuery")(x.asInstanceOf[js.Any])
+  inline def ExtensionQuery_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionQuery")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionStatisticOperation")
   @js.native
@@ -190,8 +190,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionStatisticUpdate")
   @js.native
-  def ExtensionStatisticUpdate: js.Any = js.native
-  inline def ExtensionStatisticUpdate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionStatisticUpdate")(x.asInstanceOf[js.Any])
+  def ExtensionStatisticUpdate: Any = js.native
+  inline def ExtensionStatisticUpdate_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionStatisticUpdate")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionStatsAggregateType")
   @js.native
@@ -200,14 +200,14 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionVersion")
   @js.native
-  def ExtensionVersion: js.Any = js.native
+  def ExtensionVersion: Any = js.native
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ExtensionVersionFlags")
   @js.native
   def ExtensionVersionFlags: EnumValuesValidated = js.native
   inline def ExtensionVersionFlags_=(x: EnumValuesValidated): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionVersionFlags")(x.asInstanceOf[js.Any])
   
-  inline def ExtensionVersion_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionVersion")(x.asInstanceOf[js.Any])
+  inline def ExtensionVersion_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtensionVersion")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.NotificationTemplateType")
   @js.native
@@ -216,8 +216,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.NotificationsData")
   @js.native
-  def NotificationsData: js.Any = js.native
-  inline def NotificationsData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NotificationsData")(x.asInstanceOf[js.Any])
+  def NotificationsData: Any = js.native
+  inline def NotificationsData_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NotificationsData")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.PagingDirection")
   @js.native
@@ -226,28 +226,28 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.PublishedExtension")
   @js.native
-  def PublishedExtension: js.Any = js.native
+  def PublishedExtension: Any = js.native
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.PublishedExtensionFlags")
   @js.native
   def PublishedExtensionFlags: EnumValuesLocked = js.native
   inline def PublishedExtensionFlags_=(x: EnumValuesLocked): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublishedExtensionFlags")(x.asInstanceOf[js.Any])
   
-  inline def PublishedExtension_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublishedExtension")(x.asInstanceOf[js.Any])
+  inline def PublishedExtension_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublishedExtension")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.Publisher")
   @js.native
-  def Publisher: js.Any = js.native
+  def Publisher: Any = js.native
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.PublisherFacts")
   @js.native
-  def PublisherFacts: js.Any = js.native
-  inline def PublisherFacts_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublisherFacts")(x.asInstanceOf[js.Any])
+  def PublisherFacts: Any = js.native
+  inline def PublisherFacts_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublisherFacts")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.PublisherFilterResult")
   @js.native
-  def PublisherFilterResult: js.Any = js.native
-  inline def PublisherFilterResult_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublisherFilterResult")(x.asInstanceOf[js.Any])
+  def PublisherFilterResult: Any = js.native
+  inline def PublisherFilterResult_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublisherFilterResult")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.PublisherFlags")
   @js.native
@@ -261,7 +261,7 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.PublisherQuery")
   @js.native
-  def PublisherQuery: js.Any = js.native
+  def PublisherQuery: Any = js.native
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.PublisherQueryFlags")
   @js.native
@@ -270,43 +270,43 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.PublisherQueryResult")
   @js.native
-  def PublisherQueryResult: js.Any = js.native
-  inline def PublisherQueryResult_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublisherQueryResult")(x.asInstanceOf[js.Any])
+  def PublisherQueryResult: Any = js.native
+  inline def PublisherQueryResult_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublisherQueryResult")(x.asInstanceOf[js.Any])
   
-  inline def PublisherQuery_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublisherQuery")(x.asInstanceOf[js.Any])
+  inline def PublisherQuery_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PublisherQuery")(x.asInstanceOf[js.Any])
   
-  inline def Publisher_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Publisher")(x.asInstanceOf[js.Any])
+  inline def Publisher_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Publisher")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.QnAItem")
   @js.native
-  def QnAItem: js.Any = js.native
+  def QnAItem: Any = js.native
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.QnAItemStatus")
   @js.native
   def QnAItemStatus: EnumValuesPublisherCreated = js.native
   inline def QnAItemStatus_=(x: EnumValuesPublisherCreated): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QnAItemStatus")(x.asInstanceOf[js.Any])
   
-  inline def QnAItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QnAItem")(x.asInstanceOf[js.Any])
+  inline def QnAItem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QnAItem")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.QueryFilter")
   @js.native
-  def QueryFilter: js.Any = js.native
-  inline def QueryFilter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QueryFilter")(x.asInstanceOf[js.Any])
+  def QueryFilter: Any = js.native
+  inline def QueryFilter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QueryFilter")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.Question")
   @js.native
-  def Question: js.Any = js.native
-  inline def Question_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Question")(x.asInstanceOf[js.Any])
+  def Question: Any = js.native
+  inline def Question_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Question")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.QuestionsResult")
   @js.native
-  def QuestionsResult: js.Any = js.native
-  inline def QuestionsResult_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QuestionsResult")(x.asInstanceOf[js.Any])
+  def QuestionsResult: Any = js.native
+  inline def QuestionsResult_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QuestionsResult")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.Response")
   @js.native
-  def Response: js.Any = js.native
-  inline def Response_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Response")(x.asInstanceOf[js.Any])
+  def Response: Any = js.native
+  inline def Response_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Response")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.RestApiResponseStatus")
   @js.native
@@ -314,14 +314,14 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.RestApiResponseStatusModel")
   @js.native
-  def RestApiResponseStatusModel: js.Any = js.native
-  inline def RestApiResponseStatusModel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RestApiResponseStatusModel")(x.asInstanceOf[js.Any])
+  def RestApiResponseStatusModel: Any = js.native
+  inline def RestApiResponseStatusModel_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RestApiResponseStatusModel")(x.asInstanceOf[js.Any])
   
   inline def RestApiResponseStatus_=(x: EnumValuesInprogress): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RestApiResponseStatus")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.Review")
   @js.native
-  def Review: js.Any = js.native
+  def Review: Any = js.native
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ReviewEventOperation")
   @js.native
@@ -330,8 +330,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ReviewEventProperties")
   @js.native
-  def ReviewEventProperties: js.Any = js.native
-  inline def ReviewEventProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReviewEventProperties")(x.asInstanceOf[js.Any])
+  def ReviewEventProperties: Any = js.native
+  inline def ReviewEventProperties_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReviewEventProperties")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ReviewFilterOptions")
   @js.native
@@ -340,31 +340,31 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ReviewPatch")
   @js.native
-  def ReviewPatch: js.Any = js.native
+  def ReviewPatch: Any = js.native
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ReviewPatchOperation")
   @js.native
   def ReviewPatchOperation: EnumValuesAdminResponseForReview = js.native
   inline def ReviewPatchOperation_=(x: EnumValuesAdminResponseForReview): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReviewPatchOperation")(x.asInstanceOf[js.Any])
   
-  inline def ReviewPatch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReviewPatch")(x.asInstanceOf[js.Any])
+  inline def ReviewPatch_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReviewPatch")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ReviewReply")
   @js.native
-  def ReviewReply: js.Any = js.native
-  inline def ReviewReply_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReviewReply")(x.asInstanceOf[js.Any])
+  def ReviewReply: Any = js.native
+  inline def ReviewReply_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReviewReply")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ReviewResourceType")
   @js.native
   def ReviewResourceType: EnumValuesAdminReply = js.native
   inline def ReviewResourceType_=(x: EnumValuesAdminReply): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReviewResourceType")(x.asInstanceOf[js.Any])
   
-  inline def Review_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Review")(x.asInstanceOf[js.Any])
+  inline def Review_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Review")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.ReviewsResult")
   @js.native
-  def ReviewsResult: js.Any = js.native
-  inline def ReviewsResult_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReviewsResult")(x.asInstanceOf[js.Any])
+  def ReviewsResult: Any = js.native
+  inline def ReviewsResult_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReviewsResult")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.SortByType")
   @js.native
@@ -378,11 +378,11 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.UserExtensionPolicy")
   @js.native
-  def UserExtensionPolicy: js.Any = js.native
-  inline def UserExtensionPolicy_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserExtensionPolicy")(x.asInstanceOf[js.Any])
+  def UserExtensionPolicy: Any = js.native
+  inline def UserExtensionPolicy_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserExtensionPolicy")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/GalleryInterfaces", "TypeInfo.UserReportedConcern")
   @js.native
-  def UserReportedConcern: js.Any = js.native
-  inline def UserReportedConcern_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserReportedConcern")(x.asInstanceOf[js.Any])
+  def UserReportedConcern: Any = js.native
+  inline def UserReportedConcern_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UserReportedConcern")(x.asInstanceOf[js.Any])
 }

@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PackageVersionSummary extends StObject {
   
   /**
+    * A PackageVersionOrigin object that contains information about how the package version was added to the repository.
+    */
+  var origin: js.UndefOr[PackageVersionOrigin] = js.undefined
+  
+  /**
     *  The revision associated with a package version. 
     */
   var revision: js.UndefOr[PackageVersionRevision] = js.undefined
   
   /**
-    *  A string that contains the status of the package version. It can be one of the following:     Published     Unfinished     Unlisted     Archived     Disposed   
+    *  A string that contains the status of the package version. It can be one of the following: 
     */
   var status: PackageVersionStatus
   
@@ -29,6 +34,10 @@ object PackageVersionSummary {
   }
   
   extension [Self <: PackageVersionSummary](x: Self) {
+    
+    inline def setOrigin(value: PackageVersionOrigin): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     inline def setRevision(value: PackageVersionRevision): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     

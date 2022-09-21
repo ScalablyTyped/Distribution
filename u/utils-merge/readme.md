@@ -10,9 +10,9 @@ merge() utility function
 | Full name          | utils-merge |
 | Keywords           | util |
 | # releases         | 0 |
-| # dependents       | 477 |
-| # downloads        | 664086632 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 9.353607333333333E7 |
+| # stars            | 66.0 |
 
 ## Links
 - [Homepage](https://github.com/jaredhanson/utils-merge#readme)

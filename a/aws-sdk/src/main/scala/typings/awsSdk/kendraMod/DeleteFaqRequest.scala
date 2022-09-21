@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteFaqRequest extends StObject {
   
   /**
-    * The identifier of the FAQ to remove.
+    * The identifier of the FAQ you want to remove.
     */
   var Id: FaqId
   
   /**
-    * The index to remove the FAQ from.
+    * The identifier of the index for the FAQ.
     */
   var IndexId: typings.awsSdk.kendraMod.IndexId
 }

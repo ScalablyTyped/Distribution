@@ -11,7 +11,7 @@ object asyncMapMod {
   /**
     * Like `map` but the signature of `fn` must be `function (data, cb) { cb(null, data) }`.
     */
-  inline def apply[In, Out](fn: js.Function2[/* data */ In, /* cb */ SourceCallback[Out], js.Any]): Through_[In, Out] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[Through_[In, Out]]
+  inline def apply[In, Out](fn: js.Function2[/* data */ In, /* cb */ SourceCallback[Out], Any]): Through_[In, Out] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[Through_[In, Out]]
   
   @JSImport("pull-stream/throughs/async-map", JSImport.Namespace)
   @js.native

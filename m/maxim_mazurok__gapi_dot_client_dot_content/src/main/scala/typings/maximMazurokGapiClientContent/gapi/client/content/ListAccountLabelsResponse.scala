@@ -25,7 +25,7 @@ object ListAccountLabelsResponse {
     
     inline def setAccountLabelsUndefined: Self = StObject.set(x, "accountLabels", js.undefined)
     
-    inline def setAccountLabelsVarargs(value: AccountLabel*): Self = StObject.set(x, "accountLabels", js.Array(value :_*))
+    inline def setAccountLabelsVarargs(value: AccountLabel*): Self = StObject.set(x, "accountLabels", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.statusStopMod.StatusStopProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonStatusStopMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/StatusStop", JSImport.Default)
   @js.native
-  val default: SFC[StatusStopProps] = js.native
+  val default: FC[StatusStopProps] = js.native
   
-  type _To = SFC[StatusStopProps]
+  type _To = FC[StatusStopProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonStatusStopMod.foo` */
-  override def _to: SFC[StatusStopProps] = default
+  override def _to: FC[StatusStopProps] = default
 }

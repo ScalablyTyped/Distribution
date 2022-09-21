@@ -28,7 +28,7 @@ object BatchClearValuesResponse {
     
     inline def setClearedRangesUndefined: Self = StObject.set(x, "clearedRanges", js.undefined)
     
-    inline def setClearedRangesVarargs(value: String*): Self = StObject.set(x, "clearedRanges", js.Array(value :_*))
+    inline def setClearedRangesVarargs(value: String*): Self = StObject.set(x, "clearedRanges", js.Array(value*))
     
     inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,7 @@ object identifierMod {
   
   @JSImport("vega-lite/build/src/compile/data/identifier", "IdentifierNode")
   @js.native
-  class IdentifierNode protected () extends DataFlowNode {
+  open class IdentifierNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode) = this()
     
     def assemble(): IdentifierTransform = js.native

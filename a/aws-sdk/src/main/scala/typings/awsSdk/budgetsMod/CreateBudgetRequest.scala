@@ -17,7 +17,7 @@ trait CreateBudgetRequest extends StObject {
   var Budget: typings.awsSdk.budgetsMod.Budget
   
   /**
-    * A notification that you want to associate with a budget. A budget can have up to five notifications, and each notification can have one SNS subscriber and up to 10 email subscribers. If you include notifications and subscribers in your CreateBudget call, AWS creates the notifications and subscribers for you.
+    * A notification that you want to associate with a budget. A budget can have up to five notifications, and each notification can have one SNS subscriber and up to 10 email subscribers. If you include notifications and subscribers in your CreateBudget call, Amazon Web Services creates the notifications and subscribers for you.
     */
   var NotificationsWithSubscribers: js.UndefOr[NotificationWithSubscribersList] = js.undefined
 }
@@ -38,6 +38,6 @@ object CreateBudgetRequest {
     
     inline def setNotificationsWithSubscribersUndefined: Self = StObject.set(x, "NotificationsWithSubscribers", js.undefined)
     
-    inline def setNotificationsWithSubscribersVarargs(value: NotificationWithSubscribers*): Self = StObject.set(x, "NotificationsWithSubscribers", js.Array(value :_*))
+    inline def setNotificationsWithSubscribersVarargs(value: NotificationWithSubscribers*): Self = StObject.set(x, "NotificationsWithSubscribers", js.Array(value*))
   }
 }

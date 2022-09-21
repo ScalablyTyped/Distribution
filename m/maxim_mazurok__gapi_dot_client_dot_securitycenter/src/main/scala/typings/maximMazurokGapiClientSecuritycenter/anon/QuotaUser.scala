@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientSecuritycenter.anon
 
-import typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter.NotificationConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,8 +26,8 @@ trait QuotaUser extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * The relative resource name of this notification config. See: https://cloud.google.com/apis/design/resource_names#relative_resource_name Example:
-    * "organizations/{organization_id}/notificationConfigs/notify_public_bucket".
+    * The relative resource name of the settings. See: https://cloud.google.com/apis/design/resource_names#relative_resource_name Example:
+    * "organizations/{organization_id}/organizationSettings".
     */
   var name: String
   
@@ -41,10 +40,7 @@ trait QuotaUser extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: NotificationConfig
-  
-  /** The FieldMask to use when updating the notification config. If empty all mutable fields will be updated. */
+  /** The FieldMask to use when updating the settings resource. If empty all mutable fields will be updated. */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -55,8 +51,8 @@ trait QuotaUser extends StObject {
 }
 object QuotaUser {
   
-  inline def apply(name: String, resource: NotificationConfig): QuotaUser = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(name: String): QuotaUser = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUser]
   }
   
@@ -99,8 +95,6 @@ object QuotaUser {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: NotificationConfig): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

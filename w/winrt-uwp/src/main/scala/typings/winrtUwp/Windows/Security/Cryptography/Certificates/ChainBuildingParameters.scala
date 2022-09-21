@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,7 +27,7 @@ trait ChainBuildingParameters extends StObject {
   var revocationCheckEnabled: Boolean
   
   /** Gets or sets the time stamp used to determine whether the certificate chain was time valid. */
-  var validationTimestamp: Date
+  var validationTimestamp: js.Date
 }
 object ChainBuildingParameters {
   
@@ -39,7 +38,7 @@ object ChainBuildingParameters {
     exclusiveTrustRoots: IVector[Certificate],
     networkRetrievalEnabled: Boolean,
     revocationCheckEnabled: Boolean,
-    validationTimestamp: Date
+    validationTimestamp: js.Date
   ): ChainBuildingParameters = {
     val __obj = js.Dynamic.literal(authorityInformationAccessEnabled = authorityInformationAccessEnabled.asInstanceOf[js.Any], currentTimeValidationEnabled = currentTimeValidationEnabled.asInstanceOf[js.Any], enhancedKeyUsages = enhancedKeyUsages.asInstanceOf[js.Any], exclusiveTrustRoots = exclusiveTrustRoots.asInstanceOf[js.Any], networkRetrievalEnabled = networkRetrievalEnabled.asInstanceOf[js.Any], revocationCheckEnabled = revocationCheckEnabled.asInstanceOf[js.Any], validationTimestamp = validationTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChainBuildingParameters]
@@ -59,6 +58,6 @@ object ChainBuildingParameters {
     
     inline def setRevocationCheckEnabled(value: Boolean): Self = StObject.set(x, "revocationCheckEnabled", value.asInstanceOf[js.Any])
     
-    inline def setValidationTimestamp(value: Date): Self = StObject.set(x, "validationTimestamp", value.asInstanceOf[js.Any])
+    inline def setValidationTimestamp(value: js.Date): Self = StObject.set(x, "validationTimestamp", value.asInstanceOf[js.Any])
   }
 }

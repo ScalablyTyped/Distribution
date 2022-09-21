@@ -34,7 +34,7 @@ object MembershipsDetails {
     
     inline def setAccessibleLevelsUndefined: Self = StObject.set(x, "accessibleLevels", js.undefined)
     
-    inline def setAccessibleLevelsVarargs(value: String*): Self = StObject.set(x, "accessibleLevels", js.Array(value :_*))
+    inline def setAccessibleLevelsVarargs(value: String*): Self = StObject.set(x, "accessibleLevels", js.Array(value*))
     
     inline def setHighestAccessibleLevel(value: String): Self = StObject.set(x, "highestAccessibleLevel", value.asInstanceOf[js.Any])
     
@@ -50,7 +50,7 @@ object MembershipsDetails {
     
     inline def setMembershipsDurationAtLevelsUndefined: Self = StObject.set(x, "membershipsDurationAtLevels", js.undefined)
     
-    inline def setMembershipsDurationAtLevelsVarargs(value: MembershipsDurationAtLevel*): Self = StObject.set(x, "membershipsDurationAtLevels", js.Array(value :_*))
+    inline def setMembershipsDurationAtLevelsVarargs(value: MembershipsDurationAtLevel*): Self = StObject.set(x, "membershipsDurationAtLevels", js.Array(value*))
     
     inline def setMembershipsDurationUndefined: Self = StObject.set(x, "membershipsDuration", js.undefined)
   }

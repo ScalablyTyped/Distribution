@@ -46,7 +46,7 @@ object MailPhishing {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setMessagesVarargs(value: GmailMessageInfo*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: GmailMessageInfo*): Self = StObject.set(x, "messages", js.Array(value*))
     
     inline def setSystemActionType(value: String): Self = StObject.set(x, "systemActionType", value.asInstanceOf[js.Any])
     

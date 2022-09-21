@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GenericParams extends StObject {
   
-  var body: js.UndefOr[js.Any] = js.undefined
+  var body: js.UndefOr[Any] = js.undefined
   
   var filterPath: js.UndefOr[String | js.Array[String]] = js.undefined
   
@@ -27,7 +27,7 @@ object GenericParams {
   
   extension [Self <: GenericParams](x: Self) {
     
-    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
@@ -35,13 +35,13 @@ object GenericParams {
     
     inline def setFilterPathUndefined: Self = StObject.set(x, "filterPath", js.undefined)
     
-    inline def setFilterPathVarargs(value: String*): Self = StObject.set(x, "filterPath", js.Array(value :_*))
+    inline def setFilterPathVarargs(value: String*): Self = StObject.set(x, "filterPath", js.Array(value*))
     
     inline def setIgnore(value: Double | js.Array[Double]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
     inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
-    inline def setIgnoreVarargs(value: Double*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+    inline def setIgnoreVarargs(value: Double*): Self = StObject.set(x, "ignore", js.Array(value*))
     
     inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     

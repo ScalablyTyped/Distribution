@@ -8,11 +8,11 @@ trait Forward extends StObject {
   
   var Cancel: Boolean
   
-  val Forward: js.Any
+  val Forward: Any
 }
 object Forward {
   
-  inline def apply(Cancel: Boolean, Forward: js.Any): Forward = {
+  inline def apply(Cancel: Boolean, Forward: Any): Forward = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Forward = Forward.asInstanceOf[js.Any])
     __obj.asInstanceOf[Forward]
   }
@@ -21,6 +21,6 @@ object Forward {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    inline def setForward(value: js.Any): Self = StObject.set(x, "Forward", value.asInstanceOf[js.Any])
+    inline def setForward(value: Any): Self = StObject.set(x, "Forward", value.asInstanceOf[js.Any])
   }
 }

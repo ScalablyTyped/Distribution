@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sms
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IMap
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
@@ -41,7 +40,7 @@ trait SmsWapMessage extends StObject {
   var simIccId: String
   
   /** Gets the timestamp of the SmsWapMessage . */
-  var timestamp: Date
+  var timestamp: js.Date
   
   /** Gets the recipient phone number of this SmsWapMessage . */
   var to: String
@@ -59,7 +58,7 @@ object SmsWapMessage {
     messageClass: SmsMessageClass,
     messageType: SmsMessageType,
     simIccId: String,
-    timestamp: Date,
+    timestamp: js.Date,
     to: String
   ): SmsWapMessage = {
     val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any], binaryBody = binaryBody.asInstanceOf[js.Any], cellularClass = cellularClass.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], messageClass = messageClass.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], simIccId = simIccId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
@@ -88,7 +87,7 @@ object SmsWapMessage {
     
     inline def setSimIccId(value: String): Self = StObject.set(x, "simIccId", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }

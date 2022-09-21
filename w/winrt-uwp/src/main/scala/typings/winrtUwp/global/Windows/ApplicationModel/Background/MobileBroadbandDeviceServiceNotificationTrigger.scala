@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.MobileBroadbandDeviceServiceNotificationTrigger")
 @js.native
 /** Constructs a MobileBroadbandDeviceServiceNotificationTrigger object. */
-class MobileBroadbandDeviceServiceNotificationTrigger ()
+open class MobileBroadbandDeviceServiceNotificationTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.MobileBroadbandDeviceServiceNotificationTrigger

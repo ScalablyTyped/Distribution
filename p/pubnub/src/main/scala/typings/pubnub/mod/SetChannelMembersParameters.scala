@@ -25,6 +25,6 @@ object SetChannelMembersParameters {
     
     inline def setUuids(value: js.Array[String | SetCustom[Custom]]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
     
-    inline def setUuidsVarargs(value: (String | SetCustom[Custom])*): Self = StObject.set(x, "uuids", js.Array(value :_*))
+    inline def setUuidsVarargs(value: (String | SetCustom[Custom])*): Self = StObject.set(x, "uuids", js.Array(value*))
   }
 }

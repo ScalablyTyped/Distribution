@@ -16,7 +16,7 @@ trait NestedResults
   
   def getItems(): js.Array[Result]
   
-  def log(values: js.Any): Unit
+  def log(values: scala.Any): Unit
   
   def passed(): Boolean
   
@@ -35,7 +35,7 @@ object NestedResults {
     description: String,
     failedCount: Double,
     getItems: () => js.Array[Result],
-    log: js.Any => Unit,
+    log: scala.Any => Unit,
     passed: () => Boolean,
     passedCount: Double,
     rollupCounts: NestedResults => Unit,
@@ -58,7 +58,7 @@ object NestedResults {
     
     inline def setGetItems(value: () => js.Array[Result]): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
     
-    inline def setLog(value: js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: scala.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
     inline def setPassed(value: () => Boolean): Self = StObject.set(x, "passed", js.Any.fromFunction0(value))
     

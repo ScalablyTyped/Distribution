@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GPXOptions extends StObject {
   
-  var readExtensions: js.UndefOr[js.Function2[/* feature */ Feature, /* node */ Node, js.Any]] = js.undefined
+  var readExtensions: js.UndefOr[js.Function2[/* feature */ Feature, /* node */ Node, Any]] = js.undefined
 }
 object GPXOptions {
   
@@ -19,7 +19,7 @@ object GPXOptions {
   
   extension [Self <: GPXOptions](x: Self) {
     
-    inline def setReadExtensions(value: (/* feature */ Feature, /* node */ Node) => js.Any): Self = StObject.set(x, "readExtensions", js.Any.fromFunction2(value))
+    inline def setReadExtensions(value: (/* feature */ Feature, /* node */ Node) => Any): Self = StObject.set(x, "readExtensions", js.Any.fromFunction2(value))
     
     inline def setReadExtensionsUndefined: Self = StObject.set(x, "readExtensions", js.undefined)
   }

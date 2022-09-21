@@ -12,7 +12,6 @@ import typings.relayRuntime.relayRuntimeTypesMod.CacheConfig
 import typings.relayRuntime.relayRuntimeTypesMod.Disposable
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import typings.std.Blob
-import typings.std.Error
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -50,7 +49,7 @@ object relayNetworkTypesMod {
     
     var label: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[js.Array[Double | String]] = js.undefined
+    var path: js.UndefOr[js.Array[String | Double]] = js.undefined
   }
   object GraphQLResponseWithData {
     
@@ -67,7 +66,7 @@ object relayNetworkTypesMod {
       
       inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      inline def setErrorsVarargs(value: PayloadError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: PayloadError*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setExtensions(value: PayloadExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
@@ -77,11 +76,11 @@ object relayNetworkTypesMod {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setPath(value: js.Array[Double | String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[String | Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: (Double | String)*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
   
@@ -145,7 +144,7 @@ object relayNetworkTypesMod {
       
       inline def setErrors(value: js.Array[PayloadError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: PayloadError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: PayloadError*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setExtensions(value: PayloadExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
@@ -159,7 +158,7 @@ object relayNetworkTypesMod {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
   
@@ -191,7 +190,7 @@ object relayNetworkTypesMod {
     
     var onCompleted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
     
     var onNext: js.UndefOr[js.Function1[/* data */ T, Unit]] = js.undefined
   }
@@ -208,7 +207,7 @@ object relayNetworkTypesMod {
       
       inline def setOnCompletedUndefined: Self = StObject.set(x, "onCompleted", js.undefined)
       
-      inline def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
@@ -218,7 +217,7 @@ object relayNetworkTypesMod {
     }
   }
   
-  type LogRequestInfoFunction = js.Function1[/* arg */ js.Any, Unit]
+  type LogRequestInfoFunction = js.Function1[/* arg */ Any, Unit]
   
   trait Network extends StObject {
     
@@ -249,7 +248,7 @@ object relayNetworkTypesMod {
     }
   }
   
-  type PayloadData = StringDictionary[js.Any]
+  type PayloadData = StringDictionary[Any]
   
   trait PayloadError extends StObject {
     
@@ -272,7 +271,7 @@ object relayNetworkTypesMod {
       
       inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
       
-      inline def setLocationsVarargs(value: Column*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Column*): Self = StObject.set(x, "locations", js.Array(value*))
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -282,7 +281,63 @@ object relayNetworkTypesMod {
     }
   }
   
-  type PayloadExtensions = StringDictionary[js.Any]
+  type PayloadExtensions = StringDictionary[Any]
+  
+  trait ReactFlightPayloadData extends StObject {
+    
+    val queries: js.Array[ReactFlightPayloadQuery]
+    
+    val tree: js.Array[ReactFlightServerTree]
+  }
+  object ReactFlightPayloadData {
+    
+    inline def apply(queries: js.Array[ReactFlightPayloadQuery], tree: js.Array[ReactFlightServerTree]): ReactFlightPayloadData = {
+      val __obj = js.Dynamic.literal(queries = queries.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ReactFlightPayloadData]
+    }
+    
+    extension [Self <: ReactFlightPayloadData](x: Self) {
+      
+      inline def setQueries(value: js.Array[ReactFlightPayloadQuery]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+      
+      inline def setQueriesVarargs(value: ReactFlightPayloadQuery*): Self = StObject.set(x, "queries", js.Array(value*))
+      
+      inline def setTree(value: js.Array[ReactFlightServerTree]): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+      
+      inline def setTreeVarargs(value: ReactFlightServerTree*): Self = StObject.set(x, "tree", js.Array(value*))
+    }
+  }
+  
+  trait ReactFlightPayloadQuery extends StObject {
+    
+    val id: Any
+    
+    val module: Any
+    
+    val response: GraphQLSingularResponse
+    
+    val variables: Variables
+  }
+  object ReactFlightPayloadQuery {
+    
+    inline def apply(id: Any, module: Any, response: GraphQLSingularResponse, variables: Variables): ReactFlightPayloadQuery = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ReactFlightPayloadQuery]
+    }
+    
+    extension [Self <: ReactFlightPayloadQuery](x: Self) {
+      
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setModule(value: Any): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      
+      inline def setResponse(value: GraphQLSingularResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      
+      inline def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type ReactFlightServerTree = Any
   
   type SubscribeFunction = js.Function4[
     /* request */ RequestParameters, 

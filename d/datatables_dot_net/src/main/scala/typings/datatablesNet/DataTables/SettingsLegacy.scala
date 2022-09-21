@@ -18,13 +18,13 @@ trait SettingsLegacy extends StObject {
   
   var _iRecordsTotal: Double = js.native
   
-  var aIds: js.Any = js.native
+  var aIds: Any = js.native
   
-  var aLengthMenu: js.Array[js.Any] = js.native
+  var aLengthMenu: js.Array[Any] = js.native
   
-  var aaSorting: js.Array[js.Array[js.Any]] = js.native
+  var aaSorting: js.Array[js.Array[Any]] = js.native
   
-  var aaSortingFixed: js.Array[js.Array[js.Any]] = js.native
+  var aaSortingFixed: js.Array[js.Array[Any]] = js.native
   
   var aanFeatures: js.Array[js.Array[ArrayStringNode]] = js.native
   
@@ -32,37 +32,37 @@ trait SettingsLegacy extends StObject {
   
   var aiDisplayMaster: js.Array[Double] = js.native
   
-  var ajax: js.Any = js.native
+  var ajax: Any = js.native
   
   var aoColumns: js.Array[ColumnLegacy] = js.native
   
   var aoData: js.Array[RowLegacy] = js.native
   
-  var aoDestroyCallback: js.Array[js.Any] = js.native
+  var aoDestroyCallback: js.Array[Any] = js.native
   
   var aoDrawCallback: js.Array[FunctionDrawCallback] = js.native
   
-  var aoFooter: js.Array[js.Any] = js.native
+  var aoFooter: js.Array[Any] = js.native
   
   var aoFooterCallback: js.Array[FunctionFooterCallback] = js.native
   
-  var aoHeader: js.Array[js.Any] = js.native
+  var aoHeader: js.Array[Any] = js.native
   
   var aoHeaderCallback: js.Array[FunctionHeaderCallback] = js.native
   
   var aoInitComplete: js.Array[FunctionInitComplete] = js.native
   
-  var aoOpenRows: js.Array[js.Any] = js.native
+  var aoOpenRows: js.Array[Any] = js.native
   
   var aoPreDrawCallback: js.Array[FunctionPreDrawCallback] = js.native
   
-  var aoPreSearchCols: js.Array[js.Any] = js.native
+  var aoPreSearchCols: js.Array[Any] = js.native
   
   var aoRowCallback: js.Array[FunctionRowCallback] = js.native
   
   var aoRowCreatedCallback: js.Array[FunctionCreateRow] = js.native
   
-  var aoServerParams: js.Array[js.Any] = js.native
+  var aoServerParams: js.Array[Any] = js.native
   
   var aoStateLoad: js.Array[FunctionStateLoadCallback] = js.native
   
@@ -96,7 +96,7 @@ trait SettingsLegacy extends StObject {
   
   var bSorted: Boolean = js.native
   
-  def fnCookieCallback(name: String, data: js.Any, expires: String, path: String, cookie: String): Unit = js.native
+  def fnCookieCallback(name: String, data: Any, expires: String, path: String, cookie: String): Unit = js.native
   @JSName("fnCookieCallback")
   var fnCookieCallback_Original: CookieCallbackLegacy = js.native
   
@@ -110,7 +110,7 @@ trait SettingsLegacy extends StObject {
   
   def fnRecordsTotal(): Double = js.native
   
-  var fnServerData: js.Any = js.native
+  var fnServerData: Any = js.native
   
   var iCookieDuration: Double = js.native
   
@@ -120,7 +120,7 @@ trait SettingsLegacy extends StObject {
   
   var iTabIndex: Double = js.native
   
-  var jqXHR: js.Any = js.native
+  var jqXHR: Any = js.native
   
   var nScrollFoot: Node = js.native
   
@@ -136,24 +136,24 @@ trait SettingsLegacy extends StObject {
   
   var nTableWrapper: Node = js.native
   
-  var oApi: js.Any = js.native
+  var oApi: Any = js.native
   
   // | { fnInfoCallback: FunctionInfoCallback; };
   var oBrowser: BrowserLegacy = js.native
   
-  var oClasses: js.Any = js.native
+  var oClasses: Any = js.native
   
   var oFeatures: FeaturesLegacy = js.native
   
-  var oInit: js.Any = js.native
+  var oInit: Any = js.native
   
-  var oInstance: js.Any = js.native
+  var oInstance: Any = js.native
   
   var oLanguage: LanguageLegacy = js.native
   
-  var oLoadedState: js.Any = js.native
+  var oLoadedState: Any = js.native
   
-  var oPreviousSearch: js.Any = js.native
+  var oPreviousSearch: Any = js.native
   
   var oScroll: ScrollingLegacy = js.native
   

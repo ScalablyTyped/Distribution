@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReflectionFormat extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   var Blur: Double
   
@@ -26,7 +26,7 @@ trait ReflectionFormat extends StObject {
 object ReflectionFormat {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Blur: Double,
     Creator: Double,
     OfficeDotReflectionFormat_typekey: ReflectionFormat,
@@ -42,7 +42,7 @@ object ReflectionFormat {
   
   extension [Self <: ReflectionFormat](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setBlur(value: Double): Self = StObject.set(x, "Blur", value.asInstanceOf[js.Any])
     

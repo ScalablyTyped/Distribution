@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "SemanticInfoChain")
 @js.native
-class SemanticInfoChain protected ()
+open class SemanticInfoChain protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.SemanticInfoChain {
   def this(compiler: typings.typescriptServices.TypeScript.TypeScriptCompiler, logger: ILogger) = this()

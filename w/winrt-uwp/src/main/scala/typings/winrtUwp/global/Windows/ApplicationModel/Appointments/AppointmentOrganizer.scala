@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentOrganizer")
 @js.native
 /** Initializes a new instance of the AppointmentOrganizer class. */
-class AppointmentOrganizer ()
+open class AppointmentOrganizer ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentOrganizer {
   

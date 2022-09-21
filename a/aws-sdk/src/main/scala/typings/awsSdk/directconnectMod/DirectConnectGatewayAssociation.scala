@@ -32,7 +32,7 @@ trait DirectConnectGatewayAssociation extends StObject {
   var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the associated gateway.
+    * The ID of the Amazon Web Services account that owns the associated gateway.
     */
   var directConnectGatewayOwnerAccount: js.UndefOr[OwnerAccount] = js.undefined
   
@@ -47,12 +47,12 @@ trait DirectConnectGatewayAssociation extends StObject {
   var virtualGatewayId: js.UndefOr[VirtualGatewayId] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the virtual private gateway.
+    * The ID of the Amazon Web Services account that owns the virtual private gateway.
     */
   var virtualGatewayOwnerAccount: js.UndefOr[OwnerAccount] = js.undefined
   
   /**
-    * The AWS Region where the virtual private gateway is located.
+    * The Amazon Web Services Region where the virtual private gateway is located.
     */
   var virtualGatewayRegion: js.UndefOr[VirtualGatewayRegion] = js.undefined
 }
@@ -69,7 +69,7 @@ object DirectConnectGatewayAssociation {
     
     inline def setAllowedPrefixesToDirectConnectGatewayUndefined: Self = StObject.set(x, "allowedPrefixesToDirectConnectGateway", js.undefined)
     
-    inline def setAllowedPrefixesToDirectConnectGatewayVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "allowedPrefixesToDirectConnectGateway", js.Array(value :_*))
+    inline def setAllowedPrefixesToDirectConnectGatewayVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "allowedPrefixesToDirectConnectGateway", js.Array(value*))
     
     inline def setAssociatedGateway(value: AssociatedGateway): Self = StObject.set(x, "associatedGateway", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeJsonrpc.mod.ProgressType
+import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashdocumentLink
 import typings.vscodeLanguageserverTypes.mod.DocumentLink
@@ -10,16 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DocumentLinkRequest {
   
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "DocumentLinkRequest.method")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "DocumentLinkRequest.messageDirection")
+  @js.native
+  val messageDirection: MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "DocumentLinkRequest.method")
   @js.native
   val method: textDocumentSlashdocumentLink = js.native
   
-  /** @deprecated Use DocumentLinkRequest.type */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "DocumentLinkRequest.resultType")
-  @js.native
-  val resultType: ProgressType[js.Array[DocumentLink]] = js.native
-  
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "DocumentLinkRequest.type")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "DocumentLinkRequest.type")
   @js.native
   val `type`: ProtocolRequestType[
     DocumentLinkParams, 

@@ -22,6 +22,6 @@ object DescribeIndexFieldsResponse {
     
     inline def setIndexFields(value: IndexFieldStatusList): Self = StObject.set(x, "IndexFields", value.asInstanceOf[js.Any])
     
-    inline def setIndexFieldsVarargs(value: IndexFieldStatus*): Self = StObject.set(x, "IndexFields", js.Array(value :_*))
+    inline def setIndexFieldsVarargs(value: IndexFieldStatus*): Self = StObject.set(x, "IndexFields", js.Array(value*))
   }
 }

@@ -18,7 +18,7 @@ object XUniqueIDFactory {
   inline def apply(
     acquire: () => Unit,
     createUniqueID: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XUniqueIDFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createUniqueID = js.Any.fromFunction0(createUniqueID), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

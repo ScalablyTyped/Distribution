@@ -129,7 +129,7 @@ object TransactionInfo {
     
     inline def setDisplayItemsUndefined: Self = StObject.set(x, "displayItems", js.undefined)
     
-    inline def setDisplayItemsVarargs(value: DisplayItem*): Self = StObject.set(x, "displayItems", js.Array(value :_*))
+    inline def setDisplayItemsVarargs(value: DisplayItem*): Self = StObject.set(x, "displayItems", js.Array(value*))
     
     inline def setTotalPrice(value: String): Self = StObject.set(x, "totalPrice", value.asInstanceOf[js.Any])
     

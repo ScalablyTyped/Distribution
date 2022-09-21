@@ -27,14 +27,14 @@ object option {
     def getOrElse(fnOrValue: T): T = js.native
     def getOrElse(fnOrValue: js.Function0[T]): T = js.native
     
-    def ifPresent(fn: js.Function1[/* value */ T, js.Any]): Unit = js.native
+    def ifPresent(fn: js.Function1[/* value */ T, Any]): Unit = js.native
     
     def map[V](fn: js.Function1[/* value */ T, V]): IOption[V] = js.native
   }
   
   @JSImport("zipkin", "option.Some")
   @js.native
-  class Some[T] protected ()
+  open class Some[T] protected ()
     extends Option[T]
        with IOption[T] {
     def this(value: T) = this()
@@ -47,9 +47,9 @@ object option {
   // Throw error is not a valid option
   inline def fromNullable[V](nullable: V): IOption[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNullable")(nullable.asInstanceOf[js.Any]).asInstanceOf[IOption[V]]
   
-  inline def isOptional(data: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptional")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isOptional(data: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptional")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def verifyIsOptional(data: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyIsOptional")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def verifyIsOptional(data: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyIsOptional")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait INone[T]

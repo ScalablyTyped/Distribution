@@ -12,7 +12,7 @@ object settingMod {
   
   @JSImport("@wordpress/customize-browser/Setting", "Setting")
   @js.native
-  class Setting[T] protected () extends Value[T] {
+  open class Setting[T] protected () extends Value[T] {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     
@@ -20,11 +20,11 @@ object settingMod {
     
     def findControls(): js.Array[Control] = js.native
     
-    def initialize(id: String, value: js.Any): Unit = js.native
-    def initialize(id: String, value: js.Any, options: PartialSettingOptions): Unit = js.native
+    def initialize(id: String, value: Any): Unit = js.native
+    def initialize(id: String, value: Any, options: PartialSettingOptions): Unit = js.native
     def initialize(id: String, value: Unit, options: PartialSettingOptions): Unit = js.native
-    def initialize(id: Unit, value: js.Any): Unit = js.native
-    def initialize(id: Unit, value: js.Any, options: PartialSettingOptions): Unit = js.native
+    def initialize(id: Unit, value: Any): Unit = js.native
+    def initialize(id: Unit, value: Any, options: PartialSettingOptions): Unit = js.native
     def initialize(id: Unit, value: Unit, options: PartialSettingOptions): Unit = js.native
     
     def preview(): Unit = js.native

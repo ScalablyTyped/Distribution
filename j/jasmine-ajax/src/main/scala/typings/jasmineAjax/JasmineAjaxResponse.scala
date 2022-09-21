@@ -13,7 +13,7 @@ trait JasmineAjaxResponse extends StObject {
   
   var responseHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var responseJSON: js.UndefOr[js.Any] = js.undefined
+  var responseJSON: js.UndefOr[Any] = js.undefined
   
   var responseText: js.UndefOr[String] = js.undefined
   
@@ -42,7 +42,7 @@ object JasmineAjaxResponse {
     
     inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    inline def setResponseJSON(value: js.Any): Self = StObject.set(x, "responseJSON", value.asInstanceOf[js.Any])
+    inline def setResponseJSON(value: Any): Self = StObject.set(x, "responseJSON", value.asInstanceOf[js.Any])
     
     inline def setResponseJSONUndefined: Self = StObject.set(x, "responseJSON", js.undefined)
     

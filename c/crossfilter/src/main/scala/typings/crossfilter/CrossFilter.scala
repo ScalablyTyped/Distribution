@@ -43,8 +43,8 @@ object CrossFilter {
     inline def apply[T](
       GroupAll: () => GroupAll[T, T],
       add: js.Array[T] => typings.crossfilter.CrossFilter.CrossFilter[T],
-      dimension: js.Function1[/* data */ T, js.Any] => Dimension[T, js.Any],
-      groupAll: () => GroupAll[T, js.Any],
+      dimension: js.Function1[/* data */ T, Any] => Dimension[T, Any],
+      groupAll: () => GroupAll[T, Any],
       remove: () => typings.crossfilter.CrossFilter.CrossFilter[T],
       size: () => Double
     ): typings.crossfilter.CrossFilter.CrossFilter[T] = {
@@ -56,7 +56,7 @@ object CrossFilter {
       
       inline def setAdd(value: js.Array[T] => typings.crossfilter.CrossFilter.CrossFilter[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      inline def setDimension(value: js.Function1[/* data */ T, js.Any] => Dimension[T, js.Any]): Self = StObject.set(x, "dimension", js.Any.fromFunction1(value))
+      inline def setDimension(value: js.Function1[/* data */ T, Any] => Dimension[T, Any]): Self = StObject.set(x, "dimension", js.Any.fromFunction1(value))
       
       inline def setGroupAll(value: () => GroupAll[T, T]): Self = StObject.set(x, "GroupAll", js.Any.fromFunction0(value))
       
@@ -172,7 +172,7 @@ object CrossFilter {
     
     inline def apply[T, TValue](
       dispose: () => GroupAll[T, TValue],
-      reduce: (js.Function2[js.Any, /* v */ T, js.Any], js.Function2[js.Any, /* v */ T, js.Any], js.Function0[js.Any]) => GroupAll[T, js.Any],
+      reduce: (js.Function2[Any, /* v */ T, Any], js.Function2[Any, /* v */ T, Any], js.Function0[Any]) => GroupAll[T, Any],
       reduceCount: () => GroupAll[T, TValue],
       reduceSum: Selector[T] => GroupAll[T, TValue],
       value: () => TValue
@@ -186,7 +186,7 @@ object CrossFilter {
       inline def setDispose(value: () => GroupAll[T, TValue]): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
       inline def setReduce(
-        value: (js.Function2[js.Any, /* v */ T, js.Any], js.Function2[js.Any, /* v */ T, js.Any], js.Function0[js.Any]) => GroupAll[T, js.Any]
+        value: (js.Function2[Any, /* v */ T, Any], js.Function2[Any, /* v */ T, Any], js.Function0[Any]) => GroupAll[T, Any]
       ): Self = StObject.set(x, "reduce", js.Any.fromFunction3(value))
       
       inline def setReduceCount(value: () => GroupAll[T, TValue]): Self = StObject.set(x, "reduceCount", js.Any.fromFunction0(value))
@@ -228,7 +228,7 @@ object CrossFilter {
   
   type HeapSelect[T] = js.Function4[/* array */ js.Array[T], /* lo */ Double, /* hi */ Double, /* k */ Double, js.Array[T]]
   
-  type Selector[T] = js.Function1[/* value */ T, js.Any]
+  type Selector[T] = js.Function1[/* value */ T, Any]
   
   type Sort[T] = js.Function3[/* array */ js.Array[T], /* lo */ Double, /* hi */ Double, js.Array[T]]
 }

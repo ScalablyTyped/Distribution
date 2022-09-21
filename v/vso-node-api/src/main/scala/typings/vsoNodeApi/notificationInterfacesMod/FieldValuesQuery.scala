@@ -20,7 +20,7 @@ object FieldValuesQuery {
   inline def apply(
     currentValues: StringDictionary[String],
     inputValues: js.Array[FieldInputValues],
-    resource: js.Any,
+    resource: Any,
     scope: String
   ): FieldValuesQuery = {
     val __obj = js.Dynamic.literal(currentValues = currentValues.asInstanceOf[js.Any], inputValues = inputValues.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
@@ -31,7 +31,7 @@ object FieldValuesQuery {
     
     inline def setInputValues(value: js.Array[FieldInputValues]): Self = StObject.set(x, "inputValues", value.asInstanceOf[js.Any])
     
-    inline def setInputValuesVarargs(value: FieldInputValues*): Self = StObject.set(x, "inputValues", js.Array(value :_*))
+    inline def setInputValuesVarargs(value: FieldInputValues*): Self = StObject.set(x, "inputValues", js.Array(value*))
     
     inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }

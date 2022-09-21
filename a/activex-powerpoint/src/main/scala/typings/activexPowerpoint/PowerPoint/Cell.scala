@@ -12,7 +12,7 @@ trait Cell extends StObject {
   
   def Merge(MergeTo: Cell): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Cell_typekey")
   var PowerPointDotCell_typekey: Cell
@@ -31,7 +31,7 @@ object Cell {
     Application: Application,
     Borders: Borders,
     Merge: Cell => Unit,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotCell_typekey: Cell,
     Select: () => Unit,
     Selected: Boolean,
@@ -51,7 +51,7 @@ object Cell {
     
     inline def setMerge(value: Cell => Unit): Self = StObject.set(x, "Merge", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotCell_typekey(value: Cell): Self = StObject.set(x, "PowerPoint.Cell_typekey", value.asInstanceOf[js.Any])
     

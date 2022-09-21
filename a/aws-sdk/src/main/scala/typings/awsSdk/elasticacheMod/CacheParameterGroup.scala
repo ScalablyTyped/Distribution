@@ -27,7 +27,7 @@ trait CacheParameterGroup extends StObject {
   var Description: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether the parameter group is associated with a Global Datastore
+    * Indicates whether the parameter group is associated with a Global datastore
     */
   var IsGlobal: js.UndefOr[Boolean] = js.undefined
 }

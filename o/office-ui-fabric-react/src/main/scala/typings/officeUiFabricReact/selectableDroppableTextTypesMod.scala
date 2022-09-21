@@ -18,18 +18,18 @@ object selectableDroppableTextTypesMod {
        with HTMLAttributes[TListenerElement] {
     
     /**
-      * Aria Label for the ISelectableDroppableText for screen reader users.
+      * Aria Label for the field for screen reader users.
       */
     var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
-      * Custom properties for ISelectableDroppableText's Callout used to render options.
+      * Custom properties for the Callout used to render the option list.
       */
     var calloutProps: js.UndefOr[ICalloutProps] = js.undefined
     
     /**
-      * Optional callback to access the ISelectableDroppableText interface. Use this instead of ref for accessing
-      * the public methods and properties of the component.
+      * Optional callback to access the component interface (usually `IDropdown` or `IComboBox`).
+      * Use this instead of `ref` for accessing the public methods and properties of the component.
       */
     var componentRef: js.UndefOr[IRefObject[TComponent]] = js.undefined
     
@@ -37,53 +37,54 @@ object selectableDroppableTextTypesMod {
       * The key(s) that will be initially used to set a selected item.
       *
       * Mutually exclusive with `selectedKey`.
-      * For Dropdown in multi-select mode, use `defaultSelectedKeys` instead.
+      * For Dropdown (but not ComboBox) in multi-select mode, use `defaultSelectedKeys` instead.
       */
     var defaultSelectedKey: js.UndefOr[String | Double | (js.Array[Double | String]) | Null] = js.undefined
     
     /**
-      * Whether or not the ISelectableDroppableText is disabled.
+      * Whether or not the field is disabled.
       */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Descriptive label for the ISelectableDroppableText Error Message
+      * Error message for the field.
       */
     var errorMessage: js.UndefOr[String] = js.undefined
     
     /**
-      * Descriptive label for the ISelectableDroppableText
+      * Descriptive label for the field
       */
     var label: js.UndefOr[String] = js.undefined
     
     /**
-      * Optional prop that indicates if multi-choice selections are allowed or not.
+      * Whether multi-choice selections are allowed or not.
       * @defaultvalue false
       */
     var multiSelect: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Callback that is issued when the options callout is dismissed
+      * Callback for when the options list callout is dismissed
       */
     var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
-      * Optional custom renderer for the ISelectableDroppableText container
+      * Optional custom renderer for the option list container
       */
     var onRenderContainer: js.UndefOr[IRenderFunction[ISelectableDroppableTextProps[TComponent, TListenerElement]]] = js.undefined
     
     /**
-      * Optional custom renderer for the ISelectableDroppableText options
+      * Optional custom renderer for all items, including headers and dividers as well as normal options.
       */
     var onRenderItem: js.UndefOr[IRenderFunction[ISelectableOption]] = js.undefined
     
     /**
-      * Optional custom renderer for the ISelectableDroppableText list
+      * Optional custom renderer for the option list
       */
     var onRenderList: js.UndefOr[IRenderFunction[ISelectableDroppableTextProps[TComponent, TListenerElement]]] = js.undefined
     
     /**
-      * Optional custom renderer for the ISelectableDroppableText option content
+      * Optional custom renderer for normal options only.
+      * Use `onRenderItem` to control rendering for separators and headers as well.
       */
     var onRenderOption: js.UndefOr[IRenderFunction[ISelectableOption]] = js.undefined
     
@@ -94,17 +95,17 @@ object selectableDroppableTextTypesMod {
     var openOnKeyboardFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Collection of options for this ISelectableDroppableText
+      * Collection of options for this field
       */
-    var options: js.UndefOr[js.Any] = js.undefined
+    var options: js.UndefOr[Any] = js.undefined
     
     /**
-      * Custom properties for ISelectableDroppableText's Panel used to render options on small devices.
+      * Custom properties for the Panel used to render the option list on small devices.
       */
     var panelProps: js.UndefOr[IPanelProps] = js.undefined
     
     /**
-      * Whether or not the ISelectableDroppableText is required.
+      * Whether or not the field is required.
       */
     var required: js.UndefOr[Boolean] = js.undefined
     
@@ -114,7 +115,7 @@ object selectableDroppableTextTypesMod {
       * Note that passing in `null` will cause selection to be reset.
       *
       * Mutually exclusive with `defaultSelectedKey`.
-      * For Dropdown in multi-select mode, use `selectedKeys` instead.
+      * For Dropdown (but not ComboBox) in multi-select mode, use `selectedKeys` instead.
       */
     var selectedKey: js.UndefOr[String | Double | (js.Array[Double | String]) | Null] = js.undefined
   }
@@ -147,7 +148,7 @@ object selectableDroppableTextTypesMod {
       
       inline def setDefaultSelectedKeyUndefined: Self = StObject.set(x, "defaultSelectedKey", js.undefined)
       
-      inline def setDefaultSelectedKeyVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultSelectedKey", js.Array(value :_*))
+      inline def setDefaultSelectedKeyVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultSelectedKey", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -207,7 +208,7 @@ object selectableDroppableTextTypesMod {
       
       inline def setOpenOnKeyboardFocusUndefined: Self = StObject.set(x, "openOnKeyboardFocus", js.undefined)
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
@@ -225,7 +226,7 @@ object selectableDroppableTextTypesMod {
       
       inline def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
       
-      inline def setSelectedKeyVarargs(value: (Double | String)*): Self = StObject.set(x, "selectedKey", js.Array(value :_*))
+      inline def setSelectedKeyVarargs(value: (Double | String)*): Self = StObject.set(x, "selectedKey", js.Array(value*))
     }
   }
 }

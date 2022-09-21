@@ -1,25 +1,25 @@
 package typings.blueprintjsCore
 
-import typings.blueprintjsCore.anon.PartialITagInputProps
 import typings.blueprintjsCore.anon.PartialITagInputState
-import typings.blueprintjsCore.anon.ReadonlyITagInputProps
+import typings.blueprintjsCore.anon.PartialTagInputProps
 import typings.blueprintjsCore.anon.ReadonlyITagInputState
+import typings.blueprintjsCore.anon.ReadonlyTagInputProps
 import typings.blueprintjsCore.blueprintjsCoreBooleans.`false`
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.HTMLInputProps
 import typings.blueprintjsCore.propsMod.IIntentProps
 import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsCore.tagMod.ITagProps
-import typings.blueprintjsIcons.iconNameMod.IconName
+import typings.blueprintjsCore.tagMod.TagProps
+import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,57 +28,60 @@ object tagInputMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/tag-input/tagInput", "TagInput")
   @js.native
-  class TagInput protected ()
-    extends AbstractPureComponent2[ITagInputProps, ITagInputState, js.Object] {
-    def this(props: ITagInputProps) = this()
-    def this(props: ITagInputProps, context: js.Any) = this()
+  open class TagInput protected ()
+    extends AbstractPureComponent2[TagInputProps, ITagInputState, js.Object] {
+    def this(props: TagInputProps) = this()
+    def this(props: TagInputProps, context: Any) = this()
     
-    /* private */ var addTags: js.Any = js.native
+    /* private */ var addTags: Any = js.native
     
-    /* private */ var findNextIndex: js.Any = js.native
+    @JSName("componentDidUpdate")
+    def componentDidUpdate_MTagInput(prevProps: TagInputProps): Unit = js.native
     
-    /* private */ var getNextActiveIndex: js.Any = js.native
+    /* private */ var findNextIndex: Any = js.native
+    
+    /* private */ var getNextActiveIndex: Any = js.native
     
     /**
       * Splits inputValue on separator prop,
       * trims whitespace from each new value,
       * and ignores empty values.
       */
-    /* private */ var getValues: js.Any = js.native
+    /* private */ var getValues: Any = js.native
     
-    /* private */ var handleBackspaceToRemove: js.Any = js.native
+    /* private */ var handleBackspaceToRemove: Any = js.native
     
-    /* private */ var handleContainerBlur: js.Any = js.native
+    /* private */ var handleContainerBlur: Any = js.native
     
-    /* private */ var handleContainerClick: js.Any = js.native
+    /* private */ var handleContainerClick: Any = js.native
     
-    /* private */ var handleDeleteToRemove: js.Any = js.native
+    /* private */ var handleDeleteToRemove: Any = js.native
     
-    /* private */ var handleInputChange: js.Any = js.native
+    /* private */ var handleInputChange: Any = js.native
     
-    /* private */ var handleInputFocus: js.Any = js.native
+    /* private */ var handleInputFocus: Any = js.native
     
-    /* private */ var handleInputKeyDown: js.Any = js.native
+    /* private */ var handleInputKeyDown: Any = js.native
     
-    /* private */ var handleInputKeyUp: js.Any = js.native
+    /* private */ var handleInputKeyUp: Any = js.native
     
-    /* private */ var handleInputPaste: js.Any = js.native
+    /* private */ var handleInputPaste: Any = js.native
     
-    /* private */ var handleRemoveTag: js.Any = js.native
+    /* private */ var handleRef: Any = js.native
     
-    /* private */ var inputElement: js.Any = js.native
+    /* private */ var handleRemoveTag: Any = js.native
     
-    /* private */ var invokeKeyPressCallback: js.Any = js.native
+    var inputElement: HTMLInputElement | Null = js.native
+    
+    /* private */ var invokeKeyPressCallback: Any = js.native
     
     /** Returns whether the given index represents a valid item in `this.props.values`. */
-    /* private */ var isValidIndex: js.Any = js.native
+    /* private */ var isValidIndex: Any = js.native
     
-    /* private */ var maybeRenderTag: js.Any = js.native
-    
-    /* private */ var refHandlers: js.Any = js.native
+    /* private */ var maybeRenderTag: Any = js.native
     
     /** Remove the item at the given index by invoking `onRemove` and `onChange` accordingly. */
-    /* private */ var removeIndexFromValues: js.Any = js.native
+    /* private */ var removeIndexFromValues: Any = js.native
   }
   /* static members */
   object TagInput {
@@ -89,15 +92,15 @@ object tagInputMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/tag-input/tagInput", "TagInput.defaultProps")
     @js.native
-    def defaultProps: PartialITagInputProps = js.native
-    inline def defaultProps_=(x: PartialITagInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: PartialTagInputProps = js.native
+    inline def defaultProps_=(x: PartialTagInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/tag-input/tagInput", "TagInput.displayName")
     @js.native
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps(props: ReadonlyITagInputProps, state: ReadonlyITagInputState): PartialITagInputState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialITagInputState | Null]
+    inline def getDerivedStateFromProps(props: ReadonlyTagInputProps, state: ReadonlyITagInputState): PartialITagInputState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialITagInputState | Null]
   }
   
   trait ITagInputProps
@@ -108,6 +111,7 @@ object tagInputMod {
     /**
       * If true, `onAdd` will be invoked when the input loses focus.
       * Otherwise, `onAdd` is only invoked when `enter` is pressed.
+      *
       * @default false
       */
     var addOnBlur: js.UndefOr[Boolean] = js.undefined
@@ -125,10 +129,13 @@ object tagInputMod {
       */
     var addOnPaste: js.UndefOr[Boolean] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /**
       * Whether the component is non-interactive.
       * Note that you'll also need to disable the component's `rightElement`,
       * if appropriate.
+      *
       * @default false
       */
     var disabled: js.UndefOr[Boolean] = js.undefined
@@ -143,7 +150,7 @@ object tagInputMod {
     var inputProps: js.UndefOr[HTMLInputProps] = js.undefined
     
     /** Ref handler for the `<input>` element. */
-    var inputRef: js.UndefOr[js.Function1[/* input */ HTMLInputElement | Null, Unit]] = js.undefined
+    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
     /** Controlled value of the `<input>` element. This is shorthand for `inputProps={{ value }}`. */
     var inputValue: js.UndefOr[String] = js.undefined
@@ -152,7 +159,7 @@ object tagInputMod {
     var large: js.UndefOr[Boolean] = js.undefined
     
     /** Name of a Blueprint UI icon (or an icon element) to render on the left side of the input. */
-    var leftIcon: js.UndefOr[IconName | MaybeElement] = js.undefined
+    var leftIcon: js.UndefOr[BlueprintIcons16Id | MaybeElement] = js.undefined
     
     /**
       * Callback invoked when new tags are added by the user pressing `enter` on the input.
@@ -230,9 +237,10 @@ object tagInputMod {
     /**
       * Separator pattern used to split input text into multiple values. Default value splits on commas and newlines.
       * Explicit `false` value disables splitting (note that `onAdd` will still receive an array of length 1).
+      *
       * @default /[,\n\r]/
       */
-    var separator: js.UndefOr[String | RegExp | `false`] = js.undefined
+    var separator: js.UndefOr[String | js.RegExp | `false`] = js.undefined
     
     /**
       * React props to pass to each `Tag`. Provide an object to pass the same props to every tag,
@@ -241,16 +249,12 @@ object tagInputMod {
       * If you define `onRemove` here then you will have to implement your own tag removal
       * handling as `TagInput`'s own `onRemove` handler will never be invoked.
       */
-    var tagProps: js.UndefOr[ITagProps | (js.Function2[/* value */ ReactNode, /* index */ Double, ITagProps])] = js.undefined
+    var tagProps: js.UndefOr[TagProps | (js.Function2[/* value */ ReactNode, /* index */ Double, TagProps])] = js.undefined
     
     /**
       * Controlled tag values. Each value will be rendered inside a `Tag`, which can be customized
       * using `tagProps`. Therefore, any valid React node can be used as a `TagInput` value; falsy
       * values will not be rendered.
-      *
-      * __Note about typed usage:__ If you know your `values` will always be of a certain `ReactNode`
-      * subtype, such as `string` or `ReactChild`, you can use that type on all your handlers
-      * to simplify type logic.
       */
     var values: js.Array[ReactNode]
   }
@@ -271,6 +275,10 @@ object tagInputMod {
       
       inline def setAddOnPasteUndefined: Self = StObject.set(x, "addOnPaste", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
@@ -283,7 +291,11 @@ object tagInputMod {
       
       inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
-      inline def setInputRef(value: /* input */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      inline def setInputRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
+      
+      inline def setInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      
+      inline def setInputRefNull: Self = StObject.set(x, "inputRef", null)
       
       inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
@@ -295,7 +307,7 @@ object tagInputMod {
       
       inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
       
-      inline def setLeftIcon(value: IconName | MaybeElement): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
+      inline def setLeftIcon(value: BlueprintIcons16Id | MaybeElement): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
       
       inline def setLeftIconNull: Self = StObject.set(x, "leftIcon", null)
       
@@ -333,19 +345,19 @@ object tagInputMod {
       
       inline def setRightElementUndefined: Self = StObject.set(x, "rightElement", js.undefined)
       
-      inline def setSeparator(value: String | RegExp | `false`): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String | js.RegExp | `false`): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
       inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      inline def setTagProps(value: ITagProps | (js.Function2[/* value */ ReactNode, /* index */ Double, ITagProps])): Self = StObject.set(x, "tagProps", value.asInstanceOf[js.Any])
+      inline def setTagProps(value: TagProps | (js.Function2[/* value */ ReactNode, /* index */ Double, TagProps])): Self = StObject.set(x, "tagProps", value.asInstanceOf[js.Any])
       
-      inline def setTagPropsFunction2(value: (/* value */ ReactNode, /* index */ Double) => ITagProps): Self = StObject.set(x, "tagProps", js.Any.fromFunction2(value))
+      inline def setTagPropsFunction2(value: (/* value */ ReactNode, /* index */ Double) => TagProps): Self = StObject.set(x, "tagProps", js.Any.fromFunction2(value))
       
       inline def setTagPropsUndefined: Self = StObject.set(x, "tagProps", js.undefined)
       
       inline def setValues(value: js.Array[ReactNode]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: ReactNode*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: ReactNode*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -394,4 +406,6 @@ object tagInputMod {
     
     inline def paste: typings.blueprintjsCore.blueprintjsCoreStrings.paste = "paste".asInstanceOf[typings.blueprintjsCore.blueprintjsCoreStrings.paste]
   }
+  
+  type TagInputProps = ITagInputProps
 }

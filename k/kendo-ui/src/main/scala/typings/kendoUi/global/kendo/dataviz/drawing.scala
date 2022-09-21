@@ -25,7 +25,7 @@ object drawing {
   
   @JSGlobal("kendo.dataviz.drawing.Arc")
   @js.native
-  class Arc protected ()
+  open class Arc protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.Arc {
     def this(geometry: typings.kendoUi.kendo.geometry.Arc) = this()
@@ -34,7 +34,7 @@ object drawing {
   
   @JSGlobal("kendo.dataviz.drawing.Circle")
   @js.native
-  class Circle protected ()
+  open class Circle protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.Circle {
     def this(geometry: typings.kendoUi.kendo.geometry.Circle) = this()
@@ -43,7 +43,7 @@ object drawing {
   
   @JSGlobal("kendo.dataviz.drawing.Element")
   @js.native
-  class Element ()
+  open class Element ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.Element {
     def this(options: ElementOptions) = this()
@@ -51,7 +51,7 @@ object drawing {
   
   @JSGlobal("kendo.dataviz.drawing.Gradient")
   @js.native
-  class Gradient ()
+  open class Gradient ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.Gradient {
     def this(options: GradientOptions) = this()
@@ -66,12 +66,12 @@ object drawing {
     override def removeStop(stop: typings.kendoUi.kendo.drawing.GradientStop): Unit = js.native
     
     /* CompleteClass */
-    var stops: js.Any = js.native
+    var stops: Any = js.native
   }
   
   @JSGlobal("kendo.dataviz.drawing.GradientStop")
   @js.native
-  class GradientStop ()
+  open class GradientStop ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.GradientStop {
     def this(options: GradientStopOptions) = this()
@@ -82,7 +82,7 @@ object drawing {
   
   @JSGlobal("kendo.dataviz.drawing.Group")
   @js.native
-  class Group ()
+  open class Group ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.Group {
     def this(options: GroupOptions) = this()
@@ -90,7 +90,7 @@ object drawing {
   
   @JSGlobal("kendo.dataviz.drawing.Image")
   @js.native
-  class Image protected ()
+  open class Image protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.Image {
     def this(src: String, rect: typings.kendoUi.kendo.geometry.Rect) = this()
@@ -98,7 +98,7 @@ object drawing {
   
   @JSGlobal("kendo.dataviz.drawing.Layout")
   @js.native
-  class Layout protected ()
+  open class Layout protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.Layout {
     def this(rect: typings.kendoUi.kendo.geometry.Rect) = this()
@@ -107,7 +107,7 @@ object drawing {
   
   @JSGlobal("kendo.dataviz.drawing.LinearGradient")
   @js.native
-  class LinearGradient ()
+  open class LinearGradient ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.LinearGradient {
     def this(options: LinearGradientOptions) = this()
@@ -122,12 +122,12 @@ object drawing {
     override def removeStop(stop: typings.kendoUi.kendo.drawing.GradientStop): Unit = js.native
     
     /* CompleteClass */
-    var stops: js.Any = js.native
+    var stops: Any = js.native
   }
   
   @JSGlobal("kendo.dataviz.drawing.MultiPath")
   @js.native
-  class MultiPath ()
+  open class MultiPath ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.MultiPath {
     def this(options: MultiPathOptions) = this()
@@ -135,27 +135,27 @@ object drawing {
   
   @JSGlobal("kendo.dataviz.drawing.OptionsStore")
   @js.native
-  class OptionsStore ()
+  open class OptionsStore ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.OptionsStore {
     def this(options: OptionsStoreOptions) = this()
     
     /* CompleteClass */
-    override def get(field: String): js.Any = js.native
+    override def get(field: String): Any = js.native
     
     /* CompleteClass */
-    var observer: js.Any = js.native
+    var observer: Any = js.native
     
     /* CompleteClass */
     var options: OptionsStoreOptions = js.native
     
     /* CompleteClass */
-    override def set(field: String, value: js.Any): Unit = js.native
+    override def set(field: String, value: Any): Unit = js.native
   }
   
   @JSGlobal("kendo.dataviz.drawing.Path")
   @js.native
-  class Path ()
+  open class Path ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.Path {
     def this(options: PathOptions) = this()
@@ -168,24 +168,24 @@ object drawing {
     
     /* static member */
     inline def fromArc(arc: typings.kendoUi.kendo.geometry.Arc): typings.kendoUi.kendo.drawing.Path = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArc")(arc.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
-    inline def fromArc(arc: typings.kendoUi.kendo.geometry.Arc, options: js.Any): typings.kendoUi.kendo.drawing.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArc")(arc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
+    inline def fromArc(arc: typings.kendoUi.kendo.geometry.Arc, options: Any): typings.kendoUi.kendo.drawing.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArc")(arc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
     
     /* static member */
-    inline def fromPoints(points: js.Any): typings.kendoUi.kendo.drawing.Path = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(points.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
-    inline def fromPoints(points: js.Any, options: js.Any): typings.kendoUi.kendo.drawing.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(points.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
+    inline def fromPoints(points: Any): typings.kendoUi.kendo.drawing.Path = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(points.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
+    inline def fromPoints(points: Any, options: Any): typings.kendoUi.kendo.drawing.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(points.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
     
     /* static member */
     inline def fromRect(rect: typings.kendoUi.kendo.geometry.Rect): typings.kendoUi.kendo.drawing.Path = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")(rect.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
-    inline def fromRect(rect: typings.kendoUi.kendo.geometry.Rect, options: js.Any): typings.kendoUi.kendo.drawing.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")(rect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
+    inline def fromRect(rect: typings.kendoUi.kendo.geometry.Rect, options: Any): typings.kendoUi.kendo.drawing.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")(rect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Path]
     
     /* static member */
     inline def parse(svgPath: String): typings.kendoUi.kendo.drawing.MultiPath = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(svgPath.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.MultiPath]
-    inline def parse(svgPath: String, options: js.Any): typings.kendoUi.kendo.drawing.MultiPath = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(svgPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.MultiPath]
+    inline def parse(svgPath: String, options: Any): typings.kendoUi.kendo.drawing.MultiPath = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(svgPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.MultiPath]
   }
   
   @JSGlobal("kendo.dataviz.drawing.RadialGradient")
   @js.native
-  class RadialGradient ()
+  open class RadialGradient ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.RadialGradient {
     def this(options: RadialGradientOptions) = this()
@@ -200,12 +200,12 @@ object drawing {
     override def removeStop(stop: typings.kendoUi.kendo.drawing.GradientStop): Unit = js.native
     
     /* CompleteClass */
-    var stops: js.Any = js.native
+    var stops: Any = js.native
   }
   
   @JSGlobal("kendo.dataviz.drawing.Rect")
   @js.native
-  class Rect protected ()
+  open class Rect protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.Rect {
     def this(geometry: typings.kendoUi.kendo.geometry.Rect) = this()
@@ -214,7 +214,7 @@ object drawing {
   
   @JSGlobal("kendo.dataviz.drawing.Segment")
   @js.native
-  class Segment protected ()
+  open class Segment protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.Segment {
     def this(anchor: Point, controlIn: Point, controlOut: Point) = this()
@@ -222,7 +222,7 @@ object drawing {
   
   @JSGlobal("kendo.dataviz.drawing.Surface")
   @js.native
-  class Surface ()
+  open class Surface ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.Surface {
     def this(options: SurfaceOptions) = this()
@@ -235,15 +235,15 @@ object drawing {
     
     /* static member */
     inline def create(element: JQuery): typings.kendoUi.kendo.drawing.Surface = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Surface]
-    inline def create(element: JQuery, options: js.Any): typings.kendoUi.kendo.drawing.Surface = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Surface]
+    inline def create(element: JQuery, options: Any): typings.kendoUi.kendo.drawing.Surface = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Surface]
     /* static member */
     inline def create(element: typings.kendoUi.kendo.dataviz.drawing.Element): typings.kendoUi.kendo.drawing.Surface = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.drawing.Surface]
-    inline def create(element: typings.kendoUi.kendo.dataviz.drawing.Element, options: js.Any): typings.kendoUi.kendo.drawing.Surface = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Surface]
+    inline def create(element: typings.kendoUi.kendo.dataviz.drawing.Element, options: Any): typings.kendoUi.kendo.drawing.Surface = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.drawing.Surface]
   }
   
   @JSGlobal("kendo.dataviz.drawing.Text")
   @js.native
-  class Text protected ()
+  open class Text protected ()
     extends StObject
        with typings.kendoUi.kendo.dataviz.drawing.Text {
     def this(content: String, position: Point) = this()

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSpellChecker")
 @js.native
-class ASPxClientSpellChecker ()
+open class ASPxClientSpellChecker ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSpellChecker {
   
@@ -53,7 +53,7 @@ class ASPxClientSpellChecker ()
     * @param element An object representing the element being checked.
     */
   /* CompleteClass */
-  override def CheckElement(element: js.Any): Unit = js.native
+  override def CheckElement(element: Any): Unit = js.native
   
   /**
     * Starts checking contents of the specified element.
@@ -67,7 +67,7 @@ class ASPxClientSpellChecker ()
     * @param containerElement An object representing a control which contains elements being checked.
     */
   /* CompleteClass */
-  override def CheckElementsInContainer(containerElement: js.Any): Unit = js.native
+  override def CheckElementsInContainer(containerElement: Any): Unit = js.native
   
   /**
     * Starts checking the contents of controls in the specified container.
@@ -93,13 +93,13 @@ class ASPxClientSpellChecker ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -183,5 +183,5 @@ object ASPxClientSpellChecker {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientSpellChecker = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientSpellChecker]
+  inline def Cast(obj: Any): typings.devexpressWeb.ASPxClientSpellChecker = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientSpellChecker]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeInstanceAssociationsStatusRequest extends StObject {
   
   /**
-    * The instance IDs for which you want association status information.
+    * The managed node IDs for which you want association status information.
     */
   var InstanceId: typings.awsSdk.ssmMod.InstanceId
   

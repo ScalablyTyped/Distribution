@@ -30,6 +30,6 @@ object ListTapesOutput {
     
     inline def setTapeInfosUndefined: Self = StObject.set(x, "TapeInfos", js.undefined)
     
-    inline def setTapeInfosVarargs(value: TapeInfo*): Self = StObject.set(x, "TapeInfos", js.Array(value :_*))
+    inline def setTapeInfosVarargs(value: TapeInfo*): Self = StObject.set(x, "TapeInfos", js.Array(value*))
   }
 }

@@ -8,29 +8,29 @@ object suggestionsControlScssMod {
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsControl.scss", "actionButton")
   @js.native
-  val actionButton: /* "actionButton_9a90a6e0" */ String = js.native
+  val actionButton: /* "actionButton_36fd6562" */ String = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsControl.scss", "buttonSelected")
   @js.native
-  val buttonSelected: /* "buttonSelected_9a90a6e0" */ String = js.native
+  val buttonSelected: /* "buttonSelected_36fd6562" */ String = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsControl.scss", "itemButton")
   @js.native
-  val itemButton: /* "itemButton_9a90a6e0" */ String = js.native
+  val itemButton: /* "itemButton_36fd6562" */ String = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsControl.scss", "root")
   @js.native
-  val root: /* "root_9a90a6e0" */ String = js.native
+  val root: /* "root_36fd6562" */ String = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsControl.scss", "screenReaderOnly")
   @js.native
-  val screenReaderOnly: /* "screenReaderOnly_9a90a6e0" */ String = js.native
+  val screenReaderOnly: /* "screenReaderOnly_36fd6562" */ String = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsControl.scss", "suggestionsSpinner")
   @js.native
-  val suggestionsSpinner: /* "suggestionsSpinner_9a90a6e0" */ String = js.native
+  val suggestionsSpinner: /* "suggestionsSpinner_36fd6562" */ String = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsControl.scss", "suggestionsTitle")
   @js.native
-  val suggestionsTitle: /* "suggestionsTitle_9a90a6e0" */ String = js.native
+  val suggestionsTitle: /* "suggestionsTitle_36fd6562" */ String = js.native
 }

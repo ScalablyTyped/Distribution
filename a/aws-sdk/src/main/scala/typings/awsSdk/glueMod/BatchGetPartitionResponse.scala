@@ -29,12 +29,12 @@ object BatchGetPartitionResponse {
     
     inline def setPartitionsUndefined: Self = StObject.set(x, "Partitions", js.undefined)
     
-    inline def setPartitionsVarargs(value: Partition*): Self = StObject.set(x, "Partitions", js.Array(value :_*))
+    inline def setPartitionsVarargs(value: Partition*): Self = StObject.set(x, "Partitions", js.Array(value*))
     
     inline def setUnprocessedKeys(value: BatchGetPartitionValueList): Self = StObject.set(x, "UnprocessedKeys", value.asInstanceOf[js.Any])
     
     inline def setUnprocessedKeysUndefined: Self = StObject.set(x, "UnprocessedKeys", js.undefined)
     
-    inline def setUnprocessedKeysVarargs(value: PartitionValueList*): Self = StObject.set(x, "UnprocessedKeys", js.Array(value :_*))
+    inline def setUnprocessedKeysVarargs(value: PartitionValueList*): Self = StObject.set(x, "UnprocessedKeys", js.Array(value*))
   }
 }

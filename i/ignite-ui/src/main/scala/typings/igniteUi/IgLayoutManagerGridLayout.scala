@@ -10,7 +10,7 @@ trait IgLayoutManagerGridLayout
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies the duration of the animations in the layout manager"s grid layout
@@ -31,7 +31,7 @@ trait IgLayoutManagerGridLayout
     *                     array The column height can be set as an array of heights.
     *
     */
-  var columnHeight: js.UndefOr[String | Double | js.Array[js.Any]] = js.undefined
+  var columnHeight: js.UndefOr[String | Double | js.Array[Any]] = js.undefined
   
   /**
     * Accepts number or string with width in px, percents                        or asterisk (*) which will distribute all the width between all the columns equally.
@@ -40,7 +40,7 @@ trait IgLayoutManagerGridLayout
     *                     array The column width can be set as an array of widths.
     *
     */
-  var columnWidth: js.UndefOr[String | Double | js.Array[js.Any]] = js.undefined
+  var columnWidth: js.UndefOr[String | Double | js.Array[Any]] = js.undefined
   
   /**
     * Specifies the margin left css property for items
@@ -90,17 +90,17 @@ object IgLayoutManagerGridLayout {
     
     inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
-    inline def setColumnHeight(value: String | Double | js.Array[js.Any]): Self = StObject.set(x, "columnHeight", value.asInstanceOf[js.Any])
+    inline def setColumnHeight(value: String | Double | js.Array[Any]): Self = StObject.set(x, "columnHeight", value.asInstanceOf[js.Any])
     
     inline def setColumnHeightUndefined: Self = StObject.set(x, "columnHeight", js.undefined)
     
-    inline def setColumnHeightVarargs(value: js.Any*): Self = StObject.set(x, "columnHeight", js.Array(value :_*))
+    inline def setColumnHeightVarargs(value: Any*): Self = StObject.set(x, "columnHeight", js.Array(value*))
     
-    inline def setColumnWidth(value: String | Double | js.Array[js.Any]): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    inline def setColumnWidth(value: String | Double | js.Array[Any]): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
-    inline def setColumnWidthVarargs(value: js.Any*): Self = StObject.set(x, "columnWidth", js.Array(value :_*))
+    inline def setColumnWidthVarargs(value: Any*): Self = StObject.set(x, "columnWidth", js.Array(value*))
     
     inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     

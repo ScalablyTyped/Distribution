@@ -24,6 +24,6 @@ object TimedMetadataInsertion {
     
     inline def setId3InsertionsUndefined: Self = StObject.set(x, "Id3Insertions", js.undefined)
     
-    inline def setId3InsertionsVarargs(value: Id3Insertion*): Self = StObject.set(x, "Id3Insertions", js.Array(value :_*))
+    inline def setId3InsertionsVarargs(value: Id3Insertion*): Self = StObject.set(x, "Id3Insertions", js.Array(value*))
   }
 }

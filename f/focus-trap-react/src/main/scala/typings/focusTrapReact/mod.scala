@@ -3,7 +3,7 @@ package typings.focusTrapReact
 import typings.focusTrap.mod.Options
 import typings.react.mod.AllHTMLAttributes
 import typings.react.mod.Component
-import typings.react.mod.ReactElement
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,19 +12,18 @@ object mod {
   
   @JSImport("focus-trap-react", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[Props, js.Object, js.Any]
+  open class ^ ()
+    extends Component[Props, js.Object, Any]
   
-  type FocusTrap = Component[Props, js.Object, js.Any]
+  type FocusTrap = Component[Props, js.Object, Any]
   
   trait Props
     extends StObject
-       with AllHTMLAttributes[js.Any] {
+       with AllHTMLAttributes[Any] {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
-    @JSName("children")
-    var children_Props: ReactElement
+    var containerElements: js.UndefOr[js.Array[HTMLElement]] = js.undefined
     
     var focusTrapOptions: js.UndefOr[Options] = js.undefined
     
@@ -32,8 +31,8 @@ object mod {
   }
   object Props {
     
-    inline def apply(children: ReactElement): Props = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    inline def apply(): Props = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
@@ -43,7 +42,11 @@ object mod {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setContainerElements(value: js.Array[HTMLElement]): Self = StObject.set(x, "containerElements", value.asInstanceOf[js.Any])
+      
+      inline def setContainerElementsUndefined: Self = StObject.set(x, "containerElements", js.undefined)
+      
+      inline def setContainerElementsVarargs(value: HTMLElement*): Self = StObject.set(x, "containerElements", js.Array(value*))
       
       inline def setFocusTrapOptions(value: Options): Self = StObject.set(x, "focusTrapOptions", value.asInstanceOf[js.Any])
       

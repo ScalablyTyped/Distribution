@@ -8,25 +8,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PivotItemUpdateData extends StObject {
   
   /**
-    *
     * Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var isExpanded: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Name of the PivotItem.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Specifies if the PivotItem is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var visible: js.UndefOr[Boolean] = js.undefined

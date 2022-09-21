@@ -1,9 +1,6 @@
 package typings.hcaptchaVueHcaptcha
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Error
-import typings.vue.vueMod.Vue
-import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,23 +15,37 @@ object mod extends Shortcut {
   @js.native
   val h: HCaptcha = js.native
   
-  @js.native
-  trait HCaptcha
-    extends StObject
-       with VueConstructor[Vue] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor * / any */ trait HCaptcha extends StObject {
     
-    var data: js.Any = js.native
+    var data: Any
     
-    var methods: HCaptchaMethods = js.native
+    var methods: HCaptchaMethods
     
-    var props: HCaptchaProps = js.native
+    var props: HCaptchaProps
+  }
+  object HCaptcha {
+    
+    inline def apply(data: Any, methods: HCaptchaMethods, props: HCaptchaProps): HCaptcha = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HCaptcha]
+    }
+    
+    extension [Self <: HCaptcha](x: Self) {
+      
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setMethods(value: HCaptchaMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: HCaptchaProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
   }
   
   trait HCaptchaMethods extends StObject {
     
     def execute(): Unit
     
-    def onError(e: Error): Unit
+    def onError(e: js.Error): Unit
     
     def onExpired(): Unit
     
@@ -48,7 +59,7 @@ object mod extends Shortcut {
     
     inline def apply(
       execute: () => Unit,
-      onError: Error => Unit,
+      onError: js.Error => Unit,
       onExpired: () => Unit,
       onVerify: String => Unit,
       onloadScript: () => Unit,
@@ -62,7 +73,7 @@ object mod extends Shortcut {
       
       inline def setExecute(value: () => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
-      inline def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnExpired(value: () => Unit): Self = StObject.set(x, "onExpired", js.Any.fromFunction0(value))
       

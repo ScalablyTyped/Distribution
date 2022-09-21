@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "ProceduralTextureSceneComponent")
 @js.native
-class ProceduralTextureSceneComponent protected ()
+open class ProceduralTextureSceneComponent protected ()
   extends typings.babylonjs.materialsIndexMod.ProceduralTextureSceneComponent {
   /**
     * Creates a new instance of the component for the given scene

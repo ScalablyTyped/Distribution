@@ -13,7 +13,7 @@ object observablevalueMod {
   
   @JSImport("mobservable/lib/observablevalue", "ObservableValue")
   @js.native
-  class ObservableValue[T] protected () extends DataNode {
+  open class ObservableValue[T] protected () extends DataNode {
     def this(value: T, mode: ValueMode, context: IContextInfoStruct) = this()
     
     /* protected */ var _value: T = js.native
@@ -22,7 +22,7 @@ object observablevalueMod {
     
     def get(): T = js.native
     
-    /* private */ def makeReferenceValueReactive(value: js.Any): js.Any = js.native
+    /* private */ def makeReferenceValueReactive(value: Any): Any = js.native
     
     /* protected */ var mode: ValueMode = js.native
     

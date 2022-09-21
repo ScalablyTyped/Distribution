@@ -10,5 +10,5 @@ trait TextInputFactory
   extends Factory[
       TextInputConstructor, 
       InstanceType[TextInputConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[TextInputConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

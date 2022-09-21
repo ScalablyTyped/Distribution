@@ -7,87 +7,87 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReservationPurchaseRecommendationDetail extends StObject {
   
   /**
-    * The account that this RI recommendation is for.
+    * The account that this Reserved Instance (RI) recommendation is for.
     */
   var AccountId: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The average number of normalized units that you used in an hour during the historical period. AWS uses this to calculate your recommended reservation purchases.
+    * The average number of normalized units that you used in an hour during the historical period. Amazon Web Services uses this to calculate your recommended reservation purchases.
     */
   var AverageNormalizedUnitsUsedPerHour: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The average number of instances that you used in an hour during the historical period. AWS uses this to calculate your recommended reservation purchases.
+    * The average number of instances that you used in an hour during the historical period. Amazon Web Services uses this to calculate your recommended reservation purchases.
     */
   var AverageNumberOfInstancesUsedPerHour: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The average utilization of your instances. AWS uses this to calculate your recommended reservation purchases.
+    * The average utilization of your instances. Amazon Web Services uses this to calculate your recommended reservation purchases.
     */
   var AverageUtilization: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The currency code that AWS used to calculate the costs for this instance.
+    * The currency code that Amazon Web Services used to calculate the costs for this instance.
     */
   var CurrencyCode: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * How long AWS estimates that it takes for this instance to start saving you money, in months.
+    * How long Amazon Web Services estimates that it takes for this instance to start saving you money, in months.
     */
   var EstimatedBreakEvenInMonths: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * How much AWS estimates that you spend on On-Demand Instances in a month.
+    * How much Amazon Web Services estimates that you spend on On-Demand Instances in a month.
     */
   var EstimatedMonthlyOnDemandCost: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * How much AWS estimates that this specific recommendation could save you in a month.
+    * How much Amazon Web Services estimates that this specific recommendation might save you in a month.
     */
   var EstimatedMonthlySavingsAmount: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * How much AWS estimates that this specific recommendation could save you in a month, as a percentage of your overall costs.
+    * How much Amazon Web Services estimates that this specific recommendation might save you in a month, as a percentage of your overall costs.
     */
   var EstimatedMonthlySavingsPercentage: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * How much AWS estimates that you would have spent for all usage during the specified historical period if you had a reservation.
+    * How much Amazon Web Services estimates that you might spend for all usage during the specified historical period if you had a reservation.
     */
   var EstimatedReservationCostForLookbackPeriod: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * Details about the instances that AWS recommends that you purchase.
+    * Details about the instances that Amazon Web Services recommends that you purchase.
     */
   var InstanceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.InstanceDetails] = js.undefined
   
   /**
-    * The maximum number of normalized units that you used in an hour during the historical period. AWS uses this to calculate your recommended reservation purchases.
+    * The maximum number of normalized units that you used in an hour during the historical period. Amazon Web Services uses this to calculate your recommended reservation purchases.
     */
   var MaximumNormalizedUnitsUsedPerHour: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The maximum number of instances that you used in an hour during the historical period. AWS uses this to calculate your recommended reservation purchases.
+    * The maximum number of instances that you used in an hour during the historical period. Amazon Web Services uses this to calculate your recommended reservation purchases.
     */
   var MaximumNumberOfInstancesUsedPerHour: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The minimum number of normalized units that you used in an hour during the historical period. AWS uses this to calculate your recommended reservation purchases.
+    * The minimum number of normalized units that you used in an hour during the historical period. Amazon Web Services uses this to calculate your recommended reservation purchases.
     */
   var MinimumNormalizedUnitsUsedPerHour: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The minimum number of instances that you used in an hour during the historical period. AWS uses this to calculate your recommended reservation purchases.
+    * The minimum number of instances that you used in an hour during the historical period. Amazon Web Services uses this to calculate your recommended reservation purchases.
     */
   var MinimumNumberOfInstancesUsedPerHour: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The number of normalized units that AWS recommends that you purchase.
+    * The number of normalized units that Amazon Web Services recommends that you purchase.
     */
   var RecommendedNormalizedUnitsToPurchase: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The number of instances that AWS recommends that you purchase.
+    * The number of instances that Amazon Web Services recommends that you purchase.
     */
   var RecommendedNumberOfInstancesToPurchase: js.UndefOr[GenericString] = js.undefined
   

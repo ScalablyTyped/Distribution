@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("viz.js", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Viz {
     def this(arg: typings.vizJs.anon.Module) = this()

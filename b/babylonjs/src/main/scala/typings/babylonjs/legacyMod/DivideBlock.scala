@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "DivideBlock")
 @js.native
-class DivideBlock protected ()
+open class DivideBlock protected ()
   extends typings.babylonjs.indexMod.DivideBlock {
   /**
     * Creates a new DivideBlock

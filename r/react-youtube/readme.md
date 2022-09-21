@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-youtube
 
-Typings are for version 7.6
+Typings are for version 10.0.0
 
 ## Library description:
 React.js powered YouTube player component
@@ -10,10 +10,10 @@ React.js powered YouTube player component
 | ------------------ | :-------------: |
 | Full name          | react-youtube |
 | Keywords           | react, youtube, player, react-component |
-| # releases         | 22 |
-| # dependents       | 72 |
-| # downloads        | 4938530 |
-| # stars            | 7 |
+| # releases         | 41 |
+| # dependents       | 0.0 |
+| # downloads        | 865708.3333333334 |
+| # stars            | 1564.0 |
 
 ## Links
 - [Homepage](https://github.com/tjallingt/react-youtube)
@@ -24,7 +24,7 @@ React.js powered YouTube player component
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

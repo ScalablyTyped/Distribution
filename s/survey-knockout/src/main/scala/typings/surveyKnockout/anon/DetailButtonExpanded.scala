@@ -6,11 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DetailButtonExpanded extends StObject {
   
-  var button: String
-  
-  var buttonAdd: String
-  
-  var buttonRemove: String
+  var actionsCell: String
   
   var detailButton: String
   
@@ -24,51 +20,45 @@ trait DetailButtonExpanded extends StObject {
   
   var detailPanelCell: String
   
-  var flowRoot: String
+  var detailRow: String
+  
+  var detailRowText: String
   
   var headerCell: String
   
-  var iconAdd: String
-  
-  var iconRemove: String
-  
   var itemValue: String
   
-  var mainRoot: String
-  
   var root: String
+  
+  var row: String
+  
+  var rowAdditional: String
 }
 object DetailButtonExpanded {
   
   inline def apply(
-    button: String,
-    buttonAdd: String,
-    buttonRemove: String,
+    actionsCell: String,
     detailButton: String,
     detailButtonExpanded: String,
     detailCell: String,
     detailIcon: String,
     detailIconExpanded: String,
     detailPanelCell: String,
-    flowRoot: String,
+    detailRow: String,
+    detailRowText: String,
     headerCell: String,
-    iconAdd: String,
-    iconRemove: String,
     itemValue: String,
-    mainRoot: String,
-    root: String
+    root: String,
+    row: String,
+    rowAdditional: String
   ): DetailButtonExpanded = {
-    val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], buttonAdd = buttonAdd.asInstanceOf[js.Any], buttonRemove = buttonRemove.asInstanceOf[js.Any], detailButton = detailButton.asInstanceOf[js.Any], detailButtonExpanded = detailButtonExpanded.asInstanceOf[js.Any], detailCell = detailCell.asInstanceOf[js.Any], detailIcon = detailIcon.asInstanceOf[js.Any], detailIconExpanded = detailIconExpanded.asInstanceOf[js.Any], detailPanelCell = detailPanelCell.asInstanceOf[js.Any], flowRoot = flowRoot.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], iconAdd = iconAdd.asInstanceOf[js.Any], iconRemove = iconRemove.asInstanceOf[js.Any], itemValue = itemValue.asInstanceOf[js.Any], mainRoot = mainRoot.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(actionsCell = actionsCell.asInstanceOf[js.Any], detailButton = detailButton.asInstanceOf[js.Any], detailButtonExpanded = detailButtonExpanded.asInstanceOf[js.Any], detailCell = detailCell.asInstanceOf[js.Any], detailIcon = detailIcon.asInstanceOf[js.Any], detailIconExpanded = detailIconExpanded.asInstanceOf[js.Any], detailPanelCell = detailPanelCell.asInstanceOf[js.Any], detailRow = detailRow.asInstanceOf[js.Any], detailRowText = detailRowText.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], itemValue = itemValue.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], rowAdditional = rowAdditional.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetailButtonExpanded]
   }
   
   extension [Self <: DetailButtonExpanded](x: Self) {
     
-    inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
-    
-    inline def setButtonAdd(value: String): Self = StObject.set(x, "buttonAdd", value.asInstanceOf[js.Any])
-    
-    inline def setButtonRemove(value: String): Self = StObject.set(x, "buttonRemove", value.asInstanceOf[js.Any])
+    inline def setActionsCell(value: String): Self = StObject.set(x, "actionsCell", value.asInstanceOf[js.Any])
     
     inline def setDetailButton(value: String): Self = StObject.set(x, "detailButton", value.asInstanceOf[js.Any])
     
@@ -82,18 +72,18 @@ object DetailButtonExpanded {
     
     inline def setDetailPanelCell(value: String): Self = StObject.set(x, "detailPanelCell", value.asInstanceOf[js.Any])
     
-    inline def setFlowRoot(value: String): Self = StObject.set(x, "flowRoot", value.asInstanceOf[js.Any])
+    inline def setDetailRow(value: String): Self = StObject.set(x, "detailRow", value.asInstanceOf[js.Any])
+    
+    inline def setDetailRowText(value: String): Self = StObject.set(x, "detailRowText", value.asInstanceOf[js.Any])
     
     inline def setHeaderCell(value: String): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
     
-    inline def setIconAdd(value: String): Self = StObject.set(x, "iconAdd", value.asInstanceOf[js.Any])
-    
-    inline def setIconRemove(value: String): Self = StObject.set(x, "iconRemove", value.asInstanceOf[js.Any])
-    
     inline def setItemValue(value: String): Self = StObject.set(x, "itemValue", value.asInstanceOf[js.Any])
     
-    inline def setMainRoot(value: String): Self = StObject.set(x, "mainRoot", value.asInstanceOf[js.Any])
-    
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    
+    inline def setRowAdditional(value: String): Self = StObject.set(x, "rowAdditional", value.asInstanceOf[js.Any])
   }
 }

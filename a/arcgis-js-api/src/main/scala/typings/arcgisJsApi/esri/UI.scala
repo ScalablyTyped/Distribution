@@ -19,26 +19,26 @@ trait UI
   extends StObject
      with Accessor {
   
-  def add(component: String): Unit = js.native
-  def add(component: String, position: String): Unit = js.native
-  def add(component: String, position: UIAddPosition): Unit = js.native
-  def add(component: js.Array[js.Any]): Unit = js.native
-  def add(component: js.Array[js.Any], position: String): Unit = js.native
-  def add(component: js.Array[js.Any], position: UIAddPosition): Unit = js.native
-  def add(component: UIAddComponent): Unit = js.native
-  def add(component: UIAddComponent, position: String): Unit = js.native
-  def add(component: UIAddComponent, position: UIAddPosition): Unit = js.native
+  def add(component: String): scala.Unit = js.native
+  def add(component: String, position: String): scala.Unit = js.native
+  def add(component: String, position: UIAddPosition): scala.Unit = js.native
+  def add(component: js.Array[Any]): scala.Unit = js.native
+  def add(component: js.Array[Any], position: String): scala.Unit = js.native
+  def add(component: js.Array[Any], position: UIAddPosition): scala.Unit = js.native
+  def add(component: UIAddComponent): scala.Unit = js.native
+  def add(component: UIAddComponent, position: String): scala.Unit = js.native
+  def add(component: UIAddComponent, position: UIAddPosition): scala.Unit = js.native
   /**
     * Adds one or more HTML component(s) or [widgets](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html) to the UI.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#add)
     */
-  def add(component: Widget_): Unit = js.native
-  def add(component: Widget_, position: String): Unit = js.native
-  def add(component: Widget_, position: UIAddPosition): Unit = js.native
-  def add(component: HTMLElement): Unit = js.native
-  def add(component: HTMLElement, position: String): Unit = js.native
-  def add(component: HTMLElement, position: UIAddPosition): Unit = js.native
+  def add(component: Widget_): scala.Unit = js.native
+  def add(component: Widget_, position: String): scala.Unit = js.native
+  def add(component: Widget_, position: UIAddPosition): scala.Unit = js.native
+  def add(component: HTMLElement): scala.Unit = js.native
+  def add(component: HTMLElement, position: String): scala.Unit = js.native
+  def add(component: HTMLElement, position: UIAddPosition): scala.Unit = js.native
   
   /**
     * The HTML Element that contains the view.
@@ -52,25 +52,10 @@ trait UI
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#empty)
     */
-  def empty(): Unit = js.native
-  @JSName("empty")
-  def empty_bottomleading(position: `bottom-leading`): Unit = js.native
-  @JSName("empty")
-  def empty_bottomleft(position: `bottom-left`): Unit = js.native
-  @JSName("empty")
-  def empty_bottomright(position: `bottom-right`): Unit = js.native
-  @JSName("empty")
-  def empty_bottomtrailing(position: `bottom-trailing`): Unit = js.native
-  @JSName("empty")
-  def empty_manual(position: manual): Unit = js.native
-  @JSName("empty")
-  def empty_topleading(position: `top-leading`): Unit = js.native
-  @JSName("empty")
-  def empty_topleft(position: `top-left`): Unit = js.native
-  @JSName("empty")
-  def empty_topright(position: `top-right`): Unit = js.native
-  @JSName("empty")
-  def empty_toptrailing(position: `top-trailing`): Unit = js.native
+  def empty(): scala.Unit = js.native
+  def empty(
+    position: `bottom-leading` | `bottom-left` | `bottom-right` | `bottom-trailing` | `top-leading` | `top-left` | `top-right` | `top-trailing` | manual
+  ): scala.Unit = js.native
   
   /**
     * Find a component by widget or DOM ID.
@@ -86,43 +71,45 @@ trait UI
     */
   val height: Double = js.native
   
-  def move(component: String): Unit = js.native
-  def move(component: String, position: String): Unit = js.native
-  def move(component: String, position: UIMovePosition): Unit = js.native
-  def move(component: js.Array[js.Any]): Unit = js.native
-  def move(component: js.Array[js.Any], position: String): Unit = js.native
-  def move(component: js.Array[js.Any], position: UIMovePosition): Unit = js.native
-  def move(component: UIMoveComponent): Unit = js.native
-  def move(component: UIMoveComponent, position: String): Unit = js.native
-  def move(component: UIMoveComponent, position: UIMovePosition): Unit = js.native
+  def move(component: String): scala.Unit = js.native
+  def move(component: String, position: String): scala.Unit = js.native
+  def move(component: String, position: UIMovePosition): scala.Unit = js.native
+  def move(component: js.Array[Any]): scala.Unit = js.native
+  def move(component: js.Array[Any], position: String): scala.Unit = js.native
+  def move(component: js.Array[Any], position: UIMovePosition): scala.Unit = js.native
+  def move(component: UIMoveComponent): scala.Unit = js.native
+  def move(component: UIMoveComponent, position: String): scala.Unit = js.native
+  def move(component: UIMoveComponent, position: UIMovePosition): scala.Unit = js.native
   /**
     * Moves one or more UI component(s) to the specified position.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#move)
     */
-  def move(component: Widget_): Unit = js.native
-  def move(component: Widget_, position: String): Unit = js.native
-  def move(component: Widget_, position: UIMovePosition): Unit = js.native
-  def move(component: HTMLElement): Unit = js.native
-  def move(component: HTMLElement, position: String): Unit = js.native
-  def move(component: HTMLElement, position: UIMovePosition): Unit = js.native
+  def move(component: Widget_): scala.Unit = js.native
+  def move(component: Widget_, position: String): scala.Unit = js.native
+  def move(component: Widget_, position: UIMovePosition): scala.Unit = js.native
+  def move(component: HTMLElement): scala.Unit = js.native
+  def move(component: HTMLElement, position: String): scala.Unit = js.native
+  def move(component: HTMLElement, position: UIMovePosition): scala.Unit = js.native
   
   /**
     * Defines the padding for the UI from the top, left, right, and bottom sides of the container or [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
     *
+    * @default { left: 15, top: 15, right: 15, bottom: 15 }
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#padding)
     */
-  var padding: js.Any | Double = js.native
+  var padding: Any | Double = js.native
   
-  def remove(component: String): Unit = js.native
-  def remove(component: js.Array[js.Any]): Unit = js.native
+  def remove(component: String): scala.Unit = js.native
+  def remove(component: js.Array[Any]): scala.Unit = js.native
   /**
     * Removes one or more HTML component(s) or [widgets](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html) from the UI.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#remove)
     */
-  def remove(component: Widget_): Unit = js.native
-  def remove(component: HTMLElement): Unit = js.native
+  def remove(component: Widget_): scala.Unit = js.native
+  def remove(component: HTMLElement): scala.Unit = js.native
   
   /**
     * The view associated with the UI components.

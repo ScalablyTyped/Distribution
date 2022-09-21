@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter-js", "Pairs")
 @js.native
-class Pairs () extends StObject
+open class Pairs () extends StObject
 /* static members */
 object Pairs {
   
@@ -17,8 +17,25 @@ object Pairs {
   /**
     * Clears the given pairs structure.
     * @method clear
-    * @param {pairs} pairs
-    * @return {pairs} pairs
+    * @param {Pairs} pairs
+    * @returns {Pairs} pairs
     */
-  inline def clear(pairs: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(pairs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def clear(pairs: Pairs): Pairs = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(pairs.asInstanceOf[js.Any]).asInstanceOf[Pairs]
+  
+  /**
+    * Creates a new pairs structure.
+    * @method create
+    * @param {any} options
+    * @returns {Pairs} A new pairs structure
+    */
+  inline def create(options: Any): Pairs = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Pairs]
+  
+  /**
+    * Updates pairs given a list of collisions.
+    * @method update
+    * @param {Pairs} pairs
+    * @param {Collision[]} collisions
+    * @param {number} timestamp
+    */
+  inline def update(pairs: Pairs, collisions: js.Array[Collision], timestamp: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(pairs.asInstanceOf[js.Any], collisions.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -75,7 +75,7 @@ object engine {
       * @param type String The type of the SVG DOM element.
       * @returns * The created element.
       */
-    var createSvgNode: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], js.Any]] = js.undefined
+    var createSvgNode: js.UndefOr[js.Function1[/* type */ js.UndefOr[String], Any]] = js.undefined
     
     /** [Method] Destroys the Canvas element and prepares it for Garbage Collection
       * @param path Object
@@ -85,9 +85,9 @@ object engine {
     @JSName("destroy")
     var destroy_ISvg: js.UndefOr[
         js.Function3[
-          /* path */ js.UndefOr[js.Any], 
-          /* matrix */ js.UndefOr[js.Any], 
-          /* band */ js.UndefOr[js.Any], 
+          /* path */ js.UndefOr[Any], 
+          /* matrix */ js.UndefOr[Any], 
+          /* band */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -106,7 +106,7 @@ object engine {
       */
     @JSName("remove")
     var remove_ISvg: js.UndefOr[
-        js.Function2[/* sprite */ js.UndefOr[js.Any], /* destroySprite */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* sprite */ js.UndefOr[Any], /* destroySprite */ js.UndefOr[Any], Unit]
       ] = js.undefined
     
     /** [Method] Renders a single sprite into the surface
@@ -133,12 +133,12 @@ object engine {
       
       inline def setClearTransformUndefined: Self = StObject.set(x, "clearTransform", js.undefined)
       
-      inline def setCreateSvgNode(value: /* type */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "createSvgNode", js.Any.fromFunction1(value))
+      inline def setCreateSvgNode(value: /* type */ js.UndefOr[String] => Any): Self = StObject.set(x, "createSvgNode", js.Any.fromFunction1(value))
       
       inline def setCreateSvgNodeUndefined: Self = StObject.set(x, "createSvgNode", js.undefined)
       
       inline def setDestroy(
-        value: (/* path */ js.UndefOr[js.Any], /* matrix */ js.UndefOr[js.Any], /* band */ js.UndefOr[js.Any]) => Unit
+        value: (/* path */ js.UndefOr[Any], /* matrix */ js.UndefOr[Any], /* band */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "destroy", js.Any.fromFunction3(value))
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
@@ -151,7 +151,7 @@ object engine {
       
       inline def setHighPrecisionUndefined: Self = StObject.set(x, "highPrecision", js.undefined)
       
-      inline def setRemove(value: (/* sprite */ js.UndefOr[js.Any], /* destroySprite */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (/* sprite */ js.UndefOr[Any], /* destroySprite */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
       inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
@@ -374,7 +374,7 @@ object engine {
       * @param transformFillStroke Boolean Indicate whether to transform fill and stroke. If this is not given, then uses attr.transformFillStroke instead.
       */
     var fillStroke: js.UndefOr[
-        js.Function2[/* attr */ js.UndefOr[js.Any], /* transformFillStroke */ js.UndefOr[Boolean], Unit]
+        js.Function2[/* attr */ js.UndefOr[Any], /* transformFillStroke */ js.UndefOr[Boolean], Unit]
       ] = js.undefined
     
     /** [Method] Fills the given text at the given position
@@ -575,7 +575,7 @@ object engine {
       
       inline def setFillRectUndefined: Self = StObject.set(x, "fillRect", js.undefined)
       
-      inline def setFillStroke(value: (/* attr */ js.UndefOr[js.Any], /* transformFillStroke */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "fillStroke", js.Any.fromFunction2(value))
+      inline def setFillStroke(value: (/* attr */ js.UndefOr[Any], /* transformFillStroke */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "fillStroke", js.Any.fromFunction2(value))
       
       inline def setFillStrokeUndefined: Self = StObject.set(x, "fillStroke", js.undefined)
       

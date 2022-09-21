@@ -10,10 +10,10 @@ A function for loading CSS asynchronously
 | ------------------ | :-------------: |
 | Full name          | fg-loadcss |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 36 |
-| # downloads        | 2376209 |
-| # stars            | 10 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 223888.33333333334 |
+| # stars            | 6760.0 |
 
 ## Links
 - [Homepage](https://github.com/filamentgroup/loadCSS)

@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructor
   * @param opt_options {(H.map.SpatialStyle | H.map.SpatialStyle.Options)=} - The optional style attributes
   */
-class SpatialStyle ()
+open class SpatialStyle ()
   extends StObject
      with typings.heremaps.H.map.SpatialStyle {
   def this(opt_options: typings.heremaps.H.map.SpatialStyle) = this()

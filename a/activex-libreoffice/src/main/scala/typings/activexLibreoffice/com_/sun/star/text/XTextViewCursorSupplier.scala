@@ -28,7 +28,7 @@ object XTextViewCursorSupplier {
     ViewCursor: XTextViewCursor,
     acquire: () => Unit,
     getViewCursor: () => XTextViewCursor,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTextViewCursorSupplier = {
     val __obj = js.Dynamic.literal(ViewCursor = ViewCursor.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getViewCursor = js.Any.fromFunction0(getViewCursor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

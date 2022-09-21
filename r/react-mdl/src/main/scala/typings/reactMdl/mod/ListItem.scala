@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "ListItem")
 @js.native
-class ListItem protected () extends _MDLComponent[ListItemProps] {
+open class ListItem protected () extends _MDLComponent[ListItemProps] {
   def this(props: ListItemProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ListItemProps, context: js.Any) = this()
+  def this(props: ListItemProps, context: Any) = this()
 }

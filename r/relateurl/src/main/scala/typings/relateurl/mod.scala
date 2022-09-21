@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("relateurl", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with RelateUrl {
     def this(from: String) = this()
@@ -166,7 +166,7 @@ object mod {
       
       inline def setDirectoryIndexesUndefined: Self = StObject.set(x, "directoryIndexes", js.undefined)
       
-      inline def setDirectoryIndexesVarargs(value: String*): Self = StObject.set(x, "directoryIndexes", js.Array(value :_*))
+      inline def setDirectoryIndexesVarargs(value: String*): Self = StObject.set(x, "directoryIndexes", js.Array(value*))
       
       inline def setIgnore_www(value: Boolean): Self = StObject.set(x, "ignore_www", value.asInstanceOf[js.Any])
       
@@ -180,7 +180,7 @@ object mod {
       
       inline def setRejectedSchemesUndefined: Self = StObject.set(x, "rejectedSchemes", js.undefined)
       
-      inline def setRejectedSchemesVarargs(value: String*): Self = StObject.set(x, "rejectedSchemes", js.Array(value :_*))
+      inline def setRejectedSchemesVarargs(value: String*): Self = StObject.set(x, "rejectedSchemes", js.Array(value*))
       
       inline def setRemoveAuth(value: Boolean): Self = StObject.set(x, "removeAuth", value.asInstanceOf[js.Any])
       

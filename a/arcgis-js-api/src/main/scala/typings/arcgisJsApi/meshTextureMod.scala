@@ -22,7 +22,7 @@ object meshTextureMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with MeshTexture {
     def this(properties: MeshTextureProperties) = this()

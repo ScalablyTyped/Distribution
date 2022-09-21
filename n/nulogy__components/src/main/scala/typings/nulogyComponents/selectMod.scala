@@ -8,5 +8,5 @@ object selectMod {
   
   @JSImport("@nulogy/components/src/Select", "Select")
   @js.native
-  val Select: js.Any = js.native
+  val Select: Any = js.native
 }

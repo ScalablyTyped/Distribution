@@ -10,10 +10,10 @@ AsyncResource integration for EventEmitter
 | ------------------ | :-------------: |
 | Full name          | eventemitter-asyncresource |
 | Keywords           | EventEmitter, AsyncResource, async_hooks, events |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 146068 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4759451.333333333 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/addaleax/eventemitter-asyncresource#readme)

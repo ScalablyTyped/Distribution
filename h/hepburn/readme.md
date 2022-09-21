@@ -10,10 +10,10 @@ Convert Japanese Hiragana and Katakana script to, and from, Romaji using Hepburn
 | ------------------ | :-------------: |
 | Full name          | hepburn |
 | Keywords           | japanese, hiragana, katakana, romaji, kana |
-| # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 405702 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 54703.666666666664 |
+| # stars            | 105.0 |
 
 ## Links
 - [Homepage](https://github.com/lovell/hepburn#readme)

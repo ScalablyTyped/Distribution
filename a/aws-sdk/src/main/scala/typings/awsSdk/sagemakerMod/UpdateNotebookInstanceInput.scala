@@ -12,12 +12,12 @@ trait UpdateNotebookInstanceInput extends StObject {
   var AcceleratorTypes: js.UndefOr[NotebookInstanceAcceleratorTypes] = js.undefined
   
   /**
-    * An array of up to three Git repositories to associate with the notebook instance. These can be either the names of Git repositories stored as resources in your account, or the URL of Git repositories in AWS CodeCommit or in any other Git repository. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
+    * An array of up to three Git repositories to associate with the notebook instance. These can be either the names of Git repositories stored as resources in your account, or the URL of Git repositories in Amazon Web Services CodeCommit or in any other Git repository. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see Associating Git Repositories with SageMaker Notebook Instances.
     */
   var AdditionalCodeRepositories: js.UndefOr[AdditionalCodeRepositoryNamesOrUrls] = js.undefined
   
   /**
-    * The Git repository to associate with the notebook instance as its default code repository. This can be either the name of a Git repository stored as a resource in your account, or the URL of a Git repository in AWS CodeCommit or in any other Git repository. When you open a notebook instance, it opens in the directory that contains this repository. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
+    * The Git repository to associate with the notebook instance as its default code repository. This can be either the name of a Git repository stored as a resource in your account, or the URL of a Git repository in Amazon Web Services CodeCommit or in any other Git repository. When you open a notebook instance, it opens in the directory that contains this repository. For more information, see Associating Git Repositories with SageMaker Notebook Instances.
     */
   var DefaultCodeRepository: js.UndefOr[CodeRepositoryNameOrUrl] = js.undefined
   
@@ -42,6 +42,11 @@ trait UpdateNotebookInstanceInput extends StObject {
   var DisassociateLifecycleConfig: js.UndefOr[DisassociateNotebookInstanceLifecycleConfig] = js.undefined
   
   /**
+    * Information on the IMDS configuration of the notebook instance
+    */
+  var InstanceMetadataServiceConfiguration: js.UndefOr[typings.awsSdk.sagemakerMod.InstanceMetadataServiceConfiguration] = js.undefined
+  
+  /**
     * The Amazon ML compute instance type.
     */
   var InstanceType: js.UndefOr[typings.awsSdk.sagemakerMod.InstanceType] = js.undefined
@@ -57,7 +62,7 @@ trait UpdateNotebookInstanceInput extends StObject {
   var NotebookInstanceName: typings.awsSdk.sagemakerMod.NotebookInstanceName
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role that Amazon SageMaker can assume to access the notebook instance. For more information, see Amazon SageMaker Roles.   To be able to pass this role to Amazon SageMaker, the caller of this API must have the iam:PassRole permission. 
+    * The Amazon Resource Name (ARN) of the IAM role that SageMaker can assume to access the notebook instance. For more information, see SageMaker Roles.   To be able to pass this role to SageMaker, the caller of this API must have the iam:PassRole permission. 
     */
   var RoleArn: js.UndefOr[typings.awsSdk.sagemakerMod.RoleArn] = js.undefined
   
@@ -67,7 +72,7 @@ trait UpdateNotebookInstanceInput extends StObject {
   var RootAccess: js.UndefOr[typings.awsSdk.sagemakerMod.RootAccess] = js.undefined
   
   /**
-    * The size, in GB, of the ML storage volume to attach to the notebook instance. The default value is 5 GB. ML storage volumes are encrypted, so Amazon SageMaker can't determine the amount of available free space on the volume. Because of this, you can increase the volume size when you update a notebook instance, but you can't decrease the volume size. If you want to decrease the size of the ML storage volume in use, create a new notebook instance with the desired size.
+    * The size, in GB, of the ML storage volume to attach to the notebook instance. The default value is 5 GB. ML storage volumes are encrypted, so SageMaker can't determine the amount of available free space on the volume. Because of this, you can increase the volume size when you update a notebook instance, but you can't decrease the volume size. If you want to decrease the size of the ML storage volume in use, create a new notebook instance with the desired size.
     */
   var VolumeSizeInGB: js.UndefOr[NotebookInstanceVolumeSizeInGB] = js.undefined
 }
@@ -84,13 +89,13 @@ object UpdateNotebookInstanceInput {
     
     inline def setAcceleratorTypesUndefined: Self = StObject.set(x, "AcceleratorTypes", js.undefined)
     
-    inline def setAcceleratorTypesVarargs(value: NotebookInstanceAcceleratorType*): Self = StObject.set(x, "AcceleratorTypes", js.Array(value :_*))
+    inline def setAcceleratorTypesVarargs(value: NotebookInstanceAcceleratorType*): Self = StObject.set(x, "AcceleratorTypes", js.Array(value*))
     
     inline def setAdditionalCodeRepositories(value: AdditionalCodeRepositoryNamesOrUrls): Self = StObject.set(x, "AdditionalCodeRepositories", value.asInstanceOf[js.Any])
     
     inline def setAdditionalCodeRepositoriesUndefined: Self = StObject.set(x, "AdditionalCodeRepositories", js.undefined)
     
-    inline def setAdditionalCodeRepositoriesVarargs(value: CodeRepositoryNameOrUrl*): Self = StObject.set(x, "AdditionalCodeRepositories", js.Array(value :_*))
+    inline def setAdditionalCodeRepositoriesVarargs(value: CodeRepositoryNameOrUrl*): Self = StObject.set(x, "AdditionalCodeRepositories", js.Array(value*))
     
     inline def setDefaultCodeRepository(value: CodeRepositoryNameOrUrl): Self = StObject.set(x, "DefaultCodeRepository", value.asInstanceOf[js.Any])
     
@@ -111,6 +116,10 @@ object UpdateNotebookInstanceInput {
     inline def setDisassociateLifecycleConfig(value: DisassociateNotebookInstanceLifecycleConfig): Self = StObject.set(x, "DisassociateLifecycleConfig", value.asInstanceOf[js.Any])
     
     inline def setDisassociateLifecycleConfigUndefined: Self = StObject.set(x, "DisassociateLifecycleConfig", js.undefined)
+    
+    inline def setInstanceMetadataServiceConfiguration(value: InstanceMetadataServiceConfiguration): Self = StObject.set(x, "InstanceMetadataServiceConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceMetadataServiceConfigurationUndefined: Self = StObject.set(x, "InstanceMetadataServiceConfiguration", js.undefined)
     
     inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,6 @@
 package typings.htmlWebpackPlugin
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.htmlWebpackPlugin.mod.HtmlTagObject
 import typings.htmlWebpackPlugin.mod.HtmlWebpackPlugin
 import typings.htmlWebpackPlugin.mod.Options
@@ -16,11 +17,13 @@ object anon {
     var outputName: String
     
     var plugin: HtmlWebpackPlugin
+    
+    var publicPath: String
   }
   object AssetTags {
     
-    inline def apply(assetTags: Meta, outputName: String, plugin: HtmlWebpackPlugin): AssetTags = {
-      val __obj = js.Dynamic.literal(assetTags = assetTags.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
+    inline def apply(assetTags: Meta, outputName: String, plugin: HtmlWebpackPlugin, publicPath: String): AssetTags = {
+      val __obj = js.Dynamic.literal(assetTags = assetTags.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any], publicPath = publicPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssetTags]
     }
     
@@ -31,6 +34,8 @@ object anon {
       inline def setOutputName(value: String): Self = StObject.set(x, "outputName", value.asInstanceOf[js.Any])
       
       inline def setPlugin(value: HtmlWebpackPlugin): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,11 +81,11 @@ object anon {
       
       inline def setBodyTags(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "bodyTags", value.asInstanceOf[js.Any])
       
-      inline def setBodyTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "bodyTags", js.Array(value :_*))
+      inline def setBodyTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "bodyTags", js.Array(value*))
       
       inline def setHeadTags(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "headTags", value.asInstanceOf[js.Any])
       
-      inline def setHeadTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "headTags", js.Array(value :_*))
+      inline def setHeadTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "headTags", js.Array(value*))
     }
   }
   
@@ -109,7 +114,7 @@ object anon {
       
       inline def setCss(value: js.Array[String]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value :_*))
+      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value*))
       
       inline def setFavicon(value: String): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
       
@@ -117,13 +122,38 @@ object anon {
       
       inline def setJs_(value: js.Array[String]): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
       
-      inline def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value :_*))
+      inline def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value*))
       
       inline def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
       inline def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
       
       inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DictmetaAttributeName
+    extends StObject
+       with /**
+    * In addition to the options actually used by this plugin, you can use this hash to pass arbitrary data through
+    * to your template.
+    */
+  /* option */ StringDictionary[Any] {
+    
+    var plugin: js.UndefOr[String] = js.undefined
+  }
+  object DictmetaAttributeName {
+    
+    inline def apply(): DictmetaAttributeName = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DictmetaAttributeName]
+    }
+    
+    extension [Self <: DictmetaAttributeName](x: Self) {
+      
+      inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      
+      inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
     }
   }
   
@@ -152,7 +182,7 @@ object anon {
       
       inline def setCss(value: js.Array[String]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value :_*))
+      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value*))
       
       inline def setFavicon(value: String): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
       
@@ -160,7 +190,7 @@ object anon {
       
       inline def setJs_(value: js.Array[String]): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
       
-      inline def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value :_*))
+      inline def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value*))
       
       inline def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
@@ -204,6 +234,8 @@ object anon {
     var outputName: String
     
     var plugin: HtmlWebpackPlugin
+    
+    var publicPath: String
   }
   object HeadTags {
     
@@ -211,9 +243,10 @@ object anon {
       bodyTags: js.Array[HtmlTagObject],
       headTags: js.Array[HtmlTagObject],
       outputName: String,
-      plugin: HtmlWebpackPlugin
+      plugin: HtmlWebpackPlugin,
+      publicPath: String
     ): HeadTags = {
-      val __obj = js.Dynamic.literal(bodyTags = bodyTags.asInstanceOf[js.Any], headTags = headTags.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bodyTags = bodyTags.asInstanceOf[js.Any], headTags = headTags.asInstanceOf[js.Any], outputName = outputName.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any], publicPath = publicPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeadTags]
     }
     
@@ -221,15 +254,17 @@ object anon {
       
       inline def setBodyTags(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "bodyTags", value.asInstanceOf[js.Any])
       
-      inline def setBodyTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "bodyTags", js.Array(value :_*))
+      inline def setBodyTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "bodyTags", js.Array(value*))
       
       inline def setHeadTags(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "headTags", value.asInstanceOf[js.Any])
       
-      inline def setHeadTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "headTags", js.Array(value :_*))
+      inline def setHeadTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "headTags", js.Array(value*))
       
       inline def setOutputName(value: String): Self = StObject.set(x, "outputName", value.asInstanceOf[js.Any])
       
       inline def setPlugin(value: HtmlWebpackPlugin): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      
+      inline def setPublicPath(value: String): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -262,11 +297,11 @@ object anon {
       
       inline def setBodyTags(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "bodyTags", value.asInstanceOf[js.Any])
       
-      inline def setBodyTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "bodyTags", js.Array(value :_*))
+      inline def setBodyTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "bodyTags", js.Array(value*))
       
       inline def setHeadTags(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "headTags", value.asInstanceOf[js.Any])
       
-      inline def setHeadTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "headTags", js.Array(value :_*))
+      inline def setHeadTagsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "headTags", js.Array(value*))
       
       inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -295,15 +330,15 @@ object anon {
       
       inline def setMeta(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      inline def setMetaVarargs(value: HtmlTagObject*): Self = StObject.set(x, "meta", js.Array(value :_*))
+      inline def setMetaVarargs(value: HtmlTagObject*): Self = StObject.set(x, "meta", js.Array(value*))
       
       inline def setScripts(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       
-      inline def setScriptsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "scripts", js.Array(value :_*))
+      inline def setScriptsVarargs(value: HtmlTagObject*): Self = StObject.set(x, "scripts", js.Array(value*))
       
       inline def setStyles(value: js.Array[HtmlTagObject]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      inline def setStylesVarargs(value: HtmlTagObject*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: HtmlTagObject*): Self = StObject.set(x, "styles", js.Array(value*))
     }
   }
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TeamDriveInfo extends StObject {
   
-  /** List of Team Drive IDs, as provided by Drive API. */
+  /** List of Team Drive IDs, as provided by the [Drive API](https://developers.google.com/drive). */
   var teamDriveIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object TeamDriveInfo {
@@ -22,6 +22,6 @@ object TeamDriveInfo {
     
     inline def setTeamDriveIdsUndefined: Self = StObject.set(x, "teamDriveIds", js.undefined)
     
-    inline def setTeamDriveIdsVarargs(value: String*): Self = StObject.set(x, "teamDriveIds", js.Array(value :_*))
+    inline def setTeamDriveIdsVarargs(value: String*): Self = StObject.set(x, "teamDriveIds", js.Array(value*))
   }
 }

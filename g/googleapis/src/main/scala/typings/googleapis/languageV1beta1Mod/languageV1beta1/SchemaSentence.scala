@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a sentence in the input document.
-  */
 trait SchemaSentence extends StObject {
   
   /**
-    * For calls to AnalyzeSentiment or if
-    * AnnotateTextRequest.Features.extract_document_sentiment is set to true,
-    * this field will contain the sentiment for the sentence.
+    * For calls to AnalyzeSentiment or if AnnotateTextRequest.Features.extract_document_sentiment is set to true, this field will contain the sentiment for the sentence.
     */
   var sentiment: js.UndefOr[SchemaSentiment] = js.undefined
   

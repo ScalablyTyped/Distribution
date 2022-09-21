@@ -1,6 +1,6 @@
 package typings.googleapis.anon
 
-import typings.googleapis.v31Mod.dfareportingV31.SchemaRecipient
+import typings.googleapis.v33Mod.dfareportingV33.SchemaRecipient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,6 +40,6 @@ object EmailOwner {
     
     inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
-    inline def setRecipientsVarargs(value: SchemaRecipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: SchemaRecipient*): Self = StObject.set(x, "recipients", js.Array(value*))
   }
 }

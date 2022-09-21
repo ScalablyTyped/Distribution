@@ -10,10 +10,10 @@ React Native Popup Dialog for IOS & Android.
 | ------------------ | :-------------: |
 | Full name          | react-native-popup-dialog |
 | Keywords           | dialog, popup, react dialog, react-native, react-native-popup-dialog, react-native-dialog, react native dialog, popup-dialog, react-component, ios, android |
-| # releases         | 8 |
-| # dependents       | 32 |
-| # downloads        | 351224 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 23103.0 |
+| # stars            | 2062.0 |
 
 ## Links
 - [Homepage](https://github.com/jacklam718/react-native-popup-dialog/blob/master/README.md)

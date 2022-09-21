@@ -56,7 +56,7 @@ object randomMod {
       
       inline def setLowerBounds(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "lowerBounds", value.asInstanceOf[js.Any])
       
-      inline def setLowerBoundsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "lowerBounds", js.Array(value :_*))
+      inline def setLowerBoundsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "lowerBounds", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

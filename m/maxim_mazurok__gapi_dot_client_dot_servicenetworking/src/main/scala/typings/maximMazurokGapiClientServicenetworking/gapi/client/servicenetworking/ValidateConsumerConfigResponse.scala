@@ -6,8 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ValidateConsumerConfigResponse extends StObject {
   
+  /** List of subnetwork candidates from the request which exist with the `ip_cidr_range`, `secondary_ip_cider_ranges`, and `outside_allocation` fields set. */
+  var existingSubnetworkCandidates: js.UndefOr[js.Array[Subnetwork]] = js.undefined
+  
+  /** Indicates whether all the requested validations passed. */
   var isValid: js.UndefOr[Boolean] = js.undefined
   
+  /** The first validation which failed. */
   var validationError: js.UndefOr[String] = js.undefined
 }
 object ValidateConsumerConfigResponse {
@@ -18,6 +23,12 @@ object ValidateConsumerConfigResponse {
   }
   
   extension [Self <: ValidateConsumerConfigResponse](x: Self) {
+    
+    inline def setExistingSubnetworkCandidates(value: js.Array[Subnetwork]): Self = StObject.set(x, "existingSubnetworkCandidates", value.asInstanceOf[js.Any])
+    
+    inline def setExistingSubnetworkCandidatesUndefined: Self = StObject.set(x, "existingSubnetworkCandidates", js.undefined)
+    
+    inline def setExistingSubnetworkCandidatesVarargs(value: Subnetwork*): Self = StObject.set(x, "existingSubnetworkCandidates", js.Array(value*))
     
     inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     

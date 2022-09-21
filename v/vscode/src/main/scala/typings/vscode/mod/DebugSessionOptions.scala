@@ -21,6 +21,13 @@ trait DebugSessionOptions extends StObject {
   var consoleMode: js.UndefOr[DebugConsoleMode] = js.undefined
   
   /**
+    * Controls whether lifecycle requests like 'restart' are sent to the newly created session or its parent session.
+    * By default (if the property is false or missing), lifecycle requests are sent to the new session.
+    * This property is ignored if the session has no parent session.
+    */
+  var lifecycleManagedByParent: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Controls whether this session should run without debugging, thus ignoring breakpoints.
     * When this property is not specified, the value from the parent session (if there is one) is used.
     */
@@ -48,6 +55,10 @@ object DebugSessionOptions {
     inline def setConsoleMode(value: DebugConsoleMode): Self = StObject.set(x, "consoleMode", value.asInstanceOf[js.Any])
     
     inline def setConsoleModeUndefined: Self = StObject.set(x, "consoleMode", js.undefined)
+    
+    inline def setLifecycleManagedByParent(value: Boolean): Self = StObject.set(x, "lifecycleManagedByParent", value.asInstanceOf[js.Any])
+    
+    inline def setLifecycleManagedByParentUndefined: Self = StObject.set(x, "lifecycleManagedByParent", js.undefined)
     
     inline def setNoDebug(value: Boolean): Self = StObject.set(x, "noDebug", value.asInstanceOf[js.Any])
     

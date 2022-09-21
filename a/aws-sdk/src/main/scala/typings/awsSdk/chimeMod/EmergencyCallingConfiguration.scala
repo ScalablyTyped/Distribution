@@ -24,6 +24,6 @@ object EmergencyCallingConfiguration {
     
     inline def setDNISUndefined: Self = StObject.set(x, "DNIS", js.undefined)
     
-    inline def setDNISVarargs(value: DNISEmergencyCallingConfiguration*): Self = StObject.set(x, "DNIS", js.Array(value :_*))
+    inline def setDNISVarargs(value: DNISEmergencyCallingConfiguration*): Self = StObject.set(x, "DNIS", js.Array(value*))
   }
 }

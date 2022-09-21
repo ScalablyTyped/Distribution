@@ -8,7 +8,7 @@ trait Misc extends StObject {
   
   var attr: Double
   
-  var misc: js.Any
+  var misc: Any
   
   var offset: Double
   
@@ -20,7 +20,7 @@ trait Misc extends StObject {
 }
 object Misc {
   
-  inline def apply(attr: Double, misc: js.Any, offset: Double, text: String, x: Double, y: Double): Misc = {
+  inline def apply(attr: Double, misc: Any, offset: Double, text: String, x: Double, y: Double): Misc = {
     val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], misc = misc.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Misc]
   }
@@ -29,7 +29,7 @@ object Misc {
     
     inline def setAttr(value: Double): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
-    inline def setMisc(value: js.Any): Self = StObject.set(x, "misc", value.asInstanceOf[js.Any])
+    inline def setMisc(value: Any): Self = StObject.set(x, "misc", value.asInstanceOf[js.Any])
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

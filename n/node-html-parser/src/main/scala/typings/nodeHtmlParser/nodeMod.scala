@@ -11,7 +11,11 @@ object nodeMod {
   @js.native
   abstract class default ()
     extends StObject
-       with Node
+       with Node {
+    def this(parentNode: typings.nodeHtmlParser.htmlMod.default) = this()
+    def this(parentNode: Unit, range: js.Tuple2[Double, Double]) = this()
+    def this(parentNode: typings.nodeHtmlParser.htmlMod.default, range: js.Tuple2[Double, Double]) = this()
+  }
   
   @js.native
   trait Node extends StObject {
@@ -22,8 +26,20 @@ object nodeMod {
     
     var nodeType: NodeType = js.native
     
+    var parentNode: typings.nodeHtmlParser.htmlMod.default = js.native
+    
+    var range: js.Tuple2[Double, Double] = js.native
+    
     var rawText: String = js.native
     
+    /**
+      * Remove current node
+      */
+    def remove(): this.type = js.native
+    
     var text: String = js.native
+    
+    def textContent: String = js.native
+    def textContent_=(`val`: String): Unit = js.native
   }
 }

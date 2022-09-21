@@ -61,7 +61,7 @@ object XDragSource {
     acquire: () => Unit,
     getDefaultCursor: Double => Double,
     isDragImageSupported: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     startDrag: (DragGestureEvent, Double, Double, Double, XTransferable, XDragSourceListener) => Unit
   ): XDragSource = {

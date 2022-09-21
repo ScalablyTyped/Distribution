@@ -22,7 +22,7 @@ object XItemEventBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addItemListener: XItemListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeItemListener: XItemListener => Unit
   ): XItemEventBroadcaster = {

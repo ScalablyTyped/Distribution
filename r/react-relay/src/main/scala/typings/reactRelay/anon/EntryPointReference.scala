@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EntryPointReference[TPreloadedEntryPoint /* <: PreloadedEntryPoint[js.Any] */] extends StObject {
+trait EntryPointReference[TPreloadedEntryPoint /* <: PreloadedEntryPoint[Any] */] extends StObject {
   
   var entryPointReference: TPreloadedEntryPoint
   
@@ -15,7 +15,7 @@ trait EntryPointReference[TPreloadedEntryPoint /* <: PreloadedEntryPoint[js.Any]
 }
 object EntryPointReference {
   
-  inline def apply[TPreloadedEntryPoint /* <: PreloadedEntryPoint[js.Any] */](
+  inline def apply[TPreloadedEntryPoint /* <: PreloadedEntryPoint[Any] */](
     entryPointReference: TPreloadedEntryPoint,
     props: GetRuntimePropsFromComponent[GetComponentFromPreloadedEntryPoint[TPreloadedEntryPoint]]
   ): EntryPointReference[TPreloadedEntryPoint] = {
@@ -23,7 +23,7 @@ object EntryPointReference {
     __obj.asInstanceOf[EntryPointReference[TPreloadedEntryPoint]]
   }
   
-  extension [Self <: EntryPointReference[?], TPreloadedEntryPoint /* <: PreloadedEntryPoint[js.Any] */](x: Self & EntryPointReference[TPreloadedEntryPoint]) {
+  extension [Self <: EntryPointReference[?], TPreloadedEntryPoint /* <: PreloadedEntryPoint[Any] */](x: Self & EntryPointReference[TPreloadedEntryPoint]) {
     
     inline def setEntryPointReference(value: TPreloadedEntryPoint): Self = StObject.set(x, "entryPointReference", value.asInstanceOf[js.Any])
     

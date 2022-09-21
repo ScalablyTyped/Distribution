@@ -50,9 +50,9 @@ trait PlotSunburstOptions extends StObject {
   var animation: js.UndefOr[Boolean | PlotSunburstAnimationOptions | PartialAnimationOptionsOb] = js.undefined
   
   /**
-    * (Highcharts) The color of the border surrounding each slice. When `null`,
-    * the border takes the same color as the slice fill. This can be used
-    * together with a `borderWidth` to fill drawing gaps created by
+    * (Highcharts, Highmaps) The color of the border surrounding each slice.
+    * When `null`, the border takes the same color as the slice fill. This can
+    * be used together with a `borderWidth` to fill drawing gaps created by
     * antialiazing artefacts in borderless pies.
     *
     * In styled mode, the border stroke is given in the `.highcharts-point`
@@ -61,7 +61,7 @@ trait PlotSunburstOptions extends StObject {
   var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
-    * (Highcharts) The width of the border surrounding each slice.
+    * (Highcharts, Highmaps) The width of the border surrounding each slice.
     *
     * When setting the border width to 0, there may be small gaps between the
     * slices due to SVG antialiasing artefacts. To work around this, keep the
@@ -71,6 +71,12 @@ trait PlotSunburstOptions extends StObject {
     * `.highcharts-point` class.
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts) Options for the breadcrumbs, the navigation at the top
+    * leading the way up through the traversed levels.
+    */
+  var breadcrumbs: js.UndefOr[PlotSunburstBreadcrumbsOptions] = js.undefined
   
   /**
     * (Highcharts) The center of the sunburst chart relative to the plot area.
@@ -108,8 +114,8 @@ trait PlotSunburstOptions extends StObject {
   var colorIndex: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts) A series specific or series type specific color set to use
-    * instead of the global colors.
+    * (Highcharts, Highmaps) A series specific or series type specific color
+    * set to use instead of the global colors.
     */
   var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.undefined
   
@@ -141,6 +147,15 @@ trait PlotSunburstOptions extends StObject {
   var crisp: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highstock) Cumulative Sum feature replaces points' values with the
+    * following formula: `sum of all previous points' values + current point's
+    * value`. Works only for points in a visible range. Adds the
+    * `cumulativeSum` field to each point object that can be accessed e.g. in
+    * the tooltip.pointFormat.
+    */
+  var cumulative: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts) You can set the cursor to "pointer" if you have click events
     * attached to the series, to signal to the user that the points and lines
     * can be clicked.
@@ -155,7 +170,12 @@ trait PlotSunburstOptions extends StObject {
     * customized functionality. Here you can add additional data for your own
     * event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
+  
+  /**
+    * (Highcharts) Indicates data is structured as columns instead of rows.
+    */
+  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
@@ -257,6 +277,12 @@ trait PlotSunburstOptions extends StObject {
   var linkedTo: js.UndefOr[String] = js.undefined
   
   /**
+    * (Highcharts) Options for the _Series on point_ feature. Only `pie` and
+    * `sunburst` series are supported at this moment.
+    */
+  var onPoint: js.UndefOr[js.Object | PlotSunburstOnPointOptions] = js.undefined
+  
+  /**
     * (Highcharts) Opacity of a series parts: line, fill (e.g. area) and
     * dataLabels.
     */
@@ -268,10 +294,22 @@ trait PlotSunburstOptions extends StObject {
   var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   
   /**
-    * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
-    * individual series. Overrides the chart wide configuration.
+    * (Highcharts) Same as accessibility.series.descriptionFormatter, but for
+    * an individual series. Overrides the chart wide configuration.
     */
   var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) When true, X values in the data set are relative
+    * to the current `pointStart`, `pointInterval` and `pointIntervalUnit`
+    * settings. This allows compression of the data for datasets with irregular
+    * X values.
+    *
+    * The real X values are computed on the formula `f(x) = ax + b`, where `a`
+    * is the `pointInterval` (optionally with a time unit given by
+    * `pointIntervalUnit`), and `b` is the `pointStart`.
+    */
+  var relativeXValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Which point to use as a root in the visualization.
@@ -300,8 +338,9 @@ trait PlotSunburstOptions extends StObject {
   var showCheckbox: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) Whether to display this particular series or series type in
-    * the legend. Since 2.1, pies are not shown in the legend by default.
+    * (Highcharts, Highmaps) Whether to display this particular series or
+    * series type in the legend. Since 2.1, pies are not shown in the legend by
+    * default.
     */
   var showInLegend: js.UndefOr[Boolean] = js.undefined
   
@@ -312,13 +351,13 @@ trait PlotSunburstOptions extends StObject {
   var showInNavigator: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) The diameter of the pie relative to the plot area. Can be a
-    * percentage or pixel value. Pixel values are given as integers. The
-    * default behaviour (as of 3.0) is to scale to the plot area and give room
-    * for data labels within the plot area. slicedOffset is also included in
-    * the default size calculation. As a consequence, the size of the pie may
-    * vary when points are updated and data labels more around. In that case it
-    * is best to set a fixed value, for example `"75%"`.
+    * (Highcharts, Highmaps) The diameter of the pie relative to the plot area.
+    * Can be a percentage or pixel value. Pixel values are given as integers.
+    * The default behaviour (as of 3.0) is to scale to the plot area and give
+    * room for data labels within the plot area. slicedOffset is also included
+    * in the default size calculation. As a consequence, the size of the pie
+    * may vary when points are updated and data labels more around. In that
+    * case it is best to set a fixed value, for example `"75%"`.
     */
   var size: js.UndefOr[Double | String | Null] = js.undefined
   
@@ -329,29 +368,35 @@ trait PlotSunburstOptions extends StObject {
   var skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) If a point is sliced, moved out from the center, how many
-    * pixels should it be moved?.
+    * (Highcharts, Highmaps) If a point is sliced, moved out from the center,
+    * how many pixels should it be moved?.
     */
   var slicedOffset: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts) The start angle of the pie slices in degrees where 0 is top
-    * and 90 right.
+    * (Highcharts, Highmaps) The start angle of the pie slices in degrees where
+    * 0 is top and 90 right.
     */
   var startAngle: js.UndefOr[Double] = js.undefined
   
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   
   /**
-    * (Highcharts) Sticky tracking of mouse events. When true, the `mouseOut`
-    * event on a series isn't triggered until the mouse moves over another
-    * series, or out of the plot area. When false, the `mouseOut` event on a
-    * series is triggered when the mouse leaves the area around the series'
-    * graph or markers. This also implies the tooltip. When `stickyTracking` is
-    * false and `tooltip.shared` is false, the tooltip will be hidden when
-    * moving the mouse between series.
+    * (Highcharts, Highmaps) Sticky tracking of mouse events. When true, the
+    * `mouseOut` event on a series isn't triggered until the mouse moves over
+    * another series, or out of the plot area. When false, the `mouseOut` event
+    * on a series is triggered when the mouse leaves the area around the
+    * series' graph or markers. This also implies the tooltip. When
+    * `stickyTracking` is false and `tooltip.shared` is false, the tooltip will
+    * be hidden when moving the mouse between series.
     */
   var stickyTracking: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts) Thickness describing the ring size for a donut type chart,
+    * overriding innerSize.
+    */
+  var thickness: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) A configuration object for the tooltip rendering of each
@@ -359,12 +404,6 @@ trait PlotSunburstOptions extends StObject {
     * following properties can be defined on a series level.
     */
   var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
-  
-  /**
-    * (Highcharts) Options for the button appearing when traversing down in a
-    * treemap.
-    */
-  var traverseUpButton: js.UndefOr[PlotSunburstTraverseUpButtonOptions] = js.undefined
   
   /**
     * (Highstock) The parameter allows setting line series type and use OHLC
@@ -415,11 +454,15 @@ object PlotSunburstOptions {
     
     inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
+    inline def setBreadcrumbs(value: PlotSunburstBreadcrumbsOptions): Self = StObject.set(x, "breadcrumbs", value.asInstanceOf[js.Any])
+    
+    inline def setBreadcrumbsUndefined: Self = StObject.set(x, "breadcrumbs", js.undefined)
+    
     inline def setCenter(value: js.Array[Double | String]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    inline def setCenterVarargs(value: (Double | String)*): Self = StObject.set(x, "center", js.Array(value :_*))
+    inline def setCenterVarargs(value: (Double | String)*): Self = StObject.set(x, "center", js.Array(value*))
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -441,7 +484,7 @@ object PlotSunburstOptions {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setCompareStart(value: Boolean): Self = StObject.set(x, "compareStart", value.asInstanceOf[js.Any])
     
@@ -455,19 +498,27 @@ object PlotSunburstOptions {
     
     inline def setCrispUndefined: Self = StObject.set(x, "crisp", js.undefined)
     
+    inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    
+    inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+    
     inline def setCursor(value: String | CursorValue): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    inline def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
+    
+    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
     
     inline def setDataLabels(value: SeriesSunburstDataLabelsOptionsObject | js.Array[SeriesSunburstDataLabelsOptionsObject]): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDataLabelsVarargs(value: SeriesSunburstDataLabelsOptionsObject*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(value: SeriesSunburstDataLabelsOptionsObject*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -493,7 +544,7 @@ object PlotSunburstOptions {
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setLastPrice(value: SeriesLastPriceOptionsObject): Self = StObject.set(x, "lastPrice", value.asInstanceOf[js.Any])
     
@@ -515,11 +566,15 @@ object PlotSunburstOptions {
     
     inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
-    inline def setLevelsVarargs(value: PlotSunburstLevelsOptions*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: PlotSunburstLevelsOptions*): Self = StObject.set(x, "levels", js.Array(value*))
     
     inline def setLinkedTo(value: String): Self = StObject.set(x, "linkedTo", value.asInstanceOf[js.Any])
     
     inline def setLinkedToUndefined: Self = StObject.set(x, "linkedTo", js.undefined)
+    
+    inline def setOnPoint(value: js.Object | PlotSunburstOnPointOptions): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
@@ -532,6 +587,10 @@ object PlotSunburstOptions {
     inline def setPointDescriptionFormatterUndefined: Self = StObject.set(x, "pointDescriptionFormatter", js.undefined)
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    
+    inline def setRelativeXValue(value: Boolean): Self = StObject.set(x, "relativeXValue", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeXValueUndefined: Self = StObject.set(x, "relativeXValue", js.undefined)
     
     inline def setRootId(value: String): Self = StObject.set(x, "rootId", value.asInstanceOf[js.Any])
     
@@ -583,13 +642,13 @@ object PlotSunburstOptions {
     
     inline def setStickyTrackingUndefined: Self = StObject.set(x, "stickyTracking", js.undefined)
     
+    inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+    
+    inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
+    
     inline def setTooltip(value: SeriesTooltipOptionsObject): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
-    
-    inline def setTraverseUpButton(value: PlotSunburstTraverseUpButtonOptions): Self = StObject.set(x, "traverseUpButton", value.asInstanceOf[js.Any])
-    
-    inline def setTraverseUpButtonUndefined: Self = StObject.set(x, "traverseUpButton", js.undefined)
     
     inline def setUseOhlcData(value: Boolean): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
     

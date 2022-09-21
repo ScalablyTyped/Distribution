@@ -17,7 +17,7 @@ trait CreateTransitGatewayVpcAttachmentRequestOptions extends StObject {
   var DnsSupport: js.UndefOr[DnsSupportValue] = js.undefined
   
   /**
-    * Enable or disable IPv6 support.
+    * Enable or disable IPv6 support. The default is disable.
     */
   var Ipv6Support: js.UndefOr[Ipv6SupportValue] = js.undefined
 }

@@ -10,7 +10,7 @@ trait IgSchedulerWeekViewSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets the time slots duration. 5, 6, 10, 15, 30 and 60 minutes are supported.

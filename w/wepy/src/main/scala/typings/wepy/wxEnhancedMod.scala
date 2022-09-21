@@ -1,6 +1,5 @@
 package typings.wepy
 
-import typings.std.ArrayBuffer
 import typings.wepy.anon.Accuracy
 import typings.wepy.anon.Address
 import typings.wepy.anon.Alpha
@@ -234,7 +233,7 @@ object wxEnhancedMod {
     extends StObject
        with UrlParam {
     
-    var data: js.UndefOr[js.Object | String | ArrayBuffer] = js.undefined
+    var data: js.UndefOr[js.Object | String | js.typedarray.ArrayBuffer] = js.undefined
     
     var dataType: js.UndefOr[json | text] = js.undefined
     
@@ -253,7 +252,7 @@ object wxEnhancedMod {
     
     extension [Self <: RequestParam](x: Self) {
       
-      inline def setData(value: js.Object | String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object | String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataType(value: json | text): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       
@@ -627,15 +626,15 @@ object wxEnhancedMod {
     
     def addPhoneContact(param: WechatProfileDetails): js.Promise[Unit] = js.native
     
-    def authorize(param: Scope): js.Promise[js.Any] = js.native
+    def authorize(param: Scope): js.Promise[Any] = js.native
     
     def canIUse(name: String): js.Promise[Boolean] = js.native
     
-    def canvasGetImageData(params: CanvasId, context: js.Any): js.Promise[Data] = js.native
+    def canvasGetImageData(params: CanvasId, context: Any): js.Promise[Data] = js.native
     
-    def canvasPutImageData(params: Height, context: js.Any): js.Promise[Unit] = js.native
+    def canvasPutImageData(params: Height, context: Any): js.Promise[Unit] = js.native
     
-    def canvasToTempFilePath(params: DestHeight, context: js.Any): js.Promise[TempFilePath] = js.native
+    def canvasToTempFilePath(params: DestHeight, context: Any): js.Promise[TempFilePath] = js.native
     
     def checkIsSoterEnrolledInDevice(params: CheckAuthMode): js.Promise[ErrMsg] = js.native
     
@@ -653,9 +652,9 @@ object wxEnhancedMod {
     
     def createAnimation(params: Delay): js.Promise[Animation] = js.native
     
-    def createCanvasContext(canvasId: String, context: js.Any): js.Promise[Unit] = js.native
+    def createCanvasContext(canvasId: String, context: Any): js.Promise[Unit] = js.native
     
-    def createMapContext(mapId: String, context: js.Any): MapContext = js.native
+    def createMapContext(mapId: String, context: Any): MapContext = js.native
     
     def createSelectorQuery(): js.Promise[js.Object] = js.native
     
@@ -695,8 +694,8 @@ object wxEnhancedMod {
     
     def removeStorage(params: Key): js.Promise[Unit] = js.native
     
-    def request(params: String): js.Promise[js.Any] = js.native
-    def request(params: RequestParam): js.Promise[js.Any] = js.native
+    def request(params: String): js.Promise[Any] = js.native
+    def request(params: RequestParam): js.Promise[Any] = js.native
     
     def requestPayment(params: NonceStr): js.Promise[Unit] = js.native
     

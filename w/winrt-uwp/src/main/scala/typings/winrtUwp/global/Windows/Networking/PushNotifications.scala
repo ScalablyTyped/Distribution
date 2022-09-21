@@ -74,7 +74,7 @@ object PushNotifications {
     var notificationType: PushNotificationType = js.native
     
     /* CompleteClass */
-    var rawNotification: js.Any = js.native
+    var rawNotification: Any = js.native
     
     /* unmapped type */
     /** Gets the content of a tile update to perform in response to this push notification. */

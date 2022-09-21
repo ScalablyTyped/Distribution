@@ -31,6 +31,6 @@ object RuleOption {
     
     inline def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
     
-    inline def setSettingsVarargs(value: Setting*): Self = StObject.set(x, "Settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: Setting*): Self = StObject.set(x, "Settings", js.Array(value*))
   }
 }

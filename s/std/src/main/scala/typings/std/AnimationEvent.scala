@@ -10,9 +10,12 @@ trait AnimationEvent
   extends StObject
      with Event {
   
+  /* standard dom */
   val animationName: java.lang.String = js.native
   
+  /* standard dom */
   val elapsedTime: Double = js.native
   
+  /* standard dom */
   val pseudoElement: java.lang.String = js.native
 }

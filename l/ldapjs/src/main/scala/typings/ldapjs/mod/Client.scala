@@ -1,5 +1,6 @@
 package typings.ldapjs.mod
 
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -54,6 +55,8 @@ trait Client extends EventEmitter {
   
   var connected: Boolean = js.native
   
+  var connecting: Boolean = js.native
+  
   /**
     * Deletes an entry from the LDAP server.
     *
@@ -78,7 +81,7 @@ trait Client extends EventEmitter {
     * @param {Object} err (Optional) error that was cause of client destruction
     */
   def destroy(): Unit = js.native
-  def destroy(err: js.Any): Unit = js.native
+  def destroy(err: Any): Unit = js.native
   
   /**
     * Performs an extended operation on the LDAP server.
@@ -96,6 +99,9 @@ trait Client extends EventEmitter {
   def exop(name: String, value: String, callback: ExopCallback): Unit = js.native
   def exop(name: String, value: String, controls: js.Array[Control], callback: ExopCallback): Unit = js.native
   def exop(name: String, value: String, controls: Control, callback: ExopCallback): Unit = js.native
+  def exop(name: String, value: Buffer, callback: ExopCallback): Unit = js.native
+  def exop(name: String, value: Buffer, controls: js.Array[Control], callback: ExopCallback): Unit = js.native
+  def exop(name: String, value: Buffer, controls: Control, callback: ExopCallback): Unit = js.native
   
   def modify(name: String, change: js.Array[Change], callback: ErrorCallback): Unit = js.native
   def modify(name: String, change: js.Array[Change], controls: js.Array[Control], callback: ErrorCallback): Unit = js.native

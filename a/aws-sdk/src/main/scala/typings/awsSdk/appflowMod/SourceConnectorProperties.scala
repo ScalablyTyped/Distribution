@@ -11,6 +11,8 @@ trait SourceConnectorProperties extends StObject {
     */
   var Amplitude: js.UndefOr[AmplitudeSourceProperties] = js.undefined
   
+  var CustomConnector: js.UndefOr[CustomConnectorSourceProperties] = js.undefined
+  
   /**
     *  Specifies the information that is required for querying Datadog. 
     */
@@ -40,6 +42,8 @@ trait SourceConnectorProperties extends StObject {
     *  Specifies the information that is required for querying Amazon S3. 
     */
   var S3: js.UndefOr[S3SourceProperties] = js.undefined
+  
+  var SAPOData: js.UndefOr[SAPODataSourceProperties] = js.undefined
   
   /**
     *  Specifies the information that is required for querying Salesforce. 
@@ -89,6 +93,10 @@ object SourceConnectorProperties {
     
     inline def setAmplitudeUndefined: Self = StObject.set(x, "Amplitude", js.undefined)
     
+    inline def setCustomConnector(value: CustomConnectorSourceProperties): Self = StObject.set(x, "CustomConnector", value.asInstanceOf[js.Any])
+    
+    inline def setCustomConnectorUndefined: Self = StObject.set(x, "CustomConnector", js.undefined)
+    
     inline def setDatadog(value: DatadogSourceProperties): Self = StObject.set(x, "Datadog", value.asInstanceOf[js.Any])
     
     inline def setDatadogUndefined: Self = StObject.set(x, "Datadog", js.undefined)
@@ -112,6 +120,10 @@ object SourceConnectorProperties {
     inline def setS3(value: S3SourceProperties): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     
     inline def setS3Undefined: Self = StObject.set(x, "S3", js.undefined)
+    
+    inline def setSAPOData(value: SAPODataSourceProperties): Self = StObject.set(x, "SAPOData", value.asInstanceOf[js.Any])
+    
+    inline def setSAPODataUndefined: Self = StObject.set(x, "SAPOData", js.undefined)
     
     inline def setSalesforce(value: SalesforceSourceProperties): Self = StObject.set(x, "Salesforce", value.asInstanceOf[js.Any])
     

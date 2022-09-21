@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/Node/index", "ViewDirectionBlock")
 @js.native
-class ViewDirectionBlock protected ()
+open class ViewDirectionBlock protected ()
   extends typings.babylonjs.blocksIndexMod.ViewDirectionBlock {
   /**
     * Creates a new ViewDirectionBlock

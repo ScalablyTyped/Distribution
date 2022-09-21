@@ -22,7 +22,7 @@ object TransformStyle {
     
     inline def setTarget(value: Double | String | (js.Array[Double | String])): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setTargetVarargs(value: (Double | String)*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: (Double | String)*): Self = StObject.set(x, "target", js.Array(value*))
     
     inline def setValue(value: PartialPlotDataAutobinx): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

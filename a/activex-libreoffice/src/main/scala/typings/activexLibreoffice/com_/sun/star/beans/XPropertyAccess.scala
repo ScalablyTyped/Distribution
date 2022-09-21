@@ -39,7 +39,7 @@ object XPropertyAccess {
     PropertyValues: SafeArray[PropertyValue],
     acquire: () => Unit,
     getPropertyValues: () => SafeArray[PropertyValue],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setPropertyValues: SeqEquiv[PropertyValue] => Unit
   ): XPropertyAccess = {

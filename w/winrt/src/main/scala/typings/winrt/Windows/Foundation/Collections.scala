@@ -217,7 +217,7 @@ object Collections {
     extends StObject
        with IMap[K, V] {
     
-    var onmapchanged: js.Any
+    var onmapchanged: Any
   }
   object IObservableMap {
     
@@ -228,7 +228,7 @@ object Collections {
       hasKey: K => Boolean,
       insert: (K, V) => Boolean,
       lookup: K => V,
-      onmapchanged: js.Any,
+      onmapchanged: Any,
       remove: K => Unit,
       size: Double
     ): IObservableMap[K, V] = {
@@ -238,7 +238,7 @@ object Collections {
     
     extension [Self <: IObservableMap[?, ?], K, V](x: Self & (IObservableMap[K, V])) {
       
-      inline def setOnmapchanged(value: js.Any): Self = StObject.set(x, "onmapchanged", value.asInstanceOf[js.Any])
+      inline def setOnmapchanged(value: Any): Self = StObject.set(x, "onmapchanged", value.asInstanceOf[js.Any])
     }
   }
   
@@ -247,22 +247,22 @@ object Collections {
     extends StObject
        with IVector[T] {
     
-    var onvectorchanged: js.Any = js.native
+    var onvectorchanged: Any = js.native
   }
   
   trait IPropertySet
     extends StObject
-       with IObservableMap[String, js.Any]
+       with IObservableMap[String, Any]
   object IPropertySet {
     
     inline def apply(
       clear: () => Unit,
-      first: () => IIterator[IKeyValuePair[String, js.Any]],
-      getView: () => IMapView[String, js.Any],
+      first: () => IIterator[IKeyValuePair[String, Any]],
+      getView: () => IMapView[String, Any],
       hasKey: String => Boolean,
-      insert: (String, js.Any) => Boolean,
-      lookup: String => js.Any,
-      onmapchanged: js.Any,
+      insert: (String, Any) => Boolean,
+      lookup: String => Any,
+      onmapchanged: Any,
       remove: String => Unit,
       size: Double
     ): IPropertySet = {
@@ -285,19 +285,19 @@ object Collections {
     def every(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean]): Boolean = js.native
     def every(
       callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean],
-      thisArg: js.Any
+      thisArg: Any
     ): Boolean = js.native
     
     def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean]): js.Array[T] = js.native
     def filter(
       callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean],
-      thisArg: js.Any
+      thisArg: Any
     ): js.Array[T] = js.native
     
     def forEach(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit]): Unit = js.native
     def forEach(
       callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit],
-      thisArg: js.Any
+      thisArg: Any
     ): Unit = js.native
     
     def getAt(index: Double): T = js.native
@@ -317,11 +317,11 @@ object Collections {
     
     var length: Double = js.native
     
-    def map(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any]): js.Array[js.Any] = js.native
+    def map(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any]): js.Array[Any] = js.native
     def map(
-      callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any],
-      thisArg: js.Any
-    ): js.Array[js.Any] = js.native
+      callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any],
+      thisArg: Any
+    ): js.Array[Any] = js.native
     
     def pop(): T = js.native
     
@@ -329,43 +329,43 @@ object Collections {
     
     def reduce(
       callbackfn: js.Function4[
-          /* previousValue */ js.Any, 
-          /* currentValue */ js.Any, 
+          /* previousValue */ Any, 
+          /* currentValue */ Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          js.Any
+          Any
         ]
-    ): js.Any = js.native
+    ): Any = js.native
     def reduce(
       callbackfn: js.Function4[
-          /* previousValue */ js.Any, 
-          /* currentValue */ js.Any, 
+          /* previousValue */ Any, 
+          /* currentValue */ Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          js.Any
+          Any
         ],
-      initialValue: js.Any
-    ): js.Any = js.native
+      initialValue: Any
+    ): Any = js.native
     
     def reduceRight(
       callbackfn: js.Function4[
-          /* previousValue */ js.Any, 
-          /* currentValue */ js.Any, 
+          /* previousValue */ Any, 
+          /* currentValue */ Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          js.Any
+          Any
         ]
-    ): js.Any = js.native
+    ): Any = js.native
     def reduceRight(
       callbackfn: js.Function4[
-          /* previousValue */ js.Any, 
-          /* currentValue */ js.Any, 
+          /* previousValue */ Any, 
+          /* currentValue */ Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          js.Any
+          Any
         ],
-      initialValue: js.Any
-    ): js.Any = js.native
+      initialValue: Any
+    ): Any = js.native
     
     def removeAt(index: Double): Unit = js.native
     
@@ -387,7 +387,7 @@ object Collections {
     def some(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean]): Boolean = js.native
     def some(
       callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean],
-      thisArg: js.Any
+      thisArg: Any
     ): Boolean = js.native
     
     def sort(): js.Array[T] = js.native
@@ -430,19 +430,19 @@ object Collections {
     def every(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean]): Boolean = js.native
     def every(
       callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean],
-      thisArg: js.Any
+      thisArg: Any
     ): Boolean = js.native
     
     def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean]): js.Array[T] = js.native
     def filter(
       callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean],
-      thisArg: js.Any
+      thisArg: Any
     ): js.Array[T] = js.native
     
     def forEach(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit]): Unit = js.native
     def forEach(
       callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Unit],
-      thisArg: js.Any
+      thisArg: Any
     ): Unit = js.native
     
     def getAt(index: Double): T = js.native
@@ -458,11 +458,11 @@ object Collections {
     
     var length: Double = js.native
     
-    def map(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any]): js.Array[js.Any] = js.native
+    def map(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any]): js.Array[Any] = js.native
     def map(
-      callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any],
-      thisArg: js.Any
-    ): js.Array[js.Any] = js.native
+      callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Any],
+      thisArg: Any
+    ): js.Array[Any] = js.native
     
     def pop(): T = js.native
     
@@ -470,43 +470,43 @@ object Collections {
     
     def reduce(
       callbackfn: js.Function4[
-          /* previousValue */ js.Any, 
-          /* currentValue */ js.Any, 
+          /* previousValue */ Any, 
+          /* currentValue */ Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          js.Any
+          Any
         ]
-    ): js.Any = js.native
+    ): Any = js.native
     def reduce(
       callbackfn: js.Function4[
-          /* previousValue */ js.Any, 
-          /* currentValue */ js.Any, 
+          /* previousValue */ Any, 
+          /* currentValue */ Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          js.Any
+          Any
         ],
-      initialValue: js.Any
-    ): js.Any = js.native
+      initialValue: Any
+    ): Any = js.native
     
     def reduceRight(
       callbackfn: js.Function4[
-          /* previousValue */ js.Any, 
-          /* currentValue */ js.Any, 
+          /* previousValue */ Any, 
+          /* currentValue */ Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          js.Any
+          Any
         ]
-    ): js.Any = js.native
+    ): Any = js.native
     def reduceRight(
       callbackfn: js.Function4[
-          /* previousValue */ js.Any, 
-          /* currentValue */ js.Any, 
+          /* previousValue */ Any, 
+          /* currentValue */ Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          js.Any
+          Any
         ],
-      initialValue: js.Any
-    ): js.Any = js.native
+      initialValue: Any
+    ): Any = js.native
     
     def reverse(): js.Array[T] = js.native
     
@@ -520,7 +520,7 @@ object Collections {
     def some(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean]): Boolean = js.native
     def some(
       callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean],
-      thisArg: js.Any
+      thisArg: Any
     ): Boolean = js.native
     
     def sort(): js.Array[T] = js.native
@@ -541,12 +541,12 @@ object Collections {
     
     inline def apply(
       clear: () => Unit,
-      first: () => IIterator[IKeyValuePair[String, js.Any]],
-      getView: () => IMapView[String, js.Any],
+      first: () => IIterator[IKeyValuePair[String, Any]],
+      getView: () => IMapView[String, Any],
       hasKey: String => Boolean,
-      insert: (String, js.Any) => Boolean,
-      lookup: String => js.Any,
-      onmapchanged: js.Any,
+      insert: (String, Any) => Boolean,
+      lookup: String => Any,
+      onmapchanged: Any,
       remove: String => Unit,
       size: Double
     ): PropertySet = {
@@ -562,12 +562,12 @@ object Collections {
     
     inline def apply(
       clear: () => Unit,
-      first: () => IIterator[IKeyValuePair[String, js.Any]],
-      getView: () => IMapView[String, js.Any],
+      first: () => IIterator[IKeyValuePair[String, Any]],
+      getView: () => IMapView[String, Any],
       hasKey: String => Boolean,
-      insert: (String, js.Any) => Boolean,
-      lookup: String => js.Any,
-      onmapchanged: js.Any,
+      insert: (String, Any) => Boolean,
+      lookup: String => Any,
+      onmapchanged: Any,
       remove: String => Unit,
       size: Double
     ): ValueSet = {

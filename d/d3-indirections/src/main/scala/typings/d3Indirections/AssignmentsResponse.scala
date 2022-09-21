@@ -22,6 +22,6 @@ object AssignmentsResponse {
     
     inline def setFailedAssignments(value: js.Array[AssignmentFailure]): Self = StObject.set(x, "failedAssignments", value.asInstanceOf[js.Any])
     
-    inline def setFailedAssignmentsVarargs(value: AssignmentFailure*): Self = StObject.set(x, "failedAssignments", js.Array(value :_*))
+    inline def setFailedAssignmentsVarargs(value: AssignmentFailure*): Self = StObject.set(x, "failedAssignments", js.Array(value*))
   }
 }

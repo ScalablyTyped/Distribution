@@ -6,13 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NormalizationCondition
   extends StObject
+     with NormalizationNode
      with NormalizationSelection {
   
   val condition: String
   
   val kind: String
   
-  // 'Condition';
+  // "Condition";
   val passingValue: Boolean
   
   val selections: js.Array[NormalizationSelection]
@@ -39,6 +40,6 @@ object NormalizationCondition {
     
     inline def setSelections(value: js.Array[NormalizationSelection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
-    inline def setSelectionsVarargs(value: NormalizationSelection*): Self = StObject.set(x, "selections", js.Array(value :_*))
+    inline def setSelectionsVarargs(value: NormalizationSelection*): Self = StObject.set(x, "selections", js.Array(value*))
   }
 }

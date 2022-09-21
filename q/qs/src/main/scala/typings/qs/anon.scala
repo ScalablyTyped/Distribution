@@ -6,7 +6,6 @@ import typings.qs.qsStrings.`iso-8859-1`
 import typings.qs.qsStrings.`utf-8`
 import typings.qs.qsStrings.key
 import typings.qs.qsStrings.value
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,11 +33,11 @@ object anon {
           /* defaultDecoder */ defaultDecoder, 
           /* charset */ String, 
           /* type */ key | value, 
-          js.Any
+          Any
         ]
       ]) & js.UndefOr[scala.Nothing]
     
-    var delimiter: js.UndefOr[String | RegExp] = js.undefined
+    var delimiter: js.UndefOr[String | js.RegExp] = js.undefined
     
     var depth: js.UndefOr[Double | `false`] = js.undefined
     
@@ -63,7 +62,7 @@ object anon {
             /* defaultDecoder */ defaultDecoder, 
             /* charset */ String, 
             /* type */ key | value, 
-            js.Any
+            Any
           ]
         ]) & js.UndefOr[scala.Nothing]
     ): IParseOptionsdecodernever = {
@@ -104,12 +103,12 @@ object anon {
                 /* defaultDecoder */ defaultDecoder, 
                 /* charset */ String, 
                 /* type */ key | value, 
-                js.Any
+                Any
               ]
             ]) & js.UndefOr[scala.Nothing]
       ): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
       
-      inline def setDelimiter(value: String | RegExp): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String | js.RegExp): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
       inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       

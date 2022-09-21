@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "eslint-formatter-codeframe" : "7.32.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "eslint-formatter-codeframe" : "7.32.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

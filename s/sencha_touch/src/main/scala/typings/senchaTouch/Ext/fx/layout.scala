@@ -24,17 +24,17 @@ object layout {
       /** [Method] Returns the value of duration
         * @returns Object
         */
-      var getDuration: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getDuration: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of layout
         * @returns Object
         */
-      var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getLayout: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of reverse
         * @returns Object
         */
-      var getReverse: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getReverse: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Sets the value of direction
         * @param direction String The new value.
@@ -44,17 +44,17 @@ object layout {
       /** [Method] Sets the value of duration
         * @param duration Object The new value.
         */
-      var setDuration: js.UndefOr[js.Function1[/* duration */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setDuration: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of layout
         * @param layout Object The new value.
         */
-      var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of reverse
         * @param reverse Object The new value.
         */
-      var setReverse: js.UndefOr[js.Function1[/* reverse */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setReverse: js.UndefOr[js.Function1[/* reverse */ js.UndefOr[Any], Unit]] = js.undefined
     }
     object IAbstract {
       
@@ -69,15 +69,15 @@ object layout {
         
         inline def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
         
-        inline def setGetDuration(value: () => js.Any): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
+        inline def setGetDuration(value: () => Any): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
         
         inline def setGetDurationUndefined: Self = StObject.set(x, "getDuration", js.undefined)
         
-        inline def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+        inline def setGetLayout(value: () => Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
         
         inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
         
-        inline def setGetReverse(value: () => js.Any): Self = StObject.set(x, "getReverse", js.Any.fromFunction0(value))
+        inline def setGetReverse(value: () => Any): Self = StObject.set(x, "getReverse", js.Any.fromFunction0(value))
         
         inline def setGetReverseUndefined: Self = StObject.set(x, "getReverse", js.undefined)
         
@@ -85,15 +85,15 @@ object layout {
         
         inline def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
         
-        inline def setSetDuration(value: /* duration */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
+        inline def setSetDuration(value: /* duration */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
         
         inline def setSetDurationUndefined: Self = StObject.set(x, "setDuration", js.undefined)
         
-        inline def setSetLayout(value: /* layout */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
+        inline def setSetLayout(value: /* layout */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
         
         inline def setSetLayoutUndefined: Self = StObject.set(x, "setLayout", js.undefined)
         
-        inline def setSetReverse(value: /* reverse */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setReverse", js.Any.fromFunction1(value))
+        inline def setSetReverse(value: /* reverse */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setReverse", js.Any.fromFunction1(value))
         
         inline def setSetReverseUndefined: Self = StObject.set(x, "setReverse", js.undefined)
       }
@@ -270,22 +270,22 @@ object layout {
       /** [Method] Returns the value of inAnimation
         * @returns Object
         */
-      var getInAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getInAnimation: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of outAnimation
         * @returns Object
         */
-      var getOutAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getOutAnimation: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Sets the value of inAnimation
         * @param inAnimation Object The new value.
         */
-      var setInAnimation: js.UndefOr[js.Function1[/* inAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setInAnimation: js.UndefOr[js.Function1[/* inAnimation */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of outAnimation
         * @param outAnimation Object The new value.
         */
-      var setOutAnimation: js.UndefOr[js.Function1[/* outAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setOutAnimation: js.UndefOr[js.Function1[/* outAnimation */ js.UndefOr[Any], Unit]] = js.undefined
     }
     object IStyle {
       
@@ -296,19 +296,19 @@ object layout {
       
       extension [Self <: IStyle](x: Self) {
         
-        inline def setGetInAnimation(value: () => js.Any): Self = StObject.set(x, "getInAnimation", js.Any.fromFunction0(value))
+        inline def setGetInAnimation(value: () => Any): Self = StObject.set(x, "getInAnimation", js.Any.fromFunction0(value))
         
         inline def setGetInAnimationUndefined: Self = StObject.set(x, "getInAnimation", js.undefined)
         
-        inline def setGetOutAnimation(value: () => js.Any): Self = StObject.set(x, "getOutAnimation", js.Any.fromFunction0(value))
+        inline def setGetOutAnimation(value: () => Any): Self = StObject.set(x, "getOutAnimation", js.Any.fromFunction0(value))
         
         inline def setGetOutAnimationUndefined: Self = StObject.set(x, "getOutAnimation", js.undefined)
         
-        inline def setSetInAnimation(value: /* inAnimation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInAnimation", js.Any.fromFunction1(value))
+        inline def setSetInAnimation(value: /* inAnimation */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setInAnimation", js.Any.fromFunction1(value))
         
         inline def setSetInAnimationUndefined: Self = StObject.set(x, "setInAnimation", js.undefined)
         
-        inline def setSetOutAnimation(value: /* outAnimation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOutAnimation", js.Any.fromFunction1(value))
+        inline def setSetOutAnimation(value: /* outAnimation */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setOutAnimation", js.Any.fromFunction1(value))
         
         inline def setSetOutAnimationUndefined: Self = StObject.set(x, "setOutAnimation", js.undefined)
       }

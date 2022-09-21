@@ -11,7 +11,7 @@ trait IgLinkPropertiesDialog
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   @JSName("apply")
   var apply: js.UndefOr[ApplyEvent] = js.undefined
@@ -22,7 +22,7 @@ trait IgLinkPropertiesDialog
   
   var isHidden: js.UndefOr[Boolean] = js.undefined
   
-  var item: js.UndefOr[js.Any] = js.undefined
+  var item: js.UndefOr[Any] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
@@ -34,7 +34,7 @@ trait IgLinkPropertiesDialog
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
@@ -44,7 +44,7 @@ trait IgLinkPropertiesDialog
   
   var show: js.UndefOr[ShowEvent] = js.undefined
   
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
 }
 object IgLinkPropertiesDialog {
   
@@ -71,7 +71,7 @@ object IgLinkPropertiesDialog {
     
     inline def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
     
-    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
@@ -79,7 +79,7 @@ object IgLinkPropertiesDialog {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -91,7 +91,7 @@ object IgLinkPropertiesDialog {
     
     inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }

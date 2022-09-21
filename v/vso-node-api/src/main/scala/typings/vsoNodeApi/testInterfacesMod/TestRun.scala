@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,11 +13,11 @@ trait TestRun extends StObject {
   
   var comment: String
   
-  var completedDate: Date
+  var completedDate: js.Date
   
   var controller: String
   
-  var createdDate: Date
+  var createdDate: js.Date
   
   var customFields: js.Array[CustomTestField]
   
@@ -30,7 +29,7 @@ trait TestRun extends StObject {
   
   var dtlEnvironmentCreationDetails: DtlEnvironmentDetails
   
-  var dueDate: Date
+  var dueDate: js.Date
   
   var errorMessage: String
   
@@ -46,7 +45,7 @@ trait TestRun extends StObject {
   
   var lastUpdatedBy: IdentityRef
   
-  var lastUpdatedDate: Date
+  var lastUpdatedDate: js.Date
   
   var name: String
   
@@ -74,7 +73,7 @@ trait TestRun extends StObject {
   
   var runStatistics: js.Array[RunStatistic]
   
-  var startedDate: Date
+  var startedDate: js.Date
   
   var state: String
   
@@ -100,15 +99,15 @@ object TestRun {
     build: ShallowReference,
     buildConfiguration: BuildConfiguration,
     comment: String,
-    completedDate: Date,
+    completedDate: js.Date,
     controller: String,
-    createdDate: Date,
+    createdDate: js.Date,
     customFields: js.Array[CustomTestField],
     dropLocation: String,
     dtlAutEnvironment: ShallowReference,
     dtlEnvironment: ShallowReference,
     dtlEnvironmentCreationDetails: DtlEnvironmentDetails,
-    dueDate: Date,
+    dueDate: js.Date,
     errorMessage: String,
     filter: RunFilter,
     id: Double,
@@ -116,7 +115,7 @@ object TestRun {
     isAutomated: Boolean,
     iteration: String,
     lastUpdatedBy: IdentityRef,
-    lastUpdatedDate: Date,
+    lastUpdatedDate: js.Date,
     name: String,
     notApplicableTests: Double,
     owner: IdentityRef,
@@ -130,7 +129,7 @@ object TestRun {
     releaseUri: String,
     revision: Double,
     runStatistics: js.Array[RunStatistic],
-    startedDate: Date,
+    startedDate: js.Date,
     state: String,
     substate: TestRunSubstate,
     testEnvironment: TestEnvironment,
@@ -153,15 +152,15 @@ object TestRun {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    inline def setCompletedDate(value: Date): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
+    inline def setCompletedDate(value: js.Date): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
     
     inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setCustomFields(value: js.Array[CustomTestField]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
-    inline def setCustomFieldsVarargs(value: CustomTestField*): Self = StObject.set(x, "customFields", js.Array(value :_*))
+    inline def setCustomFieldsVarargs(value: CustomTestField*): Self = StObject.set(x, "customFields", js.Array(value*))
     
     inline def setDropLocation(value: String): Self = StObject.set(x, "dropLocation", value.asInstanceOf[js.Any])
     
@@ -171,7 +170,7 @@ object TestRun {
     
     inline def setDtlEnvironmentCreationDetails(value: DtlEnvironmentDetails): Self = StObject.set(x, "dtlEnvironmentCreationDetails", value.asInstanceOf[js.Any])
     
-    inline def setDueDate(value: Date): Self = StObject.set(x, "dueDate", value.asInstanceOf[js.Any])
+    inline def setDueDate(value: js.Date): Self = StObject.set(x, "dueDate", value.asInstanceOf[js.Any])
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
@@ -187,7 +186,7 @@ object TestRun {
     
     inline def setLastUpdatedBy(value: IdentityRef): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -215,9 +214,9 @@ object TestRun {
     
     inline def setRunStatistics(value: js.Array[RunStatistic]): Self = StObject.set(x, "runStatistics", value.asInstanceOf[js.Any])
     
-    inline def setRunStatisticsVarargs(value: RunStatistic*): Self = StObject.set(x, "runStatistics", js.Array(value :_*))
+    inline def setRunStatisticsVarargs(value: RunStatistic*): Self = StObject.set(x, "runStatistics", js.Array(value*))
     
-    inline def setStartedDate(value: Date): Self = StObject.set(x, "startedDate", value.asInstanceOf[js.Any])
+    inline def setStartedDate(value: js.Date): Self = StObject.set(x, "startedDate", value.asInstanceOf[js.Any])
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

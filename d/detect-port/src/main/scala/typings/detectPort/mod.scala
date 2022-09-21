@@ -1,7 +1,6 @@
 package typings.detectPort
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object mod extends Shortcut {
     def apply(port: PortConfig, callback: DetectPortCallback): Unit = js.native
   }
   
-  type DetectPortCallback = js.Function2[/* err */ Error, /* _port */ Double, Unit]
+  type DetectPortCallback = js.Function2[/* err */ js.Error, /* _port */ Double, Unit]
   
   trait PortConfig extends StObject {
     
@@ -40,7 +39,7 @@ object mod extends Shortcut {
     
     extension [Self <: PortConfig](x: Self) {
       
-      inline def setCallback(value: (/* err */ Error, /* _port */ Double) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* err */ js.Error, /* _port */ Double) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       

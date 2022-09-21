@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridToolbarItemClickEventArgs")
 @js.native
-class ASPxClientGridToolbarItemClickEventArgs protected ()
+open class ASPxClientGridToolbarItemClickEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridToolbarItemClickEventArgs {
   /**

@@ -20,7 +20,7 @@ trait TreeList
   def addRow(parentRow: Element): Unit = js.native
   
   def autoFitColumn(column: String): Unit = js.native
-  def autoFitColumn(column: js.Any): Unit = js.native
+  def autoFitColumn(column: Any): Unit = js.native
   def autoFitColumn(column: Double): Unit = js.native
   
   def cancelChanges(): Unit = js.native
@@ -32,11 +32,11 @@ trait TreeList
   def closeCell(): Unit = js.native
   def closeCell(isCancel: Boolean): Unit = js.native
   
-  def collapse(row: String): JQueryPromise[js.Any] = js.native
-  def collapse(row: JQuery): JQueryPromise[js.Any] = js.native
-  def collapse(row: Element): JQueryPromise[js.Any] = js.native
+  def collapse(row: String): JQueryPromise[Any] = js.native
+  def collapse(row: JQuery): JQueryPromise[Any] = js.native
+  def collapse(row: Element): JQueryPromise[Any] = js.native
   
-  var columns: js.Any = js.native
+  var columns: Any = js.native
   
   var content: JQuery = js.native
   
@@ -50,17 +50,17 @@ trait TreeList
   
   def editRow(row: JQuery): Unit = js.native
   
-  def expand(row: String): JQueryPromise[js.Any] = js.native
-  def expand(row: JQuery): JQueryPromise[js.Any] = js.native
-  def expand(row: Element): JQueryPromise[js.Any] = js.native
+  def expand(row: String): JQueryPromise[Any] = js.native
+  def expand(row: JQuery): JQueryPromise[Any] = js.native
+  def expand(row: Element): JQueryPromise[Any] = js.native
   
   def hideColumn(column: String): Unit = js.native
   def hideColumn(column: Double): Unit = js.native
   
-  def itemFor(model: js.Any): JQuery = js.native
+  def itemFor(model: Any): JQuery = js.native
   def itemFor(model: TreeListModel): JQuery = js.native
   
-  def items(): js.Any = js.native
+  def items(): Any = js.native
   
   def lockColumn(column: String): Unit = js.native
   def lockColumn(column: Double): Unit = js.native
@@ -80,11 +80,11 @@ trait TreeList
   def removeRow(row: JQuery): Unit = js.native
   def removeRow(row: Element): Unit = js.native
   
-  def reorderColumn(destIndex: Double, column: js.Any): Unit = js.native
+  def reorderColumn(destIndex: Double, column: Any): Unit = js.native
   
   def saveAsExcel(): Unit = js.native
   
-  def saveAsPDF(): JQueryPromise[js.Any] = js.native
+  def saveAsPDF(): JQueryPromise[Any] = js.native
   
   def saveChanges(): Unit = js.native
   

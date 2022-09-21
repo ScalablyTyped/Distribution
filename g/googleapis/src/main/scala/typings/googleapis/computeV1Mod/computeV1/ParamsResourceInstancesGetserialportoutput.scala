@@ -1,8 +1,5 @@
 package typings.googleapis.computeV1Mod.computeV1
 
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +9,7 @@ trait ParamsResourceInstancesGetserialportoutput
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Name of the instance scoping this request.
+    * Name of the instance for this request.
     */
   var instance: js.UndefOr[String] = js.undefined
   
@@ -32,11 +24,7 @@ trait ParamsResourceInstancesGetserialportoutput
   var project: js.UndefOr[String] = js.undefined
   
   /**
-    * Returns output starting from a specific byte position. Use this to page
-    * through output when the output is too large to return in a single
-    * request. For the initial request, leave this field unspecified. For
-    * subsequent calls, this field should be set to the next value returned in
-    * the previous call.
+    * Specifies the starting byte position of the output to return. To start with the first byte of output to the specified port, omit this field or set it to `0`. If the output for that byte position is available, this field matches the `start` parameter sent with the request. If the amount of serial console output exceeds the size of the buffer (1 MB), the oldest output is discarded and is no longer available. If the requested start position refers to discarded output, the start position is adjusted to the oldest output still available, and the adjusted start position is returned as the `start` property value. You can also provide a negative start position, which translates to the most recent number of bytes written to the serial port. For example, -3 is interpreted as the most recent 3 bytes written to the serial console.
     */
   var start: js.UndefOr[String] = js.undefined
   
@@ -53,10 +41,6 @@ object ParamsResourceInstancesGetserialportoutput {
   }
   
   extension [Self <: ParamsResourceInstancesGetserialportoutput](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setInstance(value: String): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     

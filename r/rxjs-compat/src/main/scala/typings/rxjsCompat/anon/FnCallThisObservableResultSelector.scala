@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FnCallThisObservableResultSelector extends StObject {
   
   def apply[T, R](
-    observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
-  ): js.Any = js.native
+    observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
+  ): Any = js.native
   def apply[T, I, R](
-    observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<I> */ js.Any,
+    observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<I> */ Any,
     resultSelector: js.Function4[
       /* outerValue */ T, 
       /* innerValue */ I, 
@@ -19,5 +19,5 @@ trait FnCallThisObservableResultSelector extends StObject {
       /* innerIndex */ Double, 
       R
     ]
-  ): js.Any = js.native
+  ): Any = js.native
 }

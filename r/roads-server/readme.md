@@ -1,7 +1,7 @@
 
 # Scala.js typings for roads-server
 
-Typings are for version 1.0.3
+Typings are for version 1.1.1
 
 ## Library description:
 A simple web server for the roads framework
@@ -10,15 +10,12 @@ A simple web server for the roads framework
 | ------------------ | :-------------: |
 | Full name          | roads-server |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 2 |
-| # downloads        | 636 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 52.333333333333336 |
+| # stars            | 2.0 |
 
 ## Links
-- [Homepage](https://github.com/Dashron/roads-server)
-- [Bugs](http://github.com/Dashron/roads-server/issues)
-- [Repository](https://github.com/Dashron/roads-server)
 - [Npm](https://www.npmjs.com/package/roads-server)
     
 

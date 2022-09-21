@@ -10,10 +10,10 @@ Super simple WYSIWYG editor
 | ------------------ | :-------------: |
 | Full name          | summernote |
 | Keywords           | editor, WYSIWYG |
-| # releases         | 9 |
-| # dependents       | 48 |
-| # downloads        | 1949980 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 344851.6666666667 |
+| # stars            | 10776.0 |
 
 ## Links
 - [Homepage](https://github.com/summernote/summernote#readme)

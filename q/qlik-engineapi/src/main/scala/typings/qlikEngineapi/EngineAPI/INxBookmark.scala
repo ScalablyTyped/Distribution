@@ -39,12 +39,12 @@ object INxBookmark {
     
     inline def setQStateData(value: js.Array[IAlternateStateData]): Self = StObject.set(x, "qStateData", value.asInstanceOf[js.Any])
     
-    inline def setQStateDataVarargs(value: IAlternateStateData*): Self = StObject.set(x, "qStateData", js.Array(value :_*))
+    inline def setQStateDataVarargs(value: IAlternateStateData*): Self = StObject.set(x, "qStateData", js.Array(value*))
     
     inline def setQUtcModifyTime(value: Double): Self = StObject.set(x, "qUtcModifyTime", value.asInstanceOf[js.Any])
     
     inline def setQVariableItems(value: js.Array[IBookmarkVariableItem]): Self = StObject.set(x, "qVariableItems", value.asInstanceOf[js.Any])
     
-    inline def setQVariableItemsVarargs(value: IBookmarkVariableItem*): Self = StObject.set(x, "qVariableItems", js.Array(value :_*))
+    inline def setQVariableItemsVarargs(value: IBookmarkVariableItem*): Self = StObject.set(x, "qVariableItems", js.Array(value*))
   }
 }

@@ -8,25 +8,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkbookRangeAreasData extends StObject {
   
   /**
+    * Returns an array of addresses in A1-style. Address values contain the worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
     *
-    * Returns an array of address in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var addresses: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
+    * Returns the `RangeAreasCollection` object. Each `RangeAreas` in the collection represent one or more rectangle ranges in one worksheet.
     *
-    * Returns the RangeAreasCollection object, each RangeAreas in the collection represent one or more rectangle ranges in one worksheet.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var areas: js.UndefOr[js.Array[RangeAreasData]] = js.undefined
   
   /**
+    * Returns ranges that comprise this object in a `RangeCollection` object.
     *
-    * Returns ranges that comprise this object in a RangeCollection object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var ranges: js.UndefOr[js.Array[RangeData]] = js.undefined
@@ -44,18 +44,18 @@ object WorkbookRangeAreasData {
     
     inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value*))
     
     inline def setAreas(value: js.Array[RangeAreasData]): Self = StObject.set(x, "areas", value.asInstanceOf[js.Any])
     
     inline def setAreasUndefined: Self = StObject.set(x, "areas", js.undefined)
     
-    inline def setAreasVarargs(value: RangeAreasData*): Self = StObject.set(x, "areas", js.Array(value :_*))
+    inline def setAreasVarargs(value: RangeAreasData*): Self = StObject.set(x, "areas", js.Array(value*))
     
     inline def setRanges(value: js.Array[RangeData]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    inline def setRangesVarargs(value: RangeData*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: RangeData*): Self = StObject.set(x, "ranges", js.Array(value*))
   }
 }

@@ -3,7 +3,6 @@ package typings.reactAsync.anon
 import typings.reactAsync.reactAsyncBooleans.`false`
 import typings.reactAsync.reactAsyncBooleans.`true`
 import typings.reactAsync.reactAsyncStrings.pending
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait FinishedAt[T] extends StObject {
   
   var data: js.UndefOr[T] = js.undefined
   
-  var error: js.UndefOr[typings.std.Error] = js.undefined
+  var error: js.UndefOr[js.Error] = js.undefined
   
   var finishedAt: Unit
   
@@ -30,15 +29,15 @@ trait FinishedAt[T] extends StObject {
   
   var isSettled: `false`
   
-  var startedAt: Date
+  var startedAt: js.Date
   
   var status: pending
   
-  var value: js.UndefOr[T | typings.std.Error] = js.undefined
+  var value: js.UndefOr[T | js.Error] = js.undefined
 }
 object FinishedAt {
   
-  inline def apply[T](finishedAt: Unit, startedAt: Date): FinishedAt[T] = {
+  inline def apply[T](finishedAt: Unit, startedAt: js.Date): FinishedAt[T] = {
     val __obj = js.Dynamic.literal(finishedAt = finishedAt.asInstanceOf[js.Any], isFulfilled = false, isInitial = false, isLoading = true, isPending = true, isRejected = false, isResolved = false, isSettled = false, startedAt = startedAt.asInstanceOf[js.Any], status = "pending")
     __obj.asInstanceOf[FinishedAt[T]]
   }
@@ -49,7 +48,7 @@ object FinishedAt {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
@@ -69,11 +68,11 @@ object FinishedAt {
     
     inline def setIsSettled(value: `false`): Self = StObject.set(x, "isSettled", value.asInstanceOf[js.Any])
     
-    inline def setStartedAt(value: Date): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: js.Date): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: pending): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: T | typings.std.Error): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T | js.Error): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

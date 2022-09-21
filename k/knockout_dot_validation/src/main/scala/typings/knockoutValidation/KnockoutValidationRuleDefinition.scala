@@ -8,17 +8,17 @@ trait KnockoutValidationRuleDefinition
   extends StObject
      with KnockoutValidationRuleBase {
   
-  def validator(value: js.Any, params: js.Any): Boolean
+  def validator(value: Any, params: Any): Boolean
 }
 object KnockoutValidationRuleDefinition {
   
-  inline def apply(message: String | KnockoutValidationMessageFunction, validator: (js.Any, js.Any) => Boolean): KnockoutValidationRuleDefinition = {
+  inline def apply(message: String | KnockoutValidationMessageFunction, validator: (Any, Any) => Boolean): KnockoutValidationRuleDefinition = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], validator = js.Any.fromFunction2(validator))
     __obj.asInstanceOf[KnockoutValidationRuleDefinition]
   }
   
   extension [Self <: KnockoutValidationRuleDefinition](x: Self) {
     
-    inline def setValidator(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction2(value))
+    inline def setValidator(value: (Any, Any) => Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction2(value))
   }
 }

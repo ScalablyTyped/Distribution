@@ -6,7 +6,7 @@ import typings.gifwrap.gifwrapNumbers.`0`
 import typings.gifwrap.gifwrapNumbers.`1`
 import typings.gifwrap.gifwrapNumbers.`2`
 import typings.gifwrap.gifwrapNumbers.`3`
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Error
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("gifwrap", "BitmapImage")
   @js.native
-  class BitmapImage protected () extends StObject {
+  open class BitmapImage protected () extends StObject {
     def this(bitmapImage: BitmapImage) = this()
     def this(bitmap: JimpBitmap) = this()
     def this(width: Double, height: Double) = this()
@@ -56,7 +56,7 @@ object mod {
   
   @JSImport("gifwrap", "Gif")
   @js.native
-  class Gif protected ()
+  open class Gif protected ()
     extends StObject
        with GifSpec {
     def this(frames: js.Array[GifFrame], buffer: Buffer) = this()
@@ -96,7 +96,7 @@ object mod {
   
   @JSImport("gifwrap", "GifCodec")
   @js.native
-  class GifCodec ()
+  open class GifCodec ()
     extends StObject
        with GifEncoder
        with GifDecoder {
@@ -111,21 +111,23 @@ object mod {
   
   @JSImport("gifwrap", "GifError")
   @js.native
-  class GifError protected ()
+  open class GifError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("gifwrap", "GifFrame")
   @js.native
-  class GifFrame protected ()
+  open class GifFrame protected ()
     extends BitmapImage
        with GifFrameOptions {
     def this(bitmapImage: BitmapImage) = this()
@@ -184,7 +186,7 @@ object mod {
     
     inline def cloneFrames(frames: js.Array[GifFrame]): js.Array[GifFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneFrames")(frames.asInstanceOf[js.Any]).asInstanceOf[js.Array[GifFrame]]
     
-    inline def copyAsJimp(jimp: js.Any, bitmapImageToCopy: BitmapImage): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAsJimp")(jimp.asInstanceOf[js.Any], bitmapImageToCopy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copyAsJimp(jimp: Any, bitmapImageToCopy: BitmapImage): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAsJimp")(jimp.asInstanceOf[js.Any], bitmapImageToCopy.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def getColorInfo(frames: js.Array[GifFrame]): Colors = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorInfo")(frames.asInstanceOf[js.Any]).asInstanceOf[Colors]
     inline def getColorInfo(frames: js.Array[GifFrame], maxGlobalIndex: Double): Colors = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorInfo")(frames.asInstanceOf[js.Any], maxGlobalIndex.asInstanceOf[js.Any])).asInstanceOf[Colors]
@@ -229,7 +231,7 @@ object mod {
     inline def read(source: Buffer): js.Promise[Gif] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Gif]]
     inline def read(source: Buffer, decoder: GifDecoder): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(source.asInstanceOf[js.Any], decoder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
     
-    inline def shareAsJimp(jimp: js.Any, bitmapImageToCopy: BitmapImage): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shareAsJimp")(jimp.asInstanceOf[js.Any], bitmapImageToCopy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def shareAsJimp(jimp: Any, bitmapImageToCopy: BitmapImage): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shareAsJimp")(jimp.asInstanceOf[js.Any], bitmapImageToCopy.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def write(path: String, frames: js.Array[GifFrame]): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], frames.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
     inline def write(path: String, frames: js.Array[GifFrame], spec: Unit, encoder: GifEncoder): js.Promise[Gif] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], frames.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], encoder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Gif]]
@@ -422,7 +424,7 @@ object mod {
       
       inline def setColors(value: js.Array[Double]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      inline def setColorsVarargs(value: Double*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: Double*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setIndexCount(value: Double): Self = StObject.set(x, "indexCount", value.asInstanceOf[js.Any])
       

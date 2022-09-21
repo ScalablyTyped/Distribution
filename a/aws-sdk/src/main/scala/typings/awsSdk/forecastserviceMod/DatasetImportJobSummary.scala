@@ -9,7 +9,7 @@ trait DatasetImportJobSummary extends StObject {
   /**
     * When the dataset import job was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The location of the training data to import and an AWS Identity and Access Management (IAM) role that Amazon Forecast can assume to access the data. The training data must be stored in an Amazon S3 bucket. If encryption is used, DataSource includes an AWS Key Management Service (KMS) key.
@@ -27,9 +27,9 @@ trait DatasetImportJobSummary extends StObject {
   var DatasetImportJobName: js.UndefOr[Name] = js.undefined
   
   /**
-    * The last time that the dataset was modified. The time depends on the status of the job, as follows:    CREATE_PENDING - The same time as CreationTime.    CREATE_IN_PROGRESS - The current timestamp.    ACTIVE or CREATE_FAILED - When the job finished or failed.  
+    * The last time the resource was modified. The timestamp depends on the status of the job:    CREATE_PENDING - The CreationTime.    CREATE_IN_PROGRESS - The current timestamp.    CREATE_STOPPING - The current timestamp.    CREATE_STOPPED - When the job stopped.    ACTIVE or CREATE_FAILED - When the job finished or failed.  
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModificationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If an error occurred, an informational message about the error.
@@ -37,7 +37,7 @@ trait DatasetImportJobSummary extends StObject {
   var Message: js.UndefOr[ErrorMessage] = js.undefined
   
   /**
-    * The status of the dataset import job. The status is reflected in the status of the dataset. For example, when the import job status is CREATE_IN_PROGRESS, the status of the dataset is UPDATE_IN_PROGRESS. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED   
+    * The status of the dataset import job. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED     CREATE_STOPPING, CREATE_STOPPED   
     */
   var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.undefined
 }
@@ -50,7 +50,7 @@ object DatasetImportJobSummary {
   
   extension [Self <: DatasetImportJobSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -66,7 +66,7 @@ object DatasetImportJobSummary {
     
     inline def setDatasetImportJobNameUndefined: Self = StObject.set(x, "DatasetImportJobName", js.undefined)
     
-    inline def setLastModificationTime(value: Timestamp): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
+    inline def setLastModificationTime(value: js.Date): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
     
     inline def setLastModificationTimeUndefined: Self = StObject.set(x, "LastModificationTime", js.undefined)
     

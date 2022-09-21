@@ -30,10 +30,10 @@ trait IDisplay
   var isValid_IDisplay: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (Function) */
-  var renderer: js.UndefOr[js.Any] = js.undefined
+  var renderer: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value and fires the vali
     * @returns Boolean True if the value is valid, else false
@@ -66,11 +66,11 @@ object IDisplay {
     
     inline def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
     
-    inline def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     

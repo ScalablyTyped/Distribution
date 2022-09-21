@@ -10,17 +10,17 @@ object groupMod {
   
   @JSImport("atlassian-crowd-client/lib/models/group", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Group {
     def this(groupname: String) = this()
     def this(groupname: String, description: String) = this()
     def this(groupname: String, description: String, active: Boolean) = this()
     def this(groupname: String, description: Unit, active: Boolean) = this()
-    def this(groupname: String, description: String, active: Boolean, attributes: js.Any) = this()
-    def this(groupname: String, description: String, active: Unit, attributes: js.Any) = this()
-    def this(groupname: String, description: Unit, active: Boolean, attributes: js.Any) = this()
-    def this(groupname: String, description: Unit, active: Unit, attributes: js.Any) = this()
+    def this(groupname: String, description: String, active: Boolean, attributes: Any) = this()
+    def this(groupname: String, description: String, active: Unit, attributes: Any) = this()
+    def this(groupname: String, description: Unit, active: Boolean, attributes: Any) = this()
+    def this(groupname: String, description: Unit, active: Unit, attributes: Any) = this()
     
     /* CompleteClass */
     override val active: Boolean = js.native
@@ -45,7 +45,7 @@ object groupMod {
     
     val active: Boolean
     
-    val attributes: js.UndefOr[js.Any] = js.undefined
+    val attributes: js.UndefOr[Any] = js.undefined
     
     val description: String
     
@@ -64,7 +64,7 @@ object groupMod {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       

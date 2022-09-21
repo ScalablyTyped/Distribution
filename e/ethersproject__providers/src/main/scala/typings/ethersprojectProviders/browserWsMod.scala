@@ -12,6 +12,6 @@ object browserWsMod {
   
   @JSImport("@ethersproject/providers/lib/browser-ws", "WebSocket")
   @js.native
-  def WebSocket: js.Any = js.native
-  inline def WebSocket_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebSocket")(x.asInstanceOf[js.Any])
+  def WebSocket: Any = js.native
+  inline def WebSocket_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebSocket")(x.asInstanceOf[js.Any])
 }

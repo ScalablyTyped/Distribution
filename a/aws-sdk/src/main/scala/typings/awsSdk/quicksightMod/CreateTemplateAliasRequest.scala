@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateTemplateAliasRequest extends StObject {
   
   /**
-    * The name that you want to give to the template alias that you're creating. Don't start the alias name with the $ character. Alias names that start with $ are reserved by QuickSight. 
+    * The name that you want to give to the template alias that you're creating. Don't start the alias name with the $ character. Alias names that start with $ are reserved by Amazon QuickSight. 
     */
   var AliasName: typings.awsSdk.quicksightMod.AliasName
   
   /**
-    * The ID of the AWS account that contains the template that you creating an alias for.
+    * The ID of the Amazon Web Services account that contains the template that you creating an alias for.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   

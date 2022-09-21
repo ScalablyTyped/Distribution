@@ -10,10 +10,10 @@ Just a CSS selector parser.
 | ------------------ | :-------------: |
 | Full name          | css-selector-parser |
 | Keywords           | css, css selector, css selector parser |
-| # releases         | 3 |
-| # dependents       | 46 |
-| # downloads        | 14818004 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2190981.6666666665 |
+| # stars            | 96.0 |
 
 ## Links
 - [Homepage](https://github.com/mdevils/css-selector-parser#readme)

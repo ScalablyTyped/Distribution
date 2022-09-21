@@ -21,7 +21,8 @@ object touchableItemMod {
     
     var borderless: js.UndefOr[Boolean] = js.undefined
     
-    var children: ReactNode
+    @JSName("children")
+    var children_Props: ReactNode
     
     var delayPressIn: js.UndefOr[Double] = js.undefined
     

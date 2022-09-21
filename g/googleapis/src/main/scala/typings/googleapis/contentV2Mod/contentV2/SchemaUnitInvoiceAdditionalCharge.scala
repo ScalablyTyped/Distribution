@@ -17,9 +17,9 @@ trait SchemaUnitInvoiceAdditionalCharge extends StObject {
   var additionalChargePromotions: js.UndefOr[js.Array[SchemaPromotion]] = js.undefined
   
   /**
-    * [required] Type of the additional charge.
+    * [required] Type of the additional charge. Acceptable values are: - "`shipping`"
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUnitInvoiceAdditionalCharge {
   
@@ -38,9 +38,11 @@ object SchemaUnitInvoiceAdditionalCharge {
     
     inline def setAdditionalChargePromotionsUndefined: Self = StObject.set(x, "additionalChargePromotions", js.undefined)
     
-    inline def setAdditionalChargePromotionsVarargs(value: SchemaPromotion*): Self = StObject.set(x, "additionalChargePromotions", js.Array(value :_*))
+    inline def setAdditionalChargePromotionsVarargs(value: SchemaPromotion*): Self = StObject.set(x, "additionalChargePromotions", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

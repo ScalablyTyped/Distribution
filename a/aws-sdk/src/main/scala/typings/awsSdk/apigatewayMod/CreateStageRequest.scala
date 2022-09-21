@@ -22,7 +22,7 @@ trait CreateStageRequest extends StObject {
   var canarySettings: js.UndefOr[CanarySettings] = js.undefined
   
   /**
-    * [Required] The identifier of the Deployment resource for the Stage resource.
+    * The identifier of the Deployment resource for the Stage resource.
     */
   var deploymentId: String
   
@@ -37,12 +37,12 @@ trait CreateStageRequest extends StObject {
   var documentationVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
   
   /**
-    * [Required] The name for the Stage resource. Stage names can only contain alphanumeric characters, hyphens, and underscores. Maximum length is 128 characters.
+    * The name for the Stage resource. Stage names can only contain alphanumeric characters, hyphens, and underscores. Maximum length is 128 characters.
     */
   var stageName: String
   

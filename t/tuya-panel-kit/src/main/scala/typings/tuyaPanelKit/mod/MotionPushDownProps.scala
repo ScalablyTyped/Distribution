@@ -8,8 +8,28 @@ trait MotionPushDownProps
   extends StObject
      with MotionProps {
   
+  /**
+    * @language zh-CN
+    * @description 下拉的高度
+    * @defaultValue 200
+    */
+  /**
+    * @language en-US
+    * @description Height of pull down
+    * @defaultValue 200
+    */
   var dropHeight: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否竖直居中
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Is it vertically centered
+    * @defaultValue true
+    */
   var isAlign: js.UndefOr[Boolean] = js.undefined
 }
 object MotionPushDownProps {

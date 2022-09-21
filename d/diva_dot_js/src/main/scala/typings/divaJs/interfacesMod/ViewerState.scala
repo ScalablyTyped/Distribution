@@ -141,7 +141,7 @@ object ViewerState {
     
     inline def setCurrentPageIndices(value: js.Array[Double]): Self = StObject.set(x, "currentPageIndices", value.asInstanceOf[js.Any])
     
-    inline def setCurrentPageIndicesVarargs(value: Double*): Self = StObject.set(x, "currentPageIndices", js.Array(value :_*))
+    inline def setCurrentPageIndicesVarargs(value: Double*): Self = StObject.set(x, "currentPageIndices", js.Array(value*))
     
     inline def setHorizontalOffset(value: Double): Self = StObject.set(x, "horizontalOffset", value.asInstanceOf[js.Any])
     
@@ -183,7 +183,7 @@ object ViewerState {
     
     inline def setPageTools(value: js.Array[js.Object]): Self = StObject.set(x, "pageTools", value.asInstanceOf[js.Any])
     
-    inline def setPageToolsVarargs(value: js.Object*): Self = StObject.set(x, "pageTools", js.Array(value :_*))
+    inline def setPageToolsVarargs(value: js.Object*): Self = StObject.set(x, "pageTools", js.Array(value*))
     
     inline def setParentObject(value: HTMLElement): Self = StObject.set(x, "parentObject", value.asInstanceOf[js.Any])
     
@@ -191,7 +191,7 @@ object ViewerState {
     
     inline def setPluginInstances(value: js.Array[js.Object]): Self = StObject.set(x, "pluginInstances", value.asInstanceOf[js.Any])
     
-    inline def setPluginInstancesVarargs(value: js.Object*): Self = StObject.set(x, "pluginInstances", js.Array(value :_*))
+    inline def setPluginInstancesVarargs(value: js.Object*): Self = StObject.set(x, "pluginInstances", js.Array(value*))
     
     inline def setRenderer(value: typings.divaJs.rendererMod.default): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     

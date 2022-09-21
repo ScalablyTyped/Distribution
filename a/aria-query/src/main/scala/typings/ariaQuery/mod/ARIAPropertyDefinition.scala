@@ -19,7 +19,7 @@ trait ARIAPropertyDefinition extends StObject {
   
   var `type`: string | id | idlist | integer | number | boolean | token | tokenlist | tristate
   
-  var value: js.UndefOr[js.Array[String | Boolean]] = js.undefined
+  var values: js.UndefOr[js.Array[String | Boolean]] = js.undefined
 }
 object ARIAPropertyDefinition {
   
@@ -37,10 +37,10 @@ object ARIAPropertyDefinition {
     
     inline def setType(value: string | id | idlist | integer | number | boolean | token | tokenlist | tristate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Array[String | Boolean]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String | Boolean]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValueVarargs(value: (String | Boolean)*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValuesVarargs(value: (String | Boolean)*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

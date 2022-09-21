@@ -27,7 +27,7 @@ trait SettlementReport extends StObject {
   /** Date on which transfer for this payment was initiated by Google, in ISO 8601 format. */
   var transferDate: js.UndefOr[String] = js.undefined
   
-  /** The list of bank identifiers used for the transfer. e.g. Trace ID for Federal Automated Clearing House (ACH). This may also be known as the Wire ID. */
+  /** The list of bank identifiers used for the transfer. For example, Trace ID for Federal Automated Clearing House (ACH). This may also be known as the Wire ID. */
   var transferIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SettlementReport {
@@ -71,6 +71,6 @@ object SettlementReport {
     
     inline def setTransferIdsUndefined: Self = StObject.set(x, "transferIds", js.undefined)
     
-    inline def setTransferIdsVarargs(value: String*): Self = StObject.set(x, "transferIds", js.Array(value :_*))
+    inline def setTransferIdsVarargs(value: String*): Self = StObject.set(x, "transferIds", js.Array(value*))
   }
 }

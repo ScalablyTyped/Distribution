@@ -15,28 +15,28 @@ object gridlinesMod {
     * @param {Scale} xScale The scale to base the x gridlines on. Pass null if no gridlines are desired.
     * @param {Scale} yScale The scale to base the y gridlines on. Pass null if no gridlines are desired.
     */
-  class Gridlines () extends Component {
-    def this(xScale: Scale[js.Any, js.Any]) = this()
-    def this(xScale: Null, yScale: Scale[js.Any, js.Any]) = this()
-    def this(xScale: Scale[js.Any, js.Any], yScale: Scale[js.Any, js.Any]) = this()
+  open class Gridlines () extends Component {
+    def this(xScale: Scale[Any, Any]) = this()
+    def this(xScale: Null, yScale: Scale[Any, Any]) = this()
+    def this(xScale: Scale[Any, Any], yScale: Scale[Any, Any]) = this()
     
-    /* private */ var _betweenX: js.Any = js.native
+    /* private */ var _betweenX: Any = js.native
     
-    /* private */ var _betweenY: js.Any = js.native
+    /* private */ var _betweenY: Any = js.native
     
-    /* private */ def _redrawXLines(): js.Any = js.native
+    /* private */ var _redrawXLines: Any = js.native
     
-    /* private */ def _redrawYLines(): js.Any = js.native
+    /* private */ var _redrawYLines: Any = js.native
     
-    /* private */ var _renderCallback: js.Any = js.native
+    /* private */ var _renderCallback: Any = js.native
     
-    /* private */ var _xLinesContainer: js.Any = js.native
+    /* private */ var _xLinesContainer: Any = js.native
     
-    /* private */ var _xScale: js.Any = js.native
+    /* private */ var _xScale: Any = js.native
     
-    /* private */ var _yLinesContainer: js.Any = js.native
+    /* private */ var _yLinesContainer: Any = js.native
     
-    /* private */ var _yScale: js.Any = js.native
+    /* private */ var _yScale: Any = js.native
     
     /**
       * Gets the between flag for the x axis.

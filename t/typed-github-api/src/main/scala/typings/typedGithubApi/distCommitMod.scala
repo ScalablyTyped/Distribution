@@ -22,7 +22,7 @@ object distCommitMod {
   - typings.typedGithubApi.interfacesCommitMod.CommitSummary because Already inherited
   - typings.typedGithubApi.interfacesCommitMod.Commit because var conflicts: author, committer, gitCommit, htmlUri, parents. Inlined changes, files */ @JSImport("typed-github-api/dist/commit", "CommitClass")
   @js.native
-  class CommitClass protected () extends CommitSummaryClass {
+  open class CommitClass protected () extends CommitSummaryClass {
     def this(repository: RepositoryRefClass, data: Commit) = this()
     
     var changes: GitChanges = js.native
@@ -32,7 +32,7 @@ object distCommitMod {
   
   @JSImport("typed-github-api/dist/commit", "CommitSummaryClass")
   @js.native
-  class CommitSummaryClass protected ()
+  open class CommitSummaryClass protected ()
     extends CommitRefClass
        with CommitSummary {
     def this(repository: RepositoryRefClass, data: typings.typedGithubApi.commitMod.CommitSummary) = this()
@@ -64,7 +64,7 @@ object distCommitMod {
   - typings.typedGithubApi.interfacesCommitMod.GitCommitSummary because Already inherited
   - typings.typedGithubApi.interfacesCommitMod.GitCommit because var conflicts: author, committer, message. Inlined parents */ @JSImport("typed-github-api/dist/commit", "GitCommitClass")
   @js.native
-  class GitCommitClass protected () extends GitCommitSummaryClass {
+  open class GitCommitClass protected () extends GitCommitSummaryClass {
     def this(repository: RepositoryRefClass, data: typings.typedGithubApi.commitMod.GitCommit) = this()
     
     var parents: js.Array[CommitRef] = js.native
@@ -72,7 +72,7 @@ object distCommitMod {
   
   @JSImport("typed-github-api/dist/commit", "GitCommitSummaryClass")
   @js.native
-  class GitCommitSummaryClass protected ()
+  open class GitCommitSummaryClass protected ()
     extends CommitRefClass
        with GitCommitSummary {
     def this(

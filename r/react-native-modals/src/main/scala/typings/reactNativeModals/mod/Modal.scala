@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait Modal
-  extends Component[ModalProps, js.Object, js.Any] {
+  extends Component[ModalProps, js.Object, Any] {
   
   def dismiss(): Unit = js.native
   

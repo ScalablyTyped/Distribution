@@ -29,7 +29,7 @@ object ListEventTrackersResponse {
     
     inline def setEventTrackersUndefined: Self = StObject.set(x, "eventTrackers", js.undefined)
     
-    inline def setEventTrackersVarargs(value: EventTrackerSummary*): Self = StObject.set(x, "eventTrackers", js.Array(value :_*))
+    inline def setEventTrackersVarargs(value: EventTrackerSummary*): Self = StObject.set(x, "eventTrackers", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

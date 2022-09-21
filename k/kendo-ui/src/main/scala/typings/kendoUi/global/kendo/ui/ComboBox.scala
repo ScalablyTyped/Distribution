@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.ComboBox")
 @js.native
-class ComboBox protected ()
+open class ComboBox protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.ComboBox {
   def this(element: Element) = this()

@@ -32,7 +32,7 @@ object ImportAssetsFromS3ResponseDetails {
     
     inline def setAssetSources(value: ListOfAssetSourceEntry): Self = StObject.set(x, "AssetSources", value.asInstanceOf[js.Any])
     
-    inline def setAssetSourcesVarargs(value: AssetSourceEntry*): Self = StObject.set(x, "AssetSources", js.Array(value :_*))
+    inline def setAssetSourcesVarargs(value: AssetSourceEntry*): Self = StObject.set(x, "AssetSources", js.Array(value*))
     
     inline def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     

@@ -42,12 +42,6 @@ object groupHeaderTypesMod {
     extends StObject
        with IGroupDividerProps {
     
-    /** Defines an element's number or position in the current set of listitems or treeitems */
-    var ariaPosInSet: js.UndefOr[Double] = js.undefined
-    
-    /** Defines the number of items in the current set of listitems or treeitems */
-    var ariaSetSize: js.UndefOr[Double] = js.undefined
-    
     /** Defines the name of a custom icon to be used for group headers. If not set, the default icon will be used */
     var expandButtonIcon: js.UndefOr[String] = js.undefined
     
@@ -80,14 +74,6 @@ object groupHeaderTypesMod {
     }
     
     extension [Self <: IGroupHeaderProps](x: Self) {
-      
-      inline def setAriaPosInSet(value: Double): Self = StObject.set(x, "ariaPosInSet", value.asInstanceOf[js.Any])
-      
-      inline def setAriaPosInSetUndefined: Self = StObject.set(x, "ariaPosInSet", js.undefined)
-      
-      inline def setAriaSetSize(value: Double): Self = StObject.set(x, "ariaSetSize", value.asInstanceOf[js.Any])
-      
-      inline def setAriaSetSizeUndefined: Self = StObject.set(x, "ariaSetSize", js.undefined)
       
       inline def setExpandButtonIcon(value: String): Self = StObject.set(x, "expandButtonIcon", value.asInstanceOf[js.Any])
       

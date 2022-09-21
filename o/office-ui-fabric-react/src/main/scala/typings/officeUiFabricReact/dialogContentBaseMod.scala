@@ -10,11 +10,11 @@ object dialogContentBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Dialog/DialogContent.base", "DialogContentBase")
   @js.native
-  class DialogContentBase protected ()
-    extends Component[IDialogContentProps, js.Object, js.Any] {
+  open class DialogContentBase protected ()
+    extends Component[IDialogContentProps, js.Object, Any] {
     def this(props: IDialogContentProps) = this()
     
-    /* private */ var _groupChildren: js.Any = js.native
+    /* private */ var _groupChildren: Any = js.native
   }
   /* static members */
   object DialogContentBase {

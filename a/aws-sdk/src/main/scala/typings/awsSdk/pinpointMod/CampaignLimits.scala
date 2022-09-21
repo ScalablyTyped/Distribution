@@ -22,6 +22,11 @@ trait CampaignLimits extends StObject {
   var MessagesPerSecond: js.UndefOr[integer] = js.undefined
   
   /**
+    * The maximum total number of messages that the campaign can send per user session.
+    */
+  var Session: js.UndefOr[integer] = js.undefined
+  
+  /**
     * The maximum number of messages that a campaign can send to a single endpoint during the course of the campaign. If a campaign recurs, this setting applies to all runs of the campaign. The maximum value is 100.
     */
   var Total: js.UndefOr[integer] = js.undefined
@@ -46,6 +51,10 @@ object CampaignLimits {
     inline def setMessagesPerSecond(value: integer): Self = StObject.set(x, "MessagesPerSecond", value.asInstanceOf[js.Any])
     
     inline def setMessagesPerSecondUndefined: Self = StObject.set(x, "MessagesPerSecond", js.undefined)
+    
+    inline def setSession(value: integer): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    
+    inline def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
     
     inline def setTotal(value: integer): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     

@@ -11,9 +11,9 @@ A through2 to create an Array.prototype.map analog for streams.
 | Full name          | through2-map |
 | Keywords           | streams, through, through2, map |
 | # releases         | 0 |
-| # dependents       | 115 |
-| # downloads        | 4229894 |
-| # stars            | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 452908.0 |
+| # stars            | 70.0 |
 
 ## Links
 - [Homepage](https://github.com/brycebaril/through2-map#readme)

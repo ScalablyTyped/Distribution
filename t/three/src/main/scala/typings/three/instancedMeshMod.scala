@@ -1,9 +1,8 @@
 package typings.three
 
-import typings.three.bufferAttributeMod.BufferAttribute
 import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.colorMod.Color
-import typings.three.geometryMod.Geometry
+import typings.three.instancedBufferAttributeMod.InstancedBufferAttribute
 import typings.three.materialMod.Material
 import typings.three.matrix4Mod.Matrix4
 import typings.three.meshMod.Mesh
@@ -16,14 +15,23 @@ object instancedMeshMod {
   
   @JSImport("three/src/objects/InstancedMesh", "InstancedMesh")
   @js.native
-  class InstancedMesh[TGeometry /* <: Geometry | BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] protected () extends Mesh[TGeometry, TMaterial] {
+  open class InstancedMesh[TGeometry /* <: BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] protected () extends Mesh[TGeometry, TMaterial] {
     def this(geometry: TGeometry, material: TMaterial, count: Double) = this()
+    def this(geometry: TGeometry, material: Unit, count: Double) = this()
+    def this(geometry: Unit, material: TMaterial, count: Double) = this()
+    def this(geometry: Unit, material: Unit, count: Double) = this()
     
     var count: Double = js.native
     
+    def dispose(): Unit = js.native
+    
+    def getColorAt(index: Double, color: Color): Unit = js.native
+    
     def getMatrixAt(index: Double, matrix: Matrix4): Unit = js.native
     
-    var instanceMatrix: BufferAttribute = js.native
+    var instanceColor: Null | InstancedBufferAttribute = js.native
+    
+    var instanceMatrix: InstancedBufferAttribute = js.native
     
     val isInstancedMesh: `true` = js.native
     

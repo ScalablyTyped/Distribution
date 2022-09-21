@@ -10,7 +10,7 @@ object flactagreaderMod {
   
   @JSImport("jsmediatags/build2/FLACTagReader", JSImport.Default)
   @js.native
-  class default () extends FLACTagReader
+  open class default () extends FLACTagReader
   /* static members */
   object default {
     

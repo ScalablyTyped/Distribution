@@ -8,5 +8,5 @@ object commentMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/_Comment", "_Comment")
   @js.native
-  val Comment: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Comment: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

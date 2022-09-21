@@ -33,6 +33,6 @@ object IEventSubscription {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: IEventFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: IEventFilter*): Self = StObject.set(x, "filters", js.Array(value*))
   }
 }

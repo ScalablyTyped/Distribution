@@ -12,7 +12,7 @@ object objectMod {
   
   @JSImport("guacamole-client/lib/Object", "Object")
   @js.native
-  class Object protected () extends StObject {
+  open class Object protected () extends StObject {
     /**
       * @param client The client owning this object.
       * @param index The index of this object.

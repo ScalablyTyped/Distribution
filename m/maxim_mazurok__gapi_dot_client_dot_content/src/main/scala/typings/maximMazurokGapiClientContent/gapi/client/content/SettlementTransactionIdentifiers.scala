@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SettlementTransactionIdentifiers extends StObject {
   
-  /** The identifier of the adjustments, if it is available. */
+  /** The identifier of the adjustments, if it's available. */
   var adjustmentId: js.UndefOr[String] = js.undefined
   
   /** The merchant provided order ID. */
@@ -53,7 +53,7 @@ object SettlementTransactionIdentifiers {
     
     inline def setShipmentIdsUndefined: Self = StObject.set(x, "shipmentIds", js.undefined)
     
-    inline def setShipmentIdsVarargs(value: String*): Self = StObject.set(x, "shipmentIds", js.Array(value :_*))
+    inline def setShipmentIdsVarargs(value: String*): Self = StObject.set(x, "shipmentIds", js.Array(value*))
     
     inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     

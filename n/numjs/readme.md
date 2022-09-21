@@ -1,7 +1,7 @@
 
 # Scala.js typings for numjs
 
-Typings are for version 0.14
+Typings are for version 0.16
 
 ## Library description:
 Like NumPy, in JavaScript
@@ -10,10 +10,10 @@ Like NumPy, in JavaScript
 | ------------------ | :-------------: |
 | Full name          | numjs |
 | Keywords           | ndarray, array, multi, multidimensional, dimension, higher, image, volume, webgl, tensor, matrix, linear, algebra, science, numerical, computing, stride, shape, numpy |
-| # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 31179 |
-| # stars            | 7 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3768.0 |
+| # stars            | 2033.0 |
 
 ## Links
 - [Homepage](https://github.com/nicolaspanel/numjs#readme)

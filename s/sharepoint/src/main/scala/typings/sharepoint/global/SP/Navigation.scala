@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Navigation")
 @js.native
-class Navigation ()
+open class Navigation ()
   extends StObject
      with typings.sharepoint.SP.Navigation

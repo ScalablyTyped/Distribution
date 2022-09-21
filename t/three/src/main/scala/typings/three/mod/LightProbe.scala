@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "LightProbe")
 @js.native
-class LightProbe ()
-  extends typings.three.lightProbeMod.LightProbe {
+open class LightProbe ()
+  extends typings.three.threeMod.LightProbe {
   def this(sh: typings.three.sphericalHarmonics3Mod.SphericalHarmonics3) = this()
   def this(sh: Unit, intensity: Double) = this()
   def this(sh: typings.three.sphericalHarmonics3Mod.SphericalHarmonics3, intensity: Double) = this()

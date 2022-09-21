@@ -9,36 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object resizeListenerMod {
   
-  object ResizeListener {
-    
-    inline def apply(hasOnResizeOptionsImmediate: ResizeListenerProps): Null = ^.asInstanceOf[js.Dynamic].apply(hasOnResizeOptionsImmediate.asInstanceOf[js.Any]).asInstanceOf[Null]
-    
-    @JSImport("@react-md/utils/types/sizing/ResizeListener", "ResizeListener")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    object propTypes {
-      
-      @JSImport("@react-md/utils/types/sizing/ResizeListener", "ResizeListener.propTypes")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@react-md/utils/types/sizing/ResizeListener", "ResizeListener.propTypes.immediate")
-      @js.native
-      def immediate: js.Any = js.native
-      inline def immediate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("immediate")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/utils/types/sizing/ResizeListener", "ResizeListener.propTypes.onResize")
-      @js.native
-      def onResize: js.Any = js.native
-      inline def onResize_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onResize")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/utils/types/sizing/ResizeListener", "ResizeListener.propTypes.options")
-      @js.native
-      def options: js.Any = js.native
-      inline def options_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
-    }
-  }
+  @JSImport("@react-md/utils/types/sizing/ResizeListener", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def ResizeListener(hasOnResizeOptionsImmediate: ResizeListenerProps): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ResizeListener")(hasOnResizeOptionsImmediate.asInstanceOf[js.Any]).asInstanceOf[Null]
   
   /* Inlined std.Omit<@react-md/utils.@react-md/utils/types/sizing/useResizeListener.ResizeListenerOptions, 'enabled'> */
   trait ResizeListenerProps extends StObject {

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/PostProcesses/index", "ImageProcessingPostProcess")
 @js.native
-class ImageProcessingPostProcess protected ()
+open class ImageProcessingPostProcess protected ()
   extends typings.babylonjs.imageProcessingPostProcessMod.ImageProcessingPostProcess {
   def this(
     name: String,

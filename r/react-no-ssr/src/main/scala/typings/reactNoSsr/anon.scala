@@ -1,24 +1,31 @@
 package typings.reactNoSsr
 
 import typings.react.mod.ReactChild
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait OnSSR extends StObject {
+  trait Children extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var onSSR: js.UndefOr[ReactChild] = js.undefined
   }
-  object OnSSR {
+  object Children {
     
-    inline def apply(): OnSSR = {
+    inline def apply(): Children = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[OnSSR]
+      __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: OnSSR](x: Self) {
+    extension [Self <: Children](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setOnSSR(value: ReactChild): Self = StObject.set(x, "onSSR", value.asInstanceOf[js.Any])
       

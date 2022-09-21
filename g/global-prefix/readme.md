@@ -10,15 +10,12 @@ Get the npm global path prefix.
 | ------------------ | :-------------: |
 | Full name          | global-prefix |
 | Keywords           | global, module, modules, npm, path, prefix, resolve |
-| # releases         | 2 |
-| # dependents       | 44 |
-| # downloads        | 525587969 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.4503702333333336E7 |
+| # stars            | 26.0 |
 
 ## Links
-- [Homepage](https://github.com/jonschlinkert/global-prefix)
-- [Bugs](https://github.com/jonschlinkert/global-prefix/issues)
-- [Repository](https://github.com/jonschlinkert/global-prefix)
 - [Npm](https://www.npmjs.com/package/global-prefix)
     
 

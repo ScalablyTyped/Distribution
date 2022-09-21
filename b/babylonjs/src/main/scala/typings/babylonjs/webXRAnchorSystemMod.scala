@@ -16,7 +16,7 @@ object webXRAnchorSystemMod {
   
   @JSImport("babylonjs/XR/features/WebXRAnchorSystem", "WebXRAnchorSystem")
   @js.native
-  class WebXRAnchorSystem protected () extends WebXRAbstractFeature {
+  open class WebXRAnchorSystem protected () extends WebXRAbstractFeature {
     /**
       * constructs a new anchor system
       * @param _xrSessionManager an instance of WebXRSessionManager
@@ -25,31 +25,31 @@ object webXRAnchorSystemMod {
     def this(_xrSessionManager: WebXRSessionManager) = this()
     def this(_xrSessionManager: WebXRSessionManager, _options: IWebXRAnchorSystemOptions) = this()
     
-    /* private */ var _createAnchorAtTransformation: js.Any = js.native
+    /* private */ var _createAnchorAtTransformation: Any = js.native
     
     /**
       * avoiding using Array.find for global support.
       * @param xrAnchor the plane to find in the array
       */
-    /* private */ var _findIndexInAnchorArray: js.Any = js.native
+    /* private */ var _findIndexInAnchorArray: Any = js.native
     
-    /* private */ var _futureAnchors: js.Any = js.native
+    /* private */ var _futureAnchors: Any = js.native
     
-    /* private */ var _lastFrameDetected: js.Any = js.native
+    /* private */ var _lastFrameDetected: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _populateTmpTransformation: js.Any = js.native
+    /* private */ var _populateTmpTransformation: Any = js.native
     
-    /* private */ var _referenceSpaceForFrameAnchors: js.Any = js.native
+    /* private */ var _referenceSpaceForFrameAnchors: Any = js.native
     
-    /* private */ var _tmpQuaternion: js.Any = js.native
+    /* private */ var _tmpQuaternion: Any = js.native
     
-    /* private */ var _tmpVector: js.Any = js.native
+    /* private */ var _tmpVector: Any = js.native
     
-    /* private */ var _trackedAnchors: js.Any = js.native
+    /* private */ var _trackedAnchors: Any = js.native
     
-    /* private */ var _updateAnchorWithXRFrame: js.Any = js.native
+    /* private */ var _updateAnchorWithXRFrame: Any = js.native
     
     /**
       * Add a new anchor at a specific position and rotation

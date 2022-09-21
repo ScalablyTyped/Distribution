@@ -44,7 +44,7 @@ object jQueryCropBox {
     /**
       * Generate a Blob with the cropped image (requires HTML5 compliant browser).
       */
-    def getBlob(): js.Any
+    def getBlob(): Any
     
     /**
       * Generate a URL for the cropped image on the client (requires HTML5 compliant browser).
@@ -90,7 +90,7 @@ object jQueryCropBox {
     
     inline def apply(
       drag: CropboxDragOptions => Unit,
-      getBlob: () => js.Any,
+      getBlob: () => Any,
       getDataURL: () => String,
       on: (String, EventCallback) => Unit,
       remove: () => Unit,
@@ -108,7 +108,7 @@ object jQueryCropBox {
       
       inline def setDrag(value: CropboxDragOptions => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
       
-      inline def setGetBlob(value: () => js.Any): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
+      inline def setGetBlob(value: () => Any): Self = StObject.set(x, "getBlob", js.Any.fromFunction0(value))
       
       inline def setGetDataURL(value: () => String): Self = StObject.set(x, "getDataURL", js.Any.fromFunction0(value))
       
@@ -191,7 +191,7 @@ object jQueryCropBox {
     /**
       * If not null, this is the entire html block that should appear on hover over the image for instructions and/or buttons (could include the zoom in/out buttons for example). If null, the default html block is used which has the text "Click to drag" and the zoom in/out buttons. Use false to disable controls.
       */
-    var controls: js.UndefOr[js.Any] = js.undefined
+    var controls: js.UndefOr[Any] = js.undefined
     
     /**
       * Height in pixels of the cropping window
@@ -232,7 +232,7 @@ object jQueryCropBox {
     
     extension [Self <: CropboxOptions](x: Self) {
       
-      inline def setControls(value: js.Any): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: Any): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
       inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
       
@@ -291,5 +291,5 @@ object jQueryCropBox {
     }
   }
   
-  type EventCallback = js.Function3[/* e */ Event, /* data */ js.Any, /* img */ Cropbox, Unit]
+  type EventCallback = js.Function3[/* e */ Event, /* data */ Any, /* img */ Cropbox, Unit]
 }

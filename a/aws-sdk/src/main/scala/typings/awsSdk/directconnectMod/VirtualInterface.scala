@@ -32,9 +32,14 @@ trait VirtualInterface extends StObject {
   var authKey: js.UndefOr[BGPAuthKey] = js.undefined
   
   /**
-    * The Direct Connect endpoint on which the virtual interface terminates.
+    * The Direct Connect endpoint that terminates the physical connection.
     */
   var awsDeviceV2: js.UndefOr[AwsDeviceV2] = js.undefined
+  
+  /**
+    * The Direct Connect endpoint that terminates the logical connection. This device might be different than the device that terminates the physical connection.
+    */
+  var awsLogicalDeviceId: js.UndefOr[AwsLogicalDeviceId] = js.undefined
   
   /**
     * The BGP peers configured on this virtual interface.
@@ -77,19 +82,24 @@ trait VirtualInterface extends StObject {
   var mtu: js.UndefOr[MTU] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the virtual interface.
+    * The ID of the Amazon Web Services account that owns the virtual interface.
     */
   var ownerAccount: js.UndefOr[OwnerAccount] = js.undefined
   
   /**
-    * The AWS Region where the virtual interface is located.
+    * The Amazon Web Services Region where the virtual interface is located.
     */
   var region: js.UndefOr[Region] = js.undefined
   
   /**
-    * The routes to be advertised to the AWS network in this Region. Applies to public virtual interfaces.
+    * The routes to be advertised to the Amazon Web Services network in this Region. Applies to public virtual interfaces.
     */
   var routeFilterPrefixes: js.UndefOr[RouteFilterPrefixList] = js.undefined
+  
+  /**
+    * Indicates whether SiteLink is enabled.
+    */
+  var siteLinkEnabled: js.UndefOr[SiteLinkEnabled] = js.undefined
   
   /**
     * The tags associated with the virtual interface.
@@ -159,11 +169,15 @@ object VirtualInterface {
     
     inline def setAwsDeviceV2Undefined: Self = StObject.set(x, "awsDeviceV2", js.undefined)
     
+    inline def setAwsLogicalDeviceId(value: AwsLogicalDeviceId): Self = StObject.set(x, "awsLogicalDeviceId", value.asInstanceOf[js.Any])
+    
+    inline def setAwsLogicalDeviceIdUndefined: Self = StObject.set(x, "awsLogicalDeviceId", js.undefined)
+    
     inline def setBgpPeers(value: BGPPeerList): Self = StObject.set(x, "bgpPeers", value.asInstanceOf[js.Any])
     
     inline def setBgpPeersUndefined: Self = StObject.set(x, "bgpPeers", js.undefined)
     
-    inline def setBgpPeersVarargs(value: BGPPeer*): Self = StObject.set(x, "bgpPeers", js.Array(value :_*))
+    inline def setBgpPeersVarargs(value: BGPPeer*): Self = StObject.set(x, "bgpPeers", js.Array(value*))
     
     inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
@@ -205,13 +219,17 @@ object VirtualInterface {
     
     inline def setRouteFilterPrefixesUndefined: Self = StObject.set(x, "routeFilterPrefixes", js.undefined)
     
-    inline def setRouteFilterPrefixesVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "routeFilterPrefixes", js.Array(value :_*))
+    inline def setRouteFilterPrefixesVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "routeFilterPrefixes", js.Array(value*))
+    
+    inline def setSiteLinkEnabled(value: SiteLinkEnabled): Self = StObject.set(x, "siteLinkEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setSiteLinkEnabledUndefined: Self = StObject.set(x, "siteLinkEnabled", js.undefined)
     
     inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setVirtualGatewayId(value: VirtualGatewayId): Self = StObject.set(x, "virtualGatewayId", value.asInstanceOf[js.Any])
     

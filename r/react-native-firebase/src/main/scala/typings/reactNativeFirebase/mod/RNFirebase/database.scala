@@ -3,7 +3,6 @@ package typings.reactNativeFirebase.mod.RNFirebase
 import org.scalablytyped.runtime.StringDictionary
 import typings.reactNativeFirebase.anon.Priority
 import typings.reactNativeFirebase.anon.TIMESTAMP
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +33,7 @@ object database {
     
     def toJSON(): js.Object | Null
     
-    def `val`(): js.Any
+    def `val`(): Any
   }
   object DataSnapshot {
     
@@ -49,7 +48,7 @@ object database {
       numChildren: () => Double,
       ref: Reference,
       toJSON: () => js.Object | Null,
-      `val`: () => js.Any
+      `val`: () => Any
     ): DataSnapshot = {
       val __obj = js.Dynamic.literal(child = js.Any.fromFunction1(child), exists = js.Any.fromFunction0(exists), exportVal = js.Any.fromFunction0(exportVal), forEach = js.Any.fromFunction1(forEach), getPriority = js.Any.fromFunction0(getPriority), hasChild = js.Any.fromFunction1(hasChild), hasChildren = js.Any.fromFunction0(hasChildren), numChildren = js.Any.fromFunction0(numChildren), ref = ref.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), key = null)
       __obj.updateDynamic("val")(js.Any.fromFunction0(`val`))
@@ -82,19 +81,19 @@ object database {
       
       inline def setToJSON(value: () => js.Object | Null): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      inline def setVal(value: () => js.Any): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
+      inline def setVal(value: () => Any): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
     }
   }
   
   @js.native
   trait Database
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /**
       * Removes all event handlers and their native subscriptions
       */
-    def cleanup(): js.Promise[js.Any] = js.native
+    def cleanup(): js.Promise[Any] = js.native
     
     /**
       * disconnect to firebase backend
@@ -109,10 +108,10 @@ object database {
     /**
       * unregister listener
       */
-    def off(path: String, modifiersString: String): js.Any = js.native
-    def off(path: String, modifiersString: String, eventName: String): js.Any = js.native
-    def off(path: String, modifiersString: String, eventName: String, origCB: js.Function0[Unit]): js.Any = js.native
-    def off(path: String, modifiersString: String, eventName: Unit, origCB: js.Function0[Unit]): js.Any = js.native
+    def off(path: String, modifiersString: String): Any = js.native
+    def off(path: String, modifiersString: String, eventName: String): Any = js.native
+    def off(path: String, modifiersString: String, eventName: String, origCB: js.Function0[Unit]): Any = js.native
+    def off(path: String, modifiersString: String, eventName: Unit, origCB: js.Function0[Unit]): Any = js.native
     
     /**
       * register listener
@@ -124,7 +123,7 @@ object database {
       eventName: String,
       cb: js.Function0[Unit],
       errorCb: js.Function0[Unit]
-    ): js.Any = js.native
+    ): Any = js.native
     
     /**
       * Returns a new firebase reference instance
@@ -262,7 +261,7 @@ object database {
     def toJSON(): js.Object = js.native
   }
   
-  type QueryErrorCallback = js.Function1[/* e */ Error, Unit]
+  type QueryErrorCallback = js.Function1[/* e */ js.Error, Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactNativeFirebase.reactNativeFirebaseStrings.value
@@ -296,60 +295,60 @@ object database {
     
     var key: String | Null = js.native
     
-    def onDisconnect(): js.Any = js.native
+    def onDisconnect(): Any = js.native
     
     var parent: Reference | Null = js.native
     
-    def push(): ThenableReference[js.Any] = js.native
-    def push(value: js.Any): ThenableReference[js.Any] = js.native
-    def push(value: js.Any, onComplete: js.Function1[/* a */ RnError | Null, js.Any]): ThenableReference[js.Any] = js.native
-    def push(value: Unit, onComplete: js.Function1[/* a */ RnError | Null, js.Any]): ThenableReference[js.Any] = js.native
+    def push(): ThenableReference[Any] = js.native
+    def push(value: Any): ThenableReference[Any] = js.native
+    def push(value: Any, onComplete: js.Function1[/* a */ RnError | Null, Any]): ThenableReference[Any] = js.native
+    def push(value: Unit, onComplete: js.Function1[/* a */ RnError | Null, Any]): ThenableReference[Any] = js.native
     
-    def remove(): js.Promise[js.Any] = js.native
-    def remove(onComplete: js.Function1[/* a */ RnError | Null, js.Any]): js.Promise[js.Any] = js.native
+    def remove(): js.Promise[Any] = js.native
+    def remove(onComplete: js.Function1[/* a */ RnError | Null, Any]): js.Promise[Any] = js.native
     
     var root: Reference = js.native
     
-    def set(value: js.Any): js.Promise[js.Any] = js.native
-    def set(value: js.Any, onComplete: js.Function1[/* a */ RnError | Null, js.Any]): js.Promise[js.Any] = js.native
+    def set(value: Any): js.Promise[Any] = js.native
+    def set(value: Any, onComplete: js.Function1[/* a */ RnError | Null, Any]): js.Promise[Any] = js.native
     
-    def setPriority(priority: String, onComplete: js.Function1[/* a */ RnError | Null, js.Any]): js.Promise[js.Any] = js.native
-    def setPriority(priority: Double, onComplete: js.Function1[/* a */ RnError | Null, js.Any]): js.Promise[js.Any] = js.native
-    def setPriority(priority: Null, onComplete: js.Function1[/* a */ RnError | Null, js.Any]): js.Promise[js.Any] = js.native
+    def setPriority(priority: String, onComplete: js.Function1[/* a */ RnError | Null, Any]): js.Promise[Any] = js.native
+    def setPriority(priority: Double, onComplete: js.Function1[/* a */ RnError | Null, Any]): js.Promise[Any] = js.native
+    def setPriority(priority: Null, onComplete: js.Function1[/* a */ RnError | Null, Any]): js.Promise[Any] = js.native
     
-    def setWithPriority(newVal: js.Any): js.Promise[js.Any] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: String): js.Promise[js.Any] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: String, onComplete: js.Function1[/* a */ RnError | Null, js.Any]): js.Promise[js.Any] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: Double): js.Promise[js.Any] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: Double, onComplete: js.Function1[/* a */ RnError | Null, js.Any]): js.Promise[js.Any] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: Null, onComplete: js.Function1[/* a */ RnError | Null, js.Any]): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: Any): js.Promise[Any] = js.native
+    def setWithPriority(newVal: Any, newPriority: String): js.Promise[Any] = js.native
+    def setWithPriority(newVal: Any, newPriority: String, onComplete: js.Function1[/* a */ RnError | Null, Any]): js.Promise[Any] = js.native
+    def setWithPriority(newVal: Any, newPriority: Double): js.Promise[Any] = js.native
+    def setWithPriority(newVal: Any, newPriority: Double, onComplete: js.Function1[/* a */ RnError | Null, Any]): js.Promise[Any] = js.native
+    def setWithPriority(newVal: Any, newPriority: Null, onComplete: js.Function1[/* a */ RnError | Null, Any]): js.Promise[Any] = js.native
     
-    def transaction(transactionUpdate: js.Function1[/* a */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+    def transaction(transactionUpdate: js.Function1[/* a */ Any, Any]): js.Promise[Any] = js.native
     def transaction(
-      transactionUpdate: js.Function1[/* a */ js.Any, js.Any],
-      onComplete: js.Function3[/* a */ RnError | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, js.Any]
-    ): js.Promise[js.Any] = js.native
+      transactionUpdate: js.Function1[/* a */ Any, Any],
+      onComplete: js.Function3[/* a */ RnError | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, Any]
+    ): js.Promise[Any] = js.native
     def transaction(
-      transactionUpdate: js.Function1[/* a */ js.Any, js.Any],
-      onComplete: js.Function3[/* a */ RnError | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, js.Any],
+      transactionUpdate: js.Function1[/* a */ Any, Any],
+      onComplete: js.Function3[/* a */ RnError | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, Any],
       applyLocally: Boolean
-    ): js.Promise[js.Any] = js.native
-    def transaction(transactionUpdate: js.Function1[/* a */ js.Any, js.Any], onComplete: Unit, applyLocally: Boolean): js.Promise[js.Any] = js.native
+    ): js.Promise[Any] = js.native
+    def transaction(transactionUpdate: js.Function1[/* a */ Any, Any], onComplete: Unit, applyLocally: Boolean): js.Promise[Any] = js.native
     
-    def update(values: js.Object): js.Promise[js.Any] = js.native
-    def update(values: js.Object, onComplete: js.Function1[/* a */ RnError | Null, js.Any]): js.Promise[js.Any] = js.native
+    def update(values: js.Object): js.Promise[Any] = js.native
+    def update(values: js.Object, onComplete: js.Function1[/* a */ RnError | Null, Any]): js.Promise[Any] = js.native
   }
   
   @js.native
   trait RnReference
     extends StObject
        with Reference
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
-    def filter(name: String, value: js.Any): js.Any = js.native
-    def filter(name: String, value: js.Any, key: String): js.Any = js.native
+    def filter(name: String, value: Any): Any = js.native
+    def filter(name: String, value: Any, key: String): Any = js.native
     
-    def keepSynced(bool: Boolean): js.Any = js.native
+    def keepSynced(bool: Boolean): Any = js.native
   }
   
   @js.native

@@ -11,14 +11,12 @@ Drag and drop helpers for Reactabular
 | Full name          | reactabular-dnd |
 | Keywords           | react, reactjs, table, tables, reactabular, dnd |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 68428 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 7332.0 |
+| # stars            | 910.0 |
 
 ## Links
 - [Homepage](http://reactabular.js.org/)
-- [Bugs](https://github.com/reactabular/reactabular/issues)
-- [Repository](https://github.com/reactabular/reactabular)
 - [Npm](https://www.npmjs.com/package/reactabular-dnd)
     
 

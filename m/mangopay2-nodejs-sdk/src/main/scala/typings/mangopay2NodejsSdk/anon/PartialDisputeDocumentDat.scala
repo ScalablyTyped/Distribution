@@ -1,14 +1,14 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.mod.Timestamp
-import typings.mangopay2NodejsSdk.mod.disputeDocument.DisputeDocumentType
-import typings.mangopay2NodejsSdk.mod.disputeDocument.DocumentStatus
-import typings.mangopay2NodejsSdk.mod.disputeDocument.RefusedReasonType
+import typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DisputeDocumentType
+import typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.DocumentStatus
+import typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.RefusedReasonType
+import typings.mangopay2NodejsSdk.typesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.disputeDocument.DisputeDocumentData> */
+/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/disputeDocument.disputeDocument.DisputeDocumentData> */
 trait PartialDisputeDocumentDat extends StObject {
   
   var CreationDate: js.UndefOr[Double] = js.undefined
@@ -21,7 +21,7 @@ trait PartialDisputeDocumentDat extends StObject {
   
   var RefusedReasonMessage: js.UndefOr[String] = js.undefined
   
-  var RefusedReasonType: js.UndefOr[typings.mangopay2NodejsSdk.mod.disputeDocument.RefusedReasonType] = js.undefined
+  var RefusedReasonType: js.UndefOr[typings.mangopay2NodejsSdk.disputeDocumentMod.disputeDocument.RefusedReasonType] = js.undefined
   
   var Status: js.UndefOr[DocumentStatus] = js.undefined
   

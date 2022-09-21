@@ -13,48 +13,45 @@ object focustrackerMod {
   
   @JSImport("@lumino/widgets/types/focustracker", "FocusTracker")
   @js.native
-  /**
-    * Construct a new focus tracker.
-    */
-  class FocusTracker[T /* <: Widget */] ()
+  open class FocusTracker[T /* <: Widget */] ()
     extends StObject
        with IDisposable {
     
-    /* private */ var _activeChanged: js.Any = js.native
+    /* private */ var _activeChanged: Any = js.native
     
-    /* private */ var _activeWidget: js.Any = js.native
+    /* private */ var _activeWidget: Any = js.native
     
-    /* private */ var _counter: js.Any = js.native
+    /* private */ var _counter: Any = js.native
     
-    /* private */ var _currentChanged: js.Any = js.native
+    /* private */ var _currentChanged: Any = js.native
     
-    /* private */ var _currentWidget: js.Any = js.native
+    /* private */ var _currentWidget: Any = js.native
     
     /**
       * Handle the `'blur'` event for a tracked widget.
       */
-    /* private */ var _evtBlur: js.Any = js.native
+    /* private */ var _evtBlur: Any = js.native
     
     /**
       * Handle the `'focus'` event for a tracked widget.
       */
-    /* private */ var _evtFocus: js.Any = js.native
+    /* private */ var _evtFocus: Any = js.native
     
-    /* private */ var _nodes: js.Any = js.native
+    /* private */ var _nodes: Any = js.native
     
-    /* private */ var _numbers: js.Any = js.native
+    /* private */ var _numbers: Any = js.native
     
     /**
       * Handle the `disposed` signal for a tracked widget.
       */
-    /* private */ var _onWidgetDisposed: js.Any = js.native
+    /* private */ var _onWidgetDisposed: Any = js.native
     
     /**
       * Set the current and active widgets for the tracker.
       */
-    /* private */ var _setWidgets: js.Any = js.native
+    /* private */ var _setWidgets: Any = js.native
     
-    /* private */ var _widgets: js.Any = js.native
+    /* private */ var _widgets: Any = js.native
     
     /**
       * A signal emitted when the active widget has changed.

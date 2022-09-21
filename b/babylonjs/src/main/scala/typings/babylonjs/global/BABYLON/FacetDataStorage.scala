@@ -2,7 +2,7 @@ package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.IndicesArray
 import typings.babylonjs.anon.Ind
-import typings.babylonjs.anon.X
+import typings.babylonjs.anon.Y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** @hidden */
 @JSGlobal("BABYLON._FacetDataStorage")
 @js.native
-class FacetDataStorage ()
+open class FacetDataStorage ()
   extends StObject
      with typings.babylonjs.BABYLON.FacetDataStorage {
   
@@ -48,7 +48,7 @@ class FacetDataStorage ()
   var facetNormals: js.Array[typings.babylonjs.BABYLON.Vector3] = js.native
   
   /* CompleteClass */
-  var facetParameters: js.Any = js.native
+  var facetParameters: Any = js.native
   
   /* CompleteClass */
   var facetPartitioning: js.Array[js.Array[Double]] = js.native
@@ -66,5 +66,5 @@ class FacetDataStorage ()
   var partitioningSubdivisions: Double = js.native
   
   /* CompleteClass */
-  var subDiv: X = js.native
+  var subDiv: Y = js.native
 }

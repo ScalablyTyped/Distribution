@@ -20,5 +20,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Base class for XML feature formats.
   *
   */
-class XMLFeature ()
+open class XMLFeature ()
   extends typings.openlayers.mod.format.XMLFeature

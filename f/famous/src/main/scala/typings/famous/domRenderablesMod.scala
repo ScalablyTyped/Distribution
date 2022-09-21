@@ -10,13 +10,13 @@ object domRenderablesMod {
   
   @JSImport("famous/dom-renderables", "DOMElement")
   @js.native
-  class DOMElement protected () extends StObject {
+  open class DOMElement protected () extends StObject {
     def this(node: Node) = this()
     def this(node: Node, options: IDOMElementOptions) = this()
     
     def addClass(value: String): DOMElement = js.native
     
-    def on(event: String, listener: js.Function1[/* payload */ js.UndefOr[js.Any], Unit]): js.Function0[Unit] = js.native
+    def on(event: String, listener: js.Function1[/* payload */ js.UndefOr[Any], Unit]): js.Function0[Unit] = js.native
     
     def onHide(): Unit = js.native
     
@@ -64,7 +64,7 @@ object domRenderablesMod {
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value*))
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

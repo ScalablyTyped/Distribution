@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This represents an enterprise admin who can manage the enterprise in the
-  * managed Google Play store.
-  */
 trait SchemaAdministrator extends StObject {
   
   /**
-    * The admin&#39;s email address.
+    * The admin's email address.
     */
-  var email: js.UndefOr[String] = js.undefined
+  var email: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAdministrator {
   
@@ -25,6 +21,8 @@ object SchemaAdministrator {
   extension [Self <: SchemaAdministrator](x: Self) {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setEmailNull: Self = StObject.set(x, "email", null)
     
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
   }

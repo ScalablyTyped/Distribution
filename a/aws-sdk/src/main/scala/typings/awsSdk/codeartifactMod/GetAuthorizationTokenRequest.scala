@@ -12,7 +12,7 @@ trait GetAuthorizationTokenRequest extends StObject {
   var domain: DomainName
   
   /**
-    *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
+    *  The 12-digit account number of the Amazon Web Services account that owns the domain. It does not include dashes or spaces. 
     */
   var domainOwner: js.UndefOr[AccountId] = js.undefined
   

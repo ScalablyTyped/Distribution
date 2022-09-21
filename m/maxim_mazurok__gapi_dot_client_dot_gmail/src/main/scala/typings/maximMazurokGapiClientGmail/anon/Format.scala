@@ -95,7 +95,7 @@ object Format {
     
     inline def setMetadataHeadersUndefined: Self = StObject.set(x, "metadataHeaders", js.undefined)
     
-    inline def setMetadataHeadersVarargs(value: String*): Self = StObject.set(x, "metadataHeaders", js.Array(value :_*))
+    inline def setMetadataHeadersVarargs(value: String*): Self = StObject.set(x, "metadataHeaders", js.Array(value*))
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     

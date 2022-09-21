@@ -12,7 +12,7 @@ trait LayoutEventObject
     * layout : indicates the corresponding layout that triggered the event
     * (useful if running multiple layouts simultaneously)
     */
-  var layout: js.Any
+  var layout: Any
 }
 object LayoutEventObject {
   
@@ -21,12 +21,12 @@ object LayoutEventObject {
     isDefaultPrevented: () => Boolean,
     isImmediatePropagationStopped: () => Boolean,
     isPropagationStopped: () => Boolean,
-    layout: js.Any,
+    layout: Any,
     namespace: String,
     preventDefault: () => Unit,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
-    target: js.Any,
+    target: Any,
     timeStamp: Double,
     `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt
   ): LayoutEventObject = {
@@ -37,6 +37,6 @@ object LayoutEventObject {
   
   extension [Self <: LayoutEventObject](x: Self) {
     
-    inline def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
   }
 }

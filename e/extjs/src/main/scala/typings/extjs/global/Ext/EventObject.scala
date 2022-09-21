@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.EventObject")
 @js.native
-class EventObject ()
+open class EventObject ()
   extends StObject
      with typings.extjs.Ext.EventObject
 /* static members */
@@ -616,11 +616,11 @@ object EventObject {
     */
   inline def getRelatedTarget(): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")().asInstanceOf[HTMLElement]
   inline def getRelatedTarget(selector: java.lang.String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
-  inline def getRelatedTarget(selector: java.lang.String, maxDepth: js.Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
-  inline def getRelatedTarget(selector: java.lang.String, maxDepth: js.Any, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def getRelatedTarget(selector: java.lang.String, maxDepth: Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def getRelatedTarget(selector: java.lang.String, maxDepth: Any, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   inline def getRelatedTarget(selector: java.lang.String, maxDepth: Unit, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
-  inline def getRelatedTarget(selector: Unit, maxDepth: js.Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
-  inline def getRelatedTarget(selector: Unit, maxDepth: js.Any, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def getRelatedTarget(selector: Unit, maxDepth: Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def getRelatedTarget(selector: Unit, maxDepth: Any, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   inline def getRelatedTarget(selector: Unit, maxDepth: Unit, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   /** [Method] Gets the target for the event
@@ -631,11 +631,11 @@ object EventObject {
     */
   inline def getTarget(): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")().asInstanceOf[HTMLElement]
   inline def getTarget(selector: java.lang.String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
-  inline def getTarget(selector: java.lang.String, maxDepth: js.Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
-  inline def getTarget(selector: java.lang.String, maxDepth: js.Any, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def getTarget(selector: java.lang.String, maxDepth: Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def getTarget(selector: java.lang.String, maxDepth: Any, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   inline def getTarget(selector: java.lang.String, maxDepth: Unit, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
-  inline def getTarget(selector: Unit, maxDepth: js.Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
-  inline def getTarget(selector: Unit, maxDepth: js.Any, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def getTarget(selector: Unit, maxDepth: Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def getTarget(selector: Unit, maxDepth: Any, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   inline def getTarget(selector: Unit, maxDepth: Unit, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   /** [Method] Normalizes mouse wheel y delta across browsers
@@ -646,7 +646,7 @@ object EventObject {
   /** [Method] Returns the mouse wheel deltas for this event
     * @returns Object An object with "x" and "y" properties holding the mouse wheel deltas.
     */
-  inline def getWheelDeltas(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getWheelDeltas")().asInstanceOf[js.Any]
+  inline def getWheelDeltas(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getWheelDeltas")().asInstanceOf[Any]
   
   /** [Method] Gets the x coordinate of the event
     * @returns Number
@@ -672,7 +672,7 @@ object EventObject {
     * @param target Ext.Element/HTMLElement If specified, the target for the event. This is likely to be used when relaying a DOM event. If not specified, getTarget is used to determine the target.
     */
   inline def injectEvent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectEvent")().asInstanceOf[Unit]
-  inline def injectEvent(target: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectEvent")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def injectEvent(target: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectEvent")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Checks if the key pressed was a navigation key
     * @returns Boolean True if the press is a navigation keypress
@@ -706,10 +706,10 @@ object EventObject {
     * @returns Boolean
     */
   inline def within(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("within")().asInstanceOf[Boolean]
-  inline def within(el: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def within(el: js.Any, related: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any], related.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def within(el: js.Any, related: Boolean, allowEl: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any], related.asInstanceOf[js.Any], allowEl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def within(el: js.Any, related: Unit, allowEl: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any], related.asInstanceOf[js.Any], allowEl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def within(el: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def within(el: Any, related: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any], related.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def within(el: Any, related: Boolean, allowEl: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any], related.asInstanceOf[js.Any], allowEl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def within(el: Any, related: Unit, allowEl: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any], related.asInstanceOf[js.Any], allowEl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def within(el: Unit, related: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any], related.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def within(el: Unit, related: Boolean, allowEl: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any], related.asInstanceOf[js.Any], allowEl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def within(el: Unit, related: Unit, allowEl: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any], related.asInstanceOf[js.Any], allowEl.asInstanceOf[js.Any])).asInstanceOf[Boolean]

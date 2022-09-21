@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-firebase", "RNFirebase.notifications.Android.Lights")
 @js.native
-class Lights () extends StObject {
+open class Lights () extends StObject {
   
   var argb: Double = js.native
   

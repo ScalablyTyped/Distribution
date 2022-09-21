@@ -38,8 +38,13 @@ trait Input extends StObject {
   var InputDevices: js.UndefOr[listOfInputDeviceSettings] = js.undefined
   
   /**
+    * A list of IDs for all Inputs which are partners of this one.
+    */
+  var InputPartnerIds: js.UndefOr[listOfString] = js.undefined
+  
+  /**
     * Certain pull input sources can be dynamic, meaning that they can have their URL's dynamically changes
-  during input switch actions. Presently, this functionality only works with MP4_FILE inputs.
+  during input switch actions. Presently, this functionality only works with MP4_FILE and TS_FILE inputs.
     */
   var InputSourceType: js.UndefOr[typings.awsSdk.medialiveMod.InputSourceType] = js.undefined
   
@@ -94,13 +99,13 @@ object Input {
     
     inline def setAttachedChannelsUndefined: Self = StObject.set(x, "AttachedChannels", js.undefined)
     
-    inline def setAttachedChannelsVarargs(value: string*): Self = StObject.set(x, "AttachedChannels", js.Array(value :_*))
+    inline def setAttachedChannelsVarargs(value: string*): Self = StObject.set(x, "AttachedChannels", js.Array(value*))
     
     inline def setDestinations(value: listOfInputDestination): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
     inline def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
-    inline def setDestinationsVarargs(value: InputDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: InputDestination*): Self = StObject.set(x, "Destinations", js.Array(value*))
     
     inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
@@ -114,7 +119,13 @@ object Input {
     
     inline def setInputDevicesUndefined: Self = StObject.set(x, "InputDevices", js.undefined)
     
-    inline def setInputDevicesVarargs(value: InputDeviceSettings*): Self = StObject.set(x, "InputDevices", js.Array(value :_*))
+    inline def setInputDevicesVarargs(value: InputDeviceSettings*): Self = StObject.set(x, "InputDevices", js.Array(value*))
+    
+    inline def setInputPartnerIds(value: listOfString): Self = StObject.set(x, "InputPartnerIds", value.asInstanceOf[js.Any])
+    
+    inline def setInputPartnerIdsUndefined: Self = StObject.set(x, "InputPartnerIds", js.undefined)
+    
+    inline def setInputPartnerIdsVarargs(value: string*): Self = StObject.set(x, "InputPartnerIds", js.Array(value*))
     
     inline def setInputSourceType(value: InputSourceType): Self = StObject.set(x, "InputSourceType", value.asInstanceOf[js.Any])
     
@@ -124,7 +135,7 @@ object Input {
     
     inline def setMediaConnectFlowsUndefined: Self = StObject.set(x, "MediaConnectFlows", js.undefined)
     
-    inline def setMediaConnectFlowsVarargs(value: MediaConnectFlow*): Self = StObject.set(x, "MediaConnectFlows", js.Array(value :_*))
+    inline def setMediaConnectFlowsVarargs(value: MediaConnectFlow*): Self = StObject.set(x, "MediaConnectFlows", js.Array(value*))
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -138,13 +149,13 @@ object Input {
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: string*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setSources(value: listOfInputSource): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     
     inline def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
     
-    inline def setSourcesVarargs(value: InputSource*): Self = StObject.set(x, "Sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: InputSource*): Self = StObject.set(x, "Sources", js.Array(value*))
     
     inline def setState(value: InputState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

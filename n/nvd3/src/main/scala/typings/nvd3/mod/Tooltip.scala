@@ -19,12 +19,12 @@ trait Tooltip extends StObject {
   def classes(el: String): this.type = js.native
   
   /*Function that generates the tooltip content html.*/
-  def contentGenerator(): js.Function1[/* d */ js.Any, String] = js.native
+  def contentGenerator(): js.Function1[/* d */ Any, String] = js.native
   /*Function that generates the tooltip content html.*/
-  def contentGenerator(func: js.Function1[/* d */ js.Any, String]): this.type = js.native
+  def contentGenerator(func: js.Function1[/* d */ Any, String]): this.type = js.native
   
-  def data(): js.Any = js.native
-  def data(value: js.Any): this.type = js.native
+  def data(): Any = js.native
+  def data(value: Any): this.type = js.native
   
   def distance(): Double = js.native
   def distance(value: Double): this.type = js.native
@@ -55,9 +55,9 @@ trait Tooltip extends StObject {
   def headerEnabled(value: Boolean): this.type = js.native
   
   /*For tooltip: formats the x axis value in the tooltip*/
-  def headerFormatter(): js.Function1[/* d */ js.Any, String] = js.native
+  def headerFormatter(): js.Function1[/* d */ Any, String] = js.native
   /*For tooltip: formats the x axis value in the tooltip*/
-  def headerFormatter(func: js.Function1[/* d */ js.Any, String]): this.type = js.native
+  def headerFormatter(func: js.Function1[/* d */ Any, String]): this.type = js.native
   
   /*For tooltip: show or hide the tooltip by setting this to true or false. Tooltips used to be created and destroyed, but now we re-used the element and set opacity to 1 or 0.*/
   def hidden(): Boolean = js.native
@@ -70,10 +70,10 @@ trait Tooltip extends StObject {
   def hideDelay(value: Double): this.type = js.native
   
   /**/
-  def id(): js.Any = js.native
+  def id(): Any = js.native
   
-  def keyFormatter(): js.Function2[/* d */ js.Any, /* i */ Double, String] = js.native
-  def keyFormatter(func: js.Function2[/* d */ js.Any, /* i */ Double, String]): this.type = js.native
+  def keyFormatter(): js.Function2[/* d */ Any, /* i */ Double, String] = js.native
+  def keyFormatter(func: js.Function2[/* d */ Any, /* i */ Double, String]): this.type = js.native
   
   def offset(): Offset = js.native
   def offset(value: Offset): this.type = js.native
@@ -92,7 +92,7 @@ trait Tooltip extends StObject {
   def tooltipElem(): HTMLElement = js.native
   
   /*formats the y axis value(s) in the tooltip*/
-  def valueFormatter(): js.Function1[/* d */ js.Any, String] = js.native
+  def valueFormatter(): js.Function1[/* d */ Any, String] = js.native
   /*formats the y axis value(s) in the tooltip*/
-  def valueFormatter(func: js.Function1[/* d */ js.Any, String]): this.type = js.native
+  def valueFormatter(func: js.Function1[/* d */ Any, String]): this.type = js.native
 }

@@ -5,12 +5,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.bent.bentStrings.buffer
 import typings.bent.bentStrings.json
 import typings.bent.bentStrings.string
-import typings.node.Buffer
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.PassThrough
 import typings.node.streamMod.Stream
-import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.Error
 import typings.std.FormData
@@ -22,20 +19,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(baseUrl: String, args: Options*): RequestFunction[ValidResponse] = (^.asInstanceOf[js.Dynamic].apply(baseUrl.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[ValidResponse]]
-  inline def apply(baseUrl: String, `type`: buffer, args: Options*): RequestFunction[Buffer | ArrayBuffer] = (^.asInstanceOf[js.Dynamic].apply(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[Buffer | ArrayBuffer]]
+  inline def apply(baseUrl: String, args: Options*): RequestFunction[ValidResponse] = ^.asInstanceOf[js.Dynamic].apply(List(baseUrl.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RequestFunction[ValidResponse]]
+  inline def apply(baseUrl: String, `type`: buffer, args: Options*): RequestFunction[Buffer | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].apply((List(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RequestFunction[Buffer | js.typedarray.ArrayBuffer]]
   // Method or url first
-  inline def apply(baseUrl: String, `type`: string, args: Options*): RequestFunction[String] = (^.asInstanceOf[js.Dynamic].apply(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[String]]
-  inline def apply(`type`: buffer, args: Options*): RequestFunction[Buffer | ArrayBuffer] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[Buffer | ArrayBuffer]]
+  inline def apply(baseUrl: String, `type`: string, args: Options*): RequestFunction[String] = (^.asInstanceOf[js.Dynamic].apply((List(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[RequestFunction[String]]
+  inline def apply(`type`: buffer, args: Options*): RequestFunction[Buffer | js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].apply(List(`type`.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RequestFunction[Buffer | js.typedarray.ArrayBuffer]]
   // Type first
-  inline def apply(`type`: string, args: Options*): RequestFunction[String] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[String]]
+  inline def apply(`type`: string, args: Options*): RequestFunction[String] = ^.asInstanceOf[js.Dynamic].apply(List(`type`.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RequestFunction[String]]
   // tslint:disable-next-line no-unnecessary-generics
-  inline def apply[T /* <: ValidResponse */](args: Options*): RequestFunction[T] = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[RequestFunction[T]]
+  inline def apply[T /* <: ValidResponse */](args: Options*): RequestFunction[T] = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[RequestFunction[T]]
   inline def apply[T /* <: Json */](baseUrl: String, `type`: json, args: Options*): // tslint:disable-next-line no-unnecessary-generics
-  RequestFunction[T] = (^.asInstanceOf[js.Dynamic].apply(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  RequestFunction[T] = (^.asInstanceOf[js.Dynamic].apply((List(baseUrl.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
   RequestFunction[T]]
   // tslint:disable-next-line no-unnecessary-generics
-  inline def apply[T /* <: Json */](`type`: json, args: Options*): RequestFunction[T] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RequestFunction[T]]
+  inline def apply[T /* <: Json */](`type`: json, args: Options*): RequestFunction[T] = ^.asInstanceOf[js.Dynamic].apply(List(`type`.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[RequestFunction[T]]
   
   @JSImport("bent", JSImport.Namespace)
   @js.native
@@ -43,23 +40,25 @@ object mod {
   
   @JSImport("bent", "StatusError")
   @js.native
-  class StatusError ()
+  open class StatusError ()
     extends StObject
        with Error {
     
-    def arrayBuffer(): js.Promise[ArrayBuffer | Buffer] = js.native
+    def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer | Buffer] = js.native
     
-    var headers: StringDictionary[js.Any] = js.native
+    var headers: StringDictionary[Any] = js.native
     
     def json(): js.Promise[Json] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
-    var responseBody: js.Promise[ArrayBuffer | Buffer] = js.native
+    var responseBody: js.Promise[js.typedarray.ArrayBuffer | Buffer] = js.native
     
     var statusCode: Double = js.native
     
@@ -84,23 +83,22 @@ object mod {
   object FetchResponse {
     
     inline def apply(
-      arrayBuffer: () => js.Promise[ArrayBuffer],
+      arrayBuffer: () => js.Promise[js.typedarray.ArrayBuffer],
       blob: () => js.Promise[Blob],
       bodyUsed: Boolean,
       formData: () => js.Promise[FormData],
       headers: typings.std.Headers,
-      json: () => js.Promise[js.Any],
+      json: () => js.Promise[Any],
       ok: Boolean,
       redirected: Boolean,
       status: Double,
       statusCode: Double,
       statusText: String,
       text: () => js.Promise[String],
-      trailer: js.Promise[typings.std.Headers],
       `type`: ResponseType,
       url: String
     ): FetchResponse = {
-      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], formData = js.Any.fromFunction0(formData), headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), trailer = trailer.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], body = null)
+      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], formData = js.Any.fromFunction0(formData), headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), url = url.asInstanceOf[js.Any], body = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FetchResponse]
     }
@@ -111,7 +109,7 @@ object mod {
     }
   }
   
-  type Headers = StringDictionary[js.Any]
+  type Headers = StringDictionary[Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.bent.bentStrings.GET
@@ -146,7 +144,7 @@ object mod {
     inline def TRACE: typings.bent.bentStrings.TRACE = "TRACE".asInstanceOf[typings.bent.bentStrings.TRACE]
   }
   
-  type Json = (StringDictionary[js.Any] & NumberDictionary[js.Any]) | js.Array[js.Any]
+  type Json = (StringDictionary[Any] & NumberDictionary[Any]) | js.Array[Any]
   
   @js.native
   trait NodeResponse
@@ -159,11 +157,6 @@ object mod {
     
     def json(): js.Promise[Json] = js.native
     
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
-    
     var statusCode: Double = js.native
     
     var statusMessage: String = js.native
@@ -173,7 +166,7 @@ object mod {
   
   type Options = HttpMethod | StatusCode | Headers | BaseUrl
   
-  type RequestBody = String | Stream | Buffer | ArrayBuffer | Json
+  type RequestBody = String | Stream | Buffer | js.typedarray.ArrayBuffer | Json
   
   type RequestFunction[T /* <: ValidResponse */] = js.Function3[
     /* url */ String, 
@@ -184,5 +177,5 @@ object mod {
   
   type StatusCode = Double
   
-  type ValidResponse = BentResponse | String | Buffer | ArrayBuffer | Json
+  type ValidResponse = BentResponse | String | Buffer | js.typedarray.ArrayBuffer | Json
 }

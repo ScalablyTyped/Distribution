@@ -15,7 +15,7 @@ object menu {
     var checkChangeDisabled: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Function) */
-    var checkHandler: js.UndefOr[js.Any] = js.undefined
+    var checkHandler: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var checked: js.UndefOr[Boolean] = js.undefined
@@ -36,7 +36,7 @@ object menu {
     var groupCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Object) */
-    var scope: js.UndefOr[js.Any] = js.undefined
+    var scope: js.UndefOr[Any] = js.undefined
     
     /** [Method] Sets the checked state of the item
       * @param checked Boolean True to check, false to uncheck
@@ -62,7 +62,7 @@ object menu {
       
       inline def setCheckChangeDisabledUndefined: Self = StObject.set(x, "checkChangeDisabled", js.undefined)
       
-      inline def setCheckHandler(value: js.Any): Self = StObject.set(x, "checkHandler", value.asInstanceOf[js.Any])
+      inline def setCheckHandler(value: Any): Self = StObject.set(x, "checkHandler", value.asInstanceOf[js.Any])
       
       inline def setCheckHandlerUndefined: Self = StObject.set(x, "checkHandler", js.undefined)
       
@@ -90,7 +90,7 @@ object menu {
       
       inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
@@ -196,7 +196,7 @@ object menu {
       * @param selector String/Ext.Component An Ext.ComponentQuery selector. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching child Ext.Component (or null if no match was found).
       */
-    var child: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
+    var child: js.UndefOr[js.Function1[js.UndefOr[Any], Any]] = js.undefined
     
     /** [Config Option] (Number) */
     var clickHideDelay: js.UndefOr[Double] = js.undefined
@@ -208,13 +208,13 @@ object menu {
       * @param selector String/Ext.Component An Ext.ComponentQuery selector or Ext.Component. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching descendant Ext.Component (or null if no match was found).
       */
-    var down: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
+    var down: js.UndefOr[js.Function1[js.UndefOr[Any], Any]] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var glyph: js.UndefOr[js.Any] = js.undefined
+    var glyph: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Function) */
-    var handler: js.UndefOr[js.Any] = js.undefined
+    var handler: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var hideOnClick: js.UndefOr[Boolean] = js.undefined
@@ -232,7 +232,7 @@ object menu {
     var iconCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Ext.menu.Menu/Object) */
-    var menu: js.UndefOr[js.Any] = js.undefined
+    var menu: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var menuAlign: js.UndefOr[java.lang.String] = js.undefined
@@ -268,7 +268,7 @@ object menu {
       * @param scope Object The scope in which to run the function. If not specified, it will default to the active component.
       * @returns Ext.Component[] Components matched by the passed function
       */
-    var queryBy: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Array]] = js.undefined
+    var queryBy: js.UndefOr[js.Function2[js.UndefOr[Any], js.UndefOr[Any], Array]] = js.undefined
     
     /** [Method] Finds a component at any level under this container matching the id itemId
       * @param id String The id to find
@@ -280,7 +280,7 @@ object menu {
       * @param fn Function The handler function
       * @param scope Object The scope of the handler function
       */
-    var setHandler: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setHandler: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the icon on this item
       * @param icon String The new icon
@@ -297,7 +297,7 @@ object menu {
       * @param destroyMenu Boolean True to destroy any existing menu. False to prevent destruction. If not specified, the destroyMenu configuration will be used.
       */
     var setMenu: js.UndefOr[
-        js.Function2[/* menu */ js.UndefOr[js.Any], /* destroyMenu */ js.UndefOr[Boolean], Unit]
+        js.Function2[/* menu */ js.UndefOr[Any], /* destroyMenu */ js.UndefOr[Boolean], Unit]
       ] = js.undefined
     
     /** [Method] Sets the text of this item
@@ -309,13 +309,13 @@ object menu {
       * @param tooltip String/Object This may be:  String : A string to be used as innerHTML (html tags are accepted) to show in a tooltip Object : A configuration object for Ext.tip.QuickTipManager.register.
       * @returns Ext.menu.Item this
       */
-    var setTooltip: js.UndefOr[js.Function1[/* tooltip */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var setTooltip: js.UndefOr[js.Function1[/* tooltip */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Config Option] (String) */
     var text: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var tooltip: js.UndefOr[js.Any] = js.undefined
+    var tooltip: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var tooltipType: js.UndefOr[java.lang.String] = js.undefined
@@ -341,7 +341,7 @@ object menu {
       
       inline def setCanActivateUndefined: Self = StObject.set(x, "canActivate", js.undefined)
       
-      inline def setChild(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+      inline def setChild(value: js.UndefOr[Any] => Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
       
       inline def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
       
@@ -353,15 +353,15 @@ object menu {
       
       inline def setDestroyMenuUndefined: Self = StObject.set(x, "destroyMenu", js.undefined)
       
-      inline def setDown(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      inline def setDown(value: js.UndefOr[Any] => Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
       inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
       
-      inline def setGlyph(value: js.Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+      inline def setGlyph(value: Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
       
       inline def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
       
-      inline def setHandler(value: js.Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
       inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
@@ -385,7 +385,7 @@ object menu {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setMenu(value: js.Any): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: Any): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
       inline def setMenuAlign(value: java.lang.String): Self = StObject.set(x, "menuAlign", value.asInstanceOf[js.Any])
       
@@ -419,7 +419,7 @@ object menu {
       
       inline def setQuery(value: js.UndefOr[java.lang.String] => Array): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
       
-      inline def setQueryBy(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
+      inline def setQueryBy(value: (js.UndefOr[Any], js.UndefOr[Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
       
       inline def setQueryById(value: js.UndefOr[java.lang.String] => IComponent): Self = StObject.set(x, "queryById", js.Any.fromFunction1(value))
       
@@ -429,7 +429,7 @@ object menu {
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      inline def setSetHandler(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setHandler", js.Any.fromFunction2(value))
+      inline def setSetHandler(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setHandler", js.Any.fromFunction2(value))
       
       inline def setSetHandlerUndefined: Self = StObject.set(x, "setHandler", js.undefined)
       
@@ -441,7 +441,7 @@ object menu {
       
       inline def setSetIconUndefined: Self = StObject.set(x, "setIcon", js.undefined)
       
-      inline def setSetMenu(value: (/* menu */ js.UndefOr[js.Any], /* destroyMenu */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setMenu", js.Any.fromFunction2(value))
+      inline def setSetMenu(value: (/* menu */ js.UndefOr[Any], /* destroyMenu */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setMenu", js.Any.fromFunction2(value))
       
       inline def setSetMenuUndefined: Self = StObject.set(x, "setMenu", js.undefined)
       
@@ -449,7 +449,7 @@ object menu {
       
       inline def setSetTextUndefined: Self = StObject.set(x, "setText", js.undefined)
       
-      inline def setSetTooltip(value: /* tooltip */ js.UndefOr[js.Any] => IItem): Self = StObject.set(x, "setTooltip", js.Any.fromFunction1(value))
+      inline def setSetTooltip(value: /* tooltip */ js.UndefOr[Any] => IItem): Self = StObject.set(x, "setTooltip", js.Any.fromFunction1(value))
       
       inline def setSetTooltipUndefined: Self = StObject.set(x, "setTooltip", js.undefined)
       
@@ -457,7 +457,7 @@ object menu {
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
       inline def setTooltipType(value: java.lang.String): Self = StObject.set(x, "tooltipType", value.asInstanceOf[js.Any])
       
@@ -486,12 +486,12 @@ object menu {
       * @param item Object
       * @returns Boolean
       */
-    var canActivateItem: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Boolean]] = js.undefined
+    var canActivateItem: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Boolean]] = js.undefined
     
     /** [Method] Deactivates the current active item on the menu if one exists
       * @param andBlurFocusedItem Object
       */
-    var deactivateActiveItem: js.UndefOr[js.Function1[/* andBlurFocusedItem */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var deactivateActiveItem: js.UndefOr[js.Function1[/* andBlurFocusedItem */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
     var enableKeyNav: js.UndefOr[Boolean] = js.undefined
@@ -529,9 +529,9 @@ object menu {
     @JSName("showBy")
     var showBy_IMenu: js.UndefOr[
         js.Function3[
-          /* cmp */ js.UndefOr[js.Any], 
-          /* pos */ js.UndefOr[js.Any], 
-          /* off */ js.UndefOr[js.Any], 
+          /* cmp */ js.UndefOr[Any], 
+          /* pos */ js.UndefOr[Any], 
+          /* off */ js.UndefOr[Any], 
           IComponent
         ]
       ] = js.undefined
@@ -556,11 +556,11 @@ object menu {
       
       inline def setAllowOtherMenusUndefined: Self = StObject.set(x, "allowOtherMenus", js.undefined)
       
-      inline def setCanActivateItem(value: /* item */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "canActivateItem", js.Any.fromFunction1(value))
+      inline def setCanActivateItem(value: /* item */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "canActivateItem", js.Any.fromFunction1(value))
       
       inline def setCanActivateItemUndefined: Self = StObject.set(x, "canActivateItem", js.undefined)
       
-      inline def setDeactivateActiveItem(value: /* andBlurFocusedItem */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "deactivateActiveItem", js.Any.fromFunction1(value))
+      inline def setDeactivateActiveItem(value: /* andBlurFocusedItem */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "deactivateActiveItem", js.Any.fromFunction1(value))
       
       inline def setDeactivateActiveItemUndefined: Self = StObject.set(x, "deactivateActiveItem", js.undefined)
       
@@ -593,7 +593,7 @@ object menu {
       inline def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
       
       inline def setShowBy(
-        value: (/* cmp */ js.UndefOr[js.Any], /* pos */ js.UndefOr[js.Any], /* off */ js.UndefOr[js.Any]) => IComponent
+        value: (/* cmp */ js.UndefOr[Any], /* pos */ js.UndefOr[Any], /* off */ js.UndefOr[Any]) => IComponent
       ): Self = StObject.set(x, "showBy", js.Any.fromFunction3(value))
       
       inline def setShowByUndefined: Self = StObject.set(x, "showBy", js.undefined)
@@ -648,7 +648,7 @@ object menu {
       * @param selector String/Ext.Component An Ext.ComponentQuery selector. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching child Ext.Component (or null if no match was found).
       */
-    var child: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
+    var child: js.UndefOr[js.Function1[js.UndefOr[Any], Any]] = js.undefined
     
     /** [Config Option] (Number) */
     var clickHideDelay: js.UndefOr[Double] = js.undefined
@@ -660,13 +660,13 @@ object menu {
       * @param selector String/Ext.Component An Ext.ComponentQuery selector or Ext.Component. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching descendant Ext.Component (or null if no match was found).
       */
-    var down: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
+    var down: js.UndefOr[js.Function1[js.UndefOr[Any], Any]] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var glyph: js.UndefOr[js.Any] = js.undefined
+    var glyph: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Function) */
-    var handler: js.UndefOr[js.Any] = js.undefined
+    var handler: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var hideOnClick: js.UndefOr[Boolean] = js.undefined
@@ -684,7 +684,7 @@ object menu {
     var iconCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Ext.menu.Menu/Object) */
-    var menu: js.UndefOr[js.Any] = js.undefined
+    var menu: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var menuAlign: js.UndefOr[java.lang.String] = js.undefined
@@ -720,7 +720,7 @@ object menu {
       * @param scope Object The scope in which to run the function. If not specified, it will default to the active component.
       * @returns Ext.Component[] Components matched by the passed function
       */
-    var queryBy: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Array]] = js.undefined
+    var queryBy: js.UndefOr[js.Function2[js.UndefOr[Any], js.UndefOr[Any], Array]] = js.undefined
     
     /** [Method] Finds a component at any level under this container matching the id itemId
       * @param id String The id to find
@@ -732,7 +732,7 @@ object menu {
       * @param fn Function The handler function
       * @param scope Object The scope of the handler function
       */
-    var setHandler: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setHandler: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the icon on this item
       * @param icon String The new icon
@@ -749,7 +749,7 @@ object menu {
       * @param destroyMenu Boolean True to destroy any existing menu. False to prevent destruction. If not specified, the destroyMenu configuration will be used.
       */
     var setMenu: js.UndefOr[
-        js.Function2[/* menu */ js.UndefOr[js.Any], /* destroyMenu */ js.UndefOr[Boolean], Unit]
+        js.Function2[/* menu */ js.UndefOr[Any], /* destroyMenu */ js.UndefOr[Boolean], Unit]
       ] = js.undefined
     
     /** [Method] Sets the text of this item
@@ -761,13 +761,13 @@ object menu {
       * @param tooltip String/Object This may be:  String : A string to be used as innerHTML (html tags are accepted) to show in a tooltip Object : A configuration object for Ext.tip.QuickTipManager.register.
       * @returns Ext.menu.Item this
       */
-    var setTooltip: js.UndefOr[js.Function1[/* tooltip */ js.UndefOr[js.Any], IItem]] = js.undefined
+    var setTooltip: js.UndefOr[js.Function1[/* tooltip */ js.UndefOr[Any], IItem]] = js.undefined
     
     /** [Config Option] (String) */
     var text: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var tooltip: js.UndefOr[js.Any] = js.undefined
+    var tooltip: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var tooltipType: js.UndefOr[java.lang.String] = js.undefined
@@ -793,7 +793,7 @@ object menu {
       
       inline def setCanActivateUndefined: Self = StObject.set(x, "canActivate", js.undefined)
       
-      inline def setChild(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+      inline def setChild(value: js.UndefOr[Any] => Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
       
       inline def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
       
@@ -805,15 +805,15 @@ object menu {
       
       inline def setDestroyMenuUndefined: Self = StObject.set(x, "destroyMenu", js.undefined)
       
-      inline def setDown(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      inline def setDown(value: js.UndefOr[Any] => Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
       inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
       
-      inline def setGlyph(value: js.Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+      inline def setGlyph(value: Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
       
       inline def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
       
-      inline def setHandler(value: js.Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
       inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
@@ -837,7 +837,7 @@ object menu {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setMenu(value: js.Any): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: Any): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
       inline def setMenuAlign(value: java.lang.String): Self = StObject.set(x, "menuAlign", value.asInstanceOf[js.Any])
       
@@ -871,7 +871,7 @@ object menu {
       
       inline def setQuery(value: js.UndefOr[java.lang.String] => Array): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
       
-      inline def setQueryBy(value: (js.UndefOr[js.Any], js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
+      inline def setQueryBy(value: (js.UndefOr[Any], js.UndefOr[Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
       
       inline def setQueryById(value: js.UndefOr[java.lang.String] => IComponent): Self = StObject.set(x, "queryById", js.Any.fromFunction1(value))
       
@@ -881,7 +881,7 @@ object menu {
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      inline def setSetHandler(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setHandler", js.Any.fromFunction2(value))
+      inline def setSetHandler(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setHandler", js.Any.fromFunction2(value))
       
       inline def setSetHandlerUndefined: Self = StObject.set(x, "setHandler", js.undefined)
       
@@ -893,7 +893,7 @@ object menu {
       
       inline def setSetIconUndefined: Self = StObject.set(x, "setIcon", js.undefined)
       
-      inline def setSetMenu(value: (/* menu */ js.UndefOr[js.Any], /* destroyMenu */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setMenu", js.Any.fromFunction2(value))
+      inline def setSetMenu(value: (/* menu */ js.UndefOr[Any], /* destroyMenu */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setMenu", js.Any.fromFunction2(value))
       
       inline def setSetMenuUndefined: Self = StObject.set(x, "setMenu", js.undefined)
       
@@ -901,7 +901,7 @@ object menu {
       
       inline def setSetTextUndefined: Self = StObject.set(x, "setText", js.undefined)
       
-      inline def setSetTooltip(value: /* tooltip */ js.UndefOr[js.Any] => IItem): Self = StObject.set(x, "setTooltip", js.Any.fromFunction1(value))
+      inline def setSetTooltip(value: /* tooltip */ js.UndefOr[Any] => IItem): Self = StObject.set(x, "setTooltip", js.Any.fromFunction1(value))
       
       inline def setSetTooltipUndefined: Self = StObject.set(x, "setTooltip", js.undefined)
       
@@ -909,7 +909,7 @@ object menu {
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
       inline def setTooltipType(value: java.lang.String): Self = StObject.set(x, "tooltipType", value.asInstanceOf[js.Any])
       

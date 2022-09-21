@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("sjcl", "prng")
 @js.native
-class prng protected ()
+open class prng protected ()
   extends StObject
      with SjclRandom {
   def this(defaultParanoia: Double) = this()

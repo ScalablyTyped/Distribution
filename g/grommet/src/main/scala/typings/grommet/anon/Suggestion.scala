@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Suggestion extends StObject {
   
-  var suggestion: js.Any
+  var suggestion: Any
   
   var target: HTMLElement | Null
 }
 object Suggestion {
   
-  inline def apply(suggestion: js.Any): Suggestion = {
+  inline def apply(suggestion: Any): Suggestion = {
     val __obj = js.Dynamic.literal(suggestion = suggestion.asInstanceOf[js.Any], target = null)
     __obj.asInstanceOf[Suggestion]
   }
   
   extension [Self <: Suggestion](x: Self) {
     
-    inline def setSuggestion(value: js.Any): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
+    inline def setSuggestion(value: Any): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
     
     inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

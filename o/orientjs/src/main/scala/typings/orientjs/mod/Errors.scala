@@ -8,7 +8,7 @@ object Errors {
   
   @JSImport("orientjs", "Errors.BaseError")
   @js.native
-  class BaseError () extends StObject {
+  open class BaseError () extends StObject {
     
     def init(name: String): Unit = js.native
     
@@ -17,14 +17,14 @@ object Errors {
   
   @JSImport("orientjs", "Errors.OperationError")
   @js.native
-  class OperationError () extends BaseError {
+  open class OperationError () extends BaseError {
     
-    var date: js.Any = js.native
+    var date: Any = js.native
     
     var message: String = js.native
   }
   
   @JSImport("orientjs", "Errors.RequestError")
   @js.native
-  class RequestError () extends OperationError
+  open class RequestError () extends OperationError
 }

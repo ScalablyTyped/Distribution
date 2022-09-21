@@ -37,7 +37,7 @@ object mod {
     
     var node: HTMLElement | Null
     
-    var state: NotFunc[js.Any]
+    var state: NotFunc[Any]
   }
   object RESQNode {
     
@@ -46,7 +46,7 @@ object mod {
       children: js.Array[RESQNode],
       isFragment: Boolean,
       name: String,
-      state: NotFunc[js.Any]
+      state: NotFunc[Any]
     ): RESQNode = {
       val __obj = js.Dynamic.literal(_nodes = _nodes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], isFragment = isFragment.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], node = null)
       __obj.asInstanceOf[RESQNode]
@@ -56,7 +56,7 @@ object mod {
       
       inline def setChildren(value: js.Array[RESQNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: RESQNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: RESQNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setIsFragment(value: Boolean): Self = StObject.set(x, "isFragment", value.asInstanceOf[js.Any])
       
@@ -66,11 +66,11 @@ object mod {
       
       inline def setNodeNull: Self = StObject.set(x, "node", null)
       
-      inline def setState(value: NotFunc[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: NotFunc[Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def set_nodes(value: js.Array[RESQNode]): Self = StObject.set(x, "_nodes", value.asInstanceOf[js.Any])
       
-      inline def set_nodesVarargs(value: RESQNode*): Self = StObject.set(x, "_nodes", js.Array(value :_*))
+      inline def set_nodesVarargs(value: RESQNode*): Self = StObject.set(x, "_nodes", js.Array(value*))
     }
   }
 }

@@ -26,7 +26,7 @@ object ReturnTypeAddScriptToEvaluateOnNewDocumentResponse {
     
     inline def setParamsType(value: js.Array[AddScriptToEvaluateOnNewDocumentRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: AddScriptToEvaluateOnNewDocumentRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: AddScriptToEvaluateOnNewDocumentRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: AddScriptToEvaluateOnNewDocumentResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

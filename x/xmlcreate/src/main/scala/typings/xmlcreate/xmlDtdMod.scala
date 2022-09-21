@@ -20,7 +20,7 @@ object xmlDtdMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlDtd", JSImport.Default)
   @js.native
-  class default[Parent] protected ()
+  open class default[Parent] protected ()
     extends StObject
        with XmlDtd[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlDtdOptions) = this()
@@ -72,23 +72,23 @@ object xmlDtdMod {
   @js.native
   trait XmlDtd[Parent] extends StObject {
     
-    /* private */ val _children: js.Any = js.native
+    /* private */ val _children: Any = js.native
     
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _name: Any = js.native
     
-    /* private */ val _parent: js.Any = js.native
+    /* private */ val _parent: Any = js.native
     
-    /* private */ var _pubId: js.Any = js.native
+    /* private */ var _pubId: Any = js.native
     
-    /* private */ var _sysId: js.Any = js.native
+    /* private */ var _sysId: Any = js.native
     
-    /* private */ val _validation: js.Any = js.native
+    /* private */ val _validation: Any = js.native
     
     /**
       * Appends the XML string representation of a public or system identifier
       * to an existing string.
       */
-    /* private */ var appendId: js.Any = js.native
+    /* private */ var appendId: Any = js.native
     
     /**
       * Adds an attribute-list declaration to this document type declaration

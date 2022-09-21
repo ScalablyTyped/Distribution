@@ -17,7 +17,7 @@ trait Overlay extends StObject {
   def addEventListener(
     `type`: OverlayEventType,
     listener: js.Function1[/* event */ EventBase[this.type], Unit],
-    thisObject: js.Any
+    thisObject: Any
   ): Unit = js.native
   
   /**
@@ -42,7 +42,7 @@ trait Overlay extends StObject {
   def removeEventListener(
     `type`: OverlayEventType,
     listener: js.Function1[/* event */ EventBase[this.type], Unit],
-    thisObject: js.Any
+    thisObject: Any
   ): Unit = js.native
   
   /**

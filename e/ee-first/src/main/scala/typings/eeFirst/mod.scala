@@ -27,10 +27,10 @@ object mod {
   val ^ : js.Any = js.native
   
   type Listener[TEmitter /* <: EventEmitter */] = js.Function4[
-    /* err */ js.Any, 
+    /* err */ Any, 
     /* ee */ TEmitter, 
     /* event */ js.Array[String], 
-    /* args */ js.Array[js.Any], 
+    /* args */ js.Array[Any], 
     Unit
   ]
   

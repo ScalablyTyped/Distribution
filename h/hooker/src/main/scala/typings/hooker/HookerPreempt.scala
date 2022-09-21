@@ -8,17 +8,17 @@ trait HookerPreempt
   extends StObject
      with IHookerPreHookResult {
   
-  var value: js.Any
+  var value: Any
 }
 object HookerPreempt {
   
-  inline def apply(value: js.Any): HookerPreempt = {
+  inline def apply(value: Any): HookerPreempt = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HookerPreempt]
   }
   
   extension [Self <: HookerPreempt](x: Self) {
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

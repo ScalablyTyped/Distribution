@@ -10,10 +10,10 @@ Encapsulated tokens (encrypted and mac'ed objects)
 | ------------------ | :-------------: |
 | Full name          | iron |
 | Keywords           | authentication, encryption, data integrity |
-| # releases         | 1 |
-| # dependents       | 24 |
-| # downloads        | 7910210 |
-| # stars            | 10 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 412069.3333333333 |
+| # stars            | 601.0 |
 
 ## Links
 - [Homepage](https://github.com/hueniverse/iron#readme)

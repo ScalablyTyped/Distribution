@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RNFetchBlobFetchRepsonse extends StObject {
   
-  def arrayBuffer(): js.Promise[js.Array[js.Any]]
+  def arrayBuffer(): js.Promise[js.Array[Any]]
   
   def blob(): js.Promise[PolyfillBlob]
   
   var bodyUsed: Boolean
   
-  var headers: js.Any
+  var headers: Any
   
-  def json(): js.Promise[js.Any]
+  def json(): js.Promise[Any]
   
   var ok: Boolean
   
@@ -35,11 +35,11 @@ trait RNFetchBlobFetchRepsonse extends StObject {
 object RNFetchBlobFetchRepsonse {
   
   inline def apply(
-    arrayBuffer: () => js.Promise[js.Array[js.Any]],
+    arrayBuffer: () => js.Promise[js.Array[Any]],
     blob: () => js.Promise[PolyfillBlob],
     bodyUsed: Boolean,
-    headers: js.Any,
-    json: () => js.Promise[js.Any],
+    headers: Any,
+    json: () => js.Promise[Any],
     ok: Boolean,
     rawResp: () => js.Promise[FetchBlobResponse],
     resp: FetchBlobResponse,
@@ -56,15 +56,15 @@ object RNFetchBlobFetchRepsonse {
   
   extension [Self <: RNFetchBlobFetchRepsonse](x: Self) {
     
-    inline def setArrayBuffer(value: () => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+    inline def setArrayBuffer(value: () => js.Promise[js.Array[Any]]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
     
     inline def setBlob(value: () => js.Promise[PolyfillBlob]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
     
     inline def setBodyUsed(value: Boolean): Self = StObject.set(x, "bodyUsed", value.asInstanceOf[js.Any])
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    inline def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+    inline def setJson(value: () => js.Promise[Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
     
     inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ object mod {
   
   @JSImport("react-star-rating-component", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[StarRatingComponentProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[StarRatingComponentProps, js.Object, Any]
   
-  type StarRatingComponent = Component[StarRatingComponentProps, js.Object, js.Any]
+  type StarRatingComponent = Component[StarRatingComponentProps, js.Object, Any]
   
   trait StarRatingComponentProps extends StObject {
     

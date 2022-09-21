@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery
   extends StObject
      with /* index */ NumberDictionary[HTMLElement]
-     with /* index */ StringDictionary[js.Any] {
+     with /* index */ StringDictionary[Any] {
   
   /**
     * Add elements to the set of matched elements.
@@ -64,17 +64,17 @@ trait JQuery
     */
   def addClass(func: js.Function2[/* index */ Double, /* className */ String, String]): JQuery = js.native
   
-  def after(content1: String, content2: js.Any*): JQuery = js.native
-  def after(content1: js.Array[js.Any], content2: js.Any*): JQuery = js.native
+  def after(content1: String, content2: Any*): JQuery = js.native
+  def after(content1: js.Array[Any], content2: Any*): JQuery = js.native
   /**
     * Insert content, specified by the parameter, after each element in the set of matched elements.
     * 
     * param content1 HTML string, DOM element, array of elements, or jQuery object to insert after each element in the set of matched elements.
     * param content2 One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert after each element in the set of matched elements.
     */
-  def after(content1: JQuery, content2: js.Any*): JQuery = js.native
-  def after(content1: Element, content2: js.Any*): JQuery = js.native
-  def after(content1: Text, content2: js.Any*): JQuery = js.native
+  def after(content1: JQuery, content2: Any*): JQuery = js.native
+  def after(content1: Element, content2: Any*): JQuery = js.native
+  def after(content1: Text, content2: Any*): JQuery = js.native
   /**
     * Insert content, specified by the parameter, after each element in the set of matched elements.
     * 
@@ -91,8 +91,8 @@ trait JQuery
     handler: js.Function3[
       /* event */ JQueryEventObject, 
       /* XMLHttpRequest */ XMLHttpRequest, 
-      /* ajaxOptions */ js.Any, 
-      js.Any
+      /* ajaxOptions */ Any, 
+      Any
     ]
   ): JQuery = js.native
   
@@ -106,8 +106,8 @@ trait JQuery
       /* event */ JQueryEventObject, 
       /* jqXHR */ JQueryXHR, 
       /* ajaxSettings */ JQueryAjaxSettings, 
-      /* thrownError */ js.Any, 
-      js.Any
+      /* thrownError */ Any, 
+      Any
     ]
   ): JQuery = js.native
   
@@ -121,7 +121,7 @@ trait JQuery
       /* event */ JQueryEventObject, 
       /* jqXHR */ JQueryXHR, 
       /* ajaxOptions */ JQueryAjaxSettings, 
-      js.Any
+      Any
     ]
   ): JQuery = js.native
   
@@ -130,14 +130,14 @@ trait JQuery
     *
     * @param handler The function to be invoked.
     */
-  def ajaxStart(handler: js.Function0[js.Any]): JQuery = js.native
+  def ajaxStart(handler: js.Function0[Any]): JQuery = js.native
   
   /**
     * Register a handler to be called when all Ajax requests have completed. This is an Ajax Event.
     *
     * @param handler The function to be invoked.
     */
-  def ajaxStop(handler: js.Function0[js.Any]): JQuery = js.native
+  def ajaxStop(handler: js.Function0[Any]): JQuery = js.native
   
   /**
     * Attach a function to be executed whenever an Ajax request completes successfully. This is an Ajax Event.
@@ -149,7 +149,7 @@ trait JQuery
       /* event */ JQueryEventObject, 
       /* XMLHttpRequest */ XMLHttpRequest, 
       /* ajaxOptions */ JQueryAjaxSettings, 
-      js.Any
+      Any
     ]
   ): JQuery = js.native
   
@@ -183,17 +183,17 @@ trait JQuery
     */
   def animate(properties: Object, options: JQueryAnimationOptions): JQuery = js.native
   
-  def append(content1: String, content2: js.Any*): JQuery = js.native
-  def append(content1: js.Array[js.Any], content2: js.Any*): JQuery = js.native
+  def append(content1: String, content2: Any*): JQuery = js.native
+  def append(content1: js.Array[Any], content2: Any*): JQuery = js.native
   /**
     * Insert content, specified by the parameter, to the end of each element in the set of matched elements.
     * 
     * param content1 DOM element, array of elements, HTML string, or jQuery object to insert at the end of each element in the set of matched elements.
     * param content2 One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the end of each element in the set of matched elements.
     */
-  def append(content1: JQuery, content2: js.Any*): JQuery = js.native
-  def append(content1: Element, content2: js.Any*): JQuery = js.native
-  def append(content1: Text, content2: js.Any*): JQuery = js.native
+  def append(content1: JQuery, content2: Any*): JQuery = js.native
+  def append(content1: Element, content2: Any*): JQuery = js.native
+  def append(content1: Text, content2: Any*): JQuery = js.native
   /**
     * Insert content, specified by the parameter, to the end of each element in the set of matched elements.
     * 
@@ -202,7 +202,7 @@ trait JQuery
   def append(func: js.Function2[/* index */ Double, /* html */ String, String | Element | this.type]): JQuery = js.native
   
   def appendTo(target: String): JQuery = js.native
-  def appendTo(target: js.Array[js.Any]): JQuery = js.native
+  def appendTo(target: js.Array[Any]): JQuery = js.native
   /**
     * Insert every element in the set of matched elements to the end of the target.
     * 
@@ -239,17 +239,17 @@ trait JQuery
     */
   def attr(attributes: Object): JQuery = js.native
   
-  def before(content1: String, content2: js.Any*): JQuery = js.native
-  def before(content1: js.Array[js.Any], content2: js.Any*): JQuery = js.native
+  def before(content1: String, content2: Any*): JQuery = js.native
+  def before(content1: js.Array[Any], content2: Any*): JQuery = js.native
   /**
     * Insert content, specified by the parameter, before each element in the set of matched elements.
     * 
     * param content1 HTML string, DOM element, array of elements, or jQuery object to insert before each element in the set of matched elements.
     * param content2 One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert before each element in the set of matched elements.
     */
-  def before(content1: JQuery, content2: js.Any*): JQuery = js.native
-  def before(content1: Element, content2: js.Any*): JQuery = js.native
-  def before(content1: Text, content2: js.Any*): JQuery = js.native
+  def before(content1: JQuery, content2: Any*): JQuery = js.native
+  def before(content1: Element, content2: Any*): JQuery = js.native
+  def before(content1: Text, content2: Any*): JQuery = js.native
   /**
     * Insert content, specified by the parameter, before each element in the set of matched elements.
     * 
@@ -264,11 +264,7 @@ trait JQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute each time the event is triggered.
     */
-  def bind(
-    eventType: String,
-    eventData: js.Any,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
-  ): JQuery = js.native
+  def bind(eventType: String, eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Attach a handler to an event for the elements.
     * 
@@ -276,14 +272,14 @@ trait JQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param preventBubble Setting the third argument to false will attach a function that prevents the default action from occurring and stops the event from bubbling. The default is true.
     */
-  def bind(eventType: String, eventData: js.Any, preventBubble: Boolean): JQuery = js.native
+  def bind(eventType: String, eventData: Any, preventBubble: Boolean): JQuery = js.native
   /**
     * Attach a handler to an event for the elements.
     * 
     * @param eventType A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
     * @param handler A function to execute each time the event is triggered.
     */
-  def bind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def bind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Attach a handler to an event for the elements.
     * 
@@ -296,35 +292,35 @@ trait JQuery
     * 
     * @param events An object containing one or more DOM event types and functions to execute for them.
     */
-  def bind(events: js.Any): JQuery = js.native
+  def bind(events: Any): JQuery = js.native
   
   /**
     * Trigger the "blur" event on an element
     */
   def blur(): JQuery = js.native
-  def blur(eventData: js.Any): JQuery = js.native
-  def blur(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
-  def blur(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def blur(eventData: Any): JQuery = js.native
+  def blur(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
+  def blur(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "blur" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def blur(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def blur(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   
   /**
     * Trigger the "change" event on an element.
     */
   def change(): JQuery = js.native
-  def change(eventData: js.Any): JQuery = js.native
-  def change(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
-  def change(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def change(eventData: Any): JQuery = js.native
+  def change(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
+  def change(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "change" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def change(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def change(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   
   /**
     * Get the children of each element in the set of matched elements, optionally filtered by a selector.
@@ -346,15 +342,15 @@ trait JQuery
     * Trigger the "click" event on an element.
     */
   def click(): JQuery = js.native
-  def click(eventData: js.Any): JQuery = js.native
-  def click(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
-  def click(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def click(eventData: Any): JQuery = js.native
+  def click(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
+  def click(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "click" JavaScript event
     *
     * @param eventData An object containing data that will be passed to the event handler.
     */
-  def click(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def click(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   
   def clone(withDataAndEvents: Boolean): JQuery = js.native
   def clone(withDataAndEvents: Boolean, deepWithDataAndEvents: Boolean): JQuery = js.native
@@ -385,8 +381,8 @@ trait JQuery
     * @param selectors An array or string containing a selector expression to match elements against (can also be a jQuery object).
     * @param context A DOM element within which a matching element may be found. If no context is passed in then the context of the jQuery set will be used instead.
     */
-  def closest(selectors: js.Any): js.Array[js.Any] = js.native
-  def closest(selectors: js.Any, context: Element): js.Array[js.Any] = js.native
+  def closest(selectors: Any): js.Array[Any] = js.native
+  def closest(selectors: Any, context: Element): js.Array[Any] = js.native
   
   /**
     * Get the children of each element in the set of matched elements, including text and comment nodes.
@@ -429,40 +425,40 @@ trait JQuery
   /**
     * Return the value at the named data store for the first element in the jQuery collection, as set by data(name, value) or by an HTML5 data-* attribute.
     */
-  def data(): js.Any = js.native
+  def data(): Any = js.native
   /**
     * Return the value at the named data store for the first element in the jQuery collection, as set by data(name, value) or by an HTML5 data-* attribute.
     *
     * @param key Name of the data stored.
     */
-  def data(key: String): js.Any = js.native
+  def data(key: String): Any = js.native
   /**
     * Store arbitrary data associated with the matched elements.
     *
     * @param key A string naming the piece of data to set.
     * @param value The new data value; it can be any Javascript type including Array or Object.
     */
-  def data(key: String, value: js.Any): JQuery = js.native
+  def data(key: String, value: Any): JQuery = js.native
   /**
     * Store arbitrary data associated with the matched elements.
     *
     * @param obj An object of key-value pairs of data to update.
     */
-  def data(obj: StringDictionary[js.Any]): JQuery = js.native
+  def data(obj: StringDictionary[Any]): JQuery = js.native
   
   /**
     * Trigger the "dblclick" event on an element.
     */
   def dblclick(): JQuery = js.native
-  def dblclick(eventData: js.Any): JQuery = js.native
-  def dblclick(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
-  def dblclick(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def dblclick(eventData: Any): JQuery = js.native
+  def dblclick(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
+  def dblclick(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "dblclick" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def dblclick(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def dblclick(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   
   /**
     * Set a timer to delay execution of subsequent items in the queue.
@@ -474,16 +470,12 @@ trait JQuery
   def delay(duration: Double, queueName: String): JQuery = js.native
   
   def delegate(
-    selector: js.Any,
+    selector: Any,
     eventType: String,
-    eventData: js.Any,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+    eventData: Any,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): JQuery = js.native
-  def delegate(
-    selector: js.Any,
-    eventType: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
-  ): JQuery = js.native
+  def delegate(selector: Any, eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   
   /**
     * Execute the next function on the queue for the matched elements.
@@ -506,7 +498,7 @@ trait JQuery
     * 
     * @param func A function to execute for each matched element.
     */
-  def each(func: js.Function2[/* index */ Double, /* elem */ Element, js.Any]): JQuery = js.native
+  def each(func: js.Function2[/* index */ Double, /* elem */ Element, Any]): JQuery = js.native
   
   /**
     * Remove all child nodes of the set of matched elements from the DOM.
@@ -532,13 +524,13 @@ trait JQuery
     * @param eventData A plain object of data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def error(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def error(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "error" JavaScript event. (DEPRECATED from v1.8)
     * 
     * @param handler A function to execute when the event is triggered.
     */
-  def error(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def error(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   
   /**
     * Display the matched elements by fading them to opaque.
@@ -653,7 +645,7 @@ trait JQuery
     * 
     * @param func A function used as a test for each element in the set. this is the current DOM element.
     */
-  def filter(func: js.Function2[/* index */ Double, /* element */ Element, js.Any]): JQuery = js.native
+  def filter(func: js.Function2[/* index */ Double, /* element */ Element, Any]): JQuery = js.native
   /**
     * Reduce the set of matched elements to those that match the selector or pass the function's test.
     * 
@@ -703,15 +695,15 @@ trait JQuery
     * Trigger the "focus" event on an element.
     */
   def focus(): JQuery = js.native
-  def focus(eventData: js.Any): JQuery = js.native
-  def focus(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
-  def focus(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def focus(eventData: Any): JQuery = js.native
+  def focus(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
+  def focus(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "focus" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def focus(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def focus(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   
   /**
     * Bind an event handler to the "focusin" JavaScript event
@@ -719,13 +711,13 @@ trait JQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute each time the event is triggered.
     */
-  def focusin(eventData: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def focusin(eventData: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "focusin" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def focusin(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def focusin(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   
   /**
     * Bind an event handler to the "focusout" JavaScript event
@@ -733,18 +725,18 @@ trait JQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute each time the event is triggered.
     */
-  def focusout(eventData: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def focusout(eventData: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "focusout" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def focusout(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def focusout(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   
   /**
     * Retrieve the elements matched by the jQuery object.
     */
-  def get(): js.Array[js.Any] = js.native
+  def get(): js.Array[Any] = js.native
   /**
     * Retrieve one of the elements matched by the jQuery object.
     * 
@@ -823,7 +815,7 @@ trait JQuery
     *
     * @param handlerInOut A function to execute when the mouse pointer enters or leaves the element.
     */
-  def hover(handlerInOut: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def hover(handlerInOut: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
     *
@@ -831,8 +823,8 @@ trait JQuery
     * @param handlerOut A function to execute when the mouse pointer leaves the element.
     */
   def hover(
-    handlerIn: js.Function1[/* eventObject */ JQueryEventObject, js.Any],
-    handlerOut: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+    handlerIn: js.Function1[/* eventObject */ JQueryEventObject, Any],
+    handlerOut: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): JQuery = js.native
   
   /**
@@ -890,7 +882,7 @@ trait JQuery
   def innerWidth(width: Double): JQuery = js.native
   
   def insertAfter(target: String): JQuery = js.native
-  def insertAfter(target: js.Array[js.Any]): JQuery = js.native
+  def insertAfter(target: js.Array[Any]): JQuery = js.native
   /**
     * Insert every element in the set of matched elements after the target.
     * 
@@ -901,7 +893,7 @@ trait JQuery
   def insertAfter(target: Text): JQuery = js.native
   
   def insertBefore(target: String): JQuery = js.native
-  def insertBefore(target: js.Array[js.Any]): JQuery = js.native
+  def insertBefore(target: js.Array[Any]): JQuery = js.native
   /**
     * Insert every element in the set of matched elements before the target.
     * 
@@ -916,7 +908,7 @@ trait JQuery
     * 
     * @param elements One or more elements to match the current set of elements against.
     */
-  def is(elements: js.Any): Boolean = js.native
+  def is(elements: Any): Boolean = js.native
   /**
     * Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments.
     * 
@@ -942,43 +934,43 @@ trait JQuery
     * Trigger the "keydown" event on an element.
     */
   def keydown(): JQuery = js.native
-  def keydown(eventData: js.Any): JQuery = js.native
-  def keydown(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): JQuery = js.native
-  def keydown(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): JQuery = js.native
+  def keydown(eventData: Any): JQuery = js.native
+  def keydown(eventData: Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): JQuery = js.native
+  def keydown(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "keydown" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def keydown(handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): JQuery = js.native
+  def keydown(handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): JQuery = js.native
   
   /**
     * Trigger the "keypress" event on an element.
     */
   def keypress(): JQuery = js.native
-  def keypress(eventData: js.Any): JQuery = js.native
-  def keypress(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): JQuery = js.native
-  def keypress(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): JQuery = js.native
+  def keypress(eventData: Any): JQuery = js.native
+  def keypress(eventData: Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): JQuery = js.native
+  def keypress(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "keypress" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def keypress(handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): JQuery = js.native
+  def keypress(handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): JQuery = js.native
   
   /**
     * Trigger the "keyup" event on an element.
     */
   def keyup(): JQuery = js.native
-  def keyup(eventData: js.Any): JQuery = js.native
-  def keyup(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): JQuery = js.native
-  def keyup(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): JQuery = js.native
+  def keyup(eventData: Any): JQuery = js.native
+  def keyup(eventData: Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): JQuery = js.native
+  def keyup(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "keyup" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def keyup(handler: js.Function1[/* eventObject */ JQueryKeyEventObject, js.Any]): JQuery = js.native
+  def keyup(handler: js.Function1[/* eventObject */ JQueryKeyEventObject, Any]): JQuery = js.native
   
   /**
     * Reduce the set of matched elements to the final one in the set.
@@ -997,15 +989,15 @@ trait JQuery
     * @param handler A function to execute when the event is triggered.
     */
   def load(): JQuery = js.native
-  def load(eventData: js.Any): JQuery = js.native
-  def load(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
-  def load(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def load(eventData: Any): JQuery = js.native
+  def load(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
+  def load(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "load" JavaScript event.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def load(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def load(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Load data from the server and place the returned HTML into the matched element.
     *
@@ -1022,7 +1014,7 @@ trait JQuery
       /* responseText */ String, 
       /* textStatus */ String, 
       /* XMLHttpRequest */ XMLHttpRequest, 
-      js.Any
+      Any
     ]
   ): JQuery = js.native
   def load(
@@ -1032,7 +1024,7 @@ trait JQuery
       /* responseText */ String, 
       /* textStatus */ String, 
       /* XMLHttpRequest */ XMLHttpRequest, 
-      js.Any
+      Any
     ]
   ): JQuery = js.native
   def load(url: String, data: Object): JQuery = js.native
@@ -1043,7 +1035,7 @@ trait JQuery
       /* responseText */ String, 
       /* textStatus */ String, 
       /* XMLHttpRequest */ XMLHttpRequest, 
-      js.Any
+      Any
     ]
   ): JQuery = js.native
   
@@ -1052,7 +1044,7 @@ trait JQuery
     * 
     * @param callback A function object that will be invoked for each element in the current set.
     */
-  def map(callback: js.Function2[/* index */ Double, /* domElement */ Element, js.Any]): JQuery = js.native
+  def map(callback: js.Function2[/* index */ Double, /* domElement */ Element, Any]): JQuery = js.native
   
   /**
     * Trigger the "mousedown" event on an element.
@@ -1064,13 +1056,13 @@ trait JQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def mousedown(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): JQuery = js.native
+  def mousedown(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "mousedown" JavaScript event.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def mousedown(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): JQuery = js.native
+  def mousedown(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): JQuery = js.native
   
   /**
     * Trigger the "mouseenter" event on an element.
@@ -1082,13 +1074,13 @@ trait JQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseenter(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): JQuery = js.native
+  def mouseenter(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to be fired when the mouse enters an element.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseenter(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): JQuery = js.native
+  def mouseenter(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): JQuery = js.native
   
   /**
     * Trigger the "mouseleave" event on an element.
@@ -1100,13 +1092,13 @@ trait JQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseleave(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): JQuery = js.native
+  def mouseleave(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to be fired when the mouse leaves an element.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseleave(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): JQuery = js.native
+  def mouseleave(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): JQuery = js.native
   
   /**
     * Trigger the "mousemove" event on an element.
@@ -1118,13 +1110,13 @@ trait JQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def mousemove(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): JQuery = js.native
+  def mousemove(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "mousemove" JavaScript event.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def mousemove(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): JQuery = js.native
+  def mousemove(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): JQuery = js.native
   
   /**
     * Trigger the "mouseout" event on an element.
@@ -1136,13 +1128,13 @@ trait JQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseout(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): JQuery = js.native
+  def mouseout(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "mouseout" JavaScript event.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseout(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): JQuery = js.native
+  def mouseout(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): JQuery = js.native
   
   /**
     * Trigger the "mouseover" event on an element.
@@ -1154,13 +1146,13 @@ trait JQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseover(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): JQuery = js.native
+  def mouseover(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "mouseover" JavaScript event.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseover(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): JQuery = js.native
+  def mouseover(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): JQuery = js.native
   
   /**
     * Trigger the "mouseup" event on an element.
@@ -1172,13 +1164,13 @@ trait JQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseup(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): JQuery = js.native
+  def mouseup(eventData: Object, handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "mouseup" JavaScript event.
     *
     * @param handler A function to execute when the event is triggered.
     */
-  def mouseup(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, js.Any]): JQuery = js.native
+  def mouseup(handler: js.Function1[/* eventObject */ JQueryMouseEventObject, Any]): JQuery = js.native
   
   /**
     * Get the immediately following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector.
@@ -1254,22 +1246,18 @@ trait JQuery
     * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as "click", "keydown.myPlugin", or ".myPlugin".
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
-  def off(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def off(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   def off(events: String, selector: String): JQuery = js.native
-  def off(
-    events: String,
-    selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
-  ): JQuery = js.native
-  def off(events: String, selector: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def off(events: String, selector: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
+  def off(events: String, selector: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Remove an event handler.
     *
     * @param events An object where the string keys represent one or more space-separated event types and optional namespaces, and the values represent handler functions previously attached for the event(s).
     * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
     */
-  def off(events: StringDictionary[js.Any]): JQuery = js.native
-  def off(events: StringDictionary[js.Any], selector: String): JQuery = js.native
+  def off(events: StringDictionary[Any]): JQuery = js.native
+  def off(events: StringDictionary[Any], selector: String): JQuery = js.native
   
   /**
     * Get the current coordinates of the first element in the set of matched elements, relative to the document.
@@ -1302,8 +1290,8 @@ trait JQuery
     */
   def on(
     events: String,
-    data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
+    data: Any,
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -1313,7 +1301,7 @@ trait JQuery
     */
   def on(
     events: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -1326,8 +1314,8 @@ trait JQuery
   def on(
     events: String,
     selector: String,
-    data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
+    data: Any,
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -1339,7 +1327,7 @@ trait JQuery
   def on(
     events: String,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -1348,11 +1336,11 @@ trait JQuery
     * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
     * @param data Data to be passed to the handler in event.data when an event occurs.
     */
-  def on(events: StringDictionary[js.Any]): JQuery = js.native
-  def on(events: StringDictionary[js.Any], data: js.Any): JQuery = js.native
-  def on(events: StringDictionary[js.Any], selector: String): JQuery = js.native
-  def on(events: StringDictionary[js.Any], selector: String, data: js.Any): JQuery = js.native
-  def on(events: StringDictionary[js.Any], selector: Unit, data: js.Any): JQuery = js.native
+  def on(events: StringDictionary[Any]): JQuery = js.native
+  def on(events: StringDictionary[Any], data: Any): JQuery = js.native
+  def on(events: StringDictionary[Any], selector: String): JQuery = js.native
+  def on(events: StringDictionary[Any], selector: String, data: Any): JQuery = js.native
+  def on(events: StringDictionary[Any], selector: Unit, data: Any): JQuery = js.native
   
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
@@ -1361,14 +1349,14 @@ trait JQuery
     * @param data An object containing data that will be passed to the event handler.
     * @param handler A function to execute at the time the event is triggered.
     */
-  def one(events: String, data: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def one(events: String, data: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     *
     * @param events A string containing one or more JavaScript event types, such as "click" or "submit," or custom event names.
     * @param handler A function to execute at the time the event is triggered.
     */
-  def one(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def one(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     *
@@ -1380,8 +1368,8 @@ trait JQuery
   def one(
     events: String,
     selector: String,
-    data: js.Any,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+    data: Any,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): JQuery = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
@@ -1390,11 +1378,7 @@ trait JQuery
     * @param selector A selector string to filter the descendants of the selected elements that trigger the event. If the selector is null or omitted, the event is always triggered when it reaches the selected element.
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
-  def one(
-    events: String,
-    selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
-  ): JQuery = js.native
+  def one(events: String, selector: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     *
@@ -1402,11 +1386,11 @@ trait JQuery
     * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If the selector is null or omitted, the handler is always called when it reaches the selected element.
     * @param data Data to be passed to the handler in event.data when an event occurs.
     */
-  def one(events: StringDictionary[js.Any]): JQuery = js.native
-  def one(events: StringDictionary[js.Any], data: js.Any): JQuery = js.native
-  def one(events: StringDictionary[js.Any], selector: String): JQuery = js.native
-  def one(events: StringDictionary[js.Any], selector: String, data: js.Any): JQuery = js.native
-  def one(events: StringDictionary[js.Any], selector: Unit, data: js.Any): JQuery = js.native
+  def one(events: StringDictionary[Any]): JQuery = js.native
+  def one(events: StringDictionary[Any], data: Any): JQuery = js.native
+  def one(events: StringDictionary[Any], selector: String): JQuery = js.native
+  def one(events: StringDictionary[Any], selector: String, data: Any): JQuery = js.native
+  def one(events: StringDictionary[Any], selector: Unit, data: Any): JQuery = js.native
   
   /**
     * Get the current computed height for the first element in the set of matched elements, including padding, border, and optionally margin. Returns an integer (without "px") representation of the value or null if called on an empty set of elements.
@@ -1474,17 +1458,17 @@ trait JQuery
     */
   def position(): JQueryCoordinates = js.native
   
-  def prepend(content1: String, content2: js.Any*): JQuery = js.native
-  def prepend(content1: js.Array[js.Any], content2: js.Any*): JQuery = js.native
+  def prepend(content1: String, content2: Any*): JQuery = js.native
+  def prepend(content1: js.Array[Any], content2: Any*): JQuery = js.native
   /**
     * Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.
     * 
     * param content1 DOM element, array of elements, HTML string, or jQuery object to insert at the beginning of each element in the set of matched elements.
     * param content2 One or more additional DOM elements, arrays of elements, HTML strings, or jQuery objects to insert at the beginning of each element in the set of matched elements.
     */
-  def prepend(content1: JQuery, content2: js.Any*): JQuery = js.native
-  def prepend(content1: Element, content2: js.Any*): JQuery = js.native
-  def prepend(content1: Text, content2: js.Any*): JQuery = js.native
+  def prepend(content1: JQuery, content2: Any*): JQuery = js.native
+  def prepend(content1: Element, content2: Any*): JQuery = js.native
+  def prepend(content1: Text, content2: Any*): JQuery = js.native
   /**
     * Insert content, specified by the parameter, to the beginning of each element in the set of matched elements.
     * 
@@ -1493,7 +1477,7 @@ trait JQuery
   def prepend(func: js.Function2[/* index */ Double, /* html */ String, String | Element | this.type]): JQuery = js.native
   
   def prependTo(target: String): JQuery = js.native
-  def prependTo(target: js.Array[js.Any]): JQuery = js.native
+  def prependTo(target: js.Array[Any]): JQuery = js.native
   /**
     * Insert every element in the set of matched elements to the beginning of the target.
     * 
@@ -1539,10 +1523,10 @@ trait JQuery
     * @param type The type of queue that needs to be observed. (default: fx)
     * @param target Object onto which the promise methods have to be attached
     */
-  def promise(): JQueryPromise[js.Any] = js.native
-  def promise(`type`: String): JQueryPromise[js.Any] = js.native
-  def promise(`type`: String, target: Object): JQueryPromise[js.Any] = js.native
-  def promise(`type`: Unit, target: Object): JQueryPromise[js.Any] = js.native
+  def promise(): JQueryPromise[Any] = js.native
+  def promise(`type`: String): JQueryPromise[Any] = js.native
+  def promise(`type`: String, target: Object): JQueryPromise[Any] = js.native
+  def promise(`type`: Unit, target: Object): JQueryPromise[Any] = js.native
   
   /**
     * Set one or more properties for the set of matched elements.
@@ -1560,17 +1544,14 @@ trait JQuery
     *
     * @param propertyName The name of the property to get.
     */
-  def prop(propertyName: String): js.Any = js.native
+  def prop(propertyName: String): Any = js.native
   /**
     * Set one or more properties for the set of matched elements.
     *
     * @param propertyName The name of the property to set.
     * @param func A function returning the value to set. Receives the index position of the element in the set and the old property value as arguments. Within the function, the keyword this refers to the current element.
     */
-  def prop(
-    propertyName: String,
-    func: js.Function2[/* index */ Double, /* oldPropertyValue */ js.Any, js.Any]
-  ): JQuery = js.native
+  def prop(propertyName: String, func: js.Function2[/* index */ Double, /* oldPropertyValue */ Any, Any]): JQuery = js.native
   /**
     * Set one or more properties for the set of matched elements.
     *
@@ -1586,7 +1567,7 @@ trait JQuery
     * 
     * @param elements An array of elements to push onto the stack and make into a new jQuery object.
     */
-  def pushStack(elements: js.Array[js.Any]): JQuery = js.native
+  def pushStack(elements: js.Array[Any]): JQuery = js.native
   /**
     * Add a collection of DOM elements onto the jQuery stack.
     * 
@@ -1594,14 +1575,14 @@ trait JQuery
     * @param name The name of a jQuery method that generated the array of elements.
     * @param arguments The arguments that were passed in to the jQuery method (for serialization).
     */
-  def pushStack(elements: js.Array[js.Any], name: String, arguments: js.Array[js.Any]): JQuery = js.native
+  def pushStack(elements: js.Array[Any], name: String, arguments: js.Array[Any]): JQuery = js.native
   
   /**
     * Show the queue of functions to be executed on the matched elements.
     * 
     * @param queueName A string containing the name of the queue. Defaults to fx, the standard effects queue.
     */
-  def queue(): js.Array[js.Any] = js.native
+  def queue(): js.Array[Any] = js.native
   /**
     * Manipulate the queue of functions to be executed, once for each matched element.
     * 
@@ -1614,7 +1595,7 @@ trait JQuery
     * @param newQueue An array of functions to replace the current queue contents.
     */
   def queue(newQueue: js.Array[js.Function]): JQuery = js.native
-  def queue(queueName: String): js.Array[js.Any] = js.native
+  def queue(queueName: String): js.Array[Any] = js.native
   /**
     * Manipulate the queue of functions to be executed, once for each matched element.
     * 
@@ -1635,7 +1616,7 @@ trait JQuery
     *
     * @param handler A function to execute after the DOM is ready.
     */
-  def ready(handler: js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], js.Any]): JQuery = js.native
+  def ready(handler: js.Function1[/* jQueryAlias */ js.UndefOr[JQueryStatic], Any]): JQuery = js.native
   
   /**
     * Remove the set of matched elements from the DOM.
@@ -1687,7 +1668,7 @@ trait JQuery
   def removeProp(propertyName: String): JQuery = js.native
   
   def replaceAll(target: String): JQuery = js.native
-  def replaceAll(target: js.Array[js.Any]): JQuery = js.native
+  def replaceAll(target: js.Array[Any]): JQuery = js.native
   /**
     * Replace each target element with the set of matched elements.
     * 
@@ -1703,7 +1684,7 @@ trait JQuery
     */
   def replaceWith(func: js.Function0[Element | this.type]): JQuery = js.native
   def replaceWith(newContent: String): JQuery = js.native
-  def replaceWith(newContent: js.Array[js.Any]): JQuery = js.native
+  def replaceWith(newContent: js.Array[Any]): JQuery = js.native
   /**
     * Replace each element in the set of matched elements with the provided new content and return the set of elements that was removed.
     * 
@@ -1723,13 +1704,13 @@ trait JQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute each time the event is triggered.
     */
-  def resize(eventData: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def resize(eventData: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "resize" JavaScript event.
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def resize(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def resize(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   
   /**
     * Trigger the "scroll" event on an element.
@@ -1741,13 +1722,13 @@ trait JQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute each time the event is triggered.
     */
-  def scroll(eventData: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def scroll(eventData: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "scroll" JavaScript event.
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def scroll(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def scroll(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   
   /**
     * Get the current horizontal position of the scroll bar for the first element in the set of matched elements or set the horizontal position of the scroll bar for every matched element.
@@ -1781,13 +1762,13 @@ trait JQuery
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute each time the event is triggered.
     */
-  def select(eventData: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def select(eventData: Object, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "select" JavaScript event.
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def select(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def select(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   
   /**
     * A selector representing selector passed to jQuery(), if any, when creating the original set.
@@ -1955,15 +1936,15 @@ trait JQuery
     * Trigger the "submit" event on an element.
     */
   def submit(): JQuery = js.native
-  def submit(eventData: js.Any): JQuery = js.native
-  def submit(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
-  def submit(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def submit(eventData: Any): JQuery = js.native
+  def submit(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
+  def submit(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "submit" JavaScript event
     *
     * @param handler A function to execute each time the event is triggered.
     */
-  def submit(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def submit(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   
   /**
     * Get the combined text contents of each element in the set of matched elements, including their descendants.
@@ -1987,7 +1968,7 @@ trait JQuery
   /**
     * Retrieve all the elements contained in the jQuery set, as an array.
     */
-  def toArray(): js.Array[js.Any] = js.native
+  def toArray(): js.Array[Any] = js.native
   
   /**
     * Display or hide the matched elements.
@@ -2057,7 +2038,7 @@ trait JQuery
     * @param extraParameters Additional parameters to pass along to the event handler.
     */
   def trigger(eventType: String): JQuery = js.native
-  def trigger(eventType: String, extraParameters: js.Array[js.Any]): JQuery = js.native
+  def trigger(eventType: String, extraParameters: js.Array[Any]): JQuery = js.native
   def trigger(eventType: String, extraParameters: Object): JQuery = js.native
   /**
     * Execute all handlers and behaviors attached to the matched elements for the given event type.
@@ -2066,7 +2047,7 @@ trait JQuery
     * @param extraParameters Additional parameters to pass along to the event handler.
     */
   def trigger(event: JQueryEventObject): JQuery = js.native
-  def trigger(event: JQueryEventObject, extraParameters: js.Array[js.Any]): JQuery = js.native
+  def trigger(event: JQueryEventObject, extraParameters: js.Array[Any]): JQuery = js.native
   def trigger(event: JQueryEventObject, extraParameters: Object): JQuery = js.native
   
   /**
@@ -2075,14 +2056,14 @@ trait JQuery
     * @param eventType A string containing a JavaScript event type, such as click or submit.
     * @param extraParameters An array of additional parameters to pass along to the event handler.
     */
-  def triggerHandler(eventType: String, extraParameters: js.Any*): Object = js.native
+  def triggerHandler(eventType: String, extraParameters: Any*): Object = js.native
   /**
     * Execute all handlers attached to an element for an event.
     * 
     * @param event A jQuery.Event object.
     * @param extraParameters An array of additional parameters to pass along to the event handler.
     */
-  def triggerHandler(event: JQueryEventObject, extraParameters: js.Any*): Object = js.native
+  def triggerHandler(event: JQueryEventObject, extraParameters: Any*): Object = js.native
   
   /**
     * Remove a previously-attached event handler from the elements.
@@ -2099,14 +2080,14 @@ trait JQuery
     * @param fls Unbinds the corresponding 'return false' function that was bound using .bind( eventType, false ).
     */
   def unbind(eventType: String, fls: Boolean): JQuery = js.native
-  def unbind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
-  def unbind(eventType: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def unbind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
+  def unbind(eventType: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Remove a previously-attached event handler from the elements.
     * 
     * @param evt A JavaScript event object as passed to an event handler.
     */
-  def unbind(evt: js.Any): JQuery = js.native
+  def unbind(evt: Any): JQuery = js.native
   
   /**
     * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
@@ -2129,7 +2110,7 @@ trait JQuery
   def undelegate(
     selector: String,
     eventType: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): JQuery = js.native
   /**
     * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
@@ -2146,15 +2127,15 @@ trait JQuery
     * @param handler A function to execute when the event is triggered.
     */
   def unload(): JQuery = js.native
-  def unload(eventData: js.Any): JQuery = js.native
-  def unload(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
-  def unload(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def unload(eventData: Any): JQuery = js.native
+  def unload(eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
+  def unload(eventData: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Bind an event handler to the "unload" JavaScript event. (DEPRECATED from v1.8)
     * 
     * @param handler A function to execute when the event is triggered.
     */
-  def unload(handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
+  def unload(handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   
   /**
     * Remove the parents of the set of matched elements from the DOM, leaving the matched elements in their place.
@@ -2164,7 +2145,7 @@ trait JQuery
   /**
     * Get the current value of the first element in the set of matched elements.
     */
-  def `val`(): js.Any = js.native
+  def `val`(): Any = js.native
   /**
     * Set the value of each element in the set of matched elements.
     *

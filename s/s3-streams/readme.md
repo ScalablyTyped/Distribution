@@ -11,9 +11,9 @@ Use readable/writeable streams for manipulating S3 objects.
 | Full name          | s3-streams |
 | Keywords           | s3, stream, upload, download |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 144233 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 18193.666666666668 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/izaakschroeder/s3-streams)

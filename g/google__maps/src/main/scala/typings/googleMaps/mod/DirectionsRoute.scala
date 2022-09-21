@@ -81,11 +81,11 @@ object DirectionsRoute {
     
     inline def setLegs(value: js.Array[RouteLeg]): Self = StObject.set(x, "legs", value.asInstanceOf[js.Any])
     
-    inline def setLegsVarargs(value: RouteLeg*): Self = StObject.set(x, "legs", js.Array(value :_*))
+    inline def setLegsVarargs(value: RouteLeg*): Self = StObject.set(x, "legs", js.Array(value*))
     
     inline def setOverview_path(value: js.Array[LatLngLiteral]): Self = StObject.set(x, "overview_path", value.asInstanceOf[js.Any])
     
-    inline def setOverview_pathVarargs(value: LatLngLiteral*): Self = StObject.set(x, "overview_path", js.Array(value :_*))
+    inline def setOverview_pathVarargs(value: LatLngLiteral*): Self = StObject.set(x, "overview_path", js.Array(value*))
     
     inline def setOverview_polyline(value: Points): Self = StObject.set(x, "overview_polyline", value.asInstanceOf[js.Any])
     
@@ -93,10 +93,10 @@ object DirectionsRoute {
     
     inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
     
     inline def setWaypoint_order(value: js.Array[Double]): Self = StObject.set(x, "waypoint_order", value.asInstanceOf[js.Any])
     
-    inline def setWaypoint_orderVarargs(value: Double*): Self = StObject.set(x, "waypoint_order", js.Array(value :_*))
+    inline def setWaypoint_orderVarargs(value: Double*): Self = StObject.set(x, "waypoint_order", js.Array(value*))
   }
 }

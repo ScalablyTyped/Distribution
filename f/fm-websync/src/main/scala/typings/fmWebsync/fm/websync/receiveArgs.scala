@@ -1,6 +1,5 @@
 package typings.fmWebsync.fm.websync
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ trait receiveArgs
   /**
     * The published data.
     */
-  var data: js.Any
+  var data: Any
   
   /**
     * Details about the client publishing the data.
@@ -30,10 +29,10 @@ object receiveArgs {
     channel: String,
     client: client,
     clientId: String,
-    data: js.Any,
-    meta: js.Any,
+    data: Any,
+    meta: Any,
     publishingClient: publishingClient,
-    timestamp: Date
+    timestamp: js.Date
   ): receiveArgs = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], publishingClient = publishingClient.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[receiveArgs]
@@ -43,7 +42,7 @@ object receiveArgs {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setPublishingClient(value: publishingClient): Self = StObject.set(x, "publishingClient", value.asInstanceOf[js.Any])
   }

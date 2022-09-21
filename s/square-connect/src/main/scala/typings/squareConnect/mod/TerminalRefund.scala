@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "TerminalRefund")
 @js.native
-class TerminalRefund () extends StObject {
+open class TerminalRefund () extends StObject {
   
   /**
     * The amount of money, inclusive of `tax_money`, that the `TerminalRefund` should return.

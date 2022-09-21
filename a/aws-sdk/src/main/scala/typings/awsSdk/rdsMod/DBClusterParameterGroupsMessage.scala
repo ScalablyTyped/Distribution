@@ -12,7 +12,7 @@ trait DBClusterParameterGroupsMessage extends StObject {
   var DBClusterParameterGroups: js.UndefOr[DBClusterParameterGroupList] = js.undefined
   
   /**
-    *  An optional pagination token provided by a previous DescribeDBClusterParameterGroups request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
+    * An optional pagination token provided by a previous DescribeDBClusterParameterGroups request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
   var Marker: js.UndefOr[String] = js.undefined
 }
@@ -29,7 +29,7 @@ object DBClusterParameterGroupsMessage {
     
     inline def setDBClusterParameterGroupsUndefined: Self = StObject.set(x, "DBClusterParameterGroups", js.undefined)
     
-    inline def setDBClusterParameterGroupsVarargs(value: DBClusterParameterGroup*): Self = StObject.set(x, "DBClusterParameterGroups", js.Array(value :_*))
+    inline def setDBClusterParameterGroupsVarargs(value: DBClusterParameterGroup*): Self = StObject.set(x, "DBClusterParameterGroups", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

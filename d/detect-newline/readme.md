@@ -1,7 +1,7 @@
 
 # Scala.js typings for detect-newline
 
-Typings are for version 3.1.0
+Typings are for version 4.0.0
 
 ## Library description:
 Detect the dominant newline character of a string
@@ -9,11 +9,11 @@ Detect the dominant newline character of a string
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | detect-newline |
-| Keywords           | newline, linebreak, line-break, line, lf, crlf, eol, linefeed, character, char |
-| # releases         | 3 |
-| # dependents       | 175 |
-| # downloads        | 433075561 |
-| # stars            | 0 |
+| Keywords           | newline, linebreak, line-break, line, lf, crlf, eol, linefeed, character |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 6.900307933333333E7 |
+| # stars            | 43.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/detect-newline#readme)

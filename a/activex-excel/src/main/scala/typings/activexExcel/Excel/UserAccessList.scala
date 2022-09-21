@@ -19,5 +19,5 @@ trait UserAccessList extends StObject {
   def Item(Index: String): UserAccess = js.native
   def Item(Index: Double): UserAccess = js.native
   
-  def _Default(Index: js.Any): UserAccess = js.native
+  def _Default(Index: Any): UserAccess = js.native
 }

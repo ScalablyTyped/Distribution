@@ -18,20 +18,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object getOpenIdTokenCommandMod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/commands/GetOpenIdTokenCommand", "GetOpenIdTokenCommand")
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/GetOpenIdTokenCommand", "GetOpenIdTokenCommand")
   @js.native
-  class GetOpenIdTokenCommand protected ()
-    extends Command[
+  open class GetOpenIdTokenCommand protected () extends Command[
           GetOpenIdTokenCommandInput, 
           GetOpenIdTokenCommandOutput, 
           CognitoIdentityClientResolvedConfig, 
-          js.Any, 
-          js.Any
+          Any, 
+          Any
         ] {
     def this(input: GetOpenIdTokenCommandInput) = this()
     
-    /* private */ var deserialize: js.Any = js.native
+    /* private */ var deserialize: Any = js.native
     
+    /**
+      * @internal
+      */
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
       configuration: CognitoIdentityClientResolvedConfig
@@ -42,7 +44,7 @@ object getOpenIdTokenCommandMod {
       options: HttpHandlerOptions
     ): Handler[GetOpenIdTokenCommandInput, GetOpenIdTokenCommandOutput] = js.native
     
-    /* private */ var serialize: js.Any = js.native
+    /* private */ var serialize: Any = js.native
   }
   
   type GetOpenIdTokenCommandInput = GetOpenIdTokenInput

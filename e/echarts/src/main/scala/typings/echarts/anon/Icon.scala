@@ -8,7 +8,7 @@ trait Icon extends StObject {
   
   var color: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[js.Any] = js.undefined
+  var icon: js.UndefOr[Any] = js.undefined
   
   var margin: js.UndefOr[Double] = js.undefined
   
@@ -39,7 +39,7 @@ object Icon {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
@@ -71,7 +71,7 @@ object Icon {
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value*))
     
     inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     

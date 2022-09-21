@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "CardMedia")
 @js.native
-class CardMedia ()
-  extends Component[CardMediaProps, js.Object, js.Any]
+open class CardMedia ()
+  extends Component[CardMediaProps, js.Object, Any]

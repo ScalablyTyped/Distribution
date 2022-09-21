@@ -15,9 +15,14 @@ trait Handle
   extends StObject
      with MissingFieldHandler {
   
-  def handle(field: NormalizationScalarField, record: Null, args: Variables, store: ReadOnlyRecordSourceProxy): js.Any = js.native
-  def handle(field: NormalizationScalarField, record: Unit, args: Variables, store: ReadOnlyRecordSourceProxy): js.Any = js.native
-  def handle(field: NormalizationScalarField, record: Record, args: Variables, store: ReadOnlyRecordSourceProxy): js.Any = js.native
+  def handle(field: NormalizationScalarField, record: Null, args: Variables, store: ReadOnlyRecordSourceProxy): Any = js.native
+  def handle(field: NormalizationScalarField, record: Unit, args: Variables, store: ReadOnlyRecordSourceProxy): Any = js.native
+  def handle(
+    field: NormalizationScalarField,
+    record: Record[js.Object],
+    args: Variables,
+    store: ReadOnlyRecordSourceProxy
+  ): Any = js.native
   
   var kind: scalar = js.native
 }

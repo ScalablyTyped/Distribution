@@ -32,7 +32,7 @@ object IntrospectionInputObjectType {
     
     inline def setInputFields(value: js.Array[IntrospectionInputValue]): Self = StObject.set(x, "inputFields", value.asInstanceOf[js.Any])
     
-    inline def setInputFieldsVarargs(value: IntrospectionInputValue*): Self = StObject.set(x, "inputFields", js.Array(value :_*))
+    inline def setInputFieldsVarargs(value: IntrospectionInputValue*): Self = StObject.set(x, "inputFields", js.Array(value*))
     
     inline def setKind(value: INPUT_OBJECT): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

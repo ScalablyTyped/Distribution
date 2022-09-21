@@ -49,7 +49,7 @@ object RasterOptions {
     
     inline def setSources(value: js.Array[Source]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     

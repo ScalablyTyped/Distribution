@@ -4,27 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to get updated debug configuration for component.
-  */
 trait SchemaGetDebugConfigRequest extends StObject {
   
   /**
     * The internal component id for which debug configuration is requested.
     */
-  var componentId: js.UndefOr[String] = js.undefined
+  var componentId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The [regional endpoint]
-    * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
-    * contains the job specified by job_id.
+    * The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains the job specified by job_id.
     */
-  var location: js.UndefOr[String] = js.undefined
+  var location: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The worker id, i.e., VM hostname.
     */
-  var workerId: js.UndefOr[String] = js.undefined
+  var workerId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGetDebugConfigRequest {
   
@@ -37,13 +32,19 @@ object SchemaGetDebugConfigRequest {
     
     inline def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
     
+    inline def setComponentIdNull: Self = StObject.set(x, "componentId", null)
+    
     inline def setComponentIdUndefined: Self = StObject.set(x, "componentId", js.undefined)
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
+    inline def setLocationNull: Self = StObject.set(x, "location", null)
+    
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
+    
+    inline def setWorkerIdNull: Self = StObject.set(x, "workerId", null)
     
     inline def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
   }

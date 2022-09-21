@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.OptionSet")
 @js.native
-class OptionSet protected () extends AttributeBase {
+open class OptionSet protected () extends AttributeBase {
   /**
     * An OptionSet Attribute.
     * @param name The logical name of the attribute.

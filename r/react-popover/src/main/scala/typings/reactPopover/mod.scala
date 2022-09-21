@@ -14,10 +14,10 @@ object mod {
   
   @JSImport("react-popover", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PopoverProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PopoverProps, js.Object, Any]
   
-  type Popover = Component[PopoverProps, js.Object, js.Any]
+  type Popover = Component[PopoverProps, js.Object, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactPopover.reactPopoverStrings.above

@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MathObject extends StObject {
   
-  def Avg(pxmllistInput: IXMLDOMNodeList): js.Any
+  def Avg(pxmllistInput: IXMLDOMNodeList): Any
   
-  def Eval(pxmllistContext: IXMLDOMNodeList, bstrExpression: String): js.Any
+  def Eval(pxmllistContext: IXMLDOMNodeList, bstrExpression: String): Any
   
   /* private */ @JSName("InfoPath.MathObject_typekey")
   var InfoPathDotMathObject_typekey: MathObject
   
-  def Max(pxmllistInput: IXMLDOMNodeList): js.Any
+  def Max(pxmllistInput: IXMLDOMNodeList): Any
   
-  def Min(pxmllistInput: IXMLDOMNodeList): js.Any
+  def Min(pxmllistInput: IXMLDOMNodeList): Any
   
-  def Nz(pxmllistInput: IXMLDOMNodeList): js.Any
+  def Nz(pxmllistInput: IXMLDOMNodeList): Any
 }
 object MathObject {
   
   inline def apply(
-    Avg: IXMLDOMNodeList => js.Any,
-    Eval: (IXMLDOMNodeList, String) => js.Any,
+    Avg: IXMLDOMNodeList => Any,
+    Eval: (IXMLDOMNodeList, String) => Any,
     InfoPathDotMathObject_typekey: MathObject,
-    Max: IXMLDOMNodeList => js.Any,
-    Min: IXMLDOMNodeList => js.Any,
-    Nz: IXMLDOMNodeList => js.Any
+    Max: IXMLDOMNodeList => Any,
+    Min: IXMLDOMNodeList => Any,
+    Nz: IXMLDOMNodeList => Any
   ): MathObject = {
     val __obj = js.Dynamic.literal(Avg = js.Any.fromFunction1(Avg), Eval = js.Any.fromFunction2(Eval), Max = js.Any.fromFunction1(Max), Min = js.Any.fromFunction1(Min), Nz = js.Any.fromFunction1(Nz))
     __obj.updateDynamic("InfoPath.MathObject_typekey")(InfoPathDotMathObject_typekey.asInstanceOf[js.Any])
@@ -37,16 +37,16 @@ object MathObject {
   
   extension [Self <: MathObject](x: Self) {
     
-    inline def setAvg(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Avg", js.Any.fromFunction1(value))
+    inline def setAvg(value: IXMLDOMNodeList => Any): Self = StObject.set(x, "Avg", js.Any.fromFunction1(value))
     
-    inline def setEval(value: (IXMLDOMNodeList, String) => js.Any): Self = StObject.set(x, "Eval", js.Any.fromFunction2(value))
+    inline def setEval(value: (IXMLDOMNodeList, String) => Any): Self = StObject.set(x, "Eval", js.Any.fromFunction2(value))
     
     inline def setInfoPathDotMathObject_typekey(value: MathObject): Self = StObject.set(x, "InfoPath.MathObject_typekey", value.asInstanceOf[js.Any])
     
-    inline def setMax(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Max", js.Any.fromFunction1(value))
+    inline def setMax(value: IXMLDOMNodeList => Any): Self = StObject.set(x, "Max", js.Any.fromFunction1(value))
     
-    inline def setMin(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Min", js.Any.fromFunction1(value))
+    inline def setMin(value: IXMLDOMNodeList => Any): Self = StObject.set(x, "Min", js.Any.fromFunction1(value))
     
-    inline def setNz(value: IXMLDOMNodeList => js.Any): Self = StObject.set(x, "Nz", js.Any.fromFunction1(value))
+    inline def setNz(value: IXMLDOMNodeList => Any): Self = StObject.set(x, "Nz", js.Any.fromFunction1(value))
   }
 }

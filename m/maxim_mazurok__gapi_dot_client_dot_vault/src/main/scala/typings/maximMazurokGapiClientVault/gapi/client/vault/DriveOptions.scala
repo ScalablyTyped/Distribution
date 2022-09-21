@@ -6,13 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DriveOptions extends StObject {
   
-  /** Set to true to include shared drive. */
+  /**
+    * Set whether the results include only content encrypted with [Google Workspace Client-side encryption](https://support.google.com/a?p=cse_ov) content, only unencrypted content, or
+    * both. Defaults to both. Currently supported for Drive.
+    */
+  var clientSideEncryptedOption: js.UndefOr[String] = js.undefined
+  
+  /** Set to **true** to include shared drives. */
   var includeSharedDrives: js.UndefOr[Boolean] = js.undefined
   
   /** Set to true to include Team Drive. */
   var includeTeamDrives: js.UndefOr[Boolean] = js.undefined
   
-  /** Search the versions of the Drive file as of the reference date. These timestamps are in GMT and rounded down to the given date. */
+  /** Search the current version of the Drive file, but export the contents of the last version saved before 12:00 AM UTC on the specified date. Enter the date in UTC. */
   var versionDate: js.UndefOr[String] = js.undefined
 }
 object DriveOptions {
@@ -23,6 +29,10 @@ object DriveOptions {
   }
   
   extension [Self <: DriveOptions](x: Self) {
+    
+    inline def setClientSideEncryptedOption(value: String): Self = StObject.set(x, "clientSideEncryptedOption", value.asInstanceOf[js.Any])
+    
+    inline def setClientSideEncryptedOptionUndefined: Self = StObject.set(x, "clientSideEncryptedOption", js.undefined)
     
     inline def setIncludeSharedDrives(value: Boolean): Self = StObject.set(x, "includeSharedDrives", value.asInstanceOf[js.Any])
     

@@ -15,19 +15,19 @@ trait ILabelable
   var activeError: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String/String[]/Ext.XTemplate) */
-  var activeErrorsTpl: js.UndefOr[js.Any] = js.undefined
+  var activeErrorsTpl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterBodyEl: js.UndefOr[js.Any] = js.undefined
+  var afterBodyEl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterLabelTextTpl: js.UndefOr[js.Any] = js.undefined
+  var afterLabelTextTpl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterLabelTpl: js.UndefOr[js.Any] = js.undefined
+  var afterLabelTpl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterSubTpl: js.UndefOr[js.Any] = js.undefined
+  var afterSubTpl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var autoFitErrors: js.UndefOr[Boolean] = js.undefined
@@ -36,16 +36,16 @@ trait ILabelable
   var baseBodyCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeBodyEl: js.UndefOr[js.Any] = js.undefined
+  var beforeBodyEl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeLabelTextTpl: js.UndefOr[js.Any] = js.undefined
+  var beforeLabelTextTpl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeLabelTpl: js.UndefOr[js.Any] = js.undefined
+  var beforeLabelTpl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeSubTpl: js.UndefOr[js.Any] = js.undefined
+  var beforeSubTpl: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Ext.Element) */
   var bodyEl: js.UndefOr[IElement] = js.undefined
@@ -96,7 +96,7 @@ trait ILabelable
   /** [Method] Generates the arguments for the field decorations rendering template
     * @returns Object The template arguments
     */
-  var getLabelableRenderData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getLabelableRenderData: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Gets the markup to be inserted into the outer template s bodyEl
     * @returns String The markup to be inserted
@@ -132,7 +132,7 @@ trait ILabelable
   var labelAlign: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var labelAttrTpl: js.UndefOr[js.Any] = js.undefined
+  var labelAttrTpl: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Ext.Element) */
   var labelCell: js.UndefOr[IElement] = js.undefined
@@ -177,7 +177,7 @@ trait ILabelable
   /** [Method] Applies a set of default configuration values to this Labelable instance
     * @param defaults Object The defaults to apply to the object.
     */
-  var setFieldDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setFieldDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Set the label of this field
     * @param label String The new label. The labelSeparator will be automatically appended to the label string.
@@ -205,23 +205,23 @@ object ILabelable {
     
     inline def setActiveErrorUndefined: Self = StObject.set(x, "activeError", js.undefined)
     
-    inline def setActiveErrorsTpl(value: js.Any): Self = StObject.set(x, "activeErrorsTpl", value.asInstanceOf[js.Any])
+    inline def setActiveErrorsTpl(value: Any): Self = StObject.set(x, "activeErrorsTpl", value.asInstanceOf[js.Any])
     
     inline def setActiveErrorsTplUndefined: Self = StObject.set(x, "activeErrorsTpl", js.undefined)
     
-    inline def setAfterBodyEl(value: js.Any): Self = StObject.set(x, "afterBodyEl", value.asInstanceOf[js.Any])
+    inline def setAfterBodyEl(value: Any): Self = StObject.set(x, "afterBodyEl", value.asInstanceOf[js.Any])
     
     inline def setAfterBodyElUndefined: Self = StObject.set(x, "afterBodyEl", js.undefined)
     
-    inline def setAfterLabelTextTpl(value: js.Any): Self = StObject.set(x, "afterLabelTextTpl", value.asInstanceOf[js.Any])
+    inline def setAfterLabelTextTpl(value: Any): Self = StObject.set(x, "afterLabelTextTpl", value.asInstanceOf[js.Any])
     
     inline def setAfterLabelTextTplUndefined: Self = StObject.set(x, "afterLabelTextTpl", js.undefined)
     
-    inline def setAfterLabelTpl(value: js.Any): Self = StObject.set(x, "afterLabelTpl", value.asInstanceOf[js.Any])
+    inline def setAfterLabelTpl(value: Any): Self = StObject.set(x, "afterLabelTpl", value.asInstanceOf[js.Any])
     
     inline def setAfterLabelTplUndefined: Self = StObject.set(x, "afterLabelTpl", js.undefined)
     
-    inline def setAfterSubTpl(value: js.Any): Self = StObject.set(x, "afterSubTpl", value.asInstanceOf[js.Any])
+    inline def setAfterSubTpl(value: Any): Self = StObject.set(x, "afterSubTpl", value.asInstanceOf[js.Any])
     
     inline def setAfterSubTplUndefined: Self = StObject.set(x, "afterSubTpl", js.undefined)
     
@@ -233,19 +233,19 @@ object ILabelable {
     
     inline def setBaseBodyClsUndefined: Self = StObject.set(x, "baseBodyCls", js.undefined)
     
-    inline def setBeforeBodyEl(value: js.Any): Self = StObject.set(x, "beforeBodyEl", value.asInstanceOf[js.Any])
+    inline def setBeforeBodyEl(value: Any): Self = StObject.set(x, "beforeBodyEl", value.asInstanceOf[js.Any])
     
     inline def setBeforeBodyElUndefined: Self = StObject.set(x, "beforeBodyEl", js.undefined)
     
-    inline def setBeforeLabelTextTpl(value: js.Any): Self = StObject.set(x, "beforeLabelTextTpl", value.asInstanceOf[js.Any])
+    inline def setBeforeLabelTextTpl(value: Any): Self = StObject.set(x, "beforeLabelTextTpl", value.asInstanceOf[js.Any])
     
     inline def setBeforeLabelTextTplUndefined: Self = StObject.set(x, "beforeLabelTextTpl", js.undefined)
     
-    inline def setBeforeLabelTpl(value: js.Any): Self = StObject.set(x, "beforeLabelTpl", value.asInstanceOf[js.Any])
+    inline def setBeforeLabelTpl(value: Any): Self = StObject.set(x, "beforeLabelTpl", value.asInstanceOf[js.Any])
     
     inline def setBeforeLabelTplUndefined: Self = StObject.set(x, "beforeLabelTpl", js.undefined)
     
-    inline def setBeforeSubTpl(value: js.Any): Self = StObject.set(x, "beforeSubTpl", value.asInstanceOf[js.Any])
+    inline def setBeforeSubTpl(value: Any): Self = StObject.set(x, "beforeSubTpl", value.asInstanceOf[js.Any])
     
     inline def setBeforeSubTplUndefined: Self = StObject.set(x, "beforeSubTpl", js.undefined)
     
@@ -297,7 +297,7 @@ object ILabelable {
     
     inline def setGetLabelWidthUndefined: Self = StObject.set(x, "getLabelWidth", js.undefined)
     
-    inline def setGetLabelableRenderData(value: () => js.Any): Self = StObject.set(x, "getLabelableRenderData", js.Any.fromFunction0(value))
+    inline def setGetLabelableRenderData(value: () => Any): Self = StObject.set(x, "getLabelableRenderData", js.Any.fromFunction0(value))
     
     inline def setGetLabelableRenderDataUndefined: Self = StObject.set(x, "getLabelableRenderData", js.undefined)
     
@@ -337,7 +337,7 @@ object ILabelable {
     
     inline def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
     
-    inline def setLabelAttrTpl(value: js.Any): Self = StObject.set(x, "labelAttrTpl", value.asInstanceOf[js.Any])
+    inline def setLabelAttrTpl(value: Any): Self = StObject.set(x, "labelAttrTpl", value.asInstanceOf[js.Any])
     
     inline def setLabelAttrTplUndefined: Self = StObject.set(x, "labelAttrTpl", js.undefined)
     
@@ -389,7 +389,7 @@ object ILabelable {
     
     inline def setSetActiveErrorsUndefined: Self = StObject.set(x, "setActiveErrors", js.undefined)
     
-    inline def setSetFieldDefaults(value: /* defaults */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFieldDefaults", js.Any.fromFunction1(value))
+    inline def setSetFieldDefaults(value: /* defaults */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setFieldDefaults", js.Any.fromFunction1(value))
     
     inline def setSetFieldDefaultsUndefined: Self = StObject.set(x, "setFieldDefaults", js.undefined)
     

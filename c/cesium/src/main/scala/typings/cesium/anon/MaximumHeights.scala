@@ -1,7 +1,6 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.Cartesian3
-import typings.cesium.mod.VertexFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait MaximumHeights extends StObject {
   
   var positions: js.Array[Cartesian3]
   
-  var vertexFormat: js.UndefOr[VertexFormat] = js.undefined
+  var vertexFormat: js.UndefOr[typings.cesium.mod.VertexFormat] = js.undefined
 }
 object MaximumHeights {
   
@@ -41,19 +40,19 @@ object MaximumHeights {
     
     inline def setMaximumHeightsUndefined: Self = StObject.set(x, "maximumHeights", js.undefined)
     
-    inline def setMaximumHeightsVarargs(value: Double*): Self = StObject.set(x, "maximumHeights", js.Array(value :_*))
+    inline def setMaximumHeightsVarargs(value: Double*): Self = StObject.set(x, "maximumHeights", js.Array(value*))
     
     inline def setMinimumHeights(value: js.Array[Double]): Self = StObject.set(x, "minimumHeights", value.asInstanceOf[js.Any])
     
     inline def setMinimumHeightsUndefined: Self = StObject.set(x, "minimumHeights", js.undefined)
     
-    inline def setMinimumHeightsVarargs(value: Double*): Self = StObject.set(x, "minimumHeights", js.Array(value :_*))
+    inline def setMinimumHeightsVarargs(value: Double*): Self = StObject.set(x, "minimumHeights", js.Array(value*))
     
     inline def setPositions(value: js.Array[Cartesian3]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    inline def setPositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "positions", js.Array(value*))
     
-    inline def setVertexFormat(value: VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
+    inline def setVertexFormat(value: typings.cesium.mod.VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
     
     inline def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
   }

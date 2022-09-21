@@ -18,7 +18,7 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
-import typings.std.Date
+import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ object DatePicker {
   
   @js.native
   trait DatePicker
-    extends Component[DatePickerProps, js.Object, js.Any] {
+    extends Component[DatePickerProps, js.Object, Any] {
     
     def focus(): Unit = js.native
     
@@ -36,7 +36,7 @@ object DatePicker {
   
   @js.native
   trait DatePickerDialog
-    extends Component[DatePickerDialogProps, js.Object, js.Any] {
+    extends Component[DatePickerDialogProps, js.Object, Any] {
     
     def dismiss(): Unit = js.native
     
@@ -60,25 +60,25 @@ object DatePicker {
     
     var firstDayOfWeek: js.UndefOr[Double] = js.undefined
     
-    var initialDate: js.UndefOr[Date] = js.undefined
+    var initialDate: js.UndefOr[js.Date] = js.undefined
     
     var locale: js.UndefOr[String] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
     var mode: js.UndefOr[portrait | landscape] = js.undefined
     
     var okLabel: js.UndefOr[ReactNode] = js.undefined
     
-    var onAccept: js.UndefOr[js.Function1[/* d */ Date, Unit]] = js.undefined
+    var onAccept: js.UndefOr[js.Function1[/* d */ js.Date, Unit]] = js.undefined
     
     var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var shouldDisableDate: js.UndefOr[js.Function1[/* day */ Date, Boolean]] = js.undefined
+    var shouldDisableDate: js.UndefOr[js.Function1[/* day */ js.Date, Boolean]] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -121,7 +121,7 @@ object DatePicker {
       
       inline def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
       
-      inline def setInitialDate(value: Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
+      inline def setInitialDate(value: js.Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
       
       inline def setInitialDateUndefined: Self = StObject.set(x, "initialDate", js.undefined)
       
@@ -129,11 +129,11 @@ object DatePicker {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -145,7 +145,7 @@ object DatePicker {
       
       inline def setOkLabelUndefined: Self = StObject.set(x, "okLabel", js.undefined)
       
-      inline def setOnAccept(value: /* d */ Date => Unit): Self = StObject.set(x, "onAccept", js.Any.fromFunction1(value))
+      inline def setOnAccept(value: /* d */ js.Date => Unit): Self = StObject.set(x, "onAccept", js.Any.fromFunction1(value))
       
       inline def setOnAcceptUndefined: Self = StObject.set(x, "onAccept", js.undefined)
       
@@ -157,7 +157,7 @@ object DatePicker {
       
       inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
-      inline def setShouldDisableDate(value: /* day */ Date => Boolean): Self = StObject.set(x, "shouldDisableDate", js.Any.fromFunction1(value))
+      inline def setShouldDisableDate(value: /* day */ js.Date => Boolean): Self = StObject.set(x, "shouldDisableDate", js.Any.fromFunction1(value))
       
       inline def setShouldDisableDateUndefined: Self = StObject.set(x, "shouldDisableDate", js.undefined)
       
@@ -185,7 +185,7 @@ object DatePicker {
     
     var container: js.UndefOr[dialog | `inline`] = js.undefined
     
-    var defaultDate: js.UndefOr[Date] = js.undefined
+    var defaultDate: js.UndefOr[js.Date] = js.undefined
     
     var defaultValue: js.UndefOr[String] = js.undefined
     
@@ -205,7 +205,7 @@ object DatePicker {
     
     var floatingLabelText: js.UndefOr[ReactNode] = js.undefined
     
-    var formatDate: js.UndefOr[js.Function1[/* date */ Date, String]] = js.undefined
+    var formatDate: js.UndefOr[js.Function1[/* date */ js.Date, String]] = js.undefined
     
     var fullWidth: js.UndefOr[Boolean] = js.undefined
     
@@ -221,9 +221,9 @@ object DatePicker {
     
     var locale: js.UndefOr[String] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
     var mode: js.UndefOr[portrait | landscape] = js.undefined
     
@@ -233,7 +233,7 @@ object DatePicker {
     
     var onBlur: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* e */ js.Any, /* date */ Date, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function2[/* e */ Any, /* date */ js.Date, Unit]] = js.undefined
     
     var onClick: js.UndefOr[TouchEventHandler[js.Object]] = js.undefined
     
@@ -252,7 +252,7 @@ object DatePicker {
     
     var rowsMax: js.UndefOr[Double] = js.undefined
     
-    var shouldDisableDate: js.UndefOr[js.Function1[/* day */ Date, Boolean]] = js.undefined
+    var shouldDisableDate: js.UndefOr[js.Function1[/* day */ js.Date, Boolean]] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -270,7 +270,7 @@ object DatePicker {
     
     var utils: js.UndefOr[typings.materialUi.MaterialUI.propTypes.utils] = js.undefined
     
-    var value: js.UndefOr[Date] = js.undefined
+    var value: js.UndefOr[js.Date] = js.undefined
   }
   object DatePickerProps {
     
@@ -301,7 +301,7 @@ object DatePicker {
       
       inline def setDateTimeFormatUndefined: Self = StObject.set(x, "DateTimeFormat", js.undefined)
       
-      inline def setDefaultDate(value: Date): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
+      inline def setDefaultDate(value: js.Date): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
       
       inline def setDefaultDateUndefined: Self = StObject.set(x, "defaultDate", js.undefined)
       
@@ -341,7 +341,7 @@ object DatePicker {
       
       inline def setFloatingLabelTextUndefined: Self = StObject.set(x, "floatingLabelText", js.undefined)
       
-      inline def setFormatDate(value: /* date */ Date => String): Self = StObject.set(x, "formatDate", js.Any.fromFunction1(value))
+      inline def setFormatDate(value: /* date */ js.Date => String): Self = StObject.set(x, "formatDate", js.Any.fromFunction1(value))
       
       inline def setFormatDateUndefined: Self = StObject.set(x, "formatDate", js.undefined)
       
@@ -373,11 +373,11 @@ object DatePicker {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -393,11 +393,11 @@ object DatePicker {
       
       inline def setOkLabelUndefined: Self = StObject.set(x, "okLabel", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[js.Object] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[js.Object, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(value: (/* e */ js.Any, /* date */ Date) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* e */ Any, /* date */ js.Date) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -409,7 +409,7 @@ object DatePicker {
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[js.Object] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[js.Object, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -433,7 +433,7 @@ object DatePicker {
       
       inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      inline def setShouldDisableDate(value: /* day */ Date => Boolean): Self = StObject.set(x, "shouldDisableDate", js.Any.fromFunction1(value))
+      inline def setShouldDisableDate(value: /* day */ js.Date => Boolean): Self = StObject.set(x, "shouldDisableDate", js.Any.fromFunction1(value))
       
       inline def setShouldDisableDateUndefined: Self = StObject.set(x, "shouldDisableDate", js.undefined)
       
@@ -469,7 +469,7 @@ object DatePicker {
       
       inline def setUtilsUndefined: Self = StObject.set(x, "utils", js.undefined)
       
-      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }

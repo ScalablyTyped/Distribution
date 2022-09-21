@@ -19,7 +19,7 @@ trait Phonetic extends StObject {
   
   val Font: typings.activexExcel.Excel.Font
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Text: String
   
@@ -34,7 +34,7 @@ object Phonetic {
     Creator: XlCreator,
     ExcelDotPhonetic_typekey: Phonetic,
     Font: Font,
-    Parent: js.Any,
+    Parent: Any,
     Text: String,
     Visible: Boolean
   ): Phonetic = {
@@ -57,7 +57,7 @@ object Phonetic {
     
     inline def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     

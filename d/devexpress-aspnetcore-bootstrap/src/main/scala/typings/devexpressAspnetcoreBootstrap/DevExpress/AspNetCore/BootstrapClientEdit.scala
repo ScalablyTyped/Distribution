@@ -21,13 +21,13 @@ trait BootstrapClientEdit
   
   def getErrorText(): String = js.native
   
-  def getInputElement(): js.Any = js.native
+  def getInputElement(): Any = js.native
   
   def getIsValid(): Boolean = js.native
   
   def getReadOnly(): Boolean = js.native
   
-  def getValue(): js.Any = js.native
+  def getValue(): Any = js.native
   
   def off(
     eventName: Unit,
@@ -118,7 +118,7 @@ trait BootstrapClientEdit
   
   def setReadOnly(readOnly: Boolean): Unit = js.native
   
-  def setValue(value: js.Any): Unit = js.native
+  def setValue(value: Any): Unit = js.native
   
   def validate(): Unit = js.native
 }

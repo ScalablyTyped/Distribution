@@ -17,12 +17,12 @@ trait DescribeMaintenanceWindowsForTargetRequest extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
-    * The type of resource you want to retrieve information about. For example, "INSTANCE".
+    * The type of resource you want to retrieve information about. For example, INSTANCE.
     */
   var ResourceType: MaintenanceWindowResourceType
   
   /**
-    * The instance ID or key/value pair to retrieve information about.
+    * The managed node ID or key-value pair to retrieve information about.
     */
   var Targets: typings.awsSdk.ssmMod.Targets
 }
@@ -47,6 +47,6 @@ object DescribeMaintenanceWindowsForTargetRequest {
     
     inline def setTargets(value: Targets): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
-    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value*))
   }
 }

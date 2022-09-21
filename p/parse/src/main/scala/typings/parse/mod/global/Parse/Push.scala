@@ -1,6 +1,5 @@
 package typings.parse.mod.global.Parse
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,17 +24,17 @@ object Push {
     
     var channels: js.UndefOr[js.Array[String]] = js.undefined
     
-    var content_available: js.UndefOr[js.Any] = js.undefined
+    var content_available: js.UndefOr[Any] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var expiration_interval: js.UndefOr[Double] = js.undefined
     
-    var expiration_time: js.UndefOr[Date] = js.undefined
+    var expiration_time: js.UndefOr[js.Date] = js.undefined
     
-    var notification: js.UndefOr[js.Any] = js.undefined
+    var notification: js.UndefOr[Any] = js.undefined
     
-    var push_time: js.UndefOr[Date] = js.undefined
+    var push_time: js.UndefOr[js.Date] = js.undefined
     
     var sound: js.UndefOr[String] = js.undefined
     
@@ -64,13 +63,13 @@ object Push {
       
       inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
       
-      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
       
-      inline def setContent_available(value: js.Any): Self = StObject.set(x, "content_available", value.asInstanceOf[js.Any])
+      inline def setContent_available(value: Any): Self = StObject.set(x, "content_available", value.asInstanceOf[js.Any])
       
       inline def setContent_availableUndefined: Self = StObject.set(x, "content_available", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -78,15 +77,15 @@ object Push {
       
       inline def setExpiration_intervalUndefined: Self = StObject.set(x, "expiration_interval", js.undefined)
       
-      inline def setExpiration_time(value: Date): Self = StObject.set(x, "expiration_time", value.asInstanceOf[js.Any])
+      inline def setExpiration_time(value: js.Date): Self = StObject.set(x, "expiration_time", value.asInstanceOf[js.Any])
       
       inline def setExpiration_timeUndefined: Self = StObject.set(x, "expiration_time", js.undefined)
       
-      inline def setNotification(value: js.Any): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: Any): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
       
       inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
       
-      inline def setPush_time(value: Date): Self = StObject.set(x, "push_time", value.asInstanceOf[js.Any])
+      inline def setPush_time(value: js.Date): Self = StObject.set(x, "push_time", value.asInstanceOf[js.Any])
       
       inline def setPush_timeUndefined: Self = StObject.set(x, "push_time", js.undefined)
       

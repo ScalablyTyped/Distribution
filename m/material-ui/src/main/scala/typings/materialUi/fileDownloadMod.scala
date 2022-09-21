@@ -10,10 +10,10 @@ object fileDownloadMod {
   
   @JSImport("material-ui/svg-icons/file/file-download", JSImport.Default)
   @js.native
-  class default () extends FileFileDownload
+  open class default () extends FileFileDownload
   
   @JSImport("material-ui/svg-icons/file/file-download", "FileFileDownload")
   @js.native
-  class FileFileDownload ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class FileFileDownload ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

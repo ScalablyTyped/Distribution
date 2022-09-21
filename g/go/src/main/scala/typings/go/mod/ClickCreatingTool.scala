@@ -14,10 +14,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.clickCreatingTool, which you can modify.
   */
-class ClickCreatingTool () extends Tool {
+open class ClickCreatingTool () extends Tool {
   
   /**Gets or sets a data object that will be copied and added to the diagram's model each time this tool executes. The value must be an Object or null.*/
-  var archetypeNodeData: js.Any = js.native
+  var archetypeNodeData: Any = js.native
   
   /**
     * Create a node by adding a copy of the .archetypeNodeData object to the diagram's model, assign its Part.location to be the given point, and select the new part.

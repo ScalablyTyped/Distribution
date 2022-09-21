@@ -8,5 +8,5 @@ object versionMod {
   
   @JSImport("@ethersproject/abi/lib/_version", "version")
   @js.native
-  val version: /* "abi/5.0.0-beta.153" */ String = js.native
+  val version: /* "abi/5.7.0" */ String = js.native
 }

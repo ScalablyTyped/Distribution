@@ -10,10 +10,10 @@ Swagger middleware and mocks for Express
 | ------------------ | :-------------: |
 | Full name          | swagger-express-middleware |
 | Keywords           | express, swagger, middleware, mock, fake, stub, rest, api, json |
-| # releases         | 15 |
-| # dependents       | 31 |
-| # downloads        | 653833 |
-| # stars            | 7 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 41629.666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://apitools.dev/swagger-express-middleware/)

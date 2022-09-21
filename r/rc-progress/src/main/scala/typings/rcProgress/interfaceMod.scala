@@ -1,11 +1,19 @@
 package typings.rcProgress
 
+import typings.rcProgress.anon.Count
 import typings.react.mod.CSSProperties
+import typings.react.mod.MouseEvent
+import typings.react.mod.MouseEventHandler
+import typings.react.mod.NativeMouseEvent
+import typings.std.Element
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
+  
+  type BaseStrokeColorType = String | (Record[String, String])
   
   /* Rewritten from type alias, can be one of: 
     - typings.rcProgress.rcProgressStrings.top
@@ -33,9 +41,15 @@ object interfaceMod {
     
     var gapPosition: js.UndefOr[GapPositionType] = js.undefined
     
+    var id: js.UndefOr[String] = js.undefined
+    
+    var onClick: js.UndefOr[MouseEventHandler[Element]] = js.undefined
+    
     var percent: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
+    
+    var steps: js.UndefOr[Double | Count] = js.undefined
     
     var strokeColor: js.UndefOr[StrokeColorType] = js.undefined
     
@@ -72,21 +86,33 @@ object interfaceMod {
       
       inline def setGapPositionUndefined: Self = StObject.set(x, "gapPosition", js.undefined)
       
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setOnClick(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      
       inline def setPercent(value: Double | js.Array[Double]): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
       inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
       
-      inline def setPercentVarargs(value: Double*): Self = StObject.set(x, "percent", js.Array(value :_*))
+      inline def setPercentVarargs(value: Double*): Self = StObject.set(x, "percent", js.Array(value*))
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
+      inline def setSteps(value: Double | Count): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      
+      inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+      
       inline def setStrokeColor(value: StrokeColorType): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       
       inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
       
-      inline def setStrokeColorVarargs(value: String*): Self = StObject.set(x, "strokeColor", js.Array(value :_*))
+      inline def setStrokeColorVarargs(value: BaseStrokeColorType*): Self = StObject.set(x, "strokeColor", js.Array(value*))
       
       inline def setStrokeLinecap(value: StrokeLinecapType): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
       
@@ -114,7 +140,7 @@ object interfaceMod {
     }
   }
   
-  type StrokeColorType = String | js.Array[String] | js.Object
+  type StrokeColorType = BaseStrokeColorType | js.Array[BaseStrokeColorType]
   
   /* Rewritten from type alias, can be one of: 
     - typings.rcProgress.rcProgressStrings.round

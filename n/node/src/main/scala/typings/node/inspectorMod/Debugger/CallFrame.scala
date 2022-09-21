@@ -83,7 +83,7 @@ object CallFrame {
     
     inline def setScopeChain(value: js.Array[Scope]): Self = StObject.set(x, "scopeChain", value.asInstanceOf[js.Any])
     
-    inline def setScopeChainVarargs(value: Scope*): Self = StObject.set(x, "scopeChain", js.Array(value :_*))
+    inline def setScopeChainVarargs(value: Scope*): Self = StObject.set(x, "scopeChain", js.Array(value*))
     
     inline def setThis(value: RemoteObject): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
     

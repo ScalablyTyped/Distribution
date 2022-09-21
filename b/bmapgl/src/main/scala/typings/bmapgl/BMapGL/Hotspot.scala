@@ -13,11 +13,11 @@ trait Hotspot
   
   def getText(): String = js.native
   
-  def getUserData(): js.Any = js.native
+  def getUserData(): Any = js.native
   
   def setPosition(position: Point): Unit = js.native
   
   def setText(text: String): Unit = js.native
   
-  def setUserData(data: js.Any): Unit = js.native
+  def setUserData(data: Any): Unit = js.native
 }

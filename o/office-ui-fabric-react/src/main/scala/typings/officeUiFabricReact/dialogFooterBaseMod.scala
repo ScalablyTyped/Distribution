@@ -10,12 +10,12 @@ object dialogFooterBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Dialog/DialogFooter.base", "DialogFooterBase")
   @js.native
-  class DialogFooterBase protected ()
-    extends Component[IDialogFooterProps, js.Object, js.Any] {
+  open class DialogFooterBase protected ()
+    extends Component[IDialogFooterProps, js.Object, Any] {
     def this(props: IDialogFooterProps) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _renderChildrenAsActions: js.Any = js.native
+    /* private */ var _renderChildrenAsActions: Any = js.native
   }
 }

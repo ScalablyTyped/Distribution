@@ -35,7 +35,7 @@ trait TableProperties extends StObject {
   /**
   	 * Rows of data
   	 */
-  var rows: js.Array[js.Array[js.Any]]
+  var rows: js.Array[js.Array[Any]]
   
   /**
   	 * Extra style properties
@@ -51,12 +51,7 @@ trait TableProperties extends StObject {
 }
 object TableProperties {
   
-  inline def apply(
-    columns: js.Array[TableColumnProperties],
-    name: String,
-    ref: String,
-    rows: js.Array[js.Array[js.Any]]
-  ): TableProperties = {
+  inline def apply(columns: js.Array[TableColumnProperties], name: String, ref: String, rows: js.Array[js.Array[Any]]): TableProperties = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableProperties]
   }
@@ -65,7 +60,7 @@ object TableProperties {
     
     inline def setColumns(value: js.Array[TableColumnProperties]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: TableColumnProperties*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: TableColumnProperties*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -79,9 +74,9 @@ object TableProperties {
     
     inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: js.Array[Any]*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setStyle(value: TableStyleProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

@@ -5,11 +5,15 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`no-prompt`
 import typings.arcgisJsApi.arcgisJsApiStrings.anonymous
 import typings.arcgisJsApi.arcgisJsApiStrings.auto
 import typings.arcgisJsApi.arcgisJsApiStrings.blob
+import typings.arcgisJsApi.arcgisJsApiStrings.delete
 import typings.arcgisJsApi.arcgisJsApiStrings.document
+import typings.arcgisJsApi.arcgisJsApiStrings.head
 import typings.arcgisJsApi.arcgisJsApiStrings.image
 import typings.arcgisJsApi.arcgisJsApiStrings.immediate
 import typings.arcgisJsApi.arcgisJsApiStrings.json
+import typings.arcgisJsApi.arcgisJsApiStrings.native
 import typings.arcgisJsApi.arcgisJsApiStrings.post
+import typings.arcgisJsApi.arcgisJsApiStrings.put
 import typings.arcgisJsApi.arcgisJsApiStrings.text
 import typings.arcgisJsApi.arcgisJsApiStrings.xml
 import typings.std.AbortSignal
@@ -51,28 +55,28 @@ trait RequestOptions
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   /**
-    * Indicates if the request should be made using the HTTP POST method.
+    * Indicates if the request should be made using the HTTP DELETE, HEAD, POST, or PUT method.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var method: js.UndefOr[auto | post] = js.undefined
+  var method: js.UndefOr[auto | delete | head | post | put] = js.undefined
   
   /**
     * Query parameters for the request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var query: js.UndefOr[js.Any] = js.undefined
+  var query: js.UndefOr[Any] = js.undefined
   
   /**
     * Response format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var responseType: js.UndefOr[json | xml | text | blob | `array-buffer` | document | image] = js.undefined
+  var responseType: js.UndefOr[json | text | `array-buffer` | blob | image | native | document | xml] = js.undefined
   
   /**
     * [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable requests.
@@ -94,6 +98,13 @@ trait RequestOptions
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
   var useProxy: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates if cross-site `Access-Control` requests should use credentials.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
+    */
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object RequestOptions {
   
@@ -120,19 +131,19 @@ object RequestOptions {
     
     inline def setCacheBustUndefined: Self = StObject.set(x, "cacheBust", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setMethod(value: auto | post): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: auto | delete | head | post | put): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    inline def setResponseType(value: json | xml | text | blob | `array-buffer` | document | image): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: json | text | `array-buffer` | blob | image | native | document | xml): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
     inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
@@ -147,5 +158,9 @@ object RequestOptions {
     inline def setUseProxy(value: Boolean): Self = StObject.set(x, "useProxy", value.asInstanceOf[js.Any])
     
     inline def setUseProxyUndefined: Self = StObject.set(x, "useProxy", js.undefined)
+    
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

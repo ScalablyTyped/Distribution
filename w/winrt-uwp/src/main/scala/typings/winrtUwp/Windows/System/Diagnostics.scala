@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.System
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,7 +75,7 @@ object Diagnostics {
     var processId: Double
     
     /** Gets the time the process was started. */
-    var processStartTime: Date
+    var processStartTime: js.Date
   }
   object ProcessDiagnosticInfo {
     
@@ -87,7 +86,7 @@ object Diagnostics {
       memoryUsage: ProcessMemoryUsage,
       parent: ProcessDiagnosticInfo,
       processId: Double,
-      processStartTime: Date
+      processStartTime: js.Date
     ): ProcessDiagnosticInfo = {
       val __obj = js.Dynamic.literal(cpuUsage = cpuUsage.asInstanceOf[js.Any], diskUsage = diskUsage.asInstanceOf[js.Any], executableFileName = executableFileName.asInstanceOf[js.Any], memoryUsage = memoryUsage.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], processStartTime = processStartTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessDiagnosticInfo]
@@ -107,7 +106,7 @@ object Diagnostics {
       
       inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
       
-      inline def setProcessStartTime(value: Date): Self = StObject.set(x, "processStartTime", value.asInstanceOf[js.Any])
+      inline def setProcessStartTime(value: js.Date): Self = StObject.set(x, "processStartTime", value.asInstanceOf[js.Any])
     }
   }
   

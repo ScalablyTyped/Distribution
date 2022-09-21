@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "unused-filename" : "2.1.0"
+      "unused-filename" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "unused-filename" : "2.1.0"
+      "unused-filename" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

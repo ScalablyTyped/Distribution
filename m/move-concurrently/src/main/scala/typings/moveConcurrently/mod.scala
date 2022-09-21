@@ -19,17 +19,17 @@ object mod {
     /**
       * (Default: global.Promise) The promise implementation to use, defaults to Node's.
       */
-    var Promise: js.UndefOr[Instantiable1[/* args (repeated) */ js.Any, T]] = js.undefined
+    var Promise: js.UndefOr[Instantiable1[/* args (repeated) */ Any, js.UndefOr[T]]] = js.undefined
     
     /**
       * (Default: require('fs')) The filesystem module to use. Can be used to use graceful-fs or to inject a mock.
       */
-    var fs: js.UndefOr[js.Any] = js.undefined
+    var fs: js.UndefOr[Any] = js.undefined
     
     /**
       * (Default: process.getuid) A function that returns the current UID. Used to inject a mock.
       */
-    var getuid: js.UndefOr[js.Any] = js.undefined
+    var getuid: js.UndefOr[Any] = js.undefined
     
     /**
       * (Default: process.platform === 'win32') If true enables Windows symlink semantics.
@@ -46,7 +46,7 @@ object mod {
     /**
       * (Default: require('fs-write-stream-atomic')) The implementation of writeStreamAtomic to use. Used to inject a mock.
       */
-    var writeStreamAtomic: js.UndefOr[js.Any] = js.undefined
+    var writeStreamAtomic: js.UndefOr[Any] = js.undefined
   }
   object Options {
     
@@ -57,11 +57,11 @@ object mod {
     
     extension [Self <: Options[?], T /* <: js.Thenable[Unit] */](x: Self & Options[T]) {
       
-      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      inline def setGetuid(value: js.Any): Self = StObject.set(x, "getuid", value.asInstanceOf[js.Any])
+      inline def setGetuid(value: Any): Self = StObject.set(x, "getuid", value.asInstanceOf[js.Any])
       
       inline def setGetuidUndefined: Self = StObject.set(x, "getuid", js.undefined)
       
@@ -73,11 +73,11 @@ object mod {
       
       inline def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
       
-      inline def setPromise(value: Instantiable1[/* args (repeated) */ js.Any, T]): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: Instantiable1[/* args (repeated) */ Any, js.UndefOr[T]]): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
       inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
       
-      inline def setWriteStreamAtomic(value: js.Any): Self = StObject.set(x, "writeStreamAtomic", value.asInstanceOf[js.Any])
+      inline def setWriteStreamAtomic(value: Any): Self = StObject.set(x, "writeStreamAtomic", value.asInstanceOf[js.Any])
       
       inline def setWriteStreamAtomicUndefined: Self = StObject.set(x, "writeStreamAtomic", js.undefined)
     }

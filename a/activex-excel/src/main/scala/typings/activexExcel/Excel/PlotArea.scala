@@ -10,7 +10,7 @@ trait PlotArea extends StObject {
   
   val Border: typings.activexExcel.Excel.Border
   
-  def ClearFormats(): js.Any
+  def ClearFormats(): Any
   
   val Creator: XlCreator
   
@@ -37,11 +37,11 @@ trait PlotArea extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: XlChartElementPosition
   
-  def Select(): js.Any
+  def Select(): Any
   
   var Top: Double
   
@@ -60,7 +60,7 @@ object PlotArea {
   inline def apply(
     Application: Application,
     Border: Border,
-    ClearFormats: () => js.Any,
+    ClearFormats: () => Any,
     Creator: XlCreator,
     ExcelDotPlotArea_typekey: PlotArea,
     Fill: ChartFillFormat,
@@ -73,9 +73,9 @@ object PlotArea {
     Interior: Interior,
     Left: Double,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Position: XlChartElementPosition,
-    Select: () => js.Any,
+    Select: () => Any,
     Top: Double,
     Width: Double,
     _InsideHeight: Double,
@@ -94,7 +94,7 @@ object PlotArea {
     
     inline def setBorder(value: Border): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    inline def setClearFormats(value: () => js.Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
+    inline def setClearFormats(value: () => Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
     
     inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -120,11 +120,11 @@ object PlotArea {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: XlChartElementPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "FinallyClauseSyntax")
 @js.native
-class FinallyClauseSyntax protected ()
+open class FinallyClauseSyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.FinallyClauseSyntax {
   def this(
@@ -21,7 +21,7 @@ class FinallyClauseSyntax protected ()
   ) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): ISyntaxElement = js.native

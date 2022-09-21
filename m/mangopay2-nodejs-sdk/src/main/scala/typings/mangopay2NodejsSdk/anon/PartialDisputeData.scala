@@ -1,16 +1,16 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.mod.MoneyData
-import typings.mangopay2NodejsSdk.mod.Timestamp
-import typings.mangopay2NodejsSdk.mod.dispute.DisputeReason
-import typings.mangopay2NodejsSdk.mod.dispute.DisputeStatus
-import typings.mangopay2NodejsSdk.mod.dispute.DisputeType
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
+import typings.mangopay2NodejsSdk.disputeMod.dispute.DisputeReason
+import typings.mangopay2NodejsSdk.disputeMod.dispute.DisputeStatus
+import typings.mangopay2NodejsSdk.disputeMod.dispute.DisputeType
+import typings.mangopay2NodejsSdk.moneyMod.money.MoneyData
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionType
+import typings.mangopay2NodejsSdk.typesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.dispute.DisputeData> */
+/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/dispute.dispute.DisputeData> */
 trait PartialDisputeData extends StObject {
   
   var ContestDeadlineDate: js.UndefOr[Timestamp] = js.undefined
@@ -19,9 +19,9 @@ trait PartialDisputeData extends StObject {
   
   var CreationDate: js.UndefOr[Double] = js.undefined
   
-  var DisputeReason: js.UndefOr[typings.mangopay2NodejsSdk.mod.dispute.DisputeReason] = js.undefined
+  var DisputeReason: js.UndefOr[typings.mangopay2NodejsSdk.disputeMod.dispute.DisputeReason] = js.undefined
   
-  var DisputeType: js.UndefOr[typings.mangopay2NodejsSdk.mod.dispute.DisputeType] = js.undefined
+  var DisputeType: js.UndefOr[typings.mangopay2NodejsSdk.disputeMod.dispute.DisputeType] = js.undefined
   
   var DisputedFunds: js.UndefOr[MoneyData] = js.undefined
   

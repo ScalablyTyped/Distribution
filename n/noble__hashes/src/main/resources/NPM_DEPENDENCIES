@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@noble/hashes" : "1.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@noble/hashes" : "1.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

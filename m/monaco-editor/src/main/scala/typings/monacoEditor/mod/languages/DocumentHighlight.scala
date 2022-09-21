@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentHighlight extends StObject {
   
   /**
-    * The highlight kind, default is [text](#DocumentHighlightKind.Text).
+    * The highlight kind, default is {@link DocumentHighlightKind.Text text}.
     */
   var kind: js.UndefOr[DocumentHighlightKind] = js.undefined
   

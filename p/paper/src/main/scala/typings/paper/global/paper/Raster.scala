@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param position - the center position at which the raster item is
   *     placed
   */
-class Raster ()
+open class Raster ()
   extends StObject
      with typings.paper.paper.Raster {
   /** 

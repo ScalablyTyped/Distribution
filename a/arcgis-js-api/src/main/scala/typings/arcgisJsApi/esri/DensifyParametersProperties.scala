@@ -15,28 +15,28 @@ trait DensifyParametersProperties extends StObject {
   /**
     * If `true`, Geographic Coordinate System spatial references are used or densify geodesic will be performed.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DensifyParameters.html#geodesic)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#geodesic)
     */
   var geodesic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The array of geometries to be densified.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DensifyParameters.html#geometries)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#geometries)
     */
   var geometries: js.UndefOr[js.Array[GeometryProperties]] = js.undefined
   
   /**
     * The length unit of `maxSegmentLength`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DensifyParameters.html#lengthUnit)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#lengthUnit)
     */
   var lengthUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.undefined
   
   /**
-    * All segments longer than `maxSegmentLength` are replaced with sequences of lines no longer than `maxSegmentLength.`.
+    * All segments longer than `maxSegmentLength` are replaced with sequences of lines no longer than `maxSegmentLength.`
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DensifyParameters.html#maxSegmentLength)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html#maxSegmentLength)
     */
   var maxSegmentLength: js.UndefOr[Double] = js.undefined
 }
@@ -57,7 +57,7 @@ object DensifyParametersProperties {
     
     inline def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
-    inline def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value :_*))
+    inline def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value*))
     
     inline def setLengthUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "lengthUnit", value.asInstanceOf[js.Any])
     

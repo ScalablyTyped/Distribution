@@ -36,11 +36,11 @@ object mod {
       
       inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
-  type Rule = Record[String, js.Any]
+  type Rule = Record[String, Any]
 }

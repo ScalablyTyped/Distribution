@@ -1,7 +1,8 @@
 package typings.cssSelect
 
 import typings.cssSelect.anon.Type
-import typings.cssWhat.parseMod.Selector
+import typings.cssWhat.typesMod.Selector
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,7 +55,7 @@ object typesMod {
     /**
       * Get the parent of the node
       */
-    def getParent(node: ElementNode): ElementNode | Null
+    def getParent(node: ElementNode): Node | Null
     
     /**
       * Get the siblings of the node. Note that unlike jQuery's `siblings` method,
@@ -93,6 +94,11 @@ object typesMod {
     var isVisited: js.UndefOr[js.Function1[/* elem */ ElementNode, Boolean]] = js.undefined
     
     /**
+      * Returns the previous element sibling of a node.
+      */
+    var prevElementSibling: js.UndefOr[js.Function1[/* node */ Node, ElementNode | Null]] = js.undefined
+    
+    /**
       * Takes an array of nodes, and removes any duplicates, as well as any
       * nodes whose ancestors are also in the array.
       */
@@ -107,7 +113,7 @@ object typesMod {
       getAttributeValue: (ElementNode, String) => js.UndefOr[String],
       getChildren: Node => js.Array[Node],
       getName: ElementNode => String,
-      getParent: ElementNode => ElementNode | Null,
+      getParent: ElementNode => Node | Null,
       getSiblings: Node => js.Array[Node],
       getText: Node => String,
       hasAttrib: (ElementNode, String) => Boolean,
@@ -136,7 +142,7 @@ object typesMod {
       
       inline def setGetName(value: ElementNode => String): Self = StObject.set(x, "getName", js.Any.fromFunction1(value))
       
-      inline def setGetParent(value: ElementNode => ElementNode | Null): Self = StObject.set(x, "getParent", js.Any.fromFunction1(value))
+      inline def setGetParent(value: ElementNode => Node | Null): Self = StObject.set(x, "getParent", js.Any.fromFunction1(value))
       
       inline def setGetSiblings(value: Node => js.Array[Node]): Self = StObject.set(x, "getSiblings", js.Any.fromFunction1(value))
       
@@ -158,6 +164,10 @@ object typesMod {
       
       inline def setIsVisitedUndefined: Self = StObject.set(x, "isVisited", js.undefined)
       
+      inline def setPrevElementSibling(value: /* node */ Node => ElementNode | Null): Self = StObject.set(x, "prevElementSibling", js.Any.fromFunction1(value))
+      
+      inline def setPrevElementSiblingUndefined: Self = StObject.set(x, "prevElementSibling", js.undefined)
+      
       inline def setRemoveSubsets(value: js.Array[Node] => js.Array[Node]): Self = StObject.set(x, "removeSubsets", js.Any.fromFunction1(value))
     }
   }
@@ -165,7 +175,7 @@ object typesMod {
   type CompileToken[Node, ElementNode /* <: Node */] = js.Function3[
     /* token */ js.Array[js.Array[InternalSelector]], 
     /* options */ InternalOptions[Node, ElementNode], 
-    /* context */ js.UndefOr[js.Array[ElementNode]], 
+    /* context */ js.UndefOr[js.Array[Node] | Node], 
     CompiledQuery[ElementNode]
   ]
   
@@ -216,15 +226,69 @@ object typesMod {
       * Allow css-select to cache results for some selectors, sometimes greatly
       * improving querying performance. Disable this if your document can
       * change in between queries with the same compiled selector.
-      * Defaults to `true`.
+      *
+      * @default true
       */
     var cacheResults: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The context of the current query. Used to limit the scope of searches.
-      * Can be matched directly using the `:scope` pseudo-selector.
+      * Can be matched directly using the `:scope` pseudo-class.
       */
-    var context: js.UndefOr[ElementNode | js.Array[ElementNode]] = js.undefined
+    var context: js.UndefOr[Node | js.Array[Node]] = js.undefined
+    
+    /**
+      * Lower-case attribute names.
+      *
+      * @default !xmlMode
+      */
+    var lowerCaseAttributeNames: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Lower-case tag names.
+      *
+      * @default !xmlMode
+      */
+    var lowerCaseTags: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Pseudo-classes that override the default ones.
+      *
+      * Maps from names to either strings of functions.
+      * - A string value is a selector that the element must match to be selected.
+      * - A function is called with the element as its first argument, and optional
+      *  parameters second. If it returns true, the element is selected.
+      */
+    var pseudos: js.UndefOr[
+        Record[
+          String, 
+          String | (js.Function2[/* elem */ ElementNode, /* value */ js.UndefOr[String | Null], Boolean])
+        ]
+      ] = js.undefined
+    
+    /**
+      * Is the document in quirks mode?
+      *
+      * This will lead to .className and #id being case-insensitive.
+      *
+      * @default false
+      */
+    var quirksMode: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Indicates whether to consider the selector as a relative selector.
+      *
+      * Relative selectors that don't include a `:scope` pseudo-class behave
+      * as if they have a `:scope ` prefix (a `:scope` pseudo-class, followed by
+      * a descendant selector).
+      *
+      * If relative selectors are disabled, selectors starting with a traversal
+      * will lead to an error.
+      *
+      * @default true
+      * @see {@link https://www.w3.org/TR/selectors-4/#relative}
+      */
+    var relativeSelector: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The last function in the stack, will be called with the last element
@@ -233,12 +297,9 @@ object typesMod {
     var rootFunc: js.UndefOr[js.Function1[/* element */ ElementNode, Boolean]] = js.undefined
     
     /**
-      * Limits the module to only use CSS3 selectors. Default: false.
-      */
-    var strict: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * When enabled, tag names will be case-sensitive. Default: false.
+      * When enabled, tag names will be case-sensitive.
+      *
+      * @default false
       */
     var xmlMode: js.UndefOr[Boolean] = js.undefined
   }
@@ -259,19 +320,40 @@ object typesMod {
       
       inline def setCacheResultsUndefined: Self = StObject.set(x, "cacheResults", js.undefined)
       
-      inline def setContext(value: ElementNode | js.Array[ElementNode]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Node | js.Array[Node]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setContextVarargs(value: ElementNode*): Self = StObject.set(x, "context", js.Array(value :_*))
+      inline def setContextVarargs(value: Node*): Self = StObject.set(x, "context", js.Array(value*))
+      
+      inline def setLowerCaseAttributeNames(value: Boolean): Self = StObject.set(x, "lowerCaseAttributeNames", value.asInstanceOf[js.Any])
+      
+      inline def setLowerCaseAttributeNamesUndefined: Self = StObject.set(x, "lowerCaseAttributeNames", js.undefined)
+      
+      inline def setLowerCaseTags(value: Boolean): Self = StObject.set(x, "lowerCaseTags", value.asInstanceOf[js.Any])
+      
+      inline def setLowerCaseTagsUndefined: Self = StObject.set(x, "lowerCaseTags", js.undefined)
+      
+      inline def setPseudos(
+        value: Record[
+              String, 
+              String | (js.Function2[/* elem */ ElementNode, /* value */ js.UndefOr[String | Null], Boolean])
+            ]
+      ): Self = StObject.set(x, "pseudos", value.asInstanceOf[js.Any])
+      
+      inline def setPseudosUndefined: Self = StObject.set(x, "pseudos", js.undefined)
+      
+      inline def setQuirksMode(value: Boolean): Self = StObject.set(x, "quirksMode", value.asInstanceOf[js.Any])
+      
+      inline def setQuirksModeUndefined: Self = StObject.set(x, "quirksMode", js.undefined)
+      
+      inline def setRelativeSelector(value: Boolean): Self = StObject.set(x, "relativeSelector", value.asInstanceOf[js.Any])
+      
+      inline def setRelativeSelectorUndefined: Self = StObject.set(x, "relativeSelector", js.undefined)
       
       inline def setRootFunc(value: /* element */ ElementNode => Boolean): Self = StObject.set(x, "rootFunc", js.Any.fromFunction1(value))
       
       inline def setRootFuncUndefined: Self = StObject.set(x, "rootFunc", js.undefined)
-      
-      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
-      
-      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
       inline def setXmlMode(value: Boolean): Self = StObject.set(x, "xmlMode", value.asInstanceOf[js.Any])
       
@@ -281,5 +363,5 @@ object typesMod {
   
   type Predicate[Value] = js.Function1[/* v */ Value, Boolean]
   
-  type Query[ElementNode] = String | CompiledQuery[ElementNode]
+  type Query[ElementNode] = String | CompiledQuery[ElementNode] | js.Array[js.Array[Selector]]
 }

@@ -11,13 +11,13 @@ object anon {
     
     var compiler: Options
     
-    var components: js.Any
+    var components: Any
     
-    var transform: js.Array[js.Any]
+    var transform: js.Array[Any]
   }
   object Compiler {
     
-    inline def apply(compiler: Options, components: js.Any, transform: js.Array[js.Any]): Compiler = {
+    inline def apply(compiler: Options, components: Any, transform: js.Array[Any]): Compiler = {
       val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
       __obj.asInstanceOf[Compiler]
     }
@@ -26,11 +26,11 @@ object anon {
       
       inline def setCompiler(value: Options): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
-      inline def setComponents(value: js.Any): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: Any): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      inline def setTransform(value: js.Array[js.Any]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: js.Array[Any]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      inline def setTransformVarargs(value: js.Any*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: Any*): Self = StObject.set(x, "transform", js.Array(value*))
     }
   }
 }

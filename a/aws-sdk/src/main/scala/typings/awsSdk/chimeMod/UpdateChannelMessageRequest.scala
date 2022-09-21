@@ -12,6 +12,11 @@ trait UpdateChannelMessageRequest extends StObject {
   var ChannelArn: ChimeArn
   
   /**
+    * The AppInstanceUserArn of the user that makes the API call.
+    */
+  var ChimeBearer: js.UndefOr[ChimeArn] = js.undefined
+  
+  /**
     * The content of the message being updated.
     */
   var Content: js.UndefOr[typings.awsSdk.chimeMod.Content] = js.undefined
@@ -36,6 +41,10 @@ object UpdateChannelMessageRequest {
   extension [Self <: UpdateChannelMessageRequest](x: Self) {
     
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearerUndefined: Self = StObject.set(x, "ChimeBearer", js.undefined)
     
     inline def setContent(value: Content): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     

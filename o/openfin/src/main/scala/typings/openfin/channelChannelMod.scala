@@ -17,7 +17,7 @@ object channelChannelMod {
   
   @JSImport("openfin/_v2/api/interappbus/channel/channel", "ChannelBase")
   @js.native
-  class ChannelBase protected () extends StObject {
+  open class ChannelBase protected () extends StObject {
     def this(
       providerIdentity: ProviderIdentity,
       send: FnCall,
@@ -28,26 +28,26 @@ object channelChannelMod {
     
     def beforeAction(func: Action): Unit = js.native
     
-    def defaultAction(): js.Any = js.native
-    def defaultAction(action: String): js.Any = js.native
-    def defaultAction(action: String, payload: js.Any): js.Any = js.native
-    def defaultAction(action: String, payload: js.Any, senderIdentity: ProviderIdentity): js.Any = js.native
-    def defaultAction(action: String, payload: Unit, senderIdentity: ProviderIdentity): js.Any = js.native
-    def defaultAction(action: Unit, payload: js.Any): js.Any = js.native
-    def defaultAction(action: Unit, payload: js.Any, senderIdentity: ProviderIdentity): js.Any = js.native
-    def defaultAction(action: Unit, payload: Unit, senderIdentity: ProviderIdentity): js.Any = js.native
+    def defaultAction(): Any = js.native
+    def defaultAction(action: String): Any = js.native
+    def defaultAction(action: String, payload: Any): Any = js.native
+    def defaultAction(action: String, payload: Any, senderIdentity: ProviderIdentity): Any = js.native
+    def defaultAction(action: String, payload: Unit, senderIdentity: ProviderIdentity): Any = js.native
+    def defaultAction(action: Unit, payload: Any): Any = js.native
+    def defaultAction(action: Unit, payload: Any, senderIdentity: ProviderIdentity): Any = js.native
+    def defaultAction(action: Unit, payload: Unit, senderIdentity: ProviderIdentity): Any = js.native
     
-    /* private */ var defaultSet: js.Any = js.native
+    /* private */ var defaultSet: Any = js.native
     
-    /* private */ var errorMiddleware: js.Any = js.native
+    /* private */ var errorMiddleware: Any = js.native
     
-    def onError(func: js.Function3[/* action */ String, /* error */ js.Any, /* id */ Identity, js.Any]): Unit = js.native
+    def onError(func: js.Function3[/* action */ String, /* error */ Any, /* id */ Identity, Any]): Unit = js.native
     
-    /* private */ var postAction: js.Any = js.native
+    /* private */ var postAction: Any = js.native
     
-    /* private */ var preAction: js.Any = js.native
+    /* private */ var preAction: Any = js.native
     
-    def processAction(action: String, payload: js.Any, senderIdentity: ProviderIdentity): js.Promise[js.Any] = js.native
+    def processAction(action: String, payload: Any, senderIdentity: ProviderIdentity): js.Promise[Any] = js.native
     
     def register(topic: String, listener: Action): Boolean = js.native
     
@@ -59,23 +59,23 @@ object channelChannelMod {
     def setDefaultAction(
       func: js.Function3[
           /* action */ js.UndefOr[String], 
-          /* payload */ js.UndefOr[js.Any], 
+          /* payload */ js.UndefOr[Any], 
           /* senderIdentity */ js.UndefOr[ProviderIdentity], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     
-    /* protected */ var subscriptions: js.Any = js.native
+    /* protected */ var subscriptions: Any = js.native
   }
   
   @JSImport("openfin/_v2/api/interappbus/channel/channel", "ProtectedItems")
   @js.native
-  class ProtectedItems protected () extends StObject {
+  open class ProtectedItems protected () extends StObject {
     def this(providerIdentity: ProviderIdentity, send: FnCall) = this()
     
     var providerIdentity: ProviderIdentity = js.native
     
-    def send(to: Identity, action: String, payload: js.Any): js.Promise[Message[Unit]] = js.native
+    def send(to: Identity, action: String, payload: Any): js.Promise[Message[Unit]] = js.native
     
     def sendRaw(action: String, payload: js.Object, uncorrelated: Boolean): js.Promise[Message[Payload]] = js.native
     def sendRaw(action: `request-external-authorization`, payload: js.Object, uncorrelated: `true`): js.Promise[Message[AuthorizationPayload]] = js.native
@@ -83,7 +83,7 @@ object channelChannelMod {
     var sendRaw_Original: FnCall = js.native
   }
   
-  type Action = js.Function0[js.Any] | (js.Function1[/* payload */ js.Any, js.Any]) | (js.Function2[/* payload */ js.Any, /* id */ ProviderIdentity, js.Any])
+  type Action = js.Function0[Any] | (js.Function1[/* payload */ Any, Any]) | (js.Function2[/* payload */ Any, /* id */ ProviderIdentity, Any])
   
   trait ChannelMessagePayload
     extends StObject
@@ -91,11 +91,11 @@ object channelChannelMod {
     
     var action: String
     
-    var payload: js.Any
+    var payload: Any
   }
   object ChannelMessagePayload {
     
-    inline def apply(action: String, payload: js.Any, uuid: String): ChannelMessagePayload = {
+    inline def apply(action: String, payload: Any, uuid: String): ChannelMessagePayload = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelMessagePayload]
     }
@@ -104,9 +104,9 @@ object channelChannelMod {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
-  type Middleware = js.Function0[js.Any] | (js.Function1[/* action */ String, js.Any]) | (js.Function2[/* action */ String, /* payload */ js.Any, js.Any]) | (js.Function3[/* action */ String, /* payload */ js.Any, /* id */ ProviderIdentity, js.Any])
+  type Middleware = js.Function0[Any] | (js.Function1[/* action */ String, Any]) | (js.Function2[/* action */ String, /* payload */ Any, Any]) | (js.Function3[/* action */ String, /* payload */ Any, /* id */ ProviderIdentity, Any])
 }

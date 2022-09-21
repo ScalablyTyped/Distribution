@@ -8,21 +8,16 @@ trait EmbindObject[T /* <: EmbindObject[T] */] extends StObject {
   
   def delete(): Unit
   
-  def deleteAfter(): Unit
+  def deleteLater(): Unit
   
-  def isAliasOf(other: js.Any): Boolean
+  def isAliasOf(other: Any): Boolean
   
   def isDeleted(): Boolean
 }
 object EmbindObject {
   
-  inline def apply[T /* <: EmbindObject[T] */](
-    delete: () => Unit,
-    deleteAfter: () => Unit,
-    isAliasOf: js.Any => Boolean,
-    isDeleted: () => Boolean
-  ): EmbindObject[T] = {
-    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), deleteAfter = js.Any.fromFunction0(deleteAfter), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted))
+  inline def apply[T /* <: EmbindObject[T] */](delete: () => Unit, deleteLater: () => Unit, isAliasOf: Any => Boolean, isDeleted: () => Boolean): EmbindObject[T] = {
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), deleteLater = js.Any.fromFunction0(deleteLater), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted))
     __obj.asInstanceOf[EmbindObject[T]]
   }
   
@@ -30,9 +25,9 @@ object EmbindObject {
     
     inline def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     
-    inline def setDeleteAfter(value: () => Unit): Self = StObject.set(x, "deleteAfter", js.Any.fromFunction0(value))
+    inline def setDeleteLater(value: () => Unit): Self = StObject.set(x, "deleteLater", js.Any.fromFunction0(value))
     
-    inline def setIsAliasOf(value: js.Any => Boolean): Self = StObject.set(x, "isAliasOf", js.Any.fromFunction1(value))
+    inline def setIsAliasOf(value: Any => Boolean): Self = StObject.set(x, "isAliasOf", js.Any.fromFunction1(value))
     
     inline def setIsDeleted(value: () => Boolean): Self = StObject.set(x, "isDeleted", js.Any.fromFunction0(value))
   }

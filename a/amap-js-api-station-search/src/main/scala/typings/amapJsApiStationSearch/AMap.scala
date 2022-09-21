@@ -257,7 +257,7 @@ object AMap {
         
         inline def setCityListUndefined: Self = StObject.set(x, "cityList", js.undefined)
         
-        inline def setCityListVarargs(value: CityInfo*): Self = StObject.set(x, "cityList", js.Array(value :_*))
+        inline def setCityListVarargs(value: CityInfo*): Self = StObject.set(x, "cityList", js.Array(value*))
         
         inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
@@ -265,11 +265,11 @@ object AMap {
         
         inline def setKeywordListUndefined: Self = StObject.set(x, "keywordList", js.undefined)
         
-        inline def setKeywordListVarargs(value: String*): Self = StObject.set(x, "keywordList", js.Array(value :_*))
+        inline def setKeywordListVarargs(value: String*): Self = StObject.set(x, "keywordList", js.Array(value*))
         
         inline def setStationInfo(value: js.Array[StationInfo]): Self = StObject.set(x, "stationInfo", value.asInstanceOf[js.Any])
         
-        inline def setStationInfoVarargs(value: StationInfo*): Self = StObject.set(x, "stationInfo", js.Array(value :_*))
+        inline def setStationInfoVarargs(value: StationInfo*): Self = StObject.set(x, "stationInfo", js.Array(value*))
       }
     }
     
@@ -340,7 +340,7 @@ object AMap {
         
         inline def setBuslines(value: js.Array[Busline]): Self = StObject.set(x, "buslines", value.asInstanceOf[js.Any])
         
-        inline def setBuslinesVarargs(value: Busline*): Self = StObject.set(x, "buslines", js.Array(value :_*))
+        inline def setBuslinesVarargs(value: Busline*): Self = StObject.set(x, "buslines", js.Array(value*))
         
         inline def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
         

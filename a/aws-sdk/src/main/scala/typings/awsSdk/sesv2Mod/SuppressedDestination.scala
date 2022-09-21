@@ -19,7 +19,7 @@ trait SuppressedDestination extends StObject {
   /**
     * The date and time when the suppressed destination was last updated, shown in Unix time format.
     */
-  var LastUpdateTime: Timestamp
+  var LastUpdateTime: js.Date
   
   /**
     * The reason that the address was added to the suppression list for your account.
@@ -28,7 +28,7 @@ trait SuppressedDestination extends StObject {
 }
 object SuppressedDestination {
   
-  inline def apply(EmailAddress: EmailAddress, LastUpdateTime: Timestamp, Reason: SuppressionListReason): SuppressedDestination = {
+  inline def apply(EmailAddress: EmailAddress, LastUpdateTime: js.Date, Reason: SuppressionListReason): SuppressedDestination = {
     val __obj = js.Dynamic.literal(EmailAddress = EmailAddress.asInstanceOf[js.Any], LastUpdateTime = LastUpdateTime.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuppressedDestination]
   }
@@ -41,7 +41,7 @@ object SuppressedDestination {
     
     inline def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setReason(value: SuppressionListReason): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }

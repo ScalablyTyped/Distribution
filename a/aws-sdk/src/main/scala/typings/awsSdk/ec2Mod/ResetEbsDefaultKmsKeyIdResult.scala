@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResetEbsDefaultKmsKeyIdResult extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the default CMK for EBS encryption by default.
+    * The Amazon Resource Name (ARN) of the default KMS key for EBS encryption by default.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
 }

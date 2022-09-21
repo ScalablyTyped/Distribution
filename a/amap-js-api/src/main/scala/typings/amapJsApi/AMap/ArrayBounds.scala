@@ -35,7 +35,7 @@ object ArrayBounds {
     
     inline def setBounds(value: js.Array[LngLat]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    inline def setBoundsVarargs(value: LngLat*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: LngLat*): Self = StObject.set(x, "bounds", js.Array(value*))
     
     inline def setContains(value: LocationValue => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     

@@ -30,16 +30,16 @@ object reactNativeVectorIconsStrings {
   inline def brand: brand = "brand".asInstanceOf[brand]
   
   @js.native
-  sealed trait button extends StObject
-  inline def button: button = "button".asInstanceOf[button]
-  
-  @js.native
   sealed trait clip extends StObject
   inline def clip: clip = "clip".asInstanceOf[clip]
   
   @js.native
   sealed trait email extends StObject
   inline def email: email = "email".asInstanceOf[email]
+  
+  @js.native
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
   sealed trait head extends StObject
@@ -76,20 +76,16 @@ object reactNativeVectorIconsStrings {
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
+  
+  @js.native
   sealed trait phoneNumber extends StObject
   inline def phoneNumber: phoneNumber = "phoneNumber".asInstanceOf[phoneNumber]
   
   @js.native
   sealed trait polite extends StObject
   inline def polite: polite = "polite".asInstanceOf[polite]
-  
-  @js.native
-  sealed trait radiobutton_checked extends StObject
-  inline def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
-  
-  @js.native
-  sealed trait radiobutton_unchecked extends StObject
-  inline def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
   
   @js.native
   sealed trait simple extends StObject

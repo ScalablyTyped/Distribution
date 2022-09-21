@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EnumeratorConstructor
   extends StObject
-     with Instantiable1[/* dict */ Dictionary[js.Object, js.Any], Enumerator[js.Object]]
+     with Instantiable1[/* dict */ Dictionary[js.Object, Any], Enumerator[js.Object]]

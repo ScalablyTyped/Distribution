@@ -12,7 +12,7 @@ trait IntelligentTieringFilter extends StObject {
   var And: js.UndefOr[IntelligentTieringAndOperator] = js.undefined
   
   /**
-    * An object key name prefix that identifies the subset of objects to which the rule applies.
+    * An object key name prefix that identifies the subset of objects to which the rule applies.  Replacement must be made for object keys containing special characters (such as carriage returns) when using XML requests. For more information, see  XML related object key constraints. 
     */
   var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
   

@@ -20,6 +20,11 @@ trait UpdateTestGridProjectRequest extends StObject {
     * ARN of the project to update.
     */
   var projectArn: DeviceFarmArn
+  
+  /**
+    * The VPC security groups and subnets that are attached to a project.
+    */
+  var vpcConfig: js.UndefOr[TestGridVpcConfig] = js.undefined
 }
 object UpdateTestGridProjectRequest {
   
@@ -39,5 +44,9 @@ object UpdateTestGridProjectRequest {
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
+    
+    inline def setVpcConfig(value: TestGridVpcConfig): Self = StObject.set(x, "vpcConfig", value.asInstanceOf[js.Any])
+    
+    inline def setVpcConfigUndefined: Self = StObject.set(x, "vpcConfig", js.undefined)
   }
 }

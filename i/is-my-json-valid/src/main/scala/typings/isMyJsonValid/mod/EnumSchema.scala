@@ -20,6 +20,6 @@ object EnumSchema {
     
     inline def setEnum(value: js.Array[Enum]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
-    inline def setEnumVarargs(value: Enum*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: Enum*): Self = StObject.set(x, "enum", js.Array(value*))
   }
 }

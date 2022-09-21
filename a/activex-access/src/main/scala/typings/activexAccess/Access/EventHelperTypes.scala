@@ -19,9 +19,9 @@ object EventHelperTypes {
     
     var Cancel: Boolean
     
-    val Headers: js.Any
+    val Headers: Any
     
-    val PostData: js.Any
+    val PostData: Any
     
     val TargetFrameName: String | Null
     
@@ -29,11 +29,11 @@ object EventHelperTypes {
     
     val flags: Double
     
-    val pDisp: js.Any
+    val pDisp: Any
   }
   object WebBrowserControlBeforeNavigate2Parameter {
     
-    inline def apply(Cancel: Boolean, Headers: js.Any, PostData: js.Any, URL: String, flags: Double, pDisp: js.Any): WebBrowserControlBeforeNavigate2Parameter = {
+    inline def apply(Cancel: Boolean, Headers: Any, PostData: Any, URL: String, flags: Double, pDisp: Any): WebBrowserControlBeforeNavigate2Parameter = {
       val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Headers = Headers.asInstanceOf[js.Any], PostData = PostData.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any], TargetFrameName = null)
       __obj.asInstanceOf[WebBrowserControlBeforeNavigate2Parameter]
     }
@@ -44,11 +44,11 @@ object EventHelperTypes {
       
       inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
-      inline def setPDisp(value: js.Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
+      inline def setPDisp(value: Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
       
-      inline def setPostData(value: js.Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
+      inline def setPostData(value: Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
       
       inline def setTargetFrameName(value: String): Self = StObject.set(x, "TargetFrameName", value.asInstanceOf[js.Any])
       

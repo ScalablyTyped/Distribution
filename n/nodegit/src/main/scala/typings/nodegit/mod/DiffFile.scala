@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "DiffFile")
 @js.native
-class DiffFile ()
+open class DiffFile ()
   extends typings.nodegit.diffFileMod.DiffFile

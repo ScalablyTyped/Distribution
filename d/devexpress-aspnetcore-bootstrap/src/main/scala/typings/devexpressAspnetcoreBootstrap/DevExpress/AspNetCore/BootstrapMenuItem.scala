@@ -34,7 +34,7 @@ trait BootstrapMenuItem extends StObject {
   
   val indexPath: String
   
-  /* protected */ val instance: js.Any
+  /* protected */ val instance: Any
   
   val menu: BootstrapMenu | Null
   
@@ -77,7 +77,7 @@ object BootstrapMenuItem {
     getVisible: () => Boolean,
     index: Double,
     indexPath: String,
-    instance: js.Any,
+    instance: Any,
     name: String,
     setBadgeIconCssClass: String => Unit,
     setBadgeText: String => Unit,
@@ -123,7 +123,7 @@ object BootstrapMenuItem {
     
     inline def setIndexPath(value: String): Self = StObject.set(x, "indexPath", value.asInstanceOf[js.Any])
     
-    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     inline def setMenu(value: BootstrapMenu): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     

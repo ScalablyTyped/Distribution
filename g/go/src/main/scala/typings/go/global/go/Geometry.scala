@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Geometry.Line, Geometry.Ellipse, Geometry.Rectangle, Geometry.Path.
   * @param {EnumValue=} type If not supplied, the default Geometry type is Geometry.Path.
   */
-class Geometry ()
+open class Geometry ()
   extends typings.go.mod.Geometry {
   def this(`type`: typings.go.mod.EnumValue) = this()
 }

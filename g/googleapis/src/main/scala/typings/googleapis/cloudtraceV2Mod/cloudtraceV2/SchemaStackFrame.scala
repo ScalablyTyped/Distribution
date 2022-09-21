@@ -4,33 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a single stack frame in a stack trace.
-  */
 trait SchemaStackFrame extends StObject {
   
   /**
-    * The column number where the function call appears, if available. This is
-    * important in JavaScript because of its anonymous functions.
+    * The column number where the function call appears, if available. This is important in JavaScript because of its anonymous functions.
     */
-  var columnNumber: js.UndefOr[String] = js.undefined
+  var columnNumber: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The name of the source file where the function call appears (up to 256
-    * bytes).
+    * The name of the source file where the function call appears (up to 256 bytes).
     */
   var fileName: js.UndefOr[SchemaTruncatableString] = js.undefined
   
   /**
-    * The fully-qualified name that uniquely identifies the function or method
-    * that is active in this frame (up to 1024 bytes).
+    * The fully-qualified name that uniquely identifies the function or method that is active in this frame (up to 1024 bytes).
     */
   var functionName: js.UndefOr[SchemaTruncatableString] = js.undefined
   
   /**
     * The line number in `file_name` where the function call appears.
     */
-  var lineNumber: js.UndefOr[String] = js.undefined
+  var lineNumber: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The binary module from where the code was loaded.
@@ -38,9 +32,7 @@ trait SchemaStackFrame extends StObject {
   var loadModule: js.UndefOr[SchemaModule] = js.undefined
   
   /**
-    * An un-mangled function name, if `function_name` is
-    * [mangled](http://www.avabodh.com/cxxin/namemangling.html). The name can
-    * be fully-qualified (up to 1024 bytes).
+    * An un-mangled function name, if `function_name` is [mangled](http://www.avabodh.com/cxxin/namemangling.html). The name can be fully-qualified (up to 1024 bytes).
     */
   var originalFunctionName: js.UndefOr[SchemaTruncatableString] = js.undefined
   
@@ -60,6 +52,8 @@ object SchemaStackFrame {
     
     inline def setColumnNumber(value: String): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
+    inline def setColumnNumberNull: Self = StObject.set(x, "columnNumber", null)
+    
     inline def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
     
     inline def setFileName(value: SchemaTruncatableString): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
@@ -71,6 +65,8 @@ object SchemaStackFrame {
     inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
     
     inline def setLineNumber(value: String): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    
+    inline def setLineNumberNull: Self = StObject.set(x, "lineNumber", null)
     
     inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
     

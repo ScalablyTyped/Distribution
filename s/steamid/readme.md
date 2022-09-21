@@ -1,7 +1,7 @@
 
 # Scala.js typings for steamid
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 ## Library description:
 Exposes a SteamID object class for easy SteamID management
@@ -10,10 +10,10 @@ Exposes a SteamID object class for easy SteamID management
 | ------------------ | :-------------: |
 | Full name          | steamid |
 | Keywords           | steam, steamid, steam account |
-| # releases         | 4 |
-| # dependents       | 37 |
-| # downloads        | 411379 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 75408.33333333333 |
+| # stars            | 55.0 |
 
 ## Links
 - [Homepage](https://github.com/DoctorMcKay/node-steamid)

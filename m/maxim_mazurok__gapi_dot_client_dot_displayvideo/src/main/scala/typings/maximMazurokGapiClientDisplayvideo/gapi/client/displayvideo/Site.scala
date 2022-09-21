@@ -9,7 +9,7 @@ trait Site extends StObject {
   /** Output only. The resource name of the site. */
   var name: js.UndefOr[String] = js.undefined
   
-  /** Required. The URL or app ID of the site. Must be UTF-8 encoded with a maximum length of 240 bytes. */
+  /** Required. The app ID or URL of the site. Must be UTF-8 encoded with a maximum length of 240 bytes. */
   var urlOrAppId: js.UndefOr[String] = js.undefined
 }
 object Site {

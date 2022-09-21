@@ -172,7 +172,7 @@ object Managers {
       * @param  {any}     idOrName The id or name of the SFSRoom object whose presence in the Rooms list is to be tested.
       * @return {boolean}          Returns: true if the passed Room exists in the Rooms list.
       */
-    def containsRoom(idOrName: js.Any): Boolean
+    def containsRoom(idOrName: Any): Boolean
     
     /**
       * Indicates whether the Rooms list contains a Room belonging to the specified Group or not.
@@ -180,7 +180,7 @@ object Managers {
       * @param  {string}  groupId  The name of the Group to which the specified Room must belong.
       * @return {boolean}          Returns: true if the Rooms list contains the passed Room and it belongs to the specified Group.
       */
-    def containsRoomInGroup(idOrName: js.Any, groupId: String): Boolean
+    def containsRoomInGroup(idOrName: Any, groupId: String): Boolean
     
     /**
       * Returns a list of Rooms currently joined by the client.
@@ -238,8 +238,8 @@ object Managers {
     
     inline def apply(
       containsGroup: String => Boolean,
-      containsRoom: js.Any => Boolean,
-      containsRoomInGroup: (js.Any, String) => Boolean,
+      containsRoom: Any => Boolean,
+      containsRoomInGroup: (Any, String) => Boolean,
       getJoinedRooms: () => js.Array[SFSRoom],
       getRoomById: Double => SFSRoom,
       getRoomByName: String => SFSRoom,
@@ -257,9 +257,9 @@ object Managers {
       
       inline def setContainsGroup(value: String => Boolean): Self = StObject.set(x, "containsGroup", js.Any.fromFunction1(value))
       
-      inline def setContainsRoom(value: js.Any => Boolean): Self = StObject.set(x, "containsRoom", js.Any.fromFunction1(value))
+      inline def setContainsRoom(value: Any => Boolean): Self = StObject.set(x, "containsRoom", js.Any.fromFunction1(value))
       
-      inline def setContainsRoomInGroup(value: (js.Any, String) => Boolean): Self = StObject.set(x, "containsRoomInGroup", js.Any.fromFunction2(value))
+      inline def setContainsRoomInGroup(value: (Any, String) => Boolean): Self = StObject.set(x, "containsRoomInGroup", js.Any.fromFunction2(value))
       
       inline def setGetJoinedRooms(value: () => js.Array[SFSRoom]): Self = StObject.set(x, "getJoinedRooms", js.Any.fromFunction0(value))
       

@@ -25,7 +25,7 @@ object InvoiceSummary {
     
     inline def setAdditionalChargeSummariesUndefined: Self = StObject.set(x, "additionalChargeSummaries", js.undefined)
     
-    inline def setAdditionalChargeSummariesVarargs(value: InvoiceSummaryAdditionalChargeSummary*): Self = StObject.set(x, "additionalChargeSummaries", js.Array(value :_*))
+    inline def setAdditionalChargeSummariesVarargs(value: InvoiceSummaryAdditionalChargeSummary*): Self = StObject.set(x, "additionalChargeSummaries", js.Array(value*))
     
     inline def setProductTotal(value: Amount): Self = StObject.set(x, "productTotal", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait ListApplicationsResponse extends StObject {
   var ApplicationSummaries: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationSummaries
   
   /**
-    * The pagination token for the next set of results, or null if there are no additional results. Pass this token into a subsequent command to retrieve the next set of items For more information about pagination, see Using the AWS Command Line Interface's Pagination Options.
+    * The pagination token for the next set of results, or null if there are no additional results. Pass this token into a subsequent command to retrieve the next set of items For more information about pagination, see Using the Amazon Command Line Interface's Pagination Options.
     */
   var NextToken: js.UndefOr[ApplicationName] = js.undefined
 }
@@ -27,7 +27,7 @@ object ListApplicationsResponse {
     
     inline def setApplicationSummaries(value: ApplicationSummaries): Self = StObject.set(x, "ApplicationSummaries", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSummariesVarargs(value: ApplicationSummary*): Self = StObject.set(x, "ApplicationSummaries", js.Array(value :_*))
+    inline def setApplicationSummariesVarargs(value: ApplicationSummary*): Self = StObject.set(x, "ApplicationSummaries", js.Array(value*))
     
     inline def setNextToken(value: ApplicationName): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

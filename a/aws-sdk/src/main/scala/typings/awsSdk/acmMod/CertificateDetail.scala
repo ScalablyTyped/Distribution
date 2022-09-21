@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CertificateDetail extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the certificate. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
+    * The Amazon Resource Name (ARN) of the certificate. For more information about ARNs, see Amazon Resource Names (ARNs) in the Amazon Web Services General Reference.
     */
   var CertificateArn: js.UndefOr[Arn] = js.undefined
   
@@ -17,9 +17,9 @@ trait CertificateDetail extends StObject {
   var CertificateAuthorityArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The time at which the certificate was requested. This value exists only when the certificate type is AMAZON_ISSUED. 
+    * The time at which the certificate was requested.
     */
-  var CreatedAt: js.UndefOr[TStamp] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The fully qualified domain name for the certificate, such as www.example.com or example.com.
@@ -37,24 +37,24 @@ trait CertificateDetail extends StObject {
   var ExtendedKeyUsages: js.UndefOr[ExtendedKeyUsageList] = js.undefined
   
   /**
-    * The reason the certificate request failed. This value exists only when the certificate status is FAILED. For more information, see Certificate Request Failed in the AWS Certificate Manager User Guide. 
+    * The reason the certificate request failed. This value exists only when the certificate status is FAILED. For more information, see Certificate Request Failed in the Amazon Web Services Certificate Manager User Guide. 
     */
   var FailureReason: js.UndefOr[typings.awsSdk.acmMod.FailureReason] = js.undefined
   
   /**
     * The date and time at which the certificate was imported. This value exists only when the certificate type is IMPORTED. 
     */
-  var ImportedAt: js.UndefOr[TStamp] = js.undefined
+  var ImportedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A list of ARNs for the AWS resources that are using the certificate. A certificate can be used by multiple AWS resources. 
+    * A list of ARNs for the Amazon Web Services resources that are using the certificate. A certificate can be used by multiple Amazon Web Services resources. 
     */
   var InUseBy: js.UndefOr[InUseList] = js.undefined
   
   /**
     * The time at which the certificate was issued. This value exists only when the certificate type is AMAZON_ISSUED. 
     */
-  var IssuedAt: js.UndefOr[TStamp] = js.undefined
+  var IssuedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the certificate authority that issued and signed the certificate.
@@ -74,12 +74,12 @@ trait CertificateDetail extends StObject {
   /**
     * The time after which the certificate is not valid.
     */
-  var NotAfter: js.UndefOr[TStamp] = js.undefined
+  var NotAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time before which the certificate is not valid.
     */
-  var NotBefore: js.UndefOr[TStamp] = js.undefined
+  var NotBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Value that specifies whether to add the certificate to a transparency log. Certificate transparency makes it possible to detect SSL certificates that have been mistakenly or maliciously issued. A browser might respond to certificate that has not been logged by showing an error message. The logs are cryptographically secure. 
@@ -104,7 +104,7 @@ trait CertificateDetail extends StObject {
   /**
     * The time at which the certificate was revoked. This value exists only when the certificate status is REVOKED. 
     */
-  var RevokedAt: js.UndefOr[TStamp] = js.undefined
+  var RevokedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The serial number of the certificate.
@@ -132,7 +132,7 @@ trait CertificateDetail extends StObject {
   var SubjectAlternativeNames: js.UndefOr[DomainList] = js.undefined
   
   /**
-    * The source of the certificate. For certificates provided by ACM, this value is AMAZON_ISSUED. For certificates that you imported with ImportCertificate, this value is IMPORTED. ACM does not provide managed renewal for imported certificates. For more information about the differences between certificates that you import and those that ACM provides, see Importing Certificates in the AWS Certificate Manager User Guide. 
+    * The source of the certificate. For certificates provided by ACM, this value is AMAZON_ISSUED. For certificates that you imported with ImportCertificate, this value is IMPORTED. ACM does not provide managed renewal for imported certificates. For more information about the differences between certificates that you import and those that ACM provides, see Importing Certificates in the Amazon Web Services Certificate Manager User Guide. 
     */
   var Type: js.UndefOr[CertificateType] = js.undefined
 }
@@ -153,7 +153,7 @@ object CertificateDetail {
     
     inline def setCertificateAuthorityArnUndefined: Self = StObject.set(x, "CertificateAuthorityArn", js.undefined)
     
-    inline def setCreatedAt(value: TStamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -165,19 +165,19 @@ object CertificateDetail {
     
     inline def setDomainValidationOptionsUndefined: Self = StObject.set(x, "DomainValidationOptions", js.undefined)
     
-    inline def setDomainValidationOptionsVarargs(value: DomainValidation*): Self = StObject.set(x, "DomainValidationOptions", js.Array(value :_*))
+    inline def setDomainValidationOptionsVarargs(value: DomainValidation*): Self = StObject.set(x, "DomainValidationOptions", js.Array(value*))
     
     inline def setExtendedKeyUsages(value: ExtendedKeyUsageList): Self = StObject.set(x, "ExtendedKeyUsages", value.asInstanceOf[js.Any])
     
     inline def setExtendedKeyUsagesUndefined: Self = StObject.set(x, "ExtendedKeyUsages", js.undefined)
     
-    inline def setExtendedKeyUsagesVarargs(value: ExtendedKeyUsage*): Self = StObject.set(x, "ExtendedKeyUsages", js.Array(value :_*))
+    inline def setExtendedKeyUsagesVarargs(value: ExtendedKeyUsage*): Self = StObject.set(x, "ExtendedKeyUsages", js.Array(value*))
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    inline def setImportedAt(value: TStamp): Self = StObject.set(x, "ImportedAt", value.asInstanceOf[js.Any])
+    inline def setImportedAt(value: js.Date): Self = StObject.set(x, "ImportedAt", value.asInstanceOf[js.Any])
     
     inline def setImportedAtUndefined: Self = StObject.set(x, "ImportedAt", js.undefined)
     
@@ -185,9 +185,9 @@ object CertificateDetail {
     
     inline def setInUseByUndefined: Self = StObject.set(x, "InUseBy", js.undefined)
     
-    inline def setInUseByVarargs(value: String*): Self = StObject.set(x, "InUseBy", js.Array(value :_*))
+    inline def setInUseByVarargs(value: String*): Self = StObject.set(x, "InUseBy", js.Array(value*))
     
-    inline def setIssuedAt(value: TStamp): Self = StObject.set(x, "IssuedAt", value.asInstanceOf[js.Any])
+    inline def setIssuedAt(value: js.Date): Self = StObject.set(x, "IssuedAt", value.asInstanceOf[js.Any])
     
     inline def setIssuedAtUndefined: Self = StObject.set(x, "IssuedAt", js.undefined)
     
@@ -203,13 +203,13 @@ object CertificateDetail {
     
     inline def setKeyUsagesUndefined: Self = StObject.set(x, "KeyUsages", js.undefined)
     
-    inline def setKeyUsagesVarargs(value: KeyUsage*): Self = StObject.set(x, "KeyUsages", js.Array(value :_*))
+    inline def setKeyUsagesVarargs(value: KeyUsage*): Self = StObject.set(x, "KeyUsages", js.Array(value*))
     
-    inline def setNotAfter(value: TStamp): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
+    inline def setNotAfter(value: js.Date): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
     
     inline def setNotAfterUndefined: Self = StObject.set(x, "NotAfter", js.undefined)
     
-    inline def setNotBefore(value: TStamp): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
+    inline def setNotBefore(value: js.Date): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
     
     inline def setNotBeforeUndefined: Self = StObject.set(x, "NotBefore", js.undefined)
     
@@ -229,7 +229,7 @@ object CertificateDetail {
     
     inline def setRevocationReasonUndefined: Self = StObject.set(x, "RevocationReason", js.undefined)
     
-    inline def setRevokedAt(value: TStamp): Self = StObject.set(x, "RevokedAt", value.asInstanceOf[js.Any])
+    inline def setRevokedAt(value: js.Date): Self = StObject.set(x, "RevokedAt", value.asInstanceOf[js.Any])
     
     inline def setRevokedAtUndefined: Self = StObject.set(x, "RevokedAt", js.undefined)
     
@@ -251,7 +251,7 @@ object CertificateDetail {
     
     inline def setSubjectAlternativeNamesUndefined: Self = StObject.set(x, "SubjectAlternativeNames", js.undefined)
     
-    inline def setSubjectAlternativeNamesVarargs(value: DomainNameString*): Self = StObject.set(x, "SubjectAlternativeNames", js.Array(value :_*))
+    inline def setSubjectAlternativeNamesVarargs(value: DomainNameString*): Self = StObject.set(x, "SubjectAlternativeNames", js.Array(value*))
     
     inline def setSubjectUndefined: Self = StObject.set(x, "Subject", js.undefined)
     

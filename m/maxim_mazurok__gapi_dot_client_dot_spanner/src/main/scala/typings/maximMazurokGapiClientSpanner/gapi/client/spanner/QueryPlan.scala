@@ -22,6 +22,6 @@ object QueryPlan {
     
     inline def setPlanNodesUndefined: Self = StObject.set(x, "planNodes", js.undefined)
     
-    inline def setPlanNodesVarargs(value: PlanNode*): Self = StObject.set(x, "planNodes", js.Array(value :_*))
+    inline def setPlanNodesVarargs(value: PlanNode*): Self = StObject.set(x, "planNodes", js.Array(value*))
   }
 }

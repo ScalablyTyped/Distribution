@@ -349,6 +349,10 @@ object xregexpStrings {
   inline def e_ : e_ = "e".asInstanceOf[e_]
   
   @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
   sealed trait f_
     extends StObject
        with TokenFlag
@@ -469,6 +473,14 @@ object xregexpStrings {
        with TokenFlag
        with TokenFlagLOWER
   inline def s_ : s_ = "s".asInstanceOf[s_]
+  
+  @js.native
+  sealed trait skip extends StObject
+  inline def skip: skip = "skip".asInstanceOf[skip]
+  
+  @js.native
+  sealed trait `skip-lazy` extends StObject
+  inline def `skip-lazy`: `skip-lazy` = "skip-lazy".asInstanceOf[`skip-lazy`]
   
   @js.native
   sealed trait sticky extends StObject

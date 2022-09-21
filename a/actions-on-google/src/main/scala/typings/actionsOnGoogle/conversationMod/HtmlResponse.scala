@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options Canvas options
   * @public
   */
-class HtmlResponse[TData /* <: JsonObject */] ()
+open class HtmlResponse[TData /* <: JsonObject */] ()
   extends typings.actionsOnGoogle.responseMod.HtmlResponse[TData] {
   def this(options: HtmlResponseOptions[TData]) = this()
   def this(options: GoogleActionsV2UiElementsHtmlResponse) = this()

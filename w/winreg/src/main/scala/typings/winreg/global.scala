@@ -1,7 +1,6 @@
 package typings.winreg
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Error
 import typings.winreg.Winreg.Options
 import typings.winreg.Winreg.Registry
 import typings.winreg.Winreg.RegistryItem
@@ -16,7 +15,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Winreg")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends StObject
          with Registry {
       /**
@@ -51,7 +50,7 @@ object global {
         * @returns {Registry} this registry key object
         */
       /* CompleteClass */
-      override def clear(cb: js.Function1[/* err */ Error, Unit]): Registry = js.native
+      override def clear(cb: js.Function1[/* err */ js.Error, Unit]): Registry = js.native
       
       /**
         * Create this registry key. Note that this is a no-op if the key already exists.
@@ -60,7 +59,7 @@ object global {
         * @returns {Registry} this registry key object
         */
       /* CompleteClass */
-      override def create(cb: js.Function1[/* err */ Error, Unit]): Registry = js.native
+      override def create(cb: js.Function1[/* err */ js.Error, Unit]): Registry = js.native
       
       /**
         * Delete this key and all subkeys from the registry.
@@ -69,7 +68,7 @@ object global {
         * @returns {Registry} this registry key object
         */
       /* CompleteClass */
-      override def destroy(cb: js.Function1[/* err */ Error, Unit]): Registry = js.native
+      override def destroy(cb: js.Function1[/* err */ js.Error, Unit]): Registry = js.native
       
       /**
         * Alias for the clear method to keep it backward compatible.
@@ -80,7 +79,7 @@ object global {
         * @returns {Registry} this registry key object
         */
       /* CompleteClass */
-      override def erase(cb: js.Function1[/* err */ Error, Unit]): Registry = js.native
+      override def erase(cb: js.Function1[/* err */ js.Error, Unit]): Registry = js.native
       
       /**
         * Gets a named value from this registry key.
@@ -91,7 +90,7 @@ object global {
         * @returns {Registry} this registry key object
         */
       /* CompleteClass */
-      override def get(name: String, cb: js.Function2[/* err */ Error, /* result */ RegistryItem, Unit]): Registry = js.native
+      override def get(name: String, cb: js.Function2[/* err */ js.Error, /* result */ RegistryItem, Unit]): Registry = js.native
       
       /**
         * The hive id.
@@ -122,7 +121,7 @@ object global {
         * @returns {Registry} this registry key object
         */
       /* CompleteClass */
-      override def keyExists(cb: js.Function2[/* err */ Error, /* exists */ Boolean, Unit]): Registry = js.native
+      override def keyExists(cb: js.Function2[/* err */ js.Error, /* exists */ Boolean, Unit]): Registry = js.native
       
       /**
         * Retrieve all subkeys from this registry key.
@@ -132,7 +131,7 @@ object global {
         * @returns {Registry} this registry key object
         */
       /* CompleteClass */
-      override def keys(cb: js.Function2[/* err */ Error, /* result */ js.Array[this.type], Unit]): Registry = js.native
+      override def keys(cb: js.Function2[/* err */ js.Error, /* result */ js.Array[this.type], Unit]): Registry = js.native
       
       /**
         * Creates a new {@link Registry} instance that points to the parent registry key.
@@ -157,7 +156,7 @@ object global {
         * @returns {Registry} this registry key object
         */
       /* CompleteClass */
-      override def remove(name: String, cb: js.Function1[/* err */ Error, Unit]): Registry = js.native
+      override def remove(name: String, cb: js.Function1[/* err */ js.Error, Unit]): Registry = js.native
       
       /**
         * Sets a named value in this registry key, overwriting an already existing value.
@@ -169,7 +168,7 @@ object global {
         * @returns {Registry} this registry key object
         */
       /* CompleteClass */
-      override def set(name: String, `type`: String, value: String, cb: js.Function1[/* err */ Error, Unit]): Registry = js.native
+      override def set(name: String, `type`: String, value: String, cb: js.Function1[/* err */ js.Error, Unit]): Registry = js.native
       
       /**
         * Checks if a value with the given name already exists within this key.
@@ -180,7 +179,7 @@ object global {
         * @returns {Registry} this registry key object
         */
       /* CompleteClass */
-      override def valueExists(name: String, cb: js.Function2[/* err */ Error, /* exists */ Boolean, Unit]): Registry = js.native
+      override def valueExists(name: String, cb: js.Function2[/* err */ js.Error, /* exists */ Boolean, Unit]): Registry = js.native
       
       /**
         * Retrieve all values from this registry key.
@@ -190,7 +189,7 @@ object global {
         * @returns {Registry} this registry key object
         */
       /* CompleteClass */
-      override def values(cb: js.Function2[/* err */ Error, /* result */ js.Array[RegistryItem], Unit]): Registry = js.native
+      override def values(cb: js.Function2[/* err */ js.Error, /* result */ js.Array[RegistryItem], Unit]): Registry = js.native
     }
     
     @JSGlobal("Winreg")

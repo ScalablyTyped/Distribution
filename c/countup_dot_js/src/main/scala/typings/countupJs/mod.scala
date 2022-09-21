@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("countup.js", "CountUp")
   @js.native
-  class CountUp protected () extends StObject {
+  open class CountUp protected () extends StObject {
     def this(target: String, endVal: Double) = this()
     def this(target: HTMLElement, endVal: Double) = this()
     def this(target: HTMLInputElement, endVal: Double) = this()
@@ -18,16 +18,22 @@ object mod {
     def this(target: HTMLElement, endVal: Double, options: CountUpOptions) = this()
     def this(target: HTMLInputElement, endVal: Double, options: CountUpOptions) = this()
     
-    def callback(): js.Any = js.native
-    def callback(args: js.Any): js.Any = js.native
+    def callback(): Any = js.native
+    def callback(args: Any): Any = js.native
     
     def count(timestamp: Double): Unit = js.native
     
-    /* private */ var countDown: js.Any = js.native
+    /* private */ var countDown: Any = js.native
     
-    /* private */ var defaults: js.Any = js.native
+    /* private */ var defaults: Any = js.native
     
-    /* private */ var determineDirectionAndSmartEasing: js.Any = js.native
+    /**
+      * Smart easing works by breaking the animation into 2 parts, the second part being the
+      * smartEasingAmount and first part being the total amount minus the smartEasingAmount. It works
+      * by disabling easing for the first part and enabling it on the second part. It is used if
+      * usingEasing is true and the total animation amount exceeds the smartEasingThreshold.
+      */
+    /* private */ var determineDirectionAndSmartEasing: Any = js.native
     
     var duration: Double = js.native
     
@@ -37,21 +43,25 @@ object mod {
         js.Function4[/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double, Double]
       ] = js.native
     
-    /* private */ var el: js.Any = js.native
+    /* private */ var el: Any = js.native
     
-    /* private */ var endVal: js.Any = js.native
+    /* private */ var endVal: Any = js.native
     
-    def ensureNumber(n: js.Any): Boolean = js.native
+    def ensureNumber(n: Any): Boolean = js.native
     
     var error: String = js.native
     
-    /* private */ var finalEndVal: js.Any = js.native
+    /* private */ var finalEndVal: Any = js.native
     
     def formatNumber(num: Double): String = js.native
     
     def formattingFn(num: Double): String = js.native
     
     var frameVal: Double = js.native
+    
+    def handleScroll(self: CountUp): Unit = js.native
+    
+    var once: Boolean = js.native
     
     var options: js.UndefOr[CountUpOptions] = js.native
     
@@ -61,27 +71,25 @@ object mod {
     
     def printValue(`val`: Double): Unit = js.native
     
-    /* private */ var rAF: js.Any = js.native
+    /* private */ var rAF: Any = js.native
     
-    /* private */ var remaining: js.Any = js.native
+    /* private */ var remaining: Any = js.native
     
     def reset(): Unit = js.native
     
-    /* private */ var resetDuration: js.Any = js.native
+    /* private */ var resetDuration: Any = js.native
     
     def start(): Unit = js.native
-    def start(callback: js.Function1[/* args */ js.UndefOr[js.Any], js.Any]): Unit = js.native
+    def start(callback: js.Function1[/* args */ js.UndefOr[Any], Any]): Unit = js.native
     
-    /* private */ var startTime: js.Any = js.native
+    /* private */ var startTime: Any = js.native
     
     var startVal: Double = js.native
-    
-    /* private */ var target: js.Any = js.native
     
     def update(newEndVal: String): Unit = js.native
     def update(newEndVal: Double): Unit = js.native
     
-    /* private */ var useEasing: js.Any = js.native
+    /* private */ var useEasing: Any = js.native
     
     def validateValue(value: String): Double = js.native
     def validateValue(value: Double): Double = js.native
@@ -101,11 +109,17 @@ object mod {
         js.Function4[/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double, Double]
       ] = js.undefined
     
+    var enableScrollSpy: js.UndefOr[Boolean] = js.undefined
+    
     var formattingFn: js.UndefOr[js.Function1[/* n */ Double, String]] = js.undefined
     
     var numerals: js.UndefOr[js.Array[String]] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
+    
+    var scrollSpyDelay: js.UndefOr[Double] = js.undefined
+    
+    var scrollSpyOnce: js.UndefOr[Boolean] = js.undefined
     
     var separator: js.UndefOr[String] = js.undefined
     
@@ -146,6 +160,10 @@ object mod {
       
       inline def setEasingFnUndefined: Self = StObject.set(x, "easingFn", js.undefined)
       
+      inline def setEnableScrollSpy(value: Boolean): Self = StObject.set(x, "enableScrollSpy", value.asInstanceOf[js.Any])
+      
+      inline def setEnableScrollSpyUndefined: Self = StObject.set(x, "enableScrollSpy", js.undefined)
+      
       inline def setFormattingFn(value: /* n */ Double => String): Self = StObject.set(x, "formattingFn", js.Any.fromFunction1(value))
       
       inline def setFormattingFnUndefined: Self = StObject.set(x, "formattingFn", js.undefined)
@@ -154,11 +172,19 @@ object mod {
       
       inline def setNumeralsUndefined: Self = StObject.set(x, "numerals", js.undefined)
       
-      inline def setNumeralsVarargs(value: String*): Self = StObject.set(x, "numerals", js.Array(value :_*))
+      inline def setNumeralsVarargs(value: String*): Self = StObject.set(x, "numerals", js.Array(value*))
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      
+      inline def setScrollSpyDelay(value: Double): Self = StObject.set(x, "scrollSpyDelay", value.asInstanceOf[js.Any])
+      
+      inline def setScrollSpyDelayUndefined: Self = StObject.set(x, "scrollSpyDelay", js.undefined)
+      
+      inline def setScrollSpyOnce(value: Boolean): Self = StObject.set(x, "scrollSpyOnce", value.asInstanceOf[js.Any])
+      
+      inline def setScrollSpyOnceUndefined: Self = StObject.set(x, "scrollSpyOnce", js.undefined)
       
       inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       

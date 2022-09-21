@@ -8,11 +8,11 @@ trait ActionClient extends StObject {
   
   var actionClient: typings.roslib.mod.ActionClient
   
-  var goalMessage: js.Any
+  var goalMessage: Any
 }
 object ActionClient {
   
-  inline def apply(actionClient: typings.roslib.mod.ActionClient, goalMessage: js.Any): ActionClient = {
+  inline def apply(actionClient: typings.roslib.mod.ActionClient, goalMessage: Any): ActionClient = {
     val __obj = js.Dynamic.literal(actionClient = actionClient.asInstanceOf[js.Any], goalMessage = goalMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionClient]
   }
@@ -21,6 +21,6 @@ object ActionClient {
     
     inline def setActionClient(value: typings.roslib.mod.ActionClient): Self = StObject.set(x, "actionClient", value.asInstanceOf[js.Any])
     
-    inline def setGoalMessage(value: js.Any): Self = StObject.set(x, "goalMessage", value.asInstanceOf[js.Any])
+    inline def setGoalMessage(value: Any): Self = StObject.set(x, "goalMessage", value.asInstanceOf[js.Any])
   }
 }

@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.Script")
 @js.native
-/* private */ class Script ()
+/* private */ open class Script ()
   extends StObject
      with typings.activexOffice.Office.Script {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
@@ -38,11 +38,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotScript_typekey: typings.activexOffice.Office.Script = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var ScriptText: String = js.native
   
   /* CompleteClass */
-  override val Shape: js.Any = js.native
+  override val Shape: Any = js.native
 }

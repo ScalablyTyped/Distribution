@@ -30,19 +30,16 @@ trait PageToken extends StObject {
   
   /**
     * The maximum number of results to return. Note that the number of results returned may be less than this value even if there are more available results. To fetch all results,
-    * clients must continue calling this method repeatedly until the response no longer contains a `next_page_token`. If unspecified, defaults to 200 for `View.BASIC` and to 50 for
-    * `View.FULL`. Must not be greater than 1000 for `View.BASIC` or 500 for `View.FULL`.
+    * clients must continue calling this method repeatedly until the response no longer contains a `next_page_token`. If unspecified, defaults to 200 for `GroupView.BASIC` and to 50
+    * for `GroupView.FULL`. Must not be greater than 1000 for `GroupView.BASIC` or 500 for `GroupView.FULL`.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** The `next_page_token` value returned from a previous list request, if any. */
+  /** The `next_page_token` value returned from a previous search request, if any. */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. The parent resource under which to list all `Group`s. Must be of the form `identitysources/{identity_source_id}` for external- identity-mapped groups or
-    * `customers/{customer_id}` for Google Groups.
-    */
-  var parent: js.UndefOr[String] = js.undefined
+  /** Required. The parent `Group` resource under which to lookup the `Membership` name. Must be of the form `groups/{group}`. */
+  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -61,8 +58,8 @@ trait PageToken extends StObject {
 }
 object PageToken {
   
-  inline def apply(): PageToken = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(parent: String): PageToken = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageToken]
   }
   
@@ -105,8 +102,6 @@ object PageToken {
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
-    
-    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

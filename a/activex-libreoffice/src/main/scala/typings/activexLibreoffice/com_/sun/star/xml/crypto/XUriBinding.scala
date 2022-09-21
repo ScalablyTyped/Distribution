@@ -35,7 +35,7 @@ object XUriBinding {
   inline def apply(
     acquire: () => Unit,
     getUriBinding: String => XInputStream,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setUriBinding: (String, XInputStream) => Unit
   ): XUriBinding = {

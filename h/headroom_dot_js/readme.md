@@ -1,7 +1,7 @@
 
 # Scala.js typings for headroom_dot_js
 
-Typings are for version 0.11
+Typings are for version 0.12
 
 ## Library description:
 Give your page some headroom. Hide your header until you need it
@@ -10,10 +10,10 @@ Give your page some headroom. Hide your header until you need it
 | ------------------ | :-------------: |
 | Full name          | headroom.js |
 | Keywords           | header, fixed, scroll, menu |
-| # releases         | 8 |
-| # dependents       | 28 |
-| # downloads        | 1355631 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 95652.0 |
+| # stars            | 10844.0 |
 
 ## Links
 - [Homepage](http://wicky.nillia.ms/headroom.js)

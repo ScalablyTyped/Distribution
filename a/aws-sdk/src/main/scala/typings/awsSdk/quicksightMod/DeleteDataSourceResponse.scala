@@ -12,12 +12,12 @@ trait DeleteDataSourceResponse extends StObject {
   var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
-    * The ID of the data source. This ID is unique per AWS Region for each AWS account.
+    * The ID of the data source. This ID is unique per Amazon Web Services Region for each Amazon Web Services account.
     */
   var DataSourceId: js.UndefOr[ResourceId] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   

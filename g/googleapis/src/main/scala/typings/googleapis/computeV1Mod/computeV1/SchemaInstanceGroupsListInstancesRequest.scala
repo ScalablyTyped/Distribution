@@ -7,11 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaInstanceGroupsListInstancesRequest extends StObject {
   
   /**
-    * A filter for the state of the instances in the instance group. Valid
-    * options are ALL or RUNNING. If you do not specify this parameter the list
-    * includes all instances regardless of their state.
+    * A filter for the state of the instances in the instance group. Valid options are ALL or RUNNING. If you do not specify this parameter the list includes all instances regardless of their state.
     */
-  var instanceState: js.UndefOr[String] = js.undefined
+  var instanceState: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaInstanceGroupsListInstancesRequest {
   
@@ -23,6 +21,8 @@ object SchemaInstanceGroupsListInstancesRequest {
   extension [Self <: SchemaInstanceGroupsListInstancesRequest](x: Self) {
     
     inline def setInstanceState(value: String): Self = StObject.set(x, "instanceState", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceStateNull: Self = StObject.set(x, "instanceState", null)
     
     inline def setInstanceStateUndefined: Self = StObject.set(x, "instanceState", js.undefined)
   }

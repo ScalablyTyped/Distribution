@@ -1,31 +1,31 @@
 package typings.styledComponents.anon
 
-import typings.react.mod.ComponentType
+import typings.styledComponents.distTypesMod.AnyComponent
+import typings.styledComponents.distTypesMod.StyledTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait As[C /* <: String | ComponentType[js.Any] */] extends StObject {
+trait As[ActualComponent /* <: StyledTarget */] extends StObject {
   
-  var as: js.UndefOr[C] = js.undefined
+  @JSName("$as")
+  var $as: ActualComponent
   
-  var forwardedAs: js.UndefOr[C] = js.undefined
+  var as: js.UndefOr[AnyComponent[Any]] = js.undefined
 }
 object As {
   
-  inline def apply[C /* <: String | ComponentType[js.Any] */](): As[C] = {
-    val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[As[C]]
+  inline def apply[ActualComponent /* <: StyledTarget */]($as: ActualComponent): As[ActualComponent] = {
+    val __obj = js.Dynamic.literal($as = $as.asInstanceOf[js.Any])
+    __obj.asInstanceOf[As[ActualComponent]]
   }
   
-  extension [Self <: As[?], C /* <: String | ComponentType[js.Any] */](x: Self & As[C]) {
+  extension [Self <: As[?], ActualComponent /* <: StyledTarget */](x: Self & As[ActualComponent]) {
     
-    inline def setAs(value: C): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def set$as(value: ActualComponent): Self = StObject.set(x, "$as", value.asInstanceOf[js.Any])
+    
+    inline def setAs(value: AnyComponent[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
-    
-    inline def setForwardedAs(value: C): Self = StObject.set(x, "forwardedAs", value.asInstanceOf[js.Any])
-    
-    inline def setForwardedAsUndefined: Self = StObject.set(x, "forwardedAs", js.undefined)
   }
 }

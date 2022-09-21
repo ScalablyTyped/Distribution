@@ -12,7 +12,7 @@ trait BackgroundAudioError extends StObject {
     * | - | - | - |
     * | 10001 |  | 系统错误 |
     * | 10002 |  | 网络错误 |
-    * | 10003 |  | 文件错误 |
+    * | 10003 |  | 文件错误，请检查是否responseheader是否缺少Content-Length |
     * | 10004 |  | 格式错误 |
     * | -1 |  | 未知错误 | */ var errCode: Double
   
@@ -22,7 +22,7 @@ trait BackgroundAudioError extends StObject {
     * | - | - | - |
     * | 10001 |  | 系统错误 |
     * | 10002 |  | 网络错误 |
-    * | 10003 |  | 文件错误 |
+    * | 10003 |  | 文件错误，请检查是否responseheader是否缺少Content-Length |
     * | 10004 |  | 格式错误 |
     * | -1 |  | 未知错误 | */ var errMsg: String
 }

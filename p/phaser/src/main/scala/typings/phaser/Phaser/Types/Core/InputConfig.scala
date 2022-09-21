@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.Types.Core
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait InputConfig extends StObject {
   /**
     * The maximum number of touch pointers. See {@link Phaser.Input.InputManager#pointers}.
     */
-  var activePointers: js.UndefOr[integer] = js.undefined
+  var activePointers: js.UndefOr[Double] = js.undefined
   
   /**
     * Gamepad input configuration. `true` enables gamepad input.
@@ -51,7 +50,7 @@ object InputConfig {
   
   extension [Self <: InputConfig](x: Self) {
     
-    inline def setActivePointers(value: integer): Self = StObject.set(x, "activePointers", value.asInstanceOf[js.Any])
+    inline def setActivePointers(value: Double): Self = StObject.set(x, "activePointers", value.asInstanceOf[js.Any])
     
     inline def setActivePointersUndefined: Self = StObject.set(x, "activePointers", js.undefined)
     

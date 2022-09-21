@@ -11,5 +11,5 @@ object transitionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(properties: (String | js.Array[String])*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(properties.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(properties: (String | js.Array[String])*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(properties.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Styles]
 }

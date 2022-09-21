@@ -9,10 +9,10 @@ trait DelegatedService extends StObject {
   /**
     * The date that the account became a delegated administrator for this service. 
     */
-  var DelegationEnabledDate: js.UndefOr[Timestamp] = js.undefined
+  var DelegationEnabledDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The name of a service that can request an operation for the specified service. This is typically in the form of a URL, such as:  servicename.amazonaws.com.
+    * The name of an Amazon Web Services service that can request an operation for the specified service. This is typically in the form of a URL, such as:  servicename.amazonaws.com.
     */
   var ServicePrincipal: js.UndefOr[typings.awsSdk.organizationsMod.ServicePrincipal] = js.undefined
 }
@@ -25,7 +25,7 @@ object DelegatedService {
   
   extension [Self <: DelegatedService](x: Self) {
     
-    inline def setDelegationEnabledDate(value: Timestamp): Self = StObject.set(x, "DelegationEnabledDate", value.asInstanceOf[js.Any])
+    inline def setDelegationEnabledDate(value: js.Date): Self = StObject.set(x, "DelegationEnabledDate", value.asInstanceOf[js.Any])
     
     inline def setDelegationEnabledDateUndefined: Self = StObject.set(x, "DelegationEnabledDate", js.undefined)
     

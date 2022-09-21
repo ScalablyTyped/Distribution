@@ -13,7 +13,7 @@ object projectImportExportMod {
   
   @JSImport("gitlab/dist/types/core/services/ProjectImportExport", "ProjectImportExport")
   @js.native
-  class ProjectImportExport () extends BaseService {
+  open class ProjectImportExport () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def download(projectId: String): js.Promise[GetResponse] = js.native

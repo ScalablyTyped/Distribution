@@ -35,8 +35,8 @@ object reactNativeVideoStrings {
   inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait horizontal extends StObject
-  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  sealed trait duck extends StObject
+  inline def duck: duck = "duck".asInstanceOf[duck]
   
   @js.native
   sealed trait ignore extends StObject
@@ -47,12 +47,20 @@ object reactNativeVideoStrings {
   inline def index: index = "index".asInstanceOf[index]
   
   @js.native
+  sealed trait inherit extends StObject
+  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
+  
+  @js.native
   sealed trait landscape extends StObject
   inline def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
   sealed trait language extends StObject
   inline def language: language = "language".asInstanceOf[language]
+  
+  @js.native
+  sealed trait mix extends StObject
+  inline def mix: mix = "mix".asInstanceOf[mix]
   
   @js.native
   sealed trait none extends StObject

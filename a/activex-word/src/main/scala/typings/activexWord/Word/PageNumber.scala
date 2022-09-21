@@ -20,7 +20,7 @@ trait PageNumber extends StObject {
   
   val Index: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Select(): Unit
   
@@ -37,7 +37,7 @@ object PageNumber {
     Cut: () => Unit,
     Delete: () => Unit,
     Index: Double,
-    Parent: js.Any,
+    Parent: Any,
     Select: () => Unit,
     WordDotPageNumber_typekey: PageNumber
   ): PageNumber = {
@@ -62,7 +62,7 @@ object PageNumber {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     

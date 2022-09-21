@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Accelerometer")
 @js.native
-class Accelerometer protected () extends StObject {
+open class Accelerometer protected () extends StObject {
   def this(option: AccelerometerAnalogOption) = this()
   def this(option: AccelerometerGeneralOption) = this()
   def this(option: AccelerometerMMA7361Option) = this()
@@ -30,7 +30,7 @@ class Accelerometer protected () extends StObject {
   @JSName("on")
   def on_change(event: change, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
-  def on_data(event: data, cb: js.Function1[/* freq */ js.Any, Unit]): this.type = js.native
+  def on_data(event: data, cb: js.Function1[/* freq */ Any, Unit]): this.type = js.native
   
   val orientation: Double = js.native
   

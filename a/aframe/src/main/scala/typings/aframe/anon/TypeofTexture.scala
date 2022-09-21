@@ -4,13 +4,13 @@ import org.scalablytyped.runtime.Instantiable10
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
-import typings.three.constantsMod.Mapping
-import typings.three.constantsMod.PixelFormat
-import typings.three.constantsMod.TextureDataType
-import typings.three.constantsMod.TextureEncoding
-import typings.three.constantsMod.TextureFilter
-import typings.three.constantsMod.Wrapping
 import typings.three.mod.Texture
+import typings.three.srcConstantsMod.Mapping
+import typings.three.srcConstantsMod.PixelFormat
+import typings.three.srcConstantsMod.TextureDataType
+import typings.three.srcConstantsMod.TextureEncoding
+import typings.three.srcConstantsMod.TextureFilter
+import typings.three.srcConstantsMod.Wrapping
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +32,7 @@ trait TypeofTexture
       Texture
     ] {
   
-  var DEFAULT_IMAGE: js.Any = js.native
+  var DEFAULT_IMAGE: Any = js.native
   
-  var DEFAULT_MAPPING: js.Any = js.native
+  var DEFAULT_MAPPING: Any = js.native
 }

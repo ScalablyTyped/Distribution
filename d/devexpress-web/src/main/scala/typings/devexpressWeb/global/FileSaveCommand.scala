@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("FileSaveCommand")
 @js.native
-class FileSaveCommand ()
+open class FileSaveCommand ()
   extends StObject
      with typings.devexpressWeb.FileSaveCommand {
   

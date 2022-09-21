@@ -15,19 +15,19 @@ trait Attachment extends StObject {
   /** The content type (MIME type) of the file. */
   var contentType: js.UndefOr[String] = js.undefined
   
-  /** Output only. The download URL which should be used to allow a human user to download the attachment. Bots should not use this URL to download attachment content. */
+  /** Output only. The download URL which should be used to allow a human user to download the attachment. Chat apps should not use this URL to download attachment content. */
   var downloadUri: js.UndefOr[String] = js.undefined
   
   /** A reference to the drive attachment. This is used with the Drive API. */
   var driveDataRef: js.UndefOr[DriveDataRef] = js.undefined
   
-  /** Resource name of the attachment, in the form "spaces/∗/messages/∗/attachments/ *". */
+  /** Resource name of the attachment, in the form "spaces/ *‍/messages/ *‍/attachments/ *". */
   var name: js.UndefOr[String] = js.undefined
   
   /** The source of the attachment. */
   var source: js.UndefOr[String] = js.undefined
   
-  /** Output only. The thumbnail URL which should be used to preview the attachment to a human user. Bots should not use this URL to download attachment content. */
+  /** Output only. The thumbnail URL which should be used to preview the attachment to a human user. Chat apps should not use this URL to download attachment content. */
   var thumbnailUri: js.UndefOr[String] = js.undefined
 }
 object Attachment {

@@ -41,7 +41,7 @@ object XPrimitive2DRenderer {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     rasterize: (SeqEquiv[XPrimitive2D], SeqEquiv[PropertyValue], Double, Double, RealRectangle2D, Double) => XBitmap,
     release: () => Unit
   ): XPrimitive2DRenderer = {

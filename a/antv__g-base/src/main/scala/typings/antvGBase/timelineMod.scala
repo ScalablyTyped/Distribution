@@ -11,7 +11,7 @@ object timelineMod {
   
   @JSImport("@antv/g-base/lib/animate/timeline", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Timeline {
     /**
@@ -27,7 +27,7 @@ object timelineMod {
     /**
       * 增加动画元素
       */
-    def addAnimator(shape: js.Any): Unit = js.native
+    def addAnimator(shape: Any): Unit = js.native
     
     /**
       * 执行动画的元素列表
@@ -65,7 +65,7 @@ object timelineMod {
     /**
       * 移除动画元素
       */
-    def removeAnimator(index: js.Any): Unit = js.native
+    def removeAnimator(index: Any): Unit = js.native
     
     /**
       * 停止定时器

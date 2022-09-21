@@ -12,7 +12,7 @@ trait ActionSheet
   
   def close(): Unit = js.native
   
-  def open(target: JQuery, context: js.Any): Unit = js.native
+  def open(target: JQuery, context: Any): Unit = js.native
   
   @JSName("options")
   var options_ActionSheet: ActionSheetOptions = js.native

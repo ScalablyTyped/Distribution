@@ -11,49 +11,56 @@ trait OfflineAudioContext
   extends StObject
      with BaseAudioContext {
   
+  /* standard dom */
   @JSName("addEventListener")
   def addEventListener_complete(
     `type`: complete,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, js.Any]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_complete(
     `type`: complete,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_complete(
     `type`: complete,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val length: Double = js.native
   
-  var oncomplete: (js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, js.Any]) | Null = js.native
+  /* standard dom */
+  var oncomplete: (js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, Any]) | Null = js.native
   
+  /* standard dom */
   @JSName("removeEventListener")
   def removeEventListener_complete(
     `type`: complete,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, js.Any]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_complete(
     `type`: complete,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_complete(
     `type`: complete,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ OfflineAudioCompletionEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   def resume(): js.Promise[Unit] = js.native
   
+  /* standard dom */
   def startRendering(): js.Promise[AudioBuffer] = js.native
   
+  /* standard dom */
   def suspend(suspendTime: Double): js.Promise[Unit] = js.native
 }

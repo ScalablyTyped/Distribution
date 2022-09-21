@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AzureCredentials extends StObject {
   
   /**
-    * Required. Azure shared access signature. (see [Grant limited access to Azure Storage resources using shared access signatures
-    * (SAS)](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview)).
+    * Required. Azure shared access signature (SAS). For more information about SAS, see [Grant limited access to Azure Storage resources using shared access signatures
+    * (SAS)](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview).
     */
   var sasToken: js.UndefOr[String] = js.undefined
 }

@@ -10,10 +10,10 @@ Retrieve the common prefix across multiple strings
 | ------------------ | :-------------: |
 | Full name          | common-prefix |
 | Keywords           | common, prefix, string, start, first, same |
-| # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 904968 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 102751.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/hughsk/common-prefix)

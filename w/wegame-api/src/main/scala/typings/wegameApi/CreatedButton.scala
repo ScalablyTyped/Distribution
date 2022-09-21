@@ -15,9 +15,9 @@ trait CreatedButton extends StObject {
   var image: String
   
   // res参数会被具体按钮的API定义覆盖为具体信息
-  def offTap(callback: js.Function1[/* res */ js.UndefOr[js.Any], Unit]): Unit
+  def offTap(callback: js.Function1[/* res */ js.UndefOr[Any], Unit]): Unit
   
-  def onTap(callback: js.Function1[/* res */ js.UndefOr[js.Any], Unit]): Unit
+  def onTap(callback: js.Function1[/* res */ js.UndefOr[Any], Unit]): Unit
   
   def show(): Unit
   
@@ -33,8 +33,8 @@ object CreatedButton {
     destroy: () => Unit,
     hide: () => Unit,
     image: String,
-    offTap: js.Function1[/* res */ js.UndefOr[js.Any], Unit] => Unit,
-    onTap: js.Function1[/* res */ js.UndefOr[js.Any], Unit] => Unit,
+    offTap: js.Function1[/* res */ js.UndefOr[Any], Unit] => Unit,
+    onTap: js.Function1[/* res */ js.UndefOr[Any], Unit] => Unit,
     show: () => Unit,
     style: ButtonStyle,
     text: String,
@@ -53,9 +53,9 @@ object CreatedButton {
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    inline def setOffTap(value: js.Function1[/* res */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "offTap", js.Any.fromFunction1(value))
+    inline def setOffTap(value: js.Function1[/* res */ js.UndefOr[Any], Unit] => Unit): Self = StObject.set(x, "offTap", js.Any.fromFunction1(value))
     
-    inline def setOnTap(value: js.Function1[/* res */ js.UndefOr[js.Any], Unit] => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
+    inline def setOnTap(value: js.Function1[/* res */ js.UndefOr[Any], Unit] => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
     
     inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     

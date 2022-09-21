@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // 6. Network related functions
 trait NetworkInterfacesData extends StObject {
   
-  var carrier_changes: Double
+  var carrierChanges: Double
   
   var dhcp: Boolean
   
@@ -48,7 +48,7 @@ trait NetworkInterfacesData extends StObject {
 object NetworkInterfacesData {
   
   inline def apply(
-    carrier_changes: Double,
+    carrierChanges: Double,
     dhcp: Boolean,
     dnsSuffix: String,
     duplex: String,
@@ -68,14 +68,14 @@ object NetworkInterfacesData {
     `type`: String,
     virtual: Boolean
   ): NetworkInterfacesData = {
-    val __obj = js.Dynamic.literal(carrier_changes = carrier_changes.asInstanceOf[js.Any], dhcp = dhcp.asInstanceOf[js.Any], dnsSuffix = dnsSuffix.asInstanceOf[js.Any], duplex = duplex.asInstanceOf[js.Any], ieee8021xAuth = ieee8021xAuth.asInstanceOf[js.Any], ieee8021xState = ieee8021xState.asInstanceOf[js.Any], iface = iface.asInstanceOf[js.Any], ifaceName = ifaceName.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], ip4 = ip4.asInstanceOf[js.Any], ip4subnet = ip4subnet.asInstanceOf[js.Any], ip6 = ip6.asInstanceOf[js.Any], ip6subnet = ip6subnet.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], mtu = mtu.asInstanceOf[js.Any], operstate = operstate.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], virtual = virtual.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(carrierChanges = carrierChanges.asInstanceOf[js.Any], dhcp = dhcp.asInstanceOf[js.Any], dnsSuffix = dnsSuffix.asInstanceOf[js.Any], duplex = duplex.asInstanceOf[js.Any], ieee8021xAuth = ieee8021xAuth.asInstanceOf[js.Any], ieee8021xState = ieee8021xState.asInstanceOf[js.Any], iface = iface.asInstanceOf[js.Any], ifaceName = ifaceName.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], ip4 = ip4.asInstanceOf[js.Any], ip4subnet = ip4subnet.asInstanceOf[js.Any], ip6 = ip6.asInstanceOf[js.Any], ip6subnet = ip6subnet.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], mtu = mtu.asInstanceOf[js.Any], operstate = operstate.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], virtual = virtual.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterfacesData]
   }
   
   extension [Self <: NetworkInterfacesData](x: Self) {
     
-    inline def setCarrier_changes(value: Double): Self = StObject.set(x, "carrier_changes", value.asInstanceOf[js.Any])
+    inline def setCarrierChanges(value: Double): Self = StObject.set(x, "carrierChanges", value.asInstanceOf[js.Any])
     
     inline def setDhcp(value: Boolean): Self = StObject.set(x, "dhcp", value.asInstanceOf[js.Any])
     

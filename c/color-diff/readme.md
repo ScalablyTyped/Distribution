@@ -1,7 +1,7 @@
 
 # Scala.js typings for color-diff
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 Implemets the CIEDE2000 color difference algorithm, conversion between RGB and LAB color and mapping all colors in palette X to the closest or most different color in palette Y based on the CIEDE2000 difference.
@@ -10,10 +10,10 @@ Implemets the CIEDE2000 color difference algorithm, conversion between RGB and L
 | ------------------ | :-------------: |
 | Full name          | color-diff |
 | Keywords           | color, diff, color-diff, pallette, closest, convert, conversion, CIEDE2000, ciede2000 |
-| # releases         | 2 |
-| # dependents       | 28 |
-| # downloads        | 6446887 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 530581.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/markusn/color-diff#readme)

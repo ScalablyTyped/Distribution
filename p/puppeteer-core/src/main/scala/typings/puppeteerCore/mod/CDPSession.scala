@@ -4,12 +4,29 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("puppeteer-core/lib/cjs/puppeteer/api-docs-entry", "CDPSession")
+@JSImport("puppeteer-core", "CDPSession")
 @js.native
-class CDPSession protected ()
-  extends typings.puppeteerCore.connectionMod.CDPSession {
+open class CDPSession () extends EventEmitter {
+  
+  /* Excluded from this release type: __constructor */
+  def connection(): js.UndefOr[Connection] = js.native
+  
   /**
-    * @internal
+    * Detaches the cdpSession from the target. Once detached, the cdpSession object
+    * won't emit any events and can't be used to send messages.
     */
-  def this(connection: typings.puppeteerCore.connectionMod.Connection, targetType: String, sessionId: String) = this()
+  def detach(): js.Promise[Unit] = js.native
+  
+  /**
+    * Returns the session's id.
+    */
+  def id(): String = js.native
+  
+  @JSName("send")
+  def send_paramsType[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 536 */ Any */](
+    method: T,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param paramArgs because its type ProtocolMapping.Commands[T]['paramsType'] is not an array type */ paramArgs: /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['paramsType'] */ js.Any
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Commands[T]['returnType'] */ js.Any
+  ] = js.native
 }

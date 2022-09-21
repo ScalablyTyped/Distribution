@@ -8,7 +8,7 @@ object mainMod {
   
   @JSImport("wonder-frp/dist/commonjs/core/Main", "Main")
   @js.native
-  class Main () extends StObject
+  open class Main () extends StObject
   /* static members */
   object Main {
     

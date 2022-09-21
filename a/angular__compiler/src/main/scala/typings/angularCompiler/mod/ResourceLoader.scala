@@ -6,5 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "ResourceLoader")
 @js.native
-class ResourceLoader ()
-  extends typings.angularCompiler.compilerMod.ResourceLoader
+abstract class ResourceLoader () extends StObject {
+  
+  def get(url: String): js.Promise[String] | String = js.native
+}

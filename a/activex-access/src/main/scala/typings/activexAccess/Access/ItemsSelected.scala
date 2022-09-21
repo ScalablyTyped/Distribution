@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ItemsSelected extends StObject {
   
-  def apply(Index: js.Any): Double = js.native
+  def apply(Index: Any): Double = js.native
   
   val Count: Double = js.native
   
   def IsMemberSafe(dispid: Double): Boolean = js.native
   
-  def Item(Index: js.Any): Double = js.native
+  def Item(Index: Any): Double = js.native
 }

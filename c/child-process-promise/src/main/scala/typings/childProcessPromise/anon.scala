@@ -3,16 +3,16 @@ package typings.childProcessPromise
 import typings.childProcessPromise.childProcessPromiseStrings.buffer
 import typings.childProcessPromise.childProcessPromiseStrings.stderr
 import typings.childProcessPromise.childProcessPromiseStrings.stdout
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.BufferEncoding
+import typings.node.childProcessMod.IOType
 import typings.node.childProcessMod.SerializationType
 import typings.node.childProcessMod.StdioOptions
-import typings.node.nodeStrings.ignore
-import typings.node.nodeStrings.inherit
+import typings.node.nodeStreamMod.Stream
 import typings.node.nodeStrings.ipc
-import typings.node.nodeStrings.pipe
+import typings.node.nodeUrlMod.URL
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.processMod.global.NodeJS.Signals
-import typings.node.streamMod.Stream
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,10 +23,10 @@ object anon {
   trait ReadonlyOptionsExecFileOp extends StObject {
     
     val capture: js.UndefOr[
-        (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
+        (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
       ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.undefined
+    val cwd: js.UndefOr[String | URL] = js.undefined
     
     val encoding: js.UndefOr[buffer | Null] = js.undefined
     
@@ -39,6 +39,8 @@ object anon {
     val maxBuffer: js.UndefOr[Double] = js.undefined
     
     val shell: js.UndefOr[Boolean | String] = js.undefined
+    
+    val signal: js.UndefOr[AbortSignal] = js.undefined
     
     val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
@@ -59,13 +61,13 @@ object anon {
     
     extension [Self <: ReadonlyOptionsExecFileOp](x: Self) {
       
-      inline def setCapture(value: (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      inline def setCaptureVarargs(value: (stdout | stderr | js.Any)*): Self = StObject.set(x, "capture", js.Array(value :_*))
+      inline def setCaptureVarargs(value: (stdout | stderr | Any)*): Self = StObject.set(x, "capture", js.Array(value*))
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
@@ -95,11 +97,15 @@ object anon {
       
       inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
       
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      
       inline def setSuccessfulExitCodes(value: js.Array[Double]): Self = StObject.set(x, "successfulExitCodes", value.asInstanceOf[js.Any])
       
       inline def setSuccessfulExitCodesUndefined: Self = StObject.set(x, "successfulExitCodes", js.undefined)
       
-      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value :_*))
+      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value*))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -123,10 +129,10 @@ object anon {
   trait ReadonlyOptionsExecFileOpCapture extends StObject {
     
     val capture: js.UndefOr[
-        (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
+        (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
       ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.undefined
+    val cwd: js.UndefOr[String | URL] = js.undefined
     
     val encoding: BufferEncoding
     
@@ -139,6 +145,8 @@ object anon {
     val maxBuffer: js.UndefOr[Double] = js.undefined
     
     val shell: js.UndefOr[Boolean | String] = js.undefined
+    
+    val signal: js.UndefOr[AbortSignal] = js.undefined
     
     val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
@@ -159,13 +167,13 @@ object anon {
     
     extension [Self <: ReadonlyOptionsExecFileOpCapture](x: Self) {
       
-      inline def setCapture(value: (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      inline def setCaptureVarargs(value: (stdout | stderr | js.Any)*): Self = StObject.set(x, "capture", js.Array(value :_*))
+      inline def setCaptureVarargs(value: (stdout | stderr | Any)*): Self = StObject.set(x, "capture", js.Array(value*))
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
@@ -191,11 +199,15 @@ object anon {
       
       inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
       
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      
       inline def setSuccessfulExitCodes(value: js.Array[Double]): Self = StObject.set(x, "successfulExitCodes", value.asInstanceOf[js.Any])
       
       inline def setSuccessfulExitCodesUndefined: Self = StObject.set(x, "successfulExitCodes", js.undefined)
       
-      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value :_*))
+      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value*))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -219,10 +231,10 @@ object anon {
   trait ReadonlyOptionsExecOption extends StObject {
     
     val capture: js.UndefOr[
-        (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
+        (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
       ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.undefined
+    val cwd: js.UndefOr[String | URL] = js.undefined
     
     val env: js.UndefOr[ProcessEnv] = js.undefined
     
@@ -233,6 +245,8 @@ object anon {
     val maxBuffer: js.UndefOr[Double] = js.undefined
     
     val shell: js.UndefOr[String] = js.undefined
+    
+    val signal: js.UndefOr[AbortSignal] = js.undefined
     
     val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
@@ -251,13 +265,13 @@ object anon {
     
     extension [Self <: ReadonlyOptionsExecOption](x: Self) {
       
-      inline def setCapture(value: (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      inline def setCaptureVarargs(value: (stdout | stderr | js.Any)*): Self = StObject.set(x, "capture", js.Array(value :_*))
+      inline def setCaptureVarargs(value: (stdout | stderr | Any)*): Self = StObject.set(x, "capture", js.Array(value*))
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
@@ -281,11 +295,15 @@ object anon {
       
       inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
       
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      
       inline def setSuccessfulExitCodes(value: js.Array[Double]): Self = StObject.set(x, "successfulExitCodes", value.asInstanceOf[js.Any])
       
       inline def setSuccessfulExitCodesUndefined: Self = StObject.set(x, "successfulExitCodes", js.undefined)
       
-      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value :_*))
+      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value*))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -305,10 +323,10 @@ object anon {
   trait ReadonlyOptionsForkOption extends StObject {
     
     val capture: js.UndefOr[
-        (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
+        (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
       ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.undefined
+    val cwd: js.UndefOr[String | URL] = js.undefined
     
     val detached: js.UndefOr[Boolean] = js.undefined
     
@@ -320,13 +338,19 @@ object anon {
     
     val gid: js.UndefOr[Double] = js.undefined
     
+    val killSignal: js.UndefOr[Signals | Double] = js.undefined
+    
     val serialization: js.UndefOr[SerializationType] = js.undefined
+    
+    val signal: js.UndefOr[AbortSignal] = js.undefined
     
     val silent: js.UndefOr[Boolean] = js.undefined
     
     val stdio: js.UndefOr[StdioOptions] = js.undefined
     
     val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
+    
+    val timeout: js.UndefOr[Double] = js.undefined
     
     val uid: js.UndefOr[Double] = js.undefined
     
@@ -341,13 +365,13 @@ object anon {
     
     extension [Self <: ReadonlyOptionsForkOption](x: Self) {
       
-      inline def setCapture(value: (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      inline def setCaptureVarargs(value: (stdout | stderr | js.Any)*): Self = StObject.set(x, "capture", js.Array(value :_*))
+      inline def setCaptureVarargs(value: (stdout | stderr | Any)*): Self = StObject.set(x, "capture", js.Array(value*))
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
@@ -363,7 +387,7 @@ object anon {
       
       inline def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
       
-      inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value :_*))
+      inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value*))
       
       inline def setExecPath(value: String): Self = StObject.set(x, "execPath", value.asInstanceOf[js.Any])
       
@@ -373,9 +397,17 @@ object anon {
       
       inline def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
       
+      inline def setKillSignal(value: Signals | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
+      
+      inline def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
+      
       inline def setSerialization(value: SerializationType): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
       
       inline def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
+      
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
@@ -385,13 +417,17 @@ object anon {
       
       inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
       
-      inline def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+      inline def setStdioVarargs(value: (js.UndefOr[IOType | ipc | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value*))
       
       inline def setSuccessfulExitCodes(value: js.Array[Double]): Self = StObject.set(x, "successfulExitCodes", value.asInstanceOf[js.Any])
       
       inline def setSuccessfulExitCodesUndefined: Self = StObject.set(x, "successfulExitCodes", js.undefined)
       
-      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value :_*))
+      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value*))
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
       inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
@@ -409,10 +445,10 @@ object anon {
     val argv0: js.UndefOr[String] = js.undefined
     
     val capture: js.UndefOr[
-        (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
+        (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
       ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.undefined
+    val cwd: js.UndefOr[String | URL] = js.undefined
     
     val detached: js.UndefOr[Boolean] = js.undefined
     
@@ -420,9 +456,13 @@ object anon {
     
     val gid: js.UndefOr[Double] = js.undefined
     
+    val killSignal: js.UndefOr[Signals | Double] = js.undefined
+    
     val serialization: js.UndefOr[SerializationType] = js.undefined
     
     val shell: js.UndefOr[Boolean | String] = js.undefined
+    
+    val signal: js.UndefOr[AbortSignal] = js.undefined
     
     val stdio: js.UndefOr[StdioOptions] = js.undefined
     
@@ -449,13 +489,13 @@ object anon {
       
       inline def setArgv0Undefined: Self = StObject.set(x, "argv0", js.undefined)
       
-      inline def setCapture(value: (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      inline def setCaptureVarargs(value: (stdout | stderr | js.Any)*): Self = StObject.set(x, "capture", js.Array(value :_*))
+      inline def setCaptureVarargs(value: (stdout | stderr | Any)*): Self = StObject.set(x, "capture", js.Array(value*))
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
@@ -471,6 +511,10 @@ object anon {
       
       inline def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
       
+      inline def setKillSignal(value: Signals | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
+      
+      inline def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
+      
       inline def setSerialization(value: SerializationType): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
       
       inline def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
@@ -479,17 +523,21 @@ object anon {
       
       inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
       
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      
       inline def setStdio(value: StdioOptions): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
       
       inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
       
-      inline def setStdioVarargs(value: (js.UndefOr[pipe | ipc | ignore | inherit | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value :_*))
+      inline def setStdioVarargs(value: (js.UndefOr[IOType | ipc | Stream | Double | Null])*): Self = StObject.set(x, "stdio", js.Array(value*))
       
       inline def setSuccessfulExitCodes(value: js.Array[Double]): Self = StObject.set(x, "successfulExitCodes", value.asInstanceOf[js.Any])
       
       inline def setSuccessfulExitCodesUndefined: Self = StObject.set(x, "successfulExitCodes", js.undefined)
       
-      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value :_*))
+      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value*))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -509,14 +557,14 @@ object anon {
     }
   }
   
-  /* Inlined std.Readonly<child-process-promise.child-process-promise.Options & {  encoding :node.BufferEncoding | undefined} & node.child_process.ExecOptions> */
+  /* Inlined std.Readonly<child-process-promise.child-process-promise.Options & {  encoding :node.buffer.<global>.BufferEncoding | undefined} & node.child_process.ExecOptions> */
   trait ReadonlyOptionsencodingBu_ extends StObject {
     
     val capture: js.UndefOr[
-        (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
+        (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
       ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.undefined
+    val cwd: js.UndefOr[String | URL] = js.undefined
     
     val encoding: js.UndefOr[BufferEncoding] = js.undefined
     
@@ -529,6 +577,8 @@ object anon {
     val maxBuffer: js.UndefOr[Double] = js.undefined
     
     val shell: js.UndefOr[String] = js.undefined
+    
+    val signal: js.UndefOr[AbortSignal] = js.undefined
     
     val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
@@ -547,13 +597,13 @@ object anon {
     
     extension [Self <: ReadonlyOptionsencodingBu_](x: Self) {
       
-      inline def setCapture(value: (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      inline def setCaptureVarargs(value: (stdout | stderr | js.Any)*): Self = StObject.set(x, "capture", js.Array(value :_*))
+      inline def setCaptureVarargs(value: (stdout | stderr | Any)*): Self = StObject.set(x, "capture", js.Array(value*))
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
@@ -581,11 +631,15 @@ object anon {
       
       inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
       
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      
       inline def setSuccessfulExitCodes(value: js.Array[Double]): Self = StObject.set(x, "successfulExitCodes", value.asInstanceOf[js.Any])
       
       inline def setSuccessfulExitCodesUndefined: Self = StObject.set(x, "successfulExitCodes", js.undefined)
       
-      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value :_*))
+      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value*))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -605,10 +659,10 @@ object anon {
   trait ReadonlyOptionsencodingbu extends StObject {
     
     val capture: js.UndefOr[
-        (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
+        (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
       ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.undefined
+    val cwd: js.UndefOr[String | URL] = js.undefined
     
     val encoding: js.UndefOr[buffer | Null] = js.undefined
     
@@ -621,6 +675,8 @@ object anon {
     val maxBuffer: js.UndefOr[Double] = js.undefined
     
     val shell: js.UndefOr[String] = js.undefined
+    
+    val signal: js.UndefOr[AbortSignal] = js.undefined
     
     val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
@@ -639,13 +695,13 @@ object anon {
     
     extension [Self <: ReadonlyOptionsencodingbu](x: Self) {
       
-      inline def setCapture(value: (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      inline def setCaptureVarargs(value: (stdout | stderr | js.Any)*): Self = StObject.set(x, "capture", js.Array(value :_*))
+      inline def setCaptureVarargs(value: (stdout | stderr | Any)*): Self = StObject.set(x, "capture", js.Array(value*))
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
@@ -675,11 +731,15 @@ object anon {
       
       inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
       
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      
       inline def setSuccessfulExitCodes(value: js.Array[Double]): Self = StObject.set(x, "successfulExitCodes", value.asInstanceOf[js.Any])
       
       inline def setSuccessfulExitCodesUndefined: Self = StObject.set(x, "successfulExitCodes", js.undefined)
       
-      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value :_*))
+      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value*))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -699,10 +759,10 @@ object anon {
   trait ReadonlyOptionsencodingst extends StObject {
     
     val capture: js.UndefOr[
-        (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
+        (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
       ] = js.undefined
     
-    val cwd: js.UndefOr[String] = js.undefined
+    val cwd: js.UndefOr[String | URL] = js.undefined
     
     val encoding: js.UndefOr[String] = js.undefined
     
@@ -715,6 +775,8 @@ object anon {
     val maxBuffer: js.UndefOr[Double] = js.undefined
     
     val shell: js.UndefOr[String] = js.undefined
+    
+    val signal: js.UndefOr[AbortSignal] = js.undefined
     
     val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
     
@@ -733,13 +795,13 @@ object anon {
     
     extension [Self <: ReadonlyOptionsencodingst](x: Self) {
       
-      inline def setCapture(value: (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      inline def setCaptureVarargs(value: (stdout | stderr | js.Any)*): Self = StObject.set(x, "capture", js.Array(value :_*))
+      inline def setCaptureVarargs(value: (stdout | stderr | Any)*): Self = StObject.set(x, "capture", js.Array(value*))
       
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
@@ -767,11 +829,15 @@ object anon {
       
       inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
       
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      
       inline def setSuccessfulExitCodes(value: js.Array[Double]): Self = StObject.set(x, "successfulExitCodes", value.asInstanceOf[js.Any])
       
       inline def setSuccessfulExitCodesUndefined: Self = StObject.set(x, "successfulExitCodes", js.undefined)
       
-      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value :_*))
+      inline def setSuccessfulExitCodesVarargs(value: Double*): Self = StObject.set(x, "successfulExitCodes", js.Array(value*))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

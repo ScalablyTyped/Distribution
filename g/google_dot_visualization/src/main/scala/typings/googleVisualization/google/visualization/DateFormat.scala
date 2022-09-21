@@ -1,6 +1,5 @@
 package typings.googleVisualization.google.visualization
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,17 +11,17 @@ trait DateFormat
   /**
     * Returns the formatted value of a given value. This method does not require a DataTable.
     */
-  def formatValue(value: Date): String
+  def formatValue(value: js.Date): String
 }
 object DateFormat {
   
-  inline def apply(format: (DataTable, Double) => Unit, formatValue: Date => String): DateFormat = {
+  inline def apply(format: (DataTable, Double) => Unit, formatValue: js.Date => String): DateFormat = {
     val __obj = js.Dynamic.literal(format = js.Any.fromFunction2(format), formatValue = js.Any.fromFunction1(formatValue))
     __obj.asInstanceOf[DateFormat]
   }
   
   extension [Self <: DateFormat](x: Self) {
     
-    inline def setFormatValue(value: Date => String): Self = StObject.set(x, "formatValue", js.Any.fromFunction1(value))
+    inline def setFormatValue(value: js.Date => String): Self = StObject.set(x, "formatValue", js.Any.fromFunction1(value))
   }
 }

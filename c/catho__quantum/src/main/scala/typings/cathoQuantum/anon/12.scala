@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `12` extends StObject {
   
-  var components: js.UndefOr[ProgressBar] = js.undefined
+  var colors: js.UndefOr[js.Object] = js.undefined
 }
 object `12` {
   
@@ -17,8 +17,8 @@ object `12` {
   
   extension [Self <: `12`](x: Self) {
     
-    inline def setComponents(value: ProgressBar): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Object): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
   }
 }

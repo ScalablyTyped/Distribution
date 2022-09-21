@@ -1,6 +1,5 @@
 package typings.awsSdkClientXrayNode
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +31,7 @@ object typesSamplingStatisticSummaryMod {
     /**
       * <p>The start time of the reporting window.</p>
       */
-    var Timestamp: js.UndefOr[Date | String | Double] = js.undefined
+    var Timestamp: js.UndefOr[js.Date | String | Double] = js.undefined
   }
   object SamplingStatisticSummary {
     
@@ -59,7 +58,7 @@ object typesSamplingStatisticSummaryMod {
       
       inline def setSampledCountUndefined: Self = StObject.set(x, "SampledCount", js.undefined)
       
-      inline def setTimestamp(value: Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date | String | Double): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     }
@@ -73,7 +72,7 @@ object typesSamplingStatisticSummaryMod {
       * <p>The start time of the reporting window.</p>
       */
     @JSName("Timestamp")
-    var Timestamp_UnmarshalledSamplingStatisticSummary: js.UndefOr[Date] = js.undefined
+    var Timestamp_UnmarshalledSamplingStatisticSummary: js.UndefOr[js.Date] = js.undefined
   }
   object UnmarshalledSamplingStatisticSummary {
     
@@ -84,7 +83,7 @@ object typesSamplingStatisticSummaryMod {
     
     extension [Self <: UnmarshalledSamplingStatisticSummary](x: Self) {
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     }

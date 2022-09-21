@@ -27,7 +27,7 @@ object WorkItemStateTransition {
     
     inline def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }

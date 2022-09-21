@@ -69,7 +69,7 @@ object RxNormEntity {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: RxNormAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: RxNormAttribute*): Self = StObject.set(x, "Attributes", js.Array(value*))
     
     inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     
@@ -91,7 +91,7 @@ object RxNormEntity {
     
     inline def setRxNormConceptsUndefined: Self = StObject.set(x, "RxNormConcepts", js.undefined)
     
-    inline def setRxNormConceptsVarargs(value: RxNormConcept*): Self = StObject.set(x, "RxNormConcepts", js.Array(value :_*))
+    inline def setRxNormConceptsVarargs(value: RxNormConcept*): Self = StObject.set(x, "RxNormConcepts", js.Array(value*))
     
     inline def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object RxNormEntity {
     
     inline def setTraitsUndefined: Self = StObject.set(x, "Traits", js.undefined)
     
-    inline def setTraitsVarargs(value: RxNormTrait*): Self = StObject.set(x, "Traits", js.Array(value :_*))
+    inline def setTraitsVarargs(value: RxNormTrait*): Self = StObject.set(x, "Traits", js.Array(value*))
     
     inline def setType(value: RxNormEntityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

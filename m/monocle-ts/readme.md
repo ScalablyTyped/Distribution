@@ -1,7 +1,7 @@
 
 # Scala.js typings for monocle-ts
 
-Typings are for version 2.3.3
+Typings are for version 2.3.13
 
 ## Library description:
 A porting of scala monocle library to TypeScript
@@ -10,10 +10,10 @@ A porting of scala monocle library to TypeScript
 | ------------------ | :-------------: |
 | Full name          | monocle-ts |
 | Keywords           | typescript, functional-programming, optics, lens, fp-ts |
-| # releases         | 16 |
-| # dependents       | 89 |
-| # downloads        | 1900322 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 1024198.3333333334 |
+| # stars            | 887.0 |
 
 ## Links
 - [Homepage](https://github.com/gcanti/monocle-ts)

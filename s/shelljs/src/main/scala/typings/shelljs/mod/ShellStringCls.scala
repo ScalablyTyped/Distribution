@@ -3,7 +3,6 @@ package typings.shelljs.mod
 import typings.node.childProcessMod.ChildProcess
 import typings.shelljs.anon.ExecOptionsasyncfalseunde
 import typings.shelljs.anon.ExecOptionsasynctrue
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("shelljs", "ShellString")
 @js.native
-class ShellStringCls protected ()
+open class ShellStringCls protected ()
   extends StObject
      with ShellString {
   /**
@@ -247,9 +246,9 @@ class ShellStringCls protected ()
   /* CompleteClass */
   override def grep(options: String, regex_filter: String, files: js.Array[String]): ShellString = js.native
   /* CompleteClass */
-  override def grep(options: String, regex_filter: RegExp, files: String*): ShellString = js.native
+  override def grep(options: String, regex_filter: js.RegExp, files: String*): ShellString = js.native
   /* CompleteClass */
-  override def grep(options: String, regex_filter: RegExp, files: js.Array[String]): ShellString = js.native
+  override def grep(options: String, regex_filter: js.RegExp, files: js.Array[String]): ShellString = js.native
   /**
     * Reads input string from given files and returns a string containing all lines
     * of the file that match the given `regex_filter`. Wildcard `*` accepted.
@@ -285,9 +284,9 @@ class ShellStringCls protected ()
   /* CompleteClass */
   override def grep(regex_filter: String, files: js.Array[String]): ShellString = js.native
   /* CompleteClass */
-  override def grep(regex_filter: RegExp, files: String*): ShellString = js.native
+  override def grep(regex_filter: js.RegExp, files: String*): ShellString = js.native
   /* CompleteClass */
-  override def grep(regex_filter: RegExp, files: js.Array[String]): ShellString = js.native
+  override def grep(regex_filter: js.RegExp, files: js.Array[String]): ShellString = js.native
   /**
     * Reads input string from given files and returns a string containing all lines
     * of the file that match the given `regex_filter`. Wildcard `*` accepted.
@@ -366,9 +365,9 @@ class ShellStringCls protected ()
   /* CompleteClass */
   override def sed(options: String, searchRegex: String, replacement: String, files: js.Array[String]): ShellString = js.native
   /* CompleteClass */
-  override def sed(options: String, searchRegex: RegExp, replacement: String, files: String*): ShellString = js.native
+  override def sed(options: String, searchRegex: js.RegExp, replacement: String, files: String*): ShellString = js.native
   /* CompleteClass */
-  override def sed(options: String, searchRegex: RegExp, replacement: String, files: js.Array[String]): ShellString = js.native
+  override def sed(options: String, searchRegex: js.RegExp, replacement: String, files: js.Array[String]): ShellString = js.native
   /**
     * Reads an input string from pipeline and performs a JavaScript `replace()`
     * on the input using the given search regex and replacement string or function.
@@ -403,9 +402,9 @@ class ShellStringCls protected ()
   /* CompleteClass */
   override def sed(searchRegex: String, replacement: String, files: js.Array[String]): ShellString = js.native
   /* CompleteClass */
-  override def sed(searchRegex: RegExp, replacement: String, files: String*): ShellString = js.native
+  override def sed(searchRegex: js.RegExp, replacement: String, files: String*): ShellString = js.native
   /* CompleteClass */
-  override def sed(searchRegex: RegExp, replacement: String, files: js.Array[String]): ShellString = js.native
+  override def sed(searchRegex: js.RegExp, replacement: String, files: js.Array[String]): ShellString = js.native
   /**
     * Reads an input string from pipeline and performs a JavaScript `replace()`
     * on the input using the given search regex and replacement string or function.

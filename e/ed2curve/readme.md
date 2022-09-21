@@ -10,10 +10,10 @@ Convert Ed25519 signing keys into Curve25519 Diffie-Hellman keys.
 | ------------------ | :-------------: |
 | Full name          | ed2curve |
 | Keywords           | ed25519, curve25519, djb, crypto, public, keys, edwards, montgomery, elliptic |
-| # releases         | 2 |
-| # dependents       | 36 |
-| # downloads        | 195187 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 240596.66666666666 |
+| # stars            | 50.0 |
 
 ## Links
 - [Homepage](https://github.com/dchest/ed2curve-js)

@@ -1,6 +1,5 @@
 package typings.promiseTheWorld
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,12 +15,13 @@ object deferMod {
   
   @JSImport("promise-the-world/defer", "Deferred")
   @js.native
-  class Deferred[T] () extends StObject {
+  open class Deferred[T] () extends StObject {
     
     var promise: js.Promise[T] = js.native
     
-    def reject(error: Error): Unit = js.native
+    def reject(error: js.Error): Unit = js.native
     
+    def resolve(): Unit = js.native
     def resolve(resolved: T): Unit = js.native
   }
 }

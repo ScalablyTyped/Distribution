@@ -10,10 +10,10 @@ Get an array of all files in a directory and subdirectories.
 | ------------------ | :-------------: |
 | Full name          | recursive-readdir |
 | Keywords           | directory, lister |
-| # releases         | 1 |
-| # dependents       | 1431 |
-| # downloads        | 205584844 |
-| # stars            | 34 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.5425285333333332E7 |
+| # stars            | 325.0 |
 
 ## Links
 - [Homepage](https://github.com/jergason/recursive-readdir#readme)

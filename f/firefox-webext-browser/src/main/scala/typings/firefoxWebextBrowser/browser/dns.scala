@@ -38,7 +38,7 @@ object dns {
       
       inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
-      inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+      inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value*))
       
       inline def setCanonicalName(value: String): Self = StObject.set(x, "canonicalName", value.asInstanceOf[js.Any])
       

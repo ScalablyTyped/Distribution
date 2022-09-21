@@ -12,20 +12,12 @@ object appServiceRegistrationMod {
   
   @JSImport("matrix-appservice/lib/app-service-registration", "AppServiceRegistration")
   @js.native
-  class AppServiceRegistration () extends StObject {
+  open class AppServiceRegistration () extends StObject {
     def this(url: String) = this()
     
     def _isMatch(regexList: js.Array[RegexObj], sample: String, onlyExclusive: Boolean): Boolean = js.native
     def _isMatch(regexList: Unit, sample: String, onlyExclusive: Boolean): Boolean = js.native
     
-    @JSName("addRegexPattern")
-    def addRegexPattern_aliases(`type`: aliases, regex: String): Unit = js.native
-    @JSName("addRegexPattern")
-    def addRegexPattern_aliases(`type`: aliases, regex: String, exclusive: Boolean): Unit = js.native
-    @JSName("addRegexPattern")
-    def addRegexPattern_rooms(`type`: rooms, regex: String): Unit = js.native
-    @JSName("addRegexPattern")
-    def addRegexPattern_rooms(`type`: rooms, regex: String, exclusive: Boolean): Unit = js.native
     /**
       * Add a regex pattern to be registered.
       * @param {String} type : The type of regex pattern. Must be 'users', 'rooms', or
@@ -34,14 +26,12 @@ object appServiceRegistrationMod {
       * @param {Boolean} exclusive : True to reserve the matched namespace.
       * @throws If given an invalid type or regex.
       */
-    @JSName("addRegexPattern")
-    def addRegexPattern_users(`type`: users, regex: String): Unit = js.native
-    @JSName("addRegexPattern")
-    def addRegexPattern_users(`type`: users, regex: String, exclusive: Boolean): Unit = js.native
+    def addRegexPattern(`type`: users | rooms | aliases, regex: String): Unit = js.native
+    def addRegexPattern(`type`: users | rooms | aliases, regex: String, exclusive: Boolean): Unit = js.native
     
-    /* private */ var asToken: js.Any = js.native
+    /* private */ var asToken: Any = js.native
     
-    /* private */ var cachedRegex: js.Any = js.native
+    /* private */ var cachedRegex: Any = js.native
     
     /**
       * Get the token the app service will use to communicate with the homeserver.
@@ -85,14 +75,14 @@ object appServiceRegistrationMod {
       */
     def getSenderLocalpart(): String | Null = js.native
     
-    /* private */ var hsToken: js.Any = js.native
+    /* private */ var hsToken: Any = js.native
     
     /**
       * Construct a new application service registration.
       * @constructor
       * @param {string} appServiceUrl The base URL the AS can be reached via.
       */
-    /* private */ var id: js.Any = js.native
+    /* private */ var id: Any = js.native
     
     /**
       * Check if a room alias meets this registration regex.
@@ -126,7 +116,7 @@ object appServiceRegistrationMod {
       */
     def isUserMatch(userId: String, onlyExclusive: Boolean): Boolean = js.native
     
-    /* private */ var namespaces: js.Any = js.native
+    /* private */ var namespaces: Any = js.native
     
     /**
       * Output this registration to the given file name.
@@ -135,7 +125,7 @@ object appServiceRegistrationMod {
       */
     def outputAsYaml(filename: String): Unit = js.native
     
-    /* private */ var protocols: js.Any = js.native
+    /* private */ var protocols: Any = js.native
     
     /**
       * **Experimental**
@@ -151,9 +141,9 @@ object appServiceRegistrationMod {
       */
     def pushEphemeralEnabled(): Boolean = js.native
     
-    /* private */ var rateLimited: js.Any = js.native
+    /* private */ var rateLimited: Any = js.native
     
-    /* private */ var senderLocalpart: js.Any = js.native
+    /* private */ var senderLocalpart: Any = js.native
     
     /**
       * Set the token the app service will use to communicate with the homeserver.
@@ -198,7 +188,7 @@ object appServiceRegistrationMod {
       */
     def setSenderLocalpart(localpart: String): Unit = js.native
     
-    /* private */ var url: js.Any = js.native
+    /* private */ var url: Any = js.native
   }
   /* static members */
   object AppServiceRegistration {
@@ -272,7 +262,7 @@ object appServiceRegistrationMod {
       
       inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
       
-      inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value*))
       
       inline def setRate_limited(value: Boolean): Self = StObject.set(x, "rate_limited", value.asInstanceOf[js.Any])
       

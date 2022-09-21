@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDialogflow.anon
 
-import typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow.GoogleCloudDialogflowV2EntityType
+import typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow.GoogleCloudDialogflowCxV3SessionEntityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,12 +27,9 @@ trait QuotaUser extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity
-    * data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
+    * Required. The unique identifier of the session entity type. Format: `projects//locations//agents//sessions//entityTypes/` or
+    * `projects//locations//agents//environments//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment.
     */
-  var languageCode: js.UndefOr[String] = js.undefined
-  
-  /** The unique identifier of the entity type. Required for EntityTypes.UpdateEntityType and EntityTypes.BatchUpdateEntityTypes methods. Format: `projects//agent/entityTypes/`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -45,9 +42,9 @@ trait QuotaUser extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GoogleCloudDialogflowV2EntityType
+  var resource: GoogleCloudDialogflowCxV3SessionEntityType
   
-  /** Optional. The mask to control which fields get updated. */
+  /** The mask to control which fields get updated. */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -58,7 +55,7 @@ trait QuotaUser extends StObject {
 }
 object QuotaUser {
   
-  inline def apply(name: String, resource: GoogleCloudDialogflowV2EntityType): QuotaUser = {
+  inline def apply(name: String, resource: GoogleCloudDialogflowCxV3SessionEntityType): QuotaUser = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUser]
   }
@@ -89,10 +86,6 @@ object QuotaUser {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
-    
-    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
-    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
@@ -107,7 +100,7 @@ object QuotaUser {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GoogleCloudDialogflowV2EntityType): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GoogleCloudDialogflowCxV3SessionEntityType): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

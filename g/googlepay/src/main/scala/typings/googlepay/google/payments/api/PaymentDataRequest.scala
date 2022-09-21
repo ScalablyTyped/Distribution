@@ -71,6 +71,12 @@ trait PaymentDataRequest extends StObject {
   var merchantInfo: MerchantInfo
   
   /**
+    * Offers available for redemption that can be used with the current
+    * order.
+    */
+  var offerInfo: js.UndefOr[OfferInfo] = js.undefined
+  
+  /**
     * Optional shipping address parameters.
     *
     * If omitted, the default values specified in
@@ -136,7 +142,7 @@ object PaymentDataRequest {
     
     inline def setAllowedPaymentMethods(value: js.Array[PaymentMethodSpecification]): Self = StObject.set(x, "allowedPaymentMethods", value.asInstanceOf[js.Any])
     
-    inline def setAllowedPaymentMethodsVarargs(value: PaymentMethodSpecification*): Self = StObject.set(x, "allowedPaymentMethods", js.Array(value :_*))
+    inline def setAllowedPaymentMethodsVarargs(value: PaymentMethodSpecification*): Self = StObject.set(x, "allowedPaymentMethods", js.Array(value*))
     
     inline def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
@@ -146,13 +152,17 @@ object PaymentDataRequest {
     
     inline def setCallbackIntentsUndefined: Self = StObject.set(x, "callbackIntents", js.undefined)
     
-    inline def setCallbackIntentsVarargs(value: CallbackIntent*): Self = StObject.set(x, "callbackIntents", js.Array(value :_*))
+    inline def setCallbackIntentsVarargs(value: CallbackIntent*): Self = StObject.set(x, "callbackIntents", js.Array(value*))
     
     inline def setEmailRequired(value: `false` | `true`): Self = StObject.set(x, "emailRequired", value.asInstanceOf[js.Any])
     
     inline def setEmailRequiredUndefined: Self = StObject.set(x, "emailRequired", js.undefined)
     
     inline def setMerchantInfo(value: MerchantInfo): Self = StObject.set(x, "merchantInfo", value.asInstanceOf[js.Any])
+    
+    inline def setOfferInfo(value: OfferInfo): Self = StObject.set(x, "offerInfo", value.asInstanceOf[js.Any])
+    
+    inline def setOfferInfoUndefined: Self = StObject.set(x, "offerInfo", js.undefined)
     
     inline def setShippingAddressParameters(value: ShippingAddressParameters): Self = StObject.set(x, "shippingAddressParameters", value.asInstanceOf[js.Any])
     

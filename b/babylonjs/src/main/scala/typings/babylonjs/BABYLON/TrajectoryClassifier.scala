@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TrajectoryClassifier extends StObject {
   
-  /* private */ var _levenshteinAlphabet: js.Any
+  /* private */ var _levenshteinAlphabet: Any
   
-  /* private */ var _maximumAllowableMatchCost: js.Any
+  /* private */ var _maximumAllowableMatchCost: Any
   
-  /* private */ var _nameToDescribedTrajectory: js.Any
+  /* private */ var _nameToDescribedTrajectory: Any
   
-  /* private */ var _vector3Alphabet: js.Any
+  /* private */ var _vector3Alphabet: Any
   
   /**
     * Add a new Trajectory to the set with a given name.
@@ -45,10 +45,10 @@ trait TrajectoryClassifier extends StObject {
 object TrajectoryClassifier {
   
   inline def apply(
-    _levenshteinAlphabet: js.Any,
-    _maximumAllowableMatchCost: js.Any,
-    _nameToDescribedTrajectory: js.Any,
-    _vector3Alphabet: js.Any,
+    _levenshteinAlphabet: Any,
+    _maximumAllowableMatchCost: Any,
+    _nameToDescribedTrajectory: Any,
+    _vector3Alphabet: Any,
     addTrajectoryToClassification: (Trajectory, String) => Unit,
     classifyTrajectory: Trajectory => Nullable[String],
     deleteClassification: String => Boolean,
@@ -68,12 +68,12 @@ object TrajectoryClassifier {
     
     inline def setSerialize(value: () => String): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
     
-    inline def set_levenshteinAlphabet(value: js.Any): Self = StObject.set(x, "_levenshteinAlphabet", value.asInstanceOf[js.Any])
+    inline def set_levenshteinAlphabet(value: Any): Self = StObject.set(x, "_levenshteinAlphabet", value.asInstanceOf[js.Any])
     
-    inline def set_maximumAllowableMatchCost(value: js.Any): Self = StObject.set(x, "_maximumAllowableMatchCost", value.asInstanceOf[js.Any])
+    inline def set_maximumAllowableMatchCost(value: Any): Self = StObject.set(x, "_maximumAllowableMatchCost", value.asInstanceOf[js.Any])
     
-    inline def set_nameToDescribedTrajectory(value: js.Any): Self = StObject.set(x, "_nameToDescribedTrajectory", value.asInstanceOf[js.Any])
+    inline def set_nameToDescribedTrajectory(value: Any): Self = StObject.set(x, "_nameToDescribedTrajectory", value.asInstanceOf[js.Any])
     
-    inline def set_vector3Alphabet(value: js.Any): Self = StObject.set(x, "_vector3Alphabet", value.asInstanceOf[js.Any])
+    inline def set_vector3Alphabet(value: Any): Self = StObject.set(x, "_vector3Alphabet", value.asInstanceOf[js.Any])
   }
 }

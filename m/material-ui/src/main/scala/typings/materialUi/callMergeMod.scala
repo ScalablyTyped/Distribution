@@ -10,10 +10,10 @@ object callMergeMod {
   
   @JSImport("material-ui/svg-icons/communication/call-merge", JSImport.Default)
   @js.native
-  class default () extends CommunicationCallMerge
+  open class default () extends CommunicationCallMerge
   
   @JSImport("material-ui/svg-icons/communication/call-merge", "CommunicationCallMerge")
   @js.native
-  class CommunicationCallMerge ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationCallMerge ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

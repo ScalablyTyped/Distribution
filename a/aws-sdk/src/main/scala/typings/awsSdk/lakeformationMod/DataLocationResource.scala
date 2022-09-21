@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataLocationResource extends StObject {
   
   /**
-    * The identifier for the Data Catalog where the location is registered with AWS Lake Formation. By default, it is the account ID of the caller.
+    * The identifier for the Data Catalog where the location is registered with Lake Formation. By default, it is the account ID of the caller.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   

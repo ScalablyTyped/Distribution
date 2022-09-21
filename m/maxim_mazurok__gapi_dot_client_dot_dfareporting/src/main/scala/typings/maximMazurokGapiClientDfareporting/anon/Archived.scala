@@ -107,13 +107,13 @@ object Archived {
     
     inline def setAdvertiserGroupIdsUndefined: Self = StObject.set(x, "advertiserGroupIds", js.undefined)
     
-    inline def setAdvertiserGroupIdsVarargs(value: String*): Self = StObject.set(x, "advertiserGroupIds", js.Array(value :_*))
+    inline def setAdvertiserGroupIdsVarargs(value: String*): Self = StObject.set(x, "advertiserGroupIds", js.Array(value*))
     
     inline def setAdvertiserIds(value: String | js.Array[String]): Self = StObject.set(x, "advertiserIds", value.asInstanceOf[js.Any])
     
     inline def setAdvertiserIdsUndefined: Self = StObject.set(x, "advertiserIds", js.undefined)
     
-    inline def setAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "advertiserIds", js.Array(value :_*))
+    inline def setAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "advertiserIds", js.Array(value*))
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -135,7 +135,7 @@ object Archived {
     
     inline def setExcludedIdsUndefined: Self = StObject.set(x, "excludedIds", js.undefined)
     
-    inline def setExcludedIdsVarargs(value: String*): Self = StObject.set(x, "excludedIds", js.Array(value :_*))
+    inline def setExcludedIdsVarargs(value: String*): Self = StObject.set(x, "excludedIds", js.Array(value*))
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -145,7 +145,7 @@ object Archived {
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

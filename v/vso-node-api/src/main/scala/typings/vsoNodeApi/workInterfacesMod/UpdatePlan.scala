@@ -19,7 +19,7 @@ trait UpdatePlan extends StObject {
   /**
     * Plan properties.
     */
-  var properties: js.Any
+  var properties: Any
   
   /**
     * Revision of the plan that was updated - the value used here should match the one the server gave the client in the Plan.
@@ -33,7 +33,7 @@ trait UpdatePlan extends StObject {
 }
 object UpdatePlan {
   
-  inline def apply(description: String, name: String, properties: js.Any, revision: Double, `type`: PlanType): UpdatePlan = {
+  inline def apply(description: String, name: String, properties: Any, revision: Double, `type`: PlanType): UpdatePlan = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePlan]
@@ -45,7 +45,7 @@ object UpdatePlan {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     

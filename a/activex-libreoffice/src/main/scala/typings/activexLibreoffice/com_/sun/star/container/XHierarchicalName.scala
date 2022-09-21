@@ -38,7 +38,7 @@ object XHierarchicalName {
     acquire: () => Unit,
     composeHierarchicalName: String => String,
     getHierarchicalName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XHierarchicalName = {
     val __obj = js.Dynamic.literal(HierarchicalName = HierarchicalName.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), composeHierarchicalName = js.Any.fromFunction1(composeHierarchicalName), getHierarchicalName = js.Any.fromFunction0(getHierarchicalName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

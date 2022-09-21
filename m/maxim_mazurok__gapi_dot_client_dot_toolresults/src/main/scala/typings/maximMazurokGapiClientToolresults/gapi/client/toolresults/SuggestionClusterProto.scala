@@ -32,6 +32,6 @@ object SuggestionClusterProto {
     
     inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
     
-    inline def setSuggestionsVarargs(value: SuggestionProto*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: SuggestionProto*): Self = StObject.set(x, "suggestions", js.Array(value*))
   }
 }

@@ -1,13 +1,12 @@
 package typings.braintree.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "SamsungPayCard")
 @js.native
-class SamsungPayCard ()
+open class SamsungPayCard ()
   extends StObject
      with PaymentMethod {
   
@@ -23,7 +22,7 @@ class SamsungPayCard ()
   
   var countryOfIssuance: String = js.native
   
-  var createdAt: Date = js.native
+  var createdAt: String = js.native
   
   var customerId: String = js.native
   
@@ -65,5 +64,5 @@ class SamsungPayCard ()
   
   var uniqueNumberIdentifier: String = js.native
   
-  var updatedAt: Date = js.native
+  var updatedAt: String = js.native
 }

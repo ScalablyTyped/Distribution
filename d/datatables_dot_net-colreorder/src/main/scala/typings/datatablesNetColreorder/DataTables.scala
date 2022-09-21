@@ -72,7 +72,7 @@ object DataTables {
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(value: Double*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: Double*): Self = StObject.set(x, "order", js.Array(value*))
       
       inline def setRealtime(value: Boolean): Self = StObject.set(x, "realtime", value.asInstanceOf[js.Any])
       

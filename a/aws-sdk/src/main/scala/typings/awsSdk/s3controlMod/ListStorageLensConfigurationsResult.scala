@@ -33,6 +33,6 @@ object ListStorageLensConfigurationsResult {
     
     inline def setStorageLensConfigurationListUndefined: Self = StObject.set(x, "StorageLensConfigurationList", js.undefined)
     
-    inline def setStorageLensConfigurationListVarargs(value: ListStorageLensConfigurationEntry*): Self = StObject.set(x, "StorageLensConfigurationList", js.Array(value :_*))
+    inline def setStorageLensConfigurationListVarargs(value: ListStorageLensConfigurationEntry*): Self = StObject.set(x, "StorageLensConfigurationList", js.Array(value*))
   }
 }

@@ -1,26 +1,27 @@
 package typings.senchaTouch.Ext.util
 
+import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type IAudio = typings.senchaTouch.Ext.IBase
+type IAudio = IBase
 
-type IFormat = typings.senchaTouch.Ext.IBase
+type IFormat = IBase
 
-type IIndicator = typings.senchaTouch.Ext.IBase
+type IIndicator = IBase
 
-type IInflector = typings.senchaTouch.Ext.IBase
+type IInflector = IBase
 
-type IInputBlocker = typings.senchaTouch.Ext.IBase
+type IInputBlocker = IBase
 
-type IJSONP = typings.senchaTouch.Ext.IBase
+type IJSONP = IBase
 
-type IOffset = typings.senchaTouch.Ext.IBase
+type IOffset = IBase
 
-type IPaintMonitor = typings.senchaTouch.Ext.IBase
+type IPaintMonitor = IBase
 
-type ISizeMonitor = typings.senchaTouch.Ext.IBase
+type ISizeMonitor = IBase
 
-type ITranslatable = typings.senchaTouch.Ext.IBase
+type ITranslatable = IBase

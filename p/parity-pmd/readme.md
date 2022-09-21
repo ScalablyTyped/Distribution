@@ -10,10 +10,10 @@ Parity's native market data protocol
 | ------------------ | :-------------: |
 | Full name          | parity-pmd |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 619 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 66.66666666666667 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/paritytrading/node-parity-pmd#readme)

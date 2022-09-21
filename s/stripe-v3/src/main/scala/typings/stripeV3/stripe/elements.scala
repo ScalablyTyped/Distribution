@@ -38,7 +38,7 @@ object elements {
     
     // HTMLElement keeps giving this error for some reason:
     // Cannot find name 'HTMLElement'
-    def mount(domElement: js.Any): Unit = js.native
+    def mount(domElement: Any): Unit = js.native
     
     def on(event: eventTypes, handler: handler): Unit = js.native
     @JSName("on")
@@ -121,7 +121,7 @@ object elements {
       
       inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
       
-      inline def setFontsVarargs(value: Font*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+      inline def setFontsVarargs(value: Font*): Self = StObject.set(x, "fonts", js.Array(value*))
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -157,7 +157,7 @@ object elements {
       
       inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
       
-      inline def setFontsVarargs(value: Font*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+      inline def setFontsVarargs(value: Font*): Self = StObject.set(x, "fonts", js.Array(value*))
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -244,7 +244,7 @@ object elements {
       
       inline def setSupportedCountriesUndefined: Self = StObject.set(x, "supportedCountries", js.undefined)
       
-      inline def setSupportedCountriesVarargs(value: String*): Self = StObject.set(x, "supportedCountries", js.Array(value :_*))
+      inline def setSupportedCountriesVarargs(value: String*): Self = StObject.set(x, "supportedCountries", js.Array(value*))
       
       inline def setValue(value: String | StringDictionary[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -510,9 +510,12 @@ object elements {
     - typings.stripeV3.stripeV3Strings.paymentRequestButton
     - typings.stripeV3.stripeV3Strings.iban
     - typings.stripeV3.stripeV3Strings.idealBank
+    - typings.stripeV3.stripeV3Strings.auBankAccount
   */
   trait elementsType extends StObject
   object elementsType {
+    
+    inline def auBankAccount: typings.stripeV3.stripeV3Strings.auBankAccount = "auBankAccount".asInstanceOf[typings.stripeV3.stripeV3Strings.auBankAccount]
     
     inline def card: typings.stripeV3.stripeV3Strings.card = "card".asInstanceOf[typings.stripeV3.stripeV3Strings.card]
     

@@ -33,6 +33,6 @@ object ListUploadsResult {
     
     inline def setUploadsUndefined: Self = StObject.set(x, "uploads", js.undefined)
     
-    inline def setUploadsVarargs(value: Upload*): Self = StObject.set(x, "uploads", js.Array(value :_*))
+    inline def setUploadsVarargs(value: Upload*): Self = StObject.set(x, "uploads", js.Array(value*))
   }
 }

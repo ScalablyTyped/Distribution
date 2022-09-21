@@ -19,6 +19,6 @@ object ColumnGroupInterface {
     
     inline def setColumns(value: js.Array[Column[D]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: Column[D]*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Column[D]*): Self = StObject.set(x, "columns", js.Array(value*))
   }
 }

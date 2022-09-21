@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-parallel-batch
 
-Typings are for version 1.0.6
+Typings are for version 1.0.10
 
 ## Library description:
 Takes an async iterator that emits promise-returning functions, invokes them in parallel and emits the results in the same order as the input
@@ -10,13 +10,13 @@ Takes an async iterator that emits promise-returning functions, invokes them in 
 | ------------------ | :-------------: |
 | Full name          | it-parallel-batch |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 3 |
-| # downloads        | 228537 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 117325.66666666667 |
+| # stars            | 200.0 |
 
 ## Links
-- [Homepage](https://github.com/achingbrain/it#readme)
+- [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-parallel-batch#readme)
 - [Bugs](https://github.com/achingbrain/it/issues)
 - [Repository](https://github.com/achingbrain/it)
 - [Npm](https://www.npmjs.com/package/it-parallel-batch)

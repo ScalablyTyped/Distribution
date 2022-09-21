@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A list of jobs in a project.
-  */
 trait SchemaListJobsResponse extends StObject {
   
   /**
@@ -15,11 +12,9 @@ trait SchemaListJobsResponse extends StObject {
   var jobs: js.UndefOr[js.Array[SchemaJob]] = js.undefined
   
   /**
-    * Optional. This token is included in the response if there are more
-    * results to fetch. To fetch additional results, provide this value as the
-    * page_token in a subsequent &lt;code&gt;ListJobsRequest&lt;/code&gt;.
+    * Optional. This token is included in the response if there are more results to fetch. To fetch additional results, provide this value as the page_token in a subsequent ListJobsRequest.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListJobsResponse {
   
@@ -34,9 +29,11 @@ object SchemaListJobsResponse {
     
     inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
-    inline def setJobsVarargs(value: SchemaJob*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: SchemaJob*): Self = StObject.set(x, "jobs", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

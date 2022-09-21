@@ -18,19 +18,19 @@ object libButtonMod {
   
   @JSImport("office-ui-fabric-react/lib/Button", "ActionButton")
   @js.native
-  class ActionButton protected ()
+  open class ActionButton protected ()
     extends typings.officeUiFabricReact.buttonMod.ActionButton {
     def this(props: IButtonProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IButtonProps, context: js.Any) = this()
+    def this(props: IButtonProps, context: Any) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/Button", "BaseButton")
   @js.native
-  class BaseButton protected ()
+  open class BaseButton protected ()
     extends typings.officeUiFabricReact.buttonMod.BaseButton {
     def this(props: IBaseButtonProps) = this()
   }
@@ -49,7 +49,7 @@ object libButtonMod {
   
   @JSImport("office-ui-fabric-react/lib/Button", "Button")
   @js.native
-  class Button protected ()
+  open class Button protected ()
     extends typings.officeUiFabricReact.buttonMod.Button {
     def this(props: IButtonProps) = this()
   }
@@ -78,20 +78,20 @@ object libButtonMod {
   
   @JSImport("office-ui-fabric-react/lib/Button", "CommandBarButton")
   @js.native
-  class CommandBarButton protected ()
+  open class CommandBarButton protected ()
     extends typings.officeUiFabricReact.buttonMod.CommandBarButton {
     def this(props: IButtonProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IButtonProps, context: js.Any) = this()
+    def this(props: IButtonProps, context: Any) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("office-ui-fabric-react/lib/Button", "CommandButton")
   @js.native
-  class CommandButton ()
+  open class CommandButton ()
     extends typings.officeUiFabricReact.actionButtonMod.ActionButton
   @JSImport("office-ui-fabric-react/lib/Button", "CommandButton")
   @js.native
@@ -99,26 +99,26 @@ object libButtonMod {
   
   @JSImport("office-ui-fabric-react/lib/Button", "CompoundButton")
   @js.native
-  class CompoundButton protected ()
+  open class CompoundButton protected ()
     extends typings.officeUiFabricReact.buttonMod.CompoundButton {
     def this(props: IButtonProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IButtonProps, context: js.Any) = this()
+    def this(props: IButtonProps, context: Any) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/Button", "DefaultButton")
   @js.native
-  class DefaultButton protected ()
+  open class DefaultButton protected ()
     extends typings.officeUiFabricReact.buttonMod.DefaultButton {
     def this(props: IButtonProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IButtonProps, context: js.Any) = this()
+    def this(props: IButtonProps, context: Any) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/Button", "ElementType")
@@ -135,38 +135,38 @@ object libButtonMod {
   
   @JSImport("office-ui-fabric-react/lib/Button", "IconButton")
   @js.native
-  class IconButton protected ()
+  open class IconButton protected ()
     extends typings.officeUiFabricReact.buttonMod.IconButton {
     def this(props: IButtonProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IButtonProps, context: js.Any) = this()
+    def this(props: IButtonProps, context: Any) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/Button", "MessageBarButton")
   @js.native
-  class MessageBarButton protected ()
+  open class MessageBarButton protected ()
     extends typings.officeUiFabricReact.buttonMod.MessageBarButton {
     def this(props: IButtonProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IButtonProps, context: js.Any) = this()
+    def this(props: IButtonProps, context: Any) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/Button", "PrimaryButton")
   @js.native
-  class PrimaryButton protected ()
+  open class PrimaryButton protected ()
     extends typings.officeUiFabricReact.buttonMod.PrimaryButton {
     def this(props: IButtonProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IButtonProps, context: js.Any) = this()
+    def this(props: IButtonProps, context: Any) = this()
   }
   
   inline def getSplitButtonClassNames(styles: IButtonStyles, disabled: Boolean, expanded: Boolean, checked: Boolean): ISplitButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getSplitButtonClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any])).asInstanceOf[ISplitButtonClassNames]

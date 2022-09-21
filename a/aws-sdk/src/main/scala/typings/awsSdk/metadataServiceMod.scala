@@ -15,7 +15,7 @@ object metadataServiceMod {
   /**
     * Creates a new MetadataService object with a given set of options.
     */
-  class MetadataService () extends StObject {
+  open class MetadataService () extends StObject {
     def this(options: MetadataServiceOptions) = this()
     
     /**
@@ -69,7 +69,7 @@ object metadataServiceMod {
     /**
       * A set of options to configure the retry delay on retryable errors. See AWS.Config for details.
       */
-    var retryDelayOptions: js.UndefOr[js.Any] = js.undefined
+    var retryDelayOptions: js.UndefOr[Any] = js.undefined
   }
   object MetadataServiceOptions {
     
@@ -92,7 +92,7 @@ object metadataServiceMod {
       
       inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      inline def setRetryDelayOptions(value: js.Any): Self = StObject.set(x, "retryDelayOptions", value.asInstanceOf[js.Any])
+      inline def setRetryDelayOptions(value: Any): Self = StObject.set(x, "retryDelayOptions", value.asInstanceOf[js.Any])
       
       inline def setRetryDelayOptionsUndefined: Self = StObject.set(x, "retryDelayOptions", js.undefined)
     }

@@ -9,10 +9,10 @@ Generate 1D and 2D barcodes
 | ------------------ | :-------------: |
 | Full name          | barcode |
 | Keywords           | barcode, datamatrix, code39, code128, codabar, qr code, qr, code, upc, upc-a, upc-e |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 52995 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2966.3333333333335 |
+| # stars            | 66.0 |
 
 ## Links
 - [Homepage](https://github.com/samt/barcode)

@@ -50,7 +50,7 @@ object SearchUserIDsResponse {
     
     inline def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
     
-    inline def setHitsVarargs(value: UserIDResponse*): Self = StObject.set(x, "hits", js.Array(value :_*))
+    inline def setHitsVarargs(value: UserIDResponse*): Self = StObject.set(x, "hits", js.Array(value*))
     
     inline def setNbHits(value: Double): Self = StObject.set(x, "nbHits", value.asInstanceOf[js.Any])
     

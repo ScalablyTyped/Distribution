@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TransformStream[I, O] extends StObject {
   
+  /* standard dom */
   val readable: ReadableStream[O]
   
+  /* standard dom */
   val writable: WritableStream[I]
 }
 object TransformStream {

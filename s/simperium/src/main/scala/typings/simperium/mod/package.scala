@@ -1,48 +1,40 @@
 package typings.simperium.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.simperium.anon.Authorize
+import typings.simperium.mod.^
+import typings.std.NonNullable
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def default[Buckets](appID: java.lang.String, token: java.lang.String): typings.simperium.mod.Client[Buckets] = (typings.simperium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("default")(appID.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[typings.simperium.mod.Client[Buckets]]
-inline def default[Buckets](
-  appID: java.lang.String,
-  token: java.lang.String,
-  clientConfig: typings.std.Partial[typings.simperium.mod.ClientConfig[Buckets]]
-): typings.simperium.mod.Client[Buckets] = (typings.simperium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("default")(appID.asInstanceOf[js.Any], token.asInstanceOf[js.Any], clientConfig.asInstanceOf[js.Any])).asInstanceOf[typings.simperium.mod.Client[Buckets]]
+inline def default[Buckets](appID: String, token: String): Client[Buckets] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(appID.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[Client[Buckets]]
+inline def default[Buckets](appID: String, token: String, clientConfig: Partial[ClientConfig[Buckets]]): Client[Buckets] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(appID.asInstanceOf[js.Any], token.asInstanceOf[js.Any], clientConfig.asInstanceOf[js.Any])).asInstanceOf[Client[Buckets]]
 
-inline def Auth(appId: java.lang.String, apiKey: java.lang.String): typings.simperium.anon.Authorize = (typings.simperium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Auth")(appId.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[typings.simperium.anon.Authorize]
+inline def Auth(appId: String, apiKey: String): Authorize = (^.asInstanceOf[js.Dynamic].applyDynamic("Auth")(appId.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[Authorize]
 
-inline def createClient[Buckets](appID: java.lang.String, token: java.lang.String): typings.simperium.mod.Client[Buckets] = (typings.simperium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(appID.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[typings.simperium.mod.Client[Buckets]]
-inline def createClient[Buckets](
-  appID: java.lang.String,
-  token: java.lang.String,
-  clientConfig: typings.std.Partial[typings.simperium.mod.ClientConfig[Buckets]]
-): typings.simperium.mod.Client[Buckets] = (typings.simperium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(appID.asInstanceOf[js.Any], token.asInstanceOf[js.Any], clientConfig.asInstanceOf[js.Any])).asInstanceOf[typings.simperium.mod.Client[Buckets]]
+inline def createClient[Buckets](appID: String, token: String): Client[Buckets] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(appID.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[Client[Buckets]]
+inline def createClient[Buckets](appID: String, token: String, clientConfig: Partial[ClientConfig[Buckets]]): Client[Buckets] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(appID.asInstanceOf[js.Any], token.asInstanceOf[js.Any], clientConfig.asInstanceOf[js.Any])).asInstanceOf[Client[Buckets]]
 
-type ChangeVersion = java.lang.String
+type ChangeVersion = String
 
-type DMPDiff = java.lang.String
+type DMPDiff = String
 
-type EntitiesCallback[T, E] = js.Function2[
-/* error */ typings.std.NonNullable[E] | scala.Null, 
-/* entities */ js.UndefOr[js.Array[T]], 
-scala.Unit]
+type EntitiesCallback[T, E] = js.Function2[/* error */ NonNullable[E] | Null, /* entities */ js.UndefOr[js.Array[T]], Unit]
 
-type EntityCallback[T, E] = js.Function2[
-/* error */ typings.std.NonNullable[E] | scala.Null, 
-/* entity */ js.UndefOr[T], 
-scala.Unit]
+type EntityCallback[T, E] = js.Function2[/* error */ NonNullable[E] | Null, /* entity */ js.UndefOr[T], Unit]
 
-type EntityId = java.lang.String
+type EntityId = String
 
-type Heartbeat = typings.simperium.mod.CustomEventEmitter[typings.simperium.mod.HeartbeatEvent]
+type Heartbeat = CustomEventEmitter[HeartbeatEvent]
 
 type JSONDiff[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof T ]:? simperium.simperium.DiffOp<T[K]>}
-  */ typings.simperium.simperiumStrings.JSONDiff & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.simperium.simperiumStrings.JSONDiff & TopLevel[T]
 
-type LocalQueue[T] = typings.simperium.mod.CustomEventEmitter[typings.simperium.mod.LocalQueueEvent[T]]
+type LocalQueue[T] = CustomEventEmitter[LocalQueueEvent[T]]
 
-type SimperiumEvent = org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, scala.Unit]]
+type SimperiumEvent = StringDictionary[js.Function1[/* repeated */ Any, Unit]]

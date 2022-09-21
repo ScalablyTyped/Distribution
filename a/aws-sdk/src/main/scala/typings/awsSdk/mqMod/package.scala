@@ -1,5 +1,6 @@
 package typings.awsSdk.mqMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.LDAP
   - java.lang.String
 */
-type AuthenticationStrategy = typings.awsSdk.mqMod._AuthenticationStrategy | java.lang.String
+type AuthenticationStrategy = _AuthenticationStrategy | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATION_IN_PROGRESS
@@ -18,16 +19,17 @@ type AuthenticationStrategy = typings.awsSdk.mqMod._AuthenticationStrategy | jav
   - typings.awsSdk.awsSdkStrings.DELETION_IN_PROGRESS
   - typings.awsSdk.awsSdkStrings.RUNNING
   - typings.awsSdk.awsSdkStrings.REBOOT_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.CRITICAL_ACTION_REQUIRED
   - java.lang.String
 */
-type BrokerState = typings.awsSdk.mqMod._BrokerState | java.lang.String
+type BrokerState = _BrokerState | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EBS
   - typings.awsSdk.awsSdkStrings.EFS
   - java.lang.String
 */
-type BrokerStorageType = typings.awsSdk.mqMod._BrokerStorageType | java.lang.String
+type BrokerStorageType = _BrokerStorageType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE
@@ -35,7 +37,7 @@ type BrokerStorageType = typings.awsSdk.mqMod._BrokerStorageType | java.lang.Str
   - typings.awsSdk.awsSdkStrings.DELETE
   - java.lang.String
 */
-type ChangeType = typings.awsSdk.mqMod._ChangeType | java.lang.String
+type ChangeType = _ChangeType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MONDAY
@@ -47,7 +49,7 @@ type ChangeType = typings.awsSdk.mqMod._ChangeType | java.lang.String
   - typings.awsSdk.awsSdkStrings.SUNDAY
   - java.lang.String
 */
-type DayOfWeek = typings.awsSdk.mqMod._DayOfWeek | java.lang.String
+type DayOfWeek = _DayOfWeek | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SINGLE_INSTANCE
@@ -55,16 +57,16 @@ type DayOfWeek = typings.awsSdk.mqMod._DayOfWeek | java.lang.String
   - typings.awsSdk.awsSdkStrings.CLUSTER_MULTI_AZ
   - java.lang.String
 */
-type DeploymentMode = typings.awsSdk.mqMod._DeploymentMode | java.lang.String
+type DeploymentMode = _DeploymentMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVEMQ
   - typings.awsSdk.awsSdkStrings.RABBITMQ
   - java.lang.String
 */
-type EngineType = typings.awsSdk.mqMod._EngineType | java.lang.String
+type EngineType = _EngineType | String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISALLOWED_ELEMENT_REMOVED
@@ -72,51 +74,53 @@ type MaxResults = scala.Double
   - typings.awsSdk.awsSdkStrings.INVALID_ATTRIBUTE_VALUE_REMOVED
   - java.lang.String
 */
-type SanitizationWarningReason = typings.awsSdk.mqMod._SanitizationWarningReason | java.lang.String
+type SanitizationWarningReason = _SanitizationWarningReason | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-11-27`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.mqMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type boolean = scala.Boolean
+type boolean = Boolean
 
-type integer = scala.Double
+type integer = Double
 
-type integerMin5Max100 = scala.Double
+type integerMin5Max100 = Double
 
-type listOfAvailabilityZone = js.Array[typings.awsSdk.mqMod.AvailabilityZone]
+type listOfActionRequired = js.Array[ActionRequired]
 
-type listOfBrokerEngineType = js.Array[typings.awsSdk.mqMod.BrokerEngineType]
+type listOfAvailabilityZone = js.Array[AvailabilityZone]
 
-type listOfBrokerInstance = js.Array[typings.awsSdk.mqMod.BrokerInstance]
+type listOfBrokerEngineType = js.Array[BrokerEngineType]
 
-type listOfBrokerInstanceOption = js.Array[typings.awsSdk.mqMod.BrokerInstanceOption]
+type listOfBrokerInstance = js.Array[BrokerInstance]
 
-type listOfBrokerSummary = js.Array[typings.awsSdk.mqMod.BrokerSummary]
+type listOfBrokerInstanceOption = js.Array[BrokerInstanceOption]
 
-type listOfConfiguration = js.Array[typings.awsSdk.mqMod.Configuration]
+type listOfBrokerSummary = js.Array[BrokerSummary]
 
-type listOfConfigurationId = js.Array[typings.awsSdk.mqMod.ConfigurationId]
+type listOfConfiguration = js.Array[Configuration]
 
-type listOfConfigurationRevision = js.Array[typings.awsSdk.mqMod.ConfigurationRevision]
+type listOfConfigurationId = js.Array[ConfigurationId]
 
-type listOfDeploymentMode = js.Array[typings.awsSdk.mqMod.DeploymentMode]
+type listOfConfigurationRevision = js.Array[ConfigurationRevision]
 
-type listOfEngineVersion = js.Array[typings.awsSdk.mqMod.EngineVersion]
+type listOfDeploymentMode = js.Array[DeploymentMode]
 
-type listOfSanitizationWarning = js.Array[typings.awsSdk.mqMod.SanitizationWarning]
+type listOfEngineVersion = js.Array[EngineVersion]
 
-type listOfString = js.Array[typings.awsSdk.mqMod.string]
+type listOfSanitizationWarning = js.Array[SanitizationWarning]
 
-type listOfUser = js.Array[typings.awsSdk.mqMod.User]
+type listOfString = js.Array[string]
 
-type listOfUserSummary = js.Array[typings.awsSdk.mqMod.UserSummary]
+type listOfUser = js.Array[User]
 
-type mapOfString = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.mqMod.string]
+type listOfUserSummary = js.Array[UserSummary]
 
-type string = java.lang.String
+type mapOfString = StringDictionary[string]
 
-type timestampIso8601 = typings.std.Date
+type string = String
+
+type timestampIso8601 = js.Date

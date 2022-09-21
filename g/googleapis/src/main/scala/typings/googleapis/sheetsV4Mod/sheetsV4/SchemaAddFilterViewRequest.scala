@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Adds a filter view.
-  */
 trait SchemaAddFilterViewRequest extends StObject {
   
   /**
-    * The filter to add. The filterViewId field is optional; if one is not set,
-    * an id will be randomly generated. (It is an error to specify the ID of a
-    * filter that already exists.)
+    * The filter to add. The filterViewId field is optional; if one is not set, an id will be randomly generated. (It is an error to specify the ID of a filter that already exists.)
     */
   var filter: js.UndefOr[SchemaFilterView] = js.undefined
 }

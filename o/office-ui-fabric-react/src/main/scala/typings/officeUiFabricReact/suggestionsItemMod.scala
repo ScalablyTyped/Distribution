@@ -10,8 +10,8 @@ object suggestionsItemMod {
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/Suggestions/SuggestionsItem", "SuggestionsItem")
   @js.native
-  class SuggestionsItem[T] protected ()
-    extends Component[ISuggestionItemProps[T], js.Object, js.Any] {
+  open class SuggestionsItem[T] protected ()
+    extends Component[ISuggestionItemProps[T], js.Object, Any] {
     def this(props: ISuggestionItemProps[T]) = this()
   }
 }

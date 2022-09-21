@@ -53,7 +53,7 @@ object XSlideShowListener {
     endEvent: XAnimationNode => Unit,
     hyperLinkClicked: String => Unit,
     paused: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     repeat: (XAnimationNode, Double) => Unit,
     resumed: () => Unit,

@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IHTMLWindow2 extends StObject {
   
-  def apply(pvarIndex: js.Any): js.Any = js.native
+  def apply(pvarIndex: Any): Any = js.native
   
   def Image(): IHTMLImgElement = js.native
-  def Image(width: js.Any): IHTMLImgElement = js.native
-  def Image(width: js.Any, height: js.Any): IHTMLImgElement = js.native
-  def Image(width: Unit, height: js.Any): IHTMLImgElement = js.native
+  def Image(width: Any): IHTMLImgElement = js.native
+  def Image(width: Any, height: Any): IHTMLImgElement = js.native
+  def Image(width: Unit, height: Any): IHTMLImgElement = js.native
   @JSName("Image")
   val Image_Original: HTMLImageElementFactory = js.native
   
   def Option(): IHTMLOptionElement = js.native
-  def Option(text: js.Any): IHTMLOptionElement = js.native
-  def Option(text: js.Any, value: js.Any): IHTMLOptionElement = js.native
-  def Option(text: js.Any, value: js.Any, defaultSelected: js.Any): IHTMLOptionElement = js.native
-  def Option(text: js.Any, value: js.Any, defaultSelected: js.Any, selected: js.Any): IHTMLOptionElement = js.native
-  def Option(text: js.Any, value: js.Any, defaultSelected: Unit, selected: js.Any): IHTMLOptionElement = js.native
-  def Option(text: js.Any, value: Unit, defaultSelected: js.Any): IHTMLOptionElement = js.native
-  def Option(text: js.Any, value: Unit, defaultSelected: js.Any, selected: js.Any): IHTMLOptionElement = js.native
-  def Option(text: js.Any, value: Unit, defaultSelected: Unit, selected: js.Any): IHTMLOptionElement = js.native
-  def Option(text: Unit, value: js.Any): IHTMLOptionElement = js.native
-  def Option(text: Unit, value: js.Any, defaultSelected: js.Any): IHTMLOptionElement = js.native
-  def Option(text: Unit, value: js.Any, defaultSelected: js.Any, selected: js.Any): IHTMLOptionElement = js.native
-  def Option(text: Unit, value: js.Any, defaultSelected: Unit, selected: js.Any): IHTMLOptionElement = js.native
-  def Option(text: Unit, value: Unit, defaultSelected: js.Any): IHTMLOptionElement = js.native
-  def Option(text: Unit, value: Unit, defaultSelected: js.Any, selected: js.Any): IHTMLOptionElement = js.native
-  def Option(text: Unit, value: Unit, defaultSelected: Unit, selected: js.Any): IHTMLOptionElement = js.native
+  def Option(text: Any): IHTMLOptionElement = js.native
+  def Option(text: Any, value: Any): IHTMLOptionElement = js.native
+  def Option(text: Any, value: Any, defaultSelected: Any): IHTMLOptionElement = js.native
+  def Option(text: Any, value: Any, defaultSelected: Any, selected: Any): IHTMLOptionElement = js.native
+  def Option(text: Any, value: Any, defaultSelected: Unit, selected: Any): IHTMLOptionElement = js.native
+  def Option(text: Any, value: Unit, defaultSelected: Any): IHTMLOptionElement = js.native
+  def Option(text: Any, value: Unit, defaultSelected: Any, selected: Any): IHTMLOptionElement = js.native
+  def Option(text: Any, value: Unit, defaultSelected: Unit, selected: Any): IHTMLOptionElement = js.native
+  def Option(text: Unit, value: Any): IHTMLOptionElement = js.native
+  def Option(text: Unit, value: Any, defaultSelected: Any): IHTMLOptionElement = js.native
+  def Option(text: Unit, value: Any, defaultSelected: Any, selected: Any): IHTMLOptionElement = js.native
+  def Option(text: Unit, value: Any, defaultSelected: Unit, selected: Any): IHTMLOptionElement = js.native
+  def Option(text: Unit, value: Unit, defaultSelected: Any): IHTMLOptionElement = js.native
+  def Option(text: Unit, value: Unit, defaultSelected: Any, selected: Any): IHTMLOptionElement = js.native
+  def Option(text: Unit, value: Unit, defaultSelected: Unit, selected: Any): IHTMLOptionElement = js.native
   @JSName("Option")
   val Option_Original: HTMLOptionElementFactory = js.native
   
@@ -63,20 +63,20 @@ trait IHTMLWindow2 extends StObject {
   val event: IHTMLEventObj = js.native
   
   /** @param language [language='JScript'] */
-  def execScript(code: String): js.Any = js.native
-  def execScript(code: String, language: String): js.Any = js.native
+  def execScript(code: String): Any = js.native
+  def execScript(code: String, language: String): Any = js.native
   
-  val external: js.Any = js.native
+  val external: Any = js.native
   
   def focus(): Unit = js.native
   
-  def frames(pvarIndex: js.Any): js.Any = js.native
+  def frames(pvarIndex: Any): Any = js.native
   @JSName("frames")
   val frames_Original: FramesCollection = js.native
   
   val history: IOmHistory = js.native
   
-  def item(pvarIndex: js.Any): js.Any = js.native
+  def item(pvarIndex: Any): Any = js.native
   
   val length: Double = js.native
   
@@ -92,25 +92,25 @@ trait IHTMLWindow2 extends StObject {
   
   val navigator: IOmNavigator = js.native
   
-  var offscreenBuffering: js.Any = js.native
+  var offscreenBuffering: Any = js.native
   
-  var onbeforeunload: js.Any = js.native
+  var onbeforeunload: Any = js.native
   
-  var onblur: js.Any = js.native
+  var onblur: Any = js.native
   
-  var onerror: js.Any = js.native
+  var onerror: Any = js.native
   
-  var onfocus: js.Any = js.native
+  var onfocus: Any = js.native
   
-  var onhelp: js.Any = js.native
+  var onhelp: Any = js.native
   
-  var onload: js.Any = js.native
+  var onload: Any = js.native
   
-  var onresize: js.Any = js.native
+  var onresize: Any = js.native
   
-  var onscroll: js.Any = js.native
+  var onscroll: Any = js.native
   
-  var onunload: js.Any = js.native
+  var onunload: Any = js.native
   
   /**
     * @param url [url='']
@@ -135,9 +135,9 @@ trait IHTMLWindow2 extends StObject {
   def open(url: Unit, name: Unit, features: String, replace: Boolean): IHTMLWindow2 = js.native
   def open(url: Unit, name: Unit, features: Unit, replace: Boolean): IHTMLWindow2 = js.native
   
-  var opener: js.Any = js.native
+  var opener: Any = js.native
   
-  def parent(pvarIndex: js.Any): js.Any = js.native
+  def parent(pvarIndex: Any): Any = js.native
   @JSName("parent")
   val parent_Original: IHTMLWindow2 = js.native
   
@@ -145,10 +145,10 @@ trait IHTMLWindow2 extends StObject {
     * @param message [message='']
     * @param defstr [defstr='undefined']
     */
-  def prompt(): js.Any = js.native
-  def prompt(message: String): js.Any = js.native
-  def prompt(message: String, defstr: String): js.Any = js.native
-  def prompt(message: Unit, defstr: String): js.Any = js.native
+  def prompt(): Any = js.native
+  def prompt(message: String): Any = js.native
+  def prompt(message: String, defstr: String): Any = js.native
+  def prompt(message: Unit, defstr: String): Any = js.native
   
   def resizeBy(x: Double, y: Double): Unit = js.native
   
@@ -162,32 +162,32 @@ trait IHTMLWindow2 extends StObject {
   
   def scrollTo(x: Double, y: Double): Unit = js.native
   
-  def self(pvarIndex: js.Any): js.Any = js.native
+  def self(pvarIndex: Any): Any = js.native
   @JSName("self")
   val self_Original: IHTMLWindow2 = js.native
   
   def setInterval(expression: String, msec: Double): Double = js.native
-  def setInterval(expression: String, msec: Double, language: js.Any): Double = js.native
+  def setInterval(expression: String, msec: Double, language: Any): Double = js.native
   
   def setTimeout(expression: String, msec: Double): Double = js.native
-  def setTimeout(expression: String, msec: Double, language: js.Any): Double = js.native
+  def setTimeout(expression: String, msec: Double, language: Any): Double = js.native
   
   /** @param features [features=''] */
-  def showHelp(helpURL: String, helpArg: js.Any): Unit = js.native
-  def showHelp(helpURL: String, helpArg: js.Any, features: String): Unit = js.native
+  def showHelp(helpURL: String, helpArg: Any): Unit = js.native
+  def showHelp(helpURL: String, helpArg: Any, features: String): Unit = js.native
   
-  def showModalDialog(dialog: String): js.Any = js.native
-  def showModalDialog(dialog: String, varArgIn: js.Any): js.Any = js.native
-  def showModalDialog(dialog: String, varArgIn: js.Any, varOptions: js.Any): js.Any = js.native
-  def showModalDialog(dialog: String, varArgIn: Unit, varOptions: js.Any): js.Any = js.native
+  def showModalDialog(dialog: String): Any = js.native
+  def showModalDialog(dialog: String, varArgIn: Any): Any = js.native
+  def showModalDialog(dialog: String, varArgIn: Any, varOptions: Any): Any = js.native
+  def showModalDialog(dialog: String, varArgIn: Unit, varOptions: Any): Any = js.native
   
   var status: String = js.native
   
-  def top(pvarIndex: js.Any): js.Any = js.native
+  def top(pvarIndex: Any): Any = js.native
   @JSName("top")
   val top_Original: IHTMLWindow2 = js.native
   
-  def window(pvarIndex: js.Any): js.Any = js.native
+  def window(pvarIndex: Any): Any = js.native
   @JSName("window")
   val window_Original: IHTMLWindow2 = js.native
 }

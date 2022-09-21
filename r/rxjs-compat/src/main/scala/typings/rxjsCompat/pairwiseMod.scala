@@ -10,5 +10,5 @@ object pairwiseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def pairwise[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pairwise")().asInstanceOf[js.Any]
+  inline def pairwise[T](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pairwise")().asInstanceOf[Any]
 }

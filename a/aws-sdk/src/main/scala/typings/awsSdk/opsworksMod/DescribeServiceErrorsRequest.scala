@@ -38,7 +38,7 @@ object DescribeServiceErrorsRequest {
     
     inline def setServiceErrorIdsUndefined: Self = StObject.set(x, "ServiceErrorIds", js.undefined)
     
-    inline def setServiceErrorIdsVarargs(value: String*): Self = StObject.set(x, "ServiceErrorIds", js.Array(value :_*))
+    inline def setServiceErrorIdsVarargs(value: String*): Self = StObject.set(x, "ServiceErrorIds", js.Array(value*))
     
     inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     

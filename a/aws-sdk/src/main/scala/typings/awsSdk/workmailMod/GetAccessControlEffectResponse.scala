@@ -33,6 +33,6 @@ object GetAccessControlEffectResponse {
     
     inline def setMatchedRulesUndefined: Self = StObject.set(x, "MatchedRules", js.undefined)
     
-    inline def setMatchedRulesVarargs(value: AccessControlRuleName*): Self = StObject.set(x, "MatchedRules", js.Array(value :_*))
+    inline def setMatchedRulesVarargs(value: AccessControlRuleName*): Self = StObject.set(x, "MatchedRules", js.Array(value*))
   }
 }

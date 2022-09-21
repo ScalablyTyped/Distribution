@@ -33,7 +33,7 @@ object VirtualGatewaySpec {
     
     inline def setListeners(value: VirtualGatewayListeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
-    inline def setListenersVarargs(value: VirtualGatewayListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+    inline def setListenersVarargs(value: VirtualGatewayListener*): Self = StObject.set(x, "listeners", js.Array(value*))
     
     inline def setLogging(value: VirtualGatewayLogging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     

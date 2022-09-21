@@ -1,7 +1,6 @@
 package typings.jqueryLivestampjs
 
 import typings.moment.mod.Moment
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object mod {
     @js.native
     trait JQuery extends StObject {
       
-      def livestamp(date: Date): JQuery = js.native
+      def livestamp(date: js.Date): JQuery = js.native
       def livestamp(moment: Moment): JQuery = js.native
       def livestamp(timestamp: String): JQuery = js.native
       def livestamp(timestamp: Double): JQuery = js.native

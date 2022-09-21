@@ -27,7 +27,7 @@ object StartMigrationMessage {
     
     inline def setCustomerNodeEndpointList(value: CustomerNodeEndpointList): Self = StObject.set(x, "CustomerNodeEndpointList", value.asInstanceOf[js.Any])
     
-    inline def setCustomerNodeEndpointListVarargs(value: CustomerNodeEndpoint*): Self = StObject.set(x, "CustomerNodeEndpointList", js.Array(value :_*))
+    inline def setCustomerNodeEndpointListVarargs(value: CustomerNodeEndpoint*): Self = StObject.set(x, "CustomerNodeEndpointList", js.Array(value*))
     
     inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
   }

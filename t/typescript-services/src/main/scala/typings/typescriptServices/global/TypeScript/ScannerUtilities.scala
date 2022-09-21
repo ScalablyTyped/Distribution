@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.ScannerUtilities")
 @js.native
-class ScannerUtilities ()
+open class ScannerUtilities ()
   extends StObject
      with typings.typescriptServices.TypeScript.ScannerUtilities
 object ScannerUtilities {

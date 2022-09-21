@@ -14,25 +14,25 @@ object global {
     
     @JSGlobal("AdazzleReactDataGrid.ReactDataGrid")
     @js.native
-    class ReactDataGrid[T] ()
+    open class ReactDataGrid[T] ()
       extends typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid[T]
     object ReactDataGrid {
       
       @JSGlobal("AdazzleReactDataGrid.ReactDataGrid.Cell")
       @js.native
-      class Cell ()
-        extends Component[js.Any, js.Object, js.Any]
+      open class Cell ()
+        extends Component[Any, js.Object, Any]
       
       @JSGlobal("AdazzleReactDataGrid.ReactDataGrid.Row")
       @js.native
-      class Row ()
-        extends Component[js.Any, js.Object, js.Any]
+      open class Row ()
+        extends Component[Any, js.Object, Any]
       
       object editors {
         
         @JSGlobal("AdazzleReactDataGrid.ReactDataGrid.editors.EditorBase")
         @js.native
-        class EditorBase[P, S] ()
+        open class EditorBase[P, S] ()
           extends typings.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.editors.EditorBase[P, S]
       }
     }
@@ -76,72 +76,72 @@ object global {
       
       @JSGlobal("AdazzleReactDataGridPlugins.DraggableHeader.DraggableContainer")
       @js.native
-      class DraggableContainer ()
-        extends Component[js.Any, js.Object, js.Any]
+      open class DraggableContainer ()
+        extends Component[Any, js.Object, Any]
     }
     
     object Editors {
       
       @JSGlobal("AdazzleReactDataGridPlugins.Editors.AutoComplete")
       @js.native
-      class AutoComplete ()
-        extends Component[AutoCompleteEditorProps, js.Object, js.Any]
+      open class AutoComplete ()
+        extends Component[AutoCompleteEditorProps, js.Object, Any]
       
       @JSGlobal("AdazzleReactDataGridPlugins.Editors.AutoCompleteTokensEditor")
       @js.native
-      class AutoCompleteTokensEditor ()
-        extends Component[AutoCompleteTokensEditorProps, js.Object, js.Any]
+      open class AutoCompleteTokensEditor ()
+        extends Component[AutoCompleteTokensEditorProps, js.Object, Any]
       
       @JSGlobal("AdazzleReactDataGridPlugins.Editors.CheckboxEditor")
       @js.native
-      class CheckboxEditor ()
-        extends Component[js.Any, js.Object, js.Any]
+      open class CheckboxEditor ()
+        extends Component[Any, js.Object, Any]
       
       @JSGlobal("AdazzleReactDataGridPlugins.Editors.DropDownEditor")
       @js.native
-      class DropDownEditor ()
-        extends Component[DropDownEditorProps, js.Object, js.Any]
+      open class DropDownEditor ()
+        extends Component[DropDownEditorProps, js.Object, Any]
       
       @JSGlobal("AdazzleReactDataGridPlugins.Editors.SimpleTextEditor")
       @js.native
-      class SimpleTextEditor ()
-        extends Component[js.Any, js.Object, js.Any]
+      open class SimpleTextEditor ()
+        extends Component[Any, js.Object, Any]
     }
     
     object Filters {
       
       @JSGlobal("AdazzleReactDataGridPlugins.Filters.AutoCompleteFilter")
       @js.native
-      class AutoCompleteFilter ()
-        extends Component[js.Any, js.Object, js.Any]
+      open class AutoCompleteFilter ()
+        extends Component[Any, js.Object, Any]
       
       @JSGlobal("AdazzleReactDataGridPlugins.Filters.MultiSelectFilter")
       @js.native
-      class MultiSelectFilter ()
-        extends Component[js.Any, js.Object, js.Any]
+      open class MultiSelectFilter ()
+        extends Component[Any, js.Object, Any]
       
       @JSGlobal("AdazzleReactDataGridPlugins.Filters.NumericFilter")
       @js.native
-      class NumericFilter ()
-        extends Component[js.Any, js.Object, js.Any]
+      open class NumericFilter ()
+        extends Component[Any, js.Object, Any]
       
       @JSGlobal("AdazzleReactDataGridPlugins.Filters.SingleSelectFilter")
       @js.native
-      class SingleSelectFilter ()
-        extends Component[js.Any, js.Object, js.Any]
+      open class SingleSelectFilter ()
+        extends Component[Any, js.Object, Any]
     }
     
     object Formatters {
       
       @JSGlobal("AdazzleReactDataGridPlugins.Formatters.DropDownFormatter")
       @js.native
-      class DropDownFormatter ()
-        extends Component[js.Any, js.Object, js.Any]
+      open class DropDownFormatter ()
+        extends Component[Any, js.Object, Any]
       
       @JSGlobal("AdazzleReactDataGridPlugins.Formatters.ImageFormatter")
       @js.native
-      class ImageFormatter ()
-        extends Component[js.Any, js.Object, js.Any]
+      open class ImageFormatter ()
+        extends Component[Any, js.Object, Any]
     }
     
     object Menu {
@@ -152,28 +152,28 @@ object global {
       
       @JSGlobal("AdazzleReactDataGridPlugins.Menu.ContextMenu")
       @js.native
-      class ContextMenu ()
-        extends Component[js.Any, js.Object, js.Any]
+      open class ContextMenu ()
+        extends Component[Any, js.Object, Any]
       
-      inline def ContextMenuLayer(identifier: js.Any): js.Function1[/* Component */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ContextMenuLayer")(identifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ js.Any, js.Any]]
-      inline def ContextMenuLayer(identifier: js.Any, configure: js.Function1[/* props */ js.Any, js.Any]): js.Function1[/* Component */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ContextMenuLayer")(identifier.asInstanceOf[js.Any], configure.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Component */ js.Any, js.Any]]
+      inline def ContextMenuLayer(identifier: Any): js.Function1[/* Component */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ContextMenuLayer")(identifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ Any, Any]]
+      inline def ContextMenuLayer(identifier: Any, configure: js.Function1[/* props */ Any, Any]): js.Function1[/* Component */ Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ContextMenuLayer")(identifier.asInstanceOf[js.Any], configure.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Component */ Any, Any]]
       
       @JSGlobal("AdazzleReactDataGridPlugins.Menu.MenuHeader")
       @js.native
-      class MenuHeader ()
-        extends Component[js.Any, js.Object, js.Any]
+      open class MenuHeader ()
+        extends Component[Any, js.Object, Any]
       
       @JSGlobal("AdazzleReactDataGridPlugins.Menu.MenuItem")
       @js.native
-      class MenuItem ()
-        extends Component[js.Any, js.Object, js.Any]
+      open class MenuItem ()
+        extends Component[Any, js.Object, Any]
       
       @JSGlobal("AdazzleReactDataGridPlugins.Menu.SubMenu")
       @js.native
-      class SubMenu ()
-        extends Component[js.Any, js.Object, js.Any]
+      open class SubMenu ()
+        extends Component[Any, js.Object, Any]
       
-      inline def connect(Menu: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(Menu.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def connect(Menu: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(Menu.asInstanceOf[js.Any]).asInstanceOf[Any]
       
       object monitor {
         
@@ -181,9 +181,9 @@ object global {
         @js.native
         val ^ : js.Any = js.native
         
-        inline def getItem(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getItem")().asInstanceOf[js.Any]
+        inline def getItem(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getItem")().asInstanceOf[Any]
         
-        inline def getPosition(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")().asInstanceOf[js.Any]
+        inline def getPosition(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")().asInstanceOf[Any]
         
         inline def hideMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideMenu")().asInstanceOf[Unit]
       }
@@ -191,7 +191,7 @@ object global {
     
     @JSGlobal("AdazzleReactDataGridPlugins.Toolbar")
     @js.native
-    class Toolbar ()
-      extends Component[js.Any, js.Object, js.Any]
+    open class Toolbar ()
+      extends Component[Any, js.Object, Any]
   }
 }

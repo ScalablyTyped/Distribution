@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "AABB")
 @js.native
-class AABB () extends StObject {
+open class AABB () extends StObject {
   def this(options: AABBOptions) = this()
   
   def containsPoint(point: js.Tuple2[Double, Double]): Boolean = js.native

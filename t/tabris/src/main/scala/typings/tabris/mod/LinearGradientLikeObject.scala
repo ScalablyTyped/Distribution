@@ -27,7 +27,7 @@ object LinearGradientLikeObject {
     
     inline def setColorStops(value: js.Array[ColorValue | (js.Tuple2[ColorValue, PercentValue])]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
     
-    inline def setColorStopsVarargs(value: (ColorValue | (js.Tuple2[ColorValue, PercentValue]))*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
+    inline def setColorStopsVarargs(value: (ColorValue | (js.Tuple2[ColorValue, PercentValue]))*): Self = StObject.set(x, "colorStops", js.Array(value*))
     
     inline def setDirection(value: Double | left | top | right | bottom): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

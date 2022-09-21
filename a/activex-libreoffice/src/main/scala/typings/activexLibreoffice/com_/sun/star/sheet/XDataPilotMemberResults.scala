@@ -31,7 +31,7 @@ object XDataPilotMemberResults {
     Results: SafeArray[MemberResult],
     acquire: () => Unit,
     getResults: () => SafeArray[MemberResult],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDataPilotMemberResults = {
     val __obj = js.Dynamic.literal(Results = Results.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getResults = js.Any.fromFunction0(getResults), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

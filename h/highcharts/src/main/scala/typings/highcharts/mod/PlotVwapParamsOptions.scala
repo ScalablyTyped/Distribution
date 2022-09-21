@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PlotVwapParamsOptions extends StObject {
   
+  var index: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highstock) The base period for indicator calculations. This is the
     * number of data points which are taken into account for the indicator
@@ -28,6 +30,10 @@ object PlotVwapParamsOptions {
   }
   
   extension [Self <: PlotVwapParamsOptions](x: Self) {
+    
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

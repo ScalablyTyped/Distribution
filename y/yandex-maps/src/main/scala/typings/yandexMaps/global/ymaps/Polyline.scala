@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ymaps.Polyline")
 @js.native
-class Polyline protected ()
+open class Polyline protected ()
   extends typings.yandexMaps.mod.Polyline {
   def this(geometry: js.Array[js.Array[Double]]) = this()
   def this(geometry: js.Object) = this()

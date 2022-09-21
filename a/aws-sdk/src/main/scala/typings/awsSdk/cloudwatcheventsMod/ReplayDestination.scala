@@ -31,6 +31,6 @@ object ReplayDestination {
     
     inline def setFilterArnsUndefined: Self = StObject.set(x, "FilterArns", js.undefined)
     
-    inline def setFilterArnsVarargs(value: Arn*): Self = StObject.set(x, "FilterArns", js.Array(value :_*))
+    inline def setFilterArnsVarargs(value: Arn*): Self = StObject.set(x, "FilterArns", js.Array(value*))
   }
 }

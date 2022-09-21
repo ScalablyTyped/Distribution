@@ -9,7 +9,7 @@ trait DescribeFaqResponse extends StObject {
   /**
     * The date and time that the FAQ was created.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the FAQ that you provided when it was created.
@@ -32,9 +32,14 @@ trait DescribeFaqResponse extends StObject {
   var Id: js.UndefOr[FaqId] = js.undefined
   
   /**
-    * The identifier of the index that contains the FAQ.
+    * The identifier of the index for the FAQ.
     */
   var IndexId: js.UndefOr[typings.awsSdk.kendraMod.IndexId] = js.undefined
+  
+  /**
+    * The code for a language. This shows a supported language for the FAQ document. English is supported by default. For more information on supported languages, including their codes, see Adding documents in languages other than English.
+    */
+  var LanguageCode: js.UndefOr[typings.awsSdk.kendraMod.LanguageCode] = js.undefined
   
   /**
     * The name that you gave the FAQ when it was created.
@@ -56,7 +61,7 @@ trait DescribeFaqResponse extends StObject {
   /**
     * The date and time that the FAQ was last updated.
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
+  var UpdatedAt: js.UndefOr[js.Date] = js.undefined
 }
 object DescribeFaqResponse {
   
@@ -67,7 +72,7 @@ object DescribeFaqResponse {
   
   extension [Self <: DescribeFaqResponse](x: Self) {
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -91,6 +96,10 @@ object DescribeFaqResponse {
     
     inline def setIndexIdUndefined: Self = StObject.set(x, "IndexId", js.undefined)
     
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
+    
     inline def setName(value: FaqName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
@@ -107,7 +116,7 @@ object DescribeFaqResponse {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
   }

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IHTMLBookmarkCollection extends StObject {
   
-  def apply(index: Double): js.Any = js.native
+  def apply(index: Double): Any = js.native
   
-  def item(index: Double): js.Any = js.native
+  def item(index: Double): Any = js.native
   
   val length: Double = js.native
 }

@@ -9,12 +9,12 @@ trait SchemaCommentListResponse extends StObject {
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Serialized EventId of the request which produced this response.
     */
-  var eventId: js.UndefOr[String] = js.undefined
+  var eventId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A list of comments that match the request criteria.
@@ -22,17 +22,18 @@ trait SchemaCommentListResponse extends StObject {
   var items: js.UndefOr[js.Array[SchemaComment]] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;youtube#commentListResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "youtube#commentListResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The token that can be used as the value of the pageToken parameter to
-    * retrieve the next page in the result set.
+    * The token that can be used as the value of the pageToken parameter to retrieve the next page in the result set.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
+  /**
+    * General pagination information.
+    */
   var pageInfo: js.UndefOr[SchemaPageInfo] = js.undefined
   
   var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.undefined
@@ -40,7 +41,7 @@ trait SchemaCommentListResponse extends StObject {
   /**
     * The visitorId identifies the visitor.
     */
-  var visitorId: js.UndefOr[String] = js.undefined
+  var visitorId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCommentListResponse {
   
@@ -53,9 +54,13 @@ object SchemaCommentListResponse {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    
+    inline def setEventIdNull: Self = StObject.set(x, "eventId", null)
     
     inline def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
     
@@ -63,13 +68,17 @@ object SchemaCommentListResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaComment*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaComment*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
@@ -82,6 +91,8 @@ object SchemaCommentListResponse {
     inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
     
     inline def setVisitorId(value: String): Self = StObject.set(x, "visitorId", value.asInstanceOf[js.Any])
+    
+    inline def setVisitorIdNull: Self = StObject.set(x, "visitorId", null)
     
     inline def setVisitorIdUndefined: Self = StObject.set(x, "visitorId", js.undefined)
   }

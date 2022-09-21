@@ -10,8 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(socket: js.Any): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
-  inline def default(socket: js.Any, options: FeathersPrimusClientOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def default(socket: Any): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def default(socket: Any, options: FeathersPrimusClientOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   trait FeathersPrimusClientOptions extends StObject {
     

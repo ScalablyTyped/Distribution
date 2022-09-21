@@ -12,9 +12,9 @@ object pathMatchMod {
   
   inline def default(): js.Function1[
     /* path */ String, 
-    js.Function2[/* pathname */ js.UndefOr[String], /* params */ js.UndefOr[js.Any], js.Any]
+    js.Function2[/* pathname */ js.UndefOr[String], /* params */ js.UndefOr[Any], Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[
     /* path */ String, 
-    js.Function2[/* pathname */ js.UndefOr[String], /* params */ js.UndefOr[js.Any], js.Any]
+    js.Function2[/* pathname */ js.UndefOr[String], /* params */ js.UndefOr[Any], Any]
   ]]
 }

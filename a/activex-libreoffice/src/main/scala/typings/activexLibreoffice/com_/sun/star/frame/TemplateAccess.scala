@@ -23,7 +23,7 @@ object TemplateAccess {
     addTemplate: (String, String, String) => Boolean,
     getContent: () => XContent,
     getLocale: () => Locale,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeGroup: String => Boolean,
     removeTemplate: (String, String) => Boolean,

@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("circuit-breaker-js", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with CircuitBreaker {
     def this(options: Options) = this()

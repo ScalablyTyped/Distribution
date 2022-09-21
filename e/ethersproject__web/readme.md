@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__web
 
-Typings are for version 5.0.10
+Typings are for version 5.7.1
 
 ## Library description:
 Utility fucntions for managing web requests for ethers.
@@ -10,10 +10,10 @@ Utility fucntions for managing web requests for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/web |
 | Keywords           | Ethereum, ethers |
-| # releases         | 40 |
-| # dependents       | 17 |
-| # downloads        | 1622968 |
-| # stars            | 0 |
+| # releases         | 25 |
+| # dependents       | 0.0 |
+| # downloads        | 3622983.0 |
+| # stars            | 5632.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

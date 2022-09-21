@@ -18,6 +18,17 @@ trait Media extends StObject {
   var duration: Double = js.native
   
   /**
+    * Returns the current amplitude within an audio file.
+    * @param mediaSuccess The callback that is passed the current amplitude (0.0 - 1.0).
+    * @param mediaError   The callback to execute if an error occurs.
+    */
+  def getCurrentAmplitude(mediaSuccess: js.Function1[/* amplitude */ Double, Unit]): Unit = js.native
+  def getCurrentAmplitude(
+    mediaSuccess: js.Function1[/* amplitude */ Double, Unit],
+    mediaError: js.Function1[/* error */ MediaError, Unit]
+  ): Unit = js.native
+  
+  /**
     * Returns the current position within an audio file. Also updates the Media object's position parameter.
     * @param mediaSuccess The callback that is passed the current position in seconds.
     * @param mediaError   The callback to execute if an error occurs.

@@ -29,7 +29,7 @@ trait AssociationExecutionTarget extends StObject {
   /**
     * The date of the last execution.
     */
-  var LastExecutionDate: js.UndefOr[DateTime] = js.undefined
+  var LastExecutionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The location where the association details are saved.
@@ -37,12 +37,12 @@ trait AssociationExecutionTarget extends StObject {
   var OutputSource: js.UndefOr[typings.awsSdk.ssmMod.OutputSource] = js.undefined
   
   /**
-    * The resource ID, for example, the instance ID where the association ran.
+    * The resource ID, for example, the managed node ID where the association ran.
     */
   var ResourceId: js.UndefOr[AssociationResourceId] = js.undefined
   
   /**
-    * The resource type, for example, instance.
+    * The resource type, for example, EC2.
     */
   var ResourceType: js.UndefOr[AssociationResourceType] = js.undefined
   
@@ -76,7 +76,7 @@ object AssociationExecutionTarget {
     
     inline def setExecutionIdUndefined: Self = StObject.set(x, "ExecutionId", js.undefined)
     
-    inline def setLastExecutionDate(value: DateTime): Self = StObject.set(x, "LastExecutionDate", value.asInstanceOf[js.Any])
+    inline def setLastExecutionDate(value: js.Date): Self = StObject.set(x, "LastExecutionDate", value.asInstanceOf[js.Any])
     
     inline def setLastExecutionDateUndefined: Self = StObject.set(x, "LastExecutionDate", js.undefined)
     

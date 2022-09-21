@@ -1,15 +1,18 @@
 package typings.awsSdk.cognitoidentityserviceproviderMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.V1_0
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AWSAccountIdType = java.lang.String
+type AWSAccountIdType = String
 
-type AccessTokenValidityType = scala.Double
+type AccessTokenValidityType = Double
 
-type AccountTakeoverActionNotifyType = scala.Boolean
+type AccountTakeoverActionNotifyType = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BLOCK
@@ -18,9 +21,9 @@ type AccountTakeoverActionNotifyType = scala.Boolean
   - typings.awsSdk.awsSdkStrings.NO_ACTION
   - java.lang.String
 */
-type AccountTakeoverEventActionType = typings.awsSdk.cognitoidentityserviceproviderMod._AccountTakeoverEventActionType | java.lang.String
+type AccountTakeoverEventActionType = _AccountTakeoverEventActionType | String
 
-type AdminCreateUserUnusedAccountValidityDaysType = scala.Double
+type AdminCreateUserUnusedAccountValidityDaysType = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OFF
@@ -28,19 +31,19 @@ type AdminCreateUserUnusedAccountValidityDaysType = scala.Double
   - typings.awsSdk.awsSdkStrings.ENFORCED
   - java.lang.String
 */
-type AdvancedSecurityModeType = typings.awsSdk.cognitoidentityserviceproviderMod._AdvancedSecurityModeType | java.lang.String
+type AdvancedSecurityModeType = _AdvancedSecurityModeType | String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.phone_number
+  - typings.awsSdk.awsSdkStrings.phone_number_
   - typings.awsSdk.awsSdkStrings.email__
-  - typings.awsSdk.awsSdkStrings.preferred_username
+  - typings.awsSdk.awsSdkStrings.preferred_username_
   - java.lang.String
 */
-type AliasAttributeType = typings.awsSdk.cognitoidentityserviceproviderMod._AliasAttributeType | java.lang.String
+type AliasAttributeType = _AliasAttributeType | String
 
-type AliasAttributesListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.AliasAttributeType]
+type AliasAttributesListType = js.Array[AliasAttributeType]
 
-type ArnType = java.lang.String
+type ArnType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.String_
@@ -49,21 +52,23 @@ type ArnType = java.lang.String
   - typings.awsSdk.awsSdkStrings.Boolean_
   - java.lang.String
 */
-type AttributeDataType = typings.awsSdk.cognitoidentityserviceproviderMod._AttributeDataType | java.lang.String
+type AttributeDataType = _AttributeDataType | String
 
-type AttributeListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.AttributeType]
+type AttributeListType = js.Array[AttributeType]
 
-type AttributeMappingKeyType = java.lang.String
+type AttributeMappingKeyType = String
 
-type AttributeMappingType = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cognitoidentityserviceproviderMod.StringType]
+type AttributeMappingType = StringDictionary[StringType]
 
-type AttributeNameListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.AttributeNameType]
+type AttributeNameListType = js.Array[AttributeNameType]
 
-type AttributeNameType = java.lang.String
+type AttributeNameType = String
 
-type AttributeValueType = java.lang.String
+type AttributeValueType = String
 
-type AuthEventsType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.AuthEventType]
+type AttributesRequireVerificationBeforeUpdateType = js.Array[VerifiedAttributeType]
+
+type AuthEventsType = js.Array[AuthEventType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USER_SRP_AUTH
@@ -75,26 +80,28 @@ type AuthEventsType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.
   - typings.awsSdk.awsSdkStrings.ADMIN_USER_PASSWORD_AUTH
   - java.lang.String
 */
-type AuthFlowType = typings.awsSdk.cognitoidentityserviceproviderMod._AuthFlowType | java.lang.String
+type AuthFlowType = _AuthFlowType | String
 
-type AuthParametersType = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cognitoidentityserviceproviderMod.StringType]
+type AuthParametersType = StringDictionary[StringType]
 
-type BlockedIPRangeListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.StringType]
+type AuthSessionValidityType = Double
 
-type BooleanType = scala.Boolean
+type BlockedIPRangeListType = js.Array[StringType]
 
-type CSSType = java.lang.String
+type BooleanType = Boolean
 
-type CSSVersionType = java.lang.String
+type CSSType = String
 
-type CallbackURLsListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.RedirectUrlType]
+type CSSVersionType = String
+
+type CallbackURLsListType = js.Array[RedirectUrlType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Password_
   - typings.awsSdk.awsSdkStrings.Mfa
   - java.lang.String
 */
-type ChallengeName = typings.awsSdk.cognitoidentityserviceproviderMod._ChallengeName | java.lang.String
+type ChallengeName = _ChallengeName | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SMS_MFA
@@ -109,82 +116,86 @@ type ChallengeName = typings.awsSdk.cognitoidentityserviceproviderMod._Challenge
   - typings.awsSdk.awsSdkStrings.NEW_PASSWORD_REQUIRED
   - java.lang.String
 */
-type ChallengeNameType = typings.awsSdk.cognitoidentityserviceproviderMod._ChallengeNameType | java.lang.String
+type ChallengeNameType = _ChallengeNameType | String
 
-type ChallengeParametersType = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cognitoidentityserviceproviderMod.StringType]
+type ChallengeParametersType = StringDictionary[StringType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Success_
   - typings.awsSdk.awsSdkStrings.Failure_
   - java.lang.String
 */
-type ChallengeResponse = typings.awsSdk.cognitoidentityserviceproviderMod._ChallengeResponse | java.lang.String
+type ChallengeResponse = _ChallengeResponse | String
 
-type ChallengeResponseListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.ChallengeResponseType]
+type ChallengeResponseListType = js.Array[ChallengeResponseType]
 
-type ChallengeResponsesType = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cognitoidentityserviceproviderMod.StringType]
+type ChallengeResponsesType = StringDictionary[StringType]
 
-type ClientIdType = java.lang.String
+type ClientIdType = String
 
-type ClientMetadataType = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cognitoidentityserviceproviderMod.StringType]
+type ClientMetadataType = StringDictionary[StringType]
 
-type ClientNameType = java.lang.String
+type ClientNameType = String
 
-type ClientPermissionListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.ClientPermissionType]
+type ClientPermissionListType = js.Array[ClientPermissionType]
 
-type ClientPermissionType = java.lang.String
+type ClientPermissionType = String
 
-type ClientSecretType = java.lang.String
+type ClientSecretType = String
 
-type CodeDeliveryDetailsListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.CodeDeliveryDetailsType]
+type CodeDeliveryDetailsListType = js.Array[CodeDeliveryDetailsType]
 
-type CompletionMessageType = java.lang.String
+type CompletionMessageType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BLOCK
   - typings.awsSdk.awsSdkStrings.NO_ACTION
   - java.lang.String
 */
-type CompromisedCredentialsEventActionType = typings.awsSdk.cognitoidentityserviceproviderMod._CompromisedCredentialsEventActionType | java.lang.String
+type CompromisedCredentialsEventActionType = _CompromisedCredentialsEventActionType | String
 
-type ConfirmationCodeType = java.lang.String
+type ConfirmationCodeType = String
 
-type CustomAttributeNameType = java.lang.String
+type CustomAttributeNameType = String
 
-type CustomAttributesListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.SchemaAttributeType]
+type CustomAttributesListType = js.Array[SchemaAttributeType]
 
-type DateType = typings.std.Date
+type CustomEmailSenderLambdaVersionType = V1_0 | String
+
+type CustomSMSSenderLambdaVersionType = V1_0 | String
+
+type DateType = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CONFIRM_WITH_LINK
   - typings.awsSdk.awsSdkStrings.CONFIRM_WITH_CODE
   - java.lang.String
 */
-type DefaultEmailOptionType = typings.awsSdk.cognitoidentityserviceproviderMod._DefaultEmailOptionType | java.lang.String
+type DefaultEmailOptionType = _DefaultEmailOptionType | String
 
-type DeliveryMediumListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.DeliveryMediumType]
+type DeliveryMediumListType = js.Array[DeliveryMediumType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SMS
   - typings.awsSdk.awsSdkStrings.EMAIL
   - java.lang.String
 */
-type DeliveryMediumType = typings.awsSdk.cognitoidentityserviceproviderMod._DeliveryMediumType | java.lang.String
+type DeliveryMediumType = _DeliveryMediumType | String
 
-type DescriptionType = java.lang.String
+type DescriptionType = String
 
-type DeviceKeyType = java.lang.String
+type DeviceKeyType = String
 
-type DeviceListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.DeviceType]
+type DeviceListType = js.Array[DeviceType]
 
-type DeviceNameType = java.lang.String
+type DeviceNameType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.remembered
   - typings.awsSdk.awsSdkStrings.not_remembered
   - java.lang.String
 */
-type DeviceRememberedStatusType = typings.awsSdk.cognitoidentityserviceproviderMod._DeviceRememberedStatusType | java.lang.String
+type DeviceRememberedStatusType = _DeviceRememberedStatusType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -194,32 +205,32 @@ type DeviceRememberedStatusType = typings.awsSdk.cognitoidentityserviceproviderM
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type DomainStatusType = typings.awsSdk.cognitoidentityserviceproviderMod._DomainStatusType | java.lang.String
+type DomainStatusType = _DomainStatusType | String
 
-type DomainType = java.lang.String
+type DomainType = String
 
-type DomainVersionType = java.lang.String
+type DomainVersionType = String
 
-type EmailAddressType = java.lang.String
+type EmailAddressType = String
 
-type EmailNotificationBodyType = java.lang.String
+type EmailNotificationBodyType = String
 
-type EmailNotificationSubjectType = java.lang.String
+type EmailNotificationSubjectType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COGNITO_DEFAULT
   - typings.awsSdk.awsSdkStrings.DEVELOPER
   - java.lang.String
 */
-type EmailSendingAccountType = typings.awsSdk.cognitoidentityserviceproviderMod._EmailSendingAccountType | java.lang.String
+type EmailSendingAccountType = _EmailSendingAccountType | String
 
-type EmailVerificationMessageByLinkType = java.lang.String
+type EmailVerificationMessageByLinkType = String
 
-type EmailVerificationMessageType = java.lang.String
+type EmailVerificationMessageType = String
 
-type EmailVerificationSubjectByLinkType = java.lang.String
+type EmailVerificationSubjectByLinkType = String
 
-type EmailVerificationSubjectType = java.lang.String
+type EmailVerificationSubjectType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SIGN_IN
@@ -227,28 +238,31 @@ type EmailVerificationSubjectType = java.lang.String
   - typings.awsSdk.awsSdkStrings.SIGN_UP
   - java.lang.String
 */
-type EventFilterType = typings.awsSdk.cognitoidentityserviceproviderMod._EventFilterType | java.lang.String
+type EventFilterType = _EventFilterType | String
 
-type EventFiltersType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.EventFilterType]
+type EventFiltersType = js.Array[EventFilterType]
 
-type EventIdType = java.lang.String
+type EventIdType = String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.Success_
-  - typings.awsSdk.awsSdkStrings.Failure_
+  - typings.awsSdk.awsSdkStrings.Pass_
+  - typings.awsSdk.awsSdkStrings.Fail_
+  - typings.awsSdk.awsSdkStrings.InProgress_
   - java.lang.String
 */
-type EventResponseType = typings.awsSdk.cognitoidentityserviceproviderMod._EventResponseType | java.lang.String
+type EventResponseType = _EventResponseType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SignIn
   - typings.awsSdk.awsSdkStrings.SignUp
   - typings.awsSdk.awsSdkStrings.ForgotPassword
+  - typings.awsSdk.awsSdkStrings.PasswordChange
+  - typings.awsSdk.awsSdkStrings.ResendCode
   - java.lang.String
 */
-type EventType = typings.awsSdk.cognitoidentityserviceproviderMod._EventType | java.lang.String
+type EventType = _EventType | String
 
-type ExplicitAuthFlowsListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.ExplicitAuthFlowsType]
+type ExplicitAuthFlowsListType = js.Array[ExplicitAuthFlowsType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ADMIN_NO_SRP_AUTH
@@ -261,28 +275,28 @@ type ExplicitAuthFlowsListType = js.Array[typings.awsSdk.cognitoidentityservicep
   - typings.awsSdk.awsSdkStrings.ALLOW_REFRESH_TOKEN_AUTH
   - java.lang.String
 */
-type ExplicitAuthFlowsType = typings.awsSdk.cognitoidentityserviceproviderMod._ExplicitAuthFlowsType | java.lang.String
+type ExplicitAuthFlowsType = _ExplicitAuthFlowsType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Valid_
   - typings.awsSdk.awsSdkStrings.Invalid_
   - java.lang.String
 */
-type FeedbackValueType = typings.awsSdk.cognitoidentityserviceproviderMod._FeedbackValueType | java.lang.String
+type FeedbackValueType = _FeedbackValueType | String
 
-type ForceAliasCreation = scala.Boolean
+type ForceAliasCreation = Boolean
 
-type GenerateSecret = scala.Boolean
+type GenerateSecret = Boolean
 
-type GroupListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.GroupType]
+type GroupListType = js.Array[GroupType]
 
-type GroupNameType = java.lang.String
+type GroupNameType = String
 
-type HexStringType = java.lang.String
+type HexStringType = String
 
-type HttpHeaderList = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.HttpHeader]
+type HttpHeaderList = js.Array[HttpHeader]
 
-type IdTokenValidityType = scala.Double
+type IdTokenValidityType = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SAML
@@ -293,83 +307,83 @@ type IdTokenValidityType = scala.Double
   - typings.awsSdk.awsSdkStrings.OIDC
   - java.lang.String
 */
-type IdentityProviderTypeType = typings.awsSdk.cognitoidentityserviceproviderMod._IdentityProviderTypeType | java.lang.String
+type IdentityProviderTypeType = _IdentityProviderTypeType | String
 
-type IdpIdentifierType = java.lang.String
+type IdpIdentifierType = String
 
-type IdpIdentifiersListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.IdpIdentifierType]
+type IdpIdentifiersListType = js.Array[IdpIdentifierType]
 
-type ImageFileType = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.cognitoidentityserviceproviderMod.Blob | java.lang.String
+type ImageFileType = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type ImageUrlType = java.lang.String
+type ImageUrlType = String
 
-type IntegerType = scala.Double
+type IntegerType = Double
 
-type ListOfStringTypes = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.StringType]
+type ListOfStringTypes = js.Array[StringType]
 
-type ListProvidersLimitType = scala.Double
+type ListProvidersLimitType = Double
 
-type ListResourceServersLimitType = scala.Double
+type ListResourceServersLimitType = Double
 
-type LogoutURLsListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.RedirectUrlType]
+type LogoutURLsListType = js.Array[RedirectUrlType]
 
-type LongType = scala.Double
+type LongType = Double
 
-type MFAOptionListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.MFAOptionType]
+type MFAOptionListType = js.Array[MFAOptionType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RESEND
   - typings.awsSdk.awsSdkStrings.SUPPRESS
   - java.lang.String
 */
-type MessageActionType = typings.awsSdk.cognitoidentityserviceproviderMod._MessageActionType | java.lang.String
+type MessageActionType = _MessageActionType | String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.code
-  - typings.awsSdk.awsSdkStrings.`implicit`
-  - typings.awsSdk.awsSdkStrings.client_credentials
+  - typings.awsSdk.awsSdkStrings.code_
+  - typings.awsSdk.awsSdkStrings.implicit_
+  - typings.awsSdk.awsSdkStrings.client_credentials_
   - java.lang.String
 */
-type OAuthFlowType = typings.awsSdk.cognitoidentityserviceproviderMod._OAuthFlowType | java.lang.String
+type OAuthFlowType = _OAuthFlowType | String
 
-type OAuthFlowsType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.OAuthFlowType]
+type OAuthFlowsType = js.Array[OAuthFlowType]
 
-type PaginationKey = java.lang.String
+type PaginationKey = String
 
-type PaginationKeyType = java.lang.String
+type PaginationKeyType = String
 
-type PasswordPolicyMinLengthType = scala.Double
+type PasswordPolicyMinLengthType = Double
 
-type PasswordType = java.lang.String
+type PasswordType = String
 
-type PoolQueryLimitType = scala.Double
+type PoolQueryLimitType = Double
 
-type PreSignedUrlType = java.lang.String
+type PreSignedUrlType = String
 
-type PrecedenceType = scala.Double
+type PrecedenceType = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LEGACY
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type PreventUserExistenceErrorTypes = typings.awsSdk.cognitoidentityserviceproviderMod._PreventUserExistenceErrorTypes | java.lang.String
+type PreventUserExistenceErrorTypes = _PreventUserExistenceErrorTypes | String
 
-type PriorityType = scala.Double
+type PriorityType = Double
 
-type ProviderDetailsType = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cognitoidentityserviceproviderMod.StringType]
+type ProviderDetailsType = StringDictionary[StringType]
 
-type ProviderNameType = java.lang.String
+type ProviderNameType = String
 
-type ProviderNameTypeV1 = java.lang.String
+type ProviderNameTypeV1 = String
 
-type ProvidersListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.ProviderDescription]
+type ProvidersListType = js.Array[ProviderDescription]
 
-type QueryLimit = scala.Double
+type QueryLimit = Double
 
-type QueryLimitType = scala.Double
+type QueryLimitType = Double
 
-type RecoveryMechanismsType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.RecoveryOptionType]
+type RecoveryMechanismsType = js.Array[RecoveryOptionType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.verified_email
@@ -377,23 +391,25 @@ type RecoveryMechanismsType = js.Array[typings.awsSdk.cognitoidentityserviceprov
   - typings.awsSdk.awsSdkStrings.admin_only
   - java.lang.String
 */
-type RecoveryOptionNameType = typings.awsSdk.cognitoidentityserviceproviderMod._RecoveryOptionNameType | java.lang.String
+type RecoveryOptionNameType = _RecoveryOptionNameType | String
 
-type RedirectUrlType = java.lang.String
+type RedirectUrlType = String
 
-type RefreshTokenValidityType = scala.Double
+type RefreshTokenValidityType = Double
 
-type ResourceServerIdentifierType = java.lang.String
+type RegionCodeType = String
 
-type ResourceServerNameType = java.lang.String
+type ResourceServerIdentifierType = String
 
-type ResourceServerScopeDescriptionType = java.lang.String
+type ResourceServerNameType = String
 
-type ResourceServerScopeListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.ResourceServerScopeType]
+type ResourceServerScopeDescriptionType = String
 
-type ResourceServerScopeNameType = java.lang.String
+type ResourceServerScopeListType = js.Array[ResourceServerScopeType]
 
-type ResourceServersListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.ResourceServerType]
+type ResourceServerScopeNameType = String
+
+type ResourceServersListType = js.Array[ResourceServerType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NoRisk
@@ -401,7 +417,7 @@ type ResourceServersListType = js.Array[typings.awsSdk.cognitoidentityservicepro
   - typings.awsSdk.awsSdkStrings.Block_
   - java.lang.String
 */
-type RiskDecisionType = typings.awsSdk.cognitoidentityserviceproviderMod._RiskDecisionType | java.lang.String
+type RiskDecisionType = _RiskDecisionType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Low_
@@ -409,67 +425,67 @@ type RiskDecisionType = typings.awsSdk.cognitoidentityserviceproviderMod._RiskDe
   - typings.awsSdk.awsSdkStrings.High_
   - java.lang.String
 */
-type RiskLevelType = typings.awsSdk.cognitoidentityserviceproviderMod._RiskLevelType | java.lang.String
+type RiskLevelType = _RiskLevelType | String
 
-type S3BucketType = java.lang.String
+type S3BucketType = String
 
-type SESConfigurationSet = java.lang.String
+type SESConfigurationSet = String
 
-type SchemaAttributesListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.SchemaAttributeType]
+type SchemaAttributesListType = js.Array[SchemaAttributeType]
 
-type ScopeListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.ScopeType]
+type ScopeListType = js.Array[ScopeType]
 
-type ScopeType = java.lang.String
+type ScopeType = String
 
-type SearchPaginationTokenType = java.lang.String
+type SearchPaginationTokenType = String
 
-type SearchedAttributeNamesListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.AttributeNameType]
+type SearchedAttributeNamesListType = js.Array[AttributeNameType]
 
-type SecretCodeType = java.lang.String
+type SecretCodeType = String
 
-type SecretHashType = java.lang.String
+type SecretHashType = String
 
-type SessionType = java.lang.String
+type SessionType = String
 
-type SkippedIPRangeListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.StringType]
+type SkippedIPRangeListType = js.Array[StringType]
 
-type SmsVerificationMessageType = java.lang.String
+type SmsVerificationMessageType = String
 
-type SoftwareTokenMFAUserCodeType = java.lang.String
+type SoftwareTokenMFAUserCodeType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Enabled_
   - typings.awsSdk.awsSdkStrings.Disabled_
   - java.lang.String
 */
-type StatusType = typings.awsSdk.cognitoidentityserviceproviderMod._StatusType | java.lang.String
+type StatusType = _StatusType | String
 
-type StringType = java.lang.String
+type StringType = String
 
-type SupportedIdentityProvidersListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.ProviderNameType]
+type SupportedIdentityProvidersListType = js.Array[ProviderNameType]
 
-type TagKeysType = java.lang.String
+type TagKeysType = String
 
-type TagValueType = java.lang.String
+type TagValueType = String
 
-type TemporaryPasswordValidityDaysType = scala.Double
+type TemporaryPasswordValidityDaysType = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.seconds__
   - typings.awsSdk.awsSdkStrings.minutes
-  - typings.awsSdk.awsSdkStrings.hours_
-  - typings.awsSdk.awsSdkStrings.days_
+  - typings.awsSdk.awsSdkStrings.hours__
+  - typings.awsSdk.awsSdkStrings.days__
   - java.lang.String
 */
-type TimeUnitsType = typings.awsSdk.cognitoidentityserviceproviderMod._TimeUnitsType | java.lang.String
+type TimeUnitsType = _TimeUnitsType | String
 
-type TokenModelType = java.lang.String
+type TokenModelType = String
 
-type UserFilterType = java.lang.String
+type UserFilterType = String
 
-type UserImportJobIdType = java.lang.String
+type UserImportJobIdType = String
 
-type UserImportJobNameType = java.lang.String
+type UserImportJobNameType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Created_
@@ -482,17 +498,17 @@ type UserImportJobNameType = java.lang.String
   - typings.awsSdk.awsSdkStrings.Succeeded_
   - java.lang.String
 */
-type UserImportJobStatusType = typings.awsSdk.cognitoidentityserviceproviderMod._UserImportJobStatusType | java.lang.String
+type UserImportJobStatusType = _UserImportJobStatusType | String
 
-type UserImportJobsListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.UserImportJobType]
+type UserImportJobsListType = js.Array[UserImportJobType]
 
-type UserMFASettingListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.StringType]
+type UserMFASettingListType = js.Array[StringType]
 
-type UserPoolClientListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.UserPoolClientDescription]
+type UserPoolClientListType = js.Array[UserPoolClientDescription]
 
-type UserPoolIdType = java.lang.String
+type UserPoolIdType = String
 
-type UserPoolListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.UserPoolDescriptionType]
+type UserPoolListType = js.Array[UserPoolDescriptionType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OFF
@@ -500,13 +516,13 @@ type UserPoolListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMo
   - typings.awsSdk.awsSdkStrings.OPTIONAL
   - java.lang.String
 */
-type UserPoolMfaType = typings.awsSdk.cognitoidentityserviceproviderMod._UserPoolMfaType | java.lang.String
+type UserPoolMfaType = _UserPoolMfaType | String
 
-type UserPoolNameType = java.lang.String
+type UserPoolNameType = String
 
-type UserPoolTagsListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.TagKeysType]
+type UserPoolTagsListType = js.Array[TagKeysType]
 
-type UserPoolTagsType = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.cognitoidentityserviceproviderMod.TagValueType]
+type UserPoolTagsType = StringDictionary[TagValueType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UNCONFIRMED
@@ -518,42 +534,42 @@ type UserPoolTagsType = org.scalablytyped.runtime.StringDictionary[typings.awsSd
   - typings.awsSdk.awsSdkStrings.FORCE_CHANGE_PASSWORD
   - java.lang.String
 */
-type UserStatusType = typings.awsSdk.cognitoidentityserviceproviderMod._UserStatusType | java.lang.String
+type UserStatusType = _UserStatusType | String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.phone_number
+  - typings.awsSdk.awsSdkStrings.phone_number_
   - typings.awsSdk.awsSdkStrings.email__
   - java.lang.String
 */
-type UsernameAttributeType = typings.awsSdk.cognitoidentityserviceproviderMod._UsernameAttributeType | java.lang.String
+type UsernameAttributeType = _UsernameAttributeType | String
 
-type UsernameAttributesListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.UsernameAttributeType]
+type UsernameAttributesListType = js.Array[UsernameAttributeType]
 
-type UsernameType = java.lang.String
+type UsernameType = String
 
-type UsersListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.UserType]
+type UsersListType = js.Array[UserType]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.phone_number
+  - typings.awsSdk.awsSdkStrings.phone_number_
   - typings.awsSdk.awsSdkStrings.email__
   - java.lang.String
 */
-type VerifiedAttributeType = typings.awsSdk.cognitoidentityserviceproviderMod._VerifiedAttributeType | java.lang.String
+type VerifiedAttributeType = _VerifiedAttributeType | String
 
-type VerifiedAttributesListType = js.Array[typings.awsSdk.cognitoidentityserviceproviderMod.VerifiedAttributeType]
+type VerifiedAttributesListType = js.Array[VerifiedAttributeType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUCCESS
   - typings.awsSdk.awsSdkStrings.ERROR
   - java.lang.String
 */
-type VerifySoftwareTokenResponseType = typings.awsSdk.cognitoidentityserviceproviderMod._VerifySoftwareTokenResponseType | java.lang.String
+type VerifySoftwareTokenResponseType = _VerifySoftwareTokenResponseType | String
 
-type WrappedBooleanType = scala.Boolean
+type WrappedBooleanType = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2016-04-18`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.cognitoidentityserviceproviderMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

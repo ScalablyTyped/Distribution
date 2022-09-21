@@ -12,7 +12,7 @@ trait ListStreamsInput extends StObject {
   var ExclusiveStartStreamName: js.UndefOr[StreamName] = js.undefined
   
   /**
-    * The maximum number of streams to list.
+    * The maximum number of streams to list. The default value is 100. If you specify a value greater than 100, at most 100 results are returned.
     */
   var Limit: js.UndefOr[ListStreamsInputLimit] = js.undefined
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://easings.net/#easeInQuad
   * @param power Defines the power of the function
   */
-class PowerEase ()
+open class PowerEase ()
   extends typings.babylonjs.indexMod.PowerEase {
   def this(/** Defines the power of the function */
   power: Double) = this()

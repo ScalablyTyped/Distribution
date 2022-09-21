@@ -10,10 +10,10 @@ Finds degree of similarity between strings, based on Dice's Coefficient, which i
 | ------------------ | :-------------: |
 | Full name          | string-similarity |
 | Keywords           | strings, similar, difference, similarity, compare, comparison, degree, match, matching, dice, levenshtein |
-| # releases         | 6 |
-| # dependents       | 214 |
-| # downloads        | 32276980 |
-| # stars            | 14 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 7725934.0 |
+| # stars            | 2362.0 |
 
 ## Links
 - [Homepage](https://github.com/aceakash/string-similarity#readme)

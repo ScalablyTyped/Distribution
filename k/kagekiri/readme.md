@@ -1,7 +1,7 @@
 
 # Scala.js typings for kagekiri
 
-Typings are for version 1.0
+Typings are for version 1.4.2
 
 ## Library description:
 Shadow DOM-piercing querySelector/querySelectorAll implementation
@@ -10,10 +10,10 @@ Shadow DOM-piercing querySelector/querySelectorAll implementation
 | ------------------ | :-------------: |
 | Full name          | kagekiri |
 | Keywords           | shadowdom, shadow, dom, CSS, selector, querySelector, querySelectorAll |
-| # releases         | 15 |
-| # dependents       | 0 |
-| # downloads        | 92251 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 16037.333333333334 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](https://github.com/salesforce/kagekiri#readme)
@@ -24,7 +24,7 @@ Shadow DOM-piercing querySelector/querySelectorAll implementation
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

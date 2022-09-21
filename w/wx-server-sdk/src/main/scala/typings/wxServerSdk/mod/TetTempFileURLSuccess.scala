@@ -20,6 +20,6 @@ object TetTempFileURLSuccess {
     
     inline def setFileList(value: js.Array[ErrMsg]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     
-    inline def setFileListVarargs(value: ErrMsg*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+    inline def setFileListVarargs(value: ErrMsg*): Self = StObject.set(x, "fileList", js.Array(value*))
   }
 }

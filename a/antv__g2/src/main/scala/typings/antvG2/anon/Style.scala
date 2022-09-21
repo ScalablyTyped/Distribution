@@ -1,23 +1,13 @@
 package typings.antvG2.anon
 
-import typings.antvG2.antvG2Strings.cross
-import typings.antvG2.antvG2Strings.rect
-import typings.antvG2.antvG2Strings.x
-import typings.antvG2.antvG2Strings.y
-import typings.antvG2.mod.Styles.background
-import typings.antvG2.mod.Styles.line
+import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Style extends StObject {
   
-  var style: js.UndefOr[background | line] = js.undefined
-  
-  /**
-    * rect 表示矩形框，x 表示水平辅助线，y 表示垂直辅助线，cross 表示十字辅助线
-    */
-  var `type`: js.UndefOr[rect | x | y | cross | typings.antvG2.antvG2Strings.line] = js.undefined
+  var style: js.UndefOr[ShapeAttrs] = js.undefined
 }
 object Style {
   
@@ -28,12 +18,8 @@ object Style {
   
   extension [Self <: Style](x: Self) {
     
-    inline def setStyle(value: background | line): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
-    
-    inline def setType(value: rect | typings.antvG2.antvG2Strings.x | y | cross | typings.antvG2.antvG2Strings.line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

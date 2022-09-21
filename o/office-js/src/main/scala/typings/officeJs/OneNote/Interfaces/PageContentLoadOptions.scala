@@ -5,76 +5,79 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a region on a page that contains top-level content types such as Outline or Image. A PageContent object can be assigned an XY position.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 trait PageContentLoadOptions extends StObject {
   
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the ID of the PageContent object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var image: js.UndefOr[ImageLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var ink: js.UndefOr[FloatingInkLoadOptions] = js.undefined
   
   /**
-    *
     * Gets or sets the left (X-axis) position of the PageContent object.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var left: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var outline: js.UndefOr[OutlineLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the page that contains the PageContent object.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var parentPage: js.UndefOr[PageLoadOptions] = js.undefined
   
   /**
-    *
     * Gets or sets the top (Y-axis) position of the PageContent object.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var top: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the type of the PageContent object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined

@@ -15,7 +15,7 @@ trait UserOwnedGrafeasNote extends StObject {
   var delegationServiceAccountEmail: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The Grafeas resource name of a Attestation.Authority Note, created by the user, in the format: `projects/∗/notes/ *`. This field may not be updated. An attestation by this
+    * Required. The Grafeas resource name of a Attestation.Authority Note, created by the user, in the format: `projects/ *‍/notes/ *`. This field may not be updated. An attestation by this
     * attestor is stored as a Grafeas Attestation.Authority Occurrence that names a container image and that links to this Note. Grafeas is an external dependency.
     */
   var noteReference: js.UndefOr[String] = js.undefined
@@ -47,6 +47,6 @@ object UserOwnedGrafeasNote {
     
     inline def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
     
-    inline def setPublicKeysVarargs(value: AttestorPublicKey*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
+    inline def setPublicKeysVarargs(value: AttestorPublicKey*): Self = StObject.set(x, "publicKeys", js.Array(value*))
   }
 }

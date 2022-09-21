@@ -10,10 +10,10 @@ Parse human-readable date to range of dates.
 | ------------------ | :-------------: |
 | Full name          | parse-human-date-range |
 | Keywords           | date, human, parse, range |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 525 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15.666666666666666 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/niksy/parse-human-date-range#readme)

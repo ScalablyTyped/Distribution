@@ -10,10 +10,10 @@ Unobtrusive Google Maps animated marker
 | ------------------ | :-------------: |
 | Full name          | marker-animate-unobtrusive |
 | Keywords           | Google Maps, marker, marker animation, SlidingMarker |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 30919 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2732.3333333333335 |
+| # stars            | 213.0 |
 
 ## Links
 - [Homepage](https://github.com/terikon/marker-animate-unobtrusive)

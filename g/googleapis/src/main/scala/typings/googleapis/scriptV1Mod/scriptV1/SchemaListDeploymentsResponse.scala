@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response with the list of deployments for the specified Apps Script
-  * project.
-  */
 trait SchemaListDeploymentsResponse extends StObject {
   
   /**
@@ -16,10 +12,9 @@ trait SchemaListDeploymentsResponse extends StObject {
   var deployments: js.UndefOr[js.Array[SchemaDeployment]] = js.undefined
   
   /**
-    * The token that can be used in the next call to get the next page of
-    * results.
+    * The token that can be used in the next call to get the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListDeploymentsResponse {
   
@@ -34,9 +29,11 @@ object SchemaListDeploymentsResponse {
     
     inline def setDeploymentsUndefined: Self = StObject.set(x, "deployments", js.undefined)
     
-    inline def setDeploymentsVarargs(value: SchemaDeployment*): Self = StObject.set(x, "deployments", js.Array(value :_*))
+    inline def setDeploymentsVarargs(value: SchemaDeployment*): Self = StObject.set(x, "deployments", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

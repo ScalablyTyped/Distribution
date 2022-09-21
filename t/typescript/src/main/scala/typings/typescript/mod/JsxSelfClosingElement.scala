@@ -9,6 +9,7 @@ trait JsxSelfClosingElement
   extends StObject
      with PrimaryExpression
      with HasTypeArguments
+     with JsxAttributeValue
      with JsxChild
      with JsxOpeningLikeElement {
   

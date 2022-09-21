@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("storm-react-diagrams", "AbstractFactory")
 @js.native
 abstract class AbstractFactory[T /* <: typings.stormReactDiagrams.baseModelMod.BaseModel[
-typings.stormReactDiagrams.baseEntityMod.BaseEntity[BaseListener[js.Any]], 
+typings.stormReactDiagrams.baseEntityMod.BaseEntity[BaseListener[Any]], 
 BaseModelListener] */] protected ()
   extends typings.stormReactDiagrams.abstractFactoryMod.AbstractFactory[T] {
   def this(name: String) = this()

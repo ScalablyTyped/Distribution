@@ -1,9 +1,7 @@
 package typings.serveStatic
 
-import typings.mime.mod.TypeMap
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.serveStatic.anon.Typeofm
 import typings.serveStatic.serveStaticBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,39 +14,30 @@ object mod {
     * The file to serve will be determined by combining req.url with the provided root directory.
     * When a file is not found, instead of sending a 404 response, this module will instead call next() to move on to the next middleware, allowing for stacking and fall-backs.
     */
-  inline def apply[R /* <: ServerResponse */](root: String): RequestHandler[R] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[R]]
-  inline def apply[R /* <: ServerResponse */](root: String, options: ServeStaticOptions[R]): RequestHandler[R] = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[R]]
+  inline def apply[R /* <: ServerResponse[IncomingMessage] */](root: String): RequestHandler[R] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[R]]
+  inline def apply[R /* <: ServerResponse[IncomingMessage] */](root: String, options: ServeStaticOptions[R]): RequestHandler[R] = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[R]]
   
   @JSImport("serve-static", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  object mime {
-    
-    @JSImport("serve-static", "mime")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def define(mimes: TypeMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def define(mimes: TypeMap, force: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def getExtension(mime: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(mime.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-    
-    inline def getType(path: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  }
+  @JSImport("serve-static", "mime")
+  @js.native
+  def mime: typings.mime.mimeMod.^ = js.native
+  inline def mime_=(x: typings.mime.mimeMod.^): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mime")(x.asInstanceOf[js.Any])
   
-  type RequestHandler[R /* <: ServerResponse */] = js.Function3[/* request */ IncomingMessage, /* response */ R, /* next */ js.Function0[Unit], js.Any]
+  type RequestHandler[R /* <: ServerResponse[IncomingMessage] */] = js.Function3[/* request */ IncomingMessage, /* response */ R, /* next */ js.Function0[Unit], Any]
   
   @js.native
-  trait RequestHandlerConstructor[R /* <: ServerResponse */] extends StObject {
+  trait RequestHandlerConstructor[R /* <: ServerResponse[IncomingMessage] */] extends StObject {
     
     def apply(root: String): RequestHandler[R] = js.native
     def apply(root: String, options: ServeStaticOptions[R]): RequestHandler[R] = js.native
     
-    var mime: Typeofm = js.native
+    var mime: typings.mime.mimeMod.^ = js.native
   }
   
-  trait ServeStaticOptions[R /* <: ServerResponse */] extends StObject {
+  trait ServeStaticOptions[R /* <: ServerResponse[IncomingMessage] */] extends StObject {
     
     /**
       * Enable or disable setting Cache-Control response header, defaults to true.
@@ -119,16 +108,16 @@ object mod {
       * path the file path that is being sent
       * stat the stat object of the file that is being sent
       */
-    var setHeaders: js.UndefOr[js.Function3[/* res */ R, /* path */ String, /* stat */ js.Any, js.Any]] = js.undefined
+    var setHeaders: js.UndefOr[js.Function3[/* res */ R, /* path */ String, /* stat */ Any, Any]] = js.undefined
   }
   object ServeStaticOptions {
     
-    inline def apply[R /* <: ServerResponse */](): ServeStaticOptions[R] = {
+    inline def apply[R /* <: ServerResponse[IncomingMessage] */](): ServeStaticOptions[R] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServeStaticOptions[R]]
     }
     
-    extension [Self <: ServeStaticOptions[?], R /* <: ServerResponse */](x: Self & ServeStaticOptions[R]) {
+    extension [Self <: ServeStaticOptions[?], R /* <: ServerResponse[IncomingMessage] */](x: Self & ServeStaticOptions[R]) {
       
       inline def setCacheControl(value: Boolean): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
       
@@ -146,7 +135,7 @@ object mod {
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setFallthrough(value: Boolean): Self = StObject.set(x, "fallthrough", value.asInstanceOf[js.Any])
       
@@ -160,7 +149,7 @@ object mod {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
       
       inline def setLastModified(value: Boolean): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       
@@ -174,7 +163,7 @@ object mod {
       
       inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
       
-      inline def setSetHeaders(value: (/* res */ R, /* path */ String, /* stat */ js.Any) => js.Any): Self = StObject.set(x, "setHeaders", js.Any.fromFunction3(value))
+      inline def setSetHeaders(value: (/* res */ R, /* path */ String, /* stat */ Any) => Any): Self = StObject.set(x, "setHeaders", js.Any.fromFunction3(value))
       
       inline def setSetHeadersUndefined: Self = StObject.set(x, "setHeaders", js.undefined)
     }

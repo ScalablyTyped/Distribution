@@ -29,7 +29,7 @@ object DescribeImportImageTasksResult {
     
     inline def setImportImageTasksUndefined: Self = StObject.set(x, "ImportImageTasks", js.undefined)
     
-    inline def setImportImageTasksVarargs(value: ImportImageTask*): Self = StObject.set(x, "ImportImageTasks", js.Array(value :_*))
+    inline def setImportImageTasksVarargs(value: ImportImageTask*): Self = StObject.set(x, "ImportImageTasks", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

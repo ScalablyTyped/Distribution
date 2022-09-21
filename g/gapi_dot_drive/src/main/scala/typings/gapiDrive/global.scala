@@ -37,9 +37,9 @@ object global {
           
           inline def copy(parameters: CopyParameters): HttpRequest[FileResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[FileResource]]
           
-          inline def delete(parameters: DeleteParameters): HttpRequest[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[js.Any]]
+          inline def delete(parameters: DeleteParameters): HttpRequest[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Any]]
           
-          inline def emptyTrash(): HttpRequest[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyTrash")().asInstanceOf[HttpRequest[js.Any]]
+          inline def emptyTrash(): HttpRequest[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyTrash")().asInstanceOf[HttpRequest[Any]]
           
           inline def `export`(parameters: ExportParameters): HttpRequest[FileResource] = ^.asInstanceOf[js.Dynamic].applyDynamic("export")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[FileResource]]
           

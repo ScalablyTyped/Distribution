@@ -35,7 +35,7 @@ object TooltipOptions {
     
     inline def setAdditional_inheritable_classesUndefined: Self = StObject.set(x, "additional_inheritable_classes", js.undefined)
     
-    inline def setAdditional_inheritable_classesVarargs(value: String*): Self = StObject.set(x, "additional_inheritable_classes", js.Array(value :_*))
+    inline def setAdditional_inheritable_classesVarargs(value: String*): Self = StObject.set(x, "additional_inheritable_classes", js.Array(value*))
     
     inline def setAppend_to(value: String): Self = StObject.set(x, "append_to", value.asInstanceOf[js.Any])
     

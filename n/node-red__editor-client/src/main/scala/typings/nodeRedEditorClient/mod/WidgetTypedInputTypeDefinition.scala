@@ -1,6 +1,5 @@
 package typings.nodeRedEditorClient.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait WidgetTypedInputTypeDefinition extends StObject {
   var options: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A function to validate the value for the type. */
-  var validate: js.UndefOr[(js.Function1[/* v */ String, Boolean]) | RegExp] = js.undefined
+  var validate: js.UndefOr[(js.Function1[/* v */ String, Boolean]) | js.RegExp] = js.undefined
   
   /** The identifier for the type */
   var value: String
@@ -50,9 +49,9 @@ object WidgetTypedInputTypeDefinition {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value*))
     
-    inline def setValidate(value: (js.Function1[/* v */ String, Boolean]) | RegExp): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(value: (js.Function1[/* v */ String, Boolean]) | js.RegExp): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
     inline def setValidateFunction1(value: /* v */ String => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     

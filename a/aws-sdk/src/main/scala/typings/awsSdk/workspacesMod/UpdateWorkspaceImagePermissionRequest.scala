@@ -17,7 +17,7 @@ trait UpdateWorkspaceImagePermissionRequest extends StObject {
   var ImageId: WorkspaceImageId
   
   /**
-    * The identifier of the AWS account to share or unshare the image with.  Before sharing the image, confirm that you are sharing to the correct AWS account ID. 
+    * The identifier of the Amazon Web Services account to share or unshare the image with.  Before sharing the image, confirm that you are sharing to the correct Amazon Web Services account ID. 
     */
   var SharedAccountId: AwsAccount
 }

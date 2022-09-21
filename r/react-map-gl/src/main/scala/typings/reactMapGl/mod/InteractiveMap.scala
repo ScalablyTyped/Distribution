@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-map-gl", "InteractiveMap")
 @js.native
-class InteractiveMap protected ()
-  extends PureComponent[InteractiveMapProps, js.Object, js.Any] {
+open class InteractiveMap protected ()
+  extends PureComponent[InteractiveMapProps, js.Object, Any] {
   def this(props: InteractiveMapProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: InteractiveMapProps, context: js.Any) = this()
+  def this(props: InteractiveMapProps, context: Any) = this()
   
   def getMap(): Map = js.native
   

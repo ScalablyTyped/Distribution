@@ -10,10 +10,10 @@ Utility functions for dealing with network interfaces and IP addresses in Node.j
 | ------------------ | :-------------: |
 | Full name          | network-interfaces |
 | Keywords           | interface, interfaces, network, ip |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 20410 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 985.3333333333334 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/Wizcorp/network-interfaces#readme)

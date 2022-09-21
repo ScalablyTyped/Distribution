@@ -1,9 +1,5 @@
 package typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,32 +9,17 @@ trait ParamsResourceOrganizationsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * An optional query string used to filter the Organizations to return in
-    * the response. Filter rules are case-insensitive.   Organizations may be
-    * filtered by `owner.directoryCustomerId` or by `domain`, where the domain
-    * is a G Suite domain, for example:  |Filter|Description|
-    * |------|-----------| |owner.directorycustomerid:123456789|Organizations
-    * with `owner.directory_customer_id` equal to `123456789`.|
-    * |domain:google.com|Organizations corresponding to the domain
-    * `google.com`.|  This field is optional.
+    * An optional query string used to filter the Organizations to return in the response. Filter rules are case-insensitive. Organizations may be filtered by `owner.directoryCustomerId` or by `domain`, where the domain is a G Suite domain, for example: * Filter `owner.directorycustomerid:123456789` returns Organization resources with `owner.directory_customer_id` equal to `123456789`. * Filter `domain:google.com` returns Organization resources corresponding to the domain `google.com`. This field is optional.
     */
   var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of Organizations to return in the response. This field
-    * is optional.
+    * The maximum number of Organizations to return in the response. This field is optional.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * A pagination token returned from a previous call to `ListOrganizations`
-    * that indicates from where listing should continue. This field is
-    * optional.
+    * A pagination token returned from a previous call to `ListOrganizations` that indicates from where listing should continue. This field is optional.
     */
   var pageToken: js.UndefOr[String] = js.undefined
 }
@@ -50,10 +31,6 @@ object ParamsResourceOrganizationsList {
   }
   
   extension [Self <: ParamsResourceOrganizationsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

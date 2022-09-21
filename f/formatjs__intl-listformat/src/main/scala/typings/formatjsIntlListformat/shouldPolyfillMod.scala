@@ -10,5 +10,6 @@ object shouldPolyfillMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def shouldPolyfill(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldPolyfill")().asInstanceOf[Boolean]
+  inline def shouldPolyfill(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldPolyfill")().asInstanceOf[js.UndefOr[String]]
+  inline def shouldPolyfill(locale: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldPolyfill")(locale.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

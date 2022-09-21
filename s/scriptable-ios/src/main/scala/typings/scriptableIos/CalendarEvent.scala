@@ -5,7 +5,6 @@ import typings.scriptableIos.scriptableIosStrings.busy
 import typings.scriptableIos.scriptableIosStrings.free
 import typings.scriptableIos.scriptableIosStrings.tentative
 import typings.scriptableIos.scriptableIosStrings.unavailable
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,7 +70,7 @@ trait CalendarEvent extends StObject {
     * _End date of event._
     * @see https://docs.scriptable.app/calendarevent/#enddate
     */
-  var endDate: Date
+  var endDate: js.Date
   
   /**
     * _Identifier of event._
@@ -129,7 +128,7 @@ trait CalendarEvent extends StObject {
     * _Start date of event._
     * @see https://docs.scriptable.app/calendarevent/#startdate
     */
-  var startDate: Date
+  var startDate: js.Date
   
   /**
     * _Time zone of event._
@@ -152,7 +151,7 @@ object CalendarEvent {
     attendees: js.Array[Attendees],
     availability: busy | free | tentative | unavailable,
     calendar: Calendar,
-    endDate: Date,
+    endDate: js.Date,
     identifier: String,
     isAllDay: Boolean,
     location: String,
@@ -161,7 +160,7 @@ object CalendarEvent {
     remove: () => Unit,
     removeAllRecurrenceRules: () => Unit,
     save: () => Unit,
-    startDate: Date,
+    startDate: js.Date,
     timeZone: String,
     title: String
   ): CalendarEvent = {
@@ -209,13 +208,13 @@ object CalendarEvent {
     
     inline def setAttendees(value: js.Array[Attendees]): Self = StObject.set(x, "attendees", value.asInstanceOf[js.Any])
     
-    inline def setAttendeesVarargs(value: Attendees*): Self = StObject.set(x, "attendees", js.Array(value :_*))
+    inline def setAttendeesVarargs(value: Attendees*): Self = StObject.set(x, "attendees", js.Array(value*))
     
     inline def setAvailability(value: busy | free | tentative | unavailable): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
     inline def setCalendar(value: Calendar): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
-    inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
@@ -233,7 +232,7 @@ object CalendarEvent {
     
     inline def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
     
-    inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     

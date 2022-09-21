@@ -69,14 +69,9 @@ object Widgets {
     
     def disassociateComposeView(): Unit = js.native
     
-    @JSName("on")
-    def on_closing(name: closing, cb: js.Function0[Unit]): Unit = js.native
-    @JSName("on")
-    def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit = js.native
+    def on(name: destroy | slideAnimationDone | closing, cb: js.Function0[Unit]): Unit = js.native
     @JSName("on")
     def on_preautoclose(name: preautoclose, cb: js.Function1[/* event */ PreAutoCloseEvent, Unit]): Unit = js.native
-    @JSName("on")
-    def on_slideAnimationDone(name: slideAnimationDone, cb: js.Function0[Unit]): Unit = js.native
   }
   
   trait ModalButtonDescriptor extends StObject {
@@ -149,7 +144,7 @@ object Widgets {
       
       inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      inline def setButtonsVarargs(value: ModalButtonDescriptor*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: ModalButtonDescriptor*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       
@@ -273,7 +268,7 @@ object Widgets {
       
       inline def setTitleButtonsUndefined: Self = StObject.set(x, "titleButtons", js.undefined)
       
-      inline def setTitleButtonsVarargs(value: MoleButtonDescriptor*): Self = StObject.set(x, "titleButtons", js.Array(value :_*))
+      inline def setTitleButtonsVarargs(value: MoleButtonDescriptor*): Self = StObject.set(x, "titleButtons", js.Array(value*))
       
       inline def setTitleEl(value: HTMLElement): Self = StObject.set(x, "titleEl", value.asInstanceOf[js.Any])
       
@@ -283,25 +278,48 @@ object Widgets {
     }
   }
   
-  @js.native
   trait MoleView extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    var destroyed: Boolean = js.native
+    var destroyed: Boolean
     
-    def getMinimized(): Boolean = js.native
+    def getMinimized(): Boolean
     
-    @JSName("on")
-    def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit = js.native
-    @JSName("on")
-    def on_minimize(name: minimize, cb: js.Function0[Unit]): Unit = js.native
-    @JSName("on")
-    def on_restore(name: restore, cb: js.Function0[Unit]): Unit = js.native
+    def on(name: destroy | minimize | restore, cb: js.Function0[Unit]): Unit
     
-    def setMinimized(minimized: Boolean): Unit = js.native
+    def setMinimized(minimized: Boolean): Unit
     
-    def setTitle(text: String): Unit = js.native
+    def setTitle(text: String): Unit
+  }
+  object MoleView {
+    
+    inline def apply(
+      close: () => Unit,
+      destroyed: Boolean,
+      getMinimized: () => Boolean,
+      on: (destroy | minimize | restore, js.Function0[Unit]) => Unit,
+      setMinimized: Boolean => Unit,
+      setTitle: String => Unit
+    ): MoleView = {
+      val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), destroyed = destroyed.asInstanceOf[js.Any], getMinimized = js.Any.fromFunction0(getMinimized), on = js.Any.fromFunction2(on), setMinimized = js.Any.fromFunction1(setMinimized), setTitle = js.Any.fromFunction1(setTitle))
+      __obj.asInstanceOf[MoleView]
+    }
+    
+    extension [Self <: MoleView](x: Self) {
+      
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      
+      inline def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
+      
+      inline def setGetMinimized(value: () => Boolean): Self = StObject.set(x, "getMinimized", js.Any.fromFunction0(value))
+      
+      inline def setOn(value: (destroy | minimize | restore, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      
+      inline def setSetMinimized(value: Boolean => Unit): Self = StObject.set(x, "setMinimized", js.Any.fromFunction1(value))
+      
+      inline def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    }
   }
   
   trait WidgetsInstance extends StObject {

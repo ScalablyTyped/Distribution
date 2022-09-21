@@ -35,9 +35,9 @@ trait WebCreationInformation
 object WebCreationInformation {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_description: () => String,
     get_language: () => Double,
     get_title: () => String,

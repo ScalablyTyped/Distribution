@@ -21,6 +21,8 @@ trait InlineKeyboardButton extends StObject {
   var text: String
   
   var url: js.UndefOr[String] = js.undefined
+  
+  var web_app: js.UndefOr[WebAppInfo] = js.undefined
 }
 object InlineKeyboardButton {
   
@@ -60,5 +62,9 @@ object InlineKeyboardButton {
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setWeb_app(value: WebAppInfo): Self = StObject.set(x, "web_app", value.asInstanceOf[js.Any])
+    
+    inline def setWeb_appUndefined: Self = StObject.set(x, "web_app", js.undefined)
   }
 }

@@ -12,20 +12,20 @@ trait IXSLProcessor extends StObject {
   var MSXML2DotIXSLProcessor_typekey: IXSLProcessor = js.native
   
   /** pass object to stylesheet */
-  def addObject(obj: js.Any, namespaceURI: String): Unit = js.native
+  def addObject(obj: Any, namespaceURI: String): Unit = js.native
   
   /**
     * set <xsl:param> values
     * @param namespaceURI [namespaceURI='0']
     */
-  def addParameter(baseName: String, parameter: js.Any): Unit = js.native
-  def addParameter(baseName: String, parameter: js.Any, namespaceURI: String): Unit = js.native
+  def addParameter(baseName: String, parameter: Any): Unit = js.native
+  def addParameter(baseName: String, parameter: Any, namespaceURI: String): Unit = js.native
   
   /** XML input tree to transform */
-  var input: js.Any = js.native
+  var input: Any = js.native
   
   /** custom stream object for transform output */
-  var output: js.Any = js.native
+  var output: Any = js.native
   
   /** template object used to create this processor object */
   val ownerTemplate: XSLTemplate60 = js.native

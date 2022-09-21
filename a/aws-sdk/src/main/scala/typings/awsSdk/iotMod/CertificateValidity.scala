@@ -9,12 +9,12 @@ trait CertificateValidity extends StObject {
   /**
     * The certificate is not valid after this date.
     */
-  var notAfter: js.UndefOr[DateType] = js.undefined
+  var notAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The certificate is not valid before this date.
     */
-  var notBefore: js.UndefOr[DateType] = js.undefined
+  var notBefore: js.UndefOr[js.Date] = js.undefined
 }
 object CertificateValidity {
   
@@ -25,11 +25,11 @@ object CertificateValidity {
   
   extension [Self <: CertificateValidity](x: Self) {
     
-    inline def setNotAfter(value: DateType): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
+    inline def setNotAfter(value: js.Date): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
     
     inline def setNotAfterUndefined: Self = StObject.set(x, "notAfter", js.undefined)
     
-    inline def setNotBefore(value: DateType): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
+    inline def setNotBefore(value: js.Date): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
     
     inline def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
   }

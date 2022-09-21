@@ -50,7 +50,7 @@ object XEmbedObjectFactory {
   inline def apply(
     acquire: () => Unit,
     createInstanceUserInit: (SeqEquiv[Double], String, XStorage, String, Double, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XEmbedObjectFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createInstanceUserInit = js.Any.fromFunction7(createInstanceUserInit), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

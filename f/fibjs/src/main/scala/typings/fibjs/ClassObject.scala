@@ -16,6 +16,6 @@ trait ClassObject extends StObject {
     * 
     * 
     */
-  def toJSON(): js.Any = js.native
-  def toJSON(key: String): js.Any = js.native
+  def toJSON(): Any = js.native
+  def toJSON(key: String): Any = js.native
 }

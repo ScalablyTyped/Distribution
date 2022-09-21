@@ -63,7 +63,7 @@ object GoogleCloudDatalabelingV1alpha1HumanAnnotationConfig {
     
     inline def setContributorEmailsUndefined: Self = StObject.set(x, "contributorEmails", js.undefined)
     
-    inline def setContributorEmailsVarargs(value: String*): Self = StObject.set(x, "contributorEmails", js.Array(value :_*))
+    inline def setContributorEmailsVarargs(value: String*): Self = StObject.set(x, "contributorEmails", js.Array(value*))
     
     inline def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
     

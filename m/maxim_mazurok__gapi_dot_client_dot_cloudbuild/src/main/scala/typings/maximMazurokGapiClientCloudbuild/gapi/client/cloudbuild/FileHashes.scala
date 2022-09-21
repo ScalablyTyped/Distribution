@@ -22,6 +22,6 @@ object FileHashes {
     
     inline def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
     
-    inline def setFileHashVarargs(value: Hash*): Self = StObject.set(x, "fileHash", js.Array(value :_*))
+    inline def setFileHashVarargs(value: Hash*): Self = StObject.set(x, "fileHash", js.Array(value*))
   }
 }

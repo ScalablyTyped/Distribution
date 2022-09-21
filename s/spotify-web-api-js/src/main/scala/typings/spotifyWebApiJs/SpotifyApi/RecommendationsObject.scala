@@ -25,10 +25,10 @@ object RecommendationsObject {
     
     inline def setSeeds(value: js.Array[RecommendationsSeedObject]): Self = StObject.set(x, "seeds", value.asInstanceOf[js.Any])
     
-    inline def setSeedsVarargs(value: RecommendationsSeedObject*): Self = StObject.set(x, "seeds", js.Array(value :_*))
+    inline def setSeedsVarargs(value: RecommendationsSeedObject*): Self = StObject.set(x, "seeds", js.Array(value*))
     
     inline def setTracks(value: js.Array[TrackObjectSimplified]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
-    inline def setTracksVarargs(value: TrackObjectSimplified*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: TrackObjectSimplified*): Self = StObject.set(x, "tracks", js.Array(value*))
   }
 }

@@ -39,7 +39,7 @@ object ConfigChange {
     
     inline def setAdvicesUndefined: Self = StObject.set(x, "advices", js.undefined)
     
-    inline def setAdvicesVarargs(value: Advice*): Self = StObject.set(x, "advices", js.Array(value :_*))
+    inline def setAdvicesVarargs(value: Advice*): Self = StObject.set(x, "advices", js.Array(value*))
     
     inline def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     

@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains the collection of {@link Word.CustomProperty} objects.
   *
+  * @remarks
   * [Api set: WordApi 1.3]
   */
 @js.native
@@ -24,12 +24,13 @@ trait CustomPropertyCollection
   /**
     * Creates a new or sets an existing custom property.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     *
     * @param key Required. The custom property's key, which is case-insensitive.
     * @param value Required. The custom property's value.
     */
-  def add(key: String, value: js.Any): CustomProperty = js.native
+  def add(key: String, value: Any): CustomProperty = js.native
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -38,6 +39,7 @@ trait CustomPropertyCollection
   /**
     * Deletes all custom properties in this collection.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   def deleteAll(): Unit = js.native
@@ -45,6 +47,7 @@ trait CustomPropertyCollection
   /**
     * Gets the count of custom properties.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   def getCount(): ClientResult[Double] = js.native
@@ -52,6 +55,7 @@ trait CustomPropertyCollection
   /**
     * Gets a custom property object by its key, which is case-insensitive. Throws an error if the custom property does not exist.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     *
     * @param key The key that identifies the custom property object.
@@ -61,6 +65,7 @@ trait CustomPropertyCollection
   /**
     * Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property does not exist.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     *
     * @param key Required. The key that identifies the custom property object.
@@ -88,12 +93,12 @@ trait CustomPropertyCollection
   def toJSON(): CustomPropertyCollectionData = js.native
   
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     */
   def track(): CustomPropertyCollection = js.native
   
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): CustomPropertyCollection = js.native
 }

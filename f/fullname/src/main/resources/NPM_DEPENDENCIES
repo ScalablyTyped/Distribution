@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fullname" : "4.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fullname" : "4.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

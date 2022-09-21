@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-resizable
 
-Typings are for version 1.7
+Typings are for version 3.0
 
 ## Library description:
 A component that is resizable with handles.
@@ -10,15 +10,12 @@ A component that is resizable with handles.
 | ------------------ | :-------------: |
 | Full name          | react-resizable |
 | Keywords           | react, resize, resizable |
-| # releases         | 7 |
-| # dependents       | 295 |
-| # downloads        | 8120653 |
-| # stars            | 4 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1954087.6666666667 |
+| # stars            | 1829.0 |
 
 ## Links
-- [Homepage](https://github.com/STRML/react-resizable)
-- [Bugs](https://github.com/STRML/react-resizable/issues)
-- [Repository](https://github.com/STRML/react-resizable)
 - [Npm](https://www.npmjs.com/package/react-resizable)
     
 

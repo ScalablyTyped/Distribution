@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "page.toJSON()". */
+/** An interface describing the data returned by calling `page.toJSON()`. */
 trait PageData extends StObject {
   
   /**
@@ -92,13 +92,13 @@ object PageData {
     
     inline def setAllShapesUndefined: Self = StObject.set(x, "allShapes", js.undefined)
     
-    inline def setAllShapesVarargs(value: ShapeData*): Self = StObject.set(x, "allShapes", js.Array(value :_*))
+    inline def setAllShapesVarargs(value: ShapeData*): Self = StObject.set(x, "allShapes", js.Array(value*))
     
     inline def setComments(value: js.Array[CommentData]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    inline def setCommentsVarargs(value: CommentData*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: CommentData*): Self = StObject.set(x, "comments", js.Array(value*))
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
@@ -120,7 +120,7 @@ object PageData {
     
     inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    inline def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value*))
     
     inline def setView(value: PageViewData): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

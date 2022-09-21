@@ -10,15 +10,15 @@ Array quantifier assertions for chai assertion library
 | ------------------ | :-------------: |
 | Full name          | chai-quantifiers |
 | Keywords           | chai, assertions, chai-plugin, quantifiers, array |
-| # releases         | 10 |
-| # dependents       | 0 |
-| # downloads        | 90072 |
-| # stars            | 1 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 4511.0 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/frankthelen/chai-quantifiers#readme)
-- [Bugs](https://github.com/frankthelen/chai-quantifiers/issues)
-- [Repository](https://github.com/frankthelen/chai-quantifiers)
+- [Homepage](https://github.com/funny-bytes/chai-quantifiers#readme)
+- [Bugs](https://github.com/funny-bytes/chai-quantifiers/issues)
+- [Repository](https://github.com/funny-bytes/chai-quantifiers)
 - [Npm](https://www.npmjs.com/package/chai-quantifiers)
     
 

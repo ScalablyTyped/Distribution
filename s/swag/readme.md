@@ -11,14 +11,11 @@ Give your handlebars.js templates some swag son!
 | Full name          | swag |
 | Keywords           | swag, handlebars, templates, helpers, utilities |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 48092 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 11839.666666666666 |
+| # stars            | 674.0 |
 
 ## Links
-- [Homepage](https://github.com/elving/swag)
-- [Bugs](https://github.com/elving/swag/issues)
-- [Repository](https://github.com/elving/swag)
 - [Npm](https://www.npmjs.com/package/swag)
     
 

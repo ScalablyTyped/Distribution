@@ -10,10 +10,10 @@ A library that contains simple extensions for nodejs arrays.
 | ------------------ | :-------------: |
 | Full name          | node-array-ext |
 | Keywords           | node, array, extension, async |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 647 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 47.666666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/node-array-ext)

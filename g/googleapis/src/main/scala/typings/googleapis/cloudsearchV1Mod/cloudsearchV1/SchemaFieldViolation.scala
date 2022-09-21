@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaFieldViolation extends StObject {
   
   /**
-    * Description of the error.
+    * The description of the error.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Path of field with violation.
     */
-  var field: js.UndefOr[String] = js.undefined
+  var field: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFieldViolation {
   
@@ -27,9 +27,13 @@ object SchemaFieldViolation {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldNull: Self = StObject.set(x, "field", null)
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }

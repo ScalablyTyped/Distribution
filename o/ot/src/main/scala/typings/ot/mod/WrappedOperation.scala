@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ot", "WrappedOperation")
 @js.native
-class WrappedOperation[T] protected () extends StObject {
+open class WrappedOperation[T] protected () extends StObject {
   def this(operation: TextOperation) = this()
   def this(operation: TextOperation, meta: T) = this()
   

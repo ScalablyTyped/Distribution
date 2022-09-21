@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the format properties for chart gridlines.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait ChartGridlinesFormatLoadOptions extends StObject {
@@ -19,9 +19,9 @@ trait ChartGridlinesFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents chart line formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var line: js.UndefOr[ChartLineFormatLoadOptions] = js.undefined

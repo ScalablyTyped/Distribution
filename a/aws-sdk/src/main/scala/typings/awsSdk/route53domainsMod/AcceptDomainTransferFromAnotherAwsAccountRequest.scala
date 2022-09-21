@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcceptDomainTransferFromAnotherAwsAccountRequest extends StObject {
   
   /**
-    * The name of the domain that was specified when another AWS account submitted a TransferDomainToAnotherAwsAccount request. 
+    * The name of the domain that was specified when another Amazon Web Services account submitted a TransferDomainToAnotherAwsAccount request. 
     */
   var DomainName: typings.awsSdk.route53domainsMod.DomainName
   

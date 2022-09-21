@@ -1,17 +1,16 @@
 package typings.getValue
 
 import typings.std.Record
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(obj: js.Object, key: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(obj: js.Object, key: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(obj: js.Object, key: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(obj: js.Object, key: js.Array[String], options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(obj: js.Object, key: String): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(obj: js.Object, key: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(obj: js.Object, key: js.Array[String]): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(obj: js.Object, key: js.Array[String], options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def apply[T](obj: T): T = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[T]
   
   @JSImport("get-value", JSImport.Namespace)
@@ -25,13 +24,13 @@ object mod {
       *
       * default: `undefined`
       */
-    var default: js.UndefOr[js.Any] = js.undefined
+    var default: js.UndefOr[Any] = js.undefined
     
     /**
       * If defined, this function is called on each resolved value.
       * Useful if you want to do `.hasOwnProperty` or `Object.prototype.propertyIsEnumerable`.
       */
-    var isValid: js.UndefOr[js.Function2[/* key */ String, /* object */ Record[String, js.Any], Boolean]] = js.undefined
+    var isValid: js.UndefOr[js.Function2[/* key */ String, /* object */ Record[String, Any], Boolean]] = js.undefined
     
     /**
       * Customize how the object path is created when iterating over path segments.
@@ -55,7 +54,7 @@ object mod {
       *
       *  default: `"."`
       */
-    var separator: js.UndefOr[String | RegExp] = js.undefined
+    var separator: js.UndefOr[String | js.RegExp] = js.undefined
     
     /**
       * Custom function to use for splitting the string into object path segments.
@@ -73,11 +72,11 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setIsValid(value: (/* key */ String, /* object */ Record[String, js.Any]) => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction2(value))
+      inline def setIsValid(value: (/* key */ String, /* object */ Record[String, Any]) => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction2(value))
       
       inline def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
       
@@ -89,7 +88,7 @@ object mod {
       
       inline def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
       
-      inline def setSeparator(value: String | RegExp): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String | js.RegExp): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
       inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       

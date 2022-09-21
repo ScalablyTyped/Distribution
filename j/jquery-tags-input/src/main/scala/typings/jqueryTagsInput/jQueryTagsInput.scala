@@ -103,7 +103,7 @@ object jQueryTagsInput {
       
       inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      inline def setDelimiterVarargs(value: String*): Self = StObject.set(x, "delimiter", js.Array(value :_*))
+      inline def setDelimiterVarargs(value: String*): Self = StObject.set(x, "delimiter", js.Array(value*))
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

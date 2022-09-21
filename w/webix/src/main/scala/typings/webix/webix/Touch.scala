@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Touch extends StObject {
   
-  var config: js.Any
+  var config: Any
   
   def disable(): Unit
   
@@ -20,7 +20,7 @@ trait Touch extends StObject {
 object Touch {
   
   inline def apply(
-    config: js.Any,
+    config: Any,
     disable: () => Unit,
     enable: () => Unit,
     limit: Boolean => Unit,
@@ -32,7 +32,7 @@ object Touch {
   
   extension [Self <: Touch](x: Self) {
     
-    inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     

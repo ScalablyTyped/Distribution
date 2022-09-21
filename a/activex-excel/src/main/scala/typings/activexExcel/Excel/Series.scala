@@ -24,7 +24,7 @@ trait Series extends StObject {
     ShowPercentage: js.UndefOr[Boolean],
     ShowBubbleSize: js.UndefOr[Boolean],
     Separator: js.UndefOr[String]
-  ): js.Any = js.native
+  ): Any = js.native
   
   var ApplyPictToEnd: Boolean = js.native
   
@@ -42,9 +42,9 @@ trait Series extends StObject {
   
   var ChartType: XlChartType = js.native
   
-  def ClearFormats(): js.Any = js.native
+  def ClearFormats(): Any = js.native
   
-  def Copy(): js.Any = js.native
+  def Copy(): Any = js.native
   
   val Creator: XlCreator = js.native
   
@@ -52,24 +52,24 @@ trait Series extends StObject {
   @JSName("DataLabels")
   var DataLabels_Original: DataLabels & (js.Function1[/* Index */ Double, DataLabel]) = js.native
   
-  def Delete(): js.Any = js.native
+  def Delete(): Any = js.native
   
-  def ErrorBar(Direction: XlErrorBarDirection, Include: XlErrorBarInclude, Type: XlErrorBarType): js.Any = js.native
-  def ErrorBar(Direction: XlErrorBarDirection, Include: XlErrorBarInclude, Type: XlErrorBarType, Amount: js.Any): js.Any = js.native
+  def ErrorBar(Direction: XlErrorBarDirection, Include: XlErrorBarInclude, Type: XlErrorBarType): Any = js.native
+  def ErrorBar(Direction: XlErrorBarDirection, Include: XlErrorBarInclude, Type: XlErrorBarType, Amount: Any): Any = js.native
   def ErrorBar(
     Direction: XlErrorBarDirection,
     Include: XlErrorBarInclude,
     Type: XlErrorBarType,
-    Amount: js.Any,
-    MinusValues: js.Any
-  ): js.Any = js.native
+    Amount: Any,
+    MinusValues: Any
+  ): Any = js.native
   def ErrorBar(
     Direction: XlErrorBarDirection,
     Include: XlErrorBarInclude,
     Type: XlErrorBarType,
     Amount: Unit,
-    MinusValues: js.Any
-  ): js.Any = js.native
+    MinusValues: Any
+  ): Any = js.native
   
   val ErrorBars: typings.activexExcel.Excel.ErrorBars = js.native
   
@@ -122,9 +122,9 @@ trait Series extends StObject {
   
   var Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def Paste(): js.Any = js.native
+  def Paste(): Any = js.native
   
   var PictureType: XlChartPictureType = js.native
   
@@ -140,7 +140,7 @@ trait Series extends StObject {
   @JSName("Points")
   var Points_Original: Points & (js.Function1[/* Index */ Double, Point]) = js.native
   
-  def Select(): js.Any = js.native
+  def Select(): Any = js.native
   
   var Shadow: Boolean = js.native
   
@@ -158,20 +158,20 @@ trait Series extends StObject {
   var XValues: Range | SafeArray[Double] = js.native
   
   /** @param Type [Type=2] */
-  def _ApplyDataLabels(): js.Any = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(): Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any): Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any, AutoText: Any): Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any, AutoText: Any, HasLeaderLines: Any): Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any, AutoText: Unit, HasLeaderLines: Any): Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Any): Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Any, HasLeaderLines: Any): Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Unit, HasLeaderLines: Any): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any, AutoText: Any): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any, AutoText: Any, HasLeaderLines: Any): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any, AutoText: Unit, HasLeaderLines: Any): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Any): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Any, HasLeaderLines: Any): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Unit, HasLeaderLines: Any): Any = js.native
 }

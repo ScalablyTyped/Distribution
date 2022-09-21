@@ -46,7 +46,7 @@ object DeviceComplianceActionItem {
     
     inline def setNotificationMessageCCListUndefined: Self = StObject.set(x, "notificationMessageCCList", js.undefined)
     
-    inline def setNotificationMessageCCListVarargs(value: String*): Self = StObject.set(x, "notificationMessageCCList", js.Array(value :_*))
+    inline def setNotificationMessageCCListVarargs(value: String*): Self = StObject.set(x, "notificationMessageCCList", js.Array(value*))
     
     inline def setNotificationTemplateId(value: NullableOption[String]): Self = StObject.set(x, "notificationTemplateId", value.asInstanceOf[js.Any])
     

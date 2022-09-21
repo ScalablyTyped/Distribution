@@ -21,7 +21,7 @@ object Points {
     
     inline def setPoints(value: js.Array[typings.bmapgl.BMapGL.Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: typings.bmapgl.BMapGL.Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: typings.bmapgl.BMapGL.Point*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

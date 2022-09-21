@@ -45,22 +45,21 @@ object suggestionsControlMod {
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsControl", "SuggestionsControl")
   @js.native
-  class SuggestionsControl[T] protected ()
-    extends Component[ISuggestionsControlProps[T], ISuggestionsControlState[T], js.Any] {
+  open class SuggestionsControl[T] protected () extends Component[ISuggestionsControlProps[T], ISuggestionsControlState[T], Any] {
     def this(suggestionsProps: ISuggestionsControlProps[T]) = this()
     
-    /* private */ var SuggestionsOfProperType: js.Any = js.native
+    /* private */ var SuggestionsOfProperType: Any = js.native
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MSuggestionsControl(newProps: ISuggestionsControlProps[T]): Unit = js.native
     
     /* protected */ var _forceResolveButton: IButton = js.native
     
-    /* private */ var _getCurrentIndexForType: js.Any = js.native
+    /* private */ var _getCurrentIndexForType: Any = js.native
     
-    /* private */ var _getNextItemSectionType: js.Any = js.native
+    /* private */ var _getNextItemSectionType: Any = js.native
     
-    /* private */ var _getPreviousItemSectionType: js.Any = js.native
+    /* private */ var _getPreviousItemSectionType: Any = js.native
     
     /* protected */ def _renderSuggestions(): Element = js.native
     
@@ -72,7 +71,7 @@ object suggestionsControlMod {
       * @param itemType - The suggestion item type
       * @param currentIndex - The current index, default is -1
       */
-    /* private */ var _selectNextItemOfItemType: js.Any = js.native
+    /* private */ var _selectNextItemOfItemType: Any = js.native
     
     /**
       * Selects the previous item in the suggestion item type group, given the current index
@@ -80,7 +79,7 @@ object suggestionsControlMod {
       * @param itemType - The suggestion item type
       * @param currentIndex - The current index. If none is provided, the default is the items length of specified type
       */
-    /* private */ var _selectPreviousItemOfItemType: js.Any = js.native
+    /* private */ var _selectPreviousItemOfItemType: Any = js.native
     
     /* protected */ var _selectedElement: RefObject[HTMLDivElement] = js.native
     
@@ -152,8 +151,8 @@ object suggestionsControlMod {
   
   @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/Suggestions/SuggestionsControl", "SuggestionsHeaderFooterItem")
   @js.native
-  class SuggestionsHeaderFooterItem protected ()
-    extends Component[ISuggestionsHeaderFooterItemProps, js.Object, js.Any] {
+  open class SuggestionsHeaderFooterItem protected ()
+    extends Component[ISuggestionsHeaderFooterItemProps, js.Object, Any] {
     def this(props: ISuggestionsHeaderFooterItemProps) = this()
   }
   
@@ -184,7 +183,7 @@ object suggestionsControlMod {
       
       inline def setSuggestions(value: js.Array[ISuggestionModel[T]]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
       
-      inline def setSuggestionsVarargs(value: ISuggestionModel[T]*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+      inline def setSuggestionsVarargs(value: ISuggestionModel[T]*): Self = StObject.set(x, "suggestions", js.Array(value*))
     }
   }
 }

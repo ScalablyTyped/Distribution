@@ -12,7 +12,7 @@ trait NotificationChannel extends StObject {
   var RoleArn: typings.awsSdk.rekognitionMod.RoleArn
   
   /**
-    * The Amazon SNS topic to which Amazon Rekognition to posts the completion status.
+    * The Amazon SNS topic to which Amazon Rekognition posts the completion status.
     */
   var SNSTopicArn: typings.awsSdk.rekognitionMod.SNSTopicArn
 }

@@ -1,6 +1,5 @@
 package typings.crossStorage
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object mod {
   
   @JSImport("cross-storage", "CrossStorageClient")
   @js.native
-  class CrossStorageClient protected () extends StObject {
+  open class CrossStorageClient protected () extends StObject {
     /**
       * Constructs a new cross storage client given the url to a hub. By default, an iframe is created 
       * within the document body that points to the url. It also accepts an options object, which may include 
@@ -42,8 +41,8 @@ object mod {
       * single argument. Otherwise it's resolved with an array of values. On failure, it is rejected with 
       * the corresponding error message.
       */
-    def get(key: String): js.Promise[js.Any] = js.native
-    def get(keys: String*): js.Promise[js.Array[js.Any]] = js.native
+    def get(key: String): js.Promise[Any] = js.native
+    def get(keys: String*): js.Promise[js.Array[Any]] = js.native
     
     /**
       * Returns a promise that, when resolved, passes an array of keys currently in storage.
@@ -61,13 +60,13 @@ object mod {
       * number of milliseconds. Returns a promise that is fulfilled on success, or rejected if any errors 
       * setting the key occurred, or the request timed out.
       */
-    def set(key: String, value: js.Any): js.Promise[Unit] = js.native
-    def set(key: String, value: js.Any, ttl: Double): js.Promise[Unit] = js.native
+    def set(key: String, value: Any): js.Promise[Unit] = js.native
+    def set(key: String, value: Any, ttl: Double): js.Promise[Unit] = js.native
   }
   
   @JSImport("cross-storage", "CrossStorageHub")
   @js.native
-  class CrossStorageHub () extends StObject
+  open class CrossStorageHub () extends StObject
   /* static members */
   object CrossStorageHub {
     
@@ -89,7 +88,7 @@ object mod {
     
     var frameId: js.UndefOr[String] = js.undefined
     
-    var promise: js.UndefOr[js.Any] = js.undefined
+    var promise: js.UndefOr[Any] = js.undefined
     
     var timeout: js.UndefOr[Double] = js.undefined
   }
@@ -106,7 +105,7 @@ object mod {
       
       inline def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
       
-      inline def setPromise(value: js.Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
       inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
       
@@ -141,11 +140,11 @@ object mod {
     
     var allow: js.Array[CrossStorageMethod]
     
-    var origin: RegExp
+    var origin: js.RegExp
   }
   object SubDomain {
     
-    inline def apply(allow: js.Array[CrossStorageMethod], origin: RegExp): SubDomain = {
+    inline def apply(allow: js.Array[CrossStorageMethod], origin: js.RegExp): SubDomain = {
       val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubDomain]
     }
@@ -154,9 +153,9 @@ object mod {
       
       inline def setAllow(value: js.Array[CrossStorageMethod]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       
-      inline def setAllowVarargs(value: CrossStorageMethod*): Self = StObject.set(x, "allow", js.Array(value :_*))
+      inline def setAllowVarargs(value: CrossStorageMethod*): Self = StObject.set(x, "allow", js.Array(value*))
       
-      inline def setOrigin(value: RegExp): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: js.RegExp): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -17,5 +17,5 @@ trait JsxText
   val kind_JsxText: typings.typescript.mod.SyntaxKind.JsxText = js.native
   
   @JSName("parent")
-  val parent_JsxText: JsxElement = js.native
+  val parent_JsxText: JsxElement | JsxFragment = js.native
 }

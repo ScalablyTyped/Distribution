@@ -18,10 +18,9 @@ object dropdownMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[DropdownProps, ComponentState, js.Any] {
+  open class default protected () extends Component[DropdownProps, ComponentState, Any] {
     def this(props: DropdownProps) = this()
-    def this(props: DropdownProps, context: js.Any) = this()
+    def this(props: DropdownProps, context: Any) = this()
   }
   object default extends Shortcut {
     
@@ -32,37 +31,33 @@ object dropdownMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown", "default.Divider")
     @js.native
-    class Divider protected ()
-      extends Component[DropdownDividerProps, ComponentState, js.Any] {
+    open class Divider protected () extends Component[DropdownDividerProps, ComponentState, Any] {
       def this(props: DropdownDividerProps) = this()
-      def this(props: DropdownDividerProps, context: js.Any) = this()
+      def this(props: DropdownDividerProps, context: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown", "default.Header")
     @js.native
-    class Header protected ()
-      extends Component[DropdownHeaderProps, ComponentState, js.Any] {
+    open class Header protected () extends Component[DropdownHeaderProps, ComponentState, Any] {
       def this(props: DropdownHeaderProps) = this()
-      def this(props: DropdownHeaderProps, context: js.Any) = this()
+      def this(props: DropdownHeaderProps, context: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown", "default.Item")
     @js.native
-    class Item protected ()
-      extends Component[DropdownItemProps, ComponentState, js.Any] {
+    open class Item protected () extends Component[DropdownItemProps, ComponentState, Any] {
       def this(props: DropdownItemProps) = this()
-      def this(props: DropdownItemProps, context: js.Any) = this()
+      def this(props: DropdownItemProps, context: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown", "default.SearchInput")
     @js.native
-    class SearchInput protected ()
-      extends Component[DropdownSearchInputProps, ComponentState, js.Any] {
+    open class SearchInput protected () extends Component[DropdownSearchInputProps, ComponentState, Any] {
       def this(props: DropdownSearchInputProps) = this()
-      def this(props: DropdownSearchInputProps, context: js.Any) = this()
+      def this(props: DropdownSearchInputProps, context: Any) = this()
     }
     
     type _To = DropdownComponent

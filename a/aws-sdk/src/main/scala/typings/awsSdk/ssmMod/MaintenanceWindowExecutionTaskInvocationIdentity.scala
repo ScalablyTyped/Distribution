@@ -9,7 +9,7 @@ trait MaintenanceWindowExecutionTaskInvocationIdentity extends StObject {
   /**
     * The time the invocation finished.
     */
-  var EndTime: js.UndefOr[DateTime] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the action performed in the service that actually handled the task invocation. If the task type is RUN_COMMAND, this value is the command ID.
@@ -22,7 +22,7 @@ trait MaintenanceWindowExecutionTaskInvocationIdentity extends StObject {
   var InvocationId: js.UndefOr[MaintenanceWindowExecutionTaskInvocationId] = js.undefined
   
   /**
-    * User-provided value that was specified when the target was registered with the maintenance window. This was also included in any CloudWatch events raised during the task invocation.
+    * User-provided value that was specified when the target was registered with the maintenance window. This was also included in any Amazon CloudWatch Events events raised during the task invocation.
     */
   var OwnerInformation: js.UndefOr[typings.awsSdk.ssmMod.OwnerInformation] = js.undefined
   
@@ -34,7 +34,7 @@ trait MaintenanceWindowExecutionTaskInvocationIdentity extends StObject {
   /**
     * The time the invocation started.
     */
-  var StartTime: js.UndefOr[DateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the task invocation.
@@ -42,7 +42,7 @@ trait MaintenanceWindowExecutionTaskInvocationIdentity extends StObject {
   var Status: js.UndefOr[MaintenanceWindowExecutionStatus] = js.undefined
   
   /**
-    * The details explaining the status of the task invocation. Only available for certain Status values. 
+    * The details explaining the status of the task invocation. Not available for all status values. 
     */
   var StatusDetails: js.UndefOr[MaintenanceWindowExecutionStatusDetails] = js.undefined
   
@@ -75,7 +75,7 @@ object MaintenanceWindowExecutionTaskInvocationIdentity {
   
   extension [Self <: MaintenanceWindowExecutionTaskInvocationIdentity](x: Self) {
     
-    inline def setEndTime(value: DateTime): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -95,7 +95,7 @@ object MaintenanceWindowExecutionTaskInvocationIdentity {
     
     inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

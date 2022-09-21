@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GooglePrivacyDlpV2CreateDlpJobRequest extends StObject {
   
-  /** Set to control what and how to inspect. */
+  /** An inspection job scans a storage repository for InfoTypes. */
   var inspectJob: js.UndefOr[GooglePrivacyDlpV2InspectJobConfig] = js.undefined
   
   /**
@@ -18,7 +18,7 @@ trait GooglePrivacyDlpV2CreateDlpJobRequest extends StObject {
   /** Deprecated. This field has no effect. */
   var locationId: js.UndefOr[String] = js.undefined
   
-  /** Set to choose what metric to calculate. */
+  /** A risk analysis job calculates re-identification risk metrics for a BigQuery table. */
   var riskJob: js.UndefOr[GooglePrivacyDlpV2RiskAnalysisJobConfig] = js.undefined
 }
 object GooglePrivacyDlpV2CreateDlpJobRequest {

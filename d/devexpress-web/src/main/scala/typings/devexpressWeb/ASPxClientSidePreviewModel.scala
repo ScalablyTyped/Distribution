@@ -21,7 +21,7 @@ trait ASPxClientSidePreviewModel extends StObject {
   
   def GoToPage(pageIndex: Double): Unit = js.native
   
-  def OpenReport(url: String): JQueryPromise[js.Any] = js.native
+  def OpenReport(url: String): JQueryPromise[Any] = js.native
   
   def Print(): Unit = js.native
   def Print(pageIndex: Double): Unit = js.native

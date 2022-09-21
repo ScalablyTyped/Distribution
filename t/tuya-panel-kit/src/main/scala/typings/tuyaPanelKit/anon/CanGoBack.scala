@@ -14,13 +14,13 @@ trait CanGoBack extends StObject {
   @JSName("dangerouslyGetParent")
   def dangerouslyGetParent_T_T[T](): T = js.native
   
-  def dangerouslyGetState(): js.Any = js.native
+  def dangerouslyGetState(): Any = js.native
   @JSName("dangerouslyGetState")
   def dangerouslyGetState_ReadonlykeystringindexnumHistory(): ReadonlykeystringindexnumHistory = js.native
   
   def dispatch(
     action: js.Function1[
-      (/* state */ js.Any) | (/* state */ ReadonlykeystringindexnumHistory), 
+      (/* state */ Any) | (/* state */ ReadonlykeystringindexnumHistory), 
       Readonlytypestringpayload
     ]
   ): Unit = js.native
@@ -50,11 +50,11 @@ trait CanGoBack extends StObject {
   @JSName("navigate")
   def navigate_RouteName_4_String[RouteName_4 /* <: String */](route: Key): Unit = js.native
   
-  def reset(state: js.Any): Unit = js.native
+  def reset(state: Any): Unit = js.native
   def reset(state: PartialStateReadonlykeystHistory): Unit = js.native
   def reset(state: ReadonlykeystringindexnumHistory): Unit = js.native
   
-  def setOptions(options: Partial[js.Any]): Unit = js.native
+  def setOptions(options: Partial[Any]): Unit = js.native
   
   def setParams(): Unit = js.native
   def setParams(params: js.Object): Unit = js.native

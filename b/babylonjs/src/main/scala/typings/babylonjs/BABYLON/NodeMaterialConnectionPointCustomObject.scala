@@ -9,9 +9,9 @@ trait NodeMaterialConnectionPointCustomObject[T /* <: NodeMaterialBlock */]
   extends StObject
      with NodeMaterialConnectionPoint {
   
-  /* private */ var _blockName: js.Any = js.native
+  /* private */ var _blockName: Any = js.native
   
-  /* private */ var _blockType: js.Any = js.native
+  /* private */ var _blockType: Any = js.native
   
-  /* private */ var _nameForCheking: js.Any = js.native
+  /* private */ var _nameForCheking: Any = js.native
 }

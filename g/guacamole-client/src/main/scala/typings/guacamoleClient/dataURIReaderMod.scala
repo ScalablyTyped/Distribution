@@ -9,7 +9,7 @@ object dataURIReaderMod {
   
   @JSImport("guacamole-client/lib/DataURIReader", "DataURIReader")
   @js.native
-  class DataURIReader protected () extends StObject {
+  open class DataURIReader protected () extends StObject {
     /**
       * @param stream The stream that data will be read from.
       */

@@ -4,36 +4,33 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait BlendingState extends StObject
-@JSImport("cesium", "BlendingState")
-@js.native
-object BlendingState extends StObject {
+object BlendingState {
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BlendingState & Double] = js.native
-  
+  /**
+    * Blending is enabled using additive blending, <code>source(source.alpha) + destination</code>.
+    */
+  @JSImport("cesium", "BlendingState.ADDITIVE_BLEND")
   @js.native
-  sealed trait ADDITIVE_BLEND
-    extends StObject
-       with BlendingState
-  /* 3 */ val ADDITIVE_BLEND: typings.cesium.mod.BlendingState.ADDITIVE_BLEND & Double = js.native
+  val ADDITIVE_BLEND: Any = js.native
   
+  /**
+    * Blending is enabled using alpha blending, <code>source(source.alpha) + destination(1 - source.alpha)</code>.
+    */
+  @JSImport("cesium", "BlendingState.ALPHA_BLEND")
   @js.native
-  sealed trait ALPHA_BLEND
-    extends StObject
-       with BlendingState
-  /* 1 */ val ALPHA_BLEND: typings.cesium.mod.BlendingState.ALPHA_BLEND & Double = js.native
+  val ALPHA_BLEND: Any = js.native
   
+  /**
+    * Blending is disabled.
+    */
+  @JSImport("cesium", "BlendingState.DISABLED")
   @js.native
-  sealed trait DISABLED
-    extends StObject
-       with BlendingState
-  /* 0 */ val DISABLED: typings.cesium.mod.BlendingState.DISABLED & Double = js.native
+  val DISABLED: Any = js.native
   
+  /**
+    * Blending is enabled using alpha blending with premultiplied alpha, <code>source + destination(1 - source.alpha)</code>.
+    */
+  @JSImport("cesium", "BlendingState.PRE_MULTIPLIED_ALPHA_BLEND")
   @js.native
-  sealed trait PRE_MULTIPLIED_ALPHA_BLEND
-    extends StObject
-       with BlendingState
-  /* 2 */ val PRE_MULTIPLIED_ALPHA_BLEND: typings.cesium.mod.BlendingState.PRE_MULTIPLIED_ALPHA_BLEND & Double = js.native
+  val PRE_MULTIPLIED_ALPHA_BLEND: Any = js.native
 }

@@ -8,14 +8,19 @@ trait ResourceSpecificPermissionGrant
   extends StObject
      with DirectoryObject {
   
+  // ID of the service principal of the Azure AD app that has been granted access. Read-only.
   var clientAppId: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // ID of the Azure AD app that has been granted access. Read-only.
   var clientId: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // The name of the resource-specific permission. Read-only.
   var permission: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // The type of permission. Possible values are: Application, Delegated. Read-only.
   var permissionType: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // ID of the Azure AD app that is hosting the resource. Read-only.
   var resourceAppId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ResourceSpecificPermissionGrant {

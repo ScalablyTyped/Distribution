@@ -32,8 +32,8 @@ trait Namespace[Value /* <: js.UndefOr[String] */]
 object Namespace {
   
   inline def apply[Value /* <: js.UndefOr[String] */](
-    appendToPropertyAndEscape: (String, js.Any, String) => Unit,
-    clone_ : StringDictionary[js.Any] => Node,
+    appendToPropertyAndEscape: (String, Any, String) => Unit,
+    clone_ : StringDictionary[Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
     namespace: String | `true`,
     namespaceString: String,
@@ -45,8 +45,8 @@ object Namespace {
     rawSpaceBefore: String,
     remove: () => Node,
     replaceWith: /* repeated */ Node => Node,
-    setPropertyAndEscape: (String, js.Any, String) => Unit,
-    setPropertyWithoutEscape: (String, js.Any) => Unit,
+    setPropertyAndEscape: (String, Any, String) => Unit,
+    setPropertyWithoutEscape: (String, Any) => Unit,
     sourceIndex: Double,
     spaces: Spaces,
     `type`: typings.postcssSelectorParser.postcssSelectorParserStrings.tag | typings.postcssSelectorParser.postcssSelectorParserStrings.string | typings.postcssSelectorParser.postcssSelectorParserStrings.selector | typings.postcssSelectorParser.postcssSelectorParserStrings.root | typings.postcssSelectorParser.postcssSelectorParserStrings.pseudo | typings.postcssSelectorParser.postcssSelectorParserStrings.nesting | typings.postcssSelectorParser.postcssSelectorParserStrings.id | typings.postcssSelectorParser.postcssSelectorParserStrings.comment | typings.postcssSelectorParser.postcssSelectorParserStrings.combinator | `class` | typings.postcssSelectorParser.postcssSelectorParserStrings.attribute | typings.postcssSelectorParser.postcssSelectorParserStrings.universal,

@@ -12,7 +12,7 @@ trait ListThemeAliasesResponse extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   
@@ -51,6 +51,6 @@ object ListThemeAliasesResponse {
     
     inline def setThemeAliasListUndefined: Self = StObject.set(x, "ThemeAliasList", js.undefined)
     
-    inline def setThemeAliasListVarargs(value: ThemeAlias*): Self = StObject.set(x, "ThemeAliasList", js.Array(value :_*))
+    inline def setThemeAliasListVarargs(value: ThemeAlias*): Self = StObject.set(x, "ThemeAliasList", js.Array(value*))
   }
 }

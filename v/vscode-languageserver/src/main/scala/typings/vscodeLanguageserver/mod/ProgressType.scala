@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode-languageserver", "ProgressType")
 @js.native
-class ProgressType[P] ()
-  extends typings.vscodeLanguageserverProtocol.mod.ProgressType[P]
+open class ProgressType[PR] ()
+  extends typings.vscodeLanguageserverProtocol.mod.ProgressType[PR]

@@ -15,7 +15,7 @@ trait DurandalEventSupport[T] extends StObject {
     * @chainable
     */
   def off(events: String, callback: js.Function): T = js.native
-  def off(events: String, callback: js.Function, context: js.Any): T = js.native
+  def off(events: String, callback: js.Function, context: Any): T = js.native
   
   /**
     * Creates a subscription or registers a callback for the specified event.
@@ -31,7 +31,7 @@ trait DurandalEventSupport[T] extends StObject {
     * @returns {Events} The events object is returned for chaining.
     */
   def on(events: String, callback: js.Function): T = js.native
-  def on(events: String, callback: js.Function, context: js.Any): T = js.native
+  def on(events: String, callback: js.Function, context: Any): T = js.native
   
   /**
     * Creates a function that will trigger the specified events when called. Simplifies proxying jQuery (or other) events through to the events object.
@@ -45,5 +45,5 @@ trait DurandalEventSupport[T] extends StObject {
     * @param {string} [events] One or more events, separated by white space to trigger.
     * @chainable
     */
-  def trigger(events: String, eventArgs: js.Any*): T = js.native
+  def trigger(events: String, eventArgs: Any*): T = js.native
 }

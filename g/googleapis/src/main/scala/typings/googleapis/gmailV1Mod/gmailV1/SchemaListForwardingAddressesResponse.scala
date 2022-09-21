@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for the ListForwardingAddresses method.
-  */
 trait SchemaListForwardingAddressesResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaListForwardingAddressesResponse {
     
     inline def setForwardingAddressesUndefined: Self = StObject.set(x, "forwardingAddresses", js.undefined)
     
-    inline def setForwardingAddressesVarargs(value: SchemaForwardingAddress*): Self = StObject.set(x, "forwardingAddresses", js.Array(value :_*))
+    inline def setForwardingAddressesVarargs(value: SchemaForwardingAddress*): Self = StObject.set(x, "forwardingAddresses", js.Array(value*))
   }
 }

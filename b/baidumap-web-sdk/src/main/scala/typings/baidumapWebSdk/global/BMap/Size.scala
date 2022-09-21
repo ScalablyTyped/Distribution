@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.Size")
 @js.native
-class Size protected ()
+open class Size protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.Size {
   def this(width: Double, height: Double) = this()

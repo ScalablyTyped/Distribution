@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "new-github-issue-url" : "0.2.1"
+      "new-github-issue-url" : "1.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "new-github-issue-url" : "0.2.1"
+      "new-github-issue-url" : "1.0.0"
     }
   ],
   "compile-devDependencies" : [

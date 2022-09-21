@@ -6,7 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Config extends StObject {
   
-  var config: js.Any
+  var config: Any
+  
+  var draft: js.UndefOr[String] = js.undefined
+  
+  var fallback: js.UndefOr[Boolean] = js.undefined
+  
+  var mapboxGLGeocoderVersion: js.UndefOr[String] = js.undefined
+  
+  var mapboxGLVersion: js.UndefOr[String] = js.undefined
   
   var ownerId: js.UndefOr[String] = js.undefined
   
@@ -18,14 +26,30 @@ trait Config extends StObject {
 }
 object Config {
   
-  inline def apply(config: js.Any, styleId: String): Config = {
+  inline def apply(config: Any, styleId: String): Config = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], styleId = styleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
   
   extension [Self <: Config](x: Self) {
     
-    inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    
+    inline def setDraft(value: String): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+    
+    inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
+    
+    inline def setFallback(value: Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+    
+    inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+    
+    inline def setMapboxGLGeocoderVersion(value: String): Self = StObject.set(x, "mapboxGLGeocoderVersion", value.asInstanceOf[js.Any])
+    
+    inline def setMapboxGLGeocoderVersionUndefined: Self = StObject.set(x, "mapboxGLGeocoderVersion", js.undefined)
+    
+    inline def setMapboxGLVersion(value: String): Self = StObject.set(x, "mapboxGLVersion", value.asInstanceOf[js.Any])
+    
+    inline def setMapboxGLVersionUndefined: Self = StObject.set(x, "mapboxGLVersion", js.undefined)
     
     inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
     

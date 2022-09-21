@@ -28,7 +28,7 @@ object XDocumentIndexesSupplier {
     DocumentIndexes: XIndexAccess,
     acquire: () => Unit,
     getDocumentIndexes: () => XIndexAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDocumentIndexesSupplier = {
     val __obj = js.Dynamic.literal(DocumentIndexes = DocumentIndexes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDocumentIndexes = js.Any.fromFunction0(getDocumentIndexes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

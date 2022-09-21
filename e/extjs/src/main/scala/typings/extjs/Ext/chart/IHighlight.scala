@@ -10,15 +10,15 @@ trait IHighlight
      with IBase {
   
   /** [Config Option] (Boolean/Object) */
-  var highlight: js.UndefOr[js.Any] = js.undefined
+  var highlight: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Object) */
-  var highlightCfg: js.UndefOr[js.Any] = js.undefined
+  var highlightCfg: js.UndefOr[Any] = js.undefined
   
   /** [Method] Highlight the given series item
     * @param item Object Info about the item; same format as returned by #getItemForPoint.
     */
-  var highlightItem: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var highlightItem: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Un highlight any existing highlights */
   var unHighlightItem: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -32,13 +32,13 @@ object IHighlight {
   
   extension [Self <: IHighlight](x: Self) {
     
-    inline def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
-    inline def setHighlightCfg(value: js.Any): Self = StObject.set(x, "highlightCfg", value.asInstanceOf[js.Any])
+    inline def setHighlightCfg(value: Any): Self = StObject.set(x, "highlightCfg", value.asInstanceOf[js.Any])
     
     inline def setHighlightCfgUndefined: Self = StObject.set(x, "highlightCfg", js.undefined)
     
-    inline def setHighlightItem(value: /* item */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
+    inline def setHighlightItem(value: /* item */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "highlightItem", js.Any.fromFunction1(value))
     
     inline def setHighlightItemUndefined: Self = StObject.set(x, "highlightItem", js.undefined)
     

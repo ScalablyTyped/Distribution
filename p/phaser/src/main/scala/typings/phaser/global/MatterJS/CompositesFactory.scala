@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MatterJS.CompositesFactory")
 @js.native
-class CompositesFactory ()
+open class CompositesFactory ()
   extends StObject
      with typings.phaser.MatterJS.CompositesFactory {
   
@@ -42,7 +42,7 @@ class CompositesFactory ()
     yOffsetA: Double,
     xOffsetB: Double,
     yOffsetB: Double,
-    options: js.Any
+    options: Any
   ): CompositeType = js.native
   
   /**
@@ -56,7 +56,7 @@ class CompositesFactory ()
     * @return {composite} The composite containing objects meshed together with constraints
     */
   /* CompleteClass */
-  override def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): CompositeType = js.native
+  override def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: Any): CompositeType = js.native
   
   /**
     * Creates a composite with a Newton's Cradle setup of bodies and constraints.
@@ -120,8 +120,8 @@ class CompositesFactory ()
     rowGap: Double,
     crossBrace: Boolean,
     particleRadius: Double,
-    particleOptions: js.Any,
-    constraintOptions: js.Any
+    particleOptions: Any,
+    constraintOptions: Any
   ): CompositeType = js.native
   
   /**

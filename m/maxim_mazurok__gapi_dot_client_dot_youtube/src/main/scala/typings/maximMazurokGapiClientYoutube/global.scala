@@ -20,7 +20,6 @@ import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.MembershipsLeve
 import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.PlaylistItemsResource
 import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.PlaylistsResource
 import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.SearchResource
-import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.SponsorsResource
 import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.SubscriptionsResource
 import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.SuperChatEventsResource
 import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.TestsResource
@@ -30,6 +29,7 @@ import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.VideoAbuseRepor
 import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.VideoCategoriesResource
 import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.VideosResource
 import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.WatermarksResource
+import typings.maximMazurokGapiClientYoutube.gapi.client.youtube.YoutubeResource
 import typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.v3
 import typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.youtube
 import org.scalablytyped.runtime.StObject
@@ -48,7 +48,7 @@ object global {
       
       /** Load YouTube Data API v3 v3 */
       inline def load(name: youtube, version: v3): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
-      inline def load(name: youtube, version: v3, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def load(name: youtube, version: v3, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       object youtube {
         
@@ -132,10 +132,6 @@ object global {
         @js.native
         val search: SearchResource = js.native
         
-        @JSGlobal("gapi.client.youtube.sponsors")
-        @js.native
-        val sponsors: SponsorsResource = js.native
-        
         @JSGlobal("gapi.client.youtube.subscriptions")
         @js.native
         val subscriptions: SubscriptionsResource = js.native
@@ -171,6 +167,10 @@ object global {
         @JSGlobal("gapi.client.youtube.watermarks")
         @js.native
         val watermarks: WatermarksResource = js.native
+        
+        @JSGlobal("gapi.client.youtube.youtube")
+        @js.native
+        val youtube: YoutubeResource = js.native
       }
     }
   }

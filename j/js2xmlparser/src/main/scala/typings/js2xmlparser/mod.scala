@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("js2xmlparser", "Absent")
   @js.native
-  /* private */ class Absent () extends StObject
+  /* private */ open class Absent () extends StObject
   /* static members */
   object Absent {
     
@@ -24,13 +24,13 @@ object mod {
     
     @JSImport("js2xmlparser", "Absent._instance")
     @js.native
-    def _instance: js.Any = js.native
-    inline def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+    def _instance: Any = js.native
+    inline def _instance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
   }
   
-  inline def parse(root: String, `object`: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(root.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def parse(root: String, `object`: js.Any, options: IOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(root.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parse(root: String, `object`: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(root.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parse(root: String, `object`: Any, options: IOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(root.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def parseToExistingElement(element: XmlElement[js.Any], `object`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseToExistingElement")(element.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def parseToExistingElement(element: XmlElement[js.Any], `object`: js.Any, options: IOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseToExistingElement")(element.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parseToExistingElement(element: XmlElement[Any], `object`: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseToExistingElement")(element.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parseToExistingElement(element: XmlElement[Any], `object`: Any, options: IOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseToExistingElement")(element.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

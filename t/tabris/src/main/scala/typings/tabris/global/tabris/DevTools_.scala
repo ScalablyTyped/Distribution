@@ -6,5 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.DevTools")
 @js.native
-/* private */ class DevTools_ ()
+/**
+  * The `devTools` object provides methods that can assist in App development.
+  */
+/* private */ open class DevTools_ ()
   extends typings.tabris.mod.DevTools_

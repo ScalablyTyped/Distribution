@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("sybase-promised", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with SybasePromised {
     def this(options: ConnectionOptions) = this()
@@ -20,7 +20,7 @@ object mod {
     override def disconnect(): Unit = js.native
     
     /* CompleteClass */
-    override def query(sql: String): js.Promise[js.Array[js.Any]] = js.native
+    override def query(sql: String): js.Promise[js.Array[Any]] = js.native
   }
   
   trait ConnectionOptions extends StObject {
@@ -74,14 +74,14 @@ object mod {
     
     def disconnect(): Unit
     
-    def query(sql: String): js.Promise[js.Array[js.Any]]
+    def query(sql: String): js.Promise[js.Array[Any]]
   }
   object SybasePromised {
     
     inline def apply(
       connect: () => js.Promise[SybasePromised],
       disconnect: () => Unit,
-      query: String => js.Promise[js.Array[js.Any]]
+      query: String => js.Promise[js.Array[Any]]
     ): SybasePromised = {
       val __obj = js.Dynamic.literal(connect = js.Any.fromFunction0(connect), disconnect = js.Any.fromFunction0(disconnect), query = js.Any.fromFunction1(query))
       __obj.asInstanceOf[SybasePromised]
@@ -93,7 +93,7 @@ object mod {
       
       inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      inline def setQuery(value: String => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
+      inline def setQuery(value: String => js.Promise[js.Array[Any]]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
     }
   }
 }

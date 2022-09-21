@@ -10,15 +10,12 @@ A lightweight, IE8+ JavaScript loader.
 | ------------------ | :-------------: |
 | Full name          | little-loader |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 1032407 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 175972.66666666666 |
+| # stars            | 374.0 |
 
 ## Links
-- [Homepage](https://github.com/walmartlabs/little-loader#readme)
-- [Bugs](https://github.com/walmartlabs/little-loader/issues)
-- [Repository](https://github.com/walmartlabs/little-loader)
 - [Npm](https://www.npmjs.com/package/little-loader)
     
 

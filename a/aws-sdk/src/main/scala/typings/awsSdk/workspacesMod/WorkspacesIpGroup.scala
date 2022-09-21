@@ -51,6 +51,6 @@ object WorkspacesIpGroup {
     
     inline def setUserRulesUndefined: Self = StObject.set(x, "userRules", js.undefined)
     
-    inline def setUserRulesVarargs(value: IpRuleItem*): Self = StObject.set(x, "userRules", js.Array(value :_*))
+    inline def setUserRulesVarargs(value: IpRuleItem*): Self = StObject.set(x, "userRules", js.Array(value*))
   }
 }

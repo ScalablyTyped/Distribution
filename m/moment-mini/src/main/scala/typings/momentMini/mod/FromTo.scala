@@ -23,10 +23,10 @@ object FromTo {
     
     inline def setFrom(value: MomentInput): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    inline def setFromVarargs(value: (Double | String)*): Self = StObject.set(x, "from", js.Array(value :_*))
+    inline def setFromVarargs(value: (Double | String)*): Self = StObject.set(x, "from", js.Array(value*))
     
     inline def setTo(value: MomentInput): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    inline def setToVarargs(value: (Double | String)*): Self = StObject.set(x, "to", js.Array(value :_*))
+    inline def setToVarargs(value: (Double | String)*): Self = StObject.set(x, "to", js.Array(value*))
   }
 }

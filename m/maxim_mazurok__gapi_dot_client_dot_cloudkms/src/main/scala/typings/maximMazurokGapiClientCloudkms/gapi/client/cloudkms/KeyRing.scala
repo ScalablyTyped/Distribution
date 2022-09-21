@@ -9,7 +9,7 @@ trait KeyRing extends StObject {
   /** Output only. The time at which this KeyRing was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** Output only. The resource name for the KeyRing in the format `projects/∗/locations/∗/keyRings/ *`. */
+  /** Output only. The resource name for the KeyRing in the format `projects/ *‍/locations/ *‍/keyRings/ *`. */
   var name: js.UndefOr[String] = js.undefined
 }
 object KeyRing {

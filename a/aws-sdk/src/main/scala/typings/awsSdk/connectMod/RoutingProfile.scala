@@ -17,7 +17,7 @@ trait RoutingProfile extends StObject {
   var Description: js.UndefOr[RoutingProfileDescription] = js.undefined
   
   /**
-    * The identifier of the Amazon Connect instance.
+    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
     */
   var InstanceId: js.UndefOr[typings.awsSdk.connectMod.InstanceId] = js.undefined
   
@@ -32,6 +32,16 @@ trait RoutingProfile extends StObject {
   var Name: js.UndefOr[RoutingProfileName] = js.undefined
   
   /**
+    * The number of associated queues in routing profile.
+    */
+  var NumberOfAssociatedQueues: js.UndefOr[Long] = js.undefined
+  
+  /**
+    * The number of associated users in routing profile.
+    */
+  var NumberOfAssociatedUsers: js.UndefOr[Long] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the routing profile.
     */
   var RoutingProfileArn: js.UndefOr[ARN] = js.undefined
@@ -42,7 +52,7 @@ trait RoutingProfile extends StObject {
   var RoutingProfileId: js.UndefOr[typings.awsSdk.connectMod.RoutingProfileId] = js.undefined
   
   /**
-    * One or more tags.
+    * The tags used to organize, track, or control access for this resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
 }
@@ -71,11 +81,19 @@ object RoutingProfile {
     
     inline def setMediaConcurrenciesUndefined: Self = StObject.set(x, "MediaConcurrencies", js.undefined)
     
-    inline def setMediaConcurrenciesVarargs(value: MediaConcurrency*): Self = StObject.set(x, "MediaConcurrencies", js.Array(value :_*))
+    inline def setMediaConcurrenciesVarargs(value: MediaConcurrency*): Self = StObject.set(x, "MediaConcurrencies", js.Array(value*))
     
     inline def setName(value: RoutingProfileName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setNumberOfAssociatedQueues(value: Long): Self = StObject.set(x, "NumberOfAssociatedQueues", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfAssociatedQueuesUndefined: Self = StObject.set(x, "NumberOfAssociatedQueues", js.undefined)
+    
+    inline def setNumberOfAssociatedUsers(value: Long): Self = StObject.set(x, "NumberOfAssociatedUsers", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfAssociatedUsersUndefined: Self = StObject.set(x, "NumberOfAssociatedUsers", js.undefined)
     
     inline def setRoutingProfileArn(value: ARN): Self = StObject.set(x, "RoutingProfileArn", value.asInstanceOf[js.Any])
     

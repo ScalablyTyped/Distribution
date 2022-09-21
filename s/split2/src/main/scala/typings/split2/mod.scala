@@ -2,7 +2,6 @@ package typings.split2
 
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,10 @@ object mod {
   inline def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
   inline def apply(mapper: Mapper): Transform = ^.asInstanceOf[js.Dynamic].apply(mapper.asInstanceOf[js.Any]).asInstanceOf[Transform]
   inline def apply(mapper: Mapper, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  // tslint:disable-next-line unified-signatures
   inline def apply(matcher: Matcher): Transform = ^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  inline def apply(matcher: Matcher, mapper: Mapper): Transform = (^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  inline def apply(matcher: Matcher, mapper: Mapper, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(matcher: Matcher, Mapper: Mapper): Transform = (^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any], Mapper.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(matcher: Matcher, Mapper: Mapper, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any], Mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
   inline def apply(matcher: Matcher, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(matcher.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
   inline def apply(options: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
@@ -22,9 +22,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Mapper = js.Function1[/* line */ String, js.Any]
+  type Mapper = js.Function1[/* line */ String, Any]
   
-  type Matcher = String | RegExp
+  type Matcher = String | js.RegExp
   
   trait Options
     extends StObject

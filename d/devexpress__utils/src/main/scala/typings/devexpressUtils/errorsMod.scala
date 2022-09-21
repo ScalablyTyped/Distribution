@@ -8,7 +8,7 @@ object errorsMod {
   
   @JSImport("@devexpress/utils/lib/errors", "Errors")
   @js.native
-  class Errors () extends StObject
+  open class Errors () extends StObject
   /* static members */
   object Errors {
     

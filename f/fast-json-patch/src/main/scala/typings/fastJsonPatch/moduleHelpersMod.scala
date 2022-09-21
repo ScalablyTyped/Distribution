@@ -13,34 +13,36 @@ object moduleHelpersMod {
   
   @JSImport("fast-json-patch/module/helpers", "PatchError")
   @js.native
-  class PatchError protected ()
+  open class PatchError protected ()
     extends StObject
        with Error {
     def this(message: String, name: JsonPatchErrorName) = this()
     def this(message: String, name: JsonPatchErrorName, index: Double) = this()
-    def this(message: String, name: JsonPatchErrorName, index: Double, operation: js.Any) = this()
-    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: js.Any) = this()
-    def this(message: String, name: JsonPatchErrorName, index: Double, operation: js.Any, tree: js.Any) = this()
-    def this(message: String, name: JsonPatchErrorName, index: Double, operation: Unit, tree: js.Any) = this()
-    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: js.Any, tree: js.Any) = this()
-    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: Unit, tree: js.Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Double, operation: Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Double, operation: Any, tree: Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Double, operation: Unit, tree: Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: Any, tree: Any) = this()
+    def this(message: String, name: JsonPatchErrorName, index: Unit, operation: Unit, tree: Any) = this()
     
     var index: js.UndefOr[Double] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     @JSName("name")
     var name_PatchError: JsonPatchErrorName = js.native
     
-    var operation: js.UndefOr[js.Any] = js.native
+    var operation: js.UndefOr[Any] = js.native
     
-    var tree: js.UndefOr[js.Any] = js.native
+    var tree: js.UndefOr[Any] = js.native
   }
   
-  inline def deepClone(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_deepClone")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def deepClone(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_deepClone")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def escapePathComponent(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapePathComponent")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -48,13 +50,13 @@ object moduleHelpersMod {
   
   inline def getPathRecursive(root: js.Object, obj: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_getPathRecursive")(root.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def hasOwnProperty_(obj: js.Any, key: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def hasOwnProperty_(obj: Any, key: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def hasUndefined(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasUndefined(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isInteger(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteger")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def objectKeys(obj: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_objectKeys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def objectKeys(obj: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_objectKeys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   inline def unescapePathComponent(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapePathComponent")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   

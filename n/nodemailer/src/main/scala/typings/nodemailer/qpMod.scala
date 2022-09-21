@@ -1,6 +1,6 @@
 package typings.nodemailer
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import typings.nodemailer.nodemailerBooleans.`false`
@@ -16,7 +16,7 @@ object qpMod {
   
   @JSImport("nodemailer/lib/qp", "Encoder")
   @js.native
-  class Encoder () extends Transform {
+  open class Encoder () extends Transform {
     def this(options: EncoderOptions) = this()
     
     var inputBytes: Double = js.native

@@ -30,6 +30,8 @@ trait MeshCreatePlaneParams
   /**
     * Direction the plane is facing.
     *
+    * @default "up"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
     */
   var facing: js.UndefOr[east | west | north | south | up | down] = js.undefined

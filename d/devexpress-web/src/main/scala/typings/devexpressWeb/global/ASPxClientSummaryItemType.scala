@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSummaryItemType")
 @js.native
-class ASPxClientSummaryItemType ()
+open class ASPxClientSummaryItemType ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSummaryItemType {
   

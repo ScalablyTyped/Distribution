@@ -10,7 +10,7 @@ trait TextStyle extends StObject {
   
   val Levels: TextStyleLevels
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.TextStyle_typekey")
   var PowerPointDotTextStyle_typekey: TextStyle
@@ -24,7 +24,7 @@ object TextStyle {
   inline def apply(
     Application: Application,
     Levels: TextStyleLevels,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotTextStyle_typekey: TextStyle,
     Ruler: Ruler,
     TextFrame: TextFrame
@@ -40,7 +40,7 @@ object TextStyle {
     
     inline def setLevels(value: TextStyleLevels): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotTextStyle_typekey(value: TextStyle): Self = StObject.set(x, "PowerPoint.TextStyle_typekey", value.asInstanceOf[js.Any])
     

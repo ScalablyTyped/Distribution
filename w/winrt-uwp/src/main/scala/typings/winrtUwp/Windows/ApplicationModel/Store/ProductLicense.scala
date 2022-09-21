@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Store
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProductLicense extends StObject {
   
   /** Gets the current expiration date and time of the in-app product license. */
-  var expirationDate: Date
+  var expirationDate: js.Date
   
   /** Indicates if the in-app product license is currently active. */
   var isActive: Boolean
@@ -22,14 +21,14 @@ trait ProductLicense extends StObject {
 }
 object ProductLicense {
   
-  inline def apply(expirationDate: Date, isActive: Boolean, isConsumable: Boolean, productId: String): ProductLicense = {
+  inline def apply(expirationDate: js.Date, isActive: Boolean, isConsumable: Boolean, productId: String): ProductLicense = {
     val __obj = js.Dynamic.literal(expirationDate = expirationDate.asInstanceOf[js.Any], isActive = isActive.asInstanceOf[js.Any], isConsumable = isConsumable.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductLicense]
   }
   
   extension [Self <: ProductLicense](x: Self) {
     
-    inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     

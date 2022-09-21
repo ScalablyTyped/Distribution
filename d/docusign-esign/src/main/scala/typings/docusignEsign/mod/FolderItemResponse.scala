@@ -58,7 +58,7 @@ object FolderItemResponse {
     
     inline def setFolderItemsUndefined: Self = StObject.set(x, "folderItems", js.undefined)
     
-    inline def setFolderItemsVarargs(value: (/* Information about folder item results. */ FolderItemV2)*): Self = StObject.set(x, "folderItems", js.Array(value :_*))
+    inline def setFolderItemsVarargs(value: (/* Information about folder item results. */ FolderItemV2)*): Self = StObject.set(x, "folderItems", js.Array(value*))
     
     inline def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
     

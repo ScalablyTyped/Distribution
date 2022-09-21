@@ -91,9 +91,9 @@ object generalTypesMod {
        with _Value {
     
     @JSName("constructor")
-    var constructor_Original: js.Function1[/* value */ String, js.Any]
+    var constructor_Original: js.Function1[/* value */ String, Any]
     
-    var create: js.UndefOr[js.Any] = js.undefined
+    var create: js.UndefOr[Any] = js.undefined
     
     var literal: /* true */ Boolean
     
@@ -105,7 +105,7 @@ object generalTypesMod {
   object PgLiteralValue {
     
     inline def apply(
-      constructor: /* value */ String => js.Any,
+      constructor: /* value */ String => Any,
       literal: /* true */ Boolean,
       toString_ : () => String,
       value: String
@@ -117,9 +117,9 @@ object generalTypesMod {
     
     extension [Self <: PgLiteralValue](x: Self) {
       
-      inline def setConstructor(value: /* value */ String => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+      inline def setConstructor(value: /* value */ String => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
       
-      inline def setCreate(value: js.Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
       inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
@@ -144,12 +144,9 @@ object generalTypesMod {
     - scala.Double
     - typings.nodePgMigrate.pgLiteralMod.default
     - typings.nodePgMigrate.generalTypesMod.PgLiteralValue
-    - js.Array[
-  / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value * / js.Object]
+    - js.Array[scala.Any]
   */
-  type Value = _Value | (js.Array[
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Value */ js.Object
-  ]) | Null | Boolean | String | Double
+  type Value = _Value | js.Array[Any] | Null | Boolean | String | Double
   
   trait _Value extends StObject
 }

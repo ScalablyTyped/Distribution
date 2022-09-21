@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/core", "HashLocationService")
 @js.native
-class HashLocationService protected ()
+open class HashLocationService protected ()
   extends typings.uirouterCore.vanillaMod.HashLocationService {
   def this(router: typings.uirouterCore.routerMod.UIRouter) = this()
 }

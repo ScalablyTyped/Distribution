@@ -12,12 +12,12 @@ trait GetResourcePolicyResponse extends StObject {
   var ARN: js.UndefOr[SecretARNType] = js.undefined
   
   /**
-    * The friendly name of the secret that the resource-based policy was retrieved for.
+    * The name of the secret that the resource-based policy was retrieved for.
     */
   var Name: js.UndefOr[NameType] = js.undefined
   
   /**
-    * A JSON-formatted string that describes the permissions that are associated with the attached secret. These permissions are combined with any permissions that are associated with the user or role that attempts to access this secret. The combined permissions specify who can access the secret and what actions they can perform. For more information, see Authentication and Access Control for AWS Secrets Manager in the AWS Secrets Manager User Guide.
+    * A JSON-formatted string that contains the permissions policy attached to the secret. For more information about permissions policies, see Authentication and access control for Secrets Manager.
     */
   var ResourcePolicy: js.UndefOr[NonEmptyResourcePolicyType] = js.undefined
 }

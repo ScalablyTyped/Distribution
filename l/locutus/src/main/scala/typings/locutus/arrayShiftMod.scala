@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object arrayShiftMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(inputArr: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(inputArr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(inputArr: Any): Any = ^.asInstanceOf[js.Dynamic].apply(inputArr.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("locutus/php/array/array_shift", JSImport.Namespace)
   @js.native

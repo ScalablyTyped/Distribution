@@ -15,7 +15,7 @@ object global {
       */
     @JSGlobal("supercluster")
     @js.native
-    class ^[P /* <: GeoJsonProperties */, C /* <: GeoJsonProperties */] ()
+    open class ^[P /* <: GeoJsonProperties */, C /* <: GeoJsonProperties */] ()
       extends typings.supercluster.mod.^[P, C] {
       def this(options: Options[P, C]) = this()
     }

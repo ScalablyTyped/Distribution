@@ -14,7 +14,7 @@ trait CreateDetectorVersionResult extends StObject {
   /**
     * The ID for the created detector. 
     */
-  var detectorVersionId: js.UndefOr[nonEmptyString] = js.undefined
+  var detectorVersionId: js.UndefOr[wholeNumberVersionString] = js.undefined
   
   /**
     * The status of the detector version.
@@ -34,7 +34,7 @@ object CreateDetectorVersionResult {
     
     inline def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
     
-    inline def setDetectorVersionId(value: nonEmptyString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
+    inline def setDetectorVersionId(value: wholeNumberVersionString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
     
     inline def setDetectorVersionIdUndefined: Self = StObject.set(x, "detectorVersionId", js.undefined)
     

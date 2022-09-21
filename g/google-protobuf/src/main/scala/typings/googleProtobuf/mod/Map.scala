@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-protobuf", "Map")
 @js.native
-class Map[K, V] protected () extends StObject {
+open class Map[K, V] protected () extends StObject {
   def this(arr: js.Array[js.Tuple2[K, V]]) = this()
   def this(arr: js.Array[js.Tuple2[K, V]], valueCtor: InstantiableV[V]) = this()
   
@@ -31,6 +31,20 @@ class Map[K, V] protected () extends StObject {
   
   def keys(): Iterator[K] = js.native
   
+  def serializeBinary(
+    fieldNumber: Double,
+    writer: BinaryWriter,
+    keyWriterFn: js.Function2[/* field */ Double, /* key */ K, Unit],
+    valueWriterFn: js.Function3[/* field */ Double, /* value */ V, /* writerCallback */ BinaryWriteCallback, Unit]
+  ): Unit = js.native
+  def serializeBinary(
+    fieldNumber: Double,
+    writer: BinaryWriter,
+    keyWriterFn: js.Function2[/* field */ Double, /* key */ K, Unit],
+    valueWriterFn: js.Function3[/* field */ Double, /* value */ V, /* writerCallback */ BinaryWriteCallback, Unit],
+    writeCallback: BinaryWriteCallback
+  ): Unit = js.native
+  
   def set(key: K, value: V): this.type = js.native
   
   def toArray(): js.Array[js.Tuple2[K, V]] = js.native
@@ -41,6 +55,8 @@ class Map[K, V] protected () extends StObject {
     includeInstance: Boolean,
     valueToObject: js.Function2[/* includeInstance */ Boolean, /* valueWrapper */ V, VO]
   ): js.Array[js.Tuple2[K, VO]] = js.native
+  
+  def values(): Iterator[V] = js.native
 }
 /* static members */
 object Map {
@@ -49,24 +65,82 @@ object Map {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromObject[TK, TV](entries: js.Array[js.Tuple2[TK, TV]], valueCtor: js.Any, valueFromObject: js.Any): Map[TK, TV] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(entries.asInstanceOf[js.Any], valueCtor.asInstanceOf[js.Any], valueFromObject.asInstanceOf[js.Any])).asInstanceOf[Map[TK, TV]]
+  inline def deserializeBinary[K, V](
+    map: Map[K, V],
+    reader: BinaryReader,
+    keyReaderFn: js.Function1[/* reader */ BinaryReader, K],
+    valueReaderFn: js.Function3[/* reader */ BinaryReader, /* value */ Any, /* readerCallback */ BinaryReadCallback, V]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(map.asInstanceOf[js.Any], reader.asInstanceOf[js.Any], keyReaderFn.asInstanceOf[js.Any], valueReaderFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deserializeBinary[K, V](
+    map: Map[K, V],
+    reader: BinaryReader,
+    keyReaderFn: js.Function1[/* reader */ BinaryReader, K],
+    valueReaderFn: js.Function3[/* reader */ BinaryReader, /* value */ Any, /* readerCallback */ BinaryReadCallback, V],
+    readCallback: Unit,
+    defaultKey: K
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(map.asInstanceOf[js.Any], reader.asInstanceOf[js.Any], keyReaderFn.asInstanceOf[js.Any], valueReaderFn.asInstanceOf[js.Any], readCallback.asInstanceOf[js.Any], defaultKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deserializeBinary[K, V](
+    map: Map[K, V],
+    reader: BinaryReader,
+    keyReaderFn: js.Function1[/* reader */ BinaryReader, K],
+    valueReaderFn: js.Function3[/* reader */ BinaryReader, /* value */ Any, /* readerCallback */ BinaryReadCallback, V],
+    readCallback: Unit,
+    defaultKey: K,
+    defaultValue: V
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(map.asInstanceOf[js.Any], reader.asInstanceOf[js.Any], keyReaderFn.asInstanceOf[js.Any], valueReaderFn.asInstanceOf[js.Any], readCallback.asInstanceOf[js.Any], defaultKey.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deserializeBinary[K, V](
+    map: Map[K, V],
+    reader: BinaryReader,
+    keyReaderFn: js.Function1[/* reader */ BinaryReader, K],
+    valueReaderFn: js.Function3[/* reader */ BinaryReader, /* value */ Any, /* readerCallback */ BinaryReadCallback, V],
+    readCallback: Unit,
+    defaultKey: Unit,
+    defaultValue: V
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(map.asInstanceOf[js.Any], reader.asInstanceOf[js.Any], keyReaderFn.asInstanceOf[js.Any], valueReaderFn.asInstanceOf[js.Any], readCallback.asInstanceOf[js.Any], defaultKey.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deserializeBinary[K, V](
+    map: Map[K, V],
+    reader: BinaryReader,
+    keyReaderFn: js.Function1[/* reader */ BinaryReader, K],
+    valueReaderFn: js.Function3[/* reader */ BinaryReader, /* value */ Any, /* readerCallback */ BinaryReadCallback, V],
+    readCallback: BinaryReadCallback
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(map.asInstanceOf[js.Any], reader.asInstanceOf[js.Any], keyReaderFn.asInstanceOf[js.Any], valueReaderFn.asInstanceOf[js.Any], readCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deserializeBinary[K, V](
+    map: Map[K, V],
+    reader: BinaryReader,
+    keyReaderFn: js.Function1[/* reader */ BinaryReader, K],
+    valueReaderFn: js.Function3[/* reader */ BinaryReader, /* value */ Any, /* readerCallback */ BinaryReadCallback, V],
+    readCallback: BinaryReadCallback,
+    defaultKey: K
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(map.asInstanceOf[js.Any], reader.asInstanceOf[js.Any], keyReaderFn.asInstanceOf[js.Any], valueReaderFn.asInstanceOf[js.Any], readCallback.asInstanceOf[js.Any], defaultKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deserializeBinary[K, V](
+    map: Map[K, V],
+    reader: BinaryReader,
+    keyReaderFn: js.Function1[/* reader */ BinaryReader, K],
+    valueReaderFn: js.Function3[/* reader */ BinaryReader, /* value */ Any, /* readerCallback */ BinaryReadCallback, V],
+    readCallback: BinaryReadCallback,
+    defaultKey: K,
+    defaultValue: V
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(map.asInstanceOf[js.Any], reader.asInstanceOf[js.Any], keyReaderFn.asInstanceOf[js.Any], valueReaderFn.asInstanceOf[js.Any], readCallback.asInstanceOf[js.Any], defaultKey.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deserializeBinary[K, V](
+    map: Map[K, V],
+    reader: BinaryReader,
+    keyReaderFn: js.Function1[/* reader */ BinaryReader, K],
+    valueReaderFn: js.Function3[/* reader */ BinaryReader, /* value */ Any, /* readerCallback */ BinaryReadCallback, V],
+    readCallback: BinaryReadCallback,
+    defaultKey: Unit,
+    defaultValue: V
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(map.asInstanceOf[js.Any], reader.asInstanceOf[js.Any], keyReaderFn.asInstanceOf[js.Any], valueReaderFn.asInstanceOf[js.Any], readCallback.asInstanceOf[js.Any], defaultKey.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def fromObject[TK, TV](entries: js.Array[js.Tuple2[TK, TV]], valueCtor: Any, valueFromObject: Any): Map[TK, TV] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(entries.asInstanceOf[js.Any], valueCtor.asInstanceOf[js.Any], valueFromObject.asInstanceOf[js.Any])).asInstanceOf[Map[TK, TV]]
   
   // This is implemented by jspb.Map.ArrayIteratorIterable_, but that class shouldn't be exported
+  @js.native
   trait Iterator[T] extends StObject {
     
-    def next(): IteratorResult[T]
-  }
-  object Iterator {
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[Iterator[T]] = js.native
     
-    inline def apply[T](next: () => IteratorResult[T]): Iterator[T] = {
-      val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
-      __obj.asInstanceOf[Iterator[T]]
-    }
-    
-    extension [Self <: Iterator[?], T](x: Self & Iterator[T]) {
-      
-      inline def setNext(value: () => IteratorResult[T]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
-    }
+    def next(): IteratorResult[T] = js.native
   }
   
   trait IteratorResult[T] extends StObject {

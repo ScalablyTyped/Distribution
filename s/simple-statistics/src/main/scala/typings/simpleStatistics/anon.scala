@@ -27,6 +27,31 @@ object anon {
     }
   }
   
+  trait Centroids extends StObject {
+    
+    var centroids: js.Array[js.Array[Double]]
+    
+    var labels: js.Array[Double]
+  }
+  object Centroids {
+    
+    inline def apply(centroids: js.Array[js.Array[Double]], labels: js.Array[Double]): Centroids = {
+      val __obj = js.Dynamic.literal(centroids = centroids.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Centroids]
+    }
+    
+    extension [Self <: Centroids](x: Self) {
+      
+      inline def setCentroids(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "centroids", value.asInstanceOf[js.Any])
+      
+      inline def setCentroidsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "centroids", js.Array(value*))
+      
+      inline def setLabels(value: js.Array[Double]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      
+      inline def setLabelsVarargs(value: Double*): Self = StObject.set(x, "labels", js.Array(value*))
+    }
+  }
+  
   trait M extends StObject {
     
     var b: Double

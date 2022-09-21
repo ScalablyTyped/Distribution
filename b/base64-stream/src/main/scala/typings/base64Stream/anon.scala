@@ -1,22 +1,30 @@
 package typings.base64Stream
 
-import typings.node.BufferEncoding
 import typings.node.anon.Chunk
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformCallback
-import typings.std.Error
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  /* Inlined node.stream.TransformOptions & {  lineLength :number | undefined,   prefix :string | undefined} */
-  trait TransformOptionslineLengt extends StObject {
+  /* Inlined node.stream.TransformOptions & {  outputEncoding :string | null | undefined,   inputEncoding :string | undefined,   lineLength :number | undefined,   prefix :string | undefined} */
+  trait TransformOptionsoutputEnc extends StObject {
     
     var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
     
     var autoDestroy: js.UndefOr[Boolean] = js.undefined
+    
+    var construct: js.UndefOr[
+        js.ThisFunction1[
+          /* this */ Transform, 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+          Unit
+        ]
+      ] = js.undefined
     
     var decodeStrings: js.UndefOr[Boolean] = js.undefined
     
@@ -25,8 +33,8 @@ object anon {
     var destroy: js.UndefOr[
         js.ThisFunction2[
           /* this */ Transform, 
-          /* error */ Error | Null, 
-          /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+          /* error */ js.Error | Null, 
+          /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
           Unit
         ]
       ] = js.undefined
@@ -38,7 +46,7 @@ object anon {
     var `final`: js.UndefOr[
         js.ThisFunction1[
           /* this */ Transform, 
-          /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -47,9 +55,13 @@ object anon {
     
     var highWaterMark: js.UndefOr[Double] = js.undefined
     
+    var inputEncoding: js.UndefOr[String] = js.undefined
+    
     var lineLength: js.UndefOr[Double] = js.undefined
     
     var objectMode: js.UndefOr[Boolean] = js.undefined
+    
+    var outputEncoding: js.UndefOr[String | Null] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
@@ -59,10 +71,15 @@ object anon {
     
     var readableObjectMode: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When provided the corresponding `AbortController` can be used to cancel an asynchronous action.
+      */
+    var signal: js.UndefOr[AbortSignal] = js.undefined
+    
     var transform: js.UndefOr[
         js.ThisFunction3[
           /* this */ Transform, 
-          /* chunk */ js.Any, 
+          /* chunk */ Any, 
           /* encoding */ BufferEncoding, 
           /* callback */ TransformCallback, 
           Unit
@@ -78,9 +95,9 @@ object anon {
     var write: js.UndefOr[
         js.ThisFunction3[
           /* this */ Transform, 
-          /* chunk */ js.Any, 
+          /* chunk */ Any, 
           /* encoding */ BufferEncoding, 
-          /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -89,19 +106,19 @@ object anon {
         js.ThisFunction2[
           /* this */ Transform, 
           /* chunks */ js.Array[Chunk], 
-          /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
       ] = js.undefined
   }
-  object TransformOptionslineLengt {
+  object TransformOptionsoutputEnc {
     
-    inline def apply(): TransformOptionslineLengt = {
+    inline def apply(): TransformOptionsoutputEnc = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TransformOptionslineLengt]
+      __obj.asInstanceOf[TransformOptionsoutputEnc]
     }
     
-    extension [Self <: TransformOptionslineLengt](x: Self) {
+    extension [Self <: TransformOptionsoutputEnc](x: Self) {
       
       inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
       
@@ -110,6 +127,16 @@ object anon {
       inline def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
       
       inline def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
+      
+      inline def setConstruct(
+        value: js.ThisFunction1[
+              /* this */ Transform, 
+              /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+              Unit
+            ]
+      ): Self = StObject.set(x, "construct", value.asInstanceOf[js.Any])
+      
+      inline def setConstructUndefined: Self = StObject.set(x, "construct", js.undefined)
       
       inline def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
       
@@ -122,8 +149,8 @@ object anon {
       inline def setDestroy(
         value: js.ThisFunction2[
               /* this */ Transform, 
-              /* error */ Error | Null, 
-              /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+              /* error */ js.Error | Null, 
+              /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
               Unit
             ]
       ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
@@ -141,7 +168,7 @@ object anon {
       inline def setFinal(
         value: js.ThisFunction1[
               /* this */ Transform, 
-              /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+              /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
               Unit
             ]
       ): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
@@ -156,6 +183,10 @@ object anon {
       
       inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
+      inline def setInputEncoding(value: String): Self = StObject.set(x, "inputEncoding", value.asInstanceOf[js.Any])
+      
+      inline def setInputEncodingUndefined: Self = StObject.set(x, "inputEncoding", js.undefined)
+      
       inline def setLineLength(value: Double): Self = StObject.set(x, "lineLength", value.asInstanceOf[js.Any])
       
       inline def setLineLengthUndefined: Self = StObject.set(x, "lineLength", js.undefined)
@@ -163,6 +194,12 @@ object anon {
       inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
       inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      
+      inline def setOutputEncoding(value: String): Self = StObject.set(x, "outputEncoding", value.asInstanceOf[js.Any])
+      
+      inline def setOutputEncodingNull: Self = StObject.set(x, "outputEncoding", null)
+      
+      inline def setOutputEncodingUndefined: Self = StObject.set(x, "outputEncoding", js.undefined)
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -180,10 +217,14 @@ object anon {
       
       inline def setReadableObjectModeUndefined: Self = StObject.set(x, "readableObjectMode", js.undefined)
       
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      
       inline def setTransform(
         value: js.ThisFunction3[
               /* this */ Transform, 
-              /* chunk */ js.Any, 
+              /* chunk */ Any, 
               /* encoding */ BufferEncoding, 
               /* callback */ TransformCallback, 
               Unit
@@ -207,9 +248,9 @@ object anon {
       inline def setWrite(
         value: js.ThisFunction3[
               /* this */ Transform, 
-              /* chunk */ js.Any, 
+              /* chunk */ Any, 
               /* encoding */ BufferEncoding, 
-              /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+              /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
               Unit
             ]
       ): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
@@ -220,7 +261,7 @@ object anon {
         value: js.ThisFunction2[
               /* this */ Transform, 
               /* chunks */ js.Array[Chunk], 
-              /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+              /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
               Unit
             ]
       ): Self = StObject.set(x, "writev", value.asInstanceOf[js.Any])

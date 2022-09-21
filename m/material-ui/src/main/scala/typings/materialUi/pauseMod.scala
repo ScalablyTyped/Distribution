@@ -10,10 +10,10 @@ object pauseMod {
   
   @JSImport("material-ui/svg-icons/av/pause", JSImport.Default)
   @js.native
-  class default () extends AvPause
+  open class default () extends AvPause
   
   @JSImport("material-ui/svg-icons/av/pause", "AvPause")
   @js.native
-  class AvPause ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvPause ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

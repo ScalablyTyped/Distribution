@@ -53,7 +53,7 @@ object mod {
       
       inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
+      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value*))
       
       inline def setDefault(value: DefaultOptionType): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

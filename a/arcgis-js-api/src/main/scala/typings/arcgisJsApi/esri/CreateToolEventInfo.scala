@@ -24,7 +24,7 @@ object CreateToolEventInfo {
   }
   
   inline def VertexAddEventInfo(
-    added: js.Array[Graphic],
+    added: js.Array[Double],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,

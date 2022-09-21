@@ -54,7 +54,7 @@ object XSheetAnnotation {
     getDate: () => String,
     getIsVisible: () => Boolean,
     getPosition: () => CellAddress,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setIsVisible: Boolean => Unit
   ): XSheetAnnotation = {

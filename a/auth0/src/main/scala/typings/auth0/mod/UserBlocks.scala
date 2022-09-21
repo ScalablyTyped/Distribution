@@ -19,6 +19,6 @@ object UserBlocks {
     
     inline def setBlocked_for(value: js.Array[BlockedForEntry]): Self = StObject.set(x, "blocked_for", value.asInstanceOf[js.Any])
     
-    inline def setBlocked_forVarargs(value: BlockedForEntry*): Self = StObject.set(x, "blocked_for", js.Array(value :_*))
+    inline def setBlocked_forVarargs(value: BlockedForEntry*): Self = StObject.set(x, "blocked_for", js.Array(value*))
   }
 }

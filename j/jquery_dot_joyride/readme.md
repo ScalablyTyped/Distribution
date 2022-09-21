@@ -10,10 +10,10 @@ jQuery feature tour plugin. npm and commonJS compatible. Forked from zurb/joyrid
 | ------------------ | :-------------: |
 | Full name          | jquery.joyride |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2094 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 163.66666666666666 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/chmanie/joyride#readme)

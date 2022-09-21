@@ -10,15 +10,12 @@ Enforces SSL for node.js express projects
 | ------------------ | :-------------: |
 | Full name          | express-enforces-ssl |
 | Keywords           | express, expressjs, ssl, enforces, enforces-ssl, http, https, redirect |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 426809 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 91642.0 |
+| # stars            | 193.0 |
 
 ## Links
-- [Homepage](https://github.com/aredo/express-enforces-ssl)
-- [Bugs](https://github.com/aredo/express-enforces-ssl/issues)
-- [Repository](https://github.com/aredo/express-enforces-ssl)
 - [Npm](https://www.npmjs.com/package/express-enforces-ssl)
     
 

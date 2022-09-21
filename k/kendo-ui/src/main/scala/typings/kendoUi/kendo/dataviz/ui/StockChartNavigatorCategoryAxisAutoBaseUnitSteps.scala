@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StockChartNavigatorCategoryAxisAutoBaseUnitSteps extends StObject {
   
-  var days: js.UndefOr[js.Any] = js.undefined
+  var days: js.UndefOr[Any] = js.undefined
   
-  var hours: js.UndefOr[js.Any] = js.undefined
+  var hours: js.UndefOr[Any] = js.undefined
   
-  var minutes: js.UndefOr[js.Any] = js.undefined
+  var minutes: js.UndefOr[Any] = js.undefined
   
-  var months: js.UndefOr[js.Any] = js.undefined
+  var months: js.UndefOr[Any] = js.undefined
   
-  var seconds: js.UndefOr[js.Any] = js.undefined
+  var seconds: js.UndefOr[Any] = js.undefined
   
-  var weeks: js.UndefOr[js.Any] = js.undefined
+  var weeks: js.UndefOr[Any] = js.undefined
   
-  var years: js.UndefOr[js.Any] = js.undefined
+  var years: js.UndefOr[Any] = js.undefined
 }
 object StockChartNavigatorCategoryAxisAutoBaseUnitSteps {
   
@@ -29,31 +29,31 @@ object StockChartNavigatorCategoryAxisAutoBaseUnitSteps {
   
   extension [Self <: StockChartNavigatorCategoryAxisAutoBaseUnitSteps](x: Self) {
     
-    inline def setDays(value: js.Any): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+    inline def setDays(value: Any): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
     inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
     
-    inline def setHours(value: js.Any): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+    inline def setHours(value: Any): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     
     inline def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
     
-    inline def setMinutes(value: js.Any): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+    inline def setMinutes(value: Any): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
     inline def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
     
-    inline def setMonths(value: js.Any): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+    inline def setMonths(value: Any): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
     
     inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
     
-    inline def setSeconds(value: js.Any): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: Any): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
     inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
     
-    inline def setWeeks(value: js.Any): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
+    inline def setWeeks(value: Any): Self = StObject.set(x, "weeks", value.asInstanceOf[js.Any])
     
     inline def setWeeksUndefined: Self = StObject.set(x, "weeks", js.undefined)
     
-    inline def setYears(value: js.Any): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
+    inline def setYears(value: Any): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
     
     inline def setYearsUndefined: Self = StObject.set(x, "years", js.undefined)
   }

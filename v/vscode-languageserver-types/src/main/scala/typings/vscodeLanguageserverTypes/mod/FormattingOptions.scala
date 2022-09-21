@@ -10,7 +10,7 @@ trait FormattingOptions
      with /**
   * Signature for further properties.
   */
-/* key */ StringDictionary[js.UndefOr[Boolean | Double | String]] {
+/* key */ StringDictionary[js.UndefOr[Boolean | integer | String]] {
   
   /**
     * Insert a newline character at the end of the file if one does not exist.
@@ -27,7 +27,7 @@ trait FormattingOptions
   /**
     * Size of a tab in spaces.
     */
-  var tabSize: Double
+  var tabSize: uinteger
   
   /**
     * Trim all newlines after the final newline at the end of the file.
@@ -37,7 +37,7 @@ trait FormattingOptions
   var trimFinalNewlines: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Trim trailing whitespaces on a line.
+    * Trim trailing whitespace on a line.
     *
     * @since 3.15.0
     */
@@ -45,7 +45,7 @@ trait FormattingOptions
 }
 object FormattingOptions {
   
-  inline def apply(insertSpaces: Boolean, tabSize: Double): FormattingOptions = {
+  inline def apply(insertSpaces: Boolean, tabSize: uinteger): FormattingOptions = {
     val __obj = js.Dynamic.literal(insertSpaces = insertSpaces.asInstanceOf[js.Any], tabSize = tabSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormattingOptions]
   }
@@ -57,12 +57,12 @@ object FormattingOptions {
   /**
     * Creates a new FormattingOptions literal.
     */
-  inline def create(tabSize: Double, insertSpaces: Boolean): FormattingOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tabSize.asInstanceOf[js.Any], insertSpaces.asInstanceOf[js.Any])).asInstanceOf[FormattingOptions]
+  inline def create(tabSize: uinteger, insertSpaces: Boolean): FormattingOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tabSize.asInstanceOf[js.Any], insertSpaces.asInstanceOf[js.Any])).asInstanceOf[FormattingOptions]
   
   /**
     * Checks whether the given literal conforms to the [FormattingOptions](#FormattingOptions) interface.
     */
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.FormattingOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.FormattingOptions */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.FormattingOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.FormattingOptions */ Boolean]
   
   extension [Self <: FormattingOptions](x: Self) {
     
@@ -72,7 +72,7 @@ object FormattingOptions {
     
     inline def setInsertSpaces(value: Boolean): Self = StObject.set(x, "insertSpaces", value.asInstanceOf[js.Any])
     
-    inline def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
+    inline def setTabSize(value: uinteger): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
     
     inline def setTrimFinalNewlines(value: Boolean): Self = StObject.set(x, "trimFinalNewlines", value.asInstanceOf[js.Any])
     

@@ -22,6 +22,8 @@ trait Registries[T /* <: Ractive[T] */] extends StObject {
   var interpolators: Registry[Interpolator]
   
   var partials: Registry[Partial]
+  
+  var transitions: Registry[Transition]
 }
 object Registries {
   
@@ -33,9 +35,10 @@ object Registries {
     events: Registry[Event],
     helpers: Registry[Helper],
     interpolators: Registry[Interpolator],
-    partials: Registry[Partial]
+    partials: Registry[Partial],
+    transitions: Registry[Transition]
   ): Registries[T] = {
-    val __obj = js.Dynamic.literal(adaptors = adaptors.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], decorators = decorators.asInstanceOf[js.Any], easings = easings.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], helpers = helpers.asInstanceOf[js.Any], interpolators = interpolators.asInstanceOf[js.Any], partials = partials.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(adaptors = adaptors.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], decorators = decorators.asInstanceOf[js.Any], easings = easings.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], helpers = helpers.asInstanceOf[js.Any], interpolators = interpolators.asInstanceOf[js.Any], partials = partials.asInstanceOf[js.Any], transitions = transitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Registries[T]]
   }
   
@@ -56,5 +59,7 @@ object Registries {
     inline def setInterpolators(value: Registry[Interpolator]): Self = StObject.set(x, "interpolators", value.asInstanceOf[js.Any])
     
     inline def setPartials(value: Registry[Partial]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
+    
+    inline def setTransitions(value: Registry[Transition]): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
   }
 }

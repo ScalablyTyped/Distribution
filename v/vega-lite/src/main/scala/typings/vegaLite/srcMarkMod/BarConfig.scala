@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.vegaLite.srcMarkMod._AnyMarkConfig because Already inherited */ trait BarConfig[ES /* <: ExprRef | SignalRef */]
+- typings.vegaLite.srcMarkMod.AnyMarkConfig because Already inherited */ trait BarConfig[ES /* <: ExprRef | SignalRef */]
   extends StObject
      with RectConfig[ES]
      with BarCornerRadiusMixins[ES]

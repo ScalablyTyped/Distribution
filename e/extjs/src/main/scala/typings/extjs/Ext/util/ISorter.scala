@@ -24,18 +24,18 @@ trait ISorter
   var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var sorterFn: js.UndefOr[js.Any] = js.undefined
+  var sorterFn: js.UndefOr[Any] = js.undefined
   
   /** [Method] Toggles the sorting direction for this sorter  */
   var toggle: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var transform: js.UndefOr[js.Any] = js.undefined
+  var transform: js.UndefOr[Any] = js.undefined
   
   /** [Method] Update the sort function for this sorter
     * @param fn Function A new sorter function for this sorter. If not specified it will use the default sorting function.
     */
-  var updateSortFunction: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var updateSortFunction: js.UndefOr[js.Function1[/* fn */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object ISorter {
   
@@ -62,7 +62,7 @@ object ISorter {
     
     inline def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
     
-    inline def setSorterFn(value: js.Any): Self = StObject.set(x, "sorterFn", value.asInstanceOf[js.Any])
+    inline def setSorterFn(value: Any): Self = StObject.set(x, "sorterFn", value.asInstanceOf[js.Any])
     
     inline def setSorterFnUndefined: Self = StObject.set(x, "sorterFn", js.undefined)
     
@@ -70,11 +70,11 @@ object ISorter {
     
     inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     
-    inline def setTransform(value: js.Any): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: Any): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    inline def setUpdateSortFunction(value: /* fn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updateSortFunction", js.Any.fromFunction1(value))
+    inline def setUpdateSortFunction(value: /* fn */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "updateSortFunction", js.Any.fromFunction1(value))
     
     inline def setUpdateSortFunctionUndefined: Self = StObject.set(x, "updateSortFunction", js.undefined)
   }

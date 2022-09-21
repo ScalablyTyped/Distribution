@@ -13,7 +13,7 @@ trait AdvertiserIdAlt extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the advertiser that owns the created channel. */
+  /** The ID of the advertiser that owns the parent channel. */
   var advertiserId: String
   
   /** Data format for response. */
@@ -21,6 +21,9 @@ trait AdvertiserIdAlt extends StObject {
   
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
+  
+  /** Required. The ID of the parent channel whose sites will be replaced. */
+  var channelId: String
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -30,9 +33,6 @@ trait AdvertiserIdAlt extends StObject {
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /** The ID of the partner that owns the created channel. */
-  var partnerId: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -48,8 +48,8 @@ trait AdvertiserIdAlt extends StObject {
 }
 object AdvertiserIdAlt {
   
-  inline def apply(advertiserId: String): AdvertiserIdAlt = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String, channelId: String): AdvertiserIdAlt = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], channelId = channelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdvertiserIdAlt]
   }
   
@@ -73,6 +73,8 @@ object AdvertiserIdAlt {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -84,10 +86,6 @@ object AdvertiserIdAlt {
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
-    
-    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".extract-zip-4br4dGJZ" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".extract-zip-4br4dGJZ" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

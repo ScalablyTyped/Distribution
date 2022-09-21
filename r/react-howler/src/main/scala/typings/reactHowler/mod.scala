@@ -1,6 +1,9 @@
 package typings.reactHowler
 
+import typings.howler.anon.Headers
 import typings.howler.mod.Howl
+import typings.howler.mod.HowlCallback
+import typings.howler.mod.HowlErrorCallback
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +13,7 @@ object mod {
   
   @JSImport("react-howler", JSImport.Default)
   @js.native
-  class default () extends ReactHowler
+  open class default () extends ReactHowler
   
   @js.native
   sealed trait HOWLER_STATE extends StObject
@@ -34,9 +37,9 @@ object mod {
          with HOWLER_STATE
   }
   
-  trait Props extends StObject {
+  trait PropTypes extends StObject {
     
-    var format: js.UndefOr[js.Array[String]] = js.undefined
+    var format: js.UndefOr[String | js.Array[String]] = js.undefined
     
     var html5: js.UndefOr[Boolean] = js.undefined
     
@@ -44,42 +47,50 @@ object mod {
     
     var mute: js.UndefOr[Boolean] = js.undefined
     
-    var onEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var onEnd: js.UndefOr[HowlCallback] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var onLoad: js.UndefOr[HowlCallback] = js.undefined
     
-    var onLoadError: js.UndefOr[js.Function1[/* id */ Double, Unit]] = js.undefined
+    var onLoadError: js.UndefOr[HowlErrorCallback] = js.undefined
     
-    var onPause: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var onPause: js.UndefOr[HowlCallback] = js.undefined
     
-    var onPlay: js.UndefOr[js.Function1[/* id */ Double, Unit]] = js.undefined
+    var onPlay: js.UndefOr[HowlCallback] = js.undefined
     
-    var onStop: js.UndefOr[js.Function1[/* id */ Double, Unit]] = js.undefined
+    var onPlayError: js.UndefOr[HowlErrorCallback] = js.undefined
     
-    var onVolume: js.UndefOr[js.Function1[/* id */ Double, Unit]] = js.undefined
+    var onSeek: js.UndefOr[HowlCallback] = js.undefined
+    
+    var onStop: js.UndefOr[HowlCallback] = js.undefined
+    
+    var onVolume: js.UndefOr[HowlCallback] = js.undefined
     
     var playing: js.UndefOr[Boolean] = js.undefined
     
     var preload: js.UndefOr[Boolean] = js.undefined
     
+    var rate: js.UndefOr[Double] = js.undefined
+    
     var src: String | js.Array[String]
     
     var volume: js.UndefOr[Double] = js.undefined
-  }
-  object Props {
     
-    inline def apply(src: String | js.Array[String]): Props = {
+    var xhr: js.UndefOr[Headers] = js.undefined
+  }
+  object PropTypes {
+    
+    inline def apply(src: String | js.Array[String]): PropTypes = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Props]
+      __obj.asInstanceOf[PropTypes]
     }
     
-    extension [Self <: Props](x: Self) {
+    extension [Self <: PropTypes](x: Self) {
       
-      inline def setFormat(value: js.Array[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String | js.Array[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setFormatVarargs(value: String*): Self = StObject.set(x, "format", js.Array(value :_*))
+      inline def setFormatVarargs(value: String*): Self = StObject.set(x, "format", js.Array(value*))
       
       inline def setHtml5(value: Boolean): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
       
@@ -93,31 +104,39 @@ object mod {
       
       inline def setMuteUndefined: Self = StObject.set(x, "mute", js.undefined)
       
-      inline def setOnEnd(value: () => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction0(value))
+      inline def setOnEnd(value: /* soundId */ Double => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
       
       inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
       
-      inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+      inline def setOnLoad(value: /* soundId */ Double => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
-      inline def setOnLoadError(value: /* id */ Double => Unit): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
+      inline def setOnLoadError(value: (/* soundId */ Double, /* error */ Any) => Unit): Self = StObject.set(x, "onLoadError", js.Any.fromFunction2(value))
       
       inline def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
       
       inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      inline def setOnPause(value: () => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction0(value))
+      inline def setOnPause(value: /* soundId */ Double => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
       
       inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
-      inline def setOnPlay(value: /* id */ Double => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+      inline def setOnPlay(value: /* soundId */ Double => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+      
+      inline def setOnPlayError(value: (/* soundId */ Double, /* error */ Any) => Unit): Self = StObject.set(x, "onPlayError", js.Any.fromFunction2(value))
+      
+      inline def setOnPlayErrorUndefined: Self = StObject.set(x, "onPlayError", js.undefined)
       
       inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
       
-      inline def setOnStop(value: /* id */ Double => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
+      inline def setOnSeek(value: /* soundId */ Double => Unit): Self = StObject.set(x, "onSeek", js.Any.fromFunction1(value))
+      
+      inline def setOnSeekUndefined: Self = StObject.set(x, "onSeek", js.undefined)
+      
+      inline def setOnStop(value: /* soundId */ Double => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
       
       inline def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
       
-      inline def setOnVolume(value: /* id */ Double => Unit): Self = StObject.set(x, "onVolume", js.Any.fromFunction1(value))
+      inline def setOnVolume(value: /* soundId */ Double => Unit): Self = StObject.set(x, "onVolume", js.Any.fromFunction1(value))
       
       inline def setOnVolumeUndefined: Self = StObject.set(x, "onVolume", js.undefined)
       
@@ -129,19 +148,27 @@ object mod {
       
       inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
       
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      
+      inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+      
       inline def setSrc(value: String | js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value*))
       
       inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
       
       inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+      
+      inline def setXhr(value: Headers): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      
+      inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
   }
   
   @js.native
   trait ReactHowler
-    extends Component[Props, js.Object, js.Any] {
+    extends Component[PropTypes, js.Object, Any] {
     
     def duration(): Double = js.native
     def duration(id: Double): Double = js.native

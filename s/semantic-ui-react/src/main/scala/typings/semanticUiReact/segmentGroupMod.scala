@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.segmentSegmentMod.SegmentSizeProp
 import org.scalablytyped.runtime.StObject
@@ -14,12 +14,12 @@ object segmentGroupMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Segment/SegmentGroup", JSImport.Default)
   @js.native
-  val default: StatelessComponent[SegmentGroupProps] = js.native
+  val default: FC[SegmentGroupProps] = js.native
   
   trait SegmentGroupProps
     extends StObject
        with StrictSegmentGroupProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object SegmentGroupProps {
     
     inline def apply(): SegmentGroupProps = {
@@ -31,7 +31,7 @@ object segmentGroupMod extends Shortcut {
   trait StrictSegmentGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -69,7 +69,7 @@ object segmentGroupMod extends Shortcut {
     
     extension [Self <: StrictSegmentGroupProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -111,8 +111,8 @@ object segmentGroupMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[SegmentGroupProps]
+  type _To = FC[SegmentGroupProps]
   
   /* This means you don't have to write `default`, but can instead just say `segmentGroupMod.foo` */
-  override def _to: StatelessComponent[SegmentGroupProps] = default
+  override def _to: FC[SegmentGroupProps] = default
 }

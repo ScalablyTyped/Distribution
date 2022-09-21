@@ -10,12 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InputConstructor
   extends StObject
      with /**
-  * Form element inputs define the input user interface to use for a [field element](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html) specified in a feature layer's [formTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html).
+  * Input device related configuration settings on the View.
   *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-inputs-Input.html)
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-Input.html)
   */
 Instantiable0[Input]
-     with Instantiable1[/* properties */ InputProperties, Input] {
-  
-  def fromJSON(json: js.Any): Input = js.native
-}
+     with Instantiable1[/* properties */ InputProperties, Input]

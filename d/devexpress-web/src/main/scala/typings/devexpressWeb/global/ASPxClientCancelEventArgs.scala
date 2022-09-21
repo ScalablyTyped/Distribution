@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new object of the ASPxClientCancelEventArgs type with the specified value.
   */
-class ASPxClientCancelEventArgs ()
+open class ASPxClientCancelEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCancelEventArgs {
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native

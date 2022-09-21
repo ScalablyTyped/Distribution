@@ -1,26 +1,28 @@
 package typings.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type IClassElementSyntax = typings.typescriptServices.TypeScript.ISyntaxNode
+type IClassElementSyntax = ISyntaxNode
 
-type IIndexable[T] = org.scalablytyped.runtime.StringDictionary[T]
+type IIndexable[T] = StringDictionary[T]
 
-type IMemberDeclarationSyntax = typings.typescriptServices.TypeScript.IClassElementSyntax
+type IMemberDeclarationSyntax = IClassElementSyntax
 
-type IModuleElementSyntax = typings.typescriptServices.TypeScript.ISyntaxNode
+type IModuleElementSyntax = ISyntaxNode
 
-type INameSyntax = typings.typescriptServices.TypeScript.ITypeSyntax
+type INameSyntax = ITypeSyntax
 
-type IPropertyAssignmentSyntax = typings.typescriptServices.TypeScript.IClassElementSyntax
+type IPropertyAssignmentSyntax = IClassElementSyntax
 
-type ISyntaxNode = typings.typescriptServices.TypeScript.ISyntaxNodeOrToken
+type ISyntaxNode = ISyntaxNodeOrToken
 
-type ITypeMemberSyntax = typings.typescriptServices.TypeScript.ISyntaxNode
+type ITypeMemberSyntax = ISyntaxNode
 
-type ITypeSyntax = typings.typescriptServices.TypeScript.ISyntaxNodeOrToken
+type ITypeSyntax = ISyntaxNodeOrToken
 
-type TypeArgumentMap = org.scalablytyped.runtime.NumberDictionary[typings.typescriptServices.TypeScript.PullTypeSymbol]
+type TypeArgumentMap = NumberDictionary[PullTypeSymbol]

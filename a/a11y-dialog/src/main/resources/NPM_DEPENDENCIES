@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "a11y-dialog" : "5.4.2"
+      "a11y-dialog" : "7.5.2"
     }
   ],
   "test-dependencies" : [
     {
-      "a11y-dialog" : "5.4.2"
+      "a11y-dialog" : "7.5.2"
     }
   ],
   "compile-devDependencies" : [

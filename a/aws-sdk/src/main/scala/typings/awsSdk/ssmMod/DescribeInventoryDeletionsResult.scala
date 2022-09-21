@@ -29,7 +29,7 @@ object DescribeInventoryDeletionsResult {
     
     inline def setInventoryDeletionsUndefined: Self = StObject.set(x, "InventoryDeletions", js.undefined)
     
-    inline def setInventoryDeletionsVarargs(value: InventoryDeletionStatusItem*): Self = StObject.set(x, "InventoryDeletions", js.Array(value :_*))
+    inline def setInventoryDeletionsVarargs(value: InventoryDeletionStatusItem*): Self = StObject.set(x, "InventoryDeletions", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

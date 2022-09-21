@@ -1,7 +1,7 @@
 
 # Scala.js typings for object-path-immutable
 
-Typings are for version 3.1.1
+Typings are for version 4.1.2
 
 ## Library description:
 Modify deep object properties without modifying the original object (immutability). Works great with React and Redux.
@@ -10,10 +10,10 @@ Modify deep object properties without modifying the original object (immutabilit
 | ------------------ | :-------------: |
 | Full name          | object-path-immutable |
 | Keywords           | deep, path, access, get, property, dot, prop, object, obj, notation, segment, value, nested, key, immutable, immutability, react, redux, state |
-| # releases         | 9 |
-| # dependents       | 70 |
-| # downloads        | 2842712 |
-| # stars            | 5 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 205402.33333333334 |
+| # stars            | 394.0 |
 
 ## Links
 - [Homepage](https://github.com/mariocasciaro/object-path-immutable)

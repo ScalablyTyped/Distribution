@@ -10,10 +10,10 @@ object strikethroughSMod {
   
   @JSImport("material-ui/svg-icons/editor/strikethrough-s", JSImport.Default)
   @js.native
-  class default () extends EditorStrikethroughS
+  open class default () extends EditorStrikethroughS
   
   @JSImport("material-ui/svg-icons/editor/strikethrough-s", "EditorStrikethroughS")
   @js.native
-  class EditorStrikethroughS ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorStrikethroughS ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

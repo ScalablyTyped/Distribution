@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeVpcPeeringAuthorizationsOutput extends StObject {
   
   /**
-    * A collection of objects that describe all valid VPC peering operations for the current AWS account.
+    * A collection of objects that describe all valid VPC peering operations for the current Amazon Web Services account.
     */
   var VpcPeeringAuthorizations: js.UndefOr[VpcPeeringAuthorizationList] = js.undefined
 }
@@ -24,6 +24,6 @@ object DescribeVpcPeeringAuthorizationsOutput {
     
     inline def setVpcPeeringAuthorizationsUndefined: Self = StObject.set(x, "VpcPeeringAuthorizations", js.undefined)
     
-    inline def setVpcPeeringAuthorizationsVarargs(value: VpcPeeringAuthorization*): Self = StObject.set(x, "VpcPeeringAuthorizations", js.Array(value :_*))
+    inline def setVpcPeeringAuthorizationsVarargs(value: VpcPeeringAuthorization*): Self = StObject.set(x, "VpcPeeringAuthorizations", js.Array(value*))
   }
 }

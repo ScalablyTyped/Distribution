@@ -14,7 +14,7 @@ trait DescribeFleetResponse extends StObject {
   /**
     * The time, in milliseconds since the epoch, when the fleet was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the last deployment job.
@@ -29,7 +29,7 @@ trait DescribeFleetResponse extends StObject {
   /**
     * The time of the last deployment.
     */
-  var lastDeploymentTime: js.UndefOr[CreatedAt] = js.undefined
+  var lastDeploymentTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the fleet.
@@ -59,7 +59,7 @@ object DescribeFleetResponse {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -71,7 +71,7 @@ object DescribeFleetResponse {
     
     inline def setLastDeploymentStatusUndefined: Self = StObject.set(x, "lastDeploymentStatus", js.undefined)
     
-    inline def setLastDeploymentTime(value: CreatedAt): Self = StObject.set(x, "lastDeploymentTime", value.asInstanceOf[js.Any])
+    inline def setLastDeploymentTime(value: js.Date): Self = StObject.set(x, "lastDeploymentTime", value.asInstanceOf[js.Any])
     
     inline def setLastDeploymentTimeUndefined: Self = StObject.set(x, "lastDeploymentTime", js.undefined)
     
@@ -83,7 +83,7 @@ object DescribeFleetResponse {
     
     inline def setRobotsUndefined: Self = StObject.set(x, "robots", js.undefined)
     
-    inline def setRobotsVarargs(value: Robot*): Self = StObject.set(x, "robots", js.Array(value :_*))
+    inline def setRobotsVarargs(value: Robot*): Self = StObject.set(x, "robots", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

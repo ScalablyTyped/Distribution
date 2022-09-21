@@ -11,9 +11,9 @@ Wrap words to a specified length.
 | Full name          | word-wrap |
 | Keywords           | break, carriage, line, new-line, newline, return, soft, text, word, word-wrap, words, wrap |
 | # releases         | 0 |
-| # dependents       | 521 |
-| # downloads        | 532268592 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 9.733146766666667E7 |
+| # stars            | 120.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/word-wrap)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "private-ip" : "2.3.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "private-ip" : "2.3.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

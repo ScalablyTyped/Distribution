@@ -14,7 +14,7 @@ trait `9` extends StObject {
   
   def update(
     element: HTMLElement,
-    valueAccessor: js.Function0[MaybeSubscribable[js.Any]],
+    valueAccessor: js.Function0[MaybeSubscribable[Any]],
     allBindings: AllBindings
   ): Unit
 }
@@ -22,7 +22,7 @@ object `9` {
   
   inline def apply(
     init: HTMLElement => BindingHandlerControlsDescendant,
-    update: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit
+    update: (HTMLElement, js.Function0[MaybeSubscribable[Any]], AllBindings) => Unit
   ): `9` = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction1(init), update = js.Any.fromFunction3(update))
     __obj.asInstanceOf[`9`]
@@ -32,6 +32,6 @@ object `9` {
     
     inline def setInit(value: HTMLElement => BindingHandlerControlsDescendant): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    inline def setUpdate(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+    inline def setUpdate(value: (HTMLElement, js.Function0[MaybeSubscribable[Any]], AllBindings) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
   }
 }

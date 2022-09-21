@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__attr
 
-Typings are for version 0.3.2
+Typings are for version 0.3.3
 
 ## Library description:
 The Attribute module for G2, F2.
@@ -10,10 +10,10 @@ The Attribute module for G2, F2.
 | ------------------ | :-------------: |
 | Full name          | @antv/attr |
 | Keywords           | antv, attr, g2, f2 |
-| # releases         | 5 |
-| # dependents       | 8 |
-| # downloads        | 2509981 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 379313.3333333333 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/attr#readme)

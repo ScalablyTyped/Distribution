@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateCanaryRequest extends StObject {
   
   /**
-    * The location in Amazon S3 where Synthetics stores artifacts from the test runs of this canary. Artifacts include the log file, screenshots, and HAR files.
+    * A structure that contains the configuration for canary artifacts, including the encryption-at-rest settings for artifacts that the canary uploads to Amazon S3.
+    */
+  var ArtifactConfig: js.UndefOr[ArtifactConfigInput] = js.undefined
+  
+  /**
+    * The location in Amazon S3 where Synthetics stores artifacts from the test runs of this canary. Artifacts include the log file, screenshots, and HAR files. The name of the S3 bucket can't include a period (.).
     */
   var ArtifactS3Location: String
   
@@ -32,7 +37,7 @@ trait CreateCanaryRequest extends StObject {
   var Name: CanaryName
   
   /**
-    * A structure that contains the configuration for individual canary runs, such as timeout value.
+    * A structure that contains the configuration for individual canary runs, such as timeout value and environment variables.  The environment variables keys and values are not encrypted. Do not store sensitive information in this field. 
     */
   var RunConfig: js.UndefOr[CanaryRunConfigInput] = js.undefined
   
@@ -76,6 +81,10 @@ object CreateCanaryRequest {
   }
   
   extension [Self <: CreateCanaryRequest](x: Self) {
+    
+    inline def setArtifactConfig(value: ArtifactConfigInput): Self = StObject.set(x, "ArtifactConfig", value.asInstanceOf[js.Any])
+    
+    inline def setArtifactConfigUndefined: Self = StObject.set(x, "ArtifactConfig", js.undefined)
     
     inline def setArtifactS3Location(value: String): Self = StObject.set(x, "ArtifactS3Location", value.asInstanceOf[js.Any])
     

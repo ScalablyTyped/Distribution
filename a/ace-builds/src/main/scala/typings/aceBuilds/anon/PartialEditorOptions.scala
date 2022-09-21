@@ -69,7 +69,7 @@ trait PartialEditorOptions extends StObject {
   
   var indentedSoftWrap: js.UndefOr[Boolean] = js.undefined
   
-  var keyboardHandler: js.UndefOr[String] = js.undefined
+  var keyboardHandler: js.UndefOr[String | Null] = js.undefined
   
   var maxLines: js.UndefOr[Double] = js.undefined
   
@@ -231,6 +231,8 @@ object PartialEditorOptions {
     inline def setIndentedSoftWrapUndefined: Self = StObject.set(x, "indentedSoftWrap", js.undefined)
     
     inline def setKeyboardHandler(value: String): Self = StObject.set(x, "keyboardHandler", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboardHandlerNull: Self = StObject.set(x, "keyboardHandler", null)
     
     inline def setKeyboardHandlerUndefined: Self = StObject.set(x, "keyboardHandler", js.undefined)
     

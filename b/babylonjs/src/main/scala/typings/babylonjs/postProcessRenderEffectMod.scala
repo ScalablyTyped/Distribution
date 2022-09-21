@@ -12,7 +12,7 @@ object postProcessRenderEffectMod {
   
   @JSImport("babylonjs/PostProcesses/RenderPipeline/postProcessRenderEffect", "PostProcessRenderEffect")
   @js.native
-  class PostProcessRenderEffect protected () extends StObject {
+  open class PostProcessRenderEffect protected () extends StObject {
     /**
       * Instantiates a post process render effect.
       * A post process can be used to apply a shader to a texture after it is rendered.
@@ -46,17 +46,17 @@ object postProcessRenderEffectMod {
       */
     def _attachCameras(cameras: Camera): Unit = js.native
     
-    /* private */ var _cameras: js.Any = js.native
+    /* private */ var _cameras: Any = js.native
     
     /**
-      * Detatches the effect on cameras
-      * @param cameras The camera to detatch from.
+      * Detaches the effect on cameras
+      * @param cameras The camera to detach from.
       * @hidden
       */
     def _detachCameras(cameras: js.Array[Camera]): Unit = js.native
     /**
       * Detaches the effect on cameras
-      * @param cameras The camera to detatch from.
+      * @param cameras The camera to detach from.
       * @hidden
       */
     def _detachCameras(cameras: Camera): Unit = js.native
@@ -87,9 +87,9 @@ object postProcessRenderEffectMod {
       */
     def _enable(cameras: Nullable[js.Array[Camera]]): Unit = js.native
     
-    /* private */ var _getPostProcesses: js.Any = js.native
+    /* private */ var _getPostProcesses: Any = js.native
     
-    /* private */ var _indicesForCamera: js.Any = js.native
+    /* private */ var _indicesForCamera: Any = js.native
     
     /**
       * Name of the effect
@@ -97,9 +97,9 @@ object postProcessRenderEffectMod {
       */
     var _name: String = js.native
     
-    /* private */ var _postProcesses: js.Any = js.native
+    /* private */ var _postProcesses: Any = js.native
     
-    /* private */ var _singleInstance: js.Any = js.native
+    /* private */ var _singleInstance: Any = js.native
     
     /**
       * Updates the current state of the effect

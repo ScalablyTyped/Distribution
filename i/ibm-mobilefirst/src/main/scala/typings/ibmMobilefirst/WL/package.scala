@@ -1,20 +1,21 @@
 package typings.ibmMobilefirst.WL
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type FailureResponse = typings.ibmMobilefirst.WL.ResponseBase
+type FailureResponse = ResponseBase
 
-type Filter = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type Filter = StringDictionary[String]
 
-type Headers = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type Headers = StringDictionary[String]
 
 type LoggerCallback = js.Function3[
-/* message */ java.lang.String | js.Array[java.lang.String], 
-/* level */ java.lang.String, 
-/* package */ java.lang.String, 
-scala.Unit]
+/* message */ String | js.Array[String], 
+/* level */ String, 
+/* package */ String, 
+Unit]
 
-type ResponseHandler[T] = js.Function1[/* response */ T, scala.Unit]
+type ResponseHandler[T] = js.Function1[/* response */ T, Unit]

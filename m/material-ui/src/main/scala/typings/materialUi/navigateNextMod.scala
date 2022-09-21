@@ -10,10 +10,10 @@ object navigateNextMod {
   
   @JSImport("material-ui/svg-icons/image/navigate-next", JSImport.Default)
   @js.native
-  class default () extends ImageNavigateNext
+  open class default () extends ImageNavigateNext
   
   @JSImport("material-ui/svg-icons/image/navigate-next", "ImageNavigateNext")
   @js.native
-  class ImageNavigateNext ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageNavigateNext ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

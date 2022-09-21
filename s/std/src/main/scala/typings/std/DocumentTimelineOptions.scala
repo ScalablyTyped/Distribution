@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DocumentTimelineOptions extends StObject {
   
-  var originTime: js.UndefOr[Double] = js.undefined
+  /* standard dom */
+  var originTime: js.UndefOr[DOMHighResTimeStamp] = js.undefined
 }
 object DocumentTimelineOptions {
   
@@ -17,7 +18,7 @@ object DocumentTimelineOptions {
   
   extension [Self <: DocumentTimelineOptions](x: Self) {
     
-    inline def setOriginTime(value: Double): Self = StObject.set(x, "originTime", value.asInstanceOf[js.Any])
+    inline def setOriginTime(value: DOMHighResTimeStamp): Self = StObject.set(x, "originTime", value.asInstanceOf[js.Any])
     
     inline def setOriginTimeUndefined: Self = StObject.set(x, "originTime", js.undefined)
   }

@@ -32,7 +32,7 @@ object ListSigningCertificatesResponse {
     
     inline def setCertificates(value: certificateListType): Self = StObject.set(x, "Certificates", value.asInstanceOf[js.Any])
     
-    inline def setCertificatesVarargs(value: SigningCertificate*): Self = StObject.set(x, "Certificates", js.Array(value :_*))
+    inline def setCertificatesVarargs(value: SigningCertificate*): Self = StObject.set(x, "Certificates", js.Array(value*))
     
     inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

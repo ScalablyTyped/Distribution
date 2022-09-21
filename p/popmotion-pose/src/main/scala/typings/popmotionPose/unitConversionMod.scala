@@ -18,25 +18,25 @@ object unitConversionMod {
   inline def convertPositionalUnits(
     state: PoserState[
       Value, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_flip.Action */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_flip.ColdSubscription */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_flip.Action */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_flip.ColdSubscription */ Any, 
       DomPopmotionPoser
     ],
     nextPose: Pose[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_flip.Action */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_flip.Action */ Any, 
       TransitionDefinition
     ]
   ): Pose[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_flip.Action */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_flip.Action */ Any, 
     TransitionDefinition
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPositionalUnits")(state.asInstanceOf[js.Any], nextPose.asInstanceOf[js.Any])).asInstanceOf[Pose[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_flip.Action */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_flip.Action */ Any, 
     TransitionDefinition
   ]]
   
   inline def isPositional(
     pose: Pose[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_flip.Action */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_flip.Action */ Any, 
       TransitionDefinition
     ]
   ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositional")(pose.asInstanceOf[js.Any]).asInstanceOf[Boolean]

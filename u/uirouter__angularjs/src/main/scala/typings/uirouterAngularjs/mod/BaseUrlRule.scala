@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/angularjs", "BaseUrlRule")
 @js.native
-class BaseUrlRule protected ()
+open class BaseUrlRule protected ()
   extends typings.uirouterCore.mod.BaseUrlRule {
   def this(`match`: UrlRuleMatchFn) = this()
   def this(`match`: UrlRuleMatchFn, handler: UrlRuleHandlerFn) = this()

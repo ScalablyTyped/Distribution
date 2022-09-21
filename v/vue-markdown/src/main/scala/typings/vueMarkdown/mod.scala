@@ -17,8 +17,8 @@ object mod {
     
     @JSImport("vue-markdown", "default.beforeMount")
     @js.native
-    def beforeMount: js.Any = js.native
-    inline def beforeMount_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeMount")(x.asInstanceOf[js.Any])
+    def beforeMount: Any = js.native
+    inline def beforeMount_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeMount")(x.asInstanceOf[js.Any])
     
     @JSImport("vue-markdown", "default.computed")
     @js.native
@@ -27,8 +27,8 @@ object mod {
     
     @JSImport("vue-markdown", "default.data")
     @js.native
-    def data: js.Any = js.native
-    inline def data_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
+    def data: Any = js.native
+    inline def data_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
     
     @JSImport("vue-markdown", "default.md")
     @js.native
@@ -42,8 +42,8 @@ object mod {
     
     @JSImport("vue-markdown", "default.render")
     @js.native
-    def render: js.Any = js.native
-    inline def render_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("render")(x.asInstanceOf[js.Any])
+    def render: Any = js.native
+    inline def render_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("render")(x.asInstanceOf[js.Any])
     
     @JSImport("vue-markdown", "default.template")
     @js.native
@@ -59,8 +59,8 @@ object mod {
     
     @JSImport("vue-markdown", "vue_markdown.beforeMount")
     @js.native
-    def beforeMount: js.Any = js.native
-    inline def beforeMount_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeMount")(x.asInstanceOf[js.Any])
+    def beforeMount: Any = js.native
+    inline def beforeMount_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beforeMount")(x.asInstanceOf[js.Any])
     
     @JSImport("vue-markdown", "vue_markdown.computed")
     @js.native
@@ -69,8 +69,8 @@ object mod {
     
     @JSImport("vue-markdown", "vue_markdown.data")
     @js.native
-    def data: js.Any = js.native
-    inline def data_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
+    def data: Any = js.native
+    inline def data_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("data")(x.asInstanceOf[js.Any])
     
     @JSImport("vue-markdown", "vue_markdown.md")
     @js.native
@@ -84,8 +84,8 @@ object mod {
     
     @JSImport("vue-markdown", "vue_markdown.render")
     @js.native
-    def render: js.Any = js.native
-    inline def render_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("render")(x.asInstanceOf[js.Any])
+    def render: Any = js.native
+    inline def render_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("render")(x.asInstanceOf[js.Any])
     
     @JSImport("vue-markdown", "vue_markdown.template")
     @js.native

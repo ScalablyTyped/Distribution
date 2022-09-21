@@ -2,6 +2,7 @@ package typings.grommet
 
 import typings.grommet.anon.TabContents
 import typings.grommet.grommetStrings.center
+import typings.grommet.grommetStrings.children
 import typings.grommet.grommetStrings.end
 import typings.grommet.grommetStrings.grow
 import typings.grommet.grommetStrings.shrink
@@ -15,6 +16,7 @@ import typings.react.mod.FC
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +25,19 @@ object tabsMod {
   
   @JSImport("grommet/components/Tabs", "Tabs")
   @js.native
-  val Tabs: FC[TabsProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])] = js.native
+  val Tabs: FC[TabsExtendedProps] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'children'> ]: react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>[P]} */ trait TabsExtendedProps
+    extends StObject
+       with TabsProps
+  object TabsExtendedProps {
+    
+    inline def apply(): TabsExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TabsExtendedProps]
+    }
+  }
   
   trait TabsProps extends StObject {
     
@@ -103,4 +117,6 @@ object tabsMod {
       inline def setOnActiveUndefined: Self = StObject.set(x, "onActive", js.undefined)
     }
   }
+  
+  type divProps = Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], children]
 }

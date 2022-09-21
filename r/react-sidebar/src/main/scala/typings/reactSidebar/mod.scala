@@ -11,12 +11,14 @@ object mod {
   
   @JSImport("react-sidebar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SidebarProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SidebarProps, js.Object, Any]
   
-  type Sidebar = Component[SidebarProps, js.Object, js.Any]
+  type Sidebar = Component[SidebarProps, js.Object, Any]
   
   trait SidebarProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var contentClassName: js.UndefOr[String] = js.undefined
     
@@ -66,6 +68,10 @@ object mod {
     }
     
     extension [Self <: SidebarProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       

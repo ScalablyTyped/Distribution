@@ -14,17 +14,22 @@ trait SMBFileShareInfo extends StObject {
   /**
     * A list of users or groups in the Active Directory that have administrator rights to the file share. A group must be prefixed with the @ character. Acceptable formats include: DOMAIN\User1, user1, @group1, and @DOMAIN\group1. Can only be set if Authentication is set to ActiveDirectory.
     */
-  var AdminUserList: js.UndefOr[FileShareUserList] = js.undefined
+  var AdminUserList: js.UndefOr[UserList] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the storage used for the audit logs.
+    * The Amazon Resource Name (ARN) of the storage used for audit logs.
     */
   var AuditDestinationARN: js.UndefOr[typings.awsSdk.storagegatewayMod.AuditDestinationARN] = js.undefined
   
   var Authentication: js.UndefOr[typings.awsSdk.storagegatewayMod.Authentication] = js.undefined
   
   /**
-    * Refresh cache information.
+    * Specifies the Region of the S3 bucket where the SMB file share stores files.  This parameter is required for SMB file shares that connect to Amazon S3 through a VPC endpoint, a VPC access point, or an access point alias that points to a VPC access point. 
+    */
+  var BucketRegion: js.UndefOr[RegionId] = js.undefined
+  
+  /**
+    * Refresh cache information for the file share.
     */
   var CacheAttributes: js.UndefOr[typings.awsSdk.storagegatewayMod.CacheAttributes] = js.undefined
   
@@ -34,7 +39,7 @@ trait SMBFileShareInfo extends StObject {
   var CaseSensitivity: js.UndefOr[typings.awsSdk.storagegatewayMod.CaseSensitivity] = js.undefined
   
   /**
-    * The default storage class for objects put into an Amazon S3 bucket by the file gateway. The default value is S3_INTELLIGENT_TIERING. Optional. Valid Values: S3_STANDARD | S3_INTELLIGENT_TIERING | S3_STANDARD_IA | S3_ONEZONE_IA 
+    * The default storage class for objects put into an Amazon S3 bucket by the S3 File Gateway. The default value is S3_STANDARD. Optional. Valid Values: S3_STANDARD | S3_INTELLIGENT_TIERING | S3_STANDARD_IA | S3_ONEZONE_IA 
     */
   var DefaultStorageClass: js.UndefOr[StorageClass] = js.undefined
   
@@ -43,7 +48,7 @@ trait SMBFileShareInfo extends StObject {
   var FileShareId: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareId] = js.undefined
   
   /**
-    * The name of the file share. Optional.   FileShareName must be set if an S3 prefix name is set in LocationARN. 
+    * The name of the file share. Optional.   FileShareName must be set if an S3 prefix name is set in LocationARN, or if an access point or access point alias is used. 
     */
   var FileShareName: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareName] = js.undefined
   
@@ -59,10 +64,10 @@ trait SMBFileShareInfo extends StObject {
   /**
     * A list of users or groups in the Active Directory that are not allowed to access the file share. A group must be prefixed with the @ character. Acceptable formats include: DOMAIN\User1, user1, @group1, and @DOMAIN\group1. Can only be set if Authentication is set to ActiveDirectory.
     */
-  var InvalidUserList: js.UndefOr[FileShareUserList] = js.undefined
+  var InvalidUserList: js.UndefOr[UserList] = js.undefined
   
   /**
-    * Set to true to use Amazon S3 server-side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional. Valid Values: true | false 
+    * Set to true to use Amazon S3 server-side encryption with your own KMS key, or false to use a key managed by Amazon S3. Optional. Valid Values: true | false 
     */
   var KMSEncrypted: js.UndefOr[scala.Boolean] = js.undefined
   
@@ -71,11 +76,16 @@ trait SMBFileShareInfo extends StObject {
   var LocationARN: js.UndefOr[typings.awsSdk.storagegatewayMod.LocationARN] = js.undefined
   
   /**
-    * The notification policy of the file share.
+    * The notification policy of the file share. SettlingTimeInSeconds controls the number of seconds to wait after the last point in time a client wrote to a file before generating an ObjectUploaded notification. Because clients can make many small writes to files, it's best to set this parameter for as long as possible to avoid generating multiple notifications for the same file in a small time period.   SettlingTimeInSeconds has no effect on the timing of the object uploading to Amazon S3, only the timing of the notification.  The following example sets NotificationPolicy on with SettlingTimeInSeconds set to 60.  {\"Upload\": {\"SettlingTimeInSeconds\": 60}}  The following example sets NotificationPolicy off.  {} 
     */
   var NotificationPolicy: js.UndefOr[typings.awsSdk.storagegatewayMod.NotificationPolicy] = js.undefined
   
   var ObjectACL: js.UndefOr[typings.awsSdk.storagegatewayMod.ObjectACL] = js.undefined
+  
+  /**
+    * Specifies whether opportunistic locking is enabled for the SMB file share.  Enabling opportunistic locking on case-sensitive shares is not recommended for workloads that involve access to files with the same name in different case.  Valid Values: true | false 
+    */
+  var OplocksEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The file share path used by the SMB client to identify the mount point.
@@ -95,7 +105,7 @@ trait SMBFileShareInfo extends StObject {
   var Role: js.UndefOr[typings.awsSdk.storagegatewayMod.Role] = js.undefined
   
   /**
-    * If this value is set to true, it indicates that access control list (ACL) is enabled on the SMB file share. If it is set to false, it indicates that file and directory permissions are mapped to the POSIX permission. For more information, see Using Microsoft Windows ACLs to control access to an SMB file share in the AWS Storage Gateway User Guide.
+    * If this value is set to true, it indicates that access control list (ACL) is enabled on the SMB file share. If it is set to false, it indicates that file and directory permissions are mapped to the POSIX permission. For more information, see Using Microsoft Windows ACLs to control access to an SMB file share in the Storage Gateway User Guide.
     */
   var SMBACLEnabled: js.UndefOr[Boolean] = js.undefined
   
@@ -105,9 +115,14 @@ trait SMBFileShareInfo extends StObject {
   var Tags: js.UndefOr[typings.awsSdk.storagegatewayMod.Tags] = js.undefined
   
   /**
+    * Specifies the DNS name for the VPC endpoint that the SMB file share uses to connect to Amazon S3.  This parameter is required for SMB file shares that connect to Amazon S3 through a VPC endpoint, a VPC access point, or an access point alias that points to a VPC access point. 
+    */
+  var VPCEndpointDNSName: js.UndefOr[DNSHostName] = js.undefined
+  
+  /**
     * A list of users or groups in the Active Directory that are allowed to access the file share. A group must be prefixed with the @ character. Acceptable formats include: DOMAIN\User1, user1, @group1, and @DOMAIN\group1. Can only be set if Authentication is set to ActiveDirectory.
     */
-  var ValidUserList: js.UndefOr[FileShareUserList] = js.undefined
+  var ValidUserList: js.UndefOr[UserList] = js.undefined
 }
 object SMBFileShareInfo {
   
@@ -122,11 +137,11 @@ object SMBFileShareInfo {
     
     inline def setAccessBasedEnumerationUndefined: Self = StObject.set(x, "AccessBasedEnumeration", js.undefined)
     
-    inline def setAdminUserList(value: FileShareUserList): Self = StObject.set(x, "AdminUserList", value.asInstanceOf[js.Any])
+    inline def setAdminUserList(value: UserList): Self = StObject.set(x, "AdminUserList", value.asInstanceOf[js.Any])
     
     inline def setAdminUserListUndefined: Self = StObject.set(x, "AdminUserList", js.undefined)
     
-    inline def setAdminUserListVarargs(value: FileShareUser*): Self = StObject.set(x, "AdminUserList", js.Array(value :_*))
+    inline def setAdminUserListVarargs(value: UserListUser*): Self = StObject.set(x, "AdminUserList", js.Array(value*))
     
     inline def setAuditDestinationARN(value: AuditDestinationARN): Self = StObject.set(x, "AuditDestinationARN", value.asInstanceOf[js.Any])
     
@@ -135,6 +150,10 @@ object SMBFileShareInfo {
     inline def setAuthentication(value: Authentication): Self = StObject.set(x, "Authentication", value.asInstanceOf[js.Any])
     
     inline def setAuthenticationUndefined: Self = StObject.set(x, "Authentication", js.undefined)
+    
+    inline def setBucketRegion(value: RegionId): Self = StObject.set(x, "BucketRegion", value.asInstanceOf[js.Any])
+    
+    inline def setBucketRegionUndefined: Self = StObject.set(x, "BucketRegion", js.undefined)
     
     inline def setCacheAttributes(value: CacheAttributes): Self = StObject.set(x, "CacheAttributes", value.asInstanceOf[js.Any])
     
@@ -172,11 +191,11 @@ object SMBFileShareInfo {
     
     inline def setGuessMIMETypeEnabledUndefined: Self = StObject.set(x, "GuessMIMETypeEnabled", js.undefined)
     
-    inline def setInvalidUserList(value: FileShareUserList): Self = StObject.set(x, "InvalidUserList", value.asInstanceOf[js.Any])
+    inline def setInvalidUserList(value: UserList): Self = StObject.set(x, "InvalidUserList", value.asInstanceOf[js.Any])
     
     inline def setInvalidUserListUndefined: Self = StObject.set(x, "InvalidUserList", js.undefined)
     
-    inline def setInvalidUserListVarargs(value: FileShareUser*): Self = StObject.set(x, "InvalidUserList", js.Array(value :_*))
+    inline def setInvalidUserListVarargs(value: UserListUser*): Self = StObject.set(x, "InvalidUserList", js.Array(value*))
     
     inline def setKMSEncrypted(value: scala.Boolean): Self = StObject.set(x, "KMSEncrypted", value.asInstanceOf[js.Any])
     
@@ -197,6 +216,10 @@ object SMBFileShareInfo {
     inline def setObjectACL(value: ObjectACL): Self = StObject.set(x, "ObjectACL", value.asInstanceOf[js.Any])
     
     inline def setObjectACLUndefined: Self = StObject.set(x, "ObjectACL", js.undefined)
+    
+    inline def setOplocksEnabled(value: Boolean): Self = StObject.set(x, "OplocksEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setOplocksEnabledUndefined: Self = StObject.set(x, "OplocksEnabled", js.undefined)
     
     inline def setPath(value: Path): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
@@ -222,12 +245,16 @@ object SMBFileShareInfo {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
-    inline def setValidUserList(value: FileShareUserList): Self = StObject.set(x, "ValidUserList", value.asInstanceOf[js.Any])
+    inline def setVPCEndpointDNSName(value: DNSHostName): Self = StObject.set(x, "VPCEndpointDNSName", value.asInstanceOf[js.Any])
+    
+    inline def setVPCEndpointDNSNameUndefined: Self = StObject.set(x, "VPCEndpointDNSName", js.undefined)
+    
+    inline def setValidUserList(value: UserList): Self = StObject.set(x, "ValidUserList", value.asInstanceOf[js.Any])
     
     inline def setValidUserListUndefined: Self = StObject.set(x, "ValidUserList", js.undefined)
     
-    inline def setValidUserListVarargs(value: FileShareUser*): Self = StObject.set(x, "ValidUserList", js.Array(value :_*))
+    inline def setValidUserListVarargs(value: UserListUser*): Self = StObject.set(x, "ValidUserList", js.Array(value*))
   }
 }

@@ -22,15 +22,15 @@ object CollapsibleEvents {
   
   extension [Self <: CollapsibleEvents](x: Self) {
     
-    inline def setCollapse(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction2(value))
+    inline def setCollapse(value: (/* event */ Event, /* ui */ Any) => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction2(value))
     
     inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
-    inline def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ Event, /* ui */ Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
     inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    inline def setExpand(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction2(value))
+    inline def setExpand(value: (/* event */ Event, /* ui */ Any) => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction2(value))
     
     inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
   }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-axe" : "3.5.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-axe" : "3.5.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -19,7 +19,7 @@ object libModalMod extends Shortcut {
   
   @JSImport("office-ui-fabric-react/lib/Modal", "ModalBase")
   @js.native
-  class ModalBase protected ()
+  open class ModalBase protected ()
     extends typings.officeUiFabricReact.modalMod.ModalBase {
     def this(props: IModalProps) = this()
   }

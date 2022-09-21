@@ -12,10 +12,10 @@ trait XEndnotesSettingsSupplier
   extends StObject
      with XInterface {
   
-  /** @returns {@link EndnoteSettings} of the object. */
+  /** @returns The {@link EndnoteSettings} of the object. */
   val EndnotesSettings: XPropertySet
   
-  /** @returns {@link EndnoteSettings} of the object. */
+  /** @returns The {@link EndnoteSettings} of the object. */
   def getEndnotesSettings(): XPropertySet
 }
 object XEndnotesSettingsSupplier {
@@ -24,7 +24,7 @@ object XEndnotesSettingsSupplier {
     EndnotesSettings: XPropertySet,
     acquire: () => Unit,
     getEndnotesSettings: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XEndnotesSettingsSupplier = {
     val __obj = js.Dynamic.literal(EndnotesSettings = EndnotesSettings.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getEndnotesSettings = js.Any.fromFunction0(getEndnotesSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Provides access to url and query string parts.*/
 @JSGlobal("JSRequest")
 @js.native
-class JSRequest ()
+open class JSRequest ()
   extends StObject
      with typings.sharepoint.JSRequest
 object JSRequest {

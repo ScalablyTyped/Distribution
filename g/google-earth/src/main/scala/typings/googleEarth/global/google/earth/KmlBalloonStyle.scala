@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.KmlBalloonStyle")
 @js.native
-class KmlBalloonStyle ()
+open class KmlBalloonStyle ()
   extends StObject
      with typings.googleEarth.google.earth.KmlBalloonStyle {
   

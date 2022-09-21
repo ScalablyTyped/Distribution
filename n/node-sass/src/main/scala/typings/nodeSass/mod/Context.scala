@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Context
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var callback: js.UndefOr[SassRenderCallback] = js.undefined
   
@@ -22,7 +22,7 @@ object Context {
   
   extension [Self <: Context](x: Self) {
     
-    inline def setCallback(value: (/* err */ SassError, /* result */ Result) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+    inline def setCallback(value: (/* err */ SassError, /* result */ Result) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     

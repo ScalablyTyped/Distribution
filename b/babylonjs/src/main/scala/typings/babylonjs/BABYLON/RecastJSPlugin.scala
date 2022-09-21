@@ -9,19 +9,33 @@ trait RecastJSPlugin
   extends StObject
      with INavigationEnginePlugin {
   
-  /* private */ var _maximumSubStepCount: js.Any = js.native
+  /* private */ var _maximumSubStepCount: Any = js.native
   
-  /* private */ var _timeStep: js.Any = js.native
+  /* private */ var _tempVec1: Any = js.native
+  
+  /* private */ var _tempVec2: Any = js.native
+  
+  /* private */ var _timeFactor: Any = js.native
+  
+  /* private */ var _timeStep: Any = js.native
+  
+  /* private */ var _worker: Any = js.native
   
   /**
     * Reference to the Recast library
     */
-  var bjsRECAST: js.Any = js.native
+  var bjsRECAST: Any = js.native
+  
+  def createNavMesh(
+    meshes: js.Array[Mesh],
+    parameters: INavMeshParameters,
+    completion: js.Function1[/* navmeshData */ js.typedarray.Uint8Array, Unit]
+  ): Unit = js.native
   
   /**
     * the first navmesh created. We might extend this to support multiple navmeshes
     */
-  var navMesh: js.Any = js.native
+  var navMesh: Any = js.native
   
   /**
     * If delta time in navigation tick update is greater than the time step
@@ -39,4 +53,22 @@ trait RecastJSPlugin
     * @param newTimeStep the new timestep to apply to this world.
     */
   def setTimeStep(): Unit = js.native
+  
+  /**
+    * Set worker URL to be used when generating a new navmesh
+    * @param workerURL url string
+    * @returns boolean indicating if worker is created
+    */
+  def setWorkerURL(workerURL: String): Boolean = js.native
+  
+  /**
+    * Get the time factor used for crowd agent update
+    * @returns the time factor
+    */
+  def timeFactor: Double = js.native
+  /**
+    * Time factor applied when updating crowd agents (default 1). A value of 0 will pause crowd updates.
+    * @param value the time factor applied at update
+    */
+  def timeFactor_=(value: Double): Unit = js.native
 }

@@ -3,7 +3,6 @@ package typings.phaser.phaserMod.GameObjects
 import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Types.GameObjects.Graphics.Options
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +49,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "GameObjects.Graphics")
 @js.native
-class Graphics protected ()
+open class Graphics protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.Graphics {
   /**
@@ -88,7 +87,7 @@ class Graphics protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the visibility of this Game Object.

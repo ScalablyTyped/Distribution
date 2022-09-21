@@ -60,22 +60,22 @@ object JQueryNotifyBar {
     /**
       * Callback on before hide.
       */
-    var onBeforeHide: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onBeforeHide: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * Callback on before show.
       */
-    var onBeforeShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onBeforeShow: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * Callback on hide.
       */
-    var onHide: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onHide: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * Callback on show.
       */
-    var onShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var onShow: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * Set the position of notify bar. Possible values are "top", "bottom".
@@ -127,19 +127,19 @@ object JQueryNotifyBar {
       
       inline def setJqObjectUndefined: Self = StObject.set(x, "jqObject", js.undefined)
       
-      inline def setOnBeforeHide(value: () => js.Any): Self = StObject.set(x, "onBeforeHide", js.Any.fromFunction0(value))
+      inline def setOnBeforeHide(value: () => Any): Self = StObject.set(x, "onBeforeHide", js.Any.fromFunction0(value))
       
       inline def setOnBeforeHideUndefined: Self = StObject.set(x, "onBeforeHide", js.undefined)
       
-      inline def setOnBeforeShow(value: () => js.Any): Self = StObject.set(x, "onBeforeShow", js.Any.fromFunction0(value))
+      inline def setOnBeforeShow(value: () => Any): Self = StObject.set(x, "onBeforeShow", js.Any.fromFunction0(value))
       
       inline def setOnBeforeShowUndefined: Self = StObject.set(x, "onBeforeShow", js.undefined)
       
-      inline def setOnHide(value: () => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+      inline def setOnHide(value: () => Any): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
       
       inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      inline def setOnShow(value: () => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+      inline def setOnShow(value: () => Any): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
       
       inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       

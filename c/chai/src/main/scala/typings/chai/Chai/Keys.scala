@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Keys extends StObject {
   
   def apply(keys: String*): Assertion = js.native
-  def apply(keys: js.Array[js.Any]): Assertion = js.native
+  def apply(keys: js.Array[Any]): Assertion = js.native
   def apply(keys: Object): Assertion = js.native
 }

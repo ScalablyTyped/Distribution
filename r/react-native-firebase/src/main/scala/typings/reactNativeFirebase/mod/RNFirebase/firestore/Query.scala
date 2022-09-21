@@ -17,10 +17,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Query extends StObject {
   
   def endAt(snapshot: DocumentSnapshot): Query = js.native
-  def endAt(varargs: js.Any*): Query = js.native
+  def endAt(varargs: Any*): Query = js.native
   
   def endBefore(snapshot: DocumentSnapshot): Query = js.native
-  def endBefore(varargs: js.Any*): Query = js.native
+  def endBefore(varargs: Any*): Query = js.native
   
   val firestore: Firestore = js.native
   
@@ -44,13 +44,13 @@ trait Query extends StObject {
   def orderBy(fieldPath: FieldPath, directionStr: QueryDirection): Query = js.native
   
   def startAfter(snapshot: DocumentSnapshot): Query = js.native
-  def startAfter(varargs: js.Any*): Query = js.native
+  def startAfter(varargs: Any*): Query = js.native
   
   def startAt(snapshot: DocumentSnapshot): Query = js.native
-  def startAt(varargs: js.Any*): Query = js.native
+  def startAt(varargs: Any*): Query = js.native
   
-  def where(fieldPath: String, op: QueryOperator, value: js.Any): Query = js.native
-  def where(fieldPath: FieldPath, op: QueryOperator, value: js.Any): Query = js.native
+  def where(fieldPath: String, op: QueryOperator, value: Any): Query = js.native
+  def where(fieldPath: FieldPath, op: QueryOperator, value: Any): Query = js.native
 }
 object Query {
   
@@ -60,11 +60,11 @@ object Query {
     
     var operator: String
     
-    var value: js.Any
+    var value: Any
   }
   object FieldFilter {
     
-    inline def apply(fieldPath: NativeFieldPath, operator: String, value: js.Any): FieldFilter = {
+    inline def apply(fieldPath: NativeFieldPath, operator: String, value: Any): FieldFilter = {
       val __obj = js.Dynamic.literal(fieldPath = fieldPath.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldFilter]
     }
@@ -75,7 +75,7 @@ object Query {
       
       inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,7 +153,7 @@ object Query {
       
       inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
       
-      inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value*))
       
       inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
@@ -192,9 +192,9 @@ object Query {
   
   trait QueryOptions extends StObject {
     
-    var endAt: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var endAt: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var endBefore: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var endBefore: js.UndefOr[js.Array[Any]] = js.undefined
     
     var limit: js.UndefOr[Double] = js.undefined
     
@@ -202,9 +202,9 @@ object Query {
     
     var selectFields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var startAfter: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var startAfter: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var startAt: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var startAt: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object QueryOptions {
     
@@ -215,17 +215,17 @@ object Query {
     
     extension [Self <: QueryOptions](x: Self) {
       
-      inline def setEndAt(value: js.Array[js.Any]): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
+      inline def setEndAt(value: js.Array[Any]): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
       
       inline def setEndAtUndefined: Self = StObject.set(x, "endAt", js.undefined)
       
-      inline def setEndAtVarargs(value: js.Any*): Self = StObject.set(x, "endAt", js.Array(value :_*))
+      inline def setEndAtVarargs(value: Any*): Self = StObject.set(x, "endAt", js.Array(value*))
       
-      inline def setEndBefore(value: js.Array[js.Any]): Self = StObject.set(x, "endBefore", value.asInstanceOf[js.Any])
+      inline def setEndBefore(value: js.Array[Any]): Self = StObject.set(x, "endBefore", value.asInstanceOf[js.Any])
       
       inline def setEndBeforeUndefined: Self = StObject.set(x, "endBefore", js.undefined)
       
-      inline def setEndBeforeVarargs(value: js.Any*): Self = StObject.set(x, "endBefore", js.Array(value :_*))
+      inline def setEndBeforeVarargs(value: Any*): Self = StObject.set(x, "endBefore", js.Array(value*))
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -239,19 +239,19 @@ object Query {
       
       inline def setSelectFieldsUndefined: Self = StObject.set(x, "selectFields", js.undefined)
       
-      inline def setSelectFieldsVarargs(value: String*): Self = StObject.set(x, "selectFields", js.Array(value :_*))
+      inline def setSelectFieldsVarargs(value: String*): Self = StObject.set(x, "selectFields", js.Array(value*))
       
-      inline def setStartAfter(value: js.Array[js.Any]): Self = StObject.set(x, "startAfter", value.asInstanceOf[js.Any])
+      inline def setStartAfter(value: js.Array[Any]): Self = StObject.set(x, "startAfter", value.asInstanceOf[js.Any])
       
       inline def setStartAfterUndefined: Self = StObject.set(x, "startAfter", js.undefined)
       
-      inline def setStartAfterVarargs(value: js.Any*): Self = StObject.set(x, "startAfter", js.Array(value :_*))
+      inline def setStartAfterVarargs(value: Any*): Self = StObject.set(x, "startAfter", js.Array(value*))
       
-      inline def setStartAt(value: js.Array[js.Any]): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+      inline def setStartAt(value: js.Array[Any]): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
       
       inline def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
       
-      inline def setStartAtVarargs(value: js.Any*): Self = StObject.set(x, "startAt", js.Array(value :_*))
+      inline def setStartAtVarargs(value: Any*): Self = StObject.set(x, "startAt", js.Array(value*))
     }
   }
   

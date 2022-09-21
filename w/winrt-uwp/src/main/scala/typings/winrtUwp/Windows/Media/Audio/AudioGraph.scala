@@ -21,11 +21,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AudioGraph extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_quantumprocessed(`type`: quantumprocessed, listener: TypedEventHandler[AudioGraph, js.Any]): Unit = js.native
+  def addEventListener_quantumprocessed(`type`: quantumprocessed, listener: TypedEventHandler[AudioGraph, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_quantumstarted(`type`: quantumstarted, listener: TypedEventHandler[AudioGraph, js.Any]): Unit = js.native
+  def addEventListener_quantumstarted(`type`: quantumstarted, listener: TypedEventHandler[AudioGraph, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_unrecoverableerroroccurred(
     `type`: unrecoverableerroroccurred,
@@ -130,16 +130,16 @@ trait AudioGraph extends StObject {
   var latencyInSamples: Double = js.native
   
   /** Notifies that the audio graph has processed the specified quantum. */
-  def onquantumprocessed(ev: js.Any & WinRTEvent[AudioGraph]): Unit = js.native
+  def onquantumprocessed(ev: Any & WinRTEvent[AudioGraph]): Unit = js.native
   /** Notifies that the audio graph has processed the specified quantum. */
   @JSName("onquantumprocessed")
-  var onquantumprocessed_Original: TypedEventHandler[AudioGraph, js.Any] = js.native
+  var onquantumprocessed_Original: TypedEventHandler[AudioGraph, Any] = js.native
   
   /** Notifies that the audio graph has started processing a new quantum. */
-  def onquantumstarted(ev: js.Any & WinRTEvent[AudioGraph]): Unit = js.native
+  def onquantumstarted(ev: Any & WinRTEvent[AudioGraph]): Unit = js.native
   /** Notifies that the audio graph has started processing a new quantum. */
   @JSName("onquantumstarted")
-  var onquantumstarted_Original: TypedEventHandler[AudioGraph, js.Any] = js.native
+  var onquantumstarted_Original: TypedEventHandler[AudioGraph, Any] = js.native
   
   /** Notifies of an unrecoverable audio error in audio graph operation. */
   def onunrecoverableerroroccurred(ev: AudioGraphUnrecoverableErrorOccurredEventArgs & WinRTEvent[AudioGraph]): Unit = js.native
@@ -150,11 +150,11 @@ trait AudioGraph extends StObject {
   /** Gets the primary render device for the audio graph. */
   var primaryRenderDevice: DeviceInformation = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_quantumprocessed(`type`: quantumprocessed, listener: TypedEventHandler[AudioGraph, js.Any]): Unit = js.native
+  def removeEventListener_quantumprocessed(`type`: quantumprocessed, listener: TypedEventHandler[AudioGraph, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_quantumstarted(`type`: quantumstarted, listener: TypedEventHandler[AudioGraph, js.Any]): Unit = js.native
+  def removeEventListener_quantumstarted(`type`: quantumstarted, listener: TypedEventHandler[AudioGraph, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_unrecoverableerroroccurred(
     `type`: unrecoverableerroroccurred,

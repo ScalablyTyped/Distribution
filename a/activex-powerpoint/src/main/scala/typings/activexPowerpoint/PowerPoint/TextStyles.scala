@@ -12,7 +12,7 @@ trait TextStyles extends StObject {
   
   def Item(Type: PpTextStyleType): TextStyle
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.TextStyles_typekey")
   var PowerPointDotTextStyles_typekey: TextStyles
@@ -23,7 +23,7 @@ object TextStyles {
     Application: Application,
     Count: Double,
     Item: PpTextStyleType => TextStyle,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotTextStyles_typekey: TextStyles
   ): TextStyles = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object TextStyles {
     
     inline def setItem(value: PpTextStyleType => TextStyle): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotTextStyles_typekey(value: TextStyles): Self = StObject.set(x, "PowerPoint.TextStyles_typekey", value.asInstanceOf[js.Any])
   }

@@ -1,8 +1,8 @@
 package typings.rcTree
 
 import typings.rcTree.anon.HalfCheckedKeys
+import typings.rcTree.interfaceMod.BasicDataNode
 import typings.rcTree.interfaceMod.DataEntity
-import typings.rcTree.interfaceMod.DataNode
 import typings.rcTree.interfaceMod.GetCheckDisabled
 import typings.rcTree.interfaceMod.Key
 import typings.rcTree.rcTreeBooleans.`true`
@@ -17,23 +17,27 @@ object conductUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def conductCheck(keyList: js.Array[Key], checked: HalfCheckedKeys, keyEntities: Record[Key, DataEntity]): ConductReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("conductCheck")(keyList.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any])).asInstanceOf[ConductReturnType]
-  inline def conductCheck(
+  inline def conductCheck[TreeDataType /* <: BasicDataNode */](
     keyList: js.Array[Key],
     checked: HalfCheckedKeys,
-    keyEntities: Record[Key, DataEntity],
-    getCheckDisabled: GetCheckDisabled[DataNode]
+    keyEntities: Record[Key, DataEntity[TreeDataType]]
+  ): ConductReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("conductCheck")(keyList.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any])).asInstanceOf[ConductReturnType]
+  inline def conductCheck[TreeDataType /* <: BasicDataNode */](
+    keyList: js.Array[Key],
+    checked: HalfCheckedKeys,
+    keyEntities: Record[Key, DataEntity[TreeDataType]],
+    getCheckDisabled: GetCheckDisabled[TreeDataType]
   ): ConductReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("conductCheck")(keyList.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any], getCheckDisabled.asInstanceOf[js.Any])).asInstanceOf[ConductReturnType]
   
-  inline def conductCheck_true(keyList: js.Array[Key], checked: `true`, keyEntities: Record[Key, DataEntity]): ConductReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("conductCheck")(keyList.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any])).asInstanceOf[ConductReturnType]
-  inline def conductCheck_true(
+  inline def conductCheck_true[TreeDataType /* <: BasicDataNode */](keyList: js.Array[Key], checked: `true`, keyEntities: Record[Key, DataEntity[TreeDataType]]): ConductReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("conductCheck")(keyList.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any])).asInstanceOf[ConductReturnType]
+  inline def conductCheck_true[TreeDataType /* <: BasicDataNode */](
     keyList: js.Array[Key],
     checked: `true`,
-    keyEntities: Record[Key, DataEntity],
-    getCheckDisabled: GetCheckDisabled[DataNode]
+    keyEntities: Record[Key, DataEntity[TreeDataType]],
+    getCheckDisabled: GetCheckDisabled[TreeDataType]
   ): ConductReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("conductCheck")(keyList.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any], getCheckDisabled.asInstanceOf[js.Any])).asInstanceOf[ConductReturnType]
   
-  inline def isCheckDisabled(node: DataNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCheckDisabled")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCheckDisabled[TreeDataType](node: TreeDataType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCheckDisabled")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait ConductReturnType extends StObject {
     
@@ -52,11 +56,11 @@ object conductUtilMod {
       
       inline def setCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
       
-      inline def setCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "checkedKeys", js.Array(value :_*))
+      inline def setCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "checkedKeys", js.Array(value*))
       
       inline def setHalfCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "halfCheckedKeys", value.asInstanceOf[js.Any])
       
-      inline def setHalfCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "halfCheckedKeys", js.Array(value :_*))
+      inline def setHalfCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "halfCheckedKeys", js.Array(value*))
     }
   }
 }

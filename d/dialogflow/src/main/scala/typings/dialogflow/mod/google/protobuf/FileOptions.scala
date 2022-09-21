@@ -5,7 +5,6 @@ import typings.dialogflow.mod.google.protobuf.FileOptions.OptimizeMode
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new FileOptions.
   * @param [properties] Properties to set
   */
-class FileOptions ()
+open class FileOptions ()
   extends StObject
      with IFileOptions {
   def this(properties: IFileOptions) = this()
@@ -106,7 +105,7 @@ class FileOptions ()
     * Converts this FileOptions to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[scala.Any] = js.native
   
   /** FileOptions uninterpretedOption. */
   @JSName("uninterpretedOption")
@@ -156,6 +155,8 @@ object FileOptions {
   inline def create(): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FileOptions]
   inline def create(properties: IFileOptions): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
   
+  inline def decode(reader: js.typedarray.Uint8Array): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): FileOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FileOptions]
   /**
     * Decodes a FileOptions message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -167,9 +168,8 @@ object FileOptions {
   /* static member */
   inline def decode(reader: Reader): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
   inline def decode(reader: Reader, length: Double): FileOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FileOptions]
-  inline def decode(reader: Uint8Array): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
-  inline def decode(reader: Uint8Array, length: Double): FileOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FileOptions]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
   /**
     * Decodes a FileOptions message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -179,7 +179,6 @@ object FileOptions {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
-  inline def decodeDelimited(reader: Uint8Array): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
   
   /**
     * Encodes the specified FileOptions message. Does not implicitly {@link google.protobuf.FileOptions.verify|verify} messages.
@@ -207,7 +206,7 @@ object FileOptions {
     * @returns FileOptions
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
+  inline def fromObject(`object`: StringDictionary[scala.Any]): FileOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FileOptions]
   
   /**
     * Creates a plain object from a FileOptions message. Also converts values to other types if specified.
@@ -216,8 +215,8 @@ object FileOptions {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: FileOptions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: FileOptions, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: FileOptions): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+  inline def toObject(message: FileOptions, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
   
   /**
     * Verifies a FileOptions message.
@@ -225,5 +224,5 @@ object FileOptions {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

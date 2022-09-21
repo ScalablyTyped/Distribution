@@ -24,7 +24,7 @@ object ValidateErrorEntity {
     
     inline def setErrorFields(value: js.Array[Errors]): Self = StObject.set(x, "errorFields", value.asInstanceOf[js.Any])
     
-    inline def setErrorFieldsVarargs(value: Errors*): Self = StObject.set(x, "errorFields", js.Array(value :_*))
+    inline def setErrorFieldsVarargs(value: Errors*): Self = StObject.set(x, "errorFields", js.Array(value*))
     
     inline def setOutOfDate(value: Boolean): Self = StObject.set(x, "outOfDate", value.asInstanceOf[js.Any])
     

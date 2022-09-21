@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "StateCondition")
 @js.native
-class StateCondition protected ()
+open class StateCondition protected ()
   extends typings.babylonjs.legacyMod.StateCondition {
   /**
     * Creates a new StateCondition
@@ -16,7 +16,7 @@ class StateCondition protected ()
     */
   def this(
     actionManager: typings.babylonjs.actionManagerMod.ActionManager,
-    target: js.Any,
+    target: Any,
     /** Value to compare with target state  */
   value: String
   ) = this()

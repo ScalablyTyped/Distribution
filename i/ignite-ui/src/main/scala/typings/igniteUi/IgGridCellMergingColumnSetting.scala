@@ -10,7 +10,7 @@ trait IgGridCellMergingColumnSetting
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Column index. This is a required property in every column setting if columnKey is not set.

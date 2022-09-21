@@ -1,5 +1,7 @@
 package typings.applepayjs
 
+import typings.applepayjs.ApplePayJS.ApplePayErrorCode
+import typings.applepayjs.ApplePayJS.ApplePayErrorContactField
 import typings.applepayjs.ApplePayJS.ApplePayLineItem
 import typings.applepayjs.ApplePayJS.ApplePayPaymentRequest
 import org.scalablytyped.runtime.StObject
@@ -7,6 +9,39 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
+  
+  /**
+    * A customizable error type that you create to indicate problems with the address or contact information on an Apple Pay sheet.
+    */
+  @JSGlobal("ApplePayError")
+  @js.native
+  open class ApplePayError protected ()
+    extends StObject
+       with typings.applepayjs.ApplePayError {
+    /**
+      * Construct a new ApplePayError instance.
+      *
+      * @param errorCode - The error code for the new instance.
+      * @param contactField - The name of the field that contains the error.
+      * @param message - A localized, user-facing string that describes the error.
+      */
+    def this(errorCode: ApplePayErrorCode) = this()
+    def this(errorCode: ApplePayErrorCode, contactField: ApplePayErrorContactField) = this()
+    def this(errorCode: ApplePayErrorCode, contactField: Unit, message: String) = this()
+    def this(errorCode: ApplePayErrorCode, contactField: ApplePayErrorContactField, message: String) = this()
+    
+    /**
+      * The error code for this instance.
+      */
+    /* CompleteClass */
+    var code: ApplePayErrorCode = js.native
+    
+    /**
+      * A localized, user-facing string that describes the error.
+      */
+    /* CompleteClass */
+    var message: String = js.native
+  }
   
   object ApplePayJS {
     
@@ -42,7 +77,7 @@ object global {
       */
     @JSGlobal("ApplePayJS.ApplePayShippingContactUpdate")
     @js.native
-    class ApplePayShippingContactUpdate ()
+    open class ApplePayShippingContactUpdate ()
       extends StObject
          with typings.applepayjs.ApplePayJS.ApplePayShippingContactUpdate {
       
@@ -182,7 +217,7 @@ object global {
   
   @JSGlobal("ApplePaySession")
   @js.native
-  class ApplePaySession protected ()
+  open class ApplePaySession protected ()
     extends StObject
        with typings.applepayjs.ApplePaySession {
     /**

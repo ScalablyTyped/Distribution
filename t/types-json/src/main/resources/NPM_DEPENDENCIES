@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "types-json" : "1.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "types-json" : "1.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

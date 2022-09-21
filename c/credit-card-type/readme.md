@@ -10,10 +10,10 @@ A library for determining credit card type
 | ------------------ | :-------------: |
 | Full name          | credit-card-type |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 52 |
-| # downloads        | 13777508 |
-| # stars            | 4 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1883264.3333333333 |
+| # stars            | 833.0 |
 
 ## Links
 - [Homepage](https://github.com/braintree/credit-card-type)

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "anser" : "1.4.9"
+      "anser" : "2.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "anser" : "1.4.9"
+      "anser" : "2.1.1"
     }
   ],
   "compile-devDependencies" : [

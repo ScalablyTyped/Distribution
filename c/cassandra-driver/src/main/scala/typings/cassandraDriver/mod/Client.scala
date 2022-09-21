@@ -8,7 +8,7 @@ import typings.cassandraDriver.metadataMod.metadata.Metadata
 import typings.cassandraDriver.metricsMod.metrics.ClientMetrics
 import typings.cassandraDriver.typesMod.types.ResultSet
 import typings.cassandraDriver.typesMod.types.Row
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cassandra-driver", "Client")
 @js.native
-class Client protected () extends EventEmitter {
+open class Client protected () extends EventEmitter {
   def this(options: DseClientOptions) = this()
   
   def batch(queries: js.Array[String | Query]): js.Promise[ResultSet] = js.native
@@ -63,12 +63,12 @@ class Client protected () extends EventEmitter {
   
   def executeGraph(traversal: String): js.Promise[GraphResultSet] = js.native
   def executeGraph(traversal: String, callback: ValueCallback[GraphResultSet]): Unit = js.native
-  def executeGraph(traversal: String, parameters: StringDictionary[js.Any]): js.Promise[GraphResultSet] = js.native
-  def executeGraph(traversal: String, parameters: StringDictionary[js.Any], callback: ValueCallback[GraphResultSet]): Unit = js.native
-  def executeGraph(traversal: String, parameters: StringDictionary[js.Any], options: GraphQueryOptions): js.Promise[GraphResultSet] = js.native
+  def executeGraph(traversal: String, parameters: StringDictionary[Any]): js.Promise[GraphResultSet] = js.native
+  def executeGraph(traversal: String, parameters: StringDictionary[Any], callback: ValueCallback[GraphResultSet]): Unit = js.native
+  def executeGraph(traversal: String, parameters: StringDictionary[Any], options: GraphQueryOptions): js.Promise[GraphResultSet] = js.native
   def executeGraph(
     traversal: String,
-    parameters: StringDictionary[js.Any],
+    parameters: StringDictionary[Any],
     options: GraphQueryOptions,
     callback: ValueCallback[GraphResultSet]
   ): Unit = js.native

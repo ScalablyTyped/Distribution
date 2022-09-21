@@ -1,6 +1,5 @@
 package typings.googleVisualization.global.google.visualization
 
-import typings.googleVisualization.google.visualization.VisualizationSelectionArray
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,13 +11,4 @@ abstract class ChartBase protected ()
   extends StObject
      with typings.googleVisualization.google.visualization.ChartBase {
   def this(element: Element) = this()
-  
-  /* CompleteClass */
-  override def getContainer(): Element = js.native
-  
-  /* CompleteClass */
-  override def getSelection(): js.Array[VisualizationSelectionArray] = js.native
-  
-  /* CompleteClass */
-  override def setSelection(selection: js.Array[VisualizationSelectionArray]): Unit = js.native
 }

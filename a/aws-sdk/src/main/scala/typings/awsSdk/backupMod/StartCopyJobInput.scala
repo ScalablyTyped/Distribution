@@ -17,7 +17,7 @@ trait StartCopyJobInput extends StObject {
   var IamRoleArn: IAMRoleArn
   
   /**
-    * A customer chosen string that can be used to distinguish between calls to StartCopyJob.
+    * A customer-chosen string that you can use to distinguish between otherwise identical calls to StartCopyJob. Retrying a successful request with the same idempotency token results in a success message with no action taken.
     */
   var IdempotencyToken: js.UndefOr[String] = js.undefined
   
@@ -29,7 +29,7 @@ trait StartCopyJobInput extends StObject {
   var RecoveryPointArn: ARN
   
   /**
-    * The name of a logical source container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
+    * The name of a logical source container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the Amazon Web Services Region where they are created. They consist of lowercase letters, numbers, and hyphens.
     */
   var SourceBackupVaultName: BackupVaultName
 }

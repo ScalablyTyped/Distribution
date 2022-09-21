@@ -23,7 +23,7 @@ object ListInputsResponse {
     
     inline def setInputsUndefined: Self = StObject.set(x, "Inputs", js.undefined)
     
-    inline def setInputsVarargs(value: Input*): Self = StObject.set(x, "Inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: Input*): Self = StObject.set(x, "Inputs", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

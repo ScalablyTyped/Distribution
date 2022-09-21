@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientTreeView")
 @js.native
-class BootstrapClientTreeView ()
+open class BootstrapClientTreeView ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientTreeView {
   
@@ -96,7 +96,7 @@ class BootstrapClientTreeView ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a node specified by its index within the ASPxTreeView's node collection. An ASPxClientTreeViewNode object, representing the node located at the specified index within the ASPxTreeView's node collection.
@@ -129,7 +129,7 @@ class BootstrapClientTreeView ()
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Gets the root node of the ASPxTreeView object.

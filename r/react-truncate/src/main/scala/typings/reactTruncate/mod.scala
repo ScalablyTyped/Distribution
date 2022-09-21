@@ -12,12 +12,10 @@ object mod {
   
   @JSImport("react-truncate", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TruncateProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TruncateProps, js.Object, Any]
   
-  @js.native
-  trait Truncate
-    extends Component[TruncateProps, js.Object, js.Any]
+  type Truncate = Component[TruncateProps, js.Object, Any]
   
   trait TruncateProps
     extends StObject

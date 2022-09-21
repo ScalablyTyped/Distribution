@@ -6,15 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a custom XML part.
   *
+  * @remarks
   * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
 @JSGlobal("Word.CustomXmlPart")
 @js.native
-class CustomXmlPart ()
+open class CustomXmlPart ()
   extends StObject
      with typings.officeJsPreview.Word.CustomXmlPart {
   

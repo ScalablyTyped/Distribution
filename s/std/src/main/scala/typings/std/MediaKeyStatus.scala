@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.released
   - typings.std.stdStrings.`status-pending`
   - typings.std.stdStrings.usable
+  - typings.std.stdStrings.`usable-in-future`
 */
 trait MediaKeyStatus extends StObject
 object MediaKeyStatus {
@@ -29,4 +30,6 @@ object MediaKeyStatus {
   inline def `status-pending`: typings.std.stdStrings.`status-pending` = "status-pending".asInstanceOf[typings.std.stdStrings.`status-pending`]
   
   inline def usable: typings.std.stdStrings.usable = "usable".asInstanceOf[typings.std.stdStrings.usable]
+  
+  inline def `usable-in-future`: typings.std.stdStrings.`usable-in-future` = "usable-in-future".asInstanceOf[typings.std.stdStrings.`usable-in-future`]
 }

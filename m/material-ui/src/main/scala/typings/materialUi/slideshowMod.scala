@@ -10,10 +10,10 @@ object slideshowMod {
   
   @JSImport("material-ui/svg-icons/image/slideshow", JSImport.Default)
   @js.native
-  class default () extends ImageSlideshow
+  open class default () extends ImageSlideshow
   
   @JSImport("material-ui/svg-icons/image/slideshow", "ImageSlideshow")
   @js.native
-  class ImageSlideshow ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageSlideshow ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

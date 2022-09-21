@@ -101,7 +101,7 @@ object layer {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: Base*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: Base*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setMaxResolution(value: Double): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
       
@@ -172,7 +172,7 @@ object layer {
       
       inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
       
-      inline def setGradientVarargs(value: String*): Self = StObject.set(x, "gradient", js.Array(value :_*))
+      inline def setGradientVarargs(value: String*): Self = StObject.set(x, "gradient", js.Array(value*))
       
       inline def setMaxResolution(value: Double): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
       
@@ -482,7 +482,7 @@ object layer {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value*))
       
       inline def setUpdateWhileAnimating(value: Boolean): Self = StObject.set(x, "updateWhileAnimating", value.asInstanceOf[js.Any])
       
@@ -607,7 +607,7 @@ object layer {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value*))
       
       inline def setUpdateWhileAnimating(value: Boolean): Self = StObject.set(x, "updateWhileAnimating", value.asInstanceOf[js.Any])
       

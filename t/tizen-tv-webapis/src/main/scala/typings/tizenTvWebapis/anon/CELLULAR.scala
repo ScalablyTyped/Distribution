@@ -12,21 +12,37 @@ trait CELLULAR extends StObject {
   
   /**
     * Connected to a cellular network.
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CELLULAR: `2`
   
   /**
     * No network configured
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var DISCONNECTED: `0`
   
   /**
     * Connected to an Ethernet network.
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var ETHERNET: `3`
   
   /**
     * Connected to a Wi-Fi network.
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var WIFI: `1`
 }

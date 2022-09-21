@@ -12,7 +12,7 @@ trait CreateVolumePermission extends StObject {
   var Group: js.UndefOr[PermissionGroup] = js.undefined
   
   /**
-    * The AWS account ID to be added or removed.
+    * The ID of the Amazon Web Services account to be added or removed.
     */
   var UserId: js.UndefOr[String] = js.undefined
 }

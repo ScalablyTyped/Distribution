@@ -32,7 +32,7 @@ trait ClassHttpCollection
     * 
     * 
     */
-  def add(name: String, value: js.Any): Unit = js.native
+  def add(name: String, value: Any): Unit = js.native
   
   /**
     * 
@@ -43,7 +43,7 @@ trait ClassHttpCollection
     * 
     * 
     */
-  def all(name: String): js.Array[js.Any] = js.native
+  def all(name: String): js.Array[Any] = js.native
   
   /**
     * 
@@ -62,7 +62,7 @@ trait ClassHttpCollection
     * 
     * 
     */
-  def first(name: String): js.Any = js.native
+  def first(name: String): Any = js.native
   
   /**
     * 
@@ -103,5 +103,5 @@ trait ClassHttpCollection
     * 
     * 
     */
-  def set(name: String, value: js.Any): Unit = js.native
+  def set(name: String, value: Any): Unit = js.native
 }

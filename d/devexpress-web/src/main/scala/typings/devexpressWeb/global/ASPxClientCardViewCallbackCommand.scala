@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCardViewCallbackCommand")
 @js.native
-class ASPxClientCardViewCallbackCommand ()
+open class ASPxClientCardViewCallbackCommand ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCardViewCallbackCommand
 object ASPxClientCardViewCallbackCommand {

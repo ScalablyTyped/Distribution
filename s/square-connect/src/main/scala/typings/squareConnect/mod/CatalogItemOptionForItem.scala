@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogItemOptionForItem")
 @js.native
-class CatalogItemOptionForItem () extends StObject {
+open class CatalogItemOptionForItem () extends StObject {
   
   /**
     * The unique id of the item option, used to form the dimensions of the item option matrix in a specified order.

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Specifies the slicer sort behavior for `Slicer.sortBy`.
   *
-  * Specifies the slicer sort behavior for Slicer.sortBy API.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.SlicerSortType")

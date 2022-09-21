@@ -12,7 +12,7 @@ object scaleLineMod {
   
   @JSImport("ol/control/ScaleLine", JSImport.Default)
   @js.native
-  class default () extends ScaleLine {
+  open class default () extends ScaleLine {
     def this(opt_options: Options) = this()
   }
   

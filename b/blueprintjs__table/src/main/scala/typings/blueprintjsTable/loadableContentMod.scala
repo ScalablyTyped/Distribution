@@ -1,6 +1,7 @@
 package typings.blueprintjsTable
 
 import typings.react.mod.PureComponent
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,19 +10,21 @@ object loadableContentMod {
   
   @JSImport("@blueprintjs/table/lib/esm/common/loadableContent", "LoadableContent")
   @js.native
-  class LoadableContent protected ()
-    extends PureComponent[ILoadableContentProps, js.Object, js.Any] {
+  open class LoadableContent protected ()
+    extends PureComponent[ILoadableContentProps, js.Object, Any] {
     def this(props: ILoadableContentProps) = this()
     
-    /* private */ var calculateStyle: js.Any = js.native
+    /* private */ var calculateStyle: Any = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MLoadableContent(prevProps: ILoadableContentProps): Unit = js.native
     
-    /* private */ var style: js.Any = js.native
+    /* private */ var style: Any = js.native
   }
   
   trait ILoadableContentProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * If true, render a skeleton. Otherwise render the single, non-string child passed to this
@@ -31,6 +34,7 @@ object loadableContentMod {
     
     /**
       * If true, show a skeleton of random width (25-75% cell width) when rendering the loading state.
+      *
       * @default false
       */
     var variableLength: js.UndefOr[Boolean] = js.undefined
@@ -43,6 +47,10 @@ object loadableContentMod {
     }
     
     extension [Self <: ILoadableContentProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       

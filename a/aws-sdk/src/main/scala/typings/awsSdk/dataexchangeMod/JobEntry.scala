@@ -14,7 +14,7 @@ trait JobEntry extends StObject {
   /**
     * The date and time that the job was created, in ISO 8601 format.
     */
-  var CreatedAt: Timestamp
+  var CreatedAt: js.Date
   
   /**
     * Details of the operation to be performed by the job, such as export destination details or import source details.
@@ -44,18 +44,18 @@ trait JobEntry extends StObject {
   /**
     * The date and time that the job was last updated, in ISO 8601 format.
     */
-  var UpdatedAt: Timestamp
+  var UpdatedAt: js.Date
 }
 object JobEntry {
   
   inline def apply(
     Arn: Arn,
-    CreatedAt: Timestamp,
+    CreatedAt: js.Date,
     Details: ResponseDetails,
     Id: Id,
     State: State,
     Type: Type,
-    UpdatedAt: Timestamp
+    UpdatedAt: js.Date
   ): JobEntry = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], CreatedAt = CreatedAt.asInstanceOf[js.Any], Details = Details.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobEntry]
@@ -65,7 +65,7 @@ object JobEntry {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setDetails(value: ResponseDetails): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
@@ -73,7 +73,7 @@ object JobEntry {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: JobError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: JobError*): Self = StObject.set(x, "Errors", js.Array(value*))
     
     inline def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
@@ -81,6 +81,6 @@ object JobEntry {
     
     inline def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
   }
 }

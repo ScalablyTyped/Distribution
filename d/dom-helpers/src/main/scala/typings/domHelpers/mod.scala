@@ -7,6 +7,7 @@ import typings.domHelpers.animateMod.Cancel
 import typings.domHelpers.animateMod.Options
 import typings.domHelpers.anon.Fn0
 import typings.domHelpers.anon.Fn1
+import typings.domHelpers.anon.FnCallNodeEventNameBubblesCancelable
 import typings.domHelpers.anon.FnCallNodeEventNameHandlerOptions
 import typings.domHelpers.anon.FnCallNodePropertiesDurationEasingCallback
 import typings.domHelpers.anon.FnCallNodeProperty
@@ -19,13 +20,16 @@ import typings.domHelpers.domHelpersStrings.animationend
 import typings.domHelpers.domHelpersStrings.animationiteration
 import typings.domHelpers.domHelpersStrings.animationstart
 import typings.domHelpers.domHelpersStrings.auxclick
+import typings.domHelpers.domHelpersStrings.beforeinput
 import typings.domHelpers.domHelpersStrings.blur
-import typings.domHelpers.domHelpersStrings.cancel
 import typings.domHelpers.domHelpersStrings.canplay
 import typings.domHelpers.domHelpersStrings.canplaythrough
 import typings.domHelpers.domHelpersStrings.change
 import typings.domHelpers.domHelpersStrings.click
 import typings.domHelpers.domHelpersStrings.close
+import typings.domHelpers.domHelpersStrings.compositionend
+import typings.domHelpers.domHelpersStrings.compositionstart
+import typings.domHelpers.domHelpersStrings.compositionupdate
 import typings.domHelpers.domHelpersStrings.contextmenu
 import typings.domHelpers.domHelpersStrings.copy
 import typings.domHelpers.domHelpersStrings.cuechange
@@ -34,7 +38,6 @@ import typings.domHelpers.domHelpersStrings.dblclick
 import typings.domHelpers.domHelpersStrings.drag
 import typings.domHelpers.domHelpersStrings.dragend
 import typings.domHelpers.domHelpersStrings.dragenter
-import typings.domHelpers.domHelpersStrings.dragexit
 import typings.domHelpers.domHelpersStrings.dragleave
 import typings.domHelpers.domHelpersStrings.dragover
 import typings.domHelpers.domHelpersStrings.dragstart
@@ -46,6 +49,7 @@ import typings.domHelpers.domHelpersStrings.error
 import typings.domHelpers.domHelpersStrings.focus
 import typings.domHelpers.domHelpersStrings.focusin
 import typings.domHelpers.domHelpersStrings.focusout
+import typings.domHelpers.domHelpersStrings.formdata
 import typings.domHelpers.domHelpersStrings.fullscreenchange
 import typings.domHelpers.domHelpersStrings.fullscreenerror
 import typings.domHelpers.domHelpersStrings.gotpointercapture
@@ -89,6 +93,7 @@ import typings.domHelpers.domHelpersStrings.seeking
 import typings.domHelpers.domHelpersStrings.select
 import typings.domHelpers.domHelpersStrings.selectionchange
 import typings.domHelpers.domHelpersStrings.selectstart
+import typings.domHelpers.domHelpersStrings.slotchange
 import typings.domHelpers.domHelpersStrings.stalled
 import typings.domHelpers.domHelpersStrings.submit
 import typings.domHelpers.domHelpersStrings.suspend
@@ -104,6 +109,10 @@ import typings.domHelpers.domHelpersStrings.transitionrun
 import typings.domHelpers.domHelpersStrings.transitionstart
 import typings.domHelpers.domHelpersStrings.volumechange
 import typings.domHelpers.domHelpersStrings.waiting
+import typings.domHelpers.domHelpersStrings.webkitanimationend
+import typings.domHelpers.domHelpersStrings.webkitanimationiteration
+import typings.domHelpers.domHelpersStrings.webkitanimationstart
+import typings.domHelpers.domHelpersStrings.webkittransitionend
 import typings.domHelpers.domHelpersStrings.wheel
 import typings.domHelpers.transitionEndMod.Listener
 import typings.domHelpers.typesMod.CamelProperty
@@ -115,6 +124,7 @@ import typings.std.Element
 import typings.std.EventListenerOptions
 import typings.std.FrameRequestCallback
 import typings.std.HTMLElement
+import typings.std.Node
 import typings.std.SVGElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
@@ -227,21 +237,26 @@ object mod {
       options: AddEventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def addEventListener_beforeinput(node: HTMLElement, eventName: beforeinput, handler: TaggedEventHandler[beforeinput]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_beforeinput(
+      node: HTMLElement,
+      eventName: beforeinput,
+      handler: TaggedEventHandler[beforeinput],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_beforeinput(
+      node: HTMLElement,
+      eventName: beforeinput,
+      handler: TaggedEventHandler[beforeinput],
+      options: AddEventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     inline def addEventListener_blur(node: HTMLElement, eventName: blur, handler: TaggedEventHandler[blur]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def addEventListener_blur(node: HTMLElement, eventName: blur, handler: TaggedEventHandler[blur], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def addEventListener_blur(
       node: HTMLElement,
       eventName: blur,
       handler: TaggedEventHandler[blur],
-      options: AddEventListenerOptions
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def addEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def addEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def addEventListener_cancel(
-      node: HTMLElement,
-      eventName: cancel,
-      handler: TaggedEventHandler[cancel],
       options: AddEventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -292,6 +307,48 @@ object mod {
       node: HTMLElement,
       eventName: close,
       handler: TaggedEventHandler[close],
+      options: AddEventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def addEventListener_compositionend(node: HTMLElement, eventName: compositionend, handler: TaggedEventHandler[compositionend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_compositionend(
+      node: HTMLElement,
+      eventName: compositionend,
+      handler: TaggedEventHandler[compositionend],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_compositionend(
+      node: HTMLElement,
+      eventName: compositionend,
+      handler: TaggedEventHandler[compositionend],
+      options: AddEventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def addEventListener_compositionstart(node: HTMLElement, eventName: compositionstart, handler: TaggedEventHandler[compositionstart]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_compositionstart(
+      node: HTMLElement,
+      eventName: compositionstart,
+      handler: TaggedEventHandler[compositionstart],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_compositionstart(
+      node: HTMLElement,
+      eventName: compositionstart,
+      handler: TaggedEventHandler[compositionstart],
+      options: AddEventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def addEventListener_compositionupdate(node: HTMLElement, eventName: compositionupdate, handler: TaggedEventHandler[compositionupdate]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_compositionupdate(
+      node: HTMLElement,
+      eventName: compositionupdate,
+      handler: TaggedEventHandler[compositionupdate],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_compositionupdate(
+      node: HTMLElement,
+      eventName: compositionupdate,
+      handler: TaggedEventHandler[compositionupdate],
       options: AddEventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -369,15 +426,6 @@ object mod {
       node: HTMLElement,
       eventName: dragenter,
       handler: TaggedEventHandler[dragenter],
-      options: AddEventListenerOptions
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def addEventListener_dragexit(node: HTMLElement, eventName: dragexit, handler: TaggedEventHandler[dragexit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def addEventListener_dragexit(node: HTMLElement, eventName: dragexit, handler: TaggedEventHandler[dragexit], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def addEventListener_dragexit(
-      node: HTMLElement,
-      eventName: dragexit,
-      handler: TaggedEventHandler[dragexit],
       options: AddEventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -482,6 +530,15 @@ object mod {
       node: HTMLElement,
       eventName: focusout,
       handler: TaggedEventHandler[focusout],
+      options: AddEventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def addEventListener_formdata(node: HTMLElement, eventName: formdata, handler: TaggedEventHandler[formdata]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_formdata(node: HTMLElement, eventName: formdata, handler: TaggedEventHandler[formdata], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_formdata(
+      node: HTMLElement,
+      eventName: formdata,
+      handler: TaggedEventHandler[formdata],
       options: AddEventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -971,6 +1028,20 @@ object mod {
       options: AddEventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def addEventListener_slotchange(node: HTMLElement, eventName: slotchange, handler: TaggedEventHandler[slotchange]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_slotchange(
+      node: HTMLElement,
+      eventName: slotchange,
+      handler: TaggedEventHandler[slotchange],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_slotchange(
+      node: HTMLElement,
+      eventName: slotchange,
+      handler: TaggedEventHandler[slotchange],
+      options: AddEventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     inline def addEventListener_stalled(node: HTMLElement, eventName: stalled, handler: TaggedEventHandler[stalled]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def addEventListener_stalled(node: HTMLElement, eventName: stalled, handler: TaggedEventHandler[stalled], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def addEventListener_stalled(
@@ -1146,6 +1217,74 @@ object mod {
       options: AddEventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def addEventListener_webkitanimationend(node: HTMLElement, eventName: webkitanimationend, handler: TaggedEventHandler[webkitanimationend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_webkitanimationend(
+      node: HTMLElement,
+      eventName: webkitanimationend,
+      handler: TaggedEventHandler[webkitanimationend],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_webkitanimationend(
+      node: HTMLElement,
+      eventName: webkitanimationend,
+      handler: TaggedEventHandler[webkitanimationend],
+      options: AddEventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def addEventListener_webkitanimationiteration(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: TaggedEventHandler[webkitanimationiteration]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_webkitanimationiteration(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: TaggedEventHandler[webkitanimationiteration],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_webkitanimationiteration(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: TaggedEventHandler[webkitanimationiteration],
+      options: AddEventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def addEventListener_webkitanimationstart(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: TaggedEventHandler[webkitanimationstart]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_webkitanimationstart(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: TaggedEventHandler[webkitanimationstart],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_webkitanimationstart(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: TaggedEventHandler[webkitanimationstart],
+      options: AddEventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def addEventListener_webkittransitionend(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: TaggedEventHandler[webkittransitionend]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_webkittransitionend(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: TaggedEventHandler[webkittransitionend],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_webkittransitionend(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: TaggedEventHandler[webkittransitionend],
+      options: AddEventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     inline def addEventListener_wheel(node: HTMLElement, eventName: wheel, handler: TaggedEventHandler[wheel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def addEventListener_wheel(node: HTMLElement, eventName: wheel, handler: TaggedEventHandler[wheel], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def addEventListener_wheel(
@@ -1176,7 +1315,54 @@ object mod {
       callback: EventHandler[transitionend]
     ): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(node.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Cancel]
     
+    @JSImport("dom-helpers", "default.attribute")
+    @js.native
+    def attribute: js.Function3[
+        /* node */ Element | Null, 
+        /* attr */ String, 
+        /* val */ js.UndefOr[String | Boolean | Null], 
+        js.UndefOr[String | Null]
+      ] = js.native
+    inline def attribute(node: Null, attr: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(node.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attribute(node: Null, attr: String, `val`: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(node.asInstanceOf[js.Any], attr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attribute(node: Null, attr: String, `val`: Boolean): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(node.asInstanceOf[js.Any], attr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attribute(node: Element, attr: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(node.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attribute(node: Element, attr: String, `val`: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(node.asInstanceOf[js.Any], attr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attribute(node: Element, attr: String, `val`: Boolean): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(node.asInstanceOf[js.Any], attr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+    inline def attribute_=(
+      x: js.Function3[
+          /* node */ Element | Null, 
+          /* attr */ String, 
+          /* val */ js.UndefOr[String | Boolean | Null], 
+          js.UndefOr[String | Null]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attribute")(x.asInstanceOf[js.Any])
+    
     inline def cancelAnimationFrame(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelAnimationFrame")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def childElements(): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("childElements")().asInstanceOf[js.Array[Element]]
+    inline def childElements(node: Element): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("childElements")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element]]
+    @JSImport("dom-helpers", "default.childElements")
+    @js.native
+    def childElements_Fdefault: js.Function1[/* node */ Element | Null, js.Array[Element]] = js.native
+    
+    inline def childElements_Fdefault_=(x: js.Function1[/* node */ Element | Null, js.Array[Element]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childElements")(x.asInstanceOf[js.Any])
+    
+    inline def childNodes(): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("childNodes")().asInstanceOf[js.Array[Node]]
+    inline def childNodes(node: Element): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("childNodes")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Node]]
+    @JSImport("dom-helpers", "default.childNodes")
+    @js.native
+    def childNodes_Fdefault: js.Function1[/* node */ Element | Null, js.Array[Node]] = js.native
+    
+    inline def childNodes_Fdefault_=(x: js.Function1[/* node */ Element | Null, js.Array[Node]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childNodes")(x.asInstanceOf[js.Any])
+    
+    inline def clear(): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Node | Null]
+    inline def clear(node: Node): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(node.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
+    @JSImport("dom-helpers", "default.clear")
+    @js.native
+    def clear_Fdefault: js.Function1[/* node */ Node | Null, Node | Null] = js.native
+    
+    inline def clear_Fdefault_=(x: js.Function1[/* node */ Node | Null, Node | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clear")(x.asInstanceOf[js.Any])
     
     @JSImport("dom-helpers", "default.closest")
     @js.native
@@ -1220,9 +1406,9 @@ object mod {
     
     inline def filter_auxclick(selector: String, handler: EventHandler[auxclick]): EventHandler[auxclick] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[auxclick]]
     
-    inline def filter_blur(selector: String, handler: EventHandler[blur]): EventHandler[blur] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[blur]]
+    inline def filter_beforeinput(selector: String, handler: EventHandler[beforeinput]): EventHandler[beforeinput] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[beforeinput]]
     
-    inline def filter_cancel(selector: String, handler: EventHandler[cancel]): EventHandler[cancel] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[cancel]]
+    inline def filter_blur(selector: String, handler: EventHandler[blur]): EventHandler[blur] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[blur]]
     
     inline def filter_canplay(selector: String, handler: EventHandler[canplay]): EventHandler[canplay] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[canplay]]
     
@@ -1233,6 +1419,12 @@ object mod {
     inline def filter_click(selector: String, handler: EventHandler[click]): EventHandler[click] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[click]]
     
     inline def filter_close(selector: String, handler: EventHandler[close]): EventHandler[close] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[close]]
+    
+    inline def filter_compositionend(selector: String, handler: EventHandler[compositionend]): EventHandler[compositionend] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[compositionend]]
+    
+    inline def filter_compositionstart(selector: String, handler: EventHandler[compositionstart]): EventHandler[compositionstart] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[compositionstart]]
+    
+    inline def filter_compositionupdate(selector: String, handler: EventHandler[compositionupdate]): EventHandler[compositionupdate] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[compositionupdate]]
     
     inline def filter_contextmenu(selector: String, handler: EventHandler[contextmenu]): EventHandler[contextmenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[contextmenu]]
     
@@ -1249,8 +1441,6 @@ object mod {
     inline def filter_dragend(selector: String, handler: EventHandler[dragend]): EventHandler[dragend] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[dragend]]
     
     inline def filter_dragenter(selector: String, handler: EventHandler[dragenter]): EventHandler[dragenter] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[dragenter]]
-    
-    inline def filter_dragexit(selector: String, handler: EventHandler[dragexit]): EventHandler[dragexit] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[dragexit]]
     
     inline def filter_dragleave(selector: String, handler: EventHandler[dragleave]): EventHandler[dragleave] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[dragleave]]
     
@@ -1273,6 +1463,8 @@ object mod {
     inline def filter_focusin(selector: String, handler: EventHandler[focusin]): EventHandler[focusin] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[focusin]]
     
     inline def filter_focusout(selector: String, handler: EventHandler[focusout]): EventHandler[focusout] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[focusout]]
+    
+    inline def filter_formdata(selector: String, handler: EventHandler[formdata]): EventHandler[formdata] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[formdata]]
     
     inline def filter_fullscreenchange(selector: String, handler: EventHandler[fullscreenchange]): EventHandler[fullscreenchange] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[fullscreenchange]]
     
@@ -1360,6 +1552,8 @@ object mod {
     
     inline def filter_selectstart(selector: String, handler: EventHandler[selectstart]): EventHandler[selectstart] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[selectstart]]
     
+    inline def filter_slotchange(selector: String, handler: EventHandler[slotchange]): EventHandler[slotchange] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[slotchange]]
+    
     inline def filter_stalled(selector: String, handler: EventHandler[stalled]): EventHandler[stalled] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[stalled]]
     
     inline def filter_submit(selector: String, handler: EventHandler[submit]): EventHandler[submit] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[submit]]
@@ -1390,6 +1584,14 @@ object mod {
     
     inline def filter_waiting(selector: String, handler: EventHandler[waiting]): EventHandler[waiting] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[waiting]]
     
+    inline def filter_webkitanimationend(selector: String, handler: EventHandler[webkitanimationend]): EventHandler[webkitanimationend] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[webkitanimationend]]
+    
+    inline def filter_webkitanimationiteration(selector: String, handler: EventHandler[webkitanimationiteration]): EventHandler[webkitanimationiteration] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[webkitanimationiteration]]
+    
+    inline def filter_webkitanimationstart(selector: String, handler: EventHandler[webkitanimationstart]): EventHandler[webkitanimationstart] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[webkitanimationstart]]
+    
+    inline def filter_webkittransitionend(selector: String, handler: EventHandler[webkittransitionend]): EventHandler[webkittransitionend] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[webkittransitionend]]
+    
     inline def filter_wheel(selector: String, handler: EventHandler[wheel]): EventHandler[wheel] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[wheel]]
     
     @JSImport("dom-helpers", "default.getComputedStyle")
@@ -1414,6 +1616,32 @@ object mod {
     inline def height(node: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("height")(node.asInstanceOf[js.Any]).asInstanceOf[Double]
     inline def height(node: HTMLElement, client: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("height")(node.asInstanceOf[js.Any], client.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def height_=(x: js.Function2[/* node */ HTMLElement, /* client */ js.UndefOr[Boolean], Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("height")(x.asInstanceOf[js.Any])
+    
+    inline def insertAfter(): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")().asInstanceOf[Node | Null]
+    inline def insertAfter(node: Null, refNode: Node): Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(node.asInstanceOf[js.Any], refNode.asInstanceOf[js.Any])).asInstanceOf[Node | Null]
+    inline def insertAfter(node: Node): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(node.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
+    inline def insertAfter(node: Node, refNode: Node): Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(node.asInstanceOf[js.Any], refNode.asInstanceOf[js.Any])).asInstanceOf[Node | Null]
+    @JSImport("dom-helpers", "default.insertAfter")
+    @js.native
+    def insertAfter_Fdefault: js.Function2[/* node */ Node | Null, /* refNode */ Node | Null, Node | Null] = js.native
+    
+    inline def insertAfter_Fdefault_=(x: js.Function2[/* node */ Node | Null, /* refNode */ Node | Null, Node | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("insertAfter")(x.asInstanceOf[js.Any])
+    
+    inline def isInput(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInput")().asInstanceOf[Boolean]
+    inline def isInput(node: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInput")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @JSImport("dom-helpers", "default.isInput")
+    @js.native
+    def isInput_Fdefault: js.Function1[/* node */ Element | Null, Boolean] = js.native
+    
+    inline def isInput_Fdefault_=(x: js.Function1[/* node */ Element | Null, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isInput")(x.asInstanceOf[js.Any])
+    
+    inline def isVisible(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")().asInstanceOf[Boolean]
+    inline def isVisible(node: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @JSImport("dom-helpers", "default.isVisible")
+    @js.native
+    def isVisible_Fdefault: js.Function1[/* node */ HTMLElement | Null, Boolean] = js.native
+    
+    inline def isVisible_Fdefault_=(x: js.Function1[/* node */ HTMLElement | Null, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isVisible")(x.asInstanceOf[js.Any])
     
     @JSImport("dom-helpers", "default.listen")
     @js.native
@@ -1489,18 +1717,18 @@ object mod {
       options: AddEventListenerOptions
     ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     
+    inline def listen_beforeinput(node: HTMLElement, eventName: beforeinput, handler: EventHandler[beforeinput]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_beforeinput(node: HTMLElement, eventName: beforeinput, handler: EventHandler[beforeinput], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_beforeinput(
+      node: HTMLElement,
+      eventName: beforeinput,
+      handler: EventHandler[beforeinput],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    
     inline def listen_blur(node: HTMLElement, eventName: blur, handler: EventHandler[blur]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     inline def listen_blur(node: HTMLElement, eventName: blur, handler: EventHandler[blur], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     inline def listen_blur(node: HTMLElement, eventName: blur, handler: EventHandler[blur], options: AddEventListenerOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-    
-    inline def listen_cancel(node: HTMLElement, eventName: cancel, handler: EventHandler[cancel]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-    inline def listen_cancel(node: HTMLElement, eventName: cancel, handler: EventHandler[cancel], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-    inline def listen_cancel(
-      node: HTMLElement,
-      eventName: cancel,
-      handler: EventHandler[cancel],
-      options: AddEventListenerOptions
-    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     
     inline def listen_canplay(node: HTMLElement, eventName: canplay, handler: EventHandler[canplay]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     inline def listen_canplay(node: HTMLElement, eventName: canplay, handler: EventHandler[canplay], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
@@ -1549,6 +1777,48 @@ object mod {
       node: HTMLElement,
       eventName: close,
       handler: EventHandler[close],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    
+    inline def listen_compositionend(node: HTMLElement, eventName: compositionend, handler: EventHandler[compositionend]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_compositionend(
+      node: HTMLElement,
+      eventName: compositionend,
+      handler: EventHandler[compositionend],
+      options: Boolean
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_compositionend(
+      node: HTMLElement,
+      eventName: compositionend,
+      handler: EventHandler[compositionend],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    
+    inline def listen_compositionstart(node: HTMLElement, eventName: compositionstart, handler: EventHandler[compositionstart]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_compositionstart(
+      node: HTMLElement,
+      eventName: compositionstart,
+      handler: EventHandler[compositionstart],
+      options: Boolean
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_compositionstart(
+      node: HTMLElement,
+      eventName: compositionstart,
+      handler: EventHandler[compositionstart],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    
+    inline def listen_compositionupdate(node: HTMLElement, eventName: compositionupdate, handler: EventHandler[compositionupdate]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_compositionupdate(
+      node: HTMLElement,
+      eventName: compositionupdate,
+      handler: EventHandler[compositionupdate],
+      options: Boolean
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_compositionupdate(
+      node: HTMLElement,
+      eventName: compositionupdate,
+      handler: EventHandler[compositionupdate],
       options: AddEventListenerOptions
     ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     
@@ -1606,15 +1876,6 @@ object mod {
       node: HTMLElement,
       eventName: dragenter,
       handler: EventHandler[dragenter],
-      options: AddEventListenerOptions
-    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-    
-    inline def listen_dragexit(node: HTMLElement, eventName: dragexit, handler: EventHandler[dragexit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-    inline def listen_dragexit(node: HTMLElement, eventName: dragexit, handler: EventHandler[dragexit], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-    inline def listen_dragexit(
-      node: HTMLElement,
-      eventName: dragexit,
-      handler: EventHandler[dragexit],
       options: AddEventListenerOptions
     ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     
@@ -1714,6 +1975,15 @@ object mod {
       node: HTMLElement,
       eventName: focusout,
       handler: EventHandler[focusout],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    
+    inline def listen_formdata(node: HTMLElement, eventName: formdata, handler: EventHandler[formdata]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_formdata(node: HTMLElement, eventName: formdata, handler: EventHandler[formdata], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_formdata(
+      node: HTMLElement,
+      eventName: formdata,
+      handler: EventHandler[formdata],
       options: AddEventListenerOptions
     ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     
@@ -2138,6 +2408,15 @@ object mod {
       options: AddEventListenerOptions
     ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     
+    inline def listen_slotchange(node: HTMLElement, eventName: slotchange, handler: EventHandler[slotchange]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_slotchange(node: HTMLElement, eventName: slotchange, handler: EventHandler[slotchange], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_slotchange(
+      node: HTMLElement,
+      eventName: slotchange,
+      handler: EventHandler[slotchange],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    
     inline def listen_stalled(node: HTMLElement, eventName: stalled, handler: EventHandler[stalled]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     inline def listen_stalled(node: HTMLElement, eventName: stalled, handler: EventHandler[stalled], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     inline def listen_stalled(
@@ -2293,6 +2572,66 @@ object mod {
       options: AddEventListenerOptions
     ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     
+    inline def listen_webkitanimationend(node: HTMLElement, eventName: webkitanimationend, handler: EventHandler[webkitanimationend]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_webkitanimationend(
+      node: HTMLElement,
+      eventName: webkitanimationend,
+      handler: EventHandler[webkitanimationend],
+      options: Boolean
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_webkitanimationend(
+      node: HTMLElement,
+      eventName: webkitanimationend,
+      handler: EventHandler[webkitanimationend],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    
+    inline def listen_webkitanimationiteration(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: EventHandler[webkitanimationiteration]
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_webkitanimationiteration(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: EventHandler[webkitanimationiteration],
+      options: Boolean
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_webkitanimationiteration(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: EventHandler[webkitanimationiteration],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    
+    inline def listen_webkitanimationstart(node: HTMLElement, eventName: webkitanimationstart, handler: EventHandler[webkitanimationstart]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_webkitanimationstart(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: EventHandler[webkitanimationstart],
+      options: Boolean
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_webkitanimationstart(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: EventHandler[webkitanimationstart],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    
+    inline def listen_webkittransitionend(node: HTMLElement, eventName: webkittransitionend, handler: EventHandler[webkittransitionend]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_webkittransitionend(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: EventHandler[webkittransitionend],
+      options: Boolean
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def listen_webkittransitionend(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: EventHandler[webkittransitionend],
+      options: AddEventListenerOptions
+    ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    
     inline def listen_wheel(node: HTMLElement, eventName: wheel, handler: EventHandler[wheel]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     inline def listen_wheel(node: HTMLElement, eventName: wheel, handler: EventHandler[wheel], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     inline def listen_wheel(
@@ -2307,6 +2646,13 @@ object mod {
     def matches: js.Function2[/* node */ Element, /* selector */ String, Boolean] = js.native
     inline def matches(node: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def matches_=(x: js.Function2[/* node */ Element, /* selector */ String, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matches")(x.asInstanceOf[js.Any])
+    
+    @JSImport("dom-helpers", "default.nextUntil")
+    @js.native
+    def nextUntil: js.Function2[/* node */ Element | Null, /* selector */ String, js.Array[Element]] = js.native
+    inline def nextUntil(node: Null, selector: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("nextUntil")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
+    inline def nextUntil(node: Element, selector: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("nextUntil")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
+    inline def nextUntil_=(x: js.Function2[/* node */ Element | Null, /* selector */ String, js.Array[Element]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextUntil")(x.asInstanceOf[js.Any])
     
     @JSImport("dom-helpers", "default.offset")
     @js.native
@@ -2337,12 +2683,30 @@ object mod {
     
     inline def ownerWindow_Fdefault_=(x: js.Function1[/* node */ js.UndefOr[Element], Window]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ownerWindow")(x.asInstanceOf[js.Any])
     
+    inline def parents(): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("parents")().asInstanceOf[js.Array[Element]]
+    inline def parents(node: Element): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("parents")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element]]
+    @JSImport("dom-helpers", "default.parents")
+    @js.native
+    def parents_Fdefault: js.Function1[/* node */ Element | Null, js.Array[Element]] = js.native
+    
+    inline def parents_Fdefault_=(x: js.Function1[/* node */ Element | Null, js.Array[Element]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parents")(x.asInstanceOf[js.Any])
+    
     @JSImport("dom-helpers", "default.position")
     @js.native
     def position: js.Function2[/* node */ HTMLElement, /* offsetParent */ js.UndefOr[HTMLElement], Height] = js.native
     inline def position(node: HTMLElement): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("position")(node.asInstanceOf[js.Any]).asInstanceOf[Height]
     inline def position(node: HTMLElement, offsetParent: HTMLElement): Height = (^.asInstanceOf[js.Dynamic].applyDynamic("position")(node.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any])).asInstanceOf[Height]
     inline def position_=(x: js.Function2[/* node */ HTMLElement, /* offsetParent */ js.UndefOr[HTMLElement], Height]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("position")(x.asInstanceOf[js.Any])
+    
+    inline def prepend(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("prepend")().asInstanceOf[Element | Null]
+    inline def prepend(node: Null, parent: Element): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(node.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+    inline def prepend(node: Element): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(node.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+    inline def prepend(node: Element, parent: Element): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(node.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+    @JSImport("dom-helpers", "default.prepend")
+    @js.native
+    def prepend_Fdefault: js.Function2[/* node */ Element | Null, /* parent */ Element | Null, Element | Null] = js.native
+    
+    inline def prepend_Fdefault_=(x: js.Function2[/* node */ Element | Null, /* parent */ Element | Null, Element | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prepend")(x.asInstanceOf[js.Any])
     
     @JSImport("dom-helpers", "default.querySelectorAll")
     @js.native
@@ -2352,6 +2716,9 @@ object mod {
     inline def querySelectorAll_=(
       x: js.Function2[/* element */ HTMLElement | Document, /* selector */ String, js.Array[HTMLElement]]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("querySelectorAll")(x.asInstanceOf[js.Any])
+    
+    inline def remove(): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")().asInstanceOf[Node | Null]
+    inline def remove(node: Node): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(node.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
     
     @JSImport("dom-helpers", "default.removeClass")
     @js.native
@@ -2439,21 +2806,26 @@ object mod {
       options: EventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def removeEventListener_beforeinput(node: HTMLElement, eventName: beforeinput, handler: TaggedEventHandler[beforeinput]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_beforeinput(
+      node: HTMLElement,
+      eventName: beforeinput,
+      handler: TaggedEventHandler[beforeinput],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_beforeinput(
+      node: HTMLElement,
+      eventName: beforeinput,
+      handler: TaggedEventHandler[beforeinput],
+      options: EventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     inline def removeEventListener_blur(node: HTMLElement, eventName: blur, handler: TaggedEventHandler[blur]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def removeEventListener_blur(node: HTMLElement, eventName: blur, handler: TaggedEventHandler[blur], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def removeEventListener_blur(
       node: HTMLElement,
       eventName: blur,
       handler: TaggedEventHandler[blur],
-      options: EventListenerOptions
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def removeEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def removeEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def removeEventListener_cancel(
-      node: HTMLElement,
-      eventName: cancel,
-      handler: TaggedEventHandler[cancel],
       options: EventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -2504,6 +2876,48 @@ object mod {
       node: HTMLElement,
       eventName: close,
       handler: TaggedEventHandler[close],
+      options: EventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def removeEventListener_compositionend(node: HTMLElement, eventName: compositionend, handler: TaggedEventHandler[compositionend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_compositionend(
+      node: HTMLElement,
+      eventName: compositionend,
+      handler: TaggedEventHandler[compositionend],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_compositionend(
+      node: HTMLElement,
+      eventName: compositionend,
+      handler: TaggedEventHandler[compositionend],
+      options: EventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def removeEventListener_compositionstart(node: HTMLElement, eventName: compositionstart, handler: TaggedEventHandler[compositionstart]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_compositionstart(
+      node: HTMLElement,
+      eventName: compositionstart,
+      handler: TaggedEventHandler[compositionstart],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_compositionstart(
+      node: HTMLElement,
+      eventName: compositionstart,
+      handler: TaggedEventHandler[compositionstart],
+      options: EventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def removeEventListener_compositionupdate(node: HTMLElement, eventName: compositionupdate, handler: TaggedEventHandler[compositionupdate]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_compositionupdate(
+      node: HTMLElement,
+      eventName: compositionupdate,
+      handler: TaggedEventHandler[compositionupdate],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_compositionupdate(
+      node: HTMLElement,
+      eventName: compositionupdate,
+      handler: TaggedEventHandler[compositionupdate],
       options: EventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -2576,15 +2990,6 @@ object mod {
       node: HTMLElement,
       eventName: dragenter,
       handler: TaggedEventHandler[dragenter],
-      options: EventListenerOptions
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def removeEventListener_dragexit(node: HTMLElement, eventName: dragexit, handler: TaggedEventHandler[dragexit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def removeEventListener_dragexit(node: HTMLElement, eventName: dragexit, handler: TaggedEventHandler[dragexit], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def removeEventListener_dragexit(
-      node: HTMLElement,
-      eventName: dragexit,
-      handler: TaggedEventHandler[dragexit],
       options: EventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -2689,6 +3094,15 @@ object mod {
       node: HTMLElement,
       eventName: focusout,
       handler: TaggedEventHandler[focusout],
+      options: EventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def removeEventListener_formdata(node: HTMLElement, eventName: formdata, handler: TaggedEventHandler[formdata]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_formdata(node: HTMLElement, eventName: formdata, handler: TaggedEventHandler[formdata], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_formdata(
+      node: HTMLElement,
+      eventName: formdata,
+      handler: TaggedEventHandler[formdata],
       options: EventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -3178,6 +3592,20 @@ object mod {
       options: EventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def removeEventListener_slotchange(node: HTMLElement, eventName: slotchange, handler: TaggedEventHandler[slotchange]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_slotchange(
+      node: HTMLElement,
+      eventName: slotchange,
+      handler: TaggedEventHandler[slotchange],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_slotchange(
+      node: HTMLElement,
+      eventName: slotchange,
+      handler: TaggedEventHandler[slotchange],
+      options: EventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     inline def removeEventListener_stalled(node: HTMLElement, eventName: stalled, handler: TaggedEventHandler[stalled]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def removeEventListener_stalled(node: HTMLElement, eventName: stalled, handler: TaggedEventHandler[stalled], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def removeEventListener_stalled(
@@ -3353,6 +3781,74 @@ object mod {
       options: EventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def removeEventListener_webkitanimationend(node: HTMLElement, eventName: webkitanimationend, handler: TaggedEventHandler[webkitanimationend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_webkitanimationend(
+      node: HTMLElement,
+      eventName: webkitanimationend,
+      handler: TaggedEventHandler[webkitanimationend],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_webkitanimationend(
+      node: HTMLElement,
+      eventName: webkitanimationend,
+      handler: TaggedEventHandler[webkitanimationend],
+      options: EventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def removeEventListener_webkitanimationiteration(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: TaggedEventHandler[webkitanimationiteration]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_webkitanimationiteration(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: TaggedEventHandler[webkitanimationiteration],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_webkitanimationiteration(
+      node: HTMLElement,
+      eventName: webkitanimationiteration,
+      handler: TaggedEventHandler[webkitanimationiteration],
+      options: EventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def removeEventListener_webkitanimationstart(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: TaggedEventHandler[webkitanimationstart]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_webkitanimationstart(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: TaggedEventHandler[webkitanimationstart],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_webkitanimationstart(
+      node: HTMLElement,
+      eventName: webkitanimationstart,
+      handler: TaggedEventHandler[webkitanimationstart],
+      options: EventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def removeEventListener_webkittransitionend(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: TaggedEventHandler[webkittransitionend]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_webkittransitionend(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: TaggedEventHandler[webkittransitionend],
+      options: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_webkittransitionend(
+      node: HTMLElement,
+      eventName: webkittransitionend,
+      handler: TaggedEventHandler[webkittransitionend],
+      options: EventListenerOptions
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     inline def removeEventListener_wheel(node: HTMLElement, eventName: wheel, handler: TaggedEventHandler[wheel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def removeEventListener_wheel(node: HTMLElement, eventName: wheel, handler: TaggedEventHandler[wheel], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def removeEventListener_wheel(
@@ -3362,11 +3858,17 @@ object mod {
       options: EventListenerOptions
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    @JSImport("dom-helpers", "default.remove")
+    @js.native
+    def remove_Fdefault: js.Function1[/* node */ Node | Null, Node | Null] = js.native
+    
+    inline def remove_Fdefault_=(x: js.Function1[/* node */ Node | Null, Node | Null]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remove")(x.asInstanceOf[js.Any])
+    
     @JSImport("dom-helpers", "default.requestAnimationFrame")
     @js.native
-    def requestAnimationFrame: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis.requestAnimationFrame */ js.Any = js.native
+    def requestAnimationFrame: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis.requestAnimationFrame */ Any = js.native
     inline def requestAnimationFrame_=(
-      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis.requestAnimationFrame */ js.Any
+      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis.requestAnimationFrame */ Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestAnimationFrame")(x.asInstanceOf[js.Any])
     
     inline def scrollLeft(node: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollLeft")(node.asInstanceOf[js.Any]).asInstanceOf[Double]
@@ -3417,14 +3919,48 @@ object mod {
     
     inline def scrollbarSize_Fdefault_=(x: js.Function1[/* recalc */ js.UndefOr[Boolean], Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scrollbarSize")(x.asInstanceOf[js.Any])
     
+    inline def siblings(): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("siblings")().asInstanceOf[js.Array[Element]]
+    inline def siblings(node: Element): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("siblings")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element]]
+    @JSImport("dom-helpers", "default.siblings")
+    @js.native
+    def siblings_Fdefault: js.Function1[/* node */ Element | Null, js.Array[Element]] = js.native
+    
+    inline def siblings_Fdefault_=(x: js.Function1[/* node */ Element | Null, js.Array[Element]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("siblings")(x.asInstanceOf[js.Any])
+    
     @JSImport("dom-helpers", "default.style")
     @js.native
     def style: FnCallNodeProperty = js.native
     inline def style(node: HTMLElement, property: PartialRecordPropertystri): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string | 0>[T] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string | 0>[T] */ js.Any]
+    inline def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string & {} | 0, string & {}>[T] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string & {} | 0, string & {}>[T] */ js.Any]
     inline def style_=(x: FnCallNodeProperty): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("style")(x.asInstanceOf[js.Any])
     
-    inline def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string | 0>[T] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string | 0>[T] */ js.Any]
+    inline def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string & {} | 0, string & {}>[T] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string & {} | 0, string & {}>[T] */ js.Any]
+    
+    inline def text(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("text")().asInstanceOf[String]
+    inline def text(node: Null, trim: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any], trim.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def text(node: Null, trim: Boolean, singleSpaces: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], singleSpaces.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def text(node: Null, trim: Unit, singleSpaces: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], singleSpaces.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def text(node: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def text(node: HTMLElement, trim: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any], trim.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def text(node: HTMLElement, trim: Boolean, singleSpaces: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], singleSpaces.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def text(node: HTMLElement, trim: Unit, singleSpaces: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], singleSpaces.asInstanceOf[js.Any])).asInstanceOf[String]
+    @JSImport("dom-helpers", "default.text")
+    @js.native
+    def text_Fdefault: js.Function3[
+        /* node */ HTMLElement | Null, 
+        /* trim */ js.UndefOr[Boolean], 
+        /* singleSpaces */ js.UndefOr[Boolean], 
+        String
+      ] = js.native
+    
+    inline def text_Fdefault_=(
+      x: js.Function3[
+          /* node */ HTMLElement | Null, 
+          /* trim */ js.UndefOr[Boolean], 
+          /* singleSpaces */ js.UndefOr[Boolean], 
+          String
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
     
     @JSImport("dom-helpers", "default.toggleClass")
     @js.native
@@ -3456,6 +3992,911 @@ object mod {
           js.Function0[Unit]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transitionEnd")(x.asInstanceOf[js.Any])
+    
+    @JSImport("dom-helpers", "default.triggerEvent")
+    @js.native
+    def triggerEvent: FnCallNodeEventNameBubblesCancelable = js.native
+    inline def triggerEvent_=(x: FnCallNodeEventNameBubblesCancelable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("triggerEvent")(x.asInstanceOf[js.Any])
+    
+    inline def triggerEvent_abort(node: Null, eventName: abort): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_abort(node: Null, eventName: abort, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_abort(node: Null, eventName: abort, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_abort(node: Null, eventName: abort, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_abort(node: HTMLElement, eventName: abort): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_abort(node: HTMLElement, eventName: abort, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_abort(node: HTMLElement, eventName: abort, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_abort(node: HTMLElement, eventName: abort, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_animationcancel(node: Null, eventName: animationcancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationcancel(node: Null, eventName: animationcancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationcancel(node: Null, eventName: animationcancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationcancel(node: Null, eventName: animationcancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationcancel(node: HTMLElement, eventName: animationcancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationcancel(node: HTMLElement, eventName: animationcancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationcancel(node: HTMLElement, eventName: animationcancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationcancel(node: HTMLElement, eventName: animationcancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_animationend(node: Null, eventName: animationend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationend(node: Null, eventName: animationend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationend(node: Null, eventName: animationend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationend(node: Null, eventName: animationend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationend(node: HTMLElement, eventName: animationend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationend(node: HTMLElement, eventName: animationend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationend(node: HTMLElement, eventName: animationend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationend(node: HTMLElement, eventName: animationend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_animationiteration(node: Null, eventName: animationiteration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationiteration(node: Null, eventName: animationiteration, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationiteration(node: Null, eventName: animationiteration, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationiteration(node: Null, eventName: animationiteration, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationiteration(node: HTMLElement, eventName: animationiteration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationiteration(node: HTMLElement, eventName: animationiteration, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationiteration(node: HTMLElement, eventName: animationiteration, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationiteration(node: HTMLElement, eventName: animationiteration, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_animationstart(node: Null, eventName: animationstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationstart(node: Null, eventName: animationstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationstart(node: Null, eventName: animationstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationstart(node: Null, eventName: animationstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationstart(node: HTMLElement, eventName: animationstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationstart(node: HTMLElement, eventName: animationstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationstart(node: HTMLElement, eventName: animationstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_animationstart(node: HTMLElement, eventName: animationstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_auxclick(node: Null, eventName: auxclick): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_auxclick(node: Null, eventName: auxclick, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_auxclick(node: Null, eventName: auxclick, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_auxclick(node: Null, eventName: auxclick, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_auxclick(node: HTMLElement, eventName: auxclick): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_auxclick(node: HTMLElement, eventName: auxclick, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_auxclick(node: HTMLElement, eventName: auxclick, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_auxclick(node: HTMLElement, eventName: auxclick, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_beforeinput(node: Null, eventName: beforeinput): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_beforeinput(node: Null, eventName: beforeinput, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_beforeinput(node: Null, eventName: beforeinput, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_beforeinput(node: Null, eventName: beforeinput, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_beforeinput(node: HTMLElement, eventName: beforeinput): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_beforeinput(node: HTMLElement, eventName: beforeinput, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_beforeinput(node: HTMLElement, eventName: beforeinput, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_beforeinput(node: HTMLElement, eventName: beforeinput, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_blur(node: Null, eventName: blur): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_blur(node: Null, eventName: blur, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_blur(node: Null, eventName: blur, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_blur(node: Null, eventName: blur, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_blur(node: HTMLElement, eventName: blur): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_blur(node: HTMLElement, eventName: blur, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_blur(node: HTMLElement, eventName: blur, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_blur(node: HTMLElement, eventName: blur, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_canplay(node: Null, eventName: canplay): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_canplay(node: Null, eventName: canplay, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_canplay(node: Null, eventName: canplay, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_canplay(node: Null, eventName: canplay, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_canplay(node: HTMLElement, eventName: canplay): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_canplay(node: HTMLElement, eventName: canplay, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_canplay(node: HTMLElement, eventName: canplay, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_canplay(node: HTMLElement, eventName: canplay, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_canplaythrough(node: Null, eventName: canplaythrough): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_canplaythrough(node: Null, eventName: canplaythrough, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_canplaythrough(node: Null, eventName: canplaythrough, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_canplaythrough(node: Null, eventName: canplaythrough, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_canplaythrough(node: HTMLElement, eventName: canplaythrough): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_canplaythrough(node: HTMLElement, eventName: canplaythrough, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_canplaythrough(node: HTMLElement, eventName: canplaythrough, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_canplaythrough(node: HTMLElement, eventName: canplaythrough, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_change(node: Null, eventName: change): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_change(node: Null, eventName: change, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_change(node: Null, eventName: change, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_change(node: Null, eventName: change, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_change(node: HTMLElement, eventName: change): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_change(node: HTMLElement, eventName: change, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_change(node: HTMLElement, eventName: change, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_change(node: HTMLElement, eventName: change, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_click(node: Null, eventName: click): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_click(node: Null, eventName: click, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_click(node: Null, eventName: click, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_click(node: Null, eventName: click, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_click(node: HTMLElement, eventName: click): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_click(node: HTMLElement, eventName: click, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_click(node: HTMLElement, eventName: click, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_click(node: HTMLElement, eventName: click, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_close(node: Null, eventName: close): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_close(node: Null, eventName: close, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_close(node: Null, eventName: close, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_close(node: Null, eventName: close, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_close(node: HTMLElement, eventName: close): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_close(node: HTMLElement, eventName: close, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_close(node: HTMLElement, eventName: close, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_close(node: HTMLElement, eventName: close, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_compositionend(node: Null, eventName: compositionend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionend(node: Null, eventName: compositionend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionend(node: Null, eventName: compositionend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionend(node: Null, eventName: compositionend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionend(node: HTMLElement, eventName: compositionend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionend(node: HTMLElement, eventName: compositionend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionend(node: HTMLElement, eventName: compositionend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionend(node: HTMLElement, eventName: compositionend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_compositionstart(node: Null, eventName: compositionstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionstart(node: Null, eventName: compositionstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionstart(node: Null, eventName: compositionstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionstart(node: Null, eventName: compositionstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionstart(node: HTMLElement, eventName: compositionstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionstart(node: HTMLElement, eventName: compositionstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionstart(node: HTMLElement, eventName: compositionstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionstart(node: HTMLElement, eventName: compositionstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_compositionupdate(node: Null, eventName: compositionupdate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionupdate(node: Null, eventName: compositionupdate, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionupdate(node: Null, eventName: compositionupdate, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionupdate(node: Null, eventName: compositionupdate, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionupdate(node: HTMLElement, eventName: compositionupdate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionupdate(node: HTMLElement, eventName: compositionupdate, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionupdate(node: HTMLElement, eventName: compositionupdate, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_compositionupdate(node: HTMLElement, eventName: compositionupdate, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_contextmenu(node: Null, eventName: contextmenu): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_contextmenu(node: Null, eventName: contextmenu, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_contextmenu(node: Null, eventName: contextmenu, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_contextmenu(node: Null, eventName: contextmenu, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_contextmenu(node: HTMLElement, eventName: contextmenu): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_contextmenu(node: HTMLElement, eventName: contextmenu, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_contextmenu(node: HTMLElement, eventName: contextmenu, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_contextmenu(node: HTMLElement, eventName: contextmenu, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_copy(node: Null, eventName: copy): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_copy(node: Null, eventName: copy, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_copy(node: Null, eventName: copy, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_copy(node: Null, eventName: copy, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_copy(node: HTMLElement, eventName: copy): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_copy(node: HTMLElement, eventName: copy, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_copy(node: HTMLElement, eventName: copy, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_copy(node: HTMLElement, eventName: copy, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_cuechange(node: Null, eventName: cuechange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cuechange(node: Null, eventName: cuechange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cuechange(node: Null, eventName: cuechange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cuechange(node: Null, eventName: cuechange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cuechange(node: HTMLElement, eventName: cuechange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cuechange(node: HTMLElement, eventName: cuechange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cuechange(node: HTMLElement, eventName: cuechange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cuechange(node: HTMLElement, eventName: cuechange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_cut(node: Null, eventName: cut): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cut(node: Null, eventName: cut, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cut(node: Null, eventName: cut, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cut(node: Null, eventName: cut, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cut(node: HTMLElement, eventName: cut): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cut(node: HTMLElement, eventName: cut, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cut(node: HTMLElement, eventName: cut, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_cut(node: HTMLElement, eventName: cut, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_dblclick(node: Null, eventName: dblclick): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dblclick(node: Null, eventName: dblclick, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dblclick(node: Null, eventName: dblclick, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dblclick(node: Null, eventName: dblclick, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dblclick(node: HTMLElement, eventName: dblclick): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dblclick(node: HTMLElement, eventName: dblclick, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dblclick(node: HTMLElement, eventName: dblclick, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dblclick(node: HTMLElement, eventName: dblclick, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_drag(node: Null, eventName: drag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_drag(node: Null, eventName: drag, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_drag(node: Null, eventName: drag, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_drag(node: Null, eventName: drag, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_drag(node: HTMLElement, eventName: drag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_drag(node: HTMLElement, eventName: drag, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_drag(node: HTMLElement, eventName: drag, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_drag(node: HTMLElement, eventName: drag, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_dragend(node: Null, eventName: dragend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragend(node: Null, eventName: dragend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragend(node: Null, eventName: dragend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragend(node: Null, eventName: dragend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragend(node: HTMLElement, eventName: dragend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragend(node: HTMLElement, eventName: dragend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragend(node: HTMLElement, eventName: dragend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragend(node: HTMLElement, eventName: dragend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_dragenter(node: Null, eventName: dragenter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragenter(node: Null, eventName: dragenter, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragenter(node: Null, eventName: dragenter, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragenter(node: Null, eventName: dragenter, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragenter(node: HTMLElement, eventName: dragenter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragenter(node: HTMLElement, eventName: dragenter, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragenter(node: HTMLElement, eventName: dragenter, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragenter(node: HTMLElement, eventName: dragenter, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_dragleave(node: Null, eventName: dragleave): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragleave(node: Null, eventName: dragleave, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragleave(node: Null, eventName: dragleave, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragleave(node: Null, eventName: dragleave, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragleave(node: HTMLElement, eventName: dragleave): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragleave(node: HTMLElement, eventName: dragleave, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragleave(node: HTMLElement, eventName: dragleave, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragleave(node: HTMLElement, eventName: dragleave, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_dragover(node: Null, eventName: dragover): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragover(node: Null, eventName: dragover, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragover(node: Null, eventName: dragover, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragover(node: Null, eventName: dragover, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragover(node: HTMLElement, eventName: dragover): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragover(node: HTMLElement, eventName: dragover, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragover(node: HTMLElement, eventName: dragover, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragover(node: HTMLElement, eventName: dragover, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_dragstart(node: Null, eventName: dragstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragstart(node: Null, eventName: dragstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragstart(node: Null, eventName: dragstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragstart(node: Null, eventName: dragstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragstart(node: HTMLElement, eventName: dragstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragstart(node: HTMLElement, eventName: dragstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragstart(node: HTMLElement, eventName: dragstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_dragstart(node: HTMLElement, eventName: dragstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_drop(node: Null, eventName: drop): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_drop(node: Null, eventName: drop, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_drop(node: Null, eventName: drop, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_drop(node: Null, eventName: drop, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_drop(node: HTMLElement, eventName: drop): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_drop(node: HTMLElement, eventName: drop, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_drop(node: HTMLElement, eventName: drop, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_drop(node: HTMLElement, eventName: drop, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_durationchange(node: Null, eventName: durationchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_durationchange(node: Null, eventName: durationchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_durationchange(node: Null, eventName: durationchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_durationchange(node: Null, eventName: durationchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_durationchange(node: HTMLElement, eventName: durationchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_durationchange(node: HTMLElement, eventName: durationchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_durationchange(node: HTMLElement, eventName: durationchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_durationchange(node: HTMLElement, eventName: durationchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_emptied(node: Null, eventName: emptied): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_emptied(node: Null, eventName: emptied, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_emptied(node: Null, eventName: emptied, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_emptied(node: Null, eventName: emptied, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_emptied(node: HTMLElement, eventName: emptied): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_emptied(node: HTMLElement, eventName: emptied, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_emptied(node: HTMLElement, eventName: emptied, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_emptied(node: HTMLElement, eventName: emptied, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_ended(node: Null, eventName: ended): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_ended(node: Null, eventName: ended, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_ended(node: Null, eventName: ended, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_ended(node: Null, eventName: ended, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_ended(node: HTMLElement, eventName: ended): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_ended(node: HTMLElement, eventName: ended, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_ended(node: HTMLElement, eventName: ended, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_ended(node: HTMLElement, eventName: ended, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_error(node: Null, eventName: error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_error(node: Null, eventName: error, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_error(node: Null, eventName: error, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_error(node: Null, eventName: error, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_error(node: HTMLElement, eventName: error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_error(node: HTMLElement, eventName: error, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_error(node: HTMLElement, eventName: error, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_error(node: HTMLElement, eventName: error, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_focus(node: Null, eventName: focus): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focus(node: Null, eventName: focus, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focus(node: Null, eventName: focus, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focus(node: Null, eventName: focus, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focus(node: HTMLElement, eventName: focus): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focus(node: HTMLElement, eventName: focus, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focus(node: HTMLElement, eventName: focus, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focus(node: HTMLElement, eventName: focus, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_focusin(node: Null, eventName: focusin): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focusin(node: Null, eventName: focusin, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focusin(node: Null, eventName: focusin, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focusin(node: Null, eventName: focusin, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focusin(node: HTMLElement, eventName: focusin): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focusin(node: HTMLElement, eventName: focusin, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focusin(node: HTMLElement, eventName: focusin, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focusin(node: HTMLElement, eventName: focusin, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_focusout(node: Null, eventName: focusout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focusout(node: Null, eventName: focusout, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focusout(node: Null, eventName: focusout, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focusout(node: Null, eventName: focusout, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focusout(node: HTMLElement, eventName: focusout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focusout(node: HTMLElement, eventName: focusout, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focusout(node: HTMLElement, eventName: focusout, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_focusout(node: HTMLElement, eventName: focusout, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_formdata(node: Null, eventName: formdata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_formdata(node: Null, eventName: formdata, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_formdata(node: Null, eventName: formdata, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_formdata(node: Null, eventName: formdata, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_formdata(node: HTMLElement, eventName: formdata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_formdata(node: HTMLElement, eventName: formdata, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_formdata(node: HTMLElement, eventName: formdata, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_formdata(node: HTMLElement, eventName: formdata, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_fullscreenchange(node: Null, eventName: fullscreenchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_fullscreenchange(node: Null, eventName: fullscreenchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_fullscreenchange(node: Null, eventName: fullscreenchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_fullscreenchange(node: Null, eventName: fullscreenchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_fullscreenchange(node: HTMLElement, eventName: fullscreenchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_fullscreenchange(node: HTMLElement, eventName: fullscreenchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_fullscreenchange(node: HTMLElement, eventName: fullscreenchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_fullscreenchange(node: HTMLElement, eventName: fullscreenchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_fullscreenerror(node: Null, eventName: fullscreenerror): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_fullscreenerror(node: Null, eventName: fullscreenerror, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_fullscreenerror(node: Null, eventName: fullscreenerror, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_fullscreenerror(node: Null, eventName: fullscreenerror, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_fullscreenerror(node: HTMLElement, eventName: fullscreenerror): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_fullscreenerror(node: HTMLElement, eventName: fullscreenerror, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_fullscreenerror(node: HTMLElement, eventName: fullscreenerror, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_fullscreenerror(node: HTMLElement, eventName: fullscreenerror, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_gotpointercapture(node: Null, eventName: gotpointercapture): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_gotpointercapture(node: Null, eventName: gotpointercapture, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_gotpointercapture(node: Null, eventName: gotpointercapture, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_gotpointercapture(node: Null, eventName: gotpointercapture, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_gotpointercapture(node: HTMLElement, eventName: gotpointercapture): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_gotpointercapture(node: HTMLElement, eventName: gotpointercapture, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_gotpointercapture(node: HTMLElement, eventName: gotpointercapture, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_gotpointercapture(node: HTMLElement, eventName: gotpointercapture, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_input(node: Null, eventName: input): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_input(node: Null, eventName: input, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_input(node: Null, eventName: input, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_input(node: Null, eventName: input, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_input(node: HTMLElement, eventName: input): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_input(node: HTMLElement, eventName: input, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_input(node: HTMLElement, eventName: input, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_input(node: HTMLElement, eventName: input, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_invalid(node: Null, eventName: invalid): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_invalid(node: Null, eventName: invalid, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_invalid(node: Null, eventName: invalid, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_invalid(node: Null, eventName: invalid, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_invalid(node: HTMLElement, eventName: invalid): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_invalid(node: HTMLElement, eventName: invalid, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_invalid(node: HTMLElement, eventName: invalid, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_invalid(node: HTMLElement, eventName: invalid, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_keydown(node: Null, eventName: keydown): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keydown(node: Null, eventName: keydown, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keydown(node: Null, eventName: keydown, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keydown(node: Null, eventName: keydown, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keydown(node: HTMLElement, eventName: keydown): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keydown(node: HTMLElement, eventName: keydown, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keydown(node: HTMLElement, eventName: keydown, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keydown(node: HTMLElement, eventName: keydown, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_keypress(node: Null, eventName: keypress): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keypress(node: Null, eventName: keypress, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keypress(node: Null, eventName: keypress, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keypress(node: Null, eventName: keypress, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keypress(node: HTMLElement, eventName: keypress): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keypress(node: HTMLElement, eventName: keypress, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keypress(node: HTMLElement, eventName: keypress, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keypress(node: HTMLElement, eventName: keypress, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_keyup(node: Null, eventName: keyup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keyup(node: Null, eventName: keyup, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keyup(node: Null, eventName: keyup, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keyup(node: Null, eventName: keyup, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keyup(node: HTMLElement, eventName: keyup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keyup(node: HTMLElement, eventName: keyup, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keyup(node: HTMLElement, eventName: keyup, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_keyup(node: HTMLElement, eventName: keyup, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_load(node: Null, eventName: load): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_load(node: Null, eventName: load, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_load(node: Null, eventName: load, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_load(node: Null, eventName: load, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_load(node: HTMLElement, eventName: load): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_load(node: HTMLElement, eventName: load, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_load(node: HTMLElement, eventName: load, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_load(node: HTMLElement, eventName: load, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_loadeddata(node: Null, eventName: loadeddata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadeddata(node: Null, eventName: loadeddata, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadeddata(node: Null, eventName: loadeddata, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadeddata(node: Null, eventName: loadeddata, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadeddata(node: HTMLElement, eventName: loadeddata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadeddata(node: HTMLElement, eventName: loadeddata, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadeddata(node: HTMLElement, eventName: loadeddata, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadeddata(node: HTMLElement, eventName: loadeddata, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_loadedmetadata(node: Null, eventName: loadedmetadata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadedmetadata(node: Null, eventName: loadedmetadata, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadedmetadata(node: Null, eventName: loadedmetadata, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadedmetadata(node: Null, eventName: loadedmetadata, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadedmetadata(node: HTMLElement, eventName: loadedmetadata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadedmetadata(node: HTMLElement, eventName: loadedmetadata, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadedmetadata(node: HTMLElement, eventName: loadedmetadata, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadedmetadata(node: HTMLElement, eventName: loadedmetadata, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_loadstart(node: Null, eventName: loadstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadstart(node: Null, eventName: loadstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadstart(node: Null, eventName: loadstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadstart(node: Null, eventName: loadstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadstart(node: HTMLElement, eventName: loadstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadstart(node: HTMLElement, eventName: loadstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadstart(node: HTMLElement, eventName: loadstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_loadstart(node: HTMLElement, eventName: loadstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_lostpointercapture(node: Null, eventName: lostpointercapture): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_lostpointercapture(node: Null, eventName: lostpointercapture, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_lostpointercapture(node: Null, eventName: lostpointercapture, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_lostpointercapture(node: Null, eventName: lostpointercapture, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_lostpointercapture(node: HTMLElement, eventName: lostpointercapture): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_lostpointercapture(node: HTMLElement, eventName: lostpointercapture, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_lostpointercapture(node: HTMLElement, eventName: lostpointercapture, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_lostpointercapture(node: HTMLElement, eventName: lostpointercapture, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_mousedown(node: Null, eventName: mousedown): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mousedown(node: Null, eventName: mousedown, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mousedown(node: Null, eventName: mousedown, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mousedown(node: Null, eventName: mousedown, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mousedown(node: HTMLElement, eventName: mousedown): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mousedown(node: HTMLElement, eventName: mousedown, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mousedown(node: HTMLElement, eventName: mousedown, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mousedown(node: HTMLElement, eventName: mousedown, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_mouseenter(node: Null, eventName: mouseenter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseenter(node: Null, eventName: mouseenter, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseenter(node: Null, eventName: mouseenter, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseenter(node: Null, eventName: mouseenter, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseenter(node: HTMLElement, eventName: mouseenter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseenter(node: HTMLElement, eventName: mouseenter, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseenter(node: HTMLElement, eventName: mouseenter, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseenter(node: HTMLElement, eventName: mouseenter, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_mouseleave(node: Null, eventName: mouseleave): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseleave(node: Null, eventName: mouseleave, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseleave(node: Null, eventName: mouseleave, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseleave(node: Null, eventName: mouseleave, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseleave(node: HTMLElement, eventName: mouseleave): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseleave(node: HTMLElement, eventName: mouseleave, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseleave(node: HTMLElement, eventName: mouseleave, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseleave(node: HTMLElement, eventName: mouseleave, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_mousemove(node: Null, eventName: mousemove): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mousemove(node: Null, eventName: mousemove, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mousemove(node: Null, eventName: mousemove, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mousemove(node: Null, eventName: mousemove, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mousemove(node: HTMLElement, eventName: mousemove): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mousemove(node: HTMLElement, eventName: mousemove, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mousemove(node: HTMLElement, eventName: mousemove, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mousemove(node: HTMLElement, eventName: mousemove, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_mouseout(node: Null, eventName: mouseout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseout(node: Null, eventName: mouseout, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseout(node: Null, eventName: mouseout, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseout(node: Null, eventName: mouseout, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseout(node: HTMLElement, eventName: mouseout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseout(node: HTMLElement, eventName: mouseout, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseout(node: HTMLElement, eventName: mouseout, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseout(node: HTMLElement, eventName: mouseout, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_mouseover(node: Null, eventName: mouseover): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseover(node: Null, eventName: mouseover, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseover(node: Null, eventName: mouseover, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseover(node: Null, eventName: mouseover, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseover(node: HTMLElement, eventName: mouseover): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseover(node: HTMLElement, eventName: mouseover, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseover(node: HTMLElement, eventName: mouseover, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseover(node: HTMLElement, eventName: mouseover, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_mouseup(node: Null, eventName: mouseup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseup(node: Null, eventName: mouseup, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseup(node: Null, eventName: mouseup, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseup(node: Null, eventName: mouseup, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseup(node: HTMLElement, eventName: mouseup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseup(node: HTMLElement, eventName: mouseup, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseup(node: HTMLElement, eventName: mouseup, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_mouseup(node: HTMLElement, eventName: mouseup, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_paste(node: Null, eventName: paste): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_paste(node: Null, eventName: paste, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_paste(node: Null, eventName: paste, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_paste(node: Null, eventName: paste, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_paste(node: HTMLElement, eventName: paste): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_paste(node: HTMLElement, eventName: paste, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_paste(node: HTMLElement, eventName: paste, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_paste(node: HTMLElement, eventName: paste, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_pause(node: Null, eventName: pause): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pause(node: Null, eventName: pause, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pause(node: Null, eventName: pause, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pause(node: Null, eventName: pause, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pause(node: HTMLElement, eventName: pause): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pause(node: HTMLElement, eventName: pause, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pause(node: HTMLElement, eventName: pause, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pause(node: HTMLElement, eventName: pause, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_play(node: Null, eventName: play): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_play(node: Null, eventName: play, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_play(node: Null, eventName: play, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_play(node: Null, eventName: play, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_play(node: HTMLElement, eventName: play): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_play(node: HTMLElement, eventName: play, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_play(node: HTMLElement, eventName: play, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_play(node: HTMLElement, eventName: play, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_playing(node: Null, eventName: playing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_playing(node: Null, eventName: playing, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_playing(node: Null, eventName: playing, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_playing(node: Null, eventName: playing, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_playing(node: HTMLElement, eventName: playing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_playing(node: HTMLElement, eventName: playing, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_playing(node: HTMLElement, eventName: playing, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_playing(node: HTMLElement, eventName: playing, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_pointercancel(node: Null, eventName: pointercancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointercancel(node: Null, eventName: pointercancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointercancel(node: Null, eventName: pointercancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointercancel(node: Null, eventName: pointercancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointercancel(node: HTMLElement, eventName: pointercancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointercancel(node: HTMLElement, eventName: pointercancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointercancel(node: HTMLElement, eventName: pointercancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointercancel(node: HTMLElement, eventName: pointercancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_pointerdown(node: Null, eventName: pointerdown): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerdown(node: Null, eventName: pointerdown, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerdown(node: Null, eventName: pointerdown, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerdown(node: Null, eventName: pointerdown, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerdown(node: HTMLElement, eventName: pointerdown): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerdown(node: HTMLElement, eventName: pointerdown, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerdown(node: HTMLElement, eventName: pointerdown, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerdown(node: HTMLElement, eventName: pointerdown, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_pointerenter(node: Null, eventName: pointerenter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerenter(node: Null, eventName: pointerenter, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerenter(node: Null, eventName: pointerenter, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerenter(node: Null, eventName: pointerenter, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerenter(node: HTMLElement, eventName: pointerenter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerenter(node: HTMLElement, eventName: pointerenter, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerenter(node: HTMLElement, eventName: pointerenter, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerenter(node: HTMLElement, eventName: pointerenter, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_pointerleave(node: Null, eventName: pointerleave): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerleave(node: Null, eventName: pointerleave, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerleave(node: Null, eventName: pointerleave, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerleave(node: Null, eventName: pointerleave, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerleave(node: HTMLElement, eventName: pointerleave): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerleave(node: HTMLElement, eventName: pointerleave, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerleave(node: HTMLElement, eventName: pointerleave, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerleave(node: HTMLElement, eventName: pointerleave, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_pointermove(node: Null, eventName: pointermove): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointermove(node: Null, eventName: pointermove, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointermove(node: Null, eventName: pointermove, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointermove(node: Null, eventName: pointermove, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointermove(node: HTMLElement, eventName: pointermove): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointermove(node: HTMLElement, eventName: pointermove, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointermove(node: HTMLElement, eventName: pointermove, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointermove(node: HTMLElement, eventName: pointermove, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_pointerout(node: Null, eventName: pointerout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerout(node: Null, eventName: pointerout, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerout(node: Null, eventName: pointerout, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerout(node: Null, eventName: pointerout, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerout(node: HTMLElement, eventName: pointerout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerout(node: HTMLElement, eventName: pointerout, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerout(node: HTMLElement, eventName: pointerout, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerout(node: HTMLElement, eventName: pointerout, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_pointerover(node: Null, eventName: pointerover): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerover(node: Null, eventName: pointerover, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerover(node: Null, eventName: pointerover, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerover(node: Null, eventName: pointerover, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerover(node: HTMLElement, eventName: pointerover): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerover(node: HTMLElement, eventName: pointerover, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerover(node: HTMLElement, eventName: pointerover, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerover(node: HTMLElement, eventName: pointerover, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_pointerup(node: Null, eventName: pointerup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerup(node: Null, eventName: pointerup, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerup(node: Null, eventName: pointerup, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerup(node: Null, eventName: pointerup, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerup(node: HTMLElement, eventName: pointerup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerup(node: HTMLElement, eventName: pointerup, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerup(node: HTMLElement, eventName: pointerup, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_pointerup(node: HTMLElement, eventName: pointerup, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_progress(node: Null, eventName: progress): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_progress(node: Null, eventName: progress, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_progress(node: Null, eventName: progress, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_progress(node: Null, eventName: progress, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_progress(node: HTMLElement, eventName: progress): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_progress(node: HTMLElement, eventName: progress, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_progress(node: HTMLElement, eventName: progress, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_progress(node: HTMLElement, eventName: progress, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_ratechange(node: Null, eventName: ratechange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_ratechange(node: Null, eventName: ratechange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_ratechange(node: Null, eventName: ratechange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_ratechange(node: Null, eventName: ratechange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_ratechange(node: HTMLElement, eventName: ratechange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_ratechange(node: HTMLElement, eventName: ratechange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_ratechange(node: HTMLElement, eventName: ratechange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_ratechange(node: HTMLElement, eventName: ratechange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_reset(node: Null, eventName: reset): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_reset(node: Null, eventName: reset, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_reset(node: Null, eventName: reset, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_reset(node: Null, eventName: reset, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_reset(node: HTMLElement, eventName: reset): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_reset(node: HTMLElement, eventName: reset, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_reset(node: HTMLElement, eventName: reset, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_reset(node: HTMLElement, eventName: reset, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_resize(node: Null, eventName: resize): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_resize(node: Null, eventName: resize, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_resize(node: Null, eventName: resize, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_resize(node: Null, eventName: resize, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_resize(node: HTMLElement, eventName: resize): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_resize(node: HTMLElement, eventName: resize, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_resize(node: HTMLElement, eventName: resize, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_resize(node: HTMLElement, eventName: resize, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_scroll(node: Null, eventName: scroll): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_scroll(node: Null, eventName: scroll, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_scroll(node: Null, eventName: scroll, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_scroll(node: Null, eventName: scroll, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_scroll(node: HTMLElement, eventName: scroll): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_scroll(node: HTMLElement, eventName: scroll, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_scroll(node: HTMLElement, eventName: scroll, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_scroll(node: HTMLElement, eventName: scroll, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_securitypolicyviolation(node: Null, eventName: securitypolicyviolation): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_securitypolicyviolation(node: Null, eventName: securitypolicyviolation, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_securitypolicyviolation(node: Null, eventName: securitypolicyviolation, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_securitypolicyviolation(node: Null, eventName: securitypolicyviolation, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_securitypolicyviolation(node: HTMLElement, eventName: securitypolicyviolation): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_securitypolicyviolation(node: HTMLElement, eventName: securitypolicyviolation, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_securitypolicyviolation(node: HTMLElement, eventName: securitypolicyviolation, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_securitypolicyviolation(node: HTMLElement, eventName: securitypolicyviolation, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_seeked(node: Null, eventName: seeked): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_seeked(node: Null, eventName: seeked, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_seeked(node: Null, eventName: seeked, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_seeked(node: Null, eventName: seeked, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_seeked(node: HTMLElement, eventName: seeked): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_seeked(node: HTMLElement, eventName: seeked, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_seeked(node: HTMLElement, eventName: seeked, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_seeked(node: HTMLElement, eventName: seeked, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_seeking(node: Null, eventName: seeking): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_seeking(node: Null, eventName: seeking, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_seeking(node: Null, eventName: seeking, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_seeking(node: Null, eventName: seeking, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_seeking(node: HTMLElement, eventName: seeking): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_seeking(node: HTMLElement, eventName: seeking, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_seeking(node: HTMLElement, eventName: seeking, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_seeking(node: HTMLElement, eventName: seeking, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_select(node: Null, eventName: select): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_select(node: Null, eventName: select, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_select(node: Null, eventName: select, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_select(node: Null, eventName: select, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_select(node: HTMLElement, eventName: select): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_select(node: HTMLElement, eventName: select, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_select(node: HTMLElement, eventName: select, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_select(node: HTMLElement, eventName: select, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_selectionchange(node: Null, eventName: selectionchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_selectionchange(node: Null, eventName: selectionchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_selectionchange(node: Null, eventName: selectionchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_selectionchange(node: Null, eventName: selectionchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_selectionchange(node: HTMLElement, eventName: selectionchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_selectionchange(node: HTMLElement, eventName: selectionchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_selectionchange(node: HTMLElement, eventName: selectionchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_selectionchange(node: HTMLElement, eventName: selectionchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_selectstart(node: Null, eventName: selectstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_selectstart(node: Null, eventName: selectstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_selectstart(node: Null, eventName: selectstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_selectstart(node: Null, eventName: selectstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_selectstart(node: HTMLElement, eventName: selectstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_selectstart(node: HTMLElement, eventName: selectstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_selectstart(node: HTMLElement, eventName: selectstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_selectstart(node: HTMLElement, eventName: selectstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_slotchange(node: Null, eventName: slotchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_slotchange(node: Null, eventName: slotchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_slotchange(node: Null, eventName: slotchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_slotchange(node: Null, eventName: slotchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_slotchange(node: HTMLElement, eventName: slotchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_slotchange(node: HTMLElement, eventName: slotchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_slotchange(node: HTMLElement, eventName: slotchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_slotchange(node: HTMLElement, eventName: slotchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_stalled(node: Null, eventName: stalled): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_stalled(node: Null, eventName: stalled, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_stalled(node: Null, eventName: stalled, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_stalled(node: Null, eventName: stalled, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_stalled(node: HTMLElement, eventName: stalled): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_stalled(node: HTMLElement, eventName: stalled, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_stalled(node: HTMLElement, eventName: stalled, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_stalled(node: HTMLElement, eventName: stalled, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_submit(node: Null, eventName: submit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_submit(node: Null, eventName: submit, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_submit(node: Null, eventName: submit, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_submit(node: Null, eventName: submit, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_submit(node: HTMLElement, eventName: submit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_submit(node: HTMLElement, eventName: submit, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_submit(node: HTMLElement, eventName: submit, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_submit(node: HTMLElement, eventName: submit, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_suspend(node: Null, eventName: suspend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_suspend(node: Null, eventName: suspend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_suspend(node: Null, eventName: suspend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_suspend(node: Null, eventName: suspend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_suspend(node: HTMLElement, eventName: suspend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_suspend(node: HTMLElement, eventName: suspend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_suspend(node: HTMLElement, eventName: suspend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_suspend(node: HTMLElement, eventName: suspend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_timeupdate(node: Null, eventName: timeupdate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_timeupdate(node: Null, eventName: timeupdate, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_timeupdate(node: Null, eventName: timeupdate, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_timeupdate(node: Null, eventName: timeupdate, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_timeupdate(node: HTMLElement, eventName: timeupdate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_timeupdate(node: HTMLElement, eventName: timeupdate, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_timeupdate(node: HTMLElement, eventName: timeupdate, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_timeupdate(node: HTMLElement, eventName: timeupdate, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_toggle(node: Null, eventName: toggle): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_toggle(node: Null, eventName: toggle, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_toggle(node: Null, eventName: toggle, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_toggle(node: Null, eventName: toggle, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_toggle(node: HTMLElement, eventName: toggle): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_toggle(node: HTMLElement, eventName: toggle, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_toggle(node: HTMLElement, eventName: toggle, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_toggle(node: HTMLElement, eventName: toggle, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_touchcancel(node: Null, eventName: touchcancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchcancel(node: Null, eventName: touchcancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchcancel(node: Null, eventName: touchcancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchcancel(node: Null, eventName: touchcancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchcancel(node: HTMLElement, eventName: touchcancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchcancel(node: HTMLElement, eventName: touchcancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchcancel(node: HTMLElement, eventName: touchcancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchcancel(node: HTMLElement, eventName: touchcancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_touchend(node: Null, eventName: touchend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchend(node: Null, eventName: touchend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchend(node: Null, eventName: touchend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchend(node: Null, eventName: touchend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchend(node: HTMLElement, eventName: touchend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchend(node: HTMLElement, eventName: touchend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchend(node: HTMLElement, eventName: touchend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchend(node: HTMLElement, eventName: touchend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_touchmove(node: Null, eventName: touchmove): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchmove(node: Null, eventName: touchmove, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchmove(node: Null, eventName: touchmove, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchmove(node: Null, eventName: touchmove, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchmove(node: HTMLElement, eventName: touchmove): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchmove(node: HTMLElement, eventName: touchmove, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchmove(node: HTMLElement, eventName: touchmove, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchmove(node: HTMLElement, eventName: touchmove, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_touchstart(node: Null, eventName: touchstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchstart(node: Null, eventName: touchstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchstart(node: Null, eventName: touchstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchstart(node: Null, eventName: touchstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchstart(node: HTMLElement, eventName: touchstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchstart(node: HTMLElement, eventName: touchstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchstart(node: HTMLElement, eventName: touchstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_touchstart(node: HTMLElement, eventName: touchstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_transitioncancel(node: Null, eventName: transitioncancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitioncancel(node: Null, eventName: transitioncancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitioncancel(node: Null, eventName: transitioncancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitioncancel(node: Null, eventName: transitioncancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitioncancel(node: HTMLElement, eventName: transitioncancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitioncancel(node: HTMLElement, eventName: transitioncancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitioncancel(node: HTMLElement, eventName: transitioncancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitioncancel(node: HTMLElement, eventName: transitioncancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_transitionend(node: Null, eventName: transitionend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionend(node: Null, eventName: transitionend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionend(node: Null, eventName: transitionend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionend(node: Null, eventName: transitionend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionend(node: HTMLElement, eventName: transitionend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionend(node: HTMLElement, eventName: transitionend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionend(node: HTMLElement, eventName: transitionend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionend(node: HTMLElement, eventName: transitionend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_transitionrun(node: Null, eventName: transitionrun): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionrun(node: Null, eventName: transitionrun, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionrun(node: Null, eventName: transitionrun, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionrun(node: Null, eventName: transitionrun, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionrun(node: HTMLElement, eventName: transitionrun): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionrun(node: HTMLElement, eventName: transitionrun, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionrun(node: HTMLElement, eventName: transitionrun, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionrun(node: HTMLElement, eventName: transitionrun, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_transitionstart(node: Null, eventName: transitionstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionstart(node: Null, eventName: transitionstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionstart(node: Null, eventName: transitionstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionstart(node: Null, eventName: transitionstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionstart(node: HTMLElement, eventName: transitionstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionstart(node: HTMLElement, eventName: transitionstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionstart(node: HTMLElement, eventName: transitionstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_transitionstart(node: HTMLElement, eventName: transitionstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_volumechange(node: Null, eventName: volumechange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_volumechange(node: Null, eventName: volumechange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_volumechange(node: Null, eventName: volumechange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_volumechange(node: Null, eventName: volumechange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_volumechange(node: HTMLElement, eventName: volumechange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_volumechange(node: HTMLElement, eventName: volumechange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_volumechange(node: HTMLElement, eventName: volumechange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_volumechange(node: HTMLElement, eventName: volumechange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_waiting(node: Null, eventName: waiting): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_waiting(node: Null, eventName: waiting, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_waiting(node: Null, eventName: waiting, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_waiting(node: Null, eventName: waiting, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_waiting(node: HTMLElement, eventName: waiting): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_waiting(node: HTMLElement, eventName: waiting, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_waiting(node: HTMLElement, eventName: waiting, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_waiting(node: HTMLElement, eventName: waiting, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_webkitanimationend(node: Null, eventName: webkitanimationend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationend(node: Null, eventName: webkitanimationend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationend(node: Null, eventName: webkitanimationend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationend(node: Null, eventName: webkitanimationend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationend(node: HTMLElement, eventName: webkitanimationend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationend(node: HTMLElement, eventName: webkitanimationend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationend(node: HTMLElement, eventName: webkitanimationend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationend(node: HTMLElement, eventName: webkitanimationend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_webkitanimationiteration(node: Null, eventName: webkitanimationiteration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationiteration(node: Null, eventName: webkitanimationiteration, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationiteration(node: Null, eventName: webkitanimationiteration, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationiteration(node: Null, eventName: webkitanimationiteration, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationiteration(node: HTMLElement, eventName: webkitanimationiteration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationiteration(node: HTMLElement, eventName: webkitanimationiteration, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationiteration(node: HTMLElement, eventName: webkitanimationiteration, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationiteration(node: HTMLElement, eventName: webkitanimationiteration, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_webkitanimationstart(node: Null, eventName: webkitanimationstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationstart(node: Null, eventName: webkitanimationstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationstart(node: Null, eventName: webkitanimationstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationstart(node: Null, eventName: webkitanimationstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationstart(node: HTMLElement, eventName: webkitanimationstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationstart(node: HTMLElement, eventName: webkitanimationstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationstart(node: HTMLElement, eventName: webkitanimationstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkitanimationstart(node: HTMLElement, eventName: webkitanimationstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_webkittransitionend(node: Null, eventName: webkittransitionend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkittransitionend(node: Null, eventName: webkittransitionend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkittransitionend(node: Null, eventName: webkittransitionend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkittransitionend(node: Null, eventName: webkittransitionend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkittransitionend(node: HTMLElement, eventName: webkittransitionend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkittransitionend(node: HTMLElement, eventName: webkittransitionend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkittransitionend(node: HTMLElement, eventName: webkittransitionend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_webkittransitionend(node: HTMLElement, eventName: webkittransitionend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def triggerEvent_wheel(node: Null, eventName: wheel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_wheel(node: Null, eventName: wheel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_wheel(node: Null, eventName: wheel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_wheel(node: Null, eventName: wheel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_wheel(node: HTMLElement, eventName: wheel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_wheel(node: HTMLElement, eventName: wheel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_wheel(node: HTMLElement, eventName: wheel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def triggerEvent_wheel(node: HTMLElement, eventName: wheel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("dom-helpers", "default.width")
     @js.native
@@ -3545,21 +4986,26 @@ object mod {
     options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def addEventListener_beforeinput(node: HTMLElement, eventName: beforeinput, handler: TaggedEventHandler[beforeinput]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_beforeinput(
+    node: HTMLElement,
+    eventName: beforeinput,
+    handler: TaggedEventHandler[beforeinput],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_beforeinput(
+    node: HTMLElement,
+    eventName: beforeinput,
+    handler: TaggedEventHandler[beforeinput],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def addEventListener_blur(node: HTMLElement, eventName: blur, handler: TaggedEventHandler[blur]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addEventListener_blur(node: HTMLElement, eventName: blur, handler: TaggedEventHandler[blur], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addEventListener_blur(
     node: HTMLElement,
     eventName: blur,
     handler: TaggedEventHandler[blur],
-    options: AddEventListenerOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def addEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addEventListener_cancel(
-    node: HTMLElement,
-    eventName: cancel,
-    handler: TaggedEventHandler[cancel],
     options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -3610,6 +5056,48 @@ object mod {
     node: HTMLElement,
     eventName: close,
     handler: TaggedEventHandler[close],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def addEventListener_compositionend(node: HTMLElement, eventName: compositionend, handler: TaggedEventHandler[compositionend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_compositionend(
+    node: HTMLElement,
+    eventName: compositionend,
+    handler: TaggedEventHandler[compositionend],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_compositionend(
+    node: HTMLElement,
+    eventName: compositionend,
+    handler: TaggedEventHandler[compositionend],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def addEventListener_compositionstart(node: HTMLElement, eventName: compositionstart, handler: TaggedEventHandler[compositionstart]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_compositionstart(
+    node: HTMLElement,
+    eventName: compositionstart,
+    handler: TaggedEventHandler[compositionstart],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_compositionstart(
+    node: HTMLElement,
+    eventName: compositionstart,
+    handler: TaggedEventHandler[compositionstart],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def addEventListener_compositionupdate(node: HTMLElement, eventName: compositionupdate, handler: TaggedEventHandler[compositionupdate]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_compositionupdate(
+    node: HTMLElement,
+    eventName: compositionupdate,
+    handler: TaggedEventHandler[compositionupdate],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_compositionupdate(
+    node: HTMLElement,
+    eventName: compositionupdate,
+    handler: TaggedEventHandler[compositionupdate],
     options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -3687,15 +5175,6 @@ object mod {
     node: HTMLElement,
     eventName: dragenter,
     handler: TaggedEventHandler[dragenter],
-    options: AddEventListenerOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def addEventListener_dragexit(node: HTMLElement, eventName: dragexit, handler: TaggedEventHandler[dragexit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addEventListener_dragexit(node: HTMLElement, eventName: dragexit, handler: TaggedEventHandler[dragexit], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addEventListener_dragexit(
-    node: HTMLElement,
-    eventName: dragexit,
-    handler: TaggedEventHandler[dragexit],
     options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -3803,8 +5282,22 @@ object mod {
     options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def addEventListener_formdata(node: HTMLElement, eventName: formdata, handler: TaggedEventHandler[formdata]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_formdata(node: HTMLElement, eventName: formdata, handler: TaggedEventHandler[formdata], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_formdata(
+    node: HTMLElement,
+    eventName: formdata,
+    handler: TaggedEventHandler[formdata],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * An `addEventListener` ponyfill, supports the `once` option
+    *
+    * @param node the element
+    * @param eventName the event name
+    * @param handle the handler
+    * @param options event options
     */
   inline def addEventListener_fullscreenchange(node: HTMLElement, eventName: fullscreenchange, handler: TaggedEventHandler[fullscreenchange]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addEventListener_fullscreenchange(
@@ -4292,6 +5785,20 @@ object mod {
     options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def addEventListener_slotchange(node: HTMLElement, eventName: slotchange, handler: TaggedEventHandler[slotchange]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_slotchange(
+    node: HTMLElement,
+    eventName: slotchange,
+    handler: TaggedEventHandler[slotchange],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_slotchange(
+    node: HTMLElement,
+    eventName: slotchange,
+    handler: TaggedEventHandler[slotchange],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def addEventListener_stalled(node: HTMLElement, eventName: stalled, handler: TaggedEventHandler[stalled]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addEventListener_stalled(node: HTMLElement, eventName: stalled, handler: TaggedEventHandler[stalled], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addEventListener_stalled(
@@ -4467,6 +5974,74 @@ object mod {
     options: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def addEventListener_webkitanimationend(node: HTMLElement, eventName: webkitanimationend, handler: TaggedEventHandler[webkitanimationend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_webkitanimationend(
+    node: HTMLElement,
+    eventName: webkitanimationend,
+    handler: TaggedEventHandler[webkitanimationend],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_webkitanimationend(
+    node: HTMLElement,
+    eventName: webkitanimationend,
+    handler: TaggedEventHandler[webkitanimationend],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def addEventListener_webkitanimationiteration(
+    node: HTMLElement,
+    eventName: webkitanimationiteration,
+    handler: TaggedEventHandler[webkitanimationiteration]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_webkitanimationiteration(
+    node: HTMLElement,
+    eventName: webkitanimationiteration,
+    handler: TaggedEventHandler[webkitanimationiteration],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_webkitanimationiteration(
+    node: HTMLElement,
+    eventName: webkitanimationiteration,
+    handler: TaggedEventHandler[webkitanimationiteration],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def addEventListener_webkitanimationstart(
+    node: HTMLElement,
+    eventName: webkitanimationstart,
+    handler: TaggedEventHandler[webkitanimationstart]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_webkitanimationstart(
+    node: HTMLElement,
+    eventName: webkitanimationstart,
+    handler: TaggedEventHandler[webkitanimationstart],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_webkitanimationstart(
+    node: HTMLElement,
+    eventName: webkitanimationstart,
+    handler: TaggedEventHandler[webkitanimationstart],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def addEventListener_webkittransitionend(
+    node: HTMLElement,
+    eventName: webkittransitionend,
+    handler: TaggedEventHandler[webkittransitionend]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_webkittransitionend(
+    node: HTMLElement,
+    eventName: webkittransitionend,
+    handler: TaggedEventHandler[webkittransitionend],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener_webkittransitionend(
+    node: HTMLElement,
+    eventName: webkittransitionend,
+    handler: TaggedEventHandler[webkittransitionend],
+    options: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def addEventListener_wheel(node: HTMLElement, eventName: wheel, handler: TaggedEventHandler[wheel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addEventListener_wheel(node: HTMLElement, eventName: wheel, handler: TaggedEventHandler[wheel], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addEventListener_wheel(
@@ -4493,7 +6068,23 @@ object mod {
     callback: EventHandler[transitionend]
   ): Cancel = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(node.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], easing.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Cancel]
   
+  inline def attribute(node: Null, attr: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(node.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+  inline def attribute(node: Null, attr: String, `val`: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(node.asInstanceOf[js.Any], attr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+  inline def attribute(node: Null, attr: String, `val`: Boolean): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(node.asInstanceOf[js.Any], attr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+  inline def attribute(node: Element, attr: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(node.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+  inline def attribute(node: Element, attr: String, `val`: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(node.asInstanceOf[js.Any], attr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+  inline def attribute(node: Element, attr: String, `val`: Boolean): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(node.asInstanceOf[js.Any], attr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+  
   inline def cancelAnimationFrame(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelAnimationFrame")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def childElements(): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("childElements")().asInstanceOf[js.Array[Element]]
+  inline def childElements(node: Element): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("childElements")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element]]
+  
+  inline def childNodes(): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("childNodes")().asInstanceOf[js.Array[Node]]
+  inline def childNodes(node: Element): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("childNodes")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Node]]
+  
+  inline def clear(): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Node | Null]
+  inline def clear(node: Node): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(node.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
   
   inline def closest(node: Element, selector: String): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("closest")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
   inline def closest(node: Element, selector: String, stopAt: Element): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("closest")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], stopAt.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
@@ -4512,9 +6103,9 @@ object mod {
   
   inline def filter_auxclick(selector: String, handler: EventHandler[auxclick]): EventHandler[auxclick] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[auxclick]]
   
-  inline def filter_blur(selector: String, handler: EventHandler[blur]): EventHandler[blur] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[blur]]
+  inline def filter_beforeinput(selector: String, handler: EventHandler[beforeinput]): EventHandler[beforeinput] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[beforeinput]]
   
-  inline def filter_cancel(selector: String, handler: EventHandler[cancel]): EventHandler[cancel] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[cancel]]
+  inline def filter_blur(selector: String, handler: EventHandler[blur]): EventHandler[blur] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[blur]]
   
   inline def filter_canplay(selector: String, handler: EventHandler[canplay]): EventHandler[canplay] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[canplay]]
   
@@ -4525,6 +6116,12 @@ object mod {
   inline def filter_click(selector: String, handler: EventHandler[click]): EventHandler[click] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[click]]
   
   inline def filter_close(selector: String, handler: EventHandler[close]): EventHandler[close] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[close]]
+  
+  inline def filter_compositionend(selector: String, handler: EventHandler[compositionend]): EventHandler[compositionend] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[compositionend]]
+  
+  inline def filter_compositionstart(selector: String, handler: EventHandler[compositionstart]): EventHandler[compositionstart] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[compositionstart]]
+  
+  inline def filter_compositionupdate(selector: String, handler: EventHandler[compositionupdate]): EventHandler[compositionupdate] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[compositionupdate]]
   
   inline def filter_contextmenu(selector: String, handler: EventHandler[contextmenu]): EventHandler[contextmenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[contextmenu]]
   
@@ -4541,8 +6138,6 @@ object mod {
   inline def filter_dragend(selector: String, handler: EventHandler[dragend]): EventHandler[dragend] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[dragend]]
   
   inline def filter_dragenter(selector: String, handler: EventHandler[dragenter]): EventHandler[dragenter] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[dragenter]]
-  
-  inline def filter_dragexit(selector: String, handler: EventHandler[dragexit]): EventHandler[dragexit] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[dragexit]]
   
   inline def filter_dragleave(selector: String, handler: EventHandler[dragleave]): EventHandler[dragleave] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[dragleave]]
   
@@ -4565,6 +6160,8 @@ object mod {
   inline def filter_focusin(selector: String, handler: EventHandler[focusin]): EventHandler[focusin] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[focusin]]
   
   inline def filter_focusout(selector: String, handler: EventHandler[focusout]): EventHandler[focusout] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[focusout]]
+  
+  inline def filter_formdata(selector: String, handler: EventHandler[formdata]): EventHandler[formdata] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[formdata]]
   
   inline def filter_fullscreenchange(selector: String, handler: EventHandler[fullscreenchange]): EventHandler[fullscreenchange] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[fullscreenchange]]
   
@@ -4652,6 +6249,8 @@ object mod {
   
   inline def filter_selectstart(selector: String, handler: EventHandler[selectstart]): EventHandler[selectstart] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[selectstart]]
   
+  inline def filter_slotchange(selector: String, handler: EventHandler[slotchange]): EventHandler[slotchange] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[slotchange]]
+  
   inline def filter_stalled(selector: String, handler: EventHandler[stalled]): EventHandler[stalled] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[stalled]]
   
   inline def filter_submit(selector: String, handler: EventHandler[submit]): EventHandler[submit] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[submit]]
@@ -4682,6 +6281,14 @@ object mod {
   
   inline def filter_waiting(selector: String, handler: EventHandler[waiting]): EventHandler[waiting] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[waiting]]
   
+  inline def filter_webkitanimationend(selector: String, handler: EventHandler[webkitanimationend]): EventHandler[webkitanimationend] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[webkitanimationend]]
+  
+  inline def filter_webkitanimationiteration(selector: String, handler: EventHandler[webkitanimationiteration]): EventHandler[webkitanimationiteration] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[webkitanimationiteration]]
+  
+  inline def filter_webkitanimationstart(selector: String, handler: EventHandler[webkitanimationstart]): EventHandler[webkitanimationstart] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[webkitanimationstart]]
+  
+  inline def filter_webkittransitionend(selector: String, handler: EventHandler[webkittransitionend]): EventHandler[webkittransitionend] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[webkittransitionend]]
+  
   inline def filter_wheel(selector: String, handler: EventHandler[wheel]): EventHandler[wheel] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(selector.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventHandler[wheel]]
   
   inline def getComputedStyle(node: HTMLElement): CSSStyleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("getComputedStyle")(node.asInstanceOf[js.Any]).asInstanceOf[CSSStyleDeclaration]
@@ -4692,6 +6299,17 @@ object mod {
   
   inline def height(node: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("height")(node.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def height(node: HTMLElement, client: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("height")(node.asInstanceOf[js.Any], client.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def insertAfter(): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")().asInstanceOf[Node | Null]
+  inline def insertAfter(node: Null, refNode: Node): Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(node.asInstanceOf[js.Any], refNode.asInstanceOf[js.Any])).asInstanceOf[Node | Null]
+  inline def insertAfter(node: Node): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(node.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
+  inline def insertAfter(node: Node, refNode: Node): Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(node.asInstanceOf[js.Any], refNode.asInstanceOf[js.Any])).asInstanceOf[Node | Null]
+  
+  inline def isInput(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInput")().asInstanceOf[Boolean]
+  inline def isInput(node: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInput")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isVisible(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")().asInstanceOf[Boolean]
+  inline def isVisible(node: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def listen_abort(node: HTMLElement, eventName: abort, handler: EventHandler[abort]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def listen_abort(node: HTMLElement, eventName: abort, handler: EventHandler[abort], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
@@ -4762,18 +6380,18 @@ object mod {
     options: AddEventListenerOptions
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
+  inline def listen_beforeinput(node: HTMLElement, eventName: beforeinput, handler: EventHandler[beforeinput]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_beforeinput(node: HTMLElement, eventName: beforeinput, handler: EventHandler[beforeinput], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_beforeinput(
+    node: HTMLElement,
+    eventName: beforeinput,
+    handler: EventHandler[beforeinput],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
   inline def listen_blur(node: HTMLElement, eventName: blur, handler: EventHandler[blur]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def listen_blur(node: HTMLElement, eventName: blur, handler: EventHandler[blur], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def listen_blur(node: HTMLElement, eventName: blur, handler: EventHandler[blur], options: AddEventListenerOptions): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  
-  inline def listen_cancel(node: HTMLElement, eventName: cancel, handler: EventHandler[cancel]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  inline def listen_cancel(node: HTMLElement, eventName: cancel, handler: EventHandler[cancel], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  inline def listen_cancel(
-    node: HTMLElement,
-    eventName: cancel,
-    handler: EventHandler[cancel],
-    options: AddEventListenerOptions
-  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   inline def listen_canplay(node: HTMLElement, eventName: canplay, handler: EventHandler[canplay]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def listen_canplay(node: HTMLElement, eventName: canplay, handler: EventHandler[canplay], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
@@ -4822,6 +6440,48 @@ object mod {
     node: HTMLElement,
     eventName: close,
     handler: EventHandler[close],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def listen_compositionend(node: HTMLElement, eventName: compositionend, handler: EventHandler[compositionend]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_compositionend(
+    node: HTMLElement,
+    eventName: compositionend,
+    handler: EventHandler[compositionend],
+    options: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_compositionend(
+    node: HTMLElement,
+    eventName: compositionend,
+    handler: EventHandler[compositionend],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def listen_compositionstart(node: HTMLElement, eventName: compositionstart, handler: EventHandler[compositionstart]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_compositionstart(
+    node: HTMLElement,
+    eventName: compositionstart,
+    handler: EventHandler[compositionstart],
+    options: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_compositionstart(
+    node: HTMLElement,
+    eventName: compositionstart,
+    handler: EventHandler[compositionstart],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def listen_compositionupdate(node: HTMLElement, eventName: compositionupdate, handler: EventHandler[compositionupdate]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_compositionupdate(
+    node: HTMLElement,
+    eventName: compositionupdate,
+    handler: EventHandler[compositionupdate],
+    options: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_compositionupdate(
+    node: HTMLElement,
+    eventName: compositionupdate,
+    handler: EventHandler[compositionupdate],
     options: AddEventListenerOptions
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
@@ -4879,15 +6539,6 @@ object mod {
     node: HTMLElement,
     eventName: dragenter,
     handler: EventHandler[dragenter],
-    options: AddEventListenerOptions
-  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  
-  inline def listen_dragexit(node: HTMLElement, eventName: dragexit, handler: EventHandler[dragexit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  inline def listen_dragexit(node: HTMLElement, eventName: dragexit, handler: EventHandler[dragexit], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  inline def listen_dragexit(
-    node: HTMLElement,
-    eventName: dragexit,
-    handler: EventHandler[dragexit],
     options: AddEventListenerOptions
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
@@ -4987,6 +6638,15 @@ object mod {
     node: HTMLElement,
     eventName: focusout,
     handler: EventHandler[focusout],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def listen_formdata(node: HTMLElement, eventName: formdata, handler: EventHandler[formdata]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_formdata(node: HTMLElement, eventName: formdata, handler: EventHandler[formdata], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_formdata(
+    node: HTMLElement,
+    eventName: formdata,
+    handler: EventHandler[formdata],
     options: AddEventListenerOptions
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
@@ -5411,6 +7071,15 @@ object mod {
     options: AddEventListenerOptions
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
+  inline def listen_slotchange(node: HTMLElement, eventName: slotchange, handler: EventHandler[slotchange]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_slotchange(node: HTMLElement, eventName: slotchange, handler: EventHandler[slotchange], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_slotchange(
+    node: HTMLElement,
+    eventName: slotchange,
+    handler: EventHandler[slotchange],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
   inline def listen_stalled(node: HTMLElement, eventName: stalled, handler: EventHandler[stalled]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def listen_stalled(node: HTMLElement, eventName: stalled, handler: EventHandler[stalled], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def listen_stalled(
@@ -5566,6 +7235,66 @@ object mod {
     options: AddEventListenerOptions
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
+  inline def listen_webkitanimationend(node: HTMLElement, eventName: webkitanimationend, handler: EventHandler[webkitanimationend]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_webkitanimationend(
+    node: HTMLElement,
+    eventName: webkitanimationend,
+    handler: EventHandler[webkitanimationend],
+    options: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_webkitanimationend(
+    node: HTMLElement,
+    eventName: webkitanimationend,
+    handler: EventHandler[webkitanimationend],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def listen_webkitanimationiteration(
+    node: HTMLElement,
+    eventName: webkitanimationiteration,
+    handler: EventHandler[webkitanimationiteration]
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_webkitanimationiteration(
+    node: HTMLElement,
+    eventName: webkitanimationiteration,
+    handler: EventHandler[webkitanimationiteration],
+    options: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_webkitanimationiteration(
+    node: HTMLElement,
+    eventName: webkitanimationiteration,
+    handler: EventHandler[webkitanimationiteration],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def listen_webkitanimationstart(node: HTMLElement, eventName: webkitanimationstart, handler: EventHandler[webkitanimationstart]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_webkitanimationstart(
+    node: HTMLElement,
+    eventName: webkitanimationstart,
+    handler: EventHandler[webkitanimationstart],
+    options: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_webkitanimationstart(
+    node: HTMLElement,
+    eventName: webkitanimationstart,
+    handler: EventHandler[webkitanimationstart],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def listen_webkittransitionend(node: HTMLElement, eventName: webkittransitionend, handler: EventHandler[webkittransitionend]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_webkittransitionend(
+    node: HTMLElement,
+    eventName: webkittransitionend,
+    handler: EventHandler[webkittransitionend],
+    options: Boolean
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def listen_webkittransitionend(
+    node: HTMLElement,
+    eventName: webkittransitionend,
+    handler: EventHandler[webkittransitionend],
+    options: AddEventListenerOptions
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
   inline def listen_wheel(node: HTMLElement, eventName: wheel, handler: EventHandler[wheel]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def listen_wheel(node: HTMLElement, eventName: wheel, handler: EventHandler[wheel], options: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def listen_wheel(
@@ -5577,6 +7306,9 @@ object mod {
   
   inline def matches(node: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  inline def nextUntil(node: Null, selector: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("nextUntil")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
+  inline def nextUntil(node: Element, selector: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("nextUntil")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
+  
   inline def offset(node: HTMLElement): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(node.asInstanceOf[js.Any]).asInstanceOf[Height]
   
   inline def offsetParent(node: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("offsetParent")(node.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
@@ -5587,11 +7319,22 @@ object mod {
   inline def ownerWindow(): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("ownerWindow")().asInstanceOf[Window]
   inline def ownerWindow(node: Element): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("ownerWindow")(node.asInstanceOf[js.Any]).asInstanceOf[Window]
   
+  inline def parents(): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("parents")().asInstanceOf[js.Array[Element]]
+  inline def parents(node: Element): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("parents")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element]]
+  
   inline def position(node: HTMLElement): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("position")(node.asInstanceOf[js.Any]).asInstanceOf[Height]
   inline def position(node: HTMLElement, offsetParent: HTMLElement): Height = (^.asInstanceOf[js.Dynamic].applyDynamic("position")(node.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any])).asInstanceOf[Height]
   
+  inline def prepend(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("prepend")().asInstanceOf[Element | Null]
+  inline def prepend(node: Null, parent: Element): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(node.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+  inline def prepend(node: Element): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(node.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def prepend(node: Element, parent: Element): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(node.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+  
   inline def querySelectorAll(element: Document, selector: String): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("querySelectorAll")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
   inline def querySelectorAll(element: HTMLElement, selector: String): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("querySelectorAll")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
+  
+  inline def remove(): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")().asInstanceOf[Node | Null]
+  inline def remove(node: Node): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(node.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
   
   inline def removeClass(element: Element, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def removeClass(element: SVGElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -5670,21 +7413,26 @@ object mod {
     options: EventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def removeEventListener_beforeinput(node: HTMLElement, eventName: beforeinput, handler: TaggedEventHandler[beforeinput]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_beforeinput(
+    node: HTMLElement,
+    eventName: beforeinput,
+    handler: TaggedEventHandler[beforeinput],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_beforeinput(
+    node: HTMLElement,
+    eventName: beforeinput,
+    handler: TaggedEventHandler[beforeinput],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def removeEventListener_blur(node: HTMLElement, eventName: blur, handler: TaggedEventHandler[blur]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def removeEventListener_blur(node: HTMLElement, eventName: blur, handler: TaggedEventHandler[blur], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def removeEventListener_blur(
     node: HTMLElement,
     eventName: blur,
     handler: TaggedEventHandler[blur],
-    options: EventListenerOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def removeEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeEventListener_cancel(node: HTMLElement, eventName: cancel, handler: TaggedEventHandler[cancel], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeEventListener_cancel(
-    node: HTMLElement,
-    eventName: cancel,
-    handler: TaggedEventHandler[cancel],
     options: EventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -5735,6 +7483,48 @@ object mod {
     node: HTMLElement,
     eventName: close,
     handler: TaggedEventHandler[close],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def removeEventListener_compositionend(node: HTMLElement, eventName: compositionend, handler: TaggedEventHandler[compositionend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_compositionend(
+    node: HTMLElement,
+    eventName: compositionend,
+    handler: TaggedEventHandler[compositionend],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_compositionend(
+    node: HTMLElement,
+    eventName: compositionend,
+    handler: TaggedEventHandler[compositionend],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def removeEventListener_compositionstart(node: HTMLElement, eventName: compositionstart, handler: TaggedEventHandler[compositionstart]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_compositionstart(
+    node: HTMLElement,
+    eventName: compositionstart,
+    handler: TaggedEventHandler[compositionstart],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_compositionstart(
+    node: HTMLElement,
+    eventName: compositionstart,
+    handler: TaggedEventHandler[compositionstart],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def removeEventListener_compositionupdate(node: HTMLElement, eventName: compositionupdate, handler: TaggedEventHandler[compositionupdate]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_compositionupdate(
+    node: HTMLElement,
+    eventName: compositionupdate,
+    handler: TaggedEventHandler[compositionupdate],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_compositionupdate(
+    node: HTMLElement,
+    eventName: compositionupdate,
+    handler: TaggedEventHandler[compositionupdate],
     options: EventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -5807,15 +7597,6 @@ object mod {
     node: HTMLElement,
     eventName: dragenter,
     handler: TaggedEventHandler[dragenter],
-    options: EventListenerOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def removeEventListener_dragexit(node: HTMLElement, eventName: dragexit, handler: TaggedEventHandler[dragexit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeEventListener_dragexit(node: HTMLElement, eventName: dragexit, handler: TaggedEventHandler[dragexit], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeEventListener_dragexit(
-    node: HTMLElement,
-    eventName: dragexit,
-    handler: TaggedEventHandler[dragexit],
     options: EventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -5923,6 +7704,23 @@ object mod {
     options: EventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def removeEventListener_formdata(node: HTMLElement, eventName: formdata, handler: TaggedEventHandler[formdata]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_formdata(node: HTMLElement, eventName: formdata, handler: TaggedEventHandler[formdata], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_formdata(
+    node: HTMLElement,
+    eventName: formdata,
+    handler: TaggedEventHandler[formdata],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * A `removeEventListener` ponyfill
+    *
+    * @param node the element
+    * @param eventName the event name
+    * @param handle the handler
+    * @param options event options
+    */
   inline def removeEventListener_fullscreenchange(node: HTMLElement, eventName: fullscreenchange, handler: TaggedEventHandler[fullscreenchange]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def removeEventListener_fullscreenchange(
     node: HTMLElement,
@@ -6409,6 +8207,20 @@ object mod {
     options: EventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def removeEventListener_slotchange(node: HTMLElement, eventName: slotchange, handler: TaggedEventHandler[slotchange]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_slotchange(
+    node: HTMLElement,
+    eventName: slotchange,
+    handler: TaggedEventHandler[slotchange],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_slotchange(
+    node: HTMLElement,
+    eventName: slotchange,
+    handler: TaggedEventHandler[slotchange],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def removeEventListener_stalled(node: HTMLElement, eventName: stalled, handler: TaggedEventHandler[stalled]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def removeEventListener_stalled(node: HTMLElement, eventName: stalled, handler: TaggedEventHandler[stalled], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def removeEventListener_stalled(
@@ -6584,6 +8396,74 @@ object mod {
     options: EventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def removeEventListener_webkitanimationend(node: HTMLElement, eventName: webkitanimationend, handler: TaggedEventHandler[webkitanimationend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_webkitanimationend(
+    node: HTMLElement,
+    eventName: webkitanimationend,
+    handler: TaggedEventHandler[webkitanimationend],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_webkitanimationend(
+    node: HTMLElement,
+    eventName: webkitanimationend,
+    handler: TaggedEventHandler[webkitanimationend],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def removeEventListener_webkitanimationiteration(
+    node: HTMLElement,
+    eventName: webkitanimationiteration,
+    handler: TaggedEventHandler[webkitanimationiteration]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_webkitanimationiteration(
+    node: HTMLElement,
+    eventName: webkitanimationiteration,
+    handler: TaggedEventHandler[webkitanimationiteration],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_webkitanimationiteration(
+    node: HTMLElement,
+    eventName: webkitanimationiteration,
+    handler: TaggedEventHandler[webkitanimationiteration],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def removeEventListener_webkitanimationstart(
+    node: HTMLElement,
+    eventName: webkitanimationstart,
+    handler: TaggedEventHandler[webkitanimationstart]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_webkitanimationstart(
+    node: HTMLElement,
+    eventName: webkitanimationstart,
+    handler: TaggedEventHandler[webkitanimationstart],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_webkitanimationstart(
+    node: HTMLElement,
+    eventName: webkitanimationstart,
+    handler: TaggedEventHandler[webkitanimationstart],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def removeEventListener_webkittransitionend(
+    node: HTMLElement,
+    eventName: webkittransitionend,
+    handler: TaggedEventHandler[webkittransitionend]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_webkittransitionend(
+    node: HTMLElement,
+    eventName: webkittransitionend,
+    handler: TaggedEventHandler[webkittransitionend],
+    options: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener_webkittransitionend(
+    node: HTMLElement,
+    eventName: webkittransitionend,
+    handler: TaggedEventHandler[webkittransitionend],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def removeEventListener_wheel(node: HTMLElement, eventName: wheel, handler: TaggedEventHandler[wheel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def removeEventListener_wheel(node: HTMLElement, eventName: wheel, handler: TaggedEventHandler[wheel], options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def removeEventListener_wheel(
@@ -6612,10 +8492,22 @@ object mod {
   inline def scrollbarSize(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollbarSize")().asInstanceOf[Double]
   inline def scrollbarSize(recalc: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollbarSize")(recalc.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def style(node: HTMLElement, property: PartialRecordPropertystri): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string | 0>[T] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string | 0>[T] */ js.Any]
+  inline def siblings(): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("siblings")().asInstanceOf[js.Array[Element]]
+  inline def siblings(node: Element): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("siblings")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element]]
   
-  inline def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string | 0>[T] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string | 0>[T] */ js.Any]
+  inline def style(node: HTMLElement, property: PartialRecordPropertystri): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def style[T /* <: HyphenProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string & {} | 0, string & {}>[T] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.PropertiesHyphen<string & {} | 0, string & {}>[T] */ js.Any]
+  
+  inline def style_T_CamelProperty[T /* <: CamelProperty */](node: HTMLElement, property: T): /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string & {} | 0, string & {}>[T] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Properties<string & {} | 0, string & {}>[T] */ js.Any]
+  
+  inline def text(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("text")().asInstanceOf[String]
+  inline def text(node: Null, trim: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any], trim.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def text(node: Null, trim: Boolean, singleSpaces: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], singleSpaces.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def text(node: Null, trim: Unit, singleSpaces: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], singleSpaces.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def text(node: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def text(node: HTMLElement, trim: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any], trim.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def text(node: HTMLElement, trim: Boolean, singleSpaces: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], singleSpaces.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def text(node: HTMLElement, trim: Unit, singleSpaces: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(node.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], singleSpaces.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def toggleClass(element: Element, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def toggleClass(element: SVGElement, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleClass")(element.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -6625,6 +8517,906 @@ object mod {
   inline def transitionEnd(element: HTMLElement, handler: Listener, duration: Double, padding: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("transitionEnd")(element.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def transitionEnd(element: HTMLElement, handler: Listener, duration: Null, padding: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("transitionEnd")(element.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   inline def transitionEnd(element: HTMLElement, handler: Listener, duration: Unit, padding: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("transitionEnd")(element.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  
+  inline def triggerEvent_abort(node: Null, eventName: abort): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_abort(node: Null, eventName: abort, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_abort(node: Null, eventName: abort, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_abort(node: Null, eventName: abort, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_abort(node: HTMLElement, eventName: abort): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_abort(node: HTMLElement, eventName: abort, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_abort(node: HTMLElement, eventName: abort, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_abort(node: HTMLElement, eventName: abort, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_animationcancel(node: Null, eventName: animationcancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationcancel(node: Null, eventName: animationcancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationcancel(node: Null, eventName: animationcancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationcancel(node: Null, eventName: animationcancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationcancel(node: HTMLElement, eventName: animationcancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationcancel(node: HTMLElement, eventName: animationcancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationcancel(node: HTMLElement, eventName: animationcancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationcancel(node: HTMLElement, eventName: animationcancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_animationend(node: Null, eventName: animationend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationend(node: Null, eventName: animationend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationend(node: Null, eventName: animationend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationend(node: Null, eventName: animationend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationend(node: HTMLElement, eventName: animationend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationend(node: HTMLElement, eventName: animationend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationend(node: HTMLElement, eventName: animationend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationend(node: HTMLElement, eventName: animationend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_animationiteration(node: Null, eventName: animationiteration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationiteration(node: Null, eventName: animationiteration, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationiteration(node: Null, eventName: animationiteration, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationiteration(node: Null, eventName: animationiteration, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationiteration(node: HTMLElement, eventName: animationiteration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationiteration(node: HTMLElement, eventName: animationiteration, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationiteration(node: HTMLElement, eventName: animationiteration, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationiteration(node: HTMLElement, eventName: animationiteration, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_animationstart(node: Null, eventName: animationstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationstart(node: Null, eventName: animationstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationstart(node: Null, eventName: animationstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationstart(node: Null, eventName: animationstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationstart(node: HTMLElement, eventName: animationstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationstart(node: HTMLElement, eventName: animationstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationstart(node: HTMLElement, eventName: animationstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_animationstart(node: HTMLElement, eventName: animationstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_auxclick(node: Null, eventName: auxclick): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_auxclick(node: Null, eventName: auxclick, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_auxclick(node: Null, eventName: auxclick, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_auxclick(node: Null, eventName: auxclick, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_auxclick(node: HTMLElement, eventName: auxclick): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_auxclick(node: HTMLElement, eventName: auxclick, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_auxclick(node: HTMLElement, eventName: auxclick, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_auxclick(node: HTMLElement, eventName: auxclick, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_beforeinput(node: Null, eventName: beforeinput): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_beforeinput(node: Null, eventName: beforeinput, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_beforeinput(node: Null, eventName: beforeinput, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_beforeinput(node: Null, eventName: beforeinput, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_beforeinput(node: HTMLElement, eventName: beforeinput): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_beforeinput(node: HTMLElement, eventName: beforeinput, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_beforeinput(node: HTMLElement, eventName: beforeinput, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_beforeinput(node: HTMLElement, eventName: beforeinput, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_blur(node: Null, eventName: blur): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_blur(node: Null, eventName: blur, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_blur(node: Null, eventName: blur, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_blur(node: Null, eventName: blur, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_blur(node: HTMLElement, eventName: blur): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_blur(node: HTMLElement, eventName: blur, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_blur(node: HTMLElement, eventName: blur, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_blur(node: HTMLElement, eventName: blur, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_canplay(node: Null, eventName: canplay): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_canplay(node: Null, eventName: canplay, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_canplay(node: Null, eventName: canplay, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_canplay(node: Null, eventName: canplay, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_canplay(node: HTMLElement, eventName: canplay): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_canplay(node: HTMLElement, eventName: canplay, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_canplay(node: HTMLElement, eventName: canplay, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_canplay(node: HTMLElement, eventName: canplay, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_canplaythrough(node: Null, eventName: canplaythrough): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_canplaythrough(node: Null, eventName: canplaythrough, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_canplaythrough(node: Null, eventName: canplaythrough, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_canplaythrough(node: Null, eventName: canplaythrough, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_canplaythrough(node: HTMLElement, eventName: canplaythrough): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_canplaythrough(node: HTMLElement, eventName: canplaythrough, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_canplaythrough(node: HTMLElement, eventName: canplaythrough, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_canplaythrough(node: HTMLElement, eventName: canplaythrough, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_change(node: Null, eventName: change): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_change(node: Null, eventName: change, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_change(node: Null, eventName: change, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_change(node: Null, eventName: change, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_change(node: HTMLElement, eventName: change): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_change(node: HTMLElement, eventName: change, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_change(node: HTMLElement, eventName: change, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_change(node: HTMLElement, eventName: change, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_click(node: Null, eventName: click): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_click(node: Null, eventName: click, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_click(node: Null, eventName: click, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_click(node: Null, eventName: click, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_click(node: HTMLElement, eventName: click): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_click(node: HTMLElement, eventName: click, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_click(node: HTMLElement, eventName: click, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_click(node: HTMLElement, eventName: click, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_close(node: Null, eventName: close): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_close(node: Null, eventName: close, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_close(node: Null, eventName: close, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_close(node: Null, eventName: close, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_close(node: HTMLElement, eventName: close): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_close(node: HTMLElement, eventName: close, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_close(node: HTMLElement, eventName: close, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_close(node: HTMLElement, eventName: close, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_compositionend(node: Null, eventName: compositionend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionend(node: Null, eventName: compositionend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionend(node: Null, eventName: compositionend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionend(node: Null, eventName: compositionend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionend(node: HTMLElement, eventName: compositionend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionend(node: HTMLElement, eventName: compositionend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionend(node: HTMLElement, eventName: compositionend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionend(node: HTMLElement, eventName: compositionend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_compositionstart(node: Null, eventName: compositionstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionstart(node: Null, eventName: compositionstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionstart(node: Null, eventName: compositionstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionstart(node: Null, eventName: compositionstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionstart(node: HTMLElement, eventName: compositionstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionstart(node: HTMLElement, eventName: compositionstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionstart(node: HTMLElement, eventName: compositionstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionstart(node: HTMLElement, eventName: compositionstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_compositionupdate(node: Null, eventName: compositionupdate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionupdate(node: Null, eventName: compositionupdate, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionupdate(node: Null, eventName: compositionupdate, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionupdate(node: Null, eventName: compositionupdate, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionupdate(node: HTMLElement, eventName: compositionupdate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionupdate(node: HTMLElement, eventName: compositionupdate, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionupdate(node: HTMLElement, eventName: compositionupdate, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_compositionupdate(node: HTMLElement, eventName: compositionupdate, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_contextmenu(node: Null, eventName: contextmenu): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_contextmenu(node: Null, eventName: contextmenu, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_contextmenu(node: Null, eventName: contextmenu, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_contextmenu(node: Null, eventName: contextmenu, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_contextmenu(node: HTMLElement, eventName: contextmenu): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_contextmenu(node: HTMLElement, eventName: contextmenu, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_contextmenu(node: HTMLElement, eventName: contextmenu, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_contextmenu(node: HTMLElement, eventName: contextmenu, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_copy(node: Null, eventName: copy): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_copy(node: Null, eventName: copy, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_copy(node: Null, eventName: copy, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_copy(node: Null, eventName: copy, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_copy(node: HTMLElement, eventName: copy): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_copy(node: HTMLElement, eventName: copy, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_copy(node: HTMLElement, eventName: copy, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_copy(node: HTMLElement, eventName: copy, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_cuechange(node: Null, eventName: cuechange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cuechange(node: Null, eventName: cuechange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cuechange(node: Null, eventName: cuechange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cuechange(node: Null, eventName: cuechange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cuechange(node: HTMLElement, eventName: cuechange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cuechange(node: HTMLElement, eventName: cuechange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cuechange(node: HTMLElement, eventName: cuechange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cuechange(node: HTMLElement, eventName: cuechange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_cut(node: Null, eventName: cut): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cut(node: Null, eventName: cut, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cut(node: Null, eventName: cut, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cut(node: Null, eventName: cut, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cut(node: HTMLElement, eventName: cut): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cut(node: HTMLElement, eventName: cut, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cut(node: HTMLElement, eventName: cut, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_cut(node: HTMLElement, eventName: cut, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_dblclick(node: Null, eventName: dblclick): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dblclick(node: Null, eventName: dblclick, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dblclick(node: Null, eventName: dblclick, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dblclick(node: Null, eventName: dblclick, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dblclick(node: HTMLElement, eventName: dblclick): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dblclick(node: HTMLElement, eventName: dblclick, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dblclick(node: HTMLElement, eventName: dblclick, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dblclick(node: HTMLElement, eventName: dblclick, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_drag(node: Null, eventName: drag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_drag(node: Null, eventName: drag, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_drag(node: Null, eventName: drag, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_drag(node: Null, eventName: drag, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_drag(node: HTMLElement, eventName: drag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_drag(node: HTMLElement, eventName: drag, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_drag(node: HTMLElement, eventName: drag, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_drag(node: HTMLElement, eventName: drag, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_dragend(node: Null, eventName: dragend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragend(node: Null, eventName: dragend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragend(node: Null, eventName: dragend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragend(node: Null, eventName: dragend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragend(node: HTMLElement, eventName: dragend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragend(node: HTMLElement, eventName: dragend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragend(node: HTMLElement, eventName: dragend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragend(node: HTMLElement, eventName: dragend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_dragenter(node: Null, eventName: dragenter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragenter(node: Null, eventName: dragenter, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragenter(node: Null, eventName: dragenter, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragenter(node: Null, eventName: dragenter, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragenter(node: HTMLElement, eventName: dragenter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragenter(node: HTMLElement, eventName: dragenter, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragenter(node: HTMLElement, eventName: dragenter, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragenter(node: HTMLElement, eventName: dragenter, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_dragleave(node: Null, eventName: dragleave): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragleave(node: Null, eventName: dragleave, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragleave(node: Null, eventName: dragleave, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragleave(node: Null, eventName: dragleave, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragleave(node: HTMLElement, eventName: dragleave): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragleave(node: HTMLElement, eventName: dragleave, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragleave(node: HTMLElement, eventName: dragleave, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragleave(node: HTMLElement, eventName: dragleave, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_dragover(node: Null, eventName: dragover): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragover(node: Null, eventName: dragover, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragover(node: Null, eventName: dragover, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragover(node: Null, eventName: dragover, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragover(node: HTMLElement, eventName: dragover): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragover(node: HTMLElement, eventName: dragover, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragover(node: HTMLElement, eventName: dragover, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragover(node: HTMLElement, eventName: dragover, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_dragstart(node: Null, eventName: dragstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragstart(node: Null, eventName: dragstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragstart(node: Null, eventName: dragstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragstart(node: Null, eventName: dragstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragstart(node: HTMLElement, eventName: dragstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragstart(node: HTMLElement, eventName: dragstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragstart(node: HTMLElement, eventName: dragstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_dragstart(node: HTMLElement, eventName: dragstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_drop(node: Null, eventName: drop): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_drop(node: Null, eventName: drop, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_drop(node: Null, eventName: drop, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_drop(node: Null, eventName: drop, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_drop(node: HTMLElement, eventName: drop): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_drop(node: HTMLElement, eventName: drop, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_drop(node: HTMLElement, eventName: drop, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_drop(node: HTMLElement, eventName: drop, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_durationchange(node: Null, eventName: durationchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_durationchange(node: Null, eventName: durationchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_durationchange(node: Null, eventName: durationchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_durationchange(node: Null, eventName: durationchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_durationchange(node: HTMLElement, eventName: durationchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_durationchange(node: HTMLElement, eventName: durationchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_durationchange(node: HTMLElement, eventName: durationchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_durationchange(node: HTMLElement, eventName: durationchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_emptied(node: Null, eventName: emptied): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_emptied(node: Null, eventName: emptied, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_emptied(node: Null, eventName: emptied, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_emptied(node: Null, eventName: emptied, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_emptied(node: HTMLElement, eventName: emptied): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_emptied(node: HTMLElement, eventName: emptied, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_emptied(node: HTMLElement, eventName: emptied, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_emptied(node: HTMLElement, eventName: emptied, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_ended(node: Null, eventName: ended): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_ended(node: Null, eventName: ended, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_ended(node: Null, eventName: ended, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_ended(node: Null, eventName: ended, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_ended(node: HTMLElement, eventName: ended): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_ended(node: HTMLElement, eventName: ended, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_ended(node: HTMLElement, eventName: ended, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_ended(node: HTMLElement, eventName: ended, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_error(node: Null, eventName: error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_error(node: Null, eventName: error, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_error(node: Null, eventName: error, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_error(node: Null, eventName: error, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_error(node: HTMLElement, eventName: error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_error(node: HTMLElement, eventName: error, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_error(node: HTMLElement, eventName: error, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_error(node: HTMLElement, eventName: error, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_focus(node: Null, eventName: focus): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focus(node: Null, eventName: focus, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focus(node: Null, eventName: focus, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focus(node: Null, eventName: focus, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focus(node: HTMLElement, eventName: focus): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focus(node: HTMLElement, eventName: focus, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focus(node: HTMLElement, eventName: focus, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focus(node: HTMLElement, eventName: focus, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_focusin(node: Null, eventName: focusin): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focusin(node: Null, eventName: focusin, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focusin(node: Null, eventName: focusin, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focusin(node: Null, eventName: focusin, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focusin(node: HTMLElement, eventName: focusin): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focusin(node: HTMLElement, eventName: focusin, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focusin(node: HTMLElement, eventName: focusin, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focusin(node: HTMLElement, eventName: focusin, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_focusout(node: Null, eventName: focusout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focusout(node: Null, eventName: focusout, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focusout(node: Null, eventName: focusout, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focusout(node: Null, eventName: focusout, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focusout(node: HTMLElement, eventName: focusout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focusout(node: HTMLElement, eventName: focusout, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focusout(node: HTMLElement, eventName: focusout, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_focusout(node: HTMLElement, eventName: focusout, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_formdata(node: Null, eventName: formdata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_formdata(node: Null, eventName: formdata, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_formdata(node: Null, eventName: formdata, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_formdata(node: Null, eventName: formdata, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_formdata(node: HTMLElement, eventName: formdata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_formdata(node: HTMLElement, eventName: formdata, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_formdata(node: HTMLElement, eventName: formdata, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_formdata(node: HTMLElement, eventName: formdata, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_fullscreenchange(node: Null, eventName: fullscreenchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_fullscreenchange(node: Null, eventName: fullscreenchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_fullscreenchange(node: Null, eventName: fullscreenchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_fullscreenchange(node: Null, eventName: fullscreenchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_fullscreenchange(node: HTMLElement, eventName: fullscreenchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_fullscreenchange(node: HTMLElement, eventName: fullscreenchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_fullscreenchange(node: HTMLElement, eventName: fullscreenchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_fullscreenchange(node: HTMLElement, eventName: fullscreenchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_fullscreenerror(node: Null, eventName: fullscreenerror): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_fullscreenerror(node: Null, eventName: fullscreenerror, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_fullscreenerror(node: Null, eventName: fullscreenerror, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_fullscreenerror(node: Null, eventName: fullscreenerror, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_fullscreenerror(node: HTMLElement, eventName: fullscreenerror): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_fullscreenerror(node: HTMLElement, eventName: fullscreenerror, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_fullscreenerror(node: HTMLElement, eventName: fullscreenerror, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_fullscreenerror(node: HTMLElement, eventName: fullscreenerror, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_gotpointercapture(node: Null, eventName: gotpointercapture): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_gotpointercapture(node: Null, eventName: gotpointercapture, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_gotpointercapture(node: Null, eventName: gotpointercapture, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_gotpointercapture(node: Null, eventName: gotpointercapture, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_gotpointercapture(node: HTMLElement, eventName: gotpointercapture): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_gotpointercapture(node: HTMLElement, eventName: gotpointercapture, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_gotpointercapture(node: HTMLElement, eventName: gotpointercapture, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_gotpointercapture(node: HTMLElement, eventName: gotpointercapture, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_input(node: Null, eventName: input): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_input(node: Null, eventName: input, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_input(node: Null, eventName: input, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_input(node: Null, eventName: input, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_input(node: HTMLElement, eventName: input): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_input(node: HTMLElement, eventName: input, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_input(node: HTMLElement, eventName: input, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_input(node: HTMLElement, eventName: input, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_invalid(node: Null, eventName: invalid): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_invalid(node: Null, eventName: invalid, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_invalid(node: Null, eventName: invalid, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_invalid(node: Null, eventName: invalid, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_invalid(node: HTMLElement, eventName: invalid): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_invalid(node: HTMLElement, eventName: invalid, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_invalid(node: HTMLElement, eventName: invalid, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_invalid(node: HTMLElement, eventName: invalid, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_keydown(node: Null, eventName: keydown): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keydown(node: Null, eventName: keydown, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keydown(node: Null, eventName: keydown, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keydown(node: Null, eventName: keydown, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keydown(node: HTMLElement, eventName: keydown): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keydown(node: HTMLElement, eventName: keydown, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keydown(node: HTMLElement, eventName: keydown, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keydown(node: HTMLElement, eventName: keydown, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_keypress(node: Null, eventName: keypress): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keypress(node: Null, eventName: keypress, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keypress(node: Null, eventName: keypress, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keypress(node: Null, eventName: keypress, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keypress(node: HTMLElement, eventName: keypress): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keypress(node: HTMLElement, eventName: keypress, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keypress(node: HTMLElement, eventName: keypress, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keypress(node: HTMLElement, eventName: keypress, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_keyup(node: Null, eventName: keyup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keyup(node: Null, eventName: keyup, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keyup(node: Null, eventName: keyup, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keyup(node: Null, eventName: keyup, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keyup(node: HTMLElement, eventName: keyup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keyup(node: HTMLElement, eventName: keyup, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keyup(node: HTMLElement, eventName: keyup, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_keyup(node: HTMLElement, eventName: keyup, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_load(node: Null, eventName: load): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_load(node: Null, eventName: load, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_load(node: Null, eventName: load, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_load(node: Null, eventName: load, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_load(node: HTMLElement, eventName: load): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_load(node: HTMLElement, eventName: load, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_load(node: HTMLElement, eventName: load, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_load(node: HTMLElement, eventName: load, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_loadeddata(node: Null, eventName: loadeddata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadeddata(node: Null, eventName: loadeddata, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadeddata(node: Null, eventName: loadeddata, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadeddata(node: Null, eventName: loadeddata, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadeddata(node: HTMLElement, eventName: loadeddata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadeddata(node: HTMLElement, eventName: loadeddata, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadeddata(node: HTMLElement, eventName: loadeddata, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadeddata(node: HTMLElement, eventName: loadeddata, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_loadedmetadata(node: Null, eventName: loadedmetadata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadedmetadata(node: Null, eventName: loadedmetadata, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadedmetadata(node: Null, eventName: loadedmetadata, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadedmetadata(node: Null, eventName: loadedmetadata, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadedmetadata(node: HTMLElement, eventName: loadedmetadata): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadedmetadata(node: HTMLElement, eventName: loadedmetadata, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadedmetadata(node: HTMLElement, eventName: loadedmetadata, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadedmetadata(node: HTMLElement, eventName: loadedmetadata, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_loadstart(node: Null, eventName: loadstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadstart(node: Null, eventName: loadstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadstart(node: Null, eventName: loadstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadstart(node: Null, eventName: loadstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadstart(node: HTMLElement, eventName: loadstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadstart(node: HTMLElement, eventName: loadstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadstart(node: HTMLElement, eventName: loadstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_loadstart(node: HTMLElement, eventName: loadstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_lostpointercapture(node: Null, eventName: lostpointercapture): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_lostpointercapture(node: Null, eventName: lostpointercapture, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_lostpointercapture(node: Null, eventName: lostpointercapture, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_lostpointercapture(node: Null, eventName: lostpointercapture, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_lostpointercapture(node: HTMLElement, eventName: lostpointercapture): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_lostpointercapture(node: HTMLElement, eventName: lostpointercapture, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_lostpointercapture(node: HTMLElement, eventName: lostpointercapture, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_lostpointercapture(node: HTMLElement, eventName: lostpointercapture, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_mousedown(node: Null, eventName: mousedown): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mousedown(node: Null, eventName: mousedown, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mousedown(node: Null, eventName: mousedown, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mousedown(node: Null, eventName: mousedown, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mousedown(node: HTMLElement, eventName: mousedown): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mousedown(node: HTMLElement, eventName: mousedown, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mousedown(node: HTMLElement, eventName: mousedown, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mousedown(node: HTMLElement, eventName: mousedown, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_mouseenter(node: Null, eventName: mouseenter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseenter(node: Null, eventName: mouseenter, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseenter(node: Null, eventName: mouseenter, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseenter(node: Null, eventName: mouseenter, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseenter(node: HTMLElement, eventName: mouseenter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseenter(node: HTMLElement, eventName: mouseenter, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseenter(node: HTMLElement, eventName: mouseenter, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseenter(node: HTMLElement, eventName: mouseenter, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_mouseleave(node: Null, eventName: mouseleave): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseleave(node: Null, eventName: mouseleave, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseleave(node: Null, eventName: mouseleave, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseleave(node: Null, eventName: mouseleave, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseleave(node: HTMLElement, eventName: mouseleave): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseleave(node: HTMLElement, eventName: mouseleave, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseleave(node: HTMLElement, eventName: mouseleave, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseleave(node: HTMLElement, eventName: mouseleave, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_mousemove(node: Null, eventName: mousemove): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mousemove(node: Null, eventName: mousemove, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mousemove(node: Null, eventName: mousemove, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mousemove(node: Null, eventName: mousemove, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mousemove(node: HTMLElement, eventName: mousemove): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mousemove(node: HTMLElement, eventName: mousemove, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mousemove(node: HTMLElement, eventName: mousemove, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mousemove(node: HTMLElement, eventName: mousemove, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_mouseout(node: Null, eventName: mouseout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseout(node: Null, eventName: mouseout, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseout(node: Null, eventName: mouseout, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseout(node: Null, eventName: mouseout, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseout(node: HTMLElement, eventName: mouseout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseout(node: HTMLElement, eventName: mouseout, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseout(node: HTMLElement, eventName: mouseout, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseout(node: HTMLElement, eventName: mouseout, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_mouseover(node: Null, eventName: mouseover): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseover(node: Null, eventName: mouseover, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseover(node: Null, eventName: mouseover, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseover(node: Null, eventName: mouseover, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseover(node: HTMLElement, eventName: mouseover): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseover(node: HTMLElement, eventName: mouseover, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseover(node: HTMLElement, eventName: mouseover, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseover(node: HTMLElement, eventName: mouseover, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_mouseup(node: Null, eventName: mouseup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseup(node: Null, eventName: mouseup, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseup(node: Null, eventName: mouseup, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseup(node: Null, eventName: mouseup, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseup(node: HTMLElement, eventName: mouseup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseup(node: HTMLElement, eventName: mouseup, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseup(node: HTMLElement, eventName: mouseup, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_mouseup(node: HTMLElement, eventName: mouseup, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_paste(node: Null, eventName: paste): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_paste(node: Null, eventName: paste, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_paste(node: Null, eventName: paste, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_paste(node: Null, eventName: paste, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_paste(node: HTMLElement, eventName: paste): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_paste(node: HTMLElement, eventName: paste, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_paste(node: HTMLElement, eventName: paste, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_paste(node: HTMLElement, eventName: paste, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_pause(node: Null, eventName: pause): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pause(node: Null, eventName: pause, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pause(node: Null, eventName: pause, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pause(node: Null, eventName: pause, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pause(node: HTMLElement, eventName: pause): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pause(node: HTMLElement, eventName: pause, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pause(node: HTMLElement, eventName: pause, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pause(node: HTMLElement, eventName: pause, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_play(node: Null, eventName: play): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_play(node: Null, eventName: play, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_play(node: Null, eventName: play, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_play(node: Null, eventName: play, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_play(node: HTMLElement, eventName: play): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_play(node: HTMLElement, eventName: play, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_play(node: HTMLElement, eventName: play, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_play(node: HTMLElement, eventName: play, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_playing(node: Null, eventName: playing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_playing(node: Null, eventName: playing, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_playing(node: Null, eventName: playing, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_playing(node: Null, eventName: playing, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_playing(node: HTMLElement, eventName: playing): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_playing(node: HTMLElement, eventName: playing, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_playing(node: HTMLElement, eventName: playing, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_playing(node: HTMLElement, eventName: playing, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_pointercancel(node: Null, eventName: pointercancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointercancel(node: Null, eventName: pointercancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointercancel(node: Null, eventName: pointercancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointercancel(node: Null, eventName: pointercancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointercancel(node: HTMLElement, eventName: pointercancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointercancel(node: HTMLElement, eventName: pointercancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointercancel(node: HTMLElement, eventName: pointercancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointercancel(node: HTMLElement, eventName: pointercancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_pointerdown(node: Null, eventName: pointerdown): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerdown(node: Null, eventName: pointerdown, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerdown(node: Null, eventName: pointerdown, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerdown(node: Null, eventName: pointerdown, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerdown(node: HTMLElement, eventName: pointerdown): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerdown(node: HTMLElement, eventName: pointerdown, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerdown(node: HTMLElement, eventName: pointerdown, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerdown(node: HTMLElement, eventName: pointerdown, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_pointerenter(node: Null, eventName: pointerenter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerenter(node: Null, eventName: pointerenter, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerenter(node: Null, eventName: pointerenter, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerenter(node: Null, eventName: pointerenter, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerenter(node: HTMLElement, eventName: pointerenter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerenter(node: HTMLElement, eventName: pointerenter, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerenter(node: HTMLElement, eventName: pointerenter, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerenter(node: HTMLElement, eventName: pointerenter, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_pointerleave(node: Null, eventName: pointerleave): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerleave(node: Null, eventName: pointerleave, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerleave(node: Null, eventName: pointerleave, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerleave(node: Null, eventName: pointerleave, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerleave(node: HTMLElement, eventName: pointerleave): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerleave(node: HTMLElement, eventName: pointerleave, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerleave(node: HTMLElement, eventName: pointerleave, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerleave(node: HTMLElement, eventName: pointerleave, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_pointermove(node: Null, eventName: pointermove): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointermove(node: Null, eventName: pointermove, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointermove(node: Null, eventName: pointermove, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointermove(node: Null, eventName: pointermove, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointermove(node: HTMLElement, eventName: pointermove): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointermove(node: HTMLElement, eventName: pointermove, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointermove(node: HTMLElement, eventName: pointermove, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointermove(node: HTMLElement, eventName: pointermove, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_pointerout(node: Null, eventName: pointerout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerout(node: Null, eventName: pointerout, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerout(node: Null, eventName: pointerout, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerout(node: Null, eventName: pointerout, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerout(node: HTMLElement, eventName: pointerout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerout(node: HTMLElement, eventName: pointerout, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerout(node: HTMLElement, eventName: pointerout, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerout(node: HTMLElement, eventName: pointerout, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_pointerover(node: Null, eventName: pointerover): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerover(node: Null, eventName: pointerover, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerover(node: Null, eventName: pointerover, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerover(node: Null, eventName: pointerover, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerover(node: HTMLElement, eventName: pointerover): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerover(node: HTMLElement, eventName: pointerover, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerover(node: HTMLElement, eventName: pointerover, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerover(node: HTMLElement, eventName: pointerover, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_pointerup(node: Null, eventName: pointerup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerup(node: Null, eventName: pointerup, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerup(node: Null, eventName: pointerup, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerup(node: Null, eventName: pointerup, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerup(node: HTMLElement, eventName: pointerup): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerup(node: HTMLElement, eventName: pointerup, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerup(node: HTMLElement, eventName: pointerup, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_pointerup(node: HTMLElement, eventName: pointerup, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_progress(node: Null, eventName: progress): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_progress(node: Null, eventName: progress, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_progress(node: Null, eventName: progress, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_progress(node: Null, eventName: progress, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_progress(node: HTMLElement, eventName: progress): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_progress(node: HTMLElement, eventName: progress, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_progress(node: HTMLElement, eventName: progress, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_progress(node: HTMLElement, eventName: progress, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_ratechange(node: Null, eventName: ratechange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_ratechange(node: Null, eventName: ratechange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_ratechange(node: Null, eventName: ratechange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_ratechange(node: Null, eventName: ratechange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_ratechange(node: HTMLElement, eventName: ratechange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_ratechange(node: HTMLElement, eventName: ratechange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_ratechange(node: HTMLElement, eventName: ratechange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_ratechange(node: HTMLElement, eventName: ratechange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_reset(node: Null, eventName: reset): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_reset(node: Null, eventName: reset, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_reset(node: Null, eventName: reset, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_reset(node: Null, eventName: reset, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_reset(node: HTMLElement, eventName: reset): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_reset(node: HTMLElement, eventName: reset, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_reset(node: HTMLElement, eventName: reset, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_reset(node: HTMLElement, eventName: reset, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_resize(node: Null, eventName: resize): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_resize(node: Null, eventName: resize, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_resize(node: Null, eventName: resize, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_resize(node: Null, eventName: resize, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_resize(node: HTMLElement, eventName: resize): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_resize(node: HTMLElement, eventName: resize, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_resize(node: HTMLElement, eventName: resize, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_resize(node: HTMLElement, eventName: resize, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_scroll(node: Null, eventName: scroll): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_scroll(node: Null, eventName: scroll, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_scroll(node: Null, eventName: scroll, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_scroll(node: Null, eventName: scroll, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_scroll(node: HTMLElement, eventName: scroll): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_scroll(node: HTMLElement, eventName: scroll, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_scroll(node: HTMLElement, eventName: scroll, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_scroll(node: HTMLElement, eventName: scroll, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_securitypolicyviolation(node: Null, eventName: securitypolicyviolation): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_securitypolicyviolation(node: Null, eventName: securitypolicyviolation, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_securitypolicyviolation(node: Null, eventName: securitypolicyviolation, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_securitypolicyviolation(node: Null, eventName: securitypolicyviolation, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_securitypolicyviolation(node: HTMLElement, eventName: securitypolicyviolation): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_securitypolicyviolation(node: HTMLElement, eventName: securitypolicyviolation, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_securitypolicyviolation(node: HTMLElement, eventName: securitypolicyviolation, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_securitypolicyviolation(node: HTMLElement, eventName: securitypolicyviolation, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_seeked(node: Null, eventName: seeked): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_seeked(node: Null, eventName: seeked, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_seeked(node: Null, eventName: seeked, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_seeked(node: Null, eventName: seeked, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_seeked(node: HTMLElement, eventName: seeked): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_seeked(node: HTMLElement, eventName: seeked, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_seeked(node: HTMLElement, eventName: seeked, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_seeked(node: HTMLElement, eventName: seeked, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_seeking(node: Null, eventName: seeking): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_seeking(node: Null, eventName: seeking, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_seeking(node: Null, eventName: seeking, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_seeking(node: Null, eventName: seeking, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_seeking(node: HTMLElement, eventName: seeking): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_seeking(node: HTMLElement, eventName: seeking, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_seeking(node: HTMLElement, eventName: seeking, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_seeking(node: HTMLElement, eventName: seeking, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_select(node: Null, eventName: select): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_select(node: Null, eventName: select, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_select(node: Null, eventName: select, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_select(node: Null, eventName: select, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_select(node: HTMLElement, eventName: select): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_select(node: HTMLElement, eventName: select, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_select(node: HTMLElement, eventName: select, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_select(node: HTMLElement, eventName: select, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_selectionchange(node: Null, eventName: selectionchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_selectionchange(node: Null, eventName: selectionchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_selectionchange(node: Null, eventName: selectionchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_selectionchange(node: Null, eventName: selectionchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_selectionchange(node: HTMLElement, eventName: selectionchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_selectionchange(node: HTMLElement, eventName: selectionchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_selectionchange(node: HTMLElement, eventName: selectionchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_selectionchange(node: HTMLElement, eventName: selectionchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_selectstart(node: Null, eventName: selectstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_selectstart(node: Null, eventName: selectstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_selectstart(node: Null, eventName: selectstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_selectstart(node: Null, eventName: selectstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_selectstart(node: HTMLElement, eventName: selectstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_selectstart(node: HTMLElement, eventName: selectstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_selectstart(node: HTMLElement, eventName: selectstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_selectstart(node: HTMLElement, eventName: selectstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_slotchange(node: Null, eventName: slotchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_slotchange(node: Null, eventName: slotchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_slotchange(node: Null, eventName: slotchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_slotchange(node: Null, eventName: slotchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_slotchange(node: HTMLElement, eventName: slotchange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_slotchange(node: HTMLElement, eventName: slotchange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_slotchange(node: HTMLElement, eventName: slotchange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_slotchange(node: HTMLElement, eventName: slotchange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_stalled(node: Null, eventName: stalled): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_stalled(node: Null, eventName: stalled, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_stalled(node: Null, eventName: stalled, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_stalled(node: Null, eventName: stalled, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_stalled(node: HTMLElement, eventName: stalled): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_stalled(node: HTMLElement, eventName: stalled, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_stalled(node: HTMLElement, eventName: stalled, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_stalled(node: HTMLElement, eventName: stalled, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_submit(node: Null, eventName: submit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_submit(node: Null, eventName: submit, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_submit(node: Null, eventName: submit, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_submit(node: Null, eventName: submit, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_submit(node: HTMLElement, eventName: submit): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_submit(node: HTMLElement, eventName: submit, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_submit(node: HTMLElement, eventName: submit, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_submit(node: HTMLElement, eventName: submit, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_suspend(node: Null, eventName: suspend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_suspend(node: Null, eventName: suspend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_suspend(node: Null, eventName: suspend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_suspend(node: Null, eventName: suspend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_suspend(node: HTMLElement, eventName: suspend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_suspend(node: HTMLElement, eventName: suspend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_suspend(node: HTMLElement, eventName: suspend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_suspend(node: HTMLElement, eventName: suspend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_timeupdate(node: Null, eventName: timeupdate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_timeupdate(node: Null, eventName: timeupdate, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_timeupdate(node: Null, eventName: timeupdate, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_timeupdate(node: Null, eventName: timeupdate, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_timeupdate(node: HTMLElement, eventName: timeupdate): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_timeupdate(node: HTMLElement, eventName: timeupdate, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_timeupdate(node: HTMLElement, eventName: timeupdate, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_timeupdate(node: HTMLElement, eventName: timeupdate, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_toggle(node: Null, eventName: toggle): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_toggle(node: Null, eventName: toggle, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_toggle(node: Null, eventName: toggle, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_toggle(node: Null, eventName: toggle, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_toggle(node: HTMLElement, eventName: toggle): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_toggle(node: HTMLElement, eventName: toggle, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_toggle(node: HTMLElement, eventName: toggle, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_toggle(node: HTMLElement, eventName: toggle, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_touchcancel(node: Null, eventName: touchcancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchcancel(node: Null, eventName: touchcancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchcancel(node: Null, eventName: touchcancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchcancel(node: Null, eventName: touchcancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchcancel(node: HTMLElement, eventName: touchcancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchcancel(node: HTMLElement, eventName: touchcancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchcancel(node: HTMLElement, eventName: touchcancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchcancel(node: HTMLElement, eventName: touchcancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_touchend(node: Null, eventName: touchend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchend(node: Null, eventName: touchend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchend(node: Null, eventName: touchend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchend(node: Null, eventName: touchend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchend(node: HTMLElement, eventName: touchend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchend(node: HTMLElement, eventName: touchend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchend(node: HTMLElement, eventName: touchend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchend(node: HTMLElement, eventName: touchend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_touchmove(node: Null, eventName: touchmove): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchmove(node: Null, eventName: touchmove, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchmove(node: Null, eventName: touchmove, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchmove(node: Null, eventName: touchmove, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchmove(node: HTMLElement, eventName: touchmove): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchmove(node: HTMLElement, eventName: touchmove, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchmove(node: HTMLElement, eventName: touchmove, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchmove(node: HTMLElement, eventName: touchmove, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_touchstart(node: Null, eventName: touchstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchstart(node: Null, eventName: touchstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchstart(node: Null, eventName: touchstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchstart(node: Null, eventName: touchstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchstart(node: HTMLElement, eventName: touchstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchstart(node: HTMLElement, eventName: touchstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchstart(node: HTMLElement, eventName: touchstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_touchstart(node: HTMLElement, eventName: touchstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_transitioncancel(node: Null, eventName: transitioncancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitioncancel(node: Null, eventName: transitioncancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitioncancel(node: Null, eventName: transitioncancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitioncancel(node: Null, eventName: transitioncancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitioncancel(node: HTMLElement, eventName: transitioncancel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitioncancel(node: HTMLElement, eventName: transitioncancel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitioncancel(node: HTMLElement, eventName: transitioncancel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitioncancel(node: HTMLElement, eventName: transitioncancel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_transitionend(node: Null, eventName: transitionend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionend(node: Null, eventName: transitionend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionend(node: Null, eventName: transitionend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionend(node: Null, eventName: transitionend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionend(node: HTMLElement, eventName: transitionend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionend(node: HTMLElement, eventName: transitionend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionend(node: HTMLElement, eventName: transitionend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionend(node: HTMLElement, eventName: transitionend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_transitionrun(node: Null, eventName: transitionrun): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionrun(node: Null, eventName: transitionrun, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionrun(node: Null, eventName: transitionrun, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionrun(node: Null, eventName: transitionrun, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionrun(node: HTMLElement, eventName: transitionrun): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionrun(node: HTMLElement, eventName: transitionrun, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionrun(node: HTMLElement, eventName: transitionrun, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionrun(node: HTMLElement, eventName: transitionrun, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_transitionstart(node: Null, eventName: transitionstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionstart(node: Null, eventName: transitionstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionstart(node: Null, eventName: transitionstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionstart(node: Null, eventName: transitionstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionstart(node: HTMLElement, eventName: transitionstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionstart(node: HTMLElement, eventName: transitionstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionstart(node: HTMLElement, eventName: transitionstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_transitionstart(node: HTMLElement, eventName: transitionstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_volumechange(node: Null, eventName: volumechange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_volumechange(node: Null, eventName: volumechange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_volumechange(node: Null, eventName: volumechange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_volumechange(node: Null, eventName: volumechange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_volumechange(node: HTMLElement, eventName: volumechange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_volumechange(node: HTMLElement, eventName: volumechange, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_volumechange(node: HTMLElement, eventName: volumechange, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_volumechange(node: HTMLElement, eventName: volumechange, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_waiting(node: Null, eventName: waiting): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_waiting(node: Null, eventName: waiting, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_waiting(node: Null, eventName: waiting, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_waiting(node: Null, eventName: waiting, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_waiting(node: HTMLElement, eventName: waiting): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_waiting(node: HTMLElement, eventName: waiting, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_waiting(node: HTMLElement, eventName: waiting, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_waiting(node: HTMLElement, eventName: waiting, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_webkitanimationend(node: Null, eventName: webkitanimationend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationend(node: Null, eventName: webkitanimationend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationend(node: Null, eventName: webkitanimationend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationend(node: Null, eventName: webkitanimationend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationend(node: HTMLElement, eventName: webkitanimationend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationend(node: HTMLElement, eventName: webkitanimationend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationend(node: HTMLElement, eventName: webkitanimationend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationend(node: HTMLElement, eventName: webkitanimationend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_webkitanimationiteration(node: Null, eventName: webkitanimationiteration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationiteration(node: Null, eventName: webkitanimationiteration, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationiteration(node: Null, eventName: webkitanimationiteration, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationiteration(node: Null, eventName: webkitanimationiteration, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationiteration(node: HTMLElement, eventName: webkitanimationiteration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationiteration(node: HTMLElement, eventName: webkitanimationiteration, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationiteration(node: HTMLElement, eventName: webkitanimationiteration, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationiteration(node: HTMLElement, eventName: webkitanimationiteration, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_webkitanimationstart(node: Null, eventName: webkitanimationstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationstart(node: Null, eventName: webkitanimationstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationstart(node: Null, eventName: webkitanimationstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationstart(node: Null, eventName: webkitanimationstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationstart(node: HTMLElement, eventName: webkitanimationstart): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationstart(node: HTMLElement, eventName: webkitanimationstart, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationstart(node: HTMLElement, eventName: webkitanimationstart, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkitanimationstart(node: HTMLElement, eventName: webkitanimationstart, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_webkittransitionend(node: Null, eventName: webkittransitionend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkittransitionend(node: Null, eventName: webkittransitionend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkittransitionend(node: Null, eventName: webkittransitionend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkittransitionend(node: Null, eventName: webkittransitionend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkittransitionend(node: HTMLElement, eventName: webkittransitionend): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkittransitionend(node: HTMLElement, eventName: webkittransitionend, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkittransitionend(node: HTMLElement, eventName: webkittransitionend, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_webkittransitionend(node: HTMLElement, eventName: webkittransitionend, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def triggerEvent_wheel(node: Null, eventName: wheel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_wheel(node: Null, eventName: wheel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_wheel(node: Null, eventName: wheel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_wheel(node: Null, eventName: wheel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_wheel(node: HTMLElement, eventName: wheel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_wheel(node: HTMLElement, eventName: wheel, bubbles: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_wheel(node: HTMLElement, eventName: wheel, bubbles: Boolean, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerEvent_wheel(node: HTMLElement, eventName: wheel, bubbles: Unit, cancelable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], bubbles.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def width(node: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("width")(node.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def width(node: HTMLElement, client: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("width")(node.asInstanceOf[js.Any], client.asInstanceOf[js.Any])).asInstanceOf[Double]

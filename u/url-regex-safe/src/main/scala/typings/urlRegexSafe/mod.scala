@@ -1,14 +1,13 @@
 package typings.urlRegexSafe
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RegExp]
-  inline def apply(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def apply(): js.RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.RegExp]
+  inline def apply(options: Options): js.RegExp = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
   
   @JSImport("url-regex-safe", JSImport.Namespace)
   @js.native
@@ -88,7 +87,7 @@ object mod {
       
       inline def setTldsUndefined: Self = StObject.set(x, "tlds", js.undefined)
       
-      inline def setTldsVarargs(value: String*): Self = StObject.set(x, "tlds", js.Array(value :_*))
+      inline def setTldsVarargs(value: String*): Self = StObject.set(x, "tlds", js.Array(value*))
       
       inline def setTrailingPeriod(value: Boolean): Self = StObject.set(x, "trailingPeriod", value.asInstanceOf[js.Any])
       

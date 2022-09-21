@@ -22,6 +22,8 @@ trait Paragraph
   
   def getIdeographicBaseline(): Double
   
+  def getLineMetrics(): js.Array[LineMetrics]
+  
   def getLongestLine(): Double
   
   def getMaxIntrinsicWidth(): Double
@@ -30,7 +32,7 @@ trait Paragraph
   
   def getMinIntrinsicWidth(): Double
   
-  def getRectsForPlaceholders(): FlattenedRectangleArray
+  def getRectsForPlaceholders(): js.Array[js.typedarray.Float32Array]
   
   /**
     * Returns bounding boxes that enclose all text in the range of glpyh indexes [start, end).
@@ -39,7 +41,12 @@ trait Paragraph
     * @param hStyle
     * @param wStyle
     */
-  def getRectsForRange(start: Double, end: Double, hStyle: RectHeightStyle, wStyle: RectWidthStyle): FlattenedRectangleArray
+  def getRectsForRange(start: Double, end: Double, hStyle: RectHeightStyle, wStyle: RectWidthStyle): js.Array[js.typedarray.Float32Array]
+  
+  /**
+    * Returns an array of ShapedLine objects, describing the paragraph.
+    */
+  def getShapedLines(): js.Array[ShapedLine]
   
   /**
     * Finds the first and last glyphs that define a word containing the glyph at index offset.
@@ -57,24 +64,26 @@ object Paragraph {
   
   inline def apply(
     delete: () => Unit,
-    deleteAfter: () => Unit,
+    deleteLater: () => Unit,
     didExceedMaxLines: () => Boolean,
     getAlphabeticBaseline: () => Double,
     getGlyphPositionAtCoordinate: (Double, Double) => PositionWithAffinity,
     getHeight: () => Double,
     getIdeographicBaseline: () => Double,
+    getLineMetrics: () => js.Array[LineMetrics],
     getLongestLine: () => Double,
     getMaxIntrinsicWidth: () => Double,
     getMaxWidth: () => Double,
     getMinIntrinsicWidth: () => Double,
-    getRectsForPlaceholders: () => FlattenedRectangleArray,
-    getRectsForRange: (Double, Double, RectHeightStyle, RectWidthStyle) => FlattenedRectangleArray,
+    getRectsForPlaceholders: () => js.Array[js.typedarray.Float32Array],
+    getRectsForRange: (Double, Double, RectHeightStyle, RectWidthStyle) => js.Array[js.typedarray.Float32Array],
+    getShapedLines: () => js.Array[ShapedLine],
     getWordBoundary: Double => URange,
-    isAliasOf: js.Any => Boolean,
+    isAliasOf: Any => Boolean,
     isDeleted: () => Boolean,
     layout: Double => Unit
   ): Paragraph = {
-    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), deleteAfter = js.Any.fromFunction0(deleteAfter), didExceedMaxLines = js.Any.fromFunction0(didExceedMaxLines), getAlphabeticBaseline = js.Any.fromFunction0(getAlphabeticBaseline), getGlyphPositionAtCoordinate = js.Any.fromFunction2(getGlyphPositionAtCoordinate), getHeight = js.Any.fromFunction0(getHeight), getIdeographicBaseline = js.Any.fromFunction0(getIdeographicBaseline), getLongestLine = js.Any.fromFunction0(getLongestLine), getMaxIntrinsicWidth = js.Any.fromFunction0(getMaxIntrinsicWidth), getMaxWidth = js.Any.fromFunction0(getMaxWidth), getMinIntrinsicWidth = js.Any.fromFunction0(getMinIntrinsicWidth), getRectsForPlaceholders = js.Any.fromFunction0(getRectsForPlaceholders), getRectsForRange = js.Any.fromFunction4(getRectsForRange), getWordBoundary = js.Any.fromFunction1(getWordBoundary), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted), layout = js.Any.fromFunction1(layout))
+    val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), deleteLater = js.Any.fromFunction0(deleteLater), didExceedMaxLines = js.Any.fromFunction0(didExceedMaxLines), getAlphabeticBaseline = js.Any.fromFunction0(getAlphabeticBaseline), getGlyphPositionAtCoordinate = js.Any.fromFunction2(getGlyphPositionAtCoordinate), getHeight = js.Any.fromFunction0(getHeight), getIdeographicBaseline = js.Any.fromFunction0(getIdeographicBaseline), getLineMetrics = js.Any.fromFunction0(getLineMetrics), getLongestLine = js.Any.fromFunction0(getLongestLine), getMaxIntrinsicWidth = js.Any.fromFunction0(getMaxIntrinsicWidth), getMaxWidth = js.Any.fromFunction0(getMaxWidth), getMinIntrinsicWidth = js.Any.fromFunction0(getMinIntrinsicWidth), getRectsForPlaceholders = js.Any.fromFunction0(getRectsForPlaceholders), getRectsForRange = js.Any.fromFunction4(getRectsForRange), getShapedLines = js.Any.fromFunction0(getShapedLines), getWordBoundary = js.Any.fromFunction1(getWordBoundary), isAliasOf = js.Any.fromFunction1(isAliasOf), isDeleted = js.Any.fromFunction0(isDeleted), layout = js.Any.fromFunction1(layout))
     __obj.asInstanceOf[Paragraph]
   }
   
@@ -90,6 +99,8 @@ object Paragraph {
     
     inline def setGetIdeographicBaseline(value: () => Double): Self = StObject.set(x, "getIdeographicBaseline", js.Any.fromFunction0(value))
     
+    inline def setGetLineMetrics(value: () => js.Array[LineMetrics]): Self = StObject.set(x, "getLineMetrics", js.Any.fromFunction0(value))
+    
     inline def setGetLongestLine(value: () => Double): Self = StObject.set(x, "getLongestLine", js.Any.fromFunction0(value))
     
     inline def setGetMaxIntrinsicWidth(value: () => Double): Self = StObject.set(x, "getMaxIntrinsicWidth", js.Any.fromFunction0(value))
@@ -98,9 +109,11 @@ object Paragraph {
     
     inline def setGetMinIntrinsicWidth(value: () => Double): Self = StObject.set(x, "getMinIntrinsicWidth", js.Any.fromFunction0(value))
     
-    inline def setGetRectsForPlaceholders(value: () => FlattenedRectangleArray): Self = StObject.set(x, "getRectsForPlaceholders", js.Any.fromFunction0(value))
+    inline def setGetRectsForPlaceholders(value: () => js.Array[js.typedarray.Float32Array]): Self = StObject.set(x, "getRectsForPlaceholders", js.Any.fromFunction0(value))
     
-    inline def setGetRectsForRange(value: (Double, Double, RectHeightStyle, RectWidthStyle) => FlattenedRectangleArray): Self = StObject.set(x, "getRectsForRange", js.Any.fromFunction4(value))
+    inline def setGetRectsForRange(value: (Double, Double, RectHeightStyle, RectWidthStyle) => js.Array[js.typedarray.Float32Array]): Self = StObject.set(x, "getRectsForRange", js.Any.fromFunction4(value))
+    
+    inline def setGetShapedLines(value: () => js.Array[ShapedLine]): Self = StObject.set(x, "getShapedLines", js.Any.fromFunction0(value))
     
     inline def setGetWordBoundary(value: Double => URange): Self = StObject.set(x, "getWordBoundary", js.Any.fromFunction1(value))
     

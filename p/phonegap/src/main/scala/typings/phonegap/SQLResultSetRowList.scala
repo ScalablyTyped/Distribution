@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SQLResultSetRowList extends StObject {
   
-  def item(index: Double): js.Any
+  def item(index: Double): Any
   
   var length: Double
 }
 object SQLResultSetRowList {
   
-  inline def apply(item: Double => js.Any, length: Double): SQLResultSetRowList = {
+  inline def apply(item: Double => Any, length: Double): SQLResultSetRowList = {
     val __obj = js.Dynamic.literal(item = js.Any.fromFunction1(item), length = length.asInstanceOf[js.Any])
     __obj.asInstanceOf[SQLResultSetRowList]
   }
   
   extension [Self <: SQLResultSetRowList](x: Self) {
     
-    inline def setItem(value: Double => js.Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,7 @@ object plotGroupMod {
     * @constructor
     * @param {Component[]} [components=[]] Components to be added to the Group.
     */
-  class PlotGroup () extends Group {
+  open class PlotGroup () extends Group {
     def this(components: js.Array[Component]) = this()
     
     def entityNearest(point: Point): IPlotEntity = js.native

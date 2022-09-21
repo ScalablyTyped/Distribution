@@ -1,6 +1,5 @@
 package typings.appBuilderLib
 
-import typings.appBuilderLib.snapStorePublisherMod.SnapStoreOptions
 import typings.builderUtil.archMod.Arch
 import typings.builderUtil.archMod.ArchType
 import typings.builderUtilRuntime.publishOptionsMod.AllPublishOptions
@@ -21,7 +20,7 @@ object coreMod {
   
   @JSImport("app-builder-lib/out/core", "Platform")
   @js.native
-  class Platform protected () extends StObject {
+  open class Platform protected () extends StObject {
     def this(
       name: String,
       buildConfigurationKey: String,
@@ -72,11 +71,11 @@ object coreMod {
     /* protected */ def this(name: String) = this()
     /* protected */ def this(name: String, isAsyncSupported: Boolean) = this()
     
-    def build(appOutDir: String, arch: Arch): js.Promise[js.Any] = js.native
+    def build(appOutDir: String, arch: Arch): js.Promise[Any] = js.native
     
-    def checkOptions(): js.Promise[js.Any] = js.native
+    def checkOptions(): js.Promise[Any] = js.native
     
-    def finishBuild(): js.Promise[js.Any] = js.native
+    def finishBuild(): js.Promise[Any] = js.native
     
     val isAsyncSupported: Boolean = js.native
     
@@ -131,7 +130,7 @@ object coreMod {
     inline def store: typings.appBuilderLib.appBuilderLibStrings.store = "store".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.store]
   }
   
-  type Publish = AllPublishOptions | SnapStoreOptions | (js.Array[AllPublishOptions | SnapStoreOptions]) | Null
+  type Publish = AllPublishOptions | js.Array[AllPublishOptions] | Null
   
   trait SourceRepositoryInfo extends StObject {
     
@@ -193,7 +192,7 @@ object coreMod {
       
       inline def setArchUndefined: Self = StObject.set(x, "arch", js.undefined)
       
-      inline def setArchVarargs(value: ArchType*): Self = StObject.set(x, "arch", js.Array(value :_*))
+      inline def setArchVarargs(value: ArchType*): Self = StObject.set(x, "arch", js.Array(value*))
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -229,7 +228,7 @@ object coreMod {
       
       inline def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
       
-      inline def setPublishVarargs(value: (AllPublishOptions | SnapStoreOptions)*): Self = StObject.set(x, "publish", js.Array(value :_*))
+      inline def setPublishVarargs(value: AllPublishOptions*): Self = StObject.set(x, "publish", js.Array(value*))
     }
   }
 }

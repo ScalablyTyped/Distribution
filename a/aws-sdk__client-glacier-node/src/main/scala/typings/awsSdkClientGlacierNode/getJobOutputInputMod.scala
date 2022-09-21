@@ -8,5 +8,5 @@ object getJobOutputInputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/GetJobOutputInput", "GetJobOutputInput")
   @js.native
-  val GetJobOutputInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetJobOutputInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

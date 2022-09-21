@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sys.PropertyChangedEventArgs")
 @js.native
-class PropertyChangedEventArgs protected ()
+open class PropertyChangedEventArgs protected ()
   extends StObject
      with typings.microsoftAjax.Sys.PropertyChangedEventArgs {
   //#region Constructors

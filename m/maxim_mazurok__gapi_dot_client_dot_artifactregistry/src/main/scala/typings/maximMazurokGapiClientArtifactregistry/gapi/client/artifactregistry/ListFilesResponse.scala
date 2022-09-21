@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListFilesResponse extends StObject {
   
   /** The files returned. */
-  var files: js.UndefOr[js.Array[File]] = js.undefined
+  var files: js.UndefOr[js.Array[GoogleDevtoolsArtifactregistryV1File]] = js.undefined
   
   /** The token to retrieve the next page of files, or empty if there are no more files to return. */
   var nextPageToken: js.UndefOr[String] = js.undefined
@@ -21,11 +21,11 @@ object ListFilesResponse {
   
   extension [Self <: ListFilesResponse](x: Self) {
     
-    inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[GoogleDevtoolsArtifactregistryV1File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: GoogleDevtoolsArtifactregistryV1File*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

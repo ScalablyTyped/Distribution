@@ -10,10 +10,10 @@ This library enables you to utilize AWS Lambda and Amazon API Gateway to respond
 | ------------------ | :-------------: |
 | Full name          | aws-serverless-express |
 | Keywords           | aws, serverless, api, gateway, lambda, express |
-| # releases         | 7 |
-| # dependents       | 80 |
-| # downloads        | 11572586 |
-| # stars            | 7 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 611420.6666666666 |
+| # stars            | 4492.0 |
 
 ## Links
 - [Homepage](https://github.com/awslabs/aws-serverless-express)

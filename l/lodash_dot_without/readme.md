@@ -10,10 +10,10 @@ The lodash method `_.without` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.without |
 | Keywords           | lodash-modularized, without |
-| # releases         | 0 |
-| # dependents       | 89 |
-| # downloads        | 29974650 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4573208.666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-json-patch
 
-Typings are for version 3.0.0-1
+Typings are for version 3.1.1
 
 ## Library description:
 Fast implementation of JSON-Patch (RFC-6902) with duplex (observe changes) capabilities
@@ -10,10 +10,10 @@ Fast implementation of JSON-Patch (RFC-6902) with duplex (observe changes) capab
 | ------------------ | :-------------: |
 | Full name          | fast-json-patch |
 | Keywords           | json, patch, http, rest |
-| # releases         | 6 |
-| # dependents       | 250 |
-| # downloads        | 24279870 |
-| # stars            | 22 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 6517300.0 |
+| # stars            | 1537.0 |
 
 ## Links
 - [Homepage](https://github.com/Starcounter-Jack/JSON-Patch)

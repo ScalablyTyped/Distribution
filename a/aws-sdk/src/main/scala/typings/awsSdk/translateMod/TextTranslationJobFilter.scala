@@ -19,12 +19,12 @@ trait TextTranslationJobFilter extends StObject {
   /**
     * Filters the list of jobs based on the time that the job was submitted for processing and returns only the jobs submitted after the specified time. Jobs are returned in descending order, newest to oldest.
     */
-  var SubmittedAfterTime: js.UndefOr[Timestamp] = js.undefined
+  var SubmittedAfterTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Filters the list of jobs based on the time that the job was submitted for processing and returns only the jobs submitted before the specified time. Jobs are returned in ascending order, oldest to newest.
     */
-  var SubmittedBeforeTime: js.UndefOr[Timestamp] = js.undefined
+  var SubmittedBeforeTime: js.UndefOr[js.Date] = js.undefined
 }
 object TextTranslationJobFilter {
   
@@ -43,11 +43,11 @@ object TextTranslationJobFilter {
     
     inline def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
     
-    inline def setSubmittedAfterTime(value: Timestamp): Self = StObject.set(x, "SubmittedAfterTime", value.asInstanceOf[js.Any])
+    inline def setSubmittedAfterTime(value: js.Date): Self = StObject.set(x, "SubmittedAfterTime", value.asInstanceOf[js.Any])
     
     inline def setSubmittedAfterTimeUndefined: Self = StObject.set(x, "SubmittedAfterTime", js.undefined)
     
-    inline def setSubmittedBeforeTime(value: Timestamp): Self = StObject.set(x, "SubmittedBeforeTime", value.asInstanceOf[js.Any])
+    inline def setSubmittedBeforeTime(value: js.Date): Self = StObject.set(x, "SubmittedBeforeTime", value.asInstanceOf[js.Any])
     
     inline def setSubmittedBeforeTimeUndefined: Self = StObject.set(x, "SubmittedBeforeTime", js.undefined)
   }

@@ -3,13 +3,14 @@ package typings.vscodeLanguageclient
 import typings.vscode.mod.Color
 import typings.vscode.mod.ColorInformation
 import typings.vscode.mod.ColorPresentation
+import typings.vscode.mod.Disposable
 import typings.vscode.mod.DocumentColorProvider
 import typings.vscode.mod.ProviderResult
 import typings.vscode.mod.TextDocument
 import typings.vscodeJsonrpc.cancellationMod.CancellationToken
 import typings.vscodeLanguageclient.anon.Document
-import typings.vscodeLanguageclient.clientMod.BaseLanguageClient
-import typings.vscodeLanguageclient.clientMod.TextDocumentFeature
+import typings.vscodeLanguageclient.featuresMod.FeatureClient
+import typings.vscodeLanguageclient.featuresMod.TextDocumentLanguageFeature
 import typings.vscodeLanguageserverProtocol.protocolColorProviderMod.DocumentColorOptions
 import typings.vscodeLanguageserverProtocol.protocolColorProviderMod.DocumentColorRegistrationOptions
 import org.scalablytyped.runtime.StObject
@@ -18,20 +19,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object colorProviderMod {
   
-  @JSImport("vscode-languageclient/lib/colorProvider", "ColorProviderFeature")
+  @JSImport("vscode-languageclient/lib/common/colorProvider", "ColorProviderFeature")
   @js.native
-  class ColorProviderFeature protected () extends TextDocumentFeature[
+  open class ColorProviderFeature protected ()
+    extends TextDocumentLanguageFeature[
           Boolean | DocumentColorOptions, 
           DocumentColorRegistrationOptions, 
-          DocumentColorProvider
+          DocumentColorProvider, 
+          ColorProviderMiddleware, 
+          js.Object
         ] {
-    def this(client: BaseLanguageClient) = this()
+    def this(client: FeatureClient[ColorProviderMiddleware, js.Object]) = this()
     
-    /* private */ var asColor: js.Any = js.native
-    
-    /* private */ var asColorInformations: js.Any = js.native
-    
-    /* private */ var asColorPresentations: js.Any = js.native
+    /* protected */ def registerLanguageProvider(options: DocumentColorRegistrationOptions): js.Tuple2[Disposable, DocumentColorProvider] = js.native
   }
   
   trait ColorProviderMiddleware extends StObject {

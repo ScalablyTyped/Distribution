@@ -53,21 +53,21 @@ object BoxModel {
     
     inline def setBorder(value: Quad): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    inline def setBorderVarargs(value: Double*): Self = StObject.set(x, "border", js.Array(value :_*))
+    inline def setBorderVarargs(value: Double*): Self = StObject.set(x, "border", js.Array(value*))
     
     inline def setContent(value: Quad): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setContentVarargs(value: Double*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: Double*): Self = StObject.set(x, "content", js.Array(value*))
     
     inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setMargin(value: Quad): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    inline def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    inline def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value*))
     
     inline def setPadding(value: Quad): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
     
     inline def setShapeOutside(value: ShapeOutsideInfo): Self = StObject.set(x, "shapeOutside", value.asInstanceOf[js.Any])
     

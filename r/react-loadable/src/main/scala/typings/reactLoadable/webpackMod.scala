@@ -12,9 +12,9 @@ object webpackMod {
   val ^ : js.Any = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @JSImport("react-loadable/webpack", "ReactLoadablePlugin")
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("react-loadable/webpack", "ReactLoadablePlugin")
   @js.native
-  class ReactLoadablePlugin () extends StObject {
+  open class ReactLoadablePlugin () extends StObject {
     def this(opts: ReactLoadablePluginOptions) = this()
   }
   

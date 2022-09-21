@@ -10,7 +10,7 @@ trait IgGridSortingColumnSetting
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Enables/disables sorting on the specified column. By default all columns are sortable.

@@ -10,9 +10,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains a collection of {@link Word.InlinePicture} objects.
   *
+  * @remarks
   * [Api set: WordApi 1.1]
   */
 @js.native
@@ -27,6 +27,7 @@ trait InlinePictureCollection
   /**
     * Gets the first inline image in this collection. Throws an error if this collection is empty.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   def getFirst(): InlinePicture = js.native
@@ -34,6 +35,7 @@ trait InlinePictureCollection
   /**
     * Gets the first inline image in this collection. Returns a null object if this collection is empty.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   def getFirstOrNullObject(): InlinePicture = js.native
@@ -59,12 +61,12 @@ trait InlinePictureCollection
   def toJSON(): InlinePictureCollectionData = js.native
   
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for `context.trackedObjects.add(thisObject)`. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     */
   def track(): InlinePictureCollection = js.native
   
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for `context.trackedObjects.remove(thisObject)`. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): InlinePictureCollection = js.native
 }

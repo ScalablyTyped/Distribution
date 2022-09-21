@@ -15,15 +15,15 @@ trait EpicEditor extends StObject {
   
   def exitFullscreen(): Unit = js.native
   
-  def exportFile(): js.Any = js.native
-  def exportFile(filename: String): js.Any = js.native
-  def exportFile(filename: String, `type`: String): js.Any = js.native
-  def exportFile(filename: Unit, `type`: String): js.Any = js.native
+  def exportFile(): Any = js.native
+  def exportFile(filename: String): Any = js.native
+  def exportFile(filename: String, `type`: String): Any = js.native
+  def exportFile(filename: Unit, `type`: String): Any = js.native
   
-  def getElement(element: String): js.Any = js.native
+  def getElement(element: String): Any = js.native
   
-  def getFiles(): js.Any = js.native
-  def getFiles(filename: String): js.Any = js.native
+  def getFiles(): Any = js.native
+  def getFiles(filename: String): Any = js.native
   
   def importFile(): Unit = js.native
   def importFile(filename: String): Unit = js.native
@@ -37,7 +37,7 @@ trait EpicEditor extends StObject {
   
   def on(event: String, handler: js.Function): Unit = js.native
   
-  def open(filename: String): js.Any = js.native
+  def open(filename: String): Any = js.native
   
   def preview(): Unit = js.native
   

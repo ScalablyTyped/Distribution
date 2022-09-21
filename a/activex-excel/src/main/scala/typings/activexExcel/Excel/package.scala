@@ -1,28 +1,27 @@
 package typings.activexExcel.Excel
 
+import typings.activexExcel.activexExcelNumbers.`1480803660`
+import typings.activexExcel.activexExcelNumbers.`1`
+import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AddIns2 = typings.activexExcel.Excel.AddIns
+type AddIns2 = AddIns
 
-type InternationalResult[T] = scala.Boolean | scala.Double | java.lang.String
+type InternationalResult[T] = Boolean | Double | String
 
-type PivotFieldsResult = typings.activexExcel.Excel.PivotFields & (js.Function1[/* Index */ scala.Double | java.lang.String, typings.activexExcel.Excel.PivotField]) & (js.Function1[
-/* Indexes */ typings.std.SafeArray[scala.Double | java.lang.String], 
-typings.activexExcel.Excel.PivotFields])
+type PivotFieldsResult = PivotFields & (js.Function1[/* Index */ Double | String, PivotField]) & (js.Function1[/* Indexes */ SafeArray[Double | String], PivotFields])
 
-type PivotItemsResult = typings.activexExcel.Excel.PivotItems & (js.Function1[/* Index */ scala.Double | java.lang.String, typings.activexExcel.Excel.PivotItem]) & (js.Function1[
-/* Indexes */ typings.std.SafeArray[scala.Double | java.lang.String], 
-typings.activexExcel.Excel.PivotItems])
+type PivotItemsResult = PivotItems & (js.Function1[/* Index */ Double | String, PivotItem]) & (js.Function1[/* Indexes */ SafeArray[Double | String], PivotItems])
 
-type PivotTableWizardAutoPage[TSourceType] = js.UndefOr[scala.Boolean]
+type PivotTableWizardAutoPage[TSourceType] = js.UndefOr[Boolean]
 
-type PivotTableWizardSourceData[TSourceType] = scala.Unit | typings.activexExcel.Excel.Range | (typings.std.SafeArray[typings.activexExcel.Excel.Range | java.lang.String]) | java.lang.String
+type PivotTableWizardSourceData[TSourceType] = Unit | Range | (SafeArray[Range | String]) | String
 
-type PrintToFileName[T] = js.UndefOr[java.lang.String]
+type PrintToFileName[T] = js.UndefOr[String]
 
-type XlCreator = typings.activexExcel.activexExcelNumbers.`1480803660`
+type XlCreator = `1480803660`
 
-type XlDataLabelSeparator = typings.activexExcel.activexExcelNumbers.`1`
+type XlDataLabelSeparator = `1`

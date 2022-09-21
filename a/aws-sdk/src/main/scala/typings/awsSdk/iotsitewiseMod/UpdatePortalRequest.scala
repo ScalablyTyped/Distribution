@@ -7,12 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdatePortalRequest extends StObject {
   
   /**
+    * Contains the configuration information of an alarm created in an IoT SiteWise Monitor portal. You can use the alarm to monitor an asset property and get notified when the asset property value is outside a specified range. For more information, see Monitoring with alarms in the IoT SiteWise Application Guide.
+    */
+  var alarms: js.UndefOr[Alarms] = js.undefined
+  
+  /**
     * A unique case-sensitive identifier that you can provide to ensure the idempotency of the request. Don't reuse this client token if a new idempotent request is required.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * The AWS administrator's contact email address.
+    * The email address that sends alarm notifications.
+    */
+  var notificationSenderEmail: js.UndefOr[Email] = js.undefined
+  
+  /**
+    * The Amazon Web Services administrator's contact email address.
     */
   var portalContactEmail: Email
   
@@ -34,7 +44,7 @@ trait UpdatePortalRequest extends StObject {
   var portalName: Name
   
   /**
-    * The ARN of a service role that allows the portal's users to access your AWS IoT SiteWise resources on your behalf. For more information, see Using service roles for AWS IoT SiteWise Monitor in the AWS IoT SiteWise User Guide.
+    * The ARN of a service role that allows the portal's users to access your IoT SiteWise resources on your behalf. For more information, see Using service roles for IoT SiteWise Monitor in the IoT SiteWise User Guide.
     */
   var roleArn: ARN
 }
@@ -47,9 +57,17 @@ object UpdatePortalRequest {
   
   extension [Self <: UpdatePortalRequest](x: Self) {
     
+    inline def setAlarms(value: Alarms): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
+    
+    inline def setAlarmsUndefined: Self = StObject.set(x, "alarms", js.undefined)
+    
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    
+    inline def setNotificationSenderEmail(value: Email): Self = StObject.set(x, "notificationSenderEmail", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationSenderEmailUndefined: Self = StObject.set(x, "notificationSenderEmail", js.undefined)
     
     inline def setPortalContactEmail(value: Email): Self = StObject.set(x, "portalContactEmail", value.asInstanceOf[js.Any])
     

@@ -2,7 +2,6 @@ package typings.reactRouterNavigationCore
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.history.mod.Location
-import typings.history.mod.LocationState
 import typings.reactRouterNavigationCore.mod.Card
 import typings.reactRouterNavigationCore.mod.NavigationState
 import typings.reactRouterNavigationCore.mod.Tab
@@ -32,7 +31,7 @@ object anon {
       
       inline def setCards(value: js.Array[Card]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
       
-      inline def setCardsVarargs(value: Card*): Self = StObject.set(x, "cards", js.Array(value :_*))
+      inline def setCardsVarargs(value: Card*): Self = StObject.set(x, "cards", js.Array(value*))
       
       inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -67,7 +66,7 @@ object anon {
     
     var tabs: js.Array[Tab]
     
-    var tabsHistory: NumberDictionary[js.Array[Location[LocationState]]]
+    var tabsHistory: NumberDictionary[js.Array[Location]]
   }
   object LoadedTabs {
     
@@ -76,7 +75,7 @@ object anon {
       navigationState: NavigationState[TestID],
       rootIndex: Double,
       tabs: js.Array[Tab],
-      tabsHistory: NumberDictionary[js.Array[Location[LocationState]]]
+      tabsHistory: NumberDictionary[js.Array[Location]]
     ): LoadedTabs = {
       val __obj = js.Dynamic.literal(loadedTabs = loadedTabs.asInstanceOf[js.Any], navigationState = navigationState.asInstanceOf[js.Any], rootIndex = rootIndex.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any], tabsHistory = tabsHistory.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoadedTabs]
@@ -86,7 +85,7 @@ object anon {
       
       inline def setLoadedTabs(value: js.Array[String]): Self = StObject.set(x, "loadedTabs", value.asInstanceOf[js.Any])
       
-      inline def setLoadedTabsVarargs(value: String*): Self = StObject.set(x, "loadedTabs", js.Array(value :_*))
+      inline def setLoadedTabsVarargs(value: String*): Self = StObject.set(x, "loadedTabs", js.Array(value*))
       
       inline def setNavigationState(value: NavigationState[TestID]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
       
@@ -94,9 +93,9 @@ object anon {
       
       inline def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      inline def setTabsHistory(value: NumberDictionary[js.Array[Location[LocationState]]]): Self = StObject.set(x, "tabsHistory", value.asInstanceOf[js.Any])
+      inline def setTabsHistory(value: NumberDictionary[js.Array[Location]]): Self = StObject.set(x, "tabsHistory", value.asInstanceOf[js.Any])
       
-      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value*))
     }
   }
   

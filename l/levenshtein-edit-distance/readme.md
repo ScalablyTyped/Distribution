@@ -1,7 +1,7 @@
 
 # Scala.js typings for levenshtein-edit-distance
 
-Typings are for version 2.0
+Typings are for version 3.0.0
 
 ## Library description:
 Levenshtein edit distance. No cruft. Real fast.
@@ -10,10 +10,10 @@ Levenshtein edit distance. No cruft. Real fast.
 | ------------------ | :-------------: |
 | Full name          | levenshtein-edit-distance |
 | Keywords           | vladimir, levenshtein, edit, distance, bin, cli |
-| # releases         | 3 |
-| # dependents       | 15 |
-| # downloads        | 1982332 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 274788.0 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](https://words.github.io/levenshtein-edit-distance/)
@@ -24,7 +24,7 @@ Levenshtein edit distance. No cruft. Real fast.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

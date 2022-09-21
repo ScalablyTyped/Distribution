@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "interface-store" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "interface-store" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

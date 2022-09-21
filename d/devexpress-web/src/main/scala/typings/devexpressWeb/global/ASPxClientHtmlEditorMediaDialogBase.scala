@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorMediaDialogBase")
 @js.native
-class ASPxClientHtmlEditorMediaDialogBase ()
+open class ASPxClientHtmlEditorMediaDialogBase ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorMediaDialogBase {
   

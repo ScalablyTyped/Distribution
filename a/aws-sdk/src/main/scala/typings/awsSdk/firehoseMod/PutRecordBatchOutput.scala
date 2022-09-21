@@ -38,6 +38,6 @@ object PutRecordBatchOutput {
     
     inline def setRequestResponses(value: PutRecordBatchResponseEntryList): Self = StObject.set(x, "RequestResponses", value.asInstanceOf[js.Any])
     
-    inline def setRequestResponsesVarargs(value: PutRecordBatchResponseEntry*): Self = StObject.set(x, "RequestResponses", js.Array(value :_*))
+    inline def setRequestResponsesVarargs(value: PutRecordBatchResponseEntry*): Self = StObject.set(x, "RequestResponses", js.Array(value*))
   }
 }

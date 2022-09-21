@@ -8,7 +8,7 @@ trait IosHomeScreenApp
   extends StObject
      with IosHomeScreenItem {
   
-  // BundleID of app
+  // BundleID of the app if isWebClip is false or the URL of a web clip if isWebClip is true.
   var bundleID: js.UndefOr[String] = js.undefined
 }
 object IosHomeScreenApp {

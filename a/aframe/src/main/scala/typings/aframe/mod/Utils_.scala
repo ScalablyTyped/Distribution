@@ -13,7 +13,7 @@ trait Utils_ extends StObject {
   
   var coordinates: IsCoordinate = js.native
   
-  def deepEqual(a: js.Any, b: js.Any): Boolean = js.native
+  def deepEqual(a: Any, b: Any): Boolean = js.native
   
   var device: CheckHasPositionalTracking = js.native
   

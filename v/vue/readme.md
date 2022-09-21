@@ -1,24 +1,24 @@
 
 # Scala.js typings for vue
 
-Typings are for version 2.6.12
+Typings are for version 3.2.39
 
 ## Library description:
-Reactive, component-oriented view layer for modern web interfaces.
+The progressive JavaScript framework for building modern web UI.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | vue |
 | Keywords           | vue |
-| # releases         | 62 |
-| # dependents       | 33944 |
-| # downloads        | 92357191 |
-| # stars            | 243 |
+| # releases         | 111 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4116602666666666E7 |
+| # stars            | 32475.0 |
 
 ## Links
-- [Homepage](https://github.com/vuejs/vue#readme)
-- [Bugs](https://github.com/vuejs/vue/issues)
-- [Repository](https://github.com/vuejs/vue)
+- [Homepage](https://github.com/vuejs/core/tree/main/packages/vue#readme)
+- [Bugs](https://github.com/vuejs/core/issues)
+- [Repository](https://github.com/vuejs/core)
 - [Npm](https://www.npmjs.com/package/vue)
     
 

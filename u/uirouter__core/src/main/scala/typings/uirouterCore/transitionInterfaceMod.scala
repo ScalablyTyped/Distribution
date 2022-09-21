@@ -151,7 +151,7 @@ object transitionInterfaceMod {
     /**
       * Specifies what `this` is bound to during hook invocation.
       */
-    var bind: js.UndefOr[js.Any] = js.undefined
+    var bind: js.UndefOr[Any] = js.undefined
     
     /**
       * Limits the number of times that the hook will be invoked.
@@ -178,7 +178,7 @@ object transitionInterfaceMod {
     
     extension [Self <: HookRegOptions](x: Self) {
       
-      inline def setBind(value: js.Any): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+      inline def setBind(value: Any): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
       inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
       
@@ -672,23 +672,23 @@ object transitionInterfaceMod {
       
       inline def setEntering(value: js.Array[PathNode]): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
       
-      inline def setEnteringVarargs(value: PathNode*): Self = StObject.set(x, "entering", js.Array(value :_*))
+      inline def setEnteringVarargs(value: PathNode*): Self = StObject.set(x, "entering", js.Array(value*))
       
       inline def setExiting(value: js.Array[PathNode]): Self = StObject.set(x, "exiting", value.asInstanceOf[js.Any])
       
-      inline def setExitingVarargs(value: PathNode*): Self = StObject.set(x, "exiting", js.Array(value :_*))
+      inline def setExitingVarargs(value: PathNode*): Self = StObject.set(x, "exiting", js.Array(value*))
       
       inline def setFrom(value: js.Array[PathNode]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      inline def setFromVarargs(value: PathNode*): Self = StObject.set(x, "from", js.Array(value :_*))
+      inline def setFromVarargs(value: PathNode*): Self = StObject.set(x, "from", js.Array(value*))
       
       inline def setRetained(value: js.Array[PathNode]): Self = StObject.set(x, "retained", value.asInstanceOf[js.Any])
       
-      inline def setRetainedVarargs(value: PathNode*): Self = StObject.set(x, "retained", js.Array(value :_*))
+      inline def setRetainedVarargs(value: PathNode*): Self = StObject.set(x, "retained", js.Array(value*))
       
       inline def setTo(value: js.Array[PathNode]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      inline def setToVarargs(value: PathNode*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: PathNode*): Self = StObject.set(x, "to", js.Array(value*))
     }
   }
   
@@ -758,7 +758,7 @@ object transitionInterfaceMod {
   
   trait TransitionHookOptions extends StObject {
     
-    var bind: js.UndefOr[js.Any] = js.undefined
+    var bind: js.UndefOr[Any] = js.undefined
     
     var current: js.UndefOr[js.Function0[Transition]] = js.undefined
     
@@ -766,9 +766,9 @@ object transitionInterfaceMod {
     
     var stateHook: js.UndefOr[Boolean] = js.undefined
     
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
-    var traceData: js.UndefOr[js.Any] = js.undefined
+    var traceData: js.UndefOr[Any] = js.undefined
     
     var transition: js.UndefOr[Transition] = js.undefined
   }
@@ -781,7 +781,7 @@ object transitionInterfaceMod {
     
     extension [Self <: TransitionHookOptions](x: Self) {
       
-      inline def setBind(value: js.Any): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+      inline def setBind(value: Any): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
       inline def setBindUndefined: Self = StObject.set(x, "bind", js.undefined)
       
@@ -797,11 +797,11 @@ object transitionInterfaceMod {
       
       inline def setStateHookUndefined: Self = StObject.set(x, "stateHook", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setTraceData(value: js.Any): Self = StObject.set(x, "traceData", value.asInstanceOf[js.Any])
+      inline def setTraceData(value: Any): Self = StObject.set(x, "traceData", value.asInstanceOf[js.Any])
       
       inline def setTraceDataUndefined: Self = StObject.set(x, "traceData", js.undefined)
       
@@ -819,7 +819,7 @@ object transitionInterfaceMod {
     /**
       * You can define your own Transition Options inside this property and use them, e.g., from a Transition Hook
       */
-    var custom: js.UndefOr[js.Any] = js.undefined
+    var custom: js.UndefOr[Any] = js.undefined
     
     /**
       * This option sets whether or not the transition's parameter values should be inherited from
@@ -828,7 +828,7 @@ object transitionInterfaceMod {
       * - If `true`, it will inherit parameter values from the current parameter values.
       * - If `false`, only the parameters which are provided to `transitionTo` will be used.
       *
-      * @default `false`
+      * @default `true`
       */
     var inherit: js.UndefOr[Boolean] = js.undefined
     
@@ -914,7 +914,7 @@ object transitionInterfaceMod {
       
       inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      inline def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
       inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
@@ -1027,27 +1027,27 @@ object transitionInterfaceMod {
       
       inline def setEntering(value: js.Array[PathNode]): Self = StObject.set(x, "entering", value.asInstanceOf[js.Any])
       
-      inline def setEnteringVarargs(value: PathNode*): Self = StObject.set(x, "entering", js.Array(value :_*))
+      inline def setEnteringVarargs(value: PathNode*): Self = StObject.set(x, "entering", js.Array(value*))
       
       inline def setExiting(value: js.Array[PathNode]): Self = StObject.set(x, "exiting", value.asInstanceOf[js.Any])
       
-      inline def setExitingVarargs(value: PathNode*): Self = StObject.set(x, "exiting", js.Array(value :_*))
+      inline def setExitingVarargs(value: PathNode*): Self = StObject.set(x, "exiting", js.Array(value*))
       
       inline def setFrom(value: js.Array[PathNode]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      inline def setFromVarargs(value: PathNode*): Self = StObject.set(x, "from", js.Array(value :_*))
+      inline def setFromVarargs(value: PathNode*): Self = StObject.set(x, "from", js.Array(value*))
       
       inline def setRetained(value: js.Array[PathNode]): Self = StObject.set(x, "retained", value.asInstanceOf[js.Any])
       
-      inline def setRetainedVarargs(value: PathNode*): Self = StObject.set(x, "retained", js.Array(value :_*))
+      inline def setRetainedVarargs(value: PathNode*): Self = StObject.set(x, "retained", js.Array(value*))
       
       inline def setRetainedWithToParams(value: js.Array[PathNode]): Self = StObject.set(x, "retainedWithToParams", value.asInstanceOf[js.Any])
       
-      inline def setRetainedWithToParamsVarargs(value: PathNode*): Self = StObject.set(x, "retainedWithToParams", js.Array(value :_*))
+      inline def setRetainedWithToParamsVarargs(value: PathNode*): Self = StObject.set(x, "retainedWithToParams", js.Array(value*))
       
       inline def setTo(value: js.Array[PathNode]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      inline def setToVarargs(value: PathNode*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: PathNode*): Self = StObject.set(x, "to", js.Array(value*))
     }
   }
 }

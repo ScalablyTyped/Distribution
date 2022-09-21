@@ -1,6 +1,6 @@
 package typings.apolloDatasource
 
-import typings.apolloServerCaching.keyValueCacheMod.KeyValueCache
+import typings.apolloUtilsKeyvaluecache.keyValueCacheMod.KeyValueCache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

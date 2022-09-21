@@ -81,7 +81,7 @@ object WorkbookTable {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: WorkbookTableColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: WorkbookTableColumn*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setHighlightFirstColumn(value: Boolean): Self = StObject.set(x, "highlightFirstColumn", value.asInstanceOf[js.Any])
     
@@ -109,7 +109,7 @@ object WorkbookTable {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: WorkbookTableRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: WorkbookTableRow*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setShowBandedColumns(value: Boolean): Self = StObject.set(x, "showBandedColumns", value.asInstanceOf[js.Any])
     

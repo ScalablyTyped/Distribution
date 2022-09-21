@@ -13,8 +13,8 @@ object FileSavePickerUI {
   inline def apply(
     allowedFileTypes: IVectorView[String],
     fileName: String,
-    onfilenamechanged: js.Any,
-    ontargetfilerequested: js.Any,
+    onfilenamechanged: Any,
+    ontargetfilerequested: Any,
     settingsIdentifier: String,
     title: String,
     trySetFileName: String => SetFileNameResult

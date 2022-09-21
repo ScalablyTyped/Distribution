@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartTextTranslationJobRequest extends StObject {
   
   /**
-    * A unique identifier for the request. This token is auto-generated when using the Amazon Translate SDK.
+    * A unique identifier for the request. This token is generated for you when using the Amazon Translate SDK.
     */
   var ClientToken: ClientTokenString
   
   /**
-    * The Amazon Resource Name (ARN) of an AWS Identity Access and Management (IAM) role that grants Amazon Translate read access to your input data. For more nformation, see identity-and-access-management.
+    * The Amazon Resource Name (ARN) of an AWS Identity Access and Management (IAM) role that grants Amazon Translate read access to your input data. For more information, see identity-and-access-management.
     */
   var DataAccessRoleArn: IamRoleArn
   
   /**
-    * Specifies the format and S3 location of the input documents for the translation job.
+    * Specifies the format and location of the input documents for the translation job.
     */
   var InputDataConfig: typings.awsSdk.translateMod.InputDataConfig
   
@@ -32,6 +32,16 @@ trait StartTextTranslationJobRequest extends StObject {
   var OutputDataConfig: typings.awsSdk.translateMod.OutputDataConfig
   
   /**
+    * The name of a parallel data resource to add to the translation job. This resource consists of examples that show how you want segments of text to be translated. When you add parallel data to a translation job, you create an Active Custom Translation job.  This parameter accepts only one parallel data resource.  Active Custom Translation jobs are priced at a higher rate than other jobs that don't use parallel data. For more information, see Amazon Translate pricing.  For a list of available parallel data resources, use the ListParallelData operation. For more information, see customizing-translations-parallel-data.
+    */
+  var ParallelDataNames: js.UndefOr[ResourceNameList] = js.undefined
+  
+  /**
+    * Settings to configure your translation output, including the option to mask profane words and phrases. StartTextTranslationJob does not support the formality setting.
+    */
+  var Settings: js.UndefOr[TranslationSettings] = js.undefined
+  
+  /**
     * The language code of the input language. For a list of language codes, see what-is-languages. Amazon Translate does not automatically detect a source language during batch translation jobs.
     */
   var SourceLanguageCode: LanguageCodeString
@@ -42,7 +52,7 @@ trait StartTextTranslationJobRequest extends StObject {
   var TargetLanguageCodes: TargetLanguageCodeStringList
   
   /**
-    * The name of the terminology to use in the batch translation job. For a list of available terminologies, use the ListTerminologies operation.
+    * The name of a custom terminology resource to add to the translation job. This resource lists examples source terms and the desired translation for each term. This parameter accepts only one custom terminology resource. For a list of available custom terminology resources, use the ListTerminologies operation. For more information, see how-custom-terminology.
     */
   var TerminologyNames: js.UndefOr[ResourceNameList] = js.undefined
 }
@@ -74,16 +84,26 @@ object StartTextTranslationJobRequest {
     
     inline def setOutputDataConfig(value: OutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
     
+    inline def setParallelDataNames(value: ResourceNameList): Self = StObject.set(x, "ParallelDataNames", value.asInstanceOf[js.Any])
+    
+    inline def setParallelDataNamesUndefined: Self = StObject.set(x, "ParallelDataNames", js.undefined)
+    
+    inline def setParallelDataNamesVarargs(value: ResourceName*): Self = StObject.set(x, "ParallelDataNames", js.Array(value*))
+    
+    inline def setSettings(value: TranslationSettings): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
+    
+    inline def setSettingsUndefined: Self = StObject.set(x, "Settings", js.undefined)
+    
     inline def setSourceLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "SourceLanguageCode", value.asInstanceOf[js.Any])
     
     inline def setTargetLanguageCodes(value: TargetLanguageCodeStringList): Self = StObject.set(x, "TargetLanguageCodes", value.asInstanceOf[js.Any])
     
-    inline def setTargetLanguageCodesVarargs(value: LanguageCodeString*): Self = StObject.set(x, "TargetLanguageCodes", js.Array(value :_*))
+    inline def setTargetLanguageCodesVarargs(value: LanguageCodeString*): Self = StObject.set(x, "TargetLanguageCodes", js.Array(value*))
     
     inline def setTerminologyNames(value: ResourceNameList): Self = StObject.set(x, "TerminologyNames", value.asInstanceOf[js.Any])
     
     inline def setTerminologyNamesUndefined: Self = StObject.set(x, "TerminologyNames", js.undefined)
     
-    inline def setTerminologyNamesVarargs(value: ResourceName*): Self = StObject.set(x, "TerminologyNames", js.Array(value :_*))
+    inline def setTerminologyNamesVarargs(value: ResourceName*): Self = StObject.set(x, "TerminologyNames", js.Array(value*))
   }
 }

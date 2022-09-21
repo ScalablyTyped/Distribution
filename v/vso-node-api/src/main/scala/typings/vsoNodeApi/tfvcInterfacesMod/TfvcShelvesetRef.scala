@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.tfvcInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TfvcShelvesetRef extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   var comment: String
   
   var commentTruncated: Boolean
   
-  var createdDate: Date
+  var createdDate: js.Date
   
   var id: String
   
@@ -27,10 +26,10 @@ trait TfvcShelvesetRef extends StObject {
 object TfvcShelvesetRef {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     comment: String,
     commentTruncated: Boolean,
-    createdDate: Date,
+    createdDate: js.Date,
     id: String,
     name: String,
     owner: IdentityRef,
@@ -46,7 +45,7 @@ object TfvcShelvesetRef {
     
     inline def setCommentTruncated(value: Boolean): Self = StObject.set(x, "commentTruncated", value.asInstanceOf[js.Any])
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -56,6 +55,6 @@ object TfvcShelvesetRef {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

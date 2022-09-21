@@ -1,6 +1,5 @@
 package typings.mqttPacket.mod
 
-import typings.mqttPacket.anon.ReasonString
 import typings.mqttPacket.mqttPacketStrings.suback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,9 @@ trait ISubackPacket
   
   var granted: js.Array[Double | js.Object]
   
-  var properties: js.UndefOr[ReasonString] = js.undefined
+  var properties: js.UndefOr[typings.mqttPacket.anon.UserProperties] = js.undefined
+  
+  var reasonCode: js.UndefOr[Double] = js.undefined
 }
 object ISubackPacket {
   
@@ -31,10 +32,14 @@ object ISubackPacket {
     
     inline def setGranted(value: js.Array[Double | js.Object]): Self = StObject.set(x, "granted", value.asInstanceOf[js.Any])
     
-    inline def setGrantedVarargs(value: (Double | js.Object)*): Self = StObject.set(x, "granted", js.Array(value :_*))
+    inline def setGrantedVarargs(value: (Double | js.Object)*): Self = StObject.set(x, "granted", js.Array(value*))
     
-    inline def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: typings.mqttPacket.anon.UserProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setReasonCode(value: Double): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
+    
+    inline def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
   }
 }

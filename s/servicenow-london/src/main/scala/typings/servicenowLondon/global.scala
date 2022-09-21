@@ -33,7 +33,7 @@ object global {
       * @param context wf_context GlideRecord of the context from which you want the return value
       * @return The value set by activity "Return Value" in the workflow
       */
-    def getReturnValue(context: ScopedGlideRecord): js.Any = js.native
+    def getReturnValue(context: ScopedGlideRecord): Any = js.native
     
     def getRunningFlows(record: ScopedGlideRecord): ScopedGlideRecord = js.native
     
@@ -122,7 +122,7 @@ object global {
       current: ScopedGlideRecord,
       operation: GlideRecordOperation,
       vars: js.Object,
-      withSchedule: js.Any
+      withSchedule: Any
     ): ScopedGlideRecord = js.native
     def startFlowRetroactive(
       workflowID: String,
@@ -130,7 +130,7 @@ object global {
       current: ScopedGlideRecord,
       operation: GlideRecordOperation,
       vars: Unit,
-      withSchedule: js.Any
+      withSchedule: Any
     ): ScopedGlideRecord = js.native
   }
 }

@@ -2,7 +2,6 @@ package typings.sipJs
 
 import typings.sipJs.emitterMod.Emitter
 import typings.sipJs.transportStateMod.TransportState
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,7 +105,7 @@ object transportMod {
       * transport initiated the transition from "Connected" - for example,
       * perhaps network connectivity was lost.
       */
-    var onDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], Unit]] = js.undefined
+    var onDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Error], Unit]] = js.undefined
     
     /**
       * Callback on receipt of a message.
@@ -160,7 +159,7 @@ object transportMod {
       
       inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
       
-      inline def setOnDisconnect(value: /* error */ js.UndefOr[Error] => Unit): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction1(value))
+      inline def setOnDisconnect(value: /* error */ js.UndefOr[js.Error] => Unit): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction1(value))
       
       inline def setOnDisconnectUndefined: Self = StObject.set(x, "onDisconnect", js.undefined)
       

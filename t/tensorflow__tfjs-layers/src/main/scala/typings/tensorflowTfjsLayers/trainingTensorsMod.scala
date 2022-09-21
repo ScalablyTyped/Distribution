@@ -36,29 +36,29 @@ object trainingTensorsMod {
   inline def ensureTensorsRank2OrHigher(tensors: js.Array[Tensor[Rank]]): js.Array[Tensor[Rank]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureTensorsRank2OrHigher")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Array[Tensor[Rank]]]
   inline def ensureTensorsRank2OrHigher(tensors: Tensor[Rank]): js.Array[Tensor[Rank]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureTensorsRank2OrHigher")(tensors.asInstanceOf[js.Any]).asInstanceOf[js.Array[Tensor[Rank]]]
   
-  inline def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: Tensor[Rank]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: js.Array[Tensor[Rank]], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: js.Array[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: js.Array[Tensor[Rank]], y: StringDictionary[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: js.Array[Tensor[Rank]], y: Tensor[Rank]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: js.Array[Tensor[Rank]], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: StringDictionary[Tensor[Rank]], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: StringDictionary[Tensor[Rank]], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
   inline def fitTensors(
-    model: js.Any,
+    model: Any,
     x: StringDictionary[Tensor[Rank]],
     y: StringDictionary[Tensor[Rank]],
     args: ModelFitArgs
   ): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: Tensor[Rank]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: StringDictionary[Tensor[Rank]], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: Tensor[Rank], y: js.Array[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: Tensor[Rank], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: Tensor[Rank], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: Tensor[Rank], y: StringDictionary[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: Tensor[Rank], y: Tensor[Rank]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
-  inline def fitTensors(model: js.Any, x: Tensor[Rank], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: StringDictionary[Tensor[Rank]], y: Tensor[Rank]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: StringDictionary[Tensor[Rank]], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: Tensor[Rank], y: js.Array[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: Tensor[Rank], y: js.Array[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: Tensor[Rank], y: StringDictionary[Tensor[Rank]]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: Tensor[Rank], y: StringDictionary[Tensor[Rank]], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: Tensor[Rank], y: Tensor[Rank]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  inline def fitTensors(model: Any, x: Tensor[Rank], y: Tensor[Rank], args: ModelFitArgs): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitTensors")(model.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
   
   inline def makeBatches(size: Double, batchSize: Double): js.Array[js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeBatches")(size.asInstanceOf[js.Any], batchSize.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
   
@@ -223,13 +223,13 @@ object trainingTensorsMod {
       
       inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
       
-      inline def setCallbacksVarargs(value: (BaseCallback | CustomCallbackArgs)*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
+      inline def setCallbacksVarargs(value: (BaseCallback | CustomCallbackArgs)*): Self = StObject.set(x, "callbacks", js.Array(value*))
       
       inline def setClassWeight(value: ClassWeight | js.Array[ClassWeight] | ClassWeightMap): Self = StObject.set(x, "classWeight", value.asInstanceOf[js.Any])
       
       inline def setClassWeightUndefined: Self = StObject.set(x, "classWeight", js.undefined)
       
-      inline def setClassWeightVarargs(value: ClassWeight*): Self = StObject.set(x, "classWeight", js.Array(value :_*))
+      inline def setClassWeightVarargs(value: ClassWeight*): Self = StObject.set(x, "classWeight", js.Array(value*))
       
       inline def setEpochs(value: Double): Self = StObject.set(x, "epochs", value.asInstanceOf[js.Any])
       

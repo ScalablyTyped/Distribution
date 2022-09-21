@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "QueryStringQuery")
 @js.native
-class QueryStringQuery protected ()
+open class QueryStringQuery protected ()
   extends StObject
      with Query {
   /*
@@ -79,7 +79,7 @@ class QueryStringQuery protected ()
     field name.  For example, title^10, to give the title field a
     boost of 10.
     */
-  def fields(fieldNames: js.Array[js.Any]): QueryStringQuery = js.native
+  def fields(fieldNames: js.Array[Any]): QueryStringQuery = js.native
   
   /*
     Sets the max number of term expansions for fuzzy queries.
@@ -193,7 +193,7 @@ class QueryStringQuery protected ()
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /*
     Sets whether or not queries against multiple fields should be combined using Lucene's

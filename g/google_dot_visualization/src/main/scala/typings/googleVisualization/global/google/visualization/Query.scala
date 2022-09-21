@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.visualization.Query")
 @js.native
-class Query protected ()
+open class Query protected ()
   extends StObject
      with typings.googleVisualization.google.visualization.Query {
   def this(dataSourceUrl: String) = this()

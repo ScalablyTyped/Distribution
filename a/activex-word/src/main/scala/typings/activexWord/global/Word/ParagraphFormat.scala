@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ParagraphFormat")
 @js.native
-/* private */ class ParagraphFormat ()
+/* private */ open class ParagraphFormat ()
   extends StObject
      with typings.activexWord.Word.ParagraphFormat {
   
@@ -119,7 +119,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var PageBreakBefore: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var ReadingOrder: WdReadingOrder = js.native
@@ -155,7 +155,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var SpaceBeforeAuto: Double = js.native
   
   /* CompleteClass */
-  var Style: js.Any = js.native
+  var Style: Any = js.native
   
   /* CompleteClass */
   override def TabHangingIndent(Count: Double): Unit = js.native

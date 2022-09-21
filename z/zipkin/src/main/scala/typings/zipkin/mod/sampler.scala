@@ -13,13 +13,13 @@ object sampler {
   
   @JSImport("zipkin", "sampler.CountingSampler")
   @js.native
-  class CountingSampler () extends Sampler {
+  open class CountingSampler () extends Sampler {
     def this(sampleRate: Double) = this()
   }
   
   @JSImport("zipkin", "sampler.Sampler")
   @js.native
-  class Sampler protected () extends StObject {
+  open class Sampler protected () extends StObject {
     def this(evaluator: js.Function1[/* traceId */ TraceId, Boolean]) = this()
     
     def shouldSample(traceId: TraceId): IOption[Boolean] = js.native

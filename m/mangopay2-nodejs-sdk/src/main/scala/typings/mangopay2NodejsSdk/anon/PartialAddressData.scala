@@ -1,10 +1,11 @@
 package typings.mangopay2NodejsSdk.anon
 
+import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.address.AddressData> */
+/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/address.address.AddressData> */
 trait PartialAddressData extends StObject {
   
   var AddressLine1: js.UndefOr[String] = js.undefined
@@ -13,7 +14,7 @@ trait PartialAddressData extends StObject {
   
   var City: js.UndefOr[String] = js.undefined
   
-  var Country: js.UndefOr[String] = js.undefined
+  var Country: js.UndefOr[CountryISO] = js.undefined
   
   var PostalCode: js.UndefOr[String] = js.undefined
   
@@ -40,7 +41,7 @@ object PartialAddressData {
     
     inline def setCityUndefined: Self = StObject.set(x, "City", js.undefined)
     
-    inline def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: CountryISO): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     
     inline def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
     

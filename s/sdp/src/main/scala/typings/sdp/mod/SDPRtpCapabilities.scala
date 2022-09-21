@@ -29,20 +29,20 @@ object SDPRtpCapabilities {
     
     inline def setCodecs(value: js.Array[SDPCodec]): Self = StObject.set(x, "codecs", value.asInstanceOf[js.Any])
     
-    inline def setCodecsVarargs(value: SDPCodec*): Self = StObject.set(x, "codecs", js.Array(value :_*))
+    inline def setCodecsVarargs(value: SDPCodec*): Self = StObject.set(x, "codecs", js.Array(value*))
     
     inline def setFecMechanisms(value: js.Array[String]): Self = StObject.set(x, "fecMechanisms", value.asInstanceOf[js.Any])
     
-    inline def setFecMechanismsVarargs(value: String*): Self = StObject.set(x, "fecMechanisms", js.Array(value :_*))
+    inline def setFecMechanismsVarargs(value: String*): Self = StObject.set(x, "fecMechanisms", js.Array(value*))
     
     inline def setHeaderExtensions(value: js.Array[SDPHeaderExtension]): Self = StObject.set(x, "headerExtensions", value.asInstanceOf[js.Any])
     
-    inline def setHeaderExtensionsVarargs(value: SDPHeaderExtension*): Self = StObject.set(x, "headerExtensions", js.Array(value :_*))
+    inline def setHeaderExtensionsVarargs(value: SDPHeaderExtension*): Self = StObject.set(x, "headerExtensions", js.Array(value*))
     
     inline def setRtcp(value: js.Array[SDPRtcpParameters]): Self = StObject.set(x, "rtcp", value.asInstanceOf[js.Any])
     
     inline def setRtcpUndefined: Self = StObject.set(x, "rtcp", js.undefined)
     
-    inline def setRtcpVarargs(value: SDPRtcpParameters*): Self = StObject.set(x, "rtcp", js.Array(value :_*))
+    inline def setRtcpVarargs(value: SDPRtcpParameters*): Self = StObject.set(x, "rtcp", js.Array(value*))
   }
 }

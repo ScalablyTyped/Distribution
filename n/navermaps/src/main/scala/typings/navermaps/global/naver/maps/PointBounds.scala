@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.PointBounds")
 @js.native
-class PointBounds protected ()
+open class PointBounds protected ()
   extends StObject
      with typings.navermaps.naver.maps.PointBounds {
   def this(minPoint: typings.navermaps.naver.maps.Point, maxPoint: typings.navermaps.naver.maps.Point) = this()

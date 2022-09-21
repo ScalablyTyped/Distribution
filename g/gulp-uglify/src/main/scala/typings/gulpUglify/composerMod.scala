@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.gulpUglify.anon.FnCall
 import typings.gulpUglify.mod.Options
-import typings.node.NodeJS.ReadWriteStream
 import typings.uglifyJs.mod.MinifyOptions
 import typings.uglifyJs.mod.MinifyOutput
 import org.scalablytyped.runtime.StObject
@@ -20,25 +19,28 @@ object composerMod extends Shortcut {
   type Composer = js.Function2[
     /* uglify */ Uglify, 
     /* log */ Logger, 
-    js.Function1[/* options */ js.UndefOr[Options], ReadWriteStream]
+    js.Function1[
+      /* options */ js.UndefOr[Options], 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+    ]
   ]
   
   trait Logger extends StObject {
     
-    def warn(data: js.Any*): Unit
+    def warn(data: Any*): Unit
     @JSName("warn")
-    var warn_Original: js.Function1[/* repeated */ js.Any, Unit]
+    var warn_Original: js.Function1[/* repeated */ Any, Unit]
   }
   object Logger {
     
-    inline def apply(warn: /* repeated */ js.Any => Unit): Logger = {
+    inline def apply(warn: /* repeated */ Any => Unit): Logger = {
       val __obj = js.Dynamic.literal(warn = js.Any.fromFunction1(warn))
       __obj.asInstanceOf[Logger]
     }
     
     extension [Self <: Logger](x: Self) {
       
-      inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* repeated */ Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
   

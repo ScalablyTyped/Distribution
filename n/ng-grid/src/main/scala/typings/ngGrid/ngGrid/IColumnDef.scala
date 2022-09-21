@@ -43,7 +43,7 @@ trait IColumnDef extends StObject {
   var headerClass: js.UndefOr[String] = js.undefined
   
   /** The minum width the column is allowed to be. See width for the different options */
-  var minWidth: js.UndefOr[js.Any] = js.undefined
+  var minWidth: js.UndefOr[Any] = js.undefined
   
   /** Allows the column to be pinned when enablePinning is set to true */
   var pinnable: js.UndefOr[Boolean] = js.undefined
@@ -54,7 +54,7 @@ trait IColumnDef extends StObject {
   var resizable: js.UndefOr[Boolean] = js.undefined
   
   /** The funtion to use when filtering values in this column */
-  var sortFn: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]] = js.undefined
+  var sortFn: js.UndefOr[js.Function2[/* a */ Any, /* b */ Any, Double]] = js.undefined
   
   /** Restrict or allow the column to be sorted */
   var sortable: js.UndefOr[Boolean] = js.undefined
@@ -68,7 +68,7 @@ trait IColumnDef extends StObject {
     * (much like WPF/Silverlight)/ note: "auto" only works in single page apps currently because the re-size
     * happens on "document.ready
     */
-  var width: js.UndefOr[js.Any] = js.undefined
+  var width: js.UndefOr[Any] = js.undefined
 }
 object IColumnDef {
   
@@ -127,7 +127,7 @@ object IColumnDef {
     
     inline def setHeaderClassUndefined: Self = StObject.set(x, "headerClass", js.undefined)
     
-    inline def setMinWidth(value: js.Any): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Any): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
     inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
@@ -143,7 +143,7 @@ object IColumnDef {
     
     inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
-    inline def setSortFn(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = StObject.set(x, "sortFn", js.Any.fromFunction2(value))
+    inline def setSortFn(value: (/* a */ Any, /* b */ Any) => Double): Self = StObject.set(x, "sortFn", js.Any.fromFunction2(value))
     
     inline def setSortFnUndefined: Self = StObject.set(x, "sortFn", js.undefined)
     
@@ -155,7 +155,7 @@ object IColumnDef {
     
     inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
-    inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

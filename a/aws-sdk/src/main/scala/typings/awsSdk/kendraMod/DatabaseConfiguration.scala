@@ -17,7 +17,7 @@ trait DatabaseConfiguration extends StObject {
   var ColumnConfiguration: typings.awsSdk.kendraMod.ColumnConfiguration
   
   /**
-    * The information necessary to connect to a database.
+    * Configuration information that's required to connect to a database.
     */
   var ConnectionConfiguration: typings.awsSdk.kendraMod.ConnectionConfiguration
   

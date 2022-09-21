@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "twilio" : "3.82.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "twilio" : "3.82.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

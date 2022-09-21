@@ -36,7 +36,7 @@ object IGraphDef {
     
     inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
-    inline def setNodeVarargs(value: INodeDef*): Self = StObject.set(x, "node", js.Array(value :_*))
+    inline def setNodeVarargs(value: INodeDef*): Self = StObject.set(x, "node", js.Array(value*))
     
     inline def setVersions(value: IVersionDef): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     

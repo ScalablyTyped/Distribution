@@ -9,10 +9,7 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(text: String): js.Any = js.native
-    def apply(
-      text: String,
-      reviver: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]
-    ): js.Any = js.native
+    def apply(text: String): Any = js.native
+    def apply(text: String, reviver: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]): Any = js.native
   }
 }

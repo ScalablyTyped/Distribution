@@ -10,10 +10,10 @@ A node.js binding to MariaDB's non-blocking (MySQL-compatible) client library
 | ------------------ | :-------------: |
 | Full name          | mariasql |
 | Keywords           | mysql, sql, client, mariadb, async, nonblocking |
-| # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 48369 |
-| # stars            | 19 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5989.0 |
+| # stars            | 486.0 |
 
 ## Links
 - [Homepage](https://github.com/mscdex/node-mariasql#readme)

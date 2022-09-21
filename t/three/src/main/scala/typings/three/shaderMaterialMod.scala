@@ -3,9 +3,9 @@ package typings.three
 import org.scalablytyped.runtime.StringDictionary
 import typings.three.anon.Derivatives
 import typings.three.anon.DrawBuffers
-import typings.three.constantsMod.GLSLVersion
 import typings.three.materialMod.Material
 import typings.three.materialMod.MaterialParameters
+import typings.three.srcConstantsMod.GLSLVersion
 import typings.three.uniformsLibMod.IUniform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,94 +15,86 @@ object shaderMaterialMod {
   
   @JSImport("three/src/materials/ShaderMaterial", "ShaderMaterial")
   @js.native
-  class ShaderMaterial () extends Material {
+  open class ShaderMaterial () extends Material {
     def this(parameters: ShaderMaterialParameters) = this()
     
     /**
-    	 * @default false
-    	 */
+      * @default false
+      */
     var clipping: Boolean = js.native
     
     /**
-    	 * @default { 'color': [ 1, 1, 1 ], 'uv': [ 0, 0 ], 'uv2': [ 0, 0 ] }
-    	 */
-    var defaultAttributeValues: js.Any = js.native
+      * @default { 'color': [ 1, 1, 1 ], 'uv': [ 0, 0 ], 'uv2': [ 0, 0 ] }
+      */
+    var defaultAttributeValues: Any = js.native
     
     /**
-    	 * @default {}
-    	 */
+      * @default {}
+      */
     @JSName("defines")
-    var defines_ShaderMaterial: StringDictionary[js.Any] = js.native
+    var defines_ShaderMaterial: StringDictionary[Any] = js.native
     
     /**
-    	 * @deprecated Use {@link ShaderMaterial#extensions.derivatives extensions.derivatives} instead.
-    	 */
-    var derivatives: js.Any = js.native
+      * @deprecated Use {@link ShaderMaterial#extensions.derivatives extensions.derivatives} instead.
+      */
+    var derivatives: Any = js.native
     
     /**
-    	 * @default { derivatives: false, fragDepth: false, drawBuffers: false, shaderTextureLOD: false }
-    	 */
+      * @default { derivatives: false, fragDepth: false, drawBuffers: false, shaderTextureLOD: false }
+      */
     var extensions: DrawBuffers = js.native
+    
+    /**
+      * @default false
+      */
+    var fog: Boolean = js.native
     
     var fragmentShader: String = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var glslVersion: GLSLVersion | Null = js.native
     
     /**
-    	 * @default undefined
-    	 */
+      * @default undefined
+      */
     var index0AttributeName: js.UndefOr[String] = js.native
     
+    var isShaderMaterial: Boolean = js.native
+    
     /**
-    	 * @default false
-    	 */
+      * @default false
+      */
     var lights: Boolean = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var linewidth: Double = js.native
-    
-    /**
-    	 * @default false
-    	 */
-    var morphNormals: Boolean = js.native
-    
-    /**
-    	 * @default false
-    	 */
-    var morphTargets: Boolean = js.native
     
     def setValues(parameters: ShaderMaterialParameters): Unit = js.native
     
     /**
-    	 * @default false
-    	 */
-    var skinning: Boolean = js.native
+      * @default {}
+      */
+    var uniforms: StringDictionary[IUniform[Any]] = js.native
     
     /**
-    	 * @default {}
-    	 */
-    var uniforms: StringDictionary[IUniform] = js.native
-    
-    /**
-    	 * @default false
-    	 */
+      * @default false
+      */
     var uniformsNeedUpdate: Boolean = js.native
     
     var vertexShader: String = js.native
     
     /**
-    	 * @default false
-    	 */
+      * @default false
+      */
     var wireframe: Boolean = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var wireframeLinewidth: Double = js.native
   }
   
@@ -114,6 +106,8 @@ object shaderMaterialMod {
     
     var extensions: js.UndefOr[Derivatives] = js.undefined
     
+    var fog: js.UndefOr[Boolean] = js.undefined
+    
     var fragmentShader: js.UndefOr[String] = js.undefined
     
     var glslVersion: js.UndefOr[GLSLVersion] = js.undefined
@@ -122,13 +116,7 @@ object shaderMaterialMod {
     
     var linewidth: js.UndefOr[Double] = js.undefined
     
-    var morphNormals: js.UndefOr[Boolean] = js.undefined
-    
-    var morphTargets: js.UndefOr[Boolean] = js.undefined
-    
-    var skinning: js.UndefOr[Boolean] = js.undefined
-    
-    var uniforms: js.UndefOr[StringDictionary[IUniform]] = js.undefined
+    var uniforms: js.UndefOr[StringDictionary[IUniform[Any]]] = js.undefined
     
     var vertexShader: js.UndefOr[String] = js.undefined
     
@@ -153,6 +141,10 @@ object shaderMaterialMod {
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
+      inline def setFog(value: Boolean): Self = StObject.set(x, "fog", value.asInstanceOf[js.Any])
+      
+      inline def setFogUndefined: Self = StObject.set(x, "fog", js.undefined)
+      
       inline def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
       
       inline def setFragmentShaderUndefined: Self = StObject.set(x, "fragmentShader", js.undefined)
@@ -169,19 +161,7 @@ object shaderMaterialMod {
       
       inline def setLinewidthUndefined: Self = StObject.set(x, "linewidth", js.undefined)
       
-      inline def setMorphNormals(value: Boolean): Self = StObject.set(x, "morphNormals", value.asInstanceOf[js.Any])
-      
-      inline def setMorphNormalsUndefined: Self = StObject.set(x, "morphNormals", js.undefined)
-      
-      inline def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
-      
-      inline def setMorphTargetsUndefined: Self = StObject.set(x, "morphTargets", js.undefined)
-      
-      inline def setSkinning(value: Boolean): Self = StObject.set(x, "skinning", value.asInstanceOf[js.Any])
-      
-      inline def setSkinningUndefined: Self = StObject.set(x, "skinning", js.undefined)
-      
-      inline def setUniforms(value: StringDictionary[IUniform]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+      inline def setUniforms(value: StringDictionary[IUniform[Any]]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       
       inline def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
       

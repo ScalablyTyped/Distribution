@@ -32,7 +32,7 @@ trait ASPxClientTreeViewNode extends StObject {
   /**
     * Gets the HTML object that contains the current node.
     */
-  def GetHtmlElement(): js.Any
+  def GetHtmlElement(): Any
   
   /**
     * Returns the URL pointing to the image displayed within the node.
@@ -146,7 +146,7 @@ object ASPxClientTreeViewNode {
     GetChecked: () => Boolean,
     GetEnabled: () => Boolean,
     GetExpanded: () => Boolean,
-    GetHtmlElement: () => js.Any,
+    GetHtmlElement: () => Any,
     GetImageUrl: () => String,
     GetNavigateUrl: () => String,
     GetNode: Double => ASPxClientTreeViewNode,
@@ -181,7 +181,7 @@ object ASPxClientTreeViewNode {
     
     inline def setGetExpanded(value: () => Boolean): Self = StObject.set(x, "GetExpanded", js.Any.fromFunction0(value))
     
-    inline def setGetHtmlElement(value: () => js.Any): Self = StObject.set(x, "GetHtmlElement", js.Any.fromFunction0(value))
+    inline def setGetHtmlElement(value: () => Any): Self = StObject.set(x, "GetHtmlElement", js.Any.fromFunction0(value))
     
     inline def setGetImageUrl(value: () => String): Self = StObject.set(x, "GetImageUrl", js.Any.fromFunction0(value))
     

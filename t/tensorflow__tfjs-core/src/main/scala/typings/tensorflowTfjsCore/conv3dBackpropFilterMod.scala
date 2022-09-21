@@ -21,27 +21,13 @@ object conv3dBackpropFilterMod {
     dy: Tensor[R4 | R5],
     filterShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
-    pad: same_
-  ): Tensor5D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor5D]
-  inline def conv3DBackpropFilter(
-    x: Tensor[R4 | R5],
-    dy: Tensor[R4 | R5],
-    filterShape: js.Tuple5[Double, Double, Double, Double, Double],
-    strides: js.Tuple3[Double, Double, Double],
-    pad: valid_
+    pad: same_ | valid_
   ): Tensor5D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor5D]
   inline def conv3DBackpropFilter(
     x: Tensor[R4 | R5],
     dy: Tensor[R4 | R5],
     filterShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: Double,
-    pad: same_
-  ): Tensor5D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor5D]
-  inline def conv3DBackpropFilter(
-    x: Tensor[R4 | R5],
-    dy: Tensor[R4 | R5],
-    filterShape: js.Tuple5[Double, Double, Double, Double, Double],
-    strides: Double,
-    pad: valid_
+    pad: same_ | valid_
   ): Tensor5D = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3DBackpropFilter")(x.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], filterShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Tensor5D]
 }

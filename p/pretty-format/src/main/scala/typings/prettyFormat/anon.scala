@@ -26,4 +26,38 @@ object anon {
       inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     }
   }
+  
+  /* Inlined std.Required<std.Partial<{ readonly comment :string,  readonly content :string,  readonly prop :string,  readonly tag :string,  readonly value :string}>> */
+  trait RequiredPartialreadonlyco extends StObject {
+    
+    var comment: String
+    
+    var content: String
+    
+    var prop: String
+    
+    var tag: String
+    
+    var value: String
+  }
+  object RequiredPartialreadonlyco {
+    
+    inline def apply(comment: String, content: String, prop: String, tag: String, value: String): RequiredPartialreadonlyco = {
+      val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], prop = prop.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RequiredPartialreadonlyco]
+    }
+    
+    extension [Self <: RequiredPartialreadonlyco](x: Self) {
+      
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+      
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
 }

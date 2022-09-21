@@ -1,14 +1,12 @@
 package typings.inquirer.mod
 
-import typings.inquirer.mod.prompts.PromptConstructor
+import typings.inquirer.mod.inquirer.prompts.PromptConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides prompts for answering questions.
-  */
-trait PromptModuleBase extends StObject {
+@js.native
+trait PromptModuleBase extends PromptFunction {
   
   /**
     * Registers a new prompt-type.
@@ -19,24 +17,10 @@ trait PromptModuleBase extends StObject {
     * @param prompt
     * The constructor of the prompt.
     */
-  def registerPrompt(name: String, prompt: PromptConstructor): Unit
+  def registerPrompt(name: String, prompt: PromptConstructor): Unit = js.native
   
   /**
     * Registers the default prompts.
     */
-  def restoreDefaultPrompts(): Unit
-}
-object PromptModuleBase {
-  
-  inline def apply(registerPrompt: (String, PromptConstructor) => Unit, restoreDefaultPrompts: () => Unit): PromptModuleBase = {
-    val __obj = js.Dynamic.literal(registerPrompt = js.Any.fromFunction2(registerPrompt), restoreDefaultPrompts = js.Any.fromFunction0(restoreDefaultPrompts))
-    __obj.asInstanceOf[PromptModuleBase]
-  }
-  
-  extension [Self <: PromptModuleBase](x: Self) {
-    
-    inline def setRegisterPrompt(value: (String, PromptConstructor) => Unit): Self = StObject.set(x, "registerPrompt", js.Any.fromFunction2(value))
-    
-    inline def setRestoreDefaultPrompts(value: () => Unit): Self = StObject.set(x, "restoreDefaultPrompts", js.Any.fromFunction0(value))
-  }
+  def restoreDefaultPrompts(): Unit = js.native
 }

@@ -28,7 +28,7 @@ object ExecuteBatchDmlResponse {
     
     inline def setResultSetsUndefined: Self = StObject.set(x, "resultSets", js.undefined)
     
-    inline def setResultSetsVarargs(value: ResultSet*): Self = StObject.set(x, "resultSets", js.Array(value :_*))
+    inline def setResultSetsVarargs(value: ResultSet*): Self = StObject.set(x, "resultSets", js.Array(value*))
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

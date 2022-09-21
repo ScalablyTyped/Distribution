@@ -1,9 +1,8 @@
 package typings.grommet
 
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
+import typings.react.mod.ClassAttributes
 import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.FC
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
@@ -13,27 +12,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object accordionPanelMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/AccordionPanel", "AccordionPanel")
   @js.native
-  class AccordionPanel protected ()
-    extends Component[
-          AccordionPanelProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
-          ComponentState, 
-          js.Any
-        ] {
-    def this(props: AccordionPanelProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
-    def this(
-      props: AccordionPanelProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
-      context: js.Any
-    ) = this()
+  val AccordionPanel: FC[AccordionPanelExtendedProps] = js.native
+  
+  trait AccordionPanelExtendedProps
+    extends StObject
+       with AccordionPanelProps
+       with ClassAttributes[HTMLDivElement]
+       with HTMLAttributes[HTMLDivElement]
+  object AccordionPanelExtendedProps {
+    
+    inline def apply(): AccordionPanelExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AccordionPanelExtendedProps]
+    }
   }
-  @JSImport("grommet/components/AccordionPanel", "AccordionPanel")
-  @js.native
-  val AccordionPanel: ComponentClass[
-    AccordionPanelProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
-    ComponentState
-  ] = js.native
   
   trait AccordionPanelProps extends StObject {
     
@@ -59,4 +53,6 @@ object accordionPanelMod {
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     }
   }
+  
+  type divType = DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]
 }

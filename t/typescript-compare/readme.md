@@ -10,10 +10,10 @@ TypeScript generics to compare types
 | ------------------ | :-------------: |
 | Full name          | typescript-compare |
 | Keywords           | compare, generic, typescript, types |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 19968136 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3319538.6666666665 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/ksxnodemodules/typescript-compare#readme)

@@ -1,11 +1,12 @@
 package typings.cesium.anon
 
-import typings.cesium.mod.VertexFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PerPositionHeight extends StObject {
+  
+  var arcType: js.UndefOr[typings.cesium.mod.ArcType] = js.undefined
   
   var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
@@ -19,9 +20,7 @@ trait PerPositionHeight extends StObject {
   
   var polygonHierarchy: typings.cesium.mod.PolygonHierarchy
   
-  var stRotation: js.UndefOr[Double] = js.undefined
-  
-  var vertexFormat: js.UndefOr[VertexFormat] = js.undefined
+  var vertexFormat: js.UndefOr[typings.cesium.mod.VertexFormat] = js.undefined
 }
 object PerPositionHeight {
   
@@ -31,6 +30,10 @@ object PerPositionHeight {
   }
   
   extension [Self <: PerPositionHeight](x: Self) {
+    
+    inline def setArcType(value: typings.cesium.mod.ArcType): Self = StObject.set(x, "arcType", value.asInstanceOf[js.Any])
+    
+    inline def setArcTypeUndefined: Self = StObject.set(x, "arcType", js.undefined)
     
     inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
@@ -54,11 +57,7 @@ object PerPositionHeight {
     
     inline def setPolygonHierarchy(value: typings.cesium.mod.PolygonHierarchy): Self = StObject.set(x, "polygonHierarchy", value.asInstanceOf[js.Any])
     
-    inline def setStRotation(value: Double): Self = StObject.set(x, "stRotation", value.asInstanceOf[js.Any])
-    
-    inline def setStRotationUndefined: Self = StObject.set(x, "stRotation", js.undefined)
-    
-    inline def setVertexFormat(value: VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
+    inline def setVertexFormat(value: typings.cesium.mod.VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
     
     inline def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
   }

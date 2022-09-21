@@ -32,7 +32,7 @@ object containerMod {
       * @param layers An array of Layers in the model.
       * @returns Map of Node Keys to index order within the layer.
       */
-    /* private */ var buildNodeConversionMap: js.Any = js.native
+    /* private */ var buildNodeConversionMap: Any = js.native
     
     var containerNodes: Set[String] = js.native
     
@@ -141,8 +141,8 @@ object containerMod {
       *   `!returnString`.
       */
     def toJSON(): String | PyJsonDict = js.native
-    def toJSON(unused: js.Any): String | PyJsonDict = js.native
-    def toJSON(unused: js.Any, returnString: Boolean): String | PyJsonDict = js.native
+    def toJSON(unused: Any): String | PyJsonDict = js.native
+    def toJSON(unused: Any, returnString: Boolean): String | PyJsonDict = js.native
     def toJSON(unused: Unit, returnString: Boolean): String | PyJsonDict = js.native
     
     /**
@@ -204,7 +204,7 @@ object containerMod {
       
       inline def setInputs(value: SymbolicTensor | js.Array[SymbolicTensor]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      inline def setInputsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "inputs", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -212,7 +212,7 @@ object containerMod {
       
       inline def setOutputs(value: SymbolicTensor | js.Array[SymbolicTensor]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      inline def setOutputsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "outputs", js.Array(value*))
     }
   }
 }

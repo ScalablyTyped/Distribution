@@ -1,6 +1,5 @@
 package typings.balancedMatch
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +20,9 @@ object mod {
     * For example, `{{a}` will match `['{', 'a', '']` and `{a}}` will match `['', 'a', '}']`
     */
   inline def apply(a: String, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
-  inline def apply(a: String, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
-  inline def apply(a: RegExp, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
-  inline def apply(a: RegExp, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  inline def apply(a: String, b: js.RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  inline def apply(a: js.RegExp, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  inline def apply(a: js.RegExp, b: js.RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
   
   @JSImport("balanced-match", JSImport.Namespace)
   @js.native
@@ -34,9 +33,9 @@ object mod {
     * return an array with indexes: `[ <a index>, <b index> ]`.
     */
   inline def range(a: String, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
-  inline def range(a: String, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
-  inline def range(a: RegExp, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
-  inline def range(a: RegExp, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  inline def range(a: String, b: js.RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  inline def range(a: js.RegExp, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  inline def range(a: js.RegExp, b: js.RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
   
   trait Output extends StObject {
     

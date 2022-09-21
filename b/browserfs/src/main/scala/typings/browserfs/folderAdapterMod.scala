@@ -9,8 +9,7 @@ import typings.browserfs.fileSystemMod.BFSOneArgCallback
 import typings.browserfs.fileSystemMod.BaseFileSystem
 import typings.browserfs.fileSystemMod.FileSystem
 import typings.browserfs.fileSystemMod.FileSystemOptions
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object folderAdapterMod {
   
   @JSImport("browserfs/dist/node/backend/FolderAdapter", JSImport.Default)
   @js.native
-  class default protected () extends FolderAdapter {
+  open class default protected () extends FolderAdapter {
     /**
       * Wraps a file system, and uses the given folder as its root.
       *
@@ -73,7 +72,7 @@ object folderAdapterMod {
     override def chownSync(p: String, isLchown: Boolean, uid: Double, gid: Double): Unit = js.native
     
     /* InferMemberOverrides */
-    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
+    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, Any]): Unit = js.native
     
     /* InferMemberOverrides */
     override def exists(p: String, cb: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
@@ -111,9 +110,9 @@ object folderAdapterMod {
     override def readFile(fname: String, encoding: Null, flag: FileFlag, cb: BFSCallback[String | Buffer]): Unit = js.native
     
     /* InferMemberOverrides */
-    override def readFileSync(fname: String, encoding: String, flag: FileFlag): js.Any = js.native
+    override def readFileSync(fname: String, encoding: String, flag: FileFlag): Any = js.native
     /* InferMemberOverrides */
-    override def readFileSync(fname: String, encoding: Null, flag: FileFlag): js.Any = js.native
+    override def readFileSync(fname: String, encoding: Null, flag: FileFlag): Any = js.native
     
     /* InferMemberOverrides */
     override def readdir(p: String, cb: BFSCallback[js.Array[String]]): Unit = js.native
@@ -174,15 +173,15 @@ object folderAdapterMod {
     override def unlinkSync(p: String): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimes(p: String, atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+    override def utimes(p: String, atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimesSync(p: String, atime: Date, mtime: Date): Unit = js.native
+    override def utimesSync(p: String, atime: js.Date, mtime: js.Date): Unit = js.native
     
     /* InferMemberOverrides */
-    override def writeFile(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    override def writeFile(fname: String, data: Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
     /* InferMemberOverrides */
-    override def writeFile(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    override def writeFile(fname: String, data: Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
   }
   
   trait FolderAdapterOptions extends StObject {

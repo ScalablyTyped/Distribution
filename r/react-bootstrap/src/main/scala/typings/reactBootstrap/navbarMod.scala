@@ -2,11 +2,11 @@ package typings.reactBootstrap
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.react.mod.Component
+import typings.react.mod.ElementType
 import typings.react.mod.HTMLProps
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod.ReactType
 import typings.reactBootstrap.mod.Sizes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,8 +16,8 @@ object navbarMod {
   
   @JSImport("react-bootstrap/lib/Navbar", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[NavbarProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[NavbarProps, js.Object, Any]
   @JSImport("react-bootstrap/lib/Navbar", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -25,7 +25,7 @@ object navbarMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Navbar", "Brand")
   @js.native
-  class Brand ()
+  open class Brand ()
     extends typings.reactBootstrap.navbarBrandMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Navbar", "Brand")
@@ -36,7 +36,7 @@ object navbarMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Navbar", "Collapse")
   @js.native
-  class Collapse ()
+  open class Collapse ()
     extends typings.reactBootstrap.navbarCollapseMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Navbar", "Collapse")
@@ -47,8 +47,8 @@ object navbarMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Navbar", "Form")
   @js.native
-  class Form ()
-    extends Component[NavbarFormProps, js.Object, js.Any]
+  open class Form ()
+    extends Component[NavbarFormProps, js.Object, Any]
   /* static member */
   @JSImport("react-bootstrap/lib/Navbar", "Form")
   @js.native
@@ -58,7 +58,7 @@ object navbarMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Navbar", "Header")
   @js.native
-  class Header ()
+  open class Header ()
     extends typings.reactBootstrap.navbarHeaderMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Navbar", "Header")
@@ -69,8 +69,8 @@ object navbarMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Navbar", "Link")
   @js.native
-  class Link ()
-    extends Component[NavbarLinkProps, js.Object, js.Any]
+  open class Link ()
+    extends Component[NavbarLinkProps, js.Object, Any]
   /* static member */
   @JSImport("react-bootstrap/lib/Navbar", "Link")
   @js.native
@@ -80,8 +80,8 @@ object navbarMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Navbar", "Text")
   @js.native
-  class Text ()
-    extends Component[NavbarTextProps, js.Object, js.Any]
+  open class Text ()
+    extends Component[NavbarTextProps, js.Object, Any]
   /* static member */
   @JSImport("react-bootstrap/lib/Navbar", "Text")
   @js.native
@@ -91,7 +91,7 @@ object navbarMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Navbar", "Toggle")
   @js.native
-  class Toggle ()
+  open class Toggle ()
     extends typings.reactBootstrap.navbarToggleMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Navbar", "Toggle")
@@ -99,19 +99,15 @@ object navbarMod {
   def Toggle: Instantiable0[typings.reactBootstrap.navbarToggleMod.^] = js.native
   inline def Toggle_=(x: Instantiable0[typings.reactBootstrap.navbarToggleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Toggle")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait Navbar
-    extends Component[NavbarProps, js.Object, js.Any]
+  type Navbar = Component[NavbarProps, js.Object, Any]
   
-  @js.native
-  trait NavbarForm
-    extends Component[NavbarFormProps, js.Object, js.Any]
+  type NavbarForm = Component[NavbarFormProps, js.Object, Any]
   
   trait NavbarFormProps
     extends StObject
        with HTMLProps[NavbarForm] {
     
-    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var componentClass: js.UndefOr[ElementType[Any]] = js.undefined
     
     var pullLeft: js.UndefOr[Boolean] = js.undefined
     
@@ -126,7 +122,7 @@ object navbarMod {
     
     extension [Self <: NavbarFormProps](x: Self) {
       
-      inline def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ElementType[Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       inline def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
       
@@ -140,9 +136,7 @@ object navbarMod {
     }
   }
   
-  @js.native
-  trait NavbarLink
-    extends Component[NavbarLinkProps, js.Object, js.Any]
+  type NavbarLink = Component[NavbarLinkProps, js.Object, Any]
   
   /**
     * the classes below aren't present in lib/
@@ -155,7 +149,7 @@ object navbarMod {
     var href_NavbarLinkProps: String
     
     @JSName("onClick")
-    var onClick_NavbarLinkProps: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
+    var onClick_NavbarLinkProps: js.UndefOr[MouseEventHandler[Any]] = js.undefined
   }
   object NavbarLinkProps {
     
@@ -168,7 +162,7 @@ object navbarMod {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      inline def setOnClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     }
@@ -178,7 +172,7 @@ object navbarMod {
     extends StObject
        with HTMLProps[Navbar] {
     
-    var brand: js.UndefOr[js.Any] = js.undefined
+    var brand: js.UndefOr[Any] = js.undefined
     
     // TODO: Add more specific type
     var bsSize: js.UndefOr[Sizes] = js.undefined
@@ -187,7 +181,7 @@ object navbarMod {
     
     var collapseOnSelect: js.UndefOr[Boolean] = js.undefined
     
-    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var componentClass: js.UndefOr[ElementType[Any]] = js.undefined
     
     var defaultNavExpanded: js.UndefOr[Boolean] = js.undefined
     
@@ -205,7 +199,7 @@ object navbarMod {
     
     var staticTop: js.UndefOr[Boolean] = js.undefined
     
-    var toggleButton: js.UndefOr[js.Any] = js.undefined
+    var toggleButton: js.UndefOr[Any] = js.undefined
     
     // TODO: Add more specific type
     var toggleNavKey: js.UndefOr[String | Double] = js.undefined
@@ -219,7 +213,7 @@ object navbarMod {
     
     extension [Self <: NavbarProps](x: Self) {
       
-      inline def setBrand(value: js.Any): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+      inline def setBrand(value: Any): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
       inline def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
       
@@ -235,7 +229,7 @@ object navbarMod {
       
       inline def setCollapseOnSelectUndefined: Self = StObject.set(x, "collapseOnSelect", js.undefined)
       
-      inline def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ElementType[Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       inline def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
       
@@ -271,7 +265,7 @@ object navbarMod {
       
       inline def setStaticTopUndefined: Self = StObject.set(x, "staticTop", js.undefined)
       
-      inline def setToggleButton(value: js.Any): Self = StObject.set(x, "toggleButton", value.asInstanceOf[js.Any])
+      inline def setToggleButton(value: Any): Self = StObject.set(x, "toggleButton", value.asInstanceOf[js.Any])
       
       inline def setToggleButtonUndefined: Self = StObject.set(x, "toggleButton", js.undefined)
       
@@ -281,9 +275,7 @@ object navbarMod {
     }
   }
   
-  @js.native
-  trait NavbarText
-    extends Component[NavbarTextProps, js.Object, js.Any]
+  type NavbarText = Component[NavbarTextProps, js.Object, Any]
   
   trait NavbarTextProps
     extends StObject

@@ -12,7 +12,7 @@ object Express {
     
     def flash(): StringDictionary[js.Array[String]] = js.native
     def flash(message: String): js.Array[String] = js.native
-    def flash(`type`: String, format: String, args: js.Any*): Double = js.native
+    def flash(`type`: String, format: String, args: Any*): Double = js.native
     def flash(`type`: String, message: String): Double = js.native
     def flash(`type`: String, message: js.Array[String]): Double = js.native
   }

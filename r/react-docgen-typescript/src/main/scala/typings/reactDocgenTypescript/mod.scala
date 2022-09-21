@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("react-docgen-typescript", "Parser")
   @js.native
-  class Parser protected ()
+  open class Parser protected ()
     extends typings.reactDocgenTypescript.parserMod.Parser {
     def this(program: Program, opts: ParserOptions) = this()
   }

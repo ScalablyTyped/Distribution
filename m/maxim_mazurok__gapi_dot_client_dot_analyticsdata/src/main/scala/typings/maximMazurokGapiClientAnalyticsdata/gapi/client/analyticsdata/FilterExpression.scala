@@ -9,7 +9,7 @@ trait FilterExpression extends StObject {
   /** The FilterExpressions in and_group have an AND relationship. */
   var andGroup: js.UndefOr[FilterExpressionList] = js.undefined
   
-  /** A primitive filter. All fields in filter in same FilterExpression needs to be either all dimensions or metrics. */
+  /** A primitive filter. In the same FilterExpression, all of the filter's field names need to be either all dimensions or all metrics. */
   var filter: js.UndefOr[Filter] = js.undefined
   
   /** The FilterExpression is NOT of not_expression. */

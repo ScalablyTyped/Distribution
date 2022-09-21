@@ -24,7 +24,7 @@ trait StartBeaconDiscoveryOptions extends StObject {
   /**
     * iBeacon设备广播的 uuids
     */
-  var uuids: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var uuids: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object StartBeaconDiscoveryOptions {
   
@@ -47,10 +47,10 @@ object StartBeaconDiscoveryOptions {
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    inline def setUuids(value: js.Array[js.Any]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
+    inline def setUuids(value: js.Array[Any]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
     
     inline def setUuidsUndefined: Self = StObject.set(x, "uuids", js.undefined)
     
-    inline def setUuidsVarargs(value: js.Any*): Self = StObject.set(x, "uuids", js.Array(value :_*))
+    inline def setUuidsVarargs(value: Any*): Self = StObject.set(x, "uuids", js.Array(value*))
   }
 }

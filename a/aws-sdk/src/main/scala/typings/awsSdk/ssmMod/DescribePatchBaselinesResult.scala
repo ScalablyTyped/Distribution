@@ -29,7 +29,7 @@ object DescribePatchBaselinesResult {
     
     inline def setBaselineIdentitiesUndefined: Self = StObject.set(x, "BaselineIdentities", js.undefined)
     
-    inline def setBaselineIdentitiesVarargs(value: PatchBaselineIdentity*): Self = StObject.set(x, "BaselineIdentities", js.Array(value :_*))
+    inline def setBaselineIdentitiesVarargs(value: PatchBaselineIdentity*): Self = StObject.set(x, "BaselineIdentities", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

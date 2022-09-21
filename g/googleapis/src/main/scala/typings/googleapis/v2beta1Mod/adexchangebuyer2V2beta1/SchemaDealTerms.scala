@@ -4,34 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The deal terms specify the details of a Product/deal. They specify things
-  * like price per buyer, the type of pricing model (e.g., fixed price,
-  * auction) and expected impressions from the publisher.
-  */
 trait SchemaDealTerms extends StObject {
   
   /**
     * Visibility of the URL in bid requests. (default: BRANDED)
     */
-  var brandingType: js.UndefOr[String] = js.undefined
+  var brandingType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Publisher provided description for the terms.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Non-binding estimate of the estimated gross spend for this deal. Can be
-    * set by buyer or seller.
+    * Non-binding estimate of the estimated gross spend for this deal. Can be set by buyer or seller.
     */
   var estimatedGrossSpend: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
-    * Non-binding estimate of the impressions served per day. Can be set by
-    * buyer or seller.
+    * Non-binding estimate of the impressions served per day. Can be set by buyer or seller.
     */
-  var estimatedImpressionsPerDay: js.UndefOr[String] = js.undefined
+  var estimatedImpressionsPerDay: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The terms for guaranteed fixed price deals.
@@ -49,12 +42,9 @@ trait SchemaDealTerms extends StObject {
   var nonGuaranteedFixedPriceTerms: js.UndefOr[SchemaNonGuaranteedFixedPriceTerms] = js.undefined
   
   /**
-    * The time zone name. For deals with Cost Per Day billing, defines the time
-    * zone used to mark the boundaries of a day. It should be an IANA TZ name,
-    * such as &quot;America/Los_Angeles&quot;. For more information, see
-    * https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.
+    * The time zone name. For deals with Cost Per Day billing, defines the time zone used to mark the boundaries of a day. It should be an IANA TZ name, such as "America/Los_Angeles". For more information, see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.
     */
-  var sellerTimeZone: js.UndefOr[String] = js.undefined
+  var sellerTimeZone: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDealTerms {
   
@@ -67,9 +57,13 @@ object SchemaDealTerms {
     
     inline def setBrandingType(value: String): Self = StObject.set(x, "brandingType", value.asInstanceOf[js.Any])
     
+    inline def setBrandingTypeNull: Self = StObject.set(x, "brandingType", null)
+    
     inline def setBrandingTypeUndefined: Self = StObject.set(x, "brandingType", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
@@ -78,6 +72,8 @@ object SchemaDealTerms {
     inline def setEstimatedGrossSpendUndefined: Self = StObject.set(x, "estimatedGrossSpend", js.undefined)
     
     inline def setEstimatedImpressionsPerDay(value: String): Self = StObject.set(x, "estimatedImpressionsPerDay", value.asInstanceOf[js.Any])
+    
+    inline def setEstimatedImpressionsPerDayNull: Self = StObject.set(x, "estimatedImpressionsPerDay", null)
     
     inline def setEstimatedImpressionsPerDayUndefined: Self = StObject.set(x, "estimatedImpressionsPerDay", js.undefined)
     
@@ -94,6 +90,8 @@ object SchemaDealTerms {
     inline def setNonGuaranteedFixedPriceTermsUndefined: Self = StObject.set(x, "nonGuaranteedFixedPriceTerms", js.undefined)
     
     inline def setSellerTimeZone(value: String): Self = StObject.set(x, "sellerTimeZone", value.asInstanceOf[js.Any])
+    
+    inline def setSellerTimeZoneNull: Self = StObject.set(x, "sellerTimeZone", null)
     
     inline def setSellerTimeZoneUndefined: Self = StObject.set(x, "sellerTimeZone", js.undefined)
   }

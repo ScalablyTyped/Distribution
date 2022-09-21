@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-firebase", "RNFirebase.notifications.Android.ChannelGroup")
 @js.native
-class ChannelGroup protected () extends StObject {
+open class ChannelGroup protected () extends StObject {
   def this(groupId: String, name: String) = this()
   
   var groupId: String = js.native

@@ -194,7 +194,7 @@ object AndroidGeneralDeviceConfiguration {
     
     inline def setAppsHideListUndefined: Self = StObject.set(x, "appsHideList", js.undefined)
     
-    inline def setAppsHideListVarargs(value: AppListItem*): Self = StObject.set(x, "appsHideList", js.Array(value :_*))
+    inline def setAppsHideListVarargs(value: AppListItem*): Self = StObject.set(x, "appsHideList", js.Array(value*))
     
     inline def setAppsInstallAllowList(value: NullableOption[js.Array[AppListItem]]): Self = StObject.set(x, "appsInstallAllowList", value.asInstanceOf[js.Any])
     
@@ -202,7 +202,7 @@ object AndroidGeneralDeviceConfiguration {
     
     inline def setAppsInstallAllowListUndefined: Self = StObject.set(x, "appsInstallAllowList", js.undefined)
     
-    inline def setAppsInstallAllowListVarargs(value: AppListItem*): Self = StObject.set(x, "appsInstallAllowList", js.Array(value :_*))
+    inline def setAppsInstallAllowListVarargs(value: AppListItem*): Self = StObject.set(x, "appsInstallAllowList", js.Array(value*))
     
     inline def setAppsLaunchBlockList(value: NullableOption[js.Array[AppListItem]]): Self = StObject.set(x, "appsLaunchBlockList", value.asInstanceOf[js.Any])
     
@@ -210,7 +210,7 @@ object AndroidGeneralDeviceConfiguration {
     
     inline def setAppsLaunchBlockListUndefined: Self = StObject.set(x, "appsLaunchBlockList", js.undefined)
     
-    inline def setAppsLaunchBlockListVarargs(value: AppListItem*): Self = StObject.set(x, "appsLaunchBlockList", js.Array(value :_*))
+    inline def setAppsLaunchBlockListVarargs(value: AppListItem*): Self = StObject.set(x, "appsLaunchBlockList", js.Array(value*))
     
     inline def setBluetoothBlocked(value: Boolean): Self = StObject.set(x, "bluetoothBlocked", value.asInstanceOf[js.Any])
     
@@ -246,7 +246,7 @@ object AndroidGeneralDeviceConfiguration {
     
     inline def setCompliantAppsListUndefined: Self = StObject.set(x, "compliantAppsList", js.undefined)
     
-    inline def setCompliantAppsListVarargs(value: AppListItem*): Self = StObject.set(x, "compliantAppsList", js.Array(value :_*))
+    inline def setCompliantAppsListVarargs(value: AppListItem*): Self = StObject.set(x, "compliantAppsList", js.Array(value*))
     
     inline def setDeviceSharingAllowed(value: Boolean): Self = StObject.set(x, "deviceSharingAllowed", value.asInstanceOf[js.Any])
     
@@ -274,7 +274,7 @@ object AndroidGeneralDeviceConfiguration {
     
     inline def setKioskModeAppsUndefined: Self = StObject.set(x, "kioskModeApps", js.undefined)
     
-    inline def setKioskModeAppsVarargs(value: AppListItem*): Self = StObject.set(x, "kioskModeApps", js.Array(value :_*))
+    inline def setKioskModeAppsVarargs(value: AppListItem*): Self = StObject.set(x, "kioskModeApps", js.Array(value*))
     
     inline def setKioskModeBlockSleepButton(value: Boolean): Self = StObject.set(x, "kioskModeBlockSleepButton", value.asInstanceOf[js.Any])
     

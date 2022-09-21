@@ -24,7 +24,7 @@ trait ImageWMSOptions extends StObject {
   
   var logo: js.UndefOr[String | LogoOptions] = js.undefined
   
-  var params: StringDictionary[js.Any]
+  var params: StringDictionary[Any]
   
   var projection: ProjectionLike
   
@@ -38,7 +38,7 @@ trait ImageWMSOptions extends StObject {
 }
 object ImageWMSOptions {
   
-  inline def apply(params: StringDictionary[js.Any]): ImageWMSOptions = {
+  inline def apply(params: StringDictionary[Any]): ImageWMSOptions = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageWMSOptions]
   }
@@ -49,7 +49,7 @@ object ImageWMSOptions {
     
     inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
     
-    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value*))
     
     inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
@@ -67,7 +67,7 @@ object ImageWMSOptions {
     
     inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
-    inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
@@ -81,7 +81,7 @@ object ImageWMSOptions {
     
     inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
     
-    inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+    inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value*))
     
     inline def setServerType(value: ServerType | String): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
     

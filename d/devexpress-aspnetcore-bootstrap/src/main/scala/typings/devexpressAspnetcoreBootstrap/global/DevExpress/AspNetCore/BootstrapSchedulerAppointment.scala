@@ -1,16 +1,15 @@
 package typings.devexpressAspnetcoreBootstrap.global.DevExpress.AspNetCore
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("DevExpress.AspNetCore.BootstrapSchedulerAppointment")
 @js.native
-class BootstrapSchedulerAppointment protected ()
+open class BootstrapSchedulerAppointment protected ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointment {
-  /* protected */ def this(instance: js.Any) = this()
+  /* protected */ def this(instance: Any) = this()
   
   /* CompleteClass */
   override def addResource(resourceId: js.Object): Unit = js.native
@@ -34,10 +33,10 @@ class BootstrapSchedulerAppointment protected ()
   override def getDuration(): Double = js.native
   
   /* CompleteClass */
-  override def getEnd(): Date = js.native
+  override def getEnd(): js.Date = js.native
   
   /* CompleteClass */
-  override def getId(): js.Any = js.native
+  override def getId(): Any = js.native
   
   /* CompleteClass */
   override def getLabelId(): Double = js.native
@@ -52,10 +51,10 @@ class BootstrapSchedulerAppointment protected ()
   override def getRecurrencePattern(): typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointment | Null = js.native
   
   /* CompleteClass */
-  override def getResource(index: Double): js.Any = js.native
+  override def getResource(index: Double): Any = js.native
   
   /* CompleteClass */
-  override def getStart(): Date = js.native
+  override def getStart(): js.Date = js.native
   
   /* CompleteClass */
   override def getStatusId(): Double = js.native
@@ -64,7 +63,7 @@ class BootstrapSchedulerAppointment protected ()
   override def getSubject(): String = js.native
   
   /* protected */ /* CompleteClass */
-  override val instance: js.Any = js.native
+  override val instance: Any = js.native
   
   /* CompleteClass */
   override val interval: typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapTimeInterval | Null = js.native
@@ -90,10 +89,10 @@ class BootstrapSchedulerAppointment protected ()
   override def setDuration(duration: Double): Unit = js.native
   
   /* CompleteClass */
-  override def setEnd(end: Date): Unit = js.native
+  override def setEnd(end: js.Date): Unit = js.native
   
   /* CompleteClass */
-  override def setId(id: js.Any): Unit = js.native
+  override def setId(id: Any): Unit = js.native
   
   /* CompleteClass */
   override def setLabelId(statusId: Double): Unit = js.native
@@ -107,7 +106,7 @@ class BootstrapSchedulerAppointment protected ()
   ): Unit = js.native
   
   /* CompleteClass */
-  override def setStart(start: Date): Unit = js.native
+  override def setStart(start: js.Date): Unit = js.native
   
   /* CompleteClass */
   override def setStatusId(statusId: Double): Unit = js.native

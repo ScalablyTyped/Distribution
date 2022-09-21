@@ -4,18 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Specification for a token used to generate iframes. The token specifies
-  * what data the admin is allowed to modify and the URI the iframe is allowed
-  * to communiate with.
-  */
 trait SchemaAdministratorWebTokenSpec extends StObject {
-  
-  /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;androidenterprise#administratorWebTokenSpec&quot;.
-    */
-  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Options for displaying the Managed Configuration page.
@@ -23,15 +12,14 @@ trait SchemaAdministratorWebTokenSpec extends StObject {
   var managedConfigurations: js.UndefOr[SchemaAdministratorWebTokenSpecManagedConfigurations] = js.undefined
   
   /**
-    * The URI of the parent frame hosting the iframe. To prevent XSS, the
-    * iframe may not be hosted at other URIs. This URI must be https.
+    * The URI of the parent frame hosting the iframe. To prevent XSS, the iframe may not be hosted at other URIs. This URI must be https. Use whitespaces to separate multiple parent URIs.
     */
-  var parent: js.UndefOr[String] = js.undefined
+  var parent: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Deprecated. Use PlaySearch.approveApps.
     */
-  var permission: js.UndefOr[js.Array[String]] = js.undefined
+  var permission: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * Options for displaying the managed Play Search apps page.
@@ -52,6 +40,11 @@ trait SchemaAdministratorWebTokenSpec extends StObject {
     * Options for displaying the Web Apps page.
     */
   var webApps: js.UndefOr[SchemaAdministratorWebTokenSpecWebApps] = js.undefined
+  
+  /**
+    * Options for displaying the Zero Touch page.
+    */
+  var zeroTouch: js.UndefOr[SchemaAdministratorWebTokenSpecZeroTouch] = js.undefined
 }
 object SchemaAdministratorWebTokenSpec {
   
@@ -62,23 +55,23 @@ object SchemaAdministratorWebTokenSpec {
   
   extension [Self <: SchemaAdministratorWebTokenSpec](x: Self) {
     
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
-    
     inline def setManagedConfigurations(value: SchemaAdministratorWebTokenSpecManagedConfigurations): Self = StObject.set(x, "managedConfigurations", value.asInstanceOf[js.Any])
     
     inline def setManagedConfigurationsUndefined: Self = StObject.set(x, "managedConfigurations", js.undefined)
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
+    
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     inline def setPermission(value: js.Array[String]): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
+    inline def setPermissionNull: Self = StObject.set(x, "permission", null)
+    
     inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    inline def setPermissionVarargs(value: String*): Self = StObject.set(x, "permission", js.Array(value :_*))
+    inline def setPermissionVarargs(value: String*): Self = StObject.set(x, "permission", js.Array(value*))
     
     inline def setPlaySearch(value: SchemaAdministratorWebTokenSpecPlaySearch): Self = StObject.set(x, "playSearch", value.asInstanceOf[js.Any])
     
@@ -95,5 +88,9 @@ object SchemaAdministratorWebTokenSpec {
     inline def setWebApps(value: SchemaAdministratorWebTokenSpecWebApps): Self = StObject.set(x, "webApps", value.asInstanceOf[js.Any])
     
     inline def setWebAppsUndefined: Self = StObject.set(x, "webApps", js.undefined)
+    
+    inline def setZeroTouch(value: SchemaAdministratorWebTokenSpecZeroTouch): Self = StObject.set(x, "zeroTouch", value.asInstanceOf[js.Any])
+    
+    inline def setZeroTouchUndefined: Self = StObject.set(x, "zeroTouch", js.undefined)
   }
 }

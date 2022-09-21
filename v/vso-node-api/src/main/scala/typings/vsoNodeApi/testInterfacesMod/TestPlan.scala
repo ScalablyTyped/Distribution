@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +21,7 @@ trait TestPlan extends StObject {
   
   var description: String
   
-  var endDate: Date
+  var endDate: js.Date
   
   var id: Double
   
@@ -46,13 +45,13 @@ trait TestPlan extends StObject {
   
   var rootSuite: ShallowReference
   
-  var startDate: Date
+  var startDate: js.Date
   
   var state: String
   
   var updatedBy: IdentityRef
   
-  var updatedDate: Date
+  var updatedDate: js.Date
   
   var url: String
 }
@@ -66,7 +65,7 @@ object TestPlan {
     buildDefinition: ShallowReference,
     clientUrl: String,
     description: String,
-    endDate: Date,
+    endDate: js.Date,
     id: Double,
     iteration: String,
     manualTestEnvironment: TestEnvironment,
@@ -78,10 +77,10 @@ object TestPlan {
     releaseEnvironmentDefinition: ReleaseEnvironmentDefinitionReference,
     revision: Double,
     rootSuite: ShallowReference,
-    startDate: Date,
+    startDate: js.Date,
     state: String,
     updatedBy: IdentityRef,
-    updatedDate: Date,
+    updatedDate: js.Date,
     url: String
   ): TestPlan = {
     val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], automatedTestEnvironment = automatedTestEnvironment.asInstanceOf[js.Any], automatedTestSettings = automatedTestSettings.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildDefinition = buildDefinition.asInstanceOf[js.Any], clientUrl = clientUrl.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], iteration = iteration.asInstanceOf[js.Any], manualTestEnvironment = manualTestEnvironment.asInstanceOf[js.Any], manualTestSettings = manualTestSettings.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], previousBuild = previousBuild.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], releaseEnvironmentDefinition = releaseEnvironmentDefinition.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], rootSuite = rootSuite.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], updatedBy = updatedBy.asInstanceOf[js.Any], updatedDate = updatedDate.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
@@ -104,7 +103,7 @@ object TestPlan {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -128,13 +127,13 @@ object TestPlan {
     
     inline def setRootSuite(value: ShallowReference): Self = StObject.set(x, "rootSuite", value.asInstanceOf[js.Any])
     
-    inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setUpdatedBy(value: IdentityRef): Self = StObject.set(x, "updatedBy", value.asInstanceOf[js.Any])
     
-    inline def setUpdatedDate(value: Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
+    inline def setUpdatedDate(value: js.Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

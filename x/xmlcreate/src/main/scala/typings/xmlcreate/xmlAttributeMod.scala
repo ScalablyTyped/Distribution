@@ -12,7 +12,7 @@ object xmlAttributeMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlAttribute", JSImport.Default)
   @js.native
-  class default[Parent] protected ()
+  open class default[Parent] protected ()
     extends StObject
        with XmlAttribute[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlAttributeOptions) = this()
@@ -51,15 +51,15 @@ object xmlAttributeMod {
   @js.native
   trait XmlAttribute[Parent] extends StObject {
     
-    /* private */ val _children: js.Any = js.native
+    /* private */ val _children: Any = js.native
     
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _name: Any = js.native
     
-    /* private */ val _parent: js.Any = js.native
+    /* private */ val _parent: Any = js.native
     
-    /* private */ val _replaceInvalidCharsInName: js.Any = js.native
+    /* private */ val _replaceInvalidCharsInName: Any = js.native
     
-    /* private */ val _validation: js.Any = js.native
+    /* private */ val _validation: Any = js.native
     
     /**
       * Adds a character reference to this attribute and returns the new

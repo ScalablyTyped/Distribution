@@ -62,11 +62,11 @@ object runtime {
     var Enabled: Boolean
     
     /** determines the state of the feature. The concrete semantics depends on the concrete {@link FormFeature} . */
-    var State: js.Any
+    var State: Any
   }
   object FeatureState {
     
-    inline def apply(Enabled: Boolean, State: js.Any): FeatureState = {
+    inline def apply(Enabled: Boolean, State: Any): FeatureState = {
       val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
       __obj.asInstanceOf[FeatureState]
     }
@@ -75,7 +75,7 @@ object runtime {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     }
   }
   
@@ -223,7 +223,7 @@ object runtime {
       isEnabled: Double => Boolean,
       isInsertionRow: () => Boolean,
       isModifiedRow: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeEventListener: XEventListener => Unit
     ): FormOperations = {
@@ -472,7 +472,7 @@ object runtime {
       disjunctiveTermRemoved: FilterEvent => Unit,
       disposing: EventObject => Unit,
       predicateExpressionChanged: FilterEvent => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XFilterControllerListener = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disjunctiveTermAdded = js.Any.fromFunction1(disjunctiveTermAdded), disjunctiveTermRemoved = js.Any.fromFunction1(disjunctiveTermRemoved), disposing = js.Any.fromFunction1(disposing), predicateExpressionChanged = js.Any.fromFunction1(predicateExpressionChanged), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -631,7 +631,7 @@ object runtime {
       autoTabOrder: () => Unit,
       createEnumeration: () => XEnumeration,
       dispose: () => Unit,
-      getByIndex: Double => js.Any,
+      getByIndex: Double => Any,
       getContainer: () => XControlContainer,
       getControls: () => SafeArray[XControl],
       getCount: () => Double,
@@ -643,7 +643,7 @@ object runtime {
       getPredicateExpressions: () => SafeArray[SafeArray[String]],
       getSupportedModes: () => SafeArray[String],
       hasElements: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeActivateListener: XFormControllerListener => Unit,
       removeConfirmDeleteListener: XConfirmDeleteListener => Unit,
@@ -851,7 +851,7 @@ object runtime {
       isEnabled: Double => Boolean,
       isInsertionRow: () => Boolean,
       isModifiedRow: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeEventListener: XEventListener => Unit
     ): XFormOperations = {

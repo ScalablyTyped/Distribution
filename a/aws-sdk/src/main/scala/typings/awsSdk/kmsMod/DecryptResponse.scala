@@ -12,12 +12,12 @@ trait DecryptResponse extends StObject {
   var EncryptionAlgorithm: js.UndefOr[EncryptionAlgorithmSpec] = js.undefined
   
   /**
-    * The Amazon Resource Name (key ARN) of the CMK that was used to decrypt the ciphertext.
+    * The Amazon Resource Name (key ARN) of the KMS key that was used to decrypt the ciphertext.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.undefined
   
   /**
-    * Decrypted plaintext data. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
+    * Decrypted plaintext data. When you use the HTTP API or the Amazon Web Services CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
     */
   var Plaintext: js.UndefOr[PlaintextType] = js.undefined
 }

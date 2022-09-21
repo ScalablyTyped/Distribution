@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Link extends StObject {
   
-  /** A set of attributes on the link. You have have up to 32 attributes per link. */
+  /** A set of attributes on the link. Up to 32 attributes can be specified per link. */
   var attributes: js.UndefOr[Attributes] = js.undefined
   
-  /** The [SPAN_ID] for a span within a trace. */
+  /** The `[SPAN_ID]` for a span within a trace. */
   var spanId: js.UndefOr[String] = js.undefined
   
-  /** The [TRACE_ID] for a trace within a project. */
+  /** The `[TRACE_ID]` for a trace within a project. */
   var traceId: js.UndefOr[String] = js.undefined
   
   /** The relationship of the current span relative to the linked span. */

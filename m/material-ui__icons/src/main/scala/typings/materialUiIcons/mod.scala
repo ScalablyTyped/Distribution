@@ -1,7 +1,8 @@
 package typings.materialUiIcons
 
-import typings.materialUiCore.svgIconSvgIconMod.SvgIconProps
-import typings.react.mod.ComponentType
+import typings.materialUiCore.overridableComponentMod.OverridableComponent
+import typings.materialUiCore.svgIconSvgIconMod.SvgIconTypeMap
+import typings.materialUiIcons.materialUiIconsStrings.svg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18736,6 +18737,26 @@ object mod {
   @js.native
   val StarHalfTwoTone: SvgIconComponent = js.native
   
+  @JSImport("@material-ui/icons", "StarOutline")
+  @js.native
+  val StarOutline: SvgIconComponent = js.native
+  
+  @JSImport("@material-ui/icons", "StarOutlineOutlined")
+  @js.native
+  val StarOutlineOutlined: SvgIconComponent = js.native
+  
+  @JSImport("@material-ui/icons", "StarOutlineRounded")
+  @js.native
+  val StarOutlineRounded: SvgIconComponent = js.native
+  
+  @JSImport("@material-ui/icons", "StarOutlineSharp")
+  @js.native
+  val StarOutlineSharp: SvgIconComponent = js.native
+  
+  @JSImport("@material-ui/icons", "StarOutlineTwoTone")
+  @js.native
+  val StarOutlineTwoTone: SvgIconComponent = js.native
+  
   @JSImport("@material-ui/icons", "StarOutlined")
   @js.native
   val StarOutlined: SvgIconComponent = js.native
@@ -20720,6 +20741,26 @@ object mod {
   @js.native
   val Twitter: SvgIconComponent = js.native
   
+  @JSImport("@material-ui/icons", "TwoWheeler")
+  @js.native
+  val TwoWheeler: SvgIconComponent = js.native
+  
+  @JSImport("@material-ui/icons", "TwoWheelerOutlined")
+  @js.native
+  val TwoWheelerOutlined: SvgIconComponent = js.native
+  
+  @JSImport("@material-ui/icons", "TwoWheelerRounded")
+  @js.native
+  val TwoWheelerRounded: SvgIconComponent = js.native
+  
+  @JSImport("@material-ui/icons", "TwoWheelerSharp")
+  @js.native
+  val TwoWheelerSharp: SvgIconComponent = js.native
+  
+  @JSImport("@material-ui/icons", "TwoWheelerTwoTone")
+  @js.native
+  val TwoWheelerTwoTone: SvgIconComponent = js.native
+  
   @JSImport("@material-ui/icons", "Unarchive")
   @js.native
   val Unarchive: SvgIconComponent = js.native
@@ -22188,5 +22229,5 @@ object mod {
   @js.native
   val ZoomOutTwoTone: SvgIconComponent = js.native
   
-  type SvgIconComponent = ComponentType[SvgIconProps]
+  type SvgIconComponent = OverridableComponent[SvgIconTypeMap[js.Object, svg]]
 }

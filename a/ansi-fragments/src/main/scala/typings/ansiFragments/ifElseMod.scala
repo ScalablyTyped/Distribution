@@ -13,7 +13,7 @@ object ifElseMod {
   
   @JSImport("ansi-fragments/build/fragments/IfElse", "IfElse")
   @js.native
-  class IfElse_ protected ()
+  open class IfElse_ protected ()
     extends StObject
        with IFragment {
     def this(condition: Condition, ifTrueFragment: String) = this()
@@ -26,11 +26,11 @@ object ifElseMod {
     /* CompleteClass */
     override def build(): String = js.native
     
-    /* private */ val condition: js.Any = js.native
+    /* private */ val condition: Any = js.native
     
-    /* private */ val elseFragment: js.Any = js.native
+    /* private */ val elseFragment: Any = js.native
     
-    /* private */ val ifTrueFragment: js.Any = js.native
+    /* private */ val ifTrueFragment: Any = js.native
   }
   
   inline def ifElse(condition: Condition, ifTrueFragment: String): IfElse_ = (^.asInstanceOf[js.Dynamic].applyDynamic("ifElse")(condition.asInstanceOf[js.Any], ifTrueFragment.asInstanceOf[js.Any])).asInstanceOf[IfElse_]

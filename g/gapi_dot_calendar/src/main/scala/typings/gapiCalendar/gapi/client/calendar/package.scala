@@ -5,12 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AclDeleteParameters = typings.gapiCalendar.gapi.client.calendar.AclGetParameters
+type AclDeleteParameters = AclGetParameters
 
-type date = java.lang.String
+type date = String
 
-type datetime = java.lang.String
+type datetime = String
 
-type etag = java.lang.String
+type etag = String
 
-type integer = scala.Double
+type integer = Double

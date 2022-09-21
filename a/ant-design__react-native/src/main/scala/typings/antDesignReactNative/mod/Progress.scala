@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "Progress")
 @js.native
-class Progress protected () extends default {
+open class Progress protected () extends default {
   def this(props: ProgressProps) = this()
 }
 /* static members */

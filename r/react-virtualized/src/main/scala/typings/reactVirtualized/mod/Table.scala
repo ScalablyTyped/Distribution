@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-virtualized", "Table")
 @js.native
-class Table protected ()
+open class Table protected ()
   extends typings.reactVirtualized.esTableMod.Table {
   def this(props: TableProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TableProps, context: js.Any) = this()
+  def this(props: TableProps, context: Any) = this()
 }
 /* static members */
 object Table {

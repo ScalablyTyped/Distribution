@@ -34,9 +34,9 @@ trait QueryPropertyValue
 object QueryPropertyValue {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_boolVal: () => Boolean,
     get_intVal: () => Double,
     get_queryPropertyValueTypeIndex: () => Double,

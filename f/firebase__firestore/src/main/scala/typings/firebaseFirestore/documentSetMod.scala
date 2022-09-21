@@ -3,51 +3,67 @@ package typings.firebaseFirestore
 import typings.firebaseFirestore.documentComparatorMod.DocumentComparator
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
 import typings.firebaseFirestore.documentMod.Document
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/model/document_set", JSImport.Namespace)
-@js.native
-object documentSetMod extends js.Object {
+object documentSetMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/model/document_set", "DocumentSet")
   @js.native
   /** The default ordering is by key if the comparator is omitted */
-  class DocumentSet () extends js.Object {
+  open class DocumentSet () extends StObject {
     def this(comp: DocumentComparator) = this()
-    var comparator: js.Any = js.native
-    var copy: js.Any = js.native
-    var keyedMap: js.Any = js.native
-    var sortedSet: js.Any = js.native
+    
     /** Inserts or updates a document with the same key */
     def add(doc: Document): DocumentSet = js.native
+    
+    /* private */ var comparator: Any = js.native
+    
+    /* private */ var copy: Any = js.native
+    
     /** Deletes a document with a given key */
     def delete(key: DocumentKey): DocumentSet = js.native
+    
     def first(): Document | Null = js.native
+    
     /** Iterates documents in order defined by "comparator" */
     def forEach(cb: js.Function1[/* doc */ Document, Unit]): Unit = js.native
+    
     def get(key: DocumentKey): Document | Null = js.native
+    
     def has(key: DocumentKey): Boolean = js.native
+    
     /**
       * Returns the index of the provided key in the document set, or -1 if the
       * document key is not present in the set;
       */
     def indexOf(key: DocumentKey): Double = js.native
+    
     def isEmpty(): Boolean = js.native
+    
     def isEqual(): Boolean = js.native
     def isEqual(other: DocumentSet): Boolean = js.native
+    
+    /* private */ var keyedMap: Any = js.native
+    
     def last(): Document | Null = js.native
+    
     def size: Double = js.native
+    
+    /* private */ var sortedSet: Any = js.native
   }
-  
   /* static members */
-  @js.native
-  object DocumentSet extends js.Object {
+  object DocumentSet {
+    
+    @JSImport("@firebase/firestore/dist/firestore/src/model/document_set", "DocumentSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns an empty copy of the existing DocumentSet, using the same
       * comparator.
       */
-    def emptySet(oldSet: DocumentSet): DocumentSet = js.native
+    inline def emptySet(oldSet: DocumentSet): DocumentSet = ^.asInstanceOf[js.Dynamic].applyDynamic("emptySet")(oldSet.asInstanceOf[js.Any]).asInstanceOf[DocumentSet]
   }
-  
 }
-

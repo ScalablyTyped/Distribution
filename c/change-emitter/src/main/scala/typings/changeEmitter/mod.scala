@@ -24,20 +24,20 @@ object mod {
   
   trait ChangeEmitter extends StObject {
     
-    def emit(args: js.Any*): Unit
+    def emit(args: Any*): Unit
     
     def listen(listener: Listener): Unlisten
   }
   object ChangeEmitter {
     
-    inline def apply(emit: /* repeated */ js.Any => Unit, listen: Listener => Unlisten): ChangeEmitter = {
+    inline def apply(emit: /* repeated */ Any => Unit, listen: Listener => Unlisten): ChangeEmitter = {
       val __obj = js.Dynamic.literal(emit = js.Any.fromFunction1(emit), listen = js.Any.fromFunction1(listen))
       __obj.asInstanceOf[ChangeEmitter]
     }
     
     extension [Self <: ChangeEmitter](x: Self) {
       
-      inline def setEmit(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
+      inline def setEmit(value: /* repeated */ Any => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       
       inline def setListen(value: Listener => Unlisten): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
     }
@@ -172,7 +172,7 @@ object mod {
   @js.native
   trait Listener extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   type ListenerOf0 = js.Function0[Unit]

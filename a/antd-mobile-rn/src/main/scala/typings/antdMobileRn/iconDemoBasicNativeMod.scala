@@ -9,7 +9,7 @@ object iconDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/icon/demo/basic.native", JSImport.Default)
   @js.native
-  class default () extends IConDemo
+  open class default () extends IConDemo
   
   @JSImport("antd-mobile-rn/lib/icon/demo/basic.native", "description")
   @js.native
@@ -20,6 +20,5 @@ object iconDemoBasicNativeMod {
   val title: /* "Icon" */ String = js.native
   
   @js.native
-  trait IConDemo
-    extends Component[js.Any, js.Any, js.Any]
+  trait IConDemo extends Component[Any, Any, Any]
 }

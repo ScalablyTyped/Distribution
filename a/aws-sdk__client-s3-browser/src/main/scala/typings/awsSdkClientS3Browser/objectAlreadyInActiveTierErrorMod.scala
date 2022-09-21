@@ -8,5 +8,5 @@ object objectAlreadyInActiveTierErrorMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/ObjectAlreadyInActiveTierError", "ObjectAlreadyInActiveTierError")
   @js.native
-  val ObjectAlreadyInActiveTierError: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ObjectAlreadyInActiveTierError: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

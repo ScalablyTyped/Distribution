@@ -38,7 +38,7 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("@tweenjs/tween.js", "default.Group")
     @js.native
-    class GroupCls () extends Group
+    open class GroupCls () extends Group
     
     inline def Group_=(x: Instantiable0[Group]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
     
@@ -54,14 +54,14 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("@tweenjs/tween.js", "default.Sequence")
     @js.native
-    class SequenceCls () extends Sequence
+    open class SequenceCls () extends Sequence
     
     inline def Sequence_=(x: TypeofSequence & Instantiable0[Sequence]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sequence")(x.asInstanceOf[js.Any])
     
     @JSImport("@tweenjs/tween.js", "default.Tween")
     @js.native
     def Tween: Instantiable2[
-        /* import warning: RewrittenClass.unapply cls was tparam T */ /* _object */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam T */ /* _object */ Any, 
         /* _group */ js.UndefOr[Group | `false`], 
         typings.tweenjsTweenJs.mod.Tween[UnknownProps]
       ] = js.native
@@ -69,15 +69,15 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("@tweenjs/tween.js", "default.Tween")
     @js.native
-    class TweenCls[T /* <: UnknownProps */] protected () extends Tween[T] {
-      def this(_object: /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any) = this()
-      def this(_object: /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, _group: Group) = this()
-      def this(_object: /* import warning: RewrittenClass.unapply cls was tparam T */ js.Any, _group: `false`) = this()
+    open class TweenCls[T /* <: UnknownProps */] protected () extends Tween[T] {
+      def this(_object: /* import warning: RewrittenClass.unapply cls was tparam T */ Any) = this()
+      def this(_object: /* import warning: RewrittenClass.unapply cls was tparam T */ Any, _group: Group) = this()
+      def this(_object: /* import warning: RewrittenClass.unapply cls was tparam T */ Any, _group: `false`) = this()
     }
     
     inline def Tween_=(
       x: Instantiable2[
-          /* import warning: RewrittenClass.unapply cls was tparam T */ /* _object */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam T */ /* _object */ Any, 
           /* _group */ js.UndefOr[Group | `false`], 
           Tween[UnknownProps]
         ]
@@ -88,9 +88,9 @@ object mod {
     def VERSION: String = js.native
     inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
     
-    inline def add(tween: Tween[Record[String, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(tween.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def add(tween: Tween[Record[String, Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(tween.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def getAll(): js.Array[Tween[Record[String, js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Array[Tween[Record[String, js.Any]]]]
+    inline def getAll(): js.Array[Tween[Record[String, Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Array[Tween[Record[String, Any]]]]
     
     inline def nextId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextId")().asInstanceOf[Double]
     @JSImport("@tweenjs/tween.js", "default.nextId")
@@ -101,7 +101,7 @@ object mod {
     
     inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
     
-    inline def remove(tween: Tween[Record[String, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(tween.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def remove(tween: Tween[Record[String, Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(tween.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def removeAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")().asInstanceOf[Unit]
     
@@ -184,11 +184,11 @@ object mod {
     */
   @JSImport("@tweenjs/tween.js", "Group")
   @js.native
-  class Group () extends StObject {
+  open class Group () extends StObject {
     
-    /* private */ var _tweens: js.Any = js.native
+    /* private */ var _tweens: Any = js.native
     
-    /* private */ var _tweensAddedDuringUpdate: js.Any = js.native
+    /* private */ var _tweensAddedDuringUpdate: Any = js.native
     
     def add(tween: Tween[UnknownProps]): Unit = js.native
     
@@ -230,7 +230,7 @@ object mod {
     */
   @JSImport("@tweenjs/tween.js", "Sequence")
   @js.native
-  class Sequence () extends StObject
+  open class Sequence () extends StObject
   object Sequence {
     
     @JSImport("@tweenjs/tween.js", "Sequence")
@@ -240,8 +240,8 @@ object mod {
     /* static member */
     @JSImport("@tweenjs/tween.js", "Sequence._nextId")
     @js.native
-    def _nextId: js.Any = js.native
-    inline def _nextId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_nextId")(x.asInstanceOf[js.Any])
+    def _nextId: Any = js.native
+    inline def _nextId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_nextId")(x.asInstanceOf[js.Any])
     
     /* static member */
     inline def nextId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextId")().asInstanceOf[Double]
@@ -249,74 +249,74 @@ object mod {
   
   @JSImport("@tweenjs/tween.js", "Tween")
   @js.native
-  class Tween[T /* <: UnknownProps */] protected () extends StObject {
+  open class Tween[T /* <: UnknownProps */] protected () extends StObject {
     def this(_object: T) = this()
     def this(_object: T, _group: Group) = this()
     def this(_object: T, _group: `false`) = this()
     
-    /* private */ var _chainedTweens: js.Any = js.native
+    /* private */ var _chainedTweens: Any = js.native
     
-    /* private */ var _delayTime: js.Any = js.native
+    /* private */ var _delayTime: Any = js.native
     
-    /* private */ var _duration: js.Any = js.native
+    /* private */ var _duration: Any = js.native
     
-    /* private */ var _easingFunction: js.Any = js.native
+    /* private */ var _easingFunction: Any = js.native
     
-    /* private */ var _goToEnd: js.Any = js.native
+    /* private */ var _goToEnd: Any = js.native
     
-    /* private */ var _group: js.Any = js.native
+    /* private */ var _group: Any = js.native
     
-    /* private */ var _handleRelativeValue: js.Any = js.native
+    /* private */ var _handleRelativeValue: Any = js.native
     
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _id: Any = js.native
     
-    /* private */ var _initialRepeat: js.Any = js.native
+    /* private */ var _initialRepeat: Any = js.native
     
-    /* private */ var _interpolationFunction: js.Any = js.native
+    /* private */ var _interpolationFunction: Any = js.native
     
-    /* private */ var _isChainStopped: js.Any = js.native
+    /* private */ var _isChainStopped: Any = js.native
     
-    /* private */ var _isPaused: js.Any = js.native
+    /* private */ var _isPaused: Any = js.native
     
-    /* private */ var _isPlaying: js.Any = js.native
+    /* private */ var _isPlaying: Any = js.native
     
-    /* private */ var _object: js.Any = js.native
+    /* private */ var _object: Any = js.native
     
-    /* private */ var _onCompleteCallback: js.Any = js.native
+    /* private */ var _onCompleteCallback: Any = js.native
     
-    /* private */ var _onRepeatCallback: js.Any = js.native
+    /* private */ var _onRepeatCallback: Any = js.native
     
-    /* private */ var _onStartCallback: js.Any = js.native
+    /* private */ var _onStartCallback: Any = js.native
     
-    /* private */ var _onStartCallbackFired: js.Any = js.native
+    /* private */ var _onStartCallbackFired: Any = js.native
     
-    /* private */ var _onStopCallback: js.Any = js.native
+    /* private */ var _onStopCallback: Any = js.native
     
-    /* private */ var _onUpdateCallback: js.Any = js.native
+    /* private */ var _onUpdateCallback: Any = js.native
     
-    /* private */ var _pauseStart: js.Any = js.native
+    /* private */ var _pauseStart: Any = js.native
     
-    /* private */ var _repeat: js.Any = js.native
+    /* private */ var _repeat: Any = js.native
     
-    /* private */ var _repeatDelayTime: js.Any = js.native
+    /* private */ var _repeatDelayTime: Any = js.native
     
-    /* private */ var _reversed: js.Any = js.native
+    /* private */ var _reversed: Any = js.native
     
-    /* private */ var _setupProperties: js.Any = js.native
+    /* private */ var _setupProperties: Any = js.native
     
-    /* private */ var _startTime: js.Any = js.native
+    /* private */ var _startTime: Any = js.native
     
-    /* private */ var _swapEndStartRepeatValues: js.Any = js.native
+    /* private */ var _swapEndStartRepeatValues: Any = js.native
     
-    /* private */ var _updateProperties: js.Any = js.native
+    /* private */ var _updateProperties: Any = js.native
     
-    /* private */ var _valuesEnd: js.Any = js.native
+    /* private */ var _valuesEnd: Any = js.native
     
-    /* private */ var _valuesStart: js.Any = js.native
+    /* private */ var _valuesStart: Any = js.native
     
-    /* private */ var _valuesStartRepeat: js.Any = js.native
+    /* private */ var _valuesStartRepeat: Any = js.native
     
-    /* private */ var _yoyo: js.Any = js.native
+    /* private */ var _yoyo: Any = js.native
     
     def chain(tweens: Tween[UnknownProps]*): this.type = js.native
     
@@ -385,9 +385,9 @@ object mod {
   @js.native
   val VERSION: /* "18.6.4" */ String = js.native
   
-  inline def add(tween: Tween[Record[String, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(tween.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def add(tween: Tween[Record[String, Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(tween.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def getAll(): js.Array[Tween[Record[String, js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Array[Tween[Record[String, js.Any]]]]
+  inline def getAll(): js.Array[Tween[Record[String, Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Array[Tween[Record[String, Any]]]]
   
   /* static member */
   /* was `typeof Sequence.nextId` */
@@ -398,7 +398,7 @@ object mod {
   def now: js.Function0[Double] = js.native
   inline def now_=(x: js.Function0[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("now")(x.asInstanceOf[js.Any])
   
-  inline def remove(tween: Tween[Record[String, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(tween.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def remove(tween: Tween[Record[String, Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(tween.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def removeAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")().asInstanceOf[Unit]
   
@@ -414,5 +414,5 @@ object mod {
     */
   type InterpolationFunction = js.Function2[/* v */ js.Array[Double], /* k */ Double, Double]
   
-  type UnknownProps = Record[String, js.Any]
+  type UnknownProps = Record[String, Any]
 }

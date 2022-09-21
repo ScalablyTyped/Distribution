@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forge-apis", "CommandsApi")
 @js.native
-class CommandsApi () extends StObject {
+open class CommandsApi () extends StObject {
+  def this(apiClient: Any) = this()
   
   /**
     * Checks if a user has permission to perform specified actions on specified resources.

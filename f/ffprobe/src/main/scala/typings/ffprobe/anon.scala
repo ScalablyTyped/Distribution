@@ -1,5 +1,6 @@
 package typings.ffprobe
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,6 +28,8 @@ object anon {
     var lyrics: Double
     
     var original: Double
+    
+    var timed_thumbnails: js.UndefOr[Double] = js.undefined
     
     var visual_impaired: Double
   }
@@ -71,32 +74,40 @@ object anon {
       
       inline def setOriginal(value: Double): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
       
+      inline def setTimed_thumbnails(value: Double): Self = StObject.set(x, "timed_thumbnails", value.asInstanceOf[js.Any])
+      
+      inline def setTimed_thumbnailsUndefined: Self = StObject.set(x, "timed_thumbnails", js.undefined)
+      
       inline def setVisual_impaired(value: Double): Self = StObject.set(x, "visual_impaired", value.asInstanceOf[js.Any])
     }
   }
   
-  trait Creationtime extends StObject {
+  trait Dicttag
+    extends StObject
+       with /* tag */ StringDictionary[js.UndefOr[String]] {
     
     var creation_time: js.UndefOr[String] = js.undefined
     
-    var handler_name: String
+    var handler_name: js.UndefOr[String] = js.undefined
     
     var language: js.UndefOr[String] = js.undefined
   }
-  object Creationtime {
+  object Dicttag {
     
-    inline def apply(handler_name: String): Creationtime = {
-      val __obj = js.Dynamic.literal(handler_name = handler_name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Creationtime]
+    inline def apply(): Dicttag = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Dicttag]
     }
     
-    extension [Self <: Creationtime](x: Self) {
+    extension [Self <: Dicttag](x: Self) {
       
       inline def setCreation_time(value: String): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
       
       inline def setCreation_timeUndefined: Self = StObject.set(x, "creation_time", js.undefined)
       
       inline def setHandler_name(value: String): Self = StObject.set(x, "handler_name", value.asInstanceOf[js.Any])
+      
+      inline def setHandler_nameUndefined: Self = StObject.set(x, "handler_name", js.undefined)
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       

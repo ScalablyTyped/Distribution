@@ -4,30 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Roles")
 @js.native
-class ResourceRoles protected () extends StObject {
+open class ResourceRoles protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * directory.roles.delete
-    * @desc Deletes a role.
-    * @alias directory.roles.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.customer Immutable ID of the G Suite account.
-    * @param {string} params.roleId Immutable ID of the role.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
@@ -35,25 +24,65 @@ class ResourceRoles protected () extends StObject {
   def delete(params: ParamsResourceRolesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
     params: ParamsResourceRolesDelete,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
   ): Unit = js.native
   def delete(params: ParamsResourceRolesDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceRolesDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
-  
   /**
-    * directory.roles.get
-    * @desc Retrieves a role.
-    * @alias directory.roles.get
-    * @memberOf! ()
+    * Deletes a role.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.customer Immutable ID of the G Suite account.
-    * @param {string} params.roleId Immutable ID of the role.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/admin.directory.rolemanagement'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.roles.delete({
+    *     // Immutable ID of the Google Workspace account.
+    *     customer: 'placeholder-value',
+    *     // Immutable ID of the role.
+    *     roleId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceRolesDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceRolesDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaRole] = js.native
   def get(callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
@@ -61,25 +90,80 @@ class ResourceRoles protected () extends StObject {
   def get(params: ParamsResourceRolesGet, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def get(
     params: ParamsResourceRolesGet,
-    options: BodyResponseCallback[SchemaRole],
-    callback: BodyResponseCallback[SchemaRole]
+    options: BodyResponseCallback[Readable | SchemaRole],
+    callback: BodyResponseCallback[Readable | SchemaRole]
   ): Unit = js.native
   def get(params: ParamsResourceRolesGet, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def get(params: ParamsResourceRolesGet, options: MethodOptions, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
-  
   /**
-    * directory.roles.insert
-    * @desc Creates a role.
-    * @alias directory.roles.insert
-    * @memberOf! ()
+    * Retrieves a role.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.customer Immutable ID of the G Suite account.
-    * @param {().Role} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/admin.directory.rolemanagement',
+    *       'https://www.googleapis.com/auth/admin.directory.rolemanagement.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.roles.get({
+    *     // Immutable ID of the Google Workspace account.
+    *     customer: 'placeholder-value',
+    *     // Immutable ID of the role.
+    *     roleId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "isSuperAdminRole": false,
+    *   //   "isSystemRole": false,
+    *   //   "kind": "my_kind",
+    *   //   "roleDescription": "my_roleDescription",
+    *   //   "roleId": "my_roleId",
+    *   //   "roleName": "my_roleName",
+    *   //   "rolePrivileges": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceRolesGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceRolesGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaRole] = js.native
   def insert(callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
@@ -87,8 +171,8 @@ class ResourceRoles protected () extends StObject {
   def insert(params: ParamsResourceRolesInsert, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def insert(
     params: ParamsResourceRolesInsert,
-    options: BodyResponseCallback[SchemaRole],
-    callback: BodyResponseCallback[SchemaRole]
+    options: BodyResponseCallback[Readable | SchemaRole],
+    callback: BodyResponseCallback[Readable | SchemaRole]
   ): Unit = js.native
   def insert(params: ParamsResourceRolesInsert, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def insert(
@@ -96,21 +180,85 @@ class ResourceRoles protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRole]
   ): Unit = js.native
-  
   /**
-    * directory.roles.list
-    * @desc Retrieves a paginated list of all the roles in a domain.
-    * @alias directory.roles.list
-    * @memberOf! ()
+    * Creates a role.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.customer Immutable ID of the G Suite account.
-    * @param {integer=} params.maxResults Maximum number of results to return.
-    * @param {string=} params.pageToken Token to specify the next page in the list.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/admin.directory.rolemanagement'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.roles.insert({
+    *     // Immutable ID of the Google Workspace account.
+    *     customer: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "etag": "my_etag",
+    *       //   "isSuperAdminRole": false,
+    *       //   "isSystemRole": false,
+    *       //   "kind": "my_kind",
+    *       //   "roleDescription": "my_roleDescription",
+    *       //   "roleId": "my_roleId",
+    *       //   "roleName": "my_roleName",
+    *       //   "rolePrivileges": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "isSuperAdminRole": false,
+    *   //   "isSystemRole": false,
+    *   //   "kind": "my_kind",
+    *   //   "roleDescription": "my_roleDescription",
+    *   //   "roleId": "my_roleId",
+    *   //   "roleName": "my_roleName",
+    *   //   "rolePrivileges": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceRolesInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceRolesInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaRoles] = js.native
   def list(callback: BodyResponseCallback[SchemaRoles]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRoles] = js.native
@@ -118,8 +266,8 @@ class ResourceRoles protected () extends StObject {
   def list(params: ParamsResourceRolesList, callback: BodyResponseCallback[SchemaRoles]): Unit = js.native
   def list(
     params: ParamsResourceRolesList,
-    options: BodyResponseCallback[SchemaRoles],
-    callback: BodyResponseCallback[SchemaRoles]
+    options: BodyResponseCallback[Readable | SchemaRoles],
+    callback: BodyResponseCallback[Readable | SchemaRoles]
   ): Unit = js.native
   def list(params: ParamsResourceRolesList, options: MethodOptions): GaxiosPromise[SchemaRoles] = js.native
   def list(
@@ -127,21 +275,73 @@ class ResourceRoles protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRoles]
   ): Unit = js.native
-  
   /**
-    * directory.roles.patch
-    * @desc Updates a role. This method supports patch semantics.
-    * @alias directory.roles.patch
-    * @memberOf! ()
+    * Retrieves a paginated list of all the roles in a domain.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.customer Immutable ID of the G Suite account.
-    * @param {string} params.roleId Immutable ID of the role.
-    * @param {().Role} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/admin.directory.rolemanagement',
+    *       'https://www.googleapis.com/auth/admin.directory.rolemanagement.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.roles.list({
+    *     // Immutable ID of the Google Workspace account.
+    *     customer: 'placeholder-value',
+    *     // Maximum number of results to return.
+    *     maxResults: 'placeholder-value',
+    *     // Token to specify the next page in the list.
+    *     pageToken: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "items": [],
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceRolesList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceRolesList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaRole] = js.native
   def patch(callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
@@ -149,8 +349,8 @@ class ResourceRoles protected () extends StObject {
   def patch(params: ParamsResourceRolesPatch, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def patch(
     params: ParamsResourceRolesPatch,
-    options: BodyResponseCallback[SchemaRole],
-    callback: BodyResponseCallback[SchemaRole]
+    options: BodyResponseCallback[Readable | SchemaRole],
+    callback: BodyResponseCallback[Readable | SchemaRole]
   ): Unit = js.native
   def patch(params: ParamsResourceRolesPatch, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def patch(
@@ -158,21 +358,87 @@ class ResourceRoles protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRole]
   ): Unit = js.native
-  
   /**
-    * directory.roles.update
-    * @desc Updates a role.
-    * @alias directory.roles.update
-    * @memberOf! ()
+    * Patches a role.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.customer Immutable ID of the G Suite account.
-    * @param {string} params.roleId Immutable ID of the role.
-    * @param {().Role} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/admin.directory.rolemanagement'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.roles.patch({
+    *     // Immutable ID of the Google Workspace account.
+    *     customer: 'placeholder-value',
+    *     // Immutable ID of the role.
+    *     roleId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "etag": "my_etag",
+    *       //   "isSuperAdminRole": false,
+    *       //   "isSystemRole": false,
+    *       //   "kind": "my_kind",
+    *       //   "roleDescription": "my_roleDescription",
+    *       //   "roleId": "my_roleId",
+    *       //   "roleName": "my_roleName",
+    *       //   "rolePrivileges": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "isSuperAdminRole": false,
+    *   //   "isSystemRole": false,
+    *   //   "kind": "my_kind",
+    *   //   "roleDescription": "my_roleDescription",
+    *   //   "roleId": "my_roleId",
+    *   //   "roleName": "my_roleName",
+    *   //   "rolePrivileges": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def patch(params: ParamsResourceRolesPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceRolesPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaRole] = js.native
   def update(callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
@@ -180,13 +446,93 @@ class ResourceRoles protected () extends StObject {
   def update(params: ParamsResourceRolesUpdate, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def update(
     params: ParamsResourceRolesUpdate,
-    options: BodyResponseCallback[SchemaRole],
-    callback: BodyResponseCallback[SchemaRole]
+    options: BodyResponseCallback[Readable | SchemaRole],
+    callback: BodyResponseCallback[Readable | SchemaRole]
   ): Unit = js.native
   def update(params: ParamsResourceRolesUpdate, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def update(
     params: ParamsResourceRolesUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRole]
+  ): Unit = js.native
+  /**
+    * Updates a role.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/admin.directory.rolemanagement'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.roles.update({
+    *     // Immutable ID of the Google Workspace account.
+    *     customer: 'placeholder-value',
+    *     // Immutable ID of the role.
+    *     roleId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "etag": "my_etag",
+    *       //   "isSuperAdminRole": false,
+    *       //   "isSystemRole": false,
+    *       //   "kind": "my_kind",
+    *       //   "roleDescription": "my_roleDescription",
+    *       //   "roleId": "my_roleId",
+    *       //   "roleName": "my_roleName",
+    *       //   "rolePrivileges": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "isSuperAdminRole": false,
+    *   //   "isSystemRole": false,
+    *   //   "kind": "my_kind",
+    *   //   "roleDescription": "my_roleDescription",
+    *   //   "roleId": "my_roleId",
+    *   //   "roleName": "my_roleName",
+    *   //   "rolePrivileges": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceRolesUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceRolesUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

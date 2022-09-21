@@ -107,7 +107,7 @@ trait Vector4 extends StObject {
   def floor(): Vector4 = js.native
   
   /**
-    * Gets a new Vector4 from current Vector3 floored values
+    * Gets a new Vector4 from current Vector4 fractional values
     * @returns a new Vector4
     */
   def fract(): Vector4 = js.native

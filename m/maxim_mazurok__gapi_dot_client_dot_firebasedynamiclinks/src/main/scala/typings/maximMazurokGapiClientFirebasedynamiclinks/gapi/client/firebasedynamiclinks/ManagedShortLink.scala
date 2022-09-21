@@ -41,7 +41,7 @@ object ManagedShortLink {
     
     inline def setFlaggedAttributeUndefined: Self = StObject.set(x, "flaggedAttribute", js.undefined)
     
-    inline def setFlaggedAttributeVarargs(value: String*): Self = StObject.set(x, "flaggedAttribute", js.Array(value :_*))
+    inline def setFlaggedAttributeVarargs(value: String*): Self = StObject.set(x, "flaggedAttribute", js.Array(value*))
     
     inline def setInfo(value: DynamicLinkInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     

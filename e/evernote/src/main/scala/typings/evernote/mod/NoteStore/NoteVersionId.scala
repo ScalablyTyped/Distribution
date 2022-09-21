@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "NoteStore.NoteVersionId")
 @js.native
-class NoteVersionId () extends StObject {
+open class NoteVersionId () extends StObject {
   def this(args: LastEditorId) = this()
   
   var lastEditorId: js.UndefOr[UserID] = js.native

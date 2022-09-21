@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "PhysicsEngineSceneComponent")
 @js.native
-class PhysicsEngineSceneComponent protected ()
+open class PhysicsEngineSceneComponent protected ()
   extends typings.babylonjs.legacyMod.PhysicsEngineSceneComponent {
   /**
     * Creates a new instance of the component for the given scene

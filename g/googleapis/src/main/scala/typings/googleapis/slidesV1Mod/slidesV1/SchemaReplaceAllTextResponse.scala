@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The result of replacing text.
-  */
 trait SchemaReplaceAllTextResponse extends StObject {
   
   /**
     * The number of occurrences changed by replacing all text.
     */
-  var occurrencesChanged: js.UndefOr[Double] = js.undefined
+  var occurrencesChanged: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaReplaceAllTextResponse {
   
@@ -24,6 +21,8 @@ object SchemaReplaceAllTextResponse {
   extension [Self <: SchemaReplaceAllTextResponse](x: Self) {
     
     inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
+    
+    inline def setOccurrencesChangedNull: Self = StObject.set(x, "occurrencesChanged", null)
     
     inline def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
   }

@@ -62,7 +62,7 @@ object ManagedEBook {
     
     inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
-    inline def setAssignmentsVarargs(value: ManagedEBookAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: ManagedEBookAssignment*): Self = StObject.set(x, "assignments", js.Array(value*))
     
     inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
@@ -80,7 +80,7 @@ object ManagedEBook {
     
     inline def setDeviceStatesUndefined: Self = StObject.set(x, "deviceStates", js.undefined)
     
-    inline def setDeviceStatesVarargs(value: DeviceInstallState*): Self = StObject.set(x, "deviceStates", js.Array(value :_*))
+    inline def setDeviceStatesVarargs(value: DeviceInstallState*): Self = StObject.set(x, "deviceStates", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -130,6 +130,6 @@ object ManagedEBook {
     
     inline def setUserStateSummaryUndefined: Self = StObject.set(x, "userStateSummary", js.undefined)
     
-    inline def setUserStateSummaryVarargs(value: UserInstallStateSummary*): Self = StObject.set(x, "userStateSummary", js.Array(value :_*))
+    inline def setUserStateSummaryVarargs(value: UserInstallStateSummary*): Self = StObject.set(x, "userStateSummary", js.Array(value*))
   }
 }

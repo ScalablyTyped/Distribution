@@ -12,8 +12,52 @@ object mod {
   
   @JSImport("@ptomasroos/react-native-multi-slider", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[MultiSliderProps, js.Object, js.Any]
+  open class default ()
+    extends Component[MultiSliderProps, js.Object, Any]
+  
+  trait LabelProps extends StObject {
+    
+    var oneMarkerLeftPosition: Double
+    
+    var oneMarkerPressed: Boolean
+    
+    var oneMarkerValue: String | Double
+    
+    var twoMarkerLeftPosition: Double
+    
+    var twoMarkerPressed: Boolean
+    
+    var twoMarkerValue: String | Double
+  }
+  object LabelProps {
+    
+    inline def apply(
+      oneMarkerLeftPosition: Double,
+      oneMarkerPressed: Boolean,
+      oneMarkerValue: String | Double,
+      twoMarkerLeftPosition: Double,
+      twoMarkerPressed: Boolean,
+      twoMarkerValue: String | Double
+    ): LabelProps = {
+      val __obj = js.Dynamic.literal(oneMarkerLeftPosition = oneMarkerLeftPosition.asInstanceOf[js.Any], oneMarkerPressed = oneMarkerPressed.asInstanceOf[js.Any], oneMarkerValue = oneMarkerValue.asInstanceOf[js.Any], twoMarkerLeftPosition = twoMarkerLeftPosition.asInstanceOf[js.Any], twoMarkerPressed = twoMarkerPressed.asInstanceOf[js.Any], twoMarkerValue = twoMarkerValue.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LabelProps]
+    }
+    
+    extension [Self <: LabelProps](x: Self) {
+      
+      inline def setOneMarkerLeftPosition(value: Double): Self = StObject.set(x, "oneMarkerLeftPosition", value.asInstanceOf[js.Any])
+      
+      inline def setOneMarkerPressed(value: Boolean): Self = StObject.set(x, "oneMarkerPressed", value.asInstanceOf[js.Any])
+      
+      inline def setOneMarkerValue(value: String | Double): Self = StObject.set(x, "oneMarkerValue", value.asInstanceOf[js.Any])
+      
+      inline def setTwoMarkerLeftPosition(value: Double): Self = StObject.set(x, "twoMarkerLeftPosition", value.asInstanceOf[js.Any])
+      
+      inline def setTwoMarkerPressed(value: Boolean): Self = StObject.set(x, "twoMarkerPressed", value.asInstanceOf[js.Any])
+      
+      inline def setTwoMarkerValue(value: String | Double): Self = StObject.set(x, "twoMarkerValue", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait MarkerProps extends StObject {
     
@@ -64,7 +108,7 @@ object mod {
     }
   }
   
-  type MultiSlider = Component[MultiSliderProps, js.Object, js.Any]
+  type MultiSlider = Component[MultiSliderProps, js.Object, Any]
   
   trait MultiSliderProps extends StObject {
     
@@ -72,15 +116,21 @@ object mod {
     
     var containerStyle: js.UndefOr[ViewStyle] = js.undefined
     
+    var customLabel: js.UndefOr[ComponentType[LabelProps]] = js.undefined
+    
     var customMarker: js.UndefOr[ComponentType[MarkerProps]] = js.undefined
     
     var customMarkerLeft: js.UndefOr[ComponentType[MarkerProps]] = js.undefined
     
     var customMarkerRight: js.UndefOr[ComponentType[MarkerProps]] = js.undefined
     
+    var enableLabel: js.UndefOr[Boolean] = js.undefined
+    
     var enabledOne: js.UndefOr[Boolean] = js.undefined
     
     var enabledTwo: js.UndefOr[Boolean] = js.undefined
+    
+    var imageBackgroundSource: js.UndefOr[String] = js.undefined
     
     var isMarkersSeparated: js.UndefOr[Boolean] = js.undefined
     
@@ -95,6 +145,8 @@ object mod {
     var max: js.UndefOr[Double] = js.undefined
     
     var min: js.UndefOr[Double] = js.undefined
+    
+    var minMarkerOverlapDistance: js.UndefOr[Double] = js.undefined
     
     var onToggleOne: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -129,6 +181,8 @@ object mod {
     var valueSuffix: js.UndefOr[String] = js.undefined
     
     var values: js.UndefOr[js.Array[Double]] = js.undefined
+    
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object MultiSliderProps {
     
@@ -147,6 +201,10 @@ object mod {
       
       inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
       
+      inline def setCustomLabel(value: ComponentType[LabelProps]): Self = StObject.set(x, "customLabel", value.asInstanceOf[js.Any])
+      
+      inline def setCustomLabelUndefined: Self = StObject.set(x, "customLabel", js.undefined)
+      
       inline def setCustomMarker(value: ComponentType[MarkerProps]): Self = StObject.set(x, "customMarker", value.asInstanceOf[js.Any])
       
       inline def setCustomMarkerLeft(value: ComponentType[MarkerProps]): Self = StObject.set(x, "customMarkerLeft", value.asInstanceOf[js.Any])
@@ -159,6 +217,10 @@ object mod {
       
       inline def setCustomMarkerUndefined: Self = StObject.set(x, "customMarker", js.undefined)
       
+      inline def setEnableLabel(value: Boolean): Self = StObject.set(x, "enableLabel", value.asInstanceOf[js.Any])
+      
+      inline def setEnableLabelUndefined: Self = StObject.set(x, "enableLabel", js.undefined)
+      
       inline def setEnabledOne(value: Boolean): Self = StObject.set(x, "enabledOne", value.asInstanceOf[js.Any])
       
       inline def setEnabledOneUndefined: Self = StObject.set(x, "enabledOne", js.undefined)
@@ -166,6 +228,10 @@ object mod {
       inline def setEnabledTwo(value: Boolean): Self = StObject.set(x, "enabledTwo", value.asInstanceOf[js.Any])
       
       inline def setEnabledTwoUndefined: Self = StObject.set(x, "enabledTwo", js.undefined)
+      
+      inline def setImageBackgroundSource(value: String): Self = StObject.set(x, "imageBackgroundSource", value.asInstanceOf[js.Any])
+      
+      inline def setImageBackgroundSourceUndefined: Self = StObject.set(x, "imageBackgroundSource", js.undefined)
       
       inline def setIsMarkersSeparated(value: Boolean): Self = StObject.set(x, "isMarkersSeparated", value.asInstanceOf[js.Any])
       
@@ -193,6 +259,10 @@ object mod {
       
       inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
+      inline def setMinMarkerOverlapDistance(value: Double): Self = StObject.set(x, "minMarkerOverlapDistance", value.asInstanceOf[js.Any])
+      
+      inline def setMinMarkerOverlapDistanceUndefined: Self = StObject.set(x, "minMarkerOverlapDistance", js.undefined)
+      
       inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
       inline def setOnToggleOne(value: () => Unit): Self = StObject.set(x, "onToggleOne", js.Any.fromFunction0(value))
@@ -219,7 +289,7 @@ object mod {
       
       inline def setOptionsArrayUndefined: Self = StObject.set(x, "optionsArray", js.undefined)
       
-      inline def setOptionsArrayVarargs(value: Double*): Self = StObject.set(x, "optionsArray", js.Array(value :_*))
+      inline def setOptionsArrayVarargs(value: Double*): Self = StObject.set(x, "optionsArray", js.Array(value*))
       
       inline def setPressedMarkerStyle(value: ViewStyle): Self = StObject.set(x, "pressedMarkerStyle", value.asInstanceOf[js.Any])
       
@@ -265,7 +335,11 @@ object mod {
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
+      
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
 }

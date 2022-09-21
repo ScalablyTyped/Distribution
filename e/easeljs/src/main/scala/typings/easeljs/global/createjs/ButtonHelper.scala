@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.ButtonHelper")
 @js.native
-class ButtonHelper protected ()
+open class ButtonHelper protected ()
   extends StObject
      with typings.easeljs.createjs.ButtonHelper {
   def this(

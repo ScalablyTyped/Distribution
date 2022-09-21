@@ -56,17 +56,17 @@ object anon {
       
       inline def setExcludeExtensionsUndefined: Self = StObject.set(x, "excludeExtensions", js.undefined)
       
-      inline def setExcludeExtensionsVarargs(value: String*): Self = StObject.set(x, "excludeExtensions", js.Array(value :_*))
+      inline def setExcludeExtensionsVarargs(value: String*): Self = StObject.set(x, "excludeExtensions", js.Array(value*))
       
       inline def setExcludeFolders(value: js.Array[String]): Self = StObject.set(x, "excludeFolders", value.asInstanceOf[js.Any])
       
       inline def setExcludeFoldersUndefined: Self = StObject.set(x, "excludeFolders", js.undefined)
       
-      inline def setExcludeFoldersVarargs(value: String*): Self = StObject.set(x, "excludeFolders", js.Array(value :_*))
+      inline def setExcludeFoldersVarargs(value: String*): Self = StObject.set(x, "excludeFolders", js.Array(value*))
       
       inline def setFolders(value: js.Array[String]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
       
-      inline def setFoldersVarargs(value: String*): Self = StObject.set(x, "folders", js.Array(value :_*))
+      inline def setFoldersVarargs(value: String*): Self = StObject.set(x, "folders", js.Array(value*))
       
       inline def setIgnoreDotDir(value: Boolean): Self = StObject.set(x, "ignoreDotDir", value.asInstanceOf[js.Any])
       
@@ -76,7 +76,7 @@ object anon {
       
       inline def setIncludeExtensionsUndefined: Self = StObject.set(x, "includeExtensions", js.undefined)
       
-      inline def setIncludeExtensionsVarargs(value: String*): Self = StObject.set(x, "includeExtensions", js.Array(value :_*))
+      inline def setIncludeExtensionsVarargs(value: String*): Self = StObject.set(x, "includeExtensions", js.Array(value*))
       
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       

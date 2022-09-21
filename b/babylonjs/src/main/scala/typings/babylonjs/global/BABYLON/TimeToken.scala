@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON._TimeToken")
 @js.native
-class TimeToken ()
+open class TimeToken ()
   extends StObject
      with typings.babylonjs.BABYLON.TimeToken {
   

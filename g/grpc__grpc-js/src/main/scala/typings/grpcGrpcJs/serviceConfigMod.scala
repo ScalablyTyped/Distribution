@@ -1,6 +1,7 @@
 package typings.grpcGrpcJs
 
-import typings.grpcGrpcJs.loadBalancingConfigMod.LoadBalancingConfig
+import typings.grpcGrpcJs.durationMod.Duration
+import typings.grpcGrpcJs.loadBalancerMod.LoadBalancingConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ object serviceConfigMod {
   
   inline def extractAndSelectServiceConfig(txtRecord: js.Array[js.Array[String]], percentage: Double): ServiceConfig | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("extractAndSelectServiceConfig")(txtRecord.asInstanceOf[js.Any], percentage.asInstanceOf[js.Any])).asInstanceOf[ServiceConfig | Null]
   
-  inline def validateServiceConfig(obj: js.Any): ServiceConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("validateServiceConfig")(obj.asInstanceOf[js.Any]).asInstanceOf[ServiceConfig]
+  inline def validateServiceConfig(obj: Any): ServiceConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("validateServiceConfig")(obj.asInstanceOf[js.Any]).asInstanceOf[ServiceConfig]
   
   trait MethodConfig extends StObject {
     
@@ -23,7 +24,7 @@ object serviceConfigMod {
     
     var name: js.Array[MethodConfigName]
     
-    var timeout: js.UndefOr[String] = js.undefined
+    var timeout: js.UndefOr[Duration] = js.undefined
     
     var waitForReady: js.UndefOr[Boolean] = js.undefined
   }
@@ -46,9 +47,9 @@ object serviceConfigMod {
       
       inline def setName(value: js.Array[MethodConfigName]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setNameVarargs(value: MethodConfigName*): Self = StObject.set(x, "name", js.Array(value :_*))
+      inline def setNameVarargs(value: MethodConfigName*): Self = StObject.set(x, "name", js.Array(value*))
       
-      inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Duration): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
@@ -100,7 +101,7 @@ object serviceConfigMod {
       
       inline def setLoadBalancingConfig(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "loadBalancingConfig", value.asInstanceOf[js.Any])
       
-      inline def setLoadBalancingConfigVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "loadBalancingConfig", js.Array(value :_*))
+      inline def setLoadBalancingConfigVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "loadBalancingConfig", js.Array(value*))
       
       inline def setLoadBalancingPolicy(value: String): Self = StObject.set(x, "loadBalancingPolicy", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,7 @@ object serviceConfigMod {
       
       inline def setMethodConfig(value: js.Array[MethodConfig]): Self = StObject.set(x, "methodConfig", value.asInstanceOf[js.Any])
       
-      inline def setMethodConfigVarargs(value: MethodConfig*): Self = StObject.set(x, "methodConfig", js.Array(value :_*))
+      inline def setMethodConfigVarargs(value: MethodConfig*): Self = StObject.set(x, "methodConfig", js.Array(value*))
     }
   }
   
@@ -135,13 +136,13 @@ object serviceConfigMod {
       
       inline def setClientHostnameUndefined: Self = StObject.set(x, "clientHostname", js.undefined)
       
-      inline def setClientHostnameVarargs(value: String*): Self = StObject.set(x, "clientHostname", js.Array(value :_*))
+      inline def setClientHostnameVarargs(value: String*): Self = StObject.set(x, "clientHostname", js.Array(value*))
       
       inline def setClientLanguage(value: js.Array[String]): Self = StObject.set(x, "clientLanguage", value.asInstanceOf[js.Any])
       
       inline def setClientLanguageUndefined: Self = StObject.set(x, "clientLanguage", js.undefined)
       
-      inline def setClientLanguageVarargs(value: String*): Self = StObject.set(x, "clientLanguage", js.Array(value :_*))
+      inline def setClientLanguageVarargs(value: String*): Self = StObject.set(x, "clientLanguage", js.Array(value*))
       
       inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       

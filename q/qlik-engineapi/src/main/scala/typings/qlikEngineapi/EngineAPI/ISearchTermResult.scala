@@ -39,7 +39,7 @@ object ISearchTermResult {
     
     inline def setQRanges(value: js.Array[ISearchCharRange]): Self = StObject.set(x, "qRanges", value.asInstanceOf[js.Any])
     
-    inline def setQRangesVarargs(value: ISearchCharRange*): Self = StObject.set(x, "qRanges", js.Array(value :_*))
+    inline def setQRangesVarargs(value: ISearchCharRange*): Self = StObject.set(x, "qRanges", js.Array(value*))
     
     inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
   }

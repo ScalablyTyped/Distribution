@@ -10,10 +10,10 @@ npm package for blockies https://github.com/alexvandesande/blockies
 | ------------------ | :-------------: |
 | Full name          | blockies |
 | Keywords           | blockies, identicon |
-| # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 17984 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1997.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/goldylucks/blockies-npm#readme)

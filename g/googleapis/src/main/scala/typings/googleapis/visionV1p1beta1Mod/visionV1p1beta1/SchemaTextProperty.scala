@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Additional information detected on the structural component.
-  */
 trait SchemaTextProperty extends StObject {
   
   /**
@@ -36,6 +33,6 @@ object SchemaTextProperty {
     
     inline def setDetectedLanguagesUndefined: Self = StObject.set(x, "detectedLanguages", js.undefined)
     
-    inline def setDetectedLanguagesVarargs(value: SchemaDetectedLanguage*): Self = StObject.set(x, "detectedLanguages", js.Array(value :_*))
+    inline def setDetectedLanguagesVarargs(value: SchemaDetectedLanguage*): Self = StObject.set(x, "detectedLanguages", js.Array(value*))
   }
 }

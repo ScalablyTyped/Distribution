@@ -12,7 +12,7 @@ trait Camera extends StObject {
   
   def cameraPosition(x: Double, y: Double): X
   
-  def goTo(settings: StringDictionary[js.Any]): Unit
+  def goTo(settings: StringDictionary[Any]): Unit
   
   def graphPosition(x: Double, y: Double): X
   
@@ -20,7 +20,7 @@ trait Camera extends StObject {
   
   var readPrefix: String
   
-  def settings(setting: String): js.Any
+  def settings(setting: String): Any
   
   var x: Double
   
@@ -31,11 +31,11 @@ object Camera {
   inline def apply(
     angle: Double,
     cameraPosition: (Double, Double) => X,
-    goTo: StringDictionary[js.Any] => Unit,
+    goTo: StringDictionary[Any] => Unit,
     graphPosition: (Double, Double) => X,
     ratio: Double,
     readPrefix: String,
-    settings: String => js.Any,
+    settings: String => Any,
     x: Double,
     y: Double
   ): Camera = {
@@ -49,7 +49,7 @@ object Camera {
     
     inline def setCameraPosition(value: (Double, Double) => X): Self = StObject.set(x, "cameraPosition", js.Any.fromFunction2(value))
     
-    inline def setGoTo(value: StringDictionary[js.Any] => Unit): Self = StObject.set(x, "goTo", js.Any.fromFunction1(value))
+    inline def setGoTo(value: StringDictionary[Any] => Unit): Self = StObject.set(x, "goTo", js.Any.fromFunction1(value))
     
     inline def setGraphPosition(value: (Double, Double) => X): Self = StObject.set(x, "graphPosition", js.Any.fromFunction2(value))
     
@@ -57,7 +57,7 @@ object Camera {
     
     inline def setReadPrefix(value: String): Self = StObject.set(x, "readPrefix", value.asInstanceOf[js.Any])
     
-    inline def setSettings(value: String => js.Any): Self = StObject.set(x, "settings", js.Any.fromFunction1(value))
+    inline def setSettings(value: String => Any): Self = StObject.set(x, "settings", js.Any.fromFunction1(value))
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

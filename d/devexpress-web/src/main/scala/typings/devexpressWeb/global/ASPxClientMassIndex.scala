@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientMassIndex")
 @js.native
-class ASPxClientMassIndex ()
+open class ASPxClientMassIndex ()
   extends StObject
      with typings.devexpressWeb.ASPxClientMassIndex {
   

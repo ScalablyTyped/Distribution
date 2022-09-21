@@ -10,11 +10,11 @@ trait Field extends StObject {
   
   var `type`: String
   
-  var value: js.Any
+  var value: Any
 }
 object Field {
   
-  inline def apply(name: String, `type`: String, value: js.Any): Field = {
+  inline def apply(name: String, `type`: String, value: Any): Field = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
@@ -26,6 +26,6 @@ object Field {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

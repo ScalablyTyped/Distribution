@@ -10,10 +10,10 @@ Anonymous authentication strategy for Passport.
 | ------------------ | :-------------: |
 | Full name          | passport-anonymous |
 | Keywords           | passport, authn, authentication, anonymous |
-| # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 276113 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 70682.33333333333 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/jaredhanson/passport-anonymous#readme)

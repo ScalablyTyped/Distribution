@@ -1,24 +1,24 @@
 
 # Scala.js typings for storybook__addon-knobs
 
-Typings are for version 6.1.2
+Typings are for version 6.4.0
 
 ## Library description:
-Storybook Addon Prop Editor Component
+Storybook addon for editing props
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-knobs |
-| Keywords           | addon, storybook |
-| # releases         | 533 |
-| # dependents       | 261 |
-| # downloads        | 48119166 |
-| # stars            | 2 |
+| Keywords           | storybook-addons, test |
+| # releases         | 241 |
+| # dependents       | 0.0 |
+| # downloads        | 4713893.0 |
+| # stars            | 5.0 |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/addons/knobs)
-- [Bugs](https://github.com/storybookjs/storybook/issues)
-- [Repository](https://github.com/storybookjs/storybook)
+- [Homepage](https://github.com/storybookjs/addon-knobs#readme)
+- [Bugs](https://github.com/storybookjs/addon-knobs/issues)
+- [Repository](https://github.com/storybookjs/addon-knobs)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Faddon-knobs)
     
 

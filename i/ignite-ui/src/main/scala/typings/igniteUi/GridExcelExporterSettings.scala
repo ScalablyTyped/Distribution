@@ -10,13 +10,13 @@ trait GridExcelExporterSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * An array of strings containing the keys for the columns that will not be exported.
     *
     */
-  var columnsToSkip: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var columnsToSkip: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Indicates whether all sublevel data will be exported, or only data under expanded rows.
@@ -53,7 +53,7 @@ trait GridExcelExporterSettings
     * List of strings containing the keys for the worksheet columns which will not be applied any filtering
     *
     */
-  var skipFilteringOn: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var skipFilteringOn: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Specifies the excel table style region. The following table styles are available:
@@ -79,11 +79,11 @@ object GridExcelExporterSettings {
   
   extension [Self <: GridExcelExporterSettings](x: Self) {
     
-    inline def setColumnsToSkip(value: js.Array[js.Any]): Self = StObject.set(x, "columnsToSkip", value.asInstanceOf[js.Any])
+    inline def setColumnsToSkip(value: js.Array[Any]): Self = StObject.set(x, "columnsToSkip", value.asInstanceOf[js.Any])
     
     inline def setColumnsToSkipUndefined: Self = StObject.set(x, "columnsToSkip", js.undefined)
     
-    inline def setColumnsToSkipVarargs(value: js.Any*): Self = StObject.set(x, "columnsToSkip", js.Array(value :_*))
+    inline def setColumnsToSkipVarargs(value: Any*): Self = StObject.set(x, "columnsToSkip", js.Array(value*))
     
     inline def setDataExportMode(value: String): Self = StObject.set(x, "dataExportMode", value.asInstanceOf[js.Any])
     
@@ -101,11 +101,11 @@ object GridExcelExporterSettings {
     
     inline def setGridStylingUndefined: Self = StObject.set(x, "gridStyling", js.undefined)
     
-    inline def setSkipFilteringOn(value: js.Array[js.Any]): Self = StObject.set(x, "skipFilteringOn", value.asInstanceOf[js.Any])
+    inline def setSkipFilteringOn(value: js.Array[Any]): Self = StObject.set(x, "skipFilteringOn", value.asInstanceOf[js.Any])
     
     inline def setSkipFilteringOnUndefined: Self = StObject.set(x, "skipFilteringOn", js.undefined)
     
-    inline def setSkipFilteringOnVarargs(value: js.Any*): Self = StObject.set(x, "skipFilteringOn", js.Array(value :_*))
+    inline def setSkipFilteringOnVarargs(value: Any*): Self = StObject.set(x, "skipFilteringOn", js.Array(value*))
     
     inline def setTableStyle(value: String): Self = StObject.set(x, "tableStyle", value.asInstanceOf[js.Any])
     

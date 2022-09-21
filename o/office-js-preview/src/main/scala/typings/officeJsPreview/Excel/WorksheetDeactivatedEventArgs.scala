@@ -6,25 +6,25 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the worksheet that raised the deactivated event.
   *
-  * Provides information about the worksheet that raised the Deactivated event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait WorksheetDeactivatedEventArgs extends StObject {
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var `type`: WorksheetDeactivated
   
   /**
+    * Gets the ID of the worksheet that is deactivated.
     *
-    * Gets the id of the worksheet that is deactivated.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var worksheetId: String

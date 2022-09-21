@@ -1,30 +1,32 @@
 package typings.testingLibraryReact
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.prettyFormat.anon.RequiredPartialreadonlyco
+import typings.prettyFormat.mod.NewPlugin
 import typings.prettyFormat.mod.OptionsReceived
-import typings.prettyFormat.typesMod.NewPlugin
-import typings.react.mod.ComponentType
+import typings.react.mod.JSXElementConstructor
 import typings.react.mod.ReactElement
 import typings.std.DocumentFragment
 import typings.std.Element
-import typings.std.Error
 import typings.std.Exclude
 import typings.std.HTMLDocument
 import typings.std.HTMLElement
+import typings.std.Parameters
 import typings.std.Pick
-import typings.testingLibraryDom.anon.Interval
+import typings.std.ReturnType
 import typings.testingLibraryDom.anon.PartialConfig
+import typings.testingLibraryDom.anon.Typeofqueries
 import typings.testingLibraryDom.configMod.Config
 import typings.testingLibraryDom.configMod.ConfigFn
 import typings.testingLibraryDom.eventsMod.CreateFunction
 import typings.testingLibraryDom.eventsMod.CreateObject
 import typings.testingLibraryDom.eventsMod.FireFunction
 import typings.testingLibraryDom.eventsMod.FireObject
-import typings.testingLibraryDom.getQueriesForElementMod.BoundFunction
 import typings.testingLibraryDom.getQueriesForElementMod.BoundFunctions
 import typings.testingLibraryDom.getQueriesForElementMod.Queries
 import typings.testingLibraryDom.matchesMod.DefaultNormalizerOptions
 import typings.testingLibraryDom.matchesMod.NormalizerFn
+import typings.testingLibraryDom.prettyDomMod.PrettyDOMOptions
 import typings.testingLibraryDom.queriesMod.AllByBoundAttribute
 import typings.testingLibraryDom.queriesMod.AllByRole
 import typings.testingLibraryDom.queriesMod.AllByText
@@ -43,15 +45,20 @@ import typings.testingLibraryDom.queriesMod.QueryByText_
 import typings.testingLibraryDom.queryHelpersMod.AllByAttribute
 import typings.testingLibraryDom.queryHelpersMod.BuiltQueryMethods
 import typings.testingLibraryDom.queryHelpersMod.GetAllBy
+import typings.testingLibraryDom.queryHelpersMod.GetErrorFunction
 import typings.testingLibraryDom.queryHelpersMod.QueryByAttribute_
+import typings.testingLibraryDom.screenMod.Screen_
 import typings.testingLibraryDom.suggestionsMod.Method
 import typings.testingLibraryDom.suggestionsMod.Suggestion
 import typings.testingLibraryDom.suggestionsMod.Variant
 import typings.testingLibraryDom.waitForMod.waitForOptions
+import typings.testingLibraryReact.anon.Children
+import typings.testingLibraryReact.anon.Current
 import typings.testingLibraryReact.anon.FnCall
 import typings.testingLibraryReact.anon.OmitRenderOptionsreadonly
 import typings.testingLibraryReact.anon.RenderResultreadonlygetAl
 import typings.testingLibraryReact.testingLibraryReactBooleans.`false`
+import typings.testingLibraryReact.testingLibraryReactBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,11 +73,11 @@ object mod {
   @js.native
   val act: FnCall | (js.Function1[/* callback */ js.Function0[Unit], Unit]) = js.native
   
-  inline def buildQueries[Arguments /* <: js.Array[js.Any] */](
-    queryByAll: GetAllBy[Arguments],
-    getMultipleError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String],
-    getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
-  ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryByAll.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
+  inline def buildQueries[Arguments /* <: js.Array[Any] */](
+    queryAllBy: GetAllBy[Arguments],
+    getMultipleError: GetErrorFunction[Arguments],
+    getMissingError: GetErrorFunction[Arguments]
+  ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryAllBy.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
   
   inline def cleanup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")().asInstanceOf[Unit]
   
@@ -83,149 +90,152 @@ object mod {
   @js.native
   val createEvent: CreateObject & CreateFunction = js.native
   
-  @JSImport("@testing-library/react", "findAllByAltText")
-  @js.native
-  val findAllByAltText: FindAllByBoundAttribute = js.native
+  inline def findAllByAltText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+  ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "findAllByDisplayValue")
-  @js.native
-  val findAllByDisplayValue: FindAllByBoundAttribute = js.native
+  inline def findAllByDisplayValue[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+  ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "findAllByLabelText")
-  @js.native
-  val findAllByLabelText: FindAllByText_ = js.native
+  inline def findAllByLabelText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByText<T>> is not an array type */ args: Parameters[FindAllByText_[T]]
+  ): ReturnType[FindAllByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByText_[T]]]
   
-  @JSImport("@testing-library/react", "findAllByPlaceholderText")
-  @js.native
-  val findAllByPlaceholderText: FindAllByBoundAttribute = js.native
+  inline def findAllByPlaceholderText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+  ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "findAllByRole")
-  @js.native
-  val findAllByRole: FindAllByRole_ = js.native
+  inline def findAllByRole[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByRole<T>> is not an array type */ args: Parameters[FindAllByRole_[T]]
+  ): ReturnType[FindAllByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByRole_[T]]]
   
-  @JSImport("@testing-library/react", "findAllByTestId")
-  @js.native
-  val findAllByTestId: FindAllByBoundAttribute = js.native
+  inline def findAllByTestId[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+  ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "findAllByText")
-  @js.native
-  val findAllByText: FindAllByText_ = js.native
+  inline def findAllByText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByText<T>> is not an array type */ args: Parameters[FindAllByText_[T]]
+  ): ReturnType[FindAllByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByText_[T]]]
   
-  @JSImport("@testing-library/react", "findAllByTitle")
-  @js.native
-  val findAllByTitle: FindAllByBoundAttribute = js.native
+  inline def findAllByTitle[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+  ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "findByAltText")
-  @js.native
-  val findByAltText: FindByBoundAttribute = js.native
+  inline def findByAltText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+  ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "findByDisplayValue")
-  @js.native
-  val findByDisplayValue: FindByBoundAttribute = js.native
+  inline def findByDisplayValue[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+  ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "findByLabelText")
-  @js.native
-  val findByLabelText: FindByText_ = js.native
+  inline def findByLabelText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByText<T>> is not an array type */ args: Parameters[FindByText_[T]]
+  ): ReturnType[FindByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByText_[T]]]
   
-  @JSImport("@testing-library/react", "findByPlaceholderText")
-  @js.native
-  val findByPlaceholderText: FindByBoundAttribute = js.native
+  inline def findByPlaceholderText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+  ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "findByRole")
-  @js.native
-  val findByRole: FindByRole_ = js.native
+  inline def findByRole[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByRole<T>> is not an array type */ args: Parameters[FindByRole_[T]]
+  ): ReturnType[FindByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByRole_[T]]]
   
-  @JSImport("@testing-library/react", "findByTestId")
-  @js.native
-  val findByTestId: FindByBoundAttribute = js.native
+  inline def findByTestId[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+  ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "findByText")
-  @js.native
-  val findByText: FindByText_ = js.native
+  inline def findByText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByText<T>> is not an array type */ args: Parameters[FindByText_[T]]
+  ): ReturnType[FindByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByText_[T]]]
   
-  @JSImport("@testing-library/react", "findByTitle")
-  @js.native
-  val findByTitle: FindByBoundAttribute = js.native
+  inline def findByTitle[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+  ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
   
   @JSImport("@testing-library/react", "fireEvent")
   @js.native
   val fireEvent: FireFunction & FireObject = js.native
   
-  @JSImport("@testing-library/react", "getAllByAltText")
-  @js.native
-  val getAllByAltText: AllByBoundAttribute = js.native
+  inline def getAllByAltText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "getAllByDisplayValue")
-  @js.native
-  val getAllByDisplayValue: AllByBoundAttribute = js.native
+  inline def getAllByDisplayValue[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "getAllByLabelText")
-  @js.native
-  val getAllByLabelText: AllByText = js.native
+  inline def getAllByLabelText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+  ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
   
-  @JSImport("@testing-library/react", "getAllByPlaceholderText")
-  @js.native
-  val getAllByPlaceholderText: AllByBoundAttribute = js.native
+  inline def getAllByPlaceholderText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "getAllByRole")
-  @js.native
-  val getAllByRole: AllByRole = js.native
+  inline def getAllByRole[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByRole<T>> is not an array type */ args: Parameters[AllByRole[T]]
+  ): ReturnType[AllByRole[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByRole[T]]]
   
-  @JSImport("@testing-library/react", "getAllByTestId")
-  @js.native
-  val getAllByTestId: AllByBoundAttribute = js.native
+  inline def getAllByTestId[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "getAllByText")
-  @js.native
-  val getAllByText: AllByText = js.native
+  inline def getAllByText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+  ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
   
-  @JSImport("@testing-library/react", "getAllByTitle")
-  @js.native
-  val getAllByTitle: AllByBoundAttribute = js.native
+  inline def getAllByTitle[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "getByAltText")
-  @js.native
-  val getByAltText: GetByBoundAttribute = js.native
+  inline def getByAltText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+  ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "getByDisplayValue")
-  @js.native
-  val getByDisplayValue: GetByBoundAttribute = js.native
+  inline def getByDisplayValue[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+  ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "getByLabelText")
-  @js.native
-  val getByLabelText: GetByText_ = js.native
+  inline def getByLabelText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByText<T>> is not an array type */ args: Parameters[GetByText_[T]]
+  ): ReturnType[GetByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByText_[T]]]
   
-  @JSImport("@testing-library/react", "getByPlaceholderText")
-  @js.native
-  val getByPlaceholderText: GetByBoundAttribute = js.native
+  inline def getByPlaceholderText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+  ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "getByRole")
-  @js.native
-  val getByRole: GetByRole_ = js.native
+  inline def getByRole[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByRole<T>> is not an array type */ args: Parameters[GetByRole_[T]]
+  ): ReturnType[GetByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByRole_[T]]]
   
-  @JSImport("@testing-library/react", "getByTestId")
-  @js.native
-  val getByTestId: GetByBoundAttribute = js.native
+  inline def getByTestId[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+  ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "getByText")
-  @js.native
-  val getByText: GetByText_ = js.native
+  inline def getByText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByText<T>> is not an array type */ args: Parameters[GetByText_[T]]
+  ): ReturnType[GetByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByText_[T]]]
   
-  @JSImport("@testing-library/react", "getByTitle")
-  @js.native
-  val getByTitle: GetByBoundAttribute = js.native
+  inline def getByTitle[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+  ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
   
   inline def getConfig(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Config]
   
   inline def getDefaultNormalizer(): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")().asInstanceOf[NormalizerFn]
   inline def getDefaultNormalizer(options: DefaultNormalizerOptions): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")(options.asInstanceOf[js.Any]).asInstanceOf[NormalizerFn]
   
-  inline def getElementError(message: String, container: HTMLElement): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def getElementError(message: String, container: HTMLElement): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Error]
+  inline def getElementError(message: Null, container: HTMLElement): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Error]
   
   inline def getNodeText(node: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeText")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getQueriesForElement[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
-  inline def getQueriesForElement[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
+  inline def getQueriesForElement[QueriesToBind /* <: Queries */, // Extra type parameter required for reassignment.
+  T /* <: QueriesToBind */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
+  inline def getQueriesForElement[QueriesToBind /* <: Queries */, // Extra type parameter required for reassignment.
+  T /* <: QueriesToBind */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
   
   inline def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoles")(container.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[HTMLElement]]]
   
@@ -238,45 +248,125 @@ object mod {
   
   inline def logDOM(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")().asInstanceOf[Unit]
   inline def logDOM(dom: Unit, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def logDOM(dom: Unit, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def logDOM(dom: Unit, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: Unit, maxLength: Double, options: PrettyDOMOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: Unit, maxLength: Unit, options: PrettyDOMOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def logDOM(dom: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def logDOM(dom: Element, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def logDOM(dom: Element, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def logDOM(dom: Element, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: Element, maxLength: Double, options: PrettyDOMOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: Element, maxLength: Unit, options: PrettyDOMOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def logDOM(dom: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def logDOM(dom: HTMLDocument, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def logDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def logDOM(dom: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: HTMLDocument, maxLength: Double, options: PrettyDOMOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logDOM(dom: HTMLDocument, maxLength: Unit, options: PrettyDOMOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def logRoles(container: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("logRoles")(container.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def prettyDOM(): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")().asInstanceOf[String | `false`]
   inline def prettyDOM(dom: Unit, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  inline def prettyDOM(dom: Unit, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  inline def prettyDOM(dom: Unit, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: Unit, maxLength: Double, options: PrettyDOMOptions): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: Unit, maxLength: Unit, options: PrettyDOMOptions): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   inline def prettyDOM(dom: Element): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
   inline def prettyDOM(dom: Element, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  inline def prettyDOM(dom: Element, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  inline def prettyDOM(dom: Element, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: Element, maxLength: Double, options: PrettyDOMOptions): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: Element, maxLength: Unit, options: PrettyDOMOptions): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   inline def prettyDOM(dom: HTMLDocument): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
   inline def prettyDOM(dom: HTMLDocument, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  inline def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
-  inline def prettyDOM(dom: HTMLDocument, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: HTMLDocument, maxLength: Double, options: PrettyDOMOptions): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def prettyDOM(dom: HTMLDocument, maxLength: Unit, options: PrettyDOMOptions): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   
   object prettyFormat {
+    
+    @JSImport("@testing-library/react", "prettyFormat")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Returns a presentation string of your `val` object
       * @param val any potential JavaScript object
       * @param options Custom settings
       */
-    inline def apply(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def apply(`val`: js.Any, options: typings.prettyFormat.typesMod.OptionsReceived): String = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def default(`val`: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def default(`val`: Any, options: OptionsReceived): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@testing-library/react", "prettyFormat")
-    @js.native
-    val ^ : js.Any = js.native
+    object DEFAULT_OPTIONS {
+      
+      @JSImport("@testing-library/react", "prettyFormat.DEFAULT_OPTIONS")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("@testing-library/react", "prettyFormat.DEFAULT_OPTIONS.callToJSON")
+      @js.native
+      def callToJSON: `true` = js.native
+      inline def callToJSON_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("callToJSON")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/react", "prettyFormat.DEFAULT_OPTIONS.compareKeys")
+      @js.native
+      def compareKeys: Unit = js.native
+      inline def compareKeys_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareKeys")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/react", "prettyFormat.DEFAULT_OPTIONS.escapeRegex")
+      @js.native
+      def escapeRegex: `false` = js.native
+      inline def escapeRegex_=(x: `false`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("escapeRegex")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/react", "prettyFormat.DEFAULT_OPTIONS.escapeString")
+      @js.native
+      def escapeString: `true` = js.native
+      inline def escapeString_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("escapeString")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/react", "prettyFormat.DEFAULT_OPTIONS.highlight")
+      @js.native
+      def highlight: `false` = js.native
+      inline def highlight_=(x: `false`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highlight")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/react", "prettyFormat.DEFAULT_OPTIONS.indent")
+      @js.native
+      def indent: Double = js.native
+      inline def indent_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indent")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/react", "prettyFormat.DEFAULT_OPTIONS.maxDepth")
+      @js.native
+      def maxDepth: Double = js.native
+      inline def maxDepth_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxDepth")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/react", "prettyFormat.DEFAULT_OPTIONS.maxWidth")
+      @js.native
+      def maxWidth: Double = js.native
+      inline def maxWidth_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxWidth")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/react", "prettyFormat.DEFAULT_OPTIONS.min")
+      @js.native
+      def min: `false` = js.native
+      inline def min_=(x: `false`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("min")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/react", "prettyFormat.DEFAULT_OPTIONS.plugins")
+      @js.native
+      def plugins: js.Array[scala.Nothing] = js.native
+      inline def plugins_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugins")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/react", "prettyFormat.DEFAULT_OPTIONS.printBasicPrototype")
+      @js.native
+      def printBasicPrototype: `true` = js.native
+      inline def printBasicPrototype_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("printBasicPrototype")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/react", "prettyFormat.DEFAULT_OPTIONS.printFunctionName")
+      @js.native
+      def printFunctionName: `true` = js.native
+      inline def printFunctionName_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("printFunctionName")(x.asInstanceOf[js.Any])
+      
+      @JSImport("@testing-library/react", "prettyFormat.DEFAULT_OPTIONS.theme")
+      @js.native
+      def theme: RequiredPartialreadonlyco = js.native
+      inline def theme_=(x: RequiredPartialreadonlyco): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
+    }
+    
+    /**
+      * Returns a presentation string of your `val` object
+      * @param val any potential JavaScript object
+      * @param options Custom settings
+      */
+    inline def format(`val`: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def format(`val`: Any, options: OptionsReceived): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     object plugins {
       
@@ -288,11 +378,6 @@ object mod {
       @js.native
       def AsymmetricMatcher: NewPlugin = js.native
       inline def AsymmetricMatcher_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AsymmetricMatcher")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@testing-library/react", "prettyFormat.plugins.ConvertAnsi")
-      @js.native
-      def ConvertAnsi: NewPlugin = js.native
-      inline def ConvertAnsi_=(x: NewPlugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvertAnsi")(x.asInstanceOf[js.Any])
       
       @JSImport("@testing-library/react", "prettyFormat.plugins.DOMCollection")
       @js.native
@@ -323,270 +408,274 @@ object mod {
   
   object queries {
     
-    @JSImport("@testing-library/react", "queries.findAllByAltText")
+    @JSImport("@testing-library/react", "queries")
     @js.native
-    val findAllByAltText: FindAllByBoundAttribute = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@testing-library/react", "queries.findAllByDisplayValue")
-    @js.native
-    val findAllByDisplayValue: FindAllByBoundAttribute = js.native
+    inline def findAllByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.findAllByLabelText")
-    @js.native
-    val findAllByLabelText: FindAllByText_ = js.native
+    inline def findAllByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.findAllByPlaceholderText")
-    @js.native
-    val findAllByPlaceholderText: FindAllByBoundAttribute = js.native
+    inline def findAllByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByText<T>> is not an array type */ args: Parameters[FindAllByText_[T]]
+    ): ReturnType[FindAllByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByText_[T]]]
     
-    @JSImport("@testing-library/react", "queries.findAllByRole")
-    @js.native
-    val findAllByRole: FindAllByRole_ = js.native
+    inline def findAllByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.findAllByTestId")
-    @js.native
-    val findAllByTestId: FindAllByBoundAttribute = js.native
+    inline def findAllByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByRole<T>> is not an array type */ args: Parameters[FindAllByRole_[T]]
+    ): ReturnType[FindAllByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByRole_[T]]]
     
-    @JSImport("@testing-library/react", "queries.findAllByText")
-    @js.native
-    val findAllByText: FindAllByText_ = js.native
+    inline def findAllByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.findAllByTitle")
-    @js.native
-    val findAllByTitle: FindAllByBoundAttribute = js.native
+    inline def findAllByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByText<T>> is not an array type */ args: Parameters[FindAllByText_[T]]
+    ): ReturnType[FindAllByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByText_[T]]]
     
-    @JSImport("@testing-library/react", "queries.findByAltText")
-    @js.native
-    val findByAltText: FindByBoundAttribute = js.native
+    inline def findAllByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindAllByBoundAttribute<T>> is not an array type */ args: Parameters[FindAllByBoundAttribute[T]]
+    ): ReturnType[FindAllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindAllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.findByDisplayValue")
-    @js.native
-    val findByDisplayValue: FindByBoundAttribute = js.native
+    inline def findByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.findByLabelText")
-    @js.native
-    val findByLabelText: FindByText_ = js.native
+    inline def findByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.findByPlaceholderText")
-    @js.native
-    val findByPlaceholderText: FindByBoundAttribute = js.native
+    inline def findByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByText<T>> is not an array type */ args: Parameters[FindByText_[T]]
+    ): ReturnType[FindByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByText_[T]]]
     
-    @JSImport("@testing-library/react", "queries.findByRole")
-    @js.native
-    val findByRole: FindByRole_ = js.native
+    inline def findByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.findByTestId")
-    @js.native
-    val findByTestId: FindByBoundAttribute = js.native
+    inline def findByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByRole<T>> is not an array type */ args: Parameters[FindByRole_[T]]
+    ): ReturnType[FindByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByRole_[T]]]
     
-    @JSImport("@testing-library/react", "queries.findByText")
-    @js.native
-    val findByText: FindByText_ = js.native
+    inline def findByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.findByTitle")
-    @js.native
-    val findByTitle: FindByBoundAttribute = js.native
+    inline def findByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByText<T>> is not an array type */ args: Parameters[FindByText_[T]]
+    ): ReturnType[FindByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByText_[T]]]
     
-    @JSImport("@testing-library/react", "queries.getAllByAltText")
-    @js.native
-    val getAllByAltText: AllByBoundAttribute = js.native
+    inline def findByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<FindByBoundAttribute<T>> is not an array type */ args: Parameters[FindByBoundAttribute[T]]
+    ): ReturnType[FindByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FindByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.getAllByDisplayValue")
-    @js.native
-    val getAllByDisplayValue: AllByBoundAttribute = js.native
+    inline def getAllByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.getAllByLabelText")
-    @js.native
-    val getAllByLabelText: AllByText = js.native
+    inline def getAllByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.getAllByPlaceholderText")
-    @js.native
-    val getAllByPlaceholderText: AllByBoundAttribute = js.native
+    inline def getAllByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
     
-    @JSImport("@testing-library/react", "queries.getAllByRole")
-    @js.native
-    val getAllByRole: AllByRole = js.native
+    inline def getAllByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.getAllByTestId")
-    @js.native
-    val getAllByTestId: AllByBoundAttribute = js.native
+    inline def getAllByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByRole<T>> is not an array type */ args: Parameters[AllByRole[T]]
+    ): ReturnType[AllByRole[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByRole[T]]]
     
-    @JSImport("@testing-library/react", "queries.getAllByText")
-    @js.native
-    val getAllByText: AllByText = js.native
+    inline def getAllByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.getAllByTitle")
-    @js.native
-    val getAllByTitle: AllByBoundAttribute = js.native
+    inline def getAllByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
     
-    @JSImport("@testing-library/react", "queries.getByAltText")
-    @js.native
-    val getByAltText: GetByBoundAttribute = js.native
+    inline def getAllByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.getByDisplayValue")
-    @js.native
-    val getByDisplayValue: GetByBoundAttribute = js.native
+    inline def getByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.getByLabelText")
-    @js.native
-    val getByLabelText: GetByText_ = js.native
+    inline def getByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.getByPlaceholderText")
-    @js.native
-    val getByPlaceholderText: GetByBoundAttribute = js.native
+    inline def getByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByText<T>> is not an array type */ args: Parameters[GetByText_[T]]
+    ): ReturnType[GetByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByText_[T]]]
     
-    @JSImport("@testing-library/react", "queries.getByRole")
-    @js.native
-    val getByRole: GetByRole_ = js.native
+    inline def getByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.getByTestId")
-    @js.native
-    val getByTestId: GetByBoundAttribute = js.native
+    inline def getByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByRole<T>> is not an array type */ args: Parameters[GetByRole_[T]]
+    ): ReturnType[GetByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByRole_[T]]]
     
-    @JSImport("@testing-library/react", "queries.getByText")
-    @js.native
-    val getByText: GetByText_ = js.native
+    inline def getByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.getByTitle")
-    @js.native
-    val getByTitle: GetByBoundAttribute = js.native
+    inline def getByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByText<T>> is not an array type */ args: Parameters[GetByText_[T]]
+    ): ReturnType[GetByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByText_[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryAllByAltText")
-    @js.native
-    val queryAllByAltText: AllByBoundAttribute = js.native
+    inline def getByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<GetByBoundAttribute<T>> is not an array type */ args: Parameters[GetByBoundAttribute[T]]
+    ): ReturnType[GetByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[GetByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryAllByDisplayValue")
-    @js.native
-    val queryAllByDisplayValue: AllByBoundAttribute = js.native
+    inline def queryAllByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryAllByLabelText")
-    @js.native
-    val queryAllByLabelText: AllByText = js.native
+    inline def queryAllByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryAllByPlaceholderText")
-    @js.native
-    val queryAllByPlaceholderText: AllByBoundAttribute = js.native
+    inline def queryAllByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryAllByRole")
-    @js.native
-    val queryAllByRole: AllByRole = js.native
+    inline def queryAllByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryAllByTestId")
-    @js.native
-    val queryAllByTestId: AllByBoundAttribute = js.native
+    inline def queryAllByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByRole<T>> is not an array type */ args: Parameters[AllByRole[T]]
+    ): ReturnType[AllByRole[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByRole[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryAllByText")
-    @js.native
-    val queryAllByText: AllByText = js.native
+    inline def queryAllByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryAllByTitle")
-    @js.native
-    val queryAllByTitle: AllByBoundAttribute = js.native
+    inline def queryAllByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+    ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryByAltText")
-    @js.native
-    val queryByAltText: QueryByBoundAttribute = js.native
+    inline def queryAllByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+    ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryByDisplayValue")
-    @js.native
-    val queryByDisplayValue: QueryByBoundAttribute = js.native
+    inline def queryByAltText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryByLabelText")
-    @js.native
-    val queryByLabelText: QueryByText_ = js.native
+    inline def queryByDisplayValue[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryByPlaceholderText")
-    @js.native
-    val queryByPlaceholderText: QueryByBoundAttribute = js.native
+    inline def queryByLabelText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByText<T>> is not an array type */ args: Parameters[QueryByText_[T]]
+    ): ReturnType[QueryByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByText_[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryByRole")
-    @js.native
-    val queryByRole: QueryByRole_ = js.native
+    inline def queryByPlaceholderText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryByTestId")
-    @js.native
-    val queryByTestId: QueryByBoundAttribute = js.native
+    inline def queryByRole[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByRole<T>> is not an array type */ args: Parameters[QueryByRole_[T]]
+    ): ReturnType[QueryByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByRole_[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryByText")
-    @js.native
-    val queryByText: QueryByText_ = js.native
+    inline def queryByTestId[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
     
-    @JSImport("@testing-library/react", "queries.queryByTitle")
-    @js.native
-    val queryByTitle: QueryByBoundAttribute = js.native
+    inline def queryByText[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByText<T>> is not an array type */ args: Parameters[QueryByText_[T]]
+    ): ReturnType[QueryByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByText_[T]]]
+    
+    inline def queryByTitle[T /* <: HTMLElement */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+    ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
   }
   
-  @JSImport("@testing-library/react", "queryAllByAltText")
-  @js.native
-  val queryAllByAltText: AllByBoundAttribute = js.native
+  inline def queryAllByAltText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
   @JSImport("@testing-library/react", "queryAllByAttribute")
   @js.native
   val queryAllByAttribute: AllByAttribute = js.native
   
-  @JSImport("@testing-library/react", "queryAllByDisplayValue")
-  @js.native
-  val queryAllByDisplayValue: AllByBoundAttribute = js.native
+  inline def queryAllByDisplayValue[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "queryAllByLabelText")
-  @js.native
-  val queryAllByLabelText: AllByText = js.native
+  inline def queryAllByLabelText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+  ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
   
-  @JSImport("@testing-library/react", "queryAllByPlaceholderText")
-  @js.native
-  val queryAllByPlaceholderText: AllByBoundAttribute = js.native
+  inline def queryAllByPlaceholderText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "queryAllByRole")
-  @js.native
-  val queryAllByRole: AllByRole = js.native
+  inline def queryAllByRole[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByRole<T>> is not an array type */ args: Parameters[AllByRole[T]]
+  ): ReturnType[AllByRole[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByRole[T]]]
   
-  @JSImport("@testing-library/react", "queryAllByTestId")
-  @js.native
-  val queryAllByTestId: AllByBoundAttribute = js.native
+  inline def queryAllByTestId[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "queryAllByText")
-  @js.native
-  val queryAllByText: AllByText = js.native
+  inline def queryAllByText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByText<T>> is not an array type */ args: Parameters[AllByText[T]]
+  ): ReturnType[AllByText[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByText[T]]]
   
-  @JSImport("@testing-library/react", "queryAllByTitle")
-  @js.native
-  val queryAllByTitle: AllByBoundAttribute = js.native
+  inline def queryAllByTitle[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<AllByBoundAttribute<T>> is not an array type */ args: Parameters[AllByBoundAttribute[T]]
+  ): ReturnType[AllByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryAllByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[AllByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "queryByAltText")
-  @js.native
-  val queryByAltText: QueryByBoundAttribute = js.native
+  inline def queryByAltText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+  ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByAltText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
   
   @JSImport("@testing-library/react", "queryByAttribute")
   @js.native
   val queryByAttribute: QueryByAttribute_ = js.native
   
-  @JSImport("@testing-library/react", "queryByDisplayValue")
-  @js.native
-  val queryByDisplayValue: QueryByBoundAttribute = js.native
+  inline def queryByDisplayValue[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+  ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByDisplayValue")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "queryByLabelText")
-  @js.native
-  val queryByLabelText: QueryByText_ = js.native
+  inline def queryByLabelText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByText<T>> is not an array type */ args: Parameters[QueryByText_[T]]
+  ): ReturnType[QueryByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByLabelText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByText_[T]]]
   
-  @JSImport("@testing-library/react", "queryByPlaceholderText")
-  @js.native
-  val queryByPlaceholderText: QueryByBoundAttribute = js.native
+  inline def queryByPlaceholderText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+  ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByPlaceholderText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "queryByRole")
-  @js.native
-  val queryByRole: QueryByRole_ = js.native
+  inline def queryByRole[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByRole<T>> is not an array type */ args: Parameters[QueryByRole_[T]]
+  ): ReturnType[QueryByRole_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByRole")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByRole_[T]]]
   
-  @JSImport("@testing-library/react", "queryByTestId")
-  @js.native
-  val queryByTestId: QueryByBoundAttribute = js.native
+  inline def queryByTestId[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+  ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByTestId")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
   
-  @JSImport("@testing-library/react", "queryByText")
-  @js.native
-  val queryByText: QueryByText_ = js.native
+  inline def queryByText[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByText<T>> is not an array type */ args: Parameters[QueryByText_[T]]
+  ): ReturnType[QueryByText_[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByText")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByText_[T]]]
   
-  @JSImport("@testing-library/react", "queryByTitle")
-  @js.native
-  val queryByTitle: QueryByBoundAttribute = js.native
+  inline def queryByTitle[T /* <: HTMLElement */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<QueryByBoundAttribute<T>> is not an array type */ args: Parameters[QueryByBoundAttribute[T]]
+  ): ReturnType[QueryByBoundAttribute[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryByTitle")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[QueryByBoundAttribute[T]]]
   
   object queryHelpers {
     
@@ -594,13 +683,14 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def buildQueries[Arguments /* <: js.Array[js.Any] */](
-      queryByAll: GetAllBy[Arguments],
-      getMultipleError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String],
-      getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
-    ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryByAll.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
+    inline def buildQueries[Arguments /* <: js.Array[Any] */](
+      queryAllBy: GetAllBy[Arguments],
+      getMultipleError: GetErrorFunction[Arguments],
+      getMissingError: GetErrorFunction[Arguments]
+    ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryAllBy.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
     
-    inline def getElementError(message: String, container: HTMLElement): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Error]
+    inline def getElementError(message: String, container: HTMLElement): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Error]
+    inline def getElementError(message: Null, container: HTMLElement): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Error]
     
     @JSImport("@testing-library/react", "queryHelpers.queryAllByAttribute")
     @js.native
@@ -613,336 +703,145 @@ object mod {
   
   inline def render(ui: ReactElement): RenderResultreadonlygetAl = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(ui.asInstanceOf[js.Any]).asInstanceOf[RenderResultreadonlygetAl]
   inline def render(ui: ReactElement, options: OmitRenderOptionsreadonly): RenderResultreadonlygetAl = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(ui.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RenderResultreadonlygetAl]
-  inline def render[Q /* <: Queries */](ui: ReactElement, options: RenderOptions[Q]): RenderResult[Q] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(ui.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RenderResult[Q]]
+  inline def render[Q /* <: Queries */, Container /* <: Element | DocumentFragment */, BaseElement /* <: Element | DocumentFragment */](ui: ReactElement, options: RenderOptions[Q, Container, BaseElement]): RenderResult[Q, Container, BaseElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(ui.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RenderResult[Q, Container, BaseElement]]
   
-  /* Inlined @testing-library/dom.@testing-library/dom/types/screen.Screen<{ readonly getByLabelText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly getAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly queryByLabelText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly queryAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly findByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly findAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly getByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly getAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly queryByText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly queryAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly findByText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly findAllByText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly getByAltText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByAltText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByTitle :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByTitle :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByRole :@testing-library/dom.@testing-library/dom/types/queries.GetByRole,  readonly getAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly queryByRole :@testing-library/dom.@testing-library/dom/types/queries.QueryByRole,  readonly queryAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly findByRole :@testing-library/dom.@testing-library/dom/types/queries.FindByRole,  readonly findAllByRole :@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole,  readonly getByTestId :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByTestId :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute}> */
-  object screen {
-    
-    @JSImport("@testing-library/react", "screen")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * Convenience function for `pretty-dom` which also allows an array
-      * of elements
-      */
-    inline def debug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")().asInstanceOf[Unit]
-    inline def debug(element: js.Array[Element | HTMLDocument]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: js.Array[Element | HTMLDocument], maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: Unit, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: Unit, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: Unit, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def debug(element: Element, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: Element, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: Element, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def debug(element: HTMLDocument, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def debug(element: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    @JSImport("@testing-library/react", "screen.findAllByAltText")
-    @js.native
-    def findAllByAltText: BoundFunction[FindAllByBoundAttribute] = js.native
-    inline def findAllByAltText_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByAltText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.findAllByDisplayValue")
-    @js.native
-    def findAllByDisplayValue: BoundFunction[FindAllByBoundAttribute] = js.native
-    inline def findAllByDisplayValue_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByDisplayValue")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.findAllByLabelText")
-    @js.native
-    def findAllByLabelText: BoundFunction[FindAllByText_] = js.native
-    inline def findAllByLabelText_=(x: BoundFunction[FindAllByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByLabelText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.findAllByPlaceholderText")
-    @js.native
-    def findAllByPlaceholderText: BoundFunction[FindAllByBoundAttribute] = js.native
-    inline def findAllByPlaceholderText_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByPlaceholderText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.findAllByRole")
-    @js.native
-    def findAllByRole: BoundFunction[FindAllByRole_] = js.native
-    inline def findAllByRole_=(x: BoundFunction[FindAllByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByRole")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.findAllByTestId")
-    @js.native
-    def findAllByTestId: BoundFunction[FindAllByBoundAttribute] = js.native
-    inline def findAllByTestId_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByTestId")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.findAllByText")
-    @js.native
-    def findAllByText: BoundFunction[FindAllByText_] = js.native
-    inline def findAllByText_=(x: BoundFunction[FindAllByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.findAllByTitle")
-    @js.native
-    def findAllByTitle: BoundFunction[FindAllByBoundAttribute] = js.native
-    inline def findAllByTitle_=(x: BoundFunction[FindAllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findAllByTitle")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.findByAltText")
-    @js.native
-    def findByAltText: BoundFunction[FindByBoundAttribute] = js.native
-    inline def findByAltText_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByAltText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.findByDisplayValue")
-    @js.native
-    def findByDisplayValue: BoundFunction[FindByBoundAttribute] = js.native
-    inline def findByDisplayValue_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByDisplayValue")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.findByLabelText")
-    @js.native
-    def findByLabelText: BoundFunction[FindByText_] = js.native
-    inline def findByLabelText_=(x: BoundFunction[FindByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByLabelText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.findByPlaceholderText")
-    @js.native
-    def findByPlaceholderText: BoundFunction[FindByBoundAttribute] = js.native
-    inline def findByPlaceholderText_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByPlaceholderText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.findByRole")
-    @js.native
-    def findByRole: BoundFunction[FindByRole_] = js.native
-    inline def findByRole_=(x: BoundFunction[FindByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByRole")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.findByTestId")
-    @js.native
-    def findByTestId: BoundFunction[FindByBoundAttribute] = js.native
-    inline def findByTestId_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByTestId")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.findByText")
-    @js.native
-    def findByText: BoundFunction[FindByText_] = js.native
-    inline def findByText_=(x: BoundFunction[FindByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.findByTitle")
-    @js.native
-    def findByTitle: BoundFunction[FindByBoundAttribute] = js.native
-    inline def findByTitle_=(x: BoundFunction[FindByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("findByTitle")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getAllByAltText")
-    @js.native
-    def getAllByAltText: BoundFunction[AllByBoundAttribute] = js.native
-    inline def getAllByAltText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByAltText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getAllByDisplayValue")
-    @js.native
-    def getAllByDisplayValue: BoundFunction[AllByBoundAttribute] = js.native
-    inline def getAllByDisplayValue_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByDisplayValue")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getAllByLabelText")
-    @js.native
-    def getAllByLabelText: BoundFunction[AllByText] = js.native
-    inline def getAllByLabelText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByLabelText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getAllByPlaceholderText")
-    @js.native
-    def getAllByPlaceholderText: BoundFunction[AllByBoundAttribute] = js.native
-    inline def getAllByPlaceholderText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByPlaceholderText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getAllByRole")
-    @js.native
-    def getAllByRole: BoundFunction[AllByRole] = js.native
-    inline def getAllByRole_=(x: BoundFunction[AllByRole]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByRole")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getAllByTestId")
-    @js.native
-    def getAllByTestId: BoundFunction[AllByBoundAttribute] = js.native
-    inline def getAllByTestId_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByTestId")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getAllByText")
-    @js.native
-    def getAllByText: BoundFunction[AllByText] = js.native
-    inline def getAllByText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getAllByTitle")
-    @js.native
-    def getAllByTitle: BoundFunction[AllByBoundAttribute] = js.native
-    inline def getAllByTitle_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAllByTitle")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getByAltText")
-    @js.native
-    def getByAltText: BoundFunction[GetByBoundAttribute] = js.native
-    inline def getByAltText_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByAltText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getByDisplayValue")
-    @js.native
-    def getByDisplayValue: BoundFunction[GetByBoundAttribute] = js.native
-    inline def getByDisplayValue_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByDisplayValue")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getByLabelText")
-    @js.native
-    def getByLabelText: BoundFunction[GetByText_] = js.native
-    inline def getByLabelText_=(x: BoundFunction[GetByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByLabelText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getByPlaceholderText")
-    @js.native
-    def getByPlaceholderText: BoundFunction[GetByBoundAttribute] = js.native
-    inline def getByPlaceholderText_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByPlaceholderText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getByRole")
-    @js.native
-    def getByRole: BoundFunction[GetByRole_] = js.native
-    inline def getByRole_=(x: BoundFunction[GetByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByRole")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getByTestId")
-    @js.native
-    def getByTestId: BoundFunction[GetByBoundAttribute] = js.native
-    inline def getByTestId_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByTestId")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getByText")
-    @js.native
-    def getByText: BoundFunction[GetByText_] = js.native
-    inline def getByText_=(x: BoundFunction[GetByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.getByTitle")
-    @js.native
-    def getByTitle: BoundFunction[GetByBoundAttribute] = js.native
-    inline def getByTitle_=(x: BoundFunction[GetByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getByTitle")(x.asInstanceOf[js.Any])
-    
-    /**
-      * Convenience function for `Testing Playground` which logs URL that
-      * can be opened in a browser
-      */
-    inline def logTestingPlaygroundURL(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")().asInstanceOf[Unit]
-    inline def logTestingPlaygroundURL(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def logTestingPlaygroundURL(element: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    @JSImport("@testing-library/react", "screen.queryAllByAltText")
-    @js.native
-    def queryAllByAltText: BoundFunction[AllByBoundAttribute] = js.native
-    inline def queryAllByAltText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByAltText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.queryAllByDisplayValue")
-    @js.native
-    def queryAllByDisplayValue: BoundFunction[AllByBoundAttribute] = js.native
-    inline def queryAllByDisplayValue_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByDisplayValue")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.queryAllByLabelText")
-    @js.native
-    def queryAllByLabelText: BoundFunction[AllByText] = js.native
-    inline def queryAllByLabelText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByLabelText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.queryAllByPlaceholderText")
-    @js.native
-    def queryAllByPlaceholderText: BoundFunction[AllByBoundAttribute] = js.native
-    inline def queryAllByPlaceholderText_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByPlaceholderText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.queryAllByRole")
-    @js.native
-    def queryAllByRole: BoundFunction[AllByRole] = js.native
-    inline def queryAllByRole_=(x: BoundFunction[AllByRole]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByRole")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.queryAllByTestId")
-    @js.native
-    def queryAllByTestId: BoundFunction[AllByBoundAttribute] = js.native
-    inline def queryAllByTestId_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByTestId")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.queryAllByText")
-    @js.native
-    def queryAllByText: BoundFunction[AllByText] = js.native
-    inline def queryAllByText_=(x: BoundFunction[AllByText]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.queryAllByTitle")
-    @js.native
-    def queryAllByTitle: BoundFunction[AllByBoundAttribute] = js.native
-    inline def queryAllByTitle_=(x: BoundFunction[AllByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryAllByTitle")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.queryByAltText")
-    @js.native
-    def queryByAltText: BoundFunction[QueryByBoundAttribute] = js.native
-    inline def queryByAltText_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByAltText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.queryByDisplayValue")
-    @js.native
-    def queryByDisplayValue: BoundFunction[QueryByBoundAttribute] = js.native
-    inline def queryByDisplayValue_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByDisplayValue")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.queryByLabelText")
-    @js.native
-    def queryByLabelText: BoundFunction[QueryByText_] = js.native
-    inline def queryByLabelText_=(x: BoundFunction[QueryByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByLabelText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.queryByPlaceholderText")
-    @js.native
-    def queryByPlaceholderText: BoundFunction[QueryByBoundAttribute] = js.native
-    inline def queryByPlaceholderText_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByPlaceholderText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.queryByRole")
-    @js.native
-    def queryByRole: BoundFunction[QueryByRole_] = js.native
-    inline def queryByRole_=(x: BoundFunction[QueryByRole_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByRole")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.queryByTestId")
-    @js.native
-    def queryByTestId: BoundFunction[QueryByBoundAttribute] = js.native
-    inline def queryByTestId_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByTestId")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.queryByText")
-    @js.native
-    def queryByText: BoundFunction[QueryByText_] = js.native
-    inline def queryByText_=(x: BoundFunction[QueryByText_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByText")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@testing-library/react", "screen.queryByTitle")
-    @js.native
-    def queryByTitle: BoundFunction[QueryByBoundAttribute] = js.native
-    inline def queryByTitle_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByTitle")(x.asInstanceOf[js.Any])
-  }
+  inline def renderHook[Result, Props, Q /* <: Queries */, Container /* <: Element | DocumentFragment */, BaseElement /* <: Element | DocumentFragment */](render: js.Function1[/* initialProps */ Props, Result]): RenderHookResult[Result, Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderHook")(render.asInstanceOf[js.Any]).asInstanceOf[RenderHookResult[Result, Props]]
+  inline def renderHook[Result, Props, Q /* <: Queries */, Container /* <: Element | DocumentFragment */, BaseElement /* <: Element | DocumentFragment */](
+    render: js.Function1[/* initialProps */ Props, Result],
+    options: RenderHookOptions[Props, Q, Container, BaseElement]
+  ): RenderHookResult[Result, Props] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderHook")(render.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RenderHookResult[Result, Props]]
   
-  inline def waitFor[T](callback: js.Function0[T | js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  inline def waitFor[T](callback: js.Function0[T | js.Promise[T]], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @JSImport("@testing-library/react", "screen")
+  @js.native
+  val screen: Screen_[Typeofqueries] = js.native
   
-  inline def waitForDomChange(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDomChange")().asInstanceOf[js.Promise[js.Any]]
-  inline def waitForDomChange(options: waitForOptions): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDomChange")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  
-  inline def waitForElement[T](callback: js.Function0[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  inline def waitForElement[T](callback: js.Function0[T], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def waitFor[T](callback: js.Function0[js.Promise[T] | T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def waitFor[T](callback: js.Function0[js.Promise[T] | T], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   inline def waitForElementToBeRemoved[T](callback: T): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def waitForElementToBeRemoved[T](callback: T, options: waitForOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def waitForElementToBeRemoved[T](callback: js.Function0[T], options: waitForOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def wait_(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")().asInstanceOf[js.Promise[Unit]]
-  inline def wait_(callback: js.Function0[Unit]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def wait_(callback: js.Function0[Unit], options: Interval): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def wait_(callback: Unit, options: Interval): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  
   /* was `typeof getQueriesForElement` */
-  inline def within[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
-  inline def within[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
+  inline def within[QueriesToBind /* <: Queries */, // Extra type parameter required for reassignment.
+  T /* <: QueriesToBind */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
+  inline def within[QueriesToBind /* <: Queries */, // Extra type parameter required for reassignment.
+  T /* <: QueriesToBind */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
   
   type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  trait RenderOptions[Q /* <: Queries */] extends StObject {
+  trait RenderHookOptions[Props, Q /* <: Queries */, Container /* <: Element | DocumentFragment */, BaseElement /* <: Element | DocumentFragment */]
+    extends StObject
+       with RenderOptions[Q, Container, BaseElement] {
     
-    var baseElement: js.UndefOr[Element] = js.undefined
+    /**
+      * The argument passed to the renderHook callback. Can be useful if you plan
+      * to use the rerender utility to change the values passed to your hook.
+      */
+    var initialProps: js.UndefOr[Props] = js.undefined
+  }
+  object RenderHookOptions {
     
-    var container: js.UndefOr[Element] = js.undefined
+    inline def apply[Props, Q /* <: Queries */, Container /* <: Element | DocumentFragment */, BaseElement /* <: Element | DocumentFragment */](): RenderHookOptions[Props, Q, Container, BaseElement] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RenderHookOptions[Props, Q, Container, BaseElement]]
+    }
     
+    extension [Self <: RenderHookOptions[?, ?, ?, ?], Props, Q /* <: Queries */, Container /* <: Element | DocumentFragment */, BaseElement /* <: Element | DocumentFragment */](x: Self & (RenderHookOptions[Props, Q, Container, BaseElement])) {
+      
+      inline def setInitialProps(value: Props): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
+      
+      inline def setInitialPropsUndefined: Self = StObject.set(x, "initialProps", js.undefined)
+    }
+  }
+  
+  @js.native
+  trait RenderHookResult[Result, Props] extends StObject {
+    
+    /**
+      * Triggers a re-render. The props will be passed to your renderHook callback.
+      */
+    def rerender(): Unit = js.native
+    def rerender(props: Props): Unit = js.native
+    
+    /**
+      * This is a stable reference to the latest value returned by your renderHook
+      * callback
+      */
+    var result: Current[Result] = js.native
+    
+    /**
+      * Unmounts the test component. This is useful for when you need to test
+      * any cleanup your useEffects have.
+      */
+    def unmount(): Unit = js.native
+  }
+  
+  trait RenderOptions[Q /* <: Queries */, Container /* <: Element | DocumentFragment */, BaseElement /* <: Element | DocumentFragment */] extends StObject {
+    
+    /**
+      * Defaults to the container if the container is specified. Otherwise `document.body` is used for the default. This is used as
+      *  the base element for the queries as well as what is printed when you use `debug()`.
+      *
+      *  @see https://testing-library.com/docs/react-testing-library/api/#baseelement
+      */
+    var baseElement: js.UndefOr[BaseElement] = js.undefined
+    
+    /**
+      * By default, React Testing Library will create a div and append that div to the document.body. Your React component will be rendered in the created div. If you provide your own HTMLElement container via this option,
+      *  it will not be appended to the document.body automatically.
+      *
+      *  For example: If you are unit testing a `<tbody>` element, it cannot be a child of a div. In this case, you can
+      *  specify a table as the render container.
+      *
+      *  @see https://testing-library.com/docs/react-testing-library/api/#container
+      */
+    var container: js.UndefOr[Container] = js.undefined
+    
+    /**
+      * If `hydrate` is set to `true`, then it will render with `ReactDOM.hydrate`. This may be useful if you are using server-side
+      *  rendering and use ReactDOM.hydrate to mount your components.
+      *
+      *  @see https://testing-library.com/docs/react-testing-library/api/#hydrate)
+      */
     var hydrate: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Set to `true` if you want to force synchronous `ReactDOM.render`.
+      * Otherwise `render` will default to concurrent React if available.
+      */
+    var legacyRoot: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Queries to bind. Overrides the default set from DOM Testing Library unless merged.
+      *
+      *  @see https://testing-library.com/docs/react-testing-library/api/#queries
+      */
     var queries: js.UndefOr[Q] = js.undefined
     
-    var wrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
+    /**
+      * Pass a React Component as the wrapper option to have it rendered around the inner element. This is most useful for creating
+      *  reusable custom render functions for common data providers. See setup for examples.
+      *
+      *  @see https://testing-library.com/docs/react-testing-library/api/#wrapper
+      */
+    var wrapper: js.UndefOr[JSXElementConstructor[Children]] = js.undefined
   }
   object RenderOptions {
     
-    inline def apply[Q /* <: Queries */](): RenderOptions[Q] = {
+    inline def apply[Q /* <: Queries */, Container /* <: Element | DocumentFragment */, BaseElement /* <: Element | DocumentFragment */](): RenderOptions[Q, Container, BaseElement] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[RenderOptions[Q]]
+      __obj.asInstanceOf[RenderOptions[Q, Container, BaseElement]]
     }
     
-    extension [Self <: RenderOptions[?], Q /* <: Queries */](x: Self & RenderOptions[Q]) {
+    extension [Self <: RenderOptions[?, ?, ?], Q /* <: Queries */, Container /* <: Element | DocumentFragment */, BaseElement /* <: Element | DocumentFragment */](x: Self & (RenderOptions[Q, Container, BaseElement])) {
       
-      inline def setBaseElement(value: Element): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
+      inline def setBaseElement(value: BaseElement): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
       
       inline def setBaseElementUndefined: Self = StObject.set(x, "baseElement", js.undefined)
       
-      inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
@@ -950,24 +849,30 @@ object mod {
       
       inline def setHydrateUndefined: Self = StObject.set(x, "hydrate", js.undefined)
       
+      inline def setLegacyRoot(value: Boolean): Self = StObject.set(x, "legacyRoot", value.asInstanceOf[js.Any])
+      
+      inline def setLegacyRootUndefined: Self = StObject.set(x, "legacyRoot", js.undefined)
+      
       inline def setQueries(value: Q): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
       
       inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
       
-      inline def setWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: JSXElementConstructor[Children]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      
+      inline def setWrapperFunction1(value: Children => ReactElement | Null): Self = StObject.set(x, "wrapper", js.Any.fromFunction1(value))
       
       inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     }
   }
   
   @js.native
-  trait RenderResult[Q /* <: Queries */] extends StObject {
+  trait RenderResult[Q /* <: Queries */, Container /* <: Element | DocumentFragment */, BaseElement /* <: Element | DocumentFragment */] extends StObject {
     
     def asFragment(): DocumentFragment = js.native
     
-    var baseElement: Element = js.native
+    var baseElement: BaseElement = js.native
     
-    var container: Element = js.native
+    var container: Container = js.native
     
     def debug(): Unit = js.native
     def debug(baseElement: js.Array[Element | DocumentFragment]): Unit = js.native
@@ -988,6 +893,6 @@ object mod {
     
     def rerender(ui: ReactElement): Unit = js.native
     
-    def unmount(): Boolean = js.native
+    def unmount(): Unit = js.native
   }
 }

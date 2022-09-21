@@ -11,11 +11,11 @@ trait AccessField extends StObject {
   
   def IsMemberSafe(dispid: Double): Boolean
   
-  var Value: js.Any
+  var Value: Any
 }
 object AccessField {
   
-  inline def apply(AccessDotAccessField_typekey: AccessField, IsMemberSafe: Double => Boolean, Value: js.Any): AccessField = {
+  inline def apply(AccessDotAccessField_typekey: AccessField, IsMemberSafe: Double => Boolean, Value: Any): AccessField = {
     val __obj = js.Dynamic.literal(IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("Access.AccessField_typekey")(AccessDotAccessField_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessField]
@@ -27,6 +27,6 @@ object AccessField {
     
     inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -29,7 +29,7 @@ object ListFlowsResponse {
     
     inline def setFlowsUndefined: Self = StObject.set(x, "Flows", js.undefined)
     
-    inline def setFlowsVarargs(value: ListedFlow*): Self = StObject.set(x, "Flows", js.Array(value :_*))
+    inline def setFlowsVarargs(value: ListedFlow*): Self = StObject.set(x, "Flows", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

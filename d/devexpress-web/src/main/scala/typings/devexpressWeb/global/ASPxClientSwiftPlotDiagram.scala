@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSwiftPlotDiagram")
 @js.native
-class ASPxClientSwiftPlotDiagram ()
+open class ASPxClientSwiftPlotDiagram ()
   extends StObject
      with typings.devexpressWeb.ASPxClientXYDiagram2D {
   
@@ -23,8 +23,8 @@ class ASPxClientSwiftPlotDiagram ()
     */
   /* CompleteClass */
   override def DiagramToPoint(
-    argument: js.Any,
-    value: js.Any,
+    argument: Any,
+    value: Any,
     axisX: typings.devexpressWeb.ASPxClientAxis2D,
     axisY: typings.devexpressWeb.ASPxClientAxis2D,
     pane: typings.devexpressWeb.ASPxClientXYDiagramPane

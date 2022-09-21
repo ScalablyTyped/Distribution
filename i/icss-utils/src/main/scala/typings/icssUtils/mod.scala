@@ -3,6 +3,7 @@ package typings.icssUtils
 import org.scalablytyped.runtime.StringDictionary
 import typings.postcss.mod.Container
 import typings.postcss.mod.Rule_
+import typings.postcss.nodeMod.ChildNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +16,10 @@ object mod {
   
   inline def createICSSRules(imports: CSSImports, exports: CSSExports): js.Array[Rule_] = (^.asInstanceOf[js.Dynamic].applyDynamic("createICSSRules")(imports.asInstanceOf[js.Any], exports.asInstanceOf[js.Any])).asInstanceOf[js.Array[Rule_]]
   
-  inline def extractICSS(css: Container): ExtractedICSS = ^.asInstanceOf[js.Dynamic].applyDynamic("extractICSS")(css.asInstanceOf[js.Any]).asInstanceOf[ExtractedICSS]
-  inline def extractICSS(css: Container, removeRules: Boolean): ExtractedICSS = (^.asInstanceOf[js.Dynamic].applyDynamic("extractICSS")(css.asInstanceOf[js.Any], removeRules.asInstanceOf[js.Any])).asInstanceOf[ExtractedICSS]
+  inline def extractICSS(css: Container[ChildNode]): ExtractedICSS = ^.asInstanceOf[js.Dynamic].applyDynamic("extractICSS")(css.asInstanceOf[js.Any]).asInstanceOf[ExtractedICSS]
+  inline def extractICSS(css: Container[ChildNode], removeRules: Boolean): ExtractedICSS = (^.asInstanceOf[js.Dynamic].applyDynamic("extractICSS")(css.asInstanceOf[js.Any], removeRules.asInstanceOf[js.Any])).asInstanceOf[ExtractedICSS]
   
-  inline def replaceSymbols(css: Container, replacements: Replacements): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSymbols")(css.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def replaceSymbols(css: Container[ChildNode], replacements: Replacements): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSymbols")(css.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def replaceValueSymbols(value: String, replacements: Replacements): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceValueSymbols")(value.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[String]
   

@@ -22,6 +22,6 @@ object DocumentMask {
     
     inline def setFieldPathsUndefined: Self = StObject.set(x, "fieldPaths", js.undefined)
     
-    inline def setFieldPathsVarargs(value: String*): Self = StObject.set(x, "fieldPaths", js.Array(value :_*))
+    inline def setFieldPathsVarargs(value: String*): Self = StObject.set(x, "fieldPaths", js.Array(value*))
   }
 }

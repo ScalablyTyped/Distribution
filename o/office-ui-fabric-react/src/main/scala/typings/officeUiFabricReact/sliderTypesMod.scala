@@ -22,6 +22,8 @@ object sliderTypesMod {
     
     def focus(): Unit
     
+    var range: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+    
     var value: js.UndefOr[Double] = js.undefined
   }
   object ISlider {
@@ -34,6 +36,10 @@ object sliderTypesMod {
     extension [Self <: ISlider](x: Self) {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      
+      inline def setRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -73,6 +79,12 @@ object sliderTypesMod {
     var componentRef: js.UndefOr[IRefObject[ISlider]] = js.undefined
     
     /**
+      * The initial lower value of the Slider if ranged is true. Use this if you intend for the Slider to be an
+      * uncontrolled component. This value is mutually exclusive to lowerValue. Use one or the other.
+      */
+    var defaultLowerValue: js.UndefOr[Double] = js.undefined
+    
+    /**
       * The initial value of the Slider. Use this if you intend for the Slider to be an uncontrolled component.
       * This value is mutually exclusive to value. Use one or the other.
       */
@@ -90,6 +102,12 @@ object sliderTypesMod {
     var label: js.UndefOr[String] = js.undefined
     
     /**
+      * The initial lower value of the Slider if ranged is true. Use this if you intend to pass in a new value as a
+      * result of onChange events. This value is mutually exclusive to defaultLowerValue. Use one or the other.
+      */
+    var lowerValue: js.UndefOr[Double] = js.undefined
+    
+    /**
       * The max value of the Slider
       * @defaultvalue 10
       */
@@ -102,9 +120,12 @@ object sliderTypesMod {
     var min: js.UndefOr[Double] = js.undefined
     
     /**
-      * Callback when the value has been changed
+      * Callback when the value has been changed.
+      * If `ranged` is true, `value` is the upper value, and `range` contains the lower and upper bounds of the range.
       */
-    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
+    var onChange: js.UndefOr[
+        js.Function2[/* value */ Double, /* range */ js.UndefOr[js.Tuple2[Double, Double]], Unit]
+      ] = js.undefined
     
     /**
       * Callback on mouse up or touch end
@@ -118,6 +139,12 @@ object sliderTypesMod {
       * @defaultvalue false
       */
     var originFromZero: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * If `ranged` is true, display two thumbs that allow the lower and upper bounds of a range to be selected.
+      * The lower bound is defined by `lowerValue`, and the upper bound is defined by `value`.
+      */
+    var ranged: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to show the value on the right of the Slider.
@@ -194,6 +221,10 @@ object sliderTypesMod {
       
       inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
+      inline def setDefaultLowerValue(value: Double): Self = StObject.set(x, "defaultLowerValue", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultLowerValueUndefined: Self = StObject.set(x, "defaultLowerValue", js.undefined)
+      
       inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
@@ -206,6 +237,10 @@ object sliderTypesMod {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
+      inline def setLowerValue(value: Double): Self = StObject.set(x, "lowerValue", value.asInstanceOf[js.Any])
+      
+      inline def setLowerValueUndefined: Self = StObject.set(x, "lowerValue", js.undefined)
+      
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
       inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
@@ -214,7 +249,7 @@ object sliderTypesMod {
       
       inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      inline def setOnChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: (/* value */ Double, /* range */ js.UndefOr[js.Tuple2[Double, Double]]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -225,6 +260,10 @@ object sliderTypesMod {
       inline def setOriginFromZero(value: Boolean): Self = StObject.set(x, "originFromZero", value.asInstanceOf[js.Any])
       
       inline def setOriginFromZeroUndefined: Self = StObject.set(x, "originFromZero", js.undefined)
+      
+      inline def setRanged(value: Boolean): Self = StObject.set(x, "ranged", value.asInstanceOf[js.Any])
+      
+      inline def setRangedUndefined: Self = StObject.set(x, "ranged", js.undefined)
       
       inline def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
       
@@ -262,12 +301,14 @@ object sliderTypesMod {
     }
   }
   
-  /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Slider/Slider.types.ISliderProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Slider/Slider.types.ISliderProps, 'className' | 'disabled' | 'vertical'> & {  showTransitions :boolean | undefined,   showValue :boolean | undefined,   titleLabelClassName :string | undefined} */
+  /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Slider/Slider.types.ISliderProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Slider/Slider.types.ISliderProps, 'className' | 'disabled' | 'vertical' | 'ranged'> & {  showTransitions :boolean | undefined,   showValue :boolean | undefined,   titleLabelClassName :string | undefined} */
   trait ISliderStyleProps extends StObject {
     
     var className: js.UndefOr[String] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    var ranged: js.UndefOr[Boolean] = js.undefined
     
     var showTransitions: js.UndefOr[Boolean] = js.undefined
     
@@ -295,6 +336,10 @@ object sliderTypesMod {
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
+      inline def setRanged(value: Boolean): Self = StObject.set(x, "ranged", value.asInstanceOf[js.Any])
+      
+      inline def setRangedUndefined: Self = StObject.set(x, "ranged", js.undefined)
       
       inline def setShowTransitions(value: Boolean): Self = StObject.set(x, "showTransitions", value.asInstanceOf[js.Any])
       

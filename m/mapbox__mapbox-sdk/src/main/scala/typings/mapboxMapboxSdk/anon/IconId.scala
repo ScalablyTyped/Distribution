@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IconId extends StObject {
   
+  var draft: js.UndefOr[Boolean] = js.undefined
+  
   var iconId: String
   
   var ownerId: js.UndefOr[String] = js.undefined
@@ -20,6 +22,10 @@ object IconId {
   }
   
   extension [Self <: IconId](x: Self) {
+    
+    inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+    
+    inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
     
     inline def setIconId(value: String): Self = StObject.set(x, "iconId", value.asInstanceOf[js.Any])
     

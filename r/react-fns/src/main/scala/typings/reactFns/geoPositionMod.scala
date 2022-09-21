@@ -15,14 +15,14 @@ object geoPositionMod {
   
   @JSImport("react-fns/dist/GeoPosition", "GeoPosition")
   @js.native
-  class GeoPosition protected ()
+  open class GeoPosition protected ()
     extends typings.reactFns.geoPositionGeoPositionMod.GeoPosition {
     def this(props: SharedRenderProps[GeoPositionProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SharedRenderProps[GeoPositionProps], context: js.Any) = this()
+    def this(props: SharedRenderProps[GeoPositionProps], context: Any) = this()
   }
   
   inline def withGeoPosition[Props](Component: ComponentType[Props & GeoPositionProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withGeoPosition")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]

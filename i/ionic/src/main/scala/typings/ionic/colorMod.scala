@@ -1,7 +1,7 @@
 package typings.ionic
 
-import typings.ionicCliFramework.colorsMod.ColorFunction
 import typings.ionicCliFramework.colorsMod.Colors
+import typings.ionicCliFrameworkOutput.colorsMod.ColorFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

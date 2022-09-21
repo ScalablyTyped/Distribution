@@ -28,7 +28,7 @@ object AtomPub {
   @JSGlobal("Windows.Web.AtomPub.AtomPubClient")
   @js.native
   /** Creates a new AtomPubClient object. */
-  class AtomPubClient ()
+  open class AtomPubClient ()
     extends StObject
        with typings.winrtUwp.Windows.Web.AtomPub.AtomPubClient {
     /**

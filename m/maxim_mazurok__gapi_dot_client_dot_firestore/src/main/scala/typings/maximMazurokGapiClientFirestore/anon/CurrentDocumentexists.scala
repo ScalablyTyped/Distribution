@@ -23,7 +23,7 @@ trait CurrentDocumentexists extends StObject {
   @JSName("currentDocument.exists")
   var currentDocumentDotexists: js.UndefOr[Boolean] = js.undefined
   
-  /** When set, the target document must exist and have been last updated at that time. */
+  /** When set, the target document must exist and have been last updated at that time. Timestamp must be microsecond aligned. */
   @JSName("currentDocument.updateTime")
   var currentDocumentDotupdateTime: js.UndefOr[String] = js.undefined
   

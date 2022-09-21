@@ -7,7 +7,7 @@ import typings.bip174.interfacesMod.PsbtInput
 import typings.bip174.interfacesMod.PsbtOutput
 import typings.bip174.interfacesMod.Transaction
 import typings.bip174.interfacesMod.TransactionFromBuffer
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,11 +49,11 @@ object parserMod {
       
       inline def setInputs(value: js.Array[PsbtInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      inline def setInputsVarargs(value: PsbtInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: PsbtInput*): Self = StObject.set(x, "inputs", js.Array(value*))
       
       inline def setOutputs(value: js.Array[PsbtOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      inline def setOutputsVarargs(value: PsbtOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: PsbtOutput*): Self = StObject.set(x, "outputs", js.Array(value*))
     }
   }
 }

@@ -10,10 +10,10 @@ Enhanced binding syntaxes for Knockout 3+
 | ------------------ | :-------------: |
 | Full name          | knockout.punches |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 8930 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 907.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/mbest/knockout.punches)

@@ -138,11 +138,8 @@ trait Wx extends StObject {
   *
   * 最低基础库： `1.9.0` */
   def canvasGetImageData(option: CanvasGetImageDataOption): Unit = js.native
-  def canvasGetImageData(
-    option: CanvasGetImageDataOption,
-    /** 在自定义组件下，当前组件实例的this，以操作组件内 `<canvas/>` 组件 */
-  component: js.Any
-  ): Unit = js.native
+  def canvasGetImageData(option: CanvasGetImageDataOption, /** 在自定义组件下，当前组件实例的this，以操作组件内 `<canvas/>` 组件 */
+  component: Any): Unit = js.native
   
   /** [wx.canvasPutImageData(Object object, Object this)](wx.canvasPutImageData.md)
     *
@@ -150,11 +147,8 @@ trait Wx extends StObject {
     *
     * 最低基础库： `1.9.0` */
   def canvasPutImageData(option: CanvasPutImageDataOption): Unit = js.native
-  def canvasPutImageData(
-    option: CanvasPutImageDataOption,
-    /** 在自定义组件下，当前组件实例的this，以操作组件内 `<canvas/>` 组件 */
-  component: js.Any
-  ): Unit = js.native
+  def canvasPutImageData(option: CanvasPutImageDataOption, /** 在自定义组件下，当前组件实例的this，以操作组件内 `<canvas/>` 组件 */
+  component: Any): Unit = js.native
   
   /** [wx.canvasToTempFilePath(Object object, Object this)](wx.canvasToTempFilePath.md)
     *
@@ -163,7 +157,7 @@ trait Wx extends StObject {
   def canvasToTempFilePath(
     option: CanvasToTempFilePathOption,
     /** 在自定义组件下，当前组件实例的this，以操作组件内 `<canvas/>` 组件 */
-  component: js.Any
+  component: Any
   ): Unit = js.native
   
   /** [wx.checkIsSoterEnrolledInDevice(Object object)](wx.checkIsSoterEnrolledInDevice.md)
@@ -521,7 +515,7 @@ trait Wx extends StObject {
     /** `<audio/>` 组件的 id */
   id: String,
     /** 在自定义组件下，当前组件实例的this，以操作组件内 `<audio/>` 组件 */
-  component: js.Any
+  component: Any
   ): AudioContext = js.native
   
   /** [wx.createBLEConnection(Object object)](wx.createBLEConnection.md)
@@ -570,7 +564,7 @@ trait Wx extends StObject {
     /** 要获取上下文的 `<canvas>` 组件 canvas-id 属性 */
   canvasId: String,
     /** 在自定义组件下，当前组件实例的this，表示在这个自定义组件下查找拥有 canvas-id 的 `<canvas/>` ，如果省略则不在任何自定义组件内查找 */
-  component: js.Any
+  component: Any
   ): CanvasContext = js.native
   
   /** [[InnerAudioContext](https://developers.weixin.qq.com/miniprogram/dev/api/media/audio/InnerAudioContext.html) wx.createInnerAudioContext()](wx.createInnerAudioContext.md)
@@ -591,7 +585,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `1.9.3` */
   def createIntersectionObserver(/** 自定义组件实例 */
-  component: js.Any, /** 选项 */
+  component: Any, /** 选项 */
   options: CreateIntersectionObserverOption): IntersectionObserver = js.native
   /** [[IntersectionObserver](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/IntersectionObserver.html) wx.createIntersectionObserver(Object this, Object options)](wx.createIntersectionObserver.md)
     *
@@ -617,7 +611,7 @@ trait Wx extends StObject {
     /** `<live-player/>` 组件的 id */
   id: String,
     /** 在自定义组件下，当前组件实例的this，以操作组件内 `<live-player/>` 组件 */
-  component: js.Any
+  component: Any
   ): LivePlayerContext = js.native
   
   /** [[LivePusherContext](https://developers.weixin.qq.com/miniprogram/dev/api/media/live/LivePusherContext.html) wx.createLivePusherContext()](wx.createLivePusherContext.md)
@@ -632,12 +626,9 @@ trait Wx extends StObject {
     * 创建 `map` 上下文 `MapContext` 对象。 */
   def createMapContext(/** `<map/>` 组件的 id */
   mapId: String): MapContext = js.native
-  def createMapContext(
-    /** `<map/>` 组件的 id */
-  mapId: String,
-    /** 在自定义组件下，当前组件实例的this，以操作组件内 `<map/>` 组件 */
-  component: js.Any
-  ): MapContext = js.native
+  def createMapContext(/** `<map/>` 组件的 id */
+  mapId: String, /** 在自定义组件下，当前组件实例的this，以操作组件内 `<map/>` 组件 */
+  component: Any): MapContext = js.native
   
   /** [[SelectorQuery](https://developers.weixin.qq.com/miniprogram/dev/api/wxml/SelectorQuery.html) wx.createSelectorQuery()](wx.createSelectorQuery.md)
   *
@@ -668,7 +659,7 @@ trait Wx extends StObject {
     /** `<video/>` 组件的 id */
   id: String,
     /** 在自定义组件下，当前组件实例的this，以操作组件内 `<video/>` 组件 */
-  component: js.Any
+  component: Any
   ): VideoContext = js.native
   
   /** [[Worker](https://developers.weixin.qq.com/miniprogram/dev/api/worker/wx.createWorker.html) wx.createWorker(string scriptPath)](wx.createWorker.md)
@@ -1360,7 +1351,7 @@ trait Wx extends StObject {
   }
   ``` */
   def getStorageSync(/** 本地缓存中指定的 key */
-  key: String): js.Any = js.native
+  key: String): Any = js.native
   
   /** [wx.getSystemInfo(Object object)](wx.getSystemInfo.md)
   *
@@ -3058,7 +3049,7 @@ trait Wx extends StObject {
     /** 本地缓存中指定的 key */
   key: String,
     /** 需要存储的内容。只支持原生类型、Date、及能够通过`JSON.stringify`序列化的对象。 */
-  data: js.Any
+  data: Any
   ): Unit = js.native
   
   /** [wx.setTabBarBadge(Object object)](wx.setTabBarBadge.md)

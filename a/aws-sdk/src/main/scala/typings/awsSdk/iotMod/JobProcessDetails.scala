@@ -96,6 +96,6 @@ object JobProcessDetails {
     
     inline def setProcessingTargetsUndefined: Self = StObject.set(x, "processingTargets", js.undefined)
     
-    inline def setProcessingTargetsVarargs(value: ProcessingTargetName*): Self = StObject.set(x, "processingTargets", js.Array(value :_*))
+    inline def setProcessingTargetsVarargs(value: ProcessingTargetName*): Self = StObject.set(x, "processingTargets", js.Array(value*))
   }
 }

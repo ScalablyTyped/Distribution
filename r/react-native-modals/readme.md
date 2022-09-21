@@ -10,10 +10,10 @@ React Native Modals Library for IOS & Android.
 | ------------------ | :-------------: |
 | Full name          | react-native-modals |
 | Keywords           | dialog, popup, react dialog, react-native, react-native-modals, react-native-dialog, react native dialog, modals, react-component, ios, android |
-| # releases         | 16 |
-| # dependents       | 3 |
-| # downloads        | 88880 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 7227.333333333333 |
+| # stars            | 2063.0 |
 
 ## Links
 - [Homepage](https://github.com/jacklam718/react-native-modals/blob/master/README.md)

@@ -18,7 +18,7 @@ trait WizardStep extends StObject {
   
   var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var form: js.UndefOr[js.Any] = js.undefined
+  var form: js.UndefOr[Any] = js.undefined
   
   var pager: js.UndefOr[Boolean] = js.undefined
   
@@ -37,7 +37,7 @@ object WizardStep {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: WizardStepButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: WizardStepButton*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -59,7 +59,7 @@ object WizardStep {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setForm(value: js.Any): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: Any): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     

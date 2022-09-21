@@ -18,7 +18,7 @@ object anon {
     
     def has(key: String): Boolean
     
-    def set(key: String, value: js.Any): js.Any
+    def set(key: String, value: Any): Any
     
     val size: Double
   }
@@ -29,7 +29,7 @@ object anon {
       delete: String => Unit,
       get: String => String,
       has: String => Boolean,
-      set: (String, js.Any) => js.Any,
+      set: (String, Any) => Any,
       size: Double
     ): Delete = {
       val __obj = js.Dynamic.literal(_store = _store.asInstanceOf[js.Any], delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has), set = js.Any.fromFunction2(set), size = size.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object anon {
       
       inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      inline def setSet(value: (String, js.Any) => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, Any) => Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

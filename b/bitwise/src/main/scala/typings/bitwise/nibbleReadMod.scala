@@ -1,6 +1,6 @@
 package typings.bitwise
 
-import typings.bitwise.typesMod.Bit
+import typings.bitwise.typesMod.Nibble
 import typings.bitwise.typesMod.UInt4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,5 +12,5 @@ object nibbleReadMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(nibble: UInt4): js.Tuple4[Bit, Bit, Bit, Bit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nibble.asInstanceOf[js.Any]).asInstanceOf[js.Tuple4[Bit, Bit, Bit, Bit]]
+  inline def default(nibble: UInt4): Nibble = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(nibble.asInstanceOf[js.Any]).asInstanceOf[Nibble]
 }

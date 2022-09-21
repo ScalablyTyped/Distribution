@@ -10,10 +10,10 @@ Spawns and interacts with child processes using spawn / expect commands
 | ------------------ | :-------------: |
 | Full name          | nexpect |
 | Keywords           | nexpect, spawn, child process, terminal |
-| # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 21240 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7506.0 |
+| # stars            | 281.0 |
 
 ## Links
 - [Homepage](https://github.com/nodejitsu/nexpect#readme)

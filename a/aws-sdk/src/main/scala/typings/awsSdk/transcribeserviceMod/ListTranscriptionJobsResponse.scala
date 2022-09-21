@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTranscriptionJobsResponse extends StObject {
   
   /**
-    * The ListTranscriptionJobs operation returns a page of jobs at a time. The maximum size of the page is set by the MaxResults parameter. If there are more jobs in the list than the page size, Amazon Transcribe returns the NextPage token. Include the token in the next request to the ListTranscriptionJobs operation to return in the next page of jobs.
+    * If NextToken is present in your response, it indicates that not all results are displayed. To view the next set of results, copy the string associated with the NextToken parameter in your results output, then run your request again including NextToken with the value of the copied string. Repeat as needed to view all your results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.undefined
   
   /**
-    * The requested status of the jobs returned.
+    * Lists all transcription jobs that have the status specified in your request. Jobs are ordered by creation date, with the newest job first.
     */
   var Status: js.UndefOr[TranscriptionJobStatus] = js.undefined
   
   /**
-    * A list of objects containing summary information for a transcription job.
+    * Provides a summary of information about each result.
     */
   var TranscriptionJobSummaries: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobSummaries] = js.undefined
 }
@@ -42,6 +42,6 @@ object ListTranscriptionJobsResponse {
     
     inline def setTranscriptionJobSummariesUndefined: Self = StObject.set(x, "TranscriptionJobSummaries", js.undefined)
     
-    inline def setTranscriptionJobSummariesVarargs(value: TranscriptionJobSummary*): Self = StObject.set(x, "TranscriptionJobSummaries", js.Array(value :_*))
+    inline def setTranscriptionJobSummariesVarargs(value: TranscriptionJobSummary*): Self = StObject.set(x, "TranscriptionJobSummaries", js.Array(value*))
   }
 }

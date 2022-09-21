@@ -17,5 +17,5 @@ trait DictionaryRendererConstructor
 Instantiable0[DictionaryRenderer]
      with Instantiable1[/* properties */ DictionaryRendererProperties, DictionaryRenderer] {
   
-  def fromJSON(json: js.Any): DictionaryRenderer = js.native
+  def fromJSON(json: Any): DictionaryRenderer = js.native
 }

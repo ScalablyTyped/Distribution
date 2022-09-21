@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param apiKey A passed in apiKey will take precedence over an environment variable
   * @param options Additional options
   */
-class ^ ()
+open class ^ ()
   extends StObject
      with SparkPost {
   def this(apiKey: String) = this()

@@ -12,12 +12,12 @@ trait CreateMeetingDialOutRequest extends StObject {
   var FromPhoneNumber: E164PhoneNumber
   
   /**
-    * Token used by the Amazon Chime SDK attendee. Call the  CreateAttendee API to get a join token. 
+    * Token used by the Amazon Chime SDK attendee. Call the CreateAttendee action to get a join token.
     */
   var JoinToken: JoinTokenString
   
   /**
-    * The Amazon Chime SDK meeting ID. Type: String Pattern: [a-fA-F0-9]{8}(?:-[a-fA-F0-9]{4}){3}-[a-fA-F0-9]{12} Required: No
+    * The Amazon Chime SDK meeting ID.
     */
   var MeetingId: GuidString
   

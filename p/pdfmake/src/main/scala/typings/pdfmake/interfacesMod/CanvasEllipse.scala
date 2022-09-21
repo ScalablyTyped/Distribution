@@ -11,14 +11,22 @@ trait CanvasEllipse
      with CanvasFilledElement
      with CanvasElement {
   
+  /** Horizontal radius in `pt`. */
   var r1: Double
   
+  /**
+    * Vertical radius in `pt`.
+    *
+    * Defaults to the same value as {@link r1}.
+    */
   var r2: js.UndefOr[Double] = js.undefined
   
   var `type`: ellipse
   
+  /** Horizontal position from the left edge of the canvas element in `pt`. */
   var x: Double
   
+  /** Vertical position from the top edge of the canvas element in `pt`. */
   var y: Double
 }
 object CanvasEllipse {

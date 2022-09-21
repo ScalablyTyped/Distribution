@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImportDocumentationPartsRequest extends StObject {
   
   /**
-    * [Required] Raw byte array representing the to-be-imported documentation parts. To import from an OpenAPI file, this is a JSON object.
+    * Raw byte array representing the to-be-imported documentation parts. To import from an OpenAPI file, this is a JSON object.
     */
   var body: _Blob
   
@@ -22,7 +22,7 @@ trait ImportDocumentationPartsRequest extends StObject {
   var mode: js.UndefOr[PutMode] = js.undefined
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }

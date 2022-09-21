@@ -1,34 +1,20 @@
 package typings.japanPostalCode
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
   @JSImport("japan-postal-code", JSImport.Namespace)
   @js.native
-  val ^ : API = js.native
+  val ^ : js.Any = js.native
   
-  trait API extends StObject {
-    
-    def get(stringifiedPostalCode: String, callback: Callback): Unit
-    @JSName("get")
-    var get_Original: FetchPostalCodeMethod
-  }
-  object API {
-    
-    inline def apply(get: (/* stringifiedPostalCode */ String, /* callback */ Callback) => Unit): API = {
-      val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
-      __obj.asInstanceOf[API]
-    }
-    
-    extension [Self <: API](x: Self) {
-      
-      inline def setGet(value: (/* stringifiedPostalCode */ String, /* callback */ Callback) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
-    }
-  }
+  @JSImport("japan-postal-code", "get")
+  @js.native
+  def get: js.Function2[/* zip_code */ String, /* callback */ Callback, Unit] = js.native
+  inline def get(zip_code: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(zip_code.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def get_=(x: js.Function2[/* zip_code */ String, /* callback */ Callback, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
   
   trait AddressData extends StObject {
     
@@ -59,12 +45,5 @@ object mod extends Shortcut {
     }
   }
   
-  type Callback = js.Function1[/* addressData */ AddressData, Unit]
-  
-  type FetchPostalCodeMethod = js.Function2[/* stringifiedPostalCode */ String, /* callback */ Callback, Unit]
-  
-  type _To = API
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: API = ^
+  type Callback = js.Function1[/* address */ AddressData, Unit]
 }

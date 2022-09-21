@@ -14,6 +14,10 @@ object mod {
   @js.native
   val stdout: TestStream = js.native
   
+  type AsyncNoOutputCallback = js.Function0[js.Promise[Unit]]
+  
+  type AsyncOutputCallback = js.Function1[/* output */ Output, js.Promise[Unit]]
+  
   trait Inspector extends StObject {
     
     var output: Output
@@ -33,7 +37,7 @@ object mod {
       
       inline def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      inline def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
+      inline def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value*))
       
       inline def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
     }
@@ -72,11 +76,17 @@ object mod {
     def ignore(): Restore = js.native
     def ignore(options: Options): Restore = js.native
     
+    def ignoreAsync(fn: AsyncNoOutputCallback): js.Promise[Unit] = js.native
+    def ignoreAsync(options: Options, fn: AsyncNoOutputCallback): js.Promise[Unit] = js.native
+    
     def ignoreSync(fn: NoOutputCallback): Unit = js.native
     def ignoreSync(options: Options, fn: NoOutputCallback): Unit = js.native
     
     def inspect(): Inspector = js.native
     def inspect(options: Options): Inspector = js.native
+    
+    def inspectAsync(fn: AsyncOutputCallback): js.Promise[Output] = js.native
+    def inspectAsync(options: Options, fn: AsyncOutputCallback): js.Promise[Output] = js.native
     
     def inspectSync(fn: OutputCallback): Output = js.native
     def inspectSync(options: Options, fn: OutputCallback): Output = js.native

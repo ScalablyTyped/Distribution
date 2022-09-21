@@ -37,6 +37,6 @@ object BlockWithoutTransactionData {
     
     inline def setTransactions(value: js.Array[String]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
     
-    inline def setTransactionsVarargs(value: String*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+    inline def setTransactionsVarargs(value: String*): Self = StObject.set(x, "transactions", js.Array(value*))
   }
 }

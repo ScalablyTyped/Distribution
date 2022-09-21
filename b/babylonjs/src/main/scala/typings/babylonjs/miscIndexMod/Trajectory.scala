@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Create a new empty Trajectory.
   * @param segmentLength radius of discretization for Trajectory points
   */
-class Trajectory ()
+open class Trajectory ()
   extends typings.babylonjs.trajectoryClassifierMod.Trajectory {
   def this(segmentLength: Double) = this()
 }
@@ -28,40 +28,40 @@ object Trajectory {
     */
   inline def Deserialize(json: String): typings.babylonjs.trajectoryClassifierMod.Trajectory = ^.asInstanceOf[js.Dynamic].applyDynamic("Deserialize")(json.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.trajectoryClassifierMod.Trajectory]
   
-  @JSImport("babylonjs/Misc/index", "Trajectory._bestMatch")
+  @JSImport("babylonjs/Misc/index", "Trajectory._BestMatch")
   @js.native
-  def _bestMatch: js.Any = js.native
-  inline def _bestMatch_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_bestMatch")(x.asInstanceOf[js.Any])
+  def _BestMatch: Any = js.native
+  inline def _BestMatch_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BestMatch")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/Misc/index", "Trajectory._bestScore")
+  @JSImport("babylonjs/Misc/index", "Trajectory._BestScore")
   @js.native
-  def _bestScore: js.Any = js.native
-  inline def _bestScore_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_bestScore")(x.asInstanceOf[js.Any])
+  def _BestScore: Any = js.native
+  inline def _BestScore_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BestScore")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/Misc/index", "Trajectory._forwardDir")
+  @JSImport("babylonjs/Misc/index", "Trajectory._ForwardDir")
   @js.native
-  def _forwardDir: js.Any = js.native
-  inline def _forwardDir_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_forwardDir")(x.asInstanceOf[js.Any])
+  def _ForwardDir: Any = js.native
+  inline def _ForwardDir_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ForwardDir")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/Misc/index", "Trajectory._fromToVec")
+  @JSImport("babylonjs/Misc/index", "Trajectory._FromToVec")
   @js.native
-  def _fromToVec: js.Any = js.native
-  inline def _fromToVec_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_fromToVec")(x.asInstanceOf[js.Any])
+  def _FromToVec: Any = js.native
+  inline def _FromToVec_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_FromToVec")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/Misc/index", "Trajectory._inverseFromVec")
+  @JSImport("babylonjs/Misc/index", "Trajectory._InverseFromVec")
   @js.native
-  def _inverseFromVec: js.Any = js.native
-  inline def _inverseFromVec_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_inverseFromVec")(x.asInstanceOf[js.Any])
+  def _InverseFromVec: Any = js.native
+  inline def _InverseFromVec_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_InverseFromVec")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/Misc/index", "Trajectory._lookMatrix")
+  @JSImport("babylonjs/Misc/index", "Trajectory._LookMatrix")
   @js.native
-  def _lookMatrix: js.Any = js.native
-  inline def _lookMatrix_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_lookMatrix")(x.asInstanceOf[js.Any])
+  def _LookMatrix: Any = js.native
+  inline def _LookMatrix_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LookMatrix")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/Misc/index", "Trajectory._score")
+  @JSImport("babylonjs/Misc/index", "Trajectory._Score")
   @js.native
-  def _score: js.Any = js.native
-  inline def _score_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_score")(x.asInstanceOf[js.Any])
+  def _Score: Any = js.native
+  inline def _Score_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Score")(x.asInstanceOf[js.Any])
   
   /**
     * Determine which token vector is most similar to the
@@ -70,10 +70,10 @@ object Trajectory {
     * @param tokens token vector list
     * @returns index of the most similar token to the segment
     */
-  @JSImport("babylonjs/Misc/index", "Trajectory._tokenizeSegment")
+  @JSImport("babylonjs/Misc/index", "Trajectory._TokenizeSegment")
   @js.native
-  def _tokenizeSegment: js.Any = js.native
-  inline def _tokenizeSegment_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tokenizeSegment")(x.asInstanceOf[js.Any])
+  def _TokenizeSegment: Any = js.native
+  inline def _TokenizeSegment_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TokenizeSegment")(x.asInstanceOf[js.Any])
   
   /**
     * Transform the rotation (i.e., direction) of a segment to isolate
@@ -86,13 +86,13 @@ object Trajectory {
     * @param result reference to output variable
     * @returns whether or not transformation was successful
     */
-  @JSImport("babylonjs/Misc/index", "Trajectory._transformSegmentDirToRef")
+  @JSImport("babylonjs/Misc/index", "Trajectory._TransformSegmentDirToRef")
   @js.native
-  def _transformSegmentDirToRef: js.Any = js.native
-  inline def _transformSegmentDirToRef_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_transformSegmentDirToRef")(x.asInstanceOf[js.Any])
+  def _TransformSegmentDirToRef: Any = js.native
+  inline def _TransformSegmentDirToRef_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TransformSegmentDirToRef")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/Misc/index", "Trajectory._upDir")
+  @JSImport("babylonjs/Misc/index", "Trajectory._UpDir")
   @js.native
-  def _upDir: js.Any = js.native
-  inline def _upDir_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_upDir")(x.asInstanceOf[js.Any])
+  def _UpDir: Any = js.native
+  inline def _UpDir_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpDir")(x.asInstanceOf[js.Any])
 }

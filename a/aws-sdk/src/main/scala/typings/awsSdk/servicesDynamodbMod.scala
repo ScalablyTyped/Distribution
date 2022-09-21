@@ -17,7 +17,7 @@ object servicesDynamodbMod {
   /**
     * Creates a new service object with a configuration object.
     */
-  class DynamoDBCustomizations () extends Service {
+  open class DynamoDBCustomizations () extends Service {
     def this(config: ServiceConfigurationOptions) = this()
   }
   /* static members */

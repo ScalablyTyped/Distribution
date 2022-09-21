@@ -49,7 +49,7 @@ trait ArrayConstructor extends StObject {
   def every[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): Boolean = js.native
   
   /**
@@ -77,7 +77,7 @@ trait ArrayConstructor extends StObject {
   def filter[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): Array[T] = js.native
   
   /**
@@ -96,7 +96,7 @@ trait ArrayConstructor extends StObject {
   def find[T](
     array: ArrayLike[T],
     predicate: js.Function3[/* value */ T, /* index */ Double, /* obj */ Array[T], Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): T = js.native
   
   /**
@@ -109,7 +109,7 @@ trait ArrayConstructor extends StObject {
     * predicate. If it is not provided, undefined is used instead.
     */
   def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean]): Double = js.native
-  def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean], thisArg: js.Any): Double = js.native
+  def findIndex[T](array: ArrayLike[T], predicate: js.Function1[/* value */ T, Boolean], thisArg: Any): Double = js.native
   
   /**
     * Performs the specified action for each element in an array.
@@ -123,7 +123,7 @@ trait ArrayConstructor extends StObject {
   def forEach[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Unit],
-    thisArg: js.Any
+    thisArg: Any
   ): Unit = js.native
   
   def includes[T](array: ArrayLike[T], value: T): Boolean = js.native
@@ -169,7 +169,7 @@ trait ArrayConstructor extends StObject {
   def map[T, U](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], U],
-    thisArg: js.Any
+    thisArg: Any
   ): Array[U] = js.native
   
   /**
@@ -313,7 +313,7 @@ trait ArrayConstructor extends StObject {
   def some[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): Boolean = js.native
   
   /**

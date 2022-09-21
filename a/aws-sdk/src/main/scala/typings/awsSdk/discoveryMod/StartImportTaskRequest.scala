@@ -12,7 +12,7 @@ trait StartImportTaskRequest extends StObject {
   var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
-    * The URL for your import file that you've uploaded to Amazon S3.  If you're using the AWS CLI, this URL is structured as follows: s3://BucketName/ImportFileName.CSV  
+    * The URL for your import file that you've uploaded to Amazon S3.  If you're using the Amazon Web Services CLI, this URL is structured as follows: s3://BucketName/ImportFileName.CSV  
     */
   var importUrl: ImportURL
   

@@ -10,15 +10,12 @@ Truncates in the middle.
 | ------------------ | :-------------: |
 | Full name          | truncate-middle |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 135951 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10762.0 |
+| # stars            | 6.0 |
 
 ## Links
-- [Homepage](https://github.com/kahwee/truncate-middle#readme)
-- [Bugs](https://github.com/kahwee/truncate-middle/issues)
-- [Repository](https://github.com/kahwee/truncate-middle)
 - [Npm](https://www.npmjs.com/package/truncate-middle)
     
 

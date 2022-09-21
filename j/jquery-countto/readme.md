@@ -11,9 +11,9 @@ A jQuery plugin that will count up (or down) to a target number at a specified s
 | Full name          | jquery-countto |
 | Keywords           | jQuery, counter, count, increment, decrement |
 | # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 97966 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6824.333333333333 |
+| # stars            | 687.0 |
 
 ## Links
 - [Homepage](https://github.com/mhuggins/jquery-countTo#readme)

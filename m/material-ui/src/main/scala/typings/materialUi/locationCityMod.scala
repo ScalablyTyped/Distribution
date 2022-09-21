@@ -10,10 +10,10 @@ object locationCityMod {
   
   @JSImport("material-ui/svg-icons/social/location-city", JSImport.Default)
   @js.native
-  class default () extends SocialLocationCity
+  open class default () extends SocialLocationCity
   
   @JSImport("material-ui/svg-icons/social/location-city", "SocialLocationCity")
   @js.native
-  class SocialLocationCity ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class SocialLocationCity ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

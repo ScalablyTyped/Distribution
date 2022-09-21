@@ -2,6 +2,8 @@ package typings.intlTelInput
 
 import typings.intlTelInput.mod.Options
 import typings.intlTelInput.mod.Plugin
+import typings.intlTelInput.mod.global.intlTelInputUtils.numberFormat
+import typings.intlTelInput.mod.global.intlTelInputUtils.numberType
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,6 +27,20 @@ object global {
     object global {
       
       object intlTelInputUtils {
+        
+        @JSGlobal("intlTelInputUtils")
+        @js.native
+        val ^ : js.Any = js.native
+        
+        inline def formatNumber(number: String, countryCode: String, format: numberFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(number.asInstanceOf[js.Any], countryCode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+        
+        inline def getExampleNumber(countryCode: String, isNational: Boolean, numberType: numberType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getExampleNumber")(countryCode.asInstanceOf[js.Any], isNational.asInstanceOf[js.Any], numberType.asInstanceOf[js.Any])).asInstanceOf[String]
+        
+        inline def getNumberType(number: String, countryCode: String): numberType = (^.asInstanceOf[js.Dynamic].applyDynamic("getNumberType")(number.asInstanceOf[js.Any], countryCode.asInstanceOf[js.Any])).asInstanceOf[numberType]
+        
+        inline def getValidationError(number: String, countryCode: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(number.asInstanceOf[js.Any], countryCode.asInstanceOf[js.Any])).asInstanceOf[String]
+        
+        inline def isValidNumber(number: String, countryCode: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidNumber")(number.asInstanceOf[js.Any], countryCode.asInstanceOf[js.Any])).asInstanceOf[String]
         
         @JSGlobal("intlTelInputUtils.numberFormat")
         @js.native

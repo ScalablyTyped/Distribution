@@ -1,5 +1,6 @@
 package typings.bulmaCalendar
 
+import typings.bulmaCalendar.anon.Date
 import typings.bulmaCalendar.anon.End
 import typings.bulmaCalendar.anon.EndDate
 import typings.bulmaCalendar.bulmaCalendarStrings.`inline`
@@ -10,7 +11,6 @@ import typings.bulmaCalendar.bulmaCalendarStrings.default
 import typings.bulmaCalendar.bulmaCalendarStrings.dialog
 import typings.bulmaCalendar.bulmaCalendarStrings.time
 import typings.bulmaCalendar.bulmaCalendarStrings.top
-import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +20,7 @@ object mod {
   
   @JSImport("bulma-calendar", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with typings.bulmaCalendar.mod.bulmaCalendar {
     // Constructors
@@ -134,19 +134,19 @@ object mod {
     /**
       * Date format pattern
       *
-      * @default 'MM/DD/YYYY'
+      * @default 'MM/dd/yyyy'
       */
     var dateFormat: js.UndefOr[String] = js.undefined
     
     /**
       * List of disabled dates
       */
-    var disabledDates: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var disabledDates: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * List of disabled week days
       */
-    var disabledWeekDays: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+    var disabledWeekDays: js.UndefOr[String | js.Array[Any]] = js.undefined
     
     /**
       * Display mode
@@ -172,12 +172,19 @@ object mod {
     /**
       * Pre-selected end date
       */
-    var endDate: js.UndefOr[Date] = js.undefined
+    var endDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Pre-selected end time
       */
-    var endTime: js.UndefOr[Date] = js.undefined
+    var endTime: js.UndefOr[js.Date] = js.undefined
+    
+    /**
+      * Header month year format pattern
+      *
+      * @default 'MMMM yyyy'
+      */
+    var headerMonthYearFromat: js.UndefOr[String] = js.undefined
     
     /**
       * Header block position
@@ -186,7 +193,12 @@ object mod {
       */
     var headerPosition: js.UndefOr[top | bottom] = js.undefined
     
-    var icons: js.UndefOr[typings.bulmaCalendar.anon.Date] = js.undefined
+    /**
+      * List of highlighted dates
+      */
+    var highlightedDates: js.UndefOr[String | js.Array[Any]] = js.undefined
+    
+    var icons: js.UndefOr[Date] = js.undefined
     
     /**
       * Range capability (start and end date/time selection
@@ -215,12 +227,12 @@ object mod {
     /**
       * Maximum date allowed
       */
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Minimum date allowed
       */
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Steps for minutes selector
@@ -228,6 +240,20 @@ object mod {
       * @default 5
       */
     var minuteSteps: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Navigation month format pattern
+      *
+      * @default 'MMMM'
+      */
+    var navigationMonthFormat: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Navigation year format pattern
+      *
+      * @default 'yyyy'
+      */
+    var navigationYearFormat: js.UndefOr[String] = js.undefined
     
     /**
       * Now button label
@@ -284,12 +310,12 @@ object mod {
     /**
       * Pre-selected start date
       */
-    var startDate: js.UndefOr[Date] = js.undefined
+    var startDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Pre-selected start time
       */
-    var startTime: js.UndefOr[Date] = js.undefined
+    var startTime: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Time format pattern
@@ -370,17 +396,17 @@ object mod {
       
       inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
-      inline def setDisabledDates(value: js.Array[js.Any]): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
+      inline def setDisabledDates(value: js.Array[Any]): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
       
       inline def setDisabledDatesUndefined: Self = StObject.set(x, "disabledDates", js.undefined)
       
-      inline def setDisabledDatesVarargs(value: js.Any*): Self = StObject.set(x, "disabledDates", js.Array(value :_*))
+      inline def setDisabledDatesVarargs(value: Any*): Self = StObject.set(x, "disabledDates", js.Array(value*))
       
-      inline def setDisabledWeekDays(value: String | js.Array[js.Any]): Self = StObject.set(x, "disabledWeekDays", value.asInstanceOf[js.Any])
+      inline def setDisabledWeekDays(value: String | js.Array[Any]): Self = StObject.set(x, "disabledWeekDays", value.asInstanceOf[js.Any])
       
       inline def setDisabledWeekDaysUndefined: Self = StObject.set(x, "disabledWeekDays", js.undefined)
       
-      inline def setDisabledWeekDaysVarargs(value: js.Any*): Self = StObject.set(x, "disabledWeekDays", js.Array(value :_*))
+      inline def setDisabledWeekDaysVarargs(value: Any*): Self = StObject.set(x, "disabledWeekDays", js.Array(value*))
       
       inline def setDisplayMode(value: default | dialog | `inline`): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
       
@@ -394,19 +420,29 @@ object mod {
       
       inline def setEnableYearSwitchUndefined: Self = StObject.set(x, "enableYearSwitch", js.undefined)
       
-      inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
       inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
-      inline def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
       inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+      
+      inline def setHeaderMonthYearFromat(value: String): Self = StObject.set(x, "headerMonthYearFromat", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderMonthYearFromatUndefined: Self = StObject.set(x, "headerMonthYearFromat", js.undefined)
       
       inline def setHeaderPosition(value: top | bottom): Self = StObject.set(x, "headerPosition", value.asInstanceOf[js.Any])
       
       inline def setHeaderPositionUndefined: Self = StObject.set(x, "headerPosition", js.undefined)
       
-      inline def setIcons(value: typings.bulmaCalendar.anon.Date): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      inline def setHighlightedDates(value: String | js.Array[Any]): Self = StObject.set(x, "highlightedDates", value.asInstanceOf[js.Any])
+      
+      inline def setHighlightedDatesUndefined: Self = StObject.set(x, "highlightedDates", js.undefined)
+      
+      inline def setHighlightedDatesVarargs(value: Any*): Self = StObject.set(x, "highlightedDates", js.Array(value*))
+      
+      inline def setIcons(value: Date): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
       inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
@@ -426,17 +462,25 @@ object mod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
       inline def setMinuteSteps(value: Double): Self = StObject.set(x, "minuteSteps", value.asInstanceOf[js.Any])
       
       inline def setMinuteStepsUndefined: Self = StObject.set(x, "minuteSteps", js.undefined)
+      
+      inline def setNavigationMonthFormat(value: String): Self = StObject.set(x, "navigationMonthFormat", value.asInstanceOf[js.Any])
+      
+      inline def setNavigationMonthFormatUndefined: Self = StObject.set(x, "navigationMonthFormat", js.undefined)
+      
+      inline def setNavigationYearFormat(value: String): Self = StObject.set(x, "navigationYearFormat", value.asInstanceOf[js.Any])
+      
+      inline def setNavigationYearFormatUndefined: Self = StObject.set(x, "navigationYearFormat", js.undefined)
       
       inline def setNowLabel(value: String): Self = StObject.set(x, "nowLabel", value.asInstanceOf[js.Any])
       
@@ -470,11 +514,11 @@ object mod {
       
       inline def setShowTodayButtonUndefined: Self = StObject.set(x, "showTodayButton", js.undefined)
       
-      inline def setStartDate(value: Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
       inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
       
-      inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
       inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
@@ -531,37 +575,62 @@ object mod {
       */
     def date_=(date: End): Unit = js.native
     
+    /**
+      * Disable a date. Make sure the time is set to `00:00:00`.
+      */
+    def disableDate(d: js.Date): Unit = js.native
+    
+    /**
+      * Disable a weekday (`0 - 6`, where `0` is `Sunday` and `6` is `Saturday`).
+      */
+    def disableWeekDay(weekDay: String): Unit = js.native
+    
     def emit(name: EventType, data: typings.bulmaCalendar.mod.bulmaCalendar): Unit = js.native
     def emit(name: EventType, data: typings.bulmaCalendar.mod.bulmaCalendar, silent: Boolean): Unit = js.native
     
     /**
+      * Enable a date. Make sure the time is set to `00:00:00`.
+      */
+    def enableDate(d: js.Date): Unit = js.native
+    
+    /**
+      * Enable a weekday (`0 - 6`, where `0` is `Sunday` and `6` is `Saturday`).
+      */
+    def enableWeekDay(weekDay: String): Unit = js.native
+    
+    /**
       * Get selected end date
       */
-    def endDate: Date = js.native
+    def endDate: js.Date = js.native
     /**
       * Set end date
       */
-    def endDate_=(endDate: Date): Unit = js.native
+    def endDate_=(endDate: js.Date): Unit = js.native
     
     /**
       * Get selected end time
       */
-    def endTime: Date = js.native
+    def endTime: js.Date = js.native
     /**
       * Set end time
       */
-    def endTime_=(endTime: Date): Unit = js.native
+    def endTime_=(endTime: js.Date): Unit = js.native
     
     /**
       * Close date picker (not available with "inline" display style)
       */
     def hide(): Unit = js.native
     
+    /**
+      * Highlight a date. Make sure the time is set to `00:00:00`.
+      */
+    def highlightDate(d: js.Date): Unit = js.native
+    
     // Getters
     /**
       * Get component instance ID
       */
-    def id: js.Any = js.native
+    def id: Any = js.native
     
     /**
       * Check if date picker is open or not
@@ -592,22 +661,22 @@ object mod {
     /**
       * Get max possible date
       */
-    def maxDate: Date = js.native
+    def maxDate: js.Date = js.native
     /**
       * Set max possible date
       */
-    def maxDate_=(maxDate: Date): Unit = js.native
+    def maxDate_=(maxDate: js.Date): Unit = js.native
     
     def middleware[T /* <: EventType */](eventName: T, fn: js.Function1[/* event */ Event[T], Unit]): Unit = js.native
     
     /**
       * Get min possible date
       */
-    def minDate: Date = js.native
+    def minDate: js.Date = js.native
     /**
       * Set min possible date
       */
-    def minDate_=(minDate: Date): Unit = js.native
+    def minDate_=(minDate: js.Date): Unit = js.native
     
     def on[T /* <: EventType */](name: T, callback: js.Function1[/* event */ Event[T], Unit]): Unit = js.native
     def on[T /* <: EventType */](name: T, callback: js.Function1[/* event */ Event[T], Unit], once: Boolean): Unit = js.native
@@ -625,6 +694,12 @@ object mod {
     def removeMiddleware(eventName: EventType): Unit = js.native
     
     /**
+      * Update the displayed widget to match any changes that have
+      * been made to the date picker.
+      */
+    def render(): Unit = js.native
+    
+    /**
       * Force to set calendar data into UI inputs
       */
     def save(): Unit = js.native
@@ -636,27 +711,32 @@ object mod {
     def show(): Unit = js.native
     
     /**
+      * Take a snapshot of the date picker's current state.
+      */
+    def snapshot(): Unit = js.native
+    
+    /**
       * Get selected start date
       */
-    def startDate: Date = js.native
+    def startDate: js.Date = js.native
     /**
       * Se start date
       */
-    def startDate_=(startDate: Date): Unit = js.native
+    def startDate_=(startDate: js.Date): Unit = js.native
     
     /**
       * Get selected start time
       */
-    def startTime: Date = js.native
+    def startTime: js.Date = js.native
     /**
       * Set start time
       */
-    def startTime_=(startTime: Date): Unit = js.native
+    def startTime_=(startTime: js.Date): Unit = js.native
     
     /**
       * Get selected time
       */
-    def time: Date = js.native
+    def time: js.Date = js.native
     
     /**
       * Get time format pattern
@@ -670,7 +750,17 @@ object mod {
     /**
       * Set time
       */
-    def time_=(time: Date): Unit = js.native
+    def time_=(time: js.Date): Unit = js.native
+    
+    /**
+      * Show the date picker if it's hidden, otherwise hide it.
+      */
+    def toggle(): Unit = js.native
+    
+    /**
+      * Unhighlight a date. Make sure the time is set to `00:00:00`.
+      */
+    def unhighlightDate(d: js.Date): Unit = js.native
     
     /**
       * Get the date picker value as formatted string if no parameter else set the passed value

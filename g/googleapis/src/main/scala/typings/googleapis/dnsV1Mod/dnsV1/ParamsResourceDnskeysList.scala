@@ -1,9 +1,5 @@
 package typings.googleapis.dnsV1Mod.dnsV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,32 +9,27 @@ trait ParamsResourceDnskeysList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    *
+    * An optional comma-separated list of digest types to compute and display for key signing keys. If omitted, the recommended digest type is computed and displayed.
     */
   var digestType: js.UndefOr[String] = js.undefined
   
   /**
-    *
+    * Identifies the managed zone addressed by this request. Can be the managed zone name or ID.
     */
   var managedZone: js.UndefOr[String] = js.undefined
   
   /**
-    *
+    * Optional. Maximum number of results to be returned. If unspecified, the server decides how many results to return.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    *
+    * Optional. A tag returned by a previous list request that was truncated. Use this parameter to continue a previous list request.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    *
+    * Identifies the project addressed by this request.
     */
   var project: js.UndefOr[String] = js.undefined
 }
@@ -50,10 +41,6 @@ object ParamsResourceDnskeysList {
   }
   
   extension [Self <: ParamsResourceDnskeysList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDigestType(value: String): Self = StObject.set(x, "digestType", value.asInstanceOf[js.Any])
     

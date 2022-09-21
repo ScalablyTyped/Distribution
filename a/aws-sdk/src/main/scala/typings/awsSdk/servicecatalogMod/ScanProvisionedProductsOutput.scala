@@ -33,6 +33,6 @@ object ScanProvisionedProductsOutput {
     
     inline def setProvisionedProductsUndefined: Self = StObject.set(x, "ProvisionedProducts", js.undefined)
     
-    inline def setProvisionedProductsVarargs(value: ProvisionedProductDetail*): Self = StObject.set(x, "ProvisionedProducts", js.Array(value :_*))
+    inline def setProvisionedProductsVarargs(value: ProvisionedProductDetail*): Self = StObject.set(x, "ProvisionedProducts", js.Array(value*))
   }
 }

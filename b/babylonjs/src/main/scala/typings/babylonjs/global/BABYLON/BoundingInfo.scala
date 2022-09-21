@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.BoundingInfo")
 @js.native
-class BoundingInfo protected ()
+open class BoundingInfo protected ()
   extends StObject
      with typings.babylonjs.BABYLON.BoundingInfo {
   /**
@@ -28,7 +28,7 @@ class BoundingInfo protected ()
   
   /**
     * Checks if a cullable object (mesh...) is in the camera frustum
-    * Unlike isInFrustum this cheks the full bounding box
+    * Unlike isInFrustum this checks the full bounding box
     * @param frustumPlanes Camera near/planes
     * @returns true if the object is in frustum otherwise false
     */
@@ -46,7 +46,7 @@ class BoundingInfo protected ()
 /* static members */
 object BoundingInfo {
   
-  @JSGlobal("BABYLON.BoundingInfo.TmpVector3")
+  @JSGlobal("BABYLON.BoundingInfo._TmpVector3")
   @js.native
-  val TmpVector3: js.Any = js.native
+  val _TmpVector3: Any = js.native
 }

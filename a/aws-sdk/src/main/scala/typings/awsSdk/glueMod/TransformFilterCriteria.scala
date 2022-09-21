@@ -9,27 +9,27 @@ trait TransformFilterCriteria extends StObject {
   /**
     * The time and date after which the transforms were created.
     */
-  var CreatedAfter: js.UndefOr[Timestamp] = js.undefined
+  var CreatedAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time and date before which the transforms were created.
     */
-  var CreatedBefore: js.UndefOr[Timestamp] = js.undefined
+  var CreatedBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * This value determines which version of AWS Glue this machine learning transform is compatible with. Glue 1.0 is recommended for most customers. If the value is not set, the Glue compatibility defaults to Glue 0.9. For more information, see AWS Glue Versions in the developer guide.
+    * This value determines which version of Glue this machine learning transform is compatible with. Glue 1.0 is recommended for most customers. If the value is not set, the Glue compatibility defaults to Glue 0.9. For more information, see Glue Versions in the developer guide.
     */
   var GlueVersion: js.UndefOr[GlueVersionString] = js.undefined
   
   /**
     * Filter on transforms last modified after this date.
     */
-  var LastModifiedAfter: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Filter on transforms last modified before this date.
     */
-  var LastModifiedBefore: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A unique transform name that is used to filter the machine learning transforms.
@@ -60,11 +60,11 @@ object TransformFilterCriteria {
   
   extension [Self <: TransformFilterCriteria](x: Self) {
     
-    inline def setCreatedAfter(value: Timestamp): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
+    inline def setCreatedAfter(value: js.Date): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
     
     inline def setCreatedAfterUndefined: Self = StObject.set(x, "CreatedAfter", js.undefined)
     
-    inline def setCreatedBefore(value: Timestamp): Self = StObject.set(x, "CreatedBefore", value.asInstanceOf[js.Any])
+    inline def setCreatedBefore(value: js.Date): Self = StObject.set(x, "CreatedBefore", value.asInstanceOf[js.Any])
     
     inline def setCreatedBeforeUndefined: Self = StObject.set(x, "CreatedBefore", js.undefined)
     
@@ -72,11 +72,11 @@ object TransformFilterCriteria {
     
     inline def setGlueVersionUndefined: Self = StObject.set(x, "GlueVersion", js.undefined)
     
-    inline def setLastModifiedAfter(value: Timestamp): Self = StObject.set(x, "LastModifiedAfter", value.asInstanceOf[js.Any])
+    inline def setLastModifiedAfter(value: js.Date): Self = StObject.set(x, "LastModifiedAfter", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedAfterUndefined: Self = StObject.set(x, "LastModifiedAfter", js.undefined)
     
-    inline def setLastModifiedBefore(value: Timestamp): Self = StObject.set(x, "LastModifiedBefore", value.asInstanceOf[js.Any])
+    inline def setLastModifiedBefore(value: js.Date): Self = StObject.set(x, "LastModifiedBefore", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedBeforeUndefined: Self = StObject.set(x, "LastModifiedBefore", js.undefined)
     
@@ -88,7 +88,7 @@ object TransformFilterCriteria {
     
     inline def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
     
-    inline def setSchemaVarargs(value: SchemaColumn*): Self = StObject.set(x, "Schema", js.Array(value :_*))
+    inline def setSchemaVarargs(value: SchemaColumn*): Self = StObject.set(x, "Schema", js.Array(value*))
     
     inline def setStatus(value: TransformStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

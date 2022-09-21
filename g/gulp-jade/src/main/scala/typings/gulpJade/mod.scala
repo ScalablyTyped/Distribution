@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(params: Params): js.Any = ^.asInstanceOf[js.Dynamic].apply(params.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(params: Params): Any = ^.asInstanceOf[js.Dynamic].apply(params.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("gulp-jade", JSImport.Namespace)
   @js.native
@@ -38,7 +38,7 @@ object mod {
       * Data to be used while parsing jade files. Has lower
       * precedence than locals.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * If set to true, the tokens and function body is logged
@@ -64,13 +64,13 @@ object mod {
       * Used to set a version of jade other than this library's
       * dependency, or to customise filters.
       */
-    var jade: js.UndefOr[js.Any] = js.undefined
+    var jade: js.UndefOr[Any] = js.undefined
     
     /**
       * Locals to be used while parsing jade files. Takes
       * precedence over data.
       */
-    var locals: js.UndefOr[js.Any] = js.undefined
+    var locals: js.UndefOr[Any] = js.undefined
     
     /**
       * Adds whitespace to the resulting html to make it
@@ -106,7 +106,7 @@ object mod {
       
       inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -118,11 +118,11 @@ object mod {
       
       inline def setDoctypeUndefined: Self = StObject.set(x, "doctype", js.undefined)
       
-      inline def setJade(value: js.Any): Self = StObject.set(x, "jade", value.asInstanceOf[js.Any])
+      inline def setJade(value: Any): Self = StObject.set(x, "jade", value.asInstanceOf[js.Any])
       
       inline def setJadeUndefined: Self = StObject.set(x, "jade", js.undefined)
       
-      inline def setLocals(value: js.Any): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+      inline def setLocals(value: Any): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
       inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
       

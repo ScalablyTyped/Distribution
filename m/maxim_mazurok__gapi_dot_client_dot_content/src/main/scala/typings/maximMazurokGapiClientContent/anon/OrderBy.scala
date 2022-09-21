@@ -59,7 +59,7 @@ trait OrderBy extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /**
-    * Obtains orders that match any of the specified statuses. Please note that `active` is a shortcut for `pendingShipment` and `partiallyShipped`, and `completed` is a shortcut for
+    * Obtains orders that match any of the specified statuses. Note that `active` is a shortcut for `pendingShipment` and `partiallyShipped`, and `completed` is a shortcut for
     * `shipped`, `partiallyDelivered`, `delivered`, `partiallyReturned`, `returned`, and `canceled`.
     */
   var statuses: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -145,7 +145,7 @@ object OrderBy {
     
     inline def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
     
-    inline def setStatusesVarargs(value: String*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: String*): Self = StObject.set(x, "statuses", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

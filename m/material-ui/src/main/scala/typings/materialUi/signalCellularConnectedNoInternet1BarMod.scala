@@ -10,10 +10,10 @@ object signalCellularConnectedNoInternet1BarMod {
   
   @JSImport("material-ui/svg-icons/device/signal-cellular-connected-no-internet-1-bar", JSImport.Default)
   @js.native
-  class default () extends DeviceSignalCellularConnectedNoInternet1Bar
+  open class default () extends DeviceSignalCellularConnectedNoInternet1Bar
   
   @JSImport("material-ui/svg-icons/device/signal-cellular-connected-no-internet-1-bar", "DeviceSignalCellularConnectedNoInternet1Bar")
   @js.native
-  class DeviceSignalCellularConnectedNoInternet1Bar ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceSignalCellularConnectedNoInternet1Bar ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

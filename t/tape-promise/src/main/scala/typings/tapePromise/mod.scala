@@ -1,6 +1,5 @@
 package typings.tapePromise
 
-import typings.std.RegExp
 import typings.tape.mod.TestOptions
 import typings.tapePromise.anon.AsyncTapeFunctionNoneopts
 import org.scalablytyped.runtime.StObject
@@ -13,7 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(tapeTest: js.Any): AsyncTapeFunctionNoneopts = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(tapeTest.asInstanceOf[js.Any]).asInstanceOf[AsyncTapeFunctionNoneopts]
+  inline def default(tapeTest: Any): AsyncTapeFunctionNoneopts = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(tapeTest.asInstanceOf[js.Any]).asInstanceOf[AsyncTapeFunctionNoneopts]
   
   // tslint:enable: ban-types
   // tslint:disable: unified-signatures
@@ -60,43 +59,43 @@ object mod {
     extends StObject
        with typings.tape.mod.Test {
     
-    def doesNotReject(promise: js.Function0[js.Thenable[js.Any]]): js.Promise[Unit] = js.native
-    def doesNotReject(promise: js.Function0[js.Thenable[js.Any]], expected: js.Function): js.Promise[Unit] = js.native
-    def doesNotReject(promise: js.Function0[js.Thenable[js.Any]], expected: js.Function, msg: String): js.Promise[Unit] = js.native
-    def doesNotReject(promise: js.Function0[js.Thenable[js.Any]], expected: Unit, msg: String): js.Promise[Unit] = js.native
-    def doesNotReject(promise: js.Function0[js.Thenable[js.Any]], expected: RegExp): js.Promise[Unit] = js.native
-    def doesNotReject(promise: js.Function0[js.Thenable[js.Any]], expected: RegExp, msg: String): js.Promise[Unit] = js.native
-    def doesNotReject(promise: js.Function0[js.Thenable[js.Any]], msg: String): js.Promise[Unit] = js.native
+    def doesNotReject(promise: js.Function0[js.Thenable[Any]]): js.Promise[Unit] = js.native
+    def doesNotReject(promise: js.Function0[js.Thenable[Any]], expected: js.Function): js.Promise[Unit] = js.native
+    def doesNotReject(promise: js.Function0[js.Thenable[Any]], expected: js.Function, msg: String): js.Promise[Unit] = js.native
+    def doesNotReject(promise: js.Function0[js.Thenable[Any]], expected: js.RegExp): js.Promise[Unit] = js.native
+    def doesNotReject(promise: js.Function0[js.Thenable[Any]], expected: js.RegExp, msg: String): js.Promise[Unit] = js.native
+    def doesNotReject(promise: js.Function0[js.Thenable[Any]], expected: Unit, msg: String): js.Promise[Unit] = js.native
+    def doesNotReject(promise: js.Function0[js.Thenable[Any]], msg: String): js.Promise[Unit] = js.native
     /**
       * Assert that the promise resolves successfully.
       */
-    def doesNotReject(promise: js.Thenable[js.Any]): js.Promise[Unit] = js.native
-    def doesNotReject(promise: js.Thenable[js.Any], expected: js.Function): js.Promise[Unit] = js.native
-    def doesNotReject(promise: js.Thenable[js.Any], expected: js.Function, msg: String): js.Promise[Unit] = js.native
-    def doesNotReject(promise: js.Thenable[js.Any], expected: Unit, msg: String): js.Promise[Unit] = js.native
-    def doesNotReject(promise: js.Thenable[js.Any], expected: RegExp): js.Promise[Unit] = js.native
-    def doesNotReject(promise: js.Thenable[js.Any], expected: RegExp, msg: String): js.Promise[Unit] = js.native
-    def doesNotReject(promise: js.Thenable[js.Any], msg: String): js.Promise[Unit] = js.native
+    def doesNotReject(promise: js.Thenable[Any]): js.Promise[Unit] = js.native
+    def doesNotReject(promise: js.Thenable[Any], expected: js.Function): js.Promise[Unit] = js.native
+    def doesNotReject(promise: js.Thenable[Any], expected: js.Function, msg: String): js.Promise[Unit] = js.native
+    def doesNotReject(promise: js.Thenable[Any], expected: js.RegExp): js.Promise[Unit] = js.native
+    def doesNotReject(promise: js.Thenable[Any], expected: js.RegExp, msg: String): js.Promise[Unit] = js.native
+    def doesNotReject(promise: js.Thenable[Any], expected: Unit, msg: String): js.Promise[Unit] = js.native
+    def doesNotReject(promise: js.Thenable[Any], msg: String): js.Promise[Unit] = js.native
     
-    def rejects(promise: js.Function0[js.Thenable[js.Any]]): js.Promise[Unit] = js.native
-    def rejects(promise: js.Function0[js.Thenable[js.Any]], expected: js.Function): js.Promise[Unit] = js.native
-    def rejects(promise: js.Function0[js.Thenable[js.Any]], expected: js.Function, msg: String): js.Promise[Unit] = js.native
-    def rejects(promise: js.Function0[js.Thenable[js.Any]], expected: Unit, msg: String): js.Promise[Unit] = js.native
-    def rejects(promise: js.Function0[js.Thenable[js.Any]], expected: RegExp): js.Promise[Unit] = js.native
-    def rejects(promise: js.Function0[js.Thenable[js.Any]], expected: RegExp, msg: String): js.Promise[Unit] = js.native
-    def rejects(promise: js.Function0[js.Thenable[js.Any]], msg: String): js.Promise[Unit] = js.native
+    def rejects(promise: js.Function0[js.Thenable[Any]]): js.Promise[Unit] = js.native
+    def rejects(promise: js.Function0[js.Thenable[Any]], expected: js.Function): js.Promise[Unit] = js.native
+    def rejects(promise: js.Function0[js.Thenable[Any]], expected: js.Function, msg: String): js.Promise[Unit] = js.native
+    def rejects(promise: js.Function0[js.Thenable[Any]], expected: js.RegExp): js.Promise[Unit] = js.native
+    def rejects(promise: js.Function0[js.Thenable[Any]], expected: js.RegExp, msg: String): js.Promise[Unit] = js.native
+    def rejects(promise: js.Function0[js.Thenable[Any]], expected: Unit, msg: String): js.Promise[Unit] = js.native
+    def rejects(promise: js.Function0[js.Thenable[Any]], msg: String): js.Promise[Unit] = js.native
     /**
       * Assert that the promise settles with a rejection result.
       *
       * @param expected if present, must be a RegExp or Function, which is used to test the exception object.
       */
-    def rejects(promise: js.Thenable[js.Any]): js.Promise[Unit] = js.native
-    def rejects(promise: js.Thenable[js.Any], expected: js.Function): js.Promise[Unit] = js.native
-    def rejects(promise: js.Thenable[js.Any], expected: js.Function, msg: String): js.Promise[Unit] = js.native
-    def rejects(promise: js.Thenable[js.Any], expected: Unit, msg: String): js.Promise[Unit] = js.native
-    def rejects(promise: js.Thenable[js.Any], expected: RegExp): js.Promise[Unit] = js.native
-    def rejects(promise: js.Thenable[js.Any], expected: RegExp, msg: String): js.Promise[Unit] = js.native
-    def rejects(promise: js.Thenable[js.Any], msg: String): js.Promise[Unit] = js.native
+    def rejects(promise: js.Thenable[Any]): js.Promise[Unit] = js.native
+    def rejects(promise: js.Thenable[Any], expected: js.Function): js.Promise[Unit] = js.native
+    def rejects(promise: js.Thenable[Any], expected: js.Function, msg: String): js.Promise[Unit] = js.native
+    def rejects(promise: js.Thenable[Any], expected: js.RegExp): js.Promise[Unit] = js.native
+    def rejects(promise: js.Thenable[Any], expected: js.RegExp, msg: String): js.Promise[Unit] = js.native
+    def rejects(promise: js.Thenable[Any], expected: Unit, msg: String): js.Promise[Unit] = js.native
+    def rejects(promise: js.Thenable[Any], msg: String): js.Promise[Unit] = js.native
   }
   
   type TestCase = js.Function1[/* test */ Test, Unit | js.Thenable[Unit]]

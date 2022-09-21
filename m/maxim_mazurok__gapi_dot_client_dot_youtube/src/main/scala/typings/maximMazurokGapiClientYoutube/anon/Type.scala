@@ -19,6 +19,9 @@ trait Type extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /** Channel ID to which changes should be applied, for delegation. */
+  var externalChannelId: js.UndefOr[String] = js.undefined
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
@@ -74,6 +77,10 @@ object Type {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
+    inline def setExternalChannelId(value: String): Self = StObject.set(x, "externalChannelId", value.asInstanceOf[js.Any])
+    
+    inline def setExternalChannelIdUndefined: Self = StObject.set(x, "externalChannelId", js.undefined)
+    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -92,7 +99,7 @@ object Type {
     
     inline def setPart(value: String | js.Array[String]): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value :_*))
+    inline def setPartVarargs(value: String*): Self = StObject.set(x, "part", js.Array(value*))
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

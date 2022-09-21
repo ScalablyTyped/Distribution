@@ -1,7 +1,7 @@
 
 # Scala.js typings for openapi-security-handler
 
-Typings are for version 7.0.1
+Typings are for version 12.0.2
 
 ## Library description:
 A library to process OpenAPI security definitions in parallel.
@@ -10,10 +10,10 @@ A library to process OpenAPI security definitions in parallel.
 | ------------------ | :-------------: |
 | Full name          | openapi-security-handler |
 | Keywords           | openapi, security, handler, jsonschema |
-| # releases         | 6 |
-| # dependents       | 3 |
-| # downloads        | 734407 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 92779.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/kogosoftwarellc/open-api/tree/master/packages/openapi-security-handler#readme)

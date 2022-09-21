@@ -61,7 +61,7 @@ object test {
       
       inline def setState(value: PropertyValues): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
       
-      inline def setStateVarargs(value: PropertyValue*): Self = StObject.set(x, "State", js.Array(value :_*))
+      inline def setStateVarargs(value: PropertyValue*): Self = StObject.set(x, "State", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }

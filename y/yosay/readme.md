@@ -1,6 +1,7 @@
 
 # Scala.js typings for yosay
 
+Typings are for version 2.0
 
 ## Library description:
 Tell Yeoman what to say
@@ -9,10 +10,10 @@ Tell Yeoman what to say
 | ------------------ | :-------------: |
 | Full name          | yosay |
 | Keywords           | cli-app, cli, yeoman, yo, cowsay, say, box, message, ansi |
-| # releases         | 1 |
-| # dependents       | 6011 |
-| # downloads        | 6028487 |
-| # stars            | 18 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1342176.3333333333 |
+| # stars            | 198.0 |
 
 ## Links
 - [Homepage](http://yeoman.io)

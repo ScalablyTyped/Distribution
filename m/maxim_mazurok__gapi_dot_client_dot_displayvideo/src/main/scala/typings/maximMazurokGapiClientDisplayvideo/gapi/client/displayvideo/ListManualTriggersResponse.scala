@@ -25,7 +25,7 @@ object ListManualTriggersResponse {
     
     inline def setManualTriggersUndefined: Self = StObject.set(x, "manualTriggers", js.undefined)
     
-    inline def setManualTriggersVarargs(value: ManualTrigger*): Self = StObject.set(x, "manualTriggers", js.Array(value :_*))
+    inline def setManualTriggersVarargs(value: ManualTrigger*): Self = StObject.set(x, "manualTriggers", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

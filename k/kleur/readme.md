@@ -1,7 +1,7 @@
 
 # Scala.js typings for kleur
 
-Typings are for version 3.0.3
+Typings are for version 4.1.5
 
 ## Library description:
 The fastest Node.js library for formatting terminal text with ANSI colors~!
@@ -10,10 +10,10 @@ The fastest Node.js library for formatting terminal text with ANSI colors~!
 | ------------------ | :-------------: |
 | Full name          | kleur |
 | Keywords           | ansi, cli, color, colors, console, terminal |
-| # releases         | 10 |
-| # dependents       | 520 |
-| # downloads        | 375031692 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 7.112690733333333E7 |
+| # stars            | 1344.0 |
 
 ## Links
 - [Homepage](https://github.com/lukeed/kleur#readme)

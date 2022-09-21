@@ -11,9 +11,9 @@ Deliciously simple website stats
 | Full name          | umami |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 265 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 50.0 |
+| # stars            | 11840.0 |
 
 ## Links
 - [Homepage](https://github.com/mikecao/umami)

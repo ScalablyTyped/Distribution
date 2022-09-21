@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "ActionThreeDRotation")
 @js.native
-class ActionThreeDRotation ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class ActionThreeDRotation ()
+  extends Component[SvgIconProps, js.Object, Any]

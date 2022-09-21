@@ -31,7 +31,7 @@ object OrderreturnsCreateOrderReturnRequest {
     
     inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    inline def setLineItemsVarargs(value: OrderreturnsLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: OrderreturnsLineItem*): Self = StObject.set(x, "lineItems", js.Array(value*))
     
     inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     

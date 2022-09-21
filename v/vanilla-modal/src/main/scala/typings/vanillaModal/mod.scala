@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("vanilla-modal", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with VanillaModal {
     def this(settings: VanillaModalConfig) = this()
@@ -114,7 +114,7 @@ object mod {
       
       inline def setCloseKeysUndefined: Self = StObject.set(x, "closeKeys", js.undefined)
       
-      inline def setCloseKeysVarargs(value: (Double | Unit)*): Self = StObject.set(x, "closeKeys", js.Array(value :_*))
+      inline def setCloseKeysVarargs(value: (Double | Unit)*): Self = StObject.set(x, "closeKeys", js.Array(value*))
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       

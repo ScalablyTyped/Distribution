@@ -1,6 +1,5 @@
 package typings.textEncoding
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TextEncoder extends StObject {
   
-  def encode(): Uint8Array = js.native
-  def encode(input: String): Uint8Array = js.native
-  def encode(input: String, options: TextEncodeOptions): Uint8Array = js.native
-  def encode(input: Unit, options: TextEncodeOptions): Uint8Array = js.native
+  def encode(): js.typedarray.Uint8Array = js.native
+  def encode(input: String): js.typedarray.Uint8Array = js.native
+  def encode(input: String, options: TextEncodeOptions): js.typedarray.Uint8Array = js.native
+  def encode(input: Unit, options: TextEncodeOptions): js.typedarray.Uint8Array = js.native
   
   val encoding: String = js.native
 }

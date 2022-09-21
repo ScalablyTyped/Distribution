@@ -51,34 +51,34 @@ object stylesheetMod {
   
   @JSImport("@uifabric/merge-styles/lib/Stylesheet", "Stylesheet")
   @js.native
-  class Stylesheet () extends StObject {
+  open class Stylesheet () extends StObject {
     def this(config: IStyleSheetConfig) = this()
     
-    /* private */ var _classNameToArgs: js.Any = js.native
+    /* private */ var _classNameToArgs: Any = js.native
     
-    /* private */ var _config: js.Any = js.native
+    /* private */ var _config: Any = js.native
     
-    /* private */ var _counter: js.Any = js.native
+    /* private */ var _counter: Any = js.native
     
-    /* private */ var _createStyleElement: js.Any = js.native
+    /* private */ var _createStyleElement: Any = js.native
     
-    /* private */ var _findPlaceholderStyleTag: js.Any = js.native
+    /* private */ var _findPlaceholderStyleTag: Any = js.native
     
-    /* private */ var _getStyleElement: js.Any = js.native
+    /* private */ var _getStyleElement: Any = js.native
     
-    /* private */ var _keyToClassName: js.Any = js.native
+    /* private */ var _keyToClassName: Any = js.native
     
-    /* private */ var _lastStyleElement: js.Any = js.native
+    /* private */ var _lastStyleElement: Any = js.native
     
-    /* private */ var _onResetCallbacks: js.Any = js.native
+    /* private */ var _onResetCallbacks: Any = js.native
     
-    /* private */ var _preservedRules: js.Any = js.native
+    /* private */ var _preservedRules: Any = js.native
     
-    /* private */ var _rules: js.Any = js.native
+    /* private */ var _rules: Any = js.native
     
-    /* private */ var _rulesToInsert: js.Any = js.native
+    /* private */ var _rulesToInsert: Any = js.native
     
-    /* private */ var _styleElement: js.Any = js.native
+    /* private */ var _styleElement: Any = js.native
     
     /**
       * Gets the arguments associated with a given classname which was

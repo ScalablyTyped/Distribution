@@ -16,7 +16,7 @@ trait DataFilterValueRange extends StObject {
     * The data to be written. If the provided values exceed any of the ranges matched by the data filter then the request fails. If the provided values are less than the matched ranges
     * only the specified values are written, existing values in the matched ranges remain unaffected.
     */
-  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var values: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
 }
 object DataFilterValueRange {
   
@@ -35,10 +35,10 @@ object DataFilterValueRange {
     
     inline def setMajorDimensionUndefined: Self = StObject.set(x, "majorDimension", js.undefined)
     
-    inline def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Array[Any]*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

@@ -8,5 +8,5 @@ object globalSecondaryIndexDescriptionListMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/_GlobalSecondaryIndexDescriptionList", "_GlobalSecondaryIndexDescriptionList")
   @js.native
-  val GlobalSecondaryIndexDescriptionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val GlobalSecondaryIndexDescriptionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

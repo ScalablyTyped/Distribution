@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeJournalS3ExportRequest extends StObject {
   
   /**
-    * The unique ID of the journal export job that you want to describe.
+    * The UUID (represented in Base62-encoded text) of the journal export job to describe.
     */
   var ExportId: UniqueId
   

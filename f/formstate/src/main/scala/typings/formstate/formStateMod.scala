@@ -19,7 +19,7 @@ object formStateMod {
   
   @JSImport("formstate/lib/core/formState", "FormState")
   @js.native
-  class FormState[TValue /* <: ValidatableMapOrArray */] protected ()
+  open class FormState[TValue /* <: ValidatableMapOrArray */] protected ()
     extends StObject
        with ComposibleValidatable[TValue] {
     def this(/**
@@ -88,7 +88,7 @@ object formStateMod {
     def formError: js.UndefOr[String | Null] = js.native
     
     /** Get validatable objects from $ */
-    /* protected */ def getValues(): js.Array[ComposibleValidatable[js.Any]] = js.native
+    /* protected */ def getValues(): js.Array[ComposibleValidatable[Any]] = js.native
     
     /* CompleteClass */
     var hasError: Boolean = js.native
@@ -125,7 +125,7 @@ object formStateMod {
     /**
       * Composible field validation tracking
       */
-    var validatedSubFields: js.Array[ComposibleValidatable[js.Any]] = js.native
+    var validatedSubFields: js.Array[ComposibleValidatable[Any]] = js.native
     
     /* CompleteClass */
     var validating: Boolean = js.native
@@ -133,5 +133,5 @@ object formStateMod {
     def validators(validators: Validator[TValue]*): this.type = js.native
   }
   
-  type ValidatableMapOrArray = StringDictionary[ComposibleValidatable[js.Any]] | js.Array[ComposibleValidatable[js.Any]] | (Map[js.Any, ComposibleValidatable[js.Any]])
+  type ValidatableMapOrArray = StringDictionary[ComposibleValidatable[Any]] | js.Array[ComposibleValidatable[Any]] | (Map[Any, ComposibleValidatable[Any]])
 }

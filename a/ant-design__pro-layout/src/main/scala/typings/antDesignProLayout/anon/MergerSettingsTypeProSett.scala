@@ -1,18 +1,22 @@
 package typings.antDesignProLayout.anon
 
 import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
+import typings.antDesignProLayout.antDesignProLayoutStrings.group
+import typings.antDesignProLayout.antDesignProLayoutStrings.light
 import typings.antDesignProLayout.antDesignProLayoutStrings.mix
 import typings.antDesignProLayout.antDesignProLayoutStrings.realDark
 import typings.antDesignProLayout.antDesignProLayoutStrings.side
+import typings.antDesignProLayout.antDesignProLayoutStrings.sub
 import typings.antDesignProLayout.antDesignProLayoutStrings.top
 import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
-import typings.antd.menuContextMod.MenuTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined @ant-design/pro-layout.@ant-design/pro-layout/lib/SettingDrawer.MergerSettingsType<@ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.ProSettings> */
+/* Inlined @ant-design/pro-layout.@ant-design/pro-layout/es/components/SettingDrawer.MergerSettingsType<@ant-design/pro-layout.@ant-design/pro-layout/es/defaultSettings.ProSettings> */
 trait MergerSettingsTypeProSett extends StObject {
+  
+  var colorPrimary: js.UndefOr[String] = js.undefined
   
   var colorWeak: js.UndefOr[Boolean] = js.undefined
   
@@ -24,25 +28,21 @@ trait MergerSettingsTypeProSett extends StObject {
   
   var footerRender: js.UndefOr[`false`] = js.undefined
   
-  var headerHeight: js.UndefOr[Double] = js.undefined
-  
   var headerRender: js.UndefOr[`false`] = js.undefined
-  
-  var headerTheme: js.UndefOr[MenuTheme] = js.undefined
   
   var iconfontUrl: js.UndefOr[String] = js.undefined
   
   var layout: js.UndefOr[side | top | mix] = js.undefined
   
-  var menu: js.UndefOr[DefaultOpenAll] = js.undefined
+  var menu: js.UndefOr[AutoClose] = js.undefined
   
   var menuHeaderRender: js.UndefOr[`false`] = js.undefined
   
   var menuRender: js.UndefOr[`false`] = js.undefined
   
-  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
+  var navTheme: js.UndefOr[realDark | light] = js.undefined
   
-  var primaryColor: js.UndefOr[String] = js.undefined
+  var siderMenuType: js.UndefOr[sub | group] = js.undefined
   
   var splitMenus: js.UndefOr[Boolean] = js.undefined
   
@@ -56,6 +56,10 @@ object MergerSettingsTypeProSett {
   }
   
   extension [Self <: MergerSettingsTypeProSett](x: Self) {
+    
+    inline def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
+    
+    inline def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
     
     inline def setColorWeak(value: Boolean): Self = StObject.set(x, "colorWeak", value.asInstanceOf[js.Any])
     
@@ -77,17 +81,9 @@ object MergerSettingsTypeProSett {
     
     inline def setFooterRenderUndefined: Self = StObject.set(x, "footerRender", js.undefined)
     
-    inline def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
-    
-    inline def setHeaderHeightUndefined: Self = StObject.set(x, "headerHeight", js.undefined)
-    
     inline def setHeaderRender(value: `false`): Self = StObject.set(x, "headerRender", value.asInstanceOf[js.Any])
     
     inline def setHeaderRenderUndefined: Self = StObject.set(x, "headerRender", js.undefined)
-    
-    inline def setHeaderTheme(value: MenuTheme): Self = StObject.set(x, "headerTheme", value.asInstanceOf[js.Any])
-    
-    inline def setHeaderThemeUndefined: Self = StObject.set(x, "headerTheme", js.undefined)
     
     inline def setIconfontUrl(value: String): Self = StObject.set(x, "iconfontUrl", value.asInstanceOf[js.Any])
     
@@ -97,7 +93,7 @@ object MergerSettingsTypeProSett {
     
     inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    inline def setMenu(value: DefaultOpenAll): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: AutoClose): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
     inline def setMenuHeaderRender(value: `false`): Self = StObject.set(x, "menuHeaderRender", value.asInstanceOf[js.Any])
     
@@ -109,13 +105,13 @@ object MergerSettingsTypeProSett {
     
     inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
-    inline def setNavTheme(value: MenuTheme | realDark): Self = StObject.set(x, "navTheme", value.asInstanceOf[js.Any])
+    inline def setNavTheme(value: realDark | light): Self = StObject.set(x, "navTheme", value.asInstanceOf[js.Any])
     
     inline def setNavThemeUndefined: Self = StObject.set(x, "navTheme", js.undefined)
     
-    inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
+    inline def setSiderMenuType(value: sub | group): Self = StObject.set(x, "siderMenuType", value.asInstanceOf[js.Any])
     
-    inline def setPrimaryColorUndefined: Self = StObject.set(x, "primaryColor", js.undefined)
+    inline def setSiderMenuTypeUndefined: Self = StObject.set(x, "siderMenuType", js.undefined)
     
     inline def setSplitMenus(value: Boolean): Self = StObject.set(x, "splitMenus", value.asInstanceOf[js.Any])
     

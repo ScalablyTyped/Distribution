@@ -19,7 +19,7 @@ object svgMod {
   
   @JSImport("typesettable/build/src/contexts/svg", "SvgContext")
   @js.native
-  class SvgContext protected ()
+  open class SvgContext protected ()
     extends StObject
        with ITypesetterContext[SVGElement] {
     def this(element: SVGElement) = this()
@@ -27,9 +27,9 @@ object svgMod {
     def this(element: SVGElement, className: String, addTitleElement: Boolean) = this()
     def this(element: SVGElement, className: Unit, addTitleElement: Boolean) = this()
     
-    /* private */ var addTitleElement: js.Any = js.native
+    /* private */ var addTitleElement: Any = js.native
     
-    /* private */ var className: js.Any = js.native
+    /* private */ var className: Any = js.native
     
     /* CompleteClass */
     override def createPen(text: String, transform: ITransform): IPen = js.native
@@ -46,11 +46,11 @@ object svgMod {
     @JSName("createRuler")
     var createRuler_Original: IRulerFactory = js.native
     
-    /* private */ def createSvgLinePen(textBlockGroup: js.Any): js.Any = js.native
+    /* private */ def createSvgLinePen(textBlockGroup: Any): Any = js.native
     
-    /* private */ var element: js.Any = js.native
+    /* private */ var element: Any = js.native
     
-    /* private */ def getTextElements(element: js.Any): js.Any = js.native
+    /* private */ def getTextElements(element: Any): Any = js.native
     
     def setAddTitleElement(addTitleElement: Boolean): Unit = js.native
   }
@@ -63,13 +63,13 @@ object svgMod {
     
     @JSImport("typesettable/build/src/contexts/svg", "SvgContext.AnchorMap")
     @js.native
-    def AnchorMap: js.Any = js.native
-    inline def AnchorMap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnchorMap")(x.asInstanceOf[js.Any])
+    def AnchorMap: Any = js.native
+    inline def AnchorMap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnchorMap")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typesettable/build/src/contexts/svg", "SvgUtils")
   @js.native
-  class SvgUtils () extends StObject
+  open class SvgUtils () extends StObject
   /* static members */
   object SvgUtils {
     
@@ -88,12 +88,12 @@ object svgMod {
       *
       * Returns the new element.
       */
-    inline def append(element: Element, tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
+    inline def append(element: Element, tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")((List(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).`++`(classNames.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SVGElement]
     
     /**
       * Creates and returns a new SVGElement with the attached classnames.
       */
-    inline def create(tagName: String, classNames: String*): SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[SVGElement]
+    inline def create(tagName: String, classNames: String*): SVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(List(tagName.asInstanceOf[js.Any]).`++`(classNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SVGElement]
     
     /**
       * Returns the width/height of svg element's bounding box

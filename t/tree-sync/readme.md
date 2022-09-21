@@ -1,7 +1,7 @@
 
 # Scala.js typings for tree-sync
 
-Typings are for version 1.4.0
+Typings are for version 2.1.0
 
 ## Library description:
 A module for repeated efficient synchronizing two directories.
@@ -10,10 +10,10 @@ A module for repeated efficient synchronizing two directories.
 | ------------------ | :-------------: |
 | Full name          | tree-sync |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 11058029 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1141488.6666666667 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/stefanpenner/tree-sync#readme)

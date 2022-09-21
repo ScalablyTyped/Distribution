@@ -11,7 +11,7 @@ object vueBuildMod {
   
   @JSImport("ionic/lib/project/vue/build", "VueBuildRunner")
   @js.native
-  class VueBuildRunner protected () extends BuildRunner[VueBuildOptions] {
+  open class VueBuildRunner protected () extends BuildRunner[VueBuildOptions] {
     def this(e: BuildRunnerDeps) = this()
   }
 }

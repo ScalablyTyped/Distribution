@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.PathConstraint")
 @js.native
-class PathConstraint protected ()
+open class PathConstraint protected ()
   extends StObject
      with typings.phaser.spine.PathConstraint {
   def this(data: typings.phaser.spine.PathConstraintData, skeleton: typings.phaser.spine.Skeleton) = this()

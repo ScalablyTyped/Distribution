@@ -17,7 +17,7 @@ trait Worker extends StObject {
     * 向 Worker 线程发送的消息。
     */
   def postMessage(): Unit = js.native
-  def postMessage(message: js.Any): Unit = js.native
+  def postMessage(message: Any): Unit = js.native
   
   /**
     * 结束当前 Worker 线程，仅限在主线程 Worker 实例上调用。

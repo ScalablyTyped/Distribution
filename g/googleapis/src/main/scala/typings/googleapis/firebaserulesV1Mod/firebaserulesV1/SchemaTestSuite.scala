@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * `TestSuite` is a collection of `TestCase` instances that validate the
-  * logical correctness of a `Ruleset`. The `TestSuite` may be referenced
-  * in-line within a `TestRuleset` invocation or as part of a `Release` object
-  * as a pre-release check.
-  */
 trait SchemaTestSuite extends StObject {
   
   /**
@@ -30,6 +24,6 @@ object SchemaTestSuite {
     
     inline def setTestCasesUndefined: Self = StObject.set(x, "testCases", js.undefined)
     
-    inline def setTestCasesVarargs(value: SchemaTestCase*): Self = StObject.set(x, "testCases", js.Array(value :_*))
+    inline def setTestCasesVarargs(value: SchemaTestCase*): Self = StObject.set(x, "testCases", js.Array(value*))
   }
 }

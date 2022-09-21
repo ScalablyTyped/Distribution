@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeListExportFormat")
 @js.native
-class ASPxClientTreeListExportFormat ()
+open class ASPxClientTreeListExportFormat ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeListExportFormat
 object ASPxClientTreeListExportFormat {

@@ -8,7 +8,7 @@ object data {
   
   @JSGlobal("ymaps.data.Manager")
   @js.native
-  class Manager ()
+  open class Manager ()
     extends typings.yandexMaps.mod.data.Manager {
     def this(data: js.Object) = this()
   }

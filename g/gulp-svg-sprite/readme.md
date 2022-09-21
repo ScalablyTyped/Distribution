@@ -11,9 +11,9 @@ SVG sprites & stacks galore — Gulp plugin wrapping around svg-sprite that read
 | Full name          | gulp-svg-sprite |
 | Keywords           | gulpplugin, icon, icons, svg, png, sprite, spritesheet, stack, generator, css, sass, less, stylus, stylesheet, inline, html, vector, rwd, retina, mustache |
 | # releases         | 1 |
-| # dependents       | 61 |
-| # downloads        | 1614817 |
-| # stars            | 41 |
+| # dependents       | 0.0 |
+| # downloads        | 129860.66666666667 |
+| # stars            | 644.0 |
 
 ## Links
 - [Homepage](https://github.com/jkphl/gulp-svg-sprite)

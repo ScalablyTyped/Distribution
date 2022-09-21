@@ -25,7 +25,7 @@ object serviceServiceMod {
     /**
       * @hidden
       */
-    /* private */ var client_ : js.Any = js.native
+    /* private */ var client_ : Any = js.native
     
     /**
       * Default Destructor.
@@ -54,7 +54,7 @@ object serviceServiceMod {
     /**
       * @hidden
       */
-    /* private */ var path_ : js.Any = js.native
+    /* private */ var path_ : Any = js.native
     
     /**
       * Sending message.

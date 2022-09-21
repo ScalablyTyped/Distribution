@@ -47,10 +47,10 @@ object ISerachFieldMatch {
     
     inline def setQTerms(value: js.Array[Double]): Self = StObject.set(x, "qTerms", value.asInstanceOf[js.Any])
     
-    inline def setQTermsVarargs(value: Double*): Self = StObject.set(x, "qTerms", js.Array(value :_*))
+    inline def setQTermsVarargs(value: Double*): Self = StObject.set(x, "qTerms", js.Array(value*))
     
     inline def setQValues(value: js.Array[Double]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
     
-    inline def setQValuesVarargs(value: Double*): Self = StObject.set(x, "qValues", js.Array(value :_*))
+    inline def setQValuesVarargs(value: Double*): Self = StObject.set(x, "qValues", js.Array(value*))
   }
 }

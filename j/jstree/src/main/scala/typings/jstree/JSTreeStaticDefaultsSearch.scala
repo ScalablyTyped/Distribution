@@ -18,7 +18,7 @@ trait JSTreeStaticDefaultsSearch extends StObject {
     * @name $.jstree.defaults.search.ajax
     * @plugin search
     */
-  var ajax: js.Any
+  var ajax: Any
   
   /**
     * Indicates if the search should be case sensitive. Default is `false`.
@@ -50,7 +50,7 @@ trait JSTreeStaticDefaultsSearch extends StObject {
     * @name $.jstree.defaults.search.search_callback
     * @plugin search
     */
-  var search_callback: js.Any
+  var search_callback: Any
   
   /**
     * Indicates if only leaf nodes should be included in search results. Default is `false`.
@@ -79,11 +79,11 @@ trait JSTreeStaticDefaultsSearch extends StObject {
 object JSTreeStaticDefaultsSearch {
   
   inline def apply(
-    ajax: js.Any,
+    ajax: Any,
     case_sensitive: Boolean,
     close_opened_onclear: Boolean,
     fuzzy: Boolean,
-    search_callback: js.Any,
+    search_callback: Any,
     search_leaves_only: Boolean,
     show_only_matches: Boolean,
     show_only_matches_children: Boolean
@@ -94,7 +94,7 @@ object JSTreeStaticDefaultsSearch {
   
   extension [Self <: JSTreeStaticDefaultsSearch](x: Self) {
     
-    inline def setAjax(value: js.Any): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
+    inline def setAjax(value: Any): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
     
     inline def setCase_sensitive(value: Boolean): Self = StObject.set(x, "case_sensitive", value.asInstanceOf[js.Any])
     
@@ -102,7 +102,7 @@ object JSTreeStaticDefaultsSearch {
     
     inline def setFuzzy(value: Boolean): Self = StObject.set(x, "fuzzy", value.asInstanceOf[js.Any])
     
-    inline def setSearch_callback(value: js.Any): Self = StObject.set(x, "search_callback", value.asInstanceOf[js.Any])
+    inline def setSearch_callback(value: Any): Self = StObject.set(x, "search_callback", value.asInstanceOf[js.Any])
     
     inline def setSearch_leaves_only(value: Boolean): Self = StObject.set(x, "search_leaves_only", value.asInstanceOf[js.Any])
     

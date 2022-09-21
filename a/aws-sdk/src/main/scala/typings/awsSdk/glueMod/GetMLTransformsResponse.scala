@@ -31,6 +31,6 @@ object GetMLTransformsResponse {
     
     inline def setTransforms(value: TransformList): Self = StObject.set(x, "Transforms", value.asInstanceOf[js.Any])
     
-    inline def setTransformsVarargs(value: MLTransform*): Self = StObject.set(x, "Transforms", js.Array(value :_*))
+    inline def setTransformsVarargs(value: MLTransform*): Self = StObject.set(x, "Transforms", js.Array(value*))
   }
 }

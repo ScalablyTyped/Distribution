@@ -8,5 +8,5 @@ object functionListMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/_FunctionList", "_FunctionList")
   @js.native
-  val FunctionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val FunctionList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

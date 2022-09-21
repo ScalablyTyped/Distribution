@@ -14,36 +14,64 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirestoreStatics extends StObject {
   
-  var Blob: TypeofBlob & Instantiable0[typings.reactNativeFirebase.mod.RNFirebase.firestore.Blob] = js.native
+  var Blob: TypeofBlob & Instantiable0[typings.reactNativeFirebase.mod.RNFirebase.firestore.Blob]
   
   var FieldPath: TypeofFieldPath & (Instantiable1[
     /* segments (repeated) */ String, 
     typings.reactNativeFirebase.mod.RNFirebase.firestore.FieldPath
-  ]) = js.native
+  ])
   
-  var FieldValue: TypeofFieldValue & Instantiable0[typings.reactNativeFirebase.mod.RNFirebase.firestore.FieldValue] = js.native
+  var FieldValue: TypeofFieldValue & Instantiable0[typings.reactNativeFirebase.mod.RNFirebase.firestore.FieldValue]
   
   var GeoPoint: Instantiable2[
     /* latitude */ Double, 
     /* longitude */ Double, 
     typings.reactNativeFirebase.mod.RNFirebase.firestore.GeoPoint
-  ] = js.native
+  ]
   
   var Timestamp: TypeofTimestamp & (Instantiable2[
     /* seconds */ Double, 
     /* nanoseconds */ Double, 
     typings.reactNativeFirebase.mod.RNFirebase.firestore.Timestamp
-  ]) = js.native
+  ])
   
-  def enableLogging(enabled: Boolean): Unit = js.native
+  def enableLogging(enabled: Boolean): Unit
   
-  @JSName("setLogLevel")
-  def setLogLevel_debug(logLevel: debug): Unit = js.native
-  @JSName("setLogLevel")
-  def setLogLevel_error(logLevel: error_): Unit = js.native
-  @JSName("setLogLevel")
-  def setLogLevel_silent(logLevel: silent): Unit = js.native
+  def setLogLevel(logLevel: debug | error_ | silent): Unit
+}
+object FirestoreStatics {
+  
+  inline def apply(
+    Blob: TypeofBlob & Instantiable0[Blob],
+    FieldPath: TypeofFieldPath & (Instantiable1[/* segments (repeated) */ String, FieldPath]),
+    FieldValue: TypeofFieldValue & Instantiable0[FieldValue],
+    GeoPoint: Instantiable2[/* latitude */ Double, /* longitude */ Double, GeoPoint],
+    Timestamp: TypeofTimestamp & (Instantiable2[/* seconds */ Double, /* nanoseconds */ Double, Timestamp]),
+    enableLogging: Boolean => Unit,
+    setLogLevel: debug | error_ | silent => Unit
+  ): FirestoreStatics = {
+    val __obj = js.Dynamic.literal(Blob = Blob.asInstanceOf[js.Any], FieldPath = FieldPath.asInstanceOf[js.Any], FieldValue = FieldValue.asInstanceOf[js.Any], GeoPoint = GeoPoint.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any], enableLogging = js.Any.fromFunction1(enableLogging), setLogLevel = js.Any.fromFunction1(setLogLevel))
+    __obj.asInstanceOf[FirestoreStatics]
+  }
+  
+  extension [Self <: FirestoreStatics](x: Self) {
+    
+    inline def setBlob(value: TypeofBlob & Instantiable0[Blob]): Self = StObject.set(x, "Blob", value.asInstanceOf[js.Any])
+    
+    inline def setEnableLogging(value: Boolean => Unit): Self = StObject.set(x, "enableLogging", js.Any.fromFunction1(value))
+    
+    inline def setFieldPath(value: TypeofFieldPath & (Instantiable1[/* segments (repeated) */ String, FieldPath])): Self = StObject.set(x, "FieldPath", value.asInstanceOf[js.Any])
+    
+    inline def setFieldValue(value: TypeofFieldValue & Instantiable0[FieldValue]): Self = StObject.set(x, "FieldValue", value.asInstanceOf[js.Any])
+    
+    inline def setGeoPoint(value: Instantiable2[/* latitude */ Double, /* longitude */ Double, GeoPoint]): Self = StObject.set(x, "GeoPoint", value.asInstanceOf[js.Any])
+    
+    inline def setSetLogLevel(value: debug | error_ | silent => Unit): Self = StObject.set(x, "setLogLevel", js.Any.fromFunction1(value))
+    
+    inline def setTimestamp(
+      value: TypeofTimestamp & (Instantiable2[/* seconds */ Double, /* nanoseconds */ Double, Timestamp])
+    ): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+  }
 }

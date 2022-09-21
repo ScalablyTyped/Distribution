@@ -1,8 +1,7 @@
 package typings.fossilDelta
 
 import typings.fossilDelta.anon.VerifyChecksum
-import typings.node.Buffer
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,5 +19,5 @@ object mod {
   
   inline def outputSize(delta: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("outputSize")(delta.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  type ByteArray = js.Array[Double] | Uint8Array | Buffer
+  type ByteArray = js.Array[Double] | js.typedarray.Uint8Array | Buffer
 }

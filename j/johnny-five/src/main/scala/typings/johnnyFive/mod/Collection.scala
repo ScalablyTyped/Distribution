@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Collection")
 @js.native
-class Collection[Base] protected () extends StObject {
+open class Collection[Base] protected () extends StObject {
   def this(options: js.Array[Double | String | js.Object]) = this()
   def this(options: CollectionPinOptions) = this()
   
   def add(args: (Double | js.Object)*): Double = js.native
   
-  def byId(id: js.Any): js.UndefOr[Base] = js.native
+  def byId(id: Any): js.UndefOr[Base] = js.native
   
   def each(callback: js.Function2[/* item */ Base, /* index */ Double, Unit]): this.type = js.native
   
@@ -22,7 +22,7 @@ class Collection[Base] protected () extends StObject {
   
   def indexOf(item: Base): Double = js.native
   
-  def map(callback: js.Function2[/* item */ Base, /* index */ Double, Unit]): js.Array[js.Any] = js.native
+  def map(callback: js.Function2[/* item */ Base, /* index */ Double, Unit]): js.Array[Any] = js.native
   
   def slice(): Collection[Base] = js.native
   def slice(begin: Double): Collection[Base] = js.native

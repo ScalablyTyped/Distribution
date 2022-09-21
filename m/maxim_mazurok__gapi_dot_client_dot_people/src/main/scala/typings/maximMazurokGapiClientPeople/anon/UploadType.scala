@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientPeople.anon
 
-import typings.maximMazurokGapiClientPeople.gapi.client.people.UpdateContactPhotoRequest
+import typings.maximMazurokGapiClientPeople.gapi.client.people.BatchDeleteContactsRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,10 +36,7 @@ trait UploadType extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: UpdateContactPhotoRequest
-  
-  /** Required. Person resource name */
-  var resourceName: String
+  var resource: BatchDeleteContactsRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +46,8 @@ trait UploadType extends StObject {
 }
 object UploadType {
   
-  inline def apply(resource: UpdateContactPhotoRequest, resourceName: String): UploadType = {
-    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any])
+  inline def apply(resource: BatchDeleteContactsRequest): UploadType = {
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadType]
   }
   
@@ -92,9 +89,7 @@ object UploadType {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: UpdateContactPhotoRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResource(value: BatchDeleteContactsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

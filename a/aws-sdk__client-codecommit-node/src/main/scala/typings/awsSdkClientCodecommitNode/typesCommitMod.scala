@@ -2,7 +2,6 @@ package typings.awsSdkClientCodecommitNode
 
 import typings.awsSdkClientCodecommitNode.typesUserInfoMod.UnmarshalledUserInfo
 import typings.awsSdkClientCodecommitNode.typesUserInfoMod.UserInfo
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +38,7 @@ object typesCommitMod {
     /**
       * <p>A list of parent commits for the specified commit. Each parent commit ID is the full commit ID.</p>
       */
-    var parents: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var parents: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
     
     /**
       * <p>Tree information for the specified commit.</p>
@@ -75,11 +74,11 @@ object typesCommitMod {
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      inline def setParents(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+      inline def setParents(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
       inline def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
       
-      inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value*))
       
       inline def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
       
@@ -130,7 +129,7 @@ object typesCommitMod {
       
       inline def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
       
-      inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value*))
     }
   }
 }

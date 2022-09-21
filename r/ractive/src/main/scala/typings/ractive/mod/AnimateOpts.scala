@@ -9,7 +9,7 @@ trait AnimateOpts extends StObject {
   /** This is called when the animation is complete.
   	 * @param value the final value of the animation
   	 */
-  var complete: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+  var complete: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.undefined
   
   /** The duration for the transition in milliseconds. */
   var duration: js.UndefOr[Double] = js.undefined
@@ -24,7 +24,7 @@ trait AnimateOpts extends StObject {
   	 * @param time the current time code as a number between 0 and 1
   	 * @param value the value computed for the current time code
   	 */
-  var step: js.UndefOr[js.Function2[/* time */ Double, /* value */ js.Any, Unit]] = js.undefined
+  var step: js.UndefOr[js.Function2[/* time */ Double, /* value */ Any, Unit]] = js.undefined
 }
 object AnimateOpts {
   
@@ -35,7 +35,7 @@ object AnimateOpts {
   
   extension [Self <: AnimateOpts](x: Self) {
     
-    inline def setComplete(value: /* value */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* value */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
@@ -51,11 +51,11 @@ object AnimateOpts {
     
     inline def setInterpolator(value: String | Interpolator): Self = StObject.set(x, "interpolator", value.asInstanceOf[js.Any])
     
-    inline def setInterpolatorFunction2(value: (/* from */ js.Any, /* to */ js.Any) => js.Function1[/* t */ Double, js.Any]): Self = StObject.set(x, "interpolator", js.Any.fromFunction2(value))
+    inline def setInterpolatorFunction2(value: (/* from */ Any, /* to */ Any) => js.Function1[/* t */ Double, Any]): Self = StObject.set(x, "interpolator", js.Any.fromFunction2(value))
     
     inline def setInterpolatorUndefined: Self = StObject.set(x, "interpolator", js.undefined)
     
-    inline def setStep(value: (/* time */ Double, /* value */ js.Any) => Unit): Self = StObject.set(x, "step", js.Any.fromFunction2(value))
+    inline def setStep(value: (/* time */ Double, /* value */ Any) => Unit): Self = StObject.set(x, "step", js.Any.fromFunction2(value))
     
     inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }

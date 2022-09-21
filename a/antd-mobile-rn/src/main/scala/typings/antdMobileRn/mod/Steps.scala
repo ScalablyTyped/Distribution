@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "Steps")
 @js.native
-class Steps protected () extends default {
+open class Steps protected () extends default {
   def this(props: StepsNativeProps) = this()
 }
 /* static members */
@@ -21,8 +21,8 @@ object Steps {
   
   @JSImport("antd-mobile-rn", "Steps.Step")
   @js.native
-  def Step: js.Any = js.native
-  inline def Step_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
+  def Step: Any = js.native
+  inline def Step_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Step")(x.asInstanceOf[js.Any])
   
   @JSImport("antd-mobile-rn", "Steps.defaultProps")
   @js.native

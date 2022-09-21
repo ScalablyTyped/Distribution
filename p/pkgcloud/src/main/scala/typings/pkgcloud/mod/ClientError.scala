@@ -20,7 +20,7 @@ trait ClientError
   
   var provider: js.UndefOr[Providers] = js.undefined
   
-  var result: js.UndefOr[js.Any] = js.undefined
+  var result: js.UndefOr[Any] = js.undefined
   
   var statusCode: js.UndefOr[Double] = js.undefined
 }
@@ -53,7 +53,7 @@ object ClientError {
     
     inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     

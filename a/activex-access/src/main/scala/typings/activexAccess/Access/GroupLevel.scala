@@ -25,7 +25,7 @@ trait GroupLevel extends StObject {
   
   var KeepTogether: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Properties(Index: String): AccessProperty
   def Properties(Index: Double): AccessProperty
@@ -46,7 +46,7 @@ object GroupLevel {
     GroupOn: Double,
     IsMemberSafe: Double => Boolean,
     KeepTogether: Double,
-    Parent: js.Any,
+    Parent: Any,
     Properties: Properties,
     SortOrder: Boolean
   ): GroupLevel = {
@@ -75,7 +75,7 @@ object GroupLevel {
     
     inline def setKeepTogether(value: Double): Self = StObject.set(x, "KeepTogether", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     

@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PutClusterCapacityProvidersResponse extends StObject {
   
+  /**
+    * Details about the cluster.
+    */
   var cluster: js.UndefOr[Cluster] = js.undefined
 }
 object PutClusterCapacityProvidersResponse {

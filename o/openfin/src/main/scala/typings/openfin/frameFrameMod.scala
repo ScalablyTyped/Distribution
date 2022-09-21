@@ -12,11 +12,11 @@ object frameFrameMod {
   
   @JSImport("openfin/_v2/api/frame/frame", JSImport.Default)
   @js.native
-  class default () extends FrameModule
+  open class default () extends FrameModule
   
   @JSImport("openfin/_v2/api/frame/frame", "_Frame")
   @js.native
-  class Frame protected () extends EmitterBase[FrameEvents] {
+  open class Frame protected () extends EmitterBase[FrameEvents] {
     def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
     
     /**

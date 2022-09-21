@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-elevated
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Check if the process is running with elevated privileges
@@ -9,11 +9,11 @@ Check if the process is running with elevated privileges
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | is-elevated |
-| Keywords           | admin, administrator, win, win32, windows, process, running, cmd, shell, command-line, check, detect, is, root, sudo, elevate, elevated, privileges |
+| Keywords           | admin, administrator, win32, windows, process, running, cmd, shell, command-line, check, detect, is, root, sudo, elevate, elevated, privileges |
 | # releases         | 2 |
-| # dependents       | 24 |
-| # downloads        | 217414 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 26197.333333333332 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-elevated#readme)

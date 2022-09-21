@@ -19,6 +19,10 @@ trait HlsManifest extends StObject {
     */
   var AdMarkers: js.UndefOr[typings.awsSdk.mediapackageMod.AdMarkers] = js.undefined
   
+  var AdTriggers: js.UndefOr[typings.awsSdk.mediapackageMod.AdTriggers] = js.undefined
+  
+  var AdsOnDeliveryRestrictions: js.UndefOr[typings.awsSdk.mediapackageMod.AdsOnDeliveryRestrictions] = js.undefined
+  
   /**
     * The ID of the manifest. The ID must be unique within the OriginEndpoint and it cannot be changed after it is created.
     */
@@ -76,6 +80,16 @@ object HlsManifest {
     inline def setAdMarkers(value: AdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
     
     inline def setAdMarkersUndefined: Self = StObject.set(x, "AdMarkers", js.undefined)
+    
+    inline def setAdTriggers(value: AdTriggers): Self = StObject.set(x, "AdTriggers", value.asInstanceOf[js.Any])
+    
+    inline def setAdTriggersUndefined: Self = StObject.set(x, "AdTriggers", js.undefined)
+    
+    inline def setAdTriggersVarargs(value: AdTriggersElement*): Self = StObject.set(x, "AdTriggers", js.Array(value*))
+    
+    inline def setAdsOnDeliveryRestrictions(value: AdsOnDeliveryRestrictions): Self = StObject.set(x, "AdsOnDeliveryRestrictions", value.asInstanceOf[js.Any])
+    
+    inline def setAdsOnDeliveryRestrictionsUndefined: Self = StObject.set(x, "AdsOnDeliveryRestrictions", js.undefined)
     
     inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

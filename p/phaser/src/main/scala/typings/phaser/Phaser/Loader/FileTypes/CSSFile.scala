@@ -6,7 +6,6 @@ import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Loader.MultiFile
 import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
-import typings.phaser.integer
 import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
@@ -31,8 +30,8 @@ object CSSFile {
     bytesLoaded: Double,
     bytesTotal: Double,
     cache: BaseCache | TextureManager,
-    config: js.Any,
-    data: js.Any,
+    config: Any,
+    data: Any,
     destroy: () => Unit,
     hasCacheConflict: () => Boolean,
     key: String,
@@ -51,7 +50,7 @@ object CSSFile {
     resetXHR: () => Unit,
     setLink: File => Unit,
     src: String,
-    state: integer,
+    state: Double,
     `type`: String,
     url: js.Object | String,
     xhrLoader: XMLHttpRequest,

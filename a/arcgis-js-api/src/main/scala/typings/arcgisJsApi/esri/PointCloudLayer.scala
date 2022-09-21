@@ -11,7 +11,8 @@ trait PointCloudLayer
      with Layer
      with SceneService
      with PortalLayer
-     with ScaleRangeLayer {
+     with ScaleRangeLayer
+     with APIKeyMixin {
   
   /**
     * Creates a default popup template for the layer, populated with all the fields of the layer.
@@ -59,6 +60,8 @@ trait PointCloudLayer
   /**
     * Indicates whether the layer will be included in the legend.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html#legendEnabled)
     */
   var legendEnabled: Boolean = js.native
@@ -66,12 +69,16 @@ trait PointCloudLayer
   /**
     * An array of field names from the service to include with each feature.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html#outFields)
     */
   var outFields: js.Array[String] = js.native
   
   /**
     * Indicates whether to display popups when points in the layer are clicked.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html#popupEnabled)
     */
@@ -89,8 +96,8 @@ trait PointCloudLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html#queryCachedStatistics)
     */
-  def queryCachedStatistics(fieldName: String): js.Any = js.native
-  def queryCachedStatistics(fieldName: String, options: PointCloudLayerQueryCachedStatisticsOptions): js.Any = js.native
+  def queryCachedStatistics(fieldName: String): Any = js.native
+  def queryCachedStatistics(fieldName: String, options: PointCloudLayerQueryCachedStatisticsOptions): Any = js.native
   
   /**
     * The renderer assigned to the layer.

@@ -30,7 +30,7 @@ trait Fields extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. "projects/1234/locations/global/catalogs/default_catalog" If no updateMask is specified, requires catalogItems.create permission. If updateMask is specified, requires
+    * Required. `projects/1234/locations/global/catalogs/default_catalog` If no updateMask is specified, requires catalogItems.create permission. If updateMask is specified, requires
     * catalogItems.update permission.
     */
   var parent: String

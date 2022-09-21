@@ -6,14 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "DeclareVarStmt")
 @js.native
-class DeclareVarStmt protected ()
-  extends typings.angularCompiler.compilerMod.DeclareVarStmt {
+open class DeclareVarStmt protected () extends Statement {
   def this(
     name: String,
-    value: js.UndefOr[typings.angularCompiler.outputAstMod.Expression],
-    `type`: js.UndefOr[typings.angularCompiler.outputAstMod.Type | Null],
-    modifiers: js.UndefOr[js.Array[typings.angularCompiler.outputAstMod.StmtModifier]],
-    sourceSpan: js.UndefOr[typings.angularCompiler.srcParseUtilMod.ParseSourceSpan | Null],
-    leadingComments: js.UndefOr[js.Array[typings.angularCompiler.outputAstMod.LeadingComment_]]
+    value: js.UndefOr[Expression],
+    `type`: js.UndefOr[Type | Null],
+    modifiers: js.UndefOr[StmtModifier],
+    sourceSpan: js.UndefOr[ParseSourceSpan | Null],
+    leadingComments: js.UndefOr[js.Array[LeadingComment_]]
   ) = this()
+  
+  var name: String = js.native
+  
+  var `type`: Type | Null = js.native
+  
+  var value: js.UndefOr[Expression] = js.native
 }

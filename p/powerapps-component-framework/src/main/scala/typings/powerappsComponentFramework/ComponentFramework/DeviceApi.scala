@@ -1,7 +1,6 @@
 package typings.powerappsComponentFramework.ComponentFramework
 
 import typings.powerappsComponentFramework.anon.Accuracy
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -112,11 +111,11 @@ object DeviceApi {
     /**
       * Represents the time when the object was acquired and is represented as DOMTimeStamp.
       */
-    var timestamp: Date
+    var timestamp: js.Date
   }
   object Position {
     
-    inline def apply(coords: Accuracy, timestamp: Date): Position = {
+    inline def apply(coords: Accuracy, timestamp: js.Date): Position = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[Position]
     }
@@ -125,7 +124,7 @@ object DeviceApi {
       
       inline def setCoords(value: Accuracy): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
 }

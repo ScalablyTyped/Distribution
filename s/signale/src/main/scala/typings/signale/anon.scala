@@ -36,83 +36,83 @@ object anon {
   /* Inlined std.Record<signale.signale.DefaultMethods, signale.signale.LoggerFunc> */
   trait RecordDefaultMethodsLogge extends StObject {
     
-    def await(message: js.Any, optionalArgs: js.Any*): Unit
-    def await(message: Unit, optionalArgs: js.Any*): Unit
+    def await(message: Any, optionalArgs: Any*): Unit
+    def await(message: Unit, optionalArgs: Any*): Unit
     @JSName("await")
     var await_Original: LoggerFunc
     
-    def complete(message: js.Any, optionalArgs: js.Any*): Unit
-    def complete(message: Unit, optionalArgs: js.Any*): Unit
+    def complete(message: Any, optionalArgs: Any*): Unit
+    def complete(message: Unit, optionalArgs: Any*): Unit
     @JSName("complete")
     var complete_Original: LoggerFunc
     
-    def debug(message: js.Any, optionalArgs: js.Any*): Unit
-    def debug(message: Unit, optionalArgs: js.Any*): Unit
+    def debug(message: Any, optionalArgs: Any*): Unit
+    def debug(message: Unit, optionalArgs: Any*): Unit
     @JSName("debug")
     var debug_Original: LoggerFunc
     
-    def error(message: js.Any, optionalArgs: js.Any*): Unit
-    def error(message: Unit, optionalArgs: js.Any*): Unit
+    def error(message: Any, optionalArgs: Any*): Unit
+    def error(message: Unit, optionalArgs: Any*): Unit
     @JSName("error")
     var error_Original: LoggerFunc
     
-    def fatal(message: js.Any, optionalArgs: js.Any*): Unit
-    def fatal(message: Unit, optionalArgs: js.Any*): Unit
+    def fatal(message: Any, optionalArgs: Any*): Unit
+    def fatal(message: Unit, optionalArgs: Any*): Unit
     @JSName("fatal")
     var fatal_Original: LoggerFunc
     
-    def fav(message: js.Any, optionalArgs: js.Any*): Unit
-    def fav(message: Unit, optionalArgs: js.Any*): Unit
+    def fav(message: Any, optionalArgs: Any*): Unit
+    def fav(message: Unit, optionalArgs: Any*): Unit
     @JSName("fav")
     var fav_Original: LoggerFunc
     
-    def info(message: js.Any, optionalArgs: js.Any*): Unit
-    def info(message: Unit, optionalArgs: js.Any*): Unit
+    def info(message: Any, optionalArgs: Any*): Unit
+    def info(message: Unit, optionalArgs: Any*): Unit
     @JSName("info")
     var info_Original: LoggerFunc
     
-    def log(message: js.Any, optionalArgs: js.Any*): Unit
-    def log(message: Unit, optionalArgs: js.Any*): Unit
+    def log(message: Any, optionalArgs: Any*): Unit
+    def log(message: Unit, optionalArgs: Any*): Unit
     @JSName("log")
     var log_Original: LoggerFunc
     
-    def note(message: js.Any, optionalArgs: js.Any*): Unit
-    def note(message: Unit, optionalArgs: js.Any*): Unit
+    def note(message: Any, optionalArgs: Any*): Unit
+    def note(message: Unit, optionalArgs: Any*): Unit
     @JSName("note")
     var note_Original: LoggerFunc
     
-    def pause(message: js.Any, optionalArgs: js.Any*): Unit
-    def pause(message: Unit, optionalArgs: js.Any*): Unit
+    def pause(message: Any, optionalArgs: Any*): Unit
+    def pause(message: Unit, optionalArgs: Any*): Unit
     @JSName("pause")
     var pause_Original: LoggerFunc
     
-    def pending(message: js.Any, optionalArgs: js.Any*): Unit
-    def pending(message: Unit, optionalArgs: js.Any*): Unit
+    def pending(message: Any, optionalArgs: Any*): Unit
+    def pending(message: Unit, optionalArgs: Any*): Unit
     @JSName("pending")
     var pending_Original: LoggerFunc
     
-    def star(message: js.Any, optionalArgs: js.Any*): Unit
-    def star(message: Unit, optionalArgs: js.Any*): Unit
+    def star(message: Any, optionalArgs: Any*): Unit
+    def star(message: Unit, optionalArgs: Any*): Unit
     @JSName("star")
     var star_Original: LoggerFunc
     
-    def start(message: js.Any, optionalArgs: js.Any*): Unit
-    def start(message: Unit, optionalArgs: js.Any*): Unit
+    def start(message: Any, optionalArgs: Any*): Unit
+    def start(message: Unit, optionalArgs: Any*): Unit
     @JSName("start")
     var start_Original: LoggerFunc
     
-    def success(message: js.Any, optionalArgs: js.Any*): Unit
-    def success(message: Unit, optionalArgs: js.Any*): Unit
+    def success(message: Any, optionalArgs: Any*): Unit
+    def success(message: Unit, optionalArgs: Any*): Unit
     @JSName("success")
     var success_Original: LoggerFunc
     
-    def warn(message: js.Any, optionalArgs: js.Any*): Unit
-    def warn(message: Unit, optionalArgs: js.Any*): Unit
+    def warn(message: Any, optionalArgs: Any*): Unit
+    def warn(message: Unit, optionalArgs: Any*): Unit
     @JSName("warn")
     var warn_Original: LoggerFunc
     
-    def watch(message: js.Any, optionalArgs: js.Any*): Unit
-    def watch(message: Unit, optionalArgs: js.Any*): Unit
+    def watch(message: Any, optionalArgs: Any*): Unit
+    def watch(message: Unit, optionalArgs: Any*): Unit
     @JSName("watch")
     var watch_Original: LoggerFunc
   }
@@ -187,8 +187,8 @@ object anon {
       */
     def addSecrets(secrets: js.Array[Double | String]): Unit = js.native
     
-    def await(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def await(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def await(message: Any, optionalArgs: Any*): Unit = js.native
+    def await(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("await")
     var await_Original: LoggerFunc = js.native
     
@@ -197,8 +197,8 @@ object anon {
       */
     def clearSecrets(): Unit = js.native
     
-    def complete(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def complete(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def complete(message: Any, optionalArgs: Any*): Unit = js.native
+    def complete(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("complete")
     var complete_Original: LoggerFunc = js.native
     
@@ -209,8 +209,8 @@ object anon {
       */
     def config(configObj: SignaleConfig): Signale[DefaultMethods] = js.native
     
-    def debug(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def debug(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def debug(message: Any, optionalArgs: Any*): Unit = js.native
+    def debug(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("debug")
     var debug_Original: LoggerFunc = js.native
     
@@ -224,23 +224,23 @@ object anon {
       */
     def enable(): Unit = js.native
     
-    def error(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def error(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def error(message: Any, optionalArgs: Any*): Unit = js.native
+    def error(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("error")
     var error_Original: LoggerFunc = js.native
     
-    def fatal(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def fatal(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def fatal(message: Any, optionalArgs: Any*): Unit = js.native
+    def fatal(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("fatal")
     var fatal_Original: LoggerFunc = js.native
     
-    def fav(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def fav(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def fav(message: Any, optionalArgs: Any*): Unit = js.native
+    def fav(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("fav")
     var fav_Original: LoggerFunc = js.native
     
-    def info(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def info(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def info(message: Any, optionalArgs: Any*): Unit = js.native
+    def info(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("info")
     var info_Original: LoggerFunc = js.native
     
@@ -251,23 +251,23 @@ object anon {
       */
     def isEnabled(): Boolean = js.native
     
-    def log(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def log(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def log(message: Any, optionalArgs: Any*): Unit = js.native
+    def log(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("log")
     var log_Original: LoggerFunc = js.native
     
-    def note(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def note(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def note(message: Any, optionalArgs: Any*): Unit = js.native
+    def note(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("note")
     var note_Original: LoggerFunc = js.native
     
-    def pause(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def pause(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def pause(message: Any, optionalArgs: Any*): Unit = js.native
+    def pause(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("pause")
     var pause_Original: LoggerFunc = js.native
     
-    def pending(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def pending(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def pending(message: Any, optionalArgs: Any*): Unit = js.native
+    def pending(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("pending")
     var pending_Original: LoggerFunc = js.native
     
@@ -278,18 +278,18 @@ object anon {
       */
     def scope(name: String*): Signale[DefaultMethods] = js.native
     
-    def star(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def star(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def star(message: Any, optionalArgs: Any*): Unit = js.native
+    def star(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("star")
     var star_Original: LoggerFunc = js.native
     
-    def start(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def start(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def start(message: Any, optionalArgs: Any*): Unit = js.native
+    def start(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("start")
     var start_Original: LoggerFunc = js.native
     
-    def success(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def success(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def success(message: Any, optionalArgs: Any*): Unit = js.native
+    def success(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("success")
     var success_Original: LoggerFunc = js.native
     
@@ -318,13 +318,13 @@ object anon {
     /** Clears the scope name of the logger. */
     def unscope(): Unit = js.native
     
-    def warn(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def warn(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def warn(message: Any, optionalArgs: Any*): Unit = js.native
+    def warn(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("warn")
     var warn_Original: LoggerFunc = js.native
     
-    def watch(message: js.Any, optionalArgs: js.Any*): Unit = js.native
-    def watch(message: Unit, optionalArgs: js.Any*): Unit = js.native
+    def watch(message: Any, optionalArgs: Any*): Unit = js.native
+    def watch(message: Unit, optionalArgs: Any*): Unit = js.native
     @JSName("watch")
     var watch_Original: LoggerFunc = js.native
   }

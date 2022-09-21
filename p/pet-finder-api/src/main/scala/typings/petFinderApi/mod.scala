@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(api_key: String, api_secret: String): PetFinder = (^.asInstanceOf[js.Dynamic].apply(api_key.asInstanceOf[js.Any], api_secret.asInstanceOf[js.Any])).asInstanceOf[PetFinder]
-  inline def apply(api_key: String, api_secret: String, options: js.Any): PetFinder = (^.asInstanceOf[js.Dynamic].apply(api_key.asInstanceOf[js.Any], api_secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PetFinder]
+  inline def apply(api_key: String, api_secret: String, options: Any): PetFinder = (^.asInstanceOf[js.Dynamic].apply(api_key.asInstanceOf[js.Any], api_secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PetFinder]
   
   @JSImport("pet-finder-api", JSImport.Namespace)
   @js.native
@@ -81,7 +81,7 @@ object mod {
     
     var id: Double
     
-    var media: js.Any
+    var media: Any
     
     var mix: String
     
@@ -108,7 +108,7 @@ object mod {
       contact: Contact,
       description: String,
       id: Double,
-      media: js.Any,
+      media: Any,
       mix: String,
       name: String,
       options: js.Array[String],
@@ -130,7 +130,7 @@ object mod {
       
       inline def setBreeds(value: js.Array[String]): Self = StObject.set(x, "breeds", value.asInstanceOf[js.Any])
       
-      inline def setBreedsVarargs(value: String*): Self = StObject.set(x, "breeds", js.Array(value :_*))
+      inline def setBreedsVarargs(value: String*): Self = StObject.set(x, "breeds", js.Array(value*))
       
       inline def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
       
@@ -138,7 +138,7 @@ object mod {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setMedia(value: js.Any): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: Any): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
       inline def setMix(value: String): Self = StObject.set(x, "mix", value.asInstanceOf[js.Any])
       
@@ -146,7 +146,7 @@ object mod {
       
       inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setSex(value: String): Self = StObject.set(x, "sex", value.asInstanceOf[js.Any])
       
@@ -162,50 +162,50 @@ object mod {
   
   trait PetFinder extends StObject {
     
-    def findPet(options: js.Any, callback: js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], Unit]): Unit
+    def findPet(options: Any, callback: js.Function2[/* error */ Any, /* pets */ js.Array[Pet], Unit]): Unit
     
     def findShelter(
       location: String,
-      options: js.Any,
-      callback: js.Function2[/* error */ js.Any, /* shelters */ js.Array[Shelter], Unit]
+      options: Any,
+      callback: js.Function2[/* error */ Any, /* shelters */ js.Array[Shelter], Unit]
     ): Unit
     
-    def getBreedList(animal: String, callback: js.Function2[/* err */ js.Any, /* breedArray */ js.Array[String], Unit]): Unit
+    def getBreedList(animal: String, callback: js.Function2[/* err */ Any, /* breedArray */ js.Array[String], Unit]): Unit
     
-    def getPet(petId: Double, options: js.Any, callback: js.Function2[/* error */ js.Any, /* pet */ Pet, Unit]): Unit
+    def getPet(petId: Double, options: Any, callback: js.Function2[/* error */ Any, /* pet */ Pet, Unit]): Unit
     
     def getPetsInShelter(
       shelterId: String,
-      options: js.Any,
-      callback: js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], Unit]
+      options: Any,
+      callback: js.Function2[/* error */ Any, /* pets */ js.Array[Pet], Unit]
     ): Unit
     
-    def getRandomPet(options: js.Any, callback: js.Function2[/* error */ js.Any, /* pet */ Pet, Unit]): Unit
+    def getRandomPet(options: Any, callback: js.Function2[/* error */ Any, /* pet */ Pet, Unit]): Unit
     
     def getShelter(
       shelterId: String,
-      options: js.Any,
-      callback: js.Function2[/* error */ js.Any, /* shelter */ Shelter, Unit]
+      options: Any,
+      callback: js.Function2[/* error */ Any, /* shelter */ Shelter, Unit]
     ): Unit
     
     def getSheltersWithBreeds(
       animal: String,
       breed: String,
-      options: js.Any,
-      callback: js.Function2[/* error */ js.Any, /* shelters */ js.Array[Shelter], Unit]
+      options: Any,
+      callback: js.Function2[/* error */ Any, /* shelters */ js.Array[Shelter], Unit]
     ): Unit
   }
   object PetFinder {
     
     inline def apply(
-      findPet: (js.Any, js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], Unit]) => Unit,
-      findShelter: (String, js.Any, js.Function2[/* error */ js.Any, /* shelters */ js.Array[Shelter], Unit]) => Unit,
-      getBreedList: (String, js.Function2[/* err */ js.Any, /* breedArray */ js.Array[String], Unit]) => Unit,
-      getPet: (Double, js.Any, js.Function2[/* error */ js.Any, /* pet */ Pet, Unit]) => Unit,
-      getPetsInShelter: (String, js.Any, js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], Unit]) => Unit,
-      getRandomPet: (js.Any, js.Function2[/* error */ js.Any, /* pet */ Pet, Unit]) => Unit,
-      getShelter: (String, js.Any, js.Function2[/* error */ js.Any, /* shelter */ Shelter, Unit]) => Unit,
-      getSheltersWithBreeds: (String, String, js.Any, js.Function2[/* error */ js.Any, /* shelters */ js.Array[Shelter], Unit]) => Unit
+      findPet: (Any, js.Function2[/* error */ Any, /* pets */ js.Array[Pet], Unit]) => Unit,
+      findShelter: (String, Any, js.Function2[/* error */ Any, /* shelters */ js.Array[Shelter], Unit]) => Unit,
+      getBreedList: (String, js.Function2[/* err */ Any, /* breedArray */ js.Array[String], Unit]) => Unit,
+      getPet: (Double, Any, js.Function2[/* error */ Any, /* pet */ Pet, Unit]) => Unit,
+      getPetsInShelter: (String, Any, js.Function2[/* error */ Any, /* pets */ js.Array[Pet], Unit]) => Unit,
+      getRandomPet: (Any, js.Function2[/* error */ Any, /* pet */ Pet, Unit]) => Unit,
+      getShelter: (String, Any, js.Function2[/* error */ Any, /* shelter */ Shelter, Unit]) => Unit,
+      getSheltersWithBreeds: (String, String, Any, js.Function2[/* error */ Any, /* shelters */ js.Array[Shelter], Unit]) => Unit
     ): PetFinder = {
       val __obj = js.Dynamic.literal(findPet = js.Any.fromFunction2(findPet), findShelter = js.Any.fromFunction3(findShelter), getBreedList = js.Any.fromFunction2(getBreedList), getPet = js.Any.fromFunction3(getPet), getPetsInShelter = js.Any.fromFunction3(getPetsInShelter), getRandomPet = js.Any.fromFunction2(getRandomPet), getShelter = js.Any.fromFunction3(getShelter), getSheltersWithBreeds = js.Any.fromFunction4(getSheltersWithBreeds))
       __obj.asInstanceOf[PetFinder]
@@ -213,24 +213,24 @@ object mod {
     
     extension [Self <: PetFinder](x: Self) {
       
-      inline def setFindPet(value: (js.Any, js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], Unit]) => Unit): Self = StObject.set(x, "findPet", js.Any.fromFunction2(value))
+      inline def setFindPet(value: (Any, js.Function2[/* error */ Any, /* pets */ js.Array[Pet], Unit]) => Unit): Self = StObject.set(x, "findPet", js.Any.fromFunction2(value))
       
       inline def setFindShelter(
-        value: (String, js.Any, js.Function2[/* error */ js.Any, /* shelters */ js.Array[Shelter], Unit]) => Unit
+        value: (String, Any, js.Function2[/* error */ Any, /* shelters */ js.Array[Shelter], Unit]) => Unit
       ): Self = StObject.set(x, "findShelter", js.Any.fromFunction3(value))
       
-      inline def setGetBreedList(value: (String, js.Function2[/* err */ js.Any, /* breedArray */ js.Array[String], Unit]) => Unit): Self = StObject.set(x, "getBreedList", js.Any.fromFunction2(value))
+      inline def setGetBreedList(value: (String, js.Function2[/* err */ Any, /* breedArray */ js.Array[String], Unit]) => Unit): Self = StObject.set(x, "getBreedList", js.Any.fromFunction2(value))
       
-      inline def setGetPet(value: (Double, js.Any, js.Function2[/* error */ js.Any, /* pet */ Pet, Unit]) => Unit): Self = StObject.set(x, "getPet", js.Any.fromFunction3(value))
+      inline def setGetPet(value: (Double, Any, js.Function2[/* error */ Any, /* pet */ Pet, Unit]) => Unit): Self = StObject.set(x, "getPet", js.Any.fromFunction3(value))
       
-      inline def setGetPetsInShelter(value: (String, js.Any, js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], Unit]) => Unit): Self = StObject.set(x, "getPetsInShelter", js.Any.fromFunction3(value))
+      inline def setGetPetsInShelter(value: (String, Any, js.Function2[/* error */ Any, /* pets */ js.Array[Pet], Unit]) => Unit): Self = StObject.set(x, "getPetsInShelter", js.Any.fromFunction3(value))
       
-      inline def setGetRandomPet(value: (js.Any, js.Function2[/* error */ js.Any, /* pet */ Pet, Unit]) => Unit): Self = StObject.set(x, "getRandomPet", js.Any.fromFunction2(value))
+      inline def setGetRandomPet(value: (Any, js.Function2[/* error */ Any, /* pet */ Pet, Unit]) => Unit): Self = StObject.set(x, "getRandomPet", js.Any.fromFunction2(value))
       
-      inline def setGetShelter(value: (String, js.Any, js.Function2[/* error */ js.Any, /* shelter */ Shelter, Unit]) => Unit): Self = StObject.set(x, "getShelter", js.Any.fromFunction3(value))
+      inline def setGetShelter(value: (String, Any, js.Function2[/* error */ Any, /* shelter */ Shelter, Unit]) => Unit): Self = StObject.set(x, "getShelter", js.Any.fromFunction3(value))
       
       inline def setGetSheltersWithBreeds(
-        value: (String, String, js.Any, js.Function2[/* error */ js.Any, /* shelters */ js.Array[Shelter], Unit]) => Unit
+        value: (String, String, Any, js.Function2[/* error */ Any, /* shelters */ js.Array[Shelter], Unit]) => Unit
       ): Self = StObject.set(x, "getSheltersWithBreeds", js.Any.fromFunction4(value))
     }
   }

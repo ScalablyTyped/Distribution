@@ -14,22 +14,24 @@ trait SubSurfaceConfiguration
     * 'u' is the random number (the value of the CDF): [0, 1).
     * rcp(s) = 1 / ShapeParam = ScatteringDistance.
     * Returns the sampled radial distance, s.t. (u = 0 -> r = 0) and (u = 1 -> r = Inf).
+    * @param u
+    * @param rcpS
     */
-  /* private */ var _sampleBurleyDiffusionProfile: js.Any = js.native
+  /* private */ var _sampleBurleyDiffusionProfile: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _ssDiffusionD: js.Any = js.native
+  /* private */ var _ssDiffusionD: Any = js.native
   
-  /* private */ var _ssDiffusionS: js.Any = js.native
+  /* private */ var _ssDiffusionS: Any = js.native
   
-  /* private */ var _ssFilterRadii: js.Any = js.native
+  /* private */ var _ssFilterRadii: Any = js.native
   
   /**
     * Adds a new diffusion profile.
     * Useful for more realistic subsurface scattering on diverse materials.
     * @param color The color of the diffusion profile. Should be the average color of the material.
-    * @return The index of the diffusion profile for the material subsurface configuration
+    * @returns The index of the diffusion profile for the material subsurface configuration
     */
   def addDiffusionProfile(color: Color3): Double = js.native
   
@@ -41,7 +43,7 @@ trait SubSurfaceConfiguration
   
   /**
     * Creates the sss post process
-    * @return The created post process
+    * @returns The created post process
     */
   @JSName("createPostProcess")
   def createPostProcess_MSubSurfaceConfiguration(): SubSurfaceScatteringPostProcess = js.native
@@ -53,6 +55,7 @@ trait SubSurfaceConfiguration
   def dispose_MSubSurfaceConfiguration(): Unit = js.native
   
   /**
+    * @param color
     * @hidden
     * https://zero-radiance.github.io/post/sampling-diffusion/
     *
@@ -71,6 +74,12 @@ trait SubSurfaceConfiguration
     * Used for subsurface scattering
     */
   var metersPerUnit: Double = js.native
+  
+  /**
+    * Does the output of this prepass need to go through imageprocessing
+    */
+  @JSName("needsImageProcessing")
+  var needsImageProcessing_SubSurfaceConfiguration: Boolean = js.native
   
   /**
     * Post process to attach for screen space subsurface scattering

@@ -17,9 +17,9 @@ trait ReadonlyPromiseRemoveUser extends StObject {
 object ReadonlyPromiseRemoveUser {
   
   inline def apply(
-    `catch`: () => js.Promise[RemoveUserIDResponse | js.Any],
+    `catch`: () => js.Promise[RemoveUserIDResponse | Any],
     `finally`: () => js.Promise[RemoveUserIDResponse],
-    `then`: () => js.Promise[js.Any | js.Any]
+    `then`: () => js.Promise[Any | Any]
   ): ReadonlyPromiseRemoveUser = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("catch")(js.Any.fromFunction0(`catch`))
@@ -30,10 +30,10 @@ object ReadonlyPromiseRemoveUser {
   
   extension [Self <: ReadonlyPromiseRemoveUser](x: Self) {
     
-    inline def setCatch(value: () => js.Promise[RemoveUserIDResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[RemoveUserIDResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
     inline def setFinally(value: () => js.Promise[RemoveUserIDResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[Any | Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

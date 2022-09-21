@@ -1,44 +1,20 @@
 package typings.inversifyExpressUtils
 
-import typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController
 import typings.inversifyExpressUtils.httpResponseMessageMod.HttpResponseMessage
-import typings.inversifyExpressUtils.interfacesMod.interfaces.IHttpActionResult
+import typings.inversifyExpressUtils.interfacesMod.IHttpActionResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object conflictResultMod {
   
-  @JSImport("inversify-express-utils/dts/results/ConflictResult", JSImport.Default)
+  @JSImport("inversify-express-utils/lib/results/ConflictResult", "ConflictResult")
   @js.native
-  class default protected ()
-    extends StObject
-       with ConflictResult {
-    def this(apiController: BaseHttpController) = this()
-    
-    /* private */ /* CompleteClass */
-    var apiController: js.Any = js.native
-    
-    /* CompleteClass */
-    override def executeAsync(): js.Promise[HttpResponseMessage] = js.native
-  }
-  
-  trait ConflictResult
+  open class ConflictResult ()
     extends StObject
        with IHttpActionResult {
     
-    /* private */ var apiController: js.Any
-  }
-  object ConflictResult {
-    
-    inline def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage]): ConflictResult = {
-      val __obj = js.Dynamic.literal(apiController = apiController.asInstanceOf[js.Any], executeAsync = js.Any.fromFunction0(executeAsync))
-      __obj.asInstanceOf[ConflictResult]
-    }
-    
-    extension [Self <: ConflictResult](x: Self) {
-      
-      inline def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
-    }
+    /* CompleteClass */
+    override def executeAsync(): js.Promise[HttpResponseMessage] = js.native
   }
 }

@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ambiguous
   - typings.devtoolsProtocol.devtoolsProtocolStrings.assert
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.CSPViolation
   - typings.devtoolsProtocol.devtoolsProtocolStrings.debugCommand
   - typings.devtoolsProtocol.devtoolsProtocolStrings.DOM
   - typings.devtoolsProtocol.devtoolsProtocolStrings.EventListener
@@ -30,6 +31,8 @@ object PausedEventReason {
   inline def Ambiguous: ambiguous = "ambiguous".asInstanceOf[ambiguous]
   
   inline def Assert: assert = "assert".asInstanceOf[assert]
+  
+  inline def CSPViolation: typings.devtoolsProtocol.devtoolsProtocolStrings.CSPViolation = "CSPViolation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CSPViolation]
   
   inline def DOM: typings.devtoolsProtocol.devtoolsProtocolStrings.DOM = "DOM".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.DOM]
   

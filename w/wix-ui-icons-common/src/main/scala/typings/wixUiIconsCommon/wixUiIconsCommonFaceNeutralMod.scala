@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.faceNeutralMod.FaceNeutralProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonFaceNeutralMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/FaceNeutral", JSImport.Default)
   @js.native
-  val default: SFC[FaceNeutralProps] = js.native
+  val default: FC[FaceNeutralProps] = js.native
   
-  type _To = SFC[FaceNeutralProps]
+  type _To = FC[FaceNeutralProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonFaceNeutralMod.foo` */
-  override def _to: SFC[FaceNeutralProps] = default
+  override def _to: FC[FaceNeutralProps] = default
 }

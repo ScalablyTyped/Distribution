@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-times
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Run promise-returning & async functions a specific number of times concurrently
@@ -10,10 +10,10 @@ Run promise-returning & async functions a specific number of times concurrently
 | ------------------ | :-------------: |
 | Full name          | p-times |
 | Keywords           | promise, times, number, count, loop, iterate, async, await, promises, concurrently, concurrency, parallel, bluebird |
-| # releases         | 4 |
-| # dependents       | 9 |
-| # downloads        | 485188 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 39473.0 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-times#readme)

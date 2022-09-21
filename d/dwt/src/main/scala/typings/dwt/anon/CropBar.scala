@@ -11,7 +11,7 @@ trait CropBar extends StObject {
   // Example [[1, 1], [3, 2], [4, 3], [5, 4], [7, 5], [16, 9]],
   var cropMask: js.UndefOr[Boolean] = js.undefined
   
-  var ratios: js.UndefOr[js.Any] = js.undefined
+  var ratios: js.UndefOr[Any] = js.undefined
 }
 object CropBar {
   
@@ -30,7 +30,7 @@ object CropBar {
     
     inline def setCropMaskUndefined: Self = StObject.set(x, "cropMask", js.undefined)
     
-    inline def setRatios(value: js.Any): Self = StObject.set(x, "ratios", value.asInstanceOf[js.Any])
+    inline def setRatios(value: Any): Self = StObject.set(x, "ratios", value.asInstanceOf[js.Any])
     
     inline def setRatiosUndefined: Self = StObject.set(x, "ratios", js.undefined)
   }

@@ -40,7 +40,7 @@ object parsedCellMod {
     inline def apply(
       $cell: JQuery[HTMLElement],
       $row: JQuery[HTMLElement],
-      parsed: js.Any,
+      parsed: Any,
       raw: String,
       rowIndex: Double,
       tbodyIndex: Double

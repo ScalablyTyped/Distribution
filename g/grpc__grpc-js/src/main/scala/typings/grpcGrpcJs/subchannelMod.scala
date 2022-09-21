@@ -1,287 +1,156 @@
 package typings.grpcGrpcJs
 
-import typings.grpcGrpcJs.callStreamMod.Http2CallStream
-import typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
-import typings.grpcGrpcJs.channelMod.ConnectivityState
-import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
-import typings.grpcGrpcJs.filterMod.Filter
-import typings.grpcGrpcJs.filterMod.FilterFactory
-import typings.grpcGrpcJs.metadataMod.Metadata
-import typings.grpcGrpcJs.uriParserMod.GrpcUri
+import typings.grpcGrpcJs.channelDataMod.ChannelData
+import typings.grpcGrpcJs.channelDataMod.ChannelDataOutput
+import typings.grpcGrpcJs.channelRefMod.ChannelRef
+import typings.grpcGrpcJs.channelRefMod.ChannelRefOutput
+import typings.grpcGrpcJs.socketRefMod.SocketRef
+import typings.grpcGrpcJs.socketRefMod.SocketRefOutput
+import typings.grpcGrpcJs.subchannelRefMod.SubchannelRef
+import typings.grpcGrpcJs.subchannelRefMod.SubchannelRefOutput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subchannelMod {
   
-  @JSImport("@grpc/grpc-js/build/src/subchannel", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("@grpc/grpc-js/build/src/subchannel", "Subchannel")
-  @js.native
-  class Subchannel protected () extends StObject {
-    /**
-      * A class representing a connection to a single backend.
-      * @param channelTarget The target string for the channel as a whole
-      * @param subchannelAddress The address for the backend that this subchannel
-      *     will connect to
-      * @param options The channel options, plus any specific subchannel options
-      *     for this subchannel
-      * @param credentials The channel credentials used to establish this
-      *     connection
-      */
-    def this(
-      channelTarget: GrpcUri,
-      subchannelAddress: SubchannelAddress,
-      options: ChannelOptions,
-      credentials: ChannelCredentials
-    ) = this()
+  trait Subchannel extends StObject {
     
     /**
-      * Add a listener function to be called whenever the subchannel's
-      * connectivity state changes.
-      * @param listener
+      * There are no ordering guarantees on the order of channel refs.
+      * There may not be cycles in the ref graph.
+      * A channel ref may be present in more than one channel or subchannel.
       */
-    def addConnectivityStateListener(listener: ConnectivityStateListener): Unit = js.native
-    
-    def addDisconnectListener(listener: js.Function0[Unit]): Unit = js.native
-    
-    /* private */ var backoffTimeout: js.Any = js.native
-    
-    def callRef(): Unit = js.native
+    var channel_ref: js.UndefOr[js.Array[ChannelRef]] = js.undefined
     
     /**
-      * Tracks calls with references to this subchannel
+      * Data specific to this channel.
       */
-    /* private */ var callRefcount: js.Any = js.native
-    
-    def callUnref(): Unit = js.native
-    
-    /* private */ var channelTarget: js.Any = js.native
+    var data: js.UndefOr[ChannelData | Null] = js.undefined
     
     /**
-      * Check if the subchannel associated with zero calls and with zero channels.
-      * If so, shut it down.
+      * The identifier for this channel.
       */
-    /* private */ var checkBothRefcounts: js.Any = js.native
+    var ref: js.UndefOr[SubchannelRef | Null] = js.undefined
     
     /**
-      * The subchannel's current connectivity state. Invariant: `session` === `null`
-      * if and only if `connectivityState` is IDLE or TRANSIENT_FAILURE.
+      * There are no ordering guarantees on the order of sockets.
       */
-    /* private */ var connectivityState: js.Any = js.native
+    var socket_ref: js.UndefOr[js.Array[SocketRef]] = js.undefined
     
     /**
-      * Indicates that the subchannel should transition from TRANSIENT_FAILURE to
-      * CONNECTING instead of IDLE when the backoff timeout ends.
+      * At most one of 'channel_ref+subchannel_ref' and 'socket' is set.
+      * There are no ordering guarantees on the order of subchannel refs.
+      * There may not be cycles in the ref graph.
+      * A sub channel ref may be present in more than one channel or subchannel.
       */
-    /* private */ var continueConnecting: js.Any = js.native
-    
-    /* private */ var createSession: js.Any = js.native
-    
-    /* private */ var credentials: js.Any = js.native
-    
-    /**
-      * A list of listener functions that will be called when the underlying
-      * socket disconnects. Used for ending active calls with an UNAVAILABLE
-      * status.
-      */
-    /* private */ var disconnectListeners: js.Any = js.native
-    
-    def getAddress(): String = js.native
-    
-    /**
-      * Get the subchannel's current connectivity state.
-      */
-    def getConnectivityState(): ConnectivityState = js.native
-    
-    /* private */ var handleBackoffTimer: js.Any = js.native
-    
-    /**
-      * Timer reference for timeout that indicates when to send the next ping
-      */
-    /* private */ var keepaliveIntervalId: js.Any = js.native
-    
-    /**
-      * The amount of time in between sending pings
-      */
-    /* private */ var keepaliveTimeMs: js.Any = js.native
-    
-    /**
-      * Timer reference tracking when the most recent ping will be considered lost
-      */
-    /* private */ var keepaliveTimeoutId: js.Any = js.native
-    
-    /**
-      * The amount of time to wait for an acknowledgement after sending a ping
-      */
-    /* private */ var keepaliveTimeoutMs: js.Any = js.native
-    
-    /* private */ var options: js.Any = js.native
-    
-    def ref(): Unit = js.native
-    
-    /**
-      * Tracks channels and subchannel pools with references to this subchannel
-      */
-    /* private */ var refcount: js.Any = js.native
-    
-    /**
-      * Remove a listener previously added with `addConnectivityStateListener`
-      * @param listener A reference to a function previously passed to
-      *     `addConnectivityStateListener`
-      */
-    def removeConnectivityStateListener(listener: ConnectivityStateListener): Unit = js.native
-    
-    def removeDisconnectListener(listener: js.Function0[Unit]): Unit = js.native
-    
-    /**
-      * Reset the backoff timeout, and immediately start connecting if in backoff.
-      */
-    def resetBackoff(): Unit = js.native
-    
-    /* private */ var sendPing: js.Any = js.native
-    
-    /**
-      * The underlying http2 session used to make requests.
-      */
-    /* private */ var session: js.Any = js.native
-    
-    /**
-      * Start a backoff timer with the current nextBackoff timeout
-      */
-    /* private */ var startBackoff: js.Any = js.native
-    
-    /**
-      * Start a stream on the current session with the given `metadata` as headers
-      * and then attach it to the `callStream`. Must only be called if the
-      * subchannel's current connectivity state is READY.
-      * @param metadata
-      * @param callStream
-      */
-    def startCallStream(metadata: Metadata, callStream: Http2CallStream): Unit = js.native
-    def startCallStream(metadata: Metadata, callStream: Http2CallStream, extraFilterFactory: FilterFactory[Filter]): Unit = js.native
-    
-    /**
-      * If the subchannel is currently IDLE, start connecting and switch to the
-      * CONNECTING state. If the subchannel is current in TRANSIENT_FAILURE,
-      * the next time it would transition to IDLE, start connecting again instead.
-      * Otherwise, do nothing.
-      */
-    def startConnecting(): Unit = js.native
-    
-    /* private */ var startConnectingInternal: js.Any = js.native
-    
-    /* private */ var startKeepalivePings: js.Any = js.native
-    
-    /**
-      * A list of listener functions that will be called whenever the connectivity
-      * state changes. Will be modified by `addConnectivityStateListener` and
-      * `removeConnectivityStateListener`
-      */
-    /* private */ var stateListeners: js.Any = js.native
-    
-    /* private */ var stopBackoff: js.Any = js.native
-    
-    /* private */ var stopKeepalivePings: js.Any = js.native
-    
-    /* private */ var subchannelAddress: js.Any = js.native
-    
-    /**
-      * A string representation of the subchannel address, for logging/tracing
-      */
-    /* private */ var subchannelAddressString: js.Any = js.native
-    
-    /**
-      * Initiate a state transition from any element of oldStates to the new
-      * state. If the current connectivityState is not in oldStates, do nothing.
-      * @param oldStates The set of states to transition from
-      * @param newState The state to transition to
-      * @returns True if the state changed, false otherwise
-      */
-    /* private */ var transitionToState: js.Any = js.native
-    
-    def unref(): Unit = js.native
-    
-    def unrefIfOneRef(): Boolean = js.native
-    
-    /**
-      * The complete user agent string constructed using channel args.
-      */
-    /* private */ var userAgent: js.Any = js.native
+    var subchannel_ref: js.UndefOr[js.Array[SubchannelRef]] = js.undefined
   }
-  
-  inline def isTcpSubchannelAddress(address: SubchannelAddress): /* is @grpc/grpc-js.@grpc/grpc-js/build/src/subchannel.TcpSubchannelAddress */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTcpSubchannelAddress")(address.asInstanceOf[js.Any]).asInstanceOf[/* is @grpc/grpc-js.@grpc/grpc-js/build/src/subchannel.TcpSubchannelAddress */ Boolean]
-  
-  inline def subchannelAddressEqual(address1: SubchannelAddress, address2: SubchannelAddress): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subchannelAddressEqual")(address1.asInstanceOf[js.Any], address2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def subchannelAddressToString(address: SubchannelAddress): String = ^.asInstanceOf[js.Dynamic].applyDynamic("subchannelAddressToString")(address.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  type ConnectivityStateListener = js.Function3[
-    /* subchannel */ Subchannel, 
-    /* previousState */ ConnectivityState, 
-    /* newState */ ConnectivityState, 
-    Unit
-  ]
-  
-  trait IpcSubchannelAddress
-    extends StObject
-       with SubchannelAddress {
+  object Subchannel {
     
-    var path: String
-  }
-  object IpcSubchannelAddress {
-    
-    inline def apply(path: String): IpcSubchannelAddress = {
-      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IpcSubchannelAddress]
+    inline def apply(): Subchannel = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Subchannel]
     }
     
-    extension [Self <: IpcSubchannelAddress](x: Self) {
+    extension [Self <: Subchannel](x: Self) {
       
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setChannel_ref(value: js.Array[ChannelRef]): Self = StObject.set(x, "channel_ref", value.asInstanceOf[js.Any])
+      
+      inline def setChannel_refUndefined: Self = StObject.set(x, "channel_ref", js.undefined)
+      
+      inline def setChannel_refVarargs(value: ChannelRef*): Self = StObject.set(x, "channel_ref", js.Array(value*))
+      
+      inline def setData(value: ChannelData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataNull: Self = StObject.set(x, "data", null)
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setRef(value: SubchannelRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      
+      inline def setSocket_ref(value: js.Array[SocketRef]): Self = StObject.set(x, "socket_ref", value.asInstanceOf[js.Any])
+      
+      inline def setSocket_refUndefined: Self = StObject.set(x, "socket_ref", js.undefined)
+      
+      inline def setSocket_refVarargs(value: SocketRef*): Self = StObject.set(x, "socket_ref", js.Array(value*))
+      
+      inline def setSubchannel_ref(value: js.Array[SubchannelRef]): Self = StObject.set(x, "subchannel_ref", value.asInstanceOf[js.Any])
+      
+      inline def setSubchannel_refUndefined: Self = StObject.set(x, "subchannel_ref", js.undefined)
+      
+      inline def setSubchannel_refVarargs(value: SubchannelRef*): Self = StObject.set(x, "subchannel_ref", js.Array(value*))
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.grpcGrpcJs.subchannelMod.TcpSubchannelAddress
-    - typings.grpcGrpcJs.subchannelMod.IpcSubchannelAddress
-  */
-  trait SubchannelAddress extends StObject
-  object SubchannelAddress {
+  trait SubchannelOutput extends StObject {
     
-    inline def IpcSubchannelAddress(path: String): typings.grpcGrpcJs.subchannelMod.IpcSubchannelAddress = {
-      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.grpcGrpcJs.subchannelMod.IpcSubchannelAddress]
-    }
+    /**
+      * There are no ordering guarantees on the order of channel refs.
+      * There may not be cycles in the ref graph.
+      * A channel ref may be present in more than one channel or subchannel.
+      */
+    var channel_ref: js.Array[ChannelRefOutput]
     
-    inline def TcpSubchannelAddress(host: String, port: Double): typings.grpcGrpcJs.subchannelMod.TcpSubchannelAddress = {
-      val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.grpcGrpcJs.subchannelMod.TcpSubchannelAddress]
-    }
+    /**
+      * Data specific to this channel.
+      */
+    var data: ChannelDataOutput | Null
+    
+    /**
+      * The identifier for this channel.
+      */
+    var ref: SubchannelRefOutput | Null
+    
+    /**
+      * There are no ordering guarantees on the order of sockets.
+      */
+    var socket_ref: js.Array[SocketRefOutput]
+    
+    /**
+      * At most one of 'channel_ref+subchannel_ref' and 'socket' is set.
+      * There are no ordering guarantees on the order of subchannel refs.
+      * There may not be cycles in the ref graph.
+      * A sub channel ref may be present in more than one channel or subchannel.
+      */
+    var subchannel_ref: js.Array[SubchannelRefOutput]
   }
-  
-  trait TcpSubchannelAddress
-    extends StObject
-       with SubchannelAddress {
+  object SubchannelOutput {
     
-    var host: String
-    
-    var port: Double
-  }
-  object TcpSubchannelAddress {
-    
-    inline def apply(host: String, port: Double): TcpSubchannelAddress = {
-      val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TcpSubchannelAddress]
+    inline def apply(
+      channel_ref: js.Array[ChannelRefOutput],
+      socket_ref: js.Array[SocketRefOutput],
+      subchannel_ref: js.Array[SubchannelRefOutput]
+    ): SubchannelOutput = {
+      val __obj = js.Dynamic.literal(channel_ref = channel_ref.asInstanceOf[js.Any], socket_ref = socket_ref.asInstanceOf[js.Any], subchannel_ref = subchannel_ref.asInstanceOf[js.Any], data = null, ref = null)
+      __obj.asInstanceOf[SubchannelOutput]
     }
     
-    extension [Self <: TcpSubchannelAddress](x: Self) {
+    extension [Self <: SubchannelOutput](x: Self) {
       
-      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setChannel_ref(value: js.Array[ChannelRefOutput]): Self = StObject.set(x, "channel_ref", value.asInstanceOf[js.Any])
       
-      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setChannel_refVarargs(value: ChannelRefOutput*): Self = StObject.set(x, "channel_ref", js.Array(value*))
+      
+      inline def setData(value: ChannelDataOutput): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataNull: Self = StObject.set(x, "data", null)
+      
+      inline def setRef(value: SubchannelRefOutput): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setSocket_ref(value: js.Array[SocketRefOutput]): Self = StObject.set(x, "socket_ref", value.asInstanceOf[js.Any])
+      
+      inline def setSocket_refVarargs(value: SocketRefOutput*): Self = StObject.set(x, "socket_ref", js.Array(value*))
+      
+      inline def setSubchannel_ref(value: js.Array[SubchannelRefOutput]): Self = StObject.set(x, "subchannel_ref", value.asInstanceOf[js.Any])
+      
+      inline def setSubchannel_refVarargs(value: SubchannelRefOutput*): Self = StObject.set(x, "subchannel_ref", js.Array(value*))
     }
   }
 }

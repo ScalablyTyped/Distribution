@@ -35,7 +35,7 @@ trait Registration extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDomains.maximMazurokGapiClientDomainsStrings.Registration & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDomains.maximMazurokGapiClientDomainsStrings.Registration & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -44,21 +44,27 @@ trait Registration extends StObject {
     */
   var managementSettings: js.UndefOr[ManagementSettings] = js.undefined
   
-  /** Output only. Name of the `Registration` resource, in the format `projects/∗/locations/∗/registrations/`. */
+  /** Output only. Name of the `Registration` resource, in the format `projects/ *‍/locations/ *‍/registrations/`. */
   var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Pending contact settings for the `Registration`. Updates to the `contact_settings` field that change its `registrant_contact` or `privacy` fields require email
-    * confirmation by the `registrant_contact` before taking effect. This field is set only if there are pending updates to the `contact_settings` that have not yet been confirmed. To
-    * confirm the changes, the `registrant_contact` must follow the instructions in the email they receive.
+    * confirmation by the `registrant_contact` before taking effect. This field is set only if there are pending updates to the `contact_settings` that have not been confirmed. To confirm
+    * the changes, the `registrant_contact` must follow the instructions in the email they receive.
     */
   var pendingContactSettings: js.UndefOr[ContactSettings] = js.undefined
+  
+  /** Output only. The reason the domain registration failed. Only set for domains in REGISTRATION_FAILED state. */
+  var registerFailureReason: js.UndefOr[String] = js.undefined
   
   /** Output only. The state of the `Registration` */
   var state: js.UndefOr[String] = js.undefined
   
   /** Output only. Set of options for the `contact_settings.privacy` field that this `Registration` supports. */
   var supportedPrivacy: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /** Output only. The reason the domain transfer failed. Only set for domains in TRANSFER_FAILED state. */
+  var transferFailureReason: js.UndefOr[String] = js.undefined
 }
 object Registration {
   
@@ -93,12 +99,12 @@ object Registration {
     
     inline def setIssuesUndefined: Self = StObject.set(x, "issues", js.undefined)
     
-    inline def setIssuesVarargs(value: String*): Self = StObject.set(x, "issues", js.Array(value :_*))
+    inline def setIssuesVarargs(value: String*): Self = StObject.set(x, "issues", js.Array(value*))
     
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDomains.maximMazurokGapiClientDomainsStrings.Registration & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDomains.maximMazurokGapiClientDomainsStrings.Registration & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -115,6 +121,10 @@ object Registration {
     
     inline def setPendingContactSettingsUndefined: Self = StObject.set(x, "pendingContactSettings", js.undefined)
     
+    inline def setRegisterFailureReason(value: String): Self = StObject.set(x, "registerFailureReason", value.asInstanceOf[js.Any])
+    
+    inline def setRegisterFailureReasonUndefined: Self = StObject.set(x, "registerFailureReason", js.undefined)
+    
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
@@ -123,6 +133,10 @@ object Registration {
     
     inline def setSupportedPrivacyUndefined: Self = StObject.set(x, "supportedPrivacy", js.undefined)
     
-    inline def setSupportedPrivacyVarargs(value: String*): Self = StObject.set(x, "supportedPrivacy", js.Array(value :_*))
+    inline def setSupportedPrivacyVarargs(value: String*): Self = StObject.set(x, "supportedPrivacy", js.Array(value*))
+    
+    inline def setTransferFailureReason(value: String): Self = StObject.set(x, "transferFailureReason", value.asInstanceOf[js.Any])
+    
+    inline def setTransferFailureReasonUndefined: Self = StObject.set(x, "transferFailureReason", js.undefined)
   }
 }

@@ -10,5 +10,5 @@ object removeQueryArgsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def removeQueryArgs(url: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeQueryArgs")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def removeQueryArgs(url: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeQueryArgs")(List(url.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
 }

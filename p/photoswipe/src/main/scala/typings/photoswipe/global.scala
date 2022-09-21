@@ -19,7 +19,7 @@ object global {
       */
     @JSGlobal("PhotoSwipe")
     @js.native
-    class ^[T /* <: Options */] protected ()
+    open class ^[T /* <: Options */] protected ()
       extends typings.photoswipe.mod.^[T] {
       /**
         * Constructs a PhotoSwipe.

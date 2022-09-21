@@ -9,52 +9,47 @@ trait SchemaLicenseCode extends StObject {
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.undefined
+  var creationTimestamp: js.UndefOr[String | Null] = js.undefined
   
   /**
     * [Output Only] Description of this License Code.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] The unique identifier for the resource. This identifier is
-    * defined by the server.
+    * [Output Only] The unique identifier for the resource. This identifier is defined by the server.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
     * [Output Only] Type of resource. Always compute#licenseCode for licenses.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] URL and description aliases of Licenses with the same
-    * License Code.
+    * [Output Only] URL and description aliases of Licenses with the same License Code.
     */
   var licenseAlias: js.UndefOr[js.Array[SchemaLicenseCodeLicenseAlias]] = js.undefined
   
   /**
-    * [Output Only] Name of the resource. The name is 1-20 characters long and
-    * must be a valid 64 bit integer.
+    * [Output Only] Name of the resource. The name is 1-20 characters long and must be a valid 64 bit integer.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.undefined
+  var selfLink: js.UndefOr[String | Null] = js.undefined
   
   /**
     * [Output Only] Current state of this License Code.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] If true, the license will remain attached when creating
-    * images or snapshots from disks. Otherwise, the license is not
-    * transferred.
+    * [Output Only] If true, the license will remain attached when creating images or snapshots from disks. Otherwise, the license is not transferred.
     */
-  var transferable: js.UndefOr[Boolean] = js.undefined
+  var transferable: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaLicenseCode {
   
@@ -67,17 +62,25 @@ object SchemaLicenseCode {
     
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
+    inline def setCreationTimestampNull: Self = StObject.set(x, "creationTimestamp", null)
+    
     inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -85,21 +88,29 @@ object SchemaLicenseCode {
     
     inline def setLicenseAliasUndefined: Self = StObject.set(x, "licenseAlias", js.undefined)
     
-    inline def setLicenseAliasVarargs(value: SchemaLicenseCodeLicenseAlias*): Self = StObject.set(x, "licenseAlias", js.Array(value :_*))
+    inline def setLicenseAliasVarargs(value: SchemaLicenseCodeLicenseAlias*): Self = StObject.set(x, "licenseAlias", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
+    inline def setSelfLinkNull: Self = StObject.set(x, "selfLink", null)
+    
     inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
+    inline def setStateNull: Self = StObject.set(x, "state", null)
+    
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     inline def setTransferable(value: Boolean): Self = StObject.set(x, "transferable", value.asInstanceOf[js.Any])
+    
+    inline def setTransferableNull: Self = StObject.set(x, "transferable", null)
     
     inline def setTransferableUndefined: Self = StObject.set(x, "transferable", js.undefined)
   }

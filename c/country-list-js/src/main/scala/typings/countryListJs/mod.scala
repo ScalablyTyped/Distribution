@@ -136,7 +136,7 @@ object mod {
       
       inline def setProvinces(value: js.Array[Province]): Self = StObject.set(x, "provinces", value.asInstanceOf[js.Any])
       
-      inline def setProvincesVarargs(value: Province*): Self = StObject.set(x, "provinces", js.Array(value :_*))
+      inline def setProvincesVarargs(value: Province*): Self = StObject.set(x, "provinces", js.Array(value*))
       
       inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     }
@@ -241,7 +241,7 @@ object mod {
       
       inline def setAliasNull: Self = StObject.set(x, "alias", null)
       
-      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
+      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

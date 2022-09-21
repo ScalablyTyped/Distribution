@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "string-width" : "4.2.0"
+      "string-width" : "5.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "string-width" : "4.2.0"
+      "string-width" : "5.1.2"
     }
   ],
   "compile-devDependencies" : [

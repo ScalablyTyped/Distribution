@@ -20,7 +20,7 @@ trait Limit extends StObject {
   
   var `requested-attributes`: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 204 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 204 */ Any
     ]
   ] = js.undefined
   
@@ -60,15 +60,13 @@ object Limit {
     
     inline def `setRequested-attributes`(
       value: js.Array[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 204 */ js.Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 204 */ Any
         ]
     ): Self = StObject.set(x, "requested-attributes", value.asInstanceOf[js.Any])
     
     inline def `setRequested-attributesUndefined`: Self = StObject.set(x, "requested-attributes", js.undefined)
     
-    inline def `setRequested-attributesVarargs`(
-      value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 204 */ js.Any)*
-    ): Self = StObject.set(x, "requested-attributes", js.Array(value :_*))
+    inline def `setRequested-attributesVarargs`(value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 204 */ Any)*): Self = StObject.set(x, "requested-attributes", js.Array(value*))
     
     inline def `setRequesting-user-name`(value: String): Self = StObject.set(x, "requesting-user-name", value.asInstanceOf[js.Any])
     

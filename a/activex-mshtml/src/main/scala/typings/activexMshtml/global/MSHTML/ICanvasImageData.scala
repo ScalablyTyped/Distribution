@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.ICanvasImageData")
 @js.native
-/* private */ class ICanvasImageData ()
+/* private */ open class ICanvasImageData ()
   extends StObject
      with typings.activexMshtml.MSHTML.ICanvasImageData {
   
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MSHTMLDotICanvasImageData_typekey: typings.activexMshtml.MSHTML.ICanvasImageData = js.native
   
   /* CompleteClass */
-  override val data: js.Any = js.native
+  override val data: Any = js.native
   
   /* CompleteClass */
   override val height: Double = js.native

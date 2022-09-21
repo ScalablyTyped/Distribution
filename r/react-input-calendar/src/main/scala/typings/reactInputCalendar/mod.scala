@@ -12,6 +12,5 @@ object mod {
   /* was `typeof reactInputCalendar.ReactInputCalendar` */
   @JSImport("react-input-calendar", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[ReactInputCalendarProps, ReactInputCalendarState, js.Any]
+  open class ^ () extends Component[ReactInputCalendarProps, ReactInputCalendarState, Any]
 }

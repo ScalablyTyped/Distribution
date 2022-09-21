@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCommodityChannelIndex")
 @js.native
-class ASPxClientCommodityChannelIndex ()
+open class ASPxClientCommodityChannelIndex ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCommodityChannelIndex {
   

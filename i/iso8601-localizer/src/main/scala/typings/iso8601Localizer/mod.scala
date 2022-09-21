@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("iso8601-localizer", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with ISO8601Localizer {
     def this(userISO8601: String) = this()

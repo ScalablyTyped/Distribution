@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param children - An array of children that will be added to the
   * newly created group
   */
-class Group ()
+open class Group ()
   extends StObject
      with typings.paper.paper.Group {
   def this(children: js.Array[typings.paper.paper.Item]) = this()

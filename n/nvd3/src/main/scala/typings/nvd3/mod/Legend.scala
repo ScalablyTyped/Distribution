@@ -15,7 +15,7 @@ trait Legend
   def align(value: Boolean): this.type = js.native
   
   /*Colors to use for the different data. If an array is given, it is converted to a function automatically.*/
-  def color(func: js.Function2[/* d */ js.Any, /* i */ Double, String]): this.type = js.native
+  def color(func: js.Function2[/* d */ Any, /* i */ Double, String]): this.type = js.native
   /*Colors to use for the different data. If an array is given, it is converted to a function automatically.*/
   def color(value: js.Array[String]): this.type = js.native
   
@@ -27,8 +27,8 @@ trait Legend
   /*The height the graph or component created inside the SVG should be made.*/
   def height(value: Double): this.type = js.native
   
-  def key(): js.Any = js.native
-  def key(value: js.Any): this.type = js.native
+  def key(): Any = js.native
+  def key(value: Any): this.type = js.native
   
   /*Object containing the margins for the chart or component. You can specify only certain margins in the object to change just those parts.*/
   def margin(): Margin = js.native

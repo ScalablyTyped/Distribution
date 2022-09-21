@@ -29,7 +29,7 @@ object ListActionExecutionsOutput {
     
     inline def setActionExecutionDetailsUndefined: Self = StObject.set(x, "actionExecutionDetails", js.undefined)
     
-    inline def setActionExecutionDetailsVarargs(value: ActionExecutionDetail*): Self = StObject.set(x, "actionExecutionDetails", js.Array(value :_*))
+    inline def setActionExecutionDetailsVarargs(value: ActionExecutionDetail*): Self = StObject.set(x, "actionExecutionDetails", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.asana.mod.Dispatcher
 import typings.asana.mod.resources.Sections.SectionsParams
 import typings.asana.mod.resources.Sections.Type
+import typings.bluebird.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Sections
   extends StObject
-     with Resource {
+     with TopLevelResource {
   
   /**
     * * Adds the specified task to a specific section of project. Returns empty object.
@@ -23,10 +24,10 @@ trait Sections
     * @param {Object} [dispatchOptions] Options, if any, to pass the dispatcher for the request
     * @return {Promise} The response from the API
     */
-  def addTask(section: String, data: SectionsParams): typings.bluebird.mod.^[js.Object] = js.native
-  def addTask(section: String, data: SectionsParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Object] = js.native
-  def addTask(section: Double, data: SectionsParams): typings.bluebird.mod.^[js.Object] = js.native
-  def addTask(section: Double, data: SectionsParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Object] = js.native
+  def addTask(section: String, data: SectionsParams): ^[js.Object] = js.native
+  def addTask(section: String, data: SectionsParams, dispatchOptions: Any): ^[js.Object] = js.native
+  def addTask(section: Double, data: SectionsParams): ^[js.Object] = js.native
+  def addTask(section: Double, data: SectionsParams, dispatchOptions: Any): ^[js.Object] = js.native
   
   /**
     * Returns the complete record for a single section.
@@ -35,14 +36,14 @@ trait Sections
     * @param {Object} [dispatchOptions] Options, if any, to pass the dispatcher for the request
     * @return {Promise} The requested resource
     */
-  def findById(section: String): typings.bluebird.mod.^[Type] = js.native
-  def findById(section: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def findById(section: String, params: Params): typings.bluebird.mod.^[Type] = js.native
-  def findById(section: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def findById(section: Double): typings.bluebird.mod.^[Type] = js.native
-  def findById(section: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def findById(section: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
-  def findById(section: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(section: String): ^[Type] = js.native
+  def findById(section: String, params: Unit, dispatchOptions: Any): ^[Type] = js.native
+  def findById(section: String, params: Params): ^[Type] = js.native
+  def findById(section: String, params: Params, dispatchOptions: Any): ^[Type] = js.native
+  def findById(section: Double): ^[Type] = js.native
+  def findById(section: Double, params: Unit, dispatchOptions: Any): ^[Type] = js.native
+  def findById(section: Double, params: Params): ^[Type] = js.native
+  def findById(section: Double, params: Params, dispatchOptions: Any): ^[Type] = js.native
   
   /**
     * Returns the compact records for all sections in the specified project.
@@ -51,21 +52,21 @@ trait Sections
     * @param {Object} [dispatchOptions] Options, if any, to pass the dispatcher for the request
     * @return {Promise} The response from the API
     */
-  def findByProject(project: String): typings.bluebird.mod.^[js.Array[Type]] = js.native
-  def findByProject(project: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Array[Type]] = js.native
-  def findByProject(project: String, params: Params): typings.bluebird.mod.^[js.Array[Type]] = js.native
-  def findByProject(project: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Array[Type]] = js.native
-  def findByProject(project: Double): typings.bluebird.mod.^[js.Array[Type]] = js.native
-  def findByProject(project: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Array[Type]] = js.native
-  def findByProject(project: Double, params: Params): typings.bluebird.mod.^[js.Array[Type]] = js.native
-  def findByProject(project: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Array[Type]] = js.native
+  def findByProject(project: String): ^[js.Array[Type]] = js.native
+  def findByProject(project: String, params: Unit, dispatchOptions: Any): ^[js.Array[Type]] = js.native
+  def findByProject(project: String, params: Params): ^[js.Array[Type]] = js.native
+  def findByProject(project: String, params: Params, dispatchOptions: Any): ^[js.Array[Type]] = js.native
+  def findByProject(project: Double): ^[js.Array[Type]] = js.native
+  def findByProject(project: Double, params: Unit, dispatchOptions: Any): ^[js.Array[Type]] = js.native
+  def findByProject(project: Double, params: Params): ^[js.Array[Type]] = js.native
+  def findByProject(project: Double, params: Params, dispatchOptions: Any): ^[js.Array[Type]] = js.native
 }
 object Sections extends Shortcut {
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Sections")
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Sections {
     /**
@@ -107,12 +108,30 @@ object Sections extends Shortcut {
     }
   }
   
-  @js.native
+  // https://developers.asana.com/docs/section
   trait Type
     extends StObject
        with Resource {
     
-    var created_at: String = js.native
+    var created_at: String
+    
+    var project: js.UndefOr[typings.asana.mod.resources.Projects.Type] = js.undefined
+  }
+  object Type {
+    
+    inline def apply(created_at: String, gid: String, name: String, resource_type: String): Type = {
+      val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], gid = gid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Type]
+    }
+    
+    extension [Self <: Type](x: Self) {
+      
+      inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      
+      inline def setProject(value: typings.asana.mod.resources.Projects.Type): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      
+      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    }
   }
   
   type _To = SectionsStatic

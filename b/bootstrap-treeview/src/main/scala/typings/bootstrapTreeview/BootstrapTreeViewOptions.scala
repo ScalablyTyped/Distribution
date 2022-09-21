@@ -34,25 +34,25 @@ trait BootstrapTreeViewOptions extends StObject {
   
   var nodeIcon: js.UndefOr[String] = js.undefined
   
-  var onNodeChecked: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  var onNodeChecked: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onNodeCollapsed: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  var onNodeCollapsed: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onNodeDisabled: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  var onNodeDisabled: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onNodeEnabled: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  var onNodeEnabled: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onNodeExpanded: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  var onNodeExpanded: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onNodeSelected: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  var onNodeSelected: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onNodeUnchecked: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  var onNodeUnchecked: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onNodeUnselected: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  var onNodeUnselected: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onSearchCleared: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  var onSearchCleared: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onSearchComplete: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
+  var onSearchComplete: js.UndefOr[js.Function2[/* event */ Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
   var onhoverColor: js.UndefOr[String] = js.undefined
   
@@ -109,7 +109,7 @@ object BootstrapTreeViewOptions {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: BootstrapTreeViewNodeData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: BootstrapTreeViewNodeData*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setEmptyIcon(value: String): Self = StObject.set(x, "emptyIcon", value.asInstanceOf[js.Any])
     
@@ -143,43 +143,43 @@ object BootstrapTreeViewOptions {
     
     inline def setNodeIconUndefined: Self = StObject.set(x, "nodeIcon", js.undefined)
     
-    inline def setOnNodeChecked(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeChecked", js.Any.fromFunction2(value))
+    inline def setOnNodeChecked(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeChecked", js.Any.fromFunction2(value))
     
     inline def setOnNodeCheckedUndefined: Self = StObject.set(x, "onNodeChecked", js.undefined)
     
-    inline def setOnNodeCollapsed(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeCollapsed", js.Any.fromFunction2(value))
+    inline def setOnNodeCollapsed(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeCollapsed", js.Any.fromFunction2(value))
     
     inline def setOnNodeCollapsedUndefined: Self = StObject.set(x, "onNodeCollapsed", js.undefined)
     
-    inline def setOnNodeDisabled(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeDisabled", js.Any.fromFunction2(value))
+    inline def setOnNodeDisabled(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeDisabled", js.Any.fromFunction2(value))
     
     inline def setOnNodeDisabledUndefined: Self = StObject.set(x, "onNodeDisabled", js.undefined)
     
-    inline def setOnNodeEnabled(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeEnabled", js.Any.fromFunction2(value))
+    inline def setOnNodeEnabled(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeEnabled", js.Any.fromFunction2(value))
     
     inline def setOnNodeEnabledUndefined: Self = StObject.set(x, "onNodeEnabled", js.undefined)
     
-    inline def setOnNodeExpanded(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeExpanded", js.Any.fromFunction2(value))
+    inline def setOnNodeExpanded(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeExpanded", js.Any.fromFunction2(value))
     
     inline def setOnNodeExpandedUndefined: Self = StObject.set(x, "onNodeExpanded", js.undefined)
     
-    inline def setOnNodeSelected(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeSelected", js.Any.fromFunction2(value))
+    inline def setOnNodeSelected(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeSelected", js.Any.fromFunction2(value))
     
     inline def setOnNodeSelectedUndefined: Self = StObject.set(x, "onNodeSelected", js.undefined)
     
-    inline def setOnNodeUnchecked(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeUnchecked", js.Any.fromFunction2(value))
+    inline def setOnNodeUnchecked(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeUnchecked", js.Any.fromFunction2(value))
     
     inline def setOnNodeUncheckedUndefined: Self = StObject.set(x, "onNodeUnchecked", js.undefined)
     
-    inline def setOnNodeUnselected(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeUnselected", js.Any.fromFunction2(value))
+    inline def setOnNodeUnselected(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onNodeUnselected", js.Any.fromFunction2(value))
     
     inline def setOnNodeUnselectedUndefined: Self = StObject.set(x, "onNodeUnselected", js.undefined)
     
-    inline def setOnSearchCleared(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onSearchCleared", js.Any.fromFunction2(value))
+    inline def setOnSearchCleared(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onSearchCleared", js.Any.fromFunction2(value))
     
     inline def setOnSearchClearedUndefined: Self = StObject.set(x, "onSearchCleared", js.undefined)
     
-    inline def setOnSearchComplete(value: (/* event */ js.Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onSearchComplete", js.Any.fromFunction2(value))
+    inline def setOnSearchComplete(value: (/* event */ Any, /* node */ BootstrapTreeViewNodeData) => Unit): Self = StObject.set(x, "onSearchComplete", js.Any.fromFunction2(value))
     
     inline def setOnSearchCompleteUndefined: Self = StObject.set(x, "onSearchComplete", js.undefined)
     

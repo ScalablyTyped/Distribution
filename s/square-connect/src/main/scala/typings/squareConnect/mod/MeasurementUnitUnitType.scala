@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "MeasurementUnitUnitType")
 @js.native
-class MeasurementUnitUnitType () extends StObject
+open class MeasurementUnitUnitType () extends StObject

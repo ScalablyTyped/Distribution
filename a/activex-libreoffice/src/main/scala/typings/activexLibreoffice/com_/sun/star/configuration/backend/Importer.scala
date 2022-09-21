@@ -25,8 +25,8 @@ object Importer {
     getTargetBackend: () => XBackend,
     importLayer: XLayer => Unit,
     importLayerForEntity: (XLayer, String) => Unit,
-    initialize: SeqEquiv[js.Any] => Unit,
-    queryInterface: `type` => js.Any,
+    initialize: SeqEquiv[Any] => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setTargetBackend: XBackend => Unit
   ): Importer = {

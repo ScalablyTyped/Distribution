@@ -2,9 +2,11 @@ package typings.cookieclicker
 
 import typings.cookieclicker.Game.AchievementPool
 import typings.cookieclicker.Game.Art
+import typings.cookieclicker.Game.AscensionMode
+import typings.cookieclicker.Game.Background
 import typings.cookieclicker.Game.BankAchievementClass
 import typings.cookieclicker.Game.Buff
-import typings.cookieclicker.Game.ChoiceCosmetics
+import typings.cookieclicker.Game.BuffParameter
 import typings.cookieclicker.Game.CookieUpgrade
 import typings.cookieclicker.Game.CookieUpgradeParameter
 import typings.cookieclicker.Game.CpsAchievementClass
@@ -12,31 +14,39 @@ import typings.cookieclicker.Game.DragonAura
 import typings.cookieclicker.Game.DragonLevel
 import typings.cookieclicker.Game.Effects
 import typings.cookieclicker.Game.FoolBuilding
+import typings.cookieclicker.Game.GameHooks
 import typings.cookieclicker.Game.GrandmaSynergyClass
 import typings.cookieclicker.Game.HeavenlyUpgrade
 import typings.cookieclicker.Game.Icon
+import typings.cookieclicker.Game.Jukebox
 import typings.cookieclicker.Game.Milk
 import typings.cookieclicker.Game.Mod
 import typings.cookieclicker.Game.Particle
 import typings.cookieclicker.Game.Prefs
-import typings.cookieclicker.Game.ProductionAchievementRequirement
 import typings.cookieclicker.Game.PseudoBoolean
 import typings.cookieclicker.Game.PseudoNull
 import typings.cookieclicker.Game.Season
 import typings.cookieclicker.Game.SelectorSwitchChoice
 import typings.cookieclicker.Game.ShimmerType
 import typings.cookieclicker.Game.SynergyUpgradeClass
+import typings.cookieclicker.Game.TickerEffectClass
 import typings.cookieclicker.Game.Tier
 import typings.cookieclicker.Game.TieredAchievementClass
 import typings.cookieclicker.Game.TieredUpgradeClass
 import typings.cookieclicker.Game.Tooltip
 import typings.cookieclicker.Game.TooltipOrigins
 import typings.cookieclicker.Game.UnlockRequirement
+import typings.cookieclicker.Game.UnshackledBuildingObj
+import typings.cookieclicker.Game.UnshackledTierObj
 import typings.cookieclicker.Game.Wrinkler
 import typings.cookieclicker.Game.WrinklerSave
+import typings.cookieclicker.________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Music.Track
+import typings.cookieclicker.________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam.SendCallback
 import typings.cookieclicker.anon.Bank
-import typings.cookieclicker.anon.Frame
 import typings.cookieclicker.anon.HTMLCanvasElementwidth8he
+import typings.cookieclicker.anon.PlayersN
+import typings.cookieclicker.anon.TypeofMusic
+import typings.cookieclicker.anon.TypeofSteam
 import typings.cookieclicker.cookieclickerBooleans.`false`
 import typings.cookieclicker.cookieclickerNumbers.`-1`
 import typings.cookieclicker.cookieclickerNumbers.`0`
@@ -48,28 +58,37 @@ import typings.cookieclicker.cookieclickerStrings.Farm
 import typings.cookieclicker.cookieclickerStrings.Temple
 import typings.cookieclicker.cookieclickerStrings._empty
 import typings.cookieclicker.cookieclickerStrings.`Wizard tower`
-import typings.cookieclicker.cookieclickerStrings.achievement
+import typings.cookieclicker.cookieclickerStrings.achievement_
 import typings.cookieclicker.cookieclickerStrings.altDraw
 import typings.cookieclicker.cookieclickerStrings.animate
 import typings.cookieclicker.cookieclickerStrings.ascend
 import typings.cookieclicker.cookieclickerStrings.askLumps
 import typings.cookieclicker.cookieclickerStrings.autosave
 import typings.cookieclicker.cookieclickerStrings.autoupdate
+import typings.cookieclicker.cookieclickerStrings.bgMusic
+import typings.cookieclicker.cookieclickerStrings.cloudSave
 import typings.cookieclicker.cookieclickerStrings.cookiesPerClick
+import typings.cookieclicker.cookieclickerStrings.cookiesound
 import typings.cookieclicker.cookieclickerStrings.cps
+import typings.cookieclicker.cookieclickerStrings.crates
 import typings.cookieclicker.cookieclickerStrings.cursors
 import typings.cookieclicker.cookieclickerStrings.customGrandmas
+import typings.cookieclicker.cookieclickerStrings.discordPresence
 import typings.cookieclicker.cookieclickerStrings.extraButtons
 import typings.cookieclicker.cookieclickerStrings.fancy
 import typings.cookieclicker.cookieclickerStrings.filters
 import typings.cookieclicker.cookieclickerStrings.focus
 import typings.cookieclicker.cookieclickerStrings.format
+import typings.cookieclicker.cookieclickerStrings.fullscreen
 import typings.cookieclicker.cookieclickerStrings.milk
 import typings.cookieclicker.cookieclickerStrings.monospace
+import typings.cookieclicker.cookieclickerStrings.notScary
 import typings.cookieclicker.cookieclickerStrings.notifs
 import typings.cookieclicker.cookieclickerStrings.numbers
 import typings.cookieclicker.cookieclickerStrings.particles
 import typings.cookieclicker.cookieclickerStrings.popups
+import typings.cookieclicker.cookieclickerStrings.reset
+import typings.cookieclicker.cookieclickerStrings.screenreader
 import typings.cookieclicker.cookieclickerStrings.showBackupWarning
 import typings.cookieclicker.cookieclickerStrings.stats
 import typings.cookieclicker.cookieclickerStrings.store
@@ -77,15 +96,20 @@ import typings.cookieclicker.cookieclickerStrings.ticker
 import typings.cookieclicker.cookieclickerStrings.timeout
 import typings.cookieclicker.cookieclickerStrings.warn
 import typings.cookieclicker.cookieclickerStrings.wobbly
+import typings.std.AudioContext
+import typings.std.BiquadFilterNode
 import typings.std.DOMRect
 import typings.std.Event
-import typings.std.HTMLCanvasElement
+import typings.std.Exclude
+import typings.std.GainNode
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLImageElement
 import typings.std.InputEvent
 import typings.std.MouseEvent
+import typings.std.OnErrorEventHandler
 import typings.std.Record
+import typings.std.global.Audio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,12 +119,51 @@ object global {
   inline def AddEvent(htmlElement: HTMLElement, eventName: String, eventFunction: js.Function1[/* e */ Event, Unit]): Unit = (js.Dynamic.global.applyDynamic("AddEvent")(htmlElement.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
+    * Create or modifies a language
+    * @param id The language identifier
+    * @param name Unused
+    * @param mod If set, modifies an existing language
+    */
+  inline def AddLanguage(id: String, name: String, json: LanguageData): Unit = (js.Dynamic.global.applyDynamic("AddLanguage")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def AddLanguage(id: String, name: String, json: LanguageData, mod: Boolean): Unit = (js.Dynamic.global.applyDynamic("AddLanguage")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], json.asInstanceOf[js.Any], mod.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSGlobal("App")
+  @js.native
+  def App: PseudoNull | TypeofSteam = js.native
+  inline def App_=(x: PseudoNull | TypeofSteam): Unit = js.Dynamic.global.updateDynamic("App")(x.asInstanceOf[js.Any])
+  
+  /**
     * Beautifies a number
     * @param val The number to beautify
     * @param floats The amount of decimals to show
     */
   inline def Beautify(`val`: Double): String = js.Dynamic.global.applyDynamic("Beautify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def Beautify(`val`: Double, floats: Double): String = (js.Dynamic.global.applyDynamic("Beautify")(`val`.asInstanceOf[js.Any], floats.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  /**
+    * Runs BeautifyInText on all upgrades and achievements
+    */
+  inline def BeautifyAll(): Unit = js.Dynamic.global.applyDynamic("BeautifyAll")().asInstanceOf[Unit]
+  
+  /**
+    * Reformats all numbers in the string be beautified
+    */
+  inline def BeautifyInText(str: String): String = js.Dynamic.global.applyDynamic("BeautifyInText")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def BeautifyInTextFunction(str: String): String = js.Dynamic.global.applyDynamic("BeautifyInTextFunction")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * If true, Englsh is the current language
+    */
+  @JSGlobal("EN")
+  @js.native
+  def EN: Boolean = js.native
+  inline def EN_=(x: Boolean): Unit = js.Dynamic.global.updateDynamic("EN")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Indexes `locStringsByPart`
+    */
+  inline def FindLocStringByPart(`match`: String): js.UndefOr[String] = js.Dynamic.global.applyDynamic("FindLocStringByPart")(`match`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   object Game {
     
@@ -110,7 +173,7 @@ object global {
     
     @JSGlobal("Game.Achievement")
     @js.native
-    class Achievement protected ()
+    open class Achievement protected ()
       extends StObject
          with typings.cookieclicker.Game.Achievement {
       /**
@@ -133,6 +196,9 @@ object global {
       /* CompleteClass */
       override def click(): Unit = js.native
       
+      /* CompleteClass */
+      var ddesc: String = js.native
+      
       /**
         * The description of the upgrade with auto-adjusted text
         */
@@ -142,6 +208,12 @@ object global {
       /** Unused @deprecated */
       /* CompleteClass */
       var disabled: PseudoBoolean = js.native
+      
+      /* CompleteClass */
+      var dname: String = js.native
+      
+      /* CompleteClass */
+      override def getType(): typings.cookieclicker.cookieclickerStrings.Achievement = js.native
       
       /* CompleteClass */
       var icon: Icon = js.native
@@ -168,7 +240,7 @@ object global {
       override def toggle(): Unit = js.native
       
       /* CompleteClass */
-      var `type`: achievement = js.native
+      var `type`: achievement_ = js.native
       
       /* CompleteClass */
       var vanilla: PseudoBoolean = js.native
@@ -179,12 +251,12 @@ object global {
     
     @JSGlobal("Game.Achievements")
     @js.native
-    def Achievements: js.Array[typings.cookieclicker.Game.Achievement] = js.native
+    def Achievements: Record[String, typings.cookieclicker.Game.Achievement] = js.native
     
     @JSGlobal("Game.AchievementsById")
     @js.native
-    def AchievementsById: js.Array[typings.cookieclicker.Game.Achievement] = js.native
-    inline def AchievementsById_=(x: js.Array[typings.cookieclicker.Game.Achievement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AchievementsById")(x.asInstanceOf[js.Any])
+    def AchievementsById: Record[Double | String, typings.cookieclicker.Game.Achievement] = js.native
+    inline def AchievementsById_=(x: Record[Double | String, typings.cookieclicker.Game.Achievement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AchievementsById")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.AchievementsN")
     @js.native
@@ -196,9 +268,19 @@ object global {
     def AchievementsOwned: Double = js.native
     inline def AchievementsOwned_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AchievementsOwned")(x.asInstanceOf[js.Any])
     
-    inline def Achievements_=(x: js.Array[typings.cookieclicker.Game.Achievement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Achievements")(x.asInstanceOf[js.Any])
+    inline def Achievements_=(x: Record[String, typings.cookieclicker.Game.Achievement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Achievements")(x.asInstanceOf[js.Any])
     
     inline def AddToLog(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AddToLog")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @JSGlobal("Game.AllBGs")
+    @js.native
+    def AllBGs: js.Array[Background] = js.native
+    inline def AllBGs_=(x: js.Array[Background]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AllBGs")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("Game.AllMilks")
+    @js.native
+    def AllMilks: js.Array[Milk] = js.native
+    inline def AllMilks_=(x: js.Array[Milk]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AllMilks")(x.asInstanceOf[js.Any])
     
     inline def Ascend(bypass: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Ascend")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -276,8 +358,8 @@ object global {
     
     @JSGlobal("Game.BGsByChoice")
     @js.native
-    def BGsByChoice: Record[Double, ChoiceCosmetics] = js.native
-    inline def BGsByChoice_=(x: Record[Double, ChoiceCosmetics]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BGsByChoice")(x.asInstanceOf[js.Any])
+    def BGsByChoice: Record[Double, Background] = js.native
+    inline def BGsByChoice_=(x: Record[Double, Background]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BGsByChoice")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.Background")
     @js.native
@@ -314,6 +396,7 @@ object global {
     inline def BigCookieState_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BigCookieState")(x.asInstanceOf[js.Any])
     
     inline def BuildAscendTree(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildAscendTree")().asInstanceOf[Unit]
+    inline def BuildAscendTree(justBought: HeavenlyUpgrade): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildAscendTree")(justBought.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def BuildStore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("BuildStore")().asInstanceOf[Unit]
     
@@ -337,6 +420,9 @@ object global {
     @js.native
     def Click: Double = js.native
     
+    inline def ClickCookie(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClickCookie")().asInstanceOf[Unit]
+    inline def ClickCookie(e: Unit, amount: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClickCookie")(e.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def ClickCookie(e: MouseEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClickCookie")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def ClickCookie(e: MouseEvent, amount: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ClickCookie")(e.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def ClickProduct(what: typings.cookieclicker.Game.GameObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClickProduct")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -375,8 +461,8 @@ object global {
     
     @JSGlobal("Game.DebuggingPrestige")
     @js.native
-    def DebuggingPrestige: Double = js.native
-    inline def DebuggingPrestige_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DebuggingPrestige")(x.asInstanceOf[js.Any])
+    def DebuggingPrestige: PseudoBoolean = js.native
+    inline def DebuggingPrestige_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DebuggingPrestige")(x.asInstanceOf[js.Any])
     
     inline def DefaultPrefs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultPrefs")().asInstanceOf[Unit]
     
@@ -398,7 +484,7 @@ object global {
     
     inline def Earn(howmuch: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Earn")(howmuch.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def EarnHeavenlyChips(cookiesForfeited: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EarnHeavenlyChips")(cookiesForfeited.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def EarnHeavenlyChips(cookiesForfeited: Double, silent: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EarnHeavenlyChips")(cookiesForfeited.asInstanceOf[js.Any], silent.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def EditAscend(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EditAscend")().asInstanceOf[Unit]
     
@@ -410,9 +496,14 @@ object global {
     
     inline def FileSave(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("FileSave")().asInstanceOf[Unit]
     
+    inline def FocusPromptOption(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("FocusPromptOption")().asInstanceOf[Unit]
+    inline def FocusPromptOption(dir: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("FocusPromptOption")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def FocusPromptOption(dir: Double, tryN: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FocusPromptOption")(dir.asInstanceOf[js.Any], tryN.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def FocusPromptOption(dir: Unit, tryN: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FocusPromptOption")(dir.asInstanceOf[js.Any], tryN.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSGlobal("Game.GameObject")
     @js.native
-    class GameObject protected ()
+    open class GameObject protected ()
       extends StObject
          with typings.cookieclicker.Game.GameObject {
       /**
@@ -443,355 +534,6 @@ object global {
         cps: js.Function1[/* me */ typings.cookieclicker.Game.GameObject, Double],
         buyFunction: js.ThisFunction0[/* this */ typings.cookieclicker.Game.GameObject, Unit]
       ) = this()
-      
-      /**
-        * The way the building makes cookies
-        */
-      /* CompleteClass */
-      var actionName: String = js.native
-      
-      /**
-        * The amount of buildings owned, including free ones
-        */
-      /* CompleteClass */
-      var amount: Double = js.native
-      
-      /**
-        * The art the building uses
-        */
-      /* CompleteClass */
-      var art: Art = js.native
-      
-      /**
-        * The CpS the building generates without any boosts
-        */
-      /* CompleteClass */
-      var baseCps: Double = js.native
-      
-      /**
-        * The price the building generates without any boosts
-        */
-      /* CompleteClass */
-      var basePrice: Double = js.native
-      
-      /**
-        * The amount of times a building has been bought, including free buys
-        */
-      /* CompleteClass */
-      var bought: Double = js.native
-      
-      /**
-        * The current price displayed in store
-        */
-      /* CompleteClass */
-      var bulkPrice: Double = js.native
-      
-      /**
-        * Buys a building
-        * @param amount Amount of buildings to buy, defaults to `Game.buyBulk`
-        */
-      /* CompleteClass */
-      override def buy(amount: Double): Unit | `0` = js.native
-      
-      /**
-        * Buys a building for free, while increasing the price
-        * @param amount Amount of buildings to buy
-        */
-      /* CompleteClass */
-      override def buyFree(amount: Double): Unit = js.native
-      
-      /**
-        * The function that gets called on buy
-        */
-      /* CompleteClass */
-      override def buyFunction(): Unit = js.native
-      
-      /**
-        * The canvas for art
-        */
-      /* CompleteClass */
-      var canvas: HTMLCanvasElement = js.native
-      
-      /**
-        * The function to calculate CPS
-        * @param me The building itself
-        */
-      /* CompleteClass */
-      override def cps(me: typings.cookieclicker.Game.GameObject): Double = js.native
-      
-      /**
-        * The context from canvas for the art
-        */
-      /* CompleteClass */
-      var ctx: CanvasRenderingContext2D = js.native
-      
-      /**
-        * The visual description for the building
-        */
-      /* CompleteClass */
-      var desc: String = js.native
-      
-      /**
-        * The visual name for the building(an html string)
-        */
-      /* CompleteClass */
-      var displayName: String = js.native
-      
-      /**
-        * Redraws the art
-        */
-      /* CompleteClass */
-      override def draw(): Unit | `false` = js.native
-      
-      /**
-        * The function to get called, well, each frame
-        */
-      /* CompleteClass */
-      var eachFrame: js.Function0[Unit] | PseudoNull = js.native
-      
-      /**
-        * The description of how the level changes the building, used for one lump, where [X] is the level
-        */
-      /* CompleteClass */
-      var extraName: String = js.native
-      
-      /**
-        * The description of how the level changes the building, used for multiple lumps, where [X] is the level
-        */
-      /* CompleteClass */
-      var extraPlural: String = js.native
-      
-      /**
-        * The fortune upgrade tied with the building
-        */
-      /* CompleteClass */
-      var fortune: TieredUpgradeClass[typings.cookieclicker.cookieclickerStrings.fortune] | PseudoNull = js.native
-      
-      /**
-        * The amount of buildings gotten for free
-        */
-      /* CompleteClass */
-      var free: Double = js.native
-      
-      /**
-        * Buys a building for free, while *not* increasing the price
-        * @param amount Amount of buildings to get
-        */
-      /* CompleteClass */
-      override def getFree(amount: Double): Unit = js.native
-      
-      /**
-        * Convert buildings to free buildings
-        * @param amount The amount of buildings to convert
-        */
-      /* CompleteClass */
-      override def getFreeRanks(amount: Double): Unit = js.native
-      
-      /**
-        * Get the current price of building
-        * @param n Unused parameter
-        */
-      /* CompleteClass */
-      override def getPrice(n: Double): Double = js.native
-      
-      /**
-        * Get the cookies gained by selling an amount of buildings
-        * @param amount The amount of buildings to sell
-        */
-      /* CompleteClass */
-      override def getReverseSumPrice(amount: Double): Double = js.native
-      
-      /**
-        * Gets the sell multiplier and returns it
-        * As of 2.029, the multiplier is 25% * (1 + aura multiplier of Earth Shatterer)
-        */
-      /* CompleteClass */
-      override def getSellMultiplier(): Double = js.native
-      
-      /**
-        * Get the price of buying an amount of buildings
-        * @param amount The amount of buildings to buy
-        */
-      /* CompleteClass */
-      override def getSumPrice(amount: Double): Double = js.native
-      
-      /**
-        * The highest amount of buildings owned this run
-        */
-      /* CompleteClass */
-      var highest: Double = js.native
-      
-      /**
-        * The row to be used in the big icon
-        */
-      /* CompleteClass */
-      var icon: Double = js.native
-      
-      /**
-        * The column to be used for the icon (Tier upgrade icons are derived from this)
-        */
-      /* CompleteClass */
-      var iconColumn: Double = js.native
-      
-      /**
-        * Buildings id, 0 based
-        */
-      /* CompleteClass */
-      var id: Double = js.native
-      
-      /**
-        * Buildings listing in store
-        */
-      /* CompleteClass */
-      var l: HTMLDivElement = js.native
-      
-      /* CompleteClass */
-      var level: Double = js.native
-      
-      /* CompleteClass */
-      var levelAchiev10: typings.cookieclicker.Game.Achievement = js.native
-      
-      /* CompleteClass */
-      override def levelTooltip(): String = js.native
-      
-      /* CompleteClass */
-      override def levelUp(): js.Function0[Unit] = js.native
-      
-      /**
-        * If the building is visually locked, is considered unlocked after CBTA is higher than the base cost
-        */
-      /* CompleteClass */
-      var locked: PseudoBoolean = js.native
-      
-      /* CompleteClass */
-      var minigameLoaded: Boolean = js.native
-      
-      /* CompleteClass */
-      var minigameName: String = js.native
-      
-      /* CompleteClass */
-      var minigameSave: String = js.native
-      
-      /* CompleteClass */
-      var minigameUrl: String = js.native
-      
-      /* CompleteClass */
-      var mouseOn: Boolean = js.native
-      
-      /* CompleteClass */
-      var mousePos: js.Tuple2[Double, Double] = js.native
-      
-      /**
-        * Mutes or unmutes the building, depending on `val`
-        * @param val The new muted status, 0 for unmuted, 1 for muted
-        */
-      /* CompleteClass */
-      override def mute(`val`: Double): Unit = js.native
-      
-      /* CompleteClass */
-      var muted: Double = js.native
-      
-      /**
-        * Same as id
-        */
-      /* CompleteClass */
-      var n: Double = js.native
-      
-      /* CompleteClass */
-      var name: String = js.native
-      
-      /* CompleteClass */
-      var onMinigame: Double = js.native
-      
-      /**
-        * The singular pictures used in the art
-        */
-      /* CompleteClass */
-      var pics: js.Array[Frame] = js.native
-      
-      /* CompleteClass */
-      var plural: String = js.native
-      
-      /* CompleteClass */
-      var price: Double = js.native
-      
-      /* CompleteClass */
-      var productionAchievs: js.Array[ProductionAchievementRequirement] = js.native
-      
-      /**
-        * Updates store listing and art buttons
-        */
-      /* CompleteClass */
-      override def rebuild(): Unit = js.native
-      
-      /**
-        * Resets `this.pics`, see `draw` for actual redrawing
-        */
-      /* CompleteClass */
-      override def redraw(): Unit = js.native
-      
-      /**
-        * Updates price, bulk price and art appearance, calls `rebuild`
-        */
-      /* CompleteClass */
-      override def refresh(): Unit = js.native
-      
-      /**
-        * Sells buildings without refunding the cookies
-        * @param amount The amount of buildings to sacrifice
-        */
-      /* CompleteClass */
-      override def sacrafice(amount: Double): Unit = js.native
-      
-      /**
-        * Sells buildings and refunds a part of the cost, see `getSellMultiplier` for the exact multiplier
-        * @param amount The amount of buildings to sell
-        */
-      /* CompleteClass */
-      override def sell(amount: Double, bypass: Unit): Unit = js.native
-      
-      /* CompleteClass */
-      var single: String = js.native
-      
-      /**
-        * Amount of CpS a building produces (as of 2.031, `this.cps` * level bonus)
-        */
-      /* CompleteClass */
-      var storedCps: Double = js.native
-      
-      /**
-        *  Amount of CpS a building produces, multiplied by amount (as of 2.027, `this.cps` * level bonus)
-        */
-      /* CompleteClass */
-      var storedTotalCps: Double = js.native
-      
-      /* CompleteClass */
-      override def switchMinigame(on: Double): Unit = js.native
-      
-      /* CompleteClass */
-      var synergies: js.Array[SynergyUpgradeClass[String]] = js.native
-      
-      /* CompleteClass */
-      var tieredAchievs: js.Array[TieredAchievementClass[Double]] = js.native
-      
-      /* CompleteClass */
-      var tieredUpgrades: js.Array[TieredUpgradeClass[Double]] = js.native
-      
-      /**
-        * Generates a tooltip to show on the shop listing.
-        * @return A string with the html elements
-        */
-      /* CompleteClass */
-      override def tooltip(): String = js.native
-      
-      /**
-        * Total cookies produced by the building
-        */
-      /* CompleteClass */
-      var totalCookies: Double = js.native
-      
-      /* CompleteClass */
-      var vanilla: PseudoBoolean = js.native
     }
     
     inline def GetAllDebugs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAllDebugs")().asInstanceOf[Unit]
@@ -817,8 +559,6 @@ object global {
     
     inline def GetTieredCpsMult(me: typings.cookieclicker.Game.GameObject): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTieredCpsMult")(me.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    inline def GiveUpAscend(bypass: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GiveUpAscend")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
     inline def GrabData(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GrabData")().asInstanceOf[Unit]
     
     inline def GrabDataResponse(response: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("GrabDataResponse")(response.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -835,11 +575,7 @@ object global {
     def HCfactor: Double = js.native
     inline def HCfactor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HCfactor")(x.asInstanceOf[js.Any])
     
-    inline def HardReset_0(bypass: `0`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HardReset")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    inline def HardReset_1(bypass: `1`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HardReset")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    inline def HardReset_2(bypass: `2`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HardReset")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def HardReset(bypass: `0` | `1` | `2`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("HardReset")(bypass.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def Has(what: String): PseudoBoolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Has")(what.asInstanceOf[js.Any]).asInstanceOf[PseudoBoolean]
     
@@ -852,6 +588,7 @@ object global {
     inline def HowMuchPrestige(cookies: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("HowMuchPrestige")(cookies.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     inline def ImportSave(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ImportSave")().asInstanceOf[Unit]
+    inline def ImportSave(`def`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ImportSave")(`def`.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def ImportSaveCode(save: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ImportSaveCode")(save.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -868,7 +605,22 @@ object global {
     
     inline def LoadMinigames(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadMinigames")().asInstanceOf[Unit]
     
-    inline def LoadMod(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadMod")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @JSGlobal("Game.LoadMod")
+    @js.native
+    def LoadMod: js.Function3[
+        /* url */ String, 
+        /* callback */ js.UndefOr[js.Function0[Unit]], 
+        /* error */ js.UndefOr[OnErrorEventHandler], 
+        Unit
+      ] = js.native
+    inline def LoadMod_=(
+      x: js.Function3[
+          /* url */ String, 
+          /* callback */ js.UndefOr[js.Function0[Unit]], 
+          /* error */ js.UndefOr[OnErrorEventHandler], 
+          Unit
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LoadMod")(x.asInstanceOf[js.Any])
     
     inline def LoadSave(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadSave")().asInstanceOf[Boolean]
     inline def LoadSave(data: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadSave")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -905,26 +657,19 @@ object global {
     @JSGlobal("Game.Milks")
     @js.native
     def Milks: js.Array[Milk] = js.native
-    
-    @JSGlobal("Game.MilksByChoice")
-    @js.native
-    def MilksByChoice: Record[Double, ChoiceCosmetics] = js.native
-    inline def MilksByChoice_=(x: Record[Double, ChoiceCosmetics]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MilksByChoice")(x.asInstanceOf[js.Any])
-    
     inline def Milks_=(x: js.Array[Milk]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Milks")(x.asInstanceOf[js.Any])
     
     inline def Mobile_(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Mobile")().asInstanceOf[Unit]
     
-    @JSGlobal("Game.Mods")
-    @js.native
-    def Mods: Record[String, Mod] = js.native
-    inline def Mods_=(x: Record[String, Mod]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mods")(x.asInstanceOf[js.Any])
+    inline def NewUnshackleBuilding(obj: UnshackledBuildingObj): HeavenlyUpgrade = ^.asInstanceOf[js.Dynamic].applyDynamic("NewUnshackleBuilding")(obj.asInstanceOf[js.Any]).asInstanceOf[HeavenlyUpgrade]
+    
+    inline def NewUnshackleUpgradeTier(obj: UnshackledTierObj): HeavenlyUpgrade = ^.asInstanceOf[js.Dynamic].applyDynamic("NewUnshackleUpgradeTier")(obj.asInstanceOf[js.Any]).asInstanceOf[HeavenlyUpgrade]
     
     inline def NewUpgradeCookie(obj: CookieUpgradeParameter): CookieUpgrade = ^.asInstanceOf[js.Dynamic].applyDynamic("NewUpgradeCookie")(obj.asInstanceOf[js.Any]).asInstanceOf[CookieUpgrade]
     
     @JSGlobal("Game.Note")
     @js.native
-    class Note protected ()
+    open class Note protected ()
       extends StObject
          with typings.cookieclicker.Game.Note {
       def this(title: String) = this()
@@ -962,6 +707,12 @@ object global {
       
       /* CompleteClass */
       var title: String = js.native
+      
+      /**
+        * The function string to be called to get the tooltip string
+        */
+      /* CompleteClass */
+      var tooltip: String | PseudoNull = js.native
     }
     
     @JSGlobal("Game.Notes")
@@ -979,7 +730,6 @@ object global {
     
     inline def Notes_=(x: js.Array[typings.cookieclicker.Game.Note]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Notes")(x.asInstanceOf[js.Any])
     
-    inline def Notify(title: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def Notify(title: String, desc: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def Notify(title: String, desc: String, pic: Unit, quick: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def Notify(title: String, desc: String, pic: Unit, quick: Double, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -988,13 +738,8 @@ object global {
     inline def Notify(title: String, desc: String, pic: Icon, quick: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def Notify(title: String, desc: String, pic: Icon, quick: Double, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def Notify(title: String, desc: String, pic: Icon, quick: Unit, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Notify(title: String, desc: Unit, pic: Unit, quick: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Notify(title: String, desc: Unit, pic: Unit, quick: Double, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Notify(title: String, desc: Unit, pic: Unit, quick: Unit, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Notify(title: String, desc: Unit, pic: Icon): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Notify(title: String, desc: Unit, pic: Icon, quick: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Notify(title: String, desc: Unit, pic: Icon, quick: Double, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Notify(title: String, desc: Unit, pic: Icon, quick: Unit, noLog: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Notify")(title.asInstanceOf[js.Any], desc.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], quick.asInstanceOf[js.Any], noLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def NotifyTooltip(content: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("NotifyTooltip")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("Game.Objects")
     @js.native
@@ -1002,8 +747,8 @@ object global {
     
     @JSGlobal("Game.ObjectsById")
     @js.native
-    def ObjectsById: js.Array[typings.cookieclicker.Game.GameObject] = js.native
-    inline def ObjectsById_=(x: js.Array[typings.cookieclicker.Game.GameObject]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectsById")(x.asInstanceOf[js.Any])
+    def ObjectsById: Record[Double | String, typings.cookieclicker.Game.GameObject] = js.native
+    inline def ObjectsById_=(x: Record[Double | String, typings.cookieclicker.Game.GameObject]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectsById")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ObjectsN")
     @js.native
@@ -1082,13 +827,15 @@ object global {
     
     inline def RequiresConfirmation(upgrade: typings.cookieclicker.Game.Upgrade, prompt: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RequiresConfirmation")(upgrade.asInstanceOf[js.Any], prompt.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def Reset(hard: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Reset")(hard.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Reset")().asInstanceOf[Unit]
+    inline def Reset(hard: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Reset")(hard.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def ResetWrinklers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ResetWrinklers")().asInstanceOf[Unit]
     
     inline def Resume(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Resume")().asInstanceOf[Unit]
     
-    inline def RuinTheFun(silent: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("RuinTheFun")(silent.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def RuinTheFun(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("RuinTheFun")().asInstanceOf[String]
+    inline def RuinTheFun(silent: PseudoBoolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("RuinTheFun")(silent.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSGlobal("Game.SaveTo")
     @js.native
@@ -1132,59 +879,6 @@ object global {
     
     inline def SetTier(building: String, tier: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTier")(building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def SetTier(building: String, tier: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetTier")(building.asInstanceOf[js.Any], tier.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    @JSGlobal("Game.Shimmer")
-    @js.native
-    class Shimmer[N /* <: String */, C /* <: js.Object */] protected ()
-      extends StObject
-         with typings.cookieclicker.Game.Shimmer[N, C] {
-      /**
-        * Creates a new shimmer
-        * @param type The type of the shimmer, must be a key of `shimmerTypes`
-        * @param obj The configuration object
-        * @param noCount True if to not count the shimmer in `shimmersN`
-        */
-      def this(`type`: N) = this()
-      def this(`type`: N, obj: C) = this()
-      def this(`type`: N, obj: C, noCount: Boolean) = this()
-      def this(`type`: N, obj: Unit, noCount: Boolean) = this()
-      
-      /* CompleteClass */
-      override def die(): Unit = js.native
-      
-      /* CompleteClass */
-      var forceObj: C = js.native
-      
-      /* CompleteClass */
-      var id: Double = js.native
-      
-      /* CompleteClass */
-      override def init(): Unit = js.native
-      
-      /* CompleteClass */
-      var l: HTMLElement = js.native
-      
-      /* CompleteClass */
-      var noCount: Boolean = js.native
-      
-      /* CompleteClass */
-      override def pop(event: MouseEvent): Unit = js.native
-      
-      /* CompleteClass */
-      var spawnLead: Double = js.native
-      
-      /* CompleteClass */
-      var `type`: N = js.native
-      
-      /* CompleteClass */
-      override def update(): Unit = js.native
-      
-      /* CompleteClass */
-      var x: Double = js.native
-      
-      /* CompleteClass */
-      var y: Double = js.native
-    }
     
     inline def ShowMenu(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ShowMenu")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -1230,8 +924,8 @@ object global {
     
     @JSGlobal("Game.TickerEffect")
     @js.native
-    def TickerEffect: Double = js.native
-    inline def TickerEffect_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TickerEffect")(x.asInstanceOf[js.Any])
+    def TickerEffect: PseudoNull | TickerEffectClass = js.native
+    inline def TickerEffect_=(x: PseudoNull | TickerEffectClass): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TickerEffect")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.TickerN")
     @js.native
@@ -1248,10 +942,24 @@ object global {
     
     @JSGlobal("Game.Tiers")
     @js.native
-    def Tiers: Record[String, Tier] = js.native
-    inline def Tiers_=(x: Record[String, Tier]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tiers")(x.asInstanceOf[js.Any])
+    def Tiers: Record[String | Double, Tier] = js.native
+    inline def Tiers_=(x: Record[String | Double, Tier]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tiers")(x.asInstanceOf[js.Any])
     
     inline def Timeout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Timeout")().asInstanceOf[Unit]
+    
+    inline def Toggle(
+      prefName: particles | numbers | autosave | autoupdate | milk | fancy | warn | cursors | focus | popups | format | notifs | animate | wobbly | monospace | filters | cookiesound | crates | altDraw | showBackupWarning | extraButtons | askLumps | customGrandmas | timeout | cloudSave | bgMusic | notScary | fullscreen | screenreader | discordPresence,
+      button: String,
+      on: String,
+      off: String
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Toggle(
+      prefName: particles | numbers | autosave | autoupdate | milk | fancy | warn | cursors | focus | popups | format | notifs | animate | wobbly | monospace | filters | cookiesound | crates | altDraw | showBackupWarning | extraButtons | askLumps | customGrandmas | timeout | cloudSave | bgMusic | notScary | fullscreen | screenreader | discordPresence,
+      button: String,
+      on: String,
+      off: String,
+      invert: PseudoBoolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def ToggleExtraButtons(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleExtraButtons")().asInstanceOf[Unit]
     
@@ -1259,73 +967,9 @@ object global {
     
     inline def ToggleFilters(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleFilters")().asInstanceOf[Unit]
     
+    inline def ToggleFullscreen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleFullscreen")().asInstanceOf[Unit]
+    
     inline def ToggleSpecialMenu(on: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ToggleSpecialMenu")(on.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    inline def Toggle_altDraw(prefName: altDraw, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_altDraw(prefName: altDraw, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_animate(prefName: animate, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_animate(prefName: animate, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_askLumps(prefName: askLumps, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_askLumps(prefName: askLumps, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_autosave(prefName: autosave, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_autosave(prefName: autosave, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_autoupdate(prefName: autoupdate, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_autoupdate(prefName: autoupdate, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_cursors(prefName: cursors, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_cursors(prefName: cursors, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_customGrandmas(prefName: customGrandmas, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_customGrandmas(prefName: customGrandmas, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_extraButtons(prefName: extraButtons, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_extraButtons(prefName: extraButtons, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_fancy(prefName: fancy, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_fancy(prefName: fancy, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_filters(prefName: filters, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_filters(prefName: filters, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_focus(prefName: focus, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_focus(prefName: focus, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_format(prefName: format, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_format(prefName: format, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_milk(prefName: milk, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_milk(prefName: milk, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_monospace(prefName: monospace, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_monospace(prefName: monospace, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_notifs(prefName: notifs, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_notifs(prefName: notifs, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_numbers(prefName: numbers, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_numbers(prefName: numbers, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_particles(prefName: particles, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_particles(prefName: particles, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_popups(prefName: popups, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_popups(prefName: popups, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_showBackupWarning(prefName: showBackupWarning, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_showBackupWarning(prefName: showBackupWarning, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_timeout(prefName: timeout, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_timeout(prefName: timeout, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_warn(prefName: warn, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_warn(prefName: warn, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def Toggle_wobbly(prefName: wobbly, button: String, on: String, off: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def Toggle_wobbly(prefName: wobbly, button: String, on: String, off: String, invert: PseudoBoolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Toggle")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def Unlock(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Unlock")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def Unlock(what: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Unlock")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -1335,7 +979,7 @@ object global {
     def UnlockAt: js.Array[UnlockRequirement] = js.native
     inline def UnlockAt_=(x: js.Array[UnlockRequirement]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UnlockAt")(x.asInstanceOf[js.Any])
     
-    inline def UnlockTiered(me: typings.cookieclicker.Game.Upgrade): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UnlockTiered")(me.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def UnlockTiered(me: typings.cookieclicker.Game.GameObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UnlockTiered")(me.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def UpdateAscend(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateAscend")().asInstanceOf[Unit]
     
@@ -1344,8 +988,6 @@ object global {
     inline def UpdateAscensionModePrompt(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateAscensionModePrompt")().asInstanceOf[Unit]
     
     inline def UpdateGrandmapocalypse(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateGrandmapocalypse")().asInstanceOf[Unit]
-    
-    inline def UpdateLegacyPrompt(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateLegacyPrompt")().asInstanceOf[Unit]
     
     inline def UpdateMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateMenu")().asInstanceOf[Unit]
     
@@ -1363,7 +1005,7 @@ object global {
     
     @JSGlobal("Game.Upgrade")
     @js.native
-    class Upgrade protected ()
+    open class Upgrade protected ()
       extends StObject
          with typings.cookieclicker.Game.Upgrade {
       /**
@@ -1382,21 +1024,21 @@ object global {
     
     @JSGlobal("Game.UpgradePositions")
     @js.native
-    def UpgradePositions: js.Object = js.native
-    inline def UpgradePositions_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpgradePositions")(x.asInstanceOf[js.Any])
+    def UpgradePositions: Record[Double, js.Tuple2[Double, Double]] = js.native
+    inline def UpgradePositions_=(x: Record[Double, js.Tuple2[Double, Double]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpgradePositions")(x.asInstanceOf[js.Any])
     
     inline def UpgradeSanta(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UpgradeSanta")().asInstanceOf[Unit]
     
     @JSGlobal("Game.Upgrades")
     @js.native
-    def Upgrades: js.Array[Unit] & (Record[String, typings.cookieclicker.Game.Upgrade]) = js.native
+    def Upgrades: Record[String, typings.cookieclicker.Game.Upgrade] = js.native
     
     @JSGlobal("Game.UpgradesById")
     @js.native
-    def UpgradesById: js.Array[typings.cookieclicker.Game.Upgrade] = js.native
-    inline def UpgradesById_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpgradesById")(x.asInstanceOf[js.Any])
+    def UpgradesById: Record[Double | String, typings.cookieclicker.Game.Upgrade] = js.native
+    inline def UpgradesById_=(x: Record[Double | String, typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpgradesById")(x.asInstanceOf[js.Any])
     
-    /* Inlined std.Record<cookieclicker.Game.UpgradePool, std.Array<cookieclicker.Game.Upgrade>> */
+    /* Inlined std.Record<cookieclicker.Game.UpgradePool | 'kitten', std.Array<cookieclicker.Game.Upgrade>> */
     object UpgradesByPool {
       
       @JSGlobal("Game.UpgradesByPool")
@@ -1418,6 +1060,11 @@ object global {
       @js.native
       def debug: js.Array[typings.cookieclicker.Game.Upgrade] = js.native
       inline def debug_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("Game.UpgradesByPool.kitten")
+      @js.native
+      def kitten: js.Array[typings.cookieclicker.Game.Upgrade] = js.native
+      inline def kitten_=(x: js.Array[typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kitten")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Game.UpgradesByPool.prestige")
       @js.native
@@ -1461,174 +1108,26 @@ object global {
     def UpgradesOwned: Double = js.native
     inline def UpgradesOwned_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UpgradesOwned")(x.asInstanceOf[js.Any])
     
-    inline def Upgrades_=(x: js.Array[Unit] & (Record[String, typings.cookieclicker.Game.Upgrade])): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Upgrades")(x.asInstanceOf[js.Any])
+    inline def Upgrades_=(x: Record[String, typings.cookieclicker.Game.Upgrade]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Upgrades")(x.asInstanceOf[js.Any])
     
     inline def Win(what: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Win")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def Win(what: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Win")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def WriteButton_altDraw(prefName: altDraw, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_altDraw(
-      prefName: altDraw,
+    inline def WritePrefButton(
+      prefName: particles | numbers | autosave | autoupdate | milk | fancy | warn | cursors | focus | popups | format | notifs | animate | wobbly | monospace | filters | cookiesound | crates | altDraw | showBackupWarning | extraButtons | askLumps | customGrandmas | timeout | cloudSave | bgMusic | notScary | fullscreen | screenreader | discordPresence,
+      button: String,
+      on: String,
+      off: String,
+      callback: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WritePrefButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def WritePrefButton(
+      prefName: particles | numbers | autosave | autoupdate | milk | fancy | warn | cursors | focus | popups | format | notifs | animate | wobbly | monospace | filters | cookiesound | crates | altDraw | showBackupWarning | extraButtons | askLumps | customGrandmas | timeout | cloudSave | bgMusic | notScary | fullscreen | screenreader | discordPresence,
       button: String,
       on: String,
       off: String,
       callback: String,
       invert: PseudoBoolean
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_animate(prefName: animate, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_animate(
-      prefName: animate,
-      button: String,
-      on: String,
-      off: String,
-      callback: String,
-      invert: PseudoBoolean
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_askLumps(prefName: askLumps, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_askLumps(
-      prefName: askLumps,
-      button: String,
-      on: String,
-      off: String,
-      callback: String,
-      invert: PseudoBoolean
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_autosave(prefName: autosave, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_autosave(
-      prefName: autosave,
-      button: String,
-      on: String,
-      off: String,
-      callback: String,
-      invert: PseudoBoolean
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_autoupdate(prefName: autoupdate, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_autoupdate(
-      prefName: autoupdate,
-      button: String,
-      on: String,
-      off: String,
-      callback: String,
-      invert: PseudoBoolean
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_cursors(prefName: cursors, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_cursors(
-      prefName: cursors,
-      button: String,
-      on: String,
-      off: String,
-      callback: String,
-      invert: PseudoBoolean
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_customGrandmas(prefName: customGrandmas, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_customGrandmas(
-      prefName: customGrandmas,
-      button: String,
-      on: String,
-      off: String,
-      callback: String,
-      invert: PseudoBoolean
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_extraButtons(prefName: extraButtons, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_extraButtons(
-      prefName: extraButtons,
-      button: String,
-      on: String,
-      off: String,
-      callback: String,
-      invert: PseudoBoolean
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_fancy(prefName: fancy, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_fancy(prefName: fancy, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_filters(prefName: filters, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_filters(
-      prefName: filters,
-      button: String,
-      on: String,
-      off: String,
-      callback: String,
-      invert: PseudoBoolean
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_focus(prefName: focus, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_focus(prefName: focus, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_format(prefName: format, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_format(prefName: format, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_milk(prefName: milk, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_milk(prefName: milk, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_monospace(prefName: monospace, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_monospace(
-      prefName: monospace,
-      button: String,
-      on: String,
-      off: String,
-      callback: String,
-      invert: PseudoBoolean
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_notifs(prefName: notifs, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_notifs(prefName: notifs, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_numbers(prefName: numbers, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_numbers(
-      prefName: numbers,
-      button: String,
-      on: String,
-      off: String,
-      callback: String,
-      invert: PseudoBoolean
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_particles(prefName: particles, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_particles(
-      prefName: particles,
-      button: String,
-      on: String,
-      off: String,
-      callback: String,
-      invert: PseudoBoolean
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_popups(prefName: popups, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_popups(prefName: popups, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_showBackupWarning(prefName: showBackupWarning, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_showBackupWarning(
-      prefName: showBackupWarning,
-      button: String,
-      on: String,
-      off: String,
-      callback: String,
-      invert: PseudoBoolean
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_timeout(prefName: timeout, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_timeout(
-      prefName: timeout,
-      button: String,
-      on: String,
-      off: String,
-      callback: String,
-      invert: PseudoBoolean
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_warn(prefName: warn, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_warn(prefName: warn, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def WriteButton_wobbly(prefName: wobbly, button: String, on: String, off: String, callback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def WriteButton_wobbly(prefName: wobbly, button: String, on: String, off: String, callback: String, invert: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WriteButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("WritePrefButton")(prefName.asInstanceOf[js.Any], button.asInstanceOf[js.Any], on.asInstanceOf[js.Any], off.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[String]
     
     inline def WriteSave(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("WriteSave")().asInstanceOf[String]
     inline def WriteSave(`type`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("WriteSave")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -1650,12 +1149,12 @@ object global {
     
     @JSGlobal("Game.ascendContentl")
     @js.native
-    def ascendContentl: js.Object = js.native
-    inline def ascendContentl_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendContentl")(x.asInstanceOf[js.Any])
+    def ascendContentl: HTMLDivElement = js.native
+    inline def ascendContentl_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendContentl")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ascendMeter")
     @js.native
-    def ascendMeter: js.Object = js.native
+    def ascendMeter: HTMLDivElement = js.native
     
     @JSGlobal("Game.ascendMeterLevel")
     @js.native
@@ -1673,27 +1172,27 @@ object global {
     
     inline def ascendMeterPercent_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendMeterPercent")(x.asInstanceOf[js.Any])
     
-    inline def ascendMeter_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendMeter")(x.asInstanceOf[js.Any])
+    inline def ascendMeter_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendMeter")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ascendNumber")
     @js.native
-    def ascendNumber: js.Object = js.native
-    inline def ascendNumber_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendNumber")(x.asInstanceOf[js.Any])
+    def ascendNumber: HTMLDivElement = js.native
+    inline def ascendNumber_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendNumber")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ascendUpgradesl")
     @js.native
-    def ascendUpgradesl: js.Object = js.native
-    inline def ascendUpgradesl_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendUpgradesl")(x.asInstanceOf[js.Any])
+    def ascendUpgradesl: HTMLDivElement = js.native
+    inline def ascendUpgradesl_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendUpgradesl")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ascendZoomablel")
     @js.native
-    def ascendZoomablel: js.Object = js.native
-    inline def ascendZoomablel_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendZoomablel")(x.asInstanceOf[js.Any])
+    def ascendZoomablel: HTMLDivElement = js.native
+    inline def ascendZoomablel_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendZoomablel")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ascendl")
     @js.native
-    def ascendl: js.Object = js.native
-    inline def ascendl_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendl")(x.asInstanceOf[js.Any])
+    def ascendl: HTMLDivElement = js.native
+    inline def ascendl_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascendl")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.ascensionMode")
     @js.native
@@ -1702,8 +1201,8 @@ object global {
     
     @JSGlobal("Game.ascensionModes")
     @js.native
-    def ascensionModes: js.Object = js.native
-    inline def ascensionModes_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascensionModes")(x.asInstanceOf[js.Any])
+    def ascensionModes: Record[Double, AscensionMode] = js.native
+    inline def ascensionModes_=(x: Record[Double, AscensionMode]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ascensionModes")(x.asInstanceOf[js.Any])
     
     inline def attachTooltip(el: HTMLElement, func: String, origin: TooltipOrigins): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTooltip")(el.asInstanceOf[js.Any], func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def attachTooltip(el: HTMLElement, func: js.Function0[String], origin: TooltipOrigins): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTooltip")(el.asInstanceOf[js.Any], func.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1785,9 +1284,14 @@ object global {
     def bounds: DOMRect = js.native
     inline def bounds_=(x: DOMRect): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bounds")(x.asInstanceOf[js.Any])
     
+    @JSGlobal("Game.brokenMods")
+    @js.native
+    def brokenMods: js.Array[String] = js.native
+    inline def brokenMods_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("brokenMods")(x.asInstanceOf[js.Any])
+    
     @JSGlobal("Game.buffType")
     @js.native
-    class buffType protected ()
+    open class buffType protected ()
       extends StObject
          with typings.cookieclicker.Game.buffType {
       def this(
@@ -1797,7 +1301,7 @@ object global {
                 /* arg1 */ js.UndefOr[Double], 
                 /* arg2 */ js.UndefOr[Double], 
                 /* arg3 */ js.UndefOr[Double], 
-                Buff
+                BuffParameter
               ]
       ) = this()
     }
@@ -1896,6 +1400,11 @@ object global {
     def clickStr: String = js.native
     inline def clickStr_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clickStr")(x.asInstanceOf[js.Any])
     
+    @JSGlobal("Game.clicksThisSession")
+    @js.native
+    def clicksThisSession: Double = js.native
+    inline def clicksThisSession_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clicksThisSession")(x.asInstanceOf[js.Any])
+    
     inline def computeLumpTimes(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLumpTimes")().asInstanceOf[Unit]
     
     inline def computeLumpType(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLumpType")().asInstanceOf[Boolean]
@@ -1945,8 +1454,8 @@ object global {
     
     @JSGlobal("Game.cookiesMultByType")
     @js.native
-    def cookiesMultByType: js.Object = js.native
-    inline def cookiesMultByType_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesMultByType")(x.asInstanceOf[js.Any])
+    def cookiesMultByType: Record[String, Double] = js.native
+    inline def cookiesMultByType_=(x: Record[String, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesMultByType")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.cookiesPs")
     @js.native
@@ -1954,8 +1463,8 @@ object global {
     
     @JSGlobal("Game.cookiesPsByType")
     @js.native
-    def cookiesPsByType: js.Object = js.native
-    inline def cookiesPsByType_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesPsByType")(x.asInstanceOf[js.Any])
+    def cookiesPsByType: Record[String, Double] = js.native
+    inline def cookiesPsByType_=(x: Record[String, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesPsByType")(x.asInstanceOf[js.Any])
     
     inline def cookiesPs_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesPs")(x.asInstanceOf[js.Any])
     
@@ -1983,29 +1492,159 @@ object global {
     def cpsSucked: Double = js.native
     inline def cpsSucked_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cpsSucked")(x.asInstanceOf[js.Any])
     
+    inline def crate(me: typings.cookieclicker.Game.Achievement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def crate(me: typings.cookieclicker.Game.Achievement, context: store | ascend | stats): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(me: typings.cookieclicker.Game.Achievement, context: store | ascend | stats, forceClickStr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Achievement,
+      context: store | ascend | stats,
+      forceClickStr: String,
+      id: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Achievement,
+      context: store | ascend | stats,
+      forceClickStr: String,
+      id: String,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Achievement,
+      context: store | ascend | stats,
+      forceClickStr: String,
+      id: Unit,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Achievement,
+      context: store | ascend | stats,
+      forceClickStr: Unit,
+      id: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Achievement,
+      context: store | ascend | stats,
+      forceClickStr: Unit,
+      id: String,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Achievement,
+      context: store | ascend | stats,
+      forceClickStr: Unit,
+      id: Unit,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(me: typings.cookieclicker.Game.Achievement, context: Unit, forceClickStr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def crate(me: typings.cookieclicker.Game.Achievement, context: Unit, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Achievement,
+      context: Unit,
+      forceClickStr: String,
+      id: String,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Achievement,
+      context: Unit,
+      forceClickStr: String,
+      id: Unit,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(me: typings.cookieclicker.Game.Achievement, context: Unit, forceClickStr: Unit, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Achievement,
+      context: Unit,
+      forceClickStr: Unit,
+      id: String,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Achievement,
+      context: Unit,
+      forceClickStr: Unit,
+      id: Unit,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(me: typings.cookieclicker.Game.Upgrade): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def crate(me: typings.cookieclicker.Game.Upgrade, context: store | ascend | stats): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(me: typings.cookieclicker.Game.Upgrade, context: store | ascend | stats, forceClickStr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Upgrade,
+      context: store | ascend | stats,
+      forceClickStr: String,
+      id: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Upgrade,
+      context: store | ascend | stats,
+      forceClickStr: String,
+      id: String,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Upgrade,
+      context: store | ascend | stats,
+      forceClickStr: String,
+      id: Unit,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Upgrade,
+      context: store | ascend | stats,
+      forceClickStr: Unit,
+      id: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Upgrade,
+      context: store | ascend | stats,
+      forceClickStr: Unit,
+      id: String,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Upgrade,
+      context: store | ascend | stats,
+      forceClickStr: Unit,
+      id: Unit,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(me: typings.cookieclicker.Game.Upgrade, context: Unit, forceClickStr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def crate(me: typings.cookieclicker.Game.Upgrade, context: Unit, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Upgrade,
+      context: Unit,
+      forceClickStr: String,
+      id: String,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Upgrade,
+      context: Unit,
+      forceClickStr: String,
+      id: Unit,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(me: typings.cookieclicker.Game.Upgrade, context: Unit, forceClickStr: Unit, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Upgrade,
+      context: Unit,
+      forceClickStr: Unit,
+      id: String,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crate(
+      me: typings.cookieclicker.Game.Upgrade,
+      context: Unit,
+      forceClickStr: Unit,
+      id: Unit,
+      style: String
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[String]
     
     inline def crateTooltip(me: typings.cookieclicker.Game.Achievement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def crateTooltip(me: typings.cookieclicker.Game.Achievement, context: store | ascend | stats): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def crateTooltip(me: typings.cookieclicker.Game.Upgrade): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    inline def crateTooltip_ascend(me: typings.cookieclicker.Game.Achievement, context: ascend): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def crateTooltip_ascend(me: typings.cookieclicker.Game.Upgrade, context: ascend): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def crateTooltip_stats(me: typings.cookieclicker.Game.Achievement, context: stats): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def crateTooltip_stats(me: typings.cookieclicker.Game.Upgrade, context: stats): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def crateTooltip_store(me: typings.cookieclicker.Game.Achievement, context: store): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def crateTooltip_store(me: typings.cookieclicker.Game.Upgrade, context: store): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def crate_ascend(me: typings.cookieclicker.Game.Achievement, context: ascend, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def crate_ascend(me: typings.cookieclicker.Game.Upgrade, context: ascend, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def crate_stats(me: typings.cookieclicker.Game.Achievement, context: stats, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def crate_stats(me: typings.cookieclicker.Game.Upgrade, context: stats, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def crate_store(me: typings.cookieclicker.Game.Achievement, context: store, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def crate_store(me: typings.cookieclicker.Game.Upgrade, context: store, forceClickStr: String, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crate")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any], forceClickStr.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def crateTooltip(me: typings.cookieclicker.Game.Upgrade, context: store | ascend | stats): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crateTooltip")(me.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSGlobal("Game.cssClasses")
     @js.native
@@ -2024,8 +1663,8 @@ object global {
     
     @JSGlobal("Game.darkenL")
     @js.native
-    def darkenL: js.Object = js.native
-    inline def darkenL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkenL")(x.asInstanceOf[js.Any])
+    def darkenL: HTMLDivElement = js.native
+    inline def darkenL_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkenL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.debugColors")
     @js.native
@@ -2072,8 +1711,8 @@ object global {
     
     @JSGlobal("Game.dragonAuras")
     @js.native
-    def dragonAuras: Record[Double, DragonAura] = js.native
-    inline def dragonAuras_=(x: Record[Double, DragonAura]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dragonAuras")(x.asInstanceOf[js.Any])
+    def dragonAuras: Record[Double | String, DragonAura] = js.native
+    inline def dragonAuras_=(x: Record[Double | String, DragonAura]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dragonAuras")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.dragonLevel")
     @js.native
@@ -2097,7 +1736,7 @@ object global {
     def easterEggs: js.Array[String] = js.native
     inline def easterEggs_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("easterEggs")(x.asInstanceOf[js.Any])
     
-    inline def eff(name: String, `def`: String): Effects = (^.asInstanceOf[js.Dynamic].applyDynamic("eff")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Effects]
+    inline def eff(name: String, `def`: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("eff")(name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     @JSGlobal("Game.effs")
     @js.native
@@ -2132,8 +1771,8 @@ object global {
     
     @JSGlobal("Game.foolObjects")
     @js.native
-    def foolObjects: js.Array[FoolBuilding] = js.native
-    inline def foolObjects_=(x: js.Array[FoolBuilding]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("foolObjects")(x.asInstanceOf[js.Any])
+    def foolObjects: Record[String, FoolBuilding] = js.native
+    inline def foolObjects_=(x: Record[String, FoolBuilding]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("foolObjects")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.forceUnslotGod")
     @js.native
@@ -2171,7 +1810,14 @@ object global {
     def fullDate: Double = js.native
     inline def fullDate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fullDate")(x.asInstanceOf[js.Any])
     
+    inline def gainBuff(`type`: String, time: Double): Buff = (^.asInstanceOf[js.Dynamic].applyDynamic("gainBuff")(`type`.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Buff]
+    inline def gainBuff(`type`: String, time: Double, arg1: Double): Buff = (^.asInstanceOf[js.Dynamic].applyDynamic("gainBuff")(`type`.asInstanceOf[js.Any], time.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[Buff]
+    inline def gainBuff(`type`: String, time: Double, arg1: Double, arg2: Double): Buff = (^.asInstanceOf[js.Dynamic].applyDynamic("gainBuff")(`type`.asInstanceOf[js.Any], time.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[Buff]
     inline def gainBuff(`type`: String, time: Double, arg1: Double, arg2: Double, arg3: Double): Buff = (^.asInstanceOf[js.Dynamic].applyDynamic("gainBuff")(`type`.asInstanceOf[js.Any], time.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Buff]
+    inline def gainBuff(`type`: String, time: Double, arg1: Double, arg2: Unit, arg3: Double): Buff = (^.asInstanceOf[js.Dynamic].applyDynamic("gainBuff")(`type`.asInstanceOf[js.Any], time.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Buff]
+    inline def gainBuff(`type`: String, time: Double, arg1: Unit, arg2: Double): Buff = (^.asInstanceOf[js.Dynamic].applyDynamic("gainBuff")(`type`.asInstanceOf[js.Any], time.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[Buff]
+    inline def gainBuff(`type`: String, time: Double, arg1: Unit, arg2: Double, arg3: Double): Buff = (^.asInstanceOf[js.Dynamic].applyDynamic("gainBuff")(`type`.asInstanceOf[js.Any], time.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Buff]
+    inline def gainBuff(`type`: String, time: Double, arg1: Unit, arg2: Unit, arg3: Double): Buff = (^.asInstanceOf[js.Dynamic].applyDynamic("gainBuff")(`type`.asInstanceOf[js.Any], time.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[Buff]
     
     inline def gainLumps(total: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("gainLumps")(total.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -2205,6 +1851,10 @@ object global {
     inline def getTooltip(text: String, origin: TooltipOrigins): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltip")(text.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def getTooltip(text: String, origin: TooltipOrigins, isCrate: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltip")(text.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def getTooltip(text: String, origin: TooltipOrigins, isCrate: PseudoBoolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTooltip")(text.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], isCrate.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def getVeilBoost(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getVeilBoost")().asInstanceOf[Double]
+    
+    inline def getVeilDefense(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getVeilDefense")().asInstanceOf[Double]
     
     inline def getWrinklersMax(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWrinklersMax")().asInstanceOf[Double]
     
@@ -2268,7 +1918,7 @@ object global {
     
     inline def hasAura(what: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasAura")(what.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def hasBuff(what: String): Double | Buff = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBuff")(what.asInstanceOf[js.Any]).asInstanceOf[Double | Buff]
+    inline def hasBuff(what: String): `0` | Buff = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBuff")(what.asInstanceOf[js.Any]).asInstanceOf[`0` | Buff]
     
     @JSGlobal("Game.hasGod")
     @js.native
@@ -2280,10 +1930,33 @@ object global {
     def heartDrops: js.Array[String] = js.native
     inline def heartDrops_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heartDrops")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("Game.heavenlyBounds")
-    @js.native
-    def heavenlyBounds: js.Object = js.native
-    inline def heavenlyBounds_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heavenlyBounds")(x.asInstanceOf[js.Any])
+    /* Inlined std.Record<'top' | 'right' | 'bottom' | 'left', number> */
+    object heavenlyBounds {
+      
+      @JSGlobal("Game.heavenlyBounds")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSGlobal("Game.heavenlyBounds.bottom")
+      @js.native
+      def bottom: Double = js.native
+      inline def bottom_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("Game.heavenlyBounds.left")
+      @js.native
+      def left: Double = js.native
+      inline def left_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("Game.heavenlyBounds.right")
+      @js.native
+      def right: Double = js.native
+      inline def right_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("Game.heavenlyBounds.top")
+      @js.native
+      def top: Double = js.native
+      inline def top_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
+    }
     
     @JSGlobal("Game.heavenlyChips")
     @js.native
@@ -2321,7 +1994,17 @@ object global {
     def https: Boolean = js.native
     inline def https_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("https")(x.asInstanceOf[js.Any])
     
-    inline def isMinigameReady(me: typings.cookieclicker.Game.GameObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isMinigameReady")(me.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def isMinigameReady(me: typings.cookieclicker.Game.GameObject): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isMinigameReady")(me.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
+    
+    @JSGlobal("Game.isSaving")
+    @js.native
+    def isSaving: Boolean = js.native
+    inline def isSaving_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSaving")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("Game.jukebox")
+    @js.native
+    def jukebox: Jukebox = js.native
+    inline def jukebox_=(x: Jukebox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jukebox")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.keys")
     @js.native
@@ -2355,31 +2038,34 @@ object global {
     
     @JSGlobal("Game.lastClickedEl")
     @js.native
-    def lastClickedEl: js.Object = js.native
-    inline def lastClickedEl_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastClickedEl")(x.asInstanceOf[js.Any])
+    def lastClickedEl: Element | PseudoNull = js.native
+    inline def lastClickedEl_=(x: Element | PseudoNull): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastClickedEl")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.lastDate")
     @js.native
     def lastDate: Double = js.native
     inline def lastDate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastDate")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("Game.lastPanel")
+    @JSGlobal("Game.lastSaveData")
     @js.native
-    def lastPanel: String = js.native
-    inline def lastPanel_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastPanel")(x.asInstanceOf[js.Any])
+    def lastSaveData: String = js.native
+    inline def lastSaveData_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lastSaveData")(x.asInstanceOf[js.Any])
     
     inline def last_=(
       x: typings.cookieclicker.Game.GameObject | typings.cookieclicker.Game.Upgrade | typings.cookieclicker.Game.Achievement
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("last")(x.asInstanceOf[js.Any])
     
+    inline def launchMods(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("launchMods")().asInstanceOf[Unit]
+    
     inline def listTinyOwnedUpgrades(arr: js.Array[typings.cookieclicker.Game.Upgrade]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("listTinyOwnedUpgrades")(arr.asInstanceOf[js.Any]).asInstanceOf[String]
     
     inline def loadLumps(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLumps")().asInstanceOf[Unit]
-    inline def loadLumps(time: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLumps")(time.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def loadLumps(time: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLumps")(time.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def localStorageGet(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("localStorageGet")(key.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    inline def localStorageSet(key: String, str: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("localStorageSet")(key.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @JSGlobal("Game.loadedFromVersion")
+    @js.native
+    def loadedFromVersion: Double = js.native
+    inline def loadedFromVersion_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadedFromVersion")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.loopT")
     @js.native
@@ -2431,7 +2117,7 @@ object global {
     
     inline def lumps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lumps")(x.asInstanceOf[js.Any])
     
-    inline def magicCpS(what: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("magicCpS")(what.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def magicCpS(what: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("magicCpS")(what.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     inline def makeSeed(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSeed")().asInstanceOf[String]
     
@@ -2467,13 +2153,66 @@ object global {
     
     @JSGlobal("Game.modHookNames")
     @js.native
-    def modHookNames: js.Array[String] = js.native
-    inline def modHookNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modHookNames")(x.asInstanceOf[js.Any])
+    def modHookNames: js.Array[GameHooks] = js.native
+    inline def modHookNames_=(x: js.Array[GameHooks]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modHookNames")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("Game.modHooks")
-    @js.native
-    def modHooks: Record[String, js.Array[js.Function0[js.Any]]] = js.native
-    inline def modHooks_=(x: Record[String, js.Array[js.Function0[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modHooks")(x.asInstanceOf[js.Any])
+    /* Inlined std.Record<cookieclicker.Game.GameHooks, std.Array<(): unknown>> */
+    object modHooks {
+      
+      @JSGlobal("Game.modHooks")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSGlobal("Game.modHooks.check")
+      @js.native
+      def check: js.Array[js.Function0[Any]] = js.native
+      inline def check_=(x: js.Array[js.Function0[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("check")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("Game.modHooks.click")
+      @js.native
+      def click: js.Array[js.Function0[Any]] = js.native
+      inline def click_=(x: js.Array[js.Function0[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("click")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("Game.modHooks.cookiesPerClick")
+      @js.native
+      def cookiesPerClick: js.Array[js.Function0[Any]] = js.native
+      inline def cookiesPerClick_=(x: js.Array[js.Function0[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookiesPerClick")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("Game.modHooks.cps")
+      @js.native
+      def cps: js.Array[js.Function0[Any]] = js.native
+      inline def cps_=(x: js.Array[js.Function0[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cps")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("Game.modHooks.create")
+      @js.native
+      def create: js.Array[js.Function0[Any]] = js.native
+      inline def create_=(x: js.Array[js.Function0[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("Game.modHooks.draw")
+      @js.native
+      def draw: js.Array[js.Function0[Any]] = js.native
+      inline def draw_=(x: js.Array[js.Function0[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("draw")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("Game.modHooks.logic")
+      @js.native
+      def logic: js.Array[js.Function0[Any]] = js.native
+      inline def logic_=(x: js.Array[js.Function0[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logic")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("Game.modHooks.reincarnate")
+      @js.native
+      def reincarnate: js.Array[js.Function0[Any]] = js.native
+      inline def reincarnate_=(x: js.Array[js.Function0[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reincarnate")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("Game.modHooks.reset")
+      @js.native
+      def reset: js.Array[js.Function0[Any]] = js.native
+      inline def reset_=(x: js.Array[js.Function0[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reset")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("Game.modHooks.ticker")
+      @js.native
+      def ticker: js.Array[js.Function0[Any]] = js.native
+      inline def ticker_=(x: js.Array[js.Function0[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ticker")(x.asInstanceOf[js.Any])
+    }
     
     @JSGlobal("Game.modSaveData")
     @js.native
@@ -2481,6 +2220,11 @@ object global {
     inline def modSaveData_=(x: Record[String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modSaveData")(x.asInstanceOf[js.Any])
     
     inline def modifyBuildingPrice(building: String, price: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("modifyBuildingPrice")(building.asInstanceOf[js.Any], price.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @JSGlobal("Game.mods")
+    @js.native
+    def mods: Record[String, Mod] = js.native
+    inline def mods_=(x: Record[String, Mod]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mods")(x.asInstanceOf[js.Any])
     
     inline def mouseCps(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseCps")().asInstanceOf[Double]
     
@@ -2568,7 +2312,7 @@ object global {
       z: Double,
       pic: String,
       text: String
-    ): Particle | js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("particleAdd")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], xd.asInstanceOf[js.Any], yd.asInstanceOf[js.Any], size.asInstanceOf[js.Any], dur.asInstanceOf[js.Any], z.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Particle | js.Object]
+    ): Particle = (^.asInstanceOf[js.Dynamic].applyDynamic("particleAdd")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], xd.asInstanceOf[js.Any], yd.asInstanceOf[js.Any], size.asInstanceOf[js.Any], dur.asInstanceOf[js.Any], z.asInstanceOf[js.Any], pic.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Particle]
     
     @JSGlobal("Game.particles")
     @js.native
@@ -2586,6 +2330,8 @@ object global {
     inline def permanentUpgrades_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("permanentUpgrades")(x.asInstanceOf[js.Any])
     
     inline def playCookieClickSound(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playCookieClickSound")().asInstanceOf[Unit]
+    
+    inline def playGoldenCookieChime(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playGoldenCookieChime")().asInstanceOf[Unit]
     
     inline def playWrinklerSquishSound(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playWrinklerSquishSound")().asInstanceOf[Unit]
     
@@ -2626,8 +2372,8 @@ object global {
     
     @JSGlobal("Game.promptAnchorL")
     @js.native
-    def promptAnchorL: js.Object = js.native
-    inline def promptAnchorL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptAnchorL")(x.asInstanceOf[js.Any])
+    def promptAnchorL: HTMLDivElement = js.native
+    inline def promptAnchorL_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptAnchorL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.promptConfirm")
     @js.native
@@ -2636,13 +2382,23 @@ object global {
     
     @JSGlobal("Game.promptL")
     @js.native
-    def promptL: js.Object = js.native
-    inline def promptL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptL")(x.asInstanceOf[js.Any])
+    def promptL: HTMLDivElement = js.native
+    inline def promptL_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.promptOn")
     @js.native
     def promptOn: Double = js.native
     inline def promptOn_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptOn")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("Game.promptOptionFocus")
+    @js.native
+    def promptOptionFocus: Double = js.native
+    inline def promptOptionFocus_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptOptionFocus")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("Game.promptOptionsN")
+    @js.native
+    def promptOptionsN: Double = js.native
+    inline def promptOptionsN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptOptionsN")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.promptUpdateFunc")
     @js.native
@@ -2651,8 +2407,8 @@ object global {
     
     @JSGlobal("Game.promptWrapL")
     @js.native
-    def promptWrapL: js.Object = js.native
-    inline def promptWrapL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptWrapL")(x.asInstanceOf[js.Any])
+    def promptWrapL: HTMLDivElement = js.native
+    inline def promptWrapL_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("promptWrapL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.rareEggDrops")
     @js.native
@@ -2671,14 +2427,15 @@ object global {
     
     inline def refillLump(n: Double, func: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("refillLump")(n.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def registerHook(hook: String, func: js.Array[js.Function0[Unit]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def registerHook(hook: String, func: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerHook(
+      hook: (Exclude[GameHooks, cps | cookiesPerClick | reset | ticker]) | cookiesPerClick | cps,
+      func: js.Array[js.Function0[Unit] | (js.Function1[/* num */ Double, Double])]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerHook(hook: cps | cookiesPerClick, func: js.Function1[/* num */ Double, Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerHook(hook: Exclude[GameHooks, cps | cookiesPerClick | reset | ticker], func: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def registerHook_cookiesPerClick(hook: cookiesPerClick, func: js.Array[js.Function0[Double]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def registerHook_cookiesPerClick(hook: cookiesPerClick, func: js.Function0[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def registerHook_cps(hook: cps, func: js.Array[js.Function0[Double]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def registerHook_cps(hook: cps, func: js.Function0[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerHook_reset(hook: reset, func: js.Array[js.Function1[/* hard */ Boolean, Unit]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerHook_reset(hook: reset, func: js.Function1[/* hard */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def registerHook_ticker(hook: ticker, func: js.Array[js.Function0[js.Array[String]]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def registerHook_ticker(hook: ticker, func: js.Function0[js.Array[String]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHook")(hook.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -2707,6 +2464,8 @@ object global {
     def resets: Double = js.native
     inline def resets_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resets")(x.asInstanceOf[js.Any])
     
+    inline def resize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resize")().asInstanceOf[Unit]
+    
     inline def salvageSave(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("salvageSave")().asInstanceOf[Unit]
     
     @JSGlobal("Game.santaDrops")
@@ -2726,14 +2485,12 @@ object global {
     
     inline def saySeasonSwitchUses(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("saySeasonSwitchUses")().asInstanceOf[String]
     
-    inline def sayTime_1(time: Double, detail: `-1`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def sayTime_1(time: Double, detail: `1`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sayTime(time: Double, detail: `-1` | `1` | `2` | `3` | `4`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def sayTime_2(time: Double, detail: `2`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def sayTime_3(time: Double, detail: `3`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def sayTime_4(time: Double, detail: `4`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sayTime")(time.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[String]
+    @JSGlobal("Game.scale")
+    @js.native
+    def scale: Double = js.native
+    inline def scale_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scale")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.scriptBindings")
     @js.native
@@ -2787,6 +2544,60 @@ object global {
     
     inline def setVolume(what: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVolume")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    inline def setVolumeMusic(what: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVolumeMusic")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def setWubMusic(what: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWubMusic")(what.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @JSGlobal("Game.shimmer")
+    @js.native
+    open class shimmer[N /* <: String */, C /* <: js.Object */] protected ()
+      extends StObject
+         with typings.cookieclicker.Game.shimmer[N, C] {
+      /**
+        * Creates a new shimmer
+        * @param type The type of the shimmer, must be a key of `shimmerTypes`
+        * @param obj The configuration object
+        * @param noCount True if to not count the shimmer in `shimmersN`
+        */
+      def this(`type`: N) = this()
+      def this(`type`: N, obj: C) = this()
+      def this(`type`: N, obj: C, noCount: Boolean) = this()
+      def this(`type`: N, obj: Unit, noCount: Boolean) = this()
+      
+      /* CompleteClass */
+      override def die(): Unit = js.native
+      
+      /* CompleteClass */
+      var forceObj: PseudoNull | C = js.native
+      
+      /* CompleteClass */
+      var id: Double = js.native
+      
+      /* CompleteClass */
+      override def init(): Unit = js.native
+      
+      /* CompleteClass */
+      var l: HTMLElement = js.native
+      
+      /* CompleteClass */
+      var noCount: Boolean = js.native
+      
+      /* CompleteClass */
+      override def pop(event: MouseEvent): Unit = js.native
+      
+      /* CompleteClass */
+      var `type`: N = js.native
+      
+      /* CompleteClass */
+      override def update(): Unit = js.native
+      
+      /* CompleteClass */
+      var x: Double = js.native
+      
+      /* CompleteClass */
+      var y: Double = js.native
+    }
+    
     @JSGlobal("Game.shimmerTypes")
     @js.native
     def shimmerTypes: Record[String, ShimmerType] = js.native
@@ -2795,7 +2606,7 @@ object global {
     @JSGlobal("Game.shimmers")
     @js.native
     def shimmers: js.Array[
-        typings.cookieclicker.Game.Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]
+        typings.cookieclicker.Game.shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]
       ] = js.native
     
     @JSGlobal("Game.shimmersL")
@@ -2810,15 +2621,22 @@ object global {
     
     inline def shimmers_=(
       x: js.Array[
-          typings.cookieclicker.Game.Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]
+          typings.cookieclicker.Game.shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shimmers")(x.asInstanceOf[js.Any])
     
     inline def showBackupWarning(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showBackupWarning")().asInstanceOf[Unit]
     
-    inline def sortSprites(a: js.Any, b: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sortSprites")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def showLangSelection(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showLangSelection")().asInstanceOf[Unit]
     
-    inline def sortSpritesById(a: js.Any, b: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sortSpritesById")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @JSGlobal("Game.showedScriptLoadError")
+    @js.native
+    def showedScriptLoadError: Boolean = js.native
+    inline def showedScriptLoadError_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showedScriptLoadError")(x.asInstanceOf[js.Any])
+    
+    inline def sortSprites(a: Any, b: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sortSprites")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    inline def sortSpritesById(a: Any, b: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sortSpritesById")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     @JSGlobal("Game.sortedMods")
     @js.native
@@ -2827,7 +2645,7 @@ object global {
     
     @JSGlobal("Game.sparkles")
     @js.native
-    def sparkles: js.Object = js.native
+    def sparkles: HTMLDivElement = js.native
     
     @JSGlobal("Game.sparklesFrames")
     @js.native
@@ -2839,7 +2657,7 @@ object global {
     def sparklesT: Double = js.native
     inline def sparklesT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sparklesT")(x.asInstanceOf[js.Any])
     
-    inline def sparkles_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sparkles")(x.asInstanceOf[js.Any])
+    inline def sparkles_=(x: HTMLDivElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sparkles")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.specialTab")
     @js.native
@@ -2857,7 +2675,8 @@ object global {
     def specialTabs: js.Array[String] = js.native
     inline def specialTabs_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specialTabs")(x.asInstanceOf[js.Any])
     
-    inline def spendLump(n: Double, str: String, func: js.Function0[Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("spendLump")(n.asInstanceOf[js.Any], str.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+    inline def spendLump(n: Double, str: String, func: js.Function0[Unit]): js.Function0[Unit | `false`] = (^.asInstanceOf[js.Dynamic].applyDynamic("spendLump")(n.asInstanceOf[js.Any], str.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit | `false`]]
+    inline def spendLump(n: Double, str: String, func: js.Function0[Unit], free: Boolean): js.Function0[Unit | `false`] = (^.asInstanceOf[js.Dynamic].applyDynamic("spendLump")(n.asInstanceOf[js.Any], str.asInstanceOf[js.Any], func.asInstanceOf[js.Any], free.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit | `false`]]
     
     @JSGlobal("Game.startDate")
     @js.native
@@ -2897,18 +2716,18 @@ object global {
     
     @JSGlobal("Game.tickerBelowL")
     @js.native
-    def tickerBelowL: js.Object = js.native
-    inline def tickerBelowL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tickerBelowL")(x.asInstanceOf[js.Any])
-    
-    @JSGlobal("Game.tickerCompactL")
-    @js.native
-    def tickerCompactL: js.Object = js.native
-    inline def tickerCompactL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tickerCompactL")(x.asInstanceOf[js.Any])
+    def tickerBelowL: HTMLElement = js.native
+    inline def tickerBelowL_=(x: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tickerBelowL")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.tickerL")
     @js.native
-    def tickerL: js.Object = js.native
-    inline def tickerL_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tickerL")(x.asInstanceOf[js.Any])
+    def tickerL: HTMLElement = js.native
+    inline def tickerL_=(x: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tickerL")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("Game.tickerTooNarrow")
+    @js.native
+    def tickerTooNarrow: Double = js.native
+    inline def tickerTooNarrow_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tickerTooNarrow")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.time")
     @js.native
@@ -2921,6 +2740,16 @@ object global {
     inline def timedout_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timedout")(x.asInstanceOf[js.Any])
     
     inline def tinyCookie(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tinyCookie")().asInstanceOf[String]
+    
+    @JSGlobal("Game.toQuit")
+    @js.native
+    def toQuit: Boolean = js.native
+    inline def toQuit_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toQuit")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("Game.toReload")
+    @js.native
+    def toReload: Boolean = js.native
+    inline def toReload_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toReload")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.toSave")
     @js.native
@@ -2960,8 +2789,8 @@ object global {
     
     @JSGlobal("Game.useLocalStorage")
     @js.native
-    def useLocalStorage: Double = js.native
-    inline def useLocalStorage_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useLocalStorage")(x.asInstanceOf[js.Any])
+    def useLocalStorage: PseudoBoolean = js.native
+    inline def useLocalStorage_=(x: PseudoBoolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useLocalStorage")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.useSwap")
     @js.native
@@ -2983,9 +2812,20 @@ object global {
     def version: Double = js.native
     inline def version_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
     
+    @JSGlobal("Game.visible")
+    @js.native
+    def visible: Boolean = js.native
+    inline def visible_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("visible")(x.asInstanceOf[js.Any])
+    
     @JSGlobal("Game.volume")
     @js.native
     def volume: Double = js.native
+    
+    @JSGlobal("Game.volumeMusic")
+    @js.native
+    def volumeMusic: Double = js.native
+    inline def volumeMusic_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("volumeMusic")(x.asInstanceOf[js.Any])
+    
     inline def volume_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("volume")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.windowH")
@@ -2997,6 +2837,11 @@ object global {
     @js.native
     def windowW: Double = js.native
     inline def windowW_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("windowW")(x.asInstanceOf[js.Any])
+    
+    @JSGlobal("Game.wrapper")
+    @js.native
+    def wrapper: HTMLElement = js.native
+    inline def wrapper_=(x: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapper")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Game.wrinklerHP")
     @js.native
@@ -3020,9 +2865,31 @@ object global {
     inline def wrinklers_=(x: js.Array[Wrinkler]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrinklers")(x.asInstanceOf[js.Any])
   }
   
+  /**
+    * Same as Beautify, but returns in a localization-friendly format
+    */
+  inline def LBeautify(`val`: Double): LocalizedBeautify = js.Dynamic.global.applyDynamic("LBeautify")(`val`.asInstanceOf[js.Any]).asInstanceOf[LocalizedBeautify]
+  inline def LBeautify(`val`: Double, floats: Double): LocalizedBeautify = (js.Dynamic.global.applyDynamic("LBeautify")(`val`.asInstanceOf[js.Any], floats.asInstanceOf[js.Any])).asInstanceOf[LocalizedBeautify]
+  
+  @JSGlobal("Langs")
+  @js.native
+  def Langs: Record[String, Language] = js.native
+  inline def Langs_=(x: Record[String, Language]): Unit = js.Dynamic.global.updateDynamic("Langs")(x.asInstanceOf[js.Any])
+  
+  /* was `typeof LoadScript` */
+  inline def LoadLang(url: String): Unit = js.Dynamic.global.applyDynamic("LoadLang")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def LoadLang(url: String, callback: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("LoadLang")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def LoadLang(url: String, callback: js.Function0[Unit], error: OnErrorEventHandler): Unit = (js.Dynamic.global.applyDynamic("LoadLang")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def LoadLang(url: String, callback: Unit, error: OnErrorEventHandler): Unit = (js.Dynamic.global.applyDynamic("LoadLang")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def LoadScript(url: String): Unit = js.Dynamic.global.applyDynamic("LoadScript")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def LoadScript(url: String, callback: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("LoadScript")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def LoadScript(url: String, callback: js.Function0[Unit], error: OnErrorEventHandler): Unit = (js.Dynamic.global.applyDynamic("LoadScript")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def LoadScript(url: String, callback: Unit, error: OnErrorEventHandler): Unit = (js.Dynamic.global.applyDynamic("LoadScript")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSGlobal("Loader")
   @js.native
-  class Loader ()
+  open class Loader ()
     extends StObject
        with typings.cookieclicker.Loader {
     
@@ -3111,10 +2978,203 @@ object global {
     override def onLoadReplace(): Unit = js.native
   }
   
+  /**
+    * Automatically calculates localized achievement and upgrade names and descriptions
+    */
+  inline def LocalizeUpgradesAndAchievs(): Unit = js.Dynamic.global.applyDynamic("LocalizeUpgradesAndAchievs")().asInstanceOf[Unit]
+  
+  /**
+    * Modifies an existing language
+    * @param id The language identifier, or * to replace any language
+    */
+  inline def ModLanguage(id: String, json: LanguageData): Unit = (js.Dynamic.global.applyDynamic("ModLanguage")(id.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSGlobal("Music")
+  @js.native
+  def Music: PseudoNull | TypeofMusic = js.native
+  inline def Music_=(x: PseudoNull | TypeofMusic): Unit = js.Dynamic.global.updateDynamic("Music")(x.asInstanceOf[js.Any])
+  
   inline def PlaySound(url: String): Unit = js.Dynamic.global.applyDynamic("PlaySound")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def PlaySound(url: String, volume: Double): Unit = (js.Dynamic.global.applyDynamic("PlaySound")(url.asInstanceOf[js.Any], volume.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PlaySound(url: String, volume: Double, pitch: Double): Unit = (js.Dynamic.global.applyDynamic("PlaySound")(url.asInstanceOf[js.Any], volume.asInstanceOf[js.Any], pitch.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PlaySound(url: String, volume: Unit, pitch: Double): Unit = (js.Dynamic.global.applyDynamic("PlaySound")(url.asInstanceOf[js.Any], volume.asInstanceOf[js.Any], pitch.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def SimpleBeautify(`val`: Double): String = js.Dynamic.global.applyDynamic("SimpleBeautify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSGlobal("Steam")
+  @js.native
+  def Steam: PseudoNull | TypeofSteam = js.native
+  inline def Steam_=(x: PseudoNull | TypeofSteam): Unit = js.Dynamic.global.updateDynamic("Steam")(x.asInstanceOf[js.Any])
+  
+  // You have to do this to have an optional namespace, ugh
+  object ________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST {
+    
+    object Music {
+      
+      @JSGlobal("________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Music")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      inline def addTrack(name: String, author: String, url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTrack")(name.asInstanceOf[js.Any], author.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      @JSGlobal("________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Music.context")
+      @js.native
+      def context: AudioContext = js.native
+      inline def context_=(x: AudioContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("context")(x.asInstanceOf[js.Any])
+      
+      inline def cue(cue: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cue")(cue.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def cue(cue: String, arg: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cue")(cue.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      @JSGlobal("________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Music.cues")
+      @js.native
+      def cues: Record[String, js.Function1[/* arg */ Any, Unit]] = js.native
+      inline def cues_=(x: Record[String, js.Function1[/* arg */ Any, Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cues")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Music.filter")
+      @js.native
+      def filter: BiquadFilterNode = js.native
+      inline def filter_=(x: BiquadFilterNode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("filter")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Music.gain")
+      @js.native
+      def gain: GainNode = js.native
+      inline def gain_=(x: GainNode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gain")(x.asInstanceOf[js.Any])
+      
+      inline def loop(loop: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loop")(loop.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      inline def loopTrack(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loopTrack")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      @JSGlobal("________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Music.out")
+      @js.native
+      def out: BiquadFilterNode = js.native
+      inline def out_=(x: BiquadFilterNode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("out")(x.asInstanceOf[js.Any])
+      
+      inline def pause(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")().asInstanceOf[Unit]
+      
+      inline def playTrack(name: String, callback: js.Function1[/* track */ Track, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("playTrack")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      @JSGlobal("________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Music.playing")
+      @js.native
+      def playing: Boolean = js.native
+      inline def playing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("playing")(x.asInstanceOf[js.Any])
+      
+      inline def setFilter(`val`: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFilter")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def setFilter(`val`: Double, secs: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setFilter")(`val`.asInstanceOf[js.Any], secs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      inline def setTime(time: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTime")(time.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      inline def setVolume(`val`: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVolume")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def setVolume(`val`: Double, secs: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVolume")(`val`.asInstanceOf[js.Any], secs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      @JSGlobal("________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Music.tracks")
+      @js.native
+      def tracks: Record[String, Track] = js.native
+      inline def tracks_=(x: Record[String, Track]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tracks")(x.asInstanceOf[js.Any])
+      
+      inline def unpause(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unpause")().asInstanceOf[Unit]
+    }
+    
+    object Steam {
+      
+      @JSGlobal("________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSGlobal("________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam.allowSteamAchievs")
+      @js.native
+      def allowSteamAchievs: Boolean = js.native
+      inline def allowSteamAchievs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowSteamAchievs")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam.cloud")
+      @js.native
+      def cloud: Boolean = js.native
+      
+      @JSGlobal("________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam.cloudQuota")
+      @js.native
+      def cloudQuota: String = js.native
+      inline def cloudQuota_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cloudQuota")(x.asInstanceOf[js.Any])
+      
+      inline def cloud_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cloud")(x.asInstanceOf[js.Any])
+      
+      inline def getMostRecentSave(callback: js.Function1[/* data */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getMostRecentSave")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      inline def gotAchiev(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("gotAchiev")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      inline def grabData(cb: js.Function1[/* data */ PlayersN, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("grabData")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      inline def hardReset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hardReset")().asInstanceOf[Unit]
+      
+      inline def hardSave(save: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hardSave")(save.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      inline def justLoadedSave(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("justLoadedSave")().asInstanceOf[Unit]
+      
+      inline def load(callback: SendCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      inline def loadMods(callback: js.Function0[Unit]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadMods")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+      
+      inline def logic(T: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logic")(T.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      @JSGlobal("________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam.modList")
+      @js.native
+      def modList: js.Array[typings.cookieclicker.________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam.Mod] = js.native
+      inline def modList_=(x: js.Array[typings.cookieclicker.________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam.Mod]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modList")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam.mods")
+      @js.native
+      def mods: Record[
+            String, 
+            typings.cookieclicker.________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam.Mod
+          ] = js.native
+      
+      inline def modsPopup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("modsPopup")().asInstanceOf[Unit]
+      
+      inline def mods_=(
+        x: Record[
+              String, 
+              typings.cookieclicker.________COOKIECLICKER_TYPES_HACK_DOESNT_EXIST.Steam.Mod
+            ]
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mods")(x.asInstanceOf[js.Any])
+      
+      inline def onImportSave(out: Boolean, save: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onImportSave")(out.asInstanceOf[js.Any], save.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      inline def onResize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onResize")().asInstanceOf[Unit]
+      
+      inline def openLink(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openLink")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      inline def ping(mes: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ping")(mes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      inline def purgeCloud(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeCloud")().asInstanceOf[Unit]
+      
+      inline def quit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("quit")().asInstanceOf[Unit]
+      
+      inline def registerMod(mod: Mod): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerMod")(mod.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      inline def reload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[Unit]
+      
+      inline def resetAchievs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetAchievs")().asInstanceOf[Unit]
+      
+      inline def restoreBackup(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("restoreBackup")().asInstanceOf[js.Promise[Unit]]
+      
+      inline def save(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      inline def saveMods(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveMods")().asInstanceOf[Unit]
+      
+      inline def setFullscreen(`val`: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setFullscreen")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      inline def workshopPopup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("workshopPopup")().asInstanceOf[Unit]
+      
+      inline def writeCloudUI(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("writeCloudUI")().asInstanceOf[String]
+      
+      inline def writeModUI(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("writeModUI")().asInstanceOf[String]
+    }
+  }
+  
+  inline def b64ToUtf8(str: String): String = js.Dynamic.global.applyDynamic("b64_to_utf8")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * Converts a string to Sentence case
+    */
+  inline def cap(str: String): String = js.Dynamic.global.applyDynamic("cap")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Returns a random member of an array, has a very slight chance to return `undefined` (When the seeded Math.random() is 1)
@@ -3122,17 +3182,155 @@ object global {
     */
   inline def choose[T](array: js.Array[T]): T = js.Dynamic.global.applyDynamic("choose")(array.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def l(name: String): HTMLElement = js.Dynamic.global.applyDynamic("l")(name.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def escapeRegExp(str: String): String = js.Dynamic.global.applyDynamic("escapeRegExp")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * Get the localized achievement name based on the given English name
+    */
+  inline def getAchievementName(name: String): String = js.Dynamic.global.applyDynamic("getAchievementName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * Get the localized upgrade name based on the given English name
+    */
+  inline def getUpgradeName(name: String): String = js.Dynamic.global.applyDynamic("getUpgradeName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def l(name: String): HTMLElement | Null = js.Dynamic.global.applyDynamic("l")(name.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
+  
+  /**
+    * Tries to resolve the string as a localized one, using the currently loaded language
+    * @param id The base string
+    * @param params The parameters to insert
+    * @param baseline The English text to default to
+    */
+  inline def loc(id: String): String = js.Dynamic.global.applyDynamic("loc")(id.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def loc(id: String, params: js.Array[LocParameter]): String = (js.Dynamic.global.applyDynamic("loc")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def loc(id: String, params: js.Array[LocParameter], baseline: String): String = (js.Dynamic.global.applyDynamic("loc")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], baseline.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def loc(id: String, params: Unit, baseline: String): String = (js.Dynamic.global.applyDynamic("loc")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], baseline.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def loc(id: String, params: LocParameter): String = (js.Dynamic.global.applyDynamic("loc")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def loc(id: String, params: LocParameter, baseline: String): String = (js.Dynamic.global.applyDynamic("loc")(id.asInstanceOf[js.Any], params.asInstanceOf[js.Any], baseline.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  /**
+    * If true, all translated text will be wrapped in a blinking span
+    */
+  @JSGlobal("locBlink")
+  @js.native
+  def locBlink: Boolean = js.native
+  inline def locBlink_=(x: Boolean): Unit = js.Dynamic.global.updateDynamic("locBlink")(x.asInstanceOf[js.Any])
+  
+  /**
+    * The identifier of the current language
+    */
+  @JSGlobal("locId")
+  @js.native
+  def locId: String = js.native
+  inline def locId_=(x: String): Unit = js.Dynamic.global.updateDynamic("locId")(x.asInstanceOf[js.Any])
+  
+  /**
+    * The English name of the current language
+    */
+  @JSGlobal("locName")
+  @js.native
+  def locName: String = js.native
+  inline def locName_=(x: String): Unit = js.Dynamic.global.updateDynamic("locName")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("locPatches")
+  @js.native
+  def locPatches: js.Array[LocalizePatch] = js.native
+  inline def locPatches_=(x: js.Array[LocalizePatch]): Unit = js.Dynamic.global.updateDynamic("locPatches")(x.asInstanceOf[js.Any])
+  
+  /**
+    * The plural code string
+    */
+  @JSGlobal("locPlur")
+  @js.native
+  def locPlur: String = js.native
+  
+  /**
+    * The English plural code string
+    */
+  @JSGlobal("locPlurFallback")
+  @js.native
+  def locPlurFallback: String = js.native
+  inline def locPlurFallback_=(x: String): Unit = js.Dynamic.global.updateDynamic("locPlurFallback")(x.asInstanceOf[js.Any])
+  
+  inline def locPlur_=(x: String): Unit = js.Dynamic.global.updateDynamic("locPlur")(x.asInstanceOf[js.Any])
+  
+  /**
+    * The strings looked up by `loc`
+    */
+  @JSGlobal("locStrings")
+  @js.native
+  def locStrings: Record[String, js.Array[String] | String] = js.native
+  
+  /**
+    * The localization strings based by the tag: "[abc]def" has the tag "abc"
+    */
+  @JSGlobal("locStringsByPart")
+  @js.native
+  def locStringsByPart: Record[String, String] = js.native
+  inline def locStringsByPart_=(x: Record[String, String]): Unit = js.Dynamic.global.updateDynamic("locStringsByPart")(x.asInstanceOf[js.Any])
+  
+  /**
+    * English strings, incase `logStrings` doens't have a string
+    */
+  @JSGlobal("locStringsFallback")
+  @js.native
+  def locStringsFallback: Record[String, js.Array[String] | String] = js.native
+  inline def locStringsFallback_=(x: Record[String, js.Array[String] | String]): Unit = js.Dynamic.global.updateDynamic("locStringsFallback")(x.asInstanceOf[js.Any])
+  
+  inline def locStrings_=(x: Record[String, js.Array[String] | String]): Unit = js.Dynamic.global.updateDynamic("locStrings")(x.asInstanceOf[js.Any])
+  
+  inline def localStorageGet(key: String): PseudoNull | Null | String = js.Dynamic.global.applyDynamic("localStorageGet")(key.asInstanceOf[js.Any]).asInstanceOf[PseudoNull | Null | String]
+  
+  inline def localStorageSet(key: String, str: String): PseudoNull | Unit = (js.Dynamic.global.applyDynamic("localStorageSet")(key.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[PseudoNull | Unit]
+  
+  /**
+    * Unused
+    */
+  @JSGlobal("localizationNotFound")
+  @js.native
+  def localizationNotFound: js.Array[scala.Nothing] = js.native
+  inline def localizationNotFound_=(x: js.Array[scala.Nothing]): Unit = js.Dynamic.global.updateDynamic("localizationNotFound")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Parses the localized string and replaces the templating
+    */
+  inline def parseLoc(str: String): String = js.Dynamic.global.applyDynamic("parseLoc")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def parseLoc(str: String, params: js.Array[LocParameter]): String = (js.Dynamic.global.applyDynamic("parseLoc")(str.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parseLoc(str: String, params: LocParameter): String = (js.Dynamic.global.applyDynamic("parseLoc")(str.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Floors or ceils randomly, biased by the decimal value
     */
   inline def randomFloor(x: Double): Double = js.Dynamic.global.applyDynamic("randomFloor")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  /* was `typeof Audio` */
+  @JSGlobal("realAudio")
+  @js.native
+  /* standard dom */
+  open class realAudio () extends Audio {
+    def this(src: String) = this()
+  }
+  
+  inline def replaceAll(find: String, replace: String, str: String): String = (js.Dynamic.global.applyDynamic("replaceAll")(find.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  /**
+    * Converts a number into roman numerals
+    */
+  inline def romanize(num: Double): String = js.Dynamic.global.applyDynamic("romanize")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   inline def shuffle[T](array: js.Array[T]): js.Array[T] = js.Dynamic.global.applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  
+  inline def tinyIcon(icon: Icon): String = js.Dynamic.global.applyDynamic("tinyIcon")(icon.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def tinyIcon(icon: Icon, css: String): String = (js.Dynamic.global.applyDynamic("tinyIcon")(icon.asInstanceOf[js.Any], css.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * An extended toFixed, which converts any number to an e-less string
     */
   inline def toFixed(x: Double): String = js.Dynamic.global.applyDynamic("toFixed")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def utf8ToB64(str: String): String = js.Dynamic.global.applyDynamic("utf8_to_b64")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def writeIcon(icon: Icon): String = js.Dynamic.global.applyDynamic("writeIcon")(icon.asInstanceOf[js.Any]).asInstanceOf[String]
 }

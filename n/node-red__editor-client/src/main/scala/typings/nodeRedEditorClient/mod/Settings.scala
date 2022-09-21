@@ -17,20 +17,20 @@ trait Settings extends StObject {
   
   def remove(key: String): Unit
   
-  def set(key: String, value: js.Any): Unit
+  def set(key: String, value: Any): Unit
   
   def theme[T](property: String, defaultValue: T): T
 }
 object Settings {
   
   inline def apply(
-    get: (String, js.Any) => js.Any,
+    get: (String, Any) => Any,
     init: (ApiRootUrl, js.Function0[Unit]) => Unit,
     load: js.Function0[Unit] => Unit,
     loadUserSettings: js.Function0[Unit] => Unit,
     remove: String => Unit,
-    set: (String, js.Any) => Unit,
-    theme: (String, js.Any) => js.Any
+    set: (String, Any) => Unit,
+    theme: (String, Any) => Any
   ): Settings = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), init = js.Any.fromFunction2(init), load = js.Any.fromFunction1(load), loadUserSettings = js.Any.fromFunction1(loadUserSettings), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set), theme = js.Any.fromFunction2(theme))
     __obj.asInstanceOf[Settings]
@@ -38,7 +38,7 @@ object Settings {
   
   extension [Self <: Settings](x: Self) {
     
-    inline def setGet(value: (String, js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    inline def setGet(value: (String, Any) => Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
     inline def setInit(value: (ApiRootUrl, js.Function0[Unit]) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
     
@@ -48,8 +48,8 @@ object Settings {
     
     inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    inline def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (String, Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    inline def setTheme(value: (String, js.Any) => js.Any): Self = StObject.set(x, "theme", js.Any.fromFunction2(value))
+    inline def setTheme(value: (String, Any) => Any): Self = StObject.set(x, "theme", js.Any.fromFunction2(value))
   }
 }

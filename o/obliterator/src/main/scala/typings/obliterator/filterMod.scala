@@ -1,14 +1,18 @@
 package typings.obliterator
 
-import typings.std.Iterator
+import typings.obliterator.typesMod.IntoInterator
+import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("obliterator/filter", JSImport.Namespace)
-@js.native
-object filterMod extends js.Object {
-  def default[T](predicate: PredicateFunction[T], iterator: Iterator[T, _, js.UndefOr[scala.Nothing]]): typings.obliterator.iteratorMod.default[T] = js.native
+object filterMod {
+  
+  @JSImport("obliterator/filter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[T](target: IntoInterator[T], predicate: PredicateFunction[T]): IterableIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[T]]
+  
   type PredicateFunction[T] = js.Function1[/* item */ T, Boolean]
 }
-

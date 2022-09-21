@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/core" : "0.16.1"
+      "@jimp/core" : "0.16.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/core" : "0.16.1"
+      "@jimp/core" : "0.16.2"
     }
   ],
   "compile-devDependencies" : [

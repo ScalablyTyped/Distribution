@@ -71,7 +71,7 @@ object XWordCursor {
     isCollapsed: () => Boolean,
     isEndOfWord: () => Boolean,
     isStartOfWord: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setString: String => Unit
   ): XWordCursor = {

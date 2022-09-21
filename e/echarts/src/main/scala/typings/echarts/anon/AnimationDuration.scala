@@ -248,7 +248,7 @@ trait AnimationDuration extends StObject {
     * [0, 0]
     * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.symbolOffset
     */
-  var symbolOffset: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Rotate degree of symbol.
@@ -286,7 +286,7 @@ trait AnimationDuration extends StObject {
     * 50
     * @see https://echarts.apache.org/en/option.html#series-scatter.markPoint.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[js.Any] | js.Function | Double] = js.undefined
+  var symbolSize: js.UndefOr[js.Array[Any] | js.Function | Double] = js.undefined
 }
 object AnimationDuration {
   
@@ -351,21 +351,21 @@ object AnimationDuration {
     
     inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
     
-    inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+    inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
     
     inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
     
-    inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+    inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
     
     inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
     
     inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
     
-    inline def setSymbolSize(value: js.Array[js.Any] | js.Function | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+    inline def setSymbolSize(value: js.Array[Any] | js.Function | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
     
     inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
     
-    inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+    inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
     
     inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }

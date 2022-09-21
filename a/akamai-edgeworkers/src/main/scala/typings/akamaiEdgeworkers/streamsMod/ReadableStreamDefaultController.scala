@@ -14,5 +14,5 @@ trait ReadableStreamDefaultController[R] extends StObject {
   def enqueue(chunk: R): Unit = js.native
   
   def error(): Unit = js.native
-  def error(error: js.Any): Unit = js.native
+  def error(error: Any): Unit = js.native
 }

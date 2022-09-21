@@ -1,13 +1,12 @@
 package typings.braintree.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "Address")
 @js.native
-class Address () extends StObject {
+open class Address () extends StObject {
   
   var company: js.UndefOr[String] = js.native
   
@@ -19,7 +18,7 @@ class Address () extends StObject {
   
   var countryName: js.UndefOr[String] = js.native
   
-  var createdAt: Date = js.native
+  var createdAt: String = js.native
   
   var customerId: String = js.native
   
@@ -39,5 +38,5 @@ class Address () extends StObject {
   
   var streetAddress: js.UndefOr[String] = js.native
   
-  var updatedAt: Date = js.native
+  var updatedAt: String = js.native
 }

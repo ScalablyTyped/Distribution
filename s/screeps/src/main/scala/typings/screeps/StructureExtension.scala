@@ -15,7 +15,7 @@ trait StructureExtension
      with OwnedStructure[STRUCTURE_EXTENSION]
      with AnyOwnedStructure
      with AnyStoreStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * The amount of energy containing in the extension.

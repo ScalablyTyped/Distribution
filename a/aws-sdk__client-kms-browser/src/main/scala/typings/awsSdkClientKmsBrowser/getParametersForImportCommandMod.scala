@@ -16,7 +16,7 @@ object getParametersForImportCommandMod {
   
   @JSImport("@aws-sdk/client-kms-browser/commands/GetParametersForImportCommand", "GetParametersForImportCommand")
   @js.native
-  class GetParametersForImportCommand protected ()
+  open class GetParametersForImportCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object getParametersForImportCommandMod {
     override val middlewareStack: MiddlewareStack[GetParametersForImportInput, GetParametersForImportOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[GetParametersForImportInput, GetParametersForImportOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[GetParametersForImportInput, GetParametersForImportOutput] = js.native
   }
 }

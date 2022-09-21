@@ -4,7 +4,6 @@ import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.abbreviation
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.composite
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.name
 import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.offset
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,5 +52,5 @@ object timezoneDisplayFormatMod {
     inline def OFFSET_=(x: offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OFFSET")(x.asInstanceOf[js.Any])
   }
   
-  inline def formatTimezone(timezone: String, date: Date, displayFormat: TimezoneDisplayFormat): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTimezone")(timezone.asInstanceOf[js.Any], date.asInstanceOf[js.Any], displayFormat.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def formatTimezone(timezone: String, date: js.Date, displayFormat: TimezoneDisplayFormat): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTimezone")(timezone.asInstanceOf[js.Any], date.asInstanceOf[js.Any], displayFormat.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
 }

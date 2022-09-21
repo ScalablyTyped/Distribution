@@ -53,9 +53,9 @@ trait PlotVariablepieOptions extends StObject {
   var animation: js.UndefOr[Boolean | PlotVariablepieAnimationOptions | PartialAnimationOptionsOb] = js.undefined
   
   /**
-    * (Highcharts) The color of the border surrounding each slice. When `null`,
-    * the border takes the same color as the slice fill. This can be used
-    * together with a `borderWidth` to fill drawing gaps created by
+    * (Highcharts, Highmaps) The color of the border surrounding each slice.
+    * When `null`, the border takes the same color as the slice fill. This can
+    * be used together with a `borderWidth` to fill drawing gaps created by
     * antialiazing artefacts in borderless pies.
     *
     * In styled mode, the border stroke is given in the `.highcharts-point`
@@ -64,7 +64,7 @@ trait PlotVariablepieOptions extends StObject {
   var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
-    * (Highcharts) The width of the border surrounding each slice.
+    * (Highcharts, Highmaps) The width of the border surrounding each slice.
     *
     * When setting the border width to 0, there may be small gaps between the
     * slices due to SVG antialiasing artefacts. To work around this, keep the
@@ -76,12 +76,12 @@ trait PlotVariablepieOptions extends StObject {
   var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts) The center of the pie chart relative to the plot area. Can
-    * be percentages or pixel values. The default behaviour (as of 3.0) is to
-    * center the pie so that all slices and data labels are within the plot
-    * area. As a consequence, the pie may actually jump around in a chart with
-    * dynamic values, as the data labels move. In that case, the center should
-    * be explicitly set, for example to `["50%", "50%"]`.
+    * (Highcharts, Highmaps) The center of the pie chart relative to the plot
+    * area. Can be percentages or pixel values. The default behaviour (as of
+    * 3.0) is to center the pie so that all slices and data labels are within
+    * the plot area. As a consequence, the pie may actually jump around in a
+    * chart with dynamic values, as the data labels move. In that case, the
+    * center should be explicitly set, for example to `["50%", "50%"]`.
     */
   var center: js.UndefOr[js.Tuple2[Double | String | Null, Double | String | Null]] = js.undefined
   
@@ -141,8 +141,8 @@ trait PlotVariablepieOptions extends StObject {
   var colorKey: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts) A series specific or series type specific color set to use
-    * instead of the global colors.
+    * (Highcharts, Highmaps) A series specific or series type specific color
+    * set to use instead of the global colors.
     */
   var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.undefined
   
@@ -154,7 +154,7 @@ trait PlotVariablepieOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.undefined
+  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
@@ -190,6 +190,15 @@ trait PlotVariablepieOptions extends StObject {
   var crisp: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highstock) Cumulative Sum feature replaces points' values with the
+    * following formula: `sum of all previous points' values + current point's
+    * value`. Works only for points in a visible range. Adds the
+    * `cumulativeSum` field to each point object that can be accessed e.g. in
+    * the tooltip.pointFormat.
+    */
+  var cumulative: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts) You can set the cursor to "pointer" if you have click events
     * attached to the series, to signal to the user that the points and lines
     * can be clicked.
@@ -204,14 +213,19 @@ trait PlotVariablepieOptions extends StObject {
     * customized functionality. Here you can add additional data for your own
     * event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
+  
+  /**
+    * (Highcharts) Indicates data is structured as columns instead of rows.
+    */
+  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Data grouping is the concept of sampling the data values into
     * larger blocks in order to ease readability and increase performance of
-    * the JavaScript charts. Highstock by default applies data grouping when
-    * the points become closer than a certain pixel value, determined by the
-    * `groupPixelWidth` option.
+    * the JavaScript charts. Highcharts Stock by default applies data grouping
+    * when the points become closer than a certain pixel value, determined by
+    * the `groupPixelWidth` option.
     *
     * If data grouping is applied, the grouping information of grouped points
     * can be read from the Point.dataGroup. If point options other than the
@@ -254,8 +268,8 @@ trait PlotVariablepieOptions extends StObject {
   var enableMouseTracking: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) The end angle of the pie in degrees where 0 is top and 90 is
-    * right. Defaults to `startAngle` plus 360.
+    * (Highcharts, Highmaps) The end angle of the pie in degrees where 0 is top
+    * and 90 is right. Defaults to `startAngle` plus 360.
     */
   var endAngle: js.UndefOr[Double] = js.undefined
   
@@ -305,8 +319,9 @@ trait PlotVariablepieOptions extends StObject {
   var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
   
   /**
-    * (Highcharts) Equivalent to chart.ignoreHiddenSeries, this option tells
-    * whether the series shall be redrawn as if the hidden point were `null`.
+    * (Highcharts, Highmaps) Equivalent to chart.ignoreHiddenSeries, this
+    * option tells whether the series shall be redrawn as if the hidden point
+    * were `null`.
     *
     * The default value changed from `false` to `true` with Highcharts 3.0.
     */
@@ -322,10 +337,10 @@ trait PlotVariablepieOptions extends StObject {
   var includeInDataExport: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) The size of the inner diameter for the pie. A size greater
-    * than 0 renders a donut chart. Can be a percentage or pixel value.
+    * (Highcharts, Highmaps) The size of the inner diameter for the pie. A size
+    * greater than 0 renders a donut chart. Can be a percentage or pixel value.
     * Percentages are relative to the pie size. Pixel values are given as
-    * integers.
+    * integers. Setting overridden by thickness.
     *
     * Note: in Highcharts < 4.1.2, the percentage was relative to the plot
     * area, not the pie size.
@@ -399,9 +414,9 @@ trait PlotVariablepieOptions extends StObject {
   var minPointSize: js.UndefOr[Double | String] = js.undefined
   
   /**
-    * (Highcharts) The minimum size for a pie in response to auto margins. The
-    * pie will try to shrink to make room for data labels in side the plot
-    * area, but only to this size.
+    * (Highcharts, Highmaps) The minimum size for a pie in response to auto
+    * margins. The pie will try to shrink to make room for data labels in side
+    * the plot area, but only to this size.
     */
   var minSize: js.UndefOr[Double | String] = js.undefined
   
@@ -416,6 +431,12 @@ trait PlotVariablepieOptions extends StObject {
   var navigatorOptions: js.UndefOr[PlotSeriesOptions] = js.undefined
   
   /**
+    * (Highcharts) Options for the _Series on point_ feature. Only `pie` and
+    * `sunburst` series are supported at this moment.
+    */
+  var onPoint: js.UndefOr[js.Object | PlotVariablepieOnPointOptions] = js.undefined
+  
+  /**
     * (Highcharts) Opacity of a series parts: line, fill (e.g. area) and
     * dataLabels.
     */
@@ -427,8 +448,8 @@ trait PlotVariablepieOptions extends StObject {
   var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   
   /**
-    * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
-    * individual series. Overrides the chart wide configuration.
+    * (Highcharts) Same as accessibility.series.descriptionFormatter, but for
+    * an individual series. Overrides the chart wide configuration.
     */
   var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
   
@@ -441,6 +462,18 @@ trait PlotVariablepieOptions extends StObject {
     * option can be used to override the automatic value.
     */
   var pointRange: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) When true, X values in the data set are relative
+    * to the current `pointStart`, `pointInterval` and `pointIntervalUnit`
+    * settings. This allows compression of the data for datasets with irregular
+    * X values.
+    *
+    * The real X values are computed on the formula `f(x) = ax + b`, where `a`
+    * is the `pointInterval` (optionally with a time unit given by
+    * `pointIntervalUnit`), and `b` is the `pointStart`.
+    */
+  var relativeXValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Whether to select the series initially. If `showCheckbox` is
@@ -464,8 +497,9 @@ trait PlotVariablepieOptions extends StObject {
   var showCheckbox: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) Whether to display this particular series or series type in
-    * the legend. Since 2.1, pies are not shown in the legend by default.
+    * (Highcharts, Highmaps) Whether to display this particular series or
+    * series type in the legend. Since 2.1, pies are not shown in the legend by
+    * default.
     */
   var showInLegend: js.UndefOr[Boolean] = js.undefined
   
@@ -476,13 +510,13 @@ trait PlotVariablepieOptions extends StObject {
   var showInNavigator: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) The diameter of the pie relative to the plot area. Can be a
-    * percentage or pixel value. Pixel values are given as integers. The
-    * default behaviour (as of 3.0) is to scale to the plot area and give room
-    * for data labels within the plot area. slicedOffset is also included in
-    * the default size calculation. As a consequence, the size of the pie may
-    * vary when points are updated and data labels more around. In that case it
-    * is best to set a fixed value, for example `"75%"`.
+    * (Highcharts, Highmaps) The diameter of the pie relative to the plot area.
+    * Can be a percentage or pixel value. Pixel values are given as integers.
+    * The default behaviour (as of 3.0) is to scale to the plot area and give
+    * room for data labels within the plot area. slicedOffset is also included
+    * in the default size calculation. As a consequence, the size of the pie
+    * may vary when points are updated and data labels more around. In that
+    * case it is best to set a fixed value, for example `"75%"`.
     */
   var size: js.UndefOr[Double | String | Null] = js.undefined
   
@@ -501,29 +535,35 @@ trait PlotVariablepieOptions extends StObject {
   var skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) If a point is sliced, moved out from the center, how many
-    * pixels should it be moved?.
+    * (Highcharts, Highmaps) If a point is sliced, moved out from the center,
+    * how many pixels should it be moved?.
     */
   var slicedOffset: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts) The start angle of the pie slices in degrees where 0 is top
-    * and 90 right.
+    * (Highcharts, Highmaps) The start angle of the pie slices in degrees where
+    * 0 is top and 90 right.
     */
   var startAngle: js.UndefOr[Double] = js.undefined
   
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   
   /**
-    * (Highcharts) Sticky tracking of mouse events. When true, the `mouseOut`
-    * event on a series isn't triggered until the mouse moves over another
-    * series, or out of the plot area. When false, the `mouseOut` event on a
-    * series is triggered when the mouse leaves the area around the series'
-    * graph or markers. This also implies the tooltip. When `stickyTracking` is
-    * false and `tooltip.shared` is false, the tooltip will be hidden when
-    * moving the mouse between series.
+    * (Highcharts, Highmaps) Sticky tracking of mouse events. When true, the
+    * `mouseOut` event on a series isn't triggered until the mouse moves over
+    * another series, or out of the plot area. When false, the `mouseOut` event
+    * on a series is triggered when the mouse leaves the area around the
+    * series' graph or markers. This also implies the tooltip. When
+    * `stickyTracking` is false and `tooltip.shared` is false, the tooltip will
+    * be hidden when moving the mouse between series.
     */
   var stickyTracking: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts) Thickness describing the ring size for a donut type chart,
+    * overriding innerSize.
+    */
+  var thickness: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) A configuration object for the tooltip rendering of each
@@ -627,9 +667,9 @@ object PlotVariablepieOptions {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value*))
     
-    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
     inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
@@ -649,13 +689,21 @@ object PlotVariablepieOptions {
     
     inline def setCrispUndefined: Self = StObject.set(x, "crisp", js.undefined)
     
+    inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    
+    inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+    
     inline def setCursor(value: String | CursorValue): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    inline def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
+    
+    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
     
     inline def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
     
@@ -665,7 +713,7 @@ object PlotVariablepieOptions {
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDataLabelsVarargs(value: SeriesPieDataLabelsOptionsObject*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(value: SeriesPieDataLabelsOptionsObject*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
@@ -715,13 +763,13 @@ object PlotVariablepieOptions {
     
     inline def setJoinByUndefined: Self = StObject.set(x, "joinBy", js.undefined)
     
-    inline def setJoinByVarargs(value: String*): Self = StObject.set(x, "joinBy", js.Array(value :_*))
+    inline def setJoinByVarargs(value: String*): Self = StObject.set(x, "joinBy", js.Array(value*))
     
     inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setLastPrice(value: SeriesLastPriceOptionsObject): Self = StObject.set(x, "lastPrice", value.asInstanceOf[js.Any])
     
@@ -755,6 +803,10 @@ object PlotVariablepieOptions {
     
     inline def setNavigatorOptionsUndefined: Self = StObject.set(x, "navigatorOptions", js.undefined)
     
+    inline def setOnPoint(value: js.Object | PlotVariablepieOnPointOptions): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
+    
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
@@ -770,6 +822,10 @@ object PlotVariablepieOptions {
     inline def setPointRangeUndefined: Self = StObject.set(x, "pointRange", js.undefined)
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    
+    inline def setRelativeXValue(value: Boolean): Self = StObject.set(x, "relativeXValue", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeXValueUndefined: Self = StObject.set(x, "relativeXValue", js.undefined)
     
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
@@ -820,6 +876,10 @@ object PlotVariablepieOptions {
     inline def setStickyTracking(value: Boolean): Self = StObject.set(x, "stickyTracking", value.asInstanceOf[js.Any])
     
     inline def setStickyTrackingUndefined: Self = StObject.set(x, "stickyTracking", js.undefined)
+    
+    inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+    
+    inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
     inline def setTooltip(value: SeriesTooltipOptionsObject): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ object ManagementLinkClient {
   
   @JSImport("azure-arm-resource", "ManagementLinkClient.default")
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.azureArmResource.managementLinkClientMod.default {
     /**
       * Initializes a new instance of the ManagementLinkClient class.
@@ -58,7 +58,7 @@ object ManagementLinkClient {
   
   @JSImport("azure-arm-resource", "ManagementLinkClient.ManagementLinkClient")
   @js.native
-  class ManagementLinkClient protected ()
+  open class ManagementLinkClient protected ()
     extends typings.azureArmResource.managementLinkClientMod.ManagementLinkClient {
     /**
       * Initializes a new instance of the ManagementLinkClient class.
@@ -107,12 +107,12 @@ object ManagementLinkClient {
     
     @JSImport("azure-arm-resource", "ManagementLinkClient.ManagementLinkModels.BaseResource")
     @js.native
-    class BaseResource ()
+    open class BaseResource ()
       extends typings.azureArmResource.managementLinkClientMod.ManagementLinkModels.BaseResource
     
     @JSImport("azure-arm-resource", "ManagementLinkClient.ManagementLinkModels.CloudError")
     @js.native
-    class CloudError protected ()
+    open class CloudError protected ()
       extends typings.azureArmResource.managementLinkClientMod.ManagementLinkModels.CloudError {
       def this(parameters: CloudErrorParameters) = this()
     }

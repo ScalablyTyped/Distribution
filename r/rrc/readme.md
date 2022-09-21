@@ -11,9 +11,9 @@ React Router v4 helper components
 | Full name          | rrc |
 | Keywords           | react-router, context, component |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 10369 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 524.0 |
+| # stars            | 114.0 |
 
 ## Links
 - [Homepage](https://github.com/pshrmn/rrc#readme)

@@ -1,6 +1,5 @@
 package typings.playable
 
-import typings.chromecastCafSender.cast.framework.RemotePlayerController
 import typings.playable.engineStateMod.EngineState
 import typings.playable.eventEmitterTypesMod.IEventEmitter
 import typings.playable.playbackEngineTypesMod.IVideoOutput
@@ -12,36 +11,38 @@ object stateEngineMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/output/chromecast/state-engine", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with StateEngine {
     def this(eventEmitter: IEventEmitter, output: IVideoOutput, controller: RemotePlayerController) = this()
   }
   
+  type RemotePlayerController = typings.chromecastCafSender.cast.framework.RemotePlayerController
+  
   @js.native
   trait StateEngine extends StObject {
     
-    /* private */ var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _checkVolumeChanges: js.Any = js.native
+    /* private */ var _checkVolumeChanges: Any = js.native
     
-    /* private */ var _currentMute: js.Any = js.native
+    /* private */ var _currentMute: Any = js.native
     
-    /* private */ var _currentState: js.Any = js.native
+    /* private */ var _currentState: Any = js.native
     
-    /* private */ var _currentVolume: js.Any = js.native
+    /* private */ var _currentVolume: Any = js.native
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ var _isMetadataLoaded: js.Any = js.native
+    /* private */ var _isMetadataLoaded: Any = js.native
     
-    /* private */ var _output: js.Any = js.native
+    /* private */ var _output: Any = js.native
     
-    /* private */ var _processEventFromVideo: js.Any = js.native
+    /* private */ var _processEventFromVideo: Any = js.native
     
-    /* private */ var _remotePlayerController: js.Any = js.native
+    /* private */ var _remotePlayerController: Any = js.native
     
     def destroy(): Unit = js.native
     

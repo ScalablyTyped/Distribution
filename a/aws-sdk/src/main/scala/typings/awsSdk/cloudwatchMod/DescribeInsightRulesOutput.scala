@@ -29,7 +29,7 @@ object DescribeInsightRulesOutput {
     
     inline def setInsightRulesUndefined: Self = StObject.set(x, "InsightRules", js.undefined)
     
-    inline def setInsightRulesVarargs(value: InsightRule*): Self = StObject.set(x, "InsightRules", js.Array(value :_*))
+    inline def setInsightRulesVarargs(value: InsightRule*): Self = StObject.set(x, "InsightRules", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

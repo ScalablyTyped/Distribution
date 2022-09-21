@@ -22,6 +22,6 @@ object DynamicLinkStats {
     
     inline def setLinkEventStatsUndefined: Self = StObject.set(x, "linkEventStats", js.undefined)
     
-    inline def setLinkEventStatsVarargs(value: DynamicLinkEventStat*): Self = StObject.set(x, "linkEventStats", js.Array(value :_*))
+    inline def setLinkEventStatsVarargs(value: DynamicLinkEventStat*): Self = StObject.set(x, "linkEventStats", js.Array(value*))
   }
 }

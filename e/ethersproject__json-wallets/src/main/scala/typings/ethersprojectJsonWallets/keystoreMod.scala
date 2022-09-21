@@ -19,7 +19,7 @@ object keystoreMod {
   
   @JSImport("@ethersproject/json-wallets/lib/keystore", "KeystoreAccount")
   @js.native
-  class KeystoreAccount protected ()
+  open class KeystoreAccount protected ()
     extends Description[_KeystoreAccount]
        with ExternallyOwnedAccount {
     def this(info: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -31,7 +31,7 @@ object keystoreMod {
     /* CompleteClass */
     override val address: String = js.native
     
-    def isKeystoreAccount(value: js.Any): /* is @ethersproject/json-wallets.@ethersproject/json-wallets/lib/keystore.KeystoreAccount */ Boolean = js.native
+    def isKeystoreAccount(value: Any): /* is @ethersproject/json-wallets.@ethersproject/json-wallets/lib/keystore.KeystoreAccount */ Boolean = js.native
     
     val mnemonic: js.UndefOr[Mnemonic] = js.native
     

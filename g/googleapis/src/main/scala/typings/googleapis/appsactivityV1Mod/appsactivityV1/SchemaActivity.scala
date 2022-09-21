@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An Activity resource is a combined view of multiple events. An activity has
-  * a list of individual events and a combined view of the common fields among
-  * all events.
-  */
 trait SchemaActivity extends StObject {
   
   /**
@@ -38,6 +33,6 @@ object SchemaActivity {
     
     inline def setSingleEventsUndefined: Self = StObject.set(x, "singleEvents", js.undefined)
     
-    inline def setSingleEventsVarargs(value: SchemaEvent*): Self = StObject.set(x, "singleEvents", js.Array(value :_*))
+    inline def setSingleEventsVarargs(value: SchemaEvent*): Self = StObject.set(x, "singleEvents", js.Array(value*))
   }
 }

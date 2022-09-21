@@ -33,6 +33,6 @@ object DescribeSavingsPlansOfferingsResponse {
     
     inline def setSearchResultsUndefined: Self = StObject.set(x, "searchResults", js.undefined)
     
-    inline def setSearchResultsVarargs(value: SavingsPlanOffering*): Self = StObject.set(x, "searchResults", js.Array(value :_*))
+    inline def setSearchResultsVarargs(value: SavingsPlanOffering*): Self = StObject.set(x, "searchResults", js.Array(value*))
   }
 }

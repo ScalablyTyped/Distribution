@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
-import typings.googleapis.googleapisStrings.v3
-import typings.googleapis.youtubeV3Mod.youtubeV3.Options
-import typings.googleapis.youtubeV3Mod.youtubeV3.Youtube
+import typings.googleapis.googleapisStrings.v1
+import typings.googleapis.manufacturersV1Mod.manufacturersV1.Manufacturers
+import typings.googleapis.manufacturersV1Mod.manufacturersV1.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn148 extends StObject {
   
-  def apply(options: Options): Youtube = js.native
-  def apply(version: v3): Youtube = js.native
+  def apply(options: Options): Manufacturers = js.native
+  def apply(version: v1): Manufacturers = js.native
 }

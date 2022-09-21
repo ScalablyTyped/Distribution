@@ -10,10 +10,10 @@ Add an object to an array between each element
 | ------------------ | :-------------: |
 | Full name          | intersperse |
 | Keywords           | array, util, utility |
-| # releases         | 0 |
-| # dependents       | 105 |
-| # downloads        | 1922881 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 174944.33333333334 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/curvedmark/intersperse#readme)

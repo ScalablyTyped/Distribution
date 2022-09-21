@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DirectionsViewModelConstructor
   extends StObject
-     with Instantiable0[DirectionsViewModel]
+     with /**
+  * Provides the communication and data manipulation logic for the [Directions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html)
+  */
+Instantiable0[DirectionsViewModel]
      with Instantiable1[/* properties */ DirectionsViewModelProperties, DirectionsViewModel]

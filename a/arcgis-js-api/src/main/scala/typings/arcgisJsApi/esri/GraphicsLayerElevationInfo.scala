@@ -21,7 +21,7 @@ trait GraphicsLayerElevationInfo
      with Object {
   
   /**
-    * This object contains information about setting a custom z-value on the feature.
+    * Defines how to override a feature's Z-value based on its attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html#elevationInfo)
     */

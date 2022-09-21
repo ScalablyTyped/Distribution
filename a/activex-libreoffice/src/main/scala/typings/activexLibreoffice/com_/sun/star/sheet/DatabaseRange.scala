@@ -129,11 +129,11 @@ object DatabaseRange {
     getImportDescriptor: () => SafeArray[PropertyValue],
     getName: () => String,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
+    getPropertyValue: String => Any,
     getReferredCells: () => XCellRange,
     getSortDescriptor: () => SafeArray[PropertyValue],
     getSubTotalDescriptor: () => XSubTotalDescriptor,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     refresh: () => Unit,
     release: () => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
@@ -141,7 +141,7 @@ object DatabaseRange {
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     setDataArea: CellRangeAddress => Unit,
     setName: String => Unit,
-    setPropertyValue: (String, js.Any) => Unit
+    setPropertyValue: (String, Any) => Unit
   ): DatabaseRange = {
     val __obj = js.Dynamic.literal(AutoFilter = AutoFilter.asInstanceOf[js.Any], ContainsHeader = ContainsHeader.asInstanceOf[js.Any], DataArea = DataArea.asInstanceOf[js.Any], FilterCriteriaSource = FilterCriteriaSource.asInstanceOf[js.Any], FilterDescriptor = FilterDescriptor.asInstanceOf[js.Any], FromSelection = FromSelection.asInstanceOf[js.Any], ImportDescriptor = ImportDescriptor.asInstanceOf[js.Any], KeepFormats = KeepFormats.asInstanceOf[js.Any], MoveCells = MoveCells.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ReferredCells = ReferredCells.asInstanceOf[js.Any], RefreshPeriod = RefreshPeriod.asInstanceOf[js.Any], SortDescriptor = SortDescriptor.asInstanceOf[js.Any], StripData = StripData.asInstanceOf[js.Any], SubTotalDescriptor = SubTotalDescriptor.asInstanceOf[js.Any], TokenIndex = TokenIndex.asInstanceOf[js.Any], TotalsRow = TotalsRow.asInstanceOf[js.Any], UseFilterCriteriaSource = UseFilterCriteriaSource.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addRefreshListener = js.Any.fromFunction1(addRefreshListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getDataArea = js.Any.fromFunction0(getDataArea), getFilterDescriptor = js.Any.fromFunction0(getFilterDescriptor), getImportDescriptor = js.Any.fromFunction0(getImportDescriptor), getName = js.Any.fromFunction0(getName), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getReferredCells = js.Any.fromFunction0(getReferredCells), getSortDescriptor = js.Any.fromFunction0(getSortDescriptor), getSubTotalDescriptor = js.Any.fromFunction0(getSubTotalDescriptor), queryInterface = js.Any.fromFunction1(queryInterface), refresh = js.Any.fromFunction0(refresh), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeRefreshListener = js.Any.fromFunction1(removeRefreshListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setDataArea = js.Any.fromFunction1(setDataArea), setName = js.Any.fromFunction1(setName), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[DatabaseRange]

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SetDifferentOddAndEvenPagesHeaderFooterCommand")
 @js.native
-class SetDifferentOddAndEvenPagesHeaderFooterCommand ()
+open class SetDifferentOddAndEvenPagesHeaderFooterCommand ()
   extends StObject
      with typings.devexpressWeb.SetDifferentOddAndEvenPagesHeaderFooterCommand {
   

@@ -33,7 +33,10 @@ object anon {
     /** The hash. In the case of SHA-256, it will always be a lowercase hex string exactly 64 characters long. */
     var hash: String
     
-    /** A hint to the server to inline the contents of the listed output files. Each path needs to exactly match one path in `output_files` in the Command message. */
+    /**
+      * A hint to the server to inline the contents of the listed output files. Each path needs to exactly match one file path in either `output_paths` or `output_files` (DEPRECATED
+      * since v2.1) in the Command message.
+      */
     var inlineOutputFiles: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** A hint to the server to request inlining stderr in the ActionResult message. */
@@ -104,7 +107,7 @@ object anon {
       
       inline def setInlineOutputFilesUndefined: Self = StObject.set(x, "inlineOutputFiles", js.undefined)
       
-      inline def setInlineOutputFilesVarargs(value: String*): Self = StObject.set(x, "inlineOutputFiles", js.Array(value :_*))
+      inline def setInlineOutputFilesVarargs(value: String*): Self = StObject.set(x, "inlineOutputFiles", js.Array(value*))
       
       inline def setInlineStderr(value: Boolean): Self = StObject.set(x, "inlineStderr", value.asInstanceOf[js.Any])
       

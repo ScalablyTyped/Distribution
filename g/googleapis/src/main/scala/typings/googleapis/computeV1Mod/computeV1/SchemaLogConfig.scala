@@ -4,23 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Specifies what kind of log the caller must write
-  */
 trait SchemaLogConfig extends StObject {
   
   /**
-    * Cloud audit options.
+    * This is deprecated and has no effect. Do not use.
     */
   var cloudAudit: js.UndefOr[SchemaLogConfigCloudAuditOptions] = js.undefined
   
   /**
-    * Counter options.
+    * This is deprecated and has no effect. Do not use.
     */
   var counter: js.UndefOr[SchemaLogConfigCounterOptions] = js.undefined
   
   /**
-    * Data access options.
+    * This is deprecated and has no effect. Do not use.
     */
   var dataAccess: js.UndefOr[SchemaLogConfigDataAccessOptions] = js.undefined
 }

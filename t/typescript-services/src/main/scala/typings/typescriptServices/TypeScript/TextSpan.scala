@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TextSpan extends StObject {
   
-  /* private */ var _length: js.Any
+  /* private */ var _length: Any
   
-  /* private */ var _start: js.Any
+  /* private */ var _start: Any
   
   def containsPosition(position: Double): Boolean
   
@@ -37,8 +37,8 @@ trait TextSpan extends StObject {
 object TextSpan {
   
   inline def apply(
-    _length: js.Any,
-    _start: js.Any,
+    _length: Any,
+    _start: Any,
     containsPosition: Double => Boolean,
     containsTextSpan: TextSpan => Boolean,
     end: () => Double,
@@ -82,8 +82,8 @@ object TextSpan {
     
     inline def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    inline def set_length(value: js.Any): Self = StObject.set(x, "_length", value.asInstanceOf[js.Any])
+    inline def set_length(value: Any): Self = StObject.set(x, "_length", value.asInstanceOf[js.Any])
     
-    inline def set_start(value: js.Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
+    inline def set_start(value: Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
   }
 }

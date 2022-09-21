@@ -12,7 +12,7 @@ trait DescribeLocalGatewayRouteTableVpcAssociationsRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * One or more filters.    local-gateway-id - The ID of a local gateway.    local-gateway-route-table-id - The ID of the local gateway route table.    local-gateway-route-table-vpc-association-id - The ID of the association.    state - The state of the association.    vpc-id - The ID of the VPC.  
+    * One or more filters.    local-gateway-id - The ID of a local gateway.    local-gateway-route-table-arn - The Amazon Resource Name (ARN) of the local gateway route table for the association.    local-gateway-route-table-id - The ID of the local gateway route table.    local-gateway-route-table-vpc-association-id - The ID of the association.    owner-id - The ID of the Amazon Web Services account that owns the local gateway route table for the association.    state - The state of the association.    vpc-id - The ID of the VPC.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
@@ -48,13 +48,13 @@ object DescribeLocalGatewayRouteTableVpcAssociationsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setLocalGatewayRouteTableVpcAssociationIds(value: LocalGatewayRouteTableVpcAssociationIdSet): Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociationIds", value.asInstanceOf[js.Any])
     
     inline def setLocalGatewayRouteTableVpcAssociationIdsUndefined: Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociationIds", js.undefined)
     
-    inline def setLocalGatewayRouteTableVpcAssociationIdsVarargs(value: LocalGatewayRouteTableVpcAssociationId*): Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociationIds", js.Array(value :_*))
+    inline def setLocalGatewayRouteTableVpcAssociationIdsVarargs(value: LocalGatewayRouteTableVpcAssociationId*): Self = StObject.set(x, "LocalGatewayRouteTableVpcAssociationIds", js.Array(value*))
     
     inline def setMaxResults(value: LocalGatewayMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

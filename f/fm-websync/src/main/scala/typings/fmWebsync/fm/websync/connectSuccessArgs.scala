@@ -1,6 +1,5 @@
 package typings.fmWebsync.fm.websync
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ trait connectSuccessArgs
 }
 object connectSuccessArgs {
   
-  inline def apply(client: client, clientId: String, isReconnect: Boolean, meta: js.Any, timestamp: Date): connectSuccessArgs = {
+  inline def apply(client: client, clientId: String, isReconnect: Boolean, meta: Any, timestamp: js.Date): connectSuccessArgs = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], isReconnect = isReconnect.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[connectSuccessArgs]
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogQuerySortedAttribute")
 @js.native
-class CatalogQuerySortedAttribute () extends StObject {
+open class CatalogQuerySortedAttribute () extends StObject {
   
   /**
     * The attribute whose value is used as the sort key.

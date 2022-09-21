@@ -35,7 +35,7 @@ trait ConfigurationChangeEvent
   var Type: String
   
   /** Each listener is called with exactly the {@link UserData} that was given when the listener was registered. */
-  var UserData: js.Any
+  var UserData: Any
 }
 object ConfigurationChangeEvent {
   
@@ -45,7 +45,7 @@ object ConfigurationChangeEvent {
     ResourceObject: XInterface,
     Source: XInterface,
     Type: String,
-    UserData: js.Any
+    UserData: Any
   ): ConfigurationChangeEvent = {
     val __obj = js.Dynamic.literal(Configuration = Configuration.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any], ResourceObject = ResourceObject.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], UserData = UserData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationChangeEvent]
@@ -61,6 +61,6 @@ object ConfigurationChangeEvent {
     
     inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setUserData(value: js.Any): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: Any): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
   }
 }

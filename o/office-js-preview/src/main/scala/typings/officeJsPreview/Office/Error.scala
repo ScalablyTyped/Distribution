@@ -15,17 +15,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Error extends StObject {
   
   /**
-    * Gets the numeric code of the error. For a list of error codes, see {@link https://docs.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes | JavaScript API for Office error codes}.
+    * Gets the numeric code of the error. For a list of error codes, see {@link https://learn.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes | JavaScript API for Office error codes}.
     */
   var code: Double
   
   /**
-    * Gets the name of the error.
+    * Gets a detailed description of the error.
     */
   var message: String
   
   /**
-    * Gets a detailed description of the error.
+    * Gets the name of the error.
     */
   var name: String
 }

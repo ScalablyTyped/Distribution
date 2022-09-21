@@ -10,10 +10,10 @@ Parse and lookup IP network blocks
 | ------------------ | :-------------: |
 | Full name          | netmask |
 | Keywords           | net, mask, ip, network, cidr, netmask, subnet, ipcalc |
-| # releases         | 0 |
-| # dependents       | 101 |
-| # downloads        | 80198300 |
-| # stars            | 6 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8782559666666668E7 |
+| # stars            | 215.0 |
 
 ## Links
 - [Homepage](https://github.com/rs/node-netmask)

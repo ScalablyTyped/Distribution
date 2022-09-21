@@ -11,9 +11,9 @@ Find a file given a declaration of locations.
 | Full name          | fined |
 | Keywords           | find, lookup, config |
 | # releases         | 2 |
-| # dependents       | 16 |
-| # downloads        | 103964261 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0691565666666666E7 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/gulpjs/fined#readme)

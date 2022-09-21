@@ -1,6 +1,5 @@
 package typings.rax.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ trait ComponentLifecycle[P, S, SS] extends StObject {
     * Catches exceptions generated in descendant components. Unhandled exceptions will cause
     * the entire component tree to unmount.
     */
-  var componentDidCatch: js.UndefOr[js.Function2[/* error */ Error, /* errorInfo */ ErrorInfo, Unit]] = js.undefined
+  var componentDidCatch: js.UndefOr[js.Function2[/* error */ js.Error, /* errorInfo */ ErrorInfo, Unit]] = js.undefined
   
   /**
     * Called immediately after a component is mounted. Setting state here will trigger re-rendering.
@@ -37,7 +36,7 @@ trait ComponentLifecycle[P, S, SS] extends StObject {
   
   var componentWillMount: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ P, /* nextContext */ js.Any, Unit]] = js.undefined
+  var componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ P, /* nextContext */ Any, Unit]] = js.undefined
   
   /**
     * Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as
@@ -45,9 +44,7 @@ trait ComponentLifecycle[P, S, SS] extends StObject {
     */
   var componentWillUnmount: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var componentWillUpdate: js.UndefOr[
-    js.Function3[/* nextProps */ P, /* nextState */ S, /* nextContext */ js.Any, Unit]
-  ] = js.undefined
+  var componentWillUpdate: js.UndefOr[js.Function3[/* nextProps */ P, /* nextState */ S, /* nextContext */ Any, Unit]] = js.undefined
   
   /**
     * Runs before Rax applies the result of `render` to the document, and
@@ -70,7 +67,7 @@ trait ComponentLifecycle[P, S, SS] extends StObject {
     * and `componentDidUpdate` will not be called.
     */
   var shouldComponentUpdate: js.UndefOr[
-    js.Function3[/* nextProps */ P, /* nextState */ S, /* nextContext */ js.Any, Boolean]
+    js.Function3[/* nextProps */ P, /* nextState */ S, /* nextContext */ Any, Boolean]
   ] = js.undefined
 }
 object ComponentLifecycle {
@@ -82,7 +79,7 @@ object ComponentLifecycle {
   
   extension [Self <: ComponentLifecycle[?, ?, ?], P, S, SS](x: Self & (ComponentLifecycle[P, S, SS])) {
     
-    inline def setComponentDidCatch(value: (/* error */ Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "componentDidCatch", js.Any.fromFunction2(value))
+    inline def setComponentDidCatch(value: (/* error */ js.Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "componentDidCatch", js.Any.fromFunction2(value))
     
     inline def setComponentDidCatchUndefined: Self = StObject.set(x, "componentDidCatch", js.undefined)
     
@@ -98,7 +95,7 @@ object ComponentLifecycle {
     
     inline def setComponentWillMountUndefined: Self = StObject.set(x, "componentWillMount", js.undefined)
     
-    inline def setComponentWillReceiveProps(value: (/* nextProps */ P, /* nextContext */ js.Any) => Unit): Self = StObject.set(x, "componentWillReceiveProps", js.Any.fromFunction2(value))
+    inline def setComponentWillReceiveProps(value: (/* nextProps */ P, /* nextContext */ Any) => Unit): Self = StObject.set(x, "componentWillReceiveProps", js.Any.fromFunction2(value))
     
     inline def setComponentWillReceivePropsUndefined: Self = StObject.set(x, "componentWillReceiveProps", js.undefined)
     
@@ -106,7 +103,7 @@ object ComponentLifecycle {
     
     inline def setComponentWillUnmountUndefined: Self = StObject.set(x, "componentWillUnmount", js.undefined)
     
-    inline def setComponentWillUpdate(value: (/* nextProps */ P, /* nextState */ S, /* nextContext */ js.Any) => Unit): Self = StObject.set(x, "componentWillUpdate", js.Any.fromFunction3(value))
+    inline def setComponentWillUpdate(value: (/* nextProps */ P, /* nextState */ S, /* nextContext */ Any) => Unit): Self = StObject.set(x, "componentWillUpdate", js.Any.fromFunction3(value))
     
     inline def setComponentWillUpdateUndefined: Self = StObject.set(x, "componentWillUpdate", js.undefined)
     
@@ -114,7 +111,7 @@ object ComponentLifecycle {
     
     inline def setGetSnapshotBeforeUpdateUndefined: Self = StObject.set(x, "getSnapshotBeforeUpdate", js.undefined)
     
-    inline def setShouldComponentUpdate(value: (/* nextProps */ P, /* nextState */ S, /* nextContext */ js.Any) => Boolean): Self = StObject.set(x, "shouldComponentUpdate", js.Any.fromFunction3(value))
+    inline def setShouldComponentUpdate(value: (/* nextProps */ P, /* nextState */ S, /* nextContext */ Any) => Boolean): Self = StObject.set(x, "shouldComponentUpdate", js.Any.fromFunction3(value))
     
     inline def setShouldComponentUpdateUndefined: Self = StObject.set(x, "shouldComponentUpdate", js.undefined)
   }

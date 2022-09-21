@@ -13,7 +13,7 @@ object resourceTemplatesMod {
   
   @JSImport("gitlab/dist/types/core/templates/ResourceTemplates", "ResourceTemplates")
   @js.native
-  class ResourceTemplates protected () extends BaseService {
+  open class ResourceTemplates protected () extends BaseService {
     def this(resourceType: String, options: BaseServiceOptions) = this()
     
     def all(): js.Promise[GetResponse] = js.native

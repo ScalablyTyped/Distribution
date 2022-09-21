@@ -10,10 +10,10 @@ object compareMod {
   
   @JSImport("material-ui/svg-icons/image/compare", JSImport.Default)
   @js.native
-  class default () extends ImageCompare
+  open class default () extends ImageCompare
   
   @JSImport("material-ui/svg-icons/image/compare", "ImageCompare")
   @js.native
-  class ImageCompare ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageCompare ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

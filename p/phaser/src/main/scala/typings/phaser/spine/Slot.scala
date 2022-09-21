@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Slot extends StObject {
   
-  /* private */ var attachment: js.Any
+  /* private */ var attachment: Any
   
-  /* private */ var attachmentTime: js.Any
+  /* private */ var attachmentTime: Any
   
   var bone: Bone
   
@@ -33,8 +33,8 @@ trait Slot extends StObject {
 object Slot {
   
   inline def apply(
-    attachment: js.Any,
-    attachmentTime: js.Any,
+    attachment: Any,
+    attachmentTime: Any,
     bone: Bone,
     color: Color,
     darkColor: Color,
@@ -52,9 +52,9 @@ object Slot {
   
   extension [Self <: Slot](x: Self) {
     
-    inline def setAttachment(value: js.Any): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+    inline def setAttachment(value: Any): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
-    inline def setAttachmentTime(value: js.Any): Self = StObject.set(x, "attachmentTime", value.asInstanceOf[js.Any])
+    inline def setAttachmentTime(value: Any): Self = StObject.set(x, "attachmentTime", value.asInstanceOf[js.Any])
     
     inline def setBone(value: Bone): Self = StObject.set(x, "bone", value.asInstanceOf[js.Any])
     
@@ -66,7 +66,7 @@ object Slot {
     
     inline def setDeform(value: js.Array[Double]): Self = StObject.set(x, "deform", value.asInstanceOf[js.Any])
     
-    inline def setDeformVarargs(value: Double*): Self = StObject.set(x, "deform", js.Array(value :_*))
+    inline def setDeformVarargs(value: Double*): Self = StObject.set(x, "deform", js.Array(value*))
     
     inline def setGetAttachment(value: () => Attachment): Self = StObject.set(x, "getAttachment", js.Any.fromFunction0(value))
     

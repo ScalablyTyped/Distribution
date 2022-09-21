@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Xbox360Pad")
 @js.native
-class Xbox360Pad protected ()
+open class Xbox360Pad protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Xbox360Pad {
   /**
@@ -16,6 +16,6 @@ class Xbox360Pad protected ()
     * @param gamepad defines the internal HTML gamepad object
     * @param xboxOne defines if it is a XBox One gamepad
     */
-  def this(id: String, index: Double, gamepad: js.Any) = this()
-  def this(id: String, index: Double, gamepad: js.Any, xboxOne: Boolean) = this()
+  def this(id: String, index: Double, gamepad: Any) = this()
+  def this(id: String, index: Double, gamepad: Any, xboxOne: Boolean) = this()
 }

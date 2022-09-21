@@ -75,7 +75,7 @@ object XDropTarget {
     addDropTargetListener: XDropTargetListener => Unit,
     getDefaultActions: () => Double,
     isActive: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeDropTargetListener: XDropTargetListener => Unit,
     setActive: Boolean => Unit,

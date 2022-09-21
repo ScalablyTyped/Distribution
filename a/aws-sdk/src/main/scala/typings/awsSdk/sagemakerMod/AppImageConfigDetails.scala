@@ -19,7 +19,7 @@ trait AppImageConfigDetails extends StObject {
   /**
     * When the AppImageConfig was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The configuration for the file system and kernels in the SageMaker image.
@@ -29,7 +29,7 @@ trait AppImageConfigDetails extends StObject {
   /**
     * When the AppImageConfig was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
 }
 object AppImageConfigDetails {
   
@@ -48,7 +48,7 @@ object AppImageConfigDetails {
     
     inline def setAppImageConfigNameUndefined: Self = StObject.set(x, "AppImageConfigName", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -56,7 +56,7 @@ object AppImageConfigDetails {
     
     inline def setKernelGatewayImageConfigUndefined: Self = StObject.set(x, "KernelGatewayImageConfig", js.undefined)
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
   }

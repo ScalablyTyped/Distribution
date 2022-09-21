@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskBuilder")
 @js.native
 /** Creates an instance of the BackgroundTaskBuilder class. */
-class BackgroundTaskBuilder ()
+open class BackgroundTaskBuilder ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.BackgroundTaskBuilder {
   

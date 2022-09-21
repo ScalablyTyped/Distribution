@@ -1,7 +1,7 @@
 
 # Scala.js typings for printf
 
-Typings are for version 0.6.0
+Typings are for version 0.6.1
 
 ## Library description:
 Full implementation of the `printf` family in pure JS.
@@ -10,10 +10,10 @@ Full implementation of the `printf` family in pure JS.
 | ------------------ | :-------------: |
 | Full name          | printf |
 | Keywords           | printf, formatting, sprintf, format, output, print |
-| # releases         | 4 |
-| # dependents       | 143 |
-| # downloads        | 9008659 |
-| # stars            | 7 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 926462.0 |
+| # stars            | 87.0 |
 
 ## Links
 - [Homepage](https://github.com/adaltas/node-printf)

@@ -10,15 +10,12 @@ A pageable Backbone.Collection superset. Supports server-side/client-side/infini
 | ------------------ | :-------------: |
 | Full name          | backbone.paginator |
 | Keywords           | backbone |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 438186 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 37290.666666666664 |
+| # stars            | 1427.0 |
 
 ## Links
-- [Homepage](https://github.com/backbone-paginator/backbone.paginator#readme)
-- [Bugs](https://github.com/backbone-paginator/backbone.paginator/issues)
-- [Repository](https://github.com/backbone-paginator/backbone.paginator)
 - [Npm](https://www.npmjs.com/package/backbone.paginator)
     
 

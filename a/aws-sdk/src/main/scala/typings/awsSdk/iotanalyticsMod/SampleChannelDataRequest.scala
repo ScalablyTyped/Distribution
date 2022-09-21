@@ -14,7 +14,7 @@ trait SampleChannelDataRequest extends StObject {
   /**
     * The end of the time window from which sample messages are retrieved.
     */
-  var endTime: js.UndefOr[EndTime] = js.undefined
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The number of sample messages to be retrieved. The limit is 10. The default is also 10.
@@ -24,7 +24,7 @@ trait SampleChannelDataRequest extends StObject {
   /**
     * The start of the time window from which sample messages are retrieved.
     */
-  var startTime: js.UndefOr[StartTime] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
 }
 object SampleChannelDataRequest {
   
@@ -37,7 +37,7 @@ object SampleChannelDataRequest {
     
     inline def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
-    inline def setEndTime(value: EndTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -45,7 +45,7 @@ object SampleChannelDataRequest {
     
     inline def setMaxMessagesUndefined: Self = StObject.set(x, "maxMessages", js.undefined)
     
-    inline def setStartTime(value: StartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }

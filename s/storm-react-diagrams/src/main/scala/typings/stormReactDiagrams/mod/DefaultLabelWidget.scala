@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("storm-react-diagrams", "DefaultLabelWidget")
 @js.native
-class DefaultLabelWidget protected ()
+open class DefaultLabelWidget protected ()
   extends typings.stormReactDiagrams.defaultLabelWidgetMod.DefaultLabelWidget {
-  def this(props: js.Any) = this()
+  def this(props: Any) = this()
 }

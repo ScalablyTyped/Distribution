@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Resource is an entity that can have metadata. E.g., a Docker image.
-  */
 trait SchemaResource extends StObject {
   
   /**
@@ -15,16 +12,14 @@ trait SchemaResource extends StObject {
   var contentHash: js.UndefOr[SchemaHash] = js.undefined
   
   /**
-    * The name of the resource. E.g., the name of a Docker image -
-    * &quot;Debian&quot;.
+    * The name of the resource. E.g., the name of a Docker image - "Debian".
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The unique URI of the resource. E.g.,
-    * &quot;https://gcr.io/project/image@sha256:foo&quot; for a Docker image.
+    * The unique URI of the resource. E.g., "https://gcr.io/project/image@sha256:foo" for a Docker image.
     */
-  var uri: js.UndefOr[String] = js.undefined
+  var uri: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaResource {
   
@@ -41,9 +36,13 @@ object SchemaResource {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    
+    inline def setUriNull: Self = StObject.set(x, "uri", null)
     
     inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }

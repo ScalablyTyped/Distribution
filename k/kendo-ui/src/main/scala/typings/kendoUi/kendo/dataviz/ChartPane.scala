@@ -17,7 +17,7 @@ trait ChartPane
   
   var options: ChartPaneOptions = js.native
   
-  def series(): js.Any = js.native
+  def series(): Any = js.native
   
   var visual: Group = js.native
 }

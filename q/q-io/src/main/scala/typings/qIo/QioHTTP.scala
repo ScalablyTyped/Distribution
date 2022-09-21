@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object QioHTTP {
   
-  type Application = js.Function1[/* req */ Request, Promise[js.Any]]
+  type Application = js.Function1[/* req */ Request, Promise[Any]]
   
   type Body = Stream
   
-  type Headers = StringDictionary[js.Any]
+  type Headers = StringDictionary[Any]
   
   trait Request extends StObject {
     
-    var agent: js.Any
+    var agent: Any
     
-    var body: js.Any
+    var body: Any
     
     var headers: Headers
     
@@ -28,7 +28,7 @@ object QioHTTP {
     
     var method: String
     
-    var node: js.Any
+    var node: Any
     
     var path: String
     
@@ -51,12 +51,12 @@ object QioHTTP {
   object Request {
     
     inline def apply(
-      agent: js.Any,
-      body: js.Any,
+      agent: Any,
+      body: Any,
       headers: Headers,
       host: String,
       method: String,
-      node: js.Any,
+      node: Any,
       path: String,
       pathInfo: String,
       port: Double,
@@ -73,9 +73,9 @@ object QioHTTP {
     
     extension [Self <: Request](x: Self) {
       
-      inline def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -83,7 +83,7 @@ object QioHTTP {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      inline def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -103,7 +103,7 @@ object QioHTTP {
       
       inline def setVersion(value: js.Array[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      inline def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value :_*))
+      inline def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value*))
     }
   }
   
@@ -113,7 +113,7 @@ object QioHTTP {
     
     var headers: Headers
     
-    var node: js.Any
+    var node: Any
     
     def onclose(): Unit
     
@@ -121,7 +121,7 @@ object QioHTTP {
   }
   object Response {
     
-    inline def apply(body: Reader, headers: Headers, node: js.Any, onclose: () => Unit, status: Double): Response = {
+    inline def apply(body: Reader, headers: Headers, node: Any, onclose: () => Unit, status: Double): Response = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], onclose = js.Any.fromFunction0(onclose), status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
@@ -132,7 +132,7 @@ object QioHTTP {
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       inline def setOnclose(value: () => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction0(value))
       

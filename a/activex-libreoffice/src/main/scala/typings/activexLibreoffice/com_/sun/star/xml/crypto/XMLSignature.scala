@@ -17,8 +17,8 @@ object XMLSignature {
   inline def apply(
     acquire: () => Unit,
     generate: (XXMLSignatureTemplate, XSecurityEnvironment) => XXMLSignatureTemplate,
-    initialize: SeqEquiv[js.Any] => Unit,
-    queryInterface: `type` => js.Any,
+    initialize: SeqEquiv[Any] => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
     validate: (XXMLSignatureTemplate, XXMLSecurityContext) => XXMLSignatureTemplate
   ): XMLSignature = {

@@ -10,7 +10,7 @@ trait OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchieLevel
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * A caption for the level.

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "remark" : "13.0.0"
+      "remark" : "14.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "remark" : "13.0.0"
+      "remark" : "14.0.2"
     }
   ],
   "compile-devDependencies" : [

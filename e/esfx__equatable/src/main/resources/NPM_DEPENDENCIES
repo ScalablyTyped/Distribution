@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@esfx/equatable" : "1.0.0-pre.13"
+      "@esfx/equatable" : "1.0.0-pre.19"
     }
   ],
   "test-dependencies" : [
     {
-      "@esfx/equatable" : "1.0.0-pre.13"
+      "@esfx/equatable" : "1.0.0-pre.19"
     }
   ],
   "compile-devDependencies" : [

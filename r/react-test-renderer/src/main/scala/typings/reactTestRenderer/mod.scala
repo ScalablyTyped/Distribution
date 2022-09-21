@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ElementType
 import typings.react.mod.ReactElement
 import typings.reactTestRenderer.anon.Deep
+import typings.reactTestRenderer.anon.UNDEFINEDVOIDONLY
 import typings.reactTestRenderer.reactTestRendererStrings.component
 import typings.reactTestRenderer.reactTestRendererStrings.host
 import org.scalablytyped.runtime.StObject
@@ -16,9 +17,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def act(callback: js.Function0[js.UndefOr[Unit]]): DebugPromiseLike = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[DebugPromiseLike]
+  inline def act(callback: js.Function0[VoidOrUndefinedOnly]): DebugPromiseLike = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[DebugPromiseLike]
   
-  inline def act_Promise(callback: js.Function0[js.Promise[js.UndefOr[Unit]]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def act_Promise(callback: js.Function0[js.Promise[VoidOrUndefinedOnly]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def create(nextElement: ReactElement): ReactTestRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(nextElement.asInstanceOf[js.Any]).asInstanceOf[ReactTestRenderer]
   inline def create(nextElement: ReactElement, options: TestRendererOptions): ReactTestRenderer = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(nextElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactTestRenderer]
@@ -59,23 +60,23 @@ object mod {
     def findAll(predicate: js.Function1[/* node */ this.type, Boolean]): js.Array[ReactTestInstance] = js.native
     def findAll(predicate: js.Function1[/* node */ this.type, Boolean], options: Deep): js.Array[ReactTestInstance] = js.native
     
-    def findAllByProps(props: StringDictionary[js.Any]): js.Array[ReactTestInstance] = js.native
-    def findAllByProps(props: StringDictionary[js.Any], options: Deep): js.Array[ReactTestInstance] = js.native
+    def findAllByProps(props: StringDictionary[Any]): js.Array[ReactTestInstance] = js.native
+    def findAllByProps(props: StringDictionary[Any], options: Deep): js.Array[ReactTestInstance] = js.native
     
-    def findAllByType(`type`: ElementType[js.Any]): js.Array[ReactTestInstance] = js.native
-    def findAllByType(`type`: ElementType[js.Any], options: Deep): js.Array[ReactTestInstance] = js.native
+    def findAllByType(`type`: ElementType[Any]): js.Array[ReactTestInstance] = js.native
+    def findAllByType(`type`: ElementType[Any], options: Deep): js.Array[ReactTestInstance] = js.native
     
-    def findByProps(props: StringDictionary[js.Any]): ReactTestInstance = js.native
+    def findByProps(props: StringDictionary[Any]): ReactTestInstance = js.native
     
-    def findByType(`type`: ElementType[js.Any]): ReactTestInstance = js.native
+    def findByType(`type`: ElementType[Any]): ReactTestInstance = js.native
     
-    var instance: js.Any = js.native
+    var instance: Any = js.native
     
     var parent: Null | ReactTestInstance = js.native
     
-    var props: StringDictionary[js.Any] = js.native
+    var props: StringDictionary[Any] = js.native
     
-    var `type`: ElementType[js.Any] = js.native
+    var `type`: ElementType[Any] = js.native
   }
   
   @js.native
@@ -99,13 +100,13 @@ object mod {
     
     var children: Null | js.Array[ReactTestRendererNode]
     
-    var props: StringDictionary[js.Any]
+    var props: StringDictionary[Any]
     
     var `type`: String
   }
   object ReactTestRendererJSON {
     
-    inline def apply(props: StringDictionary[js.Any], `type`: String): ReactTestRendererJSON = {
+    inline def apply(props: StringDictionary[Any], `type`: String): ReactTestRendererJSON = {
       val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], children = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactTestRendererJSON]
@@ -117,9 +118,9 @@ object mod {
       
       inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
-      inline def setChildrenVarargs(value: ReactTestRendererNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactTestRendererNode*): Self = StObject.set(x, "children", js.Array(value*))
       
-      inline def setProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: StringDictionary[Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -131,7 +132,7 @@ object mod {
     extends StObject
        with ReactTestRendererJSON {
     
-    var instance: js.Any
+    var instance: Any
     
     var nodeType: component | host
     
@@ -139,7 +140,7 @@ object mod {
   }
   object ReactTestRendererTree {
     
-    inline def apply(instance: js.Any, nodeType: component | host, props: StringDictionary[js.Any], `type`: String): ReactTestRendererTree = {
+    inline def apply(instance: Any, nodeType: component | host, props: StringDictionary[Any], `type`: String): ReactTestRendererTree = {
       val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], children = null, rendered = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactTestRendererTree]
@@ -147,7 +148,7 @@ object mod {
     
     extension [Self <: ReactTestRendererTree](x: Self) {
       
-      inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
       inline def setNodeType(value: component | host): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
       
@@ -155,24 +156,27 @@ object mod {
       
       inline def setRenderedNull: Self = StObject.set(x, "rendered", null)
       
-      inline def setRenderedVarargs(value: ReactTestRendererTree*): Self = StObject.set(x, "rendered", js.Array(value :_*))
+      inline def setRenderedVarargs(value: ReactTestRendererTree*): Self = StObject.set(x, "rendered", js.Array(value*))
     }
   }
   
   trait TestRendererOptions extends StObject {
     
-    def createNodeMock(element: ReactElement): js.Any
+    def createNodeMock(element: ReactElement): Any
   }
   object TestRendererOptions {
     
-    inline def apply(createNodeMock: ReactElement => js.Any): TestRendererOptions = {
+    inline def apply(createNodeMock: ReactElement => Any): TestRendererOptions = {
       val __obj = js.Dynamic.literal(createNodeMock = js.Any.fromFunction1(createNodeMock))
       __obj.asInstanceOf[TestRendererOptions]
     }
     
     extension [Self <: TestRendererOptions](x: Self) {
       
-      inline def setCreateNodeMock(value: ReactElement => js.Any): Self = StObject.set(x, "createNodeMock", js.Any.fromFunction1(value))
+      inline def setCreateNodeMock(value: ReactElement => Any): Self = StObject.set(x, "createNodeMock", js.Any.fromFunction1(value))
     }
   }
+  
+  // tslint:disable-next-line: void-return
+  type VoidOrUndefinedOnly = Unit | UNDEFINEDVOIDONLY
 }

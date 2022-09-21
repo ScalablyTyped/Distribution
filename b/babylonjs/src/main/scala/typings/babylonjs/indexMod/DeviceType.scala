@@ -11,6 +11,8 @@ object DeviceType extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.deviceEnumsMod.DeviceType & Double] = js.native
   
+  /* 7 */ val DualSense: typings.babylonjs.deviceEnumsMod.DeviceType.DualSense & Double = js.native
+  
   /* 4 */ val DualShock: typings.babylonjs.deviceEnumsMod.DeviceType.DualShock & Double = js.native
   
   /* 0 */ val Generic: typings.babylonjs.deviceEnumsMod.DeviceType.Generic & Double = js.native

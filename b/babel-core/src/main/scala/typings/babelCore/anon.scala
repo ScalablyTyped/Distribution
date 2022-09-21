@@ -23,11 +23,11 @@ object anon {
       
       inline def setExported(value: js.Array[js.Object]): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
       
-      inline def setExportedVarargs(value: js.Object*): Self = StObject.set(x, "exported", js.Array(value :_*))
+      inline def setExportedVarargs(value: js.Object*): Self = StObject.set(x, "exported", js.Array(value*))
       
       inline def setSpecifiers(value: js.Array[js.Object]): Self = StObject.set(x, "specifiers", value.asInstanceOf[js.Any])
       
-      inline def setSpecifiersVarargs(value: js.Object*): Self = StObject.set(x, "specifiers", js.Array(value :_*))
+      inline def setSpecifiersVarargs(value: js.Object*): Self = StObject.set(x, "specifiers", js.Array(value*))
     }
   }
   

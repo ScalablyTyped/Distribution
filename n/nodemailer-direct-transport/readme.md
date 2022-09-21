@@ -10,15 +10,12 @@ Direct transport for Nodemailer
 | ------------------ | :-------------: |
 | Full name          | nodemailer-direct-transport |
 | Keywords           | SMTP, Nodemailer |
-| # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 11649093 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 659635.3333333334 |
+| # stars            | 16.0 |
 
 ## Links
-- [Homepage](http://github.com/andris9/nodemailer-direct-transport)
-- [Bugs](https://github.com/andris9/nodemailer-direct-transport/issues)
-- [Repository](https://github.com/andris9/nodemailer-direct-transport)
 - [Npm](https://www.npmjs.com/package/nodemailer-direct-transport)
     
 

@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LodashUpdateWith1x9[T] extends StObject {
   
   def apply(path: PropertyPath): LodashUpdateWith1x11[T] = js.native
-  def apply(path: PropertyPath, updater: js.Function1[/* oldValue */ js.Any, js.Any]): T = js.native
-  def apply(path: __, updater: js.Function1[/* oldValue */ js.Any, js.Any]): LodashUpdateWith1x13[T] = js.native
+  def apply(path: PropertyPath, updater: js.Function1[/* oldValue */ Any, Any]): T = js.native
+  def apply(path: __, updater: js.Function1[/* oldValue */ Any, Any]): LodashUpdateWith1x13[T] = js.native
 }

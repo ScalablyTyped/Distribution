@@ -16,7 +16,7 @@ object mod {
   
   trait List
     extends StObject
-       with /* index */ NumberDictionary[js.Any] {
+       with /* index */ NumberDictionary[Any] {
     
     var length: Double
   }

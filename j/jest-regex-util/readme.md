@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-regex-util
 
-Typings are for version 26.0.0
+Typings are for version 29.0.0
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 26.0.0
 | ------------------ | :-------------: |
 | Full name          | jest-regex-util |
 | Keywords           | - |
-| # releases         | 31 |
-| # dependents       | 42 |
-| # downloads        | 377118932 |
-| # stars            | 0 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1082952966666667E8 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

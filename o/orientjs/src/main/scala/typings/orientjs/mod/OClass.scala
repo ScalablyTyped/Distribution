@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("orientjs", "OClass")
 @js.native
-class OClass () extends StObject {
+open class OClass () extends StObject {
   
   /**
     * Cache the given class data for fast lookup later.
@@ -59,7 +59,7 @@ class OClass () extends StObject {
   
   var db: js.UndefOr[ODB] = js.native
   
-  var defaultClusterId: js.UndefOr[js.Any] = js.native
+  var defaultClusterId: js.UndefOr[Any] = js.native
   
   /**
     * Delete a class.
@@ -79,10 +79,10 @@ class OClass () extends StObject {
     * @param  offset     The offset to start returning records from.
     * @promise {Object[]}          An array of records in the class.
     */
-  def find(attributes: js.Any): js.Promise[js.Array[ORecord]] = js.native
-  def find(attributes: js.Any, limit: Double): js.Promise[js.Array[ORecord]] = js.native
-  def find(attributes: js.Any, limit: Double, offset: Double): js.Promise[js.Array[ORecord]] = js.native
-  def find(attributes: js.Any, limit: Unit, offset: Double): js.Promise[js.Array[ORecord]] = js.native
+  def find(attributes: Any): js.Promise[js.Array[ORecord]] = js.native
+  def find(attributes: Any, limit: Double): js.Promise[js.Array[ORecord]] = js.native
+  def find(attributes: Any, limit: Double, offset: Double): js.Promise[js.Array[ORecord]] = js.native
+  def find(attributes: Any, limit: Unit, offset: Double): js.Promise[js.Array[ORecord]] = js.native
   
   /**
     * Get a class by name.
@@ -94,8 +94,8 @@ class OClass () extends StObject {
   def get(name: String): js.Promise[OClass] = js.native
   def get(name: String, refresh: Boolean): js.Promise[OClass] = js.native
   
-  def list(limit: js.Any): js.Promise[js.Array[OClass]] = js.native
-  def list(limit: js.Any, offset: Double): js.Promise[js.Array[OClass]] = js.native
+  def list(limit: Any): js.Promise[js.Array[OClass]] = js.native
+  def list(limit: Any, offset: Double): js.Promise[js.Array[OClass]] = js.native
   def list(limit: Boolean): js.Promise[js.Array[OClass]] = js.native
   def list(limit: Boolean, offset: Double): js.Promise[js.Array[OClass]] = js.native
   /**
@@ -135,5 +135,5 @@ class OClass () extends StObject {
     * @param   reload   Whether to reload the class, default to true.
     * @promise {Object}           The updated class.
     */
-  def update(cls: js.Any, reload: Boolean): js.Promise[OClass] = js.native
+  def update(cls: Any, reload: Boolean): js.Promise[OClass] = js.native
 }

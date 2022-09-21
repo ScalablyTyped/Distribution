@@ -41,7 +41,7 @@ trait AboveAverage extends StObject {
   
   val PTCondition: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Priority: Double
   
@@ -72,7 +72,7 @@ object AboveAverage {
     NumStdDev: Double,
     NumberFormat: String,
     PTCondition: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     Priority: Double,
     ScopeType: XlPivotConditionScope,
     SetFirstPriority: () => Unit,
@@ -115,7 +115,7 @@ object AboveAverage {
     
     inline def setPTCondition(value: Boolean): Self = StObject.set(x, "PTCondition", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     

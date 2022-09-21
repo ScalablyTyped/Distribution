@@ -1,6 +1,5 @@
 package typings.winkTokenizer
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object mod {
   /**
     * create a tokenizer instance
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Tokenizer
   
@@ -249,8 +248,8 @@ object mod {
       * @param tag tokens matching the regex will be assigned this tag
       * @param fingerprintCode
       */
-    def addRegex(regex: RegExp, tag: String): Unit = js.native
-    def addRegex(regex: RegExp, tag: String, fingerprintCode: String): Unit = js.native
+    def addRegex(regex: js.RegExp, tag: String): Unit = js.native
+    def addRegex(regex: js.RegExp, tag: String, fingerprintCode: String): Unit = js.native
     
     /**
       * Defines the configuration in terms of the types of token that will be extracted by tokenize() method.

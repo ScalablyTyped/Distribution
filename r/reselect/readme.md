@@ -1,7 +1,7 @@
 
 # Scala.js typings for reselect
 
-Typings are for version 4.0.0
+Typings are for version 4.1.6
 
 ## Library description:
 Selectors for Redux.
@@ -10,15 +10,12 @@ Selectors for Redux.
 | ------------------ | :-------------: |
 | Full name          | reselect |
 | Keywords           | react, redux |
-| # releases         | 0 |
-| # dependents       | 1631 |
-| # downloads        | 129458351 |
-| # stars            | 57 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1005932333333332E7 |
+| # stars            | 18647.0 |
 
 ## Links
-- [Homepage](https://github.com/reduxjs/reselect#readme)
-- [Bugs](https://github.com/reduxjs/reselect/issues)
-- [Repository](https://github.com/reduxjs/reselect)
 - [Npm](https://www.npmjs.com/package/reselect)
     
 

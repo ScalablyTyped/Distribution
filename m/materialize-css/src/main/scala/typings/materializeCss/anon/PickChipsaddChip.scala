@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<materialize-css.M.Chips, 'addChip'> */
 trait PickChipsaddChip extends StObject {
   
-  var addChip: js.UndefOr[js.Any] = js.undefined
+  var addChip: js.UndefOr[Any] = js.undefined
 }
 object PickChipsaddChip {
   
@@ -18,7 +18,7 @@ object PickChipsaddChip {
   
   extension [Self <: PickChipsaddChip](x: Self) {
     
-    inline def setAddChip(value: js.Any): Self = StObject.set(x, "addChip", value.asInstanceOf[js.Any])
+    inline def setAddChip(value: Any): Self = StObject.set(x, "addChip", value.asInstanceOf[js.Any])
     
     inline def setAddChipUndefined: Self = StObject.set(x, "addChip", js.undefined)
   }

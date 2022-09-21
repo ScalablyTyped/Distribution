@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-dev-tools
 
-Typings are for version 2.1
+Typings are for version 3.0
 
 ## Library description:
 Dev Tools for ProseMirror
@@ -10,10 +10,10 @@ Dev Tools for ProseMirror
 | ------------------ | :-------------: |
 | Full name          | prosemirror-dev-tools |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 11 |
-| # downloads        | 308185 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 24977.666666666668 |
+| # stars            | 238.0 |
 
 ## Links
 - [Homepage](https://github.com/d4rkr00t/prosemirror-dev-tools#readme)

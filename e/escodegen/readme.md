@@ -9,10 +9,10 @@ ECMAScript code generator
 | ------------------ | :-------------: |
 | Full name          | escodegen |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 1251 |
-| # downloads        | 696992974 |
-| # stars            | 19 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.08581404E8 |
+| # stars            | 2410.0 |
 
 ## Links
 - [Homepage](http://github.com/estools/escodegen)

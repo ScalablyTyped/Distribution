@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EncryptionKey extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the encryption key being used to encrypt the custom terminology.
+    * The Amazon Resource Name (ARN) of the encryption key being used to encrypt this object.
     */
   var Id: EncryptionKeyID
   
   /**
-    * The type of encryption key used by Amazon Translate to encrypt custom terminologies.
+    * The type of encryption key used by Amazon Translate to encrypt this object.
     */
   var Type: EncryptionKeyType
 }

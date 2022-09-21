@@ -39,9 +39,20 @@ trait WebSceneProperties
   /**
     * *This property only applies to local scenes.* Determines whether clipping using the [clippingArea](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#clippingArea) is enabled.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#clippingEnabled)
     */
   var clippingEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * When a web scene is configured as floor-aware, it has a floorInfo property defined.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#floorInfo)
+    */
+  var floorInfo: js.UndefOr[MapFloorInfoProperties] = js.undefined
   
   /**
     * The height model info of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html).
@@ -106,6 +117,10 @@ object WebSceneProperties {
     inline def setClippingEnabled(value: Boolean): Self = StObject.set(x, "clippingEnabled", value.asInstanceOf[js.Any])
     
     inline def setClippingEnabledUndefined: Self = StObject.set(x, "clippingEnabled", js.undefined)
+    
+    inline def setFloorInfo(value: MapFloorInfoProperties): Self = StObject.set(x, "floorInfo", value.asInstanceOf[js.Any])
+    
+    inline def setFloorInfoUndefined: Self = StObject.set(x, "floorInfo", js.undefined)
     
     inline def setHeightModelInfo(value: HeightModelInfoProperties): Self = StObject.set(x, "heightModelInfo", value.asInstanceOf[js.Any])
     

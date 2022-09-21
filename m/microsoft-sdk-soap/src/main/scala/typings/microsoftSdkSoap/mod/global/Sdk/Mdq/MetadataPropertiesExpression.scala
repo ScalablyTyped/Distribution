@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Mdq.MetadataPropertiesExpression")
 @js.native
-class MetadataPropertiesExpression protected () extends StObject {
+open class MetadataPropertiesExpression protected () extends StObject {
   def this(allProperties: Boolean) = this()
   def this(
     allProperties: Boolean,
     propertyNames: js.Array[
-        EntityMetadataProperties | AttributeMetadataProperties | RelationshipMetadataProperties | js.Any
+        EntityMetadataProperties | AttributeMetadataProperties | RelationshipMetadataProperties | Any
       ]
   ) = this()
 }

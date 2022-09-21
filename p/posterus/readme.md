@@ -4,21 +4,21 @@
 Typings are for version 0.4
 
 ## Library description:
-Composable async primitives (futures) with cancelation and control over scheduling. Includes optional courotune implementation.
+Composable async primitives (tasks) with cancelation and control over scheduling. Includes optional courotune implementation.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | posterus |
-| Keywords           | future, promise, async, asynchronous, composable, cancelable, abortable, scheduling, coroutine, fiber, async, await |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 2874 |
-| # stars            | 0 |
+| Keywords           | future, promise, async, asynchronous, composable, cancelable, abortable, scheduling, coroutine, fiber, async, await, task |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 174.66666666666666 |
+| # stars            | 545.0 |
 
 ## Links
-- [Homepage](https://github.com/Mitranim/posterus#readme)
-- [Bugs](https://github.com/Mitranim/posterus/issues)
-- [Repository](https://github.com/Mitranim/posterus)
+- [Homepage](https://github.com/mitranim/posterus#readme)
+- [Bugs](https://github.com/mitranim/posterus/issues)
+- [Repository](https://github.com/mitranim/posterus)
 - [Npm](https://www.npmjs.com/package/posterus)
     
 

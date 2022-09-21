@@ -11,7 +11,7 @@ trait Style extends StObject {
   
   var AutomaticallyUpdate: Boolean = js.native
   
-  var BaseStyle: js.Any = js.native
+  var BaseStyle: Any = js.native
   
   var Borders: typings.activexWord.Word.Borders = js.native
   
@@ -35,10 +35,10 @@ trait Style extends StObject {
   
   var LanguageIDFarEast: WdLanguageID = js.native
   
-  var LinkStyle: js.Any = js.native
+  var LinkStyle: Any = js.native
   
   def LinkToListTemplate(ListTemplate: typings.activexWord.Word.ListTemplate): Unit = js.native
-  def LinkToListTemplate(ListTemplate: typings.activexWord.Word.ListTemplate, ListLevelNumber: js.Any): Unit = js.native
+  def LinkToListTemplate(ListTemplate: typings.activexWord.Word.ListTemplate, ListLevelNumber: Any): Unit = js.native
   
   val Linked: Boolean = js.native
   
@@ -50,7 +50,7 @@ trait Style extends StObject {
   
   var NameLocal: String = js.native
   
-  var NextParagraphStyle: js.Any = js.native
+  var NextParagraphStyle: Any = js.native
   
   var NoProofing: Double = js.native
   
@@ -58,7 +58,7 @@ trait Style extends StObject {
   
   var ParagraphFormat: typings.activexWord.Word.ParagraphFormat = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Priority: Double = js.native
   

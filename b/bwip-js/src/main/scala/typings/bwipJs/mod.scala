@@ -12,10 +12,9 @@ import typings.bwipJs.bwipJsStrings.left
 import typings.bwipJs.bwipJsStrings.offleft
 import typings.bwipJs.bwipJsStrings.offright
 import typings.bwipJs.bwipJsStrings.right
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.std.Error
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,7 +32,7 @@ object mod {
     canvas: String,
     opts: ToBufferOptions,
     callback: js.Function2[
-      /* err */ js.UndefOr[String | Error], 
+      /* err */ js.UndefOr[String | js.Error], 
       /* canvas */ js.UndefOr[HTMLCanvasElement], 
       Unit
     ]
@@ -42,13 +41,13 @@ object mod {
     canvas: HTMLCanvasElement,
     opts: ToBufferOptions,
     callback: js.Function2[
-      /* err */ js.UndefOr[String | Error], 
+      /* err */ js.UndefOr[String | js.Error], 
       /* canvas */ js.UndefOr[HTMLCanvasElement], 
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(canvas.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(req: IncomingMessage, res: ServerResponse): Unit = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(req: IncomingMessage, res: ServerResponse, opts: ToBufferOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(req: IncomingMessage, res: ServerResponse[IncomingMessage]): Unit = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(req: IncomingMessage, res: ServerResponse[IncomingMessage], opts: ToBufferOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("bwip-js", JSImport.Namespace)
   @js.native
@@ -56,7 +55,8 @@ object mod {
   
   inline def loadFont(fontName: String, sizeMulti: Double, fontFile: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(fontName.asInstanceOf[js.Any], sizeMulti.asInstanceOf[js.Any], fontFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def toBuffer(opts: ToBufferOptions, callback: js.Function2[/* err */ String | Error, /* png */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def toBuffer(opts: ToBufferOptions): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def toBuffer(opts: ToBufferOptions, callback: js.Function2[/* err */ String | js.Error, /* png */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def toCanvas(canvas: String, opts: ToBufferOptions): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
   inline def toCanvas(canvas: HTMLCanvasElement, opts: ToBufferOptions): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
@@ -71,7 +71,7 @@ object mod {
     
     var addontextyoffset: js.UndefOr[Double] = js.undefined
     
-    var alttext: js.UndefOr[Boolean] = js.undefined
+    var alttext: js.UndefOr[String] = js.undefined
     
     var backgroundcolor: js.UndefOr[String] = js.undefined
     
@@ -127,7 +127,7 @@ object mod {
     
     var parse: js.UndefOr[Boolean] = js.undefined
     
-    var parsefunc: js.UndefOr[Boolean] = js.undefined
+    var parsefnc: js.UndefOr[Boolean] = js.undefined
     
     var rotate: js.UndefOr[N | R | L | I] = js.undefined
     
@@ -186,7 +186,7 @@ object mod {
       
       inline def setAddontextyoffsetUndefined: Self = StObject.set(x, "addontextyoffset", js.undefined)
       
-      inline def setAlttext(value: Boolean): Self = StObject.set(x, "alttext", value.asInstanceOf[js.Any])
+      inline def setAlttext(value: String): Self = StObject.set(x, "alttext", value.asInstanceOf[js.Any])
       
       inline def setAlttextUndefined: Self = StObject.set(x, "alttext", js.undefined)
       
@@ -296,9 +296,9 @@ object mod {
       
       inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
-      inline def setParsefunc(value: Boolean): Self = StObject.set(x, "parsefunc", value.asInstanceOf[js.Any])
+      inline def setParsefnc(value: Boolean): Self = StObject.set(x, "parsefnc", value.asInstanceOf[js.Any])
       
-      inline def setParsefuncUndefined: Self = StObject.set(x, "parsefunc", js.undefined)
+      inline def setParsefncUndefined: Self = StObject.set(x, "parsefnc", js.undefined)
       
       inline def setRotate(value: N | R | L | I): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       

@@ -1,5 +1,6 @@
 package typings.kendoUi.kendo.ui
 
+import typings.kendoUi.kendo.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +13,12 @@ trait FlatColorPickerOptions extends StObject {
   
   var change: js.UndefOr[js.Function1[/* e */ FlatColorPickerChangeEvent, Unit]] = js.undefined
   
+  var contrastTool: js.UndefOr[Boolean | FlatColorPickerContrastTool] = js.undefined
+  
+  var format: js.UndefOr[String] = js.undefined
+  
+  var formats: js.UndefOr[Any] = js.undefined
+  
   var messages: js.UndefOr[FlatColorPickerMessages] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
@@ -20,7 +27,7 @@ trait FlatColorPickerOptions extends StObject {
   
   var preview: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String | Color] = js.undefined
 }
 object FlatColorPickerOptions {
   
@@ -43,6 +50,18 @@ object FlatColorPickerOptions {
     
     inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
+    inline def setContrastTool(value: Boolean | FlatColorPickerContrastTool): Self = StObject.set(x, "contrastTool", value.asInstanceOf[js.Any])
+    
+    inline def setContrastToolUndefined: Self = StObject.set(x, "contrastTool", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setFormats(value: Any): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+    
+    inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+    
     inline def setMessages(value: FlatColorPickerMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
@@ -59,7 +78,7 @@ object FlatColorPickerOptions {
     
     inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
-    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Color): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

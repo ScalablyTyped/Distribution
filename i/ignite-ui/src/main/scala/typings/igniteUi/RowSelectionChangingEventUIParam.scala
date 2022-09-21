@@ -14,17 +14,17 @@ trait RowSelectionChangingEventUIParam extends StObject {
   /**
     * Gets reference to GridSelection.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets reference to the row object.
     */
-  var row: js.UndefOr[js.Any] = js.undefined
+  var row: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets reference to rows object array.
     */
-  var selectedRows: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var selectedRows: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets the start index for a range row selection.
@@ -44,19 +44,19 @@ object RowSelectionChangingEventUIParam {
     
     inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
     inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
-    inline def setSelectedRows(value: js.Array[js.Any]): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
+    inline def setSelectedRows(value: js.Array[Any]): Self = StObject.set(x, "selectedRows", value.asInstanceOf[js.Any])
     
     inline def setSelectedRowsUndefined: Self = StObject.set(x, "selectedRows", js.undefined)
     
-    inline def setSelectedRowsVarargs(value: js.Any*): Self = StObject.set(x, "selectedRows", js.Array(value :_*))
+    inline def setSelectedRowsVarargs(value: Any*): Self = StObject.set(x, "selectedRows", js.Array(value*))
     
     inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object styleScoperMod {
   
-  @JSImport("vue-inbrowser-compiler-utils/lib/styleScoper", JSImport.Namespace)
+  @JSImport("vue-inbrowser-compiler-utils/lib/types/styleScoper", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

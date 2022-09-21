@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "WebRequestEmptyError")
 @js.native
-class WebRequestEmptyError protected () extends SurveyError {
+open class WebRequestEmptyError protected () extends SurveyError {
   def this(text: String) = this()
   def this(text: String, errorOwner: ISurveyErrorOwner) = this()
 }

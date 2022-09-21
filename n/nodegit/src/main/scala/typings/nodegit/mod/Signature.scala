@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Signature")
 @js.native
-class Signature ()
+open class Signature ()
   extends typings.nodegit.signatureMod.Signature
 /* static members */
 object Signature {
@@ -15,7 +15,7 @@ object Signature {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(repo: typings.nodegit.repositoryMod.Repository): typings.nodegit.signatureMod.Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(repo.asInstanceOf[js.Any]).asInstanceOf[typings.nodegit.signatureMod.Signature]
+  inline def default(repo: typings.nodegit.repositoryMod.Repository): js.Promise[typings.nodegit.signatureMod.Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodegit.signatureMod.Signature]]
   
   inline def create(name: String, email: String, time: Double, offset: Double): typings.nodegit.signatureMod.Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], email.asInstanceOf[js.Any], time.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.nodegit.signatureMod.Signature]
   

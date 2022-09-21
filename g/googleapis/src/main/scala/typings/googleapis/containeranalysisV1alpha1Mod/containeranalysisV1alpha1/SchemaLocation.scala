@@ -4,25 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An occurrence of a particular package installation found within a
-  * system&#39;s filesystem. e.g. glibc was found in /var/lib/dpkg/status
-  */
 trait SchemaLocation extends StObject {
   
   /**
-    * The cpe_uri in [cpe format](https://cpe.mitre.org/specification/)
-    * denoting the package manager version distributing a package.
+    * Deprecated. The cpe_uri in [cpe format](https://cpe.mitre.org/specification/) denoting the package manager version distributing a package.
     */
-  var cpeUri: js.UndefOr[String] = js.undefined
+  var cpeUri: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The path from which we gathered that this package/version is installed.
     */
-  var path: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The version installed at this location.
+    * Deprecated. The version installed at this location.
     */
   var version: js.UndefOr[SchemaVersion] = js.undefined
 }
@@ -37,9 +32,13 @@ object SchemaLocation {
     
     inline def setCpeUri(value: String): Self = StObject.set(x, "cpeUri", value.asInstanceOf[js.Any])
     
+    inline def setCpeUriNull: Self = StObject.set(x, "cpeUri", null)
+    
     inline def setCpeUriUndefined: Self = StObject.set(x, "cpeUri", js.undefined)
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathNull: Self = StObject.set(x, "path", null)
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     

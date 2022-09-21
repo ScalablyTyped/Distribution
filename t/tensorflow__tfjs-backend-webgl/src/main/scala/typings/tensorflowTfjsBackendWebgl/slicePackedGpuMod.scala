@@ -1,8 +1,6 @@
 package typings.tensorflowTfjsBackendWebgl
 
-import typings.std.WebGLProgram
-import typings.std.WebGLUniformLocation
-import typings.tensorflowTfjsBackendWebgl.gpgpuContextMod.GPGPUContext
+import typings.tensorflowTfjsBackendWebgl.anon.ArrayIndexName
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,12 +10,13 @@ object slicePackedGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/slice_packed_gpu", "SlicePackedProgram")
   @js.native
-  class SlicePackedProgram protected ()
+  open class SlicePackedProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(destSize: js.Array[Double]) = this()
     
-    def getCustomSetupFunc(start: js.Array[Double]): js.Function2[/* gpgpu */ GPGPUContext, /* webGLProgram */ WebGLProgram, Unit] = js.native
+    @JSName("customUniforms")
+    var customUniforms_SlicePackedProgram: js.Array[ArrayIndexName] = js.native
     
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native
@@ -29,8 +28,6 @@ object slicePackedGpuMod {
     var packedOutput_SlicePackedProgram: Boolean = js.native
     
     var rank: Double = js.native
-    
-    var startLoc: WebGLUniformLocation = js.native
     
     /* CompleteClass */
     var userCode: String = js.native

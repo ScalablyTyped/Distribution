@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MethodDescriptor
   extends StObject
      with Descriptor
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var description: js.UndefOr[String] = js.undefined
   
@@ -41,7 +41,7 @@ object MethodDescriptor {
     
     inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
-    inline def setModifiersVarargs(value: String*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: String*): Self = StObject.set(x, "modifiers", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object MethodDescriptor {
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setParamsVarargs(value: Param*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: Param*): Self = StObject.set(x, "params", js.Array(value*))
     
     inline def setReturns(value: UnnamedParam): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
     

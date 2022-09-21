@@ -13,5 +13,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addChecksumHeaders(Sha256: HashConstructor, fromUtf8: Decoder): BuildMiddleware[js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("addChecksumHeaders")(Sha256.asInstanceOf[js.Any], fromUtf8.asInstanceOf[js.Any])).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
+  inline def addChecksumHeaders(Sha256: HashConstructor, fromUtf8: Decoder): BuildMiddleware[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("addChecksumHeaders")(Sha256.asInstanceOf[js.Any], fromUtf8.asInstanceOf[js.Any])).asInstanceOf[BuildMiddleware[Any, Any]]
 }

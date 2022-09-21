@@ -1,6 +1,6 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,12 @@ trait GetOpenIdTokenForDeveloperIdentityInput extends StObject {
     *          identifier from your backend that uniquely identifies a user. When you create an identity
     *          pool, you can specify the supported logins.</p>
     */
-  var Logins: js.UndefOr[StringDictionary[String]] = js.undefined
+  var Logins: js.UndefOr[Record[String, String]] = js.undefined
+  
+  /**
+    * <p>Use this operation to configure attribute mappings for custom providers. </p>
+    */
+  var PrincipalTags: js.UndefOr[Record[String, String]] = js.undefined
   
   /**
     * <p>The expiration time of the token, in seconds. You can specify a custom expiration
@@ -50,12 +55,6 @@ object GetOpenIdTokenForDeveloperIdentityInput {
     __obj.asInstanceOf[GetOpenIdTokenForDeveloperIdentityInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "GetOpenIdTokenForDeveloperIdentityInput")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: GetOpenIdTokenForDeveloperIdentityInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: GetOpenIdTokenForDeveloperIdentityInput](x: Self) {
     
     inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
@@ -66,9 +65,13 @@ object GetOpenIdTokenForDeveloperIdentityInput {
     
     inline def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
     
-    inline def setLogins(value: StringDictionary[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+    inline def setLogins(value: Record[String, String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
     
     inline def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
+    
+    inline def setPrincipalTags(value: Record[String, String]): Self = StObject.set(x, "PrincipalTags", value.asInstanceOf[js.Any])
+    
+    inline def setPrincipalTagsUndefined: Self = StObject.set(x, "PrincipalTags", js.undefined)
     
     inline def setTokenDuration(value: Double): Self = StObject.set(x, "TokenDuration", value.asInstanceOf[js.Any])
     

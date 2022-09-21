@@ -10,15 +10,12 @@ JSON in JavaScript
 | ------------------ | :-------------: |
 | Full name          | json-js |
 | Keywords           | cyclic, json, cycle, parsing |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 33313 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1242.6666666666667 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/cangosta/JSON-js#readme)
-- [Bugs](https://github.com/cangosta/JSON-js/issues)
-- [Repository](https://github.com/cangosta/JSON-js)
 - [Npm](https://www.npmjs.com/package/json-js)
     
 

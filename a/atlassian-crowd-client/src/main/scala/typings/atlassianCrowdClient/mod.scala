@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("atlassian-crowd-client", JSImport.Namespace)
   @js.native
-  class ^ protected () extends CrowdClient {
+  open class ^ protected () extends CrowdClient {
     def this(settings: Settings) = this()
   }
   

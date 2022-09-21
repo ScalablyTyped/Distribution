@@ -23,6 +23,6 @@ object Parameter {
     
     inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
-    inline def setParameterVarargs(value: NestedParameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
+    inline def setParameterVarargs(value: NestedParameter*): Self = StObject.set(x, "parameter", js.Array(value*))
   }
 }

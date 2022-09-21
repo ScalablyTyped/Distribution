@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BuildQueuedEvent = typings.vsoNodeApi.buildInterfacesMod.BuildUpdatedEvent
+type BuildQueuedEvent = BuildUpdatedEvent
 
-type BuildStartedEvent = typings.vsoNodeApi.buildInterfacesMod.BuildUpdatedEvent
+type BuildStartedEvent = BuildUpdatedEvent
 
-type SyncBuildCompletedEvent = typings.vsoNodeApi.buildInterfacesMod.BuildUpdatedEvent
+type SyncBuildCompletedEvent = BuildUpdatedEvent
 
-type SyncBuildStartedEvent = typings.vsoNodeApi.buildInterfacesMod.BuildUpdatedEvent
+type SyncBuildStartedEvent = BuildUpdatedEvent

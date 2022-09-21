@@ -1,8 +1,11 @@
 package typings.reactNative.mod
 
 import typings.reactNative.anon.Start
+import typings.reactNative.reactNativeStrings.center
 import typings.reactNative.reactNativeStrings.characters
+import typings.reactNative.reactNativeStrings.left
 import typings.reactNative.reactNativeStrings.none
+import typings.reactNative.reactNativeStrings.right
 import typings.reactNative.reactNativeStrings.sentences
 import typings.reactNative.reactNativeStrings.words
 import org.scalablytyped.runtime.StObject
@@ -157,6 +160,16 @@ trait TextInputProps
   var onKeyPress: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputKeyPressEventData], Unit]] = js.undefined
   
   /**
+    * Callback that is called when a touch is engaged.
+    */
+  var onPressIn: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.undefined
+  
+  /**
+    * Callback that is called when a touch is released.
+    */
+  var onPressOut: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[NativeTouchEvent], Unit]] = js.undefined
+  
+  /**
     * Invoked on content scroll with
     *  `{ nativeEvent: { contentOffset: { x, y } } }`.
     *
@@ -229,6 +242,11 @@ trait TextInputProps
     */
   @JSName("style")
   var style_TextInputProps: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  
+  /**
+    * Align the input text to the left, center, or right sides of the input field.
+    */
+  var textAlign: js.UndefOr[left | center | right] = js.undefined
   
   /**
     * The value to show for the text input. TextInput is a controlled component,
@@ -334,6 +352,14 @@ object TextInputProps {
     
     inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
     
+    inline def setOnPressIn(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
+    
+    inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+    
+    inline def setOnPressOut(value: /* e */ NativeSyntheticEvent[NativeTouchEvent] => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
+    
+    inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
+    
     inline def setOnScroll(value: /* e */ NativeSyntheticEvent[TextInputScrollEventData] => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
@@ -383,6 +409,10 @@ object TextInputProps {
     inline def setStyleNull: Self = StObject.set(x, "style", null)
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTextAlign(value: left | center | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    
+    inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

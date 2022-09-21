@@ -1,7 +1,7 @@
 package typings.cliSpinner
 
 import typings.cliSpinner.anon.TypeofSpinner
-import typings.node.NodeJS.WritableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +10,11 @@ object mod {
   
   @JSImport("cli-spinner", "Spinner")
   @js.native
-  class Spinner () extends StObject {
+  open class Spinner () extends StObject {
     def this(titleOrOptions: String) = this()
     def this(titleOrOptions: Options) = this()
     
-    def clearLine(stream: WritableStream): this.type = js.native
+    def clearLine(stream: WritableStream[Any]): this.type = js.native
     
     def isSpinning(): Boolean = js.native
     
@@ -30,7 +30,7 @@ object mod {
     def stop(): this.type = js.native
     def stop(clear: Boolean): this.type = js.native
     
-    val stream: WritableStream = js.native
+    val stream: WritableStream[Any] = js.native
   }
   /* static members */
   object Spinner {
@@ -49,7 +49,7 @@ object mod {
     
     var onTick: js.UndefOr[js.ThisFunction1[/* this */ Spinner, /* msg */ String, Unit]] = js.undefined
     
-    var stream: js.UndefOr[WritableStream] = js.undefined
+    var stream: js.UndefOr[WritableStream[Any]] = js.undefined
     
     var text: js.UndefOr[String] = js.undefined
   }
@@ -66,7 +66,7 @@ object mod {
       
       inline def setOnTickUndefined: Self = StObject.set(x, "onTick", js.undefined)
       
-      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       

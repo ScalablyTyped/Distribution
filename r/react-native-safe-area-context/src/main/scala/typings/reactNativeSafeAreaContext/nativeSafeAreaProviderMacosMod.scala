@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object nativeSafeAreaProviderMacosMod {
   
-  @JSImport("react-native-safe-area-context/lib/typescript/src/NativeSafeAreaProvider.macos", JSImport.Namespace)
+  @JSImport("react-native-safe-area-context/lib/typescript/NativeSafeAreaProvider.macos", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasChildrenStyleOnInsetsChange: NativeSafeAreaProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenStyleOnInsetsChange.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def NativeSafeAreaProvider(hasChildrenStyleOnInsetsChange: NativeSafeAreaProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NativeSafeAreaProvider")(hasChildrenStyleOnInsetsChange.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

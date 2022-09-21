@@ -12,31 +12,31 @@ object loadingCoverMod {
   
   @JSImport("playable/dist/src/modules/ui/loading-cover/loading-cover", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with LoadingCover {
     def this(hasEventEmitterEngineBottomBlockRootContainer: BottomBlockEngine) = this()
     
     /* private */ /* CompleteClass */
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _bottomBlock: js.Any = js.native
+    var _bottomBlock: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _checkForWaitingState: js.Any = js.native
+    var _checkForWaitingState: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _engine: js.Any = js.native
+    var _engine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initUI: js.Any = js.native
+    var _initUI: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -86,19 +86,19 @@ object loadingCoverMod {
     extends StObject
        with ILoadingCover {
     
-    /* private */ var _bindEvents: js.Any
+    /* private */ var _bindEvents: Any
     
-    /* private */ var _bottomBlock: js.Any
+    /* private */ var _bottomBlock: Any
     
-    /* private */ var _checkForWaitingState: js.Any
+    /* private */ var _checkForWaitingState: Any
     
-    /* private */ var _engine: js.Any
+    /* private */ var _engine: Any
     
-    /* private */ var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: Any
     
-    /* private */ var _initUI: js.Any
+    /* private */ var _initUI: Any
     
-    /* private */ var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: Any
     
     var isHidden: Boolean
     
@@ -107,13 +107,13 @@ object loadingCoverMod {
   object LoadingCover {
     
     inline def apply(
-      _bindEvents: js.Any,
-      _bottomBlock: js.Any,
-      _checkForWaitingState: js.Any,
-      _engine: js.Any,
-      _eventEmitter: js.Any,
-      _initUI: js.Any,
-      _unbindEvents: js.Any,
+      _bindEvents: Any,
+      _bottomBlock: Any,
+      _checkForWaitingState: Any,
+      _engine: Any,
+      _eventEmitter: Any,
+      _initUI: Any,
+      _unbindEvents: Any,
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -132,19 +132,19 @@ object loadingCoverMod {
       
       inline def setView(value: typings.playable.loadingCoverViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      inline def set_bottomBlock(value: js.Any): Self = StObject.set(x, "_bottomBlock", value.asInstanceOf[js.Any])
+      inline def set_bottomBlock(value: Any): Self = StObject.set(x, "_bottomBlock", value.asInstanceOf[js.Any])
       
-      inline def set_checkForWaitingState(value: js.Any): Self = StObject.set(x, "_checkForWaitingState", value.asInstanceOf[js.Any])
+      inline def set_checkForWaitingState(value: Any): Self = StObject.set(x, "_checkForWaitingState", value.asInstanceOf[js.Any])
       
-      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
     }
   }
 }

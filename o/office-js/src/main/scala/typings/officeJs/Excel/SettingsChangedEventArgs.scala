@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the setting that raised the settings changed event
   *
-  * Provides information about the setting that raised the SettingsChanged event
-  *
+  * @remarks
   * [Api set: ExcelApi 1.4]
   */
 trait SettingsChangedEventArgs extends StObject {
   
   /**
+    * Gets the `Setting` object that represents the binding that raised the settings changed event
     *
-    * Gets the Setting object that represents the binding that raised the SettingsChanged event
-    *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   var settings: SettingCollection

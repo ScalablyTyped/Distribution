@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionSelectBaseImplementor")
 @js.native
-class QuestionSelectBaseImplementor protected () extends QuestionImplementor {
-  def this(question: Question) = this()
+open class QuestionSelectBaseImplementor protected () extends QuestionImplementor {
+  def this(question: Any) = this()
   
-  /* protected */ val isOtherSelected: Boolean = js.native
+  /* protected */ def isOtherSelected: Boolean = js.native
   
   /* protected */ def onCreated(): Unit = js.native
 }

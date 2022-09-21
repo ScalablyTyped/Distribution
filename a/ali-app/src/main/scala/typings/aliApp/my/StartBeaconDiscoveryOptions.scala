@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region iBeacon https://docs.alipay.com/mini/api/yqleyc
 trait StartBeaconDiscoveryOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   @JSName("success")
   var success_StartBeaconDiscoveryOptions: js.UndefOr[js.Function1[/* res */ ErrMsgResponse, Unit]] = js.undefined
@@ -32,6 +32,6 @@ object StartBeaconDiscoveryOptions {
     
     inline def setUuids(value: js.Array[String]): Self = StObject.set(x, "uuids", value.asInstanceOf[js.Any])
     
-    inline def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
+    inline def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value*))
   }
 }

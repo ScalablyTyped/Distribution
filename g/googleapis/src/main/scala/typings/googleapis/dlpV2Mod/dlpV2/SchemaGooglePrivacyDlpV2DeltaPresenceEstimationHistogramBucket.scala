@@ -4,40 +4,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A DeltaPresenceEstimationHistogramBucket message with the following values:
-  * min_probability: 0.1   max_probability: 0.2   frequency: 42 means that
-  * there are 42 records for which δ is in [0.1, 0.2). An important particular
-  * case is when min_probability = max_probability = 1: then, every individual
-  * who shares this quasi-identifier combination is in the dataset.
-  */
 trait SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket extends StObject {
   
   /**
     * Number of records within these probability bounds.
     */
-  var bucketSize: js.UndefOr[String] = js.undefined
+  var bucketSize: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Total number of distinct quasi-identifier tuple values in this bucket.
     */
-  var bucketValueCount: js.UndefOr[String] = js.undefined
+  var bucketValueCount: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Sample of quasi-identifier tuple values in this bucket. The total number
-    * of classes returned per bucket is capped at 20.
+    * Sample of quasi-identifier tuple values in this bucket. The total number of classes returned per bucket is capped at 20.
     */
   var bucketValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues]] = js.undefined
   
   /**
     * Always greater than or equal to min_probability.
     */
-  var maxProbability: js.UndefOr[Double] = js.undefined
+  var maxProbability: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Between 0 and 1.
     */
-  var minProbability: js.UndefOr[Double] = js.undefined
+  var minProbability: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket {
   
@@ -50,9 +42,13 @@ object SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket {
     
     inline def setBucketSize(value: String): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
     
+    inline def setBucketSizeNull: Self = StObject.set(x, "bucketSize", null)
+    
     inline def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
     
     inline def setBucketValueCount(value: String): Self = StObject.set(x, "bucketValueCount", value.asInstanceOf[js.Any])
+    
+    inline def setBucketValueCountNull: Self = StObject.set(x, "bucketValueCount", null)
     
     inline def setBucketValueCountUndefined: Self = StObject.set(x, "bucketValueCount", js.undefined)
     
@@ -60,13 +56,17 @@ object SchemaGooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket {
     
     inline def setBucketValuesUndefined: Self = StObject.set(x, "bucketValues", js.undefined)
     
-    inline def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues*): Self = StObject.set(x, "bucketValues", js.Array(value :_*))
+    inline def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2DeltaPresenceEstimationQuasiIdValues*): Self = StObject.set(x, "bucketValues", js.Array(value*))
     
     inline def setMaxProbability(value: Double): Self = StObject.set(x, "maxProbability", value.asInstanceOf[js.Any])
+    
+    inline def setMaxProbabilityNull: Self = StObject.set(x, "maxProbability", null)
     
     inline def setMaxProbabilityUndefined: Self = StObject.set(x, "maxProbability", js.undefined)
     
     inline def setMinProbability(value: Double): Self = StObject.set(x, "minProbability", value.asInstanceOf[js.Any])
+    
+    inline def setMinProbabilityNull: Self = StObject.set(x, "minProbability", null)
     
     inline def setMinProbabilityUndefined: Self = StObject.set(x, "minProbability", js.undefined)
   }

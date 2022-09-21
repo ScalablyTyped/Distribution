@@ -10,16 +10,16 @@ trait MochaSetupOptions extends StObject {
   var bail: js.UndefOr[Boolean] = js.undefined
   
   //array of accepted globals
-  var globals: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var globals: js.UndefOr[js.Array[Any]] = js.undefined
   
   // grep string or regexp to filter tests with
-  var grep: js.UndefOr[js.Any] = js.undefined
+  var grep: js.UndefOr[Any] = js.undefined
   
   // ignore global leaks
   var ignoreLeaks: js.UndefOr[Boolean] = js.undefined
   
   // reporter instance (function or string), defaults to `mocha.reporters.Spec`
-  var reporter: js.UndefOr[js.Any] = js.undefined
+  var reporter: js.UndefOr[Any] = js.undefined
   
   //milliseconds to wait before considering a test slow
   var slow: js.UndefOr[Double] = js.undefined
@@ -43,13 +43,13 @@ object MochaSetupOptions {
     
     inline def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
     
-    inline def setGlobals(value: js.Array[js.Any]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+    inline def setGlobals(value: js.Array[Any]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
     inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
     
-    inline def setGlobalsVarargs(value: js.Any*): Self = StObject.set(x, "globals", js.Array(value :_*))
+    inline def setGlobalsVarargs(value: Any*): Self = StObject.set(x, "globals", js.Array(value*))
     
-    inline def setGrep(value: js.Any): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
+    inline def setGrep(value: Any): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
     
     inline def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
     
@@ -57,7 +57,7 @@ object MochaSetupOptions {
     
     inline def setIgnoreLeaksUndefined: Self = StObject.set(x, "ignoreLeaks", js.undefined)
     
-    inline def setReporter(value: js.Any): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+    inline def setReporter(value: Any): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
     
     inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
     

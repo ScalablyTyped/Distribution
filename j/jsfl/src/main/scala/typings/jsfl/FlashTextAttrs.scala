@@ -22,7 +22,7 @@ trait FlashTextAttrs
   
   var face: String
   
-  var fillColor: js.Any
+  var fillColor: Any
   
   var indent: Double
   
@@ -61,9 +61,9 @@ object FlashTextAttrs {
     description: String,
     embeddedCharacters: String,
     face: String,
-    fillColor: js.Any,
-    getTextAttr: () => js.Any,
-    getTextString: () => js.Any,
+    fillColor: Any,
+    getTextAttr: () => Any,
+    getTextString: () => Any,
     indent: Double,
     italic: Boolean,
     leftMargin: Double,
@@ -71,8 +71,8 @@ object FlashTextAttrs {
     lineSpacing: Double,
     rightMargin: Double,
     rotation: Boolean,
-    setTextAttr: () => js.Any,
-    setTextString: () => js.Any,
+    setTextAttr: () => Any,
+    setTextString: () => Any,
     size: Double,
     target: String,
     url: String
@@ -97,7 +97,7 @@ object FlashTextAttrs {
     
     inline def setFace(value: String): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
     
-    inline def setFillColor(value: js.Any): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: Any): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
     inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     

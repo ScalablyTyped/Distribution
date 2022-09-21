@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "DeviceScreenRotation")
 @js.native
-class DeviceScreenRotation ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class DeviceScreenRotation ()
+  extends Component[SvgIconProps, js.Object, Any]

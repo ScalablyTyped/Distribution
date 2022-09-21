@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Date
 import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -16,7 +15,7 @@ trait FetchResource
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#FetchResource)
     */
-  var created: Date
+  var created: js.Date
   
   /**
     * The fetched resources.
@@ -36,7 +35,7 @@ object FetchResource {
   
   inline def apply(
     constructor: js.Function,
-    created: Date,
+    created: js.Date,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     resource: PortalItemResource,
@@ -48,7 +47,7 @@ object FetchResource {
   
   extension [Self <: FetchResource](x: Self) {
     
-    inline def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setResource(value: PortalItemResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

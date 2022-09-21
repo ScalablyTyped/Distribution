@@ -4,30 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Orgunits")
 @js.native
-class ResourceOrgunits protected () extends StObject {
+open class ResourceOrgunits protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * directory.orgunits.delete
-    * @desc Remove organizational unit
-    * @alias directory.orgunits.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.customerId Immutable ID of the G Suite account
-    * @param {string} params.orgUnitPath Full path of the organizational unit or its ID
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
@@ -35,25 +24,65 @@ class ResourceOrgunits protected () extends StObject {
   def delete(params: ParamsResourceOrgunitsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
     params: ParamsResourceOrgunitsDelete,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
   ): Unit = js.native
   def delete(params: ParamsResourceOrgunitsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceOrgunitsDelete, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
-  
   /**
-    * directory.orgunits.get
-    * @desc Retrieve organizational unit
-    * @alias directory.orgunits.get
-    * @memberOf! ()
+    * Removes an organizational unit.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.customerId Immutable ID of the G Suite account
-    * @param {string} params.orgUnitPath Full path of the organizational unit or its ID
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/admin.directory.orgunit'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.orgunits.delete({
+    *     // The unique ID for the customer's Google Workspace account. As an account administrator, you can also use the `my_customer` alias to represent your account's `customerId`. The `customerId` is also returned as part of the [Users resource](/admin-sdk/directory/v1/reference/users).
+    *     customerId: 'placeholder-value',
+    *     // The full path of the organizational unit (minus the leading `/`) or its unique ID.
+    *     orgUnitPath: '.*',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceOrgunitsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceOrgunitsDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaOrgUnit] = js.native
   def get(callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrgUnit] = js.native
@@ -61,8 +90,8 @@ class ResourceOrgunits protected () extends StObject {
   def get(params: ParamsResourceOrgunitsGet, callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
   def get(
     params: ParamsResourceOrgunitsGet,
-    options: BodyResponseCallback[SchemaOrgUnit],
-    callback: BodyResponseCallback[SchemaOrgUnit]
+    options: BodyResponseCallback[Readable | SchemaOrgUnit],
+    callback: BodyResponseCallback[Readable | SchemaOrgUnit]
   ): Unit = js.native
   def get(params: ParamsResourceOrgunitsGet, options: MethodOptions): GaxiosPromise[SchemaOrgUnit] = js.native
   def get(
@@ -70,20 +99,76 @@ class ResourceOrgunits protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrgUnit]
   ): Unit = js.native
-  
   /**
-    * directory.orgunits.insert
-    * @desc Add organizational unit
-    * @alias directory.orgunits.insert
-    * @memberOf! ()
+    * Retrieves an organizational unit.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.customerId Immutable ID of the G Suite account
-    * @param {().OrgUnit} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/admin.directory.orgunit',
+    *       'https://www.googleapis.com/auth/admin.directory.orgunit.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.orgunits.get({
+    *     // The unique ID for the customer's Google Workspace account. As an account administrator, you can also use the `my_customer` alias to represent your account's `customerId`. The `customerId` is also returned as part of the [Users resource](/admin-sdk/directory/v1/reference/users).
+    *     customerId: 'placeholder-value',
+    *     // The full path of the organizational unit (minus the leading `/`) or its unique ID.
+    *     orgUnitPath: '.*',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "blockInheritance": false,
+    *   //   "description": "my_description",
+    *   //   "etag": "my_etag",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "orgUnitId": "my_orgUnitId",
+    *   //   "orgUnitPath": "my_orgUnitPath",
+    *   //   "parentOrgUnitId": "my_parentOrgUnitId",
+    *   //   "parentOrgUnitPath": "my_parentOrgUnitPath"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceOrgunitsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceOrgunitsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaOrgUnit] = js.native
   def insert(callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrgUnit] = js.native
@@ -91,8 +176,8 @@ class ResourceOrgunits protected () extends StObject {
   def insert(params: ParamsResourceOrgunitsInsert, callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
   def insert(
     params: ParamsResourceOrgunitsInsert,
-    options: BodyResponseCallback[SchemaOrgUnit],
-    callback: BodyResponseCallback[SchemaOrgUnit]
+    options: BodyResponseCallback[Readable | SchemaOrgUnit],
+    callback: BodyResponseCallback[Readable | SchemaOrgUnit]
   ): Unit = js.native
   def insert(params: ParamsResourceOrgunitsInsert, options: MethodOptions): GaxiosPromise[SchemaOrgUnit] = js.native
   def insert(
@@ -100,21 +185,87 @@ class ResourceOrgunits protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrgUnit]
   ): Unit = js.native
-  
   /**
-    * directory.orgunits.list
-    * @desc Retrieve all organizational units
-    * @alias directory.orgunits.list
-    * @memberOf! ()
+    * Adds an organizational unit.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.customerId Immutable ID of the G Suite account
-    * @param {string=} params.orgUnitPath the URL-encoded organizational unit's path or its ID
-    * @param {string=} params.type Whether to return all sub-organizations or just immediate children
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/admin.directory.orgunit'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.orgunits.insert({
+    *     // The unique ID for the customer's Google Workspace account. As an account administrator, you can also use the `my_customer` alias to represent your account's `customerId`. The `customerId` is also returned as part of the [Users resource](/admin-sdk/directory/v1/reference/users).
+    *     customerId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "blockInheritance": false,
+    *       //   "description": "my_description",
+    *       //   "etag": "my_etag",
+    *       //   "kind": "my_kind",
+    *       //   "name": "my_name",
+    *       //   "orgUnitId": "my_orgUnitId",
+    *       //   "orgUnitPath": "my_orgUnitPath",
+    *       //   "parentOrgUnitId": "my_parentOrgUnitId",
+    *       //   "parentOrgUnitPath": "my_parentOrgUnitPath"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "blockInheritance": false,
+    *   //   "description": "my_description",
+    *   //   "etag": "my_etag",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "orgUnitId": "my_orgUnitId",
+    *   //   "orgUnitPath": "my_orgUnitPath",
+    *   //   "parentOrgUnitId": "my_parentOrgUnitId",
+    *   //   "parentOrgUnitPath": "my_parentOrgUnitPath"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceOrgunitsInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceOrgunitsInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaOrgUnits] = js.native
   def list(callback: BodyResponseCallback[SchemaOrgUnits]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrgUnits] = js.native
@@ -122,8 +273,8 @@ class ResourceOrgunits protected () extends StObject {
   def list(params: ParamsResourceOrgunitsList, callback: BodyResponseCallback[SchemaOrgUnits]): Unit = js.native
   def list(
     params: ParamsResourceOrgunitsList,
-    options: BodyResponseCallback[SchemaOrgUnits],
-    callback: BodyResponseCallback[SchemaOrgUnits]
+    options: BodyResponseCallback[Readable | SchemaOrgUnits],
+    callback: BodyResponseCallback[Readable | SchemaOrgUnits]
   ): Unit = js.native
   def list(params: ParamsResourceOrgunitsList, options: MethodOptions): GaxiosPromise[SchemaOrgUnits] = js.native
   def list(
@@ -131,21 +282,72 @@ class ResourceOrgunits protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrgUnits]
   ): Unit = js.native
-  
   /**
-    * directory.orgunits.patch
-    * @desc Update organizational unit. This method supports patch semantics.
-    * @alias directory.orgunits.patch
-    * @memberOf! ()
+    * Retrieves a list of all organizational units for an account.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.customerId Immutable ID of the G Suite account
-    * @param {string} params.orgUnitPath Full path of the organizational unit or its ID
-    * @param {().OrgUnit} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/admin.directory.orgunit',
+    *       'https://www.googleapis.com/auth/admin.directory.orgunit.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.orgunits.list({
+    *     // The unique ID for the customer's Google Workspace account. As an account administrator, you can also use the `my_customer` alias to represent your account's `customerId`. The `customerId` is also returned as part of the [Users resource](/admin-sdk/directory/v1/reference/users).
+    *     customerId: 'placeholder-value',
+    *     // The full path to the organizational unit or its unique ID. Returns the children of the specified organizational unit.
+    *     orgUnitPath: 'placeholder-value',
+    *     // Whether to return all sub-organizations or just immediate children.
+    *     type: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "kind": "my_kind",
+    *   //   "organizationUnits": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceOrgunitsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceOrgunitsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaOrgUnit] = js.native
   def patch(callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrgUnit] = js.native
@@ -153,8 +355,8 @@ class ResourceOrgunits protected () extends StObject {
   def patch(params: ParamsResourceOrgunitsPatch, callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
   def patch(
     params: ParamsResourceOrgunitsPatch,
-    options: BodyResponseCallback[SchemaOrgUnit],
-    callback: BodyResponseCallback[SchemaOrgUnit]
+    options: BodyResponseCallback[Readable | SchemaOrgUnit],
+    callback: BodyResponseCallback[Readable | SchemaOrgUnit]
   ): Unit = js.native
   def patch(params: ParamsResourceOrgunitsPatch, options: MethodOptions): GaxiosPromise[SchemaOrgUnit] = js.native
   def patch(
@@ -162,21 +364,89 @@ class ResourceOrgunits protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrgUnit]
   ): Unit = js.native
-  
   /**
-    * directory.orgunits.update
-    * @desc Update organizational unit
-    * @alias directory.orgunits.update
-    * @memberOf! ()
+    * Updates an organizational unit. This method supports [patch semantics](/admin-sdk/directory/v1/guides/performance#patch)
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.customerId Immutable ID of the G Suite account
-    * @param {string} params.orgUnitPath Full path of the organizational unit or its ID
-    * @param {().OrgUnit} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/admin.directory.orgunit'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.orgunits.patch({
+    *     // The unique ID for the customer's Google Workspace account. As an account administrator, you can also use the `my_customer` alias to represent your account's `customerId`. The `customerId` is also returned as part of the [Users resource](/admin-sdk/directory/v1/reference/users).
+    *     customerId: 'placeholder-value',
+    *     // The full path of the organizational unit (minus the leading `/`) or its unique ID.
+    *     orgUnitPath: '.*',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "blockInheritance": false,
+    *       //   "description": "my_description",
+    *       //   "etag": "my_etag",
+    *       //   "kind": "my_kind",
+    *       //   "name": "my_name",
+    *       //   "orgUnitId": "my_orgUnitId",
+    *       //   "orgUnitPath": "my_orgUnitPath",
+    *       //   "parentOrgUnitId": "my_parentOrgUnitId",
+    *       //   "parentOrgUnitPath": "my_parentOrgUnitPath"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "blockInheritance": false,
+    *   //   "description": "my_description",
+    *   //   "etag": "my_etag",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "orgUnitId": "my_orgUnitId",
+    *   //   "orgUnitPath": "my_orgUnitPath",
+    *   //   "parentOrgUnitId": "my_parentOrgUnitId",
+    *   //   "parentOrgUnitPath": "my_parentOrgUnitPath"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def patch(params: ParamsResourceOrgunitsPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceOrgunitsPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaOrgUnit] = js.native
   def update(callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrgUnit] = js.native
@@ -184,13 +454,95 @@ class ResourceOrgunits protected () extends StObject {
   def update(params: ParamsResourceOrgunitsUpdate, callback: BodyResponseCallback[SchemaOrgUnit]): Unit = js.native
   def update(
     params: ParamsResourceOrgunitsUpdate,
-    options: BodyResponseCallback[SchemaOrgUnit],
-    callback: BodyResponseCallback[SchemaOrgUnit]
+    options: BodyResponseCallback[Readable | SchemaOrgUnit],
+    callback: BodyResponseCallback[Readable | SchemaOrgUnit]
   ): Unit = js.native
   def update(params: ParamsResourceOrgunitsUpdate, options: MethodOptions): GaxiosPromise[SchemaOrgUnit] = js.native
   def update(
     params: ParamsResourceOrgunitsUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOrgUnit]
+  ): Unit = js.native
+  /**
+    * Updates an organizational unit.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/admin.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const admin = google.admin('directory_v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/admin.directory.orgunit'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await directory.orgunits.update({
+    *     // The unique ID for the customer's Google Workspace account. As an account administrator, you can also use the `my_customer` alias to represent your account's `customerId`. The `customerId` is also returned as part of the [Users resource](/admin-sdk/directory/v1/reference/users).
+    *     customerId: 'placeholder-value',
+    *     // The full path of the organizational unit (minus the leading `/`) or its unique ID.
+    *     orgUnitPath: '.*',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "blockInheritance": false,
+    *       //   "description": "my_description",
+    *       //   "etag": "my_etag",
+    *       //   "kind": "my_kind",
+    *       //   "name": "my_name",
+    *       //   "orgUnitId": "my_orgUnitId",
+    *       //   "orgUnitPath": "my_orgUnitPath",
+    *       //   "parentOrgUnitId": "my_parentOrgUnitId",
+    *       //   "parentOrgUnitPath": "my_parentOrgUnitPath"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "blockInheritance": false,
+    *   //   "description": "my_description",
+    *   //   "etag": "my_etag",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "orgUnitId": "my_orgUnitId",
+    *   //   "orgUnitPath": "my_orgUnitPath",
+    *   //   "parentOrgUnitId": "my_parentOrgUnitId",
+    *   //   "parentOrgUnitPath": "my_parentOrgUnitPath"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceOrgunitsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceOrgunitsUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.FieldCurrency")
 @js.native
-class FieldCurrency ()
+open class FieldCurrency ()
   extends StObject
      with typings.sharepoint.SP.FieldCurrency

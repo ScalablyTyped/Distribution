@@ -19,7 +19,7 @@ trait UserDefinedFunction extends StObject {
   /**
     * The time at which the function was created.
     */
-  var CreateTime: js.UndefOr[Timestamp] = js.undefined
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the catalog database that contains the function.
@@ -63,7 +63,7 @@ object UserDefinedFunction {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "ClassName", js.undefined)
     
-    inline def setCreateTime(value: Timestamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
@@ -87,6 +87,6 @@ object UserDefinedFunction {
     
     inline def setResourceUrisUndefined: Self = StObject.set(x, "ResourceUris", js.undefined)
     
-    inline def setResourceUrisVarargs(value: ResourceUri*): Self = StObject.set(x, "ResourceUris", js.Array(value :_*))
+    inline def setResourceUrisVarargs(value: ResourceUri*): Self = StObject.set(x, "ResourceUris", js.Array(value*))
   }
 }

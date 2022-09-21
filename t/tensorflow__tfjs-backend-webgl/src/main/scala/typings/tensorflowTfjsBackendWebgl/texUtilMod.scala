@@ -1,7 +1,5 @@
 package typings.tensorflowTfjsBackendWebgl
 
-import typings.std.Float32Array
-import typings.std.Uint8Array
 import typings.std.WebGLRenderingContext
 import typings.std.WebGLTexture
 import typings.tensorflowTfjsBackendWebgl.anon.FlatOffset
@@ -145,7 +143,7 @@ object texUtilMod {
     /* 1 */ val UPLOAD: typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureUsage.UPLOAD & Double = js.native
   }
   
-  inline def decodeMatrixFromUnpackedColorRGBAArray(unpackedArray: Float32Array, matrix: Float32Array, channels: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeMatrixFromUnpackedColorRGBAArray")(unpackedArray.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any], channels.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decodeMatrixFromUnpackedColorRGBAArray(unpackedArray: js.typedarray.Float32Array, matrix: js.typedarray.Float32Array, channels: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeMatrixFromUnpackedColorRGBAArray")(unpackedArray.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any], channels.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getColorMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorMatrixTextureShapeWidthHeight")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
@@ -158,11 +156,32 @@ object texUtilMod {
   inline def getPackedRGBAArraySizeFromMatrixShape(rows: Double, columns: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackedRGBAArraySizeFromMatrixShape")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def getTextureConfig(gl: WebGLRenderingContext): TextureConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextureConfig")(gl.asInstanceOf[js.Any]).asInstanceOf[TextureConfig]
-  inline def getTextureConfig(gl: WebGLRenderingContext, textureHalfFloatExtension: js.Any): TextureConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextureConfig")(gl.asInstanceOf[js.Any], textureHalfFloatExtension.asInstanceOf[js.Any])).asInstanceOf[TextureConfig]
+  inline def getTextureConfig(gl: WebGLRenderingContext, textureHalfFloatExtension: Any): TextureConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextureConfig")(gl.asInstanceOf[js.Any], textureHalfFloatExtension.asInstanceOf[js.Any])).asInstanceOf[TextureConfig]
   
   inline def getUnpackedArraySizeFromMatrixSize(matrixSize: Double, channelsPerTexture: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getUnpackedArraySizeFromMatrixSize")(matrixSize.asInstanceOf[js.Any], channelsPerTexture.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def getUnpackedMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUnpackedMatrixTextureShapeWidthHeight")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  
+  trait Texture extends StObject {
+    
+    var texShape: js.Tuple2[Double, Double]
+    
+    var texture: WebGLTexture
+  }
+  object Texture {
+    
+    inline def apply(texShape: js.Tuple2[Double, Double], texture: WebGLTexture): Texture = {
+      val __obj = js.Dynamic.literal(texShape = texShape.asInstanceOf[js.Any], texture = texture.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Texture]
+    }
+    
+    extension [Self <: Texture](x: Self) {
+      
+      inline def setTexShape(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "texShape", value.asInstanceOf[js.Any])
+      
+      inline def setTexture(value: WebGLTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait TextureConfig extends StObject {
     
@@ -230,8 +249,6 @@ object texUtilMod {
   
   trait TextureData extends StObject {
     
-    var complexParentRefCount: Double
-    
     var complexTensorInfos: js.UndefOr[Imag] = js.undefined
     
     var dtype: DataType
@@ -247,7 +264,7 @@ object texUtilMod {
     /** [rows, columns] shape of the texture. */
     var texShape: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var texture: js.UndefOr[WebGLTexture] = js.undefined
+    var texture: js.UndefOr[Texture] = js.undefined
     
     var usage: js.UndefOr[TextureUsage] = js.undefined
     
@@ -255,14 +272,12 @@ object texUtilMod {
   }
   object TextureData {
     
-    inline def apply(complexParentRefCount: Double, dtype: DataType, refCount: Double, shape: js.Array[Double]): TextureData = {
-      val __obj = js.Dynamic.literal(complexParentRefCount = complexParentRefCount.asInstanceOf[js.Any], dtype = dtype.asInstanceOf[js.Any], refCount = refCount.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
+    inline def apply(dtype: DataType, refCount: Double, shape: js.Array[Double]): TextureData = {
+      val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], refCount = refCount.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextureData]
     }
     
     extension [Self <: TextureData](x: Self) {
-      
-      inline def setComplexParentRefCount(value: Double): Self = StObject.set(x, "complexParentRefCount", value.asInstanceOf[js.Any])
       
       inline def setComplexTensorInfos(value: Imag): Self = StObject.set(x, "complexTensorInfos", value.asInstanceOf[js.Any])
       
@@ -278,7 +293,7 @@ object texUtilMod {
       
       inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value*))
       
       inline def setSlice(value: FlatOffset): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
       
@@ -288,7 +303,7 @@ object texUtilMod {
       
       inline def setTexShapeUndefined: Self = StObject.set(x, "texShape", js.undefined)
       
-      inline def setTexture(value: WebGLTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+      inline def setTexture(value: Texture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
       
       inline def setTextureUndefined: Self = StObject.set(x, "texture", js.undefined)
       
@@ -300,7 +315,7 @@ object texUtilMod {
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: Uint8Array*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
 }

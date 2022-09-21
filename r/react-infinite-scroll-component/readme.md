@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-infinite-scroll-component
 
-Typings are for version 4.2
+Typings are for version 6.1.0
 
 ## Library description:
 An Infinite Scroll component in react.
@@ -10,10 +10,10 @@ An Infinite Scroll component in react.
 | ------------------ | :-------------: |
 | Full name          | react-infinite-scroll-component |
 | Keywords           | react, infinite-scroll, infinite, scroll, component, react-component |
-| # releases         | 10 |
-| # dependents       | 42 |
-| # downloads        | 4251155 |
-| # stars            | 6 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1816560.3333333333 |
+| # stars            | 2008.0 |
 
 ## Links
 - [Homepage](https://github.com/ankeetmaini/react-infinite-scroll-component#readme)
@@ -24,7 +24,7 @@ An Infinite Scroll component in react.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

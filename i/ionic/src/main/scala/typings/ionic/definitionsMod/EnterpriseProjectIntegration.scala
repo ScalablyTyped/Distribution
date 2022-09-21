@@ -47,6 +47,6 @@ object EnterpriseProjectIntegration {
     
     inline def setRegistriesUndefined: Self = StObject.set(x, "registries", js.undefined)
     
-    inline def setRegistriesVarargs(value: String*): Self = StObject.set(x, "registries", js.Array(value :_*))
+    inline def setRegistriesVarargs(value: String*): Self = StObject.set(x, "registries", js.Array(value*))
   }
 }

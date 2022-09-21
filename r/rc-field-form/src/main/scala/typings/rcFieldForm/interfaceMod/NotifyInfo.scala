@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.rcFieldForm.interfaceMod.ValueUpdateInfo
   - typings.rcFieldForm.interfaceMod.ValidateFinishInfo
   - typings.rcFieldForm.interfaceMod.ResetInfo
+  - typings.rcFieldForm.interfaceMod.RemoveInfo
   - typings.rcFieldForm.interfaceMod.SetFieldInfo
   - typings.rcFieldForm.interfaceMod.DependenciesUpdateInfo
 */
@@ -20,6 +21,12 @@ object NotifyInfo {
     val __obj = js.Dynamic.literal(relatedFields = relatedFields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("dependenciesUpdate")
     __obj.asInstanceOf[typings.rcFieldForm.interfaceMod.DependenciesUpdateInfo]
+  }
+  
+  inline def RemoveInfo(): typings.rcFieldForm.interfaceMod.RemoveInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("remove")
+    __obj.asInstanceOf[typings.rcFieldForm.interfaceMod.RemoveInfo]
   }
   
   inline def ResetInfo(): typings.rcFieldForm.interfaceMod.ResetInfo = {

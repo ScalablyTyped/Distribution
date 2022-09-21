@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * gRPC channel credentials to access the SDS server.
-  */
 trait SchemaChannelCredentials extends StObject {
   
   /**
@@ -15,12 +12,9 @@ trait SchemaChannelCredentials extends StObject {
   var certificates: js.UndefOr[SchemaTlsCertificatePaths] = js.undefined
   
   /**
-    * The channel credentials to access the SDS server. This field can be set
-    * to one of the following: CERTIFICATES: Use TLS certificates to access the
-    * SDS server. GCE_VM: Use local GCE VM credentials to access the SDS
-    * server.
+    * The channel credentials to access the SDS server. This field can be set to one of the following: CERTIFICATES: Use TLS certificates to access the SDS server. GCE_VM: Use local GCE VM credentials to access the SDS server.
     */
-  var channelCredentialType: js.UndefOr[String] = js.undefined
+  var channelCredentialType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaChannelCredentials {
   
@@ -36,6 +30,8 @@ object SchemaChannelCredentials {
     inline def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
     
     inline def setChannelCredentialType(value: String): Self = StObject.set(x, "channelCredentialType", value.asInstanceOf[js.Any])
+    
+    inline def setChannelCredentialTypeNull: Self = StObject.set(x, "channelCredentialType", null)
     
     inline def setChannelCredentialTypeUndefined: Self = StObject.set(x, "channelCredentialType", js.undefined)
   }

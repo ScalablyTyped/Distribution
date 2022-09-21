@@ -1,69 +1,43 @@
 package typings.reactSketchapp
 
+import typings.propTypes.mod.InferProps
 import typings.react.mod.Component
-import typings.react.mod.ReactNode
-import typings.reactSketchapp.propsMod.NumberProp
-import typings.reactSketchapp.reactSketchappStrings.objectBoundingBox
-import typings.reactSketchapp.reactSketchappStrings.userSpaceOnUse
+import typings.reactSketchapp.anon.GradientUnits
+import typings.reactSketchapp.anon.X2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linearGradientMod {
   
-  @JSImport("react-sketchapp/lib/components/Svg/LinearGradient", JSImport.Default)
+  @JSImport("react-sketchapp/lib/components/Svg/LinearGradient", "LinearGradient")
   @js.native
-  class default ()
-    extends Component[LinearGradientProps, js.Object, js.Any]
-  
-  type LinearGradient = Component[LinearGradientProps, js.Object, js.Any]
-  
-  trait LinearGradientProps extends StObject {
-    
-    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
-    
-    var gradientUnits: js.UndefOr[objectBoundingBox | userSpaceOnUse] = js.undefined
-    
-    var id: js.UndefOr[String] = js.undefined
-    
-    var x1: NumberProp
-    
-    var x2: NumberProp
-    
-    var y1: NumberProp
-    
-    var y2: NumberProp
+  open class LinearGradient protected ()
+    extends Component[Props, js.Object, Any] {
+    def this(props: Props) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props, context: Any) = this()
   }
-  object LinearGradientProps {
+  /* static members */
+  object LinearGradient {
     
-    inline def apply(x1: NumberProp, x2: NumberProp, y1: NumberProp, y2: NumberProp): LinearGradientProps = {
-      val __obj = js.Dynamic.literal(x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
-      __obj.asInstanceOf[LinearGradientProps]
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/LinearGradient", "LinearGradient")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: LinearGradientProps](x: Self) {
-      
-      inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
-      
-      inline def setGradientUnits(value: objectBoundingBox | userSpaceOnUse): Self = StObject.set(x, "gradientUnits", value.asInstanceOf[js.Any])
-      
-      inline def setGradientUnitsUndefined: Self = StObject.set(x, "gradientUnits", js.undefined)
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-      
-      inline def setX1(value: NumberProp): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
-      
-      inline def setX2(value: NumberProp): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
-      
-      inline def setY1(value: NumberProp): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
-      
-      inline def setY2(value: NumberProp): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/LinearGradient", "LinearGradient.defaultProps")
+    @js.native
+    def defaultProps: X2 = js.native
+    inline def defaultProps_=(x: X2): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Svg/LinearGradient", "LinearGradient.propTypes")
+    @js.native
+    def propTypes: GradientUnits = js.native
+    inline def propTypes_=(x: GradientUnits): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
+  
+  type Props = InferProps[GradientUnits]
 }

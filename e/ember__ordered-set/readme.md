@@ -1,7 +1,7 @@
 
 # Scala.js typings for ember__ordered-set
 
-Typings are for version 2.0
+Typings are for version 4.0
 
 ## Library description:
 The default blueprint for ember-cli addons.
@@ -11,9 +11,9 @@ The default blueprint for ember-cli addons.
 | Full name          | @ember/ordered-set |
 | Keywords           | ember-addon |
 | # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 3821056 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 213114.66666666666 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/emberjs/ember-ordered-set#readme)

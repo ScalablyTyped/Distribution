@@ -39,7 +39,7 @@ trait ReplicationJob extends StObject {
   /**
     * The start time of the next replication run.
     */
-  var nextReplicationRunStartTime: js.UndefOr[Timestamp] = js.undefined
+  var nextReplicationRunStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The number of recent AMIs to keep in the customer's account for a replication job. By default, the value is set to zero, meaning that all AMIs are kept.
@@ -57,7 +57,7 @@ trait ReplicationJob extends StObject {
   var replicationRunList: js.UndefOr[ReplicationRunList] = js.undefined
   
   /**
-    * The name of the IAM role to be used by AWS SMS.
+    * The name of the IAM role to be used by Server Migration Service.
     */
   var roleName: js.UndefOr[RoleName] = js.undefined
   
@@ -69,7 +69,7 @@ trait ReplicationJob extends StObject {
   /**
     * The seed replication time.
     */
-  var seedReplicationTime: js.UndefOr[Timestamp] = js.undefined
+  var seedReplicationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the server.
@@ -129,7 +129,7 @@ object ReplicationJob {
     
     inline def setLicenseTypeUndefined: Self = StObject.set(x, "licenseType", js.undefined)
     
-    inline def setNextReplicationRunStartTime(value: Timestamp): Self = StObject.set(x, "nextReplicationRunStartTime", value.asInstanceOf[js.Any])
+    inline def setNextReplicationRunStartTime(value: js.Date): Self = StObject.set(x, "nextReplicationRunStartTime", value.asInstanceOf[js.Any])
     
     inline def setNextReplicationRunStartTimeUndefined: Self = StObject.set(x, "nextReplicationRunStartTime", js.undefined)
     
@@ -145,7 +145,7 @@ object ReplicationJob {
     
     inline def setReplicationRunListUndefined: Self = StObject.set(x, "replicationRunList", js.undefined)
     
-    inline def setReplicationRunListVarargs(value: ReplicationRun*): Self = StObject.set(x, "replicationRunList", js.Array(value :_*))
+    inline def setReplicationRunListVarargs(value: ReplicationRun*): Self = StObject.set(x, "replicationRunList", js.Array(value*))
     
     inline def setRoleName(value: RoleName): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
     
@@ -155,7 +155,7 @@ object ReplicationJob {
     
     inline def setRunOnceUndefined: Self = StObject.set(x, "runOnce", js.undefined)
     
-    inline def setSeedReplicationTime(value: Timestamp): Self = StObject.set(x, "seedReplicationTime", value.asInstanceOf[js.Any])
+    inline def setSeedReplicationTime(value: js.Date): Self = StObject.set(x, "seedReplicationTime", value.asInstanceOf[js.Any])
     
     inline def setSeedReplicationTimeUndefined: Self = StObject.set(x, "seedReplicationTime", js.undefined)
     

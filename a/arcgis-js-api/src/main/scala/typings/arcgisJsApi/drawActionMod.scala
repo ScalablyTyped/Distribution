@@ -22,7 +22,7 @@ object drawActionMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-DrawAction.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with DrawAction {
     def this(properties: DrawActionProperties) = this()

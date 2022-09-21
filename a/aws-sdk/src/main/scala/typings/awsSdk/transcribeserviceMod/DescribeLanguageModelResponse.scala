@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeLanguageModelResponse extends StObject {
   
   /**
-    * The name of the custom language model you requested more information about.
+    * Provides information about the specified custom language model. This parameter also shows if the base language model you used to create your custom language model has been updated. If Amazon Transcribe has updated the base model, you can create a new custom language model using the updated base model. If you tried to create a new custom language model and the request wasn't successful, you can use this DescribeLanguageModel to help identify the reason for this failure.
     */
   var LanguageModel: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageModel] = js.undefined
 }

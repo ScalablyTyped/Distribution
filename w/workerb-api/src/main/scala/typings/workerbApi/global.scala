@@ -80,8 +80,8 @@ object global {
     * * status: A number that is the Status Code returned by the remote server.
     */
   inline def httpDelete(url: String): APIResponse = js.Dynamic.global.applyDynamic("httpDelete")(url.asInstanceOf[js.Any]).asInstanceOf[APIResponse]
-  inline def httpDelete(url: String, data: js.Any): APIResponse = (js.Dynamic.global.applyDynamic("httpDelete")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[APIResponse]
-  inline def httpDelete(url: String, data: js.Any, headers: js.Object): APIResponse = (js.Dynamic.global.applyDynamic("httpDelete")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[APIResponse]
+  inline def httpDelete(url: String, data: Any): APIResponse = (js.Dynamic.global.applyDynamic("httpDelete")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[APIResponse]
+  inline def httpDelete(url: String, data: Any, headers: js.Object): APIResponse = (js.Dynamic.global.applyDynamic("httpDelete")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[APIResponse]
   inline def httpDelete(url: String, data: Unit, headers: js.Object): APIResponse = (js.Dynamic.global.applyDynamic("httpDelete")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[APIResponse]
   
   /**
@@ -113,8 +113,8 @@ object global {
     * * status: A number that is the Status Code returned by the remote server.
     */
   inline def httpPost(url: String): APIResponse = js.Dynamic.global.applyDynamic("httpPost")(url.asInstanceOf[js.Any]).asInstanceOf[APIResponse]
-  inline def httpPost(url: String, data: js.Any): APIResponse = (js.Dynamic.global.applyDynamic("httpPost")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[APIResponse]
-  inline def httpPost(url: String, data: js.Any, headers: js.Object): APIResponse = (js.Dynamic.global.applyDynamic("httpPost")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[APIResponse]
+  inline def httpPost(url: String, data: Any): APIResponse = (js.Dynamic.global.applyDynamic("httpPost")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[APIResponse]
+  inline def httpPost(url: String, data: Any, headers: js.Object): APIResponse = (js.Dynamic.global.applyDynamic("httpPost")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[APIResponse]
   inline def httpPost(url: String, data: Unit, headers: js.Object): APIResponse = (js.Dynamic.global.applyDynamic("httpPost")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[APIResponse]
   
   /**
@@ -131,8 +131,8 @@ object global {
     * * status: A number that is the Status Code returned by the remote server.
     */
   inline def httpPut(url: String): APIResponse = js.Dynamic.global.applyDynamic("httpPut")(url.asInstanceOf[js.Any]).asInstanceOf[APIResponse]
-  inline def httpPut(url: String, data: js.Any): APIResponse = (js.Dynamic.global.applyDynamic("httpPut")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[APIResponse]
-  inline def httpPut(url: String, data: js.Any, headers: js.Object): APIResponse = (js.Dynamic.global.applyDynamic("httpPut")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[APIResponse]
+  inline def httpPut(url: String, data: Any): APIResponse = (js.Dynamic.global.applyDynamic("httpPut")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[APIResponse]
+  inline def httpPut(url: String, data: Any, headers: js.Object): APIResponse = (js.Dynamic.global.applyDynamic("httpPut")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[APIResponse]
   inline def httpPut(url: String, data: Unit, headers: js.Object): APIResponse = (js.Dynamic.global.applyDynamic("httpPut")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[APIResponse]
   
   /**
@@ -143,10 +143,8 @@ object global {
     *
     * @returns undefined
     */
-  inline def log(value: js.Any): Unit = js.Dynamic.global.applyDynamic("log")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def log(value: js.Any, color: String): Unit = (js.Dynamic.global.applyDynamic("log")(value.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def logging_off(state: off): Unit = js.Dynamic.global.applyDynamic("logging")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def log(value: Any): Unit = js.Dynamic.global.applyDynamic("log")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def log(value: Any, color: String): Unit = (js.Dynamic.global.applyDynamic("log")(value.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * The logging function is used to enable and disable debug messages logging.
@@ -155,7 +153,7 @@ object global {
     *
     * @returns undefined
     */
-  inline def logging_on(state: on): Unit = js.Dynamic.global.applyDynamic("logging")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logging(state: on | off): Unit = js.Dynamic.global.applyDynamic("logging")(state.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * The notify function can be used to display a message to the user.
@@ -166,9 +164,7 @@ object global {
     *
     * @returns undefined
     */
-  inline def notify__error(message: String, `type`: error, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("notify")(message.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def notify__success(message: String, `type`: success, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("notify")(message.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def notify_(message: String, `type`: error | success, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("notify")(message.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * The open function opens a link in the same browser window.
@@ -181,8 +177,8 @@ object global {
   
   @JSGlobal("options")
   @js.native
-  def options: js.Any = js.native
-  inline def options_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("options")(x.asInstanceOf[js.Any])
+  def options: Any = js.native
+  inline def options_=(x: Any): Unit = js.Dynamic.global.updateDynamic("options")(x.asInstanceOf[js.Any])
   
   /**
     * The prompt function opens a prompt to query user for input.
@@ -192,6 +188,18 @@ object global {
     * @returns A string that has the user input.
     */
   inline def prompt(label: String): String = js.Dynamic.global.applyDynamic("prompt")(label.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * The reIndex function updates the index based on path passed into the function, if nothing
+    * is passed this function will update the complete index
+    *
+    * @param path An optional array of string which can have a path to specific node in the
+    * index to update.
+    *
+    * @returns undefined
+    */
+  inline def reIndex(): Unit = js.Dynamic.global.applyDynamic("reIndex")().asInstanceOf[Unit]
+  inline def reIndex(path: js.Array[String]): Unit = js.Dynamic.global.applyDynamic("reIndex")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * The read function returns a text from a target element.
@@ -212,8 +220,8 @@ object global {
     *
     * @returns The array of values read.
     */
-  inline def readAll(query: String): js.Array[js.Any] = js.Dynamic.global.applyDynamic("readAll")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-  inline def readAll(query: String, options: QueryOptions): js.Array[js.Any] = (js.Dynamic.global.applyDynamic("readAll")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def readAll(query: String): js.Array[Any] = js.Dynamic.global.applyDynamic("readAll")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+  inline def readAll(query: String, options: QueryOptions): js.Array[Any] = (js.Dynamic.global.applyDynamic("readAll")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   /**
     * The readTable function returns the content of a target table.
@@ -235,7 +243,7 @@ object global {
     *
     * @returns A string which is the URL of the webpage in the active tab.
     */
-  inline def readUrl(): String = js.Dynamic.global.applyDynamic("readUrl")().asInstanceOf[String]
+  inline def readURL(): String = js.Dynamic.global.applyDynamic("readURL")().asInstanceOf[String]
   
   /**
     * The runInTab function runs the specified function in a new tab and returns the result to the current tab.
@@ -245,7 +253,7 @@ object global {
     *
     * @returns A string which is stringified version of the value returned by the passed function.
     */
-  inline def runInTab(task: js.Function0[js.Any], keepOpen: Boolean): String = (js.Dynamic.global.applyDynamic("runInTab")(task.asInstanceOf[js.Any], keepOpen.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def runInTab(task: js.Function0[Any], keepOpen: Boolean): String = (js.Dynamic.global.applyDynamic("runInTab")(task.asInstanceOf[js.Any], keepOpen.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Select value on a particular a DOM element.
@@ -258,6 +266,18 @@ object global {
     */
   inline def select(value: String, query: String): Unit = (js.Dynamic.global.applyDynamic("select")(value.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def select(value: String, query: String, options: SelectQueryOptions): Unit = (js.Dynamic.global.applyDynamic("select")(value.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * The setVars function sets required variables for a package, later package scripts
+    * can use those variables for various operations like authenticating the user
+    *
+    * @param variables An array of objects conatining name of user private property and its value
+    * @param options An optional object to specify other things like running system information
+    *
+    * @returns undefined
+    */
+  inline def setVars(variables: js.Array[SetVarsVariable]): Unit = js.Dynamic.global.applyDynamic("setVars")(variables.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setVars(variables: js.Array[SetVarsVariable], options: js.Object): Unit = (js.Dynamic.global.applyDynamic("setVars")(variables.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * The submit function generates an the 'enter' keypress event on a target form element. This can result in the submission of the parent form.

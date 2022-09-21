@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Services.Store
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StoreAvailability extends StObject {
   
   /** Gets the end date for the current SKU availability. */
-  var endDate: Date = js.native
+  var endDate: js.Date = js.native
   
   /** Gets complete data for the current SKU availability from the Store in JSON format. */
   var extendedJsonData: String = js.native

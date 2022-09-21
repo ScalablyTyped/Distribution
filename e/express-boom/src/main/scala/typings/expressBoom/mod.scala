@@ -3,16 +3,26 @@ package typings.expressBoom
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.RequestHandler
 import typings.expressBoom.anon.Message
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("express-boom", JSImport.Namespace)
   @js.native
@@ -85,8 +95,8 @@ object mod {
           * @param options optional additional options
           * @see {@link https://github.com/hapijs/boom#boomifyerror-options}
           */
-        def boomify(error: Error): BoomError[Null] = js.native
-        def boomify(error: Error, options: Message): BoomError[Null] = js.native
+        def boomify(error: js.Error): BoomError[Null] = js.native
+        def boomify(error: js.Error, options: Message): BoomError[Null] = js.native
         
         /**
           * Respond a 408 Request Time-out error
@@ -426,10 +436,10 @@ object mod {
         def uriTooLong[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         // Add boom's properties in here
-        def wrap(error: Error): BoomError[Null] = js.native
-        def wrap(error: Error, statusCode: Double): BoomError[Null] = js.native
-        def wrap(error: Error, statusCode: Double, message: String): BoomError[Null] = js.native
-        def wrap(error: Error, statusCode: Unit, message: String): BoomError[Null] = js.native
+        def wrap(error: js.Error): BoomError[Null] = js.native
+        def wrap(error: js.Error, statusCode: Double): BoomError[Null] = js.native
+        def wrap(error: js.Error, statusCode: Double, message: String): BoomError[Null] = js.native
+        def wrap(error: js.Error, statusCode: Unit, message: String): BoomError[Null] = js.native
       }
       
       trait BoomError[Data] extends StObject {
@@ -518,7 +528,7 @@ object mod {
           * "Every key/value pair will be included ... in the response payload under the attributes key."
           * [see docs](https://github.com/hapijs/boom#boomunauthorizedmessage-scheme-attributes)
           */
-        var attributes: js.UndefOr[js.Any] = js.undefined
+        var attributes: js.UndefOr[Any] = js.undefined
         
         /** error - the HTTP status message (e.g. 'Bad Request', 'Internal Server Error') derived from statusCode. */
         var error: String
@@ -538,7 +548,7 @@ object mod {
         
         extension [Self <: Payload](x: Self) {
           
-          inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+          inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
           
           inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
           

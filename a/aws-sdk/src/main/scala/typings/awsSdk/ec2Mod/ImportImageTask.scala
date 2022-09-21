@@ -12,6 +12,11 @@ trait ImportImageTask extends StObject {
   var Architecture: js.UndefOr[String] = js.undefined
   
   /**
+    * The boot mode of the virtual machine.
+    */
+  var BootMode: js.UndefOr[BootModeValues] = js.undefined
+  
+  /**
     * A description of the import task.
     */
   var Description: js.UndefOr[String] = js.undefined
@@ -37,7 +42,7 @@ trait ImportImageTask extends StObject {
   var ImportTaskId: js.UndefOr[String] = js.undefined
   
   /**
-    * The identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to create the encrypted image.
+    * The identifier for the KMS key that was used to create the encrypted image.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -80,6 +85,11 @@ trait ImportImageTask extends StObject {
     * The tags for the import image task.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
+  
+  /**
+    * The usage operation value.
+    */
+  var UsageOperation: js.UndefOr[String] = js.undefined
 }
 object ImportImageTask {
   
@@ -93,6 +103,10 @@ object ImportImageTask {
     inline def setArchitecture(value: String): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
     
     inline def setArchitectureUndefined: Self = StObject.set(x, "Architecture", js.undefined)
+    
+    inline def setBootMode(value: BootModeValues): Self = StObject.set(x, "BootMode", value.asInstanceOf[js.Any])
+    
+    inline def setBootModeUndefined: Self = StObject.set(x, "BootMode", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -122,7 +136,7 @@ object ImportImageTask {
     
     inline def setLicenseSpecificationsUndefined: Self = StObject.set(x, "LicenseSpecifications", js.undefined)
     
-    inline def setLicenseSpecificationsVarargs(value: ImportImageLicenseConfigurationResponse*): Self = StObject.set(x, "LicenseSpecifications", js.Array(value :_*))
+    inline def setLicenseSpecificationsVarargs(value: ImportImageLicenseConfigurationResponse*): Self = StObject.set(x, "LicenseSpecifications", js.Array(value*))
     
     inline def setLicenseType(value: String): Self = StObject.set(x, "LicenseType", value.asInstanceOf[js.Any])
     
@@ -140,7 +154,7 @@ object ImportImageTask {
     
     inline def setSnapshotDetailsUndefined: Self = StObject.set(x, "SnapshotDetails", js.undefined)
     
-    inline def setSnapshotDetailsVarargs(value: SnapshotDetail*): Self = StObject.set(x, "SnapshotDetails", js.Array(value :_*))
+    inline def setSnapshotDetailsVarargs(value: SnapshotDetail*): Self = StObject.set(x, "SnapshotDetails", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
@@ -154,6 +168,10 @@ object ImportImageTask {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
+    
+    inline def setUsageOperation(value: String): Self = StObject.set(x, "UsageOperation", value.asInstanceOf[js.Any])
+    
+    inline def setUsageOperationUndefined: Self = StObject.set(x, "UsageOperation", js.undefined)
   }
 }

@@ -1,7 +1,6 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2
 
 import typings.dialogflow.mod.google.rpc.IStatus
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IStreamingDetectIntentResponse extends StObject {
   
   /** StreamingDetectIntentResponse outputAudio */
-  var outputAudio: js.UndefOr[Uint8Array | String | Null] = js.undefined
+  var outputAudio: js.UndefOr[js.typedarray.Uint8Array | String | Null] = js.undefined
   
   /** StreamingDetectIntentResponse outputAudioConfig */
   var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.undefined
@@ -36,7 +35,7 @@ object IStreamingDetectIntentResponse {
   
   extension [Self <: IStreamingDetectIntentResponse](x: Self) {
     
-    inline def setOutputAudio(value: Uint8Array | String): Self = StObject.set(x, "outputAudio", value.asInstanceOf[js.Any])
+    inline def setOutputAudio(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "outputAudio", value.asInstanceOf[js.Any])
     
     inline def setOutputAudioConfig(value: IOutputAudioConfig): Self = StObject.set(x, "outputAudioConfig", value.asInstanceOf[js.Any])
     

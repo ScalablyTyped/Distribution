@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.ExternalApplication")
 @js.native
-/* private */ class ExternalApplication ()
+/* private */ open class ExternalApplication ()
   extends StObject
      with typings.activexInfopath.InfoPath.ExternalApplication

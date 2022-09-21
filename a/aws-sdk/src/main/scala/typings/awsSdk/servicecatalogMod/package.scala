@@ -1,5 +1,13 @@
 package typings.awsSdk.servicecatalogMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.ACCOUNT
+import typings.awsSdk.awsSdkStrings.CLOUDFORMATION
+import typings.awsSdk.awsSdkStrings.CopyTags
+import typings.awsSdk.awsSdkStrings.IAM
+import typings.awsSdk.awsSdkStrings.Id_
+import typings.awsSdk.awsSdkStrings.SSM_AUTOMATION
+import typings.awsSdk.awsSdkStrings.SearchQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +21,7 @@ type AcceptLanguage = java.lang.String
   - typings.awsSdk.awsSdkStrings.User_
   - java.lang.String
 */
-type AccessLevelFilterKey = typings.awsSdk.servicecatalogMod._AccessLevelFilterKey | java.lang.String
+type AccessLevelFilterKey = _AccessLevelFilterKey | java.lang.String
 
 type AccessLevelFilterValue = java.lang.String
 
@@ -23,25 +31,25 @@ type AccessLevelFilterValue = java.lang.String
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type AccessStatus = typings.awsSdk.servicecatalogMod._AccessStatus | java.lang.String
+type AccessStatus = _AccessStatus | java.lang.String
 
 type AccountId = java.lang.String
 
-type AccountIds = js.Array[typings.awsSdk.servicecatalogMod.AccountId]
+type AccountIds = js.Array[AccountId]
 
-type AddTags = js.Array[typings.awsSdk.servicecatalogMod.Tag]
+type AddTags = js.Array[Tag]
 
-type AllowedValue = java.lang.String
+type AllowedValues = js.Array[String]
 
-type AllowedValues = js.Array[typings.awsSdk.servicecatalogMod.AllowedValue]
-
-type ApproximateCount = scala.Double
+type ApproximateCount = Double
 
 type AttributeValue = java.lang.String
 
+type Boolean = scala.Boolean
+
 type BudgetName = java.lang.String
 
-type Budgets = js.Array[typings.awsSdk.servicecatalogMod.BudgetDetail]
+type Budgets = js.Array[BudgetDetail]
 
 type CausingEntity = java.lang.String
 
@@ -51,25 +59,25 @@ type CausingEntity = java.lang.String
   - typings.awsSdk.awsSdkStrings.REMOVE
   - java.lang.String
 */
-type ChangeAction = typings.awsSdk.servicecatalogMod._ChangeAction | java.lang.String
+type ChangeAction = _ChangeAction | java.lang.String
 
 type CloudWatchDashboardName = java.lang.String
 
-type CloudWatchDashboards = js.Array[typings.awsSdk.servicecatalogMod.CloudWatchDashboard]
+type CloudWatchDashboards = js.Array[CloudWatchDashboard]
 
 type ConstraintDescription = java.lang.String
 
-type ConstraintDetails = js.Array[typings.awsSdk.servicecatalogMod.ConstraintDetail]
+type ConstraintDetails = js.Array[ConstraintDetail]
 
 type ConstraintParameters = java.lang.String
 
-type ConstraintSummaries = js.Array[typings.awsSdk.servicecatalogMod.ConstraintSummary]
+type ConstraintSummaries = js.Array[ConstraintSummary]
 
 type ConstraintType = java.lang.String
 
-type CopyOption = typings.awsSdk.awsSdkStrings.CopyTags | java.lang.String
+type CopyOption = CopyTags | java.lang.String
 
-type CopyOptions = js.Array[typings.awsSdk.servicecatalogMod.CopyOption]
+type CopyOptions = js.Array[CopyOption]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUCCEEDED
@@ -77,13 +85,22 @@ type CopyOptions = js.Array[typings.awsSdk.servicecatalogMod.CopyOption]
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type CopyProductStatus = typings.awsSdk.servicecatalogMod._CopyProductStatus | java.lang.String
+type CopyProductStatus = _CopyProductStatus | java.lang.String
 
-type CreatedTime = typings.std.Date
+type CreatedTime = js.Date
 
-type CreationTime = typings.std.Date
+type CreationTime = js.Date
 
 type DefaultValue = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACCOUNT
+  - typings.awsSdk.awsSdkStrings.ORGANIZATION
+  - typings.awsSdk.awsSdkStrings.ORGANIZATIONAL_UNIT
+  - typings.awsSdk.awsSdkStrings.ORGANIZATION_MEMBER_ACCOUNT
+  - java.lang.String
+*/
+type DescribePortfolioShareType = _DescribePortfolioShareType | java.lang.String
 
 type Description = java.lang.String
 
@@ -100,21 +117,21 @@ type ErrorDescription = java.lang.String
   - typings.awsSdk.awsSdkStrings.DYNAMIC
   - java.lang.String
 */
-type EvaluationType = typings.awsSdk.servicecatalogMod._EvaluationType | java.lang.String
+type EvaluationType = _EvaluationType | java.lang.String
 
 type ExecutionParameterKey = java.lang.String
 
-type ExecutionParameterMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.servicecatalogMod.ExecutionParameterValueList]
+type ExecutionParameterMap = StringDictionary[ExecutionParameterValueList]
 
 type ExecutionParameterType = java.lang.String
 
 type ExecutionParameterValue = java.lang.String
 
-type ExecutionParameterValueList = js.Array[typings.awsSdk.servicecatalogMod.ExecutionParameterValue]
+type ExecutionParameterValueList = js.Array[ExecutionParameterValue]
 
-type ExecutionParameters = js.Array[typings.awsSdk.servicecatalogMod.ExecutionParameter]
+type ExecutionParameters = js.Array[ExecutionParameter]
 
-type FailedServiceActionAssociations = js.Array[typings.awsSdk.servicecatalogMod.FailedServiceActionAssociation]
+type FailedServiceActionAssociations = js.Array[FailedServiceActionAssociation]
 
 type HasDefaultPath = scala.Boolean
 
@@ -130,21 +147,23 @@ type InstructionValue = java.lang.String
 
 type LastRequestId = java.lang.String
 
-type LaunchPathSummaries = js.Array[typings.awsSdk.servicecatalogMod.LaunchPathSummary]
+type LaunchPathSummaries = js.Array[LaunchPathSummary]
 
-type LaunchPaths = js.Array[typings.awsSdk.servicecatalogMod.LaunchPath]
+type LaunchPaths = js.Array[LaunchPath]
 
 type LogicalResourceId = java.lang.String
 
 type Message = java.lang.String
 
-type Namespaces = js.Array[typings.awsSdk.servicecatalogMod.AccountId]
+type Namespaces = js.Array[AccountId]
 
 type NoEcho = scala.Boolean
 
 type NotificationArn = java.lang.String
 
-type NotificationArns = js.Array[typings.awsSdk.servicecatalogMod.NotificationArn]
+type NotificationArns = js.Array[NotificationArn]
+
+type NullableBoolean = scala.Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ORGANIZATION
@@ -152,23 +171,25 @@ type NotificationArns = js.Array[typings.awsSdk.servicecatalogMod.NotificationAr
   - typings.awsSdk.awsSdkStrings.ACCOUNT
   - java.lang.String
 */
-type OrganizationNodeType = typings.awsSdk.servicecatalogMod._OrganizationNodeType | java.lang.String
+type OrganizationNodeType = _OrganizationNodeType | java.lang.String
 
 type OrganizationNodeValue = java.lang.String
 
-type OrganizationNodes = js.Array[typings.awsSdk.servicecatalogMod.OrganizationNode]
+type OrganizationNodes = js.Array[OrganizationNode]
 
 type OutputDescription = java.lang.String
 
 type OutputKey = java.lang.String
 
-type OutputKeys = js.Array[typings.awsSdk.servicecatalogMod.OutputKey]
+type OutputKeys = js.Array[OutputKey]
 
 type OutputValue = java.lang.String
 
-type PageSize = scala.Double
+type Owner = java.lang.String
 
-type PageSizeMax100 = scala.Double
+type PageSize = Double
+
+type PageSizeMax100 = Double
 
 type PageToken = java.lang.String
 
@@ -186,11 +207,13 @@ type PlanResourceType = java.lang.String
 
 type PortfolioDescription = java.lang.String
 
-type PortfolioDetails = js.Array[typings.awsSdk.servicecatalogMod.PortfolioDetail]
+type PortfolioDetails = js.Array[PortfolioDetail]
 
 type PortfolioDisplayName = java.lang.String
 
 type PortfolioName = java.lang.String
+
+type PortfolioShareDetails = js.Array[PortfolioShareDetail]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IMPORTED
@@ -198,32 +221,32 @@ type PortfolioName = java.lang.String
   - typings.awsSdk.awsSdkStrings.AWS_ORGANIZATIONS
   - java.lang.String
 */
-type PortfolioShareType = typings.awsSdk.servicecatalogMod._PortfolioShareType | java.lang.String
+type PortfolioShareType = _PortfolioShareType | java.lang.String
 
 type PrincipalARN = java.lang.String
 
-type PrincipalType = typings.awsSdk.awsSdkStrings.IAM | java.lang.String
+type PrincipalType = IAM | java.lang.String
 
-type Principals = js.Array[typings.awsSdk.servicecatalogMod.Principal]
+type Principals = js.Array[Principal]
 
 type ProductArn = java.lang.String
 
-type ProductSource = typings.awsSdk.awsSdkStrings.ACCOUNT | java.lang.String
+type ProductSource = ACCOUNT | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CLOUD_FORMATION_TEMPLATE
   - typings.awsSdk.awsSdkStrings.MARKETPLACE
   - java.lang.String
 */
-type ProductType = typings.awsSdk.servicecatalogMod._ProductType | java.lang.String
+type ProductType = _ProductType | java.lang.String
 
 type ProductViewAggregationType = java.lang.String
 
-type ProductViewAggregationValues = js.Array[typings.awsSdk.servicecatalogMod.ProductViewAggregationValue]
+type ProductViewAggregationValues = js.Array[ProductViewAggregationValue]
 
-type ProductViewAggregations = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.servicecatalogMod.ProductViewAggregationValues]
+type ProductViewAggregations = StringDictionary[ProductViewAggregationValues]
 
-type ProductViewDetails = js.Array[typings.awsSdk.servicecatalogMod.ProductViewDetail]
+type ProductViewDetails = js.Array[ProductViewDetail]
 
 type ProductViewDistributor = java.lang.String
 
@@ -234,13 +257,13 @@ type ProductViewDistributor = java.lang.String
   - typings.awsSdk.awsSdkStrings.SourceProductId
   - java.lang.String
 */
-type ProductViewFilterBy = typings.awsSdk.servicecatalogMod._ProductViewFilterBy | java.lang.String
+type ProductViewFilterBy = _ProductViewFilterBy | java.lang.String
 
 type ProductViewFilterValue = java.lang.String
 
-type ProductViewFilterValues = js.Array[typings.awsSdk.servicecatalogMod.ProductViewFilterValue]
+type ProductViewFilterValues = js.Array[ProductViewFilterValue]
 
-type ProductViewFilters = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.servicecatalogMod.ProductViewFilterValues]
+type ProductViewFilters = StringDictionary[ProductViewFilterValues]
 
 type ProductViewName = java.lang.String
 
@@ -254,16 +277,16 @@ type ProductViewShortDescription = java.lang.String
   - typings.awsSdk.awsSdkStrings.CreationDate
   - java.lang.String
 */
-type ProductViewSortBy = typings.awsSdk.servicecatalogMod._ProductViewSortBy | java.lang.String
+type ProductViewSortBy = _ProductViewSortBy | java.lang.String
 
-type ProductViewSummaries = js.Array[typings.awsSdk.servicecatalogMod.ProductViewSummary]
+type ProductViewSummaries = js.Array[ProductViewSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OWNER
   - typings.awsSdk.awsSdkStrings.LAUNCH_ROLE
   - java.lang.String
 */
-type PropertyKey = typings.awsSdk.servicecatalogMod._PropertyKey | java.lang.String
+type PropertyKey = _PropertyKey | java.lang.String
 
 type PropertyName = java.lang.String
 
@@ -271,11 +294,11 @@ type PropertyValue = java.lang.String
 
 type ProviderName = java.lang.String
 
-type ProvisionedProductAttributes = js.Array[typings.awsSdk.servicecatalogMod.ProvisionedProductAttribute]
+type ProvisionedProductAttributes = js.Array[ProvisionedProductAttribute]
 
-type ProvisionedProductDetails = js.Array[typings.awsSdk.servicecatalogMod.ProvisionedProductDetail]
+type ProvisionedProductDetails = js.Array[ProvisionedProductDetail]
 
-type ProvisionedProductFilters = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.servicecatalogMod.ProvisionedProductViewFilterValues]
+type ProvisionedProductFilters = StringDictionary[ProvisionedProductViewFilterValues]
 
 type ProvisionedProductId = java.lang.String
 
@@ -294,13 +317,13 @@ type ProvisionedProductPlanName = java.lang.String
   - typings.awsSdk.awsSdkStrings.EXECUTE_FAILED
   - java.lang.String
 */
-type ProvisionedProductPlanStatus = typings.awsSdk.servicecatalogMod._ProvisionedProductPlanStatus | java.lang.String
+type ProvisionedProductPlanStatus = _ProvisionedProductPlanStatus | java.lang.String
 
-type ProvisionedProductPlanType = typings.awsSdk.awsSdkStrings.CLOUDFORMATION | java.lang.String
+type ProvisionedProductPlanType = CLOUDFORMATION | java.lang.String
 
-type ProvisionedProductPlans = js.Array[typings.awsSdk.servicecatalogMod.ProvisionedProductPlanSummary]
+type ProvisionedProductPlans = js.Array[ProvisionedProductPlanSummary]
 
-type ProvisionedProductProperties = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.servicecatalogMod.PropertyValue]
+type ProvisionedProductProperties = StringDictionary[PropertyValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AVAILABLE
@@ -310,34 +333,34 @@ type ProvisionedProductProperties = org.scalablytyped.runtime.StringDictionary[t
   - typings.awsSdk.awsSdkStrings.PLAN_IN_PROGRESS
   - java.lang.String
 */
-type ProvisionedProductStatus = typings.awsSdk.servicecatalogMod._ProvisionedProductStatus | java.lang.String
+type ProvisionedProductStatus = _ProvisionedProductStatus | java.lang.String
 
 type ProvisionedProductStatusMessage = java.lang.String
 
 type ProvisionedProductType = java.lang.String
 
-type ProvisionedProductViewFilterBy = typings.awsSdk.awsSdkStrings.SearchQuery | java.lang.String
+type ProvisionedProductViewFilterBy = SearchQuery | java.lang.String
 
 type ProvisionedProductViewFilterValue = java.lang.String
 
-type ProvisionedProductViewFilterValues = js.Array[typings.awsSdk.servicecatalogMod.ProvisionedProductViewFilterValue]
+type ProvisionedProductViewFilterValues = js.Array[ProvisionedProductViewFilterValue]
 
 type ProvisioningArtifactActive = scala.Boolean
 
-type ProvisioningArtifactCreatedTime = typings.std.Date
+type ProvisioningArtifactCreatedTime = js.Date
 
 type ProvisioningArtifactDescription = java.lang.String
 
-type ProvisioningArtifactDetails = js.Array[typings.awsSdk.servicecatalogMod.ProvisioningArtifactDetail]
+type ProvisioningArtifactDetails = js.Array[ProvisioningArtifactDetail]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEFAULT
   - typings.awsSdk.awsSdkStrings.DEPRECATED
   - java.lang.String
 */
-type ProvisioningArtifactGuidance = typings.awsSdk.servicecatalogMod._ProvisioningArtifactGuidance | java.lang.String
+type ProvisioningArtifactGuidance = _ProvisioningArtifactGuidance | java.lang.String
 
-type ProvisioningArtifactInfo = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.servicecatalogMod.ProvisioningArtifactInfoValue]
+type ProvisioningArtifactInfo = StringDictionary[ProvisioningArtifactInfoValue]
 
 type ProvisioningArtifactInfoKey = java.lang.String
 
@@ -347,15 +370,15 @@ type ProvisioningArtifactName = java.lang.String
 
 type ProvisioningArtifactOutputKey = java.lang.String
 
-type ProvisioningArtifactOutputs = js.Array[typings.awsSdk.servicecatalogMod.ProvisioningArtifactOutput]
+type ProvisioningArtifactOutputs = js.Array[ProvisioningArtifactOutput]
 
-type ProvisioningArtifactParameters = js.Array[typings.awsSdk.servicecatalogMod.ProvisioningArtifactParameter]
+type ProvisioningArtifactParameters = js.Array[ProvisioningArtifactParameter]
 
-type ProvisioningArtifactPropertyName = typings.awsSdk.awsSdkStrings.Id_ | java.lang.String
+type ProvisioningArtifactPropertyName = Id_ | java.lang.String
 
 type ProvisioningArtifactPropertyValue = java.lang.String
 
-type ProvisioningArtifactSummaries = js.Array[typings.awsSdk.servicecatalogMod.ProvisioningArtifactSummary]
+type ProvisioningArtifactSummaries = js.Array[ProvisioningArtifactSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CLOUD_FORMATION_TEMPLATE
@@ -363,19 +386,19 @@ type ProvisioningArtifactSummaries = js.Array[typings.awsSdk.servicecatalogMod.P
   - typings.awsSdk.awsSdkStrings.MARKETPLACE_CAR
   - java.lang.String
 */
-type ProvisioningArtifactType = typings.awsSdk.servicecatalogMod._ProvisioningArtifactType | java.lang.String
+type ProvisioningArtifactType = _ProvisioningArtifactType | java.lang.String
 
-type ProvisioningArtifactViews = js.Array[typings.awsSdk.servicecatalogMod.ProvisioningArtifactView]
+type ProvisioningArtifactViews = js.Array[ProvisioningArtifactView]
 
-type ProvisioningArtifacts = js.Array[typings.awsSdk.servicecatalogMod.ProvisioningArtifact]
+type ProvisioningArtifacts = js.Array[ProvisioningArtifact]
 
-type ProvisioningParameters = js.Array[typings.awsSdk.servicecatalogMod.ProvisioningParameter]
+type ProvisioningParameters = js.Array[ProvisioningParameter]
 
-type RecordDetails = js.Array[typings.awsSdk.servicecatalogMod.RecordDetail]
+type RecordDetails = js.Array[RecordDetail]
 
-type RecordErrors = js.Array[typings.awsSdk.servicecatalogMod.RecordError]
+type RecordErrors = js.Array[RecordError]
 
-type RecordOutputs = js.Array[typings.awsSdk.servicecatalogMod.RecordOutput]
+type RecordOutputs = js.Array[RecordOutput]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATED
@@ -385,13 +408,13 @@ type RecordOutputs = js.Array[typings.awsSdk.servicecatalogMod.RecordOutput]
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type RecordStatus = typings.awsSdk.servicecatalogMod._RecordStatus | java.lang.String
+type RecordStatus = _RecordStatus | java.lang.String
 
 type RecordTagKey = java.lang.String
 
 type RecordTagValue = java.lang.String
 
-type RecordTags = js.Array[typings.awsSdk.servicecatalogMod.RecordTag]
+type RecordTags = js.Array[RecordTag]
 
 type RecordType = java.lang.String
 
@@ -403,7 +426,7 @@ type Region = java.lang.String
   - typings.awsSdk.awsSdkStrings.CONDITIONAL
   - java.lang.String
 */
-type Replacement = typings.awsSdk.servicecatalogMod._Replacement | java.lang.String
+type Replacement = _Replacement | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NEVER
@@ -411,7 +434,7 @@ type Replacement = typings.awsSdk.servicecatalogMod._Replacement | java.lang.Str
   - typings.awsSdk.awsSdkStrings.ALWAYS
   - java.lang.String
 */
-type RequiresRecreation = typings.awsSdk.servicecatalogMod._RequiresRecreation | java.lang.String
+type RequiresRecreation = _RequiresRecreation | java.lang.String
 
 type ResourceARN = java.lang.String
 
@@ -424,15 +447,15 @@ type ResourceARN = java.lang.String
   - typings.awsSdk.awsSdkStrings.TAGS
   - java.lang.String
 */
-type ResourceAttribute = typings.awsSdk.servicecatalogMod._ResourceAttribute | java.lang.String
+type ResourceAttribute = _ResourceAttribute | java.lang.String
 
-type ResourceChangeDetails = js.Array[typings.awsSdk.servicecatalogMod.ResourceChangeDetail]
+type ResourceChangeDetails = js.Array[ResourceChangeDetail]
 
-type ResourceChanges = js.Array[typings.awsSdk.servicecatalogMod.ResourceChange]
+type ResourceChanges = js.Array[ResourceChange]
 
 type ResourceDetailARN = java.lang.String
 
-type ResourceDetailCreatedTime = typings.std.Date
+type ResourceDetailCreatedTime = js.Date
 
 type ResourceDetailDescription = java.lang.String
 
@@ -440,7 +463,7 @@ type ResourceDetailId = java.lang.String
 
 type ResourceDetailName = java.lang.String
 
-type ResourceDetails = js.Array[typings.awsSdk.servicecatalogMod.ResourceDetail]
+type ResourceDetails = js.Array[ResourceDetail]
 
 type ResourceId = java.lang.String
 
@@ -450,13 +473,13 @@ type RetainPhysicalResources = scala.Boolean
 
 type RoleArn = java.lang.String
 
-type Scope = js.Array[typings.awsSdk.servicecatalogMod.ResourceAttribute]
+type Scope = js.Array[ResourceAttribute]
 
 type SearchFilterKey = java.lang.String
 
 type SearchFilterValue = java.lang.String
 
-type SearchProvisionedProductsPageSize = scala.Double
+type SearchProvisionedProductsPageSize = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DUPLICATE_RESOURCE
@@ -466,11 +489,11 @@ type SearchProvisionedProductsPageSize = scala.Double
   - typings.awsSdk.awsSdkStrings.THROTTLING
   - java.lang.String
 */
-type ServiceActionAssociationErrorCode = typings.awsSdk.servicecatalogMod._ServiceActionAssociationErrorCode | java.lang.String
+type ServiceActionAssociationErrorCode = _ServiceActionAssociationErrorCode | java.lang.String
 
 type ServiceActionAssociationErrorMessage = java.lang.String
 
-type ServiceActionAssociations = js.Array[typings.awsSdk.servicecatalogMod.ServiceActionAssociation]
+type ServiceActionAssociations = js.Array[ServiceActionAssociation]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Name_
@@ -479,11 +502,11 @@ type ServiceActionAssociations = js.Array[typings.awsSdk.servicecatalogMod.Servi
   - typings.awsSdk.awsSdkStrings.Parameters
   - java.lang.String
 */
-type ServiceActionDefinitionKey = typings.awsSdk.servicecatalogMod._ServiceActionDefinitionKey | java.lang.String
+type ServiceActionDefinitionKey = _ServiceActionDefinitionKey | java.lang.String
 
-type ServiceActionDefinitionMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.servicecatalogMod.ServiceActionDefinitionValue]
+type ServiceActionDefinitionMap = StringDictionary[ServiceActionDefinitionValue]
 
-type ServiceActionDefinitionType = typings.awsSdk.awsSdkStrings.SSM_AUTOMATION | java.lang.String
+type ServiceActionDefinitionType = SSM_AUTOMATION | java.lang.String
 
 type ServiceActionDefinitionValue = java.lang.String
 
@@ -491,9 +514,9 @@ type ServiceActionDescription = java.lang.String
 
 type ServiceActionName = java.lang.String
 
-type ServiceActionSummaries = js.Array[typings.awsSdk.servicecatalogMod.ServiceActionSummary]
+type ServiceActionSummaries = js.Array[ServiceActionSummary]
 
-type ShareErrors = js.Array[typings.awsSdk.servicecatalogMod.ShareError]
+type ShareErrors = js.Array[ShareError]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_STARTED
@@ -503,7 +526,7 @@ type ShareErrors = js.Array[typings.awsSdk.servicecatalogMod.ShareError]
   - typings.awsSdk.awsSdkStrings.ERROR
   - java.lang.String
 */
-type ShareStatus = typings.awsSdk.servicecatalogMod._ShareStatus | java.lang.String
+type ShareStatus = _ShareStatus | java.lang.String
 
 type SortField = java.lang.String
 
@@ -512,11 +535,11 @@ type SortField = java.lang.String
   - typings.awsSdk.awsSdkStrings.DESCENDING
   - java.lang.String
 */
-type SortOrder = typings.awsSdk.servicecatalogMod._SortOrder | java.lang.String
+type SortOrder = _SortOrder | java.lang.String
 
-type SourceProvisioningArtifactProperties = js.Array[typings.awsSdk.servicecatalogMod.SourceProvisioningArtifactPropertiesMap]
+type SourceProvisioningArtifactProperties = js.Array[SourceProvisioningArtifactPropertiesMap]
 
-type SourceProvisioningArtifactPropertiesMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.servicecatalogMod.ProvisioningArtifactPropertyValue]
+type SourceProvisioningArtifactPropertiesMap = StringDictionary[ProvisioningArtifactPropertyValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CURRENT
@@ -524,19 +547,19 @@ type SourceProvisioningArtifactPropertiesMap = org.scalablytyped.runtime.StringD
   - typings.awsSdk.awsSdkStrings.INOPERABLE
   - java.lang.String
 */
-type StackInstanceStatus = typings.awsSdk.servicecatalogMod._StackInstanceStatus | java.lang.String
+type StackInstanceStatus = _StackInstanceStatus | java.lang.String
 
-type StackInstances = js.Array[typings.awsSdk.servicecatalogMod.StackInstance]
+type StackInstances = js.Array[StackInstance]
 
-type StackSetAccounts = js.Array[typings.awsSdk.servicecatalogMod.AccountId]
+type StackSetAccounts = js.Array[AccountId]
 
-type StackSetFailureToleranceCount = scala.Double
+type StackSetFailureToleranceCount = Double
 
-type StackSetFailureTolerancePercentage = scala.Double
+type StackSetFailureTolerancePercentage = Double
 
-type StackSetMaxConcurrencyCount = scala.Double
+type StackSetMaxConcurrencyCount = Double
 
-type StackSetMaxConcurrencyPercentage = scala.Double
+type StackSetMaxConcurrencyPercentage = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE
@@ -544,9 +567,9 @@ type StackSetMaxConcurrencyPercentage = scala.Double
   - typings.awsSdk.awsSdkStrings.DELETE
   - java.lang.String
 */
-type StackSetOperationType = typings.awsSdk.servicecatalogMod._StackSetOperationType | java.lang.String
+type StackSetOperationType = _StackSetOperationType | java.lang.String
 
-type StackSetRegions = js.Array[typings.awsSdk.servicecatalogMod.Region]
+type StackSetRegions = js.Array[Region]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AVAILABLE
@@ -554,13 +577,15 @@ type StackSetRegions = js.Array[typings.awsSdk.servicecatalogMod.Region]
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type Status = typings.awsSdk.servicecatalogMod._Status | java.lang.String
+type Status = _Status | java.lang.String
 
 type StatusDetail = java.lang.String
 
 type StatusMessage = java.lang.String
 
-type SuccessfulShares = js.Array[typings.awsSdk.servicecatalogMod.AccountId]
+type String = java.lang.String
+
+type SuccessfulShares = js.Array[AccountId]
 
 type SupportDescription = java.lang.String
 
@@ -570,33 +595,33 @@ type SupportUrl = java.lang.String
 
 type TagKey = java.lang.String
 
-type TagKeys = js.Array[typings.awsSdk.servicecatalogMod.TagKey]
+type TagKeys = js.Array[TagKey]
 
 type TagOptionActive = scala.Boolean
 
-type TagOptionDetails = js.Array[typings.awsSdk.servicecatalogMod.TagOptionDetail]
+type TagOptionDetails = js.Array[TagOptionDetail]
 
 type TagOptionId = java.lang.String
 
 type TagOptionKey = java.lang.String
 
-type TagOptionSummaries = js.Array[typings.awsSdk.servicecatalogMod.TagOptionSummary]
+type TagOptionSummaries = js.Array[TagOptionSummary]
 
 type TagOptionValue = java.lang.String
 
-type TagOptionValues = js.Array[typings.awsSdk.servicecatalogMod.TagOptionValue]
+type TagOptionValues = js.Array[TagOptionValue]
 
 type TagValue = java.lang.String
 
-type Tags = js.Array[typings.awsSdk.servicecatalogMod.Tag]
+type Tags = js.Array[Tag]
 
-type TotalResultsCount = scala.Double
+type TotalResultsCount = Double
 
-type UpdateProvisioningParameters = js.Array[typings.awsSdk.servicecatalogMod.UpdateProvisioningParameter]
+type UpdateProvisioningParameters = js.Array[UpdateProvisioningParameter]
 
-type UpdatedTime = typings.std.Date
+type UpdatedTime = js.Date
 
-type UsageInstructions = js.Array[typings.awsSdk.servicecatalogMod.UsageInstruction]
+type UsageInstructions = js.Array[UsageInstruction]
 
 type UsePreviousValue = scala.Boolean
 
@@ -611,4 +636,4 @@ type Verbose = scala.Boolean
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.servicecatalogMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

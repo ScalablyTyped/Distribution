@@ -10,7 +10,7 @@ object hashLocationServiceMod {
   
   @JSImport("@uirouter/core/lib/vanilla/hashLocationService", "HashLocationService")
   @js.native
-  class HashLocationService protected () extends BaseLocationServices {
+  open class HashLocationService protected () extends BaseLocationServices {
     def this(router: UIRouter) = this()
   }
 }

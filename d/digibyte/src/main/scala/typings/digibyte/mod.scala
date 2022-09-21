@@ -8,10 +8,7 @@ import typings.digibyte.mod.Transaction.Input
 import typings.digibyte.mod.Transaction.Output
 import typings.digibyte.mod.Transaction.UnspentOutput
 import typings.digibyte.mod.crypto.Signature
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Error
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,23 +17,23 @@ object mod {
   
   @JSImport("digibyte", "Address")
   @js.native
-  class Address protected () extends StObject {
+  open class Address protected () extends StObject {
     def this(data: String) = this()
     def this(data: js.Object) = this()
+    def this(data: js.typedarray.Uint8Array) = this()
     def this(data: Buffer) = this()
-    def this(data: Uint8Array) = this()
     def this(data: String, network: Network) = this()
     def this(data: js.Object, network: Network) = this()
+    def this(data: js.typedarray.Uint8Array, network: Network) = this()
     def this(data: Buffer, network: Network) = this()
-    def this(data: Uint8Array, network: Network) = this()
     def this(data: String, network: scala.Unit, `type`: String) = this()
     def this(data: String, network: Network, `type`: String) = this()
     def this(data: js.Object, network: scala.Unit, `type`: String) = this()
     def this(data: js.Object, network: Network, `type`: String) = this()
+    def this(data: js.typedarray.Uint8Array, network: scala.Unit, `type`: String) = this()
+    def this(data: js.typedarray.Uint8Array, network: Network, `type`: String) = this()
     def this(data: Buffer, network: scala.Unit, `type`: String) = this()
     def this(data: Buffer, network: Network, `type`: String) = this()
-    def this(data: Uint8Array, network: scala.Unit, `type`: String) = this()
-    def this(data: Uint8Array, network: Network, `type`: String) = this()
     
     val hashBuffer: Buffer = js.native
     
@@ -51,12 +48,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getValidationError(input: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(input.asInstanceOf[js.Any]).asInstanceOf[Error]
-    inline def getValidationError(input: String, network: scala.Unit, payToPublicKeyHash: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(input.asInstanceOf[js.Any], network.asInstanceOf[js.Any], payToPublicKeyHash.asInstanceOf[js.Any])).asInstanceOf[Error]
-    inline def getValidationError(input: String, network: scala.Unit, payToPublicKeyHash: Buffer): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(input.asInstanceOf[js.Any], network.asInstanceOf[js.Any], payToPublicKeyHash.asInstanceOf[js.Any])).asInstanceOf[Error]
-    inline def getValidationError(input: String, network: Network): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(input.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[Error]
-    inline def getValidationError(input: String, network: Network, payToPublicKeyHash: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(input.asInstanceOf[js.Any], network.asInstanceOf[js.Any], payToPublicKeyHash.asInstanceOf[js.Any])).asInstanceOf[Error]
-    inline def getValidationError(input: String, network: Network, payToPublicKeyHash: Buffer): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(input.asInstanceOf[js.Any], network.asInstanceOf[js.Any], payToPublicKeyHash.asInstanceOf[js.Any])).asInstanceOf[Error]
+    inline def getValidationError(input: String): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(input.asInstanceOf[js.Any]).asInstanceOf[js.Error]
+    inline def getValidationError(input: String, network: scala.Unit, payToPublicKeyHash: String): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(input.asInstanceOf[js.Any], network.asInstanceOf[js.Any], payToPublicKeyHash.asInstanceOf[js.Any])).asInstanceOf[js.Error]
+    inline def getValidationError(input: String, network: scala.Unit, payToPublicKeyHash: Buffer): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(input.asInstanceOf[js.Any], network.asInstanceOf[js.Any], payToPublicKeyHash.asInstanceOf[js.Any])).asInstanceOf[js.Error]
+    inline def getValidationError(input: String, network: Network): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(input.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[js.Error]
+    inline def getValidationError(input: String, network: Network, payToPublicKeyHash: String): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(input.asInstanceOf[js.Any], network.asInstanceOf[js.Any], payToPublicKeyHash.asInstanceOf[js.Any])).asInstanceOf[js.Error]
+    inline def getValidationError(input: String, network: Network, payToPublicKeyHash: Buffer): js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidationError")(input.asInstanceOf[js.Any], network.asInstanceOf[js.Any], payToPublicKeyHash.asInstanceOf[js.Any])).asInstanceOf[js.Error]
     
     inline def isValid(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     inline def isValid(input: String, network: scala.Unit, payToPublicKeyHash: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(input.asInstanceOf[js.Any], network.asInstanceOf[js.Any], payToPublicKeyHash.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -68,7 +65,7 @@ object mod {
   
   @JSImport("digibyte", "Block")
   @js.native
-  class Block protected () extends StObject {
+  open class Block protected () extends StObject {
     def this(data: js.Object) = this()
     def this(data: Buffer) = this()
     
@@ -83,7 +80,7 @@ object mod {
   
   @JSImport("digibyte", "HDPrivateKey")
   @js.native
-  class HDPrivateKey () extends StObject {
+  open class HDPrivateKey () extends StObject {
     def this(data: String) = this()
     def this(data: js.Object) = this()
     def this(data: Buffer) = this()
@@ -112,7 +109,7 @@ object mod {
   
   @JSImport("digibyte", "HDPublicKey")
   @js.native
-  class HDPublicKey protected () extends StObject {
+  open class HDPublicKey protected () extends StObject {
     def this(arg: String) = this()
     def this(arg: js.Object) = this()
     def this(arg: Buffer) = this()
@@ -144,7 +141,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def add(data: js.Any): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(data.asInstanceOf[js.Any]).asInstanceOf[Network]
+    inline def add(data: Any): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(data.asInstanceOf[js.Any]).asInstanceOf[Network]
     
     inline def get(args: String, keys: String): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Network]
     inline def get(args: String, keys: js.Array[String]): Network = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(args.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Network]
@@ -191,7 +188,7 @@ object mod {
   
   @JSImport("digibyte", "PrivateKey")
   @js.native
-  class PrivateKey () extends StObject {
+  open class PrivateKey () extends StObject {
     def this(key: String) = this()
     def this(key: String, network: Network) = this()
     def this(key: scala.Unit, network: Network) = this()
@@ -213,7 +210,7 @@ object mod {
   
   @JSImport("digibyte", "PublicKey")
   @js.native
-  class PublicKey protected () extends StObject {
+  open class PublicKey protected () extends StObject {
     def this(source: String) = this()
     
     def toBuffer(): Buffer = js.native
@@ -232,11 +229,11 @@ object mod {
   
   @JSImport("digibyte", "Script")
   @js.native
-  class Script protected () extends StObject {
+  open class Script protected () extends StObject {
     def this(data: String) = this()
     def this(data: js.Object) = this()
     
-    def add(obj: js.Any): this.type = js.native
+    def add(obj: Any): this.type = js.native
     
     def checkMinimalPush(i: Double): Boolean = js.native
     
@@ -290,7 +287,7 @@ object mod {
     
     def isWitnessScriptHashOut(): Boolean = js.native
     
-    def prepend(obj: js.Any): this.type = js.native
+    def prepend(obj: Any): this.type = js.native
     
     def removeCodeseparators(): this.type = js.native
     
@@ -355,8 +352,8 @@ object mod {
   
   @JSImport("digibyte", "Transaction")
   @js.native
-  class Transaction () extends StObject {
-    def this(serialized: js.Any) = this()
+  open class Transaction () extends StObject {
+    def this(serialized: Any) = this()
     
     def addData(value: Buffer): this.type = js.native
     
@@ -381,7 +378,7 @@ object mod {
     
     def getFee(): Double = js.native
     
-    def getLockTime(): Date | Double = js.native
+    def getLockTime(): js.Date | Double = js.native
     
     def hasWitnesses(): Boolean = js.native
     
@@ -399,8 +396,8 @@ object mod {
     
     def lockUntilBlockHeight(height: Double): this.type = js.native
     
+    def lockUntilDate(time: js.Date): this.type = js.native
     def lockUntilDate(time: Double): this.type = js.native
-    def lockUntilDate(time: Date): this.type = js.native
     
     var nid: String = js.native
     
@@ -421,7 +418,7 @@ object mod {
     
     @JSImport("digibyte", "Transaction.Input")
     @js.native
-    class Input () extends StObject {
+    open class Input () extends StObject {
       
       val output: js.UndefOr[Output] = js.native
       
@@ -436,7 +433,7 @@ object mod {
     
     @JSImport("digibyte", "Transaction.Output")
     @js.native
-    class Output protected () extends StObject {
+    open class Output protected () extends StObject {
       def this(data: js.Object) = this()
       
       def inspect(): String = js.native
@@ -454,7 +451,7 @@ object mod {
     
     @JSImport("digibyte", "Transaction.UnspentOutput")
     @js.native
-    class UnspentOutput protected () extends StObject {
+    open class UnspentOutput protected () extends StObject {
       def this(data: js.Object) = this()
       
       val address: Address = js.native
@@ -484,13 +481,13 @@ object mod {
   
   @JSImport("digibyte", "URI")
   @js.native
-  class URI protected () extends StObject {
+  open class URI protected () extends StObject {
     def this(data: String) = this()
     def this(data: js.Object) = this()
     
-    def parse(): js.Any = js.native
+    def parse(): Any = js.native
     
-    def toObject(): js.Any = js.native
+    def toObject(): Any = js.native
   }
   /* static members */
   object URI {
@@ -510,7 +507,7 @@ object mod {
   
   @JSImport("digibyte", "Unit")
   @js.native
-  class Unit protected () extends StObject {
+  open class Unit protected () extends StObject {
     def this(amount: Double, unitPreference: String) = this()
     
     def toBits(): Double = js.native
@@ -543,7 +540,7 @@ object mod {
     
     @JSImport("digibyte", "crypto.BN")
     @js.native
-    class BN () extends StObject
+    open class BN () extends StObject
     
     object ECDSA {
       
@@ -592,7 +589,7 @@ object mod {
     
     @JSImport("digibyte", "crypto.Signature")
     @js.native
-    class Signature () extends StObject {
+    open class Signature () extends StObject {
       
       var SIGHASH_ALL: Double = js.native
     }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tslint", "ProgramAwareRuleWalker")
 @js.native
-class ProgramAwareRuleWalker protected ()
+open class ProgramAwareRuleWalker protected ()
   extends typings.tslint.walkerMod.ProgramAwareRuleWalker {
   def this(sourceFile: SourceFile, options: IOptions, program: Program) = this()
 }

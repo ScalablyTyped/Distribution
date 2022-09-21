@@ -2,10 +2,10 @@ package typings.expressPinoLogger
 
 import typings.pino.mod.DestinationStream
 import typings.pino.mod.Logger
+import typings.pino.mod.LoggerOptions
 import typings.pinoHttp.mod.HttpLogger
 import typings.pinoHttp.mod.Options
 import typings.pinoHttp.mod.ReqId
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,11 +33,11 @@ object mod {
       
       var id: ReqId
       
-      var log: Logger
+      var log: Logger[LoggerOptions]
     }
     object IncomingMessage {
       
-      inline def apply(id: ReqId, log: Logger): IncomingMessage = {
+      inline def apply(id: ReqId, log: Logger[LoggerOptions]): IncomingMessage = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any])
         __obj.asInstanceOf[IncomingMessage]
       }
@@ -46,7 +46,7 @@ object mod {
         
         inline def setId(value: ReqId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        inline def setLog(value: Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+        inline def setLog(value: Logger[LoggerOptions]): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       }
     }
     
@@ -55,7 +55,7 @@ object mod {
     
     trait ServerResponse extends StObject {
       
-      var err: js.UndefOr[Error] = js.undefined
+      var err: js.UndefOr[js.Error] = js.undefined
     }
     object ServerResponse {
       
@@ -66,7 +66,7 @@ object mod {
       
       extension [Self <: ServerResponse](x: Self) {
         
-        inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+        inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
         
         inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
       }

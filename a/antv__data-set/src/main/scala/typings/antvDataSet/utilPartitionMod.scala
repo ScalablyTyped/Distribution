@@ -11,28 +11,20 @@ object utilPartitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(rows: js.Array[js.Any], group_by: String): Record[String, js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[js.Any]]]
-  inline def default(rows: js.Array[js.Any], group_by: String, order_by: String): Record[String, js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[js.Any]]]
-  inline def default(rows: js.Array[js.Any], group_by: String, order_by: js.Array[String]): Record[String, js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[js.Any]]]
-  inline def default(rows: js.Array[js.Any], group_by: String, order_by: js.Function1[/* item */ js.Any, Double]): Record[String, js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[js.Any]]]
-  inline def default(rows: js.Array[js.Any], group_by: js.Array[String]): Record[String, js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[js.Any]]]
-  inline def default(rows: js.Array[js.Any], group_by: js.Array[String], order_by: String): Record[String, js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[js.Any]]]
-  inline def default(rows: js.Array[js.Any], group_by: js.Array[String], order_by: js.Array[String]): Record[String, js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[js.Any]]]
+  inline def default(rows: js.Array[Any], group_by: String): Record[String, js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Any]]]
+  inline def default(rows: js.Array[Any], group_by: String, order_by: String): Record[String, js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Any]]]
+  inline def default(rows: js.Array[Any], group_by: String, order_by: js.Array[String]): Record[String, js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Any]]]
+  inline def default(rows: js.Array[Any], group_by: String, order_by: js.Function1[/* item */ Any, Double]): Record[String, js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Any]]]
+  inline def default(rows: js.Array[Any], group_by: js.Array[String]): Record[String, js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Any]]]
+  inline def default(rows: js.Array[Any], group_by: js.Array[String], order_by: String): Record[String, js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Any]]]
+  inline def default(rows: js.Array[Any], group_by: js.Array[String], order_by: js.Array[String]): Record[String, js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Any]]]
+  inline def default(rows: js.Array[Any], group_by: js.Array[String], order_by: js.Function1[/* item */ Any, Double]): Record[String, js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Any]]]
+  inline def default(rows: js.Array[Any], group_by: js.Function1[/* item */ Any, String]): Record[String, js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Any]]]
+  inline def default(rows: js.Array[Any], group_by: js.Function1[/* item */ Any, String], order_by: String): Record[String, js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Any]]]
+  inline def default(rows: js.Array[Any], group_by: js.Function1[/* item */ Any, String], order_by: js.Array[String]): Record[String, js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Any]]]
   inline def default(
-    rows: js.Array[js.Any],
-    group_by: js.Array[String],
-    order_by: js.Function1[/* item */ js.Any, Double]
-  ): Record[String, js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[js.Any]]]
-  inline def default(rows: js.Array[js.Any], group_by: js.Function1[/* item */ js.Any, String]): Record[String, js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[js.Any]]]
-  inline def default(rows: js.Array[js.Any], group_by: js.Function1[/* item */ js.Any, String], order_by: String): Record[String, js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[js.Any]]]
-  inline def default(
-    rows: js.Array[js.Any],
-    group_by: js.Function1[/* item */ js.Any, String],
-    order_by: js.Array[String]
-  ): Record[String, js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[js.Any]]]
-  inline def default(
-    rows: js.Array[js.Any],
-    group_by: js.Function1[/* item */ js.Any, String],
-    order_by: js.Function1[/* item */ js.Any, Double]
-  ): Record[String, js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[js.Any]]]
+    rows: js.Array[Any],
+    group_by: js.Function1[/* item */ Any, String],
+    order_by: js.Function1[/* item */ Any, Double]
+  ): Record[String, js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rows.asInstanceOf[js.Any], group_by.asInstanceOf[js.Any], order_by.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Array[Any]]]
 }

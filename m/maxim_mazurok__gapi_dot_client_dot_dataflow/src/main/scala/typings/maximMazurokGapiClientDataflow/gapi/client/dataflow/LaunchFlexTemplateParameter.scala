@@ -10,7 +10,7 @@ trait LaunchFlexTemplateParameter extends StObject {
   /** Spec about the container image to launch. */
   var containerSpec: js.UndefOr[ContainerSpec] = js.undefined
   
-  /** Gcs path to a file with json serialized ContainerSpec as content. */
+  /** Cloud Storage path to a file with json serialized ContainerSpec as content. */
   var containerSpecGcsPath: js.UndefOr[String] = js.undefined
   
   /** The runtime environment for the FlexTemplate job */
@@ -23,21 +23,21 @@ trait LaunchFlexTemplateParameter extends StObject {
   var launchOptions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[Any]
   ] = js.undefined
   
   /** The parameters for FlexTemplate. Ex. {"num_workers":"5"} */
   var parameters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[Any]
   ] = js.undefined
   
-  /** Users need to set transform_name_mappings Ex:{"oldTransformName":"newTransformName",...}' */
+  /** Use this to pass transform_name_mappings for streaming update jobs. Ex:{"oldTransformName":"newTransformName",...}' */
   var transformNameMappings: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[Any]
   ] = js.undefined
   
   /** Set this to true if you are sending a request to update a running streaming job. When set, the job name should be the same as the running job. */
@@ -71,7 +71,7 @@ object LaunchFlexTemplateParameter {
     inline def setLaunchOptions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[Any]
     ): Self = StObject.set(x, "launchOptions", value.asInstanceOf[js.Any])
     
     inline def setLaunchOptionsUndefined: Self = StObject.set(x, "launchOptions", js.undefined)
@@ -79,7 +79,7 @@ object LaunchFlexTemplateParameter {
     inline def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
@@ -87,7 +87,7 @@ object LaunchFlexTemplateParameter {
     inline def setTransformNameMappings(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[Any]
     ): Self = StObject.set(x, "transformNameMappings", value.asInstanceOf[js.Any])
     
     inline def setTransformNameMappingsUndefined: Self = StObject.set(x, "transformNameMappings", js.undefined)

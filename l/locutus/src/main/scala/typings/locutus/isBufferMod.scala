@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isBufferMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(vr: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(vr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(vr: Any): Any = ^.asInstanceOf[js.Dynamic].apply(vr.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("locutus/php/var/is_buffer", JSImport.Namespace)
   @js.native

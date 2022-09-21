@@ -31,7 +31,7 @@ trait ButtonProps extends StObject {
   /**
     * Function to be called to activate the normal onClick functionality for this button.
     */
-  var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[js.Any, NativeMouseEvent], Unit]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[Any, NativeMouseEvent], Unit]] = js.undefined
 }
 object ButtonProps {
   
@@ -58,7 +58,7 @@ object ButtonProps {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setOnClick(value: /* e */ MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* e */ MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }

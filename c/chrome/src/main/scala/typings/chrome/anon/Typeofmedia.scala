@@ -121,7 +121,6 @@ trait Typeofmedia extends StObject {
   var VolumeRequest: Instantiable1[/* volume */ Volume, typings.chrome.chrome.cast.media.VolumeRequest]
   
   /**
-    * @namespace
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.timeout
     */
   val timeout: Typeoftimeout

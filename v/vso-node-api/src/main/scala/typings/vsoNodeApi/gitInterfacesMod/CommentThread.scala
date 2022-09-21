@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait CommentThread extends StObject {
   /**
     * Links to other related objects.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * A list of the comments.
@@ -30,17 +29,17 @@ trait CommentThread extends StObject {
   /**
     * The time this thread was last updated.
     */
-  var lastUpdatedDate: Date
+  var lastUpdatedDate: js.Date
   
   /**
     * Optional properties associated with the thread as a collection of key-value pairs.
     */
-  var properties: js.Any
+  var properties: Any
   
   /**
     * The time this thread was published.
     */
-  var publishedDate: Date
+  var publishedDate: js.Date
   
   /**
     * The status of the comment thread.
@@ -55,13 +54,13 @@ trait CommentThread extends StObject {
 object CommentThread {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     comments: js.Array[Comment],
     id: Double,
     isDeleted: Boolean,
-    lastUpdatedDate: Date,
-    properties: js.Any,
-    publishedDate: Date,
+    lastUpdatedDate: js.Date,
+    properties: Any,
+    publishedDate: js.Date,
     status: CommentThreadStatus,
     threadContext: CommentThreadContext
   ): CommentThread = {
@@ -73,22 +72,22 @@ object CommentThread {
     
     inline def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setPublishedDate(value: Date): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
+    inline def setPublishedDate(value: js.Date): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: CommentThreadStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setThreadContext(value: CommentThreadContext): Self = StObject.set(x, "threadContext", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

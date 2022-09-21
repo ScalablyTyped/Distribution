@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lumino/virtualdom" : "1.7.3"
+      "@lumino/virtualdom" : "1.14.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@lumino/virtualdom" : "1.7.3"
+      "@lumino/virtualdom" : "1.14.2"
     }
   ],
   "compile-devDependencies" : [

@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileEncryptionInfo extends StObject {
   
   // The key used to encrypt the file content.
-  var encryptionKey: js.UndefOr[NullableOption[Double]] = js.undefined
+  var encryptionKey: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The file digest prior to encryption.
-  var fileDigest: js.UndefOr[NullableOption[Double]] = js.undefined
+  var fileDigest: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The file digest algorithm.
   var fileDigestAlgorithm: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The initialization vector used for the encryption algorithm.
-  var initializationVector: js.UndefOr[NullableOption[Double]] = js.undefined
+  var initializationVector: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The hash of the encrypted file content + IV (content hash).
-  var mac: js.UndefOr[NullableOption[Double]] = js.undefined
+  var mac: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The key used to get mac.
-  var macKey: js.UndefOr[NullableOption[Double]] = js.undefined
+  var macKey: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The profile identifier.
+  // The the profile identifier.
   var profileIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object FileEncryptionInfo {
@@ -36,13 +36,13 @@ object FileEncryptionInfo {
   
   extension [Self <: FileEncryptionInfo](x: Self) {
     
-    inline def setEncryptionKey(value: NullableOption[Double]): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+    inline def setEncryptionKey(value: NullableOption[String]): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     
     inline def setEncryptionKeyNull: Self = StObject.set(x, "encryptionKey", null)
     
     inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
     
-    inline def setFileDigest(value: NullableOption[Double]): Self = StObject.set(x, "fileDigest", value.asInstanceOf[js.Any])
+    inline def setFileDigest(value: NullableOption[String]): Self = StObject.set(x, "fileDigest", value.asInstanceOf[js.Any])
     
     inline def setFileDigestAlgorithm(value: NullableOption[String]): Self = StObject.set(x, "fileDigestAlgorithm", value.asInstanceOf[js.Any])
     
@@ -54,15 +54,15 @@ object FileEncryptionInfo {
     
     inline def setFileDigestUndefined: Self = StObject.set(x, "fileDigest", js.undefined)
     
-    inline def setInitializationVector(value: NullableOption[Double]): Self = StObject.set(x, "initializationVector", value.asInstanceOf[js.Any])
+    inline def setInitializationVector(value: NullableOption[String]): Self = StObject.set(x, "initializationVector", value.asInstanceOf[js.Any])
     
     inline def setInitializationVectorNull: Self = StObject.set(x, "initializationVector", null)
     
     inline def setInitializationVectorUndefined: Self = StObject.set(x, "initializationVector", js.undefined)
     
-    inline def setMac(value: NullableOption[Double]): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+    inline def setMac(value: NullableOption[String]): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
-    inline def setMacKey(value: NullableOption[Double]): Self = StObject.set(x, "macKey", value.asInstanceOf[js.Any])
+    inline def setMacKey(value: NullableOption[String]): Self = StObject.set(x, "macKey", value.asInstanceOf[js.Any])
     
     inline def setMacKeyNull: Self = StObject.set(x, "macKey", null)
     

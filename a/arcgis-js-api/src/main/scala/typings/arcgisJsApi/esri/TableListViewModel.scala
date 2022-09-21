@@ -7,6 +7,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Provides the logic for the [TableList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html)
+  */
 trait TableListViewModel extends StObject {
   
   /**
@@ -14,7 +19,7 @@ trait TableListViewModel extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#listItemCreatedFunction)
     */
-  def listItemCreatedFunction(event: js.Any): Unit
+  def listItemCreatedFunction(event: Any): scala.Unit
   /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html).
     *
@@ -24,14 +29,16 @@ trait TableListViewModel extends StObject {
   var listItemCreatedFunction_Original: TableListViewModelListItemCreatedHandler
   
   /**
-    * A reference to the [web map](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html) containing the tables.
+    * A reference to the [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) containing the tables.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#map)
     */
-  var map: WebMap
+  var map: Map | WebMap
   
   /**
     * The view model's state.
+    *
+    * @default disabled
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-TableListViewModel.html#state)
     */
@@ -47,8 +54,8 @@ trait TableListViewModel extends StObject {
 object TableListViewModel {
   
   inline def apply(
-    listItemCreatedFunction: /* event */ js.Any => Unit,
-    map: WebMap,
+    listItemCreatedFunction: /* event */ Any => scala.Unit,
+    map: Map | WebMap,
     state: loading | ready | disabled,
     tableItems: Collection[TableListListItem]
   ): TableListViewModel = {
@@ -58,9 +65,9 @@ object TableListViewModel {
   
   extension [Self <: TableListViewModel](x: Self) {
     
-    inline def setListItemCreatedFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "listItemCreatedFunction", js.Any.fromFunction1(value))
+    inline def setListItemCreatedFunction(value: /* event */ Any => scala.Unit): Self = StObject.set(x, "listItemCreatedFunction", js.Any.fromFunction1(value))
     
-    inline def setMap(value: WebMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: Map | WebMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
     inline def setState(value: loading | ready | disabled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

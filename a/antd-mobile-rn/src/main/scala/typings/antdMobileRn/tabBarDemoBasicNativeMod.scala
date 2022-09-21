@@ -10,16 +10,15 @@ object tabBarDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/tab-bar/demo/basic.native", JSImport.Default)
   @js.native
-  class default protected () extends BasicTabBarExample {
-    def this(props: js.Any) = this()
+  open class default protected () extends BasicTabBarExample {
+    def this(props: Any) = this()
   }
   
   @js.native
-  trait BasicTabBarExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait BasicTabBarExample extends Component[Any, Any, Any] {
     
-    def onChangeTab(tabName: js.Any): Unit = js.native
+    def onChangeTab(tabName: Any): Unit = js.native
     
-    def renderContent(pageText: js.Any): Element = js.native
+    def renderContent(pageText: Any): Element = js.native
   }
 }

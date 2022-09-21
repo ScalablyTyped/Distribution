@@ -10,10 +10,10 @@ Javascript module template.
 | ------------------ | :-------------: |
 | Full name          | grumbler-scripts |
 | Keywords           | template |
-| # releases         | 47 |
-| # dependents       | 1 |
-| # downloads        | 18548 |
-| # stars            | 0 |
+| # releases         | 45 |
+| # dependents       | 0.0 |
+| # downloads        | 999.6666666666666 |
+| # stars            | 292.0 |
 
 ## Links
 - [Homepage](https://github.com/krakenjs/grumbler#readme)

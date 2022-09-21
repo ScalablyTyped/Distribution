@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents the information in a PlayReady content header. */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyContentHeader")
 @js.native
-class PlayReadyContentHeader protected ()
+open class PlayReadyContentHeader protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyContentHeader {
   /**

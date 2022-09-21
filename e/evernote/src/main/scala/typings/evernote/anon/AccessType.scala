@@ -60,7 +60,7 @@ object AccessType {
     
     inline def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
     
-    inline def setAuthorsVarargs(value: String*): Self = StObject.set(x, "authors", js.Array(value :_*))
+    inline def setAuthorsVarargs(value: String*): Self = StObject.set(x, "authors", js.Array(value*))
     
     inline def setClipUrl(value: String): Self = StObject.set(x, "clipUrl", value.asInstanceOf[js.Any])
     
@@ -106,7 +106,7 @@ object AccessType {
     
     inline def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
     
-    inline def setThumbnailsVarargs(value: RelatedContentImage*): Self = StObject.set(x, "thumbnails", js.Array(value :_*))
+    inline def setThumbnailsVarargs(value: RelatedContentImage*): Self = StObject.set(x, "thumbnails", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

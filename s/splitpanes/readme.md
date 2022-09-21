@@ -1,19 +1,19 @@
 
 # Scala.js typings for splitpanes
 
-Typings are for version 1.0
+Typings are for version 2.2
 
 ## Library description:
-A Vue JS reliable, simple and touch-ready panes splitter / resizer
+A Vue.js reliable, simple and touch-ready panes splitter / resizer
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | splitpanes |
 | Keywords           | splitpanes, split panes, panes resizer, vue, vue3, vuejs, ui |
-| # releases         | 40 |
-| # dependents       | 13 |
-| # downloads        | 147577 |
-| # stars            | 0 |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 105492.0 |
+| # stars            | 1056.0 |
 
 ## Links
 - [Homepage](https://github.com/antoniandre/splitpanes#readme)

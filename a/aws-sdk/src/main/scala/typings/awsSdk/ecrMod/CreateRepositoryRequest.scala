@@ -22,6 +22,11 @@ trait CreateRepositoryRequest extends StObject {
   var imageTagMutability: js.UndefOr[ImageTagMutability] = js.undefined
   
   /**
+    * The Amazon Web Services account ID associated with the registry to create the repository. If you do not specify a registry, the default registry is assumed.
+    */
+  var registryId: js.UndefOr[RegistryId] = js.undefined
+  
+  /**
     * The name to use for the repository. The repository name may be specified on its own (such as nginx-web-app) or it can be prepended with a namespace to group the repository into a category (such as project-a/nginx-web-app).
     */
   var repositoryName: RepositoryName
@@ -52,12 +57,16 @@ object CreateRepositoryRequest {
     
     inline def setImageTagMutabilityUndefined: Self = StObject.set(x, "imageTagMutability", js.undefined)
     
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+    
     inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
     inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

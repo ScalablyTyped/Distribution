@@ -10,10 +10,10 @@ object cropOriginalMod {
   
   @JSImport("material-ui/svg-icons/image/crop-original", JSImport.Default)
   @js.native
-  class default () extends ImageCropOriginal
+  open class default () extends ImageCropOriginal
   
   @JSImport("material-ui/svg-icons/image/crop-original", "ImageCropOriginal")
   @js.native
-  class ImageCropOriginal ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageCropOriginal ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

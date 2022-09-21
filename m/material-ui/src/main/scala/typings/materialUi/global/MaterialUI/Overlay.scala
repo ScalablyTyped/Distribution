@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__MaterialUI.Overlay")
 @js.native
-class Overlay ()
-  extends Component[OverlayProps, js.Object, js.Any]
+open class Overlay ()
+  extends Component[OverlayProps, js.Object, Any]

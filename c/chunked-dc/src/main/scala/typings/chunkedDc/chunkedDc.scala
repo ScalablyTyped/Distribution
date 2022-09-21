@@ -2,10 +2,8 @@ package typings.chunkedDc
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable3
-import typings.std.ArrayBuffer
 import typings.std.IterableIterator
 import typings.std.IteratorResult
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,17 +14,22 @@ object chunkedDc {
   @js.native
   trait Chunker
     extends StObject
-       with IterableIterator[Uint8Array] {
+       with IterableIterator[js.typedarray.Uint8Array] {
     
     var hasNext: Boolean = js.native
     
-    def next(): IteratorResult[Uint8Array, js.Any] = js.native
+    def next(): IteratorResult[js.typedarray.Uint8Array, Any] = js.native
   }
   
   @js.native
   trait ChunkerStatic
     extends StObject
-       with Instantiable3[/* id */ Double, /* message */ Uint8Array, /* chunkSize */ Double, Chunker]
+       with Instantiable3[
+          /* id */ Double, 
+          /* message */ js.typedarray.Uint8Array, 
+          /* chunkSize */ Double, 
+          Chunker
+        ]
   
   /** common.ts **/
   trait CommonStatic extends StObject {
@@ -47,7 +50,7 @@ object chunkedDc {
   }
   
   /** unchunker.ts **/
-  type MessageListener = js.Function2[/* message */ Uint8Array, /* context */ js.UndefOr[js.Any], Unit]
+  type MessageListener = js.Function2[/* message */ js.typedarray.Uint8Array, /* context */ js.UndefOr[Any], Unit]
   
   /** main.ts **/
   trait Standalone extends StObject {
@@ -74,13 +77,13 @@ object chunkedDc {
   @js.native
   trait Unchunker extends StObject {
     
-    def add(chunk: ArrayBuffer): Unit = js.native
-    def add(chunk: ArrayBuffer, context: js.Any): Unit = js.native
+    def add(chunk: js.typedarray.ArrayBuffer): Unit = js.native
+    def add(chunk: js.typedarray.ArrayBuffer, context: Any): Unit = js.native
     
     def gc(maxAge: Double): Double = js.native
     
-    def onMessage(message: Uint8Array): Unit = js.native
-    def onMessage(message: Uint8Array, context: js.Any): Unit = js.native
+    def onMessage(message: js.typedarray.Uint8Array): Unit = js.native
+    def onMessage(message: js.typedarray.Uint8Array, context: Any): Unit = js.native
     @JSName("onMessage")
     var onMessage_Original: MessageListener = js.native
   }

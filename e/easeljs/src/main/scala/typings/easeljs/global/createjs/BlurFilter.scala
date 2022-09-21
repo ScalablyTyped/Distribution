@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.BlurFilter")
 @js.native
-class BlurFilter ()
+open class BlurFilter ()
   extends StObject
      with typings.easeljs.createjs.BlurFilter {
   def this(blurX: Double) = this()

@@ -8,5 +8,5 @@ object mod {
   
   @JSImport("react-scrollbar", JSImport.Namespace)
   @js.native
-  class ^ () extends ScrollArea
+  open class ^ () extends ScrollArea
 }

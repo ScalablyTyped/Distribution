@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogModifierList")
 @js.native
-class CatalogModifierList () extends StObject {
+open class CatalogModifierList () extends StObject {
   
   /**
     * The options included in the `CatalogModifierList`. You must include at least one `CatalogModifier`.

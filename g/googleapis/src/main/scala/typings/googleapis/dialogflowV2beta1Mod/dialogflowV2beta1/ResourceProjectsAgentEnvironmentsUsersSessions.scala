@@ -4,32 +4,21 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2beta1", "dialogflow_v2beta1.Resource$Projects$Agent$Environments$Users$Sessions")
 @js.native
-class ResourceProjectsAgentEnvironmentsUsersSessions protected () extends StObject {
+open class ResourceProjectsAgentEnvironmentsUsersSessions protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
   var contexts: ResourceProjectsAgentEnvironmentsUsersSessionsContexts = js.native
   
-  /**
-    * dialogflow.projects.agent.environments.users.sessions.deleteContexts
-    * @desc Deletes all active contexts in the specified session.
-    * @alias
-    * dialogflow.projects.agent.environments.users.sessions.deleteContexts
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.parent Required. The name of the session to delete all contexts from. Format: `projects/<Project ID>/agent/sessions/<Session ID>` or `projects/<Project ID>/agent/environments/<Environment ID>/users/<User ID>/sessions/<Session ID>`. If `Environment ID` is not specified we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def deleteContexts(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def deleteContexts(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
   def deleteContexts(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
@@ -40,8 +29,8 @@ class ResourceProjectsAgentEnvironmentsUsersSessions protected () extends StObje
   ): Unit = js.native
   def deleteContexts(
     params: ParamsResourceProjectsAgentEnvironmentsUsersSessionsDeletecontexts,
-    options: BodyResponseCallback[SchemaGoogleProtobufEmpty],
-    callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
+    options: BodyResponseCallback[Readable | SchemaGoogleProtobufEmpty],
+    callback: BodyResponseCallback[Readable | SchemaGoogleProtobufEmpty]
   ): Unit = js.native
   def deleteContexts(params: ParamsResourceProjectsAgentEnvironmentsUsersSessionsDeletecontexts, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def deleteContexts(
@@ -49,23 +38,69 @@ class ResourceProjectsAgentEnvironmentsUsersSessions protected () extends StObje
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
-  
   /**
-    * dialogflow.projects.agent.environments.users.sessions.detectIntent
-    * @desc Processes a natural language query and returns structured,
-    * actionable data as a result. This method is not idempotent, because it
-    * may cause contexts and session entity types to be updated, which in turn
-    * might affect results of future queries.
-    * @alias dialogflow.projects.agent.environments.users.sessions.detectIntent
-    * @memberOf! ()
+    * Deletes all active contexts in the specified session.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dialogflow.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.session Required. The name of the session this query is sent to. Format: `projects/<Project ID>/agent/sessions/<Session ID>`, or `projects/<Project ID>/agent/environments/<Environment ID>/users/<User ID>/sessions/<Session ID>`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we are using "-". It’s up to the API caller to choose an appropriate `Session ID` and `User Id`. They can be a random numbers or some type of user and session identifiers (preferably hashed). The length of the `Session ID` and `User ID` must not exceed 36 characters.
-    * @param {().GoogleCloudDialogflowV2beta1DetectIntentRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dialogflow = google.dialogflow('v2beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/dialogflow',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await dialogflow.projects.agent.environments.users.sessions.deleteContexts({
+    *       // Required. The name of the session to delete all contexts from. Supported formats: - `projects//agent/sessions/, - `projects//locations//agent/sessions/`, - `projects//agent/environments//users//sessions/`, - `projects//locations//agent/environments//users//sessions/`, If `Location ID` is not specified we assume default 'us' location. If `Environment ID` is not specified we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+    *       parent:
+    *         'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session',
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def deleteContexts(
+    params: ParamsResourceProjectsAgentEnvironmentsUsersSessionsDeletecontexts,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def deleteContexts(
+    params: ParamsResourceProjectsAgentEnvironmentsUsersSessionsDeletecontexts,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def detectIntent(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse] = js.native
   def detectIntent(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse]): Unit = js.native
   def detectIntent(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse] = js.native
@@ -76,14 +111,95 @@ class ResourceProjectsAgentEnvironmentsUsersSessions protected () extends StObje
   ): Unit = js.native
   def detectIntent(
     params: ParamsResourceProjectsAgentEnvironmentsUsersSessionsDetectintent,
-    options: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse],
-    callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse]
+    options: BodyResponseCallback[Readable | SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse],
+    callback: BodyResponseCallback[Readable | SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse]
   ): Unit = js.native
   def detectIntent(params: ParamsResourceProjectsAgentEnvironmentsUsersSessionsDetectintent, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse] = js.native
   def detectIntent(
     params: ParamsResourceProjectsAgentEnvironmentsUsersSessionsDetectintent,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1DetectIntentResponse]
+  ): Unit = js.native
+  /**
+    * Processes a natural language query and returns structured, actionable data as a result. This method is not idempotent, because it may cause contexts and session entity types to be updated, which in turn might affect results of future queries. If you might use [Agent Assist](https://cloud.google.com/dialogflow/docs/#aa) or other CCAI products now or in the future, consider using AnalyzeContent instead of `DetectIntent`. `AnalyzeContent` has additional functionality for Agent Assist and other CCAI products. Note: Always use agent versions for production traffic. See [Versions and environments](https://cloud.google.com/dialogflow/es/docs/agents-versions).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dialogflow.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const dialogflow = google.dialogflow('v2beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/dialogflow',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res =
+    *     await dialogflow.projects.agent.environments.users.sessions.detectIntent({
+    *       // Required. The name of the session this query is sent to. Supported formats: - `projects//agent/sessions/, - `projects//locations//agent/sessions/`, - `projects//agent/environments//users//sessions/`, - `projects//locations//agent/environments//users//sessions/`, If `Location ID` is not specified we assume default 'us' location. If `Environment ID` is not specified, we assume default 'draft' environment (`Environment ID` might be referred to as environment name at some places). If `User ID` is not specified, we are using "-". It's up to the API caller to choose an appropriate `Session ID` and `User Id`. They can be a random number or some type of user and session identifiers (preferably hashed). The length of the `Session ID` and `User ID` must not exceed 36 characters. For more information, see the [API interactions guide](https://cloud.google.com/dialogflow/docs/api-overview). Note: Always use agent versions for production traffic. See [Versions and environments](https://cloud.google.com/dialogflow/es/docs/agents-versions).
+    *       session:
+    *         'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session',
+    *
+    *       // Request body metadata
+    *       requestBody: {
+    *         // request body parameters
+    *         // {
+    *         //   "inputAudio": "my_inputAudio",
+    *         //   "outputAudioConfig": {},
+    *         //   "outputAudioConfigMask": "my_outputAudioConfigMask",
+    *         //   "queryInput": {},
+    *         //   "queryParams": {}
+    *         // }
+    *       },
+    *     });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "alternativeQueryResults": [],
+    *   //   "outputAudio": "my_outputAudio",
+    *   //   "outputAudioConfig": {},
+    *   //   "queryResult": {},
+    *   //   "responseId": "my_responseId",
+    *   //   "webhookStatus": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def detectIntent(
+    params: ParamsResourceProjectsAgentEnvironmentsUsersSessionsDetectintent,
+    options: StreamMethodOptions
+  ): GaxiosPromise[Readable] = js.native
+  def detectIntent(
+    params: ParamsResourceProjectsAgentEnvironmentsUsersSessionsDetectintent,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
   var entityTypes: ResourceProjectsAgentEnvironmentsUsersSessionsEntitytypes = js.native

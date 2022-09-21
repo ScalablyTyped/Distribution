@@ -12,14 +12,14 @@ trait DirectionsFeatureSetProperties
   /**
     * The extent of the route.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DirectionsFeatureSet.html#extent)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#extent)
     */
   var extent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
     * The geometry type of the FeatureSet.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DirectionsFeatureSet.html#geometryType)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#geometryType)
     */
   @JSName("geometryType")
   var geometryType_DirectionsFeatureSetProperties: js.UndefOr[polyline] = js.undefined
@@ -27,49 +27,49 @@ trait DirectionsFeatureSetProperties
   /**
     * A single polyline representing the route.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DirectionsFeatureSet.html#mergedGeometry)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#mergedGeometry)
     */
   var mergedGeometry: js.UndefOr[PolylineProperties] = js.undefined
   
   /**
     * The ID of the route returned from the server.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DirectionsFeatureSet.html#routeId)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#routeId)
     */
-  var routeId: js.UndefOr[String] = js.undefined
+  var routeId: js.UndefOr[Double] = js.undefined
   
   /**
-    * Name specified in [RouteParameters.stops](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#stops).
+    * Name specified in [RouteParameters.stops](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#stops).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DirectionsFeatureSet.html#routeName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#routeName)
     */
   var routeName: js.UndefOr[String] = js.undefined
   
   /**
-    * Lists additional information about the directions depending on the value of [RouteParameters.directionsOutputType](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#directionsOutputType).
+    * Lists additional information about the directions depending on the value of [RouteParameters.directionsOutputType](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#directionsOutputType).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DirectionsFeatureSet.html#strings)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#strings)
     */
-  var strings: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var strings: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Actual drive time calculated for the route.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DirectionsFeatureSet.html#totalDriveTime)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#totalDriveTime)
     */
   var totalDriveTime: js.UndefOr[Double] = js.undefined
   
   /**
-    * The length of the route as specified in the units set in [RouteParameters.directionsLengthUnits](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#directionsLengthUnits).
+    * The length of the route as specified in the units set in [RouteParameters.directionsLengthUnits](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#directionsLengthUnits).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DirectionsFeatureSet.html#totalLength)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#totalLength)
     */
   var totalLength: js.UndefOr[Double] = js.undefined
   
   /**
-    * The total time calculated for the route as specified in the units set in [RouteParameters.directionsTimeAttribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#directionsTimeAttribute).
+    * The total time calculated for the route as specified in the units set in [RouteParameters.directionsTimeAttribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RouteParameters.html#directionsTimeAttribute).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DirectionsFeatureSet.html#totalTime)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DirectionsFeatureSet.html#totalTime)
     */
   var totalTime: js.UndefOr[Double] = js.undefined
 }
@@ -94,7 +94,7 @@ object DirectionsFeatureSetProperties {
     
     inline def setMergedGeometryUndefined: Self = StObject.set(x, "mergedGeometry", js.undefined)
     
-    inline def setRouteId(value: String): Self = StObject.set(x, "routeId", value.asInstanceOf[js.Any])
+    inline def setRouteId(value: Double): Self = StObject.set(x, "routeId", value.asInstanceOf[js.Any])
     
     inline def setRouteIdUndefined: Self = StObject.set(x, "routeId", js.undefined)
     
@@ -102,11 +102,11 @@ object DirectionsFeatureSetProperties {
     
     inline def setRouteNameUndefined: Self = StObject.set(x, "routeName", js.undefined)
     
-    inline def setStrings(value: js.Array[js.Any]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+    inline def setStrings(value: js.Array[Any]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
     inline def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
     
-    inline def setStringsVarargs(value: js.Any*): Self = StObject.set(x, "strings", js.Array(value :_*))
+    inline def setStringsVarargs(value: Any*): Self = StObject.set(x, "strings", js.Array(value*))
     
     inline def setTotalDriveTime(value: Double): Self = StObject.set(x, "totalDriveTime", value.asInstanceOf[js.Any])
     

@@ -16,8 +16,8 @@ trait PeakDetect extends StObject {
     *   @param [val] Optional value to pass into the
     *   function when a peak is detected.
     */
-  def onPeak(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
-  def onPeak(callback: js.Function1[/* repeated */ js.Any, js.Any], `val`: js.Object): Unit = js.native
+  def onPeak(callback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
+  def onPeak(callback: js.Function1[/* repeated */ Any, Any], `val`: js.Object): Unit = js.native
   
   /**
     *   The update method is run in the draw loop. Accepts

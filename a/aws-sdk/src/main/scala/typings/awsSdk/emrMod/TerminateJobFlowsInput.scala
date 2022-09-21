@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TerminateJobFlowsInput extends StObject {
   
   /**
-    * A list of job flows to be shutdown.
+    * A list of job flows to be shut down.
     */
   var JobFlowIds: XmlStringList
 }
@@ -22,6 +22,6 @@ object TerminateJobFlowsInput {
     
     inline def setJobFlowIds(value: XmlStringList): Self = StObject.set(x, "JobFlowIds", value.asInstanceOf[js.Any])
     
-    inline def setJobFlowIdsVarargs(value: XmlString*): Self = StObject.set(x, "JobFlowIds", js.Array(value :_*))
+    inline def setJobFlowIdsVarargs(value: XmlString*): Self = StObject.set(x, "JobFlowIds", js.Array(value*))
   }
 }

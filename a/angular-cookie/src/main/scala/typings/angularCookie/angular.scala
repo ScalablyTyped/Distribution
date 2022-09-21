@@ -13,7 +13,7 @@ object angular {
       /**
         * The method that will be used to decode extracted cookie values (should be passed when using Get).
         */
-      var decode: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
+      var decode: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
       
       /**
         * The domain tells the browser to which domain the cookie should be sent. If you don't specify it, it becomes the domain of the page that sets the cookie.
@@ -23,7 +23,7 @@ object angular {
       /**
         * The method that will be used to encode the cookie value (should be passed when using Set).
         */
-      var encode: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
+      var encode: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
       
       /**
         * Allows you to set the expiration time in hours, minutes, seconds, or `milliseconds. If this is not specified, any expiration time specified will default to days.
@@ -54,7 +54,7 @@ object angular {
       
       extension [Self <: CookieOptions](x: Self) {
         
-        inline def setDecode(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+        inline def setDecode(value: /* value */ Any => Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
         
         inline def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
         
@@ -62,7 +62,7 @@ object angular {
         
         inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
         
-        inline def setEncode(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+        inline def setEncode(value: /* value */ Any => Any): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
         
         inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
         
@@ -90,16 +90,16 @@ object angular {
       /**
         * Get all cookies
         */
-      def apply(): js.Any = js.native
+      def apply(): Any = js.native
       /**
         * Get a cookie with a specific key
         */
-      def apply(key: String): js.Any = js.native
+      def apply(key: String): Any = js.native
       /**
         * Create a cookie
         */
-      def apply(key: String, value: js.Any): js.Any = js.native
-      def apply(key: String, value: js.Any, options: CookieOptions): js.Any = js.native
+      def apply(key: String, value: Any): Any = js.native
+      def apply(key: String, value: Any, options: CookieOptions): Any = js.native
       
       /**
         * Remove a cookie

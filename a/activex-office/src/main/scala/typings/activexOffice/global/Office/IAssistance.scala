@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IAssistance")
 @js.native
-/* private */ class IAssistance ()
+/* private */ open class IAssistance ()
   extends StObject
      with typings.activexOffice.Office.IAssistance

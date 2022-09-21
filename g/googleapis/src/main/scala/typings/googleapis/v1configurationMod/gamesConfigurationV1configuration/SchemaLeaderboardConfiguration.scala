@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This is a JSON template for an leaderboard configuration resource.
-  */
 trait SchemaLeaderboardConfiguration extends StObject {
   
   /**
@@ -17,13 +14,12 @@ trait SchemaLeaderboardConfiguration extends StObject {
   /**
     * The ID of the leaderboard.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Uniquely identifies the type of this resource. Value is always the fixed
-    * string gamesConfiguration#leaderboardConfiguration.
+    * Uniquely identifies the type of this resource. Value is always the fixed string `gamesConfiguration#leaderboardConfiguration`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The read-only published data of the leaderboard.
@@ -33,24 +29,19 @@ trait SchemaLeaderboardConfiguration extends StObject {
   /**
     * Maximum score that can be posted to this leaderboard.
     */
-  var scoreMax: js.UndefOr[String] = js.undefined
+  var scoreMax: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Minimum score that can be posted to this leaderboard.
     */
-  var scoreMin: js.UndefOr[String] = js.undefined
+  var scoreMin: js.UndefOr[String | Null] = js.undefined
   
-  /**
-    * The type of the leaderboard. Possible values are:   -
-    * &quot;LARGER_IS_BETTER&quot; - Larger scores posted are ranked higher.  -
-    * &quot;SMALLER_IS_BETTER&quot; - Smaller scores posted are ranked higher.
-    */
-  var scoreOrder: js.UndefOr[String] = js.undefined
+  var scoreOrder: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The token for this resource.
     */
-  var token: js.UndefOr[String] = js.undefined
+  var token: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLeaderboardConfiguration {
   
@@ -67,9 +58,13 @@ object SchemaLeaderboardConfiguration {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -79,17 +74,25 @@ object SchemaLeaderboardConfiguration {
     
     inline def setScoreMax(value: String): Self = StObject.set(x, "scoreMax", value.asInstanceOf[js.Any])
     
+    inline def setScoreMaxNull: Self = StObject.set(x, "scoreMax", null)
+    
     inline def setScoreMaxUndefined: Self = StObject.set(x, "scoreMax", js.undefined)
     
     inline def setScoreMin(value: String): Self = StObject.set(x, "scoreMin", value.asInstanceOf[js.Any])
+    
+    inline def setScoreMinNull: Self = StObject.set(x, "scoreMin", null)
     
     inline def setScoreMinUndefined: Self = StObject.set(x, "scoreMin", js.undefined)
     
     inline def setScoreOrder(value: String): Self = StObject.set(x, "scoreOrder", value.asInstanceOf[js.Any])
     
+    inline def setScoreOrderNull: Self = StObject.set(x, "scoreOrder", null)
+    
     inline def setScoreOrderUndefined: Self = StObject.set(x, "scoreOrder", js.undefined)
     
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    
+    inline def setTokenNull: Self = StObject.set(x, "token", null)
     
     inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }

@@ -26,15 +26,15 @@ object abstractMod {
       */
     def getPropertyByName[Y /* <: /* keyof T */ String */](name: Y): /* import warning: importer.ImportType#apply Failed type conversion: T[Y] */ js.Any = js.native
     
-    /* private */ var namespace: js.Any = js.native
+    /* private */ var namespace: Any = js.native
     
-    /* private */ var parent: js.Any = js.native
+    /* private */ var parent: Any = js.native
     
-    /* private */ var propcache: js.Any = js.native
+    /* private */ var propcache: Any = js.native
     
     /** returns JSONifyable data */
-    def toJSON(): Record[String, js.Any] = js.native
-    def toJSON(includeNameSpace: Boolean): Record[String, js.Any] = js.native
+    def toJSON(): Record[String, Any] = js.native
+    def toJSON(includeNameSpace: Boolean): Record[String, Any] = js.native
     
     /** updates the cache with the given object */
     def updateCache(props: ResponseEntry): this.type = js.native

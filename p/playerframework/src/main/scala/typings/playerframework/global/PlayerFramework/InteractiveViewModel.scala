@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   **/
 @JSGlobal("PlayerFramework.InteractiveViewModel")
 @js.native
-class InteractiveViewModel ()
+open class InteractiveViewModel ()
   extends StObject
      with typings.playerframework.PlayerFramework.InteractiveViewModel

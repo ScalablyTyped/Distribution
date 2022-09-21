@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     anchor point of the segment that describes the out tangent of the
   *     segment
   */
-class Segment ()
+open class Segment ()
   extends StObject
      with typings.paper.paper.Segment {
   /** 

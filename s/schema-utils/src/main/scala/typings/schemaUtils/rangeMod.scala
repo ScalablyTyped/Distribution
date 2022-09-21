@@ -22,7 +22,7 @@ object rangeMod {
     */
   @JSImport("schema-utils/declarations/util/Range", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Range
   @JSImport("schema-utils/declarations/util/Range", JSImport.Namespace)
@@ -64,9 +64,7 @@ object rangeMod {
     * @returns {">" | ">=" | "<" | "<="}
     */
   /* static member */
-  inline def getOperator_left(side: left, exclusive: Boolean): Greaterthansign | GreaterthansignEqualssign | Lessthansign | LessthansignEqualssign = (^.asInstanceOf[js.Dynamic].applyDynamic("getOperator")(side.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[Greaterthansign | GreaterthansignEqualssign | Lessthansign | LessthansignEqualssign]
-  
-  inline def getOperator_right(side: right, exclusive: Boolean): Greaterthansign | GreaterthansignEqualssign | Lessthansign | LessthansignEqualssign = (^.asInstanceOf[js.Dynamic].applyDynamic("getOperator")(side.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[Greaterthansign | GreaterthansignEqualssign | Lessthansign | LessthansignEqualssign]
+  inline def getOperator(side: left | right, exclusive: Boolean): Greaterthansign | GreaterthansignEqualssign | Lessthansign | LessthansignEqualssign = (^.asInstanceOf[js.Dynamic].applyDynamic("getOperator")(side.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[Greaterthansign | GreaterthansignEqualssign | Lessthansign | LessthansignEqualssign]
   
   /**
     * @param {Array<RangeValue>} values
@@ -74,7 +72,7 @@ object rangeMod {
     * @return {RangeValue} computed value and it's exclusive flag
     */
   /* static member */
-  inline def getRangeValue(values: js.Array[js.Tuple2[Double, Boolean]], logic: Boolean): js.Tuple2[Double, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRangeValue")(values.asInstanceOf[js.Any], logic.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Boolean]]
+  inline def getRangeValue(values: js.Array[RangeValue], logic: Boolean): RangeValue = (^.asInstanceOf[js.Dynamic].applyDynamic("getRangeValue")(values.asInstanceOf[js.Any], logic.asInstanceOf[js.Any])).asInstanceOf[RangeValue]
   
   /**
     * @typedef {[number, boolean]} RangeValue
@@ -88,10 +86,10 @@ object rangeMod {
   trait Range extends StObject {
     
     /** @type {Array<RangeValue>} */
-    var _left: js.Array[js.Tuple2[Double, Boolean]] = js.native
+    var _left: js.Array[RangeValue] = js.native
     
     /** @type {Array<RangeValue>} */
-    var _right: js.Array[js.Tuple2[Double, Boolean]] = js.native
+    var _right: js.Array[RangeValue] = js.native
     
     /**
       * @param {boolean} logic is not logic applied
@@ -117,5 +115,5 @@ object rangeMod {
   
   type RangeValue = js.Tuple2[Double, Boolean]
   
-  type RangeValueCallback = js.Function1[/* rangeValue */ js.Tuple2[Double, Boolean], Boolean]
+  type RangeValueCallback = js.Function1[/* rangeValue */ RangeValue, Boolean]
 }

@@ -10,10 +10,10 @@ A simple module for applying source maps to JS stack traces in the browser.
 | ------------------ | :-------------: |
 | Full name          | sourcemapped-stacktrace |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 19 |
-| # downloads        | 9550725 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 671362.3333333334 |
+| # stars            | 175.0 |
 
 ## Links
 - [Homepage](https://github.com/novocaine/sourcemapped-stacktrace)

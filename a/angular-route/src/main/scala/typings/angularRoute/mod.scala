@@ -37,11 +37,11 @@ object mod extends Shortcut {
         
         var locals: Dictindex
         
-        var params: js.Any
+        var params: Any
       }
       object ICurrentRoute {
         
-        inline def apply(locals: Dictindex, params: js.Any): ICurrentRoute = {
+        inline def apply(locals: Dictindex, params: Any): ICurrentRoute = {
           val __obj = js.Dynamic.literal(locals = locals.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
           __obj.asInstanceOf[ICurrentRoute]
         }
@@ -50,7 +50,7 @@ object mod extends Shortcut {
           
           inline def setLocals(value: Dictindex): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
           
-          inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+          inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         }
       }
       
@@ -103,7 +103,7 @@ object mod extends Shortcut {
                 String | (js.Function3[
                   /* $routeParams */ js.UndefOr[IRouteParamsService], 
                   /* $locationPath */ js.UndefOr[String], 
-                  /* $locationSearch */ js.UndefOr[js.Any], 
+                  /* $locationSearch */ js.UndefOr[Any], 
                   String
                 ])
               ] = js.undefined
@@ -158,7 +158,7 @@ object mod extends Shortcut {
           *   `ngRoute.$routeParams` will still refer to the previous route within these resolve functions.  Use
           *   `$route.current.params` to access the new route parameters, instead.
           */
-        var resolve: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+        var resolve: js.UndefOr[StringDictionary[Any]] = js.undefined
         
         /**
           * {string=}
@@ -185,7 +185,7 @@ object mod extends Shortcut {
           */
         var resolveRedirectTo: js.UndefOr[
                 Injectable[
-                  js.Function1[/* repeated */ js.Any, js.UndefOr[IPromise[js.UndefOr[String]] | String]]
+                  js.Function1[/* repeated */ Any, js.UndefOr[IPromise[js.UndefOr[String]] | String]]
                 ]
               ] = js.undefined
         
@@ -234,19 +234,19 @@ object mod extends Shortcut {
           
           inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
           
-          inline def setControllerVarargs(value: (String | Function)*): Self = StObject.set(x, "controller", js.Array(value :_*))
+          inline def setControllerVarargs(value: (String | Function)*): Self = StObject.set(x, "controller", js.Array(value*))
           
           inline def setRedirectTo(
             value: String | (js.Function3[
                       /* $routeParams */ js.UndefOr[IRouteParamsService], 
                       /* $locationPath */ js.UndefOr[String], 
-                      /* $locationSearch */ js.UndefOr[js.Any], 
+                      /* $locationSearch */ js.UndefOr[Any], 
                       String
                     ])
           ): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
           
           inline def setRedirectToFunction3(
-            value: (/* $routeParams */ js.UndefOr[IRouteParamsService], /* $locationPath */ js.UndefOr[String], /* $locationSearch */ js.UndefOr[js.Any]) => String
+            value: (/* $routeParams */ js.UndefOr[IRouteParamsService], /* $locationPath */ js.UndefOr[String], /* $locationSearch */ js.UndefOr[Any]) => String
           ): Self = StObject.set(x, "redirectTo", js.Any.fromFunction3(value))
           
           inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
@@ -259,7 +259,7 @@ object mod extends Shortcut {
           
           inline def setReloadOnUrlUndefined: Self = StObject.set(x, "reloadOnUrl", js.undefined)
           
-          inline def setResolve(value: StringDictionary[js.Any]): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+          inline def setResolve(value: StringDictionary[Any]): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
           
           inline def setResolveAs(value: String): Self = StObject.set(x, "resolveAs", value.asInstanceOf[js.Any])
           
@@ -267,17 +267,17 @@ object mod extends Shortcut {
           
           inline def setResolveRedirectTo(
             value: Injectable[
-                      js.Function1[/* repeated */ js.Any, js.UndefOr[IPromise[js.UndefOr[String]] | String]]
+                      js.Function1[/* repeated */ Any, js.UndefOr[IPromise[js.UndefOr[String]] | String]]
                     ]
           ): Self = StObject.set(x, "resolveRedirectTo", value.asInstanceOf[js.Any])
           
-          inline def setResolveRedirectToFunction1(value: /* repeated */ js.Any => js.UndefOr[IPromise[js.UndefOr[String]] | String]): Self = StObject.set(x, "resolveRedirectTo", js.Any.fromFunction1(value))
+          inline def setResolveRedirectToFunction1(value: /* repeated */ Any => js.UndefOr[IPromise[js.UndefOr[String]] | String]): Self = StObject.set(x, "resolveRedirectTo", js.Any.fromFunction1(value))
           
           inline def setResolveRedirectToUndefined: Self = StObject.set(x, "resolveRedirectTo", js.undefined)
           
           inline def setResolveRedirectToVarargs(
-            value: (String | (js.Function1[/* repeated */ js.Any, js.UndefOr[IPromise[js.UndefOr[String]] | String]]))*
-          ): Self = StObject.set(x, "resolveRedirectTo", js.Array(value :_*))
+            value: (String | (js.Function1[/* repeated */ Any, js.UndefOr[IPromise[js.UndefOr[String]] | String]]))*
+          ): Self = StObject.set(x, "resolveRedirectTo", js.Array(value*))
           
           inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
           
@@ -299,7 +299,7 @@ object mod extends Shortcut {
       // RouteParamsService
       // see http://docs.angularjs.org/api/ngRoute.$routeParams
       ///////////////////////////////////////////////////////////////////////////
-      type IRouteParamsService = StringDictionary[js.Any]
+      type IRouteParamsService = StringDictionary[Any]
       
       @js.native
       trait IRouteProvider
@@ -365,7 +365,7 @@ object mod extends Shortcut {
         
         def reload(): Unit
         
-        var routes: js.Any
+        var routes: Any
         
         /**
           * Causes $route service to update the current URL, replacing current route parameters with those specified in newParams.
@@ -378,7 +378,7 @@ object mod extends Shortcut {
       }
       object IRouteService {
         
-        inline def apply(reload: () => Unit, routes: js.Any, updateParams: StringDictionary[String] => Unit): IRouteService = {
+        inline def apply(reload: () => Unit, routes: Any, updateParams: StringDictionary[String] => Unit): IRouteService = {
           val __obj = js.Dynamic.literal(reload = js.Any.fromFunction0(reload), routes = routes.asInstanceOf[js.Any], updateParams = js.Any.fromFunction1(updateParams))
           __obj.asInstanceOf[IRouteService]
         }
@@ -391,7 +391,7 @@ object mod extends Shortcut {
           
           inline def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
           
-          inline def setRoutes(value: js.Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+          inline def setRoutes(value: Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
           
           inline def setUpdateParams(value: StringDictionary[String] => Unit): Self = StObject.set(x, "updateParams", js.Any.fromFunction1(value))
         }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChartFormat extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -17,7 +17,7 @@ trait ChartFormat extends StObject {
   
   val Line: LineFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PictureFormat: typings.activexWord.Word.PictureFormat
   
@@ -35,12 +35,12 @@ trait ChartFormat extends StObject {
 object ChartFormat {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     Fill: FillFormat,
     Glow: GlowFormat,
     Line: LineFormat,
-    Parent: js.Any,
+    Parent: Any,
     PictureFormat: PictureFormat,
     Shadow: ShadowFormat,
     SoftEdge: SoftEdgeFormat,
@@ -55,7 +55,7 @@ object ChartFormat {
   
   extension [Self <: ChartFormat](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -65,7 +65,7 @@ object ChartFormat {
     
     inline def setLine(value: LineFormat): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPictureFormat(value: PictureFormat): Self = StObject.set(x, "PictureFormat", value.asInstanceOf[js.Any])
     

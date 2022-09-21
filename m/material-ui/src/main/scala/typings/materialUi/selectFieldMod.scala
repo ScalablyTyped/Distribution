@@ -10,10 +10,10 @@ object selectFieldMod {
   
   @JSImport("material-ui/SelectField", JSImport.Default)
   @js.native
-  class default () extends SelectField
+  open class default () extends SelectField
   
   @JSImport("material-ui/SelectField", "SelectField")
   @js.native
-  class SelectField ()
-    extends Component[SelectFieldProps, js.Object, js.Any]
+  open class SelectField ()
+    extends Component[SelectFieldProps, js.Object, Any]
 }

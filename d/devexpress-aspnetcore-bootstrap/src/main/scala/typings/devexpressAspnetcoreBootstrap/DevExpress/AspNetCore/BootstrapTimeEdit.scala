@@ -7,7 +7,6 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.keyUp
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.textChanged
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.userInput
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ trait BootstrapTimeEdit
   
   def getCaretPosition(): Double = js.native
   
-  def getDate(): Date = js.native
+  def getDate(): js.Date = js.native
   
   def getText(): String = js.native
   
@@ -153,7 +152,7 @@ trait BootstrapTimeEdit
   
   def setCaretPosition(position: Double): Unit = js.native
   
-  def setDate(date: Date): Unit = js.native
+  def setDate(date: js.Date): Unit = js.native
   
   def setSelection(startPos: Double, endPos: Double, scrollToSelection: Boolean): Unit = js.native
   

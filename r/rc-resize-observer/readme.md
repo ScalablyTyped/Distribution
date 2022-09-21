@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-resize-observer
 
-Typings are for version 0.2.6
+Typings are for version 1.2.0
 
 ## Library description:
 Resize observer for React
@@ -10,10 +10,10 @@ Resize observer for React
 | ------------------ | :-------------: |
 | Full name          | rc-resize-observer |
 | Keywords           | react, react-component, react-resize-observer, resize-observer |
-| # releases         | 15 |
-| # dependents       | 109 |
-| # downloads        | 16600253 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 3762619.0 |
+| # stars            | 119.0 |
 
 ## Links
 - [Homepage](https://react-component.github.io/resize-observer)

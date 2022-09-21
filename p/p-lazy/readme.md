@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-lazy
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Create a lazy promise that defers execution until it's awaited or when `.then()` or `.catch()` is called
@@ -10,10 +10,10 @@ Create a lazy promise that defers execution until it's awaited or when `.then()`
 | ------------------ | :-------------: |
 | Full name          | p-lazy |
 | Keywords           | promise, lazy, defer, deferred, then, catch, fulfilled, async, function, await, promises, bluebird |
-| # releases         | 4 |
-| # dependents       | 24 |
-| # downloads        | 4549427 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 157062.33333333334 |
+| # stars            | 242.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-lazy#readme)

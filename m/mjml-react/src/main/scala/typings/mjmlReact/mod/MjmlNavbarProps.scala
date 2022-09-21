@@ -1,7 +1,8 @@
 package typings.mjmlReact.mod
 
-import typings.csstype.mod.ColorProperty
+import typings.csstype.mod.Property.Color
 import typings.mjmlReact.mjmlReactStrings.hamburger
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +13,15 @@ trait MjmlNavbarProps extends StObject {
   
   var baseUrl: js.UndefOr[String] = js.undefined
   
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
   var hamburger: js.UndefOr[typings.mjmlReact.mjmlReactStrings.hamburger] = js.undefined
   
   var icoAlign: js.UndefOr[String] = js.undefined
   
   var icoClose: js.UndefOr[String] = js.undefined
   
-  var icoColor: js.UndefOr[ColorProperty] = js.undefined
+  var icoColor: js.UndefOr[Color] = js.undefined
   
   var icoFontSize: js.UndefOr[String] = js.undefined
   
@@ -57,6 +60,10 @@ object MjmlNavbarProps {
     
     inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
     inline def setHamburger(value: hamburger): Self = StObject.set(x, "hamburger", value.asInstanceOf[js.Any])
     
     inline def setHamburgerUndefined: Self = StObject.set(x, "hamburger", js.undefined)
@@ -69,7 +76,7 @@ object MjmlNavbarProps {
     
     inline def setIcoCloseUndefined: Self = StObject.set(x, "icoClose", js.undefined)
     
-    inline def setIcoColor(value: ColorProperty): Self = StObject.set(x, "icoColor", value.asInstanceOf[js.Any])
+    inline def setIcoColor(value: Color): Self = StObject.set(x, "icoColor", value.asInstanceOf[js.Any])
     
     inline def setIcoColorUndefined: Self = StObject.set(x, "icoColor", js.undefined)
     

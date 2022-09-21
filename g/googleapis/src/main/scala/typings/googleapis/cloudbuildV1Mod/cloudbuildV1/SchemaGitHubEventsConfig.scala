@@ -4,32 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * GitHubEventsConfig describes the configuration of a trigger that creates a
-  * build whenever a GitHub event is received.  This message is experimental.
-  */
 trait SchemaGitHubEventsConfig extends StObject {
   
   /**
-    * Output only. Indicates that a build was generated from a check suite
-    * event.
+    * Optional. The resource name of the github enterprise config that should be applied to this installation. For example: "projects/{$project_id\}/githubEnterpriseConfigs/{$config_id\}"
     */
-  var checkSuite: js.UndefOr[SchemaCheckSuiteFilter] = js.undefined
+  var enterpriseConfigResourceName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The installationID that emmits the GitHub event.
+    * The installationID that emits the GitHub event.
     */
-  var installationId: js.UndefOr[String] = js.undefined
+  var installationId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Name of the repository.
+    * Name of the repository. For example: The name for https://github.com/googlecloudplatform/cloud-builders is "cloud-builders".
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Owner of the repository.
+    * Owner of the repository. For example: The owner for https://github.com/googlecloudplatform/cloud-builders is "googlecloudplatform".
     */
-  var owner: js.UndefOr[String] = js.undefined
+  var owner: js.UndefOr[String | Null] = js.undefined
   
   /**
     * filter to match changes in pull requests.
@@ -50,19 +45,27 @@ object SchemaGitHubEventsConfig {
   
   extension [Self <: SchemaGitHubEventsConfig](x: Self) {
     
-    inline def setCheckSuite(value: SchemaCheckSuiteFilter): Self = StObject.set(x, "checkSuite", value.asInstanceOf[js.Any])
+    inline def setEnterpriseConfigResourceName(value: String): Self = StObject.set(x, "enterpriseConfigResourceName", value.asInstanceOf[js.Any])
     
-    inline def setCheckSuiteUndefined: Self = StObject.set(x, "checkSuite", js.undefined)
+    inline def setEnterpriseConfigResourceNameNull: Self = StObject.set(x, "enterpriseConfigResourceName", null)
+    
+    inline def setEnterpriseConfigResourceNameUndefined: Self = StObject.set(x, "enterpriseConfigResourceName", js.undefined)
     
     inline def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
+    
+    inline def setInstallationIdNull: Self = StObject.set(x, "installationId", null)
     
     inline def setInstallationIdUndefined: Self = StObject.set(x, "installationId", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerNull: Self = StObject.set(x, "owner", null)
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

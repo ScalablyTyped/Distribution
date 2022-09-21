@@ -1,6 +1,5 @@
 package typings.vis.mod
 
-import typings.std.Date
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,12 +35,12 @@ trait TimelineEventPropertiesResult extends StObject {
   /**
     * Date of the clicked event, snapped to a nice value.
     */
-  var snappedTime: Date
+  var snappedTime: js.Date
   
   /**
     *  Date of the clicked event.
     */
-  var time: Date
+  var time: js.Date
   
   /**
     * Name of the clicked thing.
@@ -60,7 +59,15 @@ trait TimelineEventPropertiesResult extends StObject {
 }
 object TimelineEventPropertiesResult {
   
-  inline def apply(event: Event, pageX: Double, pageY: Double, snappedTime: Date, time: Date, x: Double, y: Double): TimelineEventPropertiesResult = {
+  inline def apply(
+    event: Event,
+    pageX: Double,
+    pageY: Double,
+    snappedTime: js.Date,
+    time: js.Date,
+    x: Double,
+    y: Double
+  ): TimelineEventPropertiesResult = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], snappedTime = snappedTime.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineEventPropertiesResult]
   }
@@ -85,9 +92,9 @@ object TimelineEventPropertiesResult {
     
     inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     
-    inline def setSnappedTime(value: Date): Self = StObject.set(x, "snappedTime", value.asInstanceOf[js.Any])
+    inline def setSnappedTime(value: js.Date): Self = StObject.set(x, "snappedTime", value.asInstanceOf[js.Any])
     
-    inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
     inline def setWhat(value: TimelineEventPropertiesResultWhatType): Self = StObject.set(x, "what", value.asInstanceOf[js.Any])
     

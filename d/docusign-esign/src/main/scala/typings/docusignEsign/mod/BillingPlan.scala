@@ -124,13 +124,13 @@ object BillingPlan {
     
     inline def setAppStoreProductsUndefined: Self = StObject.set(x, "appStoreProducts", js.undefined)
     
-    inline def setAppStoreProductsVarargs(value: (/* Contains information about an APP store product. */ AppStoreProduct)*): Self = StObject.set(x, "appStoreProducts", js.Array(value :_*))
+    inline def setAppStoreProductsVarargs(value: (/* Contains information about an APP store product. */ AppStoreProduct)*): Self = StObject.set(x, "appStoreProducts", js.Array(value*))
     
     inline def setCurrencyPlanPrices(value: js.Array[CurrencyPlanPrice]): Self = StObject.set(x, "currencyPlanPrices", value.asInstanceOf[js.Any])
     
     inline def setCurrencyPlanPricesUndefined: Self = StObject.set(x, "currencyPlanPrices", js.undefined)
     
-    inline def setCurrencyPlanPricesVarargs(value: CurrencyPlanPrice*): Self = StObject.set(x, "currencyPlanPrices", js.Array(value :_*))
+    inline def setCurrencyPlanPricesVarargs(value: CurrencyPlanPrice*): Self = StObject.set(x, "currencyPlanPrices", js.Array(value*))
     
     inline def setEnableSupport(value: String): Self = StObject.set(x, "enableSupport", value.asInstanceOf[js.Any])
     
@@ -172,7 +172,7 @@ object BillingPlan {
     inline def setPlanFeatureSetsVarargs(
       value: (/* This object provides details about a feature set, or add-on product that is associated with an account.
       It is reserved for DocuSign internal use only. */ FeatureSet)*
-    ): Self = StObject.set(x, "planFeatureSets", js.Array(value :_*))
+    ): Self = StObject.set(x, "planFeatureSets", js.Array(value*))
     
     inline def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
@@ -186,7 +186,7 @@ object BillingPlan {
     
     inline def setSeatDiscountsUndefined: Self = StObject.set(x, "seatDiscounts", js.undefined)
     
-    inline def setSeatDiscountsVarargs(value: (/* This object contains information about a seat discount. */ SeatDiscount)*): Self = StObject.set(x, "seatDiscounts", js.Array(value :_*))
+    inline def setSeatDiscountsVarargs(value: (/* This object contains information about a seat discount. */ SeatDiscount)*): Self = StObject.set(x, "seatDiscounts", js.Array(value*))
     
     inline def setSupportIncidentFee(value: String): Self = StObject.set(x, "supportIncidentFee", value.asInstanceOf[js.Any])
     

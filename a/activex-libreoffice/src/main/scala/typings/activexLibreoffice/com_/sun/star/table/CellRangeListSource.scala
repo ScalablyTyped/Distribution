@@ -38,8 +38,8 @@ object CellRangeListSource {
     getAllListEntries: () => SafeArray[String],
     getListEntry: Double => String,
     getListEntryCount: () => Double,
-    initialize: SeqEquiv[js.Any] => Unit,
-    queryInterface: `type` => js.Any,
+    initialize: SeqEquiv[Any] => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     removeListEntryListener: XListEntryListener => Unit

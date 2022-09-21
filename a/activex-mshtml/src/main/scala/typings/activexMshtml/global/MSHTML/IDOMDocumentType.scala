@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IDOMDocumentType")
 @js.native
-/* private */ class IDOMDocumentType ()
+/* private */ open class IDOMDocumentType ()
   extends StObject
      with typings.activexMshtml.MSHTML.IDOMDocumentType {
   
@@ -15,20 +15,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MSHTMLDotIDOMDocumentType_typekey: typings.activexMshtml.MSHTML.IDOMDocumentType = js.native
   
   /* CompleteClass */
-  override val entities: js.Any = js.native
+  override val entities: Any = js.native
   
   /* CompleteClass */
-  override val internalSubset: js.Any = js.native
+  override val internalSubset: Any = js.native
   
   /* CompleteClass */
   override val name: String = js.native
   
   /* CompleteClass */
-  override val notations: js.Any = js.native
+  override val notations: Any = js.native
   
   /* CompleteClass */
-  override val publicId: js.Any = js.native
+  override val publicId: Any = js.native
   
   /* CompleteClass */
-  override val systemId: js.Any = js.native
+  override val systemId: Any = js.native
 }

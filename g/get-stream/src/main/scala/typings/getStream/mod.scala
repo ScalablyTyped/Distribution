@@ -2,8 +2,8 @@ package typings.getStream
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.getStream.getStreamStrings.buffer
-import typings.node.Buffer
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.streamMod.Stream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
@@ -59,13 +59,15 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("get-stream", "MaxBufferError")
   @js.native
-  class MaxBufferErrorCls ()
+  open class MaxBufferErrorCls ()
     extends StObject
        with MaxBufferErrorClass {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     /* CompleteClass */
@@ -93,7 +95,7 @@ object mod {
   	It honors the `maxBuffer` option as above, but it refers to byte length rather than string length.
   	*/
   inline def buffer(stream: Stream): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(stream.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
-  inline def buffer(stream: Stream, options: OptionsWithEncoding[BufferEncoding]): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def buffer(stream: Stream, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   
   trait MaxBufferErrorClass
     extends StObject

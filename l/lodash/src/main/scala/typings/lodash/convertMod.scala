@@ -14,10 +14,10 @@ object convertMod extends Shortcut {
   @js.native
   trait Convert extends StObject {
     
-    def apply(func: js.Object): js.Any = js.native
-    def apply(func: js.Object, options: ConvertOptions): js.Any = js.native
-    def apply(name: String, func: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = js.native
-    def apply(name: String, func: js.Function1[/* repeated */ js.Any, js.Any], options: ConvertOptions): js.Any = js.native
+    def apply(func: js.Object): Any = js.native
+    def apply(func: js.Object, options: ConvertOptions): Any = js.native
+    def apply(name: String, func: js.Function1[/* repeated */ Any, Any]): Any = js.native
+    def apply(name: String, func: js.Function1[/* repeated */ Any, Any], options: ConvertOptions): Any = js.native
   }
   
   trait ConvertOptions extends StObject {

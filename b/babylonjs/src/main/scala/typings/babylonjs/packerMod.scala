@@ -14,7 +14,7 @@ object packerMod {
   
   @JSImport("babylonjs/Materials/Textures/Packer/packer", "TexturePacker")
   @js.native
-  class TexturePacker protected () extends StObject {
+  open class TexturePacker protected () extends StObject {
     /**
       * Initializes a texture package series from an array of meshes or a single mesh.
       * @param name The name of the package
@@ -33,47 +33,47 @@ object packerMod {
       * @param dtUnits is 1/dtSize
       * @param update flag to update the input meshes
       */
-    /* private */ var _calculateMeshUVFrames: js.Any = js.native
+    /* private */ var _calculateMeshUVFrames: Any = js.native
     
     /**
       * Calculates the Size of the Channel Sets
       * @returns Vector2
       */
-    /* private */ var _calculateSize: js.Any = js.native
+    /* private */ var _calculateSize: Any = js.native
     
     /**
       * Starts the package process
       * @param resolve The promises resolution function
       * @returns TexturePacker
       */
-    /* private */ var _createFrames: js.Any = js.native
+    /* private */ var _createFrames: Any = js.native
     
     /** The expected number of textures the system is parsing. */
-    /* private */ var _expecting: js.Any = js.native
+    /* private */ var _expecting: Any = js.native
     
     /**
       * Calculates the frames Offset.
       * @param index of the frame
       * @returns Vector2
       */
-    /* private */ var _getFrameOffset: js.Any = js.native
+    /* private */ var _getFrameOffset: Any = js.native
     
     /** The padding value from Math.ceil(frameSize * paddingRatio) */
-    /* private */ var _paddingValue: js.Any = js.native
+    /* private */ var _paddingValue: Any = js.native
     
     /**
       * Updates a Mesh to the frame data
       * @param mesh that is the target
       * @param frameID or the frame index
       */
-    /* private */ var _updateMeshUV: js.Any = js.native
+    /* private */ var _updateMeshUV: Any = js.native
     
     /**
       * Updates a Meshes materials to use the texture packer channels
       * @param m is the mesh to target
       * @param force all channels on the packer to be set.
       */
-    /* private */ var _updateTextureReferences: js.Any = js.native
+    /* private */ var _updateTextureReferences: Any = js.native
     
     /**
       * Disposes all textures associated with this packer
@@ -186,11 +186,11 @@ object packerMod {
     /**
       * The base64 channel data
       */
-    var sets: js.Any
+    var sets: Any
   }
   object ITexturePackerJSON {
     
-    inline def apply(frames: js.Array[Double], name: String, options: ITexturePackerOptions, sets: js.Any): ITexturePackerJSON = {
+    inline def apply(frames: js.Array[Double], name: String, options: ITexturePackerOptions, sets: Any): ITexturePackerJSON = {
       val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], sets = sets.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITexturePackerJSON]
     }
@@ -199,13 +199,13 @@ object packerMod {
       
       inline def setFrames(value: js.Array[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      inline def setFramesVarargs(value: Double*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: Double*): Self = StObject.set(x, "frames", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setOptions(value: ITexturePackerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setSets(value: js.Any): Self = StObject.set(x, "sets", value.asInstanceOf[js.Any])
+      inline def setSets(value: Any): Self = StObject.set(x, "sets", value.asInstanceOf[js.Any])
     }
   }
   
@@ -313,7 +313,7 @@ object packerMod {
       
       inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      inline def setMapVarargs(value: String*): Self = StObject.set(x, "map", js.Array(value :_*))
+      inline def setMapVarargs(value: String*): Self = StObject.set(x, "map", js.Array(value*))
       
       inline def setPaddingColor(value: Color3 | Color4): Self = StObject.set(x, "paddingColor", value.asInstanceOf[js.Any])
       

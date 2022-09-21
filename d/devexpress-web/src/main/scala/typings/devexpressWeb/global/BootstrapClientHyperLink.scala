@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientHyperLink")
 @js.native
-class BootstrapClientHyperLink ()
+open class BootstrapClientHyperLink ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientHyperLink {
   
@@ -68,7 +68,7 @@ class BootstrapClientHyperLink ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Gets an URL which defines the navigation location for the editor's hyperlink.
@@ -80,7 +80,7 @@ class BootstrapClientHyperLink ()
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Gets the text caption displayed for the hyperlink in the hyperlink editor.
@@ -92,7 +92,7 @@ class BootstrapClientHyperLink ()
     * Returns the editor's value.
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -186,7 +186,7 @@ class BootstrapClientHyperLink ()
     * @param value An object representing the data to be assigned to the editor's edit value.
     */
   /* CompleteClass */
-  override def SetValue(value: js.Any): Unit = js.native
+  override def SetValue(value: Any): Unit = js.native
   
   /**
     * Specifies whether a control is displayed.

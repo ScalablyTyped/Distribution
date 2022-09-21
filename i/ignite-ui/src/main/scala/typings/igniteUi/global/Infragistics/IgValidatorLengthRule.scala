@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.IgValidatorLengthRule")
 @js.native
-class IgValidatorLengthRule protected ()
+open class IgValidatorLengthRule protected ()
   extends StObject
      with typings.igniteUi.Infragistics.IgValidatorLengthRule {
-  def this(formatItems: js.Array[js.Any]) = this()
+  def this(formatItems: js.Array[Any]) = this()
   def this(name: String) = this()
   
   /**

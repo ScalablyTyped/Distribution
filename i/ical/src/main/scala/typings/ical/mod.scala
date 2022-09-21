@@ -1,9 +1,7 @@
 package typings.ical
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.request.mod.CoreOptions
 import typings.rrule.mod.RRule
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +11,6 @@ object mod {
   @JSImport("ical", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
-  
-  inline def fromURL(
-    url: String,
-    options: CoreOptions,
-    callback: js.Function2[/* error */ js.Any, /* data */ FullCalendar, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def parseFile(filename: String): FullCalendar = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(filename.asInstanceOf[js.Any]).asInstanceOf[FullCalendar]
   
@@ -32,35 +24,35 @@ object mod {
     
     var `class`: js.UndefOr[String] = js.undefined
     
-    var completed: js.UndefOr[Date] = js.undefined
+    var completed: js.UndefOr[js.Date] = js.undefined
     
     var completion: js.UndefOr[String] = js.undefined
     
-    var created: js.UndefOr[Date] = js.undefined
+    var created: js.UndefOr[js.Date] = js.undefined
     
     var description: js.UndefOr[String] = js.undefined
     
-    var dtstamp: js.UndefOr[Date] = js.undefined
+    var dtstamp: js.UndefOr[js.Date] = js.undefined
     
-    var end: js.UndefOr[Date] = js.undefined
+    var end: js.UndefOr[js.Date] = js.undefined
     
-    var exdate: js.UndefOr[StringDictionary[Date]] = js.undefined
+    var exdate: js.UndefOr[StringDictionary[js.Date]] = js.undefined
     
     var freebusy: js.UndefOr[FreeBusy] = js.undefined
     
     var geo: js.UndefOr[Geo] = js.undefined
     
-    var lastmodified: js.UndefOr[Date] = js.undefined
+    var lastmodified: js.UndefOr[js.Date] = js.undefined
     
     var location: js.UndefOr[String] = js.undefined
     
-    var recurrenceid: js.UndefOr[Date] = js.undefined
+    var recurrenceid: js.UndefOr[js.Date] = js.undefined
     
     var recurrences: js.UndefOr[js.Array[CalendarComponent]] = js.undefined
     
     var rrule: js.UndefOr[RRule] = js.undefined
     
-    var start: js.UndefOr[Date] = js.undefined
+    var start: js.UndefOr[js.Date] = js.undefined
     
     var summary: js.UndefOr[String] = js.undefined
     
@@ -86,13 +78,13 @@ object mod {
       
       inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
       
-      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
       inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
-      inline def setCompleted(value: Date): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+      inline def setCompleted(value: js.Date): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
       
       inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
       
@@ -100,7 +92,7 @@ object mod {
       
       inline def setCompletionUndefined: Self = StObject.set(x, "completion", js.undefined)
       
-      inline def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
       inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
       
@@ -108,15 +100,15 @@ object mod {
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      inline def setDtstamp(value: Date): Self = StObject.set(x, "dtstamp", value.asInstanceOf[js.Any])
+      inline def setDtstamp(value: js.Date): Self = StObject.set(x, "dtstamp", value.asInstanceOf[js.Any])
       
       inline def setDtstampUndefined: Self = StObject.set(x, "dtstamp", js.undefined)
       
-      inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      inline def setExdate(value: StringDictionary[Date]): Self = StObject.set(x, "exdate", value.asInstanceOf[js.Any])
+      inline def setExdate(value: StringDictionary[js.Date]): Self = StObject.set(x, "exdate", value.asInstanceOf[js.Any])
       
       inline def setExdateUndefined: Self = StObject.set(x, "exdate", js.undefined)
       
@@ -128,7 +120,7 @@ object mod {
       
       inline def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
       
-      inline def setLastmodified(value: Date): Self = StObject.set(x, "lastmodified", value.asInstanceOf[js.Any])
+      inline def setLastmodified(value: js.Date): Self = StObject.set(x, "lastmodified", value.asInstanceOf[js.Any])
       
       inline def setLastmodifiedUndefined: Self = StObject.set(x, "lastmodified", js.undefined)
       
@@ -136,7 +128,7 @@ object mod {
       
       inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      inline def setRecurrenceid(value: Date): Self = StObject.set(x, "recurrenceid", value.asInstanceOf[js.Any])
+      inline def setRecurrenceid(value: js.Date): Self = StObject.set(x, "recurrenceid", value.asInstanceOf[js.Any])
       
       inline def setRecurrenceidUndefined: Self = StObject.set(x, "recurrenceid", js.undefined)
       
@@ -144,13 +136,13 @@ object mod {
       
       inline def setRecurrencesUndefined: Self = StObject.set(x, "recurrences", js.undefined)
       
-      inline def setRecurrencesVarargs(value: CalendarComponent*): Self = StObject.set(x, "recurrences", js.Array(value :_*))
+      inline def setRecurrencesVarargs(value: CalendarComponent*): Self = StObject.set(x, "recurrences", js.Array(value*))
       
       inline def setRrule(value: RRule): Self = StObject.set(x, "rrule", value.asInstanceOf[js.Any])
       
       inline def setRruleUndefined: Self = StObject.set(x, "rrule", js.undefined)
       
-      inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
@@ -200,15 +192,15 @@ object mod {
   
   trait FreeBusy extends StObject {
     
-    var end: Date
+    var end: js.Date
     
-    var start: Date
+    var start: js.Date
     
     var `type`: FreeBusyType
   }
   object FreeBusy {
     
-    inline def apply(end: Date, start: Date, `type`: FreeBusyType): FreeBusy = {
+    inline def apply(end: js.Date, start: js.Date, `type`: FreeBusyType): FreeBusy = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FreeBusy]
@@ -216,9 +208,9 @@ object mod {
     
     extension [Self <: FreeBusy](x: Self) {
       
-      inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       inline def setType(value: FreeBusyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

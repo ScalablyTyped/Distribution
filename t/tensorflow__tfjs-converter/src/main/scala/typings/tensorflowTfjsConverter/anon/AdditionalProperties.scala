@@ -30,7 +30,7 @@ object AdditionalProperties {
     
     inline def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+    inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

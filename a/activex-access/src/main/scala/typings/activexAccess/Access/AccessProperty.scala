@@ -20,7 +20,7 @@ trait AccessProperty extends StObject {
   
   var Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Properties(Item: String): Property
   def Properties(Item: Double): Property
@@ -29,7 +29,7 @@ trait AccessProperty extends StObject {
   
   var Type: Double
   
-  var Value: js.Any
+  var Value: Any
 }
 object AccessProperty {
   
@@ -40,10 +40,10 @@ object AccessProperty {
     Inherited: Boolean,
     IsMemberSafe: Double => Boolean,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Properties: typings.activexDao.DAO.Properties,
     Type: Double,
-    Value: js.Any
+    Value: Any
   ): AccessProperty = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Category = Category.asInstanceOf[js.Any], Inherited = Inherited.asInstanceOf[js.Any], IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("Access._AccessProperty_typekey")(AccessDot_AccessProperty_typekey.asInstanceOf[js.Any])
@@ -64,12 +64,12 @@ object AccessProperty {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setProperties(value: typings.activexDao.DAO.Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
     inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -4,21 +4,21 @@
 Typings are for version 0.1
 
 ## Library description:
-Like duplexer but using streams3
+Modern version of `duplexer2`
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | duplexer3 |
-| Keywords           | duplex, duplexer, stream, stream3, join, combine |
-| # releases         | 0 |
-| # dependents       | 59 |
-| # downloads        | 394796432 |
-| # stars            | 0 |
+| Keywords           | duplex, duplexer, stream, streams, join, combine |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4.8430612E7 |
+| # stars            | 16.0 |
 
 ## Links
-- [Homepage](https://github.com/floatdrop/duplexer3)
-- [Bugs](https://github.com/floatdrop/duplexer3/issues)
-- [Repository](https://github.com/floatdrop/duplexer3)
+- [Homepage](https://github.com/sindresorhus/duplexer3#readme)
+- [Bugs](https://github.com/sindresorhus/duplexer3/issues)
+- [Repository](https://github.com/sindresorhus/duplexer3)
 - [Npm](https://www.npmjs.com/package/duplexer3)
     
 

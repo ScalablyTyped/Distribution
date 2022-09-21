@@ -10,10 +10,10 @@ Prevent defined property getters from throwing errors
 | ------------------ | :-------------: |
 | Full name          | safe-json-stringify |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 98 |
-| # downloads        | 58708876 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9048298.333333334 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](https://github.com/debitoor/safe-json-stringify)

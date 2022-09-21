@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a top/bottom conditional format.
   *
-  * Represents a Top/Bottom conditional format.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @js.native
@@ -26,9 +26,9 @@ trait TopBottomConditionalFormat
   var context_TopBottomConditionalFormat: RequestContext = js.native
   
   /**
-    *
     * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   val format: ConditionalRangeFormat = js.native
@@ -45,21 +45,15 @@ trait TopBottomConditionalFormat
   def load(propertyNames: js.Array[String]): TopBottomConditionalFormat = js.native
   
   /**
+    * The criteria of the top/bottom conditional format.
     *
-    * The criteria of the Top/Bottom conditional format.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var rule: ConditionalTopBottomRule = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.TopBottomConditionalFormat): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

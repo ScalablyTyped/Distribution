@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait WorkItemQueryResult extends StObject {
   /**
     * The date the query was run in the context of.
     */
-  var asOf: Date
+  var asOf: js.Date
   
   /**
     * The columns of the query.
@@ -45,7 +44,7 @@ trait WorkItemQueryResult extends StObject {
 object WorkItemQueryResult {
   
   inline def apply(
-    asOf: Date,
+    asOf: js.Date,
     columns: js.Array[WorkItemFieldReference],
     queryResultType: QueryResultType,
     queryType: QueryType,
@@ -59,11 +58,11 @@ object WorkItemQueryResult {
   
   extension [Self <: WorkItemQueryResult](x: Self) {
     
-    inline def setAsOf(value: Date): Self = StObject.set(x, "asOf", value.asInstanceOf[js.Any])
+    inline def setAsOf(value: js.Date): Self = StObject.set(x, "asOf", value.asInstanceOf[js.Any])
     
     inline def setColumns(value: js.Array[WorkItemFieldReference]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: WorkItemFieldReference*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: WorkItemFieldReference*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setQueryResultType(value: QueryResultType): Self = StObject.set(x, "queryResultType", value.asInstanceOf[js.Any])
     
@@ -71,14 +70,14 @@ object WorkItemQueryResult {
     
     inline def setSortColumns(value: js.Array[WorkItemQuerySortColumn]): Self = StObject.set(x, "sortColumns", value.asInstanceOf[js.Any])
     
-    inline def setSortColumnsVarargs(value: WorkItemQuerySortColumn*): Self = StObject.set(x, "sortColumns", js.Array(value :_*))
+    inline def setSortColumnsVarargs(value: WorkItemQuerySortColumn*): Self = StObject.set(x, "sortColumns", js.Array(value*))
     
     inline def setWorkItemRelations(value: js.Array[WorkItemLink]): Self = StObject.set(x, "workItemRelations", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemRelationsVarargs(value: WorkItemLink*): Self = StObject.set(x, "workItemRelations", js.Array(value :_*))
+    inline def setWorkItemRelationsVarargs(value: WorkItemLink*): Self = StObject.set(x, "workItemRelations", js.Array(value*))
     
     inline def setWorkItems(value: js.Array[WorkItemReference]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemsVarargs(value: WorkItemReference*): Self = StObject.set(x, "workItems", js.Array(value :_*))
+    inline def setWorkItemsVarargs(value: WorkItemReference*): Self = StObject.set(x, "workItems", js.Array(value*))
   }
 }

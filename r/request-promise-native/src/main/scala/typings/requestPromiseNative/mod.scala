@@ -91,7 +91,7 @@ object mod extends Shortcut {
     def `then`[B](onFulfilled: Unit, onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]): js.Promise[B] = js.native
   }
   
-  type RequestPromiseAPI = RequestAPI[RequestPromise[js.Any], RequestPromiseOptions, RequiredUriUrl]
+  type RequestPromiseAPI = RequestAPI[RequestPromise[Any], RequestPromiseOptions, RequiredUriUrl]
   
   trait RequestPromiseOptions
     extends StObject
@@ -103,10 +103,10 @@ object mod extends Shortcut {
     
     var transform: js.UndefOr[
         js.Function3[
-          /* body */ js.Any, 
+          /* body */ Any, 
           /* response */ Response, 
           /* resolveWithFullResponse */ js.UndefOr[Boolean], 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
@@ -130,7 +130,7 @@ object mod extends Shortcut {
       inline def setSimpleUndefined: Self = StObject.set(x, "simple", js.undefined)
       
       inline def setTransform(
-        value: (/* body */ js.Any, /* response */ Response, /* resolveWithFullResponse */ js.UndefOr[Boolean]) => js.Any
+        value: (/* body */ Any, /* response */ Response, /* resolveWithFullResponse */ js.UndefOr[Boolean]) => Any
       ): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
       inline def setTransform2xxOnly(value: Boolean): Self = StObject.set(x, "transform2xxOnly", value.asInstanceOf[js.Any])

@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.ImageVector")
 @js.native
-class ImageVector protected () extends ImageCanvas {
+open class ImageVector protected () extends ImageCanvas {
   /**
     * @classdesc
     * An image source whose images are canvas elements into which vector features

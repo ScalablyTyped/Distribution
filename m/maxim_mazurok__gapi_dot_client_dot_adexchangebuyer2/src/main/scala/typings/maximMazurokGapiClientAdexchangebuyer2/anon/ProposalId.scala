@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientAdexchangebuyer2.anon
 
-import typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2.AcceptProposalRequest
+import typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuyer2.PauseProposalDealsRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,14 +35,14 @@ trait ProposalId extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** The ID of the proposal to accept. */
+  /** The proposal_id of the proposal containing the deals. */
   var proposalId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: AcceptProposalRequest
+  var resource: PauseProposalDealsRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait ProposalId extends StObject {
 }
 object ProposalId {
   
-  inline def apply(accountId: String, proposalId: String, resource: AcceptProposalRequest): ProposalId = {
+  inline def apply(accountId: String, proposalId: String, resource: PauseProposalDealsRequest): ProposalId = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], proposalId = proposalId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProposalId]
   }
@@ -99,7 +99,7 @@ object ProposalId {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: AcceptProposalRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: PauseProposalDealsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

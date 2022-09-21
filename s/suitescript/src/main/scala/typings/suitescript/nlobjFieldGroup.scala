@@ -21,7 +21,7 @@ trait nlobjFieldGroup
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * set collapsibility property for this field group.

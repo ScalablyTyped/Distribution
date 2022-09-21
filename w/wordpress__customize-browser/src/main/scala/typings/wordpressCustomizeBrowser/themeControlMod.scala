@@ -9,7 +9,7 @@ object themeControlMod {
   
   @JSImport("@wordpress/customize-browser/ThemeControl", "ThemeControl")
   @js.native
-  class ThemeControl protected () extends Control {
+  open class ThemeControl protected () extends Control {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     

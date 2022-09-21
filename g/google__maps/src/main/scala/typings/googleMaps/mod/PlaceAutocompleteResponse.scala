@@ -39,7 +39,7 @@ object PlaceAutocompleteResponse {
     
     inline def setPredictions(value: js.Array[PlaceAutocompleteResult]): Self = StObject.set(x, "predictions", value.asInstanceOf[js.Any])
     
-    inline def setPredictionsVarargs(value: PlaceAutocompleteResult*): Self = StObject.set(x, "predictions", js.Array(value :_*))
+    inline def setPredictionsVarargs(value: PlaceAutocompleteResult*): Self = StObject.set(x, "predictions", js.Array(value*))
     
     inline def setStatus(value: PlaceAutocompleteResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

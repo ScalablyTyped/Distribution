@@ -22,6 +22,6 @@ object GetOrderDealsResponse {
     
     inline def setDealsUndefined: Self = StObject.set(x, "deals", js.undefined)
     
-    inline def setDealsVarargs(value: MarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value :_*))
+    inline def setDealsVarargs(value: MarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value*))
   }
 }

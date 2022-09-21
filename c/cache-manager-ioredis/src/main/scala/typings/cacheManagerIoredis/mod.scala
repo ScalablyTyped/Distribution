@@ -6,17 +6,16 @@ import typings.cacheManager.mod.CacheOptions
 import typings.cacheManager.mod.CachingConfig
 import typings.cacheManager.mod.Store
 import typings.cacheManager.mod.StoreConfig
-import typings.cacheManager.mod.TtlFunction
 import typings.cacheManagerIoredis.cacheManagerIoredisStrings.redis
 import typings.cacheManagerIoredis.mod.CacheManagerIORedis.ClusterCache
 import typings.cacheManagerIoredis.mod.CacheManagerIORedis.RedisStoreClusterConfig
 import typings.cacheManagerIoredis.mod.CacheManagerIORedis.RedisStoreConstructor
 import typings.cacheManagerIoredis.mod.CacheManagerIORedis.RedisStoreSingleNodeConfig
 import typings.cacheManagerIoredis.mod.CacheManagerIORedis.SingleNodeCache
+import typings.ioredis.clusterMod.ClusterNode
 import typings.ioredis.mod.Cluster
-import typings.ioredis.mod.ClusterNode
 import typings.ioredis.mod.Redis
-import typings.ioredis.mod.RedisOptions
+import typings.ioredis.redisOptionsMod.RedisOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,11 +53,11 @@ object mod extends Shortcut {
       
       var nodes: js.Array[ClusterNode]
       
-      var options: typings.ioredis.mod.ClusterOptions
+      var options: typings.ioredis.clusterOptionsMod.ClusterOptions
     }
     object ClusterOptions {
       
-      inline def apply(nodes: js.Array[ClusterNode], options: typings.ioredis.mod.ClusterOptions): ClusterOptions = {
+      inline def apply(nodes: js.Array[ClusterNode], options: typings.ioredis.clusterOptionsMod.ClusterOptions): ClusterOptions = {
         val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
         __obj.asInstanceOf[ClusterOptions]
       }
@@ -67,9 +66,9 @@ object mod extends Shortcut {
         
         inline def setNodes(value: js.Array[ClusterNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
         
-        inline def setNodesVarargs(value: ClusterNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+        inline def setNodesVarargs(value: ClusterNode*): Self = StObject.set(x, "nodes", js.Array(value*))
         
-        inline def setOptions(value: typings.ioredis.mod.ClusterOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: typings.ioredis.clusterOptionsMod.ClusterOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       }
     }
     
@@ -79,14 +78,14 @@ object mod extends Shortcut {
     object RedisClusterStore {
       
       inline def apply(
-        del: /* repeated */ js.Any => js.Promise[js.Any],
-        get: /* repeated */ js.Any => js.Promise[js.Any],
+        del: /* repeated */ Any => js.Promise[Any],
+        get: /* repeated */ Any => js.Promise[Any],
         getClient: () => Redis | Cluster,
-        isCacheableValue: js.Any => Boolean,
-        keys: /* repeated */ js.Any => js.Promise[js.Any],
-        reset: /* repeated */ js.Any => js.Promise[js.Any],
-        set: /* repeated */ js.Any => js.Promise[js.Any],
-        ttl: /* repeated */ js.Any => js.Promise[js.Any]
+        isCacheableValue: Any => Boolean,
+        keys: /* repeated */ Any => js.Promise[Any],
+        reset: /* repeated */ Any => js.Promise[Any],
+        set: /* repeated */ Any => js.Promise[Any],
+        ttl: /* repeated */ Any => js.Promise[Any]
       ): RedisClusterStore = {
         val __obj = js.Dynamic.literal(del = js.Any.fromFunction1(del), get = js.Any.fromFunction1(get), getClient = js.Any.fromFunction0(getClient), isCacheableValue = js.Any.fromFunction1(isCacheableValue), keys = js.Any.fromFunction1(keys), name = "redis", reset = js.Any.fromFunction1(reset), set = js.Any.fromFunction1(set), ttl = js.Any.fromFunction1(ttl))
         __obj.asInstanceOf[RedisClusterStore]
@@ -99,14 +98,14 @@ object mod extends Shortcut {
     object RedisSingleNodeStore {
       
       inline def apply(
-        del: /* repeated */ js.Any => js.Promise[js.Any],
-        get: /* repeated */ js.Any => js.Promise[js.Any],
+        del: /* repeated */ Any => js.Promise[Any],
+        get: /* repeated */ Any => js.Promise[Any],
         getClient: () => Redis | Cluster,
-        isCacheableValue: js.Any => Boolean,
-        keys: /* repeated */ js.Any => js.Promise[js.Any],
-        reset: /* repeated */ js.Any => js.Promise[js.Any],
-        set: /* repeated */ js.Any => js.Promise[js.Any],
-        ttl: /* repeated */ js.Any => js.Promise[js.Any]
+        isCacheableValue: Any => Boolean,
+        keys: /* repeated */ Any => js.Promise[Any],
+        reset: /* repeated */ Any => js.Promise[Any],
+        set: /* repeated */ Any => js.Promise[Any],
+        ttl: /* repeated */ Any => js.Promise[Any]
       ): RedisSingleNodeStore = {
         val __obj = js.Dynamic.literal(del = js.Any.fromFunction1(del), get = js.Any.fromFunction1(get), getClient = js.Any.fromFunction0(getClient), isCacheableValue = js.Any.fromFunction1(isCacheableValue), keys = js.Any.fromFunction1(keys), name = "redis", reset = js.Any.fromFunction1(reset), set = js.Any.fromFunction1(set), ttl = js.Any.fromFunction1(ttl))
         __obj.asInstanceOf[RedisSingleNodeStore]
@@ -118,34 +117,34 @@ object mod extends Shortcut {
          with Store {
       
       @JSName("del")
-      def del_MRedisStore(args: js.Any*): js.Promise[js.Any]
+      def del_MRedisStore(args: Any*): js.Promise[Any]
       
       def getClient(): Redis | Cluster
       
-      def isCacheableValue(value: js.Any): Boolean
+      def isCacheableValue(value: Any): Boolean
       
       @JSName("keys")
-      def keys_MRedisStore(args: js.Any*): js.Promise[js.Any]
+      def keys_MRedisStore(args: Any*): js.Promise[Any]
       
       var name: redis
       
       @JSName("reset")
-      def reset_MRedisStore(args: js.Any*): js.Promise[js.Any]
+      def reset_MRedisStore(args: Any*): js.Promise[Any]
       
       @JSName("ttl")
-      def ttl_MRedisStore(args: js.Any*): js.Promise[js.Any]
+      def ttl_MRedisStore(args: Any*): js.Promise[Any]
     }
     object RedisStore {
       
       inline def apply(
-        del: /* repeated */ js.Any => js.Promise[js.Any],
-        get: /* repeated */ js.Any => js.Promise[js.Any],
+        del: /* repeated */ Any => js.Promise[Any],
+        get: /* repeated */ Any => js.Promise[Any],
         getClient: () => Redis | Cluster,
-        isCacheableValue: js.Any => Boolean,
-        keys: /* repeated */ js.Any => js.Promise[js.Any],
-        reset: /* repeated */ js.Any => js.Promise[js.Any],
-        set: /* repeated */ js.Any => js.Promise[js.Any],
-        ttl: /* repeated */ js.Any => js.Promise[js.Any]
+        isCacheableValue: Any => Boolean,
+        keys: /* repeated */ Any => js.Promise[Any],
+        reset: /* repeated */ Any => js.Promise[Any],
+        set: /* repeated */ Any => js.Promise[Any],
+        ttl: /* repeated */ Any => js.Promise[Any]
       ): RedisStore = {
         val __obj = js.Dynamic.literal(del = js.Any.fromFunction1(del), get = js.Any.fromFunction1(get), getClient = js.Any.fromFunction0(getClient), isCacheableValue = js.Any.fromFunction1(isCacheableValue), keys = js.Any.fromFunction1(keys), name = "redis", reset = js.Any.fromFunction1(reset), set = js.Any.fromFunction1(set), ttl = js.Any.fromFunction1(ttl))
         __obj.asInstanceOf[RedisStore]
@@ -153,19 +152,19 @@ object mod extends Shortcut {
       
       extension [Self <: RedisStore](x: Self) {
         
-        inline def setDel(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
+        inline def setDel(value: /* repeated */ Any => js.Promise[Any]): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
         
         inline def setGetClient(value: () => Redis | Cluster): Self = StObject.set(x, "getClient", js.Any.fromFunction0(value))
         
-        inline def setIsCacheableValue(value: js.Any => Boolean): Self = StObject.set(x, "isCacheableValue", js.Any.fromFunction1(value))
+        inline def setIsCacheableValue(value: Any => Boolean): Self = StObject.set(x, "isCacheableValue", js.Any.fromFunction1(value))
         
-        inline def setKeys(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
+        inline def setKeys(value: /* repeated */ Any => js.Promise[Any]): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
         
         inline def setName(value: redis): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        inline def setReset(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+        inline def setReset(value: /* repeated */ Any => js.Promise[Any]): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
         
-        inline def setTtl(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "ttl", js.Any.fromFunction1(value))
+        inline def setTtl(value: /* repeated */ Any => js.Promise[Any]): Self = StObject.set(x, "ttl", js.Any.fromFunction1(value))
       }
     }
     
@@ -182,8 +181,8 @@ object mod extends Shortcut {
     }
     object RedisStoreClusterConfig {
       
-      inline def apply(clusterConfig: ClusterOptions, store: RedisStoreConstructor, ttl: Double | TtlFunction): RedisStoreClusterConfig = {
-        val __obj = js.Dynamic.literal(clusterConfig = clusterConfig.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
+      inline def apply(clusterConfig: ClusterOptions, store: RedisStoreConstructor): RedisStoreClusterConfig = {
+        val __obj = js.Dynamic.literal(clusterConfig = clusterConfig.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
         __obj.asInstanceOf[RedisStoreClusterConfig]
       }
       
@@ -235,8 +234,8 @@ object mod extends Shortcut {
     }
     object RedisStoreSingleNodeConfig {
       
-      inline def apply(store: RedisStoreConstructor, ttl: Double | TtlFunction): RedisStoreSingleNodeConfig = {
-        val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
+      inline def apply(keepAlive: js.UndefOr[Double] & js.UndefOr[Boolean], store: RedisStoreConstructor): RedisStoreSingleNodeConfig = {
+        val __obj = js.Dynamic.literal(keepAlive = keepAlive.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
         __obj.asInstanceOf[RedisStoreSingleNodeConfig]
       }
       

@@ -10,5 +10,5 @@ object isDecoratorArgsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isMethodOrPropertyDecoratorArgs(args: js.Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMethodOrPropertyDecoratorArgs")(args.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isMethodOrPropertyDecoratorArgs(args: Any*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMethodOrPropertyDecoratorArgs")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Boolean]
 }

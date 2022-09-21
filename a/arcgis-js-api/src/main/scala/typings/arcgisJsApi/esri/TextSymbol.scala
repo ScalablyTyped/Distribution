@@ -1,21 +1,18 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.baseline
-import typings.arcgisJsApi.arcgisJsApiStrings.bottom
-import typings.arcgisJsApi.arcgisJsApiStrings.center
-import typings.arcgisJsApi.arcgisJsApiStrings.justify
-import typings.arcgisJsApi.arcgisJsApiStrings.left
+import typings.arcgisJsApi.arcgisJsApiStrings.baseline_
+import typings.arcgisJsApi.arcgisJsApiStrings.bottom_
+import typings.arcgisJsApi.arcgisJsApiStrings.center_
+import typings.arcgisJsApi.arcgisJsApiStrings.left_
 import typings.arcgisJsApi.arcgisJsApiStrings.middle
-import typings.arcgisJsApi.arcgisJsApiStrings.right
+import typings.arcgisJsApi.arcgisJsApiStrings.right_
 import typings.arcgisJsApi.arcgisJsApiStrings.text
-import typings.arcgisJsApi.arcgisJsApiStrings.top
+import typings.arcgisJsApi.arcgisJsApiStrings.top_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.arcgisJsApi.esri.Symbol2D3D because Already inherited
-- typings.arcgisJsApi.esri.symbols.Symbol2D3D because Already inherited */ @js.native
+@js.native
 trait TextSymbol
   extends StObject
      with Symbol
@@ -24,6 +21,8 @@ trait TextSymbol
   
   /**
     * The angle of the text.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#angle)
     */
@@ -74,12 +73,16 @@ trait TextSymbol
   /**
     * Adjusts the horizontal alignment of the text in multi-lines.
     *
+    * @default "center"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#horizontalAlignment)
     */
-  var horizontalAlignment: left | right | center | justify = js.native
+  var horizontalAlignment: left_ | right_ | center_ = js.native
   
   /**
     * Determines whether to adjust the spacing between characters in the text string.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#kerning)
     */
@@ -88,6 +91,8 @@ trait TextSymbol
   /**
     * The height of the space between each line of text.
     *
+    * @default 1.0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#lineHeight)
     */
   var lineHeight: Double = js.native
@@ -95,12 +100,16 @@ trait TextSymbol
   /**
     * The maximum length in points for each line of text.
     *
+    * @default 192
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#lineWidth)
     */
   var lineWidth: Double = js.native
   
   /**
     * Determines whether every character in the text string is rotated.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#rotated)
     */
@@ -119,12 +128,16 @@ trait TextSymbol
   /**
     * Adjusts the vertical alignment of the text.
     *
+    * @default "baseline"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#verticalAlignment)
     */
-  var verticalAlignment: baseline | top | middle | bottom = js.native
+  var verticalAlignment: baseline_ | top_ | middle | bottom_ = js.native
   
   /**
     * The offset on the x-axis in points.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#xoffset)
     */
@@ -132,6 +145,8 @@ trait TextSymbol
   
   /**
     * The offset on the y-axis in points.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#yoffset)
     */

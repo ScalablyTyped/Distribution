@@ -11,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with BaseNode
      with Block
      with BlockParent
-     with Scopable {
+     with Scopable
+     with TypeScript {
   
   var body: js.Array[Statement]
   
@@ -30,7 +31,7 @@ object TSModuleBlock_ {
     
     inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value*))
     
     inline def setType(value: TSModuleBlock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

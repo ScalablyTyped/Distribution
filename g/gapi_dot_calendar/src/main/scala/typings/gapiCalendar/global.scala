@@ -42,7 +42,7 @@ object global {
         
         @JSGlobal("gapi.client.calendar.Event")
         @js.native
-        class Event ()
+        open class Event ()
           extends StObject
              with typings.gapiCalendar.gapi.client.calendar.Event {
           
@@ -101,7 +101,7 @@ object global {
         
         @JSGlobal("gapi.client.calendar.acl")
         @js.native
-        class acl ()
+        open class acl ()
           extends StObject
              with typings.gapiCalendar.gapi.client.calendar.acl
         /* static members */
@@ -122,7 +122,7 @@ object global {
         
         @JSGlobal("gapi.client.calendar.calendarList")
         @js.native
-        class calendarList ()
+        open class calendarList ()
           extends StObject
              with typings.gapiCalendar.gapi.client.calendar.calendarList
         /* static members */
@@ -140,7 +140,7 @@ object global {
         
         @JSGlobal("gapi.client.calendar.calendars")
         @js.native
-        class calendars ()
+        open class calendars ()
           extends StObject
              with typings.gapiCalendar.gapi.client.calendar.calendars
         /* static members */
@@ -159,7 +159,7 @@ object global {
         
         @JSGlobal("gapi.client.calendar.events")
         @js.native
-        class events ()
+        open class events ()
           extends StObject
              with typings.gapiCalendar.gapi.client.calendar.events
         /* static members */
@@ -183,7 +183,7 @@ object global {
         
         @JSGlobal("gapi.client.calendar.freebusy")
         @js.native
-        class freebusy ()
+        open class freebusy ()
           extends StObject
              with typings.gapiCalendar.gapi.client.calendar.freebusy
         /* static members */

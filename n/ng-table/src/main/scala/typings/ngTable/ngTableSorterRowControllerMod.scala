@@ -12,11 +12,11 @@ object ngTableSorterRowControllerMod {
   
   @JSImport("ng-table/src/browser/ngTableSorterRowController", "NgTableSorterRowController")
   @js.native
-  class NgTableSorterRowController[T] protected () extends StObject {
+  open class NgTableSorterRowController[T] protected () extends StObject {
     def this($scope: ITableScope[T]) = this()
     
     /* private */ @JSName("$scope")
-    var $scope: js.Any = js.native
+    var $scope: Any = js.native
     
     def sortBy($column: IColumnDef, event: IAugmentedMouseEvent): Unit = js.native
   }

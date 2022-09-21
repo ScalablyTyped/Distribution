@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "GamepadSystemSceneComponent")
 @js.native
-class GamepadSystemSceneComponent protected ()
+open class GamepadSystemSceneComponent protected ()
   extends typings.babylonjs.gamepadsIndexMod.GamepadSystemSceneComponent {
   /**
     * Creates a new instance of the component for the given scene

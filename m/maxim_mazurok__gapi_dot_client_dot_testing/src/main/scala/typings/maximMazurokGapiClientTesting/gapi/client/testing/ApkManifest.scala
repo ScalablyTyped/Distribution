@@ -22,6 +22,9 @@ trait ApkManifest extends StObject {
   
   /** Specifies the API Level on which the application is designed to run. */
   var targetSdkVersion: js.UndefOr[Double] = js.undefined
+  
+  /** Permissions declared to be used by the application */
+  var usesPermission: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ApkManifest {
   
@@ -40,7 +43,7 @@ object ApkManifest {
     
     inline def setIntentFiltersUndefined: Self = StObject.set(x, "intentFilters", js.undefined)
     
-    inline def setIntentFiltersVarargs(value: IntentFilter*): Self = StObject.set(x, "intentFilters", js.Array(value :_*))
+    inline def setIntentFiltersVarargs(value: IntentFilter*): Self = StObject.set(x, "intentFilters", js.Array(value*))
     
     inline def setMaxSdkVersion(value: Double): Self = StObject.set(x, "maxSdkVersion", value.asInstanceOf[js.Any])
     
@@ -57,5 +60,11 @@ object ApkManifest {
     inline def setTargetSdkVersion(value: Double): Self = StObject.set(x, "targetSdkVersion", value.asInstanceOf[js.Any])
     
     inline def setTargetSdkVersionUndefined: Self = StObject.set(x, "targetSdkVersion", js.undefined)
+    
+    inline def setUsesPermission(value: js.Array[String]): Self = StObject.set(x, "usesPermission", value.asInstanceOf[js.Any])
+    
+    inline def setUsesPermissionUndefined: Self = StObject.set(x, "usesPermission", js.undefined)
+    
+    inline def setUsesPermissionVarargs(value: String*): Self = StObject.set(x, "usesPermission", js.Array(value*))
   }
 }

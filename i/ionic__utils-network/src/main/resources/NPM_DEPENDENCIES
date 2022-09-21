@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ionic/utils-network" : "1.0.6"
+      "@ionic/utils-network" : "2.1.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@ionic/utils-network" : "1.0.6"
+      "@ionic/utils-network" : "2.1.5"
     }
   ],
   "compile-devDependencies" : [

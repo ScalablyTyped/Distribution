@@ -1,14 +1,14 @@
 package typings.firebase.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebase.mod.firebase.analytics.Item
+import typings.firebase.firebaseMod.firebase.analytics.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Itemlistid
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var item_list_id: js.UndefOr[String] = js.undefined
   
@@ -37,6 +37,6 @@ object Itemlistid {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

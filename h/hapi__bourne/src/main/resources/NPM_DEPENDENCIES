@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@hapi/bourne" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@hapi/bourne" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -13,7 +13,7 @@ trait IIndexableContent extends StObject {
   var id: String
   
   /** Gets the content properties. */
-  var properties: IMap[String, js.Any]
+  var properties: IMap[String, Any]
   
   /** Gets or sets a stream that provides full-text content. Changes to the actual representation of the item in the index can be made using the ContentIndexer class. */
   var stream: IRandomAccessStream
@@ -23,12 +23,7 @@ trait IIndexableContent extends StObject {
 }
 object IIndexableContent {
   
-  inline def apply(
-    id: String,
-    properties: IMap[String, js.Any],
-    stream: IRandomAccessStream,
-    streamContentType: String
-  ): IIndexableContent = {
+  inline def apply(id: String, properties: IMap[String, Any], stream: IRandomAccessStream, streamContentType: String): IIndexableContent = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any], streamContentType = streamContentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIndexableContent]
   }
@@ -37,7 +32,7 @@ object IIndexableContent {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: IMap[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMap[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setStream(value: IRandomAccessStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     

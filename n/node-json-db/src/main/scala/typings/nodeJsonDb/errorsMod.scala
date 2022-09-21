@@ -10,16 +10,16 @@ object errorsMod {
   
   @JSImport("node-json-db/dist/lib/Errors", "DataError")
   @js.native
-  class DataError protected () extends NestedError {
+  open class DataError protected () extends NestedError {
     def this(message: String, id: Number) = this()
-    def this(message: String, id: Number, inner: Error) = this()
+    def this(message: String, id: Number, inner: js.Error) = this()
   }
   
   @JSImport("node-json-db/dist/lib/Errors", "DatabaseError")
   @js.native
-  class DatabaseError protected () extends NestedError {
+  open class DatabaseError protected () extends NestedError {
     def this(message: String, id: Number) = this()
-    def this(message: String, id: Number, inner: Error) = this()
+    def this(message: String, id: Number, inner: js.Error) = this()
   }
   
   @JSImport("node-json-db/dist/lib/Errors", "NestedError")
@@ -28,15 +28,17 @@ object errorsMod {
     extends StObject
        with Error {
     def this(message: String, id: Number) = this()
-    def this(message: String, id: Number, inner: Error) = this()
+    def this(message: String, id: Number, inner: js.Error) = this()
     
     val id: Number = js.native
     
-    val inner: js.UndefOr[Error] = js.native
+    val inner: js.UndefOr[js.Error] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

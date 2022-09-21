@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__tooltip
 
-Typings are for version 8.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components Web tooltip component.
@@ -10,10 +10,10 @@ The Material Components Web tooltip component.
 | ------------------ | :-------------: |
 | Full name          | @material/tooltip |
 | Keywords           | material components, material design, tooltip |
-| # releases         | 354 |
-| # dependents       | 2 |
-| # downloads        | 131644 |
-| # stars            | 0 |
+| # releases         | 712 |
+| # dependents       | 0.0 |
+| # downloads        | 75755.33333333333 |
+| # stars            | 16381.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

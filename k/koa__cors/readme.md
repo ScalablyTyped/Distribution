@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa__cors
 
-Typings are for version 3.0
+Typings are for version 3.3
 
 ## Library description:
 Cross-Origin Resource Sharing(CORS) for koa
@@ -10,10 +10,10 @@ Cross-Origin Resource Sharing(CORS) for koa
 | ------------------ | :-------------: |
 | Full name          | @koa/cors |
 | Keywords           | cors, koa-cors, Cross-Origin Resource Sharing, @koa/cors, koa, koajs |
-| # releases         | 3 |
-| # dependents       | 366 |
-| # downloads        | 11262141 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2109210.6666666665 |
+| # stars            | 692.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/cors)

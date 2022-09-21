@@ -13,7 +13,7 @@ object Core {
   
   @JSGlobal("Windows.ApplicationModel.Core.CoreApplication")
   @js.native
-  class CoreApplication ()
+  open class CoreApplication ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Core.CoreApplication
   /* static members */
@@ -45,18 +45,18 @@ object Core {
     
     @JSGlobal("Windows.ApplicationModel.Core.CoreApplication.onexiting")
     @js.native
-    def onexiting: js.Any = js.native
-    inline def onexiting_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onexiting")(x.asInstanceOf[js.Any])
+    def onexiting: Any = js.native
+    inline def onexiting_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onexiting")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.ApplicationModel.Core.CoreApplication.onresuming")
     @js.native
-    def onresuming: js.Any = js.native
-    inline def onresuming_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onresuming")(x.asInstanceOf[js.Any])
+    def onresuming: Any = js.native
+    inline def onresuming_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onresuming")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.ApplicationModel.Core.CoreApplication.onsuspending")
     @js.native
-    def onsuspending: js.Any = js.native
-    inline def onsuspending_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onsuspending")(x.asInstanceOf[js.Any])
+    def onsuspending: Any = js.native
+    inline def onsuspending_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onsuspending")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.ApplicationModel.Core.CoreApplication.properties")
     @js.native
@@ -75,7 +75,7 @@ object Core {
   
   @JSGlobal("Windows.ApplicationModel.Core.CoreApplicationView")
   @js.native
-  class CoreApplicationView ()
+  open class CoreApplicationView ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Core.CoreApplicationView {
     
@@ -89,6 +89,6 @@ object Core {
     var isMain: Boolean = js.native
     
     /* CompleteClass */
-    var onactivated: js.Any = js.native
+    var onactivated: Any = js.native
   }
 }

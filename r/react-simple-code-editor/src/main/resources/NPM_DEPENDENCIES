@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-simple-code-editor" : "0.10.0"
+      "react-simple-code-editor" : "0.13.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-simple-code-editor" : "0.10.0"
+      "react-simple-code-editor" : "0.13.0"
     }
   ],
   "compile-devDependencies" : [

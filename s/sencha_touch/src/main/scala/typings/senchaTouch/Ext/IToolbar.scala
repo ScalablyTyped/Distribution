@@ -11,7 +11,7 @@ trait IToolbar
   /** [Method] Returns the value of layout
     * @returns Object/String
     */
-  var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getLayout: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns an Ext Title component
     * @returns Ext.Title
@@ -34,13 +34,13 @@ trait IToolbar
   /** [Method] Use this to update the title configuration
     * @param title String/Ext.Title You can either pass a String, or a config/instance of Ext.Title.
     */
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Shows the title if it exists  */
   var showTitle: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String/Ext.Title) */
-  var title: js.UndefOr[js.Any] = js.undefined
+  var title: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var titleCls: js.UndefOr[Boolean] = js.undefined
@@ -54,7 +54,7 @@ object IToolbar {
   
   extension [Self <: IToolbar](x: Self) {
     
-    inline def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+    inline def setGetLayout(value: () => Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
     inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
     
@@ -74,7 +74,7 @@ object IToolbar {
     
     inline def setSetMinHeightUndefined: Self = StObject.set(x, "setMinHeight", js.undefined)
     
-    inline def setSetTitle(value: /* title */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: /* title */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
     inline def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
     
@@ -82,7 +82,7 @@ object IToolbar {
     
     inline def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
     
-    inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleCls(value: Boolean): Self = StObject.set(x, "titleCls", value.asInstanceOf[js.Any])
     

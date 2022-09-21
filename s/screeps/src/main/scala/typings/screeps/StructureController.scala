@@ -13,7 +13,7 @@ trait StructureController
   extends StObject
      with OwnedStructure[STRUCTURE_CONTROLLER]
      with AnyOwnedStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * Activate safe mode if available.

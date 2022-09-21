@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-calc
 
-Typings are for version 7.0
+Typings are for version 8.2.4
 
 ## Library description:
 PostCSS plugin to reduce calc()
@@ -10,10 +10,10 @@ PostCSS plugin to reduce calc()
 | ------------------ | :-------------: |
 | Full name          | postcss-calc |
 | Keywords           | css, postcss, postcss-plugin, calculation, calc |
-| # releases         | 6 |
-| # dependents       | 194 |
-| # downloads        | 366727482 |
-| # stars            | 4 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 4.5895901E7 |
+| # stars            | 198.0 |
 
 ## Links
 - [Homepage](https://github.com/postcss/postcss-calc#readme)
@@ -24,7 +24,7 @@ PostCSS plugin to reduce calc()
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

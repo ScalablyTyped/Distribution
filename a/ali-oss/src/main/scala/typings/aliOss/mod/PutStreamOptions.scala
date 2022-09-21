@@ -8,17 +8,17 @@ trait PutStreamOptions extends StObject {
   
   var callback: ObjectCallback
   
+  /** the stream length, chunked encoding will be used if absent */
   var contentLength: js.UndefOr[Double] = js.undefined
   
   var headers: js.UndefOr[js.Object] = js.undefined
   
-  // custom mime, will send with Content-Type entity header
   var meta: UserMeta
   
-  // the operation timeout
+  /** custom mime, will send with Content-Type entity header */
   var mime: String
   
-  // the stream length, chunked encoding will be used if absent
+  /** the operation timeout */
   var timeout: Double
 }
 object PutStreamOptions {

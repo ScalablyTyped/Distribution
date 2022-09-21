@@ -57,7 +57,15 @@ object system {
     @js.native
     val ^ : js.Any = js.native
     
-    /** Queries basic CPU information of the system. */
+    /**
+      * Queries basic CPU information of the system.
+      * @returns Promise<CpuInfo> only if callback is not specified
+      */
+    inline def getInfo(): js.Promise[CpuInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")().asInstanceOf[js.Promise[CpuInfo]]
+    /**
+      * Queries basic CPU information of the system.
+      * @param callback takes in an argument with CpuInfo
+      */
     inline def getInfo(callback: js.Function1[/* info */ CpuInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   

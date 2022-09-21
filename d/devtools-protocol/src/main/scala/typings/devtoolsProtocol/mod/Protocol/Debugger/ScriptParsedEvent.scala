@@ -38,7 +38,7 @@ trait ScriptParsedEvent extends StObject {
   /**
     * Embedder-specific auxiliary data.
     */
-  var executionContextAuxData: js.UndefOr[js.Any] = js.undefined
+  var executionContextAuxData: js.UndefOr[Any] = js.undefined
   
   /**
     * Specifies script creation context.
@@ -51,7 +51,7 @@ trait ScriptParsedEvent extends StObject {
   var hasSourceURL: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Content hash of the script.
+    * Content hash of the script, SHA-256.
     */
   var hash: String
   
@@ -139,7 +139,7 @@ object ScriptParsedEvent {
     
     inline def setEndLine(value: integer): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     
-    inline def setExecutionContextAuxData(value: js.Any): Self = StObject.set(x, "executionContextAuxData", value.asInstanceOf[js.Any])
+    inline def setExecutionContextAuxData(value: Any): Self = StObject.set(x, "executionContextAuxData", value.asInstanceOf[js.Any])
     
     inline def setExecutionContextAuxDataUndefined: Self = StObject.set(x, "executionContextAuxData", js.undefined)
     

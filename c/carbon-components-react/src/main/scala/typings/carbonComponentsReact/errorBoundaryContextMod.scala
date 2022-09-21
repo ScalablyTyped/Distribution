@@ -2,7 +2,6 @@ package typings.carbonComponentsReact
 
 import typings.react.mod.Context
 import typings.react.mod.ErrorInfo
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object errorBoundaryContextMod {
   
   trait ErrorBoundaryContextValue extends StObject {
     
-    var log: js.UndefOr[js.Function2[/* error */ Error, /* errorInfo */ ErrorInfo, Unit]] = js.undefined
+    var log: js.UndefOr[js.Function2[/* error */ js.Error, /* errorInfo */ ErrorInfo, Unit]] = js.undefined
   }
   object ErrorBoundaryContextValue {
     
@@ -26,7 +25,7 @@ object errorBoundaryContextMod {
     
     extension [Self <: ErrorBoundaryContextValue](x: Self) {
       
-      inline def setLog(value: (/* error */ Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      inline def setLog(value: (/* error */ js.Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     }

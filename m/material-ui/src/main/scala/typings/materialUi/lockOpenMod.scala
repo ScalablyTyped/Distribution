@@ -10,10 +10,10 @@ object lockOpenMod {
   
   @JSImport("material-ui/svg-icons/action/lock-open", JSImport.Default)
   @js.native
-  class default () extends ActionLockOpen
+  open class default () extends ActionLockOpen
   
   @JSImport("material-ui/svg-icons/action/lock-open", "ActionLockOpen")
   @js.native
-  class ActionLockOpen ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionLockOpen ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

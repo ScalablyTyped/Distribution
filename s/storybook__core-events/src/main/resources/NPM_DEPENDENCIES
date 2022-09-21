@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/core-events" : "6.1.2"
+      "@storybook/core-events" : "6.5.12"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/core-events" : "6.1.2"
+      "@storybook/core-events" : "6.5.12"
     }
   ],
   "compile-devDependencies" : [

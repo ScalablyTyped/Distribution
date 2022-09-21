@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "_MeshCollisionData")
 @js.native
-class MeshCollisionData ()
+open class MeshCollisionData ()
   extends typings.babylonjs.legacyMod.MeshCollisionData

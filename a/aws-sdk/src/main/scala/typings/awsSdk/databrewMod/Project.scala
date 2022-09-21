@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Project extends StObject {
   
   /**
-    * The ID of the AWS account that owns the project.
+    * The ID of the Amazon Web Services account that owns the project.
     */
   var AccountId: js.UndefOr[typings.awsSdk.databrewMod.AccountId] = js.undefined
   
   /**
     * The date and time that the project was created.
     */
-  var CreateDate: js.UndefOr[Date] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The identifier (the user name) of the user who crated the project.
+    * The Amazon Resource Name (ARN) of the user who crated the project.
     */
   var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.undefined
   
@@ -27,14 +27,14 @@ trait Project extends StObject {
   var DatasetName: js.UndefOr[typings.awsSdk.databrewMod.DatasetName] = js.undefined
   
   /**
-    * The identifier (user name) of the user who last modified the project.
+    * The Amazon Resource Name (ARN) of the user who last modified the project.
     */
   var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.undefined
   
   /**
     * The last modification date and time for the project.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The unique name of a project.
@@ -44,10 +44,10 @@ trait Project extends StObject {
   /**
     * The date and time when the project was opened.
     */
-  var OpenDate: js.UndefOr[Date] = js.undefined
+  var OpenDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The identifier (the user name) of the user that opened the project for use.
+    * The Amazon Resource Name (ARN) of the user that opened the project for use.
     */
   var OpenedBy: js.UndefOr[typings.awsSdk.databrewMod.OpenedBy] = js.undefined
   
@@ -67,7 +67,7 @@ trait Project extends StObject {
   var RoleArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The sample size and sampling type to apply to the data. If this parameter isn't specified, then the sample will consiste of the first 500 rows from the dataset.
+    * The sample size and sampling type to apply to the data. If this parameter isn't specified, then the sample consists of the first 500 rows from the dataset.
     */
   var Sample: js.UndefOr[typings.awsSdk.databrewMod.Sample] = js.undefined
   
@@ -89,7 +89,7 @@ object Project {
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    inline def setCreateDate(value: Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
@@ -105,13 +105,13 @@ object Project {
     
     inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
     inline def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setOpenDate(value: Date): Self = StObject.set(x, "OpenDate", value.asInstanceOf[js.Any])
+    inline def setOpenDate(value: js.Date): Self = StObject.set(x, "OpenDate", value.asInstanceOf[js.Any])
     
     inline def setOpenDateUndefined: Self = StObject.set(x, "OpenDate", js.undefined)
     

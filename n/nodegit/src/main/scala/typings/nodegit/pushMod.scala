@@ -9,7 +9,7 @@ object pushMod {
   
   @JSImport("nodegit/push", "Push")
   @js.native
-  class Push () extends StObject
+  open class Push () extends StObject
   /* static members */
   object Push {
     

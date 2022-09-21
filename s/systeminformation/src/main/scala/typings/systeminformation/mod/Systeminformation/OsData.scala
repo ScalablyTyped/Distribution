@@ -17,7 +17,13 @@ trait OsData extends StObject {
   
   var distro: String
   
+  var fqdn: String
+  
   var hostname: String
+  
+  var hypervisor: js.UndefOr[Boolean] = js.undefined
+  
+  var hypervizor: js.UndefOr[Boolean] = js.undefined
   
   var kernel: String
   
@@ -26,6 +32,8 @@ trait OsData extends StObject {
   var platform: String
   
   var release: String
+  
+  var remoteSession: js.UndefOr[Boolean] = js.undefined
   
   var serial: String
   
@@ -41,6 +49,7 @@ object OsData {
     codename: String,
     codepage: String,
     distro: String,
+    fqdn: String,
     hostname: String,
     kernel: String,
     logofile: String,
@@ -50,7 +59,7 @@ object OsData {
     servicepack: String,
     uefi: Boolean
   ): OsData = {
-    val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], codename = codename.asInstanceOf[js.Any], codepage = codepage.asInstanceOf[js.Any], distro = distro.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], kernel = kernel.asInstanceOf[js.Any], logofile = logofile.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], servicepack = servicepack.asInstanceOf[js.Any], uefi = uefi.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], codename = codename.asInstanceOf[js.Any], codepage = codepage.asInstanceOf[js.Any], distro = distro.asInstanceOf[js.Any], fqdn = fqdn.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], kernel = kernel.asInstanceOf[js.Any], logofile = logofile.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], servicepack = servicepack.asInstanceOf[js.Any], uefi = uefi.asInstanceOf[js.Any])
     __obj.asInstanceOf[OsData]
   }
   
@@ -66,7 +75,17 @@ object OsData {
     
     inline def setDistro(value: String): Self = StObject.set(x, "distro", value.asInstanceOf[js.Any])
     
+    inline def setFqdn(value: String): Self = StObject.set(x, "fqdn", value.asInstanceOf[js.Any])
+    
     inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    
+    inline def setHypervisor(value: Boolean): Self = StObject.set(x, "hypervisor", value.asInstanceOf[js.Any])
+    
+    inline def setHypervisorUndefined: Self = StObject.set(x, "hypervisor", js.undefined)
+    
+    inline def setHypervizor(value: Boolean): Self = StObject.set(x, "hypervizor", value.asInstanceOf[js.Any])
+    
+    inline def setHypervizorUndefined: Self = StObject.set(x, "hypervizor", js.undefined)
     
     inline def setKernel(value: String): Self = StObject.set(x, "kernel", value.asInstanceOf[js.Any])
     
@@ -75,6 +94,10 @@ object OsData {
     inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     inline def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    
+    inline def setRemoteSession(value: Boolean): Self = StObject.set(x, "remoteSession", value.asInstanceOf[js.Any])
+    
+    inline def setRemoteSessionUndefined: Self = StObject.set(x, "remoteSession", js.undefined)
     
     inline def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     

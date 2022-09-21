@@ -1,7 +1,7 @@
 package typings.xml2json
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.xml2json.anon.objectfalseundefinedJsonO
 import typings.xml2json.anon.objecttrueJsonOptions
 import org.scalablytyped.runtime.StObject
@@ -16,18 +16,18 @@ object mod {
   
   inline def toJson(xml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def toJson(xml: String, options: objectfalseundefinedJsonO): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def toJson(xml: String, options: objecttrueJsonOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toJson(xml: String, options: objecttrueJsonOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   inline def toJson(xml: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def toJson(xml: Buffer, options: objectfalseundefinedJsonO): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def toJson(xml: Buffer, options: objecttrueJsonOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toJson(xml: Buffer, options: objecttrueJsonOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
-  inline def toJson_StringDictionary(xml: String): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toJson_StringDictionary(xml: Buffer): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toJson_StringDictionary(xml: String): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toJson_StringDictionary(xml: Buffer): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   
   inline def toXml(json: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def toXml(json: String, options: XmlOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def toXml(json: StringDictionary[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def toXml(json: StringDictionary[js.Any], options: XmlOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toXml(json: StringDictionary[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toXml(json: StringDictionary[Any], options: XmlOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def toXml(json: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def toXml(json: Buffer, options: XmlOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -102,7 +102,7 @@ object mod {
       
       inline def setArrayNotationUndefined: Self = StObject.set(x, "arrayNotation", js.undefined)
       
-      inline def setArrayNotationVarargs(value: String*): Self = StObject.set(x, "arrayNotation", js.Array(value :_*))
+      inline def setArrayNotationVarargs(value: String*): Self = StObject.set(x, "arrayNotation", js.Array(value*))
       
       inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
       

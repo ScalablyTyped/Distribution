@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object asyncSubjectMod {
   
-  @JSImport("rxjs/internal/AsyncSubject", "AsyncSubject")
+  @JSImport("rxjs/dist/types/internal/AsyncSubject", "AsyncSubject")
   @js.native
-  class AsyncSubject[T] () extends Subject[T] {
+  open class AsyncSubject[T] () extends Subject[T] {
     
-    /* private */ var hasCompleted: js.Any = js.native
+    /* private */ var _hasValue: Any = js.native
     
-    /* private */ var hasNext: js.Any = js.native
+    /* private */ var _isComplete: Any = js.native
     
-    /* private */ var value: js.Any = js.native
+    /* private */ var _value: Any = js.native
   }
 }

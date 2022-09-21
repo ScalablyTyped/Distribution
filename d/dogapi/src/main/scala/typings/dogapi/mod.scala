@@ -6,7 +6,6 @@ import typings.dogapi.anon.Datehappened
 import typings.dogapi.anon.Host
 import typings.dogapi.anon.Metric
 import typings.dogapi.dogapiStrings.ok
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,13 +22,13 @@ object mod {
     def create(
       title: String,
       text: String,
-      callback: js.Function2[/* err */ Error | Null, /* res */ EventCreateResponse, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* res */ EventCreateResponse, Unit]
     ): Unit = js.native
     def create(
       title: String,
       text: String,
       properties: Aggregationkey,
-      callback: js.Function2[/* err */ Error | Null, /* res */ EventCreateResponse, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* res */ EventCreateResponse, Unit]
     ): Unit = js.native
   }
   @JSImport("dogapi", "event")
@@ -43,26 +42,30 @@ object mod {
     
     def send_all(
       metrics: js.Array[Metric],
-      callback: js.Function2[/* err */ Error | Null, /* res */ EventCreateResponse, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* res */ EventCreateResponse, Unit]
     ): Unit = js.native
     
     @JSName("send")
-    def send_ok(metric: String, points: js.Array[Double], callback: js.Function2[/* err */ Error | Null, ok, Unit]): Unit = js.native
+    def send_ok(
+      metric: String,
+      points: js.Array[Double],
+      callback: js.Function2[/* err */ js.Error | Null, ok, Unit]
+    ): Unit = js.native
     @JSName("send")
     def send_ok(
       metric: String,
       points: js.Array[Double],
       extra: Host,
-      callback: js.Function2[/* err */ Error | Null, ok, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, ok, Unit]
     ): Unit = js.native
     @JSName("send")
-    def send_ok(metric: String, points: Double, callback: js.Function2[/* err */ Error | Null, ok, Unit]): Unit = js.native
+    def send_ok(metric: String, points: Double, callback: js.Function2[/* err */ js.Error | Null, ok, Unit]): Unit = js.native
     @JSName("send")
     def send_ok(
       metric: String,
       points: Double,
       extra: Host,
-      callback: js.Function2[/* err */ Error | Null, ok, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, ok, Unit]
     ): Unit = js.native
   }
   @JSImport("dogapi", "metric")

@@ -22,6 +22,8 @@ trait IndicesGetParams
   
   var includeDefaults: js.UndefOr[Boolean] = js.undefined
   
+  var includeTypeName: js.UndefOr[Boolean] = js.undefined
+  
   var index: js.UndefOr[NameList] = js.undefined
   
   var local: js.UndefOr[Boolean] = js.undefined
@@ -47,7 +49,7 @@ object IndicesGetParams {
     
     inline def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
     
-    inline def setFeatureVarargs(value: String*): Self = StObject.set(x, "feature", js.Array(value :_*))
+    inline def setFeatureVarargs(value: String*): Self = StObject.set(x, "feature", js.Array(value*))
     
     inline def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
     
@@ -65,11 +67,15 @@ object IndicesGetParams {
     
     inline def setIncludeDefaultsUndefined: Self = StObject.set(x, "includeDefaults", js.undefined)
     
+    inline def setIncludeTypeName(value: Boolean): Self = StObject.set(x, "includeTypeName", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeTypeNameUndefined: Self = StObject.set(x, "includeTypeName", js.undefined)
+    
     inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for license-checker-webpack-plugin
 
-Typings are for version 0.0
+Typings are for version 0.2
 
 ## Library description:
 Verifies licenses of all external dependencies in a compilation, and outputs them to a file.
@@ -10,10 +10,10 @@ Verifies licenses of all external dependencies in a compilation, and outputs the
 | ------------------ | :-------------: |
 | Full name          | license-checker-webpack-plugin |
 | Keywords           | license, webpack |
-| # releases         | 13 |
-| # dependents       | 4 |
-| # downloads        | 350350 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 80459.33333333333 |
+| # stars            | 118.0 |
 
 ## Links
 - [Homepage](https://github.com/Microsoft/license-checker-webpack-plugin#readme)

@@ -4,21 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A suggested change to ListProperties.
-  */
 trait SchemaSuggestedListProperties extends StObject {
   
   /**
-    * A ListProperties that only includes the changes made in this suggestion.
-    * This can be used along with the list_properties_suggestion_state to see
-    * which fields have changed and their new values.
+    * A ListProperties that only includes the changes made in this suggestion. This can be used along with the list_properties_suggestion_state to see which fields have changed and their new values.
     */
   var listProperties: js.UndefOr[SchemaListProperties] = js.undefined
   
   /**
-    * A mask that indicates which of the fields on the base ListProperties have
-    * been changed in this suggestion.
+    * A mask that indicates which of the fields on the base ListProperties have been changed in this suggestion.
     */
   var listPropertiesSuggestionState: js.UndefOr[SchemaListPropertiesSuggestionState] = js.undefined
 }

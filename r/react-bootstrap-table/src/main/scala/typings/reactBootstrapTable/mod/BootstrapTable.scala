@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap-table", "BootstrapTable")
 @js.native
-class BootstrapTable protected ()
-  extends Component[BootstrapTableProps, js.Object, js.Any] {
+open class BootstrapTable protected ()
+  extends Component[BootstrapTableProps, js.Object, Any] {
   def this(props: BootstrapTableProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: BootstrapTableProps, context: js.Any) = this()
+  def this(props: BootstrapTableProps, context: Any) = this()
   
   /**
     * Deselect all rows in the table.
@@ -36,12 +36,12 @@ class BootstrapTable protected ()
   /**
     * Call this function to insert a new row to table.
     */
-  def handleAddRow(row: js.Any): Unit = js.native
+  def handleAddRow(row: Any): Unit = js.native
   
   /**
     * Call this function to insert a new row as the first row in the table.
     */
-  def handleAddRowAtBegin(row: js.Any): Unit = js.native
+  def handleAddRowAtBegin(row: Any): Unit = js.native
   
   /**
     * Call this function to drop/delete rows from the table.
@@ -62,7 +62,7 @@ class BootstrapTable protected ()
     *      price: { type: 'ArrayFilter', value: [2100, 2104] }
     *  });
     */
-  def handleFilterData(filter: FilterData[js.Any]): Unit = js.native
+  def handleFilterData(filter: FilterData[Any]): Unit = js.native
   
   /**
     * Call this function with search text for fully searching.

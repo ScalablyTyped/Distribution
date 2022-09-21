@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSpreadsheetViewModeChangedEventArgs")
 @js.native
-class ASPxClientSpreadsheetViewModeChangedEventArgs protected ()
+open class ASPxClientSpreadsheetViewModeChangedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSpreadsheetViewModeChangedEventArgs {
   /**
     * Initializes a new instance of the ASPxClientSpreadsheetViewModeChangedEventArgs class.
     * @param oldViewMode Specifies the control's current view mode.
     */
-  def this(oldViewMode: js.Any) = this()
+  def this(oldViewMode: Any) = this()
   
   /**
     * Gets the control's current view mode when the event is triggered.

@@ -29,7 +29,7 @@ object ListLaunchPathsOutput {
     
     inline def setLaunchPathSummariesUndefined: Self = StObject.set(x, "LaunchPathSummaries", js.undefined)
     
-    inline def setLaunchPathSummariesVarargs(value: LaunchPathSummary*): Self = StObject.set(x, "LaunchPathSummaries", js.Array(value :_*))
+    inline def setLaunchPathSummariesVarargs(value: LaunchPathSummary*): Self = StObject.set(x, "LaunchPathSummaries", js.Array(value*))
     
     inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     

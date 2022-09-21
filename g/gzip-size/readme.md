@@ -1,7 +1,7 @@
 
 # Scala.js typings for gzip-size
 
-Typings are for version 6.0.0
+Typings are for version 7.0.0
 
 ## Library description:
 Get the gzipped size of a string or buffer
@@ -10,10 +10,10 @@ Get the gzipped size of a string or buffer
 | ------------------ | :-------------: |
 | Full name          | gzip-size |
 | Keywords           | app, tool, zlib, gzip, compressed, size, string, buffer |
-| # releases         | 2 |
-| # dependents       | 721 |
-| # downloads        | 309789713 |
-| # stars            | 14 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4.7088213333333336E7 |
+| # stars            | 156.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/gzip-size#readme)

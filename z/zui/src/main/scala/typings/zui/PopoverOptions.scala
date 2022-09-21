@@ -10,7 +10,7 @@ trait PopoverOptions extends StObject {
   
   var container: js.UndefOr[String | Boolean] = js.undefined
   
-  var content: js.UndefOr[js.Any] = js.undefined
+  var content: js.UndefOr[Any] = js.undefined
   
   var delay: js.UndefOr[Double | js.Object] = js.undefined
   
@@ -45,7 +45,7 @@ object PopoverOptions {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     

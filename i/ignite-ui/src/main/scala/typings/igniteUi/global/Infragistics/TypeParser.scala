@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.TypeParser")
 @js.native
-class TypeParser ()
+open class TypeParser ()
   extends StObject
      with typings.igniteUi.Infragistics.TypeParser {
   

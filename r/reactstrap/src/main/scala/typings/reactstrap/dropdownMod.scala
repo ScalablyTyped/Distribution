@@ -9,9 +9,9 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
-import typings.reactstrap.mod.CSSModule
 import typings.reactstrap.reactstrapStrings.append
 import typings.reactstrap.reactstrapStrings.prepend
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -20,35 +20,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dropdownMod {
   
-  @JSImport("reactstrap/lib/Dropdown", JSImport.Default)
+  @JSImport("reactstrap/types/lib/Dropdown", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DropdownProps, js.Object, js.Any]
+  open class default ()
+    extends Component[DropdownProps, js.Object, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactstrap.reactstrapStrings.up
     - typings.reactstrap.reactstrapStrings.down
-    - typings.reactstrap.reactstrapStrings.left
-    - typings.reactstrap.reactstrapStrings.right
+    - typings.reactstrap.reactstrapStrings.start
+    - typings.reactstrap.reactstrapStrings.end
   */
   trait Direction extends StObject
   object Direction {
     
     inline def down: typings.reactstrap.reactstrapStrings.down = "down".asInstanceOf[typings.reactstrap.reactstrapStrings.down]
     
-    inline def left: typings.reactstrap.reactstrapStrings.left = "left".asInstanceOf[typings.reactstrap.reactstrapStrings.left]
+    inline def end: typings.reactstrap.reactstrapStrings.end = "end".asInstanceOf[typings.reactstrap.reactstrapStrings.end]
     
-    inline def right: typings.reactstrap.reactstrapStrings.right = "right".asInstanceOf[typings.reactstrap.reactstrapStrings.right]
+    inline def start: typings.reactstrap.reactstrapStrings.start = "start".asInstanceOf[typings.reactstrap.reactstrapStrings.start]
     
     inline def up: typings.reactstrap.reactstrapStrings.up = "up".asInstanceOf[typings.reactstrap.reactstrapStrings.up]
   }
   
-  type Dropdown = Component[DropdownProps, js.Object, js.Any]
+  type Dropdown = Component[DropdownProps, js.Object, Any]
   
   trait DropdownProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var a11y: js.UndefOr[Boolean] = js.undefined
     
@@ -68,15 +68,17 @@ object dropdownMod {
     
     var isOpen: js.UndefOr[Boolean] = js.undefined
     
+    var menuRole: js.UndefOr[Boolean | String] = js.undefined
+    
     var nav: js.UndefOr[Boolean] = js.undefined
     
     var setActiveFromChild: js.UndefOr[Boolean] = js.undefined
     
     var size: js.UndefOr[String] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
     
-    var toggle: js.UndefOr[KeyboardEventHandler[js.Any] | MouseEventHandler[js.Any]] = js.undefined
+    var toggle: js.UndefOr[KeyboardEventHandler[Any] | MouseEventHandler[Any]] = js.undefined
   }
   object DropdownProps {
     
@@ -123,6 +125,10 @@ object dropdownMod {
       
       inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
       
+      inline def setMenuRole(value: Boolean | String): Self = StObject.set(x, "menuRole", value.asInstanceOf[js.Any])
+      
+      inline def setMenuRoleUndefined: Self = StObject.set(x, "menuRole", js.undefined)
+      
       inline def setNav(value: Boolean): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
       
       inline def setNavUndefined: Self = StObject.set(x, "nav", js.undefined)
@@ -135,11 +141,11 @@ object dropdownMod {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      inline def setToggle(value: KeyboardEvent[js.Any] | (MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+      inline def setToggle(value: KeyboardEvent[Any] | (MouseEvent[Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
       
       inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     }

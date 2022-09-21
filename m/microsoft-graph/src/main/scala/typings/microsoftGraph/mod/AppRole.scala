@@ -24,7 +24,7 @@ trait AppRole extends StObject {
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * Unique role identifier inside the appRoles collection. When creating a new app role, a new Guid identifier must be
+    * Unique role identifier inside the appRoles collection. When creating a new app role, a new GUID identifier must be
     * provided.
     */
   var id: js.UndefOr[String] = js.undefined
@@ -45,7 +45,7 @@ trait AppRole extends StObject {
     * Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or
     * service principal. Must not exceed 120 characters in length. Allowed characters are : ! # $ % &amp; ' ( ) * + , - . / :
     * ; = ? @ [ ] ^ + _ { } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space
-    * character, are not allowed.
+    * character, are not allowed. May not begin with ..
     */
   var value: js.UndefOr[NullableOption[String]] = js.undefined
 }
@@ -62,7 +62,7 @@ object AppRole {
     
     inline def setAllowedMemberTypesUndefined: Self = StObject.set(x, "allowedMemberTypes", js.undefined)
     
-    inline def setAllowedMemberTypesVarargs(value: String*): Self = StObject.set(x, "allowedMemberTypes", js.Array(value :_*))
+    inline def setAllowedMemberTypesVarargs(value: String*): Self = StObject.set(x, "allowedMemberTypes", js.Array(value*))
     
     inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

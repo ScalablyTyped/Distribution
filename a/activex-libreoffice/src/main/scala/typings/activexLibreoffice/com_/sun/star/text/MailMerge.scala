@@ -236,7 +236,7 @@ object MailMerge {
     ResultSet: XResultSet,
     SaveAsSingleFile: Boolean,
     SaveFilter: String,
-    Selection: SafeArray[js.Any],
+    Selection: SafeArray[Any],
     SendAsAttachment: Boolean,
     SendAsHTML: Boolean,
     SinglePrintJobs: Boolean,
@@ -246,15 +246,15 @@ object MailMerge {
     addPropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     cancel: () => Unit,
-    execute: SeqEquiv[NamedValue] => js.Any,
+    execute: SeqEquiv[NamedValue] => Any,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
-    queryInterface: `type` => js.Any,
+    getPropertyValue: String => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeMailMergeEventListener: XMailMergeListener => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-    setPropertyValue: (String, js.Any) => Unit
+    setPropertyValue: (String, Any) => Unit
   ): MailMerge = {
     val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection.asInstanceOf[js.Any], AddressFromColumn = AddressFromColumn.asInstanceOf[js.Any], AttachmentFilter = AttachmentFilter.asInstanceOf[js.Any], AttachmentName = AttachmentName.asInstanceOf[js.Any], BlindCopiesTo = BlindCopiesTo.asInstanceOf[js.Any], BookmarkSelection = BookmarkSelection.asInstanceOf[js.Any], Column = Column.asInstanceOf[js.Any], ColumnName = ColumnName.asInstanceOf[js.Any], Command = Command.asInstanceOf[js.Any], CommandType = CommandType.asInstanceOf[js.Any], ConnectionInfo = ConnectionInfo.asInstanceOf[js.Any], ConnectionResource = ConnectionResource.asInstanceOf[js.Any], CopiesTo = CopiesTo.asInstanceOf[js.Any], DataSourceName = DataSourceName.asInstanceOf[js.Any], DatabaseLocation = DatabaseLocation.asInstanceOf[js.Any], DocumentURL = DocumentURL.asInstanceOf[js.Any], EscapeProcessing = EscapeProcessing.asInstanceOf[js.Any], FileNameFromColumn = FileNameFromColumn.asInstanceOf[js.Any], FileNamePrefix = FileNamePrefix.asInstanceOf[js.Any], Filter = Filter.asInstanceOf[js.Any], GroupBy = GroupBy.asInstanceOf[js.Any], HavingClause = HavingClause.asInstanceOf[js.Any], InServerPassword = InServerPassword.asInstanceOf[js.Any], MailBody = MailBody.asInstanceOf[js.Any], Model = Model.asInstanceOf[js.Any], Order = Order.asInstanceOf[js.Any], OutServerPassword = OutServerPassword.asInstanceOf[js.Any], OutputType = OutputType.asInstanceOf[js.Any], OutputURL = OutputURL.asInstanceOf[js.Any], PrintOptions = PrintOptions.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ResultSet = ResultSet.asInstanceOf[js.Any], SaveAsSingleFile = SaveAsSingleFile.asInstanceOf[js.Any], SaveFilter = SaveFilter.asInstanceOf[js.Any], Selection = Selection.asInstanceOf[js.Any], SendAsAttachment = SendAsAttachment.asInstanceOf[js.Any], SendAsHTML = SendAsHTML.asInstanceOf[js.Any], SinglePrintJobs = SinglePrintJobs.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addMailMergeEventListener = js.Any.fromFunction1(addMailMergeEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), cancel = js.Any.fromFunction0(cancel), execute = js.Any.fromFunction1(execute), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeMailMergeEventListener = js.Any.fromFunction1(removeMailMergeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[MailMerge]

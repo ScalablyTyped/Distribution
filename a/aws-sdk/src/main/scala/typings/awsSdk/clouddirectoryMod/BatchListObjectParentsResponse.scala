@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BatchListObjectParentsResponse extends StObject {
   
+  /**
+    * The pagination token.
+    */
   var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
   
+  /**
+    * Returns a list of parent reference and LinkName Tuples.
+    */
   var ParentLinks: js.UndefOr[ObjectIdentifierAndLinkNameList] = js.undefined
 }
 object BatchListObjectParentsResponse {
@@ -27,6 +33,6 @@ object BatchListObjectParentsResponse {
     
     inline def setParentLinksUndefined: Self = StObject.set(x, "ParentLinks", js.undefined)
     
-    inline def setParentLinksVarargs(value: ObjectIdentifierAndLinkNameTuple*): Self = StObject.set(x, "ParentLinks", js.Array(value :_*))
+    inline def setParentLinksVarargs(value: ObjectIdentifierAndLinkNameTuple*): Self = StObject.set(x, "ParentLinks", js.Array(value*))
   }
 }

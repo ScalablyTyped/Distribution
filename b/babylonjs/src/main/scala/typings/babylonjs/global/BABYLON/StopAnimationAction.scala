@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.StopAnimationAction")
 @js.native
-class StopAnimationAction protected ()
+open class StopAnimationAction protected ()
   extends StObject
      with typings.babylonjs.BABYLON.StopAnimationAction {
   /**
@@ -15,6 +15,6 @@ class StopAnimationAction protected ()
     * @param target defines the target animation or animation name
     * @param condition defines the trigger related conditions
     */
-  def this(triggerOptions: js.Any, target: js.Any) = this()
-  def this(triggerOptions: js.Any, target: js.Any, condition: typings.babylonjs.BABYLON.Condition) = this()
+  def this(triggerOptions: Any, target: Any) = this()
+  def this(triggerOptions: Any, target: Any, condition: typings.babylonjs.BABYLON.Condition) = this()
 }

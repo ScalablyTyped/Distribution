@@ -3,6 +3,7 @@ package typings.hapiCatboxRedis
 import typings.hapiCatbox.mod.Client
 import typings.hapiCatbox.mod.ClientOptions
 import typings.hapiCatboxRedis.anon.Host
+import typings.ioredis.mod.Cluster
 import typings.ioredis.mod.Redis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +13,7 @@ object mod {
   
   @JSImport("@hapi/catbox-redis", JSImport.Namespace)
   @js.native
-  class ^[T] protected () extends Client[T] {
+  open class ^[T] protected () extends Client[T] {
     def this(options: CatboxRedisOptions) = this()
   }
   
@@ -25,7 +26,7 @@ object mod {
     /**
       * Raw client.
       */
-    var client: js.UndefOr[Redis] = js.undefined
+    var client: js.UndefOr[Redis | Cluster] = js.undefined
     
     /**
       * the Redis database.
@@ -79,7 +80,7 @@ object mod {
     
     extension [Self <: CatboxRedisOptions](x: Self) {
       
-      inline def setClient(value: Redis): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Redis | Cluster): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
       inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
@@ -107,7 +108,7 @@ object mod {
       
       inline def setSentinelsUndefined: Self = StObject.set(x, "sentinels", js.undefined)
       
-      inline def setSentinelsVarargs(value: Host*): Self = StObject.set(x, "sentinels", js.Array(value :_*))
+      inline def setSentinelsVarargs(value: Host*): Self = StObject.set(x, "sentinels", js.Array(value*))
       
       inline def setSocket(value: String): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       

@@ -11,9 +11,9 @@ An object for efficiently managing key expiries
 | Full name          | expirymanager |
 | Keywords           | expiry, expire, expirymanager, timeout, volatile, key |
 | # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 758754 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 42758.666666666664 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/SocketCluster/expirymanager)

@@ -65,7 +65,7 @@ object Layersummary {
     
     inline def setAnnotationTypesUndefined: Self = StObject.set(x, "annotationTypes", js.undefined)
     
-    inline def setAnnotationTypesVarargs(value: String*): Self = StObject.set(x, "annotationTypes", js.Array(value :_*))
+    inline def setAnnotationTypesVarargs(value: String*): Self = StObject.set(x, "annotationTypes", js.Array(value*))
     
     inline def setAnnotationsDataLink(value: String): Self = StObject.set(x, "annotationsDataLink", value.asInstanceOf[js.Any])
     

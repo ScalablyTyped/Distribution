@@ -7,7 +7,6 @@ import typings.accedoAccedoOne.anon.PickAccedoEntryParamsprev
 import typings.accedoAccedoOne.anon.ReadonlyDetails
 import typings.accedoAccedoOne.mod.AccedoLog.Level
 import typings.accedoAccedoOne.mod.AccedoLog.Logobject
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -112,7 +111,7 @@ object mod {
       var logType: Level
       
       /** Extra metadata (will go through JSON.stringify) */
-      var metadata: js.UndefOr[js.Any] = js.undefined
+      var metadata: js.UndefOr[Any] = js.undefined
       
       /**
         * The timestamp for the log, as a UTC ISO 8601 string
@@ -132,7 +131,7 @@ object mod {
         
         inline def setLogType(value: Level): Self = StObject.set(x, "logType", value.asInstanceOf[js.Any])
         
-        inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
         inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
         
@@ -161,7 +160,7 @@ object mod {
       * @param userName an Accedo One user
       * @returns A promise of the requested data
       */
-    def getAllApplicationGroupScopeDataByUser(userName: String): js.Promise[js.Any] = js.native
+    def getAllApplicationGroupScopeDataByUser(userName: String): js.Promise[Any] = js.native
     
     /**
       * Get all the application-scope data for a given user
@@ -169,7 +168,7 @@ object mod {
       * @param userName an Accedo One user
       * @returns A promise of the requested data
       */
-    def getAllApplicationScopeDataByUser(userName: String): js.Promise[js.Any] = js.native
+    def getAllApplicationScopeDataByUser(userName: String): js.Promise[Any] = js.native
     
     /**
       * Lists all the assets.
@@ -183,14 +182,14 @@ object mod {
       *
       * @returns A promise of the requested data
       */
-    def getAllEnabledPlugins(): js.Promise[js.Any] = js.native
+    def getAllEnabledPlugins(): js.Promise[Any] = js.native
     
     /**
       * Get all the metadata
       *
       * @returns A promise of the requested data
       */
-    def getAllMetadata(): js.Promise[js.Any] = js.native
+    def getAllMetadata(): js.Promise[Any] = js.native
     
     /**
       * Get all the application-group-scope data for a given user
@@ -199,7 +198,7 @@ object mod {
       * @param key a key to specify what data to obtain
       * @returns A promise of the requested data
       */
-    def getApplicationGroupScopeDataByUserAndKey(userName: String, key: String): js.Promise[js.Any] = js.native
+    def getApplicationGroupScopeDataByUserAndKey(userName: String, key: String): js.Promise[Any] = js.native
     
     /**
       * Get all the application-scope data for a given user and data key
@@ -207,7 +206,7 @@ object mod {
       * @param userName an Accedo One user
       * @param key a key to specify what data to obtain
       */
-    def getApplicationScopeDataByUserAndKey(userName: String, key: String): js.Promise[js.Any] = js.native
+    def getApplicationScopeDataByUserAndKey(userName: String, key: String): js.Promise[Any] = js.native
     
     /**
       * Get the current application status
@@ -230,8 +229,8 @@ object mod {
       *
       * @param params
       */
-    def getEntries(): js.Promise[js.Any] = js.native
-    def getEntries(params: AccedoEntryParams): js.Promise[js.Any] = js.native
+    def getEntries(): js.Promise[Any] = js.native
+    def getEntries(params: AccedoEntryParams): js.Promise[Any] = js.native
     
     /**
       * Get one content entry, based on the given parameters.
@@ -248,8 +247,8 @@ object mod {
       * @param id
       * @param params
       */
-    def getEntryById(id: String): js.Promise[js.Any] = js.native
-    def getEntryById(id: String, params: PickAccedoEntryParamsprev): js.Promise[js.Any] = js.native
+    def getEntryById(id: String): js.Promise[Any] = js.native
+    def getEntryById(id: String, params: PickAccedoEntryParamsprev): js.Promise[Any] = js.native
     
     /**
       * Get the current log level
@@ -264,7 +263,7 @@ object mod {
       * @param key a key to get specific metadata
       * @returns a promise of the requested data
       */
-    def getMetadataByKey(key: String): js.Promise[js.Any] = js.native
+    def getMetadataByKey(key: String): js.Promise[Any] = js.native
     
     /**
       * Get the metadata by specific keys
@@ -272,7 +271,7 @@ object mod {
       * @param keys an array of keys (strings)
       * @returns a promise of the requested data
       */
-    def getMetadataByKeys(keys: js.Array[String]): js.Promise[js.Any] = js.native
+    def getMetadataByKeys(keys: js.Array[String]): js.Promise[Any] = js.native
     
     /**
       * Get the profile information
@@ -304,7 +303,7 @@ object mod {
       * @param metadata extra metadata (will go through JSON.stringify). Can be passed as any number of trailing arguments.
       */
     def sendLog(level: Level, details: ReadonlyDetails): js.Promise[Boolean] = js.native
-    def sendLog(level: Level, details: ReadonlyDetails, metadata: js.Any): js.Promise[Boolean] = js.native
+    def sendLog(level: Level, details: ReadonlyDetails, metadata: Any): js.Promise[Boolean] = js.native
     
     /**
       * Send batched logs, each with its own level, timestamp, details and extra metadata.
@@ -391,7 +390,7 @@ object mod {
     var ip: js.UndefOr[String] = js.undefined
     
     /** A function to use to see this SDK's logs */
-    var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var log: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     /** Callback to obtain the new deviceId, if one gets generated */
     var onDeviceIdGenerated: js.UndefOr[js.Function1[/* deviceId */ String, Unit]] = js.undefined
@@ -428,7 +427,7 @@ object mod {
       
       inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
       
-      inline def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* repeated */ Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
@@ -456,7 +455,7 @@ object mod {
     var alias: js.UndefOr[js.Array[String]] = js.undefined
     
     /** when given, get the version at the given time */
-    var at: js.UndefOr[String | Date] = js.undefined
+    var at: js.UndefOr[String | js.Date] = js.undefined
     
     /** an array of entry ids (strings) */
     var id: js.UndefOr[js.Array[String]] = js.undefined
@@ -498,9 +497,9 @@ object mod {
       
       inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
+      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value*))
       
-      inline def setAt(value: String | Date): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+      inline def setAt(value: String | js.Date): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
       inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
       
@@ -508,7 +507,7 @@ object mod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value :_*))
+      inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value*))
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -534,7 +533,7 @@ object mod {
       
       inline def setTypeIdUndefined: Self = StObject.set(x, "typeId", js.undefined)
       
-      inline def setTypeIdVarargs(value: String*): Self = StObject.set(x, "typeId", js.Array(value :_*))
+      inline def setTypeIdVarargs(value: String*): Self = StObject.set(x, "typeId", js.Array(value*))
     }
   }
   

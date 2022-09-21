@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "FilterValue")
 @js.native
-class FilterValue () extends StObject {
+open class FilterValue () extends StObject {
   
   /**
     * A list of terms that must be present on the field of the resource.

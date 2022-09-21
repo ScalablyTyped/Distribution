@@ -1,40 +1,36 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.avg
-import typings.devextreme.devextremeStrings.center
-import typings.devextreme.devextremeStrings.count
-import typings.devextreme.devextremeStrings.custom
-import typings.devextreme.devextremeStrings.left
-import typings.devextreme.devextremeStrings.max
-import typings.devextreme.devextremeStrings.min
-import typings.devextreme.devextremeStrings.right
-import typings.devextreme.devextremeStrings.sum
-import typings.devextreme.mod.DevExpress.ui.format
+import typings.devextreme.mod.DevExpress.ui.dxForm.LabelLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Alignment extends StObject {
   
-  var alignment: js.UndefOr[center | left | right] = js.undefined
+  /**
+    * Specifies the label&apos;s horizontal alignment. Applies only if the labelMode is &apos;outside&apos;.
+    */
+  var alignment: js.UndefOr[typings.devextreme.mod.DevExpress.common.HorizontalAlignment] = js.undefined
   
-  var column: js.UndefOr[String] = js.undefined
+  /**
+    * Specifies the location of a label against the editor. Applies only if the labelMode is &apos;outside&apos;.
+    */
+  var location: js.UndefOr[LabelLocation] = js.undefined
   
-  var cssClass: js.UndefOr[String] = js.undefined
+  /**
+    * Specifies whether or not a colon is displayed at the end of the current label.
+    */
+  var showColon: js.UndefOr[Boolean] = js.undefined
   
-  var customizeText: js.UndefOr[js.Function1[/* itemInfo */ Value, String]] = js.undefined
+  /**
+    * Specifies the label text.
+    */
+  var text: js.UndefOr[String] = js.undefined
   
-  var displayFormat: js.UndefOr[String] = js.undefined
-  
-  var name: js.UndefOr[String] = js.undefined
-  
-  var showInColumn: js.UndefOr[String] = js.undefined
-  
-  var skipEmptyValues: js.UndefOr[Boolean] = js.undefined
-  
-  var summaryType: js.UndefOr[avg | count | custom | max | min | sum | String] = js.undefined
-  
-  var valueFormat: js.UndefOr[format] = js.undefined
+  /**
+    * Specifies whether or not the label is visible.
+    */
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Alignment {
   
@@ -45,46 +41,24 @@ object Alignment {
   
   extension [Self <: Alignment](x: Self) {
     
-    inline def setAlignment(value: center | left | right): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: typings.devextreme.mod.DevExpress.common.HorizontalAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
     inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LabelLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    inline def setShowColon(value: Boolean): Self = StObject.set(x, "showColon", value.asInstanceOf[js.Any])
     
-    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    inline def setShowColonUndefined: Self = StObject.set(x, "showColon", js.undefined)
     
-    inline def setCustomizeText(value: /* itemInfo */ Value => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    inline def setDisplayFormat(value: String): Self = StObject.set(x, "displayFormat", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    inline def setDisplayFormatUndefined: Self = StObject.set(x, "displayFormat", js.undefined)
-    
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-    
-    inline def setShowInColumn(value: String): Self = StObject.set(x, "showInColumn", value.asInstanceOf[js.Any])
-    
-    inline def setShowInColumnUndefined: Self = StObject.set(x, "showInColumn", js.undefined)
-    
-    inline def setSkipEmptyValues(value: Boolean): Self = StObject.set(x, "skipEmptyValues", value.asInstanceOf[js.Any])
-    
-    inline def setSkipEmptyValuesUndefined: Self = StObject.set(x, "skipEmptyValues", js.undefined)
-    
-    inline def setSummaryType(value: avg | count | custom | max | min | sum | String): Self = StObject.set(x, "summaryType", value.asInstanceOf[js.Any])
-    
-    inline def setSummaryTypeUndefined: Self = StObject.set(x, "summaryType", js.undefined)
-    
-    inline def setValueFormat(value: format): Self = StObject.set(x, "valueFormat", value.asInstanceOf[js.Any])
-    
-    inline def setValueFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "valueFormat", js.Any.fromFunction1(value))
-    
-    inline def setValueFormatUndefined: Self = StObject.set(x, "valueFormat", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

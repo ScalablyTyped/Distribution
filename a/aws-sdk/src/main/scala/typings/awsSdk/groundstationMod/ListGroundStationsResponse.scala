@@ -29,7 +29,7 @@ object ListGroundStationsResponse {
     
     inline def setGroundStationListUndefined: Self = StObject.set(x, "groundStationList", js.undefined)
     
-    inline def setGroundStationListVarargs(value: GroundStationData*): Self = StObject.set(x, "groundStationList", js.Array(value :_*))
+    inline def setGroundStationListVarargs(value: GroundStationData*): Self = StObject.set(x, "groundStationList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

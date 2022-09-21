@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CancelDomainTransferToAnotherAwsAccountRequest extends StObject {
   
   /**
-    * The name of the domain for which you want to cancel the transfer to another AWS account.
+    * The name of the domain for which you want to cancel the transfer to another Amazon Web Services account.
     */
   var DomainName: typings.awsSdk.route53domainsMod.DomainName
 }

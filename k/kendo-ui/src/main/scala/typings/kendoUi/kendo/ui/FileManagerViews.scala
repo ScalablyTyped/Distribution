@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FileManagerViews extends StObject {
   
-  var grid: js.UndefOr[js.Any] = js.undefined
+  var grid: js.UndefOr[Any] = js.undefined
   
-  var list: js.UndefOr[js.Any] = js.undefined
+  var list: js.UndefOr[Any] = js.undefined
   
-  var tree: js.UndefOr[js.Any] = js.undefined
+  var tree: js.UndefOr[Any] = js.undefined
 }
 object FileManagerViews {
   
@@ -21,15 +21,15 @@ object FileManagerViews {
   
   extension [Self <: FileManagerViews](x: Self) {
     
-    inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    inline def setList(value: js.Any): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: Any): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
-    inline def setTree(value: js.Any): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: Any): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
     inline def setTreeUndefined: Self = StObject.set(x, "tree", js.undefined)
   }

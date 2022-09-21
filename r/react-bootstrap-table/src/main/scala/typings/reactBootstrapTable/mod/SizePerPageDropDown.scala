@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap-table", "SizePerPageDropDown")
 @js.native
-class SizePerPageDropDown protected ()
-  extends Component[SizePerPageDropDownProps, js.Object, js.Any] {
+open class SizePerPageDropDown protected ()
+  extends Component[SizePerPageDropDownProps, js.Object, Any] {
   def this(props: SizePerPageDropDownProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SizePerPageDropDownProps, context: js.Any) = this()
+  def this(props: SizePerPageDropDownProps, context: Any) = this()
 }

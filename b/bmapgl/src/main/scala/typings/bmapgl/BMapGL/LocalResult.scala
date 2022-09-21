@@ -12,7 +12,7 @@ trait LocalResult extends StObject {
   
   var city: String
   
-  def getCityList(): js.Array[js.Any]
+  def getCityList(): js.Array[Any]
   
   def getCurrentNumPois(): Double
   
@@ -40,7 +40,7 @@ object LocalResult {
     bounds: Bounds,
     center: LocalResultPoi,
     city: String,
-    getCityList: () => js.Array[js.Any],
+    getCityList: () => js.Array[Any],
     getCurrentNumPois: () => Double,
     getNumPages: () => Double,
     getNumPois: () => Double,
@@ -64,7 +64,7 @@ object LocalResult {
     
     inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    inline def setGetCityList(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCityList", js.Any.fromFunction0(value))
+    inline def setGetCityList(value: () => js.Array[Any]): Self = StObject.set(x, "getCityList", js.Any.fromFunction0(value))
     
     inline def setGetCurrentNumPois(value: () => Double): Self = StObject.set(x, "getCurrentNumPois", js.Any.fromFunction0(value))
     
@@ -86,6 +86,6 @@ object LocalResult {
     
     inline def setSuggestions(value: js.Array[String]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
-    inline def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value*))
   }
 }

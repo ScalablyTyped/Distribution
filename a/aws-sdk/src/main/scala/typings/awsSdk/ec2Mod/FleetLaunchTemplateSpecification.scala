@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FleetLaunchTemplateSpecification extends StObject {
   
   /**
-    * The ID of the launch template. If you specify the template ID, you can't specify the template name.
+    * The ID of the launch template. You must specify the LaunchTemplateId or the LaunchTemplateName, but not both.
     */
   var LaunchTemplateId: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the launch template. If you specify the template name, you can't specify the template ID.
+    * The name of the launch template. You must specify the LaunchTemplateName or the LaunchTemplateId, but not both.
     */
   var LaunchTemplateName: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateName] = js.undefined
   

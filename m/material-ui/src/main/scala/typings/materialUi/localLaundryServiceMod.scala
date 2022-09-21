@@ -10,10 +10,10 @@ object localLaundryServiceMod {
   
   @JSImport("material-ui/svg-icons/maps/local-laundry-service", JSImport.Default)
   @js.native
-  class default () extends MapsLocalLaundryService
+  open class default () extends MapsLocalLaundryService
   
   @JSImport("material-ui/svg-icons/maps/local-laundry-service", "MapsLocalLaundryService")
   @js.native
-  class MapsLocalLaundryService ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalLaundryService ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

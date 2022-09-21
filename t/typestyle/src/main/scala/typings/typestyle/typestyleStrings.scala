@@ -15,8 +15,16 @@ object typestyleStrings {
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
+  sealed trait dark extends StObject
+  inline def dark: dark = "dark".asInstanceOf[dark]
+  
+  @js.native
   sealed trait landscape extends StObject
   inline def landscape: landscape = "landscape".asInstanceOf[landscape]
+  
+  @js.native
+  sealed trait light extends StObject
+  inline def light: light = "light".asInstanceOf[light]
   
   @js.native
   sealed trait portrait extends StObject

@@ -132,12 +132,6 @@ object ioniconsStrings {
   inline def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   
   @js.native
-  sealed trait parent
-    extends StObject
-       with ListenTargetOptions
-  inline def parent: parent = "parent".asInstanceOf[parent]
-  
-  @js.native
   sealed trait replace extends StObject
   inline def replace: replace = "replace".asInstanceOf[replace]
   

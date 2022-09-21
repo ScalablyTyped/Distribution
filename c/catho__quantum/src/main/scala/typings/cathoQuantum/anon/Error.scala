@@ -24,8 +24,8 @@ object Error {
     
     inline def setValidate(value: Validate): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
-    inline def setValidateFunction1(value: (/* params */ MaxLength) | (/* params */ MinLength) | (/* params */ Value) => String): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    inline def setValidateFunction1(value: (/* params */ `13`) | (/* params */ MaxLength) | (/* params */ MinLength) => String): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     
-    inline def setValidateFunction2(value: (/* params */ Value, /* cpf */ js.UndefOr[String]) => String): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+    inline def setValidateFunction2(value: (/* params */ `13`, /* cpf */ js.UndefOr[String]) => String): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
   }
 }

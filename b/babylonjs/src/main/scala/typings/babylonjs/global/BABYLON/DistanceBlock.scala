@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.DistanceBlock")
 @js.native
-class DistanceBlock protected ()
+open class DistanceBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.DistanceBlock {
   /**

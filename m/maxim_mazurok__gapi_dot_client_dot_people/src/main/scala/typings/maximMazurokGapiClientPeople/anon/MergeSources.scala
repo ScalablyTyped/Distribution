@@ -35,8 +35,8 @@ trait MergeSources extends StObject {
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Optional. A page token, received from a previous `ListDirectoryPeople` call. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to
-    * `ListDirectoryPeople` must match the call that provided the page token.
+    * Optional. A page token, received from a previous response `next_page_token`. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to
+    * `people.listDirectoryPeople` must match the first call that provided the page token.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
@@ -54,8 +54,8 @@ trait MergeSources extends StObject {
   var readMask: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. Whether the response should include `next_sync_token`, which can be used to get all changes since the last request. For subsequent sync requests use the `sync_token`
-    * param instead.
+    * Optional. Whether the response should return `next_sync_token`. It can be used to get incremental changes since the last request by setting it on the request `sync_token`. More
+    * details about sync behavior at `people.listDirectoryPeople`.
     */
   var requestSyncToken: js.UndefOr[Boolean] = js.undefined
   
@@ -63,8 +63,8 @@ trait MergeSources extends StObject {
   var sources: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
-    * Optional. A sync token, received from a previous `ListDirectoryPeople` call. Provide this to retrieve only the resources changed since the last request. When syncing, all other
-    * parameters provided to `ListDirectoryPeople` must match the call that provided the sync token.
+    * Optional. A sync token, received from a previous response `next_sync_token` Provide this to retrieve only the resources changed since the last request. When syncing, all other
+    * parameters provided to `people.listDirectoryPeople` must match the first call that provided the sync token. More details about sync behavior at `people.listDirectoryPeople`.
     */
   var syncToken: js.UndefOr[String] = js.undefined
   
@@ -111,7 +111,7 @@ object MergeSources {
     
     inline def setMergeSourcesUndefined: Self = StObject.set(x, "mergeSources", js.undefined)
     
-    inline def setMergeSourcesVarargs(value: String*): Self = StObject.set(x, "mergeSources", js.Array(value :_*))
+    inline def setMergeSourcesVarargs(value: String*): Self = StObject.set(x, "mergeSources", js.Array(value*))
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
@@ -145,7 +145,7 @@ object MergeSources {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setSyncToken(value: String): Self = StObject.set(x, "syncToken", value.asInstanceOf[js.Any])
     

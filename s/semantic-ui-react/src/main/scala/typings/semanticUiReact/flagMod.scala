@@ -8,6 +8,6 @@ object flagMod {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Flag", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.semanticUiReact.flagFlagMod.default
 }

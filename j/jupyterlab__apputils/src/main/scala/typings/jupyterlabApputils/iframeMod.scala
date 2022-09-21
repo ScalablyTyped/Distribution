@@ -15,12 +15,12 @@ object iframeMod {
   /**
     * Create a new IFrame widget.
     */
-  class IFrame () extends Widget {
+  open class IFrame () extends Widget {
     def this(options: IOptions) = this()
     
-    /* private */ var _referrerPolicy: js.Any = js.native
+    /* private */ var _referrerPolicy: Any = js.native
     
-    /* private */ var _sandbox: js.Any = js.native
+    /* private */ var _sandbox: Any = js.native
     
     /**
       * Referrer policy for the iframe.
@@ -90,7 +90,7 @@ object iframeMod {
         
         inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
         
-        inline def setSandboxVarargs(value: SandboxExceptions*): Self = StObject.set(x, "sandbox", js.Array(value :_*))
+        inline def setSandboxVarargs(value: SandboxExceptions*): Self = StObject.set(x, "sandbox", js.Array(value*))
       }
     }
     
@@ -139,6 +139,7 @@ object iframeMod {
       * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#sandbox
       */
     /* Rewritten from type alias, can be one of: 
+      - typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-downloads`
       - typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-forms`
       - typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-modals`
       - typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-orientation-lock`
@@ -154,6 +155,8 @@ object iframeMod {
     */
     trait SandboxExceptions extends StObject
     object SandboxExceptions {
+      
+      inline def `allow-downloads`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-downloads` = "allow-downloads".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-downloads`]
       
       inline def `allow-forms`: typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-forms` = "allow-forms".asInstanceOf[typings.jupyterlabApputils.jupyterlabApputilsStrings.`allow-forms`]
       

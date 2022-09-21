@@ -10,12 +10,12 @@ object ojdeferreddataproviderMod {
   
   @JSImport("@oracle/oraclejet/ojdeferreddataprovider", JSImport.Namespace)
   @js.native
-  class ^[K, D] protected ()
+  open class ^[K, D] protected ()
     extends StObject
        with DeferredDataProvider[K, D] {
     def this(
       dataProvider: js.Promise[DataProvider[K, D]],
-      capabilityFunc: js.Function1[/* capabilityName */ String, js.Any]
+      capabilityFunc: js.Function1[/* capabilityName */ String, Any]
     ) = this()
   }
   
@@ -24,8 +24,8 @@ object ojdeferreddataproviderMod {
     extends StObject
        with DataProvider[K, D] {
     
-    def addEventListener(eventType: String, listener: EventListener): js.Any = js.native
+    def addEventListener(eventType: String, listener: EventListener): Any = js.native
     
-    def removeEventListener(eventType: String, listener: EventListener): js.Any = js.native
+    def removeEventListener(eventType: String, listener: EventListener): Any = js.native
   }
 }

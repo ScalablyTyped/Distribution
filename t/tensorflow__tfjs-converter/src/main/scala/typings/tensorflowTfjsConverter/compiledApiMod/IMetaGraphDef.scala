@@ -41,7 +41,7 @@ object IMetaGraphDef {
     
     inline def setAssetFileDefUndefined: Self = StObject.set(x, "assetFileDef", js.undefined)
     
-    inline def setAssetFileDefVarargs(value: IAssetFileDef*): Self = StObject.set(x, "assetFileDef", js.Array(value :_*))
+    inline def setAssetFileDefVarargs(value: IAssetFileDef*): Self = StObject.set(x, "assetFileDef", js.Array(value*))
     
     inline def setCollectionDef(value: StringDictionary[ICollectionDef]): Self = StObject.set(x, "collectionDef", value.asInstanceOf[js.Any])
     

@@ -6,10 +6,7 @@ import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.xlarge
 import typings.grommet.grommetStrings.xsmall
-import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.FC
-import typings.react.mod.HTMLAttributes
-import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +15,20 @@ object avatarMod {
   
   @JSImport("grommet/components/Avatar", "Avatar")
   @js.native
-  val Avatar: FC[
-    BoxProps & AvatarProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.native
+  val Avatar: FC[AvatarExtendedProps] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onClick'> ]: react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>[P]} */ trait AvatarExtendedProps
+    extends StObject
+       with BoxProps
+       with AvatarProps
+  object AvatarExtendedProps {
+    
+    inline def apply(): AvatarExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AvatarExtendedProps]
+    }
+  }
   
   trait AvatarProps extends StObject {
     

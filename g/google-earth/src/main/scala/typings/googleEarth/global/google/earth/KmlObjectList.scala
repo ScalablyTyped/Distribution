@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.KmlObjectList")
 @js.native
-class KmlObjectList[T /* <: typings.googleEarth.google.earth.KmlObject */] ()
+open class KmlObjectList[T /* <: typings.googleEarth.google.earth.KmlObject */] ()
   extends StObject
      with typings.googleEarth.google.earth.KmlObjectList[T] {
   

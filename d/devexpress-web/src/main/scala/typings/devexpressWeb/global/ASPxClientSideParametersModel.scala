@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxClientSideParametersModel")
 @js.native
-class ASPxClientSideParametersModel ()
+open class ASPxClientSideParametersModel ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSideParametersModel {
   

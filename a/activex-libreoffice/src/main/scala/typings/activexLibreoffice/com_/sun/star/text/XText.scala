@@ -43,7 +43,7 @@ object XText {
     insertControlCharacter: (XTextRange, Double, Boolean) => Unit,
     insertString: (XTextRange, String, Boolean) => Unit,
     insertTextContent: (XTextRange, XTextContent, Boolean) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeTextContent: XTextContent => Unit,
     setString: String => Unit

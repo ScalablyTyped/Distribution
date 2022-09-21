@@ -26,7 +26,7 @@ trait SeqMapTask extends StObject {
   var userFn: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.SeqMapTask & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.SeqMapTask & TopLevel[Any]
   ] = js.undefined
 }
 object SeqMapTask {
@@ -42,7 +42,7 @@ object SeqMapTask {
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    inline def setInputsVarargs(value: SideInputInfo*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: SideInputInfo*): Self = StObject.set(x, "inputs", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -52,7 +52,7 @@ object SeqMapTask {
     
     inline def setOutputInfosUndefined: Self = StObject.set(x, "outputInfos", js.undefined)
     
-    inline def setOutputInfosVarargs(value: SeqMapTaskOutputInfo*): Self = StObject.set(x, "outputInfos", js.Array(value :_*))
+    inline def setOutputInfosVarargs(value: SeqMapTaskOutputInfo*): Self = StObject.set(x, "outputInfos", js.Array(value*))
     
     inline def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
@@ -65,7 +65,7 @@ object SeqMapTask {
     inline def setUserFn(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.SeqMapTask & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.SeqMapTask & TopLevel[Any]
     ): Self = StObject.set(x, "userFn", value.asInstanceOf[js.Any])
     
     inline def setUserFnUndefined: Self = StObject.set(x, "userFn", js.undefined)

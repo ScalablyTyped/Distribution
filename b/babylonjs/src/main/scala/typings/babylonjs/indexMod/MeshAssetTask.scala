@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "MeshAssetTask")
 @js.native
-class MeshAssetTask protected ()
+open class MeshAssetTask protected ()
   extends typings.babylonjs.miscIndexMod.MeshAssetTask {
   /**
     * Creates a new MeshAssetTask
@@ -24,7 +24,7 @@ class MeshAssetTask protected ()
     /**
     * Defines the list of mesh's names you want to load
     */
-  meshesNames: js.Any,
+  meshesNames: Any,
     /**
     * Defines the root url to use as a base to load your meshes and associated resources
     */
@@ -42,7 +42,7 @@ class MeshAssetTask protected ()
     /**
     * Defines the list of mesh's names you want to load
     */
-  meshesNames: js.Any,
+  meshesNames: Any,
     /**
     * Defines the root url to use as a base to load your meshes and associated resources
     */

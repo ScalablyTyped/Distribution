@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("braintree", "Test")
 @js.native
-class Test () extends StObject {
+open class Test () extends StObject {
   
   var CreditCardDefaults: IssuingBank = js.native
   

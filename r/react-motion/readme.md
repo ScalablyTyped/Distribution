@@ -10,9 +10,9 @@ A spring that solves your animation problems.
 | Full name          | react-motion |
 | Keywords           | react, component, react-component, transitiongroup, spring, tween, motion, animation, transition, ui |
 | # releases         | 0 |
-| # dependents       | 652 |
-| # downloads        | 26703334 |
-| # stars            | 43 |
+| # dependents       | 0.0 |
+| # downloads        | 2905444.3333333335 |
+| # stars            | 20965.0 |
 
 ## Links
 - [Homepage](https://github.com/chenglou/react-motion#readme)

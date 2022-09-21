@@ -29,7 +29,7 @@ object ListDataflowEndpointGroupsResponse {
     
     inline def setDataflowEndpointGroupListUndefined: Self = StObject.set(x, "dataflowEndpointGroupList", js.undefined)
     
-    inline def setDataflowEndpointGroupListVarargs(value: DataflowEndpointListItem*): Self = StObject.set(x, "dataflowEndpointGroupList", js.Array(value :_*))
+    inline def setDataflowEndpointGroupListVarargs(value: DataflowEndpointListItem*): Self = StObject.set(x, "dataflowEndpointGroupList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

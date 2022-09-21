@@ -20,23 +20,20 @@ object mod {
   @js.native
   trait LogglyInstance extends StObject {
     
-    def log(message: js.Any): this.type = js.native
-    def log(message: js.Any, callback: js.Function2[/* err */ js.Any, /* results */ js.Any, Unit]): this.type = js.native
-    def log(message: js.Any, tags: js.Array[String]): this.type = js.native
+    def log(message: Any): this.type = js.native
+    def log(message: Any, callback: js.Function2[/* err */ Any, /* results */ Any, Unit]): this.type = js.native
+    def log(message: Any, tags: js.Array[String]): this.type = js.native
     def log(
-      message: js.Any,
+      message: Any,
       tags: js.Array[String],
-      callback: js.Function2[/* err */ js.Any, /* results */ js.Any, Unit]
+      callback: js.Function2[/* err */ Any, /* results */ Any, Unit]
     ): this.type = js.native
-    def log(message: js.Any, tags: Unit, callback: js.Function2[/* err */ js.Any, /* results */ js.Any, Unit]): this.type = js.native
+    def log(message: Any, tags: Unit, callback: js.Function2[/* err */ Any, /* results */ Any, Unit]): this.type = js.native
     
     def search(options: SearchOptions): Search = js.native
-    def search(
-      options: SearchOptions,
-      callback: js.Function2[/* err */ js.Any, /* results */ SearchResults, Unit]
-    ): Search = js.native
+    def search(options: SearchOptions, callback: js.Function2[/* err */ Any, /* results */ SearchResults, Unit]): Search = js.native
     def search(query: String): Search = js.native
-    def search(query: String, callback: js.Function2[/* err */ js.Any, /* results */ SearchResults, Unit]): Search = js.native
+    def search(query: String, callback: js.Function2[/* err */ Any, /* results */ SearchResults, Unit]): Search = js.native
   }
   
   trait LogglyOptions extends StObject {
@@ -80,7 +77,7 @@ object mod {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
@@ -88,18 +85,18 @@ object mod {
   
   trait Search extends StObject {
     
-    def run(callback: js.Function2[/* err */ js.Any, /* results */ SearchResults, Unit]): this.type
+    def run(callback: js.Function2[/* err */ Any, /* results */ SearchResults, Unit]): this.type
   }
   object Search {
     
-    inline def apply(run: js.Function2[/* err */ js.Any, /* results */ SearchResults, Unit] => Search): Search = {
+    inline def apply(run: js.Function2[/* err */ Any, /* results */ SearchResults, Unit] => Search): Search = {
       val __obj = js.Dynamic.literal(run = js.Any.fromFunction1(run))
       __obj.asInstanceOf[Search]
     }
     
     extension [Self <: Search](x: Self) {
       
-      inline def setRun(value: js.Function2[/* err */ js.Any, /* results */ SearchResults, Unit] => Search): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+      inline def setRun(value: js.Function2[/* err */ Any, /* results */ SearchResults, Unit] => Search): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
     }
   }
   
@@ -180,7 +177,7 @@ object mod {
       
       inline def setEvents(value: js.Array[SearchResultsEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      inline def setEventsVarargs(value: SearchResultsEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: SearchResultsEvent*): Self = StObject.set(x, "events", js.Array(value*))
       
       inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
@@ -190,7 +187,7 @@ object mod {
   
   trait SearchResultsEvent extends StObject {
     
-    var event: js.Any
+    var event: Any
     
     var id: String
     
@@ -207,7 +204,7 @@ object mod {
   object SearchResultsEvent {
     
     inline def apply(
-      event: js.Any,
+      event: Any,
       id: String,
       logmsg: String,
       logtypes: js.Array[String],
@@ -221,7 +218,7 @@ object mod {
     
     extension [Self <: SearchResultsEvent](x: Self) {
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -229,13 +226,13 @@ object mod {
       
       inline def setLogtypes(value: js.Array[String]): Self = StObject.set(x, "logtypes", value.asInstanceOf[js.Any])
       
-      inline def setLogtypesVarargs(value: String*): Self = StObject.set(x, "logtypes", js.Array(value :_*))
+      inline def setLogtypesVarargs(value: String*): Self = StObject.set(x, "logtypes", js.Array(value*))
       
       inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
       inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }

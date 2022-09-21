@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateResolverEndpointRequest extends StObject {
   
   /**
-    * A unique string that identifies the request and that allows failed requests to be retried without the risk of executing the operation twice. CreatorRequestId can be any unique string, for example, a date/time stamp. 
+    * A unique string that identifies the request and that allows failed requests to be retried without the risk of running the operation twice. CreatorRequestId can be any unique string, for example, a date/time stamp. 
     */
   var CreatorRequestId: typings.awsSdk.route53resolverMod.CreatorRequestId
   
@@ -56,7 +56,7 @@ object CreateResolverEndpointRequest {
     
     inline def setIpAddresses(value: IpAddressesRequest): Self = StObject.set(x, "IpAddresses", value.asInstanceOf[js.Any])
     
-    inline def setIpAddressesVarargs(value: IpAddressRequest*): Self = StObject.set(x, "IpAddresses", js.Array(value :_*))
+    inline def setIpAddressesVarargs(value: IpAddressRequest*): Self = StObject.set(x, "IpAddresses", js.Array(value*))
     
     inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -64,12 +64,12 @@ object CreateResolverEndpointRequest {
     
     inline def setSecurityGroupIds(value: SecurityGroupIds): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
-    inline def setSecurityGroupIdsVarargs(value: ResourceId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: ResourceId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

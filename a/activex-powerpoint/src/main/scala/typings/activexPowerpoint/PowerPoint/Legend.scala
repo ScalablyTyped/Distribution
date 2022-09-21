@@ -9,15 +9,15 @@ trait Legend extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
   
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: Any = js.native
   
   val Border: ChartBorder = js.native
   
-  def Clear(): js.Any = js.native
+  def Clear(): Any = js.native
   
   val Creator: Double = js.native
   
-  def Delete(): js.Any = js.native
+  def Delete(): Any = js.native
   
   val Fill: ChartFillFormat = js.native
   
@@ -33,19 +33,19 @@ trait Legend extends StObject {
   
   var Left: Double = js.native
   
-  def LegendEntries(): js.Any = js.native
-  def LegendEntries(Index: js.Any): js.Any = js.native
+  def LegendEntries(): Any = js.native
+  def LegendEntries(Index: Any): Any = js.native
   
   val Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Position: XlLegendPosition = js.native
   
   /* private */ @JSName("PowerPoint.Legend_typekey")
   var PowerPointDotLegend_typekey: Legend = js.native
   
-  def Select(): js.Any = js.native
+  def Select(): Any = js.native
   
   var Shadow: Boolean = js.native
   

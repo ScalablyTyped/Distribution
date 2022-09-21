@@ -13,7 +13,7 @@ object resourceCustomAttributesMod {
   
   @JSImport("gitlab/dist/types/core/templates/ResourceCustomAttributes", "ResourceCustomAttributes")
   @js.native
-  class ResourceCustomAttributes protected () extends BaseService {
+  open class ResourceCustomAttributes protected () extends BaseService {
     def this(resourceType: String, options: BaseServiceOptions) = this()
     
     def all(resourceId: String): js.Promise[GetResponse] = js.native

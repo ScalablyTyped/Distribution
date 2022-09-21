@@ -8,5 +8,5 @@ object decreaseStreamRetentionPeriodInputMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/DecreaseStreamRetentionPeriodInput", "DecreaseStreamRetentionPeriodInput")
   @js.native
-  val DecreaseStreamRetentionPeriodInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DecreaseStreamRetentionPeriodInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

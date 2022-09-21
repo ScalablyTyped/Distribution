@@ -1,6 +1,7 @@
 package typings.hapiHapi.mod
 
 import typings.hapiHapi.anon.Artifacts
+import typings.hapiShot.mod.PartialURL
 import typings.hapiShot.mod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,7 +33,7 @@ trait ServerInjectOptions
 }
 object ServerInjectOptions {
   
-  inline def apply(url: String): ServerInjectOptions = {
+  inline def apply(url: String | PartialURL): ServerInjectOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerInjectOptions]
   }

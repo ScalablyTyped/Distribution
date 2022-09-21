@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Items extends StObject {
   
-  def Add(): js.Any = js.native
-  def Add(Type: js.Any): js.Any = js.native
+  def Add(): Any = js.native
+  def Add(Type: Any): Any = js.native
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
@@ -16,28 +16,28 @@ trait Items extends StObject {
   
   val Count: Double = js.native
   
-  def Find(Filter: String): js.Any = js.native
+  def Find(Filter: String): Any = js.native
   
-  def FindNext(): js.Any = js.native
+  def FindNext(): Any = js.native
   
-  def GetFirst(): js.Any = js.native
+  def GetFirst(): Any = js.native
   
-  def GetLast(): js.Any = js.native
+  def GetLast(): Any = js.native
   
-  def GetNext(): js.Any = js.native
+  def GetNext(): Any = js.native
   
-  def GetPrevious(): js.Any = js.native
+  def GetPrevious(): Any = js.native
   
   var IncludeRecurrences: Boolean = js.native
   
-  def Item(Index: js.Any): js.Any = js.native
+  def Item(Index: Any): Any = js.native
   
   /* private */ @JSName("Outlook.Items_typekey")
   var OutlookDotItems_typekey: Items = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  val RawTable: js.Any = js.native
+  val RawTable: Any = js.native
   
   def Remove(Index: Double): Unit = js.native
   
@@ -50,5 +50,5 @@ trait Items extends StObject {
   def SetColumns(Columns: String): Unit = js.native
   
   def Sort(Property: String): Unit = js.native
-  def Sort(Property: String, Descending: js.Any): Unit = js.native
+  def Sort(Property: String, Descending: Any): Unit = js.native
 }

@@ -4,11 +4,8 @@ import typings.bser.bserBooleans.`false`
 import typings.bser.bserBooleans.`true`
 import typings.bser.bserNumbers.`0`
 import typings.bser.bserNumbers.`1`
-import typings.node.Buffer
-import typings.node.NodeJS.TypedArray
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
-import typings.std.ArrayBuffer
-import typings.std.DataView
 import typings.std.SharedArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +19,7 @@ object mod {
   
   @JSImport("bser", "Accumulator")
   @js.native
-  class Accumulator () extends StObject {
+  open class Accumulator () extends StObject {
     def this(initsize: Double) = this()
     
     def append(buf: InputWrapper): Unit = js.native
@@ -65,7 +62,7 @@ object mod {
   
   @JSImport("bser", "BunserBuf")
   @js.native
-  class BunserBuf () extends EventEmitter {
+  open class BunserBuf () extends EventEmitter {
     
     def append(buf: InputWrapper): js.UndefOr[AnyWrapper | js.Array[AnyWrapper]] = js.native
     @JSName("append")
@@ -108,13 +105,13 @@ object mod {
     var state: `0` | `1` = js.native
   }
   
-  inline def dumpToBuffer(`val`: js.Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("dumpToBuffer")(`val`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def dumpToBuffer(`val`: Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("dumpToBuffer")(`val`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   inline def loadFromBuffer(input: InputWrapper): AnyWrapper | js.Array[AnyWrapper] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromBuffer")(input.asInstanceOf[js.Any]).asInstanceOf[AnyWrapper | js.Array[AnyWrapper]]
   
   type AnyWrapper = Boolean | IntWrapper | Null | String | js.Object
   
-  type InputWrapper = Buffer | String | TypedArray | DataView | ArrayBuffer | SharedArrayBuffer
+  type InputWrapper = Buffer | String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.DataView | js.typedarray.ArrayBuffer | SharedArrayBuffer
   
   type IntWrapper = Double | typings.nodeInt64.mod.^
 }

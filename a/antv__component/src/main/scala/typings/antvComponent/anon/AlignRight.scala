@@ -8,14 +8,16 @@ trait AlignRight extends StObject {
   
   var alignRight: Boolean
   
-  var formatter: js.Any
+  var formatter: Any
   
-  var style: FillFontSize
+  var spacing: Double
+  
+  var style: LineHeight
 }
 object AlignRight {
   
-  inline def apply(alignRight: Boolean, formatter: js.Any, style: FillFontSize): AlignRight = {
-    val __obj = js.Dynamic.literal(alignRight = alignRight.asInstanceOf[js.Any], formatter = formatter.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+  inline def apply(alignRight: Boolean, formatter: Any, spacing: Double, style: LineHeight): AlignRight = {
+    val __obj = js.Dynamic.literal(alignRight = alignRight.asInstanceOf[js.Any], formatter = formatter.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlignRight]
   }
   
@@ -23,8 +25,10 @@ object AlignRight {
     
     inline def setAlignRight(value: Boolean): Self = StObject.set(x, "alignRight", value.asInstanceOf[js.Any])
     
-    inline def setFormatter(value: js.Any): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    inline def setFormatter(value: Any): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
-    inline def setStyle(value: FillFontSize): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    
+    inline def setStyle(value: LineHeight): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

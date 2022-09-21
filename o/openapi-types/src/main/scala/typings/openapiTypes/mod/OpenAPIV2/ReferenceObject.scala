@@ -1,14 +1,15 @@
 package typings.openapiTypes.mod.OpenAPIV2
 
+import typings.openapiTypes.mod.OpenAPI._Parameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ReferenceObject
   extends StObject
-     with typings.openapiTypes.mod.OpenAPI.Parameter
      with Response
-     with Schema {
+     with Schema
+     with _Parameter {
   
   @JSName("$ref")
   var $ref: String

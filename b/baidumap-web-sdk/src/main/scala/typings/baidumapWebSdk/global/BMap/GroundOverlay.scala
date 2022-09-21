@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.GroundOverlay")
 @js.native
-class GroundOverlay protected ()
+open class GroundOverlay protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.GroundOverlay {
   def this(bounds: typings.baidumapWebSdk.BMap.Bounds) = this()

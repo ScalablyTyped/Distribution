@@ -14,7 +14,7 @@ trait CatalogImportStatus extends StObject {
   /**
     * The time that the migration was started.
     */
-  var ImportTime: js.UndefOr[Timestamp] = js.undefined
+  var ImportTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the person who initiated the migration.
@@ -34,7 +34,7 @@ object CatalogImportStatus {
     
     inline def setImportCompletedUndefined: Self = StObject.set(x, "ImportCompleted", js.undefined)
     
-    inline def setImportTime(value: Timestamp): Self = StObject.set(x, "ImportTime", value.asInstanceOf[js.Any])
+    inline def setImportTime(value: js.Date): Self = StObject.set(x, "ImportTime", value.asInstanceOf[js.Any])
     
     inline def setImportTimeUndefined: Self = StObject.set(x, "ImportTime", js.undefined)
     

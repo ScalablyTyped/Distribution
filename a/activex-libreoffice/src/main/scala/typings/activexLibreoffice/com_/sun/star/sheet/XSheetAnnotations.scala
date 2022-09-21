@@ -39,12 +39,12 @@ object XSheetAnnotations {
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     hasElements: () => Boolean,
     insertNew: (CellAddress, String) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByIndex: Double => Unit
   ): XSheetAnnotations = {

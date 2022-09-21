@@ -10,18 +10,18 @@ object mod {
   
   @JSImport("react-native-actionsheet", JSImport.Default)
   @js.native
-  class default () extends ActionSheet
+  open class default () extends ActionSheet
   
   @JSImport("react-native-actionsheet", "ActionSheetCustom")
   @js.native
-  class ActionSheetCustom protected ()
-    extends Component[ActionSheetCustomProps, js.Object, js.Any] {
+  open class ActionSheetCustom protected ()
+    extends Component[ActionSheetCustomProps, js.Object, Any] {
     def this(props: ActionSheetCustomProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ActionSheetCustomProps, context: js.Any) = this()
+    def this(props: ActionSheetCustomProps, context: Any) = this()
     
     def hide(): Unit = js.native
     def hide(index: Double): Unit = js.native
@@ -31,7 +31,7 @@ object mod {
   
   @js.native
   trait ActionSheet
-    extends Component[ActionSheetProps, js.Object, js.Any] {
+    extends Component[ActionSheetProps, js.Object, Any] {
     
     def show(): Unit = js.native
   }
@@ -85,7 +85,7 @@ object mod {
       
       inline def setOptions(value: js.Array[ReactNode]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: ReactNode*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: ReactNode*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setStyles(value: js.Object): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
@@ -142,7 +142,7 @@ object mod {
       
       inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
       

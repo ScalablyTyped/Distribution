@@ -1,69 +1,67 @@
 package typings.cssTree.mod
 
+import typings.cssTree.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def clone_(node: typings.cssTree.mod.CssNode): typings.cssTree.mod.CssNode = typings.cssTree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("clone")(node.asInstanceOf[js.Any]).asInstanceOf[typings.cssTree.mod.CssNode]
+inline def clone_(node: CssNode): CssNode = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(node.asInstanceOf[js.Any]).asInstanceOf[CssNode]
 
-inline def definitionSyntax: typings.cssTree.mod.DefinitionSyntax_ = typings.cssTree.mod.^.asInstanceOf[js.Dynamic].selectDynamic("definitionSyntax").asInstanceOf[typings.cssTree.mod.DefinitionSyntax_]
+inline def definitionSyntax: DefinitionSyntax_ = ^.asInstanceOf[js.Dynamic].selectDynamic("definitionSyntax").asInstanceOf[DefinitionSyntax_]
 
-inline def find(ast: typings.cssTree.mod.CssNode, fn: typings.cssTree.mod.FindFn): typings.cssTree.mod.CssNode = (typings.cssTree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("find")(ast.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.cssTree.mod.CssNode]
+inline def find(ast: CssNode, fn: FindFn): CssNode = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(ast.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[CssNode]
 
-inline def findAll(ast: typings.cssTree.mod.CssNode, fn: typings.cssTree.mod.FindFn): js.Array[typings.cssTree.mod.CssNode] = (typings.cssTree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findAll")(ast.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.cssTree.mod.CssNode]]
+inline def findAll(ast: CssNode, fn: FindFn): js.Array[CssNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAll")(ast.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[CssNode]]
 
-inline def findLast(ast: typings.cssTree.mod.CssNode, fn: typings.cssTree.mod.FindFn): typings.cssTree.mod.CssNode = (typings.cssTree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("findLast")(ast.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.cssTree.mod.CssNode]
+inline def findLast(ast: CssNode, fn: FindFn): CssNode = (^.asInstanceOf[js.Dynamic].applyDynamic("findLast")(ast.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[CssNode]
 
-inline def fromPlainObject(node: typings.cssTree.mod.CssNodePlain): typings.cssTree.mod.CssNode = typings.cssTree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("fromPlainObject")(node.asInstanceOf[js.Any]).asInstanceOf[typings.cssTree.mod.CssNode]
+inline def fromPlainObject(node: CssNodePlain): CssNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPlainObject")(node.asInstanceOf[js.Any]).asInstanceOf[CssNode]
 
-inline def generate(ast: typings.cssTree.mod.CssNode): java.lang.String = typings.cssTree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def generate(ast: typings.cssTree.mod.CssNode, options: typings.cssTree.mod.GenerateOptions): java.lang.String = (typings.cssTree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def generate(ast: CssNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def generate(ast: CssNode, options: GenerateOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(ast.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def keyword(value: java.lang.String): typings.cssTree.mod.Keyword_ = typings.cssTree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("keyword")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cssTree.mod.Keyword_]
+inline def keyword(value: String): Keyword_ = ^.asInstanceOf[js.Dynamic].applyDynamic("keyword")(value.asInstanceOf[js.Any]).asInstanceOf[Keyword_]
 
-inline def parse(text: java.lang.String): typings.cssTree.mod.CssNode = typings.cssTree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[typings.cssTree.mod.CssNode]
-inline def parse(text: java.lang.String, options: typings.cssTree.mod.ParseOptions): typings.cssTree.mod.CssNode = (typings.cssTree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.cssTree.mod.CssNode]
+inline def parse(text: String): CssNode = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[CssNode]
+inline def parse(text: String, options: ParseOptions): CssNode = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CssNode]
 
-inline def property(value: java.lang.String): typings.cssTree.mod.Property_ = typings.cssTree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("property")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cssTree.mod.Property_]
+inline def property(value: String): Property_ = ^.asInstanceOf[js.Dynamic].applyDynamic("property")(value.asInstanceOf[js.Any]).asInstanceOf[Property_]
 
-inline def toPlainObject(node: typings.cssTree.mod.CssNode): typings.cssTree.mod.CssNodePlain = typings.cssTree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("toPlainObject")(node.asInstanceOf[js.Any]).asInstanceOf[typings.cssTree.mod.CssNodePlain]
+inline def toPlainObject(node: CssNode): CssNodePlain = ^.asInstanceOf[js.Dynamic].applyDynamic("toPlainObject")(node.asInstanceOf[js.Any]).asInstanceOf[CssNodePlain]
 
-inline def walk(
-  ast: typings.cssTree.mod.CssNode,
-  options: typings.cssTree.mod.EnterOrLeaveFn[typings.cssTree.mod.CssNode]
-): scala.Unit = (typings.cssTree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("walk")(ast.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def walk(ast: typings.cssTree.mod.CssNode, options: typings.cssTree.mod.WalkOptions): scala.Unit = (typings.cssTree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("walk")(ast.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def walk(ast: CssNode, options: EnterOrLeaveFn[CssNode]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(ast.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def walk(ast: CssNode, options: WalkOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(ast.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-type DSWalkEnterOrLeaveFn = js.Function1[/* node */ typings.cssTree.mod.DSNode, scala.Unit]
+type DSWalkEnterOrLeaveFn = js.Function1[/* node */ DSNode, Unit]
 
 type EnterOrLeaveFn[NodeType] = js.ThisFunction3[
-/* this */ typings.cssTree.mod.WalkContext, 
+/* this */ WalkContext, 
 /* node */ NodeType, 
-/* item */ typings.cssTree.mod.ListItem[typings.cssTree.mod.CssNode], 
-/* list */ typings.cssTree.mod.List[typings.cssTree.mod.CssNode], 
-scala.Unit]
+/* item */ ListItem[CssNode], 
+/* list */ List[CssNode], 
+Unit]
 
 type FilterFn[TData, TResult /* <: TData */, TContext] = js.ThisFunction3[
 /* this */ TContext, 
 /* item */ TData, 
-/* node */ typings.cssTree.mod.ListItem[TData], 
-/* list */ typings.cssTree.mod.List[TData], 
-/* is TResult */ scala.Boolean]
+/* node */ ListItem[TData], 
+/* list */ List[TData], 
+/* is TResult */ Boolean]
 
 type FindFn = js.ThisFunction3[
-/* this */ typings.cssTree.mod.WalkContext, 
-/* node */ typings.cssTree.mod.CssNode, 
-/* item */ typings.cssTree.mod.ListItem[typings.cssTree.mod.CssNode], 
-/* list */ typings.cssTree.mod.List[typings.cssTree.mod.CssNode], 
-scala.Boolean]
+/* this */ WalkContext, 
+/* node */ CssNode, 
+/* item */ ListItem[CssNode], 
+/* list */ List[CssNode], 
+Boolean]
 
 type IteratorFn[TData, TResult, TContext] = js.ThisFunction3[
 /* this */ TContext, 
 /* item */ TData, 
-/* node */ typings.cssTree.mod.ListItem[TData], 
-/* list */ typings.cssTree.mod.List[TData], 
+/* node */ ListItem[TData], 
+/* list */ List[TData], 
 TResult]
 
-type WalkOptions = (typings.cssTree.mod.WalkOptionsVisit[
-typings.cssTree.mod.AnPlusB | typings.cssTree.mod.Atrule | typings.cssTree.mod.AtrulePrelude | typings.cssTree.mod.AttributeSelector | typings.cssTree.mod.Block | typings.cssTree.mod.Brackets | typings.cssTree.mod.CDC | typings.cssTree.mod.CDO | typings.cssTree.mod.ClassSelector | typings.cssTree.mod.Combinator | typings.cssTree.mod.Comment | typings.cssTree.mod.Declaration | typings.cssTree.mod.DeclarationList | typings.cssTree.mod.Dimension | typings.cssTree.mod.FunctionNode | typings.cssTree.mod.HexColor | typings.cssTree.mod.IdSelector | typings.cssTree.mod.Identifier | typings.cssTree.mod.MediaFeature | typings.cssTree.mod.MediaQuery | typings.cssTree.mod.MediaQueryList | typings.cssTree.mod.Nth | typings.cssTree.mod.NumberNode | typings.cssTree.mod.Operator | typings.cssTree.mod.Parentheses | typings.cssTree.mod.Percentage | typings.cssTree.mod.PseudoClassSelector | typings.cssTree.mod.PseudoElementSelector | typings.cssTree.mod.Ratio | typings.cssTree.mod.Raw | typings.cssTree.mod.Rule | typings.cssTree.mod.Selector | typings.cssTree.mod.SelectorList | typings.cssTree.mod.StringNode | typings.cssTree.mod.StyleSheet | typings.cssTree.mod.TypeSelector | typings.cssTree.mod.UnicodeRange | typings.cssTree.mod.Url | typings.cssTree.mod.Value | typings.cssTree.mod.WhiteSpace]) | typings.cssTree.mod.WalkOptionsNoVisit
+type WalkOptions = (WalkOptionsVisit[
+AnPlusB | Atrule | AtrulePrelude | AttributeSelector | Block | Brackets | CDC | CDO | ClassSelector | Combinator | Comment | Declaration | DeclarationList | Dimension | FunctionNode | Hash | IdSelector | Identifier | MediaFeature | MediaQuery | MediaQueryList | Nth | NumberNode | Operator | Parentheses | Percentage | PseudoClassSelector | PseudoElementSelector | Ratio | Raw | Rule | Selector | SelectorList | StringNode | StyleSheet | TypeSelector | UnicodeRange | Url | Value | WhiteSpace]) | WalkOptionsNoVisit

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ChangeContentType")
 @js.native
-class ChangeContentType ()
+open class ChangeContentType ()
   extends StObject
      with typings.sharepoint.SP.ChangeContentType

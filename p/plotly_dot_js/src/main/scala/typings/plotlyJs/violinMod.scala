@@ -1,7 +1,7 @@
 package typings.plotlyJs
 
+import typings.plotlyJs.anon.PartialBoxPlotMarkerColor
 import typings.plotlyJs.anon.PartialcolorColorwidthnumColor
-import typings.plotlyJs.anon.PartialoutliercolorColors
 import typings.plotlyJs.anon.Partialvisiblebooleancolo
 import typings.plotlyJs.anon.Partialvisiblebooleanwidt
 import typings.plotlyJs.mod.Color
@@ -52,7 +52,7 @@ object violinMod {
     
     var line: PartialcolorColorwidthnumColor
     
-    var marker: PartialoutliercolorColors
+    var marker: PartialBoxPlotMarkerColor
     
     var meanline: Partialvisiblebooleancolo
     
@@ -77,7 +77,7 @@ object violinMod {
     
     var side: both | positive | negative
     
-    var span: js.Array[js.Any]
+    var span: js.Array[Any]
     
     var spanmode: soft | hard | manual
     
@@ -109,7 +109,7 @@ object violinMod {
       hovertext: String | js.Array[String],
       jitter: Double,
       line: PartialcolorColorwidthnumColor,
-      marker: PartialoutliercolorColors,
+      marker: PartialBoxPlotMarkerColor,
       meanline: Partialvisiblebooleancolo,
       name: String,
       offsetgroup: String,
@@ -121,7 +121,7 @@ object violinMod {
       scalemode: width | count,
       selected: ScatterSelectedMarker,
       side: both | positive | negative,
-      span: js.Array[js.Any],
+      span: js.Array[Any],
       spanmode: soft | hard | manual,
       text: String | js.Array[String],
       unselected: ScatterSelectedMarker,
@@ -146,23 +146,23 @@ object violinMod {
       
       inline def setFillcolor(value: Color): Self = StObject.set(x, "fillcolor", value.asInstanceOf[js.Any])
       
-      inline def setFillcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "fillcolor", js.Array(value :_*))
+      inline def setFillcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "fillcolor", js.Array(value*))
       
       inline def setHoveron(value: violins | points | kde | all | String): Self = StObject.set(x, "hoveron", value.asInstanceOf[js.Any])
       
       inline def setHovertemplate(value: String | js.Array[String]): Self = StObject.set(x, "hovertemplate", value.asInstanceOf[js.Any])
       
-      inline def setHovertemplateVarargs(value: String*): Self = StObject.set(x, "hovertemplate", js.Array(value :_*))
+      inline def setHovertemplateVarargs(value: String*): Self = StObject.set(x, "hovertemplate", js.Array(value*))
       
       inline def setHovertext(value: String | js.Array[String]): Self = StObject.set(x, "hovertext", value.asInstanceOf[js.Any])
       
-      inline def setHovertextVarargs(value: String*): Self = StObject.set(x, "hovertext", js.Array(value :_*))
+      inline def setHovertextVarargs(value: String*): Self = StObject.set(x, "hovertext", js.Array(value*))
       
       inline def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
       
       inline def setLine(value: PartialcolorColorwidthnumColor): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      inline def setMarker(value: PartialoutliercolorColors): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: PartialBoxPlotMarkerColor): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       
       inline def setMeanline(value: Partialvisiblebooleancolo): Self = StObject.set(x, "meanline", value.asInstanceOf[js.Any])
       
@@ -186,15 +186,15 @@ object violinMod {
       
       inline def setSide(value: both | positive | negative): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
       
-      inline def setSpan(value: js.Array[js.Any]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      inline def setSpan(value: js.Array[Any]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
-      inline def setSpanVarargs(value: js.Any*): Self = StObject.set(x, "span", js.Array(value :_*))
+      inline def setSpanVarargs(value: Any*): Self = StObject.set(x, "span", js.Array(value*))
       
       inline def setSpanmode(value: soft | hard | manual): Self = StObject.set(x, "spanmode", value.asInstanceOf[js.Any])
       
       inline def setText(value: String | js.Array[String]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+      inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
       
       inline def setType(value: violin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -208,7 +208,7 @@ object violinMod {
         value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/box.BoxPlotData['x0'] */ js.Any
       ): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
       
-      inline def setXVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "x", js.Array(value :_*))
+      inline def setXVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "x", js.Array(value*))
       
       inline def setY(value: (js.Array[js.Array[Datum] | Datum]) | TypedArray): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
@@ -216,7 +216,7 @@ object violinMod {
         value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/box.BoxPlotData['y0'] */ js.Any
       ): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
       
-      inline def setYVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "y", js.Array(value :_*))
+      inline def setYVarargs(value: (js.Array[Datum] | Datum)*): Self = StObject.set(x, "y", js.Array(value*))
     }
   }
 }

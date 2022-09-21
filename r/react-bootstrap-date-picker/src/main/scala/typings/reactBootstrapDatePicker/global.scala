@@ -19,10 +19,9 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("DatePicker")
     @js.native
-    class Class protected ()
-      extends Component[DatePickerProps, ComponentState, js.Any] {
+    open class Class protected () extends Component[DatePickerProps, ComponentState, Any] {
       def this(props: DatePickerProps) = this()
-      def this(props: DatePickerProps, context: js.Any) = this()
+      def this(props: DatePickerProps, context: Any) = this()
     }
     
     type _To = js.Object & typings.reactBootstrapDatePicker.mod.DatePicker

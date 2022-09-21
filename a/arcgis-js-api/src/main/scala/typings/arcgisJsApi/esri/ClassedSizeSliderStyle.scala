@@ -13,12 +13,16 @@ trait ClassedSizeSliderStyle
   /**
     * The background color of the slider's track.
     *
+    * @default new Color([224, 224, 224])
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#style)
     */
   var trackBackgroundColor: js.UndefOr[Color_] = js.undefined
   
   /**
     * The color of the slider's track.
+    *
+    * @default new Color([149, 149, 149])
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#style)
     */
@@ -30,9 +34,7 @@ object ClassedSizeSliderStyle {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ js.Any, ClassedSizeSliderStyle]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], ClassedSizeSliderStyle]])
+    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, ClassedSizeSliderStyle]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], ClassedSizeSliderStyle]])
   ): ClassedSizeSliderStyle = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassedSizeSliderStyle]

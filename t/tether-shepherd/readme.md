@@ -10,10 +10,10 @@ Guide your users through a tour of your app.
 | ------------------ | :-------------: |
 | Full name          | tether-shepherd |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 239938 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 10339.333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/tether-shepherd)

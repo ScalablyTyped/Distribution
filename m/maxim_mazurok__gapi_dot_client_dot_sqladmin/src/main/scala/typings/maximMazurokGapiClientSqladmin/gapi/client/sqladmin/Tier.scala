@@ -12,13 +12,13 @@ trait Tier extends StObject {
   /** The maximum RAM usage of this tier in bytes. */
   var RAM: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#tier*. */
+  /** This is always `sql#tier`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The applicable regions for this tier. */
   var region: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** An identifier for the machine type, for example, db-n1-standard-1. For related information, see Pricing. */
+  /** An identifier for the machine type, for example, `db-custom-1-3840`. For related information, see [Pricing](/sql/pricing). */
   var tier: js.UndefOr[String] = js.undefined
 }
 object Tier {
@@ -46,7 +46,7 @@ object Tier {
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    inline def setRegionVarargs(value: String*): Self = StObject.set(x, "region", js.Array(value :_*))
+    inline def setRegionVarargs(value: String*): Self = StObject.set(x, "region", js.Array(value*))
     
     inline def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
     

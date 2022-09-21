@@ -1,5 +1,6 @@
 package typings.page
 
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +19,8 @@ object anon {
     var hashbang: js.UndefOr[Boolean] = js.undefined
     
     var popstate: js.UndefOr[Boolean] = js.undefined
+    
+    var window: js.UndefOr[Window] = js.undefined
   }
   object PartialOptions {
     
@@ -47,6 +50,10 @@ object anon {
       inline def setPopstate(value: Boolean): Self = StObject.set(x, "popstate", value.asInstanceOf[js.Any])
       
       inline def setPopstateUndefined: Self = StObject.set(x, "popstate", js.undefined)
+      
+      inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
 }

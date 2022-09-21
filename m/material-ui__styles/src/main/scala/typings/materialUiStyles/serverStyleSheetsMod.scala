@@ -8,7 +8,7 @@ object serverStyleSheetsMod {
   
   @JSImport("@material-ui/styles/ServerStyleSheets", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.materialUiStyles.serverStyleSheetsServerStyleSheetsMod.default {
     def this(options: js.Object) = this()
   }

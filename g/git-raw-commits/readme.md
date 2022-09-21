@@ -11,9 +11,9 @@ Get raw git commits out of your repository using git-log(1)
 | Full name          | git-raw-commits |
 | Keywords           | git-raw-commits, raw, commit, commits, git, log, git-log |
 | # releases         | 5 |
-| # dependents       | 66 |
-| # downloads        | 87243301 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3866482333333334E7 |
+| # stars            | 6431.0 |
 
 ## Links
 - [Homepage](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/git-raw-commits#readme)

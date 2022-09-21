@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IDBTransactionEventMap extends StObject {
   
+  /* standard dom */
   var abort: Event
   
+  /* standard dom */
   var complete: Event
   
+  /* standard dom */
   var error: Event
 }
 object IDBTransactionEventMap {

@@ -24,20 +24,20 @@ trait UserType extends StObject {
   /**
     * The creation date of the user.
     */
-  var UserCreateDate: js.UndefOr[DateType] = js.undefined
+  var UserCreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The last modified date of the user.
     */
-  var UserLastModifiedDate: js.UndefOr[DateType] = js.undefined
+  var UserLastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The user status. Can be one of the following:   UNCONFIRMED - User has been created but not confirmed.   CONFIRMED - User has been confirmed.   ARCHIVED - User is no longer active.   COMPROMISED - User is disabled due to a potential security threat.   UNKNOWN - User status is not known.   RESET_REQUIRED - User is confirmed, but the user must request a code and reset his or her password before he or she can sign in.   FORCE_CHANGE_PASSWORD - The user is confirmed and the user can sign in using a temporary password, but on first sign-in, the user must change his or her password to a new value before doing anything else.   
+    * The user status. This can be one of the following:   UNCONFIRMED - User has been created but not confirmed.   CONFIRMED - User has been confirmed.   EXTERNAL_PROVIDER - User signed in with a third-party IdP.   ARCHIVED - User is no longer active.   UNKNOWN - User status isn't known.   RESET_REQUIRED - User is confirmed, but the user must request a code and reset their password before they can sign in.   FORCE_CHANGE_PASSWORD - The user is confirmed and the user can sign in using a temporary password, but on first sign-in, the user must change their password to a new value before doing anything else.   
     */
   var UserStatus: js.UndefOr[UserStatusType] = js.undefined
   
   /**
-    * The user name of the user you wish to describe.
+    * The user name of the user you want to describe.
     */
   var Username: js.UndefOr[UsernameType] = js.undefined
 }
@@ -54,7 +54,7 @@ object UserType {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "Attributes", js.Array(value*))
     
     inline def setEnabled(value: BooleanType): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
@@ -64,13 +64,13 @@ object UserType {
     
     inline def setMFAOptionsUndefined: Self = StObject.set(x, "MFAOptions", js.undefined)
     
-    inline def setMFAOptionsVarargs(value: MFAOptionType*): Self = StObject.set(x, "MFAOptions", js.Array(value :_*))
+    inline def setMFAOptionsVarargs(value: MFAOptionType*): Self = StObject.set(x, "MFAOptions", js.Array(value*))
     
-    inline def setUserCreateDate(value: DateType): Self = StObject.set(x, "UserCreateDate", value.asInstanceOf[js.Any])
+    inline def setUserCreateDate(value: js.Date): Self = StObject.set(x, "UserCreateDate", value.asInstanceOf[js.Any])
     
     inline def setUserCreateDateUndefined: Self = StObject.set(x, "UserCreateDate", js.undefined)
     
-    inline def setUserLastModifiedDate(value: DateType): Self = StObject.set(x, "UserLastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setUserLastModifiedDate(value: js.Date): Self = StObject.set(x, "UserLastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setUserLastModifiedDateUndefined: Self = StObject.set(x, "UserLastModifiedDate", js.undefined)
     

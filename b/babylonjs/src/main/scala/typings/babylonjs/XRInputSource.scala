@@ -50,7 +50,7 @@ object XRInputSource {
     
     inline def setProfiles(value: js.Array[String]): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
     
-    inline def setProfilesVarargs(value: String*): Self = StObject.set(x, "profiles", js.Array(value :_*))
+    inline def setProfilesVarargs(value: String*): Self = StObject.set(x, "profiles", js.Array(value*))
     
     inline def setTargetRayMode(value: XRTargetRayMode): Self = StObject.set(x, "targetRayMode", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,6 @@
 package typings.ionic
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ionic.anon.ConfigPath
 import typings.ionic.anon.PartialReadonlyIProjectCo
 import typings.ionic.definitionsMod.IClient
 import typings.ionic.definitionsMod.IConfig
@@ -30,7 +29,6 @@ import typings.ionicCliFrameworkPrompts.mod.PromptValueCheckbox
 import typings.ionicCliFrameworkPrompts.mod.PromptValueConfirm
 import typings.ionicCliFrameworkPrompts.mod.PromptValueOther
 import typings.minimist.mod.ParsedArgs
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,7 +59,7 @@ object libProjectMod {
     
     /* protected */ def getIntegrations(): js.Promise[js.Array[IIntegration[ProjectIntegration]]] = js.native
     
-    /* protected */ var originalConfigFile: js.UndefOr[StringDictionary[js.Any]] = js.native
+    /* protected */ var originalConfigFile: js.UndefOr[StringDictionary[Any]] = js.native
     
     def packageJsonPath: String = js.native
     
@@ -71,7 +69,7 @@ object libProjectMod {
   
   @JSImport("ionic/lib/project", "ProjectConfig")
   @js.native
-  class ProjectConfig protected () extends BaseConfig[IProjectConfig] {
+  open class ProjectConfig protected () extends BaseConfig[IProjectConfig] {
     def this(p: String) = this()
     def this(p: String, hasTypeOptions: ProjectConfigOptions) = this()
     
@@ -82,7 +80,7 @@ object libProjectMod {
   
   @JSImport("ionic/lib/project", "ProjectDetails")
   @js.native
-  class ProjectDetails protected () extends StObject {
+  open class ProjectDetails protected () extends StObject {
     def this(hasRootDirectoryArgsE: ProjectDetailsDeps) = this()
     
     /* protected */ val args: ParsedArgs = js.native
@@ -105,7 +103,7 @@ object libProjectMod {
     
     def processResult(result: ProjectDetailsResult): Unit = js.native
     
-    def readConfig(p: String): js.Promise[StringDictionary[js.Any]] = js.native
+    def readConfig(p: String): js.Promise[StringDictionary[Any]] = js.native
     
     /**
       * Gather project details from specified configuration.
@@ -120,7 +118,7 @@ object libProjectMod {
   
   @JSImport("ionic/lib/project", "ProjectDetailsError")
   @js.native
-  class ProjectDetailsError protected () extends BaseException {
+  open class ProjectDetailsError protected () extends BaseException {
     def this(msg: String, /**
       * Unique code for this error.
       */
@@ -134,7 +132,7 @@ object libProjectMod {
       /**
       * The underlying error that caused this error.
       */
-    error: Error
+    error: js.Error
     ) = this()
     
     /**
@@ -332,7 +330,29 @@ object libProjectMod {
     }
   }
   
-  type ProjectDetailsResult = (ProjectDetailsSingleAppResult | ProjectDetailsMultiAppResult | ProjectDetailsUnknownResult) & ConfigPath
+  /* Rewritten from type alias, can be one of: 
+    - typings.ionic.anon.ProjectDetailsSingleAppRe
+    - typings.ionic.anon.ProjectDetailsMultiAppRes
+    - typings.ionic.anon.ProjectDetailsUnknownResu
+  */
+  trait ProjectDetailsResult extends StObject
+  object ProjectDetailsResult {
+    
+    inline def ProjectDetailsMultiAppRes(configPath: String, errors: js.Array[ProjectDetailsError]): typings.ionic.anon.ProjectDetailsMultiAppRes = {
+      val __obj = js.Dynamic.literal(configPath = configPath.asInstanceOf[js.Any], context = "multiapp", errors = errors.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.ionic.anon.ProjectDetailsMultiAppRes]
+    }
+    
+    inline def ProjectDetailsSingleAppRe(configPath: String, errors: js.Array[ProjectDetailsError]): typings.ionic.anon.ProjectDetailsSingleAppRe = {
+      val __obj = js.Dynamic.literal(configPath = configPath.asInstanceOf[js.Any], context = "app", errors = errors.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.ionic.anon.ProjectDetailsSingleAppRe]
+    }
+    
+    inline def ProjectDetailsUnknownResu(configPath: String, errors: js.Array[ProjectDetailsError]): typings.ionic.anon.ProjectDetailsUnknownResu = {
+      val __obj = js.Dynamic.literal(configPath = configPath.asInstanceOf[js.Any], context = "unknown", errors = errors.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.ionic.anon.ProjectDetailsUnknownResu]
+    }
+  }
   
   trait ProjectDetailsResultBase extends StObject {
     
@@ -351,7 +371,7 @@ object libProjectMod {
       
       inline def setErrors(value: js.Array[ProjectDetailsError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: ProjectDetailsError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: ProjectDetailsError*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setType(value: ProjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

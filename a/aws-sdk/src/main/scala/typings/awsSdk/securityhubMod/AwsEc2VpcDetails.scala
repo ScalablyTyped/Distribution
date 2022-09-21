@@ -22,7 +22,7 @@ trait AwsEc2VpcDetails extends StObject {
   var Ipv6CidrBlockAssociationSet: js.UndefOr[Ipv6CidrBlockAssociationList] = js.undefined
   
   /**
-    * The current state of the VPC.
+    * The current state of the VPC. Valid values are available or pending.
     */
   var State: js.UndefOr[NonEmptyString] = js.undefined
 }
@@ -39,7 +39,7 @@ object AwsEc2VpcDetails {
     
     inline def setCidrBlockAssociationSetUndefined: Self = StObject.set(x, "CidrBlockAssociationSet", js.undefined)
     
-    inline def setCidrBlockAssociationSetVarargs(value: CidrBlockAssociation*): Self = StObject.set(x, "CidrBlockAssociationSet", js.Array(value :_*))
+    inline def setCidrBlockAssociationSetVarargs(value: CidrBlockAssociation*): Self = StObject.set(x, "CidrBlockAssociationSet", js.Array(value*))
     
     inline def setDhcpOptionsId(value: NonEmptyString): Self = StObject.set(x, "DhcpOptionsId", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object AwsEc2VpcDetails {
     
     inline def setIpv6CidrBlockAssociationSetUndefined: Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", js.undefined)
     
-    inline def setIpv6CidrBlockAssociationSetVarargs(value: Ipv6CidrBlockAssociation*): Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", js.Array(value :_*))
+    inline def setIpv6CidrBlockAssociationSetVarargs(value: Ipv6CidrBlockAssociation*): Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", js.Array(value*))
     
     inline def setState(value: NonEmptyString): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

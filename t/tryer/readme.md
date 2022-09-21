@@ -10,10 +10,10 @@ Because everyone loves a tryer! Conditional and repeated task invocation for nod
 | ------------------ | :-------------: |
 | Full name          | tryer |
 | Keywords           | repeat, retry, predicate, conditional, invocation, execution, loop, condition, termination, exponential, backoff |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 152828766 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9428204E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://gitlab.com/philbooth/tryer)

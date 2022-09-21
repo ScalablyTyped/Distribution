@@ -1,7 +1,6 @@
 package typings.cassandraDriver.mod
 
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object types {
   
   @JSImport("cassandra-driver", "types.BigDecimal")
   @js.native
-  class BigDecimal protected ()
+  open class BigDecimal protected ()
     extends typings.cassandraDriver.typesMod.types.BigDecimal {
     def this(unscaledValue: Double, scale: Double) = this()
   }
@@ -35,7 +34,7 @@ object types {
   
   @JSImport("cassandra-driver", "types.Duration")
   @js.native
-  class Duration protected ()
+  open class Duration protected ()
     extends typings.cassandraDriver.typesMod.types.Duration {
     def this(month: Double, days: Double, nanoseconds: Double) = this()
     def this(month: Double, days: Double, nanoseconds: typings.cassandraDriver.typesMod.types.Long) = this()
@@ -55,7 +54,7 @@ object types {
   
   @JSImport("cassandra-driver", "types.InetAddress")
   @js.native
-  class InetAddress protected ()
+  open class InetAddress protected ()
     extends typings.cassandraDriver.typesMod.types.InetAddress {
     def this(buffer: Buffer) = this()
   }
@@ -71,7 +70,7 @@ object types {
   
   @JSImport("cassandra-driver", "types.Integer")
   @js.native
-  class Integer protected ()
+  open class Integer protected ()
     extends typings.cassandraDriver.typesMod.types.Integer {
     def this(bits: js.Array[Double], sign: Double) = this()
   }
@@ -115,7 +114,7 @@ object types {
   
   @JSImport("cassandra-driver", "types.LocalDate")
   @js.native
-  class LocalDate protected ()
+  open class LocalDate protected ()
     extends typings.cassandraDriver.typesMod.types.LocalDate {
     def this(year: Double, month: Double, day: Double) = this()
   }
@@ -129,7 +128,7 @@ object types {
     inline def fromBuffer(buffer: Buffer): typings.cassandraDriver.typesMod.types.LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.typesMod.types.LocalDate]
     
     /* static member */
-    inline def fromDate(date: Date): typings.cassandraDriver.typesMod.types.LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.typesMod.types.LocalDate]
+    inline def fromDate(date: js.Date): typings.cassandraDriver.typesMod.types.LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.typesMod.types.LocalDate]
     
     /* static member */
     inline def fromString(value: String): typings.cassandraDriver.typesMod.types.LocalDate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.typesMod.types.LocalDate]
@@ -143,7 +142,7 @@ object types {
   
   @JSImport("cassandra-driver", "types.LocalTime")
   @js.native
-  class LocalTime protected ()
+  open class LocalTime protected ()
     extends typings.cassandraDriver.typesMod.types.LocalTime {
     def this(totalNanoseconds: typings.cassandraDriver.typesMod.types.Long) = this()
   }
@@ -157,7 +156,7 @@ object types {
     inline def fromBuffer(value: Buffer): typings.cassandraDriver.typesMod.types.LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.typesMod.types.LocalTime]
     
     /* static member */
-    inline def fromDate(date: Date, nanoseconds: Double): typings.cassandraDriver.typesMod.types.LocalTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], nanoseconds.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.LocalTime]
+    inline def fromDate(date: js.Date, nanoseconds: Double): typings.cassandraDriver.typesMod.types.LocalTime = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], nanoseconds.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.LocalTime]
     
     /* static member */
     inline def fromMilliseconds(milliseconds: Double): typings.cassandraDriver.typesMod.types.LocalTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMilliseconds")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.typesMod.types.LocalTime]
@@ -173,12 +172,20 @@ object types {
   
   @JSImport("cassandra-driver", "types.Long")
   @js.native
-  class Long ()
-    extends typings.cassandraDriver.typesMod.types.Long
+  open class Long protected ()
+    extends typings.cassandraDriver.typesMod.types.Long {
+    /**
+      * Constructs a 64 bit two's-complement integer, given its low and high 32 bit values as signed integers. See the from* functions below for more convenient ways of constructing Longs.
+      */
+    def this(low: Double) = this()
+    def this(low: Double, high: Double) = this()
+    def this(low: Double, high: Double, unsigned: Boolean) = this()
+    def this(low: Double, high: Unit, unsigned: Boolean) = this()
+  }
   
   @JSImport("cassandra-driver", "types.TimeUuid")
   @js.native
-  class TimeUuid protected ()
+  open class TimeUuid protected ()
     extends typings.cassandraDriver.typesMod.types.TimeUuid {
     def this(buffer: Buffer) = this()
   }
@@ -189,62 +196,62 @@ object types {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def fromDate(date: Date): typings.cassandraDriver.typesMod.types.TimeUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
-    inline def fromDate(date: Date, ticks: Double): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
-    inline def fromDate(date: Date, ticks: Double, nodeId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
-    inline def fromDate(date: Date, ticks: Double, nodeId: String, clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date): typings.cassandraDriver.typesMod.types.TimeUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Double): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Double, nodeId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Double, nodeId: String, clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
     /* static member */
     inline def fromDate(
-      date: Date,
+      date: js.Date,
       ticks: Double,
       nodeId: String,
       clockId: String,
       callback: ValueCallback[typings.cassandraDriver.typesMod.types.TimeUuid]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def fromDate(date: Date, ticks: Double, nodeId: String, clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Double, nodeId: String, clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
     inline def fromDate(
-      date: Date,
+      date: js.Date,
       ticks: Double,
       nodeId: String,
       clockId: Buffer,
       callback: ValueCallback[typings.cassandraDriver.typesMod.types.TimeUuid]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def fromDate(date: Date, ticks: Double, nodeId: Unit, clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
-    inline def fromDate(date: Date, ticks: Double, nodeId: Unit, clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
-    inline def fromDate(date: Date, ticks: Double, nodeId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
-    inline def fromDate(date: Date, ticks: Double, nodeId: Buffer, clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Double, nodeId: Unit, clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Double, nodeId: Unit, clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Double, nodeId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Double, nodeId: Buffer, clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
     inline def fromDate(
-      date: Date,
+      date: js.Date,
       ticks: Double,
       nodeId: Buffer,
       clockId: String,
       callback: ValueCallback[typings.cassandraDriver.typesMod.types.TimeUuid]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def fromDate(date: Date, ticks: Double, nodeId: Buffer, clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Double, nodeId: Buffer, clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
     inline def fromDate(
-      date: Date,
+      date: js.Date,
       ticks: Double,
       nodeId: Buffer,
       clockId: Buffer,
       callback: ValueCallback[typings.cassandraDriver.typesMod.types.TimeUuid]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def fromDate(date: Date, ticks: Unit, nodeId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
-    inline def fromDate(date: Date, ticks: Unit, nodeId: String, clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
-    inline def fromDate(date: Date, ticks: Unit, nodeId: String, clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
-    inline def fromDate(date: Date, ticks: Unit, nodeId: Unit, clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
-    inline def fromDate(date: Date, ticks: Unit, nodeId: Unit, clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
-    inline def fromDate(date: Date, ticks: Unit, nodeId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
-    inline def fromDate(date: Date, ticks: Unit, nodeId: Buffer, clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
-    inline def fromDate(date: Date, ticks: Unit, nodeId: Buffer, clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Unit, nodeId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Unit, nodeId: String, clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Unit, nodeId: String, clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Unit, nodeId: Unit, clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Unit, nodeId: Unit, clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Unit, nodeId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Unit, nodeId: Buffer, clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def fromDate(date: js.Date, ticks: Unit, nodeId: Buffer, clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], nodeId.asInstanceOf[js.Any], clockId.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
     
     /* static member */
     inline def fromString(value: String): typings.cassandraDriver.typesMod.types.TimeUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
     
     /* static member */
-    inline def max(date: Date, ticks: Double): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def max(date: js.Date, ticks: Double): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
     
     /* static member */
-    inline def min(date: Date, ticks: Double): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
+    inline def min(date: js.Date, ticks: Double): typings.cassandraDriver.typesMod.types.TimeUuid = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(date.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any])).asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
     
     /* static member */
     inline def now(): typings.cassandraDriver.typesMod.types.TimeUuid = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.cassandraDriver.typesMod.types.TimeUuid]
@@ -282,9 +289,9 @@ object types {
   
   @JSImport("cassandra-driver", "types.Tuple")
   @js.native
-  class Tuple protected ()
+  open class Tuple protected ()
     extends typings.cassandraDriver.typesMod.types.Tuple {
-    def this(args: js.Any*) = this()
+    def this(args: Any*) = this()
   }
   object Tuple {
     
@@ -293,12 +300,12 @@ object types {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def fromArray(elements: js.Array[js.Any]): typings.cassandraDriver.typesMod.types.Tuple = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.typesMod.types.Tuple]
+    inline def fromArray(elements: js.Array[Any]): typings.cassandraDriver.typesMod.types.Tuple = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.typesMod.types.Tuple]
   }
   
   @JSImport("cassandra-driver", "types.Uuid")
   @js.native
-  class Uuid protected ()
+  open class Uuid protected ()
     extends typings.cassandraDriver.typesMod.types.Uuid {
     def this(buffer: Buffer) = this()
   }
@@ -449,6 +456,8 @@ object types {
     /* 0x04 */ val v4: typings.cassandraDriver.typesMod.types.protocolVersion.v4 & Double = js.native
     
     /* 0x05 */ val v5: typings.cassandraDriver.typesMod.types.protocolVersion.v5 & Double = js.native
+    
+    /* 0x06 */ val v6: typings.cassandraDriver.typesMod.types.protocolVersion.v6 & Double = js.native
   }
   
   @JSImport("cassandra-driver", "types.responseErrorCodes")

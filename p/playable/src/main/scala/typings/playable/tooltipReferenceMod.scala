@@ -12,7 +12,7 @@ object tooltipReferenceMod {
   
   @JSImport("playable/dist/src/modules/ui/core/tooltip/tooltip-reference", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with TooltipReference {
     def this(reference: HTMLElement, tooltipService: ITooltipService, options: ITooltipReferenceOptions) = this()
@@ -48,17 +48,17 @@ object tooltipReferenceMod {
        with ITooltipReference {
     
     /* private */ @JSName("_$reference")
-    var _$reference: js.Any = js.native
+    var _$reference: Any = js.native
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _eventListeners: js.Any = js.native
+    /* private */ var _eventListeners: Any = js.native
     
-    /* private */ var _isDisabled: js.Any = js.native
+    /* private */ var _isDisabled: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _tooltipService: js.Any = js.native
+    /* private */ var _tooltipService: Any = js.native
     
     @JSName("isDisabled")
     def isDisabled_MTooltipReference: Boolean = js.native

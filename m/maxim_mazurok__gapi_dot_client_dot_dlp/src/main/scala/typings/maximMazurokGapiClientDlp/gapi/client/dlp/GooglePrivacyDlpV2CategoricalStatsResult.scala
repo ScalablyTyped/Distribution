@@ -22,6 +22,6 @@ object GooglePrivacyDlpV2CategoricalStatsResult {
     
     inline def setValueFrequencyHistogramBucketsUndefined: Self = StObject.set(x, "valueFrequencyHistogramBuckets", js.undefined)
     
-    inline def setValueFrequencyHistogramBucketsVarargs(value: GooglePrivacyDlpV2CategoricalStatsHistogramBucket*): Self = StObject.set(x, "valueFrequencyHistogramBuckets", js.Array(value :_*))
+    inline def setValueFrequencyHistogramBucketsVarargs(value: GooglePrivacyDlpV2CategoricalStatsHistogramBucket*): Self = StObject.set(x, "valueFrequencyHistogramBuckets", js.Array(value*))
   }
 }

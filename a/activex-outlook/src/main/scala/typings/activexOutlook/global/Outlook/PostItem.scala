@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.PostItem")
 @js.native
-/* private */ class PostItem ()
+/* private */ open class PostItem ()
   extends StObject
      with typings.activexOutlook.Outlook.PostItem

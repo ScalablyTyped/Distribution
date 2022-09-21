@@ -14,11 +14,11 @@ object legendMod {
   
   @JSImport("@antv/component/lib/legend", "Category")
   @js.native
-  class Category ()
+  open class Category ()
     extends typings.antvComponent.categoryMod.default
   
   @JSImport("@antv/component/lib/legend", "Continuous")
   @js.native
-  class Continuous ()
+  open class Continuous ()
     extends typings.antvComponent.continuousMod.default
 }

@@ -24,7 +24,7 @@ trait HostReservation extends StObject {
   /**
     * The date and time that the reservation ends.
     */
-  var End: js.UndefOr[DateTime] = js.undefined
+  var End: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The IDs of the Dedicated Hosts associated with the reservation.
@@ -34,7 +34,7 @@ trait HostReservation extends StObject {
   /**
     * The ID of the reservation that specifies the associated Dedicated Hosts.
     */
-  var HostReservationId: js.UndefOr[String] = js.undefined
+  var HostReservationId: js.UndefOr[typings.awsSdk.ec2Mod.HostReservationId] = js.undefined
   
   /**
     * The hourly price of the reservation.
@@ -49,7 +49,7 @@ trait HostReservation extends StObject {
   /**
     * The ID of the reservation. This remains the same regardless of which Dedicated Hosts are associated with it.
     */
-  var OfferingId: js.UndefOr[String] = js.undefined
+  var OfferingId: js.UndefOr[typings.awsSdk.ec2Mod.OfferingId] = js.undefined
   
   /**
     * The payment option selected for this reservation.
@@ -59,7 +59,7 @@ trait HostReservation extends StObject {
   /**
     * The date and time that the reservation started.
     */
-  var Start: js.UndefOr[DateTime] = js.undefined
+  var Start: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state of the reservation.
@@ -97,7 +97,7 @@ object HostReservation {
     
     inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    inline def setEnd(value: DateTime): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: js.Date): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     inline def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
     
@@ -105,9 +105,9 @@ object HostReservation {
     
     inline def setHostIdSetUndefined: Self = StObject.set(x, "HostIdSet", js.undefined)
     
-    inline def setHostIdSetVarargs(value: String*): Self = StObject.set(x, "HostIdSet", js.Array(value :_*))
+    inline def setHostIdSetVarargs(value: String*): Self = StObject.set(x, "HostIdSet", js.Array(value*))
     
-    inline def setHostReservationId(value: String): Self = StObject.set(x, "HostReservationId", value.asInstanceOf[js.Any])
+    inline def setHostReservationId(value: HostReservationId): Self = StObject.set(x, "HostReservationId", value.asInstanceOf[js.Any])
     
     inline def setHostReservationIdUndefined: Self = StObject.set(x, "HostReservationId", js.undefined)
     
@@ -119,7 +119,7 @@ object HostReservation {
     
     inline def setInstanceFamilyUndefined: Self = StObject.set(x, "InstanceFamily", js.undefined)
     
-    inline def setOfferingId(value: String): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
+    inline def setOfferingId(value: OfferingId): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
     
     inline def setOfferingIdUndefined: Self = StObject.set(x, "OfferingId", js.undefined)
     
@@ -127,7 +127,7 @@ object HostReservation {
     
     inline def setPaymentOptionUndefined: Self = StObject.set(x, "PaymentOption", js.undefined)
     
-    inline def setStart(value: DateTime): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: js.Date): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
     inline def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
     
@@ -139,7 +139,7 @@ object HostReservation {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setUpfrontPrice(value: String): Self = StObject.set(x, "UpfrontPrice", value.asInstanceOf[js.Any])
     

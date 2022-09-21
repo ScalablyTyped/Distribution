@@ -1,6 +1,5 @@
 package typings.lzString
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object global {
     
     inline def compressToUTF16(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compressToUTF16")(input.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def compressToUint8Array(uncompressed: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("compressToUint8Array")(uncompressed.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def compressToUint8Array(uncompressed: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("compressToUint8Array")(uncompressed.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     inline def decompress(compressed: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(compressed.asInstanceOf[js.Any]).asInstanceOf[String]
     
@@ -31,6 +30,6 @@ object global {
     
     inline def decompressFromUTF16(compressed: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressFromUTF16")(compressed.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def decompressFromUint8Array(compressed: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressFromUint8Array")(compressed.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def decompressFromUint8Array(compressed: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressFromUint8Array")(compressed.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

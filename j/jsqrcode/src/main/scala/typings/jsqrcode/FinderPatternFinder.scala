@@ -1,6 +1,5 @@
 package typings.jsqrcode
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ trait FinderPatternFinder extends StObject {
   
   def crossCheckVertical(startI: Double, centerJ: Double, maxCount: Double, originalStateCountTotal: Double): Double
   
-  def findFinderPattern(image: Uint8Array): FinderPatternInfo
+  def findFinderPattern(image: js.typedarray.Uint8Array): FinderPatternInfo
   
   def findRowSkip(): Double
   
@@ -29,7 +28,7 @@ trait FinderPatternFinder extends StObject {
   
   def haveMultiplyConfirmedCenters(): Boolean
   
-  var image: Uint8Array
+  var image: js.typedarray.Uint8Array
   
   var possibleCenters: js.Array[FinderPattern]
   
@@ -45,13 +44,13 @@ object FinderPatternFinder {
     crossCheckHorizontal: (Double, Double, Double, Double) => Double,
     crossCheckStateCount: js.Tuple5[Double, Double, Double, Double, Double],
     crossCheckVertical: (Double, Double, Double, Double) => Double,
-    findFinderPattern: Uint8Array => FinderPatternInfo,
+    findFinderPattern: js.typedarray.Uint8Array => FinderPatternInfo,
     findRowSkip: () => Double,
     foundPatternCross: js.Tuple5[Double, Double, Double, Double, Double] => Boolean,
     handlePossibleCenter: (js.Tuple5[Double, Double, Double, Double, Double], Double, Double) => Boolean,
     hasSkipped: Boolean,
     haveMultiplyConfirmedCenters: () => Boolean,
-    image: Uint8Array,
+    image: js.typedarray.Uint8Array,
     possibleCenters: js.Array[FinderPattern],
     resultPointCallback: ResultPointCallback,
     selectBestPatterns: () => Double
@@ -70,7 +69,7 @@ object FinderPatternFinder {
     
     inline def setCrossCheckVertical(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "crossCheckVertical", js.Any.fromFunction4(value))
     
-    inline def setFindFinderPattern(value: Uint8Array => FinderPatternInfo): Self = StObject.set(x, "findFinderPattern", js.Any.fromFunction1(value))
+    inline def setFindFinderPattern(value: js.typedarray.Uint8Array => FinderPatternInfo): Self = StObject.set(x, "findFinderPattern", js.Any.fromFunction1(value))
     
     inline def setFindRowSkip(value: () => Double): Self = StObject.set(x, "findRowSkip", js.Any.fromFunction0(value))
     
@@ -82,11 +81,11 @@ object FinderPatternFinder {
     
     inline def setHaveMultiplyConfirmedCenters(value: () => Boolean): Self = StObject.set(x, "haveMultiplyConfirmedCenters", js.Any.fromFunction0(value))
     
-    inline def setImage(value: Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: js.typedarray.Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     inline def setPossibleCenters(value: js.Array[FinderPattern]): Self = StObject.set(x, "possibleCenters", value.asInstanceOf[js.Any])
     
-    inline def setPossibleCentersVarargs(value: FinderPattern*): Self = StObject.set(x, "possibleCenters", js.Array(value :_*))
+    inline def setPossibleCentersVarargs(value: FinderPattern*): Self = StObject.set(x, "possibleCenters", js.Array(value*))
     
     inline def setResultPointCallback(value: ResultPointCallback): Self = StObject.set(x, "resultPointCallback", value.asInstanceOf[js.Any])
     

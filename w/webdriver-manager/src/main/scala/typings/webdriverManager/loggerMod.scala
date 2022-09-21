@@ -42,7 +42,7 @@ object loggerMod {
   
   @JSImport("webdriver-manager/built/lib/cli/logger", "Logger")
   @js.native
-  class Logger protected () extends StObject {
+  open class Logger protected () extends StObject {
     /**
       * Creates a logger instance with an ID for the logger.
       * @constructor
@@ -53,28 +53,28 @@ object loggerMod {
       * Log DEBUG
       * @param ...msgs multiple arguments to be logged.
       */
-    def debug(msgs: js.Any*): Unit = js.native
+    def debug(msgs: Any*): Unit = js.native
     
     /**
       * Log ERROR
       * @param ...msgs multiple arguments to be logged.
       */
-    def error(msgs: js.Any*): Unit = js.native
+    def error(msgs: Any*): Unit = js.native
     
-    /* private */ var id: js.Any = js.native
+    /* private */ var id: Any = js.native
     
     /**
       * Log INFO
       * @param ...msgs multiple arguments to be logged.
       */
-    def info(msgs: js.Any*): Unit = js.native
+    def info(msgs: Any*): Unit = js.native
     
     /**
       * For the log level set, check to see if the messages should be logged.
       * @param logLevel The log level of the message.
       * @param msgs The messages to be logged
       */
-    def log_(logLevel: LogLevel, msgs: js.Array[js.Any]): Unit = js.native
+    def log_(logLevel: LogLevel, msgs: js.Array[Any]): Unit = js.native
     
     /**
       * Format with timestamp, log level, identifier, and message and log to
@@ -82,13 +82,13 @@ object loggerMod {
       * @param logLevel The log level of the message.
       * @param msgs The messages to be logged.
       */
-    def print_(logLevel: LogLevel, msgs: js.Array[js.Any]): Unit = js.native
+    def print_(logLevel: LogLevel, msgs: js.Array[Any]): Unit = js.native
     
     /**
       * Log WARN
       * @param ...msgs multiple arguments to be logged.
       */
-    def warn(msgs: js.Any*): Unit = js.native
+    def warn(msgs: Any*): Unit = js.native
   }
   /* static members */
   object Logger {
@@ -99,8 +99,8 @@ object loggerMod {
     
     @JSImport("webdriver-manager/built/lib/cli/logger", "Logger.fd")
     @js.native
-    def fd: js.Any = js.native
-    inline def fd_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fd")(x.asInstanceOf[js.Any])
+    def fd: Any = js.native
+    inline def fd_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fd")(x.asInstanceOf[js.Any])
     
     @JSImport("webdriver-manager/built/lib/cli/logger", "Logger.firstWrite")
     @js.native
@@ -133,7 +133,7 @@ object loggerMod {
       * @param msgs The list of messages.
       * @return The string of the formatted messages
       */
-    inline def msgToFile_(msgs: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("msgToFile_")(msgs.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def msgToFile_(msgs: js.Array[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("msgToFile_")(msgs.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Set up the write location. If writing to a file, get the file descriptor.

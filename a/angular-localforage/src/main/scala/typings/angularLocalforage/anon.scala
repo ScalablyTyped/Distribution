@@ -8,7 +8,7 @@ object anon {
   
   trait DefaultValue extends StObject {
     
-    var defaultValue: js.UndefOr[js.Any] = js.undefined
+    var defaultValue: js.UndefOr[Any] = js.undefined
     
     var key: String
     
@@ -25,7 +25,7 @@ object anon {
     
     extension [Self <: DefaultValue](x: Self) {
       
-      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       

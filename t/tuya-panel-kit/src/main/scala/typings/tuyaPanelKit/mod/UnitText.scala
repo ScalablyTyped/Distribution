@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "UnitText")
 @js.native
-class UnitText protected ()
-  extends Component[UnitTextProps, ViewProps, js.Any] {
+open class UnitText protected () extends Component[UnitTextProps, ViewProps, Any] {
   def this(props: UnitTextProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: UnitTextProps, context: js.Any) = this()
+  def this(props: UnitTextProps, context: Any) = this()
 }

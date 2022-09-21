@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait TSTupleType_
   extends StObject
      with BaseNode
-     with TSType {
+     with TSType
+     with TypeScript {
   
   var elementTypes: js.Array[TSType | TSNamedTupleMember_]
   
@@ -28,7 +29,7 @@ object TSTupleType_ {
     
     inline def setElementTypes(value: js.Array[TSType | TSNamedTupleMember_]): Self = StObject.set(x, "elementTypes", value.asInstanceOf[js.Any])
     
-    inline def setElementTypesVarargs(value: (TSType | TSNamedTupleMember_)*): Self = StObject.set(x, "elementTypes", js.Array(value :_*))
+    inline def setElementTypesVarargs(value: (TSType | TSNamedTupleMember_)*): Self = StObject.set(x, "elementTypes", js.Array(value*))
     
     inline def setType(value: TSTupleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,7 @@ object actionBaseMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionBase.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with ActionBase {
     def this(properties: ActionBaseProperties) = this()

@@ -16,7 +16,7 @@ object listVersionsByFunctionCommandMod {
   
   @JSImport("@aws-sdk/client-lambda-node/commands/ListVersionsByFunctionCommand", "ListVersionsByFunctionCommand")
   @js.native
-  class ListVersionsByFunctionCommand protected ()
+  open class ListVersionsByFunctionCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object listVersionsByFunctionCommandMod {
     override val middlewareStack: MiddlewareStack[ListVersionsByFunctionInput, ListVersionsByFunctionOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: LambdaResolvedConfiguration
     ): Handler[ListVersionsByFunctionInput, ListVersionsByFunctionOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: LambdaResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[ListVersionsByFunctionInput, ListVersionsByFunctionOutput] = js.native
   }
 }

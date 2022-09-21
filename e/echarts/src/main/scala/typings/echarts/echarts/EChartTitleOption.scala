@@ -89,7 +89,7 @@ object EChartTitleOption {
     
     inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
-    inline def setBorderRadiusVarargs(value: Double*): Self = StObject.set(x, "borderRadius", js.Array(value :_*))
+    inline def setBorderRadiusVarargs(value: Double*): Self = StObject.set(x, "borderRadius", js.Array(value*))
     
     inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
@@ -115,7 +115,7 @@ object EChartTitleOption {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
     
     inline def setRight(value: String | Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     

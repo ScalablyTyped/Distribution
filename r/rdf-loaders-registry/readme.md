@@ -1,7 +1,7 @@
 
 # Scala.js typings for rdf-loaders-registry
 
-Typings are for version 0.2
+Typings are for version 0.3
 
 ## Library description:
 Registry for JavaScript native types loader based on RDF descriptions
@@ -10,10 +10,10 @@ Registry for JavaScript native types loader based on RDF descriptions
 | ------------------ | :-------------: |
 | Full name          | rdf-loaders-registry |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 28637 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4237.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/zazuko/rdf-loaders-registry)

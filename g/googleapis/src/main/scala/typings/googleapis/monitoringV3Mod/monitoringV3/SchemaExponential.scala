@@ -4,30 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Specifies an exponential sequence of buckets that have a width that is
-  * proportional to the value of the lower bound. Each bucket represents a
-  * constant relative uncertainty on a specific value in the bucket.There are
-  * num_finite_buckets + 2 (= N) buckets. Bucket i has the following
-  * boundaries:Upper bound (0 &lt;= i &lt; N-1): scale * (growth_factor ^ i).
-  * Lower bound (1 &lt;= i &lt; N): scale * (growth_factor ^ (i - 1)).
-  */
 trait SchemaExponential extends StObject {
   
   /**
     * Must be greater than 1.
     */
-  var growthFactor: js.UndefOr[Double] = js.undefined
+  var growthFactor: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Must be greater than 0.
     */
-  var numFiniteBuckets: js.UndefOr[Double] = js.undefined
+  var numFiniteBuckets: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Must be greater than 0.
     */
-  var scale: js.UndefOr[Double] = js.undefined
+  var scale: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaExponential {
   
@@ -40,13 +32,19 @@ object SchemaExponential {
     
     inline def setGrowthFactor(value: Double): Self = StObject.set(x, "growthFactor", value.asInstanceOf[js.Any])
     
+    inline def setGrowthFactorNull: Self = StObject.set(x, "growthFactor", null)
+    
     inline def setGrowthFactorUndefined: Self = StObject.set(x, "growthFactor", js.undefined)
     
     inline def setNumFiniteBuckets(value: Double): Self = StObject.set(x, "numFiniteBuckets", value.asInstanceOf[js.Any])
     
+    inline def setNumFiniteBucketsNull: Self = StObject.set(x, "numFiniteBuckets", null)
+    
     inline def setNumFiniteBucketsUndefined: Self = StObject.set(x, "numFiniteBuckets", js.undefined)
     
     inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleNull: Self = StObject.set(x, "scale", null)
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }

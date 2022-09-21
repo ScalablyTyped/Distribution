@@ -10,10 +10,10 @@ Apple iTunesConnect analytics API client.
 | ------------------ | :-------------: |
 | Full name          | itunesconnectanalytics |
 | Keywords           | itunes, itunesconnect, apple, analytics, api, client |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 22419 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 622.6666666666666 |
+| # stars            | 142.0 |
 
 ## Links
 - [Homepage](https://github.com/JanHalozan/iTunesConnectAnalytics#readme)

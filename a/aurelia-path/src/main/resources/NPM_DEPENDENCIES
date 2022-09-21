@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "aurelia-path" : "1.1.5"
+      "aurelia-path" : "1.1.7"
     }
   ],
   "test-dependencies" : [
     {
-      "aurelia-path" : "1.1.5"
+      "aurelia-path" : "1.1.7"
     }
   ],
   "compile-devDependencies" : [

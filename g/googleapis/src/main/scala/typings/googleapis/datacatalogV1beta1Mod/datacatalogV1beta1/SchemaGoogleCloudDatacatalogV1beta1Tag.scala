@@ -1,0 +1,74 @@
+package typings.googleapis.datacatalogV1beta1Mod.datacatalogV1beta1
+
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaGoogleCloudDatacatalogV1beta1Tag extends StObject {
+  
+  /**
+    * Resources like Entry can have schemas associated with them. This scope allows users to attach tags to an individual column based on that schema. For attaching a tag to a nested column, use `.` to separate the column names. Example: * `outer_column.inner_column`
+    */
+  var column: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required. This maps the ID of a tag field to the value of and additional information about that field. Valid field IDs are defined by the tag's template. A tag must have at least 1 field and at most 500 fields.
+    */
+  var fields: js.UndefOr[StringDictionary[SchemaGoogleCloudDatacatalogV1beta1TagField] | Null] = js.undefined
+  
+  /**
+    * The resource name of the tag in URL format. Example: * projects/{project_id\}/locations/{location\}/entrygroups/{entry_group_id\}/entries/{entry_id\}/tags/{tag_id\} where `tag_id` is a system-generated identifier. Note that this Tag may not actually be stored in the location in this name.
+    */
+  var name: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required. The resource name of the tag template that this tag uses. Example: * projects/{project_id\}/locations/{location\}/tagTemplates/{tag_template_id\} This field cannot be modified after creation.
+    */
+  var template: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Output only. The display name of the tag template.
+    */
+  var templateDisplayName: js.UndefOr[String | Null] = js.undefined
+}
+object SchemaGoogleCloudDatacatalogV1beta1Tag {
+  
+  inline def apply(): SchemaGoogleCloudDatacatalogV1beta1Tag = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaGoogleCloudDatacatalogV1beta1Tag]
+  }
+  
+  extension [Self <: SchemaGoogleCloudDatacatalogV1beta1Tag](x: Self) {
+    
+    inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    
+    inline def setColumnNull: Self = StObject.set(x, "column", null)
+    
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    
+    inline def setFields(value: StringDictionary[SchemaGoogleCloudDatacatalogV1beta1TagField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsNull: Self = StObject.set(x, "fields", null)
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateDisplayName(value: String): Self = StObject.set(x, "templateDisplayName", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateDisplayNameNull: Self = StObject.set(x, "templateDisplayName", null)
+    
+    inline def setTemplateDisplayNameUndefined: Self = StObject.set(x, "templateDisplayName", js.undefined)
+    
+    inline def setTemplateNull: Self = StObject.set(x, "template", null)
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+  }
+}

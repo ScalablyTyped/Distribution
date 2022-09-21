@@ -35,7 +35,7 @@ object Region {
     
     inline def setStations(value: js.Array[String]): Self = StObject.set(x, "stations", value.asInstanceOf[js.Any])
     
-    inline def setStationsVarargs(value: String*): Self = StObject.set(x, "stations", js.Array(value :_*))
+    inline def setStationsVarargs(value: String*): Self = StObject.set(x, "stations", js.Array(value*))
     
     inline def setType(value: region): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

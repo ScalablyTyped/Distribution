@@ -10,15 +10,12 @@ Mozilla's Channel mechanism built on top of post-message
 | ------------------ | :-------------: |
 | Full name          | jschannel |
 | Keywords           | jschannel, postmessage, mozilla, iframe |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 74698 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4645.666666666667 |
+| # stars            | 3.0 |
 
 ## Links
-- [Homepage](https://github.com/yochannah/jschannel)
-- [Bugs](https://github.com/yochannah/jschannel/issues)
-- [Repository](https://github.com/yochannah/jschannel)
 - [Npm](https://www.npmjs.com/package/jschannel)
     
 

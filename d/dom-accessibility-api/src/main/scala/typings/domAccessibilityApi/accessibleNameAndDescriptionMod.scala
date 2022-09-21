@@ -26,9 +26,19 @@ object accessibleNameAndDescriptionMod {
       */
     var computedStyleSupportsPseudoElements: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * mock window.getComputedStyle. Needs `content`, `display` and `visibility`
+      */
     var getComputedStyle: js.UndefOr[
-        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.getComputedStyle */ js.Any
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.getComputedStyle */ Any
       ] = js.undefined
+    
+    /**
+      * Set to `true` if you want to include hidden elements in the accessible name and description computation.
+      * Skips 2A in https://w3c.github.io/accname/#computation-steps.
+      * @default false
+      */
+    var hidden: js.UndefOr[Boolean] = js.undefined
   }
   object ComputeTextAlternativeOptions {
     
@@ -48,10 +58,14 @@ object accessibleNameAndDescriptionMod {
       inline def setComputedStyleSupportsPseudoElementsUndefined: Self = StObject.set(x, "computedStyleSupportsPseudoElements", js.undefined)
       
       inline def setGetComputedStyle(
-        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.getComputedStyle */ js.Any
+        value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.getComputedStyle */ Any
       ): Self = StObject.set(x, "getComputedStyle", value.asInstanceOf[js.Any])
       
       inline def setGetComputedStyleUndefined: Self = StObject.set(x, "getComputedStyle", js.undefined)
+      
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     }
   }
 }

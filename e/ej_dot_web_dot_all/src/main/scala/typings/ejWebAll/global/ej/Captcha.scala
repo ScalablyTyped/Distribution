@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Captcha")
 @js.native
-class Captcha protected ()
+open class Captcha protected ()
   extends StObject
      with typings.ejWebAll.ej.Captcha {
   def this(element: JQuery) = this()
@@ -25,8 +25,8 @@ object Captcha {
   /* static member */
   @JSGlobal("ej.Captcha.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("ej.Captcha.fn")

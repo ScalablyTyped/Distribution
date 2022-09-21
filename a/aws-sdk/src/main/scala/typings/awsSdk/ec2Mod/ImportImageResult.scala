@@ -37,7 +37,7 @@ trait ImportImageResult extends StObject {
   var ImportTaskId: js.UndefOr[ImportImageTaskId] = js.undefined
   
   /**
-    * The identifier for the symmetric AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to create the encrypted AMI.
+    * The identifier for the symmetric KMS key that was used to create the encrypted AMI.
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.ec2Mod.KmsKeyId] = js.undefined
   
@@ -77,9 +77,14 @@ trait ImportImageResult extends StObject {
   var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
-    * Any tags assigned to the image being imported.
+    * Any tags assigned to the import image task.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
+  
+  /**
+    * The usage operation value.
+    */
+  var UsageOperation: js.UndefOr[String] = js.undefined
 }
 object ImportImageResult {
   
@@ -122,7 +127,7 @@ object ImportImageResult {
     
     inline def setLicenseSpecificationsUndefined: Self = StObject.set(x, "LicenseSpecifications", js.undefined)
     
-    inline def setLicenseSpecificationsVarargs(value: ImportImageLicenseConfigurationResponse*): Self = StObject.set(x, "LicenseSpecifications", js.Array(value :_*))
+    inline def setLicenseSpecificationsVarargs(value: ImportImageLicenseConfigurationResponse*): Self = StObject.set(x, "LicenseSpecifications", js.Array(value*))
     
     inline def setLicenseType(value: String): Self = StObject.set(x, "LicenseType", value.asInstanceOf[js.Any])
     
@@ -140,7 +145,7 @@ object ImportImageResult {
     
     inline def setSnapshotDetailsUndefined: Self = StObject.set(x, "SnapshotDetails", js.undefined)
     
-    inline def setSnapshotDetailsVarargs(value: SnapshotDetail*): Self = StObject.set(x, "SnapshotDetails", js.Array(value :_*))
+    inline def setSnapshotDetailsVarargs(value: SnapshotDetail*): Self = StObject.set(x, "SnapshotDetails", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
@@ -154,6 +159,10 @@ object ImportImageResult {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
+    
+    inline def setUsageOperation(value: String): Self = StObject.set(x, "UsageOperation", value.asInstanceOf[js.Any])
+    
+    inline def setUsageOperationUndefined: Self = StObject.set(x, "UsageOperation", js.undefined)
   }
 }

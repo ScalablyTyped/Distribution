@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A structured data object consisting of named properties.
-  */
 trait SchemaStructuredDataObject extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaStructuredDataObject {
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    inline def setPropertiesVarargs(value: SchemaNamedProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: SchemaNamedProperty*): Self = StObject.set(x, "properties", js.Array(value*))
   }
 }

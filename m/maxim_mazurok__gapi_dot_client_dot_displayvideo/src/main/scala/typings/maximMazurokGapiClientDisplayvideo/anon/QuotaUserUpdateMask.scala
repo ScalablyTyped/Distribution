@@ -13,7 +13,7 @@ trait QuotaUserUpdateMask extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** Output only. The unique ID of the advertiser the line item belongs to. */
+  /** The ID of the advertiser that owns the created channel. */
   var advertiserId: String
   
   /** Data format for response. */
@@ -22,17 +22,20 @@ trait QuotaUserUpdateMask extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /** Output only. The unique ID of the channel. Assigned by the system. */
+  var channelId: String
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Output only. The unique ID of the line item. Assigned by the system. */
-  var lineItemId: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
+  
+  /** The ID of the partner that owns the created channel. */
+  var partnerId: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -51,8 +54,8 @@ trait QuotaUserUpdateMask extends StObject {
 }
 object QuotaUserUpdateMask {
   
-  inline def apply(advertiserId: String, lineItemId: String): QuotaUserUpdateMask = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], lineItemId = lineItemId.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String, channelId: String): QuotaUserUpdateMask = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], channelId = channelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUserUpdateMask]
   }
   
@@ -76,6 +79,8 @@ object QuotaUserUpdateMask {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -84,11 +89,13 @@ object QuotaUserUpdateMask {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    
+    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
+    
+    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

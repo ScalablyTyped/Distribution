@@ -8,5 +8,5 @@ object putObjectTaggingInputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/PutObjectTaggingInput", "PutObjectTaggingInput")
   @js.native
-  val PutObjectTaggingInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PutObjectTaggingInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

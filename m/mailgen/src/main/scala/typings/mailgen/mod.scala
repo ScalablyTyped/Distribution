@@ -11,7 +11,7 @@ object mod {
     */
   @JSImport("mailgen", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Mailgen {
     def this(opts: Option) = this()
@@ -20,13 +20,13 @@ object mod {
     override def cacheThemes(): Unit = js.native
     
     /* CompleteClass */
-    override def generate(params: Content): js.Any = js.native
+    override def generate(params: Content): Any = js.native
     
     /* CompleteClass */
-    override def generatePlaintext(params: Content): js.Any = js.native
+    override def generatePlaintext(params: Content): Any = js.native
     
     /* CompleteClass */
-    override def parseParams(params: js.Any): js.Any = js.native
+    override def parseParams(params: Any): Any = js.native
   }
   
   trait Action extends StObject {
@@ -77,22 +77,22 @@ object mod {
   
   trait ColumnOptions extends StObject {
     
-    var customAlignment: js.Any
+    var customAlignment: Any
     
-    var customWidth: js.Any
+    var customWidth: Any
   }
   object ColumnOptions {
     
-    inline def apply(customAlignment: js.Any, customWidth: js.Any): ColumnOptions = {
+    inline def apply(customAlignment: Any, customWidth: Any): ColumnOptions = {
       val __obj = js.Dynamic.literal(customAlignment = customAlignment.asInstanceOf[js.Any], customWidth = customWidth.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColumnOptions]
     }
     
     extension [Self <: ColumnOptions](x: Self) {
       
-      inline def setCustomAlignment(value: js.Any): Self = StObject.set(x, "customAlignment", value.asInstanceOf[js.Any])
+      inline def setCustomAlignment(value: Any): Self = StObject.set(x, "customAlignment", value.asInstanceOf[js.Any])
       
-      inline def setCustomWidth(value: js.Any): Self = StObject.set(x, "customWidth", value.asInstanceOf[js.Any])
+      inline def setCustomWidth(value: Any): Self = StObject.set(x, "customWidth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,7 +117,7 @@ object mod {
     
     var action: js.UndefOr[Action | js.Array[Action]] = js.undefined
     
-    var dictionary: js.UndefOr[js.Any] = js.undefined
+    var dictionary: js.UndefOr[Any] = js.undefined
     
     var goToAction: js.UndefOr[GoToAction] = js.undefined
     
@@ -148,9 +148,9 @@ object mod {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setActionVarargs(value: Action*): Self = StObject.set(x, "action", js.Array(value :_*))
+      inline def setActionVarargs(value: Action*): Self = StObject.set(x, "action", js.Array(value*))
       
-      inline def setDictionary(value: js.Any): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+      inline def setDictionary(value: Any): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
       
       inline def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
       
@@ -166,7 +166,7 @@ object mod {
       
       inline def setIntroUndefined: Self = StObject.set(x, "intro", js.undefined)
       
-      inline def setIntroVarargs(value: String*): Self = StObject.set(x, "intro", js.Array(value :_*))
+      inline def setIntroVarargs(value: String*): Self = StObject.set(x, "intro", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -176,7 +176,7 @@ object mod {
       
       inline def setOutroUndefined: Self = StObject.set(x, "outro", js.undefined)
       
-      inline def setOutroVarargs(value: String*): Self = StObject.set(x, "outro", js.Array(value :_*))
+      inline def setOutroVarargs(value: String*): Self = StObject.set(x, "outro", js.Array(value*))
       
       inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
@@ -186,7 +186,7 @@ object mod {
       
       inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
       
-      inline def setTableVarargs(value: Table*): Self = StObject.set(x, "table", js.Array(value :_*))
+      inline def setTableVarargs(value: Table*): Self = StObject.set(x, "table", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -249,19 +249,19 @@ object mod {
     
     def cacheThemes(): Unit
     
-    def generate(params: Content): js.Any
+    def generate(params: Content): Any
     
-    def generatePlaintext(params: Content): js.Any
+    def generatePlaintext(params: Content): Any
     
-    def parseParams(params: js.Any): js.Any
+    def parseParams(params: Any): Any
   }
   object Mailgen {
     
     inline def apply(
       cacheThemes: () => Unit,
-      generate: Content => js.Any,
-      generatePlaintext: Content => js.Any,
-      parseParams: js.Any => js.Any
+      generate: Content => Any,
+      generatePlaintext: Content => Any,
+      parseParams: Any => Any
     ): Mailgen = {
       val __obj = js.Dynamic.literal(cacheThemes = js.Any.fromFunction0(cacheThemes), generate = js.Any.fromFunction1(generate), generatePlaintext = js.Any.fromFunction1(generatePlaintext), parseParams = js.Any.fromFunction1(parseParams))
       __obj.asInstanceOf[Mailgen]
@@ -271,11 +271,11 @@ object mod {
       
       inline def setCacheThemes(value: () => Unit): Self = StObject.set(x, "cacheThemes", js.Any.fromFunction0(value))
       
-      inline def setGenerate(value: Content => js.Any): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
+      inline def setGenerate(value: Content => Any): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
       
-      inline def setGeneratePlaintext(value: Content => js.Any): Self = StObject.set(x, "generatePlaintext", js.Any.fromFunction1(value))
+      inline def setGeneratePlaintext(value: Content => Any): Self = StObject.set(x, "generatePlaintext", js.Any.fromFunction1(value))
       
-      inline def setParseParams(value: js.Any => js.Any): Self = StObject.set(x, "parseParams", js.Any.fromFunction1(value))
+      inline def setParseParams(value: Any => Any): Self = StObject.set(x, "parseParams", js.Any.fromFunction1(value))
     }
   }
   
@@ -308,6 +308,8 @@ object mod {
     
     var logo: js.UndefOr[String] = js.undefined
     
+    var logoHeight: js.UndefOr[String] = js.undefined
+    
     var name: String
   }
   object Product {
@@ -327,6 +329,10 @@ object mod {
       
       inline def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
       
+      inline def setLogoHeight(value: String): Self = StObject.set(x, "logoHeight", value.asInstanceOf[js.Any])
+      
+      inline def setLogoHeightUndefined: Self = StObject.set(x, "logoHeight", js.undefined)
+      
       inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -337,11 +343,11 @@ object mod {
     
     var columns: js.UndefOr[js.Array[ColumnOptions]] = js.undefined
     
-    var data: js.Array[js.Any]
+    var data: js.Array[Any]
   }
   object Table {
     
-    inline def apply(data: js.Array[js.Any]): Table = {
+    inline def apply(data: js.Array[Any]): Table = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Table]
     }
@@ -352,11 +358,11 @@ object mod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: ColumnOptions*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: ColumnOptions*): Self = StObject.set(x, "columns", js.Array(value*))
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     }
   }
 }

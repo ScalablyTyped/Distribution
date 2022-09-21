@@ -7,40 +7,42 @@ import typings.poseCore.typesMod.PoserConfig
 import typings.poseCore.typesMod.Props
 import typings.poseCore.typesMod.ReadValueFromSource
 import typings.poseCore.typesMod.TransformPose
-import typings.stylefire.typesMod.Styler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PopmotionPoserFactoryConfig[P, TD] extends StObject {
   
-  def addListenerToValue(key: String, styler: Styler): js.Function1[/* v */ js.Any, Unit]
+  def addListenerToValue(
+    key: String,
+    styler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Styler */ Any
+  ): js.Function1[/* v */ Any, Unit]
   
   def extendAPI(
     api: Poser[
       Value, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
       P
     ],
     state: typings.poseCore.typesMod.PoserState[
       Value, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
       P
     ],
     config: PoserConfig[Value]
   ): Poser[
     Value, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
     P
   ]
   @JSName("extendAPI")
   var extendAPI_Original: ExtendAPI[
     Value, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
     P
   ]
   
@@ -50,29 +52,29 @@ trait PopmotionPoserFactoryConfig[P, TD] extends StObject {
   
   var readValueFromSource: js.UndefOr[ReadValueFromSource] = js.undefined
   
-  def setValueNative(key: String, to: js.Any, props: ElementStyler): Unit
+  def setValueNative(key: String, to: Any, props: ElementStyler): Unit
   
   def transformPose(
     pose: typings.poseCore.typesMod.Pose[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
       TD
     ],
     key: String,
     state: typings.poseCore.typesMod.PoserState[
       Value, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
       P
     ]
   ): typings.poseCore.typesMod.Pose[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
     TD
   ]
   @JSName("transformPose")
   var transformPose_Original: TransformPose[
     Value, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
     P, 
     TD
   ]
@@ -80,35 +82,35 @@ trait PopmotionPoserFactoryConfig[P, TD] extends StObject {
 object PopmotionPoserFactoryConfig {
   
   inline def apply[P, TD](
-    addListenerToValue: (String, Styler) => js.Function1[/* v */ js.Any, Unit],
+    addListenerToValue: (String, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Styler */ Any) => js.Function1[/* v */ Any, Unit],
     extendAPI: (/* api */ Poser[
       Value, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
       P
     ], /* state */ typings.poseCore.typesMod.PoserState[
       Value, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
       P
     ], /* config */ PoserConfig[Value]) => Poser[
       Value, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
       P
     ],
     forceRender: ElementStyler => Unit,
-    setValueNative: (String, js.Any, ElementStyler) => Unit,
+    setValueNative: (String, Any, ElementStyler) => Unit,
     transformPose: (/* pose */ typings.poseCore.typesMod.Pose[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
       TD
     ], /* key */ String, /* state */ typings.poseCore.typesMod.PoserState[
       Value, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
       P
     ]) => typings.poseCore.typesMod.Pose[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
       TD
     ]
   ): PopmotionPoserFactoryConfig[P, TD] = {
@@ -118,23 +120,25 @@ object PopmotionPoserFactoryConfig {
   
   extension [Self <: PopmotionPoserFactoryConfig[?, ?], P, TD](x: Self & (PopmotionPoserFactoryConfig[P, TD])) {
     
-    inline def setAddListenerToValue(value: (String, Styler) => js.Function1[/* v */ js.Any, Unit]): Self = StObject.set(x, "addListenerToValue", js.Any.fromFunction2(value))
+    inline def setAddListenerToValue(
+      value: (String, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Styler */ Any) => js.Function1[/* v */ Any, Unit]
+    ): Self = StObject.set(x, "addListenerToValue", js.Any.fromFunction2(value))
     
     inline def setExtendAPI(
       value: (/* api */ Poser[
           Value, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
           P
         ], /* state */ typings.poseCore.typesMod.PoserState[
           Value, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
           P
         ], /* config */ PoserConfig[Value]) => Poser[
           Value, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
           P
         ]
     ): Self = StObject.set(x, "extendAPI", js.Any.fromFunction3(value))
@@ -145,25 +149,25 @@ object PopmotionPoserFactoryConfig {
     
     inline def setPosePriorityUndefined: Self = StObject.set(x, "posePriority", js.undefined)
     
-    inline def setPosePriorityVarargs(value: String*): Self = StObject.set(x, "posePriority", js.Array(value :_*))
+    inline def setPosePriorityVarargs(value: String*): Self = StObject.set(x, "posePriority", js.Array(value*))
     
-    inline def setReadValueFromSource(value: (/* key */ String, /* props */ Props) => js.Any): Self = StObject.set(x, "readValueFromSource", js.Any.fromFunction2(value))
+    inline def setReadValueFromSource(value: (/* key */ String, /* props */ Props) => Any): Self = StObject.set(x, "readValueFromSource", js.Any.fromFunction2(value))
     
     inline def setReadValueFromSourceUndefined: Self = StObject.set(x, "readValueFromSource", js.undefined)
     
-    inline def setSetValueNative(value: (String, js.Any, ElementStyler) => Unit): Self = StObject.set(x, "setValueNative", js.Any.fromFunction3(value))
+    inline def setSetValueNative(value: (String, Any, ElementStyler) => Unit): Self = StObject.set(x, "setValueNative", js.Any.fromFunction3(value))
     
     inline def setTransformPose(
       value: (/* pose */ typings.poseCore.typesMod.Pose[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
           TD
         ], /* key */ String, /* state */ typings.poseCore.typesMod.PoserState[
           Value, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
           P
         ]) => typings.poseCore.typesMod.Pose[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
           TD
         ]
     ): Self = StObject.set(x, "transformPose", js.Any.fromFunction3(value))

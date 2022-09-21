@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PolicyGrantingServiceAccess extends StObject {
   
   /**
-    * The name of the entity (user or role) to which the inline policy is attached. This field is null for managed policies. For more information about these policy types, see Managed Policies and Inline Policies in the IAM User Guide.
+    * The name of the entity (user or role) to which the inline policy is attached. This field is null for managed policies. For more information about these policy types, see Managed policies and inline policies in the IAM User Guide.
     */
   var EntityName: js.UndefOr[entityNameType] = js.undefined
   
   /**
-    * The type of entity (user or role) that used the policy to access the service to which the inline policy is attached. This field is null for managed policies. For more information about these policy types, see Managed Policies and Inline Policies in the IAM User Guide.
+    * The type of entity (user or role) that used the policy to access the service to which the inline policy is attached. This field is null for managed policies. For more information about these policy types, see Managed policies and inline policies in the IAM User Guide.
     */
   var EntityType: js.UndefOr[policyOwnerEntityType] = js.undefined
   
@@ -24,7 +24,7 @@ trait PolicyGrantingServiceAccess extends StObject {
   var PolicyName: policyNameType
   
   /**
-    * The policy type. For more information about these policy types, see Managed Policies and Inline Policies in the IAM User Guide.
+    * The policy type. For more information about these policy types, see Managed policies and inline policies in the IAM User Guide.
     */
   var PolicyType: policyType
 }

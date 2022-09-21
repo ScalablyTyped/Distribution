@@ -1,7 +1,7 @@
 
 # Scala.js typings for kdbxweb
 
-Typings are for version 1.2
+Typings are for version 2.1.1
 
 ## Library description:
 Kdbx KeePass database reader for web
@@ -10,10 +10,10 @@ Kdbx KeePass database reader for web
 | ------------------ | :-------------: |
 | Full name          | kdbxweb |
 | Keywords           | kdbx, keepass |
-| # releases         | 26 |
-| # dependents       | 8 |
-| # downloads        | 21380 |
-| # stars            | 0 |
+| # releases         | 22 |
+| # dependents       | 0.0 |
+| # downloads        | 2300.6666666666665 |
+| # stars            | 357.0 |
 
 ## Links
 - [Homepage](https://github.com/keeweb/kdbxweb#readme)
@@ -24,7 +24,7 @@ Kdbx KeePass database reader for web
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

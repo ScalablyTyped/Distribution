@@ -9,7 +9,7 @@ trait CreateProjectMetadata extends StObject {
   /** Creation time of the project creation workflow. */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** True if the project can be retrieved using GetProject. No other operations on the project are guaranteed to work until the project creation is complete. */
+  /** True if the project can be retrieved using `GetProject`. No other operations on the project are guaranteed to work until the project creation is complete. */
   var gettable: js.UndefOr[Boolean] = js.undefined
   
   /** True if the project creation process is complete. */

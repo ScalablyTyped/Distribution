@@ -14,7 +14,7 @@ trait UpdateConfigurationResponse extends StObject {
   /**
     * Required. The date and time of the configuration.
     */
-  var Created: js.UndefOr[timestampIso8601] = js.undefined
+  var Created: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Required. The unique ID that Amazon MQ generates for the configuration.
@@ -49,7 +49,7 @@ object UpdateConfigurationResponse {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setCreated(value: timestampIso8601): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
     
@@ -69,6 +69,6 @@ object UpdateConfigurationResponse {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "Warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: SanitizationWarning*): Self = StObject.set(x, "Warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: SanitizationWarning*): Self = StObject.set(x, "Warnings", js.Array(value*))
   }
 }

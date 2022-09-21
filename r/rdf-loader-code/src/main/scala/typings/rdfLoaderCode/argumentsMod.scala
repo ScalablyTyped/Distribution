@@ -1,8 +1,9 @@
 package typings.rdfLoaderCode
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rdfJs.mod.NamedNode
 import typings.rdfLoadersRegistry.mod.Loader
+import typings.rdfLoadersRegistry.mod.LoaderRegistry
+import typings.rdfjsTypes.dataModelMod.NamedNode
 import typings.std.Map
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -15,23 +16,23 @@ object argumentsMod extends Shortcut {
   @js.native
   val ^ : ArgumentsLoader = js.native
   
-  type Arguments = js.Array[js.Any | (Record[String, js.Any])]
+  type Arguments = js.Array[Any | (Record[String, Any])]
   
   @js.native
   trait ArgumentsLoader extends Loader[Arguments, Options] {
     
-    def register(registry: typings.rdfLoadersRegistry.mod.^): Unit = js.native
+    def register(registry: LoaderRegistry): Unit = js.native
   }
   
   trait Options extends StObject {
     
     var basePath: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     var property: js.UndefOr[NamedNode[String]] = js.undefined
     
-    var variables: js.UndefOr[Map[String, js.Any]] = js.undefined
+    var variables: js.UndefOr[Map[String, Any]] = js.undefined
   }
   object Options {
     
@@ -46,7 +47,7 @@ object argumentsMod extends Shortcut {
       
       inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -54,7 +55,7 @@ object argumentsMod extends Shortcut {
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      inline def setVariables(value: Map[String, js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: Map[String, Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
       inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     }

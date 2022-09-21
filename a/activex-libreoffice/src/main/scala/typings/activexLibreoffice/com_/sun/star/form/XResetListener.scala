@@ -38,7 +38,7 @@ object XResetListener {
     acquire: () => Unit,
     approveReset: EventObject => Boolean,
     disposing: EventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     resetted: EventObject => Unit
   ): XResetListener = {

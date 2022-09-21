@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sdk.Query.FilterExpression")
 @js.native
-class FilterExpression protected () extends StObject {
+open class FilterExpression protected () extends StObject {
   def this(logicalOperator: LogicalOperator) = this()
   
   /**

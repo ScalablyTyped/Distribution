@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.FormatColor")
 @js.native
-/* private */ class FormatColor ()
+/* private */ open class FormatColor ()
   extends StObject
      with typings.activexExcel.Excel.FormatColor {
   
@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ExcelDotFormatColor_typekey: typings.activexExcel.Excel.FormatColor = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var ThemeColor: XlThemeColor = js.native

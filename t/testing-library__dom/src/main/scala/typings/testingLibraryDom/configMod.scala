@@ -1,7 +1,6 @@
 package typings.testingLibraryDom
 
-import typings.std.Error
-import typings.std.HTMLElement
+import typings.std.Element
 import typings.testingLibraryDom.anon.PartialConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,63 +17,38 @@ object configMod {
   
   inline def getConfig(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Config]
   
+  @js.native
   trait Config extends StObject {
     
-    var asyncUtilTimeout: Double
+    var asyncUtilTimeout: Double = js.native
     
-    def asyncWrapper(cb: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any]
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    def asyncWrapper(cb: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
     
-    var computedStyleSupportsPseudoElements: Boolean
+    var computedStyleSupportsPseudoElements: Boolean = js.native
     
-    var defaultHidden: Boolean
+    var defaultHidden: Boolean = js.native
     
-    def eventWrapper(cb: js.Function1[/* repeated */ js.Any, js.Any]): Unit
+    /** default value for the `ignore` option in `ByText` queries */
+    var defaultIgnore: String = js.native
     
-    def getElementError(message: String, container: HTMLElement): Error
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    def eventWrapper(cb: js.Function1[/* repeated */ Any, Any]): Unit = js.native
     
-    var showOriginalStackTrace: Boolean
+    def getElementError(message: String, container: Element): js.Error = js.native
+    def getElementError(message: Null, container: Element): js.Error = js.native
     
-    var testIdAttribute: String
+    var showOriginalStackTrace: Boolean = js.native
     
-    var throwSuggestions: Boolean
-  }
-  object Config {
+    var testIdAttribute: String = js.native
     
-    inline def apply(
-      asyncUtilTimeout: Double,
-      asyncWrapper: js.Function1[/* repeated */ js.Any, js.Any] => js.Promise[js.Any],
-      computedStyleSupportsPseudoElements: Boolean,
-      defaultHidden: Boolean,
-      eventWrapper: js.Function1[/* repeated */ js.Any, js.Any] => Unit,
-      getElementError: (String, HTMLElement) => Error,
-      showOriginalStackTrace: Boolean,
-      testIdAttribute: String,
-      throwSuggestions: Boolean
-    ): Config = {
-      val __obj = js.Dynamic.literal(asyncUtilTimeout = asyncUtilTimeout.asInstanceOf[js.Any], asyncWrapper = js.Any.fromFunction1(asyncWrapper), computedStyleSupportsPseudoElements = computedStyleSupportsPseudoElements.asInstanceOf[js.Any], defaultHidden = defaultHidden.asInstanceOf[js.Any], eventWrapper = js.Any.fromFunction1(eventWrapper), getElementError = js.Any.fromFunction2(getElementError), showOriginalStackTrace = showOriginalStackTrace.asInstanceOf[js.Any], testIdAttribute = testIdAttribute.asInstanceOf[js.Any], throwSuggestions = throwSuggestions.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Config]
-    }
+    var throwSuggestions: Boolean = js.native
     
-    extension [Self <: Config](x: Self) {
-      
-      inline def setAsyncUtilTimeout(value: Double): Self = StObject.set(x, "asyncUtilTimeout", value.asInstanceOf[js.Any])
-      
-      inline def setAsyncWrapper(value: js.Function1[/* repeated */ js.Any, js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "asyncWrapper", js.Any.fromFunction1(value))
-      
-      inline def setComputedStyleSupportsPseudoElements(value: Boolean): Self = StObject.set(x, "computedStyleSupportsPseudoElements", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultHidden(value: Boolean): Self = StObject.set(x, "defaultHidden", value.asInstanceOf[js.Any])
-      
-      inline def setEventWrapper(value: js.Function1[/* repeated */ js.Any, js.Any] => Unit): Self = StObject.set(x, "eventWrapper", js.Any.fromFunction1(value))
-      
-      inline def setGetElementError(value: (String, HTMLElement) => Error): Self = StObject.set(x, "getElementError", js.Any.fromFunction2(value))
-      
-      inline def setShowOriginalStackTrace(value: Boolean): Self = StObject.set(x, "showOriginalStackTrace", value.asInstanceOf[js.Any])
-      
-      inline def setTestIdAttribute(value: String): Self = StObject.set(x, "testIdAttribute", value.asInstanceOf[js.Any])
-      
-      inline def setThrowSuggestions(value: Boolean): Self = StObject.set(x, "throwSuggestions", value.asInstanceOf[js.Any])
-    }
+    /**
+      * WARNING: `unstable` prefix means this API may change in patch and minor releases.
+      * @param cb
+      */
+    def unstable_advanceTimersWrapper(cb: js.Function1[/* repeated */ Any, Any]): Any = js.native
   }
   
   type ConfigFn = js.Function1[/* existingConfig */ Config, PartialConfig]

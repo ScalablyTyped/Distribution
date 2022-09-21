@@ -10,15 +10,12 @@ Utility for getting a function's name for node and the browser
 | ------------------ | :-------------: |
 | Full name          | get-func-name |
 | Keywords           | get-func-name, chai util |
-| # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 137177299 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9582716666666668E7 |
+| # stars            | 8.0 |
 
 ## Links
-- [Homepage](https://github.com/chaijs/get-func-name#readme)
-- [Bugs](https://github.com/chaijs/get-func-name/issues)
-- [Repository](https://github.com/chaijs/get-func-name)
 - [Npm](https://www.npmjs.com/package/get-func-name)
     
 

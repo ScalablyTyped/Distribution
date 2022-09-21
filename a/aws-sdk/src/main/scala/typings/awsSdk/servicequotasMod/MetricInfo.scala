@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MetricInfo extends StObject {
   
   /**
-    * A dimension is a name/value pair that is part of the identity of a metric. Every metric has specific characteristics that describe it, and you can think of dimensions as categories for those characteristics. These dimensions are part of the CloudWatch Metric Identity that measures usage against a particular service quota.
+    * The metric dimension. This is a name/value pair that is part of the identity of a metric.
     */
   var MetricDimensions: js.UndefOr[MetricDimensionsMapDefinition] = js.undefined
   
   /**
-    * The name of the CloudWatch metric that measures usage of a service quota. This is a required field.
+    * The name of the metric.
     */
   var MetricName: js.UndefOr[QuotaMetricName] = js.undefined
   
   /**
-    * The namespace of the metric. The namespace is a container for CloudWatch metrics. You can specify a name for the namespace when you create a metric.
+    * The namespace of the metric.
     */
   var MetricNamespace: js.UndefOr[QuotaMetricNamespace] = js.undefined
   
   /**
-    * Statistics are metric data aggregations over specified periods of time. This is the recommended statistic to use when comparing usage in the CloudWatch Metric against your Service Quota.
+    * The metric statistic that we recommend you use when determining quota usage.
     */
   var MetricStatisticRecommendation: js.UndefOr[Statistic] = js.undefined
 }

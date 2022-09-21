@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ToggleParagraphAlignmentJustifyCommand")
 @js.native
-class ToggleParagraphAlignmentJustifyCommand ()
+open class ToggleParagraphAlignmentJustifyCommand ()
   extends StObject
      with typings.devexpressWeb.ToggleParagraphAlignmentJustifyCommand {
   

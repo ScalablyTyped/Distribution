@@ -10,8 +10,7 @@ object personaCoinBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Persona/PersonaCoin/PersonaCoin.base", "PersonaCoinBase")
   @js.native
-  class PersonaCoinBase protected ()
-    extends Component[IPersonaCoinProps, IPersonaState, js.Any] {
+  open class PersonaCoinBase protected () extends Component[IPersonaCoinProps, IPersonaState, Any] {
     def this(props: IPersonaCoinProps) = this()
     
     @JSName("UNSAFE_componentWillReceiveProps")
@@ -20,13 +19,13 @@ object personaCoinBaseMod {
     /**
       * Deprecation helper for getting text.
       */
-    /* private */ var _getText: js.Any = js.native
+    /* private */ var _getText: Any = js.native
     
-    /* private */ var _onPhotoLoadingStateChange: js.Any = js.native
+    /* private */ var _onPhotoLoadingStateChange: Any = js.native
     
-    /* private */ var _onRenderCoin: js.Any = js.native
+    /* private */ var _onRenderCoin: Any = js.native
     
-    /* private */ var _onRenderInitials: js.Any = js.native
+    /* private */ var _onRenderInitials: Any = js.native
   }
   /* static members */
   object PersonaCoinBase {

@@ -52,7 +52,7 @@ object GetPersonTrackingResponse {
     
     inline def setPersonsUndefined: Self = StObject.set(x, "Persons", js.undefined)
     
-    inline def setPersonsVarargs(value: PersonDetection*): Self = StObject.set(x, "Persons", js.Array(value :_*))
+    inline def setPersonsVarargs(value: PersonDetection*): Self = StObject.set(x, "Persons", js.Array(value*))
     
     inline def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     

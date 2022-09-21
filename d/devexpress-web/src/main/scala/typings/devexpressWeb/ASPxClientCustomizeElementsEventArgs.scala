@@ -33,7 +33,7 @@ object ASPxClientCustomizeElementsEventArgs {
     
     inline def setElements(value: js.Array[ASPxReportUIElement]): Self = StObject.set(x, "Elements", value.asInstanceOf[js.Any])
     
-    inline def setElementsVarargs(value: ASPxReportUIElement*): Self = StObject.set(x, "Elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: ASPxReportUIElement*): Self = StObject.set(x, "Elements", js.Array(value*))
     
     inline def setGetById(value: String => js.Array[ASPxReportUIElement]): Self = StObject.set(x, "GetById", js.Any.fromFunction1(value))
   }

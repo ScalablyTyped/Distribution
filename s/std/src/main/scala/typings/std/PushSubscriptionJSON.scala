@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PushSubscriptionJSON extends StObject {
   
+  /* standard dom */
   var endpoint: js.UndefOr[java.lang.String] = js.undefined
   
-  var expirationTime: js.UndefOr[Double | Null] = js.undefined
+  /* standard dom */
+  var expirationTime: js.UndefOr[EpochTimeStamp | Null] = js.undefined
   
+  /* standard dom */
   var keys: js.UndefOr[Record[java.lang.String, java.lang.String]] = js.undefined
 }
 object PushSubscriptionJSON {
@@ -25,7 +28,7 @@ object PushSubscriptionJSON {
     
     inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    inline def setExpirationTime(value: Double): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: EpochTimeStamp): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
     inline def setExpirationTimeNull: Self = StObject.set(x, "expirationTime", null)
     

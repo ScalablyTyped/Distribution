@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "Email")
 @js.native
-class Email protected () extends Model {
-  def this(data: js.Any) = this()
+open class Email protected () extends Model {
+  def this(data: Any) = this()
   
   /** Email sender address.  Required. */
   var from: String = js.native

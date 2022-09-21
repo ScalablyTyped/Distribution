@@ -81,7 +81,7 @@ object experimentalPaginationMod extends Shortcut {
       
       inline def setPageSizesUndefined: Self = StObject.set(x, "pageSizes", js.undefined)
       
-      inline def setPageSizesVarargs(value: Double*): Self = StObject.set(x, "pageSizes", js.Array(value :_*))
+      inline def setPageSizesVarargs(value: Double*): Self = StObject.set(x, "pageSizes", js.Array(value*))
       
       inline def setPageText(value: /* currentPage */ Double => String): Self = StObject.set(x, "pageText", js.Any.fromFunction1(value))
       

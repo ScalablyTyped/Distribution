@@ -23,7 +23,7 @@ object ReturnTypeQueryAXTreeResponse {
     
     inline def setParamsType(value: js.Array[js.UndefOr[QueryAXTreeRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: js.UndefOr[QueryAXTreeRequest]*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: js.UndefOr[QueryAXTreeRequest]*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: QueryAXTreeResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

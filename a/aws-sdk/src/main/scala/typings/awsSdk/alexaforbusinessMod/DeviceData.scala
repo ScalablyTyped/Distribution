@@ -9,7 +9,7 @@ trait DeviceData extends StObject {
   /**
     * The time (in epoch) when the device data was created.
     */
-  var CreatedTime: js.UndefOr[DeviceDataCreatedTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of a device.
@@ -80,7 +80,7 @@ object DeviceData {
   
   extension [Self <: DeviceData](x: Self) {
     
-    inline def setCreatedTime(value: DeviceDataCreatedTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     

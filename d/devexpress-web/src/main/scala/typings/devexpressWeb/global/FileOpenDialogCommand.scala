@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("FileOpenDialogCommand")
 @js.native
-class FileOpenDialogCommand ()
+open class FileOpenDialogCommand ()
   extends StObject
      with typings.devexpressWeb.FileOpenDialogCommand {
   

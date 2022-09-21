@@ -4,24 +4,30 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/// https://novadocs.panic.com/api-reference/color/
-/* Rewritten from type alias, can be one of: 
-  - typings.novaEditorNode.novaEditorNodeStrings.rgb
-  - typings.novaEditorNode.novaEditorNodeStrings.hsl
-  - typings.novaEditorNode.novaEditorNodeStrings.hsb
-  - typings.novaEditorNode.novaEditorNodeStrings.p3
-  - typings.novaEditorNode.novaEditorNodeStrings.hex
-*/
-trait ColorFormat extends StObject
-object ColorFormat {
+@js.native
+sealed trait ColorFormat extends StObject
+/// https://docs.nova.app/api-reference/color/
+@JSGlobal("ColorFormat")
+@js.native
+object ColorFormat extends StObject {
   
-  inline def hex: typings.novaEditorNode.novaEditorNodeStrings.hex = "hex".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.hex]
+  @js.native
+  sealed trait displayP3
+    extends StObject
+       with ColorFormat
   
-  inline def hsb: typings.novaEditorNode.novaEditorNodeStrings.hsb = "hsb".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.hsb]
+  @js.native
+  sealed trait hsb
+    extends StObject
+       with ColorFormat
   
-  inline def hsl: typings.novaEditorNode.novaEditorNodeStrings.hsl = "hsl".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.hsl]
+  @js.native
+  sealed trait hsl
+    extends StObject
+       with ColorFormat
   
-  inline def p3: typings.novaEditorNode.novaEditorNodeStrings.p3 = "p3".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.p3]
-  
-  inline def rgb: typings.novaEditorNode.novaEditorNodeStrings.rgb = "rgb".asInstanceOf[typings.novaEditorNode.novaEditorNodeStrings.rgb]
+  @js.native
+  sealed trait rgb
+    extends StObject
+       with ColorFormat
 }

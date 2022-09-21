@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientProdTtSasportal.anon
 
-import typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasportal.SasPortalCustomer
+import typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasportal.SasPortalNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait AccesstokenAlt extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Output only. Resource name of the customer. */
+  /** Output only. Resource name. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait AccesstokenAlt extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: SasPortalCustomer
+  var resource: SasPortalNode
   
   /** Fields to be updated. */
   var updateMask: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait AccesstokenAlt extends StObject {
 }
 object AccesstokenAlt {
   
-  inline def apply(name: String, resource: SasPortalCustomer): AccesstokenAlt = {
+  inline def apply(name: String, resource: SasPortalNode): AccesstokenAlt = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccesstokenAlt]
   }
@@ -97,7 +97,7 @@ object AccesstokenAlt {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SasPortalCustomer): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SasPortalNode): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

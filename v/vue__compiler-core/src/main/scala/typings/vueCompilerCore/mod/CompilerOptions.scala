@@ -9,8 +9,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.vueCompilerCore.mod.CodegenOptions because var conflicts: bindingMetadata, prefixIdentifiers, scopeId, ssr. Inlined mode, sourceMap, filename, optimizeImports, runtimeModuleName, runtimeGlobalName
-- typings.vueCompilerCore.mod.TransformOptions because var conflicts: isBuiltInComponent, isCustomElement, onError. Inlined nodeTransforms, directiveTransforms, transformHoist, prefixIdentifiers, hoistStatic, cacheHandlers, expressionPlugins, scopeId, ssr, ssrCssVars, bindingMetadata */ trait CompilerOptions
+- typings.vueCompilerCore.mod.CompilerCompatOptions because Already inherited
+- typings.vueCompilerCore.mod.ErrorHandlingOptions because Already inherited
+- typings.vueCompilerCore.mod.SharedTransformCodegenOptions because var conflicts: prefixIdentifiers. Inlined ssr, inSSR, bindingMetadata, `inline`, isTS, filename
+- typings.vueCompilerCore.mod.CodegenOptions because var conflicts: prefixIdentifiers, scopeId. Inlined mode, sourceMap, optimizeImports, runtimeModuleName, ssrRuntimeModuleName, runtimeGlobalName
+- typings.vueCompilerCore.mod.TransformOptions because var conflicts: compatConfig, isBuiltInComponent, isCustomElement, onError, onWarn. Inlined nodeTransforms, directiveTransforms, transformHoist, prefixIdentifiers, hoistStatic, cacheHandlers, expressionPlugins, scopeId, slotted, ssrCssVars */ trait CompilerOptions
   extends StObject
      with ParserOptions {
   
@@ -49,6 +52,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   /**
     * Filename for source map generation.
+    * Also used for self-recursive reference in templates
     * @default 'template.vue.html'
     */
   var filename: js.UndefOr[String] = js.undefined
@@ -58,6 +62,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @default false
     */
   var hoistStatic: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates whether the compiler generates code for SSR,
+    * it is always true when generating code for SSR,
+    * regardless of whether we are generating code for SSR's fallback branch,
+    * this means that when the compiler generates code for SSR's fallback branch:
+    *  - context.ssr = false
+    *  - context.inSSR = true
+    */
+  var inSSR: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Compile the function for inlining inside setup().
+    * This allows the function to directly access setup() local bindings.
+    */
+  var `inline`: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates that transforms and codegen should try to output valid TS code
+    */
+  var isTS: js.UndefOr[Boolean] = js.undefined
   
   /**
     * - `module` mode will generate ES module import statements for helpers
@@ -111,23 +136,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var scopeId: js.UndefOr[String | Null] = js.undefined
   
   /**
+    * Indicates this SFC template has used :slotted in its styles
+    * Defaults to `true` for backwards compatibility - SFC tooling should set it
+    * to `false` if no `:slotted` usage is detected in `<style>`
+    */
+  var slotted: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Generate source map?
     * @default false
     */
   var sourceMap: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Generate SSR-optimized render functions instead.
+    * Control whether generate SSR-optimized render functions instead.
     * The resulting function must be attached to the component via the
     * `ssrRender` option instead of `render`.
+    *
+    * When compiler generates code for SSR's fallback branch, we need to set it to false:
+    *  - context.ssr = false
+    *
+    * see `subTransform` in `ssrTransformComponent.ts`
     */
   var ssr: js.UndefOr[Boolean] = js.undefined
   
   /**
     * SFC `<style vars>` injection string
+    * Should already be an object expression, e.g. `{ 'xxxx-color': color }`
     * needed to render inline CSS variables on component root
     */
   var ssrCssVars: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Customize where to import ssr runtime helpers from/ **
+    * @default 'vue/server-renderer'
+    */
+  var ssrRuntimeModuleName: js.UndefOr[String] = js.undefined
   
   /**
     * An optional hook to transform a node being hoisted.
@@ -161,7 +205,7 @@ object CompilerOptions {
     
     inline def setExpressionPluginsUndefined: Self = StObject.set(x, "expressionPlugins", js.undefined)
     
-    inline def setExpressionPluginsVarargs(value: ParserPlugin*): Self = StObject.set(x, "expressionPlugins", js.Array(value :_*))
+    inline def setExpressionPluginsVarargs(value: ParserPlugin*): Self = StObject.set(x, "expressionPlugins", js.Array(value*))
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
@@ -171,6 +215,18 @@ object CompilerOptions {
     
     inline def setHoistStaticUndefined: Self = StObject.set(x, "hoistStatic", js.undefined)
     
+    inline def setInSSR(value: Boolean): Self = StObject.set(x, "inSSR", value.asInstanceOf[js.Any])
+    
+    inline def setInSSRUndefined: Self = StObject.set(x, "inSSR", js.undefined)
+    
+    inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    
+    inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+    
+    inline def setIsTS(value: Boolean): Self = StObject.set(x, "isTS", value.asInstanceOf[js.Any])
+    
+    inline def setIsTSUndefined: Self = StObject.set(x, "isTS", js.undefined)
+    
     inline def setMode(value: module | function): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
@@ -179,7 +235,7 @@ object CompilerOptions {
     
     inline def setNodeTransformsUndefined: Self = StObject.set(x, "nodeTransforms", js.undefined)
     
-    inline def setNodeTransformsVarargs(value: NodeTransform*): Self = StObject.set(x, "nodeTransforms", js.Array(value :_*))
+    inline def setNodeTransformsVarargs(value: NodeTransform*): Self = StObject.set(x, "nodeTransforms", js.Array(value*))
     
     inline def setOptimizeImports(value: Boolean): Self = StObject.set(x, "optimizeImports", value.asInstanceOf[js.Any])
     
@@ -203,6 +259,10 @@ object CompilerOptions {
     
     inline def setScopeIdUndefined: Self = StObject.set(x, "scopeId", js.undefined)
     
+    inline def setSlotted(value: Boolean): Self = StObject.set(x, "slotted", value.asInstanceOf[js.Any])
+    
+    inline def setSlottedUndefined: Self = StObject.set(x, "slotted", js.undefined)
+    
     inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
     
     inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
@@ -212,6 +272,10 @@ object CompilerOptions {
     inline def setSsrCssVars(value: String): Self = StObject.set(x, "ssrCssVars", value.asInstanceOf[js.Any])
     
     inline def setSsrCssVarsUndefined: Self = StObject.set(x, "ssrCssVars", js.undefined)
+    
+    inline def setSsrRuntimeModuleName(value: String): Self = StObject.set(x, "ssrRuntimeModuleName", value.asInstanceOf[js.Any])
+    
+    inline def setSsrRuntimeModuleNameUndefined: Self = StObject.set(x, "ssrRuntimeModuleName", js.undefined)
     
     inline def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
     

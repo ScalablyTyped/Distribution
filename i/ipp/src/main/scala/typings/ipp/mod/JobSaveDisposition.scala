@@ -27,6 +27,6 @@ object JobSaveDisposition {
     
     inline def `setSave-infoUndefined`: Self = StObject.set(x, "save-info", js.undefined)
     
-    inline def `setSave-infoVarargs`(value: SaveInfo*): Self = StObject.set(x, "save-info", js.Array(value :_*))
+    inline def `setSave-infoVarargs`(value: SaveInfo*): Self = StObject.set(x, "save-info", js.Array(value*))
   }
 }

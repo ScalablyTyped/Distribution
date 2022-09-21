@@ -11,9 +11,9 @@ Adds a 'ttl' option to LevelUP for puts and batches
 | Full name          | level-ttl |
 | Keywords           | leveldb, levelup, level, ttl, whoa dude! |
 | # releases         | 1 |
-| # dependents       | 29 |
-| # downloads        | 17746 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 673.3333333333334 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/level/level-ttl)

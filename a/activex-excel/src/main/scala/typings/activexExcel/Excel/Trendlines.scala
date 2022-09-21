@@ -16,7 +16,7 @@ trait Trendlines extends StObject {
     Period: js.UndefOr[Double],
     Forward: js.UndefOr[Double],
     Backward: js.UndefOr[Double],
-    Intercept: js.UndefOr[js.Any],
+    Intercept: js.UndefOr[Any],
     DisplayEquation: js.UndefOr[Boolean],
     DisplayRSquared: js.UndefOr[Boolean],
     Name: js.UndefOr[String]
@@ -30,8 +30,8 @@ trait Trendlines extends StObject {
   
   def Item(Index: Double): Trendline = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Default(): Trendline = js.native
-  def _Default(Index: js.Any): Trendline = js.native
+  def _Default(Index: Any): Trendline = js.native
 }

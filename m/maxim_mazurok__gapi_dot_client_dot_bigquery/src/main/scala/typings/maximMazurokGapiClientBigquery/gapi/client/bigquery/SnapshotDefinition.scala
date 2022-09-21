@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SnapshotDefinition extends StObject {
   
-  /** [Required] Reference describing the ID of the table that is snapshotted. */
+  /** [Required] Reference describing the ID of the table that was snapshot. */
   var baseTableReference: js.UndefOr[TableReference] = js.undefined
   
-  /** [Required] The time at which the base table was snapshot. */
+  /** [Required] The time at which the base table was snapshot. This value is reported in the JSON response using RFC3339 format. */
   var snapshotTime: js.UndefOr[String] = js.undefined
 }
 object SnapshotDefinition {

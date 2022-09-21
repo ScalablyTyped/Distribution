@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel PivotItem.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @js.native
@@ -26,17 +26,17 @@ trait PivotItem
   var context_PivotItem: RequestContext = js.native
   
   /**
+    * ID of the PivotItem.
     *
-    * Id of the PivotItem.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val id: String = js.native
   
   /**
-    *
     * Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var isExpanded: Boolean = js.native
@@ -53,21 +53,15 @@ trait PivotItem
   def load(propertyNames: js.Array[String]): PivotItem = js.native
   
   /**
-    *
     * Name of the PivotItem.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var name: String = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.PivotItem): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -83,9 +77,9 @@ trait PivotItem
   def toJSON(): PivotItemData = js.native
   
   /**
-    *
     * Specifies if the PivotItem is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var visible: Boolean = js.native

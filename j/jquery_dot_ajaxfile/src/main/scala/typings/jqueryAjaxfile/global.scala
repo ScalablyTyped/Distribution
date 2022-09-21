@@ -24,12 +24,12 @@ object global {
     
     @JSGlobal("Chai.AssertionError")
     @js.native
-    class AssertionError protected ()
+    open class AssertionError protected ()
       extends StObject
          with typings.jqueryAjaxfile.Chai.AssertionError {
       def this(message: String) = this()
-      def this(message: String, _props: js.Any) = this()
-      def this(message: String, _props: js.Any, ssf: js.Function) = this()
+      def this(message: String, _props: Any) = this()
+      def this(message: String, _props: Any, ssf: js.Function) = this()
       def this(message: String, _props: Unit, ssf: js.Function) = this()
       
       /* CompleteClass */
@@ -62,7 +62,7 @@ object global {
   
   @JSGlobal("Mocha")
   @js.native
-  class Mocha_ ()
+  open class Mocha_ ()
     extends StObject
        with Mocha {
     def this(options: Bail) = this()
@@ -74,7 +74,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.Base")
       @js.native
-      class Base protected ()
+      open class Base protected ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         def this(runner: IRunner) = this()
@@ -85,7 +85,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.Doc")
       @js.native
-      class Doc ()
+      open class Doc ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         
@@ -95,7 +95,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.Dot")
       @js.native
-      class Dot ()
+      open class Dot ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         
@@ -105,7 +105,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.HTML")
       @js.native
-      class HTML ()
+      open class HTML ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         
@@ -115,7 +115,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.HTMLCov")
       @js.native
-      class HTMLCov ()
+      open class HTMLCov ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         
@@ -125,7 +125,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.JSON")
       @js.native
-      class JSON ()
+      open class JSON ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         
@@ -135,7 +135,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.JSONCov")
       @js.native
-      class JSONCov ()
+      open class JSONCov ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         
@@ -145,7 +145,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.JSONStream")
       @js.native
-      class JSONStream ()
+      open class JSONStream ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         
@@ -155,7 +155,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.Landing")
       @js.native
-      class Landing ()
+      open class Landing ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         
@@ -165,7 +165,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.List")
       @js.native
-      class List ()
+      open class List ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         
@@ -175,7 +175,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.Markdown")
       @js.native
-      class Markdown ()
+      open class Markdown ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         
@@ -185,7 +185,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.Min")
       @js.native
-      class Min ()
+      open class Min ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         
@@ -195,7 +195,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.Nyan")
       @js.native
-      class Nyan ()
+      open class Nyan ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         
@@ -205,7 +205,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.Progress")
       @js.native
-      class Progress protected ()
+      open class Progress protected ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         /**
@@ -223,7 +223,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.Spec")
       @js.native
-      class Spec ()
+      open class Spec ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         
@@ -233,7 +233,7 @@ object global {
       
       @JSGlobal("Mocha.reporters.TAP")
       @js.native
-      class TAP ()
+      open class TAP ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         
@@ -243,11 +243,11 @@ object global {
       
       @JSGlobal("Mocha.reporters.XUnit")
       @js.native
-      class XUnit protected ()
+      open class XUnit protected ()
         extends StObject
            with typings.jqueryAjaxfile.Mocha.reporters.Base {
         def this(runner: IRunner) = this()
-        def this(runner: IRunner, options: js.Any) = this()
+        def this(runner: IRunner, options: Any) = this()
         
         /* CompleteClass */
         var stats: Failures = js.native
@@ -264,11 +264,11 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("$.Event")
     @js.native
-    class Event protected ()
+    open class Event protected ()
       extends StObject
          with JQueryEventObject {
       def this(name: String) = this()
-      def this(name: String, eventProperties: js.Any) = this()
+      def this(name: String, eventProperties: Any) = this()
     }
     
     type _To = JQueryStatic
@@ -319,11 +319,11 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("jQuery.Event")
     @js.native
-    class Event protected ()
+    open class Event protected ()
       extends StObject
          with JQueryEventObject {
       def this(name: String) = this()
-      def this(name: String, eventProperties: js.Any) = this()
+      def this(name: String, eventProperties: Any) = this()
     }
     
     type _To = JQueryStatic
@@ -342,7 +342,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("ko.bindingProvider")
     @js.native
-    class bindingProvider ()
+    open class bindingProvider ()
       extends StObject
          with KnockoutBindingProvider {
       
@@ -359,14 +359,14 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("ko.nativeTemplateEngine")
     @js.native
-    class nativeTemplateEngine ()
+    open class nativeTemplateEngine ()
       extends StObject
          with KnockoutNativeTemplateEngine
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("ko.subscribable")
     @js.native
-    class subscribable[T] ()
+    open class subscribable[T] ()
       extends StObject
          with KnockoutSubscribable[T]
     
@@ -376,7 +376,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("ko.templateEngine")
     @js.native
-    class templateEngine ()
+    open class templateEngine ()
       extends StObject
          with KnockoutTemplateEngine
     

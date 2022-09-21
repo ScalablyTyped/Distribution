@@ -1,6 +1,6 @@
 package typings.ionicUtilsStream
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.node.streamMod.ReadableOptions
 import typings.node.streamMod.Writable
@@ -17,15 +17,15 @@ object mod {
   
   @JSImport("@ionic/utils-stream", "NullStream")
   @js.native
-  class NullStream () extends Writable {
+  open class NullStream () extends Writable {
     def this(opts: WritableOptions) = this()
     
-    def _write(chunk: js.Any, encoding: String, callback: js.Function0[Unit]): Unit = js.native
+    def _write(chunk: Any, encoding: String, callback: js.Function0[Unit]): Unit = js.native
   }
   
   @JSImport("@ionic/utils-stream", "ReadableStreamBuffer")
   @js.native
-  class ReadableStreamBuffer () extends Readable {
+  open class ReadableStreamBuffer () extends Readable {
     def this(opts: ReadableStreamBufferOptions) = this()
     
     def _read(): Unit = js.native
@@ -56,12 +56,12 @@ object mod {
   
   @JSImport("@ionic/utils-stream", "WritableStreamBuffer")
   @js.native
-  class WritableStreamBuffer () extends Writable {
+  open class WritableStreamBuffer () extends Writable {
     def this(opts: WritableStreamBufferOptions) = this()
     
     /* protected */ var _size: Double = js.native
     
-    def _write(chunk: js.Any, encoding: String, callback: js.Function0[Unit]): Unit = js.native
+    def _write(chunk: Any, encoding: String, callback: js.Function0[Unit]): Unit = js.native
     
     /* protected */ var buffer: Buffer = js.native
     

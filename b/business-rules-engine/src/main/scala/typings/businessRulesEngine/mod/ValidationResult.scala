@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("business-rules-engine", "ValidationResult")
 @js.native
-class ValidationResult protected ()
+open class ValidationResult protected ()
   extends StObject
      with IValidationResult {
   def this(Name: String) = this()

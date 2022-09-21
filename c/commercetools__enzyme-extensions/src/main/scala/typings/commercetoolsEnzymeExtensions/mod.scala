@@ -24,12 +24,10 @@ object mod {
       
       def drill(
         expander: js.Function1[
-              /* props */ js.Any, 
+              /* props */ Any, 
               typings.commercetoolsEnzymeExtensions.mod.enzymeAugmentingMod.ShallowWrapper[js.Object]
             ]
       ): typings.commercetoolsEnzymeExtensions.mod.enzymeAugmentingMod.ShallowWrapper[P] = js.native
-      
-      def renderProp(propName: String, args: js.Any*): typings.commercetoolsEnzymeExtensions.mod.enzymeAugmentingMod.ShallowWrapper[P] = js.native
       
       def until(selector: EnzymeSelector): typings.commercetoolsEnzymeExtensions.mod.enzymeAugmentingMod.ShallowWrapper[P] = js.native
       def until(selector: EnzymeSelector, options: UntilOptions): typings.commercetoolsEnzymeExtensions.mod.enzymeAugmentingMod.ShallowWrapper[P] = js.native

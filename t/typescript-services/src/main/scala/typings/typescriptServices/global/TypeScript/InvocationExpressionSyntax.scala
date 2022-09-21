@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.InvocationExpressionSyntax")
 @js.native
-class InvocationExpressionSyntax protected ()
+open class InvocationExpressionSyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.InvocationExpressionSyntax {
   def this(
@@ -22,7 +22,7 @@ class InvocationExpressionSyntax protected ()
   ) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): ISyntaxElement = js.native

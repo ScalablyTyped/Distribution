@@ -11,6 +11,8 @@ trait FillSymbol3DLayerProperties
   /**
     * Indicates whether the symbol layer geometry casts shadows in the scene.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#castShadows)
     */
   var castShadows: js.UndefOr[Boolean] = js.undefined

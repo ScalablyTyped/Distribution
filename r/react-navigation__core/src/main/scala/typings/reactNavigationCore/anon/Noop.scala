@@ -16,6 +16,11 @@ trait Noop extends StObject {
     * Whether the action was a no-op, i.e. resulted any state changes.
     */
   var noop: Boolean
+  
+  /**
+    * Stack trace of the action, this will only be available during development.
+    */
+  var stack: js.UndefOr[String] = js.undefined
 }
 object Noop {
   
@@ -29,5 +34,9 @@ object Noop {
     inline def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     inline def setNoop(value: Boolean): Self = StObject.set(x, "noop", value.asInstanceOf[js.Any])
+    
+    inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
   }
 }

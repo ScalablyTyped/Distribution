@@ -8,5 +8,5 @@ object getBucketReplicationInputMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/GetBucketReplicationInput", "GetBucketReplicationInput")
   @js.native
-  val GetBucketReplicationInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetBucketReplicationInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

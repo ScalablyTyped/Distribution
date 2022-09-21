@@ -17,9 +17,9 @@ trait ReadonlyPromiseSearchUser extends StObject {
 object ReadonlyPromiseSearchUser {
   
   inline def apply(
-    `catch`: () => js.Promise[SearchUserIDsResponse | js.Any],
+    `catch`: () => js.Promise[SearchUserIDsResponse | Any],
     `finally`: () => js.Promise[SearchUserIDsResponse],
-    `then`: () => js.Promise[js.Any | js.Any]
+    `then`: () => js.Promise[Any | Any]
   ): ReadonlyPromiseSearchUser = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("catch")(js.Any.fromFunction0(`catch`))
@@ -30,10 +30,10 @@ object ReadonlyPromiseSearchUser {
   
   extension [Self <: ReadonlyPromiseSearchUser](x: Self) {
     
-    inline def setCatch(value: () => js.Promise[SearchUserIDsResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[SearchUserIDsResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
     inline def setFinally(value: () => js.Promise[SearchUserIDsResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[Any | Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

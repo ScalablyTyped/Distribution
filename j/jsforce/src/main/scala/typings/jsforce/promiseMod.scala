@@ -8,7 +8,7 @@ object promiseMod {
   
   @JSImport("jsforce/promise", "Promise")
   @js.native
-  class Promise () extends StObject {
+  open class Promise () extends StObject {
     
     def thenCall(cb: js.Function0[Unit]): Unit = js.native
   }

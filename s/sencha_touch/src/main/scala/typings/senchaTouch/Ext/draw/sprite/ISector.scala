@@ -34,7 +34,7 @@ trait ISector
     * @param attr Object
     */
   @JSName("updatePath")
-  var updatePath_ISector: js.UndefOr[js.Function2[/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var updatePath_ISector: js.UndefOr[js.Function2[/* path */ js.UndefOr[Any], /* attr */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object ISector {
   
@@ -73,7 +73,7 @@ object ISector {
     
     inline def setStartRhoUndefined: Self = StObject.set(x, "startRho", js.undefined)
     
-    inline def setUpdatePath(value: (/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
+    inline def setUpdatePath(value: (/* path */ js.UndefOr[Any], /* attr */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
     
     inline def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
   }

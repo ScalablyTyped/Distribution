@@ -36,6 +36,12 @@ trait OrganizationSettings extends StObject {
   var languageId: Double
   
   /**
+    * Returns the region of the current organization.
+    * @see {@link https://docs.microsoft.com/en-us/power-platform/admin/geo-to-geo-migrations External Link: Geo to geo migrations}
+    */
+  var organizationGeo: String
+  
+  /**
     * Returns the ID of the current organization.
     */
   var organizationId: String
@@ -58,11 +64,12 @@ object OrganizationSettings {
     defaultCountryCode: String,
     isAutoSaveEnabled: Boolean,
     languageId: Double,
+    organizationGeo: String,
     organizationId: String,
     uniqueName: String,
     useSkypeProtocol: Boolean
   ): OrganizationSettings = {
-    val __obj = js.Dynamic.literal(baseCurrency = baseCurrency.asInstanceOf[js.Any], baseCurrencyId = baseCurrencyId.asInstanceOf[js.Any], defaultCountryCode = defaultCountryCode.asInstanceOf[js.Any], isAutoSaveEnabled = isAutoSaveEnabled.asInstanceOf[js.Any], languageId = languageId.asInstanceOf[js.Any], organizationId = organizationId.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any], useSkypeProtocol = useSkypeProtocol.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(baseCurrency = baseCurrency.asInstanceOf[js.Any], baseCurrencyId = baseCurrencyId.asInstanceOf[js.Any], defaultCountryCode = defaultCountryCode.asInstanceOf[js.Any], isAutoSaveEnabled = isAutoSaveEnabled.asInstanceOf[js.Any], languageId = languageId.asInstanceOf[js.Any], organizationGeo = organizationGeo.asInstanceOf[js.Any], organizationId = organizationId.asInstanceOf[js.Any], uniqueName = uniqueName.asInstanceOf[js.Any], useSkypeProtocol = useSkypeProtocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationSettings]
   }
   
@@ -77,6 +84,8 @@ object OrganizationSettings {
     inline def setIsAutoSaveEnabled(value: Boolean): Self = StObject.set(x, "isAutoSaveEnabled", value.asInstanceOf[js.Any])
     
     inline def setLanguageId(value: Double): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
+    
+    inline def setOrganizationGeo(value: String): Self = StObject.set(x, "organizationGeo", value.asInstanceOf[js.Any])
     
     inline def setOrganizationId(value: String): Self = StObject.set(x, "organizationId", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Merge multiple images into a single image
 | ------------------ | :-------------: |
 | Full name          | merge-img |
 | Keywords           | concat, convert, compose, image, manipulation, merge |
-| # releases         | 2 |
-| # dependents       | 19 |
-| # downloads        | 1765715 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 69341.0 |
+| # stars            | 75.0 |
 
 ## Links
 - [Homepage](https://github.com/preco21/merge-img#readme)

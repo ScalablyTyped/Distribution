@@ -3,7 +3,6 @@ package typings.phaser.Phaser.Loader
 import typings.phaser.Phaser.Cache.BaseCache
 import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
-import typings.phaser.integer
 import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
@@ -43,7 +42,7 @@ trait File extends StObject {
   /**
     * A config object that can be used by file types to store transitional data.
     */
-  var config: js.Any
+  var config: Any
   
   /**
     * For CORs based loading.
@@ -54,7 +53,7 @@ trait File extends StObject {
   /**
     * The processed file data, stored here after the file has loaded.
     */
-  var data: js.Any
+  var data: Any
   
   /**
     * Destroy this File and any references it holds.
@@ -168,7 +167,7 @@ trait File extends StObject {
   /**
     * The current state of the file. One of the FILE_CONST values.
     */
-  var state: integer
+  var state: Double
   
   /**
     * The file type string (image, json, etc) for sorting within the Loader.
@@ -201,8 +200,8 @@ object File {
     bytesLoaded: Double,
     bytesTotal: Double,
     cache: BaseCache | TextureManager,
-    config: js.Any,
-    data: js.Any,
+    config: Any,
+    data: Any,
     destroy: () => Unit,
     hasCacheConflict: () => Boolean,
     key: String,
@@ -221,7 +220,7 @@ object File {
     resetXHR: () => Unit,
     setLink: File => Unit,
     src: String,
-    state: integer,
+    state: Double,
     `type`: String,
     url: js.Object | String,
     xhrLoader: XMLHttpRequest,
@@ -242,13 +241,13 @@ object File {
     
     inline def setCache(value: BaseCache | TextureManager): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
@@ -286,7 +285,7 @@ object File {
     
     inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    inline def setState(value: integer): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

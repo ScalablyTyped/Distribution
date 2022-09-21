@@ -9,7 +9,7 @@ object arcCurveMod {
   
   @JSImport("three/src/extras/curves/ArcCurve", "ArcCurve")
   @js.native
-  class ArcCurve protected () extends EllipseCurve {
+  open class ArcCurve protected () extends EllipseCurve {
     def this(
       aX: Double,
       aY: Double,

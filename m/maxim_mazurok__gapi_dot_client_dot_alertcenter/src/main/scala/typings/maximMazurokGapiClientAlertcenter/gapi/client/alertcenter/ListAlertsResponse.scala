@@ -28,7 +28,7 @@ object ListAlertsResponse {
     
     inline def setAlertsUndefined: Self = StObject.set(x, "alerts", js.undefined)
     
-    inline def setAlertsVarargs(value: Alert*): Self = StObject.set(x, "alerts", js.Array(value :_*))
+    inline def setAlertsVarargs(value: Alert*): Self = StObject.set(x, "alerts", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

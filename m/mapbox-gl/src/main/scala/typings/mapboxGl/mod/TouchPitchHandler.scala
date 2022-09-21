@@ -6,12 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "TouchPitchHandler")
 @js.native
-class TouchPitchHandler protected () extends StObject {
+open class TouchPitchHandler protected () extends StObject {
   def this(map: Map) = this()
   
   def disable(): Unit = js.native
   
   def enable(): Unit = js.native
+  def enable(options: InteractiveOptions): Unit = js.native
   
   def isActive(): Boolean = js.native
   

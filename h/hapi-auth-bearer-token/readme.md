@@ -10,15 +10,12 @@ Simple Bearer authentication scheme plugin for hapi, accepts token by Header, Co
 | ------------------ | :-------------: |
 | Full name          | hapi-auth-bearer-token |
 | Keywords           | hapi, plugin, auth, scheme, bearer, token, cookie, authentication |
-| # releases         | 9 |
-| # dependents       | 33 |
-| # downloads        | 565369 |
-| # stars            | 5 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 92538.0 |
+| # stars            | 218.0 |
 
 ## Links
-- [Homepage](https://github.com/johnbrett/hapi-auth-bearer-token)
-- [Bugs](https://github.com/johnbrett/hapi-auth-bearer-token/issues)
-- [Repository](https://github.com/johnbrett/hapi-auth-bearer-token)
 - [Npm](https://www.npmjs.com/package/hapi-auth-bearer-token)
     
 

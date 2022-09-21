@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IMsoHiLoLines extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Border: IMsoBorder
   
@@ -21,21 +21,21 @@ trait IMsoHiLoLines extends StObject {
   /* private */ @JSName("Office.IMsoHiLoLines_typekey")
   var OfficeDotIMsoHiLoLines_typekey: IMsoHiLoLines
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Select(): Unit
 }
 object IMsoHiLoLines {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Border: IMsoBorder,
     Creator: Double,
     Delete: () => Unit,
     Format: IMsoChartFormat,
     Name: String,
     OfficeDotIMsoHiLoLines_typekey: IMsoHiLoLines,
-    Parent: js.Any,
+    Parent: Any,
     Select: () => Unit
   ): IMsoHiLoLines = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Border = Border.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Format = Format.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Select = js.Any.fromFunction0(Select))
@@ -45,7 +45,7 @@ object IMsoHiLoLines {
   
   extension [Self <: IMsoHiLoLines](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setBorder(value: IMsoBorder): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
@@ -59,7 +59,7 @@ object IMsoHiLoLines {
     
     inline def setOfficeDotIMsoHiLoLines_typekey(value: IMsoHiLoLines): Self = StObject.set(x, "Office.IMsoHiLoLines_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
   }

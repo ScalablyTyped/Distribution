@@ -6,11 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Randomstring {
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.randomstring.randomstringStrings.lowercase
+    - typings.randomstring.randomstringStrings.uppercase
+  */
+  trait Capitalization extends StObject
+  object Capitalization {
+    
+    inline def lowercase: typings.randomstring.randomstringStrings.lowercase = "lowercase".asInstanceOf[typings.randomstring.randomstringStrings.lowercase]
+    
+    inline def uppercase: typings.randomstring.randomstringStrings.uppercase = "uppercase".asInstanceOf[typings.randomstring.randomstringStrings.uppercase]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.randomstring.randomstringStrings.alphanumeric
+    - typings.randomstring.randomstringStrings.alphabetic
+    - typings.randomstring.randomstringStrings.numeric
+    - typings.randomstring.randomstringStrings.hex
+    - typings.randomstring.randomstringStrings.binary
+    - typings.randomstring.randomstringStrings.octal
+    - java.lang.String
+  */
+  type Charset = _Charset | String
+  
   trait GenerateOptions extends StObject {
     
-    var capitalization: js.UndefOr[String] = js.undefined
+    var capitalization: js.UndefOr[Capitalization] = js.undefined
     
-    var charset: js.UndefOr[String] = js.undefined
+    var charset: js.UndefOr[Charset] = js.undefined
     
     var length: js.UndefOr[Double] = js.undefined
     
@@ -25,11 +48,11 @@ object Randomstring {
     
     extension [Self <: GenerateOptions](x: Self) {
       
-      inline def setCapitalization(value: String): Self = StObject.set(x, "capitalization", value.asInstanceOf[js.Any])
+      inline def setCapitalization(value: Capitalization): Self = StObject.set(x, "capitalization", value.asInstanceOf[js.Any])
       
       inline def setCapitalizationUndefined: Self = StObject.set(x, "capitalization", js.undefined)
       
-      inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: Charset): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
       inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
       
@@ -42,4 +65,6 @@ object Randomstring {
       inline def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
     }
   }
+  
+  trait _Charset extends StObject
 }

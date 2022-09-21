@@ -27,7 +27,7 @@ trait ElementAnimateOptionsBase extends StObject {
   var step: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** An object containing name-value pairs of style properties to animate. */
-  var style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var style: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
 object ElementAnimateOptionsBase {
   
@@ -58,7 +58,7 @@ object ElementAnimateOptionsBase {
     
     inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    inline def setStyle(value: StringDictionary[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StringDictionary[Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }

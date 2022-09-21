@@ -10,8 +10,8 @@ object uidMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def generateUID(): js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUID")().asInstanceOf[js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]]
+  inline def generateUID(): js.Function2[/* item */ Any, /* index */ js.UndefOr[Double], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUID")().asInstanceOf[js.Function2[/* item */ Any, /* index */ js.UndefOr[Double], String]]
   
-  inline def uid(item: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")(item.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def uid(item: js.Any, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("uid")(item.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def uid(item: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def uid(item: Any, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("uid")(item.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
 }

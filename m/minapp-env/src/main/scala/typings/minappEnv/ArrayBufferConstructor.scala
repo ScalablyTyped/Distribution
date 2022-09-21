@@ -10,5 +10,5 @@ trait ArrayBufferConstructor
   extends StObject
      with Instantiable1[/* byteLength */ Double, ArrayBuffer] {
   
-  def isView(arg: js.Any): /* is minapp-env.ArrayBufferView */ scala.Boolean = js.native
+  def isView(arg: Any): /* is minapp-env.ArrayBufferView */ scala.Boolean = js.native
 }

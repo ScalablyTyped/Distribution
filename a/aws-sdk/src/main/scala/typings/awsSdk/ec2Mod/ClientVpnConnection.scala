@@ -129,7 +129,7 @@ object ClientVpnConnection {
     
     inline def setPostureComplianceStatusesUndefined: Self = StObject.set(x, "PostureComplianceStatuses", js.undefined)
     
-    inline def setPostureComplianceStatusesVarargs(value: String*): Self = StObject.set(x, "PostureComplianceStatuses", js.Array(value :_*))
+    inline def setPostureComplianceStatusesVarargs(value: String*): Self = StObject.set(x, "PostureComplianceStatuses", js.Array(value*))
     
     inline def setStatus(value: ClientVpnConnectionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

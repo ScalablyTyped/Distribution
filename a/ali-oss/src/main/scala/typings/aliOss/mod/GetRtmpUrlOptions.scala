@@ -6,12 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetRtmpUrlOptions extends StObject {
   
+  /** the expire time in seconds of the url */
   var expires: js.UndefOr[Double] = js.undefined
   
-  // the expire time in seconds of the url
+  /** the additional parameters for url, e.g.: {playlistName: 'play.m3u8'} */
   var params: js.UndefOr[js.Object] = js.undefined
   
-  // the additional parameters for url, e.g.: {playlistName: 'play.m3u8'}
+  /** the operation timeout */
   var timeout: js.UndefOr[Double] = js.undefined
 }
 object GetRtmpUrlOptions {

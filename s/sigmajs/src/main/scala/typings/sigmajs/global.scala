@@ -24,7 +24,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("sigma")
   @js.native
-  class sigma ()
+  open class sigma ()
     extends StObject
        with Sigma {
     def this(configuration: SigmaConfigs) = this()

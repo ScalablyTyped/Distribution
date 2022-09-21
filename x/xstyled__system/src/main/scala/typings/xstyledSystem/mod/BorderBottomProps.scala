@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.BorderBottom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BorderBottomProps[TLength] extends StObject {
   
-  val borderBottom: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val borderBottom: js.UndefOr[ResponsiveValue[BorderBottom[TLength]]] = js.undefined
 }
 object BorderBottomProps {
   
@@ -21,16 +18,10 @@ object BorderBottomProps {
   
   extension [Self <: BorderBottomProps[?], TLength](x: Self & BorderBottomProps[TLength]) {
     
-    inline def setBorderBottom(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+    inline def setBorderBottom(value: ResponsiveValue[BorderBottom[TLength]]): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
     inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
     
-    inline def setBorderBottomVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderBottom<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "borderBottom", js.Array(value :_*))
+    inline def setBorderBottomVarargs(value: BorderBottom[TLength]*): Self = StObject.set(x, "borderBottom", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 package typings.materialCircularProgress
 
+import typings.materialBase.Element
 import typings.materialCircularProgress.anon.PartialMDCCircularProgres
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +10,13 @@ object mod {
   
   @JSImport("@material/circular-progress", "MDCCircularProgress")
   @js.native
-  class MDCCircularProgress protected ()
+  open class MDCCircularProgress protected ()
     extends typings.materialCircularProgress.componentMod.MDCCircularProgress {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialCircularProgress.foundationMod.MDCCircularProgressFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -26,12 +26,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialCircularProgress.componentMod.MDCCircularProgress = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialCircularProgress.componentMod.MDCCircularProgress]
+    inline def attachTo(root: typings.std.Element): typings.materialCircularProgress.componentMod.MDCCircularProgress = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialCircularProgress.componentMod.MDCCircularProgress]
   }
   
   @JSImport("@material/circular-progress", "MDCCircularProgressFoundation")
   @js.native
-  class MDCCircularProgressFoundation ()
+  open class MDCCircularProgressFoundation ()
     extends typings.materialCircularProgress.foundationMod.MDCCircularProgressFoundation {
     def this(adapter: PartialMDCCircularProgres) = this()
   }
@@ -58,6 +58,11 @@ object mod {
     @JSImport("@material/circular-progress", "strings")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("@material/circular-progress", "strings.ARIA_HIDDEN")
+    @js.native
+    def ARIA_HIDDEN: String = js.native
+    inline def ARIA_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_HIDDEN")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/circular-progress", "strings.ARIA_VALUENOW")
     @js.native

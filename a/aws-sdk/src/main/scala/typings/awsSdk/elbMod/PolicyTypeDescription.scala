@@ -38,7 +38,7 @@ object PolicyTypeDescription {
     
     inline def setPolicyAttributeTypeDescriptionsUndefined: Self = StObject.set(x, "PolicyAttributeTypeDescriptions", js.undefined)
     
-    inline def setPolicyAttributeTypeDescriptionsVarargs(value: PolicyAttributeTypeDescription*): Self = StObject.set(x, "PolicyAttributeTypeDescriptions", js.Array(value :_*))
+    inline def setPolicyAttributeTypeDescriptionsVarargs(value: PolicyAttributeTypeDescription*): Self = StObject.set(x, "PolicyAttributeTypeDescriptions", js.Array(value*))
     
     inline def setPolicyTypeName(value: PolicyTypeName): Self = StObject.set(x, "PolicyTypeName", value.asInstanceOf[js.Any])
     

@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.Image")
 @js.native
-class Image ()
+open class Image ()
   extends StObject
      with typings.officeJsPreview.OneNote.Image {
   

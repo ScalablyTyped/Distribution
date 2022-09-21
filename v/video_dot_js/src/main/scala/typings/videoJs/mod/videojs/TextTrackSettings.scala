@@ -17,7 +17,7 @@ trait TextTrackSettings
     *
     * @return An object with config values parsed from the DOM or localStorage.
     */
-  def getValues(): js.Any = js.native
+  def getValues(): Any = js.native
   
   /**
     * Restore texttrack settings from localStorage
@@ -40,7 +40,7 @@ trait TextTrackSettings
     * @param values
     *        An object with config values parsed from the DOM or localStorage.
     */
-  def setValues(values: js.Any): Unit = js.native
+  def setValues(values: Any): Unit = js.native
   
   /**
     * Update display of text track settings

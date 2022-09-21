@@ -10,7 +10,7 @@ trait IFieldDescriptorProto extends StObject {
   
   var extendee: js.UndefOr[String] = js.undefined
   
-  var jsonName: js.UndefOr[js.Any] = js.undefined
+  var jsonName: js.UndefOr[Any] = js.undefined
   
   var label: js.UndefOr[IFieldDescriptorProtoLabel] = js.undefined
   
@@ -43,7 +43,7 @@ object IFieldDescriptorProto {
     
     inline def setExtendeeUndefined: Self = StObject.set(x, "extendee", js.undefined)
     
-    inline def setJsonName(value: js.Any): Self = StObject.set(x, "jsonName", value.asInstanceOf[js.Any])
+    inline def setJsonName(value: Any): Self = StObject.set(x, "jsonName", value.asInstanceOf[js.Any])
     
     inline def setJsonNameUndefined: Self = StObject.set(x, "jsonName", js.undefined)
     

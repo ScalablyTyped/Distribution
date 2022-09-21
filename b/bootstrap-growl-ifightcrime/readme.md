@@ -10,15 +10,12 @@ Pretty simple jQuery plugin that turns standard Bootstrap alerts into hovering '
 | ------------------ | :-------------: |
 | Full name          | bootstrap-growl-ifightcrime |
 | Keywords           | growl, notification, jquery |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 24832 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3151.6666666666665 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/ifightcrime/bootstrap-growl#readme)
-- [Bugs](https://github.com/ifightcrime/bootstrap-growl/issues)
-- [Repository](https://github.com/ifightcrime/bootstrap-growl)
 - [Npm](https://www.npmjs.com/package/bootstrap-growl-ifightcrime)
     
 

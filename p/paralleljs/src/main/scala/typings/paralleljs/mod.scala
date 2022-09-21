@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("paralleljs", JSImport.Namespace)
   @js.native
-  class ^[T] protected ()
+  open class ^[T] protected ()
     extends StObject
        with Parallel[T] {
     /**

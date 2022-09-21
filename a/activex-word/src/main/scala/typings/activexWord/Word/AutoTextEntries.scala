@@ -16,9 +16,9 @@ trait AutoTextEntries extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): AutoTextEntry
+  def Item(Index: Any): AutoTextEntry
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.AutoTextEntries_typekey")
   var WordDotAutoTextEntries_typekey: AutoTextEntries
@@ -31,8 +31,8 @@ object AutoTextEntries {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => AutoTextEntry,
-    Parent: js.Any,
+    Item: Any => AutoTextEntry,
+    Parent: Any,
     WordDotAutoTextEntries_typekey: AutoTextEntries
   ): AutoTextEntries = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), AppendToSpike = js.Any.fromFunction1(AppendToSpike), Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -52,9 +52,9 @@ object AutoTextEntries {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => AutoTextEntry): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => AutoTextEntry): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotAutoTextEntries_typekey(value: AutoTextEntries): Self = StObject.set(x, "Word.AutoTextEntries_typekey", value.asInstanceOf[js.Any])
   }

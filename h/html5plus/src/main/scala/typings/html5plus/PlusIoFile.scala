@@ -1,6 +1,5 @@
 package typings.html5plus
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ trait PlusIoFile extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
-  var lastModifiedDate: js.UndefOr[Date] = js.native
+  var lastModifiedDate: js.UndefOr[js.Date] = js.native
   
   /**
     * 文件数据对象的名称，不包括路径

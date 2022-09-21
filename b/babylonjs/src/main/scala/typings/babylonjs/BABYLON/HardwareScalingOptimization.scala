@@ -8,9 +8,9 @@ trait HardwareScalingOptimization
   extends StObject
      with SceneOptimization {
   
-  /* private */ var _currentScale: js.Any
+  /* private */ var _currentScale: Any
   
-  /* private */ var _directionOffset: js.Any
+  /* private */ var _directionOffset: Any
   
   /**
     * Defines the maximum scale to use (2 by default)
@@ -25,8 +25,8 @@ trait HardwareScalingOptimization
 object HardwareScalingOptimization {
   
   inline def apply(
-    _currentScale: js.Any,
-    _directionOffset: js.Any,
+    _currentScale: Any,
+    _directionOffset: Any,
     apply: (Scene, SceneOptimizer) => Boolean,
     getDescription: () => String,
     maximumScale: Double,
@@ -43,8 +43,8 @@ object HardwareScalingOptimization {
     
     inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    inline def set_currentScale(value: js.Any): Self = StObject.set(x, "_currentScale", value.asInstanceOf[js.Any])
+    inline def set_currentScale(value: Any): Self = StObject.set(x, "_currentScale", value.asInstanceOf[js.Any])
     
-    inline def set_directionOffset(value: js.Any): Self = StObject.set(x, "_directionOffset", value.asInstanceOf[js.Any])
+    inline def set_directionOffset(value: Any): Self = StObject.set(x, "_directionOffset", value.asInstanceOf[js.Any])
   }
 }

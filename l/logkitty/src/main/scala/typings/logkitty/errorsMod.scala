@@ -9,7 +9,7 @@ object errorsMod {
   
   @JSImport("logkitty/build/errors", "CodeError")
   @js.native
-  class CodeError protected ()
+  open class CodeError protected ()
     extends StObject
        with Error {
     def this(code: String) = this()
@@ -17,9 +17,11 @@ object errorsMod {
     
     var code: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

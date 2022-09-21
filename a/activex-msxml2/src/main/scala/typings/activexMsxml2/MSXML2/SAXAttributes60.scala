@@ -14,7 +14,7 @@ trait SAXAttributes60 extends StObject {
   def addAttribute(strURI: String, strLocalName: String, strQName: String, strType: String, strValue: String): Unit
   
   /** Add an attribute, whose value is equal to the indexed attribute in the input attributes object, to the end of the list. */
-  def addAttributeFromIndex(varAtts: js.Any, nIndex: Double): Unit
+  def addAttributeFromIndex(varAtts: Any, nIndex: Double): Unit
   
   /** Clear the attribute list for reuse. */
   def clear(): Unit
@@ -33,7 +33,7 @@ trait SAXAttributes60 extends StObject {
   ): Unit
   
   /** Copy an entire Attributes object. */
-  def setAttributes(varAtts: js.Any): Unit
+  def setAttributes(varAtts: Any): Unit
   
   /** Set the local name of a specific attribute. */
   def setLocalName(nIndex: Double, strLocalName: String): Unit
@@ -55,11 +55,11 @@ object SAXAttributes60 {
   inline def apply(
     MSXML2DotSAXAttributes60_typekey: SAXAttributes60,
     addAttribute: (String, String, String, String, String) => Unit,
-    addAttributeFromIndex: (js.Any, Double) => Unit,
+    addAttributeFromIndex: (Any, Double) => Unit,
     clear: () => Unit,
     removeAttribute: Double => Unit,
     setAttribute: (Double, String, String, String, String, String) => Unit,
-    setAttributes: js.Any => Unit,
+    setAttributes: Any => Unit,
     setLocalName: (Double, String) => Unit,
     setQName: (Double, String) => Unit,
     setType: (Double, String) => Unit,
@@ -75,7 +75,7 @@ object SAXAttributes60 {
     
     inline def setAddAttribute(value: (String, String, String, String, String) => Unit): Self = StObject.set(x, "addAttribute", js.Any.fromFunction5(value))
     
-    inline def setAddAttributeFromIndex(value: (js.Any, Double) => Unit): Self = StObject.set(x, "addAttributeFromIndex", js.Any.fromFunction2(value))
+    inline def setAddAttributeFromIndex(value: (Any, Double) => Unit): Self = StObject.set(x, "addAttributeFromIndex", js.Any.fromFunction2(value))
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
@@ -85,7 +85,7 @@ object SAXAttributes60 {
     
     inline def setSetAttribute(value: (Double, String, String, String, String, String) => Unit): Self = StObject.set(x, "setAttribute", js.Any.fromFunction6(value))
     
-    inline def setSetAttributes(value: js.Any => Unit): Self = StObject.set(x, "setAttributes", js.Any.fromFunction1(value))
+    inline def setSetAttributes(value: Any => Unit): Self = StObject.set(x, "setAttributes", js.Any.fromFunction1(value))
     
     inline def setSetLocalName(value: (Double, String) => Unit): Self = StObject.set(x, "setLocalName", js.Any.fromFunction2(value))
     

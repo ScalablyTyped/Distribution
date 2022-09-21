@@ -264,7 +264,7 @@ object ProcessFlow {
       * @param handler If an anonymous function is set using the addOnProcessStatusChange method it
       *                cannot be removed using this method.
       */
-    def removeOnProcessStatusChange(handler: ProcessStatusChangeHandler): Unit = js.native
+    def removeOnProcessStatusChange(handler: ContextSensitiveHandler): Unit = js.native
     
     /**
       * Use this to remove a function as an event handler for the OnStageChange event.

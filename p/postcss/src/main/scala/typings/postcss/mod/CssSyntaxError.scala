@@ -1,45 +1,32 @@
 package typings.postcss.mod
 
+import typings.postcss.cssSyntaxErrorMod.RangePosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The CSS parser throws this error for broken CSS.
-  */
+@JSImport("postcss", "CssSyntaxError")
 @js.native
-trait CssSyntaxError
-  extends StObject
-     with InputOrigin {
-  
-  var input: js.UndefOr[InputOrigin] = js.native
-  
+open class CssSyntaxError protected ()
+  extends typings.postcss.cssSyntaxErrorMod.default {
   /**
-    * Contains full error text in the GNU error format.
+    * Instantiates a CSS syntax error. Can be instantiated for a single position
+    * or for a range.
+    * @param message        Error message.
+    * @param lineOrStartPos If for a single position, the line number, or if for
+    *                       a range, the inclusive start position of the error.
+    * @param columnOrEndPos If for a single position, the column number, or if for
+    *                       a range, the exclusive end position of the error.
+    * @param source         Source code of the broken file.
+    * @param file           Absolute path to the broken file.
+    * @param plugin         PostCSS plugin name, if error came from plugin.
     */
-  var message: String = js.native
-  
-  var name: String = js.native
-  
-  /**
-    * Contains the PostCSS plugin name if the error didn't come from the
-    * CSS parser.
-    */
-  var plugin: js.UndefOr[String] = js.native
-  
-  /**
-    * Contains only the error description.
-    */
-  var reason: String = js.native
-  
-  /**
-    * @param color Whether arrow should be colored red by terminal color codes.
-    * By default, PostCSS will use process.stdout.isTTY and
-    * process.env.NODE_DISABLE_COLORS.
-    * @returns A few lines of CSS source that caused the error. If CSS has
-    * input source map without sourceContent this method will return an empty
-    * string.
-    */
-  def showSourceCode(): String = js.native
-  def showSourceCode(color: Boolean): String = js.native
+  def this(
+    message: String,
+    lineOrStartPos: js.UndefOr[Double | RangePosition],
+    columnOrEndPos: js.UndefOr[Double | RangePosition],
+    source: js.UndefOr[String],
+    file: js.UndefOr[String],
+    plugin: js.UndefOr[String]
+  ) = this()
 }

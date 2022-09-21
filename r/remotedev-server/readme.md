@@ -11,9 +11,9 @@ Run the RemoteDev monitor on your local server.
 | Full name          | remotedev-server |
 | Keywords           | devtools, remotedev |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 718028 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 21044.666666666668 |
+| # stars            | 179.0 |
 
 ## Links
 - [Homepage](https://github.com/zalmoxisus/remotedev-server)

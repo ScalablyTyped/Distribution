@@ -1,6 +1,5 @@
 package typings.uirouterCore
 
-import typings.std.Error
 import typings.uirouterCore.anon.TypeofTransition
 import typings.uirouterCore.pathNodeMod.PathNode
 import typings.uirouterCore.routerMod.UIRouter
@@ -33,14 +32,14 @@ object transitionMod {
   
   @JSImport("@uirouter/core/lib/transition", "HookBuilder")
   @js.native
-  class HookBuilder protected ()
+  open class HookBuilder protected ()
     extends typings.uirouterCore.hookBuilderMod.HookBuilder {
     def this(transition: typings.uirouterCore.transitionTransitionMod.Transition) = this()
   }
   
   @JSImport("@uirouter/core/lib/transition", "RegisteredHook")
   @js.native
-  class RegisteredHook protected ()
+  open class RegisteredHook protected ()
     extends typings.uirouterCore.hookRegistryMod.RegisteredHook {
     def this(
       tranSvc: typings.uirouterCore.transitionServiceMod.TransitionService,
@@ -79,12 +78,12 @@ object transitionMod {
   
   @JSImport("@uirouter/core/lib/transition", "Rejection")
   @js.native
-  class Rejection protected ()
+  open class Rejection protected ()
     extends typings.uirouterCore.rejectFactoryMod.Rejection {
     def this(`type`: Double) = this()
     def this(`type`: Double, message: String) = this()
-    def this(`type`: Double, message: String, detail: js.Any) = this()
-    def this(`type`: Double, message: Unit, detail: js.Any) = this()
+    def this(`type`: Double, message: String, detail: Any) = this()
+    def this(`type`: Double, message: Unit, detail: Any) = this()
   }
   /* static members */
   object Rejection {
@@ -95,22 +94,22 @@ object transitionMod {
     
     /** Returns a Rejection due to aborted transition */
     inline def aborted(): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("aborted")().asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
-    inline def aborted(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("aborted")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    inline def aborted(detail: Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("aborted")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
     
     /** Returns a Rejection due to aborted transition */
     inline def errored(): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("errored")().asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
-    inline def errored(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("errored")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    inline def errored(detail: Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("errored")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
     
     /** Returns a Rejection due to ignored transition */
     inline def ignored(): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("ignored")().asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
-    inline def ignored(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("ignored")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    inline def ignored(detail: Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("ignored")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
     
     /** Returns a Rejection due to invalid transition */
     inline def invalid(): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
-    inline def invalid(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    inline def invalid(detail: Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
     
     /** Returns true if the obj is a rejected promise created from the `asPromise` factory */
-    inline def isRejectionPromise(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRejectionPromise")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isRejectionPromise(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRejectionPromise")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns a Rejection
@@ -122,24 +121,24 @@ object transitionMod {
       * @returns `detail` if it is already a `Rejection`, else returns an ERROR Rejection.
       */
     inline def normalize(): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
-    inline def normalize(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
-    inline def normalize(detail: Error): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    inline def normalize(detail: js.Error): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    inline def normalize(detail: Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
     inline def normalize(detail: typings.uirouterCore.rejectFactoryMod.Rejection): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
     
     /** Returns a Rejection due to redirected transition */
     inline def redirected(): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("redirected")().asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
-    inline def redirected(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("redirected")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    inline def redirected(detail: Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("redirected")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
     
     /** Returns a Rejection due to transition superseded */
     inline def superseded(): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("superseded")().asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
-    inline def superseded(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("superseded")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
-    inline def superseded(detail: js.Any, options: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = (^.asInstanceOf[js.Dynamic].applyDynamic("superseded")(detail.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
-    inline def superseded(detail: Unit, options: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = (^.asInstanceOf[js.Dynamic].applyDynamic("superseded")(detail.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    inline def superseded(detail: Any): typings.uirouterCore.rejectFactoryMod.Rejection = ^.asInstanceOf[js.Dynamic].applyDynamic("superseded")(detail.asInstanceOf[js.Any]).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    inline def superseded(detail: Any, options: Any): typings.uirouterCore.rejectFactoryMod.Rejection = (^.asInstanceOf[js.Dynamic].applyDynamic("superseded")(detail.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
+    inline def superseded(detail: Unit, options: Any): typings.uirouterCore.rejectFactoryMod.Rejection = (^.asInstanceOf[js.Dynamic].applyDynamic("superseded")(detail.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.rejectFactoryMod.Rejection]
   }
   
   @JSImport("@uirouter/core/lib/transition", "Transition")
   @js.native
-  class Transition protected ()
+  open class Transition protected ()
     extends typings.uirouterCore.transitionTransitionMod.Transition {
     /**
       * Creates a new Transition object.
@@ -172,7 +171,7 @@ object transitionMod {
   
   @JSImport("@uirouter/core/lib/transition", "TransitionEventType")
   @js.native
-  class TransitionEventType protected ()
+  open class TransitionEventType protected ()
     extends typings.uirouterCore.transitionEventTypeMod.TransitionEventType {
     def this(name: String, hookPhase: TransitionHookPhase, hookOrder: Double, criteriaMatchPath: PathType) = this()
     def this(
@@ -318,7 +317,7 @@ object transitionMod {
   
   @JSImport("@uirouter/core/lib/transition", "TransitionHook")
   @js.native
-  class TransitionHook protected ()
+  open class TransitionHook protected ()
     extends typings.uirouterCore.transitionHookMod.TransitionHook {
     def this(
       transition: typings.uirouterCore.transitionTransitionMod.Transition,
@@ -406,11 +405,8 @@ object transitionMod {
       * @param waitFor if provided, the chain is `.then()`'ed off this promise
       * @returns a `Promise` for sequentially invoking the hooks (in order)
       */
-    inline def chain(hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-    inline def chain(
-      hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook],
-      waitFor: js.Promise[js.Any]
-    ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any], waitFor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def chain(hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook]): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+    inline def chain(hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook], waitFor: js.Promise[Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("chain")(hooks.asInstanceOf[js.Any], waitFor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
     /**
       * Invokes all the provided TransitionHooks, in order.
@@ -426,7 +422,7 @@ object transitionMod {
     inline def invokeHooks[T](
       hooks: js.Array[typings.uirouterCore.transitionHookMod.TransitionHook],
       doneCallback: js.Function1[/* result */ js.UndefOr[HookResult], T]
-    ): js.Promise[js.Any] | T = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeHooks")(hooks.asInstanceOf[js.Any], doneCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | T]
+    ): js.Promise[Any] | T = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeHooks")(hooks.asInstanceOf[js.Any], doneCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any] | T]
     
     /**
       * Run all TransitionHooks, ignoring their return value.
@@ -466,7 +462,7 @@ object transitionMod {
   
   @JSImport("@uirouter/core/lib/transition", "TransitionService")
   @js.native
-  class TransitionService protected ()
+  open class TransitionService protected ()
     extends typings.uirouterCore.transitionServiceMod.TransitionService {
     /** @internal */
     def this(_router: UIRouter) = this()
@@ -481,17 +477,7 @@ object transitionMod {
     registry: IHookRegistry,
     transitionService: typings.uirouterCore.transitionServiceMod.TransitionService,
     eventType: typings.uirouterCore.transitionEventTypeMod.TransitionEventType
-  ): js.Function3[
-    /* matchObject */ js.Any, 
-    /* callback */ js.Any, 
-    /* options */ js.UndefOr[js.Object], 
-    js.Any
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEvent")(registry.asInstanceOf[js.Any], transitionService.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-    /* matchObject */ js.Any, 
-    /* callback */ js.Any, 
-    /* options */ js.UndefOr[js.Object], 
-    js.Any
-  ]]
+  ): js.Function3[/* matchObject */ Any, /* callback */ Any, /* options */ js.UndefOr[js.Object], Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEvent")(registry.asInstanceOf[js.Any], transitionService.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* matchObject */ Any, /* callback */ Any, /* options */ js.UndefOr[js.Object], Any]]
   
   inline def matchState(
     state: StateObject,

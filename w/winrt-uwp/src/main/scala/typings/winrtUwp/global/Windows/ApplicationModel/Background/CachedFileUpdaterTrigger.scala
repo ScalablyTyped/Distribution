@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.CachedFileUpdaterTrigger")
 @js.native
 /** Initializes a new instance of the CachedFileUpdaterTrigger class. */
-class CachedFileUpdaterTrigger ()
+open class CachedFileUpdaterTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.CachedFileUpdaterTrigger

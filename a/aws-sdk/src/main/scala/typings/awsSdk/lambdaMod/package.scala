@@ -1,5 +1,11 @@
 package typings.awsSdk.lambdaMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.ALL
+import typings.awsSdk.awsSdkStrings.KAFKA_BOOTSTRAP_SERVERS
+import typings.awsSdk.awsSdkStrings.ReportBatchItemFailures
+import typings.node.bufferMod.global.Buffer
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,25 +15,55 @@ type Action = java.lang.String
 
 type AdditionalVersion = java.lang.String
 
-type AdditionalVersionWeights = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.lambdaMod.Weight]
+type AdditionalVersionWeights = StringDictionary[Weight]
 
 type Alias = java.lang.String
 
-type AliasList = js.Array[typings.awsSdk.lambdaMod.AliasConfiguration]
+type AliasList = js.Array[AliasConfiguration]
+
+type AllowCredentials = scala.Boolean
+
+type AllowMethodsList = js.Array[Method]
+
+type AllowOriginsList = js.Array[Origin]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.x86_64_
+  - typings.awsSdk.awsSdkStrings.arm64_
+  - java.lang.String
+*/
+type Architecture = _Architecture | java.lang.String
+
+type ArchitecturesList = js.Array[Architecture]
 
 type Arn = java.lang.String
 
-type BatchSize = scala.Double
+type BatchSize = Double
 
 type BisectBatchOnFunctionError = scala.Boolean
 
-type BlobStream = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.lambdaMod.Blob | java.lang.String | typings.node.streamMod.Readable
+type BlobStream = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String | Readable
 
 type Boolean = scala.Boolean
 
-type CompatibleRuntimes = js.Array[typings.awsSdk.lambdaMod.Runtime]
+type CodeSigningConfigArn = java.lang.String
 
-type Date = typings.std.Date
+type CodeSigningConfigId = java.lang.String
+
+type CodeSigningConfigList = js.Array[CodeSigningConfig]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Warn_
+  - typings.awsSdk.awsSdkStrings.Enforce_
+  - java.lang.String
+*/
+type CodeSigningPolicy = _CodeSigningPolicy | java.lang.String
+
+type CompatibleArchitectures = js.Array[Architecture]
+
+type CompatibleRuntimes = js.Array[Runtime]
+
+type Date = js.Date
 
 type Description = java.lang.String
 
@@ -35,13 +71,23 @@ type DestinationArn = java.lang.String
 
 type Enabled = scala.Boolean
 
+type EndPointType = KAFKA_BOOTSTRAP_SERVERS | java.lang.String
+
+type Endpoint = java.lang.String
+
+type EndpointLists = js.Array[Endpoint]
+
+type Endpoints = StringDictionary[EndpointLists]
+
 type EnvironmentVariableName = java.lang.String
 
 type EnvironmentVariableValue = java.lang.String
 
-type EnvironmentVariables = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.lambdaMod.EnvironmentVariableValue]
+type EnvironmentVariables = StringDictionary[EnvironmentVariableValue]
 
-type EventSourceMappingsList = js.Array[typings.awsSdk.lambdaMod.EventSourceMappingConfiguration]
+type EphemeralStorageSize = Double
+
+type EventSourceMappingsList = js.Array[EventSourceMappingConfiguration]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TRIM_HORIZON
@@ -49,29 +95,54 @@ type EventSourceMappingsList = js.Array[typings.awsSdk.lambdaMod.EventSourceMapp
   - typings.awsSdk.awsSdkStrings.AT_TIMESTAMP
   - java.lang.String
 */
-type EventSourcePosition = typings.awsSdk.lambdaMod._EventSourcePosition | java.lang.String
+type EventSourcePosition = _EventSourcePosition | java.lang.String
 
 type EventSourceToken = java.lang.String
 
 type FileSystemArn = java.lang.String
 
-type FileSystemConfigList = js.Array[typings.awsSdk.lambdaMod.FileSystemConfig]
+type FileSystemConfigList = js.Array[FileSystemConfig]
+
+type FilterList = js.Array[Filter]
 
 type FunctionArn = java.lang.String
 
-type FunctionEventInvokeConfigList = js.Array[typings.awsSdk.lambdaMod.FunctionEventInvokeConfig]
+type FunctionArnList = js.Array[FunctionArn]
 
-type FunctionList = js.Array[typings.awsSdk.lambdaMod.FunctionConfiguration]
+type FunctionEventInvokeConfigList = js.Array[FunctionEventInvokeConfig]
+
+type FunctionList = js.Array[FunctionConfiguration]
 
 type FunctionName = java.lang.String
 
-type FunctionVersion = typings.awsSdk.awsSdkStrings.ALL | java.lang.String
+type FunctionResponseType = ReportBatchItemFailures | java.lang.String
+
+type FunctionResponseTypeList = js.Array[FunctionResponseType]
+
+type FunctionUrl = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.AWS_IAM
+  - java.lang.String
+*/
+type FunctionUrlAuthType = _FunctionUrlAuthType | java.lang.String
+
+type FunctionUrlConfigList = js.Array[FunctionUrlConfig]
+
+type FunctionUrlQualifier = java.lang.String
+
+type FunctionVersion = ALL | java.lang.String
 
 type Handler = java.lang.String
 
-type HttpStatus = scala.Double
+type Header = java.lang.String
 
-type Integer = scala.Double
+type HeadersList = js.Array[Header]
+
+type HttpStatus = Double
+
+type Integer = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Event_
@@ -79,7 +150,7 @@ type Integer = scala.Double
   - typings.awsSdk.awsSdkStrings.DryRun
   - java.lang.String
 */
-type InvocationType = typings.awsSdk.lambdaMod._InvocationType | java.lang.String
+type InvocationType = _InvocationType | java.lang.String
 
 type KMSKeyArn = java.lang.String
 
@@ -89,7 +160,7 @@ type KMSKeyArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.InProgress_
   - java.lang.String
 */
-type LastUpdateStatus = typings.awsSdk.lambdaMod._LastUpdateStatus | java.lang.String
+type LastUpdateStatus = _LastUpdateStatus | java.lang.String
 
 type LastUpdateStatusReason = java.lang.String
 
@@ -101,13 +172,16 @@ type LastUpdateStatusReason = java.lang.String
   - typings.awsSdk.awsSdkStrings.SubnetOutOfIPAddresses
   - typings.awsSdk.awsSdkStrings.InvalidSubnet
   - typings.awsSdk.awsSdkStrings.InvalidSecurityGroup
+  - typings.awsSdk.awsSdkStrings.ImageDeleted
+  - typings.awsSdk.awsSdkStrings.ImageAccessDenied
+  - typings.awsSdk.awsSdkStrings.InvalidImage
   - java.lang.String
 */
-type LastUpdateStatusReasonCode = typings.awsSdk.lambdaMod._LastUpdateStatusReasonCode | java.lang.String
+type LastUpdateStatusReasonCode = _LastUpdateStatusReasonCode | java.lang.String
 
 type LayerArn = java.lang.String
 
-type LayerList = js.Array[typings.awsSdk.lambdaMod.LayerVersionArn]
+type LayerList = js.Array[LayerVersionArn]
 
 type LayerName = java.lang.String
 
@@ -117,13 +191,13 @@ type LayerPermissionAllowedPrincipal = java.lang.String
 
 type LayerVersionArn = java.lang.String
 
-type LayerVersionNumber = scala.Double
+type LayerVersionNumber = Double
 
-type LayerVersionsList = js.Array[typings.awsSdk.lambdaMod.LayerVersionsListItem]
+type LayerVersionsList = js.Array[LayerVersionsListItem]
 
-type LayersList = js.Array[typings.awsSdk.lambdaMod.LayersListItem]
+type LayersList = js.Array[LayersListItem]
 
-type LayersReferenceList = js.Array[typings.awsSdk.lambdaMod.Layer]
+type LayersReferenceList = js.Array[Layer]
 
 type LicenseInfo = java.lang.String
 
@@ -134,31 +208,37 @@ type LocalMountPath = java.lang.String
   - typings.awsSdk.awsSdkStrings.Tail
   - java.lang.String
 */
-type LogType = typings.awsSdk.lambdaMod._LogType | java.lang.String
+type LogType = _LogType | java.lang.String
 
-type Long = scala.Double
+type Long = Double
 
 type MasterRegion = java.lang.String
 
-type MaxFunctionEventInvokeConfigListItems = scala.Double
+type MaxAge = Double
 
-type MaxLayerListItems = scala.Double
+type MaxFunctionEventInvokeConfigListItems = Double
 
-type MaxListItems = scala.Double
+type MaxItems = Double
 
-type MaxProvisionedConcurrencyConfigListItems = scala.Double
+type MaxLayerListItems = Double
 
-type MaximumBatchingWindowInSeconds = scala.Double
+type MaxListItems = Double
 
-type MaximumEventAgeInSeconds = scala.Double
+type MaxProvisionedConcurrencyConfigListItems = Double
 
-type MaximumRecordAgeInSeconds = scala.Double
+type MaximumBatchingWindowInSeconds = Double
 
-type MaximumRetryAttempts = scala.Double
+type MaximumEventAgeInSeconds = Double
 
-type MaximumRetryAttemptsEventSourceMapping = scala.Double
+type MaximumRecordAgeInSeconds = Double
 
-type MemorySize = scala.Double
+type MaximumRetryAttempts = Double
+
+type MaximumRetryAttemptsEventSourceMapping = Double
+
+type MemorySize = Double
+
+type Method = java.lang.String
 
 type NameSpacedFunctionArn = java.lang.String
 
@@ -166,17 +246,30 @@ type NamespacedFunctionName = java.lang.String
 
 type NamespacedStatementId = java.lang.String
 
-type NonNegativeInteger = scala.Double
+type NonNegativeInteger = Double
 
 type OrganizationId = java.lang.String
 
-type ParallelizationFactor = scala.Double
+type Origin = java.lang.String
 
-type PositiveInteger = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Zip_
+  - typings.awsSdk.awsSdkStrings.Image
+  - java.lang.String
+*/
+type PackageType = _PackageType | java.lang.String
+
+type ParallelizationFactor = Double
+
+type Pattern = java.lang.String
+
+type PositiveInteger = Double
 
 type Principal = java.lang.String
 
-type ProvisionedConcurrencyConfigList = js.Array[typings.awsSdk.lambdaMod.ProvisionedConcurrencyConfigListItem]
+type PrincipalOrgID = java.lang.String
+
+type ProvisionedConcurrencyConfigList = js.Array[ProvisionedConcurrencyConfigListItem]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -184,15 +277,15 @@ type ProvisionedConcurrencyConfigList = js.Array[typings.awsSdk.lambdaMod.Provis
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type ProvisionedConcurrencyStatusEnum = typings.awsSdk.lambdaMod._ProvisionedConcurrencyStatusEnum | java.lang.String
+type ProvisionedConcurrencyStatusEnum = _ProvisionedConcurrencyStatusEnum | java.lang.String
 
 type Qualifier = java.lang.String
 
 type Queue = java.lang.String
 
-type Queues = js.Array[typings.awsSdk.lambdaMod.Queue]
+type Queues = js.Array[Queue]
 
-type ReservedConcurrentExecutions = scala.Double
+type ReservedConcurrentExecutions = Double
 
 type ResourceArn = java.lang.String
 
@@ -205,6 +298,8 @@ type RoleArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.nodejs8Dot10
   - typings.awsSdk.awsSdkStrings.nodejs10Dotx
   - typings.awsSdk.awsSdkStrings.nodejs12Dotx
+  - typings.awsSdk.awsSdkStrings.nodejs14Dotx
+  - typings.awsSdk.awsSdkStrings.nodejs16Dotx
   - typings.awsSdk.awsSdkStrings.java8
   - typings.awsSdk.awsSdkStrings.java8Dotal2
   - typings.awsSdk.awsSdkStrings.java11
@@ -212,10 +307,12 @@ type RoleArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.python3Dot6
   - typings.awsSdk.awsSdkStrings.python3Dot7
   - typings.awsSdk.awsSdkStrings.python3Dot8
+  - typings.awsSdk.awsSdkStrings.python3Dot9
   - typings.awsSdk.awsSdkStrings.dotnetcore1Dot0
   - typings.awsSdk.awsSdkStrings.dotnetcore2Dot0
   - typings.awsSdk.awsSdkStrings.dotnetcore2Dot1
   - typings.awsSdk.awsSdkStrings.dotnetcore3Dot1
+  - typings.awsSdk.awsSdkStrings.dotnet6
   - typings.awsSdk.awsSdkStrings.`nodejs4Dot3-edge`
   - typings.awsSdk.awsSdkStrings.go1Dotx
   - typings.awsSdk.awsSdkStrings.ruby2Dot5
@@ -224,7 +321,7 @@ type RoleArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.providedDotal2
   - java.lang.String
 */
-type Runtime = typings.awsSdk.lambdaMod._Runtime | java.lang.String
+type Runtime = _Runtime | java.lang.String
 
 type S3Bucket = java.lang.String
 
@@ -234,13 +331,26 @@ type S3ObjectVersion = java.lang.String
 
 type SecurityGroupId = java.lang.String
 
-type SecurityGroupIds = js.Array[typings.awsSdk.lambdaMod.SecurityGroupId]
+type SecurityGroupIds = js.Array[SecurityGroupId]
 
 type SensitiveString = java.lang.String
 
-type SourceAccessConfigurations = js.Array[typings.awsSdk.lambdaMod.SourceAccessConfiguration]
+type SigningProfileVersionArns = js.Array[Arn]
 
-type SourceAccessType = typings.awsSdk.awsSdkStrings.BASIC_AUTH | java.lang.String
+type SourceAccessConfigurations = js.Array[SourceAccessConfiguration]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BASIC_AUTH
+  - typings.awsSdk.awsSdkStrings.VPC_SUBNET
+  - typings.awsSdk.awsSdkStrings.VPC_SECURITY_GROUP
+  - typings.awsSdk.awsSdkStrings.SASL_SCRAM_512_AUTH
+  - typings.awsSdk.awsSdkStrings.SASL_SCRAM_256_AUTH
+  - typings.awsSdk.awsSdkStrings.VIRTUAL_HOST
+  - typings.awsSdk.awsSdkStrings.CLIENT_CERTIFICATE_TLS_AUTH
+  - typings.awsSdk.awsSdkStrings.SERVER_ROOT_CA_CERTIFICATE
+  - java.lang.String
+*/
+type SourceAccessType = _SourceAccessType | java.lang.String
 
 type SourceOwner = java.lang.String
 
@@ -251,7 +361,7 @@ type SourceOwner = java.lang.String
   - typings.awsSdk.awsSdkStrings.Failed_
   - java.lang.String
 */
-type State = typings.awsSdk.lambdaMod._State | java.lang.String
+type State = _State | java.lang.String
 
 type StateReason = java.lang.String
 
@@ -266,50 +376,61 @@ type StateReason = java.lang.String
   - typings.awsSdk.awsSdkStrings.SubnetOutOfIPAddresses
   - typings.awsSdk.awsSdkStrings.InvalidSubnet
   - typings.awsSdk.awsSdkStrings.InvalidSecurityGroup
+  - typings.awsSdk.awsSdkStrings.ImageDeleted
+  - typings.awsSdk.awsSdkStrings.ImageAccessDenied
+  - typings.awsSdk.awsSdkStrings.InvalidImage
   - java.lang.String
 */
-type StateReasonCode = typings.awsSdk.lambdaMod._StateReasonCode | java.lang.String
+type StateReasonCode = _StateReasonCode | java.lang.String
 
 type StatementId = java.lang.String
 
 type String = java.lang.String
 
+type StringList = js.Array[String]
+
 type SubnetId = java.lang.String
 
-type SubnetIds = js.Array[typings.awsSdk.lambdaMod.SubnetId]
+type SubnetIds = js.Array[SubnetId]
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.lambdaMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
 type TagValue = java.lang.String
 
-type Tags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.lambdaMod.TagValue]
+type Tags = StringDictionary[TagValue]
 
-type Timeout = scala.Double
+type Timeout = Double
 
 type Timestamp = java.lang.String
 
 type Topic = java.lang.String
 
-type Topics = js.Array[typings.awsSdk.lambdaMod.Topic]
+type Topics = js.Array[Topic]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Active_
   - typings.awsSdk.awsSdkStrings.PassThrough_
   - java.lang.String
 */
-type TracingMode = typings.awsSdk.lambdaMod._TracingMode | java.lang.String
+type TracingMode = _TracingMode | java.lang.String
 
-type UnreservedConcurrentExecutions = scala.Double
+type TumblingWindowInSeconds = Double
+
+type URI = java.lang.String
+
+type UnreservedConcurrentExecutions = Double
 
 type Version = java.lang.String
 
 type VpcId = java.lang.String
 
-type Weight = scala.Double
+type Weight = Double
 
-type _Blob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.lambdaMod.Blob | java.lang.String
+type WorkingDirectory = java.lang.String
+
+type _Blob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2014-11-11`
@@ -317,4 +438,4 @@ type _Blob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.lambd
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.lambdaMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

@@ -4,7 +4,6 @@ import typings.promiseSftp.anon.Group
 import typings.promiseSftp.promiseSftpStrings.`-_`
 import typings.promiseSftp.promiseSftpStrings.d
 import typings.promiseSftp.promiseSftpStrings.l
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectoryListing extends StObject {
   
   /** The last modified date of the entry. */
-  var date: Date
+  var date: js.Date
   
   /** The group name or ID that this entry belongs to. *NIX only */
   var group: js.UndefOr[String] = js.undefined
@@ -38,7 +37,7 @@ trait DirectoryListing extends StObject {
 }
 object DirectoryListing {
   
-  inline def apply(date: Date, name: String, `type`: d | `-_` | l): DirectoryListing = {
+  inline def apply(date: js.Date, name: String, `type`: d | `-_` | l): DirectoryListing = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryListing]
@@ -46,7 +45,7 @@ object DirectoryListing {
   
   extension [Self <: DirectoryListing](x: Self) {
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     

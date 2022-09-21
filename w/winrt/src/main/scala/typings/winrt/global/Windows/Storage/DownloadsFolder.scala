@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Storage.DownloadsFolder")
 @js.native
-class DownloadsFolder ()
+open class DownloadsFolder ()
   extends StObject
      with typings.winrt.Windows.Storage.DownloadsFolder
 /* static members */

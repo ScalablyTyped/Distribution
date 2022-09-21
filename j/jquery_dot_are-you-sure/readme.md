@@ -9,10 +9,10 @@ A light-weight jQuery "dirty forms" Plugin - it monitors HTML forms and alerts u
 | ------------------ | :-------------: |
 | Full name          | jquery.are-you-sure |
 | Keywords           | dirty, form, onbeforeunload, save, check |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 414111 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19441.333333333332 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/codedance/jquery.AreYouSure)

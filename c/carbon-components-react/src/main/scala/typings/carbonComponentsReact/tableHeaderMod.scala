@@ -3,10 +3,12 @@ package typings.carbonComponentsReact
 import org.scalablytyped.runtime.Shortcut
 import typings.carbonComponentsReact.carbonComponentsReactStrings.carbonDottableDotheaderDoticonDotdescription
 import typings.carbonComponentsReact.sortingMod.DataTableSortState
+import typings.carbonComponentsReact.sortingMod.DataTableSortStates
 import typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps
 import typings.carbonComponentsReact.typingsSharedMod.InternationalProps
 import typings.react.mod.ButtonHTMLAttributes
 import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.ReactNode
 import typings.react.reactStrings.center
 import typings.react.reactStrings.char
 import typings.react.reactStrings.justify
@@ -39,7 +41,7 @@ object tableHeaderMod extends Shortcut {
   - typings.react.mod.ThHTMLAttributes because var conflicts: about, accessKey, `aria-activedescendant`, `aria-atomic`, `aria-autocomplete`, `aria-busy`, `aria-checked`, `aria-colcount`, `aria-colindex`, `aria-colspan`, `aria-controls`, `aria-current`, `aria-describedby`, `aria-details`, `aria-disabled`, `aria-dropeffect`, `aria-errormessage`, `aria-expanded`, `aria-flowto`, `aria-grabbed`, `aria-haspopup`, `aria-hidden`, `aria-invalid`, `aria-keyshortcuts`, `aria-label`, `aria-labelledby`, `aria-level`, `aria-live`, `aria-modal`, `aria-multiline`, `aria-multiselectable`, `aria-orientation`, `aria-owns`, `aria-placeholder`, `aria-posinset`, `aria-pressed`, `aria-readonly`, `aria-relevant`, `aria-required`, `aria-roledescription`, `aria-rowcount`, `aria-rowindex`, `aria-rowspan`, `aria-selected`, `aria-setsize`, `aria-sort`, `aria-valuemax`, `aria-valuemin`, `aria-valuenow`, `aria-valuetext`, autoCapitalize, autoCorrect, autoSave, children, className, color, contentEditable, contextMenu, dangerouslySetInnerHTML, datatype, defaultChecked, defaultValue, dir, draggable, hidden, id, inlist, inputMode, is, itemID, itemProp, itemRef, itemScope, itemType, lang, onAbort, onAnimationEnd, onAnimationIteration, onAnimationStart, onAuxClick, onBeforeInput, onBlur, onCanPlay, onCanPlayThrough, onChange, onClick, onCompositionEnd, onCompositionStart, onCompositionUpdate, onContextMenu, onCopy, onCut, onDoubleClick, onDrag, onDragEnd, onDragEnter, onDragExit, onDragLeave, onDragOver, onDragStart, onDrop, onDurationChange, onEmptied, onEncrypted, onEnded, onError, onFocus, onInput, onInvalid, onKeyDown, onKeyPress, onKeyUp, onLoad, onLoadStart, onLoadedData, onLoadedMetadata, onMouseDown, onMouseEnter, onMouseLeave, onMouseMove, onMouseOut, onMouseOver, onMouseUp, onPaste, onPause, onPlay, onPlaying, onPointerCancel, onPointerDown, onPointerEnter, onPointerLeave, onPointerMove, onPointerOut, onPointerOver, onPointerUp, onProgress, onRateChange, onReset, onScroll, onSeeked, onSeeking, onSelect, onStalled, onSubmit, onSuspend, onTimeUpdate, onTouchCancel, onTouchEnd, onTouchMove, onTouchStart, onTransitionEnd, onVolumeChange, onWaiting, onWheel, placeholder, prefix, property, radioGroup, resource, results, role, security, slot, spellCheck, style, suppressContentEditableWarning, suppressHydrationWarning, tabIndex, title, translate, typeof, unselectable, vocab. Inlined rowSpan, scope, colSpan, abbr, align, headers */ trait TableHeaderProps
     extends StObject
        with ButtonHTMLAttributes[HTMLElement]
-       with InternationalProps[TableHeaderTranslationKey] {
+       with InternationalProps[TableHeaderTranslationKey, TableHeaderTranslationArgs] {
     
     var abbr: js.UndefOr[String] = js.undefined
     
@@ -103,6 +105,41 @@ object tableHeaderMod extends Shortcut {
       inline def setSortDirection(value: DataTableSortState): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
       
       inline def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
+    }
+  }
+  
+  trait TableHeaderTranslationArgs extends StObject {
+    
+    var header: ReactNode
+    
+    var isSortHeader: js.UndefOr[Boolean] = js.undefined
+    
+    var sortDirection: js.UndefOr[DataTableSortState] = js.undefined
+    
+    var sortStates: DataTableSortStates
+  }
+  object TableHeaderTranslationArgs {
+    
+    inline def apply(sortStates: DataTableSortStates): TableHeaderTranslationArgs = {
+      val __obj = js.Dynamic.literal(sortStates = sortStates.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TableHeaderTranslationArgs]
+    }
+    
+    extension [Self <: TableHeaderTranslationArgs](x: Self) {
+      
+      inline def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      
+      inline def setIsSortHeader(value: Boolean): Self = StObject.set(x, "isSortHeader", value.asInstanceOf[js.Any])
+      
+      inline def setIsSortHeaderUndefined: Self = StObject.set(x, "isSortHeader", js.undefined)
+      
+      inline def setSortDirection(value: DataTableSortState): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
+      
+      inline def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
+      
+      inline def setSortStates(value: DataTableSortStates): Self = StObject.set(x, "sortStates", value.asInstanceOf[js.Any])
     }
   }
   

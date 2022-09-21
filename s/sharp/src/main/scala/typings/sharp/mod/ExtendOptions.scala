@@ -6,15 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ExtendOptions extends StObject {
   
-  /** Background colour, parsed by the color module, defaults to black without transparency. (optional, default {r:0,g:0,b:0,alpha:1}) */
+  /** background colour, parsed by the color module, defaults to black without transparency. (optional, default {r:0,g:0,b:0,alpha:1}) */
   var background: js.UndefOr[Color] = js.undefined
   
+  /** single pixel count to bottom edge (optional, default 0) */
   var bottom: js.UndefOr[Double] = js.undefined
   
+  /** single pixel count to left edge (optional, default 0) */
   var left: js.UndefOr[Double] = js.undefined
   
+  /** single pixel count to right edge (optional, default 0) */
   var right: js.UndefOr[Double] = js.undefined
   
+  /** single pixel count to top edge (optional, default 0) */
   var top: js.UndefOr[Double] = js.undefined
 }
 object ExtendOptions {

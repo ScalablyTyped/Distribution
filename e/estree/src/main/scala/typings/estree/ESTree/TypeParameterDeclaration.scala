@@ -11,6 +11,6 @@ trait TypeParameterDeclaration
      with Node {
   
   var params: js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ Any
   ] = js.native
 }

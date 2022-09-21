@@ -4,9 +4,8 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.jasmine.jasmine.ArrayLike
 import typings.jasmine.jasmine.CustomEqualityTester
+import typings.jasmine.jasmine.Expected
 import typings.jasmine.jasmine.MatchersUtil
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,15 +19,19 @@ object jasmine {
     
     var not: ArrayLikeMatchers[T] = js.native
     
-    def toContain(expected: T): js.Promise[Unit] = js.native
-    def toContain(expected: T, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBe(expected: Expected[ArrayLike[T]]): js.Promise[Unit] = js.native
+    def toBe(expected: Expected[ArrayLike[T]], expectationFailOutput: Any): js.Promise[Unit] = js.native
+    
+    def toEqual(expected: Expected[ArrayLike[T]]): js.Promise[Unit] = js.native
+    def toEqual(expected: Expected[ArrayLike[T]], expectationFailOutput: Any): js.Promise[Unit] = js.native
   }
   
   @js.native
   trait AsyncCustomMatcher extends StObject {
     
-    def compare(actual: js.Any, expected: js.Any): AsyncCustomMatcherResult = js.native
-    def compare[T](actual: T, expected: T): AsyncCustomMatcherResult = js.native
+    def compare(actual: Any, expected: Any): AsyncCustomMatcherResult = js.native
+    @JSName("compare")
+    def compare_T[T](actual: T, expected: T): AsyncCustomMatcherResult = js.native
   }
   
   type AsyncCustomMatcherFactories = StringDictionary[AsyncCustomMatcherFactory]
@@ -62,144 +65,127 @@ object jasmine {
     }
   }
   
-  trait Env extends StObject {
-    
-    def addMatchers(matchers: AsyncCustomMatcherFactories): Unit
-  }
-  object Env {
-    
-    inline def apply(addMatchers: AsyncCustomMatcherFactories => Unit): Env = {
-      val __obj = js.Dynamic.literal(addMatchers = js.Any.fromFunction1(addMatchers))
-      __obj.asInstanceOf[Env]
-    }
-    
-    extension [Self <: Env](x: Self) {
-      
-      inline def setAddMatchers(value: AsyncCustomMatcherFactories => Unit): Self = StObject.set(x, "addMatchers", js.Any.fromFunction1(value))
-    }
-  }
-  
   // Add definition to be compatible with latest jasmine v3 types.
   // Even though library is not compatible with jasmine v3, there is no suitable way to configure that now here.
   // See for more detail: https://github.com/microsoft/dtslint/issues/253
   @js.native
-  trait FunctionMatchers[Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */]
+  trait FunctionMatchers[Fn /* <: js.Function1[/* repeated */ Any, Any] */]
     extends StObject
-       with Matchers[js.Any] {
+       with Matchers[Any] {
     
     @JSName("toHaveBeenCalledWith")
-    def toHaveBeenCalledWith_Promise(params: js.Any*): js.Promise[Unit] = js.native
+    def toHaveBeenCalledWith_Promise(params: Any*): js.Promise[Unit] = js.native
   }
   
   @js.native
   trait Matchers[T] extends StObject {
     
-    def toBe(expected: js.Any): js.Promise[Unit] = js.native
-    def toBe(expected: js.Any, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBe(expected: Any): js.Promise[Unit] = js.native
+    def toBe(expected: Any, expectationFailOutput: Any): js.Promise[Unit] = js.native
     
     def toBeCloseTo(expected: js.Promise[Double]): js.Promise[Unit] = js.native
-    def toBeCloseTo(expected: js.Promise[Double], precision: js.Any): js.Promise[Unit] = js.native
-    def toBeCloseTo(expected: js.Promise[Double], precision: js.Any, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
-    def toBeCloseTo(expected: js.Promise[Double], precision: Unit, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeCloseTo(expected: js.Promise[Double], precision: Any): js.Promise[Unit] = js.native
+    def toBeCloseTo(expected: js.Promise[Double], precision: Any, expectationFailOutput: Any): js.Promise[Unit] = js.native
+    def toBeCloseTo(expected: js.Promise[Double], precision: Unit, expectationFailOutput: Any): js.Promise[Unit] = js.native
     def toBeCloseTo(expected: Double): js.Promise[Unit] = js.native
-    def toBeCloseTo(expected: Double, precision: js.Any): js.Promise[Unit] = js.native
-    def toBeCloseTo(expected: Double, precision: js.Any, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
-    def toBeCloseTo(expected: Double, precision: Unit, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeCloseTo(expected: Double, precision: Any): js.Promise[Unit] = js.native
+    def toBeCloseTo(expected: Double, precision: Any, expectationFailOutput: Any): js.Promise[Unit] = js.native
+    def toBeCloseTo(expected: Double, precision: Unit, expectationFailOutput: Any): js.Promise[Unit] = js.native
     
     def toBeDefined(): js.Promise[Unit] = js.native
-    def toBeDefined(expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeDefined(expectationFailOutput: Any): js.Promise[Unit] = js.native
     
     def toBeFalsy(): js.Promise[Unit] = js.native
-    def toBeFalsy(expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeFalsy(expectationFailOutput: Any): js.Promise[Unit] = js.native
     
     def toBeGreaterThan(expected: js.Promise[Double]): js.Promise[Unit] = js.native
-    def toBeGreaterThan(expected: js.Promise[Double], expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeGreaterThan(expected: js.Promise[Double], expectationFailOutput: Any): js.Promise[Unit] = js.native
     def toBeGreaterThan(expected: Double): js.Promise[Unit] = js.native
-    def toBeGreaterThan(expected: Double, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeGreaterThan(expected: Double, expectationFailOutput: Any): js.Promise[Unit] = js.native
     
     def toBeGreaterThanOrEqual(expected: js.Promise[Double]): js.Promise[Unit] = js.native
-    def toBeGreaterThanOrEqual(expected: js.Promise[Double], expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeGreaterThanOrEqual(expected: js.Promise[Double], expectationFailOutput: Any): js.Promise[Unit] = js.native
     def toBeGreaterThanOrEqual(expected: Double): js.Promise[Unit] = js.native
-    def toBeGreaterThanOrEqual(expected: Double, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeGreaterThanOrEqual(expected: Double, expectationFailOutput: Any): js.Promise[Unit] = js.native
     
     def toBeLessThan(expected: js.Promise[Double]): js.Promise[Unit] = js.native
-    def toBeLessThan(expected: js.Promise[Double], expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeLessThan(expected: js.Promise[Double], expectationFailOutput: Any): js.Promise[Unit] = js.native
     def toBeLessThan(expected: Double): js.Promise[Unit] = js.native
-    def toBeLessThan(expected: Double, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeLessThan(expected: Double, expectationFailOutput: Any): js.Promise[Unit] = js.native
     
     def toBeLessThanOrEqual(expected: js.Promise[Double]): js.Promise[Unit] = js.native
-    def toBeLessThanOrEqual(expected: js.Promise[Double], expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeLessThanOrEqual(expected: js.Promise[Double], expectationFailOutput: Any): js.Promise[Unit] = js.native
     def toBeLessThanOrEqual(expected: Double): js.Promise[Unit] = js.native
-    def toBeLessThanOrEqual(expected: Double, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeLessThanOrEqual(expected: Double, expectationFailOutput: Any): js.Promise[Unit] = js.native
     
     def toBeNaN(): js.Promise[Unit] = js.native
     
     def toBeNull(): js.Promise[Unit] = js.native
-    def toBeNull(expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeNull(expectationFailOutput: Any): js.Promise[Unit] = js.native
     
     def toBeTruthy(): js.Promise[Unit] = js.native
-    def toBeTruthy(expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeTruthy(expectationFailOutput: Any): js.Promise[Unit] = js.native
     
     def toBeUndefined(): js.Promise[Unit] = js.native
-    def toBeUndefined(expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toBeUndefined(expectationFailOutput: Any): js.Promise[Unit] = js.native
     
-    def toContain(expected: js.Any): js.Promise[Unit] = js.native
-    def toContain(expected: js.Any, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toContain(expected: Any): js.Promise[Unit] = js.native
+    def toContain(expected: Any, expectationFailOutput: Any): js.Promise[Unit] = js.native
     
-    def toEqual(expected: js.Any): js.Promise[Unit] = js.native
-    def toEqual(expected: js.Any, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toEqual(expected: Any): js.Promise[Unit] = js.native
+    def toEqual(expected: Any, expectationFailOutput: Any): js.Promise[Unit] = js.native
     
     def toHaveBeenCalled(): js.Promise[Unit] = js.native
     
     def toHaveBeenCalledTimes(expected: js.Promise[Double]): js.Promise[Unit] = js.native
     def toHaveBeenCalledTimes(expected: Double): js.Promise[Unit] = js.native
     
-    def toHaveBeenCalledWith(params: js.Any*): js.Promise[Unit] = js.native
+    def toHaveBeenCalledWith(params: Any*): js.Promise[Unit] = js.native
     
     def toMatch(expected: String): js.Promise[Unit] = js.native
-    def toMatch(expected: String, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
-    def toMatch(expected: js.Promise[String | RegExp]): js.Promise[Unit] = js.native
-    def toMatch(expected: js.Promise[String | RegExp], expectationFailOutput: js.Any): js.Promise[Unit] = js.native
-    def toMatch(expected: RegExp): js.Promise[Unit] = js.native
-    def toMatch(expected: RegExp, expectationFailOutput: js.Any): js.Promise[Unit] = js.native
+    def toMatch(expected: String, expectationFailOutput: Any): js.Promise[Unit] = js.native
+    def toMatch(expected: js.Promise[String | js.RegExp]): js.Promise[Unit] = js.native
+    def toMatch(expected: js.Promise[String | js.RegExp], expectationFailOutput: Any): js.Promise[Unit] = js.native
+    def toMatch(expected: js.RegExp): js.Promise[Unit] = js.native
+    def toMatch(expected: js.RegExp, expectationFailOutput: Any): js.Promise[Unit] = js.native
     
     def toThrow(): js.Promise[Unit] = js.native
-    def toThrow(expected: js.Any): js.Promise[Unit] = js.native
+    def toThrow(expected: Any): js.Promise[Unit] = js.native
     
     def toThrowError(): js.Promise[Unit] = js.native
     def toThrowError(
       expected: Instantiable1[
-          /* args (repeated) */ js.Any, 
-          Error | (js.Promise[Instantiable1[/* args (repeated) */ js.Any, Error]])
+          /* args (repeated) */ Any, 
+          js.Error | (js.Promise[Instantiable1[/* args (repeated) */ Any, js.Error]])
         ]
     ): js.Promise[Unit] = js.native
     def toThrowError(
       expected: Instantiable1[
-          /* args (repeated) */ js.Any, 
-          Error | (js.Promise[Instantiable1[/* args (repeated) */ js.Any, Error]])
+          /* args (repeated) */ Any, 
+          js.Error | (js.Promise[Instantiable1[/* args (repeated) */ Any, js.Error]])
         ],
       message: String
     ): js.Promise[Unit] = js.native
     def toThrowError(
       expected: Instantiable1[
-          /* args (repeated) */ js.Any, 
-          Error | (js.Promise[Instantiable1[/* args (repeated) */ js.Any, Error]])
+          /* args (repeated) */ Any, 
+          js.Error | (js.Promise[Instantiable1[/* args (repeated) */ Any, js.Error]])
         ],
-      message: js.Promise[String | RegExp]
+      message: js.Promise[String | js.RegExp]
     ): js.Promise[Unit] = js.native
     def toThrowError(
       expected: Instantiable1[
-          /* args (repeated) */ js.Any, 
-          Error | (js.Promise[Instantiable1[/* args (repeated) */ js.Any, Error]])
+          /* args (repeated) */ Any, 
+          js.Error | (js.Promise[Instantiable1[/* args (repeated) */ Any, js.Error]])
         ],
-      message: RegExp
+      message: js.RegExp
     ): js.Promise[Unit] = js.native
     def toThrowError(expected: Unit, message: String): js.Promise[Unit] = js.native
-    def toThrowError(expected: Unit, message: js.Promise[String | RegExp]): js.Promise[Unit] = js.native
-    def toThrowError(expected: Unit, message: RegExp): js.Promise[Unit] = js.native
+    def toThrowError(expected: Unit, message: js.Promise[String | js.RegExp]): js.Promise[Unit] = js.native
+    def toThrowError(expected: Unit, message: js.RegExp): js.Promise[Unit] = js.native
     def toThrowError(message: String): js.Promise[Unit] = js.native
-    def toThrowError(message: js.Promise[String | RegExp]): js.Promise[Unit] = js.native
-    def toThrowError(message: RegExp): js.Promise[Unit] = js.native
+    def toThrowError(message: js.Promise[String | js.RegExp]): js.Promise[Unit] = js.native
+    def toThrowError(message: js.RegExp): js.Promise[Unit] = js.native
   }
   
   trait Spec extends StObject {

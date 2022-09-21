@@ -198,7 +198,7 @@ trait Align extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.padding
     */
-  var padding: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+  var padding: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
   /**
     * Show blur of the text block.
@@ -398,11 +398,11 @@ object Align {
     
     inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    inline def setPadding(value: js.Array[js.Any] | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: js.Array[Any] | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPaddingVarargs(value: js.Any*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Any*): Self = StObject.set(x, "padding", js.Array(value*))
     
     inline def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
     

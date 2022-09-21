@@ -32,7 +32,7 @@ object InvitationsToCreateOrUpdate {
     
     inline def setInvitationsToCreateOrUpdateUndefined: Self = StObject.set(x, "invitationsToCreateOrUpdate", js.undefined)
     
-    inline def setInvitationsToCreateOrUpdateVarargs(value: InvitationShareRelationship*): Self = StObject.set(x, "invitationsToCreateOrUpdate", js.Array(value :_*))
+    inline def setInvitationsToCreateOrUpdateVarargs(value: InvitationShareRelationship*): Self = StObject.set(x, "invitationsToCreateOrUpdate", js.Array(value*))
     
     inline def setInviteMessage(value: String): Self = StObject.set(x, "inviteMessage", value.asInstanceOf[js.Any])
     
@@ -42,7 +42,7 @@ object InvitationsToCreateOrUpdate {
     
     inline def setMembershipsToUpdateUndefined: Self = StObject.set(x, "membershipsToUpdate", js.undefined)
     
-    inline def setMembershipsToUpdateVarargs(value: MemberShareRelationship*): Self = StObject.set(x, "membershipsToUpdate", js.Array(value :_*))
+    inline def setMembershipsToUpdateVarargs(value: MemberShareRelationship*): Self = StObject.set(x, "membershipsToUpdate", js.Array(value*))
     
     inline def setNotebookGuid(value: String): Self = StObject.set(x, "notebookGuid", value.asInstanceOf[js.Any])
     
@@ -52,6 +52,6 @@ object InvitationsToCreateOrUpdate {
     
     inline def setUnsharesUndefined: Self = StObject.set(x, "unshares", js.undefined)
     
-    inline def setUnsharesVarargs(value: UserIdentity*): Self = StObject.set(x, "unshares", js.Array(value :_*))
+    inline def setUnsharesVarargs(value: UserIdentity*): Self = StObject.set(x, "unshares", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ object viewListMod {
   
   @JSImport("material-ui/svg-icons/action/view-list", JSImport.Default)
   @js.native
-  class default () extends ActionViewList
+  open class default () extends ActionViewList
   
   @JSImport("material-ui/svg-icons/action/view-list", "ActionViewList")
   @js.native
-  class ActionViewList ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionViewList ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

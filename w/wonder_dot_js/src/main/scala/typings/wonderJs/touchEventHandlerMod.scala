@@ -13,9 +13,9 @@ object touchEventHandlerMod {
   
   @JSImport("wonder.js/dist/es2015/event/handler/TouchEventHandler", "TouchEventHandler")
   @js.native
-  class TouchEventHandler () extends PointEventHandler {
+  open class TouchEventHandler () extends PointEventHandler {
     
-    /* protected */ def addEngineHandler(eventName: EEventName, handler: js.Function1[/* event */ TouchEvent, Unit]): js.Any = js.native
+    /* protected */ def addEngineHandler(eventName: EEventName, handler: js.Function1[/* event */ TouchEvent, Unit]): Any = js.native
     
     /* protected */ def createEventObject(dom: HTMLElement, event: ITouchEventData, eventName: EEventName): TouchEvent = js.native
   }
@@ -26,6 +26,6 @@ object touchEventHandlerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+    inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
   }
 }

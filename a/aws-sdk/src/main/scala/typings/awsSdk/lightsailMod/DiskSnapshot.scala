@@ -14,7 +14,7 @@ trait DiskSnapshot extends StObject {
   /**
     * The date when the disk snapshot was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the source disk from which the disk snapshot was created.
@@ -52,7 +52,7 @@ trait DiskSnapshot extends StObject {
   var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
-    * The progress of the disk snapshot operation.
+    * The progress of the snapshot.
     */
   var progress: js.UndefOr[String] = js.undefined
   
@@ -77,7 +77,7 @@ trait DiskSnapshot extends StObject {
   var supportCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Lightsail Dev Guide.
+    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Amazon Lightsail Developer Guide.
     */
   var tags: js.UndefOr[TagList] = js.undefined
 }
@@ -94,7 +94,7 @@ object DiskSnapshot {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -150,6 +150,6 @@ object DiskSnapshot {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

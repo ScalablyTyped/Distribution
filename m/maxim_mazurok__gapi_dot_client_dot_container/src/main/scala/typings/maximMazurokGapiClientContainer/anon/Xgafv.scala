@@ -19,7 +19,7 @@ trait Xgafv extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Deprecated. The name of the cluster. This field has been deprecated and replaced by the name field. */
+  /** Deprecated. The name of the cluster to upgrade. This field has been deprecated and replaced by the name field. */
   var clusterId: String
   
   /** Selector specifying which fields to include in a partial response. */
@@ -28,12 +28,6 @@ trait Xgafv extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name (project, location, cluster, node pool id) of the node pool to get. Specified in the format `projects/∗/locations/∗/clusters/∗/nodePools/ *`. */
-  var name: js.UndefOr[String] = js.undefined
-  
-  /** Deprecated. The name of the node pool. This field has been deprecated and replaced by the name field. */
-  var nodePoolId: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
@@ -41,8 +35,8 @@ trait Xgafv extends StObject {
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://developers.google.com/console/help/new/#projectnumber). This field has been deprecated and
-    * replaced by the name field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been
+    * deprecated and replaced by the name field.
     */
   var projectId: String
   
@@ -63,8 +57,8 @@ trait Xgafv extends StObject {
 }
 object Xgafv {
   
-  inline def apply(clusterId: String, nodePoolId: String, projectId: String, zone: String): Xgafv = {
-    val __obj = js.Dynamic.literal(clusterId = clusterId.asInstanceOf[js.Any], nodePoolId = nodePoolId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
+  inline def apply(clusterId: String, projectId: String, zone: String): Xgafv = {
+    val __obj = js.Dynamic.literal(clusterId = clusterId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xgafv]
   }
   
@@ -95,12 +89,6 @@ object Xgafv {
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-    
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-    
-    inline def setNodePoolId(value: String): Self = StObject.set(x, "nodePoolId", value.asInstanceOf[js.Any])
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,7 @@ object UseMultipleSelectionProps {
     
     inline def setDefaultSelectedItemsUndefined: Self = StObject.set(x, "defaultSelectedItems", js.undefined)
     
-    inline def setDefaultSelectedItemsVarargs(value: Item*): Self = StObject.set(x, "defaultSelectedItems", js.Array(value :_*))
+    inline def setDefaultSelectedItemsVarargs(value: Item*): Self = StObject.set(x, "defaultSelectedItems", js.Array(value*))
     
     inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object UseMultipleSelectionProps {
     
     inline def setInitialSelectedItemsUndefined: Self = StObject.set(x, "initialSelectedItems", js.undefined)
     
-    inline def setInitialSelectedItemsVarargs(value: Item*): Self = StObject.set(x, "initialSelectedItems", js.Array(value :_*))
+    inline def setInitialSelectedItemsVarargs(value: Item*): Self = StObject.set(x, "initialSelectedItems", js.Array(value*))
     
     inline def setItemToString(value: /* item */ Item => String): Self = StObject.set(x, "itemToString", js.Any.fromFunction1(value))
     
@@ -112,7 +112,7 @@ object UseMultipleSelectionProps {
     
     inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
     
-    inline def setSelectedItemsVarargs(value: Item*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: Item*): Self = StObject.set(x, "selectedItems", js.Array(value*))
     
     inline def setStateReducer(
       value: (/* state */ UseMultipleSelectionState[Item], /* actionAndChanges */ UseMultipleSelectionStateChangeOptions[Item]) => Partial[UseMultipleSelectionState[Item]]

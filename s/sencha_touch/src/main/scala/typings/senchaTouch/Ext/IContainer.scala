@@ -10,13 +10,13 @@ trait IContainer
      with IComponent {
   
   /** [Config Option] (Object/String/Number) */
-  var activeItem: js.UndefOr[js.Any] = js.undefined
+  var activeItem: js.UndefOr[Any] = js.undefined
   
   /** [Method] Adds one or more Components to this Container
     * @param newItems Object/Object[]/Ext.Component/Ext.Component[] The new items to add to the Container.
     * @returns Ext.Component The last item added to the Container from the newItems array.
     */
-  var add: js.UndefOr[js.Function1[/* newItems */ js.UndefOr[js.Any], IComponent]] = js.undefined
+  var add: js.UndefOr[js.Function1[/* newItems */ js.UndefOr[Any], IComponent]] = js.undefined
   
   /** [Method] Adds an array of Components to this Container
     * @param items Array The array of items to add to this container.
@@ -29,20 +29,20 @@ trait IContainer
     * @param animation Object/Ext.fx.layout.Card Card animation configuration or instance.
     */
   var animateActiveItem: js.UndefOr[
-    js.Function2[/* activeItem */ js.UndefOr[js.Any], /* animation */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* activeItem */ js.UndefOr[Any], /* animation */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] Changes the masked configuration when its setter is called which will convert the value into a proper object instanc
     * @param masked Boolean/Object/Ext.Mask/Ext.LoadMask
     * @returns Object
     */
-  var applyMasked: js.UndefOr[js.Function1[/* masked */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var applyMasked: js.UndefOr[js.Function1[/* masked */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var autoDestroy: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String/Object/Boolean) */
-  var cardSwitchAnimation: js.UndefOr[js.Any] = js.undefined
+  var cardSwitchAnimation: js.UndefOr[Any] = js.undefined
   
   /** [Method] Retrieves the first direct child of this container which matches the passed selector
     * @param selector String An Ext.ComponentQuery selector.
@@ -51,13 +51,13 @@ trait IContainer
   var child: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], IComponent]] = js.undefined
   
   /** [Config Option] (Object) */
-  var control: js.UndefOr[js.Any] = js.undefined
+  var control: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var defaultType: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Object) */
-  var defaults: js.UndefOr[js.Any] = js.undefined
+  var defaults: js.UndefOr[Any] = js.undefined
   
   /** [Method] Retrieves the first descendant of this container which matches the passed selector
     * @param selector String An Ext.ComponentQuery selector.
@@ -68,7 +68,7 @@ trait IContainer
   /** [Method] Returns the value of activeItem
     * @returns Object/String/Number
     */
-  var getActiveItem: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getActiveItem: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the Component for a given index in the Container s items
     * @param index Number The index of the Component to return.
@@ -85,12 +85,12 @@ trait IContainer
     * @param component String/Number This parameter may be any of the following:  {String} : representing the itemId or id of the child component. {Number} : representing the position of the child component within the items property. For additional information see Ext.util.MixedCollection.get.
     * @returns Ext.Component The component (if found).
     */
-  var getComponent: js.UndefOr[js.Function1[/* component */ js.UndefOr[js.Any], IComponent]] = js.undefined
+  var getComponent: js.UndefOr[js.Function1[/* component */ js.UndefOr[Any], IComponent]] = js.undefined
   
   /** [Method] Returns the value of control
     * @returns Object
     */
-  var getControl: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getControl: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of defaultType
     * @returns String
@@ -100,13 +100,13 @@ trait IContainer
   /** [Method] Returns the value of defaults
     * @returns Object
     */
-  var getDefaults: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getDefaults: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Finds a docked item of this container using a reference idor an index of its location in getDockedItems
     * @param component String/Number The id or index of the component to find.
     * @returns Ext.Component/Boolean The docked component, if found.
     */
-  var getDockedComponent: js.UndefOr[js.Function1[/* component */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getDockedComponent: js.UndefOr[js.Function1[/* component */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns all the Ext Component docked items in this container
     * @returns Array The docked items of this container.
@@ -126,12 +126,12 @@ trait IContainer
   /** [Method] Returns the value of items
     * @returns Array/Object
     */
-  var getItems: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getItems: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of masked
     * @returns Boolean/Object/Ext.Mask/Ext.LoadMask
     */
-  var getMasked: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getMasked: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of modal
     * @returns Boolean
@@ -153,23 +153,21 @@ trait IContainer
     * @param index Number The index to insert the Component at.
     * @param item Object The Component to insert.
     */
-  var insert: js.UndefOr[
-    js.Function2[/* index */ js.UndefOr[Double], /* item */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var insert: js.UndefOr[js.Function2[/* index */ js.UndefOr[Double], /* item */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Array/Object) */
-  var items: js.UndefOr[js.Any] = js.undefined
+  var items: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object/String) */
-  var layout: js.UndefOr[js.Any] = js.undefined
+  var layout: js.UndefOr[Any] = js.undefined
   
   /** [Method] Convenience method which calls setMasked with a value of true to show the mask
     * @param mask Object
     */
-  var mask: js.UndefOr[js.Function1[/* mask */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var mask: js.UndefOr[js.Function1[/* mask */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean/Object/Ext.Mask/Ext.LoadMask) */
-  var masked: js.UndefOr[js.Any] = js.undefined
+  var masked: js.UndefOr[Any] = js.undefined
   
   /** [Method] Retrieves all descendant components which match the passed selector
     * @param selector String Selector complying to an Ext.ComponentQuery selector.
@@ -183,7 +181,7 @@ trait IContainer
     * @returns Ext.Component this
     */
   var remove: js.UndefOr[
-    js.Function2[/* item */ js.UndefOr[js.Any], /* destroy */ js.UndefOr[Boolean], IComponent]
+    js.Function2[/* item */ js.UndefOr[Any], /* destroy */ js.UndefOr[Boolean], IComponent]
   ] = js.undefined
   
   /** [Method] Removes all items currently in the Container optionally destroying them all
@@ -207,7 +205,7 @@ trait IContainer
     * @returns Ext.Component this
     */
   var removeDocked: js.UndefOr[
-    js.Function2[/* item */ js.UndefOr[js.Any], /* destroy */ js.UndefOr[Boolean], IComponent]
+    js.Function2[/* item */ js.UndefOr[Any], /* destroy */ js.UndefOr[Boolean], IComponent]
   ] = js.undefined
   
   /** [Method] Removes an inner Component at the specified index  myContainer removeInnerAt 0 removes the first item of the in
@@ -217,12 +215,12 @@ trait IContainer
   var removeInnerAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], this.type]] = js.undefined
   
   /** [Config Option] (Boolean/String/Object) */
-  var scrollable: js.UndefOr[js.Any] = js.undefined
+  var scrollable: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the value of activeItem
     * @param activeItem Object/String/Number The new value.
     */
-  var setActiveItem: js.UndefOr[js.Function1[/* activeItem */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setActiveItem: js.UndefOr[js.Function1[/* activeItem */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of autoDestroy
     * @param autoDestroy Boolean The new value.
@@ -232,7 +230,7 @@ trait IContainer
   /** [Method] Sets the value of control
     * @param control Object The new value.
     */
-  var setControl: js.UndefOr[js.Function1[/* control */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setControl: js.UndefOr[js.Function1[/* control */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of defaultType
     * @param defaultType String The new value.
@@ -242,7 +240,7 @@ trait IContainer
   /** [Method] Sets the value of defaults
     * @param defaults Object The new value.
     */
-  var setDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of hideOnMaskTap
     * @param hideOnMaskTap Boolean The new value.
@@ -252,17 +250,17 @@ trait IContainer
   /** [Method] Sets the value of items
     * @param items Array/Object The new value.
     */
-  var setItems: js.UndefOr[js.Function1[/* items */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setItems: js.UndefOr[js.Function1[/* items */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of layout
     * @param layout Object/String The new value.
     */
-  var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of masked
     * @param masked Boolean/Object/Ext.Mask/Ext.LoadMask The new value.
     */
-  var setMasked: js.UndefOr[js.Function1[/* masked */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMasked: js.UndefOr[js.Function1[/* masked */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of modal
     * @param modal Boolean The new value.
@@ -274,7 +272,7 @@ trait IContainer
     * @returns Ext.scroll.View The scroll view.
     */
   @JSName("setScrollable")
-  var setScrollable_IContainer: js.UndefOr[js.Function1[/* scrollable */ js.UndefOr[js.Any], IView]] = js.undefined
+  var setScrollable_IContainer: js.UndefOr[js.Function1[/* scrollable */ js.UndefOr[Any], IView]] = js.undefined
   
   /** [Method] Shows this component optionally using an animation
     * @returns Ext.Component
@@ -294,11 +292,11 @@ object IContainer {
   
   extension [Self <: IContainer](x: Self) {
     
-    inline def setActiveItem(value: js.Any): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
+    inline def setActiveItem(value: Any): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
     
     inline def setActiveItemUndefined: Self = StObject.set(x, "activeItem", js.undefined)
     
-    inline def setAdd(value: /* newItems */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* newItems */ js.UndefOr[Any] => IComponent): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     inline def setAddAll(value: /* items */ js.UndefOr[Array] => Array): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
     
@@ -306,11 +304,11 @@ object IContainer {
     
     inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    inline def setAnimateActiveItem(value: (/* activeItem */ js.UndefOr[js.Any], /* animation */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "animateActiveItem", js.Any.fromFunction2(value))
+    inline def setAnimateActiveItem(value: (/* activeItem */ js.UndefOr[Any], /* animation */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "animateActiveItem", js.Any.fromFunction2(value))
     
     inline def setAnimateActiveItemUndefined: Self = StObject.set(x, "animateActiveItem", js.undefined)
     
-    inline def setApplyMasked(value: /* masked */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "applyMasked", js.Any.fromFunction1(value))
+    inline def setApplyMasked(value: /* masked */ js.UndefOr[Any] => Any): Self = StObject.set(x, "applyMasked", js.Any.fromFunction1(value))
     
     inline def setApplyMaskedUndefined: Self = StObject.set(x, "applyMasked", js.undefined)
     
@@ -318,7 +316,7 @@ object IContainer {
     
     inline def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
     
-    inline def setCardSwitchAnimation(value: js.Any): Self = StObject.set(x, "cardSwitchAnimation", value.asInstanceOf[js.Any])
+    inline def setCardSwitchAnimation(value: Any): Self = StObject.set(x, "cardSwitchAnimation", value.asInstanceOf[js.Any])
     
     inline def setCardSwitchAnimationUndefined: Self = StObject.set(x, "cardSwitchAnimation", js.undefined)
     
@@ -326,7 +324,7 @@ object IContainer {
     
     inline def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
     
-    inline def setControl(value: js.Any): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: Any): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
     inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
@@ -334,7 +332,7 @@ object IContainer {
     
     inline def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
     
-    inline def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
     inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
     
@@ -342,7 +340,7 @@ object IContainer {
     
     inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
     
-    inline def setGetActiveItem(value: () => js.Any): Self = StObject.set(x, "getActiveItem", js.Any.fromFunction0(value))
+    inline def setGetActiveItem(value: () => Any): Self = StObject.set(x, "getActiveItem", js.Any.fromFunction0(value))
     
     inline def setGetActiveItemUndefined: Self = StObject.set(x, "getActiveItem", js.undefined)
     
@@ -354,11 +352,11 @@ object IContainer {
     
     inline def setGetAutoDestroyUndefined: Self = StObject.set(x, "getAutoDestroy", js.undefined)
     
-    inline def setGetComponent(value: /* component */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "getComponent", js.Any.fromFunction1(value))
+    inline def setGetComponent(value: /* component */ js.UndefOr[Any] => IComponent): Self = StObject.set(x, "getComponent", js.Any.fromFunction1(value))
     
     inline def setGetComponentUndefined: Self = StObject.set(x, "getComponent", js.undefined)
     
-    inline def setGetControl(value: () => js.Any): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
+    inline def setGetControl(value: () => Any): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
     
     inline def setGetControlUndefined: Self = StObject.set(x, "getControl", js.undefined)
     
@@ -366,11 +364,11 @@ object IContainer {
     
     inline def setGetDefaultTypeUndefined: Self = StObject.set(x, "getDefaultType", js.undefined)
     
-    inline def setGetDefaults(value: () => js.Any): Self = StObject.set(x, "getDefaults", js.Any.fromFunction0(value))
+    inline def setGetDefaults(value: () => Any): Self = StObject.set(x, "getDefaults", js.Any.fromFunction0(value))
     
     inline def setGetDefaultsUndefined: Self = StObject.set(x, "getDefaults", js.undefined)
     
-    inline def setGetDockedComponent(value: /* component */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getDockedComponent", js.Any.fromFunction1(value))
+    inline def setGetDockedComponent(value: /* component */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getDockedComponent", js.Any.fromFunction1(value))
     
     inline def setGetDockedComponentUndefined: Self = StObject.set(x, "getDockedComponent", js.undefined)
     
@@ -386,11 +384,11 @@ object IContainer {
     
     inline def setGetInnerItemsUndefined: Self = StObject.set(x, "getInnerItems", js.undefined)
     
-    inline def setGetItems(value: () => js.Any): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
+    inline def setGetItems(value: () => Any): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
     
     inline def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
     
-    inline def setGetMasked(value: () => js.Any): Self = StObject.set(x, "getMasked", js.Any.fromFunction0(value))
+    inline def setGetMasked(value: () => Any): Self = StObject.set(x, "getMasked", js.Any.fromFunction0(value))
     
     inline def setGetMaskedUndefined: Self = StObject.set(x, "getMasked", js.undefined)
     
@@ -406,23 +404,23 @@ object IContainer {
     
     inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    inline def setInsert(value: (/* index */ js.UndefOr[Double], /* item */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (/* index */ js.UndefOr[Double], /* item */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
     inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
-    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    inline def setMask(value: /* mask */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "mask", js.Any.fromFunction1(value))
+    inline def setMask(value: /* mask */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "mask", js.Any.fromFunction1(value))
     
     inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
-    inline def setMasked(value: js.Any): Self = StObject.set(x, "masked", value.asInstanceOf[js.Any])
+    inline def setMasked(value: Any): Self = StObject.set(x, "masked", value.asInstanceOf[js.Any])
     
     inline def setMaskedUndefined: Self = StObject.set(x, "masked", js.undefined)
     
@@ -430,7 +428,7 @@ object IContainer {
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    inline def setRemove(value: (/* item */ js.UndefOr[js.Any], /* destroy */ js.UndefOr[Boolean]) => IComponent): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+    inline def setRemove(value: (/* item */ js.UndefOr[Any], /* destroy */ js.UndefOr[Boolean]) => IComponent): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
     
     inline def setRemoveAll(value: (/* destroy */ js.UndefOr[Boolean], /* everything */ js.UndefOr[Boolean]) => IComponent): Self = StObject.set(x, "removeAll", js.Any.fromFunction2(value))
     
@@ -440,7 +438,7 @@ object IContainer {
     
     inline def setRemoveAtUndefined: Self = StObject.set(x, "removeAt", js.undefined)
     
-    inline def setRemoveDocked(value: (/* item */ js.UndefOr[js.Any], /* destroy */ js.UndefOr[Boolean]) => IComponent): Self = StObject.set(x, "removeDocked", js.Any.fromFunction2(value))
+    inline def setRemoveDocked(value: (/* item */ js.UndefOr[Any], /* destroy */ js.UndefOr[Boolean]) => IComponent): Self = StObject.set(x, "removeDocked", js.Any.fromFunction2(value))
     
     inline def setRemoveDockedUndefined: Self = StObject.set(x, "removeDocked", js.undefined)
     
@@ -450,11 +448,11 @@ object IContainer {
     
     inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    inline def setScrollable(value: js.Any): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
+    inline def setScrollable(value: Any): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
     
     inline def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
     
-    inline def setSetActiveItem(value: /* activeItem */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setActiveItem", js.Any.fromFunction1(value))
+    inline def setSetActiveItem(value: /* activeItem */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setActiveItem", js.Any.fromFunction1(value))
     
     inline def setSetActiveItemUndefined: Self = StObject.set(x, "setActiveItem", js.undefined)
     
@@ -462,7 +460,7 @@ object IContainer {
     
     inline def setSetAutoDestroyUndefined: Self = StObject.set(x, "setAutoDestroy", js.undefined)
     
-    inline def setSetControl(value: /* control */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setControl", js.Any.fromFunction1(value))
+    inline def setSetControl(value: /* control */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setControl", js.Any.fromFunction1(value))
     
     inline def setSetControlUndefined: Self = StObject.set(x, "setControl", js.undefined)
     
@@ -470,7 +468,7 @@ object IContainer {
     
     inline def setSetDefaultTypeUndefined: Self = StObject.set(x, "setDefaultType", js.undefined)
     
-    inline def setSetDefaults(value: /* defaults */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
+    inline def setSetDefaults(value: /* defaults */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDefaults", js.Any.fromFunction1(value))
     
     inline def setSetDefaultsUndefined: Self = StObject.set(x, "setDefaults", js.undefined)
     
@@ -478,15 +476,15 @@ object IContainer {
     
     inline def setSetHideOnMaskTapUndefined: Self = StObject.set(x, "setHideOnMaskTap", js.undefined)
     
-    inline def setSetItems(value: /* items */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
+    inline def setSetItems(value: /* items */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setItems", js.Any.fromFunction1(value))
     
     inline def setSetItemsUndefined: Self = StObject.set(x, "setItems", js.undefined)
     
-    inline def setSetLayout(value: /* layout */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
+    inline def setSetLayout(value: /* layout */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
     
     inline def setSetLayoutUndefined: Self = StObject.set(x, "setLayout", js.undefined)
     
-    inline def setSetMasked(value: /* masked */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMasked", js.Any.fromFunction1(value))
+    inline def setSetMasked(value: /* masked */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMasked", js.Any.fromFunction1(value))
     
     inline def setSetMaskedUndefined: Self = StObject.set(x, "setMasked", js.undefined)
     
@@ -494,7 +492,7 @@ object IContainer {
     
     inline def setSetModalUndefined: Self = StObject.set(x, "setModal", js.undefined)
     
-    inline def setSetScrollable(value: /* scrollable */ js.UndefOr[js.Any] => IView): Self = StObject.set(x, "setScrollable", js.Any.fromFunction1(value))
+    inline def setSetScrollable(value: /* scrollable */ js.UndefOr[Any] => IView): Self = StObject.set(x, "setScrollable", js.Any.fromFunction1(value))
     
     inline def setSetScrollableUndefined: Self = StObject.set(x, "setScrollable", js.undefined)
     

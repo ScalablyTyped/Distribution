@@ -16,7 +16,7 @@ object Sound {
     */
   @JSGlobal("Phaser.Sound.BaseSound")
   @js.native
-  class BaseSound protected ()
+  open class BaseSound protected ()
     extends StObject
        with typings.phaser.Phaser.Sound.BaseSound {
     /**
@@ -34,7 +34,7 @@ object Sound {
     */
   @JSGlobal("Phaser.Sound.BaseSoundManager")
   @js.native
-  class BaseSoundManager protected ()
+  open class BaseSoundManager protected ()
     extends StObject
        with typings.phaser.Phaser.Sound.BaseSoundManager {
     /**
@@ -61,7 +61,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.COMPLETE")
     @js.native
-    val COMPLETE: js.Any = js.native
+    val COMPLETE: Any = js.native
     
     /**
       * The Audio Data Decoded Event.
@@ -77,7 +77,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.DECODED")
     @js.native
-    val DECODED: js.Any = js.native
+    val DECODED: Any = js.native
     
     /**
       * The Audio Data Decoded All Event.
@@ -97,7 +97,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.DECODED_ALL")
     @js.native
-    val DECODED_ALL: js.Any = js.native
+    val DECODED_ALL: Any = js.native
     
     /**
       * The Sound Destroy Event.
@@ -115,7 +115,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.DESTROY")
     @js.native
-    val DESTROY: js.Any = js.native
+    val DESTROY: Any = js.native
     
     /**
       * The Sound Detune Event.
@@ -133,7 +133,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.DETUNE")
     @js.native
-    val DETUNE: js.Any = js.native
+    val DETUNE: Any = js.native
     
     /**
       * The Sound Manager Global Detune Event.
@@ -146,7 +146,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.GLOBAL_DETUNE")
     @js.native
-    val GLOBAL_DETUNE: js.Any = js.native
+    val GLOBAL_DETUNE: Any = js.native
     
     /**
       * The Sound Manager Global Mute Event.
@@ -158,7 +158,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.GLOBAL_MUTE")
     @js.native
-    val GLOBAL_MUTE: js.Any = js.native
+    val GLOBAL_MUTE: Any = js.native
     
     /**
       * The Sound Manager Global Rate Event.
@@ -171,7 +171,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.GLOBAL_RATE")
     @js.native
-    val GLOBAL_RATE: js.Any = js.native
+    val GLOBAL_RATE: Any = js.native
     
     /**
       * The Sound Manager Global Volume Event.
@@ -183,7 +183,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.GLOBAL_VOLUME")
     @js.native
-    val GLOBAL_VOLUME: js.Any = js.native
+    val GLOBAL_VOLUME: Any = js.native
     
     /**
       * The Sound Loop Event.
@@ -202,7 +202,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.LOOP")
     @js.native
-    val LOOP: js.Any = js.native
+    val LOOP: Any = js.native
     
     /**
       * The Sound Looped Event.
@@ -222,7 +222,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.LOOPED")
     @js.native
-    val LOOPED: js.Any = js.native
+    val LOOPED: Any = js.native
     
     /**
       * The Sound Mute Event.
@@ -240,7 +240,25 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.MUTE")
     @js.native
-    val MUTE: js.Any = js.native
+    val MUTE: Any = js.native
+    
+    /**
+      * The Sound Pan Event.
+      * 
+      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their pan changes.
+      * 
+      * Listen to it from a Sound instance using `Sound.on('pan', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var sound = this.sound.add('key');
+      * sound.on('pan', listener);
+      * sound.play();
+      * sound.setPan(0.5);
+      * ```
+      */
+    @JSGlobal("Phaser.Sound.Events.PAN")
+    @js.native
+    val PAN: Any = js.native
     
     /**
       * The Sound Pause Event.
@@ -258,7 +276,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.PAUSE")
     @js.native
-    val PAUSE: js.Any = js.native
+    val PAUSE: Any = js.native
     
     /**
       * The Pause All Sounds Event.
@@ -271,7 +289,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.PAUSE_ALL")
     @js.native
-    val PAUSE_ALL: js.Any = js.native
+    val PAUSE_ALL: Any = js.native
     
     /**
       * The Sound Play Event.
@@ -288,7 +306,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.PLAY")
     @js.native
-    val PLAY: js.Any = js.native
+    val PLAY: Any = js.native
     
     /**
       * The Sound Rate Change Event.
@@ -306,7 +324,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.RATE")
     @js.native
-    val RATE: js.Any = js.native
+    val RATE: Any = js.native
     
     /**
       * The Sound Resume Event.
@@ -325,7 +343,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.RESUME")
     @js.native
-    val RESUME: js.Any = js.native
+    val RESUME: Any = js.native
     
     /**
       * The Resume All Sounds Event.
@@ -338,7 +356,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.RESUME_ALL")
     @js.native
-    val RESUME_ALL: js.Any = js.native
+    val RESUME_ALL: Any = js.native
     
     /**
       * The Sound Seek Event.
@@ -356,7 +374,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.SEEK")
     @js.native
-    val SEEK: js.Any = js.native
+    val SEEK: Any = js.native
     
     /**
       * The Sound Stop Event.
@@ -374,7 +392,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.STOP")
     @js.native
-    val STOP: js.Any = js.native
+    val STOP: Any = js.native
     
     /**
       * The Stop All Sounds Event.
@@ -387,7 +405,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.STOP_ALL")
     @js.native
-    val STOP_ALL: js.Any = js.native
+    val STOP_ALL: Any = js.native
     
     /**
       * The Sound Manager Unlocked Event.
@@ -400,7 +418,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.UNLOCKED")
     @js.native
-    val UNLOCKED: js.Any = js.native
+    val UNLOCKED: Any = js.native
     
     /**
       * The Sound Volume Event.
@@ -418,7 +436,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.VOLUME")
     @js.native
-    val VOLUME: js.Any = js.native
+    val VOLUME: Any = js.native
   }
   
   /**
@@ -426,7 +444,7 @@ object Sound {
     */
   @JSGlobal("Phaser.Sound.HTML5AudioSound")
   @js.native
-  class HTML5AudioSound protected ()
+  open class HTML5AudioSound protected ()
     extends StObject
        with typings.phaser.Phaser.Sound.HTML5AudioSound {
     /**
@@ -444,7 +462,7 @@ object Sound {
     */
   @JSGlobal("Phaser.Sound.HTML5AudioSoundManager")
   @js.native
-  class HTML5AudioSoundManager protected ()
+  open class HTML5AudioSoundManager protected ()
     extends StObject
        with typings.phaser.Phaser.Sound.HTML5AudioSoundManager {
     /**
@@ -464,7 +482,7 @@ object Sound {
     */
   @JSGlobal("Phaser.Sound.NoAudioSound")
   @js.native
-  class NoAudioSound protected ()
+  open class NoAudioSound protected ()
     extends StObject
        with typings.phaser.Phaser.Sound.NoAudioSound {
     /**
@@ -487,7 +505,7 @@ object Sound {
     */
   @JSGlobal("Phaser.Sound.NoAudioSoundManager")
   @js.native
-  class NoAudioSoundManager protected ()
+  open class NoAudioSoundManager protected ()
     extends StObject
        with typings.phaser.Phaser.Sound.BaseSoundManager {
     /**
@@ -510,7 +528,7 @@ object Sound {
     */
   @JSGlobal("Phaser.Sound.WebAudioSound")
   @js.native
-  class WebAudioSound protected ()
+  open class WebAudioSound protected ()
     extends StObject
        with typings.phaser.Phaser.Sound.WebAudioSound {
     /**
@@ -532,7 +550,7 @@ object Sound {
     */
   @JSGlobal("Phaser.Sound.WebAudioSoundManager")
   @js.native
-  class WebAudioSoundManager protected ()
+  open class WebAudioSoundManager protected ()
     extends StObject
        with typings.phaser.Phaser.Sound.WebAudioSoundManager {
     /**

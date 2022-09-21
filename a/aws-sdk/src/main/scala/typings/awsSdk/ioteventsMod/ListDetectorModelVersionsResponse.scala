@@ -12,7 +12,7 @@ trait ListDetectorModelVersionsResponse extends StObject {
   var detectorModelVersionSummaries: js.UndefOr[DetectorModelVersionSummaries] = js.undefined
   
   /**
-    * A token to retrieve the next set of results, or null if there are no additional results.
+    * The token that you can use to return the next set of results, or null if there are no more results.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListDetectorModelVersionsResponse {
     
     inline def setDetectorModelVersionSummariesUndefined: Self = StObject.set(x, "detectorModelVersionSummaries", js.undefined)
     
-    inline def setDetectorModelVersionSummariesVarargs(value: DetectorModelVersionSummary*): Self = StObject.set(x, "detectorModelVersionSummaries", js.Array(value :_*))
+    inline def setDetectorModelVersionSummariesVarargs(value: DetectorModelVersionSummary*): Self = StObject.set(x, "detectorModelVersionSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

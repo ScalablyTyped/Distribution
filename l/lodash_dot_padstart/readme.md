@@ -10,10 +10,10 @@ The lodash method `_.padStart` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.padstart |
 | Keywords           | lodash-modularized, padstart |
-| # releases         | 0 |
-| # dependents       | 72 |
-| # downloads        | 26985591 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2697403.6666666665 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -9,29 +9,33 @@ trait DirectionalLight
   extends StObject
      with ShadowLight {
   
-  /* private */ var _orthoBottom: js.Any = js.native
+  /* private */ var _orthoBottom: Any = js.native
   
-  /* private */ var _orthoLeft: js.Any = js.native
+  /* private */ var _orthoLeft: Any = js.native
   
-  /* private */ var _orthoRight: js.Any = js.native
+  /* private */ var _orthoRight: Any = js.native
   
-  /* private */ var _orthoTop: js.Any = js.native
+  /* private */ var _orthoTop: Any = js.native
   
   /**
     * Sets the passed matrix "matrix" as auto extend projection matrix for the shadows cast by the light according to the passed view matrix.
     * Returns the DirectionalLight Shadow projection matrix.
+    * @param matrix
+    * @param viewMatrix
+    * @param renderList
     */
   /* protected */ def _setDefaultAutoExtendShadowProjectionMatrix(matrix: Matrix, viewMatrix: Matrix, renderList: js.Array[AbstractMesh]): Unit = js.native
   
   /**
     * Sets the passed matrix "matrix" as fixed frustum projection matrix for the shadows cast by the light according to the passed view matrix.
     * Returns the DirectionalLight Shadow projection matrix.
+    * @param matrix
     */
   /* protected */ def _setDefaultFixedFrustumShadowProjectionMatrix(matrix: Matrix): Unit = js.native
   
-  /* private */ var _shadowFrustumSize: js.Any = js.native
+  /* private */ var _shadowFrustumSize: Any = js.native
   
-  /* private */ var _shadowOrthoScale: js.Any = js.native
+  /* private */ var _shadowOrthoScale: Any = js.native
   
   /**
     * Automatically compute the shadowMinZ and shadowMaxZ for the projection matrix to best fit (including all the casters)
@@ -44,6 +48,30 @@ trait DirectionalLight
     * on each frame.
     */
   var autoUpdateExtends: Boolean = js.native
+  
+  /**
+    * Gets or sets the orthoBottom property used to build the light frustum
+    */
+  def orthoBottom: Double = js.native
+  def orthoBottom_=(bottom: Double): Unit = js.native
+  
+  /**
+    * Gets or sets the orthoLeft property used to build the light frustum
+    */
+  def orthoLeft: Double = js.native
+  def orthoLeft_=(left: Double): Unit = js.native
+  
+  /**
+    * Gets or sets the orthoRight property used to build the light frustum
+    */
+  def orthoRight: Double = js.native
+  def orthoRight_=(right: Double): Unit = js.native
+  
+  /**
+    * Gets or sets the orthoTop property used to build the light frustum
+    */
+  def orthoTop: Double = js.native
+  def orthoTop_=(top: Double): Unit = js.native
   
   /**
     * Fix frustum size for the shadow generation. This is disabled if the value is 0.

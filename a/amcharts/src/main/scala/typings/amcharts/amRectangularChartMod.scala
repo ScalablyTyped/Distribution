@@ -8,7 +8,7 @@ object amRectangularChartMod {
   
   @JSImport("amcharts/AmRectangularChart", JSImport.Default)
   @js.native
-  class default () extends AmRectangularChart
+  open class default () extends AmRectangularChart
   
   @js.native
   trait AmRectangularChart
@@ -131,7 +131,7 @@ object amRectangularChartMod {
       * ["#000000", "#0000CC"]
       * @default '#FFFFFF'
       */
-    var plotAreaFillColors: js.Any = js.native
+    var plotAreaFillColors: Any = js.native
     
     /**
       * If you are using gradients to fill the plot area, you can use this property to set gradient angle.

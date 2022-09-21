@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.FieldUser")
 @js.native
-class FieldUser ()
+open class FieldUser ()
   extends StObject
      with typings.sharepoint.SP.FieldUser

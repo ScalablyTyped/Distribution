@@ -16,36 +16,26 @@ trait Sensor
   
   val activated: Boolean = js.native
   
-  @JSName("addEventListener")
-  def addEventListener_activate(`type`: activate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_activate(
-    `type`: activate,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+  def addEventListener(`type`: reading | activate, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
+  def addEventListener(
+    `type`: reading | activate,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ SensorErrorEvent, js.Any]): Unit = js.native
+  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ SensorErrorEvent, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(
     `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SensorErrorEvent, js.Any],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_reading(`type`: reading, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_reading(
-    `type`: reading,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ SensorErrorEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
   
-  def onactivate(ev: Event): js.Any = js.native
+  def onactivate(ev: Event): Any = js.native
   
-  def onerror(ev: SensorErrorEvent): js.Any = js.native
+  def onerror(ev: SensorErrorEvent): Any = js.native
   
-  def onreading(ev: Event): js.Any = js.native
+  def onreading(ev: Event): Any = js.native
   
   // Should be DOMHighResTimeStamp.
   def start(): Unit = js.native

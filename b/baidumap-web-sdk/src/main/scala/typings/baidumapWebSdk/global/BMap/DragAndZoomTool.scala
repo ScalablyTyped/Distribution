@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.DragAndZoomTool")
 @js.native
-class DragAndZoomTool protected ()
+open class DragAndZoomTool protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.DragAndZoomTool {
   def this(map: typings.baidumapWebSdk.BMap.Map) = this()

@@ -2,12 +2,12 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientSpanner.anon.Accesstoken
-import typings.maximMazurokGapiClientSpanner.anon.Callback
 import typings.maximMazurokGapiClientSpanner.anon.FieldMask
+import typings.maximMazurokGapiClientSpanner.anon.InstanceDeadline
 import typings.maximMazurokGapiClientSpanner.anon.KeyName
 import typings.maximMazurokGapiClientSpanner.anon.Oauthtoken
-import typings.maximMazurokGapiClientSpanner.anon.OauthtokenParent
-import typings.maximMazurokGapiClientSpanner.anon.PrettyPrintQuotaUser
+import typings.maximMazurokGapiClientSpanner.anon.ParentPrettyPrint
+import typings.maximMazurokGapiClientSpanner.anon.PrettyPrint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ trait InstancesResource extends StObject {
   
   var backups: BackupsResource = js.native
   
-  def create(request: OauthtokenParent, body: CreateInstanceRequest): Request[Operation] = js.native
+  def create(request: Oauthtoken, body: CreateInstanceRequest): Request[Operation] = js.native
   /**
     * Creates an instance and begins preparing it to begin serving. The returned long-running operation can be used to track the progress of preparing the new instance. The instance name
     * is assigned by the caller. If the named instance already exists, `CreateInstance` returns `ALREADY_EXISTS`. Immediately upon completion of this request: * The instance is readable
@@ -29,7 +29,7 @@ trait InstancesResource extends StObject {
     * resource levels are readable via the API. * The instance's state becomes `READY`. The returned long-running operation will have a name of the format `/operations/` and can be used
     * to track creation of the instance. The metadata field type is CreateInstanceMetadata. The response field type is Instance, if successful.
     */
-  def create(request: PrettyPrintQuotaUser): Request[Operation] = js.native
+  def create(request: ParentPrettyPrint): Request[Operation] = js.native
   
   var databaseOperations: DatabaseOperationsResource = js.native
   
@@ -50,11 +50,11 @@ trait InstancesResource extends StObject {
     * Gets the access control policy for an instance resource. Returns an empty policy if an instance exists but does not have a policy set. Authorization requires
     * `spanner.instances.getIamPolicy` on resource.
     */
-  def getIamPolicy(request: Oauthtoken, body: GetIamPolicyRequest): Request[Policy] = js.native
+  def getIamPolicy(request: PrettyPrint, body: GetIamPolicyRequest): Request[Policy] = js.native
   
   /** Lists all instances in the given project. */
   def list(): Request[ListInstancesResponse] = js.native
-  def list(request: Callback): Request[ListInstancesResponse] = js.native
+  def list(request: InstanceDeadline): Request[ListInstancesResponse] = js.native
   
   var operations: OperationsResource = js.native
   
@@ -68,16 +68,16 @@ trait InstancesResource extends StObject {
     * operation: * Billing begins for all successfully-allocated resources (some types may have lower than the requested levels). * All newly-reserved resources are available for serving
     * the instance's tables. * The instance's new resource levels are readable via the API. The returned long-running operation will have a name of the format `/operations/` and can be
     * used to track the instance modification. The metadata field type is UpdateInstanceMetadata. The response field type is Instance, if successful. Authorization requires
-    * `spanner.instances.update` permission on resource name.
+    * `spanner.instances.update` permission on the resource name.
     */
   def patch(request: KeyName): Request[Operation] = js.native
   
   /** Sets the access control policy on an instance resource. Replaces any existing policy. Authorization requires `spanner.instances.setIamPolicy` on resource. */
-  def setIamPolicy(request: Oauthtoken, body: SetIamPolicyRequest): Request[Policy] = js.native
+  def setIamPolicy(request: PrettyPrint, body: SetIamPolicyRequest): Request[Policy] = js.native
   
   /**
     * Returns permissions that the caller has on the specified instance resource. Attempting this RPC on a non-existent Cloud Spanner instance resource will result in a NOT_FOUND error if
     * the user has `spanner.instances.list` permission on the containing Google Cloud Project. Otherwise returns an empty set of permissions.
     */
-  def testIamPermissions(request: Oauthtoken, body: TestIamPermissionsRequest): Request[TestIamPermissionsResponse] = js.native
+  def testIamPermissions(request: PrettyPrint, body: TestIamPermissionsRequest): Request[TestIamPermissionsResponse] = js.native
 }

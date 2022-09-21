@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Options")
 @js.native
-/* private */ class Options ()
+/* private */ open class Options ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Options {
   

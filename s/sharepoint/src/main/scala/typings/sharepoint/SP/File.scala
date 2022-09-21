@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import typings.sharepoint.SP.WebParts.LimitedWebPartManager
 import typings.sharepoint.SP.WebParts.PersonalizationScope
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,10 +73,10 @@ trait File
   def get_serverRelativeUrl(): String = js.native
   
   /** Specifies when the file was created. */
-  def get_timeCreated(): Date = js.native
+  def get_timeCreated(): js.Date = js.native
   
   /** Specifies when the file was created. */
-  def get_timeLastModified(): Date = js.native
+  def get_timeLastModified(): js.Date = js.native
   
   def get_title(): String = js.native
   

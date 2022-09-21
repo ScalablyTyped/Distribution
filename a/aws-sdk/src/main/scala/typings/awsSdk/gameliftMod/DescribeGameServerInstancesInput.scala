@@ -12,17 +12,17 @@ trait DescribeGameServerInstancesInput extends StObject {
   var GameServerGroupName: GameServerGroupNameOrArn
   
   /**
-    * The EC2 instance IDs that you want to retrieve status on. EC2 instance IDs use a 17-character format, for example: i-1234567890abcdef0. To retrieve all instances in the game server group, leave this parameter empty. 
+    * The Amazon EC2 instance IDs that you want to retrieve status on. Amazon EC2 instance IDs use a 17-character format, for example: i-1234567890abcdef0. To retrieve all instances in the game server group, leave this parameter empty. 
     */
   var InstanceIds: js.UndefOr[GameServerInstanceIds] = js.undefined
   
   /**
-    *  The maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential segments. 
+    *  The maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages. 
     */
   var Limit: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
-    *  A token that indicates the start of the next sequential segment of results. Use the token returned with the previous call to this operation. To start at the beginning of the result set, do not specify a value. 
+    *  A token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this operation. To start at the beginning of the result set, do not specify a value. 
     */
   var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
@@ -41,7 +41,7 @@ object DescribeGameServerInstancesInput {
     
     inline def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
     
-    inline def setInstanceIdsVarargs(value: GameServerInstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: GameServerInstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value*))
     
     inline def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

@@ -10,7 +10,7 @@ trait MetaProperties extends StObject {
   def apply(Index: String): MetaProperty = js.native
   def apply(Index: Double): MetaProperty = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -21,7 +21,7 @@ trait MetaProperties extends StObject {
   def Item(Index: String): MetaProperty = js.native
   def Item(Index: Double): MetaProperty = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val SchemaXml: String = js.native
   

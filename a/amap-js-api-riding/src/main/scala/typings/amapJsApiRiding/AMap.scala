@@ -258,7 +258,7 @@ object AMap {
         
         inline def setRides(value: js.Array[RideStep]): Self = StObject.set(x, "rides", value.asInstanceOf[js.Any])
         
-        inline def setRidesVarargs(value: RideStep*): Self = StObject.set(x, "rides", js.Array(value :_*))
+        inline def setRidesVarargs(value: RideStep*): Self = StObject.set(x, "rides", js.Array(value*))
         
         inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       }
@@ -353,7 +353,7 @@ object AMap {
         
         inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+        inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value*))
         
         inline def setRoad(value: String): Self = StObject.set(x, "road", value.asInstanceOf[js.Any])
         
@@ -489,7 +489,7 @@ object AMap {
         
         inline def setRoutes(value: js.Array[RideRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
         
-        inline def setRoutesVarargs(value: RideRoute*): Self = StObject.set(x, "routes", js.Array(value :_*))
+        inline def setRoutesVarargs(value: RideRoute*): Self = StObject.set(x, "routes", js.Array(value*))
       }
     }
     

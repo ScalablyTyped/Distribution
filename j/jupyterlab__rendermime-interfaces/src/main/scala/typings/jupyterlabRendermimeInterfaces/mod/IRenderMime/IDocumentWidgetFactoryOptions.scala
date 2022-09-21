@@ -62,17 +62,17 @@ object IDocumentWidgetFactoryOptions {
     
     inline def setDefaultForUndefined: Self = StObject.set(x, "defaultFor", js.undefined)
     
-    inline def setDefaultForVarargs(value: String*): Self = StObject.set(x, "defaultFor", js.Array(value :_*))
+    inline def setDefaultForVarargs(value: String*): Self = StObject.set(x, "defaultFor", js.Array(value*))
     
     inline def setDefaultRendered(value: js.Array[String]): Self = StObject.set(x, "defaultRendered", value.asInstanceOf[js.Any])
     
     inline def setDefaultRenderedUndefined: Self = StObject.set(x, "defaultRendered", js.undefined)
     
-    inline def setDefaultRenderedVarargs(value: String*): Self = StObject.set(x, "defaultRendered", js.Array(value :_*))
+    inline def setDefaultRenderedVarargs(value: String*): Self = StObject.set(x, "defaultRendered", js.Array(value*))
     
     inline def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
-    inline def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
+    inline def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value*))
     
     inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     

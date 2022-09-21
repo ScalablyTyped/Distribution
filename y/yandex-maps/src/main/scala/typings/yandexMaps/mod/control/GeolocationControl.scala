@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("yandex-maps", "control.GeolocationControl")
 @js.native
-class GeolocationControl () extends Button {
+open class GeolocationControl () extends Button {
   def this(parameters: IGeolocationControlParameters) = this()
 }

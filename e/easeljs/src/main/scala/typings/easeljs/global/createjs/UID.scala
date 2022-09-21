@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.UID")
 @js.native
-class UID ()
+open class UID ()
   extends StObject
      with typings.easeljs.createjs.UID
 /* static members */

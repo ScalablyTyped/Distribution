@@ -10,15 +10,12 @@ Modular CSS bundler
 | ------------------ | :-------------: |
 | Full name          | sheetify |
 | Keywords           | modular, css, bundle, browserify, css-modules |
-| # releases         | 4 |
-| # dependents       | 37 |
-| # downloads        | 18976 |
-| # stars            | 10 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1140.0 |
+| # stars            | 443.0 |
 
 ## Links
-- [Homepage](https://github.com/stackcss/sheetify#readme)
-- [Bugs](https://github.com/stackcss/sheetify/issues)
-- [Repository](https://github.com/stackcss/sheetify)
 - [Npm](https://www.npmjs.com/package/sheetify)
     
 

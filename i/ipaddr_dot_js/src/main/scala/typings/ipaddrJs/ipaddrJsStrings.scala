@@ -2,6 +2,7 @@ package typings.ipaddrJs
 
 import typings.ipaddrJs.mod.IPv4Range
 import typings.ipaddrJs.mod.IPv6Range
+import typings.ipaddrJs.mod.IPvXRangeDefaults
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,6 +46,7 @@ object ipaddrJsStrings {
     extends StObject
        with IPv4Range
        with IPv6Range
+       with IPvXRangeDefaults
   inline def linkLocal: linkLocal = "linkLocal".asInstanceOf[linkLocal]
   
   @js.native
@@ -52,6 +54,7 @@ object ipaddrJsStrings {
     extends StObject
        with IPv4Range
        with IPv6Range
+       with IPvXRangeDefaults
   inline def loopback: loopback = "loopback".asInstanceOf[loopback]
   
   @js.native
@@ -59,6 +62,7 @@ object ipaddrJsStrings {
     extends StObject
        with IPv4Range
        with IPv6Range
+       with IPvXRangeDefaults
   inline def multicast: multicast = "multicast".asInstanceOf[multicast]
   
   @js.native
@@ -72,6 +76,7 @@ object ipaddrJsStrings {
     extends StObject
        with IPv4Range
        with IPv6Range
+       with IPvXRangeDefaults
   inline def reserved: reserved = "reserved".asInstanceOf[reserved]
   
   @js.native
@@ -97,6 +102,7 @@ object ipaddrJsStrings {
     extends StObject
        with IPv4Range
        with IPv6Range
+       with IPvXRangeDefaults
   inline def unicast: unicast = "unicast".asInstanceOf[unicast]
   
   @js.native
@@ -110,5 +116,6 @@ object ipaddrJsStrings {
     extends StObject
        with IPv4Range
        with IPv6Range
+       with IPvXRangeDefaults
   inline def unspecified: unspecified = "unspecified".asInstanceOf[unspecified]
 }

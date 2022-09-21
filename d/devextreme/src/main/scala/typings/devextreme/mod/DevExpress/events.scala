@@ -1,71 +1,154 @@
 package typings.devextreme.mod.DevExpress
 
+import typings.devextreme.mod.DevExpress.core.DxElement_
+import typings.devextreme.mod.global.JQueryEventObject
 import typings.std.Element
+import typings.std.Event
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object events {
   
-  trait dxEvent
-    extends StObject
-       with typings.devextreme.mod.DevExpress.events.event {
+  trait Cancelable extends StObject {
+    
+    var cancel: js.UndefOr[Boolean] = js.undefined
+  }
+  object Cancelable {
+    
+    inline def apply(): Cancelable = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Cancelable]
+    }
+    
+    extension [Self <: Cancelable](x: Self) {
+      
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    }
+  }
+  
+  trait ChangedOptionInfo extends StObject {
+    
+    val fullName: String
+    
+    val name: String
+    
+    val previousValue: js.UndefOr[Any] = js.undefined
+    
+    val value: js.UndefOr[Any] = js.undefined
+  }
+  object ChangedOptionInfo {
+    
+    inline def apply(fullName: String, name: String): ChangedOptionInfo = {
+      val __obj = js.Dynamic.literal(fullName = fullName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ChangedOptionInfo]
+    }
+    
+    extension [Self <: ChangedOptionInfo](x: Self) {
+      
+      inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousValue(value: Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousValueUndefined: Self = StObject.set(x, "previousValue", js.undefined)
+      
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  type DxEvent[TNativeEvent] = EventType | (EventObject & TNativeEvent)
+  
+  trait EventInfo[TComponent] extends StObject {
+    
+    val component: TComponent
+    
+    val element: DxElement_[HTMLElement]
+    
+    val model: js.UndefOr[Any] = js.undefined
+  }
+  object EventInfo {
+    
+    inline def apply[TComponent](component: TComponent, element: DxElement_[HTMLElement]): EventInfo[TComponent] = {
+      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EventInfo[TComponent]]
+    }
+    
+    extension [Self <: EventInfo[?], TComponent](x: Self & EventInfo[TComponent]) {
+      
+      inline def setComponent(value: TComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      inline def setElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    }
+  }
+  
+  trait EventObject extends StObject {
     
     /**
-      * [descr:dxEvent.currentTarget]
+      * The DOM element within the current event propagation stage.
       */
     var currentTarget: Element
     
     /**
-      * [descr:dxEvent.data]
+      * Data passed to the event handler.
       */
-    var data: js.Any
+    var data: Any
     
     /**
-      * [descr:dxEvent.delegateTarget]
+      * The DOM element to which the currently-called event handler was attached.
       */
     var delegateTarget: Element
     
     /**
-      * [descr:dxEvent.isDefaultPrevented()]
+      * Checks if the preventDefault() method was called on this event object.
       */
     def isDefaultPrevented(): Boolean
     
     /**
-      * [descr:dxEvent.isImmediatePropagationStopped()]
+      * Checks if the stopImmediatePropagation() method was called on this event object.
       */
     def isImmediatePropagationStopped(): Boolean
     
     /**
-      * [descr:dxEvent.isPropagationStopped()]
+      * Checks if the stopPropagation() method was called on this event object.
       */
     def isPropagationStopped(): Boolean
     
     /**
-      * [descr:dxEvent.preventDefault()]
+      * Prevents the event&apos;s default action from triggering.
       */
     def preventDefault(): Unit
     
     /**
-      * [descr:dxEvent.stopImmediatePropagation()]
+      * Stops the event&apos;s propagation up the DOM tree, preventing the rest of the handlers from being executed.
       */
     def stopImmediatePropagation(): Unit
     
     /**
-      * [descr:dxEvent.stopPropagation()]
+      * Stops the event&apos;s propagation up the DOM tree, keeping parent handlers unnotified of the event.
       */
     def stopPropagation(): Unit
     
     /**
-      * [descr:dxEvent.target]
+      * The DOM element that initiated the event.
       */
     var target: Element
   }
-  object dxEvent {
+  object EventObject {
     
     inline def apply(
       currentTarget: Element,
-      data: js.Any,
+      data: Any,
       delegateTarget: Element,
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
@@ -74,16 +157,16 @@ object events {
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: Element
-    ): typings.devextreme.mod.DevExpress.events.dxEvent = {
+    ): EventObject = {
       val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.devextreme.mod.DevExpress.events.dxEvent]
+      __obj.asInstanceOf[EventObject]
     }
     
-    extension [Self <: typings.devextreme.mod.DevExpress.events.dxEvent](x: Self) {
+    extension [Self <: EventObject](x: Self) {
       
       inline def setCurrentTarget(value: Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDelegateTarget(value: Element): Self = StObject.set(x, "delegateTarget", value.asInstanceOf[js.Any])
       
@@ -103,32 +186,114 @@ object events {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.devextreme.mod.DevExpress.events.dxEvent
-    - typings.devextreme.mod.global.JQueryEventObject
-  */
-  trait event extends StObject
-  object event {
+  /**
+    * @deprecated Attention! This type is for internal purposes only. If you used it previously, please submit a ticket to our {@link https://supportcenter.devexpress.com/ticket/create Support Center}. We will check if there is an alternative solution.
+    */
+  trait EventType
+    extends StObject
+       with JQueryEventObject {
     
-    inline def JQueryEventObject(): typings.devextreme.mod.global.JQueryEventObject = {
+    var cancel: js.UndefOr[Boolean] = js.undefined
+  }
+  object EventType {
+    
+    inline def apply(): EventType = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[typings.devextreme.mod.global.JQueryEventObject]
+      __obj.asInstanceOf[EventType]
     }
     
-    inline def dxEvent(
-      currentTarget: Element,
-      data: js.Any,
-      delegateTarget: Element,
-      isDefaultPrevented: () => Boolean,
-      isImmediatePropagationStopped: () => Boolean,
-      isPropagationStopped: () => Boolean,
-      preventDefault: () => Unit,
-      stopImmediatePropagation: () => Unit,
-      stopPropagation: () => Unit,
-      target: Element
-    ): typings.devextreme.mod.DevExpress.events.dxEvent = {
-      val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], delegateTarget = delegateTarget.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), preventDefault = js.Any.fromFunction0(preventDefault), stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.devextreme.mod.DevExpress.events.dxEvent]
+    extension [Self <: EventType](x: Self) {
+      
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     }
   }
+  
+  trait InitializedEventInfo[TComponent] extends StObject {
+    
+    val component: js.UndefOr[TComponent] = js.undefined
+    
+    val element: js.UndefOr[DxElement_[HTMLElement]] = js.undefined
+  }
+  object InitializedEventInfo {
+    
+    inline def apply[TComponent](): InitializedEventInfo[TComponent] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InitializedEventInfo[TComponent]]
+    }
+    
+    extension [Self <: InitializedEventInfo[?], TComponent](x: Self & InitializedEventInfo[TComponent]) {
+      
+      inline def setComponent(value: TComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      
+      inline def setElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    }
+  }
+  
+  trait ItemInfo[TItemData] extends StObject {
+    
+    val itemData: js.UndefOr[TItemData] = js.undefined
+    
+    val itemElement: DxElement_[HTMLElement]
+    
+    val itemIndex: Double
+  }
+  object ItemInfo {
+    
+    inline def apply[TItemData](itemElement: DxElement_[HTMLElement], itemIndex: Double): ItemInfo[TItemData] = {
+      val __obj = js.Dynamic.literal(itemElement = itemElement.asInstanceOf[js.Any], itemIndex = itemIndex.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ItemInfo[TItemData]]
+    }
+    
+    extension [Self <: ItemInfo[?], TItemData](x: Self & ItemInfo[TItemData]) {
+      
+      inline def setItemData(value: TItemData): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+      
+      inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
+      
+      inline def setItemElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
+      
+      inline def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait NativeEventInfo[TComponent, TNativeEvent] extends StObject {
+    
+    val component: TComponent
+    
+    val element: DxElement_[HTMLElement]
+    
+    val event: js.UndefOr[DxEvent[TNativeEvent]] = js.undefined
+    
+    val model: js.UndefOr[Any] = js.undefined
+  }
+  object NativeEventInfo {
+    
+    inline def apply[TComponent, TNativeEvent](component: TComponent, element: DxElement_[HTMLElement]): NativeEventInfo[TComponent, TNativeEvent] = {
+      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NativeEventInfo[TComponent, TNativeEvent]]
+    }
+    
+    extension [Self <: NativeEventInfo[?, ?], TComponent, TNativeEvent](x: Self & (NativeEventInfo[TComponent, TNativeEvent])) {
+      
+      inline def setComponent(value: TComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      inline def setElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      
+      inline def setEvent(value: DxEvent[TNativeEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      
+      inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+      
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    }
+  }
+  
+  type event = DxEvent[Event]
 }

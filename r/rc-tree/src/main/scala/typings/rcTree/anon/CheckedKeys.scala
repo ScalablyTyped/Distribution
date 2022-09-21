@@ -1,78 +1,83 @@
 package typings.rcTree.anon
 
+import typings.rcTree.interfaceMod.BasicDataNode
 import typings.rcTree.interfaceMod.DataEntity
+import typings.rcTree.interfaceMod.DataNode
+import typings.rcTree.rcTreeNumbers.`-1`
+import typings.rcTree.rcTreeNumbers.`0`
+import typings.rcTree.rcTreeNumbers.`1`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CheckedKeys extends StObject {
+trait CheckedKeys[TreeDataType /* <: DataNode | BasicDataNode */] extends StObject {
   
-  var checkedKeys: js.Array[String | Double]
+  var checkedKeys: js.Array[typings.rcTree.interfaceMod.Key]
   
-  var dragOverNodeKey: String | Double
+  var dragOverNodeKey: typings.rcTree.interfaceMod.Key
   
-  var dropPosition: Double
+  var dropPosition: `0` | `1` | `-1`
   
-  var expandedKeys: js.Array[String | Double]
+  var expandedKeys: js.Array[typings.rcTree.interfaceMod.Key]
   
-  var halfCheckedKeys: js.Array[String | Double]
+  var halfCheckedKeys: js.Array[typings.rcTree.interfaceMod.Key]
   
-  var keyEntities: Record[String | Double, DataEntity]
+  var keyEntities: Record[typings.rcTree.interfaceMod.Key, DataEntity[TreeDataType]]
   
-  var loadedKeys: js.Array[String | Double]
+  var loadedKeys: js.Array[typings.rcTree.interfaceMod.Key]
   
-  var loadingKeys: js.Array[String | Double]
+  var loadingKeys: js.Array[typings.rcTree.interfaceMod.Key]
   
-  var selectedKeys: js.Array[String | Double]
+  var selectedKeys: js.Array[typings.rcTree.interfaceMod.Key]
 }
 object CheckedKeys {
   
-  inline def apply(
-    checkedKeys: js.Array[String | Double],
-    dragOverNodeKey: String | Double,
-    dropPosition: Double,
-    expandedKeys: js.Array[String | Double],
-    halfCheckedKeys: js.Array[String | Double],
-    keyEntities: Record[String | Double, DataEntity],
-    loadedKeys: js.Array[String | Double],
-    loadingKeys: js.Array[String | Double],
-    selectedKeys: js.Array[String | Double]
-  ): CheckedKeys = {
+  inline def apply[TreeDataType /* <: DataNode | BasicDataNode */](
+    checkedKeys: js.Array[typings.rcTree.interfaceMod.Key],
+    dragOverNodeKey: typings.rcTree.interfaceMod.Key,
+    dropPosition: `0` | `1` | `-1`,
+    expandedKeys: js.Array[typings.rcTree.interfaceMod.Key],
+    halfCheckedKeys: js.Array[typings.rcTree.interfaceMod.Key],
+    keyEntities: Record[typings.rcTree.interfaceMod.Key, DataEntity[TreeDataType]],
+    loadedKeys: js.Array[typings.rcTree.interfaceMod.Key],
+    loadingKeys: js.Array[typings.rcTree.interfaceMod.Key],
+    selectedKeys: js.Array[typings.rcTree.interfaceMod.Key]
+  ): CheckedKeys[TreeDataType] = {
     val __obj = js.Dynamic.literal(checkedKeys = checkedKeys.asInstanceOf[js.Any], dragOverNodeKey = dragOverNodeKey.asInstanceOf[js.Any], dropPosition = dropPosition.asInstanceOf[js.Any], expandedKeys = expandedKeys.asInstanceOf[js.Any], halfCheckedKeys = halfCheckedKeys.asInstanceOf[js.Any], keyEntities = keyEntities.asInstanceOf[js.Any], loadedKeys = loadedKeys.asInstanceOf[js.Any], loadingKeys = loadingKeys.asInstanceOf[js.Any], selectedKeys = selectedKeys.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CheckedKeys]
+    __obj.asInstanceOf[CheckedKeys[TreeDataType]]
   }
   
-  extension [Self <: CheckedKeys](x: Self) {
+  extension [Self <: CheckedKeys[?], TreeDataType /* <: DataNode | BasicDataNode */](x: Self & CheckedKeys[TreeDataType]) {
     
-    inline def setCheckedKeys(value: js.Array[String | Double]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
+    inline def setCheckedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
     
-    inline def setCheckedKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "checkedKeys", js.Array(value :_*))
+    inline def setCheckedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "checkedKeys", js.Array(value*))
     
-    inline def setDragOverNodeKey(value: String | Double): Self = StObject.set(x, "dragOverNodeKey", value.asInstanceOf[js.Any])
+    inline def setDragOverNodeKey(value: typings.rcTree.interfaceMod.Key): Self = StObject.set(x, "dragOverNodeKey", value.asInstanceOf[js.Any])
     
-    inline def setDropPosition(value: Double): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
+    inline def setDropPosition(value: `0` | `1` | `-1`): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
     
-    inline def setExpandedKeys(value: js.Array[String | Double]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
+    inline def setExpandedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "expandedKeys", value.asInstanceOf[js.Any])
     
-    inline def setExpandedKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "expandedKeys", js.Array(value :_*))
+    inline def setExpandedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "expandedKeys", js.Array(value*))
     
-    inline def setHalfCheckedKeys(value: js.Array[String | Double]): Self = StObject.set(x, "halfCheckedKeys", value.asInstanceOf[js.Any])
+    inline def setHalfCheckedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "halfCheckedKeys", value.asInstanceOf[js.Any])
     
-    inline def setHalfCheckedKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "halfCheckedKeys", js.Array(value :_*))
+    inline def setHalfCheckedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "halfCheckedKeys", js.Array(value*))
     
-    inline def setKeyEntities(value: Record[String | Double, DataEntity]): Self = StObject.set(x, "keyEntities", value.asInstanceOf[js.Any])
+    inline def setKeyEntities(value: Record[typings.rcTree.interfaceMod.Key, DataEntity[TreeDataType]]): Self = StObject.set(x, "keyEntities", value.asInstanceOf[js.Any])
     
-    inline def setLoadedKeys(value: js.Array[String | Double]): Self = StObject.set(x, "loadedKeys", value.asInstanceOf[js.Any])
+    inline def setLoadedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "loadedKeys", value.asInstanceOf[js.Any])
     
-    inline def setLoadedKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "loadedKeys", js.Array(value :_*))
+    inline def setLoadedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "loadedKeys", js.Array(value*))
     
-    inline def setLoadingKeys(value: js.Array[String | Double]): Self = StObject.set(x, "loadingKeys", value.asInstanceOf[js.Any])
+    inline def setLoadingKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "loadingKeys", value.asInstanceOf[js.Any])
     
-    inline def setLoadingKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "loadingKeys", js.Array(value :_*))
+    inline def setLoadingKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "loadingKeys", js.Array(value*))
     
-    inline def setSelectedKeys(value: js.Array[String | Double]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
+    inline def setSelectedKeys(value: js.Array[typings.rcTree.interfaceMod.Key]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
     
-    inline def setSelectedKeysVarargs(value: (String | Double)*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
+    inline def setSelectedKeysVarargs(value: typings.rcTree.interfaceMod.Key*): Self = StObject.set(x, "selectedKeys", js.Array(value*))
   }
 }

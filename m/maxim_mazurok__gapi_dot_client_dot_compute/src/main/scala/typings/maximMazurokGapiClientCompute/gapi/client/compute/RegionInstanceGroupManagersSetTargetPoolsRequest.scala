@@ -35,6 +35,6 @@ object RegionInstanceGroupManagersSetTargetPoolsRequest {
     
     inline def setTargetPoolsUndefined: Self = StObject.set(x, "targetPools", js.undefined)
     
-    inline def setTargetPoolsVarargs(value: String*): Self = StObject.set(x, "targetPools", js.Array(value :_*))
+    inline def setTargetPoolsVarargs(value: String*): Self = StObject.set(x, "targetPools", js.Array(value*))
   }
 }

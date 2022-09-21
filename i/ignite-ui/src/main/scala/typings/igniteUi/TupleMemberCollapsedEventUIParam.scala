@@ -14,7 +14,7 @@ trait TupleMemberCollapsedEventUIParam extends StObject {
   /**
     * Gets a reference to the data source.
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the index of the member in the tuple.
@@ -24,7 +24,7 @@ trait TupleMemberCollapsedEventUIParam extends StObject {
   /**
     * Gets a reference to the pivot grid.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the index of the tuple in the axis.
@@ -44,7 +44,7 @@ object TupleMemberCollapsedEventUIParam {
     
     inline def setAxisNameUndefined: Self = StObject.set(x, "axisName", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -52,7 +52,7 @@ object TupleMemberCollapsedEventUIParam {
     
     inline def setMemberIndexUndefined: Self = StObject.set(x, "memberIndex", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

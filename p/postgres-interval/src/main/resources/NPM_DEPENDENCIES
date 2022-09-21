@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postgres-interval" : "1.2.0"
+      "postgres-interval" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "postgres-interval" : "1.2.0"
+      "postgres-interval" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

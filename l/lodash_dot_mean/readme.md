@@ -10,10 +10,10 @@ The lodash method `_.mean` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.mean |
 | Keywords           | lodash-modularized, mean |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 110018 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5445.666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

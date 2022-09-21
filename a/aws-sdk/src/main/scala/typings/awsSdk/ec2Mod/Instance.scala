@@ -22,6 +22,11 @@ trait Instance extends StObject {
   var BlockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappingList] = js.undefined
   
   /**
+    * The boot mode of the instance. For more information, see Boot modes in the Amazon EC2 User Guide.
+    */
+  var BootMode: js.UndefOr[BootModeValues] = js.undefined
+  
+  /**
     * The ID of the Capacity Reservation.
     */
   var CapacityReservationId: js.UndefOr[String] = js.undefined
@@ -62,7 +67,7 @@ trait Instance extends StObject {
   var EnaSupport: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the instance is enabled for AWS Nitro Enclaves.
+    * Indicates whether the instance is enabled for Amazon Web Services Nitro Enclaves.
     */
   var EnclaveOptions: js.UndefOr[typings.awsSdk.ec2Mod.EnclaveOptions] = js.undefined
   
@@ -102,6 +107,11 @@ trait Instance extends StObject {
   var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
   /**
+    * The IPv6 address assigned to the instance.
+    */
+  var Ipv6Address: js.UndefOr[String] = js.undefined
+  
+  /**
     * The kernel associated with this instance, if applicable.
     */
   var KernelId: js.UndefOr[String] = js.undefined
@@ -114,12 +124,17 @@ trait Instance extends StObject {
   /**
     * The time the instance was launched.
     */
-  var LaunchTime: js.UndefOr[DateTime] = js.undefined
+  var LaunchTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The license configurations.
+    * The license configurations for the instance.
     */
   var Licenses: js.UndefOr[LicenseList] = js.undefined
+  
+  /**
+    * Provides information on the recovery and maintenance options of your instance.
+    */
+  var MaintenanceOptions: js.UndefOr[InstanceMaintenanceOptions] = js.undefined
   
   /**
     * The metadata options for the instance.
@@ -152,9 +167,19 @@ trait Instance extends StObject {
   var Platform: js.UndefOr[PlatformValues] = js.undefined
   
   /**
+    * The platform details value for the instance. For more information, see AMI billing information fields in the Amazon EC2 User Guide.
+    */
+  var PlatformDetails: js.UndefOr[String] = js.undefined
+  
+  /**
     * (IPv4 only) The private DNS hostname name assigned to the instance. This DNS hostname can only be used inside the Amazon EC2 network. This name is not available until the instance enters the running state.  [EC2-VPC] The Amazon-provided DNS server resolves Amazon-provided private DNS hostnames if you've enabled DNS resolution and DNS hostnames in your VPC. If you are not using the Amazon-provided DNS server in your VPC, your custom domain name servers must resolve the hostname as appropriate.
     */
   var PrivateDnsName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The options for the instance hostname.
+    */
+  var PrivateDnsNameOptions: js.UndefOr[PrivateDnsNameOptionsResponse] = js.undefined
   
   /**
     * The private IPv4 address assigned to the instance.
@@ -197,7 +222,7 @@ trait Instance extends StObject {
   var SecurityGroups: js.UndefOr[GroupIdentifierList] = js.undefined
   
   /**
-    * Specifies whether to enable an instance launched in a VPC to perform NAT. This controls whether source/destination checking is enabled on the instance. A value of true means that checking is enabled, and false means that checking is disabled. The value must be false for the instance to perform NAT. For more information, see NAT Instances in the Amazon Virtual Private Cloud User Guide.
+    * Indicates whether source/destination checking is enabled.
     */
   var SourceDestCheck: js.UndefOr[Boolean] = js.undefined
   
@@ -237,6 +262,21 @@ trait Instance extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
+    * If the instance is configured for NitroTPM support, the value is v2.0. For more information, see NitroTPM in the Amazon EC2 User Guide.
+    */
+  var TpmSupport: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The usage operation value for the instance. For more information, see AMI billing information fields in the Amazon EC2 User Guide.
+    */
+  var UsageOperation: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The time that the usage operation was last updated.
+    */
+  var UsageOperationUpdateTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * The virtualization type of the instance.
     */
   var VirtualizationType: js.UndefOr[typings.awsSdk.ec2Mod.VirtualizationType] = js.undefined
@@ -267,7 +307,11 @@ object Instance {
     
     inline def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
     
-    inline def setBlockDeviceMappingsVarargs(value: InstanceBlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
+    inline def setBlockDeviceMappingsVarargs(value: InstanceBlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value*))
+    
+    inline def setBootMode(value: BootModeValues): Self = StObject.set(x, "BootMode", value.asInstanceOf[js.Any])
+    
+    inline def setBootModeUndefined: Self = StObject.set(x, "BootMode", js.undefined)
     
     inline def setCapacityReservationId(value: String): Self = StObject.set(x, "CapacityReservationId", value.asInstanceOf[js.Any])
     
@@ -293,13 +337,13 @@ object Instance {
     
     inline def setElasticGpuAssociationsUndefined: Self = StObject.set(x, "ElasticGpuAssociations", js.undefined)
     
-    inline def setElasticGpuAssociationsVarargs(value: ElasticGpuAssociation*): Self = StObject.set(x, "ElasticGpuAssociations", js.Array(value :_*))
+    inline def setElasticGpuAssociationsVarargs(value: ElasticGpuAssociation*): Self = StObject.set(x, "ElasticGpuAssociations", js.Array(value*))
     
     inline def setElasticInferenceAcceleratorAssociations(value: ElasticInferenceAcceleratorAssociationList): Self = StObject.set(x, "ElasticInferenceAcceleratorAssociations", value.asInstanceOf[js.Any])
     
     inline def setElasticInferenceAcceleratorAssociationsUndefined: Self = StObject.set(x, "ElasticInferenceAcceleratorAssociations", js.undefined)
     
-    inline def setElasticInferenceAcceleratorAssociationsVarargs(value: ElasticInferenceAcceleratorAssociation*): Self = StObject.set(x, "ElasticInferenceAcceleratorAssociations", js.Array(value :_*))
+    inline def setElasticInferenceAcceleratorAssociationsVarargs(value: ElasticInferenceAcceleratorAssociation*): Self = StObject.set(x, "ElasticInferenceAcceleratorAssociations", js.Array(value*))
     
     inline def setEnaSupport(value: Boolean): Self = StObject.set(x, "EnaSupport", value.asInstanceOf[js.Any])
     
@@ -337,6 +381,10 @@ object Instance {
     
     inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
+    inline def setIpv6Address(value: String): Self = StObject.set(x, "Ipv6Address", value.asInstanceOf[js.Any])
+    
+    inline def setIpv6AddressUndefined: Self = StObject.set(x, "Ipv6Address", js.undefined)
+    
     inline def setKernelId(value: String): Self = StObject.set(x, "KernelId", value.asInstanceOf[js.Any])
     
     inline def setKernelIdUndefined: Self = StObject.set(x, "KernelId", js.undefined)
@@ -345,7 +393,7 @@ object Instance {
     
     inline def setKeyNameUndefined: Self = StObject.set(x, "KeyName", js.undefined)
     
-    inline def setLaunchTime(value: DateTime): Self = StObject.set(x, "LaunchTime", value.asInstanceOf[js.Any])
+    inline def setLaunchTime(value: js.Date): Self = StObject.set(x, "LaunchTime", value.asInstanceOf[js.Any])
     
     inline def setLaunchTimeUndefined: Self = StObject.set(x, "LaunchTime", js.undefined)
     
@@ -353,7 +401,11 @@ object Instance {
     
     inline def setLicensesUndefined: Self = StObject.set(x, "Licenses", js.undefined)
     
-    inline def setLicensesVarargs(value: LicenseConfiguration*): Self = StObject.set(x, "Licenses", js.Array(value :_*))
+    inline def setLicensesVarargs(value: LicenseConfiguration*): Self = StObject.set(x, "Licenses", js.Array(value*))
+    
+    inline def setMaintenanceOptions(value: InstanceMaintenanceOptions): Self = StObject.set(x, "MaintenanceOptions", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceOptionsUndefined: Self = StObject.set(x, "MaintenanceOptions", js.undefined)
     
     inline def setMetadataOptions(value: InstanceMetadataOptionsResponse): Self = StObject.set(x, "MetadataOptions", value.asInstanceOf[js.Any])
     
@@ -367,7 +419,7 @@ object Instance {
     
     inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "NetworkInterfaces", js.undefined)
     
-    inline def setNetworkInterfacesVarargs(value: InstanceNetworkInterface*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value :_*))
+    inline def setNetworkInterfacesVarargs(value: InstanceNetworkInterface*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value*))
     
     inline def setOutpostArn(value: String): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
     
@@ -379,9 +431,17 @@ object Instance {
     
     inline def setPlatform(value: PlatformValues): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
+    inline def setPlatformDetails(value: String): Self = StObject.set(x, "PlatformDetails", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformDetailsUndefined: Self = StObject.set(x, "PlatformDetails", js.undefined)
+    
     inline def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
     
     inline def setPrivateDnsName(value: String): Self = StObject.set(x, "PrivateDnsName", value.asInstanceOf[js.Any])
+    
+    inline def setPrivateDnsNameOptions(value: PrivateDnsNameOptionsResponse): Self = StObject.set(x, "PrivateDnsNameOptions", value.asInstanceOf[js.Any])
+    
+    inline def setPrivateDnsNameOptionsUndefined: Self = StObject.set(x, "PrivateDnsNameOptions", js.undefined)
     
     inline def setPrivateDnsNameUndefined: Self = StObject.set(x, "PrivateDnsName", js.undefined)
     
@@ -393,7 +453,7 @@ object Instance {
     
     inline def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
-    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
+    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value*))
     
     inline def setPublicDnsName(value: String): Self = StObject.set(x, "PublicDnsName", value.asInstanceOf[js.Any])
     
@@ -419,7 +479,7 @@ object Instance {
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setSourceDestCheck(value: Boolean): Self = StObject.set(x, "SourceDestCheck", value.asInstanceOf[js.Any])
     
@@ -453,7 +513,19 @@ object Instance {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
+    
+    inline def setTpmSupport(value: String): Self = StObject.set(x, "TpmSupport", value.asInstanceOf[js.Any])
+    
+    inline def setTpmSupportUndefined: Self = StObject.set(x, "TpmSupport", js.undefined)
+    
+    inline def setUsageOperation(value: String): Self = StObject.set(x, "UsageOperation", value.asInstanceOf[js.Any])
+    
+    inline def setUsageOperationUndefined: Self = StObject.set(x, "UsageOperation", js.undefined)
+    
+    inline def setUsageOperationUpdateTime(value: js.Date): Self = StObject.set(x, "UsageOperationUpdateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUsageOperationUpdateTimeUndefined: Self = StObject.set(x, "UsageOperationUpdateTime", js.undefined)
     
     inline def setVirtualizationType(value: VirtualizationType): Self = StObject.set(x, "VirtualizationType", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ object replyAllMod {
   
   @JSImport("material-ui/svg-icons/content/reply-all", JSImport.Default)
   @js.native
-  class default () extends ContentReplyAll
+  open class default () extends ContentReplyAll
   
   @JSImport("material-ui/svg-icons/content/reply-all", "ContentReplyAll")
   @js.native
-  class ContentReplyAll ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentReplyAll ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

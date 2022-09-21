@@ -9,7 +9,7 @@ trait PlaceSearch extends StObject {
   
   def clear(): Unit = js.native
   
-  def detailOnAMAP(obj: js.Any): Unit = js.native
+  def detailOnAMAP(obj: Any): Unit = js.native
   
   def getDetails(
     POIID: String,
@@ -18,7 +18,7 @@ trait PlaceSearch extends StObject {
   
   def getLang(): String = js.native
   
-  def poiOnAMAP(obj: js.Any): Unit = js.native
+  def poiOnAMAP(obj: Any): Unit = js.native
   
   def search(
     keyword: String,

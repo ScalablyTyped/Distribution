@@ -43,10 +43,7 @@ object mod {
     * Saves the photo or video to the camera roll or photo library.
     */
   inline def saveToCameraRoll(tag: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("saveToCameraRoll")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  
-  inline def saveToCameraRoll_photo(tag: String, `type`: photo): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("saveToCameraRoll")(tag.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  
-  inline def saveToCameraRoll_video(tag: String, `type`: video): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("saveToCameraRoll")(tag.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def saveToCameraRoll(tag: String, `type`: photo | video): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("saveToCameraRoll")(tag.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   trait Album extends StObject {
     
@@ -197,13 +194,13 @@ object mod {
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: Include*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: Include*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setMimeTypes(value: js.Array[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
       
       inline def setMimeTypesUndefined: Self = StObject.set(x, "mimeTypes", js.undefined)
       
-      inline def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value :_*))
+      inline def setMimeTypesVarargs(value: String*): Self = StObject.set(x, "mimeTypes", js.Array(value*))
       
       inline def setToTime(value: Double): Self = StObject.set(x, "toTime", value.asInstanceOf[js.Any])
       
@@ -293,7 +290,7 @@ object mod {
       
       inline def setEdges(value: js.Array[PhotoIdentifier]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
-      inline def setEdgesVarargs(value: PhotoIdentifier*): Self = StObject.set(x, "edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: PhotoIdentifier*): Self = StObject.set(x, "edges", js.Array(value*))
       
       inline def setPage_info(value: Endcursor): Self = StObject.set(x, "page_info", value.asInstanceOf[js.Any])
     }

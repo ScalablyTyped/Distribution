@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UseRowStateInstanceProps[D /* <: js.Object */] extends StObject {
   
-  def setCellState(rowPath: js.Array[String], columnId: IdType[D], updater: UseRowUpdater[js.Any]): Unit
+  def setCellState(rowPath: js.Array[String], columnId: IdType[D], updater: UseRowUpdater[Any]): Unit
   
-  def setRowState(rowPath: js.Array[String], updater: UseRowUpdater[js.Any]): Unit
+  def setRowState(rowPath: js.Array[String], updater: UseRowUpdater[Any]): Unit
 }
 object UseRowStateInstanceProps {
   
   inline def apply[D /* <: js.Object */](
-    setCellState: (js.Array[String], IdType[D], UseRowUpdater[js.Any]) => Unit,
-    setRowState: (js.Array[String], UseRowUpdater[js.Any]) => Unit
+    setCellState: (js.Array[String], IdType[D], UseRowUpdater[Any]) => Unit,
+    setRowState: (js.Array[String], UseRowUpdater[Any]) => Unit
   ): UseRowStateInstanceProps[D] = {
     val __obj = js.Dynamic.literal(setCellState = js.Any.fromFunction3(setCellState), setRowState = js.Any.fromFunction2(setRowState))
     __obj.asInstanceOf[UseRowStateInstanceProps[D]]
@@ -22,8 +22,8 @@ object UseRowStateInstanceProps {
   
   extension [Self <: UseRowStateInstanceProps[?], D /* <: js.Object */](x: Self & UseRowStateInstanceProps[D]) {
     
-    inline def setSetCellState(value: (js.Array[String], IdType[D], UseRowUpdater[js.Any]) => Unit): Self = StObject.set(x, "setCellState", js.Any.fromFunction3(value))
+    inline def setSetCellState(value: (js.Array[String], IdType[D], UseRowUpdater[Any]) => Unit): Self = StObject.set(x, "setCellState", js.Any.fromFunction3(value))
     
-    inline def setSetRowState(value: (js.Array[String], UseRowUpdater[js.Any]) => Unit): Self = StObject.set(x, "setRowState", js.Any.fromFunction2(value))
+    inline def setSetRowState(value: (js.Array[String], UseRowUpdater[Any]) => Unit): Self = StObject.set(x, "setRowState", js.Any.fromFunction2(value))
   }
 }

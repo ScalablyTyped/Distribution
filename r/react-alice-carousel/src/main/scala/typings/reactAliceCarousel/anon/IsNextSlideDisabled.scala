@@ -9,23 +9,11 @@ trait IsNextSlideDisabled extends StObject {
   var isNextSlideDisabled: Boolean
   
   var isPrevSlideDisabled: Boolean
-  
-  var item: Double
-  
-  var itemsInSlide: Double
-  
-  var slide: Double
 }
 object IsNextSlideDisabled {
   
-  inline def apply(
-    isNextSlideDisabled: Boolean,
-    isPrevSlideDisabled: Boolean,
-    item: Double,
-    itemsInSlide: Double,
-    slide: Double
-  ): IsNextSlideDisabled = {
-    val __obj = js.Dynamic.literal(isNextSlideDisabled = isNextSlideDisabled.asInstanceOf[js.Any], isPrevSlideDisabled = isPrevSlideDisabled.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemsInSlide = itemsInSlide.asInstanceOf[js.Any], slide = slide.asInstanceOf[js.Any])
+  inline def apply(isNextSlideDisabled: Boolean, isPrevSlideDisabled: Boolean): IsNextSlideDisabled = {
+    val __obj = js.Dynamic.literal(isNextSlideDisabled = isNextSlideDisabled.asInstanceOf[js.Any], isPrevSlideDisabled = isPrevSlideDisabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsNextSlideDisabled]
   }
   
@@ -34,11 +22,5 @@ object IsNextSlideDisabled {
     inline def setIsNextSlideDisabled(value: Boolean): Self = StObject.set(x, "isNextSlideDisabled", value.asInstanceOf[js.Any])
     
     inline def setIsPrevSlideDisabled(value: Boolean): Self = StObject.set(x, "isPrevSlideDisabled", value.asInstanceOf[js.Any])
-    
-    inline def setItem(value: Double): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
-    
-    inline def setItemsInSlide(value: Double): Self = StObject.set(x, "itemsInSlide", value.asInstanceOf[js.Any])
-    
-    inline def setSlide(value: Double): Self = StObject.set(x, "slide", value.asInstanceOf[js.Any])
   }
 }

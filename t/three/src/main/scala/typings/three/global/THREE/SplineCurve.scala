@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.SplineCurve")
 @js.native
-class SplineCurve ()
+open class SplineCurve ()
   extends typings.three.mod.SplineCurve {
   def this(points: js.Array[typings.three.vector2Mod.Vector2]) = this()
 }

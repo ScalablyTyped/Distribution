@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeCertificatesMessage extends StObject {
   
   /**
-    * Filters applied to the certificates described in the form of key-value pairs.
+    * Filters applied to the certificates described in the form of key-value pairs. Valid values are certificate-arn and certificate-id.
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
@@ -34,7 +34,7 @@ object DescribeCertificatesMessage {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

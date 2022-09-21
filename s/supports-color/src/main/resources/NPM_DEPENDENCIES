@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "supports-color" : "9.2.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "supports-color" : "9.2.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

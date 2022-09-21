@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaNodeTemplateNodeTypeFlexibility extends StObject {
   
-  var cpus: js.UndefOr[String] = js.undefined
+  var cpus: js.UndefOr[String | Null] = js.undefined
   
-  var localSsd: js.UndefOr[String] = js.undefined
+  var localSsd: js.UndefOr[String | Null] = js.undefined
   
-  var memory: js.UndefOr[String] = js.undefined
+  var memory: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaNodeTemplateNodeTypeFlexibility {
   
@@ -23,13 +23,19 @@ object SchemaNodeTemplateNodeTypeFlexibility {
     
     inline def setCpus(value: String): Self = StObject.set(x, "cpus", value.asInstanceOf[js.Any])
     
+    inline def setCpusNull: Self = StObject.set(x, "cpus", null)
+    
     inline def setCpusUndefined: Self = StObject.set(x, "cpus", js.undefined)
     
     inline def setLocalSsd(value: String): Self = StObject.set(x, "localSsd", value.asInstanceOf[js.Any])
     
+    inline def setLocalSsdNull: Self = StObject.set(x, "localSsd", null)
+    
     inline def setLocalSsdUndefined: Self = StObject.set(x, "localSsd", js.undefined)
     
     inline def setMemory(value: String): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    
+    inline def setMemoryNull: Self = StObject.set(x, "memory", null)
     
     inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
   }

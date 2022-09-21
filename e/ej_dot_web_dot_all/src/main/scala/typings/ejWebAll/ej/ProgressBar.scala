@@ -48,7 +48,7 @@ object ProgressBar {
     
     /** returns the current progress percentage
       */
-    var percentage: js.UndefOr[js.Any] = js.undefined
+    var percentage: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -75,7 +75,7 @@ object ProgressBar {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPercentage(value: js.Any): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Any): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
       inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       
@@ -101,7 +101,7 @@ object ProgressBar {
     
     /** returns the current progress percentage
       */
-    var percentage: js.UndefOr[js.Any] = js.undefined
+    var percentage: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -128,7 +128,7 @@ object ProgressBar {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPercentage(value: js.Any): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Any): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
       inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       
@@ -262,7 +262,7 @@ object ProgressBar {
     /** It allows to define the characteristics of the progressBar control. It will helps to extend the capability of an HTML element.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Sets the maximum value of the ProgressBar.
       * @Default {100}
@@ -348,7 +348,7 @@ object ProgressBar {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -398,7 +398,7 @@ object ProgressBar {
     
     /** returns the current progress percentage
       */
-    var percentage: js.UndefOr[js.Any] = js.undefined
+    var percentage: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -425,7 +425,7 @@ object ProgressBar {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPercentage(value: js.Any): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Any): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
       inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       

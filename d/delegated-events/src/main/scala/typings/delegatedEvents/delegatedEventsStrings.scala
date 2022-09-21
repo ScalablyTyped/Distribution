@@ -31,12 +31,12 @@ object delegatedEventsStrings {
   inline def auxclick: auxclick = "auxclick".asInstanceOf[auxclick]
   
   @js.native
-  sealed trait blur extends StObject
-  inline def blur: blur = "blur".asInstanceOf[blur]
+  sealed trait beforeinput extends StObject
+  inline def beforeinput: beforeinput = "beforeinput".asInstanceOf[beforeinput]
   
   @js.native
-  sealed trait cancel extends StObject
-  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
+  sealed trait blur extends StObject
+  inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
   sealed trait canplay extends StObject
@@ -57,6 +57,18 @@ object delegatedEventsStrings {
   @js.native
   sealed trait close extends StObject
   inline def close: close = "close".asInstanceOf[close]
+  
+  @js.native
+  sealed trait compositionend extends StObject
+  inline def compositionend: compositionend = "compositionend".asInstanceOf[compositionend]
+  
+  @js.native
+  sealed trait compositionstart extends StObject
+  inline def compositionstart: compositionstart = "compositionstart".asInstanceOf[compositionstart]
+  
+  @js.native
+  sealed trait compositionupdate extends StObject
+  inline def compositionupdate: compositionupdate = "compositionupdate".asInstanceOf[compositionupdate]
   
   @js.native
   sealed trait contextmenu extends StObject
@@ -81,10 +93,6 @@ object delegatedEventsStrings {
   @js.native
   sealed trait dragenter extends StObject
   inline def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
-  
-  @js.native
-  sealed trait dragexit extends StObject
-  inline def dragexit: dragexit = "dragexit".asInstanceOf[dragexit]
   
   @js.native
   sealed trait dragleave extends StObject
@@ -129,6 +137,10 @@ object delegatedEventsStrings {
   @js.native
   sealed trait focusout extends StObject
   inline def focusout: focusout = "focusout".asInstanceOf[focusout]
+  
+  @js.native
+  sealed trait formdata extends StObject
+  inline def formdata: formdata = "formdata".asInstanceOf[formdata]
   
   @js.native
   sealed trait gotpointercapture extends StObject
@@ -291,6 +303,10 @@ object delegatedEventsStrings {
   inline def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   
   @js.native
+  sealed trait slotchange extends StObject
+  inline def slotchange: slotchange = "slotchange".asInstanceOf[slotchange]
+  
+  @js.native
   sealed trait stalled extends StObject
   inline def stalled: stalled = "stalled".asInstanceOf[stalled]
   
@@ -349,6 +365,22 @@ object delegatedEventsStrings {
   @js.native
   sealed trait waiting extends StObject
   inline def waiting: waiting = "waiting".asInstanceOf[waiting]
+  
+  @js.native
+  sealed trait webkitanimationend extends StObject
+  inline def webkitanimationend: webkitanimationend = "webkitanimationend".asInstanceOf[webkitanimationend]
+  
+  @js.native
+  sealed trait webkitanimationiteration extends StObject
+  inline def webkitanimationiteration: webkitanimationiteration = "webkitanimationiteration".asInstanceOf[webkitanimationiteration]
+  
+  @js.native
+  sealed trait webkitanimationstart extends StObject
+  inline def webkitanimationstart: webkitanimationstart = "webkitanimationstart".asInstanceOf[webkitanimationstart]
+  
+  @js.native
+  sealed trait webkittransitionend extends StObject
+  inline def webkittransitionend: webkittransitionend = "webkittransitionend".asInstanceOf[webkittransitionend]
   
   @js.native
   sealed trait wheel extends StObject

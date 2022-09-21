@@ -14,12 +14,12 @@ trait AnalyzedResource extends StObject {
   /**
     * The time at which the resource was analyzed.
     */
-  var analyzedAt: Timestamp
+  var analyzedAt: js.Date
   
   /**
     * The time at which the finding was created.
     */
-  var createdAt: Timestamp
+  var createdAt: js.Date
   
   /**
     * An error message.
@@ -37,7 +37,7 @@ trait AnalyzedResource extends StObject {
   var resourceArn: ResourceArn
   
   /**
-    * The AWS account ID that owns the resource.
+    * The Amazon Web Services account ID that owns the resource.
     */
   var resourceOwnerAccount: String
   
@@ -59,18 +59,18 @@ trait AnalyzedResource extends StObject {
   /**
     * The time at which the finding was updated.
     */
-  var updatedAt: Timestamp
+  var updatedAt: js.Date
 }
 object AnalyzedResource {
   
   inline def apply(
-    analyzedAt: Timestamp,
-    createdAt: Timestamp,
+    analyzedAt: js.Date,
+    createdAt: js.Date,
     isPublic: Boolean,
     resourceArn: ResourceArn,
     resourceOwnerAccount: String,
     resourceType: ResourceType,
-    updatedAt: Timestamp
+    updatedAt: js.Date
   ): AnalyzedResource = {
     val __obj = js.Dynamic.literal(analyzedAt = analyzedAt.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], isPublic = isPublic.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any], resourceOwnerAccount = resourceOwnerAccount.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyzedResource]
@@ -82,11 +82,11 @@ object AnalyzedResource {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value*))
     
-    inline def setAnalyzedAt(value: Timestamp): Self = StObject.set(x, "analyzedAt", value.asInstanceOf[js.Any])
+    inline def setAnalyzedAt(value: js.Date): Self = StObject.set(x, "analyzedAt", value.asInstanceOf[js.Any])
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
@@ -104,12 +104,12 @@ object AnalyzedResource {
     
     inline def setSharedViaUndefined: Self = StObject.set(x, "sharedVia", js.undefined)
     
-    inline def setSharedViaVarargs(value: String*): Self = StObject.set(x, "sharedVia", js.Array(value :_*))
+    inline def setSharedViaVarargs(value: String*): Self = StObject.set(x, "sharedVia", js.Array(value*))
     
     inline def setStatus(value: FindingStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
   }
 }

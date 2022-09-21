@@ -23,7 +23,7 @@ object webMod {
   
   @JSImport("sip.js/lib/platform/web", "SessionDescriptionHandler")
   @js.native
-  class SessionDescriptionHandler protected ()
+  open class SessionDescriptionHandler protected ()
     extends typings.sipJs.webSessionDescriptionHandlerMod.SessionDescriptionHandler {
     /**
       * Constructor
@@ -47,18 +47,18 @@ object webMod {
     
     @JSImport("sip.js/lib/platform/web", "SessionDescriptionHandler.dispatchAddTrackEvent")
     @js.native
-    def dispatchAddTrackEvent: js.Any = js.native
-    inline def dispatchAddTrackEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchAddTrackEvent")(x.asInstanceOf[js.Any])
+    def dispatchAddTrackEvent: Any = js.native
+    inline def dispatchAddTrackEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchAddTrackEvent")(x.asInstanceOf[js.Any])
     
     @JSImport("sip.js/lib/platform/web", "SessionDescriptionHandler.dispatchRemoveTrackEvent")
     @js.native
-    def dispatchRemoveTrackEvent: js.Any = js.native
-    inline def dispatchRemoveTrackEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchRemoveTrackEvent")(x.asInstanceOf[js.Any])
+    def dispatchRemoveTrackEvent: Any = js.native
+    inline def dispatchRemoveTrackEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dispatchRemoveTrackEvent")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("sip.js/lib/platform/web", "SimpleUser")
   @js.native
-  class SimpleUser protected ()
+  open class SimpleUser protected ()
     extends typings.sipJs.simpleUserMod.SimpleUser {
     /**
       * Constructs a new instance of the `SimpleUser` class.
@@ -71,7 +71,7 @@ object webMod {
   
   @JSImport("sip.js/lib/platform/web", "Transport")
   @js.native
-  class Transport protected ()
+  open class Transport protected ()
     extends typings.sipJs.webTransportMod.Transport {
     def this(logger: Logger) = this()
     def this(logger: Logger, options: TransportOptions) = this()
@@ -85,8 +85,8 @@ object webMod {
     
     @JSImport("sip.js/lib/platform/web", "Transport.defaultOptions")
     @js.native
-    def defaultOptions: js.Any = js.native
-    inline def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+    def defaultOptions: Any = js.native
+    inline def defaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
   }
   
   inline def addMidLines(description: RTCSessionDescriptionInit): js.Promise[RTCSessionDescriptionInit] = ^.asInstanceOf[js.Dynamic].applyDynamic("addMidLines")(description.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RTCSessionDescriptionInit]]

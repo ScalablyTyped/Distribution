@@ -6,17 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PaymentDetailsModifier extends StObject {
   
+  /* standard dom */
   var additionalDisplayItems: js.UndefOr[js.Array[PaymentItem]] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  /* standard dom */
+  var data: js.UndefOr[Any] = js.undefined
   
-  var supportedMethods: java.lang.String | js.Array[java.lang.String]
+  /* standard dom */
+  var supportedMethods: java.lang.String
   
+  /* standard dom */
   var total: js.UndefOr[PaymentItem] = js.undefined
 }
 object PaymentDetailsModifier {
   
-  inline def apply(supportedMethods: java.lang.String | js.Array[java.lang.String]): PaymentDetailsModifier = {
+  inline def apply(supportedMethods: java.lang.String): PaymentDetailsModifier = {
     val __obj = js.Dynamic.literal(supportedMethods = supportedMethods.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentDetailsModifier]
   }
@@ -27,15 +31,13 @@ object PaymentDetailsModifier {
     
     inline def setAdditionalDisplayItemsUndefined: Self = StObject.set(x, "additionalDisplayItems", js.undefined)
     
-    inline def setAdditionalDisplayItemsVarargs(value: PaymentItem*): Self = StObject.set(x, "additionalDisplayItems", js.Array(value :_*))
+    inline def setAdditionalDisplayItemsVarargs(value: PaymentItem*): Self = StObject.set(x, "additionalDisplayItems", js.Array(value*))
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setSupportedMethods(value: java.lang.String | js.Array[java.lang.String]): Self = StObject.set(x, "supportedMethods", value.asInstanceOf[js.Any])
-    
-    inline def setSupportedMethodsVarargs(value: java.lang.String*): Self = StObject.set(x, "supportedMethods", js.Array(value :_*))
+    inline def setSupportedMethods(value: java.lang.String): Self = StObject.set(x, "supportedMethods", value.asInstanceOf[js.Any])
     
     inline def setTotal(value: PaymentItem): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     

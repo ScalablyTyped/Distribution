@@ -1,18 +1,18 @@
 package typings.tar
 
-import typings.node.Buffer
-import typings.node.NodeJS.ReadWriteStream
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Stream
 import typings.node.streamMod.Writable
 import typings.node.zlibMod.ZlibOptions
-import typings.std.Error
+import typings.std.WritableStream
 import typings.tar.anon.CreateOptionsFileOptionss
 import typings.tar.anon.ExtractOptionsFileOptions
 import typings.tar.anon.ListOptionsFileOptionssyn
 import typings.tar.tarBooleans.`false`
+import typings.tar.tarStrings.close
+import typings.tar.tarStrings.end
+import typings.tar.tarStrings.entry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,32 @@ object mod {
   inline def Pack(): PackStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Pack")().asInstanceOf[PackStream]
   inline def Pack(props: HeaderProperties): PackStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Pack")(props.asInstanceOf[js.Any]).asInstanceOf[PackStream]
   
-  inline def Parse(): ParseStream = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")().asInstanceOf[ParseStream]
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("tar", "Parse")
+  @js.native
+  open class ParseCls ()
+    extends StObject
+       with Parse {
+    def this(opt: ParseOptions) = this()
+    
+    /* CompleteClass */
+    var _ended: Boolean = js.native
+    
+    /* CompleteClass */
+    override def _process(c: Buffer): Unit = js.native
+    
+    /* CompleteClass */
+    override def _startEntry(c: Buffer): Unit = js.native
+    
+    /* CompleteClass */
+    var _stream: Stream = js.native
+    
+    /* CompleteClass */
+    override def _streamEnd(): Unit = js.native
+    
+    /* CompleteClass */
+    var position: Double = js.native
+  }
   
   @JSImport("tar", "blockSize")
   @js.native
@@ -39,7 +64,7 @@ object mod {
   inline def c(
     options: CreateOptions & FileOptions,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def c(options: CreateOptionsFileOptionss, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -47,14 +72,14 @@ object mod {
   inline def c_Readable(
     options: CreateOptions,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("c")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Readable]
   
   inline def create(options: CreateOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def create(
     options: CreateOptions & FileOptions,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def create(options: CreateOptionsFileOptionss, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -62,7 +87,7 @@ object mod {
   inline def create_Readable(
     options: CreateOptions,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Readable]
   
   inline def extract(options: ExtractOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
@@ -70,12 +95,12 @@ object mod {
   inline def extract(
     options: ExtractOptions & FileOptions,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def extract(
     options: ExtractOptions & FileOptions,
     fileList: Unit,
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def extract(options: ExtractOptionsFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def extract(options: ExtractOptionsFileOptions, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -85,9 +110,13 @@ object mod {
   inline def extract_Writable(
     options: ExtractOptions,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-  inline def extract_Writable(options: ExtractOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  inline def extract_Writable(
+    options: ExtractOptions,
+    fileList: Unit,
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+  ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
   
   @JSImport("tar", "fieldEnds")
   @js.native
@@ -188,20 +217,20 @@ object mod {
   inline def list(
     options: ListOptions & FileOptions,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
   inline def list(
     options: ListOptions & FileOptions,
     fileList: Unit,
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
   inline def list(options: Unit, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
   inline def list(
     options: Unit,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-  inline def list(options: Unit, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  inline def list(options: Unit, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
   inline def list(options: ListOptionsFileOptionssyn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def list(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -352,18 +381,26 @@ object mod {
   inline def r(
     options: ReplaceOptions,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("r")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def r(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("r")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def r(
+    options: ReplaceOptions,
+    fileList: Unit,
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("r")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def replace(options: ReplaceOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def replace(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def replace(
     options: ReplaceOptions,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def replace(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def replace(
+    options: ReplaceOptions,
+    fileList: Unit,
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def t(): Writable = ^.asInstanceOf[js.Dynamic].applyDynamic("t")().asInstanceOf[Writable]
   inline def t(options: ListOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
@@ -371,20 +408,20 @@ object mod {
   inline def t(
     options: ListOptions & FileOptions,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
   inline def t(
     options: ListOptions & FileOptions,
     fileList: Unit,
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
   inline def t(options: Unit, fileList: js.Array[String]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Writable]
   inline def t(
     options: Unit,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-  inline def t(options: Unit, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  inline def t(options: Unit, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
   inline def t(options: ListOptionsFileOptionssyn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def t(options: ListOptionsFileOptionssyn, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("t")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -604,30 +641,38 @@ object mod {
   inline def u(
     options: ReplaceOptions,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("u")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def u(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("u")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def u(
+    options: ReplaceOptions,
+    fileList: Unit,
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("u")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def update(options: ReplaceOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def update(options: ReplaceOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def update(
     options: ReplaceOptions,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def update(options: ReplaceOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def update(
+    options: ReplaceOptions,
+    fileList: Unit,
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def x(options: ExtractOptions & FileOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def x(options: ExtractOptions & FileOptions, fileList: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def x(
     options: ExtractOptions & FileOptions,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def x(
     options: ExtractOptions & FileOptions,
     fileList: Unit,
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def x(options: ExtractOptionsFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def x(options: ExtractOptionsFileOptions, fileList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -637,9 +682,13 @@ object mod {
   inline def x_Writable(
     options: ExtractOptions,
     fileList: js.Array[String],
-    callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
-  inline def x_Writable(options: ExtractOptions, fileList: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
+  inline def x_Writable(
+    options: ExtractOptions,
+    fileList: Unit,
+    callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+  ): Writable = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(options.asInstanceOf[js.Any], fileList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Writable]
   
   trait CreateOptions extends StObject {
     
@@ -893,6 +942,14 @@ object mod {
     var `no-mtime`: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Set to true to omit calling `fs.chmod()` to ensure that the extracted file
+      * matches the entry mode. This also suppresses the call to `process.umask()`
+      * to determine the default umask value, since tar will extract with whatever
+      * mode is provided, and let the process `umask` apply normally.
+      */
+    var noChmod: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Set to true to omit writing mtime value for extracted entries.
       * [Alias: m, no-mtime]
       */
@@ -957,7 +1014,9 @@ object mod {
       * falsey value is provided, then the entry is written to disk as normal.
       * (To exclude items from extraction, use the filter option described above.)
       */
-    var transform: js.UndefOr[js.Function1[/* entry */ ReadEntry, js.UndefOr[WritableStream | `false` | Null]]] = js.undefined
+    var transform: js.UndefOr[
+        js.Function1[/* entry */ ReadEntry, js.UndefOr[WritableStream[Any] | `false` | Null]]
+      ] = js.undefined
     
     var `type`: js.UndefOr[String] = js.undefined
     
@@ -1046,6 +1105,10 @@ object mod {
       
       inline def `setNo-mtimeUndefined`: Self = StObject.set(x, "no-mtime", js.undefined)
       
+      inline def setNoChmod(value: Boolean): Self = StObject.set(x, "noChmod", value.asInstanceOf[js.Any])
+      
+      inline def setNoChmodUndefined: Self = StObject.set(x, "noChmod", js.undefined)
+      
       inline def setNoMtime(value: Boolean): Self = StObject.set(x, "noMtime", value.asInstanceOf[js.Any])
       
       inline def setNoMtimeUndefined: Self = StObject.set(x, "noMtime", js.undefined)
@@ -1086,7 +1149,7 @@ object mod {
       
       inline def setStripUndefined: Self = StObject.set(x, "strip", js.undefined)
       
-      inline def setTransform(value: /* entry */ ReadEntry => js.UndefOr[WritableStream | `false` | Null]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* entry */ ReadEntry => js.UndefOr[WritableStream[Any] | `false` | Null]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
@@ -1247,11 +1310,6 @@ object mod {
     var ignore: Boolean = js.native
     
     var meta: Boolean = js.native
-    
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
     
     var remain: Double = js.native
     
@@ -1424,79 +1482,240 @@ object mod {
     }
   }
   
-  @js.native
-  trait PackStream
-    extends StObject
-       with ReadWriteStream {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream * / any */ trait PackStream extends StObject {
     
-    var _buffer: js.Array[Stream] = js.native
+    var _buffer: js.Array[Stream]
     
-    var _currentEntry: js.Any = js.native
+    var _currentEntry: Any
     
-    var _global: HeaderProperties = js.native
+    var _global: HeaderProperties
     
-    var _needDrain: Boolean = js.native
+    var _needDrain: Boolean
     
-    var _noProprietary: Boolean = js.native
+    var _noProprietary: Boolean
     
-    var _paused: Boolean = js.native
+    var _paused: Boolean
     
-    var _pipeRoot: Stream = js.native
+    var _pipeRoot: Stream
     
-    def _process(): Unit = js.native
+    def _process(): Unit
     
-    var _processing: Boolean = js.native
+    var _processing: Boolean
     
-    def add(stream: Stream): Boolean = js.native
+    def add(stream: Stream): Boolean
     
-    def addGlobal(props: HeaderProperties): Unit = js.native
+    def addGlobal(props: HeaderProperties): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
+    
+    var readable: Boolean
+    
+    var writable: Boolean
+  }
+  object PackStream {
+    
+    inline def apply(
+      _buffer: js.Array[Stream],
+      _currentEntry: Any,
+      _global: HeaderProperties,
+      _needDrain: Boolean,
+      _noProprietary: Boolean,
+      _paused: Boolean,
+      _pipeRoot: Stream,
+      _process: () => Unit,
+      _processing: Boolean,
+      add: Stream => Boolean,
+      addGlobal: HeaderProperties => Unit,
+      destroy: () => Unit,
+      readable: Boolean,
+      writable: Boolean
+    ): PackStream = {
+      val __obj = js.Dynamic.literal(_buffer = _buffer.asInstanceOf[js.Any], _currentEntry = _currentEntry.asInstanceOf[js.Any], _global = _global.asInstanceOf[js.Any], _needDrain = _needDrain.asInstanceOf[js.Any], _noProprietary = _noProprietary.asInstanceOf[js.Any], _paused = _paused.asInstanceOf[js.Any], _pipeRoot = _pipeRoot.asInstanceOf[js.Any], _process = js.Any.fromFunction0(_process), _processing = _processing.asInstanceOf[js.Any], add = js.Any.fromFunction1(add), addGlobal = js.Any.fromFunction1(addGlobal), destroy = js.Any.fromFunction0(destroy), readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PackStream]
+    }
+    
+    extension [Self <: PackStream](x: Self) {
+      
+      inline def setAdd(value: Stream => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      
+      inline def setAddGlobal(value: HeaderProperties => Unit): Self = StObject.set(x, "addGlobal", js.Any.fromFunction1(value))
+      
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      
+      inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      
+      inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+      
+      inline def set_buffer(value: js.Array[Stream]): Self = StObject.set(x, "_buffer", value.asInstanceOf[js.Any])
+      
+      inline def set_bufferVarargs(value: Stream*): Self = StObject.set(x, "_buffer", js.Array(value*))
+      
+      inline def set_currentEntry(value: Any): Self = StObject.set(x, "_currentEntry", value.asInstanceOf[js.Any])
+      
+      inline def set_global(value: HeaderProperties): Self = StObject.set(x, "_global", value.asInstanceOf[js.Any])
+      
+      inline def set_needDrain(value: Boolean): Self = StObject.set(x, "_needDrain", value.asInstanceOf[js.Any])
+      
+      inline def set_noProprietary(value: Boolean): Self = StObject.set(x, "_noProprietary", value.asInstanceOf[js.Any])
+      
+      inline def set_paused(value: Boolean): Self = StObject.set(x, "_paused", value.asInstanceOf[js.Any])
+      
+      inline def set_pipeRoot(value: Stream): Self = StObject.set(x, "_pipeRoot", value.asInstanceOf[js.Any])
+      
+      inline def set_process(value: () => Unit): Self = StObject.set(x, "_process", js.Any.fromFunction0(value))
+      
+      inline def set_processing(value: Boolean): Self = StObject.set(x, "_processing", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
-  trait ParseStream
+  trait Parse
     extends StObject
-       with ReadWriteStream {
+       with ParseStream {
     
-    var _ended: Boolean = js.native
-    
-    def _process(c: Buffer): Unit = js.native
-    
-    def _startEntry(c: Buffer): Unit = js.native
-    
-    var _stream: Stream = js.native
-    
-    def _streamEnd(): Unit = js.native
-    
-    var position: Double = js.native
+    def on(event: end | close, listener: js.Function0[Unit]): this.type = js.native
+    @JSName("on")
+    def on_entry(event: entry, listener: js.Function1[/* entry */ ReadEntry, Unit]): this.type = js.native
   }
   
-  @js.native
-  trait ReadEntry
-    extends typings.minipass.mod.^
+  trait ParseOptions extends StObject {
+    
+    var filter: js.UndefOr[js.Function2[/* path */ String, /* entry */ ReadEntry, Boolean]] = js.undefined
+    
+    var onentry: js.UndefOr[js.Function1[/* entry */ ReadEntry, Unit]] = js.undefined
+    
+    var onwarn: js.UndefOr[js.Function3[/* code */ String, /* message */ String, /* data */ Buffer, Unit]] = js.undefined
+    
+    var strict: js.UndefOr[Boolean] = js.undefined
+  }
+  object ParseOptions {
+    
+    inline def apply(): ParseOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ParseOptions]
+    }
+    
+    extension [Self <: ParseOptions](x: Self) {
+      
+      inline def setFilter(value: (/* path */ String, /* entry */ ReadEntry) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      
+      inline def setOnentry(value: /* entry */ ReadEntry => Unit): Self = StObject.set(x, "onentry", js.Any.fromFunction1(value))
+      
+      inline def setOnentryUndefined: Self = StObject.set(x, "onentry", js.undefined)
+      
+      inline def setOnwarn(value: (/* code */ String, /* message */ String, /* data */ Buffer) => Unit): Self = StObject.set(x, "onwarn", js.Any.fromFunction3(value))
+      
+      inline def setOnwarnUndefined: Self = StObject.set(x, "onwarn", js.undefined)
+      
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    }
+  }
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream * / any */ trait ParseStream extends StObject {
+    
+    var _ended: Boolean
+    
+    def _process(c: Buffer): Unit
+    
+    def _startEntry(c: Buffer): Unit
+    
+    var _stream: Stream
+    
+    def _streamEnd(): Unit
+    
+    var position: Double
+  }
+  object ParseStream {
+    
+    inline def apply(
+      _ended: Boolean,
+      _process: Buffer => Unit,
+      _startEntry: Buffer => Unit,
+      _stream: Stream,
+      _streamEnd: () => Unit,
+      position: Double
+    ): ParseStream = {
+      val __obj = js.Dynamic.literal(_ended = _ended.asInstanceOf[js.Any], _process = js.Any.fromFunction1(_process), _startEntry = js.Any.fromFunction1(_startEntry), _stream = _stream.asInstanceOf[js.Any], _streamEnd = js.Any.fromFunction0(_streamEnd), position = position.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ParseStream]
+    }
+    
+    extension [Self <: ParseStream](x: Self) {
+      
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      
+      inline def set_ended(value: Boolean): Self = StObject.set(x, "_ended", value.asInstanceOf[js.Any])
+      
+      inline def set_process(value: Buffer => Unit): Self = StObject.set(x, "_process", js.Any.fromFunction1(value))
+      
+      inline def set_startEntry(value: Buffer => Unit): Self = StObject.set(x, "_startEntry", js.Any.fromFunction1(value))
+      
+      inline def set_stream(value: Stream): Self = StObject.set(x, "_stream", value.asInstanceOf[js.Any])
+      
+      inline def set_streamEnd(value: () => Unit): Self = StObject.set(x, "_streamEnd", js.Any.fromFunction0(value))
+    }
+  }
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MiniPass * / any */ trait ReadEntry
+    extends StObject
        with HeaderProperties {
     
     /** The number of 512-byte blocks remaining to be written into the stream. */
-    var blockRemain: Double = js.native
+    var blockRemain: Double
     
     /** The extended metadata object provided to the constructor. */
-    var extended: js.Any = js.native
+    var extended: Any
     
     /** The global extended metadata object provided to the constructor. */
-    var globalExtended: js.Any = js.native
+    var globalExtended: Any
     
     /** Whether this entry should be ignored. */
-    var ignore: Boolean = js.native
+    var ignore: Boolean
     
     /**
       * True if this represents metadata about the next entry, false if it
       * represents a filesystem object.
       */
-    var meta: Boolean = js.native
+    var meta: Boolean
     
     /** The number of bytes remaining to be written into the stream. */
-    var remain: Double = js.native
+    var remain: Double
+  }
+  object ReadEntry {
+    
+    inline def apply(
+      blockRemain: Double,
+      extended: Any,
+      globalExtended: Any,
+      ignore: Boolean,
+      meta: Boolean,
+      path: String,
+      remain: Double
+    ): ReadEntry = {
+      val __obj = js.Dynamic.literal(blockRemain = blockRemain.asInstanceOf[js.Any], extended = extended.asInstanceOf[js.Any], globalExtended = globalExtended.asInstanceOf[js.Any], ignore = ignore.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], remain = remain.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ReadEntry]
+    }
+    
+    extension [Self <: ReadEntry](x: Self) {
+      
+      inline def setBlockRemain(value: Double): Self = StObject.set(x, "blockRemain", value.asInstanceOf[js.Any])
+      
+      inline def setExtended(value: Any): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
+      
+      inline def setGlobalExtended(value: Any): Self = StObject.set(x, "globalExtended", value.asInstanceOf[js.Any])
+      
+      inline def setIgnore(value: Boolean): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      
+      inline def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      
+      inline def setRemain(value: Double): Self = StObject.set(x, "remain", value.asInstanceOf[js.Any])
+    }
   }
   
   trait ReplaceOptions extends StObject {

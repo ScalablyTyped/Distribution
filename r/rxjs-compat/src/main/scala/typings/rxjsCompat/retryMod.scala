@@ -10,6 +10,6 @@ object retryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def retry[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("retry")().asInstanceOf[js.Any]
-  inline def retry[T](count: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("retry")(count.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def retry[T](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("retry")().asInstanceOf[Any]
+  inline def retry[T](count: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("retry")(count.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

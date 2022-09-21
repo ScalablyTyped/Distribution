@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-debounce
 
-Typings are for version 4.0.0
+Typings are for version 8.0.4
 
 ## Library description:
 Debounce hook for react
@@ -10,10 +10,10 @@ Debounce hook for react
 | ------------------ | :-------------: |
 | Full name          | use-debounce |
 | Keywords           | debounce, react-hook, react |
-| # releases         | 44 |
-| # dependents       | 156 |
-| # downloads        | 11518266 |
-| # stars            | 0 |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 3559406.6666666665 |
+| # stars            | 1971.0 |
 
 ## Links
 - [Homepage](https://github.com/xnimorz/use-debounce#readme)

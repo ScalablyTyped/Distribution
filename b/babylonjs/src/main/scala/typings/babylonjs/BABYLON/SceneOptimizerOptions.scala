@@ -14,9 +14,12 @@ trait SceneOptimizerOptions extends StObject {
     * @param priority defines the priority of this optimization (0 by default which means first in the list)
     * @returns the current SceneOptimizerOptions
     */
-  def addCustomOptimization(onApply: js.Function1[/* scene */ Scene, Boolean], onGetDescription: js.Function0[String]): SceneOptimizerOptions = js.native
   def addCustomOptimization(
-    onApply: js.Function1[/* scene */ Scene, Boolean],
+    onApply: js.Function2[/* scene */ Scene, /* optimizer */ SceneOptimizer, Boolean],
+    onGetDescription: js.Function0[String]
+  ): SceneOptimizerOptions = js.native
+  def addCustomOptimization(
+    onApply: js.Function2[/* scene */ Scene, /* optimizer */ SceneOptimizer, Boolean],
     onGetDescription: js.Function0[String],
     priority: Double
   ): SceneOptimizerOptions = js.native
@@ -39,7 +42,7 @@ trait SceneOptimizerOptions extends StObject {
   var targetFrameRate: Double = js.native
   
   /**
-    * Defines the interval between two checkes (2000ms by default)
+    * Defines the interval between two checks (2000ms by default)
     */
   var trackerDuration: Double = js.native
 }

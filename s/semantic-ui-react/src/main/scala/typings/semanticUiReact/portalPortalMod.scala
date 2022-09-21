@@ -15,14 +15,14 @@ object portalPortalMod {
   
   @JSImport("semantic-ui-react/dist/commonjs/addons/Portal/Portal", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PortalProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PortalProps, js.Object, Any]
   object default {
     
     /* was `typeof PortalInner` */
     @JSImport("semantic-ui-react/dist/commonjs/addons/Portal/Portal", "default.Inner")
     @js.native
-    class Inner ()
+    open class Inner ()
       extends typings.semanticUiReact.portalInnerMod.default
   }
   
@@ -31,12 +31,12 @@ object portalPortalMod {
     /* was `typeof PortalInner` */
     type Inner = typings.semanticUiReact.portalInnerMod.default
   }
-  type Portal = Component[PortalProps, js.Object, js.Any]
+  type Portal = Component[PortalProps, js.Object, Any]
   
   trait PortalProps
     extends StObject
        with StrictPortalProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object PortalProps {
     
     inline def apply(): PortalProps = {
@@ -79,7 +79,7 @@ object portalPortalMod {
     var eventPool: js.UndefOr[String] = js.undefined
     
     /** The node where the portal should mount. */
-    var mountNode: js.UndefOr[js.Any] = js.undefined
+    var mountNode: js.UndefOr[Any] = js.undefined
     
     /** Milliseconds to wait before opening on mouse over */
     var mouseEnterDelay: js.UndefOr[Double] = js.undefined
@@ -139,7 +139,7 @@ object portalPortalMod {
     var trigger: js.UndefOr[ReactNode] = js.undefined
     
     /** Called with a ref to the trigger node. */
-    var triggerRef: js.UndefOr[Ref[js.Any]] = js.undefined
+    var triggerRef: js.UndefOr[Ref[Any]] = js.undefined
   }
   object StrictPortalProps {
     
@@ -186,7 +186,7 @@ object portalPortalMod {
       
       inline def setEventPoolUndefined: Self = StObject.set(x, "eventPool", js.undefined)
       
-      inline def setMountNode(value: js.Any): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
+      inline def setMountNode(value: Any): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
       
       inline def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
       
@@ -232,9 +232,9 @@ object portalPortalMod {
       
       inline def setTrigger(value: ReactNode): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      inline def setTriggerRef(value: Ref[js.Any]): Self = StObject.set(x, "triggerRef", value.asInstanceOf[js.Any])
+      inline def setTriggerRef(value: Ref[Any]): Self = StObject.set(x, "triggerRef", value.asInstanceOf[js.Any])
       
-      inline def setTriggerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "triggerRef", js.Any.fromFunction1(value))
+      inline def setTriggerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "triggerRef", js.Any.fromFunction1(value))
       
       inline def setTriggerRefNull: Self = StObject.set(x, "triggerRef", null)
       

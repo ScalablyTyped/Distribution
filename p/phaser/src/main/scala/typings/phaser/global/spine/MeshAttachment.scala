@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.MeshAttachment")
 @js.native
-class MeshAttachment protected ()
+open class MeshAttachment protected ()
   extends StObject
      with typings.phaser.spine.MeshAttachment {
   def this(name: String) = this()
@@ -59,7 +59,7 @@ class MeshAttachment protected ()
   override def newLinkedMesh(): typings.phaser.spine.MeshAttachment = js.native
   
   /* private */ /* CompleteClass */
-  var parentMesh: js.Any = js.native
+  var parentMesh: Any = js.native
   
   /* CompleteClass */
   var path: String = js.native

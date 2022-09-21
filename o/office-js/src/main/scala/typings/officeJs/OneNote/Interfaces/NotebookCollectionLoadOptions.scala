@@ -5,68 +5,71 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of notebooks.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 trait NotebookCollectionLoadOptions extends StObject {
   
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: The url of the site where this notebook is located. Read only
     *
-    * For EACH ITEM in the collection: The url of the site that this notebook is located. Read only
-    *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var baseUrl: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The client url of the notebook. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var clientUrl: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the ID of the notebook. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: True if the notebook is not created by the user (i.e., 'Misplaced Sections'). Read only
     *
-    * For EACH ITEM in the collection: True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
-    *
+    * @remarks
     * [Api set: OneNoteApi 1.2]
     */
   var isVirtual: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the name of the notebook. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The section groups in the notebook. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var sectionGroups: js.UndefOr[SectionGroupCollectionLoadOptions] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: The sections of the notebook. Read only
     *
-    * For EACH ITEM in the collection: The the sections of the notebook. Read only
-    *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var sections: js.UndefOr[SectionCollectionLoadOptions] = js.undefined

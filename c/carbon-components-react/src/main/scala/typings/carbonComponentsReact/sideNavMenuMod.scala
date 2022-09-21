@@ -20,19 +20,19 @@ object sideNavMenuMod extends Shortcut {
   
   @JSImport("carbon-components-react/lib/components/UIShell/SideNavMenu", "SideNavMenu")
   @js.native
-  class SideNavMenu protected ()
-    extends Component[SideNavMenuProps, js.Object, js.Any] {
+  open class SideNavMenu protected ()
+    extends Component[SideNavMenuProps, js.Object, Any] {
     def this(props: SideNavMenuProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SideNavMenuProps, context: js.Any) = this()
+    def this(props: SideNavMenuProps, context: Any) = this()
   }
   
   trait SideNavMenuProps
     extends StObject
-       with RenderIconProps[js.Any]
+       with RenderIconProps[Any]
        with SideNavSharedProps
        with SideNavSizingProps {
     

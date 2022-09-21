@@ -1,7 +1,7 @@
 
 # Scala.js typings for fkill
 
-Typings are for version 7.0.1
+Typings are for version 8.0.1
 
 ## Library description:
 Fabulously kill processes. Cross-platform.
@@ -11,9 +11,9 @@ Fabulously kill processes. Cross-platform.
 | Full name          | fkill |
 | Keywords           | fkill, kill, killing, killall, taskkill, sigkill, sigterm, force, exit, zap, die, force, ps, proc, terminate |
 | # releases         | 7 |
-| # dependents       | 114 |
-| # downloads        | 8014095 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 687841.0 |
+| # stars            | 660.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/fkill#readme)

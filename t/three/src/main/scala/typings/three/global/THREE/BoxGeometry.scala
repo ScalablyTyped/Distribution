@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.BoxGeometry")
 @js.native
-class BoxGeometry protected ()
+open class BoxGeometry protected ()
   extends typings.three.mod.BoxGeometry {
   /**
-  	 * @param [width=1] — Width of the sides on the X axis.
-  	 * @param [height=1] — Height of the sides on the Y axis.
-  	 * @param [depth=1] — Depth of the sides on the Z axis.
-  	 * @param [widthSegments=1] — Number of segmented faces along the width of the sides.
-  	 * @param [heightSegments=1] — Number of segmented faces along the height of the sides.
-  	 * @param [depthSegments=1] — Number of segmented faces along the depth of the sides.
-  	 */
+    * @param [width=1] — Width of the sides on the X axis.
+    * @param [height=1] — Height of the sides on the Y axis.
+    * @param [depth=1] — Depth of the sides on the Z axis.
+    * @param [widthSegments=1] — Number of segmented faces along the width of the sides.
+    * @param [heightSegments=1] — Number of segmented faces along the height of the sides.
+    * @param [depthSegments=1] — Number of segmented faces along the depth of the sides.
+    */
   def this(
     width: js.UndefOr[Double],
     height: js.UndefOr[Double],
@@ -24,4 +24,13 @@ class BoxGeometry protected ()
     heightSegments: js.UndefOr[Double],
     depthSegments: js.UndefOr[Double]
   ) = this()
+}
+/* static members */
+object BoxGeometry {
+  
+  @JSGlobal("THREE.BoxGeometry")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromJSON(data: Any): typings.three.boxGeometryMod.BoxGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.boxGeometryMod.BoxGeometry]
 }

@@ -23,7 +23,7 @@ trait DataProvider[K, D]
   def fetchFirst(): AsyncIterable[FetchListResult[K, D]] = js.native
   def fetchFirst(parameters: FetchListParameters[D]): AsyncIterable[FetchListResult[K, D]] = js.native
   
-  def getCapability(capabilityName: String): js.Any = js.native
+  def getCapability(capabilityName: String): Any = js.native
   
   def getTotalSize(): js.Promise[Double] = js.native
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("web3-core", "WalletBase")
 @js.native
-class WalletBase protected ()
+open class WalletBase protected ()
   extends StObject
      with /* key */ NumberDictionary[Account] {
   def this(accounts: AccountsBase) = this()

@@ -11,9 +11,9 @@ Service Worker Toolbox provides some simple helpers for use in creating your own
 | Full name          | sw-toolbox |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 159 |
-| # downloads        | 11967100 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 552211.6666666666 |
+| # stars            | 3636.0 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChrome/sw-toolbox#readme)

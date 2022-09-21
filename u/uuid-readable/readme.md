@@ -11,9 +11,9 @@ Easy to Remember, Readable UUIDs, that are Shakespearean gramatically correct se
 | Full name          | uuid-readable |
 | Keywords           | id, uuid, shortid, readable-id, shakespeare, unique, universal, identifier, readable, sentence, uuid-v4, uuid-v5 |
 | # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 2097 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 7159.0 |
+| # stars            | 701.0 |
 
 ## Links
 - [Homepage](https://github.com/Debdut/uuid-readable#readme)

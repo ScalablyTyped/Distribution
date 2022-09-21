@@ -43,7 +43,7 @@ object Measure {
     
     inline def setAvailableAggregationsUndefined: Self = StObject.set(x, "availableAggregations", js.undefined)
     
-    inline def setAvailableAggregationsVarargs(value: String*): Self = StObject.set(x, "availableAggregations", js.Array(value :_*))
+    inline def setAvailableAggregationsVarargs(value: String*): Self = StObject.set(x, "availableAggregations", js.Array(value*))
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

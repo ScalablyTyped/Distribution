@@ -9,12 +9,12 @@ trait SchemaInstancesSetServiceAccountRequest extends StObject {
   /**
     * Email address of the service account.
     */
-  var email: js.UndefOr[String] = js.undefined
+  var email: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The list of scopes to be made available for this service account.
     */
-  var scopes: js.UndefOr[js.Array[String]] = js.undefined
+  var scopes: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaInstancesSetServiceAccountRequest {
   
@@ -27,12 +27,16 @@ object SchemaInstancesSetServiceAccountRequest {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
+    inline def setEmailNull: Self = StObject.set(x, "email", null)
+    
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
+    inline def setScopesNull: Self = StObject.set(x, "scopes", null)
+    
     inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
-    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
   }
 }

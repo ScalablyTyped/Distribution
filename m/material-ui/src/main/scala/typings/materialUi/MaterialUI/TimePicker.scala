@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait TimePicker
-  extends Component[TimePickerProps, js.Object, js.Any] {
+  extends Component[TimePickerProps, js.Object, Any] {
   
   def focus(): Unit = js.native
   

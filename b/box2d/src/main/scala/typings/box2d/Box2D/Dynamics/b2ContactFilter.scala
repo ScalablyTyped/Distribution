@@ -14,7 +14,7 @@ trait b2ContactFilter extends StObject {
     * @param userData User provided data.  Comments indicate that this might be a b2Fixture.
     * @return True if the fixture should be considered for ray intersection, otherwise false.
     **/
-  def RayCollide(userData: js.Any): Boolean
+  def RayCollide(userData: Any): Boolean
   
   /**
     * Return true if contact calculations should be performed between these two fixtures.
@@ -27,14 +27,14 @@ trait b2ContactFilter extends StObject {
 }
 object b2ContactFilter {
   
-  inline def apply(RayCollide: js.Any => Boolean, ShouldCollide: (b2Fixture, b2Fixture) => Boolean): b2ContactFilter = {
+  inline def apply(RayCollide: Any => Boolean, ShouldCollide: (b2Fixture, b2Fixture) => Boolean): b2ContactFilter = {
     val __obj = js.Dynamic.literal(RayCollide = js.Any.fromFunction1(RayCollide), ShouldCollide = js.Any.fromFunction2(ShouldCollide))
     __obj.asInstanceOf[b2ContactFilter]
   }
   
   extension [Self <: b2ContactFilter](x: Self) {
     
-    inline def setRayCollide(value: js.Any => Boolean): Self = StObject.set(x, "RayCollide", js.Any.fromFunction1(value))
+    inline def setRayCollide(value: Any => Boolean): Self = StObject.set(x, "RayCollide", js.Any.fromFunction1(value))
     
     inline def setShouldCollide(value: (b2Fixture, b2Fixture) => Boolean): Self = StObject.set(x, "ShouldCollide", js.Any.fromFunction2(value))
   }

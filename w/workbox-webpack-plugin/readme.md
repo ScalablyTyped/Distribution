@@ -10,10 +10,10 @@ A plugin for your Webpack build process, helping you generate a manifest of loca
 | ------------------ | :-------------: |
 | Full name          | workbox-webpack-plugin |
 | Keywords           | workbox, workboxjs, webpack, service worker, caching, fetch requests, offline, file manifest |
-| # releases         | 30 |
-| # dependents       | 1986 |
-| # downloads        | 107515487 |
-| # stars            | 5 |
+| # releases         | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6159615E7 |
+| # stars            | 10909.0 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChrome/workbox)

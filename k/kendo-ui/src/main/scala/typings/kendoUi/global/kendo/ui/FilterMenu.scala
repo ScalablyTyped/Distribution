@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.FilterMenu")
 @js.native
-class FilterMenu protected ()
+open class FilterMenu protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.FilterMenu {
   def this(element: Element) = this()

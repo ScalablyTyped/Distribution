@@ -11,8 +11,6 @@ import typings.fetchMock.fetchMockStrings.HEAD
 import typings.fetchMock.fetchMockStrings.POST
 import typings.fetchMock.fetchMockStrings.PUT
 import typings.std.Array
-import typings.std.Error
-import typings.std.RegExp
 import typings.std.Request
 import typings.std.RequestInit
 import typings.std.Response
@@ -465,7 +463,7 @@ object mod extends Shortcut {
     *  url and opts fetch() is called with (or, if fetch() was called with one,
     *  the Request instance)
     */
-  type MockMatcher = String | RegExp | MockMatcherFunction
+  type MockMatcher = String | js.RegExp | MockMatcherFunction
   
   /**
     * Mock matcher function
@@ -786,7 +784,7 @@ object mod extends Shortcut {
       * If this property is present then a Promise rejected with the value
       * of throws is returned
       */
-    var throws: js.UndefOr[Error] = js.undefined
+    var throws: js.UndefOr[js.Error] = js.undefined
   }
   object MockResponseObject {
     
@@ -813,7 +811,7 @@ object mod extends Shortcut {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setThrows(value: Error): Self = StObject.set(x, "throws", value.asInstanceOf[js.Any])
+      inline def setThrows(value: js.Error): Self = StObject.set(x, "throws", value.asInstanceOf[js.Any])
       
       inline def setThrowsUndefined: Self = StObject.set(x, "throws", js.undefined)
     }

@@ -9,10 +9,10 @@ Request wrapper providing cookie and header forwarding
 | ------------------ | :-------------: |
 | Full name          | easy-api-request |
 | Keywords           | request, api, wrap, headers, cookies |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 932 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 95.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/DeadAlready/easy-api-request)

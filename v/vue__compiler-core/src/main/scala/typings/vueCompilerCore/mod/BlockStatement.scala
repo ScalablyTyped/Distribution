@@ -27,7 +27,7 @@ object BlockStatement {
     
     inline def setBody(value: js.Array[JSChildNode | IfStatement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setBodyVarargs(value: (JSChildNode | IfStatement)*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: (JSChildNode | IfStatement)*): Self = StObject.set(x, "body", js.Array(value*))
     
     inline def setType(value: `21`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

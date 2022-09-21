@@ -1,7 +1,7 @@
 
 # Scala.js typings for currency-formatter
 
-Typings are for version 1.3
+Typings are for version 1.5
 
 ## Library description:
 A simple Javascript utility that helps you to display currency properly
@@ -10,10 +10,10 @@ A simple Javascript utility that helps you to display currency properly
 | ------------------ | :-------------: |
 | Full name          | currency-formatter |
 | Keywords           | format, currency, money |
-| # releases         | 4 |
-| # dependents       | 64 |
-| # downloads        | 3556065 |
-| # stars            | 8 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 311874.6666666667 |
+| # stars            | 206.0 |
 
 ## Links
 - [Homepage](https://github.com/smirzaei/currency-formatter#readme)

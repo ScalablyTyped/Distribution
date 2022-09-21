@@ -47,7 +47,7 @@ object Predicate {
     
     inline def setNodes(value: js.Array[QueryExpr]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: QueryExpr*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: QueryExpr*): Self = StObject.set(x, "nodes", js.Array(value*))
     
     inline def setPredicate(value: String): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
     

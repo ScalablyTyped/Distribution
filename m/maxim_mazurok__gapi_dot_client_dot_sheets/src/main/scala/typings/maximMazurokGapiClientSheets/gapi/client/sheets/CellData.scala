@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CellData extends StObject {
   
   /**
-    * Output only. Information about a data source formula on the cell. The field is set if user_entered_value is a formula referencing some DATA_SOURCE sheet, e.g
+    * Output only. Information about a data source formula on the cell. The field is set if user_entered_value is a formula referencing some DATA_SOURCE sheet, e.g.
     * `=SUM(DataSheet!Column)`.
     */
   var dataSourceFormula: js.UndefOr[DataSourceFormula] = js.undefined
@@ -35,7 +35,8 @@ trait CellData extends StObject {
   
   /**
     * A hyperlink this cell points to, if any. If the cell contains multiple hyperlinks, this field will be empty. This field is read-only. To set it, use a `=HYPERLINK` formula in the
-    * userEnteredValue.formulaValue field.
+    * userEnteredValue.formulaValue field. A cell-level link can also be set from the userEnteredFormat.textFormat field. Alternatively, set a hyperlink in the textFormatRun.format.link
+    * field that spans the entire cell.
     */
   var hyperlink: js.UndefOr[String] = js.undefined
   
@@ -110,7 +111,7 @@ object CellData {
     
     inline def setTextFormatRunsUndefined: Self = StObject.set(x, "textFormatRuns", js.undefined)
     
-    inline def setTextFormatRunsVarargs(value: TextFormatRun*): Self = StObject.set(x, "textFormatRuns", js.Array(value :_*))
+    inline def setTextFormatRunsVarargs(value: TextFormatRun*): Self = StObject.set(x, "textFormatRuns", js.Array(value*))
     
     inline def setUserEnteredFormat(value: CellFormat): Self = StObject.set(x, "userEnteredFormat", value.asInstanceOf[js.Any])
     

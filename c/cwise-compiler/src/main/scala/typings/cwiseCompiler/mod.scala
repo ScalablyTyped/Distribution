@@ -1,7 +1,8 @@
 package typings.cwiseCompiler
 
 import typings.cwiseParser.mod.CompiledRoutine
-import typings.ndarray.mod.ndarray
+import typings.ndarray.mod.Data
+import typings.ndarray.mod.NdArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,15 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(user_args: UserArgs): js.Function3[
-    /* a */ ndarray[Double], 
-    /* b */ ndarray[Double], 
-    /* repeated */ ndarray[Double], 
-    ndarray[Double]
+    /* a */ NdArray[Data[Double]], 
+    /* b */ NdArray[Data[Double]], 
+    /* repeated */ NdArray[Data[Double]], 
+    NdArray[Data[Double]]
   ] = ^.asInstanceOf[js.Dynamic].apply(user_args.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
-    /* a */ ndarray[Double], 
-    /* b */ ndarray[Double], 
-    /* repeated */ ndarray[Double], 
-    ndarray[Double]
+    /* a */ NdArray[Data[Double]], 
+    /* b */ NdArray[Data[Double]], 
+    /* repeated */ NdArray[Data[Double]], 
+    NdArray[Data[Double]]
   ]]
   
   @JSImport("cwise-compiler", JSImport.Namespace)
@@ -75,7 +76,7 @@ object mod {
       
       inline def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
     }
   }
   
@@ -137,15 +138,15 @@ object mod {
       
       inline def setArgTypes(value: js.Array[ArgType]): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
       
-      inline def setArgTypesVarargs(value: ArgType*): Self = StObject.set(x, "argTypes", js.Array(value :_*))
+      inline def setArgTypesVarargs(value: ArgType*): Self = StObject.set(x, "argTypes", js.Array(value*))
       
       inline def setArrayArgs(value: js.Array[Double]): Self = StObject.set(x, "arrayArgs", value.asInstanceOf[js.Any])
       
-      inline def setArrayArgsVarargs(value: Double*): Self = StObject.set(x, "arrayArgs", js.Array(value :_*))
+      inline def setArrayArgsVarargs(value: Double*): Self = StObject.set(x, "arrayArgs", js.Array(value*))
       
       inline def setArrayBlockIndices(value: js.Array[Double]): Self = StObject.set(x, "arrayBlockIndices", value.asInstanceOf[js.Any])
       
-      inline def setArrayBlockIndicesVarargs(value: Double*): Self = StObject.set(x, "arrayBlockIndices", js.Array(value :_*))
+      inline def setArrayBlockIndicesVarargs(value: Double*): Self = StObject.set(x, "arrayBlockIndices", js.Array(value*))
       
       inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
@@ -159,15 +160,15 @@ object mod {
       
       inline def setIndexArgs(value: js.Array[Double]): Self = StObject.set(x, "indexArgs", value.asInstanceOf[js.Any])
       
-      inline def setIndexArgsVarargs(value: Double*): Self = StObject.set(x, "indexArgs", js.Array(value :_*))
+      inline def setIndexArgsVarargs(value: Double*): Self = StObject.set(x, "indexArgs", js.Array(value*))
       
       inline def setOffsetArgIndex(value: js.Array[Double]): Self = StObject.set(x, "offsetArgIndex", value.asInstanceOf[js.Any])
       
-      inline def setOffsetArgIndexVarargs(value: Double*): Self = StObject.set(x, "offsetArgIndex", js.Array(value :_*))
+      inline def setOffsetArgIndexVarargs(value: Double*): Self = StObject.set(x, "offsetArgIndex", js.Array(value*))
       
       inline def setOffsetArgs(value: js.Array[OffsetArg]): Self = StObject.set(x, "offsetArgs", value.asInstanceOf[js.Any])
       
-      inline def setOffsetArgsVarargs(value: OffsetArg*): Self = StObject.set(x, "offsetArgs", js.Array(value :_*))
+      inline def setOffsetArgsVarargs(value: OffsetArg*): Self = StObject.set(x, "offsetArgs", js.Array(value*))
       
       inline def setPost(value: CompiledRoutine): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
       
@@ -175,15 +176,15 @@ object mod {
       
       inline def setScalarArgs(value: js.Array[Double]): Self = StObject.set(x, "scalarArgs", value.asInstanceOf[js.Any])
       
-      inline def setScalarArgsVarargs(value: Double*): Self = StObject.set(x, "scalarArgs", js.Array(value :_*))
+      inline def setScalarArgsVarargs(value: Double*): Self = StObject.set(x, "scalarArgs", js.Array(value*))
       
       inline def setShapeArgs(value: js.Array[Double]): Self = StObject.set(x, "shapeArgs", value.asInstanceOf[js.Any])
       
-      inline def setShapeArgsVarargs(value: Double*): Self = StObject.set(x, "shapeArgs", js.Array(value :_*))
+      inline def setShapeArgsVarargs(value: Double*): Self = StObject.set(x, "shapeArgs", js.Array(value*))
       
       inline def setShimArgs(value: js.Array[String]): Self = StObject.set(x, "shimArgs", value.asInstanceOf[js.Any])
       
-      inline def setShimArgsVarargs(value: String*): Self = StObject.set(x, "shimArgs", js.Array(value :_*))
+      inline def setShimArgsVarargs(value: String*): Self = StObject.set(x, "shimArgs", js.Array(value*))
     }
   }
   
@@ -224,7 +225,7 @@ object mod {
       
       inline def setArgs(value: js.Array[ArgType]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: ArgType*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: ArgType*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       

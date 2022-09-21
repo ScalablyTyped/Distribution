@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_lifesciences
 
-Typings are for version 2.0.20201105
+Typings are for version 2.0.20220805
 
 ## Library description:
 TypeScript typings for Cloud Life Sciences API v2beta
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Life Sciences API v2beta
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.lifesciences |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 1128 |
-| # stars            | 0 |
+| # releases         | 59 |
+| # dependents       | 0.0 |
+| # downloads        | 797.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

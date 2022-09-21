@@ -1,6 +1,5 @@
 package typings.cssTree.mod
 
-import typings.std.SyntaxError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,13 +42,13 @@ trait DefinitionSyntax_ extends StObject {
   /**
     * Wrapper for syntax errors
     */
-  var syntaxError: SyntaxError = js.native
+  var syntaxError: js.SyntaxError = js.native
   
   /**
     * Walks definition syntax AST
     */
   def walk(node: DSNode, options: DSWalkEnterOrLeaveFn): Unit = js.native
-  def walk(node: DSNode, options: DSWalkEnterOrLeaveFn, context: js.Any): Unit = js.native
+  def walk(node: DSNode, options: DSWalkEnterOrLeaveFn, context: Any): Unit = js.native
   def walk(node: DSNode, options: DSWalkOptions): Unit = js.native
-  def walk(node: DSNode, options: DSWalkOptions, context: js.Any): Unit = js.native
+  def walk(node: DSNode, options: DSWalkOptions, context: Any): Unit = js.native
 }

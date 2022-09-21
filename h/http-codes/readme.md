@@ -10,10 +10,10 @@ Map of HTTP status messages to codes based on Node's built-in (inverse) map
 | ------------------ | :-------------: |
 | Full name          | http-codes |
 | Keywords           | http, status, codes, messages, builtin, map, javascript, nodejs, node |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 186020 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10600.0 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/flesler/node-http-codes#readme)

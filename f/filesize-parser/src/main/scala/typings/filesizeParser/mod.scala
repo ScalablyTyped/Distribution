@@ -10,6 +10,8 @@ object mod {
   
   inline def apply(size: String): Double = ^.asInstanceOf[js.Dynamic].apply(size.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def apply(size: String, options: Options): Double = (^.asInstanceOf[js.Dynamic].apply(size.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(size: Double): Double = ^.asInstanceOf[js.Dynamic].apply(size.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(size: Double, options: Options): Double = (^.asInstanceOf[js.Dynamic].apply(size.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("filesize-parser", JSImport.Namespace)
   @js.native

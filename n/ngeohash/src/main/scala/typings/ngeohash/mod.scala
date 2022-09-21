@@ -48,6 +48,6 @@ object mod {
   
   inline def neighbors(hashstring: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("neighbors")(hashstring.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  inline def neighborsInt(hashinteger: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("neighbors_int")(hashinteger.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def neighborsInt(hashinteger: Double, bitDepth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("neighbors_int")(hashinteger.asInstanceOf[js.Any], bitDepth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def neighborsInt(hashinteger: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("neighbors_int")(hashinteger.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def neighborsInt(hashinteger: Double, bitDepth: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("neighbors_int")(hashinteger.asInstanceOf[js.Any], bitDepth.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

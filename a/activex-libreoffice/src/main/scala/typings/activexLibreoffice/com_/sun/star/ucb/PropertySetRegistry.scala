@@ -18,13 +18,13 @@ object PropertySetRegistry {
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
-    getByName: String => js.Any,
+    getByName: String => Any,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
     openPropertySet: (String, Boolean) => XPersistentPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertySet: String => Unit
   ): PropertySetRegistry = {

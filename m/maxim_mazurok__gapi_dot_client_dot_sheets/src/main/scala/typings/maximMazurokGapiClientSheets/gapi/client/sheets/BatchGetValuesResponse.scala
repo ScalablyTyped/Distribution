@@ -29,6 +29,6 @@ object BatchGetValuesResponse {
     
     inline def setValueRangesUndefined: Self = StObject.set(x, "valueRanges", js.undefined)
     
-    inline def setValueRangesVarargs(value: ValueRange*): Self = StObject.set(x, "valueRanges", js.Array(value :_*))
+    inline def setValueRangesVarargs(value: ValueRange*): Self = StObject.set(x, "valueRanges", js.Array(value*))
   }
 }

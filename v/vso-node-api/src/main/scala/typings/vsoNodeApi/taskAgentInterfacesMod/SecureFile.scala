@@ -1,7 +1,6 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,13 +10,13 @@ trait SecureFile extends StObject {
   
   var createdBy: IdentityRef
   
-  var createdOn: Date
+  var createdOn: js.Date
   
   var id: String
   
   var modifiedBy: IdentityRef
   
-  var modifiedOn: Date
+  var modifiedOn: js.Date
   
   var name: String
   
@@ -29,10 +28,10 @@ object SecureFile {
   
   inline def apply(
     createdBy: IdentityRef,
-    createdOn: Date,
+    createdOn: js.Date,
     id: String,
     modifiedBy: IdentityRef,
-    modifiedOn: Date,
+    modifiedOn: js.Date,
     name: String,
     properties: StringDictionary[String],
     ticket: String
@@ -45,13 +44,13 @@ object SecureFile {
     
     inline def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setModifiedBy(value: IdentityRef): Self = StObject.set(x, "modifiedBy", value.asInstanceOf[js.Any])
     
-    inline def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
+    inline def setModifiedOn(value: js.Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

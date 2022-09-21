@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SetStateResponse extends StObject {
   
-  var state: js.Any
+  var state: Any
 }
 object SetStateResponse {
   
-  inline def apply(state: js.Any): SetStateResponse = {
+  inline def apply(state: Any): SetStateResponse = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetStateResponse]
   }
   
   extension [Self <: SetStateResponse](x: Self) {
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

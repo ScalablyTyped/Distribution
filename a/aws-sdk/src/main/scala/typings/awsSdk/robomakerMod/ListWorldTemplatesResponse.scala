@@ -33,6 +33,6 @@ object ListWorldTemplatesResponse {
     
     inline def setTemplateSummariesUndefined: Self = StObject.set(x, "templateSummaries", js.undefined)
     
-    inline def setTemplateSummariesVarargs(value: TemplateSummary*): Self = StObject.set(x, "templateSummaries", js.Array(value :_*))
+    inline def setTemplateSummariesVarargs(value: TemplateSummary*): Self = StObject.set(x, "templateSummaries", js.Array(value*))
   }
 }

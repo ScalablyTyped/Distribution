@@ -8,5 +8,5 @@ object hashKeyRangeMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/_HashKeyRange", "_HashKeyRange")
   @js.native
-  val HashKeyRange: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val HashKeyRange: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -17,12 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param element The DOM element that will host the control.
   * @param options The set of properties and values to apply to the new MenuCommand.
   **/
-class MenuCommand ()
+open class MenuCommand ()
   extends StObject
      with typings.winjs.WinJS.UI.MenuCommand {
   def this(element: HTMLElement) = this()
-  def this(element: Unit, options: js.Any) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+  def this(element: Unit, options: Any) = this()
+  def this(element: HTMLElement, options: Any) = this()
 }
 object MenuCommand {
   

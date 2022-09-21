@@ -13,7 +13,7 @@ object credentialProviderChainMod {
   /**
     * Creates a new CredentialProviderChain with a default set of providers specified by defaultProviders.
     */
-  class CredentialProviderChain () extends StObject {
+  open class CredentialProviderChain () extends StObject {
     def this(providers: js.Array[provider]) = this()
     
     /**

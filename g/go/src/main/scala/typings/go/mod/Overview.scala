@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @param {string} id A reference to a DIV by its ID as a string.
   */
-class Overview () extends Diagram {
+open class Overview () extends Diagram {
   /**
     * @param {HTMLDivElement} div A reference to a DIV element in the DOM.
     */

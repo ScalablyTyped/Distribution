@@ -5,7 +5,6 @@ import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.LATEST
 import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.TRIM_HORIZON
 import typings.awsSdkClientLambdaNode.inputTypesUnionMod._InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ object typesCreateEventSourceMappingInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -66,7 +65,7 @@ object typesCreateEventSourceMappingInputMod {
     /**
       * <p>The timestamp of the data record from which to start reading. Used with <a href="http://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetShardIterator.html#Kinesis-GetShardIterator-request-ShardIteratorType">shard iterator type</a> AT_TIMESTAMP. If a record with this exact timestamp does not exist, the iterator returned is for the next (later) record. If the timestamp is older than the current trim horizon, the iterator returned is for the oldest untrimmed data record (TRIM_HORIZON). Valid only for <a href="http://docs.aws.amazon.com/streams/latest/dev/amazon-kinesis-streams.html">Kinesis streams</a>. </p>
       */
-    var StartingPositionTimestamp: js.UndefOr[Date | String | Double] = js.undefined
+    var StartingPositionTimestamp: js.UndefOr[js.Date | String | Double] = js.undefined
   }
   object CreateEventSourceMappingInput {
     
@@ -82,7 +81,7 @@ object typesCreateEventSourceMappingInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -105,7 +104,7 @@ object typesCreateEventSourceMappingInputMod {
       
       inline def setStartingPosition(value: TRIM_HORIZON | LATEST | AT_TIMESTAMP | String): Self = StObject.set(x, "StartingPosition", value.asInstanceOf[js.Any])
       
-      inline def setStartingPositionTimestamp(value: Date | String | Double): Self = StObject.set(x, "StartingPositionTimestamp", value.asInstanceOf[js.Any])
+      inline def setStartingPositionTimestamp(value: js.Date | String | Double): Self = StObject.set(x, "StartingPositionTimestamp", value.asInstanceOf[js.Any])
       
       inline def setStartingPositionTimestampUndefined: Self = StObject.set(x, "StartingPositionTimestamp", js.undefined)
       

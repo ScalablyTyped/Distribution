@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-imgix", "Source")
 @js.native
-class Source protected ()
-  extends Component[SharedImigixAndSourceProps, js.Object, js.Any] {
-  def this(props: SharedImigixAndSourceProps) = this()
+open class Source protected ()
+  extends Component[SharedImgixAndSourceProps, js.Object, Any] {
+  def this(props: SharedImgixAndSourceProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SharedImigixAndSourceProps, context: js.Any) = this()
+  def this(props: SharedImgixAndSourceProps, context: Any) = this()
 }

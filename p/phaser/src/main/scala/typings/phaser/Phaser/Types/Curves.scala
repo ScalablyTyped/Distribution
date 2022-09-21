@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.Types
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,17 +16,17 @@ object Curves {
     /**
       * The end angle of the ellipse, in degrees.
       */
-    var endAngle: js.UndefOr[integer] = js.undefined
+    var endAngle: js.UndefOr[Double] = js.undefined
     
     /**
       * The rotation of the ellipse, in degrees.
       */
-    var rotation: js.UndefOr[integer] = js.undefined
+    var rotation: js.UndefOr[Double] = js.undefined
     
     /**
       * The start angle of the ellipse, in degrees.
       */
-    var startAngle: js.UndefOr[integer] = js.undefined
+    var startAngle: js.UndefOr[Double] = js.undefined
     
     /**
       * The x coordinate of the ellipse.
@@ -62,15 +61,15 @@ object Curves {
       
       inline def setClockwiseUndefined: Self = StObject.set(x, "clockwise", js.undefined)
       
-      inline def setEndAngle(value: integer): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+      inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
       inline def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
       
-      inline def setRotation(value: integer): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
       inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
       
-      inline def setStartAngle(value: integer): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+      inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
       
       inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
       
@@ -116,7 +115,7 @@ object Curves {
       
       inline def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -132,17 +131,17 @@ object Curves {
     /**
       * The end angle of the ellipse, in degrees.
       */
-    var endAngle: integer
+    var endAngle: Double
     
     /**
       * The rotation of ellipse, in degrees.
       */
-    var rotation: integer
+    var rotation: Double
     
     /**
       * The start angle of the ellipse, in degrees.
       */
-    var startAngle: integer
+    var startAngle: Double
     
     /**
       * The of the curve.
@@ -173,9 +172,9 @@ object Curves {
     
     inline def apply(
       clockwise: Boolean,
-      endAngle: integer,
-      rotation: integer,
-      startAngle: integer,
+      endAngle: Double,
+      rotation: Double,
+      startAngle: Double,
       `type`: String,
       x: Double,
       xRadius: Double,
@@ -191,11 +190,11 @@ object Curves {
       
       inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
       
-      inline def setEndAngle(value: integer): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+      inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
-      inline def setRotation(value: integer): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      inline def setStartAngle(value: integer): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+      inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -250,7 +249,7 @@ object Curves {
       
       inline def setCurves(value: js.Array[JSONCurve]): Self = StObject.set(x, "curves", value.asInstanceOf[js.Any])
       
-      inline def setCurvesVarargs(value: JSONCurve*): Self = StObject.set(x, "curves", js.Array(value :_*))
+      inline def setCurvesVarargs(value: JSONCurve*): Self = StObject.set(x, "curves", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

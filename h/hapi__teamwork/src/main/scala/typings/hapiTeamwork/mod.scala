@@ -4,7 +4,6 @@ import typings.hapiTeamwork.mod.Events.Iterator
 import typings.hapiTeamwork.mod.Team.ElementOf
 import typings.hapiTeamwork.mod.Team.Options
 import typings.std.AsyncIterator
-import typings.std.Error
 import typings.std.IteratorResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +13,7 @@ object mod {
   
   @JSImport("@hapi/teamwork", "Events")
   @js.native
-  class Events[T] () extends StObject {
+  open class Events[T] () extends StObject {
     
     /**
       * Emits an event to be consumed via the iterator.
@@ -39,12 +38,12 @@ object mod {
     
     @JSImport("@hapi/teamwork", "Events.Iterator")
     @js.native
-    class Iterator[T] protected ()
+    open class Iterator[T] protected ()
       extends StObject
-         with AsyncIterator[T, js.Any, Unit] {
+         with AsyncIterator[T, Any, Unit] {
       def this(events: Events[T]) = this()
       
-      def next(): js.Promise[IteratorResult[T, js.Any]] = js.native
+      def next(): js.Promise[IteratorResult[T, Any]] = js.native
     }
   }
   
@@ -55,7 +54,7 @@ object mod {
     *
     * @param options Configuration of the team work.
     */
-  class Team[Results /* <: js.Any | js.Array[js.Any] */] () extends StObject {
+  open class Team[Results /* <: Any | js.Array[Any] */] () extends StObject {
     def this(options: Options) = this()
     
     /**
@@ -64,8 +63,8 @@ object mod {
       * @param note An optional note that will be included in the work's results. If an error is provided, the work will be immediately rejected with that error.
       */
     def attend(): Unit = js.native
+    def attend(note: js.Error): Unit = js.native
     def attend(note: ElementOf[Results]): Unit = js.native
-    def attend(note: Error): Unit = js.native
     
     /**
       * Wait for the current work to be done and start another team work.

@@ -10,10 +10,10 @@ Unified node.js error API for mysql, postgres and sqlite3
 | ------------------ | :-------------: |
 | Full name          | db-errors |
 | Keywords           | mysql, postgres, postgresql, sqlite3, error, errors, error, handling, error, handler |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 1362449 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 414093.6666666667 |
+| # stars            | 80.0 |
 
 ## Links
 - [Homepage](https://github.com/Vincit/db-errors#readme)

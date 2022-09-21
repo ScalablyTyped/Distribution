@@ -24,20 +24,20 @@ object compositionMod {
   inline def addBindingHandler(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBindingHandler")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def addBindingHandler(
     name: String,
-    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
+    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBindingHandler")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addBindingHandler(
     name: String,
-    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any,
+    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ Any,
     initOptionsFactory: js.Function5[
       /* element */ js.UndefOr[HTMLElement], 
-      /* valueAccessor */ js.UndefOr[js.Any], 
-      /* allBindingsAccessor */ js.UndefOr[js.Any], 
-      /* viewModel */ js.UndefOr[js.Any], 
+      /* valueAccessor */ js.UndefOr[Any], 
+      /* allBindingsAccessor */ js.UndefOr[Any], 
+      /* viewModel */ js.UndefOr[Any], 
       /* bindingContext */ js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ Any
       ], 
-      js.Any
+      Any
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBindingHandler")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any], initOptionsFactory.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def addBindingHandler(
@@ -45,20 +45,20 @@ object compositionMod {
     config: Unit,
     initOptionsFactory: js.Function5[
       /* element */ js.UndefOr[HTMLElement], 
-      /* valueAccessor */ js.UndefOr[js.Any], 
-      /* allBindingsAccessor */ js.UndefOr[js.Any], 
-      /* viewModel */ js.UndefOr[js.Any], 
+      /* valueAccessor */ js.UndefOr[Any], 
+      /* allBindingsAccessor */ js.UndefOr[Any], 
+      /* viewModel */ js.UndefOr[Any], 
       /* bindingContext */ js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ Any
       ], 
-      js.Any
+      Any
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBindingHandler")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any], initOptionsFactory.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def compose(
     element: HTMLElement,
     settings: CompositionContext,
-    bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any
+    bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ Any
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(element.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], bindingContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def convertTransitionToModuleId(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertTransitionToModuleId")(name.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -78,8 +78,8 @@ object compositionMod {
   def defaultTransitionName: String = js.native
   inline def defaultTransitionName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTransitionName")(x.asInstanceOf[js.Any])
   
-  inline def getParts(elements: js.Array[HTMLElement]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getParts")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def getParts(element: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getParts")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getParts(elements: js.Array[HTMLElement]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getParts")(elements.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getParts(element: HTMLElement): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getParts")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   trait CompositionContext extends StObject {
     
@@ -98,7 +98,7 @@ object compositionMod {
       ] = js.undefined
     
     var bindingContext: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ Any
       ] = js.undefined
     
     var cacheViews: js.UndefOr[Boolean] = js.undefined
@@ -113,7 +113,7 @@ object compositionMod {
     
     var mode: String
     
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     var parent: HTMLElement
     
@@ -125,7 +125,7 @@ object compositionMod {
     
     def triggerAttach(): Unit
     
-    var view: js.UndefOr[js.Any] = js.undefined
+    var view: js.UndefOr[Any] = js.undefined
     
     var viewElements: js.UndefOr[js.Array[HTMLElement]] = js.undefined
   }
@@ -162,7 +162,7 @@ object compositionMod {
       inline def setBinding(value: (/* child */ HTMLElement, /* parent */ HTMLElement, CompositionContext) => Unit): Self = StObject.set(x, "binding", js.Any.fromFunction3(value))
       
       inline def setBindingContext(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ Any
       ): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
       
       inline def setBindingContextUndefined: Self = StObject.set(x, "bindingContext", js.undefined)
@@ -183,7 +183,7 @@ object compositionMod {
       
       inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -203,13 +203,13 @@ object compositionMod {
       
       inline def setTriggerAttach(value: () => Unit): Self = StObject.set(x, "triggerAttach", js.Any.fromFunction0(value))
       
-      inline def setView(value: js.Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
       inline def setViewElements(value: js.Array[HTMLElement]): Self = StObject.set(x, "viewElements", value.asInstanceOf[js.Any])
       
       inline def setViewElementsUndefined: Self = StObject.set(x, "viewElements", js.undefined)
       
-      inline def setViewElementsVarargs(value: HTMLElement*): Self = StObject.set(x, "viewElements", js.Array(value :_*))
+      inline def setViewElementsVarargs(value: HTMLElement*): Self = StObject.set(x, "viewElements", js.Array(value*))
       
       inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     }

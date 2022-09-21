@@ -1,56 +1,136 @@
 package typings.cesium.mod
 
+import typings.cesium.mod.Entity.ConstructorOptions
+import typings.cesium.mod.EntityCollection.CollectionChangedEventCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "EntityCollection")
 @js.native
-class EntityCollection protected () extends StObject {
+open class EntityCollection () extends StObject {
   def this(owner: CompositeEntityCollection) = this()
   def this(owner: DataSource) = this()
   
+  /**
+    * Add an entity to the collection.
+    * @param entity - The entity to be added.
+    * @returns The entity that was added.
+    */
   def add(entity: Entity): Entity = js.native
+  def add(entity: ConstructorOptions): Entity = js.native
   
-  val collectionChanged: Event[js.Array[js.Any]] = js.native
+  /**
+    * Gets the event that is fired when entities are added or removed from the collection.
+    * The generated event is a {@link EntityCollection.CollectionChangedEventCallback}.
+    */
+  val collectionChanged: Event[CollectionChangedEventCallback] = js.native
   
+  /**
+    * Computes the maximum availability of the entities in the collection.
+    * If the collection contains a mix of infinitely available data and non-infinite data,
+    * it will return the interval pertaining to the non-infinite data only.  If all
+    * data is infinite, an infinite interval will be returned.
+    * @returns The availability of entities in the collection.
+    */
   def computeAvailability(): TimeInterval = js.native
   
+  /**
+    * Returns true if the provided entity is in this collection, false otherwise.
+    * @param entity - The entity.
+    * @returns true if the provided entity is in this collection, false otherwise.
+    */
   def contains(entity: Entity): Boolean = js.native
   
-  def getById(id: String): Entity = js.native
+  /**
+    * Gets an entity with the specified id.
+    * @param id - The id of the entity to retrieve.
+    * @returns The entity with the provided id or undefined if the id did not exist in the collection.
+    */
+  def getById(id: String): js.UndefOr[Entity] = js.native
   
+  /**
+    * Gets an entity with the specified id or creates it and adds it to the collection if it does not exist.
+    * @param id - The id of the entity to retrieve or create.
+    * @returns The new or existing object.
+    */
   def getOrCreateEntity(id: String): Entity = js.native
   
+  /**
+    * Gets a globally unique identifier for this collection.
+    */
   val id: String = js.native
   
+  /**
+    * Gets the owner of this entity collection, ie. the data source or composite entity collection which created it.
+    */
   val owner: DataSource | CompositeEntityCollection = js.native
   
+  /**
+    * Removes an entity from the collection.
+    * @param entity - The entity to be removed.
+    * @returns true if the item was removed, false if it did not exist in the collection.
+    */
   def remove(entity: Entity): Boolean = js.native
   
+  /**
+    * Removes all Entities from the collection.
+    */
   def removeAll(): Unit = js.native
   
+  /**
+    * Removes an entity with the provided id from the collection.
+    * @param id - The id of the entity to remove.
+    * @returns true if the item was removed, false if no item with the provided id existed in the collection.
+    */
   def removeById(id: String): Boolean = js.native
   
+  /**
+    * Resumes raising {@link EntityCollection#collectionChanged} events immediately
+    * when an item is added or removed.  Any modifications made while while events were suspended
+    * will be triggered as a single event when this function is called.
+    * This function is reference counted and can safely be called multiple times as long as there
+    * are corresponding calls to {@link EntityCollection#resumeEvents}.
+    */
   def resumeEvents(): Unit = js.native
   
+  /**
+    * Gets whether or not this entity collection should be
+    * displayed.  When true, each entity is only displayed if
+    * its own show property is also true.
+    */
   var show: Boolean = js.native
   
+  /**
+    * Prevents {@link EntityCollection#collectionChanged} events from being raised
+    * until a corresponding call is made to {@link EntityCollection#resumeEvents}, at which
+    * point a single event will be raised that covers all suspended operations.
+    * This allows for many items to be added and removed efficiently.
+    * This function can be safely called multiple times as long as there
+    * are corresponding calls to {@link EntityCollection#resumeEvents}.
+    */
   def suspendEvents(): Unit = js.native
   
+  /**
+    * Gets the array of Entity instances in the collection.
+    * This array should not be modified directly.
+    */
   val values: js.Array[Entity] = js.native
 }
 object EntityCollection {
   
-  @JSImport("cesium", "EntityCollection")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /* static member */
-  inline def collectionChangedEventCallback(
-    collection: EntityCollection,
-    added: js.Array[Entity],
-    removed: js.Array[Entity],
-    changed: js.Array[Entity]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("collectionChangedEventCallback")(collection.asInstanceOf[js.Any], added.asInstanceOf[js.Any], removed.asInstanceOf[js.Any], changed.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  /**
+    * The signature of the event generated by {@link EntityCollection#collectionChanged}.
+    * @param collection - The collection that triggered the event.
+    * @param added - The array of {@link Entity} instances that have been added to the collection.
+    * @param removed - The array of {@link Entity} instances that have been removed from the collection.
+    * @param changed - The array of {@link Entity} instances that have been modified.
+    */
+  type CollectionChangedEventCallback = js.Function4[
+    /* collection */ EntityCollection, 
+    /* added */ js.Array[Entity], 
+    /* removed */ js.Array[Entity], 
+    /* changed */ js.Array[Entity], 
+    Unit
+  ]
 }

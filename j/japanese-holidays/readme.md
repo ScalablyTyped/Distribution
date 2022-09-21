@@ -10,10 +10,10 @@ Provides utilities to manipulate japanese holidays.
 | ------------------ | :-------------: |
 | Full name          | japanese-holidays |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 101437 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 10794.333333333334 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/osamutake/japanese-holidays-js)

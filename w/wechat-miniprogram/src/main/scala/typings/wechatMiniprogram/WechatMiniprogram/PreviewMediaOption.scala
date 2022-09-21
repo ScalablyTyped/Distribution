@@ -15,6 +15,11 @@ trait PreviewMediaOption extends StObject {
   /** 接口调用失败的回调函数 */
   var fail: js.UndefOr[PreviewMediaFailCallback] = js.undefined
   
+  /** 是否显示长按菜单
+    *
+    * 最低基础库： `2.13.0` */
+  var showmenu: js.UndefOr[Boolean] = js.undefined
+  
   /** 需要预览的资源列表 */
   var sources: js.Array[MediaSource]
   
@@ -42,9 +47,13 @@ object PreviewMediaOption {
     
     inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
+    inline def setShowmenu(value: Boolean): Self = StObject.set(x, "showmenu", value.asInstanceOf[js.Any])
+    
+    inline def setShowmenuUndefined: Self = StObject.set(x, "showmenu", js.undefined)
+    
     inline def setSources(value: js.Array[MediaSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    inline def setSourcesVarargs(value: MediaSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: MediaSource*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

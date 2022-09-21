@@ -12,7 +12,7 @@ object bplustreeMod {
   
   @JSImport("@lumino/collections/types/bplustree", "BPlusTree")
   @js.native
-  class BPlusTree[T] protected ()
+  open class BPlusTree[T] protected ()
     extends StObject
        with IIterable[T]
        with IRetroable[T] {
@@ -23,7 +23,7 @@ object bplustreeMod {
       */
     def this(cmp: js.Function2[/* a */ T, /* b */ T, Double]) = this()
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
     /**
       * Assign new items to the tree, replacing all current items.

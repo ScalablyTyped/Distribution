@@ -1,6 +1,5 @@
 package typings.vscode.mod
 
-import typings.std.RegExp
 import typings.vscode.anon.AutoClosingPairs
 import typings.vscode.anon.Brackets
 import org.scalablytyped.runtime.StObject
@@ -51,7 +50,7 @@ trait LanguageConfiguration extends StObject {
     * e.g.: A regex that matches anything except known separators (and dot is allowed to occur in a floating point number):
     *   /(-?\d*\.\d\w*)|([^\`\~\!\@\#\%\^\&\*\(\)\-\=\+\[\{\]\}\\\|\;\:\'\"\,\.\<\>\/\?\s]+)/g
     */
-  var wordPattern: js.UndefOr[RegExp] = js.undefined
+  var wordPattern: js.UndefOr[js.RegExp] = js.undefined
 }
 object LanguageConfiguration {
   
@@ -66,7 +65,7 @@ object LanguageConfiguration {
     
     inline def setBracketsUndefined: Self = StObject.set(x, "brackets", js.undefined)
     
-    inline def setBracketsVarargs(value: CharacterPair*): Self = StObject.set(x, "brackets", js.Array(value :_*))
+    inline def setBracketsVarargs(value: CharacterPair*): Self = StObject.set(x, "brackets", js.Array(value*))
     
     inline def setComments(value: CommentRule): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
@@ -80,9 +79,9 @@ object LanguageConfiguration {
     
     inline def setOnEnterRulesUndefined: Self = StObject.set(x, "onEnterRules", js.undefined)
     
-    inline def setOnEnterRulesVarargs(value: OnEnterRule*): Self = StObject.set(x, "onEnterRules", js.Array(value :_*))
+    inline def setOnEnterRulesVarargs(value: OnEnterRule*): Self = StObject.set(x, "onEnterRules", js.Array(value*))
     
-    inline def setWordPattern(value: RegExp): Self = StObject.set(x, "wordPattern", value.asInstanceOf[js.Any])
+    inline def setWordPattern(value: js.RegExp): Self = StObject.set(x, "wordPattern", value.asInstanceOf[js.Any])
     
     inline def setWordPatternUndefined: Self = StObject.set(x, "wordPattern", js.undefined)
     

@@ -31,7 +31,7 @@ trait Axis extends StObject {
   
   var CrossesAt: Double
   
-  def Delete(): js.Any
+  def Delete(): Any
   
   var DisplayUnit: XlDisplayUnit
   
@@ -86,13 +86,13 @@ trait Axis extends StObject {
   
   var MinorUnitScale: XlTimeUnit
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ReversePlotOrder: Boolean
   
   var ScaleType: XlScaleType
   
-  def Select(): js.Any
+  def Select(): Any
   
   var TickLabelPosition: XlTickLabelPosition
   
@@ -125,7 +125,7 @@ object Axis {
     Creator: XlCreator,
     Crosses: XlAxisCrosses,
     CrossesAt: Double,
-    Delete: () => js.Any,
+    Delete: () => Any,
     DisplayUnit: XlDisplayUnit,
     DisplayUnitCustom: Double,
     DisplayUnitLabel: DisplayUnitLabel,
@@ -152,10 +152,10 @@ object Axis {
     MinorUnit: Double,
     MinorUnitIsAuto: Boolean,
     MinorUnitScale: XlTimeUnit,
-    Parent: js.Any,
+    Parent: Any,
     ReversePlotOrder: Boolean,
     ScaleType: XlScaleType,
-    Select: () => js.Any,
+    Select: () => Any,
     TickLabelPosition: XlTickLabelPosition,
     TickLabelSpacing: Double,
     TickLabelSpacingIsAuto: Boolean,
@@ -196,7 +196,7 @@ object Axis {
     
     inline def setCrossesAt(value: Double): Self = StObject.set(x, "CrossesAt", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     inline def setDisplayUnit(value: XlDisplayUnit): Self = StObject.set(x, "DisplayUnit", value.asInstanceOf[js.Any])
     
@@ -250,13 +250,13 @@ object Axis {
     
     inline def setMinorUnitScale(value: XlTimeUnit): Self = StObject.set(x, "MinorUnitScale", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReversePlotOrder(value: Boolean): Self = StObject.set(x, "ReversePlotOrder", value.asInstanceOf[js.Any])
     
     inline def setScaleType(value: XlScaleType): Self = StObject.set(x, "ScaleType", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     inline def setTickLabelPosition(value: XlTickLabelPosition): Self = StObject.set(x, "TickLabelPosition", value.asInstanceOf[js.Any])
     

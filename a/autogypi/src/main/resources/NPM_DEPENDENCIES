@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "autogypi" : "0.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "autogypi" : "0.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

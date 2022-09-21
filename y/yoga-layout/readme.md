@@ -10,10 +10,10 @@ Yoga is a cross-platform layout engine enabling maximum collaboration within you
 | ------------------ | :-------------: |
 | Full name          | yoga-layout |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 24 |
-| # downloads        | 14803 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 523.3333333333334 |
+| # stars            | 15285.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/yoga#readme)

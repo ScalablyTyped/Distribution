@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PerformanceObserverInit extends StObject {
   
+  /* standard dom */
   var buffered: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var entryTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
+  /* standard dom */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 object PerformanceObserverInit {
@@ -29,7 +32,7 @@ object PerformanceObserverInit {
     
     inline def setEntryTypesUndefined: Self = StObject.set(x, "entryTypes", js.undefined)
     
-    inline def setEntryTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "entryTypes", js.Array(value :_*))
+    inline def setEntryTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "entryTypes", js.Array(value*))
     
     inline def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

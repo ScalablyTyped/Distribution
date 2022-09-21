@@ -23,7 +23,7 @@ object CandidatesParameters {
     
     inline def setCandidates(value: js.Array[CandidateTemplate]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     
-    inline def setCandidatesVarargs(value: CandidateTemplate*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+    inline def setCandidatesVarargs(value: CandidateTemplate*): Self = StObject.set(x, "candidates", js.Array(value*))
     
     inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
   }

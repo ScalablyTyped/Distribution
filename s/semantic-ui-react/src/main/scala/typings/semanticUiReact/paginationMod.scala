@@ -8,14 +8,14 @@ object paginationMod {
   
   @JSImport("semantic-ui-react/dist/commonjs/addons/Pagination", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.semanticUiReact.paginationPaginationMod.default
   object default {
     
     /* was `typeof PaginationItem` */
     @JSImport("semantic-ui-react/dist/commonjs/addons/Pagination", "default.Item")
     @js.native
-    class Item ()
+    open class Item ()
       extends typings.semanticUiReact.paginationPaginationMod.default.Item
   }
 }

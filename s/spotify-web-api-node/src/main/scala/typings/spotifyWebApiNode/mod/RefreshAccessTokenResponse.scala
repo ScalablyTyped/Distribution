@@ -7,12 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Response returned when requesting new access token (via refresh token)
   * https://developer.spotify.com/documentation/general/guides/authorization-guide/#4-requesting-a-refreshed-access-token-spotify-returns-a-new-access-token-to-your-app
+  * https://developer.spotify.com/documentation/general/guides/authorization-guide/#6-requesting-a-refreshed-access-token
   */
 trait RefreshAccessTokenResponse extends StObject {
   
   var access_token: String
   
   var expires_in: Double
+  
+  var refresh_token: js.UndefOr[String] = js.undefined
   
   var scope: String
   
@@ -30,6 +33,10 @@ object RefreshAccessTokenResponse {
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     inline def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
+    
+    inline def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
+    
+    inline def setRefresh_tokenUndefined: Self = StObject.set(x, "refresh_token", js.undefined)
     
     inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

@@ -2,7 +2,6 @@ package typings.babylonjs
 
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.textureMod.Texture
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object rawTexture3DMod {
   
   @JSImport("babylonjs/Materials/Textures/rawTexture3D", "RawTexture3D")
   @js.native
-  class RawTexture3D protected () extends Texture {
+  open class RawTexture3D protected () extends Texture {
     /**
       * Create a new RawTexture3D
       * @param data defines the data of the texture
@@ -26,7 +25,7 @@ object rawTexture3DMod {
       * @param textureType defines the texture Type (Engine.TEXTURETYPE_UNSIGNED_INT, Engine.TEXTURETYPE_FLOAT...)
       */
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -35,7 +34,7 @@ object rawTexture3DMod {
       scene: Scene
     ) = this()
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -45,7 +44,7 @@ object rawTexture3DMod {
       generateMipMaps: Boolean
     ) = this()
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -56,7 +55,7 @@ object rawTexture3DMod {
       invertY: Boolean
     ) = this()
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -67,7 +66,7 @@ object rawTexture3DMod {
       invertY: Boolean
     ) = this()
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -79,7 +78,7 @@ object rawTexture3DMod {
       samplingMode: Double
     ) = this()
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -91,7 +90,7 @@ object rawTexture3DMod {
       samplingMode: Double
     ) = this()
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -103,7 +102,7 @@ object rawTexture3DMod {
       samplingMode: Double
     ) = this()
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -115,7 +114,7 @@ object rawTexture3DMod {
       samplingMode: Double
     ) = this()
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -128,7 +127,7 @@ object rawTexture3DMod {
       textureType: Double
     ) = this()
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -141,7 +140,7 @@ object rawTexture3DMod {
       textureType: Double
     ) = this()
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -154,7 +153,7 @@ object rawTexture3DMod {
       textureType: Double
     ) = this()
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -167,7 +166,7 @@ object rawTexture3DMod {
       textureType: Double
     ) = this()
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -180,7 +179,7 @@ object rawTexture3DMod {
       textureType: Double
     ) = this()
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -193,7 +192,7 @@ object rawTexture3DMod {
       textureType: Double
     ) = this()
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -206,7 +205,7 @@ object rawTexture3DMod {
       textureType: Double
     ) = this()
     def this(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       width: Double,
       height: Double,
       depth: Double,
@@ -226,6 +225,6 @@ object rawTexture3DMod {
       * Update the texture with new data
       * @param data defines the data to store in the texture
       */
-    def update(data: ArrayBufferView): Unit = js.native
+    def update(data: js.typedarray.ArrayBufferView): Unit = js.native
   }
 }

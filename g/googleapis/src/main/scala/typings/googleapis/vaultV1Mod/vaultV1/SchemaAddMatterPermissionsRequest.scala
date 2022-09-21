@@ -4,28 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Add an account with the permission specified. The role cannot be owner. If
-  * an account already has a role in the matter, it will be overwritten.
-  */
 trait SchemaAddMatterPermissionsRequest extends StObject {
   
   /**
-    * Only relevant if send_emails is true. True to CC requestor in the email
-    * message. False to not CC requestor.
+    * Only relevant if **sendEmails** is **true**. To CC the requestor in the email message, set to **true**. To not CC requestor, set to **false**.
     */
-  var ccMe: js.UndefOr[Boolean] = js.undefined
+  var ccMe: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * The MatterPermission to add.
+    * The account and its role to add.
     */
   var matterPermission: js.UndefOr[SchemaMatterPermission] = js.undefined
   
   /**
-    * True to send notification email to the added account. False to not send
-    * notification email.
+    * To send a notification email to the added account, set to **true**. To not send a notification email, set to **false**.
     */
-  var sendEmails: js.UndefOr[Boolean] = js.undefined
+  var sendEmails: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaAddMatterPermissionsRequest {
   
@@ -38,6 +32,8 @@ object SchemaAddMatterPermissionsRequest {
     
     inline def setCcMe(value: Boolean): Self = StObject.set(x, "ccMe", value.asInstanceOf[js.Any])
     
+    inline def setCcMeNull: Self = StObject.set(x, "ccMe", null)
+    
     inline def setCcMeUndefined: Self = StObject.set(x, "ccMe", js.undefined)
     
     inline def setMatterPermission(value: SchemaMatterPermission): Self = StObject.set(x, "matterPermission", value.asInstanceOf[js.Any])
@@ -45,6 +41,8 @@ object SchemaAddMatterPermissionsRequest {
     inline def setMatterPermissionUndefined: Self = StObject.set(x, "matterPermission", js.undefined)
     
     inline def setSendEmails(value: Boolean): Self = StObject.set(x, "sendEmails", value.asInstanceOf[js.Any])
+    
+    inline def setSendEmailsNull: Self = StObject.set(x, "sendEmails", null)
     
     inline def setSendEmailsUndefined: Self = StObject.set(x, "sendEmails", js.undefined)
   }

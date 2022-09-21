@@ -26,7 +26,7 @@ object BuyListResponse {
     
     inline def setProviders(value: js.Array[BuyProviderInfo]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
-    inline def setProvidersVarargs(value: BuyProviderInfo*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: BuyProviderInfo*): Self = StObject.set(x, "providers", js.Array(value*))
     
     inline def setSuggestedFiatCurrency(value: String): Self = StObject.set(x, "suggestedFiatCurrency", value.asInstanceOf[js.Any])
     

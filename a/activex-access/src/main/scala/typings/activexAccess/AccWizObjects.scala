@@ -220,13 +220,13 @@ object AccWizObjects {
     
     val FieldListCount: Double
     
-    def FieldLists(IFieldList: Double): js.Any
+    def FieldLists(IFieldList: Double): Any
     
     var HScrollPos: Double
     
     val JoinLineCount: Double
     
-    def JoinLines(IJoinLine: Double): js.Any
+    def JoinLines(IJoinLine: Double): Any
     
     var PersistentHighlight: Boolean
     
@@ -253,10 +253,10 @@ object AccWizObjects {
       DeleteFieldList: Double => Unit,
       DeleteJoinLine: Double => Unit,
       FieldListCount: Double,
-      FieldLists: Double => js.Any,
+      FieldLists: Double => Any,
       HScrollPos: Double,
       JoinLineCount: Double,
-      JoinLines: Double => js.Any,
+      JoinLines: Double => Any,
       PersistentHighlight: Boolean,
       Picture: IPictureDisp,
       PictureCols: Double,
@@ -285,13 +285,13 @@ object AccWizObjects {
       
       inline def setFieldListCount(value: Double): Self = StObject.set(x, "FieldListCount", value.asInstanceOf[js.Any])
       
-      inline def setFieldLists(value: Double => js.Any): Self = StObject.set(x, "FieldLists", js.Any.fromFunction1(value))
+      inline def setFieldLists(value: Double => Any): Self = StObject.set(x, "FieldLists", js.Any.fromFunction1(value))
       
       inline def setHScrollPos(value: Double): Self = StObject.set(x, "HScrollPos", value.asInstanceOf[js.Any])
       
       inline def setJoinLineCount(value: Double): Self = StObject.set(x, "JoinLineCount", value.asInstanceOf[js.Any])
       
-      inline def setJoinLines(value: Double => js.Any): Self = StObject.set(x, "JoinLines", js.Any.fromFunction1(value))
+      inline def setJoinLines(value: Double => Any): Self = StObject.set(x, "JoinLines", js.Any.fromFunction1(value))
       
       inline def setPersistentHighlight(value: Boolean): Self = StObject.set(x, "PersistentHighlight", value.asInstanceOf[js.Any])
       
@@ -337,9 +337,9 @@ object AccWizObjects {
     
     val ColumnCount: Double
     
-    var ColumnState: js.Any
+    var ColumnState: Any
     
-    def Columns(ColumnNumber: Double): js.Any
+    def Columns(ColumnNumber: Double): Any
     
     def DeleteColumn(Index: Double): Unit
     
@@ -391,8 +391,8 @@ object AccWizObjects {
       ClearRows: () => Unit,
       ColumnClickBehavior: Double,
       ColumnCount: Double,
-      ColumnState: js.Any,
-      Columns: Double => js.Any,
+      ColumnState: Any,
+      Columns: Double => Any,
       DeleteColumn: Double => Unit,
       DeleteRow: Double => Unit,
       Delimiters: String,
@@ -441,9 +441,9 @@ object AccWizObjects {
       
       inline def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
       
-      inline def setColumnState(value: js.Any): Self = StObject.set(x, "ColumnState", value.asInstanceOf[js.Any])
+      inline def setColumnState(value: Any): Self = StObject.set(x, "ColumnState", value.asInstanceOf[js.Any])
       
-      inline def setColumns(value: Double => js.Any): Self = StObject.set(x, "Columns", js.Any.fromFunction1(value))
+      inline def setColumns(value: Double => Any): Self = StObject.set(x, "Columns", js.Any.fromFunction1(value))
       
       inline def setDeleteColumn(value: Double => Unit): Self = StObject.set(x, "DeleteColumn", js.Any.fromFunction1(value))
       

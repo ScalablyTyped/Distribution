@@ -19,6 +19,6 @@ object SupportMode {
     
     inline def setSupportMode(value: js.Array[String]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
     
-    inline def setSupportModeVarargs(value: String*): Self = StObject.set(x, "supportMode", js.Array(value :_*))
+    inline def setSupportModeVarargs(value: String*): Self = StObject.set(x, "supportMode", js.Array(value*))
   }
 }

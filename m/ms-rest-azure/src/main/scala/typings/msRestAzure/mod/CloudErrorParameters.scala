@@ -29,7 +29,7 @@ object CloudErrorParameters {
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    inline def setDetailsVarargs(value: CloudError*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: CloudError*): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

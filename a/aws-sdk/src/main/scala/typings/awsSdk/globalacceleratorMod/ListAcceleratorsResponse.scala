@@ -29,7 +29,7 @@ object ListAcceleratorsResponse {
     
     inline def setAcceleratorsUndefined: Self = StObject.set(x, "Accelerators", js.undefined)
     
-    inline def setAcceleratorsVarargs(value: Accelerator*): Self = StObject.set(x, "Accelerators", js.Array(value :_*))
+    inline def setAcceleratorsVarargs(value: Accelerator*): Self = StObject.set(x, "Accelerators", js.Array(value*))
     
     inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

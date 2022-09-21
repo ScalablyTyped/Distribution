@@ -11,7 +11,7 @@ trait SoftEdgeFormat extends StObject {
   
   val Creator: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Radius: Double
   
@@ -25,7 +25,7 @@ object SoftEdgeFormat {
   inline def apply(
     Application: Application,
     Creator: Double,
-    Parent: js.Any,
+    Parent: Any,
     Radius: Double,
     Type: MsoSoftEdgeType,
     WordDotSoftEdgeFormat_typekey: SoftEdgeFormat
@@ -41,7 +41,7 @@ object SoftEdgeFormat {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRadius(value: Double): Self = StObject.set(x, "Radius", value.asInstanceOf[js.Any])
     

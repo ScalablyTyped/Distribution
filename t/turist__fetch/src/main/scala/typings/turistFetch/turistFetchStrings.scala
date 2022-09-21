@@ -19,6 +19,10 @@ object turistFetchStrings {
   inline def ANY: ANY = "ANY".asInstanceOf[ANY]
   
   @js.native
+  sealed trait CAA extends StObject
+  inline def CAA: CAA = "CAA".asInstanceOf[CAA]
+  
+  @js.native
   sealed trait CNAME extends StObject
   inline def CNAME: CNAME = "CNAME".asInstanceOf[CNAME]
   
@@ -49,4 +53,12 @@ object turistFetchStrings {
   @js.native
   sealed trait TXT extends StObject
   inline def TXT: TXT = "TXT".asInstanceOf[TXT]
+  
+  @js.native
+  sealed trait ipv4first extends StObject
+  inline def ipv4first: ipv4first = "ipv4first".asInstanceOf[ipv4first]
+  
+  @js.native
+  sealed trait verbatim extends StObject
+  inline def verbatim: verbatim = "verbatim".asInstanceOf[verbatim]
 }

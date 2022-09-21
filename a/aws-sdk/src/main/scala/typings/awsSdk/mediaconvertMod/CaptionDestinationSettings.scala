@@ -7,44 +7,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CaptionDestinationSettings extends StObject {
   
   /**
-    * Burn-In Destination Settings.
+    * Burn-in is a captions delivery method, rather than a captions format. Burn-in writes the captions directly on your video frames, replacing pixels of video content with the captions. Set up burn-in captions in the same output as your video. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/burn-in-output-captions.html. When you work directly in your JSON job specification, include this object and any required children when you set destinationType to BURN_IN.
     */
   var BurninDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.BurninDestinationSettings] = js.undefined
   
   /**
-    * Specify the format for this set of captions on this output. The default format is embedded without SCTE-20. Other options are embedded with SCTE-20, burn-in, DVB-sub, IMSC, SCC, SRT, teletext, TTML, and web-VTT. If you are using SCTE-20, choose SCTE-20 plus embedded (SCTE20_PLUS_EMBEDDED) to create an output that complies with the SCTE-43 spec. To create a non-compliant output where the embedded captions come first, choose Embedded plus SCTE-20 (EMBEDDED_PLUS_SCTE20).
+    * Specify the format for this set of captions on this output. The default format is embedded without SCTE-20. Note that your choice of video output container constrains your choice of output captions format. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/captions-support-tables.html. If you are using SCTE-20 and you want to create an output that complies with the SCTE-43 spec, choose SCTE-20 plus embedded (SCTE20_PLUS_EMBEDDED). To create a non-compliant output where the embedded captions come first, choose Embedded plus SCTE-20 (EMBEDDED_PLUS_SCTE20).
     */
   var DestinationType: js.UndefOr[CaptionDestinationType] = js.undefined
   
   /**
-    * DVB-Sub Destination Settings
+    * Settings related to DVB-Sub captions. Set up DVB-Sub captions in the same output as your video. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/dvb-sub-output-captions.html. When you work directly in your JSON job specification, include this object and any required children when you set destinationType to DVB_SUB.
     */
   var DvbSubDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.DvbSubDestinationSettings] = js.undefined
   
   /**
-    * Settings specific to embedded/ancillary caption outputs, including 608/708 Channel destination number.
+    * Settings related to CEA/EIA-608 and CEA/EIA-708 (also called embedded or ancillary) captions. Set up embedded captions in the same output as your video. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/embedded-output-captions.html. When you work directly in your JSON job specification, include this object and any required children when you set destinationType to EMBEDDED, EMBEDDED_PLUS_SCTE20, or SCTE20_PLUS_EMBEDDED.
     */
   var EmbeddedDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.EmbeddedDestinationSettings] = js.undefined
   
   /**
-    * Settings specific to IMSC caption outputs.
+    * Settings related to IMSC captions. IMSC is a sidecar format that holds captions in a file that is separate from the video container. Set up sidecar captions in the same output group, but different output from your video. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/ttml-and-webvtt-output-captions.html. When you work directly in your JSON job specification, include this object and any required children when you set destinationType to IMSC.
     */
   var ImscDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.ImscDestinationSettings] = js.undefined
   
   /**
-    * Settings for SCC caption output.
+    * Settings related to SCC captions. SCC is a sidecar format that holds captions in a file that is separate from the video container. Set up sidecar captions in the same output group, but different output from your video. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/scc-srt-output-captions.html. When you work directly in your JSON job specification, include this object and any required children when you set destinationType to SCC.
     */
   var SccDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.SccDestinationSettings] = js.undefined
   
   /**
-    * Settings for Teletext caption output
+    * Settings related to SRT captions. SRT is a sidecar format that holds captions in a file that is separate from the video container. Set up sidecar captions in the same output group, but different output from your video. When you work directly in your JSON job specification, include this object and any required children when you set destinationType to SRT.
+    */
+  var SrtDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.SrtDestinationSettings] = js.undefined
+  
+  /**
+    * Settings related to teletext captions. Set up teletext captions in the same output as your video. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/teletext-output-captions.html. When you work directly in your JSON job specification, include this object and any required children when you set destinationType to TELETEXT.
     */
   var TeletextDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.TeletextDestinationSettings] = js.undefined
   
   /**
-    * Settings specific to TTML caption outputs, including Pass style information (TtmlStylePassthrough).
+    * Settings related to TTML captions. TTML is a sidecar format that holds captions in a file that is separate from the video container. Set up sidecar captions in the same output group, but different output from your video. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/ttml-and-webvtt-output-captions.html. When you work directly in your JSON job specification, include this object and any required children when you set destinationType to TTML.
     */
   var TtmlDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.TtmlDestinationSettings] = js.undefined
+  
+  /**
+    * Settings related to WebVTT captions. WebVTT is a sidecar format that holds captions in a file that is separate from the video container. Set up sidecar captions in the same output group, but different output from your video. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/ttml-and-webvtt-output-captions.html. When you work directly in your JSON job specification, include this object and any required children when you set destinationType to WebVTT.
+    */
+  var WebvttDestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.WebvttDestinationSettings] = js.undefined
 }
 object CaptionDestinationSettings {
   
@@ -79,6 +89,10 @@ object CaptionDestinationSettings {
     
     inline def setSccDestinationSettingsUndefined: Self = StObject.set(x, "SccDestinationSettings", js.undefined)
     
+    inline def setSrtDestinationSettings(value: SrtDestinationSettings): Self = StObject.set(x, "SrtDestinationSettings", value.asInstanceOf[js.Any])
+    
+    inline def setSrtDestinationSettingsUndefined: Self = StObject.set(x, "SrtDestinationSettings", js.undefined)
+    
     inline def setTeletextDestinationSettings(value: TeletextDestinationSettings): Self = StObject.set(x, "TeletextDestinationSettings", value.asInstanceOf[js.Any])
     
     inline def setTeletextDestinationSettingsUndefined: Self = StObject.set(x, "TeletextDestinationSettings", js.undefined)
@@ -86,5 +100,9 @@ object CaptionDestinationSettings {
     inline def setTtmlDestinationSettings(value: TtmlDestinationSettings): Self = StObject.set(x, "TtmlDestinationSettings", value.asInstanceOf[js.Any])
     
     inline def setTtmlDestinationSettingsUndefined: Self = StObject.set(x, "TtmlDestinationSettings", js.undefined)
+    
+    inline def setWebvttDestinationSettings(value: WebvttDestinationSettings): Self = StObject.set(x, "WebvttDestinationSettings", value.asInstanceOf[js.Any])
+    
+    inline def setWebvttDestinationSettingsUndefined: Self = StObject.set(x, "WebvttDestinationSettings", js.undefined)
   }
 }

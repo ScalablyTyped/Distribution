@@ -28,7 +28,7 @@ object subscribersChange {
     
     inline def setClients(value: js.Array[subscribedClient]): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
     
-    inline def setClientsVarargs(value: subscribedClient*): Self = StObject.set(x, "clients", js.Array(value :_*))
+    inline def setClientsVarargs(value: subscribedClient*): Self = StObject.set(x, "clients", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

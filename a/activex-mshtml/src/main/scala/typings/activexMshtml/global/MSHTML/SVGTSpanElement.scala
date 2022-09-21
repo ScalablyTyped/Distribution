@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGTSpanElement")
 @js.native
-/* private */ class SVGTSpanElement ()
+/* private */ open class SVGTSpanElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGTSpanElement {
   

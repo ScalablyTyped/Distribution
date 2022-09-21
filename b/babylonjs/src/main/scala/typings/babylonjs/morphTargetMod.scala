@@ -16,7 +16,7 @@ object morphTargetMod {
   
   @JSImport("babylonjs/Morph/morphTarget", "MorphTarget")
   @js.native
-  class MorphTarget protected ()
+  open class MorphTarget protected ()
     extends StObject
        with IAnimatable {
     /**
@@ -34,24 +34,24 @@ object morphTargetMod {
     def this(/** defines the name of the target */
     name: String, influence: Unit, scene: Nullable[Scene]) = this()
     
-    /* private */ var _animationPropertiesOverride: js.Any = js.native
+    /* private */ var _animationPropertiesOverride: Any = js.native
     
-    /* private */ var _influence: js.Any = js.native
+    /* private */ var _influence: Any = js.native
     
-    /* private */ var _normals: js.Any = js.native
+    /* private */ var _normals: Any = js.native
     
     /** @hidden */
     var _onDataLayoutChanged: Observable[Unit] = js.native
     
-    /* private */ var _positions: js.Any = js.native
+    /* private */ var _positions: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _tangents: js.Any = js.native
+    /* private */ var _tangents: Any = js.native
     
-    /* private */ var _uniqueId: js.Any = js.native
+    /* private */ var _uniqueId: Any = js.native
     
-    /* private */ var _uvs: js.Any = js.native
+    /* private */ var _uvs: Any = js.native
     
     /**
       * Gets or sets the animation properties override
@@ -143,7 +143,7 @@ object morphTargetMod {
       * Serializes the current target into a Serialization object
       * @returns the serialized object
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
     
     /**
       * Affects normal data to this target
@@ -196,8 +196,10 @@ object morphTargetMod {
     /**
       * Creates a new target from serialized data
       * @param serializationObject defines the serialized data to use
+      * @param scene defines the hosting scene
       * @returns a new MorphTarget
       */
-    inline def Parse(serializationObject: js.Any): MorphTarget = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any]).asInstanceOf[MorphTarget]
+    inline def Parse(serializationObject: Any): MorphTarget = ^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any]).asInstanceOf[MorphTarget]
+    inline def Parse(serializationObject: Any, scene: Scene): MorphTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(serializationObject.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[MorphTarget]
   }
 }

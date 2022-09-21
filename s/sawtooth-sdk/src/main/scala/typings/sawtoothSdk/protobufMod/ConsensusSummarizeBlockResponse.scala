@@ -5,7 +5,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.ConsensusSummarizeBlockResponse.Status
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ConsensusSummarizeBlockResponse.
   * @param [properties] Properties to set
   */
-class ConsensusSummarizeBlockResponse ()
+open class ConsensusSummarizeBlockResponse ()
   extends StObject
      with IConsensusSummarizeBlockResponse {
   def this(properties: IConsensusSummarizeBlockResponse) = this()
@@ -27,13 +26,13 @@ class ConsensusSummarizeBlockResponse ()
   
   /** ConsensusSummarizeBlockResponse summary. */
   @JSName("summary")
-  var summary_ConsensusSummarizeBlockResponse: Uint8Array = js.native
+  var summary_ConsensusSummarizeBlockResponse: js.typedarray.Uint8Array = js.native
   
   /**
     * Converts this ConsensusSummarizeBlockResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object ConsensusSummarizeBlockResponse {
@@ -103,6 +102,8 @@ object ConsensusSummarizeBlockResponse {
   inline def create(): ConsensusSummarizeBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ConsensusSummarizeBlockResponse]
   inline def create(properties: IConsensusSummarizeBlockResponse): ConsensusSummarizeBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ConsensusSummarizeBlockResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ConsensusSummarizeBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSummarizeBlockResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ConsensusSummarizeBlockResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusSummarizeBlockResponse]
   /**
     * Decodes a ConsensusSummarizeBlockResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -113,9 +114,8 @@ object ConsensusSummarizeBlockResponse {
     */
   inline def decode(reader: Reader): ConsensusSummarizeBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSummarizeBlockResponse]
   inline def decode(reader: Reader, length: Double): ConsensusSummarizeBlockResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusSummarizeBlockResponse]
-  inline def decode(reader: Uint8Array): ConsensusSummarizeBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSummarizeBlockResponse]
-  inline def decode(reader: Uint8Array, length: Double): ConsensusSummarizeBlockResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusSummarizeBlockResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ConsensusSummarizeBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSummarizeBlockResponse]
   /**
     * Decodes a ConsensusSummarizeBlockResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -124,7 +124,6 @@ object ConsensusSummarizeBlockResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): ConsensusSummarizeBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSummarizeBlockResponse]
-  inline def decodeDelimited(reader: Uint8Array): ConsensusSummarizeBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusSummarizeBlockResponse]
   
   /**
     * Encodes the specified ConsensusSummarizeBlockResponse message. Does not implicitly {@link ConsensusSummarizeBlockResponse.verify|verify} messages.
@@ -149,7 +148,7 @@ object ConsensusSummarizeBlockResponse {
     * @param object Plain object
     * @returns ConsensusSummarizeBlockResponse
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ConsensusSummarizeBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusSummarizeBlockResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): ConsensusSummarizeBlockResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusSummarizeBlockResponse]
   
   /**
     * Creates a plain object from a ConsensusSummarizeBlockResponse message. Also converts values to other types if specified.
@@ -157,13 +156,13 @@ object ConsensusSummarizeBlockResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: ConsensusSummarizeBlockResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ConsensusSummarizeBlockResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ConsensusSummarizeBlockResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ConsensusSummarizeBlockResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ConsensusSummarizeBlockResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

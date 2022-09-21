@@ -1,6 +1,6 @@
 package typings.googleCloudStorage.fileMod
 
-import typings.googleCloudCommon.serviceObjectMod.GetConfig
+import typings.googleCloudStorage.serviceObjectMod.GetConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

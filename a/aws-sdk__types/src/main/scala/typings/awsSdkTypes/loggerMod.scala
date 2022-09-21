@@ -32,21 +32,21 @@ object loggerMod {
   
   trait Logger extends StObject {
     
-    def debug(content: js.Object): Unit
+    def debug(content: Any*): Unit
     
-    def error(content: js.Object): Unit
+    def error(content: Any*): Unit
     
-    def info(content: js.Object): Unit
+    def info(content: Any*): Unit
     
-    def warn(content: js.Object): Unit
+    def warn(content: Any*): Unit
   }
   object Logger {
     
     inline def apply(
-      debug: js.Object => Unit,
-      error: js.Object => Unit,
-      info: js.Object => Unit,
-      warn: js.Object => Unit
+      debug: /* repeated */ Any => Unit,
+      error: /* repeated */ Any => Unit,
+      info: /* repeated */ Any => Unit,
+      warn: /* repeated */ Any => Unit
     ): Logger = {
       val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), error = js.Any.fromFunction1(error), info = js.Any.fromFunction1(info), warn = js.Any.fromFunction1(warn))
       __obj.asInstanceOf[Logger]
@@ -54,13 +54,13 @@ object loggerMod {
     
     extension [Self <: Logger](x: Self) {
       
-      inline def setDebug(value: js.Object => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      inline def setError(value: js.Object => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      inline def setInfo(value: js.Object => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: /* repeated */ Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      inline def setWarn(value: js.Object => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* repeated */ Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
     }
   }
   

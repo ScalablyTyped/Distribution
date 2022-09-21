@@ -11,7 +11,7 @@ object urlDataSourceMod {
   
   @JSImport("@tensorflow/tfjs-data/dist/sources/url_data_source", "URLDataSource")
   @js.native
-  class URLDataSource protected () extends DataSource {
+  open class URLDataSource protected () extends DataSource {
     /**
       * Create a `URLDataSource`.
       *

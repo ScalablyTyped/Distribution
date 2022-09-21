@@ -14,19 +14,19 @@ trait Document extends StObject {
   
   def CreateProperty(): Property = js.native
   def CreateProperty(Name: String): Property = js.native
-  def CreateProperty(Name: String, Type: Unit, Value: js.Any): Property = js.native
-  def CreateProperty(Name: String, Type: Unit, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: String, Type: Unit, Value: Any): Property = js.native
+  def CreateProperty(Name: String, Type: Unit, Value: Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: Unit, Value: Unit, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum): Property = js.native
-  def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any): Property = js.native
-  def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: String, Type: DataTypeEnum, Value: Any): Property = js.native
+  def CreateProperty(Name: String, Type: DataTypeEnum, Value: Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum, Value: Unit, DDL: Boolean): Property = js.native
-  def CreateProperty(Name: Unit, Type: Unit, Value: js.Any): Property = js.native
-  def CreateProperty(Name: Unit, Type: Unit, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: Unit, Type: Unit, Value: Any): Property = js.native
+  def CreateProperty(Name: Unit, Type: Unit, Value: Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: Unit, Type: Unit, Value: Unit, DDL: Boolean): Property = js.native
   def CreateProperty(Name: Unit, Type: DataTypeEnum): Property = js.native
-  def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: js.Any): Property = js.native
-  def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: Any): Property = js.native
+  def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: Unit, DDL: Boolean): Property = js.native
   
   /* private */ @JSName("DAO.Document_typekey")

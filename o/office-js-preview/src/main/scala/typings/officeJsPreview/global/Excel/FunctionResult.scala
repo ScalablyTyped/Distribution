@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * An object containing the result of a function-evaluation operation
   *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.FunctionResult")
 @js.native
-class FunctionResult[T] ()
+open class FunctionResult[T] ()
   extends StObject
      with typings.officeJsPreview.Excel.FunctionResult[T] {
   

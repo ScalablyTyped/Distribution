@@ -15,5 +15,5 @@ object userdataMod {
   
   type SugarCubeTemporaryVariables = VariablesMapBase
   
-  type VariablesMapBase = StringDictionary[js.Any]
+  type VariablesMapBase = StringDictionary[Any]
 }

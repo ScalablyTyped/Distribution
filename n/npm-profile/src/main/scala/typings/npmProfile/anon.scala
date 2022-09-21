@@ -10,7 +10,7 @@ object anon {
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
        with _TFAStatus {
     
     var pending: Boolean

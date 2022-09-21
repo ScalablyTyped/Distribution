@@ -11,18 +11,18 @@ object anon {
     
     var bootstrap4: js.UndefOr[Boolean] = js.undefined
     
-    var columns: js.Array[ColumnDescription[js.Any, js.Any]]
+    var columns: js.Array[ColumnDescription[Any, Any]]
     
-    var data: js.Array[js.Any]
+    var data: js.Array[Any]
     
     /**
       * table key field
       */
-    var keyField: js.Any
+    var keyField: Any
   }
   object Bootstrap4 {
     
-    inline def apply(columns: js.Array[ColumnDescription[js.Any, js.Any]], data: js.Array[js.Any], keyField: js.Any): Bootstrap4 = {
+    inline def apply(columns: js.Array[ColumnDescription[Any, Any]], data: js.Array[Any], keyField: Any): Bootstrap4 = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], keyField = keyField.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bootstrap4]
     }
@@ -33,21 +33,21 @@ object anon {
       
       inline def setBootstrap4Undefined: Self = StObject.set(x, "bootstrap4", js.undefined)
       
-      inline def setColumns(value: js.Array[ColumnDescription[js.Any, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[ColumnDescription[Any, Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: (ColumnDescription[js.Any, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (ColumnDescription[Any, Any])*): Self = StObject.set(x, "columns", js.Array(value*))
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
-      inline def setKeyField(value: js.Any): Self = StObject.set(x, "keyField", value.asInstanceOf[js.Any])
+      inline def setKeyField(value: Any): Self = StObject.set(x, "keyField", value.asInstanceOf[js.Any])
     }
   }
   
   trait Columns extends StObject {
     
-    var columns: js.Array[ColumnDescription[js.Any, js.Any]]
+    var columns: js.Array[ColumnDescription[Any, Any]]
     
     def onColumnToggle(dataField: String): Unit
     
@@ -59,7 +59,7 @@ object anon {
   object Columns {
     
     inline def apply(
-      columns: js.Array[ColumnDescription[js.Any, js.Any]],
+      columns: js.Array[ColumnDescription[Any, Any]],
       onColumnToggle: String => Unit,
       toggles: js.Array[Boolean]
     ): Columns = {
@@ -69,15 +69,15 @@ object anon {
     
     extension [Self <: Columns](x: Self) {
       
-      inline def setColumns(value: js.Array[ColumnDescription[js.Any, js.Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[ColumnDescription[Any, Any]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: (ColumnDescription[js.Any, js.Any])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (ColumnDescription[Any, Any])*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setOnColumnToggle(value: String => Unit): Self = StObject.set(x, "onColumnToggle", js.Any.fromFunction1(value))
       
       inline def setToggles(value: js.Array[Boolean]): Self = StObject.set(x, "toggles", value.asInstanceOf[js.Any])
       
-      inline def setTogglesVarargs(value: Boolean*): Self = StObject.set(x, "toggles", js.Array(value :_*))
+      inline def setTogglesVarargs(value: Boolean*): Self = StObject.set(x, "toggles", js.Array(value*))
     }
   }
   

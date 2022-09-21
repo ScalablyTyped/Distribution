@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "lines-and-columns" : "1.1.6"
+      "lines-and-columns" : "2.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "lines-and-columns" : "1.1.6"
+      "lines-and-columns" : "2.0.3"
     }
   ],
   "compile-devDependencies" : [

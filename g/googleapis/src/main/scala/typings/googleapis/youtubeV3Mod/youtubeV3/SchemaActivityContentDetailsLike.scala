@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about a resource that received a positive (like) rating.
-  */
 trait SchemaActivityContentDetailsLike extends StObject {
   
   /**
-    * The resourceId object contains information that identifies the rated
-    * resource.
+    * The resourceId object contains information that identifies the rated resource.
     */
   var resourceId: js.UndefOr[SchemaResourceId] = js.undefined
 }

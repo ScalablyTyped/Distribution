@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Point extends StObject {
   
-  var body: js.Any
+  var body: Any
   
   var point: Nullable[Vector3]
 }
 object Point {
   
-  inline def apply(body: js.Any): Point = {
+  inline def apply(body: Any): Point = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], point = null)
     __obj.asInstanceOf[Point]
   }
   
   extension [Self <: Point](x: Self) {
     
-    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setPoint(value: Nullable[Vector3]): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     

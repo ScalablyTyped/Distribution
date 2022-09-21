@@ -1,8 +1,12 @@
 package typings.nodePgMigrate
 
-import typings.nodePgMigrate.functionsTypesMod.FunctionOptions
+import org.scalablytyped.runtime.StringDictionary
 import typings.nodePgMigrate.generalTypesMod.DropOptions
-import typings.nodePgMigrate.generalTypesMod.Value
+import typings.nodePgMigrate.migrationMod.CreateOptions
+import typings.nodePgMigrate.migrationMod.FilenameFormat
+import typings.nodePgMigrate.nodePgMigrateStrings.js_
+import typings.nodePgMigrate.nodePgMigrateStrings.sql
+import typings.nodePgMigrate.nodePgMigrateStrings.ts
 import typings.nodePgMigrate.tablesTypesMod.LikeOptions
 import typings.nodePgMigrate.triggersTypesMod.CreateTriggerFn
 import typings.nodePgMigrate.triggersTypesMod.TriggerOptions
@@ -12,22 +16,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait FilenameFormat extends StObject {
+  /* Inlined node-pg-migrate.node-pg-migrate/dist/migration.CreateOptionsDefault & {  filenameFormat :node-pg-migrate.node-pg-migrate/dist/migration.FilenameFormat | undefined} */
+  trait CreateOptionsDefaultfilen
+    extends StObject
+       with CreateOptions {
     
-    var filenameFormat: js.UndefOr[typings.nodePgMigrate.migrationMod.FilenameFormat] = js.undefined
+    var filenameFormat: js.UndefOr[FilenameFormat] = js.undefined
+    
+    var ignorePattern: js.UndefOr[String] = js.undefined
+    
+    var language: js.UndefOr[js_ | ts | sql] = js.undefined
   }
-  object FilenameFormat {
+  object CreateOptionsDefaultfilen {
     
-    inline def apply(): FilenameFormat = {
+    inline def apply(): CreateOptionsDefaultfilen = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FilenameFormat]
+      __obj.asInstanceOf[CreateOptionsDefaultfilen]
     }
     
-    extension [Self <: FilenameFormat](x: Self) {
+    extension [Self <: CreateOptionsDefaultfilen](x: Self) {
       
-      inline def setFilenameFormat(value: typings.nodePgMigrate.migrationMod.FilenameFormat): Self = StObject.set(x, "filenameFormat", value.asInstanceOf[js.Any])
+      inline def setFilenameFormat(value: FilenameFormat): Self = StObject.set(x, "filenameFormat", value.asInstanceOf[js.Any])
       
       inline def setFilenameFormatUndefined: Self = StObject.set(x, "filenameFormat", js.undefined)
+      
+      inline def setIgnorePattern(value: String): Self = StObject.set(x, "ignorePattern", value.asInstanceOf[js.Any])
+      
+      inline def setIgnorePatternUndefined: Self = StObject.set(x, "ignorePattern", js.undefined)
+      
+      inline def setLanguage(value: js_ | ts | sql): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    }
+  }
+  
+  /* Inlined node-pg-migrate.node-pg-migrate/dist/migration.CreateOptionsTemplate & {  filenameFormat :node-pg-migrate.node-pg-migrate/dist/migration.FilenameFormat | undefined} */
+  trait CreateOptionsTemplatefile
+    extends StObject
+       with CreateOptions {
+    
+    var filenameFormat: js.UndefOr[FilenameFormat] = js.undefined
+    
+    var templateFileName: String
+  }
+  object CreateOptionsTemplatefile {
+    
+    inline def apply(templateFileName: String): CreateOptionsTemplatefile = {
+      val __obj = js.Dynamic.literal(templateFileName = templateFileName.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CreateOptionsTemplatefile]
+    }
+    
+    extension [Self <: CreateOptionsTemplatefile](x: Self) {
+      
+      inline def setFilenameFormat(value: FilenameFormat): Self = StObject.set(x, "filenameFormat", value.asInstanceOf[js.Any])
+      
+      inline def setFilenameFormatUndefined: Self = StObject.set(x, "filenameFormat", js.undefined)
+      
+      inline def setTemplateFileName(value: String): Self = StObject.set(x, "templateFileName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,9 +126,9 @@ object anon {
   trait PublicPartPgLiteral extends StObject {
     
     @JSName("constructor")
-    var constructor_Original: js.Function1[/* value */ String, js.Any]
+    var constructor_Original: js.Function1[/* value */ String, Any]
     
-    var create: js.UndefOr[js.Any] = js.undefined
+    var create: js.UndefOr[Any] = js.undefined
     
     var literal: /* true */ Boolean
     
@@ -95,7 +140,7 @@ object anon {
   object PublicPartPgLiteral {
     
     inline def apply(
-      constructor: /* value */ String => js.Any,
+      constructor: /* value */ String => Any,
       literal: /* true */ Boolean,
       toString_ : () => String,
       value: String
@@ -107,9 +152,9 @@ object anon {
     
     extension [Self <: PublicPartPgLiteral](x: Self) {
       
-      inline def setConstructor(value: /* value */ String => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+      inline def setConstructor(value: /* value */ String => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
       
-      inline def setCreate(value: js.Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
       inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
@@ -139,10 +184,6 @@ object anon {
       inline def setReverseFunction3(
         value: (/* tableName */ typings.nodePgMigrate.generalTypesMod.Name, /* triggerName */ String, /* triggerOptions */ TriggerOptions & DropOptions) => String | js.Array[String]
       ): Self = StObject.set(x, "reverse", js.Any.fromFunction3(value))
-      
-      inline def setReverseFunction4(
-        value: (/* tableName */ typings.nodePgMigrate.generalTypesMod.Name, /* triggerName */ String, /* triggerOptions */ TriggerOptions & FunctionOptions & DropOptions, /* definition */ Value) => String | js.Array[String]
-      ): Self = StObject.set(x, "reverse", js.Any.fromFunction4(value))
     }
   }
   
@@ -167,5 +208,33 @@ object anon {
   trait ZzIGNOREME extends StObject {
     
     var zz_IGNORE_ME: js.UndefOr[scala.Nothing] = js.undefined
+  }
+  
+  /* Inlined {[name: string] : node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.Type} & node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.DropOptions */
+  trait namestringTypeDropOptions
+    extends StObject
+       with /* name */ StringDictionary[typings.nodePgMigrate.generalTypesMod.Type] {
+    
+    var cascade: js.UndefOr[Boolean] = js.undefined
+    
+    var ifExists: js.UndefOr[Boolean] = js.undefined
+  }
+  object namestringTypeDropOptions {
+    
+    inline def apply(): namestringTypeDropOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[namestringTypeDropOptions]
+    }
+    
+    extension [Self <: namestringTypeDropOptions](x: Self) {
+      
+      inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
+      
+      inline def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
+      
+      inline def setIfExists(value: Boolean): Self = StObject.set(x, "ifExists", value.asInstanceOf[js.Any])
+      
+      inline def setIfExistsUndefined: Self = StObject.set(x, "ifExists", js.undefined)
+    }
   }
 }

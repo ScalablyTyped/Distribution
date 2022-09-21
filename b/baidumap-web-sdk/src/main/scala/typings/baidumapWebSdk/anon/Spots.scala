@@ -9,13 +9,13 @@ trait Spots extends StObject {
   
   var spots: HotspotOptions
   
-  var target: js.Any
+  var target: Any
   
   var `type`: String
 }
 object Spots {
   
-  inline def apply(spots: HotspotOptions, target: js.Any, `type`: String): Spots = {
+  inline def apply(spots: HotspotOptions, target: Any, `type`: String): Spots = {
     val __obj = js.Dynamic.literal(spots = spots.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Spots]
@@ -25,7 +25,7 @@ object Spots {
     
     inline def setSpots(value: HotspotOptions): Self = StObject.set(x, "spots", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

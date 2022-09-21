@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.AddIns")
 @js.native
-/* private */ class AddIns ()
+/* private */ open class AddIns ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.AddIns {
   
@@ -20,15 +20,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Count: Double = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexPowerpoint.PowerPoint.AddIn = js.native
+  override def Item(Index: Any): typings.activexPowerpoint.PowerPoint.AddIn = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.AddIns_typekey")
   var PowerPointDotAddIns_typekey: typings.activexPowerpoint.PowerPoint.AddIns = js.native
   
   /* CompleteClass */
-  override def Remove(Index: js.Any): Unit = js.native
+  override def Remove(Index: Any): Unit = js.native
 }

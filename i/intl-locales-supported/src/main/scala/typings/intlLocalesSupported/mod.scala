@@ -19,8 +19,8 @@ object mod {
   trait IntlConstructor extends StObject {
     
     def supportedLocalesOf(locales: String): js.Array[String] = js.native
-    def supportedLocalesOf(locales: String, options: js.Any): js.Array[String] = js.native
+    def supportedLocalesOf(locales: String, options: Any): js.Array[String] = js.native
     def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native
-    def supportedLocalesOf(locales: js.Array[String], options: js.Any): js.Array[String] = js.native
+    def supportedLocalesOf(locales: js.Array[String], options: Any): js.Array[String] = js.native
   }
 }

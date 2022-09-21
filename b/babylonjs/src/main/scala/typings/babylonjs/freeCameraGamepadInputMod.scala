@@ -11,23 +11,23 @@ object freeCameraGamepadInputMod {
   
   @JSImport("babylonjs/Cameras/Inputs/freeCameraGamepadInput", "FreeCameraGamepadInput")
   @js.native
-  class FreeCameraGamepadInput ()
+  open class FreeCameraGamepadInput ()
     extends StObject
        with ICameraInput[FreeCamera] {
     
-    /* private */ var _cameraTransform: js.Any = js.native
+    /* private */ var _cameraTransform: Any = js.native
     
-    /* private */ var _deltaTransform: js.Any = js.native
+    /* private */ var _deltaTransform: Any = js.native
     
-    /* private */ var _onGamepadConnectedObserver: js.Any = js.native
+    /* private */ var _onGamepadConnectedObserver: Any = js.native
     
-    /* private */ var _onGamepadDisconnectedObserver: js.Any = js.native
+    /* private */ var _onGamepadDisconnectedObserver: Any = js.native
     
-    /* private */ var _vector2: js.Any = js.native
+    /* private */ var _vector2: Any = js.native
     
-    /* private */ var _vector3: js.Any = js.native
+    /* private */ var _vector3: Any = js.native
     
-    /* private */ var _yAxisScale: js.Any = js.native
+    /* private */ var _yAxisScale: Any = js.native
     
     /**
       * Define the camera the input is attached to.
@@ -43,18 +43,24 @@ object freeCameraGamepadInputMod {
     def checkInputs_MFreeCameraGamepadInput(): Unit = js.native
     
     /**
+      * Defines the minimum value at which any analog stick input is ignored.
+      * Note: This value should only be a value between 0 and 1.
+      */
+    var deadzoneDelta: Double = js.native
+    
+    /**
       * Define the Gamepad controlling the input
       */
     var gamepad: Nullable[typings.babylonjs.gamepadMod.Gamepad] = js.native
     
     /**
-      * Defines the gamepad rotation sensiblity.
+      * Defines the gamepad rotation sensibility.
       * This is the threshold from when rotation starts to be accounted for to prevent jittering.
       */
     var gamepadAngularSensibility: Double = js.native
     
     /**
-      * Defines the gamepad move sensiblity.
+      * Defines the gamepad move sensibility.
       * This is the threshold from when moving starts to be accounted for for to prevent jittering.
       */
     var gamepadMoveSensibility: Double = js.native

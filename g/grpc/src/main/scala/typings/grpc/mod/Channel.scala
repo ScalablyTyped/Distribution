@@ -1,15 +1,13 @@
 package typings.grpc.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grpc", "Channel")
 @js.native
-class Channel protected () extends StObject {
+open class Channel protected () extends StObject {
   /**
     * This constructor API is almost identical to the Client constructor,
     * except that some of the options for the Client constructor are not valid
@@ -25,14 +23,6 @@ class Channel protected () extends StObject {
     */
   def close(): Unit = js.native
   
-  def createCall(method: String, deadline: Double): Call = js.native
-  def createCall(method: String, deadline: Double, host: String): Call = js.native
-  def createCall(method: String, deadline: Double, host: String, parentCall: Null, propagateFlags: Double): Call = js.native
-  def createCall(method: String, deadline: Double, host: String, parentCall: Call): Call = js.native
-  def createCall(method: String, deadline: Double, host: String, parentCall: Call, propagateFlags: Double): Call = js.native
-  def createCall(method: String, deadline: Double, host: Null, parentCall: Null, propagateFlags: Double): Call = js.native
-  def createCall(method: String, deadline: Double, host: Null, parentCall: Call): Call = js.native
-  def createCall(method: String, deadline: Double, host: Null, parentCall: Call, propagateFlags: Double): Call = js.native
   /**
     * Create a call object. Call is an opaque type that is used by the Client
     * and Server classes. This function is called by the gRPC library when
@@ -46,14 +36,22 @@ class Channel protected () extends StObject {
     * @param propagateFlags A bitwise combination of elements of grpc.propagate
     *     that indicates what information to propagate from parentCall.
     */
-  def createCall(method: String, deadline: Date): Call = js.native
-  def createCall(method: String, deadline: Date, host: String): Call = js.native
-  def createCall(method: String, deadline: Date, host: String, parentCall: Null, propagateFlags: Double): Call = js.native
-  def createCall(method: String, deadline: Date, host: String, parentCall: Call): Call = js.native
-  def createCall(method: String, deadline: Date, host: String, parentCall: Call, propagateFlags: Double): Call = js.native
-  def createCall(method: String, deadline: Date, host: Null, parentCall: Null, propagateFlags: Double): Call = js.native
-  def createCall(method: String, deadline: Date, host: Null, parentCall: Call): Call = js.native
-  def createCall(method: String, deadline: Date, host: Null, parentCall: Call, propagateFlags: Double): Call = js.native
+  def createCall(method: String, deadline: js.Date): Call = js.native
+  def createCall(method: String, deadline: js.Date, host: String): Call = js.native
+  def createCall(method: String, deadline: js.Date, host: String, parentCall: Null, propagateFlags: Double): Call = js.native
+  def createCall(method: String, deadline: js.Date, host: String, parentCall: Call): Call = js.native
+  def createCall(method: String, deadline: js.Date, host: String, parentCall: Call, propagateFlags: Double): Call = js.native
+  def createCall(method: String, deadline: js.Date, host: Null, parentCall: Null, propagateFlags: Double): Call = js.native
+  def createCall(method: String, deadline: js.Date, host: Null, parentCall: Call): Call = js.native
+  def createCall(method: String, deadline: js.Date, host: Null, parentCall: Call, propagateFlags: Double): Call = js.native
+  def createCall(method: String, deadline: Double): Call = js.native
+  def createCall(method: String, deadline: Double, host: String): Call = js.native
+  def createCall(method: String, deadline: Double, host: String, parentCall: Null, propagateFlags: Double): Call = js.native
+  def createCall(method: String, deadline: Double, host: String, parentCall: Call): Call = js.native
+  def createCall(method: String, deadline: Double, host: String, parentCall: Call, propagateFlags: Double): Call = js.native
+  def createCall(method: String, deadline: Double, host: Null, parentCall: Null, propagateFlags: Double): Call = js.native
+  def createCall(method: String, deadline: Double, host: Null, parentCall: Call): Call = js.native
+  def createCall(method: String, deadline: Double, host: Null, parentCall: Call, propagateFlags: Double): Call = js.native
   
   /**
     * Get the channel's current connectivity state.
@@ -68,11 +66,6 @@ class Channel protected () extends StObject {
     */
   def getTarget(): String = js.native
   
-  def watchConnectivityState(
-    currentState: connectivityState,
-    deadline: Double,
-    callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
   /**
     * Watch for connectivity state changes.
     * @param currentState The state to watch for transitions from. This should
@@ -84,7 +77,12 @@ class Channel protected () extends StObject {
     */
   def watchConnectivityState(
     currentState: connectivityState,
-    deadline: Date,
-    callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
+    deadline: js.Date,
+    callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]
+  ): Unit = js.native
+  def watchConnectivityState(
+    currentState: connectivityState,
+    deadline: Double,
+    callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]
   ): Unit = js.native
 }

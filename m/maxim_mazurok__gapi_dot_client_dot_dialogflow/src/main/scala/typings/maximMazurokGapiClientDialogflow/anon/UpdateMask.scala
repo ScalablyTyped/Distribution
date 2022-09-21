@@ -26,12 +26,9 @@ trait UpdateMask extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity
-    * data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
+    * Resource name of the settings. Required for the SecuritySettingsService.UpdateSecuritySettings method. SecuritySettingsService.CreateSecuritySettings populates the name
+    * automatically. Format: `projects//locations//securitySettings/`.
     */
-  var languageCode: js.UndefOr[String] = js.undefined
-  
-  /** The unique identifier of the entity type. Required for EntityTypes.UpdateEntityType and EntityTypes.BatchUpdateEntityTypes methods. Format: `projects//agent/entityTypes/`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -43,7 +40,7 @@ trait UpdateMask extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Optional. The mask to control which fields get updated. */
+  /** Required. The mask to control which fields get updated. If the mask is not present, all fields will be updated. */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -84,10 +81,6 @@ object UpdateMask {
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-    
-    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
-    
-    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

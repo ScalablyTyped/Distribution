@@ -7,14 +7,13 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.getWithProofPbMod.RequestItem.RequestedItemsCase
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "RequestItem")
 @js.native
-class RequestItem () extends Message {
+open class RequestItem () extends Message {
   
   def clearGetAccountStateRequest(): Unit = js.native
   
@@ -101,7 +100,7 @@ object RequestItem {
     /* 0 */ val REQUESTEDITEMS_NOT_SET: typings.libraCore.getWithProofPbMod.RequestItem.RequestedItemsCase.REQUESTEDITEMS_NOT_SET & Double = js.native
   }
   
-  inline def deserializeBinary(bytes: Uint8Array): RequestItem = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[RequestItem]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): RequestItem = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[RequestItem]
   
   inline def deserializeBinaryFromReader(message: RequestItem, reader: BinaryReader): RequestItem = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[RequestItem]
   

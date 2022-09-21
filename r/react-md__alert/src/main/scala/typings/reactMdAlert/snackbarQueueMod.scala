@@ -16,7 +16,7 @@ object snackbarQueueMod {
   
   @JSImport("@react-md/alert/types/SnackbarQueue", "SnackbarQueue")
   @js.native
-  val SnackbarQueue: ForwardRefExoticComponent[SnackbarQueueProps[js.Any] & RefAttributes[HTMLDivElement]] = js.native
+  val SnackbarQueue: ForwardRefExoticComponent[SnackbarQueueProps[Any] & RefAttributes[HTMLDivElement]] = js.native
   
   type ActionEventHandler[M /* <: ToastMessage */] = js.Function2[/* message */ M, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Unit]
   
@@ -43,7 +43,7 @@ object snackbarQueueMod {
       
       inline def setQueue(value: js.Array[M]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      inline def setQueueVarargs(value: M*): Self = StObject.set(x, "queue", js.Array(value :_*))
+      inline def setQueueVarargs(value: M*): Self = StObject.set(x, "queue", js.Array(value*))
     }
   }
 }

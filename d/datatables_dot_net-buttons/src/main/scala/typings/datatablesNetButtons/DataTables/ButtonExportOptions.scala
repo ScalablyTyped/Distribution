@@ -21,6 +21,6 @@ object ButtonExportOptions {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: ButtonSelectorTypes*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: ButtonSelectorTypes*): Self = StObject.set(x, "columns", js.Array(value*))
   }
 }

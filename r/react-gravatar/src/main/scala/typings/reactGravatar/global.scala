@@ -14,7 +14,7 @@ object global {
       */
     @JSGlobal("Gravatar")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.reactGravatar.mod.^
     
     /* static member */

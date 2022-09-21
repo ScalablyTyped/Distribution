@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFontBoldCommand")
 @js.native
-class ChangeFontBoldCommand ()
+open class ChangeFontBoldCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFontBoldCommand {
   

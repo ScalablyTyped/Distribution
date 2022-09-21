@@ -1,6 +1,8 @@
 package typings.onfleetNodeOnfleet
 
 import typings.onfleetNodeOnfleet.anon.PartialCreateRecipientPro
+import typings.onfleetNodeOnfleet.metadataMod.MatchMetadata
+import typings.onfleetNodeOnfleet.metadataMod.MatchMetadataResult
 import typings.onfleetNodeOnfleet.metadataMod.OnfleetMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +12,7 @@ object recipientsMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Recipients", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Recipient
   
@@ -41,7 +43,7 @@ object recipientsMod {
       
       inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      inline def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+      inline def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,7 @@ object recipientsMod {
       
       inline def setMetadata(value: js.Array[OnfleetMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      inline def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+      inline def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -129,6 +131,10 @@ object recipientsMod {
     
     def get(queryOrId: String): js.Promise[OnfleetRecipient] = js.native
     def get(queryOrId: String, queryKey: RecipientQueryKey): js.Promise[OnfleetRecipient] = js.native
+    
+    def matchMetadata(obj: js.Array[OnfleetMetadata]): js.Promise[js.Array[MatchMetadataResult]] = js.native
+    @JSName("matchMetadata")
+    var matchMetadata_Original: MatchMetadata[js.Array[OnfleetMetadata]] = js.native
     
     def update(id: String, recipient: PartialCreateRecipientPro): js.Promise[OnfleetRecipient] = js.native
   }

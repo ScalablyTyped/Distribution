@@ -1,6 +1,8 @@
 package typings.carbonComponents.mod
 
-import typings.carbonComponents.anon.Left
+import typings.carbonComponents.anon.PartialFloatingMenuOption
+import typings.carbonComponents.floatingMenuMod.FloatingMenuOptions
+import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,9 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("carbon-components", "FloatingMenu")
 @js.native
-class FloatingMenu protected ()
+open class FloatingMenu protected ()
   extends typings.carbonComponents.componentsMod.FloatingMenu {
-  def this(element: js.Any, options: js.Any) = this()
+  def this(element: HTMLElement) = this()
+  def this(element: HTMLElement, options: PartialFloatingMenuOption) = this()
 }
 object FloatingMenu {
   
@@ -21,74 +24,12 @@ object FloatingMenu {
   /* static member */
   @JSImport("carbon-components", "FloatingMenu.components")
   @js.native
-  def components: WeakMap[js.Object, js.Any] = js.native
-  inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+  def components: WeakMap[js.Object, Any] = js.native
+  inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   
   /* static member */
-  object options {
-    
-    @JSImport("carbon-components", "FloatingMenu.options")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("carbon-components", "FloatingMenu.options.attribAvoidFocusOnOpen")
-    @js.native
-    def attribAvoidFocusOnOpen: String = js.native
-    inline def attribAvoidFocusOnOpen_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attribAvoidFocusOnOpen")(x.asInstanceOf[js.Any])
-    
-    @JSImport("carbon-components", "FloatingMenu.options.attribDirection")
-    @js.native
-    def attribDirection: String = js.native
-    inline def attribDirection_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attribDirection")(x.asInstanceOf[js.Any])
-    
-    @JSImport("carbon-components", "FloatingMenu.options.classRefShown")
-    @js.native
-    def classRefShown: String = js.native
-    inline def classRefShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classRefShown")(x.asInstanceOf[js.Any])
-    
-    @JSImport("carbon-components", "FloatingMenu.options.classShown")
-    @js.native
-    def classShown: String = js.native
-    inline def classShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("classShown")(x.asInstanceOf[js.Any])
-    
-    @JSImport("carbon-components", "FloatingMenu.options.eventAfterHidden")
-    @js.native
-    def eventAfterHidden: String = js.native
-    inline def eventAfterHidden_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventAfterHidden")(x.asInstanceOf[js.Any])
-    
-    @JSImport("carbon-components", "FloatingMenu.options.eventAfterShown")
-    @js.native
-    def eventAfterShown: String = js.native
-    inline def eventAfterShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventAfterShown")(x.asInstanceOf[js.Any])
-    
-    @JSImport("carbon-components", "FloatingMenu.options.eventBeforeHidden")
-    @js.native
-    def eventBeforeHidden: String = js.native
-    inline def eventBeforeHidden_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventBeforeHidden")(x.asInstanceOf[js.Any])
-    
-    @JSImport("carbon-components", "FloatingMenu.options.eventBeforeShown")
-    @js.native
-    def eventBeforeShown: String = js.native
-    inline def eventBeforeShown_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eventBeforeShown")(x.asInstanceOf[js.Any])
-    
-    @JSImport("carbon-components", "FloatingMenu.options.offset")
-    @js.native
-    def offset: Left = js.native
-    inline def offset_=(x: Left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("offset")(x.asInstanceOf[js.Any])
-    
-    @JSImport("carbon-components", "FloatingMenu.options.refNode")
-    @js.native
-    def refNode: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
-    inline def refNode_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("refNode")(x.asInstanceOf[js.Any])
-    
-    @JSImport("carbon-components", "FloatingMenu.options.selectorContainer")
-    @js.native
-    def selectorContainer: String = js.native
-    inline def selectorContainer_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectorContainer")(x.asInstanceOf[js.Any])
-    
-    @JSImport("carbon-components", "FloatingMenu.options.selectorPrimaryFocus")
-    @js.native
-    def selectorPrimaryFocus: String = js.native
-    inline def selectorPrimaryFocus_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectorPrimaryFocus")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("carbon-components", "FloatingMenu.options")
+  @js.native
+  def options: FloatingMenuOptions = js.native
+  inline def options_=(x: FloatingMenuOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
 }

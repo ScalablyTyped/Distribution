@@ -9,7 +9,7 @@ trait ErrorInfo extends StObject {
   /**
     * Error message.
     */
-  var Message: js.UndefOr[java.lang.String] = js.undefined
+  var Message: js.UndefOr[String] = js.undefined
   
   /**
     * Error type.
@@ -25,7 +25,7 @@ object ErrorInfo {
   
   extension [Self <: ErrorInfo](x: Self) {
     
-    inline def setMessage(value: java.lang.String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
     inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     

@@ -29,7 +29,7 @@ object DescribeJobQueuesResponse {
     
     inline def setJobQueuesUndefined: Self = StObject.set(x, "jobQueues", js.undefined)
     
-    inline def setJobQueuesVarargs(value: JobQueueDetail*): Self = StObject.set(x, "jobQueues", js.Array(value :_*))
+    inline def setJobQueuesVarargs(value: JobQueueDetail*): Self = StObject.set(x, "jobQueues", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

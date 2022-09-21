@@ -33,6 +33,6 @@ object UnindexedFace {
     
     inline def setReasonsUndefined: Self = StObject.set(x, "Reasons", js.undefined)
     
-    inline def setReasonsVarargs(value: Reason*): Self = StObject.set(x, "Reasons", js.Array(value :_*))
+    inline def setReasonsVarargs(value: Reason*): Self = StObject.set(x, "Reasons", js.Array(value*))
   }
 }

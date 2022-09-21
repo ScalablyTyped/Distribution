@@ -50,15 +50,15 @@ object meta {
       addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
       dispose: () => Unit,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: String => js.Any,
+      getPropertyValue: String => Any,
       parseFormula: (String, CellAddress) => SafeArray[FormulaToken],
       printFormula: (SeqEquiv[FormulaToken], CellAddress) => String,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeEventListener: XEventListener => Unit,
       removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (String, js.Any) => Unit
+      setPropertyValue: (String, Any) => Unit
     ): XFormulaParser = {
       val __obj = js.Dynamic.literal(FormulaOpCodeMapper = FormulaOpCodeMapper.asInstanceOf[js.Any], OpCodeMap = OpCodeMap.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), dispose = js.Any.fromFunction0(dispose), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), parseFormula = js.Any.fromFunction2(parseFormula), printFormula = js.Any.fromFunction2(printFormula), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
       __obj.asInstanceOf[XFormulaParser]
@@ -101,18 +101,18 @@ object meta {
       acquire: () => Unit,
       addPropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-      getByIndex: Double => js.Any,
+      getByIndex: Double => Any,
       getCount: () => Double,
       getElementType: () => `type`,
       getFunction: Double => XFunctionDescription,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: String => js.Any,
+      getPropertyValue: String => Any,
       hasElements: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (String, js.Any) => Unit
+      setPropertyValue: (String, Any) => Unit
     ): XFunctionCategory = {
       val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Number = Number.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), getFunction = js.Any.fromFunction1(getFunction), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
       __obj.asInstanceOf[XFunctionCategory]
@@ -164,12 +164,12 @@ object meta {
       addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
       createFormula: SeqEquiv[String] => String,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: String => js.Any,
-      queryInterface: `type` => js.Any,
+      getPropertyValue: String => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (String, js.Any) => Unit
+      setPropertyValue: (String, Any) => Unit
     ): XFunctionDescription = {
       val __obj = js.Dynamic.literal(Arguments = Arguments.asInstanceOf[js.Any], Category = Category.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Signature = Signature.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createFormula = js.Any.fromFunction1(createFormula), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
       __obj.asInstanceOf[XFunctionDescription]
@@ -218,13 +218,13 @@ object meta {
       acquire: () => Unit,
       addEventListener: XEventListener => Unit,
       dispose: () => Unit,
-      getByIndex: Double => js.Any,
+      getByIndex: Double => Any,
       getCategory: Double => XFunctionCategory,
       getCount: () => Double,
       getElementType: () => `type`,
       getFunctionByName: String => XFunctionDescription,
       hasElements: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeEventListener: XEventListener => Unit
     ): XFunctionManager = {

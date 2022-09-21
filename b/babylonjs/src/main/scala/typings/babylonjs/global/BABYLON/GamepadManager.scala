@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Initializes the gamepad manager
   * @param _scene BabylonJS scene
   */
-class GamepadManager ()
+open class GamepadManager ()
   extends StObject
      with typings.babylonjs.BABYLON.GamepadManager {
   def this(_scene: typings.babylonjs.BABYLON.Scene) = this()

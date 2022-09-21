@@ -46,7 +46,6 @@ import typings.chromeApps.chromeAppsStrings.reserved_
 import typings.chromeApps.chromeAppsStrings.standard_
 import typings.chromeApps.chromeAppsStrings.synchronous_
 import typings.chromeApps.chromeAppsStrings.vendor_
-import typings.std.ArrayBuffer
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -86,7 +85,7 @@ object usb {
     var description: js.UndefOr[String] = js.undefined
     
     /** Extra descriptor data associated with this configuration. */
-    var extra_data: ArrayBuffer
+    var extra_data: js.typedarray.ArrayBuffer
     
     /** Available interfaces. */
     var interfaces: js.Array[InterfaceDescriptor]
@@ -105,7 +104,7 @@ object usb {
     inline def apply(
       active: Boolean,
       configurationValue: integer,
-      extra_data: ArrayBuffer,
+      extra_data: js.typedarray.ArrayBuffer,
       interfaces: js.Array[InterfaceDescriptor],
       maxPower: integer,
       remoteWakeup: Boolean,
@@ -125,11 +124,11 @@ object usb {
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      inline def setExtra_data(value: ArrayBuffer): Self = StObject.set(x, "extra_data", value.asInstanceOf[js.Any])
+      inline def setExtra_data(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "extra_data", value.asInstanceOf[js.Any])
       
       inline def setInterfaces(value: js.Array[InterfaceDescriptor]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
       
-      inline def setInterfacesVarargs(value: InterfaceDescriptor*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
+      inline def setInterfacesVarargs(value: InterfaceDescriptor*): Self = StObject.set(x, "interfaces", js.Array(value*))
       
       inline def setMaxPower(value: integer): Self = StObject.set(x, "maxPower", value.asInstanceOf[js.Any])
       
@@ -360,7 +359,7 @@ object usb {
       * Extra descriptor data associated with this endpoint.
       * @since Chrome 39.
       */
-    var extra_data: ArrayBuffer
+    var extra_data: js.typedarray.ArrayBuffer
     
     /** Maximum packet size. */
     var maximumPacketSize: integer
@@ -424,7 +423,7 @@ object usb {
             in_ | out_
           ]
         ],
-      extra_data: ArrayBuffer,
+      extra_data: js.typedarray.ArrayBuffer,
       maximumPacketSize: integer,
       `type`: ToStringLiteral[
           BULK, 
@@ -455,7 +454,7 @@ object usb {
             ]
       ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      inline def setExtra_data(value: ArrayBuffer): Self = StObject.set(x, "extra_data", value.asInstanceOf[js.Any])
+      inline def setExtra_data(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "extra_data", value.asInstanceOf[js.Any])
       
       inline def setMaximumPacketSize(value: integer): Self = StObject.set(x, "maximumPacketSize", value.asInstanceOf[js.Any])
       
@@ -505,7 +504,7 @@ object usb {
   trait GenericTransferInfo extends StObject {
     
     /** The data to transmit (required only by output transfers). */
-    var data: js.UndefOr[ArrayBuffer] = js.undefined
+    var data: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
     
     /**
       * The transfer direction ('in' or 'out').
@@ -552,7 +551,7 @@ object usb {
     
     extension [Self <: GenericTransferInfo](x: Self) {
       
-      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -598,7 +597,7 @@ object usb {
       * Extra descriptor data associated with this interface.
       * @since Chrome 39.
       */
-    var extra_data: ArrayBuffer
+    var extra_data: js.typedarray.ArrayBuffer
     
     /** The USB interface class. */
     var interfaceClass: integer
@@ -617,7 +616,7 @@ object usb {
     inline def apply(
       alternateSetting: integer,
       endpoints: js.Array[EndpointDescriptor],
-      extra_data: ArrayBuffer,
+      extra_data: js.typedarray.ArrayBuffer,
       interfaceClass: integer,
       interfaceNumber: integer,
       interfaceProtocol: integer,
@@ -637,9 +636,9 @@ object usb {
       
       inline def setEndpoints(value: js.Array[EndpointDescriptor]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
-      inline def setEndpointsVarargs(value: EndpointDescriptor*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: EndpointDescriptor*): Self = StObject.set(x, "endpoints", js.Array(value*))
       
-      inline def setExtra_data(value: ArrayBuffer): Self = StObject.set(x, "extra_data", value.asInstanceOf[js.Any])
+      inline def setExtra_data(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "extra_data", value.asInstanceOf[js.Any])
       
       inline def setInterfaceClass(value: integer): Self = StObject.set(x, "interfaceClass", value.asInstanceOf[js.Any])
       
@@ -686,7 +685,7 @@ object usb {
   trait TransferInfo extends StObject {
     
     /** The data to transmit (required only by output transfers). */
-    var data: js.UndefOr[ArrayBuffer] = js.undefined
+    var data: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
     
     /**
       * The transfer direction ('in' or 'out').
@@ -785,7 +784,7 @@ object usb {
     
     extension [Self <: TransferInfo](x: Self) {
       
-      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -841,7 +840,7 @@ object usb {
   trait TransferResultInfo extends StObject {
     
     /** The data returned by an input transfer. undefined for output transfers. */
-    var data: js.UndefOr[ArrayBuffer] = js.undefined
+    var data: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
     
     /** A value of 0 indicates that the transfer was a success. Other values indicate failure. */
     var resultCode: js.UndefOr[integer] = js.undefined
@@ -855,7 +854,7 @@ object usb {
     
     extension [Self <: TransferResultInfo](x: Self) {
       
-      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       

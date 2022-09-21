@@ -10,10 +10,10 @@ object linkedCameraMod {
   
   @JSImport("material-ui/svg-icons/image/linked-camera", JSImport.Default)
   @js.native
-  class default () extends ImageLinkedCamera
+  open class default () extends ImageLinkedCamera
   
   @JSImport("material-ui/svg-icons/image/linked-camera", "ImageLinkedCamera")
   @js.native
-  class ImageLinkedCamera ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageLinkedCamera ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

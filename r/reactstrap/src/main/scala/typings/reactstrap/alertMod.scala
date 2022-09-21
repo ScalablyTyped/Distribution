@@ -9,7 +9,7 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.Ref
 import typings.reactstrap.fadeMod.FadeProps
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,12 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object alertMod {
   
-  @JSImport("reactstrap/lib/Alert", JSImport.Default)
+  @JSImport("reactstrap/types/lib/Alert", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[AlertProps, js.Object, js.Any]
+  open class default ()
+    extends Component[AlertProps, js.Object, Any]
   
-  type Alert = Component[AlertProps, js.Object, js.Any]
+  type Alert = Component[AlertProps, js.Object, Any]
   
   trait AlertProps
     extends StObject
@@ -30,7 +30,7 @@ object alertMod {
     
     var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var toggle: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
+    var toggle: js.UndefOr[MouseEventHandler[Any]] = js.undefined
   }
   object AlertProps {
     
@@ -45,7 +45,7 @@ object alertMod {
       
       inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
       
-      inline def setToggle(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+      inline def setToggle(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
       
       inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     }
@@ -54,7 +54,7 @@ object alertMod {
   trait UncontrolledAlertProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var closeAriaLabel: js.UndefOr[String] = js.undefined
     
@@ -66,7 +66,7 @@ object alertMod {
     
     var innerRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
     
     var transition: js.UndefOr[FadeProps] = js.undefined
   }
@@ -103,7 +103,7 @@ object alertMod {
       
       inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       

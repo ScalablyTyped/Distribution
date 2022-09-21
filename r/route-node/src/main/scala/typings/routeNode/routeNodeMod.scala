@@ -15,7 +15,7 @@ object routeNodeMod {
   
   @JSImport("route-node/dist/RouteNode", "RouteNode")
   @js.native
-  class RouteNode ()
+  open class RouteNode ()
     extends StObject
        with Route {
     def this(name: String) = this()
@@ -47,23 +47,23 @@ object routeNodeMod {
     
     def addNode(name: String, path: String): this.type = js.native
     
-    /* private */ var addRouteNode: js.Any = js.native
+    /* private */ var addRouteNode: Any = js.native
     
     def buildPath(routeName: String): String = js.native
     def buildPath(routeName: String, params: Unit, options: BuildOptions): String = js.native
-    def buildPath(routeName: String, params: Record[String, js.Any]): String = js.native
-    def buildPath(routeName: String, params: Record[String, js.Any], options: BuildOptions): String = js.native
+    def buildPath(routeName: String, params: Record[String, Any]): String = js.native
+    def buildPath(routeName: String, params: Record[String, Any], options: BuildOptions): String = js.native
     
     def buildState(name: String): RouteNodeState | Null = js.native
-    def buildState(name: String, params: Record[String, js.Any]): RouteNodeState | Null = js.native
+    def buildState(name: String, params: Record[String, Any]): RouteNodeState | Null = js.native
     
-    /* private */ var checkParents: js.Any = js.native
+    /* private */ var checkParents: Any = js.native
     
     var children: js.Array[RouteNode] = js.native
     
-    /* private */ var findAbsoluteChildren: js.Any = js.native
+    /* private */ var findAbsoluteChildren: Any = js.native
     
-    /* private */ var findSlashChild: js.Any = js.native
+    /* private */ var findSlashChild: Any = js.native
     
     def getNonAbsoluteChildren(): js.Array[RouteNode] = js.native
     
@@ -72,11 +72,11 @@ object routeNodeMod {
     
     def getPath(routeName: String): String | Null = js.native
     
-    /* private */ var getSegmentsByName: js.Any = js.native
+    /* private */ var getSegmentsByName: Any = js.native
     
-    /* private */ var getSegmentsMatchingPath: js.Any = js.native
+    /* private */ var getSegmentsMatchingPath: Any = js.native
     
-    /* private */ var hasParentsParams: js.Any = js.native
+    /* private */ var hasParentsParams: Any = js.native
     
     def matchPath(path: String): RouteNodeState | Null = js.native
     def matchPath(path: String, options: MatchOptions): RouteNodeState | Null = js.native
@@ -85,7 +85,7 @@ object routeNodeMod {
     
     var parent: js.UndefOr[RouteNode] = js.native
     
-    var parser: (Path[Record[String, js.Any]]) | Null = js.native
+    var parser: (Path[Record[String, Any]]) | Null = js.native
     
     var path: String = js.native
     
@@ -139,7 +139,7 @@ object routeNodeMod {
   @js.native
   trait Callback extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   trait MatchOptions extends StObject {
@@ -199,24 +199,24 @@ object routeNodeMod {
   
   trait MatchResponse extends StObject {
     
-    var params: Record[String, js.Any]
+    var params: Record[String, Any]
     
     var segments: js.Array[RouteNode]
   }
   object MatchResponse {
     
-    inline def apply(params: Record[String, js.Any], segments: js.Array[RouteNode]): MatchResponse = {
+    inline def apply(params: Record[String, Any], segments: js.Array[RouteNode]): MatchResponse = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatchResponse]
     }
     
     extension [Self <: MatchResponse](x: Self) {
       
-      inline def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Record[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setSegments(value: js.Array[RouteNode]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       
-      inline def setSegmentsVarargs(value: RouteNode*): Self = StObject.set(x, "segments", js.Array(value :_*))
+      inline def setSegmentsVarargs(value: RouteNode*): Self = StObject.set(x, "segments", js.Array(value*))
     }
   }
   
@@ -243,7 +243,7 @@ object routeNodeMod {
   
   trait RouteDefinition
     extends StObject
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
        with Route {
     
     var name: String
@@ -308,11 +308,11 @@ object routeNodeMod {
     
     var name: String
     
-    var params: Record[String, js.Any]
+    var params: Record[String, Any]
   }
   object RouteNodeState {
     
-    inline def apply(meta: RouteNodeStateMeta, name: String, params: Record[String, js.Any]): RouteNodeState = {
+    inline def apply(meta: RouteNodeStateMeta, name: String, params: Record[String, Any]): RouteNodeState = {
       val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteNodeState]
     }
@@ -323,7 +323,7 @@ object routeNodeMod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Record[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
   

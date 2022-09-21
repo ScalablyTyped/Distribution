@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertHtmlCommand")
 @js.native
-class InsertHtmlCommand ()
+open class InsertHtmlCommand ()
   extends StObject
      with typings.devexpressWeb.InsertHtmlCommand {
   

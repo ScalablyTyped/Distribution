@@ -4,49 +4,68 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- scala.Any because Inheritance from two classes. Inlined 
-- scala.AnyRef because Inheritance from two classes. Inlined 
-- scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
-- js.Any because Inheritance from two classes. Inlined 
-- scala.AnyRef because Inheritance from two classes. Inlined 
-- js.Object because Inheritance from two classes. Inlined 
-- js.Any because Inheritance from two classes. Inlined 
-- org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
-- js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
-- org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @JSImport("survey-knockout", "ItemValue")
+@JSImport("survey-knockout", "ItemValue")
 @js.native
-class ItemValue protected () extends Base {
-  def this(value: js.Any) = this()
-  def this(value: js.Any, text: String) = this()
-  def this(value: js.Any, text: String, typeName: String) = this()
-  def this(value: js.Any, text: Unit, typeName: String) = this()
+open class ItemValue protected ()
+  extends Base
+     with ILocalizableOwner
+     with IShortcutText {
+  def this(value: Any) = this()
+  def this(value: Any, text: String) = this()
+  def this(value: Any, text: String, typeName: String) = this()
+  def this(value: Any, text: Unit, typeName: String) = this()
   
-  val calculatedText: String = js.native
+  var _locOwner: ILocalizableOwner = js.native
+  
+  def calculatedText: String = js.native
+  
+  var enableConditionRunner: ConditionRunner = js.native
+  
+  def enableIf: String = js.native
+  def enableIf_=(`val`: String): Unit = js.native
   
   /* protected */ def getConditionRunner(isVisible: Boolean): ConditionRunner = js.native
   
-  def getData(): js.Any = js.native
+  def getData(): Any = js.native
   
-  def getLocale(): String = js.native
+  /* InferMemberOverrides */
+  override def getLocale(): String = js.native
   
-  val hasText: Boolean = js.native
+  /* CompleteClass */
+  override def getMarkdownHtml(text: String, name: String): String = js.native
   
-  val isEnabled: js.Any = js.native
+  /* CompleteClass */
+  override def getProcessedText(text: String): String = js.native
   
-  val isVisible: Boolean = js.native
+  /* CompleteClass */
+  override def getRenderer(name: String): String = js.native
   
-  var locOwner: ILocalizableOwner = js.native
+  /* CompleteClass */
+  override def getRendererContext(locStr: LocalizableString): Any = js.native
   
-  val locText: LocalizableString = js.native
+  def hasText: Boolean = js.native
   
-  def onCreating(): js.Any = js.native
+  def isEnabled: Any = js.native
   
-  var originalItem: js.Any = js.native
+  def isVisible: Any = js.native
+  
+  def locOwner: ILocalizableOwner = js.native
+  def locOwner_=(`val`: ILocalizableOwner): Unit = js.native
+  
+  def locText: LocalizableString = js.native
+  
+  var locTextValue: LocalizableString = js.native
+  
+  def onCreating(): Any = js.native
+  
+  var originalItem: Any = js.native
   
   var ownerPropertyName: String = js.native
   
-  def setData(value: js.Any): Unit = js.native
+  def pureText: String = js.native
+  def pureText_=(`val`: String): Unit = js.native
+  
+  def setData(value: Any): Unit = js.native
   
   def setIsEnabled(`val`: Boolean): Unit = js.native
   
@@ -54,13 +73,21 @@ class ItemValue protected () extends Base {
   
   def setLocText(locText: LocalizableString): Unit = js.native
   
-  var text: String = js.native
+  /* CompleteClass */
+  var shortcutText: String = js.native
+  @JSName("shortcutText")
+  def shortcutText_MItemValue: String = js.native
   
-  /* protected */ var typeName: String = js.native
+  def text: String = js.native
+  def text_=(`val`: String): Unit = js.native
   
-  var value: js.Any = js.native
+  def value: Any = js.native
+  def value_=(`val`: Any): Unit = js.native
   
-  var visibleIf: String = js.native
+  var visibleConditionRunner: ConditionRunner = js.native
+  
+  def visibleIf: String = js.native
+  def visibleIf_=(`val`: String): Unit = js.native
 }
 /* static members */
 object ItemValue {
@@ -69,47 +96,54 @@ object ItemValue {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("survey-knockout", "ItemValue.Separator")
-  @js.native
-  def Separator: String = js.native
-  inline def Separator_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Separator")(x.asInstanceOf[js.Any])
+  inline def getData(items: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getData")(items.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def createArray(locOwner: ILocalizableOwner): js.Array[ItemValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createArray")(locOwner.asInstanceOf[js.Any]).asInstanceOf[js.Array[ItemValue]]
+  inline def getItemByValue(items: Any, `val`: Any): ItemValue = (^.asInstanceOf[js.Dynamic].applyDynamic("getItemByValue")(items.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[ItemValue]
   
-  inline def getData(items: js.Array[ItemValue]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getData")(items.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getTextOrHtmlByValue(items: Any, `val`: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextOrHtmlByValue")(items.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def getItemByValue(items: js.Array[ItemValue], `val`: js.Any): ItemValue = (^.asInstanceOf[js.Dynamic].applyDynamic("getItemByValue")(items.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[ItemValue]
+  inline def locStrsChanged(items: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("locStrsChanged")(items.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def getTextOrHtmlByValue(items: js.Array[ItemValue], `val`: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextOrHtmlByValue")(items.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def locStrsChanged(items: js.Array[ItemValue]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("locStrsChanged")(items.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
+  inline def runConditionsForItems(items: Any, filteredItems: Any, runner: ConditionRunner, values: Any, properties: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("runConditionsForItems")(items.asInstanceOf[js.Any], filteredItems.asInstanceOf[js.Any], runner.asInstanceOf[js.Any], values.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def runConditionsForItems(
-    items: js.Array[ItemValue],
-    filteredItems: js.Array[ItemValue],
+    items: Any,
+    filteredItems: Any,
     runner: ConditionRunner,
-    values: js.Any,
-    properties: js.Any
-  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("runConditionsForItems")(items.asInstanceOf[js.Any], filteredItems.asInstanceOf[js.Any], runner.asInstanceOf[js.Any], values.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def runConditionsForItems(
-    items: js.Array[ItemValue],
-    filteredItems: js.Array[ItemValue],
-    runner: ConditionRunner,
-    values: js.Any,
-    properties: js.Any,
+    values: Any,
+    properties: Any,
     useItemExpression: Boolean
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("runConditionsForItems")(items.asInstanceOf[js.Any], filteredItems.asInstanceOf[js.Any], runner.asInstanceOf[js.Any], values.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], useItemExpression.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  inline def runEnabledConditionsForItems(items: js.Array[ItemValue], runner: ConditionRunner, values: js.Any, properties: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("runEnabledConditionsForItems")(items.asInstanceOf[js.Any], runner.asInstanceOf[js.Any], values.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def runEnabledConditionsForItems(
-    items: js.Array[ItemValue],
+  inline def runConditionsForItems(
+    items: Any,
+    filteredItems: Any,
     runner: ConditionRunner,
-    values: js.Any,
-    properties: js.Any,
-    onItemCallBack: js.Function1[/* item */ this.type, Boolean]
+    values: Any,
+    properties: Any,
+    useItemExpression: Boolean,
+    onItemCallBack: js.Function2[/* item */ this.type, /* val */ Boolean, Boolean]
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("runConditionsForItems")(items.asInstanceOf[js.Any], filteredItems.asInstanceOf[js.Any], runner.asInstanceOf[js.Any], values.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], useItemExpression.asInstanceOf[js.Any], onItemCallBack.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def runConditionsForItems(
+    items: Any,
+    filteredItems: Any,
+    runner: ConditionRunner,
+    values: Any,
+    properties: Any,
+    useItemExpression: Unit,
+    onItemCallBack: js.Function2[/* item */ this.type, /* val */ Boolean, Boolean]
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("runConditionsForItems")(items.asInstanceOf[js.Any], filteredItems.asInstanceOf[js.Any], runner.asInstanceOf[js.Any], values.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], useItemExpression.asInstanceOf[js.Any], onItemCallBack.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def runEnabledConditionsForItems(items: Any, runner: ConditionRunner, values: Any, properties: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("runEnabledConditionsForItems")(items.asInstanceOf[js.Any], runner.asInstanceOf[js.Any], values.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def runEnabledConditionsForItems(
+    items: Any,
+    runner: ConditionRunner,
+    values: Any,
+    properties: Any,
+    onItemCallBack: js.Function2[/* item */ this.type, /* val */ Boolean, Boolean]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("runEnabledConditionsForItems")(items.asInstanceOf[js.Any], runner.asInstanceOf[js.Any], values.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], onItemCallBack.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def setData(items: js.Array[ItemValue], values: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setData")(items.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def setupArray(items: js.Array[ItemValue], locOwner: ILocalizableOwner): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupArray")(items.asInstanceOf[js.Any], locOwner.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  /*
+    * Resets the input array and fills it with values from the values array
+    */
+  inline def setData(items: Any, values: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setData")(items.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setData(items: Any, values: Any, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setData")(items.asInstanceOf[js.Any], values.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

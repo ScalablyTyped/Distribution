@@ -19,8 +19,8 @@ import typings.openfin.v2MainMod.Fin
 import typings.openfin.v2MainMod.View
 import typings.openfin.v2MainMod.Window
 import typings.openfin.windowMod.ViewDetached
-import typings.resizeObserverBrowser.ResizeObserver
 import typings.std.HTMLElement
+import typings.std.ResizeObserver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +29,7 @@ object openfinLayoutMod {
   
   @JSImport("openfin/_v2/api/platform/openfin-layout", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with LayoutManager {
     def this(fin: Fin) = this()
@@ -44,7 +44,7 @@ object openfinLayoutMod {
     
     var client: ChannelClient = js.native
     
-    def closeView(viewConfig: js.Any): js.Promise[Unit] = js.native
+    def closeView(viewConfig: Any): js.Promise[Unit] = js.native
     
     var container: HTMLElement = js.native
     
@@ -61,9 +61,9 @@ object openfinLayoutMod {
     def dispatchLayoutEvent(action: String): js.Promise[Unit] = js.native
     def dispatchLayoutEvent(action: String, payload: js.Object): js.Promise[Unit] = js.native
     
-    var dragProxy: js.Any = js.native
+    var dragProxy: Any = js.native
     
-    /* private */ var fin: js.Any = js.native
+    /* private */ var fin: Any = js.native
     
     def getOfViewFromComponentState(componentState: NameAny): View = js.native
     
@@ -109,7 +109,7 @@ object openfinLayoutMod {
     
     def registerViewComponent(): Unit = js.native
     
-    def removeView(viewConfig: js.Any): js.Promise[View] = js.native
+    def removeView(viewConfig: Any): js.Promise[View] = js.native
     
     def replaceCloseTabButton(tab: Tab): Unit = js.native
     
@@ -133,8 +133,8 @@ object openfinLayoutMod {
     
     def setupWindowListeners(): js.Promise[Unit] = js.native
     
-    def showAllViews(): js.Promise[js.Array[js.Any]] = js.native
-    def showAllViews(resize: Boolean): js.Promise[js.Array[js.Any]] = js.native
+    def showAllViews(): js.Promise[js.Array[Any]] = js.native
+    def showAllViews(resize: Boolean): js.Promise[js.Array[Any]] = js.native
     
     var showBackgroundImages: Boolean = js.native
     

@@ -21,10 +21,10 @@ object GridOptimisticPersistence {
     
     inline def setLocalStorage(value: js.Array[String]): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
     
-    inline def setLocalStorageVarargs(value: String*): Self = StObject.set(x, "localStorage", js.Array(value :_*))
+    inline def setLocalStorageVarargs(value: String*): Self = StObject.set(x, "localStorage", js.Array(value*))
     
     inline def setSessionStorage(value: js.Array[String]): Self = StObject.set(x, "sessionStorage", value.asInstanceOf[js.Any])
     
-    inline def setSessionStorageVarargs(value: String*): Self = StObject.set(x, "sessionStorage", js.Array(value :_*))
+    inline def setSessionStorageVarargs(value: String*): Self = StObject.set(x, "sessionStorage", js.Array(value*))
   }
 }

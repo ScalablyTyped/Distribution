@@ -10,7 +10,7 @@ trait Iconfig extends StObject {
   
   var end: js.UndefOr[Double] = js.undefined
   
-  var filterExpression: js.UndefOr[js.Any] = js.undefined
+  var filterExpression: js.UndefOr[Any] = js.undefined
   
   var logging: js.UndefOr[Boolean] = js.undefined
   
@@ -41,7 +41,7 @@ object Iconfig {
     
     inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    inline def setFilterExpression(value: js.Any): Self = StObject.set(x, "filterExpression", value.asInstanceOf[js.Any])
+    inline def setFilterExpression(value: Any): Self = StObject.set(x, "filterExpression", value.asInstanceOf[js.Any])
     
     inline def setFilterExpressionUndefined: Self = StObject.set(x, "filterExpression", js.undefined)
     

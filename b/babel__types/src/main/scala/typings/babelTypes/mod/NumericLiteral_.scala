@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with Expression
      with Immutable
      with Literal
-     with Pureish {
+     with Pureish
+     with Standardized {
   
   @JSName("type")
   var type_NumericLiteral_ : NumericLiteral

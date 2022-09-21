@@ -3,10 +3,7 @@ package typings.apolloServerEnv
 import org.scalablytyped.runtime.StringDictionary
 import typings.apolloServerEnv.apolloServerEnvBooleans.`false`
 import typings.node.httpMod.Agent
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import typings.std.Iterable
-import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,20 +16,20 @@ object fetchMod {
   
   @JSImport("apollo-server-env/dist/fetch", "Body")
   @js.native
-  class Body () extends StObject {
+  open class Body () extends StObject {
     
-    def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
+    def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer] = js.native
     
     val bodyUsed: Boolean = js.native
     
-    def json(): js.Promise[js.Any] = js.native
+    def json(): js.Promise[Any] = js.native
     
     def text(): js.Promise[String] = js.native
   }
   
   @JSImport("apollo-server-env/dist/fetch", "Headers")
   @js.native
-  class Headers ()
+  open class Headers ()
     extends StObject
        with Iterable[js.Tuple2[String, String]] {
     def this(init: HeadersInit) = this()
@@ -41,22 +38,22 @@ object fetchMod {
     
     def delete(name: String): Unit = js.native
     
-    def entries(): Iterator[js.Tuple2[String, String], js.Any, Unit] = js.native
+    def entries(): js.Iterator[js.Tuple2[String, String]] = js.native
     
     def get(name: String): String | Null = js.native
     
     def has(name: String): Boolean = js.native
     
-    def keys(): Iterator[String, js.Any, Unit] = js.native
+    def keys(): js.Iterator[String] = js.native
     
     def set(name: String, value: String): Unit = js.native
     
-    def values(): Iterator[js.Array[String], js.Any, Unit] = js.native
+    def values(): js.Iterator[String] = js.native
   }
   
   @JSImport("apollo-server-env/dist/fetch", "Request")
   @js.native
-  class Request protected () extends Body {
+  open class Request protected () extends Body {
     def this(input: String) = this()
     def this(input: Request) = this()
     def this(input: String, init: RequestInit) = this()
@@ -71,7 +68,7 @@ object fetchMod {
   
   @JSImport("apollo-server-env/dist/fetch", "Response")
   @js.native
-  class Response () extends Body {
+  open class Response () extends Body {
     def this(body: BodyInit) = this()
     def this(body: Unit, init: ResponseInit) = this()
     def this(body: BodyInit, init: ResponseInit) = this()
@@ -101,12 +98,10 @@ object fetchMod {
     inline def redirect(url: String, status: Double): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Response]
   }
   
-  inline def fetch(): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")().asInstanceOf[js.Promise[Response]]
-  inline def fetch(input: Unit, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
   inline def fetch(input: RequestInfo): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
   inline def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
   
-  type BodyInit = ArrayBuffer | ArrayBufferView | String
+  type BodyInit = js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String
   
   type HeadersInit = Headers | js.Array[js.Array[String]] | StringDictionary[String]
   
@@ -196,7 +191,7 @@ object fetchMod {
     
     // Cloudflare Workers accept a `cf` property to control Cloudflare features
     // See https://developers.cloudflare.com/workers/reference/cloudflare-features/
-    var cf: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var cf: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var compress: js.UndefOr[Boolean] = js.undefined
     
@@ -244,7 +239,7 @@ object fetchMod {
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      inline def setCf(value: StringDictionary[js.Any]): Self = StObject.set(x, "cf", value.asInstanceOf[js.Any])
+      inline def setCf(value: StringDictionary[Any]): Self = StObject.set(x, "cf", value.asInstanceOf[js.Any])
       
       inline def setCfUndefined: Self = StObject.set(x, "cf", js.undefined)
       
@@ -264,7 +259,7 @@ object fetchMod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
       
@@ -357,7 +352,7 @@ object fetchMod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       

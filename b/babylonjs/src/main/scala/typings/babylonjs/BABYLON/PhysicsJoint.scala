@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PhysicsJoint extends StObject {
   
-  /* private */ var _physicsJoint: js.Any = js.native
+  /* private */ var _physicsJoint: Any = js.native
   
   /* protected */ var _physicsPlugin: IPhysicsEnginePlugin = js.native
   
@@ -16,7 +16,7 @@ trait PhysicsJoint extends StObject {
     * @param {Function} func the function that will be executed.
     *                        It accepts two parameters: the physics world and the physics joint
     */
-  def executeNativeFunction(func: js.Function2[/* world */ js.Any, /* physicsJoint */ js.Any, Unit]): Unit = js.native
+  def executeNativeFunction(func: js.Function2[/* world */ Any, /* physicsJoint */ Any, Unit]): Unit = js.native
   
   /**
     * The data for the physics joint
@@ -26,11 +26,11 @@ trait PhysicsJoint extends StObject {
   /**
     * Gets the physics joint
     */
-  def physicsJoint: js.Any = js.native
+  def physicsJoint: Any = js.native
   /**
     * Sets the physics joint
     */
-  def physicsJoint_=(newJoint: js.Any): Unit = js.native
+  def physicsJoint_=(newJoint: Any): Unit = js.native
   
   /**
     * Sets the physics plugin

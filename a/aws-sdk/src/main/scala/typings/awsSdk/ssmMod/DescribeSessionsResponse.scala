@@ -33,6 +33,6 @@ object DescribeSessionsResponse {
     
     inline def setSessionsUndefined: Self = StObject.set(x, "Sessions", js.undefined)
     
-    inline def setSessionsVarargs(value: Session*): Self = StObject.set(x, "Sessions", js.Array(value :_*))
+    inline def setSessionsVarargs(value: Session*): Self = StObject.set(x, "Sessions", js.Array(value*))
   }
 }

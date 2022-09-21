@@ -11,7 +11,7 @@ object byeMod {
   
   @JSImport("sip.js/lib/api/bye", "Bye")
   @js.native
-  class Bye protected () extends StObject {
+  open class Bye protected () extends StObject {
     /** @internal */
     def this(incomingByeRequest: IncomingByeRequest) = this()
     
@@ -19,7 +19,7 @@ object byeMod {
     def accept(): js.Promise[Unit] = js.native
     def accept(options: ResponseOptions): js.Promise[Unit] = js.native
     
-    /* private */ var incomingByeRequest: js.Any = js.native
+    /* private */ var incomingByeRequest: Any = js.native
     
     /** Reject the request. */
     def reject(): js.Promise[Unit] = js.native

@@ -17,8 +17,8 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(receiver: ReadonlyArray[js.Any]): Array[js.Any] = js.native
-    def apply(receiver: ReadonlyArray[js.Any], depth: Double): Array[js.Any] = js.native
+    def apply(receiver: ReadonlyArray[Any]): Array[Any] = js.native
+    def apply(receiver: ReadonlyArray[Any], depth: Double): Array[Any] = js.native
     def apply[U](receiver: Array[Array[Array[Array[Array[Array[U]]]]]], depth: `5`): Array[U] = js.native
     def apply[U](receiver: Array[Array[Array[Array[Array[Array[Array[U]]]]]]], depth: `6`): Array[U] = js.native
     def apply[U](receiver: Array[Array[Array[Array[Array[Array[Array[Array[U]]]]]]]], depth: `7`): Array[U] = js.native

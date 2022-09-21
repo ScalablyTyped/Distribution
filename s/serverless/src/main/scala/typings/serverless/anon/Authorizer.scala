@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Authorizer extends StObject {
   
-  var authorizer: js.UndefOr[js.Any] = js.undefined
+  var authorizer: js.UndefOr[Any] = js.undefined
   
-  var cors: js.UndefOr[js.Any] = js.undefined
+  var cors: js.UndefOr[Any] = js.undefined
   
   var integration: js.UndefOr[String] = js.undefined
   
@@ -26,11 +26,11 @@ object Authorizer {
   
   extension [Self <: Authorizer](x: Self) {
     
-    inline def setAuthorizer(value: js.Any): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
+    inline def setAuthorizer(value: Any): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
     
     inline def setAuthorizerUndefined: Self = StObject.set(x, "authorizer", js.undefined)
     
-    inline def setCors(value: js.Any): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+    inline def setCors(value: Any): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     
     inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
     

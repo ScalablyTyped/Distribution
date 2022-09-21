@@ -72,16 +72,17 @@ object mod {
   val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
+    - js.Array[js.Array[scala.Double] | scala.Double]
     - typings.skmeans.skmeansStrings.kmrand
     - typings.skmeans.skmeansStrings.kmpp
     - scala.Null
   */
-  type CentroidValues = _CentroidValues | Null
+  type CentroidValues = _CentroidValues | (js.Array[js.Array[Double] | Double]) | Null
   
   @js.native
   trait Data extends StObject {
     
-    var centroids: Double = js.native
+    var centroids: js.Array[js.Array[Double] | Double] = js.native
     
     var idxs: js.Array[Double] = js.native
     

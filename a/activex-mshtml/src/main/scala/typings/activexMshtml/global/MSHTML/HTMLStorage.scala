@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLStorage")
 @js.native
-/* private */ class HTMLStorage ()
+/* private */ open class HTMLStorage ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLStorage {
   
@@ -18,10 +18,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def clear(): Unit = js.native
   
   /* CompleteClass */
-  override val constructor: js.Any = js.native
+  override val constructor: Any = js.native
   
   /* CompleteClass */
-  override def getItem(bstrKey: String): js.Any = js.native
+  override def getItem(bstrKey: String): Any = js.native
   
   /* CompleteClass */
   override def ie9_setItem(bstrKey: String, bstrValue: String): Unit = js.native

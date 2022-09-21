@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Strarray")
 @js.native
-class Strarray ()
+open class Strarray ()
   extends typings.nodegit.strArrayMod.Strarray

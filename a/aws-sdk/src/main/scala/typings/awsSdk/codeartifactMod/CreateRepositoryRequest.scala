@@ -12,12 +12,12 @@ trait CreateRepositoryRequest extends StObject {
   var description: js.UndefOr[Description] = js.undefined
   
   /**
-    *  The domain that contains the created repository. 
+    *  The name of the domain that contains the created repository. 
     */
   var domain: DomainName
   
   /**
-    *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
+    *  The 12-digit account number of the Amazon Web Services account that owns the domain. It does not include dashes or spaces. 
     */
   var domainOwner: js.UndefOr[AccountId] = js.undefined
   
@@ -32,7 +32,7 @@ trait CreateRepositoryRequest extends StObject {
   var tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    *  A list of upstream repositories to associate with the repository. The order of the upstream repositories in the list determines their priority order when AWS CodeArtifact looks for a requested package version. For more information, see Working with upstream repositories. 
+    *  A list of upstream repositories to associate with the repository. The order of the upstream repositories in the list determines their priority order when CodeArtifact looks for a requested package version. For more information, see Working with upstream repositories. 
     */
   var upstreams: js.UndefOr[UpstreamRepositoryList] = js.undefined
 }
@@ -61,12 +61,12 @@ object CreateRepositoryRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setUpstreams(value: UpstreamRepositoryList): Self = StObject.set(x, "upstreams", value.asInstanceOf[js.Any])
     
     inline def setUpstreamsUndefined: Self = StObject.set(x, "upstreams", js.undefined)
     
-    inline def setUpstreamsVarargs(value: UpstreamRepository*): Self = StObject.set(x, "upstreams", js.Array(value :_*))
+    inline def setUpstreamsVarargs(value: UpstreamRepository*): Self = StObject.set(x, "upstreams", js.Array(value*))
   }
 }

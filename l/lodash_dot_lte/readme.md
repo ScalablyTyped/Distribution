@@ -10,10 +10,10 @@ The lodash method `_.lte` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.lte |
 | Keywords           | lodash-modularized, lte |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 4964 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 84.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

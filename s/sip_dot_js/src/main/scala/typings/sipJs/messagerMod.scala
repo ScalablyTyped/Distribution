@@ -12,7 +12,7 @@ object messagerMod {
   
   @JSImport("sip.js/lib/api/messager", "Messager")
   @js.native
-  class Messager protected () extends StObject {
+  open class Messager protected () extends StObject {
     /**
       * Constructs a new instance of the `Messager` class.
       * @param userAgent - User agent. See {@link UserAgent} for details.
@@ -32,7 +32,7 @@ object messagerMod {
     ) = this()
     def this(userAgent: UserAgent, targetURI: URI, content: String, contentType: Unit, options: MessagerOptions) = this()
     
-    /* private */ var logger: js.Any = js.native
+    /* private */ var logger: Any = js.native
     
     /**
       * Send the message.
@@ -40,8 +40,8 @@ object messagerMod {
     def message(): js.Promise[Unit] = js.native
     def message(options: MessagerMessageOptions): js.Promise[Unit] = js.native
     
-    /* private */ var request: js.Any = js.native
+    /* private */ var request: Any = js.native
     
-    /* private */ var userAgent: js.Any = js.native
+    /* private */ var userAgent: Any = js.native
   }
 }

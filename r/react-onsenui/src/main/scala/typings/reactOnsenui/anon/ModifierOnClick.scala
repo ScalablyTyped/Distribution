@@ -11,7 +11,7 @@ trait ModifierOnClick extends StObject {
   
   var modifier: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
+  var onClick: js.UndefOr[MouseEventHandler[Any]] = js.undefined
 }
 object ModifierOnClick {
   
@@ -26,7 +26,7 @@ object ModifierOnClick {
     
     inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
-    inline def setOnClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }

@@ -12,7 +12,7 @@ object conditionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def all(var_args: Condition*): Condition = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(var_args.asInstanceOf[js.Any]).asInstanceOf[Condition]
+  inline def all(var_args: Condition*): Condition = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(var_args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Condition]
   
   inline def altKeyOnly(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("altKeyOnly")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -52,5 +52,5 @@ object conditionMod {
   
   inline def touchOnly(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("touchOnly")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  type Condition = js.ThisFunction1[/* this */ js.Any, /* p0 */ default[UIEvent], Boolean]
+  type Condition = js.ThisFunction1[/* this */ Any, /* p0 */ default[UIEvent], Boolean]
 }

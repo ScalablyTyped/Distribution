@@ -1,7 +1,6 @@
 package typings.dateArithmetic
 
 import typings.dateArithmetic.dateArithmeticStrings.week
-import typings.std.Date
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,59 +12,76 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def add(date: Date, num: Double, unit: Unit): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(date.asInstanceOf[js.Any], num.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def add(date: js.Date, num: Double, unit: Unit): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(date.asInstanceOf[js.Any], num.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
-  inline def century(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("century")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def century(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("century")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def century(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("century")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def century(date: js.Date, value: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("century")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
-  inline def date(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def date(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def date(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def date(date: js.Date, value: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
-  inline def day(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("day")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def day(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("day")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def day(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("day")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def day(date: js.Date, value: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("day")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
-  inline def decade(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("decade")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def decade(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("decade")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def decade(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("decade")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def decade(date: js.Date, value: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("decade")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
-  inline def endOf(date: Date, unit: Unit): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("endOf")(date.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def diff(date1: js.Date, date2: js.Date, unit: Unit): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def diff(date1: js.Date, date2: js.Date, unit: Unit, asFloat: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], asFloat.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def eq_(date: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def endOf_week(date: js.Date, unit: week, firstOfWeek: StartOfWeek): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("endOf")(date.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], firstOfWeek.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  inline def endOf_week(date: js.Date, unit: Exclude[Unit, week]): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("endOf")(date.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
-  inline def gt(date: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def eq_(date: js.Date, date2: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def eq_(date: js.Date, date2: js.Date, unit: Unit): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def gte(date: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def gt(date: js.Date, date2: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def gt(date: js.Date, date2: js.Date, unit: Unit): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def hours(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def hours(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("hours")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def gte(date: js.Date, date2: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def gte(date: js.Date, date2: js.Date, unit: Unit): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def lt(date: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hours(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hours")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def hours(date: js.Date, value: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("hours")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
-  inline def lte(date: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def inRange(day: js.Date, min: js.Date, max: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inRange")(day.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def inRange(day: js.Date, min: js.Date, max: js.Date, unit: Unit): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inRange")(day.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def milliseconds(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def milliseconds(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def lt(date: js.Date, date2: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def lt(date: js.Date, date2: js.Date, unit: Unit): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def minutes(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def minutes(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def lte(date: js.Date, date2: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def lte(date: js.Date, date2: js.Date, unit: Unit): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def month(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("month")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def month(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("month")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def max(dates: js.Date*): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dates.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Date]
   
-  inline def neq(date: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def milliseconds(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def milliseconds(date: js.Date, value: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("milliseconds")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
-  inline def seconds(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def seconds(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def min(dates: js.Date*): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dates.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Date]
   
-  inline def startOf_week(date: Date, unit: week, firtOfWeek: StartOfWeek): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("startOf")(date.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], firtOfWeek.asInstanceOf[js.Any])).asInstanceOf[Date]
-  inline def startOf_week(date: Date, unit: Exclude[Unit, week]): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("startOf")(date.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def minutes(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def minutes(date: js.Date, value: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("minutes")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
-  inline def subtract(date: Date, num: Double, unit: Unit): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(date.asInstanceOf[js.Any], num.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def month(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("month")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def month(date: js.Date, value: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("month")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
-  inline def weekday(date: Date, value: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekday")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def weekday(date: Date, value: Date, firstOfWeek: StartOfWeek): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("weekday")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firstOfWeek.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def neq(date: js.Date, date2: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def neq(date: js.Date, date2: js.Date, unit: Unit): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(date.asInstanceOf[js.Any], date2.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def year(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("year")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def year(date: Date, value: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("year")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def seconds(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def seconds(date: js.Date, value: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("seconds")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  
+  inline def startOf_week(date: js.Date, unit: week, firstOfWeek: StartOfWeek): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("startOf")(date.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], firstOfWeek.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  inline def startOf_week(date: js.Date, unit: Exclude[Unit, week]): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("startOf")(date.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  
+  inline def subtract(date: js.Date, num: Double, unit: Unit): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(date.asInstanceOf[js.Any], num.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  
+  inline def weekday(date: js.Date, value: js.Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekday")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def weekday(date: js.Date, value: js.Date, firstOfWeek: StartOfWeek): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("weekday")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any], firstOfWeek.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  
+  inline def year(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("year")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def year(date: js.Date, value: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("year")(date.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
   /* Rewritten from type alias, can be one of: 
     - typings.dateArithmetic.dateArithmeticNumbers.`0`

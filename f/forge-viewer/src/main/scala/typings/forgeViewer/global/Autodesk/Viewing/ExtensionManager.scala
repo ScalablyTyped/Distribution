@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Autodesk.Viewing.ExtensionManager")
 @js.native
-class ExtensionManager ()
+open class ExtensionManager ()
   extends StObject
      with typings.forgeViewer.Autodesk.Viewing.ExtensionManager {
   
@@ -28,7 +28,7 @@ class ExtensionManager ()
   override def getRegisteredExtensions(): js.Array[Id] = js.native
   
   /* CompleteClass */
-  override def popuplateOptions(options: js.Any): Unit = js.native
+  override def popuplateOptions(options: Any): Unit = js.native
   
   /* CompleteClass */
   override def registerExtension(extensionId: String, `extension`: js.Object): Boolean = js.native

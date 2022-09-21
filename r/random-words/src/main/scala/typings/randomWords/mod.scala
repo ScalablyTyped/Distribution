@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  inline def apply(options: Double): String | js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String]]
+  inline def apply(options: Double): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   inline def apply(options: Optionsjoinstring): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(options: Options): String | js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String]]
+  inline def apply(options: Options): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   @JSImport("random-words", JSImport.Namespace)
   @js.native
@@ -18,8 +18,7 @@ object mod {
   
   @JSImport("random-words", "wordList")
   @js.native
-  def wordList: js.Array[String] = js.native
-  inline def wordList_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wordList")(x.asInstanceOf[js.Any])
+  val wordList: js.Array[String] = js.native
   
   trait Options extends StObject {
     

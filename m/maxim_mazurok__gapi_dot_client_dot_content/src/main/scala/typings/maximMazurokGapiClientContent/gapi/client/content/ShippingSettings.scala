@@ -14,6 +14,9 @@ trait ShippingSettings extends StObject {
   
   /** The target account's list of services. Optional. */
   var services: js.UndefOr[js.Array[Service]] = js.undefined
+  
+  /** Optional. A list of warehouses which can be referred to in `services`. */
+  var warehouses: js.UndefOr[js.Array[Warehouse]] = js.undefined
 }
 object ShippingSettings {
   
@@ -32,12 +35,18 @@ object ShippingSettings {
     
     inline def setPostalCodeGroupsUndefined: Self = StObject.set(x, "postalCodeGroups", js.undefined)
     
-    inline def setPostalCodeGroupsVarargs(value: PostalCodeGroup*): Self = StObject.set(x, "postalCodeGroups", js.Array(value :_*))
+    inline def setPostalCodeGroupsVarargs(value: PostalCodeGroup*): Self = StObject.set(x, "postalCodeGroups", js.Array(value*))
     
     inline def setServices(value: js.Array[Service]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "services", js.Array(value*))
+    
+    inline def setWarehouses(value: js.Array[Warehouse]): Self = StObject.set(x, "warehouses", value.asInstanceOf[js.Any])
+    
+    inline def setWarehousesUndefined: Self = StObject.set(x, "warehouses", js.undefined)
+    
+    inline def setWarehousesVarargs(value: Warehouse*): Self = StObject.set(x, "warehouses", js.Array(value*))
   }
 }

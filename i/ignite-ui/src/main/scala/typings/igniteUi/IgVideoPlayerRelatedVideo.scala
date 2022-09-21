@@ -10,7 +10,7 @@ trait IgVideoPlayerRelatedVideo
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets custom CSS class to be applied on the related video element.
@@ -40,7 +40,7 @@ trait IgVideoPlayerRelatedVideo
     * Gets/Sets the sources of the related video.
     *
     */
-  var sources: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var sources: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets/Sets the title of the video.
@@ -79,11 +79,11 @@ object IgVideoPlayerRelatedVideo {
     
     inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    inline def setSources(value: js.Array[js.Any]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Array[Any]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: js.Any*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Any*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

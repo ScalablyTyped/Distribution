@@ -22,7 +22,7 @@ object XAccessibleTableSelection {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     selectColumn: Double => Boolean,
     selectRow: Double => Boolean,

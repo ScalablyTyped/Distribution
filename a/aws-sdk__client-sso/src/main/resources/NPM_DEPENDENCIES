@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@aws-sdk/client-sso" : "3.171.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@aws-sdk/client-sso" : "3.171.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

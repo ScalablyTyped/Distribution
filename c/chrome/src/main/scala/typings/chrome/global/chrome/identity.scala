@@ -1,6 +1,7 @@
 package typings.chrome.global.chrome
 
 import typings.chrome.chrome.identity.AccountInfo
+import typings.chrome.chrome.identity.ProfileDetails
 import typings.chrome.chrome.identity.SignInChangeEvent
 import typings.chrome.chrome.identity.TokenDetails
 import typings.chrome.chrome.identity.TokenInformation
@@ -24,12 +25,27 @@ object identity {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSGlobal("chrome.identity.AccountStatus")
+  @js.native
+  object AccountStatus extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.chrome.chrome.identity.AccountStatus & String] = js.native
+    
+    /* "ANY" */ val ANY: typings.chrome.chrome.identity.AccountStatus.ANY & String = js.native
+    
+    /* "SYNC" */ val SYNC: typings.chrome.chrome.identity.AccountStatus.SYNC & String = js.native
+  }
+  
+  inline def clearAllCachedAuthTokens(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAllCachedAuthTokens")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   inline def getAccounts(callback: js.Function1[/* accounts */ js.Array[AccountInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccounts")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def getAuthToken(details: TokenDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthToken")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def getAuthToken(details: TokenDetails, callback: js.Function1[/* token */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAuthToken")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getProfileUserInfo(callback: js.Function1[/* userInfo */ UserInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfileUserInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getProfileUserInfo(details: ProfileDetails, callback: js.Function1[/* userInfo */ UserInfo, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getProfileUserInfo")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getRedirectURL(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRedirectURL")().asInstanceOf[String]
   inline def getRedirectURL(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRedirectURL")(path.asInstanceOf[js.Any]).asInstanceOf[String]

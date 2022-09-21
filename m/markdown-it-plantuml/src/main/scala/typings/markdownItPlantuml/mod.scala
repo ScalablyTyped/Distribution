@@ -60,7 +60,7 @@ object mod extends Shortcut {
       inline def setOpenMarkerUndefined: Self = StObject.set(x, "openMarker", js.undefined)
       
       inline def setRender(
-        value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* idx */ Double, /* options */ typings.markdownIt.libMod.Options, /* env */ js.Any, /* self */ Renderer) => String
+        value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* idx */ Double, /* options */ typings.markdownIt.libMod.Options, /* env */ Any, /* self */ Renderer) => String
       ): Self = StObject.set(x, "render", js.Any.fromFunction5(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)

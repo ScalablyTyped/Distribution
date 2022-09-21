@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@unidriver/jsdom-react" : "1.6.1"
+      "@unidriver/jsdom-react" : "1.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@unidriver/jsdom-react" : "1.6.1"
+      "@unidriver/jsdom-react" : "1.7.0"
     }
   ],
   "compile-devDependencies" : [

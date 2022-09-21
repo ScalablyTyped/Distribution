@@ -10,10 +10,10 @@ object mod {
   
   @JSImport("ink-spinner", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[SpinnerProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[SpinnerProps, js.Object, Any]
   
-  type Spinner = Component[SpinnerProps, js.Object, js.Any]
+  type Spinner = Component[SpinnerProps, js.Object, Any]
   
   trait SpinnerProps extends StObject {
     

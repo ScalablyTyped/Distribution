@@ -38,8 +38,8 @@ trait Csv extends StObject {
   /**
   	 * write to a buffer
   	 */
-  def writeBuffer(): js.Promise[Buffer] = js.native
-  def writeBuffer(options: PartialCsvWriteOptions): js.Promise[Buffer] = js.native
+  def writeBuffer(): js.Promise[js.typedarray.ArrayBuffer] = js.native
+  def writeBuffer(options: PartialCsvWriteOptions): js.Promise[js.typedarray.ArrayBuffer] = js.native
   
   /**
   	 * write to a file

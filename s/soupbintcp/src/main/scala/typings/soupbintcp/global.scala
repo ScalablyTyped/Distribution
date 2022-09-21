@@ -1,6 +1,6 @@
 package typings.soupbintcp
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.netMod.Socket
 import typings.soupbintcp.anon.Host
 import typings.soupbintcp.mod.ConnectionOptions
@@ -22,7 +22,7 @@ object global {
     
     @JSGlobal("soupbintcp.Client")
     @js.native
-    class Client protected ()
+    open class Client protected ()
       extends typings.soupbintcp.mod.Client {
       def this(options: Host) = this()
       def this(options: Host, callback: js.Function0[Unit]) = this()
@@ -30,7 +30,7 @@ object global {
     
     @JSGlobal("soupbintcp.Connection")
     @js.native
-    class Connection protected ()
+    open class Connection protected ()
       extends typings.soupbintcp.mod.Connection {
       def this(socket: Socket, options: ConnectionOptions) = this()
     }
@@ -65,22 +65,22 @@ object global {
     
     @JSGlobal("soupbintcp.Parser")
     @js.native
-    class Parser protected ()
+    open class Parser protected ()
       extends typings.soupbintcp.mod.Parser {
       def this(callback: js.Function2[/* packetType */ PacketType, /* payload */ Buffer, Unit]) = this()
     }
     
     @JSGlobal("soupbintcp.Server")
     @js.native
-    class Server protected ()
+    open class Server protected ()
       extends typings.soupbintcp.mod.Server {
       def this(options: Host) = this()
-      def this(options: Host, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]) = this()
+      def this(options: Host, callback: js.Function1[/* data */ js.UndefOr[Any], Unit]) = this()
     }
     
     @JSGlobal("soupbintcp.Session")
     @js.native
-    class Session protected ()
+    open class Session protected ()
       extends typings.soupbintcp.mod.Session {
       def this(socket: Socket) = this()
     }

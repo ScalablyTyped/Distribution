@@ -16,7 +16,7 @@ import typings.awsSdkTypes.utilMod.Encoder
 import typings.awsSdkTypes.utilMod.Provider
 import typings.awsSdkTypes.utilMod.UrlParser
 import typings.node.streamMod.Readable
-import typings.std.Uint8Array
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +25,7 @@ object s3ConfigurationMod {
   
   @JSImport("@aws-sdk/client-s3-node/S3Configuration", "configurationProperties")
   @js.native
-  val configurationProperties: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ConfigurationDefinition<S3ResolvableConfiguration, S3ResolvedConfiguration> */ js.Any = js.native
+  val configurationProperties: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ConfigurationDefinition<S3ResolvableConfiguration, S3ResolvedConfiguration> */ Any = js.native
   
   trait S3Configuration extends StObject {
     
@@ -55,7 +55,7 @@ object s3ConfigurationMod {
       * A function that determines how long (in milliseconds) the SDK should wait before retrying a request
       */
     var delayDecider: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.DelayDecider */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.DelayDecider */ Any
       ] = js.undefined
     
     /**
@@ -67,15 +67,15 @@ object s3ConfigurationMod {
       * The fully qualified endpoint of the webservice. This is only required when using a custom endpoint (for example, when using a local version of S3).
       */
     var endpoint: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ js.Any) | (Provider[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ js.Any
+        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ Any) | (Provider[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ Any
         ])
       ] = js.undefined
     
     /**
       * The endpoint provider to call if no endpoint is provided
       */
-    var endpointProvider: js.UndefOr[js.Any] = js.undefined
+    var endpointProvider: js.UndefOr[Any] = js.undefined
     
     /**
       * Whether to force path style URLs for S3 objects (e.g., https://s3.amazonaws.com/<bucketName>/<key> instead of https://<bucketName>.s3.amazonaws.com/<key>
@@ -91,7 +91,7 @@ object s3ConfigurationMod {
       * The HTTP handler to use
       */
     var httpHandler: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpHandler<_stream.Readable> */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpHandler<_stream.Readable> */ Any
       ] = js.undefined
     
     /**
@@ -123,7 +123,7 @@ object s3ConfigurationMod {
       * A function that determines whether an error is retryable
       */
     var retryDecider: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.RetryDecider */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.RetryDecider */ Any
       ] = js.undefined
     
     /**
@@ -190,11 +190,11 @@ object s3ConfigurationMod {
     
     extension [Self <: S3Configuration](x: Self) {
       
-      inline def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
+      inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
       inline def setBase64DecoderUndefined: Self = StObject.set(x, "base64Decoder", js.undefined)
       
-      inline def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
+      inline def setBase64Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       
       inline def setBase64EncoderUndefined: Self = StObject.set(x, "base64Encoder", js.undefined)
       
@@ -209,7 +209,7 @@ object s3ConfigurationMod {
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
       inline def setDelayDecider(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.DelayDecider */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.DelayDecider */ Any
       ): Self = StObject.set(x, "delayDecider", value.asInstanceOf[js.Any])
       
       inline def setDelayDeciderUndefined: Self = StObject.set(x, "delayDecider", js.undefined)
@@ -219,18 +219,18 @@ object s3ConfigurationMod {
       inline def setDisableBodySigningUndefined: Self = StObject.set(x, "disableBodySigning", js.undefined)
       
       inline def setEndpoint(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ js.Any) | (Provider[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ js.Any
+        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ Any) | (Provider[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ Any
             ])
       ): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
       inline def setEndpointFunction0(
         value: () => js.Promise[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ js.Any
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ Any
             ]
       ): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
       
-      inline def setEndpointProvider(value: js.Any): Self = StObject.set(x, "endpointProvider", value.asInstanceOf[js.Any])
+      inline def setEndpointProvider(value: Any): Self = StObject.set(x, "endpointProvider", value.asInstanceOf[js.Any])
       
       inline def setEndpointProviderUndefined: Self = StObject.set(x, "endpointProvider", js.undefined)
       
@@ -245,7 +245,7 @@ object s3ConfigurationMod {
       inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
       inline def setHttpHandler(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpHandler<_stream.Readable> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpHandler<_stream.Readable> */ Any
       ): Self = StObject.set(x, "httpHandler", value.asInstanceOf[js.Any])
       
       inline def setHttpHandlerUndefined: Self = StObject.set(x, "httpHandler", js.undefined)
@@ -273,7 +273,7 @@ object s3ConfigurationMod {
       inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
       inline def setRetryDecider(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.RetryDecider */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.RetryDecider */ Any
       ): Self = StObject.set(x, "retryDecider", value.asInstanceOf[js.Any])
       
       inline def setRetryDeciderUndefined: Self = StObject.set(x, "retryDecider", js.undefined)
@@ -294,15 +294,15 @@ object s3ConfigurationMod {
       
       inline def setSslEnabledUndefined: Self = StObject.set(x, "sslEnabled", js.undefined)
       
-      inline def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
+      inline def setStreamCollector(value: /* stream */ Any => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
       
       inline def setStreamCollectorUndefined: Self = StObject.set(x, "streamCollector", js.undefined)
       
-      inline def setStreamHasher(value: (/* hashCtor */ typings.awsSdkTypes.anon.Instantiable, Readable) => js.Promise[Uint8Array]): Self = StObject.set(x, "streamHasher", js.Any.fromFunction2(value))
+      inline def setStreamHasher(value: (/* hashCtor */ HashConstructor, Readable) => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "streamHasher", js.Any.fromFunction2(value))
       
       inline def setStreamHasherUndefined: Self = StObject.set(x, "streamHasher", js.undefined)
       
-      inline def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
+      inline def setUrlParser(value: /* url */ String | URL => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
       
       inline def setUrlParserUndefined: Self = StObject.set(x, "urlParser", js.undefined)
       
@@ -314,11 +314,11 @@ object s3ConfigurationMod {
       
       inline def setUseDualstackEndpointUndefined: Self = StObject.set(x, "useDualstackEndpoint", js.undefined)
       
-      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUtf8Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
       
       inline def setUtf8DecoderUndefined: Self = StObject.set(x, "utf8Decoder", js.undefined)
       
-      inline def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
+      inline def setUtf8Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
       
       inline def setUtf8EncoderUndefined: Self = StObject.set(x, "utf8Encoder", js.undefined)
     }
@@ -331,35 +331,35 @@ object s3ConfigurationMod {
     /**
       * Whether the HTTP handler was injected by the user and should thus not be destroyed when this client is
       */
-    var _user_injected_http_handler: js.Any
+    var _user_injected_http_handler: Any
     
     /**
       * A function that can calculate the length of a request body.
       */
-    def bodyLengthChecker(body: js.Any): js.UndefOr[Double]
+    def bodyLengthChecker(body: Any): js.UndefOr[Double]
     
     /**
       * The parser to use when converting HTTP responses to SDK output types
       */
-    var parser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ResponseParser<_stream.Readable> */ js.Any
+    var parser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ResponseParser<_stream.Readable> */ Any
     
     /**
       * The serializer to use when converting SDK input to HTTP requests
       */
-    def serializer(): js.Promise[RequestSerializer[Readable, js.Any]]
+    def serializer(): js.Promise[RequestSerializer[Readable, Any]]
     /**
       * The serializer to use when converting SDK input to HTTP requests
       */
     @JSName("serializer")
-    var serializer_Original: Provider[RequestSerializer[Readable, js.Any]]
+    var serializer_Original: Provider[RequestSerializer[Readable, Any]]
   }
   object S3ResolvableConfiguration {
     
     inline def apply(
-      _user_injected_http_handler: js.Any,
-      bodyLengthChecker: js.Any => js.UndefOr[Double],
-      parser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ResponseParser<_stream.Readable> */ js.Any,
-      serializer: () => js.Promise[RequestSerializer[Readable, js.Any]]
+      _user_injected_http_handler: Any,
+      bodyLengthChecker: Any => js.UndefOr[Double],
+      parser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ResponseParser<_stream.Readable> */ Any,
+      serializer: () => js.Promise[RequestSerializer[Readable, Any]]
     ): S3ResolvableConfiguration = {
       val __obj = js.Dynamic.literal(_user_injected_http_handler = _user_injected_http_handler.asInstanceOf[js.Any], bodyLengthChecker = js.Any.fromFunction1(bodyLengthChecker), parser = parser.asInstanceOf[js.Any], serializer = js.Any.fromFunction0(serializer))
       __obj.asInstanceOf[S3ResolvableConfiguration]
@@ -367,15 +367,15 @@ object s3ConfigurationMod {
     
     extension [Self <: S3ResolvableConfiguration](x: Self) {
       
-      inline def setBodyLengthChecker(value: js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
+      inline def setBodyLengthChecker(value: Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
       inline def setParser(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ResponseParser<_stream.Readable> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ResponseParser<_stream.Readable> */ Any
       ): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
-      inline def setSerializer(value: () => js.Promise[RequestSerializer[Readable, js.Any]]): Self = StObject.set(x, "serializer", js.Any.fromFunction0(value))
+      inline def setSerializer(value: () => js.Promise[RequestSerializer[Readable, Any]]): Self = StObject.set(x, "serializer", js.Any.fromFunction0(value))
       
-      inline def set_user_injected_http_handler(value: js.Any): Self = StObject.set(x, "_user_injected_http_handler", value.asInstanceOf[js.Any])
+      inline def set_user_injected_http_handler(value: Any): Self = StObject.set(x, "_user_injected_http_handler", value.asInstanceOf[js.Any])
     }
   }
   
@@ -387,16 +387,16 @@ object s3ConfigurationMod {
     var _user_injected_http_handler: Boolean
     
     @JSName("base64Decoder")
-    def base64Decoder_MS3ResolvedConfiguration(input: String): Uint8Array
+    def base64Decoder_MS3ResolvedConfiguration(input: String): js.typedarray.Uint8Array
     @JSName("base64Decoder")
     var base64Decoder_Original: Decoder
     
     @JSName("base64Encoder")
-    def base64Encoder_MS3ResolvedConfiguration(input: Uint8Array): String
+    def base64Encoder_MS3ResolvedConfiguration(input: js.typedarray.Uint8Array): String
     @JSName("base64Encoder")
     var base64Encoder_Original: Encoder
     
-    def bodyLengthChecker(body: js.Any): js.UndefOr[Double]
+    def bodyLengthChecker(body: Any): js.UndefOr[Double]
     
     @JSName("bucketEndpoint")
     var bucketEndpoint_S3ResolvedConfiguration: Boolean
@@ -411,11 +411,11 @@ object s3ConfigurationMod {
     
     @JSName("endpoint")
     def endpoint_MS3ResolvedConfiguration(): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ Any
       ]
     @JSName("endpoint")
     var endpoint_Original: Provider[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ Any
       ]
     
     @JSName("forcePathStyle")
@@ -435,16 +435,16 @@ object s3ConfigurationMod {
     @JSName("md5")
     var md5_S3ResolvedConfiguration: Instantiable
     
-    var parser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ResponseParser<_stream.Readable> */ js.Any
+    var parser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ResponseParser<_stream.Readable> */ Any
     
     @JSName("region")
     def region_MS3ResolvedConfiguration(): js.Promise[String]
     @JSName("region")
     var region_Original: Provider[String]
     
-    def serializer(): js.Promise[RequestSerializer[Readable, js.Any]]
+    def serializer(): js.Promise[RequestSerializer[Readable, Any]]
     @JSName("serializer")
-    var serializer_Original: Provider[RequestSerializer[Readable, js.Any]]
+    var serializer_Original: Provider[RequestSerializer[Readable, Any]]
     
     @JSName("sha256")
     var sha256_S3ResolvedConfiguration: HashConstructor
@@ -459,17 +459,19 @@ object s3ConfigurationMod {
     var sslEnabled_S3ResolvedConfiguration: Boolean
     
     @JSName("streamCollector")
-    def streamCollector_MS3ResolvedConfiguration(stream: js.Any): js.Promise[Uint8Array]
+    def streamCollector_MS3ResolvedConfiguration(stream: Any): js.Promise[js.typedarray.Uint8Array]
     @JSName("streamCollector")
     var streamCollector_Original: StreamCollector
     
     @JSName("streamHasher")
-    def streamHasher_MS3ResolvedConfiguration(hashCtor: typings.awsSdkTypes.anon.Instantiable, stream: Readable): js.Promise[Uint8Array]
+    def streamHasher_MS3ResolvedConfiguration(hashCtor: HashConstructor, stream: Readable): js.Promise[js.typedarray.Uint8Array]
     @JSName("streamHasher")
     var streamHasher_Original: StreamHasher[Readable]
     
     @JSName("urlParser")
     def urlParser_MS3ResolvedConfiguration(url: String): Endpoint
+    @JSName("urlParser")
+    def urlParser_MS3ResolvedConfiguration(url: URL): Endpoint
     @JSName("urlParser")
     var urlParser_Original: UrlParser
     
@@ -480,12 +482,12 @@ object s3ConfigurationMod {
     var useDualstackEndpoint_S3ResolvedConfiguration: Boolean
     
     @JSName("utf8Decoder")
-    def utf8Decoder_MS3ResolvedConfiguration(input: String): Uint8Array
+    def utf8Decoder_MS3ResolvedConfiguration(input: String): js.typedarray.Uint8Array
     @JSName("utf8Decoder")
     var utf8Decoder_Original: Decoder
     
     @JSName("utf8Encoder")
-    def utf8Encoder_MS3ResolvedConfiguration(input: Uint8Array): String
+    def utf8Encoder_MS3ResolvedConfiguration(input: js.typedarray.Uint8Array): String
     @JSName("utf8Encoder")
     var utf8Encoder_Original: Encoder
   }
@@ -493,34 +495,34 @@ object s3ConfigurationMod {
     
     inline def apply(
       _user_injected_http_handler: Boolean,
-      base64Decoder: /* input */ String => Uint8Array,
-      base64Encoder: /* input */ Uint8Array => String,
-      bodyLengthChecker: js.Any => js.UndefOr[Double],
+      base64Decoder: /* input */ String => js.typedarray.Uint8Array,
+      base64Encoder: /* input */ js.typedarray.Uint8Array => String,
+      bodyLengthChecker: Any => js.UndefOr[Double],
       bucketEndpoint: Boolean,
       credentials: () => js.Promise[Credentials],
       disableBodySigning: Boolean,
       endpoint: () => js.Promise[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ Any
         ],
       forcePathStyle: Boolean,
       handler: /* context */ HandlerExecutionContext => DeserializeHandler[js.Object, js.Object],
       maxRedirects: Double,
       maxRetries: Double,
       md5: Instantiable,
-      parser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ResponseParser<_stream.Readable> */ js.Any,
+      parser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ResponseParser<_stream.Readable> */ Any,
       region: () => js.Promise[String],
-      serializer: () => js.Promise[RequestSerializer[Readable, js.Any]],
+      serializer: () => js.Promise[RequestSerializer[Readable, Any]],
       sha256: HashConstructor,
       signer: RequestSigner,
       signingName: String,
       sslEnabled: Boolean,
-      streamCollector: /* stream */ js.Any => js.Promise[Uint8Array],
-      streamHasher: (/* hashCtor */ typings.awsSdkTypes.anon.Instantiable, Readable) => js.Promise[Uint8Array],
-      urlParser: /* url */ String => Endpoint,
+      streamCollector: /* stream */ Any => js.Promise[js.typedarray.Uint8Array],
+      streamHasher: (/* hashCtor */ HashConstructor, Readable) => js.Promise[js.typedarray.Uint8Array],
+      urlParser: /* url */ String | URL => Endpoint,
       useAccelerateEndpoint: Boolean,
       useDualstackEndpoint: Boolean,
-      utf8Decoder: /* input */ String => Uint8Array,
-      utf8Encoder: /* input */ Uint8Array => String
+      utf8Decoder: /* input */ String => js.typedarray.Uint8Array,
+      utf8Encoder: /* input */ js.typedarray.Uint8Array => String
     ): S3ResolvedConfiguration = {
       val __obj = js.Dynamic.literal(_user_injected_http_handler = _user_injected_http_handler.asInstanceOf[js.Any], base64Decoder = js.Any.fromFunction1(base64Decoder), base64Encoder = js.Any.fromFunction1(base64Encoder), bodyLengthChecker = js.Any.fromFunction1(bodyLengthChecker), bucketEndpoint = bucketEndpoint.asInstanceOf[js.Any], credentials = js.Any.fromFunction0(credentials), disableBodySigning = disableBodySigning.asInstanceOf[js.Any], endpoint = js.Any.fromFunction0(endpoint), forcePathStyle = forcePathStyle.asInstanceOf[js.Any], handler = js.Any.fromFunction1(handler), maxRedirects = maxRedirects.asInstanceOf[js.Any], maxRetries = maxRetries.asInstanceOf[js.Any], md5 = md5.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], region = js.Any.fromFunction0(region), serializer = js.Any.fromFunction0(serializer), sha256 = sha256.asInstanceOf[js.Any], signer = signer.asInstanceOf[js.Any], signingName = signingName.asInstanceOf[js.Any], sslEnabled = sslEnabled.asInstanceOf[js.Any], streamCollector = js.Any.fromFunction1(streamCollector), streamHasher = js.Any.fromFunction2(streamHasher), urlParser = js.Any.fromFunction1(urlParser), useAccelerateEndpoint = useAccelerateEndpoint.asInstanceOf[js.Any], useDualstackEndpoint = useDualstackEndpoint.asInstanceOf[js.Any], utf8Decoder = js.Any.fromFunction1(utf8Decoder), utf8Encoder = js.Any.fromFunction1(utf8Encoder))
       __obj.asInstanceOf[S3ResolvedConfiguration]
@@ -528,11 +530,11 @@ object s3ConfigurationMod {
     
     extension [Self <: S3ResolvedConfiguration](x: Self) {
       
-      inline def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
+      inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
-      inline def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
+      inline def setBase64Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       
-      inline def setBodyLengthChecker(value: js.Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
+      inline def setBodyLengthChecker(value: Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
       inline def setBucketEndpoint(value: Boolean): Self = StObject.set(x, "bucketEndpoint", value.asInstanceOf[js.Any])
       
@@ -542,7 +544,7 @@ object s3ConfigurationMod {
       
       inline def setEndpoint(
         value: () => js.Promise[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ js.Any
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.HttpEndpoint */ Any
             ]
       ): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
       
@@ -557,12 +559,12 @@ object s3ConfigurationMod {
       inline def setMd5(value: Instantiable): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
       
       inline def setParser(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ResponseParser<_stream.Readable> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ResponseParser<_stream.Readable> */ Any
       ): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
       inline def setRegion(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
-      inline def setSerializer(value: () => js.Promise[RequestSerializer[Readable, js.Any]]): Self = StObject.set(x, "serializer", js.Any.fromFunction0(value))
+      inline def setSerializer(value: () => js.Promise[RequestSerializer[Readable, Any]]): Self = StObject.set(x, "serializer", js.Any.fromFunction0(value))
       
       inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
@@ -572,19 +574,19 @@ object s3ConfigurationMod {
       
       inline def setSslEnabled(value: Boolean): Self = StObject.set(x, "sslEnabled", value.asInstanceOf[js.Any])
       
-      inline def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
+      inline def setStreamCollector(value: /* stream */ Any => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
       
-      inline def setStreamHasher(value: (/* hashCtor */ typings.awsSdkTypes.anon.Instantiable, Readable) => js.Promise[Uint8Array]): Self = StObject.set(x, "streamHasher", js.Any.fromFunction2(value))
+      inline def setStreamHasher(value: (/* hashCtor */ HashConstructor, Readable) => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "streamHasher", js.Any.fromFunction2(value))
       
-      inline def setUrlParser(value: /* url */ String => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
+      inline def setUrlParser(value: /* url */ String | URL => Endpoint): Self = StObject.set(x, "urlParser", js.Any.fromFunction1(value))
       
       inline def setUseAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "useAccelerateEndpoint", value.asInstanceOf[js.Any])
       
       inline def setUseDualstackEndpoint(value: Boolean): Self = StObject.set(x, "useDualstackEndpoint", value.asInstanceOf[js.Any])
       
-      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUtf8Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
       
-      inline def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
+      inline def setUtf8Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
       
       inline def set_user_injected_http_handler(value: Boolean): Self = StObject.set(x, "_user_injected_http_handler", value.asInstanceOf[js.Any])
     }

@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   extends StObject
      with BaseNode
      with Declaration
-     with Statement {
+     with Statement
+     with TypeScript {
   
   var const: Boolean | Null
   
@@ -51,7 +52,7 @@ object TSEnumDeclaration_ {
     
     inline def setMembers(value: js.Array[TSEnumMember_]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    inline def setMembersVarargs(value: TSEnumMember_ *): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: TSEnumMember_ *): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setType(value: TSEnumDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

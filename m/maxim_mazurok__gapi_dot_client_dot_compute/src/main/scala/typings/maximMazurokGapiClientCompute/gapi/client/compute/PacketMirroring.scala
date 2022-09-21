@@ -18,11 +18,7 @@ trait PacketMirroring extends StObject {
   /** An optional description of this resource. Provide this property when you create the resource. */
   var description: js.UndefOr[String] = js.undefined
   
-  /**
-    * Indicates whether or not this packet mirroring takes effect. If set to FALSE, this packet mirroring policy will not be enforced on the network.
-    *
-    * The default is TRUE.
-    */
+  /** Indicates whether or not this packet mirroring takes effect. If set to FALSE, this packet mirroring policy will not be enforced on the network. The default is TRUE. */
   var enable: js.UndefOr[String] = js.undefined
   
   /** Filter for mirrored traffic. If unspecified, all traffic is mirrored. */
@@ -55,9 +51,7 @@ trait PacketMirroring extends StObject {
   
   /**
     * The priority of applying this configuration. Priority is used to break ties in cases where there is more than one matching rule. In the case of two rules that apply for a given
-    * Instance, the one with the lowest-numbered priority value wins.
-    *
-    * Default value is 1000. Valid range is 0 through 65535.
+    * Instance, the one with the lowest-numbered priority value wins. Default value is 1000. Valid range is 0 through 65535.
     */
   var priority: js.UndefOr[Double] = js.undefined
   

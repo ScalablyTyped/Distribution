@@ -10,10 +10,10 @@ A complete, bidirectional, JXON library
 | ------------------ | :-------------: |
 | Full name          | jxon |
 | Keywords           | jxon, bidirectional, loseless, badgerfish, parker convention, xml to js, xml2js, xml to json, xml2json, js to xml, js2xml, json to xml, json2xml |
-| # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 666219 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 117450.33333333333 |
+| # stars            | 78.0 |
 
 ## Links
 - [Homepage](https://github.com/tyrasd/jxon#readme)

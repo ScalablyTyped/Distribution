@@ -19,7 +19,7 @@ trait Border extends StObject {
   
   var LineStyle: typings.activexExcel.Excel.LineStyle
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ThemeColor: XlThemeColor
   
@@ -36,7 +36,7 @@ object Border {
     Creator: XlCreator,
     ExcelDotBorder_typekey: Border,
     LineStyle: LineStyle,
-    Parent: js.Any,
+    Parent: Any,
     ThemeColor: XlThemeColor,
     TintAndShade: Double,
     Weight: XlBorderWeight
@@ -60,7 +60,7 @@ object Border {
     
     inline def setLineStyle(value: LineStyle): Self = StObject.set(x, "LineStyle", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setThemeColor(value: XlThemeColor): Self = StObject.set(x, "ThemeColor", value.asInstanceOf[js.Any])
     

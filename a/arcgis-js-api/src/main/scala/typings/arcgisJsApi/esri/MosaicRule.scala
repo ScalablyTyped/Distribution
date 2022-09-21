@@ -3,14 +3,14 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`lock-raster`
 import typings.arcgisJsApi.arcgisJsApiStrings.attribute
 import typings.arcgisJsApi.arcgisJsApiStrings.blend
-import typings.arcgisJsApi.arcgisJsApiStrings.center
+import typings.arcgisJsApi.arcgisJsApiStrings.center_
 import typings.arcgisJsApi.arcgisJsApiStrings.first
 import typings.arcgisJsApi.arcgisJsApiStrings.last
 import typings.arcgisJsApi.arcgisJsApiStrings.max
 import typings.arcgisJsApi.arcgisJsApiStrings.mean
 import typings.arcgisJsApi.arcgisJsApiStrings.min
 import typings.arcgisJsApi.arcgisJsApiStrings.nadir
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.northwest
 import typings.arcgisJsApi.arcgisJsApiStrings.seamline
 import typings.arcgisJsApi.arcgisJsApiStrings.sum
@@ -28,6 +28,8 @@ trait MosaicRule
   /**
     * Indicates whether the sort should be ascending.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#ascending)
     */
   var ascending: Boolean = js.native
@@ -42,6 +44,8 @@ trait MosaicRule
   /**
     * An array of raster Ids.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#lockRasterIds)
     */
   var lockRasterIds: js.Array[Double] = js.native
@@ -51,7 +55,7 @@ trait MosaicRule
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method)
     */
-  var method: none | center | nadir | viewpoint | attribute | `lock-raster` | northwest | seamline = js.native
+  var method: none_ | center_ | nadir | viewpoint | attribute | `lock-raster` | northwest | seamline = js.native
   
   /**
     * A multiple dimensional service can have multiple dimensions for one or more variables.
@@ -77,6 +81,8 @@ trait MosaicRule
   /**
     * The name of the attribute field that is used with a constant sortValue to define the mosaicking order when the mosaic [method](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method) is set to `attribute`.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#sortField)
     */
   var sortField: String = js.native
@@ -84,9 +90,11 @@ trait MosaicRule
   /**
     * A constant value defining a reference or base value for the sort field when the mosaic [method](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#method) is set to `attribute`.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#sortValue)
     */
-  var sortValue: String = js.native
+  var sortValue: String | Double = js.native
   
   /**
     * Defines the viewpoint location on which the ordering is defined based on the distance from the viewpoint and the nadir of rasters.

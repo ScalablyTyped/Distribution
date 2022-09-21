@@ -14,7 +14,7 @@ trait Location extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Location & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Location & TopLevel[Any]
   ] = js.undefined
   
   /** Resource ID for the region. For example: "us-east1". */
@@ -27,7 +27,7 @@ trait Location extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Location & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Location & TopLevel[Any]
   ] = js.undefined
   
   /** Full resource name for the region. For example: "projects/example-project/locations/us-east1". */
@@ -49,7 +49,7 @@ object Location {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Location & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Location & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -61,7 +61,7 @@ object Location {
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Location & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.Location & TopLevel[Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

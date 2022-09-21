@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-playground-middleware-express
 
-Typings are for version 1.7.22
+Typings are for version 1.7.23
 
 ## Library description:
 GraphQL IDE for better development workflows (GraphQL Subscriptions, interactive docs & collaboration).
@@ -10,15 +10,12 @@ GraphQL IDE for better development workflows (GraphQL Subscriptions, interactive
 | ------------------ | :-------------: |
 | Full name          | graphql-playground-middleware-express |
 | Keywords           | graphql, graphiql, playground, graphcool |
-| # releases         | 11 |
-| # dependents       | 75 |
-| # downloads        | 24467176 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 2006500.0 |
+| # stars            | 8065.0 |
 
 ## Links
-- [Homepage](https://github.com/graphcool/graphql-playground/tree/master/packages/graphql-playground-middleware-express)
-- [Bugs](https://github.com/graphcool/graphql-playground/issues)
-- [Repository](https://github.com/graphcool/graphql-playground)
 - [Npm](https://www.npmjs.com/package/graphql-playground-middleware-express)
     
 

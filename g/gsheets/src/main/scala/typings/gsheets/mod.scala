@@ -43,7 +43,7 @@ object mod {
       
       inline def setWorksheets(value: js.Array[Id]): Self = StObject.set(x, "worksheets", value.asInstanceOf[js.Any])
       
-      inline def setWorksheetsVarargs(value: Id*): Self = StObject.set(x, "worksheets", js.Array(value :_*))
+      inline def setWorksheetsVarargs(value: Id*): Self = StObject.set(x, "worksheets", js.Array(value*))
     }
   }
   
@@ -68,7 +68,7 @@ object mod {
       
       inline def setDataNull: Self = StObject.set(x, "data", null)
       
-      inline def setDataVarargs(value: Row*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Row*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -94,7 +94,7 @@ object mod {
       
       inline def setData(value: js.Array[Row]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Row*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Row*): Self = StObject.set(x, "data", js.Array(value*))
     }
   }
 }

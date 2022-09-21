@@ -92,7 +92,7 @@ object StartWorkflowExecutionInput {
     
     inline def setTagListUndefined: Self = StObject.set(x, "tagList", js.undefined)
     
-    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "tagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "tagList", js.Array(value*))
     
     inline def setTaskList(value: TaskList): Self = StObject.set(x, "taskList", value.asInstanceOf[js.Any])
     

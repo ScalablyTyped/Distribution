@@ -1,7 +1,6 @@
 package typings.underscoreString
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.RegExp
 import typings.underscoreString.mod.underscoreAugmentingMod.UnderscoreStringStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -94,7 +93,7 @@ object mod extends Shortcut {
         * ('Hello') => ['H','e','l','l','o']
         * @param str
         */
-      def chars(str: String): js.Array[js.Any] = js.native
+      def chars(str: String): js.Array[Any] = js.native
       
       /**
         * Chop a string into pieces.
@@ -102,7 +101,7 @@ object mod extends Shortcut {
         * @param str String to chop
         * @param step Size of the pieces
         */
-      def chop(str: String, step: Double): js.Array[js.Any] = js.native
+      def chop(str: String, step: Double): js.Array[Any] = js.native
       
       /**
         * Converts string to camelized class name.
@@ -213,7 +212,7 @@ object mod extends Shortcut {
         * ('Hello\nWorld') => ['Hello', 'World']
         * @param str
         */
-      def lines(str: String): js.Array[js.Any] = js.native
+      def lines(str: String): js.Array[Any] = js.native
       
       /**
         * Right-pad a string.
@@ -411,7 +410,7 @@ object mod extends Shortcut {
         * @param format
         * @param args
         */
-      def sprintf(format: String, args: js.Any*): String = js.native
+      def sprintf(format: String, args: Any*): String = js.native
       
       /**
         * Checks if string starts with another string.
@@ -520,9 +519,9 @@ object mod extends Shortcut {
         * @param falseValues
         */
       def toBoolean(str: String): Boolean = js.native
-      def toBoolean(str: String, trueValues: js.Array[js.Any]): Boolean = js.native
-      def toBoolean(str: String, trueValues: js.Array[js.Any], falseValues: js.Array[js.Any]): Boolean = js.native
-      def toBoolean(str: String, trueValues: Unit, falseValues: js.Array[js.Any]): Boolean = js.native
+      def toBoolean(str: String, trueValues: js.Array[Any]): Boolean = js.native
+      def toBoolean(str: String, trueValues: js.Array[Any], falseValues: js.Array[Any]): Boolean = js.native
+      def toBoolean(str: String, trueValues: Unit, falseValues: js.Array[Any]): Boolean = js.native
       
       /**
         * Parse string to number.
@@ -544,14 +543,14 @@ object mod extends Shortcut {
         * @param lastSeparator
         * @param serial
         */
-      def toSentence(array: js.Array[js.Any]): String = js.native
-      def toSentence(array: js.Array[js.Any], separator: String): String = js.native
-      def toSentence(array: js.Array[js.Any], separator: String, lastSeparator: String): String = js.native
-      def toSentence(array: js.Array[js.Any], separator: String, lastSeparator: String, serial: Boolean): String = js.native
-      def toSentence(array: js.Array[js.Any], separator: String, lastSeparator: Unit, serial: Boolean): String = js.native
-      def toSentence(array: js.Array[js.Any], separator: Unit, lastSeparator: String): String = js.native
-      def toSentence(array: js.Array[js.Any], separator: Unit, lastSeparator: String, serial: Boolean): String = js.native
-      def toSentence(array: js.Array[js.Any], separator: Unit, lastSeparator: Unit, serial: Boolean): String = js.native
+      def toSentence(array: js.Array[Any]): String = js.native
+      def toSentence(array: js.Array[Any], separator: String): String = js.native
+      def toSentence(array: js.Array[Any], separator: String, lastSeparator: String): String = js.native
+      def toSentence(array: js.Array[Any], separator: String, lastSeparator: String, serial: Boolean): String = js.native
+      def toSentence(array: js.Array[Any], separator: String, lastSeparator: Unit, serial: Boolean): String = js.native
+      def toSentence(array: js.Array[Any], separator: Unit, lastSeparator: String): String = js.native
+      def toSentence(array: js.Array[Any], separator: Unit, lastSeparator: String, serial: Boolean): String = js.native
+      def toSentence(array: js.Array[Any], separator: Unit, lastSeparator: Unit, serial: Boolean): String = js.native
       
       /**
         * The same as toSentence, but uses ', ' as default for lastSeparator.
@@ -559,10 +558,10 @@ object mod extends Shortcut {
         * @param separator
         * @param lastSeparator
         */
-      def toSentenceSerial(array: js.Array[js.Any]): String = js.native
-      def toSentenceSerial(array: js.Array[js.Any], separator: String): String = js.native
-      def toSentenceSerial(array: js.Array[js.Any], separator: String, lastSeparator: String): String = js.native
-      def toSentenceSerial(array: js.Array[js.Any], separator: Unit, lastSeparator: String): String = js.native
+      def toSentenceSerial(array: js.Array[Any]): String = js.native
+      def toSentenceSerial(array: js.Array[Any], separator: String): String = js.native
+      def toSentenceSerial(array: js.Array[Any], separator: String, lastSeparator: String): String = js.native
+      def toSentenceSerial(array: js.Array[Any], separator: Unit, lastSeparator: String): String = js.native
       
       /**
         * Trims defined characters from begining and ending of the string.
@@ -636,7 +635,7 @@ object mod extends Shortcut {
         * @param str
         * @param delimiter
         */
-      def words(str: String, delimiter: RegExp): js.Array[String] = js.native
+      def words(str: String, delimiter: js.RegExp): js.Array[String] = js.native
     }
   }
 }

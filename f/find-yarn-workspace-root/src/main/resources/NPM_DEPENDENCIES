@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "find-yarn-workspace-root" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "find-yarn-workspace-root" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

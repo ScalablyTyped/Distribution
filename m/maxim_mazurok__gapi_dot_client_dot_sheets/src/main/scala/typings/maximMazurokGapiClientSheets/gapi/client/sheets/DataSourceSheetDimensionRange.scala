@@ -25,7 +25,7 @@ object DataSourceSheetDimensionRange {
     
     inline def setColumnReferencesUndefined: Self = StObject.set(x, "columnReferences", js.undefined)
     
-    inline def setColumnReferencesVarargs(value: DataSourceColumnReference*): Self = StObject.set(x, "columnReferences", js.Array(value :_*))
+    inline def setColumnReferencesVarargs(value: DataSourceColumnReference*): Self = StObject.set(x, "columnReferences", js.Array(value*))
     
     inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     

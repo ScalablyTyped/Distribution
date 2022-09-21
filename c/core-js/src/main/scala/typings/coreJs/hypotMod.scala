@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object hypotMod {
   
   /* was `typeof core.Math.hypot` */
-  inline def apply(values: Double*): Double = ^.asInstanceOf[js.Dynamic].apply(values.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(values: Double*): Double = ^.asInstanceOf[js.Dynamic].apply(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Double]
   
   @JSImport("core-js/fn/math/hypot", JSImport.Namespace)
   @js.native

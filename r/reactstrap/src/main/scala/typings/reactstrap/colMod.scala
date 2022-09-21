@@ -5,7 +5,7 @@ import typings.react.mod.Component
 import typings.react.mod.ElementType
 import typings.react.mod.HTMLAttributes
 import typings.reactstrap.anon.Offset
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,17 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object colMod {
   
-  @JSImport("reactstrap/lib/Col", JSImport.Default)
+  @JSImport("reactstrap/types/lib/Col", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ColProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ColProps, js.Object, Any]
   
-  type Col = Component[ColProps, js.Object, js.Any]
+  type Col = Component[ColProps, js.Object, Any]
   
   trait ColProps
     extends StObject
        with HTMLAttributes[HTMLDivElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var cssModule: js.UndefOr[CSSModule] = js.undefined
     
@@ -33,7 +33,7 @@ object colMod {
     
     var sm: js.UndefOr[ColumnProps] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
     
     // custom widths
     var widths: js.UndefOr[js.Array[String]] = js.undefined
@@ -41,6 +41,8 @@ object colMod {
     var xl: js.UndefOr[ColumnProps] = js.undefined
     
     var xs: js.UndefOr[ColumnProps] = js.undefined
+    
+    var xxl: js.UndefOr[ColumnProps] = js.undefined
   }
   object ColProps {
     
@@ -67,7 +69,7 @@ object colMod {
       
       inline def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
@@ -75,7 +77,7 @@ object colMod {
       
       inline def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
       
-      inline def setWidthsVarargs(value: String*): Self = StObject.set(x, "widths", js.Array(value :_*))
+      inline def setWidthsVarargs(value: String*): Self = StObject.set(x, "widths", js.Array(value*))
       
       inline def setXl(value: ColumnProps): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
       
@@ -84,6 +86,10 @@ object colMod {
       inline def setXs(value: ColumnProps): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
       
       inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
+      
+      inline def setXxl(value: ColumnProps): Self = StObject.set(x, "xxl", value.asInstanceOf[js.Any])
+      
+      inline def setXxlUndefined: Self = StObject.set(x, "xxl", js.undefined)
     }
   }
   

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientVerticalGridCustomButtonEventArgs")
 @js.native
-class ASPxClientVerticalGridCustomButtonEventArgs protected ()
+open class ASPxClientVerticalGridCustomButtonEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientVerticalGridCustomButtonEventArgs {
   /**

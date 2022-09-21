@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LambdaDataSourceConfig extends StObject {
   
   /**
-    * The ARN for the Lambda function.
+    * The Amazon Resource Name (ARN) for the Lambda function.
     */
   var lambdaFunctionArn: String
 }

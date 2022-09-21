@@ -67,7 +67,7 @@ object urlbar {
       
       inline def setSources(value: js.Array[SourceType]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      inline def setSourcesVarargs(value: SourceType*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: SourceType*): Self = StObject.set(x, "sources", js.Array(value*))
     }
   }
   

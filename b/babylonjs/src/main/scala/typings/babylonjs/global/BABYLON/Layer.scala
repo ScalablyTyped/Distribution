@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Layer")
 @js.native
-class Layer protected ()
+open class Layer protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Layer {
   /**

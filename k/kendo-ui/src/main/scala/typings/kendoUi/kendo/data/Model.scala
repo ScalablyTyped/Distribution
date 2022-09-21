@@ -10,20 +10,22 @@ trait Model
   extends StObject
      with ObservableObject {
   
-  var _defaultId: js.Any = js.native
+  var _defaultId: Any = js.native
   
   def accept(): Unit = js.native
-  def accept(data: js.Any): Unit = js.native
+  def accept(data: Any): Unit = js.native
   
-  var defaults: StringDictionary[js.Any] = js.native
+  var defaults: StringDictionary[Any] = js.native
   
   var dirty: Boolean = js.native
+  
+  var dirtyFields: js.Array[Any] = js.native
   
   def editable(field: String): Boolean = js.native
   
   var fields: DataSourceSchemaModelFields = js.native
   
-  var id: js.Any = js.native
+  var id: Any = js.native
   
   var idField: String = js.native
   

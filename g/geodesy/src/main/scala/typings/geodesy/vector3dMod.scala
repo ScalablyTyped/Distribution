@@ -8,7 +8,7 @@ object vector3dMod {
   
   @JSImport("geodesy/vector3d", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Vector3d {
     def this(x: Double, y: Double, z: Double) = this()

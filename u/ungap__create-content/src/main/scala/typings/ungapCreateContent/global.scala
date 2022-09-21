@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  inline def createContent(markup: js.Any): DocumentFragment = js.Dynamic.global.applyDynamic("createContent")(markup.asInstanceOf[js.Any]).asInstanceOf[DocumentFragment]
-  inline def createContent(markup: js.Any, `type`: String): DocumentFragment = (js.Dynamic.global.applyDynamic("createContent")(markup.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
+  inline def createContent(markup: Any): DocumentFragment = js.Dynamic.global.applyDynamic("createContent")(markup.asInstanceOf[js.Any]).asInstanceOf[DocumentFragment]
+  inline def createContent(markup: Any, `type`: String): DocumentFragment = (js.Dynamic.global.applyDynamic("createContent")(markup.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
 }

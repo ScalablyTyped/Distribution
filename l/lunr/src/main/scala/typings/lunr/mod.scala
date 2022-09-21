@@ -12,7 +12,6 @@ import typings.lunr.mod.Index.Result
 import typings.lunr.mod.Query.Clause
 import typings.lunr.mod.Token.UpdateFunction
 import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,7 +62,7 @@ object mod {
     */
   @JSImport("lunr", "Builder")
   @js.native
-  class Builder () extends StObject {
+  open class Builder () extends StObject {
     
     /**
       * A parameter to control field length normalization, setting this to 0 disabled normalization, 1 fully normalizes field lengths, the default value is 0.75.
@@ -223,7 +222,7 @@ object mod {
       *
       * @param plugin The plugin to apply.
       */
-    def use(plugin: Plugin, args: js.Any*): Unit = js.native
+    def use(plugin: Plugin, args: Any*): Unit = js.native
   }
   object Builder {
     
@@ -240,7 +239,7 @@ object mod {
     @js.native
     trait Plugin extends StObject {
       
-      def apply(args: js.Any*): Unit = js.native
+      def apply(args: Any*): Unit = js.native
     }
   }
   
@@ -254,7 +253,7 @@ object mod {
     */
   @JSImport("lunr", "Index")
   @js.native
-  class Index protected () extends StObject {
+  open class Index protected () extends StObject {
     /**
       * @param attrs The attributes of the built search index.
       */
@@ -359,7 +358,7 @@ object mod {
         
         inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
         
         inline def setInvertedIndex(value: js.Object): Self = StObject.set(x, "invertedIndex", value.asInstanceOf[js.Any])
         
@@ -464,7 +463,7 @@ object mod {
     */
   @JSImport("lunr", "MatchData")
   @js.native
-  class MatchData protected () extends StObject {
+  open class MatchData protected () extends StObject {
     /**
       * @param term - The term this match data is associated with
       * @param field - The field in which the term was found
@@ -518,7 +517,7 @@ object mod {
     */
   @JSImport("lunr", "Pipeline")
   @js.native
-  class Pipeline () extends StObject {
+  open class Pipeline () extends StObject {
     
     /**
       * Adds new functions to the end of the pipeline.
@@ -632,7 +631,7 @@ object mod {
     */
   @JSImport("lunr", "Query")
   @js.native
-  class Query protected () extends StObject {
+  open class Query protected () extends StObject {
     /**
       * @param allFields An array of all available fields in a lunr.Index.
       */
@@ -801,7 +800,7 @@ object mod {
         
         inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
         
         inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
         
@@ -814,16 +813,18 @@ object mod {
   
   @JSImport("lunr", "QueryParseError")
   @js.native
-  class QueryParseError protected ()
+  open class QueryParseError protected ()
     extends StObject
        with Error {
     def this(message: String, start: String, end: String) = this()
     
     var end: Double = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     @JSName("name")
@@ -838,7 +839,7 @@ object mod {
     */
   @JSImport("lunr", "Token")
   @js.native
-  class Token protected () extends StObject {
+  open class Token protected () extends StObject {
     /**
       * @param [str=''] - The string token being wrapped.
       * @param [metadata={}] - Metadata associated with this token.
@@ -892,7 +893,7 @@ object mod {
     */
   @JSImport("lunr", "TokenSet")
   @js.native
-  class TokenSet () extends StObject {
+  open class TokenSet () extends StObject {
     
     /**
       * Creates a TokenSet instance from the given sorted array of words.
@@ -963,7 +964,7 @@ object mod {
     */
   @JSImport("lunr", "Vector")
   @js.native
-  class Vector protected () extends StObject {
+  open class Vector protected () extends StObject {
     /**
       * @param [elements] - The flat list of element index and element value pairs.
       */
@@ -1108,8 +1109,8 @@ object mod {
       */
     @JSImport("lunr", "tokenizer.separator")
     @js.native
-    def separator: RegExp = js.native
-    inline def separator_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("separator")(x.asInstanceOf[js.Any])
+    def separator: js.RegExp = js.native
+    inline def separator_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("separator")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -1147,7 +1148,7 @@ object mod {
       * @param obj The object to convert to a string.
       * @return string representation of the passed object.
       */
-    inline def asString(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asString")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def asString(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("asString")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Print a warning message to the console.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for object-hash
 
-Typings are for version v1.3.1
+Typings are for version 2.2
 
 ## Library description:
 Generate hashes from javascript objects in node and the browser.
@@ -10,10 +10,10 @@ Generate hashes from javascript objects in node and the browser.
 | ------------------ | :-------------: |
 | Full name          | object-hash |
 | Keywords           | object, hash, sha1, md5 |
-| # releases         | 7 |
-| # dependents       | 1030 |
-| # downloads        | 280115569 |
-| # stars            | 25 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 4.7929675E7 |
+| # stars            | 1153.0 |
 
 ## Links
 - [Homepage](https://github.com/puleos/object-hash)

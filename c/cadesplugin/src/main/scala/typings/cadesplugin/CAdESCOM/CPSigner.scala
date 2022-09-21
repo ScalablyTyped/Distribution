@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CPSigner extends StObject {
   
+  var AuthenticatedAttributes2: CPAuthenticatedAttributes2 = js.native
+  
   var Certificate: typings.cadesplugin.CAPICOM.Certificate = js.native
   
   var CheckCertificate: Boolean = js.native

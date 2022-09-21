@@ -1,24 +1,107 @@
 package typings.jsCookie
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.jsCookie.anon.Read
+import typings.jsCookie.anon.RequiredConverterstring
 import typings.jsCookie.jsCookieStrings.Lax
 import typings.jsCookie.jsCookieStrings.None
 import typings.jsCookie.jsCookieStrings.Strict
 import typings.jsCookie.jsCookieStrings.lax_
 import typings.jsCookie.jsCookieStrings.none_
 import typings.jsCookie.jsCookieStrings.strict_
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+/* Inlined js-cookie.js-cookie.CookiesStatic<string> & {  noConflict :(): js-cookie.js-cookie.CookiesStatic<string> | undefined} */
+object mod {
   
   @JSImport("js-cookie", JSImport.Namespace)
   @js.native
-  val ^ : CookiesStatic[js.Object] = js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("js-cookie", "attributes")
+  @js.native
+  val attributes: CookieAttributes = js.native
+  
+  @JSImport("js-cookie", "converter")
+  @js.native
+  val converter: RequiredConverterstring = js.native
+  
+  /**
+    * Read all available cookies
+    */
+  inline def get(): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[StringDictionary[String]]
+  /**
+    * Read cookie
+    */
+  inline def get(name: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  
+  /**
+    * If there is any danger of a conflict with the namespace Cookies,
+    * the noConflict method will allow you to define a new namespace
+    * and preserve the original one. This is especially useful when
+    * running the script on third party sites e.g. as part of a widget
+    * or SDK. Note: The noConflict method is not necessary when using
+    * AMD or CommonJS, thus it is not exposed in those environments.
+    */
+  @JSImport("js-cookie", "noConflict")
+  @js.native
+  def noConflict: js.UndefOr[js.Function0[CookiesStatic[String]]] = js.native
+  inline def noConflict_=(x: js.UndefOr[js.Function0[CookiesStatic[String]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noConflict")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Delete cookie
+    */
+  inline def remove(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def remove(name: String, options: CookieAttributes): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Create a cookie
+    */
+  inline def set(name: String, value: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def set(name: String, value: String, options: CookieAttributes): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  
+  /**
+    * Cookie attribute defaults can be set globally by creating an
+    * instance of the api via withAttributes(), or individually for
+    * each call to Cookies.set(...) by passing a plain object as the
+    * last argument. Per-call attributes override the default attributes.
+    */
+  inline def withAttributes(attributes: CookieAttributes): CookiesStatic[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("withAttributes")(attributes.asInstanceOf[js.Any]).asInstanceOf[CookiesStatic[String]]
+  
+  /**
+    * Create a new instance of the api that overrides the default
+    * decoding implementation. All methods that rely in a proper
+    * decoding to work, such as Cookies.remove() and Cookies.get(),
+    * will run the converter first for each cookie. The returned
+    * string will be used as the cookie value.
+    */
+  inline def withConverter[TConv](converter: Converter[TConv]): CookiesStatic[TConv] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConverter")(converter.asInstanceOf[js.Any]).asInstanceOf[CookiesStatic[TConv]]
+  
+  trait Converter[TConv] extends StObject {
+    
+    var read: js.UndefOr[CookieReadConverter[TConv]] = js.undefined
+    
+    var write: js.UndefOr[CookieWriteConverter[TConv]] = js.undefined
+  }
+  object Converter {
+    
+    inline def apply[TConv](): Converter[TConv] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Converter[TConv]]
+    }
+    
+    extension [Self <: Converter[?], TConv](x: Self & Converter[TConv]) {
+      
+      inline def setRead(value: (/* value */ String, /* name */ String) => String | TConv): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
+      
+      inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+      
+      inline def setWrite(value: (/* value */ String | TConv, /* name */ String) => String): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
+      
+      inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+    }
+  }
   
   trait CookieAttributes
     extends StObject
@@ -26,7 +109,7 @@ object mod extends Shortcut {
     * An attribute which will be serialized, conformably to RFC 6265
     * section 5.2.
     */
-  /* property */ StringDictionary[js.Any] {
+  /* property */ StringDictionary[Any] {
     
     /**
       * Define the domain where the cookie is available. Defaults to
@@ -39,7 +122,7 @@ object mod extends Shortcut {
       * which will be interpreted as days from time of creation or a
       * Date instance. If omitted, the cookie becomes a session cookie.
       */
-    var expires: js.UndefOr[Double | Date] = js.undefined
+    var expires: js.UndefOr[Double | js.Date] = js.undefined
     
     /**
       * Define the path where the cookie is available. Defaults to '/'
@@ -72,7 +155,7 @@ object mod extends Shortcut {
       
       inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      inline def setExpires(value: Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Double | js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
@@ -90,17 +173,16 @@ object mod extends Shortcut {
     }
   }
   
-  type CookieReadConverter = js.Function2[/* value */ String, /* name */ String, String]
+  type CookieReadConverter[T] = js.Function2[/* value */ String, /* name */ String, String | T]
   
-  type CookieWriteConverter[T /* <: js.Object */] = js.Function2[/* value */ String | T, /* name */ String, String]
+  type CookieWriteConverter[T] = js.Function2[/* value */ String | T, /* name */ String, String]
   
   @js.native
-  trait CookiesStatic[T /* <: js.Object */] extends StObject {
+  trait CookiesStatic[T] extends StObject {
     
-    /**
-      * Allows default cookie attributes to be accessed, changed, or reset
-      */
-    var defaults: CookieAttributes = js.native
+    val attributes: CookieAttributes = js.native
+    
+    val converter: RequiredConverterstring = js.native
     
     /**
       * Read all available cookies
@@ -109,28 +191,7 @@ object mod extends Shortcut {
     /**
       * Read cookie
       */
-    def get(name: String): js.UndefOr[String] = js.native
-    
-    /**
-      * Returns the parsed representation of
-      * all cookies according to JSON.parse
-      */
-    def getJSON(): StringDictionary[js.Any] = js.native
-    /**
-      * Returns the parsed representation of the string
-      * stored in the cookie according to JSON.parse
-      */
-    def getJSON(name: String): js.Any = js.native
-    
-    /**
-      * If there is any danger of a conflict with the namespace Cookies,
-      * the noConflict method will allow you to define a new namespace
-      * and preserve the original one. This is especially useful when
-      * running the script on third party sites e.g. as part of a widget
-      * or SDK. Note: The noConflict method is not necessary when using
-      * AMD or CommonJS, thus it is not exposed in those environments.
-      */
-    var noConflict: js.UndefOr[js.Function0[CookiesStatic[T]]] = js.native
+    def get(name: String): js.UndefOr[String | T] = js.native
     
     /**
       * Delete cookie
@@ -146,7 +207,14 @@ object mod extends Shortcut {
     def set(name: String, value: String): js.UndefOr[String] = js.native
     def set(name: String, value: String, options: CookieAttributes): js.UndefOr[String] = js.native
     
-    def withConverter[TConv /* <: js.Object */](converter: Read[TConv]): CookiesStatic[TConv] = js.native
+    /**
+      * Cookie attribute defaults can be set globally by creating an
+      * instance of the api via withAttributes(), or individually for
+      * each call to Cookies.set(...) by passing a plain object as the
+      * last argument. Per-call attributes override the default attributes.
+      */
+    def withAttributes(attributes: CookieAttributes): CookiesStatic[T] = js.native
+    
     /**
       * Create a new instance of the api that overrides the default
       * decoding implementation. All methods that rely in a proper
@@ -154,11 +222,6 @@ object mod extends Shortcut {
       * will run the converter first for each cookie. The returned
       * string will be used as the cookie value.
       */
-    def withConverter[TConv /* <: js.Object */](converter: CookieReadConverter): CookiesStatic[TConv] = js.native
+    def withConverter[TConv](converter: Converter[TConv]): CookiesStatic[TConv] = js.native
   }
-  
-  type _To = CookiesStatic[js.Object]
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: CookiesStatic[js.Object] = ^
 }

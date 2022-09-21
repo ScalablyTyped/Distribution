@@ -17,7 +17,7 @@ trait ClassBreaksRendererProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#backgroundFillSymbol)
     */
-  var backgroundFillSymbol: js.UndefOr[FillSymbolProperties | PolygonSymbol3DProperties] = js.undefined
+  var backgroundFillSymbol: js.UndefOr[FillSymbolProperties | typings.arcgisJsApi.anon.PolygonSymbol3DProperties] = js.undefined
   
   /**
     * Each element in the array is an object that provides information about a class break associated with the renderer.
@@ -76,14 +76,14 @@ trait ClassBreaksRendererProperties
   var normalizationType: js.UndefOr[field | log | `percent-of-total`] = js.undefined
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression evaluating to a number.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#valueExpression)
     */
   var valueExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * The title identifying and describing the associated [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression as defined in the [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#valueExpression) property.
+    * The title identifying and describing the associated [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression as defined in the [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#valueExpression) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-ClassBreaksRenderer.html#valueExpressionTitle)
     */
@@ -98,7 +98,7 @@ object ClassBreaksRendererProperties {
   
   extension [Self <: ClassBreaksRendererProperties](x: Self) {
     
-    inline def setBackgroundFillSymbol(value: FillSymbolProperties | PolygonSymbol3DProperties): Self = StObject.set(x, "backgroundFillSymbol", value.asInstanceOf[js.Any])
+    inline def setBackgroundFillSymbol(value: FillSymbolProperties | typings.arcgisJsApi.anon.PolygonSymbol3DProperties): Self = StObject.set(x, "backgroundFillSymbol", value.asInstanceOf[js.Any])
     
     inline def setBackgroundFillSymbolUndefined: Self = StObject.set(x, "backgroundFillSymbol", js.undefined)
     
@@ -106,7 +106,7 @@ object ClassBreaksRendererProperties {
     
     inline def setClassBreakInfosUndefined: Self = StObject.set(x, "classBreakInfos", js.undefined)
     
-    inline def setClassBreakInfosVarargs(value: ClassBreakInfoProperties*): Self = StObject.set(x, "classBreakInfos", js.Array(value :_*))
+    inline def setClassBreakInfosVarargs(value: ClassBreakInfoProperties*): Self = StObject.set(x, "classBreakInfos", js.Array(value*))
     
     inline def setDefaultLabel(value: String): Self = StObject.set(x, "defaultLabel", value.asInstanceOf[js.Any])
     

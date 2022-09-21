@@ -14,7 +14,7 @@ trait GoogleCloudRedisV1LocationMetadata extends StObject {
   var availableZones: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.GoogleCloudRedisV1LocationMetadata & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.GoogleCloudRedisV1LocationMetadata & TopLevel[Any]
   ] = js.undefined
 }
 object GoogleCloudRedisV1LocationMetadata {
@@ -29,7 +29,7 @@ object GoogleCloudRedisV1LocationMetadata {
     inline def setAvailableZones(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.GoogleCloudRedisV1LocationMetadata & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.GoogleCloudRedisV1LocationMetadata & TopLevel[Any]
     ): Self = StObject.set(x, "availableZones", value.asInstanceOf[js.Any])
     
     inline def setAvailableZonesUndefined: Self = StObject.set(x, "availableZones", js.undefined)

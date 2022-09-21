@@ -35,13 +35,13 @@ object Conjugations {
     
     inline def setConjugationsUndefined: Self = StObject.set(x, "conjugations", js.undefined)
     
-    inline def setConjugationsVarargs(value: Value*): Self = StObject.set(x, "conjugations", js.Array(value :_*))
+    inline def setConjugationsVarargs(value: Value*): Self = StObject.set(x, "conjugations", js.Array(value*))
     
     inline def setDefinitions(value: js.Array[Definition]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     
     inline def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
     
-    inline def setDefinitionsVarargs(value: Definition*): Self = StObject.set(x, "definitions", js.Array(value :_*))
+    inline def setDefinitionsVarargs(value: Definition*): Self = StObject.set(x, "definitions", js.Array(value*))
     
     inline def setPartOfSpeech(value: String): Self = StObject.set(x, "partOfSpeech", value.asInstanceOf[js.Any])
     
@@ -67,6 +67,6 @@ object Conjugations {
     
     inline def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
     
-    inline def setSynonymsVarargs(value: Source*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+    inline def setSynonymsVarargs(value: Source*): Self = StObject.set(x, "synonyms", js.Array(value*))
   }
 }

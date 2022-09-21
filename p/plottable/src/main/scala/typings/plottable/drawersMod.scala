@@ -24,22 +24,22 @@ object drawersMod {
   
   @JSImport("plottable/build/src/drawers", "ArcOutlineSVGDrawer")
   @js.native
-  class ArcOutlineSVGDrawer ()
+  open class ArcOutlineSVGDrawer ()
     extends typings.plottable.arcOutlineDrawerMod.ArcOutlineSVGDrawer
   
   @JSImport("plottable/build/src/drawers", "ArcSVGDrawer")
   @js.native
-  class ArcSVGDrawer ()
+  open class ArcSVGDrawer ()
     extends typings.plottable.arcDrawerMod.ArcSVGDrawer
   
   @JSImport("plottable/build/src/drawers", "AreaSVGDrawer")
   @js.native
-  class AreaSVGDrawer ()
+  open class AreaSVGDrawer ()
     extends typings.plottable.areaDrawerMod.AreaSVGDrawer
   
   @JSImport("plottable/build/src/drawers", "CanvasDrawer")
   @js.native
-  class CanvasDrawer protected ()
+  open class CanvasDrawer protected ()
     extends typings.plottable.canvasDrawerMod.CanvasDrawer {
     /**
       * @param _context The context for a canvas that this drawer will draw to.
@@ -54,12 +54,12 @@ object drawersMod {
   
   @JSImport("plottable/build/src/drawers", "LineSVGDrawer")
   @js.native
-  class LineSVGDrawer ()
+  open class LineSVGDrawer ()
     extends typings.plottable.lineDrawerMod.LineSVGDrawer
   
   @JSImport("plottable/build/src/drawers", "ProxyDrawer")
   @js.native
-  class ProxyDrawer protected ()
+  open class ProxyDrawer protected ()
     extends typings.plottable.drawerMod.ProxyDrawer {
     /**
       * A Drawer draws svg elements based on the input Dataset.
@@ -80,21 +80,21 @@ object drawersMod {
   
   @JSImport("plottable/build/src/drawers", "RectangleCanvasDrawer")
   @js.native
-  class RectangleCanvasDrawer protected ()
+  open class RectangleCanvasDrawer protected ()
     extends typings.plottable.rectangleDrawerMod.RectangleCanvasDrawer {
     def this(ctx: CanvasRenderingContext2D) = this()
   }
   
   @JSImport("plottable/build/src/drawers", "RectangleSVGDrawer")
   @js.native
-  class RectangleSVGDrawer ()
+  open class RectangleSVGDrawer ()
     extends typings.plottable.rectangleDrawerMod.RectangleSVGDrawer {
     def this(_rootClassName: String) = this()
   }
   
   @JSImport("plottable/build/src/drawers", "SVGDrawer")
   @js.native
-  class SVGDrawer protected ()
+  open class SVGDrawer protected ()
     extends typings.plottable.svgDrawerMod.SVGDrawer {
     /**
       * @param svgElementName an HTML/SVG tag name to be created, one per datum.
@@ -106,21 +106,21 @@ object drawersMod {
   
   @JSImport("plottable/build/src/drawers", "SegmentSVGDrawer")
   @js.native
-  class SegmentSVGDrawer ()
+  open class SegmentSVGDrawer ()
     extends typings.plottable.segmentDrawerMod.SegmentSVGDrawer
   
   @JSImport("plottable/build/src/drawers", "SymbolSVGDrawer")
   @js.native
-  class SymbolSVGDrawer ()
+  open class SymbolSVGDrawer ()
     extends typings.plottable.symbolDrawerMod.SymbolSVGDrawer
   
-  inline def getStrokeDashArray(style: Record[String, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrokeDashArray")(style.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def getStrokeDashArray(style: Record[String, Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrokeDashArray")(style.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  inline def getStrokeWidth(style: Record[String, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrokeWidth")(style.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getStrokeWidth(style: Record[String, Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrokeWidth")(style.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def makeAreaCanvasDrawStep(d3AreaFactory: js.Function0[Area_[js.Any]], d3LineFactory: js.Function0[Line_[js.Any]]): CanvasDrawStep = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAreaCanvasDrawStep")(d3AreaFactory.asInstanceOf[js.Any], d3LineFactory.asInstanceOf[js.Any])).asInstanceOf[CanvasDrawStep]
+  inline def makeAreaCanvasDrawStep(d3AreaFactory: js.Function0[Area_[Any]], d3LineFactory: js.Function0[Line_[Any]]): CanvasDrawStep = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAreaCanvasDrawStep")(d3AreaFactory.asInstanceOf[js.Any], d3LineFactory.asInstanceOf[js.Any])).asInstanceOf[CanvasDrawStep]
   
-  inline def makeLineCanvasDrawStep(d3LineFactory: js.Function0[Line_[js.Any]]): CanvasDrawStep = ^.asInstanceOf[js.Dynamic].applyDynamic("makeLineCanvasDrawStep")(d3LineFactory.asInstanceOf[js.Any]).asInstanceOf[CanvasDrawStep]
+  inline def makeLineCanvasDrawStep(d3LineFactory: js.Function0[Line_[Any]]): CanvasDrawStep = ^.asInstanceOf[js.Dynamic].applyDynamic("makeLineCanvasDrawStep")(d3LineFactory.asInstanceOf[js.Any]).asInstanceOf[CanvasDrawStep]
   
   inline def makeSymbolCanvasDrawStep(
     dataset: Dataset,
@@ -136,21 +136,16 @@ object drawersMod {
   
   inline def renderArea(
     context: CanvasRenderingContext2D,
-    d3Area: Area_[js.Any],
-    data: js.Array[js.Any],
+    d3Area: Area_[Any],
+    data: js.Array[Any],
     style: IFillStyle & IStrokeStyle
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderArea")(context.asInstanceOf[js.Any], d3Area.asInstanceOf[js.Any], data.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def renderLine(
-    context: CanvasRenderingContext2D,
-    d3Line: Line_[js.Any],
-    data: js.Array[js.Any],
-    style: IStrokeStyle
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderLine")(context.asInstanceOf[js.Any], d3Line.asInstanceOf[js.Any], data.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderLine(context: CanvasRenderingContext2D, d3Line: Line_[Any], data: js.Array[Any], style: IStrokeStyle): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderLine")(context.asInstanceOf[js.Any], d3Line.asInstanceOf[js.Any], data.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def renderPathWithStyle(context: CanvasRenderingContext2D, style: Record[String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderPathWithStyle")(context.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderPathWithStyle(context: CanvasRenderingContext2D, style: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderPathWithStyle")(context.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def resolveAttributes(projector: AttributeToAppliedProjector, attrKeys: js.Array[String], datum: js.Any, index: Double): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAttributes")(projector.asInstanceOf[js.Any], attrKeys.asInstanceOf[js.Any], datum.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  inline def resolveAttributes(projector: AttributeToAppliedProjector, attrKeys: js.Array[String], datum: Any, index: Double): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAttributes")(projector.asInstanceOf[js.Any], attrKeys.asInstanceOf[js.Any], datum.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
   
-  inline def resolveAttributesSubsetWithStyles(projector: AttributeToAppliedProjector, extraKeys: js.Array[String], datum: js.Any, index: Double): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAttributesSubsetWithStyles")(projector.asInstanceOf[js.Any], extraKeys.asInstanceOf[js.Any], datum.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  inline def resolveAttributesSubsetWithStyles(projector: AttributeToAppliedProjector, extraKeys: js.Array[String], datum: Any, index: Double): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAttributesSubsetWithStyles")(projector.asInstanceOf[js.Any], extraKeys.asInstanceOf[js.Any], datum.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
 }

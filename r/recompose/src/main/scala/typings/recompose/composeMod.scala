@@ -12,5 +12,5 @@ object composeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[TInner, TOutter](functions: js.Function*): ComponentEnhancer[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(functions.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[TInner, TOutter]]
+  inline def default[TInner, TOutter](functions: js.Function*): ComponentEnhancer[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(functions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ComponentEnhancer[TInner, TOutter]]
 }

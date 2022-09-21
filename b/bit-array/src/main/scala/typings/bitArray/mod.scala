@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("bit-array", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with BitArray {
     /**

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isObjectMod {
   
-  @JSImport("@antv/util/lib/is-object", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/is-object", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](value: js.Any): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is T */ Boolean]
+  inline def default[T](value: Any): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is T */ Boolean]
 }

@@ -21,7 +21,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("plugin-error", JSImport.Namespace)
   @js.native
-  class Class protected ()
+  open class Class protected ()
     extends StObject
        with typings.pluginError.anon.PluginError {
     /**
@@ -29,9 +29,11 @@ object mod extends Shortcut {
       */
     def this(options: Optionspluginstringmessag) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -72,11 +74,11 @@ object mod extends Shortcut {
     */
   Instantiable2[
           /* plugin */ String, 
-          (/* error */ Error) | (/* error */ Optionsmessagestring) | (/* error */ String), 
+          (/* error */ js.Error) | (/* error */ Optionsmessagestring) | (/* error */ String), 
           PluginError[
             (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Error ]: undefined}
-    */ typings.pluginError.pluginErrorStrings.Constructor & TopLevel[js.Any]) | Error
+    */ typings.pluginError.pluginErrorStrings.Constructor & TopLevel[Any]) | js.Error
           ]
         ]
        with /**
@@ -86,12 +88,12 @@ object mod extends Shortcut {
     */
   Instantiable3[
           /* plugin */ String, 
-          (/* error */ Error) | (/* error */ String), 
+          (/* error */ js.Error) | (/* error */ String), 
           /* options */ Options, 
           PluginError[
             (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Error ]: undefined}
-    */ typings.pluginError.pluginErrorStrings.Constructor & TopLevel[js.Any]) | Error
+    */ typings.pluginError.pluginErrorStrings.Constructor & TopLevel[Any]) | js.Error
           ]
         ]
   
@@ -110,7 +112,7 @@ object mod extends Shortcut {
     /**
       * Error message
       */
-    var message: js.UndefOr[js.Any] = js.undefined
+    var message: js.UndefOr[Any] = js.undefined
     
     /**
       * Error name
@@ -156,7 +158,7 @@ object mod extends Shortcut {
       
       inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       

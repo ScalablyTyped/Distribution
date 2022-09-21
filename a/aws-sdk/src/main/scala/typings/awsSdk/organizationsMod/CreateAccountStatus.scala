@@ -14,20 +14,20 @@ trait CreateAccountStatus extends StObject {
   /**
     * The account name given to the account when it was created.
     */
-  var AccountName: js.UndefOr[typings.awsSdk.organizationsMod.AccountName] = js.undefined
+  var AccountName: js.UndefOr[CreateAccountName] = js.undefined
   
   /**
     * The date and time that the account was created and the request completed.
     */
-  var CompletedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CompletedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * If the request failed, a description of the reason for the failure.   ACCOUNT_LIMIT_EXCEEDED: The account could not be created because you have reached the limit on the number of accounts in your organization.   CONCURRENT_ACCOUNT_MODIFICATION: You already submitted a request with the same information.   EMAIL_ALREADY_EXISTS: The account could not be created because another AWS account with that email address already exists.   GOVCLOUD_ACCOUNT_ALREADY_EXISTS: The account in the AWS GovCloud (US) Region could not be created because this Region already includes an account with that email address.   INVALID_ADDRESS: The account could not be created because the address you provided is not valid.   INVALID_EMAIL: The account could not be created because the email address you provided is not valid.   INTERNAL_FAILURE: The account could not be created because of an internal failure. Try again later. If the problem persists, contact Customer Support.   MISSING_BUSINESS_VALIDATION: The AWS account that owns your organization has not received Business Validation.    MISSING_PAYMENT_INSTRUMENT: You must configure the management account with a valid payment method, such as a credit card.  
+    * If the request failed, a description of the reason for the failure.   ACCOUNT_LIMIT_EXCEEDED: The account couldn't be created because you reached the limit on the number of accounts in your organization.   CONCURRENT_ACCOUNT_MODIFICATION: You already submitted a request with the same information.   EMAIL_ALREADY_EXISTS: The account could not be created because another Amazon Web Services account with that email address already exists.   FAILED_BUSINESS_VALIDATION: The Amazon Web Services account that owns your organization failed to receive business license validation.   GOVCLOUD_ACCOUNT_ALREADY_EXISTS: The account in the Amazon Web Services GovCloud (US) Region could not be created because this Region already includes an account with that email address.   IDENTITY_INVALID_BUSINESS_VALIDATION: The Amazon Web Services account that owns your organization can't complete business license validation because it doesn't have valid identity data.   INVALID_ADDRESS: The account could not be created because the address you provided is not valid.   INVALID_EMAIL: The account could not be created because the email address you provided is not valid.   INVALID_PAYMENT_INSTRUMENT: The Amazon Web Services account that owns your organization does not have a supported payment method associated with the account. Amazon Web Services does not support cards issued by financial institutions in Russia or Belarus. For more information, see Managing your Amazon Web Services payments.   INTERNAL_FAILURE: The account could not be created because of an internal failure. Try again later. If the problem persists, contact Amazon Web Services Customer Support.   MISSING_BUSINESS_VALIDATION: The Amazon Web Services account that owns your organization has not received Business Validation.    MISSING_PAYMENT_INSTRUMENT: You must configure the management account with a valid payment method, such as a credit card.   PENDING_BUSINESS_VALIDATION: The Amazon Web Services account that owns your organization is still in the process of completing business license validation.   UNKNOWN_BUSINESS_VALIDATION: The Amazon Web Services account that owns your organization has an unknown issue with business license validation.  
     */
   var FailureReason: js.UndefOr[CreateAccountFailureReason] = js.undefined
   
   /**
-    * If the account was created successfully, the unique identifier (ID) of the new account in the AWS GovCloud (US) Region.
+    * If the account was created successfully, the unique identifier (ID) of the new account in the Amazon Web Services GovCloud (US) Region.
     */
   var GovCloudAccountId: js.UndefOr[AccountId] = js.undefined
   
@@ -39,10 +39,10 @@ trait CreateAccountStatus extends StObject {
   /**
     * The date and time that the request was made for the account creation.
     */
-  var RequestedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var RequestedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The status of the request.
+    * The status of the asynchronous request to create an Amazon Web Services account.
     */
   var State: js.UndefOr[CreateAccountState] = js.undefined
 }
@@ -59,11 +59,11 @@ object CreateAccountStatus {
     
     inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    inline def setAccountName(value: AccountName): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: CreateAccountName): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
     
     inline def setAccountNameUndefined: Self = StObject.set(x, "AccountName", js.undefined)
     
-    inline def setCompletedTimestamp(value: Timestamp): Self = StObject.set(x, "CompletedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCompletedTimestamp(value: js.Date): Self = StObject.set(x, "CompletedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCompletedTimestampUndefined: Self = StObject.set(x, "CompletedTimestamp", js.undefined)
     
@@ -79,7 +79,7 @@ object CreateAccountStatus {
     
     inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    inline def setRequestedTimestamp(value: Timestamp): Self = StObject.set(x, "RequestedTimestamp", value.asInstanceOf[js.Any])
+    inline def setRequestedTimestamp(value: js.Date): Self = StObject.set(x, "RequestedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setRequestedTimestampUndefined: Self = StObject.set(x, "RequestedTimestamp", js.undefined)
     

@@ -34,7 +34,7 @@ object GetCoipPoolUsageResult {
     
     inline def setCoipAddressUsagesUndefined: Self = StObject.set(x, "CoipAddressUsages", js.undefined)
     
-    inline def setCoipAddressUsagesVarargs(value: CoipAddressUsage*): Self = StObject.set(x, "CoipAddressUsages", js.Array(value :_*))
+    inline def setCoipAddressUsagesVarargs(value: CoipAddressUsage*): Self = StObject.set(x, "CoipAddressUsages", js.Array(value*))
     
     inline def setCoipPoolId(value: String): Self = StObject.set(x, "CoipPoolId", value.asInstanceOf[js.Any])
     

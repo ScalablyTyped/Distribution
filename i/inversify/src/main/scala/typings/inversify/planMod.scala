@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object planMod {
   
-  @JSImport("inversify/dts/planning/plan", "Plan")
+  @JSImport("inversify/lib/planning/plan", "Plan")
   @js.native
-  class Plan protected ()
+  open class Plan protected ()
     extends StObject
        with typings.inversify.interfacesMod.interfaces.Plan {
     def this(parentContext: Context, rootRequest: Request) = this()

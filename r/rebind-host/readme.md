@@ -11,9 +11,9 @@ Express middleware to bind the correct host
 | Full name          | rebind-host |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1817 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 45.666666666666664 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/truffls/node-rebind-host#readme)

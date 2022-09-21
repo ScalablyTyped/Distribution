@@ -22,7 +22,7 @@ trait CreateArchiveRequest extends StObject {
   var EventPattern: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.EventPattern] = js.undefined
   
   /**
-    * The ARN of the event source associated with the archive.
+    * The ARN of the event bus that sends events to the archive.
     */
   var EventSourceArn: Arn
   

@@ -33,6 +33,6 @@ object GetTableVersionsResponse {
     
     inline def setTableVersionsUndefined: Self = StObject.set(x, "TableVersions", js.undefined)
     
-    inline def setTableVersionsVarargs(value: TableVersion*): Self = StObject.set(x, "TableVersions", js.Array(value :_*))
+    inline def setTableVersionsVarargs(value: TableVersion*): Self = StObject.set(x, "TableVersions", js.Array(value*))
   }
 }

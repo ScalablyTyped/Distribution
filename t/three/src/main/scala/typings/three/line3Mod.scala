@@ -10,7 +10,7 @@ object line3Mod {
   
   @JSImport("three/src/math/Line3", "Line3")
   @js.native
-  class Line3 () extends StObject {
+  open class Line3 () extends StObject {
     def this(start: Vector3) = this()
     def this(start: Unit, end: Vector3) = this()
     def this(start: Vector3, end: Vector3) = this()
@@ -33,8 +33,8 @@ object line3Mod {
     def distanceSq(): Double = js.native
     
     /**
-    	 * @default new THREE.Vector3()
-    	 */
+      * @default new THREE.Vector3()
+      */
     var end: Vector3 = js.native
     
     def equals(line: Line3): Boolean = js.native
@@ -47,8 +47,8 @@ object line3Mod {
     def set(start: Vector3, end: Vector3): Line3 = js.native
     
     /**
-    	 * @default new THREE.Vector3()
-    	 */
+      * @default new THREE.Vector3()
+      */
     var start: Vector3 = js.native
   }
 }

@@ -6,28 +6,24 @@ import typings.bip174.interfacesMod.PsbtInput
 import typings.bip174.interfacesMod.PsbtInputUpdate
 import typings.bip174.interfacesMod.PsbtOutput
 import typings.bip174.interfacesMod.PsbtOutputUpdate
-import typings.bip174.interfacesMod.TransactionInput
-import typings.bip174.interfacesMod.TransactionOutput
 import typings.bitcoinjsLib.anon.FinalScriptSig
-import typings.bitcoinjsLib.ecpairMod.Signer
-import typings.bitcoinjsLib.ecpairMod.SignerAsync
 import typings.bitcoinjsLib.networksMod.Network
 import typings.bitcoinjsLib.transactionMod.Transaction
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object psbtMod {
   
-  @JSImport("bitcoinjs-lib/types/psbt", "Psbt")
+  @JSImport("bitcoinjs-lib/src/psbt", "Psbt")
   @js.native
-  class Psbt () extends StObject {
+  open class Psbt () extends StObject {
     def this(opts: PsbtOptsOptional) = this()
     def this(opts: Unit, data: typings.bip174.mod.Psbt) = this()
     def this(opts: PsbtOptsOptional, data: typings.bip174.mod.Psbt) = this()
     
-    /* private */ var __CACHE: js.Any = js.native
+    /* private */ var __CACHE: Any = js.native
     
     def addInput(inputData: PsbtInputExtended): this.type = js.native
     
@@ -63,15 +59,16 @@ object psbtMod {
     
     def getInputType(inputIndex: Double): AllScriptType = js.native
     
-    val inputCount: Double = js.native
+    def inputCount: Double = js.native
     
     def inputHasHDKey(inputIndex: Double, root: HDSigner): Boolean = js.native
     
     def inputHasPubkey(inputIndex: Double, pubkey: Buffer): Boolean = js.native
     
-    var locktime: Double = js.native
+    def locktime: Double = js.native
+    def locktime_=(locktime: Double): Unit = js.native
     
-    /* private */ var opts: js.Any = js.native
+    /* private */ var opts: Any = js.native
     
     def outputHasHDKey(outputIndex: Double, root: HDSigner): Boolean = js.native
     
@@ -123,9 +120,9 @@ object psbtMod {
     
     def toHex(): String = js.native
     
-    val txInputs: js.Array[PsbtTxInput] = js.native
+    def txInputs: js.Array[PsbtTxInput] = js.native
     
-    val txOutputs: js.Array[PsbtTxOutput] = js.native
+    def txOutputs: js.Array[PsbtTxOutput] = js.native
     
     def updateGlobal(updateData: PsbtGlobalUpdate): this.type = js.native
     
@@ -133,17 +130,18 @@ object psbtMod {
     
     def updateOutput(outputIndex: Double, updateData: PsbtOutputUpdate): this.type = js.native
     
-    def validateSignaturesOfAllInputs(): Boolean = js.native
+    def validateSignaturesOfAllInputs(validator: ValidateSigFunction): Boolean = js.native
     
-    def validateSignaturesOfInput(inputIndex: Double): Boolean = js.native
-    def validateSignaturesOfInput(inputIndex: Double, pubkey: Buffer): Boolean = js.native
+    def validateSignaturesOfInput(inputIndex: Double, validator: ValidateSigFunction): Boolean = js.native
+    def validateSignaturesOfInput(inputIndex: Double, validator: ValidateSigFunction, pubkey: Buffer): Boolean = js.native
     
-    var version: Double = js.native
+    def version: Double = js.native
+    def version_=(version: Double): Unit = js.native
   }
   /* static members */
   object Psbt {
     
-    @JSImport("bitcoinjs-lib/types/psbt", "Psbt")
+    @JSImport("bitcoinjs-lib/src/psbt", "Psbt")
     @js.native
     val ^ : js.Any = js.native
     
@@ -264,9 +262,6 @@ object psbtMod {
     }
   }
   
-  /**
-    * Same as above but with async sign method
-    */
   trait HDSignerAsync
     extends StObject
        with HDSignerBase {
@@ -465,4 +460,80 @@ object psbtMod {
       inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     }
   }
+  
+  @js.native
+  trait Signer extends StObject {
+    
+    var getPublicKey: js.UndefOr[js.Function0[Buffer]] = js.native
+    
+    var network: js.UndefOr[Any] = js.native
+    
+    var publicKey: Buffer = js.native
+    
+    def sign(hash: Buffer): Buffer = js.native
+    def sign(hash: Buffer, lowR: Boolean): Buffer = js.native
+  }
+  
+  @js.native
+  trait SignerAsync extends StObject {
+    
+    var getPublicKey: js.UndefOr[js.Function0[Buffer]] = js.native
+    
+    var network: js.UndefOr[Any] = js.native
+    
+    var publicKey: Buffer = js.native
+    
+    def sign(hash: Buffer): js.Promise[Buffer] = js.native
+    def sign(hash: Buffer, lowR: Boolean): js.Promise[Buffer] = js.native
+  }
+  
+  trait TransactionInput extends StObject {
+    
+    var hash: String | Buffer
+    
+    var index: Double
+    
+    var sequence: js.UndefOr[Double] = js.undefined
+  }
+  object TransactionInput {
+    
+    inline def apply(hash: String | Buffer, index: Double): TransactionInput = {
+      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TransactionInput]
+    }
+    
+    extension [Self <: TransactionInput](x: Self) {
+      
+      inline def setHash(value: String | Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+      
+      inline def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
+    }
+  }
+  
+  trait TransactionOutput extends StObject {
+    
+    var script: Buffer
+    
+    var value: Double
+  }
+  object TransactionOutput {
+    
+    inline def apply(script: Buffer, value: Double): TransactionOutput = {
+      val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TransactionOutput]
+    }
+    
+    extension [Self <: TransactionOutput](x: Self) {
+      
+      inline def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type ValidateSigFunction = js.Function3[/* pubkey */ Buffer, /* msghash */ Buffer, /* signature */ Buffer, Boolean]
 }

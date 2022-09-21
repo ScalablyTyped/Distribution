@@ -19,21 +19,21 @@ trait DataGridWidget
   @JSName("endSlice")
   var endSlice_Original: IGetSet[Double, DataGridWidget] = js.native
   
-  def html(): Accessor[js.Any, String] = js.native
-  def html(t: Accessor[js.Any, String]): DataGridWidget = js.native
+  def html(): Accessor[Any, String] = js.native
+  def html(t: Accessor[Any, String]): DataGridWidget = js.native
   
-  def htmlSection(): Accessor[js.Any, String] = js.native
-  def htmlSection(t: Accessor[js.Any, String]): DataGridWidget = js.native
+  def htmlSection(): Accessor[Any, String] = js.native
+  def htmlSection(t: Accessor[Any, String]): DataGridWidget = js.native
   @JSName("htmlSection")
-  var htmlSection_Original: IGetSet[Accessor[js.Any, String], DataGridWidget] = js.native
+  var htmlSection_Original: IGetSet[Accessor[Any, String], DataGridWidget] = js.native
   
   @JSName("html")
-  var html_Original: IGetSet[Accessor[js.Any, String], DataGridWidget] = js.native
+  var html_Original: IGetSet[Accessor[Any, String], DataGridWidget] = js.native
   
-  def order(): js.Function2[/* a */ js.Any, /* b */ js.Any, Double] = js.native
-  def order(t: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): DataGridWidget = js.native
+  def order(): js.Function2[/* a */ Any, /* b */ Any, Double] = js.native
+  def order(t: js.Function2[/* a */ Any, /* b */ Any, Double]): DataGridWidget = js.native
   @JSName("order")
-  var order_Original: IGetSet[js.Function2[/* a */ js.Any, /* b */ js.Any, Double], DataGridWidget] = js.native
+  var order_Original: IGetSet[js.Function2[/* a */ Any, /* b */ Any, Double], DataGridWidget] = js.native
   
   def section(): js.Function = js.native
   def section(t: js.Function): DataGridWidget = js.native
@@ -45,8 +45,8 @@ trait DataGridWidget
   @JSName("size")
   var size_Original: IGetSet[Double, DataGridWidget] = js.native
   
-  def sortBy(): Accessor[js.Any, js.Any] = js.native
-  def sortBy(t: Accessor[js.Any, js.Any]): DataGridWidget = js.native
+  def sortBy(): Accessor[Any, Any] = js.native
+  def sortBy(t: Accessor[Any, Any]): DataGridWidget = js.native
   @JSName("sortBy")
-  var sortBy_Original: IGetSet[Accessor[js.Any, js.Any], DataGridWidget] = js.native
+  var sortBy_Original: IGetSet[Accessor[Any, Any], DataGridWidget] = js.native
 }

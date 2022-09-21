@@ -4,29 +4,110 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudkms/v1", "cloudkms_v1.Resource$Projects$Locations")
 @js.native
-class ResourceProjectsLocations protected () extends StObject {
+open class ResourceProjectsLocations protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
+  var ekmConnections: ResourceProjectsLocationsEkmconnections = js.native
+  
+  def generateRandomBytes(): GaxiosPromise[SchemaGenerateRandomBytesResponse] = js.native
+  def generateRandomBytes(callback: BodyResponseCallback[SchemaGenerateRandomBytesResponse]): Unit = js.native
+  def generateRandomBytes(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGenerateRandomBytesResponse] = js.native
+  def generateRandomBytes(params: ParamsResourceProjectsLocationsGeneraterandombytes): GaxiosPromise[SchemaGenerateRandomBytesResponse] = js.native
+  def generateRandomBytes(
+    params: ParamsResourceProjectsLocationsGeneraterandombytes,
+    callback: BodyResponseCallback[SchemaGenerateRandomBytesResponse]
+  ): Unit = js.native
+  def generateRandomBytes(
+    params: ParamsResourceProjectsLocationsGeneraterandombytes,
+    options: BodyResponseCallback[Readable | SchemaGenerateRandomBytesResponse],
+    callback: BodyResponseCallback[Readable | SchemaGenerateRandomBytesResponse]
+  ): Unit = js.native
+  def generateRandomBytes(params: ParamsResourceProjectsLocationsGeneraterandombytes, options: MethodOptions): GaxiosPromise[SchemaGenerateRandomBytesResponse] = js.native
+  def generateRandomBytes(
+    params: ParamsResourceProjectsLocationsGeneraterandombytes,
+    options: MethodOptions,
+    callback: BodyResponseCallback[SchemaGenerateRandomBytesResponse]
+  ): Unit = js.native
   /**
-    * cloudkms.projects.locations.get
-    * @desc Gets information about a location.
-    * @alias cloudkms.projects.locations.get
-    * @memberOf! ()
+    * Generate random bytes using the Cloud KMS randomness source in the provided location.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/cloudkms.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Resource name for the location.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const cloudkms = google.cloudkms('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloudkms',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await cloudkms.projects.locations.generateRandomBytes({
+    *     // The project-specific location in which to generate random bytes. For example, "projects/my-project/locations/us-central1".
+    *     location: 'projects/my-project/locations/my-location',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "lengthBytes": 0,
+    *       //   "protectionLevel": "my_protectionLevel"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "data": "my_data",
+    *   //   "dataCrc32c": "my_dataCrc32c"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def generateRandomBytes(params: ParamsResourceProjectsLocationsGeneraterandombytes, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def generateRandomBytes(
+    params: ParamsResourceProjectsLocationsGeneraterandombytes,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaLocation] = js.native
   def get(callback: BodyResponseCallback[SchemaLocation]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLocation] = js.native
@@ -34,8 +115,8 @@ class ResourceProjectsLocations protected () extends StObject {
   def get(params: ParamsResourceProjectsLocationsGet, callback: BodyResponseCallback[SchemaLocation]): Unit = js.native
   def get(
     params: ParamsResourceProjectsLocationsGet,
-    options: BodyResponseCallback[SchemaLocation],
-    callback: BodyResponseCallback[SchemaLocation]
+    options: BodyResponseCallback[Readable | SchemaLocation],
+    callback: BodyResponseCallback[Readable | SchemaLocation]
   ): Unit = js.native
   def get(params: ParamsResourceProjectsLocationsGet, options: MethodOptions): GaxiosPromise[SchemaLocation] = js.native
   def get(
@@ -43,24 +124,72 @@ class ResourceProjectsLocations protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLocation]
   ): Unit = js.native
+  /**
+    * Gets information about a location.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/cloudkms.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const cloudkms = google.cloudkms('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloudkms',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await cloudkms.projects.locations.get({
+    *     // Resource name for the location.
+    *     name: 'projects/my-project/locations/my-location',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "displayName": "my_displayName",
+    *   //   "labels": {},
+    *   //   "locationId": "my_locationId",
+    *   //   "metadata": {},
+    *   //   "name": "my_name"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def get(params: ParamsResourceProjectsLocationsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceProjectsLocationsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
   var keyRings: ResourceProjectsLocationsKeyrings = js.native
   
-  /**
-    * cloudkms.projects.locations.list
-    * @desc Lists information about the supported locations for this service.
-    * @alias cloudkms.projects.locations.list
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter The standard list filter.
-    * @param {string} params.name The resource that owns the locations collection, if applicable.
-    * @param {integer=} params.pageSize The standard list page size.
-    * @param {string=} params.pageToken The standard list page token.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def list(): GaxiosPromise[SchemaListLocationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListLocationsResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListLocationsResponse] = js.native
@@ -71,13 +200,79 @@ class ResourceProjectsLocations protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceProjectsLocationsList,
-    options: BodyResponseCallback[SchemaListLocationsResponse],
-    callback: BodyResponseCallback[SchemaListLocationsResponse]
+    options: BodyResponseCallback[Readable | SchemaListLocationsResponse],
+    callback: BodyResponseCallback[Readable | SchemaListLocationsResponse]
   ): Unit = js.native
   def list(params: ParamsResourceProjectsLocationsList, options: MethodOptions): GaxiosPromise[SchemaListLocationsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsList,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListLocationsResponse]
+  ): Unit = js.native
+  /**
+    * Lists information about the supported locations for this service.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/cloudkms.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const cloudkms = google.cloudkms('v1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/cloudkms',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await cloudkms.projects.locations.list({
+    *     // A filter to narrow down results to a preferred subset. The filtering language accepts strings like `"displayName=tokyo"`, and is documented in more detail in [AIP-160](https://google.aip.dev/160).
+    *     filter: 'placeholder-value',
+    *     // The resource that owns the locations collection, if applicable.
+    *     name: 'projects/my-project',
+    *     // The maximum number of results to return. If not set, the service selects a default.
+    *     pageSize: 'placeholder-value',
+    *     // A page token received from the `next_page_token` field in the response. Send that page token to receive the subsequent page.
+    *     pageToken: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "locations": [],
+    *   //   "nextPageToken": "my_nextPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceProjectsLocationsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceProjectsLocationsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

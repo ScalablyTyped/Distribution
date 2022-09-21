@@ -24,6 +24,6 @@ object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsRespon
     
     inline def setWorkerPoolsUndefined: Self = StObject.set(x, "workerPools", js.undefined)
     
-    inline def setWorkerPoolsVarargs(value: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool*): Self = StObject.set(x, "workerPools", js.Array(value :_*))
+    inline def setWorkerPoolsVarargs(value: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool*): Self = StObject.set(x, "workerPools", js.Array(value*))
   }
 }

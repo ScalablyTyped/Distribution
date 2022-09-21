@@ -15,7 +15,7 @@ object mod {
     */
   @JSImport("sonar-js", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Sonar {
     def this(window: Window) = this()

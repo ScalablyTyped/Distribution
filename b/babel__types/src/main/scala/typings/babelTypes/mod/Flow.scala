@@ -64,6 +64,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.mod.UnionTypeAnnotation_
   - typings.babelTypes.mod.Variance_
   - typings.babelTypes.mod.VoidTypeAnnotation_
+  - typings.babelTypes.mod.EnumDeclaration_
+  - typings.babelTypes.mod.EnumBooleanBody_
+  - typings.babelTypes.mod.EnumNumberBody_
+  - typings.babelTypes.mod.EnumStringBody_
+  - typings.babelTypes.mod.EnumSymbolBody_
+  - typings.babelTypes.mod.EnumBooleanMember_
+  - typings.babelTypes.mod.EnumNumberMember_
+  - typings.babelTypes.mod.EnumStringMember_
+  - typings.babelTypes.mod.EnumDefaultedMember_
+  - typings.babelTypes.mod.IndexedAccessType_
+  - typings.babelTypes.mod.OptionalIndexedAccessType_
 */
 trait Flow
   extends StObject
@@ -145,7 +156,7 @@ object Flow {
   }
   
   inline def DeclareOpaqueType_(id: Identifier_): typings.babelTypes.mod.DeclareOpaqueType_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, supertype = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, impltype = null, innerComments = null, leadingComments = null, loc = null, start = null, supertype = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("DeclareOpaqueType")
     __obj.asInstanceOf[typings.babelTypes.mod.DeclareOpaqueType_]
   }
@@ -174,6 +185,64 @@ object Flow {
     __obj.asInstanceOf[typings.babelTypes.mod.EmptyTypeAnnotation_]
   }
   
+  inline def EnumBooleanBody_(explicitType: Boolean, hasUnknownMembers: Boolean, members: js.Array[EnumBooleanMember_]): typings.babelTypes.mod.EnumBooleanBody_ = {
+    val __obj = js.Dynamic.literal(explicitType = explicitType.asInstanceOf[js.Any], hasUnknownMembers = hasUnknownMembers.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("EnumBooleanBody")
+    __obj.asInstanceOf[typings.babelTypes.mod.EnumBooleanBody_]
+  }
+  
+  inline def EnumBooleanMember_(id: Identifier_, init: BooleanLiteral_): typings.babelTypes.mod.EnumBooleanMember_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("EnumBooleanMember")
+    __obj.asInstanceOf[typings.babelTypes.mod.EnumBooleanMember_]
+  }
+  
+  inline def EnumDeclaration_(body: EnumBooleanBody_ | EnumNumberBody_ | EnumStringBody_ | EnumSymbolBody_, id: Identifier_): typings.babelTypes.mod.EnumDeclaration_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("EnumDeclaration")
+    __obj.asInstanceOf[typings.babelTypes.mod.EnumDeclaration_]
+  }
+  
+  inline def EnumDefaultedMember_(id: Identifier_): typings.babelTypes.mod.EnumDefaultedMember_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("EnumDefaultedMember")
+    __obj.asInstanceOf[typings.babelTypes.mod.EnumDefaultedMember_]
+  }
+  
+  inline def EnumNumberBody_(explicitType: Boolean, hasUnknownMembers: Boolean, members: js.Array[EnumNumberMember_]): typings.babelTypes.mod.EnumNumberBody_ = {
+    val __obj = js.Dynamic.literal(explicitType = explicitType.asInstanceOf[js.Any], hasUnknownMembers = hasUnknownMembers.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("EnumNumberBody")
+    __obj.asInstanceOf[typings.babelTypes.mod.EnumNumberBody_]
+  }
+  
+  inline def EnumNumberMember_(id: Identifier_, init: NumericLiteral_): typings.babelTypes.mod.EnumNumberMember_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("EnumNumberMember")
+    __obj.asInstanceOf[typings.babelTypes.mod.EnumNumberMember_]
+  }
+  
+  inline def EnumStringBody_(
+    explicitType: Boolean,
+    hasUnknownMembers: Boolean,
+    members: js.Array[EnumStringMember_ | EnumDefaultedMember_]
+  ): typings.babelTypes.mod.EnumStringBody_ = {
+    val __obj = js.Dynamic.literal(explicitType = explicitType.asInstanceOf[js.Any], hasUnknownMembers = hasUnknownMembers.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("EnumStringBody")
+    __obj.asInstanceOf[typings.babelTypes.mod.EnumStringBody_]
+  }
+  
+  inline def EnumStringMember_(id: Identifier_, init: StringLiteral_): typings.babelTypes.mod.EnumStringMember_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("EnumStringMember")
+    __obj.asInstanceOf[typings.babelTypes.mod.EnumStringMember_]
+  }
+  
+  inline def EnumSymbolBody_(hasUnknownMembers: Boolean, members: js.Array[EnumDefaultedMember_]): typings.babelTypes.mod.EnumSymbolBody_ = {
+    val __obj = js.Dynamic.literal(hasUnknownMembers = hasUnknownMembers.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("EnumSymbolBody")
+    __obj.asInstanceOf[typings.babelTypes.mod.EnumSymbolBody_]
+  }
+  
   inline def ExistsTypeAnnotation_(): typings.babelTypes.mod.ExistsTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ExistsTypeAnnotation")
@@ -183,6 +252,7 @@ object Flow {
   inline def FunctionTypeAnnotation_(params: js.Array[FunctionTypeParam_], returnType: FlowType): typings.babelTypes.mod.FunctionTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, rest = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("FunctionTypeAnnotation")
+    __obj.updateDynamic("this")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.FunctionTypeAnnotation_]
   }
   
@@ -196,6 +266,12 @@ object Flow {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("GenericTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.mod.GenericTypeAnnotation_]
+  }
+  
+  inline def IndexedAccessType_(indexType: FlowType, objectType: FlowType): typings.babelTypes.mod.IndexedAccessType_ = {
+    val __obj = js.Dynamic.literal(indexType = indexType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("IndexedAccessType")
+    __obj.asInstanceOf[typings.babelTypes.mod.IndexedAccessType_]
   }
   
   inline def InferredPredicate_(): typings.babelTypes.mod.InferredPredicate_ = {
@@ -260,8 +336,14 @@ object Flow {
     __obj.asInstanceOf[typings.babelTypes.mod.NumberTypeAnnotation_]
   }
   
-  inline def ObjectTypeAnnotation_(exact: Boolean, properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_]): typings.babelTypes.mod.ObjectTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal(exact = exact.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], callProperties = null, end = null, indexers = null, inexact = null, innerComments = null, internalSlots = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+  inline def ObjectTypeAnnotation_(
+    callProperties: js.Array[ObjectTypeCallProperty_],
+    exact: Boolean,
+    indexers: js.Array[ObjectTypeIndexer_],
+    internalSlots: js.Array[ObjectTypeInternalSlot_],
+    properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_]
+  ): typings.babelTypes.mod.ObjectTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(callProperties = callProperties.asInstanceOf[js.Any], exact = exact.asInstanceOf[js.Any], indexers = indexers.asInstanceOf[js.Any], internalSlots = internalSlots.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], end = null, inexact = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ObjectTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.mod.ObjectTypeAnnotation_]
   }
@@ -287,12 +369,13 @@ object Flow {
   inline def ObjectTypeProperty_(
     key: Identifier_ | StringLiteral_,
     kind: init | get | set,
+    method: Boolean,
     optional: Boolean,
     proto: Boolean,
     static: Boolean,
     value: FlowType
   ): typings.babelTypes.mod.ObjectTypeProperty_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], proto = proto.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, variance = null)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], proto = proto.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, variance = null)
     __obj.updateDynamic("type")("ObjectTypeProperty")
     __obj.asInstanceOf[typings.babelTypes.mod.ObjectTypeProperty_]
   }
@@ -307,6 +390,12 @@ object Flow {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], impltype = impltype.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, supertype = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("OpaqueType")
     __obj.asInstanceOf[typings.babelTypes.mod.OpaqueType_]
+  }
+  
+  inline def OptionalIndexedAccessType_(indexType: FlowType, objectType: FlowType, optional: Boolean): typings.babelTypes.mod.OptionalIndexedAccessType_ = {
+    val __obj = js.Dynamic.literal(indexType = indexType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("OptionalIndexedAccessType")
+    __obj.asInstanceOf[typings.babelTypes.mod.OptionalIndexedAccessType_]
   }
   
   inline def QualifiedTypeIdentifier_(id: Identifier_, qualification: Identifier_ | typings.babelTypes.mod.QualifiedTypeIdentifier_): typings.babelTypes.mod.QualifiedTypeIdentifier_ = {

@@ -24,13 +24,13 @@ object anon {
       
       inline def setCan(value: js.Array[String | RoleObject]): Self = StObject.set(x, "can", value.asInstanceOf[js.Any])
       
-      inline def setCanVarargs(value: (String | RoleObject)*): Self = StObject.set(x, "can", js.Array(value :_*))
+      inline def setCanVarargs(value: (String | RoleObject)*): Self = StObject.set(x, "can", js.Array(value*))
       
       inline def setInherits(value: js.Array[String]): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
       
       inline def setInheritsUndefined: Self = StObject.set(x, "inherits", js.undefined)
       
-      inline def setInheritsVarargs(value: String*): Self = StObject.set(x, "inherits", js.Array(value :_*))
+      inline def setInheritsVarargs(value: String*): Self = StObject.set(x, "inherits", js.Array(value*))
     }
   }
 }

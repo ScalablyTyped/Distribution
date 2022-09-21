@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EbsBlockDeviceConfig extends StObject {
   
   /**
-    * EBS volume specifications such as volume type, IOPS, and size (GiB) that will be requested for the EBS volume attached to an EC2 instance in the cluster.
+    * EBS volume specifications such as volume type, IOPS, size (GiB) and throughput (MiB/s) that are requested for the EBS volume attached to an EC2 instance in the cluster.
     */
   var VolumeSpecification: typings.awsSdk.emrMod.VolumeSpecification
   
   /**
-    * Number of EBS volumes with a specific volume configuration that will be associated with every instance in the instance group
+    * Number of EBS volumes with a specific volume configuration that are associated with every instance in the instance group
     */
   var VolumesPerInstance: js.UndefOr[Integer] = js.undefined
 }

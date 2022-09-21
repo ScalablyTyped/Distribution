@@ -3,7 +3,6 @@ package typings.awsSdkClientDynamodbBrowser
 import typings.awsSdkClientDynamodbBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientDynamodbBrowser.typesReplicaUpdateMod.ReplicaUpdate
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +26,7 @@ object typesUpdateGlobalTableInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -44,11 +43,11 @@ object typesUpdateGlobalTableInputMod {
     /**
       * <p>A list of regions that should be added or removed from the global table.</p>
       */
-    var ReplicaUpdates: js.Array[ReplicaUpdate] | Iterable[ReplicaUpdate]
+    var ReplicaUpdates: js.Array[ReplicaUpdate] | js.Iterable[ReplicaUpdate]
   }
   object UpdateGlobalTableInput {
     
-    inline def apply(GlobalTableName: String, ReplicaUpdates: js.Array[ReplicaUpdate] | Iterable[ReplicaUpdate]): UpdateGlobalTableInput = {
+    inline def apply(GlobalTableName: String, ReplicaUpdates: js.Array[ReplicaUpdate] | js.Iterable[ReplicaUpdate]): UpdateGlobalTableInput = {
       val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any], ReplicaUpdates = ReplicaUpdates.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateGlobalTableInput]
     }
@@ -60,7 +59,7 @@ object typesUpdateGlobalTableInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -71,9 +70,9 @@ object typesUpdateGlobalTableInputMod {
       
       inline def setGlobalTableName(value: String): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
       
-      inline def setReplicaUpdates(value: js.Array[ReplicaUpdate] | Iterable[ReplicaUpdate]): Self = StObject.set(x, "ReplicaUpdates", value.asInstanceOf[js.Any])
+      inline def setReplicaUpdates(value: js.Array[ReplicaUpdate] | js.Iterable[ReplicaUpdate]): Self = StObject.set(x, "ReplicaUpdates", value.asInstanceOf[js.Any])
       
-      inline def setReplicaUpdatesVarargs(value: ReplicaUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value :_*))
+      inline def setReplicaUpdatesVarargs(value: ReplicaUpdate*): Self = StObject.set(x, "ReplicaUpdates", js.Array(value*))
     }
   }
 }

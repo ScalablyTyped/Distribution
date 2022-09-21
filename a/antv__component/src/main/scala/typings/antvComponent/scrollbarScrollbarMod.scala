@@ -1,6 +1,7 @@
 package typings.antvComponent
 
 import typings.antvComponent.anon.PartialReadonlyScrollbarS
+import typings.antvComponent.anon.PickReadonlyScrollbarStyl
 import typings.antvComponent.groupComponentMod.default
 import typings.antvComponent.interfacesMod.ISlider
 import typings.antvComponent.typesMod.GroupComponentCfg
@@ -19,30 +20,30 @@ object scrollbarScrollbarMod {
   
   @JSImport("@antv/component/lib/scrollbar/scrollbar", "Scrollbar")
   @js.native
-  class Scrollbar ()
+  open class Scrollbar ()
     extends default[ScrollbarCfg]
        with ISlider {
     
-    /* private */ var bindEvents: js.Any = js.native
+    /* private */ var bindEvents: Any = js.native
     
-    /* private */ var bindLaterEvent: js.Any = js.native
+    /* private */ var bindLaterEvent: Any = js.native
     
     @JSName("cfg")
     var cfg_Scrollbar: ScrollbarCfg = js.native
     
-    /* private */ var clearEvents: js.Any = js.native
+    /* private */ var clearEvents: Any = js.native
     
-    /* private */ var draw: js.Any = js.native
+    /* private */ var draw: Any = js.native
     
-    /* private */ var emitOffsetChange: js.Any = js.native
+    /* private */ var emitOffsetChange: Any = js.native
     
-    /* private */ var getContainerDOM: js.Any = js.native
+    /* private */ var getContainerDOM: Any = js.native
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def getEvents(): (Record[String, js.Array[EventType]]) & js.Any = js.native
+    override def getEvents(): (Record[String, js.Array[EventType]]) & Any = js.native
     
-    /* private */ var isMobile: js.Any = js.native
+    /* private */ var isMobile: Any = js.native
     
     /**
       * 取消监听一个事件，或者一个channel
@@ -51,13 +52,13 @@ object scrollbarScrollbarMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(): this.type & js.Any = js.native
+    override def off(): this.type & Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String): this.type & js.Any = js.native
+    override def off(evt: String): this.type & Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String, callback: js.Function): this.type & js.Any = js.native
+    override def off(evt: String, callback: js.Function): this.type & Any = js.native
     
     /**
       * 监听一个事件
@@ -67,29 +68,29 @@ object scrollbarScrollbarMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def on(evt: String, callback: js.Function): this.type & js.Any = js.native
+    override def on(evt: String, callback: js.Function): this.type & Any = js.native
     
-    /* private */ var onMouseMove: js.Any = js.native
+    /* private */ var onMouseMove: Any = js.native
     
-    /* private */ var onMouseUp: js.Any = js.native
+    /* private */ var onMouseUp: Any = js.native
     
-    /* private */ var onStartEvent: js.Any = js.native
+    /* private */ var onStartEvent: Any = js.native
     
-    /* private */ var onThumbMouseOut: js.Any = js.native
+    /* private */ var onThumbMouseOut: Any = js.native
     
-    /* private */ var onThumbMouseOver: js.Any = js.native
+    /* private */ var onThumbMouseOver: Any = js.native
     
-    /* private */ var onTrackClick: js.Any = js.native
+    /* private */ var onTrackClick: Any = js.native
     
-    /* private */ var renderThumbShape: js.Any = js.native
+    /* private */ var renderThumbShape: Any = js.native
     
-    /* private */ var renderTrackShape: js.Any = js.native
+    /* private */ var renderTrackShape: Any = js.native
     
-    /* private */ var startPos: js.Any = js.native
+    /* private */ var startPos: Any = js.native
     
-    /* private */ var updateThumbOffset: js.Any = js.native
+    /* private */ var updateThumbOffset: Any = js.native
     
-    /* private */ var validateRange: js.Any = js.native
+    /* private */ var validateRange: Any = js.native
   }
   
   trait ScrollbarCfg
@@ -103,6 +104,8 @@ object scrollbarScrollbarMod {
     var minLimit: js.UndefOr[Double] = js.undefined
     
     var minThumbLen: js.UndefOr[Double] = js.undefined
+    
+    var size: js.UndefOr[Double] = js.undefined
     
     var theme: js.UndefOr[ScrollbarTheme] = js.undefined
     
@@ -140,6 +143,10 @@ object scrollbarScrollbarMod {
       inline def setMinThumbLen(value: Double): Self = StObject.set(x, "minThumbLen", value.asInstanceOf[js.Any])
       
       inline def setMinThumbLenUndefined: Self = StObject.set(x, "minThumbLen", js.undefined)
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       inline def setTheme(value: ScrollbarTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -192,7 +199,7 @@ object scrollbarScrollbarMod {
     
     var default: js.UndefOr[PartialReadonlyScrollbarS] = js.undefined
     
-    var hover: js.UndefOr[PartialReadonlyScrollbarS] = js.undefined
+    var hover: js.UndefOr[PickReadonlyScrollbarStyl] = js.undefined
   }
   object ScrollbarTheme {
     
@@ -207,7 +214,7 @@ object scrollbarScrollbarMod {
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setHover(value: PartialReadonlyScrollbarS): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+      inline def setHover(value: PickReadonlyScrollbarStyl): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
       
       inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     }

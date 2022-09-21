@@ -1,19 +1,31 @@
 package typings.asn1js.mod
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Special class providing ability to have "toBER/fromBER" for raw ArrayBuffer
+  */
 @JSImport("asn1js", "RawData")
 @js.native
-class RawData () extends StObject {
-  def this(params: RawDataParams) = this()
+open class RawData ()
+  extends StObject
+     with IBerConvertible {
+  def this(hasData: RawDataParams) = this()
   
-  var data: ArrayBuffer = js.native
+  /**
+    * @deprecated Since v3.0.0
+    */
+  def data: js.typedarray.ArrayBuffer = js.native
   
-  def fromBER(inputBuffer: ArrayBuffer, inputOffset: Double, inputLength: Double): Double = js.native
+  /**
+    * @since 3.0.0
+    */
+  var dataView: js.typedarray.Uint8Array = js.native
   
-  def toBER(): ArrayBuffer = js.native
-  def toBER(sizeOnly: scala.Boolean): ArrayBuffer = js.native
+  /**
+    * @deprecated Since v3.0.0
+    */
+  def data_=(value: js.typedarray.ArrayBuffer): Unit = js.native
 }

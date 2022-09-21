@@ -11,9 +11,9 @@ Temporary files, directories or names!
 | Full name          | temp-fs |
 | Keywords           | tmp, temp, tmpfile, tempfile, tmpdir, tempdir, temporary, filename, random |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 7537667 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 779274.3333333334 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/jakwings/node-temp-fs)

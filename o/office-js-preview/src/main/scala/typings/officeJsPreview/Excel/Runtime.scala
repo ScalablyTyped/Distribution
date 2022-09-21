@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel Runtime class.
   *
+  * @remarks
   * [Api set: ExcelApi 1.5]
   */
 @js.native
@@ -26,9 +26,9 @@ trait Runtime
   var context_Runtime: RequestContext = js.native
   
   /**
-    *
     * Toggle JavaScript events in the current task pane or content add-in.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var enableEvents: Boolean = js.native
@@ -44,14 +44,8 @@ trait Runtime
   def load(propertyNames: String): Runtime = js.native
   def load(propertyNames: js.Array[String]): Runtime = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.Runtime): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

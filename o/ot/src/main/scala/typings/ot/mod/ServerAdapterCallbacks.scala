@@ -10,7 +10,7 @@ trait ServerAdapterCallbacks extends StObject {
   
   def client_left(clientId: String): Unit
   
-  def clients(clients: js.Any): Unit
+  def clients(clients: Any): Unit
   
   def operation(operation: SerializedTextOperation): Unit
   
@@ -25,7 +25,7 @@ object ServerAdapterCallbacks {
   inline def apply(
     ack: () => Unit,
     client_left: String => Unit,
-    clients: js.Any => Unit,
+    clients: Any => Unit,
     operation: SerializedTextOperation => Unit,
     reconnect: () => Unit,
     selection: (String, String) => Unit,
@@ -41,7 +41,7 @@ object ServerAdapterCallbacks {
     
     inline def setClient_left(value: String => Unit): Self = StObject.set(x, "client_left", js.Any.fromFunction1(value))
     
-    inline def setClients(value: js.Any => Unit): Self = StObject.set(x, "clients", js.Any.fromFunction1(value))
+    inline def setClients(value: Any => Unit): Self = StObject.set(x, "clients", js.Any.fromFunction1(value))
     
     inline def setOperation(value: SerializedTextOperation => Unit): Self = StObject.set(x, "operation", js.Any.fromFunction1(value))
     

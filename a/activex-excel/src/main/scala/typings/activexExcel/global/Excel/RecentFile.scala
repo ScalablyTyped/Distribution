@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.RecentFile")
 @js.native
-/* private */ class RecentFile ()
+/* private */ open class RecentFile ()
   extends StObject
      with typings.activexExcel.Excel.RecentFile {
   
@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Open(): typings.activexExcel.Excel.Workbook = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Path: String = js.native

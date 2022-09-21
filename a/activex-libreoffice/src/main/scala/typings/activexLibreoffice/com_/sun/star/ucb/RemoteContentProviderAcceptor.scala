@@ -18,7 +18,7 @@ object RemoteContentProviderAcceptor {
     acquire: () => Unit,
     activateRemoteContentProviders: () => XContentProviderManager,
     addRemoteContentProvider: (String, XMultiServiceFactory, SeqEquiv[String], XRemoteContentProviderDoneListener) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeRemoteContentProvider: String => Boolean
   ): RemoteContentProviderAcceptor = {

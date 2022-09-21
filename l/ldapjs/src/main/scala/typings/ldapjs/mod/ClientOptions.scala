@@ -15,7 +15,7 @@ trait ClientOptions extends StObject {
   
   var idleTimeout: js.UndefOr[Double] = js.undefined
   
-  var log: js.UndefOr[js.Any] = js.undefined
+  var log: js.UndefOr[Any] = js.undefined
   
   var queueDisable: js.UndefOr[Boolean] = js.undefined
   
@@ -33,11 +33,11 @@ trait ClientOptions extends StObject {
   
   var tlsOptions: js.UndefOr[js.Object] = js.undefined
   
-  var url: String
+  var url: String | js.Array[String]
 }
 object ClientOptions {
   
-  inline def apply(url: String): ClientOptions = {
+  inline def apply(url: String | js.Array[String]): ClientOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
@@ -60,7 +60,7 @@ object ClientOptions {
     
     inline def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
     
-    inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
@@ -96,6 +96,8 @@ object ClientOptions {
     
     inline def setTlsOptionsUndefined: Self = StObject.set(x, "tlsOptions", js.undefined)
     
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | js.Array[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value*))
   }
 }

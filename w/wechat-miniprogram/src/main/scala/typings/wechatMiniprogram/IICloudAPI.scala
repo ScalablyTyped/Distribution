@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IICloudAPI
   extends StObject
-     with /* api */ StringDictionary[AnyFunction | (IAPIFunction[js.Any, js.Any])] {
+     with /* api */ StringDictionary[AnyFunction | (IAPIFunction[Any, Any])] {
   
   def init(): Unit = js.native
   def init(config: IInitCloudConfig): Unit = js.native

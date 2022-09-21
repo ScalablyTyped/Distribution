@@ -1,7 +1,7 @@
 
 # Scala.js typings for apple-mapkit-js-browser
 
-Typings are for version 5.50
+Typings are for version 5.65
 
 
 

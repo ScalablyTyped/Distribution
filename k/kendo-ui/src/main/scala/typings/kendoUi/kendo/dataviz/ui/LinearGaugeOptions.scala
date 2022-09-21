@@ -41,7 +41,7 @@ object LinearGaugeOptions {
     
     inline def setPointerUndefined: Self = StObject.set(x, "pointer", js.undefined)
     
-    inline def setPointerVarargs(value: LinearGaugePointerItem*): Self = StObject.set(x, "pointer", js.Array(value :_*))
+    inline def setPointerVarargs(value: LinearGaugePointerItem*): Self = StObject.set(x, "pointer", js.Array(value*))
     
     inline def setRenderAs(value: String): Self = StObject.set(x, "renderAs", value.asInstanceOf[js.Any])
     

@@ -6,10 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ListReportsResponse extends StObject {
   
-  /** Identifies what kind of resource this is. Value: the fixed string "doubleclickbidmanager#listReportsResponse". */
-  var kind: js.UndefOr[String] = js.undefined
-  
-  /** Next page's pagination token if one exists. */
+  /** A token, which can be sent as page_token to retrieve the next page of reports. If this field is omitted, there are no subsequent pages. */
   var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Retrieved reports. */
@@ -24,10 +21,6 @@ object ListReportsResponse {
   
   extension [Self <: ListReportsResponse](x: Self) {
     
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
-    
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
@@ -36,6 +29,6 @@ object ListReportsResponse {
     
     inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
-    inline def setReportsVarargs(value: Report*): Self = StObject.set(x, "reports", js.Array(value :_*))
+    inline def setReportsVarargs(value: Report*): Self = StObject.set(x, "reports", js.Array(value*))
   }
 }

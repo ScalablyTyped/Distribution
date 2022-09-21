@@ -1,18 +1,30 @@
 package typings.awsSdk.rdsMod
 
+import typings.awsSdk.awsSdkStrings.SECRETS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccountQuotaList = js.Array[typings.awsSdk.rdsMod.AccountQuota]
+type AccountQuotaList = js.Array[AccountQuota]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.sync
-  - typings.awsSdk.awsSdkStrings.async
+  - typings.awsSdk.awsSdkStrings.sync_
+  - typings.awsSdk.awsSdkStrings.async_
   - java.lang.String
 */
-type ActivityStreamMode = typings.awsSdk.rdsMod._ActivityStreamMode | java.lang.String
+type ActivityStreamMode = _ActivityStreamMode | java.lang.String
+
+type ActivityStreamModeList = js.Array[String]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.locked_
+  - typings.awsSdk.awsSdkStrings.unlocked_
+  - typings.awsSdk.awsSdkStrings.`locking-policy`
+  - typings.awsSdk.awsSdkStrings.`unlocking-policy`
+  - java.lang.String
+*/
+type ActivityStreamPolicyStatus = _ActivityStreamPolicyStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.stopped__
@@ -21,66 +33,124 @@ type ActivityStreamMode = typings.awsSdk.rdsMod._ActivityStreamMode | java.lang.
   - typings.awsSdk.awsSdkStrings.stopping__
   - java.lang.String
 */
-type ActivityStreamStatus = typings.awsSdk.rdsMod._ActivityStreamStatus | java.lang.String
+type ActivityStreamStatus = _ActivityStreamStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.immediate_
   - typings.awsSdk.awsSdkStrings.`pending-reboot`
   - java.lang.String
 */
-type ApplyMethod = typings.awsSdk.rdsMod._ApplyMethod | java.lang.String
+type ApplyMethod = _ApplyMethod | java.lang.String
 
-type AttributeValueList = js.Array[typings.awsSdk.rdsMod.String]
+type AttributeValueList = js.Array[String]
 
-type AuthScheme = typings.awsSdk.awsSdkStrings.SECRETS | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.locked_
+  - typings.awsSdk.awsSdkStrings.unlocked_
+  - java.lang.String
+*/
+type AuditPolicyState = _AuditPolicyState | java.lang.String
 
-type AvailabilityZoneList = js.Array[typings.awsSdk.rdsMod.AvailabilityZone]
+type AuthScheme = SECRETS | java.lang.String
 
-type AvailabilityZones = js.Array[typings.awsSdk.rdsMod.String]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.full_
+  - typings.awsSdk.awsSdkStrings.`all-paused`
+  - java.lang.String
+*/
+type AutomationMode = _AutomationMode | java.lang.String
 
-type AvailableProcessorFeatureList = js.Array[typings.awsSdk.rdsMod.AvailableProcessorFeature]
+type AvailabilityZoneList = js.Array[AvailabilityZone]
+
+type AvailabilityZones = js.Array[String]
+
+type AvailableProcessorFeatureList = js.Array[AvailableProcessorFeature]
+
+type AwsBackupRecoveryPointArn = java.lang.String
 
 type Boolean = scala.Boolean
 
 type BooleanOptional = scala.Boolean
 
-type CertificateList = js.Array[typings.awsSdk.rdsMod.Certificate]
+type BucketName = java.lang.String
 
-type CustomAvailabilityZoneList = js.Array[typings.awsSdk.rdsMod.CustomAvailabilityZone]
+type CertificateList = js.Array[Certificate]
 
-type DBClusterBacktrackList = js.Array[typings.awsSdk.rdsMod.DBClusterBacktrack]
+type CustomDBEngineVersionManifest = java.lang.String
 
-type DBClusterEndpointList = js.Array[typings.awsSdk.rdsMod.DBClusterEndpoint]
+type CustomEngineName = java.lang.String
 
-type DBClusterList = js.Array[typings.awsSdk.rdsMod.DBCluster]
+type CustomEngineVersion = java.lang.String
 
-type DBClusterMemberList = js.Array[typings.awsSdk.rdsMod.DBClusterMember]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.available__
+  - typings.awsSdk.awsSdkStrings.inactive__
+  - typings.awsSdk.awsSdkStrings.`inactive-except-restore`
+  - java.lang.String
+*/
+type CustomEngineVersionStatus = _CustomEngineVersionStatus | java.lang.String
 
-type DBClusterOptionGroupMemberships = js.Array[typings.awsSdk.rdsMod.DBClusterOptionGroupStatus]
+type DBClusterBacktrackList = js.Array[DBClusterBacktrack]
 
-type DBClusterParameterGroupList = js.Array[typings.awsSdk.rdsMod.DBClusterParameterGroup]
+type DBClusterEndpointList = js.Array[DBClusterEndpoint]
 
-type DBClusterRoles = js.Array[typings.awsSdk.rdsMod.DBClusterRole]
+type DBClusterIdentifier = java.lang.String
 
-type DBClusterSnapshotAttributeList = js.Array[typings.awsSdk.rdsMod.DBClusterSnapshotAttribute]
+type DBClusterList = js.Array[DBCluster]
 
-type DBClusterSnapshotList = js.Array[typings.awsSdk.rdsMod.DBClusterSnapshot]
+type DBClusterMemberList = js.Array[DBClusterMember]
 
-type DBEngineVersionList = js.Array[typings.awsSdk.rdsMod.DBEngineVersion]
+type DBClusterOptionGroupMemberships = js.Array[DBClusterOptionGroupStatus]
 
-type DBInstanceAutomatedBackupList = js.Array[typings.awsSdk.rdsMod.DBInstanceAutomatedBackup]
+type DBClusterParameterGroupList = js.Array[DBClusterParameterGroup]
 
-type DBInstanceList = js.Array[typings.awsSdk.rdsMod.DBInstance]
+type DBClusterRoles = js.Array[DBClusterRole]
 
-type DBInstanceRoles = js.Array[typings.awsSdk.rdsMod.DBInstanceRole]
+type DBClusterSnapshotAttributeList = js.Array[DBClusterSnapshotAttribute]
 
-type DBInstanceStatusInfoList = js.Array[typings.awsSdk.rdsMod.DBInstanceStatusInfo]
+type DBClusterSnapshotList = js.Array[DBClusterSnapshot]
 
-type DBParameterGroupList = js.Array[typings.awsSdk.rdsMod.DBParameterGroup]
+type DBEngineVersionList = js.Array[DBEngineVersion]
 
-type DBParameterGroupStatusList = js.Array[typings.awsSdk.rdsMod.DBParameterGroupStatus]
+type DBInstanceAutomatedBackupList = js.Array[DBInstanceAutomatedBackup]
 
-type DBProxyList = js.Array[typings.awsSdk.rdsMod.DBProxy]
+type DBInstanceAutomatedBackupsReplicationList = js.Array[DBInstanceAutomatedBackupsReplication]
+
+type DBInstanceList = js.Array[DBInstance]
+
+type DBInstanceRoles = js.Array[DBInstanceRole]
+
+type DBInstanceStatusInfoList = js.Array[DBInstanceStatusInfo]
+
+type DBParameterGroupList = js.Array[DBParameterGroup]
+
+type DBParameterGroupStatusList = js.Array[DBParameterGroupStatus]
+
+type DBProxyEndpointList = js.Array[DBProxyEndpoint]
+
+type DBProxyEndpointName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.available__
+  - typings.awsSdk.awsSdkStrings.modifying_
+  - typings.awsSdk.awsSdkStrings.`incompatible-network`
+  - typings.awsSdk.awsSdkStrings.`insufficient-resource-limits`
+  - typings.awsSdk.awsSdkStrings.creating__
+  - typings.awsSdk.awsSdkStrings.deleting__
+  - java.lang.String
+*/
+type DBProxyEndpointStatus = _DBProxyEndpointStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.READ_WRITE
+  - typings.awsSdk.awsSdkStrings.READ_ONLY
+  - java.lang.String
+*/
+type DBProxyEndpointTargetRole = _DBProxyEndpointTargetRole | java.lang.String
+
+type DBProxyList = js.Array[DBProxy]
+
+type DBProxyName = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.available__
@@ -90,83 +160,97 @@ type DBProxyList = js.Array[typings.awsSdk.rdsMod.DBProxy]
   - typings.awsSdk.awsSdkStrings.creating__
   - typings.awsSdk.awsSdkStrings.deleting__
   - typings.awsSdk.awsSdkStrings.suspended__
-  - typings.awsSdk.awsSdkStrings.suspending
+  - typings.awsSdk.awsSdkStrings.suspending_
   - typings.awsSdk.awsSdkStrings.reactivating
   - java.lang.String
 */
-type DBProxyStatus = typings.awsSdk.rdsMod._DBProxyStatus | java.lang.String
+type DBProxyStatus = _DBProxyStatus | java.lang.String
 
-type DBSecurityGroupMembershipList = js.Array[typings.awsSdk.rdsMod.DBSecurityGroupMembership]
+type DBSecurityGroupMembershipList = js.Array[DBSecurityGroupMembership]
 
-type DBSecurityGroupNameList = js.Array[typings.awsSdk.rdsMod.String]
+type DBSecurityGroupNameList = js.Array[String]
 
-type DBSecurityGroups = js.Array[typings.awsSdk.rdsMod.DBSecurityGroup]
+type DBSecurityGroups = js.Array[DBSecurityGroup]
 
-type DBSnapshotAttributeList = js.Array[typings.awsSdk.rdsMod.DBSnapshotAttribute]
+type DBSnapshotAttributeList = js.Array[DBSnapshotAttribute]
 
-type DBSnapshotList = js.Array[typings.awsSdk.rdsMod.DBSnapshot]
+type DBSnapshotList = js.Array[DBSnapshot]
 
-type DBSubnetGroups = js.Array[typings.awsSdk.rdsMod.DBSubnetGroup]
+type DBSubnetGroups = js.Array[DBSubnetGroup]
 
-type DescribeDBLogFilesList = js.Array[typings.awsSdk.rdsMod.DescribeDBLogFilesDetails]
+type DescribeDBLogFilesList = js.Array[DescribeDBLogFilesDetails]
 
-type DomainMembershipList = js.Array[typings.awsSdk.rdsMod.DomainMembership]
+type Description = java.lang.String
+
+type DomainMembershipList = js.Array[DomainMembership]
 
 type Double = scala.Double
 
 type DoubleOptional = scala.Double
 
-type DoubleRangeList = js.Array[typings.awsSdk.rdsMod.DoubleRange]
+type DoubleRangeList = js.Array[DoubleRange]
 
-type EC2SecurityGroupList = js.Array[typings.awsSdk.rdsMod.EC2SecurityGroup]
+type EC2SecurityGroupList = js.Array[EC2SecurityGroup]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MYSQL
   - typings.awsSdk.awsSdkStrings.POSTGRESQL
+  - typings.awsSdk.awsSdkStrings.SQLSERVER
   - java.lang.String
 */
-type EngineFamily = typings.awsSdk.rdsMod._EngineFamily | java.lang.String
+type EngineFamily = _EngineFamily | java.lang.String
 
-type EngineModeList = js.Array[typings.awsSdk.rdsMod.String]
+type EngineModeList = js.Array[String]
 
-type EventCategoriesList = js.Array[typings.awsSdk.rdsMod.String]
+type EventCategoriesList = js.Array[String]
 
-type EventCategoriesMapList = js.Array[typings.awsSdk.rdsMod.EventCategoriesMap]
+type EventCategoriesMapList = js.Array[EventCategoriesMap]
 
-type EventList = js.Array[typings.awsSdk.rdsMod.Event]
+type EventList = js.Array[Event]
 
-type EventSubscriptionsList = js.Array[typings.awsSdk.rdsMod.EventSubscription]
+type EventSubscriptionsList = js.Array[EventSubscription]
 
-type ExportTasksList = js.Array[typings.awsSdk.rdsMod.ExportTask]
+type ExportTasksList = js.Array[ExportTask]
 
-type FeatureNameList = js.Array[typings.awsSdk.rdsMod.String]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.pending__
+  - typings.awsSdk.awsSdkStrings.`failing-over`
+  - typings.awsSdk.awsSdkStrings.cancelling__
+  - java.lang.String
+*/
+type FailoverStatus = _FailoverStatus | java.lang.String
 
-type FilterList = js.Array[typings.awsSdk.rdsMod.Filter]
+type FeatureNameList = js.Array[String]
 
-type FilterValueList = js.Array[typings.awsSdk.rdsMod.String]
+type FilterList = js.Array[Filter]
 
-type GlobalClusterList = js.Array[typings.awsSdk.rdsMod.GlobalCluster]
+type FilterValueList = js.Array[String]
 
-type GlobalClusterMemberList = js.Array[typings.awsSdk.rdsMod.GlobalClusterMember]
+type GlobalClusterIdentifier = java.lang.String
+
+type GlobalClusterList = js.Array[GlobalCluster]
+
+type GlobalClusterMemberList = js.Array[GlobalClusterMember]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.REQUIRED
+  - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type IAMAuthMode = typings.awsSdk.rdsMod._IAMAuthMode | java.lang.String
+type IAMAuthMode = _IAMAuthMode | java.lang.String
 
-type IPRangeList = js.Array[typings.awsSdk.rdsMod.IPRange]
-
-type InstallationMediaList = js.Array[typings.awsSdk.rdsMod.InstallationMedia]
+type IPRangeList = js.Array[IPRange]
 
 type Integer = scala.Double
 
 type IntegerOptional = scala.Double
 
-type KeyList = js.Array[typings.awsSdk.rdsMod.String]
+type KeyList = js.Array[String]
 
-type LogTypeList = js.Array[typings.awsSdk.rdsMod.String]
+type KmsKeyIdOrArn = java.lang.String
+
+type LogTypeList = js.Array[String]
 
 type Long = scala.Double
 
@@ -174,68 +258,68 @@ type LongOptional = scala.Double
 
 type MaxRecords = scala.Double
 
-type MinimumEngineVersionPerAllowedValueList = js.Array[typings.awsSdk.rdsMod.MinimumEngineVersionPerAllowedValue]
+type MinimumEngineVersionPerAllowedValueList = js.Array[MinimumEngineVersionPerAllowedValue]
 
-type OptionConfigurationList = js.Array[typings.awsSdk.rdsMod.OptionConfiguration]
+type OptionConfigurationList = js.Array[OptionConfiguration]
 
-type OptionGroupMembershipList = js.Array[typings.awsSdk.rdsMod.OptionGroupMembership]
+type OptionGroupMembershipList = js.Array[OptionGroupMembership]
 
-type OptionGroupOptionSettingsList = js.Array[typings.awsSdk.rdsMod.OptionGroupOptionSetting]
+type OptionGroupOptionSettingsList = js.Array[OptionGroupOptionSetting]
 
-type OptionGroupOptionVersionsList = js.Array[typings.awsSdk.rdsMod.OptionVersion]
+type OptionGroupOptionVersionsList = js.Array[OptionVersion]
 
-type OptionGroupOptionsList = js.Array[typings.awsSdk.rdsMod.OptionGroupOption]
+type OptionGroupOptionsList = js.Array[OptionGroupOption]
 
-type OptionGroupsList = js.Array[typings.awsSdk.rdsMod.OptionGroup]
+type OptionGroupsList = js.Array[OptionGroup]
 
-type OptionNamesList = js.Array[typings.awsSdk.rdsMod.String]
+type OptionNamesList = js.Array[String]
 
-type OptionSettingConfigurationList = js.Array[typings.awsSdk.rdsMod.OptionSetting]
+type OptionSettingConfigurationList = js.Array[OptionSetting]
 
-type OptionSettingsList = js.Array[typings.awsSdk.rdsMod.OptionSetting]
+type OptionSettingsList = js.Array[OptionSetting]
 
-type OptionsConflictsWith = js.Array[typings.awsSdk.rdsMod.String]
+type OptionsConflictsWith = js.Array[String]
 
-type OptionsDependedOn = js.Array[typings.awsSdk.rdsMod.String]
+type OptionsDependedOn = js.Array[String]
 
-type OptionsList = js.Array[typings.awsSdk.rdsMod.Option]
+type OptionsList = js.Array[Option]
 
-type OrderableDBInstanceOptionsList = js.Array[typings.awsSdk.rdsMod.OrderableDBInstanceOption]
+type OrderableDBInstanceOptionsList = js.Array[OrderableDBInstanceOption]
 
-type ParametersList = js.Array[typings.awsSdk.rdsMod.Parameter]
+type ParametersList = js.Array[Parameter]
 
-type PendingMaintenanceActionDetails = js.Array[typings.awsSdk.rdsMod.PendingMaintenanceAction]
+type PendingMaintenanceActionDetails = js.Array[PendingMaintenanceAction]
 
-type PendingMaintenanceActions = js.Array[typings.awsSdk.rdsMod.ResourcePendingMaintenanceActions]
+type PendingMaintenanceActions = js.Array[ResourcePendingMaintenanceActions]
 
-type ProcessorFeatureList = js.Array[typings.awsSdk.rdsMod.ProcessorFeature]
+type ProcessorFeatureList = js.Array[ProcessorFeature]
 
-type RangeList = js.Array[typings.awsSdk.rdsMod.Range]
+type RangeList = js.Array[Range]
 
-type ReadReplicaDBClusterIdentifierList = js.Array[typings.awsSdk.rdsMod.String]
+type ReadReplicaDBClusterIdentifierList = js.Array[String]
 
-type ReadReplicaDBInstanceIdentifierList = js.Array[typings.awsSdk.rdsMod.String]
+type ReadReplicaDBInstanceIdentifierList = js.Array[String]
 
-type ReadReplicaIdentifierList = js.Array[typings.awsSdk.rdsMod.String]
+type ReadReplicaIdentifierList = js.Array[String]
 
-type ReadersArnList = js.Array[typings.awsSdk.rdsMod.String]
+type ReadersArnList = js.Array[String]
 
-type RecurringChargeList = js.Array[typings.awsSdk.rdsMod.RecurringCharge]
+type RecurringChargeList = js.Array[RecurringCharge]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`open-read-only`
   - typings.awsSdk.awsSdkStrings.mounted
   - java.lang.String
 */
-type ReplicaMode = typings.awsSdk.rdsMod._ReplicaMode | java.lang.String
+type ReplicaMode = _ReplicaMode | java.lang.String
 
-type ReservedDBInstanceList = js.Array[typings.awsSdk.rdsMod.ReservedDBInstance]
+type ReservedDBInstanceList = js.Array[ReservedDBInstance]
 
-type ReservedDBInstancesOfferingList = js.Array[typings.awsSdk.rdsMod.ReservedDBInstancesOffering]
+type ReservedDBInstancesOfferingList = js.Array[ReservedDBInstancesOffering]
 
-type SourceIdsList = js.Array[typings.awsSdk.rdsMod.String]
+type SourceIdsList = js.Array[String]
 
-type SourceRegionList = js.Array[typings.awsSdk.rdsMod.SourceRegion]
+type SourceRegionList = js.Array[SourceRegion]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`db-instance`
@@ -244,40 +328,51 @@ type SourceRegionList = js.Array[typings.awsSdk.rdsMod.SourceRegion]
   - typings.awsSdk.awsSdkStrings.`db-snapshot`
   - typings.awsSdk.awsSdkStrings.`db-cluster`
   - typings.awsSdk.awsSdkStrings.`db-cluster-snapshot`
+  - typings.awsSdk.awsSdkStrings.`custom-engine-version`
+  - typings.awsSdk.awsSdkStrings.`db-proxy`
   - java.lang.String
 */
-type SourceType = typings.awsSdk.rdsMod._SourceType | java.lang.String
+type SourceType = _SourceType | java.lang.String
 
 type String = java.lang.String
 
-type StringList = js.Array[typings.awsSdk.rdsMod.String]
+type String255 = java.lang.String
 
-type StringSensitive = java.lang.String
+type StringList = js.Array[String]
 
-type SubnetIdentifierList = js.Array[typings.awsSdk.rdsMod.String]
+type SubnetIdentifierList = js.Array[String]
 
-type SubnetList = js.Array[typings.awsSdk.rdsMod.Subnet]
+type SubnetList = js.Array[Subnet]
 
-type SupportedCharacterSetsList = js.Array[typings.awsSdk.rdsMod.CharacterSet]
+type SupportedCharacterSetsList = js.Array[CharacterSet]
 
-type SupportedTimezonesList = js.Array[typings.awsSdk.rdsMod.Timezone]
+type SupportedTimezonesList = js.Array[Timezone]
 
-type TStamp = typings.std.Date
+type TStamp = js.Date
 
-type TagList = js.Array[typings.awsSdk.rdsMod.Tag]
+type TagList = js.Array[Tag]
 
-type TargetGroupList = js.Array[typings.awsSdk.rdsMod.DBProxyTargetGroup]
+type TargetGroupList = js.Array[DBProxyTargetGroup]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UNREACHABLE
   - typings.awsSdk.awsSdkStrings.CONNECTION_FAILED
   - typings.awsSdk.awsSdkStrings.AUTH_FAILURE
   - typings.awsSdk.awsSdkStrings.PENDING_PROXY_CAPACITY
+  - typings.awsSdk.awsSdkStrings.INVALID_REPLICATION_STATE
   - java.lang.String
 */
-type TargetHealthReason = typings.awsSdk.rdsMod._TargetHealthReason | java.lang.String
+type TargetHealthReason = _TargetHealthReason | java.lang.String
 
-type TargetList = js.Array[typings.awsSdk.rdsMod.DBProxyTarget]
+type TargetList = js.Array[DBProxyTarget]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.READ_WRITE
+  - typings.awsSdk.awsSdkStrings.READ_ONLY
+  - typings.awsSdk.awsSdkStrings.UNKNOWN
+  - java.lang.String
+*/
+type TargetRole = _TargetRole | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.REGISTERING
@@ -285,7 +380,7 @@ type TargetList = js.Array[typings.awsSdk.rdsMod.DBProxyTarget]
   - typings.awsSdk.awsSdkStrings.UNAVAILABLE
   - java.lang.String
 */
-type TargetState = typings.awsSdk.rdsMod._TargetState | java.lang.String
+type TargetState = _TargetState | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RDS_INSTANCE
@@ -293,19 +388,19 @@ type TargetState = typings.awsSdk.rdsMod._TargetState | java.lang.String
   - typings.awsSdk.awsSdkStrings.TRACKED_CLUSTER
   - java.lang.String
 */
-type TargetType = typings.awsSdk.rdsMod._TargetType | java.lang.String
+type TargetType = _TargetType | java.lang.String
 
-type UserAuthConfigInfoList = js.Array[typings.awsSdk.rdsMod.UserAuthConfigInfo]
+type UserAuthConfigInfoList = js.Array[UserAuthConfigInfo]
 
-type UserAuthConfigList = js.Array[typings.awsSdk.rdsMod.UserAuthConfig]
+type UserAuthConfigList = js.Array[UserAuthConfig]
 
-type ValidStorageOptionsList = js.Array[typings.awsSdk.rdsMod.ValidStorageOptions]
+type ValidStorageOptionsList = js.Array[ValidStorageOptions]
 
-type ValidUpgradeTargetList = js.Array[typings.awsSdk.rdsMod.UpgradeTarget]
+type ValidUpgradeTargetList = js.Array[UpgradeTarget]
 
-type VpcSecurityGroupIdList = js.Array[typings.awsSdk.rdsMod.String]
+type VpcSecurityGroupIdList = js.Array[String]
 
-type VpcSecurityGroupMembershipList = js.Array[typings.awsSdk.rdsMod.VpcSecurityGroupMembership]
+type VpcSecurityGroupMembershipList = js.Array[VpcSecurityGroupMembership]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.enabled__
@@ -315,7 +410,7 @@ type VpcSecurityGroupMembershipList = js.Array[typings.awsSdk.rdsMod.VpcSecurity
   - typings.awsSdk.awsSdkStrings.unknown__
   - java.lang.String
 */
-type WriteForwardingStatus = typings.awsSdk.rdsMod._WriteForwardingStatus | java.lang.String
+type WriteForwardingStatus = _WriteForwardingStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2013-01-10`
@@ -326,4 +421,4 @@ type WriteForwardingStatus = typings.awsSdk.rdsMod._WriteForwardingStatus | java
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.rdsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

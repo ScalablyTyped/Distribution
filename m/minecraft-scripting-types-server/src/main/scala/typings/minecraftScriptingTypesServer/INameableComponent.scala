@@ -63,6 +63,6 @@ object INameableComponent {
     
     inline def setName_actions(value: js.Array[Namefilter]): Self = StObject.set(x, "name_actions", value.asInstanceOf[js.Any])
     
-    inline def setName_actionsVarargs(value: Namefilter*): Self = StObject.set(x, "name_actions", js.Array(value :_*))
+    inline def setName_actionsVarargs(value: Namefilter*): Self = StObject.set(x, "name_actions", js.Array(value*))
   }
 }

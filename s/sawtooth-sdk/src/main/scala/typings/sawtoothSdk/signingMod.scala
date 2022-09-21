@@ -1,11 +1,9 @@
 package typings.sawtoothSdk
 
-import typings.node.Buffer
-import typings.node.NodeJS.TypedArray
+import typings.node.bufferMod.global.Buffer
 import typings.sawtoothSdk.coreMod.Context
 import typings.sawtoothSdk.coreMod.PrivateKey
 import typings.sawtoothSdk.coreMod.PublicKey
-import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +16,7 @@ object signingMod {
   
   @JSImport("sawtooth-sdk/signing", "CryptoFactory")
   @js.native
-  class CryptoFactory protected () extends StObject {
+  open class CryptoFactory protected () extends StObject {
     /**
       * Constructs a CryptoFactory.
       *
@@ -44,7 +42,7 @@ object signingMod {
   
   @JSImport("sawtooth-sdk/signing", "Signer")
   @js.native
-  class Signer protected () extends StObject {
+  open class Signer protected () extends StObject {
     /**
       * Constructs a new Signer
       *
@@ -76,5 +74,5 @@ object signingMod {
   
   inline def createContext(algorithmName: String): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(algorithmName.asInstanceOf[js.Any]).asInstanceOf[Context]
   
-  type message = String | Buffer | TypedArray | DataView
+  type message = String | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.DataView
 }

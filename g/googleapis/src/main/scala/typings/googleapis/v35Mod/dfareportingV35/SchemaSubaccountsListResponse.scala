@@ -1,0 +1,51 @@
+package typings.googleapis.v35Mod.dfareportingV35
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaSubaccountsListResponse extends StObject {
+  
+  /**
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#subaccountsListResponse".
+    */
+  var kind: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Pagination token to be used for the next list operation.
+    */
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Subaccount collection.
+    */
+  var subaccounts: js.UndefOr[js.Array[SchemaSubaccount]] = js.undefined
+}
+object SchemaSubaccountsListResponse {
+  
+  inline def apply(): SchemaSubaccountsListResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaSubaccountsListResponse]
+  }
+  
+  extension [Self <: SchemaSubaccountsListResponse](x: Self) {
+    
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    
+    inline def setSubaccounts(value: js.Array[SchemaSubaccount]): Self = StObject.set(x, "subaccounts", value.asInstanceOf[js.Any])
+    
+    inline def setSubaccountsUndefined: Self = StObject.set(x, "subaccounts", js.undefined)
+    
+    inline def setSubaccountsVarargs(value: SchemaSubaccount*): Self = StObject.set(x, "subaccounts", js.Array(value*))
+  }
+}

@@ -23,8 +23,8 @@ object LayerFilter {
   
   inline def apply(
     acquire: () => Unit,
-    initialize: SeqEquiv[js.Any] => Unit,
-    queryInterface: `type` => js.Any,
+    initialize: SeqEquiv[Any] => Unit,
+    queryInterface: `type` => Any,
     readData: XLayerHandler => Unit,
     release: () => Unit
   ): LayerFilter = {

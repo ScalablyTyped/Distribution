@@ -11,9 +11,9 @@ A library of intersection algorithms covering all SVG shape types
 | Full name          | svg-intersections |
 | Keywords           | intersection, bezier, circle, ellipse, line, polygon, rectangle, path |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 249631 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 60116.0 |
+| # stars            | 119.0 |
 
 ## Links
 - [Homepage](https://github.com/effektif/svg-intersections#readme)

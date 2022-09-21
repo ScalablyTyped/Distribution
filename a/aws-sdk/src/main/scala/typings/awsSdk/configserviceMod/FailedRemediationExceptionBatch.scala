@@ -29,7 +29,7 @@ object FailedRemediationExceptionBatch {
     
     inline def setFailedItemsUndefined: Self = StObject.set(x, "FailedItems", js.undefined)
     
-    inline def setFailedItemsVarargs(value: RemediationException*): Self = StObject.set(x, "FailedItems", js.Array(value :_*))
+    inline def setFailedItemsVarargs(value: RemediationException*): Self = StObject.set(x, "FailedItems", js.Array(value*))
     
     inline def setFailureMessage(value: String): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
     

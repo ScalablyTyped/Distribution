@@ -26,7 +26,6 @@ import typings.chromeApps.chromeAppsStrings.resume_
 import typings.chromeApps.chromeAppsStrings.showAddDialog
 import typings.chromeApps.chromeAppsStrings.showConfigureDialog
 import typings.chromeApps.chromeAppsStrings.suspend_
-import typings.std.ArrayBuffer
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -231,7 +230,7 @@ object vpnProvider {
   /** Triggered when an IP packet is received via the tunnel for the VPN session owned by the extension. */
   @JSGlobal("chrome.vpnProvider.onPacketReceived")
   @js.native
-  val onPacketReceived: typings.chromeApps.chrome.events.Event[js.Function1[/* data */ ArrayBuffer, Unit]] = js.native
+  val onPacketReceived: typings.chromeApps.chrome.events.Event[js.Function1[/* data */ js.typedarray.ArrayBuffer, Unit]] = js.native
   
   /** Triggered when a message is received from the platform for a VPN configuration owned by the extension. */
   @JSGlobal("chrome.vpnProvider.onPlatformMessage")
@@ -278,8 +277,8 @@ object vpnProvider {
     * @param data The IP packet to be sent to the platform.
     * @param callback Called when the packet is sent or if there is an error.
     */
-  inline def sendPacket(data: ArrayBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def sendPacket(data: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendPacket(data: js.typedarray.ArrayBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sendPacket(data: js.typedarray.ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendPacket")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the parameters for the VPN session. This should be called immediately after 'connected' is received from the platform. This will succeed only when the VPN session is owned by the extension.

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.PageNumbers")
 @js.native
-/* private */ class PageNumbers ()
+/* private */ open class PageNumbers ()
   extends StObject
      with typings.activexWord.Word.PageNumbers

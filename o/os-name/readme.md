@@ -1,7 +1,7 @@
 
 # Scala.js typings for os-name
 
-Typings are for version 4.0.0
+Typings are for version 5.0.1
 
 ## Library description:
 Get the name of the current operating system. Example: macOS Sierra
@@ -10,10 +10,10 @@ Get the name of the current operating system. Example: macOS Sierra
 | ------------------ | :-------------: |
 | Full name          | os-name |
 | Keywords           | os, operating, system, platform, name, title, release, version, macos, windows, linux |
-| # releases         | 3 |
-| # dependents       | 121 |
-| # downloads        | 148183313 |
-| # stars            | 3 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3794095333333334E7 |
+| # stars            | 125.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/os-name#readme)

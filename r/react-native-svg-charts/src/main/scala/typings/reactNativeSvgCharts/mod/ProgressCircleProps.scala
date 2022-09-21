@@ -14,6 +14,8 @@ trait ProgressCircleProps extends StObject {
   
   var backgroundColor: js.UndefOr[String] = js.undefined
   
+  var cornerRadius: js.UndefOr[Double | String] = js.undefined
+  
   var endAngle: js.UndefOr[Double] = js.undefined
   
   var progress: Double
@@ -46,6 +48,10 @@ object ProgressCircleProps {
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setCornerRadius(value: Double | String): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+    
+    inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
     
     inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     

@@ -159,7 +159,7 @@ object MapConstructorOptions {
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    inline def setAnnotationsVarargs(value: Annotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: Annotation*): Self = StObject.set(x, "annotations", js.Array(value*))
     
     inline def setCenter(value: Coordinate): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
@@ -189,7 +189,7 @@ object MapConstructorOptions {
     
     inline def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
     
-    inline def setOverlaysVarargs(value: Overlay*): Self = StObject.set(x, "overlays", js.Array(value :_*))
+    inline def setOverlaysVarargs(value: Overlay*): Self = StObject.set(x, "overlays", js.Array(value*))
     
     inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     

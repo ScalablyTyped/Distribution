@@ -24,6 +24,6 @@ object BatchDeleteDocumentResponse {
     
     inline def setFailedDocumentsUndefined: Self = StObject.set(x, "FailedDocuments", js.undefined)
     
-    inline def setFailedDocumentsVarargs(value: BatchDeleteDocumentResponseFailedDocument*): Self = StObject.set(x, "FailedDocuments", js.Array(value :_*))
+    inline def setFailedDocumentsVarargs(value: BatchDeleteDocumentResponseFailedDocument*): Self = StObject.set(x, "FailedDocuments", js.Array(value*))
   }
 }

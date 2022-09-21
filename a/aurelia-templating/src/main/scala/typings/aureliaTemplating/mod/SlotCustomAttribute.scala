@@ -6,20 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-templating", "SlotCustomAttribute")
 @js.native
-class SlotCustomAttribute () extends StObject {
-  def this(element: js.Any) = this()
+open class SlotCustomAttribute protected () extends StObject {
+  def this(element: Any) = this()
   
-  def valueChanged(): js.Any = js.native
-  def valueChanged(newValue: js.Any): js.Any = js.native
-  def valueChanged(newValue: js.Any, oldValue: js.Any): js.Any = js.native
-  def valueChanged(newValue: Unit, oldValue: js.Any): js.Any = js.native
-}
-/* static members */
-object SlotCustomAttribute {
+  var element: Any = js.native
   
-  @JSImport("aurelia-templating", "SlotCustomAttribute")
-  @js.native
-  val ^ : js.Any = js.native
+  var value: Any = js.native
   
-  inline def inject(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")().asInstanceOf[js.Any]
+  def valueChanged(newValue: Any, oldValue: Any): Unit = js.native
 }

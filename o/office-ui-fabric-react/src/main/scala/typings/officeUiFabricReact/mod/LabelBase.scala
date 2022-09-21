@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "LabelBase")
 @js.native
-class LabelBase protected ()
+open class LabelBase protected ()
   extends typings.officeUiFabricReact.libLabelMod.LabelBase {
   def this(props: ILabelProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ILabelProps, context: js.Any) = this()
+  def this(props: ILabelProps, context: Any) = this()
 }

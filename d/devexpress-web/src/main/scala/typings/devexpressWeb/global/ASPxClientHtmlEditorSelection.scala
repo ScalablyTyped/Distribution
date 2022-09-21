@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorSelection")
 @js.native
-class ASPxClientHtmlEditorSelection ()
+open class ASPxClientHtmlEditorSelection ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorSelection {
   
@@ -17,7 +17,7 @@ class ASPxClientHtmlEditorSelection ()
     * Returns an array of the currently selected elements.
     */
   /* CompleteClass */
-  override def GetElements(): js.Array[js.Any] = js.native
+  override def GetElements(): js.Array[Any] = js.native
   
   /**
     * Returns the HTML markup specifying the currently selected ASPxHtmlEditor content.
@@ -29,7 +29,7 @@ class ASPxClientHtmlEditorSelection ()
     * Returns a DOM element that relates to the current selection.
     */
   /* CompleteClass */
-  override def GetSelectedElement(): js.Any = js.native
+  override def GetSelectedElement(): Any = js.native
   
   /**
     * Returns the text within the currently selected ASPxHtmlEditor content.

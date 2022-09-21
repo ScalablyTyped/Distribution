@@ -10,10 +10,10 @@ Bindings to native spellchecker
 | ------------------ | :-------------: |
 | Full name          | spellchecker |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 24 |
-| # downloads        | 168934 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 30634.0 |
+| # stars            | 263.0 |
 
 ## Links
 - [Homepage](http://atom.github.io/node-spellchecker)

@@ -10,7 +10,7 @@ trait Notification extends StObject {
   
   var parseMode: js.UndefOr[String] = js.undefined
   
-  var replyMarkup: js.UndefOr[js.Any] = js.undefined
+  var replyMarkup: js.UndefOr[Any] = js.undefined
   
   var replyToMessage: js.UndefOr[Double] = js.undefined
   
@@ -33,7 +33,7 @@ object Notification {
     
     inline def setParseModeUndefined: Self = StObject.set(x, "parseMode", js.undefined)
     
-    inline def setReplyMarkup(value: js.Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
+    inline def setReplyMarkup(value: Any): Self = StObject.set(x, "replyMarkup", value.asInstanceOf[js.Any])
     
     inline def setReplyMarkupUndefined: Self = StObject.set(x, "replyMarkup", js.undefined)
     

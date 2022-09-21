@@ -9,10 +9,10 @@ JavaScript timezone library based on Olson timezone data
 | ------------------ | :-------------: |
 | Full name          | timezone-js |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 969685 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 94695.33333333333 |
+| # stars            | 827.0 |
 
 ## Links
 - [Homepage](https://github.com/mde/timezone-js)

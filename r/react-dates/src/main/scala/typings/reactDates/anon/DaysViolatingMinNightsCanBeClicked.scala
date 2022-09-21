@@ -34,6 +34,10 @@ trait DaysViolatingMinNightsCanBeClicked extends StObject {
   
   var keepOpenOnDateSelect: js.UndefOr[Boolean] = js.native
   
+  var maxDate: js.UndefOr[Moment | Null] = js.native
+  
+  var minDate: js.UndefOr[Moment | Null] = js.native
+  
   var minimumNights: js.UndefOr[Double] = js.native
   
   var onClose: js.UndefOr[js.Function1[/* final */ EndDate, Unit]] = js.native

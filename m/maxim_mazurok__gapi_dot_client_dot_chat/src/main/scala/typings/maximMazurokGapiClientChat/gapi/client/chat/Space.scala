@@ -6,19 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Space extends StObject {
   
-  /** Output only. The display name (only if the space is a room). Please note that this field might not be populated in direct messages between humans. */
+  /** The space's display name. For direct messages between humans, this field might be empty. */
   var displayName: js.UndefOr[String] = js.undefined
   
-  /** Resource name of the space, in the form "spaces/ *". Example: spaces/AAAAMpdlehYs */
+  /** Resource name of the space. Format: spaces/{space} */
   var name: js.UndefOr[String] = js.undefined
   
-  /** Whether the space is a DM between a bot and a single human. */
+  /** Output only. Whether the space is a DM between a Chat app and a single human. */
   var singleUserBotDm: js.UndefOr[Boolean] = js.undefined
   
-  /** Whether the messages are threaded in this space. */
+  /** Details about the space including description and rules. */
+  var spaceDetails: js.UndefOr[SpaceDetails] = js.undefined
+  
+  /** Output only. Whether messages are threaded in this space. */
   var threaded: js.UndefOr[Boolean] = js.undefined
   
-  /** Output only. The type of a space. This is deprecated. Use `single_user_bot_dm` instead. */
+  /** Output only. Deprecated: Use `singleUserBotDm` or `spaceType` (developer preview) instead. The type of a space. */
   var `type`: js.UndefOr[String] = js.undefined
 }
 object Space {
@@ -41,6 +44,10 @@ object Space {
     inline def setSingleUserBotDm(value: Boolean): Self = StObject.set(x, "singleUserBotDm", value.asInstanceOf[js.Any])
     
     inline def setSingleUserBotDmUndefined: Self = StObject.set(x, "singleUserBotDm", js.undefined)
+    
+    inline def setSpaceDetails(value: SpaceDetails): Self = StObject.set(x, "spaceDetails", value.asInstanceOf[js.Any])
+    
+    inline def setSpaceDetailsUndefined: Self = StObject.set(x, "spaceDetails", js.undefined)
     
     inline def setThreaded(value: Boolean): Self = StObject.set(x, "threaded", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,7 @@ object Durationinseconds {
     
     inline def `setPhase-contextUndefined`: Self = StObject.set(x, "phase-context", js.undefined)
     
-    inline def `setPhase-contextVarargs`(value: String*): Self = StObject.set(x, "phase-context", js.Array(value :_*))
+    inline def `setPhase-contextVarargs`(value: String*): Self = StObject.set(x, "phase-context", js.Array(value*))
     
     inline def `setPhase-status`(value: CodeBuildPhaseStatusType): Self = StObject.set(x, "phase-status", value.asInstanceOf[js.Any])
     

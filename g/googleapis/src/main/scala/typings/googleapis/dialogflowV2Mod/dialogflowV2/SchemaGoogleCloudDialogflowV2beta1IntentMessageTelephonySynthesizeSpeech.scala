@@ -4,24 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Synthesizes speech and plays back the synthesized audio to the caller in
-  * Telephony Gateway.  Telephony Gateway takes the synthesizer settings from
-  * `DetectIntentResponse.output_audio_config` which can either be set at
-  * request-level or can come from the agent-level synthesizer config.
-  */
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech extends StObject {
   
   /**
-    * The SSML to be synthesized. For more information, see
-    * [SSML](https://developers.google.com/actions/reference/ssml).
+    * The SSML to be synthesized. For more information, see [SSML](https://developers.google.com/actions/reference/ssml).
     */
-  var ssml: js.UndefOr[String] = js.undefined
+  var ssml: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The raw text to be synthesized.
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech {
   
@@ -34,9 +27,13 @@ object SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech 
     
     inline def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
     
+    inline def setSsmlNull: Self = StObject.set(x, "ssml", null)
+    
     inline def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }

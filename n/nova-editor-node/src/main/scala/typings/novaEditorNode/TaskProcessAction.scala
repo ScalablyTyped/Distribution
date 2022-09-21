@@ -5,4 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://docs.nova.app/api-reference/task-process-action/
-trait TaskProcessAction extends StObject
+trait TaskProcessAction
+  extends StObject
+     with ResolvedTaskAction

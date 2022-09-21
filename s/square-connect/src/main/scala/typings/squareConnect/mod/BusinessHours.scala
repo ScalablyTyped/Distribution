@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "BusinessHours")
 @js.native
-class BusinessHours () extends StObject {
+open class BusinessHours () extends StObject {
   
   /**
     * The list of time periods during which the business is open. There may be at most 10 periods per day.

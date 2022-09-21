@@ -18,13 +18,13 @@ trait MediaPropertySet extends StObject {
     * Returns an iterator to enumerate the items in the property set.
     * @return The iterator. The current position of the iterator is index 0, or the end of the property set if the property set is empty.
     */
-  def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+  def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
   
   /**
     * Returns an immutable view of the property set.
     * @return The immutable view.
     */
-  def getView(): IMapView[String, js.Any] = js.native
+  def getView(): IMapView[String, Any] = js.native
   
   /**
     * Indicates whether the property set has an item with the specified key.
@@ -39,14 +39,14 @@ trait MediaPropertySet extends StObject {
     * @param value The value of the item to insert.
     * @return True if the method replaced a value that already existed for the key; false if this is a new key.
     */
-  def insert(key: String, value: js.Any): Boolean = js.native
+  def insert(key: String, value: Any): Boolean = js.native
   
   /**
     * Retrieves the value for the specified key.
     * @param key The key.
     * @return The value, if an item with the specified key exists. Otherwise, null.
     */
-  def lookup(key: String): js.Any = js.native
+  def lookup(key: String): Any = js.native
   
   /**
     * Removes a specific item from the MediaPropertySet .

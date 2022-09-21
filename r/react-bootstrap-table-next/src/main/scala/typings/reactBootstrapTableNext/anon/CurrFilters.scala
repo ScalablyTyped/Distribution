@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CurrFilters extends StObject {
   
-  var currFilters: js.Any
+  var currFilters: Any
 }
 object CurrFilters {
   
-  inline def apply(currFilters: js.Any): CurrFilters = {
+  inline def apply(currFilters: Any): CurrFilters = {
     val __obj = js.Dynamic.literal(currFilters = currFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrFilters]
   }
   
   extension [Self <: CurrFilters](x: Self) {
     
-    inline def setCurrFilters(value: js.Any): Self = StObject.set(x, "currFilters", value.asInstanceOf[js.Any])
+    inline def setCurrFilters(value: Any): Self = StObject.set(x, "currFilters", value.asInstanceOf[js.Any])
   }
 }

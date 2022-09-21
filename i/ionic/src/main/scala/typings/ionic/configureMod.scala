@@ -13,7 +13,7 @@ object configureMod {
   
   @JSImport("ionic/commands/deploy/configure", "ConfigureCommand")
   @js.native
-  class ConfigureCommand protected () extends DeployConfCommand {
+  open class ConfigureCommand protected () extends DeployConfCommand {
     def this(namespace: INamespace) = this()
     
     def preRun(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[Unit] = js.native

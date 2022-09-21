@@ -10,10 +10,10 @@ Generates clean, responsive HTML e-mails for sending transactional mail.
 | ------------------ | :-------------: |
 | Full name          | mailgen |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 11 |
-| # downloads        | 195279 |
-| # stars            | 15 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 30940.333333333332 |
+| # stars            | 2446.0 |
 
 ## Links
 - [Homepage](https://github.com/eladnava/mailgen#readme)

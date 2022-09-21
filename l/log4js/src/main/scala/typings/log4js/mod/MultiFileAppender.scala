@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MultiFileAppender
-  extends StObject
-     with Appender {
+trait MultiFileAppender extends StObject {
   
   // the base part of the generated log filename
   var base: String

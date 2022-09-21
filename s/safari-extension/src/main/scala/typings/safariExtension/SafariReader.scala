@@ -12,7 +12,7 @@ trait SafariReader
   var available: Boolean = js.native
   
   def dispatchMessage(name: String): Unit = js.native
-  def dispatchMessage(name: String, message: js.Any): Unit = js.native
+  def dispatchMessage(name: String, message: Any): Unit = js.native
   
   def enter(): Unit = js.native
   

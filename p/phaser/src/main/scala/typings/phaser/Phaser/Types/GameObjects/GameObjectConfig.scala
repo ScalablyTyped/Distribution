@@ -14,12 +14,12 @@ trait GameObjectConfig extends StObject {
   /**
     * The alpha (opacity) of the Game Object.
     */
-  var alpha: js.UndefOr[Double] = js.undefined
+  var alpha: js.UndefOr[Double | js.Object] = js.undefined
   
   /**
     * The rotation angle of the Game Object, in degrees.
     */
-  var angle: js.UndefOr[Double] = js.undefined
+  var angle: js.UndefOr[Double | js.Object] = js.undefined
   
   /**
     * The blend mode of the GameObject.
@@ -49,7 +49,7 @@ trait GameObjectConfig extends StObject {
   /**
     * The rotation angle of the Game Object, in radians.
     */
-  var rotation: js.UndefOr[Double] = js.undefined
+  var rotation: js.UndefOr[Double | js.Object] = js.undefined
   
   /**
     * The scale of the GameObject.
@@ -74,12 +74,12 @@ trait GameObjectConfig extends StObject {
   /**
     * The x position of the Game Object.
     */
-  var x: js.UndefOr[Double] = js.undefined
+  var x: js.UndefOr[Double | js.Object] = js.undefined
   
   /**
     * The y position of the Game Object.
     */
-  var y: js.UndefOr[Double] = js.undefined
+  var y: js.UndefOr[Double | js.Object] = js.undefined
 }
 object GameObjectConfig {
   
@@ -94,11 +94,11 @@ object GameObjectConfig {
     
     inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double | js.Object): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double | js.Object): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
@@ -122,7 +122,7 @@ object GameObjectConfig {
     
     inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double | js.Object): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
@@ -142,11 +142,11 @@ object GameObjectConfig {
     
     inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
-    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double | js.Object): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double | js.Object): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }

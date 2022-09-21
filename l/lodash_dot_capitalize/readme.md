@@ -10,10 +10,10 @@ The lodash method `_.capitalize` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.capitalize |
 | Keywords           | lodash-modularized, capitalize |
-| # releases         | 0 |
-| # dependents       | 102 |
-| # downloads        | 26734641 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4046408.3333333335 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

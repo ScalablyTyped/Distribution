@@ -13,76 +13,76 @@ object volumeMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/volume/volume", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with VolumeControl {
     def this(hasEngineEventEmitterTextMapTooltipServiceTheme: TooltipService) = this()
     
     /* private */ /* CompleteClass */
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _broadcastDragEnd: js.Any = js.native
+    var _broadcastDragEnd: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _broadcastDragStart: js.Any = js.native
+    var _broadcastDragStart: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _buttonInterceptor: js.Any = js.native
+    var _buttonInterceptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _changeVolumeLevel: js.Any = js.native
+    var _changeVolumeLevel: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _destroyInterceptor: js.Any = js.native
+    var _destroyInterceptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _engine: js.Any = js.native
+    var _engine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _getVolumeLevelFromInput: js.Any = js.native
+    var _getVolumeLevelFromInput: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _getVolumeLevelFromWheel: js.Any = js.native
+    var _getVolumeLevelFromWheel: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initInterceptor: js.Any = js.native
+    var _initInterceptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initUI: js.Any = js.native
+    var _initUI: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _inputInterceptor: js.Any = js.native
+    var _inputInterceptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _setMuteState: js.Any = js.native
+    var _setMuteState: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _setVolumeLevel: js.Any = js.native
+    var _setVolumeLevel: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _textMap: js.Any = js.native
+    var _textMap: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _theme: js.Any = js.native
+    var _theme: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _toggleMuteState: js.Any = js.native
+    var _toggleMuteState: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _tooltipService: js.Any = js.native
+    var _tooltipService: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _updateSoundState: js.Any = js.native
+    var _updateSoundState: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -129,49 +129,49 @@ object volumeMod {
     extends StObject
        with IVolumeControl {
     
-    /* private */ var _bindCallbacks: js.Any
+    /* private */ var _bindCallbacks: Any
     
-    /* private */ var _bindEvents: js.Any
+    /* private */ var _bindEvents: Any
     
-    /* private */ var _broadcastDragEnd: js.Any
+    /* private */ var _broadcastDragEnd: Any
     
-    /* private */ var _broadcastDragStart: js.Any
+    /* private */ var _broadcastDragStart: Any
     
-    /* private */ var _buttonInterceptor: js.Any
+    /* private */ var _buttonInterceptor: Any
     
-    /* private */ var _changeVolumeLevel: js.Any
+    /* private */ var _changeVolumeLevel: Any
     
-    /* private */ var _destroyInterceptor: js.Any
+    /* private */ var _destroyInterceptor: Any
     
-    /* private */ var _engine: js.Any
+    /* private */ var _engine: Any
     
-    /* private */ var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: Any
     
-    /* private */ var _getVolumeLevelFromInput: js.Any
+    /* private */ var _getVolumeLevelFromInput: Any
     
-    /* private */ var _getVolumeLevelFromWheel: js.Any
+    /* private */ var _getVolumeLevelFromWheel: Any
     
-    /* private */ var _initInterceptor: js.Any
+    /* private */ var _initInterceptor: Any
     
-    /* private */ var _initUI: js.Any
+    /* private */ var _initUI: Any
     
-    /* private */ var _inputInterceptor: js.Any
+    /* private */ var _inputInterceptor: Any
     
-    /* private */ var _setMuteState: js.Any
+    /* private */ var _setMuteState: Any
     
-    /* private */ var _setVolumeLevel: js.Any
+    /* private */ var _setVolumeLevel: Any
     
-    /* private */ var _textMap: js.Any
+    /* private */ var _textMap: Any
     
-    /* private */ var _theme: js.Any
+    /* private */ var _theme: Any
     
-    /* private */ var _toggleMuteState: js.Any
+    /* private */ var _toggleMuteState: Any
     
-    /* private */ var _tooltipService: js.Any
+    /* private */ var _tooltipService: Any
     
-    /* private */ var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: Any
     
-    /* private */ var _updateSoundState: js.Any
+    /* private */ var _updateSoundState: Any
     
     var isHidden: Boolean
     
@@ -180,28 +180,28 @@ object volumeMod {
   object VolumeControl {
     
     inline def apply(
-      _bindCallbacks: js.Any,
-      _bindEvents: js.Any,
-      _broadcastDragEnd: js.Any,
-      _broadcastDragStart: js.Any,
-      _buttonInterceptor: js.Any,
-      _changeVolumeLevel: js.Any,
-      _destroyInterceptor: js.Any,
-      _engine: js.Any,
-      _eventEmitter: js.Any,
-      _getVolumeLevelFromInput: js.Any,
-      _getVolumeLevelFromWheel: js.Any,
-      _initInterceptor: js.Any,
-      _initUI: js.Any,
-      _inputInterceptor: js.Any,
-      _setMuteState: js.Any,
-      _setVolumeLevel: js.Any,
-      _textMap: js.Any,
-      _theme: js.Any,
-      _toggleMuteState: js.Any,
-      _tooltipService: js.Any,
-      _unbindEvents: js.Any,
-      _updateSoundState: js.Any,
+      _bindCallbacks: Any,
+      _bindEvents: Any,
+      _broadcastDragEnd: Any,
+      _broadcastDragStart: Any,
+      _buttonInterceptor: Any,
+      _changeVolumeLevel: Any,
+      _destroyInterceptor: Any,
+      _engine: Any,
+      _eventEmitter: Any,
+      _getVolumeLevelFromInput: Any,
+      _getVolumeLevelFromWheel: Any,
+      _initInterceptor: Any,
+      _initUI: Any,
+      _inputInterceptor: Any,
+      _setMuteState: Any,
+      _setVolumeLevel: Any,
+      _textMap: Any,
+      _theme: Any,
+      _toggleMuteState: Any,
+      _tooltipService: Any,
+      _unbindEvents: Any,
+      _updateSoundState: Any,
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -219,49 +219,49 @@ object volumeMod {
       
       inline def setView(value: typings.playable.volumeViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      inline def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
+      inline def set_bindCallbacks(value: Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
       
-      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      inline def set_broadcastDragEnd(value: js.Any): Self = StObject.set(x, "_broadcastDragEnd", value.asInstanceOf[js.Any])
+      inline def set_broadcastDragEnd(value: Any): Self = StObject.set(x, "_broadcastDragEnd", value.asInstanceOf[js.Any])
       
-      inline def set_broadcastDragStart(value: js.Any): Self = StObject.set(x, "_broadcastDragStart", value.asInstanceOf[js.Any])
+      inline def set_broadcastDragStart(value: Any): Self = StObject.set(x, "_broadcastDragStart", value.asInstanceOf[js.Any])
       
-      inline def set_buttonInterceptor(value: js.Any): Self = StObject.set(x, "_buttonInterceptor", value.asInstanceOf[js.Any])
+      inline def set_buttonInterceptor(value: Any): Self = StObject.set(x, "_buttonInterceptor", value.asInstanceOf[js.Any])
       
-      inline def set_changeVolumeLevel(value: js.Any): Self = StObject.set(x, "_changeVolumeLevel", value.asInstanceOf[js.Any])
+      inline def set_changeVolumeLevel(value: Any): Self = StObject.set(x, "_changeVolumeLevel", value.asInstanceOf[js.Any])
       
-      inline def set_destroyInterceptor(value: js.Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
+      inline def set_destroyInterceptor(value: Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
       
-      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      inline def set_getVolumeLevelFromInput(value: js.Any): Self = StObject.set(x, "_getVolumeLevelFromInput", value.asInstanceOf[js.Any])
+      inline def set_getVolumeLevelFromInput(value: Any): Self = StObject.set(x, "_getVolumeLevelFromInput", value.asInstanceOf[js.Any])
       
-      inline def set_getVolumeLevelFromWheel(value: js.Any): Self = StObject.set(x, "_getVolumeLevelFromWheel", value.asInstanceOf[js.Any])
+      inline def set_getVolumeLevelFromWheel(value: Any): Self = StObject.set(x, "_getVolumeLevelFromWheel", value.asInstanceOf[js.Any])
       
-      inline def set_initInterceptor(value: js.Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
+      inline def set_initInterceptor(value: Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
       
-      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      inline def set_inputInterceptor(value: js.Any): Self = StObject.set(x, "_inputInterceptor", value.asInstanceOf[js.Any])
+      inline def set_inputInterceptor(value: Any): Self = StObject.set(x, "_inputInterceptor", value.asInstanceOf[js.Any])
       
-      inline def set_setMuteState(value: js.Any): Self = StObject.set(x, "_setMuteState", value.asInstanceOf[js.Any])
+      inline def set_setMuteState(value: Any): Self = StObject.set(x, "_setMuteState", value.asInstanceOf[js.Any])
       
-      inline def set_setVolumeLevel(value: js.Any): Self = StObject.set(x, "_setVolumeLevel", value.asInstanceOf[js.Any])
+      inline def set_setVolumeLevel(value: Any): Self = StObject.set(x, "_setVolumeLevel", value.asInstanceOf[js.Any])
       
-      inline def set_textMap(value: js.Any): Self = StObject.set(x, "_textMap", value.asInstanceOf[js.Any])
+      inline def set_textMap(value: Any): Self = StObject.set(x, "_textMap", value.asInstanceOf[js.Any])
       
-      inline def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
+      inline def set_theme(value: Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
       
-      inline def set_toggleMuteState(value: js.Any): Self = StObject.set(x, "_toggleMuteState", value.asInstanceOf[js.Any])
+      inline def set_toggleMuteState(value: Any): Self = StObject.set(x, "_toggleMuteState", value.asInstanceOf[js.Any])
       
-      inline def set_tooltipService(value: js.Any): Self = StObject.set(x, "_tooltipService", value.asInstanceOf[js.Any])
+      inline def set_tooltipService(value: Any): Self = StObject.set(x, "_tooltipService", value.asInstanceOf[js.Any])
       
-      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
       
-      inline def set_updateSoundState(value: js.Any): Self = StObject.set(x, "_updateSoundState", value.asInstanceOf[js.Any])
+      inline def set_updateSoundState(value: Any): Self = StObject.set(x, "_updateSoundState", value.asInstanceOf[js.Any])
     }
   }
 }

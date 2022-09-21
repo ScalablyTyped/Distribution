@@ -3,7 +3,6 @@ package typings.anyDb
 import org.scalablytyped.runtime.Instantiable0
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Readable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,9 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def createConnection(opts: ConnectOpts): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(opts.asInstanceOf[js.Any]).asInstanceOf[Connection]
-  inline def createConnection(opts: ConnectOpts, callback: js.Function2[/* error */ Error, /* connection */ Connection, Unit]): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Connection]
+  inline def createConnection(opts: ConnectOpts, callback: js.Function2[/* error */ js.Error, /* connection */ Connection, Unit]): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Connection]
   inline def createConnection(url: String): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(url.asInstanceOf[js.Any]).asInstanceOf[Connection]
-  inline def createConnection(url: String, callback: js.Function2[/* error */ Error, /* connection */ Connection, Unit]): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Connection]
+  inline def createConnection(url: String, callback: js.Function2[/* error */ js.Error, /* connection */ Connection, Unit]): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Connection]
   
   inline def createPool(opts: ConnectOpts, config: PoolConfig): ConnectionPool = (^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(opts.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ConnectionPool]
   inline def createPool(url: String, config: PoolConfig): ConnectionPool = (^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ConnectionPool]
@@ -30,7 +29,7 @@ object mod {
       * If a continuation is given, it must be called, either with an error or the established connection.
       */
     def createConnection(opts: ConnectOpts): Connection = js.native
-    def createConnection(opts: ConnectOpts, callback: js.Function2[/* error */ Error, /* result */ Connection, Unit]): Connection = js.native
+    def createConnection(opts: ConnectOpts, callback: js.Function2[/* error */ js.Error, /* result */ Connection, Unit]): Connection = js.native
     
     def createQuery(query: Query): Query = js.native
     /**
@@ -39,16 +38,16 @@ object mod {
       * by synchronously returning a Query stream
       */
     def createQuery(text: String): Query = js.native
-    def createQuery(text: String, params: js.Array[js.Any]): Query = js.native
+    def createQuery(text: String, params: js.Array[Any]): Query = js.native
     def createQuery(
       text: String,
-      params: js.Array[js.Any],
-      callback: js.Function2[/* error */ Error, /* result */ ResultSet, Unit]
+      params: js.Array[Any],
+      callback: js.Function2[/* error */ js.Error, /* result */ ResultSet, Unit]
     ): Query = js.native
     def createQuery(
       text: String,
       params: Unit,
-      callback: js.Function2[/* error */ Error, /* result */ ResultSet, Unit]
+      callback: js.Function2[/* error */ js.Error, /* result */ ResultSet, Unit]
     ): Query = js.native
     
     var name: String = js.native
@@ -79,7 +78,7 @@ object mod {
       * will be called after the connection has closed.
       */
     def end(): Unit = js.native
-    def end(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def end(callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
   }
   
   @js.native
@@ -89,14 +88,14 @@ object mod {
       * Remove a connection from the pool. If you use this method you must
       * return the connection back to the pool using ConnectionPool.release
       */
-    def acquire(callback: js.Function2[/* error */ Error, /* result */ Connection, Unit]): Unit = js.native
+    def acquire(callback: js.Function2[/* error */ js.Error, /* result */ Connection, Unit]): Unit = js.native
     
     /**
       * Stop giving out new connections, and close all existing database connections as they
       * are returned to the pool.
       */
     def close(): Unit = js.native
-    def close(callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def close(callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
     
     /**
       * Return a connection to the pool. This should only be called with connections
@@ -160,7 +159,7 @@ object mod {
     var onConnect: js.UndefOr[
         js.Function2[
           /* connection */ Connection, 
-          /* ready */ js.Function2[/* error */ Error, /* result */ Connection, Unit], 
+          /* ready */ js.Function2[/* error */ js.Error, /* result */ Connection, Unit], 
           Unit
         ]
       ] = js.undefined
@@ -182,7 +181,11 @@ object mod {
       * fails to call the done continuation the connection will be lost in limbo.
       */
     var reset: js.UndefOr[
-        js.Function2[/* connection */ Connection, /* done */ js.Function1[/* error */ Error, Unit], Unit]
+        js.Function2[
+          /* connection */ Connection, 
+          /* done */ js.Function1[/* error */ js.Error, Unit], 
+          Unit
+        ]
       ] = js.undefined
     
     /**
@@ -190,7 +193,7 @@ object mod {
       * by pool.query or emitted by an idle connection. If shouldDestroyConnection(error)
       * is truthy the connection will be destroyed, otherwise it will be reset.
       */
-    var shouldDestroyConnection: js.UndefOr[js.Function1[/* error */ Error, Boolean]] = js.undefined
+    var shouldDestroyConnection: js.UndefOr[js.Function1[/* error */ js.Error, Boolean]] = js.undefined
   }
   object PoolConfig {
     
@@ -214,7 +217,7 @@ object mod {
       inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
       inline def setOnConnect(
-        value: (/* connection */ Connection, /* ready */ js.Function2[/* error */ Error, /* result */ Connection, Unit]) => Unit
+        value: (/* connection */ Connection, /* ready */ js.Function2[/* error */ js.Error, /* result */ Connection, Unit]) => Unit
       ): Self = StObject.set(x, "onConnect", js.Any.fromFunction2(value))
       
       inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
@@ -227,11 +230,11 @@ object mod {
       
       inline def setRefreshIdleUndefined: Self = StObject.set(x, "refreshIdle", js.undefined)
       
-      inline def setReset(value: (/* connection */ Connection, /* done */ js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
+      inline def setReset(value: (/* connection */ Connection, /* done */ js.Function1[/* error */ js.Error, Unit]) => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
       
       inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
       
-      inline def setShouldDestroyConnection(value: /* error */ Error => Boolean): Self = StObject.set(x, "shouldDestroyConnection", js.Any.fromFunction1(value))
+      inline def setShouldDestroyConnection(value: /* error */ js.Error => Boolean): Self = StObject.set(x, "shouldDestroyConnection", js.Any.fromFunction1(value))
       
       inline def setShouldDestroyConnectionUndefined: Self = StObject.set(x, "shouldDestroyConnection", js.undefined)
     }
@@ -246,7 +249,7 @@ object mod {
       * as other any-db libraries may rely on modifying the callback property
       * of a Query they did not create.
       */
-    def callback(error: Error, results: ResultSet): Unit = js.native
+    def callback(error: js.Error, results: ResultSet): Unit = js.native
     
     /**
       * The SQL query as a string. If you are using MySQL this will contain
@@ -257,7 +260,7 @@ object mod {
     /**
       * The array of parameter values.
       */
-    var values: js.Array[js.Any] = js.native
+    var values: js.Array[Any] = js.native
   }
   
   @js.native
@@ -277,16 +280,16 @@ object mod {
       * with ConnectionPool and Transaction. See Adapter.createQuery for more details.
       */
     def query(text: String): Query = js.native
-    def query(text: String, params: js.Array[js.Any]): Query = js.native
+    def query(text: String, params: js.Array[Any]): Query = js.native
     def query(
       text: String,
-      params: js.Array[js.Any],
-      callback: js.Function2[/* error */ Error, /* results */ ResultSet, Unit]
+      params: js.Array[Any],
+      callback: js.Function2[/* error */ js.Error, /* results */ ResultSet, Unit]
     ): Query = js.native
     def query(
       text: String,
       params: Unit,
-      callback: js.Function2[/* error */ Error, /* results */ ResultSet, Unit]
+      callback: js.Function2[/* error */ js.Error, /* results */ ResultSet, Unit]
     ): Query = js.native
   }
   
@@ -315,7 +318,7 @@ object mod {
     /**
       * Not supported by all drivers.
       */
-    var lastInsertId: js.UndefOr[js.Any] = js.undefined
+    var lastInsertId: js.UndefOr[Any] = js.undefined
     
     /**
       * Affected rows. Note e.g. for INSERT queries the rows property is not filled even
@@ -326,11 +329,11 @@ object mod {
     /**
       * Result rows
       */
-    var rows: js.Array[js.Any]
+    var rows: js.Array[Any]
   }
   object ResultSet {
     
-    inline def apply(fields: js.Array[Field], rowCount: Double, rows: js.Array[js.Any]): ResultSet = {
+    inline def apply(fields: js.Array[Field], rowCount: Double, rows: js.Array[Any]): ResultSet = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultSet]
     }
@@ -351,17 +354,17 @@ object mod {
       
       inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value*))
       
-      inline def setLastInsertId(value: js.Any): Self = StObject.set(x, "lastInsertId", value.asInstanceOf[js.Any])
+      inline def setLastInsertId(value: Any): Self = StObject.set(x, "lastInsertId", value.asInstanceOf[js.Any])
       
       inline def setLastInsertIdUndefined: Self = StObject.set(x, "lastInsertId", js.undefined)
       
       inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
       
-      inline def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      inline def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: Any*): Self = StObject.set(x, "rows", js.Array(value*))
     }
   }
 }

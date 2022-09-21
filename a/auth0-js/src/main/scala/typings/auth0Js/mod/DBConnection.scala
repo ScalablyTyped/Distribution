@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("auth0-js", "DBConnection")
 @js.native
-class DBConnection protected () extends StObject {
-  def this(request: js.Any, option: js.Any) = this()
+open class DBConnection protected () extends StObject {
+  def this(request: Any, option: Any) = this()
   
   /**
     * Initializes the change password flow
     *
     * @param options: https://auth0.com/docs/api/authentication#!#post--dbconnections-change_password
     */
-  def changePassword(options: ChangePasswordOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
+  def changePassword(options: ChangePasswordOptions, callback: Auth0Callback[Any, Auth0Error]): Unit = js.native
   
   /**
     * Creates a new user in a Auth0 Database connection

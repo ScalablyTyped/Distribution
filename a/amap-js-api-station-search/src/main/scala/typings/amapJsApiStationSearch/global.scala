@@ -14,7 +14,7 @@ object global {
       */
     @JSGlobal("AMap.StationSearch")
     @js.native
-    class StationSearch ()
+    open class StationSearch ()
       extends StObject
          with typings.amapJsApiStationSearch.AMap.StationSearch {
       def this(options: Options) = this()

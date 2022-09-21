@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListAppInstancesRequest extends StObject {
   
   /**
-    * The maximum number of app instances that you want to return.
+    * The maximum number of AppInstances that you want to return.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.chimeMod.MaxResults] = js.undefined
   
   /**
-    * The token passed by previous API requests until you reach the maximum number of app instances.
+    * The token passed by previous API requests until you reach the maximum number of AppInstances.
     */
   var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.undefined
 }

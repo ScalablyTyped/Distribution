@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "FontResources")
 @js.native
-class FontResources protected () extends Resources[Font, FontValue] {
+open class FontResources protected () extends Resources[Font, FontValue] {
+  /**
+    * This is the base class for all font resource dictionaries. Instances can be obtained via the `from`
+    * method, or by subclassing. All members of a `FontResources` (or subclass) instance will be of the
+    * type `Font`.
+    */
   /* protected */ def this(options: ResourcesConstructorOptions[Font, FontValue]) = this()
 }
 /* static members */
@@ -18,11 +23,9 @@ object FontResources {
   
   /**
     * Creates a fonts dictionary from the given raw "data" object. The format must match the [Tabris.js
-    * fonts JSON
-    * schema](https://github.com/eclipsesource/tabris-js/blob/v${moduleversion}/schema/fonts.json). Entries
-    * in the "data" object starting with "$" are considered configuration options and will not become
-    * entries in the final fonts dictionary.
-    * @param data The raw data (plain object) to create the dictionary from. The format must match the [Tabris.js fonts JSON schema](https://github.com/eclipsesource/tabris-js/blob/v${moduleversion}/schema/fonts.json).
+    * fonts JSON schema](${doc:fonts.json}). Entries in the "data" object starting with "$" are considered
+    * configuration options and will not become entries in the final fonts dictionary.
+    * @param data The raw data (plain object) to create the dictionary from. The format must match the [Tabris.js fonts JSON schema](${doc:fonts.json}).
     */
   inline def from[Data /* <: ResourceDataWithConfig[FontResourceValue] */](data: Data): NamedResources[Font, /* keyof Data */ String] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(data.asInstanceOf[js.Any]).asInstanceOf[NamedResources[Font, /* keyof Data */ String]]
   /**
@@ -31,7 +34,7 @@ object FontResources {
     * Entries in the "data" object starting with "$" are considered configuration options and will not
     * become entries in the final fonts dictionary.
     * @param base A plain object or another `FontResources` instance containing values to inherit by the new `FontResources` dictionary.
-    * @param data The raw data (plain object) to create the dictionary from. The format must match the [Tabris.js fonts JSON schema](https://github.com/eclipsesource/tabris-js/blob/v${moduleversion}/schema/fonts.json).
+    * @param data The raw data (plain object) to create the dictionary from. The format must match the [Tabris.js fonts JSON schema](${doc:fonts.json}).
     */
   inline def from[Base /* <: NamedResources[Font, /* keyof Base */ String] */, Data /* <: ResourceDataWithConfig[FontResourceValue] */](base: Base, data: Data): NamedResources[Font, /* keyof Base & Data */ String] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(base.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[NamedResources[Font, /* keyof Base & Data */ String]]
 }

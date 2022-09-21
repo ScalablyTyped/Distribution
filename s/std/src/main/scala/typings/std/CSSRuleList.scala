@@ -9,12 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CSSRuleList
   extends StObject
-     with /* index */ NumberDictionary[CSSRule] {
+     with /* standard dom */
+/* index */ NumberDictionary[CSSRule] {
   
+  /* standard dom */
   def item(index: Double): CSSRule | Null = js.native
   
+  /* standard dom.iterable */
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[CSSRule]] = js.native
   
+  /* standard dom */
   val length: Double = js.native
 }

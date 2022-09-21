@@ -3,7 +3,6 @@ package typings.reactPortal
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.react.mod.Props
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.Element
@@ -16,10 +15,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-portal", "Portal")
   @js.native
-  class Portal protected ()
-    extends Component[PortalProps, ComponentState, js.Any] {
+  open class Portal protected () extends Component[PortalProps, ComponentState, Any] {
     def this(props: PortalProps) = this()
-    def this(props: PortalProps, context: js.Any) = this()
+    def this(props: PortalProps, context: Any) = this()
   }
   @JSImport("react-portal", "Portal")
   @js.native
@@ -28,10 +26,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-portal", "PortalWithState")
   @js.native
-  class PortalWithState protected ()
-    extends Component[PortalWithStateProps, ComponentState, js.Any] {
+  open class PortalWithState protected () extends Component[PortalWithStateProps, ComponentState, Any] {
     def this(props: PortalWithStateProps) = this()
-    def this(props: PortalWithStateProps, context: js.Any) = this()
+    def this(props: PortalWithStateProps, context: Any) = this()
   }
   @JSImport("react-portal", "PortalWithState")
   @js.native
@@ -45,17 +42,14 @@ object mod {
     var isOpen: Boolean = js.native
     
     def openPortal(): Unit = js.native
-    def openPortal(event: js.Any): Unit = js.native
+    def openPortal(event: Any): Unit = js.native
     
     def portal(children: ReactNode): ReactElement = js.native
   }
   
-  trait PortalProps
-    extends StObject
-       with Props[js.Any] {
+  trait PortalProps extends StObject {
     
-    @JSName("children")
-    var children_PortalProps: ReactNode
+    var children: ReactNode
     
     var node: js.UndefOr[Element | Null] = js.undefined
   }
@@ -80,12 +74,9 @@ object mod {
     }
   }
   
-  trait PortalWithStateProps
-    extends StObject
-       with Props[js.Any] {
+  trait PortalWithStateProps extends StObject {
     
-    @JSName("children")
-    def children_MPortalWithStateProps(params: PortalFunctionParams): ReactNode
+    def children(params: PortalFunctionParams): ReactNode
     
     var closeOnEsc: js.UndefOr[Boolean] = js.undefined
     

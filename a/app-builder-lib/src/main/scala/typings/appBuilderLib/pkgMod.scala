@@ -16,17 +16,17 @@ object pkgMod {
   
   @JSImport("app-builder-lib/out/targets/pkg", "PkgTarget")
   @js.native
-  class PkgTarget protected () extends Target {
+  open class PkgTarget protected () extends Target {
     def this(packager: default, outDir: String) = this()
     
-    /* private */ var buildComponentPackage: js.Any = js.native
+    /* private */ var buildComponentPackage: Any = js.native
     
-    /* private */ var customizeDistributionConfiguration: js.Any = js.native
+    /* private */ var customizeDistributionConfiguration: Any = js.native
     
     @JSName("options")
     val options_PkgTarget: PkgOptions = js.native
     
-    /* private */ val packager: js.Any = js.native
+    /* private */ val packager: Any = js.native
   }
   
   inline def prepareProductBuildArgs(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareProductBuildArgs")().asInstanceOf[js.Array[String]]

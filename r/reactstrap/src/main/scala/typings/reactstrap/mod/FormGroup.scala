@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "FormGroup")
+@JSImport("reactstrap", "FormGroup")
 @js.native
-class FormGroup () extends default
+open class FormGroup () extends default

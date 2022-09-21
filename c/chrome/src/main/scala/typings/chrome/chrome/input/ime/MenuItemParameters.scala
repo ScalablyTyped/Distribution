@@ -23,6 +23,6 @@ object MenuItemParameters {
     
     inline def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

@@ -41,8 +41,8 @@ trait IgTreeGridHidingMethods extends StObject {
     * @param columns An array of identifiers for the columns. If a number is provided it will be used as a column index else if a strings is provided it will be used as a column key.
     * @param callback Specifies a custom function to be called when all columns are hidden(optional)
     */
-  def hideMultiColumns(columns: js.Array[js.Any]): Unit = js.native
-  def hideMultiColumns(columns: js.Array[js.Any], callback: js.Function): Unit = js.native
+  def hideMultiColumns(columns: js.Array[Any]): Unit = js.native
+  def hideMultiColumns(columns: js.Array[Any], callback: js.Function): Unit = js.native
   
   /**
     * Gets whether the reset button in the column chooser dialog is to be rendered or not.
@@ -86,6 +86,6 @@ trait IgTreeGridHidingMethods extends StObject {
     * @param columns An array of identifiers for the columns. If a number is provided it will be used as a column index else if a strings is provided it will be used as a column key.
     * @param callback Specifies a custom function to be called when all columns are shown(optional)
     */
-  def showMultiColumns(columns: js.Array[js.Any]): Unit = js.native
-  def showMultiColumns(columns: js.Array[js.Any], callback: js.Function): Unit = js.native
+  def showMultiColumns(columns: js.Array[Any]): Unit = js.native
+  def showMultiColumns(columns: js.Array[Any], callback: js.Function): Unit = js.native
 }

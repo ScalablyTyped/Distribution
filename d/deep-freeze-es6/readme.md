@@ -10,10 +10,10 @@ deep freeze, works with Map and Set
 | ------------------ | :-------------: |
 | Full name          | deep-freeze-es6 |
 | Keywords           | freeze, deep-freeze, set, map |
-| # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 32758 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 20715.333333333332 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/christophehurpeau/deep-freeze-es6#readme)

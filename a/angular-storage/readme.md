@@ -11,9 +11,9 @@ A Storage done right for AngularJS.
 | Full name          | angular-storage |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 168897 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 10345.0 |
+| # stars            | 649.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/angular-storage#readme)

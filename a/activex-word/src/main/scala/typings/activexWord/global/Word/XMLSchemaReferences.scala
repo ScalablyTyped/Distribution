@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.XMLSchemaReferences")
 @js.native
-/* private */ class XMLSchemaReferences ()
+/* private */ open class XMLSchemaReferences ()
   extends StObject
      with typings.activexWord.Word.XMLSchemaReferences

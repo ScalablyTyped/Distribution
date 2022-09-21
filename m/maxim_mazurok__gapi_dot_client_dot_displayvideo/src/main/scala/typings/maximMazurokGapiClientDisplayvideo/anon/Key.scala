@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.AssignedTargetingOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ trait Key extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** Output only. The unique ID of the advertiser the campaign belongs to. */
+  /** Required. The ID of the advertiser the line item belongs to. */
   var advertiserId: String
   
   /** Data format for response. */
@@ -22,14 +23,14 @@ trait Key extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Output only. The unique ID of the campaign. Assigned by the system. */
-  var campaignId: String
-  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
+  
+  /** Required. The ID of the line item the assigned targeting option will belong to. */
+  var lineItemId: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
@@ -40,8 +41,11 @@ trait Key extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Required. The mask to control which fields to update. */
-  var updateMask: js.UndefOr[String] = js.undefined
+  /** Request body */
+  var resource: AssignedTargetingOption
+  
+  /** Required. Identifies the type of this assigned targeting option. */
+  var targetingType: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -51,8 +55,8 @@ trait Key extends StObject {
 }
 object Key {
   
-  inline def apply(advertiserId: String, campaignId: String): Key = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], campaignId = campaignId.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String, lineItemId: String, resource: AssignedTargetingOption, targetingType: String): Key = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], lineItemId = lineItemId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], targetingType = targetingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
   
@@ -76,8 +80,6 @@ object Key {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
-    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -85,6 +87,8 @@ object Key {
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
@@ -98,9 +102,9 @@ object Key {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setResource(value: AssignedTargetingOption): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setTargetingType(value: String): Self = StObject.set(x, "targetingType", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait CustomXMLPrefixMappings extends StObject {
   
   def AddNamespace(Prefix: String, NamespaceURI: String): Unit = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -25,5 +25,5 @@ trait CustomXMLPrefixMappings extends StObject {
   
   def LookupPrefix(NamespaceURI: String): String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

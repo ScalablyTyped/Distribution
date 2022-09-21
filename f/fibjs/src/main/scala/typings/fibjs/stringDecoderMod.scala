@@ -13,7 +13,7 @@ object stringDecoderMod {
   
   @JSImport("string_decoder", "StringDecoder")
   @js.native
-  class StringDecoder ()
+  open class StringDecoder ()
     extends StObject
        with ClassStringDecoder
 }

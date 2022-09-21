@@ -10,10 +10,10 @@ Mathematical expression evaluator
 | ------------------ | :-------------: |
 | Full name          | expr-eval |
 | Keywords           | expression, math, evaluate, eval, function, parser |
-| # releases         | 5 |
-| # dependents       | 61 |
-| # downloads        | 925852 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 178424.0 |
+| # stars            | 939.0 |
 
 ## Links
 - [Homepage](https://github.com/silentmatt/expr-eval#readme)

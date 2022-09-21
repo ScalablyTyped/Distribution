@@ -10,10 +10,10 @@ Virtual Keyboard using jQuery UI
 | ------------------ | :-------------: |
 | Full name          | virtual-keyboard |
 | Keywords           | customizable, keyboard, ui, accessibility, osk, jquery-plugin |
-| # releases         | 7 |
-| # dependents       | 10 |
-| # downloads        | 80100 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 9977.333333333334 |
+| # stars            | 1683.0 |
 
 ## Links
 - [Homepage](https://github.com/Mottie/Keyboard)

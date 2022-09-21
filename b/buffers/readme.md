@@ -10,10 +10,10 @@ Treat a collection of Buffers as a single contiguous partially mutable Buffer.
 | ------------------ | :-------------: |
 | Full name          | buffers |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 163 |
-| # downloads        | 64357548 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1024502666666666E7 |
+| # stars            | 96.0 |
 
 ## Links
 - [Homepage](https://github.com/substack/node-buffers#readme)

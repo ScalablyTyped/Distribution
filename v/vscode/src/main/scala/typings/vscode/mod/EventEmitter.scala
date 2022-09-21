@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "EventEmitter")
 @js.native
-class EventEmitter[T] () extends StObject {
+open class EventEmitter[T] () extends StObject {
   
   /**
     * Dispose this object and free resources.
@@ -16,10 +16,10 @@ class EventEmitter[T] () extends StObject {
   /**
     * The event listeners can subscribe to.
     */
-  def event(listener: js.Function1[/* e */ T, js.Any]): Disposable = js.native
-  def event(listener: js.Function1[/* e */ T, js.Any], thisArgs: js.Any): Disposable = js.native
-  def event(listener: js.Function1[/* e */ T, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-  def event(listener: js.Function1[/* e */ T, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def event(listener: js.Function1[/* e */ T, Any]): Disposable = js.native
+  def event(listener: js.Function1[/* e */ T, Any], thisArgs: Any): Disposable = js.native
+  def event(listener: js.Function1[/* e */ T, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def event(listener: js.Function1[/* e */ T, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   /**
     * The event listeners can subscribe to.
     */
@@ -27,7 +27,7 @@ class EventEmitter[T] () extends StObject {
   var event_Original: Event[T] = js.native
   
   /**
-    * Notify all subscribers of the [event](#EventEmitter.event). Failure
+    * Notify all subscribers of the {@link EventEmitter.event event}. Failure
     * of one or more listener will not fail this function call.
     *
     * @param data The event object.

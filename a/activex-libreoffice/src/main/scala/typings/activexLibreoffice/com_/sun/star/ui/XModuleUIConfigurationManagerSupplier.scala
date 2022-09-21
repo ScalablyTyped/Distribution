@@ -26,7 +26,7 @@ object XModuleUIConfigurationManagerSupplier {
   inline def apply(
     acquire: () => Unit,
     getUIConfigurationManager: String => XUIConfigurationManager,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XModuleUIConfigurationManagerSupplier = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getUIConfigurationManager = js.Any.fromFunction1(getUIConfigurationManager), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

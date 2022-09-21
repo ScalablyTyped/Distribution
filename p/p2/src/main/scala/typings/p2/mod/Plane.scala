@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "Plane")
 @js.native
-class Plane () extends Shape {
+open class Plane () extends Shape {
   def this(options: SharedShapeOptions) = this()
 }

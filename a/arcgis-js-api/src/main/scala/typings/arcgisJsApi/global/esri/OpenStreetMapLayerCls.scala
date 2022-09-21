@@ -30,6 +30,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.reflect
 import typings.arcgisJsApi.arcgisJsApiStrings.saturation
 import typings.arcgisJsApi.arcgisJsApiStrings.screen
 import typings.arcgisJsApi.arcgisJsApiStrings.xor
+import typings.arcgisJsApi.esri.Effect
 import typings.arcgisJsApi.esri.OpenStreetMapLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,7 +39,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.OpenStreetMapLayer")
 @js.native
-class OpenStreetMapLayerCls ()
+/**
+  * Allows you to use [basemaps](http://wiki.openstreetmap.org/wiki/List_of_OSM-based_services) from [OpenStreetMap](http://www.openstreetmap.org/).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OpenStreetMapLayer.html)
+  */
+open class OpenStreetMapLayerCls ()
   extends StObject
      with typings.arcgisJsApi.esri.OpenStreetMapLayer {
   def this(properties: OpenStreetMapLayerProperties) = this()
@@ -46,13 +52,27 @@ class OpenStreetMapLayerCls ()
   /**
     * Blend modes are used to blend layers together to create an interesting effect in a layer, or even to produce what seems like a new layer.
     *
+    * @default normal
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#blendMode)
     */
   /* CompleteClass */
   var blendMode: average | `color-burn` | `color-dodge` | typings.arcgisJsApi.arcgisJsApiStrings.color | darken | `destination-atop` | `destination-in` | `destination-out` | `destination-over` | difference | exclusion | `hard-light` | hue | invert | lighten | lighter | luminosity | minus | multiply | normal | overlay | plus | reflect | saturation | screen | `soft-light` | `source-atop` | `source-in` | `source-out` | `vivid-light` | xor = js.native
   
   /**
+    * Effect provides various filter functions that can be performed on the layer to achieve different visual effects similar to how image filters work.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-BlendLayer.html#effect)
+    */
+  /* CompleteClass */
+  var effect: Effect = js.native
+  
+  /**
     * The maximum scale (most zoomed in) at which the layer is visible in the view.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
     */
@@ -61,6 +81,8 @@ class OpenStreetMapLayerCls ()
   
   /**
     * The minimum scale (most zoomed out) at which the layer is visible in the view.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
     */
@@ -85,6 +107,8 @@ class OpenStreetMapLayerCls ()
   
   /**
     * Refresh interval of the layer in minutes.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
     */

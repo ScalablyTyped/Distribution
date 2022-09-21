@@ -11,9 +11,9 @@ standalone stripe checkout handler
 | Full name          | stripe-checkout |
 | Keywords           | stripe |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 5197 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 937.0 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/MatthewMueller/stripe-checkout#readme)

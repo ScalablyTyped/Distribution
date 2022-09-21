@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.testInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,7 +35,7 @@ trait TestConfiguration extends StObject {
   /**
     * Last Updated Data
     */
-  var lastUpdatedDate: Date
+  var lastUpdatedDate: js.Date
   
   /**
     * Name of the configuration
@@ -76,7 +75,7 @@ object TestConfiguration {
     id: Double,
     isDefault: Boolean,
     lastUpdatedBy: IdentityRef,
-    lastUpdatedDate: Date,
+    lastUpdatedDate: js.Date,
     name: String,
     project: ShallowReference,
     revision: Double,
@@ -100,7 +99,7 @@ object TestConfiguration {
     
     inline def setLastUpdatedBy(value: IdentityRef): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -114,6 +113,6 @@ object TestConfiguration {
     
     inline def setValues(value: js.Array[NameValuePair]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: NameValuePair*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: NameValuePair*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

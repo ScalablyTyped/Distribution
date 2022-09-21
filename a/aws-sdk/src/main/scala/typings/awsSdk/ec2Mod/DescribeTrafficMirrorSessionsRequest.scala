@@ -48,7 +48,7 @@ object DescribeTrafficMirrorSessionsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: TrafficMirroringMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -62,6 +62,6 @@ object DescribeTrafficMirrorSessionsRequest {
     
     inline def setTrafficMirrorSessionIdsUndefined: Self = StObject.set(x, "TrafficMirrorSessionIds", js.undefined)
     
-    inline def setTrafficMirrorSessionIdsVarargs(value: TrafficMirrorSessionId*): Self = StObject.set(x, "TrafficMirrorSessionIds", js.Array(value :_*))
+    inline def setTrafficMirrorSessionIdsVarargs(value: TrafficMirrorSessionId*): Self = StObject.set(x, "TrafficMirrorSessionIds", js.Array(value*))
   }
 }

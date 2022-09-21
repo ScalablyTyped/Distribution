@@ -1,6 +1,5 @@
 package typings.ariClient.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ trait TextMessageReceived
 }
 object TextMessageReceived {
   
-  inline def apply(application: String, message: TextMessage, timestamp: Date, `type`: String): TextMessageReceived = {
+  inline def apply(application: String, message: TextMessage, timestamp: js.Date, `type`: String): TextMessageReceived = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextMessageReceived]

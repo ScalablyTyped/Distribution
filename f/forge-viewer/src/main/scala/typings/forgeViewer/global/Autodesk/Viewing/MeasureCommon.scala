@@ -1,8 +1,8 @@
 package typings.forgeViewer.global.Autodesk.Viewing
 
-import typings.three.mod.Geometry
-import typings.three.mod.Matrix4
-import typings.three.mod.Vector3
+import typings.forgeViewer.THREE.Geometry
+import typings.forgeViewer.THREE.Matrix4
+import typings.forgeViewer.THREE.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +13,31 @@ object MeasureCommon {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSGlobal("Autodesk.Viewing.MeasureCommon.MeasurementTypes")
+  @js.native
+  object MeasurementTypes extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.forgeViewer.Autodesk.Viewing.MeasureCommon.MeasurementTypes & Double] = js.native
+    
+    /* 4 */ val CALIBRATION: typings.forgeViewer.Autodesk.Viewing.MeasureCommon.MeasurementTypes.CALIBRATION & Double = js.native
+    
+    /* 2 */ val MEASUREMENT_ANGLE: typings.forgeViewer.Autodesk.Viewing.MeasureCommon.MeasurementTypes.MEASUREMENT_ANGLE & Double = js.native
+    
+    /* 7 */ val MEASUREMENT_ARC: typings.forgeViewer.Autodesk.Viewing.MeasureCommon.MeasurementTypes.MEASUREMENT_ARC & Double = js.native
+    
+    /* 3 */ val MEASUREMENT_AREA: typings.forgeViewer.Autodesk.Viewing.MeasureCommon.MeasurementTypes.MEASUREMENT_AREA & Double = js.native
+    
+    /* 5 */ val MEASUREMENT_CALLOUT: typings.forgeViewer.Autodesk.Viewing.MeasureCommon.MeasurementTypes.MEASUREMENT_CALLOUT & Double = js.native
+    
+    /* 1 */ val MEASUREMENT_DISTANCE: typings.forgeViewer.Autodesk.Viewing.MeasureCommon.MeasurementTypes.MEASUREMENT_DISTANCE & Double = js.native
+    
+    /* 6 */ val MEASUREMENT_LOCATION: typings.forgeViewer.Autodesk.Viewing.MeasureCommon.MeasurementTypes.MEASUREMENT_LOCATION & Double = js.native
+  }
+  
   @JSGlobal("Autodesk.Viewing.MeasureCommon.SnapResult")
   @js.native
-  class SnapResult ()
+  open class SnapResult ()
     extends StObject
        with typings.forgeViewer.Autodesk.Viewing.MeasureCommon.SnapResult {
     

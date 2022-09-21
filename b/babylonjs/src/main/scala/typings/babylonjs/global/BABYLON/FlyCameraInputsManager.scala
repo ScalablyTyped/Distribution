@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.FlyCameraInputsManager")
 @js.native
-class FlyCameraInputsManager protected ()
+open class FlyCameraInputsManager protected ()
   extends StObject
      with typings.babylonjs.BABYLON.FlyCameraInputsManager {
   /**

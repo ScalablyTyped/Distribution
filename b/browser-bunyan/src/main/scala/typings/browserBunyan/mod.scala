@@ -9,7 +9,7 @@ import typings.browserBunyan.mod.BrowserBunyan.ConsoleFormattedStreamOptions
 import typings.bunyan.mod.LoggerOptions
 import typings.bunyan.mod.RingBufferOptions
 import typings.bunyan.mod.RotatingFileStreamOptions
-import typings.node.NodeJS.WritableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +19,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("browser-bunyan", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends typings.bunyan.mod.^ {
     def this(options: LoggerOptions) = this()
   }
@@ -30,25 +30,25 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("browser-bunyan", "ConsoleFormattedStream")
   @js.native
-  class ConsoleFormattedStream ()
+  open class ConsoleFormattedStream ()
     extends StObject
-       with WritableStream {
+       with WritableStream[Any] {
     def this(options: ConsoleFormattedStreamOptions) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("browser-bunyan", "ConsoleRawStream")
   @js.native
-  class ConsoleRawStream ()
+  open class ConsoleRawStream ()
     extends StObject
-       with WritableStream {
+       with WritableStream[Any] {
     def this(options: ConsoleFormattedStreamOptions) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("browser-bunyan", "RingBuffer")
   @js.native
-  class RingBuffer protected ()
+  open class RingBuffer protected ()
     extends typings.bunyan.mod.RingBuffer {
     def this(options: RingBufferOptions) = this()
   }
@@ -56,14 +56,14 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("browser-bunyan", "RotatingFileStream")
   @js.native
-  class RotatingFileStream protected ()
+  open class RotatingFileStream protected ()
     extends typings.bunyan.mod.RotatingFileStream {
     def this(options: RotatingFileStreamOptions) = this()
   }
   
   object BrowserBunyan {
     
-    type ConsoleFormattedStream = Instantiable1[/* options */ js.UndefOr[ConsoleFormattedStreamOptions], WritableStream]
+    type ConsoleFormattedStream = Instantiable1[/* options */ js.UndefOr[ConsoleFormattedStreamOptions], WritableStream[Any]]
     
     trait ConsoleFormattedStreamLevelStyle extends StObject {
       
@@ -157,7 +157,7 @@ object mod extends Shortcut {
       }
     }
     
-    type ConsoleRawStream = Instantiable1[/* options */ js.UndefOr[ConsoleFormattedStreamOptions], WritableStream]
+    type ConsoleRawStream = Instantiable1[/* options */ js.UndefOr[ConsoleFormattedStreamOptions], WritableStream[Any]]
   }
   type BrowserBunyan = (Instantiable1[/* options */ LoggerOptions, typings.bunyan.mod.^]) & Typeofbunyan & typings.browserBunyan.anon.ConsoleFormattedStream
   

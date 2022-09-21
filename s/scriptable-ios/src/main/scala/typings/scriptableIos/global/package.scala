@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * _Converts base64 string to ascii._
   */
-inline def atob(str: java.lang.String): java.lang.String = js.Dynamic.global.applyDynamic("atob")(str.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def atob(str: String): String = js.Dynamic.global.applyDynamic("atob")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 
 /**
   * _Converts ascii string to base64._
   */
-inline def btoa(str: java.lang.String): java.lang.String = js.Dynamic.global.applyDynamic("btoa")(str.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def btoa(str: String): String = js.Dynamic.global.applyDynamic("btoa")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 
 /**
   * _Imports module with specified name._
@@ -53,19 +53,19 @@ inline def btoa(str: java.lang.String): java.lang.String = js.Dynamic.global.app
   * For more information about modules, refer to the documentation on the `module` variable.
   * @see https://docs.scriptable.app/importmodule
   */
-inline def importModule(path: java.lang.String): js.Any = js.Dynamic.global.applyDynamic("importModule")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def importModule(path: String): Any = js.Dynamic.global.applyDynamic("importModule")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
 
 /**
   * _Logs a message to the console._
   */
-inline def log(message: js.Any): scala.Unit = js.Dynamic.global.applyDynamic("log")(message.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def log(message: Any): Unit = js.Dynamic.global.applyDynamic("log")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 /**
   * _Logs an error message to the console._
   */
-inline def logError(message: js.Any): scala.Unit = js.Dynamic.global.applyDynamic("logError")(message.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def logError(message: Any): Unit = js.Dynamic.global.applyDynamic("logError")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 /**
   * _Logs a warning message to the console._
   */
-inline def logWarning(message: js.Any): scala.Unit = js.Dynamic.global.applyDynamic("logWarning")(message.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def logWarning(message: Any): Unit = js.Dynamic.global.applyDynamic("logWarning")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]

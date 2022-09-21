@@ -8,8 +8,10 @@ trait HashChangeEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var newURL: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var oldURL: js.UndefOr[java.lang.String] = js.undefined
 }
 object HashChangeEventInit {

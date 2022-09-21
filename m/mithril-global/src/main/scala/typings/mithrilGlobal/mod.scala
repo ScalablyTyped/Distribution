@@ -2,6 +2,7 @@ package typings.mithrilGlobal
 
 import org.scalablytyped.runtime.Shortcut
 import typings.mithrilGlobal.anon.FnCall
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,19 +29,19 @@ object mod extends Shortcut {
   
   type ClassComponent[A] = typings.mithril.mod.ClassComponent[A]
   
-  type Comp[A, S /* <: typings.mithril.mod.Lifecycle[A, S] */] = typings.mithril.mod.Comp[A, S]
+  type CommonAttributes[A, S] = typings.mithril.mod.CommonAttributes[A, S]
+  
+  type Comp[A, S /* <: Partial[typings.mithril.mod.Component[A, S]] */] = typings.mithril.mod.Comp[A, S]
   
   type Component[A, S] = typings.mithril.mod.Component[A, S]
   
-  type ComponentTypes[A, S /* <: typings.mithril.mod.Lifecycle[A, S] */] = typings.mithril.mod.ComponentTypes[A, S]
+  type ComponentTypes[A, S /* <: Partial[typings.mithril.mod.Component[A, S]] */] = typings.mithril.mod.ComponentTypes[A, S]
   
   type FactoryComponent[A] = typings.mithril.mod.FactoryComponent[A]
   
   type Hyperscript = typings.mithril.mod.Hyperscript
   
   type JsonpOptions = typings.mithril.mod.JsonpOptions
-  
-  type Lifecycle[A, S] = typings.mithril.mod.Lifecycle[A, S]
   
   type RequestOptions[T] = typings.mithril.mod.RequestOptions[T]
   
@@ -65,9 +66,9 @@ object mod extends Shortcut {
   
   type Stream[T] = typings.mithril.streamMod.Stream[T]
   
-  type Vnode[A, S /* <: typings.mithril.mod.Lifecycle[A, S] */] = typings.mithril.mod.Vnode[A, S]
+  type Vnode[A, S] = typings.mithril.mod.Vnode[A, S]
   
-  type VnodeDOM[A, S /* <: typings.mithril.mod.Lifecycle[A, S] */] = typings.mithril.mod.VnodeDOM[A, S]
+  type VnodeDOM[A, S] = typings.mithril.mod.VnodeDOM[A, S]
   
   type _To = Static
   

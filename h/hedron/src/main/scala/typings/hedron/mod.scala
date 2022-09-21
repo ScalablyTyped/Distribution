@@ -45,38 +45,38 @@ object mod {
   
   @JSImport("hedron", "Bounds")
   @js.native
-  class Bounds protected ()
-    extends Component[BoundsProps & HTMLProps[HTMLElement], js.Object, js.Any] {
+  open class Bounds protected ()
+    extends Component[BoundsProps & HTMLProps[HTMLElement], js.Object, Any] {
     def this(props: BoundsProps & HTMLProps[HTMLElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BoundsProps & HTMLProps[HTMLElement], context: js.Any) = this()
+    def this(props: BoundsProps & HTMLProps[HTMLElement], context: Any) = this()
   }
   
   @JSImport("hedron", "Box")
   @js.native
-  class Box protected ()
-    extends Component[BoxProps & HTMLProps[HTMLElement], js.Object, js.Any] {
+  open class Box protected ()
+    extends Component[BoxProps & HTMLProps[HTMLElement], js.Object, Any] {
     def this(props: BoxProps & HTMLProps[HTMLElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BoxProps & HTMLProps[HTMLElement], context: js.Any) = this()
+    def this(props: BoxProps & HTMLProps[HTMLElement], context: Any) = this()
   }
   
   @JSImport("hedron", "Provider")
   @js.native
-  class Provider protected ()
-    extends Component[ProviderProps & HTMLProps[HTMLElement], js.Object, js.Any] {
+  open class Provider protected ()
+    extends Component[ProviderProps & HTMLProps[HTMLElement], js.Object, Any] {
     def this(props: ProviderProps & HTMLProps[HTMLElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ProviderProps & HTMLProps[HTMLElement], context: js.Any) = this()
+    def this(props: ProviderProps & HTMLProps[HTMLElement], context: Any) = this()
   }
   
   trait BoundsProps
@@ -86,10 +86,10 @@ object mod {
     *  Allow for customer props due to ability to add
     * custom breakpoints
     */
-  /* x */ StringDictionary[js.Any] {
+  /* x */ StringDictionary[Any] {
     
     /**
-      * Draws all child columns with 'bounding boxes' for easy
+      * Draws all child columns with "bounding boxes" for easy
       * visualization of the grid. This enables debug mode for all the
       * children of this component
       * @default false
@@ -115,11 +115,6 @@ object mod {
       * Alignment of children along the vertical axis
       */
     var valign: js.UndefOr[top | center | bottom] = js.undefined
-    
-    /**
-      * Sets whether the children should wrap when there's no more room on the primary axis
-      */
-    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object BoundsProps {
     
@@ -149,10 +144,6 @@ object mod {
       inline def setValign(value: top | center | bottom): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
       
       inline def setValignUndefined: Self = StObject.set(x, "valign", js.undefined)
-      
-      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
-      
-      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   
@@ -163,10 +154,10 @@ object mod {
     *  Allow for customer props due to ability to add
     * custom breakpoints
     */
-  /* x */ StringDictionary[js.Any] {
+  /* x */ StringDictionary[Any] {
     
     /**
-      * Draws all child columns with 'bounding boxes' for easy
+      * Draws all child columns with "bounding boxes" for easy
       * visualization of the grid. This enables debug mode for all the
       * children of this component
       * @default false
@@ -259,7 +250,7 @@ object mod {
     var breakpoints: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
-      * Draws all child columns with 'bounding boxes' for easy
+      * Draws all child columns with "bounding boxes" for easy
       * visualization of the grid. This enables debug mode for all the
       * children of this component
       * @default false

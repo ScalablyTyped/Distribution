@@ -24,13 +24,13 @@ object frameworkMod {
     
     var asarIntegrity: AsarIntegrity | Null
     
-    var packager: PlatformPackager[js.Any]
+    var packager: PlatformPackager[Any]
     
     var platformName: String
   }
   object BeforeCopyExtraFilesOptions {
     
-    inline def apply(appOutDir: String, packager: PlatformPackager[js.Any], platformName: String): BeforeCopyExtraFilesOptions = {
+    inline def apply(appOutDir: String, packager: PlatformPackager[Any], platformName: String): BeforeCopyExtraFilesOptions = {
       val __obj = js.Dynamic.literal(appOutDir = appOutDir.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], platformName = platformName.asInstanceOf[js.Any], asarIntegrity = null)
       __obj.asInstanceOf[BeforeCopyExtraFilesOptions]
     }
@@ -43,7 +43,7 @@ object frameworkMod {
       
       inline def setAsarIntegrityNull: Self = StObject.set(x, "asarIntegrity", null)
       
-      inline def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
+      inline def setPackager(value: PlatformPackager[Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
       
       inline def setPlatformName(value: String): Self = StObject.set(x, "platformName", value.asInstanceOf[js.Any])
     }
@@ -51,9 +51,9 @@ object frameworkMod {
   
   trait Framework extends StObject {
     
-    var afterPack: js.UndefOr[js.Function1[/* context */ AfterPackContext, js.Promise[js.Any]]] = js.undefined
+    var afterPack: js.UndefOr[js.Function1[/* context */ AfterPackContext, js.Promise[Any]]] = js.undefined
     
-    var beforeCopyExtraFiles: js.UndefOr[js.Function1[/* options */ BeforeCopyExtraFilesOptions, js.Promise[js.Any]]] = js.undefined
+    var beforeCopyExtraFiles: js.UndefOr[js.Function1[/* options */ BeforeCopyExtraFilesOptions, js.Promise[Any]]] = js.undefined
     
     var createTransformer: js.UndefOr[js.Function0[FileTransformer | Null]] = js.undefined
     
@@ -75,7 +75,7 @@ object frameworkMod {
     
     val name: String
     
-    def prepareApplicationStageDirectory(options: PrepareApplicationStageDirectoryOptions): js.Promise[js.Any]
+    def prepareApplicationStageDirectory(options: PrepareApplicationStageDirectoryOptions): js.Promise[Any]
     
     val version: String
   }
@@ -88,7 +88,7 @@ object frameworkMod {
       isNpmRebuildRequired: Boolean,
       macOsDefaultTargets: js.Array[String],
       name: String,
-      prepareApplicationStageDirectory: PrepareApplicationStageDirectoryOptions => js.Promise[js.Any],
+      prepareApplicationStageDirectory: PrepareApplicationStageDirectoryOptions => js.Promise[Any],
       version: String
     ): Framework = {
       val __obj = js.Dynamic.literal(defaultAppIdPrefix = defaultAppIdPrefix.asInstanceOf[js.Any], distMacOsAppName = distMacOsAppName.asInstanceOf[js.Any], isCopyElevateHelper = isCopyElevateHelper.asInstanceOf[js.Any], isNpmRebuildRequired = isNpmRebuildRequired.asInstanceOf[js.Any], macOsDefaultTargets = macOsDefaultTargets.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prepareApplicationStageDirectory = js.Any.fromFunction1(prepareApplicationStageDirectory), version = version.asInstanceOf[js.Any])
@@ -97,11 +97,11 @@ object frameworkMod {
     
     extension [Self <: Framework](x: Self) {
       
-      inline def setAfterPack(value: /* context */ AfterPackContext => js.Promise[js.Any]): Self = StObject.set(x, "afterPack", js.Any.fromFunction1(value))
+      inline def setAfterPack(value: /* context */ AfterPackContext => js.Promise[Any]): Self = StObject.set(x, "afterPack", js.Any.fromFunction1(value))
       
       inline def setAfterPackUndefined: Self = StObject.set(x, "afterPack", js.undefined)
       
-      inline def setBeforeCopyExtraFiles(value: /* options */ BeforeCopyExtraFilesOptions => js.Promise[js.Any]): Self = StObject.set(x, "beforeCopyExtraFiles", js.Any.fromFunction1(value))
+      inline def setBeforeCopyExtraFiles(value: /* options */ BeforeCopyExtraFilesOptions => js.Promise[Any]): Self = StObject.set(x, "beforeCopyExtraFiles", js.Any.fromFunction1(value))
       
       inline def setBeforeCopyExtraFilesUndefined: Self = StObject.set(x, "beforeCopyExtraFiles", js.undefined)
       
@@ -131,11 +131,11 @@ object frameworkMod {
       
       inline def setMacOsDefaultTargets(value: js.Array[String]): Self = StObject.set(x, "macOsDefaultTargets", value.asInstanceOf[js.Any])
       
-      inline def setMacOsDefaultTargetsVarargs(value: String*): Self = StObject.set(x, "macOsDefaultTargets", js.Array(value :_*))
+      inline def setMacOsDefaultTargetsVarargs(value: String*): Self = StObject.set(x, "macOsDefaultTargets", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setPrepareApplicationStageDirectory(value: PrepareApplicationStageDirectoryOptions => js.Promise[js.Any]): Self = StObject.set(x, "prepareApplicationStageDirectory", js.Any.fromFunction1(value))
+      inline def setPrepareApplicationStageDirectory(value: PrepareApplicationStageDirectoryOptions => js.Promise[Any]): Self = StObject.set(x, "prepareApplicationStageDirectory", js.Any.fromFunction1(value))
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
@@ -150,7 +150,7 @@ object frameworkMod {
     
     val arch: String
     
-    val packager: PlatformPackager[js.Any]
+    val packager: PlatformPackager[Any]
     
     val platformName: ElectronPlatformName
     
@@ -161,7 +161,7 @@ object frameworkMod {
     inline def apply(
       appOutDir: String,
       arch: String,
-      packager: PlatformPackager[js.Any],
+      packager: PlatformPackager[Any],
       platformName: ElectronPlatformName,
       version: String
     ): PrepareApplicationStageDirectoryOptions = {
@@ -175,7 +175,7 @@ object frameworkMod {
       
       inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
-      inline def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
+      inline def setPackager(value: PlatformPackager[Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
       
       inline def setPlatformName(value: ElectronPlatformName): Self = StObject.set(x, "platformName", value.asInstanceOf[js.Any])
       

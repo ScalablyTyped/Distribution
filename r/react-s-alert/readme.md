@@ -10,15 +10,12 @@ Alerts / Notifications for React with rich configuration options
 | ------------------ | :-------------: |
 | Full name          | react-s-alert |
 | Keywords           | react-component, react, alert, alerts, react-alert, react-alerts, notifications, react-notifications, errors, react-errors, toastr |
-| # releases         | 1 |
-| # dependents       | 55 |
-| # downloads        | 2096966 |
-| # stars            | 10 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 159264.66666666666 |
+| # stars            | 657.0 |
 
 ## Links
-- [Homepage](https://github.com/juliancwirko/react-s-alert)
-- [Bugs](https://github.com/juliancwirko/react-s-alert/issues)
-- [Repository](https://github.com/juliancwirko/react-s-alert)
 - [Npm](https://www.npmjs.com/package/react-s-alert)
     
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/core", "UrlRules")
 @js.native
-class UrlRules protected ()
+open class UrlRules protected ()
   extends typings.uirouterCore.libUrlMod.UrlRules {
   /** @internal */
   def this(/** @internal */ router: typings.uirouterCore.routerMod.UIRouter) = this()

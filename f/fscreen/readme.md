@@ -10,10 +10,10 @@ Vendor agnostic access to the fullscreen spec api
 | ------------------ | :-------------: |
 | Full name          | fscreen |
 | Keywords           | fullscreen, browser |
-| # releases         | 1 |
-| # dependents       | 36 |
-| # downloads        | 3023544 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 503594.3333333333 |
+| # stars            | 377.0 |
 
 ## Links
 - [Homepage](https://github.com/rafgraph/fscreen#readme)

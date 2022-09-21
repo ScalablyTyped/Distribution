@@ -10,13 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.estree.mod.ExportDefaultDeclaration
   - typings.estree.mod.ExportAllDeclaration
 */
-trait ModuleDeclaration
-  extends StObject
-     with Node
+trait ModuleDeclaration extends StObject
 object ModuleDeclaration {
   
   inline def ExportAllDeclaration(source: Literal): typings.estree.mod.ExportAllDeclaration = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], exported = null)
     __obj.updateDynamic("type")("ExportAllDeclaration")
     __obj.asInstanceOf[typings.estree.mod.ExportAllDeclaration]
   }

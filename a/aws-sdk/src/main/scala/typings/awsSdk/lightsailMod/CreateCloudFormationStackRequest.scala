@@ -22,6 +22,6 @@ object CreateCloudFormationStackRequest {
     
     inline def setInstances(value: InstanceEntryList): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    inline def setInstancesVarargs(value: InstanceEntry*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: InstanceEntry*): Self = StObject.set(x, "instances", js.Array(value*))
   }
 }

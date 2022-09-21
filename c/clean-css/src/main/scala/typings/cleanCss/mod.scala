@@ -27,8 +27,10 @@ import typings.cleanCss.cleanCssStrings.ie8
 import typings.cleanCss.cleanCssStrings.ie9
 import typings.cleanCss.cleanCssStrings.space
 import typings.cleanCss.cleanCssStrings.tab
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.RequestOptions
+import typings.sourceMap.mod.RawSourceMap
+import typings.sourceMap.mod.SourceMapGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +40,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("clean-css", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with MinifierPromise {
     def this(options: OptionsPromise) = this()
@@ -214,12 +216,18 @@ object mod extends Shortcut {
        with Minifier {
     
     def minify(sources: Sources): Output = js.native
-    def minify(sources: Sources, callback: js.Function2[/* error */ js.Any, /* output */ Output, Unit]): Output = js.native
+    def minify(sources: Sources, callback: js.Function2[/* error */ Any, /* output */ Output, Unit]): Output = js.native
     def minify(sources: Sources, sourceMap: String): Output = js.native
     def minify(
       sources: Sources,
       sourceMap: String,
-      callback: js.Function2[/* error */ js.Any, /* output */ Output, Unit]
+      callback: js.Function2[/* error */ Any, /* output */ Output, Unit]
+    ): Output = js.native
+    def minify(sources: Sources, sourceMap: RawSourceMap): Output = js.native
+    def minify(
+      sources: Sources,
+      sourceMap: RawSourceMap,
+      callback: js.Function2[/* error */ Any, /* output */ Output, Unit]
     ): Output = js.native
   }
   
@@ -233,6 +241,7 @@ object mod extends Shortcut {
     
     def minify(sources: Sources): js.Promise[Output] = js.native
     def minify(sources: Sources, sourceMap: String): js.Promise[Output] = js.native
+    def minify(sources: Sources, sourceMap: RawSourceMap): js.Promise[Output] = js.native
   }
   
   /**
@@ -401,7 +410,7 @@ object mod extends Shortcut {
       
       inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      inline def setInlineVarargs(value: String*): Self = StObject.set(x, "inline", js.Array(value :_*))
+      inline def setInlineVarargs(value: String*): Self = StObject.set(x, "inline", js.Array(value*))
       
       inline def setLevel(value: `0` | `1` | `2` | OptimizationsOptions): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -492,7 +501,7 @@ object mod extends Shortcut {
     /**
       * Output source map if requested with `sourceMap` option
       */
-    var sourceMap: String
+    var sourceMap: SourceMapGenerator
     
     /**
       * Contains statistics on the minify process
@@ -513,7 +522,7 @@ object mod extends Shortcut {
     
     inline def apply(
       errors: js.Array[String],
-      sourceMap: String,
+      sourceMap: SourceMapGenerator,
       stats: Efficiency,
       styles: String,
       warnings: js.Array[String]
@@ -526,9 +535,9 @@ object mod extends Shortcut {
       
       inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value*))
       
-      inline def setSourceMap(value: String): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: SourceMapGenerator): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
       inline def setStats(value: Efficiency): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
@@ -536,7 +545,7 @@ object mod extends Shortcut {
       
       inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+      inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
     }
   }
   

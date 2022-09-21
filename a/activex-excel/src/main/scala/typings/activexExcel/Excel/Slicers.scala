@@ -12,7 +12,7 @@ trait Slicers extends StObject {
   
   def Add(
     SlicerDestination: String | Worksheet,
-    Level: js.UndefOr[js.Any],
+    Level: js.UndefOr[Any],
     Name: js.UndefOr[String],
     Caption: js.UndefOr[String],
     Top: js.UndefOr[Double],
@@ -30,7 +30,7 @@ trait Slicers extends StObject {
   def Item(Index: String): Slicer = js.native
   def Item(Index: Double): Slicer = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): Slicer = js.native
+  def _Default(Index: Any): Slicer = js.native
 }

@@ -17,14 +17,14 @@ object colorScaleMod {
     *   (see https://github.com/mbostock/d3/wiki/Ordinal-Scales#categorical-colors)
     *   If not supplied, reads the colors defined using CSS -- see plottable.css.
     */
-  class Color () extends Scale[String, String] {
+  open class Color () extends Scale[String, String] {
     def this(scaleType: String) = this()
     
-    /* private */ var _d3Scale: js.Any = js.native
+    /* private */ var _d3Scale: Any = js.native
     
-    /* private */ var _rangeLength: js.Any = js.native
+    /* private */ var _rangeLength: Any = js.native
     
-    /* private */ var _tracker: js.Any = js.native
+    /* private */ var _tracker: Any = js.native
   }
   /* static members */
   object Color {
@@ -35,20 +35,23 @@ object colorScaleMod {
     
     @JSImport("plottable/build/src/scales/colorScale", "Color._LOOP_LIGHTEN_FACTOR")
     @js.native
-    def _LOOP_LIGHTEN_FACTOR: js.Any = js.native
-    inline def _LOOP_LIGHTEN_FACTOR_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LOOP_LIGHTEN_FACTOR")(x.asInstanceOf[js.Any])
+    def _LOOP_LIGHTEN_FACTOR: Any = js.native
+    inline def _LOOP_LIGHTEN_FACTOR_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LOOP_LIGHTEN_FACTOR")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/scales/colorScale", "Color._MAXIMUM_COLORS_FROM_CSS")
     @js.native
-    def _MAXIMUM_COLORS_FROM_CSS: js.Any = js.native
-    inline def _MAXIMUM_COLORS_FROM_CSS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAXIMUM_COLORS_FROM_CSS")(x.asInstanceOf[js.Any])
+    def _MAXIMUM_COLORS_FROM_CSS: Any = js.native
+    inline def _MAXIMUM_COLORS_FROM_CSS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAXIMUM_COLORS_FROM_CSS")(x.asInstanceOf[js.Any])
     
-    inline def _getPlottableColors(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_getPlottableColors")().asInstanceOf[js.Any]
+    @JSImport("plottable/build/src/scales/colorScale", "Color._getPlottableColors")
+    @js.native
+    def _getPlottableColors: Any = js.native
+    inline def _getPlottableColors_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_getPlottableColors")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/scales/colorScale", "Color._plottableColorCache")
     @js.native
-    def _plottableColorCache: js.Any = js.native
-    inline def _plottableColorCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_plottableColorCache")(x.asInstanceOf[js.Any])
+    def _plottableColorCache: Any = js.native
+    inline def _plottableColorCache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_plottableColorCache")(x.asInstanceOf[js.Any])
     
     inline def invalidateColorCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidateColorCache")().asInstanceOf[Unit]
   }

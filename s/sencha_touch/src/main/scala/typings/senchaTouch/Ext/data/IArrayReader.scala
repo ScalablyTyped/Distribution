@@ -13,13 +13,13 @@ trait IArrayReader
     * @param successProperty Object The new value.
     */
   @JSName("setSuccessProperty")
-  var setSuccessProperty_IArrayReader: js.UndefOr[js.Function1[/* successProperty */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setSuccessProperty_IArrayReader: js.UndefOr[js.Function1[/* successProperty */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of totalProperty
     * @param totalProperty Object The new value.
     */
   @JSName("setTotalProperty")
-  var setTotalProperty_IArrayReader: js.UndefOr[js.Function1[/* totalProperty */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setTotalProperty_IArrayReader: js.UndefOr[js.Function1[/* totalProperty */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IArrayReader {
   
@@ -30,11 +30,11 @@ object IArrayReader {
   
   extension [Self <: IArrayReader](x: Self) {
     
-    inline def setSetSuccessProperty(value: /* successProperty */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSuccessProperty", js.Any.fromFunction1(value))
+    inline def setSetSuccessProperty(value: /* successProperty */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setSuccessProperty", js.Any.fromFunction1(value))
     
     inline def setSetSuccessPropertyUndefined: Self = StObject.set(x, "setSuccessProperty", js.undefined)
     
-    inline def setSetTotalProperty(value: /* totalProperty */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTotalProperty", js.Any.fromFunction1(value))
+    inline def setSetTotalProperty(value: /* totalProperty */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTotalProperty", js.Any.fromFunction1(value))
     
     inline def setSetTotalPropertyUndefined: Self = StObject.set(x, "setTotalProperty", js.undefined)
   }

@@ -1,6 +1,5 @@
 package typings.auth0Js.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait CaptchaTemplates extends StObject {
     */
   var auth0: js.UndefOr[js.Function1[/* challenge */ Auth0Challenge, String]] = js.undefined
   
-  def error(error: Error): String
+  def error(error: js.Error): String
   
   /**
     * Template function receiving the challenge and returning an string
@@ -21,7 +20,7 @@ trait CaptchaTemplates extends StObject {
 }
 object CaptchaTemplates {
   
-  inline def apply(error: Error => String): CaptchaTemplates = {
+  inline def apply(error: js.Error => String): CaptchaTemplates = {
     val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error))
     __obj.asInstanceOf[CaptchaTemplates]
   }
@@ -32,7 +31,7 @@ object CaptchaTemplates {
     
     inline def setAuth0Undefined: Self = StObject.set(x, "auth0", js.undefined)
     
-    inline def setError(value: Error => String): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: js.Error => String): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     inline def setRecaptcha_v2(value: /* challenge */ Auth0Challenge => String): Self = StObject.set(x, "recaptcha_v2", js.Any.fromFunction1(value))
     

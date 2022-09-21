@@ -19,6 +19,18 @@ object emotionStyledStrings {
   inline def address: address = "address".asInstanceOf[address]
   
   @js.native
+  sealed trait animate extends StObject
+  inline def animate: animate = "animate".asInstanceOf[animate]
+  
+  @js.native
+  sealed trait animateMotion extends StObject
+  inline def animateMotion: animateMotion = "animateMotion".asInstanceOf[animateMotion]
+  
+  @js.native
+  sealed trait animateTransform extends StObject
+  inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
+  
+  @js.native
   sealed trait area extends StObject
   inline def area: area = "area".asInstanceOf[area]
   
@@ -123,6 +135,10 @@ object emotionStyledStrings {
   inline def del: del = "del".asInstanceOf[del]
   
   @js.native
+  sealed trait desc extends StObject
+  inline def desc: desc = "desc".asInstanceOf[desc]
+  
+  @js.native
   sealed trait details extends StObject
   inline def details: details = "details".asInstanceOf[details]
   
@@ -159,6 +175,106 @@ object emotionStyledStrings {
   inline def embed: embed = "embed".asInstanceOf[embed]
   
   @js.native
+  sealed trait feBlend extends StObject
+  inline def feBlend: feBlend = "feBlend".asInstanceOf[feBlend]
+  
+  @js.native
+  sealed trait feColorMatrix extends StObject
+  inline def feColorMatrix: feColorMatrix = "feColorMatrix".asInstanceOf[feColorMatrix]
+  
+  @js.native
+  sealed trait feComponentTransfer extends StObject
+  inline def feComponentTransfer: feComponentTransfer = "feComponentTransfer".asInstanceOf[feComponentTransfer]
+  
+  @js.native
+  sealed trait feComposite extends StObject
+  inline def feComposite: feComposite = "feComposite".asInstanceOf[feComposite]
+  
+  @js.native
+  sealed trait feConvolveMatrix extends StObject
+  inline def feConvolveMatrix: feConvolveMatrix = "feConvolveMatrix".asInstanceOf[feConvolveMatrix]
+  
+  @js.native
+  sealed trait feDiffuseLighting extends StObject
+  inline def feDiffuseLighting: feDiffuseLighting = "feDiffuseLighting".asInstanceOf[feDiffuseLighting]
+  
+  @js.native
+  sealed trait feDisplacementMap extends StObject
+  inline def feDisplacementMap: feDisplacementMap = "feDisplacementMap".asInstanceOf[feDisplacementMap]
+  
+  @js.native
+  sealed trait feDistantLight extends StObject
+  inline def feDistantLight: feDistantLight = "feDistantLight".asInstanceOf[feDistantLight]
+  
+  @js.native
+  sealed trait feDropShadow extends StObject
+  inline def feDropShadow: feDropShadow = "feDropShadow".asInstanceOf[feDropShadow]
+  
+  @js.native
+  sealed trait feFlood extends StObject
+  inline def feFlood: feFlood = "feFlood".asInstanceOf[feFlood]
+  
+  @js.native
+  sealed trait feFuncA extends StObject
+  inline def feFuncA: feFuncA = "feFuncA".asInstanceOf[feFuncA]
+  
+  @js.native
+  sealed trait feFuncB extends StObject
+  inline def feFuncB: feFuncB = "feFuncB".asInstanceOf[feFuncB]
+  
+  @js.native
+  sealed trait feFuncG extends StObject
+  inline def feFuncG: feFuncG = "feFuncG".asInstanceOf[feFuncG]
+  
+  @js.native
+  sealed trait feFuncR extends StObject
+  inline def feFuncR: feFuncR = "feFuncR".asInstanceOf[feFuncR]
+  
+  @js.native
+  sealed trait feGaussianBlur extends StObject
+  inline def feGaussianBlur: feGaussianBlur = "feGaussianBlur".asInstanceOf[feGaussianBlur]
+  
+  @js.native
+  sealed trait feImage extends StObject
+  inline def feImage: feImage = "feImage".asInstanceOf[feImage]
+  
+  @js.native
+  sealed trait feMerge extends StObject
+  inline def feMerge: feMerge = "feMerge".asInstanceOf[feMerge]
+  
+  @js.native
+  sealed trait feMergeNode extends StObject
+  inline def feMergeNode: feMergeNode = "feMergeNode".asInstanceOf[feMergeNode]
+  
+  @js.native
+  sealed trait feMorphology extends StObject
+  inline def feMorphology: feMorphology = "feMorphology".asInstanceOf[feMorphology]
+  
+  @js.native
+  sealed trait feOffset extends StObject
+  inline def feOffset: feOffset = "feOffset".asInstanceOf[feOffset]
+  
+  @js.native
+  sealed trait fePointLight extends StObject
+  inline def fePointLight: fePointLight = "fePointLight".asInstanceOf[fePointLight]
+  
+  @js.native
+  sealed trait feSpecularLighting extends StObject
+  inline def feSpecularLighting: feSpecularLighting = "feSpecularLighting".asInstanceOf[feSpecularLighting]
+  
+  @js.native
+  sealed trait feSpotLight extends StObject
+  inline def feSpotLight: feSpotLight = "feSpotLight".asInstanceOf[feSpotLight]
+  
+  @js.native
+  sealed trait feTile extends StObject
+  inline def feTile: feTile = "feTile".asInstanceOf[feTile]
+  
+  @js.native
+  sealed trait feTurbulence extends StObject
+  inline def feTurbulence: feTurbulence = "feTurbulence".asInstanceOf[feTurbulence]
+  
+  @js.native
   sealed trait fieldset extends StObject
   inline def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
   
@@ -169,6 +285,10 @@ object emotionStyledStrings {
   @js.native
   sealed trait figure extends StObject
   inline def figure: figure = "figure".asInstanceOf[figure]
+  
+  @js.native
+  sealed trait filter extends StObject
+  inline def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
   sealed trait footer extends StObject
@@ -299,6 +419,10 @@ object emotionStyledStrings {
   inline def mark: mark = "mark".asInstanceOf[mark]
   
   @js.native
+  sealed trait marker extends StObject
+  inline def marker: marker = "marker".asInstanceOf[marker]
+  
+  @js.native
   sealed trait mask extends StObject
   inline def mask: mask = "mask".asInstanceOf[mask]
   
@@ -315,12 +439,24 @@ object emotionStyledStrings {
   inline def meta: meta = "meta".asInstanceOf[meta]
   
   @js.native
+  sealed trait metadata extends StObject
+  inline def metadata: metadata = "metadata".asInstanceOf[metadata]
+  
+  @js.native
   sealed trait meter extends StObject
   inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
+  sealed trait mpath extends StObject
+  inline def mpath: mpath = "mpath".asInstanceOf[mpath]
+  
+  @js.native
   sealed trait nav extends StObject
   inline def nav: nav = "nav".asInstanceOf[nav]
+  
+  @js.native
+  sealed trait noindex extends StObject
+  inline def noindex: noindex = "noindex".asInstanceOf[noindex]
   
   @js.native
   sealed trait noscript extends StObject
@@ -427,6 +563,10 @@ object emotionStyledStrings {
   inline def select: select = "select".asInstanceOf[select]
   
   @js.native
+  sealed trait slot extends StObject
+  inline def slot: slot = "slot".asInstanceOf[slot]
+  
+  @js.native
   sealed trait small extends StObject
   inline def small: small = "small".asInstanceOf[small]
   
@@ -467,6 +607,14 @@ object emotionStyledStrings {
   inline def svg: svg = "svg".asInstanceOf[svg]
   
   @js.native
+  sealed trait switch extends StObject
+  inline def switch: switch = "switch".asInstanceOf[switch]
+  
+  @js.native
+  sealed trait symbol extends StObject
+  inline def symbol: symbol = "symbol".asInstanceOf[symbol]
+  
+  @js.native
   sealed trait table extends StObject
   inline def table: table = "table".asInstanceOf[table]
   
@@ -479,8 +627,16 @@ object emotionStyledStrings {
   inline def td: td = "td".asInstanceOf[td]
   
   @js.native
+  sealed trait template extends StObject
+  inline def template: template = "template".asInstanceOf[template]
+  
+  @js.native
   sealed trait text extends StObject
   inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait textPath extends StObject
+  inline def textPath: textPath = "textPath".asInstanceOf[textPath]
   
   @js.native
   sealed trait textarea extends StObject
@@ -527,6 +683,10 @@ object emotionStyledStrings {
   inline def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
+  sealed trait use extends StObject
+  inline def use: use = "use".asInstanceOf[use]
+  
+  @js.native
   sealed trait `var` extends StObject
   inline def `var`: `var` = "var".asInstanceOf[`var`]
   
@@ -535,6 +695,14 @@ object emotionStyledStrings {
   inline def video: video = "video".asInstanceOf[video]
   
   @js.native
+  sealed trait view extends StObject
+  inline def view: view = "view".asInstanceOf[view]
+  
+  @js.native
   sealed trait wbr extends StObject
   inline def wbr: wbr = "wbr".asInstanceOf[wbr]
+  
+  @js.native
+  sealed trait webview extends StObject
+  inline def webview: webview = "webview".asInstanceOf[webview]
 }

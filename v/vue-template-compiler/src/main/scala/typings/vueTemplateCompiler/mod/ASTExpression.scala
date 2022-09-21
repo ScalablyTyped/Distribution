@@ -19,13 +19,13 @@ trait ASTExpression
   
   var text: String
   
-  var tokens: js.Array[String | (Record[String, js.Any])]
+  var tokens: js.Array[String | (Record[String, Any])]
   
   var `type`: `2`
 }
 object ASTExpression {
   
-  inline def apply(expression: String, text: String, tokens: js.Array[String | (Record[String, js.Any])]): ASTExpression = {
+  inline def apply(expression: String, text: String, tokens: js.Array[String | (Record[String, Any])]): ASTExpression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(2)
     __obj.asInstanceOf[ASTExpression]
@@ -45,9 +45,9 @@ object ASTExpression {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def setTokens(value: js.Array[String | (Record[String, js.Any])]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: js.Array[String | (Record[String, Any])]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    inline def setTokensVarargs(value: (String | (Record[String, js.Any]))*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: (String | (Record[String, Any]))*): Self = StObject.set(x, "tokens", js.Array(value*))
     
     inline def setType(value: `2`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

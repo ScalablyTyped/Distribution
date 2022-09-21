@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "HDRFiltering")
 @js.native
-class HDRFiltering protected ()
+open class HDRFiltering protected ()
   extends typings.babylonjs.texturesIndexMod.HDRFiltering {
   /**
     * Instantiates HDR filter for reflection maps

@@ -19,7 +19,7 @@ trait QueryTableDataSource
   /**
     * The geometry type of each record in the table.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
+    * [Read more...](global.html#geometryType)
     */
   var geometryType: point | multipoint | polyline | polygon | multipatch
   

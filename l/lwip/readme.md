@@ -10,10 +10,10 @@ Comprehensive, fast, and simple image processing and manipulation
 | ------------------ | :-------------: |
 | Full name          | lwip |
 | Keywords           | image, buffer, manipulate, process, resize, scale, rotate, jpeg, jpg, png, gif, crop, blur, sharpen, batch, flip, mirror, border, padding, hue, saturation, lightness, alpha, transparency, fade, opacity, contain, cover |
-| # releases         | 0 |
-| # dependents       | 71 |
-| # downloads        | 71418 |
-| # stars            | 45 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2857.3333333333335 |
+| # stars            | 2328.0 |
 
 ## Links
 - [Homepage](https://github.com/EyalAr/lwip)

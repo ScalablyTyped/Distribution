@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-navigation__routers
 
-Typings are for version 5.6.2
+Typings are for version 6.1.3
 
 ## Library description:
 Routers to help build custom navigators
@@ -10,10 +10,10 @@ Routers to help build custom navigators
 | ------------------ | :-------------: |
 | Full name          | @react-navigation/routers |
 | Keywords           | react, react-native, react-navigation |
-| # releases         | 63 |
-| # dependents       | 5 |
-| # downloads        | 8492698 |
-| # stars            | 0 |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 2099331.3333333335 |
+| # stars            | 21622.0 |
 
 ## Links
 - [Homepage](https://reactnavigation.org/docs/custom-routers/)

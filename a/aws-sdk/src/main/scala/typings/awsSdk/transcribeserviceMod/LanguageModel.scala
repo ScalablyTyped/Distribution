@@ -7,47 +7,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LanguageModel extends StObject {
   
   /**
-    * The Amazon Transcribe standard language model, or base model used to create the custom language model.
+    * The Amazon Transcribe standard language model, or base model, used to create your custom language model.
     */
   var BaseModelName: js.UndefOr[typings.awsSdk.transcribeserviceMod.BaseModelName] = js.undefined
   
   /**
-    * The time the custom language model was created.
+    * The date and time the specified custom language model was created. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:32:58.761000-07:00 represents 12:32 PM UTC-7 on May 4, 2022.
     */
-  var CreateTime: js.UndefOr[DateTime] = js.undefined
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The reason why the custom language model couldn't be created.
+    * If ModelStatus is FAILED, FailureReason contains information about why the custom language model request failed. See also: Common Errors.
     */
   var FailureReason: js.UndefOr[typings.awsSdk.transcribeserviceMod.FailureReason] = js.undefined
   
   /**
-    * The data access role and Amazon S3 prefixes for the input files used to train the custom language model.
+    * The Amazon S3 location of the input files used to train and tune your custom language model, in addition to the data access role ARN (Amazon Resource Name) that has permissions to access these data.
     */
   var InputDataConfig: js.UndefOr[typings.awsSdk.transcribeserviceMod.InputDataConfig] = js.undefined
   
   /**
-    * The language code you used to create your custom language model.
+    * The language code used to create your custom language model. Each language model must contain terms in only one language, and the language you select for your model must match the language of your training and tuning data. For a list of supported languages and their associated language codes, refer to the Supported languages table. Note that U.S. English (en-US) is the only language supported with Amazon Transcribe Medical.
     */
   var LanguageCode: js.UndefOr[CLMLanguageCode] = js.undefined
   
   /**
-    * The most recent time the custom language model was modified.
+    * The date and time the specified language model was last modified. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:32:58.761000-07:00 represents 12:32 PM UTC-7 on May 4, 2022.
     */
-  var LastModifiedTime: js.UndefOr[DateTime] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The name of the custom language model.
+    * A unique name, chosen by you, for your custom language model. This name is case sensitive, cannot contain spaces, and must be unique within an Amazon Web Services account.
     */
   var ModelName: js.UndefOr[typings.awsSdk.transcribeserviceMod.ModelName] = js.undefined
   
   /**
-    * The creation status of a custom language model. When the status is COMPLETED the model is ready for use.
+    * The status of the specified custom language model. When the status displays as COMPLETED the model is ready for use.
     */
   var ModelStatus: js.UndefOr[typings.awsSdk.transcribeserviceMod.ModelStatus] = js.undefined
   
   /**
-    * Whether the base model used for the custom language model is up to date. If this field is true then you are running the most up-to-date version of the base model in your custom language model.
+    * Shows if a more current base model is available for use with the specified custom language model. If false, your language model is using the most up-to-date base model. If true, there is a newer base model available than the one your language model is using. Note that to update a base model, you must recreate the custom language model using the new base model. Base model upgrades for existing custom language models are not supported.
     */
   var UpgradeAvailability: js.UndefOr[Boolean] = js.undefined
 }
@@ -64,7 +64,7 @@ object LanguageModel {
     
     inline def setBaseModelNameUndefined: Self = StObject.set(x, "BaseModelName", js.undefined)
     
-    inline def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
@@ -80,7 +80,7 @@ object LanguageModel {
     
     inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    inline def setLastModifiedTime(value: DateTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     

@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.Point")
 @js.native
-class Point protected ()
+open class Point protected ()
   extends StObject
      with typings.paper.paper.Point {
   /** 
     * Creates a Point object using the numbers in the given array as
     * coordinates.
     */
-  def this(array: js.Array[js.Any]) = this()
+  def this(array: js.Array[Any]) = this()
   /** 
     * Creates a Point object using the properties in the given object.
     * 

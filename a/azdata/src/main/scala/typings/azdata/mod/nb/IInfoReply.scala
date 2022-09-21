@@ -39,7 +39,7 @@ object IInfoReply {
     
     inline def setHelp_links(value: js.Array[Text]): Self = StObject.set(x, "help_links", value.asInstanceOf[js.Any])
     
-    inline def setHelp_linksVarargs(value: Text*): Self = StObject.set(x, "help_links", js.Array(value :_*))
+    inline def setHelp_linksVarargs(value: Text*): Self = StObject.set(x, "help_links", js.Array(value*))
     
     inline def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     

@@ -80,7 +80,7 @@ object typesMod {
     
     var getParentPoseConfig: js.UndefOr[js.Function0[DomPopmotionConfig]] = js.undefined
     
-    var onUnmount: js.UndefOr[js.Function1[/* child */ DomPopmotionPoser, js.Any]] = js.undefined
+    var onUnmount: js.UndefOr[js.Function1[/* child */ DomPopmotionPoser, Any]] = js.undefined
     
     var registerChild: js.UndefOr[js.Function1[/* props */ ChildRegistration, Unit]] = js.undefined
   }
@@ -101,7 +101,7 @@ object typesMod {
       
       inline def setGetParentPoseConfigUndefined: Self = StObject.set(x, "getParentPoseConfig", js.undefined)
       
-      inline def setOnUnmount(value: /* child */ DomPopmotionPoser => js.Any): Self = StObject.set(x, "onUnmount", js.Any.fromFunction1(value))
+      inline def setOnUnmount(value: /* child */ DomPopmotionPoser => Any): Self = StObject.set(x, "onUnmount", js.Any.fromFunction1(value))
       
       inline def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
       
@@ -114,13 +114,13 @@ object typesMod {
   /* Inlined react-pose.react-pose/lib/components/PoseElement/types.PoseElementProps & {  elementType :any,   poseConfig :popmotion-pose.popmotion-pose.DomPopmotionConfig | react-pose.react-pose/lib/components/PoseElement/types.ConfigFactory} */
   trait PoseElementInternalProps
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var _pose: js.UndefOr[CurrentPose] = js.undefined
     
-    var children: js.UndefOr[js.Any] = js.undefined
+    var children: js.UndefOr[Any] = js.undefined
     
-    var elementType: js.Any
+    var elementType: Any
     
     var getInitialPoseFromParent: js.UndefOr[js.Function0[CurrentPose | Unit]] = js.undefined
     
@@ -130,11 +130,11 @@ object typesMod {
     
     var innerRef: js.UndefOr[Current | RefFunc] = js.undefined
     
-    var onPoseComplete: js.UndefOr[js.Function1[/* pose */ CurrentPose, js.Any]] = js.undefined
+    var onPoseComplete: js.UndefOr[js.Function1[/* pose */ CurrentPose, Any]] = js.undefined
     
-    var onUnmount: js.UndefOr[js.Function1[/* child */ DomPopmotionPoser, js.Any]] = js.undefined
+    var onUnmount: js.UndefOr[js.Function1[/* child */ DomPopmotionPoser, Any]] = js.undefined
     
-    var onValueChange: js.UndefOr[StringDictionary[js.Function1[/* v */ js.Any, js.Any]]] = js.undefined
+    var onValueChange: js.UndefOr[StringDictionary[js.Function1[/* v */ Any, Any]]] = js.undefined
     
     var pose: js.UndefOr[CurrentPose] = js.undefined
     
@@ -146,18 +146,18 @@ object typesMod {
   }
   object PoseElementInternalProps {
     
-    inline def apply(elementType: js.Any, poseConfig: DomPopmotionConfig | ConfigFactory): PoseElementInternalProps = {
+    inline def apply(elementType: Any, poseConfig: DomPopmotionConfig | ConfigFactory): PoseElementInternalProps = {
       val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any], poseConfig = poseConfig.asInstanceOf[js.Any])
       __obj.asInstanceOf[PoseElementInternalProps]
     }
     
     extension [Self <: PoseElementInternalProps](x: Self) {
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setElementType(value: js.Any): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+      inline def setElementType(value: Any): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
       
       inline def setGetInitialPoseFromParent(value: () => CurrentPose | Unit): Self = StObject.set(x, "getInitialPoseFromParent", js.Any.fromFunction0(value))
       
@@ -171,23 +171,23 @@ object typesMod {
       
       inline def setInitialPoseUndefined: Self = StObject.set(x, "initialPose", js.undefined)
       
-      inline def setInitialPoseVarargs(value: String*): Self = StObject.set(x, "initialPose", js.Array(value :_*))
+      inline def setInitialPoseVarargs(value: String*): Self = StObject.set(x, "initialPose", js.Array(value*))
       
       inline def setInnerRef(value: Current | RefFunc): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* el */ Element => js.Any): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* el */ Element => Any): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      inline def setOnPoseComplete(value: /* pose */ CurrentPose => js.Any): Self = StObject.set(x, "onPoseComplete", js.Any.fromFunction1(value))
+      inline def setOnPoseComplete(value: /* pose */ CurrentPose => Any): Self = StObject.set(x, "onPoseComplete", js.Any.fromFunction1(value))
       
       inline def setOnPoseCompleteUndefined: Self = StObject.set(x, "onPoseComplete", js.undefined)
       
-      inline def setOnUnmount(value: /* child */ DomPopmotionPoser => js.Any): Self = StObject.set(x, "onUnmount", js.Any.fromFunction1(value))
+      inline def setOnUnmount(value: /* child */ DomPopmotionPoser => Any): Self = StObject.set(x, "onUnmount", js.Any.fromFunction1(value))
       
       inline def setOnUnmountUndefined: Self = StObject.set(x, "onUnmount", js.undefined)
       
-      inline def setOnValueChange(value: StringDictionary[js.Function1[/* v */ js.Any, js.Any]]): Self = StObject.set(x, "onValueChange", value.asInstanceOf[js.Any])
+      inline def setOnValueChange(value: StringDictionary[js.Function1[/* v */ Any, Any]]): Self = StObject.set(x, "onValueChange", value.asInstanceOf[js.Any])
       
       inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
       
@@ -199,7 +199,7 @@ object typesMod {
       
       inline def setPoseUndefined: Self = StObject.set(x, "pose", js.undefined)
       
-      inline def setPoseVarargs(value: String*): Self = StObject.set(x, "pose", js.Array(value :_*))
+      inline def setPoseVarargs(value: String*): Self = StObject.set(x, "pose", js.Array(value*))
       
       inline def setRegisterChild(value: /* props */ ChildRegistration => Unit): Self = StObject.set(x, "registerChild", js.Any.fromFunction1(value))
       
@@ -213,26 +213,26 @@ object typesMod {
       
       inline def set_poseUndefined: Self = StObject.set(x, "_pose", js.undefined)
       
-      inline def set_poseVarargs(value: String*): Self = StObject.set(x, "_pose", js.Array(value :_*))
+      inline def set_poseVarargs(value: String*): Self = StObject.set(x, "_pose", js.Array(value*))
     }
   }
   
   trait PoseElementProps
     extends StObject
        with PoseContextProps
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var _pose: js.UndefOr[CurrentPose] = js.undefined
     
-    var children: js.UndefOr[js.Any] = js.undefined
+    var children: js.UndefOr[Any] = js.undefined
     
     var initialPose: js.UndefOr[CurrentPose] = js.undefined
     
     var innerRef: js.UndefOr[Current | RefFunc] = js.undefined
     
-    var onPoseComplete: js.UndefOr[js.Function1[/* pose */ CurrentPose, js.Any]] = js.undefined
+    var onPoseComplete: js.UndefOr[js.Function1[/* pose */ CurrentPose, Any]] = js.undefined
     
-    var onValueChange: js.UndefOr[StringDictionary[js.Function1[/* v */ js.Any, js.Any]]] = js.undefined
+    var onValueChange: js.UndefOr[StringDictionary[js.Function1[/* v */ Any, Any]]] = js.undefined
     
     var pose: js.UndefOr[CurrentPose] = js.undefined
     
@@ -247,7 +247,7 @@ object typesMod {
     
     extension [Self <: PoseElementProps](x: Self) {
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -255,19 +255,19 @@ object typesMod {
       
       inline def setInitialPoseUndefined: Self = StObject.set(x, "initialPose", js.undefined)
       
-      inline def setInitialPoseVarargs(value: String*): Self = StObject.set(x, "initialPose", js.Array(value :_*))
+      inline def setInitialPoseVarargs(value: String*): Self = StObject.set(x, "initialPose", js.Array(value*))
       
       inline def setInnerRef(value: Current | RefFunc): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* el */ Element => js.Any): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* el */ Element => Any): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      inline def setOnPoseComplete(value: /* pose */ CurrentPose => js.Any): Self = StObject.set(x, "onPoseComplete", js.Any.fromFunction1(value))
+      inline def setOnPoseComplete(value: /* pose */ CurrentPose => Any): Self = StObject.set(x, "onPoseComplete", js.Any.fromFunction1(value))
       
       inline def setOnPoseCompleteUndefined: Self = StObject.set(x, "onPoseComplete", js.undefined)
       
-      inline def setOnValueChange(value: StringDictionary[js.Function1[/* v */ js.Any, js.Any]]): Self = StObject.set(x, "onValueChange", value.asInstanceOf[js.Any])
+      inline def setOnValueChange(value: StringDictionary[js.Function1[/* v */ Any, Any]]): Self = StObject.set(x, "onValueChange", value.asInstanceOf[js.Any])
       
       inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
       
@@ -275,7 +275,7 @@ object typesMod {
       
       inline def setPoseUndefined: Self = StObject.set(x, "pose", js.undefined)
       
-      inline def setPoseVarargs(value: String*): Self = StObject.set(x, "pose", js.Array(value :_*))
+      inline def setPoseVarargs(value: String*): Self = StObject.set(x, "pose", js.Array(value*))
       
       inline def setWithParent(value: Boolean): Self = StObject.set(x, "withParent", value.asInstanceOf[js.Any])
       
@@ -285,9 +285,9 @@ object typesMod {
       
       inline def set_poseUndefined: Self = StObject.set(x, "_pose", js.undefined)
       
-      inline def set_poseVarargs(value: String*): Self = StObject.set(x, "_pose", js.Array(value :_*))
+      inline def set_poseVarargs(value: String*): Self = StObject.set(x, "_pose", js.Array(value*))
     }
   }
   
-  type RefFunc = js.Function1[/* el */ Element, js.Any]
+  type RefFunc = js.Function1[/* el */ Element, Any]
 }

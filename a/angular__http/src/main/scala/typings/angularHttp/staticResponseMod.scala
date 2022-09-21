@@ -12,7 +12,7 @@ object staticResponseMod {
   
   @JSImport("@angular/http/src/static_response", "Response")
   @js.native
-  class Response protected () extends Body {
+  open class Response protected () extends Body {
     def this(responseOptions: ResponseOptions) = this()
     
     /**

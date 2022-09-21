@@ -13,7 +13,7 @@ import typings.react.mod.Component
 import typings.react.mod.FocusEvent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.RefObject
-import typings.react.mod.global.JSX.Element
+import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -27,15 +27,15 @@ object baseExtendedPickerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ExtendedPicker/BaseExtendedPicker", "BaseExtendedPicker")
   @js.native
-  class BaseExtendedPicker[T, P /* <: IBaseExtendedPickerProps[T] */] protected ()
-    extends Component[P, IBaseExtendedPickerState[T], js.Any]
+  open class BaseExtendedPicker[T, P /* <: IBaseExtendedPickerProps[T] */] protected ()
+    extends Component[P, IBaseExtendedPickerState[T], Any]
        with IBaseExtendedPicker[T] {
     def this(basePickerProps: P) = this()
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MBaseExtendedPicker(newProps: P): Unit = js.native
     
-    /* private */ var _addProcessedItem: js.Any = js.native
+    /* private */ var _addProcessedItem: Any = js.native
     
     /* protected */ def _onSelectedItemsChanged(): Unit = js.native
     
@@ -50,7 +50,7 @@ object baseExtendedPickerMod {
       *
       * Called when the suggestions is shown or closed
       */
-    /* private */ var _onSuggestionsShownOrHidden: js.Any = js.native
+    /* private */ var _onSuggestionsShownOrHidden: Any = js.native
     
     /* protected */ def canAddItems(): Boolean = js.native
     
@@ -82,15 +82,15 @@ object baseExtendedPickerMod {
     
     /* protected */ def onInputClick(ev: typings.react.mod.MouseEvent[HTMLInputElement | Autofill, MouseEvent]): Unit = js.native
     
-    /* protected */ def onInputFocus(ev: FocusEvent[HTMLInputElement | Autofill]): Unit = js.native
+    /* protected */ def onInputFocus(ev: FocusEvent[HTMLInputElement | Autofill, Element]): Unit = js.native
     
     /* protected */ def onPaste(ev: ClipboardEvent[HTMLInputElement | Autofill]): Unit = js.native
     
     /* protected */ def onSelectionChange(): Unit = js.native
     
-    /* protected */ def renderFloatingPicker(): Element = js.native
+    /* protected */ def renderFloatingPicker(): typings.react.mod.global.JSX.Element = js.native
     
-    /* protected */ def renderSelectedItemsList(): Element = js.native
+    /* protected */ def renderSelectedItemsList(): typings.react.mod.global.JSX.Element = js.native
     
     /* protected */ var root: RefObject[HTMLDivElement] = js.native
     
@@ -126,13 +126,13 @@ object baseExtendedPickerMod {
       
       inline def setSelectedItemsNull: Self = StObject.set(x, "selectedItems", null)
       
-      inline def setSelectedItemsVarargs(value: T*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+      inline def setSelectedItemsVarargs(value: T*): Self = StObject.set(x, "selectedItems", js.Array(value*))
       
       inline def setSuggestionItems(value: js.Array[T]): Self = StObject.set(x, "suggestionItems", value.asInstanceOf[js.Any])
       
       inline def setSuggestionItemsNull: Self = StObject.set(x, "suggestionItems", null)
       
-      inline def setSuggestionItemsVarargs(value: T*): Self = StObject.set(x, "suggestionItems", js.Array(value :_*))
+      inline def setSuggestionItemsVarargs(value: T*): Self = StObject.set(x, "suggestionItems", js.Array(value*))
     }
   }
 }

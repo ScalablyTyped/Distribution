@@ -15,7 +15,7 @@ object bridgeContextMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/bridge-context", "BridgeContext")
   @js.native
-  class BridgeContext protected () extends StObject {
+  open class BridgeContext protected () extends StObject {
     /**
       * @param ctx Event related data
       * @param ctx.sender Matrix user ID of the sender.
@@ -24,7 +24,7 @@ object bridgeContextMod {
       */
     def this(ctx: Room) = this()
     
-    /* private */ var ctx: js.Any = js.native
+    /* private */ var ctx: Any = js.native
     
     /**
       * Returns this instance after its initialization.
@@ -33,7 +33,7 @@ object bridgeContextMod {
       * @param {UserBridgeStore} userStore
       * @returns {Promise<BridgeContext>}
       */
-    def get(roomStore: RoomBridgeStore, userStore: UserBridgeStore): js.Promise[this.type] = js.native
+    def get(roomStore: RoomBridgeStore, userStore: UserBridgeStore): js.Promise[BridgeContext] = js.native
     
     val rooms: BridgeContextRoom = js.native
     
@@ -67,7 +67,7 @@ object bridgeContextMod {
       
       inline def setRemotes(value: js.Array[RemoteRoom]): Self = StObject.set(x, "remotes", value.asInstanceOf[js.Any])
       
-      inline def setRemotesVarargs(value: RemoteRoom*): Self = StObject.set(x, "remotes", js.Array(value :_*))
+      inline def setRemotesVarargs(value: RemoteRoom*): Self = StObject.set(x, "remotes", js.Array(value*))
     }
   }
   
@@ -96,7 +96,7 @@ object bridgeContextMod {
       
       inline def setRemotes(value: js.Array[RemoteUser]): Self = StObject.set(x, "remotes", value.asInstanceOf[js.Any])
       
-      inline def setRemotesVarargs(value: RemoteUser*): Self = StObject.set(x, "remotes", js.Array(value :_*))
+      inline def setRemotesVarargs(value: RemoteUser*): Self = StObject.set(x, "remotes", js.Array(value*))
     }
   }
   
@@ -127,7 +127,7 @@ object bridgeContextMod {
       
       inline def setRemotes(value: js.Array[RemoteUser]): Self = StObject.set(x, "remotes", value.asInstanceOf[js.Any])
       
-      inline def setRemotesVarargs(value: RemoteUser*): Self = StObject.set(x, "remotes", js.Array(value :_*))
+      inline def setRemotesVarargs(value: RemoteUser*): Self = StObject.set(x, "remotes", js.Array(value*))
     }
   }
 }

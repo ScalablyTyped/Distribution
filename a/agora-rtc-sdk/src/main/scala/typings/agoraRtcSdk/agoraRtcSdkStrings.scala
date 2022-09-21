@@ -23,6 +23,10 @@ object agoraRtcSdkStrings {
   inline def VP8: VP8 = "VP8".asInstanceOf[VP8]
   
   @js.native
+  sealed trait VP9 extends StObject
+  inline def VP9: VP9 = "VP9".asInstanceOf[VP9]
+  
+  @js.native
   sealed trait accessAllowed extends StObject
   inline def accessAllowed: accessAllowed = "accessAllowed".asInstanceOf[accessAllowed]
   
@@ -39,8 +43,24 @@ object agoraRtcSdkStrings {
   inline def `aes-128-ecb`: `aes-128-ecb` = "aes-128-ecb".asInstanceOf[`aes-128-ecb`]
   
   @js.native
+  sealed trait `aes-128-gcm` extends StObject
+  inline def `aes-128-gcm`: `aes-128-gcm` = "aes-128-gcm".asInstanceOf[`aes-128-gcm`]
+  
+  @js.native
+  sealed trait `aes-128-gcm2` extends StObject
+  inline def `aes-128-gcm2`: `aes-128-gcm2` = "aes-128-gcm2".asInstanceOf[`aes-128-gcm2`]
+  
+  @js.native
   sealed trait `aes-128-xts` extends StObject
   inline def `aes-128-xts`: `aes-128-xts` = "aes-128-xts".asInstanceOf[`aes-128-xts`]
+  
+  @js.native
+  sealed trait `aes-256-gcm` extends StObject
+  inline def `aes-256-gcm`: `aes-256-gcm` = "aes-256-gcm".asInstanceOf[`aes-256-gcm`]
+  
+  @js.native
+  sealed trait `aes-256-gcm2` extends StObject
+  inline def `aes-256-gcm2`: `aes-256-gcm2` = "aes-256-gcm2".asInstanceOf[`aes-256-gcm2`]
   
   @js.native
   sealed trait `aes-256-xts` extends StObject
@@ -235,10 +255,6 @@ object agoraRtcSdkStrings {
   inline def `playout-device-changed`: `playout-device-changed` = "playout-device-changed".asInstanceOf[`playout-device-changed`]
   
   @js.native
-  sealed trait `receive-metadata` extends StObject
-  inline def `receive-metadata`: `receive-metadata` = "receive-metadata".asInstanceOf[`receive-metadata`]
-  
-  @js.native
   sealed trait reconnect extends StObject
   inline def reconnect: reconnect = "reconnect".asInstanceOf[reconnect]
   
@@ -247,12 +263,20 @@ object agoraRtcSdkStrings {
   inline def `recording-device-changed`: `recording-device-changed` = "recording-device-changed".asInstanceOf[`recording-device-changed`]
   
   @js.native
+  sealed trait rejoin extends StObject
+  inline def rejoin: rejoin = "rejoin".asInstanceOf[rejoin]
+  
+  @js.native
   sealed trait rtc extends StObject
   inline def rtc: rtc = "rtc".asInstanceOf[rtc]
   
   @js.native
   sealed trait screen extends StObject
   inline def screen: screen = "screen".asInstanceOf[screen]
+  
+  @js.native
+  sealed trait `sm4-128-ecb` extends StObject
+  inline def `sm4-128-ecb`: `sm4-128-ecb` = "sm4-128-ecb".asInstanceOf[`sm4-128-ecb`]
   
   @js.native
   sealed trait speech_low_quality extends StObject
@@ -345,6 +369,10 @@ object agoraRtcSdkStrings {
   @js.native
   sealed trait vp8_ extends StObject
   inline def vp8_ : vp8_ = "vp8".asInstanceOf[vp8_]
+  
+  @js.native
+  sealed trait vp9_ extends StObject
+  inline def vp9_ : vp9_ = "vp9".asInstanceOf[vp9_]
   
   @js.native
   sealed trait warning extends StObject

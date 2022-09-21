@@ -23,14 +23,14 @@ object mod {
   
   @JSImport("istanbul-lib-report", "ConsoleWriter")
   @js.native
-  class ConsoleWriter () extends ContentWriter {
+  open class ConsoleWriter () extends ContentWriter {
     
     def write(str: String): Unit = js.native
   }
   
   @JSImport("istanbul-lib-report", "ContentWriter")
   @js.native
-  class ContentWriter () extends StObject {
+  open class ContentWriter () extends StObject {
     
     /**
       * closes this content writer. Should be called after all writes are complete.
@@ -54,7 +54,7 @@ object mod {
   
   @JSImport("istanbul-lib-report", "FileContentWriter")
   @js.native
-  class FileContentWriter protected () extends ContentWriter {
+  open class FileContentWriter protected () extends ContentWriter {
     def this(fileDescriptor: Double) = this()
     
     def write(str: String): Unit = js.native
@@ -62,7 +62,7 @@ object mod {
   
   @JSImport("istanbul-lib-report", "FileWriter")
   @js.native
-  class FileWriter protected () extends StObject {
+  open class FileWriter protected () extends StObject {
     def this(baseDir: String) = this()
     
     /**
@@ -100,7 +100,7 @@ object mod {
   
   @JSImport("istanbul-lib-report", "ReportBase")
   @js.native
-  class ReportBase () extends StObject {
+  open class ReportBase () extends StObject {
     def this(options: PartialReportBaseOptions) = this()
     
     def execute(context: Context): Unit = js.native
@@ -114,20 +114,13 @@ object mod {
   @js.native
   trait Context extends StObject {
     
-    @JSName("classForPercent")
-    def classForPercent_branches(`type`: branches, value: Double): String = js.native
-    @JSName("classForPercent")
-    def classForPercent_functions(`type`: functions, value: Double): String = js.native
-    @JSName("classForPercent")
-    def classForPercent_lines(`type`: lines, value: Double): String = js.native
     /**
       * returns the coverage class given a coverage
       * types and a percentage value.
       */
-    @JSName("classForPercent")
-    def classForPercent_statements(`type`: statements, value: Double): String = js.native
+    def classForPercent(`type`: statements | functions | branches | lines, value: Double): String = js.native
     
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     var dir: String = js.native
     
@@ -206,11 +199,11 @@ object mod {
     
     def isRoot(): Boolean
     
-    def visit(visitor: Visitor[Node], state: js.Any): Unit
+    def visit(visitor: Visitor[Node], state: Any): Unit
   }
   object Node {
     
-    inline def apply(isRoot: () => Boolean, visit: (Visitor[Node], js.Any) => Unit): Node = {
+    inline def apply(isRoot: () => Boolean, visit: (Visitor[Node], Any) => Unit): Node = {
       val __obj = js.Dynamic.literal(isRoot = js.Any.fromFunction0(isRoot), visit = js.Any.fromFunction2(visit))
       __obj.asInstanceOf[Node]
     }
@@ -219,7 +212,7 @@ object mod {
       
       inline def setIsRoot(value: () => Boolean): Self = StObject.set(x, "isRoot", js.Any.fromFunction0(value))
       
-      inline def setVisit(value: (Visitor[Node], js.Any) => Unit): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
+      inline def setVisit(value: (Visitor[Node], Any) => Unit): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
     }
   }
   
@@ -286,7 +279,7 @@ object mod {
       isRoot: () => Boolean,
       isSummary: () => Boolean,
       path: String,
-      visit: (Visitor[Node], js.Any) => Unit
+      visit: (Visitor[Node], Any) => Unit
     ): ReportNode = {
       val __obj = js.Dynamic.literal(addChild = js.Any.fromFunction1(addChild), asRelative = js.Any.fromFunction1(asRelative), children = children.asInstanceOf[js.Any], fileCoverage = fileCoverage.asInstanceOf[js.Any], getChildren = js.Any.fromFunction0(getChildren), getCoverageSummary = js.Any.fromFunction1(getCoverageSummary), getFileCoverage = js.Any.fromFunction0(getFileCoverage), getParent = js.Any.fromFunction0(getParent), getQualifiedName = js.Any.fromFunction0(getQualifiedName), getRelativeName = js.Any.fromFunction0(getRelativeName), isRoot = js.Any.fromFunction0(isRoot), isSummary = js.Any.fromFunction0(isSummary), path = path.asInstanceOf[js.Any], visit = js.Any.fromFunction2(visit), parent = null)
       __obj.asInstanceOf[ReportNode]
@@ -300,7 +293,7 @@ object mod {
       
       inline def setChildren(value: js.Array[ReportNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: ReportNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReportNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setFileCoverage(value: FileCoverage): Self = StObject.set(x, "fileCoverage", value.asInstanceOf[js.Any])
       
@@ -348,11 +341,11 @@ object mod {
     
     def getRoot(): N
     
-    def visit(visitor: Partial[Visitor[N]], state: js.Any): Unit
+    def visit(visitor: Partial[Visitor[N]], state: Any): Unit
   }
   object Tree {
     
-    inline def apply[N /* <: Node */](getRoot: () => N, visit: (Partial[Visitor[N]], js.Any) => Unit): Tree[N] = {
+    inline def apply[N /* <: Node */](getRoot: () => N, visit: (Partial[Visitor[N]], Any) => Unit): Tree[N] = {
       val __obj = js.Dynamic.literal(getRoot = js.Any.fromFunction0(getRoot), visit = js.Any.fromFunction2(visit))
       __obj.asInstanceOf[Tree[N]]
     }
@@ -361,30 +354,30 @@ object mod {
       
       inline def setGetRoot(value: () => N): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
       
-      inline def setVisit(value: (Partial[Visitor[N]], js.Any) => Unit): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
+      inline def setVisit(value: (Partial[Visitor[N]], Any) => Unit): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
     }
   }
   
   trait Visitor[N /* <: Node */] extends StObject {
     
-    def onDetail(root: N, state: js.Any): Unit
+    def onDetail(root: N, state: Any): Unit
     
-    def onEnd(root: N, state: js.Any): Unit
+    def onEnd(root: N, state: Any): Unit
     
-    def onStart(root: N, state: js.Any): Unit
+    def onStart(root: N, state: Any): Unit
     
-    def onSummary(root: N, state: js.Any): Unit
+    def onSummary(root: N, state: Any): Unit
     
-    def onSummaryEnd(root: N, state: js.Any): Unit
+    def onSummaryEnd(root: N, state: Any): Unit
   }
   object Visitor {
     
     inline def apply[N /* <: Node */](
-      onDetail: (N, js.Any) => Unit,
-      onEnd: (N, js.Any) => Unit,
-      onStart: (N, js.Any) => Unit,
-      onSummary: (N, js.Any) => Unit,
-      onSummaryEnd: (N, js.Any) => Unit
+      onDetail: (N, Any) => Unit,
+      onEnd: (N, Any) => Unit,
+      onStart: (N, Any) => Unit,
+      onSummary: (N, Any) => Unit,
+      onSummaryEnd: (N, Any) => Unit
     ): Visitor[N] = {
       val __obj = js.Dynamic.literal(onDetail = js.Any.fromFunction2(onDetail), onEnd = js.Any.fromFunction2(onEnd), onStart = js.Any.fromFunction2(onStart), onSummary = js.Any.fromFunction2(onSummary), onSummaryEnd = js.Any.fromFunction2(onSummaryEnd))
       __obj.asInstanceOf[Visitor[N]]
@@ -392,15 +385,15 @@ object mod {
     
     extension [Self <: Visitor[?], N /* <: Node */](x: Self & Visitor[N]) {
       
-      inline def setOnDetail(value: (N, js.Any) => Unit): Self = StObject.set(x, "onDetail", js.Any.fromFunction2(value))
+      inline def setOnDetail(value: (N, Any) => Unit): Self = StObject.set(x, "onDetail", js.Any.fromFunction2(value))
       
-      inline def setOnEnd(value: (N, js.Any) => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction2(value))
+      inline def setOnEnd(value: (N, Any) => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction2(value))
       
-      inline def setOnStart(value: (N, js.Any) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
+      inline def setOnStart(value: (N, Any) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
       
-      inline def setOnSummary(value: (N, js.Any) => Unit): Self = StObject.set(x, "onSummary", js.Any.fromFunction2(value))
+      inline def setOnSummary(value: (N, Any) => Unit): Self = StObject.set(x, "onSummary", js.Any.fromFunction2(value))
       
-      inline def setOnSummaryEnd(value: (N, js.Any) => Unit): Self = StObject.set(x, "onSummaryEnd", js.Any.fromFunction2(value))
+      inline def setOnSummaryEnd(value: (N, Any) => Unit): Self = StObject.set(x, "onSummaryEnd", js.Any.fromFunction2(value))
     }
   }
   
@@ -454,14 +447,14 @@ object mod {
       * writes a tag and its value opening and closing it at the same time
       */
     def inlineTag(name: String): Unit = js.native
-    def inlineTag(name: String, attrs: js.Any): Unit = js.native
-    def inlineTag(name: String, attrs: js.Any, content: String): Unit = js.native
+    def inlineTag(name: String, attrs: Any): Unit = js.native
+    def inlineTag(name: String, attrs: Any, content: String): Unit = js.native
     def inlineTag(name: String, attrs: Unit, content: String): Unit = js.native
     
     /**
       * writes the opening XML tag with the supplied attributes
       */
     def openTag(name: String): Unit = js.native
-    def openTag(name: String, attrs: js.Any): Unit = js.native
+    def openTag(name: String, attrs: Any): Unit = js.native
   }
 }

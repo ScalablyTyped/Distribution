@@ -19,7 +19,7 @@ trait TestGridSessionArtifact extends StObject {
   /**
     * A semi-stable URL to the content of the object.
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[SensitiveString] = js.undefined
 }
 object TestGridSessionArtifact {
   
@@ -38,7 +38,7 @@ object TestGridSessionArtifact {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SensitiveString): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }

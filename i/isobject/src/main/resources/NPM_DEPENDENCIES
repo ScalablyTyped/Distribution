@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "isobject" : "3.0.1"
+      "isobject" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "isobject" : "3.0.1"
+      "isobject" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

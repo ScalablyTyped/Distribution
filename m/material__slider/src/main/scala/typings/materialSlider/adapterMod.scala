@@ -4,7 +4,7 @@ import typings.materialBase.typesMod.EventType
 import typings.materialBase.typesMod.SpecificEventListener
 import typings.materialSlider.typesMod.Thumb
 import typings.materialSlider.typesMod.TickMark
-import typings.std.ClientRect
+import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,6 +32,11 @@ object adapterMod {
       * Deregisters an event listener on the root element.
       */
     def deregisterEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
+    
+    /**
+      * Deregisters an event listener on the given input element.
+      */
+    def deregisterInputEventHandler[K /* <: EventType */](thumb: Thumb, evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Deregisters an event listener on the given thumb element.
@@ -72,9 +77,11 @@ object adapterMod {
     def emitInputEvent(value: Double, thumb: Thumb): Unit
     
     /**
-      * Adds browser focus to the given thumb.
+      * - If thumb is `Thumb.START`, focuses start input (range slider variant).
+      * - If thumb is `Thumb.END`, focuses end input (or only input for single
+      *   point slider).
       */
-    def focusThumb(thumb: Thumb): Unit
+    def focusInput(thumb: Thumb): Unit
     
     /**
       * @return Returns the given attribute value on the slider root element.
@@ -84,20 +91,28 @@ object adapterMod {
     /**
       * @return Returns the bounding client rect for the slider root element.
       */
-    def getBoundingClientRect(): ClientRect
+    def getBoundingClientRect(): DOMRect
     
     /**
-      * - If thumb is `Thumb.START`, returns the value on the start thumb
+      * - If thumb is `Thumb.START`, returns the attribute value on the start input
       *   (for range slider variant).
-      * - If thumb is `Thumb.END`, returns the value on the end thumb (or
-      *   only thumb for single point slider).
+      * - If thumb is `Thumb.END`, returns the attribute value on the end input (or
+      *   only input for single point slider).
       */
-    def getThumbAttribute(attribute: String, thumb: Thumb): String | Null
+    def getInputAttribute(attribute: String, thumb: Thumb): String | Null
+    
+    /**
+      * - If thumb is `Thumb.START`, returns the value property on the start input
+      *   (for range slider variant).
+      * - If thumb is `Thumb.END`, returns the value property on the end input (or
+      *   only input for single point slider).
+      */
+    def getInputValue(thumb: Thumb): String
     
     /**
       * @return Returns the bounding client rect of the given thumb.
       */
-    def getThumbBoundingClientRect(thumb: Thumb): ClientRect
+    def getThumbBoundingClientRect(thumb: Thumb): DOMRect
     
     /**
       * @return Returns the width of the given thumb knob.
@@ -105,11 +120,16 @@ object adapterMod {
     def getThumbKnobWidth(thumb: Thumb): Double
     
     /**
+      * @return Returns the width of the given value indicator container.
+      */
+    def getValueIndicatorContainerWidth(thumb: Thumb): Double
+    
+    /**
       * Returns a function that maps the slider value to the value of the
       * `aria-valuetext` attribute on the thumb element. If null, the
       * `aria-valuetext` attribute is unchanged when the value changes.
       */
-    def getValueToAriaValueTextFn(): (js.Function1[/* value */ Double, String]) | Null
+    def getValueToAriaValueTextFn(): (js.Function2[/* value */ Double, /* thumb */ Thumb, String]) | Null
     
     /**
       * @return Returns true if the slider root element has the given class.
@@ -117,14 +137,14 @@ object adapterMod {
     def hasClass(className: String): Boolean
     
     /**
+      * @return Returns true if the given input is focused.
+      */
+    def isInputFocused(thumb: Thumb): Boolean
+    
+    /**
       * @return Returns true if the root element is RTL, otherwise false
       */
     def isRTL(): Boolean
-    
-    /**
-      * @return Returns true if the given thumb is focused.
-      */
-    def isThumbFocused(thumb: Thumb): Boolean
     
     /**
       * Registers an event listener on the body element.
@@ -135,6 +155,11 @@ object adapterMod {
       * Registers an event listener on the root element.
       */
     def registerEventHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
+    
+    /**
+      * Registers an event listener on the given input element.
+      */
+    def registerInputEventHandler[K /* <: EventType */](thumb: Thumb, evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Registers an event listener on the given thumb element.
@@ -150,6 +175,14 @@ object adapterMod {
       * Removes the given class from the slider root element.
       */
     def removeClass(className: String): Unit
+    
+    /**
+      * - If thumb is `Thumb.START`, removes the attribute on the start input
+      *   (for range slider variant).
+      * - If thumb is `Thumb.END`, removes the attribute on the end input (or
+      *   only input for single point slider).
+      */
+    def removeInputAttribute(attribute: String, thumb: Thumb): Unit
     
     /**
       * Removes the class from the given thumb element.
@@ -171,18 +204,26 @@ object adapterMod {
     def removeTrackActiveStyleProperty(propertyName: String): Unit
     
     /**
+      * - If thumb is `Thumb.START`, sets the attribute on the start input
+      *   (for range slider variant).
+      * - If thumb is `Thumb.END`, sets the attribute on the end input (or
+      *   only input for single point slider).
+      */
+    def setInputAttribute(attribute: String, value: String, thumb: Thumb): Unit
+    
+    /**
+      * - If thumb is `Thumb.START`, sets the value property on the start input
+      *   (for range slider variant).
+      * - If thumb is `Thumb.END`, sets the value property on the end input (or
+      *   only input for single point slider).
+      */
+    def setInputValue(value: String, thumb: Thumb): Unit
+    
+    /**
       * Sets pointer capture on the slider root.
       * https://developer.mozilla.org/en-US/docs/Web/API/Element/setPointerCapture
       */
     def setPointerCapture(pointerId: Double): Unit
-    
-    /**
-      * - If thumb is `Thumb.START`, sets the attribute on the start thumb
-      *   (for range slider variant).
-      * - If thumb is `Thumb.END`, sets the attribute on the end thumb (or
-      *   only thumb for single point slider).
-      */
-    def setThumbAttribute(attribute: String, value: String, thumb: Thumb): Unit
     
     /**
       * Sets a style property of the thumb element to the passed value.
@@ -208,6 +249,11 @@ object adapterMod {
     def setValueIndicatorText(value: Double, thumb: Thumb): Unit
     
     /**
+      * @return Returns true if focus styles should be hidden for pointer events.
+      */
+    var shouldHideFocusStylesForPointerEvents: js.UndefOr[js.Function0[Boolean]] = js.undefined
+    
+    /**
       * Updates tick marks container element with tick mark elements and their
       * active/inactive classes, based on the given mappings:
       * - TickMark.ACTIVE => `cssClasses.TICK_MARK_ACTIVE`
@@ -220,40 +266,46 @@ object adapterMod {
     inline def apply(
       addClass: String => Unit,
       addThumbClass: (String, Thumb) => Unit,
-      deregisterBodyEventHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
-      deregisterEventHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
-      deregisterThumbEventHandler: (Thumb, js.Any, SpecificEventListener[js.Any]) => Unit,
-      deregisterWindowEventHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
+      deregisterBodyEventHandler: (Any, SpecificEventListener[Any]) => Unit,
+      deregisterEventHandler: (Any, SpecificEventListener[Any]) => Unit,
+      deregisterInputEventHandler: (Thumb, Any, SpecificEventListener[Any]) => Unit,
+      deregisterThumbEventHandler: (Thumb, Any, SpecificEventListener[Any]) => Unit,
+      deregisterWindowEventHandler: (Any, SpecificEventListener[Any]) => Unit,
       emitChangeEvent: (Double, Thumb) => Unit,
       emitDragEndEvent: (Double, Thumb) => Unit,
       emitDragStartEvent: (Double, Thumb) => Unit,
       emitInputEvent: (Double, Thumb) => Unit,
-      focusThumb: Thumb => Unit,
+      focusInput: Thumb => Unit,
       getAttribute: String => String | Null,
-      getBoundingClientRect: () => ClientRect,
-      getThumbAttribute: (String, Thumb) => String | Null,
-      getThumbBoundingClientRect: Thumb => ClientRect,
+      getBoundingClientRect: () => DOMRect,
+      getInputAttribute: (String, Thumb) => String | Null,
+      getInputValue: Thumb => String,
+      getThumbBoundingClientRect: Thumb => DOMRect,
       getThumbKnobWidth: Thumb => Double,
-      getValueToAriaValueTextFn: () => (js.Function1[/* value */ Double, String]) | Null,
+      getValueIndicatorContainerWidth: Thumb => Double,
+      getValueToAriaValueTextFn: () => (js.Function2[/* value */ Double, /* thumb */ Thumb, String]) | Null,
       hasClass: String => Boolean,
+      isInputFocused: Thumb => Boolean,
       isRTL: () => Boolean,
-      isThumbFocused: Thumb => Boolean,
-      registerBodyEventHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
-      registerEventHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
-      registerThumbEventHandler: (Thumb, js.Any, SpecificEventListener[js.Any]) => Unit,
-      registerWindowEventHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
+      registerBodyEventHandler: (Any, SpecificEventListener[Any]) => Unit,
+      registerEventHandler: (Any, SpecificEventListener[Any]) => Unit,
+      registerInputEventHandler: (Thumb, Any, SpecificEventListener[Any]) => Unit,
+      registerThumbEventHandler: (Thumb, Any, SpecificEventListener[Any]) => Unit,
+      registerWindowEventHandler: (Any, SpecificEventListener[Any]) => Unit,
       removeClass: String => Unit,
+      removeInputAttribute: (String, Thumb) => Unit,
       removeThumbClass: (String, Thumb) => Unit,
       removeThumbStyleProperty: (String, Thumb) => Unit,
       removeTrackActiveStyleProperty: String => Unit,
+      setInputAttribute: (String, String, Thumb) => Unit,
+      setInputValue: (String, Thumb) => Unit,
       setPointerCapture: Double => Unit,
-      setThumbAttribute: (String, String, Thumb) => Unit,
       setThumbStyleProperty: (String, String, Thumb) => Unit,
       setTrackActiveStyleProperty: (String, String) => Unit,
       setValueIndicatorText: (Double, Thumb) => Unit,
       updateTickMarks: js.Array[TickMark] => Unit
     ): MDCSliderAdapter = {
-      val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), addThumbClass = js.Any.fromFunction2(addThumbClass), deregisterBodyEventHandler = js.Any.fromFunction2(deregisterBodyEventHandler), deregisterEventHandler = js.Any.fromFunction2(deregisterEventHandler), deregisterThumbEventHandler = js.Any.fromFunction3(deregisterThumbEventHandler), deregisterWindowEventHandler = js.Any.fromFunction2(deregisterWindowEventHandler), emitChangeEvent = js.Any.fromFunction2(emitChangeEvent), emitDragEndEvent = js.Any.fromFunction2(emitDragEndEvent), emitDragStartEvent = js.Any.fromFunction2(emitDragStartEvent), emitInputEvent = js.Any.fromFunction2(emitInputEvent), focusThumb = js.Any.fromFunction1(focusThumb), getAttribute = js.Any.fromFunction1(getAttribute), getBoundingClientRect = js.Any.fromFunction0(getBoundingClientRect), getThumbAttribute = js.Any.fromFunction2(getThumbAttribute), getThumbBoundingClientRect = js.Any.fromFunction1(getThumbBoundingClientRect), getThumbKnobWidth = js.Any.fromFunction1(getThumbKnobWidth), getValueToAriaValueTextFn = js.Any.fromFunction0(getValueToAriaValueTextFn), hasClass = js.Any.fromFunction1(hasClass), isRTL = js.Any.fromFunction0(isRTL), isThumbFocused = js.Any.fromFunction1(isThumbFocused), registerBodyEventHandler = js.Any.fromFunction2(registerBodyEventHandler), registerEventHandler = js.Any.fromFunction2(registerEventHandler), registerThumbEventHandler = js.Any.fromFunction3(registerThumbEventHandler), registerWindowEventHandler = js.Any.fromFunction2(registerWindowEventHandler), removeClass = js.Any.fromFunction1(removeClass), removeThumbClass = js.Any.fromFunction2(removeThumbClass), removeThumbStyleProperty = js.Any.fromFunction2(removeThumbStyleProperty), removeTrackActiveStyleProperty = js.Any.fromFunction1(removeTrackActiveStyleProperty), setPointerCapture = js.Any.fromFunction1(setPointerCapture), setThumbAttribute = js.Any.fromFunction3(setThumbAttribute), setThumbStyleProperty = js.Any.fromFunction3(setThumbStyleProperty), setTrackActiveStyleProperty = js.Any.fromFunction2(setTrackActiveStyleProperty), setValueIndicatorText = js.Any.fromFunction2(setValueIndicatorText), updateTickMarks = js.Any.fromFunction1(updateTickMarks))
+      val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), addThumbClass = js.Any.fromFunction2(addThumbClass), deregisterBodyEventHandler = js.Any.fromFunction2(deregisterBodyEventHandler), deregisterEventHandler = js.Any.fromFunction2(deregisterEventHandler), deregisterInputEventHandler = js.Any.fromFunction3(deregisterInputEventHandler), deregisterThumbEventHandler = js.Any.fromFunction3(deregisterThumbEventHandler), deregisterWindowEventHandler = js.Any.fromFunction2(deregisterWindowEventHandler), emitChangeEvent = js.Any.fromFunction2(emitChangeEvent), emitDragEndEvent = js.Any.fromFunction2(emitDragEndEvent), emitDragStartEvent = js.Any.fromFunction2(emitDragStartEvent), emitInputEvent = js.Any.fromFunction2(emitInputEvent), focusInput = js.Any.fromFunction1(focusInput), getAttribute = js.Any.fromFunction1(getAttribute), getBoundingClientRect = js.Any.fromFunction0(getBoundingClientRect), getInputAttribute = js.Any.fromFunction2(getInputAttribute), getInputValue = js.Any.fromFunction1(getInputValue), getThumbBoundingClientRect = js.Any.fromFunction1(getThumbBoundingClientRect), getThumbKnobWidth = js.Any.fromFunction1(getThumbKnobWidth), getValueIndicatorContainerWidth = js.Any.fromFunction1(getValueIndicatorContainerWidth), getValueToAriaValueTextFn = js.Any.fromFunction0(getValueToAriaValueTextFn), hasClass = js.Any.fromFunction1(hasClass), isInputFocused = js.Any.fromFunction1(isInputFocused), isRTL = js.Any.fromFunction0(isRTL), registerBodyEventHandler = js.Any.fromFunction2(registerBodyEventHandler), registerEventHandler = js.Any.fromFunction2(registerEventHandler), registerInputEventHandler = js.Any.fromFunction3(registerInputEventHandler), registerThumbEventHandler = js.Any.fromFunction3(registerThumbEventHandler), registerWindowEventHandler = js.Any.fromFunction2(registerWindowEventHandler), removeClass = js.Any.fromFunction1(removeClass), removeInputAttribute = js.Any.fromFunction2(removeInputAttribute), removeThumbClass = js.Any.fromFunction2(removeThumbClass), removeThumbStyleProperty = js.Any.fromFunction2(removeThumbStyleProperty), removeTrackActiveStyleProperty = js.Any.fromFunction1(removeTrackActiveStyleProperty), setInputAttribute = js.Any.fromFunction3(setInputAttribute), setInputValue = js.Any.fromFunction2(setInputValue), setPointerCapture = js.Any.fromFunction1(setPointerCapture), setThumbStyleProperty = js.Any.fromFunction3(setThumbStyleProperty), setTrackActiveStyleProperty = js.Any.fromFunction2(setTrackActiveStyleProperty), setValueIndicatorText = js.Any.fromFunction2(setValueIndicatorText), updateTickMarks = js.Any.fromFunction1(updateTickMarks))
       __obj.asInstanceOf[MDCSliderAdapter]
     }
     
@@ -263,13 +315,15 @@ object adapterMod {
       
       inline def setAddThumbClass(value: (String, Thumb) => Unit): Self = StObject.set(x, "addThumbClass", js.Any.fromFunction2(value))
       
-      inline def setDeregisterBodyEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterBodyEventHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterBodyEventHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "deregisterBodyEventHandler", js.Any.fromFunction2(value))
       
-      inline def setDeregisterEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterEventHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterEventHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "deregisterEventHandler", js.Any.fromFunction2(value))
       
-      inline def setDeregisterThumbEventHandler(value: (Thumb, js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterThumbEventHandler", js.Any.fromFunction3(value))
+      inline def setDeregisterInputEventHandler(value: (Thumb, Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "deregisterInputEventHandler", js.Any.fromFunction3(value))
       
-      inline def setDeregisterWindowEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterWindowEventHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterThumbEventHandler(value: (Thumb, Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "deregisterThumbEventHandler", js.Any.fromFunction3(value))
+      
+      inline def setDeregisterWindowEventHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "deregisterWindowEventHandler", js.Any.fromFunction2(value))
       
       inline def setEmitChangeEvent(value: (Double, Thumb) => Unit): Self = StObject.set(x, "emitChangeEvent", js.Any.fromFunction2(value))
       
@@ -279,35 +333,43 @@ object adapterMod {
       
       inline def setEmitInputEvent(value: (Double, Thumb) => Unit): Self = StObject.set(x, "emitInputEvent", js.Any.fromFunction2(value))
       
-      inline def setFocusThumb(value: Thumb => Unit): Self = StObject.set(x, "focusThumb", js.Any.fromFunction1(value))
+      inline def setFocusInput(value: Thumb => Unit): Self = StObject.set(x, "focusInput", js.Any.fromFunction1(value))
       
       inline def setGetAttribute(value: String => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
       
-      inline def setGetBoundingClientRect(value: () => ClientRect): Self = StObject.set(x, "getBoundingClientRect", js.Any.fromFunction0(value))
+      inline def setGetBoundingClientRect(value: () => DOMRect): Self = StObject.set(x, "getBoundingClientRect", js.Any.fromFunction0(value))
       
-      inline def setGetThumbAttribute(value: (String, Thumb) => String | Null): Self = StObject.set(x, "getThumbAttribute", js.Any.fromFunction2(value))
+      inline def setGetInputAttribute(value: (String, Thumb) => String | Null): Self = StObject.set(x, "getInputAttribute", js.Any.fromFunction2(value))
       
-      inline def setGetThumbBoundingClientRect(value: Thumb => ClientRect): Self = StObject.set(x, "getThumbBoundingClientRect", js.Any.fromFunction1(value))
+      inline def setGetInputValue(value: Thumb => String): Self = StObject.set(x, "getInputValue", js.Any.fromFunction1(value))
+      
+      inline def setGetThumbBoundingClientRect(value: Thumb => DOMRect): Self = StObject.set(x, "getThumbBoundingClientRect", js.Any.fromFunction1(value))
       
       inline def setGetThumbKnobWidth(value: Thumb => Double): Self = StObject.set(x, "getThumbKnobWidth", js.Any.fromFunction1(value))
       
-      inline def setGetValueToAriaValueTextFn(value: () => (js.Function1[/* value */ Double, String]) | Null): Self = StObject.set(x, "getValueToAriaValueTextFn", js.Any.fromFunction0(value))
+      inline def setGetValueIndicatorContainerWidth(value: Thumb => Double): Self = StObject.set(x, "getValueIndicatorContainerWidth", js.Any.fromFunction1(value))
+      
+      inline def setGetValueToAriaValueTextFn(value: () => (js.Function2[/* value */ Double, /* thumb */ Thumb, String]) | Null): Self = StObject.set(x, "getValueToAriaValueTextFn", js.Any.fromFunction0(value))
       
       inline def setHasClass(value: String => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
+      inline def setIsInputFocused(value: Thumb => Boolean): Self = StObject.set(x, "isInputFocused", js.Any.fromFunction1(value))
+      
       inline def setIsRTL(value: () => Boolean): Self = StObject.set(x, "isRTL", js.Any.fromFunction0(value))
       
-      inline def setIsThumbFocused(value: Thumb => Boolean): Self = StObject.set(x, "isThumbFocused", js.Any.fromFunction1(value))
+      inline def setRegisterBodyEventHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "registerBodyEventHandler", js.Any.fromFunction2(value))
       
-      inline def setRegisterBodyEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerBodyEventHandler", js.Any.fromFunction2(value))
+      inline def setRegisterEventHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "registerEventHandler", js.Any.fromFunction2(value))
       
-      inline def setRegisterEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerEventHandler", js.Any.fromFunction2(value))
+      inline def setRegisterInputEventHandler(value: (Thumb, Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "registerInputEventHandler", js.Any.fromFunction3(value))
       
-      inline def setRegisterThumbEventHandler(value: (Thumb, js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerThumbEventHandler", js.Any.fromFunction3(value))
+      inline def setRegisterThumbEventHandler(value: (Thumb, Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "registerThumbEventHandler", js.Any.fromFunction3(value))
       
-      inline def setRegisterWindowEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerWindowEventHandler", js.Any.fromFunction2(value))
+      inline def setRegisterWindowEventHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "registerWindowEventHandler", js.Any.fromFunction2(value))
       
       inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      
+      inline def setRemoveInputAttribute(value: (String, Thumb) => Unit): Self = StObject.set(x, "removeInputAttribute", js.Any.fromFunction2(value))
       
       inline def setRemoveThumbClass(value: (String, Thumb) => Unit): Self = StObject.set(x, "removeThumbClass", js.Any.fromFunction2(value))
       
@@ -315,15 +377,21 @@ object adapterMod {
       
       inline def setRemoveTrackActiveStyleProperty(value: String => Unit): Self = StObject.set(x, "removeTrackActiveStyleProperty", js.Any.fromFunction1(value))
       
-      inline def setSetPointerCapture(value: Double => Unit): Self = StObject.set(x, "setPointerCapture", js.Any.fromFunction1(value))
+      inline def setSetInputAttribute(value: (String, String, Thumb) => Unit): Self = StObject.set(x, "setInputAttribute", js.Any.fromFunction3(value))
       
-      inline def setSetThumbAttribute(value: (String, String, Thumb) => Unit): Self = StObject.set(x, "setThumbAttribute", js.Any.fromFunction3(value))
+      inline def setSetInputValue(value: (String, Thumb) => Unit): Self = StObject.set(x, "setInputValue", js.Any.fromFunction2(value))
+      
+      inline def setSetPointerCapture(value: Double => Unit): Self = StObject.set(x, "setPointerCapture", js.Any.fromFunction1(value))
       
       inline def setSetThumbStyleProperty(value: (String, String, Thumb) => Unit): Self = StObject.set(x, "setThumbStyleProperty", js.Any.fromFunction3(value))
       
       inline def setSetTrackActiveStyleProperty(value: (String, String) => Unit): Self = StObject.set(x, "setTrackActiveStyleProperty", js.Any.fromFunction2(value))
       
       inline def setSetValueIndicatorText(value: (Double, Thumb) => Unit): Self = StObject.set(x, "setValueIndicatorText", js.Any.fromFunction2(value))
+      
+      inline def setShouldHideFocusStylesForPointerEvents(value: () => Boolean): Self = StObject.set(x, "shouldHideFocusStylesForPointerEvents", js.Any.fromFunction0(value))
+      
+      inline def setShouldHideFocusStylesForPointerEventsUndefined: Self = StObject.set(x, "shouldHideFocusStylesForPointerEvents", js.undefined)
       
       inline def setUpdateTickMarks(value: js.Array[TickMark] => Unit): Self = StObject.set(x, "updateTickMarks", js.Any.fromFunction1(value))
     }

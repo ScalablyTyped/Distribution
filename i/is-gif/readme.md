@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-gif
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 Check if a Buffer/Uint8Array is a GIF image
@@ -9,11 +9,11 @@ Check if a Buffer/Uint8Array is a GIF image
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | is-gif |
-| Keywords           | gif, graphics, image, img, pic, picture, photo, type, detect, check, is, exif, binary, buffer, uint8array |
-| # releases         | 0 |
-| # dependents       | 36 |
-| # downloads        | 25823186 |
-| # stars            | 3 |
+| Keywords           | gif, graphics, image, picture, photo, type, detect, check, is, exif, binary, buffer, uint8array |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2585748.3333333335 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-gif#readme)

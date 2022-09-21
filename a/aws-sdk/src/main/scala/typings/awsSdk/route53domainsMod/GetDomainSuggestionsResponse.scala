@@ -24,6 +24,6 @@ object GetDomainSuggestionsResponse {
     
     inline def setSuggestionsListUndefined: Self = StObject.set(x, "SuggestionsList", js.undefined)
     
-    inline def setSuggestionsListVarargs(value: DomainSuggestion*): Self = StObject.set(x, "SuggestionsList", js.Array(value :_*))
+    inline def setSuggestionsListVarargs(value: DomainSuggestion*): Self = StObject.set(x, "SuggestionsList", js.Array(value*))
   }
 }

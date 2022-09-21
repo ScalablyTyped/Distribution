@@ -10,7 +10,7 @@ trait MochaPhantomJsWindowOptions
   
   var ended: Boolean
   
-  var env: js.Any
+  var env: Any
   
   var failures: Double
   
@@ -22,7 +22,7 @@ object MochaPhantomJsWindowOptions {
   
   inline def apply(
     ended: Boolean,
-    env: js.Any,
+    env: Any,
     failures: Double,
     mochaPhantomJS: () => MochaPhantomJsWindowOptions,
     run: () => Unit,
@@ -36,7 +36,7 @@ object MochaPhantomJsWindowOptions {
     
     inline def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     
-    inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     inline def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

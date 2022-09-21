@@ -1,7 +1,7 @@
 
 # Scala.js typings for data-urls
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Parses data: URLs
@@ -10,10 +10,10 @@ Parses data: URLs
 | ------------------ | :-------------: |
 | Full name          | data-urls |
 | Keywords           | data url, data uri, data:, http, fetch, whatwg |
-| # releases         | 2 |
-| # dependents       | 86 |
-| # downloads        | 448398951 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 7.672595433333333E7 |
+| # stars            | 57.0 |
 
 ## Links
 - [Homepage](https://github.com/jsdom/data-urls#readme)

@@ -9,8 +9,7 @@ object baseWidgetMod {
   
   @JSImport("storm-react-diagrams/dist/src/widgets/BaseWidget", "BaseWidget")
   @js.native
-  class BaseWidget[P /* <: BaseWidgetProps */, S] protected ()
-    extends Component[P, S, js.Any] {
+  open class BaseWidget[P /* <: BaseWidgetProps */, S] protected () extends Component[P, S, Any] {
     def this(name: String, props: P) = this()
     
     def bem(selector: String): String = js.native
@@ -19,7 +18,7 @@ object baseWidgetMod {
     
     def getClassName(): String = js.native
     
-    def getProps(): js.Any = js.native
+    def getProps(): Any = js.native
   }
   
   trait BaseWidgetProps extends StObject {
@@ -37,7 +36,7 @@ object baseWidgetMod {
     /**
       * Additional props to add
       */
-    var extraProps: js.UndefOr[js.Any] = js.undefined
+    var extraProps: js.UndefOr[Any] = js.undefined
   }
   object BaseWidgetProps {
     
@@ -56,7 +55,7 @@ object baseWidgetMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setExtraProps(value: js.Any): Self = StObject.set(x, "extraProps", value.asInstanceOf[js.Any])
+      inline def setExtraProps(value: Any): Self = StObject.set(x, "extraProps", value.asInstanceOf[js.Any])
       
       inline def setExtraPropsUndefined: Self = StObject.set(x, "extraProps", js.undefined)
     }

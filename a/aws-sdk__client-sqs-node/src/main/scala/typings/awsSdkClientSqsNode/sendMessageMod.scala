@@ -8,5 +8,5 @@ object sendMessageMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/SendMessage", "SendMessage")
   @js.native
-  val SendMessage: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val SendMessage: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

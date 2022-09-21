@@ -29,6 +29,6 @@ object GoogleCloudRecommendationengineV1beta1PurgeUserEventsResponse {
     
     inline def setUserEventsSampleUndefined: Self = StObject.set(x, "userEventsSample", js.undefined)
     
-    inline def setUserEventsSampleVarargs(value: GoogleCloudRecommendationengineV1beta1UserEvent*): Self = StObject.set(x, "userEventsSample", js.Array(value :_*))
+    inline def setUserEventsSampleVarargs(value: GoogleCloudRecommendationengineV1beta1UserEvent*): Self = StObject.set(x, "userEventsSample", js.Array(value*))
   }
 }

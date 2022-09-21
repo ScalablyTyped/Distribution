@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://easings.net/#easeInExpo
   * @param exponent Defines the exponent of the function
   */
-class ExponentialEase ()
+open class ExponentialEase ()
   extends typings.babylonjs.animationsIndexMod.ExponentialEase {
   def this(/** Defines the exponent of the function */
   exponent: Double) = this()

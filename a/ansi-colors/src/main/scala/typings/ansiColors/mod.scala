@@ -1,6 +1,54 @@
 package typings.ansiColors
 
-import typings.std.RegExp
+import typings.ansiColors.ansiColorsStrings.Ballotbox
+import typings.ansiColors.ansiColorsStrings.Ballotboxwithcheck
+import typings.ansiColors.ansiColorsStrings.Ballotboxwithx
+import typings.ansiColors.ansiColorsStrings.Blackrightpointingsmalltriangle
+import typings.ansiColors.ansiColorsStrings.Blackstar
+import typings.ansiColors.ansiColorsStrings.Boxdrawingslighthorizontal
+import typings.ansiColors.ansiColorsStrings.Bullet
+import typings.ansiColors.ansiColorsStrings.Curvedstemparagraphsignornament
+import typings.ansiColors.ansiColorsStrings.Divisionsign
+import typings.ansiColors.ansiColorsStrings.DotDotDot
+import typings.ansiColors.ansiColorsStrings.Doubleexclamationmark
+import typings.ansiColors.ansiColorsStrings.Fisheye
+import typings.ansiColors.ansiColorsStrings.Fullblock
+import typings.ansiColors.ansiColorsStrings.Fullwidthhyphenminus
+import typings.ansiColors.ansiColorsStrings.Fullwidthquestionmark
+import typings.ansiColors.ansiColorsStrings.Greaterthansign
+import typings.ansiColors.ansiColorsStrings.Heavyballotx
+import typings.ansiColors.ansiColorsStrings.Heavyblackheart
+import typings.ansiColors.ansiColorsStrings.Heavycheckmark
+import typings.ansiColors.ansiColorsStrings.Heavymultiplicationx
+import typings.ansiColors.ansiColorsStrings.Heavyrightpointinganglequotationmarkornament
+import typings.ansiColors.ansiColorsStrings.Horizontalellipsis
+import typings.ansiColors.ansiColorsStrings.Identicalto
+import typings.ansiColors.ansiColorsStrings.Largecircle
+import typings.ansiColors.ansiColorsStrings.LeftparenthesisAsteriskRightparenthesis
+import typings.ansiColors.ansiColorsStrings.Lowerrightpencil
+import typings.ansiColors.ansiColorsStrings.Midlinehorizontalellipsis
+import typings.ansiColors.ansiColorsStrings.Multiplicationsign
+import typings.ansiColors.ansiColorsStrings.Pencil
+import typings.ansiColors.ansiColorsStrings.Percentsign
+import typings.ansiColors.ansiColorsStrings.Pilcrowsign
+import typings.ansiColors.ansiColorsStrings.Plusminussign
+import typings.ansiColors.ansiColorsStrings.Questionmark
+import typings.ansiColors.ansiColorsStrings.Referencemark
+import typings.ansiColors.ansiColorsStrings.Rightpointingdoubleanglequotationmark
+import typings.ansiColors.ansiColorsStrings.Sectionsign
+import typings.ansiColors.ansiColorsStrings.Singlerightpointinganglequotationmark
+import typings.ansiColors.ansiColorsStrings.Smallquestionmark
+import typings.ansiColors.ansiColorsStrings.Squareroot
+import typings.ansiColors.ansiColorsStrings.Triangularbullet
+import typings.ansiColors.ansiColorsStrings.Updownarrow
+import typings.ansiColors.ansiColorsStrings.Upperrightpencil
+import typings.ansiColors.ansiColorsStrings.Warningsign
+import typings.ansiColors.ansiColorsStrings.Whitebullet
+import typings.ansiColors.ansiColorsStrings.Whitestar
+import typings.ansiColors.ansiColorsStrings.`Leftparenthesis Rightparenthesis`
+import typings.ansiColors.ansiColorsStrings.`·`
+import typings.ansiColors.ansiColorsStrings.i
+import typings.ansiColors.ansiColorsStrings.ℹ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +61,14 @@ object mod {
   
   @JSImport("ansi-colors", "ansiRegex")
   @js.native
-  val ansiRegex: RegExp = js.native
+  val ansiRegex: js.RegExp = js.native
   
+  // background colors
   @JSImport("ansi-colors", "bgBlack")
   @js.native
   val bgBlack: StyleFunction = js.native
   
+  // bright background colors
   @JSImport("ansi-colors", "bgBlackBright")
   @js.native
   val bgBlackBright: StyleFunction = js.native
@@ -79,10 +129,12 @@ object mod {
   @js.native
   val bgYellowBright: StyleFunction = js.native
   
+  // colors
   @JSImport("ansi-colors", "black")
   @js.native
   val black: StyleFunction = js.native
   
+  // bright colors
   @JSImport("ansi-colors", "blackBright")
   @js.native
   val blackBright: StyleFunction = js.native
@@ -98,6 +150,8 @@ object mod {
   @JSImport("ansi-colors", "bold")
   @js.native
   val bold: StyleFunction = js.native
+  
+  inline def create(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Any]
   
   @JSImport("ansi-colors", "cyan")
   @js.native
@@ -152,7 +206,10 @@ object mod {
   @js.native
   val magentaBright: StyleFunction = js.native
   
-  inline def ok(args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ok")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+  /**
+    * Outputs a string with check-symbol as prefix
+    */
+  inline def ok(args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ok")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
   @JSImport("ansi-colors", "red")
   @js.native
@@ -162,6 +219,7 @@ object mod {
   @js.native
   val redBright: StyleFunction = js.native
   
+  // modifiers
   @JSImport("ansi-colors", "reset")
   @js.native
   val reset: StyleFunction = js.native
@@ -170,8 +228,14 @@ object mod {
   @js.native
   val strikethrough: StyleFunction = js.native
   
+  /**
+    * Remove styles from string
+    */
   inline def strip(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strip")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  /**
+    * Remove styles from string
+    */
   inline def stripColor(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripColor")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ansi-colors", "styles")
@@ -186,6 +250,9 @@ object mod {
   @js.native
   val underline: StyleFunction = js.native
   
+  /**
+    * Remove styles from string
+    */
   inline def unstyle(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unstyle")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ansi-colors", "visible")
@@ -477,55 +544,226 @@ object mod {
   
   trait SymbolsType extends StObject {
     
-    var check: String
+    /**
+      * `undefined` on windows, `✘` on other platforms.
+      */
+    var ballotCross: js.UndefOr[Heavyballotx] = js.undefined
     
-    var cross: String
+    var ballotDisabled: Ballotboxwithx
     
-    var info: String
+    var ballotOff: Ballotbox
     
-    var line: String
+    var ballotOn: Ballotboxwithcheck
     
-    var pointer: String
+    var bullet: Bullet
     
-    var pointerSmall: String
+    var bulletWhite: Whitebullet
     
-    var question: String
+    /**
+      * `√` on windows, `✔` on other platforms.
+      */
+    var check: Squareroot | Heavycheckmark
     
-    var warning: String
+    /**
+      * `×` on windows, `✖` on other platforms.
+      */
+    var cross: Multiplicationsign | Heavymultiplicationx
+    
+    /**
+      * `...` on windows, `…` on other platforms.
+      */
+    var ellipsis: DotDotDot | Horizontalellipsis
+    
+    /**
+      * `...` on windows, `⋯` on other platforms.
+      */
+    var ellipsisLarge: DotDotDot | Midlinehorizontalellipsis
+    
+    var fullBlock: Fullblock
+    
+    var heart: Heavyblackheart
+    
+    var identicalTo: Identicalto
+    
+    var info: i | ℹ
+    
+    var line: Boxdrawingslighthorizontal
+    
+    var mark: Referencemark
+    
+    var middot: `·`
+    
+    var minus: Fullwidthhyphenminus
+    
+    var multiplication: Multiplicationsign
+    
+    var obelus: Divisionsign
+    
+    var pencilDownRight: Lowerrightpencil
+    
+    var pencilRight: Pencil
+    
+    var pencilUpRight: Upperrightpencil
+    
+    var percent: Percentsign
+    
+    var pilcrow: Pilcrowsign
+    
+    var pilcrow2: Curvedstemparagraphsignornament
+    
+    var plusMinus: Plusminussign
+    
+    /**
+      * `>` on windows, `▸` on linux, and `❯` on other platforms.
+      */
+    var pointer: Greaterthansign | Blackrightpointingsmalltriangle | Heavyrightpointinganglequotationmarkornament
+    
+    /**
+      * `»` on windows, `‣` on linux, and `›` on other platforms.
+      */
+    var pointerSmall: Rightpointingdoubleanglequotationmark | Triangularbullet | Singlerightpointinganglequotationmark
+    
+    var question: Questionmark
+    
+    /**
+      * `undefined` on windows, `？` on other platforms.
+      */
+    var questionFull: js.UndefOr[Fullwidthquestionmark] = js.undefined
+    
+    /**
+      * `?` on windows, `﹖` on other platforms.
+      */
+    var questionSmall: Questionmark | Smallquestionmark
+    
+    /**
+      * `( )` on windows, `◯` on other platforms.
+      */
+    var radioOff: (`Leftparenthesis Rightparenthesis`) | Largecircle
+    
+    /**
+      * `(*)` on windows, `◉` on other platforms.
+      */
+    var radioOn: LeftparenthesisAsteriskRightparenthesis | Fisheye
+    
+    var section: Sectionsign
+    
+    var starsOff: Whitestar
+    
+    var starsOn: Blackstar
+    
+    var upDownArrow: Updownarrow
+    
+    /**
+      * `‼` on windows, `⚠` on other platforms.
+      */
+    var warning: Doubleexclamationmark | Warningsign
   }
   object SymbolsType {
     
     inline def apply(
-      check: String,
-      cross: String,
-      info: String,
-      line: String,
-      pointer: String,
-      pointerSmall: String,
-      question: String,
-      warning: String
+      check: Squareroot | Heavycheckmark,
+      cross: Multiplicationsign | Heavymultiplicationx,
+      ellipsis: DotDotDot | Horizontalellipsis,
+      ellipsisLarge: DotDotDot | Midlinehorizontalellipsis,
+      info: i | ℹ,
+      pointer: Greaterthansign | Blackrightpointingsmalltriangle | Heavyrightpointinganglequotationmarkornament,
+      pointerSmall: Rightpointingdoubleanglequotationmark | Triangularbullet | Singlerightpointinganglequotationmark,
+      questionSmall: Questionmark | Smallquestionmark,
+      radioOff: (`Leftparenthesis Rightparenthesis`) | Largecircle,
+      radioOn: LeftparenthesisAsteriskRightparenthesis | Fisheye,
+      warning: Doubleexclamationmark | Warningsign
     ): SymbolsType = {
-      val __obj = js.Dynamic.literal(check = check.asInstanceOf[js.Any], cross = cross.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], pointer = pointer.asInstanceOf[js.Any], pointerSmall = pointerSmall.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(ballotDisabled = "\u2612", ballotOff = "\u2610", ballotOn = "\u2611", bullet = "\u2022", bulletWhite = "\u25E6", check = check.asInstanceOf[js.Any], cross = cross.asInstanceOf[js.Any], ellipsis = ellipsis.asInstanceOf[js.Any], ellipsisLarge = ellipsisLarge.asInstanceOf[js.Any], fullBlock = "\u2588", heart = "\u2764", identicalTo = "\u2261", info = info.asInstanceOf[js.Any], line = "\u2500", mark = "\u203B", middot = "\u00B7", minus = "\uFF0D", multiplication = "\u00D7", obelus = "\u00F7", pencilDownRight = "\u270E", pencilRight = "\u270F", pencilUpRight = "\u2710", percent = "%", pilcrow = "\u00B6", pilcrow2 = "\u2761", plusMinus = "\u00B1", pointer = pointer.asInstanceOf[js.Any], pointerSmall = pointerSmall.asInstanceOf[js.Any], question = "?", questionSmall = questionSmall.asInstanceOf[js.Any], radioOff = radioOff.asInstanceOf[js.Any], radioOn = radioOn.asInstanceOf[js.Any], section = "\u00A7", starsOff = "\u2606", starsOn = "\u2605", upDownArrow = "\u2195", warning = warning.asInstanceOf[js.Any])
       __obj.asInstanceOf[SymbolsType]
     }
     
     extension [Self <: SymbolsType](x: Self) {
       
-      inline def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setBallotCross(value: Heavyballotx): Self = StObject.set(x, "ballotCross", value.asInstanceOf[js.Any])
       
-      inline def setCross(value: String): Self = StObject.set(x, "cross", value.asInstanceOf[js.Any])
+      inline def setBallotCrossUndefined: Self = StObject.set(x, "ballotCross", js.undefined)
       
-      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setBallotDisabled(value: Ballotboxwithx): Self = StObject.set(x, "ballotDisabled", value.asInstanceOf[js.Any])
       
-      inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setBallotOff(value: Ballotbox): Self = StObject.set(x, "ballotOff", value.asInstanceOf[js.Any])
       
-      inline def setPointer(value: String): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
+      inline def setBallotOn(value: Ballotboxwithcheck): Self = StObject.set(x, "ballotOn", value.asInstanceOf[js.Any])
       
-      inline def setPointerSmall(value: String): Self = StObject.set(x, "pointerSmall", value.asInstanceOf[js.Any])
+      inline def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
       
-      inline def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
+      inline def setBulletWhite(value: Whitebullet): Self = StObject.set(x, "bulletWhite", value.asInstanceOf[js.Any])
       
-      inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setCheck(value: Squareroot | Heavycheckmark): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      
+      inline def setCross(value: Multiplicationsign | Heavymultiplicationx): Self = StObject.set(x, "cross", value.asInstanceOf[js.Any])
+      
+      inline def setEllipsis(value: DotDotDot | Horizontalellipsis): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+      
+      inline def setEllipsisLarge(value: DotDotDot | Midlinehorizontalellipsis): Self = StObject.set(x, "ellipsisLarge", value.asInstanceOf[js.Any])
+      
+      inline def setFullBlock(value: Fullblock): Self = StObject.set(x, "fullBlock", value.asInstanceOf[js.Any])
+      
+      inline def setHeart(value: Heavyblackheart): Self = StObject.set(x, "heart", value.asInstanceOf[js.Any])
+      
+      inline def setIdenticalTo(value: Identicalto): Self = StObject.set(x, "identicalTo", value.asInstanceOf[js.Any])
+      
+      inline def setInfo(value: i | ℹ): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      
+      inline def setLine(value: Boxdrawingslighthorizontal): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      
+      inline def setMark(value: Referencemark): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+      
+      inline def setMiddot(value: `·`): Self = StObject.set(x, "middot", value.asInstanceOf[js.Any])
+      
+      inline def setMinus(value: Fullwidthhyphenminus): Self = StObject.set(x, "minus", value.asInstanceOf[js.Any])
+      
+      inline def setMultiplication(value: Multiplicationsign): Self = StObject.set(x, "multiplication", value.asInstanceOf[js.Any])
+      
+      inline def setObelus(value: Divisionsign): Self = StObject.set(x, "obelus", value.asInstanceOf[js.Any])
+      
+      inline def setPencilDownRight(value: Lowerrightpencil): Self = StObject.set(x, "pencilDownRight", value.asInstanceOf[js.Any])
+      
+      inline def setPencilRight(value: Pencil): Self = StObject.set(x, "pencilRight", value.asInstanceOf[js.Any])
+      
+      inline def setPencilUpRight(value: Upperrightpencil): Self = StObject.set(x, "pencilUpRight", value.asInstanceOf[js.Any])
+      
+      inline def setPercent(value: Percentsign): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      
+      inline def setPilcrow(value: Pilcrowsign): Self = StObject.set(x, "pilcrow", value.asInstanceOf[js.Any])
+      
+      inline def setPilcrow2(value: Curvedstemparagraphsignornament): Self = StObject.set(x, "pilcrow2", value.asInstanceOf[js.Any])
+      
+      inline def setPlusMinus(value: Plusminussign): Self = StObject.set(x, "plusMinus", value.asInstanceOf[js.Any])
+      
+      inline def setPointer(
+        value: Greaterthansign | Blackrightpointingsmalltriangle | Heavyrightpointinganglequotationmarkornament
+      ): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
+      
+      inline def setPointerSmall(
+        value: Rightpointingdoubleanglequotationmark | Triangularbullet | Singlerightpointinganglequotationmark
+      ): Self = StObject.set(x, "pointerSmall", value.asInstanceOf[js.Any])
+      
+      inline def setQuestion(value: Questionmark): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
+      
+      inline def setQuestionFull(value: Fullwidthquestionmark): Self = StObject.set(x, "questionFull", value.asInstanceOf[js.Any])
+      
+      inline def setQuestionFullUndefined: Self = StObject.set(x, "questionFull", js.undefined)
+      
+      inline def setQuestionSmall(value: Questionmark | Smallquestionmark): Self = StObject.set(x, "questionSmall", value.asInstanceOf[js.Any])
+      
+      inline def setRadioOff(value: (`Leftparenthesis Rightparenthesis`) | Largecircle): Self = StObject.set(x, "radioOff", value.asInstanceOf[js.Any])
+      
+      inline def setRadioOn(value: LeftparenthesisAsteriskRightparenthesis | Fisheye): Self = StObject.set(x, "radioOn", value.asInstanceOf[js.Any])
+      
+      inline def setSection(value: Sectionsign): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+      
+      inline def setStarsOff(value: Whitestar): Self = StObject.set(x, "starsOff", value.asInstanceOf[js.Any])
+      
+      inline def setStarsOn(value: Blackstar): Self = StObject.set(x, "starsOn", value.asInstanceOf[js.Any])
+      
+      inline def setUpDownArrow(value: Updownarrow): Self = StObject.set(x, "upDownArrow", value.asInstanceOf[js.Any])
+      
+      inline def setWarning(value: Doubleexclamationmark | Warningsign): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     }
   }
 }

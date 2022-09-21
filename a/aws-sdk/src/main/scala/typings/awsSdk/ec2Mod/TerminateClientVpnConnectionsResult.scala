@@ -38,7 +38,7 @@ object TerminateClientVpnConnectionsResult {
     
     inline def setConnectionStatusesUndefined: Self = StObject.set(x, "ConnectionStatuses", js.undefined)
     
-    inline def setConnectionStatusesVarargs(value: TerminateConnectionStatus*): Self = StObject.set(x, "ConnectionStatuses", js.Array(value :_*))
+    inline def setConnectionStatusesVarargs(value: TerminateConnectionStatus*): Self = StObject.set(x, "ConnectionStatuses", js.Array(value*))
     
     inline def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     

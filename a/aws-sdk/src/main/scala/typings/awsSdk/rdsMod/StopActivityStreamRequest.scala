@@ -12,7 +12,7 @@ trait StopActivityStreamRequest extends StObject {
   var ApplyImmediately: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the DB cluster for the database activity stream. For example, arn:aws:rds:us-east-1:12345667890:cluster:das-cluster. 
+    * The Amazon Resource Name (ARN) of the DB cluster for the database activity stream. For example, arn:aws:rds:us-east-1:12345667890:cluster:das-cluster.
     */
   var ResourceArn: String
 }

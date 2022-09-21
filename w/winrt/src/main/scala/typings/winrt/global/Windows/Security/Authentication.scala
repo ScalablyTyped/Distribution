@@ -33,13 +33,13 @@ object Authentication {
     
     @JSGlobal("Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator")
     @js.native
-    class OnlineIdAuthenticator ()
+    open class OnlineIdAuthenticator ()
       extends StObject
          with typings.winrt.Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator
     
     @JSGlobal("Windows.Security.Authentication.OnlineId.OnlineIdServiceTicket")
     @js.native
-    class OnlineIdServiceTicket ()
+    open class OnlineIdServiceTicket ()
       extends StObject
          with typings.winrt.Windows.Security.Authentication.OnlineId.OnlineIdServiceTicket {
       
@@ -55,7 +55,7 @@ object Authentication {
     
     @JSGlobal("Windows.Security.Authentication.OnlineId.OnlineIdServiceTicketRequest")
     @js.native
-    class OnlineIdServiceTicketRequest protected ()
+    open class OnlineIdServiceTicketRequest protected ()
       extends StObject
          with typings.winrt.Windows.Security.Authentication.OnlineId.OnlineIdServiceTicketRequest {
       def this(service: String) = this()
@@ -70,7 +70,7 @@ object Authentication {
     
     @JSGlobal("Windows.Security.Authentication.OnlineId.SignOutUserOperation")
     @js.native
-    class SignOutUserOperation ()
+    open class SignOutUserOperation ()
       extends StObject
          with typings.winrt.Windows.Security.Authentication.OnlineId.SignOutUserOperation {
       
@@ -92,7 +92,7 @@ object Authentication {
     
     @JSGlobal("Windows.Security.Authentication.OnlineId.UserAuthenticationOperation")
     @js.native
-    class UserAuthenticationOperation ()
+    open class UserAuthenticationOperation ()
       extends StObject
          with typings.winrt.Windows.Security.Authentication.OnlineId.UserAuthenticationOperation {
       
@@ -114,7 +114,7 @@ object Authentication {
     
     @JSGlobal("Windows.Security.Authentication.OnlineId.UserIdentity")
     @js.native
-    class UserIdentity ()
+    open class UserIdentity ()
       extends StObject
          with typings.winrt.Windows.Security.Authentication.OnlineId.UserIdentity {
       
@@ -148,7 +148,7 @@ object Authentication {
     
     @JSGlobal("Windows.Security.Authentication.Web.WebAuthenticationBroker")
     @js.native
-    class WebAuthenticationBroker ()
+    open class WebAuthenticationBroker ()
       extends StObject
          with typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationBroker
     /* static members */
@@ -190,7 +190,7 @@ object Authentication {
     
     @JSGlobal("Windows.Security.Authentication.Web.WebAuthenticationResult")
     @js.native
-    class WebAuthenticationResult ()
+    open class WebAuthenticationResult ()
       extends StObject
          with typings.winrt.Windows.Security.Authentication.Web.WebAuthenticationResult {
       

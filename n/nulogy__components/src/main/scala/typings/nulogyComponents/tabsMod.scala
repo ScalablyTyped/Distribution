@@ -8,9 +8,9 @@ object tabsMod {
   
   @JSImport("@nulogy/components/src/Tabs", "Tab")
   @js.native
-  val Tab: js.Any = js.native
+  val Tab: Any = js.native
   
   @JSImport("@nulogy/components/src/Tabs", "Tabs")
   @js.native
-  val Tabs: js.Any = js.native
+  val Tabs: Any = js.native
 }

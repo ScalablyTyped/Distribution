@@ -7,14 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type CallbackGame = js.Object
 
-type EditMessageLiveLocationOptions = typings.nodeTelegramBotApi.mod.EditMessageCaptionOptions
+type ChatId = Double | String
+
+type EditMessageLiveLocationOptions = EditMessageCaptionOptions
 
 type InputMessageContent = js.Object
 
-type SendGameOptions = typings.nodeTelegramBotApi.mod.SendBasicOptions
+type SendGameOptions = SendBasicOptions
 
-type SendLocationOptions = typings.nodeTelegramBotApi.mod.SendBasicOptions
+type SendLocationOptions = SendBasicOptions
 
-type SendStickerOptions = typings.nodeTelegramBotApi.mod.SendBasicOptions
+type SendStickerOptions = SendBasicOptions
 
-type StopMessageLiveLocationOptions = typings.nodeTelegramBotApi.mod.EditMessageCaptionOptions
+type StopMessageLiveLocationOptions = EditMessageCaptionOptions

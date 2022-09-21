@@ -40,7 +40,7 @@ trait Filter extends StObject {
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** The parent of the collection of `Builds`. Format: `projects/{project}/locations/location` */
+  /** The parent of the collection of `Builds`. Format: `projects/{project}/locations/{location}` */
   var parent: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */

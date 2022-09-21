@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RemoveHeldAccountsResponse extends StObject {
   
-  /** A list of statuses for deleted accounts. Results have the same order as the request. */
+  /** A list of statuses for the deleted accounts. Results have the same order as the request. */
   var statuses: js.UndefOr[js.Array[Status]] = js.undefined
 }
 object RemoveHeldAccountsResponse {
@@ -22,6 +22,6 @@ object RemoveHeldAccountsResponse {
     
     inline def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
     
-    inline def setStatusesVarargs(value: Status*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: Status*): Self = StObject.set(x, "statuses", js.Array(value*))
   }
 }

@@ -1,19 +1,18 @@
 
 # Scala.js typings for node-red__util
 
-Typings are for version 1.1
+Typings are for version 1.2
 
-## Library description:
-@node-red/util ====================
+
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @node-red/util |
 | Keywords           | - |
-| # releases         | 38 |
-| # dependents       | 11 |
-| # downloads        | 933688 |
-| # stars            | 0 |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 87019.33333333333 |
+| # stars            | 15051.0 |
 
 ## Links
 - [Homepage](https://github.com/node-red/node-red#readme)

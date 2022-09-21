@@ -14,7 +14,7 @@ trait DescribeHyperParameterTuningJobResponse extends StObject {
   /**
     * The date and time that the tuning job started.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * If the tuning job failed, the reason it failed.
@@ -24,7 +24,7 @@ trait DescribeHyperParameterTuningJobResponse extends StObject {
   /**
     * The date and time that the tuning job ended.
     */
-  var HyperParameterTuningEndTime: js.UndefOr[Timestamp] = js.undefined
+  var HyperParameterTuningEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the tuning job.
@@ -49,7 +49,7 @@ trait DescribeHyperParameterTuningJobResponse extends StObject {
   /**
     * The date and time that the status of the tuning job was modified. 
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ObjectiveStatusCounters object that specifies the number of training jobs, categorized by the status of their final objective metric, that this tuning job launched.
@@ -84,7 +84,7 @@ trait DescribeHyperParameterTuningJobResponse extends StObject {
 object DescribeHyperParameterTuningJobResponse {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     HyperParameterTuningJobArn: HyperParameterTuningJobArn,
     HyperParameterTuningJobConfig: HyperParameterTuningJobConfig,
     HyperParameterTuningJobName: HyperParameterTuningJobName,
@@ -102,13 +102,13 @@ object DescribeHyperParameterTuningJobResponse {
     
     inline def setBestTrainingJobUndefined: Self = StObject.set(x, "BestTrainingJob", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    inline def setHyperParameterTuningEndTime(value: Timestamp): Self = StObject.set(x, "HyperParameterTuningEndTime", value.asInstanceOf[js.Any])
+    inline def setHyperParameterTuningEndTime(value: js.Date): Self = StObject.set(x, "HyperParameterTuningEndTime", value.asInstanceOf[js.Any])
     
     inline def setHyperParameterTuningEndTimeUndefined: Self = StObject.set(x, "HyperParameterTuningEndTime", js.undefined)
     
@@ -120,7 +120,7 @@ object DescribeHyperParameterTuningJobResponse {
     
     inline def setHyperParameterTuningJobStatus(value: HyperParameterTuningJobStatus): Self = StObject.set(x, "HyperParameterTuningJobStatus", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
@@ -138,7 +138,7 @@ object DescribeHyperParameterTuningJobResponse {
     
     inline def setTrainingJobDefinitionsUndefined: Self = StObject.set(x, "TrainingJobDefinitions", js.undefined)
     
-    inline def setTrainingJobDefinitionsVarargs(value: HyperParameterTrainingJobDefinition*): Self = StObject.set(x, "TrainingJobDefinitions", js.Array(value :_*))
+    inline def setTrainingJobDefinitionsVarargs(value: HyperParameterTrainingJobDefinition*): Self = StObject.set(x, "TrainingJobDefinitions", js.Array(value*))
     
     inline def setTrainingJobStatusCounters(value: TrainingJobStatusCounters): Self = StObject.set(x, "TrainingJobStatusCounters", value.asInstanceOf[js.Any])
     

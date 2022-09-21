@@ -119,12 +119,12 @@ object PlatformSummary {
     
     inline def setSupportedAddonListUndefined: Self = StObject.set(x, "SupportedAddonList", js.undefined)
     
-    inline def setSupportedAddonListVarargs(value: SupportedAddon*): Self = StObject.set(x, "SupportedAddonList", js.Array(value :_*))
+    inline def setSupportedAddonListVarargs(value: SupportedAddon*): Self = StObject.set(x, "SupportedAddonList", js.Array(value*))
     
     inline def setSupportedTierList(value: SupportedTierList): Self = StObject.set(x, "SupportedTierList", value.asInstanceOf[js.Any])
     
     inline def setSupportedTierListUndefined: Self = StObject.set(x, "SupportedTierList", js.undefined)
     
-    inline def setSupportedTierListVarargs(value: SupportedTier*): Self = StObject.set(x, "SupportedTierList", js.Array(value :_*))
+    inline def setSupportedTierListVarargs(value: SupportedTier*): Self = StObject.set(x, "SupportedTierList", js.Array(value*))
   }
 }

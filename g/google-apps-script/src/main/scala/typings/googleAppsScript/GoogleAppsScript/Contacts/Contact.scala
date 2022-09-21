@@ -15,21 +15,21 @@ trait Contact extends StObject {
   
   def addAddress(label: String, address: String): AddressField = js.native
   def addAddress(
-    label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any,
+    label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ Any,
     address: String
   ): AddressField = js.native
   
   def addCompany(company: String, title: String): CompanyField = js.native
   
-  def addCustomField(label: String, content: js.Any): CustomField = js.native
+  def addCustomField(label: String, content: Any): CustomField = js.native
   def addCustomField(
-    label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExtendedField */ js.Any,
-    content: js.Any
+    label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExtendedField */ Any,
+    content: Any
   ): CustomField = js.native
   
   def addDate(label: String, month: Month, day: Integer, year: Integer): DateField = js.native
   def addDate(
-    label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any,
+    label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ Any,
     month: Month,
     day: Integer,
     year: Integer
@@ -37,19 +37,19 @@ trait Contact extends StObject {
   
   def addEmail(label: String, address: String): EmailField = js.native
   def addEmail(
-    label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any,
+    label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ Any,
     address: String
   ): EmailField = js.native
   
   def addIM(label: String, address: String): IMField = js.native
   def addIM(
-    label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any,
+    label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ Any,
     address: String
   ): IMField = js.native
   
   def addPhone(label: String, number: String): PhoneField = js.native
   def addPhone(
-    label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any,
+    label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ Any,
     number: String
   ): PhoneField = js.native
   
@@ -57,7 +57,7 @@ trait Contact extends StObject {
   
   def addUrl(label: String, url: String): UrlField = js.native
   def addUrl(
-    label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any,
+    label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ Any,
     url: String
   ): UrlField = js.native
   
@@ -65,7 +65,7 @@ trait Contact extends StObject {
   
   def getAddresses(): js.Array[AddressField] = js.native
   def getAddresses(label: String): js.Array[AddressField] = js.native
-  def getAddresses(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any): js.Array[AddressField] = js.native
+  def getAddresses(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ Any): js.Array[AddressField] = js.native
   
   def getCompanies(): js.Array[CompanyField] = js.native
   
@@ -73,19 +73,17 @@ trait Contact extends StObject {
   
   def getCustomFields(): js.Array[CustomField] = js.native
   def getCustomFields(label: String): js.Array[CustomField] = js.native
-  def getCustomFields(
-    label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExtendedField */ js.Any
-  ): js.Array[CustomField] = js.native
+  def getCustomFields(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExtendedField */ Any): js.Array[CustomField] = js.native
   
   def getDates(): js.Array[DateField] = js.native
   def getDates(label: String): js.Array[DateField] = js.native
-  def getDates(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any): js.Array[DateField] = js.native
+  def getDates(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ Any): js.Array[DateField] = js.native
   
   /** @deprecated DO NOT USE */ def getEmailAddresses(): js.Array[String] = js.native
   
   def getEmails(): js.Array[EmailField] = js.native
   def getEmails(label: String): js.Array[EmailField] = js.native
-  def getEmails(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any): js.Array[EmailField] = js.native
+  def getEmails(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ Any): js.Array[EmailField] = js.native
   
   def getFamilyName(): String = js.native
   
@@ -101,7 +99,7 @@ trait Contact extends StObject {
   
   def getIMs(): js.Array[IMField] = js.native
   def getIMs(label: String): js.Array[IMField] = js.native
-  def getIMs(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any): js.Array[IMField] = js.native
+  def getIMs(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ Any): js.Array[IMField] = js.native
   
   def getId(): String = js.native
   
@@ -123,7 +121,7 @@ trait Contact extends StObject {
   
   def getPhones(): js.Array[PhoneField] = js.native
   def getPhones(label: String): js.Array[PhoneField] = js.native
-  def getPhones(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any): js.Array[PhoneField] = js.native
+  def getPhones(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ Any): js.Array[PhoneField] = js.native
   
   def getPrefix(): String = js.native
   
@@ -135,7 +133,7 @@ trait Contact extends StObject {
   
   def getUrls(): js.Array[UrlField] = js.native
   def getUrls(label: String): js.Array[UrlField] = js.native
-  def getUrls(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ js.Any): js.Array[UrlField] = js.native
+  def getUrls(label: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Field */ Any): js.Array[UrlField] = js.native
   
   /** @deprecated DO NOT USE */ def getUserDefinedField(key: String): String = js.native
   

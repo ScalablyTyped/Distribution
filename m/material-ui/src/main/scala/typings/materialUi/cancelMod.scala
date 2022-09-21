@@ -10,10 +10,10 @@ object cancelMod {
   
   @JSImport("material-ui/svg-icons/navigation/cancel", JSImport.Default)
   @js.native
-  class default () extends NavigationCancel
+  open class default () extends NavigationCancel
   
   @JSImport("material-ui/svg-icons/navigation/cancel", "NavigationCancel")
   @js.native
-  class NavigationCancel ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationCancel ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@callstack/react-theme-provider" : "3.0.5"
+      "@callstack/react-theme-provider" : "3.0.8"
     }
   ],
   "test-dependencies" : [
     {
-      "@callstack/react-theme-provider" : "3.0.5"
+      "@callstack/react-theme-provider" : "3.0.8"
     }
   ],
   "compile-devDependencies" : [

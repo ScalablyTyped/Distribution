@@ -12,7 +12,7 @@ trait TestRenderEmailTemplateRequest extends StObject {
   var TemplateData: EmailTemplateData
   
   /**
-    * The name of the template that you want to render.
+    * The name of the template.
     */
   var TemplateName: EmailTemplateName
 }

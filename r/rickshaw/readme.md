@@ -9,15 +9,13 @@ JavaScript toolkit for creating interactive real-time graphs
 | ------------------ | :-------------: |
 | Full name          | rickshaw |
 | Keywords           | charts, d3, graph, rickshaw, svg |
-| # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 153233 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 12007.666666666666 |
+| # stars            | 6515.0 |
 
 ## Links
 - [Homepage](https://shutterstock.github.io/rickshaw/)
-- [Bugs](https://github.com/shutterstock/rickshaw/issues)
-- [Repository](https://github.com/shutterstock/rickshaw)
 - [Npm](https://www.npmjs.com/package/rickshaw)
     
 

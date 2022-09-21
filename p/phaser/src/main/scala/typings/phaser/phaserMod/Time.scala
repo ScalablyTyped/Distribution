@@ -12,7 +12,7 @@ object Time {
     */
   @JSImport("phaser", "Time.Clock")
   @js.native
-  class Clock protected ()
+  open class Clock protected ()
     extends StObject
        with typings.phaser.Phaser.Time.Clock {
     /**
@@ -29,7 +29,7 @@ object Time {
     */
   @JSImport("phaser", "Time.TimerEvent")
   @js.native
-  class TimerEvent protected ()
+  open class TimerEvent protected ()
     extends StObject
        with typings.phaser.Phaser.Time.TimerEvent {
     /**

@@ -1,25 +1,26 @@
 package typings.cote.mod
 
 import typings.socketIo.mod.Server
+import typings.socketIo.typedEventsMod.DefaultEventsMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cote", "Sockend")
 @js.native
-class Sockend protected () extends Component {
+open class Sockend protected () extends Component {
   /**
     * Exposes APIs directly to front-end. Make sure to use namespaces.
     */
   def this(
-    io: Server,
+    io: Server[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any],
     /**
     * Configuration which controls the data being advertised for auto-discovery.
     */
   advertisement: SockendAdvertisement
   ) = this()
   def this(
-    io: Server,
+    io: Server[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any],
     /**
     * Configuration which controls the data being advertised for auto-discovery.
     */

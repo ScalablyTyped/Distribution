@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "aurelia-templating" : "1.10.4"
+      "aurelia-templating" : "1.11.1"
     }
   ],
   "test-dependencies" : [
     {
-      "aurelia-templating" : "1.10.4"
+      "aurelia-templating" : "1.11.1"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.ApplicationModel
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Foundation.IAsyncOperation
@@ -14,7 +13,7 @@ object Store {
   
   @JSGlobal("Windows.ApplicationModel.Store.CurrentApp")
   @js.native
-  class CurrentApp ()
+  open class CurrentApp ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Store.CurrentApp
   /* static members */
@@ -52,7 +51,7 @@ object Store {
   
   @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator")
   @js.native
-  class CurrentAppSimulator ()
+  open class CurrentAppSimulator ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Store.CurrentAppSimulator
   /* static members */
@@ -92,12 +91,12 @@ object Store {
   
   @JSGlobal("Windows.ApplicationModel.Store.LicenseInformation")
   @js.native
-  class LicenseInformation ()
+  open class LicenseInformation ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Store.LicenseInformation {
     
     /* CompleteClass */
-    var expirationDate: Date = js.native
+    var expirationDate: js.Date = js.native
     
     /* CompleteClass */
     var isActive: Boolean = js.native
@@ -106,7 +105,7 @@ object Store {
     var isTrial: Boolean = js.native
     
     /* CompleteClass */
-    var onlicensechanged: js.Any = js.native
+    var onlicensechanged: Any = js.native
     
     /* CompleteClass */
     var productLicenses: IMapView[String, typings.winrt.Windows.ApplicationModel.Store.ProductLicense] = js.native
@@ -114,7 +113,7 @@ object Store {
   
   @JSGlobal("Windows.ApplicationModel.Store.ListingInformation")
   @js.native
-  class ListingInformation ()
+  open class ListingInformation ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Store.ListingInformation {
     
@@ -139,12 +138,12 @@ object Store {
   
   @JSGlobal("Windows.ApplicationModel.Store.ProductLicense")
   @js.native
-  class ProductLicense ()
+  open class ProductLicense ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Store.ProductLicense {
     
     /* CompleteClass */
-    var expirationDate: Date = js.native
+    var expirationDate: js.Date = js.native
     
     /* CompleteClass */
     var isActive: Boolean = js.native
@@ -155,7 +154,7 @@ object Store {
   
   @JSGlobal("Windows.ApplicationModel.Store.ProductListing")
   @js.native
-  class ProductListing ()
+  open class ProductListing ()
     extends StObject
        with typings.winrt.Windows.ApplicationModel.Store.ProductListing {
     

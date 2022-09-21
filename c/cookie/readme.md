@@ -1,7 +1,7 @@
 
 # Scala.js typings for cookie
 
-Typings are for version 0.4
+Typings are for version 0.5
 
 ## Library description:
 HTTP server cookie parsing and serialization
@@ -11,9 +11,9 @@ HTTP server cookie parsing and serialization
 | Full name          | cookie |
 | Keywords           | cookie, cookies |
 | # releases         | 3 |
-| # dependents       | 1511 |
-| # downloads        | 805912692 |
-| # stars            | 71 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4811295666666666E8 |
+| # stars            | 1028.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/cookie#readme)

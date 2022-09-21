@@ -10,12 +10,16 @@ trait DocumentType
   extends StObject
      with ChildNode {
   
+  /* standard dom */
   val name: java.lang.String = js.native
   
+  /* standard dom */
   @JSName("ownerDocument")
   val ownerDocument_DocumentType: Document = js.native
   
+  /* standard dom */
   val publicId: java.lang.String = js.native
   
+  /* standard dom */
   val systemId: java.lang.String = js.native
 }

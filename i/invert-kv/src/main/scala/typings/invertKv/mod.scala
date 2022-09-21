@@ -1,23 +1,21 @@
 package typings.invertKv
 
 import org.scalablytyped.runtime.TopLevel
+import typings.std.PropertyKey
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply[KeyType /* <: String | Double */, ValueType /* <: String | Double | js.Symbol */](
-    `object`: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in KeyType ]: ValueType}
-    */ typings.invertKv.invertKvStrings.^ & TopLevel[js.Any]
-  ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in ValueType ]: KeyType extends number? std.Exclude<KeyType, number> | string : KeyType}
-    */ typings.invertKv.invertKvStrings.^ & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in ValueType ]: KeyType extends number? std.Exclude<KeyType, number> | string : KeyType}
-    */ typings.invertKv.invertKvStrings.^ & TopLevel[js.Any]]
-  
   @JSImport("invert-kv", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default[T /* <: Record[PropertyKey, PropertyKey] */](`object`: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T as T[P] ]: keyof T extends number? std.Exclude<keyof T, number> | string : P}
+    */ typings.invertKv.invertKvStrings.default & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T as T[P] ]: keyof T extends number? std.Exclude<keyof T, number> | string : P}
+    */ typings.invertKv.invertKvStrings.default & TopLevel[Any]]
 }

@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataHelperMixin extends StObject {
   
   /**
-    * [descr:DataHelperMixin.getDataSource()]
+    * Gets the DataSource instance.
     */
-  def getDataSource(): DataSource
+  def getDataSource(): DataSource[Any, Any]
 }
 object DataHelperMixin {
   
-  inline def apply(getDataSource: () => DataSource): DataHelperMixin = {
+  inline def apply(getDataSource: () => DataSource[Any, Any]): DataHelperMixin = {
     val __obj = js.Dynamic.literal(getDataSource = js.Any.fromFunction0(getDataSource))
     __obj.asInstanceOf[DataHelperMixin]
   }
   
   extension [Self <: DataHelperMixin](x: Self) {
     
-    inline def setGetDataSource(value: () => DataSource): Self = StObject.set(x, "getDataSource", js.Any.fromFunction0(value))
+    inline def setGetDataSource(value: () => DataSource[Any, Any]): Self = StObject.set(x, "getDataSource", js.Any.fromFunction0(value))
   }
 }

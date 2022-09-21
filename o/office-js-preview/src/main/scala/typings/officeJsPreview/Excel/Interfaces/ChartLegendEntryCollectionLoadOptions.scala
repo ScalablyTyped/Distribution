@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of legend entries.
   *
-  * Represents a collection of legendEntries.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait ChartLegendEntryCollectionLoadOptions extends StObject {
@@ -19,49 +19,49 @@ trait ChartLegendEntryCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies the height of the legend entry on the chart legend.
     *
-    * For EACH ITEM in the collection: Specifies the height of the legendEntry on the chart legend.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var height: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies the index of the legend entry in the chart legend.
     *
-    * For EACH ITEM in the collection: Specifies the index of the legendEntry in the chart legend.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var index: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies the left value of a chart legend entry.
     *
-    * For EACH ITEM in the collection: Specifies the left of a chart legendEntry.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var left: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Specifies the top of a chart legend entry.
     *
-    * For EACH ITEM in the collection: Specifies the top of a chart legendEntry.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var top: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Represents the visibility of a chart legend entry.
     *
-    * For EACH ITEM in the collection: Represents the visible of a chart legend entry.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Represents the width of the legend entry on the chart Legend.
     *
-    * For EACH ITEM in the collection: Represents the width of the legendEntry on the chart Legend.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var width: js.UndefOr[Boolean] = js.undefined

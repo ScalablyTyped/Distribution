@@ -109,13 +109,13 @@ object audio {
       
       inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
+      inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value*))
       
       inline def setOutput(value: js.Array[String]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
       inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      inline def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value :_*))
+      inline def setOutputVarargs(value: String*): Self = StObject.set(x, "output", js.Array(value*))
     }
   }
   
@@ -203,7 +203,7 @@ object audio {
       
       inline def setStreamTypesUndefined: Self = StObject.set(x, "streamTypes", js.undefined)
       
-      inline def setStreamTypesVarargs(value: StreamType*): Self = StObject.set(x, "streamTypes", js.Array(value :_*))
+      inline def setStreamTypesVarargs(value: StreamType*): Self = StObject.set(x, "streamTypes", js.Array(value*))
     }
   }
   

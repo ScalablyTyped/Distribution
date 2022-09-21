@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetDistributionConfigurationResponse extends StObject {
   
   /**
-    * The distribution configuration object. 
+    * The distribution configuration object.
     */
   var distributionConfiguration: js.UndefOr[DistributionConfiguration] = js.undefined
   
   /**
-    * The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request.
     */
   var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TreeDataLoader extends StObject {
   
-  def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[js.Any] = js.native
-  def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[js.Any] = js.native
+  def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[Any] = js.native
+  def loadBranch(id: Double, callback: WebixCallback, url: String): js.Promise[Any] = js.native
 }
 object TreeDataLoader {
   

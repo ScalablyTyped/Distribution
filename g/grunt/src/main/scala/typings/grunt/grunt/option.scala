@@ -34,6 +34,6 @@ object option {
       * otherwise will be set to initObject.
       */
     def init(): Unit = js.native
-    def init(initObject: js.Any): Unit = js.native
+    def init(initObject: Any): Unit = js.native
   }
 }

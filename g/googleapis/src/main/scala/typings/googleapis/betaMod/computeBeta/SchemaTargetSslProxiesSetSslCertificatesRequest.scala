@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaTargetSslProxiesSetSslCertificatesRequest extends StObject {
   
   /**
-    * New set of URLs to SslCertificate resources to associate with this
-    * TargetSslProxy. Currently exactly one ssl certificate must be specified.
+    * New set of URLs to SslCertificate resources to associate with this TargetSslProxy. At least one SSL certificate must be specified. Currently, you may specify up to 15 SSL certificates.
     */
-  var sslCertificates: js.UndefOr[js.Array[String]] = js.undefined
+  var sslCertificates: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaTargetSslProxiesSetSslCertificatesRequest {
   
@@ -23,8 +22,10 @@ object SchemaTargetSslProxiesSetSslCertificatesRequest {
     
     inline def setSslCertificates(value: js.Array[String]): Self = StObject.set(x, "sslCertificates", value.asInstanceOf[js.Any])
     
+    inline def setSslCertificatesNull: Self = StObject.set(x, "sslCertificates", null)
+    
     inline def setSslCertificatesUndefined: Self = StObject.set(x, "sslCertificates", js.undefined)
     
-    inline def setSslCertificatesVarargs(value: String*): Self = StObject.set(x, "sslCertificates", js.Array(value :_*))
+    inline def setSslCertificatesVarargs(value: String*): Self = StObject.set(x, "sslCertificates", js.Array(value*))
   }
 }

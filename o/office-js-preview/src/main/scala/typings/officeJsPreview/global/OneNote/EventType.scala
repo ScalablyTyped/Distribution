@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * [Api set: OneNoteApi 1.3]
+  * @remarks
+  * [Api set: OneNoteApi 1.9]
   */
 @JSGlobal("OneNote.EventType")
 @js.native
@@ -14,11 +15,11 @@ object EventType extends StObject {
   @JSBracketAccess
   def apply(value: String): js.UndefOr[typings.officeJsPreview.OneNote.EventType & String] = js.native
   
-  /* "NotebookChanged" */ val notebookChanged: typings.officeJsPreview.OneNote.EventType.notebookChanged & String = js.native
+  /* "AlterationSelected" */ val alterationSelected: typings.officeJsPreview.OneNote.EventType.alterationSelected & String = js.native
   
-  /* "PageSelectionChanged" */ val pageSelectionChanged: typings.officeJsPreview.OneNote.EventType.pageSelectionChanged & String = js.native
+  /* "InkSelectedForCorrection" */ val inkSelectedForCorrection: typings.officeJsPreview.OneNote.EventType.inkSelectedForCorrection & String = js.native
   
-  /* "SectionSelectionChanged" */ val sectionSelectionChanged: typings.officeJsPreview.OneNote.EventType.sectionSelectionChanged & String = js.native
+  /* "Reset" */ val reset: typings.officeJsPreview.OneNote.EventType.reset & String = js.native
   
-  /* "StickyNotesContextMenuExecuted" */ val stickyNotesContextMenuExecuted: typings.officeJsPreview.OneNote.EventType.stickyNotesContextMenuExecuted & String = js.native
+  /* "RestrictionsCalculated" */ val restrictionsCalculated: typings.officeJsPreview.OneNote.EventType.restrictionsCalculated & String = js.native
 }

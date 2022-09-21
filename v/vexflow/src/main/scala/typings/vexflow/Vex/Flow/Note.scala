@@ -39,7 +39,7 @@ trait Note
   
   def getNoteType(): String = js.native
   
-  def getPlayNote(): js.Any = js.native
+  def getPlayNote(): Any = js.native
   
   def getStave(): Stave = js.native
   
@@ -67,7 +67,7 @@ trait Note
   
   def setModifierContext(mc: ModifierContext): Note = js.native
   
-  def setPlayNote(note: js.Any): Note = js.native
+  def setPlayNote(note: Any): Note = js.native
   
   def setPreFormatted(value: Boolean): Unit = js.native
   

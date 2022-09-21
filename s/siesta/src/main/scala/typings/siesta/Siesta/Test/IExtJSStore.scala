@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IExtJSStore extends StObject {
   
-  def isStoreEmpty(store: js.Any): Unit = js.native
-  def isStoreEmpty(store: js.Any, description: String): Unit = js.native
+  def isStoreEmpty(store: Any): Unit = js.native
+  def isStoreEmpty(store: Any, description: String): Unit = js.native
   
-  def loadStoresAndThen(args: js.Any*): Unit = js.native
+  def loadStoresAndThen(args: Any*): Unit = js.native
   
-  def waitForStoresToLoad(args: js.Any*): Unit = js.native
+  def waitForStoresToLoad(args: Any*): Unit = js.native
 }

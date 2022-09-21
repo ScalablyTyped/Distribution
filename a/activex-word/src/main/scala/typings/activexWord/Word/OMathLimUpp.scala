@@ -14,7 +14,7 @@ trait OMathLimUpp extends StObject {
   
   val Lim: OMath
   
-  val Parent: js.Any
+  val Parent: Any
   
   def ToLimLow(): OMathFunction
   
@@ -28,7 +28,7 @@ object OMathLimUpp {
     Creator: Double,
     E: OMath,
     Lim: OMath,
-    Parent: js.Any,
+    Parent: Any,
     ToLimLow: () => OMathFunction,
     WordDotOMathLimUpp_typekey: OMathLimUpp
   ): OMathLimUpp = {
@@ -47,7 +47,7 @@ object OMathLimUpp {
     
     inline def setLim(value: OMath): Self = StObject.set(x, "Lim", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setToLimLow(value: () => OMathFunction): Self = StObject.set(x, "ToLimLow", js.Any.fromFunction0(value))
     

@@ -25,7 +25,7 @@ object GoogleCloudRecommendationengineV1beta1ListCatalogItemsResponse {
     
     inline def setCatalogItemsUndefined: Self = StObject.set(x, "catalogItems", js.undefined)
     
-    inline def setCatalogItemsVarargs(value: GoogleCloudRecommendationengineV1beta1CatalogItem*): Self = StObject.set(x, "catalogItems", js.Array(value :_*))
+    inline def setCatalogItemsVarargs(value: GoogleCloudRecommendationengineV1beta1CatalogItem*): Self = StObject.set(x, "catalogItems", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

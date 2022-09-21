@@ -8,5 +8,5 @@ object invalidRuntimeExceptionMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/InvalidRuntimeException", "InvalidRuntimeException")
   @js.native
-  val InvalidRuntimeException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidRuntimeException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

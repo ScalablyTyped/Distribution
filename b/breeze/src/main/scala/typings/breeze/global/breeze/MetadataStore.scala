@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("breeze.MetadataStore")
 @js.native
-class MetadataStore ()
+open class MetadataStore ()
   extends StObject
      with typings.breeze.breeze.MetadataStore {
   def this(config: MetadataStoreOptions) = this()

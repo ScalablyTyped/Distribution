@@ -6,39 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Get the diff type of two [semver](https://github.com/npm/node-semver) versions: `0.0.1 0.0.2` → `patch`.
-  @returns The difference type between two semver versions, or `undefined` if they're identical or the second one is lower than the first.
-  @example
-  ```
-  import semverDiff = require('semver-diff');
-  semverDiff('1.1.1', '1.1.2');
-  //=> 'patch'
-  semverDiff('1.1.1-foo', '1.1.2');
-  //=> 'prepatch'
-  semverDiff('0.0.1', '1.0.0');
-  //=> 'major'
-  semverDiff('0.0.1-foo', '1.0.0');
-  //=> 'premajor'
-  semverDiff('0.0.1', '0.1.0');
-  //=> 'minor'
-  semverDiff('0.0.1-foo', '0.1.0');
-  //=> 'preminor'
-  semverDiff('0.0.1-foo', '0.0.1-foo.bar');
-  //=> 'prerelease'
-  semverDiff('0.1.0', '0.1.0+foo');
-  //=> 'build'
-  semverDiff('0.0.1', '0.0.1');
-  //=> undefined
-  semverDiff('0.0.2', '0.0.1');
-  //=> undefined
-  ```
-  */
-  inline def apply(versionA: String, versionB: String): js.UndefOr[Result] = (^.asInstanceOf[js.Dynamic].apply(versionA.asInstanceOf[js.Any], versionB.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Result]]
-  
   @JSImport("semver-diff", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(versionA: String, versionB: String): js.UndefOr[Difference] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(versionA.asInstanceOf[js.Any], versionB.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Difference]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.semverDiff.semverDiffStrings.major
@@ -50,8 +22,8 @@ object mod {
     - typings.semverDiff.semverDiffStrings.prerelease
     - typings.semverDiff.semverDiffStrings.build
   */
-  trait Result extends StObject
-  object Result {
+  trait Difference extends StObject
+  object Difference {
     
     inline def build: typings.semverDiff.semverDiffStrings.build = "build".asInstanceOf[typings.semverDiff.semverDiffStrings.build]
     

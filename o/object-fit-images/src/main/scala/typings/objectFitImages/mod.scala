@@ -15,6 +15,7 @@ object mod {
   inline def apply(images: js.Array[HTMLElement]): Unit = ^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def apply(images: js.Array[HTMLElement], options: SkipTest): Unit = (^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(images: Null, options: SkipTest): Unit = (^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(images: Unit, options: SkipTest): Unit = (^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(images: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def apply(images: HTMLElement, options: SkipTest): Unit = (^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(images: NodeList): Unit = ^.asInstanceOf[js.Dynamic].apply(images.asInstanceOf[js.Any]).asInstanceOf[Unit]

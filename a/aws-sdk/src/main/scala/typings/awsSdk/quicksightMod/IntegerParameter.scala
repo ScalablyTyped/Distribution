@@ -29,6 +29,6 @@ object IntegerParameter {
     
     inline def setValues(value: LongList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: Long_ *): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Long*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

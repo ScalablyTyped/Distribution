@@ -10,15 +10,12 @@ Create a debounced version of a promise returning function
 | ------------------ | :-------------: |
 | Full name          | debounce-promise |
 | Keywords           | promise, batch, accumulate, debounce, throttle, ratelimit |
-| # releases         | 3 |
-| # dependents       | 74 |
-| # downloads        | 5865215 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 909648.6666666666 |
+| # stars            | 216.0 |
 
 ## Links
-- [Homepage](https://github.com/bjoerge/debounce-promise)
-- [Bugs](https://github.com/bjoerge/debounce-promise/issues)
-- [Repository](https://github.com/bjoerge/debounce-promise)
 - [Npm](https://www.npmjs.com/package/debounce-promise)
     
 

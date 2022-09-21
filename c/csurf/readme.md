@@ -10,10 +10,10 @@ CSRF token middleware
 | ------------------ | :-------------: |
 | Full name          | csurf |
 | Keywords           | csrf, tokens, middleware, express |
-| # releases         | 3 |
-| # dependents       | 283 |
-| # downloads        | 14453723 |
-| # stars            | 122 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1685696.6666666667 |
+| # stars            | 2294.0 |
 
 ## Links
 - [Homepage](https://github.com/expressjs/csurf#readme)

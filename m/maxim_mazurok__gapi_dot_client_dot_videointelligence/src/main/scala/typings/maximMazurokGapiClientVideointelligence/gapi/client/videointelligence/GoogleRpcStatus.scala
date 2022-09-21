@@ -16,7 +16,7 @@ trait GoogleRpcStatus extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ GoogleRpc_Status & TopLevel[js.Any]
+    */ GoogleRpc_Status & TopLevel[Any]
     ]
   ] = js.undefined
   
@@ -43,7 +43,7 @@ object GoogleRpcStatus {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ GoogleRpc_Status & TopLevel[js.Any]
+      */ GoogleRpc_Status & TopLevel[Any]
         ]
     ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
@@ -52,8 +52,8 @@ object GoogleRpcStatus {
     inline def setDetailsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ GoogleRpc_Status & TopLevel[js.Any])*
-    ): Self = StObject.set(x, "details", js.Array(value :_*))
+      */ GoogleRpc_Status & TopLevel[Any])*
+    ): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

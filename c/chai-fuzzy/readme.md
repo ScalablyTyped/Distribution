@@ -10,10 +10,10 @@ fuzzy matchers for chai
 | ------------------ | :-------------: |
 | Full name          | chai-fuzzy |
 | Keywords           | chai, chai-plugin, browser, array, testing, jasmine |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 231627 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 13045.0 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/elliotf/chai-fuzzy#readme)

@@ -29,7 +29,7 @@ object GetInsightSummariesResult {
     
     inline def setInsightSummariesUndefined: Self = StObject.set(x, "InsightSummaries", js.undefined)
     
-    inline def setInsightSummariesVarargs(value: InsightSummary*): Self = StObject.set(x, "InsightSummaries", js.Array(value :_*))
+    inline def setInsightSummariesVarargs(value: InsightSummary*): Self = StObject.set(x, "InsightSummaries", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

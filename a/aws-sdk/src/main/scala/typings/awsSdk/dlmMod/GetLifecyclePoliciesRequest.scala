@@ -22,7 +22,7 @@ trait GetLifecyclePoliciesRequest extends StObject {
   var State: js.UndefOr[GettablePolicyStateValues] = js.undefined
   
   /**
-    * The tags to add to objects created by the policy. Tags are strings in the format key=value. These user-defined tags are added in addition to the AWS-added lifecycle tags.
+    * The tags to add to objects created by the policy. Tags are strings in the format key=value. These user-defined tags are added in addition to the Amazon Web Services-added lifecycle tags.
     */
   var TagsToAdd: js.UndefOr[TagsToAddFilterList] = js.undefined
   
@@ -44,13 +44,13 @@ object GetLifecyclePoliciesRequest {
     
     inline def setPolicyIdsUndefined: Self = StObject.set(x, "PolicyIds", js.undefined)
     
-    inline def setPolicyIdsVarargs(value: PolicyId*): Self = StObject.set(x, "PolicyIds", js.Array(value :_*))
+    inline def setPolicyIdsVarargs(value: PolicyId*): Self = StObject.set(x, "PolicyIds", js.Array(value*))
     
     inline def setResourceTypes(value: ResourceTypeValuesList): Self = StObject.set(x, "ResourceTypes", value.asInstanceOf[js.Any])
     
     inline def setResourceTypesUndefined: Self = StObject.set(x, "ResourceTypes", js.undefined)
     
-    inline def setResourceTypesVarargs(value: ResourceTypeValues*): Self = StObject.set(x, "ResourceTypes", js.Array(value :_*))
+    inline def setResourceTypesVarargs(value: ResourceTypeValues*): Self = StObject.set(x, "ResourceTypes", js.Array(value*))
     
     inline def setState(value: GettablePolicyStateValues): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
@@ -60,12 +60,12 @@ object GetLifecyclePoliciesRequest {
     
     inline def setTagsToAddUndefined: Self = StObject.set(x, "TagsToAdd", js.undefined)
     
-    inline def setTagsToAddVarargs(value: TagFilter*): Self = StObject.set(x, "TagsToAdd", js.Array(value :_*))
+    inline def setTagsToAddVarargs(value: TagFilter*): Self = StObject.set(x, "TagsToAdd", js.Array(value*))
     
     inline def setTargetTags(value: TargetTagsFilterList): Self = StObject.set(x, "TargetTags", value.asInstanceOf[js.Any])
     
     inline def setTargetTagsUndefined: Self = StObject.set(x, "TargetTags", js.undefined)
     
-    inline def setTargetTagsVarargs(value: TagFilter*): Self = StObject.set(x, "TargetTags", js.Array(value :_*))
+    inline def setTargetTagsVarargs(value: TagFilter*): Self = StObject.set(x, "TargetTags", js.Array(value*))
   }
 }

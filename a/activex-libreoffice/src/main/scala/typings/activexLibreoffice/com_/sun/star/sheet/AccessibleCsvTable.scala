@@ -101,7 +101,7 @@ object AccessibleCsvTable {
     isAccessibleColumnSelected: Double => Boolean,
     isAccessibleRowSelected: Double => Boolean,
     isAccessibleSelected: (Double, Double) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     selectAccessibleChild: Double => Unit,
     selectAllAccessibleChildren: () => Unit

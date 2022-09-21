@@ -13,7 +13,7 @@ object mod {
   /**
     * Creates a new fit addon.
     */
-  class FitAddon ()
+  open class FitAddon ()
     extends StObject
        with ITerminalAddon {
     
@@ -34,7 +34,7 @@ object mod {
     /**
       * Gets the proposed dimensions that will be used for a fit.
       */
-    def proposeDimensions(): ITerminalDimensions = js.native
+    def proposeDimensions(): js.UndefOr[ITerminalDimensions] = js.native
   }
   
   trait ITerminalDimensions extends StObject {

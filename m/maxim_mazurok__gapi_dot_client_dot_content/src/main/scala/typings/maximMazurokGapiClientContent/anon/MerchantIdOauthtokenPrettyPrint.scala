@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.OrderTrackingSignal
+import typings.maximMazurokGapiClientContent.gapi.client.content.OrdersCreateTestOrderRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait MerchantIdOauthtokenPrettyPrint extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The ID of the merchant for which the order signal is created. */
+  /** The ID of the account that should manage the order. This cannot be a multi-client account. */
   var merchantId: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait MerchantIdOauthtokenPrettyPrint extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: OrderTrackingSignal
+  var resource: OrdersCreateTestOrderRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait MerchantIdOauthtokenPrettyPrint extends StObject {
 }
 object MerchantIdOauthtokenPrettyPrint {
   
-  inline def apply(merchantId: String, resource: OrderTrackingSignal): MerchantIdOauthtokenPrettyPrint = {
+  inline def apply(merchantId: String, resource: OrdersCreateTestOrderRequest): MerchantIdOauthtokenPrettyPrint = {
     val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[MerchantIdOauthtokenPrettyPrint]
   }
@@ -94,7 +94,7 @@ object MerchantIdOauthtokenPrettyPrint {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: OrderTrackingSignal): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: OrdersCreateTestOrderRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ Route middleware for Koa that handles `multipart/form-data` using multer
 | ------------------ | :-------------: |
 | Full name          | @koa/multer |
 | Keywords           | form, form-data, formdata, koa, middleware, multipart, post |
-| # releases         | 6 |
-| # dependents       | 15 |
-| # downloads        | 238390 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 84502.33333333333 |
+| # stars            | 110.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/multer)

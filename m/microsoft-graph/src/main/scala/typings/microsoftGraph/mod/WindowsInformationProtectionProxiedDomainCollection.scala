@@ -29,6 +29,6 @@ object WindowsInformationProtectionProxiedDomainCollection {
     
     inline def setProxiedDomainsUndefined: Self = StObject.set(x, "proxiedDomains", js.undefined)
     
-    inline def setProxiedDomainsVarargs(value: ProxiedDomain*): Self = StObject.set(x, "proxiedDomains", js.Array(value :_*))
+    inline def setProxiedDomainsVarargs(value: ProxiedDomain*): Self = StObject.set(x, "proxiedDomains", js.Array(value*))
   }
 }

@@ -10,7 +10,7 @@ object cloneOptionsMod {
   
   @JSImport("nodegit/clone-options", "CloneOptions")
   @js.native
-  class CloneOptions () extends StObject {
+  open class CloneOptions () extends StObject {
     
     var bare: js.UndefOr[Double] = js.native
     
@@ -22,9 +22,9 @@ object cloneOptionsMod {
     
     var local: js.UndefOr[Double] = js.native
     
-    var remoteCbPayload: js.UndefOr[js.Any] = js.native
+    var remoteCbPayload: js.UndefOr[Any] = js.native
     
-    var repositoryCbPayload: js.UndefOr[js.Any] = js.native
+    var repositoryCbPayload: js.UndefOr[Any] = js.native
     
     var version: js.UndefOr[Double] = js.native
   }

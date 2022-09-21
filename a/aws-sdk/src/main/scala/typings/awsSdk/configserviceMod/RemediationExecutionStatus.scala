@@ -9,12 +9,12 @@ trait RemediationExecutionStatus extends StObject {
   /**
     * Start time when the remediation was executed.
     */
-  var InvocationTime: js.UndefOr[Date] = js.undefined
+  var InvocationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time when the remediation execution was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[Date] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   var ResourceKey: js.UndefOr[typings.awsSdk.configserviceMod.ResourceKey] = js.undefined
   
@@ -37,11 +37,11 @@ object RemediationExecutionStatus {
   
   extension [Self <: RemediationExecutionStatus](x: Self) {
     
-    inline def setInvocationTime(value: Date): Self = StObject.set(x, "InvocationTime", value.asInstanceOf[js.Any])
+    inline def setInvocationTime(value: js.Date): Self = StObject.set(x, "InvocationTime", value.asInstanceOf[js.Any])
     
     inline def setInvocationTimeUndefined: Self = StObject.set(x, "InvocationTime", js.undefined)
     
-    inline def setLastUpdatedTime(value: Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
@@ -57,6 +57,6 @@ object RemediationExecutionStatus {
     
     inline def setStepDetailsUndefined: Self = StObject.set(x, "StepDetails", js.undefined)
     
-    inline def setStepDetailsVarargs(value: RemediationExecutionStep*): Self = StObject.set(x, "StepDetails", js.Array(value :_*))
+    inline def setStepDetailsVarargs(value: RemediationExecutionStep*): Self = StObject.set(x, "StepDetails", js.Array(value*))
   }
 }

@@ -76,6 +76,34 @@ trait Oscillator extends StObject {
   def freq(Frequency: Double, rampTime: Unit, timeFromNow: Double): AudioParam = js.native
   
   /**
+    *   Returns the value of output gain
+    *   @return Amplitude value between 0.0 and 1.0
+    */
+  def getAmp(): Double = js.native
+  
+  /**
+    *   Returns the value of frequency of oscillator
+    *   @return Frequency of oscillator in Hertz
+    */
+  def getFreq(): Double = js.native
+  
+  /**
+    *   Returns the current value of panPosition , between
+    *   Left (-1) and Right (1)
+    *   @return panPosition of oscillator , between Left
+    *   (-1) and Right (1)
+    */
+  def getPan(): Double = js.native
+  
+  /**
+    *   Returns current type of oscillator eg. 'sine',
+    *   'triangle', 'sawtooth' or 'square'.
+    *   @return type of oscillator eg . 'sine',
+    *   'triangle', 'sawtooth' or 'square'.
+    */
+  def getType(): String = js.native
+  
+  /**
     *   Multiply the p5.Oscillator's output amplitude by a
     *   fixed value (i.e. turn it up!). Calling this
     *   method again will override the initial mult() with
@@ -125,9 +153,11 @@ trait Oscillator extends StObject {
   def setType(`type`: String): Unit = js.native
   
   /**
-    *   Start an oscillator. Accepts an optional parameter
-    *   to determine how long (in seconds from now) until
-    *   the oscillator starts.
+    *   Start an oscillator. Starting an oscillator on a
+    *   user gesture will enable audio in browsers that
+    *   have a strict autoplay policy, including Chrome
+    *   and most mobile devices. See also:
+    *   userStartAudio().
     *   @param [time] startTime in seconds from now.
     *   @param [frequency] frequency in Hz.
     */

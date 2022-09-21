@@ -10,13 +10,13 @@ object Transcoding {
   
   @JSGlobal("Windows.Media.Transcoding.MediaTranscoder")
   @js.native
-  class MediaTranscoder ()
+  open class MediaTranscoder ()
     extends StObject
        with typings.winrt.Windows.Media.Transcoding.MediaTranscoder
   
   @JSGlobal("Windows.Media.Transcoding.PrepareTranscodeResult")
   @js.native
-  class PrepareTranscodeResult ()
+  open class PrepareTranscodeResult ()
     extends StObject
        with typings.winrt.Windows.Media.Transcoding.PrepareTranscodeResult {
     

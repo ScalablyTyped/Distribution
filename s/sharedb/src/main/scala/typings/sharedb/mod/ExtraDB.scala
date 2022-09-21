@@ -11,14 +11,7 @@ trait ExtraDB extends StObject {
   def close(): Unit = js.native
   def close(callback: BasicCallback): Unit = js.native
   
-  def query(collection: String, query: js.Any, fields: Unit, options: js.Any, callback: DBQueryCallback): Unit = js.native
-  def query(
-    collection: String,
-    query: js.Any,
-    fields: ProjectionFields,
-    options: js.Any,
-    callback: DBQueryCallback
-  ): Unit = js.native
+  def query(collection: String, query: Any, fields: ProjectionFields, options: Any, callback: DBQueryCallback): Unit = js.native
   @JSName("query")
   var query_Original: DBQueryMethod = js.native
 }

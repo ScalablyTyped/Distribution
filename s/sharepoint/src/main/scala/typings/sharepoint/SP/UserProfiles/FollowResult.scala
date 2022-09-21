@@ -21,9 +21,9 @@ trait FollowResult
 object FollowResult {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_item: () => FollowedItem,
     get_resultType: () => FollowResultType,
     get_typeId: () => String,

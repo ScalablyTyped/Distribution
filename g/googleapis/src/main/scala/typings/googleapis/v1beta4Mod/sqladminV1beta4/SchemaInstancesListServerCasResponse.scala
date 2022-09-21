@@ -4,12 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Instances ListServerCas response.
-  */
 trait SchemaInstancesListServerCasResponse extends StObject {
   
-  var activeVersion: js.UndefOr[String] = js.undefined
+  var activeVersion: js.UndefOr[String | Null] = js.undefined
   
   /**
     * List of server CA certificates for the instance.
@@ -17,9 +14,9 @@ trait SchemaInstancesListServerCasResponse extends StObject {
   var certs: js.UndefOr[js.Array[SchemaSslCert]] = js.undefined
   
   /**
-    * This is always sql#instancesListServerCas.
+    * This is always `sql#instancesListServerCas`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaInstancesListServerCasResponse {
   
@@ -32,15 +29,19 @@ object SchemaInstancesListServerCasResponse {
     
     inline def setActiveVersion(value: String): Self = StObject.set(x, "activeVersion", value.asInstanceOf[js.Any])
     
+    inline def setActiveVersionNull: Self = StObject.set(x, "activeVersion", null)
+    
     inline def setActiveVersionUndefined: Self = StObject.set(x, "activeVersion", js.undefined)
     
     inline def setCerts(value: js.Array[SchemaSslCert]): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     
     inline def setCertsUndefined: Self = StObject.set(x, "certs", js.undefined)
     
-    inline def setCertsVarargs(value: SchemaSslCert*): Self = StObject.set(x, "certs", js.Array(value :_*))
+    inline def setCertsVarargs(value: SchemaSslCert*): Self = StObject.set(x, "certs", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

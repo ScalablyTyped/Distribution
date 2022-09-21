@@ -33,19 +33,19 @@ object PivotDataSourceOptions {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: (PivotDataSourceAxisOptions | String)*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: (PivotDataSourceAxisOptions | String)*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setMeasures(value: js.Array[String] | PivotDataSourceMeasureOptions): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
     inline def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
     
-    inline def setMeasuresVarargs(value: String*): Self = StObject.set(x, "measures", js.Array(value :_*))
+    inline def setMeasuresVarargs(value: String*): Self = StObject.set(x, "measures", js.Array(value*))
     
     inline def setRows(value: js.Array[PivotDataSourceAxisOptions | String]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: (PivotDataSourceAxisOptions | String)*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: (PivotDataSourceAxisOptions | String)*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setSchema(value: PivotSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

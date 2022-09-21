@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object unionMod {
   
-  @JSImport("@antv/util/lib/union", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/union", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(sources: js.Any*): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(sources.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def default(sources: Any*): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(sources.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[Any]]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cannon", "World")
 @js.native
-class World ()
+open class World ()
   extends StObject
      with typings.cannon.CANNON.World {
   

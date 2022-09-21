@@ -8,41 +8,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentCreatedData extends StObject {
   
   /**
+    * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc. Read-only.
     *
-    * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
-    *
+    * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
     */
   var body: js.UndefOr[BodyData] = js.undefined
   
   /**
+    * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc. Read-only.
     *
-    * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
-    *
+    * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
     */
   var contentControls: js.UndefOr[js.Array[ContentControlData]] = js.undefined
   
   /**
-    *
     * Gets the properties of the document. Read-only.
     *
+    * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
     */
   var properties: js.UndefOr[DocumentPropertiesData] = js.undefined
   
   /**
-    *
     * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
     *
+    * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
     */
   var saved: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the collection of section objects in the document. Read-only.
     *
+    * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
     */
   var sections: js.UndefOr[js.Array[SectionData]] = js.undefined
@@ -64,7 +64,7 @@ object DocumentCreatedData {
     
     inline def setContentControlsUndefined: Self = StObject.set(x, "contentControls", js.undefined)
     
-    inline def setContentControlsVarargs(value: ContentControlData*): Self = StObject.set(x, "contentControls", js.Array(value :_*))
+    inline def setContentControlsVarargs(value: ContentControlData*): Self = StObject.set(x, "contentControls", js.Array(value*))
     
     inline def setProperties(value: DocumentPropertiesData): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
@@ -78,6 +78,6 @@ object DocumentCreatedData {
     
     inline def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
     
-    inline def setSectionsVarargs(value: SectionData*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: SectionData*): Self = StObject.set(x, "sections", js.Array(value*))
   }
 }

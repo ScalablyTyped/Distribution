@@ -1,7 +1,8 @@
 package typings.xstate.typesMod
 
-import typings.xstate.anon.ContextTContext
+import typings.xstate.anon.Context
 import typings.xstate.stateNodeMod.StateNode
+import typings.xstate.typegenTypesMod.TypegenDisabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,6 +25,8 @@ object TargetTransitionConfig {
     
     inline def setTarget(value: TransitionTarget[TContext, TEvent]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setTargetVarargs(value: (String | (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]))*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(
+      value: (String | (StateNode[TContext, Any, TEvent, Context[TContext], ServiceMap, TypegenDisabled]))*
+    ): Self = StObject.set(x, "target", js.Array(value*))
   }
 }

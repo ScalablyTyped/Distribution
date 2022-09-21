@@ -11,9 +11,9 @@ A JavaScript 2D vector class with methods for common vector operations
 | Full name          | victor |
 | Keywords           | vector, 2d |
 | # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 115288 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8393.0 |
+| # stars            | 790.0 |
 
 ## Links
 - [Homepage](http://victorjs.org/)

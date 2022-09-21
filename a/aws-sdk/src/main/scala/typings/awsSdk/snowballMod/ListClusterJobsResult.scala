@@ -29,7 +29,7 @@ object ListClusterJobsResult {
     
     inline def setJobListEntriesUndefined: Self = StObject.set(x, "JobListEntries", js.undefined)
     
-    inline def setJobListEntriesVarargs(value: JobListEntry*): Self = StObject.set(x, "JobListEntries", js.Array(value :_*))
+    inline def setJobListEntriesVarargs(value: JobListEntry*): Self = StObject.set(x, "JobListEntries", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

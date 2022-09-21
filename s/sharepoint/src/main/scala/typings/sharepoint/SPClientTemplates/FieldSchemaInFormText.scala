@@ -19,7 +19,7 @@ object FieldSchemaInFormText {
     Direction: String,
     FieldType: String,
     Hidden: Boolean,
-    IMEMode: js.Any,
+    IMEMode: Any,
     Id: String,
     MaxLength: Double,
     Name: String,

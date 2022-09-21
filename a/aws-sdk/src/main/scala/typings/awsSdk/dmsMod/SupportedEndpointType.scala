@@ -22,12 +22,12 @@ trait SupportedEndpointType extends StObject {
   var EngineName: js.UndefOr[String] = js.undefined
   
   /**
-    * The earliest AWS DMS engine version that supports this endpoint engine. Note that endpoint engines released with AWS DMS versions earlier than 3.1.1 do not return a value for this parameter.
+    * The earliest DMS engine version that supports this endpoint engine. Note that endpoint engines released with DMS versions earlier than 3.1.1 do not return a value for this parameter.
     */
   var ReplicationInstanceEngineMinimumVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates if Change Data Capture (CDC) is supported.
+    * Indicates if change data capture (CDC) is supported.
     */
   var SupportsCDC: js.UndefOr[Boolean] = js.undefined
 }

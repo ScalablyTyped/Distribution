@@ -1,30 +1,27 @@
 
 # Scala.js typings for twemoji
 
-Typings are for version 12.1
+Typings are for version 14.0.2
 
 ## Library description:
-A Unicode 12.0 standard based way to implement emoji across all platforms.
+A Unicode standard based way to implement emoji across all platforms.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | twemoji |
 | Keywords           | emoji, DOM, parser, images, retina, Twitter, unicode |
-| # releases         | 22 |
-| # dependents       | 97 |
-| # downloads        | 1772853 |
-| # stars            | 14 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 364740.6666666667 |
+| # stars            | 14367.0 |
 
 ## Links
-- [Homepage](https://github.com/twitter/twemoji)
-- [Bugs](https://github.com/twitter/twemoji/issues)
-- [Repository](https://github.com/twitter/twemoji)
 - [Npm](https://www.npmjs.com/package/twemoji)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

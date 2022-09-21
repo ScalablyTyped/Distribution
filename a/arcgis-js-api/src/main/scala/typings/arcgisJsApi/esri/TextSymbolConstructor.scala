@@ -17,5 +17,5 @@ trait TextSymbolConstructor
 Instantiable0[TextSymbol]
      with Instantiable1[/* properties */ TextSymbolProperties, TextSymbol] {
   
-  def fromJSON(json: js.Any): TextSymbol = js.native
+  def fromJSON(json: Any): TextSymbol = js.native
 }

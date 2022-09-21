@@ -4,21 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The price rate indicating starting usage and its corresponding price.
-  */
 trait SchemaTierRate extends StObject {
   
   /**
-    * Usage is priced at this rate only after this amount. Example:
-    * start_usage_amount of 10 indicates that the usage will be priced at the
-    * unit_price after the first 10 usage_units.
+    * Usage is priced at this rate only after this amount. Example: start_usage_amount of 10 indicates that the usage will be priced at the unit_price after the first 10 usage_units.
     */
-  var startUsageAmount: js.UndefOr[Double] = js.undefined
+  var startUsageAmount: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The price per unit of usage. Example: unit_price of amount $10 indicates
-    * that each unit will cost $10.
+    * The price per unit of usage. Example: unit_price of amount $10 indicates that each unit will cost $10.
     */
   var unitPrice: js.UndefOr[SchemaMoney] = js.undefined
 }
@@ -32,6 +26,8 @@ object SchemaTierRate {
   extension [Self <: SchemaTierRate](x: Self) {
     
     inline def setStartUsageAmount(value: Double): Self = StObject.set(x, "startUsageAmount", value.asInstanceOf[js.Any])
+    
+    inline def setStartUsageAmountNull: Self = StObject.set(x, "startUsageAmount", null)
     
     inline def setStartUsageAmountUndefined: Self = StObject.set(x, "startUsageAmount", js.undefined)
     

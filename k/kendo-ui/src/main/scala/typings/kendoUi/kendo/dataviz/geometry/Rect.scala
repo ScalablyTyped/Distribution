@@ -30,10 +30,10 @@ trait Rect
   
   var origin: typings.kendoUi.kendo.geometry.Point = js.native
   
-  def setOrigin(value: js.Any): typings.kendoUi.kendo.geometry.Rect = js.native
+  def setOrigin(value: Any): typings.kendoUi.kendo.geometry.Rect = js.native
   def setOrigin(value: typings.kendoUi.kendo.geometry.Point): typings.kendoUi.kendo.geometry.Rect = js.native
   
-  def setSize(value: js.Any): typings.kendoUi.kendo.geometry.Rect = js.native
+  def setSize(value: Any): typings.kendoUi.kendo.geometry.Rect = js.native
   def setSize(value: typings.kendoUi.kendo.geometry.Size): typings.kendoUi.kendo.geometry.Rect = js.native
   
   var size: typings.kendoUi.kendo.geometry.Size = js.native

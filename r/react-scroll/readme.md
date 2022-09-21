@@ -11,9 +11,9 @@ A scroll component for React.js
 | Full name          | react-scroll |
 | Keywords           | react, react-component, scroll, scroller, scrolls |
 | # releases         | 8 |
-| # dependents       | 188 |
-| # downloads        | 14890893 |
-| # stars            | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 1958657.6666666667 |
+| # stars            | 3806.0 |
 
 ## Links
 - [Homepage](https://github.com/fisshy/react-scroll)

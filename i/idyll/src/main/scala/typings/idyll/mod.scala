@@ -215,7 +215,7 @@ object mod {
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      inline def setTransformVarargs(value: String*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: String*): Self = StObject.set(x, "transform", js.Array(value*))
       
       inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       
@@ -282,7 +282,7 @@ object mod {
       
       inline def setCOMPONENT_DIRS(value: js.Array[String]): Self = StObject.set(x, "COMPONENT_DIRS", value.asInstanceOf[js.Any])
       
-      inline def setCOMPONENT_DIRSVarargs(value: String*): Self = StObject.set(x, "COMPONENT_DIRS", js.Array(value :_*))
+      inline def setCOMPONENT_DIRSVarargs(value: String*): Self = StObject.set(x, "COMPONENT_DIRS", js.Array(value*))
       
       inline def setCSS_INPUT_FILE(value: String): Self = StObject.set(x, "CSS_INPUT_FILE", value.asInstanceOf[js.Any])
       
@@ -292,7 +292,7 @@ object mod {
       
       inline def setDEFAULT_COMPONENT_DIRS(value: js.Array[String]): Self = StObject.set(x, "DEFAULT_COMPONENT_DIRS", value.asInstanceOf[js.Any])
       
-      inline def setDEFAULT_COMPONENT_DIRSVarargs(value: String*): Self = StObject.set(x, "DEFAULT_COMPONENT_DIRS", js.Array(value :_*))
+      inline def setDEFAULT_COMPONENT_DIRSVarargs(value: String*): Self = StObject.set(x, "DEFAULT_COMPONENT_DIRS", js.Array(value*))
       
       inline def setHTML_OUTPUT_FILE(value: String): Self = StObject.set(x, "HTML_OUTPUT_FILE", value.asInstanceOf[js.Any])
       

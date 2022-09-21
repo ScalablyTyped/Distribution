@@ -1,6 +1,5 @@
 package typings.scriptableIos
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait WidgetStack extends StObject {
     * Adds a date element to the widget. Use the properties on the returned element to style the date.
     * @see https://docs.scriptable.app/widgetstack/#-adddate
     */
-  def addDate(date: Date): WidgetDate = js.native
+  def addDate(date: js.Date): WidgetDate = js.native
   
   /**
     * _Add image to the stack._

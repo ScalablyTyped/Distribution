@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GoogleCloudRecommenderV1Operation extends StObject {
   
-  /** Type of this operation. Contains one of 'and', 'remove', 'replace', 'move', 'copy', 'test' and custom operations. This field is case-insensitive and always populated. */
+  /** Type of this operation. Contains one of 'add', 'remove', 'replace', 'move', 'copy', 'test' and custom operations. This field is case-insensitive and always populated. */
   var action: js.UndefOr[String] = js.undefined
   
   /** Path to the target field being operated on. If the operation is at the resource level, then path should be "/". This field is always populated. */
@@ -15,24 +15,24 @@ trait GoogleCloudRecommenderV1Operation extends StObject {
   
   /**
     * Set of filters to apply if `path` refers to array elements or nested array elements in order to narrow down to a single unique element that is being tested/modified. This is
-    * intended to be an exact match per filter. To perform advanced matching, use path_value_matchers. * Example: { "/versions/∗/name" : "it-123" "/versions/∗/targetSize/percent": 20 } *
-    * Example: { "/bindings/∗/role": "roles/owner" "/bindings/∗/condition" : null } * Example: { "/bindings/∗/role": "roles/owner" "/bindings/∗/members/ *" : ["x@example.com",
-    * "y@example.com"] } When both path_filters and path_value_matchers are set, an implicit AND must be performed.
+    * intended to be an exact match per filter. To perform advanced matching, use path_value_matchers. * Example: ``` { "/versions/ *‍/name" : "it-123" "/versions/ *‍/targetSize/percent":
+    * 20 } ``` * Example: ``` { "/bindings/ *‍/role": "roles/owner" "/bindings/ *‍/condition" : null } ``` * Example: ``` { "/bindings/ *‍/role": "roles/owner" "/bindings/ *‍/members/ *" :
+    * ["x@example.com", "y@example.com"] } ``` When both path_filters and path_value_matchers are set, an implicit AND must be performed.
     */
   var pathFilters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[Any]
   ] = js.undefined
   
   /**
-    * Similar to path_filters, this contains set of filters to apply if `path` field referes to array elements. This is meant to support value matching beyond exact match. To perform
-    * exact match, use path_filters. When both path_filters and path_value_matchers are set, an implicit AND must be performed.
+    * Similar to path_filters, this contains set of filters to apply if `path` field refers to array elements. This is meant to support value matching beyond exact match. To perform exact
+    * match, use path_filters. When both path_filters and path_value_matchers are set, an implicit AND must be performed.
     */
   var pathValueMatchers: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.recommender.gapi.client.recommender.GoogleCloudRecommenderV1ValueMatcher}
-    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[Any]
   ] = js.undefined
   
   /** Contains the fully qualified resource name. This field is always populated. ex: //cloudresourcemanager.googleapis.com/projects/foo. */
@@ -54,7 +54,7 @@ trait GoogleCloudRecommenderV1Operation extends StObject {
     * Value for the `path` field. Will be set for actions:'add'/'replace'. Maybe set for action: 'test'. Either this or `value_matcher` will be set for 'test' operation. An exact match
     * must be performed.
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
   
   /** Can be set for action 'test' for advanced matching for the value of 'path' field. Either this or `value` will be set for 'test' operation. */
   var valueMatcher: js.UndefOr[GoogleCloudRecommenderV1ValueMatcher] = js.undefined
@@ -77,7 +77,7 @@ object GoogleCloudRecommenderV1Operation {
     inline def setPathFilters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[Any]
     ): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
     inline def setPathFiltersUndefined: Self = StObject.set(x, "pathFilters", js.undefined)
@@ -87,7 +87,7 @@ object GoogleCloudRecommenderV1Operation {
     inline def setPathValueMatchers(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.recommender.gapi.client.recommender.GoogleCloudRecommenderV1ValueMatcher}
-      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[Any]
     ): Self = StObject.set(x, "pathValueMatchers", value.asInstanceOf[js.Any])
     
     inline def setPathValueMatchersUndefined: Self = StObject.set(x, "pathValueMatchers", js.undefined)
@@ -108,7 +108,7 @@ object GoogleCloudRecommenderV1Operation {
     
     inline def setSourceResourceUndefined: Self = StObject.set(x, "sourceResource", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueMatcher(value: GoogleCloudRecommenderV1ValueMatcher): Self = StObject.set(x, "valueMatcher", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateScalingPlanResponse extends StObject {
   
   /**
-    * The version number of the scaling plan. This value is always 1. Currently, you cannot specify multiple scaling plan versions.
+    * The version number of the scaling plan. This value is always 1. Currently, you cannot have multiple scaling plan versions.
     */
   var ScalingPlanVersion: typings.awsSdk.autoscalingplansMod.ScalingPlanVersion
 }

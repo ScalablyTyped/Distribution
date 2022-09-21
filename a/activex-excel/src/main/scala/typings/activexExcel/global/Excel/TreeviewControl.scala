@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.TreeviewControl")
 @js.native
-/* private */ class TreeviewControl ()
+/* private */ open class TreeviewControl ()
   extends StObject
      with typings.activexExcel.Excel.TreeviewControl {
   
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Creator: XlCreator = js.native
   
   /* CompleteClass */
-  var Drilled: js.Any = js.native
+  var Drilled: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Excel.TreeviewControl_typekey")
@@ -29,5 +29,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Hidden: SafeArray[SafeArray[String]] = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
 }

@@ -15,7 +15,10 @@ trait ContainerType extends StObject {
   /** [Deprecated] This field is deprecated. An optional SHA1 checksum of the disk image before unpackaging provided by the client when the disk image is created. */
   var sha1Checksum: js.UndefOr[String] = js.undefined
   
-  /** The full Google Cloud Storage URL where the disk image is stored. You must provide either this property or the sourceDisk property but not both. */
+  /**
+    * The full Google Cloud Storage URL where the disk image is stored. In order to create an image, you must provide the full or partial URL of one of the following: - The
+    * rawDisk.source URL - The sourceDisk URL - The sourceImage URL - The sourceSnapshot URL
+    */
   var source: js.UndefOr[String] = js.undefined
 }
 object ContainerType {

@@ -28,6 +28,8 @@ object mod {
     
     var currentRetryAttempt: js.UndefOr[Double] = js.undefined
     
+    var maxRetryDelay: js.UndefOr[Double] = js.undefined
+    
     var noResponseRetries: js.UndefOr[Double] = js.undefined
     
     var objectMode: js.UndefOr[Boolean] = js.undefined
@@ -36,7 +38,11 @@ object mod {
     
     var retries: js.UndefOr[Double] = js.undefined
     
+    var retryDelayMultiplier: js.UndefOr[Double] = js.undefined
+    
     var shouldRetryFn: js.UndefOr[js.Function1[/* response */ RequestResponse, Boolean]] = js.undefined
+    
+    var totalTimeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -50,6 +56,10 @@ object mod {
       inline def setCurrentRetryAttempt(value: Double): Self = StObject.set(x, "currentRetryAttempt", value.asInstanceOf[js.Any])
       
       inline def setCurrentRetryAttemptUndefined: Self = StObject.set(x, "currentRetryAttempt", js.undefined)
+      
+      inline def setMaxRetryDelay(value: Double): Self = StObject.set(x, "maxRetryDelay", value.asInstanceOf[js.Any])
+      
+      inline def setMaxRetryDelayUndefined: Self = StObject.set(x, "maxRetryDelay", js.undefined)
       
       inline def setNoResponseRetries(value: Double): Self = StObject.set(x, "noResponseRetries", value.asInstanceOf[js.Any])
       
@@ -67,9 +77,17 @@ object mod {
       
       inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
+      inline def setRetryDelayMultiplier(value: Double): Self = StObject.set(x, "retryDelayMultiplier", value.asInstanceOf[js.Any])
+      
+      inline def setRetryDelayMultiplierUndefined: Self = StObject.set(x, "retryDelayMultiplier", js.undefined)
+      
       inline def setShouldRetryFn(value: /* response */ RequestResponse => Boolean): Self = StObject.set(x, "shouldRetryFn", js.Any.fromFunction1(value))
       
       inline def setShouldRetryFnUndefined: Self = StObject.set(x, "shouldRetryFn", js.undefined)
+      
+      inline def setTotalTimeout(value: Double): Self = StObject.set(x, "totalTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setTotalTimeoutUndefined: Self = StObject.set(x, "totalTimeout", js.undefined)
     }
   }
 }

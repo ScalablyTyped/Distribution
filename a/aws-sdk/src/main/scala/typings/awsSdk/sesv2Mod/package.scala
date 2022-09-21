@@ -1,38 +1,40 @@
 package typings.awsSdk.sesv2Mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AdditionalContactEmailAddress = java.lang.String
+type AdditionalContactEmailAddress = String
 
-type AdditionalContactEmailAddresses = js.Array[typings.awsSdk.sesv2Mod.AdditionalContactEmailAddress]
+type AdditionalContactEmailAddresses = js.Array[AdditionalContactEmailAddress]
 
-type AmazonResourceName = java.lang.String
+type AmazonResourceName = String
 
-type AttributesData = java.lang.String
+type AttributesData = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USE_DEFAULT_VALUE
   - typings.awsSdk.awsSdkStrings.REJECT_MESSAGE
   - java.lang.String
 */
-type BehaviorOnMxFailure = typings.awsSdk.sesv2Mod._BehaviorOnMxFailure | java.lang.String
+type BehaviorOnMxFailure = _BehaviorOnMxFailure | String
 
-type BlacklistEntries = js.Array[typings.awsSdk.sesv2Mod.BlacklistEntry]
+type BlacklistEntries = js.Array[BlacklistEntry]
 
-type BlacklistItemName = java.lang.String
+type BlacklistItemName = String
 
-type BlacklistItemNames = js.Array[typings.awsSdk.sesv2Mod.BlacklistItemName]
+type BlacklistItemNames = js.Array[BlacklistItemName]
 
-type BlacklistReport = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.sesv2Mod.BlacklistEntries]
+type BlacklistReport = StringDictionary[BlacklistEntries]
 
-type BlacklistingDescription = java.lang.String
+type BlacklistingDescription = String
 
-type BulkEmailEntryList = js.Array[typings.awsSdk.sesv2Mod.BulkEmailEntry]
+type BulkEmailEntryList = js.Array[BulkEmailEntry]
 
-type BulkEmailEntryResultList = js.Array[typings.awsSdk.sesv2Mod.BulkEmailEntryResult]
+type BulkEmailEntryResultList = js.Array[BulkEmailEntryResult]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUCCESS
@@ -51,52 +53,52 @@ type BulkEmailEntryResultList = js.Array[typings.awsSdk.sesv2Mod.BulkEmailEntryR
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type BulkEmailStatus = typings.awsSdk.sesv2Mod._BulkEmailStatus | java.lang.String
+type BulkEmailStatus = _BulkEmailStatus | String
 
-type CampaignId = java.lang.String
+type CampaignId = String
 
-type CaseId = java.lang.String
+type CaseId = String
 
-type Charset = java.lang.String
+type Charset = String
 
-type CloudWatchDimensionConfigurations = js.Array[typings.awsSdk.sesv2Mod.CloudWatchDimensionConfiguration]
+type CloudWatchDimensionConfigurations = js.Array[CloudWatchDimensionConfiguration]
 
-type ConfigurationSetName = java.lang.String
+type ConfigurationSetName = String
 
-type ConfigurationSetNameList = js.Array[typings.awsSdk.sesv2Mod.ConfigurationSetName]
+type ConfigurationSetNameList = js.Array[ConfigurationSetName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EN
   - typings.awsSdk.awsSdkStrings.JA
   - java.lang.String
 */
-type ContactLanguage = typings.awsSdk.sesv2Mod._ContactLanguage | java.lang.String
+type ContactLanguage = _ContactLanguage | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DELETE
   - typings.awsSdk.awsSdkStrings.PUT
   - java.lang.String
 */
-type ContactListImportAction = typings.awsSdk.sesv2Mod._ContactListImportAction | java.lang.String
+type ContactListImportAction = _ContactListImportAction | String
 
-type ContactListName = java.lang.String
+type ContactListName = String
 
-type CustomRedirectDomain = java.lang.String
+type CustomRedirectDomain = String
 
-type CustomVerificationEmailTemplatesList = js.Array[typings.awsSdk.sesv2Mod.CustomVerificationEmailTemplateMetadata]
+type CustomVerificationEmailTemplatesList = js.Array[CustomVerificationEmailTemplateMetadata]
 
-type DailyVolumes = js.Array[typings.awsSdk.sesv2Mod.DailyVolume]
+type DailyVolumes = js.Array[DailyVolume]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CSV
   - typings.awsSdk.awsSdkStrings.JSON
   - java.lang.String
 */
-type DataFormat = typings.awsSdk.sesv2Mod._DataFormat | java.lang.String
+type DataFormat = _DataFormat | String
 
-type DedicatedIpList = js.Array[typings.awsSdk.sesv2Mod.DedicatedIp]
+type DedicatedIpList = js.Array[DedicatedIp]
 
-type DefaultDimensionValue = java.lang.String
+type DefaultDimensionValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -104,22 +106,22 @@ type DefaultDimensionValue = java.lang.String
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type DeliverabilityDashboardAccountStatus = typings.awsSdk.sesv2Mod._DeliverabilityDashboardAccountStatus | java.lang.String
+type DeliverabilityDashboardAccountStatus = _DeliverabilityDashboardAccountStatus | String
 
-type DeliverabilityTestReports = js.Array[typings.awsSdk.sesv2Mod.DeliverabilityTestReport]
+type DeliverabilityTestReports = js.Array[DeliverabilityTestReport]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
   - typings.awsSdk.awsSdkStrings.COMPLETED
   - java.lang.String
 */
-type DeliverabilityTestStatus = typings.awsSdk.sesv2Mod._DeliverabilityTestStatus | java.lang.String
+type DeliverabilityTestStatus = _DeliverabilityTestStatus | String
 
-type DeliverabilityTestSubject = java.lang.String
+type DeliverabilityTestSubject = String
 
-type Description = java.lang.String
+type Description = String
 
-type DimensionName = java.lang.String
+type DimensionName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MESSAGE_TAG
@@ -127,16 +129,23 @@ type DimensionName = java.lang.String
   - typings.awsSdk.awsSdkStrings.LINK_TAG
   - java.lang.String
 */
-type DimensionValueSource = typings.awsSdk.sesv2Mod._DimensionValueSource | java.lang.String
+type DimensionValueSource = _DimensionValueSource | String
 
-type DisplayName = java.lang.String
+type DisplayName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AWS_SES
   - typings.awsSdk.awsSdkStrings.EXTERNAL
   - java.lang.String
 */
-type DkimSigningAttributesOrigin = typings.awsSdk.sesv2Mod._DkimSigningAttributesOrigin | java.lang.String
+type DkimSigningAttributesOrigin = _DkimSigningAttributesOrigin | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RSA_1024_BIT
+  - typings.awsSdk.awsSdkStrings.RSA_2048_BIT
+  - java.lang.String
+*/
+type DkimSigningKeyLength = _DkimSigningKeyLength | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -146,49 +155,49 @@ type DkimSigningAttributesOrigin = typings.awsSdk.sesv2Mod._DkimSigningAttribute
   - typings.awsSdk.awsSdkStrings.NOT_STARTED
   - java.lang.String
 */
-type DkimStatus = typings.awsSdk.sesv2Mod._DkimStatus | java.lang.String
+type DkimStatus = _DkimStatus | String
 
-type DnsToken = java.lang.String
+type DnsToken = String
 
-type DnsTokenList = js.Array[typings.awsSdk.sesv2Mod.DnsToken]
+type DnsTokenList = js.Array[DnsToken]
 
-type Domain = java.lang.String
+type Domain = String
 
-type DomainDeliverabilityCampaignList = js.Array[typings.awsSdk.sesv2Mod.DomainDeliverabilityCampaign]
+type DomainDeliverabilityCampaignList = js.Array[DomainDeliverabilityCampaign]
 
-type DomainDeliverabilityTrackingOptions = js.Array[typings.awsSdk.sesv2Mod.DomainDeliverabilityTrackingOption]
+type DomainDeliverabilityTrackingOptions = js.Array[DomainDeliverabilityTrackingOption]
 
-type DomainIspPlacements = js.Array[typings.awsSdk.sesv2Mod.DomainIspPlacement]
+type DomainIspPlacements = js.Array[DomainIspPlacement]
 
-type EmailAddress = java.lang.String
+type EmailAddress = String
 
-type EmailAddressList = js.Array[typings.awsSdk.sesv2Mod.EmailAddress]
+type EmailAddressList = js.Array[EmailAddress]
 
-type EmailTemplateData = java.lang.String
+type EmailTemplateData = String
 
-type EmailTemplateHtml = java.lang.String
+type EmailTemplateHtml = String
 
-type EmailTemplateMetadataList = js.Array[typings.awsSdk.sesv2Mod.EmailTemplateMetadata]
+type EmailTemplateMetadataList = js.Array[EmailTemplateMetadata]
 
-type EmailTemplateName = java.lang.String
+type EmailTemplateName = String
 
-type EmailTemplateSubject = java.lang.String
+type EmailTemplateSubject = String
 
-type EmailTemplateText = java.lang.String
+type EmailTemplateText = String
 
-type Enabled = scala.Boolean
+type Enabled = Boolean
 
-type EnabledWrapper = scala.Boolean
+type EnabledWrapper = Boolean
 
-type ErrorMessage = java.lang.String
+type ErrorMessage = String
 
-type Esp = java.lang.String
+type Esp = String
 
-type Esps = js.Array[typings.awsSdk.sesv2Mod.Esp]
+type Esps = js.Array[Esp]
 
-type EventDestinationName = java.lang.String
+type EventDestinationName = String
 
-type EventDestinations = js.Array[typings.awsSdk.sesv2Mod.EventDestination]
+type EventDestinations = js.Array[EventDestination]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SEND
@@ -203,23 +212,23 @@ type EventDestinations = js.Array[typings.awsSdk.sesv2Mod.EventDestination]
   - typings.awsSdk.awsSdkStrings.SUBSCRIPTION
   - java.lang.String
 */
-type EventType = typings.awsSdk.sesv2Mod._EventType | java.lang.String
+type EventType = _EventType | String
 
-type EventTypes = js.Array[typings.awsSdk.sesv2Mod.EventType]
+type EventTypes = js.Array[EventType]
 
-type FailedRecordsCount = scala.Double
+type FailedRecordsCount = Double
 
-type FailedRecordsS3Url = java.lang.String
+type FailedRecordsS3Url = String
 
-type FailureRedirectionURL = java.lang.String
+type FailureRedirectionURL = String
 
-type FeedbackId = java.lang.String
+type FeedbackId = String
 
-type GeneralEnforcementStatus = java.lang.String
+type GeneralEnforcementStatus = String
 
-type Identity = java.lang.String
+type Identity = String
 
-type IdentityInfoList = js.Array[typings.awsSdk.sesv2Mod.IdentityInfo]
+type IdentityInfoList = js.Array[IdentityInfo]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EMAIL_ADDRESS
@@ -227,30 +236,30 @@ type IdentityInfoList = js.Array[typings.awsSdk.sesv2Mod.IdentityInfo]
   - typings.awsSdk.awsSdkStrings.MANAGED_DOMAIN
   - java.lang.String
 */
-type IdentityType = typings.awsSdk.sesv2Mod._IdentityType | java.lang.String
+type IdentityType = _IdentityType | String
 
-type ImageUrl = java.lang.String
+type ImageUrl = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUPPRESSION_LIST
   - typings.awsSdk.awsSdkStrings.CONTACT_LIST
   - java.lang.String
 */
-type ImportDestinationType = typings.awsSdk.sesv2Mod._ImportDestinationType | java.lang.String
+type ImportDestinationType = _ImportDestinationType | String
 
-type ImportJobSummaryList = js.Array[typings.awsSdk.sesv2Mod.ImportJobSummary]
+type ImportJobSummaryList = js.Array[ImportJobSummary]
 
-type Ip = java.lang.String
+type Ip = String
 
-type IpList = js.Array[typings.awsSdk.sesv2Mod.Ip]
+type IpList = js.Array[Ip]
 
-type IspName = java.lang.String
+type IspName = String
 
-type IspNameList = js.Array[typings.awsSdk.sesv2Mod.IspName]
+type IspNameList = js.Array[IspName]
 
-type IspPlacements = js.Array[typings.awsSdk.sesv2Mod.IspPlacement]
+type IspPlacements = js.Array[IspPlacement]
 
-type JobId = java.lang.String
+type JobId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATED
@@ -259,17 +268,17 @@ type JobId = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type JobStatus = typings.awsSdk.sesv2Mod._JobStatus | java.lang.String
+type JobStatus = _JobStatus | String
 
-type LastFreshStart = typings.std.Date
+type LastFreshStart = js.Date
 
-type ListOfContactLists = js.Array[typings.awsSdk.sesv2Mod.ContactList]
+type ListOfContactLists = js.Array[ContactList]
 
-type ListOfContacts = js.Array[typings.awsSdk.sesv2Mod.Contact]
+type ListOfContacts = js.Array[Contact]
 
-type ListOfDedicatedIpPools = js.Array[typings.awsSdk.sesv2Mod.PoolName]
+type ListOfDedicatedIpPools = js.Array[PoolName]
 
-type MailFromDomainName = java.lang.String
+type MailFromDomainName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -278,60 +287,60 @@ type MailFromDomainName = java.lang.String
   - typings.awsSdk.awsSdkStrings.TEMPORARY_FAILURE
   - java.lang.String
 */
-type MailFromDomainStatus = typings.awsSdk.sesv2Mod._MailFromDomainStatus | java.lang.String
+type MailFromDomainStatus = _MailFromDomainStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MARKETING
   - typings.awsSdk.awsSdkStrings.TRANSACTIONAL
   - java.lang.String
 */
-type MailType = typings.awsSdk.sesv2Mod._MailType | java.lang.String
+type MailType = _MailType | String
 
-type Max24HourSend = scala.Double
+type Max24HourSend = Double
 
-type MaxItems = scala.Double
+type MaxItems = Double
 
-type MaxSendRate = scala.Double
+type MaxSendRate = Double
 
-type MessageContent = java.lang.String
+type MessageContent = String
 
-type MessageData = java.lang.String
+type MessageData = String
 
-type MessageTagList = js.Array[typings.awsSdk.sesv2Mod.MessageTag]
+type MessageTagList = js.Array[MessageTag]
 
-type MessageTagName = java.lang.String
+type MessageTagName = String
 
-type MessageTagValue = java.lang.String
+type MessageTagValue = String
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type OutboundMessageId = java.lang.String
+type OutboundMessageId = String
 
-type Percentage = scala.Double
+type Percentage = Double
 
-type Percentage100Wrapper = scala.Double
+type Percentage100Wrapper = Double
 
-type Policy = java.lang.String
+type Policy = String
 
-type PolicyMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.sesv2Mod.Policy]
+type PolicyMap = StringDictionary[Policy]
 
-type PolicyName = java.lang.String
+type PolicyName = String
 
-type PoolName = java.lang.String
+type PoolName = String
 
-type PrivateKey = java.lang.String
+type PrivateKey = String
 
-type ProcessedRecordsCount = scala.Double
+type ProcessedRecordsCount = Double
 
-type RawMessageData = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.sesv2Mod.Blob | java.lang.String
+type RawMessageData = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type RblName = java.lang.String
+type RblName = String
 
-type RenderedEmailTemplate = java.lang.String
+type RenderedEmailTemplate = String
 
-type ReportId = java.lang.String
+type ReportId = String
 
-type ReportName = java.lang.String
+type ReportName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -340,90 +349,90 @@ type ReportName = java.lang.String
   - typings.awsSdk.awsSdkStrings.DENIED
   - java.lang.String
 */
-type ReviewStatus = typings.awsSdk.sesv2Mod._ReviewStatus | java.lang.String
+type ReviewStatus = _ReviewStatus | String
 
-type S3Url = java.lang.String
+type S3Url = String
 
-type Selector = java.lang.String
+type Selector = String
 
-type SendingPoolName = java.lang.String
+type SendingPoolName = String
 
-type SentLast24Hours = scala.Double
+type SentLast24Hours = Double
 
-type Subject = java.lang.String
+type Subject = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OPT_IN
   - typings.awsSdk.awsSdkStrings.OPT_OUT
   - java.lang.String
 */
-type SubscriptionStatus = typings.awsSdk.sesv2Mod._SubscriptionStatus | java.lang.String
+type SubscriptionStatus = _SubscriptionStatus | String
 
-type SuccessRedirectionURL = java.lang.String
+type SuccessRedirectionURL = String
 
-type SuppressedDestinationSummaries = js.Array[typings.awsSdk.sesv2Mod.SuppressedDestinationSummary]
+type SuppressedDestinationSummaries = js.Array[SuppressedDestinationSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DELETE
   - typings.awsSdk.awsSdkStrings.PUT
   - java.lang.String
 */
-type SuppressionListImportAction = typings.awsSdk.sesv2Mod._SuppressionListImportAction | java.lang.String
+type SuppressionListImportAction = _SuppressionListImportAction | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BOUNCE
   - typings.awsSdk.awsSdkStrings.COMPLAINT
   - java.lang.String
 */
-type SuppressionListReason = typings.awsSdk.sesv2Mod._SuppressionListReason | java.lang.String
+type SuppressionListReason = _SuppressionListReason | String
 
-type SuppressionListReasons = js.Array[typings.awsSdk.sesv2Mod.SuppressionListReason]
+type SuppressionListReasons = js.Array[SuppressionListReason]
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.sesv2Mod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.sesv2Mod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type TemplateContent = java.lang.String
+type TemplateContent = String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.REQUIRE
   - typings.awsSdk.awsSdkStrings.OPTIONAL
   - java.lang.String
 */
-type TlsPolicy = typings.awsSdk.sesv2Mod._TlsPolicy | java.lang.String
+type TlsPolicy = _TlsPolicy | String
 
-type TopicName = java.lang.String
+type TopicName = String
 
-type TopicPreferenceList = js.Array[typings.awsSdk.sesv2Mod.TopicPreference]
+type TopicPreferenceList = js.Array[TopicPreference]
 
-type Topics = js.Array[typings.awsSdk.sesv2Mod.Topic]
+type Topics = js.Array[Topic]
 
-type UnsubscribeAll = scala.Boolean
+type UnsubscribeAll = Boolean
 
-type UseCaseDescription = java.lang.String
+type UseCaseDescription = String
 
-type UseDefaultIfPreferenceUnavailable = scala.Boolean
+type UseDefaultIfPreferenceUnavailable = Boolean
 
-type Volume = scala.Double
+type Volume = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
   - typings.awsSdk.awsSdkStrings.DONE
   - java.lang.String
 */
-type WarmupStatus = typings.awsSdk.sesv2Mod._WarmupStatus | java.lang.String
+type WarmupStatus = _WarmupStatus | String
 
-type WebsiteURL = java.lang.String
+type WebsiteURL = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-09-27`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.sesv2Mod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

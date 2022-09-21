@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-virtualized", "ScrollSync")
 @js.native
-class ScrollSync protected ()
+open class ScrollSync protected ()
   extends typings.reactVirtualized.esScrollSyncMod.ScrollSync {
   def this(props: ScrollSyncProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ScrollSyncProps, context: js.Any) = this()
+  def this(props: ScrollSyncProps, context: Any) = this()
 }
 /* static members */
 object ScrollSync {

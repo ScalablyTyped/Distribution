@@ -24,11 +24,11 @@ object MenuItemNode {
     
     inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setPaths(value: js.Array[js.Array[String]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    inline def setPathsVarargs(value: js.Array[String]*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: js.Array[String]*): Self = StObject.set(x, "paths", js.Array(value*))
     
     inline def setType(value: MenuItemNodeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

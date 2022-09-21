@@ -11,13 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("blessed", "Widgets.ProgressBarElement")
 @js.native
-class ProgressBarElement () extends InputElement {
+open class ProgressBarElement () extends InputElement {
   def this(options: ProgressBarOptions) = this()
   
-  @JSName("on")
-  def on_complete(event: complete, callback: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_reset(event: reset, callback: js.Function0[Unit]): this.type = js.native
+  def on(event: reset | complete, callback: js.Function0[Unit]): this.type = js.native
   
   @JSName("options")
   var options_ProgressBarElement: ProgressBarOptions = js.native

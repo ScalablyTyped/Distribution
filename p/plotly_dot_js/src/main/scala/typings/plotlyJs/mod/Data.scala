@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.plotlyJs.anon.PartialPlotDataAutobinx
   - typings.plotlyJs.anon.PartialBoxPlotData
   - typings.plotlyJs.anon.PartialViolinData
+  - typings.plotlyJs.anon.PartialOhclData
+  - typings.plotlyJs.anon.PartialCandlestickData
+  - typings.plotlyJs.anon.PartialPieData
 */
 trait Data extends StObject
 object Data {
@@ -15,6 +18,21 @@ object Data {
   inline def PartialBoxPlotData(): typings.plotlyJs.anon.PartialBoxPlotData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.plotlyJs.anon.PartialBoxPlotData]
+  }
+  
+  inline def PartialCandlestickData(): typings.plotlyJs.anon.PartialCandlestickData = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[typings.plotlyJs.anon.PartialCandlestickData]
+  }
+  
+  inline def PartialOhclData(): typings.plotlyJs.anon.PartialOhclData = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[typings.plotlyJs.anon.PartialOhclData]
+  }
+  
+  inline def PartialPieData(): typings.plotlyJs.anon.PartialPieData = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[typings.plotlyJs.anon.PartialPieData]
   }
   
   inline def PartialPlotDataAutobinx(): typings.plotlyJs.anon.PartialPlotDataAutobinx = {

@@ -13,7 +13,7 @@ object latlonEllipsoidalMod {
   
   @JSImport("geodesy/latlon-ellipsoidal", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with LatLonEllipsoidal {
     def this(lat: Double, lon: Double) = this()
@@ -42,7 +42,7 @@ object latlonEllipsoidalMod {
   
   @JSImport("geodesy/latlon-ellipsoidal", "Cartesian")
   @js.native
-  class Cartesian protected ()
+  open class Cartesian protected ()
     extends typings.geodesy.vector3dMod.default {
     def this(x: Double, y: Double, z: Double) = this()
     
@@ -52,7 +52,7 @@ object latlonEllipsoidalMod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("geodesy/latlon-ellipsoidal", "Dms")
   @js.native
-  class Dms ()
+  open class Dms ()
     extends typings.geodesy.dmsMod.default
   object Dms {
     
@@ -107,7 +107,7 @@ object latlonEllipsoidalMod {
   
   @JSImport("geodesy/latlon-ellipsoidal", "Vector3d")
   @js.native
-  class Vector3d protected ()
+  open class Vector3d protected ()
     extends typings.geodesy.vector3dMod.default {
     def this(x: Double, y: Double, z: Double) = this()
   }

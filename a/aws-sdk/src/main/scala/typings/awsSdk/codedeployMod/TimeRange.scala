@@ -9,12 +9,12 @@ trait TimeRange extends StObject {
   /**
     * The end time of the time range.  Specify null to leave the end time open-ended. 
     */
-  var end: js.UndefOr[Timestamp] = js.undefined
+  var end: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The start time of the time range.  Specify null to leave the start time open-ended. 
     */
-  var start: js.UndefOr[Timestamp] = js.undefined
+  var start: js.UndefOr[js.Date] = js.undefined
 }
 object TimeRange {
   
@@ -25,11 +25,11 @@ object TimeRange {
   
   extension [Self <: TimeRange](x: Self) {
     
-    inline def setEnd(value: Timestamp): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    inline def setStart(value: Timestamp): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }

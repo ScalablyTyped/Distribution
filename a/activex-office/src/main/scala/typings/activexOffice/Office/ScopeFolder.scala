@@ -8,7 +8,7 @@ trait ScopeFolder extends StObject {
   
   def AddToSearchFolders(): Unit
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -27,7 +27,7 @@ object ScopeFolder {
   
   inline def apply(
     AddToSearchFolders: () => Unit,
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     Name: String,
     OfficeDotScopeFolder_typekey: ScopeFolder,
@@ -43,7 +43,7 @@ object ScopeFolder {
     
     inline def setAddToSearchFolders(value: () => Unit): Self = StObject.set(x, "AddToSearchFolders", js.Any.fromFunction0(value))
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     

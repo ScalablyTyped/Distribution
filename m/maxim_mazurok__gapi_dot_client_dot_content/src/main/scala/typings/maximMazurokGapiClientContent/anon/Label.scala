@@ -34,6 +34,9 @@ trait Label extends StObject {
   /** The ID of the managing account. This must be a multi-client account. */
   var merchantId: String
   
+  /** If set, only the accounts with the given name (case sensitive) will be returned. */
+  var name: js.UndefOr[String] = js.undefined
+  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
@@ -97,6 +100,10 @@ object Label {
     inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
     inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     

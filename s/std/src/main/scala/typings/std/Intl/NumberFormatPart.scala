@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NumberFormatPart extends StObject {
   
+  /* standard es2018.intl */
   var `type`: NumberFormatPartTypes
   
+  /* standard es2018.intl */
   var value: String
 }
 object NumberFormatPart {

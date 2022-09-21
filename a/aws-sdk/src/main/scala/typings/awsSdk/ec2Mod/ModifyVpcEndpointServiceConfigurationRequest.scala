@@ -22,6 +22,11 @@ trait ModifyVpcEndpointServiceConfigurationRequest extends StObject {
   var AddNetworkLoadBalancerArns: js.UndefOr[ValueStringList] = js.undefined
   
   /**
+    * The IP address types to add to your service configuration.
+    */
+  var AddSupportedIpAddressTypes: js.UndefOr[ValueStringList] = js.undefined
+  
+  /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
@@ -47,6 +52,11 @@ trait ModifyVpcEndpointServiceConfigurationRequest extends StObject {
   var RemovePrivateDnsName: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The IP address types to remove from your service configuration.
+    */
+  var RemoveSupportedIpAddressTypes: js.UndefOr[ValueStringList] = js.undefined
+  
+  /**
     * The ID of the service.
     */
   var ServiceId: VpcEndpointServiceId
@@ -68,13 +78,19 @@ object ModifyVpcEndpointServiceConfigurationRequest {
     
     inline def setAddGatewayLoadBalancerArnsUndefined: Self = StObject.set(x, "AddGatewayLoadBalancerArns", js.undefined)
     
-    inline def setAddGatewayLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "AddGatewayLoadBalancerArns", js.Array(value :_*))
+    inline def setAddGatewayLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "AddGatewayLoadBalancerArns", js.Array(value*))
     
     inline def setAddNetworkLoadBalancerArns(value: ValueStringList): Self = StObject.set(x, "AddNetworkLoadBalancerArns", value.asInstanceOf[js.Any])
     
     inline def setAddNetworkLoadBalancerArnsUndefined: Self = StObject.set(x, "AddNetworkLoadBalancerArns", js.undefined)
     
-    inline def setAddNetworkLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "AddNetworkLoadBalancerArns", js.Array(value :_*))
+    inline def setAddNetworkLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "AddNetworkLoadBalancerArns", js.Array(value*))
+    
+    inline def setAddSupportedIpAddressTypes(value: ValueStringList): Self = StObject.set(x, "AddSupportedIpAddressTypes", value.asInstanceOf[js.Any])
+    
+    inline def setAddSupportedIpAddressTypesUndefined: Self = StObject.set(x, "AddSupportedIpAddressTypes", js.undefined)
+    
+    inline def setAddSupportedIpAddressTypesVarargs(value: String*): Self = StObject.set(x, "AddSupportedIpAddressTypes", js.Array(value*))
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
@@ -88,17 +104,23 @@ object ModifyVpcEndpointServiceConfigurationRequest {
     
     inline def setRemoveGatewayLoadBalancerArnsUndefined: Self = StObject.set(x, "RemoveGatewayLoadBalancerArns", js.undefined)
     
-    inline def setRemoveGatewayLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "RemoveGatewayLoadBalancerArns", js.Array(value :_*))
+    inline def setRemoveGatewayLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "RemoveGatewayLoadBalancerArns", js.Array(value*))
     
     inline def setRemoveNetworkLoadBalancerArns(value: ValueStringList): Self = StObject.set(x, "RemoveNetworkLoadBalancerArns", value.asInstanceOf[js.Any])
     
     inline def setRemoveNetworkLoadBalancerArnsUndefined: Self = StObject.set(x, "RemoveNetworkLoadBalancerArns", js.undefined)
     
-    inline def setRemoveNetworkLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "RemoveNetworkLoadBalancerArns", js.Array(value :_*))
+    inline def setRemoveNetworkLoadBalancerArnsVarargs(value: String*): Self = StObject.set(x, "RemoveNetworkLoadBalancerArns", js.Array(value*))
     
     inline def setRemovePrivateDnsName(value: Boolean): Self = StObject.set(x, "RemovePrivateDnsName", value.asInstanceOf[js.Any])
     
     inline def setRemovePrivateDnsNameUndefined: Self = StObject.set(x, "RemovePrivateDnsName", js.undefined)
+    
+    inline def setRemoveSupportedIpAddressTypes(value: ValueStringList): Self = StObject.set(x, "RemoveSupportedIpAddressTypes", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveSupportedIpAddressTypesUndefined: Self = StObject.set(x, "RemoveSupportedIpAddressTypes", js.undefined)
+    
+    inline def setRemoveSupportedIpAddressTypesVarargs(value: String*): Self = StObject.set(x, "RemoveSupportedIpAddressTypes", js.Array(value*))
     
     inline def setServiceId(value: VpcEndpointServiceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
   }

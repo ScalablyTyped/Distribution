@@ -8,5 +8,5 @@ object removeTagsFromVaultMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/RemoveTagsFromVault", "RemoveTagsFromVault")
   @js.native
-  val RemoveTagsFromVault: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val RemoveTagsFromVault: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

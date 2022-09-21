@@ -24,6 +24,6 @@ object DescribeSMBFileSharesOutput {
     
     inline def setSMBFileShareInfoListUndefined: Self = StObject.set(x, "SMBFileShareInfoList", js.undefined)
     
-    inline def setSMBFileShareInfoListVarargs(value: SMBFileShareInfo*): Self = StObject.set(x, "SMBFileShareInfoList", js.Array(value :_*))
+    inline def setSMBFileShareInfoListVarargs(value: SMBFileShareInfo*): Self = StObject.set(x, "SMBFileShareInfoList", js.Array(value*))
   }
 }

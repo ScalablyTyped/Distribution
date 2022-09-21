@@ -12,13 +12,13 @@ trait Group extends StObject {
   
   var capture: Boolean
   
-  var container: js.Any
+  var container: Any
   
   var defaultCfg: Label
   
-  var events: js.Any
+  var events: Any
   
-  var group: js.Any
+  var group: Any
   
   var id: String
   
@@ -38,11 +38,11 @@ trait Group extends StObject {
   
   var overlapOrder: js.Array[String]
   
-  var subTickLine: js.Any
+  var subTickLine: Any
   
-  var ticks: js.Array[js.Any]
+  var ticks: js.Array[Any]
   
-  var title: js.Any
+  var title: Any
   
   var `type`: String
   
@@ -53,7 +53,7 @@ trait Group extends StObject {
     */
   var verticalFactor: Double
   
-  var verticalLimitLength: js.Any
+  var verticalLimitLength: Any
   
   var visible: Boolean
 }
@@ -63,10 +63,10 @@ object Group {
     animate: Boolean,
     animateOption: Appear,
     capture: Boolean,
-    container: js.Any,
+    container: Any,
     defaultCfg: Label,
-    events: js.Any,
-    group: js.Any,
+    events: Any,
+    group: Any,
     id: String,
     isInit: Boolean,
     isRegister: Boolean,
@@ -76,13 +76,13 @@ object Group {
     offsetX: Double,
     offsetY: Double,
     overlapOrder: js.Array[String],
-    subTickLine: js.Any,
-    ticks: js.Array[js.Any],
-    title: js.Any,
+    subTickLine: Any,
+    ticks: js.Array[Any],
+    title: Any,
     `type`: String,
     updateAutoRender: Boolean,
     verticalFactor: Double,
-    verticalLimitLength: js.Any,
+    verticalLimitLength: Any,
     visible: Boolean
   ): Group = {
     val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], animateOption = animateOption.asInstanceOf[js.Any], capture = capture.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], defaultCfg = defaultCfg.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isInit = isInit.asInstanceOf[js.Any], isRegister = isRegister.asInstanceOf[js.Any], isUpdating = isUpdating.asInstanceOf[js.Any], locationType = locationType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], overlapOrder = overlapOrder.asInstanceOf[js.Any], subTickLine = subTickLine.asInstanceOf[js.Any], ticks = ticks.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updateAutoRender = updateAutoRender.asInstanceOf[js.Any], verticalFactor = verticalFactor.asInstanceOf[js.Any], verticalLimitLength = verticalLimitLength.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
@@ -98,13 +98,13 @@ object Group {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setDefaultCfg(value: Label): Self = StObject.set(x, "defaultCfg", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -124,15 +124,15 @@ object Group {
     
     inline def setOverlapOrder(value: js.Array[String]): Self = StObject.set(x, "overlapOrder", value.asInstanceOf[js.Any])
     
-    inline def setOverlapOrderVarargs(value: String*): Self = StObject.set(x, "overlapOrder", js.Array(value :_*))
+    inline def setOverlapOrderVarargs(value: String*): Self = StObject.set(x, "overlapOrder", js.Array(value*))
     
-    inline def setSubTickLine(value: js.Any): Self = StObject.set(x, "subTickLine", value.asInstanceOf[js.Any])
+    inline def setSubTickLine(value: Any): Self = StObject.set(x, "subTickLine", value.asInstanceOf[js.Any])
     
-    inline def setTicks(value: js.Array[js.Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: js.Array[Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
-    inline def setTicksVarargs(value: js.Any*): Self = StObject.set(x, "ticks", js.Array(value :_*))
+    inline def setTicksVarargs(value: Any*): Self = StObject.set(x, "ticks", js.Array(value*))
     
-    inline def setTitle(value: js.Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
@@ -140,7 +140,7 @@ object Group {
     
     inline def setVerticalFactor(value: Double): Self = StObject.set(x, "verticalFactor", value.asInstanceOf[js.Any])
     
-    inline def setVerticalLimitLength(value: js.Any): Self = StObject.set(x, "verticalLimitLength", value.asInstanceOf[js.Any])
+    inline def setVerticalLimitLength(value: Any): Self = StObject.set(x, "verticalLimitLength", value.asInstanceOf[js.Any])
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }

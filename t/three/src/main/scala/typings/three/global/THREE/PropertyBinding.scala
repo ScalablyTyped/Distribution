@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.PropertyBinding")
 @js.native
-class PropertyBinding protected ()
+open class PropertyBinding protected ()
   extends typings.three.mod.PropertyBinding {
-  def this(rootNode: js.Any, path: String) = this()
-  def this(rootNode: js.Any, path: String, parsedPath: js.Any) = this()
+  def this(rootNode: Any, path: String) = this()
+  def this(rootNode: Any, path: String, parsedPath: Any) = this()
 }
 /* static members */
 object PropertyBinding {
@@ -21,16 +21,16 @@ object PropertyBinding {
   
   @JSGlobal("THREE.PropertyBinding.Composite")
   @js.native
-  class Composite protected ()
+  open class Composite protected ()
     extends typings.three.mod.PropertyBinding.Composite {
-    def this(targetGroup: js.Any, path: js.Any) = this()
-    def this(targetGroup: js.Any, path: js.Any, parsedPath: js.Any) = this()
+    def this(targetGroup: Any, path: Any) = this()
+    def this(targetGroup: Any, path: Any, parsedPath: Any) = this()
   }
   
-  inline def create(root: js.Any, path: js.Any): typings.three.propertyBindingMod.PropertyBinding | typings.three.propertyBindingMod.PropertyBinding.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[typings.three.propertyBindingMod.PropertyBinding | typings.three.propertyBindingMod.PropertyBinding.Composite]
-  inline def create(root: js.Any, path: js.Any, parsedPath: js.Any): typings.three.propertyBindingMod.PropertyBinding | typings.three.propertyBindingMod.PropertyBinding.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any], parsedPath.asInstanceOf[js.Any])).asInstanceOf[typings.three.propertyBindingMod.PropertyBinding | typings.three.propertyBindingMod.PropertyBinding.Composite]
+  inline def create(root: Any, path: Any): typings.three.propertyBindingMod.PropertyBinding | typings.three.propertyBindingMod.PropertyBinding.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[typings.three.propertyBindingMod.PropertyBinding | typings.three.propertyBindingMod.PropertyBinding.Composite]
+  inline def create(root: Any, path: Any, parsedPath: Any): typings.three.propertyBindingMod.PropertyBinding | typings.three.propertyBindingMod.PropertyBinding.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any], parsedPath.asInstanceOf[js.Any])).asInstanceOf[typings.three.propertyBindingMod.PropertyBinding | typings.three.propertyBindingMod.PropertyBinding.Composite]
   
-  inline def findNode(root: js.Any, nodeName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findNode")(root.asInstanceOf[js.Any], nodeName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def findNode(root: Any, nodeName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findNode")(root.asInstanceOf[js.Any], nodeName.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def parseTrackName(trackName: String): ParseTrackNameResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTrackName")(trackName.asInstanceOf[js.Any]).asInstanceOf[ParseTrackNameResults]
   

@@ -34,6 +34,6 @@ object PermissionProfileInformation {
     
     inline def setPermissionProfilesVarargs(
       value: (/* This object defines the account permissions for a profile that you can apply to a group of users. */ PermissionProfile)*
-    ): Self = StObject.set(x, "permissionProfiles", js.Array(value :_*))
+    ): Self = StObject.set(x, "permissionProfiles", js.Array(value*))
   }
 }

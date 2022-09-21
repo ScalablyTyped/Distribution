@@ -44,6 +44,14 @@ trait LivePlayerContext extends StObject {
     * 进入全屏 */
   def requestFullScreen(option: LivePlayerContextRequestFullScreenOption): Unit = js.native
   
+  /** [LivePlayerContext.requestPictureInPicture(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/live/LivePlayerContext.requestPictureInPicture.html)
+    *
+    * 进入小窗
+    *
+    * 最低基础库： `2.15.0` */
+  def requestPictureInPicture(): Unit = js.native
+  def requestPictureInPicture(option: RequestPictureInPictureOption): Unit = js.native
+  
   /** [LivePlayerContext.resume(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/live/LivePlayerContext.resume.html)
     *
     * 恢复
@@ -52,16 +60,12 @@ trait LivePlayerContext extends StObject {
   def resume(): Unit = js.native
   def resume(option: ResumeOption): Unit = js.native
   
-  /** [LivePlayerContext.snapshot(string quality)](https://developers.weixin.qq.com/miniprogram/dev/api/media/live/LivePlayerContext.snapshot.html)
+  /** [LivePlayerContext.snapshot(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/live/LivePlayerContext.snapshot.html)
     *
     * 截图
     *
     * 最低基础库： `2.7.1` */
-  def snapshot(): Unit = js.native
-  def snapshot(/** 图片的质量，默认原图。有效值为 raw、compressed
-    *
-    * 最低基础库： `2.10.0` */
-  quality: String): Unit = js.native
+  def snapshot(option: LivePlayerContextSnapshotOption): Unit = js.native
   
   /** [LivePlayerContext.stop(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/media/live/LivePlayerContext.stop.html)
     *

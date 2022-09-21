@@ -27,12 +27,12 @@ object tunnel {
     /** [Method] Assign the callback to handle new connection
       * @param callback Function
       */
-    var onConnect: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onConnect: js.UndefOr[js.Function1[/* callback */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Assign the callback to handling incoming messages
       * @param callback Function
       */
-    var onMessage: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onMessage: js.UndefOr[js.Function1[/* callback */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Send a message
       * @param receiverId String The id of the application to connect to. Get this id from broadcast
@@ -43,7 +43,7 @@ object tunnel {
     var send: js.UndefOr[
         js.Function3[
           /* receiverId */ js.UndefOr[String], 
-          /* message */ js.UndefOr[js.Any], 
+          /* message */ js.UndefOr[Any], 
           /* foreground */ js.UndefOr[Boolean], 
           IPromise
         ]
@@ -66,16 +66,16 @@ object tunnel {
       
       inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
       
-      inline def setOnConnect(value: /* callback */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
+      inline def setOnConnect(value: /* callback */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onConnect", js.Any.fromFunction1(value))
       
       inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
       
-      inline def setOnMessage(value: /* callback */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+      inline def setOnMessage(value: /* callback */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
       
       inline def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
       
       inline def setSend(
-        value: (/* receiverId */ js.UndefOr[String], /* message */ js.UndefOr[js.Any], /* foreground */ js.UndefOr[Boolean]) => IPromise
+        value: (/* receiverId */ js.UndefOr[String], /* message */ js.UndefOr[Any], /* foreground */ js.UndefOr[Boolean]) => IPromise
       ): Self = StObject.set(x, "send", js.Any.fromFunction3(value))
       
       inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)

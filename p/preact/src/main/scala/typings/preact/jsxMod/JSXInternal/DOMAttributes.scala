@@ -28,6 +28,10 @@ trait DOMAttributes[Target /* <: EventTarget */]
   
   var onAnimationStartCapture: js.UndefOr[AnimationEventHandler[Target]] = js.undefined
   
+  var onBeforeInput: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  
+  var onBeforeInputCapture: js.UndefOr[GenericEventHandler[Target]] = js.undefined
+  
   var onBlur: js.UndefOr[FocusEventHandler[Target]] = js.undefined
   
   var onBlurCapture: js.UndefOr[FocusEventHandler[Target]] = js.undefined
@@ -351,6 +355,14 @@ trait DOMAttributes[Target /* <: EventTarget */]
   var onWheel: js.UndefOr[WheelEventHandler[Target]] = js.undefined
   
   var onWheelCapture: js.UndefOr[WheelEventHandler[Target]] = js.undefined
+  
+  var onfocusin: js.UndefOr[FocusEventHandler[Target]] = js.undefined
+  
+  var onfocusinCapture: js.UndefOr[FocusEventHandler[Target]] = js.undefined
+  
+  var onfocusout: js.UndefOr[FocusEventHandler[Target]] = js.undefined
+  
+  var onfocusoutCapture: js.UndefOr[FocusEventHandler[Target]] = js.undefined
 }
 object DOMAttributes {
   
@@ -392,6 +404,14 @@ object DOMAttributes {
     inline def setOnAnimationStartCaptureUndefined: Self = StObject.set(x, "onAnimationStartCapture", js.undefined)
     
     inline def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
+    
+    inline def setOnBeforeInput(value: GenericEventHandler[Target]): Self = StObject.set(x, "onBeforeInput", value.asInstanceOf[js.Any])
+    
+    inline def setOnBeforeInputCapture(value: GenericEventHandler[Target]): Self = StObject.set(x, "onBeforeInputCapture", value.asInstanceOf[js.Any])
+    
+    inline def setOnBeforeInputCaptureUndefined: Self = StObject.set(x, "onBeforeInputCapture", js.undefined)
+    
+    inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
     
     inline def setOnBlur(value: FocusEventHandler[Target]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
     
@@ -1012,5 +1032,21 @@ object DOMAttributes {
     inline def setOnWheelCaptureUndefined: Self = StObject.set(x, "onWheelCapture", js.undefined)
     
     inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
+    
+    inline def setOnfocusin(value: FocusEventHandler[Target]): Self = StObject.set(x, "onfocusin", value.asInstanceOf[js.Any])
+    
+    inline def setOnfocusinCapture(value: FocusEventHandler[Target]): Self = StObject.set(x, "onfocusinCapture", value.asInstanceOf[js.Any])
+    
+    inline def setOnfocusinCaptureUndefined: Self = StObject.set(x, "onfocusinCapture", js.undefined)
+    
+    inline def setOnfocusinUndefined: Self = StObject.set(x, "onfocusin", js.undefined)
+    
+    inline def setOnfocusout(value: FocusEventHandler[Target]): Self = StObject.set(x, "onfocusout", value.asInstanceOf[js.Any])
+    
+    inline def setOnfocusoutCapture(value: FocusEventHandler[Target]): Self = StObject.set(x, "onfocusoutCapture", value.asInstanceOf[js.Any])
+    
+    inline def setOnfocusoutCaptureUndefined: Self = StObject.set(x, "onfocusoutCapture", js.undefined)
+    
+    inline def setOnfocusoutUndefined: Self = StObject.set(x, "onfocusout", js.undefined)
   }
 }

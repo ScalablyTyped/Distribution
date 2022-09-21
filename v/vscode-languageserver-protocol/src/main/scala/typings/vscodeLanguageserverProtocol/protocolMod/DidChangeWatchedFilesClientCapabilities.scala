@@ -12,6 +12,14 @@ trait DidChangeWatchedFilesClientCapabilities extends StObject {
     * from the server side.
     */
   var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Whether the client has support for {@link  RelativePattern relative pattern}
+    * or not.
+    *
+    * @since 3.17.0
+    */
+  var relativePatternSupport: js.UndefOr[Boolean] = js.undefined
 }
 object DidChangeWatchedFilesClientCapabilities {
   
@@ -25,5 +33,9 @@ object DidChangeWatchedFilesClientCapabilities {
     inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
     inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    
+    inline def setRelativePatternSupport(value: Boolean): Self = StObject.set(x, "relativePatternSupport", value.asInstanceOf[js.Any])
+    
+    inline def setRelativePatternSupportUndefined: Self = StObject.set(x, "relativePatternSupport", js.undefined)
   }
 }

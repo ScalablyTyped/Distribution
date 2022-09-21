@@ -14,10 +14,9 @@ object cardMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/views/Card", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[CardProps, ComponentState, js.Any] {
+  open class default protected () extends Component[CardProps, ComponentState, Any] {
     def this(props: CardProps) = this()
-    def this(props: CardProps, context: js.Any) = this()
+    def this(props: CardProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/views/Card", JSImport.Default)
   @js.native

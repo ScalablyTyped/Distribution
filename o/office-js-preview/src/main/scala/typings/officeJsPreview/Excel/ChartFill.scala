@@ -1,15 +1,15 @@
 package typings.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.officeJsPreview.OfficeExtension.ClientObject
+import typings.officeJsPreview.OfficeExtension.ClientResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the fill formatting for a chart element.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait ChartFill
@@ -17,8 +17,9 @@ trait ChartFill
      with ClientObject {
   
   /**
-    * Clear the fill color of a chart element.
+    * Clears the fill color of a chart element.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def clear(): Unit
@@ -28,30 +29,34 @@ trait ChartFill
   var context_ChartFill: RequestContext
   
   /**
-    * Sets the fill formatting of a chart element to a uniform color.
+    * Gets the uniform color fill formatting of a chart element.
     *
-    * [Api set: ExcelApi 1.1]
-    *
-    * @param color HTML color code representing the color of the background, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
-  def setSolidColor(color: String): Unit
+  def getSolidColor(): ClientResult[String]
   
   /**
-    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-    * Whereas the original Excel.ChartFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFillData`) that contains shallow copies of any loaded child properties from the original object.
+    * Sets the fill formatting of a chart element to a uniform color.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    *
+    * @param color HTML color code representing the color of the background, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     */
-  def toJSON(): StringDictionary[String]
+  def setSolidColor(color: String): Unit
 }
 object ChartFill {
   
   inline def apply(
     clear: () => Unit,
     context: RequestContext,
+    getSolidColor: () => ClientResult[String],
     isNullObject: Boolean,
-    setSolidColor: String => Unit,
-    toJSON: () => StringDictionary[String]
+    setSolidColor: String => Unit
   ): ChartFill = {
-    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), context = context.asInstanceOf[js.Any], isNullObject = isNullObject.asInstanceOf[js.Any], setSolidColor = js.Any.fromFunction1(setSolidColor), toJSON = js.Any.fromFunction0(toJSON))
+    val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), context = context.asInstanceOf[js.Any], getSolidColor = js.Any.fromFunction0(getSolidColor), isNullObject = isNullObject.asInstanceOf[js.Any], setSolidColor = js.Any.fromFunction1(setSolidColor))
     __obj.asInstanceOf[ChartFill]
   }
   
@@ -61,8 +66,8 @@ object ChartFill {
     
     inline def setContext(value: RequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    inline def setSetSolidColor(value: String => Unit): Self = StObject.set(x, "setSolidColor", js.Any.fromFunction1(value))
+    inline def setGetSolidColor(value: () => ClientResult[String]): Self = StObject.set(x, "getSolidColor", js.Any.fromFunction0(value))
     
-    inline def setToJSON(value: () => StringDictionary[String]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setSetSolidColor(value: String => Unit): Self = StObject.set(x, "setSolidColor", js.Any.fromFunction1(value))
   }
 }

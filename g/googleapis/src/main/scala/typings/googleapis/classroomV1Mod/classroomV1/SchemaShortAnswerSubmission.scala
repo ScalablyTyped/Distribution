@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Student work for a short answer question.
-  */
 trait SchemaShortAnswerSubmission extends StObject {
   
   /**
     * Student response to a short-answer question.
     */
-  var answer: js.UndefOr[String] = js.undefined
+  var answer: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaShortAnswerSubmission {
   
@@ -24,6 +21,8 @@ object SchemaShortAnswerSubmission {
   extension [Self <: SchemaShortAnswerSubmission](x: Self) {
     
     inline def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
+    
+    inline def setAnswerNull: Self = StObject.set(x, "answer", null)
     
     inline def setAnswerUndefined: Self = StObject.set(x, "answer", js.undefined)
   }

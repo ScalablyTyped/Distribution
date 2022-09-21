@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Used for attributes which take a list of numbers and which can be animated. */
 trait SVGAnimatedTransformList extends StObject {
   
+  /* standard dom */
   val animVal: SVGTransformList
   
+  /* standard dom */
   val baseVal: SVGTransformList
 }
 object SVGAnimatedTransformList {

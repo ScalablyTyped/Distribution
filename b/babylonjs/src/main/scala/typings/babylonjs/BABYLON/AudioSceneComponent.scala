@@ -9,19 +9,23 @@ trait AudioSceneComponent
   extends StObject
      with ISceneSerializableComponent {
   
-  /* private */ var _afterRender: js.Any = js.native
+  /* private */ var _afterRender: Any = js.native
   
-  /* private */ var _audioEnabled: js.Any = js.native
+  /* private */ var _audioEnabled: Any = js.native
   
-  /* private */ var _audioListenerPositionProvider: js.Any = js.native
+  /* private */ var _audioListenerPositionProvider: Any = js.native
   
-  /* private */ var _cachedCameraDirection: js.Any = js.native
+  /* private */ var _cachedCameraDirection: Any = js.native
   
-  /* private */ var _cachedCameraPosition: js.Any = js.native
+  /* private */ var _cachedCameraPosition: Any = js.native
   
-  /* private */ var _headphone: js.Any = js.native
+  /* private */ var _cameraDirectionTemp: Any = js.native
   
-  /* private */ var _lastCheck: js.Any = js.native
+  /* private */ var _headphone: Any = js.native
+  
+  /* private */ var _invertMatrixTemp: Any = js.native
+  
+  /* private */ var _lastCheck: Any = js.native
   
   /**
     * Gets whether audio is enabled or not.
@@ -55,7 +59,7 @@ trait AudioSceneComponent
   def enableAudio(): Unit = js.native
   
   /**
-    * Gets whether audio is outputing to headphone or not.
+    * Gets whether audio is outputting to headphone or not.
     * Please use the according Switch methods to change output.
     */
   def headphone: Boolean = js.native

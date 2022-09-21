@@ -1,14 +1,20 @@
 package typings.twilioChat
 
-import typings.twilioChat.channelMod.Channel.NotificationLevel
-import typings.twilioChat.channelMod.Channel.Status
-import typings.twilioChat.channelsMod.Channels.DataSource
-import typings.twilioChat.memberMod.Member.Type
-import typings.twilioChat.messageMod.Message.UpdateReason
-import typings.twilioChat.mod.Client.ChannelSortingCriteria
-import typings.twilioChat.mod.Client.ChannelSortingOrder
-import typings.twilioChat.mod.Client._LogLevel
-import typings.twilioChat.userMod.User.SubscriptionState
+import typings.twilioChat.mod.ChannelSortingCriteria
+import typings.twilioChat.mod.ChannelSortingOrder
+import typings.twilioChat.mod.ChannelStatus
+import typings.twilioChat.mod.ChannelType0
+import typings.twilioChat.mod.ChannelUpdateReason
+import typings.twilioChat.mod.Channels.DataSource
+import typings.twilioChat.mod.MemberType
+import typings.twilioChat.mod.MemberUpdateReason
+import typings.twilioChat.mod.MessageType
+import typings.twilioChat.mod.MessageUpdateReason
+import typings.twilioChat.mod.NotificationLevel
+import typings.twilioChat.mod.PushNotificationType
+import typings.twilioChat.mod.State
+import typings.twilioChat.mod.UserUpdateReason
+import typings.twilioChat.mod._LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,29 +40,33 @@ object twilioChatStrings {
   @js.native
   sealed trait attributes
     extends StObject
-       with UpdateReason
-       with typings.twilioChat.channelMod.Channel.UpdateReason
-       with typings.twilioChat.userMod.User.UpdateReason
-       with typings.twilioChat.memberMod.Member.UpdateReason
+       with ChannelUpdateReason
+       with MemberUpdateReason
+       with MessageUpdateReason
+       with UserUpdateReason
   inline def attributes: attributes = "attributes".asInstanceOf[attributes]
   
   @js.native
   sealed trait author
     extends StObject
-       with UpdateReason
+       with MessageUpdateReason
   inline def author: author = "author".asInstanceOf[author]
+  
+  @js.native
+  sealed trait backwards extends StObject
+  inline def backwards: backwards = "backwards".asInstanceOf[backwards]
   
   @js.native
   sealed trait body
     extends StObject
-       with UpdateReason
+       with MessageUpdateReason
   inline def body: body = "body".asInstanceOf[body]
   
   @js.native
   sealed trait chat
     extends StObject
        with DataSource
-       with Type
+       with MemberType
   inline def chat: chat = "chat".asInstanceOf[chat]
   
   @js.native
@@ -66,23 +76,23 @@ object twilioChatStrings {
   @js.native
   sealed trait createdBy
     extends StObject
-       with typings.twilioChat.channelMod.Channel.UpdateReason
+       with ChannelUpdateReason
   inline def createdBy: createdBy = "createdBy".asInstanceOf[createdBy]
   
   @js.native
   sealed trait dateCreated
     extends StObject
-       with UpdateReason
-       with typings.twilioChat.channelMod.Channel.UpdateReason
-       with typings.twilioChat.memberMod.Member.UpdateReason
+       with ChannelUpdateReason
+       with MemberUpdateReason
+       with MessageUpdateReason
   inline def dateCreated: dateCreated = "dateCreated".asInstanceOf[dateCreated]
   
   @js.native
   sealed trait dateUpdated
     extends StObject
-       with UpdateReason
-       with typings.twilioChat.channelMod.Channel.UpdateReason
-       with typings.twilioChat.memberMod.Member.UpdateReason
+       with ChannelUpdateReason
+       with MemberUpdateReason
+       with MessageUpdateReason
   inline def dateUpdated: dateUpdated = "dateUpdated".asInstanceOf[dateUpdated]
   
   @js.native
@@ -90,6 +100,10 @@ object twilioChatStrings {
     extends StObject
        with _LogLevel
   inline def debug: debug = "debug".asInstanceOf[debug]
+  
+  @js.native
+  sealed trait delete extends StObject
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
   sealed trait descending
@@ -104,11 +118,21 @@ object twilioChatStrings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
+  sealed trait failed
+    extends StObject
+       with State
+  inline def failed: failed = "failed".asInstanceOf[failed]
+  
+  @js.native
+  sealed trait forward extends StObject
+  inline def forward: forward = "forward".asInstanceOf[forward]
+  
+  @js.native
   sealed trait friendlyName
     extends StObject
        with ChannelSortingCriteria
-       with typings.twilioChat.channelMod.Channel.UpdateReason
-       with typings.twilioChat.userMod.User.UpdateReason
+       with ChannelUpdateReason
+       with UserUpdateReason
   inline def friendlyName: friendlyName = "friendlyName".asInstanceOf[friendlyName]
   
   @js.native
@@ -122,53 +146,53 @@ object twilioChatStrings {
   inline def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait initializing
+  sealed trait initialized
     extends StObject
-       with SubscriptionState
-  inline def initializing: initializing = "initializing".asInstanceOf[initializing]
+       with State
+  inline def initialized: initialized = "initialized".asInstanceOf[initialized]
   
   @js.native
   sealed trait invited
     extends StObject
-       with Status
+       with ChannelStatus
   inline def invited: invited = "invited".asInstanceOf[invited]
   
   @js.native
   sealed trait joined
     extends StObject
-       with Status
+       with ChannelStatus
   inline def joined: joined = "joined".asInstanceOf[joined]
   
   @js.native
   sealed trait lastConsumedMessageIndex
     extends StObject
-       with typings.twilioChat.channelMod.Channel.UpdateReason
-       with typings.twilioChat.memberMod.Member.UpdateReason
+       with ChannelUpdateReason
+       with MemberUpdateReason
   inline def lastConsumedMessageIndex: lastConsumedMessageIndex = "lastConsumedMessageIndex".asInstanceOf[lastConsumedMessageIndex]
   
   @js.native
   sealed trait lastConsumptionTimestamp
     extends StObject
-       with typings.twilioChat.memberMod.Member.UpdateReason
+       with MemberUpdateReason
   inline def lastConsumptionTimestamp: lastConsumptionTimestamp = "lastConsumptionTimestamp".asInstanceOf[lastConsumptionTimestamp]
   
   @js.native
   sealed trait lastMessage
     extends StObject
        with ChannelSortingCriteria
-       with typings.twilioChat.channelMod.Channel.UpdateReason
+       with ChannelUpdateReason
   inline def lastMessage: lastMessage = "lastMessage".asInstanceOf[lastMessage]
   
   @js.native
   sealed trait lastUpdatedBy
     extends StObject
-       with UpdateReason
+       with MessageUpdateReason
   inline def lastUpdatedBy: lastUpdatedBy = "lastUpdatedBy".asInstanceOf[lastUpdatedBy]
   
   @js.native
   sealed trait media
     extends StObject
-       with typings.twilioChat.messageMod.Message.Type
+       with MessageType
   inline def media: media = "media".asInstanceOf[media]
   
   @js.native
@@ -180,43 +204,53 @@ object twilioChatStrings {
   @js.native
   sealed trait notParticipating
     extends StObject
-       with Status
+       with ChannelStatus
   inline def notParticipating: notParticipating = "notParticipating".asInstanceOf[notParticipating]
   
   @js.native
   sealed trait notifiable
     extends StObject
-       with typings.twilioChat.userMod.User.UpdateReason
+       with UserUpdateReason
   inline def notifiable: notifiable = "notifiable".asInstanceOf[notifiable]
   
   @js.native
   sealed trait notificationLevel
     extends StObject
-       with typings.twilioChat.channelMod.Channel.UpdateReason
+       with ChannelUpdateReason
   inline def notificationLevel: notificationLevel = "notificationLevel".asInstanceOf[notificationLevel]
   
   @js.native
   sealed trait online
     extends StObject
-       with typings.twilioChat.userMod.User.UpdateReason
+       with UserUpdateReason
   inline def online: online = "online".asInstanceOf[online]
+  
+  @js.native
+  sealed trait post extends StObject
+  inline def post: post = "post".asInstanceOf[post]
   
   @js.native
   sealed trait `private`
     extends StObject
-       with typings.twilioChat.channelMod.Channel.Type
+       with ChannelType0
   inline def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
   sealed trait public
     extends StObject
-       with typings.twilioChat.channelMod.Channel.Type
+       with ChannelType0
   inline def public: public = "public".asInstanceOf[public]
+  
+  @js.native
+  sealed trait rest
+    extends StObject
+       with DataSource
+  inline def rest: rest = "rest".asInstanceOf[rest]
   
   @js.native
   sealed trait roleSid
     extends StObject
-       with typings.twilioChat.memberMod.Member.UpdateReason
+       with MemberUpdateReason
   inline def roleSid: roleSid = "roleSid".asInstanceOf[roleSid]
   
   @js.native
@@ -228,26 +262,20 @@ object twilioChatStrings {
   @js.native
   sealed trait sms
     extends StObject
-       with Type
+       with MemberType
   inline def sms: sms = "sms".asInstanceOf[sms]
   
   @js.native
   sealed trait state
     extends StObject
-       with typings.twilioChat.channelMod.Channel.UpdateReason
+       with ChannelUpdateReason
   inline def state: state = "state".asInstanceOf[state]
   
   @js.native
   sealed trait status
     extends StObject
-       with typings.twilioChat.channelMod.Channel.UpdateReason
+       with ChannelUpdateReason
   inline def status: status = "status".asInstanceOf[status]
-  
-  @js.native
-  sealed trait subscribed
-    extends StObject
-       with SubscriptionState
-  inline def subscribed: subscribed = "subscribed".asInstanceOf[subscribed]
   
   @js.native
   sealed trait sync
@@ -256,15 +284,9 @@ object twilioChatStrings {
   inline def sync: sync = "sync".asInstanceOf[sync]
   
   @js.native
-  sealed trait synclist
-    extends StObject
-       with DataSource
-  inline def synclist: synclist = "synclist".asInstanceOf[synclist]
-  
-  @js.native
   sealed trait text
     extends StObject
-       with typings.twilioChat.messageMod.Message.Type
+       with MessageType
   inline def text: text = "text".asInstanceOf[text]
   
   @js.native
@@ -276,45 +298,39 @@ object twilioChatStrings {
   @js.native
   sealed trait twilioDotchannelDotadded_to_channel
     extends StObject
-       with typings.twilioChat.pushnotificationMod.PushNotification.Type
+       with PushNotificationType
   inline def twilioDotchannelDotadded_to_channel: twilioDotchannelDotadded_to_channel = "twilio.channel.added_to_channel".asInstanceOf[twilioDotchannelDotadded_to_channel]
   
   @js.native
   sealed trait twilioDotchannelDotinvited_to_channel
     extends StObject
-       with typings.twilioChat.pushnotificationMod.PushNotification.Type
+       with PushNotificationType
   inline def twilioDotchannelDotinvited_to_channel: twilioDotchannelDotinvited_to_channel = "twilio.channel.invited_to_channel".asInstanceOf[twilioDotchannelDotinvited_to_channel]
   
   @js.native
   sealed trait twilioDotchannelDotnew_message
     extends StObject
-       with typings.twilioChat.pushnotificationMod.PushNotification.Type
+       with PushNotificationType
   inline def twilioDotchannelDotnew_message: twilioDotchannelDotnew_message = "twilio.channel.new_message".asInstanceOf[twilioDotchannelDotnew_message]
   
   @js.native
   sealed trait twilioDotchannelDotremoved_from_channel
     extends StObject
-       with typings.twilioChat.pushnotificationMod.PushNotification.Type
+       with PushNotificationType
   inline def twilioDotchannelDotremoved_from_channel: twilioDotchannelDotremoved_from_channel = "twilio.channel.removed_from_channel".asInstanceOf[twilioDotchannelDotremoved_from_channel]
   
   @js.native
   sealed trait uniqueName
     extends StObject
        with ChannelSortingCriteria
-       with typings.twilioChat.channelMod.Channel.UpdateReason
+       with ChannelUpdateReason
   inline def uniqueName: uniqueName = "uniqueName".asInstanceOf[uniqueName]
   
   @js.native
   sealed trait unknown
     extends StObject
-       with Status
+       with ChannelStatus
   inline def unknown: unknown = "unknown".asInstanceOf[unknown]
-  
-  @js.native
-  sealed trait unsubscribed
-    extends StObject
-       with SubscriptionState
-  inline def unsubscribed: unsubscribed = "unsubscribed".asInstanceOf[unsubscribed]
   
   @js.native
   sealed trait warn
@@ -325,6 +341,6 @@ object twilioChatStrings {
   @js.native
   sealed trait whatsapp
     extends StObject
-       with Type
+       with MemberType
   inline def whatsapp: whatsapp = "whatsapp".asInstanceOf[whatsapp]
 }

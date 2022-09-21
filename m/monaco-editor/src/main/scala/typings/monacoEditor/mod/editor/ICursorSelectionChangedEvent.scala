@@ -66,13 +66,13 @@ object ICursorSelectionChangedEvent {
     
     inline def setOldSelectionsNull: Self = StObject.set(x, "oldSelections", null)
     
-    inline def setOldSelectionsVarargs(value: Selection*): Self = StObject.set(x, "oldSelections", js.Array(value :_*))
+    inline def setOldSelectionsVarargs(value: Selection*): Self = StObject.set(x, "oldSelections", js.Array(value*))
     
     inline def setReason(value: CursorChangeReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
     inline def setSecondarySelections(value: js.Array[Selection]): Self = StObject.set(x, "secondarySelections", value.asInstanceOf[js.Any])
     
-    inline def setSecondarySelectionsVarargs(value: Selection*): Self = StObject.set(x, "secondarySelections", js.Array(value :_*))
+    inline def setSecondarySelectionsVarargs(value: Selection*): Self = StObject.set(x, "secondarySelections", js.Array(value*))
     
     inline def setSelection(value: Selection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     

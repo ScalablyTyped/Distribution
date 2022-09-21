@@ -7,11 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ThinTexture extends StObject {
   
-  /* private */ var _cachedBaseSize: js.Any = js.native
+  /* private */ var _cachedBaseSize: Any = js.native
   
-  /* private */ var _cachedSize: js.Any = js.native
+  /* private */ var _cachedSize: Any = js.native
   
   /* protected */ var _engine: Nullable[ThinEngine] = js.native
+  
+  /** @hidden */
+  /* protected */ var _initialSamplingMode: Double = js.native
   
   /** @hidden */
   var _texture: Nullable[InternalTexture] = js.native
@@ -63,7 +66,7 @@ trait ThinTexture extends StObject {
   
   /**
     * Get the underlying lower level texture from Babylon.
-    * @returns the insternal texture
+    * @returns the internal texture
     */
   def getInternalTexture(): Nullable[InternalTexture] = js.native
   
@@ -101,6 +104,11 @@ trait ThinTexture extends StObject {
     * Release and destroy the underlying lower level texture aka internalTexture.
     */
   def releaseInternalTexture(): Unit = js.native
+  
+  /**
+    * Get the current sampling mode associated with the texture.
+    */
+  def samplingMode: Double = js.native
   
   /**
     * Update the sampling mode of the texture.

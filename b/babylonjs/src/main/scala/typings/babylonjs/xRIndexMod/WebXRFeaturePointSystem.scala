@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/XR/index", "WebXRFeaturePointSystem")
 @js.native
-class WebXRFeaturePointSystem protected ()
+open class WebXRFeaturePointSystem protected ()
   extends typings.babylonjs.featuresIndexMod.WebXRFeaturePointSystem {
   /**
     * construct the feature point system

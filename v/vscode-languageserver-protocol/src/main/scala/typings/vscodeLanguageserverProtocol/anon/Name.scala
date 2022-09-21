@@ -12,7 +12,7 @@ trait Name extends StObject {
   var name: String
   
   /**
-    * The servers's version as defined by the server.
+    * The server's version as defined by the server.
     */
   var version: js.UndefOr[String] = js.undefined
 }

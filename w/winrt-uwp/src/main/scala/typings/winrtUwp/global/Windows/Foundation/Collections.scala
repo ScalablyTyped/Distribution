@@ -28,7 +28,7 @@ object Collections {
   @JSGlobal("Windows.Foundation.Collections.PropertySet")
   @js.native
   /** Creates and initializes a new instance of the property set. */
-  class PropertySet ()
+  open class PropertySet ()
     extends StObject
        with typings.winrtUwp.Windows.Foundation.Collections.PropertySet
   
@@ -36,7 +36,7 @@ object Collections {
   @JSGlobal("Windows.Foundation.Collections.StringMap")
   @js.native
   /** Creates and initializes a new instance of the StringMap. */
-  class StringMap ()
+  open class StringMap ()
     extends StObject
        with typings.winrtUwp.Windows.Foundation.Collections.StringMap
   
@@ -44,7 +44,7 @@ object Collections {
   @JSGlobal("Windows.Foundation.Collections.ValueSet")
   @js.native
   /** Creates and initializes a new instance of the property set. */
-  class ValueSet ()
+  open class ValueSet ()
     extends StObject
        with typings.winrtUwp.Windows.Foundation.Collections.ValueSet
 }

@@ -28,7 +28,7 @@ object Visio {
     */
   @JSGlobal("Visio.Application")
   @js.native
-  class Application ()
+  open class Application ()
     extends StObject
        with typings.officeJs.Visio.Application {
     
@@ -46,13 +46,37 @@ object Visio {
   
   /**
     *
+    * Represents the type of column values.
+    *
+    * [Api set:  1.1]
+    */
+  @JSGlobal("Visio.ColumnType")
+  @js.native
+  object ColumnType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.officeJs.Visio.ColumnType & String] = js.native
+    
+    /* "Currency" */ val currency: typings.officeJs.Visio.ColumnType.currency & String = js.native
+    
+    /* "Date" */ val date: typings.officeJs.Visio.ColumnType.date & String = js.native
+    
+    /* "Number" */ val number: typings.officeJs.Visio.ColumnType.number & String = js.native
+    
+    /* "String" */ val string: typings.officeJs.Visio.ColumnType.string & String = js.native
+    
+    /* "Unknown" */ val unknown: typings.officeJs.Visio.ColumnType.unknown & String = js.native
+  }
+  
+  /**
+    *
     * Represents the Comment.
     *
     * [Api set:  1.1]
     */
   @JSGlobal("Visio.Comment")
   @js.native
-  class Comment ()
+  open class Comment ()
     extends StObject
        with typings.officeJs.Visio.Comment {
     
@@ -76,7 +100,7 @@ object Visio {
     */
   @JSGlobal("Visio.CommentCollection")
   @js.native
-  class CommentCollection ()
+  open class CommentCollection ()
     extends StObject
        with typings.officeJs.Visio.CommentCollection {
     
@@ -94,13 +118,175 @@ object Visio {
   
   /**
     *
+    * Direction of connector in DataVisualizer diagram.
+    *
+    * [Api set:  1.1]
+    */
+  @JSGlobal("Visio.ConnectorDirection")
+  @js.native
+  object ConnectorDirection extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.officeJs.Visio.ConnectorDirection & String] = js.native
+    
+    /* "FromTarget" */ val fromTarget: typings.officeJs.Visio.ConnectorDirection.fromTarget & String = js.native
+    
+    /* "ToTarget" */ val toTarget: typings.officeJs.Visio.ConnectorDirection.toTarget & String = js.native
+  }
+  
+  /**
+    *
+    * Represents the orientation of the Cross Functional Flowchart diagram.
+    *
+    * [Api set:  1.1]
+    */
+  @JSGlobal("Visio.CrossFunctionalFlowchartOrientation")
+  @js.native
+  object CrossFunctionalFlowchartOrientation extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.officeJs.Visio.CrossFunctionalFlowchartOrientation & String] = js.native
+    
+    /* "Horizontal" */ val horizontal: typings.officeJs.Visio.CrossFunctionalFlowchartOrientation.horizontal & String = js.native
+    
+    /* "Vertical" */ val vertical: typings.officeJs.Visio.CrossFunctionalFlowchartOrientation.vertical & String = js.native
+  }
+  
+  /**
+    *
+    * Represents the type of source for the data connection.
+    *
+    * [Api set:  1.1]
+    */
+  @JSGlobal("Visio.DataSourceType")
+  @js.native
+  object DataSourceType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.officeJs.Visio.DataSourceType & String] = js.native
+    
+    /* "Excel" */ val excel: typings.officeJs.Visio.DataSourceType.excel & String = js.native
+    
+    /* "Unknown" */ val unknown: typings.officeJs.Visio.DataSourceType.unknown & String = js.native
+  }
+  
+  /**
+    *
+    * Represents the types of data validation error.
+    *
+    * [Api set:  1.1]
+    */
+  @JSGlobal("Visio.DataValidationErrorType")
+  @js.native
+  object DataValidationErrorType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.officeJs.Visio.DataValidationErrorType & String] = js.native
+    
+    /* "ColumnNotMapped" */ val columnNotMapped: typings.officeJs.Visio.DataValidationErrorType.columnNotMapped & String = js.native
+    
+    /* "ConnectorColumnAndConnectorLabelMappedElsewhere" */ val connectorColumnAndConnectorLabelMappedElsewhere: typings.officeJs.Visio.DataValidationErrorType.connectorColumnAndConnectorLabelMappedElsewhere & String = js.native
+    
+    /* "ConnectorColumnError" */ val connectorColumnError: typings.officeJs.Visio.DataValidationErrorType.connectorColumnError & String = js.native
+    
+    /* "ConnectorColumnMappedElsewhere" */ val connectorColumnMappedElsewhere: typings.officeJs.Visio.DataValidationErrorType.connectorColumnMappedElsewhere & String = js.native
+    
+    /* "ConnectorLabelColumnMappedElsewhere" */ val connectorLabelColumnMappedElsewhere: typings.officeJs.Visio.DataValidationErrorType.connectorLabelColumnMappedElsewhere & String = js.native
+    
+    /* "DelimiterError" */ val delimiterError: typings.officeJs.Visio.DataValidationErrorType.delimiterError & String = js.native
+    
+    /* "None" */ val none: typings.officeJs.Visio.DataValidationErrorType.none & String = js.native
+    
+    /* "SwimlaneColumnError" */ val swimlaneColumnError: typings.officeJs.Visio.DataValidationErrorType.swimlaneColumnError & String = js.native
+    
+    /* "UniqueIdColumnError" */ val uniqueIdColumnError: typings.officeJs.Visio.DataValidationErrorType.uniqueIdColumnError & String = js.native
+  }
+  
+  /**
+    *
+    * Type of the Data Visualizer Diagram operation
+    *
+    * [Api set:  1.1]
+    */
+  @JSGlobal("Visio.DataVisualizerDiagramOperationType")
+  @js.native
+  object DataVisualizerDiagramOperationType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.officeJs.Visio.DataVisualizerDiagramOperationType & String] = js.native
+    
+    /* "Create" */ val create: typings.officeJs.Visio.DataVisualizerDiagramOperationType.create & String = js.native
+    
+    /* "Delete" */ val delete: typings.officeJs.Visio.DataVisualizerDiagramOperationType.delete & String = js.native
+    
+    /* "Unknown" */ val unknown: typings.officeJs.Visio.DataVisualizerDiagramOperationType.unknown & String = js.native
+    
+    /* "Update" */ val update: typings.officeJs.Visio.DataVisualizerDiagramOperationType.update & String = js.native
+    
+    /* "UpdateData" */ val updateData: typings.officeJs.Visio.DataVisualizerDiagramOperationType.updateData & String = js.native
+    
+    /* "UpdateMappings" */ val updateMappings: typings.officeJs.Visio.DataVisualizerDiagramOperationType.updateMappings & String = js.native
+  }
+  
+  /**
+    *
+    * Result of Data Visualizer Diagram operations.
+    *
+    * [Api set:  1.1]
+    */
+  @JSGlobal("Visio.DataVisualizerDiagramResultType")
+  @js.native
+  object DataVisualizerDiagramResultType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.officeJs.Visio.DataVisualizerDiagramResultType & String] = js.native
+    
+    /* "ConflictError" */ val conflictError: typings.officeJs.Visio.DataVisualizerDiagramResultType.conflictError & String = js.native
+    
+    /* "Success" */ val success: typings.officeJs.Visio.DataVisualizerDiagramResultType.success & String = js.native
+    
+    /* "Unexpected" */ val unexpected: typings.officeJs.Visio.DataVisualizerDiagramResultType.unexpected & String = js.native
+    
+    /* "ValidationError" */ val validationError: typings.officeJs.Visio.DataVisualizerDiagramResultType.validationError & String = js.native
+  }
+  
+  /**
+    *
+    * DiagramType for Data Visualizer diagrams
+    *
+    * [Api set:  1.1]
+    */
+  @JSGlobal("Visio.DataVisualizerDiagramType")
+  @js.native
+  object DataVisualizerDiagramType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.officeJs.Visio.DataVisualizerDiagramType & String] = js.native
+    
+    /* "Audit" */ val audit: typings.officeJs.Visio.DataVisualizerDiagramType.audit & String = js.native
+    
+    /* "BasicFlowchart" */ val basicFlowchart: typings.officeJs.Visio.DataVisualizerDiagramType.basicFlowchart & String = js.native
+    
+    /* "CrossFunctionalFlowchart_Horizontal" */ val crossFunctionalFlowchart_Horizontal: typings.officeJs.Visio.DataVisualizerDiagramType.crossFunctionalFlowchart_Horizontal & String = js.native
+    
+    /* "CrossFunctionalFlowchart_Vertical" */ val crossFunctionalFlowchart_Vertical: typings.officeJs.Visio.DataVisualizerDiagramType.crossFunctionalFlowchart_Vertical & String = js.native
+    
+    /* "Network" */ val network: typings.officeJs.Visio.DataVisualizerDiagramType.network & String = js.native
+    
+    /* "OrgChart" */ val orgChart: typings.officeJs.Visio.DataVisualizerDiagramType.orgChart & String = js.native
+    
+    /* "Unknown" */ val unknown: typings.officeJs.Visio.DataVisualizerDiagramType.unknown & String = js.native
+  }
+  
+  /**
+    *
     * Represents the Document class.
     *
     * [Api set:  1.1]
     */
   @JSGlobal("Visio.Document")
   @js.native
-  class Document ()
+  open class Document ()
     extends StObject
        with typings.officeJs.Visio.Document {
     
@@ -124,7 +310,7 @@ object Visio {
     */
   @JSGlobal("Visio.DocumentView")
   @js.native
-  class DocumentView ()
+  open class DocumentView ()
     extends StObject
        with typings.officeJs.Visio.DocumentView {
     
@@ -162,13 +348,29 @@ object Visio {
   
   /**
     *
+    * EventType represents the type of the events Host supports
+    *
+    * [Api set:  1.1]
+    */
+  @JSGlobal("Visio.EventType")
+  @js.native
+  object EventType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.officeJs.Visio.EventType & String] = js.native
+    
+    /* "DataVisualizerDiagramOperationCompleted" */ val dataVisualizerDiagramOperationCompleted: typings.officeJs.Visio.EventType.dataVisualizerDiagramOperationCompleted & String = js.native
+  }
+  
+  /**
+    *
     * Represents the Hyperlink.
     *
     * [Api set:  1.1]
     */
   @JSGlobal("Visio.Hyperlink")
   @js.native
-  class Hyperlink ()
+  open class Hyperlink ()
     extends StObject
        with typings.officeJs.Visio.Hyperlink {
     
@@ -192,7 +394,7 @@ object Visio {
     */
   @JSGlobal("Visio.HyperlinkCollection")
   @js.native
-  class HyperlinkCollection ()
+  open class HyperlinkCollection ()
     extends StObject
        with typings.officeJs.Visio.HyperlinkCollection {
     
@@ -206,6 +408,40 @@ object Visio {
       */
     /* CompleteClass */
     var isNullObject: Boolean = js.native
+  }
+  
+  /**
+    *
+    * Represents the type of layout.
+    *
+    * [Api set:  1.1]
+    */
+  @JSGlobal("Visio.LayoutVariant")
+  @js.native
+  object LayoutVariant extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.officeJs.Visio.LayoutVariant & String] = js.native
+    
+    /* "Flowchart_BottomToTop" */ val flowchart_BottomToTop: typings.officeJs.Visio.LayoutVariant.flowchart_BottomToTop & String = js.native
+    
+    /* "Flowchart_LeftToRight" */ val flowchart_LeftToRight: typings.officeJs.Visio.LayoutVariant.flowchart_LeftToRight & String = js.native
+    
+    /* "Flowchart_RightToLeft" */ val flowchart_RightToLeft: typings.officeJs.Visio.LayoutVariant.flowchart_RightToLeft & String = js.native
+    
+    /* "Flowchart_TopToBottom" */ val flowchart_TopToBottom: typings.officeJs.Visio.LayoutVariant.flowchart_TopToBottom & String = js.native
+    
+    /* "PageDefault" */ val pageDefault: typings.officeJs.Visio.LayoutVariant.pageDefault & String = js.native
+    
+    /* "Unknown" */ val unknown: typings.officeJs.Visio.LayoutVariant.unknown & String = js.native
+    
+    /* "WideTree_DownThenLeft" */ val wideTree_DownThenLeft: typings.officeJs.Visio.LayoutVariant.wideTree_DownThenLeft & String = js.native
+    
+    /* "WideTree_DownThenRight" */ val wideTree_DownThenRight: typings.officeJs.Visio.LayoutVariant.wideTree_DownThenRight & String = js.native
+    
+    /* "WideTree_LeftThenDown" */ val wideTree_LeftThenDown: typings.officeJs.Visio.LayoutVariant.wideTree_LeftThenDown & String = js.native
+    
+    /* "WideTree_RightThenDown" */ val wideTree_RightThenDown: typings.officeJs.Visio.LayoutVariant.wideTree_RightThenDown & String = js.native
   }
   
   /**
@@ -276,7 +512,7 @@ object Visio {
     */
   @JSGlobal("Visio.Page")
   @js.native
-  class Page ()
+  open class Page ()
     extends StObject
        with typings.officeJs.Visio.Page {
     
@@ -300,7 +536,7 @@ object Visio {
     */
   @JSGlobal("Visio.PageCollection")
   @js.native
-  class PageCollection ()
+  open class PageCollection ()
     extends StObject
        with typings.officeJs.Visio.PageCollection {
     
@@ -324,7 +560,7 @@ object Visio {
     */
   @JSGlobal("Visio.PageView")
   @js.native
-  class PageView ()
+  open class PageView ()
     extends StObject
        with typings.officeJs.Visio.PageView {
     
@@ -345,7 +581,7 @@ object Visio {
     */
   @JSGlobal("Visio.RequestContext")
   @js.native
-  class RequestContext ()
+  open class RequestContext ()
     extends StObject
        with typings.officeJs.Visio.RequestContext {
     def this(url: String) = this()
@@ -360,7 +596,7 @@ object Visio {
     */
   @JSGlobal("Visio.Selection")
   @js.native
-  class Selection ()
+  open class Selection ()
     extends StObject
        with typings.officeJs.Visio.Selection {
     
@@ -384,7 +620,7 @@ object Visio {
     */
   @JSGlobal("Visio.Shape")
   @js.native
-  class Shape ()
+  open class Shape ()
     extends StObject
        with typings.officeJs.Visio.Shape {
     
@@ -408,7 +644,7 @@ object Visio {
     */
   @JSGlobal("Visio.ShapeCollection")
   @js.native
-  class ShapeCollection ()
+  open class ShapeCollection ()
     extends StObject
        with typings.officeJs.Visio.ShapeCollection {
     
@@ -432,7 +668,7 @@ object Visio {
     */
   @JSGlobal("Visio.ShapeDataItem")
   @js.native
-  class ShapeDataItem ()
+  open class ShapeDataItem ()
     extends StObject
        with typings.officeJs.Visio.ShapeDataItem {
     
@@ -456,7 +692,7 @@ object Visio {
     */
   @JSGlobal("Visio.ShapeDataItemCollection")
   @js.native
-  class ShapeDataItemCollection ()
+  open class ShapeDataItemCollection ()
     extends StObject
        with typings.officeJs.Visio.ShapeDataItemCollection {
     
@@ -480,7 +716,7 @@ object Visio {
     */
   @JSGlobal("Visio.ShapeView")
   @js.native
-  class ShapeView ()
+  open class ShapeView ()
     extends StObject
        with typings.officeJs.Visio.ShapeView {
     
@@ -494,6 +730,26 @@ object Visio {
       */
     /* CompleteClass */
     var isNullObject: Boolean = js.native
+  }
+  
+  /**
+    *
+    * TaskPaneType represents the types of the First Party TaskPanes that are supported by Host through APIs. Used in case of Show TaskPane API/ TaskPane State Changed Event etc
+    *
+    * [Api set:  1.1]
+    */
+  @JSGlobal("Visio.TaskPaneType")
+  @js.native
+  object TaskPaneType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.officeJs.Visio.TaskPaneType & String] = js.native
+    
+    /* "DataVisualizerOrgChartMappings" */ val dataVisualizerOrgChartMappings: typings.officeJs.Visio.TaskPaneType.dataVisualizerOrgChartMappings & String = js.native
+    
+    /* "DataVisualizerProcessMappings" */ val dataVisualizerProcessMappings: typings.officeJs.Visio.TaskPaneType.dataVisualizerProcessMappings & String = js.native
+    
+    /* "None" */ val none: typings.officeJs.Visio.TaskPaneType.none & String = js.native
   }
   
   /**

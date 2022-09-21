@@ -35,7 +35,7 @@ object XStringAbbreviation {
   inline def apply(
     abbreviateString: (XStringWidth, Double, String) => String,
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XStringAbbreviation = {
     val __obj = js.Dynamic.literal(abbreviateString = js.Any.fromFunction3(abbreviateString), acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

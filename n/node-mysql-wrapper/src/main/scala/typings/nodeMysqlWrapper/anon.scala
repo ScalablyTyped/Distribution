@@ -71,7 +71,7 @@ object anon {
           /* userId */ String, 
           /* doc */ T, 
           /* fieldNames */ js.Array[String], 
-          /* modifier */ js.Any, 
+          /* modifier */ Any, 
           Boolean
         ]
       ] = js.undefined
@@ -89,7 +89,7 @@ object anon {
       
       inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      inline def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value :_*))
+      inline def setFetchVarargs(value: String*): Self = StObject.set(x, "fetch", js.Array(value*))
       
       inline def setInsert(value: (/* userId */ String, /* doc */ T) => Boolean): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
       
@@ -104,7 +104,7 @@ object anon {
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
       inline def setUpdate(
-        value: (/* userId */ String, /* doc */ T, /* fieldNames */ js.Array[String], /* modifier */ js.Any) => Boolean
+        value: (/* userId */ String, /* doc */ T, /* fieldNames */ js.Array[String], /* modifier */ Any) => Boolean
       ): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
       
       inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
@@ -113,7 +113,7 @@ object anon {
   
   trait Fields extends StObject {
     
-    var fields: js.UndefOr[js.Any] = js.undefined
+    var fields: js.UndefOr[Any] = js.undefined
     
     var limit: js.UndefOr[Double] = js.undefined
     
@@ -121,7 +121,7 @@ object anon {
     
     var skip: js.UndefOr[Double] = js.undefined
     
-    var sort: js.UndefOr[js.Any] = js.undefined
+    var sort: js.UndefOr[Any] = js.undefined
     
     var transform: js.UndefOr[js.Function] = js.undefined
   }
@@ -134,7 +134,7 @@ object anon {
     
     extension [Self <: Fields](x: Self) {
       
-      inline def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
@@ -150,7 +150,7 @@ object anon {
       
       inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      inline def setSort(value: js.Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
@@ -212,13 +212,13 @@ object anon {
   
   trait Reactive extends StObject {
     
-    var fields: js.UndefOr[js.Any] = js.undefined
+    var fields: js.UndefOr[Any] = js.undefined
     
     var reactive: js.UndefOr[Boolean] = js.undefined
     
     var skip: js.UndefOr[Double] = js.undefined
     
-    var sort: js.UndefOr[js.Any] = js.undefined
+    var sort: js.UndefOr[Any] = js.undefined
     
     var transform: js.UndefOr[js.Function] = js.undefined
   }
@@ -231,7 +231,7 @@ object anon {
     
     extension [Self <: Reactive](x: Self) {
       
-      inline def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
@@ -243,7 +243,7 @@ object anon {
       
       inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      inline def setSort(value: js.Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       

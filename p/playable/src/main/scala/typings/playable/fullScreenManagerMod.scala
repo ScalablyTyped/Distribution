@@ -10,7 +10,7 @@ object fullScreenManagerMod {
   
   @JSImport("playable/dist/src/modules/full-screen-manager/full-screen-manager", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with FullScreenManager {
     def this(hasEventEmitterEngineRootContainerConfig: Config) = this()
@@ -78,37 +78,37 @@ object fullScreenManagerMod {
     extends StObject
        with IFullScreenManager {
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _element: js.Any = js.native
+    /* private */ var _element: Any = js.native
     
-    /* private */ var _engine: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
-    /* private */ var _enterFullScreenOnPlay: js.Any = js.native
+    /* private */ var _enterFullScreenOnPlay: Any = js.native
     
-    /* private */ var _enterOnPlayRequested: js.Any = js.native
+    /* private */ var _enterOnPlayRequested: Any = js.native
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ var _exitFullScreenOnEnd: js.Any = js.native
+    /* private */ var _exitFullScreenOnEnd: Any = js.native
     
-    /* private */ var _exitFullScreenOnPause: js.Any = js.native
+    /* private */ var _exitFullScreenOnPause: Any = js.native
     
-    /* private */ var _exitOnEnd: js.Any = js.native
+    /* private */ var _exitOnEnd: Any = js.native
     
-    /* private */ var _exitOnPauseRequested: js.Any = js.native
+    /* private */ var _exitOnPauseRequested: Any = js.native
     
-    /* private */ var _helper: js.Any = js.native
+    /* private */ var _helper: Any = js.native
     
-    /* private */ var _isEnabled: js.Any = js.native
+    /* private */ var _isEnabled: Any = js.native
     
-    /* private */ var _onChange: js.Any = js.native
+    /* private */ var _onChange: Any = js.native
     
-    /* private */ var _pauseVideoOnFullScreenExit: js.Any = js.native
+    /* private */ var _pauseVideoOnFullScreenExit: Any = js.native
     
-    /* private */ var _processNextStateFromEngine: js.Any = js.native
+    /* private */ var _processNextStateFromEngine: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     @JSName("isEnabled")
     def isEnabled_MFullScreenManager: Boolean = js.native

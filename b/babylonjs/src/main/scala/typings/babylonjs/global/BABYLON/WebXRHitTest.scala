@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebXRHitTest")
 @js.native
-class WebXRHitTest protected ()
+open class WebXRHitTest protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRHitTest {
   /**
@@ -38,7 +38,7 @@ object WebXRHitTest {
     */
   @JSGlobal("BABYLON.WebXRHitTest.Name")
   @js.native
-  val Name: String = js.native
+  val Name: /* "xr-hit-test" */ String = js.native
   
   /**
     * The (Babylon) version of this module.
@@ -47,5 +47,5 @@ object WebXRHitTest {
     */
   @JSGlobal("BABYLON.WebXRHitTest.Version")
   @js.native
-  val Version: Double = js.native
+  val Version: /* 2 */ Double = js.native
 }

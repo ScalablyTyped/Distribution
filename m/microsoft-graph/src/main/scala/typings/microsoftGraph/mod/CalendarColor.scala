@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
+  - typings.microsoftGraph.microsoftGraphStrings.auto
   - typings.microsoftGraph.microsoftGraphStrings.lightBlue
   - typings.microsoftGraph.microsoftGraphStrings.lightGreen
-  - typings.microsoftGraph.microsoftGraphStrings.auto
   - typings.microsoftGraph.microsoftGraphStrings.lightOrange
   - typings.microsoftGraph.microsoftGraphStrings.lightGray
   - typings.microsoftGraph.microsoftGraphStrings.lightYellow

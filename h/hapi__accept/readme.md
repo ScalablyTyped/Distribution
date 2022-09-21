@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__accept
 
-Typings are for version 5.0.1
+Typings are for version 6.0.0
 
 ## Library description:
 HTTP Accept-* headers parsing
@@ -10,10 +10,10 @@ HTTP Accept-* headers parsing
 | ------------------ | :-------------: |
 | Full name          | @hapi/accept |
 | Keywords           | HTTP, header, accept, accept-encoding |
-| # releases         | 10 |
-| # dependents       | 24 |
-| # downloads        | 23080115 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 5499158.333333333 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/accept#readme)

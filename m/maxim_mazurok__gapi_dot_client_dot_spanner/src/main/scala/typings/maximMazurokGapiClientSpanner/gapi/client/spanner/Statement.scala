@@ -15,7 +15,7 @@ trait Statement extends StObject {
   var paramTypes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -26,7 +26,7 @@ trait Statement extends StObject {
   var params: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement & TopLevel[Any]
   ] = js.undefined
   
   /** Required. The DML string. */
@@ -44,7 +44,7 @@ object Statement {
     inline def setParamTypes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement & TopLevel[Any]
     ): Self = StObject.set(x, "paramTypes", value.asInstanceOf[js.Any])
     
     inline def setParamTypesUndefined: Self = StObject.set(x, "paramTypes", js.undefined)
@@ -52,7 +52,7 @@ object Statement {
     inline def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement & TopLevel[Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

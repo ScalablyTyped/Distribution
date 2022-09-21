@@ -3,7 +3,6 @@ package typings.tinymce.mod
 import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.HTMLImageElement
-import typings.std.RegExp
 import typings.std.Window
 import typings.tinymce.mod.settings.Menu
 import typings.tinymce.tinymceBooleans.`false`
@@ -154,7 +153,7 @@ trait Settings_ extends StObject {
   
   var images_upload_handler: js.UndefOr[
     js.Function3[
-      /* blobInfo */ js.Any, 
+      /* blobInfo */ Any, 
       /* success */ js.Function1[/* msg */ String, Unit], 
       /* failure */ js.Function1[/* msg */ String, Unit], 
       Unit
@@ -211,13 +210,39 @@ trait Settings_ extends StObject {
   
   var object_resizing: js.UndefOr[Boolean | String] = js.undefined
   
+  var pagebreak_separator: js.UndefOr[String] = js.undefined
+  
+  var pagebreak_split_block: js.UndefOr[Boolean] = js.undefined
+  
+  var paste_as_text: js.UndefOr[Boolean] = js.undefined
+  
+  var paste_convert_word_fake_lists: js.UndefOr[Boolean] = js.undefined
+  
   var paste_data_images: js.UndefOr[Boolean] = js.undefined
+  
+  var paste_enable_default_filters: js.UndefOr[Boolean] = js.undefined
+  
+  var paste_filter_drop: js.UndefOr[Boolean] = js.undefined
+  
+  var paste_merge_formats: js.UndefOr[Boolean] = js.undefined
+  
+  var paste_postprocess: js.UndefOr[js.Function2[/* plugin */ Any, /* args */ Any, Unit]] = js.undefined
+  
+  var paste_preprocess: js.UndefOr[js.Function2[/* plugin */ Any, /* args */ Any, Unit]] = js.undefined
+  
+  var paste_remove_styles_if_webkit: js.UndefOr[Boolean] = js.undefined
+  
+  var paste_retain_style_properties: js.UndefOr[String] = js.undefined
+  
+  var paste_webkit_styles: js.UndefOr[String] = js.undefined
+  
+  var paste_word_valid_elements: js.UndefOr[String] = js.undefined
   
   var plugins: js.UndefOr[String | js.Array[String]] = js.undefined
   
   var preview_styles: js.UndefOr[Boolean | String] = js.undefined
   
-  var protect: js.UndefOr[js.Array[RegExp]] = js.undefined
+  var protect: js.UndefOr[js.Array[js.RegExp]] = js.undefined
   
   var relative_urls: js.UndefOr[Boolean] = js.undefined
   
@@ -432,7 +457,7 @@ object Settings_ {
     
     inline def setContent_cssUndefined: Self = StObject.set(x, "content_css", js.undefined)
     
-    inline def setContent_cssVarargs(value: String*): Self = StObject.set(x, "content_css", js.Array(value :_*))
+    inline def setContent_cssVarargs(value: String*): Self = StObject.set(x, "content_css", js.Array(value*))
     
     inline def setContent_security_policy(value: String): Self = StObject.set(x, "content_security_policy", value.asInstanceOf[js.Any])
     
@@ -589,7 +614,7 @@ object Settings_ {
     inline def setImages_upload_credentialsUndefined: Self = StObject.set(x, "images_upload_credentials", js.undefined)
     
     inline def setImages_upload_handler(
-      value: (/* blobInfo */ js.Any, /* success */ js.Function1[/* msg */ String, Unit], /* failure */ js.Function1[/* msg */ String, Unit]) => Unit
+      value: (/* blobInfo */ Any, /* success */ js.Function1[/* msg */ String, Unit], /* failure */ js.Function1[/* msg */ String, Unit]) => Unit
     ): Self = StObject.set(x, "images_upload_handler", js.Any.fromFunction3(value))
     
     inline def setImages_upload_handlerUndefined: Self = StObject.set(x, "images_upload_handler", js.undefined)
@@ -606,7 +631,7 @@ object Settings_ {
     
     inline def setImagetools_cors_hostsUndefined: Self = StObject.set(x, "imagetools_cors_hosts", js.undefined)
     
-    inline def setImagetools_cors_hostsVarargs(value: String*): Self = StObject.set(x, "imagetools_cors_hosts", js.Array(value :_*))
+    inline def setImagetools_cors_hostsVarargs(value: String*): Self = StObject.set(x, "imagetools_cors_hosts", js.Array(value*))
     
     inline def setImagetools_proxy(value: String): Self = StObject.set(x, "imagetools_proxy", value.asInstanceOf[js.Any])
     
@@ -696,25 +721,77 @@ object Settings_ {
     
     inline def setObject_resizingUndefined: Self = StObject.set(x, "object_resizing", js.undefined)
     
+    inline def setPagebreak_separator(value: String): Self = StObject.set(x, "pagebreak_separator", value.asInstanceOf[js.Any])
+    
+    inline def setPagebreak_separatorUndefined: Self = StObject.set(x, "pagebreak_separator", js.undefined)
+    
+    inline def setPagebreak_split_block(value: Boolean): Self = StObject.set(x, "pagebreak_split_block", value.asInstanceOf[js.Any])
+    
+    inline def setPagebreak_split_blockUndefined: Self = StObject.set(x, "pagebreak_split_block", js.undefined)
+    
+    inline def setPaste_as_text(value: Boolean): Self = StObject.set(x, "paste_as_text", value.asInstanceOf[js.Any])
+    
+    inline def setPaste_as_textUndefined: Self = StObject.set(x, "paste_as_text", js.undefined)
+    
+    inline def setPaste_convert_word_fake_lists(value: Boolean): Self = StObject.set(x, "paste_convert_word_fake_lists", value.asInstanceOf[js.Any])
+    
+    inline def setPaste_convert_word_fake_listsUndefined: Self = StObject.set(x, "paste_convert_word_fake_lists", js.undefined)
+    
     inline def setPaste_data_images(value: Boolean): Self = StObject.set(x, "paste_data_images", value.asInstanceOf[js.Any])
     
     inline def setPaste_data_imagesUndefined: Self = StObject.set(x, "paste_data_images", js.undefined)
+    
+    inline def setPaste_enable_default_filters(value: Boolean): Self = StObject.set(x, "paste_enable_default_filters", value.asInstanceOf[js.Any])
+    
+    inline def setPaste_enable_default_filtersUndefined: Self = StObject.set(x, "paste_enable_default_filters", js.undefined)
+    
+    inline def setPaste_filter_drop(value: Boolean): Self = StObject.set(x, "paste_filter_drop", value.asInstanceOf[js.Any])
+    
+    inline def setPaste_filter_dropUndefined: Self = StObject.set(x, "paste_filter_drop", js.undefined)
+    
+    inline def setPaste_merge_formats(value: Boolean): Self = StObject.set(x, "paste_merge_formats", value.asInstanceOf[js.Any])
+    
+    inline def setPaste_merge_formatsUndefined: Self = StObject.set(x, "paste_merge_formats", js.undefined)
+    
+    inline def setPaste_postprocess(value: (/* plugin */ Any, /* args */ Any) => Unit): Self = StObject.set(x, "paste_postprocess", js.Any.fromFunction2(value))
+    
+    inline def setPaste_postprocessUndefined: Self = StObject.set(x, "paste_postprocess", js.undefined)
+    
+    inline def setPaste_preprocess(value: (/* plugin */ Any, /* args */ Any) => Unit): Self = StObject.set(x, "paste_preprocess", js.Any.fromFunction2(value))
+    
+    inline def setPaste_preprocessUndefined: Self = StObject.set(x, "paste_preprocess", js.undefined)
+    
+    inline def setPaste_remove_styles_if_webkit(value: Boolean): Self = StObject.set(x, "paste_remove_styles_if_webkit", value.asInstanceOf[js.Any])
+    
+    inline def setPaste_remove_styles_if_webkitUndefined: Self = StObject.set(x, "paste_remove_styles_if_webkit", js.undefined)
+    
+    inline def setPaste_retain_style_properties(value: String): Self = StObject.set(x, "paste_retain_style_properties", value.asInstanceOf[js.Any])
+    
+    inline def setPaste_retain_style_propertiesUndefined: Self = StObject.set(x, "paste_retain_style_properties", js.undefined)
+    
+    inline def setPaste_webkit_styles(value: String): Self = StObject.set(x, "paste_webkit_styles", value.asInstanceOf[js.Any])
+    
+    inline def setPaste_webkit_stylesUndefined: Self = StObject.set(x, "paste_webkit_styles", js.undefined)
+    
+    inline def setPaste_word_valid_elements(value: String): Self = StObject.set(x, "paste_word_valid_elements", value.asInstanceOf[js.Any])
+    
+    inline def setPaste_word_valid_elementsUndefined: Self = StObject.set(x, "paste_word_valid_elements", js.undefined)
     
     inline def setPlugins(value: String | js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setPreview_styles(value: Boolean | String): Self = StObject.set(x, "preview_styles", value.asInstanceOf[js.Any])
     
     inline def setPreview_stylesUndefined: Self = StObject.set(x, "preview_styles", js.undefined)
     
-    inline def setProtect(value: js.Array[RegExp]): Self = StObject.set(x, "protect", value.asInstanceOf[js.Any])
+    inline def setProtect(value: js.Array[js.RegExp]): Self = StObject.set(x, "protect", value.asInstanceOf[js.Any])
     
     inline def setProtectUndefined: Self = StObject.set(x, "protect", js.undefined)
     
-    inline def setProtectVarargs(value: RegExp*): Self = StObject.set(x, "protect", js.Array(value :_*))
+    inline def setProtectVarargs(value: js.RegExp*): Self = StObject.set(x, "protect", js.Array(value*))
     
     inline def setRelative_urls(value: Boolean): Self = StObject.set(x, "relative_urls", value.asInstanceOf[js.Any])
     
@@ -724,7 +801,7 @@ object Settings_ {
     
     inline def setRemoveFormatUndefined: Self = StObject.set(x, "removeFormat", js.undefined)
     
-    inline def setRemoveFormatVarargs(value: js.Object*): Self = StObject.set(x, "removeFormat", js.Array(value :_*))
+    inline def setRemoveFormatVarargs(value: js.Object*): Self = StObject.set(x, "removeFormat", js.Array(value*))
     
     inline def setRemove_script_host(value: Boolean): Self = StObject.set(x, "remove_script_host", value.asInstanceOf[js.Any])
     
@@ -794,7 +871,7 @@ object Settings_ {
     
     inline def setSpellchecker_whitelistUndefined: Self = StObject.set(x, "spellchecker_whitelist", js.undefined)
     
-    inline def setSpellchecker_whitelistVarargs(value: String*): Self = StObject.set(x, "spellchecker_whitelist", js.Array(value :_*))
+    inline def setSpellchecker_whitelistVarargs(value: String*): Self = StObject.set(x, "spellchecker_whitelist", js.Array(value*))
     
     inline def setStatusbar(value: Boolean): Self = StObject.set(x, "statusbar", value.asInstanceOf[js.Any])
     
@@ -804,7 +881,7 @@ object Settings_ {
     
     inline def setStyle_formatsUndefined: Self = StObject.set(x, "style_formats", js.undefined)
     
-    inline def setStyle_formatsVarargs(value: js.Object*): Self = StObject.set(x, "style_formats", js.Array(value :_*))
+    inline def setStyle_formatsVarargs(value: js.Object*): Self = StObject.set(x, "style_formats", js.Array(value*))
     
     inline def setStyle_formats_autohide(value: Boolean): Self = StObject.set(x, "style_formats_autohide", value.asInstanceOf[js.Any])
     
@@ -830,13 +907,13 @@ object Settings_ {
     
     inline def setTable_cell_class_listUndefined: Self = StObject.set(x, "table_cell_class_list", js.undefined)
     
-    inline def setTable_cell_class_listVarargs(value: js.Object*): Self = StObject.set(x, "table_cell_class_list", js.Array(value :_*))
+    inline def setTable_cell_class_listVarargs(value: js.Object*): Self = StObject.set(x, "table_cell_class_list", js.Array(value*))
     
     inline def setTable_class_list(value: js.Array[js.Object]): Self = StObject.set(x, "table_class_list", value.asInstanceOf[js.Any])
     
     inline def setTable_class_listUndefined: Self = StObject.set(x, "table_class_list", js.undefined)
     
-    inline def setTable_class_listVarargs(value: js.Object*): Self = StObject.set(x, "table_class_list", js.Array(value :_*))
+    inline def setTable_class_listVarargs(value: js.Object*): Self = StObject.set(x, "table_class_list", js.Array(value*))
     
     inline def setTable_clone_elements(value: String): Self = StObject.set(x, "table_clone_elements", value.asInstanceOf[js.Any])
     
@@ -866,7 +943,7 @@ object Settings_ {
     
     inline def setTable_row_class_listUndefined: Self = StObject.set(x, "table_row_class_list", js.undefined)
     
-    inline def setTable_row_class_listVarargs(value: js.Object*): Self = StObject.set(x, "table_row_class_list", js.Array(value :_*))
+    inline def setTable_row_class_listVarargs(value: js.Object*): Self = StObject.set(x, "table_row_class_list", js.Array(value*))
     
     inline def setTable_sizing_mode(value: fixed | relative | responsive | auto): Self = StObject.set(x, "table_sizing_mode", value.asInstanceOf[js.Any])
     
@@ -900,7 +977,7 @@ object Settings_ {
     
     inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    inline def setToolbarVarargs(value: String*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
+    inline def setToolbarVarargs(value: String*): Self = StObject.set(x, "toolbar", js.Array(value*))
     
     inline def setType_ahead_urls(value: Boolean): Self = StObject.set(x, "type_ahead_urls", value.asInstanceOf[js.Any])
     

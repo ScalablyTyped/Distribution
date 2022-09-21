@@ -22,6 +22,6 @@ object Metaline {
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    inline def setPropertiesVarargs(value: DisplayedProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: DisplayedProperty*): Self = StObject.set(x, "properties", js.Array(value*))
   }
 }

@@ -21,15 +21,23 @@ trait BaseCameraPointersInput
     */
   /* protected */ var _buttonsPressed: Double = js.native
   
+  /* private */ var _contextMenuBind: Any = js.native
+  
   /* protected */ var _ctrlKey: Boolean = js.native
+  
+  /* private */ var _currentActiveButton: Any = js.native
   
   /* protected */ var _metaKey: Boolean = js.native
   
-  /* private */ var _observer: js.Any = js.native
+  /* private */ var _observer: Any = js.native
   
-  /* private */ var _onLostFocus: js.Any = js.native
+  /* private */ var _onLostFocus: Any = js.native
   
-  /* private */ var _pointerInput: js.Any = js.native
+  /* private */ var _pointA: Any = js.native
+  
+  /* private */ var _pointB: Any = js.native
+  
+  /* private */ var _pointerInput: Any = js.native
   
   /* protected */ var _shiftKey: Boolean = js.native
   
@@ -48,41 +56,51 @@ trait BaseCameraPointersInput
     * Called each time a new POINTERDOWN event occurs. Ie, for each button
     * press.
     * Override this method to provide functionality.
+    * @param evt
     */
-  /* protected */ def onButtonDown(evt: PointerEvent): Unit = js.native
+  def onButtonDown(evt: IPointerEvent): Unit = js.native
   
   /**
     * Called each time a new POINTERUP event occurs. Ie, for each button
     * release.
     * Override this method to provide functionality.
+    * @param evt
     */
-  /* protected */ def onButtonUp(evt: PointerEvent): Unit = js.native
+  def onButtonUp(evt: IPointerEvent): Unit = js.native
   
   /**
     * Called on JS contextmenu event.
     * Override this method to provide functionality.
+    * @param evt
     */
-  /* protected */ def onContextMenu(evt: PointerEvent): Unit = js.native
+  def onContextMenu(evt: PointerEvent): Unit = js.native
   
   /**
     * Called on pointer POINTERDOUBLETAP event.
     * Override this method to provide functionality on POINTERDOUBLETAP event.
+    * @param type
     */
-  /* protected */ def onDoubleTap(`type`: String): Unit = js.native
+  def onDoubleTap(`type`: String): Unit = js.native
   
   /**
     * Called when window becomes inactive.
     * Override this method to provide functionality.
     */
-  /* protected */ def onLostFocus(): Unit = js.native
+  def onLostFocus(): Unit = js.native
   
   /**
     * Called on pointer POINTERMOVE event if multiple touches are active.
     * Override this method to provide functionality.
+    * @param _pointA
+    * @param _pointB
+    * @param previousPinchSquaredDistance
+    * @param pinchSquaredDistance
+    * @param previousMultiTouchPanPosition
+    * @param multiTouchPanPosition
     */
-  /* protected */ def onMultiTouch(
-    pointA: Nullable[PointerTouch],
-    pointB: Nullable[PointerTouch],
+  def onMultiTouch(
+    _pointA: Nullable[PointerTouch],
+    _pointB: Nullable[PointerTouch],
     previousPinchSquaredDistance: Double,
     pinchSquaredDistance: Double,
     previousMultiTouchPanPosition: Nullable[PointerTouch],
@@ -92,10 +110,9 @@ trait BaseCameraPointersInput
   /**
     * Called on pointer POINTERMOVE event if only a single touch is active.
     * Override this method to provide functionality.
+    * @param point
+    * @param offsetX
+    * @param offsetY
     */
-  /* protected */ def onTouch(point: Nullable[PointerTouch], offsetX: Double, offsetY: Double): Unit = js.native
-  
-  /* private */ var pointA: js.Any = js.native
-  
-  /* private */ var pointB: js.Any = js.native
+  def onTouch(point: Nullable[PointerTouch], offsetX: Double, offsetY: Double): Unit = js.native
 }

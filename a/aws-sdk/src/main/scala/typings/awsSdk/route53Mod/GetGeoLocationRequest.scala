@@ -17,7 +17,7 @@ trait GetGeoLocationRequest extends StObject {
   var CountryCode: js.UndefOr[GeoLocationCountryCode] = js.undefined
   
   /**
-    * For SubdivisionCode, Amazon Route 53 supports only states of the United States. For a list of state abbreviations, see Appendix B: Two–Letter State and Possession Abbreviations on the United States Postal Service website.  If you specify subdivisioncode, you must also specify US for CountryCode. 
+    * The code for the subdivision, such as a particular state within the United States. For a list of US state abbreviations, see Appendix B: Two–Letter State and Possession Abbreviations on the United States Postal Service website. For a list of all supported subdivision codes, use the ListGeoLocations API.
     */
   var SubdivisionCode: js.UndefOr[GeoLocationSubdivisionCode] = js.undefined
 }

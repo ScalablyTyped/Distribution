@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("RemoveNumerationCommand")
 @js.native
-class RemoveNumerationCommand ()
+open class RemoveNumerationCommand ()
   extends StObject
      with typings.devexpressWeb.RemoveNumerationCommand {
   

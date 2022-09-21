@@ -10,7 +10,7 @@ object vectorSplitterBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/vectorSplitterBlock", "VectorSplitterBlock")
   @js.native
-  class VectorSplitterBlock protected () extends NodeMaterialBlock {
+  open class VectorSplitterBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new VectorSplitterBlock
       * @param name defines the block name
@@ -61,5 +61,10 @@ object vectorSplitterBlockMod {
       * Gets the z component (output)
       */
     def z: NodeMaterialConnectionPoint = js.native
+    
+    /**
+      * Gets the zw component (output)
+      */
+    def zw: NodeMaterialConnectionPoint = js.native
   }
 }

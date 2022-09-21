@@ -10,5 +10,5 @@ trait SwitchFactory
   extends Factory[
       SwitchConstructor, 
       InstanceType[SwitchConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[SwitchConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

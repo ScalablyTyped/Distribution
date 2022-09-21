@@ -11,12 +11,12 @@ ToastrJS is a JavaScript library for Gnome / Growl type non-blocking notificatio
 | Full name          | toastr |
 | Keywords           | Toastr, ToastrJS, toastr.js |
 | # releases         | 0 |
-| # dependents       | 187 |
-| # downloads        | 7642876 |
-| # stars            | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 716559.6666666666 |
+| # stars            | 11285.0 |
 
 ## Links
-- [Homepage](http://www.toastrjs.com)
+- [Homepage](https://github.com/CodeSeven/toastr#readme)
 - [Bugs](http://stackoverflow.com/questions/tagged/toastr)
 - [Repository](https://github.com/CodeSeven/toastr)
 - [Npm](https://www.npmjs.com/package/toastr)

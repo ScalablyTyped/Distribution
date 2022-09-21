@@ -10,10 +10,10 @@ Boom response objects in Express
 | ------------------ | :-------------: |
 | Full name          | express-boom |
 | Keywords           | Hapi, Boom, Express, response |
-| # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 222054 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 23708.0 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/scottcorgan/express-boom)

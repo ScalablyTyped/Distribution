@@ -1,9 +1,10 @@
 package typings.three
 
 import typings.std.ArrayLike
-import typings.three.anon.Data
+import typings.three.anon.IsInterleavedBufferAttribute
 import typings.three.bufferAttributeMod.BufferAttribute
 import typings.three.interleavedBufferMod.InterleavedBuffer
+import typings.three.matrix3Mod.Matrix
 import typings.three.matrix4Mod.Matrix4
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
@@ -14,11 +15,13 @@ object interleavedBufferAttributeMod {
   
   @JSImport("three/src/core/InterleavedBufferAttribute", "InterleavedBufferAttribute")
   @js.native
-  class InterleavedBufferAttribute protected () extends StObject {
+  open class InterleavedBufferAttribute protected () extends StObject {
     def this(interleavedBuffer: InterleavedBuffer, itemSize: Double, offset: Double) = this()
     def this(interleavedBuffer: InterleavedBuffer, itemSize: Double, offset: Double, normalized: Boolean) = this()
     
     def applyMatrix4(m: Matrix4): this.type = js.native
+    
+    def applyNormalMatrix(matrix: Matrix): this.type = js.native
     
     def array: ArrayLike[Double] = js.native
     
@@ -41,34 +44,36 @@ object interleavedBufferAttributeMod {
     var itemSize: Double = js.native
     
     /**
-    	 * @default ''
-    	 */
+      * @default ''
+      */
     var name: String = js.native
     
     def needsUpdate_=(value: Boolean): Unit = js.native
     
     /**
-    	 * @default false
-    	 */
+      * @default false
+      */
     var normalized: Boolean = js.native
     
     var offset: Double = js.native
     
-    def setW(index: Double, z: Double): InterleavedBufferAttribute = js.native
+    def setW(index: Double, z: Double): this.type = js.native
     
-    def setX(index: Double, x: Double): InterleavedBufferAttribute = js.native
+    def setX(index: Double, x: Double): this.type = js.native
     
-    def setXY(index: Double, x: Double, y: Double): InterleavedBufferAttribute = js.native
+    def setXY(index: Double, x: Double, y: Double): this.type = js.native
     
-    def setXYZ(index: Double, x: Double, y: Double, z: Double): InterleavedBufferAttribute = js.native
+    def setXYZ(index: Double, x: Double, y: Double, z: Double): this.type = js.native
     
-    def setXYZW(index: Double, x: Double, y: Double, z: Double, w: Double): InterleavedBufferAttribute = js.native
+    def setXYZW(index: Double, x: Double, y: Double, z: Double, w: Double): this.type = js.native
     
-    def setY(index: Double, y: Double): InterleavedBufferAttribute = js.native
+    def setY(index: Double, y: Double): this.type = js.native
     
-    def setZ(index: Double, z: Double): InterleavedBufferAttribute = js.native
+    def setZ(index: Double, z: Double): this.type = js.native
     
-    def toJSON(): Data = js.native
-    def toJSON(data: js.Object): Data = js.native
+    def toJSON(): IsInterleavedBufferAttribute = js.native
+    def toJSON(data: js.Object): IsInterleavedBufferAttribute = js.native
+    
+    def transformDirection(matrix: Matrix): this.type = js.native
   }
 }

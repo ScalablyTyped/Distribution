@@ -11,25 +11,25 @@ object mod {
   
   @JSImport("react-native-linear-gradient", JSImport.Default)
   @js.native
-  class default protected () extends LinearGradient {
+  open class default protected () extends LinearGradient {
     def this(props: LinearGradientProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: LinearGradientProps, context: js.Any) = this()
+    def this(props: LinearGradientProps, context: Any) = this()
   }
   
   @JSImport("react-native-linear-gradient", "LinearGradient")
   @js.native
-  class LinearGradient protected ()
-    extends Component[LinearGradientProps, js.Object, js.Any] {
+  open class LinearGradient protected ()
+    extends Component[LinearGradientProps, js.Object, Any] {
     def this(props: LinearGradientProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: LinearGradientProps, context: js.Any) = this()
+    def this(props: LinearGradientProps, context: Any) = this()
   }
   
   trait LinearGradientProps
@@ -69,7 +69,7 @@ object mod {
       
       inline def setColors(value: js.Array[String | Double]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      inline def setColorsVarargs(value: (String | Double)*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: (String | Double)*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setEnd(value: X): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -79,7 +79,7 @@ object mod {
       
       inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
       
-      inline def setLocationsVarargs(value: Double*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Double*): Self = StObject.set(x, "locations", js.Array(value*))
       
       inline def setStart(value: X): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       

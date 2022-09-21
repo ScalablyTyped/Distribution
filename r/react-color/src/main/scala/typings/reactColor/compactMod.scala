@@ -14,12 +14,10 @@ object compactMod {
   
   @JSImport("react-color/lib/components/compact/Compact", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[CompactPickerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[CompactPickerProps, js.Object, Any]
   
-  @js.native
-  trait CompactPicker
-    extends Component[CompactPickerProps, js.Object, js.Any]
+  type CompactPicker = Component[CompactPickerProps, js.Object, Any]
   
   trait CompactPickerProps
     extends StObject
@@ -45,7 +43,7 @@ object compactMod {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setOnSwatchHover(value: (/* color */ ColorResult, /* event */ MouseEvent) => Unit): Self = StObject.set(x, "onSwatchHover", js.Any.fromFunction2(value))
       

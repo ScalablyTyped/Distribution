@@ -29,6 +29,6 @@ object DeviceCompromised {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: DeviceCompromisedSecurityDetail*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: DeviceCompromisedSecurityDetail*): Self = StObject.set(x, "events", js.Array(value*))
   }
 }

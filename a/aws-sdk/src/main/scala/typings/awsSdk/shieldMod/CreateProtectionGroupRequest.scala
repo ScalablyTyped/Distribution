@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateProtectionGroupRequest extends StObject {
   
   /**
-    * Defines how AWS Shield combines resource data for the group in order to detect, mitigate, and report events.   Sum - Use the total traffic across the group. This is a good choice for most cases. Examples include Elastic IP addresses for EC2 instances that scale manually or automatically.   Mean - Use the average of the traffic across the group. This is a good choice for resources that share traffic uniformly. Examples include accelerators and load balancers.   Max - Use the highest traffic from each resource. This is useful for resources that don't share traffic and for resources that share that traffic in a non-uniform way. Examples include CloudFront distributions and origin resources for CloudFront distributions.  
+    * Defines how Shield combines resource data for the group in order to detect, mitigate, and report events.   Sum - Use the total traffic across the group. This is a good choice for most cases. Examples include Elastic IP addresses for EC2 instances that scale manually or automatically.   Mean - Use the average of the traffic across the group. This is a good choice for resources that share traffic uniformly. Examples include accelerators and load balancers.   Max - Use the highest traffic from each resource. This is useful for resources that don't share traffic and for resources that share that traffic in a non-uniform way. Examples include Amazon CloudFront and origin resources for CloudFront distributions.  
     */
   var Aggregation: ProtectionGroupAggregation
   
@@ -30,6 +30,11 @@ trait CreateProtectionGroupRequest extends StObject {
     * The resource type to include in the protection group. All protected resources of this type are included in the protection group. Newly protected resources of this type are automatically added to the group. You must set this when you set Pattern to BY_RESOURCE_TYPE and you must not set it for any other Pattern setting. 
     */
   var ResourceType: js.UndefOr[ProtectedResourceType] = js.undefined
+  
+  /**
+    * One or more tag key-value pairs for the protection group.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateProtectionGroupRequest {
   
@@ -50,7 +55,7 @@ object CreateProtectionGroupRequest {
     
     inline def setMembersUndefined: Self = StObject.set(x, "Members", js.undefined)
     
-    inline def setMembersVarargs(value: ResourceArn*): Self = StObject.set(x, "Members", js.Array(value :_*))
+    inline def setMembersVarargs(value: ResourceArn*): Self = StObject.set(x, "Members", js.Array(value*))
     
     inline def setPattern(value: ProtectionGroupPattern): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
@@ -59,5 +64,11 @@ object CreateProtectionGroupRequest {
     inline def setResourceType(value: ProtectedResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
     inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

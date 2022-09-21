@@ -33,6 +33,6 @@ object ListPartnerEventSourceAccountsResponse {
     
     inline def setPartnerEventSourceAccountsUndefined: Self = StObject.set(x, "PartnerEventSourceAccounts", js.undefined)
     
-    inline def setPartnerEventSourceAccountsVarargs(value: PartnerEventSourceAccount*): Self = StObject.set(x, "PartnerEventSourceAccounts", js.Array(value :_*))
+    inline def setPartnerEventSourceAccountsVarargs(value: PartnerEventSourceAccount*): Self = StObject.set(x, "PartnerEventSourceAccounts", js.Array(value*))
   }
 }

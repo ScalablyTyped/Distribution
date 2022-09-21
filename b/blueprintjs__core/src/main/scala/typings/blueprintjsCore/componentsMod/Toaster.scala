@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.componentsMod
 
-import typings.blueprintjsCore.toasterMod.IToaster
 import typings.blueprintjsCore.toasterMod.IToasterProps
+import typings.blueprintjsCore.toasterMod.ToasterInstance
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@blueprintjs/core/lib/esm/components", "Toaster")
 @js.native
-class Toaster protected ()
+open class Toaster protected ()
   extends typings.blueprintjsCore.toasterMod.Toaster {
   def this(props: IToasterProps) = this()
-  def this(props: IToasterProps, context: js.Any) = this()
+  def this(props: IToasterProps, context: Any) = this()
 }
 /* static members */
 object Toaster {
@@ -25,10 +25,10 @@ object Toaster {
     * Create a new `Toaster` instance that can be shared around your application.
     * The `Toaster` will be rendered into a new element appended to the given container.
     */
-  inline def create(): IToaster = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[IToaster]
-  inline def create(props: Unit, container: HTMLElement): IToaster = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(props.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[IToaster]
-  inline def create(props: IToasterProps): IToaster = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(props.asInstanceOf[js.Any]).asInstanceOf[IToaster]
-  inline def create(props: IToasterProps, container: HTMLElement): IToaster = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(props.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[IToaster]
+  inline def create(): ToasterInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ToasterInstance]
+  inline def create(props: Unit, container: HTMLElement): ToasterInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(props.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[ToasterInstance]
+  inline def create(props: IToasterProps): ToasterInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(props.asInstanceOf[js.Any]).asInstanceOf[ToasterInstance]
+  inline def create(props: IToasterProps, container: HTMLElement): ToasterInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(props.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[ToasterInstance]
   
   @JSImport("@blueprintjs/core/lib/esm/components", "Toaster.defaultProps")
   @js.native

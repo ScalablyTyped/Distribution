@@ -31,7 +31,7 @@ object RunOptions {
     
     inline def setPreviousObjectsUndefined: Self = StObject.set(x, "previousObjects", js.undefined)
     
-    inline def setPreviousObjectsVarargs(value: ClientObject*): Self = StObject.set(x, "previousObjects", js.Array(value :_*))
+    inline def setPreviousObjectsVarargs(value: ClientObject*): Self = StObject.set(x, "previousObjects", js.Array(value*))
     
     inline def setSession(value: RequestUrlAndHeaderInfo | T): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     

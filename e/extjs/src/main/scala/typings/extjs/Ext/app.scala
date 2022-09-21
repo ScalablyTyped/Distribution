@@ -25,7 +25,7 @@ object app {
     var autoCreateViewport: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var controllers: js.UndefOr[js.Any] = js.undefined
+    var controllers: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var enableQuickTips: js.UndefOr[Boolean] = js.undefined
@@ -41,7 +41,7 @@ object app {
       * @returns Ext.app.Controller controller instance or undefined.
       */
     @JSName("getController")
-    var getController_IApplication: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], IController]] = js.undefined
+    var getController_IApplication: js.UndefOr[js.Function1[/* name */ js.UndefOr[Any], IController]] = js.undefined
     
     /** [Method] Called automatically when the page has completely loaded
       * @param profile String The detected application profile
@@ -53,13 +53,13 @@ object app {
     var name: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var namespaces: js.UndefOr[js.Any] = js.undefined
+    var namespaces: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var paths: js.UndefOr[js.Any] = js.undefined
+    var paths: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var scope: js.UndefOr[js.Any] = js.undefined
+    var scope: js.UndefOr[Any] = js.undefined
   }
   object IApplication {
     
@@ -82,7 +82,7 @@ object app {
       
       inline def setAutoCreateViewportUndefined: Self = StObject.set(x, "autoCreateViewport", js.undefined)
       
-      inline def setControllers(value: js.Any): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
+      inline def setControllers(value: Any): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
       
       inline def setControllersUndefined: Self = StObject.set(x, "controllers", js.undefined)
       
@@ -94,7 +94,7 @@ object app {
       
       inline def setGetApplicationUndefined: Self = StObject.set(x, "getApplication", js.undefined)
       
-      inline def setGetController(value: /* name */ js.UndefOr[js.Any] => IController): Self = StObject.set(x, "getController", js.Any.fromFunction1(value))
+      inline def setGetController(value: /* name */ js.UndefOr[Any] => IController): Self = StObject.set(x, "getController", js.Any.fromFunction1(value))
       
       inline def setGetControllerUndefined: Self = StObject.set(x, "getController", js.undefined)
       
@@ -106,15 +106,15 @@ object app {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setNamespaces(value: js.Any): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
+      inline def setNamespaces(value: Any): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
       
       inline def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
       
-      inline def setPaths(value: js.Any): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: Any): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
       inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
@@ -127,7 +127,7 @@ object app {
     /** [Method] Registers one or more references
       * @param refs Object/Object[]
       */
-    var addRef: js.UndefOr[js.Function1[/* refs */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var addRef: js.UndefOr[js.Function1[/* refs */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Property] (Ext.app.Application) */
     var application: js.UndefOr[IApplication] = js.undefined
@@ -137,7 +137,7 @@ object app {
       * @param listeners Object Config for listeners.
       */
     var control: js.UndefOr[
-        js.Function2[/* selectors */ js.UndefOr[js.Any], /* listeners */ js.UndefOr[js.Any], Unit]
+        js.Function2[/* selectors */ js.UndefOr[Any], /* listeners */ js.UndefOr[Any], Unit]
       ] = js.undefined
     
     /** [Method] Returns the base Ext app Application for this controller
@@ -173,7 +173,7 @@ object app {
       * @param ref Object
       * @returns Boolean
       */
-    var hasRef: js.UndefOr[js.Function1[/* ref */ js.UndefOr[js.Any], Boolean]] = js.undefined
+    var hasRef: js.UndefOr[js.Function1[/* ref */ js.UndefOr[Any], Boolean]] = js.undefined
     
     /** [Config Option] (String) */
     var id: js.UndefOr[java.lang.String] = js.undefined
@@ -186,10 +186,10 @@ object app {
     /** [Method] Adds listeners to different event sources also called event domains
       * @param to Object Config object containing domains, selectors and listeners.
       */
-    var listen: js.UndefOr[js.Function1[/* to */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var listen: js.UndefOr[js.Function1[/* to */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var models: js.UndefOr[js.Any] = js.undefined
+    var models: js.UndefOr[Any] = js.undefined
     
     /** [Method] A template method like init but called after the viewport is created
       * @param application Ext.app.Application
@@ -200,10 +200,10 @@ object app {
     var refs: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var stores: js.UndefOr[js.Any] = js.undefined
+    var stores: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var views: js.UndefOr[js.Any] = js.undefined
+    var views: js.UndefOr[Any] = js.undefined
   }
   object IController {
     
@@ -214,7 +214,7 @@ object app {
     
     extension [Self <: IController](x: Self) {
       
-      inline def setAddRef(value: /* refs */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addRef", js.Any.fromFunction1(value))
+      inline def setAddRef(value: /* refs */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addRef", js.Any.fromFunction1(value))
       
       inline def setAddRefUndefined: Self = StObject.set(x, "addRef", js.undefined)
       
@@ -222,7 +222,7 @@ object app {
       
       inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
       
-      inline def setControl(value: (/* selectors */ js.UndefOr[js.Any], /* listeners */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "control", js.Any.fromFunction2(value))
+      inline def setControl(value: (/* selectors */ js.UndefOr[Any], /* listeners */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "control", js.Any.fromFunction2(value))
       
       inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
       
@@ -246,7 +246,7 @@ object app {
       
       inline def setGetViewUndefined: Self = StObject.set(x, "getView", js.undefined)
       
-      inline def setHasRef(value: /* ref */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "hasRef", js.Any.fromFunction1(value))
+      inline def setHasRef(value: /* ref */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "hasRef", js.Any.fromFunction1(value))
       
       inline def setHasRefUndefined: Self = StObject.set(x, "hasRef", js.undefined)
       
@@ -258,11 +258,11 @@ object app {
       
       inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      inline def setListen(value: /* to */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+      inline def setListen(value: /* to */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       
       inline def setListenUndefined: Self = StObject.set(x, "listen", js.undefined)
       
-      inline def setModels(value: js.Any): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+      inline def setModels(value: Any): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
       
       inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
       
@@ -274,11 +274,11 @@ object app {
       
       inline def setRefsUndefined: Self = StObject.set(x, "refs", js.undefined)
       
-      inline def setStores(value: js.Any): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
+      inline def setStores(value: Any): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
       
       inline def setStoresUndefined: Self = StObject.set(x, "stores", js.undefined)
       
-      inline def setViews(value: js.Any): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      inline def setViews(value: Any): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
       inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     }
@@ -294,7 +294,7 @@ object app {
     var idProperty: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (Object) */
-    var instances: js.UndefOr[js.Any] = js.undefined
+    var instances: js.UndefOr[Any] = js.undefined
     
     /** [Method] This method matches the firer of the event the target to the given selector
       * @param target Object The firer of the event.
@@ -302,11 +302,7 @@ object app {
       * @returns Boolean true if the target matches the selector.
       */
     var `match`: js.UndefOr[
-        js.Function2[
-          /* target */ js.UndefOr[js.Any], 
-          /* selector */ js.UndefOr[java.lang.String], 
-          Boolean
-        ]
+        js.Function2[/* target */ js.UndefOr[Any], /* selector */ js.UndefOr[java.lang.String], Boolean]
       ] = js.undefined
     
     /** [Method] This method is called by the derived class to monitor fireEvent calls
@@ -327,11 +323,11 @@ object app {
       
       inline def setIdPropertyUndefined: Self = StObject.set(x, "idProperty", js.undefined)
       
-      inline def setInstances(value: js.Any): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+      inline def setInstances(value: Any): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
       
       inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
       
-      inline def setMatch(value: (/* target */ js.UndefOr[js.Any], /* selector */ js.UndefOr[java.lang.String]) => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
+      inline def setMatch(value: (/* target */ js.UndefOr[Any], /* selector */ js.UndefOr[java.lang.String]) => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       

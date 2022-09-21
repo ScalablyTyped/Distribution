@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@google-cloud/promisify" : "2.0.3"
+      "@google-cloud/promisify" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@google-cloud/promisify" : "2.0.3"
+      "@google-cloud/promisify" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

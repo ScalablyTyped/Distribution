@@ -5,76 +5,79 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 trait ImageLoadOptions extends StObject {
   
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets or sets the description of the Image.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var description: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets or sets the height of the Image layout.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var height: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets or sets the hyperlink of the Image.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var hyperlink: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the ID of the Image object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var ocrData: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent. This object defines the position of the Image on the page.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var pageContent: js.UndefOr[PageContentLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var paragraph: js.UndefOr[ParagraphLoadOptions] = js.undefined
   
   /**
-    *
     * Gets or sets the width of the Image layout.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var width: js.UndefOr[Boolean] = js.undefined

@@ -5,7 +5,7 @@ import typings.awsSdkTypes.transferMod.RequestHandler
 import typings.awsSdkTypes.utilMod.Decoder
 import typings.awsSdkTypes.utilMod.Encoder
 import typings.awsSdkTypes.utilMod.Provider
-import typings.std.Uint8Array
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,49 +31,62 @@ object serdeMod {
     }
   }
   
-  type RequestSerializer[Request, Context /* <: EndpointBearer */] = js.Function2[/* input */ js.Any, /* context */ Context, js.Promise[Request]]
+  type RequestSerializer[Request, Context /* <: EndpointBearer */] = js.Function2[/* input */ Any, /* context */ Context, js.Promise[Request]]
   
   type ResponseDeserializer[OutputType, ResponseType, Context] = js.Function2[/* output */ ResponseType, /* context */ Context, js.Promise[OutputType]]
+  
+  type SdkStream[BaseStream] = BaseStream & SdkStreamMixin
+  
+  @js.native
+  trait SdkStreamMixin extends StObject {
+    
+    def transformToByteArray(): js.Promise[js.typedarray.Uint8Array] = js.native
+    
+    def transformToString(): js.Promise[String] = js.native
+    def transformToString(encoding: String): js.Promise[String] = js.native
+    
+    def transformToWebStream(): ReadableStream[Any] = js.native
+  }
   
   trait SerdeContext
     extends StObject
        with EndpointBearer {
     
-    def base64Decoder(input: String): Uint8Array
+    def base64Decoder(input: String): js.typedarray.Uint8Array
     @JSName("base64Decoder")
     var base64Decoder_Original: Decoder
     
-    def base64Encoder(input: Uint8Array): String
+    def base64Encoder(input: js.typedarray.Uint8Array): String
     @JSName("base64Encoder")
     var base64Encoder_Original: Encoder
     
     var disableHostPrefix: Boolean
     
-    var requestHandler: RequestHandler[js.Any, js.Any, js.Object]
+    var requestHandler: RequestHandler[Any, Any, js.Object]
     
-    def streamCollector(stream: js.Any): js.Promise[Uint8Array]
+    def streamCollector(stream: Any): js.Promise[js.typedarray.Uint8Array]
     @JSName("streamCollector")
     var streamCollector_Original: StreamCollector
     
-    def utf8Decoder(input: String): Uint8Array
+    def utf8Decoder(input: String): js.typedarray.Uint8Array
     @JSName("utf8Decoder")
     var utf8Decoder_Original: Decoder
     
-    def utf8Encoder(input: Uint8Array): String
+    def utf8Encoder(input: js.typedarray.Uint8Array): String
     @JSName("utf8Encoder")
     var utf8Encoder_Original: Encoder
   }
   object SerdeContext {
     
     inline def apply(
-      base64Decoder: /* input */ String => Uint8Array,
-      base64Encoder: /* input */ Uint8Array => String,
+      base64Decoder: /* input */ String => js.typedarray.Uint8Array,
+      base64Encoder: /* input */ js.typedarray.Uint8Array => String,
       disableHostPrefix: Boolean,
       endpoint: () => js.Promise[Endpoint],
-      requestHandler: RequestHandler[js.Any, js.Any, js.Object],
-      streamCollector: /* stream */ js.Any => js.Promise[Uint8Array],
-      utf8Decoder: /* input */ String => Uint8Array,
-      utf8Encoder: /* input */ Uint8Array => String
+      requestHandler: RequestHandler[Any, Any, js.Object],
+      streamCollector: /* stream */ Any => js.Promise[js.typedarray.Uint8Array],
+      utf8Decoder: /* input */ String => js.typedarray.Uint8Array,
+      utf8Encoder: /* input */ js.typedarray.Uint8Array => String
     ): SerdeContext = {
       val __obj = js.Dynamic.literal(base64Decoder = js.Any.fromFunction1(base64Decoder), base64Encoder = js.Any.fromFunction1(base64Encoder), disableHostPrefix = disableHostPrefix.asInstanceOf[js.Any], endpoint = js.Any.fromFunction0(endpoint), requestHandler = requestHandler.asInstanceOf[js.Any], streamCollector = js.Any.fromFunction1(streamCollector), utf8Decoder = js.Any.fromFunction1(utf8Decoder), utf8Encoder = js.Any.fromFunction1(utf8Encoder))
       __obj.asInstanceOf[SerdeContext]
@@ -81,21 +94,35 @@ object serdeMod {
     
     extension [Self <: SerdeContext](x: Self) {
       
-      inline def setBase64Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
+      inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
-      inline def setBase64Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
+      inline def setBase64Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
       
       inline def setDisableHostPrefix(value: Boolean): Self = StObject.set(x, "disableHostPrefix", value.asInstanceOf[js.Any])
       
-      inline def setRequestHandler(value: RequestHandler[js.Any, js.Any, js.Object]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
+      inline def setRequestHandler(value: RequestHandler[Any, Any, js.Object]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
       
-      inline def setStreamCollector(value: /* stream */ js.Any => js.Promise[Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
+      inline def setStreamCollector(value: /* stream */ Any => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "streamCollector", js.Any.fromFunction1(value))
       
-      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUtf8Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
       
-      inline def setUtf8Encoder(value: /* input */ Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
+      inline def setUtf8Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "utf8Encoder", js.Any.fromFunction1(value))
     }
   }
   
-  type StreamCollector = js.Function1[/* stream */ js.Any, js.Promise[Uint8Array]]
+  type StreamCollector = js.Function1[/* stream */ Any, js.Promise[js.typedarray.Uint8Array]]
+  
+  /**
+    * Declare ReadableStream in case dom.d.ts is not added to the tsconfig lib causing
+    * ReadableStream interface is not defined. For developers with dom.d.ts added,
+    * the ReadableStream interface will be merged correctly.
+    *
+    * This is also required for any clients with streaming interface where ReadableStream
+    * type is also referred. The type is only declared here once since this @aws-sdk/types
+    * is depended by all @aws-sdk packages.
+    */
+  object global {
+    
+    trait ReadableStream extends StObject
+  }
 }

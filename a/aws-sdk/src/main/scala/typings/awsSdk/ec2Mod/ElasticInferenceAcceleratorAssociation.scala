@@ -24,7 +24,7 @@ trait ElasticInferenceAcceleratorAssociation extends StObject {
   /**
     *  The time at which the elastic inference accelerator is associated with an instance. 
     */
-  var ElasticInferenceAcceleratorAssociationTime: js.UndefOr[DateTime] = js.undefined
+  var ElasticInferenceAcceleratorAssociationTime: js.UndefOr[js.Date] = js.undefined
 }
 object ElasticInferenceAcceleratorAssociation {
   
@@ -47,7 +47,7 @@ object ElasticInferenceAcceleratorAssociation {
     
     inline def setElasticInferenceAcceleratorAssociationStateUndefined: Self = StObject.set(x, "ElasticInferenceAcceleratorAssociationState", js.undefined)
     
-    inline def setElasticInferenceAcceleratorAssociationTime(value: DateTime): Self = StObject.set(x, "ElasticInferenceAcceleratorAssociationTime", value.asInstanceOf[js.Any])
+    inline def setElasticInferenceAcceleratorAssociationTime(value: js.Date): Self = StObject.set(x, "ElasticInferenceAcceleratorAssociationTime", value.asInstanceOf[js.Any])
     
     inline def setElasticInferenceAcceleratorAssociationTimeUndefined: Self = StObject.set(x, "ElasticInferenceAcceleratorAssociationTime", js.undefined)
   }

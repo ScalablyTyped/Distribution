@@ -10,10 +10,10 @@ yaml front matter for JS. Parse yaml or JSON from the beginning of files.
 | ------------------ | :-------------: |
 | Full name          | yaml-front-matter |
 | Keywords           | yaml, front matter, json |
-| # releases         | 3 |
-| # dependents       | 191 |
-| # downloads        | 4926560 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 549202.3333333334 |
+| # stars            | 180.0 |
 
 ## Links
 - [Homepage](https://github.com/dworthen/js-yaml-front-matter#readme)

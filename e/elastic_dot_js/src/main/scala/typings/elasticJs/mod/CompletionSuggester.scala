@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "CompletionSuggester")
 @js.native
-class CompletionSuggester protected ()
+open class CompletionSuggester protected ()
   extends StObject
      with Suggest {
   /*
@@ -74,7 +74,7 @@ class CompletionSuggester protected ()
     Retrieves the internal suggest object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /*
     Sets if transpositions should be counted as one or two changes, defaults

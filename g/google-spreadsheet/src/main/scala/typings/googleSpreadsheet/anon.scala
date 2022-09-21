@@ -9,7 +9,7 @@ object anon {
   
   trait Data extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var properties: WorksheetBasicProperties
   }
@@ -22,11 +22,32 @@ object anon {
     
     extension [Self <: Data](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       inline def setProperties(value: WorksheetBasicProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait End extends StObject {
+    
+    var end: Double
+    
+    var start: Double
+  }
+  object End {
+    
+    inline def apply(end: Double, start: Double): End = {
+      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+      __obj.asInstanceOf[End]
+    }
+    
+    extension [Self <: End](x: Self) {
+      
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   

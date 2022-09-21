@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PageRequest extends StObject {
   
-  def add_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit]): Unit
+  def add_failed(value: js.Function2[/* sender */ Any, /* args */ PageRequestFailedEventArgs, Unit]): Unit
   
-  def add_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit]): Unit
+  def add_succeeded(value: js.Function2[/* sender */ Any, /* args */ PageRequestSucceededEventArgs, Unit]): Unit
   
   def get(): Unit
   
@@ -21,9 +21,9 @@ trait PageRequest extends StObject {
   
   def post(body: String): Unit
   
-  def remove_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit]): Unit
+  def remove_failed(value: js.Function2[/* sender */ Any, /* args */ PageRequestFailedEventArgs, Unit]): Unit
   
-  def remove_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit]): Unit
+  def remove_succeeded(value: js.Function2[/* sender */ Any, /* args */ PageRequestSucceededEventArgs, Unit]): Unit
   
   def set_expectedContentType(value: String): Unit
   
@@ -32,15 +32,15 @@ trait PageRequest extends StObject {
 object PageRequest {
   
   inline def apply(
-    add_failed: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit,
-    add_succeeded: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit,
+    add_failed: js.Function2[/* sender */ Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit,
+    add_succeeded: js.Function2[/* sender */ Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit,
     get: () => Unit,
     get_expectedContentType: () => String,
     get_request: () => WebRequest,
     get_url: () => String,
     post: String => Unit,
-    remove_failed: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit,
-    remove_succeeded: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit,
+    remove_failed: js.Function2[/* sender */ Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit,
+    remove_succeeded: js.Function2[/* sender */ Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit,
     set_expectedContentType: String => Unit,
     set_url: String => Unit
   ): PageRequest = {
@@ -50,9 +50,9 @@ object PageRequest {
   
   extension [Self <: PageRequest](x: Self) {
     
-    inline def setAdd_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit): Self = StObject.set(x, "add_failed", js.Any.fromFunction1(value))
+    inline def setAdd_failed(value: js.Function2[/* sender */ Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit): Self = StObject.set(x, "add_failed", js.Any.fromFunction1(value))
     
-    inline def setAdd_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit): Self = StObject.set(x, "add_succeeded", js.Any.fromFunction1(value))
+    inline def setAdd_succeeded(value: js.Function2[/* sender */ Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit): Self = StObject.set(x, "add_succeeded", js.Any.fromFunction1(value))
     
     inline def setGet(value: () => Unit): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
@@ -64,9 +64,9 @@ object PageRequest {
     
     inline def setPost(value: String => Unit): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
     
-    inline def setRemove_failed(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit): Self = StObject.set(x, "remove_failed", js.Any.fromFunction1(value))
+    inline def setRemove_failed(value: js.Function2[/* sender */ Any, /* args */ PageRequestFailedEventArgs, Unit] => Unit): Self = StObject.set(x, "remove_failed", js.Any.fromFunction1(value))
     
-    inline def setRemove_succeeded(value: js.Function2[/* sender */ js.Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit): Self = StObject.set(x, "remove_succeeded", js.Any.fromFunction1(value))
+    inline def setRemove_succeeded(value: js.Function2[/* sender */ Any, /* args */ PageRequestSucceededEventArgs, Unit] => Unit): Self = StObject.set(x, "remove_succeeded", js.Any.fromFunction1(value))
     
     inline def setSet_expectedContentType(value: String => Unit): Self = StObject.set(x, "set_expectedContentType", js.Any.fromFunction1(value))
     

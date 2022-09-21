@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-path-inside
 
-Typings are for version 3.0.2
+Typings are for version 4.0.0
 
 ## Library description:
 Check if a path is inside another path
@@ -9,11 +9,11 @@ Check if a path is inside another path
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | is-path-inside |
-| Keywords           | path, inside, folder, directory, dir, file, resolve |
-| # releases         | 5 |
-| # dependents       | 109 |
-| # downloads        | 807884415 |
-| # stars            | 2 |
+| Keywords           | path, inside, folder, directory, file, resolve |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0304015966666667E8 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-path-inside#readme)

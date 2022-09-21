@@ -24,7 +24,7 @@ trait ShowActionSheetOptions extends StObject {
   /**
     * 按钮的文字数组
     */
-  var itemList: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var itemList: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 接口调用成功的回调函数
@@ -52,11 +52,11 @@ object ShowActionSheetOptions {
     
     inline def setItemColorUndefined: Self = StObject.set(x, "itemColor", js.undefined)
     
-    inline def setItemList(value: js.Array[js.Any]): Self = StObject.set(x, "itemList", value.asInstanceOf[js.Any])
+    inline def setItemList(value: js.Array[Any]): Self = StObject.set(x, "itemList", value.asInstanceOf[js.Any])
     
     inline def setItemListUndefined: Self = StObject.set(x, "itemList", js.undefined)
     
-    inline def setItemListVarargs(value: js.Any*): Self = StObject.set(x, "itemList", js.Array(value :_*))
+    inline def setItemListVarargs(value: Any*): Self = StObject.set(x, "itemList", js.Array(value*))
     
     inline def setSuccess(value: /* result */ ShowActionSheetRes => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

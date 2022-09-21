@@ -8,5 +8,5 @@ object createBranchMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/CreateBranch", "CreateBranch")
   @js.native
-  val CreateBranch: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val CreateBranch: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

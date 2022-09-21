@@ -9,14 +9,14 @@ object mod {
   
   @JSImport("raspi-peripheral", "Peripheral")
   @js.native
-  class Peripheral protected () extends EventEmitter {
+  open class Peripheral protected () extends EventEmitter {
     def this(pins: String) = this()
     def this(pins: js.Array[String | Double]) = this()
     def this(pins: Double) = this()
     
-    /* private */ var _alive: js.Any = js.native
+    /* private */ var _alive: Any = js.native
     
-    /* private */ var _pins: js.Any = js.native
+    /* private */ var _pins: Any = js.native
     
     val alive: Boolean = js.native
     

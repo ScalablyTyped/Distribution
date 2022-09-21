@@ -18,59 +18,7 @@ object menus {
   /**
     * The different contexts a menu can appear in. Specifying 'all' is equivalent to the combination of all other contexts except for 'tab' and 'tools_menu'.
     */
-  /* Rewritten from type alias, can be one of: 
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.all
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.frame
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.selection
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.editable
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.password
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.video
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audio
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.launcher
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browser_action
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page_action
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tools_menu
-  */
-  trait ContextType extends StObject
-  object ContextType {
-    
-    inline def all: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.all = "all".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.all]
-    
-    inline def audio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audio = "audio".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audio]
-    
-    inline def bookmark: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark = "bookmark".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark]
-    
-    inline def browser_action: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browser_action = "browser_action".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browser_action]
-    
-    inline def editable: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.editable = "editable".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.editable]
-    
-    inline def frame: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.frame = "frame".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.frame]
-    
-    inline def image: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image = "image".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image]
-    
-    inline def launcher: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.launcher = "launcher".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.launcher]
-    
-    inline def link: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link = "link".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link]
-    
-    inline def page: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page = "page".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page]
-    
-    inline def page_action: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page_action = "page_action".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page_action]
-    
-    inline def password: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.password = "password".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.password]
-    
-    inline def selection: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.selection = "selection".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.selection]
-    
-    inline def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = "tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab]
-    
-    inline def tools_menu: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tools_menu = "tools_menu".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tools_menu]
-    
-    inline def video: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.video = "video".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.video]
-  }
+  type ContextType = _ContextType
   
   trait CreateCreateProperties extends StObject {
     
@@ -79,10 +27,8 @@ object menus {
       */
     var checked: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Specifies a command to issue for the context click. Currently supports internal commands _execute_page_action, _execute_browser_action and _execute_sidebar_action.
-      */
-    var command: js.UndefOr[String] = js.undefined
+    /** Specifies a command to issue for the context click. */
+    var command: js.UndefOr[String | CreateCreatePropertiesCommand] = js.undefined
     
     /** List of contexts this menu item will appear in. Defaults to ['page'] if not specified. */
     var contexts: js.UndefOr[js.Array[ContextType]] = js.undefined
@@ -107,7 +53,7 @@ object menus {
       * @param info Information about the item clicked and the context where the click happened.
       * @param tab The details of the tab where the click took place. Note: this parameter only present for extensions.
       */
-    var onclick: js.UndefOr[js.Function2[/* info */ OnClickData, /* tab */ Tab, Unit]] = js.undefined
+    var onclick: js.UndefOr[js.Function2[/* info */ OnClickData, /* tab */ Tab, js.UndefOr[Unit]]] = js.undefined
     
     /** The ID of a parent menu item; this makes the item a child of a previously added item. */
     var parentId: js.UndefOr[Double | String] = js.undefined
@@ -146,7 +92,7 @@ object menus {
       
       inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String | CreateCreatePropertiesCommand): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
       inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
       
@@ -154,13 +100,13 @@ object menus {
       
       inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
       
-      inline def setContextsVarargs(value: ContextType*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+      inline def setContextsVarargs(value: ContextType*): Self = StObject.set(x, "contexts", js.Array(value*))
       
       inline def setDocumentUrlPatterns(value: js.Array[String]): Self = StObject.set(x, "documentUrlPatterns", value.asInstanceOf[js.Any])
       
       inline def setDocumentUrlPatternsUndefined: Self = StObject.set(x, "documentUrlPatterns", js.undefined)
       
-      inline def setDocumentUrlPatternsVarargs(value: String*): Self = StObject.set(x, "documentUrlPatterns", js.Array(value :_*))
+      inline def setDocumentUrlPatternsVarargs(value: String*): Self = StObject.set(x, "documentUrlPatterns", js.Array(value*))
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -174,7 +120,7 @@ object menus {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setOnclick(value: (/* info */ OnClickData, /* tab */ Tab) => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction2(value))
+      inline def setOnclick(value: (/* info */ OnClickData, /* tab */ Tab) => js.UndefOr[Unit]): Self = StObject.set(x, "onclick", js.Any.fromFunction2(value))
       
       inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
       
@@ -186,7 +132,7 @@ object menus {
       
       inline def setTargetUrlPatternsUndefined: Self = StObject.set(x, "targetUrlPatterns", js.undefined)
       
-      inline def setTargetUrlPatternsVarargs(value: String*): Self = StObject.set(x, "targetUrlPatterns", js.Array(value :_*))
+      inline def setTargetUrlPatternsVarargs(value: String*): Self = StObject.set(x, "targetUrlPatterns", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -200,12 +146,30 @@ object menus {
       
       inline def setViewTypesUndefined: Self = StObject.set(x, "viewTypes", js.undefined)
       
-      inline def setViewTypesVarargs(value: ViewType*): Self = StObject.set(x, "viewTypes", js.Array(value :_*))
+      inline def setViewTypesVarargs(value: ViewType*): Self = StObject.set(x, "viewTypes", js.Array(value*))
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
       inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings._execute_browser_action
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings._execute_page_action
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings._execute_sidebar_action
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings._execute_action
+  */
+  trait CreateCreatePropertiesCommand extends StObject
+  object CreateCreatePropertiesCommand {
+    
+    inline def _execute_action: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings._execute_action = "_execute_action".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings._execute_action]
+    
+    inline def _execute_browser_action: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings._execute_browser_action = "_execute_browser_action".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings._execute_browser_action]
+    
+    inline def _execute_page_action: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings._execute_page_action = "_execute_page_action".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings._execute_page_action]
+    
+    inline def _execute_sidebar_action: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings._execute_sidebar_action = "_execute_sidebar_action".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings._execute_sidebar_action]
   }
   
   type CreateCreatePropertiesIcons = NumberDictionary[String]
@@ -342,7 +306,7 @@ object menus {
       
       inline def setModifiers(value: js.Array[OnClickDataModifiers]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
-      inline def setModifiersVarargs(value: OnClickDataModifiers*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+      inline def setModifiersVarargs(value: OnClickDataModifiers*): Self = StObject.set(x, "modifiers", js.Array(value*))
       
       inline def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
       
@@ -437,7 +401,7 @@ object menus {
       
       inline def setContexts(value: js.Array[ContextType]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
       
-      inline def setContextsVarargs(value: ContextType*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+      inline def setContextsVarargs(value: ContextType*): Self = StObject.set(x, "contexts", js.Array(value*))
       
       inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       
@@ -459,7 +423,7 @@ object menus {
       
       inline def setMenuIds(value: Double | js.Array[String]): Self = StObject.set(x, "menuIds", value.asInstanceOf[js.Any])
       
-      inline def setMenuIdsVarargs(value: String*): Self = StObject.set(x, "menuIds", js.Array(value :_*))
+      inline def setMenuIdsVarargs(value: String*): Self = StObject.set(x, "menuIds", js.Array(value*))
       
       inline def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
       
@@ -557,7 +521,7 @@ object menus {
     /**
       * @param tab The details of the tab where the click took place. Note: this parameter only present for extensions.
       */
-    var onclick: js.UndefOr[js.Function2[/* info */ OnClickData, /* tab */ Tab, Unit]] = js.undefined
+    var onclick: js.UndefOr[js.Function2[/* info */ OnClickData, /* tab */ Tab, js.UndefOr[Unit]]] = js.undefined
     
     /** Note: You cannot change an item to be a child of one of its own descendants. */
     var parentId: js.UndefOr[Double | String] = js.undefined
@@ -590,13 +554,13 @@ object menus {
       
       inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
       
-      inline def setContextsVarargs(value: ContextType*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+      inline def setContextsVarargs(value: ContextType*): Self = StObject.set(x, "contexts", js.Array(value*))
       
       inline def setDocumentUrlPatterns(value: js.Array[String]): Self = StObject.set(x, "documentUrlPatterns", value.asInstanceOf[js.Any])
       
       inline def setDocumentUrlPatternsUndefined: Self = StObject.set(x, "documentUrlPatterns", js.undefined)
       
-      inline def setDocumentUrlPatternsVarargs(value: String*): Self = StObject.set(x, "documentUrlPatterns", js.Array(value :_*))
+      inline def setDocumentUrlPatternsVarargs(value: String*): Self = StObject.set(x, "documentUrlPatterns", js.Array(value*))
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -606,7 +570,7 @@ object menus {
       
       inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
-      inline def setOnclick(value: (/* info */ OnClickData, /* tab */ Tab) => Unit): Self = StObject.set(x, "onclick", js.Any.fromFunction2(value))
+      inline def setOnclick(value: (/* info */ OnClickData, /* tab */ Tab) => js.UndefOr[Unit]): Self = StObject.set(x, "onclick", js.Any.fromFunction2(value))
       
       inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
       
@@ -618,7 +582,7 @@ object menus {
       
       inline def setTargetUrlPatternsUndefined: Self = StObject.set(x, "targetUrlPatterns", js.undefined)
       
-      inline def setTargetUrlPatternsVarargs(value: String*): Self = StObject.set(x, "targetUrlPatterns", js.Array(value :_*))
+      inline def setTargetUrlPatternsVarargs(value: String*): Self = StObject.set(x, "targetUrlPatterns", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -632,7 +596,7 @@ object menus {
       
       inline def setViewTypesUndefined: Self = StObject.set(x, "viewTypes", js.undefined)
       
-      inline def setViewTypesVarargs(value: ViewType*): Self = StObject.set(x, "viewTypes", js.Array(value :_*))
+      inline def setViewTypesVarargs(value: ViewType*): Self = StObject.set(x, "viewTypes", js.Array(value*))
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -641,4 +605,61 @@ object menus {
   }
   
   type UpdateUpdatePropertiesIcons = NumberDictionary[String]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.all
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.frame
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.selection
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.editable
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.password
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.video
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audio
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.launcher
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tools_menu
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browser_action
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page_action
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.action
+  */
+  trait _ContextType extends StObject
+  object _ContextType {
+    
+    inline def action: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.action = "action".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.action]
+    
+    inline def all: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.all = "all".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.all]
+    
+    inline def audio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audio = "audio".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audio]
+    
+    inline def bookmark: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark = "bookmark".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.bookmark]
+    
+    inline def browser_action: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browser_action = "browser_action".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.browser_action]
+    
+    inline def editable: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.editable = "editable".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.editable]
+    
+    inline def frame: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.frame = "frame".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.frame]
+    
+    inline def image: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image = "image".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.image]
+    
+    inline def launcher: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.launcher = "launcher".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.launcher]
+    
+    inline def link: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link = "link".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.link]
+    
+    inline def page: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page = "page".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page]
+    
+    inline def page_action: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page_action = "page_action".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.page_action]
+    
+    inline def password: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.password = "password".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.password]
+    
+    inline def selection: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.selection = "selection".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.selection]
+    
+    inline def tab: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab = "tab".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tab]
+    
+    inline def tools_menu: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tools_menu = "tools_menu".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tools_menu]
+    
+    inline def video: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.video = "video".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.video]
+  }
 }

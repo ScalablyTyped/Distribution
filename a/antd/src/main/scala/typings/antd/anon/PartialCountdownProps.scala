@@ -29,6 +29,8 @@ trait PartialCountdownProps extends StObject {
   
   var loading: js.UndefOr[Boolean] = js.undefined
   
+  var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[countdownValueType], Unit]] = js.undefined
+  
   var onFinish: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
@@ -87,6 +89,10 @@ object PartialCountdownProps {
     inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    
+    inline def setOnChange(value: /* value */ js.UndefOr[countdownValueType] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     inline def setOnFinish(value: () => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction0(value))
     

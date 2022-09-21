@@ -6,13 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TracingOptions extends StObject {
   
+  var contextKey: js.UndefOr[String] = js.undefined
+  
   var logger: js.UndefOr[Logger] = js.undefined
   
   var metrics: js.UndefOr[PrometheusMetricsFactory] = js.undefined
   
   var reporter: js.UndefOr[Reporter] = js.undefined
   
-  var tags: js.UndefOr[js.Any] = js.undefined
+  var tags: js.UndefOr[Any] = js.undefined
+  
+  var traceId128bit: js.UndefOr[Boolean] = js.undefined
 }
 object TracingOptions {
   
@@ -22,6 +26,10 @@ object TracingOptions {
   }
   
   extension [Self <: TracingOptions](x: Self) {
+    
+    inline def setContextKey(value: String): Self = StObject.set(x, "contextKey", value.asInstanceOf[js.Any])
+    
+    inline def setContextKeyUndefined: Self = StObject.set(x, "contextKey", js.undefined)
     
     inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
@@ -35,8 +43,12 @@ object TracingOptions {
     
     inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
     
-    inline def setTags(value: js.Any): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Any): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTraceId128bit(value: Boolean): Self = StObject.set(x, "traceId128bit", value.asInstanceOf[js.Any])
+    
+    inline def setTraceId128bitUndefined: Self = StObject.set(x, "traceId128bit", js.undefined)
   }
 }

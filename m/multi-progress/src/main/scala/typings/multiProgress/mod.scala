@@ -14,7 +14,7 @@ object mod {
     * Create a new @see MultiProgress with the given stream, or stderr by default
     * @param stream A stream to write the progress bars to
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with MultiProgress {
     def this(stream: Stream) = this()
@@ -42,12 +42,12 @@ object mod {
       * Move the bar indicated by index forward the number of steps indicated by value
       */
     def tick(index: Double, value: Double): Unit = js.native
-    def tick(index: Double, value: Double, options: js.Any): Unit = js.native
+    def tick(index: Double, value: Double, options: Any): Unit = js.native
     
     /**
       * Update the bar indicated by index to the value given
       */
     def update(index: Double, value: Double): Unit = js.native
-    def update(index: Double, value: Double, options: js.Any): Unit = js.native
+    def update(index: Double, value: Double, options: Any): Unit = js.native
   }
 }

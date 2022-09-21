@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertLineBreakCommand")
 @js.native
-class InsertLineBreakCommand ()
+open class InsertLineBreakCommand ()
   extends StObject
      with typings.devexpressWeb.InsertLineBreakCommand {
   

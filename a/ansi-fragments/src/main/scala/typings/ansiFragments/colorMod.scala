@@ -13,7 +13,7 @@ object colorMod {
   
   @JSImport("ansi-fragments/build/fragments/Color", "Color")
   @js.native
-  class Color_ protected ()
+  open class Color_ protected ()
     extends StObject
        with IFragment {
     def this(ansiColor: AnsiColor, children: js.Array[String | IFragment]) = this()
@@ -21,12 +21,12 @@ object colorMod {
     /* CompleteClass */
     override def build(): String = js.native
     
-    /* private */ val children: js.Any = js.native
+    /* private */ val children: Any = js.native
     
-    /* private */ val color: js.Any = js.native
+    /* private */ val color: Any = js.native
   }
   
-  inline def color(ansiColor: AnsiColor, children: (String | IFragment)*): Color_ = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(ansiColor.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Color_]
+  inline def color(ansiColor: AnsiColor, children: (String | IFragment)*): Color_ = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(List(ansiColor.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Color_]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ansiFragments.ansiFragmentsStrings.black

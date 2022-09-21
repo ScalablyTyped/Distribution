@@ -27,24 +27,29 @@ trait ConformancePackDetail extends StObject {
   var ConformancePackName: typings.awsSdk.configserviceMod.ConformancePackName
   
   /**
-    * AWS service that created the conformance pack.
+    * The Amazon Web Services service that created the conformance pack.
     */
   var CreatedBy: js.UndefOr[StringWithCharLimit256] = js.undefined
   
   /**
-    * Conformance pack template that is used to create a pack. The delivery bucket name should start with awsconfigconforms. For example: "Resource": "arn:aws:s3:::your_bucket_name/ *".
+    * The name of the Amazon S3 bucket where Config stores conformance pack templates.   This field is optional. 
     */
   var DeliveryS3Bucket: js.UndefOr[typings.awsSdk.configserviceMod.DeliveryS3Bucket] = js.undefined
   
   /**
-    * The prefix for the Amazon S3 bucket.
+    * The prefix for the Amazon S3 bucket.  This field is optional. 
     */
   var DeliveryS3KeyPrefix: js.UndefOr[typings.awsSdk.configserviceMod.DeliveryS3KeyPrefix] = js.undefined
   
   /**
-    * Last time when conformation pack update was requested. 
+    * The last time a conformation pack update was requested. 
     */
-  var LastUpdateRequestedTime: js.UndefOr[Date] = js.undefined
+  var LastUpdateRequestedTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * An object that contains the name or Amazon Resource Name (ARN) of the Amazon Web Services Systems Manager document (SSM document) and the version of the SSM document that is used to create a conformance pack.
+    */
+  var TemplateSSMDocumentDetails: js.UndefOr[typings.awsSdk.configserviceMod.TemplateSSMDocumentDetails] = js.undefined
 }
 object ConformancePackDetail {
   
@@ -67,7 +72,7 @@ object ConformancePackDetail {
     
     inline def setConformancePackInputParametersUndefined: Self = StObject.set(x, "ConformancePackInputParameters", js.undefined)
     
-    inline def setConformancePackInputParametersVarargs(value: ConformancePackInputParameter*): Self = StObject.set(x, "ConformancePackInputParameters", js.Array(value :_*))
+    inline def setConformancePackInputParametersVarargs(value: ConformancePackInputParameter*): Self = StObject.set(x, "ConformancePackInputParameters", js.Array(value*))
     
     inline def setConformancePackName(value: ConformancePackName): Self = StObject.set(x, "ConformancePackName", value.asInstanceOf[js.Any])
     
@@ -83,8 +88,12 @@ object ConformancePackDetail {
     
     inline def setDeliveryS3KeyPrefixUndefined: Self = StObject.set(x, "DeliveryS3KeyPrefix", js.undefined)
     
-    inline def setLastUpdateRequestedTime(value: Date): Self = StObject.set(x, "LastUpdateRequestedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateRequestedTime(value: js.Date): Self = StObject.set(x, "LastUpdateRequestedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateRequestedTimeUndefined: Self = StObject.set(x, "LastUpdateRequestedTime", js.undefined)
+    
+    inline def setTemplateSSMDocumentDetails(value: TemplateSSMDocumentDetails): Self = StObject.set(x, "TemplateSSMDocumentDetails", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateSSMDocumentDetailsUndefined: Self = StObject.set(x, "TemplateSSMDocumentDetails", js.undefined)
   }
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.BWsaStream")
 @js.native
-class BWsaStream ()
+open class BWsaStream ()
   extends StObject
      with typings.sharepoint.SP.BWsaStream

@@ -1,6 +1,6 @@
 package typings.tabulatorTables
 
-import typings.tabulatorTables.Tabulator._Editor
+import typings.tabulatorTables.mod.Tabulator._Editor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,12 +8,12 @@ trait BuildController
   extends StObject
      with XamlBuildControllerReference {
   
-  var _links: js.Any
+  var _links: Any
   
   /**
     * The date the controller was created.
     */
-  var createdDate: Date
+  var createdDate: js.Date
   
   /**
     * The description of the controller.
@@ -34,7 +33,7 @@ trait BuildController
   /**
     * The date the controller was last updated.
     */
-  var updatedDate: Date
+  var updatedDate: js.Date
   
   /**
     * The controller's URI.
@@ -44,14 +43,14 @@ trait BuildController
 object BuildController {
   
   inline def apply(
-    _links: js.Any,
-    createdDate: Date,
+    _links: Any,
+    createdDate: js.Date,
     description: String,
     enabled: Boolean,
     id: Double,
     name: String,
     status: ControllerStatus,
-    updatedDate: Date,
+    updatedDate: js.Date,
     uri: String,
     url: String
   ): BuildController = {
@@ -61,7 +60,7 @@ object BuildController {
   
   extension [Self <: BuildController](x: Self) {
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -69,10 +68,10 @@ object BuildController {
     
     inline def setStatus(value: ControllerStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setUpdatedDate(value: Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
+    inline def setUpdatedDate(value: js.Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

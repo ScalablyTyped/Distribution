@@ -8,11 +8,12 @@ import typings.reactNativeElements.reactNativeElementsStrings.horizontal
 import typings.reactNativeElements.reactNativeElementsStrings.spring
 import typings.reactNativeElements.reactNativeElementsStrings.timing
 import typings.reactNativeElements.reactNativeElementsStrings.vertical
+import typings.reactNativeElements.sliderMod.Sizable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<react-native-elements.react-native-elements.SliderProps> */
+/* Inlined std.Partial<react-native-elements.react-native-elements/dist/slider/Slider.SliderProps> */
 trait PartialSliderProps extends StObject {
   
   var allowTouchTrack: js.UndefOr[Boolean] = js.undefined
@@ -22,6 +23,8 @@ trait PartialSliderProps extends StObject {
   var animationConfig: js.UndefOr[TimingAnimationConfig | SpringAnimationConfig] = js.undefined
   
   var animationType: js.UndefOr[spring | timing] = js.undefined
+  
+  var containerStyle: js.UndefOr[ContainerHorizontal] = js.undefined
   
   var debugTouchArea: js.UndefOr[Boolean] = js.undefined
   
@@ -47,13 +50,13 @@ trait PartialSliderProps extends StObject {
   
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var thumbProps: js.UndefOr[js.Any] = js.undefined
+  var thumbProps: js.UndefOr[Any] = js.undefined
   
   var thumbStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var thumbTintColor: js.UndefOr[String] = js.undefined
   
-  var thumbTouchSize: js.UndefOr[Height] = js.undefined
+  var thumbTouchSize: js.UndefOr[Sizable] = js.undefined
   
   var trackStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
@@ -83,6 +86,10 @@ object PartialSliderProps {
     inline def setAnimationType(value: spring | timing): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
     
     inline def setAnimationTypeUndefined: Self = StObject.set(x, "animationType", js.undefined)
+    
+    inline def setContainerStyle(value: ContainerHorizontal): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+    
+    inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
     
     inline def setDebugTouchArea(value: Boolean): Self = StObject.set(x, "debugTouchArea", value.asInstanceOf[js.Any])
     
@@ -134,7 +141,7 @@ object PartialSliderProps {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setThumbProps(value: js.Any): Self = StObject.set(x, "thumbProps", value.asInstanceOf[js.Any])
+    inline def setThumbProps(value: Any): Self = StObject.set(x, "thumbProps", value.asInstanceOf[js.Any])
     
     inline def setThumbPropsUndefined: Self = StObject.set(x, "thumbProps", js.undefined)
     
@@ -148,7 +155,7 @@ object PartialSliderProps {
     
     inline def setThumbTintColorUndefined: Self = StObject.set(x, "thumbTintColor", js.undefined)
     
-    inline def setThumbTouchSize(value: Height): Self = StObject.set(x, "thumbTouchSize", value.asInstanceOf[js.Any])
+    inline def setThumbTouchSize(value: Sizable): Self = StObject.set(x, "thumbTouchSize", value.asInstanceOf[js.Any])
     
     inline def setThumbTouchSizeUndefined: Self = StObject.set(x, "thumbTouchSize", js.undefined)
     

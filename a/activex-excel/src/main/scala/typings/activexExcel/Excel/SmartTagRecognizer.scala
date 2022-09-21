@@ -17,7 +17,7 @@ trait SmartTagRecognizer extends StObject {
   
   val FullName: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val _Default: String
   
@@ -31,7 +31,7 @@ object SmartTagRecognizer {
     Enabled: Boolean,
     ExcelDotSmartTagRecognizer_typekey: SmartTagRecognizer,
     FullName: String,
-    Parent: js.Any,
+    Parent: Any,
     _Default: String,
     progID: String
   ): SmartTagRecognizer = {
@@ -52,7 +52,7 @@ object SmartTagRecognizer {
     
     inline def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setProgID(value: String): Self = StObject.set(x, "progID", value.asInstanceOf[js.Any])
     

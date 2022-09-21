@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.OlapResult")
 @js.native
-class OlapResult ()
+open class OlapResult ()
   extends StObject
      with typings.igniteUi.Infragistics.OlapResult {
   
@@ -16,7 +16,7 @@ class OlapResult ()
     * @param value
     */
   /* CompleteClass */
-  override def axes(value: js.Object): js.Array[js.Any] = js.native
+  override def axes(value: js.Object): js.Array[Any] = js.native
   
   /**
     * Returns an array of $.ig.OlapResultCell objects which hold the result data.
@@ -24,7 +24,7 @@ class OlapResult ()
     * @param value
     */
   /* CompleteClass */
-  override def cells(value: js.Object): js.Array[js.Any] = js.native
+  override def cells(value: js.Object): js.Array[Any] = js.native
   
   /**
     * Returns a value indicating whether the result object contains any data.

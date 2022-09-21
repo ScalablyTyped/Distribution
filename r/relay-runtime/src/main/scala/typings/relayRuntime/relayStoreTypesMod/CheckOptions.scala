@@ -21,7 +21,7 @@ object CheckOptions {
     
     inline def setHandlers(value: js.Array[MissingFieldHandler]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
     
-    inline def setHandlersVarargs(value: MissingFieldHandler*): Self = StObject.set(x, "handlers", js.Array(value :_*))
+    inline def setHandlersVarargs(value: MissingFieldHandler*): Self = StObject.set(x, "handlers", js.Array(value*))
     
     inline def setTarget(value: MutableRecordSource): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

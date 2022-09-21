@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WorkflowTask extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val AssignedTo: String
   
@@ -37,7 +37,7 @@ trait WorkflowTask extends StObject {
 object WorkflowTask {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     AssignedTo: String,
     CreatedBy: String,
     CreatedDate: VarDate,
@@ -58,7 +58,7 @@ object WorkflowTask {
   
   extension [Self <: WorkflowTask](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setAssignedTo(value: String): Self = StObject.set(x, "AssignedTo", value.asInstanceOf[js.Any])
     

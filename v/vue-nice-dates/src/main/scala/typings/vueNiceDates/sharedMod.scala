@@ -2,7 +2,6 @@ package typings.vueNiceDates
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.dateFns.mod.Locale
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,21 +18,21 @@ object sharedMod {
     
     var format: String
     
-    var initialDate: js.UndefOr[Date] = js.undefined
+    var initialDate: js.UndefOr[js.Date] = js.undefined
     
     var isFocus: Boolean
     
     var locale: DateLocale
     
-    var maximumDate: Date | Null
+    var maximumDate: js.Date | Null
     
-    var minimumDate: Date | Null
+    var minimumDate: js.Date | Null
     
     var modifiers: Modifiers
     
     var modifiersClassNames: ModifiersClassNames
     
-    var validator: StringDictionary[js.Function1[/* date */ Date, Boolean]]
+    var validator: StringDictionary[js.Function1[/* date */ js.Date, Boolean]]
   }
   object DatePickerProps {
     
@@ -45,7 +44,7 @@ object sharedMod {
       locale: DateLocale,
       modifiers: Modifiers,
       modifiersClassNames: ModifiersClassNames,
-      validator: StringDictionary[js.Function1[/* date */ Date, Boolean]]
+      validator: StringDictionary[js.Function1[/* date */ js.Date, Boolean]]
     ): DatePickerProps = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], enableGridSwitch = enableGridSwitch.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], isFocus = isFocus.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], modifiersClassNames = modifiersClassNames.asInstanceOf[js.Any], validator = validator.asInstanceOf[js.Any], maximumDate = null, minimumDate = null)
       __obj.asInstanceOf[DatePickerProps]
@@ -59,7 +58,7 @@ object sharedMod {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      inline def setInitialDate(value: Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
+      inline def setInitialDate(value: js.Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
       
       inline def setInitialDateUndefined: Self = StObject.set(x, "initialDate", js.undefined)
       
@@ -67,11 +66,11 @@ object sharedMod {
       
       inline def setLocale(value: DateLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      inline def setMaximumDate(value: Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
+      inline def setMaximumDate(value: js.Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
       
       inline def setMaximumDateNull: Self = StObject.set(x, "maximumDate", null)
       
-      inline def setMinimumDate(value: Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
+      inline def setMinimumDate(value: js.Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
       
       inline def setMinimumDateNull: Self = StObject.set(x, "minimumDate", null)
       
@@ -79,7 +78,7 @@ object sharedMod {
       
       inline def setModifiersClassNames(value: ModifiersClassNames): Self = StObject.set(x, "modifiersClassNames", value.asInstanceOf[js.Any])
       
-      inline def setValidator(value: StringDictionary[js.Function1[/* date */ Date, Boolean]]): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+      inline def setValidator(value: StringDictionary[js.Function1[/* date */ js.Date, Boolean]]): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,15 +92,15 @@ object sharedMod {
     
     var format: String
     
-    var initialDate: js.UndefOr[Date] = js.undefined
+    var initialDate: js.UndefOr[js.Date] = js.undefined
     
     var isFocus: Boolean
     
     var locale: DateLocale
     
-    var maximumDate: Date | Null
+    var maximumDate: js.Date | Null
     
-    var minimumDate: Date | Null
+    var minimumDate: js.Date | Null
     
     var modifiers: Modifiers
     
@@ -109,7 +108,7 @@ object sharedMod {
     
     var startDate: String
     
-    var validator: StringDictionary[js.Function1[/* date */ Date, Boolean]]
+    var validator: StringDictionary[js.Function1[/* date */ js.Date, Boolean]]
   }
   object DateRangePickerProps {
     
@@ -123,7 +122,7 @@ object sharedMod {
       modifiers: Modifiers,
       modifiersClassNames: ModifiersClassNames,
       startDate: String,
-      validator: StringDictionary[js.Function1[/* date */ Date, Boolean]]
+      validator: StringDictionary[js.Function1[/* date */ js.Date, Boolean]]
     ): DateRangePickerProps = {
       val __obj = js.Dynamic.literal(enableGridSwitch = enableGridSwitch.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], focusName = focusName.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], isFocus = isFocus.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], modifiersClassNames = modifiersClassNames.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any], validator = validator.asInstanceOf[js.Any], maximumDate = null, minimumDate = null)
       __obj.asInstanceOf[DateRangePickerProps]
@@ -139,7 +138,7 @@ object sharedMod {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      inline def setInitialDate(value: Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
+      inline def setInitialDate(value: js.Date): Self = StObject.set(x, "initialDate", value.asInstanceOf[js.Any])
       
       inline def setInitialDateUndefined: Self = StObject.set(x, "initialDate", js.undefined)
       
@@ -147,11 +146,11 @@ object sharedMod {
       
       inline def setLocale(value: DateLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      inline def setMaximumDate(value: Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
+      inline def setMaximumDate(value: js.Date): Self = StObject.set(x, "maximumDate", value.asInstanceOf[js.Any])
       
       inline def setMaximumDateNull: Self = StObject.set(x, "maximumDate", null)
       
-      inline def setMinimumDate(value: Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
+      inline def setMinimumDate(value: js.Date): Self = StObject.set(x, "minimumDate", value.asInstanceOf[js.Any])
       
       inline def setMinimumDateNull: Self = StObject.set(x, "minimumDate", null)
       
@@ -161,11 +160,11 @@ object sharedMod {
       
       inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
-      inline def setValidator(value: StringDictionary[js.Function1[/* date */ Date, Boolean]]): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+      inline def setValidator(value: StringDictionary[js.Function1[/* date */ js.Date, Boolean]]): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     }
   }
   
-  type Modifiers = StringDictionary[js.Function2[/* date */ Date, /* type */ String, Boolean]]
+  type Modifiers = StringDictionary[js.Function2[/* date */ js.Date, /* type */ String, Boolean]]
   
   type ModifiersClassNames = StringDictionary[String]
 }

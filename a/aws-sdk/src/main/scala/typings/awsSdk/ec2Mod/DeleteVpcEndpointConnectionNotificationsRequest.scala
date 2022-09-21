@@ -27,7 +27,7 @@ object DeleteVpcEndpointConnectionNotificationsRequest {
     
     inline def setConnectionNotificationIds(value: ConnectionNotificationIdsList): Self = StObject.set(x, "ConnectionNotificationIds", value.asInstanceOf[js.Any])
     
-    inline def setConnectionNotificationIdsVarargs(value: ConnectionNotificationId*): Self = StObject.set(x, "ConnectionNotificationIds", js.Array(value :_*))
+    inline def setConnectionNotificationIdsVarargs(value: ConnectionNotificationId*): Self = StObject.set(x, "ConnectionNotificationIds", js.Array(value*))
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

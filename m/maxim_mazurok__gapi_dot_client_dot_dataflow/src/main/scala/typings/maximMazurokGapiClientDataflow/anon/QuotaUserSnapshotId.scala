@@ -41,7 +41,7 @@ trait QuotaUserSnapshotId extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** The ID of the snapshot. */
-  var snapshotId: String
+  var snapshotId: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -51,8 +51,8 @@ trait QuotaUserSnapshotId extends StObject {
 }
 object QuotaUserSnapshotId {
   
-  inline def apply(projectId: String, snapshotId: String): QuotaUserSnapshotId = {
-    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], snapshotId = snapshotId.asInstanceOf[js.Any])
+  inline def apply(projectId: String): QuotaUserSnapshotId = {
+    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUserSnapshotId]
   }
   
@@ -101,6 +101,8 @@ object QuotaUserSnapshotId {
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
     inline def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+    
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

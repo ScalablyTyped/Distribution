@@ -24,7 +24,7 @@ trait ClusterMetadata extends StObject {
   /**
     * The creation date for this cluster.
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The optional description of the cluster.
@@ -42,7 +42,7 @@ trait ClusterMetadata extends StObject {
   var JobType: js.UndefOr[typings.awsSdk.snowballMod.JobType] = js.undefined
   
   /**
-    * The KmsKeyARN Amazon Resource Name (ARN) associated with this cluster. This ARN was created using the CreateKey API action in AWS Key Management Service (AWS KMS).
+    * The KmsKeyARN Amazon Resource Name (ARN) associated with this cluster. This ARN was created using the CreateKey API action in Key Management Service (KMS.
     */
   var KmsKeyARN: js.UndefOr[typings.awsSdk.snowballMod.KmsKeyARN] = js.undefined
   
@@ -52,12 +52,17 @@ trait ClusterMetadata extends StObject {
   var Notification: js.UndefOr[typings.awsSdk.snowballMod.Notification] = js.undefined
   
   /**
+    * Represents metadata and configuration settings for services on an Amazon Web Services Snow Family device.
+    */
+  var OnDeviceServiceConfiguration: js.UndefOr[typings.awsSdk.snowballMod.OnDeviceServiceConfiguration] = js.undefined
+  
+  /**
     * The arrays of JobResource objects that can include updated S3Resource objects or LambdaResource objects.
     */
   var Resources: js.UndefOr[JobResource] = js.undefined
   
   /**
-    * The role ARN associated with this cluster. This ARN was created using the CreateRole API action in AWS Identity and Access Management (IAM).
+    * The role ARN associated with this cluster. This ARN was created using the CreateRole API action in Identity and Access Management (IAM).
     */
   var RoleARN: js.UndefOr[typings.awsSdk.snowballMod.RoleARN] = js.undefined
   
@@ -67,12 +72,12 @@ trait ClusterMetadata extends StObject {
   var ShippingOption: js.UndefOr[typings.awsSdk.snowballMod.ShippingOption] = js.undefined
   
   /**
-    * The type of AWS Snow device to use for this cluster.   For cluster jobs, AWS Snow Family currently supports only the EDGE device type. 
+    * The type of Snowcone device to use for this cluster.   For cluster jobs, Amazon Web Services Snow Family currently supports only the EDGE device type. 
     */
   var SnowballType: js.UndefOr[typings.awsSdk.snowballMod.SnowballType] = js.undefined
   
   /**
-    * The tax documents required in your AWS Region.
+    * The tax documents required in your Amazon Web Services Region.
     */
   var TaxDocuments: js.UndefOr[typings.awsSdk.snowballMod.TaxDocuments] = js.undefined
 }
@@ -97,7 +102,7 @@ object ClusterMetadata {
     
     inline def setClusterStateUndefined: Self = StObject.set(x, "ClusterState", js.undefined)
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -120,6 +125,10 @@ object ClusterMetadata {
     inline def setNotification(value: Notification): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
     
     inline def setNotificationUndefined: Self = StObject.set(x, "Notification", js.undefined)
+    
+    inline def setOnDeviceServiceConfiguration(value: OnDeviceServiceConfiguration): Self = StObject.set(x, "OnDeviceServiceConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setOnDeviceServiceConfigurationUndefined: Self = StObject.set(x, "OnDeviceServiceConfiguration", js.undefined)
     
     inline def setResources(value: JobResource): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     

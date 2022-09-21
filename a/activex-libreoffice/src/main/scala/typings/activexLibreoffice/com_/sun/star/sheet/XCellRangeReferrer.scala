@@ -29,7 +29,7 @@ object XCellRangeReferrer {
     ReferredCells: XCellRange,
     acquire: () => Unit,
     getReferredCells: () => XCellRange,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCellRangeReferrer = {
     val __obj = js.Dynamic.literal(ReferredCells = ReferredCells.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getReferredCells = js.Any.fromFunction0(getReferredCells), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

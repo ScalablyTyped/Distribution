@@ -15,5 +15,5 @@ trait WaitsForBlock
       /* latchFunction */ SpecFunction, 
       /* message */ String, 
       /* spec */ Spec, 
-      js.Any
+      scala.Any
     ]

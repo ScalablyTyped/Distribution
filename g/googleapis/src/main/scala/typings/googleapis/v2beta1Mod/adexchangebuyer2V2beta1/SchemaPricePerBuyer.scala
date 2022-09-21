@@ -4,26 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Used to specify pricing rules for buyers/advertisers. Each PricePerBuyer in
-  * a product can become 0 or 1 deals. To check if there is a PricePerBuyer for
-  * a particular buyer or buyer/advertiser pair, we look for the most specific
-  * matching rule - we first look for a rule matching the buyer and advertiser,
-  * next a rule with the buyer but an empty advertiser list, and otherwise look
-  * for a matching rule where no buyer is set.
-  */
 trait SchemaPricePerBuyer extends StObject {
   
   /**
-    * The list of advertisers for this price when associated with this buyer.
-    * If empty, all advertisers with this buyer pay this price.
+    * The list of advertisers for this price when associated with this buyer. If empty, all advertisers with this buyer pay this price.
     */
-  var advertiserIds: js.UndefOr[js.Array[String]] = js.undefined
+  var advertiserIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The buyer who will pay this price. If unset, all buyers can pay this
-    * price (if the advertisers match, and there&#39;s no more specific rule
-    * matching the buyer).
+    * The buyer who will pay this price. If unset, all buyers can pay this price (if the advertisers match, and there's no more specific rule matching the buyer).
     */
   var buyer: js.UndefOr[SchemaBuyer] = js.undefined
   
@@ -43,9 +32,11 @@ object SchemaPricePerBuyer {
     
     inline def setAdvertiserIds(value: js.Array[String]): Self = StObject.set(x, "advertiserIds", value.asInstanceOf[js.Any])
     
+    inline def setAdvertiserIdsNull: Self = StObject.set(x, "advertiserIds", null)
+    
     inline def setAdvertiserIdsUndefined: Self = StObject.set(x, "advertiserIds", js.undefined)
     
-    inline def setAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "advertiserIds", js.Array(value :_*))
+    inline def setAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "advertiserIds", js.Array(value*))
     
     inline def setBuyer(value: SchemaBuyer): Self = StObject.set(x, "buyer", value.asInstanceOf[js.Any])
     

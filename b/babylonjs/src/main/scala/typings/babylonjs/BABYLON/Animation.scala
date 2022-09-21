@@ -10,32 +10,35 @@ trait Animation extends StObject {
   /**
     * Stores the easing function of the animation
     */
-  /* private */ var _easingFunction: js.Any = js.native
+  /* private */ var _easingFunction: Any = js.native
   
   /**
     * The set of event that will be linked to this animation
     */
-  /* private */ var _events: js.Any = js.native
+  /* private */ var _events: Any = js.native
   
   /**
+    * @param value
     * @hidden Internal use only
     */
-  def _getKeyValue(value: js.Any): js.Any = js.native
+  def _getKeyValue(value: Any): Any = js.native
   
   /**
+    * @param currentFrame
+    * @param state
     * @hidden Internal use only
     */
-  def _interpolate(currentFrame: Double, state: IAnimationState): js.Any = js.native
+  def _interpolate(currentFrame: Double, state: IAnimationState): Any = js.native
   
   /**
     * Stores the key frames of the animation
     */
-  /* private */ var _keys: js.Any = js.native
+  /* private */ var _keys: Any = js.native
   
   /**
     * Stores the animation ranges for the animation
     */
-  /* private */ var _ranges: js.Any = js.native
+  /* private */ var _ranges: Any = js.native
   
   /**
     * @hidden Internal use only
@@ -63,6 +66,17 @@ trait Animation extends StObject {
   def color3InterpolateFunction(startValue: Color3, endValue: Color3, gradient: Double): Color3 = js.native
   
   /**
+    * Interpolates a Color3 cubically
+    * @param startValue Start value of the animation curve
+    * @param outTangent End tangent of the animation
+    * @param endValue End value of the animation curve
+    * @param inTangent Start tangent of the animation curve
+    * @param gradient Scalar amount to interpolate
+    * @returns interpolated value
+    */
+  def color3InterpolateFunctionWithTangents(startValue: Color3, outTangent: Color3, endValue: Color3, inTangent: Color3, gradient: Double): Color3 = js.native
+  
+  /**
     * Interpolates a Color4 linearly
     * @param startValue Start value of the animation curve
     * @param endValue End value of the animation curve
@@ -70,6 +84,17 @@ trait Animation extends StObject {
     * @returns Interpolated Color3 value
     */
   def color4InterpolateFunction(startValue: Color4, endValue: Color4, gradient: Double): Color4 = js.native
+  
+  /**
+    * Interpolates a Color4 cubically
+    * @param startValue Start value of the animation curve
+    * @param outTangent End tangent of the animation
+    * @param endValue End value of the animation curve
+    * @param inTangent Start tangent of the animation curve
+    * @param gradient Scalar amount to interpolate
+    * @returns interpolated value
+    */
+  def color4InterpolateFunctionWithTangents(startValue: Color4, outTangent: Color4, endValue: Color4, inTangent: Color4, gradient: Double): Color4 = js.native
   
   /**
     * Creates an animation range
@@ -92,6 +117,13 @@ trait Animation extends StObject {
   
   /**Specifies if blending should be enabled */
   var enableBlending: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * Evaluate the animation value at a given frame
+    * @param currentFrame defines the frame where we want to evaluate the animation
+    * @returns the animation value
+    */
+  def evaluate(currentFrame: Double): Any = js.native
   
   /**
     * Interpolates a scalar linearly
@@ -120,7 +152,7 @@ trait Animation extends StObject {
     * Gets the easing function of the animation
     * @returns Easing function of the animation
     */
-  def getEasingFunction(): IEasingFunction = js.native
+  def getEasingFunction(): Nullable[IEasingFunction] = js.native
   
   /**
     * Retrieves all the events from the animation
@@ -210,13 +242,13 @@ trait Animation extends StObject {
     * Serializes the animation to an object
     * @returns Serialized object
     */
-  def serialize(): js.Any = js.native
+  def serialize(): Any = js.native
   
   /**
     * Sets the easing function of the animation
     * @param easingFunction A custom mathematical formula for animation
     */
-  def setEasingFunction(easingFunction: EasingFunction): Unit = js.native
+  def setEasingFunction(easingFunction: Nullable[IEasingFunction]): Unit = js.native
   
   /**
     * Sets the key frames of the animation
@@ -247,10 +279,15 @@ trait Animation extends StObject {
   def toString(fullDetails: Boolean): String = js.native
   
   /**
+    * Gets or sets the unique id of the animation (the uniqueness is solely among other animations)
+    */
+  var uniqueId: Double = js.native
+  
+  /**
     * Interpolates a Vector2 linearly
     * @param startValue Start value of the animation curve
     * @param endValue End value of the animation curve
-    * @param gradient Scalar amount to interpolate
+    * @param gradient Scalar amount to interpolate (value between 0 and 1)
     * @returns Interpolated Vector2 value
     */
   def vector2InterpolateFunction(startValue: Vector2, endValue: Vector2, gradient: Double): Vector2 = js.native
@@ -261,16 +298,16 @@ trait Animation extends StObject {
     * @param outTangent End tangent of the animation
     * @param endValue End value of the animation curve
     * @param inTangent Start tangent of the animation curve
-    * @param gradient Scalar amount to interpolate
+    * @param gradient Scalar amount to interpolate (value between 0 and 1)
     * @returns Interpolated Vector2 value
     */
   def vector2InterpolateFunctionWithTangents(startValue: Vector2, outTangent: Vector2, endValue: Vector2, inTangent: Vector2, gradient: Double): Vector2 = js.native
   
   /**
-    * Interpolates a Vector3 linearl
+    * Interpolates a Vector3 linearly
     * @param startValue Start value of the animation curve
     * @param endValue End value of the animation curve
-    * @param gradient Scalar amount to interpolate
+    * @param gradient Scalar amount to interpolate (value between 0 and 1)
     * @returns Interpolated scalar value
     */
   def vector3InterpolateFunction(startValue: Vector3, endValue: Vector3, gradient: Double): Vector3 = js.native
@@ -281,7 +318,7 @@ trait Animation extends StObject {
     * @param outTangent End tangent of the animation
     * @param endValue End value of the animation curve
     * @param inTangent Start tangent of the animation curve
-    * @param gradient Scalar amount to interpolate
+    * @param gradient Scalar amount to interpolate (value between 0 and 1)
     * @returns InterpolatedVector3 value
     */
   def vector3InterpolateFunctionWithTangents(startValue: Vector3, outTangent: Vector3, endValue: Vector3, inTangent: Vector3, gradient: Double): Vector3 = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for fastest-levenshtein
 
-Typings are for version 1.0.12
+Typings are for version 1.0.16
 
 ## Library description:
 Fastest Levenshtein distance implementation in JS.
@@ -10,15 +10,12 @@ Fastest Levenshtein distance implementation in JS.
 | ------------------ | :-------------: |
 | Full name          | fastest-levenshtein |
 | Keywords           | levenshtein, distance, fast, fastest, edit, string, similarity, algorithm, match, comparison, fuzzy, search, string, matching, similar, node, difference |
-| # releases         | 15 |
-| # dependents       | 24 |
-| # downloads        | 26355723 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7725498666666668E7 |
+| # stars            | 385.0 |
 
 ## Links
-- [Homepage](https://github.com/ka-weihe/fastest-levenshtein#README)
-- [Bugs](https://github.com/ka-weihe/fastest-levenshtein/issues)
-- [Repository](https://github.com/ka-weihe/fastest-levenshtein)
 - [Npm](https://www.npmjs.com/package/fastest-levenshtein)
     
 

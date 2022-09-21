@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.SignEventObject")
 @js.native
-/* private */ class SignEventObject ()
+/* private */ open class SignEventObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.SignEventObject {
   

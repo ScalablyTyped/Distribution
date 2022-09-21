@@ -12,7 +12,7 @@ object global {
     
     @JSGlobal("TaskQueue")
     @js.native
-    class ^[T /* <: TaskDescriptor */] ()
+    open class ^[T /* <: TaskDescriptor */] ()
       extends typings.taskWorklet.mod.^[T] {
       def this(options: Options) = this()
     }

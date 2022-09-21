@@ -24,7 +24,7 @@ object viewsStackViewMod {
     
     var navigationConfig: StackNavigationConfig
     
-    var screenProps: js.Any
+    var screenProps: Any
   }
   object Props {
     
@@ -32,7 +32,7 @@ object viewsStackViewMod {
       descriptors: StackDescriptorMap,
       navigation: StackNavigationHelpers,
       navigationConfig: StackNavigationConfig,
-      screenProps: js.Any
+      screenProps: Any
     ): Props = {
       val __obj = js.Dynamic.literal(descriptors = descriptors.asInstanceOf[js.Any], navigation = navigation.asInstanceOf[js.Any], navigationConfig = navigationConfig.asInstanceOf[js.Any], screenProps = screenProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
@@ -46,7 +46,7 @@ object viewsStackViewMod {
       
       inline def setNavigationConfig(value: StackNavigationConfig): Self = StObject.set(x, "navigationConfig", value.asInstanceOf[js.Any])
       
-      inline def setScreenProps(value: js.Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+      inline def setScreenProps(value: Any): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
     }
   }
 }

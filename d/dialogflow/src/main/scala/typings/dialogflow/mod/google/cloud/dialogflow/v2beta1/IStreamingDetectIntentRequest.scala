@@ -1,6 +1,5 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IStreamingDetectIntentRequest extends StObject {
   
   /** StreamingDetectIntentRequest inputAudio */
-  var inputAudio: js.UndefOr[Uint8Array | String | Null] = js.undefined
+  var inputAudio: js.UndefOr[js.typedarray.Uint8Array | String | Null] = js.undefined
   
   /** StreamingDetectIntentRequest outputAudioConfig */
   var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.undefined
@@ -35,7 +34,7 @@ object IStreamingDetectIntentRequest {
   
   extension [Self <: IStreamingDetectIntentRequest](x: Self) {
     
-    inline def setInputAudio(value: Uint8Array | String): Self = StObject.set(x, "inputAudio", value.asInstanceOf[js.Any])
+    inline def setInputAudio(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "inputAudio", value.asInstanceOf[js.Any])
     
     inline def setInputAudioNull: Self = StObject.set(x, "inputAudio", null)
     

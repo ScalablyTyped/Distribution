@@ -17,7 +17,7 @@ trait LaunchTemplateBlockDeviceMappingRequest extends StObject {
   var Ebs: js.UndefOr[LaunchTemplateEbsBlockDeviceRequest] = js.undefined
   
   /**
-    * Suppresses the specified device included in the block device mapping of the AMI.
+    * To omit the device from the block device mapping, specify an empty string.
     */
   var NoDevice: js.UndefOr[String] = js.undefined
   

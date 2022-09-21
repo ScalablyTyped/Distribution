@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientAppointmentFlags")
 @js.native
-class ASPxClientAppointmentFlags ()
+open class ASPxClientAppointmentFlags ()
   extends StObject
      with typings.devexpressWeb.ASPxClientAppointmentFlags {
   

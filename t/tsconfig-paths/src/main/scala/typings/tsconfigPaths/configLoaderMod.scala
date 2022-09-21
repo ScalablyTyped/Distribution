@@ -84,13 +84,8 @@ object configLoaderMod {
       __obj.asInstanceOf[typings.tsconfigPaths.configLoaderMod.ConfigLoaderFailResult]
     }
     
-    inline def ConfigLoaderSuccessResult(
-      absoluteBaseUrl: String,
-      baseUrl: String,
-      configFileAbsolutePath: String,
-      paths: StringDictionary[js.Array[String]]
-    ): typings.tsconfigPaths.configLoaderMod.ConfigLoaderSuccessResult = {
-      val __obj = js.Dynamic.literal(absoluteBaseUrl = absoluteBaseUrl.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any], configFileAbsolutePath = configFileAbsolutePath.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], resultType = "success")
+    inline def ConfigLoaderSuccessResult(absoluteBaseUrl: String, configFileAbsolutePath: String, paths: StringDictionary[js.Array[String]]): typings.tsconfigPaths.configLoaderMod.ConfigLoaderSuccessResult = {
+      val __obj = js.Dynamic.literal(absoluteBaseUrl = absoluteBaseUrl.asInstanceOf[js.Any], configFileAbsolutePath = configFileAbsolutePath.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], resultType = "success")
       __obj.asInstanceOf[typings.tsconfigPaths.configLoaderMod.ConfigLoaderSuccessResult]
     }
   }
@@ -103,11 +98,11 @@ object configLoaderMod {
     
     var addMatchAll: js.UndefOr[Boolean] = js.undefined
     
-    var baseUrl: String
+    var baseUrl: js.UndefOr[String] = js.undefined
     
     var configFileAbsolutePath: String
     
-    var mainFields: js.UndefOr[js.Array[String]] = js.undefined
+    var mainFields: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
     
     var paths: StringDictionary[js.Array[String]]
     
@@ -115,13 +110,8 @@ object configLoaderMod {
   }
   object ConfigLoaderSuccessResult {
     
-    inline def apply(
-      absoluteBaseUrl: String,
-      baseUrl: String,
-      configFileAbsolutePath: String,
-      paths: StringDictionary[js.Array[String]]
-    ): ConfigLoaderSuccessResult = {
-      val __obj = js.Dynamic.literal(absoluteBaseUrl = absoluteBaseUrl.asInstanceOf[js.Any], baseUrl = baseUrl.asInstanceOf[js.Any], configFileAbsolutePath = configFileAbsolutePath.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], resultType = "success")
+    inline def apply(absoluteBaseUrl: String, configFileAbsolutePath: String, paths: StringDictionary[js.Array[String]]): ConfigLoaderSuccessResult = {
+      val __obj = js.Dynamic.literal(absoluteBaseUrl = absoluteBaseUrl.asInstanceOf[js.Any], configFileAbsolutePath = configFileAbsolutePath.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any], resultType = "success")
       __obj.asInstanceOf[ConfigLoaderSuccessResult]
     }
     
@@ -135,13 +125,15 @@ object configLoaderMod {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      
       inline def setConfigFileAbsolutePath(value: String): Self = StObject.set(x, "configFileAbsolutePath", value.asInstanceOf[js.Any])
       
-      inline def setMainFields(value: js.Array[String]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
+      inline def setMainFields(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
       
       inline def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
       
-      inline def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
+      inline def setMainFieldsVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "mainFields", js.Array(value*))
       
       inline def setPaths(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
@@ -155,7 +147,7 @@ object configLoaderMod {
     
     var baseUrl: String
     
-    var mainFields: js.UndefOr[js.Array[String]] = js.undefined
+    var mainFields: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
     
     var paths: StringDictionary[js.Array[String]]
   }
@@ -174,11 +166,11 @@ object configLoaderMod {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      inline def setMainFields(value: js.Array[String]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
+      inline def setMainFields(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
       
       inline def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
       
-      inline def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
+      inline def setMainFieldsVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "mainFields", js.Array(value*))
       
       inline def setPaths(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     }

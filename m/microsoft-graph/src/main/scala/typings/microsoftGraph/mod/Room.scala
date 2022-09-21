@@ -32,6 +32,7 @@ trait Room
   // Specifies the floor number that the room is on.
   var floorNumber: js.UndefOr[NullableOption[Double]] = js.undefined
   
+  // Specifies whether the room is wheelchair accessible.
   var isWheelChairAccessible: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Specifies a descriptive label for the room, for example, a number or name.
@@ -125,7 +126,7 @@ object Room {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setVideoDeviceName(value: NullableOption[String]): Self = StObject.set(x, "videoDeviceName", value.asInstanceOf[js.Any])
     

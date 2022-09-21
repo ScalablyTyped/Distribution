@@ -33,6 +33,6 @@ object ListQueuesResponse {
     
     inline def setQueueSummaryListUndefined: Self = StObject.set(x, "QueueSummaryList", js.undefined)
     
-    inline def setQueueSummaryListVarargs(value: QueueSummary*): Self = StObject.set(x, "QueueSummaryList", js.Array(value :_*))
+    inline def setQueueSummaryListVarargs(value: QueueSummary*): Self = StObject.set(x, "QueueSummaryList", js.Array(value*))
   }
 }

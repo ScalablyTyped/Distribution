@@ -18,9 +18,8 @@ import typings.htmlPdf.htmlPdfStrings.manual
 import typings.htmlPdf.htmlPdfStrings.pdf
 import typings.htmlPdf.htmlPdfStrings.png
 import typings.htmlPdf.htmlPdfStrings.portrait
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.ReadStream
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -62,6 +61,12 @@ object mod {
     
     // HTTP Headers that are used for requests
     var httpHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
+    
+    // Prevent local file:// access by passing '--local-url-access=false' to phantomjs
+    // For security reasons you should keep the default value if you render
+    // arbitrary html/js.
+    // The default is `false`
+    var localUrlAccess: js.UndefOr[Boolean] = js.undefined
     
     var orientation: js.UndefOr[portrait | landscape] = js.undefined
     
@@ -134,11 +139,15 @@ object mod {
       
       inline def setHttpCookiesUndefined: Self = StObject.set(x, "httpCookies", js.undefined)
       
-      inline def setHttpCookiesVarargs(value: Domain*): Self = StObject.set(x, "httpCookies", js.Array(value :_*))
+      inline def setHttpCookiesVarargs(value: Domain*): Self = StObject.set(x, "httpCookies", js.Array(value*))
       
       inline def setHttpHeaders(value: StringDictionary[String]): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
       
       inline def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)
+      
+      inline def setLocalUrlAccess(value: Boolean): Self = StObject.set(x, "localUrlAccess", value.asInstanceOf[js.Any])
+      
+      inline def setLocalUrlAccessUndefined: Self = StObject.set(x, "localUrlAccess", js.undefined)
       
       inline def setOrientation(value: portrait | landscape): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
@@ -152,7 +161,7 @@ object mod {
       
       inline def setPhantomArgsUndefined: Self = StObject.set(x, "phantomArgs", js.undefined)
       
-      inline def setPhantomArgsVarargs(value: String*): Self = StObject.set(x, "phantomArgs", js.Array(value :_*))
+      inline def setPhantomArgsVarargs(value: String*): Self = StObject.set(x, "phantomArgs", js.Array(value*))
       
       inline def setPhantomPath(value: String): Self = StObject.set(x, "phantomPath", value.asInstanceOf[js.Any])
       
@@ -191,15 +200,15 @@ object mod {
   @js.native
   trait CreateResult extends StObject {
     
-    def toBuffer(callback: js.Function2[/* err */ Error, /* buffer */ Buffer, Unit]): Unit = js.native
+    def toBuffer(callback: js.Function2[/* err */ js.Error, /* buffer */ Buffer, Unit]): Unit = js.native
     
     def toFile(): Unit = js.native
-    def toFile(callback: js.Function2[/* err */ Error, /* res */ FileInfo, Unit]): Unit = js.native
+    def toFile(callback: js.Function2[/* err */ js.Error, /* res */ FileInfo, Unit]): Unit = js.native
     def toFile(filename: String): Unit = js.native
-    def toFile(filename: String, callback: js.Function2[/* err */ Error, /* res */ FileInfo, Unit]): Unit = js.native
-    def toFile(filename: Unit, callback: js.Function2[/* err */ Error, /* res */ FileInfo, Unit]): Unit = js.native
+    def toFile(filename: String, callback: js.Function2[/* err */ js.Error, /* res */ FileInfo, Unit]): Unit = js.native
+    def toFile(filename: Unit, callback: js.Function2[/* err */ js.Error, /* res */ FileInfo, Unit]): Unit = js.native
     
-    def toStream(callback: js.Function2[/* err */ Error, /* stream */ ReadStream, Unit]): Unit = js.native
+    def toStream(callback: js.Function2[/* err */ js.Error, /* stream */ ReadStream, Unit]): Unit = js.native
   }
   
   trait FileInfo extends StObject {

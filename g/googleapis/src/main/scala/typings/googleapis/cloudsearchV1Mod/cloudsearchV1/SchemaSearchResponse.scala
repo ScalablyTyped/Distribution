@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The search API response.
-  */
 trait SchemaSearchResponse extends StObject {
   
   /**
@@ -27,23 +24,22 @@ trait SchemaSearchResponse extends StObject {
   /**
     * Whether there are more search results matching the query.
     */
-  var hasMoreResults: js.UndefOr[Boolean] = js.undefined
+  var hasMoreResults: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Query interpretation result for user query. Empty if query interpretation
-    * is disabled.
+    * Query interpretation result for user query. Empty if query interpretation is disabled.
     */
   var queryInterpretation: js.UndefOr[SchemaQueryInterpretation] = js.undefined
   
   /**
     * The estimated result count for this query.
     */
-  var resultCountEstimate: js.UndefOr[String] = js.undefined
+  var resultCountEstimate: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The exact result count for this query.
     */
-  var resultCountExact: js.UndefOr[String] = js.undefined
+  var resultCountExact: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Expanded result count information.
@@ -61,8 +57,7 @@ trait SchemaSearchResponse extends StObject {
   var spellResults: js.UndefOr[js.Array[SchemaSpellResult]] = js.undefined
   
   /**
-    * Structured results for the user query. These results are not counted
-    * against the page_size.
+    * Structured results for the user query. These results are not counted against the page_size.
     */
   var structuredResults: js.UndefOr[js.Array[SchemaStructuredResult]] = js.undefined
 }
@@ -87,9 +82,11 @@ object SchemaSearchResponse {
     
     inline def setFacetResultsUndefined: Self = StObject.set(x, "facetResults", js.undefined)
     
-    inline def setFacetResultsVarargs(value: SchemaFacetResult*): Self = StObject.set(x, "facetResults", js.Array(value :_*))
+    inline def setFacetResultsVarargs(value: SchemaFacetResult*): Self = StObject.set(x, "facetResults", js.Array(value*))
     
     inline def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
+    
+    inline def setHasMoreResultsNull: Self = StObject.set(x, "hasMoreResults", null)
     
     inline def setHasMoreResultsUndefined: Self = StObject.set(x, "hasMoreResults", js.undefined)
     
@@ -99,9 +96,13 @@ object SchemaSearchResponse {
     
     inline def setResultCountEstimate(value: String): Self = StObject.set(x, "resultCountEstimate", value.asInstanceOf[js.Any])
     
+    inline def setResultCountEstimateNull: Self = StObject.set(x, "resultCountEstimate", null)
+    
     inline def setResultCountEstimateUndefined: Self = StObject.set(x, "resultCountEstimate", js.undefined)
     
     inline def setResultCountExact(value: String): Self = StObject.set(x, "resultCountExact", value.asInstanceOf[js.Any])
+    
+    inline def setResultCountExactNull: Self = StObject.set(x, "resultCountExact", null)
     
     inline def setResultCountExactUndefined: Self = StObject.set(x, "resultCountExact", js.undefined)
     
@@ -113,18 +114,18 @@ object SchemaSearchResponse {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: SchemaSearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SchemaSearchResult*): Self = StObject.set(x, "results", js.Array(value*))
     
     inline def setSpellResults(value: js.Array[SchemaSpellResult]): Self = StObject.set(x, "spellResults", value.asInstanceOf[js.Any])
     
     inline def setSpellResultsUndefined: Self = StObject.set(x, "spellResults", js.undefined)
     
-    inline def setSpellResultsVarargs(value: SchemaSpellResult*): Self = StObject.set(x, "spellResults", js.Array(value :_*))
+    inline def setSpellResultsVarargs(value: SchemaSpellResult*): Self = StObject.set(x, "spellResults", js.Array(value*))
     
     inline def setStructuredResults(value: js.Array[SchemaStructuredResult]): Self = StObject.set(x, "structuredResults", value.asInstanceOf[js.Any])
     
     inline def setStructuredResultsUndefined: Self = StObject.set(x, "structuredResults", js.undefined)
     
-    inline def setStructuredResultsVarargs(value: SchemaStructuredResult*): Self = StObject.set(x, "structuredResults", js.Array(value :_*))
+    inline def setStructuredResultsVarargs(value: SchemaStructuredResult*): Self = StObject.set(x, "structuredResults", js.Array(value*))
   }
 }

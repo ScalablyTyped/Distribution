@@ -32,10 +32,10 @@ object JoinAggregateTransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setJoinaggregate(value: js.Array[JoinAggregateFieldDef]): Self = StObject.set(x, "joinaggregate", value.asInstanceOf[js.Any])
     
-    inline def setJoinaggregateVarargs(value: JoinAggregateFieldDef*): Self = StObject.set(x, "joinaggregate", js.Array(value :_*))
+    inline def setJoinaggregateVarargs(value: JoinAggregateFieldDef*): Self = StObject.set(x, "joinaggregate", js.Array(value*))
   }
 }

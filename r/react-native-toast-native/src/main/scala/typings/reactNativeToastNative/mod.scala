@@ -137,21 +137,21 @@ object mod extends Shortcut {
   @js.native
   trait ToastNative extends StObject {
     
-    var BOTTOM: js.Any = js.native
+    var BOTTOM: Any = js.native
     
-    var CENTER: js.Any = js.native
+    var CENTER: Any = js.native
     
-    var LONG: js.Any = js.native
+    var LONG: Any = js.native
     
     // Toast duration constants
-    var SHORT: js.Any = js.native
+    var SHORT: Any = js.native
     
     // Toast gravity constants
-    var TOP: js.Any = js.native
+    var TOP: Any = js.native
     
     def show(): Unit = js.native
     def show(message: String): Unit = js.native
-    def show(message: String, duration: js.Any, position: js.Any, styles: Style): Unit = js.native
+    def show(message: String, duration: Any, position: Any, styles: Style): Unit = js.native
   }
   
   type _To = ToastNative

@@ -17,12 +17,17 @@ trait Schedule extends StObject {
   var CreateRule: js.UndefOr[typings.awsSdk.dlmMod.CreateRule] = js.undefined
   
   /**
-    * The rule for cross-Region snapshot copies.
+    * Specifies a rule for copying snapshots or AMIs across regions.  You can't specify cross-Region copy rules for policies that create snapshots on an Outpost. If the policy creates snapshots in a Region, then snapshots can be copied to up to three Regions or Outposts. 
     */
   var CrossRegionCopyRules: js.UndefOr[typings.awsSdk.dlmMod.CrossRegionCopyRules] = js.undefined
   
   /**
-    * The rule for enabling fast snapshot restore.
+    *  [AMI policies only] The AMI deprecation rule for the schedule.
+    */
+  var DeprecateRule: js.UndefOr[typings.awsSdk.dlmMod.DeprecateRule] = js.undefined
+  
+  /**
+    *  [Snapshot policies only] The rule for enabling fast snapshot restore.
     */
   var FastRestoreRule: js.UndefOr[typings.awsSdk.dlmMod.FastRestoreRule] = js.undefined
   
@@ -32,17 +37,22 @@ trait Schedule extends StObject {
   var Name: js.UndefOr[ScheduleName] = js.undefined
   
   /**
-    * The retention rule.
+    * The retention rule for snapshots or AMIs created by the policy.
     */
   var RetainRule: js.UndefOr[typings.awsSdk.dlmMod.RetainRule] = js.undefined
   
   /**
-    * The tags to apply to policy-created resources. These user-defined tags are in addition to the AWS-added lifecycle tags.
+    *  [Snapshot policies only] The rule for sharing snapshots with other Amazon Web Services accounts.
+    */
+  var ShareRules: js.UndefOr[typings.awsSdk.dlmMod.ShareRules] = js.undefined
+  
+  /**
+    * The tags to apply to policy-created resources. These user-defined tags are in addition to the Amazon Web Services-added lifecycle tags.
     */
   var TagsToAdd: js.UndefOr[TagsToAddList] = js.undefined
   
   /**
-    * A collection of key/value pairs with values determined dynamically when the policy is executed. Keys may be any valid Amazon EC2 tag key. Values must be in one of the two following formats: $(instance-id) or $(timestamp). Variable tags are only valid for EBS Snapshot Management – Instance policies.
+    *  [AMI policies and snapshot policies that target instances only] A collection of key/value pairs with values determined dynamically when the policy is executed. Keys may be any valid Amazon EC2 tag key. Values must be in one of the two following formats: $(instance-id) or $(timestamp). Variable tags are only valid for EBS Snapshot Management – Instance policies.
     */
   var VariableTags: js.UndefOr[VariableTagsList] = js.undefined
 }
@@ -67,7 +77,11 @@ object Schedule {
     
     inline def setCrossRegionCopyRulesUndefined: Self = StObject.set(x, "CrossRegionCopyRules", js.undefined)
     
-    inline def setCrossRegionCopyRulesVarargs(value: CrossRegionCopyRule*): Self = StObject.set(x, "CrossRegionCopyRules", js.Array(value :_*))
+    inline def setCrossRegionCopyRulesVarargs(value: CrossRegionCopyRule*): Self = StObject.set(x, "CrossRegionCopyRules", js.Array(value*))
+    
+    inline def setDeprecateRule(value: DeprecateRule): Self = StObject.set(x, "DeprecateRule", value.asInstanceOf[js.Any])
+    
+    inline def setDeprecateRuleUndefined: Self = StObject.set(x, "DeprecateRule", js.undefined)
     
     inline def setFastRestoreRule(value: FastRestoreRule): Self = StObject.set(x, "FastRestoreRule", value.asInstanceOf[js.Any])
     
@@ -81,16 +95,22 @@ object Schedule {
     
     inline def setRetainRuleUndefined: Self = StObject.set(x, "RetainRule", js.undefined)
     
+    inline def setShareRules(value: ShareRules): Self = StObject.set(x, "ShareRules", value.asInstanceOf[js.Any])
+    
+    inline def setShareRulesUndefined: Self = StObject.set(x, "ShareRules", js.undefined)
+    
+    inline def setShareRulesVarargs(value: ShareRule*): Self = StObject.set(x, "ShareRules", js.Array(value*))
+    
     inline def setTagsToAdd(value: TagsToAddList): Self = StObject.set(x, "TagsToAdd", value.asInstanceOf[js.Any])
     
     inline def setTagsToAddUndefined: Self = StObject.set(x, "TagsToAdd", js.undefined)
     
-    inline def setTagsToAddVarargs(value: Tag*): Self = StObject.set(x, "TagsToAdd", js.Array(value :_*))
+    inline def setTagsToAddVarargs(value: Tag*): Self = StObject.set(x, "TagsToAdd", js.Array(value*))
     
     inline def setVariableTags(value: VariableTagsList): Self = StObject.set(x, "VariableTags", value.asInstanceOf[js.Any])
     
     inline def setVariableTagsUndefined: Self = StObject.set(x, "VariableTags", js.undefined)
     
-    inline def setVariableTagsVarargs(value: Tag*): Self = StObject.set(x, "VariableTags", js.Array(value :_*))
+    inline def setVariableTagsVarargs(value: Tag*): Self = StObject.set(x, "VariableTags", js.Array(value*))
   }
 }

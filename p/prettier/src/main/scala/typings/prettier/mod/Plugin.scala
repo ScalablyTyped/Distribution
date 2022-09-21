@@ -35,7 +35,7 @@ object Plugin {
     
     inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    inline def setLanguagesVarargs(value: SupportLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: SupportLanguage*): Self = StObject.set(x, "languages", js.Array(value*))
     
     inline def setOptions(value: SupportOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

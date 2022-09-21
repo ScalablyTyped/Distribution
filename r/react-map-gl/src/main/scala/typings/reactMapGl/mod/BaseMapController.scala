@@ -21,7 +21,7 @@ object BaseMapController {
     
     inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setHandleEvent(value: MapControlEvent => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
   }

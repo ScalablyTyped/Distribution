@@ -1,8 +1,10 @@
 package typings.carbonComponentsReact
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.carbonComponentsReact.carbonComponentsReactStrings.ref
 import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.ButtonHTMLAttributes
+import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
@@ -110,26 +112,26 @@ object typingsSharedMod {
     inline def right: typings.carbonComponentsReact.carbonComponentsReactStrings.right = "right".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.right]
   }
   
-  trait InternationalProps[MID] extends StObject {
+  trait InternationalProps[MID, ARGS] extends StObject {
     
-    var translateWithId: js.UndefOr[js.Function1[/* messageId */ MID, String]] = js.undefined
+    var translateWithId: js.UndefOr[js.Function2[/* messageId */ MID, /* args */ js.UndefOr[ARGS], String]] = js.undefined
   }
   object InternationalProps {
     
-    inline def apply[MID](): InternationalProps[MID] = {
+    inline def apply[MID, ARGS](): InternationalProps[MID, ARGS] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[InternationalProps[MID]]
+      __obj.asInstanceOf[InternationalProps[MID, ARGS]]
     }
     
-    extension [Self <: InternationalProps[?], MID](x: Self & InternationalProps[MID]) {
+    extension [Self <: InternationalProps[?, ?], MID, ARGS](x: Self & (InternationalProps[MID, ARGS])) {
       
-      inline def setTranslateWithId(value: /* messageId */ MID => String): Self = StObject.set(x, "translateWithId", js.Any.fromFunction1(value))
+      inline def setTranslateWithId(value: (/* messageId */ MID, /* args */ js.UndefOr[ARGS]) => String): Self = StObject.set(x, "translateWithId", js.Any.fromFunction2(value))
       
       inline def setTranslateWithIdUndefined: Self = StObject.set(x, "translateWithId", js.undefined)
     }
   }
   
-  type JSXIntrinsicElementProps[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, REF /* <: Boolean */] = (Omit[
+  type JSXIntrinsicElementProps[K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */, REF /* <: Boolean */] = (Omit[
     /* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[K] */ js.Any, 
     ref
   ]) | (/* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[K] */ js.Any)
@@ -169,7 +171,7 @@ object typingsSharedMod {
   
   type ReactButtonAttr[T] = ButtonHTMLAttributes[T]
   
-  type ReactCreateElementParam = /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<carbon-components-react.anon.FnCall>[0] */ js.Any
+  type ReactComponentConstructor[P] = (js.Function1[/* props */ P, FCReturn]) | (Instantiable1[/* props */ P, Component[Any, Any, Any]])
   
   type ReactDivAttr = ReactAttr[HTMLDivElement]
   

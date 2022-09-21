@@ -10,10 +10,10 @@ object signalWifi2BarLockMod {
   
   @JSImport("material-ui/svg-icons/device/signal-wifi-2-bar-lock", JSImport.Default)
   @js.native
-  class default () extends DeviceSignalWifi2BarLock
+  open class default () extends DeviceSignalWifi2BarLock
   
   @JSImport("material-ui/svg-icons/device/signal-wifi-2-bar-lock", "DeviceSignalWifi2BarLock")
   @js.native
-  class DeviceSignalWifi2BarLock ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceSignalWifi2BarLock ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

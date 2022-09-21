@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListInstancesRequest extends StObject {
   
   /**
-    * The maximimum number of results to return per page.
+    * The maximum number of results to return per page.
     */
   var MaxResults: js.UndefOr[MaxResult10] = js.undefined
   

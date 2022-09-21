@@ -20,7 +20,7 @@ trait WebUIRestrictedLaunchActivatedEventArgs extends StObject {
   var previousExecutionState: ApplicationExecutionState
   
   /** Gets information about a shared context for the restricted launch. */
-  var sharedContext: js.Any
+  var sharedContext: Any
   
   /** Gets the splash screen object that provides information about the transition from the splash screen to the activated app. */
   var splashScreen: SplashScreen
@@ -31,7 +31,7 @@ object WebUIRestrictedLaunchActivatedEventArgs {
     activatedOperation: ActivatedOperation,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
-    sharedContext: js.Any,
+    sharedContext: Any,
     splashScreen: SplashScreen
   ): WebUIRestrictedLaunchActivatedEventArgs = {
     val __obj = js.Dynamic.literal(activatedOperation = activatedOperation.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], sharedContext = sharedContext.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
@@ -46,7 +46,7 @@ object WebUIRestrictedLaunchActivatedEventArgs {
     
     inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    inline def setSharedContext(value: js.Any): Self = StObject.set(x, "sharedContext", value.asInstanceOf[js.Any])
+    inline def setSharedContext(value: Any): Self = StObject.set(x, "sharedContext", value.asInstanceOf[js.Any])
     
     inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }

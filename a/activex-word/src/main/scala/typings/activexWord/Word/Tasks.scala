@@ -16,9 +16,9 @@ trait Tasks extends StObject {
   
   def ExitWindows(): Unit
   
-  def Item(Index: js.Any): Task
+  def Item(Index: Any): Task
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.Tasks_typekey")
   var WordDotTasks_typekey: Tasks
@@ -31,8 +31,8 @@ object Tasks {
     Creator: Double,
     Exists: String => Boolean,
     ExitWindows: () => Unit,
-    Item: js.Any => Task,
-    Parent: js.Any,
+    Item: Any => Task,
+    Parent: Any,
     WordDotTasks_typekey: Tasks
   ): Tasks = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Exists = js.Any.fromFunction1(Exists), ExitWindows = js.Any.fromFunction0(ExitWindows), Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -52,9 +52,9 @@ object Tasks {
     
     inline def setExitWindows(value: () => Unit): Self = StObject.set(x, "ExitWindows", js.Any.fromFunction0(value))
     
-    inline def setItem(value: js.Any => Task): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Task): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotTasks_typekey(value: Tasks): Self = StObject.set(x, "Word.Tasks_typekey", value.asInstanceOf[js.Any])
   }

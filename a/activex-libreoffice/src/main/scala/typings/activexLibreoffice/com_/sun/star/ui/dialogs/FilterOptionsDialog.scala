@@ -36,7 +36,7 @@ object FilterOptionsDialog {
     acquire: () => Unit,
     execute: () => Double,
     getPropertyValues: () => SafeArray[PropertyValue],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setPropertyValues: SeqEquiv[PropertyValue] => Unit,
     setTitle: String => Unit

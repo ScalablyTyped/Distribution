@@ -8,5 +8,5 @@ object getKeyRotationStatusOutputMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/GetKeyRotationStatusOutput", "GetKeyRotationStatusOutput")
   @js.native
-  val GetKeyRotationStatusOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetKeyRotationStatusOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

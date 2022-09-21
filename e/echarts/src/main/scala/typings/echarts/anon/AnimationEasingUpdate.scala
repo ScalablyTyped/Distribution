@@ -12,7 +12,7 @@ trait AnimationEasingUpdate extends StObject {
     *
     * @default
     * "true"
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.animation
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animation
     */
   var animation: js.UndefOr[Boolean] = js.undefined
   
@@ -23,14 +23,14 @@ trait AnimationEasingUpdate extends StObject {
     *
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markLine)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint)
     *
     * See
     * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.animationDelay
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animationDelay
     */
   var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
   
@@ -40,14 +40,16 @@ trait AnimationEasingUpdate extends StObject {
     *
     * For example:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markLine)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint)
     *
     * See
     * [this example](https://echarts.apache.org/examples/en/editor.html?c=bar-animation-delay)
     * for more information.
     *
+    * prefix
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.animationDelayUpdate
+    *
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animationDelayUpdate
     */
   var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
   
@@ -55,12 +57,12 @@ trait AnimationEasingUpdate extends StObject {
     * Duration of the first animation, which supports callback
     * function for different data to have different animation effect:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markLine)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint)
     *
     *
     * @default
     * 1000
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.animationDuration
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animationDuration
     */
   var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
   
@@ -68,12 +70,12 @@ trait AnimationEasingUpdate extends StObject {
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markLine)
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint)
     *
     *
     * @default
     * 300
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.animationDurationUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animationDurationUpdate
     */
   var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
   
@@ -86,7 +88,7 @@ trait AnimationEasingUpdate extends StObject {
     *
     * @default
     * "cubicOut"
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.animationEasing
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animationEasing
     */
   var animationEasing: js.UndefOr[String] = js.undefined
   
@@ -96,7 +98,7 @@ trait AnimationEasingUpdate extends StObject {
     *
     * @default
     * "cubicOut"
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.animationEasingUpdate
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animationEasingUpdate
     */
   var animationEasingUpdate: js.UndefOr[String] = js.undefined
   
@@ -108,60 +110,47 @@ trait AnimationEasingUpdate extends StObject {
     *
     * @default
     * 2000
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.animationThreshold
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.animationThreshold
     */
   var animationThreshold: js.UndefOr[Double] = js.undefined
   
   /**
-    * Data array of marking line.
-    * Every array item can be an array of one or two values, representing
-    * starting and ending point of the line, and every item is
-    * an object.
-    * Here are several ways to assign the positions of starting
-    * and ending point.
+    * Data array for mark points, each of which is an object.
+    * Here are some ways to assign mark point position.
     *
     * 1. Assign coordinate according to container with
-    * [x](https://echarts.apache.org/en/option.html#series-pie.markLine.data.0.x)
+    * [x](https://echarts.apache.org/en/option.html#series-pie.markPoint.data.x)
     * ,
-    * [y](https://echarts.apache.org/en/option.html#series-pie.markLine.data.0.y)
+    * [y](https://echarts.apache.org/en/option.html#series-pie.markPoint.data.y)
     * attribute, in which pixel values and percentage are supported.
     *
     * When multiple attributes exist, priority is as the above
     * order.
     *
-    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markLine)
+    * **For example:**
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.data
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.data
     */
-  var data: js.UndefOr[`5`] = js.undefined
+  var data: js.UndefOr[SymbolOffset] = js.undefined
   
   /**
-    * Mark line text.
+    * Mark point style.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.label
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.itemStyle
     */
-  var label: js.UndefOr[Position] = js.undefined
+  var itemStyle: js.UndefOr[Emphasis] = js.undefined
   
   /**
-    * Mark line style.
+    * Label of mark point.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.lineStyle
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.label
     */
-  var lineStyle: js.UndefOr[Curveness] = js.undefined
-  
-  /**
-    * Precison of marking line value, which is useful when displaying
-    * average value mark line.
-    *
-    *
-    * @default
-    * 2
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.precision
-    */
-  var precision: js.UndefOr[Double] = js.undefined
+  var label: js.UndefOr[BorderWidth] = js.undefined
   
   /**
     * Whether to ignore mouse events.
@@ -169,33 +158,121 @@ trait AnimationEasingUpdate extends StObject {
     * mouse events.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.silent
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.silent
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Symbol type at the two ends of the mark line.
-    * It can be an array for two ends, or assigned seperately.
-    * See
-    * [data.symbol](https://echarts.apache.org/en/option.html#series-pie.markLine.data.0.symbol)
-    * for more format information.
+    * Symbol of .
+    *
+    * Icon types provided by ECharts includes `'circle'`, `'rect'`,
+    * `'roundRect'`, `'triangle'`, `'diamond'`, `'pin'`, `'arrow'`,
+    * `'none'`
+    *
+    * It can be set to an image with `'image://url'` , in which
+    * URL is the link to an image, or `dataURI` of an image.
+    *
+    * An image URL example:
+    *
+    * ```
+    * 'image://http://xxx.xxx.xxx/a/b.png'
+    *
+    * ```
+    *
+    * A `dataURI` example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint)
+    *
+    * Icons can be set to arbitrary vector path via `'path://'`
+    * in ECharts.
+    * As compared with raster image, vector paths prevent from
+    * jagging and blurring when scaled, and have a better control
+    * over changing colors.
+    * Size of vectoer icon will be adapted automatically.
+    * Refer to
+    * [SVG PathData](http://www.w3.org/TR/SVG/paths.html#PathData)
+    * for more information about format of path.
+    * You may export vector paths from tools like Adobe Illustrator.
+    *
+    * For example:
+    *
+    * [see doc](https://echarts.apache.org/en/option.html#series-pie.pie.markPoint)
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.symbol
+    * @default
+    * "pin"
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.symbol
     */
-  var symbol: js.UndefOr[js.Array[js.Any] | String] = js.undefined
+  var symbol: js.UndefOr[String] = js.undefined
   
   /**
-    * Symbol size at the two ends of the mark line.
-    * It can be an array for two ends, or assigned seperately.
-    *
-    * **Attention:** You cannot assgin width and height seperately
-    * as normal `symbolSize`.
+    * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
-    * @see https://echarts.apache.org/en/option.html#series-pie.markLine.symbolSize
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.symbolKeepAspect
     */
-  var symbolSize: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+  var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Offset of symbol relative to original position.
+    * By default, symbol will be put in the center position of
+    * data.
+    * But if symbol is from user-defined vector path or image,
+    * you may not expect symbol to be in center.
+    * In this case, you may use this attribute to set offset to
+    * default position.
+    * It can be in absolute pixel value, or in relative percentage
+    * value.
+    *
+    * For example, `[0, '50%']` means to move upside side position
+    * of symbol height.
+    * It can be used to make the arrow in the bottom to be at data
+    * position when symbol is pin.
+    *
+    *
+    * @default
+    * [0, 0]
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.symbolOffset
+    */
+  var symbolOffset: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  /**
+    * Rotate degree of symbol.
+    * Note that when `symbol` is set to be `'arrow'` in `markLine`,
+    * `symbolRotate` value will be ignored, and compulsively use
+    * tangent angle.
+    *
+    *
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.symbolRotate
+    */
+  var symbolRotate: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * symbol size.
+    * It can be set to single numbers like `10`, or use an array
+    * to represent width and height.
+    * For example, `[20, 10]` means symbol width is `20`, and height
+    * is`10`.
+    *
+    * If size of symbols needs to be different, you can set with
+    * callback function in the following format:
+    *
+    * ```
+    * (value: Array|number, params: Object) => number|Array
+    *
+    * ```
+    *
+    * The first parameter `value` is the value in
+    * [data](https://echarts.apache.org/en/option.html#series-.data)
+    * , and the second parameter `params` is the rest parameters
+    * of data item.
+    *
+    *
+    * @default
+    * 50
+    * @see https://echarts.apache.org/en/option.html#series-pie.markPoint.symbolSize
+    */
+  var symbolSize: js.UndefOr[js.Array[Any] | js.Function | Double] = js.undefined
 }
 object AnimationEasingUpdate {
   
@@ -238,36 +315,44 @@ object AnimationEasingUpdate {
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setData(value: `5`): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: SymbolOffset): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setLabel(value: Position): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: Emphasis): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    
+    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    
+    inline def setLabel(value: BorderWidth): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
-    
-    inline def setLineStyle(value: Curveness): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
-    
-    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
-    
-    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
-    
-    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
     inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    inline def setSymbol(value: js.Array[js.Any] | String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+    inline def setSymbolKeepAspect(value: Boolean): Self = StObject.set(x, "symbolKeepAspect", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
+    
+    inline def setSymbolOffset(value: js.Array[Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
+    
+    inline def setSymbolOffsetVarargs(value: Any*): Self = StObject.set(x, "symbolOffset", js.Array(value*))
+    
+    inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
+    
+    inline def setSymbolSize(value: js.Array[Any] | js.Function | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
     
     inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
     
-    inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+    inline def setSymbolSizeVarargs(value: Any*): Self = StObject.set(x, "symbolSize", js.Array(value*))
     
     inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
-    
-    inline def setSymbolVarargs(value: js.Any*): Self = StObject.set(x, "symbol", js.Array(value :_*))
   }
 }

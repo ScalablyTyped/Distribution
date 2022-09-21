@@ -3,16 +3,27 @@ package typings.expressSlowDown
 import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: Options): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("express-slow-down", JSImport.Namespace)
   @js.native
@@ -36,13 +47,25 @@ object mod {
     var delayMs: js.UndefOr[Double] = js.undefined
     
     /**
+      * Add `X-SlowDown-Limit`, `X-SlowDown-Remaining`, and if the store supports it,
+      * `X-SlowDown-Reset` headers to all responses.
+      */
+    var headers: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Function used to generate keys. By default user IP address (`req.ip`) is used.
       * Default: `(req, res) => req.ip`
       */
     var keyGenerator: js.UndefOr[
         js.Function2[
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-          /* res */ Response_[js.Any], 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          /* res */ Response_[Any, Record[String, Any]], 
           String
         ]
       ] = js.undefined
@@ -61,7 +84,7 @@ object mod {
     var onLimitReached: js.UndefOr[
         js.Function3[
           /* req */ RequestWithSlowDown, 
-          /* res */ Response_[js.Any], 
+          /* res */ Response_[Any, Record[String, Any]], 
           /* optionsUsed */ this.type, 
           Unit
         ]
@@ -73,8 +96,14 @@ object mod {
       */
     var skip: js.UndefOr[
         js.Function2[
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-          /* res */ Response_[js.Any], 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          /* res */ Response_[Any, Record[String, Any]], 
           Boolean
         ]
       ] = js.undefined
@@ -116,8 +145,18 @@ object mod {
       
       inline def setDelayMsUndefined: Self = StObject.set(x, "delayMs", js.undefined)
       
+      inline def setHeaders(value: Boolean): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
       inline def setKeyGenerator(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => String
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]]) => String
       ): Self = StObject.set(x, "keyGenerator", js.Any.fromFunction2(value))
       
       inline def setKeyGeneratorUndefined: Self = StObject.set(x, "keyGenerator", js.undefined)
@@ -126,12 +165,20 @@ object mod {
       
       inline def setMaxDelayMsUndefined: Self = StObject.set(x, "maxDelayMs", js.undefined)
       
-      inline def setOnLimitReached(value: (/* req */ RequestWithSlowDown, /* res */ Response_[js.Any], Options) => Unit): Self = StObject.set(x, "onLimitReached", js.Any.fromFunction3(value))
+      inline def setOnLimitReached(
+        value: (/* req */ RequestWithSlowDown, /* res */ Response_[Any, Record[String, Any]], Options) => Unit
+      ): Self = StObject.set(x, "onLimitReached", js.Any.fromFunction3(value))
       
       inline def setOnLimitReachedUndefined: Self = StObject.set(x, "onLimitReached", js.undefined)
       
       inline def setSkip(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]]) => Boolean
       ): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
       
       inline def setSkipFailedRequests(value: Boolean): Self = StObject.set(x, "skipFailedRequests", value.asInstanceOf[js.Any])
@@ -159,7 +206,8 @@ object mod {
     */
   @js.native
   trait RequestWithSlowDown
-    extends Request[ParamsDictionary, js.Any, js.Any, Query] {
+    extends StObject
+       with Request {
     
     var slowDown: SlowDownRequestAugmentation = js.native
   }

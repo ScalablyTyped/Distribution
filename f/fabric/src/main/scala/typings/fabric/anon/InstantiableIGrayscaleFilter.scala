@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstantiableIGrayscaleFilter
   extends StObject
      with Instantiable0[IGrayscaleFilter]
-     with Instantiable1[/* options */ js.Any, IGrayscaleFilter] {
+     with Instantiable1[/* options */ Any, IGrayscaleFilter] {
   
   /**
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
-  def fromObject(`object`: js.Any): IGrayscaleFilter = js.native
+  def fromObject(`object`: Any): IGrayscaleFilter = js.native
 }

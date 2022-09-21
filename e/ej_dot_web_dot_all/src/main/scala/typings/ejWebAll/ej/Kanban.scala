@@ -23,24 +23,24 @@ trait Kanban
   
   def columns(columndetails: String, keyvalue: String): Unit = js.native
   def columns(columndetails: String, keyvalue: String, action: String): Unit = js.native
-  def columns(columndetails: String, keyvalue: js.Array[js.Any]): Unit = js.native
-  def columns(columndetails: String, keyvalue: js.Array[js.Any], action: String): Unit = js.native
-  def columns(columndetails: js.Array[js.Any], keyvalue: String): Unit = js.native
-  def columns(columndetails: js.Array[js.Any], keyvalue: String, action: String): Unit = js.native
+  def columns(columndetails: String, keyvalue: js.Array[Any]): Unit = js.native
+  def columns(columndetails: String, keyvalue: js.Array[Any], action: String): Unit = js.native
+  def columns(columndetails: js.Array[Any], keyvalue: String): Unit = js.native
+  def columns(columndetails: js.Array[Any], keyvalue: String, action: String): Unit = js.native
   /** Add or remove columns in Kanban columns collections.Default action is add.
     * @param {any[]|string} Pass array of columns or string of headerText to add/remove the column in Kanban
     * @param {any[]|string} Pass array of columns or string of key value to add/remove the column in Kanban
     * @param {string} optional Pass add/remove action to be performed. By default "add" action will perform
     * @returns {void}
     */
-  def columns(columndetails: js.Array[js.Any], keyvalue: js.Array[js.Any]): Unit = js.native
-  def columns(columndetails: js.Array[js.Any], keyvalue: js.Array[js.Any], action: String): Unit = js.native
+  def columns(columndetails: js.Array[Any], keyvalue: js.Array[Any]): Unit = js.native
+  def columns(columndetails: js.Array[Any], keyvalue: js.Array[Any], action: String): Unit = js.native
   
   /** Refresh the Kanban with new data source.
     * @param {any[]} Pass new data source to the Kanban
     * @returns {void}
     */
-  def dataSource(datasource: js.Array[js.Any]): Unit = js.native
+  def dataSource(datasource: js.Array[Any]): Unit = js.native
   
   var defaults: Model = js.native
   
@@ -63,14 +63,14 @@ trait Kanban
   /** Used for get the names of all the visible column name collections in Kanban.
     * @returns {any[]}
     */
-  def getVisibleColumnNames(): js.Array[js.Any] = js.native
+  def getVisibleColumnNames(): js.Array[Any] = js.native
   
   def hideColumns(headerText: String): Unit = js.native
   /** Hide columns from the Kanban based on the header text
     * @param {any[]|string} you can pass either array of header text of various columns or a header text of a column to hide
     * @returns {void}
     */
-  def hideColumns(headerText: js.Array[js.Any]): Unit = js.native
+  def hideColumns(headerText: js.Array[Any]): Unit = js.native
   
   @JSName("model")
   var model_Kanban: Model = js.native
@@ -97,7 +97,7 @@ trait Kanban
     * @param {any[]|string} You can pass either array of header text of various columns or a header text of a column to show
     * @returns {void}
     */
-  def showColumns(headerText: js.Array[js.Any]): Unit = js.native
+  def showColumns(headerText: js.Array[Any]): Unit = js.native
   
   /** Expand or collapse the card based on the state of target &quot;div&quot;
     * @param {string|number} Pass the id of card to be toggle
@@ -110,14 +110,14 @@ trait Kanban
     * @param {any} Pass the header text of the column to get the corresponding column object
     * @returns {void}
     */
-  def toggleColumn(headerText: js.Any): Unit = js.native
+  def toggleColumn(headerText: Any): Unit = js.native
   
   /** Update a card in Kanban control based on key and JSON data given.
     * @param {string} Pass the key field Name of the column
     * @param {any[]} Pass the edited JSON data of card need to be update.
     * @returns {void}
     */
-  def updateCard(key: String, data: js.Array[js.Any]): Unit = js.native
+  def updateCard(key: String, data: js.Array[Any]): Unit = js.native
 }
 object Kanban {
   
@@ -278,19 +278,19 @@ object Kanban {
     
     /** Returns current filtering object field name.
       */
-    var currentFilteringobject: js.UndefOr[js.Any] = js.undefined
+    var currentFilteringobject: js.UndefOr[Any] = js.undefined
     
     /** Returns the card object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns filter details.
       */
-    var filterCollection: js.UndefOr[js.Any] = js.undefined
+    var filterCollection: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the current action event type.
       */
@@ -325,19 +325,19 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentFilteringobject(value: js.Any): Self = StObject.set(x, "currentFilteringobject", value.asInstanceOf[js.Any])
+      inline def setCurrentFilteringobject(value: Any): Self = StObject.set(x, "currentFilteringobject", value.asInstanceOf[js.Any])
       
       inline def setCurrentFilteringobjectUndefined: Self = StObject.set(x, "currentFilteringobject", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setFilterCollection(value: js.Any): Self = StObject.set(x, "filterCollection", value.asInstanceOf[js.Any])
+      inline def setFilterCollection(value: Any): Self = StObject.set(x, "filterCollection", value.asInstanceOf[js.Any])
       
       inline def setFilterCollectionUndefined: Self = StObject.set(x, "filterCollection", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -375,15 +375,15 @@ object Kanban {
     
     /** Returns the card object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns filter details.
       */
-    var filterCollection: js.UndefOr[js.Any] = js.undefined
+    var filterCollection: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns current action event type.
       */
@@ -407,7 +407,7 @@ object Kanban {
     
     /** Returns Kanban element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -430,15 +430,15 @@ object Kanban {
       
       inline def setCurrentFilteringColumnUndefined: Self = StObject.set(x, "currentFilteringColumn", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setFilterCollection(value: js.Any): Self = StObject.set(x, "filterCollection", value.asInstanceOf[js.Any])
+      inline def setFilterCollection(value: Any): Self = StObject.set(x, "filterCollection", value.asInstanceOf[js.Any])
       
       inline def setFilterCollectionUndefined: Self = StObject.set(x, "filterCollection", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -462,7 +462,7 @@ object Kanban {
       
       inline def setSelectedRowUndefined: Self = StObject.set(x, "selectedRow", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -484,19 +484,19 @@ object Kanban {
     
     /** Returns the card object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the error return by server.
       */
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
     /** Returns filter details.
       */
-    var filterCollection: js.UndefOr[js.Any] = js.undefined
+    var filterCollection: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns current action event type.
       */
@@ -512,7 +512,7 @@ object Kanban {
     
     /** Returns Kanban element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -535,19 +535,19 @@ object Kanban {
       
       inline def setCurrentFilteringColumnUndefined: Self = StObject.set(x, "currentFilteringColumn", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setFilterCollection(value: js.Any): Self = StObject.set(x, "filterCollection", value.asInstanceOf[js.Any])
+      inline def setFilterCollection(value: Any): Self = StObject.set(x, "filterCollection", value.asInstanceOf[js.Any])
       
       inline def setFilterCollectionUndefined: Self = StObject.set(x, "filterCollection", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -563,7 +563,7 @@ object Kanban {
       
       inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -577,7 +577,7 @@ object Kanban {
     
     /** Returns the Target item.
       */
-    var Target: js.UndefOr[js.Any] = js.undefined
+    var Target: js.UndefOr[Any] = js.undefined
     
     /** Returns the cancel option value.
       */
@@ -593,23 +593,23 @@ object Kanban {
     
     /** Returns the select cell element
       */
-    var currentCell: js.UndefOr[js.Any] = js.undefined
+    var currentCell: js.UndefOr[Any] = js.undefined
     
     /** Returns select card data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously select the card element
       */
-    var previousCard: js.UndefOr[js.Any] = js.undefined
+    var previousCard: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously select card indexes
       */
-    var previousRowcellindex: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var previousRowcellindex: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -636,29 +636,29 @@ object Kanban {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setCurrentCell(value: js.Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
+      inline def setCurrentCell(value: Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
       
       inline def setCurrentCellUndefined: Self = StObject.set(x, "currentCell", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPreviousCard(value: js.Any): Self = StObject.set(x, "previousCard", value.asInstanceOf[js.Any])
+      inline def setPreviousCard(value: Any): Self = StObject.set(x, "previousCard", value.asInstanceOf[js.Any])
       
       inline def setPreviousCardUndefined: Self = StObject.set(x, "previousCard", js.undefined)
       
-      inline def setPreviousRowcellindex(value: js.Array[js.Any]): Self = StObject.set(x, "previousRowcellindex", value.asInstanceOf[js.Any])
+      inline def setPreviousRowcellindex(value: js.Array[Any]): Self = StObject.set(x, "previousRowcellindex", value.asInstanceOf[js.Any])
       
       inline def setPreviousRowcellindexUndefined: Self = StObject.set(x, "previousRowcellindex", js.undefined)
       
-      inline def setPreviousRowcellindexVarargs(value: js.Any*): Self = StObject.set(x, "previousRowcellindex", js.Array(value :_*))
+      inline def setPreviousRowcellindexVarargs(value: Any*): Self = StObject.set(x, "previousRowcellindex", js.Array(value*))
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
       
@@ -676,11 +676,11 @@ object Kanban {
     
     /** Returns begin edit data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns primary key value.
       */
@@ -703,11 +703,11 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -737,15 +737,15 @@ object Kanban {
     
     /** Returns current record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns Kanban element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -772,15 +772,15 @@ object Kanban {
       
       inline def setCurrentCardUndefined: Self = StObject.set(x, "currentCard", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -798,11 +798,11 @@ object Kanban {
     
     /** Returns current card object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -821,11 +821,11 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -843,19 +843,19 @@ object Kanban {
     
     /** Returns drag data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns dragged element.
       */
-    var draggedElement: js.UndefOr[js.Any] = js.undefined
+    var draggedElement: js.UndefOr[Any] = js.undefined
     
     /** Returns drag start element.
       */
-    var dragtarget: js.UndefOr[js.Any] = js.undefined
+    var dragtarget: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -874,19 +874,19 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDraggedElement(value: js.Any): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
+      inline def setDraggedElement(value: Any): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
       
       inline def setDraggedElementUndefined: Self = StObject.set(x, "draggedElement", js.undefined)
       
-      inline def setDragtarget(value: js.Any): Self = StObject.set(x, "dragtarget", value.asInstanceOf[js.Any])
+      inline def setDragtarget(value: Any): Self = StObject.set(x, "dragtarget", value.asInstanceOf[js.Any])
       
       inline def setDragtargetUndefined: Self = StObject.set(x, "dragtarget", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -904,19 +904,19 @@ object Kanban {
     
     /** Returns card drag start data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns dragged element.
       */
-    var draggedElement: js.UndefOr[js.Any] = js.undefined
+    var draggedElement: js.UndefOr[Any] = js.undefined
     
     /** Returns drag start element.
       */
-    var dragtarget: js.UndefOr[js.Any] = js.undefined
+    var dragtarget: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -935,19 +935,19 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDraggedElement(value: js.Any): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
+      inline def setDraggedElement(value: Any): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
       
       inline def setDraggedElementUndefined: Self = StObject.set(x, "draggedElement", js.undefined)
       
-      inline def setDragtarget(value: js.Any): Self = StObject.set(x, "dragtarget", value.asInstanceOf[js.Any])
+      inline def setDragtarget(value: Any): Self = StObject.set(x, "dragtarget", value.asInstanceOf[js.Any])
       
       inline def setDragtargetUndefined: Self = StObject.set(x, "dragtarget", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -965,19 +965,19 @@ object Kanban {
     
     /** Returns drag stop data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns dragged element.
       */
-    var draggedElement: js.UndefOr[js.Any] = js.undefined
+    var draggedElement: js.UndefOr[Any] = js.undefined
     
     /** Returns drag stop element.
       */
-    var droptarget: js.UndefOr[js.Any] = js.undefined
+    var droptarget: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -996,19 +996,19 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDraggedElement(value: js.Any): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
+      inline def setDraggedElement(value: Any): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
       
       inline def setDraggedElementUndefined: Self = StObject.set(x, "draggedElement", js.undefined)
       
-      inline def setDroptarget(value: js.Any): Self = StObject.set(x, "droptarget", value.asInstanceOf[js.Any])
+      inline def setDroptarget(value: Any): Self = StObject.set(x, "droptarget", value.asInstanceOf[js.Any])
       
       inline def setDroptargetUndefined: Self = StObject.set(x, "droptarget", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1026,23 +1026,23 @@ object Kanban {
     
     /** Returns dragged data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns dragged element.
       */
-    var draggedElement: js.UndefOr[js.Any] = js.undefined
+    var draggedElement: js.UndefOr[Any] = js.undefined
     
     /** Returns previous parent of dragged element
       */
-    var draggedParent: js.UndefOr[js.Any] = js.undefined
+    var draggedParent: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns drop element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1061,23 +1061,23 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDraggedElement(value: js.Any): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
+      inline def setDraggedElement(value: Any): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
       
       inline def setDraggedElementUndefined: Self = StObject.set(x, "draggedElement", js.undefined)
       
-      inline def setDraggedParent(value: js.Any): Self = StObject.set(x, "draggedParent", value.asInstanceOf[js.Any])
+      inline def setDraggedParent(value: Any): Self = StObject.set(x, "draggedParent", value.asInstanceOf[js.Any])
       
       inline def setDraggedParentUndefined: Self = StObject.set(x, "draggedParent", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -1103,27 +1103,27 @@ object Kanban {
     
     /** Returns the select cell element
       */
-    var currentCell: js.UndefOr[js.Any] = js.undefined
+    var currentCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** Returns select card data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously select the card element
       */
-    var previousCard: js.UndefOr[js.Any] = js.undefined
+    var previousCard: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously select card indexes
       */
-    var previousRowcellindex: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var previousRowcellindex: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1150,31 +1150,31 @@ object Kanban {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setCurrentCell(value: js.Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
+      inline def setCurrentCell(value: Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
       
       inline def setCurrentCellUndefined: Self = StObject.set(x, "currentCell", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPreviousCard(value: js.Any): Self = StObject.set(x, "previousCard", value.asInstanceOf[js.Any])
+      inline def setPreviousCard(value: Any): Self = StObject.set(x, "previousCard", value.asInstanceOf[js.Any])
       
       inline def setPreviousCardUndefined: Self = StObject.set(x, "previousCard", js.undefined)
       
-      inline def setPreviousRowcellindex(value: js.Array[js.Any]): Self = StObject.set(x, "previousRowcellindex", value.asInstanceOf[js.Any])
+      inline def setPreviousRowcellindex(value: js.Array[Any]): Self = StObject.set(x, "previousRowcellindex", value.asInstanceOf[js.Any])
       
       inline def setPreviousRowcellindexUndefined: Self = StObject.set(x, "previousRowcellindex", js.undefined)
       
-      inline def setPreviousRowcellindexVarargs(value: js.Any*): Self = StObject.set(x, "previousRowcellindex", js.Array(value :_*))
+      inline def setPreviousRowcellindexVarargs(value: Any*): Self = StObject.set(x, "previousRowcellindex", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -1198,27 +1198,27 @@ object Kanban {
     
     /** Returns the selecting cell element
       */
-    var currentCell: js.UndefOr[js.Any] = js.undefined
+    var currentCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** Returns added data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously selecting the card element
       */
-    var previousCard: js.UndefOr[js.Any] = js.undefined
+    var previousCard: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously rowcell is selecting card indexes
       */
-    var previousRowcellindex: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var previousRowcellindex: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1245,31 +1245,31 @@ object Kanban {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setCurrentCell(value: js.Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
+      inline def setCurrentCell(value: Any): Self = StObject.set(x, "currentCell", value.asInstanceOf[js.Any])
       
       inline def setCurrentCellUndefined: Self = StObject.set(x, "currentCell", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPreviousCard(value: js.Any): Self = StObject.set(x, "previousCard", value.asInstanceOf[js.Any])
+      inline def setPreviousCard(value: Any): Self = StObject.set(x, "previousCard", value.asInstanceOf[js.Any])
       
       inline def setPreviousCardUndefined: Self = StObject.set(x, "previousCard", js.undefined)
       
-      inline def setPreviousRowcellindex(value: js.Array[js.Any]): Self = StObject.set(x, "previousRowcellindex", value.asInstanceOf[js.Any])
+      inline def setPreviousRowcellindex(value: js.Array[Any]): Self = StObject.set(x, "previousRowcellindex", value.asInstanceOf[js.Any])
       
       inline def setPreviousRowcellindexUndefined: Self = StObject.set(x, "previousRowcellindex", js.undefined)
       
-      inline def setPreviousRowcellindexVarargs(value: js.Any*): Self = StObject.set(x, "previousRowcellindex", js.Array(value :_*))
+      inline def setPreviousRowcellindexVarargs(value: Any*): Self = StObject.set(x, "previousRowcellindex", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -1282,7 +1282,7 @@ object Kanban {
     /** To customize the card border color based on assigned task. Colors and corresponding values defined here will be mapped with colorField mapped data source column.
       * @Default {Object}
       */
-    var colorMapping: js.UndefOr[js.Any] = js.undefined
+    var colorMapping: js.UndefOr[Any] = js.undefined
     
     /** This specifies the Kanban card to drop into particular target element.
       */
@@ -1302,7 +1302,7 @@ object Kanban {
     
     extension [Self <: CardSettings](x: Self) {
       
-      inline def setColorMapping(value: js.Any): Self = StObject.set(x, "colorMapping", value.asInstanceOf[js.Any])
+      inline def setColorMapping(value: Any): Self = StObject.set(x, "colorMapping", value.asInstanceOf[js.Any])
       
       inline def setColorMappingUndefined: Self = StObject.set(x, "colorMapping", js.undefined)
       
@@ -1328,7 +1328,7 @@ object Kanban {
     
     /** Returns the kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the edited row index.
       */
@@ -1355,7 +1355,7 @@ object Kanban {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1551,11 +1551,11 @@ object Kanban {
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the status of contextmenu item which denotes its enabled state.
       */
@@ -1563,7 +1563,7 @@ object Kanban {
     
     /** Returns the target item.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1582,11 +1582,11 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1594,7 +1594,7 @@ object Kanban {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -1614,7 +1614,7 @@ object Kanban {
     /** Gets or sets a value that indicates the list of items needs to be disable from default context menu items.
       * @Default {Array}
       */
-    var disableDefaultItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var disableDefaultItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** To enable context menu.All default context menu will show.
       * @Default {false}
@@ -1624,7 +1624,7 @@ object Kanban {
     /** Its used to add specific default context menu items.
       * @Default {Array}
       */
-    var menuItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var menuItems: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object ContextMenuSettings {
     
@@ -1639,23 +1639,23 @@ object Kanban {
       
       inline def setCustomMenuItemsUndefined: Self = StObject.set(x, "customMenuItems", js.undefined)
       
-      inline def setCustomMenuItemsVarargs(value: ContextMenuSettingsCustomMenuItem*): Self = StObject.set(x, "customMenuItems", js.Array(value :_*))
+      inline def setCustomMenuItemsVarargs(value: ContextMenuSettingsCustomMenuItem*): Self = StObject.set(x, "customMenuItems", js.Array(value*))
       
-      inline def setDisableDefaultItems(value: js.Array[js.Any]): Self = StObject.set(x, "disableDefaultItems", value.asInstanceOf[js.Any])
+      inline def setDisableDefaultItems(value: js.Array[Any]): Self = StObject.set(x, "disableDefaultItems", value.asInstanceOf[js.Any])
       
       inline def setDisableDefaultItemsUndefined: Self = StObject.set(x, "disableDefaultItems", js.undefined)
       
-      inline def setDisableDefaultItemsVarargs(value: js.Any*): Self = StObject.set(x, "disableDefaultItems", js.Array(value :_*))
+      inline def setDisableDefaultItemsVarargs(value: Any*): Self = StObject.set(x, "disableDefaultItems", js.Array(value*))
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
       inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      inline def setMenuItems(value: js.Array[js.Any]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
+      inline def setMenuItems(value: js.Array[Any]): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
       
       inline def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
       
-      inline def setMenuItemsVarargs(value: js.Any*): Self = StObject.set(x, "menuItems", js.Array(value :_*))
+      inline def setMenuItemsVarargs(value: Any*): Self = StObject.set(x, "menuItems", js.Array(value*))
     }
   }
   
@@ -1707,11 +1707,11 @@ object Kanban {
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the status of contextmenu item which denotes its enabled state.
       */
@@ -1719,7 +1719,7 @@ object Kanban {
     
     /** Returns the target item.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1738,11 +1738,11 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1750,7 +1750,7 @@ object Kanban {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -1768,7 +1768,7 @@ object Kanban {
     
     /** Returns the kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1787,7 +1787,7 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1827,7 +1827,7 @@ object Kanban {
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1846,7 +1846,7 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1860,11 +1860,11 @@ object Kanban {
     
     /** Returns deleted data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -1879,11 +1879,11 @@ object Kanban {
     
     extension [Self <: DestroyEventArgs](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1955,7 +1955,7 @@ object Kanban {
       
       inline def setEditItemsUndefined: Self = StObject.set(x, "editItems", js.undefined)
       
-      inline def setEditItemsVarargs(value: EditSettingsEditItem*): Self = StObject.set(x, "editItems", js.Array(value :_*))
+      inline def setEditItemsVarargs(value: EditSettingsEditItem*): Self = StObject.set(x, "editItems", js.Array(value*))
       
       inline def setEditMode(value: EditMode | String): Self = StObject.set(x, "editMode", value.asInstanceOf[js.Any])
       
@@ -1981,7 +1981,7 @@ object Kanban {
     /** It is used to set the particular editparams in the card for editing.
       * @Default {Object}
       */
-    var editParams: js.UndefOr[js.Any] = js.undefined
+    var editParams: js.UndefOr[Any] = js.undefined
     
     /** It is used to set the particular editType in the card for editing.
       * @Default {ej.Kanban.EditingType.String}
@@ -1996,7 +1996,7 @@ object Kanban {
     /** Gets or sets a value that indicates to define constraints for saving data to the database.
       * @Default {Object}
       */
-    var validationRules: js.UndefOr[js.Any] = js.undefined
+    var validationRules: js.UndefOr[Any] = js.undefined
   }
   object EditSettingsEditItem {
     
@@ -2011,7 +2011,7 @@ object Kanban {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setEditParams(value: js.Any): Self = StObject.set(x, "editParams", value.asInstanceOf[js.Any])
+      inline def setEditParams(value: Any): Self = StObject.set(x, "editParams", value.asInstanceOf[js.Any])
       
       inline def setEditParamsUndefined: Self = StObject.set(x, "editParams", js.undefined)
       
@@ -2023,7 +2023,7 @@ object Kanban {
       
       inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
       
-      inline def setValidationRules(value: js.Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      inline def setValidationRules(value: Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
       inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
     }
@@ -2041,11 +2041,11 @@ object Kanban {
     
     /** Returns deleted  data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns request type.
       */
@@ -2072,11 +2072,11 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2102,11 +2102,11 @@ object Kanban {
     
     /** Returns modified data.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns request type.
       */
@@ -2133,11 +2133,11 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2286,7 +2286,7 @@ object Kanban {
     /** Gets or sets an object that Queries to perform filtering
       * @Default {Object}
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets an object of display name to filter queries.
       * @Default {null}
@@ -2306,7 +2306,7 @@ object Kanban {
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -2328,11 +2328,11 @@ object Kanban {
     
     /** Returns the column object.
       */
-    var columnData: js.UndefOr[js.Any] = js.undefined
+    var columnData: js.UndefOr[Any] = js.undefined
     
     /** Returns the kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -2355,11 +2355,11 @@ object Kanban {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setColumnData(value: js.Any): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
+      inline def setColumnData(value: Any): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
       
       inline def setColumnDataUndefined: Self = StObject.set(x, "columnData", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2377,7 +2377,7 @@ object Kanban {
       * @param {any[]} Pass the edited JSON data of card need to be add.
       * @returns {void}
       */
-    def addCard(primaryKey: String, card: js.Array[js.Any]): Unit = js.native
+    def addCard(primaryKey: String, card: js.Array[Any]): Unit = js.native
     
     /** Send a cancel request of add/edit card in Kanban when allowEditing/allowAdding is set as true.
       * @returns {void}
@@ -2401,13 +2401,13 @@ object Kanban {
       * @param {any} Specify the validation rules for the field
       * @returns {void}
       */
-    def setValidationToField(name: String, rules: js.Any): Unit = js.native
+    def setValidationToField(name: String, rules: Any): Unit = js.native
     
     /** Send an edit card request in Kanban when allowEditing is set as true. Parameter will be HTML element or primary key
       * @param {any} Pass the div selected row element to be edited in Kanban
       * @returns {void}
       */
-    def startEdit($div: js.Any): Unit = js.native
+    def startEdit($div: Any): Unit = js.native
   }
   
   trait KanbanFilter extends StObject {
@@ -2493,11 +2493,11 @@ object Kanban {
       * @param {any} Pass the div object to toggleSwimlane row based on its row state
       * @returns {void}
       */
-    def toggle($div: js.Any): Unit
+    def toggle($div: Any): Unit
   }
   object KanbanSwimlane {
     
-    inline def apply(collapseAll: () => Unit, expandAll: () => Unit, toggle: js.Any => Unit): KanbanSwimlane = {
+    inline def apply(collapseAll: () => Unit, expandAll: () => Unit, toggle: Any => Unit): KanbanSwimlane = {
       val __obj = js.Dynamic.literal(collapseAll = js.Any.fromFunction0(collapseAll), expandAll = js.Any.fromFunction0(expandAll), toggle = js.Any.fromFunction1(toggle))
       __obj.asInstanceOf[KanbanSwimlane]
     }
@@ -2508,7 +2508,7 @@ object Kanban {
       
       inline def setExpandAll(value: () => Unit): Self = StObject.set(x, "expandAll", js.Any.fromFunction0(value))
       
-      inline def setToggle(value: js.Any => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+      inline def setToggle(value: Any => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
     }
   }
   
@@ -2520,7 +2520,7 @@ object Kanban {
     
     /** Returns the kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -2539,7 +2539,7 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2705,7 +2705,7 @@ object Kanban {
     /** Gets or sets the data to render the Kanban with cards.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Triggered when Kanban going to destroy.
       */
@@ -2766,7 +2766,7 @@ object Kanban {
     /** To change the key in keyboard interaction to Kanban control.
       * @Default {null}
       */
-    var keySettings: js.UndefOr[js.Any] = js.undefined
+    var keySettings: js.UndefOr[Any] = js.undefined
     
     /** Triggered initial load.
       */
@@ -2786,7 +2786,7 @@ object Kanban {
     /** ej Query to query database of Kanban.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Triggered every time a single card rendered request is made to access particular card information.
       */
@@ -2956,7 +2956,7 @@ object Kanban {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setContextClick(value: /* e */ ContextClickEventArgs => Unit): Self = StObject.set(x, "contextClick", js.Any.fromFunction1(value))
       
@@ -2982,13 +2982,13 @@ object Kanban {
       
       inline def setCustomToolbarItemsUndefined: Self = StObject.set(x, "customToolbarItems", js.undefined)
       
-      inline def setCustomToolbarItemsVarargs(value: CustomToolbarItem*): Self = StObject.set(x, "customToolbarItems", js.Array(value :_*))
+      inline def setCustomToolbarItemsVarargs(value: CustomToolbarItem*): Self = StObject.set(x, "customToolbarItems", js.Array(value*))
       
       inline def setDataBound(value: /* e */ DataBoundEventArgs => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
       
       inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -3028,7 +3028,7 @@ object Kanban {
       
       inline def setFilterSettingsUndefined: Self = StObject.set(x, "filterSettings", js.undefined)
       
-      inline def setFilterSettingsVarargs(value: FilterSetting*): Self = StObject.set(x, "filterSettings", js.Array(value :_*))
+      inline def setFilterSettingsVarargs(value: FilterSetting*): Self = StObject.set(x, "filterSettings", js.Array(value*))
       
       inline def setHeaderClick(value: /* e */ HeaderClickEventArgs => Unit): Self = StObject.set(x, "headerClick", js.Any.fromFunction1(value))
       
@@ -3042,7 +3042,7 @@ object Kanban {
       
       inline def setKeyFieldUndefined: Self = StObject.set(x, "keyField", js.undefined)
       
-      inline def setKeySettings(value: js.Any): Self = StObject.set(x, "keySettings", value.asInstanceOf[js.Any])
+      inline def setKeySettings(value: Any): Self = StObject.set(x, "keySettings", value.asInstanceOf[js.Any])
       
       inline def setKeySettingsUndefined: Self = StObject.set(x, "keySettings", js.undefined)
       
@@ -3058,7 +3058,7 @@ object Kanban {
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryCellInfo(value: /* e */ QueryCellInfoEventArgs => Unit): Self = StObject.set(x, "queryCellInfo", js.Any.fromFunction1(value))
       
@@ -3086,7 +3086,7 @@ object Kanban {
       
       inline def setStackedHeaderRowsUndefined: Self = StObject.set(x, "stackedHeaderRows", js.undefined)
       
-      inline def setStackedHeaderRowsVarargs(value: StackedHeaderRow*): Self = StObject.set(x, "stackedHeaderRows", js.Array(value :_*))
+      inline def setStackedHeaderRowsVarargs(value: StackedHeaderRow*): Self = StObject.set(x, "stackedHeaderRows", js.Array(value*))
       
       inline def setSwimlaneClick(value: /* e */ SwimlaneClickEventArgs => Unit): Self = StObject.set(x, "swimlaneClick", js.Any.fromFunction1(value))
       
@@ -3108,7 +3108,7 @@ object Kanban {
       
       inline def setWorkflowsUndefined: Self = StObject.set(x, "workflows", js.undefined)
       
-      inline def setWorkflowsVarargs(value: Workflow*): Self = StObject.set(x, "workflows", js.Array(value :_*))
+      inline def setWorkflowsVarargs(value: Workflow*): Self = StObject.set(x, "workflows", js.Array(value*))
     }
   }
   
@@ -3120,23 +3120,23 @@ object Kanban {
     
     /** Returns Kanban card.
       */
-    var card: js.UndefOr[js.Any] = js.undefined
+    var card: js.UndefOr[Any] = js.undefined
     
     /** Returns Kanban card.
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Returns the column object.
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns current row record object (JSON).
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -3155,23 +3155,23 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCard(value: js.Any): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      inline def setCard(value: Any): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
       inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -3226,7 +3226,7 @@ object Kanban {
     /** To customize the fields the searching operation can be perform.
       * @Default {Array}
       */
-    var fields: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var fields: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** To customize the ignore case based on searching.
       * @Default {true}
@@ -3251,11 +3251,11 @@ object Kanban {
     
     extension [Self <: SearchSettings](x: Self) {
       
-      inline def setFields(value: js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      inline def setFieldsVarargs(value: js.Any*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: Any*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
       
@@ -3291,7 +3291,7 @@ object Kanban {
       
       inline def setStackedHeaderColumnsUndefined: Self = StObject.set(x, "stackedHeaderColumns", js.undefined)
       
-      inline def setStackedHeaderColumnsVarargs(value: StackedHeaderRowsStackedHeaderColumn*): Self = StObject.set(x, "stackedHeaderColumns", js.Array(value :_*))
+      inline def setStackedHeaderColumnsVarargs(value: StackedHeaderRowsStackedHeaderColumn*): Self = StObject.set(x, "stackedHeaderColumns", js.Array(value*))
     }
   }
   
@@ -3338,11 +3338,11 @@ object Kanban {
     
     /** Returns the swim lane group data's.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns current swim lane row index.
       */
@@ -3350,7 +3350,7 @@ object Kanban {
     
     /** Returns current target element.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -3373,11 +3373,11 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -3385,7 +3385,7 @@ object Kanban {
       
       inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -3439,7 +3439,7 @@ object Kanban {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: SwimlaneSettingsHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: SwimlaneSettingsHeader*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setShowCount(value: Boolean): Self = StObject.set(x, "showCount", value.asInstanceOf[js.Any])
       
@@ -3496,7 +3496,7 @@ object Kanban {
     /** To set the user defined values which are need to categorized as unassigned category swim lane groups.
       * @Default {[null,undefined,]}
       */
-    var keys: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var keys: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object SwimlaneSettingsUnassignedGroup {
     
@@ -3511,11 +3511,11 @@ object Kanban {
       
       inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      inline def setKeys(value: js.Array[js.Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: js.Array[Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
       inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      inline def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: Any*): Self = StObject.set(x, "keys", js.Array(value*))
     }
   }
   
@@ -3527,7 +3527,7 @@ object Kanban {
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** Returns the item id of that current element.
       */
@@ -3547,11 +3547,11 @@ object Kanban {
     
     /** Returns the Kanban model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the toolbar object of the Kanban.
       */
-    var toolbarData: js.UndefOr[js.Any] = js.undefined
+    var toolbarData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -3570,7 +3570,7 @@ object Kanban {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
@@ -3590,11 +3590,11 @@ object Kanban {
       
       inline def setItemTextUndefined: Self = StObject.set(x, "itemText", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setToolbarData(value: js.Any): Self = StObject.set(x, "toolbarData", value.asInstanceOf[js.Any])
+      inline def setToolbarData(value: Any): Self = StObject.set(x, "toolbarData", value.asInstanceOf[js.Any])
       
       inline def setToolbarDataUndefined: Self = StObject.set(x, "toolbarData", js.undefined)
       

@@ -1,5 +1,6 @@
 package typings.awsSdkPropertyProvider
 
+import typings.awsSdkTypes.utilMod.MemoizedProvider
 import typings.awsSdkTypes.utilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object memoizeMod {
   
-  @JSImport("@aws-sdk/property-provider/dist/cjs/memoize", "memoize")
+  @JSImport("@aws-sdk/property-provider/dist-types/memoize", "memoize")
   @js.native
   val memoize: MemoizeOverload = js.native
   
@@ -25,7 +26,7 @@ object memoizeMod {
       *
       * @param provider The provider whose result should be cached indefinitely.
       */
-    def apply[T](provider: Provider[T]): Provider[T] = js.native
+    def apply[T](provider: Provider[T]): MemoizedProvider[T] = js.native
     /**
       * Decorates a provider function with refreshing memoization.
       *
@@ -45,11 +46,11 @@ object memoizeMod {
       *                          underlying provider had an expiration and `false`
       *                          otherwise.
       */
-    def apply[T](provider: Provider[T], isExpired: js.Function1[/* resolved */ T, Boolean]): Provider[T] = js.native
+    def apply[T](provider: Provider[T], isExpired: js.Function1[/* resolved */ T, Boolean]): MemoizedProvider[T] = js.native
     def apply[T](
       provider: Provider[T],
       isExpired: js.Function1[/* resolved */ T, Boolean],
       requiresRefresh: js.Function1[/* resolved */ T, Boolean]
-    ): Provider[T] = js.native
+    ): MemoizedProvider[T] = js.native
   }
 }

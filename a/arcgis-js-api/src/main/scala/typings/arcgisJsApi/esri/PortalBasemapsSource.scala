@@ -38,10 +38,12 @@ trait PortalBasemapsSource
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html#query)
     */
-  var query: js.Any | String = js.native
+  var query: Any | String = js.native
   
   /**
     * The source's state.
+    *
+    * @default not-loaded
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-PortalBasemapsSource.html#state)
     */

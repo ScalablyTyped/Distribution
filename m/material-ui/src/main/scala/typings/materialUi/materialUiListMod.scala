@@ -20,17 +20,17 @@ object materialUiListMod {
   
   @JSImport("material-ui/List", JSImport.Default)
   @js.native
-  class default () extends List
+  open class default () extends List
   
   @JSImport("material-ui/List", "List")
   @js.native
-  class List ()
-    extends Component[ListProps, js.Object, js.Any]
+  open class List ()
+    extends Component[ListProps, js.Object, Any]
   
   @JSImport("material-ui/List", "ListItem")
   @js.native
-  class ListItem ()
-    extends Component[ListItemProps, js.Object, js.Any]
+  open class ListItem ()
+    extends Component[ListItemProps, js.Object, Any]
   
   inline def makeSelectable[P /* <: js.Object */](component: ComponentClass[P, ComponentState]): ComponentClass[(Omit[P, onChange]) & SelectableProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSelectable")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[(Omit[P, onChange]) & SelectableProps, ComponentState]]
 }

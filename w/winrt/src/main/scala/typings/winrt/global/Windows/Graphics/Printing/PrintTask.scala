@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Graphics.Printing.PrintTask")
 @js.native
-class PrintTask ()
+open class PrintTask ()
   extends StObject
      with typings.winrt.Windows.Graphics.Printing.PrintTask {
   
   /* CompleteClass */
-  var oncompleted: js.Any = js.native
+  var oncompleted: Any = js.native
   
   /* CompleteClass */
-  var onpreviewing: js.Any = js.native
+  var onpreviewing: Any = js.native
   
   /* CompleteClass */
-  var onprogressing: js.Any = js.native
+  var onprogressing: Any = js.native
   
   /* CompleteClass */
-  var onsubmitting: js.Any = js.native
+  var onsubmitting: Any = js.native
   
   /* CompleteClass */
   var options: typings.winrt.Windows.Graphics.Printing.PrintTaskOptions = js.native

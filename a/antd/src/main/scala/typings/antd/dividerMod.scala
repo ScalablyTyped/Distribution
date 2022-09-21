@@ -29,6 +29,8 @@ object dividerMod extends Shortcut {
     
     var orientation: js.UndefOr[left | right | center] = js.undefined
     
+    var orientationMargin: js.UndefOr[String | Double] = js.undefined
+    
     var plain: js.UndefOr[Boolean] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
@@ -59,6 +61,10 @@ object dividerMod extends Shortcut {
       inline def setDashedUndefined: Self = StObject.set(x, "dashed", js.undefined)
       
       inline def setOrientation(value: left | right | center): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      
+      inline def setOrientationMargin(value: String | Double): Self = StObject.set(x, "orientationMargin", value.asInstanceOf[js.Any])
+      
+      inline def setOrientationMarginUndefined: Self = StObject.set(x, "orientationMargin", js.undefined)
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       

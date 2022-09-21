@@ -60,7 +60,7 @@ object anon {
     
     var extractHostname: js.UndefOr[ReturnType[js.Function1[/* host */ String, String | Null]]] = js.undefined
     
-    var rules: js.UndefOr[js.Any] = js.undefined
+    var rules: js.UndefOr[Any] = js.undefined
     
     var validHosts: js.UndefOr[js.Array[String]] = js.undefined
   }
@@ -77,7 +77,7 @@ object anon {
       
       inline def setExtractHostnameUndefined: Self = StObject.set(x, "extractHostname", js.undefined)
       
-      inline def setRules(value: js.Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
       inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
@@ -85,7 +85,7 @@ object anon {
       
       inline def setValidHostsUndefined: Self = StObject.set(x, "validHosts", js.undefined)
       
-      inline def setValidHostsVarargs(value: String*): Self = StObject.set(x, "validHosts", js.Array(value :_*))
+      inline def setValidHostsVarargs(value: String*): Self = StObject.set(x, "validHosts", js.Array(value*))
     }
   }
   
@@ -274,7 +274,7 @@ object anon {
         ]
       ] = js.undefined
     
-    var rules: js.UndefOr[js.Any] = js.undefined
+    var rules: js.UndefOr[Any] = js.undefined
     
     var validHosts: js.UndefOr[js.Array[String]] = js.undefined
   }
@@ -295,7 +295,7 @@ object anon {
       
       inline def setExtractHostnameUndefined: Self = StObject.set(x, "extractHostname", js.undefined)
       
-      inline def setRules(value: js.Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
       inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
@@ -303,7 +303,7 @@ object anon {
       
       inline def setValidHostsUndefined: Self = StObject.set(x, "validHosts", js.undefined)
       
-      inline def setValidHostsVarargs(value: String*): Self = StObject.set(x, "validHosts", js.Array(value :_*))
+      inline def setValidHostsVarargs(value: String*): Self = StObject.set(x, "validHosts", js.Array(value*))
     }
   }
 }

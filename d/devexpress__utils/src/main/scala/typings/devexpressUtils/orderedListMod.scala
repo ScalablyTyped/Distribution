@@ -9,12 +9,12 @@ object orderedListMod {
   
   @JSImport("@devexpress/utils/lib/class/ordered-list", "OrderedList")
   @js.native
-  class OrderedList[T] protected () extends StObject {
+  open class OrderedList[T] protected () extends StObject {
     def this(comparer: CmpFunc[T]) = this()
     
     def add(elem: T): this.type = js.native
     
-    /* private */ var comparer: js.Any = js.native
+    /* private */ var comparer: Any = js.native
     
     def findElement(elem: T): T | Null = js.native
     

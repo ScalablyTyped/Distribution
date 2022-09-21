@@ -10,10 +10,10 @@ An extremely intuitive, small, and fast functional reactive stream library for J
 | ------------------ | :-------------: |
 | Full name          | xstream |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 212 |
-| # downloads        | 371670 |
-| # stars            | 9 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 81183.33333333333 |
+| # stars            | 2299.0 |
 
 ## Links
 - [Homepage](https://github.com/staltz/xstream#readme)

@@ -4,25 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for listing all creatives associated with a given filtered
-  * bid reason.
-  */
 trait SchemaListCreativeStatusBreakdownByCreativeResponse extends StObject {
   
   /**
-    * List of rows, with counts of bids with a given creative status aggregated
-    * by creative.
+    * List of rows, with counts of bids with a given creative status aggregated by creative.
     */
   var filteredBidCreativeRows: js.UndefOr[js.Array[SchemaFilteredBidCreativeRow]] = js.undefined
   
   /**
-    * A token to retrieve the next page of results. Pass this value in the
-    * ListCreativeStatusBreakdownByCreativeRequest.pageToken field in the
-    * subsequent call to the filteredBids.creatives.list method to retrieve the
-    * next page of results.
+    * A token to retrieve the next page of results. Pass this value in the ListCreativeStatusBreakdownByCreativeRequest.pageToken field in the subsequent call to the filteredBids.creatives.list method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListCreativeStatusBreakdownByCreativeResponse {
   
@@ -37,9 +29,11 @@ object SchemaListCreativeStatusBreakdownByCreativeResponse {
     
     inline def setFilteredBidCreativeRowsUndefined: Self = StObject.set(x, "filteredBidCreativeRows", js.undefined)
     
-    inline def setFilteredBidCreativeRowsVarargs(value: SchemaFilteredBidCreativeRow*): Self = StObject.set(x, "filteredBidCreativeRows", js.Array(value :_*))
+    inline def setFilteredBidCreativeRowsVarargs(value: SchemaFilteredBidCreativeRow*): Self = StObject.set(x, "filteredBidCreativeRows", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

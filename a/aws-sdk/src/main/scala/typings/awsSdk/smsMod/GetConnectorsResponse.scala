@@ -29,7 +29,7 @@ object GetConnectorsResponse {
     
     inline def setConnectorListUndefined: Self = StObject.set(x, "connectorList", js.undefined)
     
-    inline def setConnectorListVarargs(value: Connector*): Self = StObject.set(x, "connectorList", js.Array(value :_*))
+    inline def setConnectorListVarargs(value: Connector*): Self = StObject.set(x, "connectorList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

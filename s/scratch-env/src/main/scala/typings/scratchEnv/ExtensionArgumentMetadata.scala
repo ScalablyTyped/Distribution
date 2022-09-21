@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExtensionArgumentMetadata extends StObject {
   
   /** The default value of this argument. */
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   /** The name of the menu to use for this argument, if any. */
   var menu: js.UndefOr[String] = js.undefined
@@ -27,7 +27,7 @@ object ExtensionArgumentMetadata {
   
   extension [Self <: ExtensionArgumentMetadata](x: Self) {
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     

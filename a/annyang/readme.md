@@ -10,10 +10,10 @@ A javascript library for adding voice commands to your site, using speech recogn
 | ------------------ | :-------------: |
 | Full name          | annyang |
 | Keywords           | annyang, annyang.js, recognition, speech, speechrecognition, voice, webkitspeechrecognition |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 40338 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5513.666666666667 |
+| # stars            | 6300.0 |
 
 ## Links
 - [Homepage](https://www.talater.com/annyang/)

@@ -1,6 +1,5 @@
 package typings.googleCloudCommon.utilMod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait ParsedHttpResponseBody extends StObject {
   
   var body: ResponseBody
   
-  var err: js.UndefOr[Error] = js.undefined
+  var err: js.UndefOr[js.Error] = js.undefined
 }
 object ParsedHttpResponseBody {
   
@@ -22,7 +21,7 @@ object ParsedHttpResponseBody {
     
     inline def setBody(value: ResponseBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+    inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     
     inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
   }

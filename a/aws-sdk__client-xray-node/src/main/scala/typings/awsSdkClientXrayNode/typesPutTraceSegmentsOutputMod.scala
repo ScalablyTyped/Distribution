@@ -39,7 +39,7 @@ object typesPutTraceSegmentsOutputMod {
       
       inline def setUnprocessedTraceSegmentsUndefined: Self = StObject.set(x, "UnprocessedTraceSegments", js.undefined)
       
-      inline def setUnprocessedTraceSegmentsVarargs(value: UnmarshalledUnprocessedTraceSegment*): Self = StObject.set(x, "UnprocessedTraceSegments", js.Array(value :_*))
+      inline def setUnprocessedTraceSegmentsVarargs(value: UnmarshalledUnprocessedTraceSegment*): Self = StObject.set(x, "UnprocessedTraceSegments", js.Array(value*))
     }
   }
 }

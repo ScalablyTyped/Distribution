@@ -10,10 +10,10 @@ Format a link header object, to the original RFC 5988
 | ------------------ | :-------------: |
 | Full name          | format-link-header |
 | Keywords           | format-link-header, web, links, header, links |
-| # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 141056 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 28953.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/jonathansamines/format-link-header#readme)

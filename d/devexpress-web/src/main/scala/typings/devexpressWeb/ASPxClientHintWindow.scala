@@ -14,7 +14,7 @@ trait ASPxClientHintWindow extends StObject {
     * @param html An object that specifies the hint content.
     * @param options An  object that specifies the hint's options.
     */
-  def SetContent(html: js.Any, options: ASPxClientHintOptions): Unit
+  def SetContent(html: Any, options: ASPxClientHintOptions): Unit
   
   /**
     * Set the hint's loading animation
@@ -29,7 +29,7 @@ trait ASPxClientHintWindow extends StObject {
 object ASPxClientHintWindow {
   
   inline def apply(
-    SetContent: (js.Any, ASPxClientHintOptions) => Unit,
+    SetContent: (Any, ASPxClientHintOptions) => Unit,
     SetContentLoading: () => Unit,
     UpdatePosition: () => Unit
   ): ASPxClientHintWindow = {
@@ -39,7 +39,7 @@ object ASPxClientHintWindow {
   
   extension [Self <: ASPxClientHintWindow](x: Self) {
     
-    inline def setSetContent(value: (js.Any, ASPxClientHintOptions) => Unit): Self = StObject.set(x, "SetContent", js.Any.fromFunction2(value))
+    inline def setSetContent(value: (Any, ASPxClientHintOptions) => Unit): Self = StObject.set(x, "SetContent", js.Any.fromFunction2(value))
     
     inline def setSetContentLoading(value: () => Unit): Self = StObject.set(x, "SetContentLoading", js.Any.fromFunction0(value))
     

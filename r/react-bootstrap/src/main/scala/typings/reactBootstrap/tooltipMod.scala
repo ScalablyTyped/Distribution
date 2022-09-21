@@ -11,12 +11,10 @@ object tooltipMod {
   
   @JSImport("react-bootstrap/lib/Tooltip", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[TooltipProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[TooltipProps, js.Object, Any]
   
-  @js.native
-  trait Tooltip
-    extends Component[TooltipProps, js.Object, js.Any]
+  type Tooltip = Component[TooltipProps, js.Object, Any]
   
   trait TooltipProps
     extends StObject

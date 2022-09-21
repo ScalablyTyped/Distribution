@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Type extends StObject {
   
-  def `type`(args: js.Any*): /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
+  def `type`(args: Any*): /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
   
   var value: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
@@ -15,7 +15,7 @@ trait Type extends StObject {
 object Type {
   
   inline def apply(
-    `type`: /* repeated */ js.Any => /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
+    `type`: /* repeated */ Any => /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
   ): Type = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(js.Any.fromFunction1(`type`))
@@ -25,7 +25,7 @@ object Type {
   extension [Self <: Type](x: Self) {
     
     inline def setType(
-      value: /* repeated */ js.Any => /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
+      value: /* repeated */ Any => /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
     ): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
     
     inline def setValue(value: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])

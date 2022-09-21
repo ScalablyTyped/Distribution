@@ -10,10 +10,10 @@ object personPinMod {
   
   @JSImport("material-ui/svg-icons/maps/person-pin", JSImport.Default)
   @js.native
-  class default () extends MapsPersonPin
+  open class default () extends MapsPersonPin
   
   @JSImport("material-ui/svg-icons/maps/person-pin", "MapsPersonPin")
   @js.native
-  class MapsPersonPin ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsPersonPin ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

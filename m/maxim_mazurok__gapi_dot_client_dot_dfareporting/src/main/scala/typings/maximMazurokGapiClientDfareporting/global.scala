@@ -7,8 +7,12 @@ import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.Accou
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.AccountsResource
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.AdsResource
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.AdvertiserGroupsResource
+import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.AdvertiserInvoicesResource
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.AdvertiserLandingPagesResource
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.AdvertisersResource
+import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.BillingAssignmentsResource
+import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.BillingProfilesResource
+import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.BillingRatesResource
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.BrowsersResource
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.CampaignCreativeAssociationsResource
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.CampaignsResource
@@ -23,7 +27,6 @@ import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.Creat
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.CreativeFieldsResource
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.CreativeGroupsResource
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.CreativesResource
-import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.CustomEventsResource
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.DimensionValuesResource
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.DirectorySitesResource
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.DynamicTargetingKeysResource
@@ -62,7 +65,7 @@ import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.UserR
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.UserRolesResource
 import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.VideoFormatsResource
 import typings.maximMazurokGapiClientDfareporting.maximMazurokGapiClientDfareportingStrings.dfareporting
-import typings.maximMazurokGapiClientDfareporting.maximMazurokGapiClientDfareportingStrings.v3Dot4
+import typings.maximMazurokGapiClientDfareporting.maximMazurokGapiClientDfareportingStrings.v4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -107,6 +110,10 @@ object global {
         @js.native
         val advertiserGroups: AdvertiserGroupsResource = js.native
         
+        @JSGlobal("gapi.client.dfareporting.advertiserInvoices")
+        @js.native
+        val advertiserInvoices: AdvertiserInvoicesResource = js.native
+        
         @JSGlobal("gapi.client.dfareporting.advertiserLandingPages")
         @js.native
         val advertiserLandingPages: AdvertiserLandingPagesResource = js.native
@@ -114,6 +121,18 @@ object global {
         @JSGlobal("gapi.client.dfareporting.advertisers")
         @js.native
         val advertisers: AdvertisersResource = js.native
+        
+        @JSGlobal("gapi.client.dfareporting.billingAssignments")
+        @js.native
+        val billingAssignments: BillingAssignmentsResource = js.native
+        
+        @JSGlobal("gapi.client.dfareporting.billingProfiles")
+        @js.native
+        val billingProfiles: BillingProfilesResource = js.native
+        
+        @JSGlobal("gapi.client.dfareporting.billingRates")
+        @js.native
+        val billingRates: BillingRatesResource = js.native
         
         @JSGlobal("gapi.client.dfareporting.browsers")
         @js.native
@@ -170,10 +189,6 @@ object global {
         @JSGlobal("gapi.client.dfareporting.creatives")
         @js.native
         val creatives: CreativesResource = js.native
-        
-        @JSGlobal("gapi.client.dfareporting.customEvents")
-        @js.native
-        val customEvents: CustomEventsResource = js.native
         
         @JSGlobal("gapi.client.dfareporting.dimensionValues")
         @js.native
@@ -324,9 +339,9 @@ object global {
         val videoFormats: VideoFormatsResource = js.native
       }
       
-      /** Load Campaign Manager 360 API v3.4 */
-      inline def load(name: dfareporting, version: v3Dot4): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
-      inline def load(name: dfareporting, version: v3Dot4, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      /** Load Campaign Manager 360 API v4 */
+      inline def load(name: dfareporting, version: v4): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
+      inline def load(name: dfareporting, version: v4, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
 }

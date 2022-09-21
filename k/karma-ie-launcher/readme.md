@@ -10,10 +10,10 @@ A Karma plugin. Launcher for Internet Explorer.
 | ------------------ | :-------------: |
 | Full name          | karma-ie-launcher |
 | Keywords           | karma-plugin, karma-launcher, ie |
-| # releases         | 0 |
-| # dependents       | 90 |
-| # downloads        | 2791272 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 286974.3333333333 |
+| # stars            | 61.0 |
 
 ## Links
 - [Homepage](https://github.com/karma-runner/karma-ie-launcher#readme)

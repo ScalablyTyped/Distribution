@@ -11,11 +11,11 @@ trait Emitter extends StObject {
   
   var eventName: String | js.Symbol
   
-  def handler(args: js.Any*): Unit
+  def handler(args: Any*): Unit
 }
 object Emitter {
   
-  inline def apply(emitter: CommonEventEmitter, eventName: String | js.Symbol, handler: /* repeated */ js.Any => Unit): Emitter = {
+  inline def apply(emitter: CommonEventEmitter, eventName: String | js.Symbol, handler: /* repeated */ Any => Unit): Emitter = {
     val __obj = js.Dynamic.literal(emitter = emitter.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], handler = js.Any.fromFunction1(handler))
     __obj.asInstanceOf[Emitter]
   }
@@ -26,6 +26,6 @@ object Emitter {
     
     inline def setEventName(value: String | js.Symbol): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
-    inline def setHandler(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+    inline def setHandler(value: /* repeated */ Any => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
   }
 }

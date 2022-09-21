@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait XhrResponse extends StObject {
   
-  var body: js.Any
+  var body: Any
   
-  var headers: js.Any
+  var headers: Any
   
   var method: String
   
@@ -22,8 +22,8 @@ trait XhrResponse extends StObject {
 object XhrResponse {
   
   inline def apply(
-    body: js.Any,
-    headers: js.Any,
+    body: Any,
+    headers: Any,
     method: String,
     rawRequest: XMLHttpRequest,
     statusCode: Double,
@@ -35,9 +35,9 @@ object XhrResponse {
   
   extension [Self <: XhrResponse](x: Self) {
     
-    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

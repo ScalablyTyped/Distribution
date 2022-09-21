@@ -10,10 +10,10 @@ The lodash method `_.takeWhile` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.takewhile |
 | Keywords           | lodash-modularized, takewhile |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 29384 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 13867.333333333334 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

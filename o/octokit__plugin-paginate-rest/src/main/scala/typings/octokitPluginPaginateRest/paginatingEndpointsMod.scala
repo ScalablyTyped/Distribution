@@ -1,1528 +1,1890 @@
 package typings.octokitPluginPaginateRest
 
 import typings.octokitPluginPaginateRest.anon.Parameters
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListArtifactsForRepoEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListJobsForWorkflowRunEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListOrgSecretsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListRepoSecretsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListRepoWorkflowsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListRunnerApplicationsForOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListRunnerApplicationsForRepoEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListSelectedReposForOrgSecretEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListSelfHostedRunnerGroupsForOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListSelfHostedRunnersForOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListSelfHostedRunnersForRepoEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListSelfHostedRunnersInGroupForOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListWorkflowRunArtifactsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListWorkflowRunsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActionsListWorkflowRunsForRepoEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActivityListNotificationsForAuthenticatedUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActivityListReposStarredByAuthenticatedUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActivityListReposStarredByUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActivityListReposWatchedByUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActivityListStargazersForRepoEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActivityListWatchedReposForAuthenticatedUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersActivityListWatchersForRepoEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersAppsListAccountsForPlanEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersAppsListAccountsForPlanStubbedEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersAppsListInstallationReposForAuthenticatedUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersAppsListInstallationsForAuthenticatedUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersAppsListPlansEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersAppsListPlansStubbedEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersAppsListReposAccessibleToInstallationEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersAppsListSubscriptionsForAuthenticatedUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersAppsListSubscriptionsForAuthenticatedUserStubbedEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersChecksListAnnotationsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersChecksListForRefEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersChecksListForSuiteEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersChecksListSuitesForRefEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersCodeScanningListAlertsForRepoEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersCodeScanningListRecentAnalysesEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersEnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersEnterpriseAdminListProvisionedGroupsEnterpriseEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersEnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersEnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersEnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersGistsListCommentsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersGistsListCommitsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersGistsListEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersGistsListForUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersGistsListForksEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersGistsListPublicEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersGistsListStarredEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersGitListMatchingRefsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersIssuesListAssigneesEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersIssuesListCommentsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersIssuesListCommentsForRepoEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersIssuesListEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersIssuesListEventsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersIssuesListEventsForRepoEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersIssuesListEventsForTimelineEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersIssuesListForAuthenticatedUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersIssuesListForOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersIssuesListForRepoEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersIssuesListLabelsForMilestoneEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersIssuesListLabelsForRepoEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersIssuesListLabelsOnIssueEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersIssuesListMilestonesEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersMigrationsListForAuthenticatedUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersMigrationsListForOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersMigrationsListReposForOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersMigrationsListReposForUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersOrgsListAppInstallationsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersOrgsListBlockedUsersEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersOrgsListEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersOrgsListForAuthenticatedUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersOrgsListForUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersOrgsListInvitationTeamsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersOrgsListMembersEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersOrgsListMembershipsForAuthenticatedUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersOrgsListOutsideCollaboratorsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersOrgsListPendingInvitationsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersOrgsListPublicMembersEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersOrgsListSamlSsoAuthorizationsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersOrgsListWebhooksEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersProjectsListCardsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersProjectsListCollaboratorsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersProjectsListColumnsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersProjectsListForOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersProjectsListForRepoEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersProjectsListForUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersPullsListCommentsForReviewEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersPullsListCommitsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersPullsListEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersPullsListFilesEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersPullsListRequestedReviewersEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersPullsListReviewCommentsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersPullsListReviewCommentsForRepoEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersPullsListReviewsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReactionsListForCommitCommentEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReactionsListForIssueCommentEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReactionsListForIssueEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReactionsListForPullRequestReviewCommentEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReactionsListForTeamDiscussionCommentInOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReactionsListForTeamDiscussionCommentLegacyEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReactionsListForTeamDiscussionInOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReactionsListForTeamDiscussionLegacyEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListBranchesEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListBranchesForHeadCommitEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListCollaboratorsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListCommentsForCommitEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListCommitCommentsForRepoEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListCommitStatusesForRefEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListCommitsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListContributorsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListDeployKeysEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListDeploymentStatusesEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListDeploymentsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListForOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListForksEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListInvitationsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListInvitationsForAuthenticatedUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListLanguagesEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListPagesBuildsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListPublicEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListPullRequestsAssociatedWithCommitEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListReleaseAssetsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListReleasesEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListTagsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListTeamsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersReposListWebhooksEndpoint
 import typings.octokitPluginPaginateRest.anon.ParametersResponse
-import typings.octokitPluginPaginateRest.anon.ParametersScimListProvisionedIdentitiesEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersSearchCodeEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersSearchCommitsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersSearchIssuesAndPullRequestsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersSearchLabelsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersSearchReposEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersSearchTopicsEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersSearchUsersEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListChildInOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListChildLegacyEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListDiscussionCommentsInOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListDiscussionCommentsLegacyEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListDiscussionsInOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListDiscussionsLegacyEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListForAuthenticatedUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListIdPGroupsForLegacyEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListIdPGroupsForOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListIdPGroupsInOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListMembersInOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListMembersLegacyEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListPendingInvitationsInOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListPendingInvitationsLegacyEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListProjectsInOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListProjectsLegacyEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListReposInOrgEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersTeamsListReposLegacyEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersUsersListBlockedByAuthenticatedEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersUsersListEmailsForAuthenticatedEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersUsersListEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersUsersListFollowedByAuthenticatedEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersUsersListFollowersForAuthenticatedUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersUsersListFollowersForUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersUsersListFollowingForUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersUsersListGpgKeysForAuthenticatedEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersUsersListGpgKeysForUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersUsersListPublicEmailsForAuthenticatedEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersUsersListPublicKeysForUserEndpoint
-import typings.octokitPluginPaginateRest.anon.ParametersUsersListPublicSshKeysForAuthenticatedEndpoint
+import typings.octokitPluginPaginateRest.anon.ParametersResponseExtractOctokitResponse
 import typings.octokitPluginPaginateRest.anon.Response
+import typings.octokitPluginPaginateRest.anon.ResponseExtractOctokitResponse
+import typings.octokitPluginPaginateRest.anon.`100`
+import typings.octokitPluginPaginateRest.anon.`102`
+import typings.octokitPluginPaginateRest.anon.`104`
+import typings.octokitPluginPaginateRest.anon.`106`
+import typings.octokitPluginPaginateRest.anon.`108`
+import typings.octokitPluginPaginateRest.anon.`10`
+import typings.octokitPluginPaginateRest.anon.`110`
+import typings.octokitPluginPaginateRest.anon.`112`
+import typings.octokitPluginPaginateRest.anon.`113`
+import typings.octokitPluginPaginateRest.anon.`114`
+import typings.octokitPluginPaginateRest.anon.`115`
+import typings.octokitPluginPaginateRest.anon.`117`
+import typings.octokitPluginPaginateRest.anon.`118`
+import typings.octokitPluginPaginateRest.anon.`119`
+import typings.octokitPluginPaginateRest.anon.`11`
+import typings.octokitPluginPaginateRest.anon.`120`
+import typings.octokitPluginPaginateRest.anon.`122`
+import typings.octokitPluginPaginateRest.anon.`124`
+import typings.octokitPluginPaginateRest.anon.`126`
+import typings.octokitPluginPaginateRest.anon.`127`
+import typings.octokitPluginPaginateRest.anon.`128`
+import typings.octokitPluginPaginateRest.anon.`129`
+import typings.octokitPluginPaginateRest.anon.`12`
+import typings.octokitPluginPaginateRest.anon.`130`
+import typings.octokitPluginPaginateRest.anon.`131`
+import typings.octokitPluginPaginateRest.anon.`132`
+import typings.octokitPluginPaginateRest.anon.`134`
+import typings.octokitPluginPaginateRest.anon.`136`
+import typings.octokitPluginPaginateRest.anon.`138`
+import typings.octokitPluginPaginateRest.anon.`139`
+import typings.octokitPluginPaginateRest.anon.`13`
+import typings.octokitPluginPaginateRest.anon.`140`
+import typings.octokitPluginPaginateRest.anon.`142`
+import typings.octokitPluginPaginateRest.anon.`143`
+import typings.octokitPluginPaginateRest.anon.`144`
+import typings.octokitPluginPaginateRest.anon.`146`
+import typings.octokitPluginPaginateRest.anon.`148`
+import typings.octokitPluginPaginateRest.anon.`149`
+import typings.octokitPluginPaginateRest.anon.`14`
+import typings.octokitPluginPaginateRest.anon.`150`
+import typings.octokitPluginPaginateRest.anon.`151`
+import typings.octokitPluginPaginateRest.anon.`152`
+import typings.octokitPluginPaginateRest.anon.`153`
+import typings.octokitPluginPaginateRest.anon.`154`
+import typings.octokitPluginPaginateRest.anon.`155`
+import typings.octokitPluginPaginateRest.anon.`156`
+import typings.octokitPluginPaginateRest.anon.`157`
+import typings.octokitPluginPaginateRest.anon.`158`
+import typings.octokitPluginPaginateRest.anon.`159`
+import typings.octokitPluginPaginateRest.anon.`15`
+import typings.octokitPluginPaginateRest.anon.`160`
+import typings.octokitPluginPaginateRest.anon.`161`
+import typings.octokitPluginPaginateRest.anon.`162`
+import typings.octokitPluginPaginateRest.anon.`163`
+import typings.octokitPluginPaginateRest.anon.`164`
+import typings.octokitPluginPaginateRest.anon.`165`
+import typings.octokitPluginPaginateRest.anon.`166`
+import typings.octokitPluginPaginateRest.anon.`167`
+import typings.octokitPluginPaginateRest.anon.`168`
+import typings.octokitPluginPaginateRest.anon.`169`
+import typings.octokitPluginPaginateRest.anon.`16`
+import typings.octokitPluginPaginateRest.anon.`170`
+import typings.octokitPluginPaginateRest.anon.`171`
+import typings.octokitPluginPaginateRest.anon.`172`
+import typings.octokitPluginPaginateRest.anon.`173`
+import typings.octokitPluginPaginateRest.anon.`174`
+import typings.octokitPluginPaginateRest.anon.`175`
+import typings.octokitPluginPaginateRest.anon.`176`
+import typings.octokitPluginPaginateRest.anon.`177`
+import typings.octokitPluginPaginateRest.anon.`178`
+import typings.octokitPluginPaginateRest.anon.`179`
+import typings.octokitPluginPaginateRest.anon.`17`
+import typings.octokitPluginPaginateRest.anon.`180`
+import typings.octokitPluginPaginateRest.anon.`181`
+import typings.octokitPluginPaginateRest.anon.`182`
+import typings.octokitPluginPaginateRest.anon.`183`
+import typings.octokitPluginPaginateRest.anon.`184`
+import typings.octokitPluginPaginateRest.anon.`185`
+import typings.octokitPluginPaginateRest.anon.`186`
+import typings.octokitPluginPaginateRest.anon.`188`
+import typings.octokitPluginPaginateRest.anon.`189`
+import typings.octokitPluginPaginateRest.anon.`191`
+import typings.octokitPluginPaginateRest.anon.`193`
+import typings.octokitPluginPaginateRest.anon.`195`
+import typings.octokitPluginPaginateRest.anon.`197`
+import typings.octokitPluginPaginateRest.anon.`199`
+import typings.octokitPluginPaginateRest.anon.`19`
+import typings.octokitPluginPaginateRest.anon.`1`
+import typings.octokitPluginPaginateRest.anon.`201`
+import typings.octokitPluginPaginateRest.anon.`203`
+import typings.octokitPluginPaginateRest.anon.`205`
+import typings.octokitPluginPaginateRest.anon.`206`
+import typings.octokitPluginPaginateRest.anon.`207`
+import typings.octokitPluginPaginateRest.anon.`208`
+import typings.octokitPluginPaginateRest.anon.`209`
+import typings.octokitPluginPaginateRest.anon.`20`
+import typings.octokitPluginPaginateRest.anon.`210`
+import typings.octokitPluginPaginateRest.anon.`211`
+import typings.octokitPluginPaginateRest.anon.`212`
+import typings.octokitPluginPaginateRest.anon.`213`
+import typings.octokitPluginPaginateRest.anon.`214`
+import typings.octokitPluginPaginateRest.anon.`215`
+import typings.octokitPluginPaginateRest.anon.`217`
+import typings.octokitPluginPaginateRest.anon.`219`
+import typings.octokitPluginPaginateRest.anon.`21`
+import typings.octokitPluginPaginateRest.anon.`220`
+import typings.octokitPluginPaginateRest.anon.`221`
+import typings.octokitPluginPaginateRest.anon.`222`
+import typings.octokitPluginPaginateRest.anon.`223`
+import typings.octokitPluginPaginateRest.anon.`225`
+import typings.octokitPluginPaginateRest.anon.`227`
+import typings.octokitPluginPaginateRest.anon.`228`
+import typings.octokitPluginPaginateRest.anon.`229`
+import typings.octokitPluginPaginateRest.anon.`22`
+import typings.octokitPluginPaginateRest.anon.`230`
+import typings.octokitPluginPaginateRest.anon.`231`
+import typings.octokitPluginPaginateRest.anon.`232`
+import typings.octokitPluginPaginateRest.anon.`233`
+import typings.octokitPluginPaginateRest.anon.`234`
+import typings.octokitPluginPaginateRest.anon.`235`
+import typings.octokitPluginPaginateRest.anon.`236`
+import typings.octokitPluginPaginateRest.anon.`237`
+import typings.octokitPluginPaginateRest.anon.`238`
+import typings.octokitPluginPaginateRest.anon.`239`
+import typings.octokitPluginPaginateRest.anon.`23`
+import typings.octokitPluginPaginateRest.anon.`240`
+import typings.octokitPluginPaginateRest.anon.`241`
+import typings.octokitPluginPaginateRest.anon.`242`
+import typings.octokitPluginPaginateRest.anon.`243`
+import typings.octokitPluginPaginateRest.anon.`244`
+import typings.octokitPluginPaginateRest.anon.`245`
+import typings.octokitPluginPaginateRest.anon.`246`
+import typings.octokitPluginPaginateRest.anon.`247`
+import typings.octokitPluginPaginateRest.anon.`248`
+import typings.octokitPluginPaginateRest.anon.`249`
+import typings.octokitPluginPaginateRest.anon.`24`
+import typings.octokitPluginPaginateRest.anon.`250`
+import typings.octokitPluginPaginateRest.anon.`251`
+import typings.octokitPluginPaginateRest.anon.`252`
+import typings.octokitPluginPaginateRest.anon.`253`
+import typings.octokitPluginPaginateRest.anon.`254`
+import typings.octokitPluginPaginateRest.anon.`255`
+import typings.octokitPluginPaginateRest.anon.`256`
+import typings.octokitPluginPaginateRest.anon.`257`
+import typings.octokitPluginPaginateRest.anon.`258`
+import typings.octokitPluginPaginateRest.anon.`259`
+import typings.octokitPluginPaginateRest.anon.`25`
+import typings.octokitPluginPaginateRest.anon.`260`
+import typings.octokitPluginPaginateRest.anon.`261`
+import typings.octokitPluginPaginateRest.anon.`262`
+import typings.octokitPluginPaginateRest.anon.`26`
+import typings.octokitPluginPaginateRest.anon.`27`
+import typings.octokitPluginPaginateRest.anon.`28`
+import typings.octokitPluginPaginateRest.anon.`30`
+import typings.octokitPluginPaginateRest.anon.`32`
+import typings.octokitPluginPaginateRest.anon.`34`
+import typings.octokitPluginPaginateRest.anon.`36`
+import typings.octokitPluginPaginateRest.anon.`38`
+import typings.octokitPluginPaginateRest.anon.`3`
+import typings.octokitPluginPaginateRest.anon.`40`
+import typings.octokitPluginPaginateRest.anon.`42`
+import typings.octokitPluginPaginateRest.anon.`44`
+import typings.octokitPluginPaginateRest.anon.`45`
+import typings.octokitPluginPaginateRest.anon.`46`
+import typings.octokitPluginPaginateRest.anon.`47`
+import typings.octokitPluginPaginateRest.anon.`49`
+import typings.octokitPluginPaginateRest.anon.`50`
+import typings.octokitPluginPaginateRest.anon.`52`
+import typings.octokitPluginPaginateRest.anon.`54`
+import typings.octokitPluginPaginateRest.anon.`55`
+import typings.octokitPluginPaginateRest.anon.`57`
+import typings.octokitPluginPaginateRest.anon.`58`
+import typings.octokitPluginPaginateRest.anon.`59`
+import typings.octokitPluginPaginateRest.anon.`5`
+import typings.octokitPluginPaginateRest.anon.`60`
+import typings.octokitPluginPaginateRest.anon.`62`
+import typings.octokitPluginPaginateRest.anon.`63`
+import typings.octokitPluginPaginateRest.anon.`64`
+import typings.octokitPluginPaginateRest.anon.`65`
+import typings.octokitPluginPaginateRest.anon.`66`
+import typings.octokitPluginPaginateRest.anon.`67`
+import typings.octokitPluginPaginateRest.anon.`68`
+import typings.octokitPluginPaginateRest.anon.`69`
+import typings.octokitPluginPaginateRest.anon.`70`
+import typings.octokitPluginPaginateRest.anon.`71`
+import typings.octokitPluginPaginateRest.anon.`72`
+import typings.octokitPluginPaginateRest.anon.`73`
+import typings.octokitPluginPaginateRest.anon.`74`
+import typings.octokitPluginPaginateRest.anon.`75`
+import typings.octokitPluginPaginateRest.anon.`77`
+import typings.octokitPluginPaginateRest.anon.`79`
+import typings.octokitPluginPaginateRest.anon.`7`
+import typings.octokitPluginPaginateRest.anon.`80`
+import typings.octokitPluginPaginateRest.anon.`81`
+import typings.octokitPluginPaginateRest.anon.`82`
+import typings.octokitPluginPaginateRest.anon.`83`
+import typings.octokitPluginPaginateRest.anon.`84`
+import typings.octokitPluginPaginateRest.anon.`85`
+import typings.octokitPluginPaginateRest.anon.`86`
+import typings.octokitPluginPaginateRest.anon.`87`
+import typings.octokitPluginPaginateRest.anon.`88`
+import typings.octokitPluginPaginateRest.anon.`89`
+import typings.octokitPluginPaginateRest.anon.`8`
+import typings.octokitPluginPaginateRest.anon.`90`
+import typings.octokitPluginPaginateRest.anon.`91`
+import typings.octokitPluginPaginateRest.anon.`92`
+import typings.octokitPluginPaginateRest.anon.`94`
+import typings.octokitPluginPaginateRest.anon.`96`
+import typings.octokitPluginPaginateRest.anon.`98`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginatingEndpointsMod {
   
-  trait PaginatingEndpoints extends StObject {
+  @JSImport("@octokit/plugin-paginate-rest/dist-types/generated/paginating-endpoints", "paginatingEndpoints")
+  @js.native
+  val paginatingEndpoints: js.Array[
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 214 */ Any
+  ] = js.native
+  
+  trait PaginatingEndpoints_ extends StObject {
     
     /**
-      * @see https://developer.github.com/v3/apps/#list-installations-for-the-authenticated-app
+      * @see https://docs.github.com/rest/reference/apps#list-deliveries-for-an-app-webhook
+      */
+    @JSName("GET /app/hook/deliveries")
+    var `GET SlashappSlashhookSlashdeliveries`: Parameters
+    
+    /**
+      * @see https://docs.github.com/rest/reference/apps#list-installations-for-the-authenticated-app
       */
     @JSName("GET /app/installations")
-    var `GET SlashappSlashinstallations`: Parameters
+    var `GET SlashappSlashinstallations`: Response
     
     /**
-      * @see https://developer.github.com/v3/oauth_authorizations/#list-your-grants
+      * @see https://docs.github.com/rest/reference/actions#list-selected-organizations-enabled-for-github-actions-in-an-enterprise
       */
-    @JSName("GET /applications/grants")
-    var `GET SlashapplicationsSlashgrants`: Response
+    @JSName("GET /enterprises/{enterprise}/actions/permissions/organizations")
+    var `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashpermissionsSlashorganizations`: ParametersResponse
     
     /**
-      * @see https://developer.github.com/v3/oauth_authorizations/#list-your-authorizations
+      * @see https://docs.github.com/rest/reference/actions#list-self-hosted-runner-groups-for-an-enterprise
       */
-    @JSName("GET /authorizations")
-    var `GET Slashauthorizations`: ParametersResponse
+    @JSName("GET /enterprises/{enterprise}/actions/runner-groups")
+    var `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunner-groups`: `1`
     
     /**
-      * @see https://developer.github.com/v3/enterprise-admin/actions/#list-self-hosted-runner-groups-for-an-enterprise
+      * @see https://docs.github.com/rest/reference/actions#list-organization-access-to-a-self-hosted-runner-group-in-a-enterprise
       */
-    @JSName("GET /enterprises/:enterprise/actions/runner-groups")
-    var `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`: ParametersEnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint
+    @JSName("GET /enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/organizations")
+    var `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashorganizations`: `3`
     
     /**
-      * @see https://developer.github.com/v3/enterprise-admin/actions/#list-organization-access-to-a-self-hosted-runner-group-in-a-enterprise
+      * @see https://docs.github.com/rest/reference/actions#list-self-hosted-runners-in-a-group-for-an-enterprise
       */
-    @JSName("GET /enterprises/:enterprise/actions/runner-groups/:runner_group_id/organizations")
-    var `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`: ParametersEnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint
+    @JSName("GET /enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/runners")
+    var `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashrunners`: `5`
     
     /**
-      * @see https://developer.github.com/v3/enterprise-admin/actions/#list-self-hosted-runners-in-a-group-for-an-enterprise
+      * @see https://docs.github.com/rest/reference/actions#list-self-hosted-runners-for-an-enterprise
       */
-    @JSName("GET /enterprises/:enterprise/actions/runner-groups/:runner_group_id/runners")
-    var `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`: ParametersEnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint
+    @JSName("GET /enterprises/{enterprise}/actions/runners")
+    var `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunners`: `7`
     
     /**
-      * @see https://developer.github.com/v3/enterprise-admin/actions/#list-self-hosted-runners-for-an-enterprise
+      * @see https://docs.github.com/rest/reference/enterprise-admin#get-the-audit-log-for-an-enterprise
       */
-    @JSName("GET /enterprises/:enterprise/actions/runners")
-    var `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`: ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint
+    @JSName("GET /enterprises/{enterprise}/audit-log")
+    var `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashaudit-log`: ResponseExtractOctokitResponse
     
     /**
-      * @see https://developer.github.com/v3/enterprise-admin/actions/#list-runner-applications-for-an-enterprise
+      * @see https://docs.github.com/rest/reference/code-scanning#list-code-scanning-alerts-for-an-enterprise
       */
-    @JSName("GET /enterprises/:enterprise/actions/runners/downloads")
-    var `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`: ParametersEnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint
+    @JSName("GET /enterprises/{enterprise}/code-scanning/alerts")
+    var `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashcode-scanningSlashalerts`: ParametersResponseExtractOctokitResponse
     
     /**
-      * @see https://developer.github.com/v3/gists/#list-gists-for-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/secret-scanning#list-secret-scanning-alerts-for-an-enterprise
+      */
+    @JSName("GET /enterprises/{enterprise}/secret-scanning/alerts")
+    var `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsecret-scanningSlashalerts`: `8`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/billing#export-advanced-security-active-committers-data-for-enterprise
+      */
+    @JSName("GET /enterprises/{enterprise}/settings/billing/advanced-security")
+    var `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashadvanced-security`: `10`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/activity#list-public-events
+      */
+    @JSName("GET /events")
+    var `GET Slashevents`: `11`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/gists#list-gists-for-the-authenticated-user
       */
     @JSName("GET /gists")
-    var `GET Slashgists`: ParametersGistsListEndpoint
+    var `GET Slashgists`: `12`
     
     /**
-      * @see https://developer.github.com/v3/gists/comments/#list-gist-comments
+      * @see https://docs.github.com/rest/reference/gists#list-gist-comments
       */
-    @JSName("GET /gists/:gist_id/comments")
-    var `GET SlashgistsSlashColongist_idSlashcomments`: ParametersGistsListCommentsEndpoint
+    @JSName("GET /gists/{gist_id}/comments")
+    var `GET SlashgistsSlashLeftcurlybracketgist_idRightcurlybracketSlashcomments`: `15`
     
     /**
-      * @see https://developer.github.com/v3/gists/#list-gist-commits
+      * @see https://docs.github.com/rest/reference/gists#list-gist-commits
       */
-    @JSName("GET /gists/:gist_id/commits")
-    var `GET SlashgistsSlashColongist_idSlashcommits`: ParametersGistsListCommitsEndpoint
+    @JSName("GET /gists/{gist_id}/commits")
+    var `GET SlashgistsSlashLeftcurlybracketgist_idRightcurlybracketSlashcommits`: `16`
     
     /**
-      * @see https://developer.github.com/v3/gists/#list-gist-forks
+      * @see https://docs.github.com/rest/reference/gists#list-gist-forks
       */
-    @JSName("GET /gists/:gist_id/forks")
-    var `GET SlashgistsSlashColongist_idSlashforks`: ParametersGistsListForksEndpoint
+    @JSName("GET /gists/{gist_id}/forks")
+    var `GET SlashgistsSlashLeftcurlybracketgist_idRightcurlybracketSlashforks`: `17`
     
     /**
-      * @see https://developer.github.com/v3/gists/#list-public-gists
+      * @see https://docs.github.com/rest/reference/gists#list-public-gists
       */
     @JSName("GET /gists/public")
-    var `GET SlashgistsSlashpublic`: ParametersGistsListPublicEndpoint
+    var `GET SlashgistsSlashpublic`: `13`
     
     /**
-      * @see https://developer.github.com/v3/gists/#list-starred-gists
+      * @see https://docs.github.com/rest/reference/gists#list-starred-gists
       */
     @JSName("GET /gists/starred")
-    var `GET SlashgistsSlashstarred`: ParametersGistsListStarredEndpoint
+    var `GET SlashgistsSlashstarred`: `14`
     
     /**
-      * @see https://developer.github.com/v3/apps/installations/#list-repositories-accessible-to-the-app-installation
+      * @see https://docs.github.com/rest/reference/apps#list-repositories-accessible-to-the-app-installation
       */
     @JSName("GET /installation/repositories")
-    var `GET SlashinstallationSlashrepositories`: ParametersAppsListReposAccessibleToInstallationEndpoint
+    var `GET SlashinstallationSlashrepositories`: `19`
     
     /**
-      * @see https://developer.github.com/v3/issues/#list-issues-assigned-to-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/issues#list-issues-assigned-to-the-authenticated-user
       */
     @JSName("GET /issues")
-    var `GET Slashissues`: ParametersIssuesListEndpoint
+    var `GET Slashissues`: `20`
     
     /**
-      * @see https://developer.github.com/v3/apps/marketplace/#list-plans
+      * @see https://docs.github.com/rest/reference/licenses#get-all-commonly-used-licenses
+      */
+    @JSName("GET /licenses")
+    var `GET Slashlicenses`: `21`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/apps#list-plans
       */
     @JSName("GET /marketplace_listing/plans")
-    var `GET Slashmarketplace_listingSlashplans`: ParametersAppsListPlansEndpoint
+    var `GET Slashmarketplace_listingSlashplans`: `22`
     
     /**
-      * @see https://developer.github.com/v3/apps/marketplace/#list-accounts-for-a-plan
+      * @see https://docs.github.com/rest/reference/apps#list-accounts-for-a-plan
       */
-    @JSName("GET /marketplace_listing/plans/:plan_id/accounts")
-    var `GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`: ParametersAppsListAccountsForPlanEndpoint
+    @JSName("GET /marketplace_listing/plans/{plan_id}/accounts")
+    var `GET Slashmarketplace_listingSlashplansSlashLeftcurlybracketplan_idRightcurlybracketSlashaccounts`: `23`
     
     /**
-      * @see https://developer.github.com/v3/apps/marketplace/#list-plans-stubbed
+      * @see https://docs.github.com/rest/reference/apps#list-plans-stubbed
       */
     @JSName("GET /marketplace_listing/stubbed/plans")
-    var `GET Slashmarketplace_listingSlashstubbedSlashplans`: ParametersAppsListPlansStubbedEndpoint
+    var `GET Slashmarketplace_listingSlashstubbedSlashplans`: `24`
     
     /**
-      * @see https://developer.github.com/v3/apps/marketplace/#list-accounts-for-a-plan-stubbed
+      * @see https://docs.github.com/rest/reference/apps#list-accounts-for-a-plan-stubbed
       */
-    @JSName("GET /marketplace_listing/stubbed/plans/:plan_id/accounts")
-    var `GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`: ParametersAppsListAccountsForPlanStubbedEndpoint
+    @JSName("GET /marketplace_listing/stubbed/plans/{plan_id}/accounts")
+    var `GET Slashmarketplace_listingSlashstubbedSlashplansSlashLeftcurlybracketplan_idRightcurlybracketSlashaccounts`: `25`
     
     /**
-      * @see https://developer.github.com/v3/activity/notifications/#list-notifications-for-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/activity#list-public-events-for-a-network-of-repositories
+      */
+    @JSName("GET /networks/{owner}/{repo}/events")
+    var `GET SlashnetworksSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashevents`: `26`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/activity#list-notifications-for-the-authenticated-user
       */
     @JSName("GET /notifications")
-    var `GET Slashnotifications`: ParametersActivityListNotificationsForAuthenticatedUserEndpoint
+    var `GET Slashnotifications`: `27`
     
     /**
-      * @see https://developer.github.com/v3/orgs/#list-organizations
+      * @see https://docs.github.com/rest/reference/orgs#list-organizations
       */
     @JSName("GET /organizations")
-    var `GET Slashorganizations`: ParametersOrgsListEndpoint
+    var `GET Slashorganizations`: `28`
     
     /**
-      * @see https://developer.github.com/v3/actions/self-hosted-runner-groups/#list-self-hosted-runner-groups-for-an-organization
+      * @see https://docs.github.com/rest/reference/actions#list-repositories-with-github-actions-cache-usage-for-an-organization
       */
-    @JSName("GET /orgs/:org/actions/runner-groups")
-    var `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`: ParametersActionsListSelfHostedRunnerGroupsForOrgEndpoint
+    @JSName("GET /orgs/{org}/actions/cache/usage-by-repository")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashcacheSlashusage-by-repository`: `30`
     
     /**
-      * @see https://developer.github.com/v3/actions/self-hosted-runner-groups/#list-repository-access-to-a-self-hosted-runner-group-in-an-organization
+      * @see https://docs.github.com/rest/reference/actions#list-selected-repositories-enabled-for-github-actions-in-an-organization
       */
-    @JSName("GET /orgs/:org/actions/runner-groups/:runner_group_id/repositories")
-    var `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`: ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint
+    @JSName("GET /orgs/{org}/actions/permissions/repositories")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashpermissionsSlashrepositories`: `32`
     
     /**
-      * @see https://developer.github.com/v3/actions/self-hosted-runner-groups/#list-self-hosted-runners-in-a-group-for-an-organization
+      * @see https://docs.github.com/rest/reference/actions#list-self-hosted-runner-groups-for-an-organization
       */
-    @JSName("GET /orgs/:org/actions/runner-groups/:runner_group_id/runners")
-    var `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`: ParametersActionsListSelfHostedRunnersInGroupForOrgEndpoint
+    @JSName("GET /orgs/{org}/actions/runner-groups")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groups`: `34`
     
     /**
-      * @see https://developer.github.com/v3/actions/self-hosted-runners/#list-self-hosted-runners-for-an-organization
+      * @see https://docs.github.com/rest/reference/actions#list-repository-access-to-a-self-hosted-runner-group-in-an-organization
       */
-    @JSName("GET /orgs/:org/actions/runners")
-    var `GET SlashorgsSlashColonorgSlashactionsSlashrunners`: ParametersActionsListSelfHostedRunnersForOrgEndpoint
+    @JSName("GET /orgs/{org}/actions/runner-groups/{runner_group_id}/repositories")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashrepositories`: `36`
     
     /**
-      * @see https://developer.github.com/v3/actions/self-hosted-runners/#list-runner-applications-for-an-organization
+      * @see https://docs.github.com/rest/reference/actions#list-self-hosted-runners-in-a-group-for-an-organization
       */
-    @JSName("GET /orgs/:org/actions/runners/downloads")
-    var `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`: ParametersActionsListRunnerApplicationsForOrgEndpoint
+    @JSName("GET /orgs/{org}/actions/runner-groups/{runner_group_id}/runners")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashrunners`: `38`
     
     /**
-      * @see https://developer.github.com/v3/actions/secrets/#list-organization-secrets
+      * @see https://docs.github.com/rest/reference/actions#list-self-hosted-runners-for-an-organization
       */
-    @JSName("GET /orgs/:org/actions/secrets")
-    var `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`: ParametersActionsListOrgSecretsEndpoint
+    @JSName("GET /orgs/{org}/actions/runners")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunners`: `40`
     
     /**
-      * @see https://developer.github.com/v3/actions/secrets/#list-selected-repositories-for-an-organization-secret
+      * @see https://docs.github.com/rest/reference/actions#list-organization-secrets
       */
-    @JSName("GET /orgs/:org/actions/secrets/:secret_name/repositories")
-    var `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`: ParametersActionsListSelectedReposForOrgSecretEndpoint
+    @JSName("GET /orgs/{org}/actions/secrets")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashsecrets`: `42`
     
     /**
-      * @see https://developer.github.com/v3/orgs/blocking/#list-users-blocked-by-an-organization
+      * @see https://docs.github.com/rest/reference/actions#list-selected-repositories-for-an-organization-secret
       */
-    @JSName("GET /orgs/:org/blocks")
-    var `GET SlashorgsSlashColonorgSlashblocks`: ParametersOrgsListBlockedUsersEndpoint
+    @JSName("GET /orgs/{org}/actions/secrets/{secret_name}/repositories")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracketSlashrepositories`: `44`
     
     /**
-      * @see https://developer.github.com/v3/orgs/#list-saml-sso-authorizations-for-an-organization
+      * @see https://docs.github.com/rest/reference/orgs#get-audit-log
       */
-    @JSName("GET /orgs/:org/credential-authorizations")
-    var `GET SlashorgsSlashColonorgSlashcredential-authorizations`: ParametersOrgsListSamlSsoAuthorizationsEndpoint
+    @JSName("GET /orgs/{org}/audit-log")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashaudit-log`: `45`
     
     /**
-      * @see https://developer.github.com/v3/orgs/hooks/#list-organization-webhooks
+      * @see https://docs.github.com/rest/reference/orgs#list-users-blocked-by-an-organization
       */
-    @JSName("GET /orgs/:org/hooks")
-    var `GET SlashorgsSlashColonorgSlashhooks`: ParametersOrgsListWebhooksEndpoint
+    @JSName("GET /orgs/{org}/blocks")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocks`: `46`
     
     /**
-      * @see https://developer.github.com/v3/orgs/#list-app-installations-for-an-organization
+      * @see https://docs.github.com/rest/reference/code-scanning#list-code-scanning-alerts-by-organization
       */
-    @JSName("GET /orgs/:org/installations")
-    var `GET SlashorgsSlashColonorgSlashinstallations`: ParametersOrgsListAppInstallationsEndpoint
+    @JSName("GET /orgs/{org}/code-scanning/alerts")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcode-scanningSlashalerts`: `47`
     
     /**
-      * @see https://developer.github.com/v3/orgs/members/#list-pending-organization-invitations
+      * @see https://docs.github.com/rest/reference/codespaces#list-in-organization
       */
-    @JSName("GET /orgs/:org/invitations")
-    var `GET SlashorgsSlashColonorgSlashinvitations`: ParametersOrgsListPendingInvitationsEndpoint
+    @JSName("GET /orgs/{org}/codespaces")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcodespaces`: `49`
     
     /**
-      * @see https://developer.github.com/v3/orgs/members/#list-organization-invitation-teams
+      * @see https://docs.github.com/rest/reference/orgs#list-saml-sso-authorizations-for-an-organization
       */
-    @JSName("GET /orgs/:org/invitations/:invitation_id/teams")
-    var `GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`: ParametersOrgsListInvitationTeamsEndpoint
+    @JSName("GET /orgs/{org}/credential-authorizations")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizations`: `50`
     
     /**
-      * @see https://developer.github.com/v3/issues/#list-organization-issues-assigned-to-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/dependabot#list-organization-secrets
       */
-    @JSName("GET /orgs/:org/issues")
-    var `GET SlashorgsSlashColonorgSlashissues`: ParametersIssuesListForOrgEndpoint
+    @JSName("GET /orgs/{org}/dependabot/secrets")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashdependabotSlashsecrets`: `52`
     
     /**
-      * @see https://developer.github.com/v3/orgs/members/#list-organization-members
+      * @see https://docs.github.com/rest/reference/dependabot#list-selected-repositories-for-an-organization-secret
       */
-    @JSName("GET /orgs/:org/members")
-    var `GET SlashorgsSlashColonorgSlashmembers`: ParametersOrgsListMembersEndpoint
+    @JSName("GET /orgs/{org}/dependabot/secrets/{secret_name}/repositories")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashdependabotSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracketSlashrepositories`: `54`
     
     /**
-      * @see https://developer.github.com/v3/migrations/orgs/#list-organization-migrations
+      * @see https://docs.github.com/rest/reference/activity#list-public-organization-events
       */
-    @JSName("GET /orgs/:org/migrations")
-    var `GET SlashorgsSlashColonorgSlashmigrations`: ParametersMigrationsListForOrgEndpoint
+    @JSName("GET /orgs/{org}/events")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashevents`: `55`
     
     /**
-      * @see https://developer.github.com/v3/migrations/orgs/#list-repositories-in-an-organization-migration
+      * @see https://docs.github.com/rest/reference/teams#list-external-idp-groups-for-an-organization
       */
-    @JSName("GET /orgs/:org/migrations/:migration_id/repositories")
-    var `GET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`: ParametersMigrationsListReposForOrgEndpoint
+    @JSName("GET /orgs/{org}/external-groups")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groups`: `57`
     
     /**
-      * @see https://developer.github.com/v3/orgs/outside_collaborators/#list-outside-collaborators-for-an-organization
+      * @see https://docs.github.com/rest/reference/orgs#list-failed-organization-invitations
       */
-    @JSName("GET /orgs/:org/outside_collaborators")
-    var `GET SlashorgsSlashColonorgSlashoutside_collaborators`: ParametersOrgsListOutsideCollaboratorsEndpoint
+    @JSName("GET /orgs/{org}/failed_invitations")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashfailed_invitations`: `58`
     
     /**
-      * @see https://developer.github.com/v3/projects/#list-organization-projects
+      * @see https://docs.github.com/rest/reference/orgs#list-organization-webhooks
       */
-    @JSName("GET /orgs/:org/projects")
-    var `GET SlashorgsSlashColonorgSlashprojects`: ParametersProjectsListForOrgEndpoint
+    @JSName("GET /orgs/{org}/hooks")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashhooks`: `59`
     
     /**
-      * @see https://developer.github.com/v3/orgs/members/#list-public-organization-members
+      * @see https://docs.github.com/rest/reference/orgs#list-deliveries-for-an-organization-webhook
       */
-    @JSName("GET /orgs/:org/public_members")
-    var `GET SlashorgsSlashColonorgSlashpublic_members`: ParametersOrgsListPublicMembersEndpoint
+    @JSName("GET /orgs/{org}/hooks/{hook_id}/deliveries")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashhooksSlashLeftcurlybrackethook_idRightcurlybracketSlashdeliveries`: `60`
     
     /**
-      * @see https://developer.github.com/v3/repos/#list-organization-repositories
+      * @see https://docs.github.com/rest/reference/orgs#list-app-installations-for-an-organization
       */
-    @JSName("GET /orgs/:org/repos")
-    var `GET SlashorgsSlashColonorgSlashrepos`: ParametersReposListForOrgEndpoint
+    @JSName("GET /orgs/{org}/installations")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashinstallations`: `62`
     
     /**
-      * @see https://developer.github.com/v3/teams/team_sync/#list-idp-groups-for-an-organization
+      * @see https://docs.github.com/rest/reference/orgs#list-pending-organization-invitations
       */
-    @JSName("GET /orgs/:org/team-sync/groups")
-    var `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`: ParametersTeamsListIdPGroupsForOrgEndpoint
+    @JSName("GET /orgs/{org}/invitations")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashinvitations`: `63`
     
     /**
-      * @see https://developer.github.com/v3/teams/#list-teams
+      * @see https://docs.github.com/rest/reference/orgs#list-organization-invitation-teams
       */
-    @JSName("GET /orgs/:org/teams")
-    var `GET SlashorgsSlashColonorgSlashteams`: ParametersTeamsListEndpoint
+    @JSName("GET /orgs/{org}/invitations/{invitation_id}/teams")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashinvitationsSlashLeftcurlybracketinvitation_idRightcurlybracketSlashteams`: `64`
     
     /**
-      * @see https://developer.github.com/v3/teams/discussions/#list-discussions
+      * @see https://docs.github.com/rest/reference/issues#list-organization-issues-assigned-to-the-authenticated-user
       */
-    @JSName("GET /orgs/:org/teams/:team_slug/discussions")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`: ParametersTeamsListDiscussionsInOrgEndpoint
+    @JSName("GET /orgs/{org}/issues")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashissues`: `65`
     
     /**
-      * @see https://developer.github.com/v3/teams/discussion_comments/#list-discussion-comments
+      * @see https://docs.github.com/rest/reference/orgs#list-organization-members
       */
-    @JSName("GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`: ParametersTeamsListDiscussionCommentsInOrgEndpoint
+    @JSName("GET /orgs/{org}/members")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashmembers`: `66`
     
     /**
-      * @see https://developer.github.com/v3/reactions/#list-reactions-for-a-team-discussion-comment
+      * @see https://docs.github.com/rest/reference/migrations#list-organization-migrations
       */
-    @JSName("GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number/reactions")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`: ParametersReactionsListForTeamDiscussionCommentInOrgEndpoint
+    @JSName("GET /orgs/{org}/migrations")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashmigrations`: `67`
     
     /**
-      * @see https://developer.github.com/v3/reactions/#list-reactions-for-a-team-discussion
+      * @see https://docs.github.com/rest/reference/migrations#list-repositories-in-an-organization-migration
       */
-    @JSName("GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/reactions")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`: ParametersReactionsListForTeamDiscussionInOrgEndpoint
+    @JSName("GET /orgs/{org}/migrations/{migration_id}/repositories")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashmigrationsSlashLeftcurlybracketmigration_idRightcurlybracketSlashrepositories`: `68`
     
     /**
-      * @see https://developer.github.com/v3/teams/members/#list-pending-team-invitations
+      * @see https://docs.github.com/rest/reference/orgs#list-outside-collaborators-for-an-organization
       */
-    @JSName("GET /orgs/:org/teams/:team_slug/invitations")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`: ParametersTeamsListPendingInvitationsInOrgEndpoint
+    @JSName("GET /orgs/{org}/outside_collaborators")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashoutside_collaborators`: `69`
     
     /**
-      * @see https://developer.github.com/v3/teams/members/#list-team-members
+      * @see https://docs.github.com/rest/reference/packages#list-packages-for-an-organization
       */
-    @JSName("GET /orgs/:org/teams/:team_slug/members")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`: ParametersTeamsListMembersInOrgEndpoint
+    @JSName("GET /orgs/{org}/packages")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashpackages`: `70`
     
     /**
-      * @see https://developer.github.com/v3/teams/#list-team-projects
+      * @see https://docs.github.com/rest/packages#get-all-package-versions-for-a-package-owned-by-an-organization
       */
-    @JSName("GET /orgs/:org/teams/:team_slug/projects")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`: ParametersTeamsListProjectsInOrgEndpoint
+    @JSName("GET /orgs/{org}/packages/{package_type}/{package_name}/versions")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashpackagesSlashLeftcurlybracketpackage_typeRightcurlybracketSlashLeftcurlybracketpackage_nameRightcurlybracketSlashversions`: `71`
     
     /**
-      * @see https://developer.github.com/v3/teams/#list-team-repositories
+      * @see https://docs.github.com/rest/reference/projects#list-organization-projects
       */
-    @JSName("GET /orgs/:org/teams/:team_slug/repos")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`: ParametersTeamsListReposInOrgEndpoint
+    @JSName("GET /orgs/{org}/projects")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashprojects`: `72`
     
     /**
-      * @see https://developer.github.com/v3/teams/team_sync/#list-idp-groups-for-a-team
+      * @see https://docs.github.com/rest/reference/orgs#list-public-organization-members
       */
-    @JSName("GET /orgs/:org/teams/:team_slug/team-sync/group-mappings")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`: ParametersTeamsListIdPGroupsInOrgEndpoint
+    @JSName("GET /orgs/{org}/public_members")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashpublic_members`: `73`
     
     /**
-      * @see https://developer.github.com/v3/teams/#list-child-teams
+      * @see https://docs.github.com/rest/reference/repos#list-organization-repositories
       */
-    @JSName("GET /orgs/:org/teams/:team_slug/teams")
-    var `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`: ParametersTeamsListChildInOrgEndpoint
+    @JSName("GET /orgs/{org}/repos")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashrepos`: `74`
     
     /**
-      * @see https://developer.github.com/v3/projects/collaborators/#list-project-collaborators
+      * @see https://docs.github.com/rest/reference/secret-scanning#list-secret-scanning-alerts-for-an-organization
       */
-    @JSName("GET /projects/:project_id/collaborators")
-    var `GET SlashprojectsSlashColonproject_idSlashcollaborators`: ParametersProjectsListCollaboratorsEndpoint
+    @JSName("GET /orgs/{org}/secret-scanning/alerts")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashsecret-scanningSlashalerts`: `75`
     
     /**
-      * @see https://developer.github.com/v3/projects/columns/#list-project-columns
+      * @see https://docs.github.com/rest/reference/billing#get-github-advanced-security-active-committers-for-an-organization
       */
-    @JSName("GET /projects/:project_id/columns")
-    var `GET SlashprojectsSlashColonproject_idSlashcolumns`: ParametersProjectsListColumnsEndpoint
+    @JSName("GET /orgs/{org}/settings/billing/advanced-security")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashsettingsSlashbillingSlashadvanced-security`: `77`
     
     /**
-      * @see https://developer.github.com/v3/projects/cards/#list-project-cards
+      * @see https://docs.github.com/rest/reference/teams#list-idp-groups-for-an-organization
       */
-    @JSName("GET /projects/columns/:column_id/cards")
-    var `GET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`: ParametersProjectsListCardsEndpoint
+    @JSName("GET /orgs/{org}/team-sync/groups")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteam-syncSlashgroups`: `79`
     
     /**
-      * @see https://developer.github.com/v3/actions/artifacts/#list-artifacts-for-a-repository
+      * @see https://docs.github.com/rest/reference/teams#list-teams
       */
-    @JSName("GET /repos/:owner/:repo/actions/artifacts")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`: ParametersActionsListArtifactsForRepoEndpoint
+    @JSName("GET /orgs/{org}/teams")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteams`: `80`
     
     /**
-      * @see https://developer.github.com/v3/actions/self-hosted-runners/#list-self-hosted-runners-for-a-repository
+      * @see https://docs.github.com/rest/reference/teams#list-discussions
       */
-    @JSName("GET /repos/:owner/:repo/actions/runners")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`: ParametersActionsListSelfHostedRunnersForRepoEndpoint
+    @JSName("GET /orgs/{org}/teams/{team_slug}/discussions")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussions`: `81`
     
     /**
-      * @see https://developer.github.com/v3/actions/self-hosted-runners/#list-runner-applications-for-a-repository
+      * @see https://docs.github.com/rest/reference/teams#list-discussion-comments
       */
-    @JSName("GET /repos/:owner/:repo/actions/runners/downloads")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`: ParametersActionsListRunnerApplicationsForRepoEndpoint
+    @JSName("GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcomments`: `82`
     
     /**
-      * @see https://developer.github.com/v3/actions/workflow-runs/#list-workflow-runs-for-a-repository
+      * @see https://docs.github.com/rest/reference/reactions#list-reactions-for-a-team-discussion-comment
       */
-    @JSName("GET /repos/:owner/:repo/actions/runs")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`: ParametersActionsListWorkflowRunsForRepoEndpoint
+    @JSName("GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}/reactions")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_numberRightcurlybracketSlashreactions`: `83`
     
     /**
-      * @see https://developer.github.com/v3/actions/artifacts/#list-workflow-run-artifacts
+      * @see https://docs.github.com/rest/reference/reactions#list-reactions-for-a-team-discussion
       */
-    @JSName("GET /repos/:owner/:repo/actions/runs/:run_id/artifacts")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`: ParametersActionsListWorkflowRunArtifactsEndpoint
+    @JSName("GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/reactions")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashreactions`: `84`
     
     /**
-      * @see https://developer.github.com/v3/actions/workflow-jobs/#list-jobs-for-a-workflow-run
+      * @see https://docs.github.com/rest/reference/teams#list-pending-team-invitations
       */
-    @JSName("GET /repos/:owner/:repo/actions/runs/:run_id/jobs")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`: ParametersActionsListJobsForWorkflowRunEndpoint
+    @JSName("GET /orgs/{org}/teams/{team_slug}/invitations")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashinvitations`: `85`
     
     /**
-      * @see https://developer.github.com/v3/actions/secrets/#list-repository-secrets
+      * @see https://docs.github.com/rest/reference/teams#list-team-members
       */
-    @JSName("GET /repos/:owner/:repo/actions/secrets")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`: ParametersActionsListRepoSecretsEndpoint
+    @JSName("GET /orgs/{org}/teams/{team_slug}/members")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashmembers`: `86`
     
     /**
-      * @see https://developer.github.com/v3/actions/workflows/#list-repository-workflows
+      * @see https://docs.github.com/rest/reference/teams#list-team-projects
       */
-    @JSName("GET /repos/:owner/:repo/actions/workflows")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`: ParametersActionsListRepoWorkflowsEndpoint
+    @JSName("GET /orgs/{org}/teams/{team_slug}/projects")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashprojects`: `87`
     
     /**
-      * @see https://developer.github.com/v3/actions/workflow-runs/#list-workflow-runs
+      * @see https://docs.github.com/rest/reference/teams#list-team-repositories
       */
-    @JSName("GET /repos/:owner/:repo/actions/workflows/:workflow_id/runs")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`: ParametersActionsListWorkflowRunsEndpoint
+    @JSName("GET /orgs/{org}/teams/{team_slug}/repos")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashrepos`: `88`
     
     /**
-      * @see https://developer.github.com/v3/issues/assignees/#list-assignees
+      * @see https://docs.github.com/rest/reference/teams#list-child-teams
       */
-    @JSName("GET /repos/:owner/:repo/assignees")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashassignees`: ParametersIssuesListAssigneesEndpoint
+    @JSName("GET /orgs/{org}/teams/{team_slug}/teams")
+    var `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteams`: `89`
     
     /**
-      * @see https://developer.github.com/v3/repos/branches/#list-branches
+      * @see https://docs.github.com/rest/reference/projects#list-project-collaborators
       */
-    @JSName("GET /repos/:owner/:repo/branches")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashbranches`: ParametersReposListBranchesEndpoint
+    @JSName("GET /projects/{project_id}/collaborators")
+    var `GET SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracketSlashcollaborators`: `91`
     
     /**
-      * @see https://developer.github.com/v3/checks/runs/#list-check-run-annotations
+      * @see https://docs.github.com/rest/reference/projects#list-project-columns
       */
-    @JSName("GET /repos/:owner/:repo/check-runs/:check_run_id/annotations")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`: ParametersChecksListAnnotationsEndpoint
+    @JSName("GET /projects/{project_id}/columns")
+    var `GET SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracketSlashcolumns`: `92`
     
     /**
-      * @see https://developer.github.com/v3/checks/runs/#list-check-runs-in-a-check-suite
+      * @see https://docs.github.com/rest/reference/projects#list-project-cards
       */
-    @JSName("GET /repos/:owner/:repo/check-suites/:check_suite_id/check-runs")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`: ParametersChecksListForSuiteEndpoint
+    @JSName("GET /projects/columns/{column_id}/cards")
+    var `GET SlashprojectsSlashcolumnsSlashLeftcurlybracketcolumn_idRightcurlybracketSlashcards`: `90`
     
     /**
-      * @see https://developer.github.com/v3/code-scanning/#list-code-scanning-alerts-for-a-repository
+      * @see https://docs.github.com/rest/reference/actions#list-artifacts-for-a-repository
       */
-    @JSName("GET /repos/:owner/:repo/code-scanning/alerts")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`: ParametersCodeScanningListAlertsForRepoEndpoint
+    @JSName("GET /repos/{owner}/{repo}/actions/artifacts")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashartifacts`: `94`
     
     /**
-      * @see https://developer.github.com/v3/code-scanning/#list-recent-analyses
+      * @see https://docs.github.com/rest/actions/cache#list-github-actions-caches-for-a-repository
       */
-    @JSName("GET /repos/:owner/:repo/code-scanning/analyses")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`: ParametersCodeScanningListRecentAnalysesEndpoint
+    @JSName("GET /repos/{owner}/{repo}/actions/caches")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashcaches`: `96`
     
     /**
-      * @see https://developer.github.com/v3/repos/collaborators/#list-repository-collaborators
+      * @see https://docs.github.com/rest/reference/actions#list-self-hosted-runners-for-a-repository
       */
-    @JSName("GET /repos/:owner/:repo/collaborators")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`: ParametersReposListCollaboratorsEndpoint
+    @JSName("GET /repos/{owner}/{repo}/actions/runners")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunners`: `98`
     
     /**
-      * @see https://developer.github.com/v3/repos/comments/#list-commit-comments-for-a-repository
+      * @see https://docs.github.com/rest/reference/actions#list-workflow-runs-for-a-repository
       */
-    @JSName("GET /repos/:owner/:repo/comments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`: ParametersReposListCommitCommentsForRepoEndpoint
+    @JSName("GET /repos/{owner}/{repo}/actions/runs")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashruns`: `100`
     
     /**
-      * @see https://developer.github.com/v3/reactions/#list-reactions-for-a-commit-comment
+      * @see https://docs.github.com/rest/reference/actions#list-workflow-run-artifacts
       */
-    @JSName("GET /repos/:owner/:repo/comments/:comment_id/reactions")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`: ParametersReactionsListForCommitCommentEndpoint
+    @JSName("GET /repos/{owner}/{repo}/actions/runs/{run_id}/artifacts")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunsSlashLeftcurlybracketrun_idRightcurlybracketSlashartifacts`: `102`
     
     /**
-      * @see https://developer.github.com/v3/repos/commits/#list-commits
+      * @see https://docs.github.com/rest/reference/actions#list-jobs-for-a-workflow-run-attempt
       */
-    @JSName("GET /repos/:owner/:repo/commits")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommits`: ParametersReposListCommitsEndpoint
+    @JSName("GET /repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}/jobs")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunsSlashLeftcurlybracketrun_idRightcurlybracketSlashattemptsSlashLeftcurlybracketattempt_numberRightcurlybracketSlashjobs`: `104`
     
     /**
-      * @see https://developer.github.com/v3/repos/commits/#list-branches-for-head-commit
+      * @see https://docs.github.com/rest/reference/actions#list-jobs-for-a-workflow-run
       */
-    @JSName("GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`: ParametersReposListBranchesForHeadCommitEndpoint
+    @JSName("GET /repos/{owner}/{repo}/actions/runs/{run_id}/jobs")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunsSlashLeftcurlybracketrun_idRightcurlybracketSlashjobs`: `106`
     
     /**
-      * @see https://developer.github.com/v3/repos/comments/#list-commit-comments
+      * @see https://docs.github.com/rest/reference/actions#list-repository-secrets
       */
-    @JSName("GET /repos/:owner/:repo/commits/:commit_sha/comments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`: ParametersReposListCommentsForCommitEndpoint
+    @JSName("GET /repos/{owner}/{repo}/actions/secrets")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashsecrets`: `108`
     
     /**
-      * @see https://developer.github.com/v3/repos/commits/#list-pull-requests-associated-with-a-commit
+      * @see https://docs.github.com/rest/reference/actions#list-repository-workflows
       */
-    @JSName("GET /repos/:owner/:repo/commits/:commit_sha/pulls")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`: ParametersReposListPullRequestsAssociatedWithCommitEndpoint
+    @JSName("GET /repos/{owner}/{repo}/actions/workflows")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashworkflows`: `110`
     
     /**
-      * @see https://developer.github.com/v3/checks/runs/#list-check-runs-for-a-git-reference
+      * @see https://docs.github.com/rest/reference/actions#list-workflow-runs
       */
-    @JSName("GET /repos/:owner/:repo/commits/:ref/check-runs")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`: ParametersChecksListForRefEndpoint
+    @JSName("GET /repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashworkflowsSlashLeftcurlybracketworkflow_idRightcurlybracketSlashruns`: `112`
     
     /**
-      * @see https://developer.github.com/v3/checks/suites/#list-check-suites-for-a-git-reference
+      * @see https://docs.github.com/rest/reference/issues#list-assignees
       */
-    @JSName("GET /repos/:owner/:repo/commits/:ref/check-suites")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`: ParametersChecksListSuitesForRefEndpoint
+    @JSName("GET /repos/{owner}/{repo}/assignees")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashassignees`: `113`
     
     /**
-      * @see https://developer.github.com/v3/repos/statuses/#list-commit-statuses-for-a-reference
+      * @see https://docs.github.com/rest/reference/repos#list-branches
       */
-    @JSName("GET /repos/:owner/:repo/commits/:ref/statuses")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`: ParametersReposListCommitStatusesForRefEndpoint
+    @JSName("GET /repos/{owner}/{repo}/branches")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashbranches`: `114`
     
     /**
-      * @see https://developer.github.com/v3/repos/#list-repository-contributors
+      * @see https://docs.github.com/rest/reference/checks#list-check-run-annotations
       */
-    @JSName("GET /repos/:owner/:repo/contributors")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`: ParametersReposListContributorsEndpoint
+    @JSName("GET /repos/{owner}/{repo}/check-runs/{check_run_id}/annotations")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcheck-runsSlashLeftcurlybracketcheck_run_idRightcurlybracketSlashannotations`: `115`
     
     /**
-      * @see https://developer.github.com/v3/repos/deployments/#list-deployments
+      * @see https://docs.github.com/rest/reference/checks#list-check-runs-in-a-check-suite
       */
-    @JSName("GET /repos/:owner/:repo/deployments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`: ParametersReposListDeploymentsEndpoint
+    @JSName("GET /repos/{owner}/{repo}/check-suites/{check_suite_id}/check-runs")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcheck-suitesSlashLeftcurlybracketcheck_suite_idRightcurlybracketSlashcheck-runs`: `117`
     
     /**
-      * @see https://developer.github.com/v3/repos/deployments/#list-deployment-statuses
+      * @see https://docs.github.com/rest/reference/code-scanning#list-code-scanning-alerts-for-a-repository
       */
-    @JSName("GET /repos/:owner/:repo/deployments/:deployment_id/statuses")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`: ParametersReposListDeploymentStatusesEndpoint
+    @JSName("GET /repos/{owner}/{repo}/code-scanning/alerts")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcode-scanningSlashalerts`: `118`
     
     /**
-      * @see https://developer.github.com/v3/repos/forks/#list-forks
+      * @see https://docs.github.com/rest/reference/code-scanning#list-instances-of-a-code-scanning-alert
       */
-    @JSName("GET /repos/:owner/:repo/forks")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashforks`: ParametersReposListForksEndpoint
+    @JSName("GET /repos/{owner}/{repo}/code-scanning/alerts/{alert_number}/instances")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcode-scanningSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracketSlashinstances`: `119`
     
     /**
-      * @see https://developer.github.com/v3/git/refs/#list-matching-references
+      * @see https://docs.github.com/rest/reference/code-scanning#list-code-scanning-analyses-for-a-repository
       */
-    @JSName("GET /repos/:owner/:repo/git/matching-refs/:ref")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`: ParametersGitListMatchingRefsEndpoint
+    @JSName("GET /repos/{owner}/{repo}/code-scanning/analyses")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcode-scanningSlashanalyses`: `120`
     
     /**
-      * @see https://developer.github.com/v3/repos/hooks/#list-repository-webhooks
+      * @see https://docs.github.com/rest/reference/codespaces#list-codespaces-in-a-repository-for-the-authenticated-user
       */
-    @JSName("GET /repos/:owner/:repo/hooks")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`: ParametersReposListWebhooksEndpoint
+    @JSName("GET /repos/{owner}/{repo}/codespaces")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcodespaces`: `122`
     
     /**
-      * @see https://developer.github.com/v3/repos/invitations/#list-repository-invitations
+      * @see https://docs.github.com/rest/reference/codespaces#list-devcontainers-in-a-repository-for-the-authenticated-user
       */
-    @JSName("GET /repos/:owner/:repo/invitations")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashinvitations`: ParametersReposListInvitationsEndpoint
+    @JSName("GET /repos/{owner}/{repo}/codespaces/devcontainers")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcodespacesSlashdevcontainers`: `124`
     
     /**
-      * @see https://developer.github.com/v3/issues/#list-repository-issues
+      * @see https://docs.github.com/rest/reference/codespaces#list-repository-secrets
       */
-    @JSName("GET /repos/:owner/:repo/issues")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissues`: ParametersIssuesListForRepoEndpoint
+    @JSName("GET /repos/{owner}/{repo}/codespaces/secrets")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcodespacesSlashsecrets`: `126`
     
     /**
-      * @see https://developer.github.com/v3/issues/comments/#list-issue-comments
+      * @see https://docs.github.com/rest/collaborators/collaborators#list-repository-collaborators
       */
-    @JSName("GET /repos/:owner/:repo/issues/:issue_number/comments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`: ParametersIssuesListCommentsEndpoint
+    @JSName("GET /repos/{owner}/{repo}/collaborators")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcollaborators`: `127`
     
     /**
-      * @see https://developer.github.com/v3/issues/events/#list-issue-events
+      * @see https://docs.github.com/rest/commits/comments#list-commit-comments-for-a-repository
       */
-    @JSName("GET /repos/:owner/:repo/issues/:issue_number/events")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`: ParametersIssuesListEventsEndpoint
+    @JSName("GET /repos/{owner}/{repo}/comments")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcomments`: `128`
     
     /**
-      * @see https://developer.github.com/v3/issues/labels/#list-labels-for-an-issue
+      * @see https://docs.github.com/rest/reference/reactions#list-reactions-for-a-commit-comment
       */
-    @JSName("GET /repos/:owner/:repo/issues/:issue_number/labels")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`: ParametersIssuesListLabelsOnIssueEndpoint
+    @JSName("GET /repos/{owner}/{repo}/comments/{comment_id}/reactions")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracketSlashreactions`: `129`
     
     /**
-      * @see https://developer.github.com/v3/reactions/#list-reactions-for-an-issue
+      * @see https://docs.github.com/rest/commits/commits#list-commits
       */
-    @JSName("GET /repos/:owner/:repo/issues/:issue_number/reactions")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`: ParametersReactionsListForIssueEndpoint
+    @JSName("GET /repos/{owner}/{repo}/commits")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommits`: `130`
     
     /**
-      * @see https://developer.github.com/v3/issues/timeline/#list-timeline-events-for-an-issue
+      * @see https://docs.github.com/rest/commits/comments#list-commit-comments
       */
-    @JSName("GET /repos/:owner/:repo/issues/:issue_number/timeline")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`: ParametersIssuesListEventsForTimelineEndpoint
+    @JSName("GET /repos/{owner}/{repo}/commits/{commit_sha}/comments")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketcommit_shaRightcurlybracketSlashcomments`: `131`
     
     /**
-      * @see https://developer.github.com/v3/issues/comments/#list-issue-comments-for-a-repository
+      * @see https://docs.github.com/rest/commits/commits#list-pull-requests-associated-with-a-commit
       */
-    @JSName("GET /repos/:owner/:repo/issues/comments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`: ParametersIssuesListCommentsForRepoEndpoint
+    @JSName("GET /repos/{owner}/{repo}/commits/{commit_sha}/pulls")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketcommit_shaRightcurlybracketSlashpulls`: `132`
     
     /**
-      * @see https://developer.github.com/v3/reactions/#list-reactions-for-an-issue-comment
+      * @see https://docs.github.com/rest/reference/checks#list-check-runs-for-a-git-reference
       */
-    @JSName("GET /repos/:owner/:repo/issues/comments/:comment_id/reactions")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`: ParametersReactionsListForIssueCommentEndpoint
+    @JSName("GET /repos/{owner}/{repo}/commits/{ref}/check-runs")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashcheck-runs`: `134`
     
     /**
-      * @see https://developer.github.com/v3/issues/events/#list-issue-events-for-a-repository
+      * @see https://docs.github.com/rest/reference/checks#list-check-suites-for-a-git-reference
       */
-    @JSName("GET /repos/:owner/:repo/issues/events")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`: ParametersIssuesListEventsForRepoEndpoint
+    @JSName("GET /repos/{owner}/{repo}/commits/{ref}/check-suites")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashcheck-suites`: `136`
     
     /**
-      * @see https://developer.github.com/v3/repos/keys/#list-deploy-keys
+      * @see https://docs.github.com/rest/commits/statuses#get-the-combined-status-for-a-specific-reference
       */
-    @JSName("GET /repos/:owner/:repo/keys")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashkeys`: ParametersReposListDeployKeysEndpoint
+    @JSName("GET /repos/{owner}/{repo}/commits/{ref}/status")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashstatus`: `138`
     
     /**
-      * @see https://developer.github.com/v3/issues/labels/#list-labels-for-a-repository
+      * @see https://docs.github.com/rest/commits/statuses#list-commit-statuses-for-a-reference
       */
-    @JSName("GET /repos/:owner/:repo/labels")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashlabels`: ParametersIssuesListLabelsForRepoEndpoint
+    @JSName("GET /repos/{owner}/{repo}/commits/{ref}/statuses")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashstatuses`: `139`
     
     /**
-      * @see https://developer.github.com/v3/repos/#list-repository-languages
+      * @see https://docs.github.com/rest/reference/repos#list-repository-contributors
       */
-    @JSName("GET /repos/:owner/:repo/languages")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashlanguages`: ParametersReposListLanguagesEndpoint
+    @JSName("GET /repos/{owner}/{repo}/contributors")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcontributors`: `140`
     
     /**
-      * @see https://developer.github.com/v3/issues/milestones/#list-milestones
+      * @see https://docs.github.com/rest/reference/dependabot#list-repository-secrets
       */
-    @JSName("GET /repos/:owner/:repo/milestones")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`: ParametersIssuesListMilestonesEndpoint
+    @JSName("GET /repos/{owner}/{repo}/dependabot/secrets")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashsecrets`: `142`
     
     /**
-      * @see https://developer.github.com/v3/issues/labels/#list-labels-for-issues-in-a-milestone
+      * @see https://docs.github.com/rest/reference/repos#list-deployments
       */
-    @JSName("GET /repos/:owner/:repo/milestones/:milestone_number/labels")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`: ParametersIssuesListLabelsForMilestoneEndpoint
+    @JSName("GET /repos/{owner}/{repo}/deployments")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdeployments`: `143`
     
     /**
-      * @see https://developer.github.com/v3/activity/notifications/#list-repository-notifications-for-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/repos#list-deployment-statuses
       */
-    @JSName("GET /repos/:owner/:repo/notifications")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashnotifications`: ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint
+    @JSName("GET /repos/{owner}/{repo}/deployments/{deployment_id}/statuses")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdeploymentsSlashLeftcurlybracketdeployment_idRightcurlybracketSlashstatuses`: `144`
     
     /**
-      * @see https://developer.github.com/v3/repos/pages/#list-github-pages-builds
+      * @see https://docs.github.com/rest/deployments/environments#list-environments
       */
-    @JSName("GET /repos/:owner/:repo/pages/builds")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`: ParametersReposListPagesBuildsEndpoint
+    @JSName("GET /repos/{owner}/{repo}/environments")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashenvironments`: `146`
     
     /**
-      * @see https://developer.github.com/v3/projects/#list-repository-projects
+      * @see https://docs.github.com/rest/deployments/branch-policies#list-deployment-branch-policies
       */
-    @JSName("GET /repos/:owner/:repo/projects")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashprojects`: ParametersProjectsListForRepoEndpoint
+    @JSName("GET /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashenvironmentsSlashLeftcurlybracketenvironment_nameRightcurlybracketSlashdeployment-branch-policies`: `148`
     
     /**
-      * @see https://developer.github.com/v3/pulls/#list-pull-requests
+      * @see https://docs.github.com/rest/reference/activity#list-repository-events
       */
-    @JSName("GET /repos/:owner/:repo/pulls")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpulls`: ParametersPullsListEndpoint
+    @JSName("GET /repos/{owner}/{repo}/events")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashevents`: `149`
     
     /**
-      * @see https://developer.github.com/v3/pulls/comments/#list-review-comments-on-a-pull-request
+      * @see https://docs.github.com/rest/reference/repos#list-forks
       */
-    @JSName("GET /repos/:owner/:repo/pulls/:pull_number/comments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`: ParametersPullsListReviewCommentsEndpoint
+    @JSName("GET /repos/{owner}/{repo}/forks")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashforks`: `150`
     
     /**
-      * @see https://developer.github.com/v3/pulls/#list-commits-on-a-pull-request
+      * @see https://docs.github.com/rest/webhooks/repos#list-repository-webhooks
       */
-    @JSName("GET /repos/:owner/:repo/pulls/:pull_number/commits")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`: ParametersPullsListCommitsEndpoint
+    @JSName("GET /repos/{owner}/{repo}/hooks")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashhooks`: `151`
     
     /**
-      * @see https://developer.github.com/v3/pulls/#list-pull-requests-files
+      * @see https://docs.github.com/rest/webhooks/repo-deliveries#list-deliveries-for-a-repository-webhook
       */
-    @JSName("GET /repos/:owner/:repo/pulls/:pull_number/files")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`: ParametersPullsListFilesEndpoint
+    @JSName("GET /repos/{owner}/{repo}/hooks/{hook_id}/deliveries")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashhooksSlashLeftcurlybrackethook_idRightcurlybracketSlashdeliveries`: `152`
     
     /**
-      * @see https://developer.github.com/v3/pulls/review_requests/#list-requested-reviewers-for-a-pull-request
+      * @see https://docs.github.com/rest/collaborators/invitations#list-repository-invitations
       */
-    @JSName("GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`: ParametersPullsListRequestedReviewersEndpoint
+    @JSName("GET /repos/{owner}/{repo}/invitations")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashinvitations`: `153`
     
     /**
-      * @see https://developer.github.com/v3/pulls/reviews/#list-reviews-for-a-pull-request
+      * @see https://docs.github.com/rest/reference/issues#list-repository-issues
       */
-    @JSName("GET /repos/:owner/:repo/pulls/:pull_number/reviews")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`: ParametersPullsListReviewsEndpoint
+    @JSName("GET /repos/{owner}/{repo}/issues")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissues`: `154`
     
     /**
-      * @see https://developer.github.com/v3/pulls/reviews/#list-comments-for-a-pull-request-review
+      * @see https://docs.github.com/rest/reference/issues#list-issue-comments
       */
-    @JSName("GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`: ParametersPullsListCommentsForReviewEndpoint
+    @JSName("GET /repos/{owner}/{repo}/issues/{issue_number}/comments")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashcomments`: `158`
     
     /**
-      * @see https://developer.github.com/v3/pulls/comments/#list-review-comments-in-a-repository
+      * @see https://docs.github.com/rest/reference/issues#list-issue-events
       */
-    @JSName("GET /repos/:owner/:repo/pulls/comments")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`: ParametersPullsListReviewCommentsForRepoEndpoint
+    @JSName("GET /repos/{owner}/{repo}/issues/{issue_number}/events")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashevents`: `159`
     
     /**
-      * @see https://developer.github.com/v3/reactions/#list-reactions-for-a-pull-request-review-comment
+      * @see https://docs.github.com/rest/reference/issues#list-labels-for-an-issue
       */
-    @JSName("GET /repos/:owner/:repo/pulls/comments/:comment_id/reactions")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`: ParametersReactionsListForPullRequestReviewCommentEndpoint
+    @JSName("GET /repos/{owner}/{repo}/issues/{issue_number}/labels")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashlabels`: `160`
     
     /**
-      * @see https://developer.github.com/v3/repos/releases/#list-releases
+      * @see https://docs.github.com/rest/reference/reactions#list-reactions-for-an-issue
       */
-    @JSName("GET /repos/:owner/:repo/releases")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashreleases`: ParametersReposListReleasesEndpoint
+    @JSName("GET /repos/{owner}/{repo}/issues/{issue_number}/reactions")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashreactions`: `161`
     
     /**
-      * @see https://developer.github.com/v3/repos/releases/#list-release-assets
+      * @see https://docs.github.com/rest/reference/issues#list-timeline-events-for-an-issue
       */
-    @JSName("GET /repos/:owner/:repo/releases/:release_id/assets")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`: ParametersReposListReleaseAssetsEndpoint
+    @JSName("GET /repos/{owner}/{repo}/issues/{issue_number}/timeline")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashtimeline`: `162`
     
     /**
-      * @see https://developer.github.com/v3/activity/starring/#list-stargazers
+      * @see https://docs.github.com/rest/reference/issues#list-issue-comments-for-a-repository
       */
-    @JSName("GET /repos/:owner/:repo/stargazers")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashstargazers`: ParametersActivityListStargazersForRepoEndpoint
+    @JSName("GET /repos/{owner}/{repo}/issues/comments")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashcomments`: `155`
     
     /**
-      * @see https://developer.github.com/v3/activity/watching/#list-watchers
+      * @see https://docs.github.com/rest/reference/reactions#list-reactions-for-an-issue-comment
       */
-    @JSName("GET /repos/:owner/:repo/subscribers")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`: ParametersActivityListWatchersForRepoEndpoint
+    @JSName("GET /repos/{owner}/{repo}/issues/comments/{comment_id}/reactions")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracketSlashreactions`: `156`
     
     /**
-      * @see https://developer.github.com/v3/repos/#list-repository-tags
+      * @see https://docs.github.com/rest/reference/issues#list-issue-events-for-a-repository
       */
-    @JSName("GET /repos/:owner/:repo/tags")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashtags`: ParametersReposListTagsEndpoint
+    @JSName("GET /repos/{owner}/{repo}/issues/events")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashevents`: `157`
     
     /**
-      * @see https://developer.github.com/v3/repos/#list-repository-teams
+      * @see https://docs.github.com/rest/reference/repos#list-deploy-keys
       */
-    @JSName("GET /repos/:owner/:repo/teams")
-    var `GET SlashreposSlashColonownerSlashColonrepoSlashteams`: ParametersReposListTeamsEndpoint
+    @JSName("GET /repos/{owner}/{repo}/keys")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashkeys`: `163`
     
     /**
-      * @see https://developer.github.com/v3/repos/#list-public-repositories
+      * @see https://docs.github.com/rest/reference/issues#list-labels-for-a-repository
+      */
+    @JSName("GET /repos/{owner}/{repo}/labels")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashlabels`: `164`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/issues#list-milestones
+      */
+    @JSName("GET /repos/{owner}/{repo}/milestones")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashmilestones`: `165`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/issues#list-labels-for-issues-in-a-milestone
+      */
+    @JSName("GET /repos/{owner}/{repo}/milestones/{milestone_number}/labels")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashmilestonesSlashLeftcurlybracketmilestone_numberRightcurlybracketSlashlabels`: `166`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/activity#list-repository-notifications-for-the-authenticated-user
+      */
+    @JSName("GET /repos/{owner}/{repo}/notifications")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashnotifications`: `167`
+    
+    /**
+      * @see https://docs.github.com/rest/pages#list-github-pages-builds
+      */
+    @JSName("GET /repos/{owner}/{repo}/pages/builds")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpagesSlashbuilds`: `168`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/projects#list-repository-projects
+      */
+    @JSName("GET /repos/{owner}/{repo}/projects")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashprojects`: `169`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/pulls#list-pull-requests
+      */
+    @JSName("GET /repos/{owner}/{repo}/pulls")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpulls`: `170`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/pulls#list-review-comments-on-a-pull-request
+      */
+    @JSName("GET /repos/{owner}/{repo}/pulls/{pull_number}/comments")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashcomments`: `173`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/pulls#list-commits-on-a-pull-request
+      */
+    @JSName("GET /repos/{owner}/{repo}/pulls/{pull_number}/commits")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashcommits`: `174`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/pulls#list-pull-requests-files
+      */
+    @JSName("GET /repos/{owner}/{repo}/pulls/{pull_number}/files")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashfiles`: `175`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/pulls#list-reviews-for-a-pull-request
+      */
+    @JSName("GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashreviews`: `176`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/pulls#list-comments-for-a-pull-request-review
+      */
+    @JSName("GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/comments")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashreviewsSlashLeftcurlybracketreview_idRightcurlybracketSlashcomments`: `177`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/pulls#list-review-comments-in-a-repository
+      */
+    @JSName("GET /repos/{owner}/{repo}/pulls/comments")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashcomments`: `171`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/reactions#list-reactions-for-a-pull-request-review-comment
+      */
+    @JSName("GET /repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracketSlashreactions`: `172`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/repos#list-releases
+      */
+    @JSName("GET /repos/{owner}/{repo}/releases")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashreleases`: `178`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/repos#list-release-assets
+      */
+    @JSName("GET /repos/{owner}/{repo}/releases/{release_id}/assets")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashreleasesSlashLeftcurlybracketrelease_idRightcurlybracketSlashassets`: `179`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/reactions/#list-reactions-for-a-release
+      */
+    @JSName("GET /repos/{owner}/{repo}/releases/{release_id}/reactions")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashreleasesSlashLeftcurlybracketrelease_idRightcurlybracketSlashreactions`: `180`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/secret-scanning#list-secret-scanning-alerts-for-a-repository
+      */
+    @JSName("GET /repos/{owner}/{repo}/secret-scanning/alerts")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashsecret-scanningSlashalerts`: `181`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/secret-scanning#list-locations-for-a-secret-scanning-alert
+      */
+    @JSName("GET /repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}/locations")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashsecret-scanningSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracketSlashlocations`: `182`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/activity#list-stargazers
+      */
+    @JSName("GET /repos/{owner}/{repo}/stargazers")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashstargazers`: `183`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/activity#list-watchers
+      */
+    @JSName("GET /repos/{owner}/{repo}/subscribers")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashsubscribers`: `184`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/repos#list-repository-tags
+      */
+    @JSName("GET /repos/{owner}/{repo}/tags")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashtags`: `185`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/repos#list-repository-teams
+      */
+    @JSName("GET /repos/{owner}/{repo}/teams")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashteams`: `186`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/repos#get-all-repository-topics
+      */
+    @JSName("GET /repos/{owner}/{repo}/topics")
+    var `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashtopics`: `188`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/repos#list-public-repositories
       */
     @JSName("GET /repositories")
-    var `GET Slashrepositories`: ParametersReposListPublicEndpoint
+    var `GET Slashrepositories`: `189`
     
     /**
-      * @see https://developer.github.com/v3/enterprise-admin/scim/#list-provisioned-scim groups-for-an-enterprise
+      * @see https://docs.github.com/rest/reference/actions#list-environment-secrets
       */
-    @JSName("GET /scim/v2/enterprises/:enterprise/Groups")
-    var `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`: ParametersEnterpriseAdminListProvisionedGroupsEnterpriseEndpoint
+    @JSName("GET /repositories/{repository_id}/environments/{environment_name}/secrets")
+    var `GET SlashrepositoriesSlashLeftcurlybracketrepository_idRightcurlybracketSlashenvironmentsSlashLeftcurlybracketenvironment_nameRightcurlybracketSlashsecrets`: `191`
     
     /**
-      * @see https://developer.github.com/v3/enterprise-admin/scim/#list-scim-provisioned-identities-for-an-enterprise
-      */
-    @JSName("GET /scim/v2/enterprises/:enterprise/Users")
-    var `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`: ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint
-    
-    /**
-      * @see https://developer.github.com/v3/scim/#list-scim-provisioned-identities
-      */
-    @JSName("GET /scim/v2/organizations/:org/Users")
-    var `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`: ParametersScimListProvisionedIdentitiesEndpoint
-    
-    /**
-      * @see https://developer.github.com/v3/search/#search-code
+      * @see https://docs.github.com/rest/reference/search#search-code
       */
     @JSName("GET /search/code")
-    var `GET SlashsearchSlashcode`: ParametersSearchCodeEndpoint
+    var `GET SlashsearchSlashcode`: `193`
     
     /**
-      * @see https://developer.github.com/v3/search/#search-commits
+      * @see https://docs.github.com/rest/reference/search#search-commits
       */
     @JSName("GET /search/commits")
-    var `GET SlashsearchSlashcommits`: ParametersSearchCommitsEndpoint
+    var `GET SlashsearchSlashcommits`: `195`
     
     /**
-      * @see https://developer.github.com/v3/search/#search-issues-and-pull-requests
+      * @see https://docs.github.com/rest/reference/search#search-issues-and-pull-requests
       */
     @JSName("GET /search/issues")
-    var `GET SlashsearchSlashissues`: ParametersSearchIssuesAndPullRequestsEndpoint
+    var `GET SlashsearchSlashissues`: `197`
     
     /**
-      * @see https://developer.github.com/v3/search/#search-labels
+      * @see https://docs.github.com/rest/reference/search#search-labels
       */
     @JSName("GET /search/labels")
-    var `GET SlashsearchSlashlabels`: ParametersSearchLabelsEndpoint
+    var `GET SlashsearchSlashlabels`: `199`
     
     /**
-      * @see https://developer.github.com/v3/search/#search-repositories
+      * @see https://docs.github.com/rest/reference/search#search-repositories
       */
     @JSName("GET /search/repositories")
-    var `GET SlashsearchSlashrepositories`: ParametersSearchReposEndpoint
+    var `GET SlashsearchSlashrepositories`: `201`
     
     /**
-      * @see https://developer.github.com/v3/search/#search-topics
+      * @see https://docs.github.com/rest/reference/search#search-topics
       */
     @JSName("GET /search/topics")
-    var `GET SlashsearchSlashtopics`: ParametersSearchTopicsEndpoint
+    var `GET SlashsearchSlashtopics`: `203`
     
     /**
-      * @see https://developer.github.com/v3/search/#search-users
+      * @see https://docs.github.com/rest/reference/search#search-users
       */
     @JSName("GET /search/users")
-    var `GET SlashsearchSlashusers`: ParametersSearchUsersEndpoint
+    var `GET SlashsearchSlashusers`: `205`
     
     /**
-      * @see https://developer.github.com/v3/teams/discussions/#list-discussions-legacy
+      * @see https://docs.github.com/rest/reference/teams#list-discussions-legacy
       */
-    @JSName("GET /teams/:team_id/discussions")
-    var `GET SlashteamsSlashColonteam_idSlashdiscussions`: ParametersTeamsListDiscussionsLegacyEndpoint
+    @JSName("GET /teams/{team_id}/discussions")
+    var `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussions`: `206`
     
     /**
-      * @see https://developer.github.com/v3/teams/discussion_comments/#list-discussion-comments-legacy
+      * @see https://docs.github.com/rest/reference/teams#list-discussion-comments-legacy
       */
-    @JSName("GET /teams/:team_id/discussions/:discussion_number/comments")
-    var `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`: ParametersTeamsListDiscussionCommentsLegacyEndpoint
+    @JSName("GET /teams/{team_id}/discussions/{discussion_number}/comments")
+    var `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcomments`: `207`
     
     /**
-      * @see https://developer.github.com/v3/reactions/#list-reactions-for-a-team-discussion-comment-legacy
+      * @see https://docs.github.com/rest/reference/reactions/#list-reactions-for-a-team-discussion-comment-legacy
       */
-    @JSName("GET /teams/:team_id/discussions/:discussion_number/comments/:comment_number/reactions")
-    var `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`: ParametersReactionsListForTeamDiscussionCommentLegacyEndpoint
+    @JSName("GET /teams/{team_id}/discussions/{discussion_number}/comments/{comment_number}/reactions")
+    var `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_numberRightcurlybracketSlashreactions`: `208`
     
     /**
-      * @see https://developer.github.com/v3/reactions/#list-reactions-for-a-team-discussion-legacy
+      * @see https://docs.github.com/rest/reference/reactions/#list-reactions-for-a-team-discussion-legacy
       */
-    @JSName("GET /teams/:team_id/discussions/:discussion_number/reactions")
-    var `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`: ParametersReactionsListForTeamDiscussionLegacyEndpoint
+    @JSName("GET /teams/{team_id}/discussions/{discussion_number}/reactions")
+    var `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashreactions`: `209`
     
     /**
-      * @see https://developer.github.com/v3/teams/members/#list-pending-team-invitations-legacy
+      * @see https://docs.github.com/rest/reference/teams#list-pending-team-invitations-legacy
       */
-    @JSName("GET /teams/:team_id/invitations")
-    var `GET SlashteamsSlashColonteam_idSlashinvitations`: ParametersTeamsListPendingInvitationsLegacyEndpoint
+    @JSName("GET /teams/{team_id}/invitations")
+    var `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashinvitations`: `210`
     
     /**
-      * @see https://developer.github.com/v3/teams/members/#list-team-members-legacy
+      * @see https://docs.github.com/rest/reference/teams#list-team-members-legacy
       */
-    @JSName("GET /teams/:team_id/members")
-    var `GET SlashteamsSlashColonteam_idSlashmembers`: ParametersTeamsListMembersLegacyEndpoint
+    @JSName("GET /teams/{team_id}/members")
+    var `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashmembers`: `211`
     
     /**
-      * @see https://developer.github.com/v3/teams/#list-team-projects-legacy
+      * @see https://docs.github.com/rest/reference/teams/#list-team-projects-legacy
       */
-    @JSName("GET /teams/:team_id/projects")
-    var `GET SlashteamsSlashColonteam_idSlashprojects`: ParametersTeamsListProjectsLegacyEndpoint
+    @JSName("GET /teams/{team_id}/projects")
+    var `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashprojects`: `212`
     
     /**
-      * @see https://developer.github.com/v3/teams/#list-team-repositories-legacy
+      * @see https://docs.github.com/rest/reference/teams/#list-team-repositories-legacy
       */
-    @JSName("GET /teams/:team_id/repos")
-    var `GET SlashteamsSlashColonteam_idSlashrepos`: ParametersTeamsListReposLegacyEndpoint
+    @JSName("GET /teams/{team_id}/repos")
+    var `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashrepos`: `213`
     
     /**
-      * @see https://developer.github.com/v3/teams/team_sync/#list-idp-groups-for-a-team-legacy
+      * @see https://docs.github.com/rest/reference/teams/#list-child-teams-legacy
       */
-    @JSName("GET /teams/:team_id/team-sync/group-mappings")
-    var `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`: ParametersTeamsListIdPGroupsForLegacyEndpoint
+    @JSName("GET /teams/{team_id}/teams")
+    var `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteams`: `214`
     
     /**
-      * @see https://developer.github.com/v3/teams/#list-child-teams-legacy
-      */
-    @JSName("GET /teams/:team_id/teams")
-    var `GET SlashteamsSlashColonteam_idSlashteams`: ParametersTeamsListChildLegacyEndpoint
-    
-    /**
-      * @see https://developer.github.com/v3/users/blocking/#list-users-blocked-by-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/users#list-users-blocked-by-the-authenticated-user
       */
     @JSName("GET /user/blocks")
-    var `GET SlashuserSlashblocks`: ParametersUsersListBlockedByAuthenticatedEndpoint
+    var `GET SlashuserSlashblocks`: `215`
     
     /**
-      * @see https://developer.github.com/v3/users/emails/#list-email-addresses-for-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/codespaces#list-codespaces-for-the-authenticated-user
+      */
+    @JSName("GET /user/codespaces")
+    var `GET SlashuserSlashcodespaces`: `217`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/codespaces#list-secrets-for-the-authenticated-user
+      */
+    @JSName("GET /user/codespaces/secrets")
+    var `GET SlashuserSlashcodespacesSlashsecrets`: `219`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/users#list-email-addresses-for-the-authenticated-user
       */
     @JSName("GET /user/emails")
-    var `GET SlashuserSlashemails`: ParametersUsersListEmailsForAuthenticatedEndpoint
+    var `GET SlashuserSlashemails`: `220`
     
     /**
-      * @see https://developer.github.com/v3/users/followers/#list-followers-of-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/users#list-followers-of-the-authenticated-user
       */
     @JSName("GET /user/followers")
-    var `GET SlashuserSlashfollowers`: ParametersUsersListFollowersForAuthenticatedUserEndpoint
+    var `GET SlashuserSlashfollowers`: `221`
     
     /**
-      * @see https://developer.github.com/v3/users/followers/#list-the-people-the-authenticated-user-follows
+      * @see https://docs.github.com/rest/reference/users#list-the-people-the-authenticated-user-follows
       */
     @JSName("GET /user/following")
-    var `GET SlashuserSlashfollowing`: ParametersUsersListFollowedByAuthenticatedEndpoint
+    var `GET SlashuserSlashfollowing`: `222`
     
     /**
-      * @see https://developer.github.com/v3/users/gpg_keys/#list-gpg-keys-for-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/users#list-gpg-keys-for-the-authenticated-user
       */
     @JSName("GET /user/gpg_keys")
-    var `GET SlashuserSlashgpg_keys`: ParametersUsersListGpgKeysForAuthenticatedEndpoint
+    var `GET SlashuserSlashgpg_keys`: `223`
     
     /**
-      * @see https://developer.github.com/v3/apps/installations/#list-app-installations-accessible-to-the-user-access-token
+      * @see https://docs.github.com/rest/reference/apps#list-app-installations-accessible-to-the-user-access-token
       */
     @JSName("GET /user/installations")
-    var `GET SlashuserSlashinstallations`: ParametersAppsListInstallationsForAuthenticatedUserEndpoint
+    var `GET SlashuserSlashinstallations`: `225`
     
     /**
-      * @see https://developer.github.com/v3/apps/installations/#list-repositories-accessible-to-the-user-access-token
+      * @see https://docs.github.com/rest/reference/apps#list-repositories-accessible-to-the-user-access-token
       */
-    @JSName("GET /user/installations/:installation_id/repositories")
-    var `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`: ParametersAppsListInstallationReposForAuthenticatedUserEndpoint
+    @JSName("GET /user/installations/{installation_id}/repositories")
+    var `GET SlashuserSlashinstallationsSlashLeftcurlybracketinstallation_idRightcurlybracketSlashrepositories`: `227`
     
     /**
-      * @see https://developer.github.com/v3/issues/#list-user-account-issues-assigned-to-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/issues#list-user-account-issues-assigned-to-the-authenticated-user
       */
     @JSName("GET /user/issues")
-    var `GET SlashuserSlashissues`: ParametersIssuesListForAuthenticatedUserEndpoint
+    var `GET SlashuserSlashissues`: `228`
     
     /**
-      * @see https://developer.github.com/v3/users/keys/#list-public-ssh-keys-for-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/users#list-public-ssh-keys-for-the-authenticated-user
       */
     @JSName("GET /user/keys")
-    var `GET SlashuserSlashkeys`: ParametersUsersListPublicSshKeysForAuthenticatedEndpoint
+    var `GET SlashuserSlashkeys`: `229`
     
     /**
-      * @see https://developer.github.com/v3/apps/marketplace/#list-subscriptions-for-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/apps#list-subscriptions-for-the-authenticated-user
       */
     @JSName("GET /user/marketplace_purchases")
-    var `GET SlashuserSlashmarketplace_purchases`: ParametersAppsListSubscriptionsForAuthenticatedUserEndpoint
+    var `GET SlashuserSlashmarketplace_purchases`: `230`
     
     /**
-      * @see https://developer.github.com/v3/apps/marketplace/#list-subscriptions-for-the-authenticated-user-stubbed
+      * @see https://docs.github.com/rest/reference/apps#list-subscriptions-for-the-authenticated-user-stubbed
       */
     @JSName("GET /user/marketplace_purchases/stubbed")
-    var `GET SlashuserSlashmarketplace_purchasesSlashstubbed`: ParametersAppsListSubscriptionsForAuthenticatedUserStubbedEndpoint
+    var `GET SlashuserSlashmarketplace_purchasesSlashstubbed`: `231`
     
     /**
-      * @see https://developer.github.com/v3/orgs/members/#list-organization-memberships-for-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/orgs#list-organization-memberships-for-the-authenticated-user
       */
     @JSName("GET /user/memberships/orgs")
-    var `GET SlashuserSlashmembershipsSlashorgs`: ParametersOrgsListMembershipsForAuthenticatedUserEndpoint
+    var `GET SlashuserSlashmembershipsSlashorgs`: `232`
     
     /**
-      * @see https://developer.github.com/v3/migrations/users/#list-user-migrations
+      * @see https://docs.github.com/rest/reference/migrations#list-user-migrations
       */
     @JSName("GET /user/migrations")
-    var `GET SlashuserSlashmigrations`: ParametersMigrationsListForAuthenticatedUserEndpoint
+    var `GET SlashuserSlashmigrations`: `233`
     
     /**
-      * @see https://developer.github.com/v3/migrations/users/#list-repositories-for-a-user-migration
+      * @see https://docs.github.com/rest/reference/migrations#list-repositories-for-a-user-migration
       */
-    @JSName("GET /user/migrations/:migration_id/repositories")
-    var `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`: ParametersMigrationsListReposForUserEndpoint
+    @JSName("GET /user/migrations/{migration_id}/repositories")
+    var `GET SlashuserSlashmigrationsSlashLeftcurlybracketmigration_idRightcurlybracketSlashrepositories`: `234`
     
     /**
-      * @see https://developer.github.com/v3/orgs/#list-organizations-for-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/orgs#list-organizations-for-the-authenticated-user
       */
     @JSName("GET /user/orgs")
-    var `GET SlashuserSlashorgs`: ParametersOrgsListForAuthenticatedUserEndpoint
+    var `GET SlashuserSlashorgs`: `235`
     
     /**
-      * @see https://developer.github.com/v3/users/emails/#list-public-email-addresses-for-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/packages#list-packages-for-the-authenticated-user
+      */
+    @JSName("GET /user/packages")
+    var `GET SlashuserSlashpackages`: `236`
+    
+    /**
+      * @see https://docs.github.com/rest/packages#get-all-package-versions-for-a-package-owned-by-the-authenticated-user
+      */
+    @JSName("GET /user/packages/{package_type}/{package_name}/versions")
+    var `GET SlashuserSlashpackagesSlashLeftcurlybracketpackage_typeRightcurlybracketSlashLeftcurlybracketpackage_nameRightcurlybracketSlashversions`: `237`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/users#list-public-email-addresses-for-the-authenticated-user
       */
     @JSName("GET /user/public_emails")
-    var `GET SlashuserSlashpublic_emails`: ParametersUsersListPublicEmailsForAuthenticatedEndpoint
+    var `GET SlashuserSlashpublic_emails`: `238`
     
     /**
-      * @see https://developer.github.com/v3/repos/invitations/#list-repository-invitations-for-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/repos#list-repositories-for-the-authenticated-user
+      */
+    @JSName("GET /user/repos")
+    var `GET SlashuserSlashrepos`: `239`
+    
+    /**
+      * @see https://docs.github.com/rest/collaborators/invitations#list-repository-invitations-for-the-authenticated-user
       */
     @JSName("GET /user/repository_invitations")
-    var `GET SlashuserSlashrepository_invitations`: ParametersReposListInvitationsForAuthenticatedUserEndpoint
+    var `GET SlashuserSlashrepository_invitations`: `240`
     
     /**
-      * @see https://developer.github.com/v3/activity/starring/#list-repositories-starred-by-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/users#list-public-ssh-signing-keys-for-the-authenticated-user
+      */
+    @JSName("GET /user/ssh_signing_keys")
+    var `GET SlashuserSlashssh_signing_keys`: `241`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/activity#list-repositories-starred-by-the-authenticated-user
       */
     @JSName("GET /user/starred")
-    var `GET SlashuserSlashstarred`: ParametersActivityListReposStarredByAuthenticatedUserEndpoint
+    var `GET SlashuserSlashstarred`: `242`
     
     /**
-      * @see https://developer.github.com/v3/activity/watching/#list-repositories-watched-by-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/activity#list-repositories-watched-by-the-authenticated-user
       */
     @JSName("GET /user/subscriptions")
-    var `GET SlashuserSlashsubscriptions`: ParametersActivityListWatchedReposForAuthenticatedUserEndpoint
+    var `GET SlashuserSlashsubscriptions`: `243`
     
     /**
-      * @see https://developer.github.com/v3/teams/#list-teams-for-the-authenticated-user
+      * @see https://docs.github.com/rest/reference/teams#list-teams-for-the-authenticated-user
       */
     @JSName("GET /user/teams")
-    var `GET SlashuserSlashteams`: ParametersTeamsListForAuthenticatedUserEndpoint
+    var `GET SlashuserSlashteams`: `244`
     
     /**
-      * @see https://developer.github.com/v3/users/#list-users
+      * @see https://docs.github.com/rest/reference/users#list-users
       */
     @JSName("GET /users")
-    var `GET Slashusers`: ParametersUsersListEndpoint
+    var `GET Slashusers`: `245`
     
     /**
-      * @see https://developer.github.com/v3/users/followers/#list-followers-of-a-user
+      * @see https://docs.github.com/rest/reference/activity#list-events-for-the-authenticated-user
       */
-    @JSName("GET /users/:username/followers")
-    var `GET SlashusersSlashColonusernameSlashfollowers`: ParametersUsersListFollowersForUserEndpoint
+    @JSName("GET /users/{username}/events")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashevents`: `246`
     
     /**
-      * @see https://developer.github.com/v3/users/followers/#list-the-people-a-user-follows
+      * @see https://docs.github.com/rest/reference/activity#list-organization-events-for-the-authenticated-user
       */
-    @JSName("GET /users/:username/following")
-    var `GET SlashusersSlashColonusernameSlashfollowing`: ParametersUsersListFollowingForUserEndpoint
+    @JSName("GET /users/{username}/events/orgs/{org}")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlasheventsSlashorgsSlashLeftcurlybracketorgRightcurlybracket`: `247`
     
     /**
-      * @see https://developer.github.com/v3/gists/#list-gists-for-a-user
+      * @see https://docs.github.com/rest/reference/activity#list-public-events-for-a-user
       */
-    @JSName("GET /users/:username/gists")
-    var `GET SlashusersSlashColonusernameSlashgists`: ParametersGistsListForUserEndpoint
+    @JSName("GET /users/{username}/events/public")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlasheventsSlashpublic`: `248`
     
     /**
-      * @see https://developer.github.com/v3/users/gpg_keys/#list-gpg-keys-for-a-user
+      * @see https://docs.github.com/rest/reference/users#list-followers-of-a-user
       */
-    @JSName("GET /users/:username/gpg_keys")
-    var `GET SlashusersSlashColonusernameSlashgpg_keys`: ParametersUsersListGpgKeysForUserEndpoint
+    @JSName("GET /users/{username}/followers")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashfollowers`: `249`
     
     /**
-      * @see https://developer.github.com/v3/users/keys/#list-public-keys-for-a-user
+      * @see https://docs.github.com/rest/reference/users#list-the-people-a-user-follows
       */
-    @JSName("GET /users/:username/keys")
-    var `GET SlashusersSlashColonusernameSlashkeys`: ParametersUsersListPublicKeysForUserEndpoint
+    @JSName("GET /users/{username}/following")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashfollowing`: `250`
     
     /**
-      * @see https://developer.github.com/v3/orgs/#list-organizations-for-a-user
+      * @see https://docs.github.com/rest/reference/gists#list-gists-for-a-user
       */
-    @JSName("GET /users/:username/orgs")
-    var `GET SlashusersSlashColonusernameSlashorgs`: ParametersOrgsListForUserEndpoint
+    @JSName("GET /users/{username}/gists")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashgists`: `251`
     
     /**
-      * @see https://developer.github.com/v3/projects/#list-user-projects
+      * @see https://docs.github.com/rest/reference/users#list-gpg-keys-for-a-user
       */
-    @JSName("GET /users/:username/projects")
-    var `GET SlashusersSlashColonusernameSlashprojects`: ParametersProjectsListForUserEndpoint
+    @JSName("GET /users/{username}/gpg_keys")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashgpg_keys`: `252`
     
     /**
-      * @see https://developer.github.com/v3/activity/starring/#list-repositories-starred-by-a-user
+      * @see https://docs.github.com/rest/reference/users#list-public-keys-for-a-user
       */
-    @JSName("GET /users/:username/starred")
-    var `GET SlashusersSlashColonusernameSlashstarred`: ParametersActivityListReposStarredByUserEndpoint
+    @JSName("GET /users/{username}/keys")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashkeys`: `253`
     
     /**
-      * @see https://developer.github.com/v3/activity/watching/#list-repositories-watched-by-a-user
+      * @see https://docs.github.com/rest/reference/orgs#list-organizations-for-a-user
       */
-    @JSName("GET /users/:username/subscriptions")
-    var `GET SlashusersSlashColonusernameSlashsubscriptions`: ParametersActivityListReposWatchedByUserEndpoint
+    @JSName("GET /users/{username}/orgs")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashorgs`: `254`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/packages#list-packages-for-user
+      */
+    @JSName("GET /users/{username}/packages")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashpackages`: `255`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/projects#list-user-projects
+      */
+    @JSName("GET /users/{username}/projects")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashprojects`: `256`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/activity#list-events-received-by-the-authenticated-user
+      */
+    @JSName("GET /users/{username}/received_events")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashreceived_events`: `257`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/activity#list-public-events-received-by-a-user
+      */
+    @JSName("GET /users/{username}/received_events/public")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashreceived_eventsSlashpublic`: `258`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/repos#list-repositories-for-a-user
+      */
+    @JSName("GET /users/{username}/repos")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashrepos`: `259`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/users#list-ssh-signing-keys-for-a-user
+      */
+    @JSName("GET /users/{username}/ssh_signing_keys")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashssh_signing_keys`: `260`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/activity#list-repositories-starred-by-a-user
+      */
+    @JSName("GET /users/{username}/starred")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashstarred`: `261`
+    
+    /**
+      * @see https://docs.github.com/rest/reference/activity#list-repositories-watched-by-a-user
+      */
+    @JSName("GET /users/{username}/subscriptions")
+    var `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashsubscriptions`: `262`
   }
-  object PaginatingEndpoints {
+  object PaginatingEndpoints_ {
     
     inline def apply(
-      `GET SlashappSlashinstallations`: Parameters,
-      `GET SlashapplicationsSlashgrants`: Response,
-      `GET Slashauthorizations`: ParametersResponse,
-      `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`: ParametersEnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint,
-      `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`: ParametersEnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint,
-      `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`: ParametersEnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint,
-      `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`: ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint,
-      `GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`: ParametersEnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint,
-      `GET Slashgists`: ParametersGistsListEndpoint,
-      `GET SlashgistsSlashColongist_idSlashcomments`: ParametersGistsListCommentsEndpoint,
-      `GET SlashgistsSlashColongist_idSlashcommits`: ParametersGistsListCommitsEndpoint,
-      `GET SlashgistsSlashColongist_idSlashforks`: ParametersGistsListForksEndpoint,
-      `GET SlashgistsSlashpublic`: ParametersGistsListPublicEndpoint,
-      `GET SlashgistsSlashstarred`: ParametersGistsListStarredEndpoint,
-      `GET SlashinstallationSlashrepositories`: ParametersAppsListReposAccessibleToInstallationEndpoint,
-      `GET Slashissues`: ParametersIssuesListEndpoint,
-      `GET Slashmarketplace_listingSlashplans`: ParametersAppsListPlansEndpoint,
-      `GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`: ParametersAppsListAccountsForPlanEndpoint,
-      `GET Slashmarketplace_listingSlashstubbedSlashplans`: ParametersAppsListPlansStubbedEndpoint,
-      `GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`: ParametersAppsListAccountsForPlanStubbedEndpoint,
-      `GET Slashnotifications`: ParametersActivityListNotificationsForAuthenticatedUserEndpoint,
-      `GET Slashorganizations`: ParametersOrgsListEndpoint,
-      `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`: ParametersActionsListSelfHostedRunnerGroupsForOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`: ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`: ParametersActionsListSelfHostedRunnersInGroupForOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashactionsSlashrunners`: ParametersActionsListSelfHostedRunnersForOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`: ParametersActionsListRunnerApplicationsForOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashactionsSlashsecrets`: ParametersActionsListOrgSecretsEndpoint,
-      `GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`: ParametersActionsListSelectedReposForOrgSecretEndpoint,
-      `GET SlashorgsSlashColonorgSlashblocks`: ParametersOrgsListBlockedUsersEndpoint,
-      `GET SlashorgsSlashColonorgSlashcredential-authorizations`: ParametersOrgsListSamlSsoAuthorizationsEndpoint,
-      `GET SlashorgsSlashColonorgSlashhooks`: ParametersOrgsListWebhooksEndpoint,
-      `GET SlashorgsSlashColonorgSlashinstallations`: ParametersOrgsListAppInstallationsEndpoint,
-      `GET SlashorgsSlashColonorgSlashinvitations`: ParametersOrgsListPendingInvitationsEndpoint,
-      `GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`: ParametersOrgsListInvitationTeamsEndpoint,
-      `GET SlashorgsSlashColonorgSlashissues`: ParametersIssuesListForOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashmembers`: ParametersOrgsListMembersEndpoint,
-      `GET SlashorgsSlashColonorgSlashmigrations`: ParametersMigrationsListForOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`: ParametersMigrationsListReposForOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashoutside_collaborators`: ParametersOrgsListOutsideCollaboratorsEndpoint,
-      `GET SlashorgsSlashColonorgSlashprojects`: ParametersProjectsListForOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashpublic_members`: ParametersOrgsListPublicMembersEndpoint,
-      `GET SlashorgsSlashColonorgSlashrepos`: ParametersReposListForOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`: ParametersTeamsListIdPGroupsForOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashteams`: ParametersTeamsListEndpoint,
-      `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`: ParametersTeamsListDiscussionsInOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`: ParametersTeamsListDiscussionCommentsInOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`: ParametersReactionsListForTeamDiscussionCommentInOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`: ParametersReactionsListForTeamDiscussionInOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`: ParametersTeamsListPendingInvitationsInOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`: ParametersTeamsListMembersInOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`: ParametersTeamsListProjectsInOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`: ParametersTeamsListReposInOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`: ParametersTeamsListIdPGroupsInOrgEndpoint,
-      `GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`: ParametersTeamsListChildInOrgEndpoint,
-      `GET SlashprojectsSlashColonproject_idSlashcollaborators`: ParametersProjectsListCollaboratorsEndpoint,
-      `GET SlashprojectsSlashColonproject_idSlashcolumns`: ParametersProjectsListColumnsEndpoint,
-      `GET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`: ParametersProjectsListCardsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`: ParametersActionsListArtifactsForRepoEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`: ParametersActionsListSelfHostedRunnersForRepoEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`: ParametersActionsListRunnerApplicationsForRepoEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`: ParametersActionsListWorkflowRunsForRepoEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`: ParametersActionsListWorkflowRunArtifactsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`: ParametersActionsListJobsForWorkflowRunEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`: ParametersActionsListRepoSecretsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`: ParametersActionsListRepoWorkflowsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`: ParametersActionsListWorkflowRunsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashassignees`: ParametersIssuesListAssigneesEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashbranches`: ParametersReposListBranchesEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`: ParametersChecksListAnnotationsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`: ParametersChecksListForSuiteEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`: ParametersCodeScanningListAlertsForRepoEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`: ParametersCodeScanningListRecentAnalysesEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`: ParametersReposListCollaboratorsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashcomments`: ParametersReposListCommitCommentsForRepoEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`: ParametersReactionsListForCommitCommentEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashcommits`: ParametersReposListCommitsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`: ParametersReposListBranchesForHeadCommitEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`: ParametersReposListCommentsForCommitEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`: ParametersReposListPullRequestsAssociatedWithCommitEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`: ParametersChecksListForRefEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`: ParametersChecksListSuitesForRefEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`: ParametersReposListCommitStatusesForRefEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`: ParametersReposListContributorsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`: ParametersReposListDeploymentsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`: ParametersReposListDeploymentStatusesEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashforks`: ParametersReposListForksEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`: ParametersGitListMatchingRefsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashhooks`: ParametersReposListWebhooksEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashinvitations`: ParametersReposListInvitationsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashissues`: ParametersIssuesListForRepoEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`: ParametersIssuesListCommentsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`: ParametersIssuesListEventsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`: ParametersIssuesListLabelsOnIssueEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`: ParametersReactionsListForIssueEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`: ParametersIssuesListEventsForTimelineEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`: ParametersIssuesListCommentsForRepoEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`: ParametersReactionsListForIssueCommentEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`: ParametersIssuesListEventsForRepoEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashkeys`: ParametersReposListDeployKeysEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashlabels`: ParametersIssuesListLabelsForRepoEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashlanguages`: ParametersReposListLanguagesEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`: ParametersIssuesListMilestonesEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`: ParametersIssuesListLabelsForMilestoneEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashnotifications`: ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`: ParametersReposListPagesBuildsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashprojects`: ParametersProjectsListForRepoEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashpulls`: ParametersPullsListEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`: ParametersPullsListReviewCommentsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`: ParametersPullsListCommitsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`: ParametersPullsListFilesEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`: ParametersPullsListRequestedReviewersEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`: ParametersPullsListReviewsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`: ParametersPullsListCommentsForReviewEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`: ParametersPullsListReviewCommentsForRepoEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`: ParametersReactionsListForPullRequestReviewCommentEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashreleases`: ParametersReposListReleasesEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`: ParametersReposListReleaseAssetsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashstargazers`: ParametersActivityListStargazersForRepoEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`: ParametersActivityListWatchersForRepoEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashtags`: ParametersReposListTagsEndpoint,
-      `GET SlashreposSlashColonownerSlashColonrepoSlashteams`: ParametersReposListTeamsEndpoint,
-      `GET Slashrepositories`: ParametersReposListPublicEndpoint,
-      `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`: ParametersEnterpriseAdminListProvisionedGroupsEnterpriseEndpoint,
-      `GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`: ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint,
-      `GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`: ParametersScimListProvisionedIdentitiesEndpoint,
-      `GET SlashsearchSlashcode`: ParametersSearchCodeEndpoint,
-      `GET SlashsearchSlashcommits`: ParametersSearchCommitsEndpoint,
-      `GET SlashsearchSlashissues`: ParametersSearchIssuesAndPullRequestsEndpoint,
-      `GET SlashsearchSlashlabels`: ParametersSearchLabelsEndpoint,
-      `GET SlashsearchSlashrepositories`: ParametersSearchReposEndpoint,
-      `GET SlashsearchSlashtopics`: ParametersSearchTopicsEndpoint,
-      `GET SlashsearchSlashusers`: ParametersSearchUsersEndpoint,
-      `GET SlashteamsSlashColonteam_idSlashdiscussions`: ParametersTeamsListDiscussionsLegacyEndpoint,
-      `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`: ParametersTeamsListDiscussionCommentsLegacyEndpoint,
-      `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`: ParametersReactionsListForTeamDiscussionCommentLegacyEndpoint,
-      `GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`: ParametersReactionsListForTeamDiscussionLegacyEndpoint,
-      `GET SlashteamsSlashColonteam_idSlashinvitations`: ParametersTeamsListPendingInvitationsLegacyEndpoint,
-      `GET SlashteamsSlashColonteam_idSlashmembers`: ParametersTeamsListMembersLegacyEndpoint,
-      `GET SlashteamsSlashColonteam_idSlashprojects`: ParametersTeamsListProjectsLegacyEndpoint,
-      `GET SlashteamsSlashColonteam_idSlashrepos`: ParametersTeamsListReposLegacyEndpoint,
-      `GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`: ParametersTeamsListIdPGroupsForLegacyEndpoint,
-      `GET SlashteamsSlashColonteam_idSlashteams`: ParametersTeamsListChildLegacyEndpoint,
-      `GET SlashuserSlashblocks`: ParametersUsersListBlockedByAuthenticatedEndpoint,
-      `GET SlashuserSlashemails`: ParametersUsersListEmailsForAuthenticatedEndpoint,
-      `GET SlashuserSlashfollowers`: ParametersUsersListFollowersForAuthenticatedUserEndpoint,
-      `GET SlashuserSlashfollowing`: ParametersUsersListFollowedByAuthenticatedEndpoint,
-      `GET SlashuserSlashgpg_keys`: ParametersUsersListGpgKeysForAuthenticatedEndpoint,
-      `GET SlashuserSlashinstallations`: ParametersAppsListInstallationsForAuthenticatedUserEndpoint,
-      `GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`: ParametersAppsListInstallationReposForAuthenticatedUserEndpoint,
-      `GET SlashuserSlashissues`: ParametersIssuesListForAuthenticatedUserEndpoint,
-      `GET SlashuserSlashkeys`: ParametersUsersListPublicSshKeysForAuthenticatedEndpoint,
-      `GET SlashuserSlashmarketplace_purchases`: ParametersAppsListSubscriptionsForAuthenticatedUserEndpoint,
-      `GET SlashuserSlashmarketplace_purchasesSlashstubbed`: ParametersAppsListSubscriptionsForAuthenticatedUserStubbedEndpoint,
-      `GET SlashuserSlashmembershipsSlashorgs`: ParametersOrgsListMembershipsForAuthenticatedUserEndpoint,
-      `GET SlashuserSlashmigrations`: ParametersMigrationsListForAuthenticatedUserEndpoint,
-      `GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`: ParametersMigrationsListReposForUserEndpoint,
-      `GET SlashuserSlashorgs`: ParametersOrgsListForAuthenticatedUserEndpoint,
-      `GET SlashuserSlashpublic_emails`: ParametersUsersListPublicEmailsForAuthenticatedEndpoint,
-      `GET SlashuserSlashrepository_invitations`: ParametersReposListInvitationsForAuthenticatedUserEndpoint,
-      `GET SlashuserSlashstarred`: ParametersActivityListReposStarredByAuthenticatedUserEndpoint,
-      `GET SlashuserSlashsubscriptions`: ParametersActivityListWatchedReposForAuthenticatedUserEndpoint,
-      `GET SlashuserSlashteams`: ParametersTeamsListForAuthenticatedUserEndpoint,
-      `GET Slashusers`: ParametersUsersListEndpoint,
-      `GET SlashusersSlashColonusernameSlashfollowers`: ParametersUsersListFollowersForUserEndpoint,
-      `GET SlashusersSlashColonusernameSlashfollowing`: ParametersUsersListFollowingForUserEndpoint,
-      `GET SlashusersSlashColonusernameSlashgists`: ParametersGistsListForUserEndpoint,
-      `GET SlashusersSlashColonusernameSlashgpg_keys`: ParametersUsersListGpgKeysForUserEndpoint,
-      `GET SlashusersSlashColonusernameSlashkeys`: ParametersUsersListPublicKeysForUserEndpoint,
-      `GET SlashusersSlashColonusernameSlashorgs`: ParametersOrgsListForUserEndpoint,
-      `GET SlashusersSlashColonusernameSlashprojects`: ParametersProjectsListForUserEndpoint,
-      `GET SlashusersSlashColonusernameSlashstarred`: ParametersActivityListReposStarredByUserEndpoint,
-      `GET SlashusersSlashColonusernameSlashsubscriptions`: ParametersActivityListReposWatchedByUserEndpoint
-    ): PaginatingEndpoints = {
+      `GET SlashappSlashhookSlashdeliveries`: Parameters,
+      `GET SlashappSlashinstallations`: Response,
+      `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashpermissionsSlashorganizations`: ParametersResponse,
+      `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunner-groups`: `1`,
+      `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashorganizations`: `3`,
+      `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashrunners`: `5`,
+      `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunners`: `7`,
+      `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashaudit-log`: ResponseExtractOctokitResponse,
+      `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashcode-scanningSlashalerts`: ParametersResponseExtractOctokitResponse,
+      `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsecret-scanningSlashalerts`: `8`,
+      `GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashadvanced-security`: `10`,
+      `GET Slashevents`: `11`,
+      `GET Slashgists`: `12`,
+      `GET SlashgistsSlashLeftcurlybracketgist_idRightcurlybracketSlashcomments`: `15`,
+      `GET SlashgistsSlashLeftcurlybracketgist_idRightcurlybracketSlashcommits`: `16`,
+      `GET SlashgistsSlashLeftcurlybracketgist_idRightcurlybracketSlashforks`: `17`,
+      `GET SlashgistsSlashpublic`: `13`,
+      `GET SlashgistsSlashstarred`: `14`,
+      `GET SlashinstallationSlashrepositories`: `19`,
+      `GET Slashissues`: `20`,
+      `GET Slashlicenses`: `21`,
+      `GET Slashmarketplace_listingSlashplans`: `22`,
+      `GET Slashmarketplace_listingSlashplansSlashLeftcurlybracketplan_idRightcurlybracketSlashaccounts`: `23`,
+      `GET Slashmarketplace_listingSlashstubbedSlashplans`: `24`,
+      `GET Slashmarketplace_listingSlashstubbedSlashplansSlashLeftcurlybracketplan_idRightcurlybracketSlashaccounts`: `25`,
+      `GET SlashnetworksSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashevents`: `26`,
+      `GET Slashnotifications`: `27`,
+      `GET Slashorganizations`: `28`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashcacheSlashusage-by-repository`: `30`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashpermissionsSlashrepositories`: `32`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groups`: `34`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashrepositories`: `36`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashrunners`: `38`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunners`: `40`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashsecrets`: `42`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracketSlashrepositories`: `44`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashaudit-log`: `45`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocks`: `46`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcode-scanningSlashalerts`: `47`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcodespaces`: `49`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizations`: `50`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashdependabotSlashsecrets`: `52`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashdependabotSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracketSlashrepositories`: `54`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashevents`: `55`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groups`: `57`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashfailed_invitations`: `58`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashhooks`: `59`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashhooksSlashLeftcurlybrackethook_idRightcurlybracketSlashdeliveries`: `60`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashinstallations`: `62`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashinvitations`: `63`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashinvitationsSlashLeftcurlybracketinvitation_idRightcurlybracketSlashteams`: `64`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashissues`: `65`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashmembers`: `66`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashmigrations`: `67`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashmigrationsSlashLeftcurlybracketmigration_idRightcurlybracketSlashrepositories`: `68`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashoutside_collaborators`: `69`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashpackages`: `70`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashpackagesSlashLeftcurlybracketpackage_typeRightcurlybracketSlashLeftcurlybracketpackage_nameRightcurlybracketSlashversions`: `71`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashprojects`: `72`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashpublic_members`: `73`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashrepos`: `74`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashsecret-scanningSlashalerts`: `75`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashsettingsSlashbillingSlashadvanced-security`: `77`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteam-syncSlashgroups`: `79`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteams`: `80`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussions`: `81`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcomments`: `82`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_numberRightcurlybracketSlashreactions`: `83`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashreactions`: `84`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashinvitations`: `85`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashmembers`: `86`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashprojects`: `87`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashrepos`: `88`,
+      `GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteams`: `89`,
+      `GET SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracketSlashcollaborators`: `91`,
+      `GET SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracketSlashcolumns`: `92`,
+      `GET SlashprojectsSlashcolumnsSlashLeftcurlybracketcolumn_idRightcurlybracketSlashcards`: `90`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashartifacts`: `94`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashcaches`: `96`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunners`: `98`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashruns`: `100`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunsSlashLeftcurlybracketrun_idRightcurlybracketSlashartifacts`: `102`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunsSlashLeftcurlybracketrun_idRightcurlybracketSlashattemptsSlashLeftcurlybracketattempt_numberRightcurlybracketSlashjobs`: `104`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunsSlashLeftcurlybracketrun_idRightcurlybracketSlashjobs`: `106`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashsecrets`: `108`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashworkflows`: `110`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashworkflowsSlashLeftcurlybracketworkflow_idRightcurlybracketSlashruns`: `112`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashassignees`: `113`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashbranches`: `114`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcheck-runsSlashLeftcurlybracketcheck_run_idRightcurlybracketSlashannotations`: `115`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcheck-suitesSlashLeftcurlybracketcheck_suite_idRightcurlybracketSlashcheck-runs`: `117`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcode-scanningSlashalerts`: `118`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcode-scanningSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracketSlashinstances`: `119`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcode-scanningSlashanalyses`: `120`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcodespaces`: `122`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcodespacesSlashdevcontainers`: `124`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcodespacesSlashsecrets`: `126`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcollaborators`: `127`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcomments`: `128`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracketSlashreactions`: `129`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommits`: `130`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketcommit_shaRightcurlybracketSlashcomments`: `131`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketcommit_shaRightcurlybracketSlashpulls`: `132`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashcheck-runs`: `134`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashcheck-suites`: `136`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashstatus`: `138`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashstatuses`: `139`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcontributors`: `140`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashsecrets`: `142`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdeployments`: `143`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdeploymentsSlashLeftcurlybracketdeployment_idRightcurlybracketSlashstatuses`: `144`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashenvironments`: `146`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashenvironmentsSlashLeftcurlybracketenvironment_nameRightcurlybracketSlashdeployment-branch-policies`: `148`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashevents`: `149`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashforks`: `150`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashhooks`: `151`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashhooksSlashLeftcurlybrackethook_idRightcurlybracketSlashdeliveries`: `152`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashinvitations`: `153`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissues`: `154`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashcomments`: `158`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashevents`: `159`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashlabels`: `160`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashreactions`: `161`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashtimeline`: `162`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashcomments`: `155`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracketSlashreactions`: `156`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashevents`: `157`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashkeys`: `163`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashlabels`: `164`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashmilestones`: `165`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashmilestonesSlashLeftcurlybracketmilestone_numberRightcurlybracketSlashlabels`: `166`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashnotifications`: `167`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpagesSlashbuilds`: `168`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashprojects`: `169`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpulls`: `170`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashcomments`: `173`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashcommits`: `174`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashfiles`: `175`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashreviews`: `176`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashreviewsSlashLeftcurlybracketreview_idRightcurlybracketSlashcomments`: `177`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashcomments`: `171`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracketSlashreactions`: `172`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashreleases`: `178`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashreleasesSlashLeftcurlybracketrelease_idRightcurlybracketSlashassets`: `179`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashreleasesSlashLeftcurlybracketrelease_idRightcurlybracketSlashreactions`: `180`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashsecret-scanningSlashalerts`: `181`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashsecret-scanningSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracketSlashlocations`: `182`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashstargazers`: `183`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashsubscribers`: `184`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashtags`: `185`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashteams`: `186`,
+      `GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashtopics`: `188`,
+      `GET Slashrepositories`: `189`,
+      `GET SlashrepositoriesSlashLeftcurlybracketrepository_idRightcurlybracketSlashenvironmentsSlashLeftcurlybracketenvironment_nameRightcurlybracketSlashsecrets`: `191`,
+      `GET SlashsearchSlashcode`: `193`,
+      `GET SlashsearchSlashcommits`: `195`,
+      `GET SlashsearchSlashissues`: `197`,
+      `GET SlashsearchSlashlabels`: `199`,
+      `GET SlashsearchSlashrepositories`: `201`,
+      `GET SlashsearchSlashtopics`: `203`,
+      `GET SlashsearchSlashusers`: `205`,
+      `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussions`: `206`,
+      `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcomments`: `207`,
+      `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_numberRightcurlybracketSlashreactions`: `208`,
+      `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashreactions`: `209`,
+      `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashinvitations`: `210`,
+      `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashmembers`: `211`,
+      `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashprojects`: `212`,
+      `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashrepos`: `213`,
+      `GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteams`: `214`,
+      `GET SlashuserSlashblocks`: `215`,
+      `GET SlashuserSlashcodespaces`: `217`,
+      `GET SlashuserSlashcodespacesSlashsecrets`: `219`,
+      `GET SlashuserSlashemails`: `220`,
+      `GET SlashuserSlashfollowers`: `221`,
+      `GET SlashuserSlashfollowing`: `222`,
+      `GET SlashuserSlashgpg_keys`: `223`,
+      `GET SlashuserSlashinstallations`: `225`,
+      `GET SlashuserSlashinstallationsSlashLeftcurlybracketinstallation_idRightcurlybracketSlashrepositories`: `227`,
+      `GET SlashuserSlashissues`: `228`,
+      `GET SlashuserSlashkeys`: `229`,
+      `GET SlashuserSlashmarketplace_purchases`: `230`,
+      `GET SlashuserSlashmarketplace_purchasesSlashstubbed`: `231`,
+      `GET SlashuserSlashmembershipsSlashorgs`: `232`,
+      `GET SlashuserSlashmigrations`: `233`,
+      `GET SlashuserSlashmigrationsSlashLeftcurlybracketmigration_idRightcurlybracketSlashrepositories`: `234`,
+      `GET SlashuserSlashorgs`: `235`,
+      `GET SlashuserSlashpackages`: `236`,
+      `GET SlashuserSlashpackagesSlashLeftcurlybracketpackage_typeRightcurlybracketSlashLeftcurlybracketpackage_nameRightcurlybracketSlashversions`: `237`,
+      `GET SlashuserSlashpublic_emails`: `238`,
+      `GET SlashuserSlashrepos`: `239`,
+      `GET SlashuserSlashrepository_invitations`: `240`,
+      `GET SlashuserSlashssh_signing_keys`: `241`,
+      `GET SlashuserSlashstarred`: `242`,
+      `GET SlashuserSlashsubscriptions`: `243`,
+      `GET SlashuserSlashteams`: `244`,
+      `GET Slashusers`: `245`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashevents`: `246`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlasheventsSlashorgsSlashLeftcurlybracketorgRightcurlybracket`: `247`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlasheventsSlashpublic`: `248`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashfollowers`: `249`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashfollowing`: `250`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashgists`: `251`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashgpg_keys`: `252`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashkeys`: `253`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashorgs`: `254`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashpackages`: `255`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashprojects`: `256`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashreceived_events`: `257`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashreceived_eventsSlashpublic`: `258`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashrepos`: `259`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashssh_signing_keys`: `260`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashstarred`: `261`,
+      `GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashsubscriptions`: `262`
+    ): PaginatingEndpoints_ = {
       val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("GET /app/hook/deliveries")((`GET SlashappSlashhookSlashdeliveries`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /app/installations")((`GET SlashappSlashinstallations`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /applications/grants")((`GET SlashapplicationsSlashgrants`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /authorizations")((`GET Slashauthorizations`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /enterprises/:enterprise/actions/runner-groups")((`GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /enterprises/:enterprise/actions/runner-groups/:runner_group_id/organizations")((`GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /enterprises/:enterprise/actions/runner-groups/:runner_group_id/runners")((`GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /enterprises/:enterprise/actions/runners")((`GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /enterprises/:enterprise/actions/runners/downloads")((`GET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /enterprises/{enterprise}/actions/permissions/organizations")((`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashpermissionsSlashorganizations`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /enterprises/{enterprise}/actions/runner-groups")((`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunner-groups`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/organizations")((`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashorganizations`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/runners")((`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashrunners`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /enterprises/{enterprise}/actions/runners")((`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunners`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /enterprises/{enterprise}/audit-log")((`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashaudit-log`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /enterprises/{enterprise}/code-scanning/alerts")((`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashcode-scanningSlashalerts`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /enterprises/{enterprise}/secret-scanning/alerts")((`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsecret-scanningSlashalerts`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /enterprises/{enterprise}/settings/billing/advanced-security")((`GET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashadvanced-security`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /events")((`GET Slashevents`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /gists")((`GET Slashgists`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /gists/:gist_id/comments")((`GET SlashgistsSlashColongist_idSlashcomments`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /gists/:gist_id/commits")((`GET SlashgistsSlashColongist_idSlashcommits`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /gists/:gist_id/forks")((`GET SlashgistsSlashColongist_idSlashforks`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /gists/{gist_id}/comments")((`GET SlashgistsSlashLeftcurlybracketgist_idRightcurlybracketSlashcomments`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /gists/{gist_id}/commits")((`GET SlashgistsSlashLeftcurlybracketgist_idRightcurlybracketSlashcommits`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /gists/{gist_id}/forks")((`GET SlashgistsSlashLeftcurlybracketgist_idRightcurlybracketSlashforks`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /gists/public")((`GET SlashgistsSlashpublic`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /gists/starred")((`GET SlashgistsSlashstarred`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /installation/repositories")((`GET SlashinstallationSlashrepositories`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /issues")((`GET Slashissues`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /licenses")((`GET Slashlicenses`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /marketplace_listing/plans")((`GET Slashmarketplace_listingSlashplans`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /marketplace_listing/plans/:plan_id/accounts")((`GET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /marketplace_listing/plans/{plan_id}/accounts")((`GET Slashmarketplace_listingSlashplansSlashLeftcurlybracketplan_idRightcurlybracketSlashaccounts`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /marketplace_listing/stubbed/plans")((`GET Slashmarketplace_listingSlashstubbedSlashplans`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /marketplace_listing/stubbed/plans/:plan_id/accounts")((`GET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /marketplace_listing/stubbed/plans/{plan_id}/accounts")((`GET Slashmarketplace_listingSlashstubbedSlashplansSlashLeftcurlybracketplan_idRightcurlybracketSlashaccounts`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /networks/{owner}/{repo}/events")((`GET SlashnetworksSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashevents`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /notifications")((`GET Slashnotifications`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /organizations")((`GET Slashorganizations`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/actions/runner-groups")((`GET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/actions/runner-groups/:runner_group_id/repositories")((`GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/actions/runner-groups/:runner_group_id/runners")((`GET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/actions/runners")((`GET SlashorgsSlashColonorgSlashactionsSlashrunners`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/actions/runners/downloads")((`GET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/actions/secrets")((`GET SlashorgsSlashColonorgSlashactionsSlashsecrets`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/actions/secrets/:secret_name/repositories")((`GET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/blocks")((`GET SlashorgsSlashColonorgSlashblocks`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/credential-authorizations")((`GET SlashorgsSlashColonorgSlashcredential-authorizations`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/hooks")((`GET SlashorgsSlashColonorgSlashhooks`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/installations")((`GET SlashorgsSlashColonorgSlashinstallations`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/invitations")((`GET SlashorgsSlashColonorgSlashinvitations`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/invitations/:invitation_id/teams")((`GET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/issues")((`GET SlashorgsSlashColonorgSlashissues`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/members")((`GET SlashorgsSlashColonorgSlashmembers`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/migrations")((`GET SlashorgsSlashColonorgSlashmigrations`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/migrations/:migration_id/repositories")((`GET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/outside_collaborators")((`GET SlashorgsSlashColonorgSlashoutside_collaborators`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/projects")((`GET SlashorgsSlashColonorgSlashprojects`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/public_members")((`GET SlashorgsSlashColonorgSlashpublic_members`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/repos")((`GET SlashorgsSlashColonorgSlashrepos`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/team-sync/groups")((`GET SlashorgsSlashColonorgSlashteam-syncSlashgroups`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/teams")((`GET SlashorgsSlashColonorgSlashteams`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/teams/:team_slug/discussions")((`GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments")((`GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number/reactions")((`GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/reactions")((`GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/teams/:team_slug/invitations")((`GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/teams/:team_slug/members")((`GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/teams/:team_slug/projects")((`GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/teams/:team_slug/repos")((`GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/teams/:team_slug/team-sync/group-mappings")((`GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /orgs/:org/teams/:team_slug/teams")((`GET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /projects/:project_id/collaborators")((`GET SlashprojectsSlashColonproject_idSlashcollaborators`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /projects/:project_id/columns")((`GET SlashprojectsSlashColonproject_idSlashcolumns`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /projects/columns/:column_id/cards")((`GET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/actions/artifacts")((`GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/actions/runners")((`GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/actions/runners/downloads")((`GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/actions/runs")((`GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/actions/runs/:run_id/artifacts")((`GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/actions/runs/:run_id/jobs")((`GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/actions/secrets")((`GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/actions/workflows")((`GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/actions/workflows/:workflow_id/runs")((`GET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/assignees")((`GET SlashreposSlashColonownerSlashColonrepoSlashassignees`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/branches")((`GET SlashreposSlashColonownerSlashColonrepoSlashbranches`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/check-runs/:check_run_id/annotations")((`GET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/check-suites/:check_suite_id/check-runs")((`GET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/code-scanning/alerts")((`GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/code-scanning/analyses")((`GET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/collaborators")((`GET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/comments")((`GET SlashreposSlashColonownerSlashColonrepoSlashcomments`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/comments/:comment_id/reactions")((`GET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/commits")((`GET SlashreposSlashColonownerSlashColonrepoSlashcommits`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head")((`GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/commits/:commit_sha/comments")((`GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/commits/:commit_sha/pulls")((`GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/commits/:ref/check-runs")((`GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/commits/:ref/check-suites")((`GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/commits/:ref/statuses")((`GET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/contributors")((`GET SlashreposSlashColonownerSlashColonrepoSlashcontributors`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/deployments")((`GET SlashreposSlashColonownerSlashColonrepoSlashdeployments`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/deployments/:deployment_id/statuses")((`GET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/forks")((`GET SlashreposSlashColonownerSlashColonrepoSlashforks`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/git/matching-refs/:ref")((`GET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/hooks")((`GET SlashreposSlashColonownerSlashColonrepoSlashhooks`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/invitations")((`GET SlashreposSlashColonownerSlashColonrepoSlashinvitations`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/issues")((`GET SlashreposSlashColonownerSlashColonrepoSlashissues`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/issues/:issue_number/comments")((`GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/issues/:issue_number/events")((`GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/issues/:issue_number/labels")((`GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/issues/:issue_number/reactions")((`GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/issues/:issue_number/timeline")((`GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/issues/comments")((`GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/issues/comments/:comment_id/reactions")((`GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/issues/events")((`GET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/keys")((`GET SlashreposSlashColonownerSlashColonrepoSlashkeys`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/labels")((`GET SlashreposSlashColonownerSlashColonrepoSlashlabels`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/languages")((`GET SlashreposSlashColonownerSlashColonrepoSlashlanguages`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/milestones")((`GET SlashreposSlashColonownerSlashColonrepoSlashmilestones`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/milestones/:milestone_number/labels")((`GET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/notifications")((`GET SlashreposSlashColonownerSlashColonrepoSlashnotifications`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/pages/builds")((`GET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/projects")((`GET SlashreposSlashColonownerSlashColonrepoSlashprojects`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/pulls")((`GET SlashreposSlashColonownerSlashColonrepoSlashpulls`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/pulls/:pull_number/comments")((`GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/pulls/:pull_number/commits")((`GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/pulls/:pull_number/files")((`GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers")((`GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/pulls/:pull_number/reviews")((`GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments")((`GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/pulls/comments")((`GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/pulls/comments/:comment_id/reactions")((`GET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/releases")((`GET SlashreposSlashColonownerSlashColonrepoSlashreleases`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/releases/:release_id/assets")((`GET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/stargazers")((`GET SlashreposSlashColonownerSlashColonrepoSlashstargazers`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/subscribers")((`GET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/tags")((`GET SlashreposSlashColonownerSlashColonrepoSlashtags`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /repos/:owner/:repo/teams")((`GET SlashreposSlashColonownerSlashColonrepoSlashteams`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/actions/cache/usage-by-repository")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashcacheSlashusage-by-repository`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/actions/permissions/repositories")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashpermissionsSlashrepositories`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/actions/runner-groups")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groups`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/actions/runner-groups/{runner_group_id}/repositories")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashrepositories`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/actions/runner-groups/{runner_group_id}/runners")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashrunners`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/actions/runners")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunners`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/actions/secrets")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashsecrets`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/actions/secrets/{secret_name}/repositories")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracketSlashrepositories`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/audit-log")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashaudit-log`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/blocks")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocks`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/code-scanning/alerts")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcode-scanningSlashalerts`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/codespaces")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcodespaces`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/credential-authorizations")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizations`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/dependabot/secrets")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashdependabotSlashsecrets`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/dependabot/secrets/{secret_name}/repositories")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashdependabotSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracketSlashrepositories`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/events")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashevents`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/external-groups")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groups`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/failed_invitations")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashfailed_invitations`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/hooks")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashhooks`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/hooks/{hook_id}/deliveries")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashhooksSlashLeftcurlybrackethook_idRightcurlybracketSlashdeliveries`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/installations")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashinstallations`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/invitations")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashinvitations`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/invitations/{invitation_id}/teams")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashinvitationsSlashLeftcurlybracketinvitation_idRightcurlybracketSlashteams`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/issues")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashissues`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/members")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashmembers`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/migrations")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashmigrations`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/migrations/{migration_id}/repositories")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashmigrationsSlashLeftcurlybracketmigration_idRightcurlybracketSlashrepositories`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/outside_collaborators")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashoutside_collaborators`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/packages")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashpackages`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/packages/{package_type}/{package_name}/versions")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashpackagesSlashLeftcurlybracketpackage_typeRightcurlybracketSlashLeftcurlybracketpackage_nameRightcurlybracketSlashversions`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/projects")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashprojects`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/public_members")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashpublic_members`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/repos")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashrepos`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/secret-scanning/alerts")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashsecret-scanningSlashalerts`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/settings/billing/advanced-security")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashsettingsSlashbillingSlashadvanced-security`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/team-sync/groups")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteam-syncSlashgroups`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/teams")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteams`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/teams/{team_slug}/discussions")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussions`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcomments`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}/reactions")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_numberRightcurlybracketSlashreactions`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/reactions")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashreactions`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/teams/{team_slug}/invitations")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashinvitations`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/teams/{team_slug}/members")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashmembers`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/teams/{team_slug}/projects")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashprojects`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/teams/{team_slug}/repos")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashrepos`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /orgs/{org}/teams/{team_slug}/teams")((`GET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteams`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /projects/{project_id}/collaborators")((`GET SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracketSlashcollaborators`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /projects/{project_id}/columns")((`GET SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracketSlashcolumns`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /projects/columns/{column_id}/cards")((`GET SlashprojectsSlashcolumnsSlashLeftcurlybracketcolumn_idRightcurlybracketSlashcards`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/actions/artifacts")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashartifacts`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/actions/caches")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashcaches`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/actions/runners")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunners`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/actions/runs")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashruns`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/actions/runs/{run_id}/artifacts")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunsSlashLeftcurlybracketrun_idRightcurlybracketSlashartifacts`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}/jobs")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunsSlashLeftcurlybracketrun_idRightcurlybracketSlashattemptsSlashLeftcurlybracketattempt_numberRightcurlybracketSlashjobs`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/actions/runs/{run_id}/jobs")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunsSlashLeftcurlybracketrun_idRightcurlybracketSlashjobs`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/actions/secrets")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashsecrets`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/actions/workflows")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashworkflows`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashworkflowsSlashLeftcurlybracketworkflow_idRightcurlybracketSlashruns`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/assignees")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashassignees`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/branches")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashbranches`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/check-runs/{check_run_id}/annotations")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcheck-runsSlashLeftcurlybracketcheck_run_idRightcurlybracketSlashannotations`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/check-suites/{check_suite_id}/check-runs")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcheck-suitesSlashLeftcurlybracketcheck_suite_idRightcurlybracketSlashcheck-runs`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/code-scanning/alerts")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcode-scanningSlashalerts`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/code-scanning/alerts/{alert_number}/instances")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcode-scanningSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracketSlashinstances`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/code-scanning/analyses")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcode-scanningSlashanalyses`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/codespaces")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcodespaces`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/codespaces/devcontainers")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcodespacesSlashdevcontainers`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/codespaces/secrets")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcodespacesSlashsecrets`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/collaborators")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcollaborators`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/comments")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcomments`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/comments/{comment_id}/reactions")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracketSlashreactions`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/commits")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommits`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/commits/{commit_sha}/comments")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketcommit_shaRightcurlybracketSlashcomments`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/commits/{commit_sha}/pulls")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketcommit_shaRightcurlybracketSlashpulls`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/commits/{ref}/check-runs")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashcheck-runs`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/commits/{ref}/check-suites")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashcheck-suites`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/commits/{ref}/status")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashstatus`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/commits/{ref}/statuses")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashstatuses`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/contributors")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcontributors`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/dependabot/secrets")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashsecrets`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/deployments")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdeployments`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/deployments/{deployment_id}/statuses")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdeploymentsSlashLeftcurlybracketdeployment_idRightcurlybracketSlashstatuses`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/environments")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashenvironments`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashenvironmentsSlashLeftcurlybracketenvironment_nameRightcurlybracketSlashdeployment-branch-policies`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/events")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashevents`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/forks")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashforks`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/hooks")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashhooks`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/hooks/{hook_id}/deliveries")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashhooksSlashLeftcurlybrackethook_idRightcurlybracketSlashdeliveries`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/invitations")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashinvitations`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/issues")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissues`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/issues/{issue_number}/comments")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashcomments`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/issues/{issue_number}/events")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashevents`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/issues/{issue_number}/labels")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashlabels`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/issues/{issue_number}/reactions")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashreactions`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/issues/{issue_number}/timeline")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashtimeline`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/issues/comments")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashcomments`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/issues/comments/{comment_id}/reactions")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracketSlashreactions`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/issues/events")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashevents`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/keys")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashkeys`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/labels")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashlabels`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/milestones")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashmilestones`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/milestones/{milestone_number}/labels")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashmilestonesSlashLeftcurlybracketmilestone_numberRightcurlybracketSlashlabels`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/notifications")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashnotifications`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/pages/builds")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpagesSlashbuilds`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/projects")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashprojects`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/pulls")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpulls`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/pulls/{pull_number}/comments")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashcomments`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/pulls/{pull_number}/commits")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashcommits`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/pulls/{pull_number}/files")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashfiles`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashreviews`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/comments")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashreviewsSlashLeftcurlybracketreview_idRightcurlybracketSlashcomments`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/pulls/comments")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashcomments`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracketSlashreactions`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/releases")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashreleases`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/releases/{release_id}/assets")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashreleasesSlashLeftcurlybracketrelease_idRightcurlybracketSlashassets`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/releases/{release_id}/reactions")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashreleasesSlashLeftcurlybracketrelease_idRightcurlybracketSlashreactions`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/secret-scanning/alerts")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashsecret-scanningSlashalerts`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}/locations")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashsecret-scanningSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracketSlashlocations`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/stargazers")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashstargazers`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/subscribers")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashsubscribers`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/tags")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashtags`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/teams")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashteams`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repos/{owner}/{repo}/topics")((`GET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashtopics`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /repositories")((`GET Slashrepositories`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /scim/v2/enterprises/:enterprise/Groups")((`GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /scim/v2/enterprises/:enterprise/Users")((`GET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /scim/v2/organizations/:org/Users")((`GET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /repositories/{repository_id}/environments/{environment_name}/secrets")((`GET SlashrepositoriesSlashLeftcurlybracketrepository_idRightcurlybracketSlashenvironmentsSlashLeftcurlybracketenvironment_nameRightcurlybracketSlashsecrets`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /search/code")((`GET SlashsearchSlashcode`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /search/commits")((`GET SlashsearchSlashcommits`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /search/issues")((`GET SlashsearchSlashissues`).asInstanceOf[js.Any])
@@ -1530,396 +1892,491 @@ object paginatingEndpointsMod {
       __obj.updateDynamic("GET /search/repositories")((`GET SlashsearchSlashrepositories`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /search/topics")((`GET SlashsearchSlashtopics`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /search/users")((`GET SlashsearchSlashusers`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /teams/:team_id/discussions")((`GET SlashteamsSlashColonteam_idSlashdiscussions`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /teams/:team_id/discussions/:discussion_number/comments")((`GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /teams/:team_id/discussions/:discussion_number/comments/:comment_number/reactions")((`GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /teams/:team_id/discussions/:discussion_number/reactions")((`GET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /teams/:team_id/invitations")((`GET SlashteamsSlashColonteam_idSlashinvitations`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /teams/:team_id/members")((`GET SlashteamsSlashColonteam_idSlashmembers`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /teams/:team_id/projects")((`GET SlashteamsSlashColonteam_idSlashprojects`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /teams/:team_id/repos")((`GET SlashteamsSlashColonteam_idSlashrepos`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /teams/:team_id/team-sync/group-mappings")((`GET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /teams/:team_id/teams")((`GET SlashteamsSlashColonteam_idSlashteams`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /teams/{team_id}/discussions")((`GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussions`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /teams/{team_id}/discussions/{discussion_number}/comments")((`GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcomments`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /teams/{team_id}/discussions/{discussion_number}/comments/{comment_number}/reactions")((`GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_numberRightcurlybracketSlashreactions`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /teams/{team_id}/discussions/{discussion_number}/reactions")((`GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashreactions`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /teams/{team_id}/invitations")((`GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashinvitations`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /teams/{team_id}/members")((`GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashmembers`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /teams/{team_id}/projects")((`GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashprojects`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /teams/{team_id}/repos")((`GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashrepos`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /teams/{team_id}/teams")((`GET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteams`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/blocks")((`GET SlashuserSlashblocks`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /user/codespaces")((`GET SlashuserSlashcodespaces`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /user/codespaces/secrets")((`GET SlashuserSlashcodespacesSlashsecrets`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/emails")((`GET SlashuserSlashemails`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/followers")((`GET SlashuserSlashfollowers`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/following")((`GET SlashuserSlashfollowing`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/gpg_keys")((`GET SlashuserSlashgpg_keys`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/installations")((`GET SlashuserSlashinstallations`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /user/installations/:installation_id/repositories")((`GET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /user/installations/{installation_id}/repositories")((`GET SlashuserSlashinstallationsSlashLeftcurlybracketinstallation_idRightcurlybracketSlashrepositories`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/issues")((`GET SlashuserSlashissues`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/keys")((`GET SlashuserSlashkeys`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/marketplace_purchases")((`GET SlashuserSlashmarketplace_purchases`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/marketplace_purchases/stubbed")((`GET SlashuserSlashmarketplace_purchasesSlashstubbed`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/memberships/orgs")((`GET SlashuserSlashmembershipsSlashorgs`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/migrations")((`GET SlashuserSlashmigrations`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /user/migrations/:migration_id/repositories")((`GET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /user/migrations/{migration_id}/repositories")((`GET SlashuserSlashmigrationsSlashLeftcurlybracketmigration_idRightcurlybracketSlashrepositories`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/orgs")((`GET SlashuserSlashorgs`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /user/packages")((`GET SlashuserSlashpackages`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /user/packages/{package_type}/{package_name}/versions")((`GET SlashuserSlashpackagesSlashLeftcurlybracketpackage_typeRightcurlybracketSlashLeftcurlybracketpackage_nameRightcurlybracketSlashversions`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/public_emails")((`GET SlashuserSlashpublic_emails`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /user/repos")((`GET SlashuserSlashrepos`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/repository_invitations")((`GET SlashuserSlashrepository_invitations`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /user/ssh_signing_keys")((`GET SlashuserSlashssh_signing_keys`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/starred")((`GET SlashuserSlashstarred`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/subscriptions")((`GET SlashuserSlashsubscriptions`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /user/teams")((`GET SlashuserSlashteams`).asInstanceOf[js.Any])
       __obj.updateDynamic("GET /users")((`GET Slashusers`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /users/:username/followers")((`GET SlashusersSlashColonusernameSlashfollowers`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /users/:username/following")((`GET SlashusersSlashColonusernameSlashfollowing`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /users/:username/gists")((`GET SlashusersSlashColonusernameSlashgists`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /users/:username/gpg_keys")((`GET SlashusersSlashColonusernameSlashgpg_keys`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /users/:username/keys")((`GET SlashusersSlashColonusernameSlashkeys`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /users/:username/orgs")((`GET SlashusersSlashColonusernameSlashorgs`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /users/:username/projects")((`GET SlashusersSlashColonusernameSlashprojects`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /users/:username/starred")((`GET SlashusersSlashColonusernameSlashstarred`).asInstanceOf[js.Any])
-      __obj.updateDynamic("GET /users/:username/subscriptions")((`GET SlashusersSlashColonusernameSlashsubscriptions`).asInstanceOf[js.Any])
-      __obj.asInstanceOf[PaginatingEndpoints]
+      __obj.updateDynamic("GET /users/{username}/events")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashevents`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/events/orgs/{org}")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlasheventsSlashorgsSlashLeftcurlybracketorgRightcurlybracket`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/events/public")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlasheventsSlashpublic`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/followers")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashfollowers`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/following")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashfollowing`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/gists")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashgists`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/gpg_keys")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashgpg_keys`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/keys")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashkeys`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/orgs")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashorgs`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/packages")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashpackages`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/projects")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashprojects`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/received_events")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashreceived_events`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/received_events/public")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashreceived_eventsSlashpublic`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/repos")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashrepos`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/ssh_signing_keys")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashssh_signing_keys`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/starred")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashstarred`).asInstanceOf[js.Any])
+      __obj.updateDynamic("GET /users/{username}/subscriptions")((`GET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashsubscriptions`).asInstanceOf[js.Any])
+      __obj.asInstanceOf[PaginatingEndpoints_]
     }
     
-    extension [Self <: PaginatingEndpoints](x: Self) {
+    extension [Self <: PaginatingEndpoints_](x: Self) {
       
-      inline def `setGET SlashappSlashinstallations`(value: Parameters): Self = StObject.set(x, "GET /app/installations", value.asInstanceOf[js.Any])
+      inline def `setGET SlashappSlashhookSlashdeliveries`(value: Parameters): Self = StObject.set(x, "GET /app/hook/deliveries", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashapplicationsSlashgrants`(value: Response): Self = StObject.set(x, "GET /applications/grants", value.asInstanceOf[js.Any])
+      inline def `setGET SlashappSlashinstallations`(value: Response): Self = StObject.set(x, "GET /app/installations", value.asInstanceOf[js.Any])
       
-      inline def `setGET Slashauthorizations`(value: ParametersResponse): Self = StObject.set(x, "GET /authorizations", value.asInstanceOf[js.Any])
+      inline def `setGET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashpermissionsSlashorganizations`(value: ParametersResponse): Self = StObject.set(x, "GET /enterprises/{enterprise}/actions/permissions/organizations", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`(value: ParametersEnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runner-groups", value.asInstanceOf[js.Any])
+      inline def `setGET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunner-groups`(value: `1`): Self = StObject.set(x, "GET /enterprises/{enterprise}/actions/runner-groups", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`(value: ParametersEnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runner-groups/:runner_group_id/organizations", value.asInstanceOf[js.Any])
+      inline def `setGET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashorganizations`(value: `3`): Self = StObject.set(x, "GET /enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/organizations", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`(value: ParametersEnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runner-groups/:runner_group_id/runners", value.asInstanceOf[js.Any])
+      inline def `setGET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashrunners`(value: `5`): Self = StObject.set(x, "GET /enterprises/{enterprise}/actions/runner-groups/{runner_group_id}/runners", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`(value: ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runners", value.asInstanceOf[js.Any])
+      inline def `setGET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashactionsSlashrunners`(value: `7`): Self = StObject.set(x, "GET /enterprises/{enterprise}/actions/runners", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`(value: ParametersEnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runners/downloads", value.asInstanceOf[js.Any])
+      inline def `setGET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashaudit-log`(value: ResponseExtractOctokitResponse): Self = StObject.set(x, "GET /enterprises/{enterprise}/audit-log", value.asInstanceOf[js.Any])
       
-      inline def `setGET Slashgists`(value: ParametersGistsListEndpoint): Self = StObject.set(x, "GET /gists", value.asInstanceOf[js.Any])
+      inline def `setGET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashcode-scanningSlashalerts`(value: ParametersResponseExtractOctokitResponse): Self = StObject.set(x, "GET /enterprises/{enterprise}/code-scanning/alerts", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashgistsSlashColongist_idSlashcomments`(value: ParametersGistsListCommentsEndpoint): Self = StObject.set(x, "GET /gists/:gist_id/comments", value.asInstanceOf[js.Any])
+      inline def `setGET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsecret-scanningSlashalerts`(value: `8`): Self = StObject.set(x, "GET /enterprises/{enterprise}/secret-scanning/alerts", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashgistsSlashColongist_idSlashcommits`(value: ParametersGistsListCommitsEndpoint): Self = StObject.set(x, "GET /gists/:gist_id/commits", value.asInstanceOf[js.Any])
+      inline def `setGET SlashenterprisesSlashLeftcurlybracketenterpriseRightcurlybracketSlashsettingsSlashbillingSlashadvanced-security`(value: `10`): Self = StObject.set(x, "GET /enterprises/{enterprise}/settings/billing/advanced-security", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashgistsSlashColongist_idSlashforks`(value: ParametersGistsListForksEndpoint): Self = StObject.set(x, "GET /gists/:gist_id/forks", value.asInstanceOf[js.Any])
+      inline def `setGET Slashevents`(value: `11`): Self = StObject.set(x, "GET /events", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashgistsSlashpublic`(value: ParametersGistsListPublicEndpoint): Self = StObject.set(x, "GET /gists/public", value.asInstanceOf[js.Any])
+      inline def `setGET Slashgists`(value: `12`): Self = StObject.set(x, "GET /gists", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashgistsSlashstarred`(value: ParametersGistsListStarredEndpoint): Self = StObject.set(x, "GET /gists/starred", value.asInstanceOf[js.Any])
+      inline def `setGET SlashgistsSlashLeftcurlybracketgist_idRightcurlybracketSlashcomments`(value: `15`): Self = StObject.set(x, "GET /gists/{gist_id}/comments", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashinstallationSlashrepositories`(value: ParametersAppsListReposAccessibleToInstallationEndpoint): Self = StObject.set(x, "GET /installation/repositories", value.asInstanceOf[js.Any])
+      inline def `setGET SlashgistsSlashLeftcurlybracketgist_idRightcurlybracketSlashcommits`(value: `16`): Self = StObject.set(x, "GET /gists/{gist_id}/commits", value.asInstanceOf[js.Any])
       
-      inline def `setGET Slashissues`(value: ParametersIssuesListEndpoint): Self = StObject.set(x, "GET /issues", value.asInstanceOf[js.Any])
+      inline def `setGET SlashgistsSlashLeftcurlybracketgist_idRightcurlybracketSlashforks`(value: `17`): Self = StObject.set(x, "GET /gists/{gist_id}/forks", value.asInstanceOf[js.Any])
       
-      inline def `setGET Slashmarketplace_listingSlashplans`(value: ParametersAppsListPlansEndpoint): Self = StObject.set(x, "GET /marketplace_listing/plans", value.asInstanceOf[js.Any])
+      inline def `setGET SlashgistsSlashpublic`(value: `13`): Self = StObject.set(x, "GET /gists/public", value.asInstanceOf[js.Any])
       
-      inline def `setGET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`(value: ParametersAppsListAccountsForPlanEndpoint): Self = StObject.set(x, "GET /marketplace_listing/plans/:plan_id/accounts", value.asInstanceOf[js.Any])
+      inline def `setGET SlashgistsSlashstarred`(value: `14`): Self = StObject.set(x, "GET /gists/starred", value.asInstanceOf[js.Any])
       
-      inline def `setGET Slashmarketplace_listingSlashstubbedSlashplans`(value: ParametersAppsListPlansStubbedEndpoint): Self = StObject.set(x, "GET /marketplace_listing/stubbed/plans", value.asInstanceOf[js.Any])
+      inline def `setGET SlashinstallationSlashrepositories`(value: `19`): Self = StObject.set(x, "GET /installation/repositories", value.asInstanceOf[js.Any])
       
-      inline def `setGET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`(value: ParametersAppsListAccountsForPlanStubbedEndpoint): Self = StObject.set(x, "GET /marketplace_listing/stubbed/plans/:plan_id/accounts", value.asInstanceOf[js.Any])
+      inline def `setGET Slashissues`(value: `20`): Self = StObject.set(x, "GET /issues", value.asInstanceOf[js.Any])
       
-      inline def `setGET Slashnotifications`(value: ParametersActivityListNotificationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /notifications", value.asInstanceOf[js.Any])
+      inline def `setGET Slashlicenses`(value: `21`): Self = StObject.set(x, "GET /licenses", value.asInstanceOf[js.Any])
       
-      inline def `setGET Slashorganizations`(value: ParametersOrgsListEndpoint): Self = StObject.set(x, "GET /organizations", value.asInstanceOf[js.Any])
+      inline def `setGET Slashmarketplace_listingSlashplans`(value: `22`): Self = StObject.set(x, "GET /marketplace_listing/plans", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`(value: ParametersActionsListSelfHostedRunnerGroupsForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runner-groups", value.asInstanceOf[js.Any])
+      inline def `setGET Slashmarketplace_listingSlashplansSlashLeftcurlybracketplan_idRightcurlybracketSlashaccounts`(value: `23`): Self = StObject.set(x, "GET /marketplace_listing/plans/{plan_id}/accounts", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`(value: ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runner-groups/:runner_group_id/repositories", value.asInstanceOf[js.Any])
+      inline def `setGET Slashmarketplace_listingSlashstubbedSlashplans`(value: `24`): Self = StObject.set(x, "GET /marketplace_listing/stubbed/plans", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`(value: ParametersActionsListSelfHostedRunnersInGroupForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runner-groups/:runner_group_id/runners", value.asInstanceOf[js.Any])
+      inline def `setGET Slashmarketplace_listingSlashstubbedSlashplansSlashLeftcurlybracketplan_idRightcurlybracketSlashaccounts`(value: `25`): Self = StObject.set(x, "GET /marketplace_listing/stubbed/plans/{plan_id}/accounts", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashactionsSlashrunners`(value: ParametersActionsListSelfHostedRunnersForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runners", value.asInstanceOf[js.Any])
+      inline def `setGET SlashnetworksSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashevents`(value: `26`): Self = StObject.set(x, "GET /networks/{owner}/{repo}/events", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`(value: ParametersActionsListRunnerApplicationsForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runners/downloads", value.asInstanceOf[js.Any])
+      inline def `setGET Slashnotifications`(value: `27`): Self = StObject.set(x, "GET /notifications", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashactionsSlashsecrets`(value: ParametersActionsListOrgSecretsEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/secrets", value.asInstanceOf[js.Any])
+      inline def `setGET Slashorganizations`(value: `28`): Self = StObject.set(x, "GET /organizations", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`(value: ParametersActionsListSelectedReposForOrgSecretEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/secrets/:secret_name/repositories", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashcacheSlashusage-by-repository`(value: `30`): Self = StObject.set(x, "GET /orgs/{org}/actions/cache/usage-by-repository", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashblocks`(value: ParametersOrgsListBlockedUsersEndpoint): Self = StObject.set(x, "GET /orgs/:org/blocks", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashpermissionsSlashrepositories`(value: `32`): Self = StObject.set(x, "GET /orgs/{org}/actions/permissions/repositories", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashcredential-authorizations`(value: ParametersOrgsListSamlSsoAuthorizationsEndpoint): Self = StObject.set(x, "GET /orgs/:org/credential-authorizations", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groups`(value: `34`): Self = StObject.set(x, "GET /orgs/{org}/actions/runner-groups", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashhooks`(value: ParametersOrgsListWebhooksEndpoint): Self = StObject.set(x, "GET /orgs/:org/hooks", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashrepositories`(value: `36`): Self = StObject.set(x, "GET /orgs/{org}/actions/runner-groups/{runner_group_id}/repositories", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashinstallations`(value: ParametersOrgsListAppInstallationsEndpoint): Self = StObject.set(x, "GET /orgs/:org/installations", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunner-groupsSlashLeftcurlybracketrunner_group_idRightcurlybracketSlashrunners`(value: `38`): Self = StObject.set(x, "GET /orgs/{org}/actions/runner-groups/{runner_group_id}/runners", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashinvitations`(value: ParametersOrgsListPendingInvitationsEndpoint): Self = StObject.set(x, "GET /orgs/:org/invitations", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashrunners`(value: `40`): Self = StObject.set(x, "GET /orgs/{org}/actions/runners", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`(value: ParametersOrgsListInvitationTeamsEndpoint): Self = StObject.set(x, "GET /orgs/:org/invitations/:invitation_id/teams", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashsecrets`(value: `42`): Self = StObject.set(x, "GET /orgs/{org}/actions/secrets", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashissues`(value: ParametersIssuesListForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/issues", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashactionsSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracketSlashrepositories`(value: `44`): Self = StObject.set(x, "GET /orgs/{org}/actions/secrets/{secret_name}/repositories", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashmembers`(value: ParametersOrgsListMembersEndpoint): Self = StObject.set(x, "GET /orgs/:org/members", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashaudit-log`(value: `45`): Self = StObject.set(x, "GET /orgs/{org}/audit-log", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashmigrations`(value: ParametersMigrationsListForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/migrations", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashblocks`(value: `46`): Self = StObject.set(x, "GET /orgs/{org}/blocks", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`(value: ParametersMigrationsListReposForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/migrations/:migration_id/repositories", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcode-scanningSlashalerts`(value: `47`): Self = StObject.set(x, "GET /orgs/{org}/code-scanning/alerts", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashoutside_collaborators`(value: ParametersOrgsListOutsideCollaboratorsEndpoint): Self = StObject.set(x, "GET /orgs/:org/outside_collaborators", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcodespaces`(value: `49`): Self = StObject.set(x, "GET /orgs/{org}/codespaces", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashprojects`(value: ParametersProjectsListForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/projects", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashcredential-authorizations`(value: `50`): Self = StObject.set(x, "GET /orgs/{org}/credential-authorizations", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashpublic_members`(value: ParametersOrgsListPublicMembersEndpoint): Self = StObject.set(x, "GET /orgs/:org/public_members", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashdependabotSlashsecrets`(value: `52`): Self = StObject.set(x, "GET /orgs/{org}/dependabot/secrets", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashrepos`(value: ParametersReposListForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/repos", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashdependabotSlashsecretsSlashLeftcurlybracketsecret_nameRightcurlybracketSlashrepositories`(value: `54`): Self = StObject.set(x, "GET /orgs/{org}/dependabot/secrets/{secret_name}/repositories", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashteam-syncSlashgroups`(value: ParametersTeamsListIdPGroupsForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/team-sync/groups", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashevents`(value: `55`): Self = StObject.set(x, "GET /orgs/{org}/events", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashteams`(value: ParametersTeamsListEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashexternal-groups`(value: `57`): Self = StObject.set(x, "GET /orgs/{org}/external-groups", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`(value: ParametersTeamsListDiscussionsInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashfailed_invitations`(value: `58`): Self = StObject.set(x, "GET /orgs/{org}/failed_invitations", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`(value: ParametersTeamsListDiscussionCommentsInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashhooks`(value: `59`): Self = StObject.set(x, "GET /orgs/{org}/hooks", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`(value: ParametersReactionsListForTeamDiscussionCommentInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number/reactions", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashhooksSlashLeftcurlybrackethook_idRightcurlybracketSlashdeliveries`(value: `60`): Self = StObject.set(x, "GET /orgs/{org}/hooks/{hook_id}/deliveries", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`(value: ParametersReactionsListForTeamDiscussionInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/reactions", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashinstallations`(value: `62`): Self = StObject.set(x, "GET /orgs/{org}/installations", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`(value: ParametersTeamsListPendingInvitationsInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/invitations", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashinvitations`(value: `63`): Self = StObject.set(x, "GET /orgs/{org}/invitations", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`(value: ParametersTeamsListMembersInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/members", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashinvitationsSlashLeftcurlybracketinvitation_idRightcurlybracketSlashteams`(value: `64`): Self = StObject.set(x, "GET /orgs/{org}/invitations/{invitation_id}/teams", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`(value: ParametersTeamsListProjectsInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/projects", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashissues`(value: `65`): Self = StObject.set(x, "GET /orgs/{org}/issues", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`(value: ParametersTeamsListReposInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/repos", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashmembers`(value: `66`): Self = StObject.set(x, "GET /orgs/{org}/members", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`(value: ParametersTeamsListIdPGroupsInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/team-sync/group-mappings", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashmigrations`(value: `67`): Self = StObject.set(x, "GET /orgs/{org}/migrations", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`(value: ParametersTeamsListChildInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/teams", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashmigrationsSlashLeftcurlybracketmigration_idRightcurlybracketSlashrepositories`(value: `68`): Self = StObject.set(x, "GET /orgs/{org}/migrations/{migration_id}/repositories", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashprojectsSlashColonproject_idSlashcollaborators`(value: ParametersProjectsListCollaboratorsEndpoint): Self = StObject.set(x, "GET /projects/:project_id/collaborators", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashoutside_collaborators`(value: `69`): Self = StObject.set(x, "GET /orgs/{org}/outside_collaborators", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashprojectsSlashColonproject_idSlashcolumns`(value: ParametersProjectsListColumnsEndpoint): Self = StObject.set(x, "GET /projects/:project_id/columns", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashpackages`(value: `70`): Self = StObject.set(x, "GET /orgs/{org}/packages", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`(value: ParametersProjectsListCardsEndpoint): Self = StObject.set(x, "GET /projects/columns/:column_id/cards", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashpackagesSlashLeftcurlybracketpackage_typeRightcurlybracketSlashLeftcurlybracketpackage_nameRightcurlybracketSlashversions`(value: `71`): Self = StObject.set(x, "GET /orgs/{org}/packages/{package_type}/{package_name}/versions", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`(value: ParametersActionsListArtifactsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/artifacts", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashprojects`(value: `72`): Self = StObject.set(x, "GET /orgs/{org}/projects", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`(value: ParametersActionsListSelfHostedRunnersForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runners", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashpublic_members`(value: `73`): Self = StObject.set(x, "GET /orgs/{org}/public_members", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`(value: ParametersActionsListRunnerApplicationsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runners/downloads", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashrepos`(value: `74`): Self = StObject.set(x, "GET /orgs/{org}/repos", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`(value: ParametersActionsListWorkflowRunsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runs", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashsecret-scanningSlashalerts`(value: `75`): Self = StObject.set(x, "GET /orgs/{org}/secret-scanning/alerts", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`(value: ParametersActionsListWorkflowRunArtifactsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runs/:run_id/artifacts", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashsettingsSlashbillingSlashadvanced-security`(value: `77`): Self = StObject.set(x, "GET /orgs/{org}/settings/billing/advanced-security", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`(value: ParametersActionsListJobsForWorkflowRunEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runs/:run_id/jobs", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteam-syncSlashgroups`(value: `79`): Self = StObject.set(x, "GET /orgs/{org}/team-sync/groups", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`(value: ParametersActionsListRepoSecretsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/secrets", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteams`(value: `80`): Self = StObject.set(x, "GET /orgs/{org}/teams", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`(value: ParametersActionsListRepoWorkflowsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/workflows", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussions`(value: `81`): Self = StObject.set(x, "GET /orgs/{org}/teams/{team_slug}/discussions", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`(value: ParametersActionsListWorkflowRunsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/workflows/:workflow_id/runs", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcomments`(value: `82`): Self = StObject.set(x, "GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashassignees`(value: ParametersIssuesListAssigneesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/assignees", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_numberRightcurlybracketSlashreactions`(value: `83`): Self = StObject.set(x, "GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/comments/{comment_number}/reactions", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranches`(value: ParametersReposListBranchesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashreactions`(value: `84`): Self = StObject.set(x, "GET /orgs/{org}/teams/{team_slug}/discussions/{discussion_number}/reactions", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`(value: ParametersChecksListAnnotationsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/check-runs/:check_run_id/annotations", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashinvitations`(value: `85`): Self = StObject.set(x, "GET /orgs/{org}/teams/{team_slug}/invitations", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`(value: ParametersChecksListForSuiteEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/check-suites/:check_suite_id/check-runs", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashmembers`(value: `86`): Self = StObject.set(x, "GET /orgs/{org}/teams/{team_slug}/members", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`(value: ParametersCodeScanningListAlertsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/code-scanning/alerts", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashprojects`(value: `87`): Self = StObject.set(x, "GET /orgs/{org}/teams/{team_slug}/projects", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`(value: ParametersCodeScanningListRecentAnalysesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/code-scanning/analyses", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashrepos`(value: `88`): Self = StObject.set(x, "GET /orgs/{org}/teams/{team_slug}/repos", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`(value: ParametersReposListCollaboratorsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/collaborators", value.asInstanceOf[js.Any])
+      inline def `setGET SlashorgsSlashLeftcurlybracketorgRightcurlybracketSlashteamsSlashLeftcurlybracketteam_slugRightcurlybracketSlashteams`(value: `89`): Self = StObject.set(x, "GET /orgs/{org}/teams/{team_slug}/teams", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcomments`(value: ParametersReposListCommitCommentsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/comments", value.asInstanceOf[js.Any])
+      inline def `setGET SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracketSlashcollaborators`(value: `91`): Self = StObject.set(x, "GET /projects/{project_id}/collaborators", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`(value: ParametersReactionsListForCommitCommentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/comments/:comment_id/reactions", value.asInstanceOf[js.Any])
+      inline def `setGET SlashprojectsSlashLeftcurlybracketproject_idRightcurlybracketSlashcolumns`(value: `92`): Self = StObject.set(x, "GET /projects/{project_id}/columns", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommits`(value: ParametersReposListCommitsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits", value.asInstanceOf[js.Any])
+      inline def `setGET SlashprojectsSlashcolumnsSlashLeftcurlybracketcolumn_idRightcurlybracketSlashcards`(value: `90`): Self = StObject.set(x, "GET /projects/columns/{column_id}/cards", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`(value: ParametersReposListBranchesForHeadCommitEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashartifacts`(value: `94`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/actions/artifacts", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`(value: ParametersReposListCommentsForCommitEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:commit_sha/comments", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashcaches`(value: `96`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/actions/caches", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`(value: ParametersReposListPullRequestsAssociatedWithCommitEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:commit_sha/pulls", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunners`(value: `98`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/actions/runners", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`(value: ParametersChecksListForRefEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:ref/check-runs", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashruns`(value: `100`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/actions/runs", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`(value: ParametersChecksListSuitesForRefEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:ref/check-suites", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunsSlashLeftcurlybracketrun_idRightcurlybracketSlashartifacts`(value: `102`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/actions/runs/{run_id}/artifacts", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`(value: ParametersReposListCommitStatusesForRefEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:ref/statuses", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunsSlashLeftcurlybracketrun_idRightcurlybracketSlashattemptsSlashLeftcurlybracketattempt_numberRightcurlybracketSlashjobs`(value: `104`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/actions/runs/{run_id}/attempts/{attempt_number}/jobs", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcontributors`(value: ParametersReposListContributorsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/contributors", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashrunsSlashLeftcurlybracketrun_idRightcurlybracketSlashjobs`(value: `106`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/actions/runs/{run_id}/jobs", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashdeployments`(value: ParametersReposListDeploymentsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/deployments", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashsecrets`(value: `108`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/actions/secrets", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`(value: ParametersReposListDeploymentStatusesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/deployments/:deployment_id/statuses", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashworkflows`(value: `110`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/actions/workflows", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashforks`(value: ParametersReposListForksEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/forks", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashactionsSlashworkflowsSlashLeftcurlybracketworkflow_idRightcurlybracketSlashruns`(value: `112`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`(value: ParametersGitListMatchingRefsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/git/matching-refs/:ref", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashassignees`(value: `113`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/assignees", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashhooks`(value: ParametersReposListWebhooksEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/hooks", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashbranches`(value: `114`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/branches", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashinvitations`(value: ParametersReposListInvitationsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/invitations", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcheck-runsSlashLeftcurlybracketcheck_run_idRightcurlybracketSlashannotations`(value: `115`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/check-runs/{check_run_id}/annotations", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissues`(value: ParametersIssuesListForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcheck-suitesSlashLeftcurlybracketcheck_suite_idRightcurlybracketSlashcheck-runs`(value: `117`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/check-suites/{check_suite_id}/check-runs", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`(value: ParametersIssuesListCommentsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number/comments", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcode-scanningSlashalerts`(value: `118`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/code-scanning/alerts", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`(value: ParametersIssuesListEventsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number/events", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcode-scanningSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracketSlashinstances`(value: `119`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/code-scanning/alerts/{alert_number}/instances", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`(value: ParametersIssuesListLabelsOnIssueEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number/labels", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcode-scanningSlashanalyses`(value: `120`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/code-scanning/analyses", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`(value: ParametersReactionsListForIssueEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number/reactions", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcodespaces`(value: `122`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/codespaces", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`(value: ParametersIssuesListEventsForTimelineEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number/timeline", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcodespacesSlashdevcontainers`(value: `124`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/codespaces/devcontainers", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`(value: ParametersIssuesListCommentsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/comments", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcodespacesSlashsecrets`(value: `126`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/codespaces/secrets", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`(value: ParametersReactionsListForIssueCommentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/comments/:comment_id/reactions", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcollaborators`(value: `127`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/collaborators", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`(value: ParametersIssuesListEventsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/events", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcomments`(value: `128`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/comments", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashkeys`(value: ParametersReposListDeployKeysEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/keys", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracketSlashreactions`(value: `129`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/comments/{comment_id}/reactions", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashlabels`(value: ParametersIssuesListLabelsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/labels", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommits`(value: `130`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/commits", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashlanguages`(value: ParametersReposListLanguagesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/languages", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketcommit_shaRightcurlybracketSlashcomments`(value: `131`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/commits/{commit_sha}/comments", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashmilestones`(value: ParametersIssuesListMilestonesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/milestones", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketcommit_shaRightcurlybracketSlashpulls`(value: `132`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/commits/{commit_sha}/pulls", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`(value: ParametersIssuesListLabelsForMilestoneEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/milestones/:milestone_number/labels", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashcheck-runs`(value: `134`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/commits/{ref}/check-runs", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashnotifications`(value: ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/notifications", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashcheck-suites`(value: `136`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/commits/{ref}/check-suites", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`(value: ParametersReposListPagesBuildsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pages/builds", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashstatus`(value: `138`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/commits/{ref}/status", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashprojects`(value: ParametersProjectsListForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/projects", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcommitsSlashLeftcurlybracketrefRightcurlybracketSlashstatuses`(value: `139`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/commits/{ref}/statuses", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpulls`(value: ParametersPullsListEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashcontributors`(value: `140`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/contributors", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`(value: ParametersPullsListReviewCommentsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/comments", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdependabotSlashsecrets`(value: `142`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/dependabot/secrets", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`(value: ParametersPullsListCommitsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/commits", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdeployments`(value: `143`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/deployments", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`(value: ParametersPullsListFilesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/files", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashdeploymentsSlashLeftcurlybracketdeployment_idRightcurlybracketSlashstatuses`(value: `144`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/deployments/{deployment_id}/statuses", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`(value: ParametersPullsListRequestedReviewersEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashenvironments`(value: `146`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/environments", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`(value: ParametersPullsListReviewsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/reviews", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashenvironmentsSlashLeftcurlybracketenvironment_nameRightcurlybracketSlashdeployment-branch-policies`(value: `148`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`(value: ParametersPullsListCommentsForReviewEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashevents`(value: `149`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/events", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`(value: ParametersPullsListReviewCommentsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/comments", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashforks`(value: `150`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/forks", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`(value: ParametersReactionsListForPullRequestReviewCommentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/comments/:comment_id/reactions", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashhooks`(value: `151`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/hooks", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashreleases`(value: ParametersReposListReleasesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/releases", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashhooksSlashLeftcurlybrackethook_idRightcurlybracketSlashdeliveries`(value: `152`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/hooks/{hook_id}/deliveries", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`(value: ParametersReposListReleaseAssetsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/releases/:release_id/assets", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashinvitations`(value: `153`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/invitations", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashstargazers`(value: ParametersActivityListStargazersForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/stargazers", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissues`(value: `154`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/issues", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`(value: ParametersActivityListWatchersForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/subscribers", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashcomments`(value: `158`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/issues/{issue_number}/comments", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashtags`(value: ParametersReposListTagsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/tags", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashevents`(value: `159`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/issues/{issue_number}/events", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashteams`(value: ParametersReposListTeamsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/teams", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashlabels`(value: `160`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/issues/{issue_number}/labels", value.asInstanceOf[js.Any])
       
-      inline def `setGET Slashrepositories`(value: ParametersReposListPublicEndpoint): Self = StObject.set(x, "GET /repositories", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashreactions`(value: `161`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/issues/{issue_number}/reactions", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`(value: ParametersEnterpriseAdminListProvisionedGroupsEnterpriseEndpoint): Self = StObject.set(x, "GET /scim/v2/enterprises/:enterprise/Groups", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashLeftcurlybracketissue_numberRightcurlybracketSlashtimeline`(value: `162`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/issues/{issue_number}/timeline", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`(value: ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint): Self = StObject.set(x, "GET /scim/v2/enterprises/:enterprise/Users", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashcomments`(value: `155`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/issues/comments", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`(value: ParametersScimListProvisionedIdentitiesEndpoint): Self = StObject.set(x, "GET /scim/v2/organizations/:org/Users", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracketSlashreactions`(value: `156`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/issues/comments/{comment_id}/reactions", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashsearchSlashcode`(value: ParametersSearchCodeEndpoint): Self = StObject.set(x, "GET /search/code", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashissuesSlashevents`(value: `157`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/issues/events", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashsearchSlashcommits`(value: ParametersSearchCommitsEndpoint): Self = StObject.set(x, "GET /search/commits", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashkeys`(value: `163`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/keys", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashsearchSlashissues`(value: ParametersSearchIssuesAndPullRequestsEndpoint): Self = StObject.set(x, "GET /search/issues", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashlabels`(value: `164`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/labels", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashsearchSlashlabels`(value: ParametersSearchLabelsEndpoint): Self = StObject.set(x, "GET /search/labels", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashmilestones`(value: `165`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/milestones", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashsearchSlashrepositories`(value: ParametersSearchReposEndpoint): Self = StObject.set(x, "GET /search/repositories", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashmilestonesSlashLeftcurlybracketmilestone_numberRightcurlybracketSlashlabels`(value: `166`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/milestones/{milestone_number}/labels", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashsearchSlashtopics`(value: ParametersSearchTopicsEndpoint): Self = StObject.set(x, "GET /search/topics", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashnotifications`(value: `167`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/notifications", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashsearchSlashusers`(value: ParametersSearchUsersEndpoint): Self = StObject.set(x, "GET /search/users", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpagesSlashbuilds`(value: `168`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/pages/builds", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashteamsSlashColonteam_idSlashdiscussions`(value: ParametersTeamsListDiscussionsLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashprojects`(value: `169`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/projects", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`(value: ParametersTeamsListDiscussionCommentsLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions/:discussion_number/comments", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpulls`(value: `170`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/pulls", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`(value: ParametersReactionsListForTeamDiscussionCommentLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions/:discussion_number/comments/:comment_number/reactions", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashcomments`(value: `173`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/pulls/{pull_number}/comments", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`(value: ParametersReactionsListForTeamDiscussionLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions/:discussion_number/reactions", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashcommits`(value: `174`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/pulls/{pull_number}/commits", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashteamsSlashColonteam_idSlashinvitations`(value: ParametersTeamsListPendingInvitationsLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/invitations", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashfiles`(value: `175`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/pulls/{pull_number}/files", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashteamsSlashColonteam_idSlashmembers`(value: ParametersTeamsListMembersLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/members", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashreviews`(value: `176`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashteamsSlashColonteam_idSlashprojects`(value: ParametersTeamsListProjectsLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/projects", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashLeftcurlybracketpull_numberRightcurlybracketSlashreviewsSlashLeftcurlybracketreview_idRightcurlybracketSlashcomments`(value: `177`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/pulls/{pull_number}/reviews/{review_id}/comments", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashteamsSlashColonteam_idSlashrepos`(value: ParametersTeamsListReposLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/repos", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashcomments`(value: `171`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/pulls/comments", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`(value: ParametersTeamsListIdPGroupsForLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/team-sync/group-mappings", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashpullsSlashcommentsSlashLeftcurlybracketcomment_idRightcurlybracketSlashreactions`(value: `172`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/pulls/comments/{comment_id}/reactions", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashteamsSlashColonteam_idSlashteams`(value: ParametersTeamsListChildLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/teams", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashreleases`(value: `178`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/releases", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashblocks`(value: ParametersUsersListBlockedByAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/blocks", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashreleasesSlashLeftcurlybracketrelease_idRightcurlybracketSlashassets`(value: `179`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/releases/{release_id}/assets", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashemails`(value: ParametersUsersListEmailsForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/emails", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashreleasesSlashLeftcurlybracketrelease_idRightcurlybracketSlashreactions`(value: `180`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/releases/{release_id}/reactions", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashfollowers`(value: ParametersUsersListFollowersForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/followers", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashsecret-scanningSlashalerts`(value: `181`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/secret-scanning/alerts", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashfollowing`(value: ParametersUsersListFollowedByAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/following", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashsecret-scanningSlashalertsSlashLeftcurlybracketalert_numberRightcurlybracketSlashlocations`(value: `182`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/secret-scanning/alerts/{alert_number}/locations", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashgpg_keys`(value: ParametersUsersListGpgKeysForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/gpg_keys", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashstargazers`(value: `183`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/stargazers", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashinstallations`(value: ParametersAppsListInstallationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/installations", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashsubscribers`(value: `184`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/subscribers", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`(value: ParametersAppsListInstallationReposForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/installations/:installation_id/repositories", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashtags`(value: `185`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/tags", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashissues`(value: ParametersIssuesListForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/issues", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashteams`(value: `186`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/teams", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashkeys`(value: ParametersUsersListPublicSshKeysForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/keys", value.asInstanceOf[js.Any])
+      inline def `setGET SlashreposSlashLeftcurlybracketownerRightcurlybracketSlashLeftcurlybracketrepoRightcurlybracketSlashtopics`(value: `188`): Self = StObject.set(x, "GET /repos/{owner}/{repo}/topics", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashmarketplace_purchases`(value: ParametersAppsListSubscriptionsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/marketplace_purchases", value.asInstanceOf[js.Any])
+      inline def `setGET Slashrepositories`(value: `189`): Self = StObject.set(x, "GET /repositories", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashmarketplace_purchasesSlashstubbed`(value: ParametersAppsListSubscriptionsForAuthenticatedUserStubbedEndpoint): Self = StObject.set(x, "GET /user/marketplace_purchases/stubbed", value.asInstanceOf[js.Any])
+      inline def `setGET SlashrepositoriesSlashLeftcurlybracketrepository_idRightcurlybracketSlashenvironmentsSlashLeftcurlybracketenvironment_nameRightcurlybracketSlashsecrets`(value: `191`): Self = StObject.set(x, "GET /repositories/{repository_id}/environments/{environment_name}/secrets", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashmembershipsSlashorgs`(value: ParametersOrgsListMembershipsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/memberships/orgs", value.asInstanceOf[js.Any])
+      inline def `setGET SlashsearchSlashcode`(value: `193`): Self = StObject.set(x, "GET /search/code", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashmigrations`(value: ParametersMigrationsListForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/migrations", value.asInstanceOf[js.Any])
+      inline def `setGET SlashsearchSlashcommits`(value: `195`): Self = StObject.set(x, "GET /search/commits", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`(value: ParametersMigrationsListReposForUserEndpoint): Self = StObject.set(x, "GET /user/migrations/:migration_id/repositories", value.asInstanceOf[js.Any])
+      inline def `setGET SlashsearchSlashissues`(value: `197`): Self = StObject.set(x, "GET /search/issues", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashorgs`(value: ParametersOrgsListForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/orgs", value.asInstanceOf[js.Any])
+      inline def `setGET SlashsearchSlashlabels`(value: `199`): Self = StObject.set(x, "GET /search/labels", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashpublic_emails`(value: ParametersUsersListPublicEmailsForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/public_emails", value.asInstanceOf[js.Any])
+      inline def `setGET SlashsearchSlashrepositories`(value: `201`): Self = StObject.set(x, "GET /search/repositories", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashrepository_invitations`(value: ParametersReposListInvitationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/repository_invitations", value.asInstanceOf[js.Any])
+      inline def `setGET SlashsearchSlashtopics`(value: `203`): Self = StObject.set(x, "GET /search/topics", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashstarred`(value: ParametersActivityListReposStarredByAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/starred", value.asInstanceOf[js.Any])
+      inline def `setGET SlashsearchSlashusers`(value: `205`): Self = StObject.set(x, "GET /search/users", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashsubscriptions`(value: ParametersActivityListWatchedReposForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/subscriptions", value.asInstanceOf[js.Any])
+      inline def `setGET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussions`(value: `206`): Self = StObject.set(x, "GET /teams/{team_id}/discussions", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashuserSlashteams`(value: ParametersTeamsListForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/teams", value.asInstanceOf[js.Any])
+      inline def `setGET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcomments`(value: `207`): Self = StObject.set(x, "GET /teams/{team_id}/discussions/{discussion_number}/comments", value.asInstanceOf[js.Any])
       
-      inline def `setGET Slashusers`(value: ParametersUsersListEndpoint): Self = StObject.set(x, "GET /users", value.asInstanceOf[js.Any])
+      inline def `setGET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashcommentsSlashLeftcurlybracketcomment_numberRightcurlybracketSlashreactions`(value: `208`): Self = StObject.set(x, "GET /teams/{team_id}/discussions/{discussion_number}/comments/{comment_number}/reactions", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashusersSlashColonusernameSlashfollowers`(value: ParametersUsersListFollowersForUserEndpoint): Self = StObject.set(x, "GET /users/:username/followers", value.asInstanceOf[js.Any])
+      inline def `setGET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashdiscussionsSlashLeftcurlybracketdiscussion_numberRightcurlybracketSlashreactions`(value: `209`): Self = StObject.set(x, "GET /teams/{team_id}/discussions/{discussion_number}/reactions", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashusersSlashColonusernameSlashfollowing`(value: ParametersUsersListFollowingForUserEndpoint): Self = StObject.set(x, "GET /users/:username/following", value.asInstanceOf[js.Any])
+      inline def `setGET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashinvitations`(value: `210`): Self = StObject.set(x, "GET /teams/{team_id}/invitations", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashusersSlashColonusernameSlashgists`(value: ParametersGistsListForUserEndpoint): Self = StObject.set(x, "GET /users/:username/gists", value.asInstanceOf[js.Any])
+      inline def `setGET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashmembers`(value: `211`): Self = StObject.set(x, "GET /teams/{team_id}/members", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashusersSlashColonusernameSlashgpg_keys`(value: ParametersUsersListGpgKeysForUserEndpoint): Self = StObject.set(x, "GET /users/:username/gpg_keys", value.asInstanceOf[js.Any])
+      inline def `setGET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashprojects`(value: `212`): Self = StObject.set(x, "GET /teams/{team_id}/projects", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashusersSlashColonusernameSlashkeys`(value: ParametersUsersListPublicKeysForUserEndpoint): Self = StObject.set(x, "GET /users/:username/keys", value.asInstanceOf[js.Any])
+      inline def `setGET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashrepos`(value: `213`): Self = StObject.set(x, "GET /teams/{team_id}/repos", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashusersSlashColonusernameSlashorgs`(value: ParametersOrgsListForUserEndpoint): Self = StObject.set(x, "GET /users/:username/orgs", value.asInstanceOf[js.Any])
+      inline def `setGET SlashteamsSlashLeftcurlybracketteam_idRightcurlybracketSlashteams`(value: `214`): Self = StObject.set(x, "GET /teams/{team_id}/teams", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashusersSlashColonusernameSlashprojects`(value: ParametersProjectsListForUserEndpoint): Self = StObject.set(x, "GET /users/:username/projects", value.asInstanceOf[js.Any])
+      inline def `setGET SlashuserSlashblocks`(value: `215`): Self = StObject.set(x, "GET /user/blocks", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashusersSlashColonusernameSlashstarred`(value: ParametersActivityListReposStarredByUserEndpoint): Self = StObject.set(x, "GET /users/:username/starred", value.asInstanceOf[js.Any])
+      inline def `setGET SlashuserSlashcodespaces`(value: `217`): Self = StObject.set(x, "GET /user/codespaces", value.asInstanceOf[js.Any])
       
-      inline def `setGET SlashusersSlashColonusernameSlashsubscriptions`(value: ParametersActivityListReposWatchedByUserEndpoint): Self = StObject.set(x, "GET /users/:username/subscriptions", value.asInstanceOf[js.Any])
+      inline def `setGET SlashuserSlashcodespacesSlashsecrets`(value: `219`): Self = StObject.set(x, "GET /user/codespaces/secrets", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashemails`(value: `220`): Self = StObject.set(x, "GET /user/emails", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashfollowers`(value: `221`): Self = StObject.set(x, "GET /user/followers", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashfollowing`(value: `222`): Self = StObject.set(x, "GET /user/following", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashgpg_keys`(value: `223`): Self = StObject.set(x, "GET /user/gpg_keys", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashinstallations`(value: `225`): Self = StObject.set(x, "GET /user/installations", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashinstallationsSlashLeftcurlybracketinstallation_idRightcurlybracketSlashrepositories`(value: `227`): Self = StObject.set(x, "GET /user/installations/{installation_id}/repositories", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashissues`(value: `228`): Self = StObject.set(x, "GET /user/issues", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashkeys`(value: `229`): Self = StObject.set(x, "GET /user/keys", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashmarketplace_purchases`(value: `230`): Self = StObject.set(x, "GET /user/marketplace_purchases", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashmarketplace_purchasesSlashstubbed`(value: `231`): Self = StObject.set(x, "GET /user/marketplace_purchases/stubbed", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashmembershipsSlashorgs`(value: `232`): Self = StObject.set(x, "GET /user/memberships/orgs", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashmigrations`(value: `233`): Self = StObject.set(x, "GET /user/migrations", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashmigrationsSlashLeftcurlybracketmigration_idRightcurlybracketSlashrepositories`(value: `234`): Self = StObject.set(x, "GET /user/migrations/{migration_id}/repositories", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashorgs`(value: `235`): Self = StObject.set(x, "GET /user/orgs", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashpackages`(value: `236`): Self = StObject.set(x, "GET /user/packages", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashpackagesSlashLeftcurlybracketpackage_typeRightcurlybracketSlashLeftcurlybracketpackage_nameRightcurlybracketSlashversions`(value: `237`): Self = StObject.set(x, "GET /user/packages/{package_type}/{package_name}/versions", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashpublic_emails`(value: `238`): Self = StObject.set(x, "GET /user/public_emails", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashrepos`(value: `239`): Self = StObject.set(x, "GET /user/repos", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashrepository_invitations`(value: `240`): Self = StObject.set(x, "GET /user/repository_invitations", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashssh_signing_keys`(value: `241`): Self = StObject.set(x, "GET /user/ssh_signing_keys", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashstarred`(value: `242`): Self = StObject.set(x, "GET /user/starred", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashsubscriptions`(value: `243`): Self = StObject.set(x, "GET /user/subscriptions", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashuserSlashteams`(value: `244`): Self = StObject.set(x, "GET /user/teams", value.asInstanceOf[js.Any])
+      
+      inline def `setGET Slashusers`(value: `245`): Self = StObject.set(x, "GET /users", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashevents`(value: `246`): Self = StObject.set(x, "GET /users/{username}/events", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlasheventsSlashorgsSlashLeftcurlybracketorgRightcurlybracket`(value: `247`): Self = StObject.set(x, "GET /users/{username}/events/orgs/{org}", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlasheventsSlashpublic`(value: `248`): Self = StObject.set(x, "GET /users/{username}/events/public", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashfollowers`(value: `249`): Self = StObject.set(x, "GET /users/{username}/followers", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashfollowing`(value: `250`): Self = StObject.set(x, "GET /users/{username}/following", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashgists`(value: `251`): Self = StObject.set(x, "GET /users/{username}/gists", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashgpg_keys`(value: `252`): Self = StObject.set(x, "GET /users/{username}/gpg_keys", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashkeys`(value: `253`): Self = StObject.set(x, "GET /users/{username}/keys", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashorgs`(value: `254`): Self = StObject.set(x, "GET /users/{username}/orgs", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashpackages`(value: `255`): Self = StObject.set(x, "GET /users/{username}/packages", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashprojects`(value: `256`): Self = StObject.set(x, "GET /users/{username}/projects", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashreceived_events`(value: `257`): Self = StObject.set(x, "GET /users/{username}/received_events", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashreceived_eventsSlashpublic`(value: `258`): Self = StObject.set(x, "GET /users/{username}/received_events/public", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashrepos`(value: `259`): Self = StObject.set(x, "GET /users/{username}/repos", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashssh_signing_keys`(value: `260`): Self = StObject.set(x, "GET /users/{username}/ssh_signing_keys", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashstarred`(value: `261`): Self = StObject.set(x, "GET /users/{username}/starred", value.asInstanceOf[js.Any])
+      
+      inline def `setGET SlashusersSlashLeftcurlybracketusernameRightcurlybracketSlashsubscriptions`(value: `262`): Self = StObject.set(x, "GET /users/{username}/subscriptions", value.asInstanceOf[js.Any])
     }
   }
 }

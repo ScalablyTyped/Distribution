@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 type BackgroundTaskCanceledEventHandler = js.Function2[
-/* sender */ typings.winrt.Windows.ApplicationModel.Background.IBackgroundTaskInstance, 
-/* reason */ typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskCancellationReason, 
-scala.Unit]
+/* sender */ IBackgroundTaskInstance, 
+/* reason */ BackgroundTaskCancellationReason, 
+Unit]
 
 type BackgroundTaskCompletedEventHandler = js.Function2[
-/* sender */ typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskRegistration, 
-/* args */ typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskCompletedEventArgs, 
-scala.Unit]
+/* sender */ BackgroundTaskRegistration, 
+/* args */ BackgroundTaskCompletedEventArgs, 
+Unit]
 
 type BackgroundTaskProgressEventHandler = js.Function2[
-/* sender */ typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskRegistration, 
-/* args */ typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskProgressEventArgs, 
-scala.Unit]
+/* sender */ BackgroundTaskRegistration, 
+/* args */ BackgroundTaskProgressEventArgs, 
+Unit]
 
-type INetworkOperatorHotspotAuthenticationTrigger = typings.winrt.Windows.ApplicationModel.Background.IBackgroundTrigger
+type INetworkOperatorHotspotAuthenticationTrigger = IBackgroundTrigger
 
-type PushNotificationTrigger = typings.winrt.Windows.ApplicationModel.Background.IBackgroundTrigger
+type PushNotificationTrigger = IBackgroundTrigger

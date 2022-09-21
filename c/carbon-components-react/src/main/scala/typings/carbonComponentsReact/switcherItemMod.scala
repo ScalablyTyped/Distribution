@@ -6,6 +6,7 @@ import typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps
 import typings.carbonComponentsReact.typingsSharedMod.RequiresChildrenProps
 import typings.carbonComponentsReact.uishellLinkMod.LinkProps
 import typings.react.mod.ReactNode
+import typings.std.NonNullable
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,8 +32,8 @@ object switcherItemMod {
   }
   object SwitcherItemPropsBase {
     
-    inline def apply(): SwitcherItemPropsBase = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(children: NonNullable[ReactNode]): SwitcherItemPropsBase = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[SwitcherItemPropsBase]
     }
     

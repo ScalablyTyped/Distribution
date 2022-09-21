@@ -1,7 +1,5 @@
 package typings.fibjs.global
 
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassBuffer ()
+open class ClassBuffer ()
   extends StObject
      with typings.fibjs.ClassBuffer {
   /**
@@ -42,7 +40,7 @@ class ClassBuffer ()
     * 
     * 
     */
-  def this(datas: js.Array[js.Any]) = this()
+  def this(datas: js.Array[Any]) = this()
   /**
     * 
     * @brief 缓存对象构造函数
@@ -51,7 +49,7 @@ class ClassBuffer ()
     * 
     * 
     */
-  def this(datas: ArrayBuffer) = this()
+  def this(datas: js.typedarray.ArrayBuffer) = this()
   /**
     * 
     * @brief 缓存对象构造函数
@@ -60,7 +58,7 @@ class ClassBuffer ()
     * 
     * 
     */
-  def this(datas: ArrayBufferView) = this()
+  def this(datas: js.typedarray.ArrayBufferView) = this()
   /**
     * 
     * @brief 缓存对象构造函数
@@ -69,7 +67,7 @@ class ClassBuffer ()
     * 
     * 
     */
-  def this(datas: ArrayLike[js.Any]) = this()
+  def this(datas: ArrayLike[Any]) = this()
   def this(size: Double) = this()
   /**
     * 
@@ -170,20 +168,7 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  inline def byteLength(str: typings.fibjs.ClassBuffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def byteLength(str: typings.fibjs.ClassBuffer, codec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[Double]
-  /**
-    * 
-    * @brief 返回字符串的实际字节长度
-    * @param str 待取字节的字符串，如果str为 ArrayBuffer/TypedArray/DataView/Buffer 对象，则返回它们的实际长度
-    * @param codec 指定编码格式，允许值为："hex", "base64", "utf8", 或者系统支持的字符集
-    * @return 返回实际字节长度
-    * 
-    * 
-    * 
-    */
-  /* static member */
-  inline def byteLength(str: ArrayBuffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def byteLength(str: js.typedarray.ArrayBuffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   /**
     * 
     * @brief 返回字符串的实际字节长度
@@ -195,9 +180,22 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  inline def byteLength(str: ArrayBufferView): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def byteLength(str: ArrayBufferView, codec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def byteLength(str: ArrayBuffer, codec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def byteLength(str: js.typedarray.ArrayBufferView): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def byteLength(str: js.typedarray.ArrayBufferView, codec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def byteLength(str: js.typedarray.ArrayBuffer, codec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[Double]
+  /**
+    * 
+    * @brief 返回字符串的实际字节长度
+    * @param str 待取字节的字符串，如果str为 ArrayBuffer/TypedArray/DataView/Buffer 对象，则返回它们的实际长度
+    * @param codec 指定编码格式，允许值为："hex", "base64", "utf8", 或者系统支持的字符集
+    * @return 返回实际字节长度
+    * 
+    * 
+    * 
+    */
+  /* static member */
+  inline def byteLength(str: typings.fibjs.ClassBuffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def byteLength(str: typings.fibjs.ClassBuffer, codec: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any], codec.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * 
@@ -210,8 +208,8 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  inline def concat(buflist: js.Array[js.Any]): typings.fibjs.ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buflist.asInstanceOf[js.Any]).asInstanceOf[typings.fibjs.ClassBuffer]
-  inline def concat(buflist: js.Array[js.Any], cutLength: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buflist.asInstanceOf[js.Any], cutLength.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def concat(buflist: js.Array[Any]): typings.fibjs.ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buflist.asInstanceOf[js.Any]).asInstanceOf[typings.fibjs.ClassBuffer]
+  inline def concat(buflist: js.Array[Any], cutLength: Double): typings.fibjs.ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buflist.asInstanceOf[js.Any], cutLength.asInstanceOf[js.Any])).asInstanceOf[typings.fibjs.ClassBuffer]
   
   /**
     * 
@@ -267,7 +265,7 @@ object ClassBuffer {
     * 
     */
   /* static member */
-  inline def isBuffer(v: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBuffer(v: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * 

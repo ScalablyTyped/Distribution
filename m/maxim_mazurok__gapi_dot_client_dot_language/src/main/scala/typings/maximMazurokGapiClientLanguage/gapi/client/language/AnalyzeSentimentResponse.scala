@@ -39,6 +39,6 @@ object AnalyzeSentimentResponse {
     
     inline def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
     
-    inline def setSentencesVarargs(value: Sentence*): Self = StObject.set(x, "sentences", js.Array(value :_*))
+    inline def setSentencesVarargs(value: Sentence*): Self = StObject.set(x, "sentences", js.Array(value*))
   }
 }

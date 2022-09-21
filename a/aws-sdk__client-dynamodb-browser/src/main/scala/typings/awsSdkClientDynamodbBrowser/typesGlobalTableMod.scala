@@ -2,7 +2,6 @@ package typings.awsSdkClientDynamodbBrowser
 
 import typings.awsSdkClientDynamodbBrowser.typesReplicaMod.Replica
 import typings.awsSdkClientDynamodbBrowser.typesReplicaMod.UnmarshalledReplica
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object typesGlobalTableMod {
     /**
       * <p>The regions where the global table has replicas.</p>
       */
-    var ReplicationGroup: js.UndefOr[js.Array[Replica] | Iterable[Replica]] = js.undefined
+    var ReplicationGroup: js.UndefOr[js.Array[Replica] | js.Iterable[Replica]] = js.undefined
   }
   object GlobalTable {
     
@@ -34,11 +33,11 @@ object typesGlobalTableMod {
       
       inline def setGlobalTableNameUndefined: Self = StObject.set(x, "GlobalTableName", js.undefined)
       
-      inline def setReplicationGroup(value: js.Array[Replica] | Iterable[Replica]): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
+      inline def setReplicationGroup(value: js.Array[Replica] | js.Iterable[Replica]): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
       
       inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
       
-      inline def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+      inline def setReplicationGroupVarargs(value: Replica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value*))
     }
   }
   
@@ -65,7 +64,7 @@ object typesGlobalTableMod {
       
       inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
       
-      inline def setReplicationGroupVarargs(value: UnmarshalledReplica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value :_*))
+      inline def setReplicationGroupVarargs(value: UnmarshalledReplica*): Self = StObject.set(x, "ReplicationGroup", js.Array(value*))
     }
   }
 }

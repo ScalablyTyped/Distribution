@@ -29,7 +29,7 @@ trait AnimationSettings extends StObject {
   
   var EntryEffect: PpEntryEffect
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PlaySettings: typings.activexPowerpoint.PowerPoint.PlaySettings
   
@@ -56,7 +56,7 @@ object AnimationSettings {
     ChartUnitEffect: PpChartUnitEffect,
     DimColor: ColorFormat,
     EntryEffect: PpEntryEffect,
-    Parent: js.Any,
+    Parent: Any,
     PlaySettings: PlaySettings,
     PowerPointDotAnimationSettings_typekey: AnimationSettings,
     SoundEffect: SoundEffect,
@@ -92,7 +92,7 @@ object AnimationSettings {
     
     inline def setEntryEffect(value: PpEntryEffect): Self = StObject.set(x, "EntryEffect", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPlaySettings(value: PlaySettings): Self = StObject.set(x, "PlaySettings", value.asInstanceOf[js.Any])
     

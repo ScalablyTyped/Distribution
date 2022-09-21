@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Super
   extends StObject
-     with BaseNode
-     with Node {
+     with BaseNode {
   
   @JSName("type")
   var type_Super: typings.estree.estreeStrings.Super

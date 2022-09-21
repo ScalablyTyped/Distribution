@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetViolationDetailsRequest extends StObject {
   
   /**
-    * The AWS account ID that you want the details for.
+    * The Amazon Web Services account ID that you want the details for.
     */
   var MemberAccount: AWSAccountId
   
   /**
-    * The ID of the AWS Firewall Manager policy that you want the details for. This currently only supports security group content audit policies.
+    * The ID of the Firewall Manager policy that you want the details for. This currently only supports security group content audit policies.
     */
   var PolicyId: typings.awsSdk.fmsMod.PolicyId
   
@@ -22,7 +22,7 @@ trait GetViolationDetailsRequest extends StObject {
   var ResourceId: typings.awsSdk.fmsMod.ResourceId
   
   /**
-    * The resource type. This is in the format shown in the AWS Resource Types Reference. Supported resource types are: AWS::EC2::Instance, AWS::EC2::NetworkInterface, AWS::EC2::SecurityGroup, AWS::NetworkFirewall::FirewallPolicy, and AWS::EC2::Subnet. 
+    * The resource type. This is in the format shown in the Amazon Web Services Resource Types Reference. Supported resource types are: AWS::EC2::Instance, AWS::EC2::NetworkInterface, AWS::EC2::SecurityGroup, AWS::NetworkFirewall::FirewallPolicy, and AWS::EC2::Subnet. 
     */
   var ResourceType: typings.awsSdk.fmsMod.ResourceType
 }

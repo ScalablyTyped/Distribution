@@ -1,7 +1,6 @@
 package typings.tensorflowTfjsData
 
 import typings.std.HTMLVideoElement
-import typings.std.Iterator
 import typings.std.IteratorResult
 import typings.std.RequestInfo
 import typings.tensorflowTfjsCore.tensorTypesMod.TensorContainer
@@ -25,9 +24,9 @@ object readersMod {
   inline def csv(source: RequestInfo): CSVDataset = ^.asInstanceOf[js.Dynamic].applyDynamic("csv")(source.asInstanceOf[js.Any]).asInstanceOf[CSVDataset]
   inline def csv(source: RequestInfo, csvConfig: CSVConfig): CSVDataset = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(source.asInstanceOf[js.Any], csvConfig.asInstanceOf[js.Any])).asInstanceOf[CSVDataset]
   
-  inline def func[T /* <: TensorContainer */](f: js.Function0[(IteratorResult[T, js.Any]) | (js.Promise[IteratorResult[T, js.Any]])]): Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(f.asInstanceOf[js.Any]).asInstanceOf[Dataset[T]]
+  inline def func[T /* <: TensorContainer */](f: js.Function0[(IteratorResult[T, Any]) | (js.Promise[IteratorResult[T, Any]])]): Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(f.asInstanceOf[js.Any]).asInstanceOf[Dataset[T]]
   
-  inline def generator[T /* <: TensorContainer */](generator: js.Function0[(Iterator[T, js.Any, Unit]) | (js.Promise[Iterator[T, js.Any, Unit]])]): Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("generator")(generator.asInstanceOf[js.Any]).asInstanceOf[Dataset[T]]
+  inline def generator[T /* <: TensorContainer */](generator: js.Function0[js.Iterator[T] | js.Promise[js.Iterator[T]]]): Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("generator")(generator.asInstanceOf[js.Any]).asInstanceOf[Dataset[T]]
   
   inline def microphone(): js.Promise[MicrophoneIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("microphone")().asInstanceOf[js.Promise[MicrophoneIterator]]
   inline def microphone(microphoneConfig: MicrophoneConfig): js.Promise[MicrophoneIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("microphone")(microphoneConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MicrophoneIterator]]

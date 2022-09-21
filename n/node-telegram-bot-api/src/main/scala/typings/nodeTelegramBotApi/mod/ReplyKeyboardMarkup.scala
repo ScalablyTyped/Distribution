@@ -25,7 +25,7 @@ object ReplyKeyboardMarkup {
     
     inline def setKeyboard(value: js.Array[js.Array[KeyboardButton]]): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
-    inline def setKeyboardVarargs(value: js.Array[KeyboardButton]*): Self = StObject.set(x, "keyboard", js.Array(value :_*))
+    inline def setKeyboardVarargs(value: js.Array[KeyboardButton]*): Self = StObject.set(x, "keyboard", js.Array(value*))
     
     inline def setOne_time_keyboard(value: Boolean): Self = StObject.set(x, "one_time_keyboard", value.asInstanceOf[js.Any])
     

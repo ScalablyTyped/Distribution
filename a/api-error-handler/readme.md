@@ -10,10 +10,10 @@ Express error handlers for JSON APIs
 | ------------------ | :-------------: |
 | Full name          | api-error-handler |
 | Keywords           | express, error, handler, api, json |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 79354 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8308.333333333334 |
+| # stars            | 96.0 |
 
 ## Links
 - [Homepage](https://github.com/expressjs/api-error-handler)

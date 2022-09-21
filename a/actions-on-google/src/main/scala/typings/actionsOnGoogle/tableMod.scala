@@ -14,7 +14,7 @@ object tableMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/card/table", "Table")
   @js.native
-  class Table protected ()
+  open class Table protected ()
     extends StObject
        with GoogleActionsV2UiElementsTableCard {
     /** @public */
@@ -132,19 +132,19 @@ object tableMod {
       
       inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      inline def setButtonsVarargs(value: GoogleActionsV2UiElementsButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: GoogleActionsV2UiElementsButton*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setColumnProperties(value: js.Array[TableColumn | String]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
       
       inline def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
       
-      inline def setColumnPropertiesVarargs(value: (TableColumn | String)*): Self = StObject.set(x, "columnProperties", js.Array(value :_*))
+      inline def setColumnPropertiesVarargs(value: (TableColumn | String)*): Self = StObject.set(x, "columnProperties", js.Array(value*))
       
       inline def setColumns(value: (js.Array[TableColumn | String]) | Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: (TableColumn | String)*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (TableColumn | String)*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setDividers(value: Boolean): Self = StObject.set(x, "dividers", value.asInstanceOf[js.Any])
       
@@ -156,7 +156,7 @@ object tableMod {
       
       inline def setRows(value: js.Array[TableRow | js.Array[String]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      inline def setRowsVarargs(value: (TableRow | js.Array[String])*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: (TableRow | js.Array[String])*): Self = StObject.set(x, "rows", js.Array(value*))
       
       inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
@@ -201,7 +201,7 @@ object tableMod {
       
       inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
       
-      inline def setCellsVarargs(value: (GoogleActionsV2UiElementsTableCardCell | String)*): Self = StObject.set(x, "cells", js.Array(value :_*))
+      inline def setCellsVarargs(value: (GoogleActionsV2UiElementsTableCardCell | String)*): Self = StObject.set(x, "cells", js.Array(value*))
       
       inline def setDividerAfter(value: Boolean): Self = StObject.set(x, "dividerAfter", value.asInstanceOf[js.Any])
       

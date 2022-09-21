@@ -1,6 +1,6 @@
 package typings.v8ToIstanbul
 
-import typings.sourceMap.mod.RawSourceMap
+import typings.jridgewellTraceMapping.typesMod.SourceMapInput
 import typings.v8ToIstanbul.mod.Sources
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -56,18 +56,18 @@ object anon {
   
   trait Sourcemap extends StObject {
     
-    var sourcemap: RawSourceMap
+    var sourcemap: SourceMapInput
   }
   object Sourcemap {
     
-    inline def apply(sourcemap: RawSourceMap): Sourcemap = {
+    inline def apply(sourcemap: SourceMapInput): Sourcemap = {
       val __obj = js.Dynamic.literal(sourcemap = sourcemap.asInstanceOf[js.Any])
       __obj.asInstanceOf[Sourcemap]
     }
     
     extension [Self <: Sourcemap](x: Self) {
       
-      inline def setSourcemap(value: RawSourceMap): Self = StObject.set(x, "sourcemap", value.asInstanceOf[js.Any])
+      inline def setSourcemap(value: SourceMapInput): Self = StObject.set(x, "sourcemap", value.asInstanceOf[js.Any])
     }
   }
 }

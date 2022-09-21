@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InvokeSourceDefinition
   extends StObject
-     with /* option */ StringDictionary[js.Any] {
+     with /* other */ StringDictionary[Any] {
   
   var `type`: String
 }

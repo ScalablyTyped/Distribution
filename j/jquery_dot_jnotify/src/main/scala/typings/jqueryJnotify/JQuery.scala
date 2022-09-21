@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait JQuery extends StObject {
   
-  def jnotifyAddMessage(): js.Any = js.native
-  def jnotifyAddMessage(options: JNotifyOptions): js.Any = js.native
+  def jnotifyAddMessage(): Any = js.native
+  def jnotifyAddMessage(options: JNotifyOptions): Any = js.native
   
-  def jnotifyInizialize(): js.Any = js.native
-  def jnotifyInizialize(options: JNotifyInitOptions): js.Any = js.native
+  def jnotifyInizialize(): Any = js.native
+  def jnotifyInizialize(options: JNotifyInitOptions): Any = js.native
 }

@@ -10,7 +10,7 @@ object appiumMod {
   
   @JSImport("webdriver-manager/built/lib/binaries/appium", "Appium")
   @js.native
-  class Appium () extends Binary {
+  open class Appium () extends Binary {
     def this(alternateCDN: String) = this()
   }
   /* static members */

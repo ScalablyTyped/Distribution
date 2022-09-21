@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Paragraph")
 @js.native
-class Paragraph ()
+open class Paragraph ()
   extends StObject
      with typings.devexpressWeb.Paragraph {
   

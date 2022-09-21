@@ -16,13 +16,39 @@ object anon {
   /* Inlined @vue/compiler-core.@vue/compiler-core.CodegenOptions & {  onContextCreated :(context : @vue/compiler-core.@vue/compiler-core.CodegenContext): void | undefined} */
   trait CodegenOptionsonContextCr extends StObject {
     
+    /**
+      * Optional binding metadata analyzed from script - used to optimize
+      * binding access when `prefixIdentifiers` is enabled.
+      */
     var bindingMetadata: js.UndefOr[BindingMetadata] = js.undefined
     
     /**
       * Filename for source map generation.
+      * Also used for self-recursive reference in templates
       * @default 'template.vue.html'
       */
     var filename: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Indicates whether the compiler generates code for SSR,
+      * it is always true when generating code for SSR,
+      * regardless of whether we are generating code for SSR's fallback branch,
+      * this means that when the compiler generates code for SSR's fallback branch:
+      *  - context.ssr = false
+      *  - context.inSSR = true
+      */
+    var inSSR: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Compile the function for inlining inside setup().
+      * This allows the function to directly access setup() local bindings.
+      */
+    var `inline`: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Indicates that transforms and codegen should try to output valid TS code
+      */
+    var isTS: js.UndefOr[Boolean] = js.undefined
     
     /**
       * - `module` mode will generate ES module import statements for helpers
@@ -44,6 +70,14 @@ object anon {
       */
     var optimizeImports: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Transform expressions like {{ foo }} to `_ctx.foo`.
+      * If this option is false, the generated code will be wrapped in a
+      * `with (this) { ... }` block.
+      * - This is force-enabled in module mode, since modules are by default strict
+      * and cannot use `with`
+      * @default mode === 'module'
+      */
     var prefixIdentifiers: js.UndefOr[Boolean] = js.undefined
     
     /**
@@ -70,7 +104,23 @@ object anon {
       */
     var sourceMap: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Control whether generate SSR-optimized render functions instead.
+      * The resulting function must be attached to the component via the
+      * `ssrRender` option instead of `render`.
+      *
+      * When compiler generates code for SSR's fallback branch, we need to set it to false:
+      *  - context.ssr = false
+      *
+      * see `subTransform` in `ssrTransformComponent.ts`
+      */
     var ssr: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Customize where to import ssr runtime helpers from/ **
+      * @default 'vue/server-renderer'
+      */
+    var ssrRuntimeModuleName: js.UndefOr[String] = js.undefined
   }
   object CodegenOptionsonContextCr {
     
@@ -88,6 +138,18 @@ object anon {
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setInSSR(value: Boolean): Self = StObject.set(x, "inSSR", value.asInstanceOf[js.Any])
+      
+      inline def setInSSRUndefined: Self = StObject.set(x, "inSSR", js.undefined)
+      
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      
+      inline def setIsTS(value: Boolean): Self = StObject.set(x, "isTS", value.asInstanceOf[js.Any])
+      
+      inline def setIsTSUndefined: Self = StObject.set(x, "isTS", js.undefined)
       
       inline def setMode(value: module | function): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -125,6 +187,10 @@ object anon {
       
       inline def setSsr(value: Boolean): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
       
+      inline def setSsrRuntimeModuleName(value: String): Self = StObject.set(x, "ssrRuntimeModuleName", value.asInstanceOf[js.Any])
+      
+      inline def setSsrRuntimeModuleNameUndefined: Self = StObject.set(x, "ssrRuntimeModuleName", js.undefined)
+      
       inline def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
     }
   }
@@ -138,11 +204,18 @@ object anon {
     var patchFlag: Double
     
     var props: js.UndefOr[PropsExpression] = js.undefined
+    
+    var shouldUseBlock: Boolean
   }
   object Directives {
     
-    inline def apply(directives: js.Array[DirectiveNode], dynamicPropNames: js.Array[String], patchFlag: Double): Directives = {
-      val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], dynamicPropNames = dynamicPropNames.asInstanceOf[js.Any], patchFlag = patchFlag.asInstanceOf[js.Any])
+    inline def apply(
+      directives: js.Array[DirectiveNode],
+      dynamicPropNames: js.Array[String],
+      patchFlag: Double,
+      shouldUseBlock: Boolean
+    ): Directives = {
+      val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], dynamicPropNames = dynamicPropNames.asInstanceOf[js.Any], patchFlag = patchFlag.asInstanceOf[js.Any], shouldUseBlock = shouldUseBlock.asInstanceOf[js.Any])
       __obj.asInstanceOf[Directives]
     }
     
@@ -150,17 +223,19 @@ object anon {
       
       inline def setDirectives(value: js.Array[DirectiveNode]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       
-      inline def setDirectivesVarargs(value: DirectiveNode*): Self = StObject.set(x, "directives", js.Array(value :_*))
+      inline def setDirectivesVarargs(value: DirectiveNode*): Self = StObject.set(x, "directives", js.Array(value*))
       
       inline def setDynamicPropNames(value: js.Array[String]): Self = StObject.set(x, "dynamicPropNames", value.asInstanceOf[js.Any])
       
-      inline def setDynamicPropNamesVarargs(value: String*): Self = StObject.set(x, "dynamicPropNames", js.Array(value :_*))
+      inline def setDynamicPropNamesVarargs(value: String*): Self = StObject.set(x, "dynamicPropNames", js.Array(value*))
       
       inline def setPatchFlag(value: Double): Self = StObject.set(x, "patchFlag", value.asInstanceOf[js.Any])
       
       inline def setProps(value: PropsExpression): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      
+      inline def setShouldUseBlock(value: Boolean): Self = StObject.set(x, "shouldUseBlock", value.asInstanceOf[js.Any])
     }
   }
   

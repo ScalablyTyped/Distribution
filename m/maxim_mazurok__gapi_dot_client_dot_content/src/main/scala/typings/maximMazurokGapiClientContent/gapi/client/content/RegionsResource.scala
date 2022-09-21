@@ -4,9 +4,9 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientContent.anon.PageSize
 import typings.maximMazurokGapiClientContent.anon.QuotaUserRegionId
 import typings.maximMazurokGapiClientContent.anon.RegionId
+import typings.maximMazurokGapiClientContent.anon.RegionIdResource
 import typings.maximMazurokGapiClientContent.anon.RegionIdUpdateMask
 import typings.maximMazurokGapiClientContent.anon.RegionIdUploadType
-import typings.maximMazurokGapiClientContent.anon.UpdateMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +30,7 @@ trait RegionsResource extends StObject {
   def list(): Request[ListRegionsResponse] = js.native
   def list(request: PageSize): Request[ListRegionsResponse] = js.native
   
-  def patch(request: RegionIdUpdateMask, body: Region): Request[Region] = js.native
   /** Updates a region definition in your Merchant Center account. */
-  def patch(request: UpdateMask): Request[Region] = js.native
+  def patch(request: RegionIdResource): Request[Region] = js.native
+  def patch(request: RegionIdUpdateMask, body: Region): Request[Region] = js.native
 }

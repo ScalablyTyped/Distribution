@@ -1,6 +1,6 @@
 package typings.intlMessageformat
 
-import typings.intlMessageformat.anon.Date
+import typings.formatjsIcuMessageformatParser.formatjsIcuMessageformatParserTypesMod.MessageFormatElement
 import typings.intlMessageformat.anon.FnCall
 import typings.intlMessageformat.anon.PartialFormats
 import typings.intlMessageformat.srcCoreMod.Options
@@ -10,7 +10,7 @@ import typings.intlMessageformat.srcFormattersMod.Formats
 import typings.intlMessageformat.srcFormattersMod.Formatters
 import typings.intlMessageformat.srcFormattersMod.MessageFormatPart
 import typings.intlMessageformat.srcFormattersMod.PrimitiveType
-import typings.intlMessageformatParser.srcTypesMod.MessageFormatElement
+import typings.std.Intl.Locale
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +24,7 @@ object mod {
   
   @JSImport("intl-messageformat", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.intlMessageformat.srcCoreMod.IntlMessageFormat {
     def this(message: String) = this()
     def this(message: js.Array[MessageFormatElement]) = this()
@@ -89,18 +89,35 @@ object mod {
     
     @JSImport("intl-messageformat", "default.formats")
     @js.native
-    def formats: Date = js.native
-    inline def formats_=(x: Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
+    def formats: Formats = js.native
+    inline def formats_=(x: Formats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
     
     @JSImport("intl-messageformat", "default.memoizedDefaultLocale")
     @js.native
-    def memoizedDefaultLocale: js.Any = js.native
-    inline def memoizedDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
+    def memoizedDefaultLocale: Any = js.native
+    inline def memoizedDefaultLocale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
+    
+    inline def resolveLocale(locales: String): js.UndefOr[Locale] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLocale")(locales.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Locale]]
+    inline def resolveLocale(locales: js.Array[String]): js.UndefOr[Locale] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLocale")(locales.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Locale]]
+  }
+  
+  @JSImport("intl-messageformat", "ErrorCode")
+  @js.native
+  object ErrorCode extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.intlMessageformat.srcErrorMod.ErrorCode & String] = js.native
+    
+    /* "INVALID_VALUE" */ val INVALID_VALUE: typings.intlMessageformat.srcErrorMod.ErrorCode.INVALID_VALUE & String = js.native
+    
+    /* "MISSING_INTL_API" */ val MISSING_INTL_API: typings.intlMessageformat.srcErrorMod.ErrorCode.MISSING_INTL_API & String = js.native
+    
+    /* "MISSING_VALUE" */ val MISSING_VALUE: typings.intlMessageformat.srcErrorMod.ErrorCode.MISSING_VALUE & String = js.native
   }
   
   @JSImport("intl-messageformat", "FormatError")
   @js.native
-  class FormatError protected ()
+  open class FormatError protected ()
     extends typings.intlMessageformat.srcErrorMod.FormatError {
     def this(msg: String, code: ErrorCode) = this()
     def this(msg: String, code: ErrorCode, originalMessage: String) = this()
@@ -108,7 +125,7 @@ object mod {
   
   @JSImport("intl-messageformat", "IntlMessageFormat")
   @js.native
-  class IntlMessageFormat protected ()
+  open class IntlMessageFormat protected ()
     extends typings.intlMessageformat.srcCoreMod.IntlMessageFormat {
     def this(message: String) = this()
     def this(message: js.Array[MessageFormatElement]) = this()
@@ -173,37 +190,52 @@ object mod {
     
     @JSImport("intl-messageformat", "IntlMessageFormat.formats")
     @js.native
-    def formats: Date = js.native
-    inline def formats_=(x: Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
+    def formats: Formats = js.native
+    inline def formats_=(x: Formats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
     
     @JSImport("intl-messageformat", "IntlMessageFormat.memoizedDefaultLocale")
     @js.native
-    def memoizedDefaultLocale: js.Any = js.native
-    inline def memoizedDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
+    def memoizedDefaultLocale: Any = js.native
+    inline def memoizedDefaultLocale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
+    
+    inline def resolveLocale(locales: String): js.UndefOr[Locale] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLocale")(locales.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Locale]]
+    inline def resolveLocale(locales: js.Array[String]): js.UndefOr[Locale] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLocale")(locales.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Locale]]
   }
   
   @JSImport("intl-messageformat", "InvalidValueError")
   @js.native
-  class InvalidValueError protected ()
+  open class InvalidValueError protected ()
     extends typings.intlMessageformat.srcErrorMod.InvalidValueError {
-    def this(variableId: String, value: js.Any, options: js.Array[String]) = this()
-    def this(variableId: String, value: js.Any, options: js.Array[String], originalMessage: String) = this()
+    def this(variableId: String, value: Any, options: js.Array[String]) = this()
+    def this(variableId: String, value: Any, options: js.Array[String], originalMessage: String) = this()
   }
   
   @JSImport("intl-messageformat", "InvalidValueTypeError")
   @js.native
-  class InvalidValueTypeError protected ()
+  open class InvalidValueTypeError protected ()
     extends typings.intlMessageformat.srcErrorMod.InvalidValueTypeError {
-    def this(value: js.Any, `type`: String) = this()
-    def this(value: js.Any, `type`: String, originalMessage: String) = this()
+    def this(value: Any, `type`: String) = this()
+    def this(value: Any, `type`: String, originalMessage: String) = this()
   }
   
   @JSImport("intl-messageformat", "MissingValueError")
   @js.native
-  class MissingValueError protected ()
+  open class MissingValueError protected ()
     extends typings.intlMessageformat.srcErrorMod.MissingValueError {
     def this(variableId: String) = this()
     def this(variableId: String, originalMessage: String) = this()
+  }
+  
+  @JSImport("intl-messageformat", "PART_TYPE")
+  @js.native
+  object PART_TYPE extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.intlMessageformat.srcFormattersMod.PART_TYPE & Double] = js.native
+    
+    /* 0 */ val literal: typings.intlMessageformat.srcFormattersMod.PART_TYPE.literal & Double = js.native
+    
+    /* 1 */ val `object`: typings.intlMessageformat.srcFormattersMod.PART_TYPE.`object` & Double = js.native
   }
   
   inline def formatToParts[T](els: js.Array[MessageFormatElement], locales: String, formatters: Formatters, formats: Formats): js.Array[MessageFormatPart[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatToParts")(els.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], formatters.asInstanceOf[js.Any], formats.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatPart[T]]]

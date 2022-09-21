@@ -1,6 +1,7 @@
 package typings.paypalCheckoutComponents
 
 import typings.paypalCheckoutComponents.anon.AccessToken
+import typings.paypalCheckoutComponents.anon.CreateBillingAgreement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,6 +36,12 @@ object buttonMod {
     /* 3 */ val ELV: typings.paypalCheckoutComponents.buttonMod.FundingOption.ELV & Double = js.native
     
     @js.native
+    sealed trait PAYPAL
+      extends StObject
+         with FundingOption
+    /* 4 */ val PAYPAL: typings.paypalCheckoutComponents.buttonMod.FundingOption.PAYPAL & Double = js.native
+    
+    @js.native
     sealed trait VENMO
       extends StObject
          with FundingOption
@@ -56,5 +63,13 @@ object buttonMod {
       
       inline def setRender(value: (AccessToken, String) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     }
+  }
+  
+  @js.native
+  trait ButtonsRenderer extends StObject {
+    
+    def apply(options: CreateBillingAgreement): ButtonsRenderer = js.native
+    
+    def render(selector: String): Unit = js.native
   }
 }

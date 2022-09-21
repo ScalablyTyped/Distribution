@@ -4,11 +4,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.ArrayBufferConstructor
 import typings.std.ArrayConstructor
 import typings.std.BooleanConstructor
-import typings.std.Date
 import typings.std.DateConstructor
 import typings.std.NumberConstructor
 import typings.std.ObjectConstructor
-import typings.std.RegExp
 import typings.std.StringConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,91 +20,65 @@ object mod {
   
   @JSImport("camo", "Document")
   @js.native
-  class Document[Schema /* <: DocumentSchema */] ()
+  open class Document[Schema /* <: DocumentSchema */] ()
     extends StObject
        with /**
     * Index signature
     */
-  /* property */ StringDictionary[SchemaTypeExtended | String | Document[js.Any] | js.Function] {
+  /* property */ StringDictionary[SchemaTypeExtended | String | Document[Any] | js.Function] {
     
     /**
       * Removes documents from the database.
       * Should only be used on an instantiated document with a valid id.
       *
-      * @returns {Promise<number>} Number of deleted documents.
+      * @returns Number of deleted documents.
       */
     def delete(): js.Promise[Double] = js.native
     
     /**
       * post-delete hook.
-      *
-      * @protected
-      * @returns {Promise<any>}
       */
-    /* protected */ def postDelete(): js.Promise[js.Any] = js.native
+    /* protected */ def postDelete(): js.Promise[Any] = js.native
     
     /**
       * post-save hook.
-      *
-      * @protected
-      * @returns {Promise<any>}
       */
-    /* protected */ def postSave(): js.Promise[js.Any] = js.native
+    /* protected */ def postSave(): js.Promise[Any] = js.native
     
     /**
       * post-validate hook.
-      *
-      * @protected
-      * @returns {Promise<any>}
       */
-    /* protected */ def postValidate(): js.Promise[js.Any] = js.native
+    /* protected */ def postValidate(): js.Promise[Any] = js.native
     
     /**
       * pre-delete hook.
-      *
-      * @protected
-      * @returns {Promise<any>}
       */
-    /* protected */ def preDelete(): js.Promise[js.Any] = js.native
+    /* protected */ def preDelete(): js.Promise[Any] = js.native
     
     /**
       * pre-save hook.
-      *
-      * @protected
-      * @returns {Promise<any>}
       */
-    /* protected */ def preSave(): js.Promise[js.Any] = js.native
+    /* protected */ def preSave(): js.Promise[Any] = js.native
     
     /**
       * pre-validate hook.
-      *
-      * @protected
-      * @returns {Promise<any>}
       */
-    /* protected */ def preValidate(): js.Promise[js.Any] = js.native
+    /* protected */ def preValidate(): js.Promise[Any] = js.native
     
     /**
       * Saves the document instance to the database.
-      *
-      * @returns {Promise<Schema>}
       */
     def save(): js.Promise[Schema] = js.native
     
     /**
       * Sets the schema (to be used on the constructor).
-      *
-      * @protected
-      * @template Schema
-      * @param {Schema} schema
       */
     /* protected */ def schema[Schema](schema: Schema): Unit = js.native
     
     /**
       * Serialized document to just the data, which includes nested and referenced data.
-      *
-      * @returns {*}
       */
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
   }
   /* static members */
   object Document {
@@ -118,99 +90,80 @@ object mod {
     /**
       * Static method to define the collection name.
       *
-      * @protected
-      * @static
-      * @returns {string} The collection name.
+      * @returns The collection name.
       */
     inline def collectionName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("collectionName")().asInstanceOf[String]
     
     /**
       * Number of matching documents without retrieving all the data.
       *
-      * @static
-      * @param {*} query Count query.
-      * @returns {Promise<number>}
+      * @param query Count query.
       */
-    inline def count(query: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    inline def count(query: Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
     
     /**
       * Creates a camo document instance.
       *
-      * @static
-      * @template StaticSchema
-      * @param {StaticSchema} schema Base schema to create a document.
-      * @returns {DocumentInstance<StaticSchema>} A camo document instance.
+      * @param schema Base schema to create a document.
+      * @returns A camo document instance.
       */
     inline def create[StaticSchema /* <: DocumentSchema */](schema: StaticSchema): Document[StaticSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(schema.asInstanceOf[js.Any]).asInstanceOf[Document[StaticSchema]]
     
     /**
       * Removes all documents matching the query.
       *
-      * @static
-      * @param {*} query Delete query.
-      * @returns {Promise<number>} Number of deleted documents.
+      * @param query Delete query.
+      * @returns Number of deleted documents.
       */
-    inline def deleteMany(query: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteMany")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    inline def deleteMany(query: Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteMany")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
     
     /**
       * Removes the first document found, even if multiple documents match the query.
       *
-      * @static
-      * @param {*} query Delete query.
-      * @returns {Promise<number>} Number of deleted documents.
+      * @param query Delete query.
+      * @returns Number of deleted documents.
       */
-    inline def deleteOne(query: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteOne")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    inline def deleteOne(query: Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteOne")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
     
     /**
       * Return all documents matching the query.
       *
-      * @static
-      * @template StaticSchema
-      * @param {*} query Find query.
-      * @param {FindOptions} options
-      * @returns {Promise<StaticSchema>}
+      * @param query Find query.
       */
-    inline def find[StaticSchema /* <: DocumentSchema */](query: js.Any): js.Promise[js.Array[StaticSchema]] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[StaticSchema]]]
-    inline def find[StaticSchema /* <: DocumentSchema */](query: js.Any, options: FindOptions): js.Promise[js.Array[StaticSchema]] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[StaticSchema]]]
+    inline def find[StaticSchema /* <: DocumentSchema */](query: Any): js.Promise[js.Array[StaticSchema]] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[StaticSchema]]]
+    inline def find[StaticSchema /* <: DocumentSchema */](query: Any, options: FindOptions): js.Promise[js.Array[StaticSchema]] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[StaticSchema]]]
     
     /**
       * Return the first document found, even if multiple documents match the query.
       *
-      * @static
-      * @template StaticSchema
-      * @param {*} query Find query.
-      * @param {FindOneOptions} options findOne method options.
-      * @returns {Promise<StaticSchema>}
+      * @param query Find query.
+      * @param options findOne method options.
       */
-    inline def findOne[StaticSchema /* <: DocumentSchema */](query: js.Any): js.Promise[StaticSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StaticSchema]]
-    inline def findOne[StaticSchema /* <: DocumentSchema */](query: js.Any, options: FindOneOptions): js.Promise[StaticSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticSchema]]
+    inline def findOne[StaticSchema /* <: DocumentSchema */](query: Any): js.Promise[StaticSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StaticSchema]]
+    inline def findOne[StaticSchema /* <: DocumentSchema */](query: Any, options: FindOneOptions): js.Promise[StaticSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticSchema]]
     
     /**
       * Find the first document and delete it.
       *
-      * @static
-      * @param {*} query Delete query.
-      * @param {*} options Database Options for findOneAndDelete method.
-      * @returns {Promise<number>} Number of deleted documents.
+      * @param query Delete query.
+      * @param options Database Options for findOneAndDelete method.
+      * @returns Number of deleted documents.
       */
-    inline def findOneAndDelete(query: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndDelete")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
-    inline def findOneAndDelete(query: js.Any, options: js.Any): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndDelete")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def findOneAndDelete(query: Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndDelete")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    inline def findOneAndDelete(query: Any, options: Any): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndDelete")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
     /**
       * Find and update (or insert) a document in one atomic operation (atomic for MongoDB only).
       *
-      * @static
-      * @template StaticSchema
-      * @param {*} query Find query.
-      * @param {Schema} values Values to set.
-      * @param {FindOneAndUpdateOptions} options findOneAndUpdate method options.
-      * @returns {Promise<StaticSchema>}
+      * @param query Find query.
+      * @param values Values to set.
+      * @param options findOneAndUpdate method options.
       */
-    inline def findOneAndUpdate[StaticSchema /* <: DocumentSchema */](query: js.Any, values: StaticSchema): js.Promise[StaticSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndUpdate")(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticSchema]]
-    inline def findOneAndUpdate[StaticSchema /* <: DocumentSchema */](query: js.Any, values: StaticSchema, options: FindOneAndUpdateOptions): js.Promise[StaticSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndUpdate")(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticSchema]]
+    inline def findOneAndUpdate[StaticSchema /* <: DocumentSchema */](query: Any, values: StaticSchema): js.Promise[StaticSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndUpdate")(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticSchema]]
+    inline def findOneAndUpdate[StaticSchema /* <: DocumentSchema */](query: Any, values: StaticSchema, options: FindOneAndUpdateOptions): js.Promise[StaticSchema] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneAndUpdate")(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StaticSchema]]
   }
   
-  inline def connect(uri: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def connect(uri: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   
   trait DocumentSchema
     extends StObject
@@ -243,8 +196,6 @@ object mod {
     
     /**
       * Return a new document if one is not found with the given query.
-      *
-      * @type {boolean}
       */
     var upsert: js.UndefOr[Boolean] = js.undefined
   }
@@ -268,8 +219,6 @@ object mod {
     /**
       * Find all or no references.
       * Pass an array of field names to only populate the specified references.
-      *
-      * @type {(boolean | string[])}
       */
     var populate: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   }
@@ -286,7 +235,7 @@ object mod {
       
       inline def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
       
-      inline def setPopulateVarargs(value: String*): Self = StObject.set(x, "populate", js.Array(value :_*))
+      inline def setPopulateVarargs(value: String*): Self = StObject.set(x, "populate", js.Array(value*))
     }
   }
   
@@ -294,30 +243,22 @@ object mod {
     
     /**
       * Limits the number of documents returned.
-      *
-      * @type {number}
       */
     var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * Find all or no references.
       * Pass an array of field names to only populate the specified references.
-      *
-      * @type {(boolean | string[])}
       */
     var populate: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
     /**
       * Skips the given number of documents and returns the rest.
-      *
-      * @type {number}
       */
     var skip: js.UndefOr[Double] = js.undefined
     
     /**
       * Sort the documents by the given field(s).
-      *
-      * @type {TypeOrArrayOfType<string>}
       */
     var sort: js.UndefOr[TypeOrArrayOfType[String]] = js.undefined
   }
@@ -338,7 +279,7 @@ object mod {
       
       inline def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
       
-      inline def setPopulateVarargs(value: String*): Self = StObject.set(x, "populate", js.Array(value :_*))
+      inline def setPopulateVarargs(value: String*): Self = StObject.set(x, "populate", js.Array(value*))
       
       inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
@@ -348,11 +289,11 @@ object mod {
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
+      inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value*))
     }
   }
   
-  type SchemaType = TypeOrArrayOfType[String | Double | Boolean | Date | js.Object]
+  type SchemaType = TypeOrArrayOfType[String | Double | Boolean | js.Date | js.Object]
   
   type SchemaTypeConstructor = TypeOrArrayOfType[
     ArrayBufferConstructor | ArrayConstructor | BooleanConstructor | DateConstructor | NumberConstructor | ObjectConstructor | StringConstructor
@@ -375,7 +316,7 @@ object mod {
     /**
       * RegEx to match value
       */
-    var `match`: js.UndefOr[RegExp] = js.undefined
+    var `match`: js.UndefOr[js.RegExp] = js.undefined
     
     /**
       * Max value (only with Number)
@@ -405,8 +346,8 @@ object mod {
     /**
       * Validation function.
       *
-      * @param {Type} value Value taken.
-      * @returns {boolean} true (validation ok) or false (validation wrong).
+      * @param value Value taken.
+      * @returns true (validation ok) or false (validation wrong).
       */
     var validate: js.UndefOr[js.Function1[/* value */ Type, Boolean]] = js.undefined
   }
@@ -424,13 +365,13 @@ object mod {
       
       inline def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
       
-      inline def setChoicesVarargs(value: Type*): Self = StObject.set(x, "choices", js.Array(value :_*))
+      inline def setChoicesVarargs(value: Type*): Self = StObject.set(x, "choices", js.Array(value*))
       
       inline def setDefault(value: Type): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: js.RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
@@ -450,7 +391,7 @@ object mod {
       
       inline def setTypeVarargs(
         value: (ArrayBufferConstructor | ArrayConstructor | BooleanConstructor | DateConstructor | NumberConstructor | ObjectConstructor | StringConstructor)*
-      ): Self = StObject.set(x, "type", js.Array(value :_*))
+      ): Self = StObject.set(x, "type", js.Array(value*))
       
       inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
       

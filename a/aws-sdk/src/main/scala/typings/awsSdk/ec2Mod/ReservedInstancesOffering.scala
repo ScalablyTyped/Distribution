@@ -37,7 +37,7 @@ trait ReservedInstancesOffering extends StObject {
   var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
   /**
-    * Indicates whether the offering is available through the Reserved Instance Marketplace (resale) or AWS. If it's a Reserved Instance Marketplace offering, this is true.
+    * Indicates whether the offering is available through the Reserved Instance Marketplace (resale) or Amazon Web Services. If it's a Reserved Instance Marketplace offering, this is true.
     */
   var Marketplace: js.UndefOr[Boolean] = js.undefined
   
@@ -130,7 +130,7 @@ object ReservedInstancesOffering {
     
     inline def setPricingDetailsUndefined: Self = StObject.set(x, "PricingDetails", js.undefined)
     
-    inline def setPricingDetailsVarargs(value: PricingDetail*): Self = StObject.set(x, "PricingDetails", js.Array(value :_*))
+    inline def setPricingDetailsVarargs(value: PricingDetail*): Self = StObject.set(x, "PricingDetails", js.Array(value*))
     
     inline def setProductDescription(value: RIProductDescription): Self = StObject.set(x, "ProductDescription", value.asInstanceOf[js.Any])
     
@@ -140,7 +140,7 @@ object ReservedInstancesOffering {
     
     inline def setRecurringChargesUndefined: Self = StObject.set(x, "RecurringCharges", js.undefined)
     
-    inline def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "RecurringCharges", js.Array(value :_*))
+    inline def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "RecurringCharges", js.Array(value*))
     
     inline def setReservedInstancesOfferingId(value: String): Self = StObject.set(x, "ReservedInstancesOfferingId", value.asInstanceOf[js.Any])
     

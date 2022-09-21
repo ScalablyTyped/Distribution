@@ -10,12 +10,10 @@ object paginationPrevMod {
   
   @JSImport("react-bootstrap/lib/PaginationPrev", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PaginationPrevProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PaginationPrevProps, js.Object, Any]
   
-  @js.native
-  trait PaginationPrev
-    extends Component[PaginationPrevProps, js.Object, js.Any]
+  type PaginationPrev = Component[PaginationPrevProps, js.Object, Any]
   
   trait PaginationPrevProps
     extends StObject

@@ -1,9 +1,9 @@
 package typings.node
 
-import typings.node.NodeJS.Dict
 import typings.node.anon.Idle
 import typings.node.anon.`2`
 import typings.node.anon.`4`
+import typings.node.bufferMod.global.Buffer
 import typings.node.nodeStrings.BE
 import typings.node.nodeStrings.IPv4
 import typings.node.nodeStrings.IPv6
@@ -21,9 +21,16 @@ object osMod {
   
   @JSImport("os", "EOL")
   @js.native
-  val EOL: java.lang.String = js.native
+  val EOL: String = js.native
   
-  inline def arch(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("arch")().asInstanceOf[java.lang.String]
+  /**
+    * Returns the operating system CPU architecture for which the Node.js binary was
+    * compiled. Possible values are `'arm'`, `'arm64'`, `'ia32'`, `'mips'`,`'mipsel'`, `'ppc'`, `'ppc64'`, `'s390'`, `'s390x'`, and `'x64'`.
+    *
+    * The return value is equivalent to `process.arch`.
+    * @since v0.5.0
+    */
+  inline def arch(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arch")().asInstanceOf[String]
   
   object constants {
     
@@ -614,66 +621,286 @@ object osMod {
     val signals: SignalConstants = js.native
   }
   
+  /**
+    * Returns an array of objects containing information about each logical CPU core.
+    *
+    * The properties included on each object include:
+    *
+    * ```js
+    * [
+    *   {
+    *     model: 'Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz',
+    *     speed: 2926,
+    *     times: {
+    *       user: 252020,
+    *       nice: 0,
+    *       sys: 30340,
+    *       idle: 1070356870,
+    *       irq: 0
+    *     }
+    *   },
+    *   {
+    *     model: 'Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz',
+    *     speed: 2926,
+    *     times: {
+    *       user: 306960,
+    *       nice: 0,
+    *       sys: 26980,
+    *       idle: 1071569080,
+    *       irq: 0
+    *     }
+    *   },
+    *   {
+    *     model: 'Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz',
+    *     speed: 2926,
+    *     times: {
+    *       user: 248450,
+    *       nice: 0,
+    *       sys: 21750,
+    *       idle: 1070919370,
+    *       irq: 0
+    *     }
+    *   },
+    *   {
+    *     model: 'Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz',
+    *     speed: 2926,
+    *     times: {
+    *       user: 256880,
+    *       nice: 0,
+    *       sys: 19430,
+    *       idle: 1070905480,
+    *       irq: 20
+    *     }
+    *   },
+    * ]
+    * ```
+    *
+    * `nice` values are POSIX-only. On Windows, the `nice` values of all processors
+    * are always 0.
+    * @since v0.3.3
+    */
   inline def cpus(): js.Array[CpuInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("cpus")().asInstanceOf[js.Array[CpuInfo]]
   
+  @JSImport("os", "devNull")
+  @js.native
+  val devNull: String = js.native
+  
+  /**
+    * Returns a string identifying the endianness of the CPU for which the Node.js
+    * binary was compiled.
+    *
+    * Possible values are `'BE'` for big endian and `'LE'` for little endian.
+    * @since v0.9.4
+    */
   inline def endianness(): BE | LE = ^.asInstanceOf[js.Dynamic].applyDynamic("endianness")().asInstanceOf[BE | LE]
   
+  /**
+    * Returns the amount of free system memory in bytes as an integer.
+    * @since v0.3.3
+    */
   inline def freemem(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("freemem")().asInstanceOf[Double]
   
   /**
-    * Gets the priority of a process.
-    * Defaults to current process.
+    * Returns the scheduling priority for the process specified by `pid`. If `pid` is
+    * not provided or is `0`, the priority of the current process is returned.
+    * @since v10.10.0
+    * @param [pid=0] The process ID to retrieve scheduling priority for.
     */
   inline def getPriority(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPriority")().asInstanceOf[Double]
   inline def getPriority(pid: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPriority")(pid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def homedir(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("homedir")().asInstanceOf[java.lang.String]
+  /**
+    * Returns the string path of the current user's home directory.
+    *
+    * On POSIX, it uses the `$HOME` environment variable if defined. Otherwise it
+    * uses the [effective UID](https://en.wikipedia.org/wiki/User_identifier#Effective_user_ID) to look up the user's home directory.
+    *
+    * On Windows, it uses the `USERPROFILE` environment variable if defined.
+    * Otherwise it uses the path to the profile directory of the current user.
+    * @since v2.3.0
+    */
+  inline def homedir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("homedir")().asInstanceOf[String]
   
-  inline def hostname(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("hostname")().asInstanceOf[java.lang.String]
+  /**
+    * Returns the host name of the operating system as a string.
+    * @since v0.3.3
+    */
+  inline def hostname(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hostname")().asInstanceOf[String]
   
+  /**
+    * Returns an array containing the 1, 5, and 15 minute load averages.
+    *
+    * The load average is a measure of system activity calculated by the operating
+    * system and expressed as a fractional number.
+    *
+    * The load average is a Unix-specific concept. On Windows, the return value is
+    * always `[0, 0, 0]`.
+    * @since v0.3.3
+    */
   inline def loadavg(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadavg")().asInstanceOf[js.Array[Double]]
   
-  inline def networkInterfaces(): Dict[js.Array[NetworkInterfaceInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")().asInstanceOf[Dict[js.Array[NetworkInterfaceInfo]]]
+  /**
+    * Returns the machine type as a string, such as arm, aarch64, mips, mips64, ppc64, ppc64le, s390, s390x, i386, i686, x86_64.
+    *
+    * On POSIX systems, the machine type is determined by calling [`uname(3)`](https://linux.die.net/man/3/uname).
+    * On Windows, `RtlGetVersion()` is used, and if it is not available, `GetVersionExW()` will be used.
+    * See [https://en.wikipedia.org/wiki/Uname#Examples](https://en.wikipedia.org/wiki/Uname#Examples) for more information.
+    * @since v18.9.0
+    */
+  inline def machine(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("machine")().asInstanceOf[String]
   
+  /**
+    * Returns an object containing network interfaces that have been assigned a
+    * network address.
+    *
+    * Each key on the returned object identifies a network interface. The associated
+    * value is an array of objects that each describe an assigned network address.
+    *
+    * The properties available on the assigned network address object include:
+    *
+    * ```js
+    * {
+    *   lo: [
+    *     {
+    *       address: '127.0.0.1',
+    *       netmask: '255.0.0.0',
+    *       family: 'IPv4',
+    *       mac: '00:00:00:00:00:00',
+    *       internal: true,
+    *       cidr: '127.0.0.1/8'
+    *     },
+    *     {
+    *       address: '::1',
+    *       netmask: 'ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff',
+    *       family: 'IPv6',
+    *       mac: '00:00:00:00:00:00',
+    *       scopeid: 0,
+    *       internal: true,
+    *       cidr: '::1/128'
+    *     }
+    *   ],
+    *   eth0: [
+    *     {
+    *       address: '192.168.1.108',
+    *       netmask: '255.255.255.0',
+    *       family: 'IPv4',
+    *       mac: '01:02:03:0a:0b:0c',
+    *       internal: false,
+    *       cidr: '192.168.1.108/24'
+    *     },
+    *     {
+    *       address: 'fe80::a00:27ff:fe4e:66a1',
+    *       netmask: 'ffff:ffff:ffff:ffff::',
+    *       family: 'IPv6',
+    *       mac: '01:02:03:0a:0b:0c',
+    *       scopeid: 1,
+    *       internal: false,
+    *       cidr: 'fe80::a00:27ff:fe4e:66a1/64'
+    *     }
+    *   ]
+    * }
+    * ```
+    * @since v0.6.0
+    */
+  inline def networkInterfaces(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")().asInstanceOf[Any]
+  
+  /**
+    * Returns a string identifying the operating system platform for which
+    * the Node.js binary was compiled. The value is set at compile time.
+    * Possible values are `'aix'`, `'darwin'`, `'freebsd'`,`'linux'`,`'openbsd'`, `'sunos'`, and `'win32'`.
+    *
+    * The return value is equivalent to `process.platform`.
+    *
+    * The value `'android'` may also be returned if Node.js is built on the Android
+    * operating system. [Android support is experimental](https://github.com/nodejs/node/blob/HEAD/BUILDING.md#androidandroid-based-devices-eg-firefox-os).
+    * @since v0.5.0
+    */
   inline def platform(): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("platform")().asInstanceOf[Platform]
   
-  inline def release(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("release")().asInstanceOf[java.lang.String]
-  
   /**
-    * Sets the priority of the process specified process.
-    * @param priority Must be in range of -20 to 19
+    * Returns the operating system as a string.
+    *
+    * On POSIX systems, the operating system release is determined by calling [`uname(3)`](https://linux.die.net/man/3/uname). On Windows, `GetVersionExW()` is used. See
+    * [https://en.wikipedia.org/wiki/Uname#Examples](https://en.wikipedia.org/wiki/Uname#Examples) for more information.
+    * @since v0.3.3
     */
+  inline def release(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("release")().asInstanceOf[String]
+  
   inline def setPriority(pid: Double, priority: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPriority")(pid.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
-    * Sets the priority of the current process.
-    * @param priority Must be in range of -20 to 19
+    * Attempts to set the scheduling priority for the process specified by `pid`. If`pid` is not provided or is `0`, the process ID of the current process is used.
+    *
+    * The `priority` input must be an integer between `-20` (high priority) and `19`(low priority). Due to differences between Unix priority levels and Windows
+    * priority classes, `priority` is mapped to one of six priority constants in`os.constants.priority`. When retrieving a process priority level, this range
+    * mapping may cause the return value to be slightly different on Windows. To avoid
+    * confusion, set `priority` to one of the priority constants.
+    *
+    * On Windows, setting priority to `PRIORITY_HIGHEST` requires elevated user
+    * privileges. Otherwise the set priority will be silently reduced to`PRIORITY_HIGH`.
+    * @since v10.10.0
+    * @param [pid=0] The process ID to set scheduling priority for.
+    * @param priority The scheduling priority to assign to the process.
     */
   inline def setPriority(priority: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPriority")(priority.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def tmpdir(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("tmpdir")().asInstanceOf[java.lang.String]
+  /**
+    * Returns the operating system's default directory for temporary files as a
+    * string.
+    * @since v0.9.9
+    */
+  inline def tmpdir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tmpdir")().asInstanceOf[String]
   
+  /**
+    * Returns the total amount of system memory in bytes as an integer.
+    * @since v0.3.3
+    */
   inline def totalmem(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("totalmem")().asInstanceOf[Double]
   
-  inline def `type`(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")().asInstanceOf[java.lang.String]
+  /**
+    * Returns the operating system name as returned by [`uname(3)`](https://linux.die.net/man/3/uname). For example, it
+    * returns `'Linux'` on Linux, `'Darwin'` on macOS, and `'Windows_NT'` on Windows.
+    *
+    * See [https://en.wikipedia.org/wiki/Uname#Examples](https://en.wikipedia.org/wiki/Uname#Examples) for additional information
+    * about the output of running [`uname(3)`](https://linux.die.net/man/3/uname) on various operating systems.
+    * @since v0.3.3
+    */
+  inline def `type`(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")().asInstanceOf[String]
   
+  /**
+    * Returns the system uptime in number of seconds.
+    * @since v0.3.3
+    */
   inline def uptime(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uptime")().asInstanceOf[Double]
   
-  inline def userInfo(): UserInfo_[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("userInfo")().asInstanceOf[UserInfo_[java.lang.String]]
+  inline def userInfo(): UserInfo_[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("userInfo")().asInstanceOf[UserInfo_[String]]
+  /**
+    * Returns information about the currently effective user. On POSIX platforms,
+    * this is typically a subset of the password file. The returned object includes
+    * the `username`, `uid`, `gid`, `shell`, and `homedir`. On Windows, the `uid` and`gid` fields are `-1`, and `shell` is `null`.
+    *
+    * The value of `homedir` returned by `os.userInfo()` is provided by the operating
+    * system. This differs from the result of `os.homedir()`, which queries
+    * environment variables for the home directory before falling back to the
+    * operating system response.
+    *
+    * Throws a `SystemError` if a user has no `username` or `homedir`.
+    * @since v6.0.0
+    */
   inline def userInfo(options: `2`): UserInfo_[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("userInfo")(options.asInstanceOf[js.Any]).asInstanceOf[UserInfo_[Buffer]]
-  inline def userInfo(options: `4`): UserInfo_[java.lang.String] = ^.asInstanceOf[js.Dynamic].applyDynamic("userInfo")(options.asInstanceOf[js.Any]).asInstanceOf[UserInfo_[java.lang.String]]
+  inline def userInfo(options: `4`): UserInfo_[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("userInfo")(options.asInstanceOf[js.Any]).asInstanceOf[UserInfo_[String]]
   
   /**
     * Returns a string identifying the kernel version.
-    * On POSIX systems, the operating system release is determined by calling
-    * [uname(3)][]. On Windows, `pRtlGetVersion` is used, and if it is not available,
-    * `GetVersionExW()` will be used. See
-    * https://en.wikipedia.org/wiki/Uname#Examples for more information.
+    *
+    * On POSIX systems, the operating system release is determined by calling [`uname(3)`](https://linux.die.net/man/3/uname). On Windows, `RtlGetVersion()` is used, and if it is not
+    * available, `GetVersionExW()` will be used. See [https://en.wikipedia.org/wiki/Uname#Examples](https://en.wikipedia.org/wiki/Uname#Examples) for more information.
+    * @since v13.11.0, v12.17.0
     */
-  inline def version(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("version")().asInstanceOf[java.lang.String]
+  inline def version(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("version")().asInstanceOf[String]
   
   trait CpuInfo extends StObject {
     
-    var model: java.lang.String
+    var model: String
     
     var speed: Double
     
@@ -681,14 +908,14 @@ object osMod {
   }
   object CpuInfo {
     
-    inline def apply(model: java.lang.String, speed: Double, times: Idle): CpuInfo = {
+    inline def apply(model: String, speed: Double, times: Idle): CpuInfo = {
       val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], times = times.asInstanceOf[js.Any])
       __obj.asInstanceOf[CpuInfo]
     }
     
     extension [Self <: CpuInfo](x: Self) {
       
-      inline def setModel(value: java.lang.String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
@@ -698,36 +925,36 @@ object osMod {
   
   trait NetworkInterfaceBase extends StObject {
     
-    var address: java.lang.String
+    var address: String
     
-    var cidr: java.lang.String | Null
+    var cidr: String | Null
     
     var internal: Boolean
     
-    var mac: java.lang.String
+    var mac: String
     
-    var netmask: java.lang.String
+    var netmask: String
   }
   object NetworkInterfaceBase {
     
-    inline def apply(address: java.lang.String, internal: Boolean, mac: java.lang.String, netmask: java.lang.String): NetworkInterfaceBase = {
+    inline def apply(address: String, internal: Boolean, mac: String, netmask: String): NetworkInterfaceBase = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], cidr = null)
       __obj.asInstanceOf[NetworkInterfaceBase]
     }
     
     extension [Self <: NetworkInterfaceBase](x: Self) {
       
-      inline def setAddress(value: java.lang.String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      inline def setCidr(value: java.lang.String): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
+      inline def setCidr(value: String): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
       
       inline def setCidrNull: Self = StObject.set(x, "cidr", null)
       
       inline def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
       
-      inline def setMac(value: java.lang.String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+      inline def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
       
-      inline def setNetmask(value: java.lang.String): Self = StObject.set(x, "netmask", value.asInstanceOf[js.Any])
+      inline def setNetmask(value: String): Self = StObject.set(x, "netmask", value.asInstanceOf[js.Any])
     }
   }
   
@@ -738,18 +965,12 @@ object osMod {
   trait NetworkInterfaceInfo extends StObject
   object NetworkInterfaceInfo {
     
-    inline def NetworkInterfaceInfoIPv4(address: java.lang.String, internal: Boolean, mac: java.lang.String, netmask: java.lang.String): typings.node.osMod.NetworkInterfaceInfoIPv4 = {
+    inline def NetworkInterfaceInfoIPv4(address: String, internal: Boolean, mac: String, netmask: String): typings.node.osMod.NetworkInterfaceInfoIPv4 = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = "IPv4", internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], cidr = null)
       __obj.asInstanceOf[typings.node.osMod.NetworkInterfaceInfoIPv4]
     }
     
-    inline def NetworkInterfaceInfoIPv6(
-      address: java.lang.String,
-      internal: Boolean,
-      mac: java.lang.String,
-      netmask: java.lang.String,
-      scopeid: Double
-    ): typings.node.osMod.NetworkInterfaceInfoIPv6 = {
+    inline def NetworkInterfaceInfoIPv6(address: String, internal: Boolean, mac: String, netmask: String, scopeid: Double): typings.node.osMod.NetworkInterfaceInfoIPv6 = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = "IPv6", internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], scopeid = scopeid.asInstanceOf[js.Any], cidr = null)
       __obj.asInstanceOf[typings.node.osMod.NetworkInterfaceInfoIPv6]
     }
@@ -764,7 +985,7 @@ object osMod {
   }
   object NetworkInterfaceInfoIPv4 {
     
-    inline def apply(address: java.lang.String, internal: Boolean, mac: java.lang.String, netmask: java.lang.String): NetworkInterfaceInfoIPv4 = {
+    inline def apply(address: String, internal: Boolean, mac: String, netmask: String): NetworkInterfaceInfoIPv4 = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = "IPv4", internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], cidr = null)
       __obj.asInstanceOf[NetworkInterfaceInfoIPv4]
     }
@@ -786,13 +1007,7 @@ object osMod {
   }
   object NetworkInterfaceInfoIPv6 {
     
-    inline def apply(
-      address: java.lang.String,
-      internal: Boolean,
-      mac: java.lang.String,
-      netmask: java.lang.String,
-      scopeid: Double
-    ): NetworkInterfaceInfoIPv6 = {
+    inline def apply(address: String, internal: Boolean, mac: String, netmask: String, scopeid: Double): NetworkInterfaceInfoIPv6 = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = "IPv6", internal = internal.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any], netmask = netmask.asInstanceOf[js.Any], scopeid = scopeid.asInstanceOf[js.Any], cidr = null)
       __obj.asInstanceOf[NetworkInterfaceInfoIPv6]
     }

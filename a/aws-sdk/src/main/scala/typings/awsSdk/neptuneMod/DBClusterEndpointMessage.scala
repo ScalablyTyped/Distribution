@@ -29,7 +29,7 @@ object DBClusterEndpointMessage {
     
     inline def setDBClusterEndpointsUndefined: Self = StObject.set(x, "DBClusterEndpoints", js.undefined)
     
-    inline def setDBClusterEndpointsVarargs(value: DBClusterEndpoint*): Self = StObject.set(x, "DBClusterEndpoints", js.Array(value :_*))
+    inline def setDBClusterEndpointsVarargs(value: DBClusterEndpoint*): Self = StObject.set(x, "DBClusterEndpoints", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

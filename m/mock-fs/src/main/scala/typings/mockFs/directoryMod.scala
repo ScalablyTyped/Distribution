@@ -8,7 +8,7 @@ object directoryMod {
   
   @JSImport("mock-fs/lib/directory", JSImport.Namespace)
   @js.native
-  class ^ () extends Directory
+  open class ^ () extends Directory
   
   @js.native
   trait Directory

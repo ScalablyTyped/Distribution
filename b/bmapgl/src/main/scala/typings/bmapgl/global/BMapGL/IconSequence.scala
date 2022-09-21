@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.IconSequence")
 @js.native
-class IconSequence protected ()
+open class IconSequence protected ()
   extends StObject
      with typings.bmapgl.BMapGL.IconSequence {
   def this(symbol: js.Symbol) = this()

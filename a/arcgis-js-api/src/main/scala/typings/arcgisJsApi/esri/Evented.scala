@@ -14,7 +14,7 @@ trait Evented extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Evented.html#emit)
     */
   def emit(`type`: String): Boolean = js.native
-  def emit(`type`: String, event: js.Any): Boolean = js.native
+  def emit(`type`: String, event: Any): Boolean = js.native
   
   /**
     * Indicates whether there is an event listener on the instance that matches the provided event name.

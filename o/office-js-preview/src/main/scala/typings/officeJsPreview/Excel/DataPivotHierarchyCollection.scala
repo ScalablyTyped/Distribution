@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of DataPivotHierarchy items associated with the PivotTable.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @js.native
@@ -24,6 +24,7 @@ trait DataPivotHierarchyCollection
   /**
     * Adds the PivotHierarchy to the current axis.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   def add(pivotHierarchy: PivotHierarchy): DataPivotHierarchy = js.native
@@ -35,13 +36,15 @@ trait DataPivotHierarchyCollection
   /**
     * Gets the number of pivot hierarchies in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a DataPivotHierarchy by its name or id.
+    * Gets a DataPivotHierarchy by its name or ID.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     *
     * @param name Name of the DataPivotHierarchy to be retrieved.
@@ -49,8 +52,10 @@ trait DataPivotHierarchyCollection
   def getItem(name: String): DataPivotHierarchy = js.native
   
   /**
-    * Gets a DataPivotHierarchy by name. If the DataPivotHierarchy does not exist, will return a null object.
+    * Gets a DataPivotHierarchy by name. If the DataPivotHierarchy does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     *
     * @param name Name of the DataPivotHierarchy to be retrieved.
@@ -74,6 +79,7 @@ trait DataPivotHierarchyCollection
   /**
     * Removes the PivotHierarchy from the current axis.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   def remove(DataPivotHierarchy: DataPivotHierarchy): Unit = js.native

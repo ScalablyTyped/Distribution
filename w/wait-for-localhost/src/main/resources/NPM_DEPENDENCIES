@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "wait-for-localhost" : "3.3.0"
+      "wait-for-localhost" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "wait-for-localhost" : "3.3.0"
+      "wait-for-localhost" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

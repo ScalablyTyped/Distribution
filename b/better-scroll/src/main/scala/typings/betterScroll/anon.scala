@@ -297,7 +297,7 @@ object anon {
     
     var fetch: js.UndefOr[js.Function1[/* count */ Double, Unit]] = js.undefined
     
-    var render: js.UndefOr[js.Function2[/* item */ js.Any, /* div */ Element, Element]] = js.undefined
+    var render: js.UndefOr[js.Function2[/* item */ Any, /* div */ Element, Element]] = js.undefined
   }
   object PartialInfinityOption {
     
@@ -316,7 +316,7 @@ object anon {
       
       inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      inline def setRender(value: (/* item */ js.Any, /* div */ Element) => Element): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (/* item */ Any, /* div */ Element) => Element): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }

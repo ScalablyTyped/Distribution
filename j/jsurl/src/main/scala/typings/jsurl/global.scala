@@ -8,7 +8,7 @@ object global {
   
   @JSGlobal("Url")
   @js.native
-  class Url[T] ()
+  open class Url[T] ()
     extends StObject
        with typings.jsurl.Url[T] {
     def this(url: String) = this()

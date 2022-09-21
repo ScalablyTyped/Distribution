@@ -23,7 +23,7 @@ trait ASPxClientEvent[T] extends StObject {
   /**
     * For internal use only.
     */
-  def FireEvent(source: js.Any, e: ASPxClientEventArgs): Unit
+  def FireEvent(source: Any, e: ASPxClientEventArgs): Unit
   
   /**
     * Dynamically disconnects the event from the associated event handler function.
@@ -36,7 +36,7 @@ object ASPxClientEvent {
   inline def apply[T](
     AddHandler: T => Unit,
     ClearHandlers: () => Unit,
-    FireEvent: (js.Any, ASPxClientEventArgs) => Unit,
+    FireEvent: (Any, ASPxClientEventArgs) => Unit,
     RemoveHandler: T => Unit
   ): ASPxClientEvent[T] = {
     val __obj = js.Dynamic.literal(AddHandler = js.Any.fromFunction1(AddHandler), ClearHandlers = js.Any.fromFunction0(ClearHandlers), FireEvent = js.Any.fromFunction2(FireEvent), RemoveHandler = js.Any.fromFunction1(RemoveHandler))
@@ -49,7 +49,7 @@ object ASPxClientEvent {
     
     inline def setClearHandlers(value: () => Unit): Self = StObject.set(x, "ClearHandlers", js.Any.fromFunction0(value))
     
-    inline def setFireEvent(value: (js.Any, ASPxClientEventArgs) => Unit): Self = StObject.set(x, "FireEvent", js.Any.fromFunction2(value))
+    inline def setFireEvent(value: (Any, ASPxClientEventArgs) => Unit): Self = StObject.set(x, "FireEvent", js.Any.fromFunction2(value))
     
     inline def setRemoveHandler(value: T => Unit): Self = StObject.set(x, "RemoveHandler", js.Any.fromFunction1(value))
   }

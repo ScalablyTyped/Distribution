@@ -1,15 +1,16 @@
 package typings.mangopay2NodejsSdk.anon
 
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CSV
-import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSACTIONS
-import typings.mangopay2NodejsSdk.mod.Timestamp
-import typings.mangopay2NodejsSdk.mod.report.Column
-import typings.mangopay2NodejsSdk.mod.report.Filters
+import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TRANSACTION
+import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WALLET
+import typings.mangopay2NodejsSdk.reportMod.report.Column
+import typings.mangopay2NodejsSdk.reportMod.report.Filters
+import typings.mangopay2NodejsSdk.typesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.report.ReportData> */
+/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/report.report.ReportData> */
 trait PartialReportData extends StObject {
   
   var CallbackURL: js.UndefOr[String] = js.undefined
@@ -22,7 +23,7 @@ trait PartialReportData extends StObject {
   
   var DownloadURL: js.UndefOr[String] = js.undefined
   
-  var Filters: js.UndefOr[typings.mangopay2NodejsSdk.mod.report.Filters] = js.undefined
+  var Filters: js.UndefOr[typings.mangopay2NodejsSdk.reportMod.report.Filters] = js.undefined
   
   var Id: js.UndefOr[String] = js.undefined
   
@@ -30,7 +31,7 @@ trait PartialReportData extends StObject {
   
   var ReportDate: js.UndefOr[Timestamp] = js.undefined
   
-  var ReportType: js.UndefOr[TRANSACTIONS] = js.undefined
+  var ReportType: js.UndefOr[TRANSACTION | WALLET] = js.undefined
   
   var ResultCode: js.UndefOr[String] = js.undefined
   
@@ -57,7 +58,7 @@ object PartialReportData {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "Columns", js.undefined)
     
-    inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "Columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "Columns", js.Array(value*))
     
     inline def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
@@ -87,7 +88,7 @@ object PartialReportData {
     
     inline def setReportDateUndefined: Self = StObject.set(x, "ReportDate", js.undefined)
     
-    inline def setReportType(value: TRANSACTIONS): Self = StObject.set(x, "ReportType", value.asInstanceOf[js.Any])
+    inline def setReportType(value: TRANSACTION | WALLET): Self = StObject.set(x, "ReportType", value.asInstanceOf[js.Any])
     
     inline def setReportTypeUndefined: Self = StObject.set(x, "ReportType", js.undefined)
     

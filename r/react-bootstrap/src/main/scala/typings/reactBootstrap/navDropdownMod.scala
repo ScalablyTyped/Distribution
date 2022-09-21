@@ -1,11 +1,8 @@
 package typings.reactBootstrap
 
 import typings.react.mod.Component
-import typings.react.mod.HTMLProps
 import typings.react.mod.ReactNode
 import typings.reactBootstrap.dropdownMod.DropdownBaseProps
-import typings.reactBootstrap.mod.Omit
-import typings.reactBootstrap.reactBootstrapStrings.title
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,12 +11,10 @@ object navDropdownMod {
   
   @JSImport("react-bootstrap/lib/NavDropdown", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[NavDropdownProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[NavDropdownProps, js.Object, Any]
   
-  @js.native
-  trait NavDropdown
-    extends Component[NavDropdownProps, js.Object, js.Any]
+  type NavDropdown = Component[NavDropdownProps, js.Object, Any]
   
   trait NavDropdownBaseProps
     extends StObject
@@ -27,7 +22,7 @@ object navDropdownMod {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.undefined
+    var eventKey: js.UndefOr[Any] = js.undefined
     
     var noCaret: js.UndefOr[Boolean] = js.undefined
     
@@ -46,7 +41,7 @@ object navDropdownMod {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+      inline def setEventKey(value: Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       
       inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
       
@@ -60,5 +55,15 @@ object navDropdownMod {
     }
   }
   
-  type NavDropdownProps = NavDropdownBaseProps & (Omit[HTMLProps[NavDropdown], title])
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in {[ P in keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/NavDropdown.NavDropdown> ]: P} & {[ P in 'title' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/NavDropdown.NavDropdown>] ]: react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/NavDropdown.NavDropdown>[P]} */ trait NavDropdownProps
+    extends StObject
+       with NavDropdownBaseProps
+  object NavDropdownProps {
+    
+    inline def apply(id: String): NavDropdownProps = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NavDropdownProps]
+    }
+  }
 }

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait CalculationType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.CalculationType")
@@ -15,7 +16,8 @@ object CalculationType extends StObject {
   
   /**
     * This will mark all cells as dirty and then recalculate them.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.1]
     */
   @js.native
   sealed trait full
@@ -24,7 +26,8 @@ object CalculationType extends StObject {
   
   /**
     * This will rebuild the full dependency chain, mark all cells as dirty and then recalculate them.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.1]
     */
   @js.native
   sealed trait fullRebuild
@@ -33,7 +36,8 @@ object CalculationType extends StObject {
   
   /**
     * Recalculates all cells that Excel has marked as dirty, that is, dependents of volatile or changed data, and cells programmatically marked as dirty.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.1]
     */
   @js.native
   sealed trait recalculate

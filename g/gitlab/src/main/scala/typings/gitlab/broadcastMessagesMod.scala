@@ -13,7 +13,7 @@ object broadcastMessagesMod {
   
   @JSImport("gitlab/dist/types/core/services/BroadcastMessages", "BroadcastMessages")
   @js.native
-  class BroadcastMessages () extends BaseService {
+  open class BroadcastMessages () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(): js.Promise[GetResponse] = js.native

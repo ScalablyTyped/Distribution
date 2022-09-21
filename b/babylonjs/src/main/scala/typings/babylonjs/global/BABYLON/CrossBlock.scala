@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.CrossBlock")
 @js.native
-class CrossBlock protected ()
+open class CrossBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.CrossBlock {
   /**

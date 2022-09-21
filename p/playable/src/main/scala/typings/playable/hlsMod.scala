@@ -19,7 +19,7 @@ object hlsMod {
   
   @JSImport("playable/dist/src/adapters/hls", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with HlsAdapter {
     def this(eventEmitter: IEventEmitter) = this()
@@ -55,7 +55,7 @@ object hlsMod {
     var mediaStreamDeliveryPriority: MediaStreamDeliveryPriority = js.native
     
     /* CompleteClass */
-    override def setMediaStreams(mediaStreams: js.Any): Unit = js.native
+    override def setMediaStreams(mediaStreams: Any): Unit = js.native
     
     /* CompleteClass */
     var syncWithLiveTime: Double = js.native
@@ -69,8 +69,8 @@ object hlsMod {
     
     @JSImport("playable/dist/src/adapters/hls", "default.DEFAULT_HLS_CONFIG")
     @js.native
-    def DEFAULT_HLS_CONFIG: js.Any = js.native
-    inline def DEFAULT_HLS_CONFIG_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_HLS_CONFIG")(x.asInstanceOf[js.Any])
+    def DEFAULT_HLS_CONFIG: Any = js.native
+    inline def DEFAULT_HLS_CONFIG_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_HLS_CONFIG")(x.asInstanceOf[js.Any])
     
     inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
   }
@@ -80,31 +80,31 @@ object hlsMod {
     extends StObject
        with IPlaybackAdapter {
     
-    /* private */ var _attachOnPlay: js.Any = js.native
+    /* private */ var _attachOnPlay: Any = js.native
     
-    /* private */ var _bindCallbacks: js.Any = js.native
+    /* private */ var _bindCallbacks: Any = js.native
     
-    /* private */ var _broadcastError: js.Any = js.native
+    /* private */ var _broadcastError: Any = js.native
     
-    /* private */ var _isAttached: js.Any = js.native
+    /* private */ var _isAttached: Any = js.native
     
-    /* private */ var _isDynamicContent: js.Any = js.native
+    /* private */ var _isDynamicContent: Any = js.native
     
-    /* private */ var _isDynamicContentEnded: js.Any = js.native
+    /* private */ var _isDynamicContentEnded: Any = js.native
     
-    /* private */ var _logError: js.Any = js.native
+    /* private */ var _logError: Any = js.native
     
-    /* private */ var _mediaRecoverTimeout: js.Any = js.native
+    /* private */ var _mediaRecoverTimeout: Any = js.native
     
-    /* private */ var _networkRecoverTimeout: js.Any = js.native
+    /* private */ var _networkRecoverTimeout: Any = js.native
     
-    /* private */ var _onEndOfStream: js.Any = js.native
+    /* private */ var _onEndOfStream: Any = js.native
     
-    /* private */ var _onLevelUpdated: js.Any = js.native
+    /* private */ var _onLevelUpdated: Any = js.native
     
-    /* private */ var _tryRecoverMediaError: js.Any = js.native
+    /* private */ var _tryRecoverMediaError: Any = js.native
     
-    /* private */ var _tryRecoverNetworkError: js.Any = js.native
+    /* private */ var _tryRecoverNetworkError: Any = js.native
     
     @JSName("currentUrl")
     def currentUrl_MHlsAdapter: String = js.native
@@ -112,9 +112,9 @@ object hlsMod {
     @JSName("debugInfo")
     def debugInfo_MHlsAdapter: BwEstimate = js.native
     
-    /* private */ var eventEmitter: js.Any = js.native
+    /* private */ var eventEmitter: Any = js.native
     
-    /* private */ var hls: js.Any = js.native
+    /* private */ var hls: Any = js.native
     
     @JSName("isDynamicContentEnded")
     def isDynamicContentEnded_MHlsAdapter: Boolean = js.native
@@ -128,7 +128,7 @@ object hlsMod {
     @JSName("isSyncWithLive")
     def isSyncWithLive_MHlsAdapter: Boolean = js.native
     
-    /* private */ var mediaStream: js.Any = js.native
+    /* private */ var mediaStream: Any = js.native
     
     @JSName("mediaStreamDeliveryPriority")
     def mediaStreamDeliveryPriority_MHlsAdapter: ADAPTIVE_VIA_MSE | FORCED = js.native
@@ -138,6 +138,6 @@ object hlsMod {
     @JSName("syncWithLiveTime")
     def syncWithLiveTime_MHlsAdapter: Double = js.native
     
-    /* private */ var videoElement: js.Any = js.native
+    /* private */ var videoElement: Any = js.native
   }
 }

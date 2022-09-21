@@ -46,12 +46,12 @@ object Length {
     
     inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setTypos(value: Double): Self = StObject.set(x, "typos", value.asInstanceOf[js.Any])
     
     inline def setWords(value: js.Array[String]): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
     
-    inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: String*): Self = StObject.set(x, "words", js.Array(value*))
   }
 }

@@ -70,6 +70,6 @@ object StepperOptions {
     
     inline def setSteps(value: js.Array[StepOptions | String]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    inline def setStepsVarargs(value: (StepOptions | String)*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: (StepOptions | String)*): Self = StObject.set(x, "steps", js.Array(value*))
   }
 }

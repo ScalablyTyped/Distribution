@@ -24,6 +24,6 @@ object CrawlerNodeDetails {
     
     inline def setCrawlsUndefined: Self = StObject.set(x, "Crawls", js.undefined)
     
-    inline def setCrawlsVarargs(value: Crawl*): Self = StObject.set(x, "Crawls", js.Array(value :_*))
+    inline def setCrawlsVarargs(value: Crawl*): Self = StObject.set(x, "Crawls", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ The lodash method `_.isNumber` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isnumber |
 | Keywords           | lodash-modularized, isnumber |
-| # releases         | 0 |
-| # dependents       | 184 |
-| # downloads        | 159611628 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.6704994666666664E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

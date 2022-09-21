@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     if using ordersv3
   * @public
   */
-class TransactionRequirements ()
+open class TransactionRequirements ()
   extends typings.actionsOnGoogle.conversationMod.TransactionRequirements {
   def this(options: GoogleActionsTransactionsV3TransactionRequirementsCheckSpec) = this()
   def this(options: GoogleActionsV2TransactionRequirementsCheckSpec) = this()

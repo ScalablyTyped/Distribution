@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'dy' | 'y'> */
 trait EluGradInputs extends StObject {
   
-  var dy: js.UndefOr[js.Any] = js.undefined
+  var dy: js.UndefOr[scala.Any] = js.undefined
   
-  var y: js.UndefOr[js.Any] = js.undefined
+  var y: js.UndefOr[scala.Any] = js.undefined
 }
 object EluGradInputs {
   
@@ -20,11 +20,11 @@ object EluGradInputs {
   
   extension [Self <: EluGradInputs](x: Self) {
     
-    inline def setDy(value: js.Any): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    inline def setDy(value: scala.Any): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
     inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
-    inline def setY(value: js.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: scala.Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }

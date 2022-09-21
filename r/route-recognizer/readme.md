@@ -11,9 +11,9 @@ A lightweight JavaScript library that matches paths against registered routes.
 | Full name          | route-recognizer |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 54 |
-| # downloads        | 7830014 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1854433.0 |
+| # stars            | 453.0 |
 
 ## Links
 - [Homepage](https://github.com/tildeio/route-recognizer)

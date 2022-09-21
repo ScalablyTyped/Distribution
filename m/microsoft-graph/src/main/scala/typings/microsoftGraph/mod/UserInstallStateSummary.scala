@@ -38,7 +38,7 @@ object UserInstallStateSummary {
     
     inline def setDeviceStatesUndefined: Self = StObject.set(x, "deviceStates", js.undefined)
     
-    inline def setDeviceStatesVarargs(value: DeviceInstallState*): Self = StObject.set(x, "deviceStates", js.Array(value :_*))
+    inline def setDeviceStatesVarargs(value: DeviceInstallState*): Self = StObject.set(x, "deviceStates", js.Array(value*))
     
     inline def setFailedDeviceCount(value: Double): Self = StObject.set(x, "failedDeviceCount", value.asInstanceOf[js.Any])
     

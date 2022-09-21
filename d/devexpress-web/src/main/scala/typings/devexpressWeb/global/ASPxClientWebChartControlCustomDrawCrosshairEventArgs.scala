@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientWebChartControlCustomDrawCrosshairEventArgs")
 @js.native
-class ASPxClientWebChartControlCustomDrawCrosshairEventArgs protected ()
+open class ASPxClientWebChartControlCustomDrawCrosshairEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientWebChartControlCustomDrawCrosshairEventArgs {
   /**

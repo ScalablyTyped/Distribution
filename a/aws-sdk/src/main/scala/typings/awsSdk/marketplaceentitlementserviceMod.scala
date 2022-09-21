@@ -6,7 +6,6 @@ import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object marketplaceentitlementserviceMod {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
-  class ^ () extends MarketplaceEntitlementService {
+  open class ^ () extends MarketplaceEntitlementService {
     def this(options: ClientConfiguration) = this()
   }
   
@@ -70,7 +69,7 @@ object marketplaceentitlementserviceMod {
     /**
       * The expiration date represents the minimum date through which this entitlement is expected to remain valid. For contractual products listed on AWS Marketplace, the expiration date is the date at which the customer will renew or cancel their contract. Customers who are opting to renew their contract will still have entitlements with an expiration date.
       */
-    var ExpirationDate: js.UndefOr[Timestamp] = js.undefined
+    var ExpirationDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The product code for which the given entitlement applies. Product codes are provided by AWS Marketplace when the product listing is created.
@@ -99,7 +98,7 @@ object marketplaceentitlementserviceMod {
       
       inline def setDimensionUndefined: Self = StObject.set(x, "Dimension", js.undefined)
       
-      inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
       
       inline def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
       
@@ -249,7 +248,7 @@ object marketplaceentitlementserviceMod {
       
       inline def setEntitlementsUndefined: Self = StObject.set(x, "Entitlements", js.undefined)
       
-      inline def setEntitlementsVarargs(value: Entitlement*): Self = StObject.set(x, "Entitlements", js.Array(value :_*))
+      inline def setEntitlementsVarargs(value: Entitlement*): Self = StObject.set(x, "Entitlements", js.Array(value*))
       
       inline def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
@@ -286,7 +285,7 @@ object marketplaceentitlementserviceMod {
   
   type String = java.lang.String
   
-  type Timestamp = Date
+  type Timestamp = js.Date
   
   trait _GetEntitlementFilterName extends StObject
   

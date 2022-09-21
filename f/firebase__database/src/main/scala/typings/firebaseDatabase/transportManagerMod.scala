@@ -8,32 +8,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object transportManagerMod {
   
-  @JSImport("@firebase/database/dist/src/realtime/TransportManager", "TransportManager")
+  @JSImport("@firebase/database/dist/node-esm/src/realtime/TransportManager", "TransportManager")
   @js.native
-  class TransportManager protected () extends StObject {
+  open class TransportManager protected () extends StObject {
     /**
-      * @param {!RepoInfo} repoInfo Metadata around the namespace we're connecting to
+      * @param repoInfo - Metadata around the namespace we're connecting to
       */
     def this(repoInfo: RepoInfo) = this()
     
-    /**
-      * @param {!RepoInfo} repoInfo
-      * @private
-      */
-    /* private */ var initTransports_ : js.Any = js.native
+    /* private */ var initTransports_ : Any = js.native
     
     /**
-      * @return {function(new:Transport, !string, !RepoInfo, string=, string=)} The constructor for the
-      * initial transport to use
+      * @returns The constructor for the initial transport to use
       */
     def initialTransport(): TransportConstructor = js.native
     
-    /* private */ var transports_ : js.Any = js.native
+    /* private */ var transports_ : Any = js.native
     
     /**
-      * @return {?function(new:Transport, function(),function(), string=)} The constructor for the next
-      * transport, or null
+      * @returns The constructor for the next transport, or null
       */
     def upgradeTransport(): TransportConstructor | Null = js.native
+  }
+  /* static members */
+  object TransportManager {
+    
+    @JSImport("@firebase/database/dist/node-esm/src/realtime/TransportManager", "TransportManager")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@firebase/database/dist/node-esm/src/realtime/TransportManager", "TransportManager.globalTransportInitialized_")
+    @js.native
+    def globalTransportInitialized_ : Boolean = js.native
+    inline def globalTransportInitialized__=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalTransportInitialized_")(x.asInstanceOf[js.Any])
   }
 }

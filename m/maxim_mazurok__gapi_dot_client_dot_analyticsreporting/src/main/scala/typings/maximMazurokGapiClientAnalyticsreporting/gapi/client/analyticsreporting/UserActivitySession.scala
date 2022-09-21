@@ -40,7 +40,7 @@ object UserActivitySession {
     
     inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
     
-    inline def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "activities", js.Array(value*))
     
     inline def setDataSource(value: String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

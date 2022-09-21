@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.ImageMapType")
 @js.native
-class ImageMapType protected ()
+open class ImageMapType protected ()
   extends StObject
      with typings.navermaps.naver.maps.ImageMapType {
   def this(imageMapTypeOptions: ImageMapTypeOptions) = this()

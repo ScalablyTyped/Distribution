@@ -12,8 +12,8 @@ trait DocumentSnapshot extends StObject {
   
   val exists: Boolean = js.native
   
-  def get(fieldPath: String): js.UndefOr[js.Any] = js.native
-  def get(fieldPath: FieldPath): js.UndefOr[js.Any] = js.native
+  def get(fieldPath: String): js.UndefOr[Any] = js.native
+  def get(fieldPath: FieldPath): js.UndefOr[Any] = js.native
   
   val id: String = js.native
   

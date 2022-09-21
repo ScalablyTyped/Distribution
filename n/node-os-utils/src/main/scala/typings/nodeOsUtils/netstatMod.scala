@@ -10,7 +10,7 @@ object netstatMod {
   
   @JSImport("node-os-utils/lib/netstat", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with NetStat
   

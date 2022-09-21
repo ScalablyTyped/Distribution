@@ -11,7 +11,7 @@ trait IGrouper
   /** [Method] Returns the value of groupFn
     * @returns Function
     */
-  var getGroupFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getGroupFn: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of sortProperty
     * @returns String
@@ -19,12 +19,12 @@ trait IGrouper
   var getSortProperty: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Config Option] (Function) */
-  var groupFn: js.UndefOr[js.Any] = js.undefined
+  var groupFn: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the value of groupFn
     * @param groupFn Function The new value.
     */
-  var setGroupFn: js.UndefOr[js.Function1[/* groupFn */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setGroupFn: js.UndefOr[js.Function1[/* groupFn */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of sortProperty
     * @param sortProperty String The new value.
@@ -43,7 +43,7 @@ object IGrouper {
   
   extension [Self <: IGrouper](x: Self) {
     
-    inline def setGetGroupFn(value: () => js.Any): Self = StObject.set(x, "getGroupFn", js.Any.fromFunction0(value))
+    inline def setGetGroupFn(value: () => Any): Self = StObject.set(x, "getGroupFn", js.Any.fromFunction0(value))
     
     inline def setGetGroupFnUndefined: Self = StObject.set(x, "getGroupFn", js.undefined)
     
@@ -51,11 +51,11 @@ object IGrouper {
     
     inline def setGetSortPropertyUndefined: Self = StObject.set(x, "getSortProperty", js.undefined)
     
-    inline def setGroupFn(value: js.Any): Self = StObject.set(x, "groupFn", value.asInstanceOf[js.Any])
+    inline def setGroupFn(value: Any): Self = StObject.set(x, "groupFn", value.asInstanceOf[js.Any])
     
     inline def setGroupFnUndefined: Self = StObject.set(x, "groupFn", js.undefined)
     
-    inline def setSetGroupFn(value: /* groupFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setGroupFn", js.Any.fromFunction1(value))
+    inline def setSetGroupFn(value: /* groupFn */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setGroupFn", js.Any.fromFunction1(value))
     
     inline def setSetGroupFnUndefined: Self = StObject.set(x, "setGroupFn", js.undefined)
     

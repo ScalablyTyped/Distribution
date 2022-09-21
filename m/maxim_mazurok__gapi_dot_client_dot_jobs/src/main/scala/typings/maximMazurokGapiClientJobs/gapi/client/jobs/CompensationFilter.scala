@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CompensationFilter extends StObject {
   
-  /** Optional. If set to true, jobs with unspecified compensation range fields are included. */
+  /** If set to true, jobs with unspecified compensation range fields are included. */
   var includeJobsWithUnspecifiedCompensationRange: js.UndefOr[Boolean] = js.undefined
   
-  /** Optional. Compensation range. */
+  /** Compensation range. */
   var range: js.UndefOr[CompensationRange] = js.undefined
   
   /** Required. Type of filter. */
@@ -43,6 +43,6 @@ object CompensationFilter {
     
     inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
-    inline def setUnitsVarargs(value: String*): Self = StObject.set(x, "units", js.Array(value :_*))
+    inline def setUnitsVarargs(value: String*): Self = StObject.set(x, "units", js.Array(value*))
   }
 }

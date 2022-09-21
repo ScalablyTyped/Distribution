@@ -29,7 +29,7 @@ object ListHarvestJobsResponse {
     
     inline def setHarvestJobsUndefined: Self = StObject.set(x, "HarvestJobs", js.undefined)
     
-    inline def setHarvestJobsVarargs(value: HarvestJob*): Self = StObject.set(x, "HarvestJobs", js.Array(value :_*))
+    inline def setHarvestJobsVarargs(value: HarvestJob*): Self = StObject.set(x, "HarvestJobs", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

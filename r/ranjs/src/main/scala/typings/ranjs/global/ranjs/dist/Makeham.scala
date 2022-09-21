@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Makeham")
 @js.native
-class Makeham ()
+open class Makeham ()
   extends typings.ranjs.mod.dist.Makeham {
   def this(alpha: Double) = this()
   def this(alpha: Double, beta: Double) = this()

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mock-aws-s3", "Credentials")
 @js.native
-class Credentials protected ()
+open class Credentials protected ()
   extends typings.awsSdk.mod.Credentials {
   /**
     * Creates a Credentials object with a given set of credential information as an options hash.
@@ -17,7 +17,7 @@ class Credentials protected ()
   def this(options: CredentialsOptions) = this()
   /**
     * Creates a Credentials object with a given set of credential information as positional arguments.
-    *          *
+    *
     * @param {string} accessKeyId - The AWS access key ID.
     * @param {string} secretAccessKey - The AWS secret access key.
     * @param {string} sessionToken - The optional AWS session token.

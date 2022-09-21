@@ -9,9 +9,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * An object containing the result of a function-evaluation operation
   *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @js.native
@@ -24,9 +24,9 @@ trait FunctionResult[T]
   var context_FunctionResult: RequestContext = js.native
   
   /**
-    *
     * Error value (such as "#DIV/0") representing the error. If the error string is not set, then the function succeeded, and its result is written to the Value field. The error is always in the English locale.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   val error: String = js.native
@@ -44,14 +44,14 @@ trait FunctionResult[T]
   
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-    * Whereas the original FunctionResult<T> object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Interfaces.FunctionResultData<T>`) that contains shallow copies of any loaded child properties from the original object.
+    * Whereas the original `FunctionResult<T>` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Interfaces.FunctionResultData<T>`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): FunctionResultData[T] = js.native
   
   /**
-    *
     * The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error property is not set).
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   val value: T = js.native

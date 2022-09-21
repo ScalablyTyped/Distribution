@@ -4,21 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A transformation to apply to text that is identified as a specific
-  * info_type.
-  */
 trait SchemaGooglePrivacyDlpV2InfoTypeTransformation extends StObject {
   
   /**
-    * InfoTypes to apply the transformation to. An empty list will cause this
-    * transformation to apply to all findings that correspond to infoTypes that
-    * were requested in `InspectConfig`.
+    * InfoTypes to apply the transformation to. An empty list will cause this transformation to apply to all findings that correspond to infoTypes that were requested in `InspectConfig`.
     */
   var infoTypes: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2InfoType]] = js.undefined
   
   /**
-    * Primitive transformation to apply to the infoType. [required]
+    * Required. Primitive transformation to apply to the infoType.
     */
   var primitiveTransformation: js.UndefOr[SchemaGooglePrivacyDlpV2PrimitiveTransformation] = js.undefined
 }
@@ -35,7 +29,7 @@ object SchemaGooglePrivacyDlpV2InfoTypeTransformation {
     
     inline def setInfoTypesUndefined: Self = StObject.set(x, "infoTypes", js.undefined)
     
-    inline def setInfoTypesVarargs(value: SchemaGooglePrivacyDlpV2InfoType*): Self = StObject.set(x, "infoTypes", js.Array(value :_*))
+    inline def setInfoTypesVarargs(value: SchemaGooglePrivacyDlpV2InfoType*): Self = StObject.set(x, "infoTypes", js.Array(value*))
     
     inline def setPrimitiveTransformation(value: SchemaGooglePrivacyDlpV2PrimitiveTransformation): Self = StObject.set(x, "primitiveTransformation", value.asInstanceOf[js.Any])
     

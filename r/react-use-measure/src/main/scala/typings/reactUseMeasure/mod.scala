@@ -17,13 +17,15 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def default(): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Result]
-  inline def default(hasDebounceScrollPolyfill: Options): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDebounceScrollPolyfill.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def default(hasDebounceScrollPolyfillOffsetSize: Options): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDebounceScrollPolyfillOffsetSize.asInstanceOf[js.Any]).asInstanceOf[Result]
   
   type HTMLOrSVGElement = HTMLElement | SVGElement
   
   trait Options extends StObject {
     
     var debounce: js.UndefOr[Double | Resize] = js.undefined
+    
+    var offsetSize: js.UndefOr[Boolean] = js.undefined
     
     var polyfill: js.UndefOr[Instantiable] = js.undefined
     
@@ -41,6 +43,10 @@ object mod {
       inline def setDebounce(value: Double | Resize): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
       
       inline def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
+      
+      inline def setOffsetSize(value: Boolean): Self = StObject.set(x, "offsetSize", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetSizeUndefined: Self = StObject.set(x, "offsetSize", js.undefined)
       
       inline def setPolyfill(value: Instantiable): Self = StObject.set(x, "polyfill", value.asInstanceOf[js.Any])
       
@@ -114,12 +120,12 @@ object mod {
     def disconnect(): Unit = js.native
     
     def observe(target: Element): Unit = js.native
-    def observe(target: Element, options: js.Any): Unit = js.native
+    def observe(target: Element, options: Any): Unit = js.native
     
     def unobserve(target: Element): Unit = js.native
   }
   
-  type ResizeObserverCallback = js.Function2[/* entries */ js.Array[js.Any], /* observer */ ResizeObserver, Unit]
+  type ResizeObserverCallback = js.Function2[/* entries */ js.Array[Any], /* observer */ ResizeObserver, Unit]
   
   type Result = js.Tuple3[
     js.Function1[/* element */ HTMLOrSVGElement | Null, Unit], 

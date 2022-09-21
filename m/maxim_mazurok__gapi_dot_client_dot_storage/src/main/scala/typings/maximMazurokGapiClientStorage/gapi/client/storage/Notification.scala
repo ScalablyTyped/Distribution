@@ -11,7 +11,7 @@ trait Notification extends StObject {
   var custom_attributes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Notification & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Notification & TopLevel[Any]
   ] = js.undefined
   
   /** HTTP 1.1 Entity tag for this subscription notification. */
@@ -50,7 +50,7 @@ object Notification {
     inline def setCustom_attributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Notification & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Notification & TopLevel[Any]
     ): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
     
     inline def setCustom_attributesUndefined: Self = StObject.set(x, "custom_attributes", js.undefined)
@@ -63,7 +63,7 @@ object Notification {
     
     inline def setEvent_typesUndefined: Self = StObject.set(x, "event_types", js.undefined)
     
-    inline def setEvent_typesVarargs(value: String*): Self = StObject.set(x, "event_types", js.Array(value :_*))
+    inline def setEvent_typesVarargs(value: String*): Self = StObject.set(x, "event_types", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

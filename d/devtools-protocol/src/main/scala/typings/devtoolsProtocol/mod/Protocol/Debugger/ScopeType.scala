@@ -7,7 +7,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.block
 import typings.devtoolsProtocol.devtoolsProtocolStrings.closure
 import typings.devtoolsProtocol.devtoolsProtocolStrings.eval
 import typings.devtoolsProtocol.devtoolsProtocolStrings.global
-import typings.devtoolsProtocol.devtoolsProtocolStrings.local
+import typings.devtoolsProtocol.devtoolsProtocolStrings.local_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.module
 import typings.devtoolsProtocol.devtoolsProtocolStrings.script_
 import org.scalablytyped.runtime.StObject
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.global
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.local
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.local_
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`with`
   - typings.devtoolsProtocol.devtoolsProtocolStrings.closure
   - typings.devtoolsProtocol.devtoolsProtocolStrings.`catch`
@@ -39,7 +39,7 @@ object ScopeType {
   
   inline def Global: global = "global".asInstanceOf[global]
   
-  inline def Local: local = "local".asInstanceOf[local]
+  inline def Local: local_ = "local".asInstanceOf[local_]
   
   inline def Module: module = "module".asInstanceOf[module]
   

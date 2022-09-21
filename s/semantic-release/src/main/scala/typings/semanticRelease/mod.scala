@@ -2,13 +2,10 @@ package typings.semanticRelease
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.processMod.global.NodeJS.WriteStream
-import typings.semanticRelease.anon.Channel
+import typings.semanticRelease.anon.Await
 import typings.semanticRelease.anon.Email
-import typings.semanticRelease.anon.Error
 import typings.semanticRelease.anon.Long
-import typings.semanticRelease.semanticReleaseStrings.major
-import typings.semanticRelease.semanticReleaseStrings.minor
-import typings.semanticRelease.semanticReleaseStrings.patch
+import typings.semanticRelease.semanticReleaseBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,6 +24,109 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  trait BranchObject extends StObject {
+    
+    /**
+      * The distribution channel on which to publish releases from this
+      * branch.
+      *
+      * If this field is set to `false`, then the branch will be released
+      * on the default distribution channel (for example the `@latest`
+      * [dist-tag](https://docs.npmjs.com/cli/dist-tag) for npm). This is
+      * also the default behavior for the first
+      * [release branch](https://semantic-release.gitbook.io/semantic-release/usage/workflow-configuration#release-branches)
+      * if the channel property is not set.
+      *
+      * For all other branches, if the channel property is not set, then the
+      * channel name will be the same as the branch name.
+      *
+      * The value of `channel`, if defined as a string, is generated with
+      * [Lodash template](https://lodash.com/docs#template) with the
+      * variable `name` set to the branch name.
+      *
+      * For example `{name: 'next', channel: 'channel-${name}'}` will be
+      * expanded to `{name: 'next', channel: 'channel-next'}`.
+      */
+    var channel: js.UndefOr[String | `false`] = js.undefined
+    
+    /**
+      * The name of git branch.
+      *
+      * A `name` is required for all types of branch. It can be defined as a
+      * [glob](https://github.com/micromatch/micromatch#matching-features)
+      * in which case the definition will be expanded to one per matching
+      * branch existing in the repository.
+      *
+      * If `name` doesn't match any branch existing in the repository, the
+      * definition will be ignored. For example, the default configuration
+      * includes the definition `next` and `next-major` which will become
+      * active only  when the branches `next` and/or `next-major` are
+      * created in the repository.
+      */
+    var name: String
+    
+    /**
+      * The pre-release identifier to append to [semantic versions](https://semver.org/)
+      * released from this branch.
+      *
+      * A `prerelease` property applies only to pre-release branches and
+      * the `prerelease` value must be valid per the [Semantic Versioning
+      * Specification](https://semver.org/#spec-item-9). It will determine
+      * the name of versions. For example if `prerelease` is set to
+      * `"beta"`, the version will be formatted like `2.0.0-beta.1`,
+      * `2.0.0-beta.2`, etc.
+      *
+      * The value of `prerelease`, if defined as a string, is generated with
+      * [Lodash template](https://lodash.com/docs#template) with the
+      * variable `name` set to the name of the branch.
+      *
+      * If the `prerelease property is set to `true` then the name of the
+      * branch is used as the pre-release identifier.
+      *
+      * Required for pre-release branches.
+      */
+    var prerelease: js.UndefOr[String | Boolean] = js.undefined
+    
+    /**
+      * The range of [semantic versions](https://semver.org/) to support on
+      * this branch.
+      *
+      * A `range` only applies to maintenance branches and must be formatted
+      * like `N.N.x` or `N.x` (`N` is a number). If no range is specified
+      * but the `name` is formatted as a range, then the branch will be
+      * considered a maintenance branch and the `name` value will be used
+      * for the `range`.
+      *
+      * Required for maintenance branches, unless `name` is formatted like
+      * `N.N.x` or `N.x` (`N` is a number).
+      */
+    var range: js.UndefOr[String] = js.undefined
+  }
+  object BranchObject {
+    
+    inline def apply(name: String): BranchObject = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BranchObject]
+    }
+    
+    extension [Self <: BranchObject](x: Self) {
+      
+      inline def setChannel(value: String | `false`): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setPrerelease(value: String | Boolean): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
+      
+      inline def setPrereleaseUndefined: Self = StObject.set(x, "prerelease", js.undefined)
+      
+      inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    }
+  }
+  
   /**
     * Specifies a git branch holding commits to analyze and code to release.
     *
@@ -34,7 +134,7 @@ object mod {
     * a string is a shortcut for specifying that string as the `name` field,
     * for example `"master"` expands to `{name: "master"}`.
     */
-  type BranchSpec = String | Channel
+  type BranchSpec = String | BranchObject
   
   trait Commit extends StObject {
     
@@ -196,6 +296,16 @@ object mod {
   trait Context extends StObject {
     
     /**
+      * Current branch being published.
+      */
+    var branch: BranchObject
+    
+    /**
+      * Commits to analyze.
+      */
+    var commits: js.UndefOr[js.Array[Commit]] = js.undefined
+    
+    /**
       * Environment variables.
       */
     var env: StringDictionary[String]
@@ -208,7 +318,7 @@ object mod {
     /**
       * The shared logger instance of semantic release.
       */
-    var logger: Error
+    var logger: Await
     
     /**
       * The next release details.
@@ -222,12 +332,20 @@ object mod {
   }
   object Context {
     
-    inline def apply(env: StringDictionary[String], logger: Error): Context = {
-      val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any])
+    inline def apply(branch: BranchObject, env: StringDictionary[String], logger: Await): Context = {
+      val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
     
     extension [Self <: Context](x: Self) {
+      
+      inline def setBranch(value: BranchObject): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      
+      inline def setCommits(value: js.Array[Commit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+      
+      inline def setCommitsUndefined: Self = StObject.set(x, "commits", js.undefined)
+      
+      inline def setCommitsVarargs(value: Commit*): Self = StObject.set(x, "commits", js.Array(value*))
       
       inline def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
@@ -235,7 +353,7 @@ object mod {
       
       inline def setLastReleaseUndefined: Self = StObject.set(x, "lastRelease", js.undefined)
       
-      inline def setLogger(value: Error): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Await): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
       inline def setNextRelease(value: NextRelease): Self = StObject.set(x, "nextRelease", value.asInstanceOf[js.Any])
       
@@ -350,11 +468,11 @@ object mod {
       
       inline def setBranches(value: js.Array[BranchSpec] | BranchSpec): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
-      inline def setBranchesVarargs(value: BranchSpec*): Self = StObject.set(x, "branches", js.Array(value :_*))
+      inline def setBranchesVarargs(value: BranchSpec*): Self = StObject.set(x, "branches", js.Array(value*))
       
       inline def setPlugins(value: js.Array[PluginSpec]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      inline def setPluginsVarargs(value: PluginSpec*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: PluginSpec*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
       
@@ -396,9 +514,25 @@ object mod {
     }
   }
   
+  @js.native
+  trait LoggerFunction extends StObject {
+    
+    def apply(message: Any*): Unit = js.native
+  }
+  
   trait NextRelease
     extends StObject
        with LastRelease {
+    
+    /**
+      * The release channel of the release.
+      */
+    var channel: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The release name
+      */
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The release notes of the next release.
@@ -408,11 +542,11 @@ object mod {
     /**
       * The semver type of the release.
       */
-    var `type`: patch | minor | major
+    var `type`: ReleaseType
   }
   object NextRelease {
     
-    inline def apply(gitHead: String, gitTag: String, notes: String, `type`: patch | minor | major, version: String): NextRelease = {
+    inline def apply(gitHead: String, gitTag: String, notes: String, `type`: ReleaseType, version: String): NextRelease = {
       val __obj = js.Dynamic.literal(gitHead = gitHead.asInstanceOf[js.Any], gitTag = gitTag.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NextRelease]
@@ -420,9 +554,17 @@ object mod {
     
     extension [Self <: NextRelease](x: Self) {
       
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
       inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
-      inline def setType(value: patch | minor | major): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ReleaseType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -438,7 +580,7 @@ object mod {
        with /**
     * Any other options supported by plugins.
     */
-  /* name */ StringDictionary[js.Any] {
+  /* name */ StringDictionary[Any] {
     
     /**
       * The branches on which releases should happen. By default
@@ -553,7 +695,7 @@ object mod {
       
       inline def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
       
-      inline def setBranchesVarargs(value: BranchSpec*): Self = StObject.set(x, "branches", js.Array(value :_*))
+      inline def setBranchesVarargs(value: BranchSpec*): Self = StObject.set(x, "branches", js.Array(value*))
       
       inline def setCi(value: Boolean): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
       
@@ -567,13 +709,13 @@ object mod {
       
       inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
       
-      inline def setExtendsVarargs(value: String*): Self = StObject.set(x, "extends", js.Array(value :_*))
+      inline def setExtendsVarargs(value: String*): Self = StObject.set(x, "extends", js.Array(value*))
       
       inline def setPlugins(value: js.Array[PluginSpec]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: PluginSpec*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: PluginSpec*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setRepositoryUrl(value: String): Self = StObject.set(x, "repositoryUrl", value.asInstanceOf[js.Any])
       
@@ -593,7 +735,7 @@ object mod {
     * To pass options to a plugin, specify an array containing the plugin module
     * name and an options object.
     */
-  type PluginSpec = String | (js.Tuple2[String, js.Any])
+  type PluginSpec = String | (js.Tuple2[String, Any])
   
   /**
     * Details of a release published by a publish plugin.
@@ -628,7 +770,7 @@ object mod {
     /**
       * The semver type of the release.
       */
-    var `type`: patch | minor | major
+    var `type`: ReleaseType
     
     /**
       * The release URL, only if set by the corresponding publish plugin.
@@ -647,7 +789,7 @@ object mod {
       gitTag: String,
       notes: String,
       pluginName: String,
-      `type`: patch | minor | major,
+      `type`: ReleaseType,
       version: String
     ): Release = {
       val __obj = js.Dynamic.literal(gitHead = gitHead.asInstanceOf[js.Any], gitTag = gitTag.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], pluginName = pluginName.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
@@ -669,7 +811,7 @@ object mod {
       
       inline def setPluginName(value: String): Self = StObject.set(x, "pluginName", value.asInstanceOf[js.Any])
       
-      inline def setType(value: patch | minor | major): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ReleaseType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -677,6 +819,37 @@ object mod {
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
+  }
+  
+  /**
+    * A semver release type.
+    * See https://github.com/semantic-release/commit-analyzer/blob/master/lib/default-release-types.js
+    */
+  /* Rewritten from type alias, can be one of: 
+    - typings.semanticRelease.semanticReleaseStrings.prerelease
+    - typings.semanticRelease.semanticReleaseStrings.prepatch
+    - typings.semanticRelease.semanticReleaseStrings.patch
+    - typings.semanticRelease.semanticReleaseStrings.preminor
+    - typings.semanticRelease.semanticReleaseStrings.minor
+    - typings.semanticRelease.semanticReleaseStrings.premajor
+    - typings.semanticRelease.semanticReleaseStrings.major
+  */
+  trait ReleaseType extends StObject
+  object ReleaseType {
+    
+    inline def major: typings.semanticRelease.semanticReleaseStrings.major = "major".asInstanceOf[typings.semanticRelease.semanticReleaseStrings.major]
+    
+    inline def minor: typings.semanticRelease.semanticReleaseStrings.minor = "minor".asInstanceOf[typings.semanticRelease.semanticReleaseStrings.minor]
+    
+    inline def patch: typings.semanticRelease.semanticReleaseStrings.patch = "patch".asInstanceOf[typings.semanticRelease.semanticReleaseStrings.patch]
+    
+    inline def premajor: typings.semanticRelease.semanticReleaseStrings.premajor = "premajor".asInstanceOf[typings.semanticRelease.semanticReleaseStrings.premajor]
+    
+    inline def preminor: typings.semanticRelease.semanticReleaseStrings.preminor = "preminor".asInstanceOf[typings.semanticRelease.semanticReleaseStrings.preminor]
+    
+    inline def prepatch: typings.semanticRelease.semanticReleaseStrings.prepatch = "prepatch".asInstanceOf[typings.semanticRelease.semanticReleaseStrings.prepatch]
+    
+    inline def prerelease: typings.semanticRelease.semanticReleaseStrings.prerelease = "prerelease".asInstanceOf[typings.semanticRelease.semanticReleaseStrings.prerelease]
   }
   
   /**

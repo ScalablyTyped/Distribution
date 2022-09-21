@@ -1,9 +1,5 @@
 package typings.googleapis.appengineV1betaMod.appengineV1beta
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,30 +9,12 @@ trait ParamsResourceAppsServicesPatch
      with StandardParameters {
   
   /**
-    * Part of `name`. Name of the resource to update. Example:
-    * apps/myapp/services/default.
+    * Part of `name`. Name of the resource to update. Example: apps/myapp/services/default.
     */
   var appsId: js.UndefOr[String] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Set to true to gradually shift traffic to one or more versions that you
-    * specify. By default, traffic is shifted immediately. For gradual traffic
-    * migration, the target versions must be located within instances that are
-    * configured for both warmup requests
-    * (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta/apps.services.versions#InboundServiceType)
-    * and automatic scaling
-    * (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta/apps.services.versions#AutomaticScaling).
-    * You must specify the shardBy
-    * (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta/apps.services#ShardBy)
-    * field in the Service resource. Gradual traffic migration is not supported
-    * in the App Engine flexible environment. For examples, see Migrating and
-    * Splitting Traffic
-    * (https://cloud.google.com/appengine/docs/admin-api/migrating-splitting-traffic).
+    * Set to true to gradually shift traffic to one or more versions that you specify. By default, traffic is shifted immediately. For gradual traffic migration, the target versions must be located within instances that are configured for both warmup requests (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta/apps.services.versions#InboundServiceType) and automatic scaling (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta/apps.services.versions#AutomaticScaling). You must specify the shardBy (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1beta/apps.services#ShardBy) field in the Service resource. Gradual traffic migration is not supported in the App Engine flexible environment. For examples, see Migrating and Splitting Traffic (https://cloud.google.com/appengine/docs/admin-api/migrating-splitting-traffic).
     */
   var migrateTraffic: js.UndefOr[Boolean] = js.undefined
   
@@ -51,7 +29,7 @@ trait ParamsResourceAppsServicesPatch
   var servicesId: js.UndefOr[String] = js.undefined
   
   /**
-    * Standard field mask for the set of fields to be updated.
+    * Required. Standard field mask for the set of fields to be updated.
     */
   var updateMask: js.UndefOr[String] = js.undefined
 }
@@ -67,10 +45,6 @@ object ParamsResourceAppsServicesPatch {
     inline def setAppsId(value: String): Self = StObject.set(x, "appsId", value.asInstanceOf[js.Any])
     
     inline def setAppsIdUndefined: Self = StObject.set(x, "appsId", js.undefined)
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setMigrateTraffic(value: Boolean): Self = StObject.set(x, "migrateTraffic", value.asInstanceOf[js.Any])
     

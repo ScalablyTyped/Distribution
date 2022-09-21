@@ -10,10 +10,10 @@ Automatic UI Color Palette Generator
 | ------------------ | :-------------: |
 | Full name          | palx |
 | Keywords           | color, color-palette |
-| # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 702399 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7544.666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/palx)

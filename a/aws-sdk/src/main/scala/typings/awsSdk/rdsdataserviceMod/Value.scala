@@ -69,7 +69,7 @@ object Value {
     
     inline def setArrayValuesUndefined: Self = StObject.set(x, "arrayValues", js.undefined)
     
-    inline def setArrayValuesVarargs(value: Value*): Self = StObject.set(x, "arrayValues", js.Array(value :_*))
+    inline def setArrayValuesVarargs(value: Value*): Self = StObject.set(x, "arrayValues", js.Array(value*))
     
     inline def setBigIntValue(value: BoxedLong): Self = StObject.set(x, "bigIntValue", value.asInstanceOf[js.Any])
     

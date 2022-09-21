@@ -13,7 +13,7 @@ object global {
   
   @JSGlobal("FederatedCredential")
   @js.native
-  class FederatedCredential protected ()
+  open class FederatedCredential protected ()
     extends StObject
        with typings.webappsecCredentialManagement.FederatedCredential {
     def this(data: FederatedCredentialData) = this()
@@ -73,7 +73,7 @@ object global {
     */
   @JSGlobal("PasswordCredential")
   @js.native
-  class PasswordCredential protected ()
+  open class PasswordCredential protected ()
     extends StObject
        with typings.webappsecCredentialManagement.PasswordCredential {
     def this(data: HTMLFormElement) = this()

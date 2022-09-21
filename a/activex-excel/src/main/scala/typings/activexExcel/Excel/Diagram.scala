@@ -23,11 +23,11 @@ trait Diagram extends StObject {
   
   def FitText(): Unit
   
-  def Nodes(Index: js.Any): DiagramNode
+  def Nodes(Index: Any): DiagramNode
   @JSName("Nodes")
   val Nodes_Original: DiagramNodes
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Reverse: MsoTriState
   
@@ -44,7 +44,7 @@ object Diagram {
     ExcelDotDiagram_typekey: Diagram,
     FitText: () => Unit,
     Nodes: DiagramNodes,
-    Parent: js.Any,
+    Parent: Any,
     Reverse: MsoTriState,
     Type: MsoDiagramType
   ): Diagram = {
@@ -71,7 +71,7 @@ object Diagram {
     
     inline def setNodes(value: DiagramNodes): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReverse(value: MsoTriState): Self = StObject.set(x, "Reverse", value.asInstanceOf[js.Any])
     

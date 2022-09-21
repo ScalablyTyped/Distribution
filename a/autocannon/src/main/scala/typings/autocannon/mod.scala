@@ -43,11 +43,10 @@ import typings.autocannon.autocannonStrings.reqError
 import typings.autocannon.autocannonStrings.response
 import typings.autocannon.autocannonStrings.start
 import typings.autocannon.autocannonStrings.tick
-import typings.node.Buffer
-import typings.node.NodeJS.WritableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.httpMod.IncomingHttpHeaders
-import typings.std.Date
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,11 +57,17 @@ object mod {
   /**
     * Start autocannon against the given target.
     */
-  inline def apply(options: Options, callback: js.Function2[/* err */ js.Any, /* result */ Result, js.Any]): Instance = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Instance]
+  inline def apply(options: Options, callback: js.Function2[/* err */ Any, /* result */ Result, Any]): Instance = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Instance]
   
   @JSImport("autocannon", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  /**
+    * Return string to print the result tables to the terminal, programmatically.
+    */
+  inline def printResult(result: Result): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printResult")(result.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def printResult(result: Result, options: PrintResultOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printResult")(result.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Track the progress of your autocannon.
@@ -299,12 +304,12 @@ object mod {
       * Emitted if there is an error during the setup phase of autocannon.
       */
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ Any, Unit]): this.type = js.native
     /**
       * Emitted in the case of a request error e.g. a timeout.
       */
     @JSName("on")
-    def on_reqError(event: reqError, listener: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def on_reqError(event: reqError, listener: js.Function1[/* err */ Any, Unit]): this.type = js.native
     /**
       * Emitted when the autocannons http-client gets a http response from the server.
       */
@@ -491,6 +496,11 @@ object mod {
       * The given target. Can be http or https.
       */
     var url: String
+    
+    /**
+      * The number of worker threads to use to fire requests.
+      */
+    var workers: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -571,7 +581,7 @@ object mod {
       
       inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
       
-      inline def setRequestsVarargs(value: Request*): Self = StObject.set(x, "requests", js.Array(value :_*))
+      inline def setRequestsVarargs(value: Request*): Self = StObject.set(x, "requests", js.Array(value*))
       
       inline def setServername(value: String): Self = StObject.set(x, "servername", value.asInstanceOf[js.Any])
       
@@ -594,6 +604,53 @@ object mod {
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setWorkers(value: Double): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+      
+      inline def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
+    }
+  }
+  
+  trait PrintResultOptions extends StObject {
+    
+    /**
+      * The stream to output to.
+      * @default process.stderr
+      */
+    var outputStream: js.UndefOr[WritableStream[Any]] = js.undefined
+    
+    /**
+      * A truthy value to enable the rendering of the advanced latency table.
+      * @default false
+      */
+    var renderLatencyTable: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * A truthy value to enable the rendering of the results table.
+      * @default true
+      */
+    var renderResultsTable: js.UndefOr[Boolean] = js.undefined
+  }
+  object PrintResultOptions {
+    
+    inline def apply(): PrintResultOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PrintResultOptions]
+    }
+    
+    extension [Self <: PrintResultOptions](x: Self) {
+      
+      inline def setOutputStream(value: WritableStream[Any]): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
+      
+      inline def setOutputStreamUndefined: Self = StObject.set(x, "outputStream", js.undefined)
+      
+      inline def setRenderLatencyTable(value: Boolean): Self = StObject.set(x, "renderLatencyTable", value.asInstanceOf[js.Any])
+      
+      inline def setRenderLatencyTableUndefined: Self = StObject.set(x, "renderLatencyTable", js.undefined)
+      
+      inline def setRenderResultsTable(value: Boolean): Self = StObject.set(x, "renderResultsTable", value.asInstanceOf[js.Any])
+      
+      inline def setRenderResultsTableUndefined: Self = StObject.set(x, "renderResultsTable", js.undefined)
     }
   }
   
@@ -668,7 +725,7 @@ object mod {
     var errors: Double
     
     /** A Date object representing when the test ended. */
-    var finish: Date
+    var finish: js.Date
     
     /** A histogram object containing statistics about response latency. */
     var latency: Histogram
@@ -686,7 +743,7 @@ object mod {
     var socketPath: js.UndefOr[String] = js.undefined
     
     /** A Date object representing when the test started. */
-    var start: Date
+    var start: js.Date
     
     /** A histogram object containing statistics about the response data throughput per second. */
     var throughput: Histogram
@@ -711,12 +768,12 @@ object mod {
       connections: Double,
       duration: Double,
       errors: Double,
-      finish: Date,
+      finish: js.Date,
       latency: Histogram,
       non2xx: Double,
       pipelining: Double,
       requests: Histogramsentnumber,
-      start: Date,
+      start: js.Date,
       throughput: Histogram,
       timeouts: Double,
       url: String
@@ -748,7 +805,7 @@ object mod {
       
       inline def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setFinish(value: Date): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
+      inline def setFinish(value: js.Date): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
       
       inline def setLatency(value: Histogram): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
       
@@ -762,7 +819,7 @@ object mod {
       
       inline def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
       
-      inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       inline def setThroughput(value: Histogram): Self = StObject.set(x, "throughput", value.asInstanceOf[js.Any])
       
@@ -782,7 +839,7 @@ object mod {
       * The stream to output to.
       * @default process.stderr
       */
-    var outputStream: js.UndefOr[WritableStream] = js.undefined
+    var outputStream: js.UndefOr[WritableStream[Any]] = js.undefined
     
     /**
       * A `String` defining the format of the progress display output. Must be valid input for the [progress bar module](https://www.npmjs.com/package/progress).
@@ -817,7 +874,7 @@ object mod {
     
     extension [Self <: TrackingOptions](x: Self) {
       
-      inline def setOutputStream(value: WritableStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
+      inline def setOutputStream(value: WritableStream[Any]): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
       
       inline def setOutputStreamUndefined: Self = StObject.set(x, "outputStream", js.undefined)
       

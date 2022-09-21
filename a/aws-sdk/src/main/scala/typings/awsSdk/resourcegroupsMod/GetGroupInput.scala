@@ -12,7 +12,7 @@ trait GetGroupInput extends StObject {
   var Group: js.UndefOr[GroupString] = js.undefined
   
   /**
-    * Don't use this parameter. Use Group instead.
+    * Deprecated - don't use this parameter. Use Group instead.
     */
   var GroupName: js.UndefOr[typings.awsSdk.resourcegroupsMod.GroupName] = js.undefined
 }

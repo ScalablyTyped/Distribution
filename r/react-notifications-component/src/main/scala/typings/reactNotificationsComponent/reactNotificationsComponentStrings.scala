@@ -19,6 +19,10 @@ object reactNotificationsComponentStrings {
   inline def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
   
   @js.native
+  sealed trait `bottom-full` extends StObject
+  inline def `bottom-full`: `bottom-full` = "bottom-full".asInstanceOf[`bottom-full`]
+  
+  @js.native
   sealed trait `bottom-left` extends StObject
   inline def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
   
@@ -77,6 +81,10 @@ object reactNotificationsComponentStrings {
   @js.native
   sealed trait `top-center` extends StObject
   inline def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
+  
+  @js.native
+  sealed trait `top-full` extends StObject
+  inline def `top-full`: `top-full` = "top-full".asInstanceOf[`top-full`]
   
   @js.native
   sealed trait `top-left` extends StObject

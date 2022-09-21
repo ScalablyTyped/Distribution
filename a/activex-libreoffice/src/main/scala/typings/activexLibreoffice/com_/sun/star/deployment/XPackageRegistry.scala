@@ -42,7 +42,7 @@ trait XPackageRegistry extends StObject {
     * @param removed
     * @param identifier the identifier of the extension
     * @param xCmdEnv command environment for error and progress handling
-    * @returns {@link XPackage} handle
+    * @returns handle
     */
   def bindPackage(url: String, mediaType: String, removed: Boolean, identifier: String, xCmdEnv: XCommandEnvironment): XPackage
   

@@ -10,15 +10,13 @@ Cordova Globalization Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-globalization |
 | Keywords           | cordova, globalization, ecosystem:cordova, cordova-android, cordova-amazon-fireos, cordova-ubuntu, cordova-firefoxos, cordova-ios, cordova-wp7, cordova-wp8, cordova-windows, cordova-tizen, cordova-blackberry10 |
-| # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 401242 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 32986.666666666664 |
+| # stars            | 138.0 |
 
 ## Links
-- [Homepage](https://github.com/apache/cordova-plugin-globalization#readme)
 - [Bugs](https://issues.apache.org/jira/browse/CB)
-- [Repository](https://github.com/apache/cordova-plugin-globalization)
 - [Npm](https://www.npmjs.com/package/cordova-plugin-globalization)
     
 

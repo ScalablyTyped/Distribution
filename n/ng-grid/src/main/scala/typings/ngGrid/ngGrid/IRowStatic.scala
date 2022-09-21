@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IRowStatic
   extends StObject
      with Instantiable5[
-      /* entity */ js.Any, 
+      /* entity */ Any, 
       /* config */ IRowConfig, 
       /* selectionProvider */ ISelectionProvider, 
       /* rowIndex */ Double, 
-      /* $utils */ js.Any, 
+      /* $utils */ Any, 
       IRow
     ]

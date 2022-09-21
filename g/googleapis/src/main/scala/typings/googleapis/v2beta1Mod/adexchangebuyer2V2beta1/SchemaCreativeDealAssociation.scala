@@ -4,25 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The association between a creative and a deal.
-  */
 trait SchemaCreativeDealAssociation extends StObject {
   
   /**
     * The account the creative belongs to.
     */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID of the creative associated with the deal.
     */
-  var creativeId: js.UndefOr[String] = js.undefined
+  var creativeId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The externalDealId for the deal associated with the creative.
     */
-  var dealsId: js.UndefOr[String] = js.undefined
+  var dealsId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCreativeDealAssociation {
   
@@ -35,13 +32,19 @@ object SchemaCreativeDealAssociation {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
+    inline def setAccountIdNull: Self = StObject.set(x, "accountId", null)
+    
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
+    inline def setCreativeIdNull: Self = StObject.set(x, "creativeId", null)
+    
     inline def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
     
     inline def setDealsId(value: String): Self = StObject.set(x, "dealsId", value.asInstanceOf[js.Any])
+    
+    inline def setDealsIdNull: Self = StObject.set(x, "dealsId", null)
     
     inline def setDealsIdUndefined: Self = StObject.set(x, "dealsId", js.undefined)
   }

@@ -10,7 +10,7 @@ trait CircleEase
 object CircleEase {
   
   inline def apply(
-    _easingMode: js.Any,
+    _easingMode: Any,
     ease: Double => Double,
     easeInCore: Double => Double,
     getEasingMode: () => Double,

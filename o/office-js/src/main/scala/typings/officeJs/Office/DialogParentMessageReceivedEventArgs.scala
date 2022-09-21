@@ -19,7 +19,17 @@ trait DialogParentMessageReceivedEventArgs extends StObject {
   var message: String
   
   /**
-    * Get an {@link Office.EventType} enumeration value that identifies the kind of event that was raised.
+    * Gets the domain of the parent page that called `Dialog.messageChild`. 
+    * 
+    * @remarks
+    * 
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets | DialogOrigin 1.1}.
+    * The property is `undefined` on clients that do not support this requirement set.
+    */
+  var origin: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Gets an {@link Office.EventType} enumeration value that identifies the kind of event that was raised.
     */
   var `type`: EventType
 }
@@ -34,6 +44,10 @@ object DialogParentMessageReceivedEventArgs {
   extension [Self <: DialogParentMessageReceivedEventArgs](x: Self) {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     inline def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -74,7 +74,7 @@ object Component {
     
     inline def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
     
-    inline def setDirectionsVarargs(value: String*): Self = StObject.set(x, "directions", js.Array(value :_*))
+    inline def setDirectionsVarargs(value: String*): Self = StObject.set(x, "directions", js.Array(value*))
     
     inline def setImageBaseURL(value: String): Self = StObject.set(x, "imageBaseURL", value.asInstanceOf[js.Any])
     

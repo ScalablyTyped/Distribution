@@ -9,7 +9,7 @@ trait SchemaSummary extends StObject {
   /**
     * The date and time that schema was modified.
     */
-  var LastModified: js.UndefOr[timestampIso8601] = js.undefined
+  var LastModified: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the schema.
@@ -40,7 +40,7 @@ object SchemaSummary {
   
   extension [Self <: SchemaSummary](x: Self) {
     
-    inline def setLastModified(value: timestampIso8601): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     

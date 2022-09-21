@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.AddressRuleCondition")
 @js.native
-/* private */ class AddressRuleCondition ()
+/* private */ open class AddressRuleCondition ()
   extends StObject
      with typings.activexOutlook.Outlook.AddressRuleCondition {
   
   /* CompleteClass */
-  var Address: js.Any = js.native
+  var Address: Any = js.native
   
   /* CompleteClass */
   override val Application: typings.activexOutlook.Outlook.Application = js.native
@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotAddressRuleCondition_typekey: typings.activexOutlook.Outlook.AddressRuleCondition = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

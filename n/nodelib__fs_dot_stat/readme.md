@@ -1,7 +1,7 @@
 
 # Scala.js typings for nodelib__fs_dot_stat
 
-Typings are for version 2.0.3
+Typings are for version 2.0.5
 
 ## Library description:
 Get the status of a file with some features
@@ -10,10 +10,10 @@ Get the status of a file with some features
 | ------------------ | :-------------: |
 | Full name          | @nodelib/fs.stat |
 | Keywords           | NodeLib, fs, FileSystem, file system, stat |
-| # releases         | 6 |
-| # dependents       | 5 |
-| # downloads        | 541692819 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1770517766666667E8 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/nodelib/nodelib#readme)

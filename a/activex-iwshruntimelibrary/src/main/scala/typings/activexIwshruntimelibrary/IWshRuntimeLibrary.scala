@@ -96,7 +96,7 @@ object IWshRuntimeLibrary {
   trait IconType extends StObject
   object IconType {
     
-    inline def ExclamationMakr: `48` = 48.asInstanceOf[`48`]
+    inline def ExclamationMark: `48` = 48.asInstanceOf[`48`]
     
     inline def InformationMark: `64` = 64.asInstanceOf[`64`]
     
@@ -396,11 +396,11 @@ object IWshRuntimeLibrary {
   @js.native
   trait WshCollection extends StObject {
     
-    def apply(Index: js.Any): js.Any = js.native
+    def apply(Index: Any): Any = js.native
     
     def Count(): Double = js.native
     
-    def Item(Index: js.Any): js.Any = js.native
+    def Item(Index: Any): Any = js.native
     
     val length: Double = js.native
   }
@@ -617,9 +617,9 @@ object IWshRuntimeLibrary {
       * * A Command Prompt window (`cmd.exe`) is brought to the foreground and is given keyboard focus.
       */
     def AppActivate(App: String): Boolean = js.native
-    def AppActivate(App: String, Wait: js.Any): Boolean = js.native
+    def AppActivate(App: String, Wait: Any): Boolean = js.native
     def AppActivate(App: Double): Boolean = js.native
-    def AppActivate(App: Double, Wait: js.Any): Boolean = js.native
+    def AppActivate(App: Double, Wait: Any): Boolean = js.native
     
     /**
       * Creates a shortcut
@@ -648,10 +648,7 @@ object IWshRuntimeLibrary {
       *
       * will return an empty string, unless there is an environment variable named `System`
       */
-    @JSName("Environment")
-    var Environment_Original: WshEnvironment & (js.Function1[/* Type */ System | User | Process | Volatile, WshEnvironment]) = js.native
-    @JSName("Environment")
-    def Environment_Process(Type: Process): WshEnvironment = js.native
+    def Environment(Type: System | User | Process | Volatile): WshEnvironment = js.native
     /**
       * Note that **Environment** doesn't actually return a callable object; the call is only usable in the context of the **Environment** property. The following:
       *
@@ -661,11 +658,7 @@ object IWshRuntimeLibrary {
       * will return an empty string, unless there is an environment variable named `System`
       */
     @JSName("Environment")
-    def Environment_System(Type: System): WshEnvironment = js.native
-    @JSName("Environment")
-    def Environment_User(Type: User): WshEnvironment = js.native
-    @JSName("Environment")
-    def Environment_Volatile(Type: Volatile): WshEnvironment = js.native
+    var Environment_Original: WshEnvironment & (js.Function1[/* Type */ System | User | Process | Volatile, WshEnvironment]) = js.native
     
     def Exec(Command: String): WshExec = js.native
     
@@ -719,15 +712,8 @@ object IWshRuntimeLibrary {
       * `REG_DWORD | REG_BINARY` will be converted to `integer`
       * @param Type
       */
-    def RegWrite(Name: String, Value: js.Any): Unit = js.native
-    @JSName("RegWrite")
-    def RegWrite_REGBINARY(Name: String, Value: js.Any, Type: REG_BINARY): Unit = js.native
-    @JSName("RegWrite")
-    def RegWrite_REGDWORD(Name: String, Value: js.Any, Type: REG_DWORD): Unit = js.native
-    @JSName("RegWrite")
-    def RegWrite_REGEXPANDSZ(Name: String, Value: js.Any, Type: REG_EXPAND_SZ): Unit = js.native
-    @JSName("RegWrite")
-    def RegWrite_REGSZ(Name: String, Value: js.Any, Type: REG_SZ): Unit = js.native
+    def RegWrite(Name: String, Value: Any): Unit = js.native
+    def RegWrite(Name: String, Value: Any, Type: REG_SZ | REG_DWORD | REG_BINARY | REG_EXPAND_SZ): Unit = js.native
     
     /**
       * Runs a program in a new process.
@@ -765,7 +751,7 @@ object IWshRuntimeLibrary {
     def SendKeys(Keys: String): Unit = js.native
     def SendKeys(Keys: String, Wait: Boolean): Unit = js.native
     
-    def SpecialFolders(Index: js.Any): js.Any = js.native
+    def SpecialFolders(Index: Any): Any = js.native
     @JSName("SpecialFolders")
     val SpecialFolders_Original: WshCollection = js.native
   }

@@ -24,9 +24,9 @@ trait KafkaClientOptions extends StObject {
   
   var requestTimeout: js.UndefOr[Double] = js.undefined
   
-  var sasl: js.UndefOr[js.Any] = js.undefined
+  var sasl: js.UndefOr[Any] = js.undefined
   
-  var sslOptions: js.UndefOr[js.Any] = js.undefined
+  var sslOptions: js.UndefOr[Any] = js.undefined
 }
 object KafkaClientOptions {
   
@@ -73,11 +73,11 @@ object KafkaClientOptions {
     
     inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
     
-    inline def setSasl(value: js.Any): Self = StObject.set(x, "sasl", value.asInstanceOf[js.Any])
+    inline def setSasl(value: Any): Self = StObject.set(x, "sasl", value.asInstanceOf[js.Any])
     
     inline def setSaslUndefined: Self = StObject.set(x, "sasl", js.undefined)
     
-    inline def setSslOptions(value: js.Any): Self = StObject.set(x, "sslOptions", value.asInstanceOf[js.Any])
+    inline def setSslOptions(value: Any): Self = StObject.set(x, "sslOptions", value.asInstanceOf[js.Any])
     
     inline def setSslOptionsUndefined: Self = StObject.set(x, "sslOptions", js.undefined)
   }

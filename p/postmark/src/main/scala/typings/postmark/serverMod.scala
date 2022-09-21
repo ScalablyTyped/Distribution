@@ -1,6 +1,7 @@
 package typings.postmark
 
 import typings.postmark.messageSupportingTypesMod.LinkTrackingOptions
+import typings.postmark.messageSupportingTypesMod.ServerDeliveryTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,7 @@ object serverMod {
   
   @JSImport("postmark/dist/client/models/server/Server", "CreateServerRequest")
   @js.native
-  class CreateServerRequest protected () extends UpdateServerRequest {
+  open class CreateServerRequest protected () extends UpdateServerRequest {
     def this(
       Name: String,
       Color: js.UndefOr[String],
@@ -25,13 +26,17 @@ object serverMod {
       TrackOpens: js.UndefOr[Boolean],
       TrackLinks: js.UndefOr[LinkTrackingOptions],
       IncludeBounceContentInHook: js.UndefOr[Boolean],
-      EnableSmtpApiErrorHooks: js.UndefOr[Boolean]
+      EnableSmtpApiErrorHooks: js.UndefOr[Boolean],
+      InboundDomain: js.UndefOr[String],
+      DeliveryType: js.UndefOr[ServerDeliveryTypes]
     ) = this()
+    
+    var DeliveryType: js.UndefOr[ServerDeliveryTypes] = js.native
   }
   
   @JSImport("postmark/dist/client/models/server/Server", "UpdateServerRequest")
   @js.native
-  class UpdateServerRequest protected () extends StObject {
+  open class UpdateServerRequest protected () extends StObject {
     def this(
       Name: js.UndefOr[String],
       Color: js.UndefOr[String],
@@ -47,7 +52,8 @@ object serverMod {
       TrackOpens: js.UndefOr[Boolean],
       TrackLinks: js.UndefOr[LinkTrackingOptions],
       IncludeBounceContentInHook: js.UndefOr[Boolean],
-      EnableSmtpApiErrorHooks: js.UndefOr[Boolean]
+      EnableSmtpApiErrorHooks: js.UndefOr[Boolean],
+      InboundDomain: js.UndefOr[String]
     ) = this()
     
     var BounceHookUrl: js.UndefOr[String] = js.native
@@ -59,6 +65,8 @@ object serverMod {
     var DeliveryHookUrl: js.UndefOr[String] = js.native
     
     var EnableSmtpApiErrorHooks: js.UndefOr[Boolean] = js.native
+    
+    var InboundDomain: js.UndefOr[String] = js.native
     
     var InboundHookUrl: js.UndefOr[String] = js.native
     
@@ -92,6 +100,8 @@ object serverMod {
     var Color: String
     
     var DeliveryHookUrl: js.UndefOr[String] = js.undefined
+    
+    var DeliveryType: ServerDeliveryTypes
     
     var EnableSmtpApiErrorHooks: Boolean
     
@@ -130,6 +140,7 @@ object serverMod {
     inline def apply(
       ApiTokens: js.Array[String],
       Color: String,
+      DeliveryType: ServerDeliveryTypes,
       EnableSmtpApiErrorHooks: Boolean,
       ID: Double,
       InboundAddress: String,
@@ -143,7 +154,7 @@ object serverMod {
       SmtpApiActivated: Boolean,
       TrackLinks: LinkTrackingOptions
     ): Server = {
-      val __obj = js.Dynamic.literal(ApiTokens = ApiTokens.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], EnableSmtpApiErrorHooks = EnableSmtpApiErrorHooks.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], InboundAddress = InboundAddress.asInstanceOf[js.Any], InboundHash = InboundHash.asInstanceOf[js.Any], InboundSpamThreshold = InboundSpamThreshold.asInstanceOf[js.Any], IncludeBounceContentInHook = IncludeBounceContentInHook.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PostFirstOpenOnly = PostFirstOpenOnly.asInstanceOf[js.Any], RawEmailEnabled = RawEmailEnabled.asInstanceOf[js.Any], ServerLink = ServerLink.asInstanceOf[js.Any], SmtpApiActivated = SmtpApiActivated.asInstanceOf[js.Any], TrackLinks = TrackLinks.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(ApiTokens = ApiTokens.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], DeliveryType = DeliveryType.asInstanceOf[js.Any], EnableSmtpApiErrorHooks = EnableSmtpApiErrorHooks.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], InboundAddress = InboundAddress.asInstanceOf[js.Any], InboundHash = InboundHash.asInstanceOf[js.Any], InboundSpamThreshold = InboundSpamThreshold.asInstanceOf[js.Any], IncludeBounceContentInHook = IncludeBounceContentInHook.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PostFirstOpenOnly = PostFirstOpenOnly.asInstanceOf[js.Any], RawEmailEnabled = RawEmailEnabled.asInstanceOf[js.Any], ServerLink = ServerLink.asInstanceOf[js.Any], SmtpApiActivated = SmtpApiActivated.asInstanceOf[js.Any], TrackLinks = TrackLinks.asInstanceOf[js.Any])
       __obj.asInstanceOf[Server]
     }
     
@@ -151,7 +162,7 @@ object serverMod {
       
       inline def setApiTokens(value: js.Array[String]): Self = StObject.set(x, "ApiTokens", value.asInstanceOf[js.Any])
       
-      inline def setApiTokensVarargs(value: String*): Self = StObject.set(x, "ApiTokens", js.Array(value :_*))
+      inline def setApiTokensVarargs(value: String*): Self = StObject.set(x, "ApiTokens", js.Array(value*))
       
       inline def setBounceHookUrl(value: String): Self = StObject.set(x, "BounceHookUrl", value.asInstanceOf[js.Any])
       
@@ -166,6 +177,8 @@ object serverMod {
       inline def setDeliveryHookUrl(value: String): Self = StObject.set(x, "DeliveryHookUrl", value.asInstanceOf[js.Any])
       
       inline def setDeliveryHookUrlUndefined: Self = StObject.set(x, "DeliveryHookUrl", js.undefined)
+      
+      inline def setDeliveryType(value: ServerDeliveryTypes): Self = StObject.set(x, "DeliveryType", value.asInstanceOf[js.Any])
       
       inline def setEnableSmtpApiErrorHooks(value: Boolean): Self = StObject.set(x, "EnableSmtpApiErrorHooks", value.asInstanceOf[js.Any])
       

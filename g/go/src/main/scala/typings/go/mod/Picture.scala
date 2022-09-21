@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The constructor creates a picture that shows nothing until the .source or .element is specified.
   */
-class Picture () extends GraphObject {
+open class Picture () extends GraphObject {
   
   /**Gets or sets the Picture's HTML element, an Image or Video or Canvas element.*/
   var element: HTMLElement = js.native

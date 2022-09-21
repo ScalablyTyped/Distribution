@@ -1,7 +1,7 @@
 
 # Scala.js typings for gestalt-datepicker
 
-Typings are for version 13.4
+Typings are for version 55.2
 
 ## Library description:
 A React UI datepicker component which enforces Pinterest’s design language
@@ -10,13 +10,13 @@ A React UI datepicker component which enforces Pinterest’s design language
 | ------------------ | :-------------: |
 | Full name          | gestalt-datepicker |
 | Keywords           | design system, react, react component, pinterest, ui library, datepicker |
-| # releases         | 356 |
-| # dependents       | 0 |
-| # downloads        | 261137 |
-| # stars            | 0 |
+| # releases         | 994 |
+| # dependents       | 0.0 |
+| # downloads        | 20194.0 |
+| # stars            | 4015.0 |
 
 ## Links
-- [Homepage](https://gestalt.netlify.app/)
+- [Homepage](https://gestalt.pinterest.systems/)
 - [Bugs](https://github.com/pinterest/gestalt/issues)
 - [Repository](https://github.com/pinterest/gestalt)
 - [Npm](https://www.npmjs.com/package/gestalt-datepicker)

@@ -16,8 +16,8 @@ trait ImageProps
 }
 object ImageProps {
   
-  inline def apply(source: ImageSourcePropType): ImageProps = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+  inline def apply(): ImageProps = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageProps]
   }
   

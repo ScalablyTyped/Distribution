@@ -9,7 +9,7 @@ object textBuilderMod {
   
   @JSImport("ol/render/canvas/TextBuilder", JSImport.Default)
   @js.native
-  class default protected () extends CanvasTextBuilder {
+  open class default protected () extends CanvasTextBuilder {
     def this(tolerance: Double, maxExtent: Extent, resolution: Double, pixelRatio: Double) = this()
   }
   
@@ -91,5 +91,8 @@ object textBuilderMod {
   
   @js.native
   trait CanvasTextBuilder
-    extends typings.ol.builderMod.default
+    extends typings.ol.builderMod.default {
+    
+    def setTextStyle(textStyle: typings.ol.textMod.default, opt_sharedData: Any): Unit = js.native
+  }
 }

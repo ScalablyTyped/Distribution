@@ -2,7 +2,7 @@ package typings.imagemagickNative
 
 import typings.imagemagickNative.anon.Height
 import typings.imagemagickNative.anon.Orientation
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

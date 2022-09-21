@@ -10,7 +10,7 @@ object iconDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/icon/demo/basic", JSImport.Default)
   @js.native
-  class default () extends IConDemo
+  open class default () extends IConDemo
   
   @JSImport("@ant-design/react-native/lib/icon/demo/basic", "description")
   @js.native
@@ -21,8 +21,7 @@ object iconDemoBasicMod {
   val title: /* "Icon" */ String = js.native
   
   @js.native
-  trait IConDemo
-    extends Component[js.Any, js.Any, js.Any] {
+  trait IConDemo extends Component[Any, Any, Any] {
     
     @JSName("state")
     var state_IConDemo: Data = js.native

@@ -7,24 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Compute Engine API
-  *
-  * Creates and runs virtual machines on Google Cloud Platform.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const compute = google.compute('alpha');
-  *
-  * @namespace compute
-  * @type {Function}
-  * @version alpha
-  * @variation alpha
-  * @param {object=} options Options for Compute
-  */
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Compute")
 @js.native
-class Compute protected () extends StObject {
+open class Compute protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   
@@ -46,17 +31,25 @@ class Compute protected () extends StObject {
   
   var externalVpnGateways: ResourceExternalvpngateways = js.native
   
+  var firewallPolicies: ResourceFirewallpolicies = js.native
+  
   var firewalls: ResourceFirewalls = js.native
   
   var forwardingRules: ResourceForwardingrules = js.native
+  
+  var futureReservations: ResourceFuturereservations = js.native
   
   var globalAddresses: ResourceGlobaladdresses = js.native
   
   var globalForwardingRules: ResourceGlobalforwardingrules = js.native
   
+  var globalNetworkEndpointGroups: ResourceGlobalnetworkendpointgroups = js.native
+  
   var globalOperations: ResourceGlobaloperations = js.native
   
   var globalOrganizationOperations: ResourceGlobalorganizationoperations = js.native
+  
+  var globalPublicDelegatedPrefixes: ResourceGlobalpublicdelegatedprefixes = js.native
   
   var healthChecks: ResourceHealthchecks = js.native
   
@@ -64,7 +57,11 @@ class Compute protected () extends StObject {
   
   var httpsHealthChecks: ResourceHttpshealthchecks = js.native
   
+  var imageFamilyViews: ResourceImagefamilyviews = js.native
+  
   var images: ResourceImages = js.native
+  
+  var instanceGroupManagerResizeRequests: ResourceInstancegroupmanagerresizerequests = js.native
   
   var instanceGroupManagers: ResourceInstancegroupmanagers = js.native
   
@@ -74,9 +71,13 @@ class Compute protected () extends StObject {
   
   var instances: ResourceInstances = js.native
   
+  var instantSnapshots: ResourceInstantsnapshots = js.native
+  
   var interconnectAttachments: ResourceInterconnectattachments = js.native
   
   var interconnectLocations: ResourceInterconnectlocations = js.native
+  
+  var interconnectRemoteLocations: ResourceInterconnectremotelocations = js.native
   
   var interconnects: ResourceInterconnects = js.native
   
@@ -88,7 +89,11 @@ class Compute protected () extends StObject {
   
   var machineTypes: ResourceMachinetypes = js.native
   
+  var networkEdgeSecurityServices: ResourceNetworkedgesecurityservices = js.native
+  
   var networkEndpointGroups: ResourceNetworkendpointgroups = js.native
+  
+  var networkFirewallPolicies: ResourceNetworkfirewallpolicies = js.native
   
   var networks: ResourceNetworks = js.native
   
@@ -100,7 +105,13 @@ class Compute protected () extends StObject {
   
   var organizationSecurityPolicies: ResourceOrganizationsecuritypolicies = js.native
   
+  var packetMirrorings: ResourcePacketmirrorings = js.native
+  
   var projects: ResourceProjects = js.native
+  
+  var publicAdvertisedPrefixes: ResourcePublicadvertisedprefixes = js.native
+  
+  var publicDelegatedPrefixes: ResourcePublicdelegatedprefixes = js.native
   
   var regionAutoscalers: ResourceRegionautoscalers = js.native
   
@@ -120,15 +131,31 @@ class Compute protected () extends StObject {
   
   var regionInstanceGroups: ResourceRegioninstancegroups = js.native
   
+  var regionInstanceTemplates: ResourceRegioninstancetemplates = js.native
+  
+  var regionInstances: ResourceRegioninstances = js.native
+  
+  var regionInstantSnapshots: ResourceRegioninstantsnapshots = js.native
+  
+  var regionNetworkEndpointGroups: ResourceRegionnetworkendpointgroups = js.native
+  
+  var regionNetworkFirewallPolicies: ResourceRegionnetworkfirewallpolicies = js.native
+  
   var regionNotificationEndpoints: ResourceRegionnotificationendpoints = js.native
   
   var regionOperations: ResourceRegionoperations = js.native
   
+  var regionSecurityPolicies: ResourceRegionsecuritypolicies = js.native
+  
   var regionSslCertificates: ResourceRegionsslcertificates = js.native
+  
+  var regionSslPolicies: ResourceRegionsslpolicies = js.native
   
   var regionTargetHttpProxies: ResourceRegiontargethttpproxies = js.native
   
   var regionTargetHttpsProxies: ResourceRegiontargethttpsproxies = js.native
+  
+  var regionTargetTcpProxies: ResourceRegiontargettcpproxies = js.native
   
   var regionUrlMaps: ResourceRegionurlmaps = js.native
   
@@ -144,6 +171,8 @@ class Compute protected () extends StObject {
   
   var securityPolicies: ResourceSecuritypolicies = js.native
   
+  var serviceAttachments: ResourceServiceattachments = js.native
+  
   var snapshots: ResourceSnapshots = js.native
   
   var sslCertificates: ResourceSslcertificates = js.native
@@ -151,6 +180,8 @@ class Compute protected () extends StObject {
   var sslPolicies: ResourceSslpolicies = js.native
   
   var subnetworks: ResourceSubnetworks = js.native
+  
+  var targetGrpcProxies: ResourceTargetgrpcproxies = js.native
   
   var targetHttpProxies: ResourceTargethttpproxies = js.native
   
@@ -173,6 +204,8 @@ class Compute protected () extends StObject {
   var vpnTunnels: ResourceVpntunnels = js.native
   
   var zoneOperations: ResourceZoneoperations = js.native
+  
+  var zoneQueuedResources: ResourceZonequeuedresources = js.native
   
   var zones: ResourceZones = js.native
 }

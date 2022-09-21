@@ -9,69 +9,70 @@ trait PointsCloudSystem
   extends StObject
      with IDisposable {
   
-  /* private */ var _addParticle: js.Any = js.native
+  /* private */ var _addParticle: Any = js.native
   
-  /* private */ var _alwaysVisible: js.Any = js.native
+  /* private */ var _alwaysVisible: Any = js.native
   
   /**
+    * @param material
     * @hidden
     */
-  /* private */ var _buildMesh: js.Any = js.native
+  /* private */ var _buildMesh: Any = js.native
   
-  /* private */ var _calculateDensity: js.Any = js.native
+  /* private */ var _calculateDensity: Any = js.native
   
-  /* private */ var _colorFromTexture: js.Any = js.native
+  /* private */ var _colorFromTexture: Any = js.native
   
-  /* private */ var _colors: js.Any = js.native
+  /* private */ var _colors: Any = js.native
   
-  /* private */ var _colors32: js.Any = js.native
+  /* private */ var _colors32: Any = js.native
   
-  /* private */ var _computeBoundingBox: js.Any = js.native
+  /* private */ var _computeBoundingBox: Any = js.native
   
-  /* private */ var _computeParticleColor: js.Any = js.native
+  /* private */ var _computeParticleColor: Any = js.native
   
-  /* private */ var _computeParticleRotation: js.Any = js.native
+  /* private */ var _computeParticleRotation: Any = js.native
   
-  /* private */ var _computeParticleTexture: js.Any = js.native
+  /* private */ var _computeParticleTexture: Any = js.native
   
-  /* private */ var _getColorIndicesForCoord: js.Any = js.native
+  /* private */ var _getColorIndicesForCoord: Any = js.native
   
-  /* private */ var _groupCounter: js.Any = js.native
+  /* private */ var _groupCounter: Any = js.native
   
-  /* private */ var _groups: js.Any = js.native
+  /* private */ var _groups: Any = js.native
   
-  /* private */ var _indices: js.Any = js.native
+  /* private */ var _indices: Any = js.native
   
-  /* private */ var _indices32: js.Any = js.native
+  /* private */ var _indices32: Any = js.native
   
-  /* private */ var _isReady: js.Any = js.native
+  /* private */ var _isReady: Any = js.native
   
-  /* private */ var _isVisibilityBoxLocked: js.Any = js.native
+  /* private */ var _isVisibilityBoxLocked: Any = js.native
   
-  /* private */ var _normals: js.Any = js.native
+  /* private */ var _normals: Any = js.native
   
-  /* private */ var _positions: js.Any = js.native
+  /* private */ var _positions: Any = js.native
   
-  /* private */ var _positions32: js.Any = js.native
+  /* private */ var _positions32: Any = js.native
   
-  /* private */ var _promises: js.Any = js.native
+  /* private */ var _promises: Any = js.native
   
-  /* private */ var _randomUnitVector: js.Any = js.native
+  /* private */ var _randomUnitVector: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _setPointsColorOrUV: js.Any = js.native
+  /* private */ var _setPointsColorOrUV: Any = js.native
   
   /**
     * @hidden
     */
   var _size: Double = js.native
   
-  /* private */ var _updatable: js.Any = js.native
+  /* private */ var _updatable: Any = js.native
   
-  /* private */ var _uvs: js.Any = js.native
+  /* private */ var _uvs: Any = js.native
   
-  /* private */ var _uvs32: js.Any = js.native
+  /* private */ var _uvs32: Any = js.native
   
   /**
     * Adds points to the PCS in random positions within a unit sphere
@@ -80,7 +81,7 @@ trait PointsCloudSystem
     * @returns the number of groups in the system
     */
   def addPoints(nb: Double): Double = js.native
-  def addPoints(nb: Double, pointFunction: js.Any): Double = js.native
+  def addPoints(nb: Double, pointFunction: Any): Double = js.native
   
   /**
     * Adds points to the PCS from the surface of the model shape
@@ -162,9 +163,16 @@ trait PointsCloudSystem
   /**
     * Builds the PCS underlying mesh. Returns a standard Mesh.
     * If no points were added to the PCS, the returned mesh is just a single point.
+    * @param material The material to use to render the mesh. If not provided, will create a default one
     * @returns a promise for the created mesh
     */
   def buildMeshAsync(): js.Promise[Mesh] = js.native
+  def buildMeshAsync(material: Material): js.Promise[Mesh] = js.native
+  
+  /**
+    * Gets the particle colors computed by the Point Cloud System
+    */
+  def colors: js.typedarray.Float32Array = js.native
   
   /**
     * Gets if `setParticles()` computes or not the mesh bounding box when computing the particle positions.
@@ -228,7 +236,7 @@ trait PointsCloudSystem
   def isAlwaysVisible_=(`val`: Boolean): Unit = js.native
   
   /**
-    * The PCS mesh. It's a standard BJS Mesh, so all the methods from the Mesh class are avalaible.
+    * The PCS mesh. It's a standard BJS Mesh, so all the methods from the Mesh class are available.
     */
   var mesh: Mesh = js.native
   
@@ -249,6 +257,11 @@ trait PointsCloudSystem
   var particles: js.Array[CloudPoint] = js.native
   
   /**
+    * Gets the particle positions computed by the Point Cloud System
+    */
+  def positions: js.typedarray.Float32Array = js.native
+  
+  /**
     * This function does nothing. It may be overwritten to recycle a particle
     * The PCS doesn't call this function, you can to call it
     * doc :
@@ -258,7 +271,7 @@ trait PointsCloudSystem
   def recycleParticle(particle: CloudPoint): CloudPoint = js.native
   
   /**
-    * Visibilty helper : Recomputes the visible size according to the mesh bounding box
+    * Visibility helper : Recomputes the visible size according to the mesh bounding box
     * doc :
     * @returns the PCS.
     */
@@ -301,8 +314,13 @@ trait PointsCloudSystem
   def updateParticle(particle: CloudPoint): CloudPoint = js.native
   
   /**
+    * Gets the particle uvs computed by the Point Cloud System
+    */
+  def uvs: js.typedarray.Float32Array = js.native
+  
+  /**
     * This empty object is intended to store some PCS specific or temporary values in order to lower the Garbage Collector activity.
     * Please read :
     */
-  var vars: js.Any = js.native
+  var vars: Any = js.native
 }

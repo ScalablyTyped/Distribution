@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage.FileProperties
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IMap
@@ -15,17 +14,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BasicProperties extends StObject {
   
   /** Gets the timestamp of the last time the file was modified. */
-  var dateModified: Date = js.native
+  var dateModified: js.Date = js.native
   
   /** Gets the most relevant date for the item. */
-  var itemDate: Date = js.native
+  var itemDate: js.Date = js.native
   
   /**
     * Retrieves the specified properties associated with the item.
     * @param propertiesToRetrieve A collection that contains the names of the properties to retrieve.
     * @return When this method completes successfully, it returns a collection (type IMap ) that contains the specified properties and values as key-value pairs.
     */
-  def retrievePropertiesAsync(propertiesToRetrieve: IIterable[String]): IPromiseWithIAsyncOperation[IMap[js.Any, js.Any]] = js.native
+  def retrievePropertiesAsync(propertiesToRetrieve: IIterable[String]): IPromiseWithIAsyncOperation[IMap[Any, Any]] = js.native
   
   /**
     * Saves all properties associated with the item.
@@ -37,7 +36,7 @@ trait BasicProperties extends StObject {
     * @param propertiesToSave A collection that contains the names and values of the properties to save as key-value pairs (type IKeyValuePair ).
     * @return No object or value is returned when this method completes.
     */
-  def savePropertiesAsync(propertiesToSave: IIterable[IKeyValuePair[js.Any, js.Any]]): IPromiseWithIAsyncAction = js.native
+  def savePropertiesAsync(propertiesToSave: IIterable[IKeyValuePair[Any, Any]]): IPromiseWithIAsyncAction = js.native
   
   /** Gets the size of the file. */
   var size: Double = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "PhysicsEngine")
 @js.native
-class PhysicsEngine protected ()
+open class PhysicsEngine protected ()
   extends typings.babylonjs.indexMod.PhysicsEngine {
   /**
     * Creates a new Physics Engine

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "OverlapKeeperRecord")
 @js.native
-class OverlapKeeperRecord protected () extends StObject {
+open class OverlapKeeperRecord protected () extends StObject {
   def this(bodyA: Body, shapeA: Shape, bodyB: Body, shapeB: Shape) = this()
   
   var bodyA: Body = js.native

@@ -1,5 +1,6 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.tall
 import typings.std.HTMLElement
 import typings.std.Object
 import typings.std.PropertyKey
@@ -44,28 +45,30 @@ trait symbolUtilsRenderPreviewHTMLOptions
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
     */
-  var rotation: js.UndefOr[String] = js.undefined
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     * When `true` the size of the symbol preview will include the outline in the measurement of the entire symbol.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
     */
   var scale: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The size of the symbol preview in points.
+    * Use a number to set the size (in points) of the symbol preview for any symbol representing a point.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
     */
-  var size: js.UndefOr[Double] = js.undefined
+  var size: js.UndefOr[Double | symbolUtilsRenderPreviewHTMLOptionsSize] = js.undefined
   
   /**
-    * For "tall" symbols in portrait view, then the `tall` value should be used here.
+    * Options for setting the shape of a fill symbol preview.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderPreviewHTML)
     */
-  var symbolConfig: js.UndefOr[String] = js.undefined
+  var symbolConfig: js.UndefOr[tall | symbolUtilsRenderPreviewHTMLOptionsSymbolConfig] = js.undefined
 }
 object symbolUtilsRenderPreviewHTMLOptions {
   
@@ -96,7 +99,7 @@ object symbolUtilsRenderPreviewHTMLOptions {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setRotation(value: String): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
@@ -104,11 +107,11 @@ object symbolUtilsRenderPreviewHTMLOptions {
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double | symbolUtilsRenderPreviewHTMLOptionsSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setSymbolConfig(value: String): Self = StObject.set(x, "symbolConfig", value.asInstanceOf[js.Any])
+    inline def setSymbolConfig(value: tall | symbolUtilsRenderPreviewHTMLOptionsSymbolConfig): Self = StObject.set(x, "symbolConfig", value.asInstanceOf[js.Any])
     
     inline def setSymbolConfigUndefined: Self = StObject.set(x, "symbolConfig", js.undefined)
   }

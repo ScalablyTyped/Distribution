@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__MaterialUI.Drawer")
 @js.native
-class Drawer ()
-  extends Component[DrawerProps, js.Object, js.Any]
+open class Drawer ()
+  extends Component[DrawerProps, js.Object, Any]

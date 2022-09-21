@@ -9,17 +9,17 @@ trait GetLinkAssociationsRequest extends StObject {
   /**
     * The ID of the device.
     */
-  var DeviceId: js.UndefOr[String] = js.undefined
+  var DeviceId: js.UndefOr[typings.awsSdk.networkmanagerMod.DeviceId] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String
+  var GlobalNetworkId: typings.awsSdk.networkmanagerMod.GlobalNetworkId
   
   /**
     * The ID of the link.
     */
-  var LinkId: js.UndefOr[String] = js.undefined
+  var LinkId: js.UndefOr[typings.awsSdk.networkmanagerMod.LinkId] = js.undefined
   
   /**
     * The maximum number of results to return.
@@ -29,24 +29,24 @@ trait GetLinkAssociationsRequest extends StObject {
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[typings.awsSdk.networkmanagerMod.NextToken] = js.undefined
 }
 object GetLinkAssociationsRequest {
   
-  inline def apply(GlobalNetworkId: String): GetLinkAssociationsRequest = {
+  inline def apply(GlobalNetworkId: GlobalNetworkId): GetLinkAssociationsRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLinkAssociationsRequest]
   }
   
   extension [Self <: GetLinkAssociationsRequest](x: Self) {
     
-    inline def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
     inline def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
     
-    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    inline def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
+    inline def setLinkId(value: LinkId): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
     
     inline def setLinkIdUndefined: Self = StObject.set(x, "LinkId", js.undefined)
     
@@ -54,7 +54,7 @@ object GetLinkAssociationsRequest {
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }

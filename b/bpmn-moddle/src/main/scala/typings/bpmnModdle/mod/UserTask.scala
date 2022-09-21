@@ -50,6 +50,6 @@ object UserTask {
     
     inline def setRenderings(value: js.Array[Rendering]): Self = StObject.set(x, "renderings", value.asInstanceOf[js.Any])
     
-    inline def setRenderingsVarargs(value: Rendering*): Self = StObject.set(x, "renderings", js.Array(value :_*))
+    inline def setRenderingsVarargs(value: Rendering*): Self = StObject.set(x, "renderings", js.Array(value*))
   }
 }

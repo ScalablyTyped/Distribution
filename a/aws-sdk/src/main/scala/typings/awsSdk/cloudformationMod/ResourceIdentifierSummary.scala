@@ -34,13 +34,13 @@ object ResourceIdentifierSummary {
     
     inline def setLogicalResourceIdsUndefined: Self = StObject.set(x, "LogicalResourceIds", js.undefined)
     
-    inline def setLogicalResourceIdsVarargs(value: LogicalResourceId*): Self = StObject.set(x, "LogicalResourceIds", js.Array(value :_*))
+    inline def setLogicalResourceIdsVarargs(value: LogicalResourceId*): Self = StObject.set(x, "LogicalResourceIds", js.Array(value*))
     
     inline def setResourceIdentifiers(value: ResourceIdentifiers): Self = StObject.set(x, "ResourceIdentifiers", value.asInstanceOf[js.Any])
     
     inline def setResourceIdentifiersUndefined: Self = StObject.set(x, "ResourceIdentifiers", js.undefined)
     
-    inline def setResourceIdentifiersVarargs(value: ResourceIdentifierPropertyKey*): Self = StObject.set(x, "ResourceIdentifiers", js.Array(value :_*))
+    inline def setResourceIdentifiersVarargs(value: ResourceIdentifierPropertyKey*): Self = StObject.set(x, "ResourceIdentifiers", js.Array(value*))
     
     inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     

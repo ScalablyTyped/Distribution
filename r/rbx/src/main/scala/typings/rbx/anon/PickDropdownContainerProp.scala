@@ -126,7 +126,7 @@ trait PickDropdownContainerProp extends StObject {
   var tooltipResponsive: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'}
-    */ typings.rbx.rbxStrings.PickDropdownContainerProp & TopLevel[js.Any]
+    */ typings.rbx.rbxStrings.PickDropdownContainerProp & TopLevel[Any]
   ] = js.undefined
   
   var unselectable: js.UndefOr[Boolean] = js.undefined
@@ -289,7 +289,7 @@ object PickDropdownContainerProp {
     inline def setTooltipResponsive(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'touch' ]:? 'top' | 'right' | 'bottom' | 'left'}
-      */ typings.rbx.rbxStrings.PickDropdownContainerProp & TopLevel[js.Any]
+      */ typings.rbx.rbxStrings.PickDropdownContainerProp & TopLevel[Any]
     ): Self = StObject.set(x, "tooltipResponsive", value.asInstanceOf[js.Any])
     
     inline def setTooltipResponsiveUndefined: Self = StObject.set(x, "tooltipResponsive", js.undefined)

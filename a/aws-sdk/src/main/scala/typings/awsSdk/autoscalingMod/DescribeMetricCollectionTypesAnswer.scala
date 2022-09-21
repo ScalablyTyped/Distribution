@@ -12,7 +12,7 @@ trait DescribeMetricCollectionTypesAnswer extends StObject {
   var Granularities: js.UndefOr[MetricGranularityTypes] = js.undefined
   
   /**
-    * One or more metrics.
+    * The metrics.
     */
   var Metrics: js.UndefOr[MetricCollectionTypes] = js.undefined
 }
@@ -29,12 +29,12 @@ object DescribeMetricCollectionTypesAnswer {
     
     inline def setGranularitiesUndefined: Self = StObject.set(x, "Granularities", js.undefined)
     
-    inline def setGranularitiesVarargs(value: MetricGranularityType*): Self = StObject.set(x, "Granularities", js.Array(value :_*))
+    inline def setGranularitiesVarargs(value: MetricGranularityType*): Self = StObject.set(x, "Granularities", js.Array(value*))
     
     inline def setMetrics(value: MetricCollectionTypes): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
     inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: MetricCollectionType*): Self = StObject.set(x, "Metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: MetricCollectionType*): Self = StObject.set(x, "Metrics", js.Array(value*))
   }
 }

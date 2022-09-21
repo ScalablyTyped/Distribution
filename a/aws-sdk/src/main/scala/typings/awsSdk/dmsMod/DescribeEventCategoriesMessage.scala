@@ -12,7 +12,7 @@ trait DescribeEventCategoriesMessage extends StObject {
   var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | replication-task
+    *  The type of DMS resource that generates events.  Valid values: replication-instance | replication-task
     */
   var SourceType: js.UndefOr[String] = js.undefined
 }
@@ -29,7 +29,7 @@ object DescribeEventCategoriesMessage {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setSourceType(value: String): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     

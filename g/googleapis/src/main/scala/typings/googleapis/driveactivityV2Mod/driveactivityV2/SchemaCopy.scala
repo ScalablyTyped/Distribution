@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An object was created by copying an existing object.
-  */
 trait SchemaCopy extends StObject {
   
   /**
-    * The the original object.
+    * The original object.
     */
   var originalObject: js.UndefOr[SchemaTargetReference] = js.undefined
 }

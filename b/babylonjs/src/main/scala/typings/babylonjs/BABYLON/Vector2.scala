@@ -97,12 +97,14 @@ trait Vector2 extends StObject {
   
   /**
     * Gets a new Vector2 from current Vector2 floored values
+    * eg (1.2, 2.31) returns (1, 2)
     * @returns a new Vector2
     */
   def floor(): Vector2 = js.native
   
   /**
-    * Gets a new Vector2 from current Vector2 floored values
+    * Gets a new Vector2 from current Vector2 fractional values
+    * eg (1.2, 2.31) returns (0.2, 0.31)
     * @returns a new Vector2
     */
   def fract(): Vector2 = js.native
@@ -194,6 +196,14 @@ trait Vector2 extends StObject {
     * @returns the current updated Vector2
     */
   def normalize(): Vector2 = js.native
+  
+  /**
+    * Rotate the current vector into a given result vector
+    * @param angle defines the rotation angle
+    * @param result defines the result vector where to store the rotated vector
+    * @returns the current vector
+    */
+  def rotateToRef(angle: Double, result: Vector2): this.type = js.native
   
   /**
     * Returns a new Vector2 scaled by "scale" from the current Vector2

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "to-vfile" : "7.2.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "to-vfile" : "7.2.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

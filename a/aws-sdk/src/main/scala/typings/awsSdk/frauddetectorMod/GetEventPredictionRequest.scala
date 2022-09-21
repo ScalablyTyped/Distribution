@@ -27,9 +27,9 @@ trait GetEventPredictionRequest extends StObject {
   var eventId: String
   
   /**
-    * Timestamp that defines when the event under evaluation occurred.
+    * Timestamp that defines when the event under evaluation occurred. The timestamp must be specified using ISO 8601 standard in UTC.
     */
-  var eventTimestamp: String
+  var eventTimestamp: utcTimestampISO8601
   
   /**
     * The event type associated with the detector specified for the prediction.
@@ -37,7 +37,7 @@ trait GetEventPredictionRequest extends StObject {
   var eventTypeName: String
   
   /**
-    * Names of the event type's variables you defined in Amazon Fraud Detector to represent data elements and their corresponding values for the event you are sending for evaluation.
+    * Names of the event type's variables you defined in Amazon Fraud Detector to represent data elements and their corresponding values for the event you are sending for evaluation.  You must provide at least one eventVariable  To ensure most accurate fraud prediction and to simplify your data preparation, Amazon Fraud Detector will replace all missing variables or values as follows:  For Amazon Fraud Detector trained models:  If a null value is provided explicitly for a variable or if a variable is missing, model will replace the null value or the missing variable (no variable name in the eventVariables map) with calculated default mean/medians for numeric variables and with special values for categorical variables.  For imported SageMaker models:  If a null value is provided explicitly for a variable, the model and rules will use “null” as the value. If a variable is not provided (no variable name in the eventVariables map), model and rules will use the default value that is provided for the variable. 
     */
   var eventVariables: EventVariableMap
   
@@ -52,7 +52,7 @@ object GetEventPredictionRequest {
     detectorId: String,
     entities: listOfEntities,
     eventId: String,
-    eventTimestamp: String,
+    eventTimestamp: utcTimestampISO8601,
     eventTypeName: String,
     eventVariables: EventVariableMap
   ): GetEventPredictionRequest = {
@@ -70,11 +70,11 @@ object GetEventPredictionRequest {
     
     inline def setEntities(value: listOfEntities): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value*))
     
     inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    inline def setEventTimestamp(value: String): Self = StObject.set(x, "eventTimestamp", value.asInstanceOf[js.Any])
+    inline def setEventTimestamp(value: utcTimestampISO8601): Self = StObject.set(x, "eventTimestamp", value.asInstanceOf[js.Any])
     
     inline def setEventTypeName(value: String): Self = StObject.set(x, "eventTypeName", value.asInstanceOf[js.Any])
     

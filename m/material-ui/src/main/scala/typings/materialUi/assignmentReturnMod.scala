@@ -10,10 +10,10 @@ object assignmentReturnMod {
   
   @JSImport("material-ui/svg-icons/action/assignment-return", JSImport.Default)
   @js.native
-  class default () extends ActionAssignmentReturn
+  open class default () extends ActionAssignmentReturn
   
   @JSImport("material-ui/svg-icons/action/assignment-return", "ActionAssignmentReturn")
   @js.native
-  class ActionAssignmentReturn ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionAssignmentReturn ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

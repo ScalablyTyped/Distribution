@@ -15,7 +15,7 @@ trait InspectTemplatesResource extends StObject {
   
   def create(request: Fields, body: GooglePrivacyDlpV2CreateInspectTemplateRequest): Request[GooglePrivacyDlpV2InspectTemplate] = js.native
   /**
-    * Creates an InspectTemplate for re-using frequently used configuration for inspecting content, images, and storage. See https://cloud.google.com/dlp/docs/creating-templates to learn
+    * Creates an InspectTemplate for reusing frequently used configuration for inspecting content, images, and storage. See https://cloud.google.com/dlp/docs/creating-templates to learn
     * more.
     */
   def create(request: Oauthtoken): Request[GooglePrivacyDlpV2InspectTemplate] = js.native

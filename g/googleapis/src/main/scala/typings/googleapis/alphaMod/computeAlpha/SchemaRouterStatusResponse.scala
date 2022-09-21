@@ -9,7 +9,7 @@ trait SchemaRouterStatusResponse extends StObject {
   /**
     * Type of resource.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   var result: js.UndefOr[SchemaRouterStatus] = js.undefined
 }
@@ -23,6 +23,8 @@ object SchemaRouterStatusResponse {
   extension [Self <: SchemaRouterStatusResponse](x: Self) {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

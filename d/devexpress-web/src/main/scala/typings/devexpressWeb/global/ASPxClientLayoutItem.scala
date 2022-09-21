@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientLayoutItem")
 @js.native
-class ASPxClientLayoutItem ()
+open class ASPxClientLayoutItem ()
   extends StObject
      with typings.devexpressWeb.ASPxClientLayoutItem {
   

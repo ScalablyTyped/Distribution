@@ -15,11 +15,11 @@ object listMod {
     * @template TQuestion
     * The options for the question.
     */
-  @JSImport("inquirer/lib/prompts/list", JSImport.Namespace)
+  @JSImport("inquirer/lib/prompts/list", JSImport.Default)
   @js.native
-  class ^[TQuestion /* <: Question */] protected () extends ListPrompt[TQuestion] {
+  open class default[TQuestion /* <: Question */] protected () extends ListPrompt[TQuestion] {
     /**
-      * Initializes a new instance of the `ListPrompt<T>` class.
+      * Initializes a new instance of the {@link ListPrompt `ListPrompt<TQuestion>`} class.
       *
       * @param question
       * The question to prompt the user to answer.
@@ -41,12 +41,12 @@ object listMod {
     */
   @js.native
   trait ListPrompt[TQuestion /* <: Question */]
-    extends typings.inquirer.baseMod.^[TQuestion] {
+    extends typings.inquirer.baseMod.default[TQuestion] {
     
     /**
       * Resolves the value of the prompt.
       */
-    /* protected */ def done(value: js.Any): Unit = js.native
+    /* protected */ def done(value: Any): Unit = js.native
     
     /**
       * Gets or sets a value indicating whether the prompt has been rendered the first time.
@@ -56,7 +56,7 @@ object listMod {
     /**
       * Gets the current value of the prompt.
       */
-    /* protected */ def getCurrentValue(): js.Any = js.native
+    /* protected */ def getCurrentValue(): Any = js.native
     
     /**
       * Handles the `downKey`-event.
@@ -77,7 +77,7 @@ object listMod {
       * @param value
       * The value of the prompt.
       */
-    /* protected */ def onSubmit(value: js.Any): Unit = js.native
+    /* protected */ def onSubmit(value: Any): Unit = js.native
     
     /**
       * Handles the `upKey`-event.
@@ -87,7 +87,7 @@ object listMod {
     /**
       * Gets or sets an object for paginating the content.
       */
-    /* protected */ var paginator: typings.inquirer.paginatorMod.^ = js.native
+    /* protected */ var paginator: typings.inquirer.paginatorMod.default = js.native
     
     /**
       * Renders the prompt.
@@ -101,7 +101,7 @@ object listMod {
   }
   
   /**
-    * The question-options for the `ListPrompt<T>`.
+    * The question-options for the {@link ListPrompt `ListPrompt<TQuestion>`}.
     */
   type Question = ListQuestionOptions[Answers]
 }

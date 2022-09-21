@@ -181,7 +181,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.wbr
 import typings.carbonComponentsReact.carbonComponentsReactStrings.webview
 import typings.carbonComponentsReact.typingsSharedMod.FCProps
 import typings.carbonComponentsReact.typingsSharedMod.FCReturn
-import typings.react.mod.JSXElementConstructor
+import typings.carbonComponentsReact.typingsSharedMod.ReactComponentConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -195,7 +195,7 @@ object dangerButtonDangerButtonMod {
   // tslint:disable:unified-signatures breaks certain usages
   inline def default(props: FCProps[ButtonAnchorProps | ButtonDefaultProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
-  inline def default_T_JSXElementConstructorAny[T /* <: JSXElementConstructor[js.Any] */](props: FCProps[ButtonCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default_T_ReactComponentConstructorNothing[T /* <: ReactComponentConstructor[scala.Nothing] */](props: FCProps[ButtonCustomComponentProps[T]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def default_a(props: FCProps[ButtonIntrinsicProps[a]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

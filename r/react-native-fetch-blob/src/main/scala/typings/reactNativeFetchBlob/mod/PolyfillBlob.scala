@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-fetch-blob", "PolyfillBlob")
 @js.native
-class PolyfillBlob protected ()
+open class PolyfillBlob protected ()
   extends StObject
      with EventTarget {
   /**
@@ -20,7 +20,7 @@ class PolyfillBlob protected ()
     * @param cType Content type settings of Blob object, `text/plain` by default
     * @param defer When this argument set to `true`, blob constructor will not invoke blob created event automatically.
     */
-  def this(data: js.Any, cType: js.Any, defer: Boolean) = this()
+  def this(data: Any, cType: Any, defer: Boolean) = this()
   
   /**
     * Release the resource of the Blob object.
@@ -48,7 +48,7 @@ class PolyfillBlob protected ()
     * Read data of the Blob object, this is not standard method.
     * @param  encoding Read data with encoding
     */
-  def readBlob(encoding: String): js.Promise[js.Any] = js.native
+  def readBlob(encoding: String): js.Promise[Any] = js.native
   
   /**
     * Create a Blob object which is sliced from current object
@@ -71,7 +71,7 @@ object PolyfillBlob {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def build(data: js.Any, cType: js.Any): js.Promise[PolyfillBlob] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(data.asInstanceOf[js.Any], cType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PolyfillBlob]]
+  inline def build(data: Any, cType: Any): js.Promise[PolyfillBlob] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(data.asInstanceOf[js.Any], cType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PolyfillBlob]]
   
   inline def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
   

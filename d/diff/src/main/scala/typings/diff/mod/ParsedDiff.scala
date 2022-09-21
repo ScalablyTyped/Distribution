@@ -29,7 +29,7 @@ object ParsedDiff {
     
     inline def setHunks(value: js.Array[Hunk]): Self = StObject.set(x, "hunks", value.asInstanceOf[js.Any])
     
-    inline def setHunksVarargs(value: Hunk*): Self = StObject.set(x, "hunks", js.Array(value :_*))
+    inline def setHunksVarargs(value: Hunk*): Self = StObject.set(x, "hunks", js.Array(value*))
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

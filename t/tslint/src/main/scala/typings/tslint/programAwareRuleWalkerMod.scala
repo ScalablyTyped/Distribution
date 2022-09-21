@@ -13,15 +13,15 @@ object programAwareRuleWalkerMod {
   
   @JSImport("tslint/lib/language/walker/programAwareRuleWalker", "ProgramAwareRuleWalker")
   @js.native
-  class ProgramAwareRuleWalker protected () extends RuleWalker {
+  open class ProgramAwareRuleWalker protected () extends RuleWalker {
     def this(sourceFile: SourceFile, options: IOptions, program: Program) = this()
     
     def getProgram(): Program = js.native
     
     def getTypeChecker(): TypeChecker = js.native
     
-    /* private */ val program: js.Any = js.native
+    /* private */ val program: Any = js.native
     
-    /* private */ val typeChecker: js.Any = js.native
+    /* private */ val typeChecker: Any = js.native
   }
 }

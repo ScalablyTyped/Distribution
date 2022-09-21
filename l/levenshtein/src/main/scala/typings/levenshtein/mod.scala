@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("levenshtein", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Levenshtein {
     /**

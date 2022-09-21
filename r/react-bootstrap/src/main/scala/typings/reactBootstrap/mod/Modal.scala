@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Modal")
 @js.native
-class Modal ()
+open class Modal ()
   extends typings.reactBootstrap.libMod.Modal
 object Modal {
   
@@ -18,7 +18,7 @@ object Modal {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Modal.Body")
   @js.native
-  class Body ()
+  open class Body ()
     extends typings.reactBootstrap.modalBodyMod.^
   /* static member */
   @JSImport("react-bootstrap", "Modal.Body")
@@ -29,7 +29,7 @@ object Modal {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Modal.Dialog")
   @js.native
-  class Dialog ()
+  open class Dialog ()
     extends typings.reactBootstrap.modalDialogMod.^
   /* static member */
   @JSImport("react-bootstrap", "Modal.Dialog")
@@ -40,7 +40,7 @@ object Modal {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Modal.Footer")
   @js.native
-  class Footer ()
+  open class Footer ()
     extends typings.reactBootstrap.modalFooterMod.^
   /* static member */
   @JSImport("react-bootstrap", "Modal.Footer")
@@ -51,7 +51,7 @@ object Modal {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Modal.Header")
   @js.native
-  class Header ()
+  open class Header ()
     extends typings.reactBootstrap.modalHeaderMod.^
   /* static member */
   @JSImport("react-bootstrap", "Modal.Header")
@@ -62,7 +62,7 @@ object Modal {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Modal.Title")
   @js.native
-  class Title ()
+  open class Title ()
     extends typings.reactBootstrap.modalTitleMod.^
   /* static member */
   @JSImport("react-bootstrap", "Modal.Title")

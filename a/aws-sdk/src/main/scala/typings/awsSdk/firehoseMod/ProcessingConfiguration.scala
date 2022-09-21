@@ -33,6 +33,6 @@ object ProcessingConfiguration {
     
     inline def setProcessorsUndefined: Self = StObject.set(x, "Processors", js.undefined)
     
-    inline def setProcessorsVarargs(value: Processor*): Self = StObject.set(x, "Processors", js.Array(value :_*))
+    inline def setProcessorsVarargs(value: Processor*): Self = StObject.set(x, "Processors", js.Array(value*))
   }
 }

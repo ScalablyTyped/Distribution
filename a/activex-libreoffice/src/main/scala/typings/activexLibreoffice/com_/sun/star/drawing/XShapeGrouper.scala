@@ -34,7 +34,7 @@ object XShapeGrouper {
   inline def apply(
     acquire: () => Unit,
     group: XShapes => XShapeGroup,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     ungroup: XShapeGroup => Unit
   ): XShapeGrouper = {

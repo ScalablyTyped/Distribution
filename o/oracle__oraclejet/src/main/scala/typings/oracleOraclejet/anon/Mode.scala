@@ -14,7 +14,7 @@ trait Mode extends StObject {
   
   var index: Double
   
-  var key: js.Any
+  var key: Any
   
   var mode: String
   
@@ -27,7 +27,7 @@ object Mode {
     componentElement: typings.std.Element,
     data: js.Object,
     index: Double,
-    key: js.Any,
+    key: Any,
     mode: String,
     row: js.Object
   ): Mode = {
@@ -45,7 +45,7 @@ object Mode {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

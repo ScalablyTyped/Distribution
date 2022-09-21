@@ -12,11 +12,11 @@ trait BitmapTypedValue extends StObject {
   var `type`: PropertyType
   
   /** Gets the stored value. */
-  var value: js.Any
+  var value: Any
 }
 object BitmapTypedValue {
   
-  inline def apply(`type`: PropertyType, value: js.Any): BitmapTypedValue = {
+  inline def apply(`type`: PropertyType, value: Any): BitmapTypedValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BitmapTypedValue]
@@ -26,6 +26,6 @@ object BitmapTypedValue {
     
     inline def setType(value: PropertyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

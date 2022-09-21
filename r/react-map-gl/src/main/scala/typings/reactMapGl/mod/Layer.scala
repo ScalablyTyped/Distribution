@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-map-gl", "Layer")
 @js.native
-class Layer protected ()
-  extends PureComponent[LayerProps, js.Object, js.Any] {
+open class Layer protected ()
+  extends PureComponent[LayerProps, js.Object, Any] {
   def this(props: LayerProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: LayerProps, context: js.Any) = this()
+  def this(props: LayerProps, context: Any) = this()
 }

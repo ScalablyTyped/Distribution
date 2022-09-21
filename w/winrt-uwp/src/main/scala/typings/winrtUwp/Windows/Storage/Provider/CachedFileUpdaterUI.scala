@@ -13,14 +13,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CachedFileUpdaterUI extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_fileupdaterequested(
     `type`: fileupdaterequested,
     listener: TypedEventHandler[CachedFileUpdaterUI, FileUpdateRequestedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_uirequested(`type`: uirequested, listener: TypedEventHandler[CachedFileUpdaterUI, js.Any]): Unit = js.native
+  def addEventListener_uirequested(`type`: uirequested, listener: TypedEventHandler[CachedFileUpdaterUI, Any]): Unit = js.native
   
   /**
     * Gets an object used to complete a file update request asynchronously.
@@ -35,19 +35,19 @@ trait CachedFileUpdaterUI extends StObject {
   var onfileupdaterequested_Original: TypedEventHandler[CachedFileUpdaterUI, FileUpdateRequestedEventArgs] = js.native
   
   /** Fires when the calling app needs to display the file picker letterbox UI that is represented by the CachedFileUpdaterUI object. */
-  def onuirequested(ev: js.Any & WinRTEvent[CachedFileUpdaterUI]): Unit = js.native
+  def onuirequested(ev: Any & WinRTEvent[CachedFileUpdaterUI]): Unit = js.native
   /** Fires when the calling app needs to display the file picker letterbox UI that is represented by the CachedFileUpdaterUI object. */
   @JSName("onuirequested")
-  var onuirequested_Original: TypedEventHandler[CachedFileUpdaterUI, js.Any] = js.native
+  var onuirequested_Original: TypedEventHandler[CachedFileUpdaterUI, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_fileupdaterequested(
     `type`: fileupdaterequested,
     listener: TypedEventHandler[CachedFileUpdaterUI, FileUpdateRequestedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_uirequested(`type`: uirequested, listener: TypedEventHandler[CachedFileUpdaterUI, js.Any]): Unit = js.native
+  def removeEventListener_uirequested(`type`: uirequested, listener: TypedEventHandler[CachedFileUpdaterUI, Any]): Unit = js.native
   
   /** Gets or sets the title to display in the top-left the file picker UI. The title identifies the location or context of the app's page (which is hosted in the file picker UI) for the user. */
   var title: String = js.native

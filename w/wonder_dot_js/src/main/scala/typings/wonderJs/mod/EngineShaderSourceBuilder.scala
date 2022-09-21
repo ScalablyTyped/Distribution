@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "EngineShaderSourceBuilder")
 @js.native
-class EngineShaderSourceBuilder ()
+open class EngineShaderSourceBuilder ()
   extends typings.wonderJs.engineShaderSourceBuilderMod.EngineShaderSourceBuilder
 /* static members */
 object EngineShaderSourceBuilder {

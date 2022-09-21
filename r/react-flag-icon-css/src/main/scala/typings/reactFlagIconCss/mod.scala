@@ -18,22 +18,22 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(react: js.Any): Instantiable0[FlagIcon] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(react.asInstanceOf[js.Any]).asInstanceOf[Instantiable0[FlagIcon]]
-  inline def default(react: js.Any, opts: ReadonlyFlagIconOptions): Instantiable0[FlagIcon] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(react.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[FlagIcon]]
+  inline def default(react: Any): Instantiable0[FlagIcon] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(react.asInstanceOf[js.Any]).asInstanceOf[Instantiable0[FlagIcon]]
+  inline def default(react: Any, opts: ReadonlyFlagIconOptions): Instantiable0[FlagIcon] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(react.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[FlagIcon]]
   
-  inline def CustomFlagIconFactory(react: js.Any): Instantiable0[FlagIcon] = ^.asInstanceOf[js.Dynamic].applyDynamic("CustomFlagIconFactory")(react.asInstanceOf[js.Any]).asInstanceOf[Instantiable0[FlagIcon]]
-  inline def CustomFlagIconFactory(react: js.Any, opts: ReadonlyFlagIconOptions): Instantiable0[FlagIcon] = (^.asInstanceOf[js.Dynamic].applyDynamic("CustomFlagIconFactory")(react.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[FlagIcon]]
+  inline def CustomFlagIconFactory(react: Any): Instantiable0[FlagIcon] = ^.asInstanceOf[js.Dynamic].applyDynamic("CustomFlagIconFactory")(react.asInstanceOf[js.Any]).asInstanceOf[Instantiable0[FlagIcon]]
+  inline def CustomFlagIconFactory(react: Any, opts: ReadonlyFlagIconOptions): Instantiable0[FlagIcon] = (^.asInstanceOf[js.Dynamic].applyDynamic("CustomFlagIconFactory")(react.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Instantiable0[FlagIcon]]
   
   @JSImport("react-flag-icon-css", "FlagIcon")
   @js.native
-  class FlagIcon protected ()
-    extends PureComponent[FlagIconProps, js.Object, js.Any] {
+  open class FlagIcon protected ()
+    extends PureComponent[FlagIconProps, js.Object, Any] {
     def this(props: FlagIconProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: FlagIconProps, context: js.Any) = this()
+    def this(props: FlagIconProps, context: Any) = this()
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -59,7 +59,9 @@ object mod {
       * Set this if useCssModules is true and a) you want to apply styles to FlagIcon
       * using .theme-base and/or b) you are using custom flags.
       */
-    var themeStyles: js.UndefOr[StringDictionary[(Properties[String | `0`]) & (PropertiesHyphen[String | `0`])]] = js.undefined
+    var themeStyles: js.UndefOr[
+        StringDictionary[(Properties[String | `0`, String]) & (PropertiesHyphen[String | `0`, String])]
+      ] = js.undefined
     
     /**
       * Use CSS modules styles (your module bundler must be correctly setup).
@@ -79,7 +81,9 @@ object mod {
       
       inline def setCustomCodesUndefined: Self = StObject.set(x, "customCodes", js.undefined)
       
-      inline def setThemeStyles(value: StringDictionary[(Properties[String | `0`]) & (PropertiesHyphen[String | `0`])]): Self = StObject.set(x, "themeStyles", value.asInstanceOf[js.Any])
+      inline def setThemeStyles(
+        value: StringDictionary[(Properties[String | `0`, String]) & (PropertiesHyphen[String | `0`, String])]
+      ): Self = StObject.set(x, "themeStyles", value.asInstanceOf[js.Any])
       
       inline def setThemeStylesUndefined: Self = StObject.set(x, "themeStyles", js.undefined)
       

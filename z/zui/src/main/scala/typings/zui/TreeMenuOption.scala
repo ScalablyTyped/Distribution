@@ -12,7 +12,7 @@ trait TreeMenuOption extends StObject {
   
   var initialState: js.UndefOr[String] = js.undefined
   
-  var itemCreator: js.UndefOr[js.Function2[/* li */ JQuery | js.Object, /* item */ TreeNode, js.Any]] = js.undefined
+  var itemCreator: js.UndefOr[js.Function2[/* li */ JQuery | js.Object, /* item */ TreeNode, Any]] = js.undefined
   
   var itemWrapper: js.UndefOr[Boolean] = js.undefined
 }
@@ -33,13 +33,13 @@ object TreeMenuOption {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: TreeNode*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: TreeNode*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setInitialState(value: String): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
     inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    inline def setItemCreator(value: (/* li */ JQuery | js.Object, /* item */ TreeNode) => js.Any): Self = StObject.set(x, "itemCreator", js.Any.fromFunction2(value))
+    inline def setItemCreator(value: (/* li */ JQuery | js.Object, /* item */ TreeNode) => Any): Self = StObject.set(x, "itemCreator", js.Any.fromFunction2(value))
     
     inline def setItemCreatorUndefined: Self = StObject.set(x, "itemCreator", js.undefined)
     

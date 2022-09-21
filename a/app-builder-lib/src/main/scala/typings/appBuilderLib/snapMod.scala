@@ -12,26 +12,26 @@ object snapMod {
   
   @JSImport("app-builder-lib/out/targets/snap", JSImport.Default)
   @js.native
-  class default protected () extends SnapTarget {
+  open class default protected () extends SnapTarget {
     def this(name: String, packager: LinuxPackager, helper: LinuxTargetHelper, outDir: String) = this()
   }
   
   @js.native
   trait SnapTarget extends Target {
     
-    /* private */ var createDescriptor: js.Any = js.native
+    /* private */ var createDescriptor: Any = js.native
     
-    /* private */ val helper: js.Any = js.native
+    /* private */ val helper: Any = js.native
     
-    /* private */ var isElectronVersionGreaterOrEqualThen: js.Any = js.native
+    /* private */ var isElectronVersionGreaterOrEqualThan: Any = js.native
     
     var isUseTemplateApp: Boolean = js.native
     
     @JSName("options")
     val options_SnapTarget: SnapOptions = js.native
     
-    /* private */ val packager: js.Any = js.native
+    /* private */ val packager: Any = js.native
     
-    /* private */ var replaceDefault: js.Any = js.native
+    /* private */ var replaceDefault: Any = js.native
   }
 }

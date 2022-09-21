@@ -113,11 +113,11 @@ object types {
     var levelOfControl: String
     
     /** The value of the setting. */
-    var value: js.Any
+    var value: Any
   }
   object ChromeSettingGetResultDetails {
     
-    inline def apply(levelOfControl: String, value: js.Any): ChromeSettingGetResultDetails = {
+    inline def apply(levelOfControl: String, value: Any): ChromeSettingGetResultDetails = {
       val __obj = js.Dynamic.literal(levelOfControl = levelOfControl.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChromeSettingGetResultDetails]
     }
@@ -130,7 +130,7 @@ object types {
       
       inline def setLevelOfControl(value: String): Self = StObject.set(x, "levelOfControl", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,18 +170,18 @@ object types {
       * which is described together with the setting.
       * An app should not set a value of a different type.
       */
-    var value: js.Any
+    var value: Any
   }
   object ChromeSettingSetDetails {
     
-    inline def apply(value: js.Any): ChromeSettingSetDetails = {
+    inline def apply(value: Any): ChromeSettingSetDetails = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChromeSettingSetDetails]
     }
     
     extension [Self <: ChromeSettingSetDetails](x: Self) {
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

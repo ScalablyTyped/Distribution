@@ -1,7 +1,9 @@
 package typings.reactMdAutocomplete
 
 import typings.reactMdAutocomplete.typesMod.AutoCompleteData
-import typings.reactMdUtils.utilsMod.GetItemValue_
+import typings.reactMdTransition.typesMod.TransitionEnterHandler
+import typings.reactMdTransition.typesMod.TransitionExitHandler
+import typings.reactMdUtils.searchUtilsMod.GetItemValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -79,33 +81,38 @@ object anon {
     }
   }
   
-  /* Inlined std.Required<@react-md/transition.@react-md/transition.TransitionHooks> */
-  trait RequiredTransitionHooks extends StObject {
+  /* Inlined std.Required<@react-md/transition.@react-md/transition.FixedPositioningTransitionCallbacks> */
+  trait RequiredFixedPositioningT extends StObject {
     
-    var onEnter: js.Any
+    var onEnter: TransitionEnterHandler
     
-    var onEntered: js.Any
+    var onEntered: TransitionEnterHandler
     
-    var onEntering: js.Any
+    var onEntering: TransitionEnterHandler
     
-    var onExited: js.Any
+    var onExited: TransitionExitHandler
   }
-  object RequiredTransitionHooks {
+  object RequiredFixedPositioningT {
     
-    inline def apply(onEnter: js.Any, onEntered: js.Any, onEntering: js.Any, onExited: js.Any): RequiredTransitionHooks = {
-      val __obj = js.Dynamic.literal(onEnter = onEnter.asInstanceOf[js.Any], onEntered = onEntered.asInstanceOf[js.Any], onEntering = onEntering.asInstanceOf[js.Any], onExited = onExited.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RequiredTransitionHooks]
+    inline def apply(
+      onEnter: /* appearing */ Boolean => Unit,
+      onEntered: /* appearing */ Boolean => Unit,
+      onEntering: /* appearing */ Boolean => Unit,
+      onExited: () => Unit
+    ): RequiredFixedPositioningT = {
+      val __obj = js.Dynamic.literal(onEnter = js.Any.fromFunction1(onEnter), onEntered = js.Any.fromFunction1(onEntered), onEntering = js.Any.fromFunction1(onEntering), onExited = js.Any.fromFunction0(onExited))
+      __obj.asInstanceOf[RequiredFixedPositioningT]
     }
     
-    extension [Self <: RequiredTransitionHooks](x: Self) {
+    extension [Self <: RequiredFixedPositioningT](x: Self) {
       
-      inline def setOnEnter(value: js.Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+      inline def setOnEnter(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
       
-      inline def setOnEntered(value: js.Any): Self = StObject.set(x, "onEntered", value.asInstanceOf[js.Any])
+      inline def setOnEntered(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEntered", js.Any.fromFunction1(value))
       
-      inline def setOnEntering(value: js.Any): Self = StObject.set(x, "onEntering", value.asInstanceOf[js.Any])
+      inline def setOnEntering(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEntering", js.Any.fromFunction1(value))
       
-      inline def setOnExited(value: js.Any): Self = StObject.set(x, "onExited", value.asInstanceOf[js.Any])
+      inline def setOnExited(value: () => Unit): Self = StObject.set(x, "onExited", js.Any.fromFunction0(value))
     }
   }
 }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OverrideAction extends StObject {
   
   /**
-    * Override the rule action setting to count.
+    * Override the rule group evaluation result to count only.   This option is usually set to none. It does not affect how the rules in the rule group are evaluated. If you want the rules in the rule group to only count matches, do not use this and instead exclude those rules in your rule group reference statement settings.  
     */
   var Count: js.UndefOr[CountAction] = js.undefined
   
   /**
-    * Don't override the rule action setting.
+    * Don't override the rule group evaluation result. This is the most common setting.
     */
   var None: js.UndefOr[NoneAction] = js.undefined
 }

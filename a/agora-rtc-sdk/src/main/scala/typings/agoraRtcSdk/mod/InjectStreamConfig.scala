@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A class for configuring the imported live broadcast voice or video stream in {@link addInjectStreamUrl}.
+  * A class for configuring the imported voice or video stream in {@link addInjectStreamUrl}.
   *
   * @example **Sample code**
   * ```javascript
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InjectStreamConfig extends StObject {
   
   /**
-    * Audio bitrate of the added stream to the broadcast.
+    * Audio bitrate of the added stream to the interactive streaming.
     *
     * Positive integer. The default value is 48. The value range is [1, 10000].
     *
@@ -34,7 +34,7 @@ trait InjectStreamConfig extends StObject {
   var audioBitrate: js.UndefOr[Double] = js.undefined
   
   /**
-    * Audio channels to add into the broadcast.
+    * Audio channels to add into the interactive streaming.
     *
     * Positive integer. The default value is 1. The value range is [1, 2].
     *
@@ -45,7 +45,7 @@ trait InjectStreamConfig extends StObject {
   var audioChannels: js.UndefOr[Double] = js.undefined
   
   /**
-    * Audio sampling rate of the added stream to the broadcast.
+    * Audio sampling rate of the added stream to the interactive streaming.
     *
     * - 32000: 32 kHz
     * - 44100: (Default) 44.1 kHz
@@ -58,14 +58,14 @@ trait InjectStreamConfig extends StObject {
   var audioSampleRate: js.UndefOr[Double] = js.undefined
   
   /**
-    * Height of the added stream to the broadcast.
+    * Height of the added stream to the interactive streaming.
     *
     * Integer, the default value is 0, which is the same height as the original stream. The value range is [0, 10000].
     */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    * Video bitrate of the added stream to the broadcast.
+    * Video bitrate of the added stream to the interactive streaming.
     *
     * Positive integer. The default value is 400 Kbps. The value range is [1, 10000].
     *
@@ -76,21 +76,21 @@ trait InjectStreamConfig extends StObject {
   var videoBitrate: js.UndefOr[Double] = js.undefined
   
   /**
-    * Video frame rate of the added stream to the broadcast.
+    * Video frame rate of the added stream to the interactive streaming.
     *
     * Positive integer. The default value is 15 fps. The value range is [1, 10000].
     */
   var videoFramerate: js.UndefOr[Double] = js.undefined
   
   /**
-    * Video GOP of the added stream to the broadcast.
+    * Video GOP of the added stream to the interactive streaming.
     *
     * Positive integer. The default value is 30 frames. The value range is [1, 10000].
     */
   var videoGop: js.UndefOr[Double] = js.undefined
   
   /**
-    * Width of the added stream to the broadcast.
+    * Width of the added stream to the interactive streaming.
     *
     * Integer, the default value is 0, which is the same width as the original stream. The value range is [0, 10000].
     */

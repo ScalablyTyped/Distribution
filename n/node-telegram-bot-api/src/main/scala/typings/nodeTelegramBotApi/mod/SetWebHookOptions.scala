@@ -28,7 +28,7 @@ object SetWebHookOptions {
     
     inline def setAllowed_updatesUndefined: Self = StObject.set(x, "allowed_updates", js.undefined)
     
-    inline def setAllowed_updatesVarargs(value: String*): Self = StObject.set(x, "allowed_updates", js.Array(value :_*))
+    inline def setAllowed_updatesVarargs(value: String*): Self = StObject.set(x, "allowed_updates", js.Array(value*))
     
     inline def setCertificate(value: String | Stream): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ object recordVoiceOverMod {
   
   @JSImport("material-ui/svg-icons/action/record-voice-over", JSImport.Default)
   @js.native
-  class default () extends ActionRecordVoiceOver
+  open class default () extends ActionRecordVoiceOver
   
   @JSImport("material-ui/svg-icons/action/record-voice-over", "ActionRecordVoiceOver")
   @js.native
-  class ActionRecordVoiceOver ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionRecordVoiceOver ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

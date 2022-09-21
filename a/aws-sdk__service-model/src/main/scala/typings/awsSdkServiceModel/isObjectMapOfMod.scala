@@ -10,7 +10,7 @@ object isObjectMapOfMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isObjectMapOf[T](arg: js.Any, determiner: Determiner[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isObjectMapOf")(arg.asInstanceOf[js.Any], determiner.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isObjectMapOf[T](arg: Any, determiner: Determiner[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isObjectMapOf")(arg.asInstanceOf[js.Any], determiner.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  type Determiner[T] = js.Function1[/* arg */ js.Any, /* is T */ Boolean]
+  type Determiner[T] = js.Function1[/* arg */ Any, /* is T */ Boolean]
 }

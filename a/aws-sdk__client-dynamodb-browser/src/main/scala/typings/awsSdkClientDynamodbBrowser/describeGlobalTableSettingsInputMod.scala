@@ -8,5 +8,5 @@ object describeGlobalTableSettingsInputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/DescribeGlobalTableSettingsInput", "DescribeGlobalTableSettingsInput")
   @js.native
-  val DescribeGlobalTableSettingsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DescribeGlobalTableSettingsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

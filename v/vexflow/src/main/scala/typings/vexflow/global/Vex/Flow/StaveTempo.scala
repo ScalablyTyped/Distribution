@@ -1,6 +1,7 @@
 package typings.vexflow.global.Vex.Flow
 
 import typings.vexflow.anon.Bpm
+import typings.vexflow.anon.FillStyle_
 import typings.vexflow.anon.GetContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.StaveTempo")
 @js.native
-class StaveTempo protected ()
+open class StaveTempo protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.StaveTempo {
   def this(tempo: Bpm, x: Double, shift_y: Double) = this()
@@ -38,6 +39,9 @@ class StaveTempo protected ()
   override def getPosition(): Double = js.native
   
   /* CompleteClass */
+  override def getStyle(): FillStyle_ = js.native
+  
+  /* CompleteClass */
   override def getWidth(): Double = js.native
   
   /* CompleteClass */
@@ -54,6 +58,10 @@ class StaveTempo protected ()
   
   /* CompleteClass */
   override def setShiftY(y: Double): typings.vexflow.Vex.Flow.StaveTempo = js.native
+  
+  // (StaveModifier extends Element in vexflow, but not in these definitions, probably because of a typing problem)
+  /* CompleteClass */
+  override def setStyle(style: FillStyle_): typings.vexflow.Vex.Flow.StaveModifier = js.native
   
   /* CompleteClass */
   override def setTempo(tempo: Bpm): typings.vexflow.Vex.Flow.StaveTempo = js.native

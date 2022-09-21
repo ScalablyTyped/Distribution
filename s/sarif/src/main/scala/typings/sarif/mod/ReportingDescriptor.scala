@@ -100,19 +100,19 @@ object ReportingDescriptor {
     
     inline def setDeprecatedGuidsUndefined: Self = StObject.set(x, "deprecatedGuids", js.undefined)
     
-    inline def setDeprecatedGuidsVarargs(value: String*): Self = StObject.set(x, "deprecatedGuids", js.Array(value :_*))
+    inline def setDeprecatedGuidsVarargs(value: String*): Self = StObject.set(x, "deprecatedGuids", js.Array(value*))
     
     inline def setDeprecatedIds(value: js.Array[String]): Self = StObject.set(x, "deprecatedIds", value.asInstanceOf[js.Any])
     
     inline def setDeprecatedIdsUndefined: Self = StObject.set(x, "deprecatedIds", js.undefined)
     
-    inline def setDeprecatedIdsVarargs(value: String*): Self = StObject.set(x, "deprecatedIds", js.Array(value :_*))
+    inline def setDeprecatedIdsVarargs(value: String*): Self = StObject.set(x, "deprecatedIds", js.Array(value*))
     
     inline def setDeprecatedNames(value: js.Array[String]): Self = StObject.set(x, "deprecatedNames", value.asInstanceOf[js.Any])
     
     inline def setDeprecatedNamesUndefined: Self = StObject.set(x, "deprecatedNames", js.undefined)
     
-    inline def setDeprecatedNamesVarargs(value: String*): Self = StObject.set(x, "deprecatedNames", js.Array(value :_*))
+    inline def setDeprecatedNamesVarargs(value: String*): Self = StObject.set(x, "deprecatedNames", js.Array(value*))
     
     inline def setFullDescription(value: MultiformatMessageString): Self = StObject.set(x, "fullDescription", value.asInstanceOf[js.Any])
     
@@ -148,7 +148,7 @@ object ReportingDescriptor {
     
     inline def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
     
-    inline def setRelationshipsVarargs(value: ReportingDescriptorRelationship*): Self = StObject.set(x, "relationships", js.Array(value :_*))
+    inline def setRelationshipsVarargs(value: ReportingDescriptorRelationship*): Self = StObject.set(x, "relationships", js.Array(value*))
     
     inline def setShortDescription(value: MultiformatMessageString): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
     

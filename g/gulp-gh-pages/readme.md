@@ -9,10 +9,10 @@ gulp plugin to publish contents to Github pages
 | ------------------ | :-------------: |
 | Full name          | gulp-gh-pages |
 | Keywords           | git, push, commit, branch, deploy, deployment, publish, site, website, gulp, gulpplugin, gh-pages, dist, github |
-| # releases         | 0 |
-| # dependents       | 88 |
-| # downloads        | 333222 |
-| # stars            | 41 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 27411.666666666668 |
+| # stars            | 606.0 |
 
 ## Links
 - [Homepage](https://github.com/shinnn/gulp-gh-pages#readme)

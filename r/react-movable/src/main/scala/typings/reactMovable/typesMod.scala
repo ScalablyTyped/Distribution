@@ -34,7 +34,7 @@ object typesMod {
       
       inline def setElements(value: js.Array[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      inline def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: Element*): Self = StObject.set(x, "elements", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
@@ -50,7 +50,7 @@ object typesMod {
     
     var onWheel: js.UndefOr[js.Function1[/* e */ WheelEvent[Element], Unit]] = js.undefined
     
-    var ref: js.UndefOr[RefObject[js.Any]] = js.undefined
+    var ref: js.UndefOr[RefObject[Any]] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -81,7 +81,7 @@ object typesMod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: RefObject[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
@@ -159,7 +159,7 @@ object typesMod {
       
       inline def setValues(value: js.Array[Value]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: Value*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Value*): Self = StObject.set(x, "values", js.Array(value*))
       
       inline def setVoiceover(value: IVoiceover): Self = StObject.set(x, "voiceover", value.asInstanceOf[js.Any])
     }

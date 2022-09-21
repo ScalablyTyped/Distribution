@@ -10,10 +10,10 @@ Find the best icon for a web page
 | ------------------ | :-------------: |
 | Full name          | page-icon |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 18 |
-| # downloads        | 202815 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 14706.666666666666 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://github.com/nativefier/page-icon#readme)

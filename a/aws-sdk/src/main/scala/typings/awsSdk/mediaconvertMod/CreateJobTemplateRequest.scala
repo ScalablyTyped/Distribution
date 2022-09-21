@@ -81,7 +81,7 @@ object CreateJobTemplateRequest {
     
     inline def setHopDestinationsUndefined: Self = StObject.set(x, "HopDestinations", js.undefined)
     
-    inline def setHopDestinationsVarargs(value: HopDestination*): Self = StObject.set(x, "HopDestinations", js.Array(value :_*))
+    inline def setHopDestinationsVarargs(value: HopDestination*): Self = StObject.set(x, "HopDestinations", js.Array(value*))
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

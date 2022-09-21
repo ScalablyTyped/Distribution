@@ -7,12 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis/build/src/apis/cloudbuild/v1", "cloudbuild_v1.Resource$Projects")
 @js.native
-class ResourceProjects protected () extends StObject {
+open class ResourceProjects protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var builds: ResourceProjectsBuilds = js.native
   
   var context: APIRequestContext = js.native
+  
+  var githubEnterpriseConfigs: ResourceProjectsGithubenterpriseconfigs = js.native
+  
+  var locations: ResourceProjectsLocations = js.native
   
   var triggers: ResourceProjectsTriggers = js.native
 }

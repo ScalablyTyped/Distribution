@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.yandexMaps.mod.IBalloonManager because var conflicts: events. Inlined 
 - typings.yandexMaps.mod.IBaloon because var conflicts: events, options. Inlined autoPan */ @JSImport("yandex-maps", "Balloon")
 @js.native
-class Balloon protected () extends Popup[Balloon] {
+open class Balloon protected () extends Popup[Balloon] {
   def this(map: Map_) = this()
   def this(map: Map_, options: IBalloonOptions) = this()
   
@@ -65,8 +65,8 @@ class Balloon protected () extends Popup[Balloon] {
   
   def destroy(): Unit = js.native
   
-  def fire(`type`: String, eventobject: js.Object): this.type = js.native
-  def fire(`type`: String, eventobject: IEvent[js.Object, js.Object]): this.type = js.native
+  def fire(`type`: String, eventObject: js.Object): this.type = js.native
+  def fire(`type`: String, eventObject: IEvent[js.Object, js.Object]): this.type = js.native
   
   def freeze(): IFreezable = js.native
   

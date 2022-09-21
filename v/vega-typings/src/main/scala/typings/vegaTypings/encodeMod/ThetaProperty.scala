@@ -22,6 +22,6 @@ object ThetaProperty {
     
     inline def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
     
-    inline def setThetaVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "theta", js.Array(value :_*))
+    inline def setThetaVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "theta", js.Array(value*))
   }
 }

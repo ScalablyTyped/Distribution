@@ -19,7 +19,7 @@ trait Volume extends StObject {
   /**
     * The time stamp when volume creation was initiated.
     */
-  var CreateTime: js.UndefOr[DateTime] = js.undefined
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Indicates whether the volume is encrypted.
@@ -32,12 +32,12 @@ trait Volume extends StObject {
   var FastRestored: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The number of I/O operations per second (IOPS) that the volume supports. For Provisioned IOPS SSD volumes, this represents the number of IOPS that are provisioned for the volume. For General Purpose SSD volumes, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information, see Amazon EBS volume types in the Amazon Elastic Compute Cloud User Guide. Constraints: Range is 100-16,000 IOPS for gp2 volumes and 100 to 64,000 IOPS for io1 and io2 volumes, in most Regions. The maximum IOPS for io1 and io2 of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. Condition: This parameter is required for requests to create io1 and io2 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
+    * The number of I/O operations per second (IOPS). For gp3, io1, and io2 volumes, this represents the number of IOPS that are provisioned for the volume. For gp2 volumes, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting.
     */
   var Iops: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to protect the volume encryption key for the volume.
+    * The Amazon Resource Name (ARN) of the Key Management Service (KMS) KMS key that was used to protect the volume encryption key for the volume.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -72,12 +72,17 @@ trait Volume extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
+    * The throughput that the volume supports, in MiB/s.
+    */
+  var Throughput: js.UndefOr[Integer] = js.undefined
+  
+  /**
     * The ID of the volume.
     */
   var VolumeId: js.UndefOr[String] = js.undefined
   
   /**
-    * The volume type. This can be gp2 for General Purpose SSD, io1 or io2 for Provisioned IOPS SSD, st1 for Throughput Optimized HDD, sc1 for Cold HDD, or standard for Magnetic volumes.
+    * The volume type.
     */
   var VolumeType: js.UndefOr[typings.awsSdk.ec2Mod.VolumeType] = js.undefined
 }
@@ -94,13 +99,13 @@ object Volume {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: VolumeAttachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: VolumeAttachment*): Self = StObject.set(x, "Attachments", js.Array(value*))
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    inline def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
@@ -144,7 +149,11 @@ object Volume {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
+    
+    inline def setThroughput(value: Integer): Self = StObject.set(x, "Throughput", value.asInstanceOf[js.Any])
+    
+    inline def setThroughputUndefined: Self = StObject.set(x, "Throughput", js.undefined)
     
     inline def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     

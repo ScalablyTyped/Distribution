@@ -1,6 +1,5 @@
 package typings.chromeApps.WebView
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UploadData extends StObject {
   
   /** Optional. An ArrayBuffer with a copy of the data. */
-  var bytes: js.UndefOr[ArrayBuffer] = js.undefined
+  var bytes: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
   
   /** Optional. A string with the file's path and name. */
   var file: js.UndefOr[String] = js.undefined
@@ -26,7 +25,7 @@ object UploadData {
   
   extension [Self <: UploadData](x: Self) {
     
-    inline def setBytes(value: ArrayBuffer): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+    inline def setBytes(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
     inline def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
     

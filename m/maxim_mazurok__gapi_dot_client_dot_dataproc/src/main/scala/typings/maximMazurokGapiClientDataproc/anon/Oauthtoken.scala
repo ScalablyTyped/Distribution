@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataproc.anon
 
-import typings.maximMazurokGapiClientDataproc.gapi.client.dataproc.WorkflowTemplate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,6 +16,9 @@ trait Oauthtoken extends StObject {
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
+  /** Optional. The ID to use for the batch, which will become the final component of the batch's resource name.This value must be 4-63 characters. Valid characters are /[a-z][0-9]-/. */
+  var batchId: js.UndefOr[String] = js.undefined
+  
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
@@ -29,11 +31,7 @@ trait Oauthtoken extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. The resource name of the region or location, as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.workflowTemplates,create, the
-    * resource name of the region has the following format: projects/{project_id}/regions/{region} For projects.locations.workflowTemplates.create, the resource name of the location
-    * has the following format: projects/{project_id}/locations/{location}
-    */
+  /** Required. The parent resource where this batch will be created. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -42,8 +40,14 @@ trait Oauthtoken extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: WorkflowTemplate
+  /**
+    * Optional. A unique ID used to identify the request. If the service receives two CreateBatchRequest
+    * (https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1#google.cloud.dataproc.v1.CreateBatchRequest)s with the same request_id, the second request is
+    * ignored and the Operation that corresponds to the first Batch created and stored in the backend is returned.Recommendation: Set this value to a UUID
+    * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The value must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-). The maximum length
+    * is 40 characters.
+    */
+  var requestId: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -53,8 +57,8 @@ trait Oauthtoken extends StObject {
 }
 object Oauthtoken {
   
-  inline def apply(parent: String, resource: WorkflowTemplate): Oauthtoken = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(parent: String): Oauthtoken = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Oauthtoken]
   }
   
@@ -71,6 +75,10 @@ object Oauthtoken {
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    
+    inline def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
@@ -98,7 +106,9 @@ object Oauthtoken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: WorkflowTemplate): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

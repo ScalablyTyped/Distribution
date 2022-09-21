@@ -1,39 +1,161 @@
 package typings.dayjs
 
+import typings.dayjs.mod._ConfigType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Format extends StObject {
+  trait D
+    extends StObject
+       with _ConfigType
+       with typings.dayjs.esmMod._ConfigType {
     
-    var format: js.UndefOr[String] = js.undefined
+    var D: js.UndefOr[Double | String] = js.undefined
     
-    var locale: js.UndefOr[String] = js.undefined
+    var M: js.UndefOr[Double | String] = js.undefined
     
-    var utc: js.UndefOr[Boolean] = js.undefined
+    var d: js.UndefOr[Double | String] = js.undefined
+    
+    var date: js.UndefOr[Double | String] = js.undefined
+    
+    var dates: js.UndefOr[Double | String] = js.undefined
+    
+    var day: js.UndefOr[Double | String] = js.undefined
+    
+    var days: js.UndefOr[Double | String] = js.undefined
+    
+    var h: js.UndefOr[Double | String] = js.undefined
+    
+    var hour: js.UndefOr[Double | String] = js.undefined
+    
+    var hours: js.UndefOr[Double | String] = js.undefined
+    
+    var m: js.UndefOr[Double | String] = js.undefined
+    
+    var millisecond: js.UndefOr[Double | String] = js.undefined
+    
+    var milliseconds: js.UndefOr[Double | String] = js.undefined
+    
+    var minute: js.UndefOr[Double | String] = js.undefined
+    
+    var minutes: js.UndefOr[Double | String] = js.undefined
+    
+    var month: js.UndefOr[Double | String] = js.undefined
+    
+    var months: js.UndefOr[Double | String] = js.undefined
+    
+    var ms: js.UndefOr[Double | String] = js.undefined
+    
+    var s: js.UndefOr[Double | String] = js.undefined
+    
+    var second: js.UndefOr[Double | String] = js.undefined
+    
+    var seconds: js.UndefOr[Double | String] = js.undefined
+    
+    var y: js.UndefOr[Double | String] = js.undefined
+    
+    var year: js.UndefOr[Double | String] = js.undefined
+    
+    var years: js.UndefOr[Double | String] = js.undefined
   }
-  object Format {
+  object D {
     
-    inline def apply(): Format = {
+    inline def apply(): D = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Format]
+      __obj.asInstanceOf[D]
     }
     
-    extension [Self <: Format](x: Self) {
+    extension [Self <: D](x: Self) {
       
-      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setD(value: Double | String): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
       
-      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setDUndefined: Self = StObject.set(x, "D", js.undefined)
       
-      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setDate(value: Double | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      inline def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
+      inline def setDates(value: Double | String): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
       
-      inline def setUtcUndefined: Self = StObject.set(x, "utc", js.undefined)
+      inline def setDatesUndefined: Self = StObject.set(x, "dates", js.undefined)
+      
+      inline def setDay(value: Double | String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      
+      inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+      
+      inline def setDays(value: Double | String): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+      
+      inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
+      
+      inline def setH(value: Double | String): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      
+      inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+      
+      inline def setHour(value: Double | String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      
+      inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
+      
+      inline def setHours(value: Double | String): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+      
+      inline def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
+      
+      inline def setM(value: Double | String): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
+      
+      inline def setMUndefined: Self = StObject.set(x, "M", js.undefined)
+      
+      inline def setMillisecond(value: Double | String): Self = StObject.set(x, "millisecond", value.asInstanceOf[js.Any])
+      
+      inline def setMillisecondUndefined: Self = StObject.set(x, "millisecond", js.undefined)
+      
+      inline def setMilliseconds(value: Double | String): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
+      
+      inline def setMillisecondsUndefined: Self = StObject.set(x, "milliseconds", js.undefined)
+      
+      inline def setMinute(value: Double | String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      
+      inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
+      
+      inline def setMinutes(value: Double | String): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+      
+      inline def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
+      
+      inline def setMonth(value: Double | String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      
+      inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+      
+      inline def setMonths(value: Double | String): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      
+      inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
+      
+      inline def setMs(value: Double | String): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
+      
+      inline def setMsUndefined: Self = StObject.set(x, "ms", js.undefined)
+      
+      inline def setS(value: Double | String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      
+      inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+      
+      inline def setSecond(value: Double | String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      
+      inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+      
+      inline def setSeconds(value: Double | String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      
+      inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+      
+      inline def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      
+      inline def setYear(value: Double | String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      
+      inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+      
+      inline def setYears(value: Double | String): Self = StObject.set(x, "years", value.asInstanceOf[js.Any])
+      
+      inline def setYearsUndefined: Self = StObject.set(x, "years", js.undefined)
     }
   }
   
@@ -79,11 +201,11 @@ object anon {
       
       inline def setMonthsShortUndefined: Self = StObject.set(x, "monthsShort", js.undefined)
       
-      inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
+      inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value*))
       
       inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
       
-      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -107,17 +229,17 @@ object anon {
       
       inline def setWeekdaysMinUndefined: Self = StObject.set(x, "weekdaysMin", js.undefined)
       
-      inline def setWeekdaysMinVarargs(value: String*): Self = StObject.set(x, "weekdaysMin", js.Array(value :_*))
+      inline def setWeekdaysMinVarargs(value: String*): Self = StObject.set(x, "weekdaysMin", js.Array(value*))
       
       inline def setWeekdaysShort(value: js.Array[String]): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
       
       inline def setWeekdaysShortUndefined: Self = StObject.set(x, "weekdaysShort", js.undefined)
       
-      inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
+      inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value*))
       
       inline def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
       
-      inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
+      inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value*))
     }
   }
   

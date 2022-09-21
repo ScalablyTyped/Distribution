@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api stable
   */
-class Geolocation () extends Object {
+open class Geolocation () extends Object {
   def this(opt_options: GeolocationOptions) = this()
   
   /**

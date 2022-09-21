@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "OrderCreatedObject")
 @js.native
-class OrderCreatedObject () extends StObject {
+open class OrderCreatedObject () extends StObject {
   
   /**
     * Information about the created order.

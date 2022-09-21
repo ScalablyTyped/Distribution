@@ -36,11 +36,11 @@ trait DescribeStateMachineForExecutionOutput extends StObject {
   /**
     * The date and time the state machine associated with an execution was updated. For a newly created state machine, this is the creation date.
     */
-  var updateDate: Timestamp
+  var updateDate: js.Date
 }
 object DescribeStateMachineForExecutionOutput {
   
-  inline def apply(definition: Definition, name: Name, roleArn: Arn, stateMachineArn: Arn, updateDate: Timestamp): DescribeStateMachineForExecutionOutput = {
+  inline def apply(definition: Definition, name: Name, roleArn: Arn, stateMachineArn: Arn, updateDate: js.Date): DescribeStateMachineForExecutionOutput = {
     val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], stateMachineArn = stateMachineArn.asInstanceOf[js.Any], updateDate = updateDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStateMachineForExecutionOutput]
   }
@@ -63,6 +63,6 @@ object DescribeStateMachineForExecutionOutput {
     
     inline def setTracingConfigurationUndefined: Self = StObject.set(x, "tracingConfiguration", js.undefined)
     
-    inline def setUpdateDate(value: Timestamp): Self = StObject.set(x, "updateDate", value.asInstanceOf[js.Any])
+    inline def setUpdateDate(value: js.Date): Self = StObject.set(x, "updateDate", value.asInstanceOf[js.Any])
   }
 }

@@ -12,7 +12,7 @@ object imageManifestMod {
   
   @JSImport("diva.js/image-manifest", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ImageManifest {
     def this(data: ManifestData, urlAdapter: IIIFSourceAdapter) = this()
@@ -27,7 +27,7 @@ object imageManifestMod {
     inline def fromIIIF(iiifManifest: js.Object): ImageManifest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIIIF")(iiifManifest.asInstanceOf[js.Any]).asInstanceOf[ImageManifest]
   }
   
-  type IIIFSourceAdapter = js.Any
+  type IIIFSourceAdapter = Any
   
   @js.native
   trait ImageManifest extends StObject {

@@ -11,7 +11,7 @@ object componentInitOrderTableMod {
   
   @JSImport("wonder.js/dist/es2015/component/data/ComponentInitOrderTable", "ComponentInitOrderTable")
   @js.native
-  class ComponentInitOrderTable () extends StObject
+  open class ComponentInitOrderTable () extends StObject
   /* static members */
   object ComponentInitOrderTable {
     

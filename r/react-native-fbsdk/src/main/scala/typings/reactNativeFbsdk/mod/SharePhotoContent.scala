@@ -50,6 +50,6 @@ object SharePhotoContent {
     
     inline def setPhotos(value: js.Array[SharePhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
-    inline def setPhotosVarargs(value: SharePhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: SharePhoto*): Self = StObject.set(x, "photos", js.Array(value*))
   }
 }

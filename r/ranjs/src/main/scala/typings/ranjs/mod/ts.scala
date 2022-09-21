@@ -10,7 +10,7 @@ object ts {
   
   @JSImport("ranjs", "ts.AC")
   @js.native
-  class AC ()
+  open class AC ()
     extends StObject
        with Commons {
     def this(dimension: Double) = this()
@@ -32,7 +32,7 @@ object ts {
   
   @JSImport("ranjs", "ts.Cov")
   @js.native
-  class Cov ()
+  open class Cov ()
     extends StObject
        with Commons {
     def this(dimension: Double) = this()

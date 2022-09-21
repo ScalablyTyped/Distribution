@@ -10,25 +10,25 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the rule of the top/bottom conditional format.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 trait ConditionalTopBottomRule extends StObject {
   
   /**
-    *
     * The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var rank: Double
   
   /**
-    *
     * Format values based on the top or bottom rank.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var `type`: ConditionalTopBottomCriterionType | Invalid | TopItems | TopPercent | BottomItems | BottomPercent

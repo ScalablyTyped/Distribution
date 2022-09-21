@@ -29,6 +29,6 @@ object SigningImageFormat {
     
     inline def setSupportedFormats(value: ImageFormats): Self = StObject.set(x, "supportedFormats", value.asInstanceOf[js.Any])
     
-    inline def setSupportedFormatsVarargs(value: ImageFormat*): Self = StObject.set(x, "supportedFormats", js.Array(value :_*))
+    inline def setSupportedFormatsVarargs(value: ImageFormat*): Self = StObject.set(x, "supportedFormats", js.Array(value*))
   }
 }

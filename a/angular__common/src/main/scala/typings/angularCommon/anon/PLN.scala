@@ -23,14 +23,14 @@ object PLN {
     
     inline def setAUD(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     
-    inline def setAUDVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "AUD", js.Array(value :_*))
+    inline def setAUDVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "AUD", js.Array(value*))
     
     inline def setPLN(value: js.Array[String]): Self = StObject.set(x, "PLN", value.asInstanceOf[js.Any])
     
-    inline def setPLNVarargs(value: String*): Self = StObject.set(x, "PLN", js.Array(value :_*))
+    inline def setPLNVarargs(value: String*): Self = StObject.set(x, "PLN", js.Array(value*))
     
     inline def setTHB(value: js.Array[String]): Self = StObject.set(x, "THB", value.asInstanceOf[js.Any])
     
-    inline def setTHBVarargs(value: String*): Self = StObject.set(x, "THB", js.Array(value :_*))
+    inline def setTHBVarargs(value: String*): Self = StObject.set(x, "THB", js.Array(value*))
   }
 }

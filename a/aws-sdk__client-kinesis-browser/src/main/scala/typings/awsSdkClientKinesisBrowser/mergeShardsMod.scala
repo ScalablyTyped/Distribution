@@ -8,5 +8,5 @@ object mergeShardsMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/MergeShards", "MergeShards")
   @js.native
-  val MergeShards: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val MergeShards: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

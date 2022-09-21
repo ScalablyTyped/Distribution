@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.MenuItem")
 @js.native
-class MenuItem protected ()
+open class MenuItem protected ()
   extends StObject
      with typings.bmapgl.BMapGL.MenuItem {
   def this(text: String, callback: js.Function1[/* point */ typings.bmapgl.BMapGL.Point, Unit]) = this()

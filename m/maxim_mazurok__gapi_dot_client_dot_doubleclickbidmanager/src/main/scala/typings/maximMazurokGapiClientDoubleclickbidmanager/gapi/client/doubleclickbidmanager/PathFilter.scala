@@ -9,7 +9,7 @@ trait PathFilter extends StObject {
   /** Filter on an event to be applied to some part of the path. */
   var eventFilters: js.UndefOr[js.Array[EventFilter]] = js.undefined
   
-  /** Indicates the position of the path the filter should match to (first, last, or any event in path). */
+  /** The position of the path the filter should match to (first, last, or any event in path). */
   var pathMatchPosition: js.UndefOr[String] = js.undefined
 }
 object PathFilter {
@@ -25,7 +25,7 @@ object PathFilter {
     
     inline def setEventFiltersUndefined: Self = StObject.set(x, "eventFilters", js.undefined)
     
-    inline def setEventFiltersVarargs(value: EventFilter*): Self = StObject.set(x, "eventFilters", js.Array(value :_*))
+    inline def setEventFiltersVarargs(value: EventFilter*): Self = StObject.set(x, "eventFilters", js.Array(value*))
     
     inline def setPathMatchPosition(value: String): Self = StObject.set(x, "pathMatchPosition", value.asInstanceOf[js.Any])
     

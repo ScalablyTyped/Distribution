@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.ErrorEvent")
 @js.native
-class ErrorEvent ()
+open class ErrorEvent ()
   extends StObject
      with typings.preloadjs.createjs.ErrorEvent {
   def this(title: String) = this()

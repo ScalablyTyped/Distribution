@@ -23,6 +23,8 @@ object anon {
     var PLANE: Double
     
     var SPHERE: Double
+    
+    var TRIMESH: Double
   }
   object BOX {
     
@@ -34,9 +36,10 @@ object anon {
       HEIGHTFIELD: Double,
       PARTICLE: Double,
       PLANE: Double,
-      SPHERE: Double
+      SPHERE: Double,
+      TRIMESH: Double
     ): BOX = {
-      val __obj = js.Dynamic.literal(BOX = BOX.asInstanceOf[js.Any], COMPOUND = COMPOUND.asInstanceOf[js.Any], CONVEXPOLYHEDRON = CONVEXPOLYHEDRON.asInstanceOf[js.Any], CYLINDER = CYLINDER.asInstanceOf[js.Any], HEIGHTFIELD = HEIGHTFIELD.asInstanceOf[js.Any], PARTICLE = PARTICLE.asInstanceOf[js.Any], PLANE = PLANE.asInstanceOf[js.Any], SPHERE = SPHERE.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(BOX = BOX.asInstanceOf[js.Any], COMPOUND = COMPOUND.asInstanceOf[js.Any], CONVEXPOLYHEDRON = CONVEXPOLYHEDRON.asInstanceOf[js.Any], CYLINDER = CYLINDER.asInstanceOf[js.Any], HEIGHTFIELD = HEIGHTFIELD.asInstanceOf[js.Any], PARTICLE = PARTICLE.asInstanceOf[js.Any], PLANE = PLANE.asInstanceOf[js.Any], SPHERE = SPHERE.asInstanceOf[js.Any], TRIMESH = TRIMESH.asInstanceOf[js.Any])
       __obj.asInstanceOf[BOX]
     }
     
@@ -57,6 +60,8 @@ object anon {
       inline def setPLANE(value: Double): Self = StObject.set(x, "PLANE", value.asInstanceOf[js.Any])
       
       inline def setSPHERE(value: Double): Self = StObject.set(x, "SPHERE", value.asInstanceOf[js.Any])
+      
+      inline def setTRIMESH(value: Double): Self = StObject.set(x, "TRIMESH", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,20 +106,20 @@ object anon {
   
   trait Keys extends StObject {
     
-    var keys: js.Array[js.Any]
+    var keys: js.Array[Any]
   }
   object Keys {
     
-    inline def apply(keys: js.Array[js.Any]): Keys = {
+    inline def apply(keys: js.Array[Any]): Keys = {
       val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
       __obj.asInstanceOf[Keys]
     }
     
     extension [Self <: Keys](x: Self) {
       
-      inline def setKeys(value: js.Array[js.Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: js.Array[Any]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      inline def setKeysVarargs(value: js.Any*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: Any*): Self = StObject.set(x, "keys", js.Array(value*))
     }
   }
 }

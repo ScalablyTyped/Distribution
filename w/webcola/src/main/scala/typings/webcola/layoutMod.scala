@@ -39,49 +39,49 @@ object layoutMod {
   
   @JSImport("webcola/dist/src/layout", "Layout")
   @js.native
-  class Layout () extends StObject {
+  open class Layout () extends StObject {
     
-    /* private */ var _alpha: js.Any = js.native
+    /* private */ var _alpha: Any = js.native
     
-    /* private */ var _avoidOverlaps: js.Any = js.native
+    /* private */ var _avoidOverlaps: Any = js.native
     
-    /* private */ var _canvasSize: js.Any = js.native
+    /* private */ var _canvasSize: Any = js.native
     
-    /* private */ var _constraints: js.Any = js.native
+    /* private */ var _constraints: Any = js.native
     
-    /* private */ var _defaultNodeSize: js.Any = js.native
+    /* private */ var _defaultNodeSize: Any = js.native
     
-    /* private */ var _descent: js.Any = js.native
+    /* private */ var _descent: Any = js.native
     
-    /* private */ var _directedLinkConstraints: js.Any = js.native
+    /* private */ var _directedLinkConstraints: Any = js.native
     
-    /* private */ var _distanceMatrix: js.Any = js.native
+    /* private */ var _distanceMatrix: Any = js.native
     
-    /* private */ var _groupCompactness: js.Any = js.native
+    /* private */ var _groupCompactness: Any = js.native
     
-    /* private */ var _groups: js.Any = js.native
+    /* private */ var _groups: Any = js.native
     
-    /* private */ var _handleDisconnected: js.Any = js.native
+    /* private */ var _handleDisconnected: Any = js.native
     
-    /* private */ var _lastStress: js.Any = js.native
+    /* private */ var _lastStress: Any = js.native
     
-    /* private */ var _linkDistance: js.Any = js.native
+    /* private */ var _linkDistance: Any = js.native
     
-    /* private */ var _linkLengthCalculator: js.Any = js.native
+    /* private */ var _linkLengthCalculator: Any = js.native
     
-    /* private */ var _linkType: js.Any = js.native
+    /* private */ var _linkType: Any = js.native
     
-    /* private */ var _links: js.Any = js.native
+    /* private */ var _links: Any = js.native
     
-    /* private */ var _nodes: js.Any = js.native
+    /* private */ var _nodes: Any = js.native
     
-    /* private */ var _rootGroup: js.Any = js.native
+    /* private */ var _rootGroup: Any = js.native
     
-    /* private */ var _running: js.Any = js.native
+    /* private */ var _running: Any = js.native
     
-    /* private */ var _threshold: js.Any = js.native
+    /* private */ var _threshold: Any = js.native
     
-    /* private */ var _visibilityGraph: js.Any = js.native
+    /* private */ var _visibilityGraph: Any = js.native
     
     def alpha(): Double = js.native
     def alpha(x: Double): this.type = js.native
@@ -89,8 +89,8 @@ object layoutMod {
     def avoidOverlaps(): Boolean = js.native
     def avoidOverlaps(v: Boolean): this.type = js.native
     
-    def constraints(): js.Array[js.Any] = js.native
-    def constraints(c: js.Array[js.Any]): this.type = js.native
+    def constraints(): js.Array[Any] = js.native
+    def constraints(c: js.Array[Any]): this.type = js.native
     
     def convergenceThreshold(): Double = js.native
     def convergenceThreshold(x: Double): this.type = js.native
@@ -101,9 +101,9 @@ object layoutMod {
     def distanceMatrix(): js.Array[js.Array[Double]] = js.native
     def distanceMatrix(d: js.Array[js.Array[Double]]): this.type = js.native
     
-    /* protected */ var event: js.Any = js.native
+    /* protected */ var event: Any = js.native
     
-    def flowLayout(axis: String, minSeparation: js.Function1[/* t */ js.Any, Double]): this.type = js.native
+    def flowLayout(axis: String, minSeparation: js.Function1[/* t */ Any, Double]): this.type = js.native
     def flowLayout(axis: String, minSeparation: Double): this.type = js.native
     
     def getLinkLength(link: Link[Node | Double]): Double = js.native
@@ -119,7 +119,7 @@ object layoutMod {
     def handleDisconnected(): Boolean = js.native
     def handleDisconnected(v: Boolean): this.type = js.native
     
-    /* private */ var initialLayout: js.Any = js.native
+    /* private */ var initialLayout: Any = js.native
     
     def jaccardLinkLengths(idealLength: Double): this.type = js.native
     def jaccardLinkLengths(idealLength: Double, w: Double): this.type = js.native
@@ -153,9 +153,9 @@ object layoutMod {
     
     def resume(): this.type = js.native
     
-    def routeEdge(edge: js.Any, ah: Double, draw: js.Any): js.Array[js.Any] = js.native
+    def routeEdge(edge: Any, ah: Double, draw: Any): js.Array[Any] = js.native
     
-    /* private */ var separateOverlappingComponents: js.Any = js.native
+    /* private */ var separateOverlappingComponents: Any = js.native
     
     def size(): js.Array[Double] = js.native
     def size(x: js.Array[Double]): this.type = js.native
@@ -178,7 +178,7 @@ object layoutMod {
     
     /* protected */ def trigger(e: Event): Unit = js.native
     
-    /* private */ var updateNodePositions: js.Any = js.native
+    /* private */ var updateNodePositions: Any = js.native
   }
   /* static members */
   object Layout {
@@ -190,7 +190,7 @@ object layoutMod {
     inline def drag(d: Group, position: X): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drag")(d.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def drag(d: Node, position: X): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drag")(d.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def dragEnd(d: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragEnd")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def dragEnd(d: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragEnd")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def dragOrigin(d: Group): X = ^.asInstanceOf[js.Dynamic].applyDynamic("dragOrigin")(d.asInstanceOf[js.Any]).asInstanceOf[X]
     inline def dragOrigin(d: Node): X = ^.asInstanceOf[js.Dynamic].applyDynamic("dragOrigin")(d.asInstanceOf[js.Any]).asInstanceOf[X]
@@ -204,21 +204,21 @@ object layoutMod {
     
     inline def linkId(e: Link[Node | Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("linkId")(e.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def mouseOut(d: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOut")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def mouseOut(d: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOut")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def mouseOver(d: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOver")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def mouseOver(d: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOver")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def setLinkLength(link: Link[Node | Double], length: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLinkLength")(link.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("webcola/dist/src/layout", "Layout.stopNode")
     @js.native
-    def stopNode: js.Any = js.native
-    inline def stopNode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stopNode")(x.asInstanceOf[js.Any])
+    def stopNode: Any = js.native
+    inline def stopNode_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stopNode")(x.asInstanceOf[js.Any])
     
     @JSImport("webcola/dist/src/layout", "Layout.storeOffset")
     @js.native
-    def storeOffset: js.Any = js.native
-    inline def storeOffset_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storeOffset")(x.asInstanceOf[js.Any])
+    def storeOffset: Any = js.native
+    inline def storeOffset_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storeOffset")(x.asInstanceOf[js.Any])
   }
   
   trait Event extends StObject {
@@ -282,13 +282,13 @@ object layoutMod {
       
       inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setLeaves(value: js.Array[Node]): Self = StObject.set(x, "leaves", value.asInstanceOf[js.Any])
       
       inline def setLeavesUndefined: Self = StObject.set(x, "leaves", js.undefined)
       
-      inline def setLeavesVarargs(value: Node*): Self = StObject.set(x, "leaves", js.Array(value :_*))
+      inline def setLeavesVarargs(value: Node*): Self = StObject.set(x, "leaves", js.Array(value*))
       
       inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     }

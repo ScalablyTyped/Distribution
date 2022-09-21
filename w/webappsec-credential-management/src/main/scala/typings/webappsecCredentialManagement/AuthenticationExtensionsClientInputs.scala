@@ -1,7 +1,5 @@
 package typings.webappsecCredentialManagement
 
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +8,7 @@ trait AuthenticationExtensionsClientInputs extends StObject {
   
   var appid: js.UndefOr[String] = js.undefined
   
-  var authnSel: js.UndefOr[js.Array[ArrayBufferView | ArrayBuffer]] = js.undefined
+  var authnSel: js.UndefOr[js.Array[js.typedarray.ArrayBufferView | js.typedarray.ArrayBuffer]] = js.undefined
   
   var exts: js.UndefOr[Boolean] = js.undefined
   
@@ -37,11 +35,11 @@ object AuthenticationExtensionsClientInputs {
     
     inline def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
     
-    inline def setAuthnSel(value: js.Array[ArrayBufferView | ArrayBuffer]): Self = StObject.set(x, "authnSel", value.asInstanceOf[js.Any])
+    inline def setAuthnSel(value: js.Array[js.typedarray.ArrayBufferView | js.typedarray.ArrayBuffer]): Self = StObject.set(x, "authnSel", value.asInstanceOf[js.Any])
     
     inline def setAuthnSelUndefined: Self = StObject.set(x, "authnSel", js.undefined)
     
-    inline def setAuthnSelVarargs(value: (ArrayBufferView | ArrayBuffer)*): Self = StObject.set(x, "authnSel", js.Array(value :_*))
+    inline def setAuthnSelVarargs(value: (js.typedarray.ArrayBufferView | js.typedarray.ArrayBuffer)*): Self = StObject.set(x, "authnSel", js.Array(value*))
     
     inline def setExts(value: Boolean): Self = StObject.set(x, "exts", value.asInstanceOf[js.Any])
     

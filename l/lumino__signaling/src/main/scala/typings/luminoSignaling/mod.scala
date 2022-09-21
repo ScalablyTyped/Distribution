@@ -1,6 +1,5 @@
 package typings.luminoSignaling
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object mod {
   
   @JSImport("@lumino/signaling", "Signal")
   @js.native
-  class Signal[T, U] protected ()
+  open class Signal[T, U] protected ()
     extends StObject
        with ISignal[T, U] {
     /**
@@ -51,7 +50,7 @@ object mod {
       * This removes all signal connections and any other signal data
       * associated with the object.
       */
-    inline def clearData(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearData")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def clearData(`object`: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearData")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Remove all connections where an object is the sender or receiver.
@@ -63,7 +62,7 @@ object mod {
       * is considered the receiver. Otherwise, the `slot` is considered
       * the receiver.
       */
-    inline def disconnectAll(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectAll")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def disconnectAll(`object`: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectAll")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Remove all connections between a sender and receiver.
@@ -77,7 +76,7 @@ object mod {
       * is considered the receiver. Otherwise, the `slot` is considered
       * the receiver.
       */
-    inline def disconnectBetween(sender: js.Any, receiver: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnectBetween")(sender.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def disconnectBetween(sender: Any, receiver: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("disconnectBetween")(sender.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Remove all connections where the given object is the receiver.
@@ -89,14 +88,14 @@ object mod {
       * is considered the receiver. Otherwise, the `slot` is considered
       * the receiver.
       */
-    inline def disconnectReceiver(receiver: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectReceiver")(receiver.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def disconnectReceiver(receiver: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectReceiver")(receiver.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Remove all connections where the given object is the sender.
       *
       * @param sender - The sender object of interest.
       */
-    inline def disconnectSender(sender: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectSender")(sender.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def disconnectSender(sender: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnectSender")(sender.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Get the signal exception handler.
@@ -123,7 +122,7 @@ object mod {
     /**
       * A type alias for the exception handler function.
       */
-    type ExceptionHandler = js.Function1[/* err */ Error, Unit]
+    type ExceptionHandler = js.Function1[/* err */ js.Error, Unit]
   }
   
   @js.native
@@ -150,7 +149,7 @@ object mod {
       * is dispatching.
       */
     def connect(slot: Slot[T, U]): Boolean = js.native
-    def connect(slot: Slot[T, U], thisArg: js.Any): Boolean = js.native
+    def connect(slot: Slot[T, U], thisArg: Any): Boolean = js.native
     
     /**
       * Disconnect a slot from the signal.
@@ -170,7 +169,7 @@ object mod {
       * is disconnected while the signal is dispatching.
       */
     def disconnect(slot: Slot[T, U]): Boolean = js.native
-    def disconnect(slot: Slot[T, U], thisArg: js.Any): Boolean = js.native
+    def disconnect(slot: Slot[T, U], thisArg: Any): Boolean = js.native
   }
   
   type Slot[T, U] = js.Function2[/* sender */ T, /* args */ U, Unit]

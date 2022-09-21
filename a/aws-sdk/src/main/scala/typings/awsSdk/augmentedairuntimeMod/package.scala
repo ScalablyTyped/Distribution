@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.FreeOfAdultContent
   - java.lang.String
 */
-type ContentClassifier = typings.awsSdk.augmentedairuntimeMod._ContentClassifier | java.lang.String
+type ContentClassifier = _ContentClassifier | java.lang.String
 
-type ContentClassifiers = js.Array[typings.awsSdk.augmentedairuntimeMod.ContentClassifier]
+type ContentClassifiers = js.Array[ContentClassifier]
 
 type FailureReason = java.lang.String
 
@@ -30,13 +30,13 @@ type HumanLoopName = java.lang.String
   - typings.awsSdk.awsSdkStrings.Stopping_
   - java.lang.String
 */
-type HumanLoopStatus = typings.awsSdk.augmentedairuntimeMod._HumanLoopStatus | java.lang.String
+type HumanLoopStatus = _HumanLoopStatus | java.lang.String
 
-type HumanLoopSummaries = js.Array[typings.awsSdk.augmentedairuntimeMod.HumanLoopSummary]
+type HumanLoopSummaries = js.Array[HumanLoopSummary]
 
 type InputContent = java.lang.String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
 type NextToken = java.lang.String
 
@@ -45,15 +45,15 @@ type NextToken = java.lang.String
   - typings.awsSdk.awsSdkStrings.Descending_
   - java.lang.String
 */
-type SortOrder = typings.awsSdk.augmentedairuntimeMod._SortOrder | java.lang.String
+type SortOrder = _SortOrder | java.lang.String
 
 type String = java.lang.String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-11-07`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.augmentedairuntimeMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

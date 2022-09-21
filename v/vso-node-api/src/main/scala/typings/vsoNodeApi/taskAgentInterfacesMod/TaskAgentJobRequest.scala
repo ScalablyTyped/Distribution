@@ -1,22 +1,21 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TaskAgentJobRequest extends StObject {
   
-  var assignTime: Date
+  var assignTime: js.Date
   
   var data: StringDictionary[String]
   
   var definition: TaskOrchestrationOwner
   
-  var demands: js.Array[js.Any]
+  var demands: js.Array[Any]
   
-  var finishTime: Date
+  var finishTime: js.Date
   
   var hostId: String
   
@@ -24,7 +23,7 @@ trait TaskAgentJobRequest extends StObject {
   
   var jobName: String
   
-  var lockedUntil: Date
+  var lockedUntil: js.Date
   
   var matchedAgents: js.Array[TaskAgentReference]
   
@@ -34,9 +33,9 @@ trait TaskAgentJobRequest extends StObject {
   
   var planType: String
   
-  var queueTime: Date
+  var queueTime: js.Date
   
-  var receiveTime: Date
+  var receiveTime: js.Date
   
   var requestId: Double
   
@@ -51,21 +50,21 @@ trait TaskAgentJobRequest extends StObject {
 object TaskAgentJobRequest {
   
   inline def apply(
-    assignTime: Date,
+    assignTime: js.Date,
     data: StringDictionary[String],
     definition: TaskOrchestrationOwner,
-    demands: js.Array[js.Any],
-    finishTime: Date,
+    demands: js.Array[Any],
+    finishTime: js.Date,
     hostId: String,
     jobId: String,
     jobName: String,
-    lockedUntil: Date,
+    lockedUntil: js.Date,
     matchedAgents: js.Array[TaskAgentReference],
     owner: TaskOrchestrationOwner,
     planId: String,
     planType: String,
-    queueTime: Date,
-    receiveTime: Date,
+    queueTime: js.Date,
+    receiveTime: js.Date,
     requestId: Double,
     reservedAgent: TaskAgentReference,
     result: TaskResult,
@@ -78,17 +77,17 @@ object TaskAgentJobRequest {
   
   extension [Self <: TaskAgentJobRequest](x: Self) {
     
-    inline def setAssignTime(value: Date): Self = StObject.set(x, "assignTime", value.asInstanceOf[js.Any])
+    inline def setAssignTime(value: js.Date): Self = StObject.set(x, "assignTime", value.asInstanceOf[js.Any])
     
     inline def setData(value: StringDictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDefinition(value: TaskOrchestrationOwner): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    inline def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    inline def setDemands(value: js.Array[Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
-    inline def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
+    inline def setDemandsVarargs(value: Any*): Self = StObject.set(x, "demands", js.Array(value*))
     
-    inline def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: js.Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
     inline def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
     
@@ -96,11 +95,11 @@ object TaskAgentJobRequest {
     
     inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    inline def setLockedUntil(value: Date): Self = StObject.set(x, "lockedUntil", value.asInstanceOf[js.Any])
+    inline def setLockedUntil(value: js.Date): Self = StObject.set(x, "lockedUntil", value.asInstanceOf[js.Any])
     
     inline def setMatchedAgents(value: js.Array[TaskAgentReference]): Self = StObject.set(x, "matchedAgents", value.asInstanceOf[js.Any])
     
-    inline def setMatchedAgentsVarargs(value: TaskAgentReference*): Self = StObject.set(x, "matchedAgents", js.Array(value :_*))
+    inline def setMatchedAgentsVarargs(value: TaskAgentReference*): Self = StObject.set(x, "matchedAgents", js.Array(value*))
     
     inline def setOwner(value: TaskOrchestrationOwner): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
@@ -108,9 +107,9 @@ object TaskAgentJobRequest {
     
     inline def setPlanType(value: String): Self = StObject.set(x, "planType", value.asInstanceOf[js.Any])
     
-    inline def setQueueTime(value: Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
+    inline def setQueueTime(value: js.Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
     
-    inline def setReceiveTime(value: Date): Self = StObject.set(x, "receiveTime", value.asInstanceOf[js.Any])
+    inline def setReceiveTime(value: js.Date): Self = StObject.set(x, "receiveTime", value.asInstanceOf[js.Any])
     
     inline def setRequestId(value: Double): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     

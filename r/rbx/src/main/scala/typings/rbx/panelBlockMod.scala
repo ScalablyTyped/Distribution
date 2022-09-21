@@ -53,7 +53,7 @@ object panelBlockMod {
   
   @JSImport("rbx/components/panel/panel-block", "PanelBlock")
   @js.native
-  val PanelBlock: ForwardRefAsExoticComponent[PanelBlockProps, ElementType[js.Any]] = js.native
+  val PanelBlock: ForwardRefAsExoticComponent[PanelBlockProps, ElementType[Any]] = js.native
   
   trait PanelBlockModifierProps extends StObject {
     

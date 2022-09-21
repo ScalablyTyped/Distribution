@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "js-sha512" : "0.8.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "js-sha512" : "0.8.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

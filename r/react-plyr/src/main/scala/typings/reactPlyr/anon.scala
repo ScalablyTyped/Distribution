@@ -73,7 +73,7 @@ object anon {
       
       inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
       
-      inline def setOptionVarargs(value: (Double | String)*): Self = StObject.set(x, "option", js.Array(value :_*))
+      inline def setOptionVarargs(value: (Double | String)*): Self = StObject.set(x, "option", js.Array(value*))
     }
   }
   
@@ -162,7 +162,7 @@ object anon {
     
     var default: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[js.Any] = js.undefined
+    var key: js.UndefOr[Any] = js.undefined
     
     var kind: js.UndefOr[String] = js.undefined
     
@@ -185,7 +185,7 @@ object anon {
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
@@ -224,7 +224,7 @@ object anon {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: Double*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: Double*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       

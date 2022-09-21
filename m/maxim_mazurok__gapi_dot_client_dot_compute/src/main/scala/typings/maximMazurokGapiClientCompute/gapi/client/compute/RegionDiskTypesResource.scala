@@ -1,7 +1,7 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientCompute.anon.AltDiskType
+import typings.maximMazurokGapiClientCompute.anon.CallbackDiskType
 import typings.maximMazurokGapiClientCompute.anon.Filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait RegionDiskTypesResource extends StObject {
   
   /** Returns the specified regional disk type. Gets a list of available disk types by making a list() request. */
   def get(): Request[DiskType] = js.native
-  def get(request: AltDiskType): Request[DiskType] = js.native
+  def get(request: CallbackDiskType): Request[DiskType] = js.native
   
   /** Retrieves a list of regional disk types available to the specified project. */
   def list(): Request[RegionDiskTypeList] = js.native

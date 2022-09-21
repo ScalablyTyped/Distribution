@@ -1,7 +1,5 @@
 package typings.httperr.mod
 
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,23 +8,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("httperr", "HttpError")
 @js.native
-class HttpErrorCls ()
+open class HttpErrorCls ()
   extends StObject
      with HttpError {
   def this(config: String) = this()
+  def this(config: js.Error) = this()
   def this(config: Config) = this()
-  def this(config: Error) = this()
   def this(config: String, extra: js.Object) = this()
+  def this(config: js.Error, extra: js.Object) = this()
   def this(config: Unit, extra: js.Object) = this()
   def this(config: Config, extra: js.Object) = this()
-  def this(config: Error, extra: js.Object) = this()
   
   /* CompleteClass */
   var code: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
   
@@ -39,5 +39,5 @@ class HttpErrorCls ()
   var title: String = js.native
   
   /* CompleteClass */
-  override def toObject(skip: (String | RegExp)*): js.Any = js.native
+  override def toObject(skip: (String | js.RegExp)*): Any = js.native
 }

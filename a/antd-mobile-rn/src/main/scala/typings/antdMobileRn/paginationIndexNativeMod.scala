@@ -16,7 +16,7 @@ object paginationIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/pagination/index.native", JSImport.Default)
   @js.native
-  class default protected () extends Pagination {
+  open class default protected () extends Pagination {
     def this(props: PaginationNativeProps) = this()
   }
   /* static members */
@@ -38,8 +38,7 @@ object paginationIndexNativeMod {
   }
   
   @js.native
-  trait Pagination
-    extends Component[PaginationNativeProps, PaginationState, js.Any] {
+  trait Pagination extends Component[PaginationNativeProps, PaginationState, Any] {
     
     @JSName("componentWillReceiveProps")
     def componentWillReceiveProps_MPagination(nextProps: PaginationNativeProps): Unit = js.native

@@ -20,7 +20,7 @@ trait DateOptions
     * Enable dates that fall within a range of disabled dates by
     * adding an `inverted` parameter to the item within the collection.
     */
-  var disable: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var disable: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * The first day of the week can be set to either Sunday or Monday.
@@ -105,11 +105,11 @@ object DateOptions {
     
     inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    inline def setDisable(value: js.Array[js.Any]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    inline def setDisable(value: js.Array[Any]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
     inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
-    inline def setDisableVarargs(value: js.Any*): Self = StObject.set(x, "disable", js.Array(value :_*))
+    inline def setDisableVarargs(value: Any*): Self = StObject.set(x, "disable", js.Array(value*))
     
     inline def setFirstDay(value: Boolean | Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
     
@@ -147,13 +147,13 @@ object DateOptions {
     
     inline def setMonthsFullUndefined: Self = StObject.set(x, "monthsFull", js.undefined)
     
-    inline def setMonthsFullVarargs(value: String*): Self = StObject.set(x, "monthsFull", js.Array(value :_*))
+    inline def setMonthsFullVarargs(value: String*): Self = StObject.set(x, "monthsFull", js.Array(value*))
     
     inline def setMonthsShort(value: js.Array[String]): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
     
     inline def setMonthsShortUndefined: Self = StObject.set(x, "monthsShort", js.undefined)
     
-    inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
+    inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value*))
     
     inline def setSelectMonths(value: Boolean): Self = StObject.set(x, "selectMonths", value.asInstanceOf[js.Any])
     
@@ -179,12 +179,12 @@ object DateOptions {
     
     inline def setWeekdaysFullUndefined: Self = StObject.set(x, "weekdaysFull", js.undefined)
     
-    inline def setWeekdaysFullVarargs(value: String*): Self = StObject.set(x, "weekdaysFull", js.Array(value :_*))
+    inline def setWeekdaysFullVarargs(value: String*): Self = StObject.set(x, "weekdaysFull", js.Array(value*))
     
     inline def setWeekdaysShort(value: js.Array[String]): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
     
     inline def setWeekdaysShortUndefined: Self = StObject.set(x, "weekdaysShort", js.undefined)
     
-    inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
+    inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value*))
   }
 }

@@ -1,526 +1,147 @@
 package typings.jose
 
-import typings.jose.joseBooleans.`true`
-import typings.std.Date
+import typings.jose.typesMod.JWEHeaderParameters
+import typings.jose.typesMod.JWSHeaderParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  /* Inlined jose.jose.JWT.DecodeOptions & {  complete :true} */
-  trait DecodeOptionscompletetrue extends StObject {
+  trait D extends StObject {
     
-    var complete: js.UndefOr[Boolean] & `true`
+    var d: js.UndefOr[String] = js.undefined
+    
+    var r: js.UndefOr[String] = js.undefined
+    
+    var t: js.UndefOr[String] = js.undefined
   }
-  object DecodeOptionscompletetrue {
+  object D {
     
-    inline def apply(complete: js.UndefOr[Boolean] & `true`): DecodeOptionscompletetrue = {
-      val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DecodeOptionscompletetrue]
+    inline def apply(): D = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[D]
     }
     
-    extension [Self <: DecodeOptionscompletetrue](x: Self) {
+    extension [Self <: D](x: Self) {
       
-      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined jose.jose.JWE.DecryptOptions & {  complete :true} */
-  trait DecryptOptionscompletetru extends StObject {
-    
-    var complete: js.UndefOr[Boolean] & `true`
-    
-    var contentEncryptionAlgorithms: js.UndefOr[js.Array[String]] = js.undefined
-    
-    var crit: js.UndefOr[js.Array[String]] = js.undefined
-    
-    var keyManagementAlgorithms: js.UndefOr[js.Array[String]] = js.undefined
-  }
-  object DecryptOptionscompletetru {
-    
-    inline def apply(complete: js.UndefOr[Boolean] & `true`): DecryptOptionscompletetru = {
-      val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DecryptOptionscompletetru]
-    }
-    
-    extension [Self <: DecryptOptionscompletetru](x: Self) {
+      inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
-      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
       
-      inline def setContentEncryptionAlgorithms(value: js.Array[String]): Self = StObject.set(x, "contentEncryptionAlgorithms", value.asInstanceOf[js.Any])
+      inline def setR(value: String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      inline def setContentEncryptionAlgorithmsUndefined: Self = StObject.set(x, "contentEncryptionAlgorithms", js.undefined)
+      inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
       
-      inline def setContentEncryptionAlgorithmsVarargs(value: String*): Self = StObject.set(x, "contentEncryptionAlgorithms", js.Array(value :_*))
+      inline def setT(value: String): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
       
-      inline def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
-      
-      inline def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
-      
-      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
-      
-      inline def setKeyManagementAlgorithms(value: js.Array[String]): Self = StObject.set(x, "keyManagementAlgorithms", value.asInstanceOf[js.Any])
-      
-      inline def setKeyManagementAlgorithmsUndefined: Self = StObject.set(x, "keyManagementAlgorithms", js.undefined)
-      
-      inline def setKeyManagementAlgorithmsVarargs(value: String*): Self = StObject.set(x, "keyManagementAlgorithms", js.Array(value :_*))
+      inline def setTUndefined: Self = StObject.set(x, "t", js.undefined)
     }
   }
   
-  /* Inlined jose.jose.JWS.VerifyOptions & {  complete :true} */
-  trait VerifyOptionscompletetrue extends StObject {
+  /* Inlined std.Omit<jose.jose/dist/types/types.FlattenedJWSInput, 'payload'> */
+  trait OmitFlattenedJWSInputpayl extends StObject {
     
-    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
+    var header: js.UndefOr[JWSHeaderParameters] = js.undefined
     
-    var complete: js.UndefOr[Boolean] & `true`
+    var `protected`: js.UndefOr[String] = js.undefined
     
-    var crit: js.UndefOr[js.Array[String]] = js.undefined
+    var signature: String
   }
-  object VerifyOptionscompletetrue {
+  object OmitFlattenedJWSInputpayl {
     
-    inline def apply(complete: js.UndefOr[Boolean] & `true`): VerifyOptionscompletetrue = {
-      val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
-      __obj.asInstanceOf[VerifyOptionscompletetrue]
+    inline def apply(signature: String): OmitFlattenedJWSInputpayl = {
+      val __obj = js.Dynamic.literal(signature = signature.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OmitFlattenedJWSInputpayl]
     }
     
-    extension [Self <: VerifyOptionscompletetrue](x: Self) {
+    extension [Self <: OmitFlattenedJWSInputpayl](x: Self) {
       
-      inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+      inline def setHeader(value: JWSHeaderParameters): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setProtected(value: String): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
       
-      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setProtectedUndefined: Self = StObject.set(x, "protected", js.undefined)
       
-      inline def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
-      
-      inline def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
-      
-      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
+      inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined jose.jose.JWT.VerifyOptions & {  complete :true} */
-  trait VerifyOptionscompletetrueAlgorithms extends StObject {
+  /* Inlined std.Pick<jose.jose/dist/types/types.FlattenedJWE, 'encrypted_key' | 'header'> */
+  trait PickFlattenedJWEencrypted extends StObject {
     
-    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
+    var encrypted_key: js.UndefOr[String] = js.undefined
     
-    var audience: js.UndefOr[String | js.Array[String]] = js.undefined
-    
-    var clockTolerance: js.UndefOr[String] = js.undefined
-    
-    var complete: js.UndefOr[Boolean] & `true`
-    
-    var crit: js.UndefOr[js.Array[String]] = js.undefined
-    
-    var ignoreExp: js.UndefOr[Boolean] = js.undefined
-    
-    var ignoreIat: js.UndefOr[Boolean] = js.undefined
-    
-    var ignoreNbf: js.UndefOr[Boolean] = js.undefined
-    
-    var issuer: js.UndefOr[String | js.Array[String]] = js.undefined
-    
-    var jti: js.UndefOr[String] = js.undefined
-    
-    var maxTokenAge: js.UndefOr[String] = js.undefined
-    
-    var now: js.UndefOr[Date] = js.undefined
-    
-    var subject: js.UndefOr[String] = js.undefined
-    
-    var typ: js.UndefOr[String] = js.undefined
+    var header: js.UndefOr[JWEHeaderParameters] = js.undefined
   }
-  object VerifyOptionscompletetrueAlgorithms {
+  object PickFlattenedJWEencrypted {
     
-    inline def apply(complete: js.UndefOr[Boolean] & `true`): VerifyOptionscompletetrueAlgorithms = {
-      val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
-      __obj.asInstanceOf[VerifyOptionscompletetrueAlgorithms]
+    inline def apply(): PickFlattenedJWEencrypted = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PickFlattenedJWEencrypted]
     }
     
-    extension [Self <: VerifyOptionscompletetrueAlgorithms](x: Self) {
+    extension [Self <: PickFlattenedJWEencrypted](x: Self) {
       
-      inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+      inline def setEncrypted_key(value: String): Self = StObject.set(x, "encrypted_key", value.asInstanceOf[js.Any])
       
-      inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+      inline def setEncrypted_keyUndefined: Self = StObject.set(x, "encrypted_key", js.undefined)
       
-      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setHeader(value: JWEHeaderParameters): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      inline def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
-      
-      inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
-      
-      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
-      
-      inline def setClockTolerance(value: String): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
-      
-      inline def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
-      
-      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
-      
-      inline def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
-      
-      inline def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
-      
-      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
-      
-      inline def setIgnoreExp(value: Boolean): Self = StObject.set(x, "ignoreExp", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreExpUndefined: Self = StObject.set(x, "ignoreExp", js.undefined)
-      
-      inline def setIgnoreIat(value: Boolean): Self = StObject.set(x, "ignoreIat", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreIatUndefined: Self = StObject.set(x, "ignoreIat", js.undefined)
-      
-      inline def setIgnoreNbf(value: Boolean): Self = StObject.set(x, "ignoreNbf", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreNbfUndefined: Self = StObject.set(x, "ignoreNbf", js.undefined)
-      
-      inline def setIssuer(value: String | js.Array[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
-      
-      inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
-      
-      inline def setIssuerVarargs(value: String*): Self = StObject.set(x, "issuer", js.Array(value :_*))
-      
-      inline def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
-      
-      inline def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
-      
-      inline def setMaxTokenAge(value: String): Self = StObject.set(x, "maxTokenAge", value.asInstanceOf[js.Any])
-      
-      inline def setMaxTokenAgeUndefined: Self = StObject.set(x, "maxTokenAge", js.undefined)
-      
-      inline def setNow(value: Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
-      
-      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
-      
-      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
-      
-      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
-      
-      inline def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
-      
-      inline def setTypUndefined: Self = StObject.set(x, "typ", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     }
   }
   
-  /* Inlined jose.jose.JWT.VerifyOptions & {  complete :true} & jose.jose.JWT.IdTokenVerifyOptions */
-  trait VerifyOptionscompletetrueAudience extends StObject {
+  /* Inlined std.Pick<jose.jose/dist/types/types.JWK, 'kty' | 'crv' | 'x' | 'y' | 'e' | 'n'> */
+  trait PickJWKktycrvxyen extends StObject {
     
-    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
+    var crv: js.UndefOr[String] = js.undefined
     
-    var audience: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
+    var e: js.UndefOr[String] = js.undefined
     
-    var clockTolerance: js.UndefOr[String] = js.undefined
+    var kty: js.UndefOr[String] = js.undefined
     
-    var complete: js.UndefOr[Boolean] & `true`
+    var n: js.UndefOr[String] = js.undefined
     
-    var crit: js.UndefOr[js.Array[String]] = js.undefined
+    var x: js.UndefOr[String] = js.undefined
     
-    var ignoreExp: js.UndefOr[Boolean] = js.undefined
-    
-    var ignoreIat: js.UndefOr[Boolean] = js.undefined
-    
-    var ignoreNbf: js.UndefOr[Boolean] = js.undefined
-    
-    var issuer: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
-    
-    var jti: js.UndefOr[String] = js.undefined
-    
-    var maxAuthAge: js.UndefOr[String] = js.undefined
-    
-    var maxTokenAge: js.UndefOr[String] = js.undefined
-    
-    var nonce: js.UndefOr[String] = js.undefined
-    
-    var now: js.UndefOr[Date] = js.undefined
-    
-    var subject: js.UndefOr[String] = js.undefined
-    
-    var typ: js.UndefOr[String] = js.undefined
+    var y: js.UndefOr[String] = js.undefined
   }
-  object VerifyOptionscompletetrueAudience {
+  object PickJWKktycrvxyen {
     
-    inline def apply(
-      audience: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String]),
-      complete: js.UndefOr[Boolean] & `true`,
-      issuer: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
-    ): VerifyOptionscompletetrueAudience = {
-      val __obj = js.Dynamic.literal(audience = audience.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any])
-      __obj.asInstanceOf[VerifyOptionscompletetrueAudience]
+    inline def apply(): PickJWKktycrvxyen = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PickJWKktycrvxyen]
     }
     
-    extension [Self <: VerifyOptionscompletetrueAudience](x: Self) {
+    extension [Self <: PickJWKktycrvxyen](x: Self) {
       
-      inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+      inline def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
       
-      inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+      inline def setCrvUndefined: Self = StObject.set(x, "crv", js.undefined)
       
-      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      inline def setAudience(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
-      inline def setClockTolerance(value: String): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
+      inline def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
       
-      inline def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
+      inline def setKtyUndefined: Self = StObject.set(x, "kty", js.undefined)
       
-      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
-      inline def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
+      inline def setNUndefined: Self = StObject.set(x, "n", js.undefined)
       
-      inline def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
+      inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      inline def setIgnoreExp(value: Boolean): Self = StObject.set(x, "ignoreExp", value.asInstanceOf[js.Any])
+      inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      inline def setIgnoreExpUndefined: Self = StObject.set(x, "ignoreExp", js.undefined)
-      
-      inline def setIgnoreIat(value: Boolean): Self = StObject.set(x, "ignoreIat", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreIatUndefined: Self = StObject.set(x, "ignoreIat", js.undefined)
-      
-      inline def setIgnoreNbf(value: Boolean): Self = StObject.set(x, "ignoreNbf", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreNbfUndefined: Self = StObject.set(x, "ignoreNbf", js.undefined)
-      
-      inline def setIssuer(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
-      
-      inline def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
-      
-      inline def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
-      
-      inline def setMaxAuthAge(value: String): Self = StObject.set(x, "maxAuthAge", value.asInstanceOf[js.Any])
-      
-      inline def setMaxAuthAgeUndefined: Self = StObject.set(x, "maxAuthAge", js.undefined)
-      
-      inline def setMaxTokenAge(value: String): Self = StObject.set(x, "maxTokenAge", value.asInstanceOf[js.Any])
-      
-      inline def setMaxTokenAgeUndefined: Self = StObject.set(x, "maxTokenAge", js.undefined)
-      
-      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
-      
-      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
-      
-      inline def setNow(value: Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
-      
-      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
-      
-      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
-      
-      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
-      
-      inline def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
-      
-      inline def setTypUndefined: Self = StObject.set(x, "typ", js.undefined)
-    }
-  }
-  
-  /* Inlined jose.jose.JWT.VerifyOptions & {  complete :true} & jose.jose.JWT.LogoutTokenVerifyOptions */
-  trait VerifyOptionscompletetrueClockTolerance extends StObject {
-    
-    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
-    
-    var audience: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
-    
-    var clockTolerance: js.UndefOr[String] = js.undefined
-    
-    var complete: js.UndefOr[Boolean] & `true`
-    
-    var crit: js.UndefOr[js.Array[String]] = js.undefined
-    
-    var ignoreExp: js.UndefOr[Boolean] = js.undefined
-    
-    var ignoreIat: js.UndefOr[Boolean] = js.undefined
-    
-    var ignoreNbf: js.UndefOr[Boolean] = js.undefined
-    
-    var issuer: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
-    
-    var jti: js.UndefOr[String] = js.undefined
-    
-    var maxTokenAge: js.UndefOr[String] = js.undefined
-    
-    var now: js.UndefOr[Date] = js.undefined
-    
-    var subject: js.UndefOr[String] = js.undefined
-    
-    var typ: js.UndefOr[String] = js.undefined
-  }
-  object VerifyOptionscompletetrueClockTolerance {
-    
-    inline def apply(
-      audience: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String]),
-      complete: js.UndefOr[Boolean] & `true`,
-      issuer: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
-    ): VerifyOptionscompletetrueClockTolerance = {
-      val __obj = js.Dynamic.literal(audience = audience.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any])
-      __obj.asInstanceOf[VerifyOptionscompletetrueClockTolerance]
-    }
-    
-    extension [Self <: VerifyOptionscompletetrueClockTolerance](x: Self) {
-      
-      inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
-      
-      inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
-      
-      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
-      
-      inline def setAudience(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
-      
-      inline def setClockTolerance(value: String): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
-      
-      inline def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
-      
-      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
-      
-      inline def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
-      
-      inline def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
-      
-      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
-      
-      inline def setIgnoreExp(value: Boolean): Self = StObject.set(x, "ignoreExp", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreExpUndefined: Self = StObject.set(x, "ignoreExp", js.undefined)
-      
-      inline def setIgnoreIat(value: Boolean): Self = StObject.set(x, "ignoreIat", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreIatUndefined: Self = StObject.set(x, "ignoreIat", js.undefined)
-      
-      inline def setIgnoreNbf(value: Boolean): Self = StObject.set(x, "ignoreNbf", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreNbfUndefined: Self = StObject.set(x, "ignoreNbf", js.undefined)
-      
-      inline def setIssuer(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
-      
-      inline def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
-      
-      inline def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
-      
-      inline def setMaxTokenAge(value: String): Self = StObject.set(x, "maxTokenAge", value.asInstanceOf[js.Any])
-      
-      inline def setMaxTokenAgeUndefined: Self = StObject.set(x, "maxTokenAge", js.undefined)
-      
-      inline def setNow(value: Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
-      
-      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
-      
-      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
-      
-      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
-      
-      inline def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
-      
-      inline def setTypUndefined: Self = StObject.set(x, "typ", js.undefined)
-    }
-  }
-  
-  /* Inlined jose.jose.JWT.VerifyOptions & {  complete :true} & jose.jose.JWT.AccessTokenVerifyOptions */
-  trait VerifyOptionscompletetrueComplete extends StObject {
-    
-    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
-    
-    var audience: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
-    
-    var clockTolerance: js.UndefOr[String] = js.undefined
-    
-    var complete: js.UndefOr[Boolean] & `true`
-    
-    var crit: js.UndefOr[js.Array[String]] = js.undefined
-    
-    var ignoreExp: js.UndefOr[Boolean] = js.undefined
-    
-    var ignoreIat: js.UndefOr[Boolean] = js.undefined
-    
-    var ignoreNbf: js.UndefOr[Boolean] = js.undefined
-    
-    var issuer: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
-    
-    var jti: js.UndefOr[String] = js.undefined
-    
-    var maxAuthAge: js.UndefOr[String] = js.undefined
-    
-    var maxTokenAge: js.UndefOr[String] = js.undefined
-    
-    var now: js.UndefOr[Date] = js.undefined
-    
-    var subject: js.UndefOr[String] = js.undefined
-    
-    var typ: js.UndefOr[String] = js.undefined
-  }
-  object VerifyOptionscompletetrueComplete {
-    
-    inline def apply(
-      audience: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String]),
-      complete: js.UndefOr[Boolean] & `true`,
-      issuer: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
-    ): VerifyOptionscompletetrueComplete = {
-      val __obj = js.Dynamic.literal(audience = audience.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any])
-      __obj.asInstanceOf[VerifyOptionscompletetrueComplete]
-    }
-    
-    extension [Self <: VerifyOptionscompletetrueComplete](x: Self) {
-      
-      inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
-      
-      inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
-      
-      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
-      
-      inline def setAudience(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
-      
-      inline def setClockTolerance(value: String): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
-      
-      inline def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
-      
-      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
-      
-      inline def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
-      
-      inline def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
-      
-      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
-      
-      inline def setIgnoreExp(value: Boolean): Self = StObject.set(x, "ignoreExp", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreExpUndefined: Self = StObject.set(x, "ignoreExp", js.undefined)
-      
-      inline def setIgnoreIat(value: Boolean): Self = StObject.set(x, "ignoreIat", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreIatUndefined: Self = StObject.set(x, "ignoreIat", js.undefined)
-      
-      inline def setIgnoreNbf(value: Boolean): Self = StObject.set(x, "ignoreNbf", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreNbfUndefined: Self = StObject.set(x, "ignoreNbf", js.undefined)
-      
-      inline def setIssuer(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
-      
-      inline def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
-      
-      inline def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
-      
-      inline def setMaxAuthAge(value: String): Self = StObject.set(x, "maxAuthAge", value.asInstanceOf[js.Any])
-      
-      inline def setMaxAuthAgeUndefined: Self = StObject.set(x, "maxAuthAge", js.undefined)
-      
-      inline def setMaxTokenAge(value: String): Self = StObject.set(x, "maxTokenAge", value.asInstanceOf[js.Any])
-      
-      inline def setMaxTokenAgeUndefined: Self = StObject.set(x, "maxTokenAge", js.undefined)
-      
-      inline def setNow(value: Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
-      
-      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
-      
-      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
-      
-      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
-      
-      inline def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
-      
-      inline def setTypUndefined: Self = StObject.set(x, "typ", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
 }

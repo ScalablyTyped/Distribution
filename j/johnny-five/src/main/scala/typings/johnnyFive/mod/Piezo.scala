@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "Piezo")
 @js.native
-class Piezo protected () extends StObject {
+open class Piezo protected () extends StObject {
   def this(option: Double) = this()
   def this(option: PiezoOption) = this()
   
@@ -24,8 +24,8 @@ class Piezo protected () extends StObject {
   
   var pin: Double = js.native
   
-  def play(tune: js.Any): Unit = js.native
-  def play(tune: js.Any, cb: js.Function0[Unit]): Unit = js.native
+  def play(tune: Any): Unit = js.native
+  def play(tune: Any, cb: js.Function0[Unit]): Unit = js.native
   
   def tone(frequency: Double, duration: Double): Unit = js.native
 }

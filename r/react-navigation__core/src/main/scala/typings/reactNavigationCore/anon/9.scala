@@ -1,27 +1,30 @@
 package typings.reactNavigationCore.anon
 
-import typings.std.Extract
+import typings.reactNavigationRouters.typesMod.NavigationState
+import typings.reactNavigationRouters.typesMod.ParamListBase
+import typings.reactNavigationRouters.typesMod.PartialState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `9`[EventName /* <: Extract[/* keyof {} */ String, String] */] extends StObject {
+trait `9` extends StObject {
   
-  var data: /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any
+  /**
+    * The updated state object after the state change.
+    */
+  var state: js.UndefOr[NavigationState[ParamListBase] | PartialState[NavigationState[ParamListBase]]] = js.undefined
 }
 object `9` {
   
-  inline def apply[EventName /* <: Extract[/* keyof {} */ String, String] */](
-    data: /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any
-  ): `9`[EventName] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`9`[EventName]]
+  inline def apply(): `9` = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[`9`]
   }
   
-  extension [Self <: `9`[?], EventName /* <: Extract[/* keyof {} */ String, String] */](x: Self & `9`[EventName]) {
+  extension [Self <: `9`](x: Self) {
     
-    inline def setData(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any
-    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setState(value: NavigationState[ParamListBase] | PartialState[NavigationState[ParamListBase]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

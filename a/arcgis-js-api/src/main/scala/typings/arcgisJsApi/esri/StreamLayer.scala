@@ -15,7 +15,8 @@ trait StreamLayer
      with Layer
      with ScaleRangeLayer
      with TemporalLayer
-     with BlendLayer {
+     with BlendLayer
+     with FeatureEffectLayer {
   
   /**
     * Copyright information for the layer.
@@ -33,6 +34,13 @@ trait StreamLayer
   def createPopupTemplate(options: CreatePopupTemplateOptions): PopupTemplate = js.native
   
   /**
+    * A list of custom parameters appended to the URL of all resources fetched by the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#customParameters)
+    */
+  var customParameters: Any = js.native
+  
+  /**
     * The SQL where clause used to filter features based on their attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#definitionExpression)
@@ -47,7 +55,7 @@ trait StreamLayer
   var displayField: String = js.native
   
   /**
-    * Specifies how graphics are placed on the vertical axis (z).
+    * Specifies how features are placed on the vertical axis (z).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#elevationInfo)
     */
@@ -113,12 +121,16 @@ trait StreamLayer
   /**
     * Indicates whether to display labels for this layer.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#labelsVisible)
     */
   var labelsVisible: Boolean = js.native
   
   /**
     * Indicates whether the layer will be included in the legend.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#legendEnabled)
     */
@@ -148,6 +160,8 @@ trait StreamLayer
   /**
     * Indicates whether to display popups when features in the layer are clicked.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#popupEnabled)
     */
   var popupEnabled: Boolean = js.native
@@ -176,6 +190,8 @@ trait StreamLayer
   /**
     * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#screenSizePerspectiveEnabled)
     */
   var screenSizePerspectiveEnabled: Boolean = js.native
@@ -185,7 +201,7 @@ trait StreamLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#sourceJSON)
     */
-  var sourceJSON: js.Any = js.native
+  var sourceJSON: Any = js.native
   
   /**
     * The spatial reference of the layer.
@@ -201,6 +217,15 @@ trait StreamLayer
     */
   @JSName("type")
   val type_StreamLayer: stream = js.native
+  
+  /**
+    * The minimum rate (ms) at which to poll for updates over the websocket connection.
+    *
+    * @default 300
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateInterval)
+    */
+  var updateInterval: Double = js.native
   
   /**
     * The URL of the stream service.

@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Encryption settings for the cluster.
-  */
 trait SchemaEncryptionConfig extends StObject {
   
   /**
-    * Optional. The Cloud KMS key name to use for PD disk encryption for all
-    * instances in the cluster.
+    * Optional. The Cloud KMS key name to use for PD disk encryption for all instances in the cluster.
     */
-  var gcePdKmsKeyName: js.UndefOr[String] = js.undefined
+  var gcePdKmsKeyName: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaEncryptionConfig {
   
@@ -25,6 +21,8 @@ object SchemaEncryptionConfig {
   extension [Self <: SchemaEncryptionConfig](x: Self) {
     
     inline def setGcePdKmsKeyName(value: String): Self = StObject.set(x, "gcePdKmsKeyName", value.asInstanceOf[js.Any])
+    
+    inline def setGcePdKmsKeyNameNull: Self = StObject.set(x, "gcePdKmsKeyName", null)
     
     inline def setGcePdKmsKeyNameUndefined: Self = StObject.set(x, "gcePdKmsKeyName", js.undefined)
   }

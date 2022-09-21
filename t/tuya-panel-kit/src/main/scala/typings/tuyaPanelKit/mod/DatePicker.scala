@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "DatePicker")
 @js.native
-class DatePicker protected ()
-  extends Component[DatePickerProps, js.Object, js.Any] {
+open class DatePicker protected ()
+  extends Component[DatePickerProps, js.Object, Any] {
   def this(props: DatePickerProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: DatePickerProps, context: js.Any) = this()
+  def this(props: DatePickerProps, context: Any) = this()
 }

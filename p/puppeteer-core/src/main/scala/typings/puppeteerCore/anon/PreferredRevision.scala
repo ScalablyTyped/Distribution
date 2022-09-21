@@ -11,8 +11,6 @@ trait PreferredRevision extends StObject {
   var slowMo: Double
   
   var timeout: Double
-  
-  var usePipe: js.UndefOr[Boolean] = js.undefined
 }
 object PreferredRevision {
   
@@ -28,9 +26,5 @@ object PreferredRevision {
     inline def setSlowMo(value: Double): Self = StObject.set(x, "slowMo", value.asInstanceOf[js.Any])
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-    
-    inline def setUsePipe(value: Boolean): Self = StObject.set(x, "usePipe", value.asInstanceOf[js.Any])
-    
-    inline def setUsePipeUndefined: Self = StObject.set(x, "usePipe", js.undefined)
   }
 }

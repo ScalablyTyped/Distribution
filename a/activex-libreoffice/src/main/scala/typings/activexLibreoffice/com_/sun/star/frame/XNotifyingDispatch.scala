@@ -32,7 +32,7 @@ object XNotifyingDispatch {
     addStatusListener: (XStatusListener, URL) => Unit,
     dispatch: (URL, SeqEquiv[PropertyValue]) => Unit,
     dispatchWithNotification: (URL, SeqEquiv[PropertyValue], XDispatchResultListener) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeStatusListener: (XStatusListener, URL) => Unit
   ): XNotifyingDispatch = {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateCACertificateParams extends StObject {
   
   /**
-    * The action that you want to apply to the CA cerrtificate. The only supported value is DEACTIVATE.
+    * The action that you want to apply to the CA certificate. The only supported value is DEACTIVATE.
     */
   var action: CACertificateUpdateAction
 }

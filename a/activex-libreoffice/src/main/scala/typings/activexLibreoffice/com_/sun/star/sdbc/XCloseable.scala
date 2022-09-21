@@ -19,7 +19,7 @@ trait XCloseable
 }
 object XCloseable {
   
-  inline def apply(acquire: () => Unit, close: () => Unit, queryInterface: `type` => js.Any, release: () => Unit): XCloseable = {
+  inline def apply(acquire: () => Unit, close: () => Unit, queryInterface: `type` => Any, release: () => Unit): XCloseable = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), close = js.Any.fromFunction0(close), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XCloseable]
   }

@@ -9,7 +9,7 @@ object anon {
   
   trait `0` extends StObject {
     
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var params: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object `0` {
     
@@ -20,7 +20,7 @@ object anon {
     
     extension [Self <: `0`](x: Self) {
       
-      inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     }
@@ -28,18 +28,18 @@ object anon {
   
   trait Params extends StObject {
     
-    var params: StringDictionary[js.Any]
+    var params: StringDictionary[Any]
   }
   object Params {
     
-    inline def apply(params: StringDictionary[js.Any]): Params = {
+    inline def apply(params: StringDictionary[Any]): Params = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[Params]
     }
     
     extension [Self <: Params](x: Self) {
       
-      inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
 }

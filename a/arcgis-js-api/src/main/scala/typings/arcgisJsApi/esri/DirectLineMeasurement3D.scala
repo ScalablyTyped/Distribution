@@ -1,15 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
-import typings.arcgisJsApi.arcgisJsApiStrings.`us-feet`
-import typings.arcgisJsApi.arcgisJsApiStrings.feet_
-import typings.arcgisJsApi.arcgisJsApiStrings.imperial
-import typings.arcgisJsApi.arcgisJsApiStrings.inches
-import typings.arcgisJsApi.arcgisJsApiStrings.kilometers_
-import typings.arcgisJsApi.arcgisJsApiStrings.meters_
-import typings.arcgisJsApi.arcgisJsApiStrings.metric
-import typings.arcgisJsApi.arcgisJsApiStrings.miles_
-import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectLineMeasurement3D
   extends StObject
      with Widget_ {
+  
+  /**
+    * The direct line measurement analysis object being created or modified by the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html#analysis)
+    */
+  val analysis: DirectLineMeasurementAnalysis = js.native
   
   /**
     * The widget's default CSS icon class.
@@ -31,16 +28,14 @@ trait DirectLineMeasurement3D
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html#unit)
     */
-  var unit: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_ = js.native
+  var unit: SystemOrLengthUnit = js.native
   
   /**
     * List of unit systems (imperial, metric) and specific units for displaying the distance values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DirectLineMeasurement3D.html#unitOptions)
     */
-  var unitOptions: js.Array[
-    metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
-  ] = js.native
+  var unitOptions: js.Array[SystemOrLengthUnit] = js.native
   
   /**
     * A reference to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).

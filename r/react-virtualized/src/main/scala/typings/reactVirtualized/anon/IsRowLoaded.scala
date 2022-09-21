@@ -14,7 +14,7 @@ trait IsRowLoaded extends StObject {
   
   var isRowLoaded: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, Boolean]]
   
-  var loadMoreRows: Validator[js.Function1[/* params */ IndexRange, js.Promise[js.Any]]]
+  var loadMoreRows: Validator[js.Function1[/* params */ IndexRange, js.Promise[Any]]]
   
   var minimumBatchSize: Validator[Double]
   
@@ -27,7 +27,7 @@ object IsRowLoaded {
   inline def apply(
     children: Validator[js.Function1[/* props */ InfiniteLoaderChildProps, ReactNode]],
     isRowLoaded: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, Boolean]],
-    loadMoreRows: Validator[js.Function1[/* params */ IndexRange, js.Promise[js.Any]]],
+    loadMoreRows: Validator[js.Function1[/* params */ IndexRange, js.Promise[Any]]],
     minimumBatchSize: Validator[Double],
     rowCount: Validator[Double],
     threshold: Validator[Double]
@@ -42,7 +42,7 @@ object IsRowLoaded {
     
     inline def setIsRowLoaded(value: Validator[js.Function1[/* params */ typings.reactVirtualized.mod.Index, Boolean]]): Self = StObject.set(x, "isRowLoaded", value.asInstanceOf[js.Any])
     
-    inline def setLoadMoreRows(value: Validator[js.Function1[/* params */ IndexRange, js.Promise[js.Any]]]): Self = StObject.set(x, "loadMoreRows", value.asInstanceOf[js.Any])
+    inline def setLoadMoreRows(value: Validator[js.Function1[/* params */ IndexRange, js.Promise[Any]]]): Self = StObject.set(x, "loadMoreRows", value.asInstanceOf[js.Any])
     
     inline def setMinimumBatchSize(value: Validator[Double]): Self = StObject.set(x, "minimumBatchSize", value.asInstanceOf[js.Any])
     

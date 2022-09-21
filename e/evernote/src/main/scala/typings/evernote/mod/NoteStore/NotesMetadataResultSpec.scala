@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "NoteStore.NotesMetadataResultSpec")
 @js.native
-class NotesMetadataResultSpec () extends StObject {
+open class NotesMetadataResultSpec () extends StObject {
   def this(args: IncludeAttributes) = this()
   
   var includeAttributes: js.UndefOr[Boolean] = js.native

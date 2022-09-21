@@ -11,16 +11,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Search extends StObject {
   
   def autocomplete(query: String, callback: AutocompleteSearchCallback): Unit = js.native
-  def autocomplete(query: String, callback: AutocompleteSearchCallback, options: SearchOptions): Unit = js.native
+  def autocomplete(query: String, callback: AutocompleteSearchCallback, options: SearchAutocompleteOptions): Unit = js.native
   /**
     * Retrieves a list of autocomplete results for the specified search query.
     *
     * @param query A string that represents the user's search term in progress.
     * @param callback A callback function or delegate object.
-    * @param options Autocomplete takes the same options hash as search
+    * @param options With the options hash, you have the option to constrain
+    * the search to a desired area using the coordinate or region properties.
+    * A coordinate or region supplied here overrides the same property supplied
+    * to the `mapkit.Search` constructor. You also have the option to override
+    * the language provided to the seach constructor.
+    * For example, `{ language: ‘fr-CA‘ }` tells the server to send results
+    * localized to Canadian French.
     */
   def autocomplete(query: String, callback: SearchDelegate): Unit = js.native
-  def autocomplete(query: String, callback: SearchDelegate, options: SearchOptions): Unit = js.native
+  def autocomplete(query: String, callback: SearchDelegate, options: SearchAutocompleteOptions): Unit = js.native
   
   /**
     * Cancels a search request using its request ID.

@@ -31,7 +31,7 @@ trait DOMMutationEvent extends StObject {
     eventType: String,
     canBubble: Boolean,
     cancelable: Boolean,
-    relatedNodeArg: js.Any,
+    relatedNodeArg: Any,
     prevValueArg: String,
     newValueArg: String,
     attrNameArg: String,
@@ -46,7 +46,7 @@ trait DOMMutationEvent extends StObject {
   
   def preventDefault(): Unit
   
-  val relatedNode: js.Any
+  val relatedNode: Any
   
   val srcElement: IHTMLElement
   
@@ -73,12 +73,12 @@ object DOMMutationEvent {
     defaultPrevented: Boolean,
     eventPhase: Double,
     initEvent: (String, Boolean, Boolean) => Unit,
-    initMutationEvent: (String, Boolean, Boolean, js.Any, String, String, String, Double) => Unit,
+    initMutationEvent: (String, Boolean, Boolean, Any, String, String, String, Double) => Unit,
     isTrusted: Boolean,
     newValue: String,
     prevValue: String,
     preventDefault: () => Unit,
-    relatedNode: js.Any,
+    relatedNode: Any,
     srcElement: IHTMLElement,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
@@ -112,7 +112,7 @@ object DOMMutationEvent {
     
     inline def setInitEvent(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction3(value))
     
-    inline def setInitMutationEvent(value: (String, Boolean, Boolean, js.Any, String, String, String, Double) => Unit): Self = StObject.set(x, "initMutationEvent", js.Any.fromFunction8(value))
+    inline def setInitMutationEvent(value: (String, Boolean, Boolean, Any, String, String, String, Double) => Unit): Self = StObject.set(x, "initMutationEvent", js.Any.fromFunction8(value))
     
     inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     
@@ -124,7 +124,7 @@ object DOMMutationEvent {
     
     inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     
-    inline def setRelatedNode(value: js.Any): Self = StObject.set(x, "relatedNode", value.asInstanceOf[js.Any])
+    inline def setRelatedNode(value: Any): Self = StObject.set(x, "relatedNode", value.asInstanceOf[js.Any])
     
     inline def setSrcElement(value: IHTMLElement): Self = StObject.set(x, "srcElement", value.asInstanceOf[js.Any])
     

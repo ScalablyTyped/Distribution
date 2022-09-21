@@ -59,7 +59,7 @@ object SecurityStateExplanation {
     
     inline def setCertificate(value: js.Array[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    inline def setCertificateVarargs(value: String*): Self = StObject.set(x, "certificate", js.Array(value :_*))
+    inline def setCertificateVarargs(value: String*): Self = StObject.set(x, "certificate", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object SecurityStateExplanation {
     
     inline def setRecommendationsUndefined: Self = StObject.set(x, "recommendations", js.undefined)
     
-    inline def setRecommendationsVarargs(value: String*): Self = StObject.set(x, "recommendations", js.Array(value :_*))
+    inline def setRecommendationsVarargs(value: String*): Self = StObject.set(x, "recommendations", js.Array(value*))
     
     inline def setSecurityState(value: SecurityState): Self = StObject.set(x, "securityState", value.asInstanceOf[js.Any])
     

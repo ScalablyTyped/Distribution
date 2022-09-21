@@ -10,10 +10,10 @@ The lodash method `_.zipObjectDeep` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.zipobjectdeep |
 | Keywords           | lodash-modularized, zipobjectdeep |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 10149 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1584.3333333333333 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

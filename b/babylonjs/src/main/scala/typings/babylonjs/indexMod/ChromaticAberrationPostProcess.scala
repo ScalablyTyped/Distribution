@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "ChromaticAberrationPostProcess")
 @js.native
-class ChromaticAberrationPostProcess protected ()
+open class ChromaticAberrationPostProcess protected ()
   extends typings.babylonjs.postProcessesIndexMod.ChromaticAberrationPostProcess {
   /**
     * Creates a new instance ChromaticAberrationPostProcess
@@ -43,9 +43,15 @@ object ChromaticAberrationPostProcess {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /**
+    * @param parsedPostProcess
+    * @param targetCamera
+    * @param scene
+    * @param rootUrl
+    * @hidden
+    */
   inline def _Parse(
-    parsedPostProcess: js.Any,
+    parsedPostProcess: Any,
     targetCamera: typings.babylonjs.cameraMod.Camera,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String

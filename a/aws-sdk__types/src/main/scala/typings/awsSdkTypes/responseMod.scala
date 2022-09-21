@@ -1,6 +1,5 @@
 package typings.awsSdkTypes
 
-import typings.awsSdkTypes.httpMod.HeaderBag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,11 +45,6 @@ object responseMod {
     var extendedRequestId: js.UndefOr[String] = js.undefined
     
     /**
-      * The headers of the last HTTP response received for this operation.
-      */
-    var httpHeaders: js.UndefOr[HeaderBag] = js.undefined
-    
-    /**
       * The status code of the last HTTP response received for this operation.
       */
     var httpStatusCode: js.UndefOr[Double] = js.undefined
@@ -87,10 +81,6 @@ object responseMod {
       inline def setExtendedRequestId(value: String): Self = StObject.set(x, "extendedRequestId", value.asInstanceOf[js.Any])
       
       inline def setExtendedRequestIdUndefined: Self = StObject.set(x, "extendedRequestId", js.undefined)
-      
-      inline def setHttpHeaders(value: HeaderBag): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
-      
-      inline def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)
       
       inline def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
       

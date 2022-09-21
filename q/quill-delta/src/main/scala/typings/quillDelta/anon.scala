@@ -22,7 +22,7 @@ object anon {
       
       inline def setOps(value: js.Array[Op]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
       
-      inline def setOpsVarargs(value: Op*): Self = StObject.set(x, "ops", js.Array(value :_*))
+      inline def setOpsVarargs(value: Op*): Self = StObject.set(x, "ops", js.Array(value*))
     }
   }
 }

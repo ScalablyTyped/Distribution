@@ -1,7 +1,7 @@
 
 # Scala.js typings for cnpj
 
-Typings are for version 3.0
+Typings are for version 4.0.1
 
 ## Library description:
 Format, validate and generate CNPJ numbers
@@ -10,10 +10,10 @@ Format, validate and generate CNPJ numbers
 | ------------------ | :-------------: |
 | Full name          | cnpj |
 | Keywords           | cnpj, validation, brasil, brazil |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 90578 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 15395.333333333334 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/gabrielizaias/cnpj#readme)
@@ -24,7 +24,7 @@ Format, validate and generate CNPJ numbers
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

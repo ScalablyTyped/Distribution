@@ -1,7 +1,7 @@
 
 # Scala.js typings for styletron-react
 
-Typings are for version 5.0
+Typings are for version 6.1.0
 
 ## Library description:
 React bindings for Styletron
@@ -10,10 +10,10 @@ React bindings for Styletron
 | ------------------ | :-------------: |
 | Full name          | styletron-react |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 50 |
-| # downloads        | 797774 |
-| # stars            | 2 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 142804.0 |
+| # stars            | 3268.0 |
 
 ## Links
 - [Homepage](https://github.com/styletron/styletron#readme)
@@ -24,7 +24,7 @@ React bindings for Styletron
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

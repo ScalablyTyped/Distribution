@@ -20,17 +20,17 @@ trait PostProcessRenderEffect extends StObject {
     */
   def _attachCameras(cameras: Camera): Unit = js.native
   
-  /* private */ var _cameras: js.Any = js.native
+  /* private */ var _cameras: Any = js.native
   
   /**
-    * Detatches the effect on cameras
-    * @param cameras The camera to detatch from.
+    * Detaches the effect on cameras
+    * @param cameras The camera to detach from.
     * @hidden
     */
   def _detachCameras(cameras: js.Array[Camera]): Unit = js.native
   /**
     * Detaches the effect on cameras
-    * @param cameras The camera to detatch from.
+    * @param cameras The camera to detach from.
     * @hidden
     */
   def _detachCameras(cameras: Camera): Unit = js.native
@@ -61,9 +61,9 @@ trait PostProcessRenderEffect extends StObject {
     */
   def _enable(cameras: Nullable[js.Array[Camera]]): Unit = js.native
   
-  /* private */ var _getPostProcesses: js.Any = js.native
+  /* private */ var _getPostProcesses: Any = js.native
   
-  /* private */ var _indicesForCamera: js.Any = js.native
+  /* private */ var _indicesForCamera: Any = js.native
   
   /**
     * Name of the effect
@@ -71,9 +71,9 @@ trait PostProcessRenderEffect extends StObject {
     */
   var _name: String = js.native
   
-  /* private */ var _postProcesses: js.Any = js.native
+  /* private */ var _postProcesses: Any = js.native
   
-  /* private */ var _singleInstance: js.Any = js.native
+  /* private */ var _singleInstance: Any = js.native
   
   /**
     * Updates the current state of the effect

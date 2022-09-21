@@ -49,20 +49,20 @@ object DiscreteColorLegendProps {
     
     inline def setItems(value: js.Array[Color | String | ReactChild]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: (Color | String | ReactChild)*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: (Color | String | ReactChild)*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setOnItemClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
     
     inline def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
     
     inline def setOnItemMouseEnter(
-      value: (/* item */ js.Any, /* index */ Double, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
+      value: (/* item */ Any, /* index */ Double, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onItemMouseEnter", js.Any.fromFunction3(value))
     
     inline def setOnItemMouseEnterUndefined: Self = StObject.set(x, "onItemMouseEnter", js.undefined)
     
     inline def setOnItemMouseLeave(
-      value: (/* item */ js.Any, /* index */ Double, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
+      value: (/* item */ Any, /* index */ Double, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onItemMouseLeave", js.Any.fromFunction3(value))
     
     inline def setOnItemMouseLeaveUndefined: Self = StObject.set(x, "onItemMouseLeave", js.undefined)

@@ -36,7 +36,7 @@ object ShiftAvailability {
     
     inline def setTimeSlotsUndefined: Self = StObject.set(x, "timeSlots", js.undefined)
     
-    inline def setTimeSlotsVarargs(value: TimeRange*): Self = StObject.set(x, "timeSlots", js.Array(value :_*))
+    inline def setTimeSlotsVarargs(value: TimeRange*): Self = StObject.set(x, "timeSlots", js.Array(value*))
     
     inline def setTimeZone(value: NullableOption[String]): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     

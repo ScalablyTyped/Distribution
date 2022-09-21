@@ -16,7 +16,7 @@ trait VastIcon extends StObject {
   
   var iconClickThroughURLTemplate: String | Null
   
-  var iconClickTrackingURLTemplates: js.Array[String]
+  var iconClickTrackingURLTemplates: js.Array[VastUrlValue]
   
   var iconViewTrackingURLTemplate: String | Null
   
@@ -41,7 +41,7 @@ object VastIcon {
   inline def apply(
     duration: Double,
     height: Double,
-    iconClickTrackingURLTemplates: js.Array[String],
+    iconClickTrackingURLTemplates: js.Array[VastUrlValue],
     width: Double,
     xPosition: Double,
     yPosition: Double
@@ -69,9 +69,9 @@ object VastIcon {
     
     inline def setIconClickThroughURLTemplateNull: Self = StObject.set(x, "iconClickThroughURLTemplate", null)
     
-    inline def setIconClickTrackingURLTemplates(value: js.Array[String]): Self = StObject.set(x, "iconClickTrackingURLTemplates", value.asInstanceOf[js.Any])
+    inline def setIconClickTrackingURLTemplates(value: js.Array[VastUrlValue]): Self = StObject.set(x, "iconClickTrackingURLTemplates", value.asInstanceOf[js.Any])
     
-    inline def setIconClickTrackingURLTemplatesVarargs(value: String*): Self = StObject.set(x, "iconClickTrackingURLTemplates", js.Array(value :_*))
+    inline def setIconClickTrackingURLTemplatesVarargs(value: VastUrlValue*): Self = StObject.set(x, "iconClickTrackingURLTemplates", js.Array(value*))
     
     inline def setIconViewTrackingURLTemplate(value: String): Self = StObject.set(x, "iconViewTrackingURLTemplate", value.asInstanceOf[js.Any])
     

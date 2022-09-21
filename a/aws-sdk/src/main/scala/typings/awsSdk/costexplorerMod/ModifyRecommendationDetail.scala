@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyRecommendationDetail extends StObject {
   
   /**
-    * Identifies whether this instance type is the AWS default recommendation.
+    * Determines whether this instance type is the Amazon Web Services default recommendation.
     */
   var TargetInstances: js.UndefOr[TargetInstancesList] = js.undefined
 }
@@ -24,6 +24,6 @@ object ModifyRecommendationDetail {
     
     inline def setTargetInstancesUndefined: Self = StObject.set(x, "TargetInstances", js.undefined)
     
-    inline def setTargetInstancesVarargs(value: TargetInstance*): Self = StObject.set(x, "TargetInstances", js.Array(value :_*))
+    inline def setTargetInstancesVarargs(value: TargetInstance*): Self = StObject.set(x, "TargetInstances", js.Array(value*))
   }
 }

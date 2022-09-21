@@ -10,10 +10,10 @@ Big integers.
 | ------------------ | :-------------: |
 | Full name          | bigi |
 | Keywords           | cryptography, math, bitcoin, arbitrary, precision, arithmetic, big, integer, int, number, biginteger, bigint, bignumber, decimal, float |
-| # releases         | 0 |
-| # dependents       | 411 |
-| # downloads        | 2099846 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 311129.0 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/cryptocoinjs/bigi#readme)

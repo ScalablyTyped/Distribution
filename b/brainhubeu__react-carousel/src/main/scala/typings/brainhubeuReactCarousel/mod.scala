@@ -1,5 +1,6 @@
 package typings.brainhubeuReactCarousel
 
+import org.scalablytyped.runtime.NumberDictionary
 import typings.brainhubeuReactCarousel.anon.AfterCarouselItems
 import typings.brainhubeuReactCarousel.anon.PickCarouselPropsExcludek
 import typings.brainhubeuReactCarousel.brainhubeuReactCarouselStrings.img
@@ -8,6 +9,7 @@ import typings.brainhubeuReactCarousel.brainhubeuReactCarouselStrings.ref
 import typings.react.mod.Component
 import typings.react.mod.ComponentProps
 import typings.react.mod.ReactComponentElement
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.std.Exclude
 import typings.std.Pick
@@ -19,26 +21,26 @@ object mod {
   
   @JSImport("@brainhubeu/react-carousel", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[CarouselProps, js.Object, js.Any] {
+  open class default protected ()
+    extends Component[CarouselProps, js.Object, Any] {
     def this(props: CarouselProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: CarouselProps, context: js.Any) = this()
+    def this(props: CarouselProps, context: Any) = this()
   }
   
   @JSImport("@brainhubeu/react-carousel", "Dots")
   @js.native
-  class Dots protected ()
-    extends Component[DotsProps, js.Object, js.Any] {
+  open class Dots protected ()
+    extends Component[DotsProps, js.Object, Any] {
     def this(props: DotsProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: DotsProps, context: js.Any) = this()
+    def this(props: DotsProps, context: Any) = this()
   }
   
   @JSImport("@brainhubeu/react-carousel", "arrowsPlugin")
@@ -77,6 +79,8 @@ object mod {
   @js.native
   val slidesToShowPlugin: CarouselPluginFunc = js.native
   
+  type CarouselBreakpoints = NumberDictionary[PickCarouselPropsExcludek]
+  
   type CarouselPluginFunc = js.Function1[
     /* hasOptionsCarouselPropsRefs */ typings.brainhubeuReactCarousel.anon.CarouselProps, 
     AfterCarouselItems
@@ -84,7 +88,7 @@ object mod {
   
   trait CarouselPluginTypes extends StObject {
     
-    var options: js.UndefOr[js.Any] = js.undefined
+    var options: js.UndefOr[Any] = js.undefined
     
     var resolve: CarouselPluginFunc
   }
@@ -99,7 +103,7 @@ object mod {
     
     extension [Self <: CarouselPluginTypes](x: Self) {
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
@@ -113,7 +117,9 @@ object mod {
     
     var animationSpeed: js.UndefOr[Double] = js.undefined
     
-    var breakpoints: js.UndefOr[PickCarouselPropsExcludek] = js.undefined
+    var breakpoints: js.UndefOr[CarouselBreakpoints] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -144,9 +150,13 @@ object mod {
       
       inline def setAnimationSpeedUndefined: Self = StObject.set(x, "animationSpeed", js.undefined)
       
-      inline def setBreakpoints(value: PickCarouselPropsExcludek): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+      inline def setBreakpoints(value: CarouselBreakpoints): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       
       inline def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -172,13 +182,13 @@ object mod {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: (String | CarouselPluginTypes)*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: (String | CarouselPluginTypes)*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setSlides(value: js.Array[Element]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
       
       inline def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
       
-      inline def setSlidesVarargs(value: Element*): Self = StObject.set(x, "slides", js.Array(value :_*))
+      inline def setSlidesVarargs(value: Element*): Self = StObject.set(x, "slides", js.Array(value*))
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -229,7 +239,7 @@ object mod {
       
       inline def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
       
-      inline def setThumbnailsVarargs(value: ImgProps*): Self = StObject.set(x, "thumbnails", js.Array(value :_*))
+      inline def setThumbnailsVarargs(value: ImgProps*): Self = StObject.set(x, "thumbnails", js.Array(value*))
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

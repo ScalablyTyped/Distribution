@@ -10,10 +10,10 @@ PlantUML encoder for browsers and Node.js
 | ------------------ | :-------------: |
 | Full name          | plantuml-encoder |
 | Keywords           | plantuml, encoder |
-| # releases         | 4 |
-| # dependents       | 51 |
-| # downloads        | 1154928 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 115133.66666666667 |
+| # stars            | 75.0 |
 
 ## Links
 - [Homepage](https://github.com/markushedvall/plantuml-encoder#readme)

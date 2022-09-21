@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.PathItem")
 @js.native
-class PathItem ()
+open class PathItem ()
   extends StObject
      with typings.paper.paper.PathItem
 object PathItem {

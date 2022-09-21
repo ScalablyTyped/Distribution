@@ -20,6 +20,16 @@ trait Typeofchrome extends StObject {
   val accessibilityFeatures: TypeofaccessibilityFeatur
   
   ////////////////////
+  // Action
+  ////////////////////
+  /**
+    * Use the chrome.action API to control the extension's icon in the Google Chrome toolbar.
+    * Availability: Since Chrome 88. Manifest v3.
+    * Manifest:  "action": {...}
+    */
+  val action: Typeofaction
+  
+  ////////////////////
   // Alarms
   ////////////////////
   /**
@@ -120,6 +130,8 @@ trait Typeofchrome extends StObject {
     */
   val declarativeContent: TypeofdeclarativeContent
   
+  val declarativeNetRequest: TypeofdeclarativeNetReque
+  
   ////////////////////
   // Declarative Web Request
   ////////////////////
@@ -167,7 +179,7 @@ trait Typeofchrome extends StObject {
     * The chrome.events namespace contains common types used by APIs dispatching events to notify you when something interesting happens.
     * Availability: Since Chrome 21.
     */
-  val events: js.Any
+  val events: Any
   
   ////////////////////
   // Extension
@@ -401,6 +413,25 @@ trait Typeofchrome extends StObject {
   val scriptBadge: TypeofscriptBadge
   
   ////////////////////
+  // Scripting
+  ////////////////////
+  /**
+    * Use the chrome.scripting API to execute script in different contexts.
+    * Permissions: "scripting", Manifest v3+
+    * @since Chrome 88.
+    */
+  val scripting: Typeofscripting
+  
+  ////////////////////
+  // Search
+  ////////////////////
+  /**
+    * Use the chrome.search API to search via the default provider.
+    * Permissions:  "search"
+    */
+  val search: Typeofsearch
+  
+  ////////////////////
   // Serial
   ////////////////////
   /**
@@ -449,6 +480,16 @@ trait Typeofchrome extends StObject {
   val tabCapture: TypeoftabCapture
   
   ////////////////////
+  // Tab Groups
+  ////////////////////
+  /**
+    * Use the chrome.tabGroups API to interact with the browser's tab grouping system. You can use this API to modify and rearrange tab groups in the browser. To group and ungroup tabs, or to query what tabs are in groups, use the chrome.tabs API.
+    * Permissions:  "tabGroups"
+    * @since Chrome 89. Manifest V3 and above.
+    */
+  val tabGroups: TypeoftabGroups
+  
+  ////////////////////
   // Tabs
   ////////////////////
   /**
@@ -495,7 +536,7 @@ trait Typeofchrome extends StObject {
     * The chrome.types API contains type declarations for Chrome.
     * @since Chrome 13.
     */
-  val types: js.Any
+  val types: Any
   
   ////////////////////
   // VPN Provider
@@ -563,6 +604,7 @@ object Typeofchrome {
   inline def apply(
     _debugger: TypeofDebugger,
     accessibilityFeatures: TypeofaccessibilityFeatur,
+    action: Typeofaction,
     alarms: Typeofalarms,
     bookmarks: Typeofbookmarks,
     browser: Typeofbrowser,
@@ -574,13 +616,14 @@ object Typeofchrome {
     contextMenus: TypeofcontextMenus,
     cookies: Typeofcookies,
     declarativeContent: TypeofdeclarativeContent,
+    declarativeNetRequest: TypeofdeclarativeNetReque,
     declarativeWebRequest: TypeofdeclarativeWebReque,
     desktopCapture: TypeofdesktopCapture,
     devtools: Typeofdevtools,
     documentScan: TypeofdocumentScan,
     downloads: Typeofdownloads,
     enterprise: Typeofenterprise,
-    events: js.Any,
+    events: Any,
     `extension`: Typeofextension,
     fileBrowserHandler: TypeoffileBrowserHandler,
     fileSystemProvider: TypeoffileSystemProvider,
@@ -606,17 +649,20 @@ object Typeofchrome {
     proxy: Typeofproxy,
     runtime: Typeofruntime,
     scriptBadge: TypeofscriptBadge,
+    scripting: Typeofscripting,
+    search: Typeofsearch,
     serial: Typeofserial,
     sessions: Typeofsessions,
     socket: Typeofsocket,
     storage: Typeofstorage,
     system: Typeofsystem,
     tabCapture: TypeoftabCapture,
+    tabGroups: TypeoftabGroups,
     tabs: Typeoftabs,
     topSites: TypeoftopSites,
     tts: Typeoftts,
     ttsEngine: TypeofttsEngine,
-    types: js.Any,
+    types: Any,
     vpnProvider: TypeofvpnProvider,
     wallpaper: Typeofwallpaper,
     webNavigation: TypeofwebNavigation,
@@ -624,7 +670,7 @@ object Typeofchrome {
     webstore: Typeofwebstore,
     windows: Typeofwindows
   ): Typeofchrome = {
-    val __obj = js.Dynamic.literal(_debugger = _debugger.asInstanceOf[js.Any], accessibilityFeatures = accessibilityFeatures.asInstanceOf[js.Any], alarms = alarms.asInstanceOf[js.Any], bookmarks = bookmarks.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], browserAction = browserAction.asInstanceOf[js.Any], browsingData = browsingData.asInstanceOf[js.Any], cast = cast.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], contentSettings = contentSettings.asInstanceOf[js.Any], contextMenus = contextMenus.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], declarativeContent = declarativeContent.asInstanceOf[js.Any], declarativeWebRequest = declarativeWebRequest.asInstanceOf[js.Any], desktopCapture = desktopCapture.asInstanceOf[js.Any], devtools = devtools.asInstanceOf[js.Any], documentScan = documentScan.asInstanceOf[js.Any], downloads = downloads.asInstanceOf[js.Any], enterprise = enterprise.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], fileBrowserHandler = fileBrowserHandler.asInstanceOf[js.Any], fileSystemProvider = fileSystemProvider.asInstanceOf[js.Any], fontSettings = fontSettings.asInstanceOf[js.Any], gcm = gcm.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], loginState = loginState.asInstanceOf[js.Any], management = management.asInstanceOf[js.Any], networking = networking.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], omnibox = omnibox.asInstanceOf[js.Any], pageAction = pageAction.asInstanceOf[js.Any], pageCapture = pageCapture.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], platformKeys = platformKeys.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], printerProvider = printerProvider.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], scriptBadge = scriptBadge.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], tabCapture = tabCapture.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any], topSites = topSites.asInstanceOf[js.Any], tts = tts.asInstanceOf[js.Any], ttsEngine = ttsEngine.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], vpnProvider = vpnProvider.asInstanceOf[js.Any], wallpaper = wallpaper.asInstanceOf[js.Any], webNavigation = webNavigation.asInstanceOf[js.Any], webRequest = webRequest.asInstanceOf[js.Any], webstore = webstore.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_debugger = _debugger.asInstanceOf[js.Any], accessibilityFeatures = accessibilityFeatures.asInstanceOf[js.Any], action = action.asInstanceOf[js.Any], alarms = alarms.asInstanceOf[js.Any], bookmarks = bookmarks.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], browserAction = browserAction.asInstanceOf[js.Any], browsingData = browsingData.asInstanceOf[js.Any], cast = cast.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], contentSettings = contentSettings.asInstanceOf[js.Any], contextMenus = contextMenus.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], declarativeContent = declarativeContent.asInstanceOf[js.Any], declarativeNetRequest = declarativeNetRequest.asInstanceOf[js.Any], declarativeWebRequest = declarativeWebRequest.asInstanceOf[js.Any], desktopCapture = desktopCapture.asInstanceOf[js.Any], devtools = devtools.asInstanceOf[js.Any], documentScan = documentScan.asInstanceOf[js.Any], downloads = downloads.asInstanceOf[js.Any], enterprise = enterprise.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], fileBrowserHandler = fileBrowserHandler.asInstanceOf[js.Any], fileSystemProvider = fileSystemProvider.asInstanceOf[js.Any], fontSettings = fontSettings.asInstanceOf[js.Any], gcm = gcm.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], loginState = loginState.asInstanceOf[js.Any], management = management.asInstanceOf[js.Any], networking = networking.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], omnibox = omnibox.asInstanceOf[js.Any], pageAction = pageAction.asInstanceOf[js.Any], pageCapture = pageCapture.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], platformKeys = platformKeys.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], printerProvider = printerProvider.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], scriptBadge = scriptBadge.asInstanceOf[js.Any], scripting = scripting.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], tabCapture = tabCapture.asInstanceOf[js.Any], tabGroups = tabGroups.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any], topSites = topSites.asInstanceOf[js.Any], tts = tts.asInstanceOf[js.Any], ttsEngine = ttsEngine.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], vpnProvider = vpnProvider.asInstanceOf[js.Any], wallpaper = wallpaper.asInstanceOf[js.Any], webNavigation = webNavigation.asInstanceOf[js.Any], webRequest = webRequest.asInstanceOf[js.Any], webstore = webstore.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
     __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofchrome]
   }
@@ -632,6 +678,8 @@ object Typeofchrome {
   extension [Self <: Typeofchrome](x: Self) {
     
     inline def setAccessibilityFeatures(value: TypeofaccessibilityFeatur): Self = StObject.set(x, "accessibilityFeatures", value.asInstanceOf[js.Any])
+    
+    inline def setAction(value: Typeofaction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     inline def setAlarms(value: Typeofalarms): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
     
@@ -655,6 +703,8 @@ object Typeofchrome {
     
     inline def setDeclarativeContent(value: TypeofdeclarativeContent): Self = StObject.set(x, "declarativeContent", value.asInstanceOf[js.Any])
     
+    inline def setDeclarativeNetRequest(value: TypeofdeclarativeNetReque): Self = StObject.set(x, "declarativeNetRequest", value.asInstanceOf[js.Any])
+    
     inline def setDeclarativeWebRequest(value: TypeofdeclarativeWebReque): Self = StObject.set(x, "declarativeWebRequest", value.asInstanceOf[js.Any])
     
     inline def setDesktopCapture(value: TypeofdesktopCapture): Self = StObject.set(x, "desktopCapture", value.asInstanceOf[js.Any])
@@ -667,7 +717,7 @@ object Typeofchrome {
     
     inline def setEnterprise(value: Typeofenterprise): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setExtension(value: Typeofextension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
@@ -719,6 +769,10 @@ object Typeofchrome {
     
     inline def setScriptBadge(value: TypeofscriptBadge): Self = StObject.set(x, "scriptBadge", value.asInstanceOf[js.Any])
     
+    inline def setScripting(value: Typeofscripting): Self = StObject.set(x, "scripting", value.asInstanceOf[js.Any])
+    
+    inline def setSearch(value: Typeofsearch): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    
     inline def setSerial(value: Typeofserial): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
     
     inline def setSessions(value: Typeofsessions): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
@@ -731,6 +785,8 @@ object Typeofchrome {
     
     inline def setTabCapture(value: TypeoftabCapture): Self = StObject.set(x, "tabCapture", value.asInstanceOf[js.Any])
     
+    inline def setTabGroups(value: TypeoftabGroups): Self = StObject.set(x, "tabGroups", value.asInstanceOf[js.Any])
+    
     inline def setTabs(value: Typeoftabs): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
     inline def setTopSites(value: TypeoftopSites): Self = StObject.set(x, "topSites", value.asInstanceOf[js.Any])
@@ -739,7 +795,7 @@ object Typeofchrome {
     
     inline def setTtsEngine(value: TypeofttsEngine): Self = StObject.set(x, "ttsEngine", value.asInstanceOf[js.Any])
     
-    inline def setTypes(value: js.Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     inline def setVpnProvider(value: TypeofvpnProvider): Self = StObject.set(x, "vpnProvider", value.asInstanceOf[js.Any])
     

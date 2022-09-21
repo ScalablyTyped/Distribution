@@ -9,6 +9,6 @@ trait Window extends StObject {
   
   def cancelIdleCallback(handle: Double): Unit = js.native
   
-  def requestIdleCallback(callback: IdleRequestCallback): IdleCallbackHandle = js.native
-  def requestIdleCallback(callback: IdleRequestCallback, options: IdleRequestOptions): IdleCallbackHandle = js.native
+  def requestIdleCallback(callback: js.Function1[/* deadline */ IdleDeadline, Unit]): IdleCallbackHandle = js.native
+  def requestIdleCallback(callback: js.Function1[/* deadline */ IdleDeadline, Unit], options: IdleRequestOptions): IdleCallbackHandle = js.native
 }

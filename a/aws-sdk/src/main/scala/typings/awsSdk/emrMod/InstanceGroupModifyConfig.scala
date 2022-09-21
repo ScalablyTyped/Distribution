@@ -22,9 +22,14 @@ trait InstanceGroupModifyConfig extends StObject {
   var InstanceCount: js.UndefOr[Integer] = js.undefined
   
   /**
-    * Unique ID of the instance group to expand or shrink.
+    * Unique ID of the instance group to modify.
     */
   var InstanceGroupId: XmlStringMaxLen256
+  
+  /**
+    * Type of reconfiguration requested. Valid values are MERGE and OVERWRITE.
+    */
+  var ReconfigurationType: js.UndefOr[typings.awsSdk.emrMod.ReconfigurationType] = js.undefined
   
   /**
     * Policy for customizing shrink operations.
@@ -44,19 +49,23 @@ object InstanceGroupModifyConfig {
     
     inline def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
     
-    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value*))
     
     inline def setEC2InstanceIdsToTerminate(value: EC2InstanceIdsToTerminateList): Self = StObject.set(x, "EC2InstanceIdsToTerminate", value.asInstanceOf[js.Any])
     
     inline def setEC2InstanceIdsToTerminateUndefined: Self = StObject.set(x, "EC2InstanceIdsToTerminate", js.undefined)
     
-    inline def setEC2InstanceIdsToTerminateVarargs(value: InstanceId*): Self = StObject.set(x, "EC2InstanceIdsToTerminate", js.Array(value :_*))
+    inline def setEC2InstanceIdsToTerminateVarargs(value: InstanceId*): Self = StObject.set(x, "EC2InstanceIdsToTerminate", js.Array(value*))
     
     inline def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
     inline def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
     
     inline def setInstanceGroupId(value: XmlStringMaxLen256): Self = StObject.set(x, "InstanceGroupId", value.asInstanceOf[js.Any])
+    
+    inline def setReconfigurationType(value: ReconfigurationType): Self = StObject.set(x, "ReconfigurationType", value.asInstanceOf[js.Any])
+    
+    inline def setReconfigurationTypeUndefined: Self = StObject.set(x, "ReconfigurationType", js.undefined)
     
     inline def setShrinkPolicy(value: ShrinkPolicy): Self = StObject.set(x, "ShrinkPolicy", value.asInstanceOf[js.Any])
     

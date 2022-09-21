@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * List Environments Response.
-  */
 trait SchemaListEnvironmentsResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaListEnvironmentsResponse {
     
     inline def setEnvironmentsUndefined: Self = StObject.set(x, "environments", js.undefined)
     
-    inline def setEnvironmentsVarargs(value: SchemaEnvironment*): Self = StObject.set(x, "environments", js.Array(value :_*))
+    inline def setEnvironmentsVarargs(value: SchemaEnvironment*): Self = StObject.set(x, "environments", js.Array(value*))
   }
 }

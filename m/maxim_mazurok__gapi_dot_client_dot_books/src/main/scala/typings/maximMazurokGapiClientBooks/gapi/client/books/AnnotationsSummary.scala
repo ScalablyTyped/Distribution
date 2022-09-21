@@ -28,6 +28,6 @@ object AnnotationsSummary {
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: LayerId*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: LayerId*): Self = StObject.set(x, "layers", js.Array(value*))
   }
 }

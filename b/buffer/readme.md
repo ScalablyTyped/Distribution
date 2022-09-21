@@ -10,10 +10,10 @@ Node.js Buffer API, for the browser
 | ------------------ | :-------------: |
 | Full name          | buffer |
 | Keywords           | arraybuffer, browser, browserify, buffer, compatible, dataview, uint8array |
-| # releases         | 18 |
-| # dependents       | 1741 |
-| # downloads        | 1019435858 |
-| # stars            | 29 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6708444E8 |
+| # stars            | 1453.0 |
 
 ## Links
 - [Homepage](https://github.com/feross/buffer)

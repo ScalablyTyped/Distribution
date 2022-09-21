@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.CLVP")
 @js.native
-class CLVP ()
+open class CLVP ()
   extends StObject
      with typings.sharepoint.SP.Ribbon.CLVP

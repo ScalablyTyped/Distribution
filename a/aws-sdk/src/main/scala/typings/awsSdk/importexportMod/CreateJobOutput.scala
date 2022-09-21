@@ -31,7 +31,7 @@ object CreateJobOutput {
     
     inline def setArtifactListUndefined: Self = StObject.set(x, "ArtifactList", js.undefined)
     
-    inline def setArtifactListVarargs(value: Artifact*): Self = StObject.set(x, "ArtifactList", js.Array(value :_*))
+    inline def setArtifactListVarargs(value: Artifact*): Self = StObject.set(x, "ArtifactList", js.Array(value*))
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

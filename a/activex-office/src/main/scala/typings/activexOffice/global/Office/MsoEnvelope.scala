@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.MsoEnvelope")
 @js.native
-/* private */ class MsoEnvelope ()
+/* private */ open class MsoEnvelope ()
   extends StObject
      with typings.activexOffice.Office.MsoEnvelope {
   
@@ -31,5 +31,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotMsoEnvelope_typekey: typings.activexOffice.Office.MsoEnvelope = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
 }

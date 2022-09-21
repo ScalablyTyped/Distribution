@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * `Backend` defines the backend configuration for a service.
-  */
 trait SchemaBackend extends StObject {
   
   /**
-    * A list of API backend rules that apply to individual API methods.
-    * **NOTE:** All service configuration rules follow &quot;last one
-    * wins&quot; order.
+    * A list of API backend rules that apply to individual API methods. **NOTE:** All service configuration rules follow "last one wins" order.
     */
   var rules: js.UndefOr[js.Array[SchemaBackendRule]] = js.undefined
 }
@@ -29,6 +24,6 @@ object SchemaBackend {
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: SchemaBackendRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: SchemaBackendRule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

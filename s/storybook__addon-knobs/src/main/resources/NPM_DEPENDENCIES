@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/addon-knobs" : "6.1.2"
+      "@storybook/addon-knobs" : "6.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/addon-knobs" : "6.1.2"
+      "@storybook/addon-knobs" : "6.4.0"
     }
   ],
   "compile-devDependencies" : [

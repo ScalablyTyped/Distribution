@@ -12,7 +12,7 @@ trait DescribeCoipPoolsRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The filters. The following are the possible values:    coip-pool.pool-id       coip-pool.local-gateway-route-table-id   
+    * One or more filters.    coip-pool.local-gateway-route-table-id - The ID of the local gateway route table.    coip-pool.pool-id - The ID of the address pool.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
@@ -48,7 +48,7 @@ object DescribeCoipPoolsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: CoipPoolMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -62,6 +62,6 @@ object DescribeCoipPoolsRequest {
     
     inline def setPoolIdsUndefined: Self = StObject.set(x, "PoolIds", js.undefined)
     
-    inline def setPoolIdsVarargs(value: CoipPoolId*): Self = StObject.set(x, "PoolIds", js.Array(value :_*))
+    inline def setPoolIdsVarargs(value: Ipv4PoolCoipId*): Self = StObject.set(x, "PoolIds", js.Array(value*))
   }
 }

@@ -1,7 +1,5 @@
 package typings.vueClassComponent
 
-import typings.vue.vueMod.Vue
-import typings.vue.vueMod.VueConstructor
 import typings.vueClassComponent.declarationsMod.VueClass
 import typings.vueClassComponent.vueClassComponentBooleans.`false`
 import org.scalablytyped.runtime.StObject
@@ -14,7 +12,12 @@ object reflectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def copyReflectionMetadata(to: VueConstructor[Vue], from: VueClass[Vue]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyReflectionMetadata")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def copyReflectionMetadata(
+    to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor */ Any,
+    from: VueClass[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyReflectionMetadata")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def reflectionIsSupported(): `false` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Reflect.getOwnMetadataKeys */ js.Any) = ^.asInstanceOf[js.Dynamic].applyDynamic("reflectionIsSupported")().asInstanceOf[`false` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Reflect.getOwnMetadataKeys */ js.Any)]
+  inline def reflectionIsSupported(): `false` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Reflect.getOwnMetadataKeys */ Any) = ^.asInstanceOf[js.Dynamic].applyDynamic("reflectionIsSupported")().asInstanceOf[`false` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Reflect.getOwnMetadataKeys */ Any)]
 }

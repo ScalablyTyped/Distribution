@@ -9,11 +9,10 @@ object stepsDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/steps/demo/basic", JSImport.Default)
   @js.native
-  class default protected () extends BasicTimelineExample {
-    def this(props: js.Any) = this()
+  open class default protected () extends BasicTimelineExample {
+    def this(props: Any) = this()
   }
   
   @js.native
-  trait BasicTimelineExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait BasicTimelineExample extends Component[Any, Any, Any]
 }

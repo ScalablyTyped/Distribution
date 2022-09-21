@@ -15,6 +15,12 @@ trait Image extends StObject {
   /** The properties of the image. */
   var imageProperties: js.UndefOr[ImageProperties] = js.undefined
   
+  /**
+    * Placeholders are page elements that inherit from corresponding placeholders on layouts and masters. If set, the image is a placeholder image and any inherited properties can be
+    * resolved by looking at the parent placeholder identified by the Placeholder.parent_object_id field.
+    */
+  var placeholder: js.UndefOr[Placeholder] = js.undefined
+  
   /** The source URL is the URL used to insert the image. The source URL can be empty. */
   var sourceUrl: js.UndefOr[String] = js.undefined
 }
@@ -34,6 +40,10 @@ object Image {
     inline def setImageProperties(value: ImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
     
     inline def setImagePropertiesUndefined: Self = StObject.set(x, "imageProperties", js.undefined)
+    
+    inline def setPlaceholder(value: Placeholder): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
     inline def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
     

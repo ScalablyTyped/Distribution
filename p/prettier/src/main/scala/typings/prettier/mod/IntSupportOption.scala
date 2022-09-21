@@ -11,7 +11,7 @@ trait IntSupportOption
      with BaseSupportOption[int]
      with _SupportOption {
   
-  var default: Double
+  var default: js.UndefOr[Double] = js.undefined
   
   var array: js.UndefOr[`false`] = js.undefined
   
@@ -19,8 +19,8 @@ trait IntSupportOption
 }
 object IntSupportOption {
   
-  inline def apply(category: String, default: Double, since: String): IntSupportOption = {
-    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
+  inline def apply(category: String, since: String): IntSupportOption = {
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("int")
     __obj.asInstanceOf[IntSupportOption]
   }
@@ -32,6 +32,8 @@ object IntSupportOption {
     inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
     inline def setDefault(value: Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     inline def setRange(value: SupportOptionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

@@ -8,20 +8,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaQueryParameterType extends StObject {
   
   /**
-    * [Optional] The type of the array&#39;s elements, if this is an array.
+    * [Optional] The type of the array's elements, if this is an array.
     */
   var arrayType: js.UndefOr[SchemaQueryParameterType] = js.undefined
   
   /**
-    * [Optional] The types of the fields of this struct, in order, if this is a
-    * struct.
+    * [Optional] The types of the fields of this struct, in order, if this is a struct.
     */
-  var structTypes: js.UndefOr[js.Array[Description]] = js.undefined
+  var structTypes: js.UndefOr[js.Array[Description] | Null] = js.undefined
   
   /**
     * [Required] The top level type of this field.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaQueryParameterType {
   
@@ -38,11 +37,15 @@ object SchemaQueryParameterType {
     
     inline def setStructTypes(value: js.Array[Description]): Self = StObject.set(x, "structTypes", value.asInstanceOf[js.Any])
     
+    inline def setStructTypesNull: Self = StObject.set(x, "structTypes", null)
+    
     inline def setStructTypesUndefined: Self = StObject.set(x, "structTypes", js.undefined)
     
-    inline def setStructTypesVarargs(value: Description*): Self = StObject.set(x, "structTypes", js.Array(value :_*))
+    inline def setStructTypesVarargs(value: Description*): Self = StObject.set(x, "structTypes", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

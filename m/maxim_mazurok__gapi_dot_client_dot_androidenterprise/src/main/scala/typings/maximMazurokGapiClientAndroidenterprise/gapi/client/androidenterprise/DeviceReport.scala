@@ -25,7 +25,7 @@ object DeviceReport {
     
     inline def setAppStateUndefined: Self = StObject.set(x, "appState", js.undefined)
     
-    inline def setAppStateVarargs(value: AppState*): Self = StObject.set(x, "appState", js.Array(value :_*))
+    inline def setAppStateVarargs(value: AppState*): Self = StObject.set(x, "appState", js.Array(value*))
     
     inline def setLastUpdatedTimestampMillis(value: String): Self = StObject.set(x, "lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
     

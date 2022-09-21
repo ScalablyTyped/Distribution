@@ -11,7 +11,7 @@ trait PartialSearchBoxProvided extends StObject {
   
   var isSearchStalled: js.UndefOr[Boolean] = js.undefined
   
-  var refine: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var refine: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
 }
 object PartialSearchBoxProvided {
   
@@ -30,7 +30,7 @@ object PartialSearchBoxProvided {
     
     inline def setIsSearchStalledUndefined: Self = StObject.set(x, "isSearchStalled", js.undefined)
     
-    inline def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
+    inline def setRefine(value: /* repeated */ Any => Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
     
     inline def setRefineUndefined: Self = StObject.set(x, "refine", js.undefined)
   }

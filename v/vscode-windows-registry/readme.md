@@ -10,10 +10,10 @@ A native node module for accessing the windows registry
 | ------------------ | :-------------: |
 | Full name          | vscode-windows-registry |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 551279 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 12763.333333333334 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/Microsoft/vscode-windows-registry#readme)

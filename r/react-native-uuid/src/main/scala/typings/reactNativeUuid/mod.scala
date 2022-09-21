@@ -1,112 +1,103 @@
 package typings.reactNativeUuid
 
-import org.scalablytyped.runtime.Shortcut
-import typings.std.ArrayBuffer
-import typings.std.Date
+import typings.reactNativeUuid.anon.Clockseq
+import typings.reactNativeUuid.anon.Random
+import typings.reactNativeUuid.v35Mod.GenerateUUID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
-  @JSImport("react-native-uuid", JSImport.Namespace)
-  @js.native
-  val ^ : uuid = js.native
-  
-  type _To = uuid
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: uuid = ^
-  
-  @js.native
-  trait uuid extends StObject {
+  object default {
     
-    def noConflict(): String = js.native
+    @JSImport("react-native-uuid", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    def parse(id: String): ArrayBuffer = js.native
-    def parse(id: String, buffer: Unit, offset: Double): ArrayBuffer = js.native
-    def parse(id: String, buffer: ArrayBuffer): ArrayBuffer = js.native
-    def parse(id: String, buffer: ArrayBuffer, offset: Double): ArrayBuffer = js.native
+    @JSImport("react-native-uuid", "default.DNS")
+    @js.native
+    def DNS: String = js.native
+    inline def DNS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DNS")(x.asInstanceOf[js.Any])
     
-    def unparse(): String = js.native
-    def unparse(buffer: Unit, offset: Double): String = js.native
-    def unparse(buffer: ArrayBuffer): String = js.native
-    def unparse(buffer: ArrayBuffer, offset: Double): String = js.native
+    @JSImport("react-native-uuid", "default.NIL")
+    @js.native
+    def NIL: String = js.native
+    inline def NIL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NIL")(x.asInstanceOf[js.Any])
     
-    def v1(): String = js.native
-    def v1(options: Unit, buffer: Unit, offset: Double): String = js.native
-    def v1(options: Unit, buffer: ArrayBuffer): String = js.native
-    def v1(options: Unit, buffer: ArrayBuffer, offset: Double): String = js.native
-    def v1(options: typings.reactNativeUuid.mod.v1): String = js.native
-    def v1(options: typings.reactNativeUuid.mod.v1, buffer: Unit, offset: Double): String = js.native
-    def v1(options: typings.reactNativeUuid.mod.v1, buffer: ArrayBuffer): String = js.native
-    def v1(options: typings.reactNativeUuid.mod.v1, buffer: ArrayBuffer, offset: Double): String = js.native
+    @JSImport("react-native-uuid", "default.OID")
+    @js.native
+    def OID: String = js.native
+    inline def OID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OID")(x.asInstanceOf[js.Any])
     
-    def v4(): String = js.native
-    def v4(options: Unit, buffer: Unit, offset: Double): String = js.native
-    def v4(options: Unit, buffer: ArrayBuffer): String = js.native
-    def v4(options: Unit, buffer: ArrayBuffer, offset: Double): String = js.native
-    def v4(options: typings.reactNativeUuid.mod.v4): String = js.native
-    def v4(options: typings.reactNativeUuid.mod.v4, buffer: Unit, offset: Double): String = js.native
-    def v4(options: typings.reactNativeUuid.mod.v4, buffer: ArrayBuffer): String = js.native
-    def v4(options: typings.reactNativeUuid.mod.v4, buffer: ArrayBuffer, offset: Double): String = js.native
-  }
-  
-  trait v1 extends StObject {
+    @JSImport("react-native-uuid", "default.URL")
+    @js.native
+    def URL: String = js.native
+    inline def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
     
-    var clockseq: Double
+    @JSImport("react-native-uuid", "default.X500")
+    @js.native
+    def X500: String = js.native
+    inline def X500_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("X500")(x.asInstanceOf[js.Any])
     
-    var msecs: Double | Date
+    inline def parse(s: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def parse(s: String, buf: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], buf.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def parse(s: String, buf: js.Array[Double], offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def parse(s: String, buf: Unit, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(s.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    var node: js.Array[Double]
+    inline def unparse(buf: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(buf.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def unparse(buf: js.Array[Double], offset: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    var nsecs: Double
-  }
-  object v1 {
+    inline def v1(): String | js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")().asInstanceOf[String | js.typedarray.Uint8Array]
+    inline def v1(options: Unit, buf: js.typedarray.Uint8Array): String | js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buf.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.Uint8Array]
+    inline def v1(options: Unit, buf: js.typedarray.Uint8Array, offset: Double): String | js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.Uint8Array]
+    inline def v1(options: Unit, buf: Unit, offset: Double): String | js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.Uint8Array]
+    inline def v1(options: Clockseq): String | js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any]).asInstanceOf[String | js.typedarray.Uint8Array]
+    inline def v1(options: Clockseq, buf: js.typedarray.Uint8Array): String | js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buf.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.Uint8Array]
+    inline def v1(options: Clockseq, buf: js.typedarray.Uint8Array, offset: Double): String | js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.Uint8Array]
+    inline def v1(options: Clockseq, buf: Unit, offset: Double): String | js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.Uint8Array]
     
-    inline def apply(clockseq: Double, msecs: Double | Date, node: js.Array[Double], nsecs: Double): v1 = {
-      val __obj = js.Dynamic.literal(clockseq = clockseq.asInstanceOf[js.Any], msecs = msecs.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], nsecs = nsecs.asInstanceOf[js.Any])
-      __obj.asInstanceOf[v1]
-    }
+    inline def v4(): String | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[String | js.Array[Double]]
+    inline def v4(options: String): String | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[Double]]
+    inline def v4(options: String, buf: js.Array[Double]): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buf.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v4(options: String, buf: js.Array[Double], offset: Double): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v4(options: String, buf: Unit, offset: Double): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v4(options: Unit, buf: js.Array[Double]): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buf.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v4(options: Unit, buf: js.Array[Double], offset: Double): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v4(options: Unit, buf: Unit, offset: Double): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v4(options: Random): String | js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[Double]]
+    inline def v4(options: Random, buf: js.Array[Double]): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buf.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v4(options: Random, buf: js.Array[Double], offset: Double): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v4(options: Random, buf: Unit, offset: Double): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
     
-    extension [Self <: v1](x: Self) {
-      
-      inline def setClockseq(value: Double): Self = StObject.set(x, "clockseq", value.asInstanceOf[js.Any])
-      
-      inline def setMsecs(value: Double | Date): Self = StObject.set(x, "msecs", value.asInstanceOf[js.Any])
-      
-      inline def setNode(value: js.Array[Double]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
-      
-      inline def setNodeVarargs(value: Double*): Self = StObject.set(x, "node", js.Array(value :_*))
-      
-      inline def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait v4 extends StObject {
+    @JSImport("react-native-uuid", "default.v5")
+    @js.native
+    def v5: GenerateUUID = js.native
+    inline def v5(value: String, namespace: String): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5(value: String, namespace: String, buf: js.Array[Double]): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], buf.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5(value: String, namespace: String, buf: js.Array[Double], offset: Double): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5(value: String, namespace: String, buf: Unit, offset: Double): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5(value: String, namespace: js.Array[Double]): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5(value: String, namespace: js.Array[Double], buf: js.Array[Double]): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], buf.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5(value: String, namespace: js.Array[Double], buf: js.Array[Double], offset: Double): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5(value: String, namespace: js.Array[Double], buf: Unit, offset: Double): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5(value: js.typedarray.Uint8Array, namespace: String): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5(value: js.typedarray.Uint8Array, namespace: String, buf: js.Array[Double]): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], buf.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5(value: js.typedarray.Uint8Array, namespace: String, buf: js.Array[Double], offset: Double): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5(value: js.typedarray.Uint8Array, namespace: String, buf: Unit, offset: Double): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5(value: js.typedarray.Uint8Array, namespace: js.Array[Double]): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5(value: js.typedarray.Uint8Array, namespace: js.Array[Double], buf: js.Array[Double]): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], buf.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5(
+      value: js.typedarray.Uint8Array,
+      namespace: js.Array[Double],
+      buf: js.Array[Double],
+      offset: Double
+    ): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5(value: js.typedarray.Uint8Array, namespace: js.Array[Double], buf: Unit, offset: Double): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+    inline def v5_=(x: GenerateUUID): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v5")(x.asInstanceOf[js.Any])
     
-    var random: js.UndefOr[js.Array[Double]] = js.undefined
+    inline def validate(uuid: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(uuid.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    var rng: js.UndefOr[js.Function1[/* args */ js.Any, Unit]] = js.undefined
-  }
-  object v4 {
-    
-    inline def apply(): v4 = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[v4]
-    }
-    
-    extension [Self <: v4](x: Self) {
-      
-      inline def setRandom(value: js.Array[Double]): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
-      
-      inline def setRandomUndefined: Self = StObject.set(x, "random", js.undefined)
-      
-      inline def setRandomVarargs(value: Double*): Self = StObject.set(x, "random", js.Array(value :_*))
-      
-      inline def setRng(value: /* args */ js.Any => Unit): Self = StObject.set(x, "rng", js.Any.fromFunction1(value))
-      
-      inline def setRngUndefined: Self = StObject.set(x, "rng", js.undefined)
-    }
+    inline def version(uuid: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("version")(uuid.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
 }

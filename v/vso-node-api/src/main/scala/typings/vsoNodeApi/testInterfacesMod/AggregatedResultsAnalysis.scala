@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AggregatedResultsAnalysis extends StObject {
   
-  var duration: js.Any
+  var duration: Any
   
   var notReportedResultsByOutcome: NumberDictionary[AggregatedResultsByOutcome]
   
@@ -22,7 +22,7 @@ trait AggregatedResultsAnalysis extends StObject {
 object AggregatedResultsAnalysis {
   
   inline def apply(
-    duration: js.Any,
+    duration: Any,
     notReportedResultsByOutcome: NumberDictionary[AggregatedResultsByOutcome],
     previousContext: TestResultsContext,
     resultsByOutcome: NumberDictionary[AggregatedResultsByOutcome],
@@ -35,7 +35,7 @@ object AggregatedResultsAnalysis {
   
   extension [Self <: AggregatedResultsAnalysis](x: Self) {
     
-    inline def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
     inline def setNotReportedResultsByOutcome(value: NumberDictionary[AggregatedResultsByOutcome]): Self = StObject.set(x, "notReportedResultsByOutcome", value.asInstanceOf[js.Any])
     

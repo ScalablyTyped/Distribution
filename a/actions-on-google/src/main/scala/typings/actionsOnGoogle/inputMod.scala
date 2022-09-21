@@ -11,7 +11,7 @@ object inputMod {
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/input", "Input")
   @js.native
   /** @hidden */
-  class Input () extends StObject {
+  open class Input () extends StObject {
     def this(input: GoogleActionsV2RawInput) = this()
     
     /**

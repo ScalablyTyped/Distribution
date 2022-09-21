@@ -13,7 +13,7 @@ trait PageOptions extends StObject {
   /**
     * 页面的初始数据
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /**
     * 生命周期函数--监听页面隐藏
@@ -72,7 +72,7 @@ trait PageOptions extends StObject {
   /**
     * 当前是 tab 页时，点击 tab 时触发
     */
-  var onTabItemTap: js.UndefOr[js.Function1[/* item */ js.Any, Unit]] = js.undefined
+  var onTabItemTap: js.UndefOr[js.Function1[/* item */ Any, Unit]] = js.undefined
   
   /**
     * 生命周期函数--监听页面卸载
@@ -88,7 +88,7 @@ object PageOptions {
   
   extension [Self <: PageOptions](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -124,7 +124,7 @@ object PageOptions {
     
     inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
-    inline def setOnTabItemTap(value: /* item */ js.Any => Unit): Self = StObject.set(x, "onTabItemTap", js.Any.fromFunction1(value))
+    inline def setOnTabItemTap(value: /* item */ Any => Unit): Self = StObject.set(x, "onTabItemTap", js.Any.fromFunction1(value))
     
     inline def setOnTabItemTapUndefined: Self = StObject.set(x, "onTabItemTap", js.undefined)
     

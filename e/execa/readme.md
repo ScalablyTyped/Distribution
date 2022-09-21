@@ -1,7 +1,7 @@
 
 # Scala.js typings for execa
 
-Typings are for version 4.1.0
+Typings are for version 6.1.0
 
 ## Library description:
 Process execution for humans
@@ -10,10 +10,10 @@ Process execution for humans
 | ------------------ | :-------------: |
 | Full name          | execa |
 | Keywords           | exec, child, process, execute, fork, execfile, spawn, file, shell, bin, binary, binaries, npm, path, local |
-| # releases         | 19 |
-| # dependents       | 5104 |
-| # downloads        | 1545228741 |
-| # stars            | 41 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 2.3663865833333334E8 |
+| # stars            | 4733.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/execa#readme)

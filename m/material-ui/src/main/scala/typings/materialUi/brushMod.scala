@@ -10,10 +10,10 @@ object brushMod {
   
   @JSImport("material-ui/svg-icons/image/brush", JSImport.Default)
   @js.native
-  class default () extends ImageBrush
+  open class default () extends ImageBrush
   
   @JSImport("material-ui/svg-icons/image/brush", "ImageBrush")
   @js.native
-  class ImageBrush ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageBrush ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

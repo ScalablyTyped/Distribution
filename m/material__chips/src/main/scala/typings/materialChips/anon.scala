@@ -1,8 +1,18 @@
 package typings.materialChips
 
-import typings.materialChips.chipConstantsMod.EventSource
+import typings.materialChips.chipConstantsMod.MDCChipAnimation
+import typings.materialChips.chipConstantsMod.MDCChipAttributes
+import typings.materialChips.chipConstantsMod.MDCChipCssClasses
+import typings.materialChips.chipConstantsMod.MDCChipEvents
+import typings.materialChips.chipSetConstantsMod.MDCChipSetAttributes
+import typings.materialChips.chipSetConstantsMod.MDCChipSetEvents
+import typings.materialChips.constantsMod.MDCChipActionAttributes
+import typings.materialChips.constantsMod.MDCChipActionEvents
+import typings.materialChips.constantsMod.MDCChipActionFocusBehavior
+import typings.materialChips.constantsMod.MDCChipActionType
+import typings.materialChips.deprecatedChipConstantsMod.EventSource
 import typings.materialChips.trailingactionConstantsMod.InteractionTrigger
-import typings.std.ClientRect
+import typings.std.DOMRect
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -320,8 +330,176 @@ object anon {
     }
   }
   
+  /* Inlined std.Partial<@material/chips.@material/chips/action/adapter.MDCChipActionAdapter> */
+  trait PartialMDCChipActionAdapt extends StObject {
+    
+    var emitEvent: js.UndefOr[js.Function2[/* name */ MDCChipActionEvents, /* detail */ js.Object, Unit]] = js.undefined
+    
+    var focus: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var getAttribute: js.UndefOr[js.Function1[/* attr */ MDCChipActionAttributes, String | Null]] = js.undefined
+    
+    var getElementID: js.UndefOr[js.Function0[String]] = js.undefined
+    
+    var removeAttribute: js.UndefOr[js.Function1[/* attr */ MDCChipActionAttributes, Unit]] = js.undefined
+    
+    var setAttribute: js.UndefOr[js.Function2[/* attr */ MDCChipActionAttributes, /* value */ String, Unit]] = js.undefined
+  }
+  object PartialMDCChipActionAdapt {
+    
+    inline def apply(): PartialMDCChipActionAdapt = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialMDCChipActionAdapt]
+    }
+    
+    extension [Self <: PartialMDCChipActionAdapt](x: Self) {
+      
+      inline def setEmitEvent(value: (/* name */ MDCChipActionEvents, /* detail */ js.Object) => Unit): Self = StObject.set(x, "emitEvent", js.Any.fromFunction2(value))
+      
+      inline def setEmitEventUndefined: Self = StObject.set(x, "emitEvent", js.undefined)
+      
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      
+      inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+      
+      inline def setGetAttribute(value: /* attr */ MDCChipActionAttributes => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+      
+      inline def setGetAttributeUndefined: Self = StObject.set(x, "getAttribute", js.undefined)
+      
+      inline def setGetElementID(value: () => String): Self = StObject.set(x, "getElementID", js.Any.fromFunction0(value))
+      
+      inline def setGetElementIDUndefined: Self = StObject.set(x, "getElementID", js.undefined)
+      
+      inline def setRemoveAttribute(value: /* attr */ MDCChipActionAttributes => Unit): Self = StObject.set(x, "removeAttribute", js.Any.fromFunction1(value))
+      
+      inline def setRemoveAttributeUndefined: Self = StObject.set(x, "removeAttribute", js.undefined)
+      
+      inline def setSetAttribute(value: (/* attr */ MDCChipActionAttributes, /* value */ String) => Unit): Self = StObject.set(x, "setAttribute", js.Any.fromFunction2(value))
+      
+      inline def setSetAttributeUndefined: Self = StObject.set(x, "setAttribute", js.undefined)
+    }
+  }
+  
   /* Inlined std.Partial<@material/chips.@material/chips/chip/adapter.MDCChipAdapter> */
   trait PartialMDCChipAdapter extends StObject {
+    
+    var addClass: js.UndefOr[js.Function1[/* className */ MDCChipCssClasses, Unit]] = js.undefined
+    
+    var emitEvent: js.UndefOr[js.Function2[/* eventName */ MDCChipEvents, /* eventDetail */ js.Object, Unit]] = js.undefined
+    
+    var getActions: js.UndefOr[js.Function0[js.Array[MDCChipActionType]]] = js.undefined
+    
+    var getAttribute: js.UndefOr[js.Function1[/* attrName */ MDCChipAttributes, String | Null]] = js.undefined
+    
+    var getElementID: js.UndefOr[js.Function0[String]] = js.undefined
+    
+    var getOffsetWidth: js.UndefOr[js.Function0[Double]] = js.undefined
+    
+    var hasClass: js.UndefOr[js.Function1[/* className */ MDCChipCssClasses, Boolean]] = js.undefined
+    
+    var isActionDisabled: js.UndefOr[js.Function1[/* action */ MDCChipActionType, Boolean]] = js.undefined
+    
+    var isActionFocusable: js.UndefOr[js.Function1[/* action */ MDCChipActionType, Boolean]] = js.undefined
+    
+    var isActionSelectable: js.UndefOr[js.Function1[/* action */ MDCChipActionType, Boolean]] = js.undefined
+    
+    var isActionSelected: js.UndefOr[js.Function1[/* action */ MDCChipActionType, Boolean]] = js.undefined
+    
+    var isRTL: js.UndefOr[js.Function0[Boolean]] = js.undefined
+    
+    var removeClass: js.UndefOr[js.Function1[/* className */ MDCChipCssClasses, Unit]] = js.undefined
+    
+    var setActionDisabled: js.UndefOr[js.Function2[/* action */ MDCChipActionType, /* isDisabled */ Boolean, Unit]] = js.undefined
+    
+    var setActionFocus: js.UndefOr[
+        js.Function2[/* action */ MDCChipActionType, /* behavior */ MDCChipActionFocusBehavior, Unit]
+      ] = js.undefined
+    
+    var setActionSelected: js.UndefOr[js.Function2[/* action */ MDCChipActionType, /* isSelected */ Boolean, Unit]] = js.undefined
+    
+    var setStyleProperty: js.UndefOr[js.Function2[/* property */ String, /* value */ String, Unit]] = js.undefined
+  }
+  object PartialMDCChipAdapter {
+    
+    inline def apply(): PartialMDCChipAdapter = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialMDCChipAdapter]
+    }
+    
+    extension [Self <: PartialMDCChipAdapter](x: Self) {
+      
+      inline def setAddClass(value: /* className */ MDCChipCssClasses => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      
+      inline def setAddClassUndefined: Self = StObject.set(x, "addClass", js.undefined)
+      
+      inline def setEmitEvent(value: (/* eventName */ MDCChipEvents, /* eventDetail */ js.Object) => Unit): Self = StObject.set(x, "emitEvent", js.Any.fromFunction2(value))
+      
+      inline def setEmitEventUndefined: Self = StObject.set(x, "emitEvent", js.undefined)
+      
+      inline def setGetActions(value: () => js.Array[MDCChipActionType]): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
+      
+      inline def setGetActionsUndefined: Self = StObject.set(x, "getActions", js.undefined)
+      
+      inline def setGetAttribute(value: /* attrName */ MDCChipAttributes => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+      
+      inline def setGetAttributeUndefined: Self = StObject.set(x, "getAttribute", js.undefined)
+      
+      inline def setGetElementID(value: () => String): Self = StObject.set(x, "getElementID", js.Any.fromFunction0(value))
+      
+      inline def setGetElementIDUndefined: Self = StObject.set(x, "getElementID", js.undefined)
+      
+      inline def setGetOffsetWidth(value: () => Double): Self = StObject.set(x, "getOffsetWidth", js.Any.fromFunction0(value))
+      
+      inline def setGetOffsetWidthUndefined: Self = StObject.set(x, "getOffsetWidth", js.undefined)
+      
+      inline def setHasClass(value: /* className */ MDCChipCssClasses => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      
+      inline def setHasClassUndefined: Self = StObject.set(x, "hasClass", js.undefined)
+      
+      inline def setIsActionDisabled(value: /* action */ MDCChipActionType => Boolean): Self = StObject.set(x, "isActionDisabled", js.Any.fromFunction1(value))
+      
+      inline def setIsActionDisabledUndefined: Self = StObject.set(x, "isActionDisabled", js.undefined)
+      
+      inline def setIsActionFocusable(value: /* action */ MDCChipActionType => Boolean): Self = StObject.set(x, "isActionFocusable", js.Any.fromFunction1(value))
+      
+      inline def setIsActionFocusableUndefined: Self = StObject.set(x, "isActionFocusable", js.undefined)
+      
+      inline def setIsActionSelectable(value: /* action */ MDCChipActionType => Boolean): Self = StObject.set(x, "isActionSelectable", js.Any.fromFunction1(value))
+      
+      inline def setIsActionSelectableUndefined: Self = StObject.set(x, "isActionSelectable", js.undefined)
+      
+      inline def setIsActionSelected(value: /* action */ MDCChipActionType => Boolean): Self = StObject.set(x, "isActionSelected", js.Any.fromFunction1(value))
+      
+      inline def setIsActionSelectedUndefined: Self = StObject.set(x, "isActionSelected", js.undefined)
+      
+      inline def setIsRTL(value: () => Boolean): Self = StObject.set(x, "isRTL", js.Any.fromFunction0(value))
+      
+      inline def setIsRTLUndefined: Self = StObject.set(x, "isRTL", js.undefined)
+      
+      inline def setRemoveClass(value: /* className */ MDCChipCssClasses => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      
+      inline def setRemoveClassUndefined: Self = StObject.set(x, "removeClass", js.undefined)
+      
+      inline def setSetActionDisabled(value: (/* action */ MDCChipActionType, /* isDisabled */ Boolean) => Unit): Self = StObject.set(x, "setActionDisabled", js.Any.fromFunction2(value))
+      
+      inline def setSetActionDisabledUndefined: Self = StObject.set(x, "setActionDisabled", js.undefined)
+      
+      inline def setSetActionFocus(value: (/* action */ MDCChipActionType, /* behavior */ MDCChipActionFocusBehavior) => Unit): Self = StObject.set(x, "setActionFocus", js.Any.fromFunction2(value))
+      
+      inline def setSetActionFocusUndefined: Self = StObject.set(x, "setActionFocus", js.undefined)
+      
+      inline def setSetActionSelected(value: (/* action */ MDCChipActionType, /* isSelected */ Boolean) => Unit): Self = StObject.set(x, "setActionSelected", js.Any.fromFunction2(value))
+      
+      inline def setSetActionSelectedUndefined: Self = StObject.set(x, "setActionSelected", js.undefined)
+      
+      inline def setSetStyleProperty(value: (/* property */ String, /* value */ String) => Unit): Self = StObject.set(x, "setStyleProperty", js.Any.fromFunction2(value))
+      
+      inline def setSetStylePropertyUndefined: Self = StObject.set(x, "setStyleProperty", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<@material/chips.@material/chips/deprecated/chip/adapter.MDCChipAdapter> */
+  trait PartialMDCChipAdapterAddClass extends StObject {
     
     var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
@@ -335,11 +513,11 @@ object anon {
     
     var getAttribute: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.undefined
     
-    var getCheckmarkBoundingClientRect: js.UndefOr[js.Function0[ClientRect | Null]] = js.undefined
+    var getCheckmarkBoundingClientRect: js.UndefOr[js.Function0[DOMRect | Null]] = js.undefined
     
     var getComputedStyleValue: js.UndefOr[js.Function1[/* propertyName */ String, String]] = js.undefined
     
-    var getRootBoundingClientRect: js.UndefOr[js.Function0[ClientRect]] = js.undefined
+    var getRootBoundingClientRect: js.UndefOr[js.Function0[DOMRect]] = js.undefined
     
     var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
@@ -373,14 +551,14 @@ object anon {
     
     var setStyleProperty: js.UndefOr[js.Function2[/* propertyName */ String, /* value */ String, Unit]] = js.undefined
   }
-  object PartialMDCChipAdapter {
+  object PartialMDCChipAdapterAddClass {
     
-    inline def apply(): PartialMDCChipAdapter = {
+    inline def apply(): PartialMDCChipAdapterAddClass = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialMDCChipAdapter]
+      __obj.asInstanceOf[PartialMDCChipAdapterAddClass]
     }
     
-    extension [Self <: PartialMDCChipAdapter](x: Self) {
+    extension [Self <: PartialMDCChipAdapterAddClass](x: Self) {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
@@ -406,7 +584,7 @@ object anon {
       
       inline def setGetAttributeUndefined: Self = StObject.set(x, "getAttribute", js.undefined)
       
-      inline def setGetCheckmarkBoundingClientRect(value: () => ClientRect | Null): Self = StObject.set(x, "getCheckmarkBoundingClientRect", js.Any.fromFunction0(value))
+      inline def setGetCheckmarkBoundingClientRect(value: () => DOMRect | Null): Self = StObject.set(x, "getCheckmarkBoundingClientRect", js.Any.fromFunction0(value))
       
       inline def setGetCheckmarkBoundingClientRectUndefined: Self = StObject.set(x, "getCheckmarkBoundingClientRect", js.undefined)
       
@@ -414,7 +592,7 @@ object anon {
       
       inline def setGetComputedStyleValueUndefined: Self = StObject.set(x, "getComputedStyleValue", js.undefined)
       
-      inline def setGetRootBoundingClientRect(value: () => ClientRect): Self = StObject.set(x, "getRootBoundingClientRect", js.Any.fromFunction0(value))
+      inline def setGetRootBoundingClientRect(value: () => DOMRect): Self = StObject.set(x, "getRootBoundingClientRect", js.Any.fromFunction0(value))
       
       inline def setGetRootBoundingClientRectUndefined: Self = StObject.set(x, "getRootBoundingClientRect", js.undefined)
       
@@ -489,6 +667,117 @@ object anon {
     
     var announceMessage: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
     
+    var emitEvent: js.UndefOr[
+        js.Function2[/* eventName */ MDCChipSetEvents, /* eventDetail */ js.Object, Unit]
+      ] = js.undefined
+    
+    var getAttribute: js.UndefOr[js.Function1[/* attrName */ MDCChipSetAttributes, String | Null]] = js.undefined
+    
+    var getChipActionsAtIndex: js.UndefOr[js.Function1[/* index */ Double, js.Array[MDCChipActionType]]] = js.undefined
+    
+    var getChipCount: js.UndefOr[js.Function0[Double]] = js.undefined
+    
+    var getChipIdAtIndex: js.UndefOr[js.Function1[/* index */ Double, String]] = js.undefined
+    
+    var getChipIndexById: js.UndefOr[js.Function1[/* chipID */ String, Double]] = js.undefined
+    
+    var isChipFocusableAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* actionType */ MDCChipActionType, Boolean]] = js.undefined
+    
+    var isChipSelectableAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* actionType */ MDCChipActionType, Boolean]] = js.undefined
+    
+    var isChipSelectedAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* actionType */ MDCChipActionType, Boolean]] = js.undefined
+    
+    var removeChipAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
+    
+    var setChipFocusAtIndex: js.UndefOr[
+        js.Function3[
+          /* index */ Double, 
+          /* action */ MDCChipActionType, 
+          /* focus */ MDCChipActionFocusBehavior, 
+          Unit
+        ]
+      ] = js.undefined
+    
+    var setChipSelectedAtIndex: js.UndefOr[
+        js.Function3[/* index */ Double, /* actionType */ MDCChipActionType, /* isSelected */ Boolean, Unit]
+      ] = js.undefined
+    
+    var startChipAnimationAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* animation */ MDCChipAnimation, Unit]] = js.undefined
+  }
+  object PartialMDCChipSetAdapter {
+    
+    inline def apply(): PartialMDCChipSetAdapter = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialMDCChipSetAdapter]
+    }
+    
+    extension [Self <: PartialMDCChipSetAdapter](x: Self) {
+      
+      inline def setAnnounceMessage(value: /* message */ String => Unit): Self = StObject.set(x, "announceMessage", js.Any.fromFunction1(value))
+      
+      inline def setAnnounceMessageUndefined: Self = StObject.set(x, "announceMessage", js.undefined)
+      
+      inline def setEmitEvent(value: (/* eventName */ MDCChipSetEvents, /* eventDetail */ js.Object) => Unit): Self = StObject.set(x, "emitEvent", js.Any.fromFunction2(value))
+      
+      inline def setEmitEventUndefined: Self = StObject.set(x, "emitEvent", js.undefined)
+      
+      inline def setGetAttribute(value: /* attrName */ MDCChipSetAttributes => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+      
+      inline def setGetAttributeUndefined: Self = StObject.set(x, "getAttribute", js.undefined)
+      
+      inline def setGetChipActionsAtIndex(value: /* index */ Double => js.Array[MDCChipActionType]): Self = StObject.set(x, "getChipActionsAtIndex", js.Any.fromFunction1(value))
+      
+      inline def setGetChipActionsAtIndexUndefined: Self = StObject.set(x, "getChipActionsAtIndex", js.undefined)
+      
+      inline def setGetChipCount(value: () => Double): Self = StObject.set(x, "getChipCount", js.Any.fromFunction0(value))
+      
+      inline def setGetChipCountUndefined: Self = StObject.set(x, "getChipCount", js.undefined)
+      
+      inline def setGetChipIdAtIndex(value: /* index */ Double => String): Self = StObject.set(x, "getChipIdAtIndex", js.Any.fromFunction1(value))
+      
+      inline def setGetChipIdAtIndexUndefined: Self = StObject.set(x, "getChipIdAtIndex", js.undefined)
+      
+      inline def setGetChipIndexById(value: /* chipID */ String => Double): Self = StObject.set(x, "getChipIndexById", js.Any.fromFunction1(value))
+      
+      inline def setGetChipIndexByIdUndefined: Self = StObject.set(x, "getChipIndexById", js.undefined)
+      
+      inline def setIsChipFocusableAtIndex(value: (/* index */ Double, /* actionType */ MDCChipActionType) => Boolean): Self = StObject.set(x, "isChipFocusableAtIndex", js.Any.fromFunction2(value))
+      
+      inline def setIsChipFocusableAtIndexUndefined: Self = StObject.set(x, "isChipFocusableAtIndex", js.undefined)
+      
+      inline def setIsChipSelectableAtIndex(value: (/* index */ Double, /* actionType */ MDCChipActionType) => Boolean): Self = StObject.set(x, "isChipSelectableAtIndex", js.Any.fromFunction2(value))
+      
+      inline def setIsChipSelectableAtIndexUndefined: Self = StObject.set(x, "isChipSelectableAtIndex", js.undefined)
+      
+      inline def setIsChipSelectedAtIndex(value: (/* index */ Double, /* actionType */ MDCChipActionType) => Boolean): Self = StObject.set(x, "isChipSelectedAtIndex", js.Any.fromFunction2(value))
+      
+      inline def setIsChipSelectedAtIndexUndefined: Self = StObject.set(x, "isChipSelectedAtIndex", js.undefined)
+      
+      inline def setRemoveChipAtIndex(value: /* index */ Double => Unit): Self = StObject.set(x, "removeChipAtIndex", js.Any.fromFunction1(value))
+      
+      inline def setRemoveChipAtIndexUndefined: Self = StObject.set(x, "removeChipAtIndex", js.undefined)
+      
+      inline def setSetChipFocusAtIndex(
+        value: (/* index */ Double, /* action */ MDCChipActionType, /* focus */ MDCChipActionFocusBehavior) => Unit
+      ): Self = StObject.set(x, "setChipFocusAtIndex", js.Any.fromFunction3(value))
+      
+      inline def setSetChipFocusAtIndexUndefined: Self = StObject.set(x, "setChipFocusAtIndex", js.undefined)
+      
+      inline def setSetChipSelectedAtIndex(value: (/* index */ Double, /* actionType */ MDCChipActionType, /* isSelected */ Boolean) => Unit): Self = StObject.set(x, "setChipSelectedAtIndex", js.Any.fromFunction3(value))
+      
+      inline def setSetChipSelectedAtIndexUndefined: Self = StObject.set(x, "setChipSelectedAtIndex", js.undefined)
+      
+      inline def setStartChipAnimationAtIndex(value: (/* index */ Double, /* animation */ MDCChipAnimation) => Unit): Self = StObject.set(x, "startChipAnimationAtIndex", js.Any.fromFunction2(value))
+      
+      inline def setStartChipAnimationAtIndexUndefined: Self = StObject.set(x, "startChipAnimationAtIndex", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<@material/chips.@material/chips/deprecated/chip-set/adapter.MDCChipSetAdapter> */
+  trait PartialMDCChipSetAdapterAnnounceMessage extends StObject {
+    
+    var announceMessage: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
+    
     var focusChipPrimaryActionAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
     var focusChipTrailingActionAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
@@ -509,14 +798,14 @@ object anon {
         js.Function3[/* index */ Double, /* isSelected */ Boolean, /* shouldNotifyClients */ Boolean, Unit]
       ] = js.undefined
   }
-  object PartialMDCChipSetAdapter {
+  object PartialMDCChipSetAdapterAnnounceMessage {
     
-    inline def apply(): PartialMDCChipSetAdapter = {
+    inline def apply(): PartialMDCChipSetAdapterAnnounceMessage = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialMDCChipSetAdapter]
+      __obj.asInstanceOf[PartialMDCChipSetAdapterAnnounceMessage]
     }
     
-    extension [Self <: PartialMDCChipSetAdapter](x: Self) {
+    extension [Self <: PartialMDCChipSetAdapterAnnounceMessage](x: Self) {
       
       inline def setAnnounceMessage(value: /* message */ String => Unit): Self = StObject.set(x, "announceMessage", js.Any.fromFunction1(value))
       
@@ -560,7 +849,7 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<@material/chips.@material/chips/trailingaction/adapter.MDCChipTrailingActionAdapter> */
+  /* Inlined std.Partial<@material/chips.@material/chips/deprecated/trailingaction/adapter.MDCChipTrailingActionAdapter> */
   trait PartialMDCChipTrailingAct extends StObject {
     
     var focus: js.UndefOr[js.Function0[Unit]] = js.undefined

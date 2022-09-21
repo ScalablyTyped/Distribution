@@ -8,7 +8,7 @@ object clientMod {
   
   @JSImport("blocking-proxy/built/lib/client", "BPClient")
   @js.native
-  class BPClient protected () extends StObject {
+  open class BPClient protected () extends StObject {
     def this(bpUrlValue: String) = this()
     
     var hostname: String = js.native
@@ -23,7 +23,7 @@ object clientMod {
       * @param enabled Whether or not to enable waiting for angular.
       * @returns {Promise<T>}
       */
-    def setWaitEnabled(enabled: Boolean): js.Promise[js.Any] = js.native
+    def setWaitEnabled(enabled: Boolean): js.Promise[Any] = js.native
     
     /**
       * Set the selector used to find the root element of the Angular application to wait for. See
@@ -31,6 +31,6 @@ object clientMod {
       *
       * @param selector A selector, or empty string to wait for all Angular apps.
       */
-    def setWaitParams(rootSelector: String): js.Promise[js.Any] = js.native
+    def setWaitParams(rootSelector: String): js.Promise[Any] = js.native
   }
 }

@@ -171,7 +171,7 @@ object YouTubeAnalytics {
         
         inline def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
         
-        inline def setArgumentVarargs(value: String*): Self = StObject.set(x, "argument", js.Array(value :_*))
+        inline def setArgumentVarargs(value: String*): Self = StObject.set(x, "argument", js.Array(value*))
         
         inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -224,7 +224,7 @@ object YouTubeAnalytics {
         
         inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
         
-        inline def setErrorVarargs(value: ErrorProto*): Self = StObject.set(x, "error", js.Array(value :_*))
+        inline def setErrorVarargs(value: ErrorProto*): Self = StObject.set(x, "error", js.Array(value*))
         
         inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
         
@@ -436,7 +436,7 @@ object YouTubeAnalytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: GroupItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: GroupItem*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -477,7 +477,7 @@ object YouTubeAnalytics {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Group*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Group*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -497,7 +497,7 @@ object YouTubeAnalytics {
       
       var kind: js.UndefOr[String] = js.undefined
       
-      var rows: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+      var rows: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
     }
     object QueryResponse {
       
@@ -512,7 +512,7 @@ object YouTubeAnalytics {
         
         inline def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
         
-        inline def setColumnHeadersVarargs(value: ResultTableColumnHeader*): Self = StObject.set(x, "columnHeaders", js.Array(value :_*))
+        inline def setColumnHeadersVarargs(value: ResultTableColumnHeader*): Self = StObject.set(x, "columnHeaders", js.Array(value*))
         
         inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
@@ -522,11 +522,11 @@ object YouTubeAnalytics {
         
         inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        inline def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+        inline def setRows(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
         
         inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
         
-        inline def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+        inline def setRowsVarargs(value: js.Array[Any]*): Self = StObject.set(x, "rows", js.Array(value*))
       }
     }
     

@@ -17,5 +17,5 @@ trait VisualVariableConstructor
 Instantiable0[VisualVariable]
      with Instantiable1[/* properties */ VisualVariableProperties, VisualVariable] {
   
-  def fromJSON(json: js.Any): VisualVariable = js.native
+  def fromJSON(json: Any): VisualVariable = js.native
 }

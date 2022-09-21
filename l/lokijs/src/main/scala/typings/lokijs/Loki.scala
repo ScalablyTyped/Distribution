@@ -36,7 +36,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Loki: The main database class
-  * @implements LokiEventEmitter
   */
 @js.native
 trait Loki
@@ -91,9 +90,9 @@ trait Loki
     * @param [callback] - (Optional) user supplied async callback
     */
   def autosaveEnable(): Unit = js.native
-  def autosaveEnable(options: js.Any): Unit = js.native
-  def autosaveEnable(options: js.Any, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
-  def autosaveEnable(options: Unit, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def autosaveEnable(options: Any): Unit = js.native
+  def autosaveEnable(options: Any, callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
+  def autosaveEnable(options: Unit, callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
   
   var autosaveHandle: Double | Null = js.native
   
@@ -111,9 +110,9 @@ trait Loki
     * @param callback - (Optional) if supplied will be registered with close event before emitting.
     */
   def close(): Unit = js.native
-  def close(callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def close(callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
   
-  var collections: js.Array[Collection[js.Any]] = js.native
+  var collections: js.Array[Collection[Any]] = js.native
   
   /**
     * Allows reconfiguring database options
@@ -155,19 +154,13 @@ trait Loki
     *
     * @param callback - (Optional) user supplied async callback / error handler
     */
-  def deleteDatabase(callback: js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]): Unit = js.native
+  def deleteDatabase(callback: js.Function2[js.UndefOr[Any], js.UndefOr[Any], Unit]): Unit = js.native
   def deleteDatabase(
-    options: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit],
-    callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
+    options: js.Function2[/* err */ js.UndefOr[Any], /* data */ js.UndefOr[Any], Unit],
+    callback: js.Function2[/* err */ js.UndefOr[Any], /* data */ js.UndefOr[Any], Unit]
   ): Unit = js.native
-  def deleteDatabase(
-    options: Null,
-    callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
-  ): Unit = js.native
-  def deleteDatabase(
-    options: Unit,
-    callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
-  ): Unit = js.native
+  def deleteDatabase(options: Null, callback: js.Function2[/* err */ js.UndefOr[Any], /* data */ js.UndefOr[Any], Unit]): Unit = js.native
+  def deleteDatabase(options: Unit, callback: js.Function2[/* err */ js.UndefOr[Any], /* data */ js.UndefOr[Any], Unit]): Unit = js.native
   
   /**
     * Collection level utility function to deserializes a destructured collection.
@@ -179,10 +172,10 @@ trait Loki
     *
     * @returns an array of documents to attach to collection.data.
     */
-  def deserializeCollection(destructuredSource: String): js.Array[js.Any] = js.native
-  def deserializeCollection(destructuredSource: String, options: Partitioned): js.Array[js.Any] = js.native
-  def deserializeCollection(destructuredSource: js.Array[String]): js.Array[js.Any] = js.native
-  def deserializeCollection(destructuredSource: js.Array[String], options: Partitioned): js.Array[js.Any] = js.native
+  def deserializeCollection(destructuredSource: String): js.Array[Any] = js.native
+  def deserializeCollection(destructuredSource: String, options: Partitioned): js.Array[Any] = js.native
+  def deserializeCollection(destructuredSource: js.Array[String]): js.Array[Any] = js.native
+  def deserializeCollection(destructuredSource: js.Array[String], options: Partitioned): js.Array[Any] = js.native
   
   /**
     * Database level destructured JSON deserialization routine to minimize memory overhead.
@@ -199,12 +192,12 @@ trait Loki
     *
     * @returns An object representation of the deserialized database, not yet applied to 'this' db or document array
     */
-  def deserializeDestructured(): js.Any = js.native
-  def deserializeDestructured(destructuredSource: String): js.Any = js.native
-  def deserializeDestructured(destructuredSource: String, options: DeserializeOptions): js.Any = js.native
-  def deserializeDestructured(destructuredSource: js.Array[String]): js.Any = js.native
-  def deserializeDestructured(destructuredSource: js.Array[String], options: DeserializeOptions): js.Any = js.native
-  def deserializeDestructured(destructuredSource: Null, options: DeserializeOptions): js.Any = js.native
+  def deserializeDestructured(): Any = js.native
+  def deserializeDestructured(destructuredSource: String): Any = js.native
+  def deserializeDestructured(destructuredSource: String, options: DeserializeOptions): Any = js.native
+  def deserializeDestructured(destructuredSource: js.Array[String]): Any = js.native
+  def deserializeDestructured(destructuredSource: js.Array[String], options: DeserializeOptions): Any = js.native
+  def deserializeDestructured(destructuredSource: Null, options: DeserializeOptions): Any = js.native
   
   var engineVersion: Double = js.native
   
@@ -238,13 +231,13 @@ trait Loki
   
   // experimental support for browserify's abstract syntax scan to pick up dependency of indexed adapter.
   // Hopefully, once this hits npm a browserify require of lokijs should scan the main file and detect this indexed adapter reference.
-  def getIndexedAdapter(): js.Any = js.native
+  def getIndexedAdapter(): Any = js.native
   
   def getName(): String = js.native
   
-  def listCollections(): js.Array[Collection[js.Any]] = js.native
+  def listCollections(): js.Array[Collection[Any]] = js.native
   
-  def loadCollection(collection: Collection[js.Any]): Unit = js.native
+  def loadCollection(collection: Collection[Any]): Unit = js.native
   
   /**
     * Handles manually loading from file system, local storage, or adapter (such as indexeddb)
@@ -270,9 +263,9 @@ trait Loki
     * });
     */
   def loadDatabase(): Unit = js.native
-  def loadDatabase(options: Unit, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def loadDatabase(options: Unit, callback: js.Function1[/* err */ Any, Unit]): Unit = js.native
   def loadDatabase(options: PartialThrottledSaveDrain): Unit = js.native
-  def loadDatabase(options: PartialThrottledSaveDrain, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def loadDatabase(options: PartialThrottledSaveDrain, callback: js.Function1[/* err */ Any, Unit]): Unit = js.native
   
   /**
     * Internal load logic, decoupled from throttling/contention logic
@@ -281,15 +274,9 @@ trait Loki
     * @param [callback] - (Optional) user supplied async callback / error handler
     */
   def loadDatabaseInternal(): Unit = js.native
-  def loadDatabaseInternal(options: js.Any): Unit = js.native
-  def loadDatabaseInternal(
-    options: js.Any,
-    callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
-  ): Unit = js.native
-  def loadDatabaseInternal(
-    options: Unit,
-    callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
-  ): Unit = js.native
+  def loadDatabaseInternal(options: Any): Unit = js.native
+  def loadDatabaseInternal(options: Any, callback: js.Function2[/* err */ js.UndefOr[Any], /* data */ js.UndefOr[Any], Unit]): Unit = js.native
+  def loadDatabaseInternal(options: Unit, callback: js.Function2[/* err */ js.UndefOr[Any], /* data */ js.UndefOr[Any], Unit]): Unit = js.native
   
   /**
     * Inflates a loki database from a serialized JSON string
@@ -331,11 +318,11 @@ trait Loki
     * @param newName - new name of collection
     * @returns reference to the newly renamed collection
     */
-  def renameCollection(oldName: String, newName: String): Collection[js.Any] = js.native
+  def renameCollection(oldName: String, newName: String): Collection[Any] = js.native
   
   // alias
   def save(): Unit = js.native
-  def save(callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def save(callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
   
   /**
     * Handles manually saving to file system, local storage, or adapter (such as indexeddb)
@@ -356,17 +343,17 @@ trait Loki
     * });
     */
   def saveDatabase(): Unit = js.native
-  def saveDatabase(callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def saveDatabase(callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
   
   /**
     * Internal save logic, decoupled from save throttling logic
     */
   def saveDatabaseInternal(): Unit = js.native
-  def saveDatabaseInternal(callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def saveDatabaseInternal(callback: js.Function1[/* err */ Any, Unit]): Unit = js.native
   
   // alias
   @JSName("save")
-  var save_Original: js.Function1[/* callback */ js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]], Unit] = js.native
+  var save_Original: js.Function1[/* callback */ js.UndefOr[js.Function1[/* err */ js.UndefOr[Any], Unit]], Unit] = js.native
   
   /**
     * Serialize database to a string which can be loaded via {@link Loki#loadJSON}
@@ -415,27 +402,19 @@ trait Loki
   def serializeDestructured(): String | js.Array[String] = js.native
   def serializeDestructured(options: Partition): String | js.Array[String] = js.native
   
-  def serializeReplacer(key: String, value: js.Any): js.Any = js.native
+  def serializeReplacer(
+    key: autosaveHandle | persistenceAdapter | constraints | ttl | throttledSavePending | throttledCallbacks,
+    value: Any
+  ): Any = js.native
   /**
     * serializeReplacer - used to prevent certain properties from being serialized
     */
-  @JSName("serializeReplacer")
-  def serializeReplacer_autosaveHandle(key: autosaveHandle, value: js.Any): js.Any = js.native
-  @JSName("serializeReplacer")
-  def serializeReplacer_constraints(key: constraints, value: js.Any): js.Any = js.native
-  @JSName("serializeReplacer")
-  def serializeReplacer_persistenceAdapter(key: persistenceAdapter, value: js.Any): js.Any = js.native
-  @JSName("serializeReplacer")
-  def serializeReplacer_throttledCallbacks(key: throttledCallbacks, value: js.Any): js.Any = js.native
-  @JSName("serializeReplacer")
-  def serializeReplacer_throttledSavePending(key: throttledSavePending, value: js.Any): js.Any = js.native
-  @JSName("serializeReplacer")
-  def serializeReplacer_ttl(key: ttl, value: js.Any): js.Any = js.native
+  def serializeReplacer(key: String, value: Any): Any = js.native
   
   @JSName("serialize")
   def serialize_Union(): String | js.Array[String] = js.native
   
-  var throttledCallbacks: js.Array[js.Function1[/* err */ js.UndefOr[js.Any], Unit]] = js.native
+  var throttledCallbacks: js.Array[js.Function1[/* err */ js.UndefOr[Any], Unit]] = js.native
   
   /**
     * Wait for throttledSaves to complete and invoke your callback when drained or duration is met.

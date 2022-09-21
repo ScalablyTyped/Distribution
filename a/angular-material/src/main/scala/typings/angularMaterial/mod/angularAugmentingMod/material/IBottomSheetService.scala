@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IBottomSheetService extends StObject {
   
   def cancel(): Unit = js.native
-  def cancel(response: js.Any): Unit = js.native
+  def cancel(response: Any): Unit = js.native
   
   def hide(): Unit = js.native
-  def hide(response: js.Any): Unit = js.native
+  def hide(response: Any): Unit = js.native
   
-  def show(options: IBottomSheetOptions): IPromise[js.Any] = js.native
+  def show(options: IBottomSheetOptions): IPromise[Any] = js.native
 }

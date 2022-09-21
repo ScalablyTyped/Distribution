@@ -14,19 +14,19 @@ object sankeyMod {
     
     var nodeAlign: js.UndefOr[sankeyLeft | sankeyRight | sankeyCenter | sankeyJustify] = js.undefined
     
-    var nodeId: js.UndefOr[js.Function1[/* node */ js.Any, js.Any]] = js.undefined
+    var nodeId: js.UndefOr[js.Function1[/* node */ Any, Any]] = js.undefined
     
     var nodePadding: js.UndefOr[Double] = js.undefined
     
     var nodeWidth: js.UndefOr[Double] = js.undefined
     
-    var sort: js.UndefOr[Null | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])] = js.undefined
+    var sort: js.UndefOr[Null | (js.Function2[/* a */ Any, /* b */ Any, Double])] = js.undefined
     
-    var source: js.UndefOr[js.Function1[/* edge */ js.Any, js.Any]] = js.undefined
+    var source: js.UndefOr[js.Function1[/* edge */ Any, Any]] = js.undefined
     
-    var target: js.UndefOr[js.Function1[/* edge */ js.Any, js.Any]] = js.undefined
+    var target: js.UndefOr[js.Function1[/* edge */ Any, Any]] = js.undefined
     
-    var value: js.UndefOr[js.Function1[/* node */ js.Any, js.Any]] = js.undefined
+    var value: js.UndefOr[js.Function1[/* node */ Any, Any]] = js.undefined
   }
   object Options {
     
@@ -41,7 +41,7 @@ object sankeyMod {
       
       inline def setNodeAlignUndefined: Self = StObject.set(x, "nodeAlign", js.undefined)
       
-      inline def setNodeId(value: /* node */ js.Any => js.Any): Self = StObject.set(x, "nodeId", js.Any.fromFunction1(value))
+      inline def setNodeId(value: /* node */ Any => Any): Self = StObject.set(x, "nodeId", js.Any.fromFunction1(value))
       
       inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
       
@@ -53,21 +53,21 @@ object sankeyMod {
       
       inline def setNodeWidthUndefined: Self = StObject.set(x, "nodeWidth", js.undefined)
       
-      inline def setSort(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+      inline def setSort(value: (/* a */ Any, /* b */ Any) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
       
       inline def setSortNull: Self = StObject.set(x, "sort", null)
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      inline def setSource(value: /* edge */ js.Any => js.Any): Self = StObject.set(x, "source", js.Any.fromFunction1(value))
+      inline def setSource(value: /* edge */ Any => Any): Self = StObject.set(x, "source", js.Any.fromFunction1(value))
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      inline def setTarget(value: /* edge */ js.Any => js.Any): Self = StObject.set(x, "target", js.Any.fromFunction1(value))
+      inline def setTarget(value: /* edge */ Any => Any): Self = StObject.set(x, "target", js.Any.fromFunction1(value))
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setValue(value: /* node */ js.Any => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+      inline def setValue(value: /* node */ Any => Any): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }

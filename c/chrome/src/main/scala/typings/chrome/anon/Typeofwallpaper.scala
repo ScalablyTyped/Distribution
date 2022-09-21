@@ -7,17 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Typeofwallpaper extends StObject {
   
-  def setWallpaper(details: WallpaperDetails, callback: js.Function1[/* thumbnail */ js.Any, Unit]): Unit
+  def setWallpaper(
+    details: WallpaperDetails,
+    callback: js.Function1[/* thumbnail */ js.UndefOr[js.typedarray.ArrayBuffer], Unit]
+  ): Unit
 }
 object Typeofwallpaper {
   
-  inline def apply(setWallpaper: (WallpaperDetails, js.Function1[/* thumbnail */ js.Any, Unit]) => Unit): Typeofwallpaper = {
+  inline def apply(
+    setWallpaper: (WallpaperDetails, js.Function1[/* thumbnail */ js.UndefOr[js.typedarray.ArrayBuffer], Unit]) => Unit
+  ): Typeofwallpaper = {
     val __obj = js.Dynamic.literal(setWallpaper = js.Any.fromFunction2(setWallpaper))
     __obj.asInstanceOf[Typeofwallpaper]
   }
   
   extension [Self <: Typeofwallpaper](x: Self) {
     
-    inline def setSetWallpaper(value: (WallpaperDetails, js.Function1[/* thumbnail */ js.Any, Unit]) => Unit): Self = StObject.set(x, "setWallpaper", js.Any.fromFunction2(value))
+    inline def setSetWallpaper(
+      value: (WallpaperDetails, js.Function1[/* thumbnail */ js.UndefOr[js.typedarray.ArrayBuffer], Unit]) => Unit
+    ): Self = StObject.set(x, "setWallpaper", js.Any.fromFunction2(value))
   }
 }

@@ -24,7 +24,7 @@ trait RecurrencePattern extends StObject {
   var firstDayOfWeek: js.UndefOr[NullableOption[DayOfWeek]] = js.undefined
   
   /**
-    * Specifies on which instance of the allowed days specified in daysOfsWeek the event occurs, counted from the first
+    * Specifies on which instance of the allowed days specified in daysOfWeek the event occurs, counted from the first
     * instance in the month. The possible values are: first, second, third, fourth, last. Default is first. Optional and used
     * if type is relativeMonthly or relativeYearly.
     */
@@ -39,7 +39,10 @@ trait RecurrencePattern extends StObject {
   // The month in which the event occurs. This is a number from 1 to 12.
   var month: js.UndefOr[Double] = js.undefined
   
-  // The recurrence pattern type: daily, weekly, absoluteMonthly, relativeMonthly, absoluteYearly, relativeYearly. Required.
+  /**
+    * The recurrence pattern type: daily, weekly, absoluteMonthly, relativeMonthly, absoluteYearly, relativeYearly. Required.
+    * For more information, see values of type property.
+    */
   var `type`: js.UndefOr[NullableOption[RecurrencePatternType]] = js.undefined
 }
 object RecurrencePattern {
@@ -61,7 +64,7 @@ object RecurrencePattern {
     
     inline def setDaysOfWeekUndefined: Self = StObject.set(x, "daysOfWeek", js.undefined)
     
-    inline def setDaysOfWeekVarargs(value: DayOfWeek*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
+    inline def setDaysOfWeekVarargs(value: DayOfWeek*): Self = StObject.set(x, "daysOfWeek", js.Array(value*))
     
     inline def setFirstDayOfWeek(value: NullableOption[DayOfWeek]): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
     

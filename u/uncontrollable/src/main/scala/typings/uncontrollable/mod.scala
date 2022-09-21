@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("uncontrollable/cjs", JSImport.Namespace)
+  @JSImport("uncontrollable/lib/cjs", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

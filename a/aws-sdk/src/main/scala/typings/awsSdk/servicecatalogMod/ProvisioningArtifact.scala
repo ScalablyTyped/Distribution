@@ -9,7 +9,7 @@ trait ProvisioningArtifact extends StObject {
   /**
     * The UTC time stamp of the creation time.
     */
-  var CreatedTime: js.UndefOr[ProvisioningArtifactCreatedTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the provisioning artifact.
@@ -40,7 +40,7 @@ object ProvisioningArtifact {
   
   extension [Self <: ProvisioningArtifact](x: Self) {
     
-    inline def setCreatedTime(value: ProvisioningArtifactCreatedTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     

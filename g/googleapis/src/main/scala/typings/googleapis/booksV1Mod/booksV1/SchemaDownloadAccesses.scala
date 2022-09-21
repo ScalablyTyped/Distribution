@@ -14,7 +14,7 @@ trait SchemaDownloadAccesses extends StObject {
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDownloadAccesses {
   
@@ -29,9 +29,11 @@ object SchemaDownloadAccesses {
     
     inline def setDownloadAccessListUndefined: Self = StObject.set(x, "downloadAccessList", js.undefined)
     
-    inline def setDownloadAccessListVarargs(value: SchemaDownloadAccessRestriction*): Self = StObject.set(x, "downloadAccessList", js.Array(value :_*))
+    inline def setDownloadAccessListVarargs(value: SchemaDownloadAccessRestriction*): Self = StObject.set(x, "downloadAccessList", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

@@ -4,7 +4,6 @@ import typings.scalike.mod.Either
 import typings.scalike.mod.Future
 import typings.scalike.mod.Optional
 import typings.scalike.mod.Try
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def Failure[A](e: Error): Try[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("Failure")(e.asInstanceOf[js.Any]).asInstanceOf[Try[A]]
+    inline def Failure[A](e: js.Error): Try[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("Failure")(e.asInstanceOf[js.Any]).asInstanceOf[Try[A]]
     
     object Future {
       
@@ -28,7 +27,7 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def failed[A](e: Error): typings.scalike.mod.Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("failed")(e.asInstanceOf[js.Any]).asInstanceOf[typings.scalike.mod.Future[A]]
+      inline def failed[A](e: js.Error): typings.scalike.mod.Future[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("failed")(e.asInstanceOf[js.Any]).asInstanceOf[typings.scalike.mod.Future[A]]
       
       inline def find[A](fus: js.Array[typings.scalike.mod.Future[A]], f: js.Function1[/* a */ A, Boolean]): typings.scalike.mod.Future[Optional[A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(fus.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[typings.scalike.mod.Future[Optional[A]]]
       
@@ -53,35 +52,35 @@ object global {
     
     @JSGlobal("scalike.FutureBuilder1")
     @js.native
-    class FutureBuilder1[A, B] protected ()
+    open class FutureBuilder1[A, B] protected ()
       extends typings.scalike.mod.FutureBuilder1[A, B] {
       def this(oa: Future[A], ob: Future[B]) = this()
     }
     
     @JSGlobal("scalike.FutureBuilder2")
     @js.native
-    class FutureBuilder2[A, B, C] protected ()
+    open class FutureBuilder2[A, B, C] protected ()
       extends typings.scalike.mod.FutureBuilder2[A, B, C] {
       def this(oa: Future[A], ob: Future[B], oc: Future[C]) = this()
     }
     
     @JSGlobal("scalike.FutureBuilder3")
     @js.native
-    class FutureBuilder3[A, B, C, D] protected ()
+    open class FutureBuilder3[A, B, C, D] protected ()
       extends typings.scalike.mod.FutureBuilder3[A, B, C, D] {
       def this(oa: Future[A], ob: Future[B], oc: Future[C], od: Future[D]) = this()
     }
     
     @JSGlobal("scalike.FutureBuilder4")
     @js.native
-    class FutureBuilder4[A, B, C, D, E] protected ()
+    open class FutureBuilder4[A, B, C, D, E] protected ()
       extends typings.scalike.mod.FutureBuilder4[A, B, C, D, E] {
       def this(oa: Future[A], ob: Future[B], oc: Future[C], od: Future[D], oe: Future[E]) = this()
     }
     
     @JSGlobal("scalike.FutureBuilder5")
     @js.native
-    class FutureBuilder5[A, B, C, D, E, F] protected ()
+    open class FutureBuilder5[A, B, C, D, E, F] protected ()
       extends typings.scalike.mod.FutureBuilder5[A, B, C, D, E, F] {
       def this(oa: Future[A], ob: Future[B], oc: Future[C], od: Future[D], oe: Future[E], of: Future[F]) = this()
     }
@@ -90,48 +89,48 @@ object global {
     
     @JSGlobal("scalike.LeftProjection")
     @js.native
-    class LeftProjection[A, B] protected ()
+    open class LeftProjection[A, B] protected ()
       extends typings.scalike.mod.LeftProjection[A, B] {
       def this(self: Either[A, B]) = this()
     }
     
     @JSGlobal("scalike.None")
     @js.native
-    val None: Optional[js.Any] = js.native
+    val None: Optional[Any] = js.native
     
     inline def Optional[A](a: A): typings.scalike.mod.Optional[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("Optional")(a.asInstanceOf[js.Any]).asInstanceOf[typings.scalike.mod.Optional[A]]
     
     @JSGlobal("scalike.OptionalBuilder1")
     @js.native
-    class OptionalBuilder1[A, B] protected ()
+    open class OptionalBuilder1[A, B] protected ()
       extends typings.scalike.mod.OptionalBuilder1[A, B] {
       def this(oa: Optional[A], ob: Optional[B]) = this()
     }
     
     @JSGlobal("scalike.OptionalBuilder2")
     @js.native
-    class OptionalBuilder2[A, B, C] protected ()
+    open class OptionalBuilder2[A, B, C] protected ()
       extends typings.scalike.mod.OptionalBuilder2[A, B, C] {
       def this(oa: Optional[A], ob: Optional[B], oc: Optional[C]) = this()
     }
     
     @JSGlobal("scalike.OptionalBuilder3")
     @js.native
-    class OptionalBuilder3[A, B, C, D] protected ()
+    open class OptionalBuilder3[A, B, C, D] protected ()
       extends typings.scalike.mod.OptionalBuilder3[A, B, C, D] {
       def this(oa: Optional[A], ob: Optional[B], oc: Optional[C], od: Optional[D]) = this()
     }
     
     @JSGlobal("scalike.OptionalBuilder4")
     @js.native
-    class OptionalBuilder4[A, B, C, D, E] protected ()
+    open class OptionalBuilder4[A, B, C, D, E] protected ()
       extends typings.scalike.mod.OptionalBuilder4[A, B, C, D, E] {
       def this(oa: Optional[A], ob: Optional[B], oc: Optional[C], od: Optional[D], oe: Optional[E]) = this()
     }
     
     @JSGlobal("scalike.OptionalBuilder5")
     @js.native
-    class OptionalBuilder5[A, B, C, D, E, F] protected ()
+    open class OptionalBuilder5[A, B, C, D, E, F] protected ()
       extends typings.scalike.mod.OptionalBuilder5[A, B, C, D, E, F] {
       def this(
         oa: Optional[A],
@@ -147,7 +146,7 @@ object global {
     
     @JSGlobal("scalike.RightProjection")
     @js.native
-    class RightProjection[A, B] protected ()
+    open class RightProjection[A, B] protected ()
       extends typings.scalike.mod.RightProjection[A, B] {
       def this(self: Either[A, B]) = this()
     }
@@ -160,35 +159,35 @@ object global {
     
     @JSGlobal("scalike.TryBuilder1")
     @js.native
-    class TryBuilder1[A, B] protected ()
+    open class TryBuilder1[A, B] protected ()
       extends typings.scalike.mod.TryBuilder1[A, B] {
       def this(oa: Try[A], ob: Try[B]) = this()
     }
     
     @JSGlobal("scalike.TryBuilder2")
     @js.native
-    class TryBuilder2[A, B, C] protected ()
+    open class TryBuilder2[A, B, C] protected ()
       extends typings.scalike.mod.TryBuilder2[A, B, C] {
       def this(oa: Try[A], ob: Try[B], oc: Try[C]) = this()
     }
     
     @JSGlobal("scalike.TryBuilder3")
     @js.native
-    class TryBuilder3[A, B, C, D] protected ()
+    open class TryBuilder3[A, B, C, D] protected ()
       extends typings.scalike.mod.TryBuilder3[A, B, C, D] {
       def this(oa: Try[A], ob: Try[B], oc: Try[C], od: Try[D]) = this()
     }
     
     @JSGlobal("scalike.TryBuilder4")
     @js.native
-    class TryBuilder4[A, B, C, D, E] protected ()
+    open class TryBuilder4[A, B, C, D, E] protected ()
       extends typings.scalike.mod.TryBuilder4[A, B, C, D, E] {
       def this(oa: Try[A], ob: Try[B], oc: Try[C], od: Try[D], oe: Try[E]) = this()
     }
     
     @JSGlobal("scalike.TryBuilder5")
     @js.native
-    class TryBuilder5[A, B, C, D, E, F] protected ()
+    open class TryBuilder5[A, B, C, D, E, F] protected ()
       extends typings.scalike.mod.TryBuilder5[A, B, C, D, E, F] {
       def this(oa: Try[A], ob: Try[B], oc: Try[C], od: Try[D], oe: Try[E], of: Try[F]) = this()
     }

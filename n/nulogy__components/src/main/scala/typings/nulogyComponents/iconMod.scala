@@ -8,9 +8,9 @@ object iconMod {
   
   @JSImport("@nulogy/components/src/Icon", "Icon")
   @js.native
-  val Icon: js.Any = js.native
+  val Icon: Any = js.native
   
   @JSImport("@nulogy/components/src/Icon", "InlineIcon")
   @js.native
-  val InlineIcon: js.Any = js.native
+  val InlineIcon: Any = js.native
 }

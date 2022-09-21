@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Register[T /* <: Entity */, TEngine] extends StObject {
   
-  def register(source: EntitySource[T, js.Any], app: js.Any): Adapter[TEngine]
+  def register(source: EntitySource[T, Any], app: Any): Adapter[TEngine]
 }
 object Register {
   
-  inline def apply[T /* <: Entity */, TEngine](register: (EntitySource[T, js.Any], js.Any) => Adapter[TEngine]): Register[T, TEngine] = {
+  inline def apply[T /* <: Entity */, TEngine](register: (EntitySource[T, Any], Any) => Adapter[TEngine]): Register[T, TEngine] = {
     val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
     __obj.asInstanceOf[Register[T, TEngine]]
   }
   
   extension [Self <: Register[?, ?], T /* <: Entity */, TEngine](x: Self & (Register[T, TEngine])) {
     
-    inline def setRegister(value: (EntitySource[T, js.Any], js.Any) => Adapter[TEngine]): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+    inline def setRegister(value: (EntitySource[T, Any], Any) => Adapter[TEngine]): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
   }
 }

@@ -8,7 +8,7 @@ object gaugeBandMod {
   
   @JSImport("amcharts/GaugeBand", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with GaugeBand {
     
@@ -56,13 +56,13 @@ object gaugeBandMod {
       * Set 0 if you want the band to be drawn to the axis center.
       */
     /* CompleteClass */
-    var innerRadius: js.Any = js.native
+    var innerRadius: Any = js.native
     
     /**
       * Band radius. If not set any, the band will start with the axis outline.
       */
     /* CompleteClass */
-    var radius: js.Any = js.native
+    var radius: Any = js.native
     
     /**
       * Sets end value for the band.
@@ -128,12 +128,12 @@ object gaugeBandMod {
       * Inner radius of a band. If not set any, the band will end with the end of minor ticks.
       * Set 0 if you want the band to be drawn to the axis center.
       */
-    var innerRadius: js.Any
+    var innerRadius: Any
     
     /**
       * Band radius. If not set any, the band will start with the axis outline.
       */
-    var radius: js.Any
+    var radius: Any
     
     /**
       * Sets end value for the band.
@@ -164,8 +164,8 @@ object gaugeBandMod {
       endValue: Double,
       gradientRatio: js.Array[Double],
       id: String,
-      innerRadius: js.Any,
-      radius: js.Any,
+      innerRadius: Any,
+      radius: Any,
       setEndValue: Double => Unit,
       setStartValue: Double => Unit,
       startValue: Double,
@@ -187,13 +187,13 @@ object gaugeBandMod {
       
       inline def setGradientRatio(value: js.Array[Double]): Self = StObject.set(x, "gradientRatio", value.asInstanceOf[js.Any])
       
-      inline def setGradientRatioVarargs(value: Double*): Self = StObject.set(x, "gradientRatio", js.Array(value :_*))
+      inline def setGradientRatioVarargs(value: Double*): Self = StObject.set(x, "gradientRatio", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setInnerRadius(value: js.Any): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+      inline def setInnerRadius(value: Any): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
       
-      inline def setRadius(value: js.Any): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Any): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
       inline def setSetEndValue(value: Double => Unit): Self = StObject.set(x, "setEndValue", js.Any.fromFunction1(value))
       

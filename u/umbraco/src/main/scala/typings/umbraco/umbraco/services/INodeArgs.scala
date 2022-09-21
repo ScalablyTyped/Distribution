@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait INodeArgs extends StObject {
   
-  var node: js.Any
+  var node: Any
   
-  var section: js.Any
+  var section: Any
 }
 object INodeArgs {
   
-  inline def apply(node: js.Any, section: js.Any): INodeArgs = {
+  inline def apply(node: Any, section: Any): INodeArgs = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any])
     __obj.asInstanceOf[INodeArgs]
   }
   
   extension [Self <: INodeArgs](x: Self) {
     
-    inline def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    inline def setSection(value: js.Any): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    inline def setSection(value: Any): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
   }
 }

@@ -17,9 +17,14 @@ trait Cluster extends StObject {
   var ClusterArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The configuration endpoint for this DAX cluster, consisting of a DNS name and a port number. Client applications can specify this endpoint, rather than an individual node endpoint, and allow the DAX client software to intelligently route requests and responses to nodes in the DAX cluster.
+    * The endpoint for this DAX cluster, consisting of a DNS name, a port number, and a URL. Applications should use the URL to configure the DAX client to find their cluster.
     */
   var ClusterDiscoveryEndpoint: js.UndefOr[Endpoint] = js.undefined
+  
+  /**
+    * The type of encryption supported by the cluster's endpoint. Values are:    NONE for no encryption  TLS for Transport Layer Security  
+    */
+  var ClusterEndpointEncryptionType: js.UndefOr[typings.awsSdk.daxMod.ClusterEndpointEncryptionType] = js.undefined
   
   /**
     * The name of the DAX cluster.
@@ -112,6 +117,10 @@ object Cluster {
     
     inline def setClusterDiscoveryEndpointUndefined: Self = StObject.set(x, "ClusterDiscoveryEndpoint", js.undefined)
     
+    inline def setClusterEndpointEncryptionType(value: ClusterEndpointEncryptionType): Self = StObject.set(x, "ClusterEndpointEncryptionType", value.asInstanceOf[js.Any])
+    
+    inline def setClusterEndpointEncryptionTypeUndefined: Self = StObject.set(x, "ClusterEndpointEncryptionType", js.undefined)
+    
     inline def setClusterName(value: String): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
     
     inline def setClusterNameUndefined: Self = StObject.set(x, "ClusterName", js.undefined)
@@ -128,7 +137,7 @@ object Cluster {
     
     inline def setNodeIdsToRemoveUndefined: Self = StObject.set(x, "NodeIdsToRemove", js.undefined)
     
-    inline def setNodeIdsToRemoveVarargs(value: String*): Self = StObject.set(x, "NodeIdsToRemove", js.Array(value :_*))
+    inline def setNodeIdsToRemoveVarargs(value: String*): Self = StObject.set(x, "NodeIdsToRemove", js.Array(value*))
     
     inline def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     
@@ -138,7 +147,7 @@ object Cluster {
     
     inline def setNodesUndefined: Self = StObject.set(x, "Nodes", js.undefined)
     
-    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "Nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "Nodes", js.Array(value*))
     
     inline def setNotificationConfiguration(value: NotificationConfiguration): Self = StObject.set(x, "NotificationConfiguration", value.asInstanceOf[js.Any])
     
@@ -160,7 +169,7 @@ object Cluster {
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: SecurityGroupMembership*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroupMembership*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

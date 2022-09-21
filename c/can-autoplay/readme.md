@@ -10,10 +10,10 @@ The auto-play feature detection in HTMLMediaElement (`<audio>` or `<video>`).
 | ------------------ | :-------------: |
 | Full name          | can-autoplay |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 619706 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 102728.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/can-autoplay)

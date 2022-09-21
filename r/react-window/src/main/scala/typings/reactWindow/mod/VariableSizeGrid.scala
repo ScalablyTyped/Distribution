@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-window", "VariableSizeGrid")
 @js.native
-class VariableSizeGrid protected ()
-  extends Component[VariableSizeGridProps, js.Object, js.Any] {
-  def this(props: VariableSizeGridProps) = this()
+open class VariableSizeGrid[T] protected ()
+  extends Component[VariableSizeGridProps[T], js.Object, Any] {
+  def this(props: VariableSizeGridProps[T]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: VariableSizeGridProps, context: js.Any) = this()
+  def this(props: VariableSizeGridProps[T], context: Any) = this()
   
   /**
     * VariableSizeGrid caches offsets and measurements for each column index for performance purposes.

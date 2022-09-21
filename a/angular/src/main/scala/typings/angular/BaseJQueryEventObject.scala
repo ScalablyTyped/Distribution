@@ -26,7 +26,7 @@ trait BaseJQueryEventObject
     * An optional object of data passed to an event method when the current executing handler is bound.
     * @see {@link https://api.jquery.com/event.data/}
     */
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   /**
     * The element where the currently-called jQuery event handler was attached.
@@ -92,7 +92,7 @@ trait BaseJQueryEventObject
     * The last value returned by an event handler that was triggered by this event, unless the value was undefined.
     * @see {@link https://api.jquery.com/event.result/}
     */
-  var result: js.Any = js.native
+  var result: Any = js.native
   
   /**
     * The DOM element that initiated the event.

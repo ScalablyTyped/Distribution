@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "CubicEase")
 @js.native
-class CubicEase ()
+open class CubicEase ()
   extends typings.babylonjs.animationsIndexMod.CubicEase

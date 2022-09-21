@@ -81,7 +81,7 @@ object getRangesMod {
       
       inline def setRangeListUndefined: Self = StObject.set(x, "rangeList", js.undefined)
       
-      inline def setRangeListVarargs(value: Label*): Self = StObject.set(x, "rangeList", js.Array(value :_*))
+      inline def setRangeListVarargs(value: Label*): Self = StObject.set(x, "rangeList", js.Array(value*))
       
       inline def setShowNow(value: Boolean): Self = StObject.set(x, "showNow", value.asInstanceOf[js.Any])
       

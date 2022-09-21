@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "printf" : "0.6.0"
+      "printf" : "0.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "printf" : "0.6.0"
+      "printf" : "0.6.1"
     }
   ],
   "compile-devDependencies" : [

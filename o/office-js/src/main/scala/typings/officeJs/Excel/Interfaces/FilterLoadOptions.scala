@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Manages the filtering of a table's column.
   *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 trait FilterLoadOptions extends StObject {
@@ -19,9 +19,9 @@ trait FilterLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The currently applied filter on the given column.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var criteria: js.UndefOr[Boolean] = js.undefined

@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsCore.kernelNamesMod
 
+import typings.tensorflowTfjsCore.convUtilMod.ExplicitPadding
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.ceil
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.floor
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.round
@@ -15,7 +16,7 @@ trait MaxPoolAttrs extends StObject {
   
   var filterSize: (js.Tuple2[Double, Double]) | Double
   
-  var pad: valid_ | same_ | Double
+  var pad: valid_ | same_ | Double | ExplicitPadding
   
   var strides: (js.Tuple2[Double, Double]) | Double
 }
@@ -23,7 +24,7 @@ object MaxPoolAttrs {
   
   inline def apply(
     filterSize: (js.Tuple2[Double, Double]) | Double,
-    pad: valid_ | same_ | Double,
+    pad: valid_ | same_ | Double | ExplicitPadding,
     strides: (js.Tuple2[Double, Double]) | Double
   ): MaxPoolAttrs = {
     val __obj = js.Dynamic.literal(filterSize = filterSize.asInstanceOf[js.Any], pad = pad.asInstanceOf[js.Any], strides = strides.asInstanceOf[js.Any])
@@ -38,7 +39,7 @@ object MaxPoolAttrs {
     
     inline def setFilterSize(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
     
-    inline def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: valid_ | same_ | Double | ExplicitPadding): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
     inline def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
   }

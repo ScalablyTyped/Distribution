@@ -10,10 +10,10 @@ object permDataSettingMod {
   
   @JSImport("material-ui/svg-icons/action/perm-data-setting", JSImport.Default)
   @js.native
-  class default () extends ActionPermDataSetting
+  open class default () extends ActionPermDataSetting
   
   @JSImport("material-ui/svg-icons/action/perm-data-setting", "ActionPermDataSetting")
   @js.native
-  class ActionPermDataSetting ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionPermDataSetting ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

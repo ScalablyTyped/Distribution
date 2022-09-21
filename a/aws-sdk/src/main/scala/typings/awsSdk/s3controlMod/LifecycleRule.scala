@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LifecycleRule extends StObject {
   
   /**
-    * Specifies the days since the initiation of an incomplete multipart upload that Amazon S3 waits before permanently removing all parts of the upload. For more information, see  Aborting Incomplete Multipart Uploads Using a Bucket Lifecycle Policy in the Amazon Simple Storage Service Developer Guide.
+    * Specifies the days since the initiation of an incomplete multipart upload that Amazon S3 waits before permanently removing all parts of the upload. For more information, see  Aborting Incomplete Multipart Uploads Using a Bucket Lifecycle Policy in the Amazon S3 User Guide.
     */
   var AbortIncompleteMultipartUpload: js.UndefOr[typings.awsSdk.s3controlMod.AbortIncompleteMultipartUpload] = js.undefined
   
@@ -79,7 +79,7 @@ object LifecycleRule {
     
     inline def setNoncurrentVersionTransitionsUndefined: Self = StObject.set(x, "NoncurrentVersionTransitions", js.undefined)
     
-    inline def setNoncurrentVersionTransitionsVarargs(value: NoncurrentVersionTransition*): Self = StObject.set(x, "NoncurrentVersionTransitions", js.Array(value :_*))
+    inline def setNoncurrentVersionTransitionsVarargs(value: NoncurrentVersionTransition*): Self = StObject.set(x, "NoncurrentVersionTransitions", js.Array(value*))
     
     inline def setStatus(value: ExpirationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
@@ -87,6 +87,6 @@ object LifecycleRule {
     
     inline def setTransitionsUndefined: Self = StObject.set(x, "Transitions", js.undefined)
     
-    inline def setTransitionsVarargs(value: Transition*): Self = StObject.set(x, "Transitions", js.Array(value :_*))
+    inline def setTransitionsVarargs(value: Transition*): Self = StObject.set(x, "Transitions", js.Array(value*))
   }
 }

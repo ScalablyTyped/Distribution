@@ -9,7 +9,7 @@ object transactionStateErrorMod {
   
   @JSImport("sip.js/lib/core/exceptions/transaction-state-error", "TransactionStateError")
   @js.native
-  class TransactionStateError () extends Exception {
+  open class TransactionStateError () extends Exception {
     def this(message: String) = this()
   }
 }

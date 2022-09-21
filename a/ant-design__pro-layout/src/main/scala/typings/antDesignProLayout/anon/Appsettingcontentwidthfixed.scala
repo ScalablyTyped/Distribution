@@ -57,6 +57,9 @@ trait Appsettingcontentwidthfixed extends StObject {
   @JSName("app.setting.pagestyle.light")
   var appDotsettingDotpagestyleDotlight: String
   
+  @JSName("app.setting.pagestyle.realdark")
+  var appDotsettingDotpagestyleDotrealdark: String
+  
   @JSName("app.setting.production.hint")
   var appDotsettingDotproductionDothint: String
   
@@ -90,6 +93,9 @@ trait Appsettingcontentwidthfixed extends StObject {
   @JSName("app.setting.themecolor.sunset")
   var appDotsettingDotthemecolorDotsunset: String
   
+  @JSName("app.setting.themecolor.techBlue")
+  var appDotsettingDotthemecolorDottechBlue: String
+  
   @JSName("app.setting.themecolor.volcano")
   var appDotsettingDotthemecolorDotvolcano: String
   
@@ -119,6 +125,7 @@ object Appsettingcontentwidthfixed {
     appDotsettingDotpagestyle: String,
     appDotsettingDotpagestyleDotdark: String,
     appDotsettingDotpagestyleDotlight: String,
+    appDotsettingDotpagestyleDotrealdark: String,
     appDotsettingDotproductionDothint: String,
     appDotsettingDotsidemenu: String,
     appDotsettingDotsplitMenus: String,
@@ -130,6 +137,7 @@ object Appsettingcontentwidthfixed {
     appDotsettingDotthemecolorDotgreen: String,
     appDotsettingDotthemecolorDotpurple: String,
     appDotsettingDotthemecolorDotsunset: String,
+    appDotsettingDotthemecolorDottechBlue: String,
     appDotsettingDotthemecolorDotvolcano: String,
     appDotsettingDottopmenu: String,
     appDotsettingDotweakmode: String
@@ -152,6 +160,7 @@ object Appsettingcontentwidthfixed {
     __obj.updateDynamic("app.setting.pagestyle")(appDotsettingDotpagestyle.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.pagestyle.dark")(appDotsettingDotpagestyleDotdark.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.pagestyle.light")(appDotsettingDotpagestyleDotlight.asInstanceOf[js.Any])
+    __obj.updateDynamic("app.setting.pagestyle.realdark")(appDotsettingDotpagestyleDotrealdark.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.production.hint")(appDotsettingDotproductionDothint.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.sidemenu")(appDotsettingDotsidemenu.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.splitMenus")(appDotsettingDotsplitMenus.asInstanceOf[js.Any])
@@ -163,6 +172,7 @@ object Appsettingcontentwidthfixed {
     __obj.updateDynamic("app.setting.themecolor.green")(appDotsettingDotthemecolorDotgreen.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.themecolor.purple")(appDotsettingDotthemecolorDotpurple.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.themecolor.sunset")(appDotsettingDotthemecolorDotsunset.asInstanceOf[js.Any])
+    __obj.updateDynamic("app.setting.themecolor.techBlue")(appDotsettingDotthemecolorDottechBlue.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.themecolor.volcano")(appDotsettingDotthemecolorDotvolcano.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.topmenu")(appDotsettingDottopmenu.asInstanceOf[js.Any])
     __obj.updateDynamic("app.setting.weakmode")(appDotsettingDotweakmode.asInstanceOf[js.Any])
@@ -205,6 +215,8 @@ object Appsettingcontentwidthfixed {
     
     inline def setAppDotsettingDotpagestyleDotlight(value: String): Self = StObject.set(x, "app.setting.pagestyle.light", value.asInstanceOf[js.Any])
     
+    inline def setAppDotsettingDotpagestyleDotrealdark(value: String): Self = StObject.set(x, "app.setting.pagestyle.realdark", value.asInstanceOf[js.Any])
+    
     inline def setAppDotsettingDotproductionDothint(value: String): Self = StObject.set(x, "app.setting.production.hint", value.asInstanceOf[js.Any])
     
     inline def setAppDotsettingDotsidemenu(value: String): Self = StObject.set(x, "app.setting.sidemenu", value.asInstanceOf[js.Any])
@@ -226,6 +238,8 @@ object Appsettingcontentwidthfixed {
     inline def setAppDotsettingDotthemecolorDotpurple(value: String): Self = StObject.set(x, "app.setting.themecolor.purple", value.asInstanceOf[js.Any])
     
     inline def setAppDotsettingDotthemecolorDotsunset(value: String): Self = StObject.set(x, "app.setting.themecolor.sunset", value.asInstanceOf[js.Any])
+    
+    inline def setAppDotsettingDotthemecolorDottechBlue(value: String): Self = StObject.set(x, "app.setting.themecolor.techBlue", value.asInstanceOf[js.Any])
     
     inline def setAppDotsettingDotthemecolorDotvolcano(value: String): Self = StObject.set(x, "app.setting.themecolor.volcano", value.asInstanceOf[js.Any])
     

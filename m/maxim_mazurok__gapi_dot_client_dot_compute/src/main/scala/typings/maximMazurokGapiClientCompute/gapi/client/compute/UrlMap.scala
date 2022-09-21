@@ -10,28 +10,25 @@ trait UrlMap extends StObject {
   var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
-    * defaultRouteAction takes effect when none of the  hostRules match. The load balancer performs advanced routing actions like URL rewrites, header transformations, etc. prior to
+    * defaultRouteAction takes effect when none of the hostRules match. The load balancer performs advanced routing actions like URL rewrites, header transformations, etc. prior to
     * forwarding the request to the selected backend. If defaultRouteAction specifies any weightedBackendServices, defaultService must not be set. Conversely if defaultService is set,
-    * defaultRouteAction cannot contain any  weightedBackendServices.
-    * Only one of defaultRouteAction or defaultUrlRedirect must be set.
-    * UrlMaps for external HTTP(S) load balancers support only the urlRewrite action within defaultRouteAction.
-    * defaultRouteAction has no effect when the URL map is bound to target gRPC proxy that has validateForProxyless field set to true.
+    * defaultRouteAction cannot contain any weightedBackendServices. Only one of defaultRouteAction or defaultUrlRedirect must be set. UrlMaps for external HTTP(S) load balancers support
+    * only the urlRewrite action within defaultRouteAction. defaultRouteAction has no effect when the URL map is bound to target gRPC proxy that has validateForProxyless field set to
+    * true.
     */
   var defaultRouteAction: js.UndefOr[HttpRouteAction] = js.undefined
   
   /**
     * The full or partial URL of the defaultService resource to which traffic is directed if none of the hostRules match. If defaultRouteAction is additionally specified, advanced routing
     * actions like URL Rewrites, etc. take effect prior to sending the request to the backend. However, if defaultService is specified, defaultRouteAction cannot contain any
-    * weightedBackendServices. Conversely, if routeAction specifies any weightedBackendServices, service must not be specified.
-    * Only one of defaultService, defaultUrlRedirect  or defaultRouteAction.weightedBackendService must be set.
-    * defaultService has no effect when the URL map is bound to target gRPC proxy that has validateForProxyless field set to true.
+    * weightedBackendServices. Conversely, if routeAction specifies any weightedBackendServices, service must not be specified. Only one of defaultService, defaultUrlRedirect or
+    * defaultRouteAction.weightedBackendService must be set. defaultService has no effect when the URL map is bound to target gRPC proxy that has validateForProxyless field set to true.
     */
   var defaultService: js.UndefOr[String] = js.undefined
   
   /**
-    * When none of the specified hostRules match, the request is redirected to a URL specified by defaultUrlRedirect.
-    * If defaultUrlRedirect is specified, defaultService or defaultRouteAction must not be set.
-    * Not supported when the URL map is bound to target gRPC proxy.
+    * When none of the specified hostRules match, the request is redirected to a URL specified by defaultUrlRedirect. If defaultUrlRedirect is specified, defaultService or
+    * defaultRouteAction must not be set. Not supported when the URL map is bound to target gRPC proxy.
     */
   var defaultUrlRedirect: js.UndefOr[HttpRedirectAction] = js.undefined
   
@@ -40,17 +37,15 @@ trait UrlMap extends StObject {
   
   /**
     * Fingerprint of this resource. A hash of the contents stored in this object. This field is used in optimistic locking. This field will be ignored when inserting a UrlMap. An
-    * up-to-date fingerprint must be provided in order to update the UrlMap, otherwise the request will fail with error 412 conditionNotMet.
-    *
-    * To see the latest fingerprint, make a get() request to retrieve a UrlMap.
+    * up-to-date fingerprint must be provided in order to update the UrlMap, otherwise the request will fail with error 412 conditionNotMet. To see the latest fingerprint, make a get()
+    * request to retrieve a UrlMap.
     */
   var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies changes to request and response headers that need to take effect for the selected backendService.
-    * The headerAction specified here take effect after headerAction specified under pathMatcher.
-    * Note that headerAction is not supported for Loadbalancers that have their loadBalancingScheme set to EXTERNAL.
-    * Not supported when the URL map is bound to target gRPC proxy that has validateForProxyless field set to true.
+    * Specifies changes to request and response headers that need to take effect for the selected backendService. The headerAction specified here take effect after headerAction specified
+    * under pathMatcher. Note that headerAction is not supported for Loadbalancers that have their loadBalancingScheme set to EXTERNAL. Not supported when the URL map is bound to target
+    * gRPC proxy that has validateForProxyless field set to true.
     */
   var headerAction: js.UndefOr[HttpHeaderAction] = js.undefined
   
@@ -83,8 +78,8 @@ trait UrlMap extends StObject {
   var selfLink: js.UndefOr[String] = js.undefined
   
   /**
-    * The list of expected URL mapping tests. Request to update this UrlMap will succeed only if all of the test cases pass. You can specify a maximum of 100 tests per UrlMap.
-    * Not supported when the URL map is bound to target gRPC proxy that has validateForProxyless field set to true.
+    * The list of expected URL mapping tests. Request to update this UrlMap will succeed only if all of the test cases pass. You can specify a maximum of 100 tests per UrlMap. Not
+    * supported when the URL map is bound to target gRPC proxy that has validateForProxyless field set to true.
     */
   var tests: js.UndefOr[js.Array[UrlMapTest]] = js.undefined
 }
@@ -129,7 +124,7 @@ object UrlMap {
     
     inline def setHostRulesUndefined: Self = StObject.set(x, "hostRules", js.undefined)
     
-    inline def setHostRulesVarargs(value: HostRule*): Self = StObject.set(x, "hostRules", js.Array(value :_*))
+    inline def setHostRulesVarargs(value: HostRule*): Self = StObject.set(x, "hostRules", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -147,7 +142,7 @@ object UrlMap {
     
     inline def setPathMatchersUndefined: Self = StObject.set(x, "pathMatchers", js.undefined)
     
-    inline def setPathMatchersVarargs(value: PathMatcher*): Self = StObject.set(x, "pathMatchers", js.Array(value :_*))
+    inline def setPathMatchersVarargs(value: PathMatcher*): Self = StObject.set(x, "pathMatchers", js.Array(value*))
     
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
@@ -161,6 +156,6 @@ object UrlMap {
     
     inline def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
     
-    inline def setTestsVarargs(value: UrlMapTest*): Self = StObject.set(x, "tests", js.Array(value :_*))
+    inline def setTestsVarargs(value: UrlMapTest*): Self = StObject.set(x, "tests", js.Array(value*))
   }
 }

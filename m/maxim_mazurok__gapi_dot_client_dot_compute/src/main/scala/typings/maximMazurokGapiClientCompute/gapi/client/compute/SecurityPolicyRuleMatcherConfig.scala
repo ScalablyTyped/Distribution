@@ -22,6 +22,6 @@ object SecurityPolicyRuleMatcherConfig {
     
     inline def setSrcIpRangesUndefined: Self = StObject.set(x, "srcIpRanges", js.undefined)
     
-    inline def setSrcIpRangesVarargs(value: String*): Self = StObject.set(x, "srcIpRanges", js.Array(value :_*))
+    inline def setSrcIpRangesVarargs(value: String*): Self = StObject.set(x, "srcIpRanges", js.Array(value*))
   }
 }

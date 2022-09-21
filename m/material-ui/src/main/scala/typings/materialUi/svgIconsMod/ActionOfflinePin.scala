@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "ActionOfflinePin")
 @js.native
-class ActionOfflinePin ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class ActionOfflinePin ()
+  extends Component[SvgIconProps, js.Object, Any]

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new EmployeesApi.
   * @param apiClient Optional API client implementation to use, default to ApiClient.instance if unspecified.
   */
-class EmployeesApi () extends StObject {
+open class EmployeesApi () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   /**

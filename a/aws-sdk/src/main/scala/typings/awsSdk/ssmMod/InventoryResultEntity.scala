@@ -12,7 +12,7 @@ trait InventoryResultEntity extends StObject {
   var Data: js.UndefOr[InventoryResultItemMap] = js.undefined
   
   /**
-    * ID of the inventory result entity. For example, for managed instance inventory the result will be the managed instance ID. For EC2 instance inventory, the result will be the instance ID. 
+    * ID of the inventory result entity. For example, for managed node inventory the result will be the managed node ID. For EC2 instance inventory, the result will be the instance ID. 
     */
   var Id: js.UndefOr[InventoryResultEntityId] = js.undefined
 }

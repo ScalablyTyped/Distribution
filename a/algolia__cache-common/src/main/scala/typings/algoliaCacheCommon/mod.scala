@@ -83,7 +83,7 @@ object mod {
       
       inline def setCaches(value: js.Array[Cache]): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
       
-      inline def setCachesVarargs(value: Cache*): Self = StObject.set(x, "caches", js.Array(value :_*))
+      inline def setCachesVarargs(value: Cache*): Self = StObject.set(x, "caches", js.Array(value*))
     }
   }
 }

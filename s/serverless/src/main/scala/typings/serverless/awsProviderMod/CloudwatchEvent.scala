@@ -10,7 +10,7 @@ trait CloudwatchEvent extends StObject {
   
   var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var event: String
+  var event: CloudwatchEventInternalEvent | String
   
   var input: js.UndefOr[Input] = js.undefined
   
@@ -22,7 +22,7 @@ trait CloudwatchEvent extends StObject {
 }
 object CloudwatchEvent {
   
-  inline def apply(event: String): CloudwatchEvent = {
+  inline def apply(event: CloudwatchEventInternalEvent | String): CloudwatchEvent = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudwatchEvent]
   }
@@ -37,7 +37,7 @@ object CloudwatchEvent {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: CloudwatchEventInternalEvent | String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setInput(value: Input): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

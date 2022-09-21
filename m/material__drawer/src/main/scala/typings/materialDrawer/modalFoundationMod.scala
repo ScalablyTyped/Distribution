@@ -10,13 +10,13 @@ object modalFoundationMod {
   
   @JSImport("@material/drawer/modal/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCModalDrawerFoundation {
+  open class default () extends MDCModalDrawerFoundation {
     def this(adapter: PartialMDCDrawerAdapter) = this()
   }
   
   @JSImport("@material/drawer/modal/foundation", "MDCModalDrawerFoundation")
   @js.native
-  class MDCModalDrawerFoundation () extends MDCDismissibleDrawerFoundation {
+  open class MDCModalDrawerFoundation () extends MDCDismissibleDrawerFoundation {
     def this(adapter: PartialMDCDrawerAdapter) = this()
     
     /**

@@ -11,8 +11,106 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LicenseManager extends Service {
   
+  /**
+    * Accepts the specified grant.
+    */
+  def acceptGrant(): Request[AcceptGrantResponse, AWSError] = js.native
+  def acceptGrant(callback: js.Function2[/* err */ AWSError, /* data */ AcceptGrantResponse, Unit]): Request[AcceptGrantResponse, AWSError] = js.native
+  /**
+    * Accepts the specified grant.
+    */
+  def acceptGrant(params: AcceptGrantRequest): Request[AcceptGrantResponse, AWSError] = js.native
+  def acceptGrant(
+    params: AcceptGrantRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AcceptGrantResponse, Unit]
+  ): Request[AcceptGrantResponse, AWSError] = js.native
+  
+  /**
+    * Checks in the specified license. Check in a license when it is no longer in use.
+    */
+  def checkInLicense(): Request[CheckInLicenseResponse, AWSError] = js.native
+  def checkInLicense(callback: js.Function2[/* err */ AWSError, /* data */ CheckInLicenseResponse, Unit]): Request[CheckInLicenseResponse, AWSError] = js.native
+  /**
+    * Checks in the specified license. Check in a license when it is no longer in use.
+    */
+  def checkInLicense(params: CheckInLicenseRequest): Request[CheckInLicenseResponse, AWSError] = js.native
+  def checkInLicense(
+    params: CheckInLicenseRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CheckInLicenseResponse, Unit]
+  ): Request[CheckInLicenseResponse, AWSError] = js.native
+  
+  /**
+    * Checks out the specified license for offline use.
+    */
+  def checkoutBorrowLicense(): Request[CheckoutBorrowLicenseResponse, AWSError] = js.native
+  def checkoutBorrowLicense(callback: js.Function2[/* err */ AWSError, /* data */ CheckoutBorrowLicenseResponse, Unit]): Request[CheckoutBorrowLicenseResponse, AWSError] = js.native
+  /**
+    * Checks out the specified license for offline use.
+    */
+  def checkoutBorrowLicense(params: CheckoutBorrowLicenseRequest): Request[CheckoutBorrowLicenseResponse, AWSError] = js.native
+  def checkoutBorrowLicense(
+    params: CheckoutBorrowLicenseRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CheckoutBorrowLicenseResponse, Unit]
+  ): Request[CheckoutBorrowLicenseResponse, AWSError] = js.native
+  
+  /**
+    * Checks out the specified license.
+    */
+  def checkoutLicense(): Request[CheckoutLicenseResponse, AWSError] = js.native
+  def checkoutLicense(callback: js.Function2[/* err */ AWSError, /* data */ CheckoutLicenseResponse, Unit]): Request[CheckoutLicenseResponse, AWSError] = js.native
+  /**
+    * Checks out the specified license.
+    */
+  def checkoutLicense(params: CheckoutLicenseRequest): Request[CheckoutLicenseResponse, AWSError] = js.native
+  def checkoutLicense(
+    params: CheckoutLicenseRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CheckoutLicenseResponse, Unit]
+  ): Request[CheckoutLicenseResponse, AWSError] = js.native
+  
   @JSName("config")
   var config_LicenseManager: ConfigBase & ClientConfiguration = js.native
+  
+  /**
+    * Creates a grant for the specified license. A grant shares the use of license entitlements with specific Amazon Web Services accounts.
+    */
+  def createGrant(): Request[CreateGrantResponse, AWSError] = js.native
+  def createGrant(callback: js.Function2[/* err */ AWSError, /* data */ CreateGrantResponse, Unit]): Request[CreateGrantResponse, AWSError] = js.native
+  /**
+    * Creates a grant for the specified license. A grant shares the use of license entitlements with specific Amazon Web Services accounts.
+    */
+  def createGrant(params: CreateGrantRequest): Request[CreateGrantResponse, AWSError] = js.native
+  def createGrant(
+    params: CreateGrantRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateGrantResponse, Unit]
+  ): Request[CreateGrantResponse, AWSError] = js.native
+  
+  /**
+    * Creates a new version of the specified grant.
+    */
+  def createGrantVersion(): Request[CreateGrantVersionResponse, AWSError] = js.native
+  def createGrantVersion(callback: js.Function2[/* err */ AWSError, /* data */ CreateGrantVersionResponse, Unit]): Request[CreateGrantVersionResponse, AWSError] = js.native
+  /**
+    * Creates a new version of the specified grant.
+    */
+  def createGrantVersion(params: CreateGrantVersionRequest): Request[CreateGrantVersionResponse, AWSError] = js.native
+  def createGrantVersion(
+    params: CreateGrantVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateGrantVersionResponse, Unit]
+  ): Request[CreateGrantVersionResponse, AWSError] = js.native
+  
+  /**
+    * Creates a license.
+    */
+  def createLicense(): Request[CreateLicenseResponse, AWSError] = js.native
+  def createLicense(callback: js.Function2[/* err */ AWSError, /* data */ CreateLicenseResponse, Unit]): Request[CreateLicenseResponse, AWSError] = js.native
+  /**
+    * Creates a license.
+    */
+  def createLicense(params: CreateLicenseRequest): Request[CreateLicenseResponse, AWSError] = js.native
+  def createLicense(
+    params: CreateLicenseRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLicenseResponse, Unit]
+  ): Request[CreateLicenseResponse, AWSError] = js.native
   
   /**
     * Creates a license configuration. A license configuration is an abstraction of a customer license agreement that can be consumed and enforced by License Manager. Components include specifications for the license type (licensing by instance, socket, CPU, or vCPU), allowed tenancy (shared tenancy, Dedicated Instance, Dedicated Host, or all of these), license affinity to host (how long a license must be associated with a host), and the number of licenses purchased and used.
@@ -29,6 +127,94 @@ trait LicenseManager extends Service {
   ): Request[CreateLicenseConfigurationResponse, AWSError] = js.native
   
   /**
+    * Creates a new license conversion task.
+    */
+  def createLicenseConversionTaskForResource(): Request[CreateLicenseConversionTaskForResourceResponse, AWSError] = js.native
+  def createLicenseConversionTaskForResource(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLicenseConversionTaskForResourceResponse, Unit]
+  ): Request[CreateLicenseConversionTaskForResourceResponse, AWSError] = js.native
+  /**
+    * Creates a new license conversion task.
+    */
+  def createLicenseConversionTaskForResource(params: CreateLicenseConversionTaskForResourceRequest): Request[CreateLicenseConversionTaskForResourceResponse, AWSError] = js.native
+  def createLicenseConversionTaskForResource(
+    params: CreateLicenseConversionTaskForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLicenseConversionTaskForResourceResponse, Unit]
+  ): Request[CreateLicenseConversionTaskForResourceResponse, AWSError] = js.native
+  
+  /**
+    * Creates a report generator.
+    */
+  def createLicenseManagerReportGenerator(): Request[CreateLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  def createLicenseManagerReportGenerator(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLicenseManagerReportGeneratorResponse, Unit]
+  ): Request[CreateLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  /**
+    * Creates a report generator.
+    */
+  def createLicenseManagerReportGenerator(params: CreateLicenseManagerReportGeneratorRequest): Request[CreateLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  def createLicenseManagerReportGenerator(
+    params: CreateLicenseManagerReportGeneratorRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLicenseManagerReportGeneratorResponse, Unit]
+  ): Request[CreateLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  
+  /**
+    * Creates a new version of the specified license.
+    */
+  def createLicenseVersion(): Request[CreateLicenseVersionResponse, AWSError] = js.native
+  def createLicenseVersion(callback: js.Function2[/* err */ AWSError, /* data */ CreateLicenseVersionResponse, Unit]): Request[CreateLicenseVersionResponse, AWSError] = js.native
+  /**
+    * Creates a new version of the specified license.
+    */
+  def createLicenseVersion(params: CreateLicenseVersionRequest): Request[CreateLicenseVersionResponse, AWSError] = js.native
+  def createLicenseVersion(
+    params: CreateLicenseVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLicenseVersionResponse, Unit]
+  ): Request[CreateLicenseVersionResponse, AWSError] = js.native
+  
+  /**
+    * Creates a long-lived token. A refresh token is a JWT token used to get an access token. With an access token, you can call AssumeRoleWithWebIdentity to get role credentials that you can use to call License Manager to manage the specified license.
+    */
+  def createToken(): Request[CreateTokenResponse, AWSError] = js.native
+  def createToken(callback: js.Function2[/* err */ AWSError, /* data */ CreateTokenResponse, Unit]): Request[CreateTokenResponse, AWSError] = js.native
+  /**
+    * Creates a long-lived token. A refresh token is a JWT token used to get an access token. With an access token, you can call AssumeRoleWithWebIdentity to get role credentials that you can use to call License Manager to manage the specified license.
+    */
+  def createToken(params: CreateTokenRequest): Request[CreateTokenResponse, AWSError] = js.native
+  def createToken(
+    params: CreateTokenRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTokenResponse, Unit]
+  ): Request[CreateTokenResponse, AWSError] = js.native
+  
+  /**
+    * Deletes the specified grant.
+    */
+  def deleteGrant(): Request[DeleteGrantResponse, AWSError] = js.native
+  def deleteGrant(callback: js.Function2[/* err */ AWSError, /* data */ DeleteGrantResponse, Unit]): Request[DeleteGrantResponse, AWSError] = js.native
+  /**
+    * Deletes the specified grant.
+    */
+  def deleteGrant(params: DeleteGrantRequest): Request[DeleteGrantResponse, AWSError] = js.native
+  def deleteGrant(
+    params: DeleteGrantRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteGrantResponse, Unit]
+  ): Request[DeleteGrantResponse, AWSError] = js.native
+  
+  /**
+    * Deletes the specified license.
+    */
+  def deleteLicense(): Request[DeleteLicenseResponse, AWSError] = js.native
+  def deleteLicense(callback: js.Function2[/* err */ AWSError, /* data */ DeleteLicenseResponse, Unit]): Request[DeleteLicenseResponse, AWSError] = js.native
+  /**
+    * Deletes the specified license.
+    */
+  def deleteLicense(params: DeleteLicenseRequest): Request[DeleteLicenseResponse, AWSError] = js.native
+  def deleteLicense(
+    params: DeleteLicenseRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteLicenseResponse, Unit]
+  ): Request[DeleteLicenseResponse, AWSError] = js.native
+  
+  /**
     * Deletes the specified license configuration. You cannot delete a license configuration that is in use.
     */
   def deleteLicenseConfiguration(): Request[DeleteLicenseConfigurationResponse, AWSError] = js.native
@@ -43,6 +229,92 @@ trait LicenseManager extends Service {
   ): Request[DeleteLicenseConfigurationResponse, AWSError] = js.native
   
   /**
+    * Deletes the specified report generator. This action deletes the report generator, which stops it from generating future reports. The action cannot be reversed. It has no effect on the previous reports from this generator.
+    */
+  def deleteLicenseManagerReportGenerator(): Request[DeleteLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  def deleteLicenseManagerReportGenerator(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteLicenseManagerReportGeneratorResponse, Unit]
+  ): Request[DeleteLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  /**
+    * Deletes the specified report generator. This action deletes the report generator, which stops it from generating future reports. The action cannot be reversed. It has no effect on the previous reports from this generator.
+    */
+  def deleteLicenseManagerReportGenerator(params: DeleteLicenseManagerReportGeneratorRequest): Request[DeleteLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  def deleteLicenseManagerReportGenerator(
+    params: DeleteLicenseManagerReportGeneratorRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteLicenseManagerReportGeneratorResponse, Unit]
+  ): Request[DeleteLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  
+  /**
+    * Deletes the specified token. Must be called in the license home Region.
+    */
+  def deleteToken(): Request[DeleteTokenResponse, AWSError] = js.native
+  def deleteToken(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTokenResponse, Unit]): Request[DeleteTokenResponse, AWSError] = js.native
+  /**
+    * Deletes the specified token. Must be called in the license home Region.
+    */
+  def deleteToken(params: DeleteTokenRequest): Request[DeleteTokenResponse, AWSError] = js.native
+  def deleteToken(
+    params: DeleteTokenRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTokenResponse, Unit]
+  ): Request[DeleteTokenResponse, AWSError] = js.native
+  
+  /**
+    * Extends the expiration date for license consumption.
+    */
+  def extendLicenseConsumption(): Request[ExtendLicenseConsumptionResponse, AWSError] = js.native
+  def extendLicenseConsumption(callback: js.Function2[/* err */ AWSError, /* data */ ExtendLicenseConsumptionResponse, Unit]): Request[ExtendLicenseConsumptionResponse, AWSError] = js.native
+  /**
+    * Extends the expiration date for license consumption.
+    */
+  def extendLicenseConsumption(params: ExtendLicenseConsumptionRequest): Request[ExtendLicenseConsumptionResponse, AWSError] = js.native
+  def extendLicenseConsumption(
+    params: ExtendLicenseConsumptionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ExtendLicenseConsumptionResponse, Unit]
+  ): Request[ExtendLicenseConsumptionResponse, AWSError] = js.native
+  
+  /**
+    * Gets a temporary access token to use with AssumeRoleWithWebIdentity. Access tokens are valid for one hour.
+    */
+  def getAccessToken(): Request[GetAccessTokenResponse, AWSError] = js.native
+  def getAccessToken(callback: js.Function2[/* err */ AWSError, /* data */ GetAccessTokenResponse, Unit]): Request[GetAccessTokenResponse, AWSError] = js.native
+  /**
+    * Gets a temporary access token to use with AssumeRoleWithWebIdentity. Access tokens are valid for one hour.
+    */
+  def getAccessToken(params: GetAccessTokenRequest): Request[GetAccessTokenResponse, AWSError] = js.native
+  def getAccessToken(
+    params: GetAccessTokenRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAccessTokenResponse, Unit]
+  ): Request[GetAccessTokenResponse, AWSError] = js.native
+  
+  /**
+    * Gets detailed information about the specified grant.
+    */
+  def getGrant(): Request[GetGrantResponse, AWSError] = js.native
+  def getGrant(callback: js.Function2[/* err */ AWSError, /* data */ GetGrantResponse, Unit]): Request[GetGrantResponse, AWSError] = js.native
+  /**
+    * Gets detailed information about the specified grant.
+    */
+  def getGrant(params: GetGrantRequest): Request[GetGrantResponse, AWSError] = js.native
+  def getGrant(
+    params: GetGrantRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetGrantResponse, Unit]
+  ): Request[GetGrantResponse, AWSError] = js.native
+  
+  /**
+    * Gets detailed information about the specified license.
+    */
+  def getLicense(): Request[GetLicenseResponse, AWSError] = js.native
+  def getLicense(callback: js.Function2[/* err */ AWSError, /* data */ GetLicenseResponse, Unit]): Request[GetLicenseResponse, AWSError] = js.native
+  /**
+    * Gets detailed information about the specified license.
+    */
+  def getLicense(params: GetLicenseRequest): Request[GetLicenseResponse, AWSError] = js.native
+  def getLicense(
+    params: GetLicenseRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetLicenseResponse, Unit]
+  ): Request[GetLicenseResponse, AWSError] = js.native
+  
+  /**
     * Gets detailed information about the specified license configuration.
     */
   def getLicenseConfiguration(): Request[GetLicenseConfigurationResponse, AWSError] = js.native
@@ -55,6 +327,50 @@ trait LicenseManager extends Service {
     params: GetLicenseConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLicenseConfigurationResponse, Unit]
   ): Request[GetLicenseConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Gets information about the specified license type conversion task.
+    */
+  def getLicenseConversionTask(): Request[GetLicenseConversionTaskResponse, AWSError] = js.native
+  def getLicenseConversionTask(callback: js.Function2[/* err */ AWSError, /* data */ GetLicenseConversionTaskResponse, Unit]): Request[GetLicenseConversionTaskResponse, AWSError] = js.native
+  /**
+    * Gets information about the specified license type conversion task.
+    */
+  def getLicenseConversionTask(params: GetLicenseConversionTaskRequest): Request[GetLicenseConversionTaskResponse, AWSError] = js.native
+  def getLicenseConversionTask(
+    params: GetLicenseConversionTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetLicenseConversionTaskResponse, Unit]
+  ): Request[GetLicenseConversionTaskResponse, AWSError] = js.native
+  
+  /**
+    * Gets information about the specified report generator.
+    */
+  def getLicenseManagerReportGenerator(): Request[GetLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  def getLicenseManagerReportGenerator(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetLicenseManagerReportGeneratorResponse, Unit]
+  ): Request[GetLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  /**
+    * Gets information about the specified report generator.
+    */
+  def getLicenseManagerReportGenerator(params: GetLicenseManagerReportGeneratorRequest): Request[GetLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  def getLicenseManagerReportGenerator(
+    params: GetLicenseManagerReportGeneratorRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetLicenseManagerReportGeneratorResponse, Unit]
+  ): Request[GetLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  
+  /**
+    * Gets detailed information about the usage of the specified license.
+    */
+  def getLicenseUsage(): Request[GetLicenseUsageResponse, AWSError] = js.native
+  def getLicenseUsage(callback: js.Function2[/* err */ AWSError, /* data */ GetLicenseUsageResponse, Unit]): Request[GetLicenseUsageResponse, AWSError] = js.native
+  /**
+    * Gets detailed information about the usage of the specified license.
+    */
+  def getLicenseUsage(params: GetLicenseUsageRequest): Request[GetLicenseUsageResponse, AWSError] = js.native
+  def getLicenseUsage(
+    params: GetLicenseUsageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetLicenseUsageResponse, Unit]
+  ): Request[GetLicenseUsageResponse, AWSError] = js.native
   
   /**
     * Gets the License Manager settings for the current Region.
@@ -85,6 +401,20 @@ trait LicenseManager extends Service {
     params: ListAssociationsForLicenseConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAssociationsForLicenseConfigurationResponse, Unit]
   ): Request[ListAssociationsForLicenseConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Lists the grants distributed for the specified license.
+    */
+  def listDistributedGrants(): Request[ListDistributedGrantsResponse, AWSError] = js.native
+  def listDistributedGrants(callback: js.Function2[/* err */ AWSError, /* data */ ListDistributedGrantsResponse, Unit]): Request[ListDistributedGrantsResponse, AWSError] = js.native
+  /**
+    * Lists the grants distributed for the specified license.
+    */
+  def listDistributedGrants(params: ListDistributedGrantsRequest): Request[ListDistributedGrantsResponse, AWSError] = js.native
+  def listDistributedGrants(
+    params: ListDistributedGrantsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDistributedGrantsResponse, Unit]
+  ): Request[ListDistributedGrantsResponse, AWSError] = js.native
   
   /**
     * Lists the license configuration operations that failed.
@@ -125,6 +455,36 @@ trait LicenseManager extends Service {
   ): Request[ListLicenseConfigurationsResponse, AWSError] = js.native
   
   /**
+    * Lists the license type conversion tasks for your account.
+    */
+  def listLicenseConversionTasks(): Request[ListLicenseConversionTasksResponse, AWSError] = js.native
+  def listLicenseConversionTasks(callback: js.Function2[/* err */ AWSError, /* data */ ListLicenseConversionTasksResponse, Unit]): Request[ListLicenseConversionTasksResponse, AWSError] = js.native
+  /**
+    * Lists the license type conversion tasks for your account.
+    */
+  def listLicenseConversionTasks(params: ListLicenseConversionTasksRequest): Request[ListLicenseConversionTasksResponse, AWSError] = js.native
+  def listLicenseConversionTasks(
+    params: ListLicenseConversionTasksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListLicenseConversionTasksResponse, Unit]
+  ): Request[ListLicenseConversionTasksResponse, AWSError] = js.native
+  
+  /**
+    * Lists the report generators for your account.
+    */
+  def listLicenseManagerReportGenerators(): Request[ListLicenseManagerReportGeneratorsResponse, AWSError] = js.native
+  def listLicenseManagerReportGenerators(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListLicenseManagerReportGeneratorsResponse, Unit]
+  ): Request[ListLicenseManagerReportGeneratorsResponse, AWSError] = js.native
+  /**
+    * Lists the report generators for your account.
+    */
+  def listLicenseManagerReportGenerators(params: ListLicenseManagerReportGeneratorsRequest): Request[ListLicenseManagerReportGeneratorsResponse, AWSError] = js.native
+  def listLicenseManagerReportGenerators(
+    params: ListLicenseManagerReportGeneratorsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListLicenseManagerReportGeneratorsResponse, Unit]
+  ): Request[ListLicenseManagerReportGeneratorsResponse, AWSError] = js.native
+  
+  /**
     * Describes the license configurations for the specified resource.
     */
   def listLicenseSpecificationsForResource(): Request[ListLicenseSpecificationsForResourceResponse, AWSError] = js.native
@@ -139,6 +499,62 @@ trait LicenseManager extends Service {
     params: ListLicenseSpecificationsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListLicenseSpecificationsForResourceResponse, Unit]
   ): Request[ListLicenseSpecificationsForResourceResponse, AWSError] = js.native
+  
+  /**
+    * Lists all versions of the specified license.
+    */
+  def listLicenseVersions(): Request[ListLicenseVersionsResponse, AWSError] = js.native
+  def listLicenseVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListLicenseVersionsResponse, Unit]): Request[ListLicenseVersionsResponse, AWSError] = js.native
+  /**
+    * Lists all versions of the specified license.
+    */
+  def listLicenseVersions(params: ListLicenseVersionsRequest): Request[ListLicenseVersionsResponse, AWSError] = js.native
+  def listLicenseVersions(
+    params: ListLicenseVersionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListLicenseVersionsResponse, Unit]
+  ): Request[ListLicenseVersionsResponse, AWSError] = js.native
+  
+  /**
+    * Lists the licenses for your account.
+    */
+  def listLicenses(): Request[ListLicensesResponse, AWSError] = js.native
+  def listLicenses(callback: js.Function2[/* err */ AWSError, /* data */ ListLicensesResponse, Unit]): Request[ListLicensesResponse, AWSError] = js.native
+  /**
+    * Lists the licenses for your account.
+    */
+  def listLicenses(params: ListLicensesRequest): Request[ListLicensesResponse, AWSError] = js.native
+  def listLicenses(
+    params: ListLicensesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListLicensesResponse, Unit]
+  ): Request[ListLicensesResponse, AWSError] = js.native
+  
+  /**
+    * Lists grants that are received but not accepted.
+    */
+  def listReceivedGrants(): Request[ListReceivedGrantsResponse, AWSError] = js.native
+  def listReceivedGrants(callback: js.Function2[/* err */ AWSError, /* data */ ListReceivedGrantsResponse, Unit]): Request[ListReceivedGrantsResponse, AWSError] = js.native
+  /**
+    * Lists grants that are received but not accepted.
+    */
+  def listReceivedGrants(params: ListReceivedGrantsRequest): Request[ListReceivedGrantsResponse, AWSError] = js.native
+  def listReceivedGrants(
+    params: ListReceivedGrantsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListReceivedGrantsResponse, Unit]
+  ): Request[ListReceivedGrantsResponse, AWSError] = js.native
+  
+  /**
+    * Lists received licenses.
+    */
+  def listReceivedLicenses(): Request[ListReceivedLicensesResponse, AWSError] = js.native
+  def listReceivedLicenses(callback: js.Function2[/* err */ AWSError, /* data */ ListReceivedLicensesResponse, Unit]): Request[ListReceivedLicensesResponse, AWSError] = js.native
+  /**
+    * Lists received licenses.
+    */
+  def listReceivedLicenses(params: ListReceivedLicensesRequest): Request[ListReceivedLicensesResponse, AWSError] = js.native
+  def listReceivedLicenses(
+    params: ListReceivedLicensesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListReceivedLicensesResponse, Unit]
+  ): Request[ListReceivedLicensesResponse, AWSError] = js.native
   
   /**
     * Lists resources managed using Systems Manager inventory.
@@ -169,6 +585,20 @@ trait LicenseManager extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
+    * Lists your tokens.
+    */
+  def listTokens(): Request[ListTokensResponse, AWSError] = js.native
+  def listTokens(callback: js.Function2[/* err */ AWSError, /* data */ ListTokensResponse, Unit]): Request[ListTokensResponse, AWSError] = js.native
+  /**
+    * Lists your tokens.
+    */
+  def listTokens(params: ListTokensRequest): Request[ListTokensResponse, AWSError] = js.native
+  def listTokens(
+    params: ListTokensRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTokensResponse, Unit]
+  ): Request[ListTokensResponse, AWSError] = js.native
+  
+  /**
     * Lists all license usage records for a license configuration, displaying license consumption details by resource at a selected point in time. Use this action to audit the current license consumption for any license inventory and configuration.
     */
   def listUsageForLicenseConfiguration(): Request[ListUsageForLicenseConfigurationResponse, AWSError] = js.native
@@ -183,6 +613,20 @@ trait LicenseManager extends Service {
     params: ListUsageForLicenseConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListUsageForLicenseConfigurationResponse, Unit]
   ): Request[ListUsageForLicenseConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Rejects the specified grant.
+    */
+  def rejectGrant(): Request[RejectGrantResponse, AWSError] = js.native
+  def rejectGrant(callback: js.Function2[/* err */ AWSError, /* data */ RejectGrantResponse, Unit]): Request[RejectGrantResponse, AWSError] = js.native
+  /**
+    * Rejects the specified grant.
+    */
+  def rejectGrant(params: RejectGrantRequest): Request[RejectGrantResponse, AWSError] = js.native
+  def rejectGrant(
+    params: RejectGrantRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RejectGrantResponse, Unit]
+  ): Request[RejectGrantResponse, AWSError] = js.native
   
   /**
     * Adds the specified tags to the specified license configuration.
@@ -227,14 +671,30 @@ trait LicenseManager extends Service {
   ): Request[UpdateLicenseConfigurationResponse, AWSError] = js.native
   
   /**
-    * Adds or removes the specified license configurations for the specified AWS resource. You can update the license specifications of AMIs, instances, and hosts. You cannot update the license specifications for launch templates and AWS CloudFormation templates, as they send license configurations to the operation that creates the resource.
+    * Updates a report generator. After you make changes to a report generator, it starts generating new reports within 60 minutes of being updated.
+    */
+  def updateLicenseManagerReportGenerator(): Request[UpdateLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  def updateLicenseManagerReportGenerator(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateLicenseManagerReportGeneratorResponse, Unit]
+  ): Request[UpdateLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  /**
+    * Updates a report generator. After you make changes to a report generator, it starts generating new reports within 60 minutes of being updated.
+    */
+  def updateLicenseManagerReportGenerator(params: UpdateLicenseManagerReportGeneratorRequest): Request[UpdateLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  def updateLicenseManagerReportGenerator(
+    params: UpdateLicenseManagerReportGeneratorRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateLicenseManagerReportGeneratorResponse, Unit]
+  ): Request[UpdateLicenseManagerReportGeneratorResponse, AWSError] = js.native
+  
+  /**
+    * Adds or removes the specified license configurations for the specified Amazon Web Services resource. You can update the license specifications of AMIs, instances, and hosts. You cannot update the license specifications for launch templates and CloudFormation templates, as they send license configurations to the operation that creates the resource.
     */
   def updateLicenseSpecificationsForResource(): Request[UpdateLicenseSpecificationsForResourceResponse, AWSError] = js.native
   def updateLicenseSpecificationsForResource(
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateLicenseSpecificationsForResourceResponse, Unit]
   ): Request[UpdateLicenseSpecificationsForResourceResponse, AWSError] = js.native
   /**
-    * Adds or removes the specified license configurations for the specified AWS resource. You can update the license specifications of AMIs, instances, and hosts. You cannot update the license specifications for launch templates and AWS CloudFormation templates, as they send license configurations to the operation that creates the resource.
+    * Adds or removes the specified license configurations for the specified Amazon Web Services resource. You can update the license specifications of AMIs, instances, and hosts. You cannot update the license specifications for launch templates and CloudFormation templates, as they send license configurations to the operation that creates the resource.
     */
   def updateLicenseSpecificationsForResource(params: UpdateLicenseSpecificationsForResourceRequest): Request[UpdateLicenseSpecificationsForResourceResponse, AWSError] = js.native
   def updateLicenseSpecificationsForResource(

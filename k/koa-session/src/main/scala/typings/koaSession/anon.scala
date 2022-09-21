@@ -9,7 +9,6 @@ import typings.koaSession.koaSessionStrings.strict
 import typings.koaSession.mod.ExternalKeys
 import typings.koaSession.mod.Session
 import typings.koaSession.mod.stores
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,6 +50,8 @@ object anon {
     
     var length: js.UndefOr[Double] = js.undefined
     
+    var manuallyCommit: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
+    
     var maxAge: js.UndefOr[Double | session] = js.undefined
     
     var populated: js.UndefOr[Boolean] = js.undefined
@@ -75,6 +76,10 @@ object anon {
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
       inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      
+      inline def setManuallyCommit(value: () => js.Promise[Unit]): Self = StObject.set(x, "manuallyCommit", js.Any.fromFunction0(value))
+      
+      inline def setManuallyCommitUndefined: Self = StObject.set(x, "manuallyCommit", js.undefined)
       
       inline def setMaxAge(value: Double | session): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
@@ -105,6 +110,8 @@ object anon {
     
     var length: js.UndefOr[Double] = js.undefined
     
+    var manuallyCommit: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
+    
     var maxAge: js.UndefOr[Double | session] = js.undefined
     
     var populated: js.UndefOr[Boolean] = js.undefined
@@ -129,6 +136,10 @@ object anon {
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
       inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      
+      inline def setManuallyCommit(value: () => js.Promise[Unit]): Self = StObject.set(x, "manuallyCommit", js.Any.fromFunction0(value))
+      
+      inline def setManuallyCommitUndefined: Self = StObject.set(x, "manuallyCommit", js.undefined)
       
       inline def setMaxAge(value: Double | session): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
@@ -161,6 +172,8 @@ object anon {
     
     var ContextStore: js.UndefOr[Instantiable] = js.undefined
     
+    var autoCommit: js.UndefOr[Boolean] = js.undefined
+    
     var beforeSave: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ Session, Unit]] = js.undefined
     
     var decode: js.UndefOr[js.Function1[/* str */ String, js.Object]] = js.undefined
@@ -169,7 +182,7 @@ object anon {
     
     var encode: js.UndefOr[js.Function1[/* obj */ js.Object, String]] = js.undefined
     
-    var expires: js.UndefOr[Date] = js.undefined
+    var expires: js.UndefOr[js.Date] = js.undefined
     
     var externalKey: js.UndefOr[ExternalKeys] = js.undefined
     
@@ -212,6 +225,10 @@ object anon {
     
     extension [Self <: Partialopts](x: Self) {
       
+      inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
+      
+      inline def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
+      
       inline def setBeforeSave(value: (/* ctx */ Context, /* session */ Session) => Unit): Self = StObject.set(x, "beforeSave", js.Any.fromFunction2(value))
       
       inline def setBeforeSaveUndefined: Self = StObject.set(x, "beforeSave", js.undefined)
@@ -232,7 +249,7 @@ object anon {
       
       inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("storm-react-diagrams", "DefaultLinkModel")
 @js.native
-class DefaultLinkModel ()
+open class DefaultLinkModel ()
   extends typings.stormReactDiagrams.defaultLinkModelMod.DefaultLinkModel {
   def this(`type`: String) = this()
 }

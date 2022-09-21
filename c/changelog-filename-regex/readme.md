@@ -10,15 +10,12 @@ A regular expression that matches a CHANGELOG filename
 | ------------------ | :-------------: |
 | Full name          | changelog-filename-regex |
 | Keywords           | regex, regexp, file, filename, name, log, changelog, change-log, updates, releases, release-history, history, releasenote, match, browser, client-side |
-| # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 2985622 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 342105.3333333333 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/shinnn/changelog-filename-regex#readme)
-- [Bugs](https://github.com/shinnn/changelog-filename-regex/issues)
-- [Repository](https://github.com/shinnn/changelog-filename-regex)
 - [Npm](https://www.npmjs.com/package/changelog-filename-regex)
     
 

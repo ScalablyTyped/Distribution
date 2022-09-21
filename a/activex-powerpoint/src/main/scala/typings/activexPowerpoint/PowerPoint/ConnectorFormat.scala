@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConnectorFormat extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   def BeginConnect(ConnectedShape: Shape, ConnectionSite: Double): Unit
   
@@ -32,7 +32,7 @@ trait ConnectorFormat extends StObject {
   
   def EndDisconnect(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.ConnectorFormat_typekey")
   var PowerPointDotConnectorFormat_typekey: ConnectorFormat
@@ -42,7 +42,7 @@ trait ConnectorFormat extends StObject {
 object ConnectorFormat {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     BeginConnect: (Shape, Double) => Unit,
     BeginConnected: MsoTriState,
     BeginConnectedShape: Shape,
@@ -54,7 +54,7 @@ object ConnectorFormat {
     EndConnectedShape: Shape,
     EndConnectionSite: Double,
     EndDisconnect: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotConnectorFormat_typekey: ConnectorFormat,
     Type: MsoConnectorType
   ): ConnectorFormat = {
@@ -65,7 +65,7 @@ object ConnectorFormat {
   
   extension [Self <: ConnectorFormat](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setBeginConnect(value: (Shape, Double) => Unit): Self = StObject.set(x, "BeginConnect", js.Any.fromFunction2(value))
     
@@ -89,7 +89,7 @@ object ConnectorFormat {
     
     inline def setEndDisconnect(value: () => Unit): Self = StObject.set(x, "EndDisconnect", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotConnectorFormat_typekey(value: ConnectorFormat): Self = StObject.set(x, "PowerPoint.ConnectorFormat_typekey", value.asInstanceOf[js.Any])
     

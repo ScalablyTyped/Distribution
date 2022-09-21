@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DropDownSettings extends StObject {
   
   //Events
-  var change: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var change: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var dataBound: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   var icons: js.UndefOr[DropDownIcons] = js.undefined
   
   var iconsLibrary: js.UndefOr[String] = js.undefined
   
-  var maxHeight: js.UndefOr[js.Any] = js.undefined
+  var maxHeight: js.UndefOr[Any] = js.undefined
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -40,15 +40,15 @@ object DropDownSettings {
   
   extension [Self <: DropDownSettings](x: Self) {
     
-    inline def setChange(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: /* e */ Any => Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    inline def setDataBound(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
+    inline def setDataBound(value: /* e */ Any => Any): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -60,7 +60,7 @@ object DropDownSettings {
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setMaxHeight(value: js.Any): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Any): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     

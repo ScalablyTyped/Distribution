@@ -22,6 +22,6 @@ object ProtectionLimits {
     
     inline def setProtectedResourceTypeLimits(value: Limits): Self = StObject.set(x, "ProtectedResourceTypeLimits", value.asInstanceOf[js.Any])
     
-    inline def setProtectedResourceTypeLimitsVarargs(value: Limit*): Self = StObject.set(x, "ProtectedResourceTypeLimits", js.Array(value :_*))
+    inline def setProtectedResourceTypeLimitsVarargs(value: Limit*): Self = StObject.set(x, "ProtectedResourceTypeLimits", js.Array(value*))
   }
 }

@@ -29,7 +29,7 @@ object DescribeClientVpnConnectionsResult {
     
     inline def setConnectionsUndefined: Self = StObject.set(x, "Connections", js.undefined)
     
-    inline def setConnectionsVarargs(value: ClientVpnConnection*): Self = StObject.set(x, "Connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: ClientVpnConnection*): Self = StObject.set(x, "Connections", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

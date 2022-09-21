@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined antd.antd/lib/tabs.TabPaneProps & {  key :react.react.ReactText | undefined} */
+/* Inlined antd.antd.TabPaneProps & {  key :react.react.ReactText | undefined} */
 trait TabPanePropskeyReactTextu extends StObject {
   
   var active: js.UndefOr[Boolean] = js.undefined

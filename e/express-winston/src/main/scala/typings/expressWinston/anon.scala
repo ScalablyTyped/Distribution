@@ -25,15 +25,15 @@ object anon {
       
       inline def setBody(value: js.Array[String]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setBodyVarargs(value: String*): Self = StObject.set(x, "body", js.Array(value :_*))
+      inline def setBodyVarargs(value: String*): Self = StObject.set(x, "body", js.Array(value*))
       
       inline def setReq(value: js.Array[String]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      inline def setReqVarargs(value: String*): Self = StObject.set(x, "req", js.Array(value :_*))
+      inline def setReqVarargs(value: String*): Self = StObject.set(x, "req", js.Array(value*))
       
       inline def setRes(value: js.Array[String]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
-      inline def setResVarargs(value: String*): Self = StObject.set(x, "res", js.Array(value :_*))
+      inline def setResVarargs(value: String*): Self = StObject.set(x, "res", js.Array(value*))
     }
   }
 }

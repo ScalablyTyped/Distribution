@@ -8,11 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComponentOptions extends StObject {
   
   /**
-    * @deprecated Use `assetsDirs` instead
-    */
-  var assetsDir: js.UndefOr[String] = js.undefined
-  
-  /**
     * Array of relative links to folders of assets required by the component.
     */
   var assetsDirs: js.UndefOr[js.Array[String]] = js.undefined
@@ -47,7 +42,7 @@ trait ComponentOptions extends StObject {
     *
     * Notice, you can't use sass, or less, only `css` is allowed using `styles`, use `styleUrl` is you need more advanced features.
     */
-  var styles: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
+  var styles: js.UndefOr[String | StringDictionary[Any]] = js.undefined
   
   /**
     * Tag name of the web component. Ideally, the tag name must be globally unique,
@@ -66,15 +61,11 @@ object ComponentOptions {
   
   extension [Self <: ComponentOptions](x: Self) {
     
-    inline def setAssetsDir(value: String): Self = StObject.set(x, "assetsDir", value.asInstanceOf[js.Any])
-    
-    inline def setAssetsDirUndefined: Self = StObject.set(x, "assetsDir", js.undefined)
-    
     inline def setAssetsDirs(value: js.Array[String]): Self = StObject.set(x, "assetsDirs", value.asInstanceOf[js.Any])
     
     inline def setAssetsDirsUndefined: Self = StObject.set(x, "assetsDirs", js.undefined)
     
-    inline def setAssetsDirsVarargs(value: String*): Self = StObject.set(x, "assetsDirs", js.Array(value :_*))
+    inline def setAssetsDirsVarargs(value: String*): Self = StObject.set(x, "assetsDirs", js.Array(value*))
     
     inline def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
     
@@ -92,9 +83,9 @@ object ComponentOptions {
     
     inline def setStyleUrlsUndefined: Self = StObject.set(x, "styleUrls", js.undefined)
     
-    inline def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
+    inline def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value*))
     
-    inline def setStyles(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: String | StringDictionary[Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     

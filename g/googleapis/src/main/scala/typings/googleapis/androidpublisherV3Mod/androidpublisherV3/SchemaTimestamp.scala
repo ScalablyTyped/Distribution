@@ -6,9 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaTimestamp extends StObject {
   
-  var nanos: js.UndefOr[Double] = js.undefined
+  /**
+    * Non-negative fractions of a second at nanosecond resolution. Must be from 0 to 999,999,999 inclusive.
+    */
+  var nanos: js.UndefOr[Double | Null] = js.undefined
   
-  var seconds: js.UndefOr[String] = js.undefined
+  /**
+    * Represents seconds of UTC time since Unix epoch.
+    */
+  var seconds: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTimestamp {
   
@@ -21,9 +27,13 @@ object SchemaTimestamp {
     
     inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
     
+    inline def setNanosNull: Self = StObject.set(x, "nanos", null)
+    
     inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
     
     inline def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    
+    inline def setSecondsNull: Self = StObject.set(x, "seconds", null)
     
     inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
   }

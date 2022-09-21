@@ -1,10 +1,9 @@
 package typings.devextreme.mod.default
 
+import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import typings.devextreme.mod.DevExpress.excelExporter.CellRange
 import typings.devextreme.mod.DevExpress.excelExporter.ExcelExportDataGridProps
 import typings.devextreme.mod.DevExpress.excelExporter.ExcelExportPivotGridProps
-import typings.devextreme.mod.global.JQueryPromise
-import typings.devextreme.mod.global.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object excelExporter {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def exportDataGrid(options: ExcelExportDataGridProps): Promise[CellRange] & JQueryPromise[CellRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportDataGrid")(options.asInstanceOf[js.Any]).asInstanceOf[Promise[CellRange] & JQueryPromise[CellRange]]
+  inline def exportDataGrid(options: ExcelExportDataGridProps): DxPromise[CellRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportDataGrid")(options.asInstanceOf[js.Any]).asInstanceOf[DxPromise[CellRange]]
   
-  inline def exportPivotGrid(options: ExcelExportPivotGridProps): Promise[CellRange] & JQueryPromise[CellRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportPivotGrid")(options.asInstanceOf[js.Any]).asInstanceOf[Promise[CellRange] & JQueryPromise[CellRange]]
+  inline def exportPivotGrid(options: ExcelExportPivotGridProps): DxPromise[CellRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("exportPivotGrid")(options.asInstanceOf[js.Any]).asInstanceOf[DxPromise[CellRange]]
 }

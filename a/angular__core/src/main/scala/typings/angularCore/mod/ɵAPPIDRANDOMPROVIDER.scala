@@ -12,8 +12,8 @@ object ɵAPPIDRANDOMPROVIDER {
   
   @JSImport("@angular/core", "\u0275APP_ID_RANDOM_PROVIDER.deps")
   @js.native
-  def deps: js.Array[js.Any] = js.native
-  inline def deps_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deps")(x.asInstanceOf[js.Any])
+  def deps: js.Array[Any] = js.native
+  inline def deps_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deps")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/core", "\u0275APP_ID_RANDOM_PROVIDER.provide")
   @js.native

@@ -10,10 +10,10 @@ Helper function for exhaustive checks of discriminated unions in TypeScript
 | ------------------ | :-------------: |
 | Full name          | assert-never |
 | Keywords           | typescript, discriminated unions, assert, never |
-| # releases         | 3 |
-| # dependents       | 35 |
-| # downloads        | 12786427 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4199523.333333333 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/aikoven/assert-never#readme)

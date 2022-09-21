@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientAndroidmanagement.anon
 
-import typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanagement.Enterprise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,13 +13,24 @@ trait EnterpriseToken extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
+  /**
+    * Whether the enterprise admin has seen and agreed to the managed Google Play Agreement (https://www.android.com/enterprise/terms/). Do not set this field for any customer-managed
+    * enterprise (https://developers.google.com/android/management/create-enterprise#customer-managed_enterprises). Set this to field to true for all EMM-managed enterprises
+    * (https://developers.google.com/android/management/create-enterprise#emm-managed_enterprises).
+    */
+  var agreementAccepted: js.UndefOr[Boolean] = js.undefined
+  
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** The enterprise token appended to the callback URL. */
+  /**
+    * The enterprise token appended to the callback URL. Set this when creating a customer-managed enterprise
+    * (https://developers.google.com/android/management/create-enterprise#customer-managed_enterprises) and not when creating a deprecated EMM-managed enterprise
+    * (https://developers.google.com/android/management/create-enterprise#emm-managed_enterprises).
+    */
   var enterpriseToken: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
@@ -41,10 +51,11 @@ trait EnterpriseToken extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: Enterprise
-  
-  /** The name of the SignupUrl used to sign up for the enterprise. */
+  /**
+    * The name of the SignupUrl used to sign up for the enterprise. Set this when creating a customer-managed enterprise
+    * (https://developers.google.com/android/management/create-enterprise#customer-managed_enterprises) and not when creating a deprecated EMM-managed enterprise
+    * (https://developers.google.com/android/management/create-enterprise#emm-managed_enterprises).
+    */
   var signupUrlName: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -55,8 +66,8 @@ trait EnterpriseToken extends StObject {
 }
 object EnterpriseToken {
   
-  inline def apply(resource: Enterprise): EnterpriseToken = {
-    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
+  inline def apply(): EnterpriseToken = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnterpriseToken]
   }
   
@@ -69,6 +80,10 @@ object EnterpriseToken {
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    
+    inline def setAgreementAccepted(value: Boolean): Self = StObject.set(x, "agreementAccepted", value.asInstanceOf[js.Any])
+    
+    inline def setAgreementAcceptedUndefined: Self = StObject.set(x, "agreementAccepted", js.undefined)
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -105,8 +120,6 @@ object EnterpriseToken {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: Enterprise): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setSignupUrlName(value: String): Self = StObject.set(x, "signupUrlName", value.asInstanceOf[js.Any])
     

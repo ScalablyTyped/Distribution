@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DestinationDescription extends StObject {
   
+  var AmazonopensearchserviceDestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.AmazonopensearchserviceDestinationDescription] = js.undefined
+  
   /**
     * The ID of the destination.
     */
@@ -49,6 +51,10 @@ object DestinationDescription {
   }
   
   extension [Self <: DestinationDescription](x: Self) {
+    
+    inline def setAmazonopensearchserviceDestinationDescription(value: AmazonopensearchserviceDestinationDescription): Self = StObject.set(x, "AmazonopensearchserviceDestinationDescription", value.asInstanceOf[js.Any])
+    
+    inline def setAmazonopensearchserviceDestinationDescriptionUndefined: Self = StObject.set(x, "AmazonopensearchserviceDestinationDescription", js.undefined)
     
     inline def setDestinationId(value: DestinationId): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
     

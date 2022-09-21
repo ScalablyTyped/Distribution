@@ -33,6 +33,6 @@ object DescribeSpotPriceHistoryResult {
     
     inline def setSpotPriceHistoryUndefined: Self = StObject.set(x, "SpotPriceHistory", js.undefined)
     
-    inline def setSpotPriceHistoryVarargs(value: SpotPrice*): Self = StObject.set(x, "SpotPriceHistory", js.Array(value :_*))
+    inline def setSpotPriceHistoryVarargs(value: SpotPrice*): Self = StObject.set(x, "SpotPriceHistory", js.Array(value*))
   }
 }

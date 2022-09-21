@@ -24,9 +24,9 @@ object typesMod {
     
     var message: js.UndefOr[String] = js.undefined
     
-    var onAdd: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var onAdd: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var onDismiss: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     var position: js.UndefOr[Position] = js.undefined
     
@@ -53,7 +53,7 @@ object typesMod {
       
       inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      inline def setButtonsVarargs(value: NotificationButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: NotificationButton*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setDismissAfter(value: Double): Self = StObject.set(x, "dismissAfter", value.asInstanceOf[js.Any])
       
@@ -75,11 +75,11 @@ object typesMod {
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      inline def setOnAdd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+      inline def setOnAdd(value: /* repeated */ Any => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
       
       inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
       
-      inline def setOnDismiss(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* repeated */ Any => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
@@ -103,7 +103,7 @@ object typesMod {
   
   trait Notification
     extends StObject
-       with /* index */ StringDictionary[js.Any] {
+       with /* index */ StringDictionary[Any] {
     
     var allowHTML: js.UndefOr[Boolean] = js.undefined
     
@@ -119,9 +119,9 @@ object typesMod {
     
     var message: js.UndefOr[String] = js.undefined
     
-    var onAdd: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var onAdd: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var onDismiss: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     var position: Position
     
@@ -146,7 +146,7 @@ object typesMod {
       
       inline def setButtons(value: js.Array[NotificationButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      inline def setButtonsVarargs(value: NotificationButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: NotificationButton*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setDismissAfter(value: Double): Self = StObject.set(x, "dismissAfter", value.asInstanceOf[js.Any])
       
@@ -166,11 +166,11 @@ object typesMod {
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      inline def setOnAdd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+      inline def setOnAdd(value: /* repeated */ Any => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
       
       inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
       
-      inline def setOnDismiss(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* repeated */ Any => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
@@ -192,7 +192,7 @@ object typesMod {
     
     var name: String
     
-    var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var onClick: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     var primary: js.UndefOr[Boolean] = js.undefined
   }
@@ -207,7 +207,7 @@ object typesMod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setOnClick(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* repeated */ Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       

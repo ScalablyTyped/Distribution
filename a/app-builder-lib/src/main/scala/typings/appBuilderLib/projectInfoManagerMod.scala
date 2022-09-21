@@ -10,13 +10,13 @@ object projectInfoManagerMod {
   
   @JSImport("app-builder-lib/out/remoteBuilder/ProjectInfoManager", "ProjectInfoManager")
   @js.native
-  class ProjectInfoManager protected () extends StObject {
+  open class ProjectInfoManager protected () extends StObject {
     def this(packager: Packager) = this()
     
     val infoFile: Lazy[String] = js.native
     
     val packager: Packager = js.native
     
-    /* private */ var saveConfigurationAndMetadata: js.Any = js.native
+    /* private */ var saveConfigurationAndMetadata: Any = js.native
   }
 }

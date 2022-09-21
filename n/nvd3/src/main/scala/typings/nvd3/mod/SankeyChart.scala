@@ -12,12 +12,12 @@ trait SankeyChart
   /*Y-position of the middle of a node.*/
   def center(): Double = js.native
   /*Y-position of the middle of a node.*/
-  def center(value: js.Function1[/* d */ js.Any, js.Any]): this.type = js.native
+  def center(value: js.Function1[/* d */ Any, Any]): this.type = js.native
   
   /*Formatting settings for nodes. */
   def format(): String = js.native
   /*Formatting settings for nodes. */
-  def format(formatter: js.Function1[/* d */ js.Any, String]): this.type = js.native
+  def format(formatter: js.Function1[/* d */ Any, String]): this.type = js.native
   
   /*The height the graph or component created inside the SVG should be made*/
   def height(): Double = js.native
@@ -27,7 +27,7 @@ trait SankeyChart
   /*Format annotation on links. */
   def linkTitle(): String = js.native
   /*Format annotation on links. */
-  def linkTitle(formatter: js.Function1[/* d */ js.Any, String]): this.type = js.native
+  def linkTitle(formatter: js.Function1[/* d */ Any, String]): this.type = js.native
   
   /*Styling options for nodes. */
   def margin(): Margin = js.native

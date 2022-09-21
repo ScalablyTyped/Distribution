@@ -1,6 +1,5 @@
 package typings.appleMapkitJsBrowser.mapkit
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait PointsOfInterestSearchDelegate extends StObject {
   /**
     * Tells the delegate that the search failed due to an error.
     */
-  var searchDidError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+  var searchDidError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
 }
 object PointsOfInterestSearchDelegate {
   
@@ -33,7 +32,7 @@ object PointsOfInterestSearchDelegate {
     
     inline def setSearchDidCompleteUndefined: Self = StObject.set(x, "searchDidComplete", js.undefined)
     
-    inline def setSearchDidError(value: /* error */ Error => Unit): Self = StObject.set(x, "searchDidError", js.Any.fromFunction1(value))
+    inline def setSearchDidError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "searchDidError", js.Any.fromFunction1(value))
     
     inline def setSearchDidErrorUndefined: Self = StObject.set(x, "searchDidError", js.undefined)
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Tooltip")
 @js.native
-class Tooltip protected ()
+open class Tooltip protected ()
   extends StObject
      with typings.ejWebAll.ej.Tooltip {
   def this(element: JQuery) = this()
@@ -73,8 +73,8 @@ object Tooltip {
   /* static member */
   @JSGlobal("ej.Tooltip.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.Tooltip.Trigger")
   @js.native

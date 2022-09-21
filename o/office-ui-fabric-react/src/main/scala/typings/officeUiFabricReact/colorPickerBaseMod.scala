@@ -15,41 +15,41 @@ object colorPickerBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorPicker.base", "ColorPickerBase")
   @js.native
-  class ColorPickerBase protected ()
-    extends Component[IColorPickerProps, IColorPickerState, js.Any]
+  open class ColorPickerBase protected ()
+    extends Component[IColorPickerProps, IColorPickerState, Any]
        with IColorPicker {
     def this(props: IColorPickerProps) = this()
     
-    /* private */ var _getDisplayValue: js.Any = js.native
+    /* private */ var _getDisplayValue: Any = js.native
     
     /** Callback for when the alpha/transparency slider changes */
-    /* private */ var _onATChanged: js.Any = js.native
+    /* private */ var _onATChanged: Any = js.native
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onHChanged: js.Any = js.native
+    /* private */ var _onHChanged: Any = js.native
     
-    /* private */ var _onSVChanged: js.Any = js.native
+    /* private */ var _onSVChanged: Any = js.native
     
-    /* private */ var _onTextChange: js.Any = js.native
+    /* private */ var _onTextChange: Any = js.native
     
     /** Strings besides red/green/blue/alpha/hex, with defaults for all values except the deprecated `hue` */
-    /* private */ var _strings: js.Any = js.native
+    /* private */ var _strings: Any = js.native
     
-    /* private */ var _textChangeHandlers: js.Any = js.native
+    /* private */ var _textChangeHandlers: Any = js.native
     
     /**
       * Strings displayed in the UI as text field labels (these are in a separate object for convenient
       * indexing by short color component name).
       */
-    /* private */ var _textLabels: js.Any = js.native
+    /* private */ var _textLabels: Any = js.native
     
     /**
       * Update the displayed color and call change handlers if appropriate.
       * @param ev - Event if call was triggered by an event (undefined if triggered by props change)
       * @param newColor - Updated color
       */
-    /* private */ var _updateColor: js.Any = js.native
+    /* private */ var _updateColor: Any = js.native
     
     /** The currently selected color. */
     /* CompleteClass */

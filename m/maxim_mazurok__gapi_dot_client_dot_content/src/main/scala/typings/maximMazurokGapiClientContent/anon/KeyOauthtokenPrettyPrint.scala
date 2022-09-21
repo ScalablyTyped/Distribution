@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.ProductsCustomBatchRequest
+import typings.maximMazurokGapiClientContent.gapi.client.content.PosCustomBatchRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +36,7 @@ trait KeyOauthtokenPrettyPrint extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: ProductsCustomBatchRequest
+  var resource: PosCustomBatchRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -46,7 +46,7 @@ trait KeyOauthtokenPrettyPrint extends StObject {
 }
 object KeyOauthtokenPrettyPrint {
   
-  inline def apply(resource: ProductsCustomBatchRequest): KeyOauthtokenPrettyPrint = {
+  inline def apply(resource: PosCustomBatchRequest): KeyOauthtokenPrettyPrint = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOauthtokenPrettyPrint]
   }
@@ -89,7 +89,7 @@ object KeyOauthtokenPrettyPrint {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: ProductsCustomBatchRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: PosCustomBatchRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -15,8 +15,8 @@ object base64vlqMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def decode(data: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def decode(data: String): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
-  inline def encode(data: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(data: js.Array[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def encode(data: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[String]
 }

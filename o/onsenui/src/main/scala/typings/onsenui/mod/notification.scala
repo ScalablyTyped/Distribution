@@ -81,5 +81,5 @@ object notification {
   inline def prompt(message: AlertOptions): js.Promise[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLElement]]
   inline def prompt(message: AlertOptions, options: AlertOptions): js.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HTMLElement]]
   
-  inline def toast(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toast")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def toast(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toast")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
 }

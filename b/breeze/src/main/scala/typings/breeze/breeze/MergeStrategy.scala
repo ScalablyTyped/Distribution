@@ -25,7 +25,7 @@ object MergeStrategy {
     OverwriteChanges: MergeStrategySymbol,
     PreserveChanges: MergeStrategySymbol,
     SkipMerge: MergeStrategySymbol,
-    contains: js.Any => Boolean,
+    contains: Any => Boolean,
     fromName: String => EnumSymbol,
     getNames: () => js.Array[String],
     getSymbols: () => js.Array[EnumSymbol]

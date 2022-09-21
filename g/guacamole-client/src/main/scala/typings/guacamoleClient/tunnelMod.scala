@@ -24,6 +24,7 @@ object tunnelMod {
       *
       * @param data The data to send to the tunnel when connecting.
       */
+    def connect(): Unit = js.native
     def connect(data: String): Unit = js.native
     
     /**
@@ -50,7 +51,7 @@ object tunnelMod {
       * @param opcode The Guacamole instruction opcode.
       * @param parameters The parameters provided for the instruction, if any.
       */
-    var oninstruction: Null | (js.Function2[/* opcode */ String, /* args */ js.Array[js.Any], Unit]) = js.native
+    var oninstruction: Null | (js.Function2[/* opcode */ String, /* args */ js.Array[Any], Unit]) = js.native
     
     /**
       * Fired whenever the state of the tunnel changes.
@@ -74,7 +75,7 @@ object tunnelMod {
       *     The elements of the message to send to the service on the other side
       *     of the tunnel.
       */
-    def sendMessage(message: js.Any, messages: js.Any*): Unit = js.native
+    def sendMessage(message: Any, messages: Any*): Unit = js.native
     
     /**
       * The current state of this tunnel.

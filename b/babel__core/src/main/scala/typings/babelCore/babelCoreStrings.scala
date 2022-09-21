@@ -111,6 +111,10 @@ object babelCoreStrings {
   inline def CatchClause: CatchClause = "CatchClause".asInstanceOf[CatchClause]
   
   @js.native
+  sealed trait ClassAccessorProperty extends StObject
+  inline def ClassAccessorProperty: ClassAccessorProperty = "ClassAccessorProperty".asInstanceOf[ClassAccessorProperty]
+  
+  @js.native
   sealed trait ClassBody extends StObject
   inline def ClassBody: ClassBody = "ClassBody".asInstanceOf[ClassBody]
   
@@ -439,6 +443,10 @@ object babelCoreStrings {
   inline def ImportSpecifier: ImportSpecifier = "ImportSpecifier".asInstanceOf[ImportSpecifier]
   
   @js.native
+  sealed trait IndexedAccessType extends StObject
+  inline def IndexedAccessType: IndexedAccessType = "IndexedAccessType".asInstanceOf[IndexedAccessType]
+  
+  @js.native
   sealed trait InferredPredicate extends StObject
   inline def InferredPredicate: InferredPredicate = "InferredPredicate".asInstanceOf[InferredPredicate]
   
@@ -555,6 +563,10 @@ object babelCoreStrings {
   inline def MixedTypeAnnotation: MixedTypeAnnotation = "MixedTypeAnnotation".asInstanceOf[MixedTypeAnnotation]
   
   @js.native
+  sealed trait ModuleExpression extends StObject
+  inline def ModuleExpression: ModuleExpression = "ModuleExpression".asInstanceOf[ModuleExpression]
+  
+  @js.native
   sealed trait NewExpression extends StObject
   inline def NewExpression: NewExpression = "NewExpression".asInstanceOf[NewExpression]
   
@@ -633,6 +645,10 @@ object babelCoreStrings {
   @js.native
   sealed trait OptionalCallExpression extends StObject
   inline def OptionalCallExpression: OptionalCallExpression = "OptionalCallExpression".asInstanceOf[OptionalCallExpression]
+  
+  @js.native
+  sealed trait OptionalIndexedAccessType extends StObject
+  inline def OptionalIndexedAccessType: OptionalIndexedAccessType = "OptionalIndexedAccessType".asInstanceOf[OptionalIndexedAccessType]
   
   @js.native
   sealed trait OptionalMemberExpression extends StObject
@@ -843,6 +859,10 @@ object babelCoreStrings {
   inline def TSInferType: TSInferType = "TSInferType".asInstanceOf[TSInferType]
   
   @js.native
+  sealed trait TSInstantiationExpression extends StObject
+  inline def TSInstantiationExpression: TSInstantiationExpression = "TSInstantiationExpression".asInstanceOf[TSInstantiationExpression]
+  
+  @js.native
   sealed trait TSInterfaceBody extends StObject
   inline def TSInterfaceBody: TSInterfaceBody = "TSInterfaceBody".asInstanceOf[TSInterfaceBody]
   
@@ -1035,6 +1055,10 @@ object babelCoreStrings {
   inline def Tilde: Tilde = "~".asInstanceOf[Tilde]
   
   @js.native
+  sealed trait TopicReference extends StObject
+  inline def TopicReference: TopicReference = "TopicReference".asInstanceOf[TopicReference]
+  
+  @js.native
   sealed trait TryStatement extends StObject
   inline def TryStatement: TryStatement = "TryStatement".asInstanceOf[TryStatement]
   
@@ -1105,6 +1129,10 @@ object babelCoreStrings {
   @js.native
   sealed trait Verticalline extends StObject
   inline def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
+  
+  @js.native
+  sealed trait VerticallineGreaterthansign extends StObject
+  inline def VerticallineGreaterthansign: VerticallineGreaterthansign = "|>".asInstanceOf[VerticallineGreaterthansign]
   
   @js.native
   sealed trait VerticallineVerticalline extends StObject

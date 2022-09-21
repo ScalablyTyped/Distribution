@@ -13,7 +13,7 @@ trait OptimisticResponse extends StObject {
   
   var operation: OperationDescriptor
   
-  var optimisticResponse: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
+  var optimisticResponse: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
   
   var optimisticUpdater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.undefined
   
@@ -32,7 +32,7 @@ object OptimisticResponse {
     
     inline def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    inline def setOptimisticResponse(value: StringDictionary[js.Any]): Self = StObject.set(x, "optimisticResponse", value.asInstanceOf[js.Any])
+    inline def setOptimisticResponse(value: StringDictionary[Any]): Self = StObject.set(x, "optimisticResponse", value.asInstanceOf[js.Any])
     
     inline def setOptimisticResponseNull: Self = StObject.set(x, "optimisticResponse", null)
     

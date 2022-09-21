@@ -6,16 +6,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListProps
+trait ListProps[T]
   extends StObject
-     with CommonProps {
+     with CommonProps[T] {
   
   /**
     * React component responsible for rendering the individual item specified by an index prop. This component also receives a style prop (used for positioning).
     *
     * If useIsScrolling is enabled for the list, the component also receives an additional isScrolling boolean prop.
     */
-  var children: ComponentType[ListChildComponentProps]
+  var children: ComponentType[ListChildComponentProps[T]]
   
   /**
     * Determines the direction of text and horizontal scrolling.
@@ -57,7 +57,7 @@ trait ListProps
     *
     * If your list does not satisfy the above constraints, use the itemKey property to specify your own keys for items
     */
-  var itemKey: js.UndefOr[ListItemKeySelector] = js.undefined
+  var itemKey: js.UndefOr[ListItemKeySelector[T]] = js.undefined
   
   /**
     * Layout/orientation of the list.
@@ -73,12 +73,12 @@ trait ListProps
   /**
     * Called when the items rendered by the list change.
     */
-  var onItemsRendered: js.UndefOr[js.Function1[/* props */ ListOnItemsRenderedProps, js.Any]] = js.undefined
+  var onItemsRendered: js.UndefOr[js.Function1[/* props */ ListOnItemsRenderedProps, Any]] = js.undefined
   
   /**
     * Called when the list scroll positions changes, as a result of user scrolling or scroll-to method calls.
     */
-  var onScroll: js.UndefOr[js.Function1[/* props */ ListOnScrollProps, js.Any]] = js.undefined
+  var onScroll: js.UndefOr[js.Function1[/* props */ ListOnScrollProps, Any]] = js.undefined
   
   /**
     * The number of items (rows or columns) to render outside of the visible area. This property can be important for two reasons:
@@ -101,19 +101,19 @@ trait ListProps
 }
 object ListProps {
   
-  inline def apply(
-    children: ComponentType[ListChildComponentProps],
+  inline def apply[T](
+    children: ComponentType[ListChildComponentProps[T]],
     height: Double | String,
     itemCount: Double,
     width: Double | String
-  ): ListProps = {
+  ): ListProps[T] = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], itemCount = itemCount.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ListProps]
+    __obj.asInstanceOf[ListProps[T]]
   }
   
-  extension [Self <: ListProps](x: Self) {
+  extension [Self <: ListProps[?], T](x: Self & ListProps[T]) {
     
-    inline def setChildren(value: ComponentType[ListChildComponentProps]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ComponentType[ListChildComponentProps[T]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setDirection(value: CSSDirection | Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
@@ -127,7 +127,7 @@ object ListProps {
     
     inline def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     
-    inline def setItemKey(value: (/* index */ Double, /* data */ js.Any) => Key): Self = StObject.set(x, "itemKey", js.Any.fromFunction2(value))
+    inline def setItemKey(value: (/* index */ Double, T) => Key): Self = StObject.set(x, "itemKey", js.Any.fromFunction2(value))
     
     inline def setItemKeyUndefined: Self = StObject.set(x, "itemKey", js.undefined)
     
@@ -135,11 +135,11 @@ object ListProps {
     
     inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    inline def setOnItemsRendered(value: /* props */ ListOnItemsRenderedProps => js.Any): Self = StObject.set(x, "onItemsRendered", js.Any.fromFunction1(value))
+    inline def setOnItemsRendered(value: /* props */ ListOnItemsRenderedProps => Any): Self = StObject.set(x, "onItemsRendered", js.Any.fromFunction1(value))
     
     inline def setOnItemsRenderedUndefined: Self = StObject.set(x, "onItemsRendered", js.undefined)
     
-    inline def setOnScroll(value: /* props */ ListOnScrollProps => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    inline def setOnScroll(value: /* props */ ListOnScrollProps => Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     

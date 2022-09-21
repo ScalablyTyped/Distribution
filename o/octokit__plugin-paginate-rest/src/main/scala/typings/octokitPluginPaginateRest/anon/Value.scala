@@ -9,11 +9,11 @@ trait Value extends StObject {
   
   var done: Unit
   
-  var value: OctokitResponse[js.Any]
+  var value: OctokitResponse[Any, Double]
 }
 object Value {
   
-  inline def apply(done: Unit, value: OctokitResponse[js.Any]): Value = {
+  inline def apply(done: Unit, value: OctokitResponse[Any, Double]): Value = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
@@ -22,6 +22,6 @@ object Value {
     
     inline def setDone(value: Unit): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: OctokitResponse[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: OctokitResponse[Any, Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "DeleteGcmChannelCommand")
 @js.native
-class DeleteGcmChannelCommand protected ()
+open class DeleteGcmChannelCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.deleteGcmChannelCommandMod.DeleteGcmChannelCommand {
   def this(input: DeleteGcmChannelInput) = this()
 }

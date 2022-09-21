@@ -24,6 +24,6 @@ object DescribeCustomerGatewaysResult {
     
     inline def setCustomerGatewaysUndefined: Self = StObject.set(x, "CustomerGateways", js.undefined)
     
-    inline def setCustomerGatewaysVarargs(value: CustomerGateway*): Self = StObject.set(x, "CustomerGateways", js.Array(value :_*))
+    inline def setCustomerGatewaysVarargs(value: CustomerGateway*): Self = StObject.set(x, "CustomerGateways", js.Array(value*))
   }
 }

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AsElementType extends StObject {
   
-  var as: ElementType[js.Any]
+  var as: ElementType[Any]
 }
 object AsElementType {
   
-  inline def apply(as: ElementType[js.Any]): AsElementType = {
+  inline def apply(as: ElementType[Any]): AsElementType = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsElementType]
   }
   
   extension [Self <: AsElementType](x: Self) {
     
-    inline def setAs(value: ElementType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
   }
 }

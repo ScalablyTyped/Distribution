@@ -21,7 +21,7 @@ trait PartialPageOptionsPage extends StObject {
   
   var createSelectorQuery: js.UndefOr[js.Function0[SelectorQuery]] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var dataset: js.UndefOr[String] = js.undefined
   
@@ -29,7 +29,7 @@ trait PartialPageOptionsPage extends StObject {
   
   var getRelationNodes: js.UndefOr[js.Function1[/* relationKey */ String, js.Array[ComponentRelation]]] = js.undefined
   
-  var hasBehavior: js.UndefOr[js.Function1[/* behavior */ js.Any, Boolean]] = js.undefined
+  var hasBehavior: js.UndefOr[js.Function1[/* behavior */ Any, Boolean]] = js.undefined
   
   var id: js.UndefOr[String] = js.undefined
   
@@ -47,7 +47,7 @@ trait PartialPageOptionsPage extends StObject {
   
   var pageScrollTo: js.UndefOr[js.Function1[/* option */ js.UndefOr[PageScrollToOptions], Unit]] = js.undefined
   
-  var properties: js.UndefOr[js.Any] = js.undefined
+  var properties: js.UndefOr[Any] = js.undefined
   
   var route: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -56,13 +56,13 @@ trait PartialPageOptionsPage extends StObject {
   var selectComponent: js.UndefOr[js.Function1[/* selector */ String, Component]] = js.undefined
   
   var setData: js.UndefOr[
-    js.Function2[/* data */ js.Any, /* callback */ js.UndefOr[js.Function0[Unit]], Unit]
+    js.Function2[/* data */ Any, /* callback */ js.UndefOr[js.Function0[Unit]], Unit]
   ] = js.undefined
   
   var triggerEvent: js.UndefOr[
     js.Function3[
       /* name */ String, 
-      /* details */ js.UndefOr[js.Any], 
+      /* details */ js.UndefOr[Any], 
       /* options */ js.UndefOr[Partialbubblesbooleancomp], 
       Unit
     ]
@@ -87,7 +87,7 @@ object PartialPageOptionsPage {
     
     inline def setCreateSelectorQueryUndefined: Self = StObject.set(x, "createSelectorQuery", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -103,7 +103,7 @@ object PartialPageOptionsPage {
     
     inline def setGetRelationNodesUndefined: Self = StObject.set(x, "getRelationNodes", js.undefined)
     
-    inline def setHasBehavior(value: /* behavior */ js.Any => Boolean): Self = StObject.set(x, "hasBehavior", js.Any.fromFunction1(value))
+    inline def setHasBehavior(value: /* behavior */ Any => Boolean): Self = StObject.set(x, "hasBehavior", js.Any.fromFunction1(value))
     
     inline def setHasBehaviorUndefined: Self = StObject.set(x, "hasBehavior", js.undefined)
     
@@ -139,7 +139,7 @@ object PartialPageOptionsPage {
     
     inline def setPageScrollToUndefined: Self = StObject.set(x, "pageScrollTo", js.undefined)
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
@@ -155,12 +155,12 @@ object PartialPageOptionsPage {
     
     inline def setSelectComponentUndefined: Self = StObject.set(x, "selectComponent", js.undefined)
     
-    inline def setSetData(value: (/* data */ js.Any, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction2(value))
+    inline def setSetData(value: (/* data */ Any, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction2(value))
     
     inline def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
     
     inline def setTriggerEvent(
-      value: (/* name */ String, /* details */ js.UndefOr[js.Any], /* options */ js.UndefOr[Partialbubblesbooleancomp]) => Unit
+      value: (/* name */ String, /* details */ js.UndefOr[Any], /* options */ js.UndefOr[Partialbubblesbooleancomp]) => Unit
     ): Self = StObject.set(x, "triggerEvent", js.Any.fromFunction3(value))
     
     inline def setTriggerEventUndefined: Self = StObject.set(x, "triggerEvent", js.undefined)

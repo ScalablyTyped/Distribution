@@ -15,47 +15,47 @@ trait DeleteSmsMessagesOperation
   @JSName("done")
   def done_MDeleteSmsMessagesOperation[U](): Unit = js.native
   @JSName("done")
-  def done_MDeleteSmsMessagesOperation[U](success: js.Function1[/* value */ js.Any, js.Any]): Unit = js.native
+  def done_MDeleteSmsMessagesOperation[U](success: js.Function1[/* value */ Any, Any]): Unit = js.native
   @JSName("done")
-  def done_MDeleteSmsMessagesOperation[U](success: js.Function1[/* value */ js.Any, js.Any], error: js.Function1[/* error */ js.Any, js.Any]): Unit = js.native
+  def done_MDeleteSmsMessagesOperation[U](success: js.Function1[/* value */ Any, Any], error: js.Function1[/* error */ Any, Any]): Unit = js.native
   @JSName("done")
   def done_MDeleteSmsMessagesOperation[U](
-    success: js.Function1[/* value */ js.Any, js.Any],
-    error: js.Function1[/* error */ js.Any, js.Any],
-    progress: js.Function1[/* progress */ js.Any, Unit]
+    success: js.Function1[/* value */ Any, Any],
+    error: js.Function1[/* error */ Any, Any],
+    progress: js.Function1[/* progress */ Any, Unit]
   ): Unit = js.native
   @JSName("done")
   def done_MDeleteSmsMessagesOperation[U](
-    success: js.Function1[/* value */ js.Any, js.Any],
+    success: js.Function1[/* value */ Any, Any],
     error: Unit,
-    progress: js.Function1[/* progress */ js.Any, Unit]
+    progress: js.Function1[/* progress */ Any, Unit]
   ): Unit = js.native
   @JSName("done")
-  def done_MDeleteSmsMessagesOperation[U](success: Unit, error: js.Function1[/* error */ js.Any, js.Any]): Unit = js.native
+  def done_MDeleteSmsMessagesOperation[U](success: Unit, error: js.Function1[/* error */ Any, Any]): Unit = js.native
   @JSName("done")
   def done_MDeleteSmsMessagesOperation[U](
     success: Unit,
-    error: js.Function1[/* error */ js.Any, js.Any],
-    progress: js.Function1[/* progress */ js.Any, Unit]
+    error: js.Function1[/* error */ Any, Any],
+    progress: js.Function1[/* progress */ Any, Unit]
   ): Unit = js.native
   @JSName("done")
-  def done_MDeleteSmsMessagesOperation[U](success: Unit, error: Unit, progress: js.Function1[/* progress */ js.Any, Unit]): Unit = js.native
+  def done_MDeleteSmsMessagesOperation[U](success: Unit, error: Unit, progress: js.Function1[/* progress */ Any, Unit]): Unit = js.native
   
   var operation: CompletedGetResults = js.native
   
-  def `then`[U](success: js.Function1[/* value */ js.Any, IPromise[U] | U]): IPromise[U] = js.native
+  def `then`[U](success: js.Function1[/* value */ Any, IPromise[U] | U]): IPromise[U] = js.native
   def `then`[U](
-    success: js.Function1[/* value */ js.Any, IPromise[U] | U],
-    error: js.Function1[/* error */ js.Any, IPromise[U] | U]
+    success: js.Function1[/* value */ Any, IPromise[U] | U],
+    error: js.Function1[/* error */ Any, IPromise[U] | U]
   ): IPromise[U] = js.native
   def `then`[U](
-    success: js.Function1[/* value */ js.Any, IPromise[U] | U],
-    error: js.Function1[/* error */ js.Any, IPromise[U] | U],
-    progress: js.Function1[/* progress */ js.Any, Unit]
+    success: js.Function1[/* value */ Any, IPromise[U] | U],
+    error: js.Function1[/* error */ Any, IPromise[U] | U],
+    progress: js.Function1[/* progress */ Any, Unit]
   ): IPromise[U] = js.native
   def `then`[U](
-    success: js.Function1[/* value */ js.Any, IPromise[U] | U],
+    success: js.Function1[/* value */ Any, IPromise[U] | U],
     error: Unit,
-    progress: js.Function1[/* progress */ js.Any, Unit]
+    progress: js.Function1[/* progress */ Any, Unit]
   ): IPromise[U] = js.native
 }

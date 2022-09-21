@@ -37,7 +37,7 @@ object XRegressionCurveContainer {
     acquire: () => Unit,
     addRegressionCurve: XRegressionCurve => Unit,
     getRegressionCurves: () => SafeArray[XRegressionCurve],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeRegressionCurve: XRegressionCurve => Unit,
     setRegressionCurves: SeqEquiv[XRegressionCurve] => Unit

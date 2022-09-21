@@ -13,7 +13,7 @@ trait ColorContainer extends StObject {
   
   var container: js.UndefOr[BoxProps] = js.undefined
   
-  var icon: js.UndefOr[js.Any] = js.undefined
+  var icon: js.UndefOr[Any] = js.undefined
   
   var margin: js.UndefOr[MarginType] = js.undefined
 }
@@ -34,7 +34,7 @@ object ColorContainer {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     

@@ -28,7 +28,7 @@ object notificationApiMod {
   
   @JSImport("vso-node-api/NotificationApi", "NotificationApi")
   @js.native
-  class NotificationApi protected () extends INotificationApi {
+  open class NotificationApi protected () extends INotificationApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }

@@ -8,8 +8,6 @@ trait Hidden extends StObject {
   
   var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var polling: js.UndefOr[String | Double] = js.undefined
-  
   var timeout: js.UndefOr[Double] = js.undefined
   
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -26,10 +24,6 @@ object Hidden {
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
-    
-    inline def setPolling(value: String | Double): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
-    
-    inline def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

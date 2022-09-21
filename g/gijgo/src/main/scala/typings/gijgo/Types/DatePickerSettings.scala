@@ -1,6 +1,5 @@
 package typings.gijgo.Types
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +9,11 @@ trait DatePickerSettings extends StObject {
   var calendarWeeks: js.UndefOr[Boolean] = js.undefined
   
   //Events
-  var change: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var change: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var close: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var disableDates: js.UndefOr[js.Array[js.Any] | js.Function] = js.undefined
+  var disableDates: js.UndefOr[js.Array[Any] | js.Function] = js.undefined
   
   var disableDaysOfWeek: js.UndefOr[js.Array[Double]] = js.undefined
   
@@ -32,15 +31,15 @@ trait DatePickerSettings extends StObject {
   
   var locale: js.UndefOr[String] = js.undefined
   
-  var maxDate: js.UndefOr[Date | String | js.Function] = js.undefined
+  var maxDate: js.UndefOr[js.Date | String | js.Function] = js.undefined
   
-  var minDate: js.UndefOr[Date | String | js.Function] = js.undefined
+  var minDate: js.UndefOr[js.Date | String | js.Function] = js.undefined
   
   var modal: js.UndefOr[Boolean] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var open: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var select: js.UndefOr[js.Function2[/* e */ js.Any, /* type */ String, js.Any]] = js.undefined
+  var select: js.UndefOr[js.Function2[/* e */ Any, /* type */ String, Any]] = js.undefined
   
   var selectOtherMonths: js.UndefOr[Boolean] = js.undefined
   
@@ -73,25 +72,25 @@ object DatePickerSettings {
     
     inline def setCalendarWeeksUndefined: Self = StObject.set(x, "calendarWeeks", js.undefined)
     
-    inline def setChange(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: /* e */ Any => Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    inline def setClose(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    inline def setClose(value: /* e */ Any => Any): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
     inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    inline def setDisableDates(value: js.Array[js.Any] | js.Function): Self = StObject.set(x, "disableDates", value.asInstanceOf[js.Any])
+    inline def setDisableDates(value: js.Array[Any] | js.Function): Self = StObject.set(x, "disableDates", value.asInstanceOf[js.Any])
     
     inline def setDisableDatesUndefined: Self = StObject.set(x, "disableDates", js.undefined)
     
-    inline def setDisableDatesVarargs(value: js.Any*): Self = StObject.set(x, "disableDates", js.Array(value :_*))
+    inline def setDisableDatesVarargs(value: Any*): Self = StObject.set(x, "disableDates", js.Array(value*))
     
     inline def setDisableDaysOfWeek(value: js.Array[Double]): Self = StObject.set(x, "disableDaysOfWeek", value.asInstanceOf[js.Any])
     
     inline def setDisableDaysOfWeekUndefined: Self = StObject.set(x, "disableDaysOfWeek", js.undefined)
     
-    inline def setDisableDaysOfWeekVarargs(value: Double*): Self = StObject.set(x, "disableDaysOfWeek", js.Array(value :_*))
+    inline def setDisableDaysOfWeekVarargs(value: Double*): Self = StObject.set(x, "disableDaysOfWeek", js.Array(value*))
     
     inline def setFooter(value: Boolean): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
@@ -121,11 +120,11 @@ object DatePickerSettings {
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    inline def setMaxDate(value: Date | String | js.Function): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    inline def setMaxDate(value: js.Date | String | js.Function): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
     inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
-    inline def setMinDate(value: Date | String | js.Function): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    inline def setMinDate(value: js.Date | String | js.Function): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
     inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     
@@ -133,11 +132,11 @@ object DatePickerSettings {
     
     inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
-    inline def setOpen(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: /* e */ Any => Any): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    inline def setSelect(value: (/* e */ js.Any, /* type */ String) => js.Any): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
+    inline def setSelect(value: (/* e */ Any, /* type */ String) => Any): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
     
     inline def setSelectOtherMonths(value: Boolean): Self = StObject.set(x, "selectOtherMonths", value.asInstanceOf[js.Any])
     

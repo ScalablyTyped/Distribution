@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.GradientBlockColorStep")
 @js.native
-class GradientBlockColorStep protected ()
+open class GradientBlockColorStep protected ()
   extends StObject
      with typings.babylonjs.BABYLON.GradientBlockColorStep {
   /**

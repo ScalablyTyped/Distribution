@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Watch")
 @js.native
-/* private */ class Watch ()
+/* private */ open class Watch ()
   extends StObject
      with typings.activexExcel.Excel.Watch {
   
@@ -25,8 +25,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ExcelDotWatch_typekey: typings.activexExcel.Excel.Watch = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
-  override val Source: js.Any = js.native
+  override val Source: Any = js.native
 }

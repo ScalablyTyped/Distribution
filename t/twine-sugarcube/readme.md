@@ -1,7 +1,7 @@
 
 # Scala.js typings for twine-sugarcube
 
-Typings are for version 2.33
+Typings are for version 2.36
 
 
 

@@ -1,7 +1,7 @@
 package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientSpanner.anon.Callback
+import typings.maximMazurokGapiClientSpanner.anon.Fields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,5 +14,5 @@ trait DatabaseOperationsResource extends StObject {
     * `metadata.type_url` describes the type of the metadata. Operations returned include those that have completed/failed/canceled within the last 7 days, and pending operations.
     */
   def list(): Request[ListDatabaseOperationsResponse] = js.native
-  def list(request: Callback): Request[ListDatabaseOperationsResponse] = js.native
+  def list(request: Fields): Request[ListDatabaseOperationsResponse] = js.native
 }

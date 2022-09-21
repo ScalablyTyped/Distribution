@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.WorkerInfo
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WorkerPool")
 @js.native
-class WorkerPool protected ()
+open class WorkerPool protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WorkerPool {
   /**
@@ -16,14 +17,20 @@ class WorkerPool protected ()
     */
   def this(workers: js.Array[Worker]) = this()
   
-  /* private */ /* CompleteClass */
-  var _execute: js.Any = js.native
+  /* protected */ /* CompleteClass */
+  override def _execute(
+    workerInfo: WorkerInfo,
+    action: js.Function2[/* worker */ Worker, /* onComplete */ js.Function0[Unit], Unit]
+  ): Unit = js.native
   
-  /* private */ /* CompleteClass */
-  var _pendingActions: js.Any = js.native
+  /* protected */ /* CompleteClass */
+  override def _executeOnIdleWorker(action: js.Function2[/* worker */ Worker, /* onComplete */ js.Function0[Unit], Unit]): Boolean = js.native
   
-  /* private */ /* CompleteClass */
-  var _workerInfos: js.Any = js.native
+  /* protected */ /* CompleteClass */
+  var _pendingActions: js.Array[js.Function2[/* worker */ Worker, /* onComplete */ js.Function0[Unit], Unit]] = js.native
+  
+  /* protected */ /* CompleteClass */
+  var _workerInfos: js.Array[WorkerInfo] = js.native
   
   /**
     * Releases all held resources

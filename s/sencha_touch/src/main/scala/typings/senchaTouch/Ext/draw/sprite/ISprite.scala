@@ -18,7 +18,7 @@ trait ISprite
   var An: js.UndefOr[Array] = js.undefined
   
   /** [Property] (Object) */
-  var attr: js.UndefOr[js.Any] = js.undefined
+  var attr: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number) */
   var fillOpacity: js.UndefOr[Double] = js.undefined
@@ -40,7 +40,7 @@ trait ISprite
   /** [Method] Returns the value of parent
     * @returns Object
     */
-  var getParent: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getParent: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (Number) */
   var globalAlpha: js.UndefOr[Double] = js.undefined
@@ -75,7 +75,7 @@ trait ISprite
     */
   @JSName("relayEvents")
   var relayEvents_ISprite: js.UndefOr[
-    js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+    js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
   ] = js.undefined
   
   /** [Method] Render method
@@ -87,9 +87,9 @@ trait ISprite
   var render: js.UndefOr[
     js.Function3[
       /* surface */ js.UndefOr[ISurface], 
-      /* ctx */ js.UndefOr[js.Any], 
+      /* ctx */ js.UndefOr[Any], 
       /* region */ js.UndefOr[Array], 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -121,7 +121,7 @@ trait ISprite
     */
   var setAttributes: js.UndefOr[
     js.Function3[
-      /* changes */ js.UndefOr[js.Any], 
+      /* changes */ js.UndefOr[Any], 
       /* bypassNormalization */ js.UndefOr[Boolean], 
       /* avoidCopy */ js.UndefOr[Boolean], 
       Unit
@@ -133,13 +133,13 @@ trait ISprite
     * @param avoidCopy Boolean true to avoid copying the changes object. The content of object may be destroyed.
     */
   var setAttributesBypassingNormalization: js.UndefOr[
-    js.Function2[/* changes */ js.UndefOr[js.Any], /* avoidCopy */ js.UndefOr[Boolean], Unit]
+    js.Function2[/* changes */ js.UndefOr[Any], /* avoidCopy */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   
   /** [Method] Sets the value of parent
     * @param parent Object The new value.
     */
-  var setParent: js.UndefOr[js.Function1[/* parent */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setParent: js.UndefOr[js.Function1[/* parent */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
   var shadowBlur: js.UndefOr[Double] = js.undefined
@@ -176,21 +176,19 @@ trait ISprite
   /** [Method] Subclass will fill the plain object with x y width height information of the plain bounding box of this sprite
     * @param plain Object Target object.
     */
-  var updatePlainBBox: js.UndefOr[js.Function1[/* plain */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var updatePlainBBox: js.UndefOr[js.Function1[/* plain */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Subclass will fill the plain object with x y width height information of the transformed bounding box of this sprite
     * @param transform Object Target object.
     * @param plain Object Auxiliary object providing information of plain object.
     */
-  var updateTransformedBBox: js.UndefOr[
-    js.Function2[/* transform */ js.UndefOr[js.Any], /* plain */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var updateTransformedBBox: js.UndefOr[js.Function2[/* transform */ js.UndefOr[Any], /* plain */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Applies sprite s attributes to the given context
     * @param ctx Object Context to apply sprite's attributes to.
     * @param region Array The region of the context to be affected by gradients.
     */
-  var useAttributes: js.UndefOr[js.Function2[/* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[Array], Unit]] = js.undefined
+  var useAttributes: js.UndefOr[js.Function2[/* ctx */ js.UndefOr[Any], /* region */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
   var zIndex: js.UndefOr[Double] = js.undefined
@@ -212,7 +210,7 @@ object ISprite {
     
     inline def setAnUndefined: Self = StObject.set(x, "An", js.undefined)
     
-    inline def setAttr(value: js.Any): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: Any): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
     inline def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
     
@@ -232,7 +230,7 @@ object ISprite {
     
     inline def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
     
-    inline def setGetParent(value: () => js.Any): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+    inline def setGetParent(value: () => Any): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
     
     inline def setGetParentUndefined: Self = StObject.set(x, "getParent", js.undefined)
     
@@ -268,12 +266,12 @@ object ISprite {
     
     inline def setPreRenderUndefined: Self = StObject.set(x, "preRender", js.undefined)
     
-    inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+    inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
     inline def setRender(
-      value: (/* surface */ js.UndefOr[ISurface], /* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[Array]) => js.Any
+      value: (/* surface */ js.UndefOr[ISurface], /* ctx */ js.UndefOr[Any], /* region */ js.UndefOr[Array]) => Any
     ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
     inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
@@ -307,16 +305,16 @@ object ISprite {
     inline def setScalingYUndefined: Self = StObject.set(x, "scalingY", js.undefined)
     
     inline def setSetAttributes(
-      value: (/* changes */ js.UndefOr[js.Any], /* bypassNormalization */ js.UndefOr[Boolean], /* avoidCopy */ js.UndefOr[Boolean]) => Unit
+      value: (/* changes */ js.UndefOr[Any], /* bypassNormalization */ js.UndefOr[Boolean], /* avoidCopy */ js.UndefOr[Boolean]) => Unit
     ): Self = StObject.set(x, "setAttributes", js.Any.fromFunction3(value))
     
-    inline def setSetAttributesBypassingNormalization(value: (/* changes */ js.UndefOr[js.Any], /* avoidCopy */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setAttributesBypassingNormalization", js.Any.fromFunction2(value))
+    inline def setSetAttributesBypassingNormalization(value: (/* changes */ js.UndefOr[Any], /* avoidCopy */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setAttributesBypassingNormalization", js.Any.fromFunction2(value))
     
     inline def setSetAttributesBypassingNormalizationUndefined: Self = StObject.set(x, "setAttributesBypassingNormalization", js.undefined)
     
     inline def setSetAttributesUndefined: Self = StObject.set(x, "setAttributes", js.undefined)
     
-    inline def setSetParent(value: /* parent */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
+    inline def setSetParent(value: /* parent */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
     
     inline def setSetParentUndefined: Self = StObject.set(x, "setParent", js.undefined)
     
@@ -360,15 +358,15 @@ object ISprite {
     
     inline def setTranslationYUndefined: Self = StObject.set(x, "translationY", js.undefined)
     
-    inline def setUpdatePlainBBox(value: /* plain */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updatePlainBBox", js.Any.fromFunction1(value))
+    inline def setUpdatePlainBBox(value: /* plain */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "updatePlainBBox", js.Any.fromFunction1(value))
     
     inline def setUpdatePlainBBoxUndefined: Self = StObject.set(x, "updatePlainBBox", js.undefined)
     
-    inline def setUpdateTransformedBBox(value: (/* transform */ js.UndefOr[js.Any], /* plain */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updateTransformedBBox", js.Any.fromFunction2(value))
+    inline def setUpdateTransformedBBox(value: (/* transform */ js.UndefOr[Any], /* plain */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updateTransformedBBox", js.Any.fromFunction2(value))
     
     inline def setUpdateTransformedBBoxUndefined: Self = StObject.set(x, "updateTransformedBBox", js.undefined)
     
-    inline def setUseAttributes(value: (/* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[Array]) => Unit): Self = StObject.set(x, "useAttributes", js.Any.fromFunction2(value))
+    inline def setUseAttributes(value: (/* ctx */ js.UndefOr[Any], /* region */ js.UndefOr[Array]) => Unit): Self = StObject.set(x, "useAttributes", js.Any.fromFunction2(value))
     
     inline def setUseAttributesUndefined: Self = StObject.set(x, "useAttributes", js.undefined)
     

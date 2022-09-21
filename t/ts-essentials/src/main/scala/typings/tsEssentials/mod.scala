@@ -1,5 +1,6 @@
 package typings.tsEssentials
 
+import typings.tsEssentials.typesMod.Exact
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,16 +13,17 @@ object mod {
   
   @JSImport("ts-essentials", "UnreachableCaseError")
   @js.native
-  class UnreachableCaseError protected ()
+  open class UnreachableCaseError protected ()
     extends typings.tsEssentials.functionsMod.UnreachableCaseError {
     def this(value: scala.Nothing) = this()
   }
   
-  inline def literal(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def literal(value: js.BigInt): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[js.BigInt]
-  inline def literal(value: js.Symbol): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[js.Symbol]
-  inline def literal(value: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def literal(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def literal(value: Null): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Null]
-  inline def literal(value: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def assert(condition: Any): /* asserts condition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any]).asInstanceOf[/* asserts condition */ Boolean]
+  inline def assert(condition: Any, msg: String): /* asserts condition */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[/* asserts condition */ Boolean]
+  
+  inline def createFactoryWithConstraint[Constraint](): js.Function1[/* value */ Constraint, Constraint] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactoryWithConstraint")().asInstanceOf[js.Function1[/* value */ Constraint, Constraint]]
+  
+  inline def isExact[ExpectedShape](): js.Function1[/* x */ Exact[Any, ExpectedShape], ExpectedShape] = ^.asInstanceOf[js.Dynamic].applyDynamic("isExact")().asInstanceOf[js.Function1[/* x */ Exact[Any, ExpectedShape], ExpectedShape]]
+  
+  inline def noop(_args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")(_args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
 }

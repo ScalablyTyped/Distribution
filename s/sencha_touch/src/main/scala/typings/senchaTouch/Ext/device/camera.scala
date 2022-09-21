@@ -22,8 +22,8 @@ object camera {
       */
     var capture: js.UndefOr[
         js.Function6[
-          /* options */ js.UndefOr[js.Any], 
-          /* scope */ js.UndefOr[js.Any], 
+          /* options */ js.UndefOr[Any], 
+          /* scope */ js.UndefOr[Any], 
           /* destination */ js.UndefOr[String], 
           /* encoding */ js.UndefOr[String], 
           /* width */ js.UndefOr[Double], 
@@ -42,7 +42,7 @@ object camera {
     extension [Self <: IAbstract](x: Self) {
       
       inline def setCapture(
-        value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* destination */ js.UndefOr[String], /* encoding */ js.UndefOr[String], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit
+        value: (/* options */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* destination */ js.UndefOr[String], /* encoding */ js.UndefOr[String], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit
       ): Self = StObject.set(x, "capture", js.Any.fromFunction6(value))
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
@@ -57,7 +57,7 @@ object camera {
       * @param args Object
       */
     @JSName("capture")
-    var capture_ICordova: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var capture_ICordova: js.UndefOr[js.Function1[/* args */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ICordova {
     
@@ -68,7 +68,7 @@ object camera {
     
     extension [Self <: ICordova](x: Self) {
       
-      inline def setCapture(value: /* args */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
+      inline def setCapture(value: /* args */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     }
@@ -82,7 +82,7 @@ object camera {
       * @param args Object
       */
     @JSName("capture")
-    var capture_IPhoneGap: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var capture_IPhoneGap: js.UndefOr[js.Function1[/* args */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IPhoneGap {
     
@@ -93,7 +93,7 @@ object camera {
     
     extension [Self <: IPhoneGap](x: Self) {
       
-      inline def setCapture(value: /* args */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
+      inline def setCapture(value: /* args */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     }
@@ -107,7 +107,7 @@ object camera {
       * @param options Object
       */
     @JSName("capture")
-    var capture_ISencha: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var capture_ISencha: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ISencha {
     
@@ -118,7 +118,7 @@ object camera {
     
     extension [Self <: ISencha](x: Self) {
       
-      inline def setCapture(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
+      inline def setCapture(value: /* options */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     }
@@ -132,7 +132,7 @@ object camera {
       * @param options Object
       */
     @JSName("capture")
-    var capture_ISimulator: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var capture_ISimulator: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Returns the value of samples
       * @returns Array
@@ -153,7 +153,7 @@ object camera {
     
     extension [Self <: ISimulator](x: Self) {
       
-      inline def setCapture(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
+      inline def setCapture(value: /* options */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       

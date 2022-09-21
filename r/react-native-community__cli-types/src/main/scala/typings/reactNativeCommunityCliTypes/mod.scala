@@ -1,24 +1,36 @@
 package typings.reactNativeCommunityCliTypes
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.reactNativeCommunityCliTypes.androidMod.AndroidDependencyConfig
+import typings.reactNativeCommunityCliTypes.androidMod.AndroidDependencyParams
 import typings.reactNativeCommunityCliTypes.androidMod.AndroidProjectConfig
+import typings.reactNativeCommunityCliTypes.androidMod.AndroidProjectParams
 import typings.reactNativeCommunityCliTypes.anon.Android
 import typings.reactNativeCommunityCliTypes.anon.Cmd
-import typings.reactNativeCommunityCliTypes.anon.CopyAssets
 import typings.reactNativeCommunityCliTypes.anon.Dictkey
 import typings.reactNativeCommunityCliTypes.anon.Dictname
 import typings.reactNativeCommunityCliTypes.anon.Name
-import typings.reactNativeCommunityCliTypes.anon.OmitDependencynameroot
-import typings.reactNativeCommunityCliTypes.anon.Postlink
-import typings.reactNativeCommunityCliTypes.iosMod.IOSNativeModulesConfig
+import typings.reactNativeCommunityCliTypes.anon.OmitDependencyConfignamer
+import typings.reactNativeCommunityCliTypes.iosMod.IOSDependencyConfig
+import typings.reactNativeCommunityCliTypes.iosMod.IOSDependencyParams
 import typings.reactNativeCommunityCliTypes.iosMod.IOSProjectConfig
+import typings.reactNativeCommunityCliTypes.iosMod.IOSProjectParams
 import typings.reactNativeCommunityCliTypes.reactNativeCommunityCliTypesBooleans.`false`
 import typings.reactNativeCommunityCliTypes.reactNativeCommunityCliTypesBooleans.`true`
+import typings.std.Exclude
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  type AndroidPlatformConfig = PlatformConfig[
+    AndroidProjectConfig, 
+    AndroidProjectParams, 
+    AndroidDependencyConfig, 
+    AndroidDependencyParams
+  ]
   
   trait Command[IsDetached /* <: Boolean */] extends StObject {
     
@@ -61,7 +73,7 @@ object mod {
       
       inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
       
-      inline def setExamplesVarargs(value: Cmd*): Self = StObject.set(x, "examples", js.Array(value :_*))
+      inline def setExamplesVarargs(value: Cmd*): Self = StObject.set(x, "examples", js.Array(value*))
       
       inline def setFunc(value: CommandFunction[js.Object] | DetachedCommandFunction[js.Object]): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
       
@@ -79,7 +91,7 @@ object mod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: (CommandOption[(js.Function1[/* ctx */ Config, OptionValue]) | js.Function0[OptionValue]])*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: (CommandOption[(js.Function1[/* ctx */ Config, OptionValue]) | js.Function0[OptionValue]])*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPkg(value: Name): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
       
@@ -102,7 +114,7 @@ object mod {
     
     var name: String
     
-    var parse: js.UndefOr[js.Function1[/* val */ String, js.Any]] = js.undefined
+    var parse: js.UndefOr[js.Function1[/* val */ String, Any]] = js.undefined
   }
   object CommandOption {
     
@@ -123,106 +135,83 @@ object mod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setParse(value: /* val */ String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: /* val */ String => Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
       inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     }
   }
   
-  trait Config
-    extends StObject
-       with IOSNativeModulesConfig {
-    
-    var assets: js.Array[String]
+  trait Config extends StObject {
     
     var commands: js.Array[Command[`false`]]
     
-    @JSName("dependencies")
-    var dependencies_Config: StringDictionary[Dependency]
+    var dependencies: StringDictionary[DependencyConfig]
+    
+    var healthChecks: js.Array[Any]
     
     var platforms: Dictname
     
-    @JSName("project")
-    var project_Config: ProjectConfig
+    var project: ProjectConfig
+    
+    var reactNativePath: String
     
     var root: String
   }
   object Config {
     
     inline def apply(
-      assets: js.Array[String],
       commands: js.Array[Command[`false`]],
-      dependencies: StringDictionary[Dependency],
+      dependencies: StringDictionary[DependencyConfig],
+      healthChecks: js.Array[Any],
       platforms: Dictname,
       project: ProjectConfig,
       reactNativePath: String,
       root: String
     ): Config = {
-      val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], reactNativePath = reactNativePath.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], healthChecks = healthChecks.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], reactNativePath = reactNativePath.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
     extension [Self <: Config](x: Self) {
       
-      inline def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
-      
-      inline def setAssetsVarargs(value: String*): Self = StObject.set(x, "assets", js.Array(value :_*))
-      
       inline def setCommands(value: js.Array[Command[`false`]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      inline def setCommandsVarargs(value: Command[`false`]*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: Command[`false`]*): Self = StObject.set(x, "commands", js.Array(value*))
       
-      inline def setDependencies(value: StringDictionary[Dependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: StringDictionary[DependencyConfig]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      
+      inline def setHealthChecks(value: js.Array[Any]): Self = StObject.set(x, "healthChecks", value.asInstanceOf[js.Any])
+      
+      inline def setHealthChecksVarargs(value: Any*): Self = StObject.set(x, "healthChecks", js.Array(value*))
       
       inline def setPlatforms(value: Dictname): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
       
       inline def setProject(value: ProjectConfig): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
+      inline def setReactNativePath(value: String): Self = StObject.set(x, "reactNativePath", value.asInstanceOf[js.Any])
+      
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
   
-  trait Dependency extends StObject {
-    
-    var assets: js.Array[String]
-    
-    var hooks: Postlink
+  trait DependencyConfig extends StObject {
     
     var name: String
-    
-    var params: js.Array[InquirerPrompt]
     
     var platforms: Dictkey
     
     var root: String
   }
-  object Dependency {
+  object DependencyConfig {
     
-    inline def apply(
-      assets: js.Array[String],
-      hooks: Postlink,
-      name: String,
-      params: js.Array[InquirerPrompt],
-      platforms: Dictkey,
-      root: String
-    ): Dependency = {
-      val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], hooks = hooks.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Dependency]
+    inline def apply(name: String, platforms: Dictkey, root: String): DependencyConfig = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DependencyConfig]
     }
     
-    extension [Self <: Dependency](x: Self) {
-      
-      inline def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
-      
-      inline def setAssetsVarargs(value: String*): Self = StObject.set(x, "assets", js.Array(value :_*))
-      
-      inline def setHooks(value: Postlink): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    extension [Self <: DependencyConfig](x: Self) {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setParams(value: js.Array[InquirerPrompt]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
-      
-      inline def setParamsVarargs(value: InquirerPrompt*): Self = StObject.set(x, "params", js.Array(value :_*))
       
       inline def setPlatforms(value: Dictkey): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
       
@@ -234,7 +223,7 @@ object mod {
   
   type DetachedCommandFunction[Args] = js.Function2[/* argv */ js.Array[String], /* args */ Args, js.Promise[Unit] | Unit]
   
-  type InquirerPrompt = js.Any
+  type IOSPlatformConfig = PlatformConfig[IOSProjectConfig, IOSProjectParams, IOSDependencyConfig, IOSDependencyParams]
   
   type OptionValue = String | Boolean | Double
   
@@ -242,8 +231,6 @@ object mod {
   trait PlatformConfig[ProjectConfig, ProjectParams, DependencyConfig, DependencyParams] extends StObject {
     
     def dependencyConfig(dependency: String, params: DependencyParams): DependencyConfig | Unit = js.native
-    
-    def linkConfig(): CopyAssets[ProjectConfig, DependencyConfig] = js.native
     
     var npmPackageName: js.UndefOr[String] = js.native
     
@@ -253,11 +240,33 @@ object mod {
   
   trait ProjectConfig
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
-    var android: js.UndefOr[AndroidProjectConfig] = js.undefined
+    var android: js.UndefOr[
+        Exclude[
+          ReturnType[
+            js.Function2[
+              /* projectRoot */ String, 
+              /* projectParams */ AndroidProjectParams | Unit, 
+              AndroidProjectConfig | Unit
+            ]
+          ], 
+          Unit
+        ]
+      ] = js.undefined
     
-    var ios: js.UndefOr[IOSProjectConfig] = js.undefined
+    var ios: js.UndefOr[
+        Exclude[
+          ReturnType[
+            js.Function2[
+              /* projectRoot */ String, 
+              /* projectParams */ IOSProjectParams | Unit, 
+              IOSProjectConfig | Unit
+            ]
+          ], 
+          Unit
+        ]
+      ] = js.undefined
   }
   object ProjectConfig {
     
@@ -268,24 +277,48 @@ object mod {
     
     extension [Self <: ProjectConfig](x: Self) {
       
-      inline def setAndroid(value: AndroidProjectConfig): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+      inline def setAndroid(
+        value: Exclude[
+              ReturnType[
+                js.Function2[
+                  /* projectRoot */ String, 
+                  /* projectParams */ AndroidProjectParams | Unit, 
+                  AndroidProjectConfig | Unit
+                ]
+              ], 
+              Unit
+            ]
+      ): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
       inline def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
       
-      inline def setIos(value: IOSProjectConfig): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+      inline def setIos(
+        value: Exclude[
+              ReturnType[
+                js.Function2[
+                  /* projectRoot */ String, 
+                  /* projectParams */ IOSProjectParams | Unit, 
+                  IOSProjectConfig | Unit
+                ]
+              ], 
+              Unit
+            ]
+      ): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
       
       inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
     }
   }
   
+  type Prompt = Any
+  
   /* Inlined std.Omit<@react-native-community/cli-types.@react-native-community/cli-types.Config, 'root'> & {  reactNativePath :string | void,   project :{  android :@react-native-community/cli-types.@react-native-community/cli-types/build/android.AndroidProjectParams | undefined,   ios :@react-native-community/cli-types.@react-native-community/cli-types/build/ios.IOSProjectParams | undefined, [key: string] : any}} */
   trait UserConfig extends StObject {
     
-    var assets: js.Array[String]
-    
     var commands: js.Array[Command[`false`]]
     
-    var dependencies: StringDictionary[Dependency]
+    var dependencies: StringDictionary[DependencyConfig]
+    
+    var healthChecks: js.Array[Any]
     
     var platforms: Dictname
     
@@ -296,28 +329,28 @@ object mod {
   object UserConfig {
     
     inline def apply(
-      assets: js.Array[String],
       commands: js.Array[Command[`false`]],
-      dependencies: StringDictionary[Dependency],
+      dependencies: StringDictionary[DependencyConfig],
+      healthChecks: js.Array[Any],
       platforms: Dictname,
       project: ProjectConfig & Android,
       reactNativePath: String & (String | Unit)
     ): UserConfig = {
-      val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], reactNativePath = reactNativePath.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], healthChecks = healthChecks.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], reactNativePath = reactNativePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserConfig]
     }
     
     extension [Self <: UserConfig](x: Self) {
       
-      inline def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
-      
-      inline def setAssetsVarargs(value: String*): Self = StObject.set(x, "assets", js.Array(value :_*))
-      
       inline def setCommands(value: js.Array[Command[`false`]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      inline def setCommandsVarargs(value: Command[`false`]*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: Command[`false`]*): Self = StObject.set(x, "commands", js.Array(value*))
       
-      inline def setDependencies(value: StringDictionary[Dependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: StringDictionary[DependencyConfig]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      
+      inline def setHealthChecks(value: js.Array[Any]): Self = StObject.set(x, "healthChecks", value.asInstanceOf[js.Any])
+      
+      inline def setHealthChecksVarargs(value: Any*): Self = StObject.set(x, "healthChecks", js.Array(value*))
       
       inline def setPlatforms(value: Dictname): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
       
@@ -331,14 +364,21 @@ object mod {
     
     var commands: js.Array[Command[`false`]]
     
-    var dependency: OmitDependencynameroot
+    var dependency: OmitDependencyConfignamer
+    
+    var healthChecks: js.Array[Any]
     
     var platforms: Dictname
   }
   object UserDependencyConfig {
     
-    inline def apply(commands: js.Array[Command[`false`]], dependency: OmitDependencynameroot, platforms: Dictname): UserDependencyConfig = {
-      val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], dependency = dependency.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any])
+    inline def apply(
+      commands: js.Array[Command[`false`]],
+      dependency: OmitDependencyConfignamer,
+      healthChecks: js.Array[Any],
+      platforms: Dictname
+    ): UserDependencyConfig = {
+      val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], dependency = dependency.asInstanceOf[js.Any], healthChecks = healthChecks.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserDependencyConfig]
     }
     
@@ -346,9 +386,13 @@ object mod {
       
       inline def setCommands(value: js.Array[Command[`false`]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
-      inline def setCommandsVarargs(value: Command[`false`]*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: Command[`false`]*): Self = StObject.set(x, "commands", js.Array(value*))
       
-      inline def setDependency(value: OmitDependencynameroot): Self = StObject.set(x, "dependency", value.asInstanceOf[js.Any])
+      inline def setDependency(value: OmitDependencyConfignamer): Self = StObject.set(x, "dependency", value.asInstanceOf[js.Any])
+      
+      inline def setHealthChecks(value: js.Array[Any]): Self = StObject.set(x, "healthChecks", value.asInstanceOf[js.Any])
+      
+      inline def setHealthChecksVarargs(value: Any*): Self = StObject.set(x, "healthChecks", js.Array(value*))
       
       inline def setPlatforms(value: Dictname): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     }

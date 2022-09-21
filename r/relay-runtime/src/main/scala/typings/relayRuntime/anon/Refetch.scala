@@ -25,7 +25,7 @@ object Refetch {
     
     inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
-    inline def setConnectionVarargs(value: ConnectionMetadata*): Self = StObject.set(x, "connection", js.Array(value :_*))
+    inline def setConnectionVarargs(value: ConnectionMetadata*): Self = StObject.set(x, "connection", js.Array(value*))
     
     inline def setRefetch(value: ReaderRefetchMetadata): Self = StObject.set(x, "refetch", value.asInstanceOf[js.Any])
   }

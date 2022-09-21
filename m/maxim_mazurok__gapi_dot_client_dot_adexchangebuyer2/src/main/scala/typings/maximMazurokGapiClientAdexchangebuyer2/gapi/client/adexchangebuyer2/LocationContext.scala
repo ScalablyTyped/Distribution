@@ -25,6 +25,6 @@ object LocationContext {
     
     inline def setGeoCriteriaIdsUndefined: Self = StObject.set(x, "geoCriteriaIds", js.undefined)
     
-    inline def setGeoCriteriaIdsVarargs(value: Double*): Self = StObject.set(x, "geoCriteriaIds", js.Array(value :_*))
+    inline def setGeoCriteriaIdsVarargs(value: Double*): Self = StObject.set(x, "geoCriteriaIds", js.Array(value*))
   }
 }

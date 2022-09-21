@@ -33,6 +33,6 @@ object UtteranceList {
     
     inline def setUtterancesUndefined: Self = StObject.set(x, "utterances", js.undefined)
     
-    inline def setUtterancesVarargs(value: UtteranceData*): Self = StObject.set(x, "utterances", js.Array(value :_*))
+    inline def setUtterancesVarargs(value: UtteranceData*): Self = StObject.set(x, "utterances", js.Array(value*))
   }
 }

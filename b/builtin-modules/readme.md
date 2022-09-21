@@ -1,7 +1,7 @@
 
 # Scala.js typings for builtin-modules
 
-Typings are for version 3.1.0
+Typings are for version 3.3.0
 
 ## Library description:
 List of the Node.js builtin modules
@@ -11,9 +11,9 @@ List of the Node.js builtin modules
 | Full name          | builtin-modules |
 | Keywords           | builtin, built-in, builtins, node, modules, core, bundled, list, array, names |
 | # releases         | 3 |
-| # dependents       | 278 |
-| # downloads        | 313480944 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.4528623333333336E7 |
+| # stars            | 108.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/builtin-modules#readme)

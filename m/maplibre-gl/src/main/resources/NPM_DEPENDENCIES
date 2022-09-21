@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "maplibre-gl" : "2.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "maplibre-gl" : "2.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

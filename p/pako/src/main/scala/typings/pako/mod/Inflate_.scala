@@ -1,6 +1,5 @@
 package typings.pako.mod
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // https://github.com/nodeca/pako/blob/893381abcafa10fa2081ce60dae7d4d8e873a658/lib/inflate.js
 @JSImport("pako", "Inflate")
 @js.native
-class Inflate_ () extends StObject {
+open class Inflate_ () extends StObject {
   def this(options: InflateOptions) = this()
   
   var err: ReturnCodes = js.native
@@ -24,9 +23,6 @@ class Inflate_ () extends StObject {
   def push(data: Data): Boolean = js.native
   def push(data: Data, mode: Boolean): Boolean = js.native
   def push(data: Data, mode: FlushValues): Boolean = js.native
-  def push(data: ArrayBuffer): Boolean = js.native
-  def push(data: ArrayBuffer, mode: Boolean): Boolean = js.native
-  def push(data: ArrayBuffer, mode: FlushValues): Boolean = js.native
   
-  var result: Data = js.native
+  var result: js.typedarray.Uint8Array | String = js.native
 }

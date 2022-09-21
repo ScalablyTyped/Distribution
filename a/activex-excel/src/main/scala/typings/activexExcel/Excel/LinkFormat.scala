@@ -17,7 +17,7 @@ trait LinkFormat extends StObject {
   
   var Locked: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Update(): Unit
 }
@@ -29,7 +29,7 @@ object LinkFormat {
     Creator: XlCreator,
     ExcelDotLinkFormat_typekey: LinkFormat,
     Locked: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     Update: () => Unit
   ): LinkFormat = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], AutoUpdate = AutoUpdate.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Locked = Locked.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Update = js.Any.fromFunction0(Update))
@@ -49,7 +49,7 @@ object LinkFormat {
     
     inline def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setUpdate(value: () => Unit): Self = StObject.set(x, "Update", js.Any.fromFunction0(value))
   }

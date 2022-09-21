@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojselectcombobox.ojComboboxSettableProperties<V, SV, RV>> */
 trait ojComboboxSettablePropertiesLenient[V, SV, RV]
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var describedBy: js.UndefOr[String | Null] = js.undefined
   
@@ -79,7 +79,7 @@ object ojComboboxSettablePropertiesLenient {
     
     inline def setMessagesCustomUndefined: Self = StObject.set(x, "messagesCustom", js.undefined)
     
-    inline def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value :_*))
+    inline def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value*))
     
     inline def setTranslations(value: js.Object): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     

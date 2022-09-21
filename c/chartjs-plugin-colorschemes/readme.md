@@ -10,15 +10,13 @@ Predefined color schemes for Chart.js
 | ------------------ | :-------------: |
 | Full name          | chartjs-plugin-colorschemes |
 | Keywords           | chart.js, plugin, color, scheme, palette, brewer, office, tableau |
-| # releases         | 6 |
-| # dependents       | 8 |
-| # downloads        | 232205 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 40420.333333333336 |
+| # stars            | 230.0 |
 
 ## Links
 - [Homepage](https://nagix.github.io/chartjs-plugin-colorschemes)
-- [Bugs](https://github.com/nagix/chartjs-plugin-colorschemes/issues)
-- [Repository](https://github.com/nagix/chartjs-plugin-colorschemes)
 - [Npm](https://www.npmjs.com/package/chartjs-plugin-colorschemes)
     
 

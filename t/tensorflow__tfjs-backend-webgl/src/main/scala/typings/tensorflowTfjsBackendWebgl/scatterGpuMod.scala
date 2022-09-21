@@ -9,7 +9,7 @@ object scatterGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/scatter_gpu", "ScatterProgram")
   @js.native
-  class ScatterProgram protected ()
+  open class ScatterProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(

@@ -13,8 +13,8 @@ object shallowUntilTargetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def shallowUntilTarget[P, S](componentInstance: ReactElement, TargetComponent: String): ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowUntilTarget")(componentInstance.asInstanceOf[js.Any], TargetComponent.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]]
-  inline def shallowUntilTarget[P, S](componentInstance: ReactElement, TargetComponent: String, options: IShallowUntilTarget): ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowUntilTarget")(componentInstance.asInstanceOf[js.Any], TargetComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]]
+  inline def shallowUntilTarget[P, S](componentInstance: ReactElement, TargetComponent: String): ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowUntilTarget")(componentInstance.asInstanceOf[js.Any], TargetComponent.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]]]
+  inline def shallowUntilTarget[P, S](componentInstance: ReactElement, TargetComponent: String, options: IShallowUntilTarget): ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowUntilTarget")(componentInstance.asInstanceOf[js.Any], TargetComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ShallowWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]]]
   
   trait IShallowRendererProps extends StObject {
     

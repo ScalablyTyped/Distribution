@@ -14,11 +14,14 @@ object popoverMod extends Shortcut {
   
   @JSImport("antd/lib/popover", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[PopoverProps & RefAttributes[js.Any]] = js.native
+  val default: ForwardRefExoticComponent[PopoverProps & RefAttributes[Any]] = js.native
   
   trait PopoverProps
     extends StObject
        with AbstractTooltipProps {
+    
+    /** @private Used For Popconfirm. Safe to remove. */
+    var _overlay: js.UndefOr[ReactNode] = js.undefined
     
     var content: js.UndefOr[ReactNode | RenderFunction] = js.undefined
     
@@ -44,11 +47,15 @@ object popoverMod extends Shortcut {
       inline def setTitleFunction0(value: () => ReactNode): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      
+      inline def set_overlay(value: ReactNode): Self = StObject.set(x, "_overlay", value.asInstanceOf[js.Any])
+      
+      inline def set_overlayUndefined: Self = StObject.set(x, "_overlay", js.undefined)
     }
   }
   
-  type _To = ForwardRefExoticComponent[PopoverProps & RefAttributes[js.Any]]
+  type _To = ForwardRefExoticComponent[PopoverProps & RefAttributes[Any]]
   
   /* This means you don't have to write `default`, but can instead just say `popoverMod.foo` */
-  override def _to: ForwardRefExoticComponent[PopoverProps & RefAttributes[js.Any]] = default
+  override def _to: ForwardRefExoticComponent[PopoverProps & RefAttributes[Any]] = default
 }

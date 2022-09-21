@@ -9,7 +9,7 @@ trait AssessmentRunNotification extends StObject {
   /**
     * The date of the notification.
     */
-  var date: Timestamp
+  var date: js.Date
   
   /**
     * The Boolean value that specifies whether the notification represents an error.
@@ -38,14 +38,14 @@ trait AssessmentRunNotification extends StObject {
 }
 object AssessmentRunNotification {
   
-  inline def apply(date: Timestamp, error: Bool, event: InspectorEvent): AssessmentRunNotification = {
+  inline def apply(date: js.Date, error: Bool, event: InspectorEvent): AssessmentRunNotification = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssessmentRunNotification]
   }
   
   extension [Self <: AssessmentRunNotification](x: Self) {
     
-    inline def setDate(value: Timestamp): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setError(value: Bool): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

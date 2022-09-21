@@ -1,7 +1,7 @@
 
 # Scala.js typings for diagnostic-channel-publishers
 
-Typings are for version 0.4.2
+Typings are for version 1.0.5
 
 ## Library description:
 A collection of pre-built module patches that enable existing npm modules to publish diagnostic data
@@ -10,10 +10,10 @@ A collection of pre-built module patches that enable existing npm modules to pub
 | ------------------ | :-------------: |
 | Full name          | diagnostic-channel-publishers |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 4 |
-| # downloads        | 10601775 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1613596.6666666667 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/Microsoft/node-diagnostic-channel)

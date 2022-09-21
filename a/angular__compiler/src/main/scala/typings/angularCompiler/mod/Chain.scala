@@ -6,11 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "Chain")
 @js.native
-class Chain protected ()
-  extends typings.angularCompiler.compilerMod.Chain {
-  def this(
-    span: typings.angularCompiler.astMod.ParseSpan,
-    sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
-    expressions: js.Array[js.Any]
-  ) = this()
+open class Chain protected () extends AST {
+  def this(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, expressions: js.Array[Any]) = this()
+  
+  var expressions: js.Array[Any] = js.native
 }

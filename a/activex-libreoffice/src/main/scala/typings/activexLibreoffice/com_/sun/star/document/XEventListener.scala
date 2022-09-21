@@ -28,7 +28,7 @@ object XEventListener {
     acquire: () => Unit,
     disposing: typings.activexLibreoffice.com_.sun.star.lang.EventObject => Unit,
     notifyEvent: EventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XEventListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), notifyEvent = js.Any.fromFunction1(notifyEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

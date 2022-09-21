@@ -9,17 +9,17 @@ trait HookerOverride
      with IHookerPostHookResult
      with IHookerPreHookResult {
   
-  var value: js.Any
+  var value: Any
 }
 object HookerOverride {
   
-  inline def apply(value: js.Any): HookerOverride = {
+  inline def apply(value: Any): HookerOverride = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HookerOverride]
   }
   
   extension [Self <: HookerOverride](x: Self) {
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

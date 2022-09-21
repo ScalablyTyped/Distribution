@@ -1,50 +1,25 @@
 package typings.antd
 
-import typings.antd.anon.Placeholder
-import typings.react.mod.ChangeEvent
-import typings.react.mod.Component
 import typings.react.mod.FormEvent
-import typings.react.mod.MouseEvent
-import typings.react.mod.NativeMouseEvent
-import typings.std.HTMLAnchorElement
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
-import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transferSearchMod {
   
-  @JSImport("antd/lib/transfer/search", JSImport.Default)
+  @JSImport("antd/lib/transfer/search", JSImport.Namespace)
   @js.native
-  class default () extends Search
-  /* static members */
-  object default {
-    
-    @JSImport("antd/lib/transfer/search", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("antd/lib/transfer/search", "default.defaultProps")
-    @js.native
-    def defaultProps: Placeholder = js.native
-    inline def defaultProps_=(x: Placeholder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait Search
-    extends Component[TransferSearchProps, js.Any, js.Any] {
-    
-    def handleChange(e: ChangeEvent[HTMLInputElement]): Unit = js.native
-    
-    def handleClear(e: MouseEvent[HTMLAnchorElement, NativeMouseEvent]): Unit = js.native
-  }
+  inline def default(props: TransferSearchProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait TransferSearchProps extends StObject {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var handleClear: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
+    var handleClear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onChange: js.UndefOr[js.Function1[/* e */ FormEvent[HTMLElement], Unit]] = js.undefined
     
@@ -67,7 +42,7 @@ object transferSearchMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setHandleClear(value: /* e */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClear", js.Any.fromFunction1(value))
+      inline def setHandleClear(value: () => Unit): Self = StObject.set(x, "handleClear", js.Any.fromFunction0(value))
       
       inline def setHandleClearUndefined: Self = StObject.set(x, "handleClear", js.undefined)
       

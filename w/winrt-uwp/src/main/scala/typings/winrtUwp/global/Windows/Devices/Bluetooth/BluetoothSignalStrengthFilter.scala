@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Devices.Bluetooth.BluetoothSignalStrengthFilter")
 @js.native
 /** Create a new BluetoothSignalStrengthFilter object. */
-class BluetoothSignalStrengthFilter ()
+open class BluetoothSignalStrengthFilter ()
   extends StObject
      with typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothSignalStrengthFilter {
   

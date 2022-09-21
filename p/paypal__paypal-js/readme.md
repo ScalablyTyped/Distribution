@@ -1,19 +1,19 @@
 
 # Scala.js typings for paypal__paypal-js
 
-Typings are for version 1.0
+Typings are for version 5.1.1
 
 ## Library description:
-Client-side loader for the PayPal JS SDK
+Loading wrapper and TypeScript types for the PayPal JS SDK
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @paypal/paypal-js |
-| Keywords           | paypal, async, script, loader, types, typescript-definitions |
-| # releases         | 27 |
-| # dependents       | 1 |
-| # downloads        | 41806 |
-| # stars            | 0 |
+| Keywords           | paypal, sdk, async, script, loader, types, typescript, typescript-definitions |
+| # releases         | 65 |
+| # dependents       | 0.0 |
+| # downloads        | 408442.6666666667 |
+| # stars            | 99.0 |
 
 ## Links
 - [Homepage](https://github.com/paypal/paypal-js#readme)
@@ -24,7 +24,7 @@ Client-side loader for the PayPal JS SDK
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

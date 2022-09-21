@@ -14,6 +14,14 @@ trait WebviewOptions extends StObject {
   val enableCommandUris: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Controls whether forms are enabled in the webview content or not.
+    *
+    * Defaults to true if {@link WebviewOptions.enableScripts scripts are enabled}. Otherwise defaults to false.
+    * Explicitly setting this property to either true or false overrides the default.
+    */
+  val enableForms: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Controls whether scripts are enabled in the webview content or not.
     *
     * Defaults to false (scripts-disabled).
@@ -57,6 +65,10 @@ object WebviewOptions {
     
     inline def setEnableCommandUrisUndefined: Self = StObject.set(x, "enableCommandUris", js.undefined)
     
+    inline def setEnableForms(value: Boolean): Self = StObject.set(x, "enableForms", value.asInstanceOf[js.Any])
+    
+    inline def setEnableFormsUndefined: Self = StObject.set(x, "enableForms", js.undefined)
+    
     inline def setEnableScripts(value: Boolean): Self = StObject.set(x, "enableScripts", value.asInstanceOf[js.Any])
     
     inline def setEnableScriptsUndefined: Self = StObject.set(x, "enableScripts", js.undefined)
@@ -65,12 +77,12 @@ object WebviewOptions {
     
     inline def setLocalResourceRootsUndefined: Self = StObject.set(x, "localResourceRoots", js.undefined)
     
-    inline def setLocalResourceRootsVarargs(value: Uri*): Self = StObject.set(x, "localResourceRoots", js.Array(value :_*))
+    inline def setLocalResourceRootsVarargs(value: Uri*): Self = StObject.set(x, "localResourceRoots", js.Array(value*))
     
     inline def setPortMapping(value: js.Array[WebviewPortMapping]): Self = StObject.set(x, "portMapping", value.asInstanceOf[js.Any])
     
     inline def setPortMappingUndefined: Self = StObject.set(x, "portMapping", js.undefined)
     
-    inline def setPortMappingVarargs(value: WebviewPortMapping*): Self = StObject.set(x, "portMapping", js.Array(value :_*))
+    inline def setPortMappingVarargs(value: WebviewPortMapping*): Self = StObject.set(x, "portMapping", js.Array(value*))
   }
 }

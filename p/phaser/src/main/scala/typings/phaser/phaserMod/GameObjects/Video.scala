@@ -2,7 +2,6 @@ package typings.phaser.phaserMod.GameObjects
 
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Textures.Frame
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * Videos can only autoplay if the browser has been unlocked with an interaction, or satisfies the MEI settings.
   * The policies that control autoplaying are vast and vary between browser.
-  * You can, ahd should, read more about it here: https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
+  * You can, and should, read more about it here: https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
   * 
   * If your video doesn't contain any audio, then set the `noAudio` parameter to `true` when the video is _loaded_,
   * and it will often allow the video to play immediately:
@@ -59,7 +58,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "GameObjects.Video")
 @js.native
-class Video protected ()
+open class Video protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.Video {
   /**
@@ -155,7 +154,7 @@ class Video protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the display size of this Game Object.

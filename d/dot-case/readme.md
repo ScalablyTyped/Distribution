@@ -1,7 +1,7 @@
 
 # Scala.js typings for dot-case
 
-Typings are for version 3.0.3
+Typings are for version 3.0.4
 
 ## Library description:
 Transform into a lower case string with a period between words
@@ -10,10 +10,10 @@ Transform into a lower case string with a period between words
 | ------------------ | :-------------: |
 | Full name          | dot-case |
 | Keywords           | dot, case, period, full, stop, convert, transform |
-| # releases         | 6 |
-| # dependents       | 9 |
-| # downloads        | 189603965 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4.6119337666666664E7 |
+| # stars            | 1777.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/dot-case#readme)

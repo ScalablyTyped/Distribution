@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConfluencePageToIndexFieldMapping extends StObject {
   
   /**
-    * The name of the field in the data source. 
+    * The name of the field in the data source.
     */
   var DataSourceFieldName: js.UndefOr[ConfluencePageFieldName] = js.undefined
   

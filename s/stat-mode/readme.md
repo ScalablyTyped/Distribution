@@ -10,10 +10,10 @@ Offers convenient getters and setters for the stat `mode`
 | ------------------ | :-------------: |
 | Full name          | stat-mode |
 | Keywords           | stat, mode, owner, group, others, chmod, octal, symbolic, permissions |
-| # releases         | 3 |
-| # dependents       | 71 |
-| # downloads        | 21727436 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2337394.3333333335 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/TooTallNate/stat-mode)

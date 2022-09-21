@@ -44,7 +44,7 @@ object AccessibleContext {
     getAccessibleRole: () => Double,
     getAccessibleStateSet: () => XAccessibleStateSet,
     getLocale: () => Locale,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeAccessibleEventListener: XAccessibleEventListener => Unit
   ): AccessibleContext = {

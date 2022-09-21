@@ -10,7 +10,7 @@ object chromeDriverMod {
   
   @JSImport("webdriver-manager/built/lib/binaries/chrome_driver", "ChromeDriver")
   @js.native
-  class ChromeDriver () extends Binary {
+  open class ChromeDriver () extends Binary {
     def this(opt_alternativeCdn: String) = this()
   }
   /* static members */

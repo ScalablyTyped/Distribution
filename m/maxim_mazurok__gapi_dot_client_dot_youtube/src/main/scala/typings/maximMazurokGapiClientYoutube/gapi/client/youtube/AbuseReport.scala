@@ -27,7 +27,7 @@ object AbuseReport {
     
     inline def setAbuseTypesUndefined: Self = StObject.set(x, "abuseTypes", js.undefined)
     
-    inline def setAbuseTypesVarargs(value: AbuseType*): Self = StObject.set(x, "abuseTypes", js.Array(value :_*))
+    inline def setAbuseTypesVarargs(value: AbuseType*): Self = StObject.set(x, "abuseTypes", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -37,7 +37,7 @@ object AbuseReport {
     
     inline def setRelatedEntitiesUndefined: Self = StObject.set(x, "relatedEntities", js.undefined)
     
-    inline def setRelatedEntitiesVarargs(value: RelatedEntity*): Self = StObject.set(x, "relatedEntities", js.Array(value :_*))
+    inline def setRelatedEntitiesVarargs(value: RelatedEntity*): Self = StObject.set(x, "relatedEntities", js.Array(value*))
     
     inline def setSubject(value: Entity): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     

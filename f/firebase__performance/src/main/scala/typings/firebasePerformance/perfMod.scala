@@ -1,8 +1,8 @@
 package typings.firebasePerformance
 
-import typings.firebaseAppTypes.mod.FirebaseApp
-import typings.firebasePerformanceTypes.mod.FirebasePerformance
-import typings.firebasePerformanceTypes.mod.PerformanceTrace
+import typings.firebaseApp.mod.FirebaseApp
+import typings.firebasePerformance.publicTypesMod.FirebasePerformance
+import typings.firebasePerformance.publicTypesMod.PerformanceSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +11,31 @@ object perfMod {
   
   @JSImport("@firebase/performance/dist/src/controllers/perf", "PerformanceController")
   @js.native
-  class PerformanceController protected ()
+  open class PerformanceController protected ()
     extends StObject
        with FirebasePerformance {
-    def this(app: FirebaseApp) = this()
+    def this(
+      app: FirebaseApp,
+      installations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _FirebaseInstallationsInternal */ Any
+    ) = this()
     
-    val app: FirebaseApp = js.native
+    /**
+      * This method *must* be called internally as part of creating a
+      * PerformanceController instance.
+      *
+      * Currently it's not possible to pass the settings object through the
+      * constructor using Components, so this method exists to be called with the
+      * desired settings, to ensure nothing is collected without the user's
+      * consent.
+      */
+    def _init(): Unit = js.native
+    def _init(settings: PerformanceSettings): Unit = js.native
+    
+    /**
+      * The {@link @firebase/app#FirebaseApp} this `FirebasePerformance` instance is associated with.
+      */
+    /* CompleteClass */
+    var app: FirebaseApp = js.native
     
     /**
       * Controls the logging of custom traces.
@@ -26,6 +45,10 @@ object perfMod {
     @JSName("dataCollectionEnabled")
     def dataCollectionEnabled_MPerformanceController: Boolean = js.native
     
+    /* private */ var initialized: Any = js.native
+    
+    val installations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _FirebaseInstallationsInternal */ Any = js.native
+    
     /**
       * Controls the logging of automatic traces and HTTP/S network monitoring.
       */
@@ -33,14 +56,5 @@ object perfMod {
     var instrumentationEnabled: Boolean = js.native
     @JSName("instrumentationEnabled")
     def instrumentationEnabled_MPerformanceController: Boolean = js.native
-    
-    /**
-      * Creates an uninitialized instance of trace and returns it.
-      *
-      * @param traceName The name of trace instance.
-      * @return The trace instance.
-      */
-    /* CompleteClass */
-    override def trace(traceName: String): PerformanceTrace = js.native
   }
 }

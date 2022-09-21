@@ -8,5 +8,5 @@ object samplingStatisticsDocumentListMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/_SamplingStatisticsDocumentList", "_SamplingStatisticsDocumentList")
   @js.native
-  val SamplingStatisticsDocumentList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val SamplingStatisticsDocumentList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

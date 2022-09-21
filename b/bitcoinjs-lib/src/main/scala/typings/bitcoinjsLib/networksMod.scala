@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object networksMod {
   
-  @JSImport("bitcoinjs-lib/types/networks", "bitcoin")
+  @JSImport("bitcoinjs-lib/src/networks", "bitcoin")
   @js.native
   val bitcoin: Network = js.native
   
-  @JSImport("bitcoinjs-lib/types/networks", "regtest")
+  @JSImport("bitcoinjs-lib/src/networks", "regtest")
   @js.native
   val regtest: Network = js.native
   
-  @JSImport("bitcoinjs-lib/types/networks", "testnet")
+  @JSImport("bitcoinjs-lib/src/networks", "testnet")
   @js.native
   val testnet: Network = js.native
   

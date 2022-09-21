@@ -10,13 +10,13 @@ trait `4` extends StObject {
   var max: js.UndefOr[
     Double | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in c3.c3.AxisName ]:? number}
-    */ typings.c3.c3Strings.`4` & TopLevel[js.Any])
+    */ typings.c3.c3Strings.`4` & TopLevel[Any])
   ] = js.undefined
   
   var min: js.UndefOr[
     Double | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in c3.c3.AxisName ]:? number}
-    */ typings.c3.c3Strings.`4` & TopLevel[js.Any])
+    */ typings.c3.c3Strings.`4` & TopLevel[Any])
   ] = js.undefined
 }
 object `4` {
@@ -31,7 +31,7 @@ object `4` {
     inline def setMax(
       value: Double | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in c3.c3.AxisName ]:? number}
-      */ typings.c3.c3Strings.`4` & TopLevel[js.Any])
+      */ typings.c3.c3Strings.`4` & TopLevel[Any])
     ): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
@@ -39,7 +39,7 @@ object `4` {
     inline def setMin(
       value: Double | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in c3.c3.AxisName ]:? number}
-      */ typings.c3.c3Strings.`4` & TopLevel[js.Any])
+      */ typings.c3.c3Strings.`4` & TopLevel[Any])
     ): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)

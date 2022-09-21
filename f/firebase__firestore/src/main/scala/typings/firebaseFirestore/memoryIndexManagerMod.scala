@@ -2,45 +2,31 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.indexManagerMod.IndexManager
 import typings.firebaseFirestore.pathMod.ResourcePath
-import typings.firebaseFirestore.persistenceMod.PersistenceTransaction
-import typings.firebaseFirestore.persistencePromiseMod.PersistencePromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/local/memory_index_manager", JSImport.Namespace)
-@js.native
-object memoryIndexManagerMod extends js.Object {
+object memoryIndexManagerMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/local/memory_index_manager", "MemoryCollectionParentIndex")
   @js.native
-  class MemoryCollectionParentIndex () extends js.Object {
-    var index: js.Any = js.native
+  open class MemoryCollectionParentIndex () extends StObject {
+    
     def add(collectionPath: ResourcePath): Boolean = js.native
+    
     def getEntries(collectionId: String): js.Array[ResourcePath] = js.native
+    
     def has(collectionPath: ResourcePath): Boolean = js.native
+    
+    /* private */ var index: Any = js.native
   }
   
+  @JSImport("@firebase/firestore/dist/firestore/src/local/memory_index_manager", "MemoryIndexManager")
   @js.native
-  class MemoryIndexManager () extends IndexManager {
-    var collectionParentIndex: js.Any = js.native
-    /**
-      * Creates an index entry mapping the collectionId (last segment of the path)
-      * to the parent path (either the containing document location or the empty
-      * path for root-level collections). Index entries can be retrieved via
-      * getCollectionParents().
-      *
-      * NOTE: Currently we don't remove index entries. If this ends up being an
-      * issue we can devise some sort of GC strategy.
-      */
-    /* CompleteClass */
-    override def addToCollectionParentIndex(transaction: PersistenceTransaction, collectionPath: ResourcePath): PersistencePromise[Unit] = js.native
-    /**
-      * Retrieves all parent locations containing the given collectionId, as a
-      * list of paths (each path being either a document location or the empty
-      * path for a root-level collection).
-      */
-    /* CompleteClass */
-    override def getCollectionParents(transaction: PersistenceTransaction, collectionId: String): PersistencePromise[js.Array[ResourcePath]] = js.native
+  open class MemoryIndexManager ()
+    extends StObject
+       with IndexManager {
+    
+    /* private */ var collectionParentIndex: Any = js.native
   }
-  
 }
-

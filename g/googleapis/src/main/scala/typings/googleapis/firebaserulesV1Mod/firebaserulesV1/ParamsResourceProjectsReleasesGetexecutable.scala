@@ -1,9 +1,5 @@
 package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +9,12 @@ trait ParamsResourceProjectsReleasesGetexecutable
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The requested runtime executable version. Defaults to
-    * FIREBASE_RULES_EXECUTABLE_V1.
+    * The requested runtime executable version. Defaults to FIREBASE_RULES_EXECUTABLE_V1.
     */
   var executableVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * Resource name of the `Release`.  Format:
-    * `projects/{project_id}/releases/{release_id}`
+    * Required. Resource name of the `Release`. Format: `projects/{project_id\}/releases/{release_id\}`
     */
   var name: js.UndefOr[String] = js.undefined
 }
@@ -37,10 +26,6 @@ object ParamsResourceProjectsReleasesGetexecutable {
   }
   
   extension [Self <: ParamsResourceProjectsReleasesGetexecutable](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setExecutableVersion(value: String): Self = StObject.set(x, "executableVersion", value.asInstanceOf[js.Any])
     

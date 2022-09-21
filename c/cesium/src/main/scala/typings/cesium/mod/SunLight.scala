@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "SunLight")
 @js.native
-class SunLight () extends Light {
-  def this(option: Intensity) = this()
+open class SunLight () extends StObject {
+  def this(options: Intensity) = this()
+  
+  /**
+    * The color of the light.
+    */
+  var color: Color = js.native
+  
+  /**
+    * The intensity of the light.
+    */
+  var intensity: Double = js.native
 }

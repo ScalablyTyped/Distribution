@@ -32,24 +32,23 @@ object resizeHandleMod {
   
   @JSImport("@blueprintjs/table/lib/esm/interactions/resizeHandle", "ResizeHandle")
   @js.native
-  class ResizeHandle protected ()
-    extends PureComponent[IResizeHandleProps, IResizeHandleState, js.Any] {
+  open class ResizeHandle protected () extends PureComponent[IResizeHandleProps, IResizeHandleState, Any] {
     def this(props: IResizeHandleProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IResizeHandleProps, context: js.Any) = this()
+    def this(props: IResizeHandleProps, context: Any) = this()
     
-    /* private */ var handleActivate: js.Any = js.native
+    /* private */ var handleActivate: Any = js.native
     
-    /* private */ var handleClick: js.Any = js.native
+    /* private */ var handleClick: Any = js.native
     
-    /* private */ var handleDoubleClick: js.Any = js.native
+    /* private */ var handleDoubleClick: Any = js.native
     
-    /* private */ var handleDragEnd: js.Any = js.native
+    /* private */ var handleDragEnd: Any = js.native
     
-    /* private */ var handleDragMove: js.Any = js.native
+    /* private */ var handleDragMove: Any = js.native
   }
   
   @js.native

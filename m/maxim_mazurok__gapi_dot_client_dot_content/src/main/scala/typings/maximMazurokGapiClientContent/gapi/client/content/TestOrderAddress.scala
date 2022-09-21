@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TestOrderAddress extends StObject {
   
-  /** CLDR country code (e.g. "US"). */
+  /** CLDR country code (for example, "US"). */
   var country: js.UndefOr[String] = js.undefined
   
   /** Strings representing the lines of the printed label for mailing the order, for example: John Smith 1600 Amphitheatre Parkway Mountain View, CA, 94043 United States */
@@ -15,10 +15,10 @@ trait TestOrderAddress extends StObject {
   /** Whether the address is a post office box. */
   var isPostOfficeBox: js.UndefOr[Boolean] = js.undefined
   
-  /** City, town or commune. May also include dependent localities or sublocalities (e.g. neighborhoods or suburbs). */
+  /** City, town or commune. May also include dependent localities or sublocalities (for example, neighborhoods or suburbs). */
   var locality: js.UndefOr[String] = js.undefined
   
-  /** Postal Code or ZIP (e.g. "94043"). */
+  /** Postal Code or ZIP (for example, "94043"). */
   var postalCode: js.UndefOr[String] = js.undefined
   
   /** Name of the recipient. */
@@ -27,7 +27,7 @@ trait TestOrderAddress extends StObject {
   /** Top-level administrative subdivision of the country. For example, a state like California ("CA") or a province like Quebec ("QC"). */
   var region: js.UndefOr[String] = js.undefined
   
-  /** Street-level part of the address. */
+  /** Street-level part of the address. Use `\n` to add a second line. */
   var streetAddress: js.UndefOr[js.Array[String]] = js.undefined
 }
 object TestOrderAddress {
@@ -47,7 +47,7 @@ object TestOrderAddress {
     
     inline def setFullAddressUndefined: Self = StObject.set(x, "fullAddress", js.undefined)
     
-    inline def setFullAddressVarargs(value: String*): Self = StObject.set(x, "fullAddress", js.Array(value :_*))
+    inline def setFullAddressVarargs(value: String*): Self = StObject.set(x, "fullAddress", js.Array(value*))
     
     inline def setIsPostOfficeBox(value: Boolean): Self = StObject.set(x, "isPostOfficeBox", value.asInstanceOf[js.Any])
     
@@ -73,6 +73,6 @@ object TestOrderAddress {
     
     inline def setStreetAddressUndefined: Self = StObject.set(x, "streetAddress", js.undefined)
     
-    inline def setStreetAddressVarargs(value: String*): Self = StObject.set(x, "streetAddress", js.Array(value :_*))
+    inline def setStreetAddressVarargs(value: String*): Self = StObject.set(x, "streetAddress", js.Array(value*))
   }
 }

@@ -1,12 +1,8 @@
 package typings.storybookApi
 
-import typings.history.mod.LocationState
-import typings.reachRouter.mod.NavigateFn
-import typings.reachRouter.mod.WindowLocation
-import typings.std.Error
+import typings.std.ReturnType
 import typings.storybookApi.layoutMod.Layout
 import typings.storybookApi.layoutMod.UI
-import typings.storybookApi.mod.Args
 import typings.storybookApi.mod.State
 import typings.storybookApi.modulesStoriesMod.ViewMode
 import typings.storybookApi.notificationsMod.Notification
@@ -19,22 +15,23 @@ import typings.storybookApi.storybookApiStrings.session
 import typings.storybookApi.urlMod.QueryParams
 import typings.storybookApi.versionsMod.UnknownEntries
 import typings.storybookApi.versionsMod.Versions
-import typings.storybookTheming.typesMod.ThemeVars
+import typings.storybookRouter.anon.PartialLocationAncestorOrigins
+import typings.storybookTheming.mod.ThemeVars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storeMod {
   
-  @JSImport("@storybook/api/dist/store", JSImport.Default)
+  @JSImport("@storybook/api/dist/ts3.9/store", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Store {
     def this(hasSetStateGetState: Upstream) = this()
   }
   
-  @JSImport("@storybook/api/dist/store", "STORAGE_KEY")
+  @JSImport("@storybook/api/dist/ts3.9/store", "STORAGE_KEY")
   @js.native
   val STORAGE_KEY: /* "@storybook/ui/store" */ String = js.native
   
@@ -70,15 +67,27 @@ object storeMod {
     
     var dismissedVersionNotification: js.UndefOr[String] = js.undefined
     
-    var globals: js.UndefOr[Args] = js.undefined
+    var globalTypes: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalTypes */ Any
+      ] = js.undefined
+    
+    var globals: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Globals */ Any
+      ] = js.undefined
     
     var lastVersionCheck: js.UndefOr[Double] = js.undefined
     
     var layout: js.UndefOr[Layout] = js.undefined
     
-    var location: js.UndefOr[WindowLocation[LocationState]] = js.undefined
+    var location: js.UndefOr[PartialLocationAncestorOrigins] = js.undefined
     
-    var navigate: js.UndefOr[NavigateFn] = js.undefined
+    var navigate: js.UndefOr[
+        ReturnType[
+          js.Function0[
+            js.Function2[/* to */ String | Double, /* hasPlainOptions */ js.UndefOr[Any], Unit]
+          ]
+        ]
+      ] = js.undefined
     
     var notifications: js.UndefOr[js.Array[Notification]] = js.undefined
     
@@ -96,14 +105,16 @@ object storeMod {
     
     var shortcuts: js.UndefOr[Shortcuts] = js.undefined
     
+    var singleStory: js.UndefOr[Boolean] = js.undefined
+    
     var storiesConfigured: js.UndefOr[Boolean] = js.undefined
     
-    var storiesFailed: js.UndefOr[Error] = js.undefined
+    var storiesFailed: js.UndefOr[js.Error] = js.undefined
     
     var storiesHash: js.UndefOr[StoriesHash] = js.undefined
     
     var storyId: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
       ] = js.undefined
     
     var theme: js.UndefOr[ThemeVars] = js.undefined
@@ -131,7 +142,15 @@ object storeMod {
       
       inline def setDismissedVersionNotificationUndefined: Self = StObject.set(x, "dismissedVersionNotification", js.undefined)
       
-      inline def setGlobals(value: Args): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+      inline def setGlobalTypes(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalTypes */ Any
+      ): Self = StObject.set(x, "globalTypes", value.asInstanceOf[js.Any])
+      
+      inline def setGlobalTypesUndefined: Self = StObject.set(x, "globalTypes", js.undefined)
+      
+      inline def setGlobals(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Globals */ Any
+      ): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
       
       inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
       
@@ -143,11 +162,17 @@ object storeMod {
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      inline def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: PartialLocationAncestorOrigins): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
       inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      inline def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
+      inline def setNavigate(
+        value: ReturnType[
+              js.Function0[
+                js.Function2[/* to */ String | Double, /* hasPlainOptions */ js.UndefOr[Any], Unit]
+              ]
+            ]
+      ): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
       
       inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
       
@@ -155,7 +180,7 @@ object storeMod {
       
       inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
       
-      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -173,7 +198,7 @@ object storeMod {
       
       inline def setReleaseNotesViewedUndefined: Self = StObject.set(x, "releaseNotesViewed", js.undefined)
       
-      inline def setReleaseNotesViewedVarargs(value: String*): Self = StObject.set(x, "releaseNotesViewed", js.Array(value :_*))
+      inline def setReleaseNotesViewedVarargs(value: String*): Self = StObject.set(x, "releaseNotesViewed", js.Array(value*))
       
       inline def setSelectedPanel(value: String): Self = StObject.set(x, "selectedPanel", value.asInstanceOf[js.Any])
       
@@ -187,11 +212,15 @@ object storeMod {
       
       inline def setShortcutsUndefined: Self = StObject.set(x, "shortcuts", js.undefined)
       
+      inline def setSingleStory(value: Boolean): Self = StObject.set(x, "singleStory", value.asInstanceOf[js.Any])
+      
+      inline def setSingleStoryUndefined: Self = StObject.set(x, "singleStory", js.undefined)
+      
       inline def setStoriesConfigured(value: Boolean): Self = StObject.set(x, "storiesConfigured", value.asInstanceOf[js.Any])
       
       inline def setStoriesConfiguredUndefined: Self = StObject.set(x, "storiesConfigured", js.undefined)
       
-      inline def setStoriesFailed(value: Error): Self = StObject.set(x, "storiesFailed", value.asInstanceOf[js.Any])
+      inline def setStoriesFailed(value: js.Error): Self = StObject.set(x, "storiesFailed", value.asInstanceOf[js.Any])
       
       inline def setStoriesFailedUndefined: Self = StObject.set(x, "storiesFailed", js.undefined)
       
@@ -200,7 +229,7 @@ object storeMod {
       inline def setStoriesHashUndefined: Self = StObject.set(x, "storiesHash", js.undefined)
       
       inline def setStoryId(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
       ): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
       
       inline def setStoryIdUndefined: Self = StObject.set(x, "storyId", js.undefined)
@@ -223,12 +252,12 @@ object storeMod {
     }
   }
   
-  type SetState = js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]
+  type SetState = js.Function2[/* a */ Any, /* b */ Any, Any]
   
   @js.native
   trait Store extends StObject {
     
-    def getInitialState(base: State): js.Any = js.native
+    def getInitialState(base: State): Any = js.native
     
     def getState(): State = js.native
     
@@ -251,7 +280,7 @@ object storeMod {
   }
   object Upstream {
     
-    inline def apply(getState: () => State, setState: (/* a */ js.Any, /* b */ js.Any) => js.Any): Upstream = {
+    inline def apply(getState: () => State, setState: (/* a */ Any, /* b */ Any) => Any): Upstream = {
       val __obj = js.Dynamic.literal(getState = js.Any.fromFunction0(getState), setState = js.Any.fromFunction2(setState))
       __obj.asInstanceOf[Upstream]
     }
@@ -260,7 +289,7 @@ object storeMod {
       
       inline def setGetState(value: () => State): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      inline def setSetState(value: (/* a */ js.Any, /* b */ js.Any) => js.Any): Self = StObject.set(x, "setState", js.Any.fromFunction2(value))
+      inline def setSetState(value: (/* a */ Any, /* b */ Any) => Any): Self = StObject.set(x, "setState", js.Any.fromFunction2(value))
     }
   }
 }

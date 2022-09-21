@@ -2,7 +2,6 @@ package typings.parameter.mod
 
 import typings.parameter.parameterStrings.string
 import typings.parameter.parameterStrings.stringQuestionmark
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ trait ParameterRuleString
     */
   var empty: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[RegExp] = js.undefined
+  var format: js.UndefOr[js.RegExp] = js.undefined
   
   var max: js.UndefOr[Double] = js.undefined
   
@@ -52,7 +51,7 @@ object ParameterRuleString {
     
     inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
-    inline def setFormat(value: RegExp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: js.RegExp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     

@@ -12,10 +12,10 @@ object concatMod {
   
   @JSImport("vega-lite/build/src/compile/concat", "ConcatModel")
   @js.native
-  class ConcatModel protected () extends Model {
+  open class ConcatModel protected () extends Model {
     def this(spec: NormalizedConcatSpec, parent: Model, parentGivenName: String, config: Config[SignalRef]) = this()
     
-    /* private */ var getChildren: js.Any = js.native
+    /* private */ var getChildren: Any = js.native
     
     def parseAxisGroup(): Unit = js.native
   }

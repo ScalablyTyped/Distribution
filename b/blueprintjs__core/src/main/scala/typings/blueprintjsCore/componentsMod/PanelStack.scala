@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@blueprintjs/core/lib/esm/components", "PanelStack")
 @js.native
-class PanelStack protected ()
+open class PanelStack protected ()
   extends typings.blueprintjsCore.panelStackMod.PanelStack {
   def this(props: IPanelStackProps) = this()
-  def this(props: IPanelStackProps, context: js.Any) = this()
+  def this(props: IPanelStackProps, context: Any) = this()
 }

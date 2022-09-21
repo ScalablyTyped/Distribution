@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.Version")
 @js.native
-class Version ()
+open class Version ()
   extends StObject
      with typings.extjs.Ext.Version
 /* static members */
@@ -30,6 +30,6 @@ object Version {
     * @param value Object The value to convert
     * @returns Object
     */
-  inline def getComponentValue(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponentValue")().asInstanceOf[js.Any]
-  inline def getComponentValue(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponentValue")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getComponentValue(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponentValue")().asInstanceOf[Any]
+  inline def getComponentValue(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponentValue")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

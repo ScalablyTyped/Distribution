@@ -3,7 +3,6 @@ package typings.phaser.Phaser.Types.GameObjects
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.Types.Actions.GridAlignConfig
 import typings.phaser.Phaser.Types.Input.HitAreaCallback
-import typings.phaser.integer
 import typings.phaser.phaserBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,7 +37,7 @@ object Group {
     /**
       * Sets {@link Phaser.GameObjects.Group#defaultFrame}.
       */
-    var defaultFrame: js.UndefOr[String | integer] = js.undefined
+    var defaultFrame: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Sets {@link Phaser.GameObjects.Group#defaultKey}.
@@ -90,7 +89,7 @@ object Group {
       
       inline def setCreateMultipleCallbackUndefined: Self = StObject.set(x, "createMultipleCallback", js.undefined)
       
-      inline def setDefaultFrame(value: String | integer): Self = StObject.set(x, "defaultFrame", value.asInstanceOf[js.Any])
+      inline def setDefaultFrame(value: String | Double): Self = StObject.set(x, "defaultFrame", value.asInstanceOf[js.Any])
       
       inline def setDefaultFrameUndefined: Self = StObject.set(x, "defaultFrame", js.undefined)
       
@@ -140,12 +139,12 @@ object Group {
     /**
       * The texture frame of each new Game Object.
       */
-    var frame: js.UndefOr[String | (js.Array[String | integer]) | integer] = js.undefined
+    var frame: js.UndefOr[String | (js.Array[Double | String]) | Double] = js.undefined
     
     /**
       * The number of times each `frame` should be combined with one `key`.
       */
-    var frameQuantity: js.UndefOr[integer] = js.undefined
+    var frameQuantity: js.UndefOr[Double] = js.undefined
     
     /**
       * Align the new Game Objects in a grid using these settings.
@@ -155,7 +154,7 @@ object Group {
     /**
       * A geometric shape that defines the hit area for the Game Object.
       */
-    var hitArea: js.UndefOr[js.Any] = js.undefined
+    var hitArea: js.UndefOr[Any] = js.undefined
     
     /**
       * A callback to be invoked when the Game Object is interacted with.
@@ -170,12 +169,12 @@ object Group {
     /**
       * The maximum number of new Game Objects to create. 0 is no maximum.
       */
-    var max: js.UndefOr[integer] = js.undefined
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of Game Objects to create. If set, this overrides the `frameQuantity` value. Use `frameQuantity` for more advanced control.
       */
-    var quantity: js.UndefOr[integer] = js.undefined
+    var quantity: js.UndefOr[Double] = js.undefined
     
     /**
       * Select a `frame` at random.
@@ -190,7 +189,7 @@ object Group {
     /**
       * The number of times each `key` × `frame` combination will be *repeated* (after the first combination).
       */
-    var repeat: js.UndefOr[integer] = js.undefined
+    var repeat: js.UndefOr[Double] = js.undefined
     
     var setAlpha: js.UndefOr[js.Object] = js.undefined
     
@@ -219,6 +218,32 @@ object Group {
       */
     @JSName("setDepth.value")
     var setDepthDotvalue: js.UndefOr[Double] = js.undefined
+    
+    var setOrigin: js.UndefOr[js.Object] = js.undefined
+    
+    /**
+      * Increment each Game Object's horizontal origin from the previous by this amount, starting from `setOrigin.x`.
+      */
+    @JSName("setOrigin.stepX")
+    var setOriginDotstepX: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Increment each Game object's vertical origin from the previous by this amount, starting from `setOrigin.y`.
+      */
+    @JSName("setOrigin.stepY")
+    var setOriginDotstepY: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * The horizontal origin of each new Game Object.
+      */
+    @JSName("setOrigin.x")
+    var setOriginDotx: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * The vertical origin of each new Game Object.
+      */
+    @JSName("setOrigin.y")
+    var setOriginDoty: js.UndefOr[Double] = js.undefined
     
     var setRotation: js.UndefOr[js.Object] = js.undefined
     
@@ -339,23 +364,23 @@ object Group {
       
       inline def setClassTypeUndefined: Self = StObject.set(x, "classType", js.undefined)
       
-      inline def setFrame(value: String | (js.Array[String | integer]) | integer): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: String | (js.Array[Double | String]) | Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      inline def setFrameQuantity(value: integer): Self = StObject.set(x, "frameQuantity", value.asInstanceOf[js.Any])
+      inline def setFrameQuantity(value: Double): Self = StObject.set(x, "frameQuantity", value.asInstanceOf[js.Any])
       
       inline def setFrameQuantityUndefined: Self = StObject.set(x, "frameQuantity", js.undefined)
       
       inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
       
-      inline def setFrameVarargs(value: (String | integer)*): Self = StObject.set(x, "frame", js.Array(value :_*))
+      inline def setFrameVarargs(value: (Double | String)*): Self = StObject.set(x, "frame", js.Array(value*))
       
       inline def setGridAlign(value: `false` | GridAlignConfig): Self = StObject.set(x, "gridAlign", value.asInstanceOf[js.Any])
       
       inline def setGridAlignUndefined: Self = StObject.set(x, "gridAlign", js.undefined)
       
-      inline def setHitArea(value: js.Any): Self = StObject.set(x, "hitArea", value.asInstanceOf[js.Any])
+      inline def setHitArea(value: Any): Self = StObject.set(x, "hitArea", value.asInstanceOf[js.Any])
       
-      inline def setHitAreaCallback(value: (/* hitArea */ js.Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject) => Unit): Self = StObject.set(x, "hitAreaCallback", js.Any.fromFunction4(value))
+      inline def setHitAreaCallback(value: (/* hitArea */ Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject) => Unit): Self = StObject.set(x, "hitAreaCallback", js.Any.fromFunction4(value))
       
       inline def setHitAreaCallbackUndefined: Self = StObject.set(x, "hitAreaCallback", js.undefined)
       
@@ -365,13 +390,13 @@ object Group {
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setKeyVarargs(value: String*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: String*): Self = StObject.set(x, "key", js.Array(value*))
       
-      inline def setMax(value: integer): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
       inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      inline def setQuantity(value: integer): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
       inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
       
@@ -383,7 +408,7 @@ object Group {
       
       inline def setRandomKeyUndefined: Self = StObject.set(x, "randomKey", js.undefined)
       
-      inline def setRepeat(value: integer): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
       inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
@@ -410,6 +435,26 @@ object Group {
       inline def setSetDepthDotvalueUndefined: Self = StObject.set(x, "setDepth.value", js.undefined)
       
       inline def setSetDepthUndefined: Self = StObject.set(x, "setDepth", js.undefined)
+      
+      inline def setSetOrigin(value: js.Object): Self = StObject.set(x, "setOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setSetOriginDotstepX(value: Double): Self = StObject.set(x, "setOrigin.stepX", value.asInstanceOf[js.Any])
+      
+      inline def setSetOriginDotstepXUndefined: Self = StObject.set(x, "setOrigin.stepX", js.undefined)
+      
+      inline def setSetOriginDotstepY(value: Double): Self = StObject.set(x, "setOrigin.stepY", value.asInstanceOf[js.Any])
+      
+      inline def setSetOriginDotstepYUndefined: Self = StObject.set(x, "setOrigin.stepY", js.undefined)
+      
+      inline def setSetOriginDotx(value: Double): Self = StObject.set(x, "setOrigin.x", value.asInstanceOf[js.Any])
+      
+      inline def setSetOriginDotxUndefined: Self = StObject.set(x, "setOrigin.x", js.undefined)
+      
+      inline def setSetOriginDoty(value: Double): Self = StObject.set(x, "setOrigin.y", value.asInstanceOf[js.Any])
+      
+      inline def setSetOriginDotyUndefined: Self = StObject.set(x, "setOrigin.y", js.undefined)
+      
+      inline def setSetOriginUndefined: Self = StObject.set(x, "setOrigin", js.undefined)
       
       inline def setSetRotation(value: js.Object): Self = StObject.set(x, "setRotation", value.asInstanceOf[js.Any])
       

@@ -10,10 +10,10 @@ Google maps container
 | ------------------ | :-------------: |
 | Full name          | google-maps-react |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 36 |
-| # downloads        | 2908946 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 264833.3333333333 |
+| # stars            | 1572.0 |
 
 ## Links
 - [Homepage](https://github.com/fullstackreact/google-maps-react#readme)

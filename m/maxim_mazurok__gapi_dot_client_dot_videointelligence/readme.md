@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_videointelligence
 
-Typings are for version 1.0.20201112
+Typings are for version 1.0.20220303
 
 ## Library description:
 TypeScript typings for Cloud Video Intelligence API v1
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Video Intelligence API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.videointelligence |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 907 |
-| # stars            | 0 |
+| # releases         | 36 |
+| # dependents       | 0.0 |
+| # downloads        | 563.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

@@ -33,13 +33,13 @@ object mod {
   
   object presetLoader {
     
-    inline def apply(requireMethod: RequireMethod): js.Any = ^.asInstanceOf[js.Dynamic].apply(requireMethod.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def apply(requireMethod: RequireMethod): Any = ^.asInstanceOf[js.Dynamic].apply(requireMethod.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     @JSImport("conventional-changelog-preset-loader", "presetLoader")
     @js.native
     val ^ : js.Any = js.native
     
-    type RequireMethod = js.Function1[/* id */ String, js.Any]
+    type RequireMethod = js.Function1[/* id */ String, Any]
   }
   
   type Builder = js.Function1[

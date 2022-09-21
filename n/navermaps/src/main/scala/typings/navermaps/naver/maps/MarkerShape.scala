@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MarkerShape extends StObject {
   
-  var coords: js.Array[js.Any]
+  var coords: js.Array[Any]
   
   var `type`: String
 }
 object MarkerShape {
   
-  inline def apply(coords: js.Array[js.Any], `type`: String): MarkerShape = {
+  inline def apply(coords: js.Array[Any], `type`: String): MarkerShape = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerShape]
@@ -20,9 +20,9 @@ object MarkerShape {
   
   extension [Self <: MarkerShape](x: Self) {
     
-    inline def setCoords(value: js.Array[js.Any]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    inline def setCoords(value: js.Array[Any]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
-    inline def setCoordsVarargs(value: js.Any*): Self = StObject.set(x, "coords", js.Array(value :_*))
+    inline def setCoordsVarargs(value: Any*): Self = StObject.set(x, "coords", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

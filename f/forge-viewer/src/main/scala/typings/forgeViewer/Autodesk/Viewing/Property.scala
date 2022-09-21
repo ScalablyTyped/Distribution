@@ -12,13 +12,15 @@ trait Property extends StObject {
   
   var displayName: String
   
-  var displayValue: String
+  var displayValue: String | Double
   
   var hidden: Boolean
   
+  var precision: js.UndefOr[Double] = js.undefined
+  
   var `type`: Double
   
-  var units: String
+  var units: String | Null
 }
 object Property {
   
@@ -26,12 +28,11 @@ object Property {
     attributeName: String,
     displayCategory: String,
     displayName: String,
-    displayValue: String,
+    displayValue: String | Double,
     hidden: Boolean,
-    `type`: Double,
-    units: String
+    `type`: Double
   ): Property = {
-    val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], displayCategory = displayCategory.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], displayValue = displayValue.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], units = units.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], displayCategory = displayCategory.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], displayValue = displayValue.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], units = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Property]
   }
@@ -44,12 +45,18 @@ object Property {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    inline def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
+    inline def setDisplayValue(value: String | Double): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
     inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    
+    inline def setUnitsNull: Self = StObject.set(x, "units", null)
   }
 }

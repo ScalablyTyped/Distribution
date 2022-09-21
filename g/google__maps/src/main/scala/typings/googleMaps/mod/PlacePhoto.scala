@@ -31,7 +31,7 @@ object PlacePhoto {
     
     inline def setHtml_attributions(value: js.Array[String]): Self = StObject.set(x, "html_attributions", value.asInstanceOf[js.Any])
     
-    inline def setHtml_attributionsVarargs(value: String*): Self = StObject.set(x, "html_attributions", js.Array(value :_*))
+    inline def setHtml_attributionsVarargs(value: String*): Self = StObject.set(x, "html_attributions", js.Array(value*))
     
     inline def setPhoto_reference(value: String): Self = StObject.set(x, "photo_reference", value.asInstanceOf[js.Any])
     

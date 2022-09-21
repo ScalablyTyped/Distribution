@@ -1,6 +1,8 @@
 package typings.vegaExpression
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.estree.mod.Expression
+import typings.estree.mod.SequenceExpression
 import typings.vegaExpression.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,11 +16,11 @@ object mod {
   
   inline def ASTNode(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ASTNode")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def codegen(options: CodegenOptions): js.Function1[/* ast */ js.Any, Code] = ^.asInstanceOf[js.Dynamic].applyDynamic("codegen")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ast */ js.Any, Code]]
+  inline def codegenExpression(options: CodegenOptions): js.Function1[/* ast */ Any, Code] = ^.asInstanceOf[js.Dynamic].applyDynamic("codegenExpression")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ast */ Any, Code]]
   
-  inline def functions(codegen: js.Any): StringDictionary[String | js.Function0[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("functions")(codegen.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String | js.Function0[String]]]
+  inline def functions(codegen: Any): StringDictionary[String | js.Function0[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("functions")(codegen.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String | js.Function0[String]]]
   
-  inline def parse(expression: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def parseExpression(expression: String): Expression | SequenceExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[Expression | SequenceExpression]
   
   trait CodegenOptions extends StObject {
     
@@ -37,8 +39,8 @@ object mod {
     /** A function that is given an AST visitor instance as input and returns an object of allowed functions */
     var functions: js.UndefOr[
         js.Function1[
-          /* astVisitor */ js.Any, 
-          StringDictionary[String | (js.Function1[/* args */ js.Any, String])]
+          /* astVisitor */ Any, 
+          StringDictionary[String | (js.Function1[/* args */ Any, String])]
         ]
       ] = js.undefined
     
@@ -58,7 +60,7 @@ object mod {
       
       inline def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
       
-      inline def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value :_*))
+      inline def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value*))
       
       inline def setConstants(value: StringDictionary[String]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       
@@ -72,11 +74,9 @@ object mod {
       
       inline def setForbiddenUndefined: Self = StObject.set(x, "forbidden", js.undefined)
       
-      inline def setForbiddenVarargs(value: String*): Self = StObject.set(x, "forbidden", js.Array(value :_*))
+      inline def setForbiddenVarargs(value: String*): Self = StObject.set(x, "forbidden", js.Array(value*))
       
-      inline def setFunctions(
-        value: /* astVisitor */ js.Any => StringDictionary[String | (js.Function1[/* args */ js.Any, String])]
-      ): Self = StObject.set(x, "functions", js.Any.fromFunction1(value))
+      inline def setFunctions(value: /* astVisitor */ Any => StringDictionary[String | (js.Function1[/* args */ Any, String])]): Self = StObject.set(x, "functions", js.Any.fromFunction1(value))
       
       inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
       

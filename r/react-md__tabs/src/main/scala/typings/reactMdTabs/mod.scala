@@ -3,13 +3,15 @@ package typings.reactMdTabs
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.RefAttributes
-import typings.reactMdTabs.anon.PickTabsListPropshiddenco
 import typings.reactMdTabs.tabMod.TabProps
 import typings.reactMdTabs.tabPanelMod.TabPanelProps
 import typings.reactMdTabs.tabPanelsMod.TabPanelsProps
 import typings.reactMdTabs.tabsListMod.TabsListProps
 import typings.reactMdTabs.tabsManagerMod.InitializedTabsManagerContext
 import typings.reactMdTabs.tabsManagerMod.TabsManagerProps
+import typings.reactMdTabs.tabsMod.TabsProps
+import typings.reactMdTransition.typesMod.CSSTransitionClassNames
+import typings.reactMdTransition.typesMod.TransitionTimeout
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
@@ -21,6 +23,14 @@ object mod {
   @JSImport("@react-md/tabs", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("@react-md/tabs", "DEFAULT_TABPANEL_CLASSNAMES")
+  @js.native
+  val DEFAULT_TABPANEL_CLASSNAMES: CSSTransitionClassNames = js.native
+  
+  @JSImport("@react-md/tabs", "DEFAULT_TABPANEL_TIMEOUT")
+  @js.native
+  val DEFAULT_TABPANEL_TIMEOUT: TransitionTimeout = js.native
   
   @JSImport("@react-md/tabs", "Tab")
   @js.native
@@ -36,7 +46,7 @@ object mod {
   
   @JSImport("@react-md/tabs", "Tabs")
   @js.native
-  val Tabs: ForwardRefExoticComponent[PickTabsListPropshiddenco] = js.native
+  val Tabs: ForwardRefExoticComponent[TabsProps & RefAttributes[HTMLDivElement]] = js.native
   
   @JSImport("@react-md/tabs", "TabsList")
   @js.native

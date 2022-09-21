@@ -11,9 +11,9 @@ Overwrite OnFatalError to produce heapdump
 | Full name          | ofe |
 | Keywords           | On Fatal Error, Fatal, Error, OnFatalError, SetFatalErrorHandler |
 | # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 1750 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 83.0 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://github.com/trevnorris/node-ofe)

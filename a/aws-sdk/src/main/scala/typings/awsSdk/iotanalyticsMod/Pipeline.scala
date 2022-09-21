@@ -19,12 +19,12 @@ trait Pipeline extends StObject {
   /**
     * When the pipeline was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.undefined
+  var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The last time the pipeline was updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the pipeline.
@@ -49,17 +49,17 @@ object Pipeline {
     
     inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
     
-    inline def setActivitiesVarargs(value: PipelineActivity*): Self = StObject.set(x, "activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: PipelineActivity*): Self = StObject.set(x, "activities", js.Array(value*))
     
     inline def setArn(value: PipelineArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "lastUpdateTime", js.undefined)
     
@@ -71,6 +71,6 @@ object Pipeline {
     
     inline def setReprocessingSummariesUndefined: Self = StObject.set(x, "reprocessingSummaries", js.undefined)
     
-    inline def setReprocessingSummariesVarargs(value: ReprocessingSummary*): Self = StObject.set(x, "reprocessingSummaries", js.Array(value :_*))
+    inline def setReprocessingSummariesVarargs(value: ReprocessingSummary*): Self = StObject.set(x, "reprocessingSummaries", js.Array(value*))
   }
 }

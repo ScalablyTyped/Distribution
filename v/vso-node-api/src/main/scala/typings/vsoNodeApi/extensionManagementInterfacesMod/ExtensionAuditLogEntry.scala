@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,7 @@ trait ExtensionAuditLogEntry extends StObject {
   /**
     * Date at which the change was made
     */
-  var auditDate: Date
+  var auditDate: js.Date
   
   /**
     * Extra information about the change
@@ -30,7 +29,7 @@ trait ExtensionAuditLogEntry extends StObject {
 }
 object ExtensionAuditLogEntry {
   
-  inline def apply(auditAction: String, auditDate: Date, comment: String, updatedBy: IdentityRef): ExtensionAuditLogEntry = {
+  inline def apply(auditAction: String, auditDate: js.Date, comment: String, updatedBy: IdentityRef): ExtensionAuditLogEntry = {
     val __obj = js.Dynamic.literal(auditAction = auditAction.asInstanceOf[js.Any], auditDate = auditDate.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], updatedBy = updatedBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionAuditLogEntry]
   }
@@ -39,7 +38,7 @@ object ExtensionAuditLogEntry {
     
     inline def setAuditAction(value: String): Self = StObject.set(x, "auditAction", value.asInstanceOf[js.Any])
     
-    inline def setAuditDate(value: Date): Self = StObject.set(x, "auditDate", value.asInstanceOf[js.Any])
+    inline def setAuditDate(value: js.Date): Self = StObject.set(x, "auditDate", value.asInstanceOf[js.Any])
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,7 @@ trait Component
   
   def addChild(child: Component): scala.Unit
   
-  def addChildAtIndex(child: Component, index: Double): js.Any
+  def addChildAtIndex(child: Component, index: Double): Any
   
   def appendChildrenToElement(elm: Element): scala.Unit
   
@@ -61,13 +61,13 @@ trait Component
   
   def get_visibleInDOM(): Boolean
   
-  def initRootMember(root: Component): js.Any
+  def initRootMember(root: Component): Any
   
-  def onEnabledChanged(enabled: Boolean): js.Any
+  def onEnabledChanged(enabled: Boolean): Any
   
   def onMenuClosed(): scala.Unit
   
-  def raiseCommandEvent(commandId: String, `type`: CommandType, properties: js.Any): js.Any
+  def raiseCommandEvent(commandId: String, `type`: CommandType, properties: Any): Any
   
   def receiveFocus(): scala.Unit
   
@@ -97,7 +97,7 @@ object Component {
     _lastTopUpdate: Double,
     _lastWidthUpdate: Double,
     addChild: Component => scala.Unit,
-    addChildAtIndex: (Component, Double) => js.Any,
+    addChildAtIndex: (Component, Double) => Any,
     appendChildrenToElement: Element => scala.Unit,
     createChildArray: () => scala.Unit,
     dispose: () => scala.Unit,
@@ -118,10 +118,10 @@ object Component {
     get_title: () => String,
     get_visible: () => Boolean,
     get_visibleInDOM: () => Boolean,
-    initRootMember: Component => js.Any,
-    onEnabledChanged: Boolean => js.Any,
+    initRootMember: Component => Any,
+    onEnabledChanged: Boolean => Any,
     onMenuClosed: () => scala.Unit,
-    raiseCommandEvent: (String, CommandType, js.Any) => js.Any,
+    raiseCommandEvent: (String, CommandType, Any) => Any,
     receiveFocus: () => scala.Unit,
     removeChild: String => scala.Unit,
     removeChildren: () => scala.Unit,
@@ -141,7 +141,7 @@ object Component {
     
     inline def setAddChild(value: Component => scala.Unit): Self = StObject.set(x, "addChild", js.Any.fromFunction1(value))
     
-    inline def setAddChildAtIndex(value: (Component, Double) => js.Any): Self = StObject.set(x, "addChildAtIndex", js.Any.fromFunction2(value))
+    inline def setAddChildAtIndex(value: (Component, Double) => Any): Self = StObject.set(x, "addChildAtIndex", js.Any.fromFunction2(value))
     
     inline def setAppendChildrenToElement(value: Element => scala.Unit): Self = StObject.set(x, "appendChildrenToElement", js.Any.fromFunction1(value))
     
@@ -181,13 +181,13 @@ object Component {
     
     inline def setGet_visibleInDOM(value: () => Boolean): Self = StObject.set(x, "get_visibleInDOM", js.Any.fromFunction0(value))
     
-    inline def setInitRootMember(value: Component => js.Any): Self = StObject.set(x, "initRootMember", js.Any.fromFunction1(value))
+    inline def setInitRootMember(value: Component => Any): Self = StObject.set(x, "initRootMember", js.Any.fromFunction1(value))
     
-    inline def setOnEnabledChanged(value: Boolean => js.Any): Self = StObject.set(x, "onEnabledChanged", js.Any.fromFunction1(value))
+    inline def setOnEnabledChanged(value: Boolean => Any): Self = StObject.set(x, "onEnabledChanged", js.Any.fromFunction1(value))
     
     inline def setOnMenuClosed(value: () => scala.Unit): Self = StObject.set(x, "onMenuClosed", js.Any.fromFunction0(value))
     
-    inline def setRaiseCommandEvent(value: (String, CommandType, js.Any) => js.Any): Self = StObject.set(x, "raiseCommandEvent", js.Any.fromFunction3(value))
+    inline def setRaiseCommandEvent(value: (String, CommandType, Any) => Any): Self = StObject.set(x, "raiseCommandEvent", js.Any.fromFunction3(value))
     
     inline def setReceiveFocus(value: () => scala.Unit): Self = StObject.set(x, "receiveFocus", js.Any.fromFunction0(value))
     

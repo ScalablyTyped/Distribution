@@ -44,7 +44,7 @@ object imagePickerPropsTypeMod {
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: js.Object*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: js.Object*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setOnAddImageClick(value: () => Unit): Self = StObject.set(x, "onAddImageClick", js.Any.fromFunction0(value))
       

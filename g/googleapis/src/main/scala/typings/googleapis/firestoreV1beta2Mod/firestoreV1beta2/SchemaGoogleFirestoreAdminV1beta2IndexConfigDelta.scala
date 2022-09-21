@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about an index configuration change.
-  */
 trait SchemaGoogleFirestoreAdminV1beta2IndexConfigDelta extends StObject {
   
   /**
     * Specifies how the index is changing.
     */
-  var changeType: js.UndefOr[String] = js.undefined
+  var changeType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The index being changed.
@@ -29,6 +26,8 @@ object SchemaGoogleFirestoreAdminV1beta2IndexConfigDelta {
   extension [Self <: SchemaGoogleFirestoreAdminV1beta2IndexConfigDelta](x: Self) {
     
     inline def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    
+    inline def setChangeTypeNull: Self = StObject.set(x, "changeType", null)
     
     inline def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
     

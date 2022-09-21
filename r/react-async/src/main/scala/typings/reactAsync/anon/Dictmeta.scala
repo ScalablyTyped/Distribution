@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dictmeta
   extends StObject
-     with /* prop */ StringDictionary[js.Any] {
+     with /* prop */ StringDictionary[Any] {
   
   var counter: Double
 }

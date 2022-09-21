@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-tables
 
-Typings are for version 1.1.1
+Typings are for version 1.2.5
 
 ## Library description:
 ProseMirror's rowspan/colspan tables component
@@ -10,10 +10,10 @@ ProseMirror's rowspan/colspan tables component
 | ------------------ | :-------------: |
 | Full name          | prosemirror-tables |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 94 |
-| # downloads        | 5349367 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 872813.6666666666 |
+| # stars            | 145.0 |
 
 ## Links
 - [Homepage](https://github.com/prosemirror/prosemirror-tables#readme)

@@ -48,7 +48,7 @@ object Search {
   
   @JSGlobal("Microsoft.Maps.Search.SearchManager")
   @js.native
-  class SearchManager protected ()
+  open class SearchManager protected ()
     extends StObject
        with typings.bingmaps.Microsoft.Maps.Search.SearchManager {
     /**

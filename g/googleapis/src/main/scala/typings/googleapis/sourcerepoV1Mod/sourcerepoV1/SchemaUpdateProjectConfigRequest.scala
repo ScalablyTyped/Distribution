@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for UpdateProjectConfig.
-  */
 trait SchemaUpdateProjectConfigRequest extends StObject {
   
   /**
@@ -15,11 +12,9 @@ trait SchemaUpdateProjectConfigRequest extends StObject {
   var projectConfig: js.UndefOr[SchemaProjectConfig] = js.undefined
   
   /**
-    * A FieldMask specifying which fields of the project_config to modify. Only
-    * the fields in the mask will be modified. If no mask is provided, this
-    * request is no-op.
+    * A FieldMask specifying which fields of the project_config to modify. Only the fields in the mask will be modified. If no mask is provided, this request is no-op.
     */
-  var updateMask: js.UndefOr[String] = js.undefined
+  var updateMask: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUpdateProjectConfigRequest {
   
@@ -35,6 +30,8 @@ object SchemaUpdateProjectConfigRequest {
     inline def setProjectConfigUndefined: Self = StObject.set(x, "projectConfig", js.undefined)
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
     inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }

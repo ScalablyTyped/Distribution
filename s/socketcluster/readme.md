@@ -10,10 +10,10 @@ Highly scalable realtime framework with support for async/await
 | ------------------ | :-------------: |
 | Full name          | socketcluster |
 | Keywords           | socketcluster, async, await, realtime |
-| # releases         | 19 |
-| # dependents       | 33 |
-| # downloads        | 1101791 |
-| # stars            | 15 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 38659.0 |
+| # stars            | 5960.0 |
 
 ## Links
 - [Homepage](https://socketcluster.io/)

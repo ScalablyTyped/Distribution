@@ -11,7 +11,7 @@ trait SlideGround
      with AnonymousAccessor {
   
   /**
-    * Ground opacity.
+    * Ground opacity
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#ground)
     */
@@ -23,7 +23,7 @@ object SlideGround {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ js.Any, SlideGround]]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], SlideGround]])
+    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, SlideGround]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], SlideGround]])
   ): SlideGround = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideGround]

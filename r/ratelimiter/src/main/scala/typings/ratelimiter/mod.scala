@@ -1,6 +1,6 @@
 package typings.ratelimiter
 
-import typings.redis.mod.RedisClient
+import typings.ratelimiter.anon.Exec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("ratelimiter", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Limiter {
     def this(opts: LimiterOption) = this()
@@ -18,7 +18,7 @@ object mod {
       * Get values and header / status code and invoke `fn(err, info)`.
       */
     /* CompleteClass */
-    override def get(fn: js.Function2[/* err */ js.Any, /* info */ LimiterInfo, Unit]): Unit = js.native
+    override def get(fn: js.Function2[/* err */ Any, /* info */ LimiterInfo, Unit]): Unit = js.native
     
     /**
       * Inspect implementation
@@ -32,7 +32,7 @@ object mod {
     /**
       * Get values and header / status code and invoke `fn(err, info)`.
       */
-    def get(fn: js.Function2[/* err */ js.Any, /* info */ LimiterInfo, Unit]): Unit
+    def get(fn: js.Function2[/* err */ Any, /* info */ LimiterInfo, Unit]): Unit
     
     /**
       * Inspect implementation
@@ -41,14 +41,14 @@ object mod {
   }
   object Limiter {
     
-    inline def apply(get: js.Function2[/* err */ js.Any, /* info */ LimiterInfo, Unit] => Unit, inspect: () => String): Limiter = {
+    inline def apply(get: js.Function2[/* err */ Any, /* info */ LimiterInfo, Unit] => Unit, inspect: () => String): Limiter = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), inspect = js.Any.fromFunction0(inspect))
       __obj.asInstanceOf[Limiter]
     }
     
     extension [Self <: Limiter](x: Self) {
       
-      inline def setGet(value: js.Function2[/* err */ js.Any, /* info */ LimiterInfo, Unit] => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: js.Function2[/* err */ Any, /* info */ LimiterInfo, Unit] => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
       inline def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
     }
@@ -142,6 +142,23 @@ object mod {
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
       inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    }
+  }
+  
+  trait RedisClient extends StObject {
+    
+    def multi(operations: js.Array[js.Array[Any]]): Exec
+  }
+  object RedisClient {
+    
+    inline def apply(multi: js.Array[js.Array[Any]] => Exec): RedisClient = {
+      val __obj = js.Dynamic.literal(multi = js.Any.fromFunction1(multi))
+      __obj.asInstanceOf[RedisClient]
+    }
+    
+    extension [Self <: RedisClient](x: Self) {
+      
+      inline def setMulti(value: js.Array[js.Array[Any]] => Exec): Self = StObject.set(x, "multi", js.Any.fromFunction1(value))
     }
   }
 }

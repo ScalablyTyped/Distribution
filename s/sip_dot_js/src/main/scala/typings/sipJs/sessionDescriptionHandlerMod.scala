@@ -9,7 +9,7 @@ object sessionDescriptionHandlerMod {
   
   @JSImport("sip.js/lib/api/exceptions/session-description-handler", "SessionDescriptionHandlerError")
   @js.native
-  class SessionDescriptionHandlerError () extends Exception {
+  open class SessionDescriptionHandlerError () extends Exception {
     def this(message: String) = this()
   }
 }

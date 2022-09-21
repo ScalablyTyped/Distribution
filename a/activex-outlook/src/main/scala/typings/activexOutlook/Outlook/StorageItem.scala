@@ -28,7 +28,7 @@ trait StorageItem extends StObject {
   /* private */ @JSName("Outlook.StorageItem_typekey")
   var OutlookDotStorageItem_typekey: StorageItem
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor
   
@@ -55,7 +55,7 @@ object StorageItem {
     EntryID: String,
     LastModificationTime: VarDate,
     OutlookDotStorageItem_typekey: StorageItem,
-    Parent: js.Any,
+    Parent: Any,
     PropertyAccessor: PropertyAccessor,
     Save: () => Unit,
     Session: NameSpace,
@@ -90,7 +90,7 @@ object StorageItem {
     
     inline def setOutlookDotStorageItem_typekey(value: StorageItem): Self = StObject.set(x, "Outlook.StorageItem_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPropertyAccessor(value: PropertyAccessor): Self = StObject.set(x, "PropertyAccessor", value.asInstanceOf[js.Any])
     

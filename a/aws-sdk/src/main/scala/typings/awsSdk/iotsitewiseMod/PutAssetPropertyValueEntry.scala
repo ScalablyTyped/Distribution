@@ -17,7 +17,7 @@ trait PutAssetPropertyValueEntry extends StObject {
   var entryId: EntryId
   
   /**
-    * The property alias that identifies the property, such as an OPC-UA server data stream path (for example, /company/windfarm/3/turbine/7/temperature). For more information, see Mapping industrial data streams to asset properties in the AWS IoT SiteWise User Guide.
+    * The alias that identifies the property, such as an OPC-UA server data stream path (for example, /company/windfarm/3/turbine/7/temperature). For more information, see Mapping industrial data streams to asset properties in the IoT SiteWise User Guide.
     */
   var propertyAlias: js.UndefOr[AssetPropertyAlias] = js.undefined
   
@@ -56,6 +56,6 @@ object PutAssetPropertyValueEntry {
     
     inline def setPropertyValues(value: AssetPropertyValues): Self = StObject.set(x, "propertyValues", value.asInstanceOf[js.Any])
     
-    inline def setPropertyValuesVarargs(value: AssetPropertyValue*): Self = StObject.set(x, "propertyValues", js.Array(value :_*))
+    inline def setPropertyValuesVarargs(value: AssetPropertyValue*): Self = StObject.set(x, "propertyValues", js.Array(value*))
   }
 }

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.braintree.braintreeStrings.authorization_expired
   - typings.braintree.braintreeStrings.authorized
   - typings.braintree.braintreeStrings.authorizing
+  - typings.braintree.braintreeStrings.settlement_confirmed
   - typings.braintree.braintreeStrings.settlement_pending
   - typings.braintree.braintreeStrings.settlement_declined
   - typings.braintree.braintreeStrings.failed
@@ -34,6 +35,8 @@ object TransactionStatus {
   inline def processor_declined: typings.braintree.braintreeStrings.processor_declined = "processor_declined".asInstanceOf[typings.braintree.braintreeStrings.processor_declined]
   
   inline def settled: typings.braintree.braintreeStrings.settled = "settled".asInstanceOf[typings.braintree.braintreeStrings.settled]
+  
+  inline def settlement_confirmed: typings.braintree.braintreeStrings.settlement_confirmed = "settlement_confirmed".asInstanceOf[typings.braintree.braintreeStrings.settlement_confirmed]
   
   inline def settlement_declined: typings.braintree.braintreeStrings.settlement_declined = "settlement_declined".asInstanceOf[typings.braintree.braintreeStrings.settlement_declined]
   

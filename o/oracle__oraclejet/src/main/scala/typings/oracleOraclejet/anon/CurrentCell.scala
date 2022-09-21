@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CurrentCell[K]
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var currentCell: typings.oracleOraclejet.ojdatagridMod.ojDataGrid.CurrentCell[K]
   

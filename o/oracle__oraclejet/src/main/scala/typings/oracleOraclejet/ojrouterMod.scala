@@ -15,7 +15,7 @@ object ojrouterMod {
   
   @JSImport("@oracle/oraclejet/ojrouter", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Router
   @JSImport("@oracle/oraclejet/ojrouter", JSImport.Namespace)
@@ -61,19 +61,19 @@ object ojrouterMod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("@oracle/oraclejet/ojrouter", "urlParamAdapter")
   @js.native
-  class urlParamAdapter () extends StObject
+  open class urlParamAdapter () extends StObject
   
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("@oracle/oraclejet/ojrouter", "urlPathAdapter")
   @js.native
-  class urlPathAdapter () extends StObject
+  open class urlPathAdapter () extends StObject
   
   // tslint:disable-next-line interface-over-type-literal
   trait ModuleConfigType extends StObject {
     
     var lifecycleListener: Attached
     
-    var name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any
+    var name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ Any
     
     var params: OjRouter
   }
@@ -81,7 +81,7 @@ object ojrouterMod {
     
     inline def apply(
       lifecycleListener: Attached,
-      name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any,
+      name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ Any,
       params: OjRouter
     ): ModuleConfigType = {
       val __obj = js.Dynamic.literal(lifecycleListener = lifecycleListener.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
@@ -93,7 +93,7 @@ object ojrouterMod {
       inline def setLifecycleListener(value: Attached): Self = StObject.set(x, "lifecycleListener", value.asInstanceOf[js.Any])
       
       inline def setName(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ Any
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setParams(value: OjRouter): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
@@ -103,8 +103,8 @@ object ojrouterMod {
   @js.native
   trait Router extends StObject {
     
-    def configure(option: js.Function1[/* id */ String, js.UndefOr[RouterState | Null]]): js.Any = js.native
-    def configure(option: StringDictionary[ConfigOptions]): js.Any = js.native
+    def configure(option: js.Function1[/* id */ String, js.UndefOr[RouterState | Null]]): Any = js.native
+    def configure(option: StringDictionary[ConfigOptions]): Any = js.native
     
     def createChildRouter(name: String): Router = js.native
     def createChildRouter(name: String, parentStateId: String): Router = js.native
@@ -136,11 +136,11 @@ object ojrouterMod {
     
     val name: String = js.native
     
-    val observableModuleConfig: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<ModuleConfigType> */ js.Any = js.native
+    val observableModuleConfig: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<ModuleConfigType> */ Any = js.native
     
     val parent: js.UndefOr[Router] = js.native
     
-    def retrieve(): js.Any = js.native
+    def retrieve(): Any = js.native
     
     def stateId(): String = js.native
     def stateId(param0: String): String = js.native
@@ -173,7 +173,7 @@ object ojrouterMod {
     
     var title: String | js.Function0[js.UndefOr[String]]
     
-    var value: js.Any
+    var value: Any
   }
   object RouterState {
     
@@ -187,7 +187,7 @@ object ojrouterMod {
       isCurrent: () => Boolean,
       parameters: js.Object,
       title: String | js.Function0[js.UndefOr[String]],
-      value: js.Any
+      value: Any
     ): RouterState = {
       val __obj = js.Dynamic.literal(canEnter = js.Any.fromFunction0(canEnter), canExit = js.Any.fromFunction0(canExit), enter = js.Any.fromFunction0(enter), exit = js.Any.fromFunction0(exit), go = js.Any.fromFunction0(go), id = id.asInstanceOf[js.Any], isCurrent = js.Any.fromFunction0(isCurrent), parameters = parameters.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouterState]
@@ -208,7 +208,7 @@ object ojrouterMod {
       
       var label: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[js.Any] = js.undefined
+      var value: js.UndefOr[Any] = js.undefined
     }
     object ConfigOptions {
       
@@ -243,7 +243,7 @@ object ojrouterMod {
         
         inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
-        inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
         inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
@@ -275,7 +275,7 @@ object ojrouterMod {
       
       inline def setTitleFunction0(value: () => js.UndefOr[String]): Self = StObject.set(x, "title", js.Any.fromFunction0(value))
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

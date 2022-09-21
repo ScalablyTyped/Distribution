@@ -12,9 +12,14 @@ trait CreateGraphqlApiRequest extends StObject {
   var additionalAuthenticationProviders: js.UndefOr[AdditionalAuthenticationProviders] = js.undefined
   
   /**
-    * The authentication type: API key, AWS IAM, OIDC, or Amazon Cognito user pools.
+    * The authentication type: API key, Identity and Access Management (IAM), OpenID Connect (OIDC), Amazon Cognito user pools, or Lambda.
     */
   var authenticationType: AuthenticationType
+  
+  /**
+    * Configuration for Lambda function authorization.
+    */
+  var lambdaAuthorizerConfig: js.UndefOr[LambdaAuthorizerConfig] = js.undefined
   
   /**
     * The Amazon CloudWatch Logs configuration.
@@ -27,7 +32,7 @@ trait CreateGraphqlApiRequest extends StObject {
   var name: String
   
   /**
-    * The OpenID Connect configuration.
+    * The OIDC configuration.
     */
   var openIDConnectConfig: js.UndefOr[OpenIDConnectConfig] = js.undefined
   
@@ -42,7 +47,7 @@ trait CreateGraphqlApiRequest extends StObject {
   var userPoolConfig: js.UndefOr[UserPoolConfig] = js.undefined
   
   /**
-    * A flag indicating whether to enable X-Ray tracing for the GraphqlApi.
+    * A flag indicating whether to use X-Ray tracing for the GraphqlApi.
     */
   var xrayEnabled: js.UndefOr[Boolean] = js.undefined
 }
@@ -59,9 +64,13 @@ object CreateGraphqlApiRequest {
     
     inline def setAdditionalAuthenticationProvidersUndefined: Self = StObject.set(x, "additionalAuthenticationProviders", js.undefined)
     
-    inline def setAdditionalAuthenticationProvidersVarargs(value: AdditionalAuthenticationProvider*): Self = StObject.set(x, "additionalAuthenticationProviders", js.Array(value :_*))
+    inline def setAdditionalAuthenticationProvidersVarargs(value: AdditionalAuthenticationProvider*): Self = StObject.set(x, "additionalAuthenticationProviders", js.Array(value*))
     
     inline def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaAuthorizerConfig(value: LambdaAuthorizerConfig): Self = StObject.set(x, "lambdaAuthorizerConfig", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaAuthorizerConfigUndefined: Self = StObject.set(x, "lambdaAuthorizerConfig", js.undefined)
     
     inline def setLogConfig(value: LogConfig): Self = StObject.set(x, "logConfig", value.asInstanceOf[js.Any])
     

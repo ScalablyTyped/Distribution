@@ -92,7 +92,7 @@ object Application {
     * Queues an event to be processed by the WinJS.Application event queue.
     * @param eventRecord The event object is expected to have a type property that is used as the event name when dispatching on the WinJS.Application event queue. The entire object is provided to event listeners in the detail property of the event.
     **/
-  inline def queueEvent(eventRecord: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queueEvent")(eventRecord.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def queueEvent(eventRecord: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queueEvent")(eventRecord.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Removes an event listener from the control.
@@ -101,7 +101,7 @@ object Application {
     * @param useCapture Specifies whether or not to initiate capture.
     **/
   inline def removeEventListener(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def removeEventListener(`type`: String, listener: js.Function, useCapture: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener(`type`: String, listener: js.Function, useCapture: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * The roaming storage of the application.
@@ -116,8 +116,8 @@ object Application {
     **/
   @JSImport("winjs", "Application.sessionState")
   @js.native
-  def sessionState: js.Any = js.native
-  inline def sessionState_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sessionState")(x.asInstanceOf[js.Any])
+  def sessionState: Any = js.native
+  inline def sessionState_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sessionState")(x.asInstanceOf[js.Any])
   
   /**
     * Starts dispatching application events (the activated, checkpoint, error, loaded, ready, settings, and unload events).

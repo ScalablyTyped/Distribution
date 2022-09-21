@@ -1,29 +1,52 @@
 package typings.reactNative
 
+import typings.reactNative.anon.Capture
+import typings.reactNative.anon.`2`
+import typings.reactNative.reactNativeStrings.abort
+import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AbortSignal extends StObject {
+@js.native
+trait AbortSignal
+  extends StObject
+     with EventTarget {
   
   /**
     * Returns `true` if this `AbortSignal`'s `AbortController` has signaled to abort, and `false` otherwise.
     */
-  val aborted: Boolean
+  val aborted: Boolean = js.native
   
-  def onabort(event: AbortEvent): Unit
-}
-object AbortSignal {
+  @JSName("addEventListener")
+  def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_abort(
+    `type`: abort,
+    listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_abort(
+    `type`: abort,
+    listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any],
+    options: Capture
+  ): Unit = js.native
   
-  inline def apply(aborted: Boolean, onabort: AbortEvent => Unit): AbortSignal = {
-    val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], onabort = js.Any.fromFunction1(onabort))
-    __obj.asInstanceOf[AbortSignal]
-  }
+  def onabort(event: AbortEvent): Unit = js.native
   
-  extension [Self <: AbortSignal](x: Self) {
-    
-    inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
-    
-    inline def setOnabort(value: AbortEvent => Unit): Self = StObject.set(x, "onabort", js.Any.fromFunction1(value))
-  }
+  @JSName("removeEventListener")
+  def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_abort(
+    `type`: abort,
+    listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any],
+    options: Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_abort(
+    `type`: abort,
+    listener: js.ThisFunction1[/* this */ this.type, /* event */ Any, Any],
+    options: `2`
+  ): Unit = js.native
 }

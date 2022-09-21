@@ -1,7 +1,7 @@
 
 # Scala.js typings for picomatch
 
-Typings are for version 2.2
+Typings are for version 2.3
 
 ## Library description:
 Blazing fast and accurate glob matcher written in JavaScript, with no dependencies and full support for standard and extended Bash glob features, including braces, extglobs, POSIX brackets, and regular expressions.
@@ -10,15 +10,12 @@ Blazing fast and accurate glob matcher written in JavaScript, with no dependenci
 | ------------------ | :-------------: |
 | Full name          | picomatch |
 | Keywords           | glob, match, picomatch |
-| # releases         | 18 |
-| # dependents       | 111 |
-| # downloads        | 548076181 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3871252266666666E8 |
+| # stars            | 572.0 |
 
 ## Links
-- [Homepage](https://github.com/micromatch/picomatch)
-- [Bugs](https://github.com/micromatch/picomatch/issues)
-- [Repository](https://github.com/micromatch/picomatch)
 - [Npm](https://www.npmjs.com/package/picomatch)
     
 

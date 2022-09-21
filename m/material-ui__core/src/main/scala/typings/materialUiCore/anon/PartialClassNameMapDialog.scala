@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Dialog/Dialog.DialogClassKey>> */
+/* Inlined std.Partial<@material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Dialog/Dialog.DialogClassKey>> */
 trait PartialClassNameMapDialog extends StObject {
   
   var container: js.UndefOr[String] = js.undefined
@@ -18,6 +18,8 @@ trait PartialClassNameMapDialog extends StObject {
   var paperScrollBody: js.UndefOr[String] = js.undefined
   
   var paperScrollPaper: js.UndefOr[String] = js.undefined
+  
+  var paperWidthFalse: js.UndefOr[String] = js.undefined
   
   var paperWidthLg: js.UndefOr[String] = js.undefined
   
@@ -67,6 +69,10 @@ object PartialClassNameMapDialog {
     inline def setPaperScrollPaperUndefined: Self = StObject.set(x, "paperScrollPaper", js.undefined)
     
     inline def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
+    
+    inline def setPaperWidthFalse(value: String): Self = StObject.set(x, "paperWidthFalse", value.asInstanceOf[js.Any])
+    
+    inline def setPaperWidthFalseUndefined: Self = StObject.set(x, "paperWidthFalse", js.undefined)
     
     inline def setPaperWidthLg(value: String): Self = StObject.set(x, "paperWidthLg", value.asInstanceOf[js.Any])
     

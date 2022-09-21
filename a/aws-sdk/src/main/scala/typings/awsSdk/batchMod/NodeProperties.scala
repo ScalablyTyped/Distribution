@@ -34,7 +34,7 @@ object NodeProperties {
     
     inline def setNodeRangeProperties(value: NodeRangeProperties): Self = StObject.set(x, "nodeRangeProperties", value.asInstanceOf[js.Any])
     
-    inline def setNodeRangePropertiesVarargs(value: NodeRangeProperty*): Self = StObject.set(x, "nodeRangeProperties", js.Array(value :_*))
+    inline def setNodeRangePropertiesVarargs(value: NodeRangeProperty*): Self = StObject.set(x, "nodeRangeProperties", js.Array(value*))
     
     inline def setNumNodes(value: Integer): Self = StObject.set(x, "numNodes", value.asInstanceOf[js.Any])
   }

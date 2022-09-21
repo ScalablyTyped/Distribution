@@ -26,13 +26,13 @@ object gapi {
       trait SearchResponse extends StObject {
         
         /** The local context applicable for the response. See more details at http://www.w3.org/TR/json-ld/#context-definitions. */
-        var `@context`: js.UndefOr[js.Any] = js.undefined
+        var `@context`: js.UndefOr[Any] = js.undefined
         
         /** The schema type of top-level JSON-LD object, e.g. ItemList. */
-        var `@type`: js.UndefOr[js.Any] = js.undefined
+        var `@type`: js.UndefOr[Any] = js.undefined
         
         /** The item list of search results. */
-        var itemListElement: js.UndefOr[js.Array[js.Any]] = js.undefined
+        var itemListElement: js.UndefOr[js.Array[Any]] = js.undefined
       }
       object SearchResponse {
         
@@ -43,19 +43,19 @@ object gapi {
         
         extension [Self <: SearchResponse](x: Self) {
           
-          inline def `set@context`(value: js.Any): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
+          inline def `set@context`(value: Any): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
           
           inline def `set@contextUndefined`: Self = StObject.set(x, "@context", js.undefined)
           
-          inline def `set@type`(value: js.Any): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
+          inline def `set@type`(value: Any): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
           
           inline def `set@typeUndefined`: Self = StObject.set(x, "@type", js.undefined)
           
-          inline def setItemListElement(value: js.Array[js.Any]): Self = StObject.set(x, "itemListElement", value.asInstanceOf[js.Any])
+          inline def setItemListElement(value: js.Array[Any]): Self = StObject.set(x, "itemListElement", value.asInstanceOf[js.Any])
           
           inline def setItemListElementUndefined: Self = StObject.set(x, "itemListElement", js.undefined)
           
-          inline def setItemListElementVarargs(value: js.Any*): Self = StObject.set(x, "itemListElement", js.Array(value :_*))
+          inline def setItemListElementVarargs(value: Any*): Self = StObject.set(x, "itemListElement", js.Array(value*))
         }
       }
     }

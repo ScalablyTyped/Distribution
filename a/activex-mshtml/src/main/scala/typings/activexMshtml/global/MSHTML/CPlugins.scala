@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.CPlugins")
 @js.native
-/* private */ class CPlugins ()
+/* private */ open class CPlugins ()
   extends StObject
      with typings.activexMshtml.MSHTML.CPlugins

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchDeleteRecipeVersionResponse extends StObject {
   
   /**
-    * Errors, if any, that were encountered when deleting the recipe versions.
+    * Errors, if any, that occurred while attempting to delete the recipe versions.
     */
   var Errors: js.UndefOr[RecipeErrorList] = js.undefined
   
@@ -29,7 +29,7 @@ object BatchDeleteRecipeVersionResponse {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: RecipeVersionErrorDetail*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: RecipeVersionErrorDetail*): Self = StObject.set(x, "Errors", js.Array(value*))
     
     inline def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

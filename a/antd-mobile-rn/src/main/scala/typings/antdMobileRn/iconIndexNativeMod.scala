@@ -18,7 +18,7 @@ object iconIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/icon/index.native", JSImport.Default)
   @js.native
-  class default () extends Icon
+  open class default () extends Icon
   /* static members */
   object default {
     
@@ -33,8 +33,7 @@ object iconIndexNativeMod {
   }
   
   @js.native
-  trait Icon
-    extends Component[IconProps, js.Any, js.Any]
+  trait Icon extends Component[IconProps, Any, Any]
   
   trait IconProps
     extends StObject

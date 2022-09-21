@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @hidden
   */
-/* private */ class QuickInputButtons () extends StObject
+/* private */ open class QuickInputButtons () extends StObject
 /* static members */
 object QuickInputButtons {
   
   /**
-    * A back button for [QuickPick](#QuickPick) and [InputBox](#InputBox).
+    * A back button for {@link QuickPick} and {@link InputBox}.
     *
     * When a navigation 'back' button is needed this one should be used for consistency.
     * It comes with a predefined icon, tooltip and location.

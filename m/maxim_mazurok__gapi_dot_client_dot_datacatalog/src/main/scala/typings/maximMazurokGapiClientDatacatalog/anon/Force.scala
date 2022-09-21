@@ -22,16 +22,13 @@ trait Force extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. Currently, this field must always be set to `true`. This confirms the deletion of any possible tags using this template. `force = false` will be supported in the
-    * future.
-    */
+  /** Required. If true, deletes all tags that use this template. Currently, `true` is the only supported value. */
   var force: js.UndefOr[Boolean] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the tag template to delete. Example: * projects/{project_id}/locations/{location}/tagTemplates/{tag_template_id} */
+  /** Required. The name of the tag template to delete. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */

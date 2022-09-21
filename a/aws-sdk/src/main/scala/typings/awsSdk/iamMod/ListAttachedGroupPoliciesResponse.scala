@@ -34,7 +34,7 @@ object ListAttachedGroupPoliciesResponse {
     
     inline def setAttachedPoliciesUndefined: Self = StObject.set(x, "AttachedPolicies", js.undefined)
     
-    inline def setAttachedPoliciesVarargs(value: AttachedPolicy*): Self = StObject.set(x, "AttachedPolicies", js.Array(value :_*))
+    inline def setAttachedPoliciesVarargs(value: AttachedPolicy*): Self = StObject.set(x, "AttachedPolicies", js.Array(value*))
     
     inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

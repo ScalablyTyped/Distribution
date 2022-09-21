@@ -8,7 +8,7 @@ object xmlDtdAttlistMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlDtdAttlist", JSImport.Default)
   @js.native
-  class default[Parent] protected ()
+  open class default[Parent] protected ()
     extends StObject
        with XmlDtdAttlist[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlDtdAttlistOptions) = this()
@@ -37,11 +37,11 @@ object xmlDtdAttlistMod {
   @js.native
   trait XmlDtdAttlist[Parent] extends StObject {
     
-    /* private */ var _charData: js.Any = js.native
+    /* private */ var _charData: Any = js.native
     
-    /* private */ val _parent: js.Any = js.native
+    /* private */ val _parent: Any = js.native
     
-    /* private */ val _validation: js.Any = js.native
+    /* private */ val _validation: Any = js.native
     
     /**
       * Gets the text of this entity declaration.

@@ -23,7 +23,7 @@ object anon {
       
       inline def setCardList(value: js.Array[Card]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
       
-      inline def setCardListVarargs(value: Card*): Self = StObject.set(x, "cardList", js.Array(value :_*))
+      inline def setCardListVarargs(value: Card*): Self = StObject.set(x, "cardList", js.Array(value*))
     }
   }
   
@@ -97,7 +97,7 @@ object anon {
       
       inline def setLocalIds(value: js.Array[String]): Self = StObject.set(x, "localIds", value.asInstanceOf[js.Any])
       
-      inline def setLocalIdsVarargs(value: String*): Self = StObject.set(x, "localIds", js.Array(value :_*))
+      inline def setLocalIdsVarargs(value: String*): Self = StObject.set(x, "localIds", js.Array(value*))
     }
   }
   

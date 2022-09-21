@@ -10,10 +10,10 @@ Authentication token strategy for Passport.
 | ------------------ | :-------------: |
 | Full name          | passport-auth-token |
 | Keywords           | passport, local, auth, authn, authentication, token |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 130629 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19025.333333333332 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/mbell8903/passport-auth-token)

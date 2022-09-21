@@ -1,0 +1,43 @@
+package typings.vegaLite8ozrbXDH.channeldefDTsMod
+
+import typings.vegaLite8ozrbXDH.datetimeDTsMod.DateTime
+import typings.vegaLite8ozrbXDH.exprDTsMod.ExprRef
+import typings.vegaTypings.signalMod.SignalRef
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Inlined std.Partial<.vega-lite-8ozrbXDH..vega-lite-8ozrbXDH/build/src/channeldef.d.ts.ValueDef<V | .vega-lite-8ozrbXDH..vega-lite-8ozrbXDH/build/src/expr.d.ts.ExprRef | vega.vega.SignalRef>> & {  condition :.vega-lite-8ozrbXDH..vega-lite-8ozrbXDH/build/src/channeldef.d.ts.Conditional<F> | .vega-lite-8ozrbXDH..vega-lite-8ozrbXDH/build/src/channeldef.d.ts.Conditional<.vega-lite-8ozrbXDH..vega-lite-8ozrbXDH/build/src/channeldef.d.ts.ValueDef<V | .vega-lite-8ozrbXDH..vega-lite-8ozrbXDH/build/src/expr.d.ts.ExprRef | vega.vega.SignalRef>> | std.Array<.vega-lite-8ozrbXDH..vega-lite-8ozrbXDH/build/src/channeldef.d.ts.Conditional<.vega-lite-8ozrbXDH..vega-lite-8ozrbXDH/build/src/channeldef.d.ts.ValueDef<V | .vega-lite-8ozrbXDH..vega-lite-8ozrbXDH/build/src/expr.d.ts.ExprRef | vega.vega.SignalRef>>> | undefined} */
+trait ValueDefWithCondition[F /* <: (FieldDef[Any, Any]) | (DatumDef[Any, PrimitiveValue | DateTime | ExprRef | SignalRef]) */, V /* <: Value[ExprRef | SignalRef] */] extends StObject {
+  
+  /**
+    * A field definition or one or more value definition(s) with a parameter predicate.
+    */
+  var condition: js.UndefOr[
+    (Conditional[F | (ValueDef[V | ExprRef | SignalRef])]) | (js.Array[Conditional[ValueDef[V | ExprRef | SignalRef]]])
+  ] = js.undefined
+  
+  var value: js.UndefOr[V | ExprRef | SignalRef] = js.undefined
+}
+object ValueDefWithCondition {
+  
+  inline def apply[F /* <: (FieldDef[Any, Any]) | (DatumDef[Any, PrimitiveValue | DateTime | ExprRef | SignalRef]) */, V /* <: Value[ExprRef | SignalRef] */](): ValueDefWithCondition[F, V] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ValueDefWithCondition[F, V]]
+  }
+  
+  extension [Self <: ValueDefWithCondition[?, ?], F /* <: (FieldDef[Any, Any]) | (DatumDef[Any, PrimitiveValue | DateTime | ExprRef | SignalRef]) */, V /* <: Value[ExprRef | SignalRef] */](x: Self & (ValueDefWithCondition[F, V])) {
+    
+    inline def setCondition(
+      value: (Conditional[F | (ValueDef[V | ExprRef | SignalRef])]) | (js.Array[Conditional[ValueDef[V | ExprRef | SignalRef]]])
+    ): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    
+    inline def setConditionVarargs(value: (Conditional[ValueDef[V | ExprRef | SignalRef]])*): Self = StObject.set(x, "condition", js.Array(value*))
+    
+    inline def setValue(value: V | ExprRef | SignalRef): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
+}

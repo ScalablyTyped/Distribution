@@ -7,12 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.ScaleRangeLayer")
 @js.native
-class ScaleRangeLayerCls ()
+open class ScaleRangeLayerCls ()
   extends StObject
      with typings.arcgisJsApi.esri.ScaleRangeLayer {
   
   /**
     * The maximum scale (most zoomed in) at which the layer is visible in the view.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
     */
@@ -21,6 +23,8 @@ class ScaleRangeLayerCls ()
   
   /**
     * The minimum scale (most zoomed out) at which the layer is visible in the view.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
     */

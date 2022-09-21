@@ -339,7 +339,7 @@ object anon {
     /** JSONP */
     var callback: js.UndefOr[String] = js.undefined
     
-    /** Customer's `customerId`. A previous version of this API accepted the primary domain name as a value for this field. If the customer is suspended, the server returns an error. */
+    /** The customer's unique ID as defined in the Admin console, such as `C00000000`. If the customer is suspended, the server returns an error. */
     var customerId: String
     
     /** Selector specifying which fields to include in a partial response. */
@@ -457,7 +457,7 @@ object anon {
     /** JSONP */
     var callback: js.UndefOr[String] = js.undefined
     
-    /** Customer's `customerId`. A previous version of this API accepted the primary domain name as a value for this field. If the customer is suspended, the server returns an error. */
+    /** The customer's unique ID as defined in the Admin console, such as `C00000000`. If the customer is suspended, the server returns an error. */
     var customerId: String
     
     /** Selector specifying which fields to include in a partial response. */

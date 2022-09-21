@@ -17,13 +17,13 @@ object anon {
     
     var action: js.UndefOr[merge | replace | `override` | update | set] = js.undefined
     
-    var config: js.Any
+    var config: Any
     
     var format: js.UndefOr[text | xml] = js.undefined
   }
   object Action {
     
-    inline def apply(config: js.Any): Action = {
+    inline def apply(config: Any): Action = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action]
     }
@@ -34,7 +34,7 @@ object anon {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setFormat(value: text | xml): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

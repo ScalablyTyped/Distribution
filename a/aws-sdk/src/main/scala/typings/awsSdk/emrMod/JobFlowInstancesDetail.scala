@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JobFlowInstancesDetail extends StObject {
   
   /**
-    * The name of an Amazon EC2 key pair that can be used to ssh to the master node.
+    * The name of an Amazon EC2 key pair that can be used to connect to the master node using SSH.
     */
   var Ec2KeyName: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
@@ -52,7 +52,7 @@ trait JobFlowInstancesDetail extends StObject {
   var MasterPublicDnsName: js.UndefOr[XmlString] = js.undefined
   
   /**
-    * An approximation of the cost of the cluster, represented in m1.small/hours. This value is incremented one time for every hour that an m1.small runs. Larger instances are weighted more, so an Amazon EC2 instance that is roughly four times more expensive would result in the normalized instance hours being incremented by four. This result is only an approximation and does not reflect the actual billing rate.
+    * An approximation of the cost of the cluster, represented in m1.small/hours. This value is increased one time for every hour that an m1.small instance runs. Larger instances are weighted more heavily, so an Amazon EC2 instance that is roughly four times more expensive would result in the normalized instance hours being increased incrementally four times. This result is only an approximation and does not reflect the actual billing rate.
     */
   var NormalizedInstanceHours: js.UndefOr[Integer] = js.undefined
   
@@ -98,7 +98,7 @@ object JobFlowInstancesDetail {
     
     inline def setInstanceGroupsUndefined: Self = StObject.set(x, "InstanceGroups", js.undefined)
     
-    inline def setInstanceGroupsVarargs(value: InstanceGroupDetail*): Self = StObject.set(x, "InstanceGroups", js.Array(value :_*))
+    inline def setInstanceGroupsVarargs(value: InstanceGroupDetail*): Self = StObject.set(x, "InstanceGroups", js.Array(value*))
     
     inline def setKeepJobFlowAliveWhenNoSteps(value: Boolean): Self = StObject.set(x, "KeepJobFlowAliveWhenNoSteps", value.asInstanceOf[js.Any])
     

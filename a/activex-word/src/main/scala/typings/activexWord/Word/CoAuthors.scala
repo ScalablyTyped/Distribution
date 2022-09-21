@@ -12,9 +12,9 @@ trait CoAuthors extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): CoAuthor
+  def Item(Index: Any): CoAuthor
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.CoAuthors_typekey")
   var WordDotCoAuthors_typekey: CoAuthors
@@ -25,8 +25,8 @@ object CoAuthors {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => CoAuthor,
-    Parent: js.Any,
+    Item: Any => CoAuthor,
+    Parent: Any,
     WordDotCoAuthors_typekey: CoAuthors
   ): CoAuthors = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -42,9 +42,9 @@ object CoAuthors {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => CoAuthor): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => CoAuthor): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotCoAuthors_typekey(value: CoAuthors): Self = StObject.set(x, "Word.CoAuthors_typekey", value.asInstanceOf[js.Any])
   }

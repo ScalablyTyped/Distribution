@@ -10,14 +10,14 @@ trait RulesBucketConstructionState extends StObject {
   
   def IncreaseInsertionIndex(maskPosition: RulesPosition): Unit
   
-  /* private */ var rulesInsertionIndexBitmap: js.Any
+  /* private */ var rulesInsertionIndexBitmap: Any
 }
 object RulesBucketConstructionState {
   
   inline def apply(
     GetInsertionIndex: RulesPosition => Double,
     IncreaseInsertionIndex: RulesPosition => Unit,
-    rulesInsertionIndexBitmap: js.Any
+    rulesInsertionIndexBitmap: Any
   ): RulesBucketConstructionState = {
     val __obj = js.Dynamic.literal(GetInsertionIndex = js.Any.fromFunction1(GetInsertionIndex), IncreaseInsertionIndex = js.Any.fromFunction1(IncreaseInsertionIndex), rulesInsertionIndexBitmap = rulesInsertionIndexBitmap.asInstanceOf[js.Any])
     __obj.asInstanceOf[RulesBucketConstructionState]
@@ -29,6 +29,6 @@ object RulesBucketConstructionState {
     
     inline def setIncreaseInsertionIndex(value: RulesPosition => Unit): Self = StObject.set(x, "IncreaseInsertionIndex", js.Any.fromFunction1(value))
     
-    inline def setRulesInsertionIndexBitmap(value: js.Any): Self = StObject.set(x, "rulesInsertionIndexBitmap", value.asInstanceOf[js.Any])
+    inline def setRulesInsertionIndexBitmap(value: Any): Self = StObject.set(x, "rulesInsertionIndexBitmap", value.asInstanceOf[js.Any])
   }
 }

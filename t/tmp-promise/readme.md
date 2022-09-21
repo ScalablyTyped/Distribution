@@ -1,7 +1,7 @@
 
 # Scala.js typings for tmp-promise
 
-Typings are for version 1.1.0
+Typings are for version 3.0.3
 
 ## Library description:
 The tmp package with promises support and disposers.
@@ -10,10 +10,10 @@ The tmp package with promises support and disposers.
 | ------------------ | :-------------: |
 | Full name          | tmp-promise |
 | Keywords           | tmp, promise, tempfile, mkdtemp, mktemp |
-| # releases         | 10 |
-| # dependents       | 301 |
-| # downloads        | 17715198 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4269814.333333333 |
+| # stars            | 110.0 |
 
 ## Links
 - [Homepage](https://github.com/benjamingr/tmp-promise#readme)

@@ -11,7 +11,7 @@ object defaultNodeModelMod {
   
   @JSImport("storm-react-diagrams/dist/src/defaults/models/DefaultNodeModel", "DefaultNodeModel")
   @js.native
-  class DefaultNodeModel () extends NodeModel {
+  open class DefaultNodeModel () extends NodeModel {
     def this(name: String) = this()
     def this(name: String, color: String) = this()
     def this(name: Unit, color: String) = this()

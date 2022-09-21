@@ -45,6 +45,9 @@ trait Instance extends StObject {
   /** Output only. The IP address of this instance. Only applicable for instances in App Engine flexible environment. */
   var vmIp: js.UndefOr[String] = js.undefined
   
+  /** Output only. The liveness health check of this instance. Only applicable for instances in App Engine flexible environment. */
+  var vmLiveness: js.UndefOr[String] = js.undefined
+  
   /** Output only. Name of the virtual machine where this instance lives. Only applicable for instances in App Engine flexible environment. */
   var vmName: js.UndefOr[String] = js.undefined
   
@@ -114,6 +117,10 @@ object Instance {
     inline def setVmIp(value: String): Self = StObject.set(x, "vmIp", value.asInstanceOf[js.Any])
     
     inline def setVmIpUndefined: Self = StObject.set(x, "vmIp", js.undefined)
+    
+    inline def setVmLiveness(value: String): Self = StObject.set(x, "vmLiveness", value.asInstanceOf[js.Any])
+    
+    inline def setVmLivenessUndefined: Self = StObject.set(x, "vmLiveness", js.undefined)
     
     inline def setVmName(value: String): Self = StObject.set(x, "vmName", value.asInstanceOf[js.Any])
     

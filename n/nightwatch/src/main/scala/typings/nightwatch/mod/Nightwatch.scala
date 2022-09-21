@@ -1,44 +1,59 @@
 package typings.nightwatch.mod
 
+import typings.nightwatch.expectMod.Expect
+import typings.nightwatch.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Nightwatch extends StObject {
   
-  var api: NightwatchAPI
+  var api: NightwatchAPI = js.native
   
-  var assert: NightwatchAssertions
+  var assert: Assert = js.native
   
-  var client: NightwatchClient
+  def cli(callback: Any): this.type = js.native
   
-  var expect: Expect
+  def cliRunner(): this.type = js.native
+  def cliRunner(argv: js.Object): this.type = js.native
   
-  var verify: NightwatchAssertions
+  def client(settings: NightwatchOptions): this.type = js.native
+  def client(settings: NightwatchOptions, reporter: Any): this.type = js.native
+  def client(settings: NightwatchOptions, reporter: Any, argv: js.Object): this.type = js.native
+  def client(settings: NightwatchOptions, reporter: Unit, argv: js.Object): this.type = js.native
+  
+  def createClient(
+    hasHeadlessSilentOutputUseAsyncEnvTimeoutParallelReporterBrowserNameGlobalsDevtoolsDebugEnable_global_apisConfig: CreateClientParams
+  ): this.type = js.native
+  
+  var expect: Expect = js.native
+  
+  def initClient(opts: Any): this.type = js.native
+  
+  def launchBrowser(): NightwatchAPI | js.Promise[NightwatchAPI] = js.native
+  
+  def runTests(testSource: String, settings: Any, args: Any*): Any = js.native
+  def runTests(testSource: String, settings: Unit, args: Any*): Any = js.native
+  def runTests(testSource: js.Array[String], settings: Any, args: Any*): Any = js.native
+  def runTests(testSource: js.Array[String], settings: Unit, args: Any*): Any = js.native
+  
+  def runner(): this.type = js.native
+  def runner(argv: js.Object): this.type = js.native
+  def runner(argv: js.Object, done: js.Function0[Unit]): this.type = js.native
+  def runner(argv: js.Object, done: js.Function0[Unit], settings: js.Object): this.type = js.native
+  def runner(argv: js.Object, done: Unit, settings: js.Object): this.type = js.native
+  def runner(argv: Unit, done: js.Function0[Unit]): this.type = js.native
+  def runner(argv: Unit, done: js.Function0[Unit], settings: js.Object): this.type = js.native
+  def runner(argv: Unit, done: Unit, settings: js.Object): this.type = js.native
+  
+  def updateCapabilities(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
+  ): this.type = js.native
+  
+  var verify: Assert = js.native
 }
 object Nightwatch {
   
-  inline def apply(
-    api: NightwatchAPI,
-    assert: NightwatchAssertions,
-    client: NightwatchClient,
-    expect: Expect,
-    verify: NightwatchAssertions
-  ): Nightwatch = {
-    val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], assert = assert.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], expect = expect.asInstanceOf[js.Any], verify = verify.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Nightwatch]
-  }
-  
-  extension [Self <: Nightwatch](x: Self) {
-    
-    inline def setApi(value: NightwatchAPI): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
-    
-    inline def setAssert(value: NightwatchAssertions): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
-    
-    inline def setClient(value: NightwatchClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
-    
-    inline def setExpect(value: Expect): Self = StObject.set(x, "expect", value.asInstanceOf[js.Any])
-    
-    inline def setVerify(value: NightwatchAssertions): Self = StObject.set(x, "verify", value.asInstanceOf[js.Any])
-  }
+  inline def apply: NightwatchClient & Nightwatch = ^.asInstanceOf[js.Dynamic].selectDynamic("Nightwatch").asInstanceOf[NightwatchClient & Nightwatch]
 }

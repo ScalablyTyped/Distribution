@@ -25,11 +25,11 @@ object FontawesomeObject {
     
     inline def setAbstract(value: js.Array[AbstractElement]): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     
-    inline def setAbstractVarargs(value: AbstractElement*): Self = StObject.set(x, "abstract", js.Array(value :_*))
+    inline def setAbstractVarargs(value: AbstractElement*): Self = StObject.set(x, "abstract", js.Array(value*))
     
     inline def setHtml(value: js.Array[String]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    inline def setHtmlVarargs(value: String*): Self = StObject.set(x, "html", js.Array(value :_*))
+    inline def setHtmlVarargs(value: String*): Self = StObject.set(x, "html", js.Array(value*))
     
     inline def setNode(value: HTMLCollection): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }

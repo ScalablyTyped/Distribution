@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-video", JSImport.Default)
 @js.native
-class default () extends Video
+open class default () extends Video

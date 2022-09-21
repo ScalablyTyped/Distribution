@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofTooltip extends StObject {
   
   /* static member */
-  var Locale: js.Any
+  var Locale: Any
   
   /* static member */
   var fn: Tooltip
 }
 object TypeofTooltip {
   
-  inline def apply(Locale: js.Any, fn: Tooltip): TypeofTooltip = {
+  inline def apply(Locale: Any, fn: Tooltip): TypeofTooltip = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTooltip]
   }
@@ -24,6 +24,6 @@ object TypeofTooltip {
     
     inline def setFn(value: Tooltip): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

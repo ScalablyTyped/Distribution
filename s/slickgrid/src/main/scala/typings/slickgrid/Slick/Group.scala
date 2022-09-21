@@ -37,7 +37,7 @@ trait Group[T /* <: SlickData */]
     * @property groupingKey
     * @type {Object}
     */
-  var groupingKey: js.Any
+  var groupingKey: Any
   
   /**
     * Sub-groups that are part of the group.
@@ -79,7 +79,7 @@ trait Group[T /* <: SlickData */]
     * @property value
     * @type {Object}
     */
-  var value: js.Any
+  var value: Any
 }
 object Group {
   
@@ -87,13 +87,13 @@ object Group {
     collapsed: Boolean,
     count: Double,
     equals_ : Group[T] => Boolean,
-    groupingKey: js.Any,
+    groupingKey: Any,
     groups: js.Array[Group[T]],
     level: Double,
     rows: js.Array[T],
     title: String,
     totals: GroupTotals[T],
-    value: js.Any
+    value: Any
   ): Group[T] = {
     val __obj = js.Dynamic.literal(collapsed = collapsed.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], groupingKey = groupingKey.asInstanceOf[js.Any], groups = groups.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], totals = totals.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
@@ -108,22 +108,22 @@ object Group {
     
     inline def setEquals_(value: Group[T] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    inline def setGroupingKey(value: js.Any): Self = StObject.set(x, "groupingKey", value.asInstanceOf[js.Any])
+    inline def setGroupingKey(value: Any): Self = StObject.set(x, "groupingKey", value.asInstanceOf[js.Any])
     
     inline def setGroups(value: js.Array[Group[T]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    inline def setGroupsVarargs(value: Group[T]*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Group[T]*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     inline def setRows(value: js.Array[T]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTotals(value: GroupTotals[T]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

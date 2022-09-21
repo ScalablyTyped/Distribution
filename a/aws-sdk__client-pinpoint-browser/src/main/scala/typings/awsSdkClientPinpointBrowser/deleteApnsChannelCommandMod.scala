@@ -16,7 +16,7 @@ object deleteApnsChannelCommandMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteApnsChannelCommand", "DeleteApnsChannelCommand")
   @js.native
-  class DeleteApnsChannelCommand protected ()
+  open class DeleteApnsChannelCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object deleteApnsChannelCommandMod {
     override val middlewareStack: MiddlewareStack[DeleteApnsChannelInput, DeleteApnsChannelOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: PinpointResolvedConfiguration
     ): Handler[DeleteApnsChannelInput, DeleteApnsChannelOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: PinpointResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DeleteApnsChannelInput, DeleteApnsChannelOutput] = js.native
   }
 }

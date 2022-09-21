@@ -84,7 +84,7 @@ object CategoryId {
     
     inline def setCategoryIdUndefined: Self = StObject.set(x, "categoryId", js.undefined)
     
-    inline def setCategoryIdVarargs(value: String*): Self = StObject.set(x, "categoryId", js.Array(value :_*))
+    inline def setCategoryIdVarargs(value: String*): Self = StObject.set(x, "categoryId", js.Array(value*))
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

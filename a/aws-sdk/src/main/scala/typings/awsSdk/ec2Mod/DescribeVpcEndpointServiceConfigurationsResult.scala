@@ -33,6 +33,6 @@ object DescribeVpcEndpointServiceConfigurationsResult {
     
     inline def setServiceConfigurationsUndefined: Self = StObject.set(x, "ServiceConfigurations", js.undefined)
     
-    inline def setServiceConfigurationsVarargs(value: ServiceConfiguration*): Self = StObject.set(x, "ServiceConfigurations", js.Array(value :_*))
+    inline def setServiceConfigurationsVarargs(value: ServiceConfiguration*): Self = StObject.set(x, "ServiceConfigurations", js.Array(value*))
   }
 }

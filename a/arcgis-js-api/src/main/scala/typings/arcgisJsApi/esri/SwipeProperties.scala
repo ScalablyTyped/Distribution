@@ -13,12 +13,16 @@ trait SwipeProperties
   /**
     * The direction the Swipe widget moves across the view.
     *
+    * @default "horizontal"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#direction)
     */
   var direction: js.UndefOr[horizontal | vertical] = js.undefined
   
   /**
     * When `true`, sets the widget to a disabled state so the user cannot interact with it.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#disabled)
     */
@@ -47,6 +51,8 @@ trait SwipeProperties
   
   /**
     * The position of the Swipe widget.
+    *
+    * @default 25
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe.html#position)
     */
@@ -109,7 +115,7 @@ object SwipeProperties {
     
     inline def setLeadingLayersUndefined: Self = StObject.set(x, "leadingLayers", js.undefined)
     
-    inline def setLeadingLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "leadingLayers", js.Array(value :_*))
+    inline def setLeadingLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "leadingLayers", js.Array(value*))
     
     inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
@@ -119,7 +125,7 @@ object SwipeProperties {
     
     inline def setTrailingLayersUndefined: Self = StObject.set(x, "trailingLayers", js.undefined)
     
-    inline def setTrailingLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "trailingLayers", js.Array(value :_*))
+    inline def setTrailingLayersVarargs(value: LayerProperties*): Self = StObject.set(x, "trailingLayers", js.Array(value*))
     
     inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

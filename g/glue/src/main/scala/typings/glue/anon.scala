@@ -9,7 +9,7 @@ object anon {
   
   trait Options extends StObject {
     
-    var options: js.UndefOr[js.Any] = js.undefined
+    var options: js.UndefOr[Any] = js.undefined
     
     var register: String
   }
@@ -22,7 +22,7 @@ object anon {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
@@ -45,7 +45,7 @@ object anon {
       
       inline def setPlugins(value: js.Array[Plugin | String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      inline def setPluginsVarargs(value: (Plugin | String)*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: (Plugin | String)*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataSource extends StObject {
   
   /**
-    * The path to the training data stored in an Amazon Simple Storage Service (Amazon S3) bucket along with the credentials to access the data.
+    * The path to the data stored in an Amazon Simple Storage Service (Amazon S3) bucket along with the credentials to access the data.
     */
   var S3Config: typings.awsSdk.forecastserviceMod.S3Config
 }

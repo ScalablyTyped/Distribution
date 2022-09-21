@@ -32,7 +32,7 @@ object parallelSystemMod {
     /**
       * @hidden
       */
-    /* private */ var _Reply_data: js.Any = js.native
+    /* private */ var _Reply_data: Any = js.native
     
     /**
       * @hidden
@@ -47,7 +47,7 @@ object parallelSystemMod {
     /**
       * @hidden
       */
-    /* private */ var _Send_piece_data: js.Any = js.native
+    /* private */ var _Send_piece_data: Any = js.native
     
     /**
       * Enforce performance index.
@@ -78,12 +78,12 @@ object parallelSystemMod {
     /**
       * @hidden
       */
-    /* private */ var enforced_ : js.Any = js.native
+    /* private */ var enforced_ : Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var exclude_ : js.Any = js.native
+    /* private */ var exclude_ : Any = js.native
     
     /**
       * Get performance index.
@@ -124,17 +124,17 @@ object parallelSystemMod {
     /**
       * @hidden
       */
-    /* private */ var history_list_ : js.Any = js.native
+    /* private */ var history_list_ : Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var performance: js.Any = js.native
+    /* private */ var performance: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var progress_list_ : js.Any = js.native
+    /* private */ var progress_list_ : Any = js.native
     
     /**
       * Set performance index.

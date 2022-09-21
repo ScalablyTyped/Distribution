@@ -29,7 +29,7 @@ object DescribeCommunicationsResponse {
     
     inline def setCommunicationsUndefined: Self = StObject.set(x, "communications", js.undefined)
     
-    inline def setCommunicationsVarargs(value: Communication*): Self = StObject.set(x, "communications", js.Array(value :_*))
+    inline def setCommunicationsVarargs(value: Communication*): Self = StObject.set(x, "communications", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

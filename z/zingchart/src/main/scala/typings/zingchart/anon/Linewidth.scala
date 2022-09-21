@@ -7,42 +7,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Linewidth extends StObject {
   
   /**
-    * Sets the transparency level of the object. Values must range between 0.0 and 1.0, with 0.0 being completely transparent and 1.0 be
-    * ing completely opaque. Note that values require the leading 0 before the decimal point. 0.3 | 0.4 | 0.9 | ...
+    * Sets the transparency of the scale-x / scale-y guide. See the red lines. 0.3 | 0.9 | ...
     */
   var alpha: js.UndefOr[Double] = js.undefined
   
   /**
-    * Sets the background color of the object. Colors can be entered by name (e.g., "purple", "blue"), hexadecimal notation (e.g., "#666
-    * 699", #33ccff"), or RGB notation (e.g., "rgb(255,0,0)", "rgb(0,0,255)"). "none" | "transparent" | "purple" | "#33ccff" | "rgb(100,
-    *  15, 15)" | ...
-    */
-  var `background-color`: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Sets the border color of the object. "none" | "transparent" | "purple" | "#33ccff" | "rgb(100, 15, 15)" | ...
-    */
-  var `border-color`: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Sets the border width of the object. 1 | 3 | | "6px" | ...
-    */
-  var `border-width`: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * Sets the line color of the object. "none" | "transparent" | "purple" | "#33ccff" | "rgb(100, 15, 15)" | ...
+    * Sets the line color of the scale-x / scale-y guide. See the red lines. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow
+    * " | "rgb(100, 15, 15)" | ...
     */
   var `line-color`: js.UndefOr[String] = js.undefined
   
   /**
-    * Sets the line style of the object. "solid" | "dotted" | "dashed" | "dashdot"
+    * Sets the style applied to lines and borders of the scale-x / scale-y guide. See the red lines. "solid" | "dotted" | "dashed" | "da
+    * shdot"
     */
   var `line-style`: js.UndefOr[String] = js.undefined
   
   /**
-    * Sets the line width of the object. 1 | 3 | | "6px" | ...
+    * Sets the line width of the object, applicable on non-closed shapes. For the scale-x / scale-y guide. See the red lines. 4 | "6px"
+    * | ...
     */
-  var `line-width`: js.UndefOr[Double] = js.undefined
+  var `line-width`: js.UndefOr[Any] = js.undefined
+  
+  var lineColor: js.UndefOr[String] = js.undefined
+  
+  var lineStyle: js.UndefOr[String] = js.undefined
+  
+  var lineWidth: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * Sets the visibility of the object. Allows you to turn off the object without removing lines of JSON. true | false | 1 | 0
+    */
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Linewidth {
   
@@ -57,18 +53,6 @@ object Linewidth {
     
     inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    inline def `setBackground-color`(value: String): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
-    
-    inline def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
-    
-    inline def `setBorder-color`(value: String): Self = StObject.set(x, "border-color", value.asInstanceOf[js.Any])
-    
-    inline def `setBorder-colorUndefined`: Self = StObject.set(x, "border-color", js.undefined)
-    
-    inline def `setBorder-width`(value: Double): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
-    
-    inline def `setBorder-widthUndefined`: Self = StObject.set(x, "border-width", js.undefined)
-    
     inline def `setLine-color`(value: String): Self = StObject.set(x, "line-color", value.asInstanceOf[js.Any])
     
     inline def `setLine-colorUndefined`: Self = StObject.set(x, "line-color", js.undefined)
@@ -77,8 +61,24 @@ object Linewidth {
     
     inline def `setLine-styleUndefined`: Self = StObject.set(x, "line-style", js.undefined)
     
-    inline def `setLine-width`(value: Double): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
+    inline def `setLine-width`(value: Any): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
     
     inline def `setLine-widthUndefined`: Self = StObject.set(x, "line-width", js.undefined)
+    
+    inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    
+    inline def setLineStyle(value: String): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    
+    inline def setLineWidth(value: Any): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -33,6 +33,6 @@ object OrderableDBInstanceOptionsMessage {
     
     inline def setOrderableDBInstanceOptionsUndefined: Self = StObject.set(x, "OrderableDBInstanceOptions", js.undefined)
     
-    inline def setOrderableDBInstanceOptionsVarargs(value: OrderableDBInstanceOption*): Self = StObject.set(x, "OrderableDBInstanceOptions", js.Array(value :_*))
+    inline def setOrderableDBInstanceOptionsVarargs(value: OrderableDBInstanceOption*): Self = StObject.set(x, "OrderableDBInstanceOptions", js.Array(value*))
   }
 }

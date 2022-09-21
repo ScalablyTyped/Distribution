@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "Sprite")
 @js.native
-class Sprite ()
-  extends typings.three.spriteMod.Sprite {
-  def this(material: typings.three.materialsMod.SpriteMaterial) = this()
+open class Sprite ()
+  extends typings.three.threeMod.Sprite {
+  def this(material: typings.three.materialsMaterialsMod.SpriteMaterial) = this()
 }

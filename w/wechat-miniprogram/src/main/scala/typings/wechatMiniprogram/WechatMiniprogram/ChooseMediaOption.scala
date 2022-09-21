@@ -28,7 +28,7 @@ trait ChooseMediaOption extends StObject {
   /** 接口调用失败的回调函数 */
   var fail: js.UndefOr[ChooseMediaFailCallback] = js.undefined
   
-  /** 拍摄视频最长拍摄时间，单位秒。时间范围为 3s 至 30s 之间 */
+  /** 拍摄视频最长拍摄时间，单位秒。时间范围为 3s 至 60s 之间。不限制相册。 */
   var maxDuration: js.UndefOr[Double] = js.undefined
   
   /** 文件类型
@@ -84,19 +84,19 @@ object ChooseMediaOption {
     
     inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
     
-    inline def setMediaTypeVarargs(value: (image | video)*): Self = StObject.set(x, "mediaType", js.Array(value :_*))
+    inline def setMediaTypeVarargs(value: (image | video)*): Self = StObject.set(x, "mediaType", js.Array(value*))
     
     inline def setSizeType(value: js.Array[String]): Self = StObject.set(x, "sizeType", value.asInstanceOf[js.Any])
     
     inline def setSizeTypeUndefined: Self = StObject.set(x, "sizeType", js.undefined)
     
-    inline def setSizeTypeVarargs(value: String*): Self = StObject.set(x, "sizeType", js.Array(value :_*))
+    inline def setSizeTypeVarargs(value: String*): Self = StObject.set(x, "sizeType", js.Array(value*))
     
     inline def setSourceType(value: js.Array[album | camera]): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
     inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
-    inline def setSourceTypeVarargs(value: (album | camera)*): Self = StObject.set(x, "sourceType", js.Array(value :_*))
+    inline def setSourceTypeVarargs(value: (album | camera)*): Self = StObject.set(x, "sourceType", js.Array(value*))
     
     inline def setSuccess(value: /* result */ ChooseMediaSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

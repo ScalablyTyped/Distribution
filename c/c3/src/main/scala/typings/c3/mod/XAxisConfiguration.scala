@@ -37,7 +37,7 @@ trait XAxisConfiguration
     */
   var localtime: js.UndefOr[Boolean] = js.undefined
   
-  var selection: js.UndefOr[js.Any] = js.undefined
+  var selection: js.UndefOr[Any] = js.undefined
   
   var tick: js.UndefOr[XTickConfiguration] = js.undefined
   
@@ -60,7 +60,7 @@ object XAxisConfiguration {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setExtent(value: js.Array[Double] | js.Function0[js.Array[Double]]): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
@@ -68,7 +68,7 @@ object XAxisConfiguration {
     
     inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
-    inline def setExtentVarargs(value: Double*): Self = StObject.set(x, "extent", js.Array(value :_*))
+    inline def setExtentVarargs(value: Double*): Self = StObject.set(x, "extent", js.Array(value*))
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object XAxisConfiguration {
     
     inline def setLocaltimeUndefined: Self = StObject.set(x, "localtime", js.undefined)
     
-    inline def setSelection(value: js.Any): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Any): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
     inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
     

@@ -10,10 +10,10 @@ Stateless Architecture
 | ------------------ | :-------------: |
 | Full name          | fxn |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 9342 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 961.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/fxn)

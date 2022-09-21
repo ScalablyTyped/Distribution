@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-pushable
 
-Typings are for version 1.4.0
+Typings are for version 3.1.0
 
 ## Library description:
 Pushable iterable
@@ -10,10 +10,10 @@ Pushable iterable
 | ------------------ | :-------------: |
 | Full name          | it-pushable |
 | Keywords           | push, iterable, iterator, pushable |
-| # releases         | 11 |
-| # dependents       | 23 |
-| # downloads        | 255102 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 103526.33333333333 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/alanshaw/it-pushable#readme)

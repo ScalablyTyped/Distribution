@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.visualization.ArrowFormat")
 @js.native
-class ArrowFormat ()
+open class ArrowFormat ()
   extends StObject
      with typings.googleVisualization.google.visualization.DefaultFormatter {
   def this(options: ArrowFormatOptions) = this()

@@ -6,7 +6,6 @@ import typings.chromeLauncher.chromeLauncherStrings.cygwin
 import typings.chromeLauncher.chromeLauncherStrings.darwin
 import typings.chromeLauncher.chromeLauncherStrings.freebsd
 import typings.chromeLauncher.chromeLauncherStrings.linux
-import typings.chromeLauncher.chromeLauncherStrings.netbsd
 import typings.chromeLauncher.chromeLauncherStrings.openbsd
 import typings.chromeLauncher.chromeLauncherStrings.sunos
 import typings.chromeLauncher.chromeLauncherStrings.win32
@@ -18,13 +17,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object utilsMod {
   
-  @JSImport("chrome-launcher/dist/utils", JSImport.Namespace)
+  @JSImport("chrome-launcher/dist/src/utils", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("chrome-launcher/dist/utils", "ChromeNotInstalledError")
+  @JSImport("chrome-launcher/dist/src/utils", "ChromeNotInstalledError")
   @js.native
-  class ChromeNotInstalledError () extends LauncherError {
+  open class ChromeNotInstalledError () extends LauncherError {
     def this(message: String) = this()
     def this(message: String, code: String) = this()
     def this(message: Unit, code: String) = this()
@@ -33,9 +32,9 @@ object utilsMod {
     var code_ChromeNotInstalledError: LaunchErrorCodes = js.native
   }
   
-  @JSImport("chrome-launcher/dist/utils", "ChromePathNotSetError")
+  @JSImport("chrome-launcher/dist/src/utils", "ChromePathNotSetError")
   @js.native
-  class ChromePathNotSetError () extends LauncherError {
+  open class ChromePathNotSetError () extends LauncherError {
     def this(message: String) = this()
     def this(message: String, code: String) = this()
     def this(message: Unit, code: String) = this()
@@ -44,9 +43,9 @@ object utilsMod {
     var code_ChromePathNotSetError: LaunchErrorCodes = js.native
   }
   
-  @JSImport("chrome-launcher/dist/utils", "InvalidUserDataDirectoryError")
+  @JSImport("chrome-launcher/dist/src/utils", "InvalidUserDataDirectoryError")
   @js.native
-  class InvalidUserDataDirectoryError () extends LauncherError {
+  open class InvalidUserDataDirectoryError () extends LauncherError {
     def this(message: String) = this()
     def this(message: String, code: String) = this()
     def this(message: Unit, code: String) = this()
@@ -55,9 +54,9 @@ object utilsMod {
     var code_InvalidUserDataDirectoryError: LaunchErrorCodes = js.native
   }
   
-  @JSImport("chrome-launcher/dist/utils", "LauncherError")
+  @JSImport("chrome-launcher/dist/src/utils", "LauncherError")
   @js.native
-  class LauncherError ()
+  open class LauncherError ()
     extends StObject
        with Error {
     def this(message: String) = this()
@@ -66,16 +65,18 @@ object utilsMod {
     
     var code: js.UndefOr[String] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
-  @JSImport("chrome-launcher/dist/utils", "UnsupportedPlatformError")
+  @JSImport("chrome-launcher/dist/src/utils", "UnsupportedPlatformError")
   @js.native
-  class UnsupportedPlatformError () extends LauncherError {
+  open class UnsupportedPlatformError () extends LauncherError {
     def this(message: String) = this()
     def this(message: String, code: String) = this()
     def this(message: Unit, code: String) = this()
@@ -87,11 +88,11 @@ object utilsMod {
   inline def defaults[T](`val`: T, `def`: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(`val`.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[T]
   inline def defaults[T](`val`: Unit, `def`: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(`val`.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def delay(time: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(time.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def delay(time: Double): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(time.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
   inline def getLocalAppDataPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalAppDataPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getPlatform(): aix | android | darwin | freebsd | linux | openbsd | sunos | win32 | cygwin | netbsd | wsl = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatform")().asInstanceOf[aix | android | darwin | freebsd | linux | openbsd | sunos | win32 | cygwin | netbsd | wsl]
+  inline def getPlatform(): wsl | aix | android | darwin | freebsd | linux | openbsd | sunos | win32 | cygwin = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatform")().asInstanceOf[wsl | aix | android | darwin | freebsd | linux | openbsd | sunos | win32 | cygwin]
   
   inline def makeTmpDir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTmpDir")().asInstanceOf[String]
   

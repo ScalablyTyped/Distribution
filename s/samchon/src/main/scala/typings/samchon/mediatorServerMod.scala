@@ -15,7 +15,7 @@ object mediatorServerMod {
   
   @JSImport("samchon/templates/parallel/derived/MediatorServer", "MediatorDedicatedWorkerServer")
   @js.native
-  class MediatorDedicatedWorkerServer protected () extends MediatorServer {
+  open class MediatorDedicatedWorkerServer protected () extends MediatorServer {
     /**
       * Initializer Constructor.
       *
@@ -37,7 +37,7 @@ object mediatorServerMod {
   - typings.samchon.slaveSystemMod.SlaveSystem because Already inherited
   - typings.samchon.slaveServerMod.ISlaveServer because var conflicts: _Complete_process, communicator_. Inlined  */ @JSImport("samchon/templates/parallel/derived/MediatorServer", "MediatorServer")
   @js.native
-  class MediatorServer protected ()
+  open class MediatorServer protected ()
     extends MediatorSystem
        with IServer {
     /**
@@ -110,17 +110,17 @@ object mediatorServerMod {
     /**
       * @hidden
       */
-    /* private */ var port: js.Any = js.native
+    /* private */ var port: Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var server_base_ : js.Any = js.native
+    /* private */ var server_base_ : Any = js.native
   }
   
   @JSImport("samchon/templates/parallel/derived/MediatorServer", "MediatorSharedWorkerServer")
   @js.native
-  class MediatorSharedWorkerServer protected () extends MediatorServer {
+  open class MediatorSharedWorkerServer protected () extends MediatorServer {
     /**
       * Initializer Constructor.
       *
@@ -139,7 +139,7 @@ object mediatorServerMod {
   
   @JSImport("samchon/templates/parallel/derived/MediatorServer", "MediatorWebServer")
   @js.native
-  class MediatorWebServer protected () extends MediatorServer {
+  open class MediatorWebServer protected () extends MediatorServer {
     /**
       * Initializer Constructor.
       *

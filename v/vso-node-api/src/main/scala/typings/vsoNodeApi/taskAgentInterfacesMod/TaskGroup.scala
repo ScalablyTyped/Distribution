@@ -1,7 +1,6 @@
 package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,11 +14,11 @@ trait TaskGroup
   
   var createdBy: IdentityRef
   
-  var createdOn: Date
+  var createdOn: js.Date
   
   var modifiedBy: IdentityRef
   
-  var modifiedOn: Date
+  var modifiedOn: js.Date
   
   var owner: String
   
@@ -38,13 +37,13 @@ object TaskGroup {
     contributionIdentifier: String,
     contributionVersion: String,
     createdBy: IdentityRef,
-    createdOn: Date,
+    createdOn: js.Date,
     dataSourceBindings: js.Array[DataSourceBinding],
     definitionType: String,
-    demands: js.Array[js.Any],
+    demands: js.Array[Any],
     description: String,
     disabled: Boolean,
-    execution: StringDictionary[js.Any],
+    execution: StringDictionary[Any],
     friendlyName: String,
     groups: js.Array[TaskGroupDefinition],
     helpMarkDown: String,
@@ -55,7 +54,7 @@ object TaskGroup {
     instanceNameFormat: String,
     minimumAgentVersion: String,
     modifiedBy: IdentityRef,
-    modifiedOn: Date,
+    modifiedOn: js.Date,
     name: String,
     owner: String,
     packageLocation: String,
@@ -81,11 +80,11 @@ object TaskGroup {
     
     inline def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setModifiedBy(value: IdentityRef): Self = StObject.set(x, "modifiedBy", value.asInstanceOf[js.Any])
     
-    inline def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
+    inline def setModifiedOn(value: js.Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
     
     inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
@@ -93,6 +92,6 @@ object TaskGroup {
     
     inline def setTasks(value: js.Array[TaskGroupStep]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    inline def setTasksVarargs(value: TaskGroupStep*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: TaskGroupStep*): Self = StObject.set(x, "tasks", js.Array(value*))
   }
 }

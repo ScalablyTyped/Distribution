@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A group snippet.
-  */
 trait SchemaGroupSnippet extends StObject {
   
   /**
-    * The date and time that the group was created. The value is specified in
-    * ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
+    * The date and time that the group was created. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var publishedAt: js.UndefOr[String] = js.undefined
+  var publishedAt: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The group name. The value must be a non-empty string.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGroupSnippet {
   
@@ -31,9 +27,13 @@ object SchemaGroupSnippet {
     
     inline def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
     
+    inline def setPublishedAtNull: Self = StObject.set(x, "publishedAt", null)
+    
     inline def setPublishedAtUndefined: Self = StObject.set(x, "publishedAt", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

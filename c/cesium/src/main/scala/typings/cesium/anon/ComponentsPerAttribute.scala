@@ -6,18 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ComponentsPerAttribute extends StObject {
   
-  var componentDatatype: js.UndefOr[typings.cesium.mod.ComponentDatatype] = js.undefined
+  var componentDatatype: typings.cesium.mod.ComponentDatatype
   
-  var componentsPerAttribute: js.UndefOr[Double] = js.undefined
+  var componentsPerAttribute: Double
   
   var normalize: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[js.Array[Double]] = js.undefined
+  var value: js.Array[Double]
 }
 object ComponentsPerAttribute {
   
-  inline def apply(): ComponentsPerAttribute = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    componentDatatype: typings.cesium.mod.ComponentDatatype,
+    componentsPerAttribute: Double,
+    value: js.Array[Double]
+  ): ComponentsPerAttribute = {
+    val __obj = js.Dynamic.literal(componentDatatype = componentDatatype.asInstanceOf[js.Any], componentsPerAttribute = componentsPerAttribute.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentsPerAttribute]
   }
   
@@ -25,11 +29,7 @@ object ComponentsPerAttribute {
     
     inline def setComponentDatatype(value: typings.cesium.mod.ComponentDatatype): Self = StObject.set(x, "componentDatatype", value.asInstanceOf[js.Any])
     
-    inline def setComponentDatatypeUndefined: Self = StObject.set(x, "componentDatatype", js.undefined)
-    
     inline def setComponentsPerAttribute(value: Double): Self = StObject.set(x, "componentsPerAttribute", value.asInstanceOf[js.Any])
-    
-    inline def setComponentsPerAttributeUndefined: Self = StObject.set(x, "componentsPerAttribute", js.undefined)
     
     inline def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     
@@ -37,8 +37,6 @@ object ComponentsPerAttribute {
     
     inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    
-    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

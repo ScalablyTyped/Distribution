@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("collectionsjs", JSImport.Default)
   @js.native
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with Collection[T] {
     def this(items: js.Array[T]) = this()
@@ -20,7 +20,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def `macro`(name: String, callback: js.Function2[/* coll */ Collection[js.Any], /* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("macro")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def `macro`(name: String, callback: js.Function2[/* coll */ Collection[Any], /* repeated */ Any, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("macro")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @js.native
@@ -102,7 +102,7 @@ object mod {
     
     def unique(): Collection[T] = js.native
     def unique(callback: String): Collection[T] = js.native
-    def unique(callback: js.Function1[/* item */ T, js.Any]): Collection[T] = js.native
+    def unique(callback: js.Function1[/* item */ T, Any]): Collection[T] = js.native
     
     def values(): Collection[T] = js.native
     

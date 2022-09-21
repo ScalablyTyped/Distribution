@@ -27,7 +27,7 @@ object select {
     
     def show(): Unit
     
-    def update(matches: js.Any): Unit
+    def update(matches: Any): Unit
   }
   object ISelect {
     
@@ -36,7 +36,7 @@ object select {
       hide: () => Unit,
       select: Double => Unit,
       show: () => Unit,
-      update: js.Any => Unit
+      update: Any => Unit
     ): ISelect = {
       val __obj = js.Dynamic.literal(active = js.Any.fromFunction1(active), hide = js.Any.fromFunction0(hide), select = js.Any.fromFunction1(select), show = js.Any.fromFunction0(show), update = js.Any.fromFunction1(update))
       __obj.asInstanceOf[ISelect]
@@ -52,7 +52,7 @@ object select {
       
       inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      inline def setUpdate(value: js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
@@ -220,7 +220,7 @@ object select {
   
   type ISelectService = js.Function3[
     /* element */ IAugmentedJQuery, 
-    /* controller */ js.Any, 
+    /* controller */ Any, 
     /* config */ ISelectOptions, 
     ISelect
   ]

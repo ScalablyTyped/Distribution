@@ -39,7 +39,7 @@ object Dependency {
     
     inline def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
     
-    inline def setDependsOnVarargs(value: BasicDependency*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
+    inline def setDependsOnVarargs(value: BasicDependency*): Self = StObject.set(x, "dependsOn", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

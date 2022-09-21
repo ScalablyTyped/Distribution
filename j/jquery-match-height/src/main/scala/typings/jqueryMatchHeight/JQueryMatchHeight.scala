@@ -16,17 +16,17 @@ trait JQueryMatchHeight extends StObject {
   def apply(): JQuery = js.native
   def apply(options: Options): JQuery = js.native
   
-  def _afterUpdate(event: JQueryEventObject, groups: js.Array[js.Any]): js.Any = js.native
+  def _afterUpdate(event: JQueryEventObject, groups: js.Array[Any]): Any = js.native
   
-  def _apply(elements: js.Any, options: js.Any): Unit = js.native
+  def _apply(elements: Any, options: Any): Unit = js.native
   
-  def _beforeUpdate(event: JQueryEventObject, groups: js.Array[js.Any]): js.Any = js.native
+  def _beforeUpdate(event: JQueryEventObject, groups: js.Array[Any]): Any = js.native
   
-  var _groups: js.Array[js.Any] = js.native
+  var _groups: js.Array[Any] = js.native
   
   var _maintainScroll: Boolean = js.native
   
-  def _rows($item: JQuery): js.Array[js.Any] = js.native
+  def _rows($item: JQuery): js.Array[Any] = js.native
   
   var _throttle: Double = js.native
   

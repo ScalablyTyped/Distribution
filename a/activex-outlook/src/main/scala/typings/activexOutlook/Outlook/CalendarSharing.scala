@@ -28,7 +28,7 @@ trait CalendarSharing extends StObject {
   /* private */ @JSName("Outlook.CalendarSharing_typekey")
   var OutlookDotCalendarSharing_typekey: CalendarSharing
   
-  val Parent: js.Any
+  val Parent: Any
   
   var RestrictToWorkingHours: Boolean
   
@@ -51,7 +51,7 @@ object CalendarSharing {
     IncludePrivateDetails: Boolean,
     IncludeWholeCalendar: Boolean,
     OutlookDotCalendarSharing_typekey: CalendarSharing,
-    Parent: js.Any,
+    Parent: Any,
     RestrictToWorkingHours: Boolean,
     SaveAsICal: String => Unit,
     Session: NameSpace,
@@ -84,7 +84,7 @@ object CalendarSharing {
     
     inline def setOutlookDotCalendarSharing_typekey(value: CalendarSharing): Self = StObject.set(x, "Outlook.CalendarSharing_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRestrictToWorkingHours(value: Boolean): Self = StObject.set(x, "RestrictToWorkingHours", value.asInstanceOf[js.Any])
     

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpenTunnelResponse extends StObject {
   
   /**
-    * The access token the destination local proxy uses to connect to AWS IoT Secure Tunneling.
+    * The access token the destination local proxy uses to connect to IoT Secure Tunneling.
     */
   var destinationAccessToken: js.UndefOr[ClientAccessToken] = js.undefined
   
   /**
-    * The access token the source local proxy uses to connect to AWS IoT Secure Tunneling.
+    * The access token the source local proxy uses to connect to IoT Secure Tunneling.
     */
   var sourceAccessToken: js.UndefOr[ClientAccessToken] = js.undefined
   
   /**
-    * The Amazon Resource Name for the tunnel. The tunnel ARN format is arn:aws:tunnel:&lt;region&gt;:&lt;account-id&gt;:tunnel/&lt;tunnel-id&gt; 
+    * The Amazon Resource Name for the tunnel.
     */
   var tunnelArn: js.UndefOr[TunnelArn] = js.undefined
   

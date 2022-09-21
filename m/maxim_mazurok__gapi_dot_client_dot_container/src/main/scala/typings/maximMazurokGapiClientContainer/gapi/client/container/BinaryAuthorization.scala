@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BinaryAuthorization extends StObject {
   
-  /** Enable Binary Authorization for this cluster. If enabled, all container images will be validated by Binary Authorization. */
+  /**
+    * This field is deprecated. Leave this unset and instead configure BinaryAuthorization using evaluation_mode. If evaluation_mode is set to anything other than
+    * EVALUATION_MODE_UNSPECIFIED, this field is ignored.
+    */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
+  /** Mode of operation for binauthz policy evaluation. Currently the only options are equivalent to enable/disable. If unspecified, defaults to DISABLED. */
+  var evaluationMode: js.UndefOr[String] = js.undefined
 }
 object BinaryAuthorization {
   
@@ -21,5 +27,9 @@ object BinaryAuthorization {
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setEvaluationMode(value: String): Self = StObject.set(x, "evaluationMode", value.asInstanceOf[js.Any])
+    
+    inline def setEvaluationModeUndefined: Self = StObject.set(x, "evaluationMode", js.undefined)
   }
 }

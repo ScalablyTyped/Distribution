@@ -59,7 +59,7 @@ object UnoControlContainer {
     getView: () => XView,
     isDesignMode: () => Boolean,
     isTransparent: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeContainerListener: XContainerListener => Unit,
     removeControl: XControl => Unit,

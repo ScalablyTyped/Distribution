@@ -2,7 +2,6 @@ package typings.hapi.mod
 
 import typings.hapi.mod.Lifecycle.Method
 import typings.hapi.mod.Lifecycle.ReturnValue
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,10 +49,10 @@ object ServerExtEventsRequestObject {
     inline def setMethod(value: Method | js.Array[Method]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     inline def setMethodFunction3(
-      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
+      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue
     ): Self = StObject.set(x, "method", js.Any.fromFunction3(value))
     
-    inline def setMethodVarargs(value: Method*): Self = StObject.set(x, "method", js.Array(value :_*))
+    inline def setMethodVarargs(value: Method*): Self = StObject.set(x, "method", js.Array(value*))
     
     inline def setOptions(value: ServerExtOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

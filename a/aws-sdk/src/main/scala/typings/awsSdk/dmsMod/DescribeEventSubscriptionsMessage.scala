@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeEventSubscriptionsMessage extends StObject {
   
   /**
-    * Filters applied to event subscriptions.
+    * Filters applied to event subscriptions. Valid filter names: event-subscription-arn | event-subscription-id 
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
@@ -22,7 +22,7 @@ trait DescribeEventSubscriptionsMessage extends StObject {
   var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The name of the AWS DMS event subscription to be described.
+    * The name of the DMS event subscription to be described.
     */
   var SubscriptionName: js.UndefOr[String] = js.undefined
 }
@@ -39,7 +39,7 @@ object DescribeEventSubscriptionsMessage {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

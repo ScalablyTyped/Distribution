@@ -1,7 +1,7 @@
 
 # Scala.js typings for regexpp
 
-Typings are for version 3.1.0
+Typings are for version 3.2.0
 
 ## Library description:
 Regular expression parser for ECMAScript.
@@ -10,10 +10,10 @@ Regular expression parser for ECMAScript.
 | ------------------ | :-------------: |
 | Full name          | regexpp |
 | Keywords           | regexp, regular, expression, parser, validator, ast, abstract, syntax, tree, ecmascript, es2015, es2016, es2017, es2018, es2019, es2020, annexB |
-| # releases         | 4 |
-| # dependents       | 58 |
-| # downloads        | 538029658 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 9.588778166666667E7 |
+| # stars            | 123.0 |
 
 ## Links
 - [Homepage](https://github.com/mysticatea/regexpp#readme)

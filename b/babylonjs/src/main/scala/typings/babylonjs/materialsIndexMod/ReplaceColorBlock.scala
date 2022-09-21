@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "ReplaceColorBlock")
 @js.native
-class ReplaceColorBlock protected ()
+open class ReplaceColorBlock protected ()
   extends typings.babylonjs.nodeIndexMod.ReplaceColorBlock {
   /**
     * Creates a new ReplaceColorBlock

@@ -127,7 +127,7 @@ trait ContentQueries[T] extends StObject {
   var inputs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | [string, string] | undefined}
-    */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[js.Any]
+    */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -143,7 +143,7 @@ trait ContentQueries[T] extends StObject {
   var outputs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P_1 in keyof T ]:? string | undefined}
-    */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[js.Any]
+    */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[Any]
   ] = js.undefined
   
   /** The selectors that will be used to match nodes to this directive. */
@@ -178,19 +178,19 @@ object ContentQueries {
     
     inline def setExportAsUndefined: Self = StObject.set(x, "exportAs", js.undefined)
     
-    inline def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value :_*))
+    inline def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value*))
     
     inline def setFeatures(value: js.Array[DirectiveDefFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: DirectiveDefFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: DirectiveDefFeature*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setHostAttrs(value: TAttributes): Self = StObject.set(x, "hostAttrs", value.asInstanceOf[js.Any])
     
     inline def setHostAttrsUndefined: Self = StObject.set(x, "hostAttrs", js.undefined)
     
-    inline def setHostAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "hostAttrs", js.Array(value :_*))
+    inline def setHostAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "hostAttrs", js.Array(value*))
     
     inline def setHostBindings(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "hostBindings", js.Any.fromFunction2(value))
     
@@ -203,7 +203,7 @@ object ContentQueries {
     inline def setInputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]:? string | [string, string] | undefined}
-      */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[js.Any]
+      */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[Any]
     ): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
@@ -211,7 +211,7 @@ object ContentQueries {
     inline def setOutputs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P_1 in keyof T ]:? string | undefined}
-      */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[js.Any]
+      */ typings.angularCore.angularCoreStrings.ContentQueries & TopLevel[Any]
     ): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
     inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
@@ -220,7 +220,7 @@ object ContentQueries {
     
     inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
-    inline def setSelectorsVarargs(value: CssSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: CssSelector*): Self = StObject.set(x, "selectors", js.Array(value*))
     
     inline def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

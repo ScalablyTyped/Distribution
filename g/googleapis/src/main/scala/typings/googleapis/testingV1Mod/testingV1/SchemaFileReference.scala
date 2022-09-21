@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A reference to a file, used for user inputs.
-  */
 trait SchemaFileReference extends StObject {
   
   /**
-    * A path to a file in Google Cloud Storage. Example:
-    * gs://build-app-1414623860166/app-debug-unaligned.apk
+    * A path to a file in Google Cloud Storage. Example: gs://build-app-1414623860166/app%40debug-unaligned.apk These paths are expected to be url encoded (percent encoding)
     */
-  var gcsPath: js.UndefOr[String] = js.undefined
+  var gcsPath: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFileReference {
   
@@ -25,6 +21,8 @@ object SchemaFileReference {
   extension [Self <: SchemaFileReference](x: Self) {
     
     inline def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
+    
+    inline def setGcsPathNull: Self = StObject.set(x, "gcsPath", null)
     
     inline def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
   }

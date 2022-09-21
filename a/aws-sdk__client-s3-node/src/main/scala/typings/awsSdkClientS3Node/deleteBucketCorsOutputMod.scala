@@ -8,5 +8,5 @@ object deleteBucketCorsOutputMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/DeleteBucketCorsOutput", "DeleteBucketCorsOutput")
   @js.native
-  val DeleteBucketCorsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteBucketCorsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

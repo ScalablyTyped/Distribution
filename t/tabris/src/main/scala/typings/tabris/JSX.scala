@@ -3,7 +3,7 @@ package typings.tabris
 import typings.tabris.anon.Href
 import typings.tabris.anon.InstantiableAny
 import typings.tabris.anon.TextColor
-import typings.tabris.anon.`2`
+import typings.tabris.anon.`15`
 import typings.tabris.mod.JsxProcessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,28 +11,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object JSX {
   
-  type Element = js.Any
+  type Element = Any
   
   trait ElementAttributesProperty extends StObject {
     
-    var jsxAttributes: js.Any
+    var jsxAttributes: Any
   }
   object ElementAttributesProperty {
     
-    inline def apply(jsxAttributes: js.Any): ElementAttributesProperty = {
+    inline def apply(jsxAttributes: Any): ElementAttributesProperty = {
       val __obj = js.Dynamic.literal(jsxAttributes = jsxAttributes.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElementAttributesProperty]
     }
     
     extension [Self <: ElementAttributesProperty](x: Self) {
       
-      inline def setJsxAttributes(value: js.Any): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
+      inline def setJsxAttributes(value: Any): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     }
   }
   
   trait ElementChildrenAttribute extends StObject {
     
-    var children: js.UndefOr[js.Any] = js.undefined
+    var children: js.UndefOr[Any] = js.undefined
   }
   object ElementChildrenAttribute {
     
@@ -43,7 +43,7 @@ object JSX {
     
     extension [Self <: ElementChildrenAttribute](x: Self) {
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
@@ -63,7 +63,7 @@ object JSX {
     
     var big: TextColor
     
-    var br: `2`
+    var br: `15`
     
     var del: TextColor
     
@@ -83,7 +83,7 @@ object JSX {
       a: Href,
       b: TextColor,
       big: TextColor,
-      br: `2`,
+      br: `15`,
       del: TextColor,
       i: TextColor,
       ins: TextColor,
@@ -103,7 +103,7 @@ object JSX {
       
       inline def setBig(value: TextColor): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
       
-      inline def setBr(value: `2`): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+      inline def setBr(value: `15`): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
       
       inline def setDel(value: TextColor): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
       

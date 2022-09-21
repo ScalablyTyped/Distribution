@@ -49,14 +49,14 @@ trait IShellFrame extends StObject {
   
   val ShellUI: IShellUI = js.native
   
-  def ShowDashboard(dashboardID: String, data: js.Any): Unit = js.native
+  def ShowDashboard(dashboardID: String, data: Any): Unit = js.native
   
   def ShowDefaultContent(): Unit = js.native
   
   def ShowMessage(message: String): Double = js.native
   def ShowMessage(message: IMessage): Double = js.native
   
-  def ShowPopupDashboard(dashboardID: String, waitUntilClosed: Boolean, data: js.Any): Unit = js.native
+  def ShowPopupDashboard(dashboardID: String, waitUntilClosed: Boolean, data: Any): Unit = js.native
   
   def ShowPopupSSRSReport(reportWindowTitle: String, reportURL: String): Unit = js.native
   

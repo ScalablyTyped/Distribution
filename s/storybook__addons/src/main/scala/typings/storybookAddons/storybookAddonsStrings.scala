@@ -1,7 +1,6 @@
 package typings.storybookAddons
 
 import typings.storybookAddons.typesMod.StorySortMethod
-import typings.storybookAddons.typesMod.ViewMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,12 +36,6 @@ object storybookAddonsStrings {
   inline def configure: configure = "configure".asInstanceOf[configure]
   
   @js.native
-  sealed trait docs
-    extends StObject
-       with ViewMode
-  inline def docs: docs = "docs".asInstanceOf[docs]
-  
-  @js.native
   sealed trait fullscreen extends StObject
   inline def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
   
@@ -53,10 +46,4 @@ object storybookAddonsStrings {
   @js.native
   sealed trait padded extends StObject
   inline def padded: padded = "padded".asInstanceOf[padded]
-  
-  @js.native
-  sealed trait story
-    extends StObject
-       with ViewMode
-  inline def story: story = "story".asInstanceOf[story]
 }

@@ -1,25 +1,28 @@
 package typings.youtube.YT
 
-import typings.youtube.youtubeNumbers.`0`
-import typings.youtube.youtubeNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.youtube.youtubeNumbers.`0`
-  - typings.youtube.youtubeNumbers.`1`
-*/
-trait PlaysInline extends StObject
-object PlaysInline {
+@js.native
+sealed trait PlaysInline extends StObject
+@JSGlobal("YT.PlaysInline")
+@js.native
+object PlaysInline extends StObject {
   
   /**
     * Playback in fullscreen.
     */
-  inline def Fullscreen: `0` = 0.asInstanceOf[`0`]
+  @js.native
+  sealed trait Fullscreen
+    extends StObject
+       with PlaysInline
   
   /**
     * Playback inline
     */
-  inline def Inline: `1` = 1.asInstanceOf[`1`]
+  @js.native
+  sealed trait Inline
+    extends StObject
+       with PlaysInline
 }

@@ -78,7 +78,7 @@ object mod {
       * If it's set, that storage will contain all the ttl meta data.
       * A use case for this would be to avoid mixing data and meta data in the same keyspace, since if it's not set, all data will be sharing the same keyspace.
       */
-    var sub: js.UndefOr[LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]] = js.undefined
+    var sub: js.UndefOr[LevelUp[AbstractLevelDOWN[Any, Any], AbstractIterator[Any, Any]]] = js.undefined
   }
   object LevelTTLOptions {
     
@@ -113,7 +113,7 @@ object mod {
       
       inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      inline def setSub(value: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      inline def setSub(value: LevelUp[AbstractLevelDOWN[Any, Any], AbstractIterator[Any, Any]]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
       
       inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
     }

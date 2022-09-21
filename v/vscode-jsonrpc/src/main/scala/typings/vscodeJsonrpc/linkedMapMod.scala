@@ -1,5 +1,6 @@
 package typings.vscodeJsonrpc
 
+import typings.std.Map
 import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`0`
 import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`1`
 import typings.vscodeJsonrpc.vscodeJsonrpcNumbers.`2`
@@ -9,58 +10,76 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object linkedMapMod {
   
-  @JSImport("vscode-jsonrpc/lib/linkedMap", "LinkedMap")
+  @JSImport("vscode-jsonrpc/lib/common/linkedMap", "LRUCache")
   @js.native
-  class LinkedMap[K, V] () extends StObject {
+  open class LRUCache[K, V] protected () extends LinkedMap[K, V] {
+    def this(limit: Double) = this()
+    def this(limit: Double, ratio: Double) = this()
     
-    /* private */ var _head: js.Any = js.native
+    /* private */ var _limit: Any = js.native
     
-    /* private */ var _map: js.Any = js.native
+    /* private */ var _ratio: Any = js.native
     
-    /* private */ var _size: js.Any = js.native
+    /* private */ var checkTrim: Any = js.native
     
-    /* private */ var _tail: js.Any = js.native
+    def limit: Double = js.native
+    def limit_=(limit: Double): Unit = js.native
     
-    /* private */ var addItemFirst: js.Any = js.native
+    def peek(key: K): js.UndefOr[V] = js.native
     
-    /* private */ var addItemLast: js.Any = js.native
+    def ratio: Double = js.native
+    def ratio_=(ratio: Double): Unit = js.native
+  }
+  
+  @JSImport("vscode-jsonrpc/lib/common/linkedMap", "LinkedMap")
+  @js.native
+  open class LinkedMap[K, V] ()
+    extends StObject
+       with Map[K, V] {
     
-    def clear(): Unit = js.native
+    /* private */ var _head: Any = js.native
     
-    def delete(key: K): Boolean = js.native
+    /* private */ var _map: Any = js.native
     
-    def forEach(callbackfn: js.Function3[/* value */ V, /* key */ K, /* map */ LinkedMap[K, V], Unit]): Unit = js.native
-    def forEach(
-      callbackfn: js.Function3[/* value */ V, /* key */ K, /* map */ LinkedMap[K, V], Unit],
-      thisArg: js.Any
-    ): Unit = js.native
+    /* private */ var _size: Any = js.native
     
-    def forEachReverse(callbackfn: js.Function3[/* value */ V, /* key */ K, /* map */ LinkedMap[K, V], Unit]): Unit = js.native
-    def forEachReverse(
-      callbackfn: js.Function3[/* value */ V, /* key */ K, /* map */ LinkedMap[K, V], Unit],
-      thisArg: js.Any
-    ): Unit = js.native
+    /* private */ var _state: Any = js.native
     
-    def get(key: K): js.UndefOr[V] = js.native
+    /* private */ var _tail: Any = js.native
     
-    def has(key: K): Boolean = js.native
+    /* private */ var addItemFirst: Any = js.native
+    
+    /* private */ var addItemLast: Any = js.native
+    
+    def first: js.UndefOr[V] = js.native
+    
+    def fromJSON(data: js.Array[js.Tuple2[K, V]]): Unit = js.native
+    
+    def get(key: K, touch: Touch): js.UndefOr[V] = js.native
     
     def isEmpty(): Boolean = js.native
     
-    def keys(): js.Array[K] = js.native
+    def last: js.UndefOr[V] = js.native
     
-    /* private */ var removeItem: js.Any = js.native
+    def remove(key: K): js.UndefOr[V] = js.native
     
-    def set(key: K, value: V): Unit = js.native
-    def set(key: K, value: V, touch: Touch): Unit = js.native
+    /* private */ var removeItem: Any = js.native
+    
+    def set(key: K, value: V, touch: Touch): this.type = js.native
     
     def shift(): js.UndefOr[V] = js.native
     
-    def size: Double = js.native
+    @JSName("size")
+    def size_MLinkedMap: Double = js.native
     
-    /* private */ var touch: js.Any = js.native
+    def toJSON(): js.Array[js.Tuple2[K, V]] = js.native
     
-    def values(): js.Array[V] = js.native
+    @JSName(js.Symbol.toStringTag)
+    val toStringTag_LinkedMap: typings.vscodeJsonrpc.vscodeJsonrpcStrings.LinkedMap = js.native
+    
+    /* private */ var touch: Any = js.native
+    
+    /* protected */ def trimOld(newSize: Double): Unit = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -71,15 +90,23 @@ object linkedMapMod {
   trait Touch extends StObject
   object Touch {
     
-    @JSImport("vscode-jsonrpc/lib/linkedMap", "Touch.First")
+    @JSImport("vscode-jsonrpc/lib/common/linkedMap", "Touch.AsNew")
+    @js.native
+    val AsNew: `2` = js.native
+    
+    @JSImport("vscode-jsonrpc/lib/common/linkedMap", "Touch.AsOld")
+    @js.native
+    val AsOld: `1` = js.native
+    
+    @JSImport("vscode-jsonrpc/lib/common/linkedMap", "Touch.First")
     @js.native
     val First: `1` = js.native
     
-    @JSImport("vscode-jsonrpc/lib/linkedMap", "Touch.Last")
+    @JSImport("vscode-jsonrpc/lib/common/linkedMap", "Touch.Last")
     @js.native
     val Last: `2` = js.native
     
-    @JSImport("vscode-jsonrpc/lib/linkedMap", "Touch.None")
+    @JSImport("vscode-jsonrpc/lib/common/linkedMap", "Touch.None")
     @js.native
     val None: `0` = js.native
   }

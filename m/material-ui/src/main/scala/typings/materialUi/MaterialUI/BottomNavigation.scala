@@ -9,11 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BottomNavigation {
   
-  type BottomNavigation = Component[BottomNavigationProps, js.Object, js.Any]
+  type BottomNavigation = Component[BottomNavigationProps, js.Object, Any]
   
-  @js.native
-  trait BottomNavigationItem
-    extends Component[BottomNavigationItemProps, js.Object, js.Any]
+  type BottomNavigationItem = Component[BottomNavigationItemProps, js.Object, Any]
   
   trait BottomNavigationItemProps
     extends StObject
@@ -50,6 +48,8 @@ object BottomNavigation {
   
   trait BottomNavigationProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var selectedIndex: js.UndefOr[Double] = js.undefined
@@ -64,6 +64,10 @@ object BottomNavigation {
     }
     
     extension [Self <: BottomNavigationProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

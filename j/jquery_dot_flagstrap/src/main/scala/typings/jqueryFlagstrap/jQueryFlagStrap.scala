@@ -53,7 +53,7 @@ object jQueryFlagStrap {
       * Default: null
       * This callback gets called each time the select is changed. It receives two parameters, the new value, and the select element.
       */
-    var onSelect: js.UndefOr[js.Function2[/* value */ js.Any, /* element */ js.Any, Unit]] = js.undefined
+    var onSelect: js.UndefOr[js.Function2[/* value */ Any, /* element */ Any, Unit]] = js.undefined
     
     /**
       * Default: {value: "", text: "Please select a country"}
@@ -105,7 +105,7 @@ object jQueryFlagStrap {
       
       inline def setLabelMargin(value: String): Self = StObject.set(x, "labelMargin", value.asInstanceOf[js.Any])
       
-      inline def setOnSelect(value: (/* value */ js.Any, /* element */ js.Any) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+      inline def setOnSelect(value: (/* value */ Any, /* element */ Any) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       

@@ -1,11 +1,11 @@
 package typings.three
 
 import typings.std.HTMLVideoElement
-import typings.three.constantsMod.Mapping
-import typings.three.constantsMod.PixelFormat
-import typings.three.constantsMod.TextureDataType
-import typings.three.constantsMod.TextureFilter
-import typings.three.constantsMod.Wrapping
+import typings.three.srcConstantsMod.Mapping
+import typings.three.srcConstantsMod.PixelFormat
+import typings.three.srcConstantsMod.TextureDataType
+import typings.three.srcConstantsMod.TextureFilter
+import typings.three.srcConstantsMod.Wrapping
 import typings.three.textureMod.Texture
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
@@ -16,18 +16,18 @@ object videoTextureMod {
   
   @JSImport("three/src/textures/VideoTexture", "VideoTexture")
   @js.native
-  class VideoTexture protected () extends Texture {
+  open class VideoTexture protected () extends Texture {
     /**
-    	 * @param video
-    	 * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
-    	 * @param [wrapS=THREE.ClampToEdgeWrapping]
-    	 * @param [wrapT=THREE.ClampToEdgeWrapping]
-    	 * @param [magFilter=THREE.LinearFilter]
-    	 * @param [minFilter=THREE.LinearFilter]
-    	 * @param [format=THREE.RGBFormat]
-    	 * @param [type=THREE.UnsignedByteType]
-    	 * @param [anisotropy=1]
-    	 */
+      * @param video
+      * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+      * @param [wrapS=THREE.ClampToEdgeWrapping]
+      * @param [wrapT=THREE.ClampToEdgeWrapping]
+      * @param [magFilter=THREE.LinearFilter]
+      * @param [minFilter=THREE.LinearFilter]
+      * @param [format=THREE.RGBAFormat]
+      * @param [type=THREE.UnsignedByteType]
+      * @param [anisotropy=1]
+      */
     def this(
       video: HTMLVideoElement,
       mapping: js.UndefOr[Mapping],

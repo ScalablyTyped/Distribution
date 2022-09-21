@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-elements
 
-Typings are for version 3.0.0-alpha.1
+Typings are for version 3.4.2
 
 ## Library description:
 React Native Elements & UI Toolkit
@@ -10,10 +10,10 @@ React Native Elements & UI Toolkit
 | ------------------ | :-------------: |
 | Full name          | react-native-elements |
 | Keywords           | react-native, reactjs, reactnative, bootstrap |
-| # releases         | 24 |
-| # dependents       | 186 |
-| # downloads        | 4059500 |
-| # stars            | 15 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 425485.0 |
+| # stars            | 22482.0 |
 
 ## Links
 - [Homepage](https://reactnativeelements.com/)

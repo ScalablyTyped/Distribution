@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object configureActionsMod {
   
-  @JSImport("@storybook/addon-actions/dist/preview/configureActions", JSImport.Namespace)
+  @JSImport("@storybook/addon-actions/dist/ts3.9/preview/configureActions", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@storybook/addon-actions/dist/preview/configureActions", "config")
+  @JSImport("@storybook/addon-actions/dist/ts3.9/preview/configureActions", "config")
   @js.native
   val config: ActionOptions = js.native
   

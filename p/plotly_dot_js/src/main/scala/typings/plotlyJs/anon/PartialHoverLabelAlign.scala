@@ -1,5 +1,6 @@
 package typings.plotlyJs.anon
 
+import typings.plotlyJs.mod.Font
 import typings.plotlyJs.plotlyJsStrings.auto
 import typings.plotlyJs.plotlyJsStrings.left
 import typings.plotlyJs.plotlyJsStrings.right
@@ -17,7 +18,7 @@ trait PartialHoverLabelAlign extends StObject {
   
   var bordercolor: js.UndefOr[String] = js.undefined
   
-  var font: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.undefined
+  var font: js.UndefOr[Partial[Font]] = js.undefined
   
   var namelength: js.UndefOr[Double] = js.undefined
 }
@@ -42,7 +43,7 @@ object PartialHoverLabelAlign {
     
     inline def setBordercolorUndefined: Self = StObject.set(x, "bordercolor", js.undefined)
     
-    inline def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Partial[Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     

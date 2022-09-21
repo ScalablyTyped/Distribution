@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("rc-easyui", "MenuSep")
 @js.native
-class MenuSep protected ()
-  extends Component[js.Any, js.Object, js.Any] {
-  def this(args: js.Any*) = this()
+open class MenuSep protected ()
+  extends Component[Any, js.Object, Any] {
+  def this(args: Any*) = this()
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetAuthorizationTokenRequest extends StObject {
   
   /**
-    * A list of AWS account IDs that are associated with the registries for which to get AuthorizationData objects. If you do not specify a registry, the default registry is assumed.
+    * A list of Amazon Web Services account IDs that are associated with the registries for which to get AuthorizationData objects. If you do not specify a registry, the default registry is assumed.
     */
   var registryIds: js.UndefOr[GetAuthorizationTokenRegistryIdList] = js.undefined
 }
@@ -24,6 +24,6 @@ object GetAuthorizationTokenRequest {
     
     inline def setRegistryIdsUndefined: Self = StObject.set(x, "registryIds", js.undefined)
     
-    inline def setRegistryIdsVarargs(value: RegistryId*): Self = StObject.set(x, "registryIds", js.Array(value :_*))
+    inline def setRegistryIdsVarargs(value: RegistryId*): Self = StObject.set(x, "registryIds", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ The Lodash method `_.template` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.template |
 | Keywords           | lodash-modularized, template |
-| # releases         | 2 |
-| # dependents       | 632 |
-| # downloads        | 359658441 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.2145495E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

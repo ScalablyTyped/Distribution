@@ -13,7 +13,7 @@ object optionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getOpts(params: (String | PartialSwalOptions)*): SwalOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpts")(params.asInstanceOf[js.Any]).asInstanceOf[SwalOptions]
+  inline def getOpts(params: (String | PartialSwalOptions)*): SwalOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpts")(params.asInstanceOf[Seq[js.Any]]*).asInstanceOf[SwalOptions]
   
   inline def setDefaults(opts: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -61,7 +61,7 @@ object optionsMod {
       
       inline def setButtons(value: ButtonList | (js.Array[String | Boolean])): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      inline def setButtonsVarargs(value: (String | Boolean)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: (String | Boolean)*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

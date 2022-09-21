@@ -64,7 +64,7 @@ object panelMod {
   
   trait SyntaxHighlighterProps
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var children: ReactElement
     

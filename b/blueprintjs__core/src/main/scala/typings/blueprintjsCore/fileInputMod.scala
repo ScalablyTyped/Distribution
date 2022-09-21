@@ -16,12 +16,12 @@ object fileInputMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/forms/fileInput", "FileInput")
   @js.native
-  class FileInput protected ()
-    extends AbstractPureComponent2[IFileInputProps, js.Object, js.Object] {
-    def this(props: IFileInputProps) = this()
-    def this(props: IFileInputProps, context: js.Any) = this()
+  open class FileInput protected ()
+    extends AbstractPureComponent2[FileInputProps, js.Object, js.Object] {
+    def this(props: FileInputProps) = this()
+    def this(props: FileInputProps, context: Any) = this()
     
-    /* private */ var handleInputChange: js.Any = js.native
+    /* private */ var handleInputChange: Any = js.native
   }
   /* static members */
   object FileInput {
@@ -32,14 +32,16 @@ object fileInputMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/fileInput", "FileInput.defaultProps")
     @js.native
-    def defaultProps: IFileInputProps = js.native
-    inline def defaultProps_=(x: IFileInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: FileInputProps = js.native
+    inline def defaultProps_=(x: FileInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/fileInput", "FileInput.displayName")
     @js.native
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
+  
+  type FileInputProps = IFileInputProps
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.blueprintjsCore.propsMod.IProps because var conflicts: className. Inlined  */ trait IFileInputProps
@@ -48,6 +50,7 @@ object fileInputMod {
     
     /**
       * The button text.
+      *
       * @default "Browse"
       */
     var buttonText: js.UndefOr[String] = js.undefined
@@ -66,6 +69,7 @@ object fileInputMod {
     /**
       * Whether the user has made a selection in the input. This will affect the component's
       * text styling. Make sure to set a non-empty value for the text prop as well.
+      *
       * @default false
       */
     var hasSelection: js.UndefOr[Boolean] = js.undefined
@@ -96,6 +100,7 @@ object fileInputMod {
     
     /**
       * The text to display.
+      *
       * @default "Choose file..."
       */
     var text: js.UndefOr[ReactNode] = js.undefined

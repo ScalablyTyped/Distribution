@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UIComponent extends StObject {
   
-  def getParameter(name: String): js.Any
+  def getParameter(name: String): Any
   
-  def getParameters(): Record[String, js.Any]
+  def getParameters(): Record[String, Any]
   
-  def setParameter(name: String, value: js.Any): Unit
+  def setParameter(name: String, value: Any): Unit
   
-  def setParameters(parameters: Record[String, js.Any]): Unit
+  def setParameters(parameters: Record[String, Any]): Unit
 }
 object UIComponent {
   
   inline def apply(
-    getParameter: String => js.Any,
-    getParameters: () => Record[String, js.Any],
-    setParameter: (String, js.Any) => Unit,
-    setParameters: Record[String, js.Any] => Unit
+    getParameter: String => Any,
+    getParameters: () => Record[String, Any],
+    setParameter: (String, Any) => Unit,
+    setParameters: Record[String, Any] => Unit
   ): UIComponent = {
     val __obj = js.Dynamic.literal(getParameter = js.Any.fromFunction1(getParameter), getParameters = js.Any.fromFunction0(getParameters), setParameter = js.Any.fromFunction2(setParameter), setParameters = js.Any.fromFunction1(setParameters))
     __obj.asInstanceOf[UIComponent]
@@ -29,12 +29,12 @@ object UIComponent {
   
   extension [Self <: UIComponent](x: Self) {
     
-    inline def setGetParameter(value: String => js.Any): Self = StObject.set(x, "getParameter", js.Any.fromFunction1(value))
+    inline def setGetParameter(value: String => Any): Self = StObject.set(x, "getParameter", js.Any.fromFunction1(value))
     
-    inline def setGetParameters(value: () => Record[String, js.Any]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
+    inline def setGetParameters(value: () => Record[String, Any]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
-    inline def setSetParameter(value: (String, js.Any) => Unit): Self = StObject.set(x, "setParameter", js.Any.fromFunction2(value))
+    inline def setSetParameter(value: (String, Any) => Unit): Self = StObject.set(x, "setParameter", js.Any.fromFunction2(value))
     
-    inline def setSetParameters(value: Record[String, js.Any] => Unit): Self = StObject.set(x, "setParameters", js.Any.fromFunction1(value))
+    inline def setSetParameters(value: Record[String, Any] => Unit): Self = StObject.set(x, "setParameters", js.Any.fromFunction1(value))
   }
 }

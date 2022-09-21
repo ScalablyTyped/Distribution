@@ -1,9 +1,5 @@
 package typings.googleapis.resellerV1Mod.resellerV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,43 +9,22 @@ trait ParamsResourceSubscriptionsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The customerAuthToken query string is required when creating a resold
-    * account that transfers a direct customer's subscription or transfers
-    * another reseller customer's subscription to your reseller management.
-    * This is a hexadecimal authentication token needed to complete the
-    * subscription transfer. For more information, see the administrator help
-    * center.
+    * The `customerAuthToken` query string is required when creating a resold account that transfers a direct customer's subscription or transfers another reseller customer's subscription to your reseller management. This is a hexadecimal authentication token needed to complete the subscription transfer. For more information, see the administrator help center.
     */
   var customerAuthToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Either the customer's primary domain name or the customer's unique
-    * identifier. If using the domain name, we do not recommend using a
-    * customerId as a key for persistent data. If the domain name for a
-    * customerId is changed, the Google system automatically updates.
+    * This can be either the customer's primary domain name or the customer's unique identifier. If the domain name for a customer changes, the old domain name cannot be used to access the customer, but the customer's unique identifier (as returned by the API) can always be used. We recommend storing the unique identifier in your systems where applicable.
     */
   var customerId: js.UndefOr[String] = js.undefined
   
   /**
-    * When retrieving all of your subscriptions and filtering for specific
-    * customers, you can enter a prefix for a customer name. Using an example
-    * customer group that includes exam.com, example20.com and example.com:   -
-    * exa -- Returns all customer names that start with 'exa' which could
-    * include exam.com, example20.com, and example.com. A name prefix is
-    * similar to using a regular expression's asterisk, exa*.  - example --
-    * Returns example20.com and example.com.
+    * When retrieving all of your subscriptions and filtering for specific customers, you can enter a prefix for a customer name. Using an example customer group that includes `exam.com`, `example20.com` and `example.com`: - `exa` -- Returns all customer names that start with 'exa' which could include `exam.com`, `example20.com`, and `example.com`. A name prefix is similar to using a regular expression's asterisk, exa*. - `example` -- Returns `example20.com` and `example.com`.
     */
   var customerNamePrefix: js.UndefOr[String] = js.undefined
   
   /**
-    * When retrieving a large list, the maxResults is the maximum number of
-    * results per page. The nextPageToken value takes you to the next page. The
-    * default is 20.
+    * When retrieving a large list, the `maxResults` is the maximum number of results per page. The `nextPageToken` value takes you to the next page. The default is 20.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
@@ -66,10 +41,6 @@ object ParamsResourceSubscriptionsList {
   }
   
   extension [Self <: ParamsResourceSubscriptionsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCustomerAuthToken(value: String): Self = StObject.set(x, "customerAuthToken", value.asInstanceOf[js.Any])
     

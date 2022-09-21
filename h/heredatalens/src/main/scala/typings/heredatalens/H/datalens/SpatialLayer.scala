@@ -57,7 +57,7 @@ object SpatialLayer {
     * Defines a geometry in the vector tile
     * Each geometry is described by various properties, including a unique identifier which must be used to map the geometry to user data.
     */
-  type Feature = js.Any
+  type Feature = Any
   
   /**
     * Defines data processing and rendering options for SpatialLayer
@@ -70,7 +70,7 @@ object SpatialLayer {
     var dataToRows: js.UndefOr[js.Function4[/* data */ Data, /* x */ X, /* y */ Y, /* z */ Zoom, js.Array[Row]]] = js.undefined
     
     /** Defines the default map object style. */
-    def defaultStyle(z: Zoom, styleState: StyleState): js.Any
+    def defaultStyle(z: Zoom, styleState: StyleState): Any
     
     /** Defines how to get the spatial ID from a geometry feature. This callback is called for each geometry feature in the vector tile. */
     def featureToSpatialId(feature: Feature): String
@@ -79,7 +79,7 @@ object SpatialLayer {
     def rowToSpatialId(row: Row): String
     
     /** Defines how the row is translated to map object style. This callback is called for each row that is returned from dataToRows. */
-    def rowToStyle(row: Row, z: Zoom, styleState: StyleState): js.Any
+    def rowToStyle(row: Row, z: Zoom, styleState: StyleState): Any
     
     /** Defines how to transform the features. */
     var transformFeature: typings.heredatalens.H.datalens.SpatialLayer.transformFeature
@@ -87,10 +87,10 @@ object SpatialLayer {
   object Options {
     
     inline def apply(
-      defaultStyle: (Zoom, StyleState) => js.Any,
+      defaultStyle: (Zoom, StyleState) => Any,
       featureToSpatialId: Feature => String,
       rowToSpatialId: Row => String,
-      rowToStyle: (Row, Zoom, StyleState) => js.Any,
+      rowToStyle: (Row, Zoom, StyleState) => Any,
       transformFeature: transformFeature
     ): Options = {
       val __obj = js.Dynamic.literal(defaultStyle = js.Any.fromFunction2(defaultStyle), featureToSpatialId = js.Any.fromFunction1(featureToSpatialId), rowToSpatialId = js.Any.fromFunction1(rowToSpatialId), rowToStyle = js.Any.fromFunction3(rowToStyle), transformFeature = transformFeature.asInstanceOf[js.Any])
@@ -103,13 +103,13 @@ object SpatialLayer {
       
       inline def setDataToRowsUndefined: Self = StObject.set(x, "dataToRows", js.undefined)
       
-      inline def setDefaultStyle(value: (Zoom, StyleState) => js.Any): Self = StObject.set(x, "defaultStyle", js.Any.fromFunction2(value))
+      inline def setDefaultStyle(value: (Zoom, StyleState) => Any): Self = StObject.set(x, "defaultStyle", js.Any.fromFunction2(value))
       
       inline def setFeatureToSpatialId(value: Feature => String): Self = StObject.set(x, "featureToSpatialId", js.Any.fromFunction1(value))
       
       inline def setRowToSpatialId(value: Row => String): Self = StObject.set(x, "rowToSpatialId", js.Any.fromFunction1(value))
       
-      inline def setRowToStyle(value: (Row, Zoom, StyleState) => js.Any): Self = StObject.set(x, "rowToStyle", js.Any.fromFunction3(value))
+      inline def setRowToStyle(value: (Row, Zoom, StyleState) => Any): Self = StObject.set(x, "rowToStyle", js.Any.fromFunction3(value))
       
       inline def setTransformFeature(value: transformFeature): Self = StObject.set(x, "transformFeature", value.asInstanceOf[js.Any])
     }
@@ -119,16 +119,16 @@ object SpatialLayer {
     * Defines a slice of data (eg Data Lens query data row) that represents a data point
     * By default each row is an object where property names correspond to data column names. This representation can be changed with the dataToRows callback.
     */
-  type Row = js.Any
+  type Row = Any
   
   /**
     * Defines modification of a data-driven style
     * StyleState appears as a parameter in the rowToStyle callback. By default it is 'DEFAULT_STATE'. To change StyleState, use the SpatialLayer.updateSpatialStyle method.
     */
-  type StyleState = js.Any
+  type StyleState = Any
   
   /**
     * TODO: missing in documentation: https://developer.here.com/visualization/documentation/datalens/h-datalens-spatiallayer-options.html
     */
-  type transformFeature = js.Any
+  type transformFeature = Any
 }

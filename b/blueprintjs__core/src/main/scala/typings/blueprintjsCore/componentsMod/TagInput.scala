@@ -1,20 +1,20 @@
 package typings.blueprintjsCore.componentsMod
 
-import typings.blueprintjsCore.anon.PartialITagInputProps
 import typings.blueprintjsCore.anon.PartialITagInputState
-import typings.blueprintjsCore.anon.ReadonlyITagInputProps
+import typings.blueprintjsCore.anon.PartialTagInputProps
 import typings.blueprintjsCore.anon.ReadonlyITagInputState
-import typings.blueprintjsCore.tagInputMod.ITagInputProps
+import typings.blueprintjsCore.anon.ReadonlyTagInputProps
+import typings.blueprintjsCore.tagInputMod.TagInputProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "TagInput")
 @js.native
-class TagInput protected ()
+open class TagInput protected ()
   extends typings.blueprintjsCore.tagInputMod.TagInput {
-  def this(props: ITagInputProps) = this()
-  def this(props: ITagInputProps, context: js.Any) = this()
+  def this(props: TagInputProps) = this()
+  def this(props: TagInputProps, context: Any) = this()
 }
 /* static members */
 object TagInput {
@@ -25,13 +25,13 @@ object TagInput {
   
   @JSImport("@blueprintjs/core/lib/esm/components", "TagInput.defaultProps")
   @js.native
-  def defaultProps: PartialITagInputProps = js.native
-  inline def defaultProps_=(x: PartialITagInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: PartialTagInputProps = js.native
+  inline def defaultProps_=(x: PartialTagInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core/lib/esm/components", "TagInput.displayName")
   @js.native
   def displayName: String = js.native
   inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
-  inline def getDerivedStateFromProps(props: ReadonlyITagInputProps, state: ReadonlyITagInputState): PartialITagInputState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialITagInputState | Null]
+  inline def getDerivedStateFromProps(props: ReadonlyTagInputProps, state: ReadonlyITagInputState): PartialITagInputState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialITagInputState | Null]
 }

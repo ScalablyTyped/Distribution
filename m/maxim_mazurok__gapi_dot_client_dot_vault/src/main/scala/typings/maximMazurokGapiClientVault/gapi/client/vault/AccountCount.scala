@@ -9,7 +9,7 @@ trait AccountCount extends StObject {
   /** Account owner. */
   var account: js.UndefOr[UserInfo] = js.undefined
   
-  /** The number of artifacts found for this account. */
+  /** The number of results (messages or files) found for this account. */
   var count: js.UndefOr[String] = js.undefined
 }
 object AccountCount {

@@ -11,10 +11,10 @@ trait IHTMLDocument7 extends StObject {
   
   def adoptNode(pNodeSource: IHTMLDOMNode): IHTMLDOMNode3
   
-  def all(): js.Any
-  def all(name: js.Any): js.Any
-  def all(name: js.Any, index: js.Any): js.Any
-  def all(name: Unit, index: js.Any): js.Any
+  def all(): Any
+  def all(name: Any): Any
+  def all(name: Any, index: Any): Any
+  def all(name: Unit, index: Any): Any
   @JSName("all")
   val all_Original: IHTMLElementCollection
   
@@ -24,23 +24,23 @@ trait IHTMLDocument7 extends StObject {
   
   def createAttribute(bstrAttrName: String): IHTMLDOMAttribute
   
-  def createAttributeNS(pvarNS: js.Any, bstrAttrName: String): IHTMLDOMAttribute
+  def createAttributeNS(pvarNS: Any, bstrAttrName: String): IHTMLDOMAttribute
   
   def createCDATASection(text: String): IHTMLDOMNode
   
   def createElement(bstrTag: String): IHTMLElement
   
-  def createElementNS(pvarNS: js.Any, bstrTag: String): IHTMLElement
+  def createElementNS(pvarNS: Any, bstrTag: String): IHTMLElement
   
   def createProcessingInstruction(bstrTarget: String, bstrData: String): IDOMProcessingInstruction
   
-  def defaultView(pvarIndex: js.Any): js.Any
+  def defaultView(pvarIndex: Any): Any
   @JSName("defaultView")
   val defaultView_Original: IHTMLWindow2
   
   def getElementsByClassName(v: String): IHTMLElementCollection
   
-  def getElementsByTagNameNS(pvarNS: js.Any, bstrLocalName: String): IHTMLElementCollection
+  def getElementsByTagNameNS(pvarNS: Any, bstrLocalName: String): IHTMLElementCollection
   
   def getSelection(): IHTMLSelection
   
@@ -54,85 +54,85 @@ trait IHTMLDocument7 extends StObject {
   
   def normalize(): Unit
   
-  var onabort: js.Any
+  var onabort: Any
   
-  var onblur: js.Any
+  var onblur: Any
   
-  var oncanplay: js.Any
+  var oncanplay: Any
   
-  var oncanplaythrough: js.Any
+  var oncanplaythrough: Any
   
-  var onchange: js.Any
+  var onchange: Any
   
-  var ondrag: js.Any
+  var ondrag: Any
   
-  var ondragend: js.Any
+  var ondragend: Any
   
-  var ondragenter: js.Any
+  var ondragenter: Any
   
-  var ondragleave: js.Any
+  var ondragleave: Any
   
-  var ondragover: js.Any
+  var ondragover: Any
   
-  var ondrop: js.Any
+  var ondrop: Any
   
-  var ondurationchange: js.Any
+  var ondurationchange: Any
   
-  var onemptied: js.Any
+  var onemptied: Any
   
-  var onended: js.Any
+  var onended: Any
   
-  var onerror: js.Any
+  var onerror: Any
   
-  var onfocus: js.Any
+  var onfocus: Any
   
-  var oninput: js.Any
+  var oninput: Any
   
-  var onload: js.Any
+  var onload: Any
   
-  var onloadeddata: js.Any
+  var onloadeddata: Any
   
-  var onloadedmetadata: js.Any
+  var onloadedmetadata: Any
   
-  var onloadstart: js.Any
+  var onloadstart: Any
   
-  var onmssitemodejumplistitemremoved: js.Any
+  var onmssitemodejumplistitemremoved: Any
   
-  var onmsthumbnailclick: js.Any
+  var onmsthumbnailclick: Any
   
-  var onpause: js.Any
+  var onpause: Any
   
-  var onplay: js.Any
+  var onplay: Any
   
-  var onplaying: js.Any
+  var onplaying: Any
   
-  var onprogress: js.Any
+  var onprogress: Any
   
-  var onratechange: js.Any
+  var onratechange: Any
   
-  var onreset: js.Any
+  var onreset: Any
   
-  var onscroll: js.Any
+  var onscroll: Any
   
-  var onseeked: js.Any
+  var onseeked: Any
   
-  var onseeking: js.Any
+  var onseeking: Any
   
-  var onselect: js.Any
+  var onselect: Any
   
-  var onstalled: js.Any
+  var onstalled: Any
   
-  var onsubmit: js.Any
+  var onsubmit: Any
   
-  var onsuspend: js.Any
+  var onsuspend: Any
   
-  var ontimeupdate: js.Any
+  var ontimeupdate: Any
   
-  var onvolumechange: js.Any
+  var onvolumechange: Any
   
-  var onwaiting: js.Any
+  var onwaiting: Any
   
-  def parentWindow(pvarIndex: js.Any): js.Any
+  def parentWindow(pvarIndex: Any): Any
   @JSName("parentWindow")
   val parentWindow_Original: IHTMLWindow2
   
@@ -151,59 +151,59 @@ object IHTMLDocument7 {
     body: IHTMLElement,
     characterSet: String,
     createAttribute: String => IHTMLDOMAttribute,
-    createAttributeNS: (js.Any, String) => IHTMLDOMAttribute,
+    createAttributeNS: (Any, String) => IHTMLDOMAttribute,
     createCDATASection: String => IHTMLDOMNode,
     createElement: String => IHTMLElement,
-    createElementNS: (js.Any, String) => IHTMLElement,
+    createElementNS: (Any, String) => IHTMLElement,
     createProcessingInstruction: (String, String) => IDOMProcessingInstruction,
     defaultView: IHTMLWindow2,
     getElementsByClassName: String => IHTMLElementCollection,
-    getElementsByTagNameNS: (js.Any, String) => IHTMLElementCollection,
+    getElementsByTagNameNS: (Any, String) => IHTMLElementCollection,
     getSelection: () => IHTMLSelection,
     hasAttributes: () => Boolean,
     head: IHTMLElement,
     importNode: (IHTMLDOMNode, Boolean) => IHTMLDOMNode3,
     inputEncoding: String,
     normalize: () => Unit,
-    onabort: js.Any,
-    onblur: js.Any,
-    oncanplay: js.Any,
-    oncanplaythrough: js.Any,
-    onchange: js.Any,
-    ondrag: js.Any,
-    ondragend: js.Any,
-    ondragenter: js.Any,
-    ondragleave: js.Any,
-    ondragover: js.Any,
-    ondrop: js.Any,
-    ondurationchange: js.Any,
-    onemptied: js.Any,
-    onended: js.Any,
-    onerror: js.Any,
-    onfocus: js.Any,
-    oninput: js.Any,
-    onload: js.Any,
-    onloadeddata: js.Any,
-    onloadedmetadata: js.Any,
-    onloadstart: js.Any,
-    onmssitemodejumplistitemremoved: js.Any,
-    onmsthumbnailclick: js.Any,
-    onpause: js.Any,
-    onplay: js.Any,
-    onplaying: js.Any,
-    onprogress: js.Any,
-    onratechange: js.Any,
-    onreset: js.Any,
-    onscroll: js.Any,
-    onseeked: js.Any,
-    onseeking: js.Any,
-    onselect: js.Any,
-    onstalled: js.Any,
-    onsubmit: js.Any,
-    onsuspend: js.Any,
-    ontimeupdate: js.Any,
-    onvolumechange: js.Any,
-    onwaiting: js.Any,
+    onabort: Any,
+    onblur: Any,
+    oncanplay: Any,
+    oncanplaythrough: Any,
+    onchange: Any,
+    ondrag: Any,
+    ondragend: Any,
+    ondragenter: Any,
+    ondragleave: Any,
+    ondragover: Any,
+    ondrop: Any,
+    ondurationchange: Any,
+    onemptied: Any,
+    onended: Any,
+    onerror: Any,
+    onfocus: Any,
+    oninput: Any,
+    onload: Any,
+    onloadeddata: Any,
+    onloadedmetadata: Any,
+    onloadstart: Any,
+    onmssitemodejumplistitemremoved: Any,
+    onmsthumbnailclick: Any,
+    onpause: Any,
+    onplay: Any,
+    onplaying: Any,
+    onprogress: Any,
+    onratechange: Any,
+    onreset: Any,
+    onscroll: Any,
+    onseeked: Any,
+    onseeking: Any,
+    onselect: Any,
+    onstalled: Any,
+    onsubmit: Any,
+    onsuspend: Any,
+    ontimeupdate: Any,
+    onvolumechange: Any,
+    onwaiting: Any,
     parentWindow: IHTMLWindow2,
     xmlEncoding: String,
     xmlStandalone: Boolean,
@@ -226,13 +226,13 @@ object IHTMLDocument7 {
     
     inline def setCreateAttribute(value: String => IHTMLDOMAttribute): Self = StObject.set(x, "createAttribute", js.Any.fromFunction1(value))
     
-    inline def setCreateAttributeNS(value: (js.Any, String) => IHTMLDOMAttribute): Self = StObject.set(x, "createAttributeNS", js.Any.fromFunction2(value))
+    inline def setCreateAttributeNS(value: (Any, String) => IHTMLDOMAttribute): Self = StObject.set(x, "createAttributeNS", js.Any.fromFunction2(value))
     
     inline def setCreateCDATASection(value: String => IHTMLDOMNode): Self = StObject.set(x, "createCDATASection", js.Any.fromFunction1(value))
     
     inline def setCreateElement(value: String => IHTMLElement): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
     
-    inline def setCreateElementNS(value: (js.Any, String) => IHTMLElement): Self = StObject.set(x, "createElementNS", js.Any.fromFunction2(value))
+    inline def setCreateElementNS(value: (Any, String) => IHTMLElement): Self = StObject.set(x, "createElementNS", js.Any.fromFunction2(value))
     
     inline def setCreateProcessingInstruction(value: (String, String) => IDOMProcessingInstruction): Self = StObject.set(x, "createProcessingInstruction", js.Any.fromFunction2(value))
     
@@ -240,7 +240,7 @@ object IHTMLDocument7 {
     
     inline def setGetElementsByClassName(value: String => IHTMLElementCollection): Self = StObject.set(x, "getElementsByClassName", js.Any.fromFunction1(value))
     
-    inline def setGetElementsByTagNameNS(value: (js.Any, String) => IHTMLElementCollection): Self = StObject.set(x, "getElementsByTagNameNS", js.Any.fromFunction2(value))
+    inline def setGetElementsByTagNameNS(value: (Any, String) => IHTMLElementCollection): Self = StObject.set(x, "getElementsByTagNameNS", js.Any.fromFunction2(value))
     
     inline def setGetSelection(value: () => IHTMLSelection): Self = StObject.set(x, "getSelection", js.Any.fromFunction0(value))
     
@@ -256,83 +256,83 @@ object IHTMLDocument7 {
     
     inline def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
     
-    inline def setOnabort(value: js.Any): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
+    inline def setOnabort(value: Any): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
     
-    inline def setOnblur(value: js.Any): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
+    inline def setOnblur(value: Any): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
     
-    inline def setOncanplay(value: js.Any): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
+    inline def setOncanplay(value: Any): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
     
-    inline def setOncanplaythrough(value: js.Any): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
+    inline def setOncanplaythrough(value: Any): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
     
-    inline def setOnchange(value: js.Any): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
+    inline def setOnchange(value: Any): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
     
-    inline def setOndrag(value: js.Any): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
+    inline def setOndrag(value: Any): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
     
-    inline def setOndragend(value: js.Any): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
+    inline def setOndragend(value: Any): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
     
-    inline def setOndragenter(value: js.Any): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
+    inline def setOndragenter(value: Any): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
     
-    inline def setOndragleave(value: js.Any): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
+    inline def setOndragleave(value: Any): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
     
-    inline def setOndragover(value: js.Any): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
+    inline def setOndragover(value: Any): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
     
-    inline def setOndrop(value: js.Any): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
+    inline def setOndrop(value: Any): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
     
-    inline def setOndurationchange(value: js.Any): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
+    inline def setOndurationchange(value: Any): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
     
-    inline def setOnemptied(value: js.Any): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
+    inline def setOnemptied(value: Any): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
     
-    inline def setOnended(value: js.Any): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
+    inline def setOnended(value: Any): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
     
-    inline def setOnerror(value: js.Any): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
+    inline def setOnerror(value: Any): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
     
-    inline def setOnfocus(value: js.Any): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
+    inline def setOnfocus(value: Any): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
     
-    inline def setOninput(value: js.Any): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
+    inline def setOninput(value: Any): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
     
-    inline def setOnload(value: js.Any): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
+    inline def setOnload(value: Any): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
     
-    inline def setOnloadeddata(value: js.Any): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
+    inline def setOnloadeddata(value: Any): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
     
-    inline def setOnloadedmetadata(value: js.Any): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
+    inline def setOnloadedmetadata(value: Any): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
     
-    inline def setOnloadstart(value: js.Any): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
+    inline def setOnloadstart(value: Any): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
     
-    inline def setOnmssitemodejumplistitemremoved(value: js.Any): Self = StObject.set(x, "onmssitemodejumplistitemremoved", value.asInstanceOf[js.Any])
+    inline def setOnmssitemodejumplistitemremoved(value: Any): Self = StObject.set(x, "onmssitemodejumplistitemremoved", value.asInstanceOf[js.Any])
     
-    inline def setOnmsthumbnailclick(value: js.Any): Self = StObject.set(x, "onmsthumbnailclick", value.asInstanceOf[js.Any])
+    inline def setOnmsthumbnailclick(value: Any): Self = StObject.set(x, "onmsthumbnailclick", value.asInstanceOf[js.Any])
     
-    inline def setOnpause(value: js.Any): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
+    inline def setOnpause(value: Any): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
     
-    inline def setOnplay(value: js.Any): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
+    inline def setOnplay(value: Any): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
     
-    inline def setOnplaying(value: js.Any): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
+    inline def setOnplaying(value: Any): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
     
-    inline def setOnprogress(value: js.Any): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
+    inline def setOnprogress(value: Any): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
     
-    inline def setOnratechange(value: js.Any): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
+    inline def setOnratechange(value: Any): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
     
-    inline def setOnreset(value: js.Any): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
+    inline def setOnreset(value: Any): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
     
-    inline def setOnscroll(value: js.Any): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
+    inline def setOnscroll(value: Any): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
     
-    inline def setOnseeked(value: js.Any): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
+    inline def setOnseeked(value: Any): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
     
-    inline def setOnseeking(value: js.Any): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
+    inline def setOnseeking(value: Any): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
     
-    inline def setOnselect(value: js.Any): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
+    inline def setOnselect(value: Any): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
     
-    inline def setOnstalled(value: js.Any): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
+    inline def setOnstalled(value: Any): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
     
-    inline def setOnsubmit(value: js.Any): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
+    inline def setOnsubmit(value: Any): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
     
-    inline def setOnsuspend(value: js.Any): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
+    inline def setOnsuspend(value: Any): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
     
-    inline def setOntimeupdate(value: js.Any): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
+    inline def setOntimeupdate(value: Any): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
     
-    inline def setOnvolumechange(value: js.Any): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
+    inline def setOnvolumechange(value: Any): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
     
-    inline def setOnwaiting(value: js.Any): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
+    inline def setOnwaiting(value: Any): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
     
     inline def setParentWindow(value: IHTMLWindow2): Self = StObject.set(x, "parentWindow", value.asInstanceOf[js.Any])
     

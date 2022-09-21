@@ -22,7 +22,7 @@ object slideMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Slide {
     def this(properties: SlideProperties) = this()

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(middleware: (Middleware[DefaultState, DefaultContext])*): If = ^.asInstanceOf[js.Dynamic].apply(middleware.asInstanceOf[js.Any]).asInstanceOf[If]
+  inline def apply(middleware: (Middleware[DefaultState, DefaultContext, Any])*): If = ^.asInstanceOf[js.Dynamic].apply(middleware.asInstanceOf[Seq[js.Any]]*).asInstanceOf[If]
   
   @JSImport("koa-ignore", JSImport.Namespace)
   @js.native

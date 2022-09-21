@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-window", "VariableSizeList")
 @js.native
-class VariableSizeList protected ()
-  extends Component[VariableSizeListProps, js.Object, js.Any] {
-  def this(props: VariableSizeListProps) = this()
+open class VariableSizeList[T] protected ()
+  extends Component[VariableSizeListProps[T], js.Object, Any] {
+  def this(props: VariableSizeListProps[T]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: VariableSizeListProps, context: js.Any) = this()
+  def this(props: VariableSizeListProps[T], context: Any) = this()
   
   /**
     * VariableSizeList caches offsets and measurements for each index for performance purposes.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EndpointSelector extends StObject {
   
   /**
-    * [descr:EndpointSelector.urlFor(key)]
+    * Gets an endpoint with a specific key.
     */
   def urlFor(key: String): String
 }

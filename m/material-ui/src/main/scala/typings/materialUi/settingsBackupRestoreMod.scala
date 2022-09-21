@@ -10,10 +10,10 @@ object settingsBackupRestoreMod {
   
   @JSImport("material-ui/svg-icons/action/settings-backup-restore", JSImport.Default)
   @js.native
-  class default () extends ActionSettingsBackupRestore
+  open class default () extends ActionSettingsBackupRestore
   
   @JSImport("material-ui/svg-icons/action/settings-backup-restore", "ActionSettingsBackupRestore")
   @js.native
-  class ActionSettingsBackupRestore ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSettingsBackupRestore ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

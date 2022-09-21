@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateCanaryRequest extends StObject {
   
   /**
+    * A structure that contains the configuration for canary artifacts, including the encryption-at-rest settings for artifacts that the canary uploads to Amazon S3.
+    */
+  var ArtifactConfig: js.UndefOr[ArtifactConfigInput] = js.undefined
+  
+  /**
+    * The location in Amazon S3 where Synthetics stores artifacts from the test runs of this canary. Artifacts include the log file, screenshots, and HAR files. The name of the S3 bucket can't include a period (.).
+    */
+  var ArtifactS3Location: js.UndefOr[String] = js.undefined
+  
+  /**
     * A structure that includes the entry point from which the canary should start running your script. If the script is stored in an S3 bucket, the bucket name, key, and version are also included. 
     */
   var Code: js.UndefOr[CanaryCodeInput] = js.undefined
@@ -27,7 +37,7 @@ trait UpdateCanaryRequest extends StObject {
   var Name: CanaryName
   
   /**
-    * A structure that contains the timeout value that is used for each individual run of the canary.
+    * A structure that contains the timeout value that is used for each individual run of the canary.  The environment variables keys and values are not encrypted. Do not store sensitive information in this field. 
     */
   var RunConfig: js.UndefOr[CanaryRunConfigInput] = js.undefined
   
@@ -47,6 +57,11 @@ trait UpdateCanaryRequest extends StObject {
   var SuccessRetentionPeriodInDays: js.UndefOr[MaxSize1024] = js.undefined
   
   /**
+    * Defines the screenshots to use as the baseline for comparisons during visual monitoring comparisons during future runs of this canary. If you omit this parameter, no changes are made to any baseline screenshots that the canary might be using already. Visual monitoring is supported only on canaries running the syn-puppeteer-node-3.2 runtime or later. For more information, see  Visual monitoring and  Visual monitoring blueprint 
+    */
+  var VisualReference: js.UndefOr[VisualReferenceInput] = js.undefined
+  
+  /**
     * If this canary is to test an endpoint in a VPC, this structure contains information about the subnet and security groups of the VPC endpoint. For more information, see  Running a Canary in a VPC.
     */
   var VpcConfig: js.UndefOr[VpcConfigInput] = js.undefined
@@ -59,6 +74,14 @@ object UpdateCanaryRequest {
   }
   
   extension [Self <: UpdateCanaryRequest](x: Self) {
+    
+    inline def setArtifactConfig(value: ArtifactConfigInput): Self = StObject.set(x, "ArtifactConfig", value.asInstanceOf[js.Any])
+    
+    inline def setArtifactConfigUndefined: Self = StObject.set(x, "ArtifactConfig", js.undefined)
+    
+    inline def setArtifactS3Location(value: String): Self = StObject.set(x, "ArtifactS3Location", value.asInstanceOf[js.Any])
+    
+    inline def setArtifactS3LocationUndefined: Self = StObject.set(x, "ArtifactS3Location", js.undefined)
     
     inline def setCode(value: CanaryCodeInput): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
@@ -89,6 +112,10 @@ object UpdateCanaryRequest {
     inline def setSuccessRetentionPeriodInDays(value: MaxSize1024): Self = StObject.set(x, "SuccessRetentionPeriodInDays", value.asInstanceOf[js.Any])
     
     inline def setSuccessRetentionPeriodInDaysUndefined: Self = StObject.set(x, "SuccessRetentionPeriodInDays", js.undefined)
+    
+    inline def setVisualReference(value: VisualReferenceInput): Self = StObject.set(x, "VisualReference", value.asInstanceOf[js.Any])
+    
+    inline def setVisualReferenceUndefined: Self = StObject.set(x, "VisualReference", js.undefined)
     
     inline def setVpcConfig(value: VpcConfigInput): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     

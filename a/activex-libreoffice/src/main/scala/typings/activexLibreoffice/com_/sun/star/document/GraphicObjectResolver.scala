@@ -18,7 +18,7 @@ object GraphicObjectResolver {
   inline def apply(
     acquire: () => Unit,
     createWithStorage: XStorage => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     resolveGraphicObjectURL: String => String
   ): GraphicObjectResolver = {

@@ -22,10 +22,10 @@ object Holes {
     
     inline def setHoles(value: js.Array[js.Array[Vector2]]): Self = StObject.set(x, "holes", value.asInstanceOf[js.Any])
     
-    inline def setHolesVarargs(value: js.Array[Vector2]*): Self = StObject.set(x, "holes", js.Array(value :_*))
+    inline def setHolesVarargs(value: js.Array[Vector2]*): Self = StObject.set(x, "holes", js.Array(value*))
     
     inline def setShape(value: js.Array[Vector2]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    inline def setShapeVarargs(value: Vector2*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setShapeVarargs(value: Vector2*): Self = StObject.set(x, "shape", js.Array(value*))
   }
 }

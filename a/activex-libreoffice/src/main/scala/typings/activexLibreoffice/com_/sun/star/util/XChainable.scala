@@ -42,7 +42,7 @@ object XChainable {
     getPredecessor: () => XChainable,
     getSuccessor: () => XChainable,
     isChainable: XChainable => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setSuccessor: XChainable => Unit
   ): XChainable = {

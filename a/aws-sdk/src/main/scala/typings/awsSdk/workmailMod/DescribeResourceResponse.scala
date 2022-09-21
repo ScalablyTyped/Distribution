@@ -14,7 +14,7 @@ trait DescribeResourceResponse extends StObject {
   /**
     * The date and time when a resource was disabled from WorkMail, in UNIX epoch time format.
     */
-  var DisabledDate: js.UndefOr[Timestamp] = js.undefined
+  var DisabledDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The email of the described resource.
@@ -24,7 +24,7 @@ trait DescribeResourceResponse extends StObject {
   /**
     * The date and time when a resource was enabled for WorkMail, in UNIX epoch time format.
     */
-  var EnabledDate: js.UndefOr[Timestamp] = js.undefined
+  var EnabledDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the described resource.
@@ -59,7 +59,7 @@ object DescribeResourceResponse {
     
     inline def setBookingOptionsUndefined: Self = StObject.set(x, "BookingOptions", js.undefined)
     
-    inline def setDisabledDate(value: Timestamp): Self = StObject.set(x, "DisabledDate", value.asInstanceOf[js.Any])
+    inline def setDisabledDate(value: js.Date): Self = StObject.set(x, "DisabledDate", value.asInstanceOf[js.Any])
     
     inline def setDisabledDateUndefined: Self = StObject.set(x, "DisabledDate", js.undefined)
     
@@ -67,7 +67,7 @@ object DescribeResourceResponse {
     
     inline def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
     
-    inline def setEnabledDate(value: Timestamp): Self = StObject.set(x, "EnabledDate", value.asInstanceOf[js.Any])
+    inline def setEnabledDate(value: js.Date): Self = StObject.set(x, "EnabledDate", value.asInstanceOf[js.Any])
     
     inline def setEnabledDateUndefined: Self = StObject.set(x, "EnabledDate", js.undefined)
     

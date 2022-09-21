@@ -11,7 +11,7 @@ object infoMod {
   
   @JSImport("sip.js/lib/api/info", "Info")
   @js.native
-  class Info protected () extends StObject {
+  open class Info protected () extends StObject {
     /** @internal */
     def this(incomingInfoRequest: IncomingInfoRequest) = this()
     
@@ -19,7 +19,7 @@ object infoMod {
     def accept(): js.Promise[Unit] = js.native
     def accept(options: ResponseOptions): js.Promise[Unit] = js.native
     
-    /* private */ var incomingInfoRequest: js.Any = js.native
+    /* private */ var incomingInfoRequest: Any = js.native
     
     /** Reject the request. */
     def reject(): js.Promise[Unit] = js.native

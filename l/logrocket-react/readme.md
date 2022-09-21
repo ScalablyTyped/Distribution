@@ -10,10 +10,10 @@ React library for [LogRocket](https://logrocket.com/).
 | ------------------ | :-------------: |
 | Full name          | logrocket-react |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 6 |
-| # downloads        | 1430357 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 440435.3333333333 |
+| # stars            | 69.0 |
 
 ## Links
 - [Homepage](https://github.com/LogRocket/logrocket-react#readme)

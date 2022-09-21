@@ -1,7 +1,7 @@
 
 # Scala.js typings for clipboardy
 
-Typings are for version 2.3.0
+Typings are for version 3.0.0
 
 ## Library description:
 Access the system clipboard (copy/paste)
@@ -10,10 +10,10 @@ Access the system clipboard (copy/paste)
 | ------------------ | :-------------: |
 | Full name          | clipboardy |
 | Keywords           | clipboard, copy, paste, copy-paste, pasteboard, read, write, pbcopy, clip, xclip, xsel |
-| # releases         | 5 |
-| # dependents       | 864 |
-| # downloads        | 73393781 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0582544333333334E7 |
+| # stars            | 1459.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/clipboardy#readme)

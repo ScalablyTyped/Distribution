@@ -17,7 +17,7 @@ trait StartImagePipelineExecutionResponse extends StObject {
   var imageBuildVersionArn: js.UndefOr[ImageBuildVersionArn] = js.undefined
   
   /**
-    * The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request.
     */
   var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }

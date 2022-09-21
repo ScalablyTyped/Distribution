@@ -24,7 +24,7 @@ trait XStreamListener
     *
     * After the method is called, the close is called on the connected streams.
     */
-  def error(aException: js.Any): Unit
+  def error(aException: Any): Unit
   
   /** gets called as soon as data transfer has started. */
   def started(): Unit
@@ -38,8 +38,8 @@ object XStreamListener {
     acquire: () => Unit,
     closed: () => Unit,
     disposing: EventObject => Unit,
-    error: js.Any => Unit,
-    queryInterface: `type` => js.Any,
+    error: Any => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
     started: () => Unit,
     terminated: () => Unit
@@ -52,7 +52,7 @@ object XStreamListener {
     
     inline def setClosed(value: () => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
     
-    inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     inline def setStarted(value: () => Unit): Self = StObject.set(x, "started", js.Any.fromFunction0(value))
     

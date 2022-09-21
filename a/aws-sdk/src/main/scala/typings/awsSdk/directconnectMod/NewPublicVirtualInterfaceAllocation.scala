@@ -32,7 +32,7 @@ trait NewPublicVirtualInterfaceAllocation extends StObject {
   var customerAddress: js.UndefOr[CustomerAddress] = js.undefined
   
   /**
-    * The routes to be advertised to the AWS network in this Region. Applies to public virtual interfaces.
+    * The routes to be advertised to the Amazon Web Services network in this Region. Applies to public virtual interfaces.
     */
   var routeFilterPrefixes: js.UndefOr[RouteFilterPrefixList] = js.undefined
   
@@ -82,13 +82,13 @@ object NewPublicVirtualInterfaceAllocation {
     
     inline def setRouteFilterPrefixesUndefined: Self = StObject.set(x, "routeFilterPrefixes", js.undefined)
     
-    inline def setRouteFilterPrefixesVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "routeFilterPrefixes", js.Array(value :_*))
+    inline def setRouteFilterPrefixesVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "routeFilterPrefixes", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setVirtualInterfaceName(value: VirtualInterfaceName): Self = StObject.set(x, "virtualInterfaceName", value.asInstanceOf[js.Any])
     

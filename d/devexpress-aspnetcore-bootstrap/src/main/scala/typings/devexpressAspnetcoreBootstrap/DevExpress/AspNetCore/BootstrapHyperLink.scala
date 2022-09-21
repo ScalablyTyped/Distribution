@@ -22,7 +22,7 @@ trait BootstrapHyperLink
   
   def getText(): String = js.native
   
-  def getValue(): js.Any = js.native
+  def getValue(): Any = js.native
   
   def off(
     eventName: Unit,
@@ -60,5 +60,5 @@ trait BootstrapHyperLink
   
   def setText(text: String): Unit = js.native
   
-  def setValue(value: js.Any): Unit = js.native
+  def setValue(value: Any): Unit = js.native
 }

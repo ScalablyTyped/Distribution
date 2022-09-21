@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Light
   extends StObject
-     with Node {
+     with Node
+     with ISortableLight {
   
   /**
     * Binds the lights information from the scene to the effect for the given mesh.
@@ -15,21 +16,21 @@ trait Light
     * @param scene The scene where the light belongs to
     * @param effect The effect we are binding the data to
     * @param useSpecular Defines if specular is supported
-    * @param rebuildInParallel Specifies whether the shader is rebuilding in parallel
+    * @param receiveShadows Defines if the effect (mesh) we bind the light for receives shadows
     */
   def _bindLight(lightIndex: Double, scene: Scene, effect: Effect, useSpecular: Boolean): Unit = js.native
-  def _bindLight(lightIndex: Double, scene: Scene, effect: Effect, useSpecular: Boolean, rebuildInParallel: Boolean): Unit = js.native
+  def _bindLight(lightIndex: Double, scene: Scene, effect: Effect, useSpecular: Boolean, receiveShadows: Boolean): Unit = js.native
   
   /* protected */ def _buildUniformLayout(): Unit = js.native
   
   /**
     * Recomputes the cached photometric scale if needed.
     */
-  /* private */ var _computePhotometricScale: js.Any = js.native
+  /* private */ var _computePhotometricScale: Any = js.native
   
-  /* private */ var _excludeWithLayerMask: js.Any = js.native
+  /* private */ var _excludeWithLayerMask: Any = js.native
   
-  /* private */ var _excludedMeshes: js.Any = js.native
+  /* private */ var _excludedMeshes: Any = js.native
   
   /**
     * @hidden Internal use only.
@@ -39,29 +40,31 @@ trait Light
   /**
     * Returns the Photometric Scale according to the light type and intensity mode.
     */
-  /* private */ var _getPhotometricScale: js.Any = js.native
+  /* private */ var _getPhotometricScale: Any = js.native
   
-  /* private */ var _hookArrayForExcluded: js.Any = js.native
+  /* private */ var _hookArrayForExcluded: Any = js.native
   
-  /* private */ var _hookArrayForIncludedOnly: js.Any = js.native
+  /* private */ var _hookArrayForIncludedOnly: Any = js.native
   
-  /* private */ var _includeOnlyWithLayerMask: js.Any = js.native
+  /* private */ var _includeOnlyWithLayerMask: Any = js.native
   
-  /* private */ var _includedOnlyMeshes: js.Any = js.native
+  /* private */ var _includedOnlyMeshes: Any = js.native
   
   /**
     * @hidden Internal use only.
     */
   var _includedOnlyMeshesIds: js.Array[String] = js.native
   
-  /* private */ var _intensityMode: js.Any = js.native
+  /* private */ var _intensityMode: Any = js.native
   
   /* protected */ var _inverseSquaredRange: Double = js.native
   
   /** @hidden */
-  val _isLight: Boolean = js.native
+  val _isLight: /* true */ Boolean = js.native
   
-  /* private */ var _lightmapMode: js.Any = js.native
+  /* private */ var _lastUseSpecular: Any = js.native
+  
+  /* private */ var _lightmapMode: Any = js.native
   
   /**
     * Forces the meshes to update their light related information in their rendering used effects
@@ -73,16 +76,16 @@ trait Light
     * Cached photometric scale default to 1.0 as the automatic intensity mode defaults to 1.0 for every type
     * of light.
     */
-  /* private */ var _photometricScale: js.Any = js.native
+  /* private */ var _photometricScale: Any = js.native
   
-  /* private */ var _radius: js.Any = js.native
+  /* private */ var _radius: Any = js.native
   
-  /* private */ var _range: js.Any = js.native
+  /* private */ var _range: Any = js.native
   
   /** @hidden */
   var _renderId: Double = js.native
   
-  /* private */ var _renderPriority: js.Any = js.native
+  /* private */ var _renderPriority: Any = js.native
   
   /**
     * Reorder the light in the scene according to their defined priority.
@@ -90,18 +93,18 @@ trait Light
     */
   def _reorderLightsInScene(): Unit = js.native
   
-  /* private */ var _resyncMeshes: js.Any = js.native
+  /* private */ var _resyncMeshes: Any = js.native
   
-  /* private */ var _shadowEnabled: js.Any = js.native
+  /* private */ var _shadowEnabled: Any = js.native
   
   /**
-    * Shadow generator associted to the light.
+    * Shadow generator associated to the light.
     * @hidden Internal use only.
     */
   var _shadowGenerator: Nullable[IShadowGenerator] = js.native
   
   /**
-    * The current light unifom buffer.
+    * The current light uniform buffer.
     * @hidden Internal use only.
     */
   var _uniformBuffer: UniformBuffer = js.native
@@ -109,7 +112,7 @@ trait Light
   /**
     * Specifies if the light will affect the passed mesh.
     * @param mesh The mesh to test against the light
-    * @return true the mesh is affected otherwise, false.
+    * @returns true the mesh is affected otherwise, false.
     */
   def canAffectMesh(mesh: AbstractMesh): Boolean = js.native
   
@@ -148,7 +151,7 @@ trait Light
   def excludedMeshes_=(value: js.Array[AbstractMesh]): Unit = js.native
   
   /**
-    * Defines the falloff type for this light. This lets overrriding how punctual light are
+    * Defines the falloff type for this light. This lets overriding how punctual light are
     * falling off base on range or angle.
     * This can be set to any values in Light.FALLOFF_x.
     *
@@ -171,7 +174,7 @@ trait Light
   
   /**
     * Returns the Light associated shadow generator if any.
-    * @return the associated shadow generator.
+    * @returns the associated shadow generator.
     */
   def getShadowGenerator(): Nullable[IShadowGenerator] = js.native
   
@@ -233,7 +236,7 @@ trait Light
     * @param defines the list of defines
     * @param lightIndex defines the index of the light for the effect
     */
-  def prepareLightSpecificDefines(defines: js.Any, lightIndex: Double): Unit = js.native
+  def prepareLightSpecificDefines(defines: Any, lightIndex: Double): Unit = js.native
   
   /**
     * Gets the light radius used by PBR Materials to simulate soft area lights.
@@ -256,31 +259,21 @@ trait Light
   def range_=(value: Double): Unit = js.native
   
   /**
-    * Defines the rendering priority of the lights. It can help in case of fallback or number of lights
-    * exceeding the number allowed of the materials.
-    */
-  var renderPriority: Double = js.native
-  
-  /**
     * Serializes the current light into a Serialization object.
     * @returns the serialized object.
     */
-  def serialize(): js.Any = js.native
+  def serialize(): Any = js.native
   
   /**
-    * Gets wether or not the shadows are enabled for this light. This can help turning off/on shadow without detaching
+    * Gets whether or not the shadows are enabled for this light. This can help turning off/on shadow without detaching
     * the current shadow generator.
     */
-  def shadowEnabled: Boolean = js.native
-  /**
-    * Sets wether or not the shadows are enabled for this light. This can help turning off/on shadow without detaching
-    * the current shadow generator.
-    */
-  def shadowEnabled_=(value: Boolean): Unit = js.native
+  @JSName("shadowEnabled")
+  def shadowEnabled_MLight: Boolean = js.native
   
   /**
     * Specular produces a highlight color on an object.
-    * Note: This is note affecting PBR materials.
+    * Note: This is not affecting PBR materials.
     */
   var specular: Color3 = js.native
   

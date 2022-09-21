@@ -16,4 +16,4 @@ trait Class[T]
   *
   * @return Class instance.
   */
-Instantiable1[/* args (repeated) */ js.Any, T]
+Instantiable1[/* args (repeated) */ Any, T]

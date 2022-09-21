@@ -17,7 +17,7 @@ trait TypeofInMemory
   /**
     * Creates an InMemoryFileSystem instance.
     */
-  def Create(options: js.Any, cb: BFSCallback[InMemoryFileSystem]): Unit = js.native
+  def Create(options: Any, cb: BFSCallback[InMemoryFileSystem]): Unit = js.native
   
   val Name: String = js.native
   

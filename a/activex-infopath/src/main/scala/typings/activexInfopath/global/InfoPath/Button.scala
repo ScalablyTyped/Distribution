@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.Button")
 @js.native
-/* private */ class Button ()
+/* private */ open class Button ()
   extends StObject
      with typings.activexInfopath.InfoPath.Button {
   

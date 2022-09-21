@@ -19,9 +19,6 @@ trait QuotaUser extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** For mutating operation requests only. An optional identifier specified by the client. Must be unique for operation resources in the Operations collection. */
-  var clientOperationId: js.UndefOr[String] = js.undefined
-  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
@@ -34,14 +31,14 @@ trait QuotaUser extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** Identifies the project addressed by this request. */
-  var project: String
-  
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: typings.maximMazurokGapiClientDns.gapi.client.dns.Policy
+  /**
+    * REQUIRED: The resource for which the policy detail is being requested. See [Resource names](https://cloud.google.com/apis/design/resource_names) for the appropriate value for
+    * this field.
+    */
+  var resource: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -51,8 +48,8 @@ trait QuotaUser extends StObject {
 }
 object QuotaUser {
   
-  inline def apply(project: String, resource: typings.maximMazurokGapiClientDns.gapi.client.dns.Policy): QuotaUser = {
-    val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(resource: String): QuotaUser = {
+    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUser]
   }
   
@@ -74,10 +71,6 @@ object QuotaUser {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    inline def setClientOperationId(value: String): Self = StObject.set(x, "clientOperationId", value.asInstanceOf[js.Any])
-    
-    inline def setClientOperationIdUndefined: Self = StObject.set(x, "clientOperationId", js.undefined)
-    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -94,13 +87,11 @@ object QuotaUser {
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
-    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
-    
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: typings.maximMazurokGapiClientDns.gapi.client.dns.Policy): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

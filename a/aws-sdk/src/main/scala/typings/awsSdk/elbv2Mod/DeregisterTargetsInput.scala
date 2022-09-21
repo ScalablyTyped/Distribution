@@ -29,6 +29,6 @@ object DeregisterTargetsInput {
     
     inline def setTargets(value: TargetDescriptions): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
-    inline def setTargetsVarargs(value: TargetDescription*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: TargetDescription*): Self = StObject.set(x, "Targets", js.Array(value*))
   }
 }

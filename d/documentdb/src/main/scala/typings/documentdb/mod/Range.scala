@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("documentdb", "Range")
 @js.native
-class Range protected () extends StObject {
+open class Range protected () extends StObject {
   /**
     * DEPRECATED
     *

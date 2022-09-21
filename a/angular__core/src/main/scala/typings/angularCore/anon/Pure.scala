@@ -13,6 +13,11 @@ trait Pure[T] extends StObject {
   /** Whether the pipe is pure. */
   var pure: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Whether the pipe is standalone.
+    */
+  var standalone: js.UndefOr[Boolean] = js.undefined
+  
   /** Pipe class reference. Needed to extract pipe lifecycle hooks. */
   var `type`: Type[T]
 }
@@ -31,6 +36,10 @@ object Pure {
     inline def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
     
     inline def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
+    
+    inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+    
+    inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
     
     inline def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

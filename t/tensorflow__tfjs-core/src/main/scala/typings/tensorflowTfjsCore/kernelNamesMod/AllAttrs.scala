@@ -21,7 +21,7 @@ object AllAttrs {
     
     inline def setAxis(value: Double | js.Array[Double]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    inline def setAxisVarargs(value: Double*): Self = StObject.set(x, "axis", js.Array(value :_*))
+    inline def setAxisVarargs(value: Double*): Self = StObject.set(x, "axis", js.Array(value*))
     
     inline def setKeepDims(value: Boolean): Self = StObject.set(x, "keepDims", value.asInstanceOf[js.Any])
   }

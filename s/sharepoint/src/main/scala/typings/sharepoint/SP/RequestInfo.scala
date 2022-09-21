@@ -1,7 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait RequestInfo extends StObject {
   var binaryStringResponseBody: js.UndefOr[Boolean] = js.undefined
   
   /** Can be string or bytearray depending on binaryStringRequestBody field */
-  var body: js.UndefOr[String | Uint8Array] = js.undefined
+  var body: js.UndefOr[String | js.typedarray.Uint8Array] = js.undefined
   
   var error: js.UndefOr[
     js.Function3[
@@ -29,7 +28,7 @@ trait RequestInfo extends StObject {
   
   var method: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[js.Any] = js.undefined
+  var state: js.UndefOr[Any] = js.undefined
   
   var success: js.UndefOr[js.Function1[/* response */ ResponseInfo, Unit]] = js.undefined
   
@@ -54,7 +53,7 @@ object RequestInfo {
     
     inline def setBinaryStringResponseBodyUndefined: Self = StObject.set(x, "binaryStringResponseBody", js.undefined)
     
-    inline def setBody(value: String | Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
@@ -72,7 +71,7 @@ object RequestInfo {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     

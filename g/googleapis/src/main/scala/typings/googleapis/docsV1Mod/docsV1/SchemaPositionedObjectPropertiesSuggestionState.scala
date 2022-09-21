@@ -4,22 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A mask that indicates which of the fields on the base
-  * PositionedObjectProperties have been changed in this suggestion. For any
-  * field set to true, there is a new suggested value.
-  */
 trait SchemaPositionedObjectPropertiesSuggestionState extends StObject {
   
   /**
-    * A mask that indicates which of the fields in embedded_object have been
-    * changed in this suggestion.
+    * A mask that indicates which of the fields in embedded_object have been changed in this suggestion.
     */
   var embeddedObjectSuggestionState: js.UndefOr[SchemaEmbeddedObjectSuggestionState] = js.undefined
   
   /**
-    * A mask that indicates which of the fields in positioning have been
-    * changed in this suggestion.
+    * A mask that indicates which of the fields in positioning have been changed in this suggestion.
     */
   var positioningSuggestionState: js.UndefOr[SchemaPositionedObjectPositioningSuggestionState] = js.undefined
 }

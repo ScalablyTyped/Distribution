@@ -10,7 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Cancellation extends StObject {
+  trait AsyncHooks extends StObject {
+    
+    /** Enable async hooks */
+    var asyncHooks: js.UndefOr[Boolean] = js.undefined
     
     /** Enable cancellation */
     var cancellation: js.UndefOr[Boolean] = js.undefined
@@ -24,14 +27,18 @@ object anon {
     /** Enable warnings */
     var warnings: js.UndefOr[Boolean | WForgottenReturn] = js.undefined
   }
-  object Cancellation {
+  object AsyncHooks {
     
-    inline def apply(): Cancellation = {
+    inline def apply(): AsyncHooks = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Cancellation]
+      __obj.asInstanceOf[AsyncHooks]
     }
     
-    extension [Self <: Cancellation](x: Self) {
+    extension [Self <: AsyncHooks](x: Self) {
+      
+      inline def setAsyncHooks(value: Boolean): Self = StObject.set(x, "asyncHooks", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncHooksUndefined: Self = StObject.set(x, "asyncHooks", js.undefined)
       
       inline def setCancellation(value: Boolean): Self = StObject.set(x, "cancellation", value.asInstanceOf[js.Any])
       
@@ -55,7 +62,7 @@ object anon {
   trait FnCall[R] extends StObject {
     
     def apply[U](): Bluebird[U | R] = js.native
-    def apply[U](onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U | R] = js.native
+    def apply[U](onReject: js.Function1[/* error */ Any, Resolvable[U]]): Bluebird[U | R] = js.native
     def apply[U, E1](
       // tslint:disable-next-line:unified-signatures
     filter1: CatchFilter[E1],

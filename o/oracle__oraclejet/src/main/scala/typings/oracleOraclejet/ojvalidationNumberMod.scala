@@ -32,7 +32,7 @@ object ojvalidationNumberMod {
   
   @JSImport("@oracle/oraclejet/ojvalidation-number", "IntlNumberConverter")
   @js.native
-  class IntlNumberConverter () extends NumberConverter {
+  open class IntlNumberConverter () extends NumberConverter {
     def this(options: ConverterOptions) = this()
     
     @JSName("getHint")
@@ -179,7 +179,7 @@ object ojvalidationNumberMod {
   
   @JSImport("@oracle/oraclejet/ojvalidation-number", "NumberConverter")
   @js.native
-  class NumberConverter ()
+  open class NumberConverter ()
     extends StObject
        with Converter[Double] {
     
@@ -192,7 +192,7 @@ object ojvalidationNumberMod {
   
   @JSImport("@oracle/oraclejet/ojvalidation-number", "NumberRangeValidator")
   @js.native
-  class NumberRangeValidator ()
+  open class NumberRangeValidator ()
     extends StObject
        with Validator[String | Double] {
     def this(options: ValidatorOptions) = this()

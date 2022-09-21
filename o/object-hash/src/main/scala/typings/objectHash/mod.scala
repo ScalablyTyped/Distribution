@@ -1,29 +1,180 @@
 package typings.objectHash
 
-import org.scalablytyped.runtime.Shortcut
-import typings.objectHash.mod.ObjectHash.Hash
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
+import typings.objectHash.objectHashStrings.base64
+import typings.objectHash.objectHashStrings.binary
+import typings.objectHash.objectHashStrings.buffer
+import typings.objectHash.objectHashStrings.hex
+import typings.objectHash.objectHashStrings.md5
+import typings.objectHash.objectHashStrings.passthrough
+import typings.objectHash.objectHashStrings.sha1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  /**
+    * @see https://github.com/puleos/object-hash#hashvalue-options
+    */
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(`object`: js.Object): String = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(`object`: js.Object, options: NormalOption): String = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(`object`: js.Object, options: WithBufferOption): Buffer = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def apply(`object`: Null, options: NormalOption): String = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(`object`: Null, options: WithBufferOption): Buffer = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   @JSImport("object-hash", JSImport.Namespace)
   @js.native
-  val ^ : Hash = js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * @see https://github.com/puleos/object-hash#hashmd5value
+    */
+  inline def MD5(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MD5")().asInstanceOf[String]
+  inline def MD5(`object`: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MD5")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * @see https://github.com/puleos/object-hash#hashkeysvalue
+    */
+  inline def keys(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")().asInstanceOf[String]
+  inline def keys(`object`: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * @see https://github.com/puleos/object-hash#hashkeysmd5value
+    */
+  inline def keysMD5(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keysMD5")().asInstanceOf[String]
+  inline def keysMD5(`object`: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keysMD5")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * @see https://github.com/puleos/object-hash#hashsha1value
+    */
+  inline def sha1(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")().asInstanceOf[String]
+  inline def sha1(`object`: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def writeToStream(value: Any, options: Options, stream: Stream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeToStream")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  /**
+    * @see https://github.com/puleos/object-hash#hashwritetostreamvalue-options-stream
+    */
+  inline def writeToStream(value: Any, stream: Stream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeToStream")(value.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  trait BaseOptions extends StObject {
+    
+    /**
+      * @default 'sha1'
+      */
+    var algorithm: js.UndefOr[sha1 | md5 | passthrough] = js.undefined
+    
+    var excludeKeys: js.UndefOr[js.Function1[/* key */ String, Boolean]] = js.undefined
+    
+    /**
+      * @default false
+      */
+    var excludeValues: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * @default false
+      */
+    var ignoreUnknown: js.UndefOr[Boolean] = js.undefined
+    
+    var replacer: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
+    
+    /**
+      * @default true
+      */
+    var respectFunctionNames: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * @default true
+      */
+    var respectFunctionProperties: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * @default true
+      */
+    var respectType: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * @default false
+      */
+    var unorderedArrays: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * @default true
+      */
+    var unorderedObjects: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * @default true
+      */
+    var unorderedSets: js.UndefOr[Boolean] = js.undefined
+  }
+  object BaseOptions {
+    
+    inline def apply(): BaseOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BaseOptions]
+    }
+    
+    extension [Self <: BaseOptions](x: Self) {
+      
+      inline def setAlgorithm(value: sha1 | md5 | passthrough): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      
+      inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+      
+      inline def setExcludeKeys(value: /* key */ String => Boolean): Self = StObject.set(x, "excludeKeys", js.Any.fromFunction1(value))
+      
+      inline def setExcludeKeysUndefined: Self = StObject.set(x, "excludeKeys", js.undefined)
+      
+      inline def setExcludeValues(value: Boolean): Self = StObject.set(x, "excludeValues", value.asInstanceOf[js.Any])
+      
+      inline def setExcludeValuesUndefined: Self = StObject.set(x, "excludeValues", js.undefined)
+      
+      inline def setIgnoreUnknown(value: Boolean): Self = StObject.set(x, "ignoreUnknown", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreUnknownUndefined: Self = StObject.set(x, "ignoreUnknown", js.undefined)
+      
+      inline def setReplacer(value: /* value */ Any => Any): Self = StObject.set(x, "replacer", js.Any.fromFunction1(value))
+      
+      inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
+      
+      inline def setRespectFunctionNames(value: Boolean): Self = StObject.set(x, "respectFunctionNames", value.asInstanceOf[js.Any])
+      
+      inline def setRespectFunctionNamesUndefined: Self = StObject.set(x, "respectFunctionNames", js.undefined)
+      
+      inline def setRespectFunctionProperties(value: Boolean): Self = StObject.set(x, "respectFunctionProperties", value.asInstanceOf[js.Any])
+      
+      inline def setRespectFunctionPropertiesUndefined: Self = StObject.set(x, "respectFunctionProperties", js.undefined)
+      
+      inline def setRespectType(value: Boolean): Self = StObject.set(x, "respectType", value.asInstanceOf[js.Any])
+      
+      inline def setRespectTypeUndefined: Self = StObject.set(x, "respectType", js.undefined)
+      
+      inline def setUnorderedArrays(value: Boolean): Self = StObject.set(x, "unorderedArrays", value.asInstanceOf[js.Any])
+      
+      inline def setUnorderedArraysUndefined: Self = StObject.set(x, "unorderedArrays", js.undefined)
+      
+      inline def setUnorderedObjects(value: Boolean): Self = StObject.set(x, "unorderedObjects", value.asInstanceOf[js.Any])
+      
+      inline def setUnorderedObjectsUndefined: Self = StObject.set(x, "unorderedObjects", js.undefined)
+      
+      inline def setUnorderedSets(value: Boolean): Self = StObject.set(x, "unorderedSets", value.asInstanceOf[js.Any])
+      
+      inline def setUnorderedSetsUndefined: Self = StObject.set(x, "unorderedSets", js.undefined)
+    }
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.objectHash.objectHashStrings.ascii
-    - typings.objectHash.objectHashStrings.utf8
-    - typings.objectHash.objectHashStrings.`utf-8`
-    - typings.objectHash.objectHashStrings.utf16le
-    - typings.objectHash.objectHashStrings.ucs2
-    - typings.objectHash.objectHashStrings.`ucs-2`
     - typings.objectHash.objectHashStrings.base64
-    - typings.objectHash.objectHashStrings.latin1
     - typings.objectHash.objectHashStrings.binary
     - typings.objectHash.objectHashStrings.hex
+    - typings.objectHash.objectHashStrings.latin1
+    - typings.objectHash.objectHashStrings.`ucs-2`
+    - typings.objectHash.objectHashStrings.ucs2
+    - typings.objectHash.objectHashStrings.`utf-8`
+    - typings.objectHash.objectHashStrings.utf16le
+    - typings.objectHash.objectHashStrings.utf8
   */
   trait BufferEncoding extends StObject
   object BufferEncoding {
@@ -49,157 +200,109 @@ object mod extends Shortcut {
     inline def utf8: typings.objectHash.objectHashStrings.utf8 = "utf8".asInstanceOf[typings.objectHash.objectHashStrings.utf8]
   }
   
-  trait IStream extends StObject {
+  trait NormalOption
+    extends StObject
+       with BaseOptions
+       with Options {
+    
+    /**
+      * @default 'hex'
+      */
+    var encoding: js.UndefOr[hex | binary | base64] = js.undefined
+  }
+  object NormalOption {
+    
+    inline def apply(): NormalOption = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[NormalOption]
+    }
+    
+    extension [Self <: NormalOption](x: Self) {
+      
+      inline def setEncoding(value: hex | binary | base64): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.objectHash.mod.NormalOption
+    - typings.objectHash.mod.WithBufferOption
+  */
+  trait Options extends StObject
+  object Options {
+    
+    inline def NormalOption(): typings.objectHash.mod.NormalOption = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.objectHash.mod.NormalOption]
+    }
+    
+    inline def WithBufferOption(): typings.objectHash.mod.WithBufferOption = {
+      val __obj = js.Dynamic.literal(encoding = "buffer")
+      __obj.asInstanceOf[typings.objectHash.mod.WithBufferOption]
+    }
+  }
+  
+  trait Stream extends StObject {
     
     var update: js.UndefOr[
         js.Function3[
-          /* chunk */ js.Any, 
+          /* chunk */ Any, 
           /* encoding */ BufferEncoding, 
-          /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
       ] = js.undefined
     
     var write: js.UndefOr[
         js.Function3[
-          /* chunk */ js.Any, 
+          /* chunk */ Any, 
           /* encoding */ BufferEncoding, 
-          /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
+          /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
       ] = js.undefined
   }
-  object IStream {
+  object Stream {
     
-    inline def apply(): IStream = {
+    inline def apply(): Stream = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IStream]
+      __obj.asInstanceOf[Stream]
     }
     
-    extension [Self <: IStream](x: Self) {
+    extension [Self <: Stream](x: Self) {
       
       inline def setUpdate(
-        value: (/* chunk */ js.Any, /* encoding */ BufferEncoding, /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit]) => Unit
+        value: (/* chunk */ Any, /* encoding */ BufferEncoding, /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]) => Unit
       ): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
       
       inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
       
       inline def setWrite(
-        value: (/* chunk */ js.Any, /* encoding */ BufferEncoding, /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit]) => Unit
+        value: (/* chunk */ Any, /* encoding */ BufferEncoding, /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]) => Unit
       ): Self = StObject.set(x, "write", js.Any.fromFunction3(value))
       
       inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
     }
   }
   
-  object ObjectHash {
+  trait WithBufferOption
+    extends StObject
+       with BaseOptions
+       with Options {
     
-    @js.native
-    trait Hash extends StObject {
-      
-      def apply(`object`: js.Any): String = js.native
-      def apply(`object`: js.Any, options: IOptions): String = js.native
-      
-      def MD5(`object`: js.Any): String = js.native
-      
-      def keys(`object`: js.Any): String = js.native
-      
-      def keysMD5(`object`: js.Any): String = js.native
-      
-      def sha1(`object`: js.Any): String = js.native
-      
-      def writeToStream(value: js.Any, options: IOptions, stream: IStream): Unit = js.native
-      def writeToStream(value: js.Any, stream: IStream): Unit = js.native
+    var encoding: buffer
+  }
+  object WithBufferOption {
+    
+    inline def apply(): WithBufferOption = {
+      val __obj = js.Dynamic.literal(encoding = "buffer")
+      __obj.asInstanceOf[WithBufferOption]
     }
     
-    trait IOptions extends StObject {
+    extension [Self <: WithBufferOption](x: Self) {
       
-      var algorithm: js.UndefOr[String] = js.undefined
-      
-      var encoding: js.UndefOr[String] = js.undefined
-      
-      var excludeKeys: js.UndefOr[js.Function1[/* key */ String, Boolean]] = js.undefined
-      
-      var excludeValues: js.UndefOr[Boolean] = js.undefined
-      
-      var ignoreUnknown: js.UndefOr[Boolean] = js.undefined
-      
-      var replacer: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
-      
-      var respectFunctionNames: js.UndefOr[Boolean] = js.undefined
-      
-      var respectFunctionProperties: js.UndefOr[Boolean] = js.undefined
-      
-      var respectType: js.UndefOr[Boolean] = js.undefined
-      
-      var unorderedArrays: js.UndefOr[Boolean] = js.undefined
-      
-      var unorderedObjects: js.UndefOr[Boolean] = js.undefined
-      
-      var unorderedSets: js.UndefOr[Boolean] = js.undefined
-    }
-    object IOptions {
-      
-      inline def apply(): IOptions = {
-        val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[IOptions]
-      }
-      
-      extension [Self <: IOptions](x: Self) {
-        
-        inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
-        
-        inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
-        
-        inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
-        
-        inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
-        
-        inline def setExcludeKeys(value: /* key */ String => Boolean): Self = StObject.set(x, "excludeKeys", js.Any.fromFunction1(value))
-        
-        inline def setExcludeKeysUndefined: Self = StObject.set(x, "excludeKeys", js.undefined)
-        
-        inline def setExcludeValues(value: Boolean): Self = StObject.set(x, "excludeValues", value.asInstanceOf[js.Any])
-        
-        inline def setExcludeValuesUndefined: Self = StObject.set(x, "excludeValues", js.undefined)
-        
-        inline def setIgnoreUnknown(value: Boolean): Self = StObject.set(x, "ignoreUnknown", value.asInstanceOf[js.Any])
-        
-        inline def setIgnoreUnknownUndefined: Self = StObject.set(x, "ignoreUnknown", js.undefined)
-        
-        inline def setReplacer(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction1(value))
-        
-        inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
-        
-        inline def setRespectFunctionNames(value: Boolean): Self = StObject.set(x, "respectFunctionNames", value.asInstanceOf[js.Any])
-        
-        inline def setRespectFunctionNamesUndefined: Self = StObject.set(x, "respectFunctionNames", js.undefined)
-        
-        inline def setRespectFunctionProperties(value: Boolean): Self = StObject.set(x, "respectFunctionProperties", value.asInstanceOf[js.Any])
-        
-        inline def setRespectFunctionPropertiesUndefined: Self = StObject.set(x, "respectFunctionProperties", js.undefined)
-        
-        inline def setRespectType(value: Boolean): Self = StObject.set(x, "respectType", value.asInstanceOf[js.Any])
-        
-        inline def setRespectTypeUndefined: Self = StObject.set(x, "respectType", js.undefined)
-        
-        inline def setUnorderedArrays(value: Boolean): Self = StObject.set(x, "unorderedArrays", value.asInstanceOf[js.Any])
-        
-        inline def setUnorderedArraysUndefined: Self = StObject.set(x, "unorderedArrays", js.undefined)
-        
-        inline def setUnorderedObjects(value: Boolean): Self = StObject.set(x, "unorderedObjects", value.asInstanceOf[js.Any])
-        
-        inline def setUnorderedObjectsUndefined: Self = StObject.set(x, "unorderedObjects", js.undefined)
-        
-        inline def setUnorderedSets(value: Boolean): Self = StObject.set(x, "unorderedSets", value.asInstanceOf[js.Any])
-        
-        inline def setUnorderedSetsUndefined: Self = StObject.set(x, "unorderedSets", js.undefined)
-      }
+      inline def setEncoding(value: buffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
   }
-  
-  type _To = Hash
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Hash = ^
 }

@@ -9,9 +9,6 @@ trait GoogleAnalyticsAdminV1alphaFirebaseLink extends StObject {
   /** Output only. Time when this FirebaseLink was originally created. */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** Maximum user access to the GA4 property allowed to admins of the linked Firebase project. */
-  var maximumUserAccess: js.UndefOr[String] = js.undefined
-  
   /** Output only. Example format: properties/1234/firebaseLinks/5678 */
   var name: js.UndefOr[String] = js.undefined
   
@@ -33,10 +30,6 @@ object GoogleAnalyticsAdminV1alphaFirebaseLink {
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
-    
-    inline def setMaximumUserAccess(value: String): Self = StObject.set(x, "maximumUserAccess", value.asInstanceOf[js.Any])
-    
-    inline def setMaximumUserAccessUndefined: Self = StObject.set(x, "maximumUserAccess", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

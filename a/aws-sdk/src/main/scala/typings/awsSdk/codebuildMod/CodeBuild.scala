@@ -127,12 +127,12 @@ trait CodeBuild extends Service {
   ): Request[CreateReportGroupOutput, AWSError] = js.native
   
   /**
-    * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, enables AWS CodeBuild to start rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in AWS CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
+    * For an existing CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, enables CodeBuild to start rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an CodeBuild project, and the project is used as a build step in CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks, and one through CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using CodePipeline, we recommend that you disable webhooks in CodeBuild. In the CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
     */
   def createWebhook(): Request[CreateWebhookOutput, AWSError] = js.native
   def createWebhook(callback: js.Function2[/* err */ AWSError, /* data */ CreateWebhookOutput, Unit]): Request[CreateWebhookOutput, AWSError] = js.native
   /**
-    * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, enables AWS CodeBuild to start rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in AWS CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
+    * For an existing CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, enables CodeBuild to start rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an CodeBuild project, and the project is used as a build step in CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks, and one through CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using CodePipeline, we recommend that you disable webhooks in CodeBuild. In the CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
     */
   def createWebhook(params: CreateWebhookInput): Request[CreateWebhookOutput, AWSError] = js.native
   def createWebhook(
@@ -225,12 +225,12 @@ trait CodeBuild extends Service {
   ): Request[DeleteSourceCredentialsOutput, AWSError] = js.native
   
   /**
-    * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops AWS CodeBuild from rebuilding the source code every time a code change is pushed to the repository.
+    * For an existing CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops CodeBuild from rebuilding the source code every time a code change is pushed to the repository.
     */
   def deleteWebhook(): Request[DeleteWebhookOutput, AWSError] = js.native
   def deleteWebhook(callback: js.Function2[/* err */ AWSError, /* data */ DeleteWebhookOutput, Unit]): Request[DeleteWebhookOutput, AWSError] = js.native
   /**
-    * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops AWS CodeBuild from rebuilding the source code every time a code change is pushed to the repository.
+    * For an existing CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops CodeBuild from rebuilding the source code every time a code change is pushed to the repository.
     */
   def deleteWebhook(params: DeleteWebhookInput): Request[DeleteWebhookOutput, AWSError] = js.native
   def deleteWebhook(
@@ -267,6 +267,20 @@ trait CodeBuild extends Service {
   ): Request[DescribeTestCasesOutput, AWSError] = js.native
   
   /**
+    * Analyzes and accumulates test report values for the specified test reports.
+    */
+  def getReportGroupTrend(): Request[GetReportGroupTrendOutput, AWSError] = js.native
+  def getReportGroupTrend(callback: js.Function2[/* err */ AWSError, /* data */ GetReportGroupTrendOutput, Unit]): Request[GetReportGroupTrendOutput, AWSError] = js.native
+  /**
+    * Analyzes and accumulates test report values for the specified test reports.
+    */
+  def getReportGroupTrend(params: GetReportGroupTrendInput): Request[GetReportGroupTrendOutput, AWSError] = js.native
+  def getReportGroupTrend(
+    params: GetReportGroupTrendInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetReportGroupTrendOutput, Unit]
+  ): Request[GetReportGroupTrendOutput, AWSError] = js.native
+  
+  /**
     *  Gets a resource policy that is identified by its resource ARN. 
     */
   def getResourcePolicy(): Request[GetResourcePolicyOutput, AWSError] = js.native
@@ -281,12 +295,12 @@ trait CodeBuild extends Service {
   ): Request[GetResourcePolicyOutput, AWSError] = js.native
   
   /**
-    *  Imports the source repository credentials for an AWS CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository. 
+    *  Imports the source repository credentials for an CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository. 
     */
   def importSourceCredentials(): Request[ImportSourceCredentialsOutput, AWSError] = js.native
   def importSourceCredentials(callback: js.Function2[/* err */ AWSError, /* data */ ImportSourceCredentialsOutput, Unit]): Request[ImportSourceCredentialsOutput, AWSError] = js.native
   /**
-    *  Imports the source repository credentials for an AWS CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository. 
+    *  Imports the source repository credentials for an CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository. 
     */
   def importSourceCredentials(params: ImportSourceCredentialsInput): Request[ImportSourceCredentialsOutput, AWSError] = js.native
   def importSourceCredentials(
@@ -351,12 +365,12 @@ trait CodeBuild extends Service {
   ): Request[ListBuildsOutput, AWSError] = js.native
   
   /**
-    * Gets a list of build IDs for the specified build project, with each build ID representing a single build.
+    * Gets a list of build identifiers for the specified build project, with each build identifier representing a single build.
     */
   def listBuildsForProject(): Request[ListBuildsForProjectOutput, AWSError] = js.native
   def listBuildsForProject(callback: js.Function2[/* err */ AWSError, /* data */ ListBuildsForProjectOutput, Unit]): Request[ListBuildsForProjectOutput, AWSError] = js.native
   /**
-    * Gets a list of build IDs for the specified build project, with each build ID representing a single build.
+    * Gets a list of build identifiers for the specified build project, with each build identifier representing a single build.
     */
   def listBuildsForProject(params: ListBuildsForProjectInput): Request[ListBuildsForProjectOutput, AWSError] = js.native
   def listBuildsForProject(
@@ -365,12 +379,12 @@ trait CodeBuild extends Service {
   ): Request[ListBuildsForProjectOutput, AWSError] = js.native
   
   /**
-    * Gets information about Docker images that are managed by AWS CodeBuild.
+    * Gets information about Docker images that are managed by CodeBuild.
     */
   def listCuratedEnvironmentImages(): Request[ListCuratedEnvironmentImagesOutput, AWSError] = js.native
   def listCuratedEnvironmentImages(callback: js.Function2[/* err */ AWSError, /* data */ ListCuratedEnvironmentImagesOutput, Unit]): Request[ListCuratedEnvironmentImagesOutput, AWSError] = js.native
   /**
-    * Gets information about Docker images that are managed by AWS CodeBuild.
+    * Gets information about Docker images that are managed by CodeBuild.
     */
   def listCuratedEnvironmentImages(params: ListCuratedEnvironmentImagesInput): Request[ListCuratedEnvironmentImagesOutput, AWSError] = js.native
   def listCuratedEnvironmentImages(
@@ -393,12 +407,12 @@ trait CodeBuild extends Service {
   ): Request[ListProjectsOutput, AWSError] = js.native
   
   /**
-    *  Gets a list ARNs for the report groups in the current AWS account. 
+    *  Gets a list ARNs for the report groups in the current Amazon Web Services account. 
     */
   def listReportGroups(): Request[ListReportGroupsOutput, AWSError] = js.native
   def listReportGroups(callback: js.Function2[/* err */ AWSError, /* data */ ListReportGroupsOutput, Unit]): Request[ListReportGroupsOutput, AWSError] = js.native
   /**
-    *  Gets a list ARNs for the report groups in the current AWS account. 
+    *  Gets a list ARNs for the report groups in the current Amazon Web Services account. 
     */
   def listReportGroups(params: ListReportGroupsInput): Request[ListReportGroupsOutput, AWSError] = js.native
   def listReportGroups(
@@ -407,12 +421,12 @@ trait CodeBuild extends Service {
   ): Request[ListReportGroupsOutput, AWSError] = js.native
   
   /**
-    *  Returns a list of ARNs for the reports in the current AWS account. 
+    *  Returns a list of ARNs for the reports in the current Amazon Web Services account. 
     */
   def listReports(): Request[ListReportsOutput, AWSError] = js.native
   def listReports(callback: js.Function2[/* err */ AWSError, /* data */ ListReportsOutput, Unit]): Request[ListReportsOutput, AWSError] = js.native
   /**
-    *  Returns a list of ARNs for the reports in the current AWS account. 
+    *  Returns a list of ARNs for the reports in the current Amazon Web Services account. 
     */
   def listReports(params: ListReportsInput): Request[ListReportsOutput, AWSError] = js.native
   def listReports(
@@ -435,12 +449,12 @@ trait CodeBuild extends Service {
   ): Request[ListReportsForReportGroupOutput, AWSError] = js.native
   
   /**
-    *  Gets a list of projects that are shared with other AWS accounts or users. 
+    *  Gets a list of projects that are shared with other Amazon Web Services accounts or users. 
     */
   def listSharedProjects(): Request[ListSharedProjectsOutput, AWSError] = js.native
   def listSharedProjects(callback: js.Function2[/* err */ AWSError, /* data */ ListSharedProjectsOutput, Unit]): Request[ListSharedProjectsOutput, AWSError] = js.native
   /**
-    *  Gets a list of projects that are shared with other AWS accounts or users. 
+    *  Gets a list of projects that are shared with other Amazon Web Services accounts or users. 
     */
   def listSharedProjects(params: ListSharedProjectsInput): Request[ListSharedProjectsOutput, AWSError] = js.native
   def listSharedProjects(
@@ -449,12 +463,12 @@ trait CodeBuild extends Service {
   ): Request[ListSharedProjectsOutput, AWSError] = js.native
   
   /**
-    *  Gets a list of report groups that are shared with other AWS accounts or users. 
+    *  Gets a list of report groups that are shared with other Amazon Web Services accounts or users. 
     */
   def listSharedReportGroups(): Request[ListSharedReportGroupsOutput, AWSError] = js.native
   def listSharedReportGroups(callback: js.Function2[/* err */ AWSError, /* data */ ListSharedReportGroupsOutput, Unit]): Request[ListSharedReportGroupsOutput, AWSError] = js.native
   /**
-    *  Gets a list of report groups that are shared with other AWS accounts or users. 
+    *  Gets a list of report groups that are shared with other Amazon Web Services accounts or users. 
     */
   def listSharedReportGroups(params: ListSharedReportGroupsInput): Request[ListSharedReportGroupsOutput, AWSError] = js.native
   def listSharedReportGroups(
@@ -589,6 +603,20 @@ trait CodeBuild extends Service {
   ): Request[UpdateProjectOutput, AWSError] = js.native
   
   /**
+    * Changes the public visibility for a project. The project's build results, logs, and artifacts are available to the general public. For more information, see Public build projects in the CodeBuild User Guide.  The following should be kept in mind when making your projects public:   All of a project's build results, logs, and artifacts, including builds that were run when the project was private, are available to the general public.   All build logs and artifacts are available to the public. Environment variables, source code, and other sensitive information may have been output to the build logs and artifacts. You must be careful about what information is output to the build logs. Some best practice are:   Do not store sensitive values, especially Amazon Web Services access key IDs and secret access keys, in environment variables. We recommend that you use an Amazon EC2 Systems Manager Parameter Store or Secrets Manager to store sensitive values.   Follow Best practices for using webhooks in the CodeBuild User Guide to limit which entities can trigger a build, and do not store the buildspec in the project itself, to ensure that your webhooks are as secure as possible.     A malicious user can use public builds to distribute malicious artifacts. We recommend that you review all pull requests to verify that the pull request is a legitimate change. We also recommend that you validate any artifacts with their checksums to make sure that the correct artifacts are being downloaded.   
+    */
+  def updateProjectVisibility(): Request[UpdateProjectVisibilityOutput, AWSError] = js.native
+  def updateProjectVisibility(callback: js.Function2[/* err */ AWSError, /* data */ UpdateProjectVisibilityOutput, Unit]): Request[UpdateProjectVisibilityOutput, AWSError] = js.native
+  /**
+    * Changes the public visibility for a project. The project's build results, logs, and artifacts are available to the general public. For more information, see Public build projects in the CodeBuild User Guide.  The following should be kept in mind when making your projects public:   All of a project's build results, logs, and artifacts, including builds that were run when the project was private, are available to the general public.   All build logs and artifacts are available to the public. Environment variables, source code, and other sensitive information may have been output to the build logs and artifacts. You must be careful about what information is output to the build logs. Some best practice are:   Do not store sensitive values, especially Amazon Web Services access key IDs and secret access keys, in environment variables. We recommend that you use an Amazon EC2 Systems Manager Parameter Store or Secrets Manager to store sensitive values.   Follow Best practices for using webhooks in the CodeBuild User Guide to limit which entities can trigger a build, and do not store the buildspec in the project itself, to ensure that your webhooks are as secure as possible.     A malicious user can use public builds to distribute malicious artifacts. We recommend that you review all pull requests to verify that the pull request is a legitimate change. We also recommend that you validate any artifacts with their checksums to make sure that the correct artifacts are being downloaded.   
+    */
+  def updateProjectVisibility(params: UpdateProjectVisibilityInput): Request[UpdateProjectVisibilityOutput, AWSError] = js.native
+  def updateProjectVisibility(
+    params: UpdateProjectVisibilityInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateProjectVisibilityOutput, Unit]
+  ): Request[UpdateProjectVisibilityOutput, AWSError] = js.native
+  
+  /**
     *  Updates a report group. 
     */
   def updateReportGroup(): Request[UpdateReportGroupOutput, AWSError] = js.native
@@ -603,12 +631,12 @@ trait CodeBuild extends Service {
   ): Request[UpdateReportGroupOutput, AWSError] = js.native
   
   /**
-    *  Updates the webhook associated with an AWS CodeBuild build project.    If you use Bitbucket for your repository, rotateSecret is ignored.  
+    *  Updates the webhook associated with an CodeBuild build project.    If you use Bitbucket for your repository, rotateSecret is ignored.  
     */
   def updateWebhook(): Request[UpdateWebhookOutput, AWSError] = js.native
   def updateWebhook(callback: js.Function2[/* err */ AWSError, /* data */ UpdateWebhookOutput, Unit]): Request[UpdateWebhookOutput, AWSError] = js.native
   /**
-    *  Updates the webhook associated with an AWS CodeBuild build project.    If you use Bitbucket for your repository, rotateSecret is ignored.  
+    *  Updates the webhook associated with an CodeBuild build project.    If you use Bitbucket for your repository, rotateSecret is ignored.  
     */
   def updateWebhook(params: UpdateWebhookInput): Request[UpdateWebhookOutput, AWSError] = js.native
   def updateWebhook(

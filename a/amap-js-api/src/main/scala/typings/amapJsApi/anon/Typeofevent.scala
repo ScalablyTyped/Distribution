@@ -18,7 +18,7 @@ trait Typeofevent extends StObject {
     * @param handler 事件功能函数
     * @param context 事件上下文
     */
-  def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 92 */ js.Any */, C](
+  def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ Any */, C](
     // tslint:disable-next-line: no-unnecessary-generics
   instance: /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementTagNameMap[N] */ js.Any,
     eventName: E,
@@ -28,7 +28,7 @@ trait Typeofevent extends StObject {
       Unit
     ]
   ): EventListener[`0`] = js.native
-  def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 92 */ js.Any */, C](
+  def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 100 */ Any */, C](
     // tslint:disable-next-line: no-unnecessary-generics
   instance: /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementTagNameMap[N] */ js.Any,
     eventName: E,
@@ -51,13 +51,13 @@ trait Typeofevent extends StObject {
     // tslint:disable-next-line: no-unnecessary-generics
   instance: I,
     eventName: String,
-    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit]
+    handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit]
   ): EventListener[`1`] = js.native
   def addListener[I /* <: EventEmitter */, C](
     // tslint:disable-next-line: no-unnecessary-generics
   instance: I,
     eventName: String,
-    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
+    handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit],
     context: C
   ): EventListener[`1`] = js.native
   
@@ -72,13 +72,13 @@ trait Typeofevent extends StObject {
     // tslint:disable-next-line: no-unnecessary-generics
   instance: I,
     eventName: String,
-    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit]
+    handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit]
   ): EventListener[`1`] = js.native
   def addListenerOnce[I /* <: EventEmitter */, C](
     // tslint:disable-next-line: no-unnecessary-generics
   instance: I,
     eventName: String,
-    handler: js.ThisFunction1[/* this */ C, /* event */ js.Any, Unit],
+    handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit],
     context: C
   ): EventListener[`1`] = js.native
   
@@ -95,5 +95,5 @@ trait Typeofevent extends StObject {
     * @param data 事件数据
     */
   def trigger(instance: EventEmitter, eventName: String): Unit = js.native
-  def trigger(instance: EventEmitter, eventName: String, data: js.Any): Unit = js.native
+  def trigger(instance: EventEmitter, eventName: String, data: Any): Unit = js.native
 }

@@ -3,9 +3,9 @@ package typings.subleveldown
 import org.scalablytyped.runtime.StringDictionary
 import typings.abstractLeveldown.mod.AbstractIterator
 import typings.abstractLeveldown.mod.AbstractLevelDOWN
-import typings.abstractLeveldown.mod.ErrorCallback
 import typings.levelCodec.mod.CodecOptions
 import typings.levelup.mod.LevelUp
+import typings.std.ErrorCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,25 +21,17 @@ object mod {
     * @param opts
     * @see {@link https://github.com/Level/subleveldown#api subleveldown API}
     */
-  inline def apply[K, V](db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = ^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any]).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
-  inline def apply[K, V](db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]], prefix: String): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
+  inline def apply[K, V](db: LevelUp[AbstractLevelDOWN[Any, Any], AbstractIterator[Any, Any]]): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = ^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any]).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
+  inline def apply[K, V](db: LevelUp[AbstractLevelDOWN[Any, Any], AbstractIterator[Any, Any]], prefix: String): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
+  inline def apply[K, V](db: LevelUp[AbstractLevelDOWN[Any, Any], AbstractIterator[Any, Any]], prefix: String, opts: String): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
   inline def apply[K, V](
-    db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]],
-    prefix: String,
-    opts: String
-  ): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
-  inline def apply[K, V](
-    db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]],
+    db: LevelUp[AbstractLevelDOWN[Any, Any], AbstractIterator[Any, Any]],
     prefix: String,
     opts: SubDownOptions
   ): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
+  inline def apply[K, V](db: LevelUp[AbstractLevelDOWN[Any, Any], AbstractIterator[Any, Any]], prefix: Unit, opts: String): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
   inline def apply[K, V](
-    db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]],
-    prefix: Unit,
-    opts: String
-  ): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
-  inline def apply[K, V](
-    db: LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]],
+    db: LevelUp[AbstractLevelDOWN[Any, Any], AbstractIterator[Any, Any]],
     prefix: Unit,
     opts: SubDownOptions
   ): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]]]
@@ -59,7 +51,7 @@ object mod {
     extends StObject
        with CodecOptions
        with // TODO: Remove and inherit from constructor options from levelup package
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /**
       * Optional open hook called when the underlying `levelup` instance has been opened.

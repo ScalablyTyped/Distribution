@@ -11,7 +11,7 @@ trait Command extends StObject {
   var bindKey: js.UndefOr[String | Mac] = js.native
   
   def exec(editor: Editor): Unit = js.native
-  def exec(editor: Editor, args: js.Any): Unit = js.native
+  def exec(editor: Editor, args: Any): Unit = js.native
   
   var name: js.UndefOr[String] = js.native
   

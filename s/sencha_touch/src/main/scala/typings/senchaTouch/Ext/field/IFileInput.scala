@@ -12,17 +12,17 @@ trait IFileInput
   /** [Method] Updated the capture attribute with the  ink capture configuration
     * @param value Object
     */
-  var applyCapture: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var applyCapture: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Returns the value of accept
     * @returns Object
     */
-  var getAccept: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getAccept: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of capture
     * @returns Object
     */
-  var getCapture: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getCapture: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the field files
     * @returns FileList List of the files selected.
@@ -41,20 +41,20 @@ trait IFileInput
   var getValue_IFileInput: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Config Option] (Function) */
-  var me: js.UndefOr[js.Any] = js.undefined
+  var me: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Function) */
-  var newValue: js.UndefOr[js.Any] = js.undefined
+  var newValue: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the value of accept
     * @param accept Object The new value.
     */
-  var setAccept: js.UndefOr[js.Function1[/* accept */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setAccept: js.UndefOr[js.Function1[/* accept */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of capture
     * @param capture Object The new value.
     */
-  var setCapture: js.UndefOr[js.Function1[/* capture */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setCapture: js.UndefOr[js.Function1[/* capture */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of multiple
     * @param multiple Boolean The new value.
@@ -65,7 +65,7 @@ trait IFileInput
     * @param name Object The new value.
     */
   @JSName("setName")
-  var setName_IFileInput: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setName_IFileInput: js.UndefOr[js.Function1[/* name */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Called when the multiple property is updated  */
   var updateMultiple: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -79,15 +79,15 @@ object IFileInput {
   
   extension [Self <: IFileInput](x: Self) {
     
-    inline def setApplyCapture(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "applyCapture", js.Any.fromFunction1(value))
+    inline def setApplyCapture(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "applyCapture", js.Any.fromFunction1(value))
     
     inline def setApplyCaptureUndefined: Self = StObject.set(x, "applyCapture", js.undefined)
     
-    inline def setGetAccept(value: () => js.Any): Self = StObject.set(x, "getAccept", js.Any.fromFunction0(value))
+    inline def setGetAccept(value: () => Any): Self = StObject.set(x, "getAccept", js.Any.fromFunction0(value))
     
     inline def setGetAcceptUndefined: Self = StObject.set(x, "getAccept", js.undefined)
     
-    inline def setGetCapture(value: () => js.Any): Self = StObject.set(x, "getCapture", js.Any.fromFunction0(value))
+    inline def setGetCapture(value: () => Any): Self = StObject.set(x, "getCapture", js.Any.fromFunction0(value))
     
     inline def setGetCaptureUndefined: Self = StObject.set(x, "getCapture", js.undefined)
     
@@ -103,19 +103,19 @@ object IFileInput {
     
     inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
-    inline def setMe(value: js.Any): Self = StObject.set(x, "me", value.asInstanceOf[js.Any])
+    inline def setMe(value: Any): Self = StObject.set(x, "me", value.asInstanceOf[js.Any])
     
     inline def setMeUndefined: Self = StObject.set(x, "me", js.undefined)
     
-    inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
     inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
     
-    inline def setSetAccept(value: /* accept */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAccept", js.Any.fromFunction1(value))
+    inline def setSetAccept(value: /* accept */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setAccept", js.Any.fromFunction1(value))
     
     inline def setSetAcceptUndefined: Self = StObject.set(x, "setAccept", js.undefined)
     
-    inline def setSetCapture(value: /* capture */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCapture", js.Any.fromFunction1(value))
+    inline def setSetCapture(value: /* capture */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setCapture", js.Any.fromFunction1(value))
     
     inline def setSetCaptureUndefined: Self = StObject.set(x, "setCapture", js.undefined)
     
@@ -123,7 +123,7 @@ object IFileInput {
     
     inline def setSetMultipleUndefined: Self = StObject.set(x, "setMultiple", js.undefined)
     
-    inline def setSetName(value: /* name */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    inline def setSetName(value: /* name */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
     
     inline def setSetNameUndefined: Self = StObject.set(x, "setName", js.undefined)
     

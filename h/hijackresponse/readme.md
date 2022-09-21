@@ -10,10 +10,10 @@ Hijack HttpResponses
 | ------------------ | :-------------: |
 | Full name          | hijackresponse |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 17 |
-| # downloads        | 571259 |
-| # stars            | 1 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 23923.333333333332 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/gustavnikolaj/hijackresponse)

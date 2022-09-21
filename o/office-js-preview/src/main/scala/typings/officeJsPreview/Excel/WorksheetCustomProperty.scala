@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a worksheet-level custom property.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @js.native
@@ -28,14 +28,15 @@ trait WorksheetCustomProperty
   /**
     * Deletes the custom property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   def delete(): Unit = js.native
   
   /**
+    * Gets the key of the custom property. Custom property keys are case-insensitive. The key is limited to 255 characters (larger values will cause an `InvalidArgument` error to be thrown.)
     *
-    * Gets the key of the custom property. Custom property keys are case-insensitive. The key is limited to 255 characters (larger values will cause an "InvalidArgument" error to be thrown.)
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   val key: String = js.native
@@ -51,14 +52,8 @@ trait WorksheetCustomProperty
   def load(propertyNames: String): WorksheetCustomProperty = js.native
   def load(propertyNames: js.Array[String]): WorksheetCustomProperty = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.WorksheetCustomProperty): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -74,9 +69,9 @@ trait WorksheetCustomProperty
   def toJSON(): WorksheetCustomPropertyData = js.native
   
   /**
-    *
     * Gets or sets the value of the custom property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var value: String = js.native

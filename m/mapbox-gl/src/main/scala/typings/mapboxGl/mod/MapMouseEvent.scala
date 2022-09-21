@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "MapMouseEvent")
 @js.native
-class MapMouseEvent () extends MapboxEvent[MouseEvent] {
+open class MapMouseEvent () extends MapboxEvent[MouseEvent] {
   
   var defaultPrevented: Boolean = js.native
   

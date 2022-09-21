@@ -21,7 +21,7 @@ trait PivotGridOptions extends StObject {
   
   var dataCellTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | PivotDataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | PivotDataSource] = js.undefined
   
   var excel: js.UndefOr[PivotGridExcel] = js.undefined
   
@@ -88,7 +88,7 @@ object PivotGridOptions {
     
     inline def setDataCellTemplateUndefined: Self = StObject.set(x, "dataCellTemplate", js.undefined)
     
-    inline def setDataSource(value: js.Any | PivotDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | PivotDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     

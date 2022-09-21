@@ -28,7 +28,7 @@ object shapesLayoutMod {
       
       inline def setContent(value: LayoutContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setContentVarargs(value: (LayoutRow | LayoutColumn | LayoutComponent)*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: (LayoutRow | LayoutColumn | LayoutComponent)*): Self = StObject.set(x, "content", js.Array(value*))
       
       inline def setSettings(value: ConstrainDragToContainer): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }
@@ -52,7 +52,7 @@ object shapesLayoutMod {
       
       inline def setContent(value: LayoutContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setContentVarargs(value: (LayoutRow | LayoutColumn | LayoutComponent)*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: (LayoutRow | LayoutColumn | LayoutComponent)*): Self = StObject.set(x, "content", js.Array(value*))
       
       inline def setType(value: column): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -104,7 +104,7 @@ object shapesLayoutMod {
       
       inline def setContent(value: LayoutContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setContentVarargs(value: (LayoutRow | LayoutColumn | LayoutComponent)*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: (LayoutRow | LayoutColumn | LayoutComponent)*): Self = StObject.set(x, "content", js.Array(value*))
       
       inline def setType(value: row): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

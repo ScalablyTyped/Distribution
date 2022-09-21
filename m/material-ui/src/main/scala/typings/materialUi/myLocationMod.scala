@@ -10,10 +10,10 @@ object myLocationMod {
   
   @JSImport("material-ui/svg-icons/maps/my-location", JSImport.Default)
   @js.native
-  class default () extends MapsMyLocation
+  open class default () extends MapsMyLocation
   
   @JSImport("material-ui/svg-icons/maps/my-location", "MapsMyLocation")
   @js.native
-  class MapsMyLocation ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsMyLocation ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

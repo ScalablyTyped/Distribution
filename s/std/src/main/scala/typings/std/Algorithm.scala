@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Algorithm extends StObject {
   
+  /* standard dom */
   var name: java.lang.String
 }
 object Algorithm {

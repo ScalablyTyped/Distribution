@@ -15,8 +15,8 @@ trait Uniform extends StObject {
   var elements: js.Array[JQuery] = js.native
   
   def restore(): Unit = js.native
-  def restore(elemOrSelector: js.Any): Unit = js.native
+  def restore(elemOrSelector: Any): Unit = js.native
   
   def update(): Unit = js.native
-  def update(elemOrSelector: js.Any): Unit = js.native
+  def update(elemOrSelector: Any): Unit = js.native
 }

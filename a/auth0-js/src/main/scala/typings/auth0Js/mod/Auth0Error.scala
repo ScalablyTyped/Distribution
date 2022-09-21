@@ -20,7 +20,7 @@ trait Auth0Error extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var original: js.UndefOr[js.Any] = js.undefined
+  var original: js.UndefOr[Any] = js.undefined
   
   var policy: js.UndefOr[String] = js.undefined
   
@@ -59,7 +59,7 @@ object Auth0Error {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOriginal(value: js.Any): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: Any): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
     inline def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
     

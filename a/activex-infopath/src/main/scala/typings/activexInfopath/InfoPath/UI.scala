@@ -14,150 +14,38 @@ trait UI extends StObject {
   
   def ShowMailItem(bstrTo: String, bstrCC: String, bstrBCC: String, bstrSubject: String, bstrBody: String): Unit = js.native
   
-  def ShowModalDialog(bstrName: String): js.Any = js.native
-  def ShowModalDialog(bstrName: String, varArguments: js.Any): js.Any = js.native
-  def ShowModalDialog(bstrName: String, varArguments: js.Any, varHeight: js.Any): js.Any = js.native
-  def ShowModalDialog(bstrName: String, varArguments: js.Any, varHeight: js.Any, varWidth: js.Any): js.Any = js.native
-  def ShowModalDialog(bstrName: String, varArguments: js.Any, varHeight: js.Any, varWidth: js.Any, varTop: js.Any): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: js.Any,
-    varHeight: js.Any,
-    varWidth: js.Any,
-    varTop: js.Any,
-    varLeft: js.Any
-  ): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: js.Any,
-    varHeight: js.Any,
-    varWidth: js.Any,
-    varTop: Unit,
-    varLeft: js.Any
-  ): js.Any = js.native
-  def ShowModalDialog(bstrName: String, varArguments: js.Any, varHeight: js.Any, varWidth: Unit, varTop: js.Any): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: js.Any,
-    varHeight: js.Any,
-    varWidth: Unit,
-    varTop: js.Any,
-    varLeft: js.Any
-  ): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: js.Any,
-    varHeight: js.Any,
-    varWidth: Unit,
-    varTop: Unit,
-    varLeft: js.Any
-  ): js.Any = js.native
-  def ShowModalDialog(bstrName: String, varArguments: js.Any, varHeight: Unit, varWidth: js.Any): js.Any = js.native
-  def ShowModalDialog(bstrName: String, varArguments: js.Any, varHeight: Unit, varWidth: js.Any, varTop: js.Any): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: js.Any,
-    varHeight: Unit,
-    varWidth: js.Any,
-    varTop: js.Any,
-    varLeft: js.Any
-  ): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: js.Any,
-    varHeight: Unit,
-    varWidth: js.Any,
-    varTop: Unit,
-    varLeft: js.Any
-  ): js.Any = js.native
-  def ShowModalDialog(bstrName: String, varArguments: js.Any, varHeight: Unit, varWidth: Unit, varTop: js.Any): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: js.Any,
-    varHeight: Unit,
-    varWidth: Unit,
-    varTop: js.Any,
-    varLeft: js.Any
-  ): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: js.Any,
-    varHeight: Unit,
-    varWidth: Unit,
-    varTop: Unit,
-    varLeft: js.Any
-  ): js.Any = js.native
-  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: js.Any): js.Any = js.native
-  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: js.Any, varWidth: js.Any): js.Any = js.native
-  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: js.Any, varWidth: js.Any, varTop: js.Any): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: Unit,
-    varHeight: js.Any,
-    varWidth: js.Any,
-    varTop: js.Any,
-    varLeft: js.Any
-  ): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: Unit,
-    varHeight: js.Any,
-    varWidth: js.Any,
-    varTop: Unit,
-    varLeft: js.Any
-  ): js.Any = js.native
-  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: js.Any, varWidth: Unit, varTop: js.Any): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: Unit,
-    varHeight: js.Any,
-    varWidth: Unit,
-    varTop: js.Any,
-    varLeft: js.Any
-  ): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: Unit,
-    varHeight: js.Any,
-    varWidth: Unit,
-    varTop: Unit,
-    varLeft: js.Any
-  ): js.Any = js.native
-  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Unit, varWidth: js.Any): js.Any = js.native
-  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Unit, varWidth: js.Any, varTop: js.Any): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: Unit,
-    varHeight: Unit,
-    varWidth: js.Any,
-    varTop: js.Any,
-    varLeft: js.Any
-  ): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: Unit,
-    varHeight: Unit,
-    varWidth: js.Any,
-    varTop: Unit,
-    varLeft: js.Any
-  ): js.Any = js.native
-  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Unit, varWidth: Unit, varTop: js.Any): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: Unit,
-    varHeight: Unit,
-    varWidth: Unit,
-    varTop: js.Any,
-    varLeft: js.Any
-  ): js.Any = js.native
-  def ShowModalDialog(
-    bstrName: String,
-    varArguments: Unit,
-    varHeight: Unit,
-    varWidth: Unit,
-    varTop: Unit,
-    varLeft: js.Any
-  ): js.Any = js.native
+  def ShowModalDialog(bstrName: String): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any, varHeight: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any, varHeight: Any, varWidth: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any, varHeight: Any, varWidth: Any, varTop: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any, varHeight: Any, varWidth: Any, varTop: Any, varLeft: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any, varHeight: Any, varWidth: Any, varTop: Unit, varLeft: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any, varHeight: Any, varWidth: Unit, varTop: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any, varHeight: Any, varWidth: Unit, varTop: Any, varLeft: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any, varHeight: Any, varWidth: Unit, varTop: Unit, varLeft: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any, varHeight: Unit, varWidth: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any, varHeight: Unit, varWidth: Any, varTop: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any, varHeight: Unit, varWidth: Any, varTop: Any, varLeft: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any, varHeight: Unit, varWidth: Any, varTop: Unit, varLeft: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any, varHeight: Unit, varWidth: Unit, varTop: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any, varHeight: Unit, varWidth: Unit, varTop: Any, varLeft: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Any, varHeight: Unit, varWidth: Unit, varTop: Unit, varLeft: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Any, varWidth: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Any, varWidth: Any, varTop: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Any, varWidth: Any, varTop: Any, varLeft: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Any, varWidth: Any, varTop: Unit, varLeft: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Any, varWidth: Unit, varTop: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Any, varWidth: Unit, varTop: Any, varLeft: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Any, varWidth: Unit, varTop: Unit, varLeft: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Unit, varWidth: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Unit, varWidth: Any, varTop: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Unit, varWidth: Any, varTop: Any, varLeft: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Unit, varWidth: Any, varTop: Unit, varLeft: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Unit, varWidth: Unit, varTop: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Unit, varWidth: Unit, varTop: Any, varLeft: Any): Any = js.native
+  def ShowModalDialog(bstrName: String, varArguments: Unit, varHeight: Unit, varWidth: Unit, varTop: Unit, varLeft: Any): Any = js.native
   
   def ShowSignatureDialog(): Unit = js.native
 }

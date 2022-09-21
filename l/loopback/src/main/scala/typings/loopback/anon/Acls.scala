@@ -25,7 +25,7 @@ object Acls {
     
     inline def setAcls(value: js.Array[ACL]): Self = StObject.set(x, "acls", value.asInstanceOf[js.Any])
     
-    inline def setAclsVarargs(value: ACL*): Self = StObject.set(x, "acls", js.Array(value :_*))
+    inline def setAclsVarargs(value: ACL*): Self = StObject.set(x, "acls", js.Array(value*))
     
     inline def setDefaultPermission(value: DENY): Self = StObject.set(x, "defaultPermission", value.asInstanceOf[js.Any])
     

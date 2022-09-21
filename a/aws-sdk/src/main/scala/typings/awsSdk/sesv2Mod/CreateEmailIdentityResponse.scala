@@ -12,7 +12,7 @@ trait CreateEmailIdentityResponse extends StObject {
   var DkimAttributes: js.UndefOr[typings.awsSdk.sesv2Mod.DkimAttributes] = js.undefined
   
   /**
-    * The email identity type.
+    * The email identity type. Note: the MANAGED_DOMAIN identity type is not supported.
     */
   var IdentityType: js.UndefOr[typings.awsSdk.sesv2Mod.IdentityType] = js.undefined
   

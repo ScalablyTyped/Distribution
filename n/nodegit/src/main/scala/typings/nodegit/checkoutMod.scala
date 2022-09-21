@@ -39,7 +39,7 @@ object checkoutMod {
   
   @JSImport("nodegit/checkout", "Checkout")
   @js.native
-  class Checkout () extends StObject
+  open class Checkout () extends StObject
   /* static members */
   object Checkout {
     

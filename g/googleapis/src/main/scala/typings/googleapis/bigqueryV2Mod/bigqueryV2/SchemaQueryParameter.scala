@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaQueryParameter extends StObject {
   
   /**
-    * [Optional] If unset, this is a positional parameter. Otherwise, should be
-    * unique within a query.
+    * [Optional] If unset, this is a positional parameter. Otherwise, should be unique within a query.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * [Required] The type of this parameter.
@@ -32,6 +31,8 @@ object SchemaQueryParameter {
   extension [Self <: SchemaQueryParameter](x: Self) {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     

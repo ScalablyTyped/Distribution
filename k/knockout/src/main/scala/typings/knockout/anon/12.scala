@@ -15,14 +15,14 @@ trait `12` extends StObject {
     element: Node,
     valueAccessor: js.Function0[MaybeSubscribable[Name]],
     allBindings: AllBindings,
-    viewModel: js.Any,
-    bindingContext: BindingContext[js.Any]
+    viewModel: Any,
+    bindingContext: BindingContext[Any]
   ): BindingHandlerControlsDescendant
 }
 object `12` {
   
   inline def apply(
-    init: (Node, js.Function0[MaybeSubscribable[Name]], AllBindings, js.Any, BindingContext[js.Any]) => BindingHandlerControlsDescendant
+    init: (Node, js.Function0[MaybeSubscribable[Name]], AllBindings, Any, BindingContext[Any]) => BindingHandlerControlsDescendant
   ): `12` = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction5(init))
     __obj.asInstanceOf[`12`]
@@ -31,7 +31,7 @@ object `12` {
   extension [Self <: `12`](x: Self) {
     
     inline def setInit(
-      value: (Node, js.Function0[MaybeSubscribable[Name]], AllBindings, js.Any, BindingContext[js.Any]) => BindingHandlerControlsDescendant
+      value: (Node, js.Function0[MaybeSubscribable[Name]], AllBindings, Any, BindingContext[Any]) => BindingHandlerControlsDescendant
     ): Self = StObject.set(x, "init", js.Any.fromFunction5(value))
   }
 }

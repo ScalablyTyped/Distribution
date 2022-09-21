@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Storage.Streams
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.IPromiseWithOperation
 import org.scalablytyped.runtime.StObject
@@ -46,7 +45,7 @@ trait DataWriter extends StObject {
     * Commits data in the buffer to a backing store.
     * @return The asynchronous store data operation.
     */
-  def storeAsync(): IPromiseWithOperation[js.Any, DataWriterStoreOperation] = js.native
+  def storeAsync(): IPromiseWithOperation[Any, DataWriterStoreOperation] = js.native
   
   /** Gets or sets the Unicode character encoding for the output stream. */
   var unicodeEncoding: UnicodeEncoding = js.native
@@ -89,7 +88,7 @@ trait DataWriter extends StObject {
     * Writes a date and time value to the output stream.
     * @param value The value.
     */
-  def writeDateTime(value: Date): Unit = js.native
+  def writeDateTime(value: js.Date): Unit = js.native
   
   /**
     * Writes a floating-point value to the output stream.

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ldapjs", "OperationsError")
 @js.native
-class OperationsError () extends StObject {
+open class OperationsError () extends StObject {
   def this(error: String) = this()
 }

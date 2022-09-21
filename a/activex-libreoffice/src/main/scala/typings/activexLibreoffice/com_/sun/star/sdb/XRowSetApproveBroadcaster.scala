@@ -22,7 +22,7 @@ object XRowSetApproveBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addRowSetApproveListener: XRowSetApproveListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeRowSetApproveListener: XRowSetApproveListener => Unit
   ): XRowSetApproveBroadcaster = {

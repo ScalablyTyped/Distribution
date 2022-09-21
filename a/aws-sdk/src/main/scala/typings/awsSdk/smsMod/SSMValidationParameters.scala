@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SSMValidationParameters extends StObject {
   
   /**
-    * The command to run the validation script
+    * The command to run the validation script.
     */
   var command: js.UndefOr[Command] = js.undefined
   

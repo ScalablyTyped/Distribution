@@ -4,16 +4,16 @@
 Typings are for version 7.0
 
 ## Library description:
-SS2 with Promises
+SSH2 with Promises
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | node-ssh |
 | Keywords           | ssh, ssh2, sftp |
-| # releases         | 12 |
-| # dependents       | 257 |
-| # downloads        | 878095 |
-| # stars            | 20 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 210655.0 |
+| # stars            | 749.0 |
 
 ## Links
 - [Homepage](https://github.com/steelbrain/node-ssh#readme)

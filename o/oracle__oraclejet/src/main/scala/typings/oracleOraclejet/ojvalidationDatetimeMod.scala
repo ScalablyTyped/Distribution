@@ -31,7 +31,7 @@ object ojvalidationDatetimeMod {
   
   @JSImport("@oracle/oraclejet/ojvalidation-datetime", "DateRestrictionValidator")
   @js.native
-  class DateRestrictionValidator ()
+  open class DateRestrictionValidator ()
     extends StObject
        with Validator[String] {
     def this(options: ValidatorOptions) = this()
@@ -148,7 +148,7 @@ object ojvalidationDatetimeMod {
     /* CompleteClass */
     override def format(value: String): String | Null = js.native
     
-    def getAvailableTimeZones(): js.Array[js.Any] = js.native
+    def getAvailableTimeZones(): js.Array[Any] = js.native
     
     def isDayNameSet(): Boolean = js.native
     
@@ -174,7 +174,7 @@ object ojvalidationDatetimeMod {
   
   @JSImport("@oracle/oraclejet/ojvalidation-datetime", "DateTimeRangeValidator")
   @js.native
-  class DateTimeRangeValidator ()
+  open class DateTimeRangeValidator ()
     extends StObject
        with Validator[String] {
     def this(options: typings.oracleOraclejet.ojvalidationDatetimeMod.DateTimeRangeValidator.ValidatorOptions) = this()
@@ -244,7 +244,7 @@ object ojvalidationDatetimeMod {
   
   @JSImport("@oracle/oraclejet/ojvalidation-datetime", "IntlDateTimeConverter")
   @js.native
-  class IntlDateTimeConverter () extends DateTimeConverter {
+  open class IntlDateTimeConverter () extends DateTimeConverter {
     def this(options: ConverterOptions) = this()
     
     def formatRelative(value: String): String | Null = js.native

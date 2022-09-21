@@ -1,30 +1,43 @@
 package typings.kdbxweb.mod
 
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
+import typings.kdbxweb.kdbxCredentialsMod.KdbxChallengeResponseFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "Credentials")
 @js.native
-class Credentials () extends StObject {
-  def this(password: ProtectedValue) = this()
-  def this(password: Null, keyFile: String) = this()
-  def this(password: Null, keyFile: ArrayBuffer) = this()
-  def this(password: Null, keyFile: Uint8Array) = this()
-  def this(password: ProtectedValue, keyFile: String) = this()
-  def this(password: ProtectedValue, keyFile: ArrayBuffer) = this()
-  def this(password: ProtectedValue, keyFile: Uint8Array) = this()
-  
-  def getHash(): js.Promise[ArrayBuffer] = js.native
-  
-  def setKeyFile(): js.Promise[Unit] = js.native
-  def setKeyFile(keyFile: ArrayBuffer): js.Promise[Unit] = js.native
-  def setKeyFile(keyFile: Uint8Array): js.Promise[Unit] = js.native
-  
-  def setPassword(): js.Promise[Unit] = js.native
-  def setPassword(password: ProtectedValue): js.Promise[Unit] = js.native
+open class Credentials ()
+  extends typings.kdbxweb.kdbxCredentialsMod.KdbxCredentials {
+  def this(password: typings.kdbxweb.protectedValueMod.ProtectedValue) = this()
+  def this(password: Null, keyFile: js.typedarray.ArrayBuffer) = this()
+  def this(password: Null, keyFile: js.typedarray.Uint8Array) = this()
+  def this(password: typings.kdbxweb.protectedValueMod.ProtectedValue, keyFile: js.typedarray.ArrayBuffer) = this()
+  def this(password: typings.kdbxweb.protectedValueMod.ProtectedValue, keyFile: js.typedarray.Uint8Array) = this()
+  def this(password: Null, keyFile: js.typedarray.ArrayBuffer, challengeResponse: KdbxChallengeResponseFn) = this()
+  def this(password: Null, keyFile: js.typedarray.Uint8Array, challengeResponse: KdbxChallengeResponseFn) = this()
+  def this(password: Null, keyFile: Null, challengeResponse: KdbxChallengeResponseFn) = this()
+  def this(password: Null, keyFile: Unit, challengeResponse: KdbxChallengeResponseFn) = this()
+  def this(
+    password: typings.kdbxweb.protectedValueMod.ProtectedValue,
+    keyFile: js.typedarray.ArrayBuffer,
+    challengeResponse: KdbxChallengeResponseFn
+  ) = this()
+  def this(
+    password: typings.kdbxweb.protectedValueMod.ProtectedValue,
+    keyFile: js.typedarray.Uint8Array,
+    challengeResponse: KdbxChallengeResponseFn
+  ) = this()
+  def this(
+    password: typings.kdbxweb.protectedValueMod.ProtectedValue,
+    keyFile: Null,
+    challengeResponse: KdbxChallengeResponseFn
+  ) = this()
+  def this(
+    password: typings.kdbxweb.protectedValueMod.ProtectedValue,
+    keyFile: Unit,
+    challengeResponse: KdbxChallengeResponseFn
+  ) = this()
 }
 /* static members */
 object Credentials {
@@ -33,7 +46,9 @@ object Credentials {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createKeyFileWithHash(hash: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("createKeyFileWithHash")(hash.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def createKeyFileWithHash(keyBytes: js.typedarray.ArrayBuffer): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createKeyFileWithHash")(keyBytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
+  inline def createKeyFileWithHash(keyBytes: js.typedarray.ArrayBuffer, version: Double): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("createKeyFileWithHash")(keyBytes.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
   
-  inline def createRandomKeyFile(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandomKeyFile")().asInstanceOf[Uint8Array]
+  inline def createRandomKeyFile(): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandomKeyFile")().asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
+  inline def createRandomKeyFile(version: Double): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandomKeyFile")(version.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
 }

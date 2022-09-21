@@ -33,7 +33,7 @@ object AxisMeshNames {
     
     inline def setAxisMeshNames(value: js.Array[String]): Self = StObject.set(x, "axisMeshNames", value.asInstanceOf[js.Any])
     
-    inline def setAxisMeshNamesVarargs(value: String*): Self = StObject.set(x, "axisMeshNames", js.Array(value :_*))
+    inline def setAxisMeshNamesVarargs(value: String*): Self = StObject.set(x, "axisMeshNames", js.Array(value*))
     
     inline def setButtonMeshNames(value: Grip): Self = StObject.set(x, "buttonMeshNames", value.asInstanceOf[js.Any])
     
@@ -41,7 +41,7 @@ object AxisMeshNames {
     
     inline def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setPointingPoseMeshName(value: String): Self = StObject.set(x, "pointingPoseMeshName", value.asInstanceOf[js.Any])
   }

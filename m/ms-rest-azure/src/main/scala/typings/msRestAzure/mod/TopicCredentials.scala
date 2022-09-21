@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ms-rest-azure", "TopicCredentials")
 @js.native
-class TopicCredentials protected () extends ApiKeyCredentials {
+open class TopicCredentials protected () extends ApiKeyCredentials {
   /**
     * Creates a new EventGrid TopicCredentials object.
     *

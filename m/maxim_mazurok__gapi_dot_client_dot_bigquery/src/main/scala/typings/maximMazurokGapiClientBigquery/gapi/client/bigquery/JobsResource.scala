@@ -21,6 +21,10 @@ trait JobsResource extends StObject {
   def cancel(): Request[JobCancelResponse] = js.native
   def cancel(request: JobId): Request[JobCancelResponse] = js.native
   
+  /** Requests the deletion of the metadata of a job. This call returns when the job's metadata is deleted. */
+  def delete(): Request[Unit] = js.native
+  def delete(request: JobId): Request[Unit] = js.native
+  
   /**
     * Returns information about a specific job. Job information is available for a six month period after creation. Requires that you're the person who ran the job, or have the Is Owner
     * project role.

@@ -1,25 +1,8 @@
 package typings.googleMapsReact
 
-import typings.googleMapsReact.anon.Typeofgoogle
-import typings.googleMapsReact.anon.Typeofmaps
-import typings.googlemaps.google.maps.Animation
-import typings.googlemaps.google.maps.Icon
-import typings.googlemaps.google.maps.LatLng
-import typings.googlemaps.google.maps.LatLngBounds
-import typings.googlemaps.google.maps.LatLngBoundsLiteral
-import typings.googlemaps.google.maps.LatLngLiteral
-import typings.googlemaps.google.maps.MapOptions
-import typings.googlemaps.google.maps.MarkerLabel
-import typings.googlemaps.google.maps.MarkerShape
-import typings.googlemaps.google.maps.Point
-import typings.googlemaps.google.maps.Size
-import typings.googlemaps.google.maps.StreetViewPanorama
-import typings.googlemaps.google.maps.Symbol
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
-import typings.std.Element
 import typings.std.Exclude
-import typings.std.Node
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,14 +16,13 @@ object mod {
   
   @JSImport("google-maps-react", "Circle")
   @js.native
-  class Circle protected ()
-    extends Component[js.Any, js.Any, js.Any] {
-    def this(props: js.Any) = this()
+  open class Circle protected () extends Component[Any, Any, Any] {
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   inline def GoogleApiWrapper(opts: GoogleApiOptionsFunc): js.Function1[
@@ -60,86 +42,66 @@ object mod {
   
   @JSImport("google-maps-react", "InfoWindow")
   @js.native
-  class InfoWindow protected ()
-    extends Component[IInfoWindowProps, js.Any, js.Any] {
+  open class InfoWindow protected () extends Component[IInfoWindowProps, Any, Any] {
     def this(props: IInfoWindowProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IInfoWindowProps, context: js.Any) = this()
+    def this(props: IInfoWindowProps, context: Any) = this()
   }
   
   @JSImport("google-maps-react", "Map")
   @js.native
-  class Map protected ()
-    extends Component[IMapProps, js.Any, js.Any] {
+  open class Map protected () extends Component[IMapProps, Any, Any] {
     def this(props: IMapProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IMapProps, context: js.Any) = this()
+    def this(props: IMapProps, context: Any) = this()
   }
   
   @JSImport("google-maps-react", "Marker")
   @js.native
-  class Marker protected ()
-    extends Component[IMarkerProps, js.Any, js.Any] {
+  open class Marker protected () extends Component[IMarkerProps, Any, Any] {
     def this(props: IMarkerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IMarkerProps, context: js.Any) = this()
+    def this(props: IMarkerProps, context: Any) = this()
   }
   
   @JSImport("google-maps-react", "Polygon")
   @js.native
-  class Polygon protected ()
-    extends Component[js.Any, js.Any, js.Any] {
-    def this(props: js.Any) = this()
+  open class Polygon protected () extends Component[Any, Any, Any] {
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
   @JSImport("google-maps-react", "Polyline")
   @js.native
-  class Polyline protected ()
-    extends Component[js.Any, js.Any, js.Any] {
-    def this(props: js.Any) = this()
+  open class Polyline protected () extends Component[Any, Any, Any] {
+    def this(props: Any) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Any, context: js.Any) = this()
+    def this(props: Any, context: Any) = this()
   }
   
-  trait GoogleAPI extends StObject {
-    
-    val maps: Typeofmaps
-  }
-  object GoogleAPI {
-    
-    inline def apply(maps: Typeofmaps): GoogleAPI = {
-      val __obj = js.Dynamic.literal(maps = maps.asInstanceOf[js.Any])
-      __obj.asInstanceOf[GoogleAPI]
-    }
-    
-    extension [Self <: GoogleAPI](x: Self) {
-      
-      inline def setMaps(value: Typeofmaps): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
-    }
-  }
+  type GoogleAPI = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google */ Any
   
-  type GoogleApiOptionsFunc = js.Function1[/* props */ js.Any, IGoogleApiOptions]
+  type GoogleApiOptionsFunc = js.Function1[/* props */ Any, IGoogleApiOptions]
   
   trait IGoogleApiOptions extends StObject {
     
-    var LoadingContainer: js.UndefOr[js.Any] = js.undefined
+    var LoadingContainer: js.UndefOr[Any] = js.undefined
     
     var apiKey: String
     
@@ -178,9 +140,9 @@ object mod {
       
       inline def setLibrariesUndefined: Self = StObject.set(x, "libraries", js.undefined)
       
-      inline def setLibrariesVarargs(value: String*): Self = StObject.set(x, "libraries", js.Array(value :_*))
+      inline def setLibrariesVarargs(value: String*): Self = StObject.set(x, "libraries", js.Array(value*))
       
-      inline def setLoadingContainer(value: js.Any): Self = StObject.set(x, "LoadingContainer", value.asInstanceOf[js.Any])
+      inline def setLoadingContainer(value: Any): Self = StObject.set(x, "LoadingContainer", value.asInstanceOf[js.Any])
       
       inline def setLoadingContainerUndefined: Self = StObject.set(x, "LoadingContainer", js.undefined)
       
@@ -198,37 +160,27 @@ object mod {
     }
   }
   
-  /* Inlined parent std.Partial<googlemaps.google.maps.InfoWindowOptions> */
-  trait IInfoWindowProps extends StObject {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.InfoWindowOptions * / any ]:? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.InfoWindowOptions * / any[P]} */ trait IInfoWindowProps extends StObject {
     
-    var content: js.UndefOr[String | Node] = js.undefined
+    var google: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google */ Any
     
-    var disableAutoPan: js.UndefOr[Boolean] = js.undefined
+    var map: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
     
-    var google: Typeofgoogle
+    var mapCenter: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLng */ Any
+      ] = js.undefined
     
-    var map: typings.googlemaps.google.maps.Map[Element]
-    
-    var mapCenter: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
-    
-    var marker: typings.googlemaps.google.maps.Marker
-    
-    var maxWidth: js.UndefOr[Double] = js.undefined
-    
-    var pixelOffset: js.UndefOr[Size] = js.undefined
-    
-    var position: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
+    var marker: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Marker */ Any
     
     var visible: js.UndefOr[Boolean] = js.undefined
-    
-    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object IInfoWindowProps {
     
     inline def apply(
-      google: Typeofgoogle,
-      map: typings.googlemaps.google.maps.Map[Element],
-      marker: typings.googlemaps.google.maps.Marker
+      google: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google */ Any,
+      map: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any,
+      marker: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Marker */ Any
     ): IInfoWindowProps = {
       val __obj = js.Dynamic.literal(google = google.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any])
       __obj.asInstanceOf[IInfoWindowProps]
@@ -236,62 +188,48 @@ object mod {
     
     extension [Self <: IInfoWindowProps](x: Self) {
       
-      inline def setContent(value: String | Node): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setGoogle(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google */ Any): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
       
-      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setMap(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+      ): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      inline def setDisableAutoPan(value: Boolean): Self = StObject.set(x, "disableAutoPan", value.asInstanceOf[js.Any])
-      
-      inline def setDisableAutoPanUndefined: Self = StObject.set(x, "disableAutoPan", js.undefined)
-      
-      inline def setGoogle(value: Typeofgoogle): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
-      
-      inline def setMap(value: typings.googlemaps.google.maps.Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
-      
-      inline def setMapCenter(value: LatLng | LatLngLiteral): Self = StObject.set(x, "mapCenter", value.asInstanceOf[js.Any])
+      inline def setMapCenter(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLng */ Any
+      ): Self = StObject.set(x, "mapCenter", value.asInstanceOf[js.Any])
       
       inline def setMapCenterUndefined: Self = StObject.set(x, "mapCenter", js.undefined)
       
-      inline def setMarker(value: typings.googlemaps.google.maps.Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
-      
-      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
-      
-      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
-      
-      inline def setPixelOffset(value: Size): Self = StObject.set(x, "pixelOffset", value.asInstanceOf[js.Any])
-      
-      inline def setPixelOffsetUndefined: Self = StObject.set(x, "pixelOffset", js.undefined)
-      
-      inline def setPosition(value: LatLng | LatLngLiteral): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
-      
-      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setMarker(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Marker */ Any
+      ): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
       inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
-      
-      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
-      
-      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
-  trait IMapProps
-    extends StObject
-       with MapOptions {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.MapOptions * / any */ trait IMapProps extends StObject {
     
-    var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.undefined
+    var bounds: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLngBounds */ Any
+      ] = js.undefined
+    
+    var center: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLngLiteral */ Any
+      ] = js.undefined
     
     var centerAroundCurrentLocation: js.UndefOr[Boolean] = js.undefined
-    
-    @JSName("center")
-    var center_IMapProps: js.UndefOr[LatLngLiteral] = js.undefined
     
     var containerStyle: js.UndefOr[Style] = js.undefined
     
     var google: GoogleAPI
     
-    var initialCenter: js.UndefOr[LatLngLiteral] = js.undefined
+    var initialCenter: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLngLiteral */ Any
+      ] = js.undefined
     
     var loaded: js.UndefOr[Boolean] = js.undefined
     
@@ -348,11 +286,15 @@ object mod {
     
     extension [Self <: IMapProps](x: Self) {
       
-      inline def setBounds(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLngBounds */ Any
+      ): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
       inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      inline def setCenter(value: LatLngLiteral): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLngLiteral */ Any
+      ): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
       inline def setCenterAroundCurrentLocation(value: Boolean): Self = StObject.set(x, "centerAroundCurrentLocation", value.asInstanceOf[js.Any])
       
@@ -366,7 +308,9 @@ object mod {
       
       inline def setGoogle(value: GoogleAPI): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
       
-      inline def setInitialCenter(value: LatLngLiteral): Self = StObject.set(x, "initialCenter", value.asInstanceOf[js.Any])
+      inline def setInitialCenter(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLngLiteral */ Any
+      ): Self = StObject.set(x, "initialCenter", value.asInstanceOf[js.Any])
       
       inline def setInitialCenterUndefined: Self = StObject.set(x, "initialCenter", js.undefined)
       
@@ -375,121 +319,161 @@ object mod {
       inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
       
       inline def setOnBoundsChanged(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onBoundsChanged", js.Any.fromFunction3(value))
       
       inline def setOnBoundsChangedUndefined: Self = StObject.set(x, "onBoundsChanged", js.undefined)
       
       inline def setOnCenterChanged(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onCenterChanged", js.Any.fromFunction3(value))
       
       inline def setOnCenterChangedUndefined: Self = StObject.set(x, "onCenterChanged", js.undefined)
       
       inline def setOnClick(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       inline def setOnDblclick(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onDblclick", js.Any.fromFunction3(value))
       
       inline def setOnDblclickUndefined: Self = StObject.set(x, "onDblclick", js.undefined)
       
       inline def setOnDragend(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onDragend", js.Any.fromFunction3(value))
       
       inline def setOnDragendUndefined: Self = StObject.set(x, "onDragend", js.undefined)
       
       inline def setOnDragstart(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onDragstart", js.Any.fromFunction3(value))
       
       inline def setOnDragstartUndefined: Self = StObject.set(x, "onDragstart", js.undefined)
       
       inline def setOnHeadingChange(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onHeadingChange", js.Any.fromFunction3(value))
       
       inline def setOnHeadingChangeUndefined: Self = StObject.set(x, "onHeadingChange", js.undefined)
       
       inline def setOnIdle(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onIdle", js.Any.fromFunction3(value))
       
       inline def setOnIdleUndefined: Self = StObject.set(x, "onIdle", js.undefined)
       
       inline def setOnMaptypeidChanged(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onMaptypeidChanged", js.Any.fromFunction3(value))
       
       inline def setOnMaptypeidChangedUndefined: Self = StObject.set(x, "onMaptypeidChanged", js.undefined)
       
       inline def setOnMousemove(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onMousemove", js.Any.fromFunction3(value))
       
       inline def setOnMousemoveUndefined: Self = StObject.set(x, "onMousemove", js.undefined)
       
       inline def setOnMouseout(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onMouseout", js.Any.fromFunction3(value))
       
       inline def setOnMouseoutUndefined: Self = StObject.set(x, "onMouseout", js.undefined)
       
       inline def setOnMouseover(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onMouseover", js.Any.fromFunction3(value))
       
       inline def setOnMouseoverUndefined: Self = StObject.set(x, "onMouseover", js.undefined)
       
       inline def setOnProjectionChanged(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onProjectionChanged", js.Any.fromFunction3(value))
       
       inline def setOnProjectionChangedUndefined: Self = StObject.set(x, "onProjectionChanged", js.undefined)
       
       inline def setOnReady(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onReady", js.Any.fromFunction3(value))
       
       inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
       
       inline def setOnRecenter(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onRecenter", js.Any.fromFunction3(value))
       
       inline def setOnRecenterUndefined: Self = StObject.set(x, "onRecenter", js.undefined)
       
       inline def setOnResize(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onResize", js.Any.fromFunction3(value))
       
       inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       inline def setOnRightclick(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onRightclick", js.Any.fromFunction3(value))
       
       inline def setOnRightclickUndefined: Self = StObject.set(x, "onRightclick", js.undefined)
       
       inline def setOnTilesloaded(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onTilesloaded", js.Any.fromFunction3(value))
       
       inline def setOnTilesloadedUndefined: Self = StObject.set(x, "onTilesloaded", js.undefined)
       
       inline def setOnTiltChanged(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onTiltChanged", js.Any.fromFunction3(value))
       
       inline def setOnTiltChangedUndefined: Self = StObject.set(x, "onTiltChanged", js.undefined)
       
       inline def setOnZoomChanged(
-        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], /* event */ js.Any) => js.Any
+        value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onZoomChanged", js.Any.fromFunction3(value))
       
       inline def setOnZoomChangedUndefined: Self = StObject.set(x, "onZoomChanged", js.undefined)
@@ -504,46 +488,16 @@ object mod {
     }
   }
   
-  /* Inlined parent std.Partial<googlemaps.google.maps.MarkerOptions> */
-  trait IMarkerProps extends StObject {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.MarkerOptions * / any ]:? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.MarkerOptions * / any[P]} */ trait IMarkerProps extends StObject {
     
-    var anchorPoint: js.UndefOr[Point] = js.undefined
-    
-    var animation: js.UndefOr[Animation] = js.undefined
-    
-    var clickable: js.UndefOr[Boolean] = js.undefined
-    
-    var crossOnDrag: js.UndefOr[Boolean] = js.undefined
-    
-    var cursor: js.UndefOr[String] = js.undefined
-    
-    var draggable: js.UndefOr[Boolean] = js.undefined
-    
-    var icon: js.UndefOr[String | Icon | Symbol] = js.undefined
-    
-    var label: js.UndefOr[String | MarkerLabel] = js.undefined
-    
-    var map: js.UndefOr[typings.googlemaps.google.maps.Map[Element] | StreetViewPanorama] = js.undefined
-    
-    var mapCenter: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
+    var mapCenter: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLng */ Any
+      ] = js.undefined
     
     var onClick: js.UndefOr[markerEventHandler] = js.undefined
     
     var onMouseover: js.UndefOr[markerEventHandler] = js.undefined
-    
-    var opacity: js.UndefOr[Double] = js.undefined
-    
-    var optimized: js.UndefOr[Boolean] = js.undefined
-    
-    var position: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
-    
-    var shape: js.UndefOr[MarkerShape] = js.undefined
-    
-    var title: js.UndefOr[String] = js.undefined
-    
-    var visible: js.UndefOr[Boolean] = js.undefined
-    
-    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object IMarkerProps {
     
@@ -554,85 +508,27 @@ object mod {
     
     extension [Self <: IMarkerProps](x: Self) {
       
-      inline def setAnchorPoint(value: Point): Self = StObject.set(x, "anchorPoint", value.asInstanceOf[js.Any])
-      
-      inline def setAnchorPointUndefined: Self = StObject.set(x, "anchorPoint", js.undefined)
-      
-      inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
-      
-      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
-      
-      inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
-      
-      inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
-      
-      inline def setCrossOnDrag(value: Boolean): Self = StObject.set(x, "crossOnDrag", value.asInstanceOf[js.Any])
-      
-      inline def setCrossOnDragUndefined: Self = StObject.set(x, "crossOnDrag", js.undefined)
-      
-      inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
-      
-      inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
-      
-      inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
-      
-      inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
-      
-      inline def setIcon(value: String | Icon | Symbol): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
-      
-      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
-      
-      inline def setLabel(value: String | MarkerLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-      
-      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
-      
-      inline def setMap(value: typings.googlemaps.google.maps.Map[Element] | StreetViewPanorama): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
-      
-      inline def setMapCenter(value: LatLng | LatLngLiteral): Self = StObject.set(x, "mapCenter", value.asInstanceOf[js.Any])
+      inline def setMapCenter(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLng */ Any
+      ): Self = StObject.set(x, "mapCenter", value.asInstanceOf[js.Any])
       
       inline def setMapCenterUndefined: Self = StObject.set(x, "mapCenter", js.undefined)
       
-      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
-      
       inline def setOnClick(
-        value: (/* props */ js.UndefOr[IMarkerProps], /* marker */ js.UndefOr[typings.googlemaps.google.maps.Marker], /* event */ js.Any) => js.Any
+        value: (/* props */ js.UndefOr[IMarkerProps], /* marker */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Marker */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       inline def setOnMouseover(
-        value: (/* props */ js.UndefOr[IMarkerProps], /* marker */ js.UndefOr[typings.googlemaps.google.maps.Marker], /* event */ js.Any) => js.Any
+        value: (/* props */ js.UndefOr[IMarkerProps], /* marker */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Marker */ Any
+            ], /* event */ Any) => Any
       ): Self = StObject.set(x, "onMouseover", js.Any.fromFunction3(value))
       
       inline def setOnMouseoverUndefined: Self = StObject.set(x, "onMouseover", js.undefined)
-      
-      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
-      
-      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
-      
-      inline def setOptimized(value: Boolean): Self = StObject.set(x, "optimized", value.asInstanceOf[js.Any])
-      
-      inline def setOptimizedUndefined: Self = StObject.set(x, "optimized", js.undefined)
-      
-      inline def setPosition(value: LatLng | LatLngLiteral): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
-      
-      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
-      
-      inline def setShape(value: MarkerShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
-      
-      inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
-      
-      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-      
-      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
-      
-      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
-      
-      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
-      
-      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
-      
-      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -665,15 +561,19 @@ object mod {
   
   type mapEventHandler = js.Function3[
     /* mapProps */ js.UndefOr[IMapProps], 
-    /* map */ js.UndefOr[typings.googlemaps.google.maps.Map[Element]], 
-    /* event */ js.Any, 
-    js.Any
+    /* map */ js.UndefOr[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+    ], 
+    /* event */ Any, 
+    Any
   ]
   
   type markerEventHandler = js.Function3[
     /* props */ js.UndefOr[IMarkerProps], 
-    /* marker */ js.UndefOr[typings.googlemaps.google.maps.Marker], 
-    /* event */ js.Any, 
-    js.Any
+    /* marker */ js.UndefOr[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Marker */ Any
+    ], 
+    /* event */ Any, 
+    Any
   ]
 }

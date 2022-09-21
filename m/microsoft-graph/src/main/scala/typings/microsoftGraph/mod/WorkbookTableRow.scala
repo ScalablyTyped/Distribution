@@ -15,7 +15,7 @@ trait WorkbookTableRow
     * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell
     * that contain an error will return the error string.
     */
-  var values: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var values: js.UndefOr[NullableOption[Any]] = js.undefined
 }
 object WorkbookTableRow {
   
@@ -30,7 +30,7 @@ object WorkbookTableRow {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    inline def setValues(value: NullableOption[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: NullableOption[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesNull: Self = StObject.set(x, "values", null)
     

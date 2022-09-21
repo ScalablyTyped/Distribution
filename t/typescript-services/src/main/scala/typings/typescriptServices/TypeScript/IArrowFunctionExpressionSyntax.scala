@@ -19,7 +19,7 @@ trait IArrowFunctionExpressionSyntax
 object IArrowFunctionExpressionSyntax {
   
   inline def apply(
-    accept: ISyntaxVisitor => js.Any,
+    accept: ISyntaxVisitor => Any,
     block: BlockSyntax,
     childAt: Double => ISyntaxElement,
     childCount: () => Double,

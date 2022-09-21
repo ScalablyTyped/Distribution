@@ -1,16 +1,15 @@
 package typings.expressWinston
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.ErrorRequestHandler
 import typings.express.mod.Handler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import typings.expressWinston.anon.Body
 import typings.logform.mod.Format_
-import typings.std.Error
+import typings.std.Record
 import typings.winston.mod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,7 +43,19 @@ object mod {
   
   inline def defaultSkip(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSkip")().asInstanceOf[Boolean]
   
-  inline def errorLogger(options: ErrorLoggerOptions): ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorLogger")(options.asInstanceOf[js.Any]).asInstanceOf[ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def errorLogger(options: ErrorLoggerOptions): ErrorRequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorLogger")(options.asInstanceOf[js.Any]).asInstanceOf[ErrorRequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("express-winston", "ignoredRoutes")
   @js.native
@@ -81,17 +92,17 @@ object mod {
     
     var meta: js.UndefOr[Boolean] = js.undefined
     
-    var metaField: js.UndefOr[String] = js.undefined
+    var metaField: js.UndefOr[String | Null] = js.undefined
     
     var msg: js.UndefOr[MessageTemplate] = js.undefined
     
-    var requestField: js.UndefOr[String] = js.undefined
+    var requestField: js.UndefOr[String | Null] = js.undefined
     
     var requestFilter: js.UndefOr[RequestFilter] = js.undefined
     
     var requestWhitelist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var responseField: js.UndefOr[String] = js.undefined
+    var responseField: js.UndefOr[String | Null] = js.undefined
     
     var skip: js.UndefOr[ErrorRouteFilter] = js.undefined
   }
@@ -112,15 +123,21 @@ object mod {
       
       inline def setBlacklistedMetaFieldsUndefined: Self = StObject.set(x, "blacklistedMetaFields", js.undefined)
       
-      inline def setBlacklistedMetaFieldsVarargs(value: String*): Self = StObject.set(x, "blacklistedMetaFields", js.Array(value :_*))
+      inline def setBlacklistedMetaFieldsVarargs(value: String*): Self = StObject.set(x, "blacklistedMetaFields", js.Array(value*))
       
       inline def setDynamicMeta(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* err */ Error) => js.Object
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]], /* err */ js.Error) => js.Object
       ): Self = StObject.set(x, "dynamicMeta", js.Any.fromFunction3(value))
       
       inline def setDynamicMetaUndefined: Self = StObject.set(x, "dynamicMeta", js.undefined)
       
-      inline def setExceptionToMeta(value: /* err */ Error => js.Object): Self = StObject.set(x, "exceptionToMeta", js.Any.fromFunction1(value))
+      inline def setExceptionToMeta(value: /* err */ js.Error => js.Object): Self = StObject.set(x, "exceptionToMeta", js.Any.fromFunction1(value))
       
       inline def setExceptionToMetaUndefined: Self = StObject.set(x, "exceptionToMeta", js.undefined)
       
@@ -132,12 +149,18 @@ object mod {
       
       inline def setHeaderBlacklistUndefined: Self = StObject.set(x, "headerBlacklist", js.undefined)
       
-      inline def setHeaderBlacklistVarargs(value: String*): Self = StObject.set(x, "headerBlacklist", js.Array(value :_*))
+      inline def setHeaderBlacklistVarargs(value: String*): Self = StObject.set(x, "headerBlacklist", js.Array(value*))
       
       inline def setLevel(value: String | DynamicLevelFunction): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
       inline def setLevelFunction3(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* err */ Error) => String
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]], /* err */ js.Error) => String
       ): Self = StObject.set(x, "level", js.Any.fromFunction3(value))
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
@@ -146,6 +169,8 @@ object mod {
       
       inline def setMetaField(value: String): Self = StObject.set(x, "metaField", value.asInstanceOf[js.Any])
       
+      inline def setMetaFieldNull: Self = StObject.set(x, "metaField", null)
+      
       inline def setMetaFieldUndefined: Self = StObject.set(x, "metaField", js.undefined)
       
       inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
@@ -153,16 +178,24 @@ object mod {
       inline def setMsg(value: MessageTemplate): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
       inline def setMsgFunction2(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => String
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]]) => String
       ): Self = StObject.set(x, "msg", js.Any.fromFunction2(value))
       
       inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
       
       inline def setRequestField(value: String): Self = StObject.set(x, "requestField", value.asInstanceOf[js.Any])
       
+      inline def setRequestFieldNull: Self = StObject.set(x, "requestField", null)
+      
       inline def setRequestFieldUndefined: Self = StObject.set(x, "requestField", js.undefined)
       
-      inline def setRequestFilter(value: (/* req */ FilterRequest, /* propName */ String) => js.Any): Self = StObject.set(x, "requestFilter", js.Any.fromFunction2(value))
+      inline def setRequestFilter(value: (/* req */ FilterRequest, /* propName */ String) => Any): Self = StObject.set(x, "requestFilter", js.Any.fromFunction2(value))
       
       inline def setRequestFilterUndefined: Self = StObject.set(x, "requestFilter", js.undefined)
       
@@ -170,14 +203,22 @@ object mod {
       
       inline def setRequestWhitelistUndefined: Self = StObject.set(x, "requestWhitelist", js.undefined)
       
-      inline def setRequestWhitelistVarargs(value: String*): Self = StObject.set(x, "requestWhitelist", js.Array(value :_*))
+      inline def setRequestWhitelistVarargs(value: String*): Self = StObject.set(x, "requestWhitelist", js.Array(value*))
       
       inline def setResponseField(value: String): Self = StObject.set(x, "responseField", value.asInstanceOf[js.Any])
+      
+      inline def setResponseFieldNull: Self = StObject.set(x, "responseField", null)
       
       inline def setResponseFieldUndefined: Self = StObject.set(x, "responseField", js.undefined)
       
       inline def setSkip(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* err */ Error) => Boolean
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]], /* err */ js.Error) => Boolean
       ): Self = StObject.set(x, "skip", js.Any.fromFunction3(value))
       
       inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
@@ -185,6 +226,8 @@ object mod {
   }
   
   trait BaseLoggerOptions extends StObject {
+    
+    var allowFilterOutWhitelistedRequestBody: js.UndefOr[Boolean] = js.undefined
     
     var baseMeta: js.UndefOr[js.Object] = js.undefined
     
@@ -210,17 +253,17 @@ object mod {
     
     var meta: js.UndefOr[Boolean] = js.undefined
     
-    var metaField: js.UndefOr[String] = js.undefined
+    var metaField: js.UndefOr[String | Null] = js.undefined
     
     var msg: js.UndefOr[MessageTemplate] = js.undefined
     
-    var requestField: js.UndefOr[String] = js.undefined
+    var requestField: js.UndefOr[String | Null] = js.undefined
     
     var requestFilter: js.UndefOr[RequestFilter] = js.undefined
     
     var requestWhitelist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var responseField: js.UndefOr[String] = js.undefined
+    var responseField: js.UndefOr[String | Null] = js.undefined
     
     var responseFilter: js.UndefOr[ResponseFilter] = js.undefined
     
@@ -239,6 +282,10 @@ object mod {
     
     extension [Self <: BaseLoggerOptions](x: Self) {
       
+      inline def setAllowFilterOutWhitelistedRequestBody(value: Boolean): Self = StObject.set(x, "allowFilterOutWhitelistedRequestBody", value.asInstanceOf[js.Any])
+      
+      inline def setAllowFilterOutWhitelistedRequestBodyUndefined: Self = StObject.set(x, "allowFilterOutWhitelistedRequestBody", js.undefined)
+      
       inline def setBaseMeta(value: js.Object): Self = StObject.set(x, "baseMeta", value.asInstanceOf[js.Any])
       
       inline def setBaseMetaUndefined: Self = StObject.set(x, "baseMeta", js.undefined)
@@ -247,20 +294,26 @@ object mod {
       
       inline def setBodyBlacklistUndefined: Self = StObject.set(x, "bodyBlacklist", js.undefined)
       
-      inline def setBodyBlacklistVarargs(value: String*): Self = StObject.set(x, "bodyBlacklist", js.Array(value :_*))
+      inline def setBodyBlacklistVarargs(value: String*): Self = StObject.set(x, "bodyBlacklist", js.Array(value*))
       
       inline def setBodyWhitelist(value: js.Array[String]): Self = StObject.set(x, "bodyWhitelist", value.asInstanceOf[js.Any])
       
       inline def setBodyWhitelistUndefined: Self = StObject.set(x, "bodyWhitelist", js.undefined)
       
-      inline def setBodyWhitelistVarargs(value: String*): Self = StObject.set(x, "bodyWhitelist", js.Array(value :_*))
+      inline def setBodyWhitelistVarargs(value: String*): Self = StObject.set(x, "bodyWhitelist", js.Array(value*))
       
       inline def setColorize(value: Boolean): Self = StObject.set(x, "colorize", value.asInstanceOf[js.Any])
       
       inline def setColorizeUndefined: Self = StObject.set(x, "colorize", js.undefined)
       
       inline def setDynamicMeta(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* err */ Error) => js.Object
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]], /* err */ js.Error) => js.Object
       ): Self = StObject.set(x, "dynamicMeta", js.Any.fromFunction3(value))
       
       inline def setDynamicMetaUndefined: Self = StObject.set(x, "dynamicMeta", js.undefined)
@@ -277,10 +330,16 @@ object mod {
       
       inline def setHeaderBlacklistUndefined: Self = StObject.set(x, "headerBlacklist", js.undefined)
       
-      inline def setHeaderBlacklistVarargs(value: String*): Self = StObject.set(x, "headerBlacklist", js.Array(value :_*))
+      inline def setHeaderBlacklistVarargs(value: String*): Self = StObject.set(x, "headerBlacklist", js.Array(value*))
       
       inline def setIgnoreRoute(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]]) => Boolean
       ): Self = StObject.set(x, "ignoreRoute", js.Any.fromFunction2(value))
       
       inline def setIgnoreRouteUndefined: Self = StObject.set(x, "ignoreRoute", js.undefined)
@@ -289,12 +348,18 @@ object mod {
       
       inline def setIgnoredRoutesUndefined: Self = StObject.set(x, "ignoredRoutes", js.undefined)
       
-      inline def setIgnoredRoutesVarargs(value: String*): Self = StObject.set(x, "ignoredRoutes", js.Array(value :_*))
+      inline def setIgnoredRoutesVarargs(value: String*): Self = StObject.set(x, "ignoredRoutes", js.Array(value*))
       
       inline def setLevel(value: String | DynamicLevelFunction): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
       inline def setLevelFunction3(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* err */ Error) => String
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]], /* err */ js.Error) => String
       ): Self = StObject.set(x, "level", js.Any.fromFunction3(value))
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
@@ -303,6 +368,8 @@ object mod {
       
       inline def setMetaField(value: String): Self = StObject.set(x, "metaField", value.asInstanceOf[js.Any])
       
+      inline def setMetaFieldNull: Self = StObject.set(x, "metaField", null)
+      
       inline def setMetaFieldUndefined: Self = StObject.set(x, "metaField", js.undefined)
       
       inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
@@ -310,16 +377,24 @@ object mod {
       inline def setMsg(value: MessageTemplate): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
       inline def setMsgFunction2(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => String
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]]) => String
       ): Self = StObject.set(x, "msg", js.Any.fromFunction2(value))
       
       inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
       
       inline def setRequestField(value: String): Self = StObject.set(x, "requestField", value.asInstanceOf[js.Any])
       
+      inline def setRequestFieldNull: Self = StObject.set(x, "requestField", null)
+      
       inline def setRequestFieldUndefined: Self = StObject.set(x, "requestField", js.undefined)
       
-      inline def setRequestFilter(value: (/* req */ FilterRequest, /* propName */ String) => js.Any): Self = StObject.set(x, "requestFilter", js.Any.fromFunction2(value))
+      inline def setRequestFilter(value: (/* req */ FilterRequest, /* propName */ String) => Any): Self = StObject.set(x, "requestFilter", js.Any.fromFunction2(value))
       
       inline def setRequestFilterUndefined: Self = StObject.set(x, "requestFilter", js.undefined)
       
@@ -327,13 +402,15 @@ object mod {
       
       inline def setRequestWhitelistUndefined: Self = StObject.set(x, "requestWhitelist", js.undefined)
       
-      inline def setRequestWhitelistVarargs(value: String*): Self = StObject.set(x, "requestWhitelist", js.Array(value :_*))
+      inline def setRequestWhitelistVarargs(value: String*): Self = StObject.set(x, "requestWhitelist", js.Array(value*))
       
       inline def setResponseField(value: String): Self = StObject.set(x, "responseField", value.asInstanceOf[js.Any])
       
+      inline def setResponseFieldNull: Self = StObject.set(x, "responseField", null)
+      
       inline def setResponseFieldUndefined: Self = StObject.set(x, "responseField", js.undefined)
       
-      inline def setResponseFilter(value: (/* res */ FilterResponse, /* propName */ String) => js.Any): Self = StObject.set(x, "responseFilter", js.Any.fromFunction2(value))
+      inline def setResponseFilter(value: (/* res */ FilterResponse, /* propName */ String) => Any): Self = StObject.set(x, "responseFilter", js.Any.fromFunction2(value))
       
       inline def setResponseFilterUndefined: Self = StObject.set(x, "responseFilter", js.undefined)
       
@@ -341,10 +418,16 @@ object mod {
       
       inline def setResponseWhitelistUndefined: Self = StObject.set(x, "responseWhitelist", js.undefined)
       
-      inline def setResponseWhitelistVarargs(value: String*): Self = StObject.set(x, "responseWhitelist", js.Array(value :_*))
+      inline def setResponseWhitelistVarargs(value: String*): Self = StObject.set(x, "responseWhitelist", js.Array(value*))
       
       inline def setSkip(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]]) => Boolean
       ): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
       
       inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
@@ -356,16 +439,28 @@ object mod {
   }
   
   type DynamicLevelFunction = js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* res */ Response_[js.Any], 
-    /* err */ Error, 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* res */ Response_[Any, Record[String, Any]], 
+    /* err */ js.Error, 
     String
   ]
   
   type DynamicMetaFunction = js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* res */ Response_[js.Any], 
-    /* err */ Error, 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* res */ Response_[Any, Record[String, Any]], 
+    /* err */ js.Error, 
     js.Object
   ]
   
@@ -405,7 +500,7 @@ object mod {
       
       inline def setTransports(value: js.Array[typings.winstonTransport.mod.^]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
       
-      inline def setTransportsVarargs(value: typings.winstonTransport.mod.^ *): Self = StObject.set(x, "transports", js.Array(value :_*))
+      inline def setTransportsVarargs(value: typings.winstonTransport.mod.^ *): Self = StObject.set(x, "transports", js.Array(value*))
     }
   }
   
@@ -430,34 +525,33 @@ object mod {
   }
   
   type ErrorRouteFilter = js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* res */ Response_[js.Any], 
-    /* err */ Error, 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* res */ Response_[Any, Record[String, Any]], 
+    /* err */ js.Error, 
     Boolean
   ]
   
-  type ExceptionToMetaFunction = js.Function1[/* err */ Error, js.Object]
+  type ExceptionToMetaFunction = js.Function1[/* err */ js.Error, js.Object]
   
   @js.native
   trait ExpressWinstonRequest
-    extends Request[ParamsDictionary, js.Any, js.Any, Query] {
+    extends StObject
+       with Request {
     
     var _routeWhitelists: Body = js.native
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - scala.Any because Inheritance from two classes. Inlined 
-  - scala.AnyRef because Inheritance from two classes. Inlined 
-  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
-  - js.Any because Inheritance from two classes. Inlined 
-  - scala.AnyRef because Inheritance from two classes. Inlined 
-  - js.Object because Inheritance from two classes. Inlined 
-  - js.Any because Inheritance from two classes. Inlined 
-  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
-  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
-  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @js.native
+  @js.native
   trait FilterRequest
-    extends Request[ParamsDictionary, js.Any, js.Any, Query]
+    extends StObject
+       with Request
+       with /* other */ StringDictionary[Any]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - scala.Any because Inheritance from two classes. Inlined 
@@ -470,8 +564,7 @@ object mod {
   - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
   - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
   - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @js.native
-  trait FilterResponse
-    extends Response[js.Any, Double]
+  trait FilterResponse extends Response
   
   /* Rewritten from type alias, can be one of: 
     - typings.expressWinston.mod.LoggerOptionsWithTransports
@@ -509,7 +602,7 @@ object mod {
       
       inline def setTransports(value: js.Array[typings.winstonTransport.mod.^]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
       
-      inline def setTransportsVarargs(value: typings.winstonTransport.mod.^ *): Self = StObject.set(x, "transports", js.Array(value :_*))
+      inline def setTransportsVarargs(value: typings.winstonTransport.mod.^ *): Self = StObject.set(x, "transports", js.Array(value*))
     }
   }
   
@@ -534,18 +627,30 @@ object mod {
   }
   
   type MessageTemplate = String | (js.Function2[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* res */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* res */ Response_[Any, Record[String, Any]], 
     String
   ])
   
-  type RequestFilter = js.Function2[/* req */ FilterRequest, /* propName */ String, js.Any]
+  type RequestFilter = js.Function2[/* req */ FilterRequest, /* propName */ String, Any]
   
-  type ResponseFilter = js.Function2[/* res */ FilterResponse, /* propName */ String, js.Any]
+  type ResponseFilter = js.Function2[/* res */ FilterResponse, /* propName */ String, Any]
   
   type RouteFilter = js.Function2[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* res */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* res */ Response_[Any, Record[String, Any]], 
     Boolean
   ]
   

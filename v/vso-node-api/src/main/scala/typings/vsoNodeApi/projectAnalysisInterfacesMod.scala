@@ -1,6 +1,5 @@
 package typings.vsoNodeApi
 
-import typings.std.Date
 import typings.vsoNodeApi.anon.EnumValuesHourly
 import typings.vsoNodeApi.anon.EnumValuesPreliminary
 import org.scalablytyped.runtime.StObject
@@ -66,28 +65,28 @@ object projectAnalysisInterfacesMod {
     
     @JSImport("vso-node-api/interfaces/ProjectAnalysisInterfaces", "TypeInfo.CodeChangeTrendItem")
     @js.native
-    def CodeChangeTrendItem: js.Any = js.native
-    inline def CodeChangeTrendItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CodeChangeTrendItem")(x.asInstanceOf[js.Any])
+    def CodeChangeTrendItem: Any = js.native
+    inline def CodeChangeTrendItem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CodeChangeTrendItem")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProjectAnalysisInterfaces", "TypeInfo.ProjectActivityMetrics")
     @js.native
-    def ProjectActivityMetrics: js.Any = js.native
-    inline def ProjectActivityMetrics_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProjectActivityMetrics")(x.asInstanceOf[js.Any])
+    def ProjectActivityMetrics: Any = js.native
+    inline def ProjectActivityMetrics_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProjectActivityMetrics")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProjectAnalysisInterfaces", "TypeInfo.ProjectLanguageAnalytics")
     @js.native
-    def ProjectLanguageAnalytics: js.Any = js.native
-    inline def ProjectLanguageAnalytics_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProjectLanguageAnalytics")(x.asInstanceOf[js.Any])
+    def ProjectLanguageAnalytics: Any = js.native
+    inline def ProjectLanguageAnalytics_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ProjectLanguageAnalytics")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProjectAnalysisInterfaces", "TypeInfo.RepositoryActivityMetrics")
     @js.native
-    def RepositoryActivityMetrics: js.Any = js.native
-    inline def RepositoryActivityMetrics_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RepositoryActivityMetrics")(x.asInstanceOf[js.Any])
+    def RepositoryActivityMetrics: Any = js.native
+    inline def RepositoryActivityMetrics_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RepositoryActivityMetrics")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProjectAnalysisInterfaces", "TypeInfo.RepositoryLanguageAnalytics")
     @js.native
-    def RepositoryLanguageAnalytics: js.Any = js.native
-    inline def RepositoryLanguageAnalytics_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RepositoryLanguageAnalytics")(x.asInstanceOf[js.Any])
+    def RepositoryLanguageAnalytics: Any = js.native
+    inline def RepositoryLanguageAnalytics_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RepositoryLanguageAnalytics")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/ProjectAnalysisInterfaces", "TypeInfo.ResultPhase")
     @js.native
@@ -141,20 +140,20 @@ object projectAnalysisInterfacesMod {
   
   trait CodeChangeTrendItem extends StObject {
     
-    var time: Date
+    var time: js.Date
     
     var value: Double
   }
   object CodeChangeTrendItem {
     
-    inline def apply(time: Date, value: Double): CodeChangeTrendItem = {
+    inline def apply(time: js.Date, value: Double): CodeChangeTrendItem = {
       val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[CodeChangeTrendItem]
     }
     
     extension [Self <: CodeChangeTrendItem](x: Self) {
       
-      inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -229,7 +228,7 @@ object projectAnalysisInterfacesMod {
       
       inline def setCodeChangesTrend(value: js.Array[CodeChangeTrendItem]): Self = StObject.set(x, "codeChangesTrend", value.asInstanceOf[js.Any])
       
-      inline def setCodeChangesTrendVarargs(value: CodeChangeTrendItem*): Self = StObject.set(x, "codeChangesTrend", js.Array(value :_*))
+      inline def setCodeChangesTrendVarargs(value: CodeChangeTrendItem*): Self = StObject.set(x, "codeChangesTrend", js.Array(value*))
       
       inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
@@ -270,11 +269,11 @@ object projectAnalysisInterfacesMod {
       
       inline def setLanguageBreakdown(value: js.Array[LanguageStatistics]): Self = StObject.set(x, "languageBreakdown", value.asInstanceOf[js.Any])
       
-      inline def setLanguageBreakdownVarargs(value: LanguageStatistics*): Self = StObject.set(x, "languageBreakdown", js.Array(value :_*))
+      inline def setLanguageBreakdownVarargs(value: LanguageStatistics*): Self = StObject.set(x, "languageBreakdown", js.Array(value*))
       
       inline def setRepositoryLanguageAnalytics(value: js.Array[RepositoryLanguageAnalytics]): Self = StObject.set(x, "repositoryLanguageAnalytics", value.asInstanceOf[js.Any])
       
-      inline def setRepositoryLanguageAnalyticsVarargs(value: RepositoryLanguageAnalytics*): Self = StObject.set(x, "repositoryLanguageAnalytics", js.Array(value :_*))
+      inline def setRepositoryLanguageAnalyticsVarargs(value: RepositoryLanguageAnalytics*): Self = StObject.set(x, "repositoryLanguageAnalytics", js.Array(value*))
       
       inline def setResultPhase(value: ResultPhase): Self = StObject.set(x, "resultPhase", value.asInstanceOf[js.Any])
       
@@ -303,7 +302,7 @@ object projectAnalysisInterfacesMod {
       
       inline def setCodeChangesTrend(value: js.Array[CodeChangeTrendItem]): Self = StObject.set(x, "codeChangesTrend", value.asInstanceOf[js.Any])
       
-      inline def setCodeChangesTrendVarargs(value: CodeChangeTrendItem*): Self = StObject.set(x, "codeChangesTrend", js.Array(value :_*))
+      inline def setCodeChangesTrendVarargs(value: CodeChangeTrendItem*): Self = StObject.set(x, "codeChangesTrend", js.Array(value*))
       
       inline def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
     }
@@ -319,7 +318,7 @@ object projectAnalysisInterfacesMod {
     
     var resultPhase: ResultPhase
     
-    var updatedTime: Date
+    var updatedTime: js.Date
   }
   object RepositoryLanguageAnalytics {
     
@@ -328,7 +327,7 @@ object projectAnalysisInterfacesMod {
       languageBreakdown: js.Array[LanguageStatistics],
       name: String,
       resultPhase: ResultPhase,
-      updatedTime: Date
+      updatedTime: js.Date
     ): RepositoryLanguageAnalytics = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], languageBreakdown = languageBreakdown.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], resultPhase = resultPhase.asInstanceOf[js.Any], updatedTime = updatedTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[RepositoryLanguageAnalytics]
@@ -340,13 +339,13 @@ object projectAnalysisInterfacesMod {
       
       inline def setLanguageBreakdown(value: js.Array[LanguageStatistics]): Self = StObject.set(x, "languageBreakdown", value.asInstanceOf[js.Any])
       
-      inline def setLanguageBreakdownVarargs(value: LanguageStatistics*): Self = StObject.set(x, "languageBreakdown", js.Array(value :_*))
+      inline def setLanguageBreakdownVarargs(value: LanguageStatistics*): Self = StObject.set(x, "languageBreakdown", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setResultPhase(value: ResultPhase): Self = StObject.set(x, "resultPhase", value.asInstanceOf[js.Any])
       
-      inline def setUpdatedTime(value: Date): Self = StObject.set(x, "updatedTime", value.asInstanceOf[js.Any])
+      inline def setUpdatedTime(value: js.Date): Self = StObject.set(x, "updatedTime", value.asInstanceOf[js.Any])
     }
   }
 }

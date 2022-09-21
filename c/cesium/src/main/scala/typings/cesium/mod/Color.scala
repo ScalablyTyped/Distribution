@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "Color")
 @js.native
-class Color () extends Packable {
+open class Color () extends StObject {
   def this(red: Double) = this()
   def this(red: Double, green: Double) = this()
   def this(red: Unit, green: Double) = this()
@@ -24,962 +24,1372 @@ class Color () extends Packable {
   def this(red: Unit, green: Unit, blue: Double, alpha: Double) = this()
   def this(red: Unit, green: Unit, blue: Unit, alpha: Double) = this()
   
+  /**
+    * The alpha component.
+    */
   var alpha: Double = js.native
   
+  /**
+    * The blue component.
+    */
   var blue: Double = js.native
   
+  /**
+    * Brightens this color by the provided magnitude.
+    * @example
+    * const brightBlue = Cesium.Color.BLUE.brighten(0.5, new Cesium.Color());
+    * @param magnitude - A positive number indicating the amount to brighten.
+    * @param result - The object onto which to store the result.
+    * @returns The modified result parameter.
+    */
   def brighten(magnitude: Double, result: Color): Color = js.native
   
   def clone(result: Color): Color = js.native
   
+  /**
+    * Darkens this color by the provided magnitude.
+    * @example
+    * const darkBlue = Cesium.Color.BLUE.darken(0.5, new Cesium.Color());
+    * @param magnitude - A positive number indicating the amount to darken.
+    * @param result - The object onto which to store the result.
+    * @returns The modified result parameter.
+    */
   def darken(magnitude: Double, result: Color): Color = js.native
   
+  /**
+    * Returns true if this Color equals other.
+    * @param other - The Color to compare for equality.
+    * @returns <code>true</code> if the Colors are equal; otherwise, <code>false</code>.
+    */
   def equals(other: Color): Boolean = js.native
   
+  /**
+    * Returns <code>true</code> if this Color equals other componentwise within the specified epsilon.
+    * @param other - The Color to compare for equality.
+    * @param [epsilon = 0.0] - The epsilon to use for equality testing.
+    * @returns <code>true</code> if the Colors are equal within the specified epsilon; otherwise, <code>false</code>.
+    */
   def equalsEpsilon(other: Color): Boolean = js.native
   def equalsEpsilon(other: Color, epsilon: Double): Boolean = js.native
   
+  /**
+    * The green component.
+    */
   var green: Double = js.native
   
+  /**
+    * The red component.
+    */
   var red: Double = js.native
   
+  /**
+    * Converts this color to an array of red, green, blue, and alpha values
+    * that are in the range of 0 to 255.
+    * @param [result] - The array to store the result in, if undefined a new instance will be created.
+    * @returns The modified result parameter or a new instance if result was undefined.
+    */
   def toBytes(): js.Array[Double] = js.native
   def toBytes(result: js.Array[Double]): js.Array[Double] = js.native
   
+  /**
+    * Creates a string containing the CSS color value for this color.
+    * @returns The CSS equivalent of this color.
+    */
   def toCssColorString(): String = js.native
   
+  /**
+    * Creates a string containing CSS hex string color value for this color.
+    * @returns The CSS hex string equivalent of this color.
+    */
+  def toCssHexString(): String = js.native
+  
+  /**
+    * Converts this color to a single numeric unsigned 32-bit RGBA value, using the endianness
+    * of the system.
+    * @example
+    * const rgba = Cesium.Color.BLUE.toRgba();
+    * @returns A single numeric unsigned 32-bit RGBA value.
+    */
   def toRgba(): Double = js.native
   
+  /**
+    * Creates a new Color that has the same red, green, and blue components
+    * as this Color, but with the specified alpha value.
+    * @example
+    * const translucentRed = Cesium.Color.RED.withAlpha(0.9);
+    * @param alpha - The new alpha component.
+    * @param [result] - The object onto which to store the result.
+    * @returns The modified result parameter or a new Color instance if one was not provided.
+    */
   def withAlpha(alpha: Double): Color = js.native
   def withAlpha(alpha: Double, result: Color): Color = js.native
 }
+/* static members */
 object Color {
   
   @JSImport("cesium", "Color")
   @js.native
   val ^ : js.Any = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #F0F8FF
+    * <span class="colorSwath" style="background: #F0F8FF;"></span>
+    */
   @JSImport("cesium", "Color.ALICEBLUE")
   @js.native
-  def ALICEBLUE: Color = js.native
-  inline def ALICEBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALICEBLUE")(x.asInstanceOf[js.Any])
+  val ALICEBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FAEBD7
+    * <span class="colorSwath" style="background: #FAEBD7;"></span>
+    */
   @JSImport("cesium", "Color.ANTIQUEWHITE")
   @js.native
-  def ANTIQUEWHITE: Color = js.native
-  inline def ANTIQUEWHITE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANTIQUEWHITE")(x.asInstanceOf[js.Any])
+  val ANTIQUEWHITE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #00FFFF
+    * <span class="colorSwath" style="background: #00FFFF;"></span>
+    */
   @JSImport("cesium", "Color.AQUA")
   @js.native
-  def AQUA: Color = js.native
+  val AQUA: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #7FFFD4
+    * <span class="colorSwath" style="background: #7FFFD4;"></span>
+    */
   @JSImport("cesium", "Color.AQUAMARINE")
   @js.native
-  def AQUAMARINE: Color = js.native
-  inline def AQUAMARINE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AQUAMARINE")(x.asInstanceOf[js.Any])
+  val AQUAMARINE: Color = js.native
   
-  inline def AQUA_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AQUA")(x.asInstanceOf[js.Any])
-  
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #F0FFFF
+    * <span class="colorSwath" style="background: #F0FFFF;"></span>
+    */
   @JSImport("cesium", "Color.AZURE")
   @js.native
-  def AZURE: Color = js.native
-  inline def AZURE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AZURE")(x.asInstanceOf[js.Any])
+  val AZURE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #F5F5DC
+    * <span class="colorSwath" style="background: #F5F5DC;"></span>
+    */
   @JSImport("cesium", "Color.BEIGE")
   @js.native
-  def BEIGE: Color = js.native
-  inline def BEIGE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BEIGE")(x.asInstanceOf[js.Any])
+  val BEIGE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFE4C4
+    * <span class="colorSwath" style="background: #FFE4C4;"></span>
+    */
   @JSImport("cesium", "Color.BISQUE")
   @js.native
-  def BISQUE: Color = js.native
-  inline def BISQUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BISQUE")(x.asInstanceOf[js.Any])
+  val BISQUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #000000
+    * <span class="colorSwath" style="background: #000000;"></span>
+    */
   @JSImport("cesium", "Color.BLACK")
   @js.native
-  def BLACK: Color = js.native
-  inline def BLACK_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLACK")(x.asInstanceOf[js.Any])
+  val BLACK: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFEBCD
+    * <span class="colorSwath" style="background: #FFEBCD;"></span>
+    */
   @JSImport("cesium", "Color.BLANCHEDALMOND")
   @js.native
-  def BLANCHEDALMOND: Color = js.native
-  inline def BLANCHEDALMOND_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLANCHEDALMOND")(x.asInstanceOf[js.Any])
+  val BLANCHEDALMOND: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #0000FF
+    * <span class="colorSwath" style="background: #0000FF;"></span>
+    */
   @JSImport("cesium", "Color.BLUE")
   @js.native
-  def BLUE: Color = js.native
+  val BLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #8A2BE2
+    * <span class="colorSwath" style="background: #8A2BE2;"></span>
+    */
   @JSImport("cesium", "Color.BLUEVIOLET")
   @js.native
-  def BLUEVIOLET: Color = js.native
-  inline def BLUEVIOLET_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUEVIOLET")(x.asInstanceOf[js.Any])
+  val BLUEVIOLET: Color = js.native
   
-  inline def BLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BLUE")(x.asInstanceOf[js.Any])
-  
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #A52A2A
+    * <span class="colorSwath" style="background: #A52A2A;"></span>
+    */
   @JSImport("cesium", "Color.BROWN")
   @js.native
-  def BROWN: Color = js.native
-  inline def BROWN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BROWN")(x.asInstanceOf[js.Any])
+  val BROWN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #DEB887
+    * <span class="colorSwath" style="background: #DEB887;"></span>
+    */
   @JSImport("cesium", "Color.BURLYWOOD")
   @js.native
-  def BURLYWOOD: Color = js.native
-  inline def BURLYWOOD_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BURLYWOOD")(x.asInstanceOf[js.Any])
+  val BURLYWOOD: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #5F9EA0
+    * <span class="colorSwath" style="background: #5F9EA0;"></span>
+    */
   @JSImport("cesium", "Color.CADETBLUE")
   @js.native
-  def CADETBLUE: Color = js.native
-  inline def CADETBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CADETBLUE")(x.asInstanceOf[js.Any])
+  val CADETBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #7FFF00
+    * <span class="colorSwath" style="background: #7FFF00;"></span>
+    */
   @JSImport("cesium", "Color.CHARTREUSE")
   @js.native
-  def CHARTREUSE: Color = js.native
-  inline def CHARTREUSE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHARTREUSE")(x.asInstanceOf[js.Any])
+  val CHARTREUSE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #D2691E
+    * <span class="colorSwath" style="background: #D2691E;"></span>
+    */
   @JSImport("cesium", "Color.CHOCOLATE")
   @js.native
-  def CHOCOLATE: Color = js.native
-  inline def CHOCOLATE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHOCOLATE")(x.asInstanceOf[js.Any])
+  val CHOCOLATE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FF7F50
+    * <span class="colorSwath" style="background: #FF7F50;"></span>
+    */
   @JSImport("cesium", "Color.CORAL")
   @js.native
-  def CORAL: Color = js.native
-  inline def CORAL_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CORAL")(x.asInstanceOf[js.Any])
+  val CORAL: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #6495ED
+    * <span class="colorSwath" style="background: #6495ED;"></span>
+    */
   @JSImport("cesium", "Color.CORNFLOWERBLUE")
   @js.native
-  def CORNFLOWERBLUE: Color = js.native
-  inline def CORNFLOWERBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CORNFLOWERBLUE")(x.asInstanceOf[js.Any])
+  val CORNFLOWERBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFF8DC
+    * <span class="colorSwath" style="background: #FFF8DC;"></span>
+    */
   @JSImport("cesium", "Color.CORNSILK")
   @js.native
-  def CORNSILK: Color = js.native
-  inline def CORNSILK_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CORNSILK")(x.asInstanceOf[js.Any])
+  val CORNSILK: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #DC143C
+    * <span class="colorSwath" style="background: #DC143C;"></span>
+    */
   @JSImport("cesium", "Color.CRIMSON")
   @js.native
-  def CRIMSON: Color = js.native
-  inline def CRIMSON_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CRIMSON")(x.asInstanceOf[js.Any])
+  val CRIMSON: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #00FFFF
+    * <span class="colorSwath" style="background: #00FFFF;"></span>
+    */
   @JSImport("cesium", "Color.CYAN")
   @js.native
-  def CYAN: Color = js.native
-  inline def CYAN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CYAN")(x.asInstanceOf[js.Any])
+  val CYAN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #00008B
+    * <span class="colorSwath" style="background: #00008B;"></span>
+    */
   @JSImport("cesium", "Color.DARKBLUE")
   @js.native
-  def DARKBLUE: Color = js.native
-  inline def DARKBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKBLUE")(x.asInstanceOf[js.Any])
+  val DARKBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #008B8B
+    * <span class="colorSwath" style="background: #008B8B;"></span>
+    */
   @JSImport("cesium", "Color.DARKCYAN")
   @js.native
-  def DARKCYAN: Color = js.native
-  inline def DARKCYAN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKCYAN")(x.asInstanceOf[js.Any])
+  val DARKCYAN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #B8860B
+    * <span class="colorSwath" style="background: #B8860B;"></span>
+    */
   @JSImport("cesium", "Color.DARKGOLDENROD")
   @js.native
-  def DARKGOLDENROD: Color = js.native
-  inline def DARKGOLDENROD_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKGOLDENROD")(x.asInstanceOf[js.Any])
+  val DARKGOLDENROD: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #A9A9A9
+    * <span class="colorSwath" style="background: #A9A9A9;"></span>
+    */
   @JSImport("cesium", "Color.DARKGRAY")
   @js.native
-  def DARKGRAY: Color = js.native
-  inline def DARKGRAY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKGRAY")(x.asInstanceOf[js.Any])
+  val DARKGRAY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #006400
+    * <span class="colorSwath" style="background: #006400;"></span>
+    */
   @JSImport("cesium", "Color.DARKGREEN")
   @js.native
-  def DARKGREEN: Color = js.native
-  inline def DARKGREEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKGREEN")(x.asInstanceOf[js.Any])
+  val DARKGREEN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #A9A9A9
+    * <span class="colorSwath" style="background: #A9A9A9;"></span>
+    */
   @JSImport("cesium", "Color.DARKGREY")
   @js.native
-  def DARKGREY: Color = js.native
-  inline def DARKGREY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKGREY")(x.asInstanceOf[js.Any])
+  val DARKGREY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #BDB76B
+    * <span class="colorSwath" style="background: #BDB76B;"></span>
+    */
   @JSImport("cesium", "Color.DARKKHAKI")
   @js.native
-  def DARKKHAKI: Color = js.native
-  inline def DARKKHAKI_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKKHAKI")(x.asInstanceOf[js.Any])
+  val DARKKHAKI: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #8B008B
+    * <span class="colorSwath" style="background: #8B008B;"></span>
+    */
   @JSImport("cesium", "Color.DARKMAGENTA")
   @js.native
-  def DARKMAGENTA: Color = js.native
-  inline def DARKMAGENTA_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKMAGENTA")(x.asInstanceOf[js.Any])
+  val DARKMAGENTA: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #556B2F
+    * <span class="colorSwath" style="background: #556B2F;"></span>
+    */
   @JSImport("cesium", "Color.DARKOLIVEGREEN")
   @js.native
-  def DARKOLIVEGREEN: Color = js.native
-  inline def DARKOLIVEGREEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKOLIVEGREEN")(x.asInstanceOf[js.Any])
+  val DARKOLIVEGREEN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FF8C00
+    * <span class="colorSwath" style="background: #FF8C00;"></span>
+    */
   @JSImport("cesium", "Color.DARKORANGE")
   @js.native
-  def DARKORANGE: Color = js.native
-  inline def DARKORANGE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKORANGE")(x.asInstanceOf[js.Any])
+  val DARKORANGE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #9932CC
+    * <span class="colorSwath" style="background: #9932CC;"></span>
+    */
   @JSImport("cesium", "Color.DARKORCHID")
   @js.native
-  def DARKORCHID: Color = js.native
-  inline def DARKORCHID_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKORCHID")(x.asInstanceOf[js.Any])
+  val DARKORCHID: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #8B0000
+    * <span class="colorSwath" style="background: #8B0000;"></span>
+    */
   @JSImport("cesium", "Color.DARKRED")
   @js.native
-  def DARKRED: Color = js.native
-  inline def DARKRED_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKRED")(x.asInstanceOf[js.Any])
+  val DARKRED: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #E9967A
+    * <span class="colorSwath" style="background: #E9967A;"></span>
+    */
   @JSImport("cesium", "Color.DARKSALMON")
   @js.native
-  def DARKSALMON: Color = js.native
-  inline def DARKSALMON_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKSALMON")(x.asInstanceOf[js.Any])
+  val DARKSALMON: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #8FBC8F
+    * <span class="colorSwath" style="background: #8FBC8F;"></span>
+    */
   @JSImport("cesium", "Color.DARKSEAGREEN")
   @js.native
-  def DARKSEAGREEN: Color = js.native
-  inline def DARKSEAGREEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKSEAGREEN")(x.asInstanceOf[js.Any])
+  val DARKSEAGREEN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #483D8B
+    * <span class="colorSwath" style="background: #483D8B;"></span>
+    */
   @JSImport("cesium", "Color.DARKSLATEBLUE")
   @js.native
-  def DARKSLATEBLUE: Color = js.native
-  inline def DARKSLATEBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKSLATEBLUE")(x.asInstanceOf[js.Any])
+  val DARKSLATEBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #2F4F4F
+    * <span class="colorSwath" style="background: #2F4F4F;"></span>
+    */
   @JSImport("cesium", "Color.DARKSLATEGRAY")
   @js.native
-  def DARKSLATEGRAY: Color = js.native
-  inline def DARKSLATEGRAY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKSLATEGRAY")(x.asInstanceOf[js.Any])
+  val DARKSLATEGRAY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #2F4F4F
+    * <span class="colorSwath" style="background: #2F4F4F;"></span>
+    */
   @JSImport("cesium", "Color.DARKSLATEGREY")
   @js.native
-  def DARKSLATEGREY: Color = js.native
-  inline def DARKSLATEGREY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKSLATEGREY")(x.asInstanceOf[js.Any])
+  val DARKSLATEGREY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #00CED1
+    * <span class="colorSwath" style="background: #00CED1;"></span>
+    */
   @JSImport("cesium", "Color.DARKTURQUOISE")
   @js.native
-  def DARKTURQUOISE: Color = js.native
-  inline def DARKTURQUOISE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKTURQUOISE")(x.asInstanceOf[js.Any])
+  val DARKTURQUOISE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #9400D3
+    * <span class="colorSwath" style="background: #9400D3;"></span>
+    */
   @JSImport("cesium", "Color.DARKVIOLET")
   @js.native
-  def DARKVIOLET: Color = js.native
-  inline def DARKVIOLET_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARKVIOLET")(x.asInstanceOf[js.Any])
+  val DARKVIOLET: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FF1493
+    * <span class="colorSwath" style="background: #FF1493;"></span>
+    */
   @JSImport("cesium", "Color.DEEPPINK")
   @js.native
-  def DEEPPINK: Color = js.native
-  inline def DEEPPINK_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEEPPINK")(x.asInstanceOf[js.Any])
+  val DEEPPINK: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #00BFFF
+    * <span class="colorSwath" style="background: #00BFFF;"></span>
+    */
   @JSImport("cesium", "Color.DEEPSKYBLUE")
   @js.native
-  def DEEPSKYBLUE: Color = js.native
-  inline def DEEPSKYBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEEPSKYBLUE")(x.asInstanceOf[js.Any])
+  val DEEPSKYBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #696969
+    * <span class="colorSwath" style="background: #696969;"></span>
+    */
   @JSImport("cesium", "Color.DIMGRAY")
   @js.native
-  def DIMGRAY: Color = js.native
-  inline def DIMGRAY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIMGRAY")(x.asInstanceOf[js.Any])
+  val DIMGRAY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #696969
+    * <span class="colorSwath" style="background: #696969;"></span>
+    */
   @JSImport("cesium", "Color.DIMGREY")
   @js.native
-  def DIMGREY: Color = js.native
-  inline def DIMGREY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DIMGREY")(x.asInstanceOf[js.Any])
+  val DIMGREY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #1E90FF
+    * <span class="colorSwath" style="background: #1E90FF;"></span>
+    */
   @JSImport("cesium", "Color.DODGERBLUE")
   @js.native
-  def DODGERBLUE: Color = js.native
-  inline def DODGERBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DODGERBLUE")(x.asInstanceOf[js.Any])
+  val DODGERBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #B22222
+    * <span class="colorSwath" style="background: #B22222;"></span>
+    */
   @JSImport("cesium", "Color.FIREBRICK")
   @js.native
-  def FIREBRICK: Color = js.native
-  inline def FIREBRICK_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FIREBRICK")(x.asInstanceOf[js.Any])
+  val FIREBRICK: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFFAF0
+    * <span class="colorSwath" style="background: #FFFAF0;"></span>
+    */
   @JSImport("cesium", "Color.FLORALWHITE")
   @js.native
-  def FLORALWHITE: Color = js.native
-  inline def FLORALWHITE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLORALWHITE")(x.asInstanceOf[js.Any])
+  val FLORALWHITE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #228B22
+    * <span class="colorSwath" style="background: #228B22;"></span>
+    */
   @JSImport("cesium", "Color.FORESTGREEN")
   @js.native
-  def FORESTGREEN: Color = js.native
-  inline def FORESTGREEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORESTGREEN")(x.asInstanceOf[js.Any])
+  val FORESTGREEN: Color = js.native
   
-  /* static member */
-  @JSImport("cesium", "Color.FUSCHIA")
+  /**
+    * An immutable Color instance initialized to CSS color #FF00FF
+    * <span class="colorSwath" style="background: #FF00FF;"></span>
+    */
+  @JSImport("cesium", "Color.FUCHSIA")
   @js.native
-  def FUSCHIA: Color = js.native
-  inline def FUSCHIA_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FUSCHIA")(x.asInstanceOf[js.Any])
+  val FUCHSIA: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #DCDCDC
+    * <span class="colorSwath" style="background: #DCDCDC;"></span>
+    */
   @JSImport("cesium", "Color.GAINSBORO")
   @js.native
-  def GAINSBORO: Color = js.native
-  inline def GAINSBORO_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GAINSBORO")(x.asInstanceOf[js.Any])
+  val GAINSBORO: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #F8F8FF
+    * <span class="colorSwath" style="background: #F8F8FF;"></span>
+    */
   @JSImport("cesium", "Color.GHOSTWHITE")
   @js.native
-  def GHOSTWHITE: Color = js.native
-  inline def GHOSTWHITE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GHOSTWHITE")(x.asInstanceOf[js.Any])
+  val GHOSTWHITE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFD700
+    * <span class="colorSwath" style="background: #FFD700;"></span>
+    */
   @JSImport("cesium", "Color.GOLD")
   @js.native
-  def GOLD: Color = js.native
+  val GOLD: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #DAA520
+    * <span class="colorSwath" style="background: #DAA520;"></span>
+    */
   @JSImport("cesium", "Color.GOLDENROD")
   @js.native
-  def GOLDENROD: Color = js.native
-  inline def GOLDENROD_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLDENROD")(x.asInstanceOf[js.Any])
+  val GOLDENROD: Color = js.native
   
-  inline def GOLD_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOLD")(x.asInstanceOf[js.Any])
-  
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #808080
+    * <span class="colorSwath" style="background: #808080;"></span>
+    */
   @JSImport("cesium", "Color.GRAY")
   @js.native
-  def GRAY: Color = js.native
-  inline def GRAY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRAY")(x.asInstanceOf[js.Any])
+  val GRAY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #008000
+    * <span class="colorSwath" style="background: #008000;"></span>
+    */
   @JSImport("cesium", "Color.GREEN")
   @js.native
-  def GREEN: Color = js.native
+  val GREEN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #ADFF2F
+    * <span class="colorSwath" style="background: #ADFF2F;"></span>
+    */
   @JSImport("cesium", "Color.GREENYELLOW")
   @js.native
-  def GREENYELLOW: Color = js.native
-  inline def GREENYELLOW_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREENYELLOW")(x.asInstanceOf[js.Any])
+  val GREENYELLOW: Color = js.native
   
-  inline def GREEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREEN")(x.asInstanceOf[js.Any])
-  
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #808080
+    * <span class="colorSwath" style="background: #808080;"></span>
+    */
   @JSImport("cesium", "Color.GREY")
   @js.native
-  def GREY: Color = js.native
-  inline def GREY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREY")(x.asInstanceOf[js.Any])
+  val GREY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #F0FFF0
+    * <span class="colorSwath" style="background: #F0FFF0;"></span>
+    */
   @JSImport("cesium", "Color.HONEYDEW")
   @js.native
-  def HONEYDEW: Color = js.native
-  inline def HONEYDEW_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HONEYDEW")(x.asInstanceOf[js.Any])
+  val HONEYDEW: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FF69B4
+    * <span class="colorSwath" style="background: #FF69B4;"></span>
+    */
   @JSImport("cesium", "Color.HOTPINK")
   @js.native
-  def HOTPINK: Color = js.native
-  inline def HOTPINK_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOTPINK")(x.asInstanceOf[js.Any])
+  val HOTPINK: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #CD5C5C
+    * <span class="colorSwath" style="background: #CD5C5C;"></span>
+    */
   @JSImport("cesium", "Color.INDIANRED")
   @js.native
-  def INDIANRED: Color = js.native
-  inline def INDIANRED_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIANRED")(x.asInstanceOf[js.Any])
+  val INDIANRED: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #4B0082
+    * <span class="colorSwath" style="background: #4B0082;"></span>
+    */
   @JSImport("cesium", "Color.INDIGO")
   @js.native
-  def INDIGO: Color = js.native
-  inline def INDIGO_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDIGO")(x.asInstanceOf[js.Any])
+  val INDIGO: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFFFF0
+    * <span class="colorSwath" style="background: #FFFFF0;"></span>
+    */
   @JSImport("cesium", "Color.IVORY")
   @js.native
-  def IVORY: Color = js.native
-  inline def IVORY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IVORY")(x.asInstanceOf[js.Any])
+  val IVORY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #F0E68C
+    * <span class="colorSwath" style="background: #F0E68C;"></span>
+    */
   @JSImport("cesium", "Color.KHAKI")
   @js.native
-  def KHAKI: Color = js.native
-  inline def KHAKI_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KHAKI")(x.asInstanceOf[js.Any])
+  val KHAKI: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFF0F5
+    * <span class="colorSwath" style="background: #FFF0F5;"></span>
+    */
   @JSImport("cesium", "Color.LAVENDAR_BLUSH")
   @js.native
-  def LAVENDAR_BLUSH: Color = js.native
-  inline def LAVENDAR_BLUSH_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LAVENDAR_BLUSH")(x.asInstanceOf[js.Any])
+  val LAVENDAR_BLUSH: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #E6E6FA
+    * <span class="colorSwath" style="background: #E6E6FA;"></span>
+    */
   @JSImport("cesium", "Color.LAVENDER")
   @js.native
-  def LAVENDER: Color = js.native
-  inline def LAVENDER_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LAVENDER")(x.asInstanceOf[js.Any])
+  val LAVENDER: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #7CFC00
+    * <span class="colorSwath" style="background: #7CFC00;"></span>
+    */
   @JSImport("cesium", "Color.LAWNGREEN")
   @js.native
-  def LAWNGREEN: Color = js.native
-  inline def LAWNGREEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LAWNGREEN")(x.asInstanceOf[js.Any])
+  val LAWNGREEN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFFACD
+    * <span class="colorSwath" style="background: #FFFACD;"></span>
+    */
   @JSImport("cesium", "Color.LEMONCHIFFON")
   @js.native
-  def LEMONCHIFFON: Color = js.native
-  inline def LEMONCHIFFON_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEMONCHIFFON")(x.asInstanceOf[js.Any])
+  val LEMONCHIFFON: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #ADD8E6
+    * <span class="colorSwath" style="background: #ADD8E6;"></span>
+    */
   @JSImport("cesium", "Color.LIGHTBLUE")
   @js.native
-  def LIGHTBLUE: Color = js.native
-  inline def LIGHTBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHTBLUE")(x.asInstanceOf[js.Any])
+  val LIGHTBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #F08080
+    * <span class="colorSwath" style="background: #F08080;"></span>
+    */
   @JSImport("cesium", "Color.LIGHTCORAL")
   @js.native
-  def LIGHTCORAL: Color = js.native
-  inline def LIGHTCORAL_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHTCORAL")(x.asInstanceOf[js.Any])
+  val LIGHTCORAL: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #E0FFFF
+    * <span class="colorSwath" style="background: #E0FFFF;"></span>
+    */
   @JSImport("cesium", "Color.LIGHTCYAN")
   @js.native
-  def LIGHTCYAN: Color = js.native
-  inline def LIGHTCYAN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHTCYAN")(x.asInstanceOf[js.Any])
+  val LIGHTCYAN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FAFAD2
+    * <span class="colorSwath" style="background: #FAFAD2;"></span>
+    */
   @JSImport("cesium", "Color.LIGHTGOLDENRODYELLOW")
   @js.native
-  def LIGHTGOLDENRODYELLOW: Color = js.native
-  inline def LIGHTGOLDENRODYELLOW_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHTGOLDENRODYELLOW")(x.asInstanceOf[js.Any])
+  val LIGHTGOLDENRODYELLOW: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #D3D3D3
+    * <span class="colorSwath" style="background: #D3D3D3;"></span>
+    */
   @JSImport("cesium", "Color.LIGHTGRAY")
   @js.native
-  def LIGHTGRAY: Color = js.native
-  inline def LIGHTGRAY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHTGRAY")(x.asInstanceOf[js.Any])
+  val LIGHTGRAY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #90EE90
+    * <span class="colorSwath" style="background: #90EE90;"></span>
+    */
   @JSImport("cesium", "Color.LIGHTGREEN")
   @js.native
-  def LIGHTGREEN: Color = js.native
-  inline def LIGHTGREEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHTGREEN")(x.asInstanceOf[js.Any])
+  val LIGHTGREEN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #D3D3D3
+    * <span class="colorSwath" style="background: #D3D3D3;"></span>
+    */
   @JSImport("cesium", "Color.LIGHTGREY")
   @js.native
-  def LIGHTGREY: Color = js.native
-  inline def LIGHTGREY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHTGREY")(x.asInstanceOf[js.Any])
+  val LIGHTGREY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFB6C1
+    * <span class="colorSwath" style="background: #FFB6C1;"></span>
+    */
   @JSImport("cesium", "Color.LIGHTPINK")
   @js.native
-  def LIGHTPINK: Color = js.native
-  inline def LIGHTPINK_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHTPINK")(x.asInstanceOf[js.Any])
+  val LIGHTPINK: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #20B2AA
+    * <span class="colorSwath" style="background: #20B2AA;"></span>
+    */
   @JSImport("cesium", "Color.LIGHTSEAGREEN")
   @js.native
-  def LIGHTSEAGREEN: Color = js.native
-  inline def LIGHTSEAGREEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHTSEAGREEN")(x.asInstanceOf[js.Any])
+  val LIGHTSEAGREEN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #87CEFA
+    * <span class="colorSwath" style="background: #87CEFA;"></span>
+    */
   @JSImport("cesium", "Color.LIGHTSKYBLUE")
   @js.native
-  def LIGHTSKYBLUE: Color = js.native
-  inline def LIGHTSKYBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHTSKYBLUE")(x.asInstanceOf[js.Any])
+  val LIGHTSKYBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #778899
+    * <span class="colorSwath" style="background: #778899;"></span>
+    */
   @JSImport("cesium", "Color.LIGHTSLATEGRAY")
   @js.native
-  def LIGHTSLATEGRAY: Color = js.native
-  inline def LIGHTSLATEGRAY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHTSLATEGRAY")(x.asInstanceOf[js.Any])
+  val LIGHTSLATEGRAY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #778899
+    * <span class="colorSwath" style="background: #778899;"></span>
+    */
   @JSImport("cesium", "Color.LIGHTSLATEGREY")
   @js.native
-  def LIGHTSLATEGREY: Color = js.native
-  inline def LIGHTSLATEGREY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHTSLATEGREY")(x.asInstanceOf[js.Any])
+  val LIGHTSLATEGREY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #B0C4DE
+    * <span class="colorSwath" style="background: #B0C4DE;"></span>
+    */
   @JSImport("cesium", "Color.LIGHTSTEELBLUE")
   @js.native
-  def LIGHTSTEELBLUE: Color = js.native
-  inline def LIGHTSTEELBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHTSTEELBLUE")(x.asInstanceOf[js.Any])
+  val LIGHTSTEELBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFFFE0
+    * <span class="colorSwath" style="background: #FFFFE0;"></span>
+    */
   @JSImport("cesium", "Color.LIGHTYELLOW")
   @js.native
-  def LIGHTYELLOW: Color = js.native
-  inline def LIGHTYELLOW_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIGHTYELLOW")(x.asInstanceOf[js.Any])
+  val LIGHTYELLOW: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #00FF00
+    * <span class="colorSwath" style="background: #00FF00;"></span>
+    */
   @JSImport("cesium", "Color.LIME")
   @js.native
-  def LIME: Color = js.native
+  val LIME: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #32CD32
+    * <span class="colorSwath" style="background: #32CD32;"></span>
+    */
   @JSImport("cesium", "Color.LIMEGREEN")
   @js.native
-  def LIMEGREEN: Color = js.native
-  inline def LIMEGREEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIMEGREEN")(x.asInstanceOf[js.Any])
+  val LIMEGREEN: Color = js.native
   
-  inline def LIME_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIME")(x.asInstanceOf[js.Any])
-  
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FAF0E6
+    * <span class="colorSwath" style="background: #FAF0E6;"></span>
+    */
   @JSImport("cesium", "Color.LINEN")
   @js.native
-  def LINEN: Color = js.native
-  inline def LINEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINEN")(x.asInstanceOf[js.Any])
+  val LINEN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FF00FF
+    * <span class="colorSwath" style="background: #FF00FF;"></span>
+    */
   @JSImport("cesium", "Color.MAGENTA")
   @js.native
-  def MAGENTA: Color = js.native
-  inline def MAGENTA_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAGENTA")(x.asInstanceOf[js.Any])
+  val MAGENTA: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #800000
+    * <span class="colorSwath" style="background: #800000;"></span>
+    */
   @JSImport("cesium", "Color.MAROON")
   @js.native
-  def MAROON: Color = js.native
-  inline def MAROON_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAROON")(x.asInstanceOf[js.Any])
+  val MAROON: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #66CDAA
+    * <span class="colorSwath" style="background: #66CDAA;"></span>
+    */
   @JSImport("cesium", "Color.MEDIUMAQUAMARINE")
   @js.native
-  def MEDIUMAQUAMARINE: Color = js.native
-  inline def MEDIUMAQUAMARINE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUMAQUAMARINE")(x.asInstanceOf[js.Any])
+  val MEDIUMAQUAMARINE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #0000CD
+    * <span class="colorSwath" style="background: #0000CD;"></span>
+    */
   @JSImport("cesium", "Color.MEDIUMBLUE")
   @js.native
-  def MEDIUMBLUE: Color = js.native
-  inline def MEDIUMBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUMBLUE")(x.asInstanceOf[js.Any])
+  val MEDIUMBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #BA55D3
+    * <span class="colorSwath" style="background: #BA55D3;"></span>
+    */
   @JSImport("cesium", "Color.MEDIUMORCHID")
   @js.native
-  def MEDIUMORCHID: Color = js.native
-  inline def MEDIUMORCHID_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUMORCHID")(x.asInstanceOf[js.Any])
+  val MEDIUMORCHID: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #9370DB
+    * <span class="colorSwath" style="background: #9370DB;"></span>
+    */
   @JSImport("cesium", "Color.MEDIUMPURPLE")
   @js.native
-  def MEDIUMPURPLE: Color = js.native
-  inline def MEDIUMPURPLE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUMPURPLE")(x.asInstanceOf[js.Any])
+  val MEDIUMPURPLE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #3CB371
+    * <span class="colorSwath" style="background: #3CB371;"></span>
+    */
   @JSImport("cesium", "Color.MEDIUMSEAGREEN")
   @js.native
-  def MEDIUMSEAGREEN: Color = js.native
-  inline def MEDIUMSEAGREEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUMSEAGREEN")(x.asInstanceOf[js.Any])
+  val MEDIUMSEAGREEN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #7B68EE
+    * <span class="colorSwath" style="background: #7B68EE;"></span>
+    */
   @JSImport("cesium", "Color.MEDIUMSLATEBLUE")
   @js.native
-  def MEDIUMSLATEBLUE: Color = js.native
-  inline def MEDIUMSLATEBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUMSLATEBLUE")(x.asInstanceOf[js.Any])
+  val MEDIUMSLATEBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #00FA9A
+    * <span class="colorSwath" style="background: #00FA9A;"></span>
+    */
   @JSImport("cesium", "Color.MEDIUMSPRINGGREEN")
   @js.native
-  def MEDIUMSPRINGGREEN: Color = js.native
-  inline def MEDIUMSPRINGGREEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUMSPRINGGREEN")(x.asInstanceOf[js.Any])
+  val MEDIUMSPRINGGREEN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #48D1CC
+    * <span class="colorSwath" style="background: #48D1CC;"></span>
+    */
   @JSImport("cesium", "Color.MEDIUMTURQUOISE")
   @js.native
-  def MEDIUMTURQUOISE: Color = js.native
-  inline def MEDIUMTURQUOISE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUMTURQUOISE")(x.asInstanceOf[js.Any])
+  val MEDIUMTURQUOISE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #C71585
+    * <span class="colorSwath" style="background: #C71585;"></span>
+    */
   @JSImport("cesium", "Color.MEDIUMVIOLETRED")
   @js.native
-  def MEDIUMVIOLETRED: Color = js.native
-  inline def MEDIUMVIOLETRED_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIUMVIOLETRED")(x.asInstanceOf[js.Any])
+  val MEDIUMVIOLETRED: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #191970
+    * <span class="colorSwath" style="background: #191970;"></span>
+    */
   @JSImport("cesium", "Color.MIDNIGHTBLUE")
   @js.native
-  def MIDNIGHTBLUE: Color = js.native
-  inline def MIDNIGHTBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIDNIGHTBLUE")(x.asInstanceOf[js.Any])
+  val MIDNIGHTBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #F5FFFA
+    * <span class="colorSwath" style="background: #F5FFFA;"></span>
+    */
   @JSImport("cesium", "Color.MINTCREAM")
   @js.native
-  def MINTCREAM: Color = js.native
-  inline def MINTCREAM_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MINTCREAM")(x.asInstanceOf[js.Any])
+  val MINTCREAM: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFE4E1
+    * <span class="colorSwath" style="background: #FFE4E1;"></span>
+    */
   @JSImport("cesium", "Color.MISTYROSE")
   @js.native
-  def MISTYROSE: Color = js.native
-  inline def MISTYROSE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MISTYROSE")(x.asInstanceOf[js.Any])
+  val MISTYROSE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFE4B5
+    * <span class="colorSwath" style="background: #FFE4B5;"></span>
+    */
   @JSImport("cesium", "Color.MOCCASIN")
   @js.native
-  def MOCCASIN: Color = js.native
-  inline def MOCCASIN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOCCASIN")(x.asInstanceOf[js.Any])
+  val MOCCASIN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFDEAD
+    * <span class="colorSwath" style="background: #FFDEAD;"></span>
+    */
   @JSImport("cesium", "Color.NAVAJOWHITE")
   @js.native
-  def NAVAJOWHITE: Color = js.native
-  inline def NAVAJOWHITE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAVAJOWHITE")(x.asInstanceOf[js.Any])
+  val NAVAJOWHITE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #000080
+    * <span class="colorSwath" style="background: #000080;"></span>
+    */
   @JSImport("cesium", "Color.NAVY")
   @js.native
-  def NAVY: Color = js.native
-  inline def NAVY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAVY")(x.asInstanceOf[js.Any])
+  val NAVY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FDF5E6
+    * <span class="colorSwath" style="background: #FDF5E6;"></span>
+    */
   @JSImport("cesium", "Color.OLDLACE")
   @js.native
-  def OLDLACE: Color = js.native
-  inline def OLDLACE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OLDLACE")(x.asInstanceOf[js.Any])
+  val OLDLACE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #808000
+    * <span class="colorSwath" style="background: #808000;"></span>
+    */
   @JSImport("cesium", "Color.OLIVE")
   @js.native
-  def OLIVE: Color = js.native
+  val OLIVE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #6B8E23
+    * <span class="colorSwath" style="background: #6B8E23;"></span>
+    */
   @JSImport("cesium", "Color.OLIVEDRAB")
   @js.native
-  def OLIVEDRAB: Color = js.native
-  inline def OLIVEDRAB_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OLIVEDRAB")(x.asInstanceOf[js.Any])
+  val OLIVEDRAB: Color = js.native
   
-  inline def OLIVE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OLIVE")(x.asInstanceOf[js.Any])
-  
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFA500
+    * <span class="colorSwath" style="background: #FFA500;"></span>
+    */
   @JSImport("cesium", "Color.ORANGE")
   @js.native
-  def ORANGE: Color = js.native
+  val ORANGE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FF4500
+    * <span class="colorSwath" style="background: #FF4500;"></span>
+    */
   @JSImport("cesium", "Color.ORANGERED")
   @js.native
-  def ORANGERED: Color = js.native
-  inline def ORANGERED_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGERED")(x.asInstanceOf[js.Any])
+  val ORANGERED: Color = js.native
   
-  inline def ORANGE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORANGE")(x.asInstanceOf[js.Any])
-  
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #DA70D6
+    * <span class="colorSwath" style="background: #DA70D6;"></span>
+    */
   @JSImport("cesium", "Color.ORCHID")
   @js.native
-  def ORCHID: Color = js.native
-  inline def ORCHID_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORCHID")(x.asInstanceOf[js.Any])
+  val ORCHID: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #EEE8AA
+    * <span class="colorSwath" style="background: #EEE8AA;"></span>
+    */
   @JSImport("cesium", "Color.PALEGOLDENROD")
   @js.native
-  def PALEGOLDENROD: Color = js.native
-  inline def PALEGOLDENROD_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PALEGOLDENROD")(x.asInstanceOf[js.Any])
+  val PALEGOLDENROD: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #98FB98
+    * <span class="colorSwath" style="background: #98FB98;"></span>
+    */
   @JSImport("cesium", "Color.PALEGREEN")
   @js.native
-  def PALEGREEN: Color = js.native
-  inline def PALEGREEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PALEGREEN")(x.asInstanceOf[js.Any])
+  val PALEGREEN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #AFEEEE
+    * <span class="colorSwath" style="background: #AFEEEE;"></span>
+    */
   @JSImport("cesium", "Color.PALETURQUOISE")
   @js.native
-  def PALETURQUOISE: Color = js.native
-  inline def PALETURQUOISE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PALETURQUOISE")(x.asInstanceOf[js.Any])
+  val PALETURQUOISE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #DB7093
+    * <span class="colorSwath" style="background: #DB7093;"></span>
+    */
   @JSImport("cesium", "Color.PALEVIOLETRED")
   @js.native
-  def PALEVIOLETRED: Color = js.native
-  inline def PALEVIOLETRED_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PALEVIOLETRED")(x.asInstanceOf[js.Any])
+  val PALEVIOLETRED: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFEFD5
+    * <span class="colorSwath" style="background: #FFEFD5;"></span>
+    */
   @JSImport("cesium", "Color.PAPAYAWHIP")
   @js.native
-  def PAPAYAWHIP: Color = js.native
-  inline def PAPAYAWHIP_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAPAYAWHIP")(x.asInstanceOf[js.Any])
+  val PAPAYAWHIP: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFDAB9
+    * <span class="colorSwath" style="background: #FFDAB9;"></span>
+    */
   @JSImport("cesium", "Color.PEACHPUFF")
   @js.native
-  def PEACHPUFF: Color = js.native
-  inline def PEACHPUFF_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PEACHPUFF")(x.asInstanceOf[js.Any])
+  val PEACHPUFF: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #CD853F
+    * <span class="colorSwath" style="background: #CD853F;"></span>
+    */
   @JSImport("cesium", "Color.PERU")
   @js.native
-  def PERU: Color = js.native
-  inline def PERU_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PERU")(x.asInstanceOf[js.Any])
+  val PERU: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFC0CB
+    * <span class="colorSwath" style="background: #FFC0CB;"></span>
+    */
   @JSImport("cesium", "Color.PINK")
   @js.native
-  def PINK: Color = js.native
-  inline def PINK_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PINK")(x.asInstanceOf[js.Any])
+  val PINK: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #DDA0DD
+    * <span class="colorSwath" style="background: #DDA0DD;"></span>
+    */
   @JSImport("cesium", "Color.PLUM")
   @js.native
-  def PLUM: Color = js.native
-  inline def PLUM_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLUM")(x.asInstanceOf[js.Any])
+  val PLUM: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #B0E0E6
+    * <span class="colorSwath" style="background: #B0E0E6;"></span>
+    */
   @JSImport("cesium", "Color.POWDERBLUE")
   @js.native
-  def POWDERBLUE: Color = js.native
-  inline def POWDERBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POWDERBLUE")(x.asInstanceOf[js.Any])
+  val POWDERBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #800080
+    * <span class="colorSwath" style="background: #800080;"></span>
+    */
   @JSImport("cesium", "Color.PURPLE")
   @js.native
-  def PURPLE: Color = js.native
-  inline def PURPLE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PURPLE")(x.asInstanceOf[js.Any])
+  val PURPLE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FF0000
+    * <span class="colorSwath" style="background: #FF0000;"></span>
+    */
   @JSImport("cesium", "Color.RED")
   @js.native
-  def RED: Color = js.native
-  inline def RED_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RED")(x.asInstanceOf[js.Any])
+  val RED: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #BC8F8F
+    * <span class="colorSwath" style="background: #BC8F8F;"></span>
+    */
   @JSImport("cesium", "Color.ROSYBROWN")
   @js.native
-  def ROSYBROWN: Color = js.native
-  inline def ROSYBROWN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROSYBROWN")(x.asInstanceOf[js.Any])
+  val ROSYBROWN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #4169E1
+    * <span class="colorSwath" style="background: #4169E1;"></span>
+    */
   @JSImport("cesium", "Color.ROYALBLUE")
   @js.native
-  def ROYALBLUE: Color = js.native
-  inline def ROYALBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROYALBLUE")(x.asInstanceOf[js.Any])
+  val ROYALBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #8B4513
+    * <span class="colorSwath" style="background: #8B4513;"></span>
+    */
   @JSImport("cesium", "Color.SADDLEBROWN")
   @js.native
-  def SADDLEBROWN: Color = js.native
-  inline def SADDLEBROWN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SADDLEBROWN")(x.asInstanceOf[js.Any])
+  val SADDLEBROWN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FA8072
+    * <span class="colorSwath" style="background: #FA8072;"></span>
+    */
   @JSImport("cesium", "Color.SALMON")
   @js.native
-  def SALMON: Color = js.native
-  inline def SALMON_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SALMON")(x.asInstanceOf[js.Any])
+  val SALMON: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #F4A460
+    * <span class="colorSwath" style="background: #F4A460;"></span>
+    */
   @JSImport("cesium", "Color.SANDYBROWN")
   @js.native
-  def SANDYBROWN: Color = js.native
-  inline def SANDYBROWN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SANDYBROWN")(x.asInstanceOf[js.Any])
+  val SANDYBROWN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #2E8B57
+    * <span class="colorSwath" style="background: #2E8B57;"></span>
+    */
   @JSImport("cesium", "Color.SEAGREEN")
   @js.native
-  def SEAGREEN: Color = js.native
-  inline def SEAGREEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEAGREEN")(x.asInstanceOf[js.Any])
+  val SEAGREEN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFF5EE
+    * <span class="colorSwath" style="background: #FFF5EE;"></span>
+    */
   @JSImport("cesium", "Color.SEASHELL")
   @js.native
-  def SEASHELL: Color = js.native
-  inline def SEASHELL_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEASHELL")(x.asInstanceOf[js.Any])
+  val SEASHELL: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #A0522D
+    * <span class="colorSwath" style="background: #A0522D;"></span>
+    */
   @JSImport("cesium", "Color.SIENNA")
   @js.native
-  def SIENNA: Color = js.native
-  inline def SIENNA_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIENNA")(x.asInstanceOf[js.Any])
+  val SIENNA: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #C0C0C0
+    * <span class="colorSwath" style="background: #C0C0C0;"></span>
+    */
   @JSImport("cesium", "Color.SILVER")
   @js.native
-  def SILVER: Color = js.native
-  inline def SILVER_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SILVER")(x.asInstanceOf[js.Any])
+  val SILVER: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #87CEEB
+    * <span class="colorSwath" style="background: #87CEEB;"></span>
+    */
   @JSImport("cesium", "Color.SKYBLUE")
   @js.native
-  def SKYBLUE: Color = js.native
-  inline def SKYBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SKYBLUE")(x.asInstanceOf[js.Any])
+  val SKYBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #6A5ACD
+    * <span class="colorSwath" style="background: #6A5ACD;"></span>
+    */
   @JSImport("cesium", "Color.SLATEBLUE")
   @js.native
-  def SLATEBLUE: Color = js.native
-  inline def SLATEBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SLATEBLUE")(x.asInstanceOf[js.Any])
+  val SLATEBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #708090
+    * <span class="colorSwath" style="background: #708090;"></span>
+    */
   @JSImport("cesium", "Color.SLATEGRAY")
   @js.native
-  def SLATEGRAY: Color = js.native
-  inline def SLATEGRAY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SLATEGRAY")(x.asInstanceOf[js.Any])
+  val SLATEGRAY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #708090
+    * <span class="colorSwath" style="background: #708090;"></span>
+    */
   @JSImport("cesium", "Color.SLATEGREY")
   @js.native
-  def SLATEGREY: Color = js.native
-  inline def SLATEGREY_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SLATEGREY")(x.asInstanceOf[js.Any])
+  val SLATEGREY: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFFAFA
+    * <span class="colorSwath" style="background: #FFFAFA;"></span>
+    */
   @JSImport("cesium", "Color.SNOW")
   @js.native
-  def SNOW: Color = js.native
-  inline def SNOW_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SNOW")(x.asInstanceOf[js.Any])
+  val SNOW: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #00FF7F
+    * <span class="colorSwath" style="background: #00FF7F;"></span>
+    */
   @JSImport("cesium", "Color.SPRINGGREEN")
   @js.native
-  def SPRINGGREEN: Color = js.native
-  inline def SPRINGGREEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPRINGGREEN")(x.asInstanceOf[js.Any])
+  val SPRINGGREEN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #4682B4
+    * <span class="colorSwath" style="background: #4682B4;"></span>
+    */
   @JSImport("cesium", "Color.STEELBLUE")
   @js.native
-  def STEELBLUE: Color = js.native
-  inline def STEELBLUE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STEELBLUE")(x.asInstanceOf[js.Any])
+  val STEELBLUE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #D2B48C
+    * <span class="colorSwath" style="background: #D2B48C;"></span>
+    */
   @JSImport("cesium", "Color.TAN")
   @js.native
-  def TAN: Color = js.native
-  inline def TAN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAN")(x.asInstanceOf[js.Any])
+  val TAN: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #008080
+    * <span class="colorSwath" style="background: #008080;"></span>
+    */
   @JSImport("cesium", "Color.TEAL")
   @js.native
-  def TEAL: Color = js.native
-  inline def TEAL_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEAL")(x.asInstanceOf[js.Any])
+  val TEAL: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #D8BFD8
+    * <span class="colorSwath" style="background: #D8BFD8;"></span>
+    */
   @JSImport("cesium", "Color.THISTLE")
   @js.native
-  def THISTLE: Color = js.native
-  inline def THISTLE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THISTLE")(x.asInstanceOf[js.Any])
+  val THISTLE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FF6347
+    * <span class="colorSwath" style="background: #FF6347;"></span>
+    */
   @JSImport("cesium", "Color.TOMATO")
   @js.native
-  def TOMATO: Color = js.native
-  inline def TOMATO_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOMATO")(x.asInstanceOf[js.Any])
+  val TOMATO: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS transparent.
+    * <span class="colorSwath" style="background: transparent;"></span>
+    */
   @JSImport("cesium", "Color.TRANSPARENT")
   @js.native
-  def TRANSPARENT: Color = js.native
-  inline def TRANSPARENT_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRANSPARENT")(x.asInstanceOf[js.Any])
+  val TRANSPARENT: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #40E0D0
+    * <span class="colorSwath" style="background: #40E0D0;"></span>
+    */
   @JSImport("cesium", "Color.TURQUOISE")
   @js.native
-  def TURQUOISE: Color = js.native
-  inline def TURQUOISE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TURQUOISE")(x.asInstanceOf[js.Any])
+  val TURQUOISE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #EE82EE
+    * <span class="colorSwath" style="background: #EE82EE;"></span>
+    */
   @JSImport("cesium", "Color.VIOLET")
   @js.native
-  def VIOLET: Color = js.native
-  inline def VIOLET_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIOLET")(x.asInstanceOf[js.Any])
+  val VIOLET: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #F5DEB3
+    * <span class="colorSwath" style="background: #F5DEB3;"></span>
+    */
   @JSImport("cesium", "Color.WHEAT")
   @js.native
-  def WHEAT: Color = js.native
-  inline def WHEAT_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHEAT")(x.asInstanceOf[js.Any])
+  val WHEAT: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFFFFF
+    * <span class="colorSwath" style="background: #FFFFFF;"></span>
+    */
   @JSImport("cesium", "Color.WHITE")
   @js.native
-  def WHITE: Color = js.native
+  val WHITE: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #F5F5F5
+    * <span class="colorSwath" style="background: #F5F5F5;"></span>
+    */
   @JSImport("cesium", "Color.WHITESMOKE")
   @js.native
-  def WHITESMOKE: Color = js.native
-  inline def WHITESMOKE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHITESMOKE")(x.asInstanceOf[js.Any])
+  val WHITESMOKE: Color = js.native
   
-  inline def WHITE_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WHITE")(x.asInstanceOf[js.Any])
-  
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #FFFF00
+    * <span class="colorSwath" style="background: #FFFF00;"></span>
+    */
   @JSImport("cesium", "Color.YELLOW")
   @js.native
-  def YELLOW: Color = js.native
+  val YELLOW: Color = js.native
   
-  /* static member */
+  /**
+    * An immutable Color instance initialized to CSS color #9ACD32
+    * <span class="colorSwath" style="background: #9ACD32;"></span>
+    */
   @JSImport("cesium", "Color.YELLOWGREEN")
   @js.native
-  def YELLOWGREEN: Color = js.native
-  inline def YELLOWGREEN_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YELLOWGREEN")(x.asInstanceOf[js.Any])
+  val YELLOWGREEN: Color = js.native
   
-  inline def YELLOW_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YELLOW")(x.asInstanceOf[js.Any])
-  
-  /* static member */
-  inline def add(left: Color, right: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Color]
+  /**
+    * Computes the componentwise sum of two Colors.
+    * @param left - The first Color.
+    * @param right - The second Color.
+    * @param result - The object onto which to store the result.
+    * @returns The modified result parameter.
+    */
   inline def add(left: Color, right: Color, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  /* static member */
+  /**
+    * Converts a 'byte' color component in the range of 0 to 255 into
+    * a 'float' color component in the range of 0 to 1.0.
+    * @param number - The number to be converted.
+    * @returns The converted number.
+    */
   inline def byteToFloat(number: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteToFloat")(number.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  /* static member */
-  inline def clone_(color: Color): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
-  inline def clone_(color: Color, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(color.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  /**
+    * Duplicates a Color.
+    * @param color - The Color to duplicate.
+    * @param [result] - The object to store the result in, if undefined a new instance will be created.
+    * @returns The modified result parameter or a new instance if result was undefined. (Returns undefined if color is undefined)
+    */
+  inline def clone(color: Color): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
+  inline def clone(color: Color, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(color.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  /* static member */
-  inline def divide(left: Color, right: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("divide")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Color]
+  /**
+    * Computes the componentwise quotient of two Colors.
+    * @param left - The first Color.
+    * @param right - The second Color.
+    * @param result - The object onto which to store the result.
+    * @returns The modified result parameter.
+    */
   inline def divide(left: Color, right: Color, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("divide")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  /* static member */
-  inline def divideByScalar(color: Color, scalar: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("divideByScalar")(color.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Color]
+  /**
+    * Divides the provided Color componentwise by the provided scalar.
+    * @param color - The Color to be divided.
+    * @param scalar - The scalar to divide with.
+    * @param result - The object onto which to store the result.
+    * @returns The modified result parameter.
+    */
   inline def divideByScalar(color: Color, scalar: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("divideByScalar")(color.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  /* static member */
-  inline def equals_(left: Color, right: Color): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  /**
+    * Returns true if the first Color equals the second color.
+    * @param left - The first Color to compare for equality.
+    * @param right - The second Color to compare for equality.
+    * @returns <code>true</code> if the Colors are equal; otherwise, <code>false</code>.
+    */
+  inline def equals(left: Color, right: Color): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  /* static member */
+  /**
+    * Converts a 'float' color component in the range of 0 to 1.0 into
+    * a 'byte' color component in the range of 0 to 255.
+    * @param number - The number to be converted.
+    * @returns The converted number.
+    */
   inline def floatToByte(number: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("floatToByte")(number.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  /* static member */
+  /**
+    * Creates a new Color that has the same red, green, and blue components
+    * of the specified color, but with the specified alpha value.
+    * @example
+    * const translucentRed = Cesium.Color.fromAlpha(Cesium.Color.RED, 0.9);
+    * @param color - The base color
+    * @param alpha - The new alpha component.
+    * @param [result] - The object onto which to store the result.
+    * @returns The modified result parameter or a new Color instance if one was not provided.
+    */
   inline def fromAlpha(color: Color, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAlpha")(color.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromAlpha(color: Color, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAlpha")(color.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  /* static member */
+  /**
+    * Creates a new Color specified using red, green, blue, and alpha values
+    * that are in the range of 0 to 255, converting them internally to a range of 0.0 to 1.0.
+    * @param [red = 255] - The red component.
+    * @param [green = 255] - The green component.
+    * @param [blue = 255] - The blue component.
+    * @param [alpha = 255] - The alpha component.
+    * @param [result] - The object onto which to store the result.
+    * @returns The modified result parameter or a new Color instance if one was not provided.
+    */
   inline def fromBytes(): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")().asInstanceOf[Color]
   inline def fromBytes(red: Double): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any]).asInstanceOf[Color]
   inline def fromBytes(red: Double, green: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any])).asInstanceOf[Color]
@@ -1013,67 +1423,195 @@ object Color {
   inline def fromBytes(red: Unit, green: Unit, blue: Unit, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromBytes(red: Unit, green: Unit, blue: Unit, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  /* static member */
+  /**
+    * Creates a Color instance from a {@link Cartesian4}. <code>x</code>, <code>y</code>, <code>z</code>,
+    * and <code>w</code> map to <code>red</code>, <code>green</code>, <code>blue</code>, and <code>alpha</code>, respectively.
+    * @param cartesian - The source cartesian.
+    * @param [result] - The object onto which to store the result.
+    * @returns The modified result parameter or a new Color instance if one was not provided.
+    */
   inline def fromCartesian4(cartesian: Cartesian4): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCartesian4")(cartesian.asInstanceOf[js.Any]).asInstanceOf[Color]
   inline def fromCartesian4(cartesian: Cartesian4, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCartesian4")(cartesian.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  /* static member */
+  /**
+    * Creates a Color instance from a CSS color value.
+    * @example
+    * const cesiumBlue = Cesium.Color.fromCssColorString('#67ADDF');
+    * const green = Cesium.Color.fromCssColorString('green');
+    * @param color - The CSS color value in #rgb, #rgba, #rrggbb, #rrggbbaa, rgb(), rgba(), hsl(), or hsla() format.
+    * @param [result] - The object to store the result in, if undefined a new instance will be created.
+    * @returns The color object, or undefined if the string was not a valid CSS color.
+    */
   inline def fromCssColorString(color: String): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCssColorString")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
+  inline def fromCssColorString(color: String, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCssColorString")(color.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  /* static member */
+  /**
+    * Creates a Color instance from hue, saturation, and lightness.
+    * @param [hue = 0] - The hue angle 0...1
+    * @param [saturation = 0] - The saturation value 0...1
+    * @param [lightness = 0] - The lightness value 0...1
+    * @param [alpha = 1.0] - The alpha component 0...1
+    * @param [result] - The object to store the result in, if undefined a new instance will be created.
+    * @returns The color object.
+    */
   inline def fromHsl(): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")().asInstanceOf[Color]
   inline def fromHsl(hue: Double): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any]).asInstanceOf[Color]
   inline def fromHsl(hue: Double, saturation: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromHsl(hue: Double, saturation: Double, lightness: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromHsl(hue: Double, saturation: Double, lightness: Double, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Double, saturation: Double, lightness: Double, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Double, saturation: Double, lightness: Double, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromHsl(hue: Double, saturation: Double, lightness: Unit, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Double, saturation: Double, lightness: Unit, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Double, saturation: Double, lightness: Unit, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromHsl(hue: Double, saturation: Unit, lightness: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromHsl(hue: Double, saturation: Unit, lightness: Double, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Double, saturation: Unit, lightness: Double, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Double, saturation: Unit, lightness: Double, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromHsl(hue: Double, saturation: Unit, lightness: Unit, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Double, saturation: Unit, lightness: Unit, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Double, saturation: Unit, lightness: Unit, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromHsl(hue: Unit, saturation: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromHsl(hue: Unit, saturation: Double, lightness: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromHsl(hue: Unit, saturation: Double, lightness: Double, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Unit, saturation: Double, lightness: Double, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Unit, saturation: Double, lightness: Double, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromHsl(hue: Unit, saturation: Double, lightness: Unit, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Unit, saturation: Double, lightness: Unit, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Unit, saturation: Double, lightness: Unit, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromHsl(hue: Unit, saturation: Unit, lightness: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromHsl(hue: Unit, saturation: Unit, lightness: Double, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Unit, saturation: Unit, lightness: Double, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Unit, saturation: Unit, lightness: Double, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromHsl(hue: Unit, saturation: Unit, lightness: Unit, alpha: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Unit, saturation: Unit, lightness: Unit, alpha: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
+  inline def fromHsl(hue: Unit, saturation: Unit, lightness: Unit, alpha: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHsl")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  /* static member */
+  /**
+    * Creates a random color using the provided options. For reproducible random colors, you should
+    * call {@link Math#setRandomNumberSeed} once at the beginning of your application.
+    * @example
+    * //Create a completely random color
+    * const color = Cesium.Color.fromRandom();
+    *
+    * //Create a random shade of yellow.
+    * const color1 = Cesium.Color.fromRandom({
+    *     red : 1.0,
+    *     green : 1.0,
+    *     alpha : 1.0
+    * });
+    *
+    * //Create a random bright color.
+    * const color2 = Cesium.Color.fromRandom({
+    *     minimumRed : 0.75,
+    *     minimumGreen : 0.75,
+    *     minimumBlue : 0.75,
+    *     alpha : 1.0
+    * });
+    * @param [options] - Object with the following properties:
+    * @param [options.red] - If specified, the red component to use instead of a randomized value.
+    * @param [options.minimumRed = 0.0] - The maximum red value to generate if none was specified.
+    * @param [options.maximumRed = 1.0] - The minimum red value to generate if none was specified.
+    * @param [options.green] - If specified, the green component to use instead of a randomized value.
+    * @param [options.minimumGreen = 0.0] - The maximum green value to generate if none was specified.
+    * @param [options.maximumGreen = 1.0] - The minimum green value to generate if none was specified.
+    * @param [options.blue] - If specified, the blue component to use instead of a randomized value.
+    * @param [options.minimumBlue = 0.0] - The maximum blue value to generate if none was specified.
+    * @param [options.maximumBlue = 1.0] - The minimum blue value to generate if none was specified.
+    * @param [options.alpha] - If specified, the alpha component to use instead of a randomized value.
+    * @param [options.minimumAlpha = 0.0] - The maximum alpha value to generate if none was specified.
+    * @param [options.maximumAlpha = 1.0] - The minimum alpha value to generate if none was specified.
+    * @param [result] - The object to store the result in, if undefined a new instance will be created.
+    * @returns The modified result parameter or a new instance if result was undefined.
+    */
   inline def fromRandom(): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRandom")().asInstanceOf[Color]
   inline def fromRandom(options: Unit, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandom")(options.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def fromRandom(options: Alpha): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRandom")(options.asInstanceOf[js.Any]).asInstanceOf[Color]
   inline def fromRandom(options: Alpha, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRandom")(options.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  /* static member */
+  /**
+    * Creates a new Color from a single numeric unsigned 32-bit RGBA value, using the endianness
+    * of the system.
+    * @example
+    * const color = Cesium.Color.fromRgba(0x67ADDFFF);
+    * @param rgba - A single numeric unsigned 32-bit RGBA value.
+    * @param [result] - The object to store the result in, if undefined a new instance will be created.
+    * @returns The color object.
+    */
   inline def fromRgba(rgba: Double): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRgba")(rgba.asInstanceOf[js.Any]).asInstanceOf[Color]
+  inline def fromRgba(rgba: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRgba")(rgba.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
   /**
     * Computes the linear interpolation or extrapolation at t between the provided colors.
+    * @param start - The color corresponding to t at 0.0.
+    * @param end - The color corresponding to t at 1.0.
+    * @param t - The point along t at which to interpolate.
+    * @param result - The object onto which to store the result.
+    * @returns The modified result parameter.
     */
-  /* static member */
   inline def lerp(start: Color, end: Color, t: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], t.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  /* static member */
-  inline def mod(left: Color, right: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Color]
+  /**
+    * Computes the componentwise modulus of two Colors.
+    * @param left - The first Color.
+    * @param right - The second Color.
+    * @param result - The object onto which to store the result.
+    * @returns The modified result parameter.
+    */
   inline def mod(left: Color, right: Color, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  /* static member */
-  inline def multiply(left: Color, right: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Color]
+  /**
+    * Computes the componentwise product of two Colors.
+    * @param left - The first Color.
+    * @param right - The second Color.
+    * @param result - The object onto which to store the result.
+    * @returns The modified result parameter.
+    */
   inline def multiply(left: Color, right: Color, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  /* static member */
-  inline def multiplyByScalar(color: Color, scalar: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyByScalar")(color.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Color]
+  /**
+    * Multiplies the provided Color componentwise by the provided scalar.
+    * @param color - The Color to be scaled.
+    * @param scalar - The scalar to multiply with.
+    * @param result - The object onto which to store the result.
+    * @returns The modified result parameter.
+    */
   inline def multiplyByScalar(color: Color, scalar: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyByScalar")(color.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  /* static member */
+  /**
+    * Stores the provided instance into the provided array.
+    * @param value - The value to pack.
+    * @param array - The array to pack into.
+    * @param [startingIndex = 0] - The index into the array at which to start packing the elements.
+    * @returns The array that was packed into
+    */
   inline def pack(value: Color, array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   inline def pack(value: Color, array: js.Array[Double], startingIndex: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  /* static member */
-  inline def subtract(left: Color, right: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Color]
+  /**
+    * The number of elements used to pack the object into an array.
+    */
+  @JSImport("cesium", "Color.packedLength")
+  @js.native
+  def packedLength: Double = js.native
+  inline def packedLength_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("packedLength")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Computes the componentwise difference of two Colors.
+    * @param left - The first Color.
+    * @param right - The second Color.
+    * @param result - The object onto which to store the result.
+    * @returns The modified result parameter.
+    */
   inline def subtract(left: Color, right: Color, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]
   
-  /* static member */
+  /**
+    * Retrieves an instance from a packed array.
+    * @param array - The packed array.
+    * @param [startingIndex = 0] - The starting index of the element to be unpacked.
+    * @param [result] - The object into which to store the result.
+    * @returns The modified result parameter or a new Color instance if one was not provided.
+    */
   inline def unpack(array: js.Array[Double]): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[Color]
   inline def unpack(array: js.Array[Double], startingIndex: Double): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[Color]
   inline def unpack(array: js.Array[Double], startingIndex: Double, result: Color): Color = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Color]

@@ -10,7 +10,7 @@ trait IosTest extends StObject {
   var iosAppInfo: js.UndefOr[IosAppInfo] = js.undefined
   
   /** An iOS Robo test. */
-  var iosRoboTest: js.UndefOr[js.Any] = js.undefined
+  var iosRoboTest: js.UndefOr[scala.Any] = js.undefined
   
   /** An iOS test loop. */
   var iosTestLoop: js.UndefOr[IosTestLoop] = js.undefined
@@ -34,7 +34,7 @@ object IosTest {
     
     inline def setIosAppInfoUndefined: Self = StObject.set(x, "iosAppInfo", js.undefined)
     
-    inline def setIosRoboTest(value: js.Any): Self = StObject.set(x, "iosRoboTest", value.asInstanceOf[js.Any])
+    inline def setIosRoboTest(value: scala.Any): Self = StObject.set(x, "iosRoboTest", value.asInstanceOf[js.Any])
     
     inline def setIosRoboTestUndefined: Self = StObject.set(x, "iosRoboTest", js.undefined)
     

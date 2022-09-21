@@ -9,10 +9,10 @@ trait ViewBillingRequest extends StObject {
   /**
     * The end date and time for the time period for which you want a list of billing records. Specify the date and time in Unix time format and Coordinated Universal time (UTC).
     */
-  var End: js.UndefOr[Timestamp] = js.undefined
+  var End: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * For an initial request for a list of billing records, omit this element. If the number of billing records that are associated with the current AWS account during the specified period is greater than the value that you specified for MaxItems, you can use Marker to return additional billing records. Get the value of NextPageMarker from the previous response, and submit another request that includes the value of NextPageMarker in the Marker element.  Constraints: The marker must match the value of NextPageMarker that was returned in the previous response.
+    * For an initial request for a list of billing records, omit this element. If the number of billing records that are associated with the current Amazon Web Services account during the specified period is greater than the value that you specified for MaxItems, you can use Marker to return additional billing records. Get the value of NextPageMarker from the previous response, and submit another request that includes the value of NextPageMarker in the Marker element.  Constraints: The marker must match the value of NextPageMarker that was returned in the previous response.
     */
   var Marker: js.UndefOr[PageMarker] = js.undefined
   
@@ -24,7 +24,7 @@ trait ViewBillingRequest extends StObject {
   /**
     * The beginning date and time for the time period for which you want a list of billing records. Specify the date and time in Unix time format and Coordinated Universal time (UTC).
     */
-  var Start: js.UndefOr[Timestamp] = js.undefined
+  var Start: js.UndefOr[js.Date] = js.undefined
 }
 object ViewBillingRequest {
   
@@ -35,7 +35,7 @@ object ViewBillingRequest {
   
   extension [Self <: ViewBillingRequest](x: Self) {
     
-    inline def setEnd(value: Timestamp): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: js.Date): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
     inline def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
     
@@ -47,7 +47,7 @@ object ViewBillingRequest {
     
     inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    inline def setStart(value: Timestamp): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: js.Date): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
     inline def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
   }

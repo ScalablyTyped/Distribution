@@ -21,7 +21,7 @@ object ISchema {
     
     inline def setColumns(value: js.Array[IColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
   }

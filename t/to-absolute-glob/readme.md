@@ -11,9 +11,9 @@ Make a glob pattern absolute, ensuring that negative globs and patterns with tra
 | Full name          | to-absolute-glob |
 | Keywords           | absolute, file, filepath, glob, negate, negative, path, pattern, resolve, to |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 80450863 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8208965.333333333 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/to-absolute-glob)

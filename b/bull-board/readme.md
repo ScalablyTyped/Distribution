@@ -10,10 +10,10 @@ Bull queue UI for inspecting jobs
 | ------------------ | :-------------: |
 | Full name          | bull-board |
 | Keywords           | bull, redis, queue, monitoring |
-| # releases         | 39 |
-| # dependents       | 17 |
-| # downloads        | 1030016 |
-| # stars            | 0 |
+| # releases         | 34 |
+| # dependents       | 0.0 |
+| # downloads        | 145490.66666666666 |
+| # stars            | 1187.0 |
 
 ## Links
 - [Homepage](https://github.com/felixmosh/bull-board#readme)

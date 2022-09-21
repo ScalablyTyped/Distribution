@@ -21,10 +21,10 @@ object SjclECCPublicKeyData {
     
     inline def setX(value: BitArray_): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value :_*))
+    inline def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value*))
     
     inline def setY(value: BitArray_): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    inline def setYVarargs(value: Double*): Self = StObject.set(x, "y", js.Array(value :_*))
+    inline def setYVarargs(value: Double*): Self = StObject.set(x, "y", js.Array(value*))
   }
 }

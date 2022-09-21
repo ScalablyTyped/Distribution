@@ -16,7 +16,7 @@ object DataProtection {
   @JSGlobal("Windows.Security.Cryptography.DataProtection.DataProtectionProvider")
   @js.native
   /** Constructor used for decryption operations. Use this constructor before calling the UnprotectAsync or UnprotectStreamAsync methods. */
-  class DataProtectionProvider ()
+  open class DataProtectionProvider ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Cryptography.DataProtection.DataProtectionProvider {
     /**

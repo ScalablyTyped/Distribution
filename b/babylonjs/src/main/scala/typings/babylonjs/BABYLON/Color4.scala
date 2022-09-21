@@ -43,7 +43,7 @@ trait Color4 extends StObject {
     * @param min defines minimum clamping value (default is 0)
     * @param max defines maximum clamping value (default is 1)
     * @param result defines color to store the result into.
-    * @returns the cuurent Color4
+    * @returns the current Color4
     */
   def clampToRef(min: Double, max: Double, result: Color4): Color4 = js.native
   def clampToRef(min: Double, max: Unit, result: Color4): Color4 = js.native
@@ -101,14 +101,14 @@ trait Color4 extends StObject {
   def getHashCode(): Double = js.native
   
   /**
-    * Multipy an Color4 value by another and return a new Color4 object
+    * Multiply an Color4 value by another and return a new Color4 object
     * @param color defines the Color4 value to multiply by
     * @returns a new Color4 object
     */
   def multiply(color: Color4): Color4 = js.native
   
   /**
-    * Multipy a Color4 value by another and push the result in a reference value
+    * Multiply a Color4 value by another and push the result in a reference value
     * @param color defines the Color4 value to multiply by
     * @param result defines the Color4 to fill the result in
     * @returns the result Color4
@@ -134,6 +134,13 @@ trait Color4 extends StObject {
     * @returns the unmodified current Color4
     */
   def scaleAndAddToRef(scale: Double, result: Color4): Color4 = js.native
+  
+  /**
+    * Multiplies the Color4 values by the float "scale"
+    * @param scale defines the scaling factor to apply
+    * @returns the current updated Color4
+    */
+  def scaleInPlace(scale: Double): Color4 = js.native
   
   /**
     * Multiplies the current Color4 values by scale and stores the result in "result"
@@ -174,8 +181,8 @@ trait Color4 extends StObject {
     * @param index defines an optional index in the target array to define where to start storing values
     * @returns the current Color4 object
     */
-  def toArray(array: js.Array[Double]): Color4 = js.native
-  def toArray(array: js.Array[Double], index: Double): Color4 = js.native
+  def toArray(array: FloatArray): Color4 = js.native
+  def toArray(array: FloatArray, index: Double): Color4 = js.native
   
   /**
     * Computes a new Color4 converted from the current one to gamma space

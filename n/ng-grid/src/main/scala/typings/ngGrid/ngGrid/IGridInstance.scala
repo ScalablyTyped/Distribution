@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IGridInstance extends StObject {
   
   @JSName("$canvas")
-  var $canvas: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+  var $canvas: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
   
   @JSName("$footerPanel")
-  var $footerPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+  var $footerPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
   
   @JSName("$groupPanel")
-  var $groupPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+  var $groupPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
   
   @JSName("$headerContainer")
-  var $headerContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+  var $headerContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
   
   @JSName("$headerScroller")
-  var $headerScroller: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+  var $headerScroller: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
   
   @JSName("$headers")
-  var $headers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+  var $headers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
   
   @JSName("$root")
-  var $root: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+  var $root: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
   
   @JSName("$topPanel")
-  var $topPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+  var $topPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
   
   @JSName("$viewport")
-  var $viewport: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+  var $viewport: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
   
   def buildColumnDefsFromData(): Unit
   
@@ -45,7 +45,7 @@ trait IGridInstance extends StObject {
   
   def configureColumnWidths(): Unit
   
-  var data: js.Any
+  var data: Any
   
   var elementDims: IElementDimension
   
@@ -57,15 +57,15 @@ trait IGridInstance extends StObject {
   
   def fixGroupIndexes(): Unit
   
-  var footerController: js.Any
+  var footerController: Any
   
-  def getTemplate(key: String): js.Any
+  def getTemplate(key: String): Any
   
   var gridId: String
   
-  def init(): js.Any
+  def init(): Any
   
-  def initTemplates(): js.Any
+  def initTemplates(): Any
   
   var lastSortedColumns: js.Array[IColumn]
   
@@ -99,39 +99,39 @@ trait IGridInstance extends StObject {
   
   def sortColumnsInit(): Unit
   
-  def sortData(col: IColumn, event: js.Any): Unit
+  def sortData(col: IColumn, event: Any): Unit
   
   var styleProvider: IStyleProvider
 }
 object IGridInstance {
   
   inline def apply(
-    $canvas: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
-    $footerPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
-    $groupPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
-    $headerContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
-    $headerScroller: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
-    $headers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
-    $root: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
-    $topPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
-    $viewport: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
+    $canvas: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any,
+    $footerPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any,
+    $groupPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any,
+    $headerContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any,
+    $headerScroller: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any,
+    $headers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any,
+    $root: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any,
+    $topPanel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any,
+    $viewport: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any,
     buildColumnDefsFromData: () => Unit,
     buildColumns: () => Unit,
     calcMaxCanvasHeight: () => Unit,
     clearSortingData: () => Unit,
     config: IGridOptions,
     configureColumnWidths: () => Unit,
-    data: js.Any,
+    data: Any,
     elementDims: IElementDimension,
     eventProvider: IEventProvider,
     filteredRows: js.Array[IRow],
     fixColumnIndexes: () => Unit,
     fixGroupIndexes: () => Unit,
-    footerController: js.Any,
-    getTemplate: String => js.Any,
+    footerController: Any,
+    getTemplate: String => Any,
     gridId: String,
-    init: () => js.Any,
-    initTemplates: () => js.Any,
+    init: () => Any,
+    initTemplates: () => Any,
     lastSortedColumns: js.Array[IColumn],
     lateBindColumns: Boolean,
     maxCanvasHt: Double,
@@ -148,7 +148,7 @@ object IGridInstance {
     setRenderedRows: js.Array[IRow] => Unit,
     sortActual: () => Unit,
     sortColumnsInit: () => Unit,
-    sortData: (IColumn, js.Any) => Unit,
+    sortData: (IColumn, Any) => Unit,
     styleProvider: IStyleProvider
   ): IGridInstance = {
     val __obj = js.Dynamic.literal($canvas = $canvas.asInstanceOf[js.Any], $footerPanel = $footerPanel.asInstanceOf[js.Any], $groupPanel = $groupPanel.asInstanceOf[js.Any], $headerContainer = $headerContainer.asInstanceOf[js.Any], $headerScroller = $headerScroller.asInstanceOf[js.Any], $headers = $headers.asInstanceOf[js.Any], $root = $root.asInstanceOf[js.Any], $topPanel = $topPanel.asInstanceOf[js.Any], $viewport = $viewport.asInstanceOf[js.Any], buildColumnDefsFromData = js.Any.fromFunction0(buildColumnDefsFromData), buildColumns = js.Any.fromFunction0(buildColumns), calcMaxCanvasHeight = js.Any.fromFunction0(calcMaxCanvasHeight), clearSortingData = js.Any.fromFunction0(clearSortingData), config = config.asInstanceOf[js.Any], configureColumnWidths = js.Any.fromFunction0(configureColumnWidths), data = data.asInstanceOf[js.Any], elementDims = elementDims.asInstanceOf[js.Any], eventProvider = eventProvider.asInstanceOf[js.Any], filteredRows = filteredRows.asInstanceOf[js.Any], fixColumnIndexes = js.Any.fromFunction0(fixColumnIndexes), fixGroupIndexes = js.Any.fromFunction0(fixGroupIndexes), footerController = footerController.asInstanceOf[js.Any], getTemplate = js.Any.fromFunction1(getTemplate), gridId = gridId.asInstanceOf[js.Any], init = js.Any.fromFunction0(init), initTemplates = js.Any.fromFunction0(initTemplates), lastSortedColumns = lastSortedColumns.asInstanceOf[js.Any], lateBindColumns = lateBindColumns.asInstanceOf[js.Any], maxCanvasHt = maxCanvasHt.asInstanceOf[js.Any], minRowsToRender = js.Any.fromFunction0(minRowsToRender), prevScrollIndex = prevScrollIndex.asInstanceOf[js.Any], prevScrollTop = prevScrollTop.asInstanceOf[js.Any], refreshDomSizes = js.Any.fromFunction0(refreshDomSizes), resizeOnData = js.Any.fromFunction1(resizeOnData), rootDim = rootDim.asInstanceOf[js.Any], rowCache = rowCache.asInstanceOf[js.Any], rowFactory = rowFactory.asInstanceOf[js.Any], rowMap = rowMap.asInstanceOf[js.Any], searchProvider = searchProvider.asInstanceOf[js.Any], setRenderedRows = js.Any.fromFunction1(setRenderedRows), sortActual = js.Any.fromFunction0(sortActual), sortColumnsInit = js.Any.fromFunction0(sortColumnsInit), sortData = js.Any.fromFunction2(sortData), styleProvider = styleProvider.asInstanceOf[js.Any])
@@ -158,39 +158,39 @@ object IGridInstance {
   extension [Self <: IGridInstance](x: Self) {
     
     inline def set$canvas(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
     ): Self = StObject.set(x, "$canvas", value.asInstanceOf[js.Any])
     
     inline def set$footerPanel(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
     ): Self = StObject.set(x, "$footerPanel", value.asInstanceOf[js.Any])
     
     inline def set$groupPanel(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
     ): Self = StObject.set(x, "$groupPanel", value.asInstanceOf[js.Any])
     
     inline def set$headerContainer(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
     ): Self = StObject.set(x, "$headerContainer", value.asInstanceOf[js.Any])
     
     inline def set$headerScroller(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
     ): Self = StObject.set(x, "$headerScroller", value.asInstanceOf[js.Any])
     
     inline def set$headers(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
     ): Self = StObject.set(x, "$headers", value.asInstanceOf[js.Any])
     
     inline def set$root(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
     ): Self = StObject.set(x, "$root", value.asInstanceOf[js.Any])
     
     inline def set$topPanel(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
     ): Self = StObject.set(x, "$topPanel", value.asInstanceOf[js.Any])
     
     inline def set$viewport(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any
     ): Self = StObject.set(x, "$viewport", value.asInstanceOf[js.Any])
     
     inline def setBuildColumnDefsFromData(value: () => Unit): Self = StObject.set(x, "buildColumnDefsFromData", js.Any.fromFunction0(value))
@@ -205,7 +205,7 @@ object IGridInstance {
     
     inline def setConfigureColumnWidths(value: () => Unit): Self = StObject.set(x, "configureColumnWidths", js.Any.fromFunction0(value))
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setElementDims(value: IElementDimension): Self = StObject.set(x, "elementDims", value.asInstanceOf[js.Any])
     
@@ -213,25 +213,25 @@ object IGridInstance {
     
     inline def setFilteredRows(value: js.Array[IRow]): Self = StObject.set(x, "filteredRows", value.asInstanceOf[js.Any])
     
-    inline def setFilteredRowsVarargs(value: IRow*): Self = StObject.set(x, "filteredRows", js.Array(value :_*))
+    inline def setFilteredRowsVarargs(value: IRow*): Self = StObject.set(x, "filteredRows", js.Array(value*))
     
     inline def setFixColumnIndexes(value: () => Unit): Self = StObject.set(x, "fixColumnIndexes", js.Any.fromFunction0(value))
     
     inline def setFixGroupIndexes(value: () => Unit): Self = StObject.set(x, "fixGroupIndexes", js.Any.fromFunction0(value))
     
-    inline def setFooterController(value: js.Any): Self = StObject.set(x, "footerController", value.asInstanceOf[js.Any])
+    inline def setFooterController(value: Any): Self = StObject.set(x, "footerController", value.asInstanceOf[js.Any])
     
-    inline def setGetTemplate(value: String => js.Any): Self = StObject.set(x, "getTemplate", js.Any.fromFunction1(value))
+    inline def setGetTemplate(value: String => Any): Self = StObject.set(x, "getTemplate", js.Any.fromFunction1(value))
     
     inline def setGridId(value: String): Self = StObject.set(x, "gridId", value.asInstanceOf[js.Any])
     
-    inline def setInit(value: () => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Any): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    inline def setInitTemplates(value: () => js.Any): Self = StObject.set(x, "initTemplates", js.Any.fromFunction0(value))
+    inline def setInitTemplates(value: () => Any): Self = StObject.set(x, "initTemplates", js.Any.fromFunction0(value))
     
     inline def setLastSortedColumns(value: js.Array[IColumn]): Self = StObject.set(x, "lastSortedColumns", value.asInstanceOf[js.Any])
     
-    inline def setLastSortedColumnsVarargs(value: IColumn*): Self = StObject.set(x, "lastSortedColumns", js.Array(value :_*))
+    inline def setLastSortedColumnsVarargs(value: IColumn*): Self = StObject.set(x, "lastSortedColumns", js.Array(value*))
     
     inline def setLateBindColumns(value: Boolean): Self = StObject.set(x, "lateBindColumns", value.asInstanceOf[js.Any])
     
@@ -251,13 +251,13 @@ object IGridInstance {
     
     inline def setRowCache(value: js.Array[IRow]): Self = StObject.set(x, "rowCache", value.asInstanceOf[js.Any])
     
-    inline def setRowCacheVarargs(value: IRow*): Self = StObject.set(x, "rowCache", js.Array(value :_*))
+    inline def setRowCacheVarargs(value: IRow*): Self = StObject.set(x, "rowCache", js.Array(value*))
     
     inline def setRowFactory(value: IRowFactory): Self = StObject.set(x, "rowFactory", value.asInstanceOf[js.Any])
     
     inline def setRowMap(value: js.Array[IRow]): Self = StObject.set(x, "rowMap", value.asInstanceOf[js.Any])
     
-    inline def setRowMapVarargs(value: IRow*): Self = StObject.set(x, "rowMap", js.Array(value :_*))
+    inline def setRowMapVarargs(value: IRow*): Self = StObject.set(x, "rowMap", js.Array(value*))
     
     inline def setSearchProvider(value: ISearchProvider): Self = StObject.set(x, "searchProvider", value.asInstanceOf[js.Any])
     
@@ -267,7 +267,7 @@ object IGridInstance {
     
     inline def setSortColumnsInit(value: () => Unit): Self = StObject.set(x, "sortColumnsInit", js.Any.fromFunction0(value))
     
-    inline def setSortData(value: (IColumn, js.Any) => Unit): Self = StObject.set(x, "sortData", js.Any.fromFunction2(value))
+    inline def setSortData(value: (IColumn, Any) => Unit): Self = StObject.set(x, "sortData", js.Any.fromFunction2(value))
     
     inline def setStyleProvider(value: IStyleProvider): Self = StObject.set(x, "styleProvider", value.asInstanceOf[js.Any])
   }

@@ -60,8 +60,8 @@ object mod {
   
   @JSImport("react-native-google-signin", "GoogleSigninButton")
   @js.native
-  class GoogleSigninButton protected ()
-    extends Component[GoogleSigninButtonProps, js.Object, js.Any] {
+  open class GoogleSigninButton protected ()
+    extends Component[GoogleSigninButtonProps, js.Object, Any] {
     def this(props: GoogleSigninButtonProps) = this()
   }
   object GoogleSigninButton {
@@ -215,7 +215,7 @@ object mod {
       
       inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
       
       inline def setWebClientId(value: String): Self = StObject.set(x, "webClientId", value.asInstanceOf[js.Any])
       
@@ -332,7 +332,7 @@ object mod {
       
       inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
       
       inline def setServerAuthCode(value: String): Self = StObject.set(x, "serverAuthCode", value.asInstanceOf[js.Any])
       

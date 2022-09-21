@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaSubnetworksSetPrivateIpGoogleAccessRequest extends StObject {
   
-  var privateIpGoogleAccess: js.UndefOr[Boolean] = js.undefined
+  var privateIpGoogleAccess: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaSubnetworksSetPrivateIpGoogleAccessRequest {
   
@@ -18,6 +18,8 @@ object SchemaSubnetworksSetPrivateIpGoogleAccessRequest {
   extension [Self <: SchemaSubnetworksSetPrivateIpGoogleAccessRequest](x: Self) {
     
     inline def setPrivateIpGoogleAccess(value: Boolean): Self = StObject.set(x, "privateIpGoogleAccess", value.asInstanceOf[js.Any])
+    
+    inline def setPrivateIpGoogleAccessNull: Self = StObject.set(x, "privateIpGoogleAccess", null)
     
     inline def setPrivateIpGoogleAccessUndefined: Self = StObject.set(x, "privateIpGoogleAccess", js.undefined)
   }

@@ -24,7 +24,7 @@ trait MetricAlarm extends StObject {
   /**
     * The time stamp of the last update to the alarm configuration.
     */
-  var AlarmConfigurationUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var AlarmConfigurationUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the alarm.
@@ -109,7 +109,7 @@ trait MetricAlarm extends StObject {
   /**
     * The time stamp of the last update to the alarm state.
     */
-  var StateUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var StateUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state value for the alarm.
@@ -132,7 +132,7 @@ trait MetricAlarm extends StObject {
   var ThresholdMetricId: js.UndefOr[MetricId] = js.undefined
   
   /**
-    * Sets how this alarm is to handle missing data points. If this parameter is omitted, the default behavior of missing is used.
+    * Sets how this alarm is to handle missing data points. The valid values are breaching, notBreaching, ignore, and missing. For more information, see Configuring how CloudWatch alarms treat missing data. If this parameter is omitted, the default behavior of missing is used.
     */
   var TreatMissingData: js.UndefOr[typings.awsSdk.cloudwatchMod.TreatMissingData] = js.undefined
   
@@ -158,13 +158,13 @@ object MetricAlarm {
     
     inline def setAlarmActionsUndefined: Self = StObject.set(x, "AlarmActions", js.undefined)
     
-    inline def setAlarmActionsVarargs(value: ResourceName*): Self = StObject.set(x, "AlarmActions", js.Array(value :_*))
+    inline def setAlarmActionsVarargs(value: ResourceName*): Self = StObject.set(x, "AlarmActions", js.Array(value*))
     
     inline def setAlarmArn(value: AlarmArn): Self = StObject.set(x, "AlarmArn", value.asInstanceOf[js.Any])
     
     inline def setAlarmArnUndefined: Self = StObject.set(x, "AlarmArn", js.undefined)
     
-    inline def setAlarmConfigurationUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "AlarmConfigurationUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setAlarmConfigurationUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "AlarmConfigurationUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setAlarmConfigurationUpdatedTimestampUndefined: Self = StObject.set(x, "AlarmConfigurationUpdatedTimestamp", js.undefined)
     
@@ -188,7 +188,7 @@ object MetricAlarm {
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value*))
     
     inline def setEvaluateLowSampleCountPercentile(value: EvaluateLowSampleCountPercentile): Self = StObject.set(x, "EvaluateLowSampleCountPercentile", value.asInstanceOf[js.Any])
     
@@ -206,7 +206,7 @@ object MetricAlarm {
     
     inline def setInsufficientDataActionsUndefined: Self = StObject.set(x, "InsufficientDataActions", js.undefined)
     
-    inline def setInsufficientDataActionsVarargs(value: ResourceName*): Self = StObject.set(x, "InsufficientDataActions", js.Array(value :_*))
+    inline def setInsufficientDataActionsVarargs(value: ResourceName*): Self = StObject.set(x, "InsufficientDataActions", js.Array(value*))
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
@@ -216,7 +216,7 @@ object MetricAlarm {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: MetricDataQuery*): Self = StObject.set(x, "Metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: MetricDataQuery*): Self = StObject.set(x, "Metrics", js.Array(value*))
     
     inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
@@ -226,7 +226,7 @@ object MetricAlarm {
     
     inline def setOKActionsUndefined: Self = StObject.set(x, "OKActions", js.undefined)
     
-    inline def setOKActionsVarargs(value: ResourceName*): Self = StObject.set(x, "OKActions", js.Array(value :_*))
+    inline def setOKActionsVarargs(value: ResourceName*): Self = StObject.set(x, "OKActions", js.Array(value*))
     
     inline def setPeriod(value: Period): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
@@ -240,7 +240,7 @@ object MetricAlarm {
     
     inline def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
     
-    inline def setStateUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "StateUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setStateUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "StateUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setStateUpdatedTimestampUndefined: Self = StObject.set(x, "StateUpdatedTimestamp", js.undefined)
     

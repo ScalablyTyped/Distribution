@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteApiKeyRequest extends StObject {
   
   /**
-    * [Required] The identifier of the ApiKey resource to be deleted.
+    * The identifier of the ApiKey resource to be deleted.
     */
   var apiKey: String
 }

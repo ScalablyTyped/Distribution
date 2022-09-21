@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-node", "AdagradOptimizer")
 @js.native
-class AdagradOptimizer protected ()
+open class AdagradOptimizer protected ()
   extends typings.tensorflowTfjs.mod.AdagradOptimizer {
   def this(learningRate: Double) = this()
   def this(learningRate: Double, initialAccumulatorValue: Double) = this()

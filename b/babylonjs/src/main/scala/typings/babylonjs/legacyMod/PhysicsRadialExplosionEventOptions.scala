@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "PhysicsRadialExplosionEventOptions")
 @js.native
-class PhysicsRadialExplosionEventOptions ()
+open class PhysicsRadialExplosionEventOptions ()
   extends typings.babylonjs.indexMod.PhysicsRadialExplosionEventOptions

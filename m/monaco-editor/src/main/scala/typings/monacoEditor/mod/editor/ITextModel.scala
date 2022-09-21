@@ -31,6 +31,14 @@ trait ITextModel
   def applyEdits_true(operations: js.Array[IIdentifiedSingleEditOperation], computeUndoEdits: `true`): js.Array[IValidEditOperation] = js.native
   
   /**
+    * Get the text stored in this model.
+    * @param preserverBOM Preserve a BOM character if it was detected when the model was constructed.
+    * @return The text snapshot (it is safe to consume it asynchronously).
+    */
+  def createSnapshot(): ITextSnapshot = js.native
+  def createSnapshot(preserveBOM: Boolean): ITextSnapshot = js.native
+  
+  /**
     * Perform a minimum amount of operations, in order to transform the decorations
     * identified by `oldDecorations` to the decorations described by `newDecorations`
     * and returns the new identifiers associated with the resulting decorations.
@@ -49,8 +57,7 @@ trait ITextModel
   def detectIndentation(defaultInsertSpaces: Boolean, defaultTabSize: Double): Unit = js.native
   
   /**
-    * Destroy this model. This will unbind the model from the mode
-    * and make all necessary clean-up to release this object to the GC.
+    * Destroy this model.
     */
   def dispose(): Unit = js.native
   
@@ -290,9 +297,26 @@ trait ITextModel
   def getEOL(): String = js.native
   
   /**
-    * Get a range covering the entire model
+    * Get the end of line sequence predominantly used in the text buffer.
+    */
+  def getEndOfLineSequence(): EndOfLineSequence = js.native
+  
+  /**
+    * Get a range covering the entire model.
     */
   def getFullModelRange(): Range = js.native
+  
+  /**
+    * Gets all the decorations that contain injected text.
+    * @param ownerId If set, it will ignore decorations belonging to other owners.
+    */
+  def getInjectedTextDecorations(): js.Array[IModelDecoration] = js.native
+  def getInjectedTextDecorations(ownerId: Double): js.Array[IModelDecoration] = js.native
+  
+  /**
+    * Get the language associated with this model.
+    */
+  def getLanguageId(): String = js.native
   
   /**
     * Get the text for a certain line.
@@ -360,11 +384,6 @@ trait ITextModel
   def getLinesDecorations(startLineNumber: Double, endLineNumber: Double, ownerId: Double): js.Array[IModelDecoration] = js.native
   def getLinesDecorations(startLineNumber: Double, endLineNumber: Double, ownerId: Double, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
   def getLinesDecorations(startLineNumber: Double, endLineNumber: Double, ownerId: Unit, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
-  
-  /**
-    * Get the language associated with this model.
-    */
-  def getModeId(): String = js.native
   
   /**
     * Converts the position to a zero-based offset.
@@ -461,6 +480,11 @@ trait ITextModel
   val id: String = js.native
   
   /**
+    * Returns if this model is attached to an editor or not.
+    */
+  def isAttachedToEditor(): Boolean = js.native
+  
+  /**
     * Returns if the model was disposed or not.
     */
   def isDisposed(): Boolean = js.native
@@ -483,6 +507,13 @@ trait ITextModel
   def normalizeIndentation(str: String): String = js.native
   
   /**
+    * An event emitted when the model has been attached to the first editor or detached from the last editor.
+    * @event
+    */
+  def onDidChangeAttached(listener: js.Function1[/* e */ Unit, Any]): IDisposable = js.native
+  def onDidChangeAttached(listener: js.Function1[/* e */ Unit, Any], thisArg: Any): IDisposable = js.native
+  
+  /**
     * An event emitted when the contents of the model have changed.
     * @event
     */
@@ -492,31 +523,42 @@ trait ITextModel
     * An event emitted when decorations of the model have changed.
     * @event
     */
-  def onDidChangeDecorations(listener: js.Function1[/* e */ IModelDecorationsChangedEvent, Unit]): IDisposable = js.native
+  def onDidChangeDecorations(listener: js.Function1[/* e */ IModelDecorationsChangedEvent, Any]): IDisposable = js.native
+  def onDidChangeDecorations(listener: js.Function1[/* e */ IModelDecorationsChangedEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the language associated with the model has changed.
     * @event
     */
-  def onDidChangeLanguage(listener: js.Function1[/* e */ IModelLanguageChangedEvent, Unit]): IDisposable = js.native
+  def onDidChangeLanguage(listener: js.Function1[/* e */ IModelLanguageChangedEvent, Any]): IDisposable = js.native
+  def onDidChangeLanguage(listener: js.Function1[/* e */ IModelLanguageChangedEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the language configuration associated with the model has changed.
     * @event
     */
-  def onDidChangeLanguageConfiguration(listener: js.Function1[/* e */ IModelLanguageConfigurationChangedEvent, Unit]): IDisposable = js.native
+  def onDidChangeLanguageConfiguration(listener: js.Function1[/* e */ IModelLanguageConfigurationChangedEvent, Any]): IDisposable = js.native
+  def onDidChangeLanguageConfiguration(listener: js.Function1[/* e */ IModelLanguageConfigurationChangedEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted when the model options have changed.
     * @event
     */
-  def onDidChangeOptions(listener: js.Function1[/* e */ IModelOptionsChangedEvent, Unit]): IDisposable = js.native
+  def onDidChangeOptions(listener: js.Function1[/* e */ IModelOptionsChangedEvent, Any]): IDisposable = js.native
+  def onDidChangeOptions(listener: js.Function1[/* e */ IModelOptionsChangedEvent, Any], thisArg: Any): IDisposable = js.native
   
   /**
     * An event emitted right before disposing the model.
     * @event
     */
-  def onWillDispose(listener: js.Function0[Unit]): IDisposable = js.native
+  def onWillDispose(listener: js.Function1[/* e */ Unit, Any]): IDisposable = js.native
+  def onWillDispose(listener: js.Function1[/* e */ Unit, Any], thisArg: Any): IDisposable = js.native
+  
+  /**
+    * Open the current undo-redo element.
+    * This offers a way to remove the current undo/redo stop point.
+    */
+  def popStackElement(): Unit = js.native
   
   /**
     * Change the end of line sequence. This is the preferred way of
@@ -544,9 +586,8 @@ trait ITextModel
   ): js.Array[Selection] | Null = js.native
   
   /**
-    * Push a stack element onto the undo stack. This acts as an undo/redo point.
-    * The idea is to use `pushEditOperations` to edit the model and then to
-    * `pushStackElement` to create an undo/redo stop point.
+    * Close the current undo-redo element.
+    * This offers a way to create an undo/redo stop point.
     */
   def pushStackElement(): Unit = js.native
   
@@ -560,6 +601,7 @@ trait ITextModel
     * Replace the entire text buffer value contained in this model.
     */
   def setValue(newValue: String): Unit = js.native
+  def setValue(newValue: ITextSnapshot): Unit = js.native
   
   /**
     * Change the options of this model.
@@ -572,7 +614,7 @@ trait ITextModel
   val uri: Uri = js.native
   
   /**
-    * Create a valid position,
+    * Create a valid position.
     */
   def validatePosition(position: IPosition): Position = js.native
   

@@ -15,5 +15,5 @@ object nodeMainMod {
   
   @JSImport("keya/out/node/main", "stores")
   @js.native
-  val stores: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SQLiteStore.stores */ js.Any = js.native
+  val stores: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SQLiteStore.stores */ Any = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.TabSwitchEvent")
 @js.native
-class TabSwitchEvent ()
+open class TabSwitchEvent ()
   extends StObject
      with typings.tableau.tableau.TabSwitchEvent {
   

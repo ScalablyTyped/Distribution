@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "SvgCirclePainter")
 @js.native
-class SvgCirclePainter protected () extends SvgStyler {
+open class SvgCirclePainter protected () extends SvgStyler {
   def this(elementFactory: js.Function1[/* name */ String, HTMLElement]) = this()
   
   def circle(center: Point, radius: Double): this.type = js.native

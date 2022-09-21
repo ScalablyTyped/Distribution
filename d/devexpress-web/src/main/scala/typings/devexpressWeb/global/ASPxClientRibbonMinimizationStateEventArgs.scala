@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRibbonMinimizationStateEventArgs")
 @js.native
-class ASPxClientRibbonMinimizationStateEventArgs protected ()
+open class ASPxClientRibbonMinimizationStateEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRibbonMinimizationStateEventArgs {
   /**

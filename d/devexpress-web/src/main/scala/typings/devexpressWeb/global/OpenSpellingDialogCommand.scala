@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("OpenSpellingDialogCommand")
 @js.native
-class OpenSpellingDialogCommand ()
+open class OpenSpellingDialogCommand ()
   extends StObject
      with typings.devexpressWeb.OpenSpellingDialogCommand {
   

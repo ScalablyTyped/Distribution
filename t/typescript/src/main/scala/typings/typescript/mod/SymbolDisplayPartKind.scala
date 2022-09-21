@@ -68,6 +68,24 @@ object SymbolDisplayPartKind extends StObject {
   /* 6 */ val lineBreak: typings.typescript.mod.SymbolDisplayPartKind.lineBreak & Double = js.native
   
   @js.native
+  sealed trait link
+    extends StObject
+       with SymbolDisplayPartKind
+  /* 22 */ val link: typings.typescript.mod.SymbolDisplayPartKind.link & Double = js.native
+  
+  @js.native
+  sealed trait linkName
+    extends StObject
+       with SymbolDisplayPartKind
+  /* 23 */ val linkName: typings.typescript.mod.SymbolDisplayPartKind.linkName & Double = js.native
+  
+  @js.native
+  sealed trait linkText
+    extends StObject
+       with SymbolDisplayPartKind
+  /* 24 */ val linkText: typings.typescript.mod.SymbolDisplayPartKind.linkText & Double = js.native
+  
+  @js.native
   sealed trait localName
     extends StObject
        with SymbolDisplayPartKind

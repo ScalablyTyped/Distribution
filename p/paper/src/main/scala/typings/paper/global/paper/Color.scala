@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.Color")
 @js.native
-class Color protected ()
+open class Color protected ()
   extends StObject
      with typings.paper.paper.Color {
   /** 

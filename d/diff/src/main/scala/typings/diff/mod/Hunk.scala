@@ -36,11 +36,11 @@ object Hunk {
     
     inline def setLinedelimiters(value: js.Array[String]): Self = StObject.set(x, "linedelimiters", value.asInstanceOf[js.Any])
     
-    inline def setLinedelimitersVarargs(value: String*): Self = StObject.set(x, "linedelimiters", js.Array(value :_*))
+    inline def setLinedelimitersVarargs(value: String*): Self = StObject.set(x, "linedelimiters", js.Array(value*))
     
     inline def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    inline def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value*))
     
     inline def setNewLines(value: Double): Self = StObject.set(x, "newLines", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ object nodeUtilsMod {
   
   @JSImport("node-utils", "NumberFce")
   @js.native
-  class NumberFce ()
+  open class NumberFce ()
     extends StObject
        with typings.businessRulesEngine.Utils.NumberFce
   object NumberFce {
@@ -23,7 +23,7 @@ object nodeUtilsMod {
   
   @JSImport("node-utils", "StringFce")
   @js.native
-  class StringFce ()
+  open class StringFce ()
     extends StObject
        with typings.businessRulesEngine.Utils.StringFce
   object StringFce {
@@ -33,6 +33,6 @@ object nodeUtilsMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def format(s: String, args: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(s.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def format(s: String, args: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(s.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

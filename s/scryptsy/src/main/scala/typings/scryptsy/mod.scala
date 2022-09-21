@@ -1,6 +1,6 @@
 package typings.scryptsy
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.scryptsy.anon.Current
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

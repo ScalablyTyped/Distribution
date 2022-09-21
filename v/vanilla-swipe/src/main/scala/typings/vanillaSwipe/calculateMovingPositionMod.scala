@@ -41,7 +41,7 @@ object calculateMovingPositionMod {
       
       inline def setChangedTouchesUndefined: Self = StObject.set(x, "changedTouches", js.undefined)
       
-      inline def setChangedTouchesVarargs(value: ClientX*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
+      inline def setChangedTouchesVarargs(value: ClientX*): Self = StObject.set(x, "changedTouches", js.Array(value*))
       
       inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       

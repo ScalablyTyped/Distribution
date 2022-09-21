@@ -36,6 +36,6 @@ object ConditionalFormatRule {
     
     inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    inline def setRangesVarargs(value: GridRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: GridRange*): Self = StObject.set(x, "ranges", js.Array(value*))
   }
 }

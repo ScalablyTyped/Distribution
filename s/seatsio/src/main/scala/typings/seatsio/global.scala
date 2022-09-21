@@ -20,7 +20,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("seatsio.ChartManager")
     @js.native
-    class ChartManager protected ()
+    open class ChartManager protected ()
       extends StObject
          with typings.seatsio.Seatsio.ChartManager {
       // tslint:disable-next-line:no-misused-new
@@ -30,7 +30,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("seatsio.EventManager")
     @js.native
-    class EventManager protected ()
+    open class EventManager protected ()
       extends StObject
          with typings.seatsio.Seatsio.EventManager {
       // tslint:disable-next-line:no-misused-new
@@ -40,7 +40,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("seatsio.SeatingChart")
     @js.native
-    class SeatingChart protected ()
+    open class SeatingChart protected ()
       extends StObject
          with typings.seatsio.Seatsio.SeatingChart {
       // tslint:disable-next-line:no-misused-new
@@ -50,7 +50,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("seatsio.SeatingChartDesigner")
     @js.native
-    class SeatingChartDesigner protected ()
+    open class SeatingChartDesigner protected ()
       extends StObject
          with typings.seatsio.Seatsio.SeatingChartDesigner {
       // tslint:disable-next-line:no-misused-new

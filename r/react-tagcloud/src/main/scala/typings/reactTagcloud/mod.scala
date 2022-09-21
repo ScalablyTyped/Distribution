@@ -18,10 +18,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-tagcloud", "TagCloud")
   @js.native
-  class TagCloud protected ()
-    extends Component[TagCloudProps, ComponentState, js.Any] {
+  open class TagCloud protected () extends Component[TagCloudProps, ComponentState, Any] {
     def this(props: TagCloudProps) = this()
-    def this(props: TagCloudProps, context: js.Any) = this()
+    def this(props: TagCloudProps, context: Any) = this()
   }
   @JSImport("react-tagcloud", "TagCloud")
   @js.native

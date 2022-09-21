@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The properties of a column in a table.
-  */
 trait SchemaTableColumnProperties extends StObject {
   
   /**
-    * The width of the column. Set when the column&#39;s `width_type` is
-    * FIXED_WIDTH.
+    * The width of the column. Set when the column's `width_type` is FIXED_WIDTH.
     */
   var width: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The width type of the column.
     */
-  var widthType: js.UndefOr[String] = js.undefined
+  var widthType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTableColumnProperties {
   
@@ -32,6 +28,8 @@ object SchemaTableColumnProperties {
     inline def setWidth(value: SchemaDimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthType(value: String): Self = StObject.set(x, "widthType", value.asInstanceOf[js.Any])
+    
+    inline def setWidthTypeNull: Self = StObject.set(x, "widthType", null)
     
     inline def setWidthTypeUndefined: Self = StObject.set(x, "widthType", js.undefined)
     

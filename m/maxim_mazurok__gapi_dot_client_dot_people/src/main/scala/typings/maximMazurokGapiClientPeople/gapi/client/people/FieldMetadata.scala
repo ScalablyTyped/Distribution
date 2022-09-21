@@ -6,11 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FieldMetadata extends StObject {
   
-  /** True if the field is the primary field; false if the field is a secondary field. */
+  /** Output only. True if the field is the primary field for all sources in the person. Each person will have at most one field with `primary` set to true. */
   var primary: js.UndefOr[Boolean] = js.undefined
   
   /** The source of the field. */
   var source: js.UndefOr[Source] = js.undefined
+  
+  /** True if the field is the primary field for the source. Each source must have at most one field with `source_primary` set to true. */
+  var sourcePrimary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Output only. True if the field is verified; false if the field is unverified. A verified field is typically a name, email address, phone number, or website that has been confirmed
@@ -32,6 +35,10 @@ object FieldMetadata {
     inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
     inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourcePrimary(value: Boolean): Self = StObject.set(x, "sourcePrimary", value.asInstanceOf[js.Any])
+    
+    inline def setSourcePrimaryUndefined: Self = StObject.set(x, "sourcePrimary", js.undefined)
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     

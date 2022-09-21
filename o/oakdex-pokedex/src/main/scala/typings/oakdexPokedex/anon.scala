@@ -155,7 +155,7 @@ object anon {
       
       inline def setStatus_conditionsUndefined: Self = StObject.set(x, "status_conditions", js.undefined)
       
-      inline def setStatus_conditionsVarargs(value: MoveStatusCondition*): Self = StObject.set(x, "status_conditions", js.Array(value :_*))
+      inline def setStatus_conditionsVarargs(value: MoveStatusCondition*): Self = StObject.set(x, "status_conditions", js.Array(value*))
     }
   }
   
@@ -184,31 +184,31 @@ object anon {
       
       inline def setJumpUndefined: Self = StObject.set(x, "jump", js.undefined)
       
-      inline def setJumpVarargs(value: Double*): Self = StObject.set(x, "jump", js.Array(value :_*))
+      inline def setJumpVarargs(value: Double*): Self = StObject.set(x, "jump", js.Array(value*))
       
       inline def setPower(value: js.Array[Double]): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
       
       inline def setPowerUndefined: Self = StObject.set(x, "power", js.undefined)
       
-      inline def setPowerVarargs(value: Double*): Self = StObject.set(x, "power", js.Array(value :_*))
+      inline def setPowerVarargs(value: Double*): Self = StObject.set(x, "power", js.Array(value*))
       
       inline def setSkill(value: js.Array[Double]): Self = StObject.set(x, "skill", value.asInstanceOf[js.Any])
       
       inline def setSkillUndefined: Self = StObject.set(x, "skill", js.undefined)
       
-      inline def setSkillVarargs(value: Double*): Self = StObject.set(x, "skill", js.Array(value :_*))
+      inline def setSkillVarargs(value: Double*): Self = StObject.set(x, "skill", js.Array(value*))
       
       inline def setSpeed(value: js.Array[Double]): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
       inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      inline def setSpeedVarargs(value: Double*): Self = StObject.set(x, "speed", js.Array(value :_*))
+      inline def setSpeedVarargs(value: Double*): Self = StObject.set(x, "speed", js.Array(value*))
       
       inline def setStamina(value: js.Array[Double]): Self = StObject.set(x, "stamina", value.asInstanceOf[js.Any])
       
       inline def setStaminaUndefined: Self = StObject.set(x, "stamina", js.undefined)
       
-      inline def setStaminaVarargs(value: Double*): Self = StObject.set(x, "stamina", js.Array(value :_*))
+      inline def setStaminaVarargs(value: Double*): Self = StObject.set(x, "stamina", js.Array(value*))
     }
   }
 }

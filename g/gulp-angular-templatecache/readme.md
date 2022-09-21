@@ -10,10 +10,10 @@ Concatenates and registers AngularJS templates in the $templateCache.
 | ------------------ | :-------------: |
 | Full name          | gulp-angular-templatecache |
 | Keywords           | gulpplugin, gulp, angular, angularjs, ng, html2js, templatecache |
-| # releases         | 8 |
-| # dependents       | 141 |
-| # downloads        | 2706328 |
-| # stars            | 83 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 212128.33333333334 |
+| # stars            | 526.0 |
 
 ## Links
 - [Homepage](https://github.com/miickel/gulp-angular-templatecache#readme)

@@ -33,7 +33,7 @@ object anon {
       
       inline def setRanges(value: js.Array[RangeCov]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
       
-      inline def setRangesVarargs(value: RangeCov*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+      inline def setRangesVarargs(value: RangeCov*): Self = StObject.set(x, "ranges", js.Array(value*))
     }
   }
   
@@ -53,7 +53,7 @@ object anon {
       
       inline def setResult(value: js.Array[ScriptCov]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      inline def setResultVarargs(value: ScriptCov*): Self = StObject.set(x, "result", js.Array(value :_*))
+      inline def setResultVarargs(value: ScriptCov*): Self = StObject.set(x, "result", js.Array(value*))
     }
   }
   
@@ -103,7 +103,7 @@ object anon {
       
       inline def setFunctions(value: js.Array[FunctionCov]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       
-      inline def setFunctionsVarargs(value: FunctionCov*): Self = StObject.set(x, "functions", js.Array(value :_*))
+      inline def setFunctionsVarargs(value: FunctionCov*): Self = StObject.set(x, "functions", js.Array(value*))
       
       inline def setScriptId(value: String): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
       

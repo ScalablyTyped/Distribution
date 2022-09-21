@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-latex-next
 
-Typings are for version 1.2.0
+Typings are for version 2.2.0
 
 ## Library description:
 Render LaTeX in React apps
@@ -10,13 +10,13 @@ Render LaTeX in React apps
 | ------------------ | :-------------: |
 | Full name          | react-latex-next |
 | Keywords           | react, katex, latex, math |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 12177 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 3896.0 |
+| # stars            | 20.0 |
 
 ## Links
-- [Homepage](https://github.com/harunurhan/react-latex-next#readme)
+- [Homepage](https://react-latex.netlify.app/)
 - [Bugs](https://github.com/harunurhan/react-latex-next/issues)
 - [Repository](https://github.com/harunurhan/react-latex-next)
 - [Npm](https://www.npmjs.com/package/react-latex-next)

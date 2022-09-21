@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MetricDataQuery extends StObject {
   
   /**
-    * The math expression to be performed on the returned data, if this object is performing a math expression. This expression can use the Id of the other metrics to refer to those metrics, and can also use the Id of other expressions to use the result of those expressions. For more information about metric math expressions, see Metric Math Syntax and Functions in the Amazon CloudWatch User Guide. Within each MetricDataQuery object, you must specify either Expression or MetricStat but not both.
+    * The ID of the account where the metrics are located, if this is a cross-account alarm. Use this field only for PutMetricAlarm operations. It is not used in GetMetricData operations.
+    */
+  var AccountId: js.UndefOr[typings.awsSdk.cloudwatchMod.AccountId] = js.undefined
+  
+  /**
+    * This field can contain either a Metrics Insights query, or a metric math expression to be performed on the returned data. For more information about Metrics Insights queries, see Metrics Insights query components and syntax in the Amazon CloudWatch User Guide. A math expression can use the Id of the other metrics or queries to refer to those metrics, and can also use the Id of other expressions to use the result of those expressions. For more information about metric math expressions, see Metric Math Syntax and Functions in the Amazon CloudWatch User Guide. Within each MetricDataQuery object, you must specify either Expression or MetricStat but not both.
     */
   var Expression: js.UndefOr[MetricExpression] = js.undefined
   
@@ -17,7 +22,7 @@ trait MetricDataQuery extends StObject {
   var Id: MetricId
   
   /**
-    * A human-readable label for this metric or expression. This is especially useful if this is an expression, so that you know what the value represents. If the metric or expression is shown in a CloudWatch dashboard widget, the label is shown. If Label is omitted, CloudWatch generates a default.
+    * A human-readable label for this metric or expression. This is especially useful if this is an expression, so that you know what the value represents. If the metric or expression is shown in a CloudWatch dashboard widget, the label is shown. If Label is omitted, CloudWatch generates a default. You can put dynamic expressions into a label, so that it is more descriptive. For more information, see Using Dynamic Labels.
     */
   var Label: js.UndefOr[MetricLabel] = js.undefined
   
@@ -44,6 +49,10 @@ object MetricDataQuery {
   }
   
   extension [Self <: MetricDataQuery](x: Self) {
+    
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
     inline def setExpression(value: MetricExpression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     

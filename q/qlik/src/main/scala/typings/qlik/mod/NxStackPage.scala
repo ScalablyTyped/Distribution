@@ -23,6 +23,6 @@ object NxStackPage {
     
     inline def setQData(value: js.Array[NxStackedPivotCell]): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
-    inline def setQDataVarargs(value: NxStackedPivotCell*): Self = StObject.set(x, "qData", js.Array(value :_*))
+    inline def setQDataVarargs(value: NxStackedPivotCell*): Self = StObject.set(x, "qData", js.Array(value*))
   }
 }

@@ -33,6 +33,6 @@ object GetPartitionIndexesResponse {
     
     inline def setPartitionIndexDescriptorListUndefined: Self = StObject.set(x, "PartitionIndexDescriptorList", js.undefined)
     
-    inline def setPartitionIndexDescriptorListVarargs(value: PartitionIndexDescriptor*): Self = StObject.set(x, "PartitionIndexDescriptorList", js.Array(value :_*))
+    inline def setPartitionIndexDescriptorListVarargs(value: PartitionIndexDescriptor*): Self = StObject.set(x, "PartitionIndexDescriptorList", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ Web Push library for Node.js
 | ------------------ | :-------------: |
 | Full name          | web-push |
 | Keywords           | web push, push, notifications, push notifications |
-| # releases         | 8 |
-| # dependents       | 73 |
-| # downloads        | 2836417 |
-| # stars            | 18 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 333239.6666666667 |
+| # stars            | 2686.0 |
 
 ## Links
 - [Homepage](https://github.com/web-push-libs/web-push#readme)

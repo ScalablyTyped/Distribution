@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-merge
 
-Typings are for version 4.1
+Typings are for version 5.8.0
 
 ## Library description:
 Variant of merge that's useful for webpack configuration
@@ -10,10 +10,10 @@ Variant of merge that's useful for webpack configuration
 | ------------------ | :-------------: |
 | Full name          | webpack-merge |
 | Keywords           | webpack, merge |
-| # releases         | 27 |
-| # dependents       | 2878 |
-| # downloads        | 205623320 |
-| # stars            | 81 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 4.0789616E7 |
+| # stars            | 2569.0 |
 
 ## Links
 - [Homepage](https://github.com/survivejs/webpack-merge)
@@ -24,7 +24,7 @@ Variant of merge that's useful for webpack configuration
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

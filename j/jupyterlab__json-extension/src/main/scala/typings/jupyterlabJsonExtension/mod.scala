@@ -6,6 +6,7 @@ import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IExtension
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRenderer
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererFactory
 import typings.jupyterlabRendermimeInterfaces.mod.IRenderMime.IRendererOptions
+import typings.jupyterlabTranslation.tokensMod.ITranslator
 import typings.luminoMessaging.mod.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +24,7 @@ object mod extends Shortcut {
   
   @JSImport("@jupyterlab/json-extension", "RenderedJSON")
   @js.native
-  class RenderedJSON protected ()
+  open class RenderedJSON protected ()
     extends IRenderer
        with IPrintable {
     /**
@@ -31,7 +32,7 @@ object mod extends Shortcut {
       */
     def this(options: IRendererOptions) = this()
     
-    /* private */ var _mimeType: js.Any = js.native
+    /* private */ var _mimeType: Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -54,6 +55,9 @@ object mod extends Shortcut {
       */
     /* InferMemberOverrides */
     override def processMessage(msg: Message): Unit = js.native
+    
+    @JSName("translator")
+    var translator_RenderedJSON: ITranslator = js.native
   }
   
   @JSImport("@jupyterlab/json-extension", "rendererFactory")

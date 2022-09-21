@@ -40,6 +40,6 @@ object StreamingConfiguration {
     
     inline def setStreamingNotificationTargetsUndefined: Self = StObject.set(x, "StreamingNotificationTargets", js.undefined)
     
-    inline def setStreamingNotificationTargetsVarargs(value: StreamingNotificationTarget*): Self = StObject.set(x, "StreamingNotificationTargets", js.Array(value :_*))
+    inline def setStreamingNotificationTargetsVarargs(value: StreamingNotificationTarget*): Self = StObject.set(x, "StreamingNotificationTargets", js.Array(value*))
   }
 }

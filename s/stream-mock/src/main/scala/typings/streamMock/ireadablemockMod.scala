@@ -11,6 +11,6 @@ object ireadablemockMod {
   @js.native
   trait IReadableMock extends Readable {
     
-    var it: IterableIterator[js.Any] = js.native
+    var it: IterableIterator[Any] = js.native
   }
 }

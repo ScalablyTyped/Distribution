@@ -10,10 +10,10 @@ A handy wrapper for SignalR Hubs. Just specify the hub name, listening functions
 | ------------------ | :-------------: |
 | Full name          | angular-signalr-hub |
 | Keywords           | angular, angularjs, signalr, hub, service |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 54983 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3125.3333333333335 |
+| # stars            | 295.0 |
 
 ## Links
 - [Homepage](https://github.com/justmaier/angular-signalr-hub)

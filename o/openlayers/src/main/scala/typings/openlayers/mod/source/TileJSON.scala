@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.TileJSON")
 @js.native
-class TileJSON protected () extends TileImage {
+open class TileJSON protected () extends TileImage {
   /**
     * @classdesc
     * Layer source for tile data in TileJSON format.

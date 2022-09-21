@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
-import typings.googleapis.v33Mod.dfareportingV33.SchemaDateRange
-import typings.googleapis.v33Mod.dfareportingV33.SchemaDimensionValue
-import typings.googleapis.v33Mod.dfareportingV33.SchemaSortedDimension
+import typings.googleapis.v35Mod.dfareportingV35.SchemaDateRange
+import typings.googleapis.v35Mod.dfareportingV35.SchemaDimensionValue
+import typings.googleapis.v35Mod.dfareportingV35.SchemaSortedDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,25 +40,25 @@ object CustomFloodlightVariables {
     
     inline def setActivityFiltersUndefined: Self = StObject.set(x, "activityFilters", js.undefined)
     
-    inline def setActivityFiltersVarargs(value: SchemaDimensionValue*): Self = StObject.set(x, "activityFilters", js.Array(value :_*))
+    inline def setActivityFiltersVarargs(value: SchemaDimensionValue*): Self = StObject.set(x, "activityFilters", js.Array(value*))
     
     inline def setConversionDimensions(value: js.Array[SchemaSortedDimension]): Self = StObject.set(x, "conversionDimensions", value.asInstanceOf[js.Any])
     
     inline def setConversionDimensionsUndefined: Self = StObject.set(x, "conversionDimensions", js.undefined)
     
-    inline def setConversionDimensionsVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "conversionDimensions", js.Array(value :_*))
+    inline def setConversionDimensionsVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "conversionDimensions", js.Array(value*))
     
     inline def setCustomFloodlightVariables(value: js.Array[SchemaSortedDimension]): Self = StObject.set(x, "customFloodlightVariables", value.asInstanceOf[js.Any])
     
     inline def setCustomFloodlightVariablesUndefined: Self = StObject.set(x, "customFloodlightVariables", js.undefined)
     
-    inline def setCustomFloodlightVariablesVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "customFloodlightVariables", js.Array(value :_*))
+    inline def setCustomFloodlightVariablesVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "customFloodlightVariables", js.Array(value*))
     
     inline def setCustomRichMediaEvents(value: js.Array[SchemaDimensionValue]): Self = StObject.set(x, "customRichMediaEvents", value.asInstanceOf[js.Any])
     
     inline def setCustomRichMediaEventsUndefined: Self = StObject.set(x, "customRichMediaEvents", js.undefined)
     
-    inline def setCustomRichMediaEventsVarargs(value: SchemaDimensionValue*): Self = StObject.set(x, "customRichMediaEvents", js.Array(value :_*))
+    inline def setCustomRichMediaEventsVarargs(value: SchemaDimensionValue*): Self = StObject.set(x, "customRichMediaEvents", js.Array(value*))
     
     inline def setDateRange(value: SchemaDateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
@@ -72,13 +72,13 @@ object CustomFloodlightVariables {
     
     inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
     
-    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value*))
     
     inline def setPerInteractionDimensions(value: js.Array[SchemaSortedDimension]): Self = StObject.set(x, "perInteractionDimensions", value.asInstanceOf[js.Any])
     
     inline def setPerInteractionDimensionsUndefined: Self = StObject.set(x, "perInteractionDimensions", js.undefined)
     
-    inline def setPerInteractionDimensionsVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "perInteractionDimensions", js.Array(value :_*))
+    inline def setPerInteractionDimensionsVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "perInteractionDimensions", js.Array(value*))
     
     inline def setReportProperties(value: ClicksLookbackWindow): Self = StObject.set(x, "reportProperties", value.asInstanceOf[js.Any])
     

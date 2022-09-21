@@ -1,25 +1,34 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.dash
-import typings.devextreme.devextremeStrings.dot
-import typings.devextreme.devextremeStrings.longDash
-import typings.devextreme.devextremeStrings.solid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DashStyle extends StObject {
   
+  /**
+    * Colors a tooltip&apos;s border.
+    */
   var color: js.UndefOr[String] = js.undefined
   
-  var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
+  /**
+    * Specifies the dash style of a tooltip&apos;s border.
+    */
+  var dashStyle: js.UndefOr[typings.devextreme.mod.DevExpress.common.charts.DashStyle] = js.undefined
   
-  var label: js.UndefOr[BackgroundColorCustomizeText] = js.undefined
-  
+  /**
+    * Specifies the transparency of a tooltip&apos;s border.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies whether a tooltip&apos;s border is visible.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies the width of a tooltip&apos;s border in pixels.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object DashStyle {
@@ -35,13 +44,9 @@ object DashStyle {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setDashStyle(value: dash | dot | longDash | solid): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    inline def setDashStyle(value: typings.devextreme.mod.DevExpress.common.charts.DashStyle): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
-    
-    inline def setLabel(value: BackgroundColorCustomizeText): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-    
-    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

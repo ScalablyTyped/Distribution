@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PortalGroupConstructor
   extends StObject
-     with Instantiable0[PortalGroup]
+     with /**
+  * The group resource represents a group within the [Portal](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalGroup.html)
+  */
+Instantiable0[PortalGroup]
      with Instantiable1[/* properties */ PortalGroupProperties, PortalGroup]

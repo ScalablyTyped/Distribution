@@ -168,7 +168,7 @@ object AnimationState {
     
     inline def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setExpandToIndex(value: Double => TrackEntry): Self = StObject.set(x, "expandToIndex", js.Any.fromFunction1(value))
     
@@ -176,7 +176,7 @@ object AnimationState {
     
     inline def setListeners(value: js.Array[AnimationStateListener2]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
-    inline def setListenersVarargs(value: AnimationStateListener2*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+    inline def setListenersVarargs(value: AnimationStateListener2*): Self = StObject.set(x, "listeners", js.Array(value*))
     
     inline def setPropertyIDs(value: IntSet): Self = StObject.set(x, "propertyIDs", value.asInstanceOf[js.Any])
     
@@ -204,7 +204,7 @@ object AnimationState {
     
     inline def setTracks(value: js.Array[TrackEntry]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
-    inline def setTracksVarargs(value: TrackEntry*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: TrackEntry*): Self = StObject.set(x, "tracks", js.Array(value*))
     
     inline def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     

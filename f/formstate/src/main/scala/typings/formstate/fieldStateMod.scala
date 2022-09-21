@@ -14,7 +14,7 @@ object fieldStateMod {
   
   @JSImport("formstate/lib/core/fieldState", "FieldState")
   @js.native
-  class FieldState[TValue] protected ()
+  open class FieldState[TValue] protected ()
     extends StObject
        with ComposibleValidatable[TValue] {
     def this(_initValue: TValue) = this()
@@ -30,7 +30,7 @@ object fieldStateMod {
     
     /* protected */ var _autoValidationEnabled: Boolean = js.native
     
-    /* private */ var _initValue: js.Any = js.native
+    /* private */ var _initValue: Any = js.native
     
     /* CompleteClass */
     @JSName("_on$Reinit")
@@ -44,9 +44,9 @@ object fieldStateMod {
     /**
       * Allows you to take actions in your code based on `value` changes caused by user interactions
       */
-    /* protected */ def _onDidChange(config: NewValue[TValue]): js.Any = js.native
+    /* protected */ def _onDidChange(config: NewValue[TValue]): Any = js.native
     
-    /* protected */ def _onUpdate(state: FieldState[TValue]): js.Any = js.native
+    /* protected */ def _onUpdate(state: FieldState[TValue]): Any = js.native
     
     /** Used by the parent to register listeners */
     /* CompleteClass */
@@ -93,14 +93,14 @@ object fieldStateMod {
     /** On change on the component side */
     def onChange(value: TValue): Unit = js.native
     
-    def onDidChange(handler: js.Function1[/* config */ NewValue[TValue], js.Any]): this.type = js.native
+    def onDidChange(handler: js.Function1[/* config */ NewValue[TValue], Any]): this.type = js.native
     
     /**
       * onUpdate is called whenever we change something in our local state that is significant
       * - any validation() call
       * - any reset() call
       */
-    def onUpdate(handler: js.Function1[/* state */ FieldState[TValue], js.Any]): this.type = js.native
+    def onUpdate(handler: js.Function1[/* state */ FieldState[TValue], Any]): this.type = js.native
     
     /* protected */ var preventNextQueuedValidation: Boolean = js.native
     

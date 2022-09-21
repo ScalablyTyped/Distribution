@@ -7,13 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Contenttype
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
-  
-  var content_id: js.UndefOr[String] = js.undefined
+     with /* key */ StringDictionary[Any] {
   
   var content_type: js.UndefOr[String] = js.undefined
   
-  var method: js.UndefOr[String] = js.undefined
+  var item_id: js.UndefOr[String] = js.undefined
 }
 object Contenttype {
   
@@ -24,16 +22,12 @@ object Contenttype {
   
   extension [Self <: Contenttype](x: Self) {
     
-    inline def setContent_id(value: String): Self = StObject.set(x, "content_id", value.asInstanceOf[js.Any])
-    
-    inline def setContent_idUndefined: Self = StObject.set(x, "content_id", js.undefined)
-    
     inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
     inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
     
-    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setItem_id(value: String): Self = StObject.set(x, "item_id", value.asInstanceOf[js.Any])
     
-    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setItem_idUndefined: Self = StObject.set(x, "item_id", js.undefined)
   }
 }

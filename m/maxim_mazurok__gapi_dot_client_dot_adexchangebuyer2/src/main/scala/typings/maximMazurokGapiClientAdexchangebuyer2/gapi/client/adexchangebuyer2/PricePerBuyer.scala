@@ -28,7 +28,7 @@ object PricePerBuyer {
     
     inline def setAdvertiserIdsUndefined: Self = StObject.set(x, "advertiserIds", js.undefined)
     
-    inline def setAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "advertiserIds", js.Array(value :_*))
+    inline def setAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "advertiserIds", js.Array(value*))
     
     inline def setBuyer(value: Buyer): Self = StObject.set(x, "buyer", value.asInstanceOf[js.Any])
     

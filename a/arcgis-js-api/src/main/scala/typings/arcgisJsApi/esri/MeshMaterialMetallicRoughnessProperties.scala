@@ -30,6 +30,8 @@ trait MeshMaterialMetallicRoughnessProperties
   /**
     * Specifies how much the material behaves like a metal.
     *
+    * @default 1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterialMetallicRoughness.html#metallic)
     */
   var metallic: js.UndefOr[Double] = js.undefined
@@ -55,6 +57,8 @@ trait MeshMaterialMetallicRoughnessProperties
   /**
     * Indicates how rough the surface of the material is.
     *
+    * @default 1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshMaterialMetallicRoughness.html#roughness)
     */
   var roughness: js.UndefOr[Double] = js.undefined
@@ -72,7 +76,7 @@ object MeshMaterialMetallicRoughnessProperties {
     
     inline def setEmissiveColorUndefined: Self = StObject.set(x, "emissiveColor", js.undefined)
     
-    inline def setEmissiveColorVarargs(value: Double*): Self = StObject.set(x, "emissiveColor", js.Array(value :_*))
+    inline def setEmissiveColorVarargs(value: Double*): Self = StObject.set(x, "emissiveColor", js.Array(value*))
     
     inline def setEmissiveTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "emissiveTexture", value.asInstanceOf[js.Any])
     

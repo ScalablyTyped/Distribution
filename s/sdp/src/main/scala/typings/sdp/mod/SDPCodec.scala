@@ -29,6 +29,6 @@ object SDPCodec {
     
     inline def setRtcpFeedbackUndefined: Self = StObject.set(x, "rtcpFeedback", js.undefined)
     
-    inline def setRtcpFeedbackVarargs(value: SDPFeedbackParameter*): Self = StObject.set(x, "rtcpFeedback", js.Array(value :_*))
+    inline def setRtcpFeedbackVarargs(value: SDPFeedbackParameter*): Self = StObject.set(x, "rtcpFeedback", js.Array(value*))
   }
 }

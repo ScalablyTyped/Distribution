@@ -12,7 +12,7 @@ trait ListResourceComplianceSummariesResult extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
-    * A summary count for specified or targeted managed instances. Summary count includes information about compliant and non-compliant State Manager associations, patch status, or custom items according to the filter criteria that you specify. 
+    * A summary count for specified or targeted managed nodes. Summary count includes information about compliant and non-compliant State Manager associations, patch status, or custom items according to the filter criteria that you specify. 
     */
   var ResourceComplianceSummaryItems: js.UndefOr[ResourceComplianceSummaryItemList] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListResourceComplianceSummariesResult {
     
     inline def setResourceComplianceSummaryItemsUndefined: Self = StObject.set(x, "ResourceComplianceSummaryItems", js.undefined)
     
-    inline def setResourceComplianceSummaryItemsVarargs(value: ResourceComplianceSummaryItem*): Self = StObject.set(x, "ResourceComplianceSummaryItems", js.Array(value :_*))
+    inline def setResourceComplianceSummaryItemsVarargs(value: ResourceComplianceSummaryItem*): Self = StObject.set(x, "ResourceComplianceSummaryItems", js.Array(value*))
   }
 }

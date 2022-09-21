@@ -55,7 +55,7 @@ trait IUtilDomMisc extends StObject {
     * @return Newly created element
     */
   def makeElement(tagName: String): HTMLElement = js.native
-  def makeElement(tagName: String, attributes: js.Any): HTMLElement = js.native
+  def makeElement(tagName: String, attributes: Any): HTMLElement = js.native
   
   /**
     * Makes element selectable
@@ -72,10 +72,10 @@ trait IUtilDomMisc extends StObject {
   /**
     * Converts an array-like object (e.g. arguments or NodeList) to an array
     */
-  def toArray(arrayLike: js.Any): js.Array[js.Any] = js.native
+  def toArray(arrayLike: Any): js.Array[Any] = js.native
   
   def wrapElement(element: HTMLElement, wrapper: String): HTMLElement = js.native
-  def wrapElement(element: HTMLElement, wrapper: String, attributes: js.Any): HTMLElement = js.native
+  def wrapElement(element: HTMLElement, wrapper: String, attributes: Any): HTMLElement = js.native
   /**
     * Wraps element with another element
     * @param element Element to wrap
@@ -83,5 +83,5 @@ trait IUtilDomMisc extends StObject {
     * @param [attributes] Attributes to set on a wrapper
     */
   def wrapElement(element: HTMLElement, wrapper: HTMLElement): HTMLElement = js.native
-  def wrapElement(element: HTMLElement, wrapper: HTMLElement, attributes: js.Any): HTMLElement = js.native
+  def wrapElement(element: HTMLElement, wrapper: HTMLElement, attributes: Any): HTMLElement = js.native
 }

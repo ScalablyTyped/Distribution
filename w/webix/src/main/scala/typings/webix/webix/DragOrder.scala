@@ -24,7 +24,7 @@ trait DragOrder extends StObject {
   def $dragOut(source: HTMLElement, target: HTMLElement, drop: HTMLElement): Unit
   
   @JSName("$dragPos")
-  def $dragPos(args: js.Any*): js.Any
+  def $dragPos(args: Any*): Any
   @JSName("$dragPos")
   var $dragPos_Original: WebixCallback
   

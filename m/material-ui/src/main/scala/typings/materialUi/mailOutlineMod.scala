@@ -10,10 +10,10 @@ object mailOutlineMod {
   
   @JSImport("material-ui/svg-icons/communication/mail-outline", JSImport.Default)
   @js.native
-  class default () extends CommunicationMailOutline
+  open class default () extends CommunicationMailOutline
   
   @JSImport("material-ui/svg-icons/communication/mail-outline", "CommunicationMailOutline")
   @js.native
-  class CommunicationMailOutline ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationMailOutline ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

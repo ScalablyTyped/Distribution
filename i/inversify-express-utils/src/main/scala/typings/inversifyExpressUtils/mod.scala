@@ -1,17 +1,24 @@
 package typings.inversifyExpressUtils
 
+import org.scalablytyped.runtime.Instantiable0
 import typings.express.mod.Application_
 import typings.express.mod.Router
+import typings.inversify.decoratorUtilsMod.DecoratorTarget
 import typings.inversify.interfacesMod.interfaces.Container
-import typings.inversifyExpressUtils.anon.Controller
-import typings.inversifyExpressUtils.anon.ControllerMetadata
-import typings.inversifyExpressUtils.anon.Instantiable
-import typings.inversifyExpressUtils.interfacesMod.interfaces.HandlerDecorator
-import typings.inversifyExpressUtils.interfacesMod.interfaces.Middleware
-import typings.inversifyExpressUtils.interfacesMod.interfaces.RoutingConfig
+import typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE
+import typings.inversifyExpressUtils.interfacesMod.AuthProvider
+import typings.inversifyExpressUtils.interfacesMod.Controller
+import typings.inversifyExpressUtils.interfacesMod.ControllerMetadata
+import typings.inversifyExpressUtils.interfacesMod.ControllerMethodMetadata
+import typings.inversifyExpressUtils.interfacesMod.ControllerParameterMetadata
+import typings.inversifyExpressUtils.interfacesMod.HandlerDecorator
+import typings.inversifyExpressUtils.interfacesMod.Middleware
+import typings.inversifyExpressUtils.interfacesMod.RawMetadata
+import typings.inversifyExpressUtils.interfacesMod.RouteInfo
+import typings.inversifyExpressUtils.interfacesMod.RoutingConfig
 import typings.node.urlMod.URL_
-import typings.std.Error
 import typings.std.ParameterDecorator
+import typings.std.TypedPropertyDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,13 +31,49 @@ object mod {
   
   @JSImport("inversify-express-utils", "BaseHttpController")
   @js.native
-  class BaseHttpController ()
+  open class BaseHttpController ()
     extends typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController
   
   @JSImport("inversify-express-utils", "BaseMiddleware")
   @js.native
   abstract class BaseMiddleware ()
     extends typings.inversifyExpressUtils.baseMiddlewareMod.BaseMiddleware
+  
+  @JSImport("inversify-express-utils", "DEFAULT_ROUTING_ROOT_PATH")
+  @js.native
+  val DEFAULT_ROUTING_ROOT_PATH: /* "/" */ String = js.native
+  
+  inline def DUPLICATED_CONTROLLER_NAME(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DUPLICATED_CONTROLLER_NAME")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSImport("inversify-express-utils", "HTTP_VERBS_ENUM")
+  @js.native
+  object HTTP_VERBS_ENUM extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM & String] = js.native
+    
+    /* "ALL" */ val all: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.all & String = js.native
+    
+    /* "CONNECT" */ val connect: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.connect & String = js.native
+    
+    /* "DELETE" */ val delete: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.delete & String = js.native
+    
+    /* "GET" */ val get: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.get & String = js.native
+    
+    /* "HEAD" */ val head: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.head & String = js.native
+    
+    /* "OPTIONS" */ val options: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.options & String = js.native
+    
+    /* "PATCH" */ val patch: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.patch & String = js.native
+    
+    /* "POST" */ val post: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.post & String = js.native
+    
+    /* "PROPFIND" */ val propfind: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.propfind & String = js.native
+    
+    /* "PUT" */ val put: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.put & String = js.native
+    
+    /* "TRACE" */ val trace: typings.inversifyExpressUtils.constantsMod.HTTP_VERBS_ENUM.trace & String = js.native
+  }
   
   @JSImport("inversify-express-utils", "HttpContent")
   @js.native
@@ -39,49 +82,95 @@ object mod {
   
   @JSImport("inversify-express-utils", "HttpResponseMessage")
   @js.native
-  class HttpResponseMessage ()
+  open class HttpResponseMessage ()
     extends typings.inversifyExpressUtils.httpResponseMessageMod.HttpResponseMessage {
     def this(statusCode: Double) = this()
   }
   
   @JSImport("inversify-express-utils", "InversifyExpressServer")
   @js.native
-  class InversifyExpressServer protected ()
+  open class InversifyExpressServer protected ()
     extends typings.inversifyExpressUtils.serverMod.InversifyExpressServer {
-    /**
-      * Wrapper for the express server.
-      *
-      * @param container Container loaded with all controllers and their dependencies.
-      * @param customRouter optional express.Router custom router
-      * @param routingConfig optional interfaces.RoutingConfig routing config
-      * @param customApp optional express.Application custom app
-      * @param authProvider optional interfaces.AuthProvider auth provider
-      * @param forceControllers optional boolean setting to force controllers (defaults do true)
-      */
     def this(
       container: Container,
       customRouter: js.UndefOr[Router | Null],
       routingConfig: js.UndefOr[RoutingConfig | Null],
       customApp: js.UndefOr[Application_ | Null],
-      authProvider: js.UndefOr[Instantiable | Null],
+      authProvider: js.UndefOr[Instantiable0[AuthProvider] | Null],
       forceControllers: js.UndefOr[Boolean]
     ) = this()
   }
   
   @JSImport("inversify-express-utils", "JsonContent")
   @js.native
-  class JsonContent protected ()
+  open class JsonContent protected ()
     extends typings.inversifyExpressUtils.jsonContentMod.JsonContent {
-    def this(content: js.Any) = this()
-    def this(content: js.Any, mediaType: String) = this()
+    def this(content: Any) = this()
+  }
+  
+  object METADATA_KEY {
+    
+    @JSImport("inversify-express-utils", "METADATA_KEY")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("inversify-express-utils", "METADATA_KEY.controller")
+    @js.native
+    def controller: String = js.native
+    
+    @JSImport("inversify-express-utils", "METADATA_KEY.controllerMethod")
+    @js.native
+    def controllerMethod: String = js.native
+    inline def controllerMethod_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controllerMethod")(x.asInstanceOf[js.Any])
+    
+    @JSImport("inversify-express-utils", "METADATA_KEY.controllerParameter")
+    @js.native
+    def controllerParameter: String = js.native
+    inline def controllerParameter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controllerParameter")(x.asInstanceOf[js.Any])
+    
+    inline def controller_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controller")(x.asInstanceOf[js.Any])
+    
+    @JSImport("inversify-express-utils", "METADATA_KEY.httpContext")
+    @js.native
+    def httpContext: String = js.native
+    inline def httpContext_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("httpContext")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("inversify-express-utils", "NO_CONTROLLERS_FOUND")
+  @js.native
+  val NO_CONTROLLERS_FOUND: /* "No controllers have been found! Please ensure that you have register at least one Controller." */ String = js.native
+  
+  @JSImport("inversify-express-utils", "PARAMETER_TYPE")
+  @js.native
+  object PARAMETER_TYPE extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE & Double] = js.native
+    
+    /* 4 */ val BODY: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.BODY & Double = js.native
+    
+    /* 6 */ val COOKIES: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.COOKIES & Double = js.native
+    
+    /* 5 */ val HEADERS: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.HEADERS & Double = js.native
+    
+    /* 7 */ val NEXT: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.NEXT & Double = js.native
+    
+    /* 2 */ val PARAMS: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.PARAMS & Double = js.native
+    
+    /* 8 */ val PRINCIPAL: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.PRINCIPAL & Double = js.native
+    
+    /* 3 */ val QUERY: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.QUERY & Double = js.native
+    
+    /* 0 */ val REQUEST: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.REQUEST & Double = js.native
+    
+    /* 1 */ val RESPONSE: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.RESPONSE & Double = js.native
   }
   
   @JSImport("inversify-express-utils", "StringContent")
   @js.native
-  class StringContent protected ()
+  open class StringContent protected ()
     extends typings.inversifyExpressUtils.stringContentMod.StringContent {
     def this(content: String) = this()
-    def this(content: String, mediaType: String) = this()
   }
   
   object TYPE {
@@ -106,37 +195,75 @@ object mod {
     inline def HttpContext_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HttpContext")(x.asInstanceOf[js.Any])
   }
   
-  inline def all(path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
+  inline def all(path: String, middleware: Middleware*): HandlerDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(List(path.asInstanceOf[js.Any]).`++`(middleware.asInstanceOf[Seq[js.Any]])*).asInstanceOf[HandlerDecorator]
   
   inline def cleanUpMetadata(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanUpMetadata")().asInstanceOf[Unit]
   
-  inline def controller(path: String, middleware: Middleware*): js.Function1[/* target */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("controller")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ js.Any, Unit]]
+  inline def controller(path: String, middleware: Middleware*): js.Function1[/* target */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("controller")(List(path.asInstanceOf[js.Any]).`++`(middleware.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* target */ Any, Unit]]
   
   inline def cookies(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("cookies")().asInstanceOf[ParameterDecorator]
   inline def cookies(cookieName: String): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("cookies")(cookieName.asInstanceOf[js.Any]).asInstanceOf[ParameterDecorator]
   
-  inline def getRawMetadata(container: Container): js.Array[ControllerMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawMetadata")(container.asInstanceOf[js.Any]).asInstanceOf[js.Array[ControllerMetadata]]
+  inline def getControllerMetadata(constructor: Any): ControllerMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllerMetadata")(constructor.asInstanceOf[js.Any]).asInstanceOf[ControllerMetadata]
   
-  inline def getRouteInfo(container: Container): js.Array[Controller] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteInfo")(container.asInstanceOf[js.Any]).asInstanceOf[js.Array[Controller]]
+  inline def getControllerMethodMetadata(constructor: Any): js.Array[ControllerMethodMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllerMethodMetadata")(constructor.asInstanceOf[js.Any]).asInstanceOf[js.Array[ControllerMethodMetadata]]
   
-  inline def httpDelete(path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("httpDelete")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
+  inline def getControllerParameterMetadata(constructor: Any): ControllerParameterMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllerParameterMetadata")(constructor.asInstanceOf[js.Any]).asInstanceOf[ControllerParameterMetadata]
   
-  inline def httpGet(path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("httpGet")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
+  inline def getControllersFromContainer(container: Container, forceControllers: Boolean): js.Array[Controller] = (^.asInstanceOf[js.Dynamic].applyDynamic("getControllersFromContainer")(container.asInstanceOf[js.Any], forceControllers.asInstanceOf[js.Any])).asInstanceOf[js.Array[Controller]]
   
-  inline def httpHead(path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("httpHead")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
+  inline def getControllersFromMetadata(): js.Array[Instantiable0[Controller]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllersFromMetadata")().asInstanceOf[js.Array[Instantiable0[Controller]]]
   
-  inline def httpMethod(method: String, path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("httpMethod")(method.asInstanceOf[js.Any], path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
+  inline def getRawMetadata(container: Container): js.Array[RawMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawMetadata")(container.asInstanceOf[js.Any]).asInstanceOf[js.Array[RawMetadata]]
   
-  inline def httpPatch(path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("httpPatch")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
+  inline def getRouteInfo(container: Container): js.Array[RouteInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteInfo")(container.asInstanceOf[js.Any]).asInstanceOf[js.Array[RouteInfo]]
   
-  inline def httpPost(path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("httpPost")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
+  inline def httpDelete(path: String, middleware: Middleware*): HandlerDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("httpDelete")(List(path.asInstanceOf[js.Any]).`++`(middleware.asInstanceOf[Seq[js.Any]])*).asInstanceOf[HandlerDecorator]
   
-  inline def httpPut(path: String, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("httpPut")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
+  inline def httpGet(path: String, middleware: Middleware*): HandlerDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("httpGet")(List(path.asInstanceOf[js.Any]).`++`(middleware.asInstanceOf[Seq[js.Any]])*).asInstanceOf[HandlerDecorator]
   
-  inline def injectHttpContext(target: js.Any, targetKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectHttpContext")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def injectHttpContext(target: js.Any, targetKey: String, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectHttpContext")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def httpHead(path: String, middleware: Middleware*): HandlerDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("httpHead")(List(path.asInstanceOf[js.Any]).`++`(middleware.asInstanceOf[Seq[js.Any]])*).asInstanceOf[HandlerDecorator]
+  
+  inline def httpMethod(
+    method: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HTTP_VERBS_ENUM * / any */ String,
+    path: String,
+    middleware: Middleware*
+  ): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("httpMethod")((List(method.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).`++`(middleware.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[HandlerDecorator]
+  
+  inline def httpPatch(path: String, middleware: Middleware*): HandlerDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("httpPatch")(List(path.asInstanceOf[js.Any]).`++`(middleware.asInstanceOf[Seq[js.Any]])*).asInstanceOf[HandlerDecorator]
+  
+  inline def httpPost(path: String, middleware: Middleware*): HandlerDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("httpPost")(List(path.asInstanceOf[js.Any]).`++`(middleware.asInstanceOf[Seq[js.Any]])*).asInstanceOf[HandlerDecorator]
+  
+  inline def httpPut(path: String, middleware: Middleware*): HandlerDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("httpPut")(List(path.asInstanceOf[js.Any]).`++`(middleware.asInstanceOf[Seq[js.Any]])*).asInstanceOf[HandlerDecorator]
+  
+  inline def injectHttpContext(target: DecoratorTarget[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectHttpContext")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def injectHttpContext(target: DecoratorTarget[Any], targetKey: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectHttpContext")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def injectHttpContext(target: DecoratorTarget[Any], targetKey: String, indexOrPropertyDescriptor: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectHttpContext")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any], indexOrPropertyDescriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def injectHttpContext(
+    target: DecoratorTarget[Any],
+    targetKey: String,
+    indexOrPropertyDescriptor: TypedPropertyDescriptor[Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectHttpContext")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any], indexOrPropertyDescriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def injectHttpContext(target: DecoratorTarget[Any], targetKey: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectHttpContext")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def injectHttpContext(target: DecoratorTarget[Any], targetKey: js.Symbol, indexOrPropertyDescriptor: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectHttpContext")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any], indexOrPropertyDescriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def injectHttpContext(
+    target: DecoratorTarget[Any],
+    targetKey: js.Symbol,
+    indexOrPropertyDescriptor: TypedPropertyDescriptor[Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectHttpContext")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any], indexOrPropertyDescriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def injectHttpContext(target: DecoratorTarget[Any], targetKey: Unit, indexOrPropertyDescriptor: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectHttpContext")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any], indexOrPropertyDescriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def injectHttpContext(
+    target: DecoratorTarget[Any],
+    targetKey: Unit,
+    indexOrPropertyDescriptor: TypedPropertyDescriptor[Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectHttpContext")(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any], indexOrPropertyDescriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def instanceOfIHttpActionResult(value: Any): /* is inversify-express-utils.inversify-express-utils/lib/interfaces.IHttpActionResult */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("instanceOfIHttpActionResult")(value.asInstanceOf[js.Any]).asInstanceOf[/* is inversify-express-utils.inversify-express-utils/lib/interfaces.IHttpActionResult */ Boolean]
   
   inline def next(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("next")().asInstanceOf[ParameterDecorator]
+  
+  inline def params(`type`: PARAMETER_TYPE): js.Function3[/* target */ Controller, /* methodName */ String | js.Symbol, /* index */ Double, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("params")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ Controller, /* methodName */ String | js.Symbol, /* index */ Double, Unit]]
+  inline def params(`type`: PARAMETER_TYPE, parameterName: String): js.Function3[/* target */ Controller, /* methodName */ String | js.Symbol, /* index */ Double, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("params")(`type`.asInstanceOf[js.Any], parameterName.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* target */ Controller, /* methodName */ String | js.Symbol, /* index */ Double, Unit]]
   
   inline def principal(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("principal")().asInstanceOf[ParameterDecorator]
   
@@ -159,125 +286,85 @@ object mod {
     
     @JSImport("inversify-express-utils", "results.BadRequestErrorMessageResult")
     @js.native
-    class BadRequestErrorMessageResult protected ()
+    open class BadRequestErrorMessageResult protected ()
       extends typings.inversifyExpressUtils.resultsMod.BadRequestErrorMessageResult {
-      def this(
-        message: String,
-        apiController: typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController
-      ) = this()
+      def this(message: String) = this()
     }
     
     @JSImport("inversify-express-utils", "results.BadRequestResult")
     @js.native
-    class BadRequestResult protected ()
-      extends typings.inversifyExpressUtils.resultsMod.BadRequestResult {
-      def this(apiController: typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController) = this()
-    }
+    open class BadRequestResult ()
+      extends typings.inversifyExpressUtils.resultsMod.BadRequestResult
     
     @JSImport("inversify-express-utils", "results.ConflictResult")
     @js.native
-    class ConflictResult protected ()
-      extends typings.inversifyExpressUtils.resultsMod.ConflictResult {
-      def this(apiController: typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController) = this()
-    }
+    open class ConflictResult ()
+      extends typings.inversifyExpressUtils.resultsMod.ConflictResult
     
     @JSImport("inversify-express-utils", "results.CreatedNegotiatedContentResult")
     @js.native
-    class CreatedNegotiatedContentResult[T] protected ()
+    open class CreatedNegotiatedContentResult[T] protected ()
       extends typings.inversifyExpressUtils.resultsMod.CreatedNegotiatedContentResult[T] {
-      def this(
-        location: String,
-        content: T,
-        apiController: typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController
-      ) = this()
-      def this(
-        location: URL_,
-        content: T,
-        apiController: typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController
-      ) = this()
+      def this(location: String, content: T) = this()
+      def this(location: URL_, content: T) = this()
     }
     
     @JSImport("inversify-express-utils", "results.ExceptionResult")
     @js.native
-    class ExceptionResult protected ()
+    open class ExceptionResult protected ()
       extends typings.inversifyExpressUtils.resultsMod.ExceptionResult {
-      def this(
-        error: Error,
-        apiController: typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController
-      ) = this()
+      def this(error: js.Error) = this()
     }
     
     @JSImport("inversify-express-utils", "results.InternalServerErrorResult")
     @js.native
-    class InternalServerErrorResult protected ()
-      extends typings.inversifyExpressUtils.resultsMod.InternalServerErrorResult {
-      def this(apiController: typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController) = this()
-    }
+    open class InternalServerErrorResult ()
+      extends typings.inversifyExpressUtils.resultsMod.InternalServerErrorResult
     
     @JSImport("inversify-express-utils", "results.JsonResult")
     @js.native
-    class JsonResult protected ()
+    open class JsonResult protected ()
       extends typings.inversifyExpressUtils.resultsMod.JsonResult {
-      def this(
-        json: js.Any,
-        statusCode: Double,
-        apiController: typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController
-      ) = this()
+      def this(json: Any, statusCode: Double) = this()
     }
     
     @JSImport("inversify-express-utils", "results.NotFoundResult")
     @js.native
-    class NotFoundResult protected ()
-      extends typings.inversifyExpressUtils.resultsMod.NotFoundResult {
-      def this(apiController: typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController) = this()
-    }
+    open class NotFoundResult ()
+      extends typings.inversifyExpressUtils.resultsMod.NotFoundResult
     
     @JSImport("inversify-express-utils", "results.OkNegotiatedContentResult")
     @js.native
-    class OkNegotiatedContentResult[T] protected ()
+    open class OkNegotiatedContentResult[T] protected ()
       extends typings.inversifyExpressUtils.resultsMod.OkNegotiatedContentResult[T] {
-      def this(content: T, apiController: typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController) = this()
+      def this(content: T) = this()
     }
     
     @JSImport("inversify-express-utils", "results.OkResult")
     @js.native
-    class OkResult protected ()
-      extends typings.inversifyExpressUtils.resultsMod.OkResult {
-      def this(apiController: typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController) = this()
-    }
+    open class OkResult ()
+      extends typings.inversifyExpressUtils.resultsMod.OkResult
     
     @JSImport("inversify-express-utils", "results.RedirectResult")
     @js.native
-    class RedirectResult protected ()
+    open class RedirectResult protected ()
       extends typings.inversifyExpressUtils.resultsMod.RedirectResult {
-      def this(
-        location: String,
-        apiController: typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController
-      ) = this()
-      def this(
-        location: URL_,
-        apiController: typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController
-      ) = this()
+      def this(location: String) = this()
+      def this(location: URL_) = this()
     }
     
     @JSImport("inversify-express-utils", "results.ResponseMessageResult")
     @js.native
-    class ResponseMessageResult protected ()
+    open class ResponseMessageResult protected ()
       extends typings.inversifyExpressUtils.resultsMod.ResponseMessageResult {
-      def this(
-        message: typings.inversifyExpressUtils.httpResponseMessageMod.HttpResponseMessage,
-        apiController: typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController
-      ) = this()
+      def this(message: typings.inversifyExpressUtils.httpResponseMessageMod.HttpResponseMessage) = this()
     }
     
     @JSImport("inversify-express-utils", "results.StatusCodeResult")
     @js.native
-    class StatusCodeResult protected ()
+    open class StatusCodeResult protected ()
       extends typings.inversifyExpressUtils.resultsMod.StatusCodeResult {
-      def this(
-        statusCode: Double,
-        apiController: typings.inversifyExpressUtils.baseHttpControllerMod.BaseHttpController
-      ) = this()
+      def this(statusCode: Double) = this()
     }
   }
 }

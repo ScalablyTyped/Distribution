@@ -25,7 +25,7 @@ trait JSONFileConfig extends StObject {
   /**
     * The absolute or relative URL to load the file from. Or can be a ready formed JSON object, in which case it will be directly added to the Cache.
     */
-  var url: js.UndefOr[String | js.Any] = js.undefined
+  var url: js.UndefOr[String | Any] = js.undefined
   
   /**
     * Extra XHR Settings specifically for this file.
@@ -51,7 +51,7 @@ object JSONFileConfig {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setUrl(value: String | js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

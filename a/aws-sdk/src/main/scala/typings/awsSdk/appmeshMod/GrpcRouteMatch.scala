@@ -17,6 +17,11 @@ trait GrpcRouteMatch extends StObject {
   var methodName: js.UndefOr[MethodName] = js.undefined
   
   /**
+    * The port number to match on.
+    */
+  var port: js.UndefOr[ListenerPort] = js.undefined
+  
+  /**
     * The fully qualified domain name for the service to match from the request.
     */
   var serviceName: js.UndefOr[ServiceName] = js.undefined
@@ -34,11 +39,15 @@ object GrpcRouteMatch {
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    inline def setMetadataVarargs(value: GrpcRouteMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+    inline def setMetadataVarargs(value: GrpcRouteMetadata*): Self = StObject.set(x, "metadata", js.Array(value*))
     
     inline def setMethodName(value: MethodName): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     
     inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
+    
+    inline def setPort(value: ListenerPort): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
     inline def setServiceName(value: ServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     

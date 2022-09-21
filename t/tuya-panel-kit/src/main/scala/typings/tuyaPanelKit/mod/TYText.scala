@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "TYText")
 @js.native
-class TYText protected ()
-  extends Component[TYTextProps, js.Object, js.Any] {
+open class TYText protected ()
+  extends Component[TYTextProps, js.Object, Any] {
   def this(props: TYTextProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TYTextProps, context: js.Any) = this()
+  def this(props: TYTextProps, context: Any) = this()
 }

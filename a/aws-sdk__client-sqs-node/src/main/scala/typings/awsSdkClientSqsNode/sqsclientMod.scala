@@ -13,14 +13,14 @@ object sqsclientMod {
   
   @JSImport("@aws-sdk/client-sqs-node/SQSClient", "SQSClient")
   @js.native
-  class SQSClient protected () extends StObject {
+  open class SQSClient protected () extends StObject {
     def this(configuration: SQSConfiguration) = this()
     
     /* protected */ val config: SQSResolvedConfiguration = js.native
     
     def destroy(): Unit = js.native
     
-    val middlewareStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any = js.native
+    val middlewareStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any = js.native
     
     /**
       * This will need to be revised when the command interface lands.
@@ -30,7 +30,7 @@ object sqsclientMod {
     ): js.Promise[OutputType] = js.native
     def send[InputType /* <: InputTypesUnion */, OutputType /* <: OutputTypesUnion */](
       command: Command[InputTypesUnion, InputType, OutputTypesUnion, OutputType, SQSResolvedConfiguration],
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[OutputType], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[OutputType], Unit]
     ): Unit = js.native
   }
 }

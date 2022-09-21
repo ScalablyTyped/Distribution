@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "read-file-safe" : "1.0.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "read-file-safe" : "1.0.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

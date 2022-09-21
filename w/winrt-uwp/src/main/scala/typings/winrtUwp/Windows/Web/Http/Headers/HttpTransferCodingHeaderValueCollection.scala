@@ -49,7 +49,7 @@ trait HttpTransferCodingHeaderValueCollection
     */
   def getView(): IVectorView[HttpTransferCodingHeaderValue] = js.native
   
-  def indexOf(value: HttpTransferCodingHeaderValue, extra: js.Any*): Index = js.native
+  def indexOf(value: HttpTransferCodingHeaderValue, extra: Any*): Index = js.native
   /**
     * Determines whether an element is in the collection.
     * @param item The item to find in the collection.

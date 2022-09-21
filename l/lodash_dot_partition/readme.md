@@ -10,10 +10,10 @@ The lodash method `_.partition` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.partition |
 | Keywords           | lodash-modularized, partition |
-| # releases         | 0 |
-| # dependents       | 53 |
-| # downloads        | 1156115 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 275976.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

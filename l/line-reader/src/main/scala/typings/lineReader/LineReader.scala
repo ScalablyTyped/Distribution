@@ -1,7 +1,6 @@
 package typings.lineReader
 
-import typings.node.NodeJS.ReadableStream
-import typings.std.Error
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,64 +8,60 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LineReader extends StObject {
   
-  def close(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  
   def eachLine(): js.Function = js.native
   def eachLine(
     file: String,
-    cb: js.Function3[
-      /* line */ String, 
-      /* last */ js.UndefOr[Boolean], 
-      /* cb */ js.UndefOr[js.Function], 
-      Unit
-    ]
+    cb: js.Function3[/* line */ String, /* last */ Boolean, /* continueCb */ js.UndefOr[js.Function], Unit]
   ): LineReader = js.native
   def eachLine(
     file: String,
-    options: LineReaderOptions,
-    cb: js.Function3[
-      /* line */ String, 
-      /* last */ js.UndefOr[Boolean], 
-      /* cb */ js.UndefOr[js.Function], 
-      Unit
-    ]
+    cb: js.Function3[/* line */ String, /* last */ Boolean, /* continueCb */ js.UndefOr[js.Function], Unit],
+    errCb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
   ): LineReader = js.native
-  def eachLine(
-    file: ReadableStream,
-    cb: js.Function3[
-      /* line */ String, 
-      /* last */ js.UndefOr[Boolean], 
-      /* cb */ js.UndefOr[js.Function], 
-      Unit
-    ]
-  ): LineReader = js.native
-  def eachLine(
-    file: ReadableStream,
-    options: LineReaderOptions,
-    cb: js.Function3[
-      /* line */ String, 
-      /* last */ js.UndefOr[Boolean], 
-      /* cb */ js.UndefOr[js.Function], 
-      Unit
-    ]
-  ): LineReader = js.native
-  
-  def hasNextLine(): Boolean = js.native
-  
-  def nextLine(cb: js.Function2[/* err */ Error, /* line */ String, Unit]): Unit = js.native
-  
   // For Promise.promisify;
+  def eachLine(
+    file: String,
+    options: LineReaderOptions,
+    cb: js.Function3[/* line */ String, /* last */ Boolean, /* continueCb */ js.UndefOr[js.Function], Unit]
+  ): LineReader = js.native
+  def eachLine(
+    file: String,
+    options: LineReaderOptions,
+    cb: js.Function3[/* line */ String, /* last */ Boolean, /* continueCb */ js.UndefOr[js.Function], Unit],
+    errCb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+  ): LineReader = js.native
+  def eachLine(
+    file: ReadableStream[Any],
+    cb: js.Function3[/* line */ String, /* last */ Boolean, /* continueCb */ js.UndefOr[js.Function], Unit]
+  ): LineReader = js.native
+  def eachLine(
+    file: ReadableStream[Any],
+    cb: js.Function3[/* line */ String, /* last */ Boolean, /* continueCb */ js.UndefOr[js.Function], Unit],
+    errCb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+  ): LineReader = js.native
+  def eachLine(
+    file: ReadableStream[Any],
+    options: LineReaderOptions,
+    cb: js.Function3[/* line */ String, /* last */ Boolean, /* continueCb */ js.UndefOr[js.Function], Unit]
+  ): LineReader = js.native
+  def eachLine(
+    file: ReadableStream[Any],
+    options: LineReaderOptions,
+    cb: js.Function3[/* line */ String, /* last */ Boolean, /* continueCb */ js.UndefOr[js.Function], Unit],
+    errCb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+  ): LineReader = js.native
+  
   def open(): js.Function = js.native
-  def open(file: String, cb: js.Function2[/* err */ Error, /* reader */ this.type, Unit]): Unit = js.native
+  def open(file: String, cb: js.Function2[/* err */ js.Error, /* reader */ Reader, Unit]): Unit = js.native
   def open(
     file: String,
     options: LineReaderOptions,
-    cb: js.Function2[/* err */ Error, /* reader */ this.type, Unit]
+    cb: js.Function2[/* err */ js.Error, /* reader */ Reader, Unit]
   ): Unit = js.native
-  def open(file: ReadableStream, cb: js.Function2[/* err */ Error, /* reader */ this.type, Unit]): Unit = js.native
+  def open(file: ReadableStream[Any], cb: js.Function2[/* err */ js.Error, /* reader */ Reader, Unit]): Unit = js.native
   def open(
-    file: ReadableStream,
+    file: ReadableStream[Any],
     options: LineReaderOptions,
-    cb: js.Function2[/* err */ Error, /* reader */ this.type, Unit]
+    cb: js.Function2[/* err */ js.Error, /* reader */ Reader, Unit]
   ): Unit = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IDOMProcessingInstruction")
 @js.native
-/* private */ class IDOMProcessingInstruction ()
+/* private */ open class IDOMProcessingInstruction ()
   extends StObject
      with typings.activexMshtml.MSHTML.IDOMProcessingInstruction {
   

@@ -1,24 +1,31 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.materialUiCoreStrings.`@global`
-import typings.react.mod.ComponentType
-import typings.react.mod.ReactElement
+import typings.materialUiStyles.withStylesWithStylesMod.StyledComponentProps
+import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object cssBaselineCssBaselineMod extends Shortcut {
+object cssBaselineCssBaselineMod {
   
-  @JSImport("@material-ui/core/CssBaseline/CssBaseline", JSImport.Default)
+  @JSImport("@material-ui/core/CssBaseline/CssBaseline", JSImport.Namespace)
   @js.native
-  val default: ComponentType[CssBaselineProps] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(props: CssBaselineProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type CssBaselineClassKey = `@global`
   
-  trait CssBaselineProps extends StObject {
+  trait CssBaselineProps
+    extends StObject
+       with StyledComponentProps[scala.Nothing] {
     
-    var children: js.UndefOr[ReactElement] = js.undefined
+    /**
+      * You can wrap a node.
+      */
+    var children: js.UndefOr[ReactNode] = js.undefined
   }
   object CssBaselineProps {
     
@@ -29,14 +36,9 @@ object cssBaselineCssBaselineMod extends Shortcut {
     
     extension [Self <: CssBaselineProps](x: Self) {
       
-      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
-  
-  type _To = ComponentType[CssBaselineProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `cssBaselineCssBaselineMod.foo` */
-  override def _to: ComponentType[CssBaselineProps] = default
 }

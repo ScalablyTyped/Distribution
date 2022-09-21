@@ -10,15 +10,12 @@ ES2015 `Array#findIndex()` ponyfill
 | ------------------ | :-------------: |
 | Full name          | array-find-index |
 | Keywords           | es2015, ponyfill, polyfill, shim, find, index, findindex, array |
-| # releases         | 0 |
-| # dependents       | 168 |
-| # downloads        | 334938533 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7508435666666668E7 |
+| # stars            | 31.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/array-find-index#readme)
-- [Bugs](https://github.com/sindresorhus/array-find-index/issues)
-- [Repository](https://github.com/sindresorhus/array-find-index)
 - [Npm](https://www.npmjs.com/package/array-find-index)
     
 

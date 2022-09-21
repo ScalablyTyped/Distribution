@@ -9,18 +9,18 @@ trait IPrintItemListOptionDetails
   extends StObject
      with IPrintOptionDetails {
   
-  var items: IVectorView[js.Any]
+  var items: IVectorView[Any]
 }
 object IPrintItemListOptionDetails {
   
   inline def apply(
     errorText: String,
-    items: IVectorView[js.Any],
+    items: IVectorView[Any],
     optionId: String,
     optionType: PrintOptionType,
     state: PrintOptionStates,
-    trySetValue: js.Any => Boolean,
-    value: js.Any
+    trySetValue: Any => Boolean,
+    value: Any
   ): IPrintItemListOptionDetails = {
     val __obj = js.Dynamic.literal(errorText = errorText.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], optionId = optionId.asInstanceOf[js.Any], optionType = optionType.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], trySetValue = js.Any.fromFunction1(trySetValue), value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPrintItemListOptionDetails]
@@ -28,6 +28,6 @@ object IPrintItemListOptionDetails {
   
   extension [Self <: IPrintItemListOptionDetails](x: Self) {
     
-    inline def setItems(value: IVectorView[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: IVectorView[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
   }
 }

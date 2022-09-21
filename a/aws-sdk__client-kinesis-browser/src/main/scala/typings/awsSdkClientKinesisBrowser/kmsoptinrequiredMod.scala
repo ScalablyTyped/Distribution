@@ -8,5 +8,5 @@ object kmsoptinrequiredMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/KMSOptInRequired", "KMSOptInRequired")
   @js.native
-  val KMSOptInRequired: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val KMSOptInRequired: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -2,24 +2,17 @@ package typings.inquirer
 
 import typings.node.readlineMod.Interface
 import typings.node.readlineMod.Key
-import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
   
-  /**
-    * Observes a readline-object.
-    *
-    * @param readline
-    * The readline-object to observe.
-    */
-  inline def apply(readline: Interface): Events = ^.asInstanceOf[js.Dynamic].apply(readline.asInstanceOf[js.Any]).asInstanceOf[Events]
-  
   @JSImport("inquirer/lib/utils/events", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(readline: Interface): Events = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(readline.asInstanceOf[js.Any]).asInstanceOf[Events]
   
   /**
     * A set of events.
@@ -29,54 +22,54 @@ object eventsMod {
     /**
       * The event-flow of the `aKey`-event.
       */
-    var aKey: Observable_[KeyDescriptor]
+    var aKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any
     
     /**
       * The event-flow of the `iKey`-event.
       */
-    var iKey: Observable_[KeyDescriptor]
+    var iKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any
     
     /**
-      * The event-flow of the `keypress`-event of the readline-object.
+      * The event-flow of the `keypress`-event of the {@link ReadlineInterface `readline.Interface`}-object.
       */
-    var keypress: Observable_[KeyDescriptor]
+    var keypress: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any
     
     /**
-      * The event-flow of the `line`-event of the readline-object.
+      * The event-flow of the `line`-event of the {@link ReadlineInterface `readline.Interface`}-object.
       */
-    var line: Observable_[String]
+    var line: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<string> */ Any
     
     /**
       * The event-flow of the `normalizedDownKey`-event.
       */
-    var normalizedDownKey: Observable_[KeyDescriptor]
+    var normalizedDownKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any
     
     /**
       * The event-flow of the `normalizedUpKey`-event.
       */
-    var normalizedUpKey: Observable_[KeyDescriptor]
+    var normalizedUpKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any
     
     /**
       * The event-flow of the `numberKey`-event.
       */
-    var numberKey: Observable_[KeyDescriptor]
+    var numberKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any
     
     /**
       * The event-flow of the `spaceKey`-event.
       */
-    var spaceKey: Observable_[KeyDescriptor]
+    var spaceKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any
   }
   object Events {
     
     inline def apply(
-      aKey: Observable_[KeyDescriptor],
-      iKey: Observable_[KeyDescriptor],
-      keypress: Observable_[KeyDescriptor],
-      line: Observable_[String],
-      normalizedDownKey: Observable_[KeyDescriptor],
-      normalizedUpKey: Observable_[KeyDescriptor],
-      numberKey: Observable_[KeyDescriptor],
-      spaceKey: Observable_[KeyDescriptor]
+      aKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any,
+      iKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any,
+      keypress: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any,
+      line: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<string> */ Any,
+      normalizedDownKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any,
+      normalizedUpKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any,
+      numberKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any,
+      spaceKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any
     ): Events = {
       val __obj = js.Dynamic.literal(aKey = aKey.asInstanceOf[js.Any], iKey = iKey.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], normalizedDownKey = normalizedDownKey.asInstanceOf[js.Any], normalizedUpKey = normalizedUpKey.asInstanceOf[js.Any], numberKey = numberKey.asInstanceOf[js.Any], spaceKey = spaceKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[Events]
@@ -84,21 +77,37 @@ object eventsMod {
     
     extension [Self <: Events](x: Self) {
       
-      inline def setAKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "aKey", value.asInstanceOf[js.Any])
+      inline def setAKey(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any
+      ): Self = StObject.set(x, "aKey", value.asInstanceOf[js.Any])
       
-      inline def setIKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "iKey", value.asInstanceOf[js.Any])
+      inline def setIKey(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any
+      ): Self = StObject.set(x, "iKey", value.asInstanceOf[js.Any])
       
-      inline def setKeypress(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "keypress", value.asInstanceOf[js.Any])
+      inline def setKeypress(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any
+      ): Self = StObject.set(x, "keypress", value.asInstanceOf[js.Any])
       
-      inline def setLine(value: Observable_[String]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<string> */ Any
+      ): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      inline def setNormalizedDownKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "normalizedDownKey", value.asInstanceOf[js.Any])
+      inline def setNormalizedDownKey(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any
+      ): Self = StObject.set(x, "normalizedDownKey", value.asInstanceOf[js.Any])
       
-      inline def setNormalizedUpKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "normalizedUpKey", value.asInstanceOf[js.Any])
+      inline def setNormalizedUpKey(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any
+      ): Self = StObject.set(x, "normalizedUpKey", value.asInstanceOf[js.Any])
       
-      inline def setNumberKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "numberKey", value.asInstanceOf[js.Any])
+      inline def setNumberKey(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any
+      ): Self = StObject.set(x, "numberKey", value.asInstanceOf[js.Any])
       
-      inline def setSpaceKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "spaceKey", value.asInstanceOf[js.Any])
+      inline def setSpaceKey(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<KeyDescriptor> */ Any
+      ): Self = StObject.set(x, "spaceKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,7 +117,7 @@ object eventsMod {
   trait KeyDescriptor extends StObject {
     
     /**
-      * Thedescription of the key.
+      * The description of the key.
       */
     var key: Key
     

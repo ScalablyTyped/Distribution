@@ -11,9 +11,9 @@ Jcrop Javascript Image Cropper
 | Full name          | jquery-jcrop |
 | Keywords           | jcrop, image, cropping, ui |
 | # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 359801 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 21109.333333333332 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/tapmodo/Jcrop#readme)

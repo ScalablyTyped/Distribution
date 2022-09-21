@@ -51,7 +51,7 @@ object CreateDomainAssociationRequest {
     
     inline def setAutoSubDomainCreationPatternsUndefined: Self = StObject.set(x, "autoSubDomainCreationPatterns", js.undefined)
     
-    inline def setAutoSubDomainCreationPatternsVarargs(value: AutoSubDomainCreationPattern*): Self = StObject.set(x, "autoSubDomainCreationPatterns", js.Array(value :_*))
+    inline def setAutoSubDomainCreationPatternsVarargs(value: AutoSubDomainCreationPattern*): Self = StObject.set(x, "autoSubDomainCreationPatterns", js.Array(value*))
     
     inline def setAutoSubDomainIAMRole(value: AutoSubDomainIAMRole): Self = StObject.set(x, "autoSubDomainIAMRole", value.asInstanceOf[js.Any])
     
@@ -65,6 +65,6 @@ object CreateDomainAssociationRequest {
     
     inline def setSubDomainSettings(value: SubDomainSettings): Self = StObject.set(x, "subDomainSettings", value.asInstanceOf[js.Any])
     
-    inline def setSubDomainSettingsVarargs(value: SubDomainSetting*): Self = StObject.set(x, "subDomainSettings", js.Array(value :_*))
+    inline def setSubDomainSettingsVarargs(value: SubDomainSetting*): Self = StObject.set(x, "subDomainSettings", js.Array(value*))
   }
 }

@@ -8,5 +8,5 @@ object precisionDateMod {
   
   @JSImport("babylonjs/Misc/precisionDate", "PrecisionDate")
   @js.native
-  class PrecisionDate () extends StObject
+  open class PrecisionDate () extends StObject
 }

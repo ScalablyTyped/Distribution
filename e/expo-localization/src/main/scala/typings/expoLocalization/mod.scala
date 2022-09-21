@@ -11,7 +11,23 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("expo-localization", "currency")
+  @js.native
+  val currency: String | Null = js.native
+  
+  @JSImport("expo-localization", "decimalSeparator")
+  @js.native
+  val decimalSeparator: String = js.native
+  
+  @JSImport("expo-localization", "digitGroupingSeparator")
+  @js.native
+  val digitGroupingSeparator: String = js.native
+  
   inline def getLocalizationAsync(): js.Promise[Localization] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalizationAsync")().asInstanceOf[js.Promise[Localization]]
+  
+  @JSImport("expo-localization", "isMetric")
+  @js.native
+  val isMetric: Boolean = js.native
   
   @JSImport("expo-localization", "isRTL")
   @js.native

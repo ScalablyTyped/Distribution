@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "semver-diff" : "3.1.1"
+      "semver-diff" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "semver-diff" : "3.1.1"
+      "semver-diff" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

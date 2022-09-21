@@ -29,7 +29,7 @@ object ListFunctionDefinitionsResponse {
     
     inline def setDefinitionsUndefined: Self = StObject.set(x, "Definitions", js.undefined)
     
-    inline def setDefinitionsVarargs(value: DefinitionInformation*): Self = StObject.set(x, "Definitions", js.Array(value :_*))
+    inline def setDefinitionsVarargs(value: DefinitionInformation*): Self = StObject.set(x, "Definitions", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

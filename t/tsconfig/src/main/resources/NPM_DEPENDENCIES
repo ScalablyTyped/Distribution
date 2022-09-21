@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "tsconfig" : "7.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "tsconfig" : "7.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

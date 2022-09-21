@@ -32,7 +32,7 @@ object XTextAppend {
     insertString: (XTextRange, String, Boolean) => Unit,
     insertTextContent: (XTextRange, XTextContent, Boolean) => Unit,
     insertTextPortion: (String, PropertyValues, XTextRange) => XTextRange,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeTextContent: XTextContent => Unit,
     setString: String => Unit

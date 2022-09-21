@@ -2,10 +2,10 @@ package typings.wordpressCoreData
 
 import typings.std.IterableIterator
 import typings.std.Record
-import typings.wordpressApiFetch.anon.Formats
-import typings.wordpressApiFetch.mod.Schema.User
+import typings.wordpressCoreData.anon.Formats
 import typings.wordpressCoreData.mod.Autosave
 import typings.wordpressCoreData.mod.Entity
+import typings.wordpressCoreData.schemaMod.Schema.User
 import typings.wordpressCoreData.wordpressCoreDataStrings.view
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,37 +24,32 @@ object actionsMod {
   
   inline def receiveCurrentUser_view(currentUser: User[view]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("receiveCurrentUser")(currentUser.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def receiveEmbedPreview(url: String, preview: Record[String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveEmbedPreview")(url.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def receiveEmbedPreview(url: String, preview: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveEmbedPreview")(url.asInstanceOf[js.Any], preview.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def receiveEntityRecords(kind: String, name: String, records: js.Array[Record[String, js.Any]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveEntityRecords")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any], records.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def receiveEntityRecords(kind: String, name: String, records: js.Array[Record[String, Any]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveEntityRecords")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any], records.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def receiveEntityRecords(
     kind: String,
     name: String,
-    records: js.Array[Record[String, js.Any]],
+    records: js.Array[Record[String, Any]],
     query: Unit,
     invalidateCache: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveEntityRecords")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any], records.asInstanceOf[js.Any], query.asInstanceOf[js.Any], invalidateCache.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def receiveEntityRecords(kind: String, name: String, records: js.Array[Record[String, Any]], query: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveEntityRecords")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any], records.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def receiveEntityRecords(
     kind: String,
     name: String,
-    records: js.Array[Record[String, js.Any]],
-    query: Record[String, js.Any]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveEntityRecords")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any], records.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def receiveEntityRecords(
-    kind: String,
-    name: String,
-    records: js.Array[Record[String, js.Any]],
-    query: Record[String, js.Any],
+    records: js.Array[Record[String, Any]],
+    query: Record[String, Any],
     invalidateCache: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveEntityRecords")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any], records.asInstanceOf[js.Any], query.asInstanceOf[js.Any], invalidateCache.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def receiveEntityRecords(kind: String, name: String, records: Record[String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveEntityRecords")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any], records.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def receiveEntityRecords(kind: String, name: String, records: Record[String, js.Any], query: Unit, invalidateCache: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveEntityRecords")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any], records.asInstanceOf[js.Any], query.asInstanceOf[js.Any], invalidateCache.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def receiveEntityRecords(kind: String, name: String, records: Record[String, js.Any], query: Record[String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveEntityRecords")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any], records.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def receiveEntityRecords(kind: String, name: String, records: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveEntityRecords")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any], records.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def receiveEntityRecords(kind: String, name: String, records: Record[String, Any], query: Unit, invalidateCache: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveEntityRecords")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any], records.asInstanceOf[js.Any], query.asInstanceOf[js.Any], invalidateCache.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def receiveEntityRecords(kind: String, name: String, records: Record[String, Any], query: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveEntityRecords")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any], records.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def receiveEntityRecords(
     kind: String,
     name: String,
-    records: Record[String, js.Any],
-    query: Record[String, js.Any],
+    records: Record[String, Any],
+    query: Record[String, Any],
     invalidateCache: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveEntityRecords")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any], records.asInstanceOf[js.Any], query.asInstanceOf[js.Any], invalidateCache.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -67,5 +62,5 @@ object actionsMod {
   inline def receiveUserQuery_view(queryID: String, users: js.Array[User[view]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveUserQuery")(queryID.asInstanceOf[js.Any], users.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def receiveUserQuery_view(queryID: String, users: User[view]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("receiveUserQuery")(queryID.asInstanceOf[js.Any], users.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def saveEntityRecord(kind: String, name: String, record: Record[String, js.Any]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("saveEntityRecord")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any], record.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
+  inline def saveEntityRecord(kind: String, name: String, record: Record[String, Any]): IterableIterator[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("saveEntityRecord")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any], record.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[Unit]]
 }

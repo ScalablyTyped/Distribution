@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `20` extends StObject {
   
-  var hover: js.UndefOr[BackgroundExtend] = js.undefined
+  var border: js.UndefOr[ColorSideSize] = js.undefined
 }
 object `20` {
   
@@ -17,8 +17,8 @@ object `20` {
   
   extension [Self <: `20`](x: Self) {
     
-    inline def setHover(value: BackgroundExtend): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setBorder(value: ColorSideSize): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
   }
 }

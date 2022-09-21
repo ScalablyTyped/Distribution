@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "ContextualMenuBase")
 @js.native
-class ContextualMenuBase protected ()
+open class ContextualMenuBase protected ()
   extends typings.officeUiFabricReact.mod.ContextualMenuBase {
   def this(props: IContextualMenuProps) = this()
 }

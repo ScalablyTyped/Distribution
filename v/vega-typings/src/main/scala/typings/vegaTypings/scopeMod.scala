@@ -50,13 +50,13 @@ object scopeMod {
       
       inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
-      inline def setAxesVarargs(value: Axis*): Self = StObject.set(x, "axes", js.Array(value :_*))
+      inline def setAxesVarargs(value: Axis*): Self = StObject.set(x, "axes", js.Array(value*))
       
       inline def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
@@ -66,31 +66,31 @@ object scopeMod {
       
       inline def setLegendsUndefined: Self = StObject.set(x, "legends", js.undefined)
       
-      inline def setLegendsVarargs(value: Legend*): Self = StObject.set(x, "legends", js.Array(value :_*))
+      inline def setLegendsVarargs(value: Legend*): Self = StObject.set(x, "legends", js.Array(value*))
       
       inline def setMarks(value: js.Array[Mark]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
       
       inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
       
-      inline def setMarksVarargs(value: Mark*): Self = StObject.set(x, "marks", js.Array(value :_*))
+      inline def setMarksVarargs(value: Mark*): Self = StObject.set(x, "marks", js.Array(value*))
       
       inline def setProjections(value: js.Array[Projection]): Self = StObject.set(x, "projections", value.asInstanceOf[js.Any])
       
       inline def setProjectionsUndefined: Self = StObject.set(x, "projections", js.undefined)
       
-      inline def setProjectionsVarargs(value: Projection*): Self = StObject.set(x, "projections", js.Array(value :_*))
+      inline def setProjectionsVarargs(value: Projection*): Self = StObject.set(x, "projections", js.Array(value*))
       
       inline def setScales(value: js.Array[Scale]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
       
       inline def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
       
-      inline def setScalesVarargs(value: Scale*): Self = StObject.set(x, "scales", js.Array(value :_*))
+      inline def setScalesVarargs(value: Scale*): Self = StObject.set(x, "scales", js.Array(value*))
       
       inline def setSignals(value: js.Array[Signal]): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
       
       inline def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
       
-      inline def setSignalsVarargs(value: Signal*): Self = StObject.set(x, "signals", js.Array(value :_*))
+      inline def setSignalsVarargs(value: Signal*): Self = StObject.set(x, "signals", js.Array(value*))
       
       inline def setTitle(value: String | Title): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

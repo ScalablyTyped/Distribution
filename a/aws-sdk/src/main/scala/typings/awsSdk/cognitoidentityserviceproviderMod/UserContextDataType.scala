@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UserContextDataType extends StObject {
   
   /**
-    * Contextual data such as the user's device fingerprint, IP address, or location used for evaluating the risk of an unexpected event by Amazon Cognito advanced security.
+    * Encoded device-fingerprint details that your app collected with the Amazon Cognito context data collection library. For more information, see Adding user device and session data to API requests.
     */
   var EncodedData: js.UndefOr[StringType] = js.undefined
+  
+  /**
+    * The source IP address of your user's device.
+    */
+  var IpAddress: js.UndefOr[StringType] = js.undefined
 }
 object UserContextDataType {
   
@@ -23,5 +28,9 @@ object UserContextDataType {
     inline def setEncodedData(value: StringType): Self = StObject.set(x, "EncodedData", value.asInstanceOf[js.Any])
     
     inline def setEncodedDataUndefined: Self = StObject.set(x, "EncodedData", js.undefined)
+    
+    inline def setIpAddress(value: StringType): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
+    
+    inline def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
   }
 }

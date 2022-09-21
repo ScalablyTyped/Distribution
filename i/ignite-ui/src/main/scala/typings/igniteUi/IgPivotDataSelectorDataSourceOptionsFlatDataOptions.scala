@@ -10,12 +10,12 @@ trait IgPivotDataSelectorDataSourceOptionsFlatDataOptions
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself.
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
@@ -54,7 +54,7 @@ object IgPivotDataSelectorDataSourceOptionsFlatDataOptions {
   
   extension [Self <: IgPivotDataSelectorDataSourceOptionsFlatDataOptions](x: Self) {
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     

@@ -3,7 +3,6 @@ package typings.walkdir
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
 import typings.node.fsMod.Stats
-import typings.std.Error
 import typings.walkdir.anon.WalkOptionsreturnobjectbo
 import typings.walkdir.anon.WalkOptionsreturnobjectfa
 import typings.walkdir.anon.WalkOptionsreturnobjecttr
@@ -129,12 +128,12 @@ object mod {
       * emitted if there is an error from the file system reading the initial or target directory
       */
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* error */ Error, Unit]): WalkEmitter = js.native
+    def on_error(event: error, listener: js.Function1[/* error */ js.Error, Unit]): WalkEmitter = js.native
     /**
       *  emitted when there is an error from the filesystem reading as nested path.
       */
     @JSName("on")
-    def on_fail(event: fail, listener: js.Function2[/* path */ String, /* error */ Error, Unit]): WalkEmitter = js.native
+    def on_fail(event: fail, listener: js.Function2[/* path */ String, /* error */ js.Error, Unit]): WalkEmitter = js.native
     /**
       * found a fifo
       */
@@ -220,7 +219,7 @@ object mod {
     /**
       * provide an alternate implementation of fs like graceful-fs
       */
-    var fs: js.UndefOr[js.Any] = js.undefined
+    var fs: js.UndefOr[Any] = js.undefined
     
     /**
       * only travel to max depth. emits an error if hit.
@@ -277,7 +276,7 @@ object mod {
       
       inline def setFollow_symlinksUndefined: Self = StObject.set(x, "follow_symlinks", js.undefined)
       
-      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       

@@ -9,11 +9,11 @@ Repeat a string - fast
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | repeating |
-| Keywords           | repeat, string, repeating, str, text, fill, pad |
-| # releases         | 0 |
-| # dependents       | 140 |
-| # downloads        | 423279103 |
-| # stars            | 2 |
+| Keywords           | repeat, string, repeating, text, fill, pad |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.1818841E7 |
+| # stars            | 32.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/repeating#readme)

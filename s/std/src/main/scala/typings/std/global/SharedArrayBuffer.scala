@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("SharedArrayBuffer")
 @js.native
-class SharedArrayBuffer protected ()
+open class SharedArrayBuffer protected ()
   extends StObject
      with typings.std.SharedArrayBuffer {
+  /* standard es2017.sharedmemory */
   def this(byteLength: Double) = this()
 }
 object SharedArrayBuffer {

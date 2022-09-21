@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A FindingTypeStats resource represents stats regarding a specific
-  * FindingType of Findings under a given ScanRun.
-  */
 trait SchemaFindingTypeStats extends StObject {
   
   /**
-    * Output only. The count of findings belonging to this finding type.
+    * The count of findings belonging to this finding type.
     */
-  var findingCount: js.UndefOr[Double] = js.undefined
+  var findingCount: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Output only. The finding type associated with the stats.
+    * The finding type associated with the stats.
     */
-  var findingType: js.UndefOr[String] = js.undefined
+  var findingType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFindingTypeStats {
   
@@ -31,9 +27,13 @@ object SchemaFindingTypeStats {
     
     inline def setFindingCount(value: Double): Self = StObject.set(x, "findingCount", value.asInstanceOf[js.Any])
     
+    inline def setFindingCountNull: Self = StObject.set(x, "findingCount", null)
+    
     inline def setFindingCountUndefined: Self = StObject.set(x, "findingCount", js.undefined)
     
     inline def setFindingType(value: String): Self = StObject.set(x, "findingType", value.asInstanceOf[js.Any])
+    
+    inline def setFindingTypeNull: Self = StObject.set(x, "findingType", null)
     
     inline def setFindingTypeUndefined: Self = StObject.set(x, "findingType", js.undefined)
   }

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NotificationChannel extends StObject {
   
+  /** Record of the creation of this channel. */
+  var creationRecord: js.UndefOr[MutationRecord] = js.undefined
+  
   /**
     * An optional human-readable description of this notification channel. This description may provide additional details, beyond the display name, for the channel. This may not exceed
     * 1024 Unicode characters.
@@ -33,8 +36,11 @@ trait NotificationChannel extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.NotificationChannel & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.NotificationChannel & TopLevel[Any]
   ] = js.undefined
+  
+  /** Records of the modification of this channel. */
+  var mutationRecords: js.UndefOr[js.Array[MutationRecord]] = js.undefined
   
   /**
     * The full REST resource name for this channel. The format is: projects/[PROJECT_ID_OR_NUMBER]/notificationChannels/[CHANNEL_ID] The [CHANNEL_ID] is automatically assigned by the
@@ -53,7 +59,7 @@ trait NotificationChannel extends StObject {
   var userLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.NotificationChannel & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.NotificationChannel & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -74,6 +80,10 @@ object NotificationChannel {
   
   extension [Self <: NotificationChannel](x: Self) {
     
+    inline def setCreationRecord(value: MutationRecord): Self = StObject.set(x, "creationRecord", value.asInstanceOf[js.Any])
+    
+    inline def setCreationRecordUndefined: Self = StObject.set(x, "creationRecord", js.undefined)
+    
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
@@ -89,10 +99,16 @@ object NotificationChannel {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.NotificationChannel & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.NotificationChannel & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setMutationRecords(value: js.Array[MutationRecord]): Self = StObject.set(x, "mutationRecords", value.asInstanceOf[js.Any])
+    
+    inline def setMutationRecordsUndefined: Self = StObject.set(x, "mutationRecords", js.undefined)
+    
+    inline def setMutationRecordsVarargs(value: MutationRecord*): Self = StObject.set(x, "mutationRecords", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -105,7 +121,7 @@ object NotificationChannel {
     inline def setUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.NotificationChannel & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.NotificationChannel & TopLevel[Any]
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
     inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)

@@ -39,6 +39,6 @@ object ListWorkersWithQualificationTypeResponse {
     
     inline def setQualificationsUndefined: Self = StObject.set(x, "Qualifications", js.undefined)
     
-    inline def setQualificationsVarargs(value: Qualification*): Self = StObject.set(x, "Qualifications", js.Array(value :_*))
+    inline def setQualificationsVarargs(value: Qualification*): Self = StObject.set(x, "Qualifications", js.Array(value*))
   }
 }

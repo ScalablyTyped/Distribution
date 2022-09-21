@@ -22,7 +22,7 @@ object iconMod {
       */
     @JSImport("@jupyterlab/ui-components/lib/icon", "CommandPaletteSvg.Renderer")
     @js.native
-    class Renderer ()
+    open class Renderer ()
       extends typings.jupyterlabUiComponents.widgetsMod.CommandPaletteSvg.Renderer
     
     @JSImport("@jupyterlab/ui-components/lib/icon", "CommandPaletteSvg.defaultRenderer")
@@ -32,7 +32,7 @@ object iconMod {
   
   @JSImport("@jupyterlab/ui-components/lib/icon", "ContextMenuSvg")
   @js.native
-  class ContextMenuSvg protected ()
+  open class ContextMenuSvg protected ()
     extends typings.jupyterlabUiComponents.widgetsMod.ContextMenuSvg {
     /**
       * Construct a new context menu.
@@ -49,9 +49,9 @@ object iconMod {
     *
     * @param options - The options for initializing the panel.
     */
-  class DockPanelSvg ()
+  open class DockPanelSvg ()
     extends typings.jupyterlabUiComponents.widgetsMod.DockPanelSvg {
-    def this(options: typings.luminoWidgets.dockpanelMod.DockPanel.IOptions) = this()
+    def this(options: typings.jupyterlabUiComponents.tabbarsvgMod.DockPanelSvg.IOptions) = this()
   }
   object DockPanelSvg {
     
@@ -60,7 +60,7 @@ object iconMod {
       */
     @JSImport("@jupyterlab/ui-components/lib/icon", "DockPanelSvg.Renderer")
     @js.native
-    class Renderer ()
+    open class Renderer ()
       extends typings.jupyterlabUiComponents.widgetsMod.DockPanelSvg.Renderer
     
     @JSImport("@jupyterlab/ui-components/lib/icon", "DockPanelSvg.defaultRenderer")
@@ -70,7 +70,7 @@ object iconMod {
   
   @JSImport("@jupyterlab/ui-components/lib/icon", "LabIcon")
   @js.native
-  class LabIcon protected ()
+  open class LabIcon protected ()
     extends typings.jupyterlabUiComponents.labiconMod.LabIcon {
     /** *********
       * members *
@@ -86,13 +86,13 @@ object iconMod {
     
     @JSImport("@jupyterlab/ui-components/lib/icon", "LabIcon._debug")
     @js.native
-    def _debug: js.Any = js.native
-    inline def _debug_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_debug")(x.asInstanceOf[js.Any])
+    def _debug: Any = js.native
+    inline def _debug_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_debug")(x.asInstanceOf[js.Any])
     
     @JSImport("@jupyterlab/ui-components/lib/icon", "LabIcon._instances")
     @js.native
-    def _instances: js.Any = js.native
-    inline def _instances_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instances")(x.asInstanceOf[js.Any])
+    def _instances: Any = js.native
+    inline def _instances_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instances")(x.asInstanceOf[js.Any])
     
     /** *********
       * statics *
@@ -180,7 +180,7 @@ object iconMod {
   
   @JSImport("@jupyterlab/ui-components/lib/icon", "MenuSvg")
   @js.native
-  class MenuSvg protected ()
+  open class MenuSvg protected ()
     extends typings.jupyterlabUiComponents.widgetsMod.MenuSvg {
     /**
       * construct a new menu. Overrides the default renderer
@@ -200,10 +200,7 @@ object iconMod {
       */
     @JSImport("@jupyterlab/ui-components/lib/icon", "MenuSvg.Renderer")
     @js.native
-    /**
-      * Construct a new renderer.
-      */
-    class Renderer ()
+    open class Renderer ()
       extends typings.jupyterlabUiComponents.widgetsMod.MenuSvg.Renderer
     
     @JSImport("@jupyterlab/ui-components/lib/icon", "MenuSvg.defaultRenderer")
@@ -220,9 +217,9 @@ object iconMod {
     *
     * @param options - The options for initializing the tab bar.
     */
-  class TabBarSvg[T] ()
+  open class TabBarSvg[T] ()
     extends typings.jupyterlabUiComponents.widgetsMod.TabBarSvg[T] {
-    def this(options: typings.luminoWidgets.tabbarMod.TabBar.IOptions[T]) = this()
+    def this(options: typings.jupyterlabUiComponents.tabbarsvgMod.TabBarSvg.IOptions[T]) = this()
   }
   object TabBarSvg {
     
@@ -231,16 +228,33 @@ object iconMod {
       */
     @JSImport("@jupyterlab/ui-components/lib/icon", "TabBarSvg.Renderer")
     @js.native
-    /**
-      * Construct a new renderer.
-      */
-    class Renderer ()
+    open class Renderer ()
       extends typings.jupyterlabUiComponents.widgetsMod.TabBarSvg.Renderer
     
     @JSImport("@jupyterlab/ui-components/lib/icon", "TabBarSvg.defaultRenderer")
     @js.native
     val defaultRenderer: typings.jupyterlabUiComponents.tabbarsvgMod.TabBarSvg.Renderer = js.native
   }
+  
+  @JSImport("@jupyterlab/ui-components/lib/icon", "TabPanelSvg")
+  @js.native
+  /**
+    * Construct a new tab panel.
+    *
+    * @param options - The options for initializing the tab panel.
+    */
+  open class TabPanelSvg ()
+    extends typings.jupyterlabUiComponents.widgetsMod.TabPanelSvg {
+    def this(options: typings.luminoWidgets.tabpanelMod.TabPanel.IOptions) = this()
+  }
+  
+  @JSImport("@jupyterlab/ui-components/lib/icon", "addAboveIcon")
+  @js.native
+  val addAboveIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
+  @JSImport("@jupyterlab/ui-components/lib/icon", "addBelowIcon")
+  @js.native
+  val addBelowIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components/lib/icon", "addIcon")
   @js.native
@@ -253,6 +267,10 @@ object iconMod {
   @JSImport("@jupyterlab/ui-components/lib/icon", "blankIcon")
   @js.native
   val blankIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
+  @JSImport("@jupyterlab/ui-components/lib/icon", "bugDotIcon")
+  @js.native
+  val bugDotIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components/lib/icon", "bugIcon")
   @js.native
@@ -314,6 +332,10 @@ object iconMod {
   @js.native
   val closeIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
+  @JSImport("@jupyterlab/ui-components/lib/icon", "codeIcon")
+  @js.native
+  val codeIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
   @JSImport("@jupyterlab/ui-components/lib/icon", "consoleIcon")
   @js.native
   val consoleIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
@@ -322,13 +344,25 @@ object iconMod {
   @js.native
   val copyIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
+  @JSImport("@jupyterlab/ui-components/lib/icon", "copyrightIcon")
+  @js.native
+  val copyrightIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
   @JSImport("@jupyterlab/ui-components/lib/icon", "cutIcon")
   @js.native
   val cutIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
+  @JSImport("@jupyterlab/ui-components/lib/icon", "deleteIcon")
+  @js.native
+  val deleteIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
   @JSImport("@jupyterlab/ui-components/lib/icon", "downloadIcon")
   @js.native
   val downloadIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
+  @JSImport("@jupyterlab/ui-components/lib/icon", "duplicateIcon")
+  @js.native
+  val duplicateIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components/lib/icon", "editIcon")
   @js.native
@@ -358,9 +392,17 @@ object iconMod {
   @js.native
   val filterListIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
+  @JSImport("@jupyterlab/ui-components/lib/icon", "folderFavoriteIcon")
+  @js.native
+  val folderFavoriteIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
   @JSImport("@jupyterlab/ui-components/lib/icon", "folderIcon")
   @js.native
   val folderIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
+  @JSImport("@jupyterlab/ui-components/lib/icon", "homeIcon")
+  @js.native
+  val homeIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components/lib/icon", "html5Icon")
   @js.native
@@ -377,6 +419,10 @@ object iconMod {
   @JSImport("@jupyterlab/ui-components/lib/icon", "jsonIcon")
   @js.native
   val jsonIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
+  @JSImport("@jupyterlab/ui-components/lib/icon", "juliaIcon")
+  @js.native
+  val juliaIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components/lib/icon", "jupyterFaviconIcon")
   @js.native
@@ -397,6 +443,10 @@ object iconMod {
   @JSImport("@jupyterlab/ui-components/lib/icon", "keyboardIcon")
   @js.native
   val keyboardIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
+  @JSImport("@jupyterlab/ui-components/lib/icon", "launchIcon")
+  @js.native
+  val launchIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components/lib/icon", "launcherIcon")
   @js.native
@@ -422,6 +472,14 @@ object iconMod {
   @js.native
   val markdownIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
+  @JSImport("@jupyterlab/ui-components/lib/icon", "moveDownIcon")
+  @js.native
+  val moveDownIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
+  @JSImport("@jupyterlab/ui-components/lib/icon", "moveUpIcon")
+  @js.native
+  val moveUpIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
   @JSImport("@jupyterlab/ui-components/lib/icon", "newFolderIcon")
   @js.native
   val newFolderIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
@@ -434,6 +492,14 @@ object iconMod {
   @js.native
   val notebookIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
+  @JSImport("@jupyterlab/ui-components/lib/icon", "numberingIcon")
+  @js.native
+  val numberingIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
+  @JSImport("@jupyterlab/ui-components/lib/icon", "offlineBoltIcon")
+  @js.native
+  val offlineBoltIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
   @JSImport("@jupyterlab/ui-components/lib/icon", "paletteIcon")
   @js.native
   val paletteIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
@@ -441,6 +507,10 @@ object iconMod {
   @JSImport("@jupyterlab/ui-components/lib/icon", "pasteIcon")
   @js.native
   val pasteIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
+  @JSImport("@jupyterlab/ui-components/lib/icon", "pdfIcon")
+  @js.native
+  val pdfIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components/lib/icon", "pythonIcon")
   @js.native
@@ -498,6 +568,14 @@ object iconMod {
   @js.native
   val tabIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
+  @JSImport("@jupyterlab/ui-components/lib/icon", "tableRowsIcon")
+  @js.native
+  val tableRowsIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
+  @JSImport("@jupyterlab/ui-components/lib/icon", "tagIcon")
+  @js.native
+  val tagIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
   @JSImport("@jupyterlab/ui-components/lib/icon", "terminalIcon")
   @js.native
   val terminalIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
@@ -505,6 +583,14 @@ object iconMod {
   @JSImport("@jupyterlab/ui-components/lib/icon", "textEditorIcon")
   @js.native
   val textEditorIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
+  @JSImport("@jupyterlab/ui-components/lib/icon", "tocIcon")
+  @js.native
+  val tocIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
+  
+  @JSImport("@jupyterlab/ui-components/lib/icon", "treeViewIcon")
+  @js.native
+  val treeViewIcon: typings.jupyterlabUiComponents.labiconMod.LabIcon = js.native
   
   @JSImport("@jupyterlab/ui-components/lib/icon", "trustedIcon")
   @js.native

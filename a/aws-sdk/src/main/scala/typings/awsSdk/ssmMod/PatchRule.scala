@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PatchRule extends StObject {
   
   /**
-    * The number of days after the release date of each patch matched by the rule that the patch is marked as approved in the patch baseline. For example, a value of 7 means that patches are approved seven days after they are released. Not supported on Ubuntu Server.
+    * The number of days after the release date of each patch matched by the rule that the patch is marked as approved in the patch baseline. For example, a value of 7 means that patches are approved seven days after they are released. Not supported on Debian Server or Ubuntu Server.
     */
   var ApproveAfterDays: js.UndefOr[typings.awsSdk.ssmMod.ApproveAfterDays] = js.undefined
   
   /**
-    * The cutoff date for auto approval of released patches. Any patches released on or before this date are installed automatically. Not supported on Ubuntu Server. Enter dates in the format YYYY-MM-DD. For example, 2020-12-31.
+    * The cutoff date for auto approval of released patches. Any patches released on or before this date are installed automatically. Not supported on Debian Server or Ubuntu Server. Enter dates in the format YYYY-MM-DD. For example, 2021-12-31.
     */
   var ApproveUntilDate: js.UndefOr[PatchStringDateTime] = js.undefined
   
@@ -22,7 +22,7 @@ trait PatchRule extends StObject {
   var ComplianceLevel: js.UndefOr[PatchComplianceLevel] = js.undefined
   
   /**
-    * For instances identified by the approval rule filters, enables a patch baseline to apply non-security updates available in the specified repository. The default value is 'false'. Applies to Linux instances only.
+    * For managed nodes identified by the approval rule filters, enables a patch baseline to apply non-security updates available in the specified repository. The default value is false. Applies to Linux managed nodes only.
     */
   var EnableNonSecurity: js.UndefOr[Boolean] = js.undefined
   

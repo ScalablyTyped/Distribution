@@ -1,7 +1,7 @@
 
 # Scala.js typings for ping
 
-Typings are for version 0.2
+Typings are for version 0.4
 
 ## Library description:
 a simple wrapper for ping
@@ -10,10 +10,10 @@ a simple wrapper for ping
 | ------------------ | :-------------: |
 | Full name          | ping |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 174 |
-| # downloads        | 1403444 |
-| # stars            | 9 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 127033.33333333333 |
+| # stars            | 278.0 |
 
 ## Links
 - [Homepage](http://github.com/danielzzz/node-ping)

@@ -36,7 +36,7 @@ object GetConformancePackComplianceDetailsResponse {
     
     inline def setConformancePackRuleEvaluationResultsUndefined: Self = StObject.set(x, "ConformancePackRuleEvaluationResults", js.undefined)
     
-    inline def setConformancePackRuleEvaluationResultsVarargs(value: ConformancePackEvaluationResult*): Self = StObject.set(x, "ConformancePackRuleEvaluationResults", js.Array(value :_*))
+    inline def setConformancePackRuleEvaluationResultsVarargs(value: ConformancePackEvaluationResult*): Self = StObject.set(x, "ConformancePackRuleEvaluationResults", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

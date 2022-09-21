@@ -10,15 +10,12 @@ List of AWS Regions and Availability Zones
 | ------------------ | :-------------: |
 | Full name          | aws-regions |
 | Keywords           | aws, amazon, regions, availability, zones, azs, global, infrastructure |
-| # releases         | 6 |
-| # dependents       | 8 |
-| # downloads        | 15024 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5720.333333333333 |
+| # stars            | 111.0 |
 
 ## Links
-- [Homepage](https://github.com/jsonmaur/aws-regions#readme)
-- [Bugs](https://github.com/jsonmaur/aws-regions/issues)
-- [Repository](https://github.com/jsonmaur/aws-regions)
 - [Npm](https://www.npmjs.com/package/aws-regions)
     
 

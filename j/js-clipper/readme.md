@@ -9,10 +9,10 @@ common.js compatible version of JSClipper
 | ------------------ | :-------------: |
 | Full name          | js-clipper |
 | Keywords           | JsClipper, js-clipper, clipperlib |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 39752 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7310.666666666667 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/mathisonian/JsClipper)

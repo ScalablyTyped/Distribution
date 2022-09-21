@@ -1,6 +1,5 @@
 package typings.uirouterCore
 
-import typings.std.RegExp
 import typings.uirouterCore.anon.Priority
 import typings.uirouterCore.interfaceMod.Disposable
 import typings.uirouterCore.routerMod.UIRouter
@@ -18,24 +17,24 @@ object urlRulesMod {
   
   @JSImport("@uirouter/core/lib/url/urlRules", "UrlRules")
   @js.native
-  class UrlRules protected ()
+  open class UrlRules protected ()
     extends StObject
        with Disposable {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
     
-    /** @internal */ /* private */ var _id: js.Any = js.native
+    /** @internal */ /* private */ var _id: Any = js.native
     
-    /** @internal */ /* private */ var _otherwiseFn: js.Any = js.native
+    /** @internal */ /* private */ var _otherwiseFn: Any = js.native
     
-    /** @internal */ /* private */ var _rules: js.Any = js.native
+    /** @internal */ /* private */ var _rules: Any = js.native
     
-    /** @internal */ /* private */ var _sortFn: js.Any = js.native
+    /** @internal */ /* private */ var _sortFn: Any = js.native
     
-    /** @internal */ /* private */ var _sorted: js.Any = js.native
+    /** @internal */ /* private */ var _sorted: Any = js.native
     
     /** @internal */
-    /* private */ var ensureSorted: js.Any = js.native
+    /* private */ var ensureSorted: Any = js.native
     
     /**
       * Defines the initial state, path, or behavior to use when the app starts.
@@ -130,9 +129,9 @@ object urlRulesMod {
       *
       * @param rule the matcher rule that was previously registered using [[rule]]
       */
-    def removeRule(rule: js.Any): Unit = js.native
+    def removeRule(rule: Any): Unit = js.native
     
-    /* private */ var router: js.Any = js.native
+    /* private */ var router: Any = js.native
     
     /**
       * Manually adds a URL Rule.
@@ -201,7 +200,7 @@ object urlRulesMod {
     def sort(compareFn: js.Function2[/* a */ UrlRule, /* b */ UrlRule, Double]): Unit = js.native
     
     /** @internal */
-    /* private */ var stableSort: js.Any = js.native
+    /* private */ var stableSort: Any = js.native
     
     /** used to create [[UrlRule]] objects for common cases */
     var urlRuleFactory: UrlRuleFactory = js.native
@@ -269,10 +268,10 @@ object urlRulesMod {
       *
       * @return the registered [[UrlRule]]
       */
-    def when(matcher: RegExp, handler: String): UrlRule = js.native
-    def when(matcher: RegExp, handler: String, options: Priority): UrlRule = js.native
-    def when(matcher: RegExp, handler: UrlRuleHandlerFn): UrlRule = js.native
-    def when(matcher: RegExp, handler: UrlRuleHandlerFn, options: Priority): UrlRule = js.native
+    def when(matcher: js.RegExp, handler: String): UrlRule = js.native
+    def when(matcher: js.RegExp, handler: String, options: Priority): UrlRule = js.native
+    def when(matcher: js.RegExp, handler: UrlRuleHandlerFn): UrlRule = js.native
+    def when(matcher: js.RegExp, handler: UrlRuleHandlerFn, options: Priority): UrlRule = js.native
     def when(matcher: UrlMatcher, handler: String): UrlRule = js.native
     def when(matcher: UrlMatcher, handler: String, options: Priority): UrlRule = js.native
     def when(matcher: UrlMatcher, handler: UrlRuleHandlerFn): UrlRule = js.native

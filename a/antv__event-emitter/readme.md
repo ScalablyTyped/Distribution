@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__event-emitter
 
-Typings are for version 0.1.2
+Typings are for version 0.1.3
 
 ## Library description:
 event emitter for antvis.
@@ -10,10 +10,10 @@ event emitter for antvis.
 | ------------------ | :-------------: |
 | Full name          | @antv/event-emitter |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 17 |
-| # downloads        | 769566 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 324572.3333333333 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/event-emitter#readme)

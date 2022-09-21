@@ -34,7 +34,7 @@ object ProductCategory {
     
     inline def setChildren(value: js.Array[ProductCategory]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: ProductCategory*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ProductCategory*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setHasChildren(value: Boolean): Self = StObject.set(x, "hasChildren", value.asInstanceOf[js.Any])
     

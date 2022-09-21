@@ -39,13 +39,13 @@ object Evaluation {
     
     inline def setApprovalRulesNotSatisfiedUndefined: Self = StObject.set(x, "approvalRulesNotSatisfied", js.undefined)
     
-    inline def setApprovalRulesNotSatisfiedVarargs(value: ApprovalRuleName*): Self = StObject.set(x, "approvalRulesNotSatisfied", js.Array(value :_*))
+    inline def setApprovalRulesNotSatisfiedVarargs(value: ApprovalRuleName*): Self = StObject.set(x, "approvalRulesNotSatisfied", js.Array(value*))
     
     inline def setApprovalRulesSatisfied(value: ApprovalRulesSatisfiedList): Self = StObject.set(x, "approvalRulesSatisfied", value.asInstanceOf[js.Any])
     
     inline def setApprovalRulesSatisfiedUndefined: Self = StObject.set(x, "approvalRulesSatisfied", js.undefined)
     
-    inline def setApprovalRulesSatisfiedVarargs(value: ApprovalRuleName*): Self = StObject.set(x, "approvalRulesSatisfied", js.Array(value :_*))
+    inline def setApprovalRulesSatisfiedVarargs(value: ApprovalRuleName*): Self = StObject.set(x, "approvalRulesSatisfied", js.Array(value*))
     
     inline def setApproved(value: Approved): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     

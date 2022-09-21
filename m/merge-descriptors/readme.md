@@ -10,10 +10,10 @@ Merge objects using descriptors
 | ------------------ | :-------------: |
 | Full name          | merge-descriptors |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 320 |
-| # downloads        | 642227747 |
-| # stars            | 18 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.075881666666667E7 |
+| # stars            | 119.0 |
 
 ## Links
 - [Homepage](https://github.com/component/merge-descriptors)

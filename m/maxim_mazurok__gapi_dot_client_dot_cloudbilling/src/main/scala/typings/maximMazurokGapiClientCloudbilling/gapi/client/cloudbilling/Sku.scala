@@ -59,7 +59,7 @@ object Sku {
     
     inline def setPricingInfoUndefined: Self = StObject.set(x, "pricingInfo", js.undefined)
     
-    inline def setPricingInfoVarargs(value: PricingInfo*): Self = StObject.set(x, "pricingInfo", js.Array(value :_*))
+    inline def setPricingInfoVarargs(value: PricingInfo*): Self = StObject.set(x, "pricingInfo", js.Array(value*))
     
     inline def setServiceProviderName(value: String): Self = StObject.set(x, "serviceProviderName", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object Sku {
     
     inline def setServiceRegionsUndefined: Self = StObject.set(x, "serviceRegions", js.undefined)
     
-    inline def setServiceRegionsVarargs(value: String*): Self = StObject.set(x, "serviceRegions", js.Array(value :_*))
+    inline def setServiceRegionsVarargs(value: String*): Self = StObject.set(x, "serviceRegions", js.Array(value*))
     
     inline def setSkuId(value: String): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
     

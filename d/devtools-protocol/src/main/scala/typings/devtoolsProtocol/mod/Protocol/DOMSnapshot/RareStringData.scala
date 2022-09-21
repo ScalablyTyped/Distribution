@@ -22,10 +22,10 @@ object RareStringData {
     
     inline def setIndex(value: js.Array[integer]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setIndexVarargs(value: integer*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: integer*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setValue(value: js.Array[StringIndex]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: StringIndex*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: StringIndex*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

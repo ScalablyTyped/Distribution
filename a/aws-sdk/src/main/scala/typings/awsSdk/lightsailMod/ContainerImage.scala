@@ -9,7 +9,7 @@ trait ContainerImage extends StObject {
   /**
     * The timestamp when the container image was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The digest of the container image.
@@ -30,7 +30,7 @@ object ContainerImage {
   
   extension [Self <: ContainerImage](x: Self) {
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     

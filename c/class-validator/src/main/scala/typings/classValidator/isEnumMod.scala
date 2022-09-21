@@ -19,5 +19,5 @@ object isEnumMod {
   inline def IsEnum_(entity: js.Object): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEnum")(entity.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def IsEnum_(entity: js.Object, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsEnum")(entity.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  inline def isEnum(value: js.Any, entity: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnum")(value.asInstanceOf[js.Any], entity.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isEnum(value: Any, entity: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnum")(value.asInstanceOf[js.Any], entity.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

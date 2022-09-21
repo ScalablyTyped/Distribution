@@ -1,7 +1,7 @@
 
 # Scala.js typings for plur
 
-Typings are for version 4.0.0
+Typings are for version 5.1.0
 
 ## Library description:
 Pluralize a word
@@ -10,10 +10,10 @@ Pluralize a word
 | ------------------ | :-------------: |
 | Full name          | plur |
 | Keywords           | plural, plurals, pluralize, singular, count, word, string, irregular, noun, nouns |
-| # releases         | 4 |
-| # dependents       | 108 |
-| # downloads        | 51526357 |
-| # stars            | 7 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5751927.333333333 |
+| # stars            | 186.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/plur#readme)

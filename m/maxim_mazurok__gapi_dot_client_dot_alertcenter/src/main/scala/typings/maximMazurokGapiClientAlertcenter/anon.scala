@@ -29,7 +29,7 @@ object anon {
     /** JSONP */
     var callback: js.UndefOr[String] = js.undefined
     
-    /** Optional. The unique identifier of the G Suite organization account of the customer the alert is associated with. Inferred from the caller identity if not provided. */
+    /** Optional. The unique identifier of the Google Workspace organization account of the customer the alert is associated with. Inferred from the caller identity if not provided. */
     var customerId: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
@@ -137,7 +137,10 @@ object anon {
     /** JSONP */
     var callback: js.UndefOr[String] = js.undefined
     
-    /** Optional. The unique identifier of the G Suite organization account of the customer the alert metadata is associated with. Inferred from the caller identity if not provided. */
+    /**
+      * Optional. The unique identifier of the Google Workspace organization account of the customer the alert metadata is associated with. Inferred from the caller identity if not
+      * provided.
+      */
     var customerId: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
@@ -240,15 +243,18 @@ object anon {
     /** JSONP */
     var callback: js.UndefOr[String] = js.undefined
     
-    /** Optional. The unique identifier of the G Suite organization account of the customer the alert feedback are associated with. Inferred from the caller identity if not provided. */
+    /**
+      * Optional. The unique identifier of the Google Workspace organization account of the customer the alert feedback are associated with. Inferred from the caller identity if not
+      * provided.
+      */
     var customerId: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
     var fields: js.UndefOr[String] = js.undefined
     
     /**
-      * Optional. A query string for filtering alert feedback results. For more details, see [Query filters](/admin-sdk/alertcenter/guides/query-filters) and [Supported query filter
-      * fields](/admin-sdk/alertcenter/reference/filter-fields#alerts.feedback.list).
+      * Optional. A query string for filtering alert feedback results. For more details, see [Query filters](https://developers.google.com/admin-sdk/alertcenter/guides/query-filters)
+      * and [Supported query filter fields](https://developers.google.com/admin-sdk/alertcenter/reference/filter-fields#alerts.feedback.list).
       */
     var filter: js.UndefOr[String] = js.undefined
     
@@ -446,15 +452,15 @@ object anon {
     /** JSONP */
     var callback: js.UndefOr[String] = js.undefined
     
-    /** Optional. The unique identifier of the G Suite organization account of the customer the alerts are associated with. Inferred from the caller identity if not provided. */
+    /** Optional. The unique identifier of the Google Workspace organization account of the customer the alerts are associated with. Inferred from the caller identity if not provided. */
     var customerId: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
     var fields: js.UndefOr[String] = js.undefined
     
     /**
-      * Optional. A query string for filtering alert results. For more details, see [Query filters](/admin-sdk/alertcenter/guides/query-filters) and [Supported query filter
-      * fields](/admin-sdk/alertcenter/reference/filter-fields#alerts.list).
+      * Optional. A query string for filtering alert results. For more details, see [Query filters](https://developers.google.com/admin-sdk/alertcenter/guides/query-filters) and
+      * [Supported query filter fields](https://developers.google.com/admin-sdk/alertcenter/reference/filter-fields#alerts.list).
       */
     var filter: js.UndefOr[String] = js.undefined
     
@@ -965,7 +971,10 @@ object anon {
     /** JSONP */
     var callback: js.UndefOr[String] = js.undefined
     
-    /** Optional. The unique identifier of the G Suite organization account of the customer the alert settings are associated with. Inferred from the caller identity if not provided. */
+    /**
+      * Optional. The unique identifier of the Google Workspace organization account of the customer the alert settings are associated with. Inferred from the caller identity if not
+      * provided.
+      */
     var customerId: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
@@ -1063,7 +1072,10 @@ object anon {
     /** JSONP */
     var callback: js.UndefOr[String] = js.undefined
     
-    /** Optional. The unique identifier of the G Suite organization account of the customer the alert settings are associated with. Inferred from the caller identity if not provided. */
+    /**
+      * Optional. The unique identifier of the Google Workspace organization account of the customer the alert settings are associated with. Inferred from the caller identity if not
+      * provided.
+      */
     var customerId: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */

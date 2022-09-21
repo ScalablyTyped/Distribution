@@ -22,7 +22,7 @@ trait GetAggregateConfigRuleComplianceSummaryRequest extends StObject {
   var GroupByKey: js.UndefOr[ConfigRuleComplianceSummaryGroupKey] = js.undefined
   
   /**
-    * The maximum number of evaluation results returned on each page. The default is 1000. You cannot specify a number greater than 1000. If you specify 0, AWS Config uses the default.
+    * The maximum number of evaluation results returned on each page. The default is 1000. You cannot specify a number greater than 1000. If you specify 0, Config uses the default.
     */
   var Limit: js.UndefOr[GroupByAPILimit] = js.undefined
   

@@ -19,7 +19,7 @@ object statisticMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("antd/lib/statistic", "default.Countdown")
     @js.native
-    class Countdown ()
+    open class Countdown ()
       extends typings.antd.countdownMod.default
     
     type _To = FC[StatisticProps] & StatisticComponent

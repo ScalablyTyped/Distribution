@@ -6,6 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 /** Represents the method that handles requests for 3D print packages. */
-type Print3DTaskSourceRequestedHandler = js.Function1[
-/* args */ typings.winrtUwp.Windows.Graphics.Printing3D.Print3DTaskSourceRequestedArgs, 
-scala.Unit]
+type Print3DTaskSourceRequestedHandler = js.Function1[/* args */ Print3DTaskSourceRequestedArgs, Unit]

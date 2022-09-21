@@ -8,5 +8,5 @@ object inventoryConfigurationListMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_InventoryConfigurationList", "_InventoryConfigurationList")
   @js.native
-  val InventoryConfigurationList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val InventoryConfigurationList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

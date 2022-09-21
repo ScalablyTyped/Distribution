@@ -11,6 +11,6 @@ object loadHelpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(dirs: String): StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(dirs.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]]
-  inline def default(dirs: js.Array[String]): StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(dirs.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]]
+  inline def default(dirs: String): StringDictionary[js.Function1[/* repeated */ Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(dirs.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Function1[/* repeated */ Any, Any]]]
+  inline def default(dirs: js.Array[String]): StringDictionary[js.Function1[/* repeated */ Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(dirs.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Function1[/* repeated */ Any, Any]]]
 }

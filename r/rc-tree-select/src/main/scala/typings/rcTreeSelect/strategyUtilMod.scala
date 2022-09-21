@@ -1,8 +1,10 @@
 package typings.rcTreeSelect
 
 import typings.rcTree.interfaceMod.DataEntity
-import typings.rcTreeSelect.interfaceMod.Key
+import typings.rcTree.interfaceMod.DataNode
 import typings.rcTreeSelect.interfaceMod.RawValueType
+import typings.rcTreeSelect.treeSelectMod.InternalFieldName
+import typings.react.mod.Key
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +28,12 @@ object strategyUtilMod {
   @js.native
   val SHOW_PARENT: /* "SHOW_PARENT" */ String = js.native
   
-  inline def formatStrategyKeys(keys: js.Array[Key], strategy: CheckedStrategy, keyEntities: Record[Key, DataEntity]): js.Array[RawValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatStrategyKeys")(keys.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any])).asInstanceOf[js.Array[RawValueType]]
+  inline def formatStrategyValues(
+    values: js.Array[Key],
+    strategy: CheckedStrategy,
+    keyEntities: Record[typings.rcTreeSelect.interfaceMod.Key, DataEntity[DataNode]],
+    fieldNames: InternalFieldName
+  ): js.Array[RawValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatStrategyValues")(values.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any], fieldNames.asInstanceOf[js.Any])).asInstanceOf[js.Array[RawValueType]]
   
   type CheckedStrategy = /* "SHOW_ALL" */ String
 }

@@ -4,25 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for `SendCommandToDevice`.
-  */
 trait SchemaSendCommandToDeviceRequest extends StObject {
   
   /**
-    * The command data to send to the device.
+    * Required. The command data to send to the device.
     */
-  var binaryData: js.UndefOr[String] = js.undefined
+  var binaryData: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional subfolder for the command. If empty, the command will be
-    * delivered to the /devices/{device-id}/commands topic, otherwise it will
-    * be delivered to the /devices/{device-id}/commands/{subfolder} topic.
-    * Multi-level subfolders are allowed. This field must not have more than
-    * 256 characters, and must not contain any MQTT wildcards (&quot;+&quot; or
-    * &quot;#&quot;) or null characters.
+    * Optional subfolder for the command. If empty, the command will be delivered to the /devices/{device-id\}/commands topic, otherwise it will be delivered to the /devices/{device-id\}/commands/{subfolder\} topic. Multi-level subfolders are allowed. This field must not have more than 256 characters, and must not contain any MQTT wildcards ("+" or "#") or null characters.
     */
-  var subfolder: js.UndefOr[String] = js.undefined
+  var subfolder: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSendCommandToDeviceRequest {
   
@@ -35,9 +27,13 @@ object SchemaSendCommandToDeviceRequest {
     
     inline def setBinaryData(value: String): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
     
+    inline def setBinaryDataNull: Self = StObject.set(x, "binaryData", null)
+    
     inline def setBinaryDataUndefined: Self = StObject.set(x, "binaryData", js.undefined)
     
     inline def setSubfolder(value: String): Self = StObject.set(x, "subfolder", value.asInstanceOf[js.Any])
+    
+    inline def setSubfolderNull: Self = StObject.set(x, "subfolder", null)
     
     inline def setSubfolderUndefined: Self = StObject.set(x, "subfolder", js.undefined)
   }

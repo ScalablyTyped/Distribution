@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Windows extends StObject {
   
-  def apply(index: js.Any): Window = js.native
+  def apply(index: Any): Window = js.native
   
   val Count: Double = js.native
   
-  def CreateToolWindow(AddInInst: AddIn, ProgId: String, Caption: String, GuidPosition: String, DocObj: js.Any): Window = js.native
+  def CreateToolWindow(AddInInst: AddIn, ProgId: String, Caption: String, GuidPosition: String, DocObj: Any): Window = js.native
   
-  def Item(index: js.Any): Window = js.native
+  def Item(index: Any): Window = js.native
   
   val Parent: Application = js.native
   

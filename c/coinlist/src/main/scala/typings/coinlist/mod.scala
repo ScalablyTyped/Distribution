@@ -20,12 +20,7 @@ object mod extends Shortcut {
   trait CoinsAPI extends StObject {
     
     def get(symbol: String): js.UndefOr[Coin] = js.native
-    @JSName("get")
-    def get_id(symbol: String, property: id): js.UndefOr[String] = js.native
-    @JSName("get")
-    def get_name(symbol: String, property: name): js.UndefOr[String] = js.native
-    @JSName("get")
-    def get_symbol(symbol: String, property: symbol): js.UndefOr[String] = js.native
+    def get(symbol: String, property: id | symbol | name): js.UndefOr[String] = js.native
   }
   
   type _To = js.Array[Coin] & CoinsAPI

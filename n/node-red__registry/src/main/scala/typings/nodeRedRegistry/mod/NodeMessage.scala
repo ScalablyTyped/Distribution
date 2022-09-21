@@ -8,7 +8,9 @@ trait NodeMessage extends StObject {
   
   var _msgid: js.UndefOr[String] = js.undefined
   
-  var payload: js.UndefOr[js.Any] = js.undefined
+  var payload: js.UndefOr[Any] = js.undefined
+  
+  var topic: js.UndefOr[String] = js.undefined
 }
 object NodeMessage {
   
@@ -19,9 +21,13 @@ object NodeMessage {
   
   extension [Self <: NodeMessage](x: Self) {
     
-    inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     
     inline def set_msgid(value: String): Self = StObject.set(x, "_msgid", value.asInstanceOf[js.Any])
     

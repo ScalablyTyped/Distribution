@@ -12,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "MenuHeader")
 @js.native
-class MenuHeader protected ()
-  extends Component[MenuHeaderProps, ComponentState, js.Any] {
+open class MenuHeader protected () extends Component[MenuHeaderProps, ComponentState, Any] {
   def this(props: MenuHeaderProps) = this()
-  def this(props: MenuHeaderProps, context: js.Any) = this()
+  def this(props: MenuHeaderProps, context: Any) = this()
 }
 object MenuHeader {
   

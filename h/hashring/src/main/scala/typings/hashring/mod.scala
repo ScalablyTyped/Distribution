@@ -4,7 +4,7 @@ import typings.hashring.anon.PartialHashRingOptions
 import typings.hashring.anon.PartialServerConfig
 import typings.hashring.hashringStrings.hash_ring
 import typings.hashring.hashringStrings.ketama
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("hashring", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with HashRing {
     def this(servers: Servers) = this()

@@ -24,7 +24,7 @@ object mod {
   }
   console.log(fnBase + outDone.join(`\n${fnBase}`));
   */
-  inline def apply(firstTask: Step, additionalTasks: Step*): TaskFunction = (^.asInstanceOf[js.Dynamic].apply(firstTask.asInstanceOf[js.Any], additionalTasks.asInstanceOf[js.Any])).asInstanceOf[TaskFunction]
+  inline def apply(firstTask: Step, additionalTasks: Step*): TaskFunction = ^.asInstanceOf[js.Dynamic].apply(List(firstTask.asInstanceOf[js.Any]).`++`(additionalTasks.asInstanceOf[Seq[js.Any]])*).asInstanceOf[TaskFunction]
   inline def apply(s1: Step, done: Done): Unit = (^.asInstanceOf[js.Dynamic].apply(s1.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(s1: Step, s2: Step, done: Done): Unit = (^.asInstanceOf[js.Dynamic].apply(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(s1: Step, s2: Step, s3: Step, done: Done): Unit = (^.asInstanceOf[js.Dynamic].apply(s1.asInstanceOf[js.Any], s2.asInstanceOf[js.Any], s3.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -378,9 +378,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def use(gulp: Gulp): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(gulp.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def use(gulp: Gulp): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(gulp.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  type Done = js.Function1[/* error */ js.UndefOr[js.Any], Unit]
+  type Done = js.Function1[/* error */ js.UndefOr[Any], Unit]
   
   type Step = String | js.Array[String]
 }

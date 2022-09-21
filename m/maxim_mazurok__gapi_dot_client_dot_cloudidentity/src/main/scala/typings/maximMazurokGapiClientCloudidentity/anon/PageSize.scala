@@ -19,8 +19,21 @@ trait PageSize extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /**
+    * Optional. [Resource name](https://cloud.google.com/apis/design/resource_names) of the customer in the format: `customers/{customer}`, where customer is the customer to whom the
+    * device belongs. If you're using this API for your own organization, use `customers/my_customer`. If you're using this API to manage another organization, use
+    * `customers/{customer}`, where customer is the customer to whom the device belongs.
+    */
+  var customer: js.UndefOr[String] = js.undefined
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Optional. Additional restrictions when fetching list of devices. For a list of search fields, refer to [Mobile device search
+    * fields](https://developers.google.com/admin-sdk/directory/v1/search-operators). Multiple search fields are separated by the space character.
+    */
+  var filter: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
@@ -29,17 +42,19 @@ trait PageSize extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of results to return. Note that the number of results returned may be less than this value even if there are more available results. To fetch all results,
-    * clients must continue calling this method repeatedly until the response no longer contains a `next_page_token`. If unspecified, defaults to 200 for `GroupView.BASIC` and to 50
-    * for `GroupView.FULL`. Must not be greater than 1000 for `GroupView.BASIC` or 500 for `GroupView.FULL`.
+    * Optional. Order specification for devices in the response. Only one of the following field names may be used to specify the order: `create_time`, `last_sync_time`, `model`,
+    * `os_version`, `device_type` and `serial_number`. `desc` may be specified optionally at the end to specify results to be sorted in descending order. Default order is ascending.
     */
+  var orderBy: js.UndefOr[String] = js.undefined
+  
+  /** Optional. The maximum number of Devices to return. If unspecified, at most 20 Devices will be returned. The maximum value is 100; values above 100 will be coerced to 100. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** The `next_page_token` value returned from a previous search request, if any. */
+  /**
+    * Optional. A page token, received from a previous `ListDevices` call. Provide this to retrieve the subsequent page. When paginating, all other parameters provided to
+    * `ListDevices` must match the call that provided the page token.
+    */
   var pageToken: js.UndefOr[String] = js.undefined
-  
-  /** Required. The parent `Group` resource under which to lookup the `Membership` name. Must be of the form `groups/{group_id}`. */
-  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -53,13 +68,13 @@ trait PageSize extends StObject {
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
   
-  /** The level of detail to be returned. If unspecified, defaults to `View.BASIC`. */
+  /** Optional. The view to use for the List request. */
   var view: js.UndefOr[String] = js.undefined
 }
 object PageSize {
   
-  inline def apply(parent: String): PageSize = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(): PageSize = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageSize]
   }
   
@@ -81,9 +96,17 @@ object PageSize {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
@@ -93,6 +116,10 @@ object PageSize {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
+    inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
     inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
@@ -100,8 +127,6 @@ object PageSize {
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
-    
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

@@ -36,12 +36,12 @@ object UpdateTagsForResourceMessage {
     
     inline def setTagsToAddUndefined: Self = StObject.set(x, "TagsToAdd", js.undefined)
     
-    inline def setTagsToAddVarargs(value: Tag*): Self = StObject.set(x, "TagsToAdd", js.Array(value :_*))
+    inline def setTagsToAddVarargs(value: Tag*): Self = StObject.set(x, "TagsToAdd", js.Array(value*))
     
     inline def setTagsToRemove(value: TagKeyList): Self = StObject.set(x, "TagsToRemove", value.asInstanceOf[js.Any])
     
     inline def setTagsToRemoveUndefined: Self = StObject.set(x, "TagsToRemove", js.undefined)
     
-    inline def setTagsToRemoveVarargs(value: TagKey*): Self = StObject.set(x, "TagsToRemove", js.Array(value :_*))
+    inline def setTagsToRemoveVarargs(value: TagKey*): Self = StObject.set(x, "TagsToRemove", js.Array(value*))
   }
 }

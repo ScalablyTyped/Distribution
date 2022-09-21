@@ -32,12 +32,12 @@ object QueryGroup {
     
     inline def setDisplays(value: js.Array[DisplayControl]): Self = StObject.set(x, "displays", value.asInstanceOf[js.Any])
     
-    inline def setDisplaysVarargs(value: DisplayControl*): Self = StObject.set(x, "displays", js.Array(value :_*))
+    inline def setDisplaysVarargs(value: DisplayControl*): Self = StObject.set(x, "displays", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setSearchBoxes(value: js.Array[Refinement]): Self = StObject.set(x, "searchBoxes", value.asInstanceOf[js.Any])
     
-    inline def setSearchBoxesVarargs(value: Refinement*): Self = StObject.set(x, "searchBoxes", js.Array(value :_*))
+    inline def setSearchBoxesVarargs(value: Refinement*): Self = StObject.set(x, "searchBoxes", js.Array(value*))
   }
 }

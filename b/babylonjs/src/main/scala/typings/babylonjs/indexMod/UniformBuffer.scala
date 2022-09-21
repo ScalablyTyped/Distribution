@@ -6,25 +6,97 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "UniformBuffer")
 @js.native
-class UniformBuffer protected ()
+open class UniformBuffer protected ()
   extends typings.babylonjs.materialsIndexMod.UniformBuffer {
   /**
     * Instantiates a new Uniform buffer objects.
     *
     * Handles blocks of uniform on the GPU.
     *
-    * If WebGL 2 is not available, this class falls back on traditionnal setUniformXXX calls.
+    * If WebGL 2 is not available, this class falls back on traditional setUniformXXX calls.
     *
     * For more information, please refer to :
     * @see https://www.khronos.org/opengl/wiki/Uniform_Buffer_Object
     * @param engine Define the engine the buffer is associated with
     * @param data Define the data contained in the buffer
     * @param dynamic Define if the buffer is updatable
+    * @param name to assign to the buffer (debugging purpose)
+    * @param forceNoUniformBuffer define that this object must not rely on UBO objects
     */
-  def this(engine: typings.babylonjs.engineMod.Engine) = this()
-  def this(engine: typings.babylonjs.engineMod.Engine, data: js.Array[Double]) = this()
-  def this(engine: typings.babylonjs.engineMod.Engine, data: js.Array[Double], dynamic: Boolean) = this()
-  def this(engine: typings.babylonjs.engineMod.Engine, data: Unit, dynamic: Boolean) = this()
+  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine) = this()
+  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, data: js.Array[Double]) = this()
+  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, data: js.Array[Double], dynamic: Boolean) = this()
+  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, data: Unit, dynamic: Boolean) = this()
+  def this(
+    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    data: js.Array[Double],
+    dynamic: Boolean,
+    name: String
+  ) = this()
+  def this(
+    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    data: js.Array[Double],
+    dynamic: Unit,
+    name: String
+  ) = this()
+  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, data: Unit, dynamic: Boolean, name: String) = this()
+  def this(engine: typings.babylonjs.thinEngineMod.ThinEngine, data: Unit, dynamic: Unit, name: String) = this()
+  def this(
+    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    data: js.Array[Double],
+    dynamic: Boolean,
+    name: String,
+    forceNoUniformBuffer: Boolean
+  ) = this()
+  def this(
+    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    data: js.Array[Double],
+    dynamic: Boolean,
+    name: Unit,
+    forceNoUniformBuffer: Boolean
+  ) = this()
+  def this(
+    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    data: js.Array[Double],
+    dynamic: Unit,
+    name: String,
+    forceNoUniformBuffer: Boolean
+  ) = this()
+  def this(
+    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    data: js.Array[Double],
+    dynamic: Unit,
+    name: Unit,
+    forceNoUniformBuffer: Boolean
+  ) = this()
+  def this(
+    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    data: Unit,
+    dynamic: Boolean,
+    name: String,
+    forceNoUniformBuffer: Boolean
+  ) = this()
+  def this(
+    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    data: Unit,
+    dynamic: Boolean,
+    name: Unit,
+    forceNoUniformBuffer: Boolean
+  ) = this()
+  def this(
+    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    data: Unit,
+    dynamic: Unit,
+    name: String,
+    forceNoUniformBuffer: Boolean
+  ) = this()
+  def this(
+    engine: typings.babylonjs.thinEngineMod.ThinEngine,
+    data: Unit,
+    dynamic: Unit,
+    name: Unit,
+    forceNoUniformBuffer: Boolean
+  ) = this()
 }
 /* static members */
 object UniformBuffer {
@@ -35,11 +107,23 @@ object UniformBuffer {
   
   @JSImport("babylonjs/index", "UniformBuffer._MAX_UNIFORM_SIZE")
   @js.native
-  def _MAX_UNIFORM_SIZE: js.Any = js.native
-  inline def _MAX_UNIFORM_SIZE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_UNIFORM_SIZE")(x.asInstanceOf[js.Any])
+  def _MAX_UNIFORM_SIZE: Any = js.native
+  inline def _MAX_UNIFORM_SIZE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_UNIFORM_SIZE")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/index", "UniformBuffer._tempBuffer")
+  @JSImport("babylonjs/index", "UniformBuffer._TempBuffer")
   @js.native
-  def _tempBuffer: js.Any = js.native
-  inline def _tempBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tempBuffer")(x.asInstanceOf[js.Any])
+  def _TempBuffer: Any = js.native
+  
+  @JSImport("babylonjs/index", "UniformBuffer._TempBufferInt32View")
+  @js.native
+  def _TempBufferInt32View: Any = js.native
+  inline def _TempBufferInt32View_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TempBufferInt32View")(x.asInstanceOf[js.Any])
+  
+  inline def _TempBuffer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TempBuffer")(x.asInstanceOf[js.Any])
+  
+  /** @hidden */
+  @JSImport("babylonjs/index", "UniformBuffer._UpdatedUbosInFrame")
+  @js.native
+  def _UpdatedUbosInFrame: org.scalablytyped.runtime.StringDictionary[Double] = js.native
+  inline def _UpdatedUbosInFrame_=(x: org.scalablytyped.runtime.StringDictionary[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UpdatedUbosInFrame")(x.asInstanceOf[js.Any])
 }

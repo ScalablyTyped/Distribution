@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-ui", "RadioButton")
 @js.native
-class RadioButton protected ()
-  extends Component[RadioButtonProps, js.Any, js.Any] {
+open class RadioButton protected () extends Component[RadioButtonProps, Any, Any] {
   def this(props: RadioButtonProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: RadioButtonProps, context: js.Any) = this()
+  def this(props: RadioButtonProps, context: Any) = this()
 }

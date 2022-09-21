@@ -7,11 +7,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(omNode: Element, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(omNode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  /**
+    * Make it easy to listen for element resize events.
+    *
+    * @example
+    * import elementResizeEvent = require("element-resize-event");
+    *
+    * const element = document.getElementById("resize");
+    *
+    * if (element) {
+    *     elementResizeEvent(element, () => {
+    *         console.log("resized!");
+    *         console.log(element.offsetWidth);
+    *     });
+    * }
+    */
+  inline def apply(domNode: Element, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(domNode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("element-resize-event", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def unbind(omNode: Element, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(omNode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  /**
+    * Unbind a previously registered event listener.
+    *
+    * @example
+    * import elementResizeEvent = require("element-resize-event");
+    *
+    * const element = document.getElementById("resize");
+    *
+    * if (element) {
+    *     // ...
+    *     elementResizeEvent.unbind(element);
+    * }
+    */
+  inline def unbind(domNode: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(domNode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unbind(domNode: Element, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(domNode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

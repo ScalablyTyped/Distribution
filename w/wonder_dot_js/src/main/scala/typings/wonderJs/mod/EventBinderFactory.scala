@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "EventBinderFactory")
 @js.native
-class EventBinderFactory ()
+open class EventBinderFactory ()
   extends typings.wonderJs.eventBinderFactoryMod.EventBinderFactory
 /* static members */
 object EventBinderFactory {
@@ -15,5 +15,5 @@ object EventBinderFactory {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createEventBinder(eventName: typings.wonderJs.eventNameHandlerMod.EEventName): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventBinder")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createEventBinder(eventName: typings.wonderJs.eventNameHandlerMod.EEventName): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventBinder")(eventName.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

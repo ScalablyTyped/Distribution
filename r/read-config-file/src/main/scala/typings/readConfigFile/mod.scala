@@ -34,7 +34,7 @@ object mod {
     
     var packageKey: String
     
-    var packageMetadata: (Lazy[StringDictionary[js.Any] | Null]) | Null
+    var packageMetadata: (Lazy[StringDictionary[Any] | Null]) | Null
     
     var projectDir: String
   }
@@ -51,7 +51,7 @@ object mod {
       
       inline def setPackageKey(value: String): Self = StObject.set(x, "packageKey", value.asInstanceOf[js.Any])
       
-      inline def setPackageMetadata(value: Lazy[StringDictionary[js.Any] | Null]): Self = StObject.set(x, "packageMetadata", value.asInstanceOf[js.Any])
+      inline def setPackageMetadata(value: Lazy[StringDictionary[Any] | Null]): Self = StObject.set(x, "packageMetadata", value.asInstanceOf[js.Any])
       
       inline def setPackageMetadataNull: Self = StObject.set(x, "packageMetadata", null)
       

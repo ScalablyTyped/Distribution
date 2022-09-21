@@ -23,7 +23,7 @@ object PushTimeDays {
     
     inline def setPushTimeDays(value: js.Array[Double]): Self = StObject.set(x, "pushTimeDays", value.asInstanceOf[js.Any])
     
-    inline def setPushTimeDaysVarargs(value: Double*): Self = StObject.set(x, "pushTimeDays", js.Array(value :_*))
+    inline def setPushTimeDaysVarargs(value: Double*): Self = StObject.set(x, "pushTimeDays", js.Array(value*))
     
     inline def setPushTimeEndHour(value: Double): Self = StObject.set(x, "pushTimeEndHour", value.asInstanceOf[js.Any])
     

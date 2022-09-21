@@ -2,7 +2,6 @@ package typings.jsforce
 
 import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object cacheMod {
   
   @JSImport("jsforce/cache", "Cache")
   @js.native
-  class Cache () extends StObject {
+  open class Cache () extends StObject {
     
     /**
       * Clear cache entries prefix matching given key
@@ -30,13 +29,13 @@ object cacheMod {
   
   @JSImport("jsforce/cache", "CacheEntry")
   @js.native
-  class CacheEntry[T] () extends EventEmitter {
+  open class CacheEntry[T] () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
     def clear(): Unit = js.native
     
     def get(): js.UndefOr[T] = js.native
-    def get(callback: js.Function2[/* err */ Error, /* result */ T, Unit]): js.UndefOr[T] = js.native
+    def get(callback: js.Function2[/* err */ js.Error, /* result */ T, Unit]): js.UndefOr[T] = js.native
     
     def set(value: T): Unit = js.native
   }

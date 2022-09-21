@@ -5,10 +5,10 @@ import typings.reactNativeVideo.reactNativeVideoStrings.`applicationSlashx-subri
 import typings.reactNativeVideo.reactNativeVideoStrings.applicationSlashttmlPlussignxml
 import typings.reactNativeVideo.reactNativeVideoStrings.auto
 import typings.reactNativeVideo.reactNativeVideoStrings.disabled
-import typings.reactNativeVideo.reactNativeVideoStrings.horizontal
 import typings.reactNativeVideo.reactNativeVideoStrings.index
 import typings.reactNativeVideo.reactNativeVideoStrings.landscape
 import typings.reactNativeVideo.reactNativeVideoStrings.language
+import typings.reactNativeVideo.reactNativeVideoStrings.portrait
 import typings.reactNativeVideo.reactNativeVideoStrings.resolution
 import typings.reactNativeVideo.reactNativeVideoStrings.system
 import typings.reactNativeVideo.reactNativeVideoStrings.textSlashvtt
@@ -18,6 +18,39 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait Bitrate extends StObject {
+    
+    var bitrate: Double
+    
+    var codecs: String
+    
+    var height: Double
+    
+    var trackId: String
+    
+    var width: Double
+  }
+  object Bitrate {
+    
+    inline def apply(bitrate: Double, codecs: String, height: Double, trackId: String, width: Double): Bitrate = {
+      val __obj = js.Dynamic.literal(bitrate = bitrate.asInstanceOf[js.Any], codecs = codecs.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], trackId = trackId.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Bitrate]
+    }
+    
+    extension [Self <: Bitrate](x: Self) {
+      
+      inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+      
+      inline def setCodecs(value: String): Self = StObject.set(x, "codecs", value.asInstanceOf[js.Any])
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setTrackId(value: String): Self = StObject.set(x, "trackId", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait BufferForPlaybackAfterRebufferMs extends StObject {
     
@@ -60,6 +93,8 @@ object anon {
     
     var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
+    var `type`: js.UndefOr[String] = js.undefined
+    
     var uri: js.UndefOr[String] = js.undefined
   }
   object Headers {
@@ -75,6 +110,10 @@ object anon {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      
       inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
       inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
@@ -85,13 +124,13 @@ object anon {
     
     var height: Double
     
-    var orientation: horizontal | landscape
+    var orientation: portrait | landscape
     
     var width: Double
   }
   object Height {
     
-    inline def apply(height: Double, orientation: horizontal | landscape, width: Double): Height = {
+    inline def apply(height: Double, orientation: portrait | landscape, width: Double): Height = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], orientation = orientation.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Height]
     }
@@ -100,9 +139,39 @@ object anon {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      inline def setOrientation(value: horizontal | landscape): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: portrait | landscape): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Index extends StObject {
+    
+    var index: Double
+    
+    var language: String
+    
+    var title: String
+    
+    var `type`: String
+  }
+  object Index {
+    
+    inline def apply(index: Double, language: String, title: String, `type`: String): Index = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Index]
+    }
+    
+    extension [Self <: Index](x: Self) {
+      
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

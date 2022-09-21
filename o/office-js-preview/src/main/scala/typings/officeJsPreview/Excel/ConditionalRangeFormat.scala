@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @js.native
@@ -22,29 +22,38 @@ trait ConditionalRangeFormat
      with ClientObject {
   
   /**
-    *
     * Collection of border objects that apply to the overall conditional format range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   val borders: ConditionalRangeBorderCollection = js.native
+  
+  /**
+    * Remove the format properties from a conditional format rule. This creates a rule with no format settings.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def clearFormat(): Unit = js.native
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ConditionalRangeFormat: RequestContext = js.native
   
   /**
-    *
     * Returns the fill object defined on the overall conditional format range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   val fill: ConditionalRangeFill = js.native
   
   /**
-    *
     * Returns the font object defined on the overall conditional format range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   val font: ConditionalRangeFont = js.native
@@ -61,23 +70,18 @@ trait ConditionalRangeFormat
   def load(propertyNames: js.Array[String]): ConditionalRangeFormat = js.native
   
   /**
+    * Represents Excel's number format code for the given range. For more information about Excel number formatting, see {@link https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68 | Number format codes}.
+    Cleared if `null` is passed in.
     *
-    * Represents Excel's number format code for the given range. Cleared if null is passed in.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
-  var numberFormat: js.Any = js.native
+  var numberFormat: Any = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ConditionalRangeFormat): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ConditionalRangeFormat): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

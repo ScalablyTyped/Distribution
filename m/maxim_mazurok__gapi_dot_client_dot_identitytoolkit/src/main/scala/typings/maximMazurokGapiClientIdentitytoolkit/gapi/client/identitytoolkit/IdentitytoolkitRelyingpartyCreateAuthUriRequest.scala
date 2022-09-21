@@ -29,7 +29,7 @@ trait IdentitytoolkitRelyingpartyCreateAuthUriRequest extends StObject {
   var customParameter: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientIdentitytoolkit.maximMazurokGapiClientIdentitytoolkitStrings.IdentitytoolkitRelyingpartyCreateAuthUriRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientIdentitytoolkit.maximMazurokGapiClientIdentitytoolkitStrings.IdentitytoolkitRelyingpartyCreateAuthUriRequest & TopLevel[Any]
   ] = js.undefined
   
   /** The hosted domain to restrict sign-in to accounts at that domain for Google Apps hosted accounts. */
@@ -94,7 +94,7 @@ object IdentitytoolkitRelyingpartyCreateAuthUriRequest {
     inline def setCustomParameter(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientIdentitytoolkit.maximMazurokGapiClientIdentitytoolkitStrings.IdentitytoolkitRelyingpartyCreateAuthUriRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientIdentitytoolkit.maximMazurokGapiClientIdentitytoolkitStrings.IdentitytoolkitRelyingpartyCreateAuthUriRequest & TopLevel[Any]
     ): Self = StObject.set(x, "customParameter", value.asInstanceOf[js.Any])
     
     inline def setCustomParameterUndefined: Self = StObject.set(x, "customParameter", js.undefined)

@@ -1,8 +1,6 @@
 package typings.awsSdkClientLambdaNode
 
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +22,7 @@ object typesInvokeAsyncInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -41,11 +39,14 @@ object typesInvokeAsyncInputMod {
     /**
       * <p>JSON that you want to provide to your Lambda function as input.</p>
       */
-    var InvokeArgs: ArrayBuffer | ArrayBufferView | String | StreamType
+    var InvokeArgs: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String | StreamType
   }
   object InvokeAsyncInput {
     
-    inline def apply[StreamType](FunctionName: String, InvokeArgs: ArrayBuffer | ArrayBufferView | String | StreamType): InvokeAsyncInput[StreamType] = {
+    inline def apply[StreamType](
+      FunctionName: String,
+      InvokeArgs: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String | StreamType
+    ): InvokeAsyncInput[StreamType] = {
       val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], InvokeArgs = InvokeArgs.asInstanceOf[js.Any])
       __obj.asInstanceOf[InvokeAsyncInput[StreamType]]
     }
@@ -57,7 +58,7 @@ object typesInvokeAsyncInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -68,7 +69,7 @@ object typesInvokeAsyncInputMod {
       
       inline def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
       
-      inline def setInvokeArgs(value: ArrayBuffer | ArrayBufferView | String | StreamType): Self = StObject.set(x, "InvokeArgs", value.asInstanceOf[js.Any])
+      inline def setInvokeArgs(value: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String | StreamType): Self = StObject.set(x, "InvokeArgs", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -21,6 +21,6 @@ object XRViewerPose {
     
     inline def setViews(value: js.Array[XRView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
-    inline def setViewsVarargs(value: XRView*): Self = StObject.set(x, "views", js.Array(value :_*))
+    inline def setViewsVarargs(value: XRView*): Self = StObject.set(x, "views", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ The lodash method `_.at` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.at |
 | Keywords           | lodash-modularized, at |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 47984064 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1314595.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

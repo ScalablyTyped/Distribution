@@ -11,9 +11,9 @@ A clean and highly customizable React Native implementation of a list of setting
 | Full name          | react-native-settings-list |
 | Keywords           | react-native, react-component, ios, android, settings-list, settings |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 32442 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2368.6666666666665 |
+| # stars            | 286.0 |
 
 ## Links
 - [Homepage](https://github.com/evetstech/react-native-settings-list#readme)

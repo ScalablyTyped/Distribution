@@ -42,7 +42,7 @@ object ASPxClientHtmlEditorChangeMediaElementCommandArguments {
     GetCommandName: () => String,
     align: String,
     id: String,
-    selectedElement: js.Any,
+    selectedElement: Any,
     src: String,
     styleSettings: ASPxClientHtmlEditorCommandStyleSettings
   ): ASPxClientHtmlEditorChangeMediaElementCommandArguments = {

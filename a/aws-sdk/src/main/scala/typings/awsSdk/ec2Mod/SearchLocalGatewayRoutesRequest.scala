@@ -12,9 +12,9 @@ trait SearchLocalGatewayRoutesRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * One or more filters.
+    * One or more filters.    route-search.exact-match - The exact match of the specified filter.    route-search.longest-prefix-match - The longest prefix that matches the route.    route-search.subnet-of-match - The routes with a subnet that match the specified CIDR filter.    route-search.supernet-of-match - The routes with a CIDR that encompass the CIDR filter. For example, if you have 10.0.1.0/29 and 10.0.1.0/31 routes in your route table and you specify supernet-of-match as 10.0.1.0/30, then the result returns 10.0.1.0/29.    state - The state of the route.    type - The route type.  
     */
-  var Filters: FilterList
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * The ID of the local gateway route table.
@@ -33,8 +33,8 @@ trait SearchLocalGatewayRoutesRequest extends StObject {
 }
 object SearchLocalGatewayRoutesRequest {
   
-  inline def apply(Filters: FilterList, LocalGatewayRouteTableId: LocalGatewayRoutetableId): SearchLocalGatewayRoutesRequest = {
-    val __obj = js.Dynamic.literal(Filters = Filters.asInstanceOf[js.Any], LocalGatewayRouteTableId = LocalGatewayRouteTableId.asInstanceOf[js.Any])
+  inline def apply(LocalGatewayRouteTableId: LocalGatewayRoutetableId): SearchLocalGatewayRoutesRequest = {
+    val __obj = js.Dynamic.literal(LocalGatewayRouteTableId = LocalGatewayRouteTableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchLocalGatewayRoutesRequest]
   }
   
@@ -46,7 +46,9 @@ object SearchLocalGatewayRoutesRequest {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setLocalGatewayRouteTableId(value: LocalGatewayRoutetableId): Self = StObject.set(x, "LocalGatewayRouteTableId", value.asInstanceOf[js.Any])
     

@@ -22,6 +22,6 @@ object ImportConsumerOverridesResponse {
     
     inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    inline def setOverridesVarargs(value: QuotaOverride*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: QuotaOverride*): Self = StObject.set(x, "overrides", js.Array(value*))
   }
 }

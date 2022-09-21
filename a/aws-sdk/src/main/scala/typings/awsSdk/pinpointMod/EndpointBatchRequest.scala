@@ -22,6 +22,6 @@ object EndpointBatchRequest {
     
     inline def setItem(value: ListOfEndpointBatchItem): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    inline def setItemVarargs(value: EndpointBatchItem*): Self = StObject.set(x, "Item", js.Array(value :_*))
+    inline def setItemVarargs(value: EndpointBatchItem*): Self = StObject.set(x, "Item", js.Array(value*))
   }
 }

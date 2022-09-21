@@ -10,7 +10,7 @@ trait AutoCaption extends StObject {
   
   var AutoInsert: Boolean
   
-  var CaptionLabel: js.Any
+  var CaptionLabel: Any
   
   val Creator: Double
   
@@ -18,7 +18,7 @@ trait AutoCaption extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.AutoCaption_typekey")
   var WordDotAutoCaption_typekey: AutoCaption
@@ -28,11 +28,11 @@ object AutoCaption {
   inline def apply(
     Application: Application,
     AutoInsert: Boolean,
-    CaptionLabel: js.Any,
+    CaptionLabel: Any,
     Creator: Double,
     Index: Double,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     WordDotAutoCaption_typekey: AutoCaption
   ): AutoCaption = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], AutoInsert = AutoInsert.asInstanceOf[js.Any], CaptionLabel = CaptionLabel.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -46,7 +46,7 @@ object AutoCaption {
     
     inline def setAutoInsert(value: Boolean): Self = StObject.set(x, "AutoInsert", value.asInstanceOf[js.Any])
     
-    inline def setCaptionLabel(value: js.Any): Self = StObject.set(x, "CaptionLabel", value.asInstanceOf[js.Any])
+    inline def setCaptionLabel(value: Any): Self = StObject.set(x, "CaptionLabel", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -54,7 +54,7 @@ object AutoCaption {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotAutoCaption_typekey(value: AutoCaption): Self = StObject.set(x, "Word.AutoCaption_typekey", value.asInstanceOf[js.Any])
   }

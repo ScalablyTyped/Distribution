@@ -3,7 +3,8 @@ package typings.sinonChai
 import org.scalablytyped.runtime.Shortcut
 import typings.chai.Chai.ChaiPlugin
 import typings.sinon.mod.SinonSpy
-import typings.std.Error
+import typings.sinon.mod.SinonSpyCall
+import typings.sinon.mod.SinonStub
 import typings.std.ErrorConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,29 +41,35 @@ object mod extends Shortcut {
         /**
           * Returns true if the spy was called after anotherSpy.
           */
-        def calledAfter(anotherSpy: SinonSpy[js.Array[js.Any], js.Any]): Assertion = js.native
+        def calledAfter(anotherSpy: SinonSpy[js.Array[Any], Any]): Assertion = js.native
+        def calledAfter(anotherSpy: SinonSpyCall[js.Array[Any], Any]): Assertion = js.native
+        def calledAfter(anotherSpy: SinonStub[js.Array[Any], Any]): Assertion = js.native
         
         /**
           * Returns true if the spy was called before anotherSpy.
           */
-        def calledBefore(anotherSpy: SinonSpy[js.Array[js.Any], js.Any]): Assertion = js.native
+        def calledBefore(anotherSpy: SinonSpy[js.Array[Any], Any]): Assertion = js.native
+        def calledBefore(anotherSpy: SinonSpyCall[js.Array[Any], Any]): Assertion = js.native
+        def calledBefore(anotherSpy: SinonStub[js.Array[Any], Any]): Assertion = js.native
         
         /**
           * Returns true if spy was called after anotherSpy, and no spy calls occurred
           * between anotherSpy and spy.
           */
-        def calledImmediatelyAfter(anotherSpy: SinonSpy[js.Array[js.Any], js.Any]): Assertion = js.native
+        def calledImmediatelyAfter(anotherSpy: SinonSpy[js.Array[Any], Any]): Assertion = js.native
+        def calledImmediatelyAfter(anotherSpy: SinonStub[js.Array[Any], Any]): Assertion = js.native
         
         /**
           * Returns true if spy was called before anotherSpy, and no spy calls occurred
           * between spy and anotherSpy.
           */
-        def calledImmediatelyBefore(anotherSpy: SinonSpy[js.Array[js.Any], js.Any]): Assertion = js.native
+        def calledImmediatelyBefore(anotherSpy: SinonSpy[js.Array[Any], Any]): Assertion = js.native
+        def calledImmediatelyBefore(anotherSpy: SinonStub[js.Array[Any], Any]): Assertion = js.native
         
         /**
           * Returns true if context was this for this call.
           */
-        def calledOn(context: js.Any): Assertion = js.native
+        def calledOn(context: Any): Assertion = js.native
         
         /**
           * true if the spy was called exactly once.
@@ -72,12 +79,12 @@ object mod extends Shortcut {
         /**
           * Returns true if spy was called at exactly once with the provided arguments.
           */
-        def calledOnceWith(args: js.Any*): Assertion = js.native
+        def calledOnceWith(args: Any*): Assertion = js.native
         
         /**
           * Returns true if spy was called exactly once with the provided arguments and no others.
           */
-        def calledOnceWithExactly(args: js.Any*): Assertion = js.native
+        def calledOnceWithExactly(args: Any*): Assertion = js.native
         
         /**
           * true if the spy was called exactly thrice.
@@ -92,18 +99,18 @@ object mod extends Shortcut {
         /**
           * Returns true if call received provided arguments (and possibly others).
           */
-        def calledWith(args: js.Any*): Assertion = js.native
+        def calledWith(args: Any*): Assertion = js.native
         
         /**
           * Returns true if call received provided arguments and no others.
           */
-        def calledWithExactly(args: js.Any*): Assertion = js.native
+        def calledWithExactly(args: Any*): Assertion = js.native
         
         /**
           * Returns true if call received matching arguments (and possibly others).
           * This behaves the same as spyCall.calledWith(sinon.match(arg1), sinon.match(arg2), ...).
           */
-        def calledWithMatch(args: js.Any*): Assertion = js.native
+        def calledWithMatch(args: Any*): Assertion = js.native
         
         /**
           * Returns true if spy/stub was called with the new operator. Beware that
@@ -118,14 +125,14 @@ object mod extends Shortcut {
           * deep comparison for objects and arrays. Use spy.returned(sinon.match.same(obj))
           * for strict comparison (see matchers).
           */
-        def returned(obj: js.Any): Assertion = js.native
+        def returned(obj: Any): Assertion = js.native
         
         /**
           * Returns true if spy threw the provided exception object at least once.
           */
         def thrown(): Assertion = js.native
         def thrown(obj: String): Assertion = js.native
-        def thrown(obj: Error): Assertion = js.native
+        def thrown(obj: js.Error): Assertion = js.native
         def thrown(obj: ErrorConstructor): Assertion = js.native
       }
       

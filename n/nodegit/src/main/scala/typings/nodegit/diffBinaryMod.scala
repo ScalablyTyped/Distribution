@@ -13,7 +13,7 @@ object diffBinaryMod {
   
   @JSImport("nodegit/diff-binary", "DiffBinary")
   @js.native
-  class DiffBinary () extends StObject {
+  open class DiffBinary () extends StObject {
     
     var containsData: DIFF_BINARY = js.native
     

@@ -111,8 +111,6 @@ trait PolarRadiusAxisProps extends StObject {
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
-  
   var height: js.UndefOr[Double] = js.undefined
   
   var hide: js.UndefOr[Boolean] = js.undefined
@@ -201,7 +199,7 @@ trait PolarRadiusAxisProps extends StObject {
   
   var textRendering: js.UndefOr[auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit] = js.undefined
   
-  var tick: js.UndefOr[Boolean | js.Object | ReactElement | ContentRenderer[js.Any]] = js.undefined
+  var tick: js.UndefOr[Boolean | js.Object | ReactElement | ContentRenderer[Any]] = js.undefined
   
   var tickCount: js.UndefOr[Double] = js.undefined
   
@@ -386,10 +384,6 @@ object PolarRadiusAxisProps {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
-    
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
@@ -566,17 +560,17 @@ object PolarRadiusAxisProps {
     
     inline def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
     
-    inline def setTick(value: Boolean | js.Object | ReactElement | ContentRenderer[js.Any]): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    inline def setTick(value: Boolean | js.Object | ReactElement | ContentRenderer[Any]): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
     inline def setTickCount(value: Double): Self = StObject.set(x, "tickCount", value.asInstanceOf[js.Any])
     
     inline def setTickCountUndefined: Self = StObject.set(x, "tickCount", js.undefined)
     
-    inline def setTickFormatter(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "tickFormatter", js.Any.fromFunction1(value))
+    inline def setTickFormatter(value: /* value */ Any => Any): Self = StObject.set(x, "tickFormatter", js.Any.fromFunction1(value))
     
     inline def setTickFormatterUndefined: Self = StObject.set(x, "tickFormatter", js.undefined)
     
-    inline def setTickFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
+    inline def setTickFunction1(value: Any => ReactNode): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
     
     inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
     
@@ -584,7 +578,7 @@ object PolarRadiusAxisProps {
     
     inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
-    inline def setTicksVarargs(value: PolarRadiusAxisTick*): Self = StObject.set(x, "ticks", js.Array(value :_*))
+    inline def setTicksVarargs(value: PolarRadiusAxisTick*): Self = StObject.set(x, "ticks", js.Array(value*))
     
     inline def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     

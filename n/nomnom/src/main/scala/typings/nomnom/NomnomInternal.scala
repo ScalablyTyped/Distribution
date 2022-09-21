@@ -48,8 +48,8 @@ object NomnomInternal {
       * @param argv The command-line arguments.
       * @returns The parsed command-line.
       */
-    def nom(): js.Any = js.native
-    def nom(argv: js.Array[String]): js.Any = js.native
+    def nom(): Any = js.native
+    def nom(argv: js.Array[String]): Any = js.native
     
     /**
       * Sets an option of the command-line.
@@ -71,8 +71,8 @@ object NomnomInternal {
       * @param argv The command-line arguments.
       * @returns The parsed command-line.
       */
-    def parse(): js.Any = js.native
-    def parse(argv: js.Array[String]): js.Any = js.native
+    def parse(): Any = js.native
+    def parse(argv: js.Array[String]): Any = js.native
     
     /**
       * Provides a printer to the command-line processor.
@@ -107,7 +107,7 @@ object NomnomInternal {
         * @param func The callback function.
         * @returns The command.
         */
-      def callback(func: js.Function1[/* options */ js.Any, Unit]): Command
+      def callback(func: js.Function1[/* options */ Any, Unit]): Command
       
       /**
         * Sets the help string for the command.
@@ -146,7 +146,7 @@ object NomnomInternal {
     object Command {
       
       inline def apply(
-        callback: js.Function1[/* options */ js.Any, Unit] => Command,
+        callback: js.Function1[/* options */ Any, Unit] => Command,
         help: String => Command,
         name: String,
         option: (String, Option) => Command,
@@ -159,7 +159,7 @@ object NomnomInternal {
       
       extension [Self <: Command](x: Self) {
         
-        inline def setCallback(value: js.Function1[/* options */ js.Any, Unit] => Command): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+        inline def setCallback(value: js.Function1[/* options */ Any, Unit] => Command): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
         
         inline def setHelp(value: String => Command): Self = StObject.set(x, "help", js.Any.fromFunction1(value))
         
@@ -178,7 +178,7 @@ object NomnomInternal {
       /**
         * The default value of the option.
         */
-      var default: js.UndefOr[js.Any] = js.undefined
+      var default: js.UndefOr[Any] = js.undefined
       
       /**
         * The abbreviated name of the option.
@@ -188,7 +188,7 @@ object NomnomInternal {
       /**
         * A callback for the option.
         */
-      var callback: js.UndefOr[js.Function1[/* option */ js.Any, String]] = js.undefined
+      var callback: js.UndefOr[js.Function1[/* option */ Any, String]] = js.undefined
       
       /**
         * The choices for the option.
@@ -258,7 +258,7 @@ object NomnomInternal {
         
         inline def setAbbrUndefined: Self = StObject.set(x, "abbr", js.undefined)
         
-        inline def setCallback(value: /* option */ js.Any => String): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+        inline def setCallback(value: /* option */ Any => String): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
         
         inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
         
@@ -266,9 +266,9 @@ object NomnomInternal {
         
         inline def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
         
-        inline def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value :_*))
+        inline def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value*))
         
-        inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+        inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
         inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
         

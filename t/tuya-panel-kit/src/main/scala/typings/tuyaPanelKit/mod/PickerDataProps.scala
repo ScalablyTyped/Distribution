@@ -6,8 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PickerDataProps extends StObject {
   
+  /**
+    * @language zh-CN
+    * @description 标签
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Label
+    * @defaultValue null
+    */
   var label: String
   
+  /**
+    * @language zh-CN
+    * @description 具体值
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Value
+    * @defaultValue null
+    */
   var value: String
 }
 object PickerDataProps {

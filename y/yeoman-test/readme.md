@@ -1,7 +1,7 @@
 
 # Scala.js typings for yeoman-test
 
-Typings are for version 2.0
+Typings are for version 4.0
 
 ## Library description:
 Test utilities for Yeoman generators
@@ -10,10 +10,10 @@ Test utilities for Yeoman generators
 | ------------------ | :-------------: |
 | Full name          | yeoman-test |
 | Keywords           | yeoman, unit test |
-| # releases         | 16 |
-| # dependents       | 93 |
-| # downloads        | 2265840 |
-| # stars            | 0 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 142807.66666666666 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](http://yeoman.io/authoring/testing.html)

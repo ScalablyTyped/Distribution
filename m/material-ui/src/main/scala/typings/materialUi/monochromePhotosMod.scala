@@ -10,10 +10,10 @@ object monochromePhotosMod {
   
   @JSImport("material-ui/svg-icons/image/monochrome-photos", JSImport.Default)
   @js.native
-  class default () extends ImageMonochromePhotos
+  open class default () extends ImageMonochromePhotos
   
   @JSImport("material-ui/svg-icons/image/monochrome-photos", "ImageMonochromePhotos")
   @js.native
-  class ImageMonochromePhotos ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageMonochromePhotos ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

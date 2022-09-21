@@ -17,5 +17,5 @@ trait SimpleLineSymbolConstructor
 Instantiable0[SimpleLineSymbol]
      with Instantiable1[/* properties */ SimpleLineSymbolProperties, SimpleLineSymbol] {
   
-  def fromJSON(json: js.Any): SimpleLineSymbol = js.native
+  def fromJSON(json: Any): SimpleLineSymbol = js.native
 }

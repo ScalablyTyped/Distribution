@@ -12,6 +12,11 @@ trait Member extends StObject {
   var AccountId: typings.awsSdk.guarddutyMod.AccountId
   
   /**
+    * The administrator account ID.
+    */
+  var AdministratorId: js.UndefOr[String] = js.undefined
+  
+  /**
     * The detector ID of the member account.
     */
   var DetectorId: js.UndefOr[typings.awsSdk.guarddutyMod.DetectorId] = js.undefined
@@ -27,12 +32,12 @@ trait Member extends StObject {
   var InvitedAt: js.UndefOr[String] = js.undefined
   
   /**
-    * The master account ID.
+    * The administrator account ID.
     */
   var MasterId: String
   
   /**
-    * The status of the relationship between the member and the master.
+    * The status of the relationship between the member and the administrator.
     */
   var RelationshipStatus: String
   
@@ -57,6 +62,10 @@ object Member {
   extension [Self <: Member](x: Self) {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    
+    inline def setAdministratorId(value: String): Self = StObject.set(x, "AdministratorId", value.asInstanceOf[js.Any])
+    
+    inline def setAdministratorIdUndefined: Self = StObject.set(x, "AdministratorId", js.undefined)
     
     inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,7 @@ trait PendingModifiedValues extends StObject {
   var MaintenanceTrackName: js.UndefOr[String] = js.undefined
   
   /**
-    * The pending or in-progress change of the master user password for the cluster.
+    * The pending or in-progress change of the admin user password for the cluster.
     */
   var MasterUserPassword: js.UndefOr[String] = js.undefined
   

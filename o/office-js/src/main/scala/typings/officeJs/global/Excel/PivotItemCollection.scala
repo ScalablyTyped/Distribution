@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the PivotItems related to their parent PivotField.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.PivotItemCollection")
 @js.native
-class PivotItemCollection ()
+open class PivotItemCollection ()
   extends StObject
      with typings.officeJs.Excel.PivotItemCollection {
   

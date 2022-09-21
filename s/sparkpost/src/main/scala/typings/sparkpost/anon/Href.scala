@@ -25,7 +25,7 @@ object Href {
     
     inline def setMethod(value: js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
+    inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value*))
     
     inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
   }

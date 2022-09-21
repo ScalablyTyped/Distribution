@@ -6,9 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("highcharts", "PlotLineOrBand")
 @js.native
-class PlotLineOrBand protected () extends StObject {
+open class PlotLineOrBand protected () extends StObject {
   /**
     * The object wrapper for plot lines and plot bands
+    *
+    * @param axis
+    *        Related axis.
+    *
+    * @param options
+    *        Options to use.
     */
   def this(axis: Axis) = this()
   def this(axis: Axis, options: AxisPlotBandsOptions) = this()

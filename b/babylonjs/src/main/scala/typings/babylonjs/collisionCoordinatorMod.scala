@@ -13,19 +13,19 @@ object collisionCoordinatorMod {
   
   @JSImport("babylonjs/Collisions/collisionCoordinator", "DefaultCollisionCoordinator")
   @js.native
-  class DefaultCollisionCoordinator ()
+  open class DefaultCollisionCoordinator ()
     extends StObject
        with ICollisionCoordinator {
     
-    /* private */ var _collideWithWorld: js.Any = js.native
+    /* private */ var _collideWithWorld: Any = js.native
     
-    /* private */ var _finalPosition: js.Any = js.native
+    /* private */ var _finalPosition: Any = js.native
     
-    /* private */ var _scaledPosition: js.Any = js.native
+    /* private */ var _scaledPosition: Any = js.native
     
-    /* private */ var _scaledVelocity: js.Any = js.native
+    /* private */ var _scaledVelocity: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
     /* CompleteClass */
     override def createCollider(): Collider = js.native

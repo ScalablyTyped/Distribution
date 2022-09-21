@@ -19,6 +19,10 @@ object maximMazurokGapiClientDataflowStrings {
   inline def FlexTemplateRuntimeEnvironment: FlexTemplateRuntimeEnvironment = "FlexTemplateRuntimeEnvironment".asInstanceOf[FlexTemplateRuntimeEnvironment]
   
   @js.native
+  sealed trait HotKeyDebuggingInfo extends StObject
+  inline def HotKeyDebuggingInfo: HotKeyDebuggingInfo = "HotKeyDebuggingInfo".asInstanceOf[HotKeyDebuggingInfo]
+  
+  @js.native
   sealed trait InstructionOutput extends StObject
   inline def InstructionOutput: InstructionOutput = "InstructionOutput".asInstanceOf[InstructionOutput]
   
@@ -51,12 +55,12 @@ object maximMazurokGapiClientDataflowStrings {
   inline def MetricStructuredName: MetricStructuredName = "MetricStructuredName".asInstanceOf[MetricStructuredName]
   
   @js.native
-  sealed trait ModifyTemplateVersionLabelResponse extends StObject
-  inline def ModifyTemplateVersionLabelResponse: ModifyTemplateVersionLabelResponse = "ModifyTemplateVersionLabelResponse".asInstanceOf[ModifyTemplateVersionLabelResponse]
-  
-  @js.native
   sealed trait ParDoInstruction extends StObject
   inline def ParDoInstruction: ParDoInstruction = "ParDoInstruction".asInstanceOf[ParDoInstruction]
+  
+  @js.native
+  sealed trait ParameterMetadata extends StObject
+  inline def ParameterMetadata: ParameterMetadata = "ParameterMetadata".asInstanceOf[ParameterMetadata]
   
   @js.native
   sealed trait PartialGroupByKeyInstruction extends StObject
@@ -103,16 +107,20 @@ object maximMazurokGapiClientDataflowStrings {
   inline def Step: Step = "Step".asInstanceOf[Step]
   
   @js.native
+  sealed trait StragglerInfo extends StObject
+  inline def StragglerInfo: StragglerInfo = "StragglerInfo".asInstanceOf[StragglerInfo]
+  
+  @js.native
+  sealed trait StragglerSummary extends StObject
+  inline def StragglerSummary: StragglerSummary = "StragglerSummary".asInstanceOf[StragglerSummary]
+  
+  @js.native
   sealed trait StreamingComputationConfig extends StObject
   inline def StreamingComputationConfig: StreamingComputationConfig = "StreamingComputationConfig".asInstanceOf[StreamingComputationConfig]
   
   @js.native
   sealed trait StreamingConfigTask extends StObject
   inline def StreamingConfigTask: StreamingConfigTask = "StreamingConfigTask".asInstanceOf[StreamingConfigTask]
-  
-  @js.native
-  sealed trait TemplateVersion extends StObject
-  inline def TemplateVersion: TemplateVersion = "TemplateVersion".asInstanceOf[TemplateVersion]
   
   @js.native
   sealed trait TopologyConfig extends StObject

@@ -9,10 +9,10 @@ trait OrderTrackingSignalShipmentLineItemMapping extends StObject {
   /** Required. The line item ID. */
   var lineItemId: js.UndefOr[String] = js.undefined
   
-  /** Required. The line item quantity in the shipment. */
+  /** The line item quantity in the shipment. */
   var quantity: js.UndefOr[String] = js.undefined
   
-  /** Required. The shipment ID. */
+  /** Required. The shipment ID. This field will be hashed in returned OrderTrackingSignal creation response. */
   var shipmentId: js.UndefOr[String] = js.undefined
 }
 object OrderTrackingSignalShipmentLineItemMapping {

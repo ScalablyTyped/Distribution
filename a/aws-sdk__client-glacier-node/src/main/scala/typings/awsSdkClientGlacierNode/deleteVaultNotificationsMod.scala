@@ -8,5 +8,5 @@ object deleteVaultNotificationsMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/DeleteVaultNotifications", "DeleteVaultNotifications")
   @js.native
-  val DeleteVaultNotifications: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DeleteVaultNotifications: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

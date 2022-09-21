@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientLogging.anon
 
-import typings.maximMazurokGapiClientLogging.gapi.client.logging.CmekSettings
+import typings.maximMazurokGapiClientLogging.gapi.client.logging.Settings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,9 +27,8 @@ trait KeyName extends StObject {
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The resource name for the CMEK settings to update. "projects/[PROJECT_ID]/cmekSettings" "organizations/[ORGANIZATION_ID]/cmekSettings"
-    * "billingAccounts/[BILLING_ACCOUNT_ID]/cmekSettings" "folders/[FOLDER_ID]/cmekSettings" Example: "organizations/12345/cmekSettings".Note: CMEK for the Logs Router can currently
-    * only be configured for GCP organizations. Once configured, it applies to all projects and folders in the GCP organization.
+    * Required. The resource name for the settings to update. "organizations/[ORGANIZATION_ID]/settings" For example:"organizations/12345/settings"Note: Settings for the Log Router
+    * can currently only be configured for Google Cloud organizations. Once configured, it applies to all projects and folders in the Google Cloud organization.
     */
   var name: String
   
@@ -43,11 +42,11 @@ trait KeyName extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: CmekSettings
+  var resource: Settings
   
   /**
-    * Optional. Field mask identifying which fields from cmek_settings should be updated. A field will be overwritten if and only if it is in the update mask. Output only fields
-    * cannot be updated.See FieldMask for more information.Example: "updateMask=kmsKeyName"
+    * Optional. Field mask identifying which fields from settings should be updated. A field will be overwritten if and only if it is in the update mask. Output only fields cannot be
+    * updated.See FieldMask for more information.For example: "updateMask=kmsKeyName"
     */
   var updateMask: js.UndefOr[String] = js.undefined
   
@@ -59,7 +58,7 @@ trait KeyName extends StObject {
 }
 object KeyName {
   
-  inline def apply(name: String, resource: CmekSettings): KeyName = {
+  inline def apply(name: String, resource: Settings): KeyName = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyName]
   }
@@ -104,7 +103,7 @@ object KeyName {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: CmekSettings): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Settings): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthorizationConfig extends StObject {
   
   /**
-    * The authorization type required by the HTTP endpoint.    AWS_IAM: The authorization type is Sigv4.  
+    * The authorization type that the HTTP endpoint requires.    AWS_IAM: The authorization type is Signature Version 4 (SigV4).  
     */
   var authorizationType: AuthorizationType
   
   /**
-    * The AWS IAM settings.
+    * The Identity and Access Management (IAM) settings.
     */
   var awsIamConfig: js.UndefOr[AwsIamConfig] = js.undefined
 }

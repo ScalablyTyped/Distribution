@@ -1,6 +1,5 @@
 package typings.restartHooks
 
-import typings.std.Iterable
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,16 +31,16 @@ object useSetMod {
     * @param init initial Set values
     */
   inline def default[V](): ObservableSet[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ObservableSet[V]]
-  inline def default[V](init: Iterable[V]): ObservableSet[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(init.asInstanceOf[js.Any]).asInstanceOf[ObservableSet[V]]
+  inline def default[V](init: js.Iterable[V]): ObservableSet[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(init.asInstanceOf[js.Any]).asInstanceOf[ObservableSet[V]]
   
   @JSImport("@restart/hooks/cjs/useSet", "ObservableSet")
   @js.native
-  class ObservableSet[V] protected ()
+  open class ObservableSet[V] protected ()
     extends StObject
        with Set[V] {
     def this(listener: js.Function1[/* map */ ObservableSet[V], Unit]) = this()
-    def this(listener: js.Function1[/* map */ ObservableSet[V], Unit], init: Iterable[V]) = this()
+    def this(listener: js.Function1[/* map */ ObservableSet[V], Unit], init: js.Iterable[V]) = this()
     
-    /* private */ val listener: js.Any = js.native
+    /* private */ val listener: Any = js.native
   }
 }

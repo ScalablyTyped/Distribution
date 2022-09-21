@@ -36,6 +36,8 @@ object mod {
   
   trait Options extends StObject {
     
+    var silent: js.UndefOr[Boolean] = js.undefined
+    
     var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
@@ -46,6 +48,10 @@ object mod {
     }
     
     extension [Self <: Options](x: Self) {
+      
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
       
       inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       

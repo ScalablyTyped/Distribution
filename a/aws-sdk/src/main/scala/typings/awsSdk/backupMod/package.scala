@@ -1,15 +1,17 @@
 package typings.awsSdk.backupMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.STRINGEQUALS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ARN = java.lang.String
+type ARN = String
 
-type AccountId = java.lang.String
+type AccountId = String
 
-type AdvancedBackupSettings = js.Array[typings.awsSdk.backupMod.AdvancedBackupSetting]
+type AdvancedBackupSettings = js.Array[AdvancedBackupSetting]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATED
@@ -22,33 +24,33 @@ type AdvancedBackupSettings = js.Array[typings.awsSdk.backupMod.AdvancedBackupSe
   - typings.awsSdk.awsSdkStrings.EXPIRED
   - java.lang.String
 */
-type BackupJobState = typings.awsSdk.backupMod._BackupJobState | java.lang.String
+type BackupJobState = _BackupJobState | String
 
-type BackupJobsList = js.Array[typings.awsSdk.backupMod.BackupJob]
+type BackupJobsList = js.Array[BackupJob]
 
-type BackupOptionKey = java.lang.String
+type BackupOptionKey = String
 
-type BackupOptionValue = java.lang.String
+type BackupOptionValue = String
 
-type BackupOptions = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.backupMod.BackupOptionValue]
+type BackupOptions = StringDictionary[BackupOptionValue]
 
-type BackupPlanName = java.lang.String
+type BackupPlanName = String
 
-type BackupPlanTemplatesList = js.Array[typings.awsSdk.backupMod.BackupPlanTemplatesListMember]
+type BackupPlanTemplatesList = js.Array[BackupPlanTemplatesListMember]
 
-type BackupPlanVersionsList = js.Array[typings.awsSdk.backupMod.BackupPlansListMember]
+type BackupPlanVersionsList = js.Array[BackupPlansListMember]
 
-type BackupPlansList = js.Array[typings.awsSdk.backupMod.BackupPlansListMember]
+type BackupPlansList = js.Array[BackupPlansListMember]
 
-type BackupRuleName = java.lang.String
+type BackupRuleName = String
 
-type BackupRules = js.Array[typings.awsSdk.backupMod.BackupRule]
+type BackupRules = js.Array[BackupRule]
 
-type BackupRulesInput = js.Array[typings.awsSdk.backupMod.BackupRuleInput]
+type BackupRulesInput = js.Array[BackupRuleInput]
 
-type BackupSelectionName = java.lang.String
+type BackupSelectionName = String
 
-type BackupSelectionsList = js.Array[typings.awsSdk.backupMod.BackupSelectionsListMember]
+type BackupSelectionsList = js.Array[BackupSelectionsListMember]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BACKUP_JOB_STARTED
@@ -66,25 +68,35 @@ type BackupSelectionsList = js.Array[typings.awsSdk.backupMod.BackupSelectionsLi
   - typings.awsSdk.awsSdkStrings.RECOVERY_POINT_MODIFIED
   - typings.awsSdk.awsSdkStrings.BACKUP_PLAN_CREATED
   - typings.awsSdk.awsSdkStrings.BACKUP_PLAN_MODIFIED
+  - typings.awsSdk.awsSdkStrings.S3_BACKUP_OBJECT_FAILED
+  - typings.awsSdk.awsSdkStrings.S3_RESTORE_OBJECT_FAILED
   - java.lang.String
 */
-type BackupVaultEvent = typings.awsSdk.backupMod._BackupVaultEvent | java.lang.String
+type BackupVaultEvent = _BackupVaultEvent | String
 
-type BackupVaultEvents = js.Array[typings.awsSdk.backupMod.BackupVaultEvent]
+type BackupVaultEvents = js.Array[BackupVaultEvent]
 
-type BackupVaultList = js.Array[typings.awsSdk.backupMod.BackupVaultListMember]
+type BackupVaultList = js.Array[BackupVaultListMember]
 
-type BackupVaultName = java.lang.String
+type BackupVaultName = String
 
 type Boolean = scala.Boolean
 
-type ConditionKey = java.lang.String
+type ComplianceResourceIdList = js.Array[String]
 
-type ConditionType = typings.awsSdk.awsSdkStrings.STRINGEQUALS | java.lang.String
+type ConditionKey = String
 
-type ConditionValue = java.lang.String
+type ConditionParameters = js.Array[ConditionParameter]
 
-type CopyActions = js.Array[typings.awsSdk.backupMod.CopyAction]
+type ConditionType = STRINGEQUALS | String
+
+type ConditionValue = String
+
+type ControlInputParameters = js.Array[ControlInputParameter]
+
+type ControlName = String
+
+type CopyActions = js.Array[CopyAction]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATED
@@ -93,41 +105,57 @@ type CopyActions = js.Array[typings.awsSdk.backupMod.CopyAction]
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type CopyJobState = typings.awsSdk.backupMod._CopyJobState | java.lang.String
+type CopyJobState = _CopyJobState | String
 
-type CopyJobsList = js.Array[typings.awsSdk.backupMod.CopyJob]
+type CopyJobsList = js.Array[CopyJob]
 
-type CronExpression = java.lang.String
+type CronExpression = String
 
-type GlobalSettings = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.backupMod.GlobalSettingsValue]
+type FormatList = js.Array[String]
 
-type GlobalSettingsName = java.lang.String
+type FrameworkControls = js.Array[FrameworkControl]
 
-type GlobalSettingsValue = java.lang.String
+type FrameworkDescription = String
 
-type IAMPolicy = java.lang.String
+type FrameworkList = js.Array[Framework]
 
-type IAMRoleArn = java.lang.String
+type FrameworkName = String
+
+type GlobalSettings = StringDictionary[GlobalSettingsValue]
+
+type GlobalSettingsName = String
+
+type GlobalSettingsValue = String
+
+type IAMPolicy = String
+
+type IAMRoleArn = String
 
 type IsEnabled = scala.Boolean
 
-type ListOfTags = js.Array[typings.awsSdk.backupMod.Condition]
+type ListOfTags = js.Array[Condition]
 
-type Long_ = scala.Double
+type Long_ = Double
 
-type MaxResults = scala.Double
+type MaxFrameworkInputs = Double
 
-type Metadata = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.backupMod.MetadataValue]
+type MaxResults = Double
 
-type MetadataKey = java.lang.String
+type Metadata = StringDictionary[MetadataValue]
 
-type MetadataValue = java.lang.String
+type MetadataKey = String
 
-type ProtectedResourcesList = js.Array[typings.awsSdk.backupMod.ProtectedResource]
+type MetadataValue = String
 
-type RecoveryPointByBackupVaultList = js.Array[typings.awsSdk.backupMod.RecoveryPointByBackupVault]
+type ParameterName = String
 
-type RecoveryPointByResourceList = js.Array[typings.awsSdk.backupMod.RecoveryPointByResource]
+type ParameterValue = String
+
+type ProtectedResourcesList = js.Array[ProtectedResource]
+
+type RecoveryPointByBackupVaultList = js.Array[RecoveryPointByBackupVault]
+
+type RecoveryPointByResourceList = js.Array[RecoveryPointByResource]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COMPLETED
@@ -136,17 +164,31 @@ type RecoveryPointByResourceList = js.Array[typings.awsSdk.backupMod.RecoveryPoi
   - typings.awsSdk.awsSdkStrings.EXPIRED
   - java.lang.String
 */
-type RecoveryPointStatus = typings.awsSdk.backupMod._RecoveryPointStatus | java.lang.String
+type RecoveryPointStatus = _RecoveryPointStatus | String
 
-type ResourceArns = js.Array[typings.awsSdk.backupMod.ARN]
+type ReportJobId = String
 
-type ResourceType = java.lang.String
+type ReportJobList = js.Array[ReportJob]
 
-type ResourceTypeOptInPreference = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.backupMod.IsEnabled]
+type ReportPlanDescription = String
 
-type ResourceTypes = js.Array[typings.awsSdk.backupMod.ResourceType]
+type ReportPlanList = js.Array[ReportPlan]
 
-type RestoreJobId = java.lang.String
+type ReportPlanName = String
+
+type ResourceArns = js.Array[ARN]
+
+type ResourceType = String
+
+type ResourceTypeList = js.Array[ARN]
+
+type ResourceTypeManagementPreference = StringDictionary[IsEnabled]
+
+type ResourceTypeOptInPreference = StringDictionary[IsEnabled]
+
+type ResourceTypes = js.Array[ResourceType]
+
+type RestoreJobId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -156,9 +198,9 @@ type RestoreJobId = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type RestoreJobStatus = typings.awsSdk.backupMod._RestoreJobStatus | java.lang.String
+type RestoreJobStatus = _RestoreJobStatus | String
 
-type RestoreJobsList = js.Array[typings.awsSdk.backupMod.RestoreJobsListMember]
+type RestoreJobsList = js.Array[RestoreJobsListMember]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WARM
@@ -166,25 +208,31 @@ type RestoreJobsList = js.Array[typings.awsSdk.backupMod.RestoreJobsListMember]
   - typings.awsSdk.awsSdkStrings.DELETED
   - java.lang.String
 */
-type StorageClass = typings.awsSdk.backupMod._StorageClass | java.lang.String
+type StorageClass = _StorageClass | String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[java.lang.String]
+type TagKeyList = js.Array[String]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type Tags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.backupMod.TagValue]
+type Tags = StringDictionary[TagValue]
 
-type WindowMinutes = scala.Double
+type WindowMinutes = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-11-15`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.backupMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type long = scala.Double
+type integer = Double
 
-type timestamp = typings.std.Date
+type long = Double
+
+type stringList = js.Array[String]
+
+type stringMap = StringDictionary[String]
+
+type timestamp = js.Date

@@ -33,6 +33,6 @@ object DescribeManagedPrefixListsResult {
     
     inline def setPrefixListsUndefined: Self = StObject.set(x, "PrefixLists", js.undefined)
     
-    inline def setPrefixListsVarargs(value: ManagedPrefixList*): Self = StObject.set(x, "PrefixLists", js.Array(value :_*))
+    inline def setPrefixListsVarargs(value: ManagedPrefixList*): Self = StObject.set(x, "PrefixLists", js.Array(value*))
   }
 }

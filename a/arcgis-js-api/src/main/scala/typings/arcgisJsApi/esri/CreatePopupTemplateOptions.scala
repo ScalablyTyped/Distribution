@@ -42,7 +42,7 @@ object CreatePopupTemplateOptions {
     
     inline def setIgnoreFieldTypesUndefined: Self = StObject.set(x, "ignoreFieldTypes", js.undefined)
     
-    inline def setIgnoreFieldTypesVarargs(value: String*): Self = StObject.set(x, "ignoreFieldTypes", js.Array(value :_*))
+    inline def setIgnoreFieldTypesVarargs(value: String*): Self = StObject.set(x, "ignoreFieldTypes", js.Array(value*))
     
     inline def setVisibleFieldNames(value: Set[String]): Self = StObject.set(x, "visibleFieldNames", value.asInstanceOf[js.Any])
     

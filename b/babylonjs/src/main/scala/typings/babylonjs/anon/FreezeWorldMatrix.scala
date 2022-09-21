@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FreezeWorldMatrix extends StObject {
   
-  var actions: Nullable[js.Any]
+  var actions: Nullable[Any]
   
   var freezeWorldMatrix: Nullable[Boolean]
   
-  var lods: Nullable[js.Any]
+  var lods: Nullable[Any]
 }
 object FreezeWorldMatrix {
   
@@ -22,7 +22,7 @@ object FreezeWorldMatrix {
   
   extension [Self <: FreezeWorldMatrix](x: Self) {
     
-    inline def setActions(value: Nullable[js.Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: Nullable[Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     inline def setActionsNull: Self = StObject.set(x, "actions", null)
     
@@ -30,7 +30,7 @@ object FreezeWorldMatrix {
     
     inline def setFreezeWorldMatrixNull: Self = StObject.set(x, "freezeWorldMatrix", null)
     
-    inline def setLods(value: Nullable[js.Any]): Self = StObject.set(x, "lods", value.asInstanceOf[js.Any])
+    inline def setLods(value: Nullable[Any]): Self = StObject.set(x, "lods", value.asInstanceOf[js.Any])
     
     inline def setLodsNull: Self = StObject.set(x, "lods", null)
   }

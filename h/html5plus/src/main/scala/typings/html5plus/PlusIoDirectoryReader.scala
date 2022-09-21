@@ -23,7 +23,7 @@ trait PlusIoDirectoryReader extends StObject {
   def readEntries(succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]): Unit = js.native
   def readEntries(
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def readEntries(succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def readEntries(succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
 }

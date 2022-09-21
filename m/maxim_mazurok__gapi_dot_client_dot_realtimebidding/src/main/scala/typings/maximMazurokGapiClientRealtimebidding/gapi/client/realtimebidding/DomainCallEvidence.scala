@@ -25,7 +25,7 @@ object DomainCallEvidence {
     
     inline def setTopHttpCallDomainsUndefined: Self = StObject.set(x, "topHttpCallDomains", js.undefined)
     
-    inline def setTopHttpCallDomainsVarargs(value: DomainCalls*): Self = StObject.set(x, "topHttpCallDomains", js.Array(value :_*))
+    inline def setTopHttpCallDomainsVarargs(value: DomainCalls*): Self = StObject.set(x, "topHttpCallDomains", js.Array(value*))
     
     inline def setTotalHttpCallCount(value: Double): Self = StObject.set(x, "totalHttpCallCount", value.asInstanceOf[js.Any])
     

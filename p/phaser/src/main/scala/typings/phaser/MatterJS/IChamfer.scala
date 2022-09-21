@@ -42,6 +42,6 @@ object IChamfer {
     
     inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    inline def setRadiusVarargs(value: Double*): Self = StObject.set(x, "radius", js.Array(value :_*))
+    inline def setRadiusVarargs(value: Double*): Self = StObject.set(x, "radius", js.Array(value*))
   }
 }

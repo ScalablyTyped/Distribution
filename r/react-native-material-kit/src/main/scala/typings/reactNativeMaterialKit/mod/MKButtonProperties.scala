@@ -1,9 +1,11 @@
 package typings.reactNativeMaterialKit.mod
 
 import typings.reactNative.mod.GestureResponderHandlers
+import typings.reactNative.mod.PointerEvents
 import typings.reactNative.mod.Touchable
 import typings.reactNative.mod.TouchableWithoutFeedbackProps
 import typings.reactNative.mod.ViewPropsAndroid
+import typings.reactNative.mod.ViewPropsIOS
 import typings.reactNative.reactNativeStrings.`box-none`
 import typings.reactNative.reactNativeStrings.`box-only`
 import typings.reactNative.reactNativeStrings.auto
@@ -16,28 +18,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.reactNative.mod.AccessibilityPropsIOS because Already inherited
 - typings.reactNative.mod.AccessibilityPropsAndroid because Already inherited
-- typings.reactNative.mod.TVViewPropsIOS because var conflicts: hasTVPreferredFocus, tvParallaxProperties. Inlined tvParallaxTiltAngle, tvParallaxMagnification, tvParallaxShiftDistanceY, isTVSelectable, tvParallaxShiftDistanceX
 - typings.reactNative.mod.AccessibilityProps because Already inherited
-- typings.reactNative.mod.ViewPropsIOS because var conflicts: hasTVPreferredFocus, tvParallaxProperties. Inlined shouldRasterizeIOS
-- typings.reactNative.mod.ViewProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, style, testID, tvParallaxProperties. Inlined pointerEvents, removeClippedSubviews, nativeID
-- typings.reactNativeMaterialKit.mod.MKRippleProperties because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, style, testID, tvParallaxProperties. Inlined rippleColor, rippleDuration, rippleLocation, maskEnabled, maskColor, maskBorderRadius, maskBorderRadiusInPercent, maskDuration, shadowAniEnabled */ trait MKButtonProperties
+- typings.reactNative.mod.ViewProps because var conflicts: accessibilityActions, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLabelledBy, accessibilityLanguage, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityValue, accessibilityViewIsModal, accessible, children, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, style, testID. Inlined pointerEvents, removeClippedSubviews, nativeID
+- typings.reactNativeMaterialKit.mod.MKRippleProperties because var conflicts: accessibilityActions, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLabelledBy, accessibilityLanguage, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityValue, accessibilityViewIsModal, accessible, children, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, style, testID. Inlined rippleColor, rippleDuration, rippleLocation, maskEnabled, maskColor, maskBorderRadius, maskBorderRadiusInPercent, maskDuration, shadowAniEnabled */ trait MKButtonProperties
   extends StObject
      with TouchableWithoutFeedbackProps
      with ViewPropsAndroid
+     with ViewPropsIOS
      with GestureResponderHandlers
-     with Touchable {
+     with Touchable
+     with PointerEvents {
   
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   var fab: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * *(Apple TV only)* When set to true, this view will be focusable
-    * and navigable using the Apple TV remote.
-    *
-    * @platform ios
-    */
-  var isTVSelectable: js.UndefOr[Boolean] = js.undefined
   
   var maskBorderRadius: js.UndefOr[Double] = js.undefined
   
@@ -94,46 +88,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var rippleLocation: js.UndefOr[typings.reactNativeMaterialKit.mod.MKPropTypes.rippleLocation] = js.undefined
   
   var shadowAniEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Whether this view should be rendered as a bitmap before compositing.
-    *
-    * On iOS, this is useful for animations and interactions that do not modify this component's dimensions nor its children;
-    * for example, when translating the position of a static view, rasterization allows the renderer to reuse a cached bitmap of a static view
-    * and quickly composite it during each frame.
-    *
-    * Rasterization incurs an off-screen drawing pass and the bitmap consumes memory.
-    * Test and measure when using this property.
-    */
-  var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 1.0.
-    *
-    * @platform ios
-    */
-  var tvParallaxMagnification: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 2.0.
-    *
-    * @platform ios
-    */
-  var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 2.0.
-    *
-    * @platform ios
-    */
-  var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * *(Apple TV only)* May be used to change the appearance of the Apple TV parallax effect when this view goes in or out of focus.  Defaults to 0.05.
-    *
-    * @platform ios
-    */
-  var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
 }
 object MKButtonProperties {
   
@@ -151,10 +105,6 @@ object MKButtonProperties {
     inline def setFab(value: Boolean): Self = StObject.set(x, "fab", value.asInstanceOf[js.Any])
     
     inline def setFabUndefined: Self = StObject.set(x, "fab", js.undefined)
-    
-    inline def setIsTVSelectable(value: Boolean): Self = StObject.set(x, "isTVSelectable", value.asInstanceOf[js.Any])
-    
-    inline def setIsTVSelectableUndefined: Self = StObject.set(x, "isTVSelectable", js.undefined)
     
     inline def setMaskBorderRadius(value: Double): Self = StObject.set(x, "maskBorderRadius", value.asInstanceOf[js.Any])
     
@@ -203,25 +153,5 @@ object MKButtonProperties {
     inline def setShadowAniEnabled(value: Boolean): Self = StObject.set(x, "shadowAniEnabled", value.asInstanceOf[js.Any])
     
     inline def setShadowAniEnabledUndefined: Self = StObject.set(x, "shadowAniEnabled", js.undefined)
-    
-    inline def setShouldRasterizeIOS(value: Boolean): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])
-    
-    inline def setShouldRasterizeIOSUndefined: Self = StObject.set(x, "shouldRasterizeIOS", js.undefined)
-    
-    inline def setTvParallaxMagnification(value: Double): Self = StObject.set(x, "tvParallaxMagnification", value.asInstanceOf[js.Any])
-    
-    inline def setTvParallaxMagnificationUndefined: Self = StObject.set(x, "tvParallaxMagnification", js.undefined)
-    
-    inline def setTvParallaxShiftDistanceX(value: Double): Self = StObject.set(x, "tvParallaxShiftDistanceX", value.asInstanceOf[js.Any])
-    
-    inline def setTvParallaxShiftDistanceXUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceX", js.undefined)
-    
-    inline def setTvParallaxShiftDistanceY(value: Double): Self = StObject.set(x, "tvParallaxShiftDistanceY", value.asInstanceOf[js.Any])
-    
-    inline def setTvParallaxShiftDistanceYUndefined: Self = StObject.set(x, "tvParallaxShiftDistanceY", js.undefined)
-    
-    inline def setTvParallaxTiltAngle(value: Double): Self = StObject.set(x, "tvParallaxTiltAngle", value.asInstanceOf[js.Any])
-    
-    inline def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
   }
 }

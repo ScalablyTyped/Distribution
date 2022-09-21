@@ -44,7 +44,7 @@ object ServeDetails {
     
     inline def setExternalNetworkInterfaces(value: js.Array[NetworkInterface]): Self = StObject.set(x, "externalNetworkInterfaces", value.asInstanceOf[js.Any])
     
-    inline def setExternalNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "externalNetworkInterfaces", js.Array(value :_*))
+    inline def setExternalNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "externalNetworkInterfaces", js.Array(value*))
     
     inline def setExternallyAccessible(value: Boolean): Self = StObject.set(x, "externallyAccessible", value.asInstanceOf[js.Any])
     

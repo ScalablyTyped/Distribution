@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Advertiser Group List Response
-  */
 trait SchemaAdvertiserGroupsListResponse extends StObject {
   
   /**
@@ -15,15 +12,14 @@ trait SchemaAdvertiserGroupsListResponse extends StObject {
   var advertiserGroups: js.UndefOr[js.Array[SchemaAdvertiserGroup]] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#advertiserGroupsListResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#advertiserGroupsListResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Pagination token to be used for the next list operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAdvertiserGroupsListResponse {
   
@@ -38,13 +34,17 @@ object SchemaAdvertiserGroupsListResponse {
     
     inline def setAdvertiserGroupsUndefined: Self = StObject.set(x, "advertiserGroups", js.undefined)
     
-    inline def setAdvertiserGroupsVarargs(value: SchemaAdvertiserGroup*): Self = StObject.set(x, "advertiserGroups", js.Array(value :_*))
+    inline def setAdvertiserGroupsVarargs(value: SchemaAdvertiserGroup*): Self = StObject.set(x, "advertiserGroups", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

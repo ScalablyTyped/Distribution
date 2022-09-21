@@ -10,15 +10,15 @@ A Karma plugin. Report all spec-results to console (like mocha's spec reporter).
 | ------------------ | :-------------: |
 | Full name          | karma-spec-reporter |
 | Keywords           | karma-plugin, reporter |
-| # releases         | 0 |
-| # dependents       | 144 |
-| # downloads        | 13143766 |
-| # stars            | 12 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1553572.0 |
+| # stars            | 151.0 |
 
 ## Links
-- [Homepage](https://github.com/mlex/karma-spec-reporter#readme)
-- [Bugs](https://github.com/mlex/karma-spec-reporter/issues)
-- [Repository](https://github.com/mlex/karma-spec-reporter)
+- [Homepage](https://github.com/tmcgee123/karma-spec-reporter#readme)
+- [Bugs](https://github.com/tmcgee123/karma-spec-reporter/issues)
+- [Repository](https://github.com/tmcgee123/karma-spec-reporter)
 - [Npm](https://www.npmjs.com/package/karma-spec-reporter)
     
 

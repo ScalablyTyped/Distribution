@@ -10,7 +10,7 @@ object isArrayOfMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isArrayOf[T](arg: js.Any, determiner: Determiner[T]): /* is std.Array<T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isArrayOf")(arg.asInstanceOf[js.Any], determiner.asInstanceOf[js.Any])).asInstanceOf[/* is std.Array<T> */ Boolean]
+  inline def isArrayOf[T](arg: Any, determiner: Determiner[T]): /* is std.Array<T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isArrayOf")(arg.asInstanceOf[js.Any], determiner.asInstanceOf[js.Any])).asInstanceOf[/* is std.Array<T> */ Boolean]
   
-  type Determiner[T] = js.Function1[/* arg */ js.Any, /* is T */ Boolean]
+  type Determiner[T] = js.Function1[/* arg */ Any, /* is T */ Boolean]
 }

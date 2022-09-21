@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientUploadControlValidationSettings")
 @js.native
-class ASPxClientUploadControlValidationSettings ()
+open class ASPxClientUploadControlValidationSettings ()
   extends StObject
      with typings.devexpressWeb.ASPxClientUploadControlValidationSettings {
   

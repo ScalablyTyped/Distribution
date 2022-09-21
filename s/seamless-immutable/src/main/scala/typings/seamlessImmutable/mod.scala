@@ -26,8 +26,6 @@ import typings.seamlessImmutable.seamlessImmutableStrings.slice
 import typings.seamlessImmutable.seamlessImmutableStrings.sort
 import typings.seamlessImmutable.seamlessImmutableStrings.splice
 import typings.seamlessImmutable.seamlessImmutableStrings.unshift
-import typings.std.Date
-import typings.std.Error
 import typings.std.Exclude
 import typings.std.Extract
 import typings.std.Pick
@@ -45,7 +43,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ImmutableError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ImmutableError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def ImmutableError(message: String): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("ImmutableError")(message.asInstanceOf[js.Any]).asInstanceOf[js.Error]
   
   inline def asMutable[T](obj: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
@@ -119,26 +117,26 @@ object mod {
   }
   
   type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias seamless-immutable.seamless-immutable.DeepPartial<T[P]> * / object}
-    */ typings.seamlessImmutable.seamlessImmutableStrings.DeepPartial & TopLevel[js.Any]
+  {[ P in keyof T ]:? seamless-immutable.seamless-immutable.DeepPartial<T[P]>}
+    */ typings.seamlessImmutable.seamlessImmutableStrings.DeepPartial & TopLevel[T]
   
   object Immutable {
     
-    type AlreadyImmutable[O /* <: js.Object */] = ImmutableObject[O] | ImmutableArray[js.Any] | ImmutableDate
+    type AlreadyImmutable[O /* <: js.Object */] = ImmutableObject[O] | ImmutableArray[Any] | ImmutableDate
     
     @js.native
     trait AnyFunction extends StObject {
       
-      def apply(args: js.Any*): js.Any = js.native
+      def apply(args: Any*): Any = js.native
     }
     
     type CannotMakeImmutable[O /* <: js.Object */] = AlreadyImmutable[O] | Primitive
     
-    type MakeImmutable[T, O /* <: js.Object */] = ImmutableObject[T] | ImmutableDate | ImmutableArray[js.Any] | T
+    type MakeImmutable[T, O /* <: js.Object */] = ImmutableObject[T] | ImmutableDate | ImmutableArray[Any] | T
     
     type Primitive = js.UndefOr[Boolean | Double | String | js.Symbol | AnyFunction | Null]
   }
-  type Immutable[T, O /* <: js.Object */] = (MakeImmutable[T, O]) | (js.Promise[MakeImmutable[js.Any, O]])
+  type Immutable[T, O /* <: js.Object */] = (MakeImmutable[T, O]) | (js.Promise[MakeImmutable[Any, O]])
   
   object ImmutableArray {
     
@@ -209,7 +207,7 @@ object mod {
               /* array */ Immutable[js.Array[T], js.Object], 
               Unit
             ],
-        thisArg: js.Any
+        thisArg: Any
       ): Unit = js.native
       
       def map[TTarget](
@@ -313,7 +311,7 @@ object mod {
   /* Inlined seamless-immutable.seamless-immutable.ImmutableDate.Remaining & seamless-immutable.seamless-immutable.ImmutableDate.Additions */
   trait ImmutableDate extends StObject {
     
-    def asMutable(): Date
+    def asMutable(): js.Date
     
     def getDate(): Double
     @JSName("getDate")
@@ -431,7 +429,7 @@ object mod {
   object ImmutableDate {
     
     inline def apply(
-      asMutable: () => Date,
+      asMutable: () => js.Date,
       getDate: () => Double,
       getDay: () => Double,
       getFullYear: () => Double,
@@ -470,24 +468,24 @@ object mod {
     /** New functions added by seamless-immutable. */
     trait Additions extends StObject {
       
-      def asMutable(): Date
+      def asMutable(): js.Date
     }
     object Additions {
       
-      inline def apply(asMutable: () => Date): typings.seamlessImmutable.mod.ImmutableDate.Additions = {
+      inline def apply(asMutable: () => js.Date): typings.seamlessImmutable.mod.ImmutableDate.Additions = {
         val __obj = js.Dynamic.literal(asMutable = js.Any.fromFunction0(asMutable))
         __obj.asInstanceOf[typings.seamlessImmutable.mod.ImmutableDate.Additions]
       }
       
       extension [Self <: typings.seamlessImmutable.mod.ImmutableDate.Additions](x: Self) {
         
-        inline def setAsMutable(value: () => Date): Self = StObject.set(x, "asMutable", js.Any.fromFunction0(value))
+        inline def setAsMutable(value: () => js.Date): Self = StObject.set(x, "asMutable", js.Any.fromFunction0(value))
       }
     }
     
     extension [Self <: ImmutableDate](x: Self) {
       
-      inline def setAsMutable(value: () => Date): Self = StObject.set(x, "asMutable", js.Any.fromFunction0(value))
+      inline def setAsMutable(value: () => js.Date): Self = StObject.set(x, "asMutable", js.Any.fromFunction0(value))
       
       inline def setGetDate(value: () => Double): Self = StObject.set(x, "getDate", js.Any.fromFunction0(value))
       
@@ -837,7 +835,7 @@ object mod {
     @JSName("asMutable")
     def asMutable_true(opts: AsMutableOptions[`true`]): T = js.native
     
-    def getIn(propertyPath: js.Array[String]): Immutable[js.Any, js.Object] = js.native
+    def getIn(propertyPath: js.Array[String]): Immutable[Any, js.Object] = js.native
     def getIn[TValue](propertyPath: js.Array[String], defaultValue: TValue): Immutable[TValue, js.Object] = js.native
     def getIn[K /* <: /* keyof T */ String */](
       propertyPath: js.Array[K],
@@ -930,15 +928,15 @@ object mod {
             /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
             js.Object
           ], 
-          /* repeated */ js.Any, 
-          js.Any
+          /* repeated */ Any, 
+          Any
         ],
-      additionalArguments: js.Any*
+      additionalArguments: Any*
     ): Immutable[T, js.Object] = js.native
     def update[TValue](
       property: String,
-      updaterFunction: js.Function2[/* value */ Immutable[TValue, js.Object], /* repeated */ js.Any, js.Any],
-      additionalArguments: js.Any*
+      updaterFunction: js.Function2[/* value */ Immutable[TValue, js.Object], /* repeated */ Any, Any],
+      additionalArguments: Any*
     ): Immutable[T, js.Object] = js.native
     
     def updateIn[K /* <: /* keyof T */ String */](
@@ -948,10 +946,10 @@ object mod {
             /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
             js.Object
           ], 
-          /* repeated */ js.Any, 
-          js.Any
+          /* repeated */ Any, 
+          Any
         ],
-      additionalArguments: js.Any*
+      additionalArguments: Any*
     ): Immutable[T, js.Object] = js.native
     def updateIn[K /* <: /* keyof T */ String */, L /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */](
       propertyPath: js.Tuple2[K, L],
@@ -960,10 +958,10 @@ object mod {
             /* import warning: importer.ImportType#apply Failed type conversion: T[K][L] */ js.Any, 
             js.Object
           ], 
-          /* repeated */ js.Any, 
-          js.Any
+          /* repeated */ Any, 
+          Any
         ],
-      additionalArguments: js.Any*
+      additionalArguments: Any*
     ): Immutable[T, js.Object] = js.native
     def updateIn[K /* <: /* keyof T */ String */, L /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, M /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][L] */ js.Any */](
       propertyPath: js.Tuple3[K, L, M],
@@ -972,10 +970,10 @@ object mod {
             /* import warning: importer.ImportType#apply Failed type conversion: T[K][L][M] */ js.Any, 
             js.Object
           ], 
-          /* repeated */ js.Any, 
-          js.Any
+          /* repeated */ Any, 
+          Any
         ],
-      additionalArguments: js.Any*
+      additionalArguments: Any*
     ): Immutable[T, js.Object] = js.native
     def updateIn[K /* <: /* keyof T */ String */, L /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, M /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][L] */ js.Any */, N /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][L][M] */ js.Any */](
       propertyPath: js.Tuple4[K, L, M, N],
@@ -984,10 +982,10 @@ object mod {
             /* import warning: importer.ImportType#apply Failed type conversion: T[K][L][M][N] */ js.Any, 
             js.Object
           ], 
-          /* repeated */ js.Any, 
-          js.Any
+          /* repeated */ Any, 
+          Any
         ],
-      additionalArguments: js.Any*
+      additionalArguments: Any*
     ): Immutable[T, js.Object] = js.native
     def updateIn[K /* <: /* keyof T */ String */, L /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K] */ js.Any */, M /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][L] */ js.Any */, N /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][L][M] */ js.Any */, O /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[K][L][M][N] */ js.Any */](
       propertyPath: js.Tuple5[K, L, M, N, O],
@@ -996,16 +994,16 @@ object mod {
             /* import warning: importer.ImportType#apply Failed type conversion: T[K][L][M][N][O] */ js.Any, 
             js.Object
           ], 
-          /* repeated */ js.Any, 
-          js.Any
+          /* repeated */ Any, 
+          Any
         ],
-      additionalArguments: js.Any*
+      additionalArguments: Any*
     ): Immutable[T, js.Object] = js.native
     @JSName("updateIn")
     def updateIn_TValue[TValue](
       propertyPath: js.Array[String],
-      updaterFunction: js.Function2[/* value */ TValue, /* repeated */ js.Any, js.Any],
-      additionalArguments: js.Any*
+      updaterFunction: js.Function2[/* value */ TValue, /* repeated */ Any, Any],
+      additionalArguments: Any*
     ): Immutable[T, js.Object] = js.native
     
     def without[K /* <: /* keyof T */ String */](
@@ -1023,7 +1021,7 @@ object mod {
     
     var deep: js.UndefOr[Boolean] = js.undefined
     
-    var merger: js.UndefOr[js.Function3[/* a */ js.Any, /* b */ js.Any, /* config */ js.Any, js.Any]] = js.undefined
+    var merger: js.UndefOr[js.Function3[/* a */ Any, /* b */ Any, /* config */ Any, Any]] = js.undefined
     
     var mode: js.UndefOr[replace | merge] = js.undefined
   }
@@ -1040,7 +1038,7 @@ object mod {
       
       inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
       
-      inline def setMerger(value: (/* a */ js.Any, /* b */ js.Any, /* config */ js.Any) => js.Any): Self = StObject.set(x, "merger", js.Any.fromFunction3(value))
+      inline def setMerger(value: (/* a */ Any, /* b */ Any, /* config */ Any) => Any): Self = StObject.set(x, "merger", js.Any.fromFunction3(value))
       
       inline def setMergerUndefined: Self = StObject.set(x, "merger", js.undefined)
       

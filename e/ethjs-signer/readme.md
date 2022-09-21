@@ -10,15 +10,12 @@ A simple module for signing Ethereum transactions.
 | ------------------ | :-------------: |
 | Full name          | ethjs-signer |
 | Keywords           | ethereum, rpc, formatter, format, ethereum, encoding, decoding |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 69026 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1241.6666666666667 |
+| # stars            | 27.0 |
 
 ## Links
-- [Homepage](https://github.com/ethjs/ethjs-signer#readme)
-- [Bugs](https://github.com/ethjs/ethjs-signer/issues)
-- [Repository](https://github.com/ethjs/ethjs-signer)
 - [Npm](https://www.npmjs.com/package/ethjs-signer)
     
 

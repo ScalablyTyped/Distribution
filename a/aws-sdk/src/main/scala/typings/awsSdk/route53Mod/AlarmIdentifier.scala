@@ -12,7 +12,7 @@ trait AlarmIdentifier extends StObject {
   var Name: AlarmName
   
   /**
-    * For the CloudWatch alarm that you want Route 53 health checkers to use to determine whether this health check is healthy, the region that the alarm was created in. For the current list of CloudWatch regions, see Amazon CloudWatch in the AWS Service Endpoints chapter of the Amazon Web Services General Reference.
+    * For the CloudWatch alarm that you want Route 53 health checkers to use to determine whether this health check is healthy, the region that the alarm was created in. For the current list of CloudWatch regions, see Amazon CloudWatch endpoints and quotas in the Amazon Web Services General Reference.
     */
   var Region: CloudWatchRegion
 }

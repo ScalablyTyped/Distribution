@@ -4,16 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for listing debuggees.
-  */
 trait SchemaListDebuggeesResponse extends StObject {
   
   /**
-    * List of debuggees accessible to the calling user. The fields
-    * `debuggee.id` and `description` are guaranteed to be set. The
-    * `description` field is a human readable field provided by agents and can
-    * be displayed to users.
+    * List of debuggees accessible to the calling user. The fields `debuggee.id` and `description` are guaranteed to be set. The `description` field is a human readable field provided by agents and can be displayed to users.
     */
   var debuggees: js.UndefOr[js.Array[SchemaDebuggee]] = js.undefined
 }
@@ -30,6 +24,6 @@ object SchemaListDebuggeesResponse {
     
     inline def setDebuggeesUndefined: Self = StObject.set(x, "debuggees", js.undefined)
     
-    inline def setDebuggeesVarargs(value: SchemaDebuggee*): Self = StObject.set(x, "debuggees", js.Array(value :_*))
+    inline def setDebuggeesVarargs(value: SchemaDebuggee*): Self = StObject.set(x, "debuggees", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for joi-password-complexity
 
-Typings are for version 3.1
+Typings are for version 5.1.0
 
 ## Library description:
 Joi validation for password complexity requirements.
@@ -10,21 +10,18 @@ Joi validation for password complexity requirements.
 | ------------------ | :-------------: |
 | Full name          | joi-password-complexity |
 | Keywords           | Joi, validation, password, complexity |
-| # releases         | 9 |
-| # dependents       | 1 |
-| # downloads        | 107079 |
-| # stars            | 1 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 22122.333333333332 |
+| # stars            | 53.0 |
 
 ## Links
-- [Homepage](https://github.com/kamronbatman/joi-password-complexity#readme)
-- [Bugs](https://github.com/kamronbatman/joi-password-complexity/issues)
-- [Repository](https://github.com/kamronbatman/joi-password-complexity)
 - [Npm](https://www.npmjs.com/package/joi-password-complexity)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

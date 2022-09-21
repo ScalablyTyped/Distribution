@@ -39,7 +39,7 @@ object FieldSchemaInFormUser {
     EntitySeparator: String,
     FieldType: String,
     Hidden: Boolean,
-    IMEMode: js.Any,
+    IMEMode: Any,
     Id: String,
     ListFormUrl: String,
     Name: String,

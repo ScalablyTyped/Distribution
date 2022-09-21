@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.Graphics
 
-import typings.std.Uint8Array
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Foundation.Collections.IIterator
 import typings.winrt.Windows.Foundation.Collections.IKeyValuePair
@@ -41,7 +40,7 @@ object Imaging {
   
   @JSGlobal("Windows.Graphics.Imaging.BitmapCodecInformation")
   @js.native
-  class BitmapCodecInformation ()
+  open class BitmapCodecInformation ()
     extends StObject
        with typings.winrt.Windows.Graphics.Imaging.BitmapCodecInformation {
     
@@ -60,7 +59,7 @@ object Imaging {
   
   @JSGlobal("Windows.Graphics.Imaging.BitmapDecoder")
   @js.native
-  class BitmapDecoder ()
+  open class BitmapDecoder ()
     extends StObject
        with typings.winrt.Windows.Graphics.Imaging.BitmapDecoder {
     
@@ -129,7 +128,7 @@ object Imaging {
   
   @JSGlobal("Windows.Graphics.Imaging.BitmapEncoder")
   @js.native
-  class BitmapEncoder ()
+  open class BitmapEncoder ()
     extends StObject
        with typings.winrt.Windows.Graphics.Imaging.BitmapEncoder
   /* static members */
@@ -199,7 +198,7 @@ object Imaging {
   
   @JSGlobal("Windows.Graphics.Imaging.BitmapFrame")
   @js.native
-  class BitmapFrame ()
+  open class BitmapFrame ()
     extends StObject
        with typings.winrt.Windows.Graphics.Imaging.BitmapFrame
   
@@ -237,7 +236,7 @@ object Imaging {
   
   @JSGlobal("Windows.Graphics.Imaging.BitmapProperties")
   @js.native
-  class BitmapProperties ()
+  open class BitmapProperties ()
     extends StObject
        with typings.winrt.Windows.Graphics.Imaging.BitmapProperties {
     
@@ -252,7 +251,7 @@ object Imaging {
   
   @JSGlobal("Windows.Graphics.Imaging.BitmapPropertiesView")
   @js.native
-  class BitmapPropertiesView ()
+  open class BitmapPropertiesView ()
     extends StObject
        with typings.winrt.Windows.Graphics.Imaging.BitmapPropertiesView {
     
@@ -262,7 +261,7 @@ object Imaging {
   
   @JSGlobal("Windows.Graphics.Imaging.BitmapPropertySet")
   @js.native
-  class BitmapPropertySet ()
+  open class BitmapPropertySet ()
     extends StObject
        with typings.winrt.Windows.Graphics.Imaging.BitmapPropertySet {
     
@@ -309,7 +308,7 @@ object Imaging {
   
   @JSGlobal("Windows.Graphics.Imaging.BitmapTransform")
   @js.native
-  class BitmapTransform ()
+  open class BitmapTransform ()
     extends StObject
        with typings.winrt.Windows.Graphics.Imaging.BitmapTransform {
     
@@ -334,16 +333,16 @@ object Imaging {
   
   @JSGlobal("Windows.Graphics.Imaging.BitmapTypedValue")
   @js.native
-  class BitmapTypedValue protected ()
+  open class BitmapTypedValue protected ()
     extends StObject
        with typings.winrt.Windows.Graphics.Imaging.BitmapTypedValue {
-    def this(value: js.Any, `type`: PropertyType) = this()
+    def this(value: Any, `type`: PropertyType) = this()
     
     /* CompleteClass */
     var `type`: PropertyType = js.native
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSGlobal("Windows.Graphics.Imaging.ColorManagementMode")
@@ -372,7 +371,7 @@ object Imaging {
   
   @JSGlobal("Windows.Graphics.Imaging.ImageStream")
   @js.native
-  class ImageStream ()
+  open class ImageStream ()
     extends StObject
        with typings.winrt.Windows.Graphics.Imaging.ImageStream {
     
@@ -437,12 +436,12 @@ object Imaging {
   
   @JSGlobal("Windows.Graphics.Imaging.PixelDataProvider")
   @js.native
-  class PixelDataProvider ()
+  open class PixelDataProvider ()
     extends StObject
        with typings.winrt.Windows.Graphics.Imaging.PixelDataProvider {
     
     /* CompleteClass */
-    override def detachPixelData(): Uint8Array = js.native
+    override def detachPixelData(): js.typedarray.Uint8Array = js.native
   }
   
   @JSGlobal("Windows.Graphics.Imaging.PngFilterMode")

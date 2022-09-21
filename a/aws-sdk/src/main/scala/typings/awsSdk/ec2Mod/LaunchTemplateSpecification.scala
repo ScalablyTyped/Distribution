@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LaunchTemplateSpecification extends StObject {
   
   /**
-    * The ID of the launch template.
+    * The ID of the launch template. You must specify the LaunchTemplateId or the LaunchTemplateName, but not both.
     */
   var LaunchTemplateId: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateId] = js.undefined
   
   /**
-    * The name of the launch template.
+    * The name of the launch template. You must specify the LaunchTemplateName or the LaunchTemplateId, but not both.
     */
   var LaunchTemplateName: js.UndefOr[String] = js.undefined
   
   /**
-    * The version number of the launch template. Default: The default version for the launch template.
+    * The launch template version number, $Latest, or $Default. If the value is $Latest, Amazon EC2 uses the latest version of the launch template. If the value is $Default, Amazon EC2 uses the default version of the launch template. Default: The default version of the launch template.
     */
   var Version: js.UndefOr[String] = js.undefined
 }

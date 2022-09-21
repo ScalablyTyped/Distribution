@@ -1,7 +1,7 @@
 
 # Scala.js typings for parse5-html-rewriting-stream
 
-Typings are for version 5.1
+Typings are for version 7.0.0
 
 ## Library description:
 Streaming HTML rewriter.
@@ -10,10 +10,10 @@ Streaming HTML rewriter.
 | ------------------ | :-------------: |
 | Full name          | parse5-html-rewriting-stream |
 | Keywords           | parse5, parser, stream, streaming, rewritter, rewrite, HTML |
-| # releases         | 4 |
-| # dependents       | 11 |
-| # downloads        | 6537285 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 6681496.666666667 |
+| # stars            | 2911.0 |
 
 ## Links
 - [Homepage](https://github.com/inikulin/parse5)
@@ -24,7 +24,7 @@ Streaming HTML rewriter.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

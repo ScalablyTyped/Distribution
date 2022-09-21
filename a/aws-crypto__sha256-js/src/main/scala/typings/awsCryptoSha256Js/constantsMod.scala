@@ -1,6 +1,5 @@
 package typings.awsCryptoSha256Js
 
-import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object constantsMod {
   
   @JSImport("@aws-crypto/sha256-js/build/constants", "KEY")
   @js.native
-  val KEY: Uint32Array = js.native
+  val KEY: js.typedarray.Uint32Array = js.native
   
   @JSImport("@aws-crypto/sha256-js/build/constants", "MAX_HASHABLE_LENGTH")
   @js.native

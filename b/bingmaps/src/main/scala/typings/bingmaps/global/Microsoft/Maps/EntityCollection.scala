@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @constructor Deprecated. Use the Layer class.
   * @deprecated in V8
   */
-class EntityCollection ()
+open class EntityCollection ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.EntityCollection {
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.KeyboardEventTypes")
 @js.native
-class KeyboardEventTypes ()
+open class KeyboardEventTypes ()
   extends StObject
      with typings.babylonjs.BABYLON.KeyboardEventTypes
 /* static members */
@@ -17,12 +17,12 @@ object KeyboardEventTypes {
     */
   @JSGlobal("BABYLON.KeyboardEventTypes.KEYDOWN")
   @js.native
-  val KEYDOWN: Double = js.native
+  val KEYDOWN: /* 1 */ Double = js.native
   
   /**
     * The keyup event is fired when a key has been released.
     */
   @JSGlobal("BABYLON.KeyboardEventTypes.KEYUP")
   @js.native
-  val KEYUP: Double = js.native
+  val KEYUP: /* 2 */ Double = js.native
 }

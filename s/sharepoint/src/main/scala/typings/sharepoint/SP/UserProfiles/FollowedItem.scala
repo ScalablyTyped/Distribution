@@ -15,7 +15,7 @@ trait FollowedItem
      with ClientValueObject {
   
   /** Additional metadata associated with this item */
-  def get_data(): StringDictionary[js.Any]
+  def get_data(): StringDictionary[Any]
   
   /** Specifies the type of the file if this item is a file. Otherwise, this property is the empty string. */
   def get_fileType(): String
@@ -73,7 +73,7 @@ trait FollowedItem
   def get_webId(): Guid
   
   /** Additional metadata associated with this item */
-  def set_data(value: StringDictionary[js.Any]): StringDictionary[js.Any]
+  def set_data(value: StringDictionary[Any]): StringDictionary[Any]
   
   /** Specifies the type of the file if this item is a file. Otherwise, this property is the empty string. */
   def set_fileType(value: String): String
@@ -128,15 +128,15 @@ trait FollowedItem
   def set_url(value: String): String
   
   /** Specifies the site identification (GUID) in the Content database for this item if it is a site, or the identification of its parent site if this item is a document. */
-  def set_webId(value: Guid): js.Any
+  def set_webId(value: Guid): Any
 }
 object FollowedItem {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
-    get_data: () => StringDictionary[js.Any],
+    fromJson: Any => Unit,
+    get_data: () => StringDictionary[Any],
     get_fileType: () => String,
     get_fileTypeProgid: () => String,
     get_flags: () => String,
@@ -155,7 +155,7 @@ object FollowedItem {
     get_uniqueId: () => Guid,
     get_url: () => String,
     get_webId: () => Guid,
-    set_data: StringDictionary[js.Any] => StringDictionary[js.Any],
+    set_data: StringDictionary[Any] => StringDictionary[Any],
     set_fileType: String => String,
     set_fileTypeProgid: String => String,
     set_flags: String => String,
@@ -172,7 +172,7 @@ object FollowedItem {
     set_title: String => String,
     set_uniqueId: Guid => Guid,
     set_url: String => String,
-    set_webId: Guid => js.Any,
+    set_webId: Guid => Any,
     writeToXml: (XmlWriter, SerializationContext) => Unit
   ): FollowedItem = {
     val __obj = js.Dynamic.literal(customFromJson = js.Any.fromFunction1(customFromJson), customWriteToXml = js.Any.fromFunction2(customWriteToXml), fromJson = js.Any.fromFunction1(fromJson), get_data = js.Any.fromFunction0(get_data), get_fileType = js.Any.fromFunction0(get_fileType), get_fileTypeProgid = js.Any.fromFunction0(get_fileTypeProgid), get_flags = js.Any.fromFunction0(get_flags), get_hasFeed = js.Any.fromFunction0(get_hasFeed), get_hidden = js.Any.fromFunction0(get_hidden), get_iconUrl = js.Any.fromFunction0(get_iconUrl), get_itemId = js.Any.fromFunction0(get_itemId), get_itemType = js.Any.fromFunction0(get_itemType), get_listId = js.Any.fromFunction0(get_listId), get_parentUrl = js.Any.fromFunction0(get_parentUrl), get_serverUrlProgid = js.Any.fromFunction0(get_serverUrlProgid), get_siteId = js.Any.fromFunction0(get_siteId), get_subtype = js.Any.fromFunction0(get_subtype), get_title = js.Any.fromFunction0(get_title), get_typeId = js.Any.fromFunction0(get_typeId), get_uniqueId = js.Any.fromFunction0(get_uniqueId), get_url = js.Any.fromFunction0(get_url), get_webId = js.Any.fromFunction0(get_webId), set_data = js.Any.fromFunction1(set_data), set_fileType = js.Any.fromFunction1(set_fileType), set_fileTypeProgid = js.Any.fromFunction1(set_fileTypeProgid), set_flags = js.Any.fromFunction1(set_flags), set_hasFeed = js.Any.fromFunction1(set_hasFeed), set_hidden = js.Any.fromFunction1(set_hidden), set_iconUrl = js.Any.fromFunction1(set_iconUrl), set_itemId = js.Any.fromFunction1(set_itemId), set_itemType = js.Any.fromFunction1(set_itemType), set_listId = js.Any.fromFunction1(set_listId), set_parentUrl = js.Any.fromFunction1(set_parentUrl), set_serverUrlProgid = js.Any.fromFunction1(set_serverUrlProgid), set_siteId = js.Any.fromFunction1(set_siteId), set_subtype = js.Any.fromFunction1(set_subtype), set_title = js.Any.fromFunction1(set_title), set_uniqueId = js.Any.fromFunction1(set_uniqueId), set_url = js.Any.fromFunction1(set_url), set_webId = js.Any.fromFunction1(set_webId), writeToXml = js.Any.fromFunction2(writeToXml))
@@ -181,7 +181,7 @@ object FollowedItem {
   
   extension [Self <: FollowedItem](x: Self) {
     
-    inline def setGet_data(value: () => StringDictionary[js.Any]): Self = StObject.set(x, "get_data", js.Any.fromFunction0(value))
+    inline def setGet_data(value: () => StringDictionary[Any]): Self = StObject.set(x, "get_data", js.Any.fromFunction0(value))
     
     inline def setGet_fileType(value: () => String): Self = StObject.set(x, "get_fileType", js.Any.fromFunction0(value))
     
@@ -217,7 +217,7 @@ object FollowedItem {
     
     inline def setGet_webId(value: () => Guid): Self = StObject.set(x, "get_webId", js.Any.fromFunction0(value))
     
-    inline def setSet_data(value: StringDictionary[js.Any] => StringDictionary[js.Any]): Self = StObject.set(x, "set_data", js.Any.fromFunction1(value))
+    inline def setSet_data(value: StringDictionary[Any] => StringDictionary[Any]): Self = StObject.set(x, "set_data", js.Any.fromFunction1(value))
     
     inline def setSet_fileType(value: String => String): Self = StObject.set(x, "set_fileType", js.Any.fromFunction1(value))
     
@@ -251,6 +251,6 @@ object FollowedItem {
     
     inline def setSet_url(value: String => String): Self = StObject.set(x, "set_url", js.Any.fromFunction1(value))
     
-    inline def setSet_webId(value: Guid => js.Any): Self = StObject.set(x, "set_webId", js.Any.fromFunction1(value))
+    inline def setSet_webId(value: Guid => Any): Self = StObject.set(x, "set_webId", js.Any.fromFunction1(value))
   }
 }

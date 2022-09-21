@@ -12,15 +12,15 @@ import typings.sailsIoJs.sailsIoJsStrings.production
 import typings.sailsIoJs.sailsIoJsStrings.reconnect
 import typings.sailsIoJs.sailsIoJsStrings.reconnecting
 import typings.sailsIoJs.sailsIoJsStrings.websocket
-import typings.socketIoClient.SocketIOClientStatic
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(client: SocketIOClientStatic): Client = ^.asInstanceOf[js.Dynamic].apply(client.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def apply(
+    client: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIOClientStatic */ Any
+  ): Client = ^.asInstanceOf[js.Dynamic].apply(client.asInstanceOf[js.Any]).asInstanceOf[Client]
   
   @JSImport("sails.io.js", JSImport.Namespace)
   @js.native
@@ -108,11 +108,13 @@ object mod {
     }
   }
   
-  type Data = js.Object
+  type Data = js.Object | String
   
   type Headers = StringDictionary[String]
   
-  trait InitialConnectionHeaders extends StObject {
+  trait InitialConnectionHeaders
+    extends StObject
+       with /* key */ StringDictionary[Any] {
     
     var nosession: js.UndefOr[Boolean] = js.undefined
   }
@@ -133,13 +135,13 @@ object mod {
   
   trait JWR extends StObject {
     
-    var body: js.Any
+    var body: Any
     
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[js.Error] = js.undefined
     
     var headers: Headers
     
-    def pipe(): Error
+    def pipe(): js.Error
     
     var statusCode: Double
     
@@ -147,22 +149,22 @@ object mod {
   }
   object JWR {
     
-    inline def apply(body: js.Any, headers: Headers, pipe: () => Error, statusCode: Double, toPOJO: () => Body): JWR = {
+    inline def apply(body: Any, headers: Headers, pipe: () => js.Error, statusCode: Double, toPOJO: () => Body): JWR = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], pipe = js.Any.fromFunction0(pipe), statusCode = statusCode.asInstanceOf[js.Any], toPOJO = js.Any.fromFunction0(toPOJO))
       __obj.asInstanceOf[JWR]
     }
     
     extension [Self <: JWR](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setPipe(value: () => Error): Self = StObject.set(x, "pipe", js.Any.fromFunction0(value))
+      inline def setPipe(value: () => js.Error): Self = StObject.set(x, "pipe", js.Any.fromFunction0(value))
       
       inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
@@ -170,17 +172,17 @@ object mod {
     }
   }
   
-  type RequestCallback = js.Function2[/* body */ js.Any, /* jwr */ JWR, js.Any]
+  type RequestCallback = js.Function2[/* body */ Any, /* jwr */ JWR, Any]
   
   trait RequestOptions extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var headers: js.UndefOr[Headers] = js.undefined
     
     var method: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
     var url: String
   }
@@ -193,7 +195,7 @@ object mod {
     
     extension [Self <: RequestOptions](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -205,7 +207,7 @@ object mod {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -269,19 +271,19 @@ object mod {
     
     def mightBeAboutToAutoConnect(): Boolean = js.native
     
-    def off(event: String, cb: js.Function0[js.Any]): Socket = js.native
+    def off(event: String, cb: js.Function1[/* repeated */ Any, Any]): Socket = js.native
     
-    def on(event: String, cb: js.Function1[/* repeated */ js.Any, js.Any]): Socket = js.native
+    def on(event: String, cb: js.Function1[/* repeated */ Any, Any]): Socket = js.native
     @JSName("on")
-    def on_connect(event: connect, cb: js.Function0[js.Any]): Socket = js.native
+    def on_connect(event: connect, cb: js.Function0[Any]): Socket = js.native
     @JSName("on")
-    def on_disconnect(event: disconnect, cb: js.Function0[js.Any]): Socket = js.native
+    def on_disconnect(event: disconnect, cb: js.Function0[Any]): Socket = js.native
     @JSName("on")
-    def on_error(event: error, cb: js.Function1[/* err */ js.Any, js.Any]): Socket = js.native
+    def on_error(event: error, cb: js.Function1[/* err */ Any, Any]): Socket = js.native
     @JSName("on")
-    def on_reconnect(event: reconnect, cb: js.Function2[/* transport */ String, /* numAttempts */ Double, js.Any]): Socket = js.native
+    def on_reconnect(event: reconnect, cb: js.Function2[/* transport */ String, /* numAttempts */ Double, Any]): Socket = js.native
     @JSName("on")
-    def on_reconnecting(event: reconnecting, cb: js.Function1[/* numAttempts */ Double, js.Any]): Socket = js.native
+    def on_reconnecting(event: reconnecting, cb: js.Function1[/* numAttempts */ Double, Any]): Socket = js.native
     
     def post(url: String): Unit = js.native
     def post(url: String, cb: RequestCallback): Unit = js.native

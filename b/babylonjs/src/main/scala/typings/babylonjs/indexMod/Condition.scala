@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "Condition")
 @js.native
-class Condition protected ()
+open class Condition protected ()
   extends typings.babylonjs.actionsIndexMod.Condition {
   /**
     * Creates a new Condition

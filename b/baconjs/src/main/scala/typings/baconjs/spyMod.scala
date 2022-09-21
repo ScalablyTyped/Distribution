@@ -13,9 +13,9 @@ object spyMod {
   
   inline def default(spy: Spy_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(spy.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def registerObs(obs: default[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerObs")(obs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerObs(obs: default[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerObs")(obs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def spy(spy: Spy_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(spy.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  type Spy_ = js.Function1[/* obs */ default[js.Any], js.Any]
+  type Spy_ = js.Function1[/* obs */ default[Any], Any]
 }

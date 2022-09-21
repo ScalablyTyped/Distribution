@@ -9,7 +9,7 @@ trait ConnectionState extends StObject {
   /**
     * The last time the connection status was updated.
     */
-  var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The connection status of the tunnel. Valid values are CONNECTED and DISCONNECTED.
@@ -25,7 +25,7 @@ object ConnectionState {
   
   extension [Self <: ConnectionState](x: Self) {
     
-    inline def setLastUpdatedAt(value: DateType): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     

@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `32` extends StObject {
   
-  def failure(theUser: KiiUser, anErrorString: String): js.Any
+  def failure(theUser: KiiUser, anErrorString: String): Any
   
-  def success(theAuthenticatedUser: KiiUser): js.Any
+  def success(theAuthenticatedUser: KiiUser): Any
 }
 object `32` {
   
-  inline def apply(failure: (KiiUser, String) => js.Any, success: KiiUser => js.Any): `32` = {
+  inline def apply(failure: (KiiUser, String) => Any, success: KiiUser => Any): `32` = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction2(failure), success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[`32`]
   }
   
   extension [Self <: `32`](x: Self) {
     
-    inline def setFailure(value: (KiiUser, String) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction2(value))
+    inline def setFailure(value: (KiiUser, String) => Any): Self = StObject.set(x, "failure", js.Any.fromFunction2(value))
     
-    inline def setSuccess(value: KiiUser => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: KiiUser => Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

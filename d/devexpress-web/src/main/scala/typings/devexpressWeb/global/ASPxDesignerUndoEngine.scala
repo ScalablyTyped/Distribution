@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxDesignerUndoEngine")
 @js.native
-class ASPxDesignerUndoEngine ()
+open class ASPxDesignerUndoEngine ()
   extends StObject
      with typings.devexpressWeb.ASPxDesignerUndoEngine {
   
@@ -14,13 +14,13 @@ class ASPxDesignerUndoEngine ()
   override def clearHistory(): Unit = js.native
   
   /* CompleteClass */
-  var isDirty: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+  var isDirty: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any = js.native
   
   /* CompleteClass */
   override def redo(): Unit = js.native
   
   /* CompleteClass */
-  var redoEnabled: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+  var redoEnabled: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any = js.native
   
   /* CompleteClass */
   override def undo(): Unit = js.native
@@ -29,5 +29,5 @@ class ASPxDesignerUndoEngine ()
   override def undoAll(): Unit = js.native
   
   /* CompleteClass */
-  var undoEnabled: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+  var undoEnabled: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any = js.native
 }

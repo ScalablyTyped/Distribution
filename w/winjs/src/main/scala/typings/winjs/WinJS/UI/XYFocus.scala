@@ -56,7 +56,7 @@ object XYFocus {
   @js.native
   trait XYFocusEvent
     extends StObject
-       with CustomEvent[js.Any] {
+       with CustomEvent[Any] {
     
     @JSName("detail")
     var detail_XYFocusEvent: KeyCode = js.native

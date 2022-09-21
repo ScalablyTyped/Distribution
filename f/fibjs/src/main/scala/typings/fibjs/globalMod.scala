@@ -17,7 +17,7 @@ object globalMod {
   
   @JSImport("global", "Buffer")
   @js.native
-  class Buffer ()
+  open class Buffer ()
     extends StObject
        with ClassBuffer
   
@@ -25,7 +25,7 @@ object globalMod {
   
   @JSImport("global", "Int64")
   @js.native
-  class Int64 ()
+  open class Int64 ()
     extends StObject
        with ClassInt64
   
@@ -35,15 +35,15 @@ object globalMod {
   
   @JSImport("global", "argv")
   @js.native
-  val argv: js.Array[js.Any] = js.native
+  val argv: js.Array[Any] = js.native
   
-  inline def clearHrInterval(t: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearHrInterval")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearHrInterval(t: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearHrInterval")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def clearImmediate(t: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearImmediate")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearImmediate(t: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearImmediate")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def clearInterval(t: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearInterval(t: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def clearTimeout(t: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearTimeout(t: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object console {
     
@@ -91,31 +91,31 @@ object globalMod {
     @js.native
     val WARN_ : /* 4 */ Double = js.native
     
-    inline def add(cfg: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(cfg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def add(cfg: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(cfg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def add(cfg: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(cfg.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def add(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def alert(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def alert(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def alert(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def alert(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
-    inline def assert(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def assert(value: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def assert(value: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def assert(value: Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
     
     inline def clickMouse(button: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clickMouse")(button.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def clickMouse(button: String, dbclick: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clickMouse")(button.asInstanceOf[js.Any], dbclick.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def crit(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crit")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def crit(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crit")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def crit(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crit")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def crit(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crit")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
-    inline def debug(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def debug(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def debug(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def debug(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
-    inline def dir(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dir")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def dir(obj: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dir")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def error(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def error(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def error(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def error(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     @JSImport("global", "console.height")
     @js.native
@@ -123,23 +123,23 @@ object globalMod {
     
     inline def hideCursor(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideCursor")().asInstanceOf[Unit]
     
-    inline def info(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def info(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def info(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def info(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     inline def keyDown(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("keyDown")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def keyDown(key: String, modifier: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyDown")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def keyDown(key: String, modifier: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyDown")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def keyDown(key: String, modifier: js.Array[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyDown")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def keyTap(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("keyTap")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def keyTap(key: String, modifier: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyTap")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def keyTap(key: String, modifier: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyTap")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def keyTap(key: String, modifier: js.Array[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyTap")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def keyUp(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("keyUp")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def keyUp(key: String, modifier: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyUp")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def keyUp(key: String, modifier: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyUp")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def keyUp(key: String, modifier: js.Array[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyUp")(key.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def log(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def log(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def log(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def log(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     @JSImport("global", "console.loglevel")
     @js.native
@@ -153,11 +153,11 @@ object globalMod {
     
     inline def moveTo(row: Double, column: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("moveTo")(row.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def notice(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notice")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def notice(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notice")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def notice(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notice")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def notice(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notice")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
-    inline def print(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def print(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def print(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def print(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     inline def readLine(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readLine")().asInstanceOf[String]
     inline def readLine(msg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readLine")(msg.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -180,8 +180,8 @@ object globalMod {
     
     inline def typeString(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("typeString")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def warn(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def warn(fmt: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(fmt.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def warn(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
+    inline def warn(fmt: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(List(fmt.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     @JSImport("global", "console.width")
     @js.native
@@ -212,7 +212,7 @@ object globalMod {
     
     @JSImport("global", "process.argv")
     @js.native
-    val argv: js.Array[js.Any] = js.native
+    val argv: js.Array[Any] = js.native
     
     inline def chdir(directory: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chdir")(directory.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -224,7 +224,7 @@ object globalMod {
     
     @JSImport("global", "process.execArgv")
     @js.native
-    val execArgv: js.Array[js.Any] = js.native
+    val execArgv: js.Array[Any] = js.native
     
     @JSImport("global", "process.execPath")
     @js.native
@@ -237,16 +237,16 @@ object globalMod {
     @js.native
     val exitCode: Double = js.native
     
-    inline def hrtime(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hrtime")().asInstanceOf[js.Array[js.Any]]
-    inline def hrtime(diff: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hrtime")(diff.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def hrtime(): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hrtime")().asInstanceOf[js.Array[Any]]
+    inline def hrtime(diff: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hrtime")(diff.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
     
     inline def memoryUsage(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryUsage")().asInstanceOf[js.Object]
     
-    inline def nextTick(func: js.Function, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def nextTick(func: js.Function, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(List(func.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     inline def open(command: String): ClassSubProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(command.asInstanceOf[js.Any]).asInstanceOf[ClassSubProcess]
-    inline def open(command: String, args: js.Array[js.Any]): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
-    inline def open(command: String, args: js.Array[js.Any], opts: js.Object): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
+    inline def open(command: String, args: js.Array[Any]): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
+    inline def open(command: String, args: js.Array[Any], opts: js.Object): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
     inline def open(command: String, opts: js.Object): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(command.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
     
     @JSImport("global", "process.platform")
@@ -254,13 +254,13 @@ object globalMod {
     val platform: String = js.native
     
     inline def run(command: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(command.asInstanceOf[js.Any]).asInstanceOf[Double]
-    inline def run(command: String, args: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
-    inline def run(command: String, args: js.Array[js.Any], opts: js.Object): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def run(command: String, args: js.Array[Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def run(command: String, args: js.Array[Any], opts: js.Object): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
     inline def run(command: String, opts: js.Object): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(command.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def start(command: String): ClassSubProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(command.asInstanceOf[js.Any]).asInstanceOf[ClassSubProcess]
-    inline def start(command: String, args: js.Array[js.Any]): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
-    inline def start(command: String, args: js.Array[js.Any], opts: js.Object): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
+    inline def start(command: String, args: js.Array[Any]): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
+    inline def start(command: String, args: js.Array[Any], opts: js.Object): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
     inline def start(command: String, opts: js.Object): ClassSubProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(command.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClassSubProcess]
     
     @JSImport("global", "process.stderr")
@@ -291,21 +291,21 @@ object globalMod {
   }
   
   inline def repl(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("repl")().asInstanceOf[Unit]
-  inline def repl(cmds: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("repl")(cmds.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def repl(cmds: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("repl")(cmds.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def repl(out: ClassStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("repl")(out.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def repl(out: ClassStream, cmds: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repl")(out.asInstanceOf[js.Any], cmds.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repl(out: ClassStream, cmds: js.Array[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repl")(out.asInstanceOf[js.Any], cmds.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def require(id: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def require(id: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(id.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def run(fname: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(fname.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def run(fname: String, argv: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(fname.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def run(fname: String, argv: js.Array[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(fname.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setHrInterval(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setHrInterval")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
+  inline def setHrInterval(callback: js.Function, timeout: Double, args: Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setHrInterval")((List(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ClassTimer]
   
-  inline def setImmediate(callback: js.Function, args: js.Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(callback.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
+  inline def setImmediate(callback: js.Function, args: Any*): ClassTimer = ^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(List(callback.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ClassTimer]
   
-  inline def setInterval(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
+  inline def setInterval(callback: js.Function, timeout: Double, args: Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")((List(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ClassTimer]
   
-  inline def setTimeout(callback: js.Function, timeout: Double, args: js.Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
-  inline def setTimeout(callback: js.Function, timeout: Unit, args: js.Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
+  inline def setTimeout(callback: js.Function, timeout: Double, args: Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")((List(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ClassTimer]
+  inline def setTimeout(callback: js.Function, timeout: Unit, args: Any*): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")((List(callback.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ClassTimer]
 }

@@ -13,7 +13,7 @@ object Collision {
   
   @JSGlobal("Box2D.Collision.Features")
   @js.native
-  class Features ()
+  open class Features ()
     extends StObject
        with typings.box2d.Box2D.Collision.Features {
     
@@ -50,7 +50,7 @@ object Collision {
       * Creates a new circle shape.
       * @param radius Circle radius.
       **/
-    class b2CircleShape ()
+    open class b2CircleShape ()
       extends StObject
          with typings.box2d.Box2D.Collision.Shapes.b2CircleShape {
       def this(radius: Double) = this()
@@ -163,7 +163,7 @@ object Collision {
     /**
       * Creates a new edge chain def.
       **/
-    class b2EdgeChainDef ()
+    open class b2EdgeChainDef ()
       extends StObject
          with typings.box2d.Box2D.Collision.Shapes.b2EdgeChainDef {
       
@@ -188,7 +188,7 @@ object Collision {
     
     @JSGlobal("Box2D.Collision.Shapes.b2EdgeShape")
     @js.native
-    class b2EdgeShape protected ()
+    open class b2EdgeShape protected ()
       extends StObject
          with typings.box2d.Box2D.Collision.Shapes.b2EdgeShape {
       /**
@@ -378,7 +378,7 @@ object Collision {
     
     @JSGlobal("Box2D.Collision.Shapes.b2MassData")
     @js.native
-    class b2MassData ()
+    open class b2MassData ()
       extends StObject
          with typings.box2d.Box2D.Collision.Shapes.b2MassData {
       
@@ -403,7 +403,7 @@ object Collision {
     
     @JSGlobal("Box2D.Collision.Shapes.b2PolygonShape")
     @js.native
-    class b2PolygonShape ()
+    open class b2PolygonShape ()
       extends StObject
          with typings.box2d.Box2D.Collision.Shapes.b2PolygonShape {
       
@@ -535,7 +535,7 @@ object Collision {
     /**
       * Creates a new b2Shape.
       **/
-    class b2Shape ()
+    open class b2Shape ()
       extends StObject
          with typings.box2d.Box2D.Collision.Shapes.b2Shape {
       
@@ -683,7 +683,7 @@ object Collision {
   
   @JSGlobal("Box2D.Collision.b2AABB")
   @js.native
-  class b2AABB ()
+  open class b2AABB ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2AABB {
     
@@ -777,7 +777,7 @@ object Collision {
   /**
     * Creates a new Contact ID.
     **/
-  class b2ContactID ()
+  open class b2ContactID ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2ContactID {
     
@@ -810,7 +810,7 @@ object Collision {
   
   @JSGlobal("Box2D.Collision.b2ContactPoint")
   @js.native
-  class b2ContactPoint ()
+  open class b2ContactPoint ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2ContactPoint {
     
@@ -871,7 +871,7 @@ object Collision {
   
   @JSGlobal("Box2D.Collision.b2DistanceInput")
   @js.native
-  class b2DistanceInput ()
+  open class b2DistanceInput ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2DistanceInput {
     
@@ -908,7 +908,7 @@ object Collision {
   
   @JSGlobal("Box2D.Collision.b2DistanceOutput")
   @js.native
-  class b2DistanceOutput ()
+  open class b2DistanceOutput ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2DistanceOutput {
     
@@ -939,7 +939,7 @@ object Collision {
   
   @JSGlobal("Box2D.Collision.b2DistanceProxy")
   @js.native
-  class b2DistanceProxy ()
+  open class b2DistanceProxy ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2DistanceProxy {
     
@@ -1005,7 +1005,7 @@ object Collision {
   /**
     * Constructing the tree initializes the node pool.
     **/
-  class b2DynamicTree ()
+  open class b2DynamicTree ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2DynamicTree {
     
@@ -1016,7 +1016,7 @@ object Collision {
       * @return Dynamic tree node.
       **/
     /* CompleteClass */
-    override def CreateProxy(aabb: typings.box2d.Box2D.Collision.b2AABB, userData: js.Any): typings.box2d.Box2D.Collision.b2DynamicTreeNode = js.native
+    override def CreateProxy(aabb: typings.box2d.Box2D.Collision.b2AABB, userData: Any): typings.box2d.Box2D.Collision.b2DynamicTreeNode = js.native
     
     /**
       * Destroy a proxy. This asserts if the id is invalid.
@@ -1040,7 +1040,7 @@ object Collision {
       * @return User data for proxy or null if proxy is invalid.
       **/
     /* CompleteClass */
-    override def GetUserData(proxy: typings.box2d.Box2D.Collision.b2DynamicTreeNode): js.Any = js.native
+    override def GetUserData(proxy: typings.box2d.Box2D.Collision.b2DynamicTreeNode): Any = js.native
     
     /**
       * Move a proxy with a swept AABB. If the proxy has moved outside of its fattened AABB, then the proxy is removed from the tree and re-inserted. Otherwise the function returns immediately.
@@ -1098,7 +1098,7 @@ object Collision {
   /**
     * Creates the dynamic tree broad phase.
     **/
-  class b2DynamicTreeBroadPhase ()
+  open class b2DynamicTreeBroadPhase ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2DynamicTreeBroadPhase {
     
@@ -1109,7 +1109,7 @@ object Collision {
       * @return Proxy created from aabb and userData.
       **/
     /* CompleteClass */
-    override def CreateProxy(aabb: typings.box2d.Box2D.Collision.b2AABB, userData: js.Any): typings.box2d.Box2D.Collision.b2DynamicTreeNode = js.native
+    override def CreateProxy(aabb: typings.box2d.Box2D.Collision.b2AABB, userData: Any): typings.box2d.Box2D.Collision.b2DynamicTreeNode = js.native
     
     /**
       * Destroy a proxy. It is up to the client to remove any pairs.
@@ -1138,7 +1138,7 @@ object Collision {
       * @return Gets the user data from proxy, or null if the proxy is invalid.
       **/
     /* CompleteClass */
-    override def GetUserData(proxy: typings.box2d.Box2D.Collision.b2DynamicTreeNode): js.Any = js.native
+    override def GetUserData(proxy: typings.box2d.Box2D.Collision.b2DynamicTreeNode): Any = js.native
     
     /**
       * Call MoveProxy as many times as you like, then when you are done call UpdatePairs to finalized the proxy pairs (for your time step).
@@ -1209,7 +1209,7 @@ object Collision {
       *    param userDataB Proxy B in the pair user data.
       **/
     /* CompleteClass */
-    override def UpdatePairs(callback: js.Function2[/* userDataA */ js.Any, /* userDataB */ js.Any, Unit]): Unit = js.native
+    override def UpdatePairs(callback: js.Function2[/* userDataA */ Any, /* userDataB */ Any, Unit]): Unit = js.native
     
     /**
       * Validates the dynamic tree.
@@ -1221,7 +1221,7 @@ object Collision {
   
   @JSGlobal("Box2D.Collision.b2DynamicTreeNode")
   @js.native
-  class b2DynamicTreeNode ()
+  open class b2DynamicTreeNode ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2DynamicTreeNode
   
@@ -1230,7 +1230,7 @@ object Collision {
   /**
     * Creates a new manifold.
     **/
-  class b2Manifold ()
+  open class b2Manifold ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2Manifold {
     
@@ -1321,7 +1321,7 @@ object Collision {
   /**
     * Creates a new manifold point.
     **/
-  class b2ManifoldPoint ()
+  open class b2ManifoldPoint ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2ManifoldPoint {
     
@@ -1365,7 +1365,7 @@ object Collision {
   
   @JSGlobal("Box2D.Collision.b2OBB")
   @js.native
-  class b2OBB ()
+  open class b2OBB ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2OBB {
     
@@ -1396,7 +1396,7 @@ object Collision {
     * @param p2 End point of the ray, default = null.
     * @param maxFraction Truncate the ray to reach up to this fraction from p1 to p2.
     **/
-  class b2RayCastInput ()
+  open class b2RayCastInput ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2RayCastInput {
     def this(p1: b2Vec2) = this()
@@ -1428,7 +1428,7 @@ object Collision {
   
   @JSGlobal("Box2D.Collision.b2RayCastOutput")
   @js.native
-  class b2RayCastOutput ()
+  open class b2RayCastOutput ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2RayCastOutput {
     
@@ -1447,7 +1447,7 @@ object Collision {
   
   @JSGlobal("Box2D.Collision.b2Segment")
   @js.native
-  class b2Segment ()
+  open class b2Segment ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2Segment {
     
@@ -1502,7 +1502,7 @@ object Collision {
   
   @JSGlobal("Box2D.Collision.b2SimplexCache")
   @js.native
-  class b2SimplexCache ()
+  open class b2SimplexCache ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2SimplexCache {
     
@@ -1533,7 +1533,7 @@ object Collision {
   
   @JSGlobal("Box2D.Collision.b2TOIInput")
   @js.native
-  class b2TOIInput ()
+  open class b2TOIInput ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2TOIInput {
     
@@ -1573,7 +1573,7 @@ object Collision {
   /**
     * Creates a new b2WorldManifold.
     **/
-  class b2WorldManifold ()
+  open class b2WorldManifold ()
     extends StObject
        with typings.box2d.Box2D.Collision.b2WorldManifold {
     

@@ -5,6 +5,7 @@ import typings.serviceWorkerMock.serviceWorkerMockStrings.message
 import typings.serviceWorkerMock.serviceWorkerMockStrings.notificationclick
 import typings.serviceWorkerMock.serviceWorkerMockStrings.notificationclose
 import typings.serviceWorkerMock.serviceWorkerMockStrings.push
+import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
 import typings.std.MessageEventSource
 import typings.std.MessagePort
@@ -20,15 +21,14 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
+    def apply(name: notificationclick | notificationclose, args: Notification): js.Promise[Unit] = js.native
     def apply(name: fetch, request: String): js.Promise[Unit] = js.native
     def apply(name: fetch, request: Request): js.Promise[Unit] = js.native
     def apply(name: message, args: PartialMessageEventany): js.Promise[Unit] = js.native
-    def apply(name: notificationclick, args: Notification): js.Promise[Unit] = js.native
-    def apply(name: notificationclose, args: Notification): js.Promise[Unit] = js.native
     def apply(
       name: push,
       args: Partial[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PushEvent */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PushEvent */ Any
         ]
     ): js.Promise[Unit] = js.native
     def apply(
@@ -59,13 +59,27 @@ object anon {
     
     var currentTarget: js.UndefOr[EventTarget | Null] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var defaultPrevented: js.UndefOr[Boolean] = js.undefined
     
     var eventPhase: js.UndefOr[Double] = js.undefined
     
     var initEvent: js.UndefOr[js.Function1[/* type */ String, Unit]] = js.undefined
+    
+    var initMessageEvent: js.UndefOr[
+        js.Function8[
+          /* type */ String, 
+          /* bubbles */ js.UndefOr[Boolean], 
+          /* cancelable */ js.UndefOr[Boolean], 
+          /* data */ js.UndefOr[Any], 
+          /* origin */ js.UndefOr[String], 
+          /* lastEventId */ js.UndefOr[String], 
+          /* source */ js.UndefOr[MessageEventSource | Null], 
+          /* ports */ js.UndefOr[js.Array[MessagePort]], 
+          Unit
+        ]
+      ] = js.undefined
     
     var isTrusted: js.UndefOr[Boolean] = js.undefined
     
@@ -89,7 +103,7 @@ object anon {
     
     var target: js.UndefOr[EventTarget | Null] = js.undefined
     
-    var timeStamp: js.UndefOr[Double] = js.undefined
+    var timeStamp: js.UndefOr[DOMHighResTimeStamp] = js.undefined
     
     var `type`: js.UndefOr[String] = js.undefined
   }
@@ -140,7 +154,7 @@ object anon {
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -155,6 +169,12 @@ object anon {
       inline def setInitEvent(value: /* type */ String => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction1(value))
       
       inline def setInitEventUndefined: Self = StObject.set(x, "initEvent", js.undefined)
+      
+      inline def setInitMessageEvent(
+        value: (/* type */ String, /* bubbles */ js.UndefOr[Boolean], /* cancelable */ js.UndefOr[Boolean], /* data */ js.UndefOr[Any], /* origin */ js.UndefOr[String], /* lastEventId */ js.UndefOr[String], /* source */ js.UndefOr[MessageEventSource | Null], /* ports */ js.UndefOr[js.Array[MessagePort]]) => Unit
+      ): Self = StObject.set(x, "initMessageEvent", js.Any.fromFunction8(value))
+      
+      inline def setInitMessageEventUndefined: Self = StObject.set(x, "initMessageEvent", js.undefined)
       
       inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
       
@@ -176,7 +196,7 @@ object anon {
       
       inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
       
-      inline def setPortsVarargs(value: MessagePort*): Self = StObject.set(x, "ports", js.Array(value :_*))
+      inline def setPortsVarargs(value: MessagePort*): Self = StObject.set(x, "ports", js.Array(value*))
       
       inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
@@ -212,7 +232,7 @@ object anon {
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: DOMHighResTimeStamp): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
       inline def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
       

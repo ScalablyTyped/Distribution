@@ -27,7 +27,7 @@ object Eventtypes {
     
     inline def setEvent_typesUndefined: Self = StObject.set(x, "event_types", js.undefined)
     
-    inline def setEvent_typesVarargs(value: String*): Self = StObject.set(x, "event_types", js.Array(value :_*))
+    inline def setEvent_typesVarargs(value: String*): Self = StObject.set(x, "event_types", js.Array(value*))
     
     inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     

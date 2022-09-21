@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(options: AposConstructor[js.Object, js.Object], args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(options: AposConstructor[js.Object, js.Object], args: Any*): Any = ^.asInstanceOf[js.Dynamic].apply(List(options.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   
   @JSImport("apostrophe", JSImport.Namespace)
   @js.native
@@ -26,11 +26,11 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def link(name: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def link(name: String, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  inline def change(arg: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("change")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def change(arg: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("change")(arg.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def change(arg: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("change")(arg.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def change(arg: js.Object): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("change")(arg.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   object contextPiece {
     
@@ -59,13 +59,13 @@ object mod {
     val `type`: String = js.native
   }
   
-  inline def create(`type`: String, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def create(`type`: String, options: js.Any, callback: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def create(`type`: String, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def create(`type`: String, options: Any, callback: js.Function0[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def define(`type`: String, definition: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def define(`type`: String, definition: js.Any, extending: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], definition.asInstanceOf[js.Any], extending.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def define(`type`: js.Array[String], definition: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def define(`type`: js.Array[String], definition: js.Any, extending: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], definition.asInstanceOf[js.Any], extending.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def define(`type`: String, definition: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def define(`type`: String, definition: Any, extending: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], definition.asInstanceOf[js.Any], extending.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def define(`type`: js.Array[String], definition: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def define(`type`: js.Array[String], definition: Any, extending: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], definition.asInstanceOf[js.Any], extending.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   object docs {
     
@@ -76,19 +76,19 @@ object mod {
     inline def getManager(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getManager")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def lock(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lock")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def lock(id: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lock")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def lock(id: String, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lock")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def lockAndWatch(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lockAndWatch")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def lockAndWatch(id: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lockAndWatch")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def lockAndWatch(id: String, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lockAndWatch")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def setManager(`type`: String, manager: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setManager")(`type`.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setManager(`type`: String, manager: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setManager")(`type`.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def unlock(_id: String, sync: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(_id.asInstanceOf[js.Any], sync.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def unlock(_id: String, sync: js.Any, callback: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(_id.asInstanceOf[js.Any], sync.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def unlock(_id: String, sync: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(_id.asInstanceOf[js.Any], sync.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def unlock(_id: String, sync: Any, callback: js.Function0[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unlock")(_id.asInstanceOf[js.Any], sync.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
-  inline def emit(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def emit(name: String, arg: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(name.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def emit(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def emit(name: String, arg: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(name.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   object modalSupport {
     
@@ -98,8 +98,8 @@ object mod {
     
     @JSImport("apostrophe", "modalSupport.all")
     @js.native
-    def all: js.Array[js.Any] = js.native
-    inline def all_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("all")(x.asInstanceOf[js.Any])
+    def all: js.Array[Any] = js.native
+    inline def all_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("all")(x.asInstanceOf[js.Any])
     
     inline def cancelTopModal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelTopModal")().asInstanceOf[Unit]
     
@@ -121,8 +121,8 @@ object mod {
     
     @JSImport("apostrophe", "modalSupport.stack")
     @js.native
-    def stack: js.Array[js.Any] = js.native
-    inline def stack_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stack")(x.asInstanceOf[js.Any])
+    def stack: js.Array[Any] = js.native
+    inline def stack_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stack")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("apostrophe", "modules")
@@ -146,14 +146,14 @@ object mod {
     inline def modules_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modules")(x.asInstanceOf[js.Any])
   }
   
-  inline def notify_(message: String, options: AposObject): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def notify_(message: js.Object, options: AposObject): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def notify_(message: String, options: AposObject): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def notify_(message: js.Object, options: AposObject): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def off(eventName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def off(eventName: String, fn: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def off(eventName: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def off(eventName: String, fn: js.Function0[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def on(eventName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def on(eventName: String, fn: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def on(eventName: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def on(eventName: String, fn: js.Function0[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   object pages {
     
@@ -173,28 +173,21 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def convert($el: HTMLElement, schema: Schema, data: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")($el.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def convert($el: HTMLElement, schema: Schema, data: js.Any, options: js.Any, callback: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")($el.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def convert($el: HTMLElement, schema: Schema, data: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")($el.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def convert($el: HTMLElement, schema: Schema, data: Any, options: Any, callback: js.Function0[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")($el.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def newInstance(schema: Schema): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("newInstance")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def newInstance(schema: Schema): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("newInstance")(schema.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def populate(data: js.Any, name: String, $field: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def populate(data: js.Any, name: String, $field: js.Any, callback: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def populate(data: js.Any, name: String, $field: js.Any, callback: js.Function0[Unit], $el: Unit, field: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def populate(data: js.Any, name: String, $field: js.Any, callback: js.Function0[Unit], $el: HTMLElement): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def populate(
-      data: js.Any,
-      name: String,
-      $field: js.Any,
-      callback: js.Function0[Unit],
-      $el: HTMLElement,
-      field: js.Any
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def populate(data: js.Any, name: String, $field: js.Any, callback: Unit, $el: Unit, field: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def populate(data: js.Any, name: String, $field: js.Any, callback: Unit, $el: HTMLElement): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def populate(data: js.Any, name: String, $field: js.Any, callback: Unit, $el: HTMLElement, field: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def populate(data: Any, name: String, $field: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def populate(data: Any, name: String, $field: Any, callback: js.Function0[Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def populate(data: Any, name: String, $field: Any, callback: js.Function0[Unit], $el: Unit, field: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def populate(data: Any, name: String, $field: Any, callback: js.Function0[Unit], $el: HTMLElement): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def populate(data: Any, name: String, $field: Any, callback: js.Function0[Unit], $el: HTMLElement, field: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def populate(data: Any, name: String, $field: Any, callback: Unit, $el: Unit, field: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def populate(data: Any, name: String, $field: Any, callback: Unit, $el: HTMLElement): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def populate(data: Any, name: String, $field: Any, callback: Unit, $el: HTMLElement, field: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], $field.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], $el.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def returnToError($el: HTMLElement, schema: Schema, errorPath: js.Any, error: js.Any, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("returnToError")($el.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], errorPath.asInstanceOf[js.Any], error.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def returnToError($el: HTMLElement, schema: Schema, errorPath: Any, error: Any, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("returnToError")($el.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], errorPath.asInstanceOf[js.Any], error.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object ui {
@@ -203,10 +196,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def globalBusy(state: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("globalBusy")(state.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def globalBusy(state: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("globalBusy")(state.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def link(sel: String, verb: String, `object`: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(sel.asInstanceOf[js.Any], verb.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def link(sel: String, verb: String, `object`: js.Object, callback: js.Function0[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(sel.asInstanceOf[js.Any], verb.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def link(sel: String, verb: String, `object`: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(sel.asInstanceOf[js.Any], verb.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def link(sel: String, verb: String, `object`: js.Object, callback: js.Function0[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(sel.asInstanceOf[js.Any], verb.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   object utils {
@@ -230,8 +223,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def edit(id: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("edit")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def edit(id: String, afterRevert: js.Function0[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("edit")(id.asInstanceOf[js.Any], afterRevert.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def edit(id: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("edit")(id.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def edit(id: String, afterRevert: js.Function0[Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("edit")(id.asInstanceOf[js.Any], afterRevert.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   // Pass in custom modules as first argument
@@ -244,11 +237,11 @@ object mod {
     
     var baseUrl: js.UndefOr[String] = js.undefined
     
-    var initFailed: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.undefined
+    var initFailed: js.UndefOr[js.Function1[/* error */ Any, Unit]] = js.undefined
     
     var modules: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O}
-      */ typings.apostrophe.apostropheStrings.AposConstructor & TopLevel[js.Any]
+      */ typings.apostrophe.apostropheStrings.AposConstructor & TopLevel[Any]
     
     var prefix: js.UndefOr[String] = js.undefined
     
@@ -263,7 +256,7 @@ object mod {
     inline def apply[M, O](
       modules: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O}
-      */ typings.apostrophe.apostropheStrings.AposConstructor & TopLevel[js.Any],
+      */ typings.apostrophe.apostropheStrings.AposConstructor & TopLevel[Any],
       shortName: String
     ): AposConstructor[M, O] = {
       val __obj = js.Dynamic.literal(modules = modules.asInstanceOf[js.Any], shortName = shortName.asInstanceOf[js.Any])
@@ -284,14 +277,14 @@ object mod {
       
       inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      inline def setInitFailed(value: /* error */ js.Any => Unit): Self = StObject.set(x, "initFailed", js.Any.fromFunction1(value))
+      inline def setInitFailed(value: /* error */ Any => Unit): Self = StObject.set(x, "initFailed", js.Any.fromFunction1(value))
       
       inline def setInitFailedUndefined: Self = StObject.set(x, "initFailed", js.undefined)
       
       inline def setModules(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in apostrophe.apostrophe.AposCoreModules & M ]:? apostrophe.apostrophe.AposModuleOptions<{}> | O}
-        */ typings.apostrophe.apostropheStrings.AposConstructor & TopLevel[js.Any]
+        */ typings.apostrophe.apostropheStrings.AposConstructor & TopLevel[Any]
       ): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
@@ -482,11 +475,11 @@ object mod {
     
     def emit(name: String): Unit
     
-    def on(name: String, methodName: js.Any, fn: js.Function0[js.Any]): Unit
+    def on(name: String, methodName: Any, fn: js.Function0[Any]): Unit
   }
   object AposModule {
     
-    inline def apply(emit: String => Unit, on: (String, js.Any, js.Function0[js.Any]) => Unit): AposModule = {
+    inline def apply(emit: String => Unit, on: (String, Any, js.Function0[Any]) => Unit): AposModule = {
       val __obj = js.Dynamic.literal(emit = js.Any.fromFunction1(emit), on = js.Any.fromFunction3(on))
       __obj.asInstanceOf[AposModule]
     }
@@ -495,7 +488,7 @@ object mod {
       
       inline def setEmit(value: String => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       
-      inline def setOn(value: (String, js.Any, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
+      inline def setOn(value: (String, Any, js.Function0[Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
     }
   }
   
@@ -506,7 +499,7 @@ object mod {
     
     var arrangeFields: js.UndefOr[js.Array[typings.apostrophe.anon.Fields]] = js.undefined
     
-    var beforeConstruct: js.UndefOr[js.Function2[/* self */ js.Any, /* options */ js.Any, js.Any]] = js.undefined
+    var beforeConstruct: js.UndefOr[js.Function2[/* self */ Any, /* options */ Any, Any]] = js.undefined
     
     var defer: js.UndefOr[Boolean] = js.undefined
     
@@ -539,15 +532,15 @@ object mod {
       
       inline def setAddFieldsUndefined: Self = StObject.set(x, "addFields", js.undefined)
       
-      inline def setAddFieldsVarargs(value: Field*): Self = StObject.set(x, "addFields", js.Array(value :_*))
+      inline def setAddFieldsVarargs(value: Field*): Self = StObject.set(x, "addFields", js.Array(value*))
       
       inline def setArrangeFields(value: js.Array[typings.apostrophe.anon.Fields]): Self = StObject.set(x, "arrangeFields", value.asInstanceOf[js.Any])
       
       inline def setArrangeFieldsUndefined: Self = StObject.set(x, "arrangeFields", js.undefined)
       
-      inline def setArrangeFieldsVarargs(value: typings.apostrophe.anon.Fields*): Self = StObject.set(x, "arrangeFields", js.Array(value :_*))
+      inline def setArrangeFieldsVarargs(value: typings.apostrophe.anon.Fields*): Self = StObject.set(x, "arrangeFields", js.Array(value*))
       
-      inline def setBeforeConstruct(value: (/* self */ js.Any, /* options */ js.Any) => js.Any): Self = StObject.set(x, "beforeConstruct", js.Any.fromFunction2(value))
+      inline def setBeforeConstruct(value: (/* self */ Any, /* options */ Any) => Any): Self = StObject.set(x, "beforeConstruct", js.Any.fromFunction2(value))
       
       inline def setBeforeConstructUndefined: Self = StObject.set(x, "beforeConstruct", js.undefined)
       
@@ -571,7 +564,7 @@ object mod {
       
       inline def setPlayerDataUndefined: Self = StObject.set(x, "playerData", js.undefined)
       
-      inline def setPlayerDataVarargs(value: String*): Self = StObject.set(x, "playerData", js.Array(value :_*))
+      inline def setPlayerDataVarargs(value: String*): Self = StObject.set(x, "playerData", js.Array(value*))
       
       inline def setPluralLabel(value: String): Self = StObject.set(x, "pluralLabel", value.asInstanceOf[js.Any])
       
@@ -581,7 +574,7 @@ object mod {
       
       inline def setRemoveFieldsUndefined: Self = StObject.set(x, "removeFields", js.undefined)
       
-      inline def setRemoveFieldsVarargs(value: Field*): Self = StObject.set(x, "removeFields", js.Array(value :_*))
+      inline def setRemoveFieldsVarargs(value: Field*): Self = StObject.set(x, "removeFields", js.Array(value*))
       
       inline def setScene(value: user): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
       
@@ -589,40 +582,40 @@ object mod {
     }
   }
   
-  type AposObject = StringDictionary[js.Any]
+  type AposObject = StringDictionary[Any]
   
   trait AposType extends StObject {
     
-    var bless: js.UndefOr[js.Function2[/* req */ js.Any, /* field */ js.Any, Unit]] = js.undefined
+    var bless: js.UndefOr[js.Function2[/* req */ Any, /* field */ Any, Unit]] = js.undefined
     
     var converters: Form
     
-    var empty: js.UndefOr[js.Function2[/* field */ js.Any, /* value */ js.Any, Unit]] = js.undefined
+    var empty: js.UndefOr[js.Function2[/* field */ Any, /* value */ Any, Unit]] = js.undefined
     
-    def index(value: js.Any, field: js.Any, texts: js.Any): Unit
+    def index(value: Any, field: Any, texts: Any): Unit
     
     var name: String
   }
   object AposType {
     
-    inline def apply(converters: Form, index: (js.Any, js.Any, js.Any) => Unit, name: String): AposType = {
+    inline def apply(converters: Form, index: (Any, Any, Any) => Unit, name: String): AposType = {
       val __obj = js.Dynamic.literal(converters = converters.asInstanceOf[js.Any], index = js.Any.fromFunction3(index), name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[AposType]
     }
     
     extension [Self <: AposType](x: Self) {
       
-      inline def setBless(value: (/* req */ js.Any, /* field */ js.Any) => Unit): Self = StObject.set(x, "bless", js.Any.fromFunction2(value))
+      inline def setBless(value: (/* req */ Any, /* field */ Any) => Unit): Self = StObject.set(x, "bless", js.Any.fromFunction2(value))
       
       inline def setBlessUndefined: Self = StObject.set(x, "bless", js.undefined)
       
       inline def setConverters(value: Form): Self = StObject.set(x, "converters", value.asInstanceOf[js.Any])
       
-      inline def setEmpty(value: (/* field */ js.Any, /* value */ js.Any) => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction2(value))
+      inline def setEmpty(value: (/* field */ Any, /* value */ Any) => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction2(value))
       
       inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
       
-      inline def setIndex(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "index", js.Any.fromFunction3(value))
+      inline def setIndex(value: (Any, Any, Any) => Unit): Self = StObject.set(x, "index", js.Any.fromFunction3(value))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -664,7 +657,7 @@ object mod {
       
       inline def setChoicesUndefined: Self = StObject.set(x, "choices", js.undefined)
       
-      inline def setChoicesVarargs(value: SelectChoice*): Self = StObject.set(x, "choices", js.Array(value :_*))
+      inline def setChoicesVarargs(value: SelectChoice*): Self = StObject.set(x, "choices", js.Array(value*))
       
       inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
@@ -686,7 +679,7 @@ object mod {
       
       inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      inline def setSchemaVarargs(value: Field*): Self = StObject.set(x, "schema", js.Array(value :_*))
+      inline def setSchemaVarargs(value: Field*): Self = StObject.set(x, "schema", js.Array(value*))
       
       inline def setTitleField(value: String): Self = StObject.set(x, "titleField", value.asInstanceOf[js.Any])
       
@@ -706,69 +699,49 @@ object mod {
     
     def addFieldType(`type`: AposType): Unit
     
-    def addFilters(schema: Schema, options: js.Any, cursor: js.Any): Unit
+    def addFilters(schema: Schema, options: Any, cursor: Any): Unit
     
-    def addJoinSlugFilter(field: js.Any, cursor: js.Any, suffix: js.Any): Unit
+    def addJoinSlugFilter(field: Any, cursor: Any, suffix: Any): Unit
     
     def afterInit(): Unit
     
     def compose(options: AposObject): Unit
     
-    def convert(
-      req: js.Any,
-      schema: Schema,
-      to: js.Any,
-      `object`: AposObject,
-      output: js.Any,
-      callback: js.Function0[js.Any]
-    ): Unit
+    def convert(req: Any, schema: Schema, to: Any, `object`: AposObject, output: Any, callback: js.Function0[Any]): Unit
     
-    def createRoutes(): js.Array[js.Any]
+    def createRoutes(): js.Array[Any]
     
-    def cursorFilterInterested(cursor: js.Any, name: String): Unit
+    def cursorFilterInterested(cursor: Any, name: String): Unit
     
     def empty(schema: Schema, `object`: AposObject): Unit
     
-    def `export`(
-      req: js.Any,
-      schema: Schema,
-      to: js.Any,
-      `object`: AposObject,
-      output: js.Any,
-      callback: js.Function0[js.Any]
-    ): Unit
+    def `export`(req: Any, schema: Schema, to: Any, `object`: AposObject, output: Any, callback: js.Function0[Any]): Unit
     
     def getFieldType(typeName: String): Unit
     
-    def indexFields(schema: Schema, `object`: AposObject, texts: js.Any): Unit
+    def indexFields(schema: Schema, `object`: AposObject, texts: Any): Unit
     
     def isVisible(schema: Schema, `object`: AposObject, name: String): Unit
     
-    def join(
-      req: js.Any,
-      schema: Schema,
-      objectOrArray: js.Any,
-      withJoins: js.Any,
-      callback: js.Function0[js.Any]
-    ): Unit
+    def join(req: Any, schema: Schema, objectOrArray: Any, withJoins: Any, callback: js.Function0[Any]): Unit
     
     def joinDriver(
-      req: js.Any,
-      method: js.Any,
-      reverse: js.Any,
-      items: js.Any,
-      idField: js.Any,
-      relationshipsField: js.Any,
-      objectField: js.Any,
-      options: js.Any,
-      callback: js.Function0[js.Any]
+      req: Any,
+      method: Any,
+      reverse: Any,
+      items: Any,
+      idField: Any,
+      relationshipsField: Any,
+      objectField: Any,
+      options: Any,
+      callback: js.Function0[Any]
     ): Unit
     
-    def joinFilterChoices(field: js.Any, cursor: js.Any, valueField: js.Any): Unit
+    def joinFilterChoices(field: Any, cursor: Any, valueField: Any): Unit
     
-    def newInstance(schema: Schema): js.Any
+    def newInstance(schema: Schema): Any
     
-    def pageServe(req: js.Any): Unit
+    def pageServe(req: Any): Unit
     
     def pushAssets(): Unit
     
@@ -776,45 +749,45 @@ object mod {
     
     def refine(schema: Schema, options: AposObject): Unit
     
-    def sortedDistinct(property: js.Any, cursor: js.Any, callback: js.Function0[js.Any]): Unit
+    def sortedDistinct(property: Any, cursor: Any, callback: js.Function0[Any]): Unit
     
     def subset(schema: Schema, fields: Fields): Schema
     
-    def subsetInstance(schema: Schema, instance: AposObject): js.Any
+    def subsetInstance(schema: Schema, instance: AposObject): Any
     
     def toGroups(fields: Fields): Unit
     
-    def validate(schema: Schema, options: js.Any): Unit
+    def validate(schema: Schema, options: Any): Unit
   }
   object Schema {
     
     inline def apply(
       addFieldType: AposType => Unit,
-      addFilters: (Schema, js.Any, js.Any) => Unit,
-      addJoinSlugFilter: (js.Any, js.Any, js.Any) => Unit,
+      addFilters: (Schema, Any, Any) => Unit,
+      addJoinSlugFilter: (Any, Any, Any) => Unit,
       afterInit: () => Unit,
       compose: AposObject => Unit,
-      convert: (js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[js.Any]) => Unit,
-      createRoutes: () => js.Array[js.Any],
-      cursorFilterInterested: (js.Any, String) => Unit,
+      convert: (Any, Schema, Any, AposObject, Any, js.Function0[Any]) => Unit,
+      createRoutes: () => js.Array[Any],
+      cursorFilterInterested: (Any, String) => Unit,
       empty: (Schema, AposObject) => Unit,
-      `export`: (js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[js.Any]) => Unit,
+      `export`: (Any, Schema, Any, AposObject, Any, js.Function0[Any]) => Unit,
       getFieldType: String => Unit,
-      indexFields: (Schema, AposObject, js.Any) => Unit,
+      indexFields: (Schema, AposObject, Any) => Unit,
       isVisible: (Schema, AposObject, String) => Unit,
-      join: (js.Any, Schema, js.Any, js.Any, js.Function0[js.Any]) => Unit,
-      joinDriver: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Function0[js.Any]) => Unit,
-      joinFilterChoices: (js.Any, js.Any, js.Any) => Unit,
-      newInstance: Schema => js.Any,
-      pageServe: js.Any => Unit,
+      join: (Any, Schema, Any, Any, js.Function0[Any]) => Unit,
+      joinDriver: (Any, Any, Any, Any, Any, Any, Any, Any, js.Function0[Any]) => Unit,
+      joinFilterChoices: (Any, Any, Any) => Unit,
+      newInstance: Schema => Any,
+      pageServe: Any => Unit,
       pushAssets: () => Unit,
       pushCreateSingleton: () => Unit,
       refine: (Schema, AposObject) => Unit,
-      sortedDistinct: (js.Any, js.Any, js.Function0[js.Any]) => Unit,
+      sortedDistinct: (Any, Any, js.Function0[Any]) => Unit,
       subset: (Schema, Fields) => Schema,
-      subsetInstance: (Schema, AposObject) => js.Any,
+      subsetInstance: (Schema, AposObject) => Any,
       toGroups: Fields => Unit,
-      validate: (Schema, js.Any) => Unit
+      validate: (Schema, Any) => Unit
     ): Schema = {
       val __obj = js.Dynamic.literal(addFieldType = js.Any.fromFunction1(addFieldType), addFilters = js.Any.fromFunction3(addFilters), addJoinSlugFilter = js.Any.fromFunction3(addJoinSlugFilter), afterInit = js.Any.fromFunction0(afterInit), compose = js.Any.fromFunction1(compose), convert = js.Any.fromFunction6(convert), createRoutes = js.Any.fromFunction0(createRoutes), cursorFilterInterested = js.Any.fromFunction2(cursorFilterInterested), empty = js.Any.fromFunction2(empty), getFieldType = js.Any.fromFunction1(getFieldType), indexFields = js.Any.fromFunction3(indexFields), isVisible = js.Any.fromFunction3(isVisible), join = js.Any.fromFunction5(join), joinDriver = js.Any.fromFunction9(joinDriver), joinFilterChoices = js.Any.fromFunction3(joinFilterChoices), newInstance = js.Any.fromFunction1(newInstance), pageServe = js.Any.fromFunction1(pageServe), pushAssets = js.Any.fromFunction0(pushAssets), pushCreateSingleton = js.Any.fromFunction0(pushCreateSingleton), refine = js.Any.fromFunction2(refine), sortedDistinct = js.Any.fromFunction3(sortedDistinct), subset = js.Any.fromFunction2(subset), subsetInstance = js.Any.fromFunction2(subsetInstance), toGroups = js.Any.fromFunction1(toGroups), validate = js.Any.fromFunction2(validate))
       __obj.updateDynamic("export")(js.Any.fromFunction6(`export`))
@@ -825,41 +798,39 @@ object mod {
       
       inline def setAddFieldType(value: AposType => Unit): Self = StObject.set(x, "addFieldType", js.Any.fromFunction1(value))
       
-      inline def setAddFilters(value: (Schema, js.Any, js.Any) => Unit): Self = StObject.set(x, "addFilters", js.Any.fromFunction3(value))
+      inline def setAddFilters(value: (Schema, Any, Any) => Unit): Self = StObject.set(x, "addFilters", js.Any.fromFunction3(value))
       
-      inline def setAddJoinSlugFilter(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "addJoinSlugFilter", js.Any.fromFunction3(value))
+      inline def setAddJoinSlugFilter(value: (Any, Any, Any) => Unit): Self = StObject.set(x, "addJoinSlugFilter", js.Any.fromFunction3(value))
       
       inline def setAfterInit(value: () => Unit): Self = StObject.set(x, "afterInit", js.Any.fromFunction0(value))
       
       inline def setCompose(value: AposObject => Unit): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
       
-      inline def setConvert(value: (js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "convert", js.Any.fromFunction6(value))
+      inline def setConvert(value: (Any, Schema, Any, AposObject, Any, js.Function0[Any]) => Unit): Self = StObject.set(x, "convert", js.Any.fromFunction6(value))
       
-      inline def setCreateRoutes(value: () => js.Array[js.Any]): Self = StObject.set(x, "createRoutes", js.Any.fromFunction0(value))
+      inline def setCreateRoutes(value: () => js.Array[Any]): Self = StObject.set(x, "createRoutes", js.Any.fromFunction0(value))
       
-      inline def setCursorFilterInterested(value: (js.Any, String) => Unit): Self = StObject.set(x, "cursorFilterInterested", js.Any.fromFunction2(value))
+      inline def setCursorFilterInterested(value: (Any, String) => Unit): Self = StObject.set(x, "cursorFilterInterested", js.Any.fromFunction2(value))
       
       inline def setEmpty(value: (Schema, AposObject) => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction2(value))
       
-      inline def setExport(value: (js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "export", js.Any.fromFunction6(value))
+      inline def setExport(value: (Any, Schema, Any, AposObject, Any, js.Function0[Any]) => Unit): Self = StObject.set(x, "export", js.Any.fromFunction6(value))
       
       inline def setGetFieldType(value: String => Unit): Self = StObject.set(x, "getFieldType", js.Any.fromFunction1(value))
       
-      inline def setIndexFields(value: (Schema, AposObject, js.Any) => Unit): Self = StObject.set(x, "indexFields", js.Any.fromFunction3(value))
+      inline def setIndexFields(value: (Schema, AposObject, Any) => Unit): Self = StObject.set(x, "indexFields", js.Any.fromFunction3(value))
       
       inline def setIsVisible(value: (Schema, AposObject, String) => Unit): Self = StObject.set(x, "isVisible", js.Any.fromFunction3(value))
       
-      inline def setJoin(value: (js.Any, Schema, js.Any, js.Any, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "join", js.Any.fromFunction5(value))
+      inline def setJoin(value: (Any, Schema, Any, Any, js.Function0[Any]) => Unit): Self = StObject.set(x, "join", js.Any.fromFunction5(value))
       
-      inline def setJoinDriver(
-        value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Function0[js.Any]) => Unit
-      ): Self = StObject.set(x, "joinDriver", js.Any.fromFunction9(value))
+      inline def setJoinDriver(value: (Any, Any, Any, Any, Any, Any, Any, Any, js.Function0[Any]) => Unit): Self = StObject.set(x, "joinDriver", js.Any.fromFunction9(value))
       
-      inline def setJoinFilterChoices(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "joinFilterChoices", js.Any.fromFunction3(value))
+      inline def setJoinFilterChoices(value: (Any, Any, Any) => Unit): Self = StObject.set(x, "joinFilterChoices", js.Any.fromFunction3(value))
       
-      inline def setNewInstance(value: Schema => js.Any): Self = StObject.set(x, "newInstance", js.Any.fromFunction1(value))
+      inline def setNewInstance(value: Schema => Any): Self = StObject.set(x, "newInstance", js.Any.fromFunction1(value))
       
-      inline def setPageServe(value: js.Any => Unit): Self = StObject.set(x, "pageServe", js.Any.fromFunction1(value))
+      inline def setPageServe(value: Any => Unit): Self = StObject.set(x, "pageServe", js.Any.fromFunction1(value))
       
       inline def setPushAssets(value: () => Unit): Self = StObject.set(x, "pushAssets", js.Any.fromFunction0(value))
       
@@ -867,15 +838,15 @@ object mod {
       
       inline def setRefine(value: (Schema, AposObject) => Unit): Self = StObject.set(x, "refine", js.Any.fromFunction2(value))
       
-      inline def setSortedDistinct(value: (js.Any, js.Any, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "sortedDistinct", js.Any.fromFunction3(value))
+      inline def setSortedDistinct(value: (Any, Any, js.Function0[Any]) => Unit): Self = StObject.set(x, "sortedDistinct", js.Any.fromFunction3(value))
       
       inline def setSubset(value: (Schema, Fields) => Schema): Self = StObject.set(x, "subset", js.Any.fromFunction2(value))
       
-      inline def setSubsetInstance(value: (Schema, AposObject) => js.Any): Self = StObject.set(x, "subsetInstance", js.Any.fromFunction2(value))
+      inline def setSubsetInstance(value: (Schema, AposObject) => Any): Self = StObject.set(x, "subsetInstance", js.Any.fromFunction2(value))
       
       inline def setToGroups(value: Fields => Unit): Self = StObject.set(x, "toGroups", js.Any.fromFunction1(value))
       
-      inline def setValidate(value: (Schema, js.Any) => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+      inline def setValidate(value: (Schema, Any) => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     }
   }
   

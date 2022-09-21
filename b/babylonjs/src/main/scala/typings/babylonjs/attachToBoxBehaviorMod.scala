@@ -11,34 +11,36 @@ object attachToBoxBehaviorMod {
   
   @JSImport("babylonjs/Behaviors/Meshes/attachToBoxBehavior", "AttachToBoxBehavior")
   @js.native
-  class AttachToBoxBehavior protected ()
+  open class AttachToBoxBehavior protected ()
     extends StObject
        with Behavior[Mesh] {
     /**
       * Creates the AttachToBoxBehavior, used to attach UI to the closest face of the box to a camera
-      * @param ui The transform node that should be attched to the mesh
+      * @param _ui The transform node that should be attached to the mesh
       */
-    def this(ui: TransformNode) = this()
+    def this(_ui: TransformNode) = this()
     
-    /* private */ var _closestFace: js.Any = js.native
+    /* private */ var _closestFace: Any = js.native
     
-    /* private */ var _faceVectors: js.Any = js.native
+    /* private */ var _faceVectors: Any = js.native
     
-    /* private */ var _lookAtTmpMatrix: js.Any = js.native
+    /* private */ var _lookAtTmpMatrix: Any = js.native
     
-    /* private */ var _lookAtToRef: js.Any = js.native
+    /* private */ var _lookAtToRef: Any = js.native
     
-    /* private */ var _onRenderObserver: js.Any = js.native
+    /* private */ var _onRenderObserver: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _target: js.Any = js.native
+    /* private */ var _target: Any = js.native
     
-    /* private */ var _tmpMatrix: js.Any = js.native
+    /* private */ var _tmpMatrix: Any = js.native
     
-    /* private */ var _tmpVector: js.Any = js.native
+    /* private */ var _tmpVector: Any = js.native
     
-    /* private */ var _zeroVector: js.Any = js.native
+    /* private */ var _ui: Any = js.native
+    
+    /* private */ var _zeroVector: Any = js.native
     
     /**
       * Called when the behavior is attached to a target
@@ -72,7 +74,5 @@ object attachToBoxBehaviorMod {
     /** gets or sets behavior's name */
     /* CompleteClass */
     var name: String = js.native
-    
-    /* private */ var ui: js.Any = js.native
   }
 }

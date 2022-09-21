@@ -13,7 +13,7 @@ trait WebCLPlatform extends StObject {
   def getDevices(): js.Array[WebCLDevice] = js.native
   def getDevices(deviceType: DeviceTypeBits): js.Array[WebCLDevice] = js.native
   
-  def getInfo(name: PlatformInfo): js.Any = js.native
+  def getInfo(name: PlatformInfo): Any = js.native
   
   def getSupportedExtensions(): js.Array[String] = js.native
 }

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel FilterPivotHierarchy.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait FilterPivotHierarchyLoadOptions extends StObject {
@@ -19,33 +19,33 @@ trait FilterPivotHierarchyLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Determines whether to allow multiple filter items.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var enableMultipleFilterItems: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * ID of the FilterPivotHierarchy.
     *
-    * Id of the FilterPivotHierarchy.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Name of the FilterPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Position of the FilterPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var position: js.UndefOr[Boolean] = js.undefined

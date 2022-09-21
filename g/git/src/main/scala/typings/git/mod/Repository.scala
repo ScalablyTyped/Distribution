@@ -6,53 +6,53 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("git", "Repository")
 @js.native
-class Repository protected () extends StObject {
-  def this(gitDirectory: js.Any) = this()
-  def this(gitDirectory: js.Any, options: js.Any) = this()
+open class Repository protected () extends StObject {
+  def this(gitDirectory: Any) = this()
+  def this(gitDirectory: Any, options: Any) = this()
   
-  var already_searched: js.Any = js.native
+  var already_searched: Any = js.native
   
-  def cat_file(sha: js.Any): js.Any = js.native
+  def cat_file(sha: Any): Any = js.native
   
-  def cat_file_size(sha: js.Any): Double = js.native
+  def cat_file_size(sha: Any): Double = js.native
   
-  def cat_file_type(sha: js.Any): js.Any = js.native
+  def cat_file_type(sha: Any): Any = js.native
   
-  def files_changed(treeSha1: js.Any, treeSha2: js.Any, pathLimiter: js.Any): Boolean = js.native
+  def files_changed(treeSha1: Any, treeSha2: Any, pathLimiter: Any): Boolean = js.native
   
-  def get_object_by_sha1(sha1: String): js.Any = js.native
+  def get_object_by_sha1(sha1: String): Any = js.native
   
-  def get_raw_tree(sha: js.Any, recursive: js.Any): js.Any = js.native
+  def get_raw_tree(sha: Any, recursive: Any): Any = js.native
   
-  def get_raw_trees(sha: js.Any, path: js.Any): String = js.native
+  def get_raw_trees(sha: Any, path: Any): String = js.native
   
-  def get_subtree(commitSha: js.Any, path: js.Any, callback: js.Function): Unit = js.native
+  def get_subtree(commitSha: Any, path: Any, callback: js.Function): Unit = js.native
   
-  var git_directory: js.Any = js.native
+  var git_directory: Any = js.native
   
-  def in_loose(shaHex: js.Any, callback: js.Function): Unit = js.native
+  def in_loose(shaHex: Any, callback: js.Function): Unit = js.native
   
-  def in_packs(shaHex: js.Any, callback: js.Function): Unit = js.native
+  def in_packs(shaHex: Any, callback: js.Function): Unit = js.native
   
-  def list_tree(sha: js.Any): js.Any = js.native
+  def list_tree(sha: Any): Any = js.native
   
-  var loose: js.Any = js.native
+  var loose: Any = js.native
   
-  def ls_tree(sha: js.Any, paths: js.Any, recursive: js.Any): js.Any = js.native
+  def ls_tree(sha: Any, paths: Any, recursive: Any): Any = js.native
   
-  def ls_tree_path(sha: js.Any, path: js.Any, append: js.Any): js.Any = js.native
+  def ls_tree_path(sha: Any, path: Any, append: Any): Any = js.native
   
-  def object_exists(sha1: js.Any, callback: js.Function): Unit = js.native
+  def object_exists(sha1: Any, callback: js.Function): Unit = js.native
   
-  var options: js.Any = js.native
+  var options: Any = js.native
   
-  var packs: js.Any = js.native
+  var packs: Any = js.native
   
-  def put_raw_object(content: js.Any, `type`: js.Any, callback: js.Function): js.Any = js.native
+  def put_raw_object(content: Any, `type`: Any, callback: js.Function): Any = js.native
   
-  def quick_diff(tree1: js.Any, tree2: js.Any, path: js.Any, recurse: js.Any): js.Array[js.Any] = js.native
+  def quick_diff(tree1: Any, tree2: Any, path: Any, recurse: Any): js.Array[Any] = js.native
   
-  def rev_list(sha: js.Any, options: js.Any, callback: js.Function): Unit = js.native
+  def rev_list(sha: Any, options: Any, callback: js.Function): Unit = js.native
 }
 /* static members */
 object Repository {
@@ -61,5 +61,5 @@ object Repository {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def init(dir: js.Any, bare: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dir.asInstanceOf[js.Any], bare.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def init(dir: Any, bare: Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(dir.asInstanceOf[js.Any], bare.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

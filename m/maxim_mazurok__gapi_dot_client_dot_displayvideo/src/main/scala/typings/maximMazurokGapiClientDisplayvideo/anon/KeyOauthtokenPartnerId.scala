@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
-import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.InventorySourceGroup
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.GuaranteedOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait KeyOauthtokenPartnerId extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the advertiser that owns the inventory source group. The parent partner will not have access to this group. */
+  /** The ID of the advertiser that the request is being made within. */
   var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
@@ -32,10 +32,7 @@ trait KeyOauthtokenPartnerId extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * The ID of the partner that owns the inventory source group. Only this partner will have write access to this group. Only advertisers to which this group is explicitly shared
-    * will have read access to this group.
-    */
+  /** The ID of the partner that the request is being made within. */
   var partnerId: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
@@ -45,7 +42,7 @@ trait KeyOauthtokenPartnerId extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: InventorySourceGroup
+  var resource: GuaranteedOrder
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -55,7 +52,7 @@ trait KeyOauthtokenPartnerId extends StObject {
 }
 object KeyOauthtokenPartnerId {
   
-  inline def apply(resource: InventorySourceGroup): KeyOauthtokenPartnerId = {
+  inline def apply(resource: GuaranteedOrder): KeyOauthtokenPartnerId = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOauthtokenPartnerId]
   }
@@ -106,7 +103,7 @@ object KeyOauthtokenPartnerId {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: InventorySourceGroup): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GuaranteedOrder): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

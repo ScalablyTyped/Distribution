@@ -13,6 +13,9 @@ trait PrettyPrintQuotaUserUpdateMask extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
+  /** Output only. The unique ID of the advertiser. Assigned by the system. */
+  var advertiserId: String
+  
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
@@ -42,14 +45,11 @@ trait PrettyPrintQuotaUserUpdateMask extends StObject {
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
-  
-  /** Output only. The unique ID of the user. Assigned by the system. */
-  var userId: String
 }
 object PrettyPrintQuotaUserUpdateMask {
   
-  inline def apply(userId: String): PrettyPrintQuotaUserUpdateMask = {
-    val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String): PrettyPrintQuotaUserUpdateMask = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrintQuotaUserUpdateMask]
   }
   
@@ -62,6 +62,8 @@ object PrettyPrintQuotaUserUpdateMask {
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -102,7 +104,5 @@ object PrettyPrintQuotaUserUpdateMask {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
-    
-    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

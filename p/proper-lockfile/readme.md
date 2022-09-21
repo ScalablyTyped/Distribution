@@ -10,10 +10,10 @@ A inter-process and inter-machine lockfile utility that works on a local or netw
 | ------------------ | :-------------: |
 | Full name          | proper-lockfile |
 | Keywords           | lock, locking, file, lockfile, fs, cross-process |
-| # releases         | 3 |
-| # dependents       | 130 |
-| # downloads        | 32262765 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 8428776.333333334 |
+| # stars            | 185.0 |
 
 ## Links
 - [Homepage](https://github.com/moxystudio/node-proper-lockfile)

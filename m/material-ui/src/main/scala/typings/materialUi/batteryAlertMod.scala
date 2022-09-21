@@ -10,10 +10,10 @@ object batteryAlertMod {
   
   @JSImport("material-ui/svg-icons/device/battery-alert", JSImport.Default)
   @js.native
-  class default () extends DeviceBatteryAlert
+  open class default () extends DeviceBatteryAlert
   
   @JSImport("material-ui/svg-icons/device/battery-alert", "DeviceBatteryAlert")
   @js.native
-  class DeviceBatteryAlert ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceBatteryAlert ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

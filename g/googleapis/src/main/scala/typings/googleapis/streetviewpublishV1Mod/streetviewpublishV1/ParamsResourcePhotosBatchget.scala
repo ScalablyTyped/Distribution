@@ -1,9 +1,5 @@
 package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,28 +9,17 @@ trait ParamsResourcePhotosBatchget
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
-    * information, see
-    * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier. If
-    * language_code is unspecified, the user's language preference for Google
-    * services is used.
+    * Optional. The BCP-47 language code, such as "en-US" or "sr-Latn". For more information, see http://www.unicode.org/reports/tr35/#Unicode_locale_identifier. If language_code is unspecified, the user's language preference for Google services is used.
     */
   var languageCode: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. IDs of the Photos. For HTTP GET requests, the URL query
-    * parameter should be `photoIds=<id1>&photoIds=<id2>&...`.
+    * Required. IDs of the Photos. For HTTP GET requests, the URL query parameter should be `photoIds=&photoIds=&...`.
     */
   var photoIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Specifies if a download URL for the photo bytes should be returned in the
-    * Photo response.
+    * Required. Specifies if a download URL for the photo bytes should be returned in the Photo response.
     */
   var view: js.UndefOr[String] = js.undefined
 }
@@ -47,10 +32,6 @@ object ParamsResourcePhotosBatchget {
   
   extension [Self <: ParamsResourcePhotosBatchget](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
     inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
@@ -59,7 +40,7 @@ object ParamsResourcePhotosBatchget {
     
     inline def setPhotoIdsUndefined: Self = StObject.set(x, "photoIds", js.undefined)
     
-    inline def setPhotoIdsVarargs(value: String*): Self = StObject.set(x, "photoIds", js.Array(value :_*))
+    inline def setPhotoIdsVarargs(value: String*): Self = StObject.set(x, "photoIds", js.Array(value*))
     
     inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

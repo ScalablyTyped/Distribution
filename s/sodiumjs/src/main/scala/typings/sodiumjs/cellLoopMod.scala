@@ -10,7 +10,7 @@ object cellLoopMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/CellLoop", "CellLoop")
   @js.native
-  class CellLoop[A] () extends LazyCell[A] {
+  open class CellLoop[A] () extends LazyCell[A] {
     
     /**
       * Resolve the loop to specify what the CellLoop was a forward reference to. It

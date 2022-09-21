@@ -31,10 +31,11 @@ trait PermissionScope extends StObject {
   var origin: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * Specifies whether this delegated permission should be considered safe for non-admin users to consent to on behalf of
-    * themselves, or whether an administrator should be required for consent to the permissions. This will be the default
-    * behavior, but each customer can choose to customize the behavior in their organization (by allowing, restricting or
-    * limiting user consent to this delegated permission.)
+    * The possible values are: User and Admin. Specifies whether this delegated permission should be considered safe for
+    * non-admin users to consent to on behalf of themselves, or whether an administrator consent should always be required.
+    * While Microsoft Graph defines the default consent requirement for each permission, the tenant administrator may
+    * override the behavior in their organization (by allowing, restricting, or limiting user consent to this delegated
+    * permission). For more information, see Configure how users consent to applications.
     */
   var `type`: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -53,7 +54,7 @@ trait PermissionScope extends StObject {
   /**
     * Specifies the value to include in the scp (scope) claim in access tokens. Must not exceed 120 characters in length.
     * Allowed characters are : ! # $ % &amp; ' ( ) * + , - . / : ; = ? @ [ ] ^ + _ { } ~, as well as characters in the ranges
-    * 0-9, A-Z and a-z. Any other character, including the space character, are not allowed.
+    * 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
     */
   var value: js.UndefOr[NullableOption[String]] = js.undefined
 }

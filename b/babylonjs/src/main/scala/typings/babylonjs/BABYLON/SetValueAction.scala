@@ -9,11 +9,11 @@ trait SetValueAction
   extends StObject
      with Action {
   
-  /* private */ var _effectiveTarget: js.Any = js.native
+  /* private */ var _effectiveTarget: Any = js.native
   
-  /* private */ var _property: js.Any = js.native
+  /* private */ var _property: Any = js.native
   
-  /* private */ var _target: js.Any = js.native
+  /* private */ var _target: Any = js.native
   
   /**
     * The path of the property to set in the target.
@@ -23,5 +23,5 @@ trait SetValueAction
   /**
     * The value to set in the property
     */
-  var value: js.Any = js.native
+  var value: Any = js.native
 }

@@ -1,7 +1,6 @@
 package typings.meteorTypings
 
 import typings.meteorTypings.Meteor.Connection
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait Subscription extends StObject {
   
   var connection: Connection
   
-  def error(error: Error): Unit
+  def error(error: js.Error): Unit
   
   def onStop(func: js.Function): Unit
   
@@ -32,7 +31,7 @@ object Subscription {
     added: (String, String, js.Object) => Unit,
     changed: (String, String, js.Object) => Unit,
     connection: Connection,
-    error: Error => Unit,
+    error: js.Error => Unit,
     onStop: js.Function => Unit,
     ready: () => Unit,
     removed: (String, String) => Unit,
@@ -51,7 +50,7 @@ object Subscription {
     
     inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    inline def setError(value: Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     inline def setOnStop(value: js.Function => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
     

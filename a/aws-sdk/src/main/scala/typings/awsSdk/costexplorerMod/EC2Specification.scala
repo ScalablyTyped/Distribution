@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EC2Specification extends StObject {
   
   /**
-    * Whether you want a recommendation for standard or convertible reservations.
+    * Indicates whether you want a recommendation for standard or convertible reservations.
     */
   var OfferingClass: js.UndefOr[typings.awsSdk.costexplorerMod.OfferingClass] = js.undefined
 }

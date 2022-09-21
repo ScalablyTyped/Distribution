@@ -10,5 +10,5 @@ trait DurandalEventModule
   extends StObject
      with Instantiable0[DurandalEventSupport[js.Object]] {
   
-  def includeIn(targetObject: js.Any): Unit = js.native
+  def includeIn(targetObject: Any): Unit = js.native
 }

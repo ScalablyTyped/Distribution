@@ -34,7 +34,7 @@ object XActivationBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addActivationEventListener: XActivationEventListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeActivationEventListener: XActivationEventListener => Unit
   ): XActivationBroadcaster = {

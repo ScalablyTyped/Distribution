@@ -10,10 +10,10 @@ Zurb TwentyTwenty plugin
 | ------------------ | :-------------: |
 | Full name          | zurb-twentytwenty |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 5865 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 368.3333333333333 |
+| # stars            | 1211.0 |
 
 ## Links
 - [Homepage](https://github.com/zurb/twentytwenty#readme)

@@ -32,6 +32,6 @@ object SubConversation {
     
     inline def setConversationNodes(value: js.Array[ConversationNode]): Self = StObject.set(x, "conversationNodes", value.asInstanceOf[js.Any])
     
-    inline def setConversationNodesVarargs(value: ConversationNode*): Self = StObject.set(x, "conversationNodes", js.Array(value :_*))
+    inline def setConversationNodesVarargs(value: ConversationNode*): Self = StObject.set(x, "conversationNodes", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ object formatSizeMod {
   
   @JSImport("material-ui/svg-icons/editor/format-size", JSImport.Default)
   @js.native
-  class default () extends EditorFormatSize
+  open class default () extends EditorFormatSize
   
   @JSImport("material-ui/svg-icons/editor/format-size", "EditorFormatSize")
   @js.native
-  class EditorFormatSize ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatSize ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

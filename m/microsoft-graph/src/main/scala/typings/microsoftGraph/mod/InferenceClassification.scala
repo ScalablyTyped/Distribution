@@ -29,6 +29,6 @@ object InferenceClassification {
     
     inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    inline def setOverridesVarargs(value: InferenceClassificationOverride*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: InferenceClassificationOverride*): Self = StObject.set(x, "overrides", js.Array(value*))
   }
 }

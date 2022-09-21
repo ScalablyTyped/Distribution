@@ -18,6 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A widget showing a list of elements. Pass the widget to Script.setWidget() to display it on your Home screen.
   * @see https://docs.scriptable.app/listwidget/#-new-listwidget
   */
-class ListWidget ()
+open class ListWidget ()
   extends StObject
      with typings.scriptableIos.ListWidget

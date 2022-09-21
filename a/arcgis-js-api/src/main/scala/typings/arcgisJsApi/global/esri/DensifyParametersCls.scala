@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.DensifyParameters")
 @js.native
-class DensifyParametersCls ()
+/**
+  * Input parameters for the densify() method on the GeometryService.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html)
+  */
+open class DensifyParametersCls ()
   extends StObject
      with typings.arcgisJsApi.esri.DensifyParameters {
   def this(properties: DensifyParametersProperties) = this()

@@ -19,7 +19,7 @@ object IGanttData {
   inline def apply(
     end: js.Array[Double],
     labels: js.Array[String],
-    source: js.Any,
+    source: Any,
     start: js.Array[Double],
     values: js.Array[Double],
     x: js.Array[Double]
@@ -32,14 +32,14 @@ object IGanttData {
     
     inline def setEnd(value: js.Array[Double]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    inline def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value :_*))
+    inline def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value*))
     
     inline def setStart(value: js.Array[Double]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    inline def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value :_*))
+    inline def setStartVarargs(value: Double*): Self = StObject.set(x, "start", js.Array(value*))
     
     inline def setX(value: js.Array[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value :_*))
+    inline def setXVarargs(value: Double*): Self = StObject.set(x, "x", js.Array(value*))
   }
 }

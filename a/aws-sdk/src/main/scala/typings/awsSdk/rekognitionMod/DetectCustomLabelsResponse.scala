@@ -24,6 +24,6 @@ object DetectCustomLabelsResponse {
     
     inline def setCustomLabelsUndefined: Self = StObject.set(x, "CustomLabels", js.undefined)
     
-    inline def setCustomLabelsVarargs(value: CustomLabel*): Self = StObject.set(x, "CustomLabels", js.Array(value :_*))
+    inline def setCustomLabelsVarargs(value: CustomLabel*): Self = StObject.set(x, "CustomLabels", js.Array(value*))
   }
 }

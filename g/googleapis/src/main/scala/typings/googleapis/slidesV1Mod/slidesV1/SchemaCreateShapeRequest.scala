@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Creates a new shape.
-  */
 trait SchemaCreateShapeRequest extends StObject {
   
   /**
@@ -15,20 +12,14 @@ trait SchemaCreateShapeRequest extends StObject {
   var elementProperties: js.UndefOr[SchemaPageElementProperties] = js.undefined
   
   /**
-    * A user-supplied object ID.  If you specify an ID, it must be unique among
-    * all pages and page elements in the presentation. The ID must start with
-    * an alphanumeric character or an underscore (matches regex
-    * `[a-zA-Z0-9_]`); remaining characters may include those as well as a
-    * hyphen or colon (matches regex `[a-zA-Z0-9_-:]`). The length of the ID
-    * must not be less than 5 or greater than 50. If empty, a unique identifier
-    * will be generated.
+    * A user-supplied object ID. If you specify an ID, it must be unique among all pages and page elements in the presentation. The ID must start with an alphanumeric character or an underscore (matches regex `[a-zA-Z0-9_]`); remaining characters may include those as well as a hyphen or colon (matches regex `[a-zA-Z0-9_-:]`). The length of the ID must not be less than 5 or greater than 50. If empty, a unique identifier will be generated.
     */
-  var objectId: js.UndefOr[String] = js.undefined
+  var objectId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The shape type.
     */
-  var shapeType: js.UndefOr[String] = js.undefined
+  var shapeType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCreateShapeRequest {
   
@@ -45,9 +36,13 @@ object SchemaCreateShapeRequest {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
+    inline def setObjectIdNull: Self = StObject.set(x, "objectId", null)
+    
     inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
     inline def setShapeType(value: String): Self = StObject.set(x, "shapeType", value.asInstanceOf[js.Any])
+    
+    inline def setShapeTypeNull: Self = StObject.set(x, "shapeType", null)
     
     inline def setShapeTypeUndefined: Self = StObject.set(x, "shapeType", js.undefined)
   }

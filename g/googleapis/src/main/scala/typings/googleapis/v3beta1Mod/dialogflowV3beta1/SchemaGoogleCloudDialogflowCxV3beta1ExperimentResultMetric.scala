@@ -1,0 +1,71 @@
+package typings.googleapis.v3beta1Mod.dialogflowV3beta1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaGoogleCloudDialogflowCxV3beta1ExperimentResultMetric extends StObject {
+  
+  /**
+    * The probability that the treatment is better than all other treatments in the experiment
+    */
+  var confidenceInterval: js.UndefOr[SchemaGoogleCloudDialogflowCxV3beta1ExperimentResultConfidenceInterval] = js.undefined
+  
+  /**
+    * Count value of a metric.
+    */
+  var count: js.UndefOr[Double | Null] = js.undefined
+  
+  /**
+    * Count-based metric type. Only one of type or count_type is specified in each Metric.
+    */
+  var countType: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Ratio value of a metric.
+    */
+  var ratio: js.UndefOr[Double | Null] = js.undefined
+  
+  /**
+    * Ratio-based metric type. Only one of type or count_type is specified in each Metric.
+    */
+  var `type`: js.UndefOr[String | Null] = js.undefined
+}
+object SchemaGoogleCloudDialogflowCxV3beta1ExperimentResultMetric {
+  
+  inline def apply(): SchemaGoogleCloudDialogflowCxV3beta1ExperimentResultMetric = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaGoogleCloudDialogflowCxV3beta1ExperimentResultMetric]
+  }
+  
+  extension [Self <: SchemaGoogleCloudDialogflowCxV3beta1ExperimentResultMetric](x: Self) {
+    
+    inline def setConfidenceInterval(value: SchemaGoogleCloudDialogflowCxV3beta1ExperimentResultConfidenceInterval): Self = StObject.set(x, "confidenceInterval", value.asInstanceOf[js.Any])
+    
+    inline def setConfidenceIntervalUndefined: Self = StObject.set(x, "confidenceInterval", js.undefined)
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountNull: Self = StObject.set(x, "count", null)
+    
+    inline def setCountType(value: String): Self = StObject.set(x, "countType", value.asInstanceOf[js.Any])
+    
+    inline def setCountTypeNull: Self = StObject.set(x, "countType", null)
+    
+    inline def setCountTypeUndefined: Self = StObject.set(x, "countType", js.undefined)
+    
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    
+    inline def setRatioNull: Self = StObject.set(x, "ratio", null)
+    
+    inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
+}

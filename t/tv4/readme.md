@@ -10,10 +10,10 @@ A public domain JSON Schema validator for JavaScript
 | ------------------ | :-------------: |
 | Full name          | tv4 |
 | Keywords           | json-schema, schema, validator, tv4 |
-| # releases         | 0 |
-| # dependents       | 400 |
-| # downloads        | 36731005 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5867653.666666667 |
+| # stars            | 1144.0 |
 
 ## Links
 - [Homepage](https://github.com/geraintluff/tv4)

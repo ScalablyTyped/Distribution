@@ -10,11 +10,11 @@ trait FinskyOfferType extends StObject {
   
   var giftable: js.UndefOr[Boolean] = js.undefined
   
-  var listPrice: js.UndefOr[AmountInMicros] = js.undefined
+  var listPrice: js.UndefOr[CurrencyCode] = js.undefined
   
   var rentalDuration: js.UndefOr[Unit] = js.undefined
   
-  var retailPrice: js.UndefOr[AmountInMicros] = js.undefined
+  var retailPrice: js.UndefOr[CurrencyCode] = js.undefined
 }
 object FinskyOfferType {
   
@@ -33,7 +33,7 @@ object FinskyOfferType {
     
     inline def setGiftableUndefined: Self = StObject.set(x, "giftable", js.undefined)
     
-    inline def setListPrice(value: AmountInMicros): Self = StObject.set(x, "listPrice", value.asInstanceOf[js.Any])
+    inline def setListPrice(value: CurrencyCode): Self = StObject.set(x, "listPrice", value.asInstanceOf[js.Any])
     
     inline def setListPriceUndefined: Self = StObject.set(x, "listPrice", js.undefined)
     
@@ -41,7 +41,7 @@ object FinskyOfferType {
     
     inline def setRentalDurationUndefined: Self = StObject.set(x, "rentalDuration", js.undefined)
     
-    inline def setRetailPrice(value: AmountInMicros): Self = StObject.set(x, "retailPrice", value.asInstanceOf[js.Any])
+    inline def setRetailPrice(value: CurrencyCode): Self = StObject.set(x, "retailPrice", value.asInstanceOf[js.Any])
     
     inline def setRetailPriceUndefined: Self = StObject.set(x, "retailPrice", js.undefined)
   }

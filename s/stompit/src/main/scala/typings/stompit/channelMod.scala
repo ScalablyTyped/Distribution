@@ -1,9 +1,8 @@
 package typings.stompit
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Readable
-import typings.std.Error
 import typings.stompit.clientMod.Ack
 import typings.stompit.clientMod.Message
 import typings.stompit.clientMod.MessageCallback
@@ -16,7 +15,7 @@ object channelMod {
   
   @JSImport("stompit/lib/Channel", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Channel {
+  open class ^ protected () extends Channel {
     def this(connectFailover: typings.stompit.connectFailoverMod.^) = this()
     def this(connectFailover: typings.stompit.connectFailoverMod.^, options: ChannelOptions) = this()
   }
@@ -27,74 +26,74 @@ object channelMod {
   trait Channel extends EventEmitter {
     
     def ack(message: Message): Unit = js.native
-    def ack(message: Message, headers: js.Any): Unit = js.native
+    def ack(message: Message, headers: Any): Unit = js.native
     def ack(
       message: Message,
-      headers: js.Any,
+      headers: Any,
       sendOptions: Unit,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+      callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
-    def ack(message: Message, headers: js.Any, sendOptions: SendOptions): Unit = js.native
+    def ack(message: Message, headers: Any, sendOptions: SendOptions): Unit = js.native
     def ack(
       message: Message,
-      headers: js.Any,
+      headers: Any,
       sendOptions: SendOptions,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+      callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
     def ack(
       message: Message,
       headers: Unit,
       sendOptions: Unit,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+      callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
     def ack(message: Message, headers: Unit, sendOptions: SendOptions): Unit = js.native
     def ack(
       message: Message,
       headers: Unit,
       sendOptions: SendOptions,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+      callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
     
     def begin(): typings.stompit.transactionMod.^ = js.native
-    def begin(headers: js.Any): typings.stompit.transactionMod.^ = js.native
+    def begin(headers: Any): typings.stompit.transactionMod.^ = js.native
     
-    def close(error: Error): Unit = js.native
+    def close(error: js.Error): Unit = js.native
     
     def isEmpty(): Boolean = js.native
     
     def lock(): Unit = js.native
     
     def nack(message: Message): Unit = js.native
-    def nack(message: Message, headers: js.Any): Unit = js.native
+    def nack(message: Message, headers: Any): Unit = js.native
     def nack(
       message: Message,
-      headers: js.Any,
+      headers: Any,
       sendOptions: Unit,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+      callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
-    def nack(message: Message, headers: js.Any, sendOptions: SendOptions): Unit = js.native
+    def nack(message: Message, headers: Any, sendOptions: SendOptions): Unit = js.native
     def nack(
       message: Message,
-      headers: js.Any,
+      headers: Any,
       sendOptions: SendOptions,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+      callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
     def nack(
       message: Message,
       headers: Unit,
       sendOptions: Unit,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+      callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
     def nack(message: Message, headers: Unit, sendOptions: SendOptions): Unit = js.native
     def nack(
       message: Message,
       headers: Unit,
       sendOptions: SendOptions,
-      callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+      callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
     
-    def send(headers: js.Any, body: Body): this.type = js.native
-    def send(headers: js.Any, body: Body, callback: js.Function1[/* err */ Error | Null, Unit]): this.type = js.native
+    def send(headers: Any, body: Body): this.type = js.native
+    def send(headers: Any, body: Body, callback: js.Function1[/* err */ js.Error | Null, Unit]): this.type = js.native
     
     def setImplicitSubscription(id: Double): ChannelSubscription = js.native
     def setImplicitSubscription(id: Double, ack: Unit, msgListener: MessageCallback): ChannelSubscription = js.native
@@ -102,9 +101,9 @@ object channelMod {
     def setImplicitSubscription(id: Double, ack: Ack, msgListener: MessageCallback): ChannelSubscription = js.native
     
     def subscribe(
-      headers: js.Any,
+      headers: Any,
       onMessageCallback: js.Function3[
-          /* err */ Error | Null, 
+          /* err */ js.Error | Null, 
           /* message */ Message, 
           /* channelSubscription */ ChannelSubscription, 
           Unit

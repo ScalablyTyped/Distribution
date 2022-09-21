@@ -1,7 +1,7 @@
 
 # Scala.js typings for lines-and-columns
 
-Typings are for version 1.1.6
+Typings are for version 2.0.3
 
 ## Library description:
 Maps lines and columns to character offsets and back.
@@ -10,10 +10,10 @@ Maps lines and columns to character offsets and back.
 | ------------------ | :-------------: |
 | Full name          | lines-and-columns |
 | Keywords           | lines, columns, parser |
-| # releases         | 0 |
-| # dependents       | 81 |
-| # downloads        | 395365243 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 9.062828466666667E7 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/eventualbuddha/lines-and-columns#readme)

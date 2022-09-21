@@ -43,7 +43,7 @@ object GetHostReservationPurchasePreviewResult {
     
     inline def setPurchaseUndefined: Self = StObject.set(x, "Purchase", js.undefined)
     
-    inline def setPurchaseVarargs(value: Purchase*): Self = StObject.set(x, "Purchase", js.Array(value :_*))
+    inline def setPurchaseVarargs(value: Purchase*): Self = StObject.set(x, "Purchase", js.Array(value*))
     
     inline def setTotalHourlyPrice(value: String): Self = StObject.set(x, "TotalHourlyPrice", value.asInstanceOf[js.Any])
     

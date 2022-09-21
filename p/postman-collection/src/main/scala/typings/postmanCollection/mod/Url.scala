@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.postmanCollection.mod.PropertyBaseDefinition because Already inherited
 - typings.postmanCollection.mod.UrlDefinition because var conflicts: description. Inlined auth, hash, host, path, port, query, variable, protocol */ @JSImport("postman-collection", "Url")
 @js.native
-class Url protected () extends PropertyBase[UrlDefinition] {
+open class Url protected () extends PropertyBase[UrlDefinition] {
   def this(options: String) = this()
   def this(options: UrlDefinition) = this()
   
@@ -70,7 +70,7 @@ object Url {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isUrl(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUrl(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def parse(url: String): UrlDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[UrlDefinition]
 }

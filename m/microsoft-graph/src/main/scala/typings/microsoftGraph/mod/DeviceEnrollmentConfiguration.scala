@@ -8,25 +8,28 @@ trait DeviceEnrollmentConfiguration
   extends StObject
      with Entity {
   
-  // The list of group assignments for the device configuration profile.
+  // The list of group assignments for the device configuration profile
   var assignments: js.UndefOr[NullableOption[js.Array[EnrollmentConfigurationAssignment]]] = js.undefined
   
-  // Not yet documented
+  // Created date time in UTC of the device enrollment configuration
   var createdDateTime: js.UndefOr[String] = js.undefined
   
-  // Not yet documented
+  // The description of the device enrollment configuration
   var description: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Not yet documented
+  // The display name of the device enrollment configuration
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Not yet documented
+  // Last modified date time in UTC of the device enrollment configuration
   var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
-  // Not yet documented
+  /**
+    * Priority is used when a user exists in multiple groups that are assigned enrollment configuration. Users are subject
+    * only to the configuration with the lowest priority value.
+    */
   var priority: js.UndefOr[Double] = js.undefined
   
-  // Not yet documented
+  // The version of the device enrollment configuration
   var version: js.UndefOr[Double] = js.undefined
 }
 object DeviceEnrollmentConfiguration {
@@ -44,7 +47,7 @@ object DeviceEnrollmentConfiguration {
     
     inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
-    inline def setAssignmentsVarargs(value: EnrollmentConfigurationAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: EnrollmentConfigurationAssignment*): Self = StObject.set(x, "assignments", js.Array(value*))
     
     inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

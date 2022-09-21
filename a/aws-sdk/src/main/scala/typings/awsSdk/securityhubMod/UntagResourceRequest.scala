@@ -12,7 +12,7 @@ trait UntagResourceRequest extends StObject {
   var ResourceArn: typings.awsSdk.securityhubMod.ResourceArn
   
   /**
-    * The tag keys associated with the tags to remove from the resource.
+    * The tag keys associated with the tags to remove from the resource. You can remove up to 50 tags at a time.
     */
   var TagKeys: TagKeyList
 }
@@ -29,6 +29,6 @@ object UntagResourceRequest {
     
     inline def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    inline def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value*))
   }
 }

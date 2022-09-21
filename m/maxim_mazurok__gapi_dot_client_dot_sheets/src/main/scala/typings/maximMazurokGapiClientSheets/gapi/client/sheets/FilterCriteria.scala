@@ -12,7 +12,7 @@ trait FilterCriteria extends StObject {
   /** Values that should be hidden. */
   var hiddenValues: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** The background fill color to filter by; only cells with this fill color are shown. Mutually exclusive with visible_foreground_color. */
+  /** The background fill color to filter by; only cells with this fill color are shown. Mutually exclusive with visible_foreground_color. Deprecated: Use visible_background_color_style. */
   var visibleBackgroundColor: js.UndefOr[Color] = js.undefined
   
   /**
@@ -21,7 +21,7 @@ trait FilterCriteria extends StObject {
     */
   var visibleBackgroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
-  /** The foreground color to filter by; only cells with this foreground color are shown. Mutually exclusive with visible_background_color. */
+  /** The foreground color to filter by; only cells with this foreground color are shown. Mutually exclusive with visible_background_color. Deprecated: Use visible_foreground_color_style. */
   var visibleForegroundColor: js.UndefOr[Color] = js.undefined
   
   /**
@@ -47,7 +47,7 @@ object FilterCriteria {
     
     inline def setHiddenValuesUndefined: Self = StObject.set(x, "hiddenValues", js.undefined)
     
-    inline def setHiddenValuesVarargs(value: String*): Self = StObject.set(x, "hiddenValues", js.Array(value :_*))
+    inline def setHiddenValuesVarargs(value: String*): Self = StObject.set(x, "hiddenValues", js.Array(value*))
     
     inline def setVisibleBackgroundColor(value: Color): Self = StObject.set(x, "visibleBackgroundColor", value.asInstanceOf[js.Any])
     

@@ -10,17 +10,17 @@ trait FetchStrategySymbol
   extends StObject
      with EnumSymbol {
   
-  /* private */ var foo: js.Any
+  /* private */ var foo: Any
 }
 object FetchStrategySymbol {
   
-  inline def apply(foo: js.Any, getName: () => String, parentEnum: IEnum): FetchStrategySymbol = {
+  inline def apply(foo: Any, getName: () => String, parentEnum: IEnum): FetchStrategySymbol = {
     val __obj = js.Dynamic.literal(foo = foo.asInstanceOf[js.Any], getName = js.Any.fromFunction0(getName), parentEnum = parentEnum.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchStrategySymbol]
   }
   
   extension [Self <: FetchStrategySymbol](x: Self) {
     
-    inline def setFoo(value: js.Any): Self = StObject.set(x, "foo", value.asInstanceOf[js.Any])
+    inline def setFoo(value: Any): Self = StObject.set(x, "foo", value.asInstanceOf[js.Any])
   }
 }

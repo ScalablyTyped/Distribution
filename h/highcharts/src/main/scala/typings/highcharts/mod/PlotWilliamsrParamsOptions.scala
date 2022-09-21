@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PlotWilliamsrParamsOptions extends StObject {
   
+  var index: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highstock) Period for Williams %R oscillator
     */
@@ -19,6 +21,10 @@ object PlotWilliamsrParamsOptions {
   }
   
   extension [Self <: PlotWilliamsrParamsOptions](x: Self) {
+    
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

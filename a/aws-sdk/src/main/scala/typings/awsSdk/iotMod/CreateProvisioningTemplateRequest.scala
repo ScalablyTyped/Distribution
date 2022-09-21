@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateProvisioningTemplateRequest extends StObject {
   
   /**
-    * The description of the fleet provisioning template.
+    * The description of the provisioning template.
     */
   var description: js.UndefOr[TemplateDescription] = js.undefined
   
   /**
-    * True to enable the fleet provisioning template, otherwise false.
+    * True to enable the provisioning template, otherwise false.
     */
   var enabled: js.UndefOr[Enabled] = js.undefined
   
@@ -22,24 +22,29 @@ trait CreateProvisioningTemplateRequest extends StObject {
   var preProvisioningHook: js.UndefOr[ProvisioningHook] = js.undefined
   
   /**
-    * The role ARN for the role associated with the fleet provisioning template. This IoT role grants permission to provision a device.
+    * The role ARN for the role associated with the provisioning template. This IoT role grants permission to provision a device.
     */
   var provisioningRoleArn: RoleArn
   
   /**
-    * Metadata which can be used to manage the fleet provisioning template.  For URI Request parameters use format: ...key1=value1&amp;key2=value2... For the CLI command-line parameter use format: &amp;&amp;tags "key1=value1&amp;key2=value2..." For the cli-input-json file use format: "tags": "key1=value1&amp;key2=value2..." 
+    * Metadata which can be used to manage the provisioning template.  For URI Request parameters use format: ...key1=value1&amp;key2=value2... For the CLI command-line parameter use format: &amp;&amp;tags "key1=value1&amp;key2=value2..." For the cli-input-json file use format: "tags": "key1=value1&amp;key2=value2..." 
     */
   var tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * The JSON formatted contents of the fleet provisioning template.
+    * The JSON formatted contents of the provisioning template.
     */
   var templateBody: TemplateBody
   
   /**
-    * The name of the fleet provisioning template.
+    * The name of the provisioning template.
     */
   var templateName: TemplateName
+  
+  /**
+    * The type you define in a provisioning template. You can create a template with only one type. You can't change the template type after its creation. The default value is FLEET_PROVISIONING. For more information about provisioning template, see: Provisioning template. 
+    */
+  var `type`: js.UndefOr[TemplateType] = js.undefined
 }
 object CreateProvisioningTemplateRequest {
   
@@ -68,10 +73,14 @@ object CreateProvisioningTemplateRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
     
     inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: TemplateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

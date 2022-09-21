@@ -41,8 +41,8 @@ object spinButtonSpinButtonMod {
   
   @JSImport("office-ui-fabric-react/lib/components/SpinButton/SpinButton", "SpinButton")
   @js.native
-  class SpinButton protected ()
-    extends Component[ISpinButtonProps, ISpinButtonState, js.Any]
+  open class SpinButton protected ()
+    extends Component[ISpinButtonProps, ISpinButtonState, Any]
        with ISpinButton {
     def this(props: ISpinButtonProps) = this()
     
@@ -52,84 +52,84 @@ object spinButtonSpinButtonMod {
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MSpinButton(newProps: ISpinButtonProps): Unit = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _calculatePrecision: js.Any = js.native
+    /* private */ var _calculatePrecision: Any = js.native
     
-    /* private */ var _currentStepFunctionHandle: js.Any = js.native
-    
-    /**
-      * Increment function to use if one is not passed in
-      */
-    /* private */ var _defaultOnDecrement: js.Any = js.native
+    /* private */ var _currentStepFunctionHandle: Any = js.native
     
     /**
       * Increment function to use if one is not passed in
       */
-    /* private */ var _defaultOnIncrement: js.Any = js.native
+    /* private */ var _defaultOnDecrement: Any = js.native
+    
+    /**
+      * Increment function to use if one is not passed in
+      */
+    /* private */ var _defaultOnIncrement: Any = js.native
     
     /**
       * Validate function to use if one is not passed in
       */
-    /* private */ var _defaultOnValidate: js.Any = js.native
+    /* private */ var _defaultOnValidate: Any = js.native
     
     /**
       * Handle keydown on the text field. We need to update
       * the value when up or down arrow are depressed
       * @param event - the keyboardEvent that was fired
       */
-    /* private */ var _handleKeyDown: js.Any = js.native
+    /* private */ var _handleKeyDown: Any = js.native
     
     /**
       * Make sure that we have stopped spinning on keyUp
       * if the up or down arrow fired this event
       * @param event - keyboard event
       */
-    /* private */ var _handleKeyUp: js.Any = js.native
+    /* private */ var _handleKeyUp: Any = js.native
     
-    /* private */ var _initialStepDelay: js.Any = js.native
+    /* private */ var _initialStepDelay: Any = js.native
     
-    /* private */ var _input: js.Any = js.native
+    /* private */ var _input: Any = js.native
     
-    /* private */ var _inputId: js.Any = js.native
+    /* private */ var _inputId: Any = js.native
     
-    /* private */ var _labelId: js.Any = js.native
+    /* private */ var _labelId: Any = js.native
     
-    /* private */ var _lastValidValue: js.Any = js.native
+    /* private */ var _lastValidValue: Any = js.native
     
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onChange: js.Any = js.native
+    /* private */ var _onChange: Any = js.native
     
-    /* private */ var _onDecrement: js.Any = js.native
+    /* private */ var _onDecrement: Any = js.native
     
-    /* private */ var _onDecrementMouseDown: js.Any = js.native
+    /* private */ var _onDecrementMouseDown: Any = js.native
     
-    /* private */ var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: Any = js.native
     
-    /* private */ var _onIncrement: js.Any = js.native
+    /* private */ var _onIncrement: Any = js.native
     
-    /* private */ var _onIncrementMouseDown: js.Any = js.native
+    /* private */ var _onIncrementMouseDown: Any = js.native
     
     /**
       * The method is needed to ensure we are updating the actual input value.
       * without this our value will never change (and validation will not have the correct number)
       * @param event - the event that was fired
       */
-    /* private */ var _onInputChange: js.Any = js.native
+    /* private */ var _onInputChange: Any = js.native
     
-    /* private */ var _onValidate: js.Any = js.native
+    /* private */ var _onValidate: Any = js.native
     
-    /* private */ var _precision: js.Any = js.native
+    /* private */ var _precision: Any = js.native
     
-    /* private */ var _spinningByMouse: js.Any = js.native
+    /* private */ var _spinningByMouse: Any = js.native
     
-    /* private */ var _stepDelay: js.Any = js.native
+    /* private */ var _stepDelay: Any = js.native
     
     /**
       * Stop spinning (clear any currently pending update and set spinning to false)
       */
-    /* private */ var _stop: js.Any = js.native
+    /* private */ var _stop: Any = js.native
     
     /**
       * Update the value with the given stepFunction
@@ -138,16 +138,16 @@ object spinButtonSpinButtonMod {
       * @param stepFunction - function to use to step by
       * @param event - The event that triggered the updateValue
       */
-    /* private */ var _updateValue: js.Any = js.native
+    /* private */ var _updateValue: Any = js.native
     
     /**
       * This is used when validating text entry in the input on blur or when enter key is pressed
       * (not when changed via the buttons).
       * @param event - the event that fired
       */
-    /* private */ var _validate: js.Any = js.native
+    /* private */ var _validate: Any = js.native
     
-    /* private */ var _valueToValidate: js.Any = js.native
+    /* private */ var _valueToValidate: Any = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MSpinButton(): Unit = js.native

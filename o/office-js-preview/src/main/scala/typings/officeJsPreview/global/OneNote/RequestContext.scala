@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("OneNote.RequestContext")
 @js.native
-class RequestContext ()
+open class RequestContext ()
   extends StObject
      with typings.officeJsPreview.OneNote.RequestContext {
   def this(url: String) = this()

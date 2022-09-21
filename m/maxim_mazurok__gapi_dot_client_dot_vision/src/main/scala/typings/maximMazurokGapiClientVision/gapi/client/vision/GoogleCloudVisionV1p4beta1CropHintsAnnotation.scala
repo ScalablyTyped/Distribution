@@ -22,6 +22,6 @@ object GoogleCloudVisionV1p4beta1CropHintsAnnotation {
     
     inline def setCropHintsUndefined: Self = StObject.set(x, "cropHints", js.undefined)
     
-    inline def setCropHintsVarargs(value: GoogleCloudVisionV1p4beta1CropHint*): Self = StObject.set(x, "cropHints", js.Array(value :_*))
+    inline def setCropHintsVarargs(value: GoogleCloudVisionV1p4beta1CropHint*): Self = StObject.set(x, "cropHints", js.Array(value*))
   }
 }

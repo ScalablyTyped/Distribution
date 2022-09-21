@@ -21,6 +21,6 @@ object GetCustomerUserStatsResponse {
     
     inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
-    inline def setStatsVarargs(value: CustomerUserStats*): Self = StObject.set(x, "stats", js.Array(value :_*))
+    inline def setStatsVarargs(value: CustomerUserStats*): Self = StObject.set(x, "stats", js.Array(value*))
   }
 }

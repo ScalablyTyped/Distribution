@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-fbsdk", "ShareOpenGraphAction")
 @js.native
-class ShareOpenGraphAction protected () extends ShareOpenGraphValueContainer {
+open class ShareOpenGraphAction protected () extends ShareOpenGraphValueContainer {
   def this(actionType: String) = this()
   
   /**

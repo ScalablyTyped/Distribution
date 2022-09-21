@@ -55,7 +55,7 @@ trait ClassMongoDB
     * 
     * 
     */
-  def runCommand(cmd: String, arg: js.Any): js.Object = js.native
+  def runCommand(cmd: String, arg: Any): js.Object = js.native
   /**
     * 
     * @brief 指定一个 MongoDB 数据库命令

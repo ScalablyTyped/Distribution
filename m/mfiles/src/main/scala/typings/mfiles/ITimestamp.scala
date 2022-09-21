@@ -12,7 +12,7 @@ trait ITimestamp extends StObject {
   
   var Fraction: Double
   
-  def GetValue(): js.Any
+  def GetValue(): Any
   
   var Hour: Double
   
@@ -24,7 +24,7 @@ trait ITimestamp extends StObject {
   
   var Second: Double
   
-  def SetValue(Value: js.Any): Unit
+  def SetValue(Value: Any): Unit
   
   def UtcToLocalTime(): ITimestamp
   
@@ -36,13 +36,13 @@ object ITimestamp {
     Clone: () => ITimestamp,
     Day: Double,
     Fraction: Double,
-    GetValue: () => js.Any,
+    GetValue: () => Any,
     Hour: Double,
     LocalTimeToUtc: () => ITimestamp,
     Minute: Double,
     Month: Double,
     Second: Double,
-    SetValue: js.Any => Unit,
+    SetValue: Any => Unit,
     UtcToLocalTime: () => ITimestamp,
     Year: Double
   ): ITimestamp = {
@@ -58,7 +58,7 @@ object ITimestamp {
     
     inline def setFraction(value: Double): Self = StObject.set(x, "Fraction", value.asInstanceOf[js.Any])
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     
     inline def setHour(value: Double): Self = StObject.set(x, "Hour", value.asInstanceOf[js.Any])
     
@@ -70,7 +70,7 @@ object ITimestamp {
     
     inline def setSecond(value: Double): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
     
-    inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: Any => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
     
     inline def setUtcToLocalTime(value: () => ITimestamp): Self = StObject.set(x, "UtcToLocalTime", js.Any.fromFunction0(value))
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Rows extends StObject {
   
   def Add(): Row = js.native
-  def Add(BeforeRow: js.Any): Row = js.native
+  def Add(BeforeRow: Any): Row = js.native
   
   var Alignment: WdRowAlignment = js.native
   
@@ -21,12 +21,12 @@ trait Rows extends StObject {
   var Borders: typings.activexWord.Word.Borders = js.native
   
   def ConvertToText(): Range = js.native
-  def ConvertToText(Separator: js.Any): Range = js.native
-  def ConvertToText(Separator: js.Any, NestedTables: js.Any): Range = js.native
-  def ConvertToText(Separator: Unit, NestedTables: js.Any): Range = js.native
+  def ConvertToText(Separator: Any): Range = js.native
+  def ConvertToText(Separator: Any, NestedTables: Any): Range = js.native
+  def ConvertToText(Separator: Unit, NestedTables: Any): Range = js.native
   
   def ConvertToTextOld(): Range = js.native
-  def ConvertToTextOld(Separator: js.Any): Range = js.native
+  def ConvertToTextOld(Separator: Any): Range = js.native
   
   val Count: Double = js.native
   
@@ -62,7 +62,7 @@ trait Rows extends StObject {
   
   val NestingLevel: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var RelativeHorizontalPosition: WdRelativeHorizontalPosition = js.native
   

@@ -9,61 +9,61 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "pageContent.toJSON()". */
+/** An interface describing the data returned by calling `pageContent.toJSON()`. */
 trait PageContentData extends StObject {
   
   /**
-    *
     * Gets the ID of the PageContent object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var image: js.UndefOr[ImageData] = js.undefined
   
   /**
-    *
     * Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var ink: js.UndefOr[FloatingInkData] = js.undefined
   
   /**
-    *
     * Gets or sets the left (X-axis) position of the PageContent object.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var left: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var outline: js.UndefOr[OutlineData] = js.undefined
   
   /**
-    *
     * Gets or sets the top (Y-axis) position of the PageContent object.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var top: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Gets the type of the PageContent object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var `type`: js.UndefOr[PageContentType | Outline | Image | Ink | Other] = js.undefined

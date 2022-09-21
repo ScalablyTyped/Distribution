@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LoggingConfig extends StObject {
   
   /**
-    * The Amazon CloudWatch log group to which CloudFormation sends error logging information when invoking the type's handlers.
+    * The Amazon CloudWatch Logs group to which CloudFormation sends error logging information when invoking the extension's handlers.
     */
   var LogGroupName: typings.awsSdk.cloudformationMod.LogGroupName
   
   /**
-    * The ARN of the role that CloudFormation should assume when sending log entries to CloudWatch logs.
+    * The Amazon Resource Name (ARN) of the role that CloudFormation should assume when sending log entries to CloudWatch Logs.
     */
   var LogRoleArn: RoleArn
 }

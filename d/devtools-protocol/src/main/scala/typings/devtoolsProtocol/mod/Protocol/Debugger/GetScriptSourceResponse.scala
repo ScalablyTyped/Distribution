@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetScriptSourceResponse extends StObject {
   
   /**
-    * Wasm bytecode.
+    * Wasm bytecode. (Encoded as a base64 string when passed over JSON)
     */
   var bytecode: js.UndefOr[String] = js.undefined
   

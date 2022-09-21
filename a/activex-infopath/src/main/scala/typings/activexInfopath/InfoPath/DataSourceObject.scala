@@ -16,7 +16,7 @@ trait DataSourceObject extends StObject {
   
   def Query(): Unit
   
-  val QueryAdapter: js.Any
+  val QueryAdapter: Any
 }
 object DataSourceObject {
   
@@ -25,7 +25,7 @@ object DataSourceObject {
     InfoPathDotDataSourceObject_typekey: DataSourceObject,
     Name: String,
     Query: () => Unit,
-    QueryAdapter: js.Any
+    QueryAdapter: Any
   ): DataSourceObject = {
     val __obj = js.Dynamic.literal(DOM = DOM.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Query = js.Any.fromFunction0(Query), QueryAdapter = QueryAdapter.asInstanceOf[js.Any])
     __obj.updateDynamic("InfoPath.DataSourceObject_typekey")(InfoPathDotDataSourceObject_typekey.asInstanceOf[js.Any])
@@ -42,6 +42,6 @@ object DataSourceObject {
     
     inline def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
-    inline def setQueryAdapter(value: js.Any): Self = StObject.set(x, "QueryAdapter", value.asInstanceOf[js.Any])
+    inline def setQueryAdapter(value: Any): Self = StObject.set(x, "QueryAdapter", value.asInstanceOf[js.Any])
   }
 }

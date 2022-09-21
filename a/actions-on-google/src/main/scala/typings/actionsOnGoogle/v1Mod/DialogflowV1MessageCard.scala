@@ -31,7 +31,7 @@ object DialogflowV1MessageCard {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: DialogflowV1Button*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: DialogflowV1Button*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     

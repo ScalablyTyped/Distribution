@@ -24,7 +24,7 @@ trait StatusReportingSettings extends StObject {
   /** Whether hardware status reporting is enabled. Report data is not available for personally owned devices with work profiles. */
   var hardwareStatusEnabled: js.UndefOr[Boolean] = js.undefined
   
-  /** Whether memory reporting is enabled. */
+  /** Whether memory event reporting is enabled. */
   var memoryInfoEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether network info reporting is enabled. */

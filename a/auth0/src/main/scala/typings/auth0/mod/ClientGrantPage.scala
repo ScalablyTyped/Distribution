@@ -21,6 +21,6 @@ object ClientGrantPage {
     
     inline def setClient_grants(value: js.Array[ClientGrant]): Self = StObject.set(x, "client_grants", value.asInstanceOf[js.Any])
     
-    inline def setClient_grantsVarargs(value: ClientGrant*): Self = StObject.set(x, "client_grants", js.Array(value :_*))
+    inline def setClient_grantsVarargs(value: ClientGrant*): Self = StObject.set(x, "client_grants", js.Array(value*))
   }
 }

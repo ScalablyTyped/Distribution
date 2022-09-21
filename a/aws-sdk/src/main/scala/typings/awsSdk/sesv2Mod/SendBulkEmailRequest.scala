@@ -12,7 +12,7 @@ trait SendBulkEmailRequest extends StObject {
   var BulkEmailEntries: BulkEmailEntryList
   
   /**
-    * The name of the configuration set that you want to use when sending the email.
+    * The name of the configuration set to use when sending the email.
     */
   var ConfigurationSetName: js.UndefOr[typings.awsSdk.sesv2Mod.ConfigurationSetName] = js.undefined
   
@@ -37,7 +37,7 @@ trait SendBulkEmailRequest extends StObject {
   var FeedbackForwardingEmailAddressIdentityArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
-    * The email address that you want to use as the "From" address for the email. The address that you specify has to be verified.
+    * The email address to use as the "From" address for the email. The address that you specify has to be verified.
     */
   var FromEmailAddress: js.UndefOr[EmailAddress] = js.undefined
   
@@ -62,7 +62,7 @@ object SendBulkEmailRequest {
     
     inline def setBulkEmailEntries(value: BulkEmailEntryList): Self = StObject.set(x, "BulkEmailEntries", value.asInstanceOf[js.Any])
     
-    inline def setBulkEmailEntriesVarargs(value: BulkEmailEntry*): Self = StObject.set(x, "BulkEmailEntries", js.Array(value :_*))
+    inline def setBulkEmailEntriesVarargs(value: BulkEmailEntry*): Self = StObject.set(x, "BulkEmailEntries", js.Array(value*))
     
     inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
@@ -74,7 +74,7 @@ object SendBulkEmailRequest {
     
     inline def setDefaultEmailTagsUndefined: Self = StObject.set(x, "DefaultEmailTags", js.undefined)
     
-    inline def setDefaultEmailTagsVarargs(value: MessageTag*): Self = StObject.set(x, "DefaultEmailTags", js.Array(value :_*))
+    inline def setDefaultEmailTagsVarargs(value: MessageTag*): Self = StObject.set(x, "DefaultEmailTags", js.Array(value*))
     
     inline def setFeedbackForwardingEmailAddress(value: EmailAddress): Self = StObject.set(x, "FeedbackForwardingEmailAddress", value.asInstanceOf[js.Any])
     
@@ -96,6 +96,6 @@ object SendBulkEmailRequest {
     
     inline def setReplyToAddressesUndefined: Self = StObject.set(x, "ReplyToAddresses", js.undefined)
     
-    inline def setReplyToAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value :_*))
+    inline def setReplyToAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "ReplyToAddresses", js.Array(value*))
   }
 }

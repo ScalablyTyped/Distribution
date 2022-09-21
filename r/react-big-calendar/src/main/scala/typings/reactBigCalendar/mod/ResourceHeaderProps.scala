@@ -5,22 +5,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResourceHeaderProps extends StObject {
+trait ResourceHeaderProps[TResource /* <: js.Object */] extends StObject {
   
   var index: Double
   
   var label: ReactNode
   
-  var resource: js.Object
+  var resource: TResource
 }
 object ResourceHeaderProps {
   
-  inline def apply(index: Double, resource: js.Object): ResourceHeaderProps = {
+  inline def apply[TResource /* <: js.Object */](index: Double, resource: TResource): ResourceHeaderProps[TResource] = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ResourceHeaderProps]
+    __obj.asInstanceOf[ResourceHeaderProps[TResource]]
   }
   
-  extension [Self <: ResourceHeaderProps](x: Self) {
+  extension [Self <: ResourceHeaderProps[?], TResource /* <: js.Object */](x: Self & ResourceHeaderProps[TResource]) {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
@@ -28,6 +28,6 @@ object ResourceHeaderProps {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setResource(value: js.Object): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: TResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

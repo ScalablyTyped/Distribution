@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogInfoResponseLimits")
 @js.native
-class CatalogInfoResponseLimits () extends StObject {
+open class CatalogInfoResponseLimits () extends StObject {
   
   /**
     * The maximum number of object IDs that may be included in a single `/v2/catalog/batch-delete` request.

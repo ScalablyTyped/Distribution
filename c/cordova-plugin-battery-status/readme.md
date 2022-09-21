@@ -11,9 +11,9 @@ Cordova Battery Plugin
 | Full name          | cordova-plugin-battery-status |
 | Keywords           | cordova, battery, ecosystem:cordova, cordova-android, cordova-ios |
 | # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 88638 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 8393.333333333334 |
+| # stars            | 93.0 |
 
 ## Links
 - [Homepage](https://github.com/apache/cordova-plugin-battery-status#readme)

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListQueuesRequest extends StObject {
   
   /**
-    * The identifier of the Amazon Connect instance.
+    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
     */
   var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
-    * The maximimum number of results to return per page.
+    * The maximum number of results to return per page. The default MaxResult size is 100.
     */
   var MaxResults: js.UndefOr[MaxResult1000] = js.undefined
   
@@ -49,6 +49,6 @@ object ListQueuesRequest {
     
     inline def setQueueTypesUndefined: Self = StObject.set(x, "QueueTypes", js.undefined)
     
-    inline def setQueueTypesVarargs(value: QueueType*): Self = StObject.set(x, "QueueTypes", js.Array(value :_*))
+    inline def setQueueTypesVarargs(value: QueueType*): Self = StObject.set(x, "QueueTypes", js.Array(value*))
   }
 }

@@ -11,10 +11,13 @@ trait SslCertificateManagedSslCertificate extends StObject {
   var domainStatus: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.SslCertificateManagedSslCertificate & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.SslCertificateManagedSslCertificate & TopLevel[Any]
   ] = js.undefined
   
-  /** The domains for which a managed SSL certificate will be generated. Currently only single-domain certs are supported. */
+  /**
+    * The domains for which a managed SSL certificate will be generated. Each Google-managed SSL certificate supports up to the [maximum number of domains per Google-managed SSL
+    * certificate](/load-balancing/docs/quotas#ssl_certificates).
+    */
   var domains: js.UndefOr[js.Array[String]] = js.undefined
   
   /** [Output only] Status of the managed certificate resource. */
@@ -32,7 +35,7 @@ object SslCertificateManagedSslCertificate {
     inline def setDomainStatus(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.SslCertificateManagedSslCertificate & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.SslCertificateManagedSslCertificate & TopLevel[Any]
     ): Self = StObject.set(x, "domainStatus", value.asInstanceOf[js.Any])
     
     inline def setDomainStatusUndefined: Self = StObject.set(x, "domainStatus", js.undefined)
@@ -41,7 +44,7 @@ object SslCertificateManagedSslCertificate {
     
     inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

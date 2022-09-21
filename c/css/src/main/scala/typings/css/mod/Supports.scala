@@ -28,7 +28,7 @@ object Supports {
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: (Rule | Comment | AtRule)*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: (Rule | Comment | AtRule)*): Self = StObject.set(x, "rules", js.Array(value*))
     
     inline def setSupports(value: String): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
     

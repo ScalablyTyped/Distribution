@@ -1,5 +1,9 @@
 package typings.awsSdk.mediaconnectMod
 
+import typings.awsSdk.anon.DescribeFlowRequestwaiter
+import typings.awsSdk.awsSdkStrings.flowActive
+import typings.awsSdk.awsSdkStrings.flowDeleted
+import typings.awsSdk.awsSdkStrings.flowStandby
 import typings.awsSdk.configBaseMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
@@ -10,6 +14,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait MediaConnect extends Service {
+  
+  /**
+    * Adds media streams to an existing flow. After you add a media stream to a flow, you can associate it with a source and/or an output that uses the ST 2110 JPEG XS or CDI protocol.
+    */
+  def addFlowMediaStreams(): Request[AddFlowMediaStreamsResponse, AWSError] = js.native
+  def addFlowMediaStreams(callback: js.Function2[/* err */ AWSError, /* data */ AddFlowMediaStreamsResponse, Unit]): Request[AddFlowMediaStreamsResponse, AWSError] = js.native
+  /**
+    * Adds media streams to an existing flow. After you add a media stream to a flow, you can associate it with a source and/or an output that uses the ST 2110 JPEG XS or CDI protocol.
+    */
+  def addFlowMediaStreams(params: AddFlowMediaStreamsRequest): Request[AddFlowMediaStreamsResponse, AWSError] = js.native
+  def addFlowMediaStreams(
+    params: AddFlowMediaStreamsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AddFlowMediaStreamsResponse, Unit]
+  ): Request[AddFlowMediaStreamsResponse, AWSError] = js.native
   
   /**
     * Adds outputs to an existing flow. You can create up to 50 outputs per flow.
@@ -225,6 +243,20 @@ trait MediaConnect extends Service {
   ): Request[PurchaseOfferingResponse, AWSError] = js.native
   
   /**
+    * Removes a media stream from a flow. This action is only available if the media stream is not associated with a source or output.
+    */
+  def removeFlowMediaStream(): Request[RemoveFlowMediaStreamResponse, AWSError] = js.native
+  def removeFlowMediaStream(callback: js.Function2[/* err */ AWSError, /* data */ RemoveFlowMediaStreamResponse, Unit]): Request[RemoveFlowMediaStreamResponse, AWSError] = js.native
+  /**
+    * Removes a media stream from a flow. This action is only available if the media stream is not associated with a source or output.
+    */
+  def removeFlowMediaStream(params: RemoveFlowMediaStreamRequest): Request[RemoveFlowMediaStreamResponse, AWSError] = js.native
+  def removeFlowMediaStream(
+    params: RemoveFlowMediaStreamRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveFlowMediaStreamResponse, Unit]
+  ): Request[RemoveFlowMediaStreamResponse, AWSError] = js.native
+  
+  /**
     * Removes an output from an existing flow. This request can be made only on an output that does not have an entitlement associated with it. If the output has an entitlement, you must revoke the entitlement instead. When an entitlement is revoked from a flow, the service automatically removes the associated output.
     */
   def removeFlowOutput(): Request[RemoveFlowOutputResponse, AWSError] = js.native
@@ -362,6 +394,20 @@ trait MediaConnect extends Service {
   ): Request[UpdateFlowEntitlementResponse, AWSError] = js.native
   
   /**
+    * Updates an existing media stream.
+    */
+  def updateFlowMediaStream(): Request[UpdateFlowMediaStreamResponse, AWSError] = js.native
+  def updateFlowMediaStream(callback: js.Function2[/* err */ AWSError, /* data */ UpdateFlowMediaStreamResponse, Unit]): Request[UpdateFlowMediaStreamResponse, AWSError] = js.native
+  /**
+    * Updates an existing media stream.
+    */
+  def updateFlowMediaStream(params: UpdateFlowMediaStreamRequest): Request[UpdateFlowMediaStreamResponse, AWSError] = js.native
+  def updateFlowMediaStream(
+    params: UpdateFlowMediaStreamRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateFlowMediaStreamResponse, Unit]
+  ): Request[UpdateFlowMediaStreamResponse, AWSError] = js.native
+  
+  /**
     * Updates an existing flow output.
     */
   def updateFlowOutput(): Request[UpdateFlowOutputResponse, AWSError] = js.native
@@ -388,4 +434,68 @@ trait MediaConnect extends Service {
     params: UpdateFlowSourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateFlowSourceResponse, Unit]
   ): Request[UpdateFlowSourceResponse, AWSError] = js.native
+  
+  /**
+    * Waits for the flowActive state by periodically calling the underlying MediaConnect.describeFlowoperation every 3 seconds (at most 40 times). Wait until a flow is active
+    */
+  @JSName("waitFor")
+  def waitFor_flowActive(state: flowActive): Request[DescribeFlowResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_flowActive(
+    state: flowActive,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFlowResponse, Unit]
+  ): Request[DescribeFlowResponse, AWSError] = js.native
+  /**
+    * Waits for the flowActive state by periodically calling the underlying MediaConnect.describeFlowoperation every 3 seconds (at most 40 times). Wait until a flow is active
+    */
+  @JSName("waitFor")
+  def waitFor_flowActive(state: flowActive, params: DescribeFlowRequestwaiter): Request[DescribeFlowResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_flowActive(
+    state: flowActive,
+    params: DescribeFlowRequestwaiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFlowResponse, Unit]
+  ): Request[DescribeFlowResponse, AWSError] = js.native
+  /**
+    * Waits for the flowDeleted state by periodically calling the underlying MediaConnect.describeFlowoperation every 3 seconds (at most 40 times). Wait until a flow is deleted
+    */
+  @JSName("waitFor")
+  def waitFor_flowDeleted(state: flowDeleted): Request[DescribeFlowResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_flowDeleted(
+    state: flowDeleted,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFlowResponse, Unit]
+  ): Request[DescribeFlowResponse, AWSError] = js.native
+  /**
+    * Waits for the flowDeleted state by periodically calling the underlying MediaConnect.describeFlowoperation every 3 seconds (at most 40 times). Wait until a flow is deleted
+    */
+  @JSName("waitFor")
+  def waitFor_flowDeleted(state: flowDeleted, params: DescribeFlowRequestwaiter): Request[DescribeFlowResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_flowDeleted(
+    state: flowDeleted,
+    params: DescribeFlowRequestwaiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFlowResponse, Unit]
+  ): Request[DescribeFlowResponse, AWSError] = js.native
+  /**
+    * Waits for the flowStandby state by periodically calling the underlying MediaConnect.describeFlowoperation every 3 seconds (at most 40 times). Wait until a flow is in standby mode
+    */
+  @JSName("waitFor")
+  def waitFor_flowStandby(state: flowStandby): Request[DescribeFlowResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_flowStandby(
+    state: flowStandby,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFlowResponse, Unit]
+  ): Request[DescribeFlowResponse, AWSError] = js.native
+  /**
+    * Waits for the flowStandby state by periodically calling the underlying MediaConnect.describeFlowoperation every 3 seconds (at most 40 times). Wait until a flow is in standby mode
+    */
+  @JSName("waitFor")
+  def waitFor_flowStandby(state: flowStandby, params: DescribeFlowRequestwaiter): Request[DescribeFlowResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_flowStandby(
+    state: flowStandby,
+    params: DescribeFlowRequestwaiter,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFlowResponse, Unit]
+  ): Request[DescribeFlowResponse, AWSError] = js.native
 }

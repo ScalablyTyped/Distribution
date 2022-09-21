@@ -115,9 +115,9 @@ object mod {
     */
   inline def multi[S /* <: StringDictionary[String | ParseWithFallback | ParseWithEachType] */](spec: S): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof S ]: S[P][2] extends getenv.getenv.ParseTypes? getenv.getenv.ParseMappings[S[P][2]] : string}
-    */ typings.getenv.getenvStrings.multi & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("multi")(spec.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    */ typings.getenv.getenvStrings.multi & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("multi")(spec.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof S ]: S[P][2] extends getenv.getenv.ParseTypes? getenv.getenv.ParseMappings[S[P][2]] : string}
-    */ typings.getenv.getenvStrings.multi & TopLevel[js.Any]]
+    */ typings.getenv.getenvStrings.multi & TopLevel[Any]]
   
   /**
     * Return as string.

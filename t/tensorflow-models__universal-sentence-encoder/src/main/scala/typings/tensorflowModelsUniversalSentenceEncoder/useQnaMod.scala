@@ -3,6 +3,7 @@ package typings.tensorflowModelsUniversalSentenceEncoder
 import typings.tensorflowTfjsConverter.mod.GraphModel
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
+import typings.tensorflowTfjsCore.typesMod.IOHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ object useQnaMod {
   
   @JSImport("@tensorflow-models/universal-sentence-encoder/dist/use_qna", "UniversalSentenceEncoderQnA")
   @js.native
-  class UniversalSentenceEncoderQnA () extends StObject {
+  open class UniversalSentenceEncoderQnA () extends StObject {
     
     /**
       *
@@ -27,22 +28,22 @@ object useQnaMod {
     
     def load(): js.Promise[Unit] = js.native
     
-    def loadModel(): js.Promise[GraphModel] = js.native
+    def loadModel(): js.Promise[GraphModel[String | IOHandler]] = js.native
     
-    /* private */ var model: js.Any = js.native
+    /* private */ var model: Any = js.native
     
-    /* private */ var shiftTokens: js.Any = js.native
+    /* private */ var shiftTokens: Any = js.native
     
-    /* private */ var tokenizeStrings: js.Any = js.native
+    /* private */ var tokenizeStrings: Any = js.native
     
-    /* private */ var tokenizer: js.Any = js.native
+    /* private */ var tokenizer: Any = js.native
   }
   
   inline def loadQnA(): js.Promise[UniversalSentenceEncoderQnA] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadQnA")().asInstanceOf[js.Promise[UniversalSentenceEncoderQnA]]
   
   @JSImport("@tensorflow-models/universal-sentence-encoder/dist/use_qna", "version")
   @js.native
-  val version: /* "1.3.2" */ String = js.native
+  val version: /* "1.3.3" */ String = js.native
   
   trait ModelInput extends StObject {
     
@@ -65,15 +66,15 @@ object useQnaMod {
       
       inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
       
-      inline def setContextsVarargs(value: String*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+      inline def setContextsVarargs(value: String*): Self = StObject.set(x, "contexts", js.Array(value*))
       
       inline def setQueries(value: js.Array[String]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
       
-      inline def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value :_*))
+      inline def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value*))
       
       inline def setResponses(value: js.Array[String]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
       
-      inline def setResponsesVarargs(value: String*): Self = StObject.set(x, "responses", js.Array(value :_*))
+      inline def setResponsesVarargs(value: String*): Self = StObject.set(x, "responses", js.Array(value*))
     }
   }
   

@@ -4,47 +4,14 @@ import typings.semanticUiRating.SemanticUI.Rating.ClassNameSettings
 import typings.semanticUiRating.SemanticUI.Rating.ClassNameSettings.Param
 import typings.semanticUiRating.SemanticUI.Rating.ErrorSettings
 import typings.semanticUiRating.SemanticUI.Rating.SelectorSettings
-import typings.semanticUiRating.anon.PartialPickImplkeyofImpl
-import typings.semanticUiRating.anon.PartialPickImplkeyofImplActive
-import typings.semanticUiRating.anon.PickImplactive
-import typings.semanticUiRating.anon.PickImplclassName
-import typings.semanticUiRating.anon.PickImplclearable
-import typings.semanticUiRating.anon.PickImpldebug
-import typings.semanticUiRating.anon.PickImplerror
-import typings.semanticUiRating.anon.PickImplfireOnInit
-import typings.semanticUiRating.anon.PickImplhover
-import typings.semanticUiRating.anon.PickImplinitialRating
-import typings.semanticUiRating.anon.PickImplinteractive
-import typings.semanticUiRating.anon.PickImplloading
-import typings.semanticUiRating.anon.PickImplname
-import typings.semanticUiRating.anon.PickImplnamespace
-import typings.semanticUiRating.anon.PickImplonRate
-import typings.semanticUiRating.anon.PickImplperformance
-import typings.semanticUiRating.anon.PickImplselector
-import typings.semanticUiRating.anon.PickImplsilent
-import typings.semanticUiRating.anon.PickImplverbose
 import typings.semanticUiRating.semanticUiRatingStrings.`clear rating`
 import typings.semanticUiRating.semanticUiRatingStrings.`get rating`
 import typings.semanticUiRating.semanticUiRatingStrings.`set rating`
 import typings.semanticUiRating.semanticUiRatingStrings.auto
-import typings.semanticUiRating.semanticUiRatingStrings.className
-import typings.semanticUiRating.semanticUiRatingStrings.clearable
-import typings.semanticUiRating.semanticUiRatingStrings.debug
 import typings.semanticUiRating.semanticUiRatingStrings.destroy
 import typings.semanticUiRating.semanticUiRatingStrings.disable
 import typings.semanticUiRating.semanticUiRatingStrings.enable
-import typings.semanticUiRating.semanticUiRatingStrings.error
-import typings.semanticUiRating.semanticUiRatingStrings.fireOnInit
-import typings.semanticUiRating.semanticUiRatingStrings.initialRating
-import typings.semanticUiRating.semanticUiRatingStrings.interactive
-import typings.semanticUiRating.semanticUiRatingStrings.name
-import typings.semanticUiRating.semanticUiRatingStrings.namespace
-import typings.semanticUiRating.semanticUiRatingStrings.onRate
-import typings.semanticUiRating.semanticUiRatingStrings.performance
-import typings.semanticUiRating.semanticUiRatingStrings.selector
 import typings.semanticUiRating.semanticUiRatingStrings.setting
-import typings.semanticUiRating.semanticUiRatingStrings.silent
-import typings.semanticUiRating.semanticUiRatingStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -76,41 +43,14 @@ object SemanticUI {
       * Enables interactive rating mode
       */
     def apply(behavior: enable): JQuery = js.native
-    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
-    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: clearable, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: clearable, value: Unit): auto | Boolean = js.native
-    def apply(behavior: setting, name: clearable, value: auto): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
-    def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: fireOnInit, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: fireOnInit, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: initialRating, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: initialRating, value: Unit): Double = js.native
-    def apply(behavior: setting, name: interactive, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: interactive, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
-    def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: Unit): String = js.native
-    def apply(
-      behavior: setting,
-      name: onRate,
-      value: js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]
-    ): JQuery = js.native
-    def apply(behavior: setting, name: onRate, value: Unit): js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit] = js.native
-    def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
-    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: RatingSettings): JQuery = js.native
     def apply(settings: RatingSettings): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-rating.SemanticUI.RatingSettings */ String */](
+      behavior: setting,
+      name: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-rating.SemanticUI.RatingSettings._Impl[K] */ js.Any
+    ): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-rating.SemanticUI.RatingSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-rating.SemanticUI.RatingSettings._Impl[K] */ js.Any = js.native
     
     var settings: RatingSettings = js.native
   }
@@ -152,7 +92,29 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplactive | PickImplhover | PickImplloading) & PartialPickImplkeyofImplActive
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiRating.anon.PickImplactivePartialPick
+        - typings.semanticUiRating.anon.PickImplhoverPartialPickI
+        - typings.semanticUiRating.anon.PickImplloadingPartialPic
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplactivePartialPick(active: String & js.UndefOr[String]): typings.semanticUiRating.anon.PickImplactivePartialPick = {
+          val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplactivePartialPick]
+        }
+        
+        inline def PickImplhoverPartialPickI(hover: String & js.UndefOr[String]): typings.semanticUiRating.anon.PickImplhoverPartialPickI = {
+          val __obj = js.Dynamic.literal(hover = hover.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplhoverPartialPickI]
+        }
+        
+        inline def PickImplloadingPartialPic(loading: String & js.UndefOr[String]): typings.semanticUiRating.anon.PickImplloadingPartialPic = {
+          val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplloadingPartialPic]
+        }
+      }
     }
     type ClassNameSettings = Param
     
@@ -408,7 +370,97 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplinitialRating | PickImplfireOnInit | PickImplclearable | PickImplinteractive | PickImplonRate | PickImplselector | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
+    /* Rewritten from type alias, can be one of: 
+      - typings.semanticUiRating.anon.PickImplinitialRatingPart
+      - typings.semanticUiRating.anon.PickImplfireOnInitPartial
+      - typings.semanticUiRating.anon.PickImplclearablePartialP
+      - typings.semanticUiRating.anon.PickImplinteractivePartia
+      - typings.semanticUiRating.anon.PickImplonRatePartialPick
+      - typings.semanticUiRating.anon.PickImplselectorPartialPi
+      - typings.semanticUiRating.anon.PickImplclassNamePartialP
+      - typings.semanticUiRating.anon.PickImplerrorPartialPickI
+      - typings.semanticUiRating.anon.PickImplnamespacePartialP
+      - typings.semanticUiRating.anon.PickImplnamePartialPickIm
+      - typings.semanticUiRating.anon.PickImplsilentPartialPick
+      - typings.semanticUiRating.anon.PickImpldebugPartialPickI
+      - typings.semanticUiRating.anon.PickImplperformancePartia
+      - typings.semanticUiRating.anon.PickImplverbosePartialPic
+    */
+    trait Param extends StObject
+    object Param {
+      
+      inline def PickImplclassNamePartialP(className: ClassNameSettings & js.UndefOr[ClassNameSettings]): typings.semanticUiRating.anon.PickImplclassNamePartialP = {
+        val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplclassNamePartialP]
+      }
+      
+      inline def PickImplclearablePartialP(clearable: (auto | Boolean) & (js.UndefOr[auto | Boolean])): typings.semanticUiRating.anon.PickImplclearablePartialP = {
+        val __obj = js.Dynamic.literal(clearable = clearable.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplclearablePartialP]
+      }
+      
+      inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiRating.anon.PickImpldebugPartialPickI = {
+        val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiRating.anon.PickImpldebugPartialPickI]
+      }
+      
+      inline def PickImplerrorPartialPickI(error: ErrorSettings & js.UndefOr[ErrorSettings]): typings.semanticUiRating.anon.PickImplerrorPartialPickI = {
+        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplerrorPartialPickI]
+      }
+      
+      inline def PickImplfireOnInitPartial(fireOnInit: Boolean & js.UndefOr[Boolean]): typings.semanticUiRating.anon.PickImplfireOnInitPartial = {
+        val __obj = js.Dynamic.literal(fireOnInit = fireOnInit.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplfireOnInitPartial]
+      }
+      
+      inline def PickImplinitialRatingPart(initialRating: Double & js.UndefOr[Double]): typings.semanticUiRating.anon.PickImplinitialRatingPart = {
+        val __obj = js.Dynamic.literal(initialRating = initialRating.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplinitialRatingPart]
+      }
+      
+      inline def PickImplinteractivePartia(interactive: Boolean & js.UndefOr[Boolean]): typings.semanticUiRating.anon.PickImplinteractivePartia = {
+        val __obj = js.Dynamic.literal(interactive = interactive.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplinteractivePartia]
+      }
+      
+      inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiRating.anon.PickImplnamePartialPickIm = {
+        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplnamePartialPickIm]
+      }
+      
+      inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiRating.anon.PickImplnamespacePartialP = {
+        val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplnamespacePartialP]
+      }
+      
+      inline def PickImplonRatePartialPick(
+        onRate: (js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]) & (js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]])
+      ): typings.semanticUiRating.anon.PickImplonRatePartialPick = {
+        val __obj = js.Dynamic.literal(onRate = onRate.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplonRatePartialPick]
+      }
+      
+      inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiRating.anon.PickImplperformancePartia = {
+        val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplperformancePartia]
+      }
+      
+      inline def PickImplselectorPartialPi(selector: SelectorSettings & js.UndefOr[SelectorSettings]): typings.semanticUiRating.anon.PickImplselectorPartialPi = {
+        val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplselectorPartialPi]
+      }
+      
+      inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiRating.anon.PickImplsilentPartialPick = {
+        val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplsilentPartialPick]
+      }
+      
+      inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiRating.anon.PickImplverbosePartialPic = {
+        val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiRating.anon.PickImplverbosePartialPic]
+      }
+    }
   }
   /**
     * @see {@link http://semantic-ui.com/modules/rating.html#/settings}

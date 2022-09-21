@@ -8,6 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object tsutilsStrings {
   
   @js.native
+  sealed trait $LeftcurlybracketstringRightcurlybracketn extends StObject
+  inline def $LeftcurlybracketstringRightcurlybracketn: $LeftcurlybracketstringRightcurlybracketn = "${string}n".asInstanceOf[$LeftcurlybracketstringRightcurlybracketn]
+  
+  @js.native
+  sealed trait `-$LeftcurlybracketstringRightcurlybracketn` extends StObject
+  inline def `-$LeftcurlybracketstringRightcurlybracketn`: `-$LeftcurlybracketstringRightcurlybracketn` = "-${string}n".asInstanceOf[`-$LeftcurlybracketstringRightcurlybracketn`]
+  
+  @js.native
   sealed trait CarriagereturnLinefeed extends StObject
   inline def CarriagereturnLinefeed: CarriagereturnLinefeed = "\r\n".asInstanceOf[CarriagereturnLinefeed]
   
@@ -114,6 +122,10 @@ object tsutilsStrings {
   inline def esModuleInterop: esModuleInterop = "esModuleInterop".asInstanceOf[esModuleInterop]
   
   @js.native
+  sealed trait exactOptionalPropertyTypes extends StObject
+  inline def exactOptionalPropertyTypes: exactOptionalPropertyTypes = "exactOptionalPropertyTypes".asInstanceOf[exactOptionalPropertyTypes]
+  
+  @js.native
   sealed trait experimentalDecorators extends StObject
   inline def experimentalDecorators: experimentalDecorators = "experimentalDecorators".asInstanceOf[experimentalDecorators]
   
@@ -186,8 +198,16 @@ object tsutilsStrings {
   inline def module: module = "module".asInstanceOf[module]
   
   @js.native
+  sealed trait moduleDetection extends StObject
+  inline def moduleDetection: moduleDetection = "moduleDetection".asInstanceOf[moduleDetection]
+  
+  @js.native
   sealed trait moduleResolution extends StObject
   inline def moduleResolution: moduleResolution = "moduleResolution".asInstanceOf[moduleResolution]
+  
+  @js.native
+  sealed trait moduleSuffixes extends StObject
+  inline def moduleSuffixes: moduleSuffixes = "moduleSuffixes".asInstanceOf[moduleSuffixes]
   
   @js.native
   sealed trait newLine extends StObject
@@ -220,6 +240,10 @@ object tsutilsStrings {
   inline def noImplicitAny: noImplicitAny = "noImplicitAny".asInstanceOf[noImplicitAny]
   
   @js.native
+  sealed trait noImplicitOverride extends StObject
+  inline def noImplicitOverride: noImplicitOverride = "noImplicitOverride".asInstanceOf[noImplicitOverride]
+  
+  @js.native
   sealed trait noImplicitReturns extends StObject
   inline def noImplicitReturns: noImplicitReturns = "noImplicitReturns".asInstanceOf[noImplicitReturns]
   
@@ -236,6 +260,10 @@ object tsutilsStrings {
   @js.native
   sealed trait noLib extends StObject
   inline def noLib: noLib = "noLib".asInstanceOf[noLib]
+  
+  @js.native
+  sealed trait noPropertyAccessFromIndexSignature extends StObject
+  inline def noPropertyAccessFromIndexSignature: noPropertyAccessFromIndexSignature = "noPropertyAccessFromIndexSignature".asInstanceOf[noPropertyAccessFromIndexSignature]
   
   @js.native
   sealed trait noResolve extends StObject
@@ -280,6 +308,10 @@ object tsutilsStrings {
   @js.native
   sealed trait preserveSymlinks extends StObject
   inline def preserveSymlinks: preserveSymlinks = "preserveSymlinks".asInstanceOf[preserveSymlinks]
+  
+  @js.native
+  sealed trait preserveValueImports extends StObject
+  inline def preserveValueImports: preserveValueImports = "preserveValueImports".asInstanceOf[preserveValueImports]
   
   @js.native
   sealed trait project extends StObject
@@ -392,4 +424,8 @@ object tsutilsStrings {
   @js.native
   sealed trait useDefineForClassFields extends StObject
   inline def useDefineForClassFields: useDefineForClassFields = "useDefineForClassFields".asInstanceOf[useDefineForClassFields]
+  
+  @js.native
+  sealed trait useUnknownInCatchVariables extends StObject
+  inline def useUnknownInCatchVariables: useUnknownInCatchVariables = "useUnknownInCatchVariables".asInstanceOf[useUnknownInCatchVariables]
 }

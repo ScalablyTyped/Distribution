@@ -48,7 +48,7 @@ object overflowSetTypesMod {
        with /**
     * (Optional) Any additional properties to apply to the rendered links.
     */
-  /* propertyName */ StringDictionary[js.Any] {
+  /* propertyName */ StringDictionary[Any] {
     
     /**
       * Unique id to identify the item.
@@ -111,9 +111,12 @@ object overflowSetTypesMod {
     /**
       * Function that will take in an IOverflowSetItemProps and return the subMenu for that item.
       * If not provided, will use 'item.subMenuProps.items' by default.
+      * Alternatively accepts a boolean, return True if the item has a menu and False if not
       * This is only used if your overflow set has keytips.
       */
-    var itemSubMenuProvider: js.UndefOr[js.Function1[/* item */ IOverflowSetItemProps, js.UndefOr[js.Array[js.Any]]]] = js.undefined
+    var itemSubMenuProvider: js.UndefOr[
+        js.Function1[/* item */ IOverflowSetItemProps, js.UndefOr[js.Array[Any] | Boolean]]
+      ] = js.undefined
     
     /**
       * An array of items to be rendered by your onRenderItem function in the primary content area
@@ -128,13 +131,13 @@ object overflowSetTypesMod {
     /**
       * Method to call when trying to render an item.
       */
-    def onRenderItem(item: IOverflowSetItemProps): js.Any
+    def onRenderItem(item: IOverflowSetItemProps): Any
     
     /**
       * Rendering method for overflow button and contextual menu. The argument to the function is
       * the overflowItems passed in as props to this function.
       */
-    var onRenderOverflowButton: IRenderFunction[js.Array[js.Any]]
+    var onRenderOverflowButton: IRenderFunction[js.Array[Any]]
     
     /**
       * An array of items to be passed to overflow contextual menu
@@ -169,8 +172,8 @@ object overflowSetTypesMod {
   object IOverflowSetProps {
     
     inline def apply(
-      onRenderItem: IOverflowSetItemProps => js.Any,
-      onRenderOverflowButton: (/* props */ js.UndefOr[js.Array[js.Any]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Array[js.Any]], Element | Null]]) => Element | Null
+      onRenderItem: IOverflowSetItemProps => Any,
+      onRenderOverflowButton: (/* props */ js.UndefOr[js.Array[Any]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Array[Any]], Element | Null]]) => Element | Null
     ): IOverflowSetProps = {
       val __obj = js.Dynamic.literal(onRenderItem = js.Any.fromFunction1(onRenderItem), onRenderOverflowButton = js.Any.fromFunction2(onRenderOverflowButton))
       __obj.asInstanceOf[IOverflowSetProps]
@@ -196,7 +199,7 @@ object overflowSetTypesMod {
       
       inline def setFocusZonePropsUndefined: Self = StObject.set(x, "focusZoneProps", js.undefined)
       
-      inline def setItemSubMenuProvider(value: /* item */ IOverflowSetItemProps => js.UndefOr[js.Array[js.Any]]): Self = StObject.set(x, "itemSubMenuProvider", js.Any.fromFunction1(value))
+      inline def setItemSubMenuProvider(value: /* item */ IOverflowSetItemProps => js.UndefOr[js.Array[Any] | Boolean]): Self = StObject.set(x, "itemSubMenuProvider", js.Any.fromFunction1(value))
       
       inline def setItemSubMenuProviderUndefined: Self = StObject.set(x, "itemSubMenuProvider", js.undefined)
       
@@ -204,25 +207,25 @@ object overflowSetTypesMod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: IOverflowSetItemProps*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: IOverflowSetItemProps*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setKeytipSequences(value: js.Array[String]): Self = StObject.set(x, "keytipSequences", value.asInstanceOf[js.Any])
       
       inline def setKeytipSequencesUndefined: Self = StObject.set(x, "keytipSequences", js.undefined)
       
-      inline def setKeytipSequencesVarargs(value: String*): Self = StObject.set(x, "keytipSequences", js.Array(value :_*))
+      inline def setKeytipSequencesVarargs(value: String*): Self = StObject.set(x, "keytipSequences", js.Array(value*))
       
-      inline def setOnRenderItem(value: IOverflowSetItemProps => js.Any): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction1(value))
+      inline def setOnRenderItem(value: IOverflowSetItemProps => Any): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction1(value))
       
       inline def setOnRenderOverflowButton(
-        value: (/* props */ js.UndefOr[js.Array[js.Any]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Array[js.Any]], Element | Null]]) => Element | Null
+        value: (/* props */ js.UndefOr[js.Array[Any]], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Array[Any]], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderOverflowButton", js.Any.fromFunction2(value))
       
       inline def setOverflowItems(value: js.Array[IOverflowSetItemProps]): Self = StObject.set(x, "overflowItems", value.asInstanceOf[js.Any])
       
       inline def setOverflowItemsUndefined: Self = StObject.set(x, "overflowItems", js.undefined)
       
-      inline def setOverflowItemsVarargs(value: IOverflowSetItemProps*): Self = StObject.set(x, "overflowItems", js.Array(value :_*))
+      inline def setOverflowItemsVarargs(value: IOverflowSetItemProps*): Self = StObject.set(x, "overflowItems", js.Array(value*))
       
       inline def setOverflowSide(value: start | end): Self = StObject.set(x, "overflowSide", value.asInstanceOf[js.Any])
       

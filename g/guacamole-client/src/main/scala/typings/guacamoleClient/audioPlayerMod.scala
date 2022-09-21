@@ -10,7 +10,7 @@ object audioPlayerMod {
   
   @JSImport("guacamole-client/lib/AudioPlayer", "AudioPlayer")
   @js.native
-  class AudioPlayer () extends StObject {
+  open class AudioPlayer () extends StObject {
     
     /**
       * Notifies this Guacamole.AudioPlayer that all audio up to the current

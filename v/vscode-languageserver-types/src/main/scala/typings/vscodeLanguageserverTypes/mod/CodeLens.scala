@@ -12,11 +12,11 @@ trait CodeLens extends StObject {
   var command: js.UndefOr[Command] = js.undefined
   
   /**
-    * An data entry field that is preserved on a code lens item between
+    * A data entry field that is preserved on a code lens item between
     * a [CodeLensRequest](#CodeLensRequest) and a [CodeLensResolveRequest]
     * (#CodeLensResolveRequest)
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[LSPAny] = js.undefined
   
   /**
     * The range in which this code lens is valid. Should only span a single line.
@@ -38,12 +38,12 @@ object CodeLens {
     * Creates a new CodeLens literal.
     */
   inline def create(range: Range): CodeLens = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any]).asInstanceOf[CodeLens]
-  inline def create(range: Range, data: js.Any): CodeLens = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[CodeLens]
+  inline def create(range: Range, data: LSPAny): CodeLens = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[CodeLens]
   
   /**
     * Checks whether the given literal conforms to the [CodeLens](#CodeLens) interface.
     */
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeLens */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeLens */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeLens */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeLens */ Boolean]
   
   extension [Self <: CodeLens](x: Self) {
     
@@ -51,7 +51,7 @@ object CodeLens {
     
     inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: LSPAny): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

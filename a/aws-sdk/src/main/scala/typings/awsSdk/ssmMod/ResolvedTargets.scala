@@ -29,7 +29,7 @@ object ResolvedTargets {
     
     inline def setParameterValuesUndefined: Self = StObject.set(x, "ParameterValues", js.undefined)
     
-    inline def setParameterValuesVarargs(value: ParameterValue*): Self = StObject.set(x, "ParameterValues", js.Array(value :_*))
+    inline def setParameterValuesVarargs(value: ParameterValue*): Self = StObject.set(x, "ParameterValues", js.Array(value*))
     
     inline def setTruncated(value: Boolean): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
     

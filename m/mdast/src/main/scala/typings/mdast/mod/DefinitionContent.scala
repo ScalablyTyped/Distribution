@@ -4,24 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* Inlined mdast.mdast.DefinitionContentMap[keyof mdast.mdast.DefinitionContentMap] */
 /* Rewritten from type alias, can be one of: 
-  - typings.mdast.mod.Definition
-  - typings.mdast.mod.FootnoteDefinition
+  - typings.mdast.mdastStrings.`type`
+  - typings.mdast.mdastStrings.children
 */
-trait DefinitionContent
-  extends StObject
-     with _TopLevelContent
+trait DefinitionContent extends StObject
 object DefinitionContent {
   
-  inline def Definition(identifier: String, url: String): typings.mdast.mod.Definition = {
-    val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("definition")
-    __obj.asInstanceOf[typings.mdast.mod.Definition]
-  }
+  inline def children: typings.mdast.mdastStrings.children = "children".asInstanceOf[typings.mdast.mdastStrings.children]
   
-  inline def FootnoteDefinition(children: js.Array[BlockContent], identifier: String): typings.mdast.mod.FootnoteDefinition = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("footnoteDefinition")
-    __obj.asInstanceOf[typings.mdast.mod.FootnoteDefinition]
-  }
+  inline def `type`: typings.mdast.mdastStrings.`type` = "type".asInstanceOf[typings.mdast.mdastStrings.`type`]
 }

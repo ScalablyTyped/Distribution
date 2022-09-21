@@ -12,10 +12,10 @@ trait JQueryStatic extends StObject {
     * @param value Value to set for key. If ommited, current value for key is returned.
     * @param options Not implemented.
     */
-  def totalStorage(key: String): js.Any
-  def totalStorage(key: String, value: js.Any): js.Any
-  def totalStorage(key: String, value: js.Any, options: JQueryTotalStorageOptions): js.Any
-  def totalStorage(key: String, value: Unit, options: JQueryTotalStorageOptions): js.Any
+  def totalStorage(key: String): Any
+  def totalStorage(key: String, value: Any): Any
+  def totalStorage(key: String, value: Any, options: JQueryTotalStorageOptions): Any
+  def totalStorage(key: String, value: Unit, options: JQueryTotalStorageOptions): Any
   @JSName("totalStorage")
   var totalStorage_Original: JQueryTotalStorage
 }

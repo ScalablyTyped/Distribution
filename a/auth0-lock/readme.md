@@ -1,7 +1,7 @@
 
 # Scala.js typings for auth0-lock
 
-Typings are for version 11.4
+Typings are for version 11.27
 
 ## Library description:
 Auth0 Lock
@@ -10,10 +10,10 @@ Auth0 Lock
 | ------------------ | :-------------: |
 | Full name          | auth0-lock |
 | Keywords           | auth0, auth, openid, authentication, passwordless, browser, jwt |
-| # releases         | 44 |
-| # dependents       | 53 |
-| # downloads        | 1673740 |
-| # stars            | 5 |
+| # releases         | 25 |
+| # dependents       | 0.0 |
+| # downloads        | 134549.33333333334 |
+| # stars            | 1088.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/lock#readme)

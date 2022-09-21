@@ -92,7 +92,7 @@ object modelTypesMod {
       
       inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   
@@ -115,7 +115,7 @@ object modelTypesMod {
       
       inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   
@@ -177,7 +177,7 @@ object modelTypesMod {
       
       inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value*))
       
       inline def setTfDtype(value: String): Self = StObject.set(x, "tfDtype", value.asInstanceOf[js.Any])
       
@@ -208,7 +208,7 @@ object modelTypesMod {
       
       inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value*))
     }
   }
   

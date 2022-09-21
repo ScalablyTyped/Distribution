@@ -1,6 +1,5 @@
 package typings.rsocketTypes
 
-import typings.std.Error
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,13 +20,13 @@ object reactiveStreamTypesMod {
     
     def onComplete(): Unit
     
-    def onError(error: Error): Unit
+    def onError(error: js.Error): Unit
     
     def onNext(value: T): Unit
   }
   object ISubject {
     
-    inline def apply[T](onComplete: () => Unit, onError: Error => Unit, onNext: T => Unit): ISubject[T] = {
+    inline def apply[T](onComplete: () => Unit, onError: js.Error => Unit, onNext: T => Unit): ISubject[T] = {
       val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onError = js.Any.fromFunction1(onError), onNext = js.Any.fromFunction1(onNext))
       __obj.asInstanceOf[ISubject[T]]
     }
@@ -36,7 +35,7 @@ object reactiveStreamTypesMod {
       
       inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
       
-      inline def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnNext(value: T => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
     }
@@ -46,7 +45,7 @@ object reactiveStreamTypesMod {
     
     def onComplete(): Unit
     
-    def onError(error: Error): Unit
+    def onError(error: js.Error): Unit
     
     def onNext(value: T): Unit
     
@@ -56,7 +55,7 @@ object reactiveStreamTypesMod {
     
     inline def apply[T](
       onComplete: () => Unit,
-      onError: Error => Unit,
+      onError: js.Error => Unit,
       onNext: T => Unit,
       onSubscribe: ISubscription => Unit
     ): ISubscriber[T] = {
@@ -68,7 +67,7 @@ object reactiveStreamTypesMod {
       
       inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
       
-      inline def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnNext(value: T => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
       

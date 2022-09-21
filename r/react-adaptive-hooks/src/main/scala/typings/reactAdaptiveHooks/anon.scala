@@ -1,6 +1,7 @@
 package typings.reactAdaptiveHooks
 
 import typings.reactAdaptiveHooks.mediaCapabilitiesMod.AudioMediaConfiguration
+import typings.reactAdaptiveHooks.mediaCapabilitiesMod.MediaConfiguration
 import typings.reactAdaptiveHooks.mediaCapabilitiesMod.VideoMediaConfiguration
 import typings.reactAdaptiveHooks.reactAdaptiveHooksBooleans.`false`
 import typings.reactAdaptiveHooks.reactAdaptiveHooksBooleans.`true`
@@ -13,23 +14,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait Audio extends StObject {
-    
-    var audio: AudioMediaConfiguration
-  }
-  object Audio {
-    
-    inline def apply(audio: AudioMediaConfiguration): Audio = {
-      val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Audio]
-    }
-    
-    extension [Self <: Audio](x: Self) {
-      
-      inline def setAudio(value: AudioMediaConfiguration): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
-    }
-  }
   
   trait EffectiveConnectionType extends StObject {
     
@@ -214,24 +198,6 @@ object anon {
     }
   }
   
-  trait Type extends StObject {
-    
-    var `type`: file | record | transmission | `media-source`
-  }
-  object Type {
-    
-    inline def apply(`type`: file | record | transmission | `media-source`): Type = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Type]
-    }
-    
-    extension [Self <: Type](x: Self) {
-      
-      inline def setType(value: file | record | transmission | `media-source`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Unsupported extends StObject {
     
     var unsupported: `true`
@@ -249,20 +215,28 @@ object anon {
     }
   }
   
-  trait Video extends StObject {
+  /* Inlined {  audio :react-adaptive-hooks.react-adaptive-hooks/media-capabilities.AudioMediaConfiguration} & {  type :'file' | 'record' | 'transmission' | 'media-source'} */
+  trait audioAudioMediaConfigurat
+    extends StObject
+       with MediaConfiguration {
     
-    var video: VideoMediaConfiguration
+    var audio: AudioMediaConfiguration
+    
+    var `type`: file | record | transmission | `media-source`
   }
-  object Video {
+  object audioAudioMediaConfigurat {
     
-    inline def apply(video: VideoMediaConfiguration): Video = {
-      val __obj = js.Dynamic.literal(video = video.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Video]
+    inline def apply(audio: AudioMediaConfiguration, `type`: file | record | transmission | `media-source`): audioAudioMediaConfigurat = {
+      val __obj = js.Dynamic.literal(audio = audio.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[audioAudioMediaConfigurat]
     }
     
-    extension [Self <: Video](x: Self) {
+    extension [Self <: audioAudioMediaConfigurat](x: Self) {
       
-      inline def setVideo(value: VideoMediaConfiguration): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setAudio(value: AudioMediaConfiguration): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: file | record | transmission | `media-source`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -333,6 +307,31 @@ object anon {
       inline def setUsedJSHeapSize(value: Double): Self = StObject.set(x, "usedJSHeapSize", value.asInstanceOf[js.Any])
       
       inline def setUsedJSHeapSizeNull: Self = StObject.set(x, "usedJSHeapSize", null)
+    }
+  }
+  
+  /* Inlined {  video :react-adaptive-hooks.react-adaptive-hooks/media-capabilities.VideoMediaConfiguration} & {  type :'file' | 'record' | 'transmission' | 'media-source'} */
+  trait videoVideoMediaConfigurat
+    extends StObject
+       with MediaConfiguration {
+    
+    var `type`: file | record | transmission | `media-source`
+    
+    var video: VideoMediaConfiguration
+  }
+  object videoVideoMediaConfigurat {
+    
+    inline def apply(`type`: file | record | transmission | `media-source`, video: VideoMediaConfiguration): videoVideoMediaConfigurat = {
+      val __obj = js.Dynamic.literal(video = video.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[videoVideoMediaConfigurat]
+    }
+    
+    extension [Self <: videoVideoMediaConfigurat](x: Self) {
+      
+      inline def setType(value: file | record | transmission | `media-source`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setVideo(value: VideoMediaConfiguration): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     }
   }
 }

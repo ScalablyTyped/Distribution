@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-touch", "Swipeable")
 @js.native
-class Swipeable protected ()
-  extends Component[SwipeableProps, js.Object, js.Any] {
+open class Swipeable protected ()
+  extends Component[SwipeableProps, js.Object, Any] {
   def this(props: SwipeableProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SwipeableProps, context: js.Any) = this()
+  def this(props: SwipeableProps, context: Any) = this()
 }

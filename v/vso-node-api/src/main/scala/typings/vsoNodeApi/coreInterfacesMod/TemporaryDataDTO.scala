@@ -10,11 +10,11 @@ trait TemporaryDataDTO extends StObject {
   
   var origin: String
   
-  var value: js.Any
+  var value: Any
 }
 object TemporaryDataDTO {
   
-  inline def apply(expirationSeconds: Double, origin: String, value: js.Any): TemporaryDataDTO = {
+  inline def apply(expirationSeconds: Double, origin: String, value: Any): TemporaryDataDTO = {
     val __obj = js.Dynamic.literal(expirationSeconds = expirationSeconds.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemporaryDataDTO]
   }
@@ -25,6 +25,6 @@ object TemporaryDataDTO {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

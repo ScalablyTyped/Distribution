@@ -21,43 +21,43 @@ object mod {
   
   @JSImport("mobx-react-devtools", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[IDevToolProps, js.Object, js.Any]
+  open class default ()
+    extends Component[IDevToolProps, js.Object, Any]
   
   @JSImport("mobx-react-devtools", "GraphControl")
   @js.native
-  class GraphControl protected ()
-    extends Component[js.Object, js.Object, js.Any] {
+  open class GraphControl protected ()
+    extends Component[js.Object, js.Object, Any] {
     def this(props: js.Object) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Object, context: js.Any) = this()
+    def this(props: js.Object, context: Any) = this()
   }
   
   @JSImport("mobx-react-devtools", "LogControl")
   @js.native
-  class LogControl protected ()
-    extends Component[js.Object, js.Object, js.Any] {
+  open class LogControl protected ()
+    extends Component[js.Object, js.Object, Any] {
     def this(props: js.Object) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: js.Object, context: js.Any) = this()
+    def this(props: js.Object, context: Any) = this()
   }
   
   @JSImport("mobx-react-devtools", "UpdatesControl")
   @js.native
-  class UpdatesControl protected ()
-    extends Component[HighlightTimeout, js.Object, js.Any] {
+  open class UpdatesControl protected ()
+    extends Component[HighlightTimeout, js.Object, Any] {
     def this(props: HighlightTimeout) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: HighlightTimeout, context: js.Any) = this()
+    def this(props: HighlightTimeout, context: Any) = this()
   }
   
   inline def configureDevtool(options: GraphEnabled): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureDevtool")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -68,7 +68,7 @@ object mod {
   
   inline def setUpdatesEnabled(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpdatesEnabled")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type DevTools = Component[IDevToolProps, js.Object, js.Any]
+  type DevTools = Component[IDevToolProps, js.Object, Any]
   
   trait IDevToolProps extends StObject {
     

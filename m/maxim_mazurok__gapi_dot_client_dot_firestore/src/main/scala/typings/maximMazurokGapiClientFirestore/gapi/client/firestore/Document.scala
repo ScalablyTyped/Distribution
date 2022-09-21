@@ -24,7 +24,7 @@ trait Document extends StObject {
   var fields: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.firestore.gapi.client.firestore.Value}
-    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.Document & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.Document & TopLevel[Any]
   ] = js.undefined
   
   /** The resource name of the document, for example `projects/{project_id}/databases/{database_id}/documents/{document_path}`. */
@@ -52,7 +52,7 @@ object Document {
     inline def setFields(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.firestore.gapi.client.firestore.Value}
-      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.Document & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.Document & TopLevel[Any]
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)

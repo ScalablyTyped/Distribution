@@ -16,32 +16,43 @@ trait Action
   @JSName("_actionManager")
   var _actionManager_Action: ActionManager = js.native
   
-  /* private */ var _child: js.Any = js.native
+  /* private */ var _child: Any = js.native
   
-  /* private */ var _condition: js.Any = js.native
+  /* private */ var _condition: Any = js.native
   
   /**
-    * Internal only
+    * Internal only - Returns if the current condition allows to run the action
     * @hidden
     */
-  def _getEffectiveTarget(target: js.Any, propertyPath: String): js.Any = js.native
+  def _evaluateConditionForCurrentFrame(): Boolean = js.native
   
   /**
     * Internal only
+    * @param target
+    * @param propertyPath
+    * @hidden
+    */
+  def _getEffectiveTarget(target: Any, propertyPath: String): Any = js.native
+  
+  /**
+    * Internal only
+    * @param propertyPath
     * @hidden
     */
   def _getProperty(propertyPath: String): String = js.native
   
-  /* private */ var _nextActiveAction: js.Any = js.native
+  /* private */ var _nextActiveAction: Any = js.native
   
   /**
     * Internal only called by serialize
+    * @param serializedAction
+    * @param parent
     * @hidden
     */
-  /* protected */ def _serialize(serializedAction: js.Any): js.Any = js.native
-  /* protected */ def _serialize(serializedAction: js.Any, parent: js.Any): js.Any = js.native
+  /* protected */ def _serialize(serializedAction: Any): Any = js.native
+  /* protected */ def _serialize(serializedAction: Any, parent: Any): Any = js.native
   
-  /* private */ var _triggerParameter: js.Any = js.native
+  /* private */ var _triggerParameter: Any = js.native
   
   /**
     * Execute placeholder for child classes
@@ -54,6 +65,12 @@ trait Action
     * An event triggered prior to action being executed.
     */
   var onBeforeExecuteObservable: Observable[Action] = js.native
+  
+  /**
+    * Sets the trigger parameter
+    * @param value defines the new trigger parameter
+    */
+  def setTriggerParameter(value: Any): Unit = js.native
   
   /**
     * Skips to next active action

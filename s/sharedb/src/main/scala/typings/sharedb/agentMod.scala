@@ -1,7 +1,7 @@
 package typings.sharedb
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.sharedb.anon.DuplexisServerbooleanunde
+import typings.node.streamMod.Duplex
+import typings.sharedb.anon.IsServer
 import typings.sharedb.sharedbMod.JSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,9 +23,9 @@ object agentMod {
     */
   @JSImport("sharedb/lib/agent", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^[TCustom] ()
     extends StObject
-       with Agent {
+       with Agent[TCustom] {
     
     /* CompleteClass */
     var backend: typings.sharedb.mod.^ = js.native
@@ -36,7 +36,7 @@ object agentMod {
       * active, and it is passed to each middleware call.
       */
     /* CompleteClass */
-    var custom: Custom = js.native
+    var custom: TCustom = js.native
     
     /**
       * Sends a JSON-compatible message to the client for this agent.
@@ -47,7 +47,7 @@ object agentMod {
     override def send(message: JSONObject): Unit = js.native
     
     /* CompleteClass */
-    var stream: DuplexisServerbooleanunde = js.native
+    var stream: Duplex & IsServer = js.native
   }
   
   /**
@@ -62,7 +62,7 @@ object agentMod {
     *
     * @see https://github.com/share/sharedb#class-sharedbagent
     */
-  trait Agent extends StObject {
+  trait Agent[TCustom] extends StObject {
     
     var backend: typings.sharedb.mod.^
     
@@ -71,7 +71,7 @@ object agentMod {
       * given client session. It is in memory only as long as the session is
       * active, and it is passed to each middleware call.
       */
-    var custom: Custom
+    var custom: TCustom
     
     /**
       * Sends a JSON-compatible message to the client for this agent.
@@ -80,31 +80,29 @@ object agentMod {
       */
     def send(message: JSONObject): Unit
     
-    var stream: DuplexisServerbooleanunde
+    var stream: Duplex & IsServer
   }
   object Agent {
     
-    inline def apply(
+    inline def apply[TCustom](
       backend: typings.sharedb.mod.^,
-      custom: Custom,
+      custom: TCustom,
       send: JSONObject => Unit,
-      stream: DuplexisServerbooleanunde
-    ): Agent = {
+      stream: Duplex & IsServer
+    ): Agent[TCustom] = {
       val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], custom = custom.asInstanceOf[js.Any], send = js.Any.fromFunction1(send), stream = stream.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Agent]
+      __obj.asInstanceOf[Agent[TCustom]]
     }
     
-    extension [Self <: Agent](x: Self) {
+    extension [Self <: Agent[?], TCustom](x: Self & Agent[TCustom]) {
       
       inline def setBackend(value: typings.sharedb.mod.^): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
-      inline def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: TCustom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
       inline def setSend(value: JSONObject => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
       
-      inline def setStream(value: DuplexisServerbooleanunde): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Duplex & IsServer): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
-  
-  type Custom = StringDictionary[js.Any]
 }

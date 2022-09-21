@@ -8,9 +8,9 @@ trait DiagramSelectEvent
   extends StObject
      with DiagramEvent {
   
-  var deselected: js.UndefOr[js.Any] = js.undefined
+  var deselected: js.UndefOr[Any] = js.undefined
   
-  var selected: js.UndefOr[js.Any] = js.undefined
+  var selected: js.UndefOr[Any] = js.undefined
 }
 object DiagramSelectEvent {
   
@@ -21,11 +21,11 @@ object DiagramSelectEvent {
   
   extension [Self <: DiagramSelectEvent](x: Self) {
     
-    inline def setDeselected(value: js.Any): Self = StObject.set(x, "deselected", value.asInstanceOf[js.Any])
+    inline def setDeselected(value: Any): Self = StObject.set(x, "deselected", value.asInstanceOf[js.Any])
     
     inline def setDeselectedUndefined: Self = StObject.set(x, "deselected", js.undefined)
     
-    inline def setSelected(value: js.Any): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Any): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }

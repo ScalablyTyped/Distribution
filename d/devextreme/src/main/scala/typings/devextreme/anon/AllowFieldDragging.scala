@@ -6,18 +6,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AllowFieldDragging extends StObject {
   
+  /**
+    * Makes fields on the field panel draggable.
+    */
   var allowFieldDragging: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Shows/hides column fields on the field panel.
+    */
   var showColumnFields: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Shows/hides data fields on the field panel.
+    */
   var showDataFields: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Shows/hides filter fields on the field panel.
+    */
   var showFilterFields: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Shows/hides row fields on the field panel.
+    */
   var showRowFields: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies the placeholders of the field areas.
+    */
   var texts: js.UndefOr[ColumnFieldArea] = js.undefined
   
+  /**
+    * Shows/hides the field panel.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object AllowFieldDragging {

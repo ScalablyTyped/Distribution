@@ -7,9 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DBEngineVersion extends StObject {
   
   /**
+    * The creation time of the DB engine version.
+    */
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * The description of the database engine.
     */
   var DBEngineDescription: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The ARN of the custom engine version.
+    */
+  var DBEngineVersionArn: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the database engine version.
@@ -22,7 +32,17 @@ trait DBEngineVersion extends StObject {
   var DBParameterGroupFamily: js.UndefOr[String] = js.undefined
   
   /**
-    *  The default character set for new instances of this engine version, if the CharacterSetName parameter of the CreateDBInstance API isn't specified. 
+    * The name of the Amazon S3 bucket that contains your database installation files.
+    */
+  var DatabaseInstallationFilesS3BucketName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon S3 directory that contains the database installation files. If not specified, then no prefix is assumed.
+    */
+  var DatabaseInstallationFilesS3Prefix: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The default character set for new instances of this engine version, if the CharacterSetName parameter of the CreateDBInstance API isn't specified.
     */
   var DefaultCharacterSet: js.UndefOr[CharacterSet] = js.undefined
   
@@ -42,12 +62,22 @@ trait DBEngineVersion extends StObject {
   var ExportableLogTypes: js.UndefOr[LogTypeList] = js.undefined
   
   /**
+    * The Amazon Web Services KMS key identifier for an encrypted CEV. This parameter is required for RDS Custom, but optional for Amazon RDS.
+    */
+  var KMSKeyId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The major engine version of the CEV.
+    */
+  var MajorEngineVersion: js.UndefOr[String] = js.undefined
+  
+  /**
     * The status of the DB engine version, either available or deprecated.
     */
   var Status: js.UndefOr[String] = js.undefined
   
   /**
-    * A list of the character sets supported by this engine for the CharacterSetName parameter of the CreateDBInstance operation. 
+    * A list of the character sets supported by this engine for the CharacterSetName parameter of the CreateDBInstance operation.
     */
   var SupportedCharacterSets: js.UndefOr[SupportedCharacterSetsList] = js.undefined
   
@@ -57,19 +87,24 @@ trait DBEngineVersion extends StObject {
   var SupportedEngineModes: js.UndefOr[EngineModeList] = js.undefined
   
   /**
-    *  A list of features supported by the DB engine. Supported feature names include the following.    s3Import  
+    * A list of features supported by the DB engine. The supported features vary by DB engine and DB engine version. To determine the supported features for a specific DB engine and DB engine version using the CLI, use the following command:  aws rds describe-db-engine-versions --engine &lt;engine_name&gt; --engine-version &lt;engine_version&gt;  For example, to determine the supported features for RDS for PostgreSQL version 13.3 using the CLI, use the following command:  aws rds describe-db-engine-versions --engine postgres --engine-version 13.3  The supported features are listed under SupportedFeatureNames in the output.
     */
   var SupportedFeatureNames: js.UndefOr[FeatureNameList] = js.undefined
   
   /**
-    * A list of the character sets supported by the Oracle DB engine for the NcharCharacterSetName parameter of the CreateDBInstance operation. 
+    * A list of the character sets supported by the Oracle DB engine for the NcharCharacterSetName parameter of the CreateDBInstance operation.
     */
   var SupportedNcharCharacterSets: js.UndefOr[SupportedCharacterSetsList] = js.undefined
   
   /**
-    * A list of the time zones supported by this engine for the Timezone parameter of the CreateDBInstance action. 
+    * A list of the time zones supported by this engine for the Timezone parameter of the CreateDBInstance action.
     */
   var SupportedTimezones: js.UndefOr[SupportedTimezonesList] = js.undefined
+  
+  /**
+    * A value that indicates whether the engine version supports Babelfish for Aurora PostgreSQL.
+    */
+  var SupportsBabelfish: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A value that indicates whether you can use Aurora global databases with a specific DB engine version.
@@ -91,6 +126,8 @@ trait DBEngineVersion extends StObject {
     */
   var SupportsReadReplica: js.UndefOr[Boolean] = js.undefined
   
+  var TagList: js.UndefOr[typings.awsSdk.rdsMod.TagList] = js.undefined
+  
   /**
     * A list of engine versions that this database engine version can be upgraded to.
     */
@@ -105,9 +142,17 @@ object DBEngineVersion {
   
   extension [Self <: DBEngineVersion](x: Self) {
     
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
+    
     inline def setDBEngineDescription(value: String): Self = StObject.set(x, "DBEngineDescription", value.asInstanceOf[js.Any])
     
     inline def setDBEngineDescriptionUndefined: Self = StObject.set(x, "DBEngineDescription", js.undefined)
+    
+    inline def setDBEngineVersionArn(value: String): Self = StObject.set(x, "DBEngineVersionArn", value.asInstanceOf[js.Any])
+    
+    inline def setDBEngineVersionArnUndefined: Self = StObject.set(x, "DBEngineVersionArn", js.undefined)
     
     inline def setDBEngineVersionDescription(value: String): Self = StObject.set(x, "DBEngineVersionDescription", value.asInstanceOf[js.Any])
     
@@ -116,6 +161,14 @@ object DBEngineVersion {
     inline def setDBParameterGroupFamily(value: String): Self = StObject.set(x, "DBParameterGroupFamily", value.asInstanceOf[js.Any])
     
     inline def setDBParameterGroupFamilyUndefined: Self = StObject.set(x, "DBParameterGroupFamily", js.undefined)
+    
+    inline def setDatabaseInstallationFilesS3BucketName(value: String): Self = StObject.set(x, "DatabaseInstallationFilesS3BucketName", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseInstallationFilesS3BucketNameUndefined: Self = StObject.set(x, "DatabaseInstallationFilesS3BucketName", js.undefined)
+    
+    inline def setDatabaseInstallationFilesS3Prefix(value: String): Self = StObject.set(x, "DatabaseInstallationFilesS3Prefix", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseInstallationFilesS3PrefixUndefined: Self = StObject.set(x, "DatabaseInstallationFilesS3Prefix", js.undefined)
     
     inline def setDefaultCharacterSet(value: CharacterSet): Self = StObject.set(x, "DefaultCharacterSet", value.asInstanceOf[js.Any])
     
@@ -133,7 +186,15 @@ object DBEngineVersion {
     
     inline def setExportableLogTypesUndefined: Self = StObject.set(x, "ExportableLogTypes", js.undefined)
     
-    inline def setExportableLogTypesVarargs(value: String*): Self = StObject.set(x, "ExportableLogTypes", js.Array(value :_*))
+    inline def setExportableLogTypesVarargs(value: String*): Self = StObject.set(x, "ExportableLogTypes", js.Array(value*))
+    
+    inline def setKMSKeyId(value: String): Self = StObject.set(x, "KMSKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setKMSKeyIdUndefined: Self = StObject.set(x, "KMSKeyId", js.undefined)
+    
+    inline def setMajorEngineVersion(value: String): Self = StObject.set(x, "MajorEngineVersion", value.asInstanceOf[js.Any])
+    
+    inline def setMajorEngineVersionUndefined: Self = StObject.set(x, "MajorEngineVersion", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
@@ -143,31 +204,35 @@ object DBEngineVersion {
     
     inline def setSupportedCharacterSetsUndefined: Self = StObject.set(x, "SupportedCharacterSets", js.undefined)
     
-    inline def setSupportedCharacterSetsVarargs(value: CharacterSet*): Self = StObject.set(x, "SupportedCharacterSets", js.Array(value :_*))
+    inline def setSupportedCharacterSetsVarargs(value: CharacterSet*): Self = StObject.set(x, "SupportedCharacterSets", js.Array(value*))
     
     inline def setSupportedEngineModes(value: EngineModeList): Self = StObject.set(x, "SupportedEngineModes", value.asInstanceOf[js.Any])
     
     inline def setSupportedEngineModesUndefined: Self = StObject.set(x, "SupportedEngineModes", js.undefined)
     
-    inline def setSupportedEngineModesVarargs(value: String*): Self = StObject.set(x, "SupportedEngineModes", js.Array(value :_*))
+    inline def setSupportedEngineModesVarargs(value: String*): Self = StObject.set(x, "SupportedEngineModes", js.Array(value*))
     
     inline def setSupportedFeatureNames(value: FeatureNameList): Self = StObject.set(x, "SupportedFeatureNames", value.asInstanceOf[js.Any])
     
     inline def setSupportedFeatureNamesUndefined: Self = StObject.set(x, "SupportedFeatureNames", js.undefined)
     
-    inline def setSupportedFeatureNamesVarargs(value: String*): Self = StObject.set(x, "SupportedFeatureNames", js.Array(value :_*))
+    inline def setSupportedFeatureNamesVarargs(value: String*): Self = StObject.set(x, "SupportedFeatureNames", js.Array(value*))
     
     inline def setSupportedNcharCharacterSets(value: SupportedCharacterSetsList): Self = StObject.set(x, "SupportedNcharCharacterSets", value.asInstanceOf[js.Any])
     
     inline def setSupportedNcharCharacterSetsUndefined: Self = StObject.set(x, "SupportedNcharCharacterSets", js.undefined)
     
-    inline def setSupportedNcharCharacterSetsVarargs(value: CharacterSet*): Self = StObject.set(x, "SupportedNcharCharacterSets", js.Array(value :_*))
+    inline def setSupportedNcharCharacterSetsVarargs(value: CharacterSet*): Self = StObject.set(x, "SupportedNcharCharacterSets", js.Array(value*))
     
     inline def setSupportedTimezones(value: SupportedTimezonesList): Self = StObject.set(x, "SupportedTimezones", value.asInstanceOf[js.Any])
     
     inline def setSupportedTimezonesUndefined: Self = StObject.set(x, "SupportedTimezones", js.undefined)
     
-    inline def setSupportedTimezonesVarargs(value: Timezone*): Self = StObject.set(x, "SupportedTimezones", js.Array(value :_*))
+    inline def setSupportedTimezonesVarargs(value: Timezone*): Self = StObject.set(x, "SupportedTimezones", js.Array(value*))
+    
+    inline def setSupportsBabelfish(value: Boolean): Self = StObject.set(x, "SupportsBabelfish", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsBabelfishUndefined: Self = StObject.set(x, "SupportsBabelfish", js.undefined)
     
     inline def setSupportsGlobalDatabases(value: Boolean): Self = StObject.set(x, "SupportsGlobalDatabases", value.asInstanceOf[js.Any])
     
@@ -185,10 +250,16 @@ object DBEngineVersion {
     
     inline def setSupportsReadReplicaUndefined: Self = StObject.set(x, "SupportsReadReplica", js.undefined)
     
+    inline def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
+    
+    inline def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
+    
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value*))
+    
     inline def setValidUpgradeTarget(value: ValidUpgradeTargetList): Self = StObject.set(x, "ValidUpgradeTarget", value.asInstanceOf[js.Any])
     
     inline def setValidUpgradeTargetUndefined: Self = StObject.set(x, "ValidUpgradeTarget", js.undefined)
     
-    inline def setValidUpgradeTargetVarargs(value: UpgradeTarget*): Self = StObject.set(x, "ValidUpgradeTarget", js.Array(value :_*))
+    inline def setValidUpgradeTargetVarargs(value: UpgradeTarget*): Self = StObject.set(x, "ValidUpgradeTarget", js.Array(value*))
   }
 }

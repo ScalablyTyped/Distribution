@@ -12,7 +12,7 @@ object basicShaderLibMod {
   
   @JSImport("wonder.js/dist/es2015/renderer/shader/lib/basic/BasicShaderLib", "BasicShaderLib")
   @js.native
-  class BasicShaderLib () extends EngineShaderLib {
+  open class BasicShaderLib () extends EngineShaderLib {
     
     def sendShaderVariables(program: Program, cmd: QuadCommand, material: BasicMaterial): Unit = js.native
     

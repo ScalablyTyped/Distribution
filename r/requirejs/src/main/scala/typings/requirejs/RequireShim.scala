@@ -24,7 +24,7 @@ trait RequireShim extends StObject {
     * @param dependencies
     * @return
     **/
-  var init: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var init: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
 }
 object RequireShim {
   
@@ -39,13 +39,13 @@ object RequireShim {
     
     inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
-    inline def setDepsVarargs(value: String*): Self = StObject.set(x, "deps", js.Array(value :_*))
+    inline def setDepsVarargs(value: String*): Self = StObject.set(x, "deps", js.Array(value*))
     
     inline def setExports(value: String): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
     inline def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
     
-    inline def setInit(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: /* repeated */ Any => Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
   }

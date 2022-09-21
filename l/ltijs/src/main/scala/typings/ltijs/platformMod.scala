@@ -4,7 +4,6 @@ import typings.ltijs.anon.Documenttarget
 import typings.ltijs.anon.Label
 import typings.ltijs.anon.Title
 import typings.ltijs.ltijsBooleans.`false`
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -115,10 +114,10 @@ object platformMod {
     
     var context: Label
     
-    var createdAt: Date
+    var createdAt: js.Date
     
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    var custom: js.Any
+    var custom: Any
     
     var deploymentId: String
     
@@ -142,8 +141,8 @@ object platformMod {
       __id: String,
       __v: Double,
       context: Label,
-      createdAt: Date,
-      custom: js.Any,
+      createdAt: js.Date,
+      custom: Any,
       deploymentId: String,
       launchPresentation: Documenttarget,
       messageType: String,
@@ -161,9 +160,9 @@ object platformMod {
       
       inline def setContext(value: Label): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      inline def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
-      inline def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      inline def setCustom(value: Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
       
       inline def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
       

@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DataSourceSchema extends StObject {
   
-  var aggregates: js.UndefOr[js.Any] = js.undefined
+  var aggregates: js.UndefOr[Any] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
-  var errors: js.UndefOr[js.Any] = js.undefined
+  var errors: js.UndefOr[Any] = js.undefined
   
-  var groups: js.UndefOr[js.Any] = js.undefined
+  var groups: js.UndefOr[Any] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.undefined
+  var model: js.UndefOr[Any] = js.undefined
   
   var parse: js.UndefOr[js.Function] = js.undefined
   
-  var total: js.UndefOr[js.Any] = js.undefined
+  var total: js.UndefOr[Any] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -31,23 +31,23 @@ object DataSourceSchema {
   
   extension [Self <: DataSourceSchema](x: Self) {
     
-    inline def setAggregates(value: js.Any): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
+    inline def setAggregates(value: Any): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
     
     inline def setAggregatesUndefined: Self = StObject.set(x, "aggregates", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setGroups(value: js.Any): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: Any): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
@@ -55,7 +55,7 @@ object DataSourceSchema {
     
     inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     
-    inline def setTotal(value: js.Any): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Any): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     

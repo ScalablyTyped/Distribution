@@ -1,33 +1,31 @@
 package typings.figlet
 
 import typings.figlet.anon.PartialDefaults
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(txt: String, cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(txt: String, cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     txt: String,
     font: Fonts_,
-    cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
+    cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], font.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     txt: String,
-    options: Unit,
-    cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  /**
-    * @desc
-    * This `unified-signatures` is disabled because `Fonts` type is too long
-    */
+    // This `unified-signatures` is disabled because `Fonts` type is too long
   // tslint:disable-next-line: unified-signatures
+  options: Unit,
+    cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     txt: String,
-    options: Options,
-    cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
+    // This `unified-signatures` is disabled because `Fonts` type is too long
+  // tslint:disable-next-line: unified-signatures
+  options: Options,
+    cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("figlet", JSImport.Namespace)
@@ -42,7 +40,7 @@ object mod {
     * This method exists in node environment only.
     * In browser environment, this method does not exist.
     */
-  inline def fonts(cb: js.Function2[/* error */ Error | Null, /* fontList */ js.UndefOr[js.Array[Fonts_]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fonts")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def fonts(cb: js.Function2[/* error */ js.Error | Null, /* fontList */ js.UndefOr[js.Array[Fonts_]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fonts")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * @warn
@@ -53,7 +51,7 @@ object mod {
   
   inline def loadFont(
     font: Fonts_,
-    cb: js.Function2[/* error */ Error | Null, /* fontOptions */ js.UndefOr[FontOptions], Unit]
+    cb: js.Function2[/* error */ js.Error | Null, /* fontOptions */ js.UndefOr[FontOptions], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(font.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -70,23 +68,34 @@ object mod {
   inline def metadata(
     font: Fonts_,
     cb: js.Function3[
-      /* error */ Error | Null, 
+      /* error */ js.Error | Null, 
       /* fontOptions */ js.UndefOr[FontOptions], 
       /* headerComment */ js.UndefOr[String], 
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(font.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def text(txt: String, cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(txt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  /**
+    * @desc
+    * Load a custom font from a file.
+    *
+    * @param fontName
+    * The name you want to give the new font.
+    * @param fontFile
+    * The data from the font file.
+    */
+  inline def parseFont(fontName: String, fontFile: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFont")(fontName.asInstanceOf[js.Any], fontFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def text(txt: String, cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(txt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def text(
     txt: String,
     font: Fonts_,
-    cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
+    cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(txt.asInstanceOf[js.Any], font.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def text(
     txt: String,
     options: Unit,
-    cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
+    cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * @desc
@@ -96,7 +105,7 @@ object mod {
   inline def text(
     txt: String,
     options: Options,
-    cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
+    cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def textSync(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("textSync")(txt.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -292,6 +301,7 @@ object mod {
     - typings.figlet.figletStrings.`AMC Thin`
     - typings.figlet.figletStrings.`AMC Tubes`
     - typings.figlet.figletStrings.`AMC Untitled`
+    - typings.figlet.figletStrings.`ANSI Regular`
     - typings.figlet.figletStrings.`ANSI Shadow`
     - typings.figlet.figletStrings.`ASCII New Roman`
     - typings.figlet.figletStrings.Acrobatic
@@ -468,6 +478,7 @@ object mod {
     - typings.figlet.figletStrings.Octal
     - typings.figlet.figletStrings.Ogre
     - typings.figlet.figletStrings.`Old Banner`
+    - typings.figlet.figletStrings.Pagga
     - typings.figlet.figletStrings.`PatorjkApostrophes Cheese`
     - typings.figlet.figletStrings.`Patorjk-HeX`
     - typings.figlet.figletStrings.Pawp
@@ -600,6 +611,8 @@ object mod {
     inline def `AMC Tubes`: typings.figlet.figletStrings.`AMC Tubes` = ("AMC Tubes").asInstanceOf[typings.figlet.figletStrings.`AMC Tubes`]
     
     inline def `AMC Untitled`: typings.figlet.figletStrings.`AMC Untitled` = ("AMC Untitled").asInstanceOf[typings.figlet.figletStrings.`AMC Untitled`]
+    
+    inline def `ANSI Regular`: typings.figlet.figletStrings.`ANSI Regular` = ("ANSI Regular").asInstanceOf[typings.figlet.figletStrings.`ANSI Regular`]
     
     inline def `ANSI Shadow`: typings.figlet.figletStrings.`ANSI Shadow` = ("ANSI Shadow").asInstanceOf[typings.figlet.figletStrings.`ANSI Shadow`]
     
@@ -953,6 +966,8 @@ object mod {
     
     inline def `Old Banner`: typings.figlet.figletStrings.`Old Banner` = ("Old Banner").asInstanceOf[typings.figlet.figletStrings.`Old Banner`]
     
+    inline def Pagga: typings.figlet.figletStrings.Pagga = "Pagga".asInstanceOf[typings.figlet.figletStrings.Pagga]
+    
     inline def `Patorjk-HeX`: typings.figlet.figletStrings.`Patorjk-HeX` = "Patorjk-HeX".asInstanceOf[typings.figlet.figletStrings.`Patorjk-HeX`]
     
     inline def `PatorjkApostrophes Cheese`: typings.figlet.figletStrings.`PatorjkApostrophes Cheese` = ("Patorjk's Cheese").asInstanceOf[typings.figlet.figletStrings.`PatorjkApostrophes Cheese`]
@@ -1172,6 +1187,20 @@ object mod {
     var showHardBlanks: js.UndefOr[Boolean] = js.undefined
     
     var verticalLayout: js.UndefOr[KerningMethods] = js.undefined
+    
+    /**
+      * This option works in conjunction with "width".
+      * If this option is set to true, then the library will attempt to break text up on whitespace when limiting the width.
+      * @default false
+      */
+    var whitespaceBreak: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * This option allows you to limit the width of the output.
+      * For example, if you want your output to be a max of 80 characters wide, you would set this option to 80.
+      * @default undefined
+      */
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -1201,6 +1230,14 @@ object mod {
       inline def setVerticalLayout(value: KerningMethods): Self = StObject.set(x, "verticalLayout", value.asInstanceOf[js.Any])
       
       inline def setVerticalLayoutUndefined: Self = StObject.set(x, "verticalLayout", js.undefined)
+      
+      inline def setWhitespaceBreak(value: Boolean): Self = StObject.set(x, "whitespaceBreak", value.asInstanceOf[js.Any])
+      
+      inline def setWhitespaceBreakUndefined: Self = StObject.set(x, "whitespaceBreak", js.undefined)
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   

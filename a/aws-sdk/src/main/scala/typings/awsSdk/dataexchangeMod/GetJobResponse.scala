@@ -14,7 +14,7 @@ trait GetJobResponse extends StObject {
   /**
     * The date and time that the job was created, in ISO 8601 format.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Details about the job.
@@ -44,7 +44,7 @@ trait GetJobResponse extends StObject {
   /**
     * The date and time that the job was last updated, in ISO 8601 format.
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
+  var UpdatedAt: js.UndefOr[js.Date] = js.undefined
 }
 object GetJobResponse {
   
@@ -59,7 +59,7 @@ object GetJobResponse {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -71,7 +71,7 @@ object GetJobResponse {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: JobError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: JobError*): Self = StObject.set(x, "Errors", js.Array(value*))
     
     inline def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
@@ -85,7 +85,7 @@ object GetJobResponse {
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
   }

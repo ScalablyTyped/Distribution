@@ -49,7 +49,7 @@ object ListVirtualInterfaceTestHistoryRequest {
     
     inline def setBgpPeersUndefined: Self = StObject.set(x, "bgpPeers", js.undefined)
     
-    inline def setBgpPeersVarargs(value: BGPPeerId*): Self = StObject.set(x, "bgpPeers", js.Array(value :_*))
+    inline def setBgpPeersVarargs(value: BGPPeerId*): Self = StObject.set(x, "bgpPeers", js.Array(value*))
     
     inline def setMaxResults(value: MaxResultSetSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for uuidjs
 
-Typings are for version 4.2.6
+Typings are for version 4.2.11
 
 ## Library description:
 RFC-compliant UUID Generator for JavaScript
@@ -11,9 +11,9 @@ RFC-compliant UUID Generator for JavaScript
 | Full name          | uuidjs |
 | Keywords           | library, uuid, guid, rfc, 4122, universally, globally, unique, identifier |
 | # releases         | 6 |
-| # dependents       | 24 |
-| # downloads        | 361918 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 35161.0 |
+| # stars            | 386.0 |
 
 ## Links
 - [Homepage](https://github.com/LiosK/UUID.js)

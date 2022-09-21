@@ -7,7 +7,6 @@ import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Types.Curves.JSONCurve
 import typings.phaser.Phaser.Types.Curves.JSONEllipseCurve
 import typings.phaser.Phaser.Types.Curves.JSONPath
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,7 +77,7 @@ object Curves {
     /**
       * The quantity of arc length divisions within the curve.
       */
-    var arcLengthDivisions: integer = js.native
+    var arcLengthDivisions: Double = js.native
     
     /**
       * An array of cached arc length values.
@@ -88,7 +87,7 @@ object Curves {
     /**
       * The default number of divisions within the curve.
       */
-    var defaultDivisions: integer = js.native
+    var defaultDivisions: Double = js.native
     
     /**
       * Draws this curve on the given Graphics object.
@@ -99,7 +98,7 @@ object Curves {
       * @param pointsTotal The resolution of the curve. The higher the value the smoother it will render, at the cost of rendering performance. Default 32.
       */
     def draw[G /* <: Graphics */](graphics: G): G = js.native
-    def draw[G /* <: Graphics */](graphics: G, pointsTotal: integer): G = js.native
+    def draw[G /* <: Graphics */](graphics: G, pointsTotal: Double): G = js.native
     
     /**
       * Returns a Rectangle where the position and dimensions match the bounds of this Curve.
@@ -110,16 +109,16 @@ object Curves {
       * @param accuracy The accuracy of the bounds calculations. Default 16.
       */
     def getBounds(): Rectangle = js.native
-    def getBounds(out: Unit, accuracy: integer): Rectangle = js.native
+    def getBounds(out: Unit, accuracy: Double): Rectangle = js.native
     def getBounds(out: Rectangle): Rectangle = js.native
-    def getBounds(out: Rectangle, accuracy: integer): Rectangle = js.native
+    def getBounds(out: Rectangle, accuracy: Double): Rectangle = js.native
     
     /**
       * Returns an array of points, spaced out X distance pixels apart.
       * The smaller the distance, the larger the array will be.
       * @param distance The distance, in pixels, between each point along the curve.
       */
-    def getDistancePoints(distance: integer): js.Array[Point] = js.native
+    def getDistancePoints(distance: Double): js.Array[Point] = js.native
     
     /**
       * Get a point at the end of the curve.
@@ -146,7 +145,7 @@ object Curves {
       * @param divisions The number of divisions or segments.
       */
     def getLengths(): js.Array[Double] = js.native
-    def getLengths(divisions: integer): js.Array[Double] = js.native
+    def getLengths(divisions: Double): js.Array[Double] = js.native
     
     /**
       * Get a point at a relative position on the curve, by arc length.
@@ -173,13 +172,13 @@ object Curves {
       * @param out An optional array to store the points in.
       */
     def getPoints[O /* <: js.Array[Vector2] */](): O = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](divisions: Double): O = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](divisions: Double, stepRate: Double): O = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](divisions: Double, stepRate: Double, out: O): O = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](divisions: Double, stepRate: Unit, out: O): O = js.native
     def getPoints[O /* <: js.Array[Vector2] */](divisions: Unit, stepRate: Double): O = js.native
     def getPoints[O /* <: js.Array[Vector2] */](divisions: Unit, stepRate: Double, out: O): O = js.native
     def getPoints[O /* <: js.Array[Vector2] */](divisions: Unit, stepRate: Unit, out: O): O = js.native
-    def getPoints[O /* <: js.Array[Vector2] */](divisions: integer): O = js.native
-    def getPoints[O /* <: js.Array[Vector2] */](divisions: integer, stepRate: Double): O = js.native
-    def getPoints[O /* <: js.Array[Vector2] */](divisions: integer, stepRate: Double, out: O): O = js.native
-    def getPoints[O /* <: js.Array[Vector2] */](divisions: integer, stepRate: Unit, out: O): O = js.native
     
     /**
       * Get a random point from the curve.
@@ -197,13 +196,13 @@ object Curves {
       * @param out An optional array to store the points in.
       */
     def getSpacedPoints(): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: Double): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: Double, stepRate: Double): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: Double, stepRate: Double, out: js.Array[Any | Vector2]): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: Double, stepRate: Unit, out: js.Array[Any | Vector2]): js.Array[Vector2] = js.native
     def getSpacedPoints(divisions: Unit, stepRate: Double): js.Array[Vector2] = js.native
-    def getSpacedPoints(divisions: Unit, stepRate: Double, out: js.Array[js.Any | Vector2]): js.Array[Vector2] = js.native
-    def getSpacedPoints(divisions: Unit, stepRate: Unit, out: js.Array[js.Any | Vector2]): js.Array[Vector2] = js.native
-    def getSpacedPoints(divisions: integer): js.Array[Vector2] = js.native
-    def getSpacedPoints(divisions: integer, stepRate: Double): js.Array[Vector2] = js.native
-    def getSpacedPoints(divisions: integer, stepRate: Double, out: js.Array[js.Any | Vector2]): js.Array[Vector2] = js.native
-    def getSpacedPoints(divisions: integer, stepRate: Unit, out: js.Array[js.Any | Vector2]): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: Unit, stepRate: Double, out: js.Array[Any | Vector2]): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: Unit, stepRate: Unit, out: js.Array[Any | Vector2]): js.Array[Vector2] = js.native
     
     /**
       * Get a point at the start of the curve.
@@ -217,8 +216,8 @@ object Curves {
       * @param distance The distance, in pixels.
       * @param divisions Optional amount of divisions.
       */
-    def getTFromDistance(distance: integer): Double = js.native
-    def getTFromDistance(distance: integer, divisions: integer): Double = js.native
+    def getTFromDistance(distance: Double): Double = js.native
+    def getTFromDistance(distance: Double, divisions: Double): Double = js.native
     
     /**
       * Get a unit vector tangent at a relative position on the curve.
@@ -245,8 +244,8 @@ object Curves {
       * @param distance The distance, in pixels.
       * @param divisions Optional amount of divisions.
       */
-    def getUtoTmapping(u: Double, distance: integer): Double = js.native
-    def getUtoTmapping(u: Double, distance: integer, divisions: integer): Double = js.native
+    def getUtoTmapping(u: Double, distance: Double): Double = js.native
+    def getUtoTmapping(u: Double, distance: Double, divisions: Double): Double = js.native
     
     /**
       * Does the data of this curve need updating?
@@ -419,8 +418,11 @@ object Curves {
     
     /**
       * Gets the slope of the line as a unit vector.
+      * @param t The relative position on the line, [0..1].
+      * @param out A vector to store the result in.
       */
     def getTangent[O /* <: Vector2 */](): O = js.native
+    def getTangent[O /* <: Vector2 */](t: Unit, out: O): O = js.native
     
     /**
       * The first endpoint.
@@ -439,7 +441,8 @@ object Curves {
   }
   
   /**
-    * A MoveTo Curve is a very simple curve consisting of only a single point. Its intended use is to move the ending point in a Path.
+    * A MoveTo Curve is a very simple curve consisting of only a single point.
+    * Its intended use is to move the ending point in a Path.
     */
   @js.native
   trait MoveTo extends StObject {
@@ -570,7 +573,7 @@ object Curves {
       * @param pointsTotal The number of points to draw for each Curve. Higher numbers result in a smoother curve but require more processing. Default 32.
       */
     def draw[G /* <: Graphics */](graphics: Graphics): G = js.native
-    def draw[G /* <: Graphics */](graphics: Graphics, pointsTotal: integer): G = js.native
+    def draw[G /* <: Graphics */](graphics: Graphics, pointsTotal: Double): G = js.native
     
     /**
       * Creates an ellipse curve positioned at the previous end point, using the given parameters.
@@ -584,8 +587,8 @@ object Curves {
     def ellipseTo(
       xRadius: js.UndefOr[Double],
       yRadius: js.UndefOr[Double],
-      startAngle: js.UndefOr[integer],
-      endAngle: js.UndefOr[integer],
+      startAngle: js.UndefOr[Double],
+      endAngle: js.UndefOr[Double],
       clockwise: js.UndefOr[Boolean],
       rotation: js.UndefOr[Double]
     ): this.type = js.native
@@ -605,8 +608,8 @@ object Curves {
       */
     def getBounds[O /* <: Vector2 */](): O = js.native
     def getBounds[O /* <: Vector2 */](out: O): O = js.native
-    def getBounds[O /* <: Vector2 */](out: O, accuracy: integer): O = js.native
-    def getBounds[O /* <: Vector2 */](out: Unit, accuracy: integer): O = js.native
+    def getBounds[O /* <: Vector2 */](out: O, accuracy: Double): O = js.native
+    def getBounds[O /* <: Vector2 */](out: Unit, accuracy: Double): O = js.native
     
     /**
       * Returns an array containing the length of the Path at the end of each Curve.
@@ -644,7 +647,7 @@ object Curves {
       * @param divisions The number of divisions per resolution per curve. Default 12.
       */
     def getPoints(): js.Array[Vector2] = js.native
-    def getPoints(divisions: integer): js.Array[Vector2] = js.native
+    def getPoints(divisions: Double): js.Array[Vector2] = js.native
     
     /**
       * Returns a randomly chosen point anywhere on the path. This follows the same rules as `getPoint` in that it may return a point on any Curve inside this path.
@@ -662,7 +665,7 @@ object Curves {
       * @param divisions The amount of points to divide this Path into. Default 40.
       */
     def getSpacedPoints(): js.Array[Vector2] = js.native
-    def getSpacedPoints(divisions: integer): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: Double): js.Array[Vector2] = js.native
     
     /**
       * Returns the starting point of the Path.

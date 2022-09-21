@@ -10,10 +10,10 @@ A service to handle common dialog types in a web application.  Built on top of A
 | ------------------ | :-------------: |
 | Full name          | angular-dialog-service |
 | Keywords           | angular, dialog, modal, service |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 80717 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6548.0 |
+| # stars            | 630.0 |
 
 ## Links
 - [Homepage](https://github.com/m-e-conroy/angular-dialog-service#readme)

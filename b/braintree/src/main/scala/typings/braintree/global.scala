@@ -1,5 +1,18 @@
 package typings.braintree
 
+import typings.braintree.anon.Active
+import typings.braintree.anon.All
+import typings.braintree.anon.Api
+import typings.braintree.anon.ApplicationIncomplete
+import typings.braintree.anon.AuthorizationExpired
+import typings.braintree.anon.Bank
+import typings.braintree.anon.Canceled
+import typings.braintree.anon.Credit
+import typings.braintree.anon.FullInformation
+import typings.braintree.anon.Held
+import typings.braintree.anon.International
+import typings.braintree.anon.No
+import typings.braintree.anon.Sale
 import typings.braintree.mod.GatewayConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,65 +22,101 @@ object global {
   
   object braintree {
     
-    @JSGlobal("braintree")
-    @js.native
-    val ^ : js.Any = js.native
-    
     @JSGlobal("braintree.AccountUpdaterDailyReport")
     @js.native
-    class AccountUpdaterDailyReport ()
+    open class AccountUpdaterDailyReport ()
       extends typings.braintree.mod.AccountUpdaterDailyReport
     
     @JSGlobal("braintree.AddOn")
     @js.native
-    class AddOn ()
+    open class AddOn ()
       extends typings.braintree.mod.AddOn
     
     @JSGlobal("braintree.Address")
     @js.native
-    class Address ()
+    open class Address ()
       extends typings.braintree.mod.Address
     
     @JSGlobal("braintree.AndroidPayCard")
     @js.native
-    class AndroidPayCard ()
+    open class AndroidPayCard ()
       extends typings.braintree.mod.AndroidPayCard
     
     @JSGlobal("braintree.ApplePayCard")
     @js.native
-    class ApplePayCard ()
+    open class ApplePayCard ()
       extends typings.braintree.mod.ApplePayCard
     
     @JSGlobal("braintree.BraintreeGateway")
     @js.native
-    class BraintreeGateway protected ()
+    open class BraintreeGateway protected ()
       extends typings.braintree.mod.BraintreeGateway {
       def this(config: GatewayConfig) = this()
     }
     
     @JSGlobal("braintree.CreditCard")
     @js.native
-    class CreditCard ()
+    open class CreditCard ()
       extends typings.braintree.mod.CreditCard
+    /* static members */
+    object CreditCard {
+      
+      @JSGlobal("braintree.CreditCard")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSGlobal("braintree.CreditCard.CardType")
+      @js.native
+      def CardType: All = js.native
+      
+      @JSGlobal("braintree.CreditCard.CardTypeIndicator")
+      @js.native
+      def CardTypeIndicator: No = js.native
+      inline def CardTypeIndicator_=(x: No): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CardTypeIndicator")(x.asInstanceOf[js.Any])
+      
+      inline def CardType_=(x: All): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CardType")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("braintree.CreditCard.CustomerLocation")
+      @js.native
+      def CustomerLocation: International = js.native
+      inline def CustomerLocation_=(x: International): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomerLocation")(x.asInstanceOf[js.Any])
+    }
     
     @JSGlobal("braintree.CreditCardVerification")
     @js.native
-    class CreditCardVerification ()
+    open class CreditCardVerification ()
       extends typings.braintree.mod.CreditCardVerification
     
     @JSGlobal("braintree.Customer")
     @js.native
-    class Customer ()
+    open class Customer ()
       extends typings.braintree.mod.Customer
+    
+    @JSGlobal("braintree.Disbursement")
+    @js.native
+    open class Disbursement ()
+      extends typings.braintree.mod.Disbursement
+    /* static members */
+    object Disbursement {
+      
+      @JSGlobal("braintree.Disbursement")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSGlobal("braintree.Disbursement.Types")
+      @js.native
+      def Types: Credit = js.native
+      inline def Types_=(x: Credit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Types")(x.asInstanceOf[js.Any])
+    }
     
     @JSGlobal("braintree.Discount")
     @js.native
-    class Discount ()
+    open class Discount ()
       extends typings.braintree.mod.Discount
     
     @JSGlobal("braintree.Dispute")
     @js.native
-    class Dispute ()
+    open class Dispute ()
       extends typings.braintree.mod.Dispute
     
     @JSGlobal("braintree.Environment")
@@ -88,85 +137,133 @@ object global {
     
     @JSGlobal("braintree.MasterpassCard")
     @js.native
-    class MasterpassCard ()
+    open class MasterpassCard ()
       extends typings.braintree.mod.MasterpassCard
     
     @JSGlobal("braintree.MerchantAccount")
     @js.native
-    class MerchantAccount ()
+    open class MerchantAccount ()
       extends typings.braintree.mod.MerchantAccount
+    /* static members */
+    object MerchantAccount {
+      
+      @JSGlobal("braintree.MerchantAccount")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSGlobal("braintree.MerchantAccount.FundingDestination")
+      @js.native
+      def FundingDestination: Bank = js.native
+      inline def FundingDestination_=(x: Bank): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FundingDestination")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("braintree.MerchantAccount.Status")
+      @js.native
+      def Status: Active = js.native
+      inline def Status_=(x: Active): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Status")(x.asInstanceOf[js.Any])
+    }
     
     @JSGlobal("braintree.PayPalAccount")
     @js.native
-    class PayPalAccount ()
+    open class PayPalAccount ()
       extends typings.braintree.mod.PayPalAccount
     
     @JSGlobal("braintree.PaymentMethodNonce")
     @js.native
-    class PaymentMethodNonce ()
+    open class PaymentMethodNonce ()
       extends typings.braintree.mod.PaymentMethodNonce
     
     @JSGlobal("braintree.Plan")
     @js.native
-    class Plan ()
+    open class Plan ()
       extends typings.braintree.mod.Plan
     
     @JSGlobal("braintree.SamsungPayCard")
     @js.native
-    class SamsungPayCard ()
+    open class SamsungPayCard ()
       extends typings.braintree.mod.SamsungPayCard
     
     @JSGlobal("braintree.SettlementBatchSummary")
     @js.native
-    class SettlementBatchSummary ()
+    open class SettlementBatchSummary ()
       extends typings.braintree.mod.SettlementBatchSummary
     
     @JSGlobal("braintree.Subscription")
     @js.native
-    class Subscription ()
+    open class Subscription ()
       extends typings.braintree.mod.Subscription
+    /* static members */
+    object Subscription {
+      
+      @JSGlobal("braintree.Subscription")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSGlobal("braintree.Subscription.Status")
+      @js.native
+      def Status: Canceled = js.native
+      inline def Status_=(x: Canceled): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Status")(x.asInstanceOf[js.Any])
+    }
     
     @JSGlobal("braintree.Test")
     @js.native
-    class Test ()
+    open class Test ()
       extends typings.braintree.mod.Test
     
     @JSGlobal("braintree.Transaction")
     @js.native
-    class Transaction ()
+    open class Transaction ()
       extends typings.braintree.mod.Transaction
+    /* static members */
+    object Transaction {
+      
+      @JSGlobal("braintree.Transaction")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSGlobal("braintree.Transaction.CreatedUsing")
+      @js.native
+      def CreatedUsing: FullInformation = js.native
+      inline def CreatedUsing_=(x: FullInformation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreatedUsing")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("braintree.Transaction.EscrowStatus")
+      @js.native
+      def EscrowStatus: Held = js.native
+      inline def EscrowStatus_=(x: Held): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EscrowStatus")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("braintree.Transaction.GatewayRejectionReason")
+      @js.native
+      def GatewayRejectionReason: ApplicationIncomplete = js.native
+      inline def GatewayRejectionReason_=(x: ApplicationIncomplete): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GatewayRejectionReason")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("braintree.Transaction.Source")
+      @js.native
+      def Source: Api = js.native
+      inline def Source_=(x: Api): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Source")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("braintree.Transaction.Status")
+      @js.native
+      def Status: AuthorizationExpired = js.native
+      inline def Status_=(x: AuthorizationExpired): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Status")(x.asInstanceOf[js.Any])
+      
+      @JSGlobal("braintree.Transaction.Type")
+      @js.native
+      def Type: Sale = js.native
+      inline def Type_=(x: Sale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Type")(x.asInstanceOf[js.Any])
+    }
     
     @JSGlobal("braintree.TransactionLineItem")
     @js.native
-    class TransactionLineItem ()
+    open class TransactionLineItem ()
       extends typings.braintree.mod.TransactionLineItem
-    
-    @JSGlobal("braintree.TransactionRequestSource")
-    @js.native
-    object TransactionRequestSource extends StObject {
-      
-      @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.braintree.mod.TransactionRequestSource & String] = js.native
-      
-      /* "moto" */ val moto: typings.braintree.mod.TransactionRequestSource.moto & String = js.native
-      
-      /* "recurring" */ val recurring: typings.braintree.mod.TransactionRequestSource.recurring & String = js.native
-      
-      /* "recurring_first" */ val recurring_first: typings.braintree.mod.TransactionRequestSource.recurring_first & String = js.native
-      
-      /* "unscheduled" */ val unscheduled: typings.braintree.mod.TransactionRequestSource.unscheduled & String = js.native
-    }
     
     @JSGlobal("braintree.VenmoAccount")
     @js.native
-    class VenmoAccount ()
+    open class VenmoAccount ()
       extends typings.braintree.mod.VenmoAccount
     
     @JSGlobal("braintree.VisaCheckoutCard")
     @js.native
-    class VisaCheckoutCard ()
+    open class VisaCheckoutCard ()
       extends typings.braintree.mod.VisaCheckoutCard
-    
-    inline def connect(config: GatewayConfig): typings.braintree.mod.BraintreeGateway = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[typings.braintree.mod.BraintreeGateway]
   }
 }

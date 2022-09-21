@@ -16,7 +16,7 @@ object getShardIteratorCommandMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/commands/GetShardIteratorCommand", "GetShardIteratorCommand")
   @js.native
-  class GetShardIteratorCommand protected ()
+  open class GetShardIteratorCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object getShardIteratorCommandMod {
     override val middlewareStack: MiddlewareStack[GetShardIteratorInput, GetShardIteratorOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: KinesisResolvedConfiguration
     ): Handler[GetShardIteratorInput, GetShardIteratorOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KinesisResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[GetShardIteratorInput, GetShardIteratorOutput] = js.native
   }
 }

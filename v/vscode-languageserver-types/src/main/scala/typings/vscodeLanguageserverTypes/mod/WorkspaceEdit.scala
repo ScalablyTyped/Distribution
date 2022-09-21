@@ -8,6 +8,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkspaceEdit extends StObject {
   
   /**
+    * A map of change annotations that can be referenced in `AnnotatedTextEdit`s or create, rename and
+    * delete file / folder operations.
+    *
+    * Whether clients honor this property depends on the client capability `workspace.changeAnnotationSupport`.
+    *
+    * @since 3.16.0
+    */
+  var changeAnnotations: js.UndefOr[StringDictionary[ChangeAnnotation]] = js.undefined
+  
+  /**
     * Holds changes to existing resources.
     */
   var changes: js.UndefOr[StringDictionary[js.Array[TextEdit]]] = js.undefined
@@ -37,9 +47,13 @@ object WorkspaceEdit {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceEdit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceEdit */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceEdit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.WorkspaceEdit */ Boolean]
   
   extension [Self <: WorkspaceEdit](x: Self) {
+    
+    inline def setChangeAnnotations(value: StringDictionary[ChangeAnnotation]): Self = StObject.set(x, "changeAnnotations", value.asInstanceOf[js.Any])
+    
+    inline def setChangeAnnotationsUndefined: Self = StObject.set(x, "changeAnnotations", js.undefined)
     
     inline def setChanges(value: StringDictionary[js.Array[TextEdit]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
@@ -49,6 +63,6 @@ object WorkspaceEdit {
     
     inline def setDocumentChangesUndefined: Self = StObject.set(x, "documentChanges", js.undefined)
     
-    inline def setDocumentChangesVarargs(value: (TextDocumentEdit | CreateFile | RenameFile | DeleteFile)*): Self = StObject.set(x, "documentChanges", js.Array(value :_*))
+    inline def setDocumentChangesVarargs(value: (TextDocumentEdit | CreateFile | RenameFile | DeleteFile)*): Self = StObject.set(x, "documentChanges", js.Array(value*))
   }
 }

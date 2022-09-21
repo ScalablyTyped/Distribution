@@ -1,7 +1,7 @@
 
 # Scala.js typings for neat-csv
 
-Typings are for version 4.0
+Typings are for version 7.0.0
 
 ## Library description:
 Fast CSV parser
@@ -10,10 +10,10 @@ Fast CSV parser
 | ------------------ | :-------------: |
 | Full name          | neat-csv |
 | Keywords           | parse, csv, comma, separated, values, tab, delimiter, separator, text, string, buffer, stream, parser |
-| # releases         | 6 |
-| # dependents       | 34 |
-| # downloads        | 7078176 |
-| # stars            | 7 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1629685.0 |
+| # stars            | 270.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/neat-csv#readme)
@@ -24,7 +24,7 @@ Fast CSV parser
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

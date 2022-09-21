@@ -15,7 +15,7 @@ trait clustersGetLabelSchemesParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-labels-clusters.html#getLabelSchemes)
     */
-  var layer: FeatureLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
   
   /**
     * The renderer to set on the input layer when clustering is enabled.
@@ -36,7 +36,7 @@ object clustersGetLabelSchemesParams {
   inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    layer: FeatureLayer | CSVLayer | GeoJSONLayer,
+    layer: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
     propertyIsEnumerable: PropertyKey => Boolean,
     view: MapView
   ): clustersGetLabelSchemesParams = {
@@ -46,7 +46,7 @@ object clustersGetLabelSchemesParams {
   
   extension [Self <: clustersGetLabelSchemesParams](x: Self) {
     
-    inline def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setRenderer(value: Renderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     

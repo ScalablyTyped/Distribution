@@ -7,9 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SeriesTooltipOptionsObject extends StObject {
   
   /**
-    * (Highstock) How many decimals to show for the `point.change` value when
-    * the `series.compare` option is set. This is overridable in each series'
-    * tooltip options object. The default is to preserve all decimals.
+    * (Highstock) How many decimals to show for the `point.change` or the
+    * `point.cumulativeSum` value when the `series.compare` or the
+    * `series.cumulative` option is set. This is overridable in each series'
+    * tooltip options object.
     */
   var changeDecimals: js.UndefOr[Double] = js.undefined
   
@@ -20,10 +21,10 @@ trait SeriesTooltipOptionsObject extends StObject {
     * The cluster tooltip can be also formatted using `tooltip.formatter`
     * callback function and `point.isCluster` flag.
     */
-  var clusterFormat: js.UndefOr[js.Object] = js.undefined
+  var clusterFormat: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Gantt) For series on a datetime axes, the date
+    * (Highcharts, Highstock, Gantt) For series on datetime axes, the date
     * format in the tooltip's header will by default be guessed based on the
     * closest data points. This member gives the default string representations
     * used for each unit. For an overview of the replacement codes, see
@@ -41,6 +42,8 @@ trait SeriesTooltipOptionsObject extends StObject {
     * across columns, pie slices and other point types with an extent. By
     * default it behaves this way for pie, polygon, map, sankey and wordcloud
     * series by override in the `plotOptions` for those series types.
+    *
+    * Does not apply if split is `true`.
     *
     * For touch moves to behave the same way, followTouchMove must be `true`
     * also.
@@ -157,7 +160,7 @@ object SeriesTooltipOptionsObject {
     
     inline def setChangeDecimalsUndefined: Self = StObject.set(x, "changeDecimals", js.undefined)
     
-    inline def setClusterFormat(value: js.Object): Self = StObject.set(x, "clusterFormat", value.asInstanceOf[js.Any])
+    inline def setClusterFormat(value: String): Self = StObject.set(x, "clusterFormat", value.asInstanceOf[js.Any])
     
     inline def setClusterFormatUndefined: Self = StObject.set(x, "clusterFormat", js.undefined)
     

@@ -11,14 +11,14 @@ trait SignedDataBlocksCollection extends StObject {
   /* private */ @JSName("InfoPath.SignedDataBlocksCollection_typekey")
   var InfoPathDotSignedDataBlocksCollection_typekey: SignedDataBlocksCollection
   
-  def Item(varIndex: js.Any): SignedDataBlockObject
+  def Item(varIndex: Any): SignedDataBlockObject
 }
 object SignedDataBlocksCollection {
   
   inline def apply(
     Count: Double,
     InfoPathDotSignedDataBlocksCollection_typekey: SignedDataBlocksCollection,
-    Item: js.Any => SignedDataBlockObject
+    Item: Any => SignedDataBlockObject
   ): SignedDataBlocksCollection = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.updateDynamic("InfoPath.SignedDataBlocksCollection_typekey")(InfoPathDotSignedDataBlocksCollection_typekey.asInstanceOf[js.Any])
@@ -31,6 +31,6 @@ object SignedDataBlocksCollection {
     
     inline def setInfoPathDotSignedDataBlocksCollection_typekey(value: SignedDataBlocksCollection): Self = StObject.set(x, "InfoPath.SignedDataBlocksCollection_typekey", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => SignedDataBlockObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => SignedDataBlockObject): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

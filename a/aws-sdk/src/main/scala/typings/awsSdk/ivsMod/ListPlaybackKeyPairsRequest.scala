@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListPlaybackKeyPairsRequest extends StObject {
   
   /**
-    * The first key pair to retrieve. This is used for pagination; see the nextToken response field.
+    * Maximum number of key pairs to return. Default: your service quota or 100, whichever is smaller.
     */
   var maxResults: js.UndefOr[MaxPlaybackKeyPairResults] = js.undefined
   
   /**
-    * Maximum number of key pairs to return.
+    * The first key pair to retrieve. This is used for pagination; see the nextToken response field.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }

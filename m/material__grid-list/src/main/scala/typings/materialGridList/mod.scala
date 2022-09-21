@@ -1,9 +1,9 @@
 package typings.materialGridList
 
+import typings.materialBase.Element
 import typings.materialGridList.adapterMod.MDCGridListAdapter
 import typings.materialGridList.anon.PartialMDCGridListAdapter
 import typings.materialGridList.anon.TILESELECTOR
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,13 +12,13 @@ object mod {
   
   @JSImport("@material/grid-list", "MDCGridList")
   @js.native
-  class MDCGridList protected ()
+  open class MDCGridList protected ()
     extends typings.materialGridList.componentMod.MDCGridList {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialGridList.foundationMod.MDCGridListFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -28,12 +28,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialGridList.componentMod.MDCGridList = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialGridList.componentMod.MDCGridList]
+    inline def attachTo(root: typings.std.Element): typings.materialGridList.componentMod.MDCGridList = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialGridList.componentMod.MDCGridList]
   }
   
   @JSImport("@material/grid-list", "MDCGridListFoundation")
   @js.native
-  class MDCGridListFoundation ()
+  open class MDCGridListFoundation ()
     extends typings.materialGridList.foundationMod.MDCGridListFoundation {
     def this(adapter: PartialMDCGridListAdapter) = this()
   }

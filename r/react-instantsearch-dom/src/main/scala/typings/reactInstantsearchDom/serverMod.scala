@@ -1,6 +1,7 @@
 package typings.reactInstantsearchDom
 
 import typings.react.mod.ComponentType
+import typings.reactInstantsearchDom.anon.PickInstantSearchPropswid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,5 +12,5 @@ object serverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def findResultsState(App: ComponentType[js.Any], props: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("findResultsState")(App.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def findResultsState[TProps /* <: PickInstantSearchPropswid */](App: ComponentType[TProps], props: TProps): js.Promise[js.UndefOr[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findResultsState")(App.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[Any]]]
 }

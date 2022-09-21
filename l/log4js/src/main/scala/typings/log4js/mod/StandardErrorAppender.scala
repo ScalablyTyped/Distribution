@@ -5,11 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StandardErrorAppender
-  extends StObject
-     with Appender {
+trait StandardErrorAppender extends StObject {
   
-  // (defaults to colouredLayout)
+  // (defaults to ColoredLayout)
   var layout: js.UndefOr[Layout] = js.undefined
   
   var `type`: stderr

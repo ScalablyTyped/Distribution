@@ -33,6 +33,6 @@ object ConcatenateExpression {
     
     inline def setDimensionNamesUndefined: Self = StObject.set(x, "dimensionNames", js.undefined)
     
-    inline def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value :_*))
+    inline def setDimensionNamesVarargs(value: String*): Self = StObject.set(x, "dimensionNames", js.Array(value*))
   }
 }

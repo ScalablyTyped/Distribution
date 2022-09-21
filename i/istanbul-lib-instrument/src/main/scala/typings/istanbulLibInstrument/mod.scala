@@ -6,7 +6,6 @@ import typings.istanbulLibInstrument.anon.PartialInstrumenterOption
 import typings.istanbulLibInstrument.anon.PartialVisitorOptions
 import typings.istanbulLibInstrument.anon.TypeofbabelTypes
 import typings.sourceMap.mod.RawSourceMap
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object mod {
   
   @JSImport("istanbul-lib-instrument", "Instrumenter")
   @js.native
-  class Instrumenter () extends StObject {
+  open class Instrumenter () extends StObject {
     def this(options: PartialInstrumenterOption) = this()
     
     var fileCoverage: FileCoverage = js.native
@@ -75,9 +74,9 @@ object mod {
   
   trait InitialCoverage extends StObject {
     
-    var coverageData: js.Any
+    var coverageData: Any
     
-    var gcv: js.Any
+    var gcv: Any
     
     var hash: String
     
@@ -85,16 +84,16 @@ object mod {
   }
   object InitialCoverage {
     
-    inline def apply(coverageData: js.Any, gcv: js.Any, hash: String, path: String): InitialCoverage = {
+    inline def apply(coverageData: Any, gcv: Any, hash: String, path: String): InitialCoverage = {
       val __obj = js.Dynamic.literal(coverageData = coverageData.asInstanceOf[js.Any], gcv = gcv.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[InitialCoverage]
     }
     
     extension [Self <: InitialCoverage](x: Self) {
       
-      inline def setCoverageData(value: js.Any): Self = StObject.set(x, "coverageData", value.asInstanceOf[js.Any])
+      inline def setCoverageData(value: Any): Self = StObject.set(x, "coverageData", value.asInstanceOf[js.Any])
       
-      inline def setGcv(value: js.Any): Self = StObject.set(x, "gcv", value.asInstanceOf[js.Any])
+      inline def setGcv(value: Any): Self = StObject.set(x, "gcv", value.asInstanceOf[js.Any])
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -102,7 +101,7 @@ object mod {
     }
   }
   
-  type InstrumenterCallback = js.Function2[/* error */ Error | Null, /* code */ String, Unit]
+  type InstrumenterCallback = js.Function2[/* error */ js.Error | Null, /* code */ String, Unit]
   
   trait InstrumenterOptions extends StObject {
     

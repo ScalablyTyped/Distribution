@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BootstrapCardViewColumn extends StObject {
   
-  /* protected */ val instance: js.Any
+  /* protected */ val instance: Any
 }
 object BootstrapCardViewColumn {
   
-  inline def apply(instance: js.Any): BootstrapCardViewColumn = {
+  inline def apply(instance: Any): BootstrapCardViewColumn = {
     val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapCardViewColumn]
   }
   
   extension [Self <: BootstrapCardViewColumn](x: Self) {
     
-    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
   }
 }

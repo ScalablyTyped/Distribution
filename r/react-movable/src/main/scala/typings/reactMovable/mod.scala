@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("react-movable", "List")
   @js.native
-  class List[Value] protected () extends default[Value] {
+  open class List[Value] protected () extends default[Value] {
     def this(props: IProps[Value]) = this()
   }
   object List {

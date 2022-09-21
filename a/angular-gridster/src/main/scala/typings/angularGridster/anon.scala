@@ -12,7 +12,7 @@ object anon {
     
     // optional callback fired when item is moved,
     var drag: js.UndefOr[
-        js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any, Unit]
+        js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ Any, Unit]
       ] = js.undefined
     
     // whether the items are resizable
@@ -29,12 +29,12 @@ object anon {
     
     // optional callback fired when drag is started
     var start: js.UndefOr[
-        js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any, Unit]
+        js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ Any, Unit]
       ] = js.undefined
     
     // optional callback fired when item is finished dragging
     var stop: js.UndefOr[
-        js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any, Unit]
+        js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ Any, Unit]
       ] = js.undefined
   }
   object Drag {
@@ -46,7 +46,7 @@ object anon {
     
     extension [Self <: Drag](x: Self) {
       
-      inline def setDrag(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction3(value))
+      inline def setDrag(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ Any) => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction3(value))
       
       inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
       
@@ -66,11 +66,11 @@ object anon {
       
       inline def setScrollSpeedUndefined: Self = StObject.set(x, "scrollSpeed", js.undefined)
       
-      inline def setStart(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
+      inline def setStart(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ Any) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      inline def setStop(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction3(value))
+      inline def setStop(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ Any) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction3(value))
       
       inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     }
@@ -87,17 +87,17 @@ object anon {
     
     // optional callback fired when item is resized
     var resize: js.UndefOr[
-        js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any, Unit]
+        js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ Any, Unit]
       ] = js.undefined
     
     // optional callback fired when drag is started
     var start: js.UndefOr[
-        js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any, Unit]
+        js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ Any, Unit]
       ] = js.undefined
     
     // optional callback fired when item is finished dragging
     var stop: js.UndefOr[
-        js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any, Unit]
+        js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ Any, Unit]
       ] = js.undefined
   }
   object Enabled {
@@ -117,17 +117,17 @@ object anon {
       
       inline def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
       
-      inline def setHandlesVarargs(value: String*): Self = StObject.set(x, "handles", js.Array(value :_*))
+      inline def setHandlesVarargs(value: String*): Self = StObject.set(x, "handles", js.Array(value*))
       
-      inline def setResize(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction3(value))
+      inline def setResize(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ Any) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction3(value))
       
       inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      inline def setStart(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
+      inline def setStart(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ Any) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction3(value))
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      inline def setStop(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction3(value))
+      inline def setStop(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ Any) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction3(value))
       
       inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     }

@@ -23,14 +23,14 @@ object Narrow {
     
     inline def setLong(value: js.Array[String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    inline def setLongVarargs(value: String*): Self = StObject.set(x, "long", js.Array(value :_*))
+    inline def setLongVarargs(value: String*): Self = StObject.set(x, "long", js.Array(value*))
     
     inline def setNarrow(value: js.Array[String]): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
     
-    inline def setNarrowVarargs(value: String*): Self = StObject.set(x, "narrow", js.Array(value :_*))
+    inline def setNarrowVarargs(value: String*): Self = StObject.set(x, "narrow", js.Array(value*))
     
     inline def setShort(value: js.Array[String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
-    inline def setShortVarargs(value: String*): Self = StObject.set(x, "short", js.Array(value :_*))
+    inline def setShortVarargs(value: String*): Self = StObject.set(x, "short", js.Array(value*))
   }
 }

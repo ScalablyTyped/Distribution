@@ -12,11 +12,11 @@ trait NightwatchTestSuite extends StObject {
   
   var name: String
   
-  var results: js.Any
+  var results: Any
 }
 object NightwatchTestSuite {
   
-  inline def apply(group: String, module: String, name: String, results: js.Any): NightwatchTestSuite = {
+  inline def apply(group: String, module: String, name: String, results: Any): NightwatchTestSuite = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchTestSuite]
   }
@@ -29,6 +29,6 @@ object NightwatchTestSuite {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setResults(value: js.Any): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: Any): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
   }
 }

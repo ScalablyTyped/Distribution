@@ -2,6 +2,7 @@ package typings.useSidecar
 
 import typings.react.mod.ComponentType
 import typings.react.mod.FunctionComponent
+import typings.std.Record
 import typings.useSidecar.anon.Default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,30 +14,30 @@ object typesMod {
   
   type Importer[T] = js.Function0[js.Promise[DefaultOrNot[ComponentType[T]]]]
   
-  type MediumCallback[T] = js.Function1[/* data */ T, js.Any]
+  type MediumCallback[T] = js.Function1[/* data */ T, Any]
   
   type MiddlewareCallback[T] = js.Function2[/* data */ T, /* assigned */ Boolean, T]
   
-  type SideCarComponent[T] = FunctionComponent[T & SideCarHOC]
+  type SideCarComponent[T] = FunctionComponent[T & SideCarHOC[T]]
   
-  trait SideCarHOC extends StObject {
+  trait SideCarHOC[T] extends StObject {
     
-    var sideCar: SideCarMedium
+    val sideCar: SideCarMedium[T]
   }
   object SideCarHOC {
     
-    inline def apply(sideCar: SideCarMedium): SideCarHOC = {
+    inline def apply[T](sideCar: SideCarMedium[T]): SideCarHOC[T] = {
       val __obj = js.Dynamic.literal(sideCar = sideCar.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SideCarHOC]
+      __obj.asInstanceOf[SideCarHOC[T]]
     }
     
-    extension [Self <: SideCarHOC](x: Self) {
+    extension [Self <: SideCarHOC[?], T](x: Self & SideCarHOC[T]) {
       
-      inline def setSideCar(value: SideCarMedium): Self = StObject.set(x, "sideCar", value.asInstanceOf[js.Any])
+      inline def setSideCar(value: SideCarMedium[T]): Self = StObject.set(x, "sideCar", value.asInstanceOf[js.Any])
     }
   }
   
-  type SideCarMedium = SideMedium[ComponentType[js.Object]]
+  type SideCarMedium[T] = SideMedium[ComponentType[T]]
   
   trait SideCarMediumOptions extends StObject {
     
@@ -65,14 +66,29 @@ object typesMod {
   
   trait SideMedium[T] extends StObject {
     
+    /**
+      * Assigns effect handler to the medium
+      * @param {Function(effect: T)} handler effect handler
+      */
     def assignMedium(handler: MediumCallback[T]): Unit
     
+    /**
+      * Assigns a synchronous effect handler to the medium, which would be executed right on call
+      * @param {Function(effect: T)} handler effect handler
+      */
     def assignSyncMedium(handler: MediumCallback[T]): Unit
     
-    var options: js.UndefOr[js.Object] = js.undefined
+    var options: js.UndefOr[Record[String, Any]] = js.undefined
     
+    /**
+      * reads the data stored in the medium
+      */
     def read(): js.UndefOr[T]
     
+    /**
+      * Pushes effect to the medium
+      * @param effect any information for real handler
+      */
     def useMedium(effect: T): removeCb
   }
   object SideMedium {
@@ -93,7 +109,7 @@ object typesMod {
       
       inline def setAssignSyncMedium(value: MediumCallback[T] => Unit): Self = StObject.set(x, "assignSyncMedium", js.Any.fromFunction1(value))
       
-      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Record[String, Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       

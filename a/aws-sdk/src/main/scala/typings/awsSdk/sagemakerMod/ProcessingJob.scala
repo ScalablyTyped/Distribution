@@ -16,7 +16,7 @@ trait ProcessingJob extends StObject {
   /**
     * The time the processing job was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Sets the environment variables in the Docker container.
@@ -38,7 +38,7 @@ trait ProcessingJob extends StObject {
   /**
     * The time the processing job was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of a monitoring schedule for an endpoint associated with this processing job.
@@ -50,10 +50,10 @@ trait ProcessingJob extends StObject {
   /**
     * The time that the processing job ended.
     */
-  var ProcessingEndTime: js.UndefOr[Timestamp] = js.undefined
+  var ProcessingEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * For each input, data is downloaded from S3 into the processing container before the processing job begins running if "S3InputMode" is set to File.
+    * List of input configurations for the processing job.
     */
   var ProcessingInputs: js.UndefOr[typings.awsSdk.sagemakerMod.ProcessingInputs] = js.undefined
   
@@ -79,7 +79,7 @@ trait ProcessingJob extends StObject {
   /**
     * The time that the processing job started.
     */
-  var ProcessingStartTime: js.UndefOr[Timestamp] = js.undefined
+  var ProcessingStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the role used to create the processing job.
@@ -89,7 +89,7 @@ trait ProcessingJob extends StObject {
   var StoppingCondition: js.UndefOr[ProcessingStoppingCondition] = js.undefined
   
   /**
-    * An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide.
+    * An array of key-value pairs. For more information, see Using Cost Allocation Tags in the Amazon Web Services Billing and Cost Management User Guide.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   
@@ -115,7 +115,7 @@ object ProcessingJob {
     
     inline def setAutoMLJobArnUndefined: Self = StObject.set(x, "AutoMLJobArn", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -135,7 +135,7 @@ object ProcessingJob {
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
@@ -147,7 +147,7 @@ object ProcessingJob {
     
     inline def setNetworkConfigUndefined: Self = StObject.set(x, "NetworkConfig", js.undefined)
     
-    inline def setProcessingEndTime(value: Timestamp): Self = StObject.set(x, "ProcessingEndTime", value.asInstanceOf[js.Any])
+    inline def setProcessingEndTime(value: js.Date): Self = StObject.set(x, "ProcessingEndTime", value.asInstanceOf[js.Any])
     
     inline def setProcessingEndTimeUndefined: Self = StObject.set(x, "ProcessingEndTime", js.undefined)
     
@@ -155,7 +155,7 @@ object ProcessingJob {
     
     inline def setProcessingInputsUndefined: Self = StObject.set(x, "ProcessingInputs", js.undefined)
     
-    inline def setProcessingInputsVarargs(value: ProcessingInput*): Self = StObject.set(x, "ProcessingInputs", js.Array(value :_*))
+    inline def setProcessingInputsVarargs(value: ProcessingInput*): Self = StObject.set(x, "ProcessingInputs", js.Array(value*))
     
     inline def setProcessingJobArn(value: ProcessingJobArn): Self = StObject.set(x, "ProcessingJobArn", value.asInstanceOf[js.Any])
     
@@ -177,7 +177,7 @@ object ProcessingJob {
     
     inline def setProcessingResourcesUndefined: Self = StObject.set(x, "ProcessingResources", js.undefined)
     
-    inline def setProcessingStartTime(value: Timestamp): Self = StObject.set(x, "ProcessingStartTime", value.asInstanceOf[js.Any])
+    inline def setProcessingStartTime(value: js.Date): Self = StObject.set(x, "ProcessingStartTime", value.asInstanceOf[js.Any])
     
     inline def setProcessingStartTimeUndefined: Self = StObject.set(x, "ProcessingStartTime", js.undefined)
     
@@ -193,7 +193,7 @@ object ProcessingJob {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTrainingJobArn(value: TrainingJobArn): Self = StObject.set(x, "TrainingJobArn", value.asInstanceOf[js.Any])
     

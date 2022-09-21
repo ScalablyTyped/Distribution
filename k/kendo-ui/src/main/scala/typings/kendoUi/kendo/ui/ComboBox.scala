@@ -13,8 +13,8 @@ trait ComboBox
   
   def close(): Unit = js.native
   
-  def dataItem(): js.Any = js.native
-  def dataItem(index: Double): js.Any = js.native
+  def dataItem(): Any = js.native
+  def dataItem(index: Double): Any = js.native
   
   var dataSource: DataSource = js.native
   
@@ -24,7 +24,7 @@ trait ComboBox
   
   var input: JQuery = js.native
   
-  def items(): js.Any = js.native
+  def items(): Any = js.native
   
   var list: JQuery = js.native
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GeoSearchProvided[THit] extends StObject {
   
   /** a function to generate a URL for the corresponding search state */
-  def createURL(args: js.Any*): js.Any
+  def createURL(args: Any*): Any
   
   /** the refinement currently applied */
   var currentRefinement: NESW
@@ -28,7 +28,7 @@ trait GeoSearchProvided[THit] extends StObject {
 object GeoSearchProvided {
   
   inline def apply[THit](
-    createURL: /* repeated */ js.Any => js.Any,
+    createURL: /* repeated */ Any => Any,
     currentRefinement: NESW,
     hits: js.Array[THit],
     isRefinedWithMap: Boolean,
@@ -41,13 +41,13 @@ object GeoSearchProvided {
   
   extension [Self <: GeoSearchProvided[?], THit](x: Self & GeoSearchProvided[THit]) {
     
-    inline def setCreateURL(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
+    inline def setCreateURL(value: /* repeated */ Any => Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     
     inline def setCurrentRefinement(value: NESW): Self = StObject.set(x, "currentRefinement", value.asInstanceOf[js.Any])
     
     inline def setHits(value: js.Array[THit]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
-    inline def setHitsVarargs(value: THit*): Self = StObject.set(x, "hits", js.Array(value :_*))
+    inline def setHitsVarargs(value: THit*): Self = StObject.set(x, "hits", js.Array(value*))
     
     inline def setIsRefinedWithMap(value: Boolean): Self = StObject.set(x, "isRefinedWithMap", value.asInstanceOf[js.Any])
     

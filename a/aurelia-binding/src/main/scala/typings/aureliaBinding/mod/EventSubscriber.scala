@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "EventSubscriber")
 @js.native
-class EventSubscriber protected () extends StObject {
+open class EventSubscriber protected () extends StObject {
   def this(events: js.Array[String]) = this()
   
   def dispose(): Unit = js.native

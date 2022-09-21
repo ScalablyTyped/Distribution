@@ -1,17 +1,16 @@
 package typings.apolloProtobufjs.global.protobuf
 
-import typings.apolloProtobufjs.mod.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("protobuf.BufferReader")
 @js.native
-class BufferReader protected ()
+open class BufferReader protected ()
   extends typings.apolloProtobufjs.mod.BufferReader {
   /**
     * Constructs a new buffer reader instance.
     * @param buffer Buffer to read from
     */
-  def this(buffer: Buffer) = this()
+  def this(buffer: js.typedarray.Uint8Array) = this()
 }

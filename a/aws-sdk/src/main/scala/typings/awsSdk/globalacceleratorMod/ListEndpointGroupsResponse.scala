@@ -29,7 +29,7 @@ object ListEndpointGroupsResponse {
     
     inline def setEndpointGroupsUndefined: Self = StObject.set(x, "EndpointGroups", js.undefined)
     
-    inline def setEndpointGroupsVarargs(value: EndpointGroup*): Self = StObject.set(x, "EndpointGroups", js.Array(value :_*))
+    inline def setEndpointGroupsVarargs(value: EndpointGroup*): Self = StObject.set(x, "EndpointGroups", js.Array(value*))
     
     inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

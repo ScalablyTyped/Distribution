@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.EventQueue")
 @js.native
-class EventQueue protected ()
+open class EventQueue protected ()
   extends StObject
      with typings.phaser.spine.EventQueue {
   def this(animState: typings.phaser.spine.AnimationState) = this()
@@ -39,7 +39,7 @@ class EventQueue protected ()
   override def interrupt(entry: typings.phaser.spine.TrackEntry): Unit = js.native
   
   /* CompleteClass */
-  var objects: js.Array[js.Any] = js.native
+  var objects: js.Array[Any] = js.native
   
   /* CompleteClass */
   override def start(entry: typings.phaser.spine.TrackEntry): Unit = js.native

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("AMap.Pixel")
 @js.native
-class Pixel protected ()
+open class Pixel protected ()
   extends StObject
      with typings.amapJsApi.AMap.Pixel {
   /**

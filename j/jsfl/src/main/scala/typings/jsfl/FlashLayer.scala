@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FlashLayer extends StObject {
   
-  var color: js.Any
+  var color: Any
   
   var frameCount: Double
   
@@ -29,7 +29,7 @@ trait FlashLayer extends StObject {
 object FlashLayer {
   
   inline def apply(
-    color: js.Any,
+    color: Any,
     frameCount: Double,
     frames: js.Array[FlashFrame],
     height: Double,
@@ -46,13 +46,13 @@ object FlashLayer {
   
   extension [Self <: FlashLayer](x: Self) {
     
-    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setFrameCount(value: Double): Self = StObject.set(x, "frameCount", value.asInstanceOf[js.Any])
     
     inline def setFrames(value: js.Array[FlashFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    inline def setFramesVarargs(value: FlashFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: FlashFrame*): Self = StObject.set(x, "frames", js.Array(value*))
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateLogGroupRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the CMK to use when encrypting log data. For more information, see Amazon Resource Names - AWS Key Management Service (AWS KMS).
+    * The Amazon Resource Name (ARN) of the CMK to use when encrypting log data. For more information, see Amazon Resource Names - Key Management Service.
     */
   var kmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
@@ -17,7 +17,7 @@ trait CreateLogGroupRequest extends StObject {
   var logGroupName: LogGroupName
   
   /**
-    * The key-value pairs to use for the tags.
+    * The key-value pairs to use for the tags. CloudWatch Logs doesn’t support IAM policies that prevent users from assigning specified tags to log groups using the aws:Resource/key-name  or aws:TagKeys condition keys. For more information about using tags to control access, see Controlling access to Amazon Web Services resources using tags.
     */
   var tags: js.UndefOr[Tags] = js.undefined
 }

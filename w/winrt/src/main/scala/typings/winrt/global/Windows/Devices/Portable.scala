@@ -10,7 +10,7 @@ object Portable {
   
   @JSGlobal("Windows.Devices.Portable.ServiceDevice")
   @js.native
-  class ServiceDevice ()
+  open class ServiceDevice ()
     extends StObject
        with typings.winrt.Windows.Devices.Portable.ServiceDevice
   /* static members */
@@ -49,7 +49,7 @@ object Portable {
   
   @JSGlobal("Windows.Devices.Portable.StorageDevice")
   @js.native
-  class StorageDevice ()
+  open class StorageDevice ()
     extends StObject
        with typings.winrt.Windows.Devices.Portable.StorageDevice
   /* static members */

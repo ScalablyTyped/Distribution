@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.HingeJoint")
 @js.native
-class HingeJoint protected ()
+open class HingeJoint protected ()
   extends StObject
      with typings.babylonjs.BABYLON.HingeJoint {
   /**

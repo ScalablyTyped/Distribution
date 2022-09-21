@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("babylonjs/Legacy/legacy", "FadeInOutBehavior")
 @js.native
 /**
-  * Instatiates the FadeInOutBehavior
+  * Instantiates the FadeInOutBehavior
   */
-class FadeInOutBehavior ()
+open class FadeInOutBehavior ()
   extends typings.babylonjs.indexMod.FadeInOutBehavior

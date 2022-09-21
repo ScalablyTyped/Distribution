@@ -46,7 +46,7 @@ trait XMap
     * @throws com::sun::star::beans::IllegalTypeException if the given key is not of a type which is accepted by the map
     * @throws com::sun::star::lang::IllegalArgumentException if the given key is not supported to be put into the map. It's up to the service implementing the
     */
-  def containsKey(Key: js.Any): Boolean
+  def containsKey(Key: Any): Boolean
   
   /**
     * determines whether the map contains a mapping to a given value.
@@ -55,7 +55,7 @@ trait XMap
     * @throws com::sun::star::beans::IllegalTypeException if the given value is not of a type which is accepted by the map. It's up to the service implementing
     * @throws com::sun::star::lang::IllegalArgumentException if the given value is not supported to be put into the map.
     */
-  def containsValue(Value: js.Any): Boolean
+  def containsValue(Value: Any): Boolean
   
   /**
     * gets the value to which a given key maps.
@@ -65,7 +65,7 @@ trait XMap
     * @throws com::sun::star::lang::IllegalArgumentException if the given key is not supported to be put into the map. It's up to the service implementing the
     * @throws com::sun::star::container::NoSuchElementException if there is no value associated with the given key
     */
-  def get(Key: js.Any): js.Any
+  def get(Key: Any): Any
   
   /**
     * associates a given key with a given value
@@ -78,7 +78,7 @@ trait XMap
     * @throws com::sun::star::lang::IllegalArgumentException if the given key, or the given value, is not supported to be put into the map. It's up to the serv
     * @throws com::sun::star::lang::NoSupportException if the map does not support putting new mappings into it
     */
-  def put(Key: js.Any, Value: js.Any): js.Any
+  def put(Key: Any, Value: Any): Any
   
   /**
     * removes a key-value mapping, given by key, from the map.
@@ -89,7 +89,7 @@ trait XMap
     * @throws com::sun::star::lang::NoSupportException if the map does not support removing mappings
     * @throws com::sun::star::container::NoSuchElementException if there is no value associated with the given key
     */
-  def remove(Key: js.Any): js.Any
+  def remove(Key: Any): Any
 }
 object XMap {
   
@@ -99,15 +99,15 @@ object XMap {
     ValueType: `type`,
     acquire: () => Unit,
     clear: () => Unit,
-    containsKey: js.Any => Boolean,
-    containsValue: js.Any => Boolean,
-    get: js.Any => js.Any,
+    containsKey: Any => Boolean,
+    containsValue: Any => Boolean,
+    get: Any => Any,
     getElementType: () => `type`,
     hasElements: () => Boolean,
-    put: (js.Any, js.Any) => js.Any,
-    queryInterface: `type` => js.Any,
+    put: (Any, Any) => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    remove: js.Any => js.Any
+    remove: Any => Any
   ): XMap = {
     val __obj = js.Dynamic.literal(ElementType = ElementType.asInstanceOf[js.Any], KeyType = KeyType.asInstanceOf[js.Any], ValueType = ValueType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), clear = js.Any.fromFunction0(clear), containsKey = js.Any.fromFunction1(containsKey), containsValue = js.Any.fromFunction1(containsValue), get = js.Any.fromFunction1(get), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), put = js.Any.fromFunction2(put), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), remove = js.Any.fromFunction1(remove))
     __obj.asInstanceOf[XMap]
@@ -117,17 +117,17 @@ object XMap {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    inline def setContainsKey(value: js.Any => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
+    inline def setContainsKey(value: Any => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
     
-    inline def setContainsValue(value: js.Any => Boolean): Self = StObject.set(x, "containsValue", js.Any.fromFunction1(value))
+    inline def setContainsValue(value: Any => Boolean): Self = StObject.set(x, "containsValue", js.Any.fromFunction1(value))
     
-    inline def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: Any => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     inline def setKeyType(value: `type`): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
+    inline def setPut(value: (Any, Any) => Any): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
     
-    inline def setRemove(value: js.Any => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Any => Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     inline def setValueType(value: `type`): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
   }

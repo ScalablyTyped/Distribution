@@ -6,35 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "ReadVarExpr")
 @js.native
-class ReadVarExpr protected ()
-  extends typings.angularCompiler.compilerMod.ReadVarExpr {
+open class ReadVarExpr protected () extends Expression {
   def this(name: String) = this()
-  def this(name: typings.angularCompiler.outputAstMod.BuiltinVar) = this()
-  def this(name: String, `type`: typings.angularCompiler.outputAstMod.Type) = this()
-  def this(
-    name: typings.angularCompiler.outputAstMod.BuiltinVar,
-    `type`: typings.angularCompiler.outputAstMod.Type
-  ) = this()
-  def this(name: String, `type`: Null, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
-  def this(name: String, `type`: Unit, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
-  def this(
-    name: String,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    name: typings.angularCompiler.outputAstMod.BuiltinVar,
-    `type`: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    name: typings.angularCompiler.outputAstMod.BuiltinVar,
-    `type`: Unit,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    name: typings.angularCompiler.outputAstMod.BuiltinVar,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
+  def this(name: String, `type`: Type) = this()
+  def this(name: String, `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(name: String, `type`: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(name: String, `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  
+  var name: String = js.native
+  
+  def set(value: Expression): WriteVarExpr = js.native
 }

@@ -1,5 +1,7 @@
 package typings.carbonComponents.mod
 
+import typings.carbonComponents.anon.PartialTextInputOptions
+import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,9 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("carbon-components", "TextInput")
 @js.native
-class TextInput protected ()
+open class TextInput protected ()
   extends typings.carbonComponents.componentsMod.TextInput {
-  def this(element: js.Any, options: js.Any) = this()
+  def this(element: HTMLElement) = this()
+  def this(element: HTMLElement, options: PartialTextInputOptions) = this()
 }
 /* static members */
 object TextInput {
@@ -20,6 +23,6 @@ object TextInput {
   
   @JSImport("carbon-components", "TextInput.components")
   @js.native
-  def components: WeakMap[js.Object, js.Any] = js.native
-  inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+  def components: WeakMap[js.Object, Any] = js.native
+  inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
 }

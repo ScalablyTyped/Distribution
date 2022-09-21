@@ -1,7 +1,7 @@
 
 # Scala.js typings for uglify-js
 
-Typings are for version 3.11
+Typings are for version 3.17
 
 ## Library description:
 JavaScript parser, mangler/compressor and beautifier toolkit
@@ -10,10 +10,10 @@ JavaScript parser, mangler/compressor and beautifier toolkit
 | ------------------ | :-------------: |
 | Full name          | uglify-js |
 | Keywords           | cli, compress, compressor, ecma, ecmascript, es, es5, javascript, js, jsmin, min, minification, minifier, minify, optimize, optimizer, pack, packer, parse, parser, uglifier, uglify |
-| # releases         | 62 |
-| # dependents       | 3332 |
-| # downloads        | 728559971 |
-| # stars            | 267 |
+| # releases         | 46 |
+| # dependents       | 0.0 |
+| # downloads        | 7.0637875E7 |
+| # stars            | 12244.0 |
 
 ## Links
 - [Homepage](https://github.com/mishoo/UglifyJS#readme)

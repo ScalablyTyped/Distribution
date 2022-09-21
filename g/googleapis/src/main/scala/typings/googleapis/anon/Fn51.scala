@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
-import typings.googleapis.googleapisStrings.v1b3
-import typings.googleapis.v1b3Mod.dataflowV1b3.Dataflow
-import typings.googleapis.v1b3Mod.dataflowV1b3.Options
+import typings.googleapis.cloudchannelV1Mod.cloudchannelV1.Cloudchannel
+import typings.googleapis.cloudchannelV1Mod.cloudchannelV1.Options
+import typings.googleapis.googleapisStrings.v1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn51 extends StObject {
   
-  def apply(options: Options): Dataflow = js.native
-  def apply(version: v1b3): Dataflow = js.native
+  def apply(options: Options): Cloudchannel = js.native
+  def apply(version: v1): Cloudchannel = js.native
 }

@@ -10,7 +10,7 @@ trait RESTDataSourceSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Settings related to REST compliant update routine

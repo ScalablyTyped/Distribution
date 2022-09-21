@@ -1,23 +1,6 @@
 package typings.reactSketchapp
 
-import typings.reactSketchapp.mod.ResizeMode
-import typings.reactSketchapp.propsMod.AlignmentBaseline
-import typings.reactSketchapp.propsMod.FontStretch
-import typings.reactSketchapp.propsMod.FontStyle
-import typings.reactSketchapp.propsMod.FontVariant
-import typings.reactSketchapp.propsMod.FontVariantLigatures
-import typings.reactSketchapp.propsMod.FontWeight
-import typings.reactSketchapp.propsMod.LengthAdjust
-import typings.reactSketchapp.propsMod.Method
-import typings.reactSketchapp.propsMod.MidLine
-import typings.reactSketchapp.propsMod.Side
-import typings.reactSketchapp.propsMod.Spacing
-import typings.reactSketchapp.propsMod.TextAnchor
-import typings.reactSketchapp.propsMod.TextDecoration
-import typings.reactSketchapp.propsMod._BaselineShift
-import typings.reactSketchapp.typesMod.BorderStyle
-import typings.reactSketchapp.typesMod.MeasureMode
-import typings.reactSketchapp.typesMod.Overflow
+import typings.reactSketchapp.moduleTypesMod.MeasureMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,150 +8,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactSketchappStrings {
   
   @js.native
-  sealed trait `100`
-    extends StObject
-       with FontWeight
-  inline def `100`: `100` = "100".asInstanceOf[`100`]
-  
-  @js.native
-  sealed trait `200`
-    extends StObject
-       with FontWeight
-  inline def `200`: `200` = "200".asInstanceOf[`200`]
-  
-  @js.native
-  sealed trait `300`
-    extends StObject
-       with FontWeight
-  inline def `300`: `300` = "300".asInstanceOf[`300`]
-  
-  @js.native
-  sealed trait `400`
-    extends StObject
-       with FontWeight
-  inline def `400`: `400` = "400".asInstanceOf[`400`]
-  
-  @js.native
-  sealed trait `500`
-    extends StObject
-       with FontWeight
-  inline def `500`: `500` = "500".asInstanceOf[`500`]
-  
-  @js.native
-  sealed trait `600`
-    extends StObject
-       with FontWeight
-  inline def `600`: `600` = "600".asInstanceOf[`600`]
-  
-  @js.native
-  sealed trait `700`
-    extends StObject
-       with FontWeight
-  inline def `700`: `700` = "700".asInstanceOf[`700`]
-  
-  @js.native
-  sealed trait `800`
-    extends StObject
-       with FontWeight
-  inline def `800`: `800` = "800".asInstanceOf[`800`]
-  
-  @js.native
-  sealed trait `900`
-    extends StObject
-       with FontWeight
-  inline def `900`: `900` = "900".asInstanceOf[`900`]
+  sealed trait NodeJS extends StObject
+  inline def NodeJS: NodeJS = "NodeJS".asInstanceOf[NodeJS]
   
   @js.native
   sealed trait absolute extends StObject
   inline def absolute: absolute = "absolute".asInstanceOf[absolute]
   
   @js.native
-  sealed trait `after-edge`
-    extends StObject
-       with AlignmentBaseline
-  inline def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
-  
-  @js.native
-  sealed trait align
-    extends StObject
-       with Method
-  inline def align: align = "align".asInstanceOf[align]
-  
-  @js.native
-  sealed trait alphabetic
-    extends StObject
-       with AlignmentBaseline
-  inline def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
-  
-  @js.native
   sealed trait `at-most`
     extends StObject
        with MeasureMode
+       with typings.reactSketchapp.libTypesMod.MeasureMode
   inline def `at-most`: `at-most` = "at-most".asInstanceOf[`at-most`]
   
   @js.native
-  sealed trait auto
-    extends StObject
-       with Spacing
+  sealed trait auto extends StObject
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait baseline
-    extends StObject
-       with AlignmentBaseline
-       with _BaselineShift
+  sealed trait baseline extends StObject
   inline def baseline: baseline = "baseline".asInstanceOf[baseline]
-  
-  @js.native
-  sealed trait `before-edge`
-    extends StObject
-       with AlignmentBaseline
-  inline def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
-  
-  @js.native
-  sealed trait bevel extends StObject
-  inline def bevel: bevel = "bevel".asInstanceOf[bevel]
-  
-  @js.native
-  sealed trait blink
-    extends StObject
-       with TextDecoration
-  inline def blink: blink = "blink".asInstanceOf[blink]
-  
-  @js.native
-  sealed trait bold
-    extends StObject
-       with FontWeight
-  inline def bold: bold = "bold".asInstanceOf[bold]
-  
-  @js.native
-  sealed trait bolder
-    extends StObject
-       with FontWeight
-  inline def bolder: bolder = "bolder".asInstanceOf[bolder]
-  
-  @js.native
-  sealed trait bottom
-    extends StObject
-       with AlignmentBaseline
-  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait butt extends StObject
   inline def butt: butt = "butt".asInstanceOf[butt]
   
   @js.native
-  sealed trait center
-    extends StObject
-       with AlignmentBaseline
-       with ResizeMode
+  sealed trait center extends StObject
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait central
-    extends StObject
-       with AlignmentBaseline
-  inline def central: central = "central".asInstanceOf[central]
+  sealed trait color extends StObject
+  inline def color: color = "color".asInstanceOf[color]
   
   @js.native
   sealed trait column extends StObject
@@ -179,37 +51,19 @@ object reactSketchappStrings {
   inline def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
   
   @js.native
-  sealed trait condensed
-    extends StObject
-       with FontStretch
-  inline def condensed: condensed = "condensed".asInstanceOf[condensed]
-  
-  @js.native
-  sealed trait contain
-    extends StObject
-       with ResizeMode
+  sealed trait contain extends StObject
   inline def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
-  sealed trait cover
-    extends StObject
-       with ResizeMode
+  sealed trait cover extends StObject
   inline def cover: cover = "cover".asInstanceOf[cover]
   
   @js.native
-  sealed trait create extends StObject
-  inline def create: create = "create".asInstanceOf[create]
-  
-  @js.native
-  sealed trait dashed
-    extends StObject
-       with BorderStyle
+  sealed trait dashed extends StObject
   inline def dashed: dashed = "dashed".asInstanceOf[dashed]
   
   @js.native
-  sealed trait dotted
-    extends StObject
-       with BorderStyle
+  sealed trait dotted extends StObject
   inline def dotted: dotted = "dotted".asInstanceOf[dotted]
   
   @js.native
@@ -217,44 +71,11 @@ object reactSketchappStrings {
   inline def double: double = "double".asInstanceOf[double]
   
   @js.native
-  sealed trait end
-    extends StObject
-       with TextAnchor
-  inline def end: end = "end".asInstanceOf[end]
-  
-  @js.native
-  sealed trait evenodd extends StObject
-  inline def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
-  
-  @js.native
-  sealed trait exact
-    extends StObject
-       with Spacing
-  inline def exact: exact = "exact".asInstanceOf[exact]
-  
-  @js.native
   sealed trait exactly
     extends StObject
        with MeasureMode
+       with typings.reactSketchapp.libTypesMod.MeasureMode
   inline def exactly: exactly = "exactly".asInstanceOf[exactly]
-  
-  @js.native
-  sealed trait expanded
-    extends StObject
-       with FontStretch
-  inline def expanded: expanded = "expanded".asInstanceOf[expanded]
-  
-  @js.native
-  sealed trait `extra-condensed`
-    extends StObject
-       with FontStretch
-  inline def `extra-condensed`: `extra-condensed` = "extra-condensed".asInstanceOf[`extra-condensed`]
-  
-  @js.native
-  sealed trait `extra-expanded`
-    extends StObject
-       with FontStretch
-  inline def `extra-expanded`: `extra-expanded` = "extra-expanded".asInstanceOf[`extra-expanded`]
   
   @js.native
   sealed trait `flex-end` extends StObject
@@ -265,27 +86,35 @@ object reactSketchappStrings {
   inline def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
   
   @js.native
-  sealed trait hanging
-    extends StObject
-       with AlignmentBaseline
-  inline def hanging: hanging = "hanging".asInstanceOf[hanging]
+  sealed trait flowDestination extends StObject
+  inline def flowDestination: flowDestination = "flowDestination".asInstanceOf[flowDestination]
   
   @js.native
-  sealed trait hidden
-    extends StObject
-       with Overflow
+  sealed trait fontFamily extends StObject
+  inline def fontFamily: fontFamily = "fontFamily".asInstanceOf[fontFamily]
+  
+  @js.native
+  sealed trait fontSize extends StObject
+  inline def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
+  
+  @js.native
+  sealed trait fontStyle extends StObject
+  inline def fontStyle: fontStyle = "fontStyle".asInstanceOf[fontStyle]
+  
+  @js.native
+  sealed trait fontWeight extends StObject
+  inline def fontWeight: fontWeight = "fontWeight".asInstanceOf[fontWeight]
+  
+  @js.native
+  sealed trait hidden extends StObject
   inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
-  sealed trait ideographic
-    extends StObject
-       with AlignmentBaseline
-  inline def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
+  sealed trait image extends StObject
+  inline def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait italic
-    extends StObject
-       with FontStyle
+  sealed trait italic extends StObject
   inline def italic: italic = "italic".asInstanceOf[italic]
   
   @js.native
@@ -293,22 +122,24 @@ object reactSketchappStrings {
   inline def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
-  sealed trait left
-    extends StObject
-       with Side
+  sealed trait layerStyle extends StObject
+  inline def layerStyle: layerStyle = "layerStyle".asInstanceOf[layerStyle]
+  
+  @js.native
+  sealed trait left extends StObject
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait lighter
-    extends StObject
-       with FontWeight
-  inline def lighter: lighter = "lighter".asInstanceOf[lighter]
+  sealed trait letterSpacing extends StObject
+  inline def letterSpacing: letterSpacing = "letterSpacing".asInstanceOf[letterSpacing]
   
   @js.native
-  sealed trait `line-through`
-    extends StObject
-       with TextDecoration
+  sealed trait `line-through` extends StObject
   inline def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
+  
+  @js.native
+  sealed trait lineHeight extends StObject
+  inline def lineHeight: lineHeight = "lineHeight".asInstanceOf[lineHeight]
   
   @js.native
   sealed trait lowercase extends StObject
@@ -319,48 +150,11 @@ object reactSketchappStrings {
   inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait mathematical
-    extends StObject
-       with AlignmentBaseline
-  inline def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
-  
-  @js.native
-  sealed trait middle
-    extends StObject
-       with AlignmentBaseline
-       with TextAnchor
-  inline def middle: middle = "middle".asInstanceOf[middle]
-  
-  @js.native
-  sealed trait miter extends StObject
-  inline def miter: miter = "miter".asInstanceOf[miter]
-  
-  @js.native
-  sealed trait narrower
-    extends StObject
-       with FontStretch
-  inline def narrower: narrower = "narrower".asInstanceOf[narrower]
-  
-  @js.native
-  sealed trait none
-    extends StObject
-       with FontVariantLigatures
-       with ResizeMode
-       with TextDecoration
+  sealed trait none extends StObject
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait nonzero extends StObject
-  inline def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
-  
-  @js.native
-  sealed trait normal
-    extends StObject
-       with FontStretch
-       with FontStyle
-       with FontVariant
-       with FontVariantLigatures
-       with FontWeight
+  sealed trait normal extends StObject
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
@@ -368,35 +162,19 @@ object reactSketchappStrings {
   inline def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
   
   @js.native
-  sealed trait objectBoundingBox extends StObject
-  inline def objectBoundingBox: objectBoundingBox = "objectBoundingBox".asInstanceOf[objectBoundingBox]
-  
-  @js.native
-  sealed trait oblique
-    extends StObject
-       with FontStyle
-  inline def oblique: oblique = "oblique".asInstanceOf[oblique]
-  
-  @js.native
-  sealed trait overline
-    extends StObject
-       with TextDecoration
-  inline def overline: overline = "overline".asInstanceOf[overline]
+  sealed trait paragraphSpacing extends StObject
+  inline def paragraphSpacing: paragraphSpacing = "paragraphSpacing".asInstanceOf[paragraphSpacing]
   
   @js.native
   sealed trait relative extends StObject
   inline def relative: relative = "relative".asInstanceOf[relative]
   
   @js.native
-  sealed trait repeat
-    extends StObject
-       with ResizeMode
+  sealed trait repeat extends StObject
   inline def repeat: repeat = "repeat".asInstanceOf[repeat]
   
   @js.native
-  sealed trait right
-    extends StObject
-       with Side
+  sealed trait right extends StObject
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
@@ -416,49 +194,27 @@ object reactSketchappStrings {
   inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
-  sealed trait scroll
-    extends StObject
-       with Overflow
+  sealed trait scroll extends StObject
   inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
-  sealed trait `semi-condensed`
-    extends StObject
-       with FontStretch
-  inline def `semi-condensed`: `semi-condensed` = "semi-condensed".asInstanceOf[`semi-condensed`]
+  sealed trait slideFromBottom extends StObject
+  inline def slideFromBottom: slideFromBottom = "slideFromBottom".asInstanceOf[slideFromBottom]
   
   @js.native
-  sealed trait `semi-expanded`
-    extends StObject
-       with FontStretch
-  inline def `semi-expanded`: `semi-expanded` = "semi-expanded".asInstanceOf[`semi-expanded`]
+  sealed trait slideFromLeft extends StObject
+  inline def slideFromLeft: slideFromLeft = "slideFromLeft".asInstanceOf[slideFromLeft]
   
   @js.native
-  sealed trait sharp
-    extends StObject
-       with MidLine
-  inline def sharp: sharp = "sharp".asInstanceOf[sharp]
+  sealed trait slideFromRight extends StObject
+  inline def slideFromRight: slideFromRight = "slideFromRight".asInstanceOf[slideFromRight]
   
   @js.native
-  sealed trait sketch extends StObject
-  inline def sketch: sketch = "sketch".asInstanceOf[sketch]
+  sealed trait slideFromTop extends StObject
+  inline def slideFromTop: slideFromTop = "slideFromTop".asInstanceOf[slideFromTop]
   
   @js.native
-  sealed trait `small-caps`
-    extends StObject
-       with FontVariant
-  inline def `small-caps`: `small-caps` = "small-caps".asInstanceOf[`small-caps`]
-  
-  @js.native
-  sealed trait smooth
-    extends StObject
-       with MidLine
-  inline def smooth: smooth = "smooth".asInstanceOf[smooth]
-  
-  @js.native
-  sealed trait solid
-    extends StObject
-       with BorderStyle
+  sealed trait solid extends StObject
   inline def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
@@ -470,98 +226,66 @@ object reactSketchappStrings {
   inline def `space-between`: `space-between` = "space-between".asInstanceOf[`space-between`]
   
   @js.native
-  sealed trait spacing
-    extends StObject
-       with LengthAdjust
-  inline def spacing: spacing = "spacing".asInstanceOf[spacing]
-  
-  @js.native
-  sealed trait spacingAndGlyphs
-    extends StObject
-       with LengthAdjust
-  inline def spacingAndGlyphs: spacingAndGlyphs = "spacingAndGlyphs".asInstanceOf[spacingAndGlyphs]
-  
-  @js.native
   sealed trait square extends StObject
   inline def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait start
-    extends StObject
-       with TextAnchor
-  inline def start: start = "start".asInstanceOf[start]
-  
-  @js.native
-  sealed trait stretch
-    extends StObject
-       with Method
-       with ResizeMode
+  sealed trait stretch extends StObject
   inline def stretch: stretch = "stretch".asInstanceOf[stretch]
   
   @js.native
-  sealed trait sub
-    extends StObject
-       with _BaselineShift
-  inline def sub: sub = "sub".asInstanceOf[sub]
+  sealed trait stringValue extends StObject
+  inline def stringValue: stringValue = "stringValue".asInstanceOf[stringValue]
   
   @js.native
-  sealed trait `super`
-    extends StObject
-       with _BaselineShift
-  inline def `super`: `super` = "super".asInstanceOf[`super`]
+  sealed trait symbolID extends StObject
+  inline def symbolID: symbolID = "symbolID".asInstanceOf[symbolID]
   
   @js.native
-  sealed trait `text-after-edge`
-    extends StObject
-       with AlignmentBaseline
-  inline def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
+  sealed trait textAlign extends StObject
+  inline def textAlign: textAlign = "textAlign".asInstanceOf[textAlign]
   
   @js.native
-  sealed trait `text-before-edge`
-    extends StObject
-       with AlignmentBaseline
-  inline def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
+  sealed trait textDecoration extends StObject
+  inline def textDecoration: textDecoration = "textDecoration".asInstanceOf[textDecoration]
   
   @js.native
-  sealed trait `text-bottom`
-    extends StObject
-       with AlignmentBaseline
-  inline def `text-bottom`: `text-bottom` = "text-bottom".asInstanceOf[`text-bottom`]
+  sealed trait textShadowColor extends StObject
+  inline def textShadowColor: textShadowColor = "textShadowColor".asInstanceOf[textShadowColor]
   
   @js.native
-  sealed trait `text-top`
-    extends StObject
-       with AlignmentBaseline
-  inline def `text-top`: `text-top` = "text-top".asInstanceOf[`text-top`]
+  sealed trait textShadowOffset extends StObject
+  inline def textShadowOffset: textShadowOffset = "textShadowOffset".asInstanceOf[textShadowOffset]
   
   @js.native
-  sealed trait top
-    extends StObject
-       with AlignmentBaseline
-  inline def top: top = "top".asInstanceOf[top]
+  sealed trait textShadowOpacity extends StObject
+  inline def textShadowOpacity: textShadowOpacity = "textShadowOpacity".asInstanceOf[textShadowOpacity]
   
   @js.native
-  sealed trait `ultra-condensed`
-    extends StObject
-       with FontStretch
-  inline def `ultra-condensed`: `ultra-condensed` = "ultra-condensed".asInstanceOf[`ultra-condensed`]
+  sealed trait textShadowRadius extends StObject
+  inline def textShadowRadius: textShadowRadius = "textShadowRadius".asInstanceOf[textShadowRadius]
   
   @js.native
-  sealed trait `ultra-expanded`
-    extends StObject
-       with FontStretch
-  inline def `ultra-expanded`: `ultra-expanded` = "ultra-expanded".asInstanceOf[`ultra-expanded`]
+  sealed trait textShadowSpread extends StObject
+  inline def textShadowSpread: textShadowSpread = "textShadowSpread".asInstanceOf[textShadowSpread]
+  
+  @js.native
+  sealed trait textStyle extends StObject
+  inline def textStyle: textStyle = "textStyle".asInstanceOf[textStyle]
+  
+  @js.native
+  sealed trait textTransform extends StObject
+  inline def textTransform: textTransform = "textTransform".asInstanceOf[textTransform]
   
   @js.native
   sealed trait undefined
     extends StObject
        with MeasureMode
+       with typings.reactSketchapp.libTypesMod.MeasureMode
   inline def undefined: undefined = "undefined".asInstanceOf[undefined]
   
   @js.native
-  sealed trait underline
-    extends StObject
-       with TextDecoration
+  sealed trait underline extends StObject
   inline def underline: underline = "underline".asInstanceOf[underline]
   
   @js.native
@@ -569,22 +293,18 @@ object reactSketchappStrings {
   inline def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
   
   @js.native
-  sealed trait userSpaceOnUse extends StObject
-  inline def userSpaceOnUse: userSpaceOnUse = "userSpaceOnUse".asInstanceOf[userSpaceOnUse]
-  
-  @js.native
-  sealed trait visible
-    extends StObject
-       with Overflow
+  sealed trait visible extends StObject
   inline def visible: visible = "visible".asInstanceOf[visible]
-  
-  @js.native
-  sealed trait wider
-    extends StObject
-       with FontStretch
-  inline def wider: wider = "wider".asInstanceOf[wider]
   
   @js.native
   sealed trait wrap extends StObject
   inline def wrap: wrap = "wrap".asInstanceOf[wrap]
+  
+  @js.native
+  sealed trait `wrap-reverse` extends StObject
+  inline def `wrap-reverse`: `wrap-reverse` = "wrap-reverse".asInstanceOf[`wrap-reverse`]
+  
+  @js.native
+  sealed trait writingDirection extends StObject
+  inline def writingDirection: writingDirection = "writingDirection".asInstanceOf[writingDirection]
 }

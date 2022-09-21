@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "ImageCenterFocusStrong")
 @js.native
-class ImageCenterFocusStrong ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class ImageCenterFocusStrong ()
+  extends Component[SvgIconProps, js.Object, Any]

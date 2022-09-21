@@ -13,11 +13,11 @@ object mod {
   
   @JSImport("react-input-autosize", JSImport.Default)
   @js.native
-  class default () extends AutosizeInput
+  open class default () extends AutosizeInput
   
   @js.native
   trait AutosizeInput
-    extends Component[AutosizeInputProps, js.Object, js.Any] {
+    extends Component[AutosizeInputProps, js.Object, Any] {
     
     def copyInputStyles(): Unit = js.native
     

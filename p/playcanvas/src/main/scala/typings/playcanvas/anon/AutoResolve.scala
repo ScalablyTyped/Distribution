@@ -1,6 +1,6 @@
 package typings.playcanvas.anon
 
-import typings.playcanvas.pc.Texture
+import typings.playcanvas.mod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +16,10 @@ trait AutoResolve extends StObject {
   var depthBuffer: js.UndefOr[Texture] = js.undefined
   
   var face: js.UndefOr[Double] = js.undefined
+  
+  var flipY: js.UndefOr[Boolean] = js.undefined
+  
+  var name: js.UndefOr[String] = js.undefined
   
   var samples: js.UndefOr[Double] = js.undefined
   
@@ -49,6 +53,14 @@ object AutoResolve {
     inline def setFace(value: Double): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
     
     inline def setFaceUndefined: Self = StObject.set(x, "face", js.undefined)
+    
+    inline def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
+    
+    inline def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setSamples(value: Double): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
     

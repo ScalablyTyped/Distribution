@@ -10,10 +10,10 @@ SAML 2.0 authentication strategy for Passport
 | ------------------ | :-------------: |
 | Full name          | passport-saml |
 | Keywords           | saml, adfs, sso, shibboleth |
-| # releases         | 15 |
-| # dependents       | 77 |
-| # downloads        | 4019231 |
-| # stars            | 10 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 552510.3333333334 |
+| # stars            | 756.0 |
 
 ## Links
 - [Homepage](https://github.com/node-saml/passport-saml#readme)

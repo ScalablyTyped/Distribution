@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the border objects that make up range border.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 trait ConditionalRangeBorderCollectionLoadOptions extends StObject {
@@ -19,25 +19,25 @@ trait ConditionalRangeBorderCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: HTML color code representing the color of the border line, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
-    * For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var color: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See `Excel.ConditionalRangeBorderIndex` for details.
     *
-    * For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var sideIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for details.
     *
-    * For EACH ITEM in the collection: One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var style: js.UndefOr[Boolean] = js.undefined

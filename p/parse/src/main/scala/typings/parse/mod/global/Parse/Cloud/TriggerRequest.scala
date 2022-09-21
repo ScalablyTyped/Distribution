@@ -1,27 +1,26 @@
 package typings.parse.mod.global.Parse.Cloud
 
 import typings.parse.mod.global.Parse.Attributes
-import typings.parse.mod.global.Parse.Object
 import typings.parse.mod.global.Parse.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TriggerRequest extends StObject {
+trait TriggerRequest[T] extends StObject {
   
-  var headers: js.Any
+  var headers: Any
   
   var installationId: js.UndefOr[String] = js.undefined
   
   var ip: String
   
-  var log: js.Any
+  var log: Any
   
   var master: js.UndefOr[Boolean] = js.undefined
   
-  var `object`: Object[Attributes]
+  var `object`: T
   
-  var original: js.UndefOr[Object[Attributes]] = js.undefined
+  var original: js.UndefOr[T] = js.undefined
   
   var triggerName: String
   
@@ -29,15 +28,15 @@ trait TriggerRequest extends StObject {
 }
 object TriggerRequest {
   
-  inline def apply(headers: js.Any, ip: String, log: js.Any, `object`: Object[Attributes], triggerName: String): TriggerRequest = {
+  inline def apply[T](headers: Any, ip: String, log: Any, `object`: T, triggerName: String): TriggerRequest[T] = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TriggerRequest]
+    __obj.asInstanceOf[TriggerRequest[T]]
   }
   
-  extension [Self <: TriggerRequest](x: Self) {
+  extension [Self <: TriggerRequest[?], T](x: Self & TriggerRequest[T]) {
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
     
@@ -45,15 +44,15 @@ object TriggerRequest {
     
     inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
     inline def setMaster(value: Boolean): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     
     inline def setMasterUndefined: Self = StObject.set(x, "master", js.undefined)
     
-    inline def setObject(value: Object[Attributes]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: T): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    inline def setOriginal(value: Object[Attributes]): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: T): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
     inline def setOriginalUndefined: Self = StObject.set(x, "original", js.undefined)
     

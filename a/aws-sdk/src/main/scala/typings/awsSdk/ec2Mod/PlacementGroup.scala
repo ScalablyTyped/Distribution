@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlacementGroup extends StObject {
   
   /**
+    * The Amazon Resource Name (ARN) of the placement group.
+    */
+  var GroupArn: js.UndefOr[String] = js.undefined
+  
+  /**
     * The ID of the placement group.
     */
   var GroupId: js.UndefOr[String] = js.undefined
@@ -20,6 +25,11 @@ trait PlacementGroup extends StObject {
     * The number of partitions. Valid only if strategy is set to partition.
     */
   var PartitionCount: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    *  The spread level for the placement group. Only Outpost placement groups can be spread across hosts. 
+    */
+  var SpreadLevel: js.UndefOr[typings.awsSdk.ec2Mod.SpreadLevel] = js.undefined
   
   /**
     * The state of the placement group.
@@ -45,6 +55,10 @@ object PlacementGroup {
   
   extension [Self <: PlacementGroup](x: Self) {
     
+    inline def setGroupArn(value: String): Self = StObject.set(x, "GroupArn", value.asInstanceOf[js.Any])
+    
+    inline def setGroupArnUndefined: Self = StObject.set(x, "GroupArn", js.undefined)
+    
     inline def setGroupId(value: String): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
     inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
@@ -56,6 +70,10 @@ object PlacementGroup {
     inline def setPartitionCount(value: Integer): Self = StObject.set(x, "PartitionCount", value.asInstanceOf[js.Any])
     
     inline def setPartitionCountUndefined: Self = StObject.set(x, "PartitionCount", js.undefined)
+    
+    inline def setSpreadLevel(value: SpreadLevel): Self = StObject.set(x, "SpreadLevel", value.asInstanceOf[js.Any])
+    
+    inline def setSpreadLevelUndefined: Self = StObject.set(x, "SpreadLevel", js.undefined)
     
     inline def setState(value: PlacementGroupState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
@@ -69,6 +87,6 @@ object PlacementGroup {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

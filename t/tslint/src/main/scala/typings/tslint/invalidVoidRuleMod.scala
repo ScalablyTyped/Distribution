@@ -11,10 +11,10 @@ object invalidVoidRuleMod {
   
   @JSImport("tslint/lib/rules/invalidVoidRule", "Rule")
   @js.native
-  class Rule protected () extends AbstractRule {
+  open class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
     
-    /* private */ var getAllowGenerics: js.Any = js.native
+    /* private */ var getAllowGenerics: Any = js.native
   }
   /* static members */
   object Rule {

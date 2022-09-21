@@ -29,7 +29,7 @@ object GetConnectivityInfoResponse {
     
     inline def setConnectivityInfoUndefined: Self = StObject.set(x, "ConnectivityInfo", js.undefined)
     
-    inline def setConnectivityInfoVarargs(value: ConnectivityInfo*): Self = StObject.set(x, "ConnectivityInfo", js.Array(value :_*))
+    inline def setConnectivityInfoVarargs(value: ConnectivityInfo*): Self = StObject.set(x, "ConnectivityInfo", js.Array(value*))
     
     inline def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

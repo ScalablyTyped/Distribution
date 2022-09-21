@@ -36,6 +36,6 @@ object BatchPutAssetPropertyError {
     
     inline def setTimestamps(value: Timestamps): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     
-    inline def setTimestampsVarargs(value: TimeInNanos*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
+    inline def setTimestampsVarargs(value: TimeInNanos*): Self = StObject.set(x, "timestamps", js.Array(value*))
   }
 }

@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("lime-js", "TransportAuthentication")
 @js.native
-class TransportAuthentication () extends Authentication
+open class TransportAuthentication () extends Authentication

@@ -3,11 +3,12 @@ package typings.materialChips
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialChips.anon.PartialMDCChipAdapter
 import typings.materialChips.chipAdapterMod.MDCChipAdapter
-import typings.materialChips.trailingactionTypesMod.MDCChipTrailingActionNavigationEvent
-import typings.std.ClientRect
-import typings.std.FocusEvent
-import typings.std.KeyboardEvent
-import typings.std.TransitionEvent
+import typings.materialChips.chipConstantsMod.MDCChipAnimation
+import typings.materialChips.chipTypesMod.ActionInteractionEvent
+import typings.materialChips.chipTypesMod.ActionNavigationEvent
+import typings.materialChips.constantsMod.MDCChipActionFocusBehavior
+import typings.materialChips.constantsMod.MDCChipActionType
+import typings.std.AnimationEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,79 +17,59 @@ object chipFoundationMod {
   
   @JSImport("@material/chips/chip/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCChipFoundation {
+  open class default () extends MDCChipFoundation {
     def this(adapter: PartialMDCChipAdapter) = this()
   }
   
   @JSImport("@material/chips/chip/foundation", "MDCChipFoundation")
   @js.native
-  class MDCChipFoundation () extends MDCFoundation[MDCChipAdapter] {
+  open class MDCChipFoundation () extends MDCFoundation[MDCChipAdapter] {
     def this(adapter: PartialMDCChipAdapter) = this()
     
-    /**
-      * Begins the exit animation which leads to removal of the chip.
-      */
-    def beginExit(): Unit = js.native
+    /* private */ val animFrame: Any = js.native
     
-    /**
-      * Called by the chip set to focus the primary action.
-      *
-      */
-    def focusPrimaryAction(): Unit = js.native
+    /* private */ var animateSelection: Any = js.native
     
-    /**
-      * Called by the chip set to focus the trailing action (if present), otherwise
-      * gives focus to the trailing action.
-      */
-    def focusTrailingAction(): Unit = js.native
+    /* private */ var directionFromKey: Any = js.native
     
-    def getDimensions(): ClientRect = js.native
+    def getActions(): js.Array[MDCChipActionType] = js.native
     
-    def getShouldRemoveOnTrailingIconClick(): Boolean = js.native
+    /* private */ var getAddedAnnouncement: Any = js.native
     
-    def handleClick(): Unit = js.native
+    def getElementID(): String = js.native
     
-    def handleDoubleClick(): Unit = js.native
+    /* private */ var getRemovedAnnouncement: Any = js.native
     
-    def handleFocusIn(evt: FocusEvent): Unit = js.native
+    def handleActionInteraction(hasDetail: ActionInteractionEvent): Unit = js.native
     
-    def handleFocusOut(evt: FocusEvent): Unit = js.native
+    def handleActionNavigation(hasDetail: ActionNavigationEvent): Unit = js.native
     
-    /**
-      * Handles a keydown event from the root element.
-      */
-    def handleKeydown(evt: KeyboardEvent): Unit = js.native
+    def handleAnimationEnd(event: AnimationEvent): Unit = js.native
     
-    /**
-      * Handles an interaction event on the trailing icon element. This is used to
-      * prevent the ripple from activating on interaction with the trailing icon.
-      */
-    def handleTrailingActionInteraction(): Unit = js.native
+    def handleTransitionEnd(): Unit = js.native
     
-    def handleTrailingActionNavigation(evt: MDCChipTrailingActionNavigationEvent): Unit = js.native
+    def isActionFocusable(action: MDCChipActionType): Boolean = js.native
     
-    /**
-      * Handles a transition end event on the root element.
-      */
-    def handleTransitionEnd(evt: TransitionEvent): Unit = js.native
+    def isActionSelectable(action: MDCChipActionType): Boolean = js.native
     
-    def isEditable(): Boolean = js.native
+    def isActionSelected(action: MDCChipActionType): Boolean = js.native
     
-    def isEditing(): Boolean = js.native
+    def isDisabled(): Boolean = js.native
     
-    def isSelected(): Boolean = js.native
+    /* private */ var navigateActions: Any = js.native
     
-    /**
-      * Called by the chip set to remove focus from the chip actions.
-      */
-    def removeFocus(): Unit = js.native
+    /* private */ var resetAnimationStyles: Any = js.native
     
-    def setSelected(selected: Boolean): Unit = js.native
+    def setActionFocus(action: MDCChipActionType, focus: MDCChipActionFocusBehavior): Unit = js.native
     
-    def setSelectedFromChipSet(selected: Boolean, shouldNotifyClients: Boolean): Unit = js.native
+    def setActionSelected(action: MDCChipActionType, isSelected: Boolean): Unit = js.native
     
-    def setShouldFocusPrimaryActionOnClick(shouldFocus: Boolean): Unit = js.native
+    def setDisabled(isDisabled: Boolean): Unit = js.native
     
-    def setShouldRemoveOnTrailingIconClick(shouldRemove: Boolean): Unit = js.native
+    /* private */ var shouldRemove: Any = js.native
+    
+    def startAnimation(animation: MDCChipAnimation): Unit = js.native
+    
+    /* private */ var updateSelectionStyles: Any = js.native
   }
 }

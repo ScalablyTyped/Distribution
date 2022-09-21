@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Duplicates a particular filter view.
-  */
 trait SchemaDuplicateFilterViewRequest extends StObject {
   
   /**
     * The ID of the filter being duplicated.
     */
-  var filterId: js.UndefOr[Double] = js.undefined
+  var filterId: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaDuplicateFilterViewRequest {
   
@@ -24,6 +21,8 @@ object SchemaDuplicateFilterViewRequest {
   extension [Self <: SchemaDuplicateFilterViewRequest](x: Self) {
     
     inline def setFilterId(value: Double): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
+    
+    inline def setFilterIdNull: Self = StObject.set(x, "filterId", null)
     
     inline def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
   }

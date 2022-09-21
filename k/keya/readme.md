@@ -10,10 +10,10 @@ A simple, universal document store
 | ------------------ | :-------------: |
 | Full name          | keya |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 2 |
-| # downloads        | 1088 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 69.66666666666667 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/MayorMonty/keya#readme)

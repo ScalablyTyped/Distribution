@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListHealthChecksResponse extends StObject {
   
   /**
-    * A complex type that contains one HealthCheck element for each health check that is associated with the current AWS account.
+    * A complex type that contains one HealthCheck element for each health check that is associated with the current Amazon Web Services account.
     */
   var HealthChecks: typings.awsSdk.route53Mod.HealthChecks
   
@@ -42,7 +42,7 @@ object ListHealthChecksResponse {
     
     inline def setHealthChecks(value: HealthChecks): Self = StObject.set(x, "HealthChecks", value.asInstanceOf[js.Any])
     
-    inline def setHealthChecksVarargs(value: HealthCheck*): Self = StObject.set(x, "HealthChecks", js.Array(value :_*))
+    inline def setHealthChecksVarargs(value: HealthCheck*): Self = StObject.set(x, "HealthChecks", js.Array(value*))
     
     inline def setIsTruncated(value: PageTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

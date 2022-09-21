@@ -10,9 +10,9 @@ trait Fonts extends StObject {
   
   val Count: Double
   
-  def Item(Index: js.Any): Font
+  def Item(Index: Any): Font
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Fonts_typekey")
   var PowerPointDotFonts_typekey: Fonts
@@ -24,8 +24,8 @@ object Fonts {
   inline def apply(
     Application: Application,
     Count: Double,
-    Item: js.Any => Font,
-    Parent: js.Any,
+    Item: Any => Font,
+    Parent: Any,
     PowerPointDotFonts_typekey: Fonts,
     Replace: (String, String) => Unit
   ): Fonts = {
@@ -40,9 +40,9 @@ object Fonts {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => Font): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Font): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotFonts_typekey(value: Fonts): Self = StObject.set(x, "PowerPoint.Fonts_typekey", value.asInstanceOf[js.Any])
     

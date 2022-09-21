@@ -16,7 +16,7 @@ object unlinkIdentityCommandMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/commands/UnlinkIdentityCommand", "UnlinkIdentityCommand")
   @js.native
-  class UnlinkIdentityCommand protected ()
+  open class UnlinkIdentityCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object unlinkIdentityCommandMod {
     override val middlewareStack: MiddlewareStack[UnlinkIdentityInput, UnlinkIdentityOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: CognitoIdentityResolvedConfiguration
     ): Handler[UnlinkIdentityInput, UnlinkIdentityOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: CognitoIdentityResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[UnlinkIdentityInput, UnlinkIdentityOutput] = js.native
   }
 }

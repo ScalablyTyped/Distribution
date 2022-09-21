@@ -33,6 +33,6 @@ object ListUserPoolClientsResponse {
     
     inline def setUserPoolClientsUndefined: Self = StObject.set(x, "UserPoolClients", js.undefined)
     
-    inline def setUserPoolClientsVarargs(value: UserPoolClientDescription*): Self = StObject.set(x, "UserPoolClients", js.Array(value :_*))
+    inline def setUserPoolClientsVarargs(value: UserPoolClientDescription*): Self = StObject.set(x, "UserPoolClients", js.Array(value*))
   }
 }

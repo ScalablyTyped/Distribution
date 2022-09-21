@@ -10,10 +10,10 @@ Rollup Progress Plugin
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-progress |
 | Keywords           | rollup, plugin, progress, progressbar |
-| # releases         | 4 |
-| # dependents       | 47 |
-| # downloads        | 421431 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 58522.0 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/jkuri/rollup-plugin-progress#readme)

@@ -27,6 +27,9 @@ trait Metadata extends StObject {
   /** The named source for the result, such as Gmail. */
   var source: js.UndefOr[Source] = js.undefined
   
+  /** The thumbnail URL of the result. */
+  var thumbnailUrl: js.UndefOr[String] = js.undefined
+  
   /**
     * The last modified date for the object in the search result. If not set in the item, the value returned here is empty. When `updateTime` is used for calculating freshness and is not
     * set, this value defaults to 2 years from the current time.
@@ -54,7 +57,7 @@ object Metadata {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: NamedProperty*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: NamedProperty*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
@@ -71,6 +74,10 @@ object Metadata {
     inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
+    
+    inline def setThumbnailUrlUndefined: Self = StObject.set(x, "thumbnailUrl", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     

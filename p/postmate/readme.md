@@ -10,10 +10,10 @@ A powerful, simple, promise-based postMessage library
 | ------------------ | :-------------: |
 | Full name          | postmate |
 | Keywords           | postMessage, secure, handshake, promise, iframes, pci, security |
-| # releases         | 3 |
-| # dependents       | 23 |
-| # downloads        | 508613 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 37704.666666666664 |
+| # stars            | 1695.0 |
 
 ## Links
 - [Homepage](https://github.com/dollarshaveclub/postmate)

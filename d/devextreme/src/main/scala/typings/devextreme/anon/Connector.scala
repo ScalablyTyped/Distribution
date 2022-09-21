@@ -1,47 +1,77 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.breakWord
-import typings.devextreme.devextremeStrings.columns
-import typings.devextreme.devextremeStrings.ellipsis
-import typings.devextreme.devextremeStrings.hide
-import typings.devextreme.devextremeStrings.inside
-import typings.devextreme.devextremeStrings.left
-import typings.devextreme.devextremeStrings.none
-import typings.devextreme.devextremeStrings.normal
-import typings.devextreme.devextremeStrings.outside
-import typings.devextreme.devextremeStrings.right
-import typings.devextreme.mod.DevExpress.ui.format
+import typings.devextreme.mod.DevExpress.common.HorizontalEdge
+import typings.devextreme.mod.DevExpress.common.charts.LabelPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Connector extends StObject {
   
+  /**
+    * Colors the labels&apos; background. The default color is inherited from the funnel items.
+    */
   var backgroundColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * Configures the label borders.
+    */
   var border: js.UndefOr[ColorDashStyle] = js.undefined
   
+  /**
+    * Configures label connectors.
+    */
   var connector: js.UndefOr[ColorOpacity] = js.undefined
   
+  /**
+    * Customizes labels&apos; text.
+    */
   var customizeText: js.UndefOr[js.Function1[/* itemInfo */ Percent, String]] = js.undefined
   
+  /**
+    * Specifies labels&apos; font properties.
+    */
   var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
+  /**
+    * Formats the item value before displaying it in the label.
+    */
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.Format] = js.undefined
   
-  var horizontalAlignment: js.UndefOr[left | right] = js.undefined
+  /**
+    * Specifies labels&apos; position in relation to the funnel items.
+    */
+  var horizontalAlignment: js.UndefOr[HorizontalEdge] = js.undefined
   
+  /**
+    * Moves labels from their initial positions.
+    */
   var horizontalOffset: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[columns | inside | outside] = js.undefined
+  /**
+    * Specifies whether to display labels inside or outside funnel items or arrange them in columns.
+    */
+  var position: js.UndefOr[LabelPosition] = js.undefined
   
+  /**
+    * Specifies whether to show labels for items with zero value.
+    */
   var showForZeroValues: js.UndefOr[Boolean] = js.undefined
   
-  var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
+  /**
+    * Specifies what to do with label texts that overflow the allocated space after applying wordWrap: hide, truncate them and display an ellipsis, or do nothing.
+    */
+  var textOverflow: js.UndefOr[typings.devextreme.mod.DevExpress.common.charts.TextOverflow] = js.undefined
   
+  /**
+    * Controls the labels&apos; visibility.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
   
-  var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
+  /**
+    * Specifies how to wrap label texts if they do not fit into a single line.
+    */
+  var wordWrap: js.UndefOr[typings.devextreme.mod.DevExpress.common.charts.WordWrap] = js.undefined
 }
 object Connector {
   
@@ -72,13 +102,13 @@ object Connector {
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    inline def setFormat(value: format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: typings.devextreme.mod.DevExpress.ui.Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    inline def setFormatFunction1(value: js.Date | Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setHorizontalAlignment(value: left | right): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    inline def setHorizontalAlignment(value: HorizontalEdge): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
     inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
@@ -86,7 +116,7 @@ object Connector {
     
     inline def setHorizontalOffsetUndefined: Self = StObject.set(x, "horizontalOffset", js.undefined)
     
-    inline def setPosition(value: columns | inside | outside): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: LabelPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
@@ -94,7 +124,7 @@ object Connector {
     
     inline def setShowForZeroValuesUndefined: Self = StObject.set(x, "showForZeroValues", js.undefined)
     
-    inline def setTextOverflow(value: ellipsis | hide | none): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
+    inline def setTextOverflow(value: typings.devextreme.mod.DevExpress.common.charts.TextOverflow): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
     
     inline def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
     
@@ -102,7 +132,7 @@ object Connector {
     
     inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
-    inline def setWordWrap(value: normal | breakWord | none): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
+    inline def setWordWrap(value: typings.devextreme.mod.DevExpress.common.charts.WordWrap): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
     
     inline def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
   }

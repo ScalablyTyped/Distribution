@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sjcl", "SjclPRFFamily")
 @js.native
-class SjclPRFFamily () extends StObject {
+open class SjclPRFFamily () extends StObject {
   
   def encrypt(data: String): BitArray_ = js.native
   def encrypt(data: BitArray_): BitArray_ = js.native

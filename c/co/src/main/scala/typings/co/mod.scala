@@ -1,7 +1,6 @@
 package typings.co
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Iterator
 import typings.std.Parameters
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -17,17 +16,17 @@ object mod extends Shortcut {
   @js.native
   trait Co extends StObject {
     
-    def apply[F /* <: js.Function1[/* repeated */ js.Any, Iterator[js.Any, js.Any, Unit]] */](
+    def apply[F /* <: js.Function1[/* repeated */ Any, js.Iterator[Any]] */](
       fn: F,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<F> is not an array type */ args: Parameters[F]
     ): js.Promise[ExtractType[ReturnType[F]]] = js.native
     
-    def default[F /* <: js.Function1[/* repeated */ js.Any, Iterator[js.Any, js.Any, Unit]] */](
+    def default[F /* <: js.Function1[/* repeated */ Any, js.Iterator[Any]] */](
       fn: F,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<F> is not an array type */ args: Parameters[F]
     ): js.Promise[ExtractType[ReturnType[F]]] = js.native
     
-    def co[F /* <: js.Function1[/* repeated */ js.Any, Iterator[js.Any, js.Any, Unit]] */](
+    def co[F /* <: js.Function1[/* repeated */ Any, js.Iterator[Any]] */](
       fn: F,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<F> is not an array type */ args: Parameters[F]
     ): js.Promise[ExtractType[ReturnType[F]]] = js.native
@@ -37,10 +36,10 @@ object mod extends Shortcut {
     @JSName("default")
     var default_Original: Co = js.native
     
-    def wrap[F /* <: js.Function1[/* repeated */ js.Any, Iterator[js.Any, js.Any, Unit]] */](fn: F): js.Function1[/* args */ Parameters[F], js.Promise[ExtractType[ReturnType[F]]]] = js.native
+    def wrap[F /* <: js.Function1[/* repeated */ Any, js.Iterator[Any]] */](fn: F): js.Function1[/* args */ Parameters[F], js.Promise[ExtractType[ReturnType[F]]]] = js.native
   }
   
-  type ExtractType[T] = js.Any
+  type ExtractType[I] = I | ReturnType[I]
   
   type _To = Co
   

@@ -69,7 +69,7 @@ object headerCommonMod {
     channel: FacetChannel
   ): Header[SignalRef] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHeaderProperties")(properties.asInstanceOf[js.Any], header.asInstanceOf[js.Any], config.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Header[SignalRef]]
   
-  inline def getHeaderProperty_format(prop: format, header: Header[SignalRef], config: Config[SignalRef], channel: FacetChannel): js.UndefOr[String | Dict[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHeaderProperty")(prop.asInstanceOf[js.Any], header.asInstanceOf[js.Any], config.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Dict[js.Any]]]
+  inline def getHeaderProperty_format(prop: format, header: Header[SignalRef], config: Config[SignalRef], channel: FacetChannel): js.UndefOr[String | Dict[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHeaderProperty")(prop.asInstanceOf[js.Any], header.asInstanceOf[js.Any], config.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Dict[Any]]]
   
   inline def getHeaderProperty_formatType(prop: formatType, header: Header[SignalRef], config: Config[SignalRef], channel: FacetChannel): js.UndefOr[number | time | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getHeaderProperty")(prop.asInstanceOf[js.Any], header.asInstanceOf[js.Any], config.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[number | time | String]]
   

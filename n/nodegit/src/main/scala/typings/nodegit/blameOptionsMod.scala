@@ -10,9 +10,9 @@ object blameOptionsMod {
   
   @JSImport("nodegit/blame-options", "BlameOptions")
   @js.native
-  class BlameOptions ()
+  open class BlameOptions ()
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var flags: js.UndefOr[Double] = js.native
     

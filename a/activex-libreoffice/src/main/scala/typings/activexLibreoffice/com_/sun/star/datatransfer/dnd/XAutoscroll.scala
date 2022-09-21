@@ -30,7 +30,7 @@ trait XAutoscroll
     * Returns the regions describing the autoscrolling region.
     * @returns The regions describing the autoscrolling region or border relative to the geometry of the implementing component.
     */
-  val AutoscrollRegion: js.Any
+  val AutoscrollRegion: Any
   
   /**
     * Notify the component to autoscroll.
@@ -43,16 +43,16 @@ trait XAutoscroll
     * Returns the regions describing the autoscrolling region.
     * @returns The regions describing the autoscrolling region or border relative to the geometry of the implementing component.
     */
-  def getAutoscrollRegion(): js.Any
+  def getAutoscrollRegion(): Any
 }
 object XAutoscroll {
   
   inline def apply(
-    AutoscrollRegion: js.Any,
+    AutoscrollRegion: Any,
     acquire: () => Unit,
     autoscroll: (Double, Double) => Unit,
-    getAutoscrollRegion: () => js.Any,
-    queryInterface: `type` => js.Any,
+    getAutoscrollRegion: () => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAutoscroll = {
     val __obj = js.Dynamic.literal(AutoscrollRegion = AutoscrollRegion.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), autoscroll = js.Any.fromFunction2(autoscroll), getAutoscrollRegion = js.Any.fromFunction0(getAutoscrollRegion), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -63,8 +63,8 @@ object XAutoscroll {
     
     inline def setAutoscroll(value: (Double, Double) => Unit): Self = StObject.set(x, "autoscroll", js.Any.fromFunction2(value))
     
-    inline def setAutoscrollRegion(value: js.Any): Self = StObject.set(x, "AutoscrollRegion", value.asInstanceOf[js.Any])
+    inline def setAutoscrollRegion(value: Any): Self = StObject.set(x, "AutoscrollRegion", value.asInstanceOf[js.Any])
     
-    inline def setGetAutoscrollRegion(value: () => js.Any): Self = StObject.set(x, "getAutoscrollRegion", js.Any.fromFunction0(value))
+    inline def setGetAutoscrollRegion(value: () => Any): Self = StObject.set(x, "getAutoscrollRegion", js.Any.fromFunction0(value))
   }
 }

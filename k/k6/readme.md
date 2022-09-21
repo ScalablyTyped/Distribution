@@ -1,7 +1,7 @@
 
 # Scala.js typings for k6
 
-Typings are for version 0.28
+Typings are for version 0.39
 
 ## Library description:
 Dummy package for autocompleting k6 scripts.
@@ -10,10 +10,10 @@ Dummy package for autocompleting k6 scripts.
 | ------------------ | :-------------: |
 | Full name          | k6 |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 165639 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 161131.33333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/loadimpact/k6#readme)

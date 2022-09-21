@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait ASPxClientAxisValue extends StObject {
   /**
     * Gets the axis value, if the axis scale type is date-time.
     */
-  var dateTimeValue: Date
+  var dateTimeValue: js.Date
   
   /**
     * Gets the axis value, if the axis scale type is numerical.
@@ -30,16 +29,16 @@ trait ASPxClientAxisValue extends StObject {
     */
   var scaleType: String
   
-  var timeSpanValue: js.Any
+  var timeSpanValue: Any
 }
 object ASPxClientAxisValue {
   
   inline def apply(
-    dateTimeValue: Date,
+    dateTimeValue: js.Date,
     numericalValue: Double,
     qualitativeValue: String,
     scaleType: String,
-    timeSpanValue: js.Any
+    timeSpanValue: Any
   ): ASPxClientAxisValue = {
     val __obj = js.Dynamic.literal(dateTimeValue = dateTimeValue.asInstanceOf[js.Any], numericalValue = numericalValue.asInstanceOf[js.Any], qualitativeValue = qualitativeValue.asInstanceOf[js.Any], scaleType = scaleType.asInstanceOf[js.Any], timeSpanValue = timeSpanValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientAxisValue]
@@ -47,7 +46,7 @@ object ASPxClientAxisValue {
   
   extension [Self <: ASPxClientAxisValue](x: Self) {
     
-    inline def setDateTimeValue(value: Date): Self = StObject.set(x, "dateTimeValue", value.asInstanceOf[js.Any])
+    inline def setDateTimeValue(value: js.Date): Self = StObject.set(x, "dateTimeValue", value.asInstanceOf[js.Any])
     
     inline def setNumericalValue(value: Double): Self = StObject.set(x, "numericalValue", value.asInstanceOf[js.Any])
     
@@ -55,6 +54,6 @@ object ASPxClientAxisValue {
     
     inline def setScaleType(value: String): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
     
-    inline def setTimeSpanValue(value: js.Any): Self = StObject.set(x, "timeSpanValue", value.asInstanceOf[js.Any])
+    inline def setTimeSpanValue(value: Any): Self = StObject.set(x, "timeSpanValue", value.asInstanceOf[js.Any])
   }
 }

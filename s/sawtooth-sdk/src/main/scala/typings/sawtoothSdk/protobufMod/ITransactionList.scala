@@ -24,6 +24,6 @@ object ITransactionList {
     
     inline def setTransactionsUndefined: Self = StObject.set(x, "transactions", js.undefined)
     
-    inline def setTransactionsVarargs(value: ITransaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+    inline def setTransactionsVarargs(value: ITransaction*): Self = StObject.set(x, "transactions", js.Array(value*))
   }
 }

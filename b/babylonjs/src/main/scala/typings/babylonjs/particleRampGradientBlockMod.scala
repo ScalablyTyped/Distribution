@@ -10,7 +10,7 @@ object particleRampGradientBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Particle/particleRampGradientBlock", "ParticleRampGradientBlock")
   @js.native
-  class ParticleRampGradientBlock protected () extends NodeMaterialBlock {
+  open class ParticleRampGradientBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new ParticleRampGradientBlock
       * @param name defines the block name

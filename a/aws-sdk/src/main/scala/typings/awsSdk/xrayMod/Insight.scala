@@ -19,7 +19,7 @@ trait Insight extends StObject {
   /**
     * The time, in Unix seconds, at which the insight ended.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the group that the insight belongs to.
@@ -46,7 +46,7 @@ trait Insight extends StObject {
   /**
     * The time, in Unix seconds, at which the insight began.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The current state of the insight.
@@ -76,13 +76,13 @@ object Insight {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "Categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: InsightCategory*): Self = StObject.set(x, "Categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: InsightCategory*): Self = StObject.set(x, "Categories", js.Array(value*))
     
     inline def setClientRequestImpactStatistics(value: RequestImpactStatistics): Self = StObject.set(x, "ClientRequestImpactStatistics", value.asInstanceOf[js.Any])
     
     inline def setClientRequestImpactStatisticsUndefined: Self = StObject.set(x, "ClientRequestImpactStatistics", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -106,7 +106,7 @@ object Insight {
     
     inline def setRootCauseServiceRequestImpactStatisticsUndefined: Self = StObject.set(x, "RootCauseServiceRequestImpactStatistics", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
@@ -122,6 +122,6 @@ object Insight {
     
     inline def setTopAnomalousServicesUndefined: Self = StObject.set(x, "TopAnomalousServices", js.undefined)
     
-    inline def setTopAnomalousServicesVarargs(value: AnomalousService*): Self = StObject.set(x, "TopAnomalousServices", js.Array(value :_*))
+    inline def setTopAnomalousServicesVarargs(value: AnomalousService*): Self = StObject.set(x, "TopAnomalousServices", js.Array(value*))
   }
 }

@@ -14,7 +14,7 @@ trait DomainSummary extends StObject {
   /**
     *  A timestamp that contains the date and time the domain was created. 
     */
-  var createdTime: js.UndefOr[Timestamp] = js.undefined
+  var createdTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The key used to encrypt the domain. 
@@ -27,12 +27,12 @@ trait DomainSummary extends StObject {
   var name: js.UndefOr[DomainName] = js.undefined
   
   /**
-    *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
+    *  The 12-digit account number of the Amazon Web Services account that owns the domain. It does not include dashes or spaces. 
     */
   var owner: js.UndefOr[AccountId] = js.undefined
   
   /**
-    *  A string that contains the status of the domain. The valid values are:     Active     Deleted   
+    *  A string that contains the status of the domain. 
     */
   var status: js.UndefOr[DomainStatus] = js.undefined
 }
@@ -49,7 +49,7 @@ object DomainSummary {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedTime(value: Timestamp): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
     

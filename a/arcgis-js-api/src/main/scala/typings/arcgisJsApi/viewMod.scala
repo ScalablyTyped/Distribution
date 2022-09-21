@@ -25,7 +25,7 @@ object viewMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with View {
     def this(properties: ViewProperties) = this()
@@ -49,6 +49,8 @@ object viewMod extends Shortcut {
     /**
       * The height of the view in pixels read from the view container element.
       *
+      * @default 0
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#height)
       */
     /* CompleteClass */
@@ -64,6 +66,8 @@ object viewMod extends Shortcut {
     
     /**
       * Indicates if the view is being resized.
+      *
+      * @default false
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#resizing)
       */
@@ -81,6 +85,8 @@ object viewMod extends Shortcut {
     /**
       * Indicates if the view is visible on the page.
       *
+      * @default true
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#suspended)
       */
     /* CompleteClass */
@@ -96,6 +102,8 @@ object viewMod extends Shortcut {
     
     /**
       * The width of the view in pixels read from the view container element.
+      *
+      * @default 0
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#width)
       */

@@ -13,7 +13,7 @@ object uritemplateMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("urijs/src/URITemplate", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with URITemplate {
     def this(template: String) = this()
@@ -62,7 +62,7 @@ object uritemplateMod extends Shortcut {
       
       inline def setVariables(value: js.Array[URITemplateVariable]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      inline def setVariablesVarargs(value: URITemplateVariable*): Self = StObject.set(x, "variables", js.Array(value :_*))
+      inline def setVariablesVarargs(value: URITemplateVariable*): Self = StObject.set(x, "variables", js.Array(value*))
     }
   }
   

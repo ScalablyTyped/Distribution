@@ -10,10 +10,10 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | light-sdk |
 | Keywords           | - |
-| # releases         | 34 |
-| # dependents       | 2 |
-| # downloads        | 4554 |
-| # stars            | 0 |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 233.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/light-sdk)

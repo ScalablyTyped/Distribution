@@ -24,27 +24,21 @@ trait ILayoutSite2 extends StObject {
   /**
     * Gets the pixel range of the realization area.
     **/
-  var realizedRange: js.Any
+  var realizedRange: Any
   
   /**
     * Gets the tree for use by an object that implements the ILayout2 interface.
     **/
-  var tree: js.Any
+  var tree: Any
   
   /**
     * Gets the pixel range of visible items in the site.
     **/
-  var visibleRange: js.Any
+  var visibleRange: Any
 }
 object ILayoutSite2 {
   
-  inline def apply(
-    groupCount: Double,
-    itemCount: Promise[Double],
-    realizedRange: js.Any,
-    tree: js.Any,
-    visibleRange: js.Any
-  ): ILayoutSite2 = {
+  inline def apply(groupCount: Double, itemCount: Promise[Double], realizedRange: Any, tree: Any, visibleRange: Any): ILayoutSite2 = {
     val __obj = js.Dynamic.literal(groupCount = groupCount.asInstanceOf[js.Any], itemCount = itemCount.asInstanceOf[js.Any], realizedRange = realizedRange.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any], visibleRange = visibleRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILayoutSite2]
   }
@@ -55,10 +49,10 @@ object ILayoutSite2 {
     
     inline def setItemCount(value: Promise[Double]): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     
-    inline def setRealizedRange(value: js.Any): Self = StObject.set(x, "realizedRange", value.asInstanceOf[js.Any])
+    inline def setRealizedRange(value: Any): Self = StObject.set(x, "realizedRange", value.asInstanceOf[js.Any])
     
-    inline def setTree(value: js.Any): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: Any): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
-    inline def setVisibleRange(value: js.Any): Self = StObject.set(x, "visibleRange", value.asInstanceOf[js.Any])
+    inline def setVisibleRange(value: Any): Self = StObject.set(x, "visibleRange", value.asInstanceOf[js.Any])
   }
 }

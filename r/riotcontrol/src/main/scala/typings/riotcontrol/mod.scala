@@ -25,7 +25,7 @@ object mod {
   
   inline def stores_=(x: js.Array[Store]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_stores")(x.asInstanceOf[js.Any])
   
-  inline def trigger(name: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trigger(name: String, args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   @js.native
   trait Store extends StObject {
@@ -37,6 +37,6 @@ object mod {
     
     def one(name: String, fn: js.Function): Store = js.native
     
-    def trigger(name: String, args: js.Any*): Store = js.native
+    def trigger(name: String, args: Any*): Store = js.native
   }
 }

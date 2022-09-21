@@ -13,7 +13,7 @@ object subtagMod {
   
   @JSImport("language-tags/Subtag", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Subtag {
     

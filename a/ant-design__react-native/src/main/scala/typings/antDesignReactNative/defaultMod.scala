@@ -120,6 +120,30 @@ object defaultMod {
     
     inline def buttonHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("button_height")(x.asInstanceOf[js.Any])
     
+    @JSImport("@ant-design/react-native/lib/style/themes/default", "default.checkbox_border")
+    @js.native
+    def checkboxBorder: String = js.native
+    
+    @JSImport("@ant-design/react-native/lib/style/themes/default", "default.checkbox_border_disabled")
+    @js.native
+    def checkboxBorderDisabled: String = js.native
+    
+    inline def checkboxBorderDisabled_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkbox_border_disabled")(x.asInstanceOf[js.Any])
+    
+    inline def checkboxBorder_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkbox_border")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/react-native/lib/style/themes/default", "default.checkbox_fill")
+    @js.native
+    def checkboxFill: String = js.native
+    
+    @JSImport("@ant-design/react-native/lib/style/themes/default", "default.checkbox_fill_disabled")
+    @js.native
+    def checkboxFillDisabled: String = js.native
+    
+    inline def checkboxFillDisabled_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkbox_fill_disabled")(x.asInstanceOf[js.Any])
+    
+    inline def checkboxFill_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("checkbox_fill")(x.asInstanceOf[js.Any])
+    
     @JSImport("@ant-design/react-native/lib/style/themes/default", "default.color_icon_base")
     @js.native
     def colorIconBase: String = js.native
@@ -516,11 +540,29 @@ object defaultMod {
     
     inline def segmentedControlHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("segmented_control_height")(x.asInstanceOf[js.Any])
     
+    @JSImport("@ant-design/react-native/lib/style/themes/default", "default.switch_checked_disabled")
+    @js.native
+    def switchCheckedDisabled: String = js.native
+    
+    inline def switchCheckedDisabled_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("switch_checked_disabled")(x.asInstanceOf[js.Any])
+    
     @JSImport("@ant-design/react-native/lib/style/themes/default", "default.switch_fill")
     @js.native
     def switchFill: String = js.native
     
     inline def switchFill_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("switch_fill")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/react-native/lib/style/themes/default", "default.switch_unchecked")
+    @js.native
+    def switchUnchecked: String = js.native
+    
+    @JSImport("@ant-design/react-native/lib/style/themes/default", "default.switch_unchecked_disabled")
+    @js.native
+    def switchUncheckedDisabled: String = js.native
+    
+    inline def switchUncheckedDisabled_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("switch_unchecked_disabled")(x.asInstanceOf[js.Any])
+    
+    inline def switchUnchecked_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("switch_unchecked")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/style/themes/default", "default.tab_bar_fill")
     @js.native

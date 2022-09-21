@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait CanvasPutImageDataOption extends StObject {
   var complete: js.UndefOr[CanvasPutImageDataCompleteCallback] = js.undefined
   
   /** 图像像素点数据，一维数组，每四项表示一个像素点的 rgba */
-  var data: Uint8ClampedArray
+  var data: js.typedarray.Uint8ClampedArray
   
   /** 接口调用失败的回调函数 */
   var fail: js.UndefOr[CanvasPutImageDataFailCallback] = js.undefined
@@ -36,7 +35,14 @@ trait CanvasPutImageDataOption extends StObject {
 }
 object CanvasPutImageDataOption {
   
-  inline def apply(canvasId: String, data: Uint8ClampedArray, height: Double, width: Double, x: Double, y: Double): CanvasPutImageDataOption = {
+  inline def apply(
+    canvasId: String,
+    data: js.typedarray.Uint8ClampedArray,
+    height: Double,
+    width: Double,
+    x: Double,
+    y: Double
+  ): CanvasPutImageDataOption = {
     val __obj = js.Dynamic.literal(canvasId = canvasId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasPutImageDataOption]
   }
@@ -49,7 +55,7 @@ object CanvasPutImageDataOption {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     

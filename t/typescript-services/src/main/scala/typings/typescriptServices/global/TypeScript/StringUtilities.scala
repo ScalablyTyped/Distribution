@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.StringUtilities")
 @js.native
-class StringUtilities ()
+open class StringUtilities ()
   extends StObject
      with typings.typescriptServices.TypeScript.StringUtilities
 object StringUtilities {
@@ -31,7 +31,7 @@ object StringUtilities {
   inline def fromCharCodeArray(array: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCharCodeArray")(array.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  inline def isString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isString(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
   inline def repeat(value: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(value.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]

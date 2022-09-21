@@ -11,9 +11,9 @@ JavaScript wrapper for hover and any-hover media queries
 | Full name          | detect-hover |
 | Keywords           | detect, hover, any-hover, media query |
 | # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 1548996 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 223520.33333333334 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/rafgraph/detect-hover#readme)

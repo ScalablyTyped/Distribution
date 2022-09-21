@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeJsonrpc.mod.ProgressType
+import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashdocumentHighlight
 import typings.vscodeLanguageserverTypes.mod.DocumentHighlight
@@ -10,16 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object DocumentHighlightRequest {
   
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "DocumentHighlightRequest.method")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "DocumentHighlightRequest.messageDirection")
+  @js.native
+  val messageDirection: MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "DocumentHighlightRequest.method")
   @js.native
   val method: textDocumentSlashdocumentHighlight = js.native
   
-  /** @deprecated Use DocumentHighlightRequest.type */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "DocumentHighlightRequest.resultType")
-  @js.native
-  val resultType: ProgressType[js.Array[DocumentHighlight]] = js.native
-  
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "DocumentHighlightRequest.type")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "DocumentHighlightRequest.type")
   @js.native
   val `type`: ProtocolRequestType[
     DocumentHighlightParams, 

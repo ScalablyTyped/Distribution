@@ -15,14 +15,16 @@ trait Geometry_
      with Accessor
      with JSONSupport
      with _GoToTarget2D
-     with _GoToTarget3D {
+     with _GoToTarget3D
+     with _ProfileVariableInstanceType
+     with _ResultType {
   
   /**
-    * The cache is used to store values computed from geometries that need to cleared or recomputed upon mutation.
+    * The cache is used to store values computed from geometries that need to be cleared or recomputed upon mutation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#cache)
     */
-  val cache: js.Any = js.native
+  val cache: Any = js.native
   
   /**
     * The extent of the geometry.
@@ -47,6 +49,8 @@ trait Geometry_
   
   /**
     * The spatial reference of the geometry.
+    *
+    * @default WGS84 (wkid: 4326)
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#spatialReference)
     */

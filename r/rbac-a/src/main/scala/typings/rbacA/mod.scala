@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("rbac-a", "AttributesManager")
   @js.native
-  class AttributesManager () extends StObject {
+  open class AttributesManager () extends StObject {
     
     /* protected */ var _attributes: StringDictionary[AttributeFunction] = js.native
     
@@ -34,12 +34,12 @@ object mod {
       * value, or reject. A rejected promise should be considered falsy.
       * If the specified attribute does not exist, false is returned.
       */
-    def validate(attribute: String, user: js.Any, role: String, params: js.Object): js.Any = js.native
+    def validate(attribute: String, user: Any, role: String, params: js.Object): Any = js.native
   }
   
   @JSImport("rbac-a", "Provider")
   @js.native
-  class Provider () extends StObject {
+  open class Provider () extends StObject {
     
     /**
       * Return all attributes for the specified role. The return value must
@@ -77,7 +77,7 @@ object mod {
       * The method mey return a promise resolving with the
       * expected return value.
       */
-    def getRoles(user: js.Any): Roles | js.Promise[Roles] = js.native
+    def getRoles(user: Any): Roles | js.Promise[Roles] = js.native
   }
   
   object Providers {
@@ -90,7 +90,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("rbac-a", "Providers.JsonProvider")
     @js.native
-    class JsonProvider protected () extends Provider {
+    open class JsonProvider protected () extends Provider {
       def this(roles: js.Object) = this()
     }
     /** Basic JSON permissions provider */
@@ -102,7 +102,7 @@ object mod {
   
   @JSImport("rbac-a", "RBAC")
   @js.native
-  class RBAC[P /* <: Provider */, AM /* <: AttributesManager */] protected () extends EventEmitter {
+  open class RBAC[P /* <: Provider */, AM /* <: AttributesManager */] protected () extends EventEmitter {
     def this(opts: Attributes[P, AM]) = this()
     
     val attributes: AM = js.native
@@ -115,15 +115,15 @@ object mod {
       * Promise is rejected, it should be considered as if the user has
       * insufficient access to the specified ressources.
       */
-    def check(user: js.Any, permission: String): js.Promise[Double] = js.native
-    def check(user: js.Any, permission: String, params: js.Object): js.Promise[Double] = js.native
-    def check(user: js.Any, permission: js.Array[String]): js.Promise[Double] = js.native
-    def check(user: js.Any, permission: js.Array[String], params: js.Object): js.Promise[Double] = js.native
+    def check(user: Any, permission: String): js.Promise[Double] = js.native
+    def check(user: Any, permission: String, params: js.Object): js.Promise[Double] = js.native
+    def check(user: Any, permission: js.Array[String]): js.Promise[Double] = js.native
+    def check(user: Any, permission: js.Array[String], params: js.Object): js.Promise[Double] = js.native
     
     val provider: P = js.native
   }
   
-  type AttributeFunction = js.Function3[/* user */ js.Any, /* role */ String, /* params */ js.Object, js.Any]
+  type AttributeFunction = js.Function3[/* user */ Any, /* role */ String, /* params */ js.Object, Any]
   
   trait Roles
     extends StObject

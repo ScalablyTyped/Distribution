@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__list
 
-Typings are for version 2.4.3
+Typings are for version 5.1.3
 
 ## Library description:
 This package is used to create lists with the material design specs.
@@ -10,10 +10,10 @@ This package is used to create lists with the material design specs.
 | ------------------ | :-------------: |
 | Full name          | @react-md/list |
 | Keywords           | accessibility, a11y, react-md, material design, react, list, list item, component, components |
-| # releases         | 41 |
-| # dependents       | 6 |
-| # downloads        | 23120 |
-| # stars            | 0 |
+| # releases         | 45 |
+| # dependents       | 0.0 |
+| # downloads        | 8384.666666666666 |
+| # stars            | 2313.0 |
 
 ## Links
 - [Homepage](https://react-md.dev/packages/list/demos)

@@ -6,51 +6,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(input: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def apply(input: String, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def apply(input: js.Array[String | Double]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def apply(input: js.Array[String | Double], options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  /**
-  Fabulously kill processes. Cross-platform.
-  @param input - One or more process IDs/names/ports to kill. To kill a port, prefix it with a colon. For example: `:8080`.
-  @example
-  ```
-  import fkill = require('fkill');
-  (async () => {
-  	await fkill(1337);
-  	console.log('Killed process');
-  })();
-  fkill('Safari');
-  fkill(':8080');
-  fkill([1337, 'Safari', ':8080']);
-  ```
-  */
-  inline def apply(input: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def apply(input: Double, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  
   @JSImport("fkill", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(input: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(input: String, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def default(input: js.Array[String | Double]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(input: js.Array[String | Double], options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def default(input: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(input: Double, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   trait Options extends StObject {
     
     /**
-    		Force kill the process.
-    		@default false
-    		*/
+    	Force kill the processes.
+    	@default false
+    	*/
     val force: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Ignore capitalization when killing a process.
-    		Note that the case is always ignored on Windows.
-    		@default false
-    		*/
+    	Force kill processes that did not exit within the given number of milliseconds.
+    	@default undefined
+    	*/
+    val forceAfterTimeout: js.UndefOr[Double] = js.undefined
+    
+    /**
+    	Ignore capitalization when killing a process.
+    	Note that the case is always ignored on Windows.
+    	@default false
+    	*/
     val ignoreCase: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Kill all child processes along with the parent process. _(Windows only)_
-    		@default true
-    		*/
+    	Suppress all error messages. For example: `Process doesn't exist`.
+    	@default false
+    	*/
+    val silent: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+    	Kill all child processes along with the parent process. _(Windows only)_
+    	@default true
+    	*/
     val tree: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
@@ -64,11 +61,19 @@ object mod {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
+      inline def setForceAfterTimeout(value: Double): Self = StObject.set(x, "forceAfterTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setForceAfterTimeoutUndefined: Self = StObject.set(x, "forceAfterTimeout", js.undefined)
+      
       inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
       
       inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
       
       inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+      
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
       
       inline def setTree(value: Boolean): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
       

@@ -45,19 +45,19 @@ object StatusAdvertisement {
     
     inline def setBroadcastsUndefined: Self = StObject.set(x, "broadcasts", js.undefined)
     
-    inline def setBroadcastsVarargs(value: String*): Self = StObject.set(x, "broadcasts", js.Array(value :_*))
+    inline def setBroadcastsVarargs(value: String*): Self = StObject.set(x, "broadcasts", js.Array(value*))
     
     inline def setRespondsTo(value: js.Array[String]): Self = StObject.set(x, "respondsTo", value.asInstanceOf[js.Any])
     
     inline def setRespondsToUndefined: Self = StObject.set(x, "respondsTo", js.undefined)
     
-    inline def setRespondsToVarargs(value: String*): Self = StObject.set(x, "respondsTo", js.Array(value :_*))
+    inline def setRespondsToVarargs(value: String*): Self = StObject.set(x, "respondsTo", js.Array(value*))
     
     inline def setSubscribesTo(value: js.Array[String]): Self = StObject.set(x, "subscribesTo", value.asInstanceOf[js.Any])
     
     inline def setSubscribesToUndefined: Self = StObject.set(x, "subscribesTo", js.undefined)
     
-    inline def setSubscribesToVarargs(value: String*): Self = StObject.set(x, "subscribesTo", js.Array(value :_*))
+    inline def setSubscribesToVarargs(value: String*): Self = StObject.set(x, "subscribesTo", js.Array(value*))
     
     inline def setSubset(value: String): Self = StObject.set(x, "subset", value.asInstanceOf[js.Any])
     

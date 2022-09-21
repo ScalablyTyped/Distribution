@@ -9,10 +9,10 @@ object gatewayMod {
   
   @JSImport("react-gateway/Gateway", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[GatewayProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[GatewayProps, js.Object, Any]
   
-  type Gateway = Component[GatewayProps, js.Object, js.Any]
+  type Gateway = Component[GatewayProps, js.Object, Any]
   
   trait GatewayProps extends StObject {
     

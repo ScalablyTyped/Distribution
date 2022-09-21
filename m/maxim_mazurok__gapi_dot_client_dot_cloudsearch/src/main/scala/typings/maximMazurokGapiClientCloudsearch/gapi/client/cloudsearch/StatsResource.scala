@@ -1,6 +1,7 @@
 package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientCloudsearch.anon.EndDateday
 import typings.maximMazurokGapiClientCloudsearch.anon.FromDatemonth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,6 +20,10 @@ trait StatsResource extends StObject {
   /** Get the query statistics for customer. **Note:** This API requires a standard end user account to execute. */
   def getQuery(): Request[GetCustomerQueryStatsResponse] = js.native
   def getQuery(request: FromDatemonth): Request[GetCustomerQueryStatsResponse] = js.native
+  
+  /** Get search application stats for customer. **Note:** This API requires a standard end user account to execute. */
+  def getSearchapplication(): Request[GetCustomerSearchApplicationStatsResponse] = js.native
+  def getSearchapplication(request: EndDateday): Request[GetCustomerSearchApplicationStatsResponse] = js.native
   
   /** Get the # of search sessions, % of successful sessions with a click query statistics for customer. **Note:** This API requires a standard end user account to execute. */
   def getSession(): Request[GetCustomerSessionStatsResponse] = js.native

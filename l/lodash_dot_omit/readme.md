@@ -10,10 +10,10 @@ The lodash method `_.omit` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.omit |
 | Keywords           | lodash-modularized, omit |
-| # releases         | 0 |
-| # dependents       | 753 |
-| # downloads        | 30883494 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6496894.333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -1,5 +1,7 @@
 package typings.activexLibreoffice.com_.sun.star.util
 
+import typings.activexLibreoffice.LibreOffice.SeqEquiv
+import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,45 +14,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see ChangesEvent
   * @see ElementChange
   */
-type ChangesSet = typings.activexLibreoffice.LibreOffice.SeqEquiv[typings.activexLibreoffice.com_.sun.star.util.ElementChange]
+type ChangesSet = SeqEquiv[ElementChange]
 
 /**
   * this exception can be thrown to prevent the environment of any object from closing
   * @see XCloseListener
   */
-type CloseVetoException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+type CloseVetoException = Exception
 
 /**
   * describes an RGB color value with an optional alpha channel.
   *
   * The byte order is from high to low:  1. alpha channel 2. red 3. green 4. blue
   */
-type Color = scala.Double
+type Color = Double
 
 /** is thrown when an object's state does not allow to call requested functionality. */
-type InvalidStateException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+type InvalidStateException = Exception
 
 /**
   * Manage cancelable jobs
   * @see XJobManager
   */
-type JobManager = typings.activexLibreoffice.com_.sun.star.util.XJobManager
+type JobManager = XJobManager
 
 /** This type is used for a language identifier number. */
-type Language = scala.Double
+type Language = Double
 
 /** is raised when attempt is made to unlock a lockable component which actually is not locked. */
-type NotLockedException = typings.activexLibreoffice.com_.sun.star.util.InvalidStateException
+type NotLockedException = InvalidStateException
 
 /** indicates that a non-numeric string is to be converted to a number. */
-type NotNumericException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+type NotNumericException = Exception
 
 /**
   * represents an object which can format numbers and strings.
   *
   * A {@link NumberFormatter} , if available, can be created by the global service manager.
   */
-type NumberFormatter = typings.activexLibreoffice.com_.sun.star.util.XNumberFormatter2
+type NumberFormatter = XNumberFormatter2
 
 /**
   * encapsulates access to the current office installation directory and office user data directory, provides functionality to create URLs containing
@@ -62,14 +64,14 @@ type NumberFormatter = typings.activexLibreoffice.com_.sun.star.util.XNumberForm
   * @deprecated Deprecatedrather use the singleton theOfficeInstallationDirectories
   * @since OOo 2.0
   */
-type OfficeInstallationDirectories = typings.activexLibreoffice.com_.sun.star.util.XOfficeInstallationDirectories
+type OfficeInstallationDirectories = XOfficeInstallationDirectories
 
 /**
   * A legacy (single-instance) service-variant of {@link thePathSettings} singleton.
   * @deprecated DeprecatedUse thePathSettings singleton instead.
   * @since OOo 1.1.2
   */
-type PathSettings = typings.activexLibreoffice.com_.sun.star.util.XPathSettings
+type PathSettings = XPathSettings
 
 /**
   * A service to support the substitution and resubstitution of path variables.
@@ -106,7 +108,7 @@ type PathSettings = typings.activexLibreoffice.com_.sun.star.util.XPathSettings
   * service is not designed to be a text substiution but shall provide (a) valid substituted path(s).
   * @since OOo 1.1.2
   */
-type PathSubstitution = typings.activexLibreoffice.com_.sun.star.util.XStringSubstitution
+type PathSubstitution = XStringSubstitution
 
 /**
   * gives access to the properties of a sort descriptor. The properties are given in a sequence of PropertyValue.
@@ -117,31 +119,31 @@ type PathSubstitution = typings.activexLibreoffice.com_.sun.star.util.XStringSub
   * @see com.sun.star.text.TextSortDescriptor2
   * @since OOo 1.1.2
   */
-type SortDescriptor2 = js.Any
+type SortDescriptor2 = Any
 
 /**
   * provides an interface for sorting.
   * @deprecated Deprecated
   * @since OOo 1.1.2
   */
-type Sortable = typings.activexLibreoffice.com_.sun.star.util.XSortable
+type Sortable = XSortable
 
 /**
   * search a string with a defined algorithm in another string.
   *
   * It is possible to search forward or backward in the string.
   */
-type TextSearch = typings.activexLibreoffice.com_.sun.star.util.XTextSearch
+type TextSearch = XTextSearch
 
 /**
   * search a string with a defined algorithm in another string.
   *
   * It is possible to search forward or backward in the string.
   */
-type TextSearch2 = typings.activexLibreoffice.com_.sun.star.util.XTextSearch2
+type TextSearch2 = XTextSearch2
 
 /** helps to split up a string containing a {@link URL} into its structural parts and assembles the parts into a single string. */
-type URLTransformer = typings.activexLibreoffice.com_.sun.star.util.XURLTransformer
+type URLTransformer = XURLTransformer
 
 /**
   * Abbreviate arbitrary URIs.
@@ -149,13 +151,13 @@ type URLTransformer = typings.activexLibreoffice.com_.sun.star.util.XURLTransfor
   * An abbreviation implementation that is specialized to URIs.
   * @see XStringAbbreviation
   */
-type UriAbbreviation = typings.activexLibreoffice.com_.sun.star.util.XStringAbbreviation
+type UriAbbreviation = XStringAbbreviation
 
 /**
   * thrown to indicate a general veto.
   * @since OOo 1.1.2
   */
-type VetoException = typings.activexLibreoffice.com_.sun.star.uno.Exception
+type VetoException = Exception
 
 /**
   * A service that has to deal with macrofied strings will preprocess those strings using the macro expander singleton. The macro expander singleton is
@@ -165,7 +167,7 @@ type VetoException = typings.activexLibreoffice.com_.sun.star.uno.Exception
   * expander singleton to expand those macros. This is a flexible way preprocessing loader urls.
   * @see MacroExpander
   */
-type theMacroExpander = typings.activexLibreoffice.com_.sun.star.util.XMacroExpander
+type theMacroExpander = XMacroExpander
 
 /**
   * encapsulates access to the current office installation directory and office user data directory, provides functionality to create URLs containing
@@ -175,7 +177,7 @@ type theMacroExpander = typings.activexLibreoffice.com_.sun.star.util.XMacroExpa
   * persistent and re-read later. In many cases, storing the reference directly would destroy the relocatability of an office installation and the
   * possibility to share one office user data directory among parallel office installations.
   */
-type theOfficeInstallationDirectories = typings.activexLibreoffice.com_.sun.star.util.XOfficeInstallationDirectories
+type theOfficeInstallationDirectories = XOfficeInstallationDirectories
 
 /**
   * Supports read/write access and listener for the paths properties that the Office uses.
@@ -187,4 +189,4 @@ type theOfficeInstallationDirectories = typings.activexLibreoffice.com_.sun.star
   * Prior to LibreOffice 4.3, this singleton was only available as a (single-instance) {@link PathSettings} service.
   * @since LibreOffice 4.3
   */
-type thePathSettings = typings.activexLibreoffice.com_.sun.star.util.XPathSettings
+type thePathSettings = XPathSettings

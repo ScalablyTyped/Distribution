@@ -12,7 +12,7 @@ object defaultLinkModelMod {
   
   @JSImport("storm-react-diagrams/dist/src/defaults/models/DefaultLinkModel", "DefaultLinkModel")
   @js.native
-  class DefaultLinkModel () extends LinkModel[DefaultLinkModelListener] {
+  open class DefaultLinkModel () extends LinkModel[DefaultLinkModelListener] {
     def this(`type`: String) = this()
     
     def addLabel(label: String): Unit = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-last
 
-Typings are for version 1.0.4
+Typings are for version 1.0.6
 
 ## Library description:
 Returns the last result from an async iterator
@@ -10,13 +10,13 @@ Returns the last result from an async iterator
 | ------------------ | :-------------: |
 | Full name          | it-last |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 19 |
-| # downloads        | 364151 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 320380.6666666667 |
+| # stars            | 200.0 |
 
 ## Links
-- [Homepage](https://github.com/achingbrain/it#readme)
+- [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-last#readme)
 - [Bugs](https://github.com/achingbrain/it/issues)
 - [Repository](https://github.com/achingbrain/it)
 - [Npm](https://www.npmjs.com/package/it-last)

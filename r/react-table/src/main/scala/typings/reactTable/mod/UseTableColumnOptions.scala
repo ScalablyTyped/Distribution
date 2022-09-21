@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UseTableColumnOptions[D /* <: js.Object */] extends StObject {
   
+  var Footer: js.UndefOr[Renderer[FooterProps[D]]] = js.undefined
+  
   var Header: js.UndefOr[Renderer[HeaderProps[D]]] = js.undefined
   
   var id: js.UndefOr[IdType[D]] = js.undefined
@@ -24,6 +26,10 @@ object UseTableColumnOptions {
   }
   
   extension [Self <: UseTableColumnOptions[?], D /* <: js.Object */](x: Self & UseTableColumnOptions[D]) {
+    
+    inline def setFooter(value: Renderer[FooterProps[D]]): Self = StObject.set(x, "Footer", value.asInstanceOf[js.Any])
+    
+    inline def setFooterUndefined: Self = StObject.set(x, "Footer", js.undefined)
     
     inline def setHeader(value: Renderer[HeaderProps[D]]): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     

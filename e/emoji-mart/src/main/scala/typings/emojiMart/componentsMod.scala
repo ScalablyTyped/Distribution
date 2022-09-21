@@ -9,15 +9,15 @@ object componentsMod {
   
   @JSImport("emoji-mart/dist-es/components", "Category")
   @js.native
-  class Category () extends default
+  open class Category () extends default
   
   @JSImport("emoji-mart/dist-es/components", "NimblePicker")
   @js.native
-  class NimblePicker ()
+  open class NimblePicker ()
     extends typings.emojiMart.nimblePickerMod.default
   
   @JSImport("emoji-mart/dist-es/components", "Picker")
   @js.native
-  class Picker ()
+  open class Picker ()
     extends typings.emojiMart.pickerMod.default
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for phone
 
-Typings are for version 2.4.0
+Typings are for version 2.4
 
 ## Library description:
 With a given country and phone number, validate and format the phone number to E.164 standard
@@ -10,10 +10,10 @@ With a given country and phone number, validate and format the phone number to E
 | ------------------ | :-------------: |
 | Full name          | phone |
 | Keywords           | phone, e.164 |
-| # releases         | 37 |
-| # dependents       | 65 |
-| # downloads        | 3058903 |
-| # stars            | 18 |
+| # releases         | 36 |
+| # dependents       | 0.0 |
+| # downloads        | 325459.6666666667 |
+| # stars            | 667.0 |
 
 ## Links
 - [Homepage](https://github.com/aftership/phone#readme)

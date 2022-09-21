@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter-js", "MouseConstraint")
 @js.native
-class MouseConstraint () extends StObject {
+open class MouseConstraint () extends StObject {
   
   /**
     * The `Body` that is currently being moved by the user, or `null` if no body.
@@ -23,7 +23,7 @@ class MouseConstraint () extends StObject {
     * See `body.collisionFilter` for more information.
     *
     * @property collisionFilter
-    * @type object
+    * @type {any}
     */
   var collisionFilter: ICollisionFilter = js.native
   
@@ -48,7 +48,7 @@ class MouseConstraint () extends StObject {
     * A `String` denoting the type of object.
     *
     * @property type
-    * @type string
+    * @type {string}
     * @default "constraint"
     */
   var `type`: String = js.native
@@ -67,7 +67,7 @@ object MouseConstraint {
     * @method create
     * @param {engine} engine
     * @param {} options
-    * @return {MouseConstraint} A new MouseConstraint
+    * @returns {MouseConstraint} A new MouseConstraint
     */
   inline def create(engine: Engine): MouseConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(engine.asInstanceOf[js.Any]).asInstanceOf[MouseConstraint]
   inline def create(engine: Engine, options: IMouseConstraintDefinition): MouseConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(engine.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MouseConstraint]

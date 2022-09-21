@@ -94,10 +94,10 @@ trait OneSignalCordovaPlugin extends StObject {
     *  Retrieve a list of tags that have been set on the user from the
     *  OneSignal server.
     */
-  def getTags(callback: js.Function1[/* tags */ js.Any, Unit]): Unit = js.native
+  def getTags(callback: js.Function1[/* tags */ Any, Unit]): Unit = js.native
   
   /** Gets a trigger value for a provided trigger key. */
-  def getTriggerValueForKey(key: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
+  def getTriggerValueForKey(key: String, callback: js.Function1[/* value */ Any, Unit]): Unit = js.native
   
   /**
     *  Sets a In-App Message clicked handler. The instance will be called
@@ -109,10 +109,7 @@ trait OneSignalCordovaPlugin extends StObject {
     *  If your app implements logout functionality, you can call logoutEmail
     *  to dissociate the email from the device:
     */
-  def logoutEmail(
-    onSuccess: js.Function1[/* success */ js.Any, Unit],
-    onFailure: js.Function1[/* error */ js.Any, Unit]
-  ): Unit = js.native
+  def logoutEmail(onSuccess: js.Function1[/* success */ Any, Unit], onFailure: js.Function1[/* error */ Any, Unit]): Unit = js.native
   
   /**
     *  Allows you to temporarily pause all In-App Messages. You may want to
@@ -127,8 +124,8 @@ trait OneSignalCordovaPlugin extends StObject {
     */
   def postNotification(
     notificationObj: PartialOSNotification,
-    onSuccess: js.Function1[/* json */ js.Any, Unit],
-    onFailure: js.Function1[/* json */ js.Any, Unit]
+    onSuccess: js.Function1[/* json */ Any, Unit],
+    onFailure: js.Function1[/* json */ Any, Unit]
   ): Unit = js.native
   
   /**
@@ -196,8 +193,8 @@ trait OneSignalCordovaPlugin extends StObject {
   def setEmail(
     email: String,
     emailAuthToken: String,
-    onSuccess: js.Function1[/* success */ js.Any, Unit],
-    onFailure: js.Function1[/* error */ js.Any, Unit]
+    onSuccess: js.Function1[/* success */ Any, Unit],
+    onFailure: js.Function1[/* error */ Any, Unit]
   ): Unit = js.native
   
   /**
@@ -213,7 +210,7 @@ trait OneSignalCordovaPlugin extends StObject {
   
   def setInFocusDisplaying(displayType: OSDisplayType): Unit = js.native
   
-  def setLocationShared(shared: js.Any): Unit = js.native
+  def setLocationShared(shared: Any): Unit = js.native
   
   /**
     *  Enable logging to help debug if you run into an issue setting up

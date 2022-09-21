@@ -31,7 +31,7 @@ object expandable {
     
     /**
       * Toggle a specific row
-      * @param {TEntity} rowEntity The data entity for the row you want to expand
+      * @param rowEntity The data entity for the row you want to expand
       */
     def toggleRowExpansion(rowEntity: TEntity): Unit
   }

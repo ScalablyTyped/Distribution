@@ -3,10 +3,10 @@ package typings.semanticUiReact
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.feedDateMod.FeedDateProps
 import typings.semanticUiReact.feedExtraMod.FeedExtraProps
 import typings.semanticUiReact.feedMetaMod.FeedMetaProps
@@ -21,12 +21,12 @@ object feedContentMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/views/Feed/FeedContent", JSImport.Default)
   @js.native
-  val default: StatelessComponent[FeedContentProps] = js.native
+  val default: FC[FeedContentProps] = js.native
   
   trait FeedContentProps
     extends StObject
        with StrictFeedContentProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object FeedContentProps {
     
     inline def apply(): FeedContentProps = {
@@ -38,7 +38,7 @@ object feedContentMod extends Shortcut {
   trait StrictFeedContentProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -73,7 +73,7 @@ object feedContentMod extends Shortcut {
     
     extension [Self <: StrictFeedContentProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -131,8 +131,8 @@ object feedContentMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[FeedContentProps]
+  type _To = FC[FeedContentProps]
   
   /* This means you don't have to write `default`, but can instead just say `feedContentMod.foo` */
-  override def _to: StatelessComponent[FeedContentProps] = default
+  override def _to: FC[FeedContentProps] = default
 }

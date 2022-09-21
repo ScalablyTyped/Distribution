@@ -12,6 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see [Dynamic Components](guide/dynamic-component-loader)
   *
   * @publicApi
+  *
+  * @deprecated Angular no longer requires Component factories. Please use other APIs where
+  *     Component class can be used directly.
   */
 @JSImport("@angular/core", "\u0275ComponentFactory")
 @js.native

@@ -12,7 +12,7 @@ trait OMathScrSup extends StObject {
   
   val E: OMath
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Sup: OMath
   
@@ -25,7 +25,7 @@ object OMathScrSup {
     Application: Application,
     Creator: Double,
     E: OMath,
-    Parent: js.Any,
+    Parent: Any,
     Sup: OMath,
     WordDotOMathScrSup_typekey: OMathScrSup
   ): OMathScrSup = {
@@ -42,7 +42,7 @@ object OMathScrSup {
     
     inline def setE(value: OMath): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSup(value: OMath): Self = StObject.set(x, "Sup", value.asInstanceOf[js.Any])
     

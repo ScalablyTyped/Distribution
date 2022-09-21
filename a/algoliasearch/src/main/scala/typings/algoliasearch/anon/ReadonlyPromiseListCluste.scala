@@ -17,9 +17,9 @@ trait ReadonlyPromiseListCluste extends StObject {
 object ReadonlyPromiseListCluste {
   
   inline def apply(
-    `catch`: () => js.Promise[ListClustersResponse | js.Any],
+    `catch`: () => js.Promise[ListClustersResponse | Any],
     `finally`: () => js.Promise[ListClustersResponse],
-    `then`: () => js.Promise[js.Any | js.Any]
+    `then`: () => js.Promise[Any | Any]
   ): ReadonlyPromiseListCluste = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("catch")(js.Any.fromFunction0(`catch`))
@@ -30,10 +30,10 @@ object ReadonlyPromiseListCluste {
   
   extension [Self <: ReadonlyPromiseListCluste](x: Self) {
     
-    inline def setCatch(value: () => js.Promise[ListClustersResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[ListClustersResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
     inline def setFinally(value: () => js.Promise[ListClustersResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[Any | Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

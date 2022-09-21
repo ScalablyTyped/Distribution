@@ -10,8 +10,8 @@ object buttonButtonMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Button/Button", "Button")
   @js.native
-  class Button protected ()
-    extends Component[IButtonProps, js.Object, js.Any] {
+  open class Button protected ()
+    extends Component[IButtonProps, js.Object, Any] {
     def this(props: IButtonProps) = this()
   }
 }

@@ -10,10 +10,10 @@ object languageMod {
   
   @JSImport("material-ui/svg-icons/action/language", JSImport.Default)
   @js.native
-  class default () extends ActionLanguage
+  open class default () extends ActionLanguage
   
   @JSImport("material-ui/svg-icons/action/language", "ActionLanguage")
   @js.native
-  class ActionLanguage ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionLanguage ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

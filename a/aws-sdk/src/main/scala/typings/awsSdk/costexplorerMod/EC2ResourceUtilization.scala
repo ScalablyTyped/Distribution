@@ -7,24 +7,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EC2ResourceUtilization extends StObject {
   
   /**
-    *  The EBS field that contains a list of EBS metrics associated with the current instance. 
+    * The field that contains a list of disk (local storage) metrics that are associated with the current instance. 
+    */
+  var DiskResourceUtilization: js.UndefOr[typings.awsSdk.costexplorerMod.DiskResourceUtilization] = js.undefined
+  
+  /**
+    * The EBS field that contains a list of EBS metrics that are associated with the current instance. 
     */
   var EBSResourceUtilization: js.UndefOr[typings.awsSdk.costexplorerMod.EBSResourceUtilization] = js.undefined
   
   /**
-    *  Maximum observed or expected CPU utilization of the instance.
+    * The maximum observed or expected CPU utilization of the instance.
     */
   var MaxCpuUtilizationPercentage: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  Maximum observed or expected memory utilization of the instance.
+    * The maximum observed or expected memory utilization of the instance.
     */
   var MaxMemoryUtilizationPercentage: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  Maximum observed or expected storage utilization of the instance (does not measure EBS storage).
+    * The maximum observed or expected storage utilization of the instance. This doesn't include EBS storage.
     */
   var MaxStorageUtilizationPercentage: js.UndefOr[GenericString] = js.undefined
+  
+  /**
+    * The network field that contains a list of network metrics that are associated with the current instance. 
+    */
+  var NetworkResourceUtilization: js.UndefOr[typings.awsSdk.costexplorerMod.NetworkResourceUtilization] = js.undefined
 }
 object EC2ResourceUtilization {
   
@@ -34,6 +44,10 @@ object EC2ResourceUtilization {
   }
   
   extension [Self <: EC2ResourceUtilization](x: Self) {
+    
+    inline def setDiskResourceUtilization(value: DiskResourceUtilization): Self = StObject.set(x, "DiskResourceUtilization", value.asInstanceOf[js.Any])
+    
+    inline def setDiskResourceUtilizationUndefined: Self = StObject.set(x, "DiskResourceUtilization", js.undefined)
     
     inline def setEBSResourceUtilization(value: EBSResourceUtilization): Self = StObject.set(x, "EBSResourceUtilization", value.asInstanceOf[js.Any])
     
@@ -50,5 +64,9 @@ object EC2ResourceUtilization {
     inline def setMaxStorageUtilizationPercentage(value: GenericString): Self = StObject.set(x, "MaxStorageUtilizationPercentage", value.asInstanceOf[js.Any])
     
     inline def setMaxStorageUtilizationPercentageUndefined: Self = StObject.set(x, "MaxStorageUtilizationPercentage", js.undefined)
+    
+    inline def setNetworkResourceUtilization(value: NetworkResourceUtilization): Self = StObject.set(x, "NetworkResourceUtilization", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkResourceUtilizationUndefined: Self = StObject.set(x, "NetworkResourceUtilization", js.undefined)
   }
 }

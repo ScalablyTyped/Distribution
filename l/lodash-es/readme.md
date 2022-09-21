@@ -10,10 +10,10 @@ Lodash exported as ES modules.
 | ------------------ | :-------------: |
 | Full name          | lodash-es |
 | Keywords           | es6, modules, stdlib, util |
-| # releases         | 5 |
-| # dependents       | 1846 |
-| # downloads        | 170150972 |
-| # stars            | 18 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.6333177E7 |
+| # stars            | 54022.0 |
 
 ## Links
 - [Homepage](https://lodash.com/custom-builds)

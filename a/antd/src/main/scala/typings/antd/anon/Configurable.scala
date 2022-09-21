@@ -8,11 +8,11 @@ trait Configurable extends StObject {
   
   var configurable: Boolean
   
-  def get(): js.Any
+  def get(): Any
 }
 object Configurable {
   
-  inline def apply(configurable: Boolean, get: () => js.Any): Configurable = {
+  inline def apply(configurable: Boolean, get: () => Any): Configurable = {
     val __obj = js.Dynamic.literal(configurable = configurable.asInstanceOf[js.Any], get = js.Any.fromFunction0(get))
     __obj.asInstanceOf[Configurable]
   }
@@ -21,6 +21,6 @@ object Configurable {
     
     inline def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
   }
 }

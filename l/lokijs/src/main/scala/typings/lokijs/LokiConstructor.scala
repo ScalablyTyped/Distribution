@@ -8,6 +8,8 @@ object LokiConstructor {
   
   type Collection[E /* <: js.Object */] = _Collection[E]
   
+  type DynamicView[E /* <: js.Object */] = _DynamicView[E]
+  
   type KeyValueStore = _KeyValueStore
   
   type LokiFsAdapter = _LokiFsAdapter

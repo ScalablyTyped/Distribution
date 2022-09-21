@@ -53,7 +53,7 @@ object ClusterStateParams {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
@@ -67,6 +67,6 @@ object ClusterStateParams {
     
     inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value :_*))
+    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value*))
   }
 }

@@ -10,6 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @author  Cyril Schumacher
   * @version 1.0
   */
-type Dropotron = js.Function1[
-/* config */ js.UndefOr[typings.jqueryDropotron.DropotronConfiguration], 
-scala.Unit]
+type Dropotron = js.Function1[/* config */ js.UndefOr[DropotronConfiguration], Unit]

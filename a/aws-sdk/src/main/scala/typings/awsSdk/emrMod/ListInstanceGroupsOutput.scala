@@ -29,7 +29,7 @@ object ListInstanceGroupsOutput {
     
     inline def setInstanceGroupsUndefined: Self = StObject.set(x, "InstanceGroups", js.undefined)
     
-    inline def setInstanceGroupsVarargs(value: InstanceGroup*): Self = StObject.set(x, "InstanceGroups", js.Array(value :_*))
+    inline def setInstanceGroupsVarargs(value: InstanceGroup*): Self = StObject.set(x, "InstanceGroups", js.Array(value*))
     
     inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

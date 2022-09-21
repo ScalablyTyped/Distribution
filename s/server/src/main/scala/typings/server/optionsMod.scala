@@ -2,18 +2,17 @@ package typings.server
 
 import typings.csurf.mod.CookieOptions
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressSession.mod.SessionOptions
 import typings.formidable.mod.Fields
 import typings.formidable.mod.Files
 import typings.formidable.mod.Part
 import typings.node.httpMod.IncomingMessage
 import typings.server.anon.Body
-import typings.server.anon.Csurf
+import typings.server.anon.Csrf
 import typings.server.anon.Level
 import typings.server.commonMod.LogLevel
 import typings.server.serverBooleans.`false`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,16 @@ object optionsMod {
     var sessionKey: js.UndefOr[String] = js.undefined
     
     var value: js.UndefOr[
-        js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]
+        js.Function1[
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          String
+        ]
       ] = js.undefined
   }
   object CsurfOptions {
@@ -49,13 +57,21 @@ object optionsMod {
       
       inline def setIgnoreMethodsUndefined: Self = StObject.set(x, "ignoreMethods", js.undefined)
       
-      inline def setIgnoreMethodsVarargs(value: String*): Self = StObject.set(x, "ignoreMethods", js.Array(value :_*))
+      inline def setIgnoreMethodsVarargs(value: String*): Self = StObject.set(x, "ignoreMethods", js.Array(value*))
       
       inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
       
       inline def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
       
-      inline def setValue(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+      inline def setValue(
+        value: /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ] => String
+      ): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -87,7 +103,7 @@ object optionsMod {
     def parse(req: IncomingMessage): Unit = js.native
     def parse(
       req: IncomingMessage,
-      callback: js.Function3[/* err */ js.Any, /* fields */ Fields, /* files */ Files, js.Any]
+      callback: js.Function3[/* err */ Any, /* fields */ Fields, /* files */ Files, Any]
     ): Unit = js.native
     
     var `type`: String = js.native
@@ -114,7 +130,7 @@ object optionsMod {
     var secret: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[
-        `false` | ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify helmet.IHelmetConfiguration */ js.Any) & Csurf)
+        `false` | ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify helmet.IHelmetConfiguration */ Any) & Csrf)
       ] = js.undefined
     
     var session: js.UndefOr[SessionOptions] = js.undefined
@@ -163,7 +179,7 @@ object optionsMod {
       inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
       
       inline def setSecurity(
-        value: `false` | ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify helmet.IHelmetConfiguration */ js.Any) & Csurf)
+        value: `false` | ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify helmet.IHelmetConfiguration */ Any) & Csrf)
       ): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)

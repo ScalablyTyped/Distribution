@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsForResourceRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the resource whose tags you want to retrieve. 
+    * The Amazon Resource Name (ARN) of the resource whose tags you want to retrieve.
     */
   var resourceArn: ImageBuilderArn
 }

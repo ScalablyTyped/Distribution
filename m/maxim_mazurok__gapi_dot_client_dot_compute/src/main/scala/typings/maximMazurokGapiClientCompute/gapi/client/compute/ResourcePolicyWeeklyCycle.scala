@@ -22,6 +22,6 @@ object ResourcePolicyWeeklyCycle {
     
     inline def setDayOfWeeksUndefined: Self = StObject.set(x, "dayOfWeeks", js.undefined)
     
-    inline def setDayOfWeeksVarargs(value: ResourcePolicyWeeklyCycleDayOfWeek*): Self = StObject.set(x, "dayOfWeeks", js.Array(value :_*))
+    inline def setDayOfWeeksVarargs(value: ResourcePolicyWeeklyCycleDayOfWeek*): Self = StObject.set(x, "dayOfWeeks", js.Array(value*))
   }
 }

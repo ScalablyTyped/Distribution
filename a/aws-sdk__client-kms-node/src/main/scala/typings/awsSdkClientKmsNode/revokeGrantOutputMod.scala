@@ -8,5 +8,5 @@ object revokeGrantOutputMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/RevokeGrantOutput", "RevokeGrantOutput")
   @js.native
-  val RevokeGrantOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val RevokeGrantOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

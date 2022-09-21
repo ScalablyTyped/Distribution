@@ -3,6 +3,7 @@ package typings.hapiYar
 import typings.hapiHapi.mod.Request
 import typings.hapiYar.hapiYarBooleans.`false`
 import typings.hapiYar.hapiYarStrings.Lax
+import typings.hapiYar.hapiYarStrings.None
 import typings.hapiYar.hapiYarStrings.Strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -51,7 +52,7 @@ object anon {
       * enables the same-site cookie parameter.
       * Default to 'Lax'.
       */
-    var isSameSite: js.UndefOr[Lax | Strict | `false`] = js.undefined
+    var isSameSite: js.UndefOr[Lax | Strict | None | `false`] = js.undefined
     
     /**
       * determines whether or not to transfer using TLS/SSL.
@@ -102,7 +103,7 @@ object anon {
       
       inline def setIsHttpOnlyUndefined: Self = StObject.set(x, "isHttpOnly", js.undefined)
       
-      inline def setIsSameSite(value: Lax | Strict | `false`): Self = StObject.set(x, "isSameSite", value.asInstanceOf[js.Any])
+      inline def setIsSameSite(value: Lax | Strict | None | `false`): Self = StObject.set(x, "isSameSite", value.asInstanceOf[js.Any])
       
       inline def setIsSameSiteUndefined: Self = StObject.set(x, "isSameSite", js.undefined)
       

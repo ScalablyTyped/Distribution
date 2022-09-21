@@ -1,7 +1,7 @@
 
 # Scala.js typings for murmurhash
 
-Typings are for version 0.0
+Typings are for version 2.0.1
 
 ## Library description:
 A Node.js module for the optimized JavaScript implementation of the MurmurHash algorithms.
@@ -11,9 +11,9 @@ A Node.js module for the optimized JavaScript implementation of the MurmurHash a
 | Full name          | murmurhash |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 87 |
-| # downloads        | 6548787 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2319543.6666666665 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/perezd/node-murmurhash#readme)
@@ -24,7 +24,7 @@ A Node.js module for the optimized JavaScript implementation of the MurmurHash a
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

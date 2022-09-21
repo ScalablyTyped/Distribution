@@ -14,6 +14,8 @@ abstract class EffectLayer protected ()
     * @param name The name of the layer
     * @param scene The scene to use the layer in
     */
+  def this(/** The Friendly of the effect in the scene */
+  name: String) = this()
   def this(
     /** The Friendly of the effect in the scene */
   name: String,
@@ -34,8 +36,11 @@ object EffectLayer {
     * @param rootUrl defines the root URL containing the effect layer information
     * @returns a parsed effect Layer
     */
-  inline def Parse(parsedEffectLayer: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.EffectLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedEffectLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.EffectLayer]
+  inline def Parse(parsedEffectLayer: Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.EffectLayer = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedEffectLayer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.EffectLayer]
   
-  /** @hidden */
+  /**
+    * @param _
+    * @hidden
+    */
   inline def _SceneComponentInitialization(scene: typings.babylonjs.BABYLON.Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

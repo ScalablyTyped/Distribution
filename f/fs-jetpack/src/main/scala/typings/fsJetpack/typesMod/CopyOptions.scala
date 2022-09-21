@@ -29,7 +29,7 @@ object CopyOptions {
     
     inline def setMatchingUndefined: Self = StObject.set(x, "matching", js.undefined)
     
-    inline def setMatchingVarargs(value: String*): Self = StObject.set(x, "matching", js.Array(value :_*))
+    inline def setMatchingVarargs(value: String*): Self = StObject.set(x, "matching", js.Array(value*))
     
     inline def setOverwrite(value: Boolean | OverwriteFunction): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     

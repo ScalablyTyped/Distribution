@@ -25,7 +25,7 @@ object ListMessagesResponse {
     
     inline def setHl7V2MessagesUndefined: Self = StObject.set(x, "hl7V2Messages", js.undefined)
     
-    inline def setHl7V2MessagesVarargs(value: Message*): Self = StObject.set(x, "hl7V2Messages", js.Array(value :_*))
+    inline def setHl7V2MessagesVarargs(value: Message*): Self = StObject.set(x, "hl7V2Messages", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

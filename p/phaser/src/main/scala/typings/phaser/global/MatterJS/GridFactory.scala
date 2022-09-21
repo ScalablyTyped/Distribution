@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MatterJS.GridFactory")
 @js.native
-class GridFactory ()
+open class GridFactory ()
   extends StObject
      with typings.phaser.MatterJS.GridFactory

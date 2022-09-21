@@ -3,6 +3,8 @@ package typings.babylonjs
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.anon.DisableAnimation
 import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.observableMod.Observable
+import typings.babylonjs.pickingInfoMod.PickingInfo
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import typings.babylonjs.webXRAbstractFeatureMod.WebXRAbstractFeature
@@ -17,55 +19,61 @@ object webXRControllerTeleportationMod {
   
   @JSImport("babylonjs/XR/features/WebXRControllerTeleportation", "WebXRMotionControllerTeleportation")
   @js.native
-  class WebXRMotionControllerTeleportation protected () extends WebXRAbstractFeature {
+  open class WebXRMotionControllerTeleportation protected () extends WebXRAbstractFeature {
     /**
-      * constructs a new anchor system
+      * constructs a new teleportation system
       * @param _xrSessionManager an instance of WebXRSessionManager
       * @param _options configuration object for this feature
       */
     def this(_xrSessionManager: WebXRSessionManager, _options: IWebXRTeleportationOptions) = this()
     
-    /* private */ var _attachController: js.Any = js.native
+    /* private */ var _attachController: Any = js.native
     
-    /* private */ var _controllers: js.Any = js.native
+    /* private */ var _controllers: Any = js.native
     
-    /* private */ var _createDefaultTargetMesh: js.Any = js.native
+    /* private */ var _createDefaultTargetMesh: Any = js.native
     
-    /* private */ var _currentTeleportationControllerId: js.Any = js.native
+    /* private */ var _currentTeleportationControllerId: Any = js.native
     
-    /* private */ var _detachController: js.Any = js.native
+    /* private */ var _detachController: Any = js.native
     
-    /* private */ var _findClosestSnapPointWithRadius: js.Any = js.native
+    /* private */ var _findClosestSnapPointWithRadius: Any = js.native
     
-    /* private */ var _floorMeshes: js.Any = js.native
+    /* private */ var _floorMeshes: Any = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var _quadraticBezierCurve: js.Any = js.native
+    /* private */ var _quadraticBezierCurve: Any = js.native
     
-    /* private */ var _rotationEnabled: js.Any = js.native
+    /* private */ var _rotationEnabled: Any = js.native
     
-    /* private */ var _selectionFeature: js.Any = js.native
+    /* private */ var _selectionFeature: Any = js.native
     
-    /* private */ var _setTargetMeshPosition: js.Any = js.native
+    /* private */ var _setTargetMeshPosition: Any = js.native
     
-    /* private */ var _setTargetMeshVisibility: js.Any = js.native
+    /* private */ var _setTargetMeshVisibility: Any = js.native
     
-    /* private */ var _showParabolicPath: js.Any = js.native
+    /* private */ var _showParabolicPath: Any = js.native
     
-    /* private */ var _snapToPositions: js.Any = js.native
+    /* private */ var _snapToPositions: Any = js.native
     
-    /* private */ var _snappedToPoint: js.Any = js.native
+    /* private */ var _snappedToPoint: Any = js.native
     
-    /* private */ var _teleportForward: js.Any = js.native
+    /* private */ var _teleportForward: Any = js.native
     
-    /* private */ var _teleportationRingMaterial: js.Any = js.native
+    /* private */ var _teleportationRingMaterial: Any = js.native
     
-    /* private */ var _tmpQuaternion: js.Any = js.native
+    /* private */ var _tmpQuaternion: Any = js.native
     
-    /* private */ var _tmpRay: js.Any = js.native
+    /* private */ var _tmpRay: Any = js.native
     
-    /* private */ var _tmpVector: js.Any = js.native
+    /* private */ var _tmpVector: Any = js.native
+    
+    /**
+      * Add a mesh to the list of meshes blocking the teleportation ray
+      * @param mesh The mesh to add to the teleportation-blocking meshes
+      */
+    def addBlockerMesh(mesh: AbstractMesh): Unit = js.native
     
     /**
       * Add a new mesh to the floor meshes array
@@ -90,6 +98,12 @@ object webXRControllerTeleportationMod {
     var backwardsTeleportationDistance: Double = js.native
     
     /**
+      * This observable will notify when the target mesh position was updated.
+      * The picking info it provides contains the point to which the target mesh will move ()
+      */
+    var onTargetMeshPositionUpdatedObservable: Observable[PickingInfo] = js.native
+    
+    /**
       * The distance from the user to the inspection point in the direction of the controller
       * A higher number will allow the user to move further
       * defaults to 5 (meters, in xr units)
@@ -102,6 +116,12 @@ object webXRControllerTeleportationMod {
       * Very helpful when moving between floors / different heights
       */
     var parabolicRayEnabled: Boolean = js.native
+    
+    /**
+      * Remove a mesh from the blocker meshes array
+      * @param mesh the mesh to remove
+      */
+    def removeBlockerMesh(mesh: AbstractMesh): Unit = js.native
     
     /**
       * Remove a mesh from the floor meshes array
@@ -133,7 +153,7 @@ object webXRControllerTeleportationMod {
       */
     def rotationEnabled: Boolean = js.native
     /**
-      * Sets wether rotation is enabled or not
+      * Sets whether rotation is enabled or not
       * @param enabled is rotation enabled when teleportation is shown
       */
     def rotationEnabled_=(enabled: Boolean): Unit = js.native
@@ -145,6 +165,12 @@ object webXRControllerTeleportationMod {
       * @param selectionFeature the feature to disable when forward movement is enabled
       */
     def setSelectionFeature(selectionFeature: Nullable[IWebXRFeature]): Unit = js.native
+    
+    /**
+      * Skip the next teleportation. This can be controlled by the user to prevent the user from teleportation
+      * to sections that are not yet "unlocked", but should still show the teleportation mesh.
+      */
+    var skipNextTeleportation: Boolean = js.native
     
     /**
       * Get the snapPointsOnly flag
@@ -161,6 +187,11 @@ object webXRControllerTeleportationMod {
       * Should it be enabled or should the parabolic line be the only one.
       */
     var straightRayEnabled: Boolean = js.native
+    
+    /**
+      * Is teleportation enabled. Can be used to allow rotation only.
+      */
+    var teleportationEnabled: Boolean = js.native
     
     /**
       * Exposes the currently set teleportation target mesh.
@@ -215,7 +246,9 @@ object webXRControllerTeleportationMod {
     /**
       * If provided, this function will be used to generate the ray mesh instead of the lines mesh being used per default
       */
-    var generateRayPathMesh: js.UndefOr[js.Function1[/* points */ js.Array[Vector3], AbstractMesh]] = js.undefined
+    var generateRayPathMesh: js.UndefOr[
+        js.Function2[/* points */ js.Array[Vector3], /* pickingInfo */ PickingInfo, AbstractMesh]
+      ] = js.undefined
     
     /**
       * Meshes that the teleportation ray cannot go through
@@ -294,13 +327,13 @@ object webXRControllerTeleportationMod {
       
       inline def setFloorMeshesUndefined: Self = StObject.set(x, "floorMeshes", js.undefined)
       
-      inline def setFloorMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "floorMeshes", js.Array(value :_*))
+      inline def setFloorMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "floorMeshes", js.Array(value*))
       
       inline def setForceHandedness(value: XRHandedness): Self = StObject.set(x, "forceHandedness", value.asInstanceOf[js.Any])
       
       inline def setForceHandednessUndefined: Self = StObject.set(x, "forceHandedness", js.undefined)
       
-      inline def setGenerateRayPathMesh(value: /* points */ js.Array[Vector3] => AbstractMesh): Self = StObject.set(x, "generateRayPathMesh", js.Any.fromFunction1(value))
+      inline def setGenerateRayPathMesh(value: (/* points */ js.Array[Vector3], /* pickingInfo */ PickingInfo) => AbstractMesh): Self = StObject.set(x, "generateRayPathMesh", js.Any.fromFunction2(value))
       
       inline def setGenerateRayPathMeshUndefined: Self = StObject.set(x, "generateRayPathMesh", js.undefined)
       
@@ -308,7 +341,7 @@ object webXRControllerTeleportationMod {
       
       inline def setPickBlockerMeshesUndefined: Self = StObject.set(x, "pickBlockerMeshes", js.undefined)
       
-      inline def setPickBlockerMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "pickBlockerMeshes", js.Array(value :_*))
+      inline def setPickBlockerMeshesVarargs(value: AbstractMesh*): Self = StObject.set(x, "pickBlockerMeshes", js.Array(value*))
       
       inline def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
       
@@ -322,7 +355,7 @@ object webXRControllerTeleportationMod {
       
       inline def setSnapPositionsUndefined: Self = StObject.set(x, "snapPositions", js.undefined)
       
-      inline def setSnapPositionsVarargs(value: Vector3*): Self = StObject.set(x, "snapPositions", js.Array(value :_*))
+      inline def setSnapPositionsVarargs(value: Vector3*): Self = StObject.set(x, "snapPositions", js.Array(value*))
       
       inline def setSnapToPositionRadius(value: Double): Self = StObject.set(x, "snapToPositionRadius", value.asInstanceOf[js.Any])
       

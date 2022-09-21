@@ -26,7 +26,7 @@ trait UpdateMask extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Output only. The [resource name](https://cloud.google.com/apis/design/resource_names) of the `Group`. Shall be of the form `groups/{group_id}`. */
+  /** Output only. The [resource name](https://cloud.google.com/apis/design/resource_names) of the `Group`. Shall be of the form `groups/{group}`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -41,7 +41,7 @@ trait UpdateMask extends StObject {
   /** Request body */
   var resource: Group
   
-  /** Required. The fully-qualified names of fields to update. May only contain the following fields: `display_name`, `description`. */
+  /** Required. The names of fields to update. May only contain the following field names: `display_name`, `description`, `labels`. */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

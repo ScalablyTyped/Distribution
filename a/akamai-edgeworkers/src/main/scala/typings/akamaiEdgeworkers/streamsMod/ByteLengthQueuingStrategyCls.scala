@@ -1,7 +1,6 @@
 package typings.akamaiEdgeworkers.streamsMod
 
 import typings.akamaiEdgeworkers.anon.HighWaterMark
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("streams", "ByteLengthQueuingStrategy")
 @js.native
-class ByteLengthQueuingStrategyCls protected ()
+open class ByteLengthQueuingStrategyCls protected ()
   extends StObject
      with ByteLengthQueuingStrategy {
   def this(options: HighWaterMark) = this()
@@ -20,5 +19,5 @@ class ByteLengthQueuingStrategyCls protected ()
   
   /* CompleteClass */
   @JSName("size")
-  override def size_MByteLengthQueuingStrategy(chunk: ArrayBufferView): Double = js.native
+  override def size_MByteLengthQueuingStrategy(chunk: js.typedarray.ArrayBufferView): Double = js.native
 }

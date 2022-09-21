@@ -2,6 +2,7 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import typings.vscodeLanguageserverTypes.mod.Diagnostic
 import typings.vscodeLanguageserverTypes.mod.DocumentUri
+import typings.vscodeLanguageserverTypes.mod.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +24,7 @@ trait PublishDiagnosticsParams extends StObject {
     *
     * @since 3.15.0
     */
-  var version: js.UndefOr[Double] = js.undefined
+  var version: js.UndefOr[integer] = js.undefined
 }
 object PublishDiagnosticsParams {
   
@@ -36,11 +37,11 @@ object PublishDiagnosticsParams {
     
     inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value*))
     
     inline def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: integer): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }

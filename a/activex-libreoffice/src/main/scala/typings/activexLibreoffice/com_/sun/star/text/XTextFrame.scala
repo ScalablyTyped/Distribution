@@ -31,7 +31,7 @@ object XTextFrame {
     dispose: () => Unit,
     getAnchor: () => XTextRange,
     getText: () => XText,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit
   ): XTextFrame = {

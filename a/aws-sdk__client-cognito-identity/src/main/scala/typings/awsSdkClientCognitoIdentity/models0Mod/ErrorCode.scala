@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait ErrorCode extends StObject
-@JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ErrorCode")
+@JSImport("@aws-sdk/client-cognito-identity/dist-types/models/models_0", "ErrorCode")
 @js.native
 object ErrorCode extends StObject {
   

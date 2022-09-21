@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__logger-common
 
-Typings are for version 4.8.0
+Typings are for version 4.14.2
 
 ## Library description:
 Common interfaces for promise-based log libraries
@@ -10,10 +10,10 @@ Common interfaces for promise-based log libraries
 | ------------------ | :-------------: |
 | Full name          | @algolia/logger-common |
 | Keywords           | - |
-| # releases         | 38 |
-| # dependents       | 7 |
-| # downloads        | 6776500 |
-| # stars            | 0 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 2843106.6666666665 |
+| # stars            | 1133.0 |
 
 ## Links
 - [Homepage](https://github.com/algolia/algoliasearch-client-js#readme)

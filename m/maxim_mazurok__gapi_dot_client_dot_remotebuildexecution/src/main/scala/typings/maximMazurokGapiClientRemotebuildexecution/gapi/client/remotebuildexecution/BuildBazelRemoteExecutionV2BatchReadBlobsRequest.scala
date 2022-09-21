@@ -22,6 +22,6 @@ object BuildBazelRemoteExecutionV2BatchReadBlobsRequest {
     
     inline def setDigestsUndefined: Self = StObject.set(x, "digests", js.undefined)
     
-    inline def setDigestsVarargs(value: BuildBazelRemoteExecutionV2Digest*): Self = StObject.set(x, "digests", js.Array(value :_*))
+    inline def setDigestsVarargs(value: BuildBazelRemoteExecutionV2Digest*): Self = StObject.set(x, "digests", js.Array(value*))
   }
 }

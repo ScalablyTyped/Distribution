@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociationDescription extends StObject {
   
   /**
-    * By default, when you create a new associations, the system runs it immediately after it is created and then according to the schedule you specified. Specify this option if you don't want an association to run immediately after you create it.
+    * By default, when you create a new associations, the system runs it immediately after it is created and then according to the schedule you specified. Specify this option if you don't want an association to run immediately after you create it. This parameter isn't supported for rate expressions.
     */
   var ApplyOnlyAtCronInterval: js.UndefOr[typings.awsSdk.ssmMod.ApplyOnlyAtCronInterval] = js.undefined
   
@@ -27,9 +27,14 @@ trait AssociationDescription extends StObject {
   var AssociationVersion: js.UndefOr[typings.awsSdk.ssmMod.AssociationVersion] = js.undefined
   
   /**
-    * Specify the target for the association. This target is required for associations that use an Automation document and target resources by using rate controls.
+    * Choose the parameter that will define how your automation will branch out. This target is required for associations that use an Automation runbook and target resources by using rate controls. Automation is a capability of Amazon Web Services Systems Manager.
     */
   var AutomationTargetParameterName: js.UndefOr[typings.awsSdk.ssmMod.AutomationTargetParameterName] = js.undefined
+  
+  /**
+    * The names or Amazon Resource Names (ARNs) of the Change Calendar type documents your associations are gated under. The associations only run when that change calendar is open. For more information, see Amazon Web Services Systems Manager Change Calendar.
+    */
+  var CalendarNames: js.UndefOr[CalendarNameOrARNList] = js.undefined
   
   /**
     * The severity level that is assigned to the association.
@@ -39,7 +44,7 @@ trait AssociationDescription extends StObject {
   /**
     * The date when the association was made.
     */
-  var Date: js.UndefOr[DateTime] = js.undefined
+  var Date: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The document version.
@@ -47,37 +52,37 @@ trait AssociationDescription extends StObject {
   var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
-    * The ID of the instance.
+    * The managed node ID.
     */
   var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
   
   /**
     * The date on which the association was last run.
     */
-  var LastExecutionDate: js.UndefOr[DateTime] = js.undefined
+  var LastExecutionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The last date on which the association was successfully run.
     */
-  var LastSuccessfulExecutionDate: js.UndefOr[DateTime] = js.undefined
+  var LastSuccessfulExecutionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date when the association was last updated.
     */
-  var LastUpdateAssociationDate: js.UndefOr[DateTime] = js.undefined
+  var LastUpdateAssociationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%. The default value is 100%, which means all targets run the association at the same time. If a new instance starts and attempts to run an association while Systems Manager is running MaxConcurrency associations, the association is allowed to run. During the next association interval, the new instance will process its association within the limit specified for MaxConcurrency.
+    * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%. The default value is 100%, which means all targets run the association at the same time. If a new managed node starts and attempts to run an association while Systems Manager is running MaxConcurrency associations, the association is allowed to run. During the next association interval, the new managed node will process its association within the limit specified for MaxConcurrency.
     */
   var MaxConcurrency: js.UndefOr[typings.awsSdk.ssmMod.MaxConcurrency] = js.undefined
   
   /**
-    * The number of errors that are allowed before the system stops sending requests to run the association on additional targets. You can specify either an absolute number of errors, for example 10, or a percentage of the target set, for example 10%. If you specify 3, for example, the system stops sending requests when the fourth error is received. If you specify 0, then the system stops sending requests after the first error is returned. If you run an association on 50 instances and set MaxError to 10%, then the system stops sending the request when the sixth error is received. Executions that are already running an association when MaxErrors is reached are allowed to complete, but some of these executions may fail as well. If you need to ensure that there won't be more than max-errors failed executions, set MaxConcurrency to 1 so that executions proceed one at a time.
+    * The number of errors that are allowed before the system stops sending requests to run the association on additional targets. You can specify either an absolute number of errors, for example 10, or a percentage of the target set, for example 10%. If you specify 3, for example, the system stops sending requests when the fourth error is received. If you specify 0, then the system stops sending requests after the first error is returned. If you run an association on 50 managed nodes and set MaxError to 10%, then the system stops sending the request when the sixth error is received. Executions that are already running an association when MaxErrors is reached are allowed to complete, but some of these executions may fail as well. If you need to ensure that there won't be more than max-errors failed executions, set MaxConcurrency to 1 so that executions proceed one at a time.
     */
   var MaxErrors: js.UndefOr[typings.awsSdk.ssmMod.MaxErrors] = js.undefined
   
   /**
-    * The name of the Systems Manager document.
+    * The name of the SSM document.
     */
   var Name: js.UndefOr[DocumentARN] = js.undefined
   
@@ -102,17 +107,32 @@ trait AssociationDescription extends StObject {
   var ScheduleExpression: js.UndefOr[typings.awsSdk.ssmMod.ScheduleExpression] = js.undefined
   
   /**
+    * Number of days to wait after the scheduled day to run an association.
+    */
+  var ScheduleOffset: js.UndefOr[typings.awsSdk.ssmMod.ScheduleOffset] = js.undefined
+  
+  /**
     * The association status.
     */
   var Status: js.UndefOr[AssociationStatus] = js.undefined
   
   /**
-    * The mode for generating association compliance. You can specify AUTO or MANUAL. In AUTO mode, the system uses the status of the association execution to determine the compliance status. If the association execution runs successfully, then the association is COMPLIANT. If the association execution doesn't run successfully, the association is NON-COMPLIANT. In MANUAL mode, you must specify the AssociationId as a parameter for the PutComplianceItems API action. In this case, compliance data is not managed by State Manager. It is managed by your direct call to the PutComplianceItems API action. By default, all associations use AUTO mode.
+    * The mode for generating association compliance. You can specify AUTO or MANUAL. In AUTO mode, the system uses the status of the association execution to determine the compliance status. If the association execution runs successfully, then the association is COMPLIANT. If the association execution doesn't run successfully, the association is NON-COMPLIANT. In MANUAL mode, you must specify the AssociationId as a parameter for the PutComplianceItems API operation. In this case, compliance data isn't managed by State Manager, a capability of Amazon Web Services Systems Manager. It is managed by your direct call to the PutComplianceItems API operation. By default, all associations use AUTO mode.
     */
   var SyncCompliance: js.UndefOr[AssociationSyncCompliance] = js.undefined
   
   /**
-    * The instances targeted by the request. 
+    * The combination of Amazon Web Services Regions and Amazon Web Services accounts where you want to run the association.
+    */
+  var TargetLocations: js.UndefOr[typings.awsSdk.ssmMod.TargetLocations] = js.undefined
+  
+  /**
+    * A key-value mapping of document parameters to target resources. Both Targets and TargetMaps can't be specified together.
+    */
+  var TargetMaps: js.UndefOr[typings.awsSdk.ssmMod.TargetMaps] = js.undefined
+  
+  /**
+    * The managed nodes targeted by the request. 
     */
   var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.undefined
 }
@@ -145,11 +165,17 @@ object AssociationDescription {
     
     inline def setAutomationTargetParameterNameUndefined: Self = StObject.set(x, "AutomationTargetParameterName", js.undefined)
     
+    inline def setCalendarNames(value: CalendarNameOrARNList): Self = StObject.set(x, "CalendarNames", value.asInstanceOf[js.Any])
+    
+    inline def setCalendarNamesUndefined: Self = StObject.set(x, "CalendarNames", js.undefined)
+    
+    inline def setCalendarNamesVarargs(value: CalendarNameOrARN*): Self = StObject.set(x, "CalendarNames", js.Array(value*))
+    
     inline def setComplianceSeverity(value: AssociationComplianceSeverity): Self = StObject.set(x, "ComplianceSeverity", value.asInstanceOf[js.Any])
     
     inline def setComplianceSeverityUndefined: Self = StObject.set(x, "ComplianceSeverity", js.undefined)
     
-    inline def setDate(value: DateTime): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
     
@@ -161,15 +187,15 @@ object AssociationDescription {
     
     inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    inline def setLastExecutionDate(value: DateTime): Self = StObject.set(x, "LastExecutionDate", value.asInstanceOf[js.Any])
+    inline def setLastExecutionDate(value: js.Date): Self = StObject.set(x, "LastExecutionDate", value.asInstanceOf[js.Any])
     
     inline def setLastExecutionDateUndefined: Self = StObject.set(x, "LastExecutionDate", js.undefined)
     
-    inline def setLastSuccessfulExecutionDate(value: DateTime): Self = StObject.set(x, "LastSuccessfulExecutionDate", value.asInstanceOf[js.Any])
+    inline def setLastSuccessfulExecutionDate(value: js.Date): Self = StObject.set(x, "LastSuccessfulExecutionDate", value.asInstanceOf[js.Any])
     
     inline def setLastSuccessfulExecutionDateUndefined: Self = StObject.set(x, "LastSuccessfulExecutionDate", js.undefined)
     
-    inline def setLastUpdateAssociationDate(value: DateTime): Self = StObject.set(x, "LastUpdateAssociationDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdateAssociationDate(value: js.Date): Self = StObject.set(x, "LastUpdateAssociationDate", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateAssociationDateUndefined: Self = StObject.set(x, "LastUpdateAssociationDate", js.undefined)
     
@@ -201,6 +227,10 @@ object AssociationDescription {
     
     inline def setScheduleExpressionUndefined: Self = StObject.set(x, "ScheduleExpression", js.undefined)
     
+    inline def setScheduleOffset(value: ScheduleOffset): Self = StObject.set(x, "ScheduleOffset", value.asInstanceOf[js.Any])
+    
+    inline def setScheduleOffsetUndefined: Self = StObject.set(x, "ScheduleOffset", js.undefined)
+    
     inline def setStatus(value: AssociationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
@@ -209,10 +239,22 @@ object AssociationDescription {
     
     inline def setSyncComplianceUndefined: Self = StObject.set(x, "SyncCompliance", js.undefined)
     
+    inline def setTargetLocations(value: TargetLocations): Self = StObject.set(x, "TargetLocations", value.asInstanceOf[js.Any])
+    
+    inline def setTargetLocationsUndefined: Self = StObject.set(x, "TargetLocations", js.undefined)
+    
+    inline def setTargetLocationsVarargs(value: TargetLocation*): Self = StObject.set(x, "TargetLocations", js.Array(value*))
+    
+    inline def setTargetMaps(value: TargetMaps): Self = StObject.set(x, "TargetMaps", value.asInstanceOf[js.Any])
+    
+    inline def setTargetMapsUndefined: Self = StObject.set(x, "TargetMaps", js.undefined)
+    
+    inline def setTargetMapsVarargs(value: TargetMap*): Self = StObject.set(x, "TargetMaps", js.Array(value*))
+    
     inline def setTargets(value: Targets): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
     inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
-    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value*))
   }
 }

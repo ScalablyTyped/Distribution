@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFloatingObjectLockAnchorCommand")
 @js.native
-class ChangeFloatingObjectLockAnchorCommand ()
+open class ChangeFloatingObjectLockAnchorCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFloatingObjectLockAnchorCommand {
   

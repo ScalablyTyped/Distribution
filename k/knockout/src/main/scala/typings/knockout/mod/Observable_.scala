@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Observable_[T]
   extends ObservableFunctions[T]
-     with _ComputedReadFunction[T, js.Any] {
+     with _ComputedReadFunction[T, Any] {
   
   def apply(): T = js.native
-  def apply(value: T): js.Any = js.native
+  def apply(value: T): Any = js.native
 }

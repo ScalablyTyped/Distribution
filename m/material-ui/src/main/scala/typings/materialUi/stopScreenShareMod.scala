@@ -10,10 +10,10 @@ object stopScreenShareMod {
   
   @JSImport("material-ui/svg-icons/communication/stop-screen-share", JSImport.Default)
   @js.native
-  class default () extends CommunicationStopScreenShare
+  open class default () extends CommunicationStopScreenShare
   
   @JSImport("material-ui/svg-icons/communication/stop-screen-share", "CommunicationStopScreenShare")
   @js.native
-  class CommunicationStopScreenShare ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationStopScreenShare ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstancePatchStateFilter extends StObject {
   
   /**
-    * The key for the filter. Supported values are FailedCount, InstalledCount, InstalledOtherCount, MissingCount and NotApplicableCount.
+    * The key for the filter. Supported values include the following:    InstalledCount     InstalledOtherCount     InstalledPendingRebootCount     InstalledRejectedCount     MissingCount     FailedCount     UnreportedNotApplicableCount     NotApplicableCount   
     */
   var Key: InstancePatchStateFilterKey
   
   /**
-    * The type of comparison that should be performed for the value: Equal, NotEqual, LessThan or GreaterThan.
+    * The type of comparison that should be performed for the value.
     */
   var Type: InstancePatchStateOperatorType
   
   /**
-    * The value for the filter, must be an integer greater than or equal to 0.
+    * The value for the filter. Must be an integer greater than or equal to 0.
     */
   var Values: InstancePatchStateFilterValues
 }
@@ -40,6 +40,6 @@ object InstancePatchStateFilter {
     
     inline def setValues(value: InstancePatchStateFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: InstancePatchStateFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: InstancePatchStateFilterValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

@@ -11,6 +11,6 @@ trait ISelectionProviderStatic
      with Instantiable3[
       /* grid */ IGridInstance, 
       /* $scope */ IGridScope, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IParseService */ /* $parse */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IParseService */ /* $parse */ Any, 
       ISelectionProvider
     ]

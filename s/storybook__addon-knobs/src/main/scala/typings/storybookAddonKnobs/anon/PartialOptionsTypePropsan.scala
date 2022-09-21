@@ -11,9 +11,9 @@ trait PartialOptionsTypePropsan extends StObject {
   
   var display: js.UndefOr[OptionsKnobOptionsDisplay] = js.undefined
   
-  var knob: js.UndefOr[OptionsTypeKnob[js.Any]] = js.undefined
+  var knob: js.UndefOr[OptionsTypeKnob[Any]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
 }
 object PartialOptionsTypePropsan {
   
@@ -28,11 +28,11 @@ object PartialOptionsTypePropsan {
     
     inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    inline def setKnob(value: OptionsTypeKnob[js.Any]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: OptionsTypeKnob[Any]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
     inline def setKnobUndefined: Self = StObject.set(x, "knob", js.undefined)
     
-    inline def setOnChange(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* value */ Any => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
   }

@@ -4,8 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.postcss.mod.Root_
-  - typings.postcss.mod.ChildNode
-*/
-trait Node extends StObject
+@JSImport("postcss", "Node")
+@js.native
+/**
+  * @param defaults Value for node properties.
+  */
+abstract class Node ()
+  extends typings.postcss.nodeMod.default {
+  def this(defaults: js.Object) = this()
+}

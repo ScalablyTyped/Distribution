@@ -2,7 +2,6 @@ package typings.arangodb
 
 import typings.arangodb.Foxx.Schema
 import typings.arangodb.anon.DocumentJob
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object queuesMod {
     
     var created: Double
     
-    var data: js.Any
+    var data: Any
     
     var delayUntil: Double
     
@@ -61,7 +60,7 @@ object queuesMod {
     inline def apply(
       abort: () => Unit,
       created: Double,
-      data: js.Any,
+      data: Any,
       delayUntil: Double,
       failures: js.Array[js.Object],
       maxFailures: Double,
@@ -86,7 +85,7 @@ object queuesMod {
       
       inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDelayUntil(value: Double): Self = StObject.set(x, "delayUntil", value.asInstanceOf[js.Any])
       
@@ -96,7 +95,7 @@ object queuesMod {
       
       inline def setFailures(value: js.Array[js.Object]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
       
-      inline def setFailuresVarargs(value: js.Object*): Self = StObject.set(x, "failures", js.Array(value :_*))
+      inline def setFailuresVarargs(value: js.Object*): Self = StObject.set(x, "failures", js.Array(value*))
       
       inline def setMaxFailures(value: Double): Self = StObject.set(x, "maxFailures", value.asInstanceOf[js.Any])
       
@@ -124,13 +123,13 @@ object queuesMod {
     }
   }
   
-  type JobCallback = js.Function3[/* result */ js.Any, /* jobData */ js.Any, /* job */ DocumentJob, Unit]
+  type JobCallback = js.Function3[/* result */ Any, /* jobData */ Any, /* job */ DocumentJob, Unit]
   
   trait JobOptions extends StObject {
     
     var backOff: js.UndefOr[(js.Function1[/* failureCount */ Double, Double]) | Double] = js.undefined
     
-    var delayUntil: js.UndefOr[Double | Date] = js.undefined
+    var delayUntil: js.UndefOr[Double | js.Date] = js.undefined
     
     var failure: js.UndefOr[JobCallback] = js.undefined
     
@@ -140,7 +139,7 @@ object queuesMod {
     
     var repeatTimes: js.UndefOr[Double] = js.undefined
     
-    var repeatUntil: js.UndefOr[Double | Date] = js.undefined
+    var repeatUntil: js.UndefOr[Double | js.Date] = js.undefined
     
     var success: js.UndefOr[JobCallback] = js.undefined
   }
@@ -159,11 +158,11 @@ object queuesMod {
       
       inline def setBackOffUndefined: Self = StObject.set(x, "backOff", js.undefined)
       
-      inline def setDelayUntil(value: Double | Date): Self = StObject.set(x, "delayUntil", value.asInstanceOf[js.Any])
+      inline def setDelayUntil(value: Double | js.Date): Self = StObject.set(x, "delayUntil", value.asInstanceOf[js.Any])
       
       inline def setDelayUntilUndefined: Self = StObject.set(x, "delayUntil", js.undefined)
       
-      inline def setFailure(value: (/* result */ js.Any, /* jobData */ js.Any, /* job */ DocumentJob) => Unit): Self = StObject.set(x, "failure", js.Any.fromFunction3(value))
+      inline def setFailure(value: (/* result */ Any, /* jobData */ Any, /* job */ DocumentJob) => Unit): Self = StObject.set(x, "failure", js.Any.fromFunction3(value))
       
       inline def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
       
@@ -179,11 +178,11 @@ object queuesMod {
       
       inline def setRepeatTimesUndefined: Self = StObject.set(x, "repeatTimes", js.undefined)
       
-      inline def setRepeatUntil(value: Double | Date): Self = StObject.set(x, "repeatUntil", value.asInstanceOf[js.Any])
+      inline def setRepeatUntil(value: Double | js.Date): Self = StObject.set(x, "repeatUntil", value.asInstanceOf[js.Any])
       
       inline def setRepeatUntilUndefined: Self = StObject.set(x, "repeatUntil", js.undefined)
       
-      inline def setSuccess(value: (/* result */ js.Any, /* jobData */ js.Any, /* job */ DocumentJob) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+      inline def setSuccess(value: (/* result */ Any, /* jobData */ Any, /* job */ DocumentJob) => Unit): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
       
       inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
@@ -211,8 +210,8 @@ object queuesMod {
     def progress(): js.Array[String] = js.native
     def progress(script: Script): js.Array[String] = js.native
     
-    def push(item: QueueItem, data: js.Any): Unit = js.native
-    def push(item: QueueItem, data: js.Any, opts: JobOptions): Unit = js.native
+    def push(item: QueueItem, data: Any): Unit = js.native
+    def push(item: QueueItem, data: Any, opts: JobOptions): Unit = js.native
   }
   
   trait QueueItem extends StObject {
@@ -225,7 +224,7 @@ object queuesMod {
     
     var name: String
     
-    var preprocess: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
+    var preprocess: js.UndefOr[js.Function1[/* data */ Any, Any]] = js.undefined
     
     var schema: js.UndefOr[Schema] = js.undefined
   }
@@ -252,7 +251,7 @@ object queuesMod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setPreprocess(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "preprocess", js.Any.fromFunction1(value))
+      inline def setPreprocess(value: /* data */ Any => Any): Self = StObject.set(x, "preprocess", js.Any.fromFunction1(value))
       
       inline def setPreprocessUndefined: Self = StObject.set(x, "preprocess", js.undefined)
       

@@ -68,27 +68,27 @@ object ASPxClientWebChartControlCustomDrawCrosshairEventArgs {
     
     inline def setCrosshairElementGroups(value: js.Array[ASPxClientCrosshairElementGroup]): Self = StObject.set(x, "crosshairElementGroups", value.asInstanceOf[js.Any])
     
-    inline def setCrosshairElementGroupsVarargs(value: ASPxClientCrosshairElementGroup*): Self = StObject.set(x, "crosshairElementGroups", js.Array(value :_*))
+    inline def setCrosshairElementGroupsVarargs(value: ASPxClientCrosshairElementGroup*): Self = StObject.set(x, "crosshairElementGroups", js.Array(value*))
     
     inline def setCrosshairElements(value: js.Array[ASPxClientCrosshairElement]): Self = StObject.set(x, "crosshairElements", value.asInstanceOf[js.Any])
     
-    inline def setCrosshairElementsVarargs(value: ASPxClientCrosshairElement*): Self = StObject.set(x, "crosshairElements", js.Array(value :_*))
+    inline def setCrosshairElementsVarargs(value: ASPxClientCrosshairElement*): Self = StObject.set(x, "crosshairElements", js.Array(value*))
     
     inline def setCrosshairGroupHeaderElements(value: js.Array[ASPxClientCrosshairGroupHeaderElement]): Self = StObject.set(x, "crosshairGroupHeaderElements", value.asInstanceOf[js.Any])
     
-    inline def setCrosshairGroupHeaderElementsVarargs(value: ASPxClientCrosshairGroupHeaderElement*): Self = StObject.set(x, "crosshairGroupHeaderElements", js.Array(value :_*))
+    inline def setCrosshairGroupHeaderElementsVarargs(value: ASPxClientCrosshairGroupHeaderElement*): Self = StObject.set(x, "crosshairGroupHeaderElements", js.Array(value*))
     
     inline def setCrosshairIndicatorLegendElements(value: js.Array[ASPxClientCrosshairIndicatorLegendElement]): Self = StObject.set(x, "crosshairIndicatorLegendElements", value.asInstanceOf[js.Any])
     
-    inline def setCrosshairIndicatorLegendElementsVarargs(value: ASPxClientCrosshairIndicatorLegendElement*): Self = StObject.set(x, "crosshairIndicatorLegendElements", js.Array(value :_*))
+    inline def setCrosshairIndicatorLegendElementsVarargs(value: ASPxClientCrosshairIndicatorLegendElement*): Self = StObject.set(x, "crosshairIndicatorLegendElements", js.Array(value*))
     
     inline def setCrosshairLegendElements(value: js.Array[ASPxClientCrosshairLegendElement]): Self = StObject.set(x, "crosshairLegendElements", value.asInstanceOf[js.Any])
     
-    inline def setCrosshairLegendElementsVarargs(value: ASPxClientCrosshairLegendElement*): Self = StObject.set(x, "crosshairLegendElements", js.Array(value :_*))
+    inline def setCrosshairLegendElementsVarargs(value: ASPxClientCrosshairLegendElement*): Self = StObject.set(x, "crosshairLegendElements", js.Array(value*))
     
     inline def setCursorCrosshairAxisLabelElements(value: js.Array[ASPxClientCrosshairAxisLabelElement]): Self = StObject.set(x, "cursorCrosshairAxisLabelElements", value.asInstanceOf[js.Any])
     
-    inline def setCursorCrosshairAxisLabelElementsVarargs(value: ASPxClientCrosshairAxisLabelElement*): Self = StObject.set(x, "cursorCrosshairAxisLabelElements", js.Array(value :_*))
+    inline def setCursorCrosshairAxisLabelElementsVarargs(value: ASPxClientCrosshairAxisLabelElement*): Self = StObject.set(x, "cursorCrosshairAxisLabelElements", js.Array(value*))
     
     inline def setCursorCrosshairLineElement(value: ASPxClientCrosshairLineElement): Self = StObject.set(x, "cursorCrosshairLineElement", value.asInstanceOf[js.Any])
   }

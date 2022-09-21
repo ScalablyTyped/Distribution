@@ -16,7 +16,7 @@ object stickyScrollBarMod extends Shortcut {
   
   @JSImport("rc-table/lib/stickyScrollBar", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[StickyScrollBarProps & RefAttributes[js.Any]] = js.native
+  val default: ForwardRefExoticComponent[StickyScrollBarProps & RefAttributes[Any]] = js.native
   
   trait StickyScrollBarProps extends StObject {
     
@@ -52,8 +52,8 @@ object stickyScrollBarMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[StickyScrollBarProps & RefAttributes[js.Any]]
+  type _To = ForwardRefExoticComponent[StickyScrollBarProps & RefAttributes[Any]]
   
   /* This means you don't have to write `default`, but can instead just say `stickyScrollBarMod.foo` */
-  override def _to: ForwardRefExoticComponent[StickyScrollBarProps & RefAttributes[js.Any]] = default
+  override def _to: ForwardRefExoticComponent[StickyScrollBarProps & RefAttributes[Any]] = default
 }

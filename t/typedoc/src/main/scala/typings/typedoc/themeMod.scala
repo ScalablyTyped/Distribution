@@ -1,10 +1,10 @@
 package typings.typedoc
 
-import typings.typedoc.navigationItemMod.NavigationItem
+import typings.typedoc.eventsMod.PageEvent
+import typings.typedoc.modelsMod.Reflection
 import typings.typedoc.outputComponentsMod.RendererComponent
 import typings.typedoc.projectMod.ProjectReflection
 import typings.typedoc.rendererMod.Renderer
-import typings.typedoc.resourcesMod.Resources
 import typings.typedoc.urlMappingMod.UrlMapping
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,16 +15,34 @@ object themeMod {
   @JSImport("typedoc/dist/lib/output/theme", "Theme")
   @js.native
   abstract class Theme protected () extends RendererComponent {
-    def this(renderer: Renderer, basePath: String) = this()
+    /**
+      * Create a new BaseTheme instance.
+      *
+      * @param renderer  The renderer this theme is attached to.
+      */
+    def this(renderer: Renderer) = this()
     
-    var basePath: String = js.native
+    /**
+      * Map the models of the given project to the desired output files.
+      * It is assumed that with the project structure:
+      * ```text
+      * A
+      * |- B
+      *    |- C
+      * ```
+      * If `B` has a UrlMapping, then `A` also has a UrlMapping, and `C` may or
+      * may not have a UrlMapping. If `B` does not have a UrlMapping, then `A`
+      * may or may not have a UrlMapping, but `C` must not have a UrlMapping.
+      *
+      * @param project The project whose urls should be generated.
+      * @returns A list of {@link UrlMapping} instances defining which models
+      * should be rendered to which files.
+      */
+    def getUrls(project: ProjectReflection): js.Array[UrlMapping[Any]] = js.native
     
-    def getNavigation(project: ProjectReflection): NavigationItem = js.native
-    
-    def getUrls(project: ProjectReflection): js.Array[UrlMapping] = js.native
-    
-    def isOutputDirectory(path: String): Boolean = js.native
-    
-    var resources: Resources = js.native
+    /**
+      * Renders the provided page to a string, which will be written to disk by the {@link Renderer}
+      */
+    def render(page: PageEvent[Reflection]): String = js.native
   }
 }

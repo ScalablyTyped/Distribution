@@ -36,12 +36,12 @@ object ModifyUserGroupMessage {
     
     inline def setUserIdsToAddUndefined: Self = StObject.set(x, "UserIdsToAdd", js.undefined)
     
-    inline def setUserIdsToAddVarargs(value: UserId*): Self = StObject.set(x, "UserIdsToAdd", js.Array(value :_*))
+    inline def setUserIdsToAddVarargs(value: UserId*): Self = StObject.set(x, "UserIdsToAdd", js.Array(value*))
     
     inline def setUserIdsToRemove(value: UserIdListInput): Self = StObject.set(x, "UserIdsToRemove", value.asInstanceOf[js.Any])
     
     inline def setUserIdsToRemoveUndefined: Self = StObject.set(x, "UserIdsToRemove", js.undefined)
     
-    inline def setUserIdsToRemoveVarargs(value: UserId*): Self = StObject.set(x, "UserIdsToRemove", js.Array(value :_*))
+    inline def setUserIdsToRemoveVarargs(value: UserId*): Self = StObject.set(x, "UserIdsToRemove", js.Array(value*))
   }
 }

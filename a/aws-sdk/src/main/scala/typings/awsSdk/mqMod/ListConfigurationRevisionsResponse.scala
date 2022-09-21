@@ -51,6 +51,6 @@ object ListConfigurationRevisionsResponse {
     
     inline def setRevisionsUndefined: Self = StObject.set(x, "Revisions", js.undefined)
     
-    inline def setRevisionsVarargs(value: ConfigurationRevision*): Self = StObject.set(x, "Revisions", js.Array(value :_*))
+    inline def setRevisionsVarargs(value: ConfigurationRevision*): Self = StObject.set(x, "Revisions", js.Array(value*))
   }
 }

@@ -27,7 +27,7 @@ object XNumberingRulesSupplier {
     NumberingRules: XIndexAccess,
     acquire: () => Unit,
     getNumberingRules: () => XIndexAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XNumberingRulesSupplier = {
     val __obj = js.Dynamic.literal(NumberingRules = NumberingRules.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getNumberingRules = js.Any.fromFunction0(getNumberingRules), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

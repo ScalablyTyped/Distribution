@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sindresorhus/string-hash" : "1.2.0"
+      "@sindresorhus/string-hash" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@sindresorhus/string-hash" : "1.2.0"
+      "@sindresorhus/string-hash" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

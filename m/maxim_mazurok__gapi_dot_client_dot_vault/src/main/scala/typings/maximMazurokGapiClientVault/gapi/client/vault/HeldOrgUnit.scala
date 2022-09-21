@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeldOrgUnit extends StObject {
   
-  /** When the org unit was put on hold. This property is immutable. */
+  /** When the organizational unit was put on hold. This property is immutable. */
   var holdTime: js.UndefOr[String] = js.undefined
   
-  /** The org unit's immutable ID as provided by the Admin SDK. */
+  /** The organizational unit's immutable ID as provided by the [Admin SDK](https://developers.google.com/admin-sdk/). */
   var orgUnitId: js.UndefOr[String] = js.undefined
 }
 object HeldOrgUnit {

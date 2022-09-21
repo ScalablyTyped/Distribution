@@ -1,0 +1,42 @@
+package typings.floatingUiDom.anon
+
+import typings.floatingUiCore.typesMod.Strategy
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Boundary extends StObject {
+  
+  var boundary: typings.floatingUiDom.typesMod.Boundary
+  
+  var element: typings.std.Element
+  
+  var rootBoundary: typings.floatingUiCore.typesMod.RootBoundary
+  
+  var strategy: Strategy
+}
+object Boundary {
+  
+  inline def apply(
+    boundary: typings.floatingUiDom.typesMod.Boundary,
+    element: typings.std.Element,
+    rootBoundary: typings.floatingUiCore.typesMod.RootBoundary,
+    strategy: Strategy
+  ): Boundary = {
+    val __obj = js.Dynamic.literal(boundary = boundary.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], rootBoundary = rootBoundary.asInstanceOf[js.Any], strategy = strategy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Boundary]
+  }
+  
+  extension [Self <: Boundary](x: Self) {
+    
+    inline def setBoundary(value: typings.floatingUiDom.typesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    
+    inline def setBoundaryVarargs(value: typings.std.Element*): Self = StObject.set(x, "boundary", js.Array(value*))
+    
+    inline def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setRootBoundary(value: typings.floatingUiCore.typesMod.RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
+    
+    inline def setStrategy(value: Strategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+  }
+}

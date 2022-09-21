@@ -10,12 +10,10 @@ object imageMod {
   
   @JSImport("react-bootstrap/lib/Image", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[ImageProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[ImageProps, js.Object, Any]
   
-  @js.native
-  trait Image
-    extends Component[ImageProps, js.Object, js.Any]
+  type Image = Component[ImageProps, js.Object, Any]
   
   trait ImageProps
     extends StObject

@@ -13,7 +13,7 @@ object relayRuntimeTypesMod {
     
     var liveConfigId: js.UndefOr[String | Null] = js.undefined
     
-    var metadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var metadata: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var poll: js.UndefOr[Double | Null] = js.undefined
     
@@ -40,7 +40,7 @@ object relayRuntimeTypesMod {
       
       inline def setLiveConfigIdUndefined: Self = StObject.set(x, "liveConfigId", js.undefined)
       
-      inline def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: StringDictionary[Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
       inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
@@ -63,6 +63,8 @@ object relayRuntimeTypesMod {
   trait Disposable extends StObject {
     
     def dispose(): Unit
+    @JSName("dispose")
+    var dispose_Original: DisposeFn
   }
   object Disposable {
     
@@ -111,26 +113,26 @@ object relayRuntimeTypesMod {
   
   trait OperationType extends StObject {
     
-    val rawResponse: js.UndefOr[js.Any] = js.undefined
+    val rawResponse: js.UndefOr[Any] = js.undefined
     
-    val response: js.Any
+    val response: Any
     
     val variables: Variables
   }
   object OperationType {
     
-    inline def apply(response: js.Any, variables: Variables): OperationType = {
+    inline def apply(response: Any, variables: Variables): OperationType = {
       val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
       __obj.asInstanceOf[OperationType]
     }
     
     extension [Self <: OperationType](x: Self) {
       
-      inline def setRawResponse(value: js.Any): Self = StObject.set(x, "rawResponse", value.asInstanceOf[js.Any])
+      inline def setRawResponse(value: Any): Self = StObject.set(x, "rawResponse", value.asInstanceOf[js.Any])
       
       inline def setRawResponseUndefined: Self = StObject.set(x, "rawResponse", js.undefined)
       
-      inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
       inline def setVariables(value: Variables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     }
@@ -148,7 +150,7 @@ object relayRuntimeTypesMod {
     inline def partial: typings.relayRuntime.relayRuntimeStrings.partial = "partial".asInstanceOf[typings.relayRuntime.relayRuntimeStrings.partial]
   }
   
-  type Variables = StringDictionary[js.Any]
+  type Variables = StringDictionary[Any]
   
   type VariablesOf[TQuery /* <: OperationType */] = /* import warning: importer.ImportType#apply Failed type conversion: TQuery['variables'] */ js.Any
 }

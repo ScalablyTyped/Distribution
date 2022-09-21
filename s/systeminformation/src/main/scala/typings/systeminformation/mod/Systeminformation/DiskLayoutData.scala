@@ -26,6 +26,8 @@ trait DiskLayoutData extends StObject {
   
   var smartStatus: String
   
+  var temperature: Null | Double
+  
   var totalCylinders: Double
   
   var totalHeads: Double
@@ -60,7 +62,7 @@ object DiskLayoutData {
     `type`: String,
     vendor: String
   ): DiskLayoutData = {
-    val __obj = js.Dynamic.literal(bytesPerSector = bytesPerSector.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], firmwareRevision = firmwareRevision.asInstanceOf[js.Any], interfaceType = interfaceType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sectorsPerTrack = sectorsPerTrack.asInstanceOf[js.Any], serialNum = serialNum.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], smartStatus = smartStatus.asInstanceOf[js.Any], totalCylinders = totalCylinders.asInstanceOf[js.Any], totalHeads = totalHeads.asInstanceOf[js.Any], totalSectors = totalSectors.asInstanceOf[js.Any], totalTracks = totalTracks.asInstanceOf[js.Any], tracksPerCylinder = tracksPerCylinder.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bytesPerSector = bytesPerSector.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], firmwareRevision = firmwareRevision.asInstanceOf[js.Any], interfaceType = interfaceType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sectorsPerTrack = sectorsPerTrack.asInstanceOf[js.Any], serialNum = serialNum.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], smartStatus = smartStatus.asInstanceOf[js.Any], totalCylinders = totalCylinders.asInstanceOf[js.Any], totalHeads = totalHeads.asInstanceOf[js.Any], totalSectors = totalSectors.asInstanceOf[js.Any], totalTracks = totalTracks.asInstanceOf[js.Any], tracksPerCylinder = tracksPerCylinder.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any], temperature = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiskLayoutData]
   }
@@ -88,6 +90,10 @@ object DiskLayoutData {
     inline def setSmartDataUndefined: Self = StObject.set(x, "smartData", js.undefined)
     
     inline def setSmartStatus(value: String): Self = StObject.set(x, "smartStatus", value.asInstanceOf[js.Any])
+    
+    inline def setTemperature(value: Double): Self = StObject.set(x, "temperature", value.asInstanceOf[js.Any])
+    
+    inline def setTemperatureNull: Self = StObject.set(x, "temperature", null)
     
     inline def setTotalCylinders(value: Double): Self = StObject.set(x, "totalCylinders", value.asInstanceOf[js.Any])
     

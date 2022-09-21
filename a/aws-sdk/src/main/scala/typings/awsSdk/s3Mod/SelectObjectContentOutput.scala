@@ -25,6 +25,6 @@ object SelectObjectContentOutput {
     
     inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     
-    inline def setPayloadVarargs(value: Cont*): Self = StObject.set(x, "Payload", js.Array(value :_*))
+    inline def setPayloadVarargs(value: Cont*): Self = StObject.set(x, "Payload", js.Array(value*))
   }
 }

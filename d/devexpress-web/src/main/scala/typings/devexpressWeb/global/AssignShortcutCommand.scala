@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("AssignShortcutCommand")
 @js.native
-class AssignShortcutCommand ()
+open class AssignShortcutCommand ()
   extends StObject
      with typings.devexpressWeb.AssignShortcutCommand {
   

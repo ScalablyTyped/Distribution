@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangePageMarginsCommand")
 @js.native
-class ChangePageMarginsCommand ()
+open class ChangePageMarginsCommand ()
   extends StObject
      with typings.devexpressWeb.ChangePageMarginsCommand

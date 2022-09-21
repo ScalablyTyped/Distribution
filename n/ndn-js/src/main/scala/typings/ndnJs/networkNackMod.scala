@@ -9,7 +9,7 @@ object networkNackMod {
   
   @JSImport("ndn-js/network-nack", "NetworkNack")
   @js.native
-  class NetworkNack () extends StObject {
+  open class NetworkNack () extends StObject {
     
     def getOtherReasonCode(): Double = js.native
     

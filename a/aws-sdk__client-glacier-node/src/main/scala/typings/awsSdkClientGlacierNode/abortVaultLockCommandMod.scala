@@ -16,7 +16,7 @@ object abortVaultLockCommandMod {
   
   @JSImport("@aws-sdk/client-glacier-node/commands/AbortVaultLockCommand", "AbortVaultLockCommand")
   @js.native
-  class AbortVaultLockCommand protected ()
+  open class AbortVaultLockCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object abortVaultLockCommandMod {
     override val middlewareStack: MiddlewareStack[AbortVaultLockInput, AbortVaultLockOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: GlacierResolvedConfiguration
     ): Handler[AbortVaultLockInput, AbortVaultLockOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: GlacierResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[AbortVaultLockInput, AbortVaultLockOutput] = js.native
   }
 }

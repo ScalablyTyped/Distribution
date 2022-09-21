@@ -71,7 +71,7 @@ object mod {
       
       inline def setValue(value: String | js.Array[Node]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: Node*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Node*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
 }

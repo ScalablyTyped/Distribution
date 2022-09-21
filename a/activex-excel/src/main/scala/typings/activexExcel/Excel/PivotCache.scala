@@ -27,11 +27,11 @@ trait PivotCache extends StObject {
   def CreatePivotTable(TableDestination: Range): PivotTable = js.native
   def CreatePivotTable(TableDestination: Range, TableName: String): PivotTable = js.native
   def CreatePivotTable(TableDestination: Range, TableName: String, ReadData: Boolean): PivotTable = js.native
-  def CreatePivotTable(TableDestination: Range, TableName: String, ReadData: Boolean, DefaultVersion: js.Any): PivotTable = js.native
-  def CreatePivotTable(TableDestination: Range, TableName: String, ReadData: Unit, DefaultVersion: js.Any): PivotTable = js.native
+  def CreatePivotTable(TableDestination: Range, TableName: String, ReadData: Boolean, DefaultVersion: Any): PivotTable = js.native
+  def CreatePivotTable(TableDestination: Range, TableName: String, ReadData: Unit, DefaultVersion: Any): PivotTable = js.native
   def CreatePivotTable(TableDestination: Range, TableName: Unit, ReadData: Boolean): PivotTable = js.native
-  def CreatePivotTable(TableDestination: Range, TableName: Unit, ReadData: Boolean, DefaultVersion: js.Any): PivotTable = js.native
-  def CreatePivotTable(TableDestination: Range, TableName: Unit, ReadData: Unit, DefaultVersion: js.Any): PivotTable = js.native
+  def CreatePivotTable(TableDestination: Range, TableName: Unit, ReadData: Boolean, DefaultVersion: Any): PivotTable = js.native
+  def CreatePivotTable(TableDestination: Range, TableName: Unit, ReadData: Unit, DefaultVersion: Any): PivotTable = js.native
   
   val Creator: XlCreator = js.native
   
@@ -58,7 +58,7 @@ trait PivotCache extends StObject {
   
   var OptimizeCache: Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val QueryType: XlQueryType = js.native
   
@@ -98,7 +98,7 @@ trait PivotCache extends StObject {
   
   val SourceType: XlPivotTableSourceType = js.native
   
-  var Sql: js.Any = js.native
+  var Sql: Any = js.native
   
   var UpgradeOnRefresh: Boolean = js.native
   

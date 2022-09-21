@@ -38,7 +38,7 @@ object ListChannelBansResponse {
     
     inline def setChannelBansUndefined: Self = StObject.set(x, "ChannelBans", js.undefined)
     
-    inline def setChannelBansVarargs(value: ChannelBanSummary*): Self = StObject.set(x, "ChannelBans", js.Array(value :_*))
+    inline def setChannelBansVarargs(value: ChannelBanSummary*): Self = StObject.set(x, "ChannelBans", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

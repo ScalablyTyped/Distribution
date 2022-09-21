@@ -8,9 +8,9 @@ trait IBackgroundTaskRegistration extends StObject {
   
   var name: String
   
-  var oncompleted: js.Any
+  var oncompleted: Any
   
-  var onprogress: js.Any
+  var onprogress: Any
   
   var taskId: String
   
@@ -18,7 +18,7 @@ trait IBackgroundTaskRegistration extends StObject {
 }
 object IBackgroundTaskRegistration {
   
-  inline def apply(name: String, oncompleted: js.Any, onprogress: js.Any, taskId: String, unregister: Boolean => Unit): IBackgroundTaskRegistration = {
+  inline def apply(name: String, oncompleted: Any, onprogress: Any, taskId: String, unregister: Boolean => Unit): IBackgroundTaskRegistration = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], oncompleted = oncompleted.asInstanceOf[js.Any], onprogress = onprogress.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any], unregister = js.Any.fromFunction1(unregister))
     __obj.asInstanceOf[IBackgroundTaskRegistration]
   }
@@ -27,9 +27,9 @@ object IBackgroundTaskRegistration {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setOncompleted(value: js.Any): Self = StObject.set(x, "oncompleted", value.asInstanceOf[js.Any])
+    inline def setOncompleted(value: Any): Self = StObject.set(x, "oncompleted", value.asInstanceOf[js.Any])
     
-    inline def setOnprogress(value: js.Any): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
+    inline def setOnprogress(value: Any): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
     
     inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CaptionDescription extends StObject {
   
   /**
+    * Indicates whether the caption track implements accessibility features such as written descriptions of spoken dialog, music, and sounds.
+    */
+  var Accessibility: js.UndefOr[AccessibilityType] = js.undefined
+  
+  /**
     * Specifies which input caption selector to use as a caption source when generating output captions. This field should match a captionSelector name.
     */
   var CaptionSelectorName: string
@@ -39,6 +44,10 @@ object CaptionDescription {
   }
   
   extension [Self <: CaptionDescription](x: Self) {
+    
+    inline def setAccessibility(value: AccessibilityType): Self = StObject.set(x, "Accessibility", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityUndefined: Self = StObject.set(x, "Accessibility", js.undefined)
     
     inline def setCaptionSelectorName(value: string): Self = StObject.set(x, "CaptionSelectorName", value.asInstanceOf[js.Any])
     

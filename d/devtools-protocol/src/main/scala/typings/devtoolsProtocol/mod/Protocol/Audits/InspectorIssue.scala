@@ -9,6 +9,12 @@ trait InspectorIssue extends StObject {
   var code: InspectorIssueCode
   
   var details: InspectorIssueDetails
+  
+  /**
+    * A unique id for this issue. May be omitted if no other entity (e.g.
+    * exception, CDP message, etc.) is referencing this issue.
+    */
+  var issueId: js.UndefOr[IssueId] = js.undefined
 }
 object InspectorIssue {
   
@@ -22,5 +28,9 @@ object InspectorIssue {
     inline def setCode(value: InspectorIssueCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     inline def setDetails(value: InspectorIssueDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    
+    inline def setIssueId(value: IssueId): Self = StObject.set(x, "issueId", value.asInstanceOf[js.Any])
+    
+    inline def setIssueIdUndefined: Self = StObject.set(x, "issueId", js.undefined)
   }
 }

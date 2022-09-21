@@ -1,5 +1,9 @@
 package typings.devtoolsProtocol.mod.Protocol.Debugger
 
+import typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByActiveFunction
+import typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByActiveGenerator
+import typings.devtoolsProtocol.devtoolsProtocolStrings.CompileError
+import typings.devtoolsProtocol.devtoolsProtocolStrings.Ok
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ExceptionDetails
 import typings.devtoolsProtocol.mod.Protocol.Runtime.StackTrace
 import typings.devtoolsProtocol.mod.Protocol.Runtime.StackTraceId
@@ -25,7 +29,7 @@ trait SetScriptSourceResponse extends StObject {
   var callFrames: js.UndefOr[js.Array[CallFrame]] = js.undefined
   
   /**
-    * Exception details if any.
+    * Exception details if any. Only present when `status` is `CompileError`.
     */
   var exceptionDetails: js.UndefOr[ExceptionDetails] = js.undefined
   
@@ -33,11 +37,18 @@ trait SetScriptSourceResponse extends StObject {
     * Whether current call stack  was modified after applying the changes.
     */
   var stackChanged: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Whether the operation was successful or not. Only `Ok` denotes a
+    * successful live edit while the other enum variants denote why
+    * the live edit failed. (SetScriptSourceResponseStatus enum)
+    */
+  var status: Ok | CompileError | BlockedByActiveGenerator | BlockedByActiveFunction
 }
 object SetScriptSourceResponse {
   
-  inline def apply(): SetScriptSourceResponse = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(status: Ok | CompileError | BlockedByActiveGenerator | BlockedByActiveFunction): SetScriptSourceResponse = {
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetScriptSourceResponse]
   }
   
@@ -55,7 +66,7 @@ object SetScriptSourceResponse {
     
     inline def setCallFramesUndefined: Self = StObject.set(x, "callFrames", js.undefined)
     
-    inline def setCallFramesVarargs(value: CallFrame*): Self = StObject.set(x, "callFrames", js.Array(value :_*))
+    inline def setCallFramesVarargs(value: CallFrame*): Self = StObject.set(x, "callFrames", js.Array(value*))
     
     inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     
@@ -64,5 +75,7 @@ object SetScriptSourceResponse {
     inline def setStackChanged(value: Boolean): Self = StObject.set(x, "stackChanged", value.asInstanceOf[js.Any])
     
     inline def setStackChangedUndefined: Self = StObject.set(x, "stackChanged", js.undefined)
+    
+    inline def setStatus(value: Ok | CompileError | BlockedByActiveGenerator | BlockedByActiveFunction): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

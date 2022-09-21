@@ -27,5 +27,5 @@ trait ISceneSerializableComponent
     * Serializes the component data to the specified json object
     * @param serializationObject The object to serialize to
     */
-  def serialize(serializationObject: js.Any): Unit = js.native
+  def serialize(serializationObject: Any): Unit = js.native
 }

@@ -1,7 +1,6 @@
 package typings.awsSdkClientKmsBrowser
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +12,12 @@ object typesGrantConstraintsMod {
     /**
       * <p>A list of key-value pairs that must be present in the encryption context of certain subsequent operations that the grant allows. When certain subsequent operations allowed by the grant include encryption context that matches this list, the grant allows the operation. Otherwise, the grant does not allow the operation.</p>
       */
-    var EncryptionContextEquals: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var EncryptionContextEquals: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * <p>A list of key-value pairs, all of which must be present in the encryption context of certain subsequent operations that the grant allows. When certain subsequent operations allowed by the grant include encryption context that matches this list or is a superset of this list, the grant allows the operation. Otherwise, the grant does not allow the operation.</p>
       */
-    var EncryptionContextSubset: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var EncryptionContextSubset: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
   }
   object GrantConstraints {
     
@@ -29,11 +28,11 @@ object typesGrantConstraintsMod {
     
     extension [Self <: GrantConstraints](x: Self) {
       
-      inline def setEncryptionContextEquals(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "EncryptionContextEquals", value.asInstanceOf[js.Any])
+      inline def setEncryptionContextEquals(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "EncryptionContextEquals", value.asInstanceOf[js.Any])
       
       inline def setEncryptionContextEqualsUndefined: Self = StObject.set(x, "EncryptionContextEquals", js.undefined)
       
-      inline def setEncryptionContextSubset(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "EncryptionContextSubset", value.asInstanceOf[js.Any])
+      inline def setEncryptionContextSubset(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "EncryptionContextSubset", value.asInstanceOf[js.Any])
       
       inline def setEncryptionContextSubsetUndefined: Self = StObject.set(x, "EncryptionContextSubset", js.undefined)
     }

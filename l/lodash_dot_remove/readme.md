@@ -10,10 +10,10 @@ The lodash method `_.remove` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.remove |
 | Keywords           | lodash-modularized, remove |
-| # releases         | 0 |
-| # dependents       | 65 |
-| # downloads        | 1434807 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 185762.66666666666 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -1,5415 +1,4440 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.angularCore.angularCoreBooleans.`false`
+import typings.angularCore.angularCoreStrings.Asterisk
+import typings.angularCore.angularCoreStrings.BrowserAnimations
+import typings.angularCore.angularCoreStrings.HTML
+import typings.angularCore.angularCoreStrings.NoopAnimations
+import typings.angularCore.angularCoreStrings.ResourceURL
+import typings.angularCore.angularCoreStrings.Script
+import typings.angularCore.angularCoreStrings.Style
+import typings.angularCore.angularCoreStrings.URL
+import typings.angularCore.anon.AppProviders
+import typings.angularCore.anon.Bootstrap
+import typings.angularCore.anon.Call
+import typings.angularCore.anon.ChangeDetection
+import typings.angularCore.anon.ContentQueries
+import typings.angularCore.anon.CtorParameters
+import typings.angularCore.anon.Declarations
+import typings.angularCore.anon.ElementInjector
+import typings.angularCore.anon.Factory
+import typings.angularCore.anon.Fn0
+import typings.angularCore.anon.FnCall
+import typings.angularCore.anon.FnCallPropNameValueSanitizer
+import typings.angularCore.anon.FnCallValue
+import typings.angularCore.anon.Imports
+import typings.angularCore.anon.InjectOptionsoptionalfals
+import typings.angularCore.anon.Pure
+import typings.angularCore.anon.RElementownerDocumentDocu
+import typings.angularCore.anon.Text
+import typings.angularCore.mod.^
+import typings.std.Document
+import typings.std.Element
+import typings.std.EventTarget
+import typings.std.HTMLElement
+import typings.std.Map
+import typings.std.Node
+import typings.std.TemplateStringsArray
+import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def ANALYZE_FOR_ENTRY_COMPONENTS: typings.angularCore.mod.InjectionToken[js.Any] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ANALYZE_FOR_ENTRY_COMPONENTS").asInstanceOf[typings.angularCore.mod.InjectionToken[js.Any]]
+inline def ANALYZE_FOR_ENTRY_COMPONENTS: InjectionToken[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("ANALYZE_FOR_ENTRY_COMPONENTS").asInstanceOf[InjectionToken[Any]]
 
-inline def APP_BOOTSTRAP_LISTENER: typings.angularCore.mod.InjectionToken[
+inline def ANIMATION_MODULE_TYPE: InjectionToken[NoopAnimations | BrowserAnimations] = ^.asInstanceOf[js.Dynamic].selectDynamic("ANIMATION_MODULE_TYPE").asInstanceOf[InjectionToken[NoopAnimations | BrowserAnimations]]
+
+inline def APP_BOOTSTRAP_LISTENER: InjectionToken[js.Array[js.Function1[/* compRef */ ComponentRef[Any], Unit]]] = ^.asInstanceOf[js.Dynamic].selectDynamic("APP_BOOTSTRAP_LISTENER").asInstanceOf[InjectionToken[js.Array[js.Function1[/* compRef */ ComponentRef[Any], Unit]]]]
+
+inline def APP_ID: InjectionToken[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("APP_ID").asInstanceOf[InjectionToken[String]]
+
+inline def APP_INITIALIZER: InjectionToken[
 js.Array[
-  js.Function1[/* compRef */ typings.angularCore.mod.ComponentRef[js.Any], scala.Unit]
-]] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("APP_BOOTSTRAP_LISTENER").asInstanceOf[typings.angularCore.mod.InjectionToken[
+  js.Function0[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<unknown> */ Any) | js.Promise[Any] | Unit
+  ]
+]] = ^.asInstanceOf[js.Dynamic].selectDynamic("APP_INITIALIZER").asInstanceOf[InjectionToken[
 js.Array[
-  js.Function1[/* compRef */ typings.angularCore.mod.ComponentRef[js.Any], scala.Unit]
+  js.Function0[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<unknown> */ Any) | js.Promise[Any] | Unit
+  ]
 ]]]
 
-inline def APP_ID: typings.angularCore.mod.InjectionToken[java.lang.String] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("APP_ID").asInstanceOf[typings.angularCore.mod.InjectionToken[java.lang.String]]
+inline def COMPILER_OPTIONS: InjectionToken[js.Array[CompilerOptions]] = ^.asInstanceOf[js.Dynamic].selectDynamic("COMPILER_OPTIONS").asInstanceOf[InjectionToken[js.Array[CompilerOptions]]]
 
-inline def APP_INITIALIZER: typings.angularCore.mod.InjectionToken[js.Array[js.Function0[scala.Unit]]] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("APP_INITIALIZER").asInstanceOf[typings.angularCore.mod.InjectionToken[js.Array[js.Function0[scala.Unit]]]]
+inline def CUSTOM_ELEMENTS_SCHEMA: SchemaMetadata = ^.asInstanceOf[js.Dynamic].selectDynamic("CUSTOM_ELEMENTS_SCHEMA").asInstanceOf[SchemaMetadata]
 
-inline def COMPILER_OPTIONS: typings.angularCore.mod.InjectionToken[js.Array[typings.angularCore.mod.CompilerOptions]] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("COMPILER_OPTIONS").asInstanceOf[typings.angularCore.mod.InjectionToken[js.Array[typings.angularCore.mod.CompilerOptions]]]
+inline def ContentChild: ContentChildDecorator = ^.asInstanceOf[js.Dynamic].selectDynamic("ContentChild").asInstanceOf[ContentChildDecorator]
+type ContentChild = Query
 
-inline def CUSTOM_ELEMENTS_SCHEMA: typings.angularCore.mod.SchemaMetadata = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("CUSTOM_ELEMENTS_SCHEMA").asInstanceOf[typings.angularCore.mod.SchemaMetadata]
+inline def ContentChildren: ContentChildrenDecorator = ^.asInstanceOf[js.Dynamic].selectDynamic("ContentChildren").asInstanceOf[ContentChildrenDecorator]
+type ContentChildren = Query
 
-inline def ContentChild: typings.angularCore.mod.ContentChildDecorator = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ContentChild").asInstanceOf[typings.angularCore.mod.ContentChildDecorator]
-type ContentChild = typings.angularCore.mod.Query
+inline def DEFAULT_CURRENCY_CODE: InjectionToken[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_CURRENCY_CODE").asInstanceOf[InjectionToken[String]]
 
-inline def ContentChildren: typings.angularCore.mod.ContentChildrenDecorator = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ContentChildren").asInstanceOf[typings.angularCore.mod.ContentChildrenDecorator]
-type ContentChildren = typings.angularCore.mod.Query
+inline def ENVIRONMENT_INITIALIZER: InjectionToken[js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].selectDynamic("ENVIRONMENT_INITIALIZER").asInstanceOf[InjectionToken[js.Function0[Unit]]]
 
-inline def DEFAULT_CURRENCY_CODE: typings.angularCore.mod.InjectionToken[java.lang.String] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_CURRENCY_CODE").asInstanceOf[typings.angularCore.mod.InjectionToken[java.lang.String]]
+inline def INJECTOR_ : InjectionToken[Injector] = ^.asInstanceOf[js.Dynamic].selectDynamic("INJECTOR").asInstanceOf[InjectionToken[Injector]]
 
-inline def INJECTOR_ : typings.angularCore.mod.InjectionToken[typings.angularCore.mod.Injector] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("INJECTOR").asInstanceOf[typings.angularCore.mod.InjectionToken[typings.angularCore.mod.Injector]]
+inline def LOCALE_ID: InjectionToken[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("LOCALE_ID").asInstanceOf[InjectionToken[String]]
 
-inline def LOCALE_ID: typings.angularCore.mod.InjectionToken[java.lang.String] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("LOCALE_ID").asInstanceOf[typings.angularCore.mod.InjectionToken[java.lang.String]]
+inline def NO_ERRORS_SCHEMA: SchemaMetadata = ^.asInstanceOf[js.Dynamic].selectDynamic("NO_ERRORS_SCHEMA").asInstanceOf[SchemaMetadata]
 
-inline def NO_ERRORS_SCHEMA: typings.angularCore.mod.SchemaMetadata = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NO_ERRORS_SCHEMA").asInstanceOf[typings.angularCore.mod.SchemaMetadata]
+inline def PACKAGE_ROOT_URL: InjectionToken[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("PACKAGE_ROOT_URL").asInstanceOf[InjectionToken[String]]
 
-inline def PACKAGE_ROOT_URL: typings.angularCore.mod.InjectionToken[java.lang.String] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PACKAGE_ROOT_URL").asInstanceOf[typings.angularCore.mod.InjectionToken[java.lang.String]]
+inline def PLATFORM_ID: InjectionToken[js.Object] = ^.asInstanceOf[js.Dynamic].selectDynamic("PLATFORM_ID").asInstanceOf[InjectionToken[js.Object]]
 
-inline def PLATFORM_ID: typings.angularCore.mod.InjectionToken[js.Object] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PLATFORM_ID").asInstanceOf[typings.angularCore.mod.InjectionToken[js.Object]]
+inline def PLATFORM_INITIALIZER: InjectionToken[js.Array[js.Function0[Unit]]] = ^.asInstanceOf[js.Dynamic].selectDynamic("PLATFORM_INITIALIZER").asInstanceOf[InjectionToken[js.Array[js.Function0[Unit]]]]
 
-inline def PLATFORM_INITIALIZER: typings.angularCore.mod.InjectionToken[js.Array[js.Function0[scala.Unit]]] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PLATFORM_INITIALIZER").asInstanceOf[typings.angularCore.mod.InjectionToken[js.Array[js.Function0[scala.Unit]]]]
+inline def TRANSLATIONS: InjectionToken[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("TRANSLATIONS").asInstanceOf[InjectionToken[String]]
 
-inline def TRANSLATIONS: typings.angularCore.mod.InjectionToken[java.lang.String] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TRANSLATIONS").asInstanceOf[typings.angularCore.mod.InjectionToken[java.lang.String]]
+inline def TRANSLATIONS_FORMAT: InjectionToken[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("TRANSLATIONS_FORMAT").asInstanceOf[InjectionToken[String]]
 
-inline def TRANSLATIONS_FORMAT: typings.angularCore.mod.InjectionToken[java.lang.String] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("TRANSLATIONS_FORMAT").asInstanceOf[typings.angularCore.mod.InjectionToken[java.lang.String]]
+inline def VERSION_ : Version = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[Version]
 
-inline def VERSION_ : typings.angularCore.mod.Version = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[typings.angularCore.mod.Version]
+inline def ViewChild: ViewChildDecorator = ^.asInstanceOf[js.Dynamic].selectDynamic("ViewChild").asInstanceOf[ViewChildDecorator]
+type ViewChild = Query
 
-inline def ViewChild: typings.angularCore.mod.ViewChildDecorator = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ViewChild").asInstanceOf[typings.angularCore.mod.ViewChildDecorator]
-type ViewChild = typings.angularCore.mod.Query
+inline def ViewChildren: ViewChildrenDecorator = ^.asInstanceOf[js.Dynamic].selectDynamic("ViewChildren").asInstanceOf[ViewChildrenDecorator]
+type ViewChildren = Query
 
-inline def ViewChildren: typings.angularCore.mod.ViewChildrenDecorator = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ViewChildren").asInstanceOf[typings.angularCore.mod.ViewChildrenDecorator]
-type ViewChildren = typings.angularCore.mod.Query
+inline def asNativeElements(debugEls: js.Array[DebugElement]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("asNativeElements")(debugEls.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def asNativeElements(debugEls: js.Array[typings.angularCore.mod.DebugElement]): js.Any = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("asNativeElements")(debugEls.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def assertPlatform(requiredToken: Any): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("assertPlatform")(requiredToken.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
 
-inline def assertPlatform(requiredToken: js.Any): typings.angularCore.mod.PlatformRef = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("assertPlatform")(requiredToken.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.PlatformRef]
+inline def createComponent[C](component: Type[C], options: ElementInjector): ComponentRef[C] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ComponentRef[C]]
 
-inline def createPlatform(injector: typings.angularCore.mod.Injector): typings.angularCore.mod.PlatformRef = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createPlatform")(injector.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.PlatformRef]
+inline def createEnvironmentInjector(providers: js.Array[ImportedNgModuleProviders | Provider], parent: EnvironmentInjector): EnvironmentInjector = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvironmentInjector")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[EnvironmentInjector]
+inline def createEnvironmentInjector(
+  providers: js.Array[Provider | ImportedNgModuleProviders],
+  parent: EnvironmentInjector,
+  debugName: String
+): EnvironmentInjector = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvironmentInjector")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], debugName.asInstanceOf[js.Any])).asInstanceOf[EnvironmentInjector]
+
+inline def createNgModule[T](ngModule: Type[T]): NgModuleRef[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNgModule")(ngModule.asInstanceOf[js.Any]).asInstanceOf[NgModuleRef[T]]
+inline def createNgModule[T](ngModule: Type[T], parentInjector: Injector): NgModuleRef[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNgModule")(ngModule.asInstanceOf[js.Any], parentInjector.asInstanceOf[js.Any])).asInstanceOf[NgModuleRef[T]]
+
+inline def createNgModuleRef[T](ngModule: Type[T]): NgModuleRef[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNgModuleRef")(ngModule.asInstanceOf[js.Any]).asInstanceOf[NgModuleRef[T]]
+inline def createNgModuleRef[T](ngModule: Type[T], parentInjector: Injector): NgModuleRef[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNgModuleRef")(ngModule.asInstanceOf[js.Any], parentInjector.asInstanceOf[js.Any])).asInstanceOf[NgModuleRef[T]]
+
+inline def createPlatform(injector: Injector): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createPlatform")(injector.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
 
 inline def createPlatformFactory(
-  parentPlatformFactory: js.Function1[
-  /* extraProviders */ js.UndefOr[js.Array[typings.angularCore.mod.StaticProvider]], 
-  typings.angularCore.mod.PlatformRef
-],
-  name: java.lang.String
-): js.Function1[
-/* extraProviders */ js.UndefOr[js.Array[typings.angularCore.mod.StaticProvider]], 
-typings.angularCore.mod.PlatformRef] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createPlatformFactory")(parentPlatformFactory.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-/* extraProviders */ js.UndefOr[js.Array[typings.angularCore.mod.StaticProvider]], 
-typings.angularCore.mod.PlatformRef]]
+  parentPlatformFactory: js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef],
+  name: String
+): js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlatformFactory")(parentPlatformFactory.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef]]
 inline def createPlatformFactory(
-  parentPlatformFactory: js.Function1[
-  /* extraProviders */ js.UndefOr[js.Array[typings.angularCore.mod.StaticProvider]], 
-  typings.angularCore.mod.PlatformRef
-],
-  name: java.lang.String,
-  providers: js.Array[typings.angularCore.mod.StaticProvider]
-): js.Function1[
-/* extraProviders */ js.UndefOr[js.Array[typings.angularCore.mod.StaticProvider]], 
-typings.angularCore.mod.PlatformRef] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createPlatformFactory")(parentPlatformFactory.asInstanceOf[js.Any], name.asInstanceOf[js.Any], providers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-/* extraProviders */ js.UndefOr[js.Array[typings.angularCore.mod.StaticProvider]], 
-typings.angularCore.mod.PlatformRef]]
-inline def createPlatformFactory(parentPlatformFactory: scala.Null, name: java.lang.String): js.Function1[
-/* extraProviders */ js.UndefOr[js.Array[typings.angularCore.mod.StaticProvider]], 
-typings.angularCore.mod.PlatformRef] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createPlatformFactory")(parentPlatformFactory.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-/* extraProviders */ js.UndefOr[js.Array[typings.angularCore.mod.StaticProvider]], 
-typings.angularCore.mod.PlatformRef]]
-inline def createPlatformFactory(
-  parentPlatformFactory: scala.Null,
-  name: java.lang.String,
-  providers: js.Array[typings.angularCore.mod.StaticProvider]
-): js.Function1[
-/* extraProviders */ js.UndefOr[js.Array[typings.angularCore.mod.StaticProvider]], 
-typings.angularCore.mod.PlatformRef] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createPlatformFactory")(parentPlatformFactory.asInstanceOf[js.Any], name.asInstanceOf[js.Any], providers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-/* extraProviders */ js.UndefOr[js.Array[typings.angularCore.mod.StaticProvider]], 
-typings.angularCore.mod.PlatformRef]]
+  parentPlatformFactory: js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef],
+  name: String,
+  providers: js.Array[StaticProvider]
+): js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlatformFactory")(parentPlatformFactory.asInstanceOf[js.Any], name.asInstanceOf[js.Any], providers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef]]
+inline def createPlatformFactory(parentPlatformFactory: Null, name: String): js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlatformFactory")(parentPlatformFactory.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef]]
+inline def createPlatformFactory(parentPlatformFactory: Null, name: String, providers: js.Array[StaticProvider]): js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlatformFactory")(parentPlatformFactory.asInstanceOf[js.Any], name.asInstanceOf[js.Any], providers.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* extraProviders */ js.UndefOr[js.Array[StaticProvider]], PlatformRef]]
 
-inline def defineInjectable[T](opts: typings.angularCore.anon.Factory[T]): scala.Nothing = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defineInjectable")(opts.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+inline def defineInjectable[T](opts: Factory[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defineInjectable")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def destroyPlatform(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("destroyPlatform")().asInstanceOf[scala.Unit]
+inline def destroyPlatform(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyPlatform")().asInstanceOf[Unit]
 
-inline def enableProdMode(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("enableProdMode")().asInstanceOf[scala.Unit]
+inline def enableProdMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableProdMode")().asInstanceOf[Unit]
 
-inline def forwardRef(forwardRefFn: typings.angularCore.mod.ForwardRefFn): typings.angularCore.mod.Type[js.Any] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("forwardRef")(forwardRefFn.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.Type[js.Any]]
+inline def forwardRef(forwardRefFn: ForwardRefFn): Type[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("forwardRef")(forwardRefFn.asInstanceOf[js.Any]).asInstanceOf[Type[Any]]
 
-inline def getDebugNode(nativeNode: js.Any): typings.angularCore.mod.DebugNode | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDebugNode")(nativeNode.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.DebugNode | scala.Null]
+/**
+  * @publicApi
+  */
+inline def getDebugNode(nativeNode: Any): DebugNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDebugNode")(nativeNode.asInstanceOf[js.Any]).asInstanceOf[DebugNode | Null]
 
-inline def getModuleFactory(id: java.lang.String): typings.angularCore.mod.NgModuleFactory[js.Any] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getModuleFactory")(id.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.NgModuleFactory[js.Any]]
+inline def getModuleFactory(id: String): NgModuleFactory[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleFactory")(id.asInstanceOf[js.Any]).asInstanceOf[NgModuleFactory[Any]]
 
-inline def getPlatform(): typings.angularCore.mod.PlatformRef | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getPlatform")().asInstanceOf[typings.angularCore.mod.PlatformRef | scala.Null]
+inline def getNgModuleById[T](id: String): Type[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNgModuleById")(id.asInstanceOf[js.Any]).asInstanceOf[Type[T]]
 
-inline def inject[T](token: typings.angularCore.mod.InjectionToken[T]): T | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T | scala.Null]
-inline def inject[T](token: typings.angularCore.mod.InjectionToken[T], flags: typings.angularCore.mod.InjectFlags): T | scala.Null = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | scala.Null]
-inline def inject[T](token: typings.angularCore.mod.Type[T]): T | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T | scala.Null]
-inline def inject[T](token: typings.angularCore.mod.Type[T], flags: typings.angularCore.mod.InjectFlags): T | scala.Null = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | scala.Null]
+inline def getPlatform(): PlatformRef | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatform")().asInstanceOf[PlatformRef | Null]
 
-inline def inject_T_T[T](token: typings.angularCore.mod.InjectionToken[T]): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def inject_T_T[T](token: typings.angularCore.mod.Type[T]): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def importProvidersFrom(sources: ImportProvidersSource*): ImportedNgModuleProviders = ^.asInstanceOf[js.Dynamic].applyDynamic("importProvidersFrom")(sources.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ImportedNgModuleProviders]
 
-inline def isDevMode(): scala.Boolean = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isDevMode")().asInstanceOf[scala.Boolean]
+inline def inject[T](token: ProviderToken[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+inline def inject[T](token: ProviderToken[T], flags: InjectFlags): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+inline def inject[T](token: ProviderToken[T], options: InjectOptionsoptionalfals): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def inject[T](token: ProviderToken[T], options: InjectOptions): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T | Null]
 
-inline def platformCore(): typings.angularCore.mod.PlatformRef = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("platformCore")().asInstanceOf[typings.angularCore.mod.PlatformRef]
-inline def platformCore(extraProviders: js.Array[typings.angularCore.mod.StaticProvider]): typings.angularCore.mod.PlatformRef = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("platformCore")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.PlatformRef]
+inline def inject_T_T[T](token: ProviderToken[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def resolveForwardRef[T](`type`: T): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("resolveForwardRef")(`type`.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def isDevMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDevMode")().asInstanceOf[Boolean]
 
-inline def setTestabilityGetter(getter: typings.angularCore.mod.GetTestability): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setTestabilityGetter")(getter.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def platformCore(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformCore")().asInstanceOf[PlatformRef]
+inline def platformCore(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformCore")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
 
-inline def ɵALLOWMULTIPLEPLATFORMS: typings.angularCore.mod.InjectionToken[scala.Boolean] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275ALLOW_MULTIPLE_PLATFORMS").asInstanceOf[typings.angularCore.mod.InjectionToken[scala.Boolean]]
+inline def reflectComponentType[C](component: Type[C]): ComponentMirror[C] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("reflectComponentType")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentMirror[C] | Null]
 
-inline def ɵCompilerCompileModuleAndAllComponentsAsyncPOSTR3[T](moduleType: typings.angularCore.mod.Type[T]): js.Promise[typings.angularCore.mod.ModuleWithComponentFactories[T]] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275Compiler_compileModuleAndAllComponentsAsync__POST_R3__")(moduleType.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.angularCore.mod.ModuleWithComponentFactories[T]]]
+inline def resolveForwardRef[T](`type`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveForwardRef")(`type`.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def ɵCompilerCompileModuleAndAllComponentsSyncPOSTR3[T](moduleType: typings.angularCore.mod.Type[T]): typings.angularCore.mod.ModuleWithComponentFactories[T] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275Compiler_compileModuleAndAllComponentsSync__POST_R3__")(moduleType.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.ModuleWithComponentFactories[T]]
+inline def setTestabilityGetter(getter: GetTestability): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTestabilityGetter")(getter.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵCompilerCompileModuleAsyncPOSTR3[T](moduleType: typings.angularCore.mod.Type[T]): js.Promise[typings.angularCore.mod.NgModuleFactory[T]] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275Compiler_compileModuleAsync__POST_R3__")(moduleType.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.angularCore.mod.NgModuleFactory[T]]]
+inline def ɵALLOWMULTIPLEPLATFORMS: InjectionToken[Boolean] = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275ALLOW_MULTIPLE_PLATFORMS").asInstanceOf[InjectionToken[Boolean]]
 
-inline def ɵCompilerCompileModuleSyncPOSTR3[T](moduleType: typings.angularCore.mod.Type[T]): typings.angularCore.mod.NgModuleFactory[T] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275Compiler_compileModuleSync__POST_R3__")(moduleType.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.NgModuleFactory[T]]
+inline def ɵDEFAULTLOCALEID: /* "en-US" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275DEFAULT_LOCALE_ID").asInstanceOf[/* "en-US" */ String]
 
-inline def ɵDEFAULTLOCALEID: /* "en-US" */ java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275DEFAULT_LOCALE_ID").asInstanceOf[/* "en-US" */ java.lang.String]
+inline def ɵINJECTORSCOPE: InjectionToken[InjectorScope | Null] = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275INJECTOR_SCOPE").asInstanceOf[InjectionToken[InjectorScope | Null]]
 
-inline def ɵEMPTYARRAY: js.Array[js.Any] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275EMPTY_ARRAY").asInstanceOf[js.Array[js.Any]]
+inline def ɵLifecycleHooksFeature(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275LifecycleHooksFeature")().asInstanceOf[Unit]
 
-inline def ɵINJECTORIMPLPOSTR3(
-  providers: js.Array[typings.angularCore.mod.StaticProvider],
-  parent: scala.Unit,
-  name: java.lang.String
-): typings.angularCore.mod.Injector = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275INJECTOR_IMPL__POST_R3__")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.Injector]
-inline def ɵINJECTORIMPLPOSTR3(
-  providers: js.Array[typings.angularCore.mod.StaticProvider],
-  parent: typings.angularCore.mod.Injector,
-  name: java.lang.String
-): typings.angularCore.mod.Injector = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275INJECTOR_IMPL__POST_R3__")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.Injector]
+inline def ɵNGCOMPDEF: String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275NG_COMP_DEF").asInstanceOf[String]
 
-inline def ɵINJECTORSCOPE: typings.angularCore.mod.InjectionToken[
-typings.angularCore.angularCoreStrings.root | typings.angularCore.angularCoreStrings.platform | scala.Null] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275INJECTOR_SCOPE").asInstanceOf[typings.angularCore.mod.InjectionToken[
-typings.angularCore.angularCoreStrings.root | typings.angularCore.angularCoreStrings.platform | scala.Null]]
+inline def ɵNGDIRDEF: String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275NG_DIR_DEF").asInstanceOf[String]
 
-inline def ɵLifecycleHooksFeature(component: js.Any, `def`: typings.angularCore.mod.ɵComponentDef[js.Any]): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275LifecycleHooksFeature")(component.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵNGELEMENTID: String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275NG_ELEMENT_ID").asInstanceOf[String]
 
-inline def ɵNGCOMPDEF: java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275NG_COMP_DEF").asInstanceOf[java.lang.String]
+inline def ɵNGINJDEF: String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275NG_INJ_DEF").asInstanceOf[String]
 
-inline def ɵNGDIRDEF: java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275NG_DIR_DEF").asInstanceOf[java.lang.String]
+inline def ɵNGMODDEF: String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275NG_MOD_DEF").asInstanceOf[String]
 
-inline def ɵNGELEMENTID: java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275NG_ELEMENT_ID").asInstanceOf[java.lang.String]
+inline def ɵNGPIPEDEF: String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275NG_PIPE_DEF").asInstanceOf[String]
 
-inline def ɵNGINJDEF: java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275NG_INJ_DEF").asInstanceOf[java.lang.String]
+inline def ɵNGPROVDEF: String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275NG_PROV_DEF").asInstanceOf[String]
 
-inline def ɵNGMODDEF: java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275NG_MOD_DEF").asInstanceOf[java.lang.String]
+inline def ɵSanitizeHtml(defaultDoc: Any, unsafeHtmlInput: String): TrustedHTML | String = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275_sanitizeHtml")(defaultDoc.asInstanceOf[js.Any], unsafeHtmlInput.asInstanceOf[js.Any])).asInstanceOf[TrustedHTML | String]
 
-inline def ɵNGPIPEDEF: java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275NG_PIPE_DEF").asInstanceOf[java.lang.String]
+inline def ɵSanitizeUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275_sanitizeUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def ɵNGPROVDEF: java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275NG_PROV_DEF").asInstanceOf[java.lang.String]
-
-inline def ɵSWITCHCHANGEDETECTORREFFACTORYPOSTR3: js.Function1[/* isPipe */ js.UndefOr[scala.Boolean], typings.angularCore.mod.ChangeDetectorRef] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275SWITCH_CHANGE_DETECTOR_REF_FACTORY__POST_R3__").asInstanceOf[js.Function1[/* isPipe */ js.UndefOr[scala.Boolean], typings.angularCore.mod.ChangeDetectorRef]]
-
-inline def ɵSWITCHCOMPILECOMPONENTPOSTR3: js.Function2[
-/* type */ typings.angularCore.mod.Type[js.Any], 
-/* metadata */ typings.angularCore.mod.Component, 
-scala.Unit] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275SWITCH_COMPILE_COMPONENT__POST_R3__").asInstanceOf[js.Function2[
-/* type */ typings.angularCore.mod.Type[js.Any], 
-/* metadata */ typings.angularCore.mod.Component, 
-scala.Unit]]
-
-inline def ɵSWITCHCOMPILEDIRECTIVEPOSTR3: js.Function2[
-/* type */ typings.angularCore.mod.Type[js.Any], 
-/* directive */ typings.angularCore.mod.Directive | scala.Null, 
-scala.Unit] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275SWITCH_COMPILE_DIRECTIVE__POST_R3__").asInstanceOf[js.Function2[
-/* type */ typings.angularCore.mod.Type[js.Any], 
-/* directive */ typings.angularCore.mod.Directive | scala.Null, 
-scala.Unit]]
-
-inline def ɵSWITCHCOMPILEINJECTABLEPOSTR3: js.Function2[
-/* type */ typings.angularCore.mod.Type[js.Any], 
-/* srcMeta */ js.UndefOr[typings.angularCore.mod.Injectable], 
-scala.Unit] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275SWITCH_COMPILE_INJECTABLE__POST_R3__").asInstanceOf[js.Function2[
-/* type */ typings.angularCore.mod.Type[js.Any], 
-/* srcMeta */ js.UndefOr[typings.angularCore.mod.Injectable], 
-scala.Unit]]
-
-inline def ɵSWITCHCOMPILENGMODULEPOSTR3: js.Function2[
-/* moduleType */ typings.angularCore.mod.Type[js.Any], 
-/* ngModule */ js.UndefOr[typings.angularCore.mod.NgModule], 
-scala.Unit] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275SWITCH_COMPILE_NGMODULE__POST_R3__").asInstanceOf[js.Function2[
-/* moduleType */ typings.angularCore.mod.Type[js.Any], 
-/* ngModule */ js.UndefOr[typings.angularCore.mod.NgModule], 
-scala.Unit]]
-
-inline def ɵSWITCHCOMPILEPIPEPOSTR3: js.Function2[
-/* type */ typings.angularCore.mod.Type[js.Any], 
-/* meta */ typings.angularCore.mod.Pipe, 
-scala.Unit] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275SWITCH_COMPILE_PIPE__POST_R3__").asInstanceOf[js.Function2[
-/* type */ typings.angularCore.mod.Type[js.Any], 
-/* meta */ typings.angularCore.mod.Pipe, 
-scala.Unit]]
-
-inline def ɵSWITCHELEMENTREFFACTORYPOSTR3: js.Function0[typings.angularCore.mod.ElementRef[js.Any]] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275SWITCH_ELEMENT_REF_FACTORY__POST_R3__").asInstanceOf[js.Function0[typings.angularCore.mod.ElementRef[js.Any]]]
-
-inline def ɵSWITCHIVYENABLEDPOSTR3: /* true */ scala.Boolean = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275SWITCH_IVY_ENABLED__POST_R3__").asInstanceOf[/* true */ scala.Boolean]
-
-inline def ɵSWITCHRENDERER2FACTORYPOSTR3: js.Function0[typings.angularCore.mod.Renderer2] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275SWITCH_RENDERER2_FACTORY__POST_R3__").asInstanceOf[js.Function0[typings.angularCore.mod.Renderer2]]
-
-inline def ɵSWITCHTEMPLATEREFFACTORYPOSTR3[T](): typings.angularCore.mod.TemplateRef[T] | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275SWITCH_TEMPLATE_REF_FACTORY__POST_R3__")().asInstanceOf[typings.angularCore.mod.TemplateRef[T] | scala.Null]
-
-inline def ɵSWITCHVIEWCONTAINERREFFACTORYPOSTR3: js.Function0[typings.angularCore.mod.ViewContainerRef] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275SWITCH_VIEW_CONTAINER_REF_FACTORY__POST_R3__").asInstanceOf[js.Function0[typings.angularCore.mod.ViewContainerRef]]
-
-inline def ɵSanitizeHtml(defaultDoc: js.Any, unsafeHtmlInput: java.lang.String): java.lang.String = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275_sanitizeHtml")(defaultDoc.asInstanceOf[js.Any], unsafeHtmlInput.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-
-inline def ɵSanitizeUrl(url: java.lang.String): java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275_sanitizeUrl")(url.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-
-inline def ɵallowSanitizationBypassAndThrow(value: js.Any, `type`: typings.angularCore.mod.ɵBypassType): scala.Boolean = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-
-inline def ɵallowSanitizationBypassAndThrow_HTML(value: js.Any, `type`: typings.angularCore.angularCoreStrings.HTML): /* is @angular/core.@angular/core.ɵSafeHtml */ scala.Boolean = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeHtml */ scala.Boolean]
-
-inline def ɵallowSanitizationBypassAndThrow_ResourceURL(value: js.Any, `type`: typings.angularCore.angularCoreStrings.ResourceURL): /* is @angular/core.@angular/core.ɵSafeResourceUrl */ scala.Boolean = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeResourceUrl */ scala.Boolean]
-
-inline def ɵallowSanitizationBypassAndThrow_Script(value: js.Any, `type`: typings.angularCore.angularCoreStrings.Script): /* is @angular/core.@angular/core.ɵSafeScript */ scala.Boolean = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeScript */ scala.Boolean]
-
-inline def ɵallowSanitizationBypassAndThrow_Style(value: js.Any, `type`: typings.angularCore.angularCoreStrings.Style): /* is @angular/core.@angular/core.ɵSafeStyle */ scala.Boolean = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeStyle */ scala.Boolean]
-
-inline def ɵallowSanitizationBypassAndThrow_URL(value: js.Any, `type`: typings.angularCore.angularCoreStrings.URL): /* is @angular/core.@angular/core.ɵSafeUrl */ scala.Boolean = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeUrl */ scala.Boolean]
-
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: js.Array[
-  js.Tuple2[scala.Double | java.lang.String, typings.angularCore.mod.ɵQueryValueType]
-],
-  ngContentIndex: scala.Double,
-  childCount: scala.Double
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  ngContentIndex: scala.Double,
-  childCount: scala.Double,
-  handleEvent: scala.Null,
-  templateFactory: typings.angularCore.mod.ViewDefinitionFactory
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any], templateFactory.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  ngContentIndex: scala.Double,
-  childCount: scala.Double,
-  handleEvent: scala.Unit,
-  templateFactory: typings.angularCore.mod.ViewDefinitionFactory
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any], templateFactory.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  ngContentIndex: scala.Double,
-  childCount: scala.Double,
-  handleEvent: typings.angularCore.mod.ElementHandleEventFn
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  ngContentIndex: scala.Double,
-  childCount: scala.Double,
-  handleEvent: typings.angularCore.mod.ElementHandleEventFn,
-  templateFactory: typings.angularCore.mod.ViewDefinitionFactory
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any], templateFactory.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: js.Array[
-  js.Tuple2[scala.Double | java.lang.String, typings.angularCore.mod.ɵQueryValueType]
-],
-  ngContentIndex: scala.Null,
-  childCount: scala.Double
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  ngContentIndex: scala.Null,
-  childCount: scala.Double,
-  handleEvent: scala.Null,
-  templateFactory: typings.angularCore.mod.ViewDefinitionFactory
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any], templateFactory.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  ngContentIndex: scala.Null,
-  childCount: scala.Double,
-  handleEvent: scala.Unit,
-  templateFactory: typings.angularCore.mod.ViewDefinitionFactory
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any], templateFactory.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  ngContentIndex: scala.Null,
-  childCount: scala.Double,
-  handleEvent: typings.angularCore.mod.ElementHandleEventFn
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  ngContentIndex: scala.Null,
-  childCount: scala.Double,
-  handleEvent: typings.angularCore.mod.ElementHandleEventFn,
-  templateFactory: typings.angularCore.mod.ViewDefinitionFactory
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any], templateFactory.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: scala.Null,
-  ngContentIndex: scala.Double,
-  childCount: scala.Double
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: scala.Null,
-  ngContentIndex: scala.Double,
-  childCount: scala.Double,
-  handleEvent: scala.Null,
-  templateFactory: typings.angularCore.mod.ViewDefinitionFactory
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any], templateFactory.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: scala.Null,
-  ngContentIndex: scala.Double,
-  childCount: scala.Double,
-  handleEvent: scala.Unit,
-  templateFactory: typings.angularCore.mod.ViewDefinitionFactory
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any], templateFactory.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: scala.Null,
-  ngContentIndex: scala.Double,
-  childCount: scala.Double,
-  handleEvent: typings.angularCore.mod.ElementHandleEventFn
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: scala.Null,
-  ngContentIndex: scala.Double,
-  childCount: scala.Double,
-  handleEvent: typings.angularCore.mod.ElementHandleEventFn,
-  templateFactory: typings.angularCore.mod.ViewDefinitionFactory
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any], templateFactory.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: scala.Null,
-  ngContentIndex: scala.Null,
-  childCount: scala.Double
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: scala.Null,
-  ngContentIndex: scala.Null,
-  childCount: scala.Double,
-  handleEvent: scala.Null,
-  templateFactory: typings.angularCore.mod.ViewDefinitionFactory
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any], templateFactory.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: scala.Null,
-  ngContentIndex: scala.Null,
-  childCount: scala.Double,
-  handleEvent: scala.Unit,
-  templateFactory: typings.angularCore.mod.ViewDefinitionFactory
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any], templateFactory.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: scala.Null,
-  ngContentIndex: scala.Null,
-  childCount: scala.Double,
-  handleEvent: typings.angularCore.mod.ElementHandleEventFn
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵand(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: scala.Null,
-  ngContentIndex: scala.Null,
-  childCount: scala.Double,
-  handleEvent: typings.angularCore.mod.ElementHandleEventFn,
-  templateFactory: typings.angularCore.mod.ViewDefinitionFactory
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275and")(flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any], templateFactory.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-
-inline def ɵangularPackagesCoreCoreA(fn: js.Any): scala.Boolean = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_a")(fn.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-
-inline def ɵangularPackagesCoreCoreB[T](token: typings.angularCore.mod.InjectionToken[T]): T | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_b")(token.asInstanceOf[js.Any]).asInstanceOf[T | scala.Null]
-inline def ɵangularPackagesCoreCoreB[T](token: typings.angularCore.mod.InjectionToken[T], flags: typings.angularCore.mod.InjectFlags): T | scala.Null = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_b")(token.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | scala.Null]
-inline def ɵangularPackagesCoreCoreB[T](token: typings.angularCore.mod.Type[T]): T | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_b")(token.asInstanceOf[js.Any]).asInstanceOf[T | scala.Null]
-inline def ɵangularPackagesCoreCoreB[T](token: typings.angularCore.mod.Type[T], flags: typings.angularCore.mod.InjectFlags): T | scala.Null = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_b")(token.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | scala.Null]
-
-inline def ɵangularPackagesCoreCoreB_T_T[T](token: typings.angularCore.mod.InjectionToken[T]): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_b")(token.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def ɵangularPackagesCoreCoreB_T_T[T](token: typings.angularCore.mod.Type[T]): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_b")(token.asInstanceOf[js.Any]).asInstanceOf[T]
-
-inline def ɵangularPackagesCoreCoreBb[T](definition: typings.angularCore.mod.ɵDirectiveDef[T]): js.ThisFunction0[/* this */ typings.angularCore.mod.OnChanges, scala.Unit] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bb")(definition.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ typings.angularCore.mod.OnChanges, scala.Unit]]
-
-inline def ɵangularPackagesCoreCoreBc: typings.angularCore.mod.InjectionToken[js.Function1[/* fn */ js.Function0[scala.Unit], scala.Unit]] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275angular_packages_core_core_bc").asInstanceOf[typings.angularCore.mod.InjectionToken[js.Function1[/* fn */ js.Function0[scala.Unit], scala.Unit]]]
-
-inline def ɵangularPackagesCoreCoreBd(tNode: typings.angularCore.mod.TNode, attrNameToInject: java.lang.String): java.lang.String | scala.Null = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bd")(tNode.asInstanceOf[js.Any], attrNameToInject.asInstanceOf[js.Any])).asInstanceOf[java.lang.String | scala.Null]
-
-inline def ɵangularPackagesCoreCoreBe(): typings.angularCore.mod.ɵangularPackagesCoreCoreBv = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_be")().asInstanceOf[typings.angularCore.mod.ɵangularPackagesCoreCoreBv]
-
-inline def ɵangularPackagesCoreCoreBf(): scala.Double = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bf")().asInstanceOf[scala.Double]
-
-inline def ɵangularPackagesCoreCoreBg[T](level: scala.Double): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bg")(level.asInstanceOf[js.Any]).asInstanceOf[T]
-
-inline def ɵangularPackagesCoreCoreBi(
-  lView: typings.angularCore.mod.ɵangularPackagesCoreCoreBv,
-  bindingRoot: scala.Double,
-  slotOffset: scala.Double,
-  pureFn: js.Function1[/* v */ js.Any, js.Any],
-  exp: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bi")(lView.asInstanceOf[js.Any], bindingRoot.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵangularPackagesCoreCoreBi(
-  lView: typings.angularCore.mod.ɵangularPackagesCoreCoreBv,
-  bindingRoot: scala.Double,
-  slotOffset: scala.Double,
-  pureFn: js.Function1[/* v */ js.Any, js.Any],
-  exp: js.Any,
-  thisArg: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bi")(lView.asInstanceOf[js.Any], bindingRoot.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-
-inline def ɵangularPackagesCoreCoreBj(
-  lView: typings.angularCore.mod.ɵangularPackagesCoreCoreBv,
-  bindingRoot: scala.Double,
-  slotOffset: scala.Double,
-  pureFn: js.Function2[/* v1 */ js.Any, /* v2 */ js.Any, js.Any],
-  exp1: js.Any,
-  exp2: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bj")(lView.asInstanceOf[js.Any], bindingRoot.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵangularPackagesCoreCoreBj(
-  lView: typings.angularCore.mod.ɵangularPackagesCoreCoreBv,
-  bindingRoot: scala.Double,
-  slotOffset: scala.Double,
-  pureFn: js.Function2[/* v1 */ js.Any, /* v2 */ js.Any, js.Any],
-  exp1: js.Any,
-  exp2: js.Any,
-  thisArg: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bj")(lView.asInstanceOf[js.Any], bindingRoot.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-
-inline def ɵangularPackagesCoreCoreBk(
-  lView: typings.angularCore.mod.ɵangularPackagesCoreCoreBv,
-  bindingRoot: scala.Double,
-  slotOffset: scala.Double,
-  pureFn: js.Function3[/* v1 */ js.Any, /* v2 */ js.Any, /* v3 */ js.Any, js.Any],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bk")(lView.asInstanceOf[js.Any], bindingRoot.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵangularPackagesCoreCoreBk(
-  lView: typings.angularCore.mod.ɵangularPackagesCoreCoreBv,
-  bindingRoot: scala.Double,
-  slotOffset: scala.Double,
-  pureFn: js.Function3[/* v1 */ js.Any, /* v2 */ js.Any, /* v3 */ js.Any, js.Any],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any,
-  thisArg: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bk")(lView.asInstanceOf[js.Any], bindingRoot.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-
-inline def ɵangularPackagesCoreCoreBl(
-  lView: typings.angularCore.mod.ɵangularPackagesCoreCoreBv,
-  bindingRoot: scala.Double,
-  slotOffset: scala.Double,
-  pureFn: js.Function4[/* v1 */ js.Any, /* v2 */ js.Any, /* v3 */ js.Any, /* v4 */ js.Any, js.Any],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any,
-  exp4: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bl")(lView.asInstanceOf[js.Any], bindingRoot.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵangularPackagesCoreCoreBl(
-  lView: typings.angularCore.mod.ɵangularPackagesCoreCoreBv,
-  bindingRoot: scala.Double,
-  slotOffset: scala.Double,
-  pureFn: js.Function4[/* v1 */ js.Any, /* v2 */ js.Any, /* v3 */ js.Any, /* v4 */ js.Any, js.Any],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any,
-  exp4: js.Any,
-  thisArg: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bl")(lView.asInstanceOf[js.Any], bindingRoot.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-
-inline def ɵangularPackagesCoreCoreBm(
-  lView: typings.angularCore.mod.ɵangularPackagesCoreCoreBv,
-  bindingRoot: scala.Double,
-  slotOffset: scala.Double,
-  pureFn: js.Function1[/* repeated */ js.Any, js.Any],
-  exps: js.Array[js.Any]
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bm")(lView.asInstanceOf[js.Any], bindingRoot.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exps.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵangularPackagesCoreCoreBm(
-  lView: typings.angularCore.mod.ɵangularPackagesCoreCoreBv,
-  bindingRoot: scala.Double,
-  slotOffset: scala.Double,
-  pureFn: js.Function1[/* repeated */ js.Any, js.Any],
-  exps: js.Array[js.Any],
-  thisArg: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bm")(lView.asInstanceOf[js.Any], bindingRoot.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exps.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-
-inline def ɵangularPackagesCoreCoreBn(tag: java.lang.String, prop: java.lang.String): js.Function1[/* unsafeResourceUrl */ js.Any, java.lang.String] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bn")(tag.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* unsafeResourceUrl */ js.Any, java.lang.String]]
-
-inline def ɵangularPackagesCoreCoreBo(name: java.lang.String): js.Any = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bo")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-inline def ɵangularPackagesCoreCoreBo(name: java.lang.String, props: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bo")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵangularPackagesCoreCoreBo(name: java.lang.String, props: js.Function1[/* repeated */ js.Any, js.Any], parentClass: js.Any): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bo")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵangularPackagesCoreCoreBo(name: java.lang.String, props: scala.Unit, parentClass: js.Any): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bo")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-
-inline def ɵangularPackagesCoreCoreBp(name: java.lang.String): js.Any = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bp")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-inline def ɵangularPackagesCoreCoreBp(name: java.lang.String, props: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bp")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵangularPackagesCoreCoreBp(name: java.lang.String, props: js.Function1[/* repeated */ js.Any, js.Any], parentClass: js.Any): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bp")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵangularPackagesCoreCoreBp(
-  name: java.lang.String,
-  props: js.Function1[/* repeated */ js.Any, js.Any],
-  parentClass: js.Any,
-  additionalProcessing: js.Function3[/* target */ js.Any, /* name */ java.lang.String, /* repeated */ js.Any, scala.Unit]
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bp")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵangularPackagesCoreCoreBp(
-  name: java.lang.String,
-  props: js.Function1[/* repeated */ js.Any, js.Any],
-  parentClass: scala.Unit,
-  additionalProcessing: js.Function3[/* target */ js.Any, /* name */ java.lang.String, /* repeated */ js.Any, scala.Unit]
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bp")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵangularPackagesCoreCoreBp(name: java.lang.String, props: scala.Unit, parentClass: js.Any): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bp")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵangularPackagesCoreCoreBp(
-  name: java.lang.String,
-  props: scala.Unit,
-  parentClass: js.Any,
-  additionalProcessing: js.Function3[/* target */ js.Any, /* name */ java.lang.String, /* repeated */ js.Any, scala.Unit]
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bp")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵangularPackagesCoreCoreBp(
-  name: java.lang.String,
-  props: scala.Unit,
-  parentClass: scala.Unit,
-  additionalProcessing: js.Function3[/* target */ js.Any, /* name */ java.lang.String, /* repeated */ js.Any, scala.Unit]
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bp")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-
-inline def ɵangularPackagesCoreCoreBq[T](objWithPropertyToExtract: T): java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bq")(objWithPropertyToExtract.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-
-inline def ɵangularPackagesCoreCoreBs(): js.UndefOr[
-js.Function2[
-  /* token */ typings.angularCore.mod.Type[js.Any] | typings.angularCore.mod.InjectionToken[js.Any], 
-  /* flags */ js.UndefOr[typings.angularCore.mod.InjectFlags], 
-  js.Any | scala.Null
-]] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bs")().asInstanceOf[js.UndefOr[
-js.Function2[
-  /* token */ typings.angularCore.mod.Type[js.Any] | typings.angularCore.mod.InjectionToken[js.Any], 
-  /* flags */ js.UndefOr[typings.angularCore.mod.InjectFlags], 
-  js.Any | scala.Null
-]]]
-
-inline def ɵangularPackagesCoreCoreBu(tNode: typings.angularCore.mod.TNode, lView: typings.angularCore.mod.ɵangularPackagesCoreCoreBv): typings.angularCore.mod.RNode = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bu")(tNode.asInstanceOf[js.Any], lView.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.RNode]
-
-inline def ɵangularPackagesCoreCoreBw(viewOrComponent: js.Object): typings.angularCore.mod.RootContext = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bw")(viewOrComponent.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.RootContext]
-inline def ɵangularPackagesCoreCoreBw(viewOrComponent: typings.angularCore.mod.ɵangularPackagesCoreCoreBv): typings.angularCore.mod.RootContext = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bw")(viewOrComponent.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.RootContext]
-
-inline def ɵangularPackagesCoreCoreBx(message: java.lang.String): java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bx")(message.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def ɵangularPackagesCoreCoreBx(
-  message: java.lang.String,
-  replacements: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
-): java.lang.String = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bx")(message.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-
-inline def ɵangularPackagesCoreCoreBy(html: java.lang.String): typings.angularCore.mod.TrustedHTML | java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_by")(html.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.TrustedHTML | java.lang.String]
-
-inline def ɵangularPackagesCoreCoreBz(url: java.lang.String): typings.angularCore.mod.TrustedScriptURL | java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_bz")(url.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.TrustedScriptURL | java.lang.String]
-
-inline def ɵangularPackagesCoreCoreCa(script: java.lang.String): typings.angularCore.mod.TrustedScript | java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_ca")(script.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.TrustedScript | java.lang.String]
-
-inline def ɵangularPackagesCoreCoreE(providers: js.Array[typings.angularCore.mod.Provider]): js.Array[typings.angularCore.mod.ResolvedReflectiveProvider] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_e")(providers.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.angularCore.mod.ResolvedReflectiveProvider]]
-
-inline def ɵangularPackagesCoreCoreF(): java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_f")().asInstanceOf[java.lang.String]
-
-inline def ɵangularPackagesCoreCoreG(): typings.angularCore.mod.Renderer2 = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_g")().asInstanceOf[typings.angularCore.mod.Renderer2]
-
-inline def ɵangularPackagesCoreCoreH(): typings.angularCore.mod.ElementRef[js.Any] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_h")().asInstanceOf[typings.angularCore.mod.ElementRef[js.Any]]
-
-inline def ɵangularPackagesCoreCoreI(tNode: typings.angularCore.mod.TNode, lView: typings.angularCore.mod.ɵangularPackagesCoreCoreBv): typings.angularCore.mod.ElementRef[js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_i")(tNode.asInstanceOf[js.Any], lView.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.ElementRef[js.Any]]
-
-inline def ɵangularPackagesCoreCoreJ(id: java.lang.String): typings.angularCore.mod.NgModuleFactory[js.Any] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_j")(id.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.NgModuleFactory[js.Any]]
-
-inline def ɵangularPackagesCoreCoreK[T](): typings.angularCore.mod.TemplateRef[T] | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_k")().asInstanceOf[typings.angularCore.mod.TemplateRef[T] | scala.Null]
-
-inline def ɵangularPackagesCoreCoreL[T](
-  hostTNode: typings.angularCore.mod.TNode,
-  hostLView: typings.angularCore.mod.ɵangularPackagesCoreCoreBv
-): typings.angularCore.mod.TemplateRef[T] | scala.Null = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_l")(hostTNode.asInstanceOf[js.Any], hostLView.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.TemplateRef[T] | scala.Null]
-
-inline def ɵangularPackagesCoreCoreM(): typings.angularCore.mod.ViewContainerRef = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_m")().asInstanceOf[typings.angularCore.mod.ViewContainerRef]
-
-inline def ɵangularPackagesCoreCoreP(nativeNode: js.Any): typings.angularCore.mod.DebugNode | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_p")(nativeNode.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.DebugNode | scala.Null]
-
-inline def ɵangularPackagesCoreCoreQ(): typings.angularCore.mod.ChangeDetectorRef = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_q")().asInstanceOf[typings.angularCore.mod.ChangeDetectorRef]
-inline def ɵangularPackagesCoreCoreQ(isPipe: scala.Boolean): typings.angularCore.mod.ChangeDetectorRef = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_q")(isPipe.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.ChangeDetectorRef]
-
-inline def ɵangularPackagesCoreCoreT(): typings.angularCore.mod.IterableDiffers = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_t")().asInstanceOf[typings.angularCore.mod.IterableDiffers]
-
-inline def ɵangularPackagesCoreCoreU(): typings.angularCore.mod.KeyValueDiffers = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_u")().asInstanceOf[typings.angularCore.mod.KeyValueDiffers]
-
-inline def ɵangularPackagesCoreCoreV(): java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_v")().asInstanceOf[java.lang.String]
-inline def ɵangularPackagesCoreCoreV(locale: java.lang.String): java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_v")(locale.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-
-inline def ɵangularPackagesCoreCoreW: js.Array[typings.angularCore.mod.StaticProvider] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275angular_packages_core_core_w").asInstanceOf[js.Array[typings.angularCore.mod.StaticProvider]]
-
-inline def ɵangularPackagesCoreCoreX(ngZone: typings.angularCore.mod.NgZone): js.Function1[/* fn */ js.Function0[scala.Unit], scala.Unit] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_x")(ngZone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fn */ js.Function0[scala.Unit], scala.Unit]]
-
-inline def ɵangularPackagesCoreCoreY: /* "USD" */ java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275angular_packages_core_core_y").asInstanceOf[/* "USD" */ java.lang.String]
-
-inline def ɵangularPackagesCoreCoreZ(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  childCount: scala.Double,
-  token: js.Any,
-  value: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_z")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], token.asInstanceOf[js.Any], value.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵangularPackagesCoreCoreZ(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  childCount: scala.Double,
-  token: js.Any,
-  value: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any],
-  bindings: js.Array[typings.angularCore.mod.BindingDef]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_z")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], token.asInstanceOf[js.Any], value.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], bindings.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵangularPackagesCoreCoreZ(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  childCount: scala.Double,
-  token: js.Any,
-  value: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any],
-  bindings: js.Array[typings.angularCore.mod.BindingDef],
-  outputs: js.Array[typings.angularCore.mod.OutputDef]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_z")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], token.asInstanceOf[js.Any], value.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], bindings.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵangularPackagesCoreCoreZ(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  childCount: scala.Double,
-  token: js.Any,
-  value: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any],
-  bindings: scala.Unit,
-  outputs: js.Array[typings.angularCore.mod.OutputDef]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_z")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], token.asInstanceOf[js.Any], value.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], bindings.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵangularPackagesCoreCoreZ(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: scala.Null,
-  childCount: scala.Double,
-  token: js.Any,
-  value: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_z")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], token.asInstanceOf[js.Any], value.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵangularPackagesCoreCoreZ(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: scala.Null,
-  childCount: scala.Double,
-  token: js.Any,
-  value: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any],
-  bindings: js.Array[typings.angularCore.mod.BindingDef]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_z")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], token.asInstanceOf[js.Any], value.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], bindings.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵangularPackagesCoreCoreZ(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: scala.Null,
-  childCount: scala.Double,
-  token: js.Any,
-  value: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any],
-  bindings: js.Array[typings.angularCore.mod.BindingDef],
-  outputs: js.Array[typings.angularCore.mod.OutputDef]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_z")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], token.asInstanceOf[js.Any], value.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], bindings.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵangularPackagesCoreCoreZ(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: scala.Null,
-  childCount: scala.Double,
-  token: js.Any,
-  value: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any],
-  bindings: scala.Unit,
-  outputs: js.Array[typings.angularCore.mod.OutputDef]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_core_z")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], token.asInstanceOf[js.Any], value.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], bindings.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-
-inline def ɵbypassSanitizationTrustHtml(trustedHtml: java.lang.String): typings.angularCore.mod.ɵSafeHtml = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275bypassSanitizationTrustHtml")(trustedHtml.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.ɵSafeHtml]
-
-inline def ɵbypassSanitizationTrustResourceUrl(trustedResourceUrl: java.lang.String): typings.angularCore.mod.ɵSafeResourceUrl = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275bypassSanitizationTrustResourceUrl")(trustedResourceUrl.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.ɵSafeResourceUrl]
-
-inline def ɵbypassSanitizationTrustScript(trustedScript: java.lang.String): typings.angularCore.mod.ɵSafeScript = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275bypassSanitizationTrustScript")(trustedScript.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.ɵSafeScript]
-
-inline def ɵbypassSanitizationTrustStyle(trustedStyle: java.lang.String): typings.angularCore.mod.ɵSafeStyle = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275bypassSanitizationTrustStyle")(trustedStyle.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.ɵSafeStyle]
-
-inline def ɵbypassSanitizationTrustUrl(trustedUrl: java.lang.String): typings.angularCore.mod.ɵSafeUrl = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275bypassSanitizationTrustUrl")(trustedUrl.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.ɵSafeUrl]
-
-inline def ɵccf(
-  selector: java.lang.String,
-  componentType: typings.angularCore.mod.Type[js.Any],
-  viewDefFactory: typings.angularCore.mod.ViewDefinitionFactory,
-  inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
-  outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
-  ngContentSelectors: js.Array[java.lang.String]
-): typings.angularCore.mod.ComponentFactory[js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275ccf")(selector.asInstanceOf[js.Any], componentType.asInstanceOf[js.Any], viewDefFactory.asInstanceOf[js.Any], inputs.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any], ngContentSelectors.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.ComponentFactory[js.Any]]
-inline def ɵccf(
-  selector: java.lang.String,
-  componentType: typings.angularCore.mod.Type[js.Any],
-  viewDefFactory: typings.angularCore.mod.ViewDefinitionFactory,
-  inputs: scala.Null,
-  outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
-  ngContentSelectors: js.Array[java.lang.String]
-): typings.angularCore.mod.ComponentFactory[js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275ccf")(selector.asInstanceOf[js.Any], componentType.asInstanceOf[js.Any], viewDefFactory.asInstanceOf[js.Any], inputs.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any], ngContentSelectors.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.ComponentFactory[js.Any]]
-
-inline def ɵclearOverrides(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275clearOverrides")().asInstanceOf[scala.Unit]
-
-inline def ɵclearResolutionOfComponentResourcesQueue(): typings.std.Map[typings.angularCore.mod.Type[js.Any], typings.angularCore.mod.Component] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275clearResolutionOfComponentResourcesQueue")().asInstanceOf[typings.std.Map[typings.angularCore.mod.Type[js.Any], typings.angularCore.mod.Component]]
-
-inline def ɵcmf(
-  ngModuleType: typings.angularCore.mod.Type[js.Any],
-  bootstrapComponents: js.Array[typings.angularCore.mod.Type[js.Any]],
-  defFactory: typings.angularCore.mod.NgModuleDefinitionFactory
-): typings.angularCore.mod.NgModuleFactory[js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275cmf")(ngModuleType.asInstanceOf[js.Any], bootstrapComponents.asInstanceOf[js.Any], defFactory.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NgModuleFactory[js.Any]]
-
-inline def ɵcompileComponent(`type`: typings.angularCore.mod.Type[js.Any], metadata: typings.angularCore.mod.Component): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileComponent")(`type`.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def ɵcompileDirective(`type`: typings.angularCore.mod.Type[js.Any]): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileDirective")(`type`.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def ɵcompileDirective(`type`: typings.angularCore.mod.Type[js.Any], directive: typings.angularCore.mod.Directive): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileDirective")(`type`.asInstanceOf[js.Any], directive.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def ɵcompileNgModule(moduleType: typings.angularCore.mod.Type[js.Any]): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileNgModule")(moduleType.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def ɵcompileNgModule(moduleType: typings.angularCore.mod.Type[js.Any], ngModule: typings.angularCore.mod.NgModule): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileNgModule")(moduleType.asInstanceOf[js.Any], ngModule.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def ɵcompileNgModuleDefs(
-  moduleType: typings.angularCore.mod.ɵNgModuleType[js.Any],
-  ngModule: typings.angularCore.mod.NgModule
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileNgModuleDefs")(moduleType.asInstanceOf[js.Any], ngModule.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵcompileNgModuleDefs(
-  moduleType: typings.angularCore.mod.ɵNgModuleType[js.Any],
-  ngModule: typings.angularCore.mod.NgModule,
-  allowDuplicateDeclarationsInRoot: scala.Boolean
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileNgModuleDefs")(moduleType.asInstanceOf[js.Any], ngModule.asInstanceOf[js.Any], allowDuplicateDeclarationsInRoot.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def ɵcompileNgModuleFactoryPOSTR3[M](
-  injector: typings.angularCore.mod.Injector,
-  options: typings.angularCore.mod.CompilerOptions,
-  moduleType: typings.angularCore.mod.Type[M]
-): js.Promise[typings.angularCore.mod.NgModuleFactory[M]] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileNgModuleFactory__POST_R3__")(injector.asInstanceOf[js.Any], options.asInstanceOf[js.Any], moduleType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.angularCore.mod.NgModuleFactory[M]]]
-
-inline def ɵcompilePipe(`type`: typings.angularCore.mod.Type[js.Any], meta: typings.angularCore.mod.Pipe): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compilePipe")(`type`.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def ɵcreateInjector(defType: js.Any): typings.angularCore.mod.Injector = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.Injector]
-inline def ɵcreateInjector(
-  defType: js.Any,
-  parent: scala.Null,
-  additionalProviders: js.Array[typings.angularCore.mod.StaticProvider]
-): typings.angularCore.mod.Injector = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.Injector]
-inline def ɵcreateInjector(
-  defType: js.Any,
-  parent: scala.Null,
-  additionalProviders: js.Array[typings.angularCore.mod.StaticProvider],
-  name: java.lang.String
-): typings.angularCore.mod.Injector = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.Injector]
-inline def ɵcreateInjector(defType: js.Any, parent: scala.Null, additionalProviders: scala.Null, name: java.lang.String): typings.angularCore.mod.Injector = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.Injector]
-inline def ɵcreateInjector(defType: js.Any, parent: scala.Null, additionalProviders: scala.Unit, name: java.lang.String): typings.angularCore.mod.Injector = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.Injector]
-inline def ɵcreateInjector(
-  defType: js.Any,
-  parent: scala.Unit,
-  additionalProviders: js.Array[typings.angularCore.mod.StaticProvider]
-): typings.angularCore.mod.Injector = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.Injector]
-inline def ɵcreateInjector(
-  defType: js.Any,
-  parent: scala.Unit,
-  additionalProviders: js.Array[typings.angularCore.mod.StaticProvider],
-  name: java.lang.String
-): typings.angularCore.mod.Injector = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.Injector]
-inline def ɵcreateInjector(defType: js.Any, parent: scala.Unit, additionalProviders: scala.Null, name: java.lang.String): typings.angularCore.mod.Injector = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.Injector]
-inline def ɵcreateInjector(defType: js.Any, parent: scala.Unit, additionalProviders: scala.Unit, name: java.lang.String): typings.angularCore.mod.Injector = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.Injector]
-inline def ɵcreateInjector(defType: js.Any, parent: typings.angularCore.mod.Injector): typings.angularCore.mod.Injector = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.Injector]
-inline def ɵcreateInjector(
-  defType: js.Any,
-  parent: typings.angularCore.mod.Injector,
-  additionalProviders: js.Array[typings.angularCore.mod.StaticProvider]
-): typings.angularCore.mod.Injector = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.Injector]
-inline def ɵcreateInjector(
-  defType: js.Any,
-  parent: typings.angularCore.mod.Injector,
-  additionalProviders: js.Array[typings.angularCore.mod.StaticProvider],
-  name: java.lang.String
-): typings.angularCore.mod.Injector = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.Injector]
-inline def ɵcreateInjector(
-  defType: js.Any,
-  parent: typings.angularCore.mod.Injector,
-  additionalProviders: scala.Null,
-  name: java.lang.String
-): typings.angularCore.mod.Injector = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.Injector]
-inline def ɵcreateInjector(
-  defType: js.Any,
-  parent: typings.angularCore.mod.Injector,
-  additionalProviders: scala.Unit,
-  name: java.lang.String
-): typings.angularCore.mod.Injector = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.Injector]
-
-inline def ɵcrt(values: typings.angularCore.anon.Data): typings.angularCore.mod.RendererType2 = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275crt")(values.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.RendererType2]
-
-inline def ɵdefaultIterableDiffers: typings.angularCore.mod.IterableDiffers = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275defaultIterableDiffers").asInstanceOf[typings.angularCore.mod.IterableDiffers]
-
-inline def ɵdefaultKeyValueDiffers: typings.angularCore.mod.KeyValueDiffers = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275defaultKeyValueDiffers").asInstanceOf[typings.angularCore.mod.KeyValueDiffers]
-
-inline def ɵdetectChanges(component: js.Object): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275detectChanges")(component.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-
-inline def ɵdevModeEqual(a: js.Any, b: js.Any): scala.Boolean = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275devModeEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
-
-inline def ɵdid(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueries: js.Array[
-  js.Tuple2[scala.Double | java.lang.String, typings.angularCore.mod.ɵQueryValueType]
-],
-  childCount: scala.Double,
-  ctor: js.Any,
-  deps: js.Array[js.Any | (js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any])]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275did")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueries.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵdid(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueries: js.Array[
-  js.Tuple2[scala.Double | java.lang.String, typings.angularCore.mod.ɵQueryValueType]
-],
-  childCount: scala.Double,
-  ctor: js.Any,
-  deps: js.Array[js.Any | (js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any])],
-  props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275did")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueries.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵdid(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueries: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  childCount: scala.Double,
-  ctor: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any],
-  props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]],
-  outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275did")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueries.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], props.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵdid(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueries: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  childCount: scala.Double,
-  ctor: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any],
-  props: scala.Null,
-  outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275did")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueries.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], props.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵdid(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueries: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  childCount: scala.Double,
-  ctor: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any],
-  props: scala.Unit,
-  outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275did")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueries.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], props.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵdid(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueries: scala.Null,
-  childCount: scala.Double,
-  ctor: js.Any,
-  deps: js.Array[js.Any | (js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any])]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275did")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueries.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵdid(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueries: scala.Null,
-  childCount: scala.Double,
-  ctor: js.Any,
-  deps: js.Array[js.Any | (js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any])],
-  props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275did")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueries.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵdid(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueries: scala.Null,
-  childCount: scala.Double,
-  ctor: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any],
-  props: org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, java.lang.String]],
-  outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275did")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueries.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], props.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵdid(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueries: scala.Null,
-  childCount: scala.Double,
-  ctor: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any],
-  props: scala.Null,
-  outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275did")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueries.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], props.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵdid(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueries: scala.Null,
-  childCount: scala.Double,
-  ctor: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any],
-  props: scala.Unit,
-  outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275did")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueries.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], props.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-
-inline def ɵeld(
-  checkIndex: scala.Double,
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueriesDsl: scala.Null | (js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-]),
-  ngContentIndex: scala.Null | scala.Double,
-  childCount: scala.Double,
-  namespaceAndName: java.lang.String | scala.Null,
-  fixedAttrs: js.UndefOr[scala.Null | (js.Array[js.Tuple2[java.lang.String, java.lang.String]])],
-  bindings: js.UndefOr[
-  scala.Null | (js.Array[
-    js.Tuple3[
-      typings.angularCore.mod.ɵBindingFlags, 
-      java.lang.String, 
-      java.lang.String | typings.angularCore.mod.SecurityContext | scala.Null
-    ]
-  ])
-],
-  outputs: js.UndefOr[scala.Null | (js.Array[js.Tuple2[java.lang.String, java.lang.String]])],
-  handleEvent: js.UndefOr[scala.Null | typings.angularCore.mod.ElementHandleEventFn],
-  componentView: js.UndefOr[scala.Null | typings.angularCore.mod.ViewDefinitionFactory],
-  componentRendererType: js.UndefOr[typings.angularCore.mod.RendererType2 | scala.Null]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275eld")(checkIndex.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], matchedQueriesDsl.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], childCount.asInstanceOf[js.Any], namespaceAndName.asInstanceOf[js.Any], fixedAttrs.asInstanceOf[js.Any], bindings.asInstanceOf[js.Any], outputs.asInstanceOf[js.Any], handleEvent.asInstanceOf[js.Any], componentView.asInstanceOf[js.Any], componentRendererType.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-
-inline def ɵfindLocaleData(locale: java.lang.String): js.Any = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275findLocaleData")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-
-inline def ɵflushModuleScopingQueueAsMuchAsPossible(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275flushModuleScopingQueueAsMuchAsPossible")().asInstanceOf[scala.Unit]
-
-inline def ɵgetComponentViewDefinitionFactory(componentFactory: typings.angularCore.mod.ComponentFactory[js.Any]): typings.angularCore.mod.ViewDefinitionFactory = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getComponentViewDefinitionFactory")(componentFactory.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.ViewDefinitionFactory]
-
-inline def ɵgetDebugNodePOSTR3(nativeNode: scala.Null): scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDebugNode__POST_R3__")(nativeNode.asInstanceOf[js.Any]).asInstanceOf[scala.Null]
-inline def ɵgetDebugNodePOSTR3(nativeNode: typings.std.Element): typings.angularCore.mod.DebugElementPOSTR3 = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDebugNode__POST_R3__")(nativeNode.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.DebugElementPOSTR3]
-inline def ɵgetDebugNodePOSTR3(nativeNode: typings.std.Node): typings.angularCore.mod.DebugNodePOSTR3 = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDebugNode__POST_R3__")(nativeNode.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.DebugNodePOSTR3]
-
-inline def ɵgetDebugNodeR2(nativeNode: js.Any): typings.angularCore.mod.DebugNode | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDebugNodeR2")(nativeNode.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.DebugNode | scala.Null]
-
-inline def ɵgetDirectives(element: typings.std.Element): js.Array[js.Object] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDirectives")(element.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
-
-inline def ɵgetHostElement(componentOrDirective: js.Object): typings.std.Element = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getHostElement")(componentOrDirective.asInstanceOf[js.Any]).asInstanceOf[typings.std.Element]
-
-inline def ɵgetInjectableDef[T](`type`: js.Any): typings.angularCore.mod.ɵɵInjectableDef[T] | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getInjectableDef")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.ɵɵInjectableDef[T] | scala.Null]
-
-inline def ɵgetLContext(target: js.Any): typings.angularCore.mod.ɵLContext | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getLContext")(target.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.ɵLContext | scala.Null]
-
-inline def ɵgetLocaleCurrencyCode(locale: java.lang.String): java.lang.String | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getLocaleCurrencyCode")(locale.asInstanceOf[js.Any]).asInstanceOf[java.lang.String | scala.Null]
-
-inline def ɵgetLocalePluralCase(locale: java.lang.String): js.Function1[/* value */ scala.Double, scala.Double] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getLocalePluralCase")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ scala.Double, scala.Double]]
-
-inline def ɵgetModuleFactoryPOSTR3(id: java.lang.String): typings.angularCore.mod.NgModuleFactory[js.Any] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getModuleFactory__POST_R3__")(id.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.NgModuleFactory[js.Any]]
-
-inline def ɵgetSanitizationBypassType(value: js.Any): typings.angularCore.mod.ɵBypassType | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getSanitizationBypassType")(value.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.ɵBypassType | scala.Null]
-
-inline def ɵglobal: js.Any = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275global").asInstanceOf[js.Any]
-
-inline def ɵinitServicesIfNeeded(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275initServicesIfNeeded")().asInstanceOf[scala.Unit]
-
-inline def ɵinlineInterpolate(
-  valueCount: scala.Double,
-  c0: java.lang.String,
-  a1: js.Any,
-  c1: java.lang.String,
-  a2: js.UndefOr[js.Any],
-  c2: js.UndefOr[java.lang.String],
-  a3: js.UndefOr[js.Any],
-  c3: js.UndefOr[java.lang.String],
-  a4: js.UndefOr[js.Any],
-  c4: js.UndefOr[java.lang.String],
-  a5: js.UndefOr[js.Any],
-  c5: js.UndefOr[java.lang.String],
-  a6: js.UndefOr[js.Any],
-  c6: js.UndefOr[java.lang.String],
-  a7: js.UndefOr[js.Any],
-  c7: js.UndefOr[java.lang.String],
-  a8: js.UndefOr[js.Any],
-  c8: js.UndefOr[java.lang.String],
-  a9: js.UndefOr[js.Any],
-  c9: js.UndefOr[java.lang.String]
-): java.lang.String = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275inlineInterpolate")(valueCount.asInstanceOf[js.Any], c0.asInstanceOf[js.Any], a1.asInstanceOf[js.Any], c1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any], c2.asInstanceOf[js.Any], a3.asInstanceOf[js.Any], c3.asInstanceOf[js.Any], a4.asInstanceOf[js.Any], c4.asInstanceOf[js.Any], a5.asInstanceOf[js.Any], c5.asInstanceOf[js.Any], a6.asInstanceOf[js.Any], c6.asInstanceOf[js.Any], a7.asInstanceOf[js.Any], c7.asInstanceOf[js.Any], a8.asInstanceOf[js.Any], c8.asInstanceOf[js.Any], a9.asInstanceOf[js.Any], c9.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-
-inline def ɵinterpolate(valueCount: scala.Double, constAndInterp: js.Array[java.lang.String]): java.lang.String = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275interpolate")(valueCount.asInstanceOf[js.Any], constAndInterp.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-
-inline def ɵisBoundToModulePOSTR3[C](cf: typings.angularCore.mod.ComponentFactory[C]): scala.Boolean = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isBoundToModule__POST_R3__")(cf.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-
-inline def ɵisDefaultChangeDetectionStrategy(changeDetectionStrategy: typings.angularCore.mod.ChangeDetectionStrategy): scala.Boolean = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isDefaultChangeDetectionStrategy")(changeDetectionStrategy.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-
-inline def ɵisListLikeIterable(obj: js.Any): scala.Boolean = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isListLikeIterable")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
-
-inline def ɵisObservable(obj: js.Any): /* is rxjs.rxjs.Observable<any> */ scala.Boolean = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs.Observable<any> */ scala.Boolean]
-inline def ɵisObservable(obj: typings.rxjs.mod.Observable_[js.Any]): /* is rxjs.rxjs.Observable<any> */ scala.Boolean = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs.Observable<any> */ scala.Boolean]
-
-inline def ɵisPromise[T](obj: js.Any): /* is std.Promise<T> */ scala.Boolean = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isPromise")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<T> */ scala.Boolean]
-
-inline def ɵivyEnabled: /* false */ scala.Boolean = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].selectDynamic("\u0275ivyEnabled").asInstanceOf[/* false */ scala.Boolean]
-
-inline def ɵmakeDecorator[T](name: java.lang.String): typings.angularCore.anon.Call = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.anon.Call]
-inline def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */ js.Any, js.Any]): typings.angularCore.anon.Call = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Call]
-inline def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */ js.Any, js.Any], parentClass: js.Any): typings.angularCore.anon.Call = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Call]
+inline def ɵTESTABILITY: InjectionToken[Testability] = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275TESTABILITY").asInstanceOf[InjectionToken[Testability]]
+
+inline def ɵTESTABILITYGETTER: InjectionToken[GetTestability] = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275TESTABILITY_GETTER").asInstanceOf[InjectionToken[GetTestability]]
+
+inline def ɵallowSanitizationBypassAndThrow(value: Any, `type`: ɵBypassType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+
+inline def ɵallowSanitizationBypassAndThrow_HTML(value: Any, `type`: HTML): /* is @angular/core.@angular/core.ɵSafeHtml */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeHtml */ Boolean]
+
+inline def ɵallowSanitizationBypassAndThrow_ResourceURL(value: Any, `type`: ResourceURL): /* is @angular/core.@angular/core.ɵSafeResourceUrl */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeResourceUrl */ Boolean]
+
+inline def ɵallowSanitizationBypassAndThrow_Script(value: Any, `type`: Script): /* is @angular/core.@angular/core.ɵSafeScript */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeScript */ Boolean]
+
+inline def ɵallowSanitizationBypassAndThrow_Style(value: Any, `type`: Style): /* is @angular/core.@angular/core.ɵSafeStyle */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeStyle */ Boolean]
+
+inline def ɵallowSanitizationBypassAndThrow_URL(value: Any, `type`: URL): /* is @angular/core.@angular/core.ɵSafeUrl */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeUrl */ Boolean]
+
+inline def ɵbypassSanitizationTrustHtml(trustedHtml: String): ɵSafeHtml = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275bypassSanitizationTrustHtml")(trustedHtml.asInstanceOf[js.Any]).asInstanceOf[ɵSafeHtml]
+
+inline def ɵbypassSanitizationTrustResourceUrl(trustedResourceUrl: String): ɵSafeResourceUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275bypassSanitizationTrustResourceUrl")(trustedResourceUrl.asInstanceOf[js.Any]).asInstanceOf[ɵSafeResourceUrl]
+
+inline def ɵbypassSanitizationTrustScript(trustedScript: String): ɵSafeScript = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275bypassSanitizationTrustScript")(trustedScript.asInstanceOf[js.Any]).asInstanceOf[ɵSafeScript]
+
+inline def ɵbypassSanitizationTrustStyle(trustedStyle: String): ɵSafeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275bypassSanitizationTrustStyle")(trustedStyle.asInstanceOf[js.Any]).asInstanceOf[ɵSafeStyle]
+
+inline def ɵbypassSanitizationTrustUrl(trustedUrl: String): ɵSafeUrl = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275bypassSanitizationTrustUrl")(trustedUrl.asInstanceOf[js.Any]).asInstanceOf[ɵSafeUrl]
+
+inline def ɵclearResolutionOfComponentResourcesQueue(): Map[Type[Any], Component] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275clearResolutionOfComponentResourcesQueue")().asInstanceOf[Map[Type[Any], Component]]
+
+inline def ɵcoerceToBoolean(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275coerceToBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
+inline def ɵcompileComponent(`type`: Type[Any], metadata: Component): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileComponent")(`type`.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def ɵcompileDirective(`type`: Type[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileDirective")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def ɵcompileDirective(`type`: Type[Any], directive: Directive): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileDirective")(`type`.asInstanceOf[js.Any], directive.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def ɵcompileNgModule(moduleType: Type[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileNgModule")(moduleType.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def ɵcompileNgModule(moduleType: Type[Any], ngModule: NgModule): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileNgModule")(moduleType.asInstanceOf[js.Any], ngModule.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def ɵcompileNgModuleDefs(moduleType: ɵNgModuleType[Any], ngModule: NgModule): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileNgModuleDefs")(moduleType.asInstanceOf[js.Any], ngModule.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵcompileNgModuleDefs(moduleType: ɵNgModuleType[Any], ngModule: NgModule, allowDuplicateDeclarationsInRoot: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileNgModuleDefs")(moduleType.asInstanceOf[js.Any], ngModule.asInstanceOf[js.Any], allowDuplicateDeclarationsInRoot.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def ɵcompileNgModuleFactory[M](injector: Injector, options: CompilerOptions, moduleType: Type[M]): js.Promise[NgModuleFactory[M]] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compileNgModuleFactory")(injector.asInstanceOf[js.Any], options.asInstanceOf[js.Any], moduleType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NgModuleFactory[M]]]
+
+inline def ɵcompilePipe(`type`: Type[Any], meta: Pipe): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compilePipe")(`type`.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def ɵcreateInjector(defType: Any): Injector = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any]).asInstanceOf[Injector]
+inline def ɵcreateInjector(defType: Any, parent: Null, additionalProviders: js.Array[StaticProvider]): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any])).asInstanceOf[Injector]
+inline def ɵcreateInjector(defType: Any, parent: Null, additionalProviders: js.Array[StaticProvider], name: String): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Injector]
+inline def ɵcreateInjector(defType: Any, parent: Null, additionalProviders: Null, name: String): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Injector]
+inline def ɵcreateInjector(defType: Any, parent: Null, additionalProviders: Unit, name: String): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Injector]
+inline def ɵcreateInjector(defType: Any, parent: Unit, additionalProviders: js.Array[StaticProvider]): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any])).asInstanceOf[Injector]
+inline def ɵcreateInjector(defType: Any, parent: Unit, additionalProviders: js.Array[StaticProvider], name: String): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Injector]
+inline def ɵcreateInjector(defType: Any, parent: Unit, additionalProviders: Null, name: String): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Injector]
+inline def ɵcreateInjector(defType: Any, parent: Unit, additionalProviders: Unit, name: String): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Injector]
+inline def ɵcreateInjector(defType: Any, parent: Injector): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Injector]
+inline def ɵcreateInjector(defType: Any, parent: Injector, additionalProviders: js.Array[StaticProvider]): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any])).asInstanceOf[Injector]
+inline def ɵcreateInjector(defType: Any, parent: Injector, additionalProviders: js.Array[StaticProvider], name: String): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Injector]
+inline def ɵcreateInjector(defType: Any, parent: Injector, additionalProviders: Null, name: String): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Injector]
+inline def ɵcreateInjector(defType: Any, parent: Injector, additionalProviders: Unit, name: String): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Injector]
+
+inline def ɵdefaultIterableDiffers: IterableDiffers = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275defaultIterableDiffers").asInstanceOf[IterableDiffers]
+
+inline def ɵdefaultKeyValueDiffers: KeyValueDiffers = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275defaultKeyValueDiffers").asInstanceOf[KeyValueDiffers]
+
+inline def ɵdetectChanges(component: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275detectChanges")(component.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def ɵdevModeEqual(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275devModeEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+
+inline def ɵfindLocaleData(locale: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275findLocaleData")(locale.asInstanceOf[js.Any]).asInstanceOf[Any]
+
+inline def ɵflushModuleScopingQueueAsMuchAsPossible(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275flushModuleScopingQueueAsMuchAsPossible")().asInstanceOf[Unit]
+
+inline def ɵformatRuntimeError[T /* <: Double */](code: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275formatRuntimeError")(code.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def ɵformatRuntimeError[T /* <: Double */](code: T, message: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275formatRuntimeError")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[String]
+
+inline def ɵformatRuntimeError_false[T /* <: Double */](code: T, message: `false`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275formatRuntimeError")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[String]
+
+/**
+  * @publicApi
+  */
+inline def ɵgetDebugNode(nativeNode: Any): DebugNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDebugNode")(nativeNode.asInstanceOf[js.Any]).asInstanceOf[DebugNode | Null]
+
+inline def ɵgetDebugNodeR2(_nativeNode: Any): DebugNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDebugNodeR2")(_nativeNode.asInstanceOf[js.Any]).asInstanceOf[DebugNode | Null]
+
+inline def ɵgetDirectives(node: Node): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDirectives")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
+
+inline def ɵgetHostElement(componentOrDirective: js.Object): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getHostElement")(componentOrDirective.asInstanceOf[js.Any]).asInstanceOf[Element]
+
+inline def ɵgetInjectableDef[T](`type`: Any): ɵɵInjectableDeclaration[T] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getInjectableDef")(`type`.asInstanceOf[js.Any]).asInstanceOf[ɵɵInjectableDeclaration[T] | Null]
+
+inline def ɵgetLContext(target: Any): ɵLContext | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getLContext")(target.asInstanceOf[js.Any]).asInstanceOf[ɵLContext | Null]
+
+inline def ɵgetLocaleCurrencyCode(locale: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getLocaleCurrencyCode")(locale.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+
+inline def ɵgetLocalePluralCase(locale: String): js.Function1[/* value */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getLocalePluralCase")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ Double, Double]]
+
+inline def ɵgetSanitizationBypassType(value: Any): ɵBypassType | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getSanitizationBypassType")(value.asInstanceOf[js.Any]).asInstanceOf[ɵBypassType | Null]
+
+inline def ɵgetUnknownElementStrictMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getUnknownElementStrictMode")().asInstanceOf[Boolean]
+
+inline def ɵgetUnknownPropertyStrictMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getUnknownPropertyStrictMode")().asInstanceOf[Boolean]
+
+inline def ɵglobal: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275global").asInstanceOf[Any]
+
+inline def ɵinjectChangeDetectorRef(flags: InjectFlags): ChangeDetectorRef = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275injectChangeDetectorRef")(flags.asInstanceOf[js.Any]).asInstanceOf[ChangeDetectorRef]
+
+inline def ɵinternalCreateApplication(config: AppProviders): js.Promise[ApplicationRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275internalCreateApplication")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ApplicationRef]]
+
+inline def ɵisBoundToModule[C](cf: ComponentFactory[C]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isBoundToModule")(cf.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
+inline def ɵisDefaultChangeDetectionStrategy(changeDetectionStrategy: ChangeDetectionStrategy): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isDefaultChangeDetectionStrategy")(changeDetectionStrategy.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
+inline def ɵisInjectable(`type`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isInjectable")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
+inline def ɵisListLikeIterable(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isListLikeIterable")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
+inline def ɵisObservable(
+  obj: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
+): /* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> * / any */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> * / any */ Boolean]
+
+inline def ɵisPromise[T](obj: Any): /* is std.Promise<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isPromise")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<T> */ Boolean]
+
+inline def ɵisStandalone[T](`type`: Type[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isStandalone")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
+inline def ɵisSubscribable(
+  obj: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subscribable<any> */ Any
+): /* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subscribable<any> * / any */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isSubscribable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subscribable<any> * / any */ Boolean]
+
+inline def ɵivyEnabled: /* true */ Boolean = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275ivyEnabled").asInstanceOf[/* true */ Boolean]
+
+inline def ɵmakeDecorator[T](name: String): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any]).asInstanceOf[Call]
+inline def ɵmakeDecorator[T](name: String, props: js.Function1[/* repeated */ Any, Any]): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Call]
+inline def ɵmakeDecorator[T](name: String, props: js.Function1[/* repeated */ Any, Any], parentClass: Any): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any])).asInstanceOf[Call]
 inline def ɵmakeDecorator[T](
-  name: java.lang.String,
-  props: js.Function1[/* repeated */ js.Any, js.Any],
-  parentClass: js.Any,
-  additionalProcessing: js.Function1[/* type */ typings.angularCore.mod.Type[T], scala.Unit]
-): typings.angularCore.anon.Call = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Call]
+  name: String,
+  props: js.Function1[/* repeated */ Any, Any],
+  parentClass: Any,
+  additionalProcessing: js.Function1[/* type */ Type[T], Unit]
+): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[Call]
 inline def ɵmakeDecorator[T](
-  name: java.lang.String,
-  props: js.Function1[/* repeated */ js.Any, js.Any],
-  parentClass: js.Any,
-  additionalProcessing: js.Function1[/* type */ typings.angularCore.mod.Type[T], scala.Unit],
-  typeFn: js.Function2[/* type */ typings.angularCore.mod.Type[T], /* repeated */ js.Any, scala.Unit]
-): typings.angularCore.anon.Call = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Call]
+  name: String,
+  props: js.Function1[/* repeated */ Any, Any],
+  parentClass: Any,
+  additionalProcessing: js.Function1[/* type */ Type[T], Unit],
+  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
+): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
 inline def ɵmakeDecorator[T](
-  name: java.lang.String,
-  props: js.Function1[/* repeated */ js.Any, js.Any],
-  parentClass: js.Any,
-  additionalProcessing: scala.Unit,
-  typeFn: js.Function2[/* type */ typings.angularCore.mod.Type[T], /* repeated */ js.Any, scala.Unit]
-): typings.angularCore.anon.Call = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Call]
+  name: String,
+  props: js.Function1[/* repeated */ Any, Any],
+  parentClass: Any,
+  additionalProcessing: Unit,
+  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
+): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
 inline def ɵmakeDecorator[T](
-  name: java.lang.String,
-  props: js.Function1[/* repeated */ js.Any, js.Any],
-  parentClass: scala.Unit,
-  additionalProcessing: js.Function1[/* type */ typings.angularCore.mod.Type[T], scala.Unit]
-): typings.angularCore.anon.Call = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Call]
+  name: String,
+  props: js.Function1[/* repeated */ Any, Any],
+  parentClass: Unit,
+  additionalProcessing: js.Function1[/* type */ Type[T], Unit]
+): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[Call]
 inline def ɵmakeDecorator[T](
-  name: java.lang.String,
-  props: js.Function1[/* repeated */ js.Any, js.Any],
-  parentClass: scala.Unit,
-  additionalProcessing: js.Function1[/* type */ typings.angularCore.mod.Type[T], scala.Unit],
-  typeFn: js.Function2[/* type */ typings.angularCore.mod.Type[T], /* repeated */ js.Any, scala.Unit]
-): typings.angularCore.anon.Call = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Call]
+  name: String,
+  props: js.Function1[/* repeated */ Any, Any],
+  parentClass: Unit,
+  additionalProcessing: js.Function1[/* type */ Type[T], Unit],
+  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
+): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
 inline def ɵmakeDecorator[T](
-  name: java.lang.String,
-  props: js.Function1[/* repeated */ js.Any, js.Any],
-  parentClass: scala.Unit,
-  additionalProcessing: scala.Unit,
-  typeFn: js.Function2[/* type */ typings.angularCore.mod.Type[T], /* repeated */ js.Any, scala.Unit]
-): typings.angularCore.anon.Call = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Call]
-inline def ɵmakeDecorator[T](name: java.lang.String, props: scala.Unit, parentClass: js.Any): typings.angularCore.anon.Call = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Call]
+  name: String,
+  props: js.Function1[/* repeated */ Any, Any],
+  parentClass: Unit,
+  additionalProcessing: Unit,
+  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
+): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
+inline def ɵmakeDecorator[T](name: String, props: Unit, parentClass: Any): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any])).asInstanceOf[Call]
 inline def ɵmakeDecorator[T](
-  name: java.lang.String,
-  props: scala.Unit,
-  parentClass: js.Any,
-  additionalProcessing: js.Function1[/* type */ typings.angularCore.mod.Type[T], scala.Unit]
-): typings.angularCore.anon.Call = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Call]
+  name: String,
+  props: Unit,
+  parentClass: Any,
+  additionalProcessing: js.Function1[/* type */ Type[T], Unit]
+): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[Call]
 inline def ɵmakeDecorator[T](
-  name: java.lang.String,
-  props: scala.Unit,
-  parentClass: js.Any,
-  additionalProcessing: js.Function1[/* type */ typings.angularCore.mod.Type[T], scala.Unit],
-  typeFn: js.Function2[/* type */ typings.angularCore.mod.Type[T], /* repeated */ js.Any, scala.Unit]
-): typings.angularCore.anon.Call = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Call]
+  name: String,
+  props: Unit,
+  parentClass: Any,
+  additionalProcessing: js.Function1[/* type */ Type[T], Unit],
+  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
+): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
 inline def ɵmakeDecorator[T](
-  name: java.lang.String,
-  props: scala.Unit,
-  parentClass: js.Any,
-  additionalProcessing: scala.Unit,
-  typeFn: js.Function2[/* type */ typings.angularCore.mod.Type[T], /* repeated */ js.Any, scala.Unit]
-): typings.angularCore.anon.Call = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Call]
+  name: String,
+  props: Unit,
+  parentClass: Any,
+  additionalProcessing: Unit,
+  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
+): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
 inline def ɵmakeDecorator[T](
-  name: java.lang.String,
-  props: scala.Unit,
-  parentClass: scala.Unit,
-  additionalProcessing: js.Function1[/* type */ typings.angularCore.mod.Type[T], scala.Unit]
-): typings.angularCore.anon.Call = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Call]
+  name: String,
+  props: Unit,
+  parentClass: Unit,
+  additionalProcessing: js.Function1[/* type */ Type[T], Unit]
+): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[Call]
 inline def ɵmakeDecorator[T](
-  name: java.lang.String,
-  props: scala.Unit,
-  parentClass: scala.Unit,
-  additionalProcessing: js.Function1[/* type */ typings.angularCore.mod.Type[T], scala.Unit],
-  typeFn: js.Function2[/* type */ typings.angularCore.mod.Type[T], /* repeated */ js.Any, scala.Unit]
-): typings.angularCore.anon.Call = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Call]
+  name: String,
+  props: Unit,
+  parentClass: Unit,
+  additionalProcessing: js.Function1[/* type */ Type[T], Unit],
+  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
+): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
 inline def ɵmakeDecorator[T](
-  name: java.lang.String,
-  props: scala.Unit,
-  parentClass: scala.Unit,
-  additionalProcessing: scala.Unit,
-  typeFn: js.Function2[/* type */ typings.angularCore.mod.Type[T], /* repeated */ js.Any, scala.Unit]
-): typings.angularCore.anon.Call = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Call]
+  name: String,
+  props: Unit,
+  parentClass: Unit,
+  additionalProcessing: Unit,
+  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
+): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
 
-inline def ɵmarkDirty(component: js.Object): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275markDirty")(component.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def ɵnoSideEffects[T](fn: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275noSideEffects")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def ɵmod(providers: js.Array[typings.angularCore.mod.NgModuleProviderDef]): typings.angularCore.mod.NgModuleDefinition = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275mod")(providers.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.NgModuleDefinition]
+inline def ɵpatchComponentDefWithScope[C](componentDef: ɵComponentDef[C], transitiveScopes: ɵNgModuleTransitiveScopes): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275patchComponentDefWithScope")(componentDef.asInstanceOf[js.Any], transitiveScopes.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵmpd(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  token: js.Any,
-  value: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any]
-): typings.angularCore.mod.NgModuleProviderDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275mpd")(flags.asInstanceOf[js.Any], token.asInstanceOf[js.Any], value.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NgModuleProviderDef]
+inline def ɵpublishDefaultGlobalUtils(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275publishDefaultGlobalUtils")().asInstanceOf[Unit]
 
-inline def ɵncd(ngContentIndex: scala.Double, index: scala.Double): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275ncd")(ngContentIndex.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵncd(ngContentIndex: scala.Null, index: scala.Double): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275ncd")(ngContentIndex.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
+inline def ɵpublishGlobalUtil(name: String, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275publishGlobalUtil")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵnoSideEffects[T](fn: js.Function0[T]): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275noSideEffects")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def ɵregisterLocaleData(data: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275registerLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def ɵregisterLocaleData(data: Any, localeId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵregisterLocaleData(data: Any, localeId: String, extraData: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any], extraData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵregisterLocaleData(data: Any, localeId: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵregisterLocaleData(data: Any, localeId: Any, extraData: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any], extraData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵregisterLocaleData(data: Any, localeId: Unit, extraData: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any], extraData.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵnov(view: typings.angularCore.mod.ViewData, index: scala.Double): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275nov")(view.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def ɵresetCompiledComponents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275resetCompiledComponents")().asInstanceOf[Unit]
 
-inline def ɵoverrideComponentView(
-  comp: typings.angularCore.mod.Type[js.Any],
-  componentFactory: typings.angularCore.mod.ComponentFactory[js.Any]
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275overrideComponentView")(comp.asInstanceOf[js.Any], componentFactory.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵresetJitOptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275resetJitOptions")().asInstanceOf[Unit]
 
-inline def ɵoverrideProvider(`override`: typings.angularCore.mod.ProviderOverride): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275overrideProvider")(`override`.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def ɵresolveComponentResources(resourceResolver: js.Function1[/* url */ String, js.Promise[String | Text]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275resolveComponentResources")(resourceResolver.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 
-inline def ɵpad(checkIndex: scala.Double, argCount: scala.Double): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275pad")(checkIndex.asInstanceOf[js.Any], argCount.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
+inline def ɵsetAllowDuplicateNgModuleIdsForTest(allowDuplicates: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setAllowDuplicateNgModuleIdsForTest")(allowDuplicates.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵpatchComponentDefWithScope[C](
-  componentDef: typings.angularCore.mod.ɵComponentDef[C],
-  transitiveScopes: typings.angularCore.mod.ɵNgModuleTransitiveScopes
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275patchComponentDefWithScope")(componentDef.asInstanceOf[js.Any], transitiveScopes.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def ɵpid(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  ctor: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275pid")(flags.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-
-inline def ɵpod(checkIndex: scala.Double, propToIndex: org.scalablytyped.runtime.StringDictionary[scala.Double]): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275pod")(checkIndex.asInstanceOf[js.Any], propToIndex.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-
-inline def ɵppd(checkIndex: scala.Double, argCount: scala.Double): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275ppd")(checkIndex.asInstanceOf[js.Any], argCount.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-
-inline def ɵprd(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueries: js.Array[
-  js.Tuple2[java.lang.String | scala.Double, typings.angularCore.mod.ɵQueryValueType]
-],
-  token: js.Any,
-  value: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275prd")(flags.asInstanceOf[js.Any], matchedQueries.asInstanceOf[js.Any], token.asInstanceOf[js.Any], value.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵprd(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  matchedQueries: scala.Null,
-  token: js.Any,
-  value: js.Any,
-  deps: js.Array[(js.Tuple2[typings.angularCore.mod.ɵDepFlags, js.Any]) | js.Any]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275prd")(flags.asInstanceOf[js.Any], matchedQueries.asInstanceOf[js.Any], token.asInstanceOf[js.Any], value.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-
-inline def ɵpublishDefaultGlobalUtils(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275publishDefaultGlobalUtils")().asInstanceOf[scala.Unit]
-
-inline def ɵpublishGlobalUtil(name: java.lang.String, fn: js.Function): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275publishGlobalUtil")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def ɵqud(
-  flags: typings.angularCore.mod.ɵNodeFlags,
-  id: scala.Double,
-  bindings: org.scalablytyped.runtime.StringDictionary[typings.angularCore.mod.ɵQueryBindingType]
-): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275qud")(flags.asInstanceOf[js.Any], id.asInstanceOf[js.Any], bindings.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-
-inline def ɵregisterLocaleData(data: js.Any): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275registerLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def ɵregisterLocaleData(data: js.Any, localeId: java.lang.String): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵregisterLocaleData(data: js.Any, localeId: java.lang.String, extraData: js.Any): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any], extraData.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵregisterLocaleData(data: js.Any, localeId: js.Any): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵregisterLocaleData(data: js.Any, localeId: js.Any, extraData: js.Any): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any], extraData.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵregisterLocaleData(data: js.Any, localeId: scala.Unit, extraData: js.Any): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275registerLocaleData")(data.asInstanceOf[js.Any], localeId.asInstanceOf[js.Any], extraData.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def ɵregisterModuleFactory(id: java.lang.String, factory: typings.angularCore.mod.NgModuleFactory[js.Any]): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275registerModuleFactory")(id.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def ɵregisterNgModuleType(ngModuleType: typings.angularCore.mod.ɵNgModuleType[js.Any]): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275registerNgModuleType")(ngModuleType.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-
-inline def ɵrenderComponent[T](componentType: typings.angularCore.mod.Type[T]): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275renderComponent")(componentType.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def ɵrenderComponent[T](
-  componentType: typings.angularCore.mod.Type[T],
-  opts: typings.angularCore.mod.CreateComponentOptions
-): T = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275renderComponent")(componentType.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def ɵrenderComponent[T](componentType: typings.angularCore.mod.ɵComponentType[T]): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275renderComponent")(componentType.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def ɵrenderComponent[T](
-  componentType: typings.angularCore.mod.ɵComponentType[T],
-  opts: typings.angularCore.mod.CreateComponentOptions
-): T = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275renderComponent")(componentType.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
-
-inline def ɵresetCompiledComponents(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275resetCompiledComponents")().asInstanceOf[scala.Unit]
-
-inline def ɵresetJitOptions(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275resetJitOptions")().asInstanceOf[scala.Unit]
-
-inline def ɵresolveComponentResources(
-  resourceResolver: js.Function1[
-  /* url */ java.lang.String, 
-  js.Promise[java.lang.String | typings.angularCore.anon.Text]
-]
-): js.Promise[scala.Unit] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275resolveComponentResources")(resourceResolver.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
-
-inline def ɵsetClassMetadata(`type`: typings.angularCore.mod.Type[js.Any]): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def ɵsetClassMetadata(`type`: typings.angularCore.mod.Type[js.Any], decorators: js.Array[js.Any]): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵsetClassMetadata(`type`: Type[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def ɵsetClassMetadata(`type`: Type[Any], decorators: js.Array[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵsetClassMetadata(`type`: Type[Any], decorators: js.Array[Any], ctorParameters: js.Function0[js.Array[Any]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], ctorParameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def ɵsetClassMetadata(
-  `type`: typings.angularCore.mod.Type[js.Any],
-  decorators: js.Array[js.Any],
-  ctorParameters: js.Function0[js.Array[js.Any]]
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], ctorParameters.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  `type`: Type[Any],
+  decorators: js.Array[Any],
+  ctorParameters: js.Function0[js.Array[Any]],
+  propDecorators: StringDictionary[Any]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], ctorParameters.asInstanceOf[js.Any], propDecorators.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def ɵsetClassMetadata(
-  `type`: typings.angularCore.mod.Type[js.Any],
-  decorators: js.Array[js.Any],
-  ctorParameters: js.Function0[js.Array[js.Any]],
-  propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], ctorParameters.asInstanceOf[js.Any], propDecorators.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  `type`: Type[Any],
+  decorators: js.Array[Any],
+  ctorParameters: Null,
+  propDecorators: StringDictionary[Any]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], ctorParameters.asInstanceOf[js.Any], propDecorators.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵsetClassMetadata(`type`: Type[Any], decorators: Null, ctorParameters: js.Function0[js.Array[Any]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], ctorParameters.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def ɵsetClassMetadata(
-  `type`: typings.angularCore.mod.Type[js.Any],
-  decorators: js.Array[js.Any],
-  ctorParameters: scala.Null,
-  propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], ctorParameters.asInstanceOf[js.Any], propDecorators.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵsetClassMetadata(
-  `type`: typings.angularCore.mod.Type[js.Any],
-  decorators: scala.Null,
-  ctorParameters: js.Function0[js.Array[js.Any]]
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], ctorParameters.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵsetClassMetadata(
-  `type`: typings.angularCore.mod.Type[js.Any],
-  decorators: scala.Null,
-  ctorParameters: js.Function0[js.Array[js.Any]],
-  propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], ctorParameters.asInstanceOf[js.Any], propDecorators.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵsetClassMetadata(
-  `type`: typings.angularCore.mod.Type[js.Any],
-  decorators: scala.Null,
-  ctorParameters: scala.Null,
-  propDecorators: org.scalablytyped.runtime.StringDictionary[js.Any]
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], ctorParameters.asInstanceOf[js.Any], propDecorators.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  `type`: Type[Any],
+  decorators: Null,
+  ctorParameters: js.Function0[js.Array[Any]],
+  propDecorators: StringDictionary[Any]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], ctorParameters.asInstanceOf[js.Any], propDecorators.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵsetClassMetadata(`type`: Type[Any], decorators: Null, ctorParameters: Null, propDecorators: StringDictionary[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], ctorParameters.asInstanceOf[js.Any], propDecorators.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵsetCurrentInjector(): js.UndefOr[typings.angularCore.mod.Injector | scala.Null] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setCurrentInjector")().asInstanceOf[js.UndefOr[typings.angularCore.mod.Injector | scala.Null]]
-inline def ɵsetCurrentInjector(injector: typings.angularCore.mod.Injector): js.UndefOr[typings.angularCore.mod.Injector | scala.Null] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setCurrentInjector")(injector.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.angularCore.mod.Injector | scala.Null]]
+inline def ɵsetCurrentInjector(): js.UndefOr[Injector | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setCurrentInjector")().asInstanceOf[js.UndefOr[Injector | Null]]
+inline def ɵsetCurrentInjector(injector: Injector): js.UndefOr[Injector | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setCurrentInjector")(injector.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Injector | Null]]
 
-inline def ɵsetDocument(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setDocument")().asInstanceOf[scala.Unit]
-inline def ɵsetDocument(document: typings.std.Document): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setDocument")(document.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def ɵsetDocument(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setDocument")().asInstanceOf[Unit]
+inline def ɵsetDocument(document: Document): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setDocument")(document.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵsetLocaleId(localeId: java.lang.String): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setLocaleId")(localeId.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def ɵsetLocaleId(localeId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setLocaleId")(localeId.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵstore[T](
-  tView: typings.angularCore.mod.TView,
-  lView: typings.angularCore.mod.ɵangularPackagesCoreCoreBv,
-  index: scala.Double,
-  value: T
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275store")(tView.asInstanceOf[js.Any], lView.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵsetUnknownElementStrictMode(shouldThrow: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setUnknownElementStrictMode")(shouldThrow.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵstringify(token: js.Any): java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275stringify")(token.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def ɵsetUnknownPropertyStrictMode(shouldThrow: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setUnknownPropertyStrictMode")(shouldThrow.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵted(checkIndex: scala.Double, ngContentIndex: scala.Double, staticText: js.Array[java.lang.String]): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275ted")(checkIndex.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], staticText.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
-inline def ɵted(checkIndex: scala.Double, ngContentIndex: scala.Null, staticText: js.Array[java.lang.String]): typings.angularCore.mod.NodeDef = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275ted")(checkIndex.asInstanceOf[js.Any], ngContentIndex.asInstanceOf[js.Any], staticText.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.NodeDef]
+inline def ɵstore[T](tView: TView, lView: LView[Any], index: Double, value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275store")(tView.asInstanceOf[js.Any], lView.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵtransitiveScopesFor[T](moduleType: typings.angularCore.mod.Type[T]): typings.angularCore.mod.ɵNgModuleTransitiveScopes = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275transitiveScopesFor")(moduleType.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.ɵNgModuleTransitiveScopes]
+inline def ɵstringify(token: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275stringify")(token.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def ɵunregisterLocaleData(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275unregisterLocaleData")().asInstanceOf[scala.Unit]
+inline def ɵtransitiveScopesFor[T](`type`: Type[T]): ɵNgModuleTransitiveScopes = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275transitiveScopesFor")(`type`.asInstanceOf[js.Any]).asInstanceOf[ɵNgModuleTransitiveScopes]
 
-inline def ɵunv(
-  view: typings.angularCore.mod.ViewData,
-  nodeIdx: scala.Double,
-  bindingIdx: scala.Double,
-  value: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275unv")(view.asInstanceOf[js.Any], nodeIdx.asInstanceOf[js.Any], bindingIdx.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def ɵunregisterLocaleData(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275unregisterLocaleData")().asInstanceOf[Unit]
 
-inline def ɵunwrapSafeValue(value: typings.angularCore.mod.ɵSafeValue): java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275unwrapSafeValue")(value.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def ɵunwrapSafeValue[T](value: T): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275unwrapSafeValue")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def ɵunwrapSafeValue(value: ɵSafeValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275unwrapSafeValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def ɵunwrapSafeValue[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275unwrapSafeValue")(value.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def ɵvid(flags: typings.angularCore.mod.ɵViewFlags, nodes: js.Array[typings.angularCore.mod.NodeDef]): typings.angularCore.mod.ɵViewDefinition = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275vid")(flags.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.ɵViewDefinition]
-inline def ɵvid(
-  flags: typings.angularCore.mod.ɵViewFlags,
-  nodes: js.Array[typings.angularCore.mod.NodeDef],
-  updateDirectives: scala.Null,
-  updateRenderer: typings.angularCore.mod.ViewUpdateFn
-): typings.angularCore.mod.ɵViewDefinition = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275vid")(flags.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], updateDirectives.asInstanceOf[js.Any], updateRenderer.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.ɵViewDefinition]
-inline def ɵvid(
-  flags: typings.angularCore.mod.ɵViewFlags,
-  nodes: js.Array[typings.angularCore.mod.NodeDef],
-  updateDirectives: scala.Unit,
-  updateRenderer: typings.angularCore.mod.ViewUpdateFn
-): typings.angularCore.mod.ɵViewDefinition = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275vid")(flags.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], updateDirectives.asInstanceOf[js.Any], updateRenderer.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.ɵViewDefinition]
-inline def ɵvid(
-  flags: typings.angularCore.mod.ɵViewFlags,
-  nodes: js.Array[typings.angularCore.mod.NodeDef],
-  updateDirectives: typings.angularCore.mod.ViewUpdateFn
-): typings.angularCore.mod.ɵViewDefinition = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275vid")(flags.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], updateDirectives.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.ɵViewDefinition]
-inline def ɵvid(
-  flags: typings.angularCore.mod.ɵViewFlags,
-  nodes: js.Array[typings.angularCore.mod.NodeDef],
-  updateDirectives: typings.angularCore.mod.ViewUpdateFn,
-  updateRenderer: typings.angularCore.mod.ViewUpdateFn
-): typings.angularCore.mod.ɵViewDefinition = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275vid")(flags.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any], updateDirectives.asInstanceOf[js.Any], updateRenderer.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.ɵViewDefinition]
+inline def ɵɵCopyDefinitionFeature(definition: ɵComponentDef[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275CopyDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def ɵɵCopyDefinitionFeature(definition: ɵDirectiveDef[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275CopyDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵwhenRendered(component: js.Any): js.Promise[scala.Null] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275whenRendered")(component.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Null]]
+inline def ɵɵInheritDefinitionFeature(definition: ɵComponentDef[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275InheritDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def ɵɵInheritDefinitionFeature(definition: ɵDirectiveDef[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275InheritDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵɵCopyDefinitionFeature(definition: typings.angularCore.mod.ɵComponentDef[js.Any]): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275CopyDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def ɵɵCopyDefinitionFeature(definition: typings.angularCore.mod.ɵDirectiveDef[js.Any]): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275CopyDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def ɵɵNgOnChangesFeature[T](): DirectiveDefFeature = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275NgOnChangesFeature")().asInstanceOf[DirectiveDefFeature]
 
-inline def ɵɵInheritDefinitionFeature(definition: typings.angularCore.mod.ɵComponentDef[js.Any]): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275InheritDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def ɵɵInheritDefinitionFeature(definition: typings.angularCore.mod.ɵDirectiveDef[js.Any]): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275InheritDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def ɵɵProvidersFeature[T](providers: js.Array[Provider]): js.Function1[/* definition */ ɵDirectiveDef[T], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275ProvidersFeature")(providers.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* definition */ ɵDirectiveDef[T], Unit]]
+inline def ɵɵProvidersFeature[T](providers: js.Array[Provider], viewProviders: js.Array[Provider]): js.Function1[/* definition */ ɵDirectiveDef[T], Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275ProvidersFeature")(providers.asInstanceOf[js.Any], viewProviders.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* definition */ ɵDirectiveDef[T], Unit]]
 
-inline def ɵɵNgOnChangesFeature[T](): typings.angularCore.mod.DirectiveDefFeature = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275NgOnChangesFeature")().asInstanceOf[typings.angularCore.mod.DirectiveDefFeature]
+inline def ɵɵStandaloneFeature(definition: ɵComponentDef[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275StandaloneFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵɵProvidersFeature[T](providers: js.Array[typings.angularCore.mod.Provider]): js.Function1[/* definition */ typings.angularCore.mod.ɵDirectiveDef[T], scala.Unit] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275ProvidersFeature")(providers.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* definition */ typings.angularCore.mod.ɵDirectiveDef[T], scala.Unit]]
-inline def ɵɵProvidersFeature[T](
-  providers: js.Array[typings.angularCore.mod.Provider],
-  viewProviders: js.Array[typings.angularCore.mod.Provider]
-): js.Function1[/* definition */ typings.angularCore.mod.ɵDirectiveDef[T], scala.Unit] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275ProvidersFeature")(providers.asInstanceOf[js.Any], viewProviders.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* definition */ typings.angularCore.mod.ɵDirectiveDef[T], scala.Unit]]
+inline def ɵɵadvance(delta: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275advance")(delta.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵɵadvance(delta: scala.Double): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275advance")(delta.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-
-inline def ɵɵattribute(name: java.lang.String, value: js.Any): js.Function4[
-/* name */ java.lang.String, 
-/* value */ js.Any, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn | scala.Null], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* name */ java.lang.String, 
-/* value */ js.Any, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn | scala.Null], 
-/* namespace */ js.UndefOr[java.lang.String], 
+inline def ɵɵattribute(name: String, value: Any): js.Function4[
+/* name */ String, 
+/* value */ Any, 
+/* sanitizer */ js.UndefOr[SanitizerFn | Null], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* name */ String, 
+/* value */ Any, 
+/* sanitizer */ js.UndefOr[SanitizerFn | Null], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any]]
-inline def ɵɵattribute(name: java.lang.String, value: js.Any, sanitizer: scala.Null, namespace: java.lang.String): js.Function4[
-/* name */ java.lang.String, 
-/* value */ js.Any, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn | scala.Null], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* name */ java.lang.String, 
-/* value */ js.Any, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn | scala.Null], 
-/* namespace */ js.UndefOr[java.lang.String], 
+inline def ɵɵattribute(name: String, value: Any, sanitizer: Null, namespace: String): js.Function4[
+/* name */ String, 
+/* value */ Any, 
+/* sanitizer */ js.UndefOr[SanitizerFn | Null], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* name */ String, 
+/* value */ Any, 
+/* sanitizer */ js.UndefOr[SanitizerFn | Null], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any]]
-inline def ɵɵattribute(name: java.lang.String, value: js.Any, sanitizer: scala.Unit, namespace: java.lang.String): js.Function4[
-/* name */ java.lang.String, 
-/* value */ js.Any, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn | scala.Null], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* name */ java.lang.String, 
-/* value */ js.Any, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn | scala.Null], 
-/* namespace */ js.UndefOr[java.lang.String], 
+inline def ɵɵattribute(name: String, value: Any, sanitizer: Unit, namespace: String): js.Function4[
+/* name */ String, 
+/* value */ Any, 
+/* sanitizer */ js.UndefOr[SanitizerFn | Null], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* name */ String, 
+/* value */ Any, 
+/* sanitizer */ js.UndefOr[SanitizerFn | Null], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any]]
-inline def ɵɵattribute(name: java.lang.String, value: js.Any, sanitizer: typings.angularCore.mod.SanitizerFn): js.Function4[
-/* name */ java.lang.String, 
-/* value */ js.Any, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn | scala.Null], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* name */ java.lang.String, 
-/* value */ js.Any, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn | scala.Null], 
-/* namespace */ js.UndefOr[java.lang.String], 
+inline def ɵɵattribute(name: String, value: Any, sanitizer: SanitizerFn): js.Function4[
+/* name */ String, 
+/* value */ Any, 
+/* sanitizer */ js.UndefOr[SanitizerFn | Null], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* name */ String, 
+/* value */ Any, 
+/* sanitizer */ js.UndefOr[SanitizerFn | Null], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any]]
-inline def ɵɵattribute(
-  name: java.lang.String,
-  value: js.Any,
-  sanitizer: typings.angularCore.mod.SanitizerFn,
-  namespace: java.lang.String
-): js.Function4[
-/* name */ java.lang.String, 
-/* value */ js.Any, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn | scala.Null], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* name */ java.lang.String, 
-/* value */ js.Any, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn | scala.Null], 
-/* namespace */ js.UndefOr[java.lang.String], 
+inline def ɵɵattribute(name: String, value: Any, sanitizer: SanitizerFn, namespace: String): js.Function4[
+/* name */ String, 
+/* value */ Any, 
+/* sanitizer */ js.UndefOr[SanitizerFn | Null], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attribute")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* name */ String, 
+/* value */ Any, 
+/* sanitizer */ js.UndefOr[SanitizerFn | Null], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattribute */ js.Any]]
 
-inline def ɵɵattributeInterpolate1(attrName: java.lang.String, prefix: java.lang.String, v0: js.Any, suffix: java.lang.String): js.Function6[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate1 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate1")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function6[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+inline def ɵɵattributeInterpolate1(attrName: String, prefix: String, v0: Any, suffix: String): js.Function6[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate1 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate1")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function6[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate1 */ js.Any]]
+inline def ɵɵattributeInterpolate1(attrName: String, prefix: String, v0: Any, suffix: String, sanitizer: Unit, namespace: String): js.Function6[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate1 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate1")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function6[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate1 */ js.Any]]
+inline def ɵɵattributeInterpolate1(attrName: String, prefix: String, v0: Any, suffix: String, sanitizer: SanitizerFn): js.Function6[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate1 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate1")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function6[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate1 */ js.Any]]
 inline def ɵɵattributeInterpolate1(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  suffix: java.lang.String,
-  sanitizer: scala.Unit,
-  namespace: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  suffix: String,
+  sanitizer: SanitizerFn,
+  namespace: String
 ): js.Function6[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate1 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate1")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function6[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate1 */ js.Any]]
-inline def ɵɵattributeInterpolate1(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
-): js.Function6[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate1 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate1")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function6[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate1 */ js.Any]]
-inline def ɵɵattributeInterpolate1(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn,
-  namespace: java.lang.String
-): js.Function6[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate1 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate1")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function6[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate1 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate1")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function6[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate1 */ js.Any]]
 
-inline def ɵɵattributeInterpolate2(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  suffix: java.lang.String
-): js.Function8[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate2 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate2")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function8[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+inline def ɵɵattributeInterpolate2(attrName: String, prefix: String, v0: Any, i0: String, v1: Any, suffix: String): js.Function8[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate2 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate2")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function8[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate2 */ js.Any]]
 inline def ɵɵattributeInterpolate2(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  suffix: java.lang.String,
-  sanitizer: scala.Unit,
-  namespace: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  suffix: String,
+  sanitizer: Unit,
+  namespace: String
 ): js.Function8[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate2 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate2")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function8[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate2 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate2")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function8[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate2 */ js.Any]]
 inline def ɵɵattributeInterpolate2(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  suffix: String,
+  sanitizer: SanitizerFn
 ): js.Function8[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate2 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate2")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function8[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate2 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate2")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function8[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate2 */ js.Any]]
 inline def ɵɵattributeInterpolate2(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn,
-  namespace: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  suffix: String,
+  sanitizer: SanitizerFn,
+  namespace: String
 ): js.Function8[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate2 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate2")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function8[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate2 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate2")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function8[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate2 */ js.Any]]
 
 inline def ɵɵattributeInterpolate3(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  suffix: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  suffix: String
 ): js.Function10[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate3 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate3")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function10[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate3 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate3")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function10[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate3 */ js.Any]]
 inline def ɵɵattributeInterpolate3(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  suffix: java.lang.String,
-  sanitizer: scala.Unit,
-  namespace: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  suffix: String,
+  sanitizer: Unit,
+  namespace: String
 ): js.Function10[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate3 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate3")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function10[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate3 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate3")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function10[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate3 */ js.Any]]
 inline def ɵɵattributeInterpolate3(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  suffix: String,
+  sanitizer: SanitizerFn
 ): js.Function10[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate3 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate3")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function10[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate3 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate3")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function10[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate3 */ js.Any]]
 inline def ɵɵattributeInterpolate3(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn,
-  namespace: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  suffix: String,
+  sanitizer: SanitizerFn,
+  namespace: String
 ): js.Function10[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate3 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate3")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function10[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate3 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate3")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function10[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate3 */ js.Any]]
 
 inline def ɵɵattributeInterpolate4(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  suffix: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  suffix: String
 ): js.Function12[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate4 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate4")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function12[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate4 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate4")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function12[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate4 */ js.Any]]
 inline def ɵɵattributeInterpolate4(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  suffix: java.lang.String,
-  sanitizer: scala.Unit,
-  namespace: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  suffix: String,
+  sanitizer: Unit,
+  namespace: String
 ): js.Function12[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate4 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate4")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function12[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate4 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate4")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function12[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate4 */ js.Any]]
 inline def ɵɵattributeInterpolate4(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  suffix: String,
+  sanitizer: SanitizerFn
 ): js.Function12[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate4 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate4")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function12[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate4 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate4")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function12[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate4 */ js.Any]]
 inline def ɵɵattributeInterpolate4(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn,
-  namespace: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  suffix: String,
+  sanitizer: SanitizerFn,
+  namespace: String
 ): js.Function12[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate4 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate4")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function12[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate4 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate4")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function12[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate4 */ js.Any]]
 
 inline def ɵɵattributeInterpolate5(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  suffix: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  suffix: String
 ): js.Function14[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate5 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate5")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function14[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate5 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate5")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function14[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate5 */ js.Any]]
 inline def ɵɵattributeInterpolate5(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  suffix: java.lang.String,
-  sanitizer: scala.Unit,
-  namespace: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  suffix: String,
+  sanitizer: Unit,
+  namespace: String
 ): js.Function14[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate5 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate5")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function14[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate5 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate5")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function14[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate5 */ js.Any]]
 inline def ɵɵattributeInterpolate5(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  suffix: String,
+  sanitizer: SanitizerFn
 ): js.Function14[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate5 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate5")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function14[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate5 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate5")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function14[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate5 */ js.Any]]
 inline def ɵɵattributeInterpolate5(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn,
-  namespace: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  suffix: String,
+  sanitizer: SanitizerFn,
+  namespace: String
 ): js.Function14[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate5 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate5")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function14[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate5 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate5")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function14[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate5 */ js.Any]]
 
 inline def ɵɵattributeInterpolate6(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  suffix: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  suffix: String
 ): js.Function16[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate6 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate6")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function16[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate6 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate6")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function16[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate6 */ js.Any]]
 inline def ɵɵattributeInterpolate6(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  suffix: java.lang.String,
-  sanitizer: scala.Unit,
-  namespace: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  suffix: String,
+  sanitizer: Unit,
+  namespace: String
 ): js.Function16[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate6 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate6")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function16[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate6 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate6")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function16[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate6 */ js.Any]]
 inline def ɵɵattributeInterpolate6(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  suffix: String,
+  sanitizer: SanitizerFn
 ): js.Function16[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate6 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate6")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function16[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate6 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate6")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function16[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate6 */ js.Any]]
 inline def ɵɵattributeInterpolate6(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn,
-  namespace: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  suffix: String,
+  sanitizer: SanitizerFn,
+  namespace: String
 ): js.Function16[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate6 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate6")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function16[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate6 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate6")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function16[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate6 */ js.Any]]
 
 inline def ɵɵattributeInterpolate7(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  suffix: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  suffix: String
 ): js.Function18[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate7 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate7")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function18[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate7 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate7")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function18[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate7 */ js.Any]]
 inline def ɵɵattributeInterpolate7(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  suffix: java.lang.String,
-  sanitizer: scala.Unit,
-  namespace: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  suffix: String,
+  sanitizer: Unit,
+  namespace: String
 ): js.Function18[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate7 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate7")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function18[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate7 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate7")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function18[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate7 */ js.Any]]
 inline def ɵɵattributeInterpolate7(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  suffix: String,
+  sanitizer: SanitizerFn
 ): js.Function18[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate7 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate7")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function18[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate7 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate7")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function18[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate7 */ js.Any]]
 inline def ɵɵattributeInterpolate7(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn,
-  namespace: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  suffix: String,
+  sanitizer: SanitizerFn,
+  namespace: String
 ): js.Function18[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate7 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate7")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function18[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate7 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate7")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function18[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate7 */ js.Any]]
 
 inline def ɵɵattributeInterpolate8(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  i6: java.lang.String,
-  v7: js.Any,
-  suffix: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  i6: String,
+  v7: Any,
+  suffix: String
 ): js.Function20[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate8 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate8")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function20[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate8 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate8")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function20[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate8 */ js.Any]]
 inline def ɵɵattributeInterpolate8(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  i6: java.lang.String,
-  v7: js.Any,
-  suffix: java.lang.String,
-  sanitizer: scala.Unit,
-  namespace: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  i6: String,
+  v7: Any,
+  suffix: String,
+  sanitizer: Unit,
+  namespace: String
 ): js.Function20[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate8 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate8")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function20[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate8 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate8")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function20[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate8 */ js.Any]]
 inline def ɵɵattributeInterpolate8(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  i6: java.lang.String,
-  v7: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  i6: String,
+  v7: Any,
+  suffix: String,
+  sanitizer: SanitizerFn
 ): js.Function20[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate8 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate8")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function20[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate8 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate8")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function20[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate8 */ js.Any]]
 inline def ɵɵattributeInterpolate8(
-  attrName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  i6: java.lang.String,
-  v7: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn,
-  namespace: java.lang.String
+  attrName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  i6: String,
+  v7: Any,
+  suffix: String,
+  sanitizer: SanitizerFn,
+  namespace: String
 ): js.Function20[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate8 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate8")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function20[
-/* attrName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate8 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolate8")(attrName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function20[
+/* attrName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolate8 */ js.Any]]
 
-inline def ɵɵattributeInterpolateV(attrName: java.lang.String, values: js.Array[js.Any]): js.Function4[
-/* attrName */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolateV")(attrName.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* attrName */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+inline def ɵɵattributeInterpolateV(attrName: String, values: js.Array[Any]): js.Function4[
+/* attrName */ String, 
+/* values */ js.Array[Any], 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolateV")(attrName.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* attrName */ String, 
+/* values */ js.Array[Any], 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any]]
-inline def ɵɵattributeInterpolateV(
-  attrName: java.lang.String,
-  values: js.Array[js.Any],
-  sanitizer: scala.Unit,
-  namespace: java.lang.String
-): js.Function4[
-/* attrName */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolateV")(attrName.asInstanceOf[js.Any], values.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* attrName */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+inline def ɵɵattributeInterpolateV(attrName: String, values: js.Array[Any], sanitizer: Unit, namespace: String): js.Function4[
+/* attrName */ String, 
+/* values */ js.Array[Any], 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolateV")(attrName.asInstanceOf[js.Any], values.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* attrName */ String, 
+/* values */ js.Array[Any], 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any]]
-inline def ɵɵattributeInterpolateV(
-  attrName: java.lang.String,
-  values: js.Array[js.Any],
-  sanitizer: typings.angularCore.mod.SanitizerFn
-): js.Function4[
-/* attrName */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolateV")(attrName.asInstanceOf[js.Any], values.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* attrName */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+inline def ɵɵattributeInterpolateV(attrName: String, values: js.Array[Any], sanitizer: SanitizerFn): js.Function4[
+/* attrName */ String, 
+/* values */ js.Array[Any], 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolateV")(attrName.asInstanceOf[js.Any], values.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* attrName */ String, 
+/* values */ js.Array[Any], 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any]]
-inline def ɵɵattributeInterpolateV(
-  attrName: java.lang.String,
-  values: js.Array[js.Any],
-  sanitizer: typings.angularCore.mod.SanitizerFn,
-  namespace: java.lang.String
-): js.Function4[
-/* attrName */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolateV")(attrName.asInstanceOf[js.Any], values.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* attrName */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* namespace */ js.UndefOr[java.lang.String], 
+inline def ɵɵattributeInterpolateV(attrName: String, values: js.Array[Any], sanitizer: SanitizerFn, namespace: String): js.Function4[
+/* attrName */ String, 
+/* values */ js.Array[Any], 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275attributeInterpolateV")(attrName.asInstanceOf[js.Any], values.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* attrName */ String, 
+/* values */ js.Array[Any], 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* namespace */ js.UndefOr[String], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵattributeInterpolateV */ js.Any]]
 
-inline def ɵɵclassMap(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMap")().asInstanceOf[scala.Unit]
-inline def ɵɵclassMap(classes: java.lang.String): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMap")(classes.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def ɵɵclassMap(classes: org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Boolean | scala.Null]]): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMap")(classes.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def ɵɵclassMap(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMap")().asInstanceOf[Unit]
+inline def ɵɵclassMap(classes: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMap")(classes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def ɵɵclassMap(classes: StringDictionary[js.UndefOr[Boolean | Null]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMap")(classes.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵɵclassMapInterpolate1(prefix: java.lang.String, v0: js.Any, suffix: java.lang.String): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate1")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵclassMapInterpolate1(prefix: String, v0: Any, suffix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate1")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵclassMapInterpolate2(prefix: java.lang.String, v0: js.Any, i0: java.lang.String, v1: js.Any, suffix: java.lang.String): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate2")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵclassMapInterpolate2(prefix: String, v0: Any, i0: String, v1: Any, suffix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate2")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵclassMapInterpolate3(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  suffix: java.lang.String
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate3")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵclassMapInterpolate3(prefix: String, v0: Any, i0: String, v1: Any, i1: String, v2: Any, suffix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate3")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def ɵɵclassMapInterpolate4(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  suffix: java.lang.String
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate4")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  suffix: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate4")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def ɵɵclassMapInterpolate5(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  suffix: java.lang.String
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate5")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  suffix: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate5")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def ɵɵclassMapInterpolate6(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  suffix: java.lang.String
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate6")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  suffix: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate6")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def ɵɵclassMapInterpolate7(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  suffix: java.lang.String
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate7")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  suffix: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate7")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def ɵɵclassMapInterpolate8(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  i6: java.lang.String,
-  v7: js.Any,
-  suffix: java.lang.String
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate8")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  i6: String,
+  v7: Any,
+  suffix: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolate8")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵclassMapInterpolateV(values: js.Array[js.Any]): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolateV")(values.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def ɵɵclassMapInterpolateV(values: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classMapInterpolateV")(values.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵɵclassProp(className: java.lang.String): js.Function2[
-/* className */ java.lang.String, 
-/* value */ js.UndefOr[scala.Boolean | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵclassProp */ js.Any] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classProp")(className.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-/* className */ java.lang.String, 
-/* value */ js.UndefOr[scala.Boolean | scala.Null], 
+inline def ɵɵclassProp(className: String): js.Function2[
+/* className */ String, 
+/* value */ js.UndefOr[Boolean | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵclassProp */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classProp")(className.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+/* className */ String, 
+/* value */ js.UndefOr[Boolean | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵclassProp */ js.Any]]
-inline def ɵɵclassProp(className: java.lang.String, value: scala.Boolean): js.Function2[
-/* className */ java.lang.String, 
-/* value */ js.UndefOr[scala.Boolean | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵclassProp */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classProp")(className.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
-/* className */ java.lang.String, 
-/* value */ js.UndefOr[scala.Boolean | scala.Null], 
+inline def ɵɵclassProp(className: String, value: Boolean): js.Function2[
+/* className */ String, 
+/* value */ js.UndefOr[Boolean | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵclassProp */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275classProp")(className.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+/* className */ String, 
+/* value */ js.UndefOr[Boolean | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵclassProp */ js.Any]]
 
-inline def ɵɵcontentQuery[T](directiveIndex: scala.Double, predicate: js.Array[java.lang.String], descend: scala.Boolean): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275contentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵcontentQuery[T](
-  directiveIndex: scala.Double,
-  predicate: js.Array[java.lang.String],
-  descend: scala.Boolean,
-  read: js.Any
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275contentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵcontentQuery[T](
-  directiveIndex: scala.Double,
-  predicate: typings.angularCore.mod.InjectionToken[js.Any],
-  descend: scala.Boolean
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275contentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵcontentQuery[T](
-  directiveIndex: scala.Double,
-  predicate: typings.angularCore.mod.InjectionToken[js.Any],
-  descend: scala.Boolean,
-  read: js.Any
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275contentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵcontentQuery[T](
-  directiveIndex: scala.Double,
-  predicate: typings.angularCore.mod.Type[js.Any],
-  descend: scala.Boolean
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275contentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵcontentQuery[T](
-  directiveIndex: scala.Double,
-  predicate: typings.angularCore.mod.Type[js.Any],
-  descend: scala.Boolean,
-  read: js.Any
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275contentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵcontentQuery[T](directiveIndex: Double, predicate: js.Array[String], flags: QueryFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275contentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵɵcontentQuery[T](directiveIndex: Double, predicate: js.Array[String], flags: QueryFlags, read: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275contentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵɵcontentQuery[T](directiveIndex: Double, predicate: ProviderToken[Any], flags: QueryFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275contentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵɵcontentQuery[T](directiveIndex: Double, predicate: ProviderToken[Any], flags: QueryFlags, read: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275contentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵdefineComponent[T](componentDefinition: typings.angularCore.anon.ChangeDetection[T]): scala.Nothing = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineComponent")(componentDefinition.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+inline def ɵɵdefineComponent[T](componentDefinition: ChangeDetection[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineComponent")(componentDefinition.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def ɵɵdefineDirective[T](directiveDefinition: typings.angularCore.anon.ContentQueries[T]): scala.Nothing = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineDirective")(directiveDefinition.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+inline def ɵɵdefineDirective[T](directiveDefinition: ContentQueries[T]): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineDirective")(directiveDefinition.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
 
-inline def ɵɵdefineInjectable[T](opts: typings.angularCore.anon.Factory[T]): scala.Nothing = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineInjectable")(opts.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+inline def ɵɵdefineInjectable[T](opts: Factory[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineInjectable")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def ɵɵdefineInjector(options: typings.angularCore.anon.Imports): scala.Nothing = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineInjector")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+inline def ɵɵdefineInjector(options: Imports): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineInjector")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def ɵɵdefineNgModule[T](`def`: typings.angularCore.anon.Bootstrap[T]): scala.Nothing = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineNgModule")(`def`.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+inline def ɵɵdefineNgModule[T](`def`: Bootstrap[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineNgModule")(`def`.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def ɵɵdefinePipe[T](pipeDef: typings.angularCore.anon.Pure[T]): scala.Nothing = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275definePipe")(pipeDef.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+inline def ɵɵdefinePipe[T](pipeDef: Pure[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275definePipe")(pipeDef.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def ɵɵdirectiveInject[T](token: typings.angularCore.mod.InjectionToken[T]): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275directiveInject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def ɵɵdirectiveInject[T](token: typings.angularCore.mod.InjectionToken[T], flags: typings.angularCore.mod.InjectFlags): T = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275directiveInject")(token.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def ɵɵdirectiveInject[T](token: typings.angularCore.mod.Type[T]): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275directiveInject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def ɵɵdirectiveInject[T](token: typings.angularCore.mod.Type[T], flags: typings.angularCore.mod.InjectFlags): T = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275directiveInject")(token.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def ɵɵdirectiveInject[T](token: ProviderToken[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275directiveInject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def ɵɵdirectiveInject[T](token: ProviderToken[T], flags: InjectFlags): T = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275directiveInject")(token.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def ɵɵdisableBindings(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275disableBindings")().asInstanceOf[scala.Unit]
+inline def ɵɵdisableBindings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275disableBindings")().asInstanceOf[Unit]
 
-inline def ɵɵelement(index: scala.Double, name: java.lang.String): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275element")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵelement(index: scala.Double, name: java.lang.String, attrsIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275element")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵelement(
-  index: scala.Double,
-  name: java.lang.String,
-  attrsIndex: scala.Double,
-  localRefsIndex: scala.Double
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275element")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵelement(index: scala.Double, name: java.lang.String, attrsIndex: scala.Null, localRefsIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275element")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵelement(index: scala.Double, name: java.lang.String, attrsIndex: scala.Unit, localRefsIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275element")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵelement(index: Double, name: String): js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelement */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275element")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelement */ js.Any]]
+inline def ɵɵelement(index: Double, name: String, attrsIndex: Double): js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelement */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275element")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelement */ js.Any]]
+inline def ɵɵelement(index: Double, name: String, attrsIndex: Double, localRefsIndex: Double): js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelement */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275element")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelement */ js.Any]]
+inline def ɵɵelement(index: Double, name: String, attrsIndex: Null, localRefsIndex: Double): js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelement */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275element")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelement */ js.Any]]
+inline def ɵɵelement(index: Double, name: String, attrsIndex: Unit, localRefsIndex: Double): js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelement */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275element")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelement */ js.Any]]
 
-inline def ɵɵelementContainer(index: scala.Double): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainer")(index.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def ɵɵelementContainer(index: scala.Double, attrsIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainer")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵelementContainer(index: scala.Double, attrsIndex: scala.Double, localRefsIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainer")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵelementContainer(index: scala.Double, attrsIndex: scala.Null, localRefsIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainer")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵelementContainer(index: scala.Double, attrsIndex: scala.Unit, localRefsIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainer")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵelementContainer(index: Double): js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainer */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainer")(index.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainer */ js.Any]]
+inline def ɵɵelementContainer(index: Double, attrsIndex: Double): js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainer */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainer")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainer */ js.Any]]
+inline def ɵɵelementContainer(index: Double, attrsIndex: Double, localRefsIndex: Double): js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainer */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainer")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainer */ js.Any]]
+inline def ɵɵelementContainer(index: Double, attrsIndex: Null, localRefsIndex: Double): js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainer */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainer")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainer */ js.Any]]
+inline def ɵɵelementContainer(index: Double, attrsIndex: Unit, localRefsIndex: Double): js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainer */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainer")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainer */ js.Any]]
 
-inline def ɵɵelementContainerEnd(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainerEnd")().asInstanceOf[scala.Unit]
+inline def ɵɵelementContainerEnd(): js.Function0[
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainerEnd */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainerEnd")().asInstanceOf[js.Function0[
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainerEnd */ js.Any]]
 
-inline def ɵɵelementContainerStart(index: scala.Double): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainerStart")(index.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def ɵɵelementContainerStart(index: scala.Double, attrsIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainerStart")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵelementContainerStart(index: scala.Double, attrsIndex: scala.Double, localRefsIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainerStart")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵelementContainerStart(index: scala.Double, attrsIndex: scala.Null, localRefsIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainerStart")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵelementContainerStart(index: scala.Double, attrsIndex: scala.Unit, localRefsIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainerStart")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵelementContainerStart(index: Double): js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainerStart */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainerStart")(index.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainerStart */ js.Any]]
+inline def ɵɵelementContainerStart(index: Double, attrsIndex: Double): js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainerStart */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainerStart")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainerStart */ js.Any]]
+inline def ɵɵelementContainerStart(index: Double, attrsIndex: Double, localRefsIndex: Double): js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainerStart */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainerStart")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainerStart */ js.Any]]
+inline def ɵɵelementContainerStart(index: Double, attrsIndex: Null, localRefsIndex: Double): js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainerStart */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainerStart")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainerStart */ js.Any]]
+inline def ɵɵelementContainerStart(index: Double, attrsIndex: Unit, localRefsIndex: Double): js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainerStart */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementContainerStart")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* index */ Double, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementContainerStart */ js.Any]]
 
-inline def ɵɵelementEnd(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementEnd")().asInstanceOf[scala.Unit]
+inline def ɵɵelementEnd(): js.Function0[
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementEnd */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementEnd")().asInstanceOf[js.Function0[
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementEnd */ js.Any]]
 
-inline def ɵɵelementStart(index: scala.Double, name: java.lang.String): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementStart")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵelementStart(index: scala.Double, name: java.lang.String, attrsIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementStart")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵelementStart(
-  index: scala.Double,
-  name: java.lang.String,
-  attrsIndex: scala.Double,
-  localRefsIndex: scala.Double
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementStart")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵelementStart(index: scala.Double, name: java.lang.String, attrsIndex: scala.Null, localRefsIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementStart")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵelementStart(index: scala.Double, name: java.lang.String, attrsIndex: scala.Unit, localRefsIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementStart")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵelementStart(index: Double, name: String): js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementStart */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementStart")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementStart */ js.Any]]
+inline def ɵɵelementStart(index: Double, name: String, attrsIndex: Double): js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementStart */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementStart")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementStart */ js.Any]]
+inline def ɵɵelementStart(index: Double, name: String, attrsIndex: Double, localRefsIndex: Double): js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementStart */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementStart")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementStart */ js.Any]]
+inline def ɵɵelementStart(index: Double, name: String, attrsIndex: Null, localRefsIndex: Double): js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementStart */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementStart")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementStart */ js.Any]]
+inline def ɵɵelementStart(index: Double, name: String, attrsIndex: Unit, localRefsIndex: Double): js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementStart */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275elementStart")(index.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* index */ Double, 
+/* name */ String, 
+/* attrsIndex */ js.UndefOr[Double | Null], 
+/* localRefsIndex */ js.UndefOr[Double], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵelementStart */ js.Any]]
 
-inline def ɵɵenableBindings(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275enableBindings")().asInstanceOf[scala.Unit]
+inline def ɵɵenableBindings(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275enableBindings")().asInstanceOf[Unit]
 
-inline def ɵɵgetCurrentView(): typings.angularCore.mod.OpaqueViewState = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275getCurrentView")().asInstanceOf[typings.angularCore.mod.OpaqueViewState]
+inline def ɵɵgetCurrentView(): OpaqueViewState = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275getCurrentView")().asInstanceOf[OpaqueViewState]
 
-inline def ɵɵgetFactoryOf[T](`type`: typings.angularCore.mod.Type[js.Any]): typings.angularCore.mod.FactoryFn[T] | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275getFactoryOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.FactoryFn[T] | scala.Null]
+inline def ɵɵgetInheritedFactory[T](`type`: Type[Any]): js.Function1[/* type */ Type[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275getInheritedFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* type */ Type[T], T]]
 
-inline def ɵɵgetInheritedFactory[T](`type`: typings.angularCore.mod.Type[js.Any]): js.Function1[/* type */ typings.angularCore.mod.Type[T], T] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275getInheritedFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* type */ typings.angularCore.mod.Type[T], T]]
+inline def ɵɵhostProperty[T](propName: String, value: T): FnCall = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275hostProperty")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FnCall]
+inline def ɵɵhostProperty[T](propName: String, value: T, sanitizer: SanitizerFn): FnCall = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275hostProperty")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[FnCall]
 
-inline def ɵɵhostProperty[T](propName: java.lang.String, value: T): typings.angularCore.anon.FnCall = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275hostProperty")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.FnCall]
-inline def ɵɵhostProperty[T](propName: java.lang.String, value: T, sanitizer: typings.angularCore.mod.SanitizerFn): typings.angularCore.anon.FnCall = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275hostProperty")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.FnCall]
+inline def ɵɵi18n(index: Double, messageIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18n")(index.asInstanceOf[js.Any], messageIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵɵi18n(index: Double, messageIndex: Double, subTemplateIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18n")(index.asInstanceOf[js.Any], messageIndex.asInstanceOf[js.Any], subTemplateIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵi18n(index: scala.Double, messageIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18n")(index.asInstanceOf[js.Any], messageIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵi18n(index: scala.Double, messageIndex: scala.Double, subTemplateIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18n")(index.asInstanceOf[js.Any], messageIndex.asInstanceOf[js.Any], subTemplateIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵi18nApply(index: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nApply")(index.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵɵi18nApply(index: scala.Double): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nApply")(index.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def ɵɵi18nAttributes(index: Double, attrsIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nAttributes")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵi18nAttributes(index: scala.Double, attrsIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nAttributes")(index.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵi18nEnd(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nEnd")().asInstanceOf[Unit]
 
-inline def ɵɵi18nEnd(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nEnd")().asInstanceOf[scala.Unit]
+inline def ɵɵi18nExp[T](value: T): FnCallValue = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nExp")(value.asInstanceOf[js.Any]).asInstanceOf[FnCallValue]
 
-inline def ɵɵi18nExp[T](value: T): typings.angularCore.anon.FnCallValue = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nExp")(value.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.anon.FnCallValue]
+inline def ɵɵi18nPostprocess(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nPostprocess")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def ɵɵi18nPostprocess(message: String, replacements: StringDictionary[String | js.Array[String]]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nPostprocess")(message.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def ɵɵi18nPostprocess(message: java.lang.String): java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nPostprocess")(message.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def ɵɵi18nPostprocess(
-  message: java.lang.String,
-  replacements: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
-): java.lang.String = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nPostprocess")(message.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def ɵɵi18nStart(index: Double, messageIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nStart")(index.asInstanceOf[js.Any], messageIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵɵi18nStart(index: Double, messageIndex: Double, subTemplateIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nStart")(index.asInstanceOf[js.Any], messageIndex.asInstanceOf[js.Any], subTemplateIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵi18nStart(index: scala.Double, messageIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nStart")(index.asInstanceOf[js.Any], messageIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵi18nStart(index: scala.Double, messageIndex: scala.Double, subTemplateIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275i18nStart")(index.asInstanceOf[js.Any], messageIndex.asInstanceOf[js.Any], subTemplateIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵinject[T](token: ProviderToken[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275inject")(token.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+inline def ɵɵinject[T](token: ProviderToken[T], flags: InjectFlags): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275inject")(token.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | Null]
 
-inline def ɵɵinject[T](token: typings.angularCore.mod.InjectionToken[T]): T | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275inject")(token.asInstanceOf[js.Any]).asInstanceOf[T | scala.Null]
-inline def ɵɵinject[T](token: typings.angularCore.mod.InjectionToken[T], flags: typings.angularCore.mod.InjectFlags): T | scala.Null = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275inject")(token.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | scala.Null]
-inline def ɵɵinject[T](token: typings.angularCore.mod.Type[T]): T | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275inject")(token.asInstanceOf[js.Any]).asInstanceOf[T | scala.Null]
-inline def ɵɵinject[T](token: typings.angularCore.mod.Type[T], flags: typings.angularCore.mod.InjectFlags): T | scala.Null = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275inject")(token.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | scala.Null]
+inline def ɵɵinjectAttribute(attrNameToInject: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275injectAttribute")(attrNameToInject.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 
-inline def ɵɵinjectAttribute(attrNameToInject: java.lang.String): java.lang.String | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275injectAttribute")(attrNameToInject.asInstanceOf[js.Any]).asInstanceOf[java.lang.String | scala.Null]
+inline def ɵɵinject_T_T[T](token: ProviderToken[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275inject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def ɵɵinjectPipeChangeDetectorRef(): typings.angularCore.mod.ChangeDetectorRef | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275injectPipeChangeDetectorRef")().asInstanceOf[typings.angularCore.mod.ChangeDetectorRef | scala.Null]
-inline def ɵɵinjectPipeChangeDetectorRef(flags: typings.angularCore.mod.InjectFlags): typings.angularCore.mod.ChangeDetectorRef | scala.Null = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275injectPipeChangeDetectorRef")(flags.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.ChangeDetectorRef | scala.Null]
+inline def ɵɵinvalidFactory(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275invalidFactory")().asInstanceOf[scala.Nothing]
 
-inline def ɵɵinject_T_T[T](token: typings.angularCore.mod.InjectionToken[T]): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275inject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def ɵɵinject_T_T[T](token: typings.angularCore.mod.Type[T]): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275inject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def ɵɵinvalidFactoryDep(index: Double): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275invalidFactoryDep")(index.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
 
-inline def ɵɵinvalidFactory(): scala.Nothing = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275invalidFactory")().asInstanceOf[scala.Nothing]
-
-inline def ɵɵinvalidFactoryDep(index: scala.Double): scala.Nothing = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275invalidFactoryDep")(index.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
-
-inline def ɵɵlistener(eventName: java.lang.String, listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], js.Any]): js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵlistener */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275listener")(eventName.asInstanceOf[js.Any], listenerFn.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
+inline def ɵɵlistener(eventName: String, listenerFn: js.Function1[/* e */ js.UndefOr[Any], Any]): js.Function4[
+/* eventName */ String, 
+/* listenerFn */ js.Function1[/* e */ js.UndefOr[Any], Any], 
+/* useCapture */ js.UndefOr[Boolean], 
+/* eventTargetResolver */ js.UndefOr[GlobalTargetResolver], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵlistener */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275listener")(eventName.asInstanceOf[js.Any], listenerFn.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* eventName */ String, 
+/* listenerFn */ js.Function1[/* e */ js.UndefOr[Any], Any], 
+/* useCapture */ js.UndefOr[Boolean], 
+/* eventTargetResolver */ js.UndefOr[GlobalTargetResolver], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵlistener */ js.Any]]
+inline def ɵɵlistener(eventName: String, listenerFn: js.Function1[/* e */ js.UndefOr[Any], Any], useCapture: Boolean): js.Function4[
+/* eventName */ String, 
+/* listenerFn */ js.Function1[/* e */ js.UndefOr[Any], Any], 
+/* useCapture */ js.UndefOr[Boolean], 
+/* eventTargetResolver */ js.UndefOr[GlobalTargetResolver], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵlistener */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275listener")(eventName.asInstanceOf[js.Any], listenerFn.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* eventName */ String, 
+/* listenerFn */ js.Function1[/* e */ js.UndefOr[Any], Any], 
+/* useCapture */ js.UndefOr[Boolean], 
+/* eventTargetResolver */ js.UndefOr[GlobalTargetResolver], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵlistener */ js.Any]]
 inline def ɵɵlistener(
-  eventName: java.lang.String,
-  listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], js.Any],
-  useCapture: scala.Boolean
+  eventName: String,
+  listenerFn: js.Function1[/* e */ js.UndefOr[Any], Any],
+  useCapture: Boolean,
+  eventTargetResolver: GlobalTargetResolver
 ): js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵlistener */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275listener")(eventName.asInstanceOf[js.Any], listenerFn.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
+/* eventName */ String, 
+/* listenerFn */ js.Function1[/* e */ js.UndefOr[Any], Any], 
+/* useCapture */ js.UndefOr[Boolean], 
+/* eventTargetResolver */ js.UndefOr[GlobalTargetResolver], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵlistener */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275listener")(eventName.asInstanceOf[js.Any], listenerFn.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any], eventTargetResolver.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* eventName */ String, 
+/* listenerFn */ js.Function1[/* e */ js.UndefOr[Any], Any], 
+/* useCapture */ js.UndefOr[Boolean], 
+/* eventTargetResolver */ js.UndefOr[GlobalTargetResolver], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵlistener */ js.Any]]
 inline def ɵɵlistener(
-  eventName: java.lang.String,
-  listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], js.Any],
-  useCapture: scala.Boolean,
-  eventTargetResolver: typings.angularCore.mod.GlobalTargetResolver
+  eventName: String,
+  listenerFn: js.Function1[/* e */ js.UndefOr[Any], Any],
+  useCapture: Unit,
+  eventTargetResolver: GlobalTargetResolver
 ): js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵlistener */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275listener")(eventName.asInstanceOf[js.Any], listenerFn.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any], eventTargetResolver.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵlistener */ js.Any]]
-inline def ɵɵlistener(
-  eventName: java.lang.String,
-  listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], js.Any],
-  useCapture: scala.Unit,
-  eventTargetResolver: typings.angularCore.mod.GlobalTargetResolver
-): js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵlistener */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275listener")(eventName.asInstanceOf[js.Any], listenerFn.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any], eventTargetResolver.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
+/* eventName */ String, 
+/* listenerFn */ js.Function1[/* e */ js.UndefOr[Any], Any], 
+/* useCapture */ js.UndefOr[Boolean], 
+/* eventTargetResolver */ js.UndefOr[GlobalTargetResolver], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵlistener */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275listener")(eventName.asInstanceOf[js.Any], listenerFn.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any], eventTargetResolver.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
+/* eventName */ String, 
+/* listenerFn */ js.Function1[/* e */ js.UndefOr[Any], Any], 
+/* useCapture */ js.UndefOr[Boolean], 
+/* eventTargetResolver */ js.UndefOr[GlobalTargetResolver], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵlistener */ js.Any]]
 
-inline def ɵɵloadQuery[T](): typings.angularCore.mod.QueryList[T] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275loadQuery")().asInstanceOf[typings.angularCore.mod.QueryList[T]]
+inline def ɵɵloadQuery[T](): QueryList[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275loadQuery")().asInstanceOf[QueryList[T]]
 
-inline def ɵɵnamespaceHTML(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275namespaceHTML")().asInstanceOf[scala.Unit]
+inline def ɵɵnamespaceHTML(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275namespaceHTML")().asInstanceOf[Unit]
 
-inline def ɵɵnamespaceMathML(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275namespaceMathML")().asInstanceOf[scala.Unit]
+inline def ɵɵnamespaceMathML(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275namespaceMathML")().asInstanceOf[Unit]
 
-inline def ɵɵnamespaceSVG(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275namespaceSVG")().asInstanceOf[scala.Unit]
+inline def ɵɵnamespaceSVG(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275namespaceSVG")().asInstanceOf[Unit]
 
-inline def ɵɵnextContext[T](): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275nextContext")().asInstanceOf[T]
-inline def ɵɵnextContext[T](level: scala.Double): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275nextContext")(level.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def ɵɵnextContext[T](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275nextContext")().asInstanceOf[T]
+inline def ɵɵnextContext[T](level: Double): T = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275nextContext")(level.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def ɵɵpipe(index: scala.Double, pipeName: java.lang.String): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pipe")(index.asInstanceOf[js.Any], pipeName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def ɵɵngDeclareClassMetadata(decl: CtorParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275ngDeclareClassMetadata")(decl.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵɵpipeBind1(index: scala.Double, slotOffset: scala.Double, v1: js.Any): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pipeBind1")(index.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], v1.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def ɵɵngDeclareComponent(decl: R3DeclareComponentFacade): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275ngDeclareComponent")(decl.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def ɵɵpipeBind2(index: scala.Double, slotOffset: scala.Double, v1: js.Any, v2: js.Any): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pipeBind2")(index.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def ɵɵngDeclareDirective(decl: R3DeclareDirectiveFacade): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275ngDeclareDirective")(decl.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def ɵɵpipeBind3(index: scala.Double, slotOffset: scala.Double, v1: js.Any, v2: js.Any, v3: js.Any): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pipeBind3")(index.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def ɵɵngDeclareFactory(decl: R3DeclareFactoryFacade): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275ngDeclareFactory")(decl.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def ɵɵpipeBind4(index: scala.Double, slotOffset: scala.Double, v1: js.Any, v2: js.Any, v3: js.Any, v4: js.Any): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pipeBind4")(index.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def ɵɵngDeclareInjectable(decl: R3DeclareInjectableFacade): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275ngDeclareInjectable")(decl.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def ɵɵpipeBindV(index: scala.Double, slotOffset: scala.Double, values: Array[js.Any]): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pipeBindV")(index.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def ɵɵngDeclareInjector(decl: R3DeclareInjectorFacade): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275ngDeclareInjector")(decl.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def ɵɵprojection(nodeIndex: scala.Double): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275projection")(nodeIndex.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def ɵɵprojection(nodeIndex: scala.Double, selectorIndex: scala.Double): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275projection")(nodeIndex.asInstanceOf[js.Any], selectorIndex.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵprojection(nodeIndex: scala.Double, selectorIndex: scala.Double, attrs: typings.angularCore.mod.TAttributes): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275projection")(nodeIndex.asInstanceOf[js.Any], selectorIndex.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵprojection(nodeIndex: scala.Double, selectorIndex: scala.Unit, attrs: typings.angularCore.mod.TAttributes): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275projection")(nodeIndex.asInstanceOf[js.Any], selectorIndex.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵngDeclareNgModule(decl: R3DeclareNgModuleFacade): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275ngDeclareNgModule")(decl.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def ɵɵprojectionDef(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275projectionDef")().asInstanceOf[scala.Unit]
-inline def ɵɵprojectionDef(projectionSlots: typings.angularCore.mod.ProjectionSlots): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275projectionDef")(projectionSlots.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def ɵɵngDeclarePipe(decl: R3DeclarePipeFacade): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275ngDeclarePipe")(decl.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def ɵɵproperty[T](propName: java.lang.String, value: T): typings.angularCore.anon.FnCallPropNameValueSanitizer = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275property")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.FnCallPropNameValueSanitizer]
-inline def ɵɵproperty[T](propName: java.lang.String, value: T, sanitizer: typings.angularCore.mod.SanitizerFn): typings.angularCore.anon.FnCallPropNameValueSanitizer = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275property")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.FnCallPropNameValueSanitizer]
+inline def ɵɵpipe(index: Double, pipeName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pipe")(index.asInstanceOf[js.Any], pipeName.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def ɵɵpropertyInterpolate(propName: java.lang.String, v0: js.Any): js.Function3[
-/* propName */ java.lang.String, 
-/* v0 */ js.Any, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate")(propName.asInstanceOf[js.Any], v0.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-/* propName */ java.lang.String, 
-/* v0 */ js.Any, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+inline def ɵɵpipeBind1(index: Double, slotOffset: Double, v1: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pipeBind1")(index.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], v1.asInstanceOf[js.Any])).asInstanceOf[Any]
+
+inline def ɵɵpipeBind2(index: Double, slotOffset: Double, v1: Any, v2: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pipeBind2")(index.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Any]
+
+inline def ɵɵpipeBind3(index: Double, slotOffset: Double, v1: Any, v2: Any, v3: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pipeBind3")(index.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[Any]
+
+inline def ɵɵpipeBind4(index: Double, slotOffset: Double, v1: Any, v2: Any, v3: Any, v4: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pipeBind4")(index.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any])).asInstanceOf[Any]
+
+inline def ɵɵpipeBindV(index: Double, slotOffset: Double, values: Array[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pipeBindV")(index.asInstanceOf[js.Any], slotOffset.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Any]
+
+inline def ɵɵprojection(nodeIndex: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275projection")(nodeIndex.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def ɵɵprojection(nodeIndex: Double, selectorIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275projection")(nodeIndex.asInstanceOf[js.Any], selectorIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵɵprojection(nodeIndex: Double, selectorIndex: Double, attrs: TAttributes): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275projection")(nodeIndex.asInstanceOf[js.Any], selectorIndex.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵɵprojection(nodeIndex: Double, selectorIndex: Unit, attrs: TAttributes): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275projection")(nodeIndex.asInstanceOf[js.Any], selectorIndex.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def ɵɵprojectionDef(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275projectionDef")().asInstanceOf[Unit]
+inline def ɵɵprojectionDef(projectionSlots: ProjectionSlots): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275projectionDef")(projectionSlots.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def ɵɵproperty[T](propName: String, value: T): FnCallPropNameValueSanitizer = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275property")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[FnCallPropNameValueSanitizer]
+inline def ɵɵproperty[T](propName: String, value: T, sanitizer: SanitizerFn): FnCallPropNameValueSanitizer = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275property")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[FnCallPropNameValueSanitizer]
+
+inline def ɵɵpropertyInterpolate(propName: String, v0: Any): js.Function3[
+/* propName */ String, 
+/* v0 */ Any, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate")(propName.asInstanceOf[js.Any], v0.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* propName */ String, 
+/* v0 */ Any, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate */ js.Any]]
-inline def ɵɵpropertyInterpolate(propName: java.lang.String, v0: js.Any, sanitizer: typings.angularCore.mod.SanitizerFn): js.Function3[
-/* propName */ java.lang.String, 
-/* v0 */ js.Any, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate")(propName.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-/* propName */ java.lang.String, 
-/* v0 */ js.Any, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+inline def ɵɵpropertyInterpolate(propName: String, v0: Any, sanitizer: SanitizerFn): js.Function3[
+/* propName */ String, 
+/* v0 */ Any, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate")(propName.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* propName */ String, 
+/* v0 */ Any, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate */ js.Any]]
 
-inline def ɵɵpropertyInterpolate1(propName: java.lang.String, prefix: java.lang.String, v0: js.Any, suffix: java.lang.String): js.Function5[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate1 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate1")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+inline def ɵɵpropertyInterpolate1(propName: String, prefix: String, v0: Any, suffix: String): js.Function5[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate1 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate1")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate1 */ js.Any]]
-inline def ɵɵpropertyInterpolate1(
-  propName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
-): js.Function5[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate1 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate1")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+inline def ɵɵpropertyInterpolate1(propName: String, prefix: String, v0: Any, suffix: String, sanitizer: SanitizerFn): js.Function5[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate1 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate1")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate1 */ js.Any]]
 
-inline def ɵɵpropertyInterpolate2(
-  propName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  suffix: java.lang.String
-): js.Function7[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate2 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate2")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function7[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+inline def ɵɵpropertyInterpolate2(propName: String, prefix: String, v0: Any, i0: String, v1: Any, suffix: String): js.Function7[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate2 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate2")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function7[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate2 */ js.Any]]
 inline def ɵɵpropertyInterpolate2(
-  propName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
+  propName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  suffix: String,
+  sanitizer: SanitizerFn
 ): js.Function7[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate2 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate2")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function7[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate2 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate2")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function7[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate2 */ js.Any]]
 
 inline def ɵɵpropertyInterpolate3(
-  propName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  suffix: java.lang.String
+  propName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  suffix: String
 ): js.Function9[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate3 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate3")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function9[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate3 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate3")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function9[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate3 */ js.Any]]
 inline def ɵɵpropertyInterpolate3(
-  propName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
+  propName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  suffix: String,
+  sanitizer: SanitizerFn
 ): js.Function9[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate3 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate3")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function9[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate3 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate3")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function9[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate3 */ js.Any]]
 
 inline def ɵɵpropertyInterpolate4(
-  propName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  suffix: java.lang.String
+  propName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  suffix: String
 ): js.Function11[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate4 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate4")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function11[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate4 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate4")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function11[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate4 */ js.Any]]
 inline def ɵɵpropertyInterpolate4(
-  propName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
+  propName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  suffix: String,
+  sanitizer: SanitizerFn
 ): js.Function11[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate4 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate4")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function11[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate4 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate4")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function11[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate4 */ js.Any]]
 
 inline def ɵɵpropertyInterpolate5(
-  propName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  suffix: java.lang.String
+  propName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  suffix: String
 ): js.Function13[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate5 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate5")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function13[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate5 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate5")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function13[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate5 */ js.Any]]
 inline def ɵɵpropertyInterpolate5(
-  propName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
+  propName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  suffix: String,
+  sanitizer: SanitizerFn
 ): js.Function13[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate5 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate5")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function13[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate5 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate5")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function13[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate5 */ js.Any]]
 
 inline def ɵɵpropertyInterpolate6(
-  propName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  suffix: java.lang.String
+  propName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  suffix: String
 ): js.Function15[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate6 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate6")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function15[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate6 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate6")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function15[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate6 */ js.Any]]
 inline def ɵɵpropertyInterpolate6(
-  propName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
+  propName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  suffix: String,
+  sanitizer: SanitizerFn
 ): js.Function15[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate6 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate6")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function15[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate6 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate6")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function15[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate6 */ js.Any]]
 
 inline def ɵɵpropertyInterpolate7(
-  propName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  suffix: java.lang.String
+  propName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  suffix: String
 ): js.Function17[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate7 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate7")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function17[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate7 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate7")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function17[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate7 */ js.Any]]
 inline def ɵɵpropertyInterpolate7(
-  propName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
+  propName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  suffix: String,
+  sanitizer: SanitizerFn
 ): js.Function17[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate7 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate7")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function17[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate7 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate7")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function17[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate7 */ js.Any]]
 
 inline def ɵɵpropertyInterpolate8(
-  propName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  i6: java.lang.String,
-  v7: js.Any,
-  suffix: java.lang.String
+  propName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  i6: String,
+  v7: Any,
+  suffix: String
 ): js.Function19[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate8 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate8")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function19[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate8 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate8")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function19[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate8 */ js.Any]]
 inline def ɵɵpropertyInterpolate8(
-  propName: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  i6: java.lang.String,
-  v7: js.Any,
-  suffix: java.lang.String,
-  sanitizer: typings.angularCore.mod.SanitizerFn
+  propName: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  i6: String,
+  v7: Any,
+  suffix: String,
+  sanitizer: SanitizerFn
 ): js.Function19[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate8 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate8")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function19[
-/* propName */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate8 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolate8")(propName.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function19[
+/* propName */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolate8 */ js.Any]]
 
-inline def ɵɵpropertyInterpolateV(propName: java.lang.String, values: js.Array[js.Any]): js.Function3[
-/* propName */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolateV */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolateV")(propName.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-/* propName */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+inline def ɵɵpropertyInterpolateV(propName: String, values: js.Array[Any]): js.Function3[
+/* propName */ String, 
+/* values */ js.Array[Any], 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolateV */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolateV")(propName.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* propName */ String, 
+/* values */ js.Array[Any], 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolateV */ js.Any]]
-inline def ɵɵpropertyInterpolateV(
-  propName: java.lang.String,
-  values: js.Array[js.Any],
-  sanitizer: typings.angularCore.mod.SanitizerFn
-): js.Function3[
-/* propName */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolateV */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolateV")(propName.asInstanceOf[js.Any], values.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-/* propName */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* sanitizer */ js.UndefOr[typings.angularCore.mod.SanitizerFn], 
+inline def ɵɵpropertyInterpolateV(propName: String, values: js.Array[Any], sanitizer: SanitizerFn): js.Function3[
+/* propName */ String, 
+/* values */ js.Array[Any], 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolateV */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275propertyInterpolateV")(propName.asInstanceOf[js.Any], values.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* propName */ String, 
+/* values */ js.Array[Any], 
+/* sanitizer */ js.UndefOr[SanitizerFn], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵpropertyInterpolateV */ js.Any]]
 
-inline def ɵɵpureFunction0[T](slotOffset: scala.Double, pureFn: js.Function0[T]): T = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction0")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any])).asInstanceOf[T]
-inline def ɵɵpureFunction0[T](slotOffset: scala.Double, pureFn: js.Function0[T], thisArg: js.Any): T = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction0")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def ɵɵpureFunction0[T](slotOffset: Double, pureFn: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction0")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def ɵɵpureFunction0[T](slotOffset: Double, pureFn: js.Function0[T], thisArg: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction0")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[T]
 
-inline def ɵɵpureFunction1(slotOffset: scala.Double, pureFn: js.Function1[/* v */ js.Any, js.Any], exp: js.Any): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction1")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵɵpureFunction1(
-  slotOffset: scala.Double,
-  pureFn: js.Function1[/* v */ js.Any, js.Any],
-  exp: js.Any,
-  thisArg: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction1")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def ɵɵpureFunction1(slotOffset: Double, pureFn: js.Function1[/* v */ Any, Any], exp: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction1")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[Any]
+inline def ɵɵpureFunction1(slotOffset: Double, pureFn: js.Function1[/* v */ Any, Any], exp: Any, thisArg: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction1")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Any]
 
+inline def ɵɵpureFunction2(slotOffset: Double, pureFn: js.Function2[/* v1 */ Any, /* v2 */ Any, Any], exp1: Any, exp2: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction2")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any])).asInstanceOf[Any]
 inline def ɵɵpureFunction2(
-  slotOffset: scala.Double,
-  pureFn: js.Function2[/* v1 */ js.Any, /* v2 */ js.Any, js.Any],
-  exp1: js.Any,
-  exp2: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction2")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵɵpureFunction2(
-  slotOffset: scala.Double,
-  pureFn: js.Function2[/* v1 */ js.Any, /* v2 */ js.Any, js.Any],
-  exp1: js.Any,
-  exp2: js.Any,
-  thisArg: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction2")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  slotOffset: Double,
+  pureFn: js.Function2[/* v1 */ Any, /* v2 */ Any, Any],
+  exp1: Any,
+  exp2: Any,
+  thisArg: Any
+): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction2")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Any]
 
 inline def ɵɵpureFunction3(
-  slotOffset: scala.Double,
-  pureFn: js.Function3[/* v1 */ js.Any, /* v2 */ js.Any, /* v3 */ js.Any, js.Any],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction3")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  slotOffset: Double,
+  pureFn: js.Function3[/* v1 */ Any, /* v2 */ Any, /* v3 */ Any, Any],
+  exp1: Any,
+  exp2: Any,
+  exp3: Any
+): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction3")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any])).asInstanceOf[Any]
 inline def ɵɵpureFunction3(
-  slotOffset: scala.Double,
-  pureFn: js.Function3[/* v1 */ js.Any, /* v2 */ js.Any, /* v3 */ js.Any, js.Any],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any,
-  thisArg: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction3")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  slotOffset: Double,
+  pureFn: js.Function3[/* v1 */ Any, /* v2 */ Any, /* v3 */ Any, Any],
+  exp1: Any,
+  exp2: Any,
+  exp3: Any,
+  thisArg: Any
+): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction3")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Any]
 
 inline def ɵɵpureFunction4(
-  slotOffset: scala.Double,
-  pureFn: js.Function4[/* v1 */ js.Any, /* v2 */ js.Any, /* v3 */ js.Any, /* v4 */ js.Any, js.Any],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any,
-  exp4: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction4")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  slotOffset: Double,
+  pureFn: js.Function4[/* v1 */ Any, /* v2 */ Any, /* v3 */ Any, /* v4 */ Any, Any],
+  exp1: Any,
+  exp2: Any,
+  exp3: Any,
+  exp4: Any
+): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction4")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any])).asInstanceOf[Any]
 inline def ɵɵpureFunction4(
-  slotOffset: scala.Double,
-  pureFn: js.Function4[/* v1 */ js.Any, /* v2 */ js.Any, /* v3 */ js.Any, /* v4 */ js.Any, js.Any],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any,
-  exp4: js.Any,
-  thisArg: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction4")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  slotOffset: Double,
+  pureFn: js.Function4[/* v1 */ Any, /* v2 */ Any, /* v3 */ Any, /* v4 */ Any, Any],
+  exp1: Any,
+  exp2: Any,
+  exp3: Any,
+  exp4: Any,
+  thisArg: Any
+): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction4")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Any]
 
 inline def ɵɵpureFunction5(
-  slotOffset: scala.Double,
-  pureFn: js.Function5[
-  /* v1 */ js.Any, 
-  /* v2 */ js.Any, 
-  /* v3 */ js.Any, 
-  /* v4 */ js.Any, 
-  /* v5 */ js.Any, 
-  js.Any
-],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any,
-  exp4: js.Any,
-  exp5: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction5")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  slotOffset: Double,
+  pureFn: js.Function5[/* v1 */ Any, /* v2 */ Any, /* v3 */ Any, /* v4 */ Any, /* v5 */ Any, Any],
+  exp1: Any,
+  exp2: Any,
+  exp3: Any,
+  exp4: Any,
+  exp5: Any
+): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction5")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any])).asInstanceOf[Any]
 inline def ɵɵpureFunction5(
-  slotOffset: scala.Double,
-  pureFn: js.Function5[
-  /* v1 */ js.Any, 
-  /* v2 */ js.Any, 
-  /* v3 */ js.Any, 
-  /* v4 */ js.Any, 
-  /* v5 */ js.Any, 
-  js.Any
-],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any,
-  exp4: js.Any,
-  exp5: js.Any,
-  thisArg: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction5")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  slotOffset: Double,
+  pureFn: js.Function5[/* v1 */ Any, /* v2 */ Any, /* v3 */ Any, /* v4 */ Any, /* v5 */ Any, Any],
+  exp1: Any,
+  exp2: Any,
+  exp3: Any,
+  exp4: Any,
+  exp5: Any,
+  thisArg: Any
+): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction5")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Any]
 
 inline def ɵɵpureFunction6(
-  slotOffset: scala.Double,
-  pureFn: js.Function6[
-  /* v1 */ js.Any, 
-  /* v2 */ js.Any, 
-  /* v3 */ js.Any, 
-  /* v4 */ js.Any, 
-  /* v5 */ js.Any, 
-  /* v6 */ js.Any, 
-  js.Any
-],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any,
-  exp4: js.Any,
-  exp5: js.Any,
-  exp6: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction6")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any], exp6.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  slotOffset: Double,
+  pureFn: js.Function6[/* v1 */ Any, /* v2 */ Any, /* v3 */ Any, /* v4 */ Any, /* v5 */ Any, /* v6 */ Any, Any],
+  exp1: Any,
+  exp2: Any,
+  exp3: Any,
+  exp4: Any,
+  exp5: Any,
+  exp6: Any
+): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction6")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any], exp6.asInstanceOf[js.Any])).asInstanceOf[Any]
 inline def ɵɵpureFunction6(
-  slotOffset: scala.Double,
-  pureFn: js.Function6[
-  /* v1 */ js.Any, 
-  /* v2 */ js.Any, 
-  /* v3 */ js.Any, 
-  /* v4 */ js.Any, 
-  /* v5 */ js.Any, 
-  /* v6 */ js.Any, 
-  js.Any
-],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any,
-  exp4: js.Any,
-  exp5: js.Any,
-  exp6: js.Any,
-  thisArg: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction6")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any], exp6.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  slotOffset: Double,
+  pureFn: js.Function6[/* v1 */ Any, /* v2 */ Any, /* v3 */ Any, /* v4 */ Any, /* v5 */ Any, /* v6 */ Any, Any],
+  exp1: Any,
+  exp2: Any,
+  exp3: Any,
+  exp4: Any,
+  exp5: Any,
+  exp6: Any,
+  thisArg: Any
+): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction6")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any], exp6.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Any]
 
 inline def ɵɵpureFunction7(
-  slotOffset: scala.Double,
+  slotOffset: Double,
   pureFn: js.Function7[
-  /* v1 */ js.Any, 
-  /* v2 */ js.Any, 
-  /* v3 */ js.Any, 
-  /* v4 */ js.Any, 
-  /* v5 */ js.Any, 
-  /* v6 */ js.Any, 
-  /* v7 */ js.Any, 
-  js.Any
+  /* v1 */ Any, 
+  /* v2 */ Any, 
+  /* v3 */ Any, 
+  /* v4 */ Any, 
+  /* v5 */ Any, 
+  /* v6 */ Any, 
+  /* v7 */ Any, 
+  Any
 ],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any,
-  exp4: js.Any,
-  exp5: js.Any,
-  exp6: js.Any,
-  exp7: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction7")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any], exp6.asInstanceOf[js.Any], exp7.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  exp1: Any,
+  exp2: Any,
+  exp3: Any,
+  exp4: Any,
+  exp5: Any,
+  exp6: Any,
+  exp7: Any
+): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction7")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any], exp6.asInstanceOf[js.Any], exp7.asInstanceOf[js.Any])).asInstanceOf[Any]
 inline def ɵɵpureFunction7(
-  slotOffset: scala.Double,
+  slotOffset: Double,
   pureFn: js.Function7[
-  /* v1 */ js.Any, 
-  /* v2 */ js.Any, 
-  /* v3 */ js.Any, 
-  /* v4 */ js.Any, 
-  /* v5 */ js.Any, 
-  /* v6 */ js.Any, 
-  /* v7 */ js.Any, 
-  js.Any
+  /* v1 */ Any, 
+  /* v2 */ Any, 
+  /* v3 */ Any, 
+  /* v4 */ Any, 
+  /* v5 */ Any, 
+  /* v6 */ Any, 
+  /* v7 */ Any, 
+  Any
 ],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any,
-  exp4: js.Any,
-  exp5: js.Any,
-  exp6: js.Any,
-  exp7: js.Any,
-  thisArg: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction7")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any], exp6.asInstanceOf[js.Any], exp7.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  exp1: Any,
+  exp2: Any,
+  exp3: Any,
+  exp4: Any,
+  exp5: Any,
+  exp6: Any,
+  exp7: Any,
+  thisArg: Any
+): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction7")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any], exp6.asInstanceOf[js.Any], exp7.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Any]
 
 inline def ɵɵpureFunction8(
-  slotOffset: scala.Double,
+  slotOffset: Double,
   pureFn: js.Function8[
-  /* v1 */ js.Any, 
-  /* v2 */ js.Any, 
-  /* v3 */ js.Any, 
-  /* v4 */ js.Any, 
-  /* v5 */ js.Any, 
-  /* v6 */ js.Any, 
-  /* v7 */ js.Any, 
-  /* v8 */ js.Any, 
-  js.Any
+  /* v1 */ Any, 
+  /* v2 */ Any, 
+  /* v3 */ Any, 
+  /* v4 */ Any, 
+  /* v5 */ Any, 
+  /* v6 */ Any, 
+  /* v7 */ Any, 
+  /* v8 */ Any, 
+  Any
 ],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any,
-  exp4: js.Any,
-  exp5: js.Any,
-  exp6: js.Any,
-  exp7: js.Any,
-  exp8: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction8")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any], exp6.asInstanceOf[js.Any], exp7.asInstanceOf[js.Any], exp8.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  exp1: Any,
+  exp2: Any,
+  exp3: Any,
+  exp4: Any,
+  exp5: Any,
+  exp6: Any,
+  exp7: Any,
+  exp8: Any
+): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction8")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any], exp6.asInstanceOf[js.Any], exp7.asInstanceOf[js.Any], exp8.asInstanceOf[js.Any])).asInstanceOf[Any]
 inline def ɵɵpureFunction8(
-  slotOffset: scala.Double,
+  slotOffset: Double,
   pureFn: js.Function8[
-  /* v1 */ js.Any, 
-  /* v2 */ js.Any, 
-  /* v3 */ js.Any, 
-  /* v4 */ js.Any, 
-  /* v5 */ js.Any, 
-  /* v6 */ js.Any, 
-  /* v7 */ js.Any, 
-  /* v8 */ js.Any, 
-  js.Any
+  /* v1 */ Any, 
+  /* v2 */ Any, 
+  /* v3 */ Any, 
+  /* v4 */ Any, 
+  /* v5 */ Any, 
+  /* v6 */ Any, 
+  /* v7 */ Any, 
+  /* v8 */ Any, 
+  Any
 ],
-  exp1: js.Any,
-  exp2: js.Any,
-  exp3: js.Any,
-  exp4: js.Any,
-  exp5: js.Any,
-  exp6: js.Any,
-  exp7: js.Any,
-  exp8: js.Any,
-  thisArg: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction8")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any], exp6.asInstanceOf[js.Any], exp7.asInstanceOf[js.Any], exp8.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  exp1: Any,
+  exp2: Any,
+  exp3: Any,
+  exp4: Any,
+  exp5: Any,
+  exp6: Any,
+  exp7: Any,
+  exp8: Any,
+  thisArg: Any
+): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunction8")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exp1.asInstanceOf[js.Any], exp2.asInstanceOf[js.Any], exp3.asInstanceOf[js.Any], exp4.asInstanceOf[js.Any], exp5.asInstanceOf[js.Any], exp6.asInstanceOf[js.Any], exp7.asInstanceOf[js.Any], exp8.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Any]
 
+inline def ɵɵpureFunctionV(slotOffset: Double, pureFn: js.Function1[/* repeated */ Any, Any], exps: js.Array[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunctionV")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exps.asInstanceOf[js.Any])).asInstanceOf[Any]
 inline def ɵɵpureFunctionV(
-  slotOffset: scala.Double,
-  pureFn: js.Function1[/* repeated */ js.Any, js.Any],
-  exps: js.Array[js.Any]
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunctionV")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exps.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-inline def ɵɵpureFunctionV(
-  slotOffset: scala.Double,
-  pureFn: js.Function1[/* repeated */ js.Any, js.Any],
-  exps: js.Array[js.Any],
-  thisArg: js.Any
-): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunctionV")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exps.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  slotOffset: Double,
+  pureFn: js.Function1[/* repeated */ Any, Any],
+  exps: js.Array[Any],
+  thisArg: Any
+): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275pureFunctionV")(slotOffset.asInstanceOf[js.Any], pureFn.asInstanceOf[js.Any], exps.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def ɵɵqueryRefresh(queryList: typings.angularCore.mod.QueryList[js.Any]): scala.Boolean = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275queryRefresh")(queryList.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def ɵɵqueryRefresh(queryList: QueryList[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275queryRefresh")(queryList.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def ɵɵreference[T](index: scala.Double): T = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275reference")(index.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def ɵɵreference[T](index: Double): T = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275reference")(index.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def ɵɵresolveBody(element: typings.angularCore.anon.RElementownerDocumentDocu): typings.angularCore.anon.Target = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275resolveBody")(element.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.anon.Target]
+inline def ɵɵregisterNgModuleType(ngModuleType: ɵNgModuleType[Any], id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275registerNgModuleType")(ngModuleType.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵresolveDocument(element: typings.angularCore.anon.RElementownerDocumentDocu): typings.angularCore.anon.NameTarget = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275resolveDocument")(element.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.anon.NameTarget]
+inline def ɵɵresetView[T](): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275resetView")().asInstanceOf[js.UndefOr[T]]
+inline def ɵɵresetView[T](value: T): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275resetView")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
 
-inline def ɵɵresolveWindow(element: typings.angularCore.anon.RElementownerDocumentDocu): typings.angularCore.anon.NameString = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275resolveWindow")(element.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.anon.NameString]
+inline def ɵɵresolveBody(element: RElementownerDocumentDocu): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275resolveBody")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
 
-inline def ɵɵrestoreView(viewToRestore: typings.angularCore.mod.OpaqueViewState): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275restoreView")(viewToRestore.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def ɵɵresolveDocument(element: RElementownerDocumentDocu): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275resolveDocument")(element.asInstanceOf[js.Any]).asInstanceOf[Document]
 
-inline def ɵɵsanitizeHtml(unsafeHtml: js.Any): java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275sanitizeHtml")(unsafeHtml.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def ɵɵresolveWindow(element: RElementownerDocumentDocu): (Window & (/* globalThis */ Any)) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275resolveWindow")(element.asInstanceOf[js.Any]).asInstanceOf[(Window & (/* globalThis */ Any)) | Null]
 
-inline def ɵɵsanitizeResourceUrl(unsafeResourceUrl: js.Any): java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275sanitizeResourceUrl")(unsafeResourceUrl.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def ɵɵrestoreView[T](viewToRestore: OpaqueViewState): T = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275restoreView")(viewToRestore.asInstanceOf[js.Any]).asInstanceOf[T]
 
-inline def ɵɵsanitizeScript(unsafeScript: js.Any): java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275sanitizeScript")(unsafeScript.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def ɵɵsanitizeHtml(unsafeHtml: Any): TrustedHTML | String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275sanitizeHtml")(unsafeHtml.asInstanceOf[js.Any]).asInstanceOf[TrustedHTML | String]
 
-inline def ɵɵsanitizeStyle(unsafeStyle: js.Any): java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275sanitizeStyle")(unsafeStyle.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def ɵɵsanitizeResourceUrl(unsafeResourceUrl: Any): TrustedScriptURL | String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275sanitizeResourceUrl")(unsafeResourceUrl.asInstanceOf[js.Any]).asInstanceOf[TrustedScriptURL | String]
 
-inline def ɵɵsanitizeUrl(unsafeUrl: js.Any): java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275sanitizeUrl")(unsafeUrl.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def ɵɵsanitizeScript(unsafeScript: Any): TrustedScript | String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275sanitizeScript")(unsafeScript.asInstanceOf[js.Any]).asInstanceOf[TrustedScript | String]
 
-inline def ɵɵsanitizeUrlOrResourceUrl(unsafeUrl: js.Any, tag: java.lang.String, prop: java.lang.String): js.Any = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275sanitizeUrlOrResourceUrl")(unsafeUrl.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+inline def ɵɵsanitizeStyle(unsafeStyle: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275sanitizeStyle")(unsafeStyle.asInstanceOf[js.Any]).asInstanceOf[String]
 
+inline def ɵɵsanitizeUrl(unsafeUrl: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275sanitizeUrl")(unsafeUrl.asInstanceOf[js.Any]).asInstanceOf[String]
+
+inline def ɵɵsanitizeUrlOrResourceUrl(unsafeUrl: Any, tag: String, prop: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275sanitizeUrlOrResourceUrl")(unsafeUrl.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Any]
+
+inline def ɵɵsetComponentScope(`type`: ɵComponentType[Any], directives: js.Array[Type[Any]], pipes: js.Array[Type[Any]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275setComponentScope")(`type`.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], pipes.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def ɵɵsetComponentScope(
-  `type`: typings.angularCore.mod.ɵComponentType[js.Any],
-  directives: js.Array[typings.angularCore.mod.Type[js.Any]],
-  pipes: js.Array[typings.angularCore.mod.Type[js.Any]]
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275setComponentScope")(`type`.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], pipes.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  `type`: ɵComponentType[Any],
+  directives: js.Array[Type[Any]],
+  pipes: js.Function0[js.Array[Type[Any]]]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275setComponentScope")(`type`.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], pipes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵɵsetComponentScope(
+  `type`: ɵComponentType[Any],
+  directives: js.Function0[js.Array[Type[Any]]],
+  pipes: js.Array[Type[Any]]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275setComponentScope")(`type`.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], pipes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵɵsetComponentScope(
+  `type`: ɵComponentType[Any],
+  directives: js.Function0[js.Array[Type[Any]]],
+  pipes: js.Function0[js.Array[Type[Any]]]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275setComponentScope")(`type`.asInstanceOf[js.Any], directives.asInstanceOf[js.Any], pipes.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵsetNgModuleScope(`type`: js.Any, scope: typings.angularCore.anon.Declarations): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275setNgModuleScope")(`type`.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵsetNgModuleScope(`type`: Any, scope: Declarations): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275setNgModuleScope")(`type`.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def ɵɵstaticContentQuery[T](directiveIndex: scala.Double, predicate: js.Array[java.lang.String], descend: scala.Boolean): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275staticContentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵstaticContentQuery[T](
-  directiveIndex: scala.Double,
-  predicate: js.Array[java.lang.String],
-  descend: scala.Boolean,
-  read: js.Any
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275staticContentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵstaticContentQuery[T](
-  directiveIndex: scala.Double,
-  predicate: typings.angularCore.mod.InjectionToken[js.Any],
-  descend: scala.Boolean
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275staticContentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵstaticContentQuery[T](
-  directiveIndex: scala.Double,
-  predicate: typings.angularCore.mod.InjectionToken[js.Any],
-  descend: scala.Boolean,
-  read: js.Any
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275staticContentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵstaticContentQuery[T](
-  directiveIndex: scala.Double,
-  predicate: typings.angularCore.mod.Type[js.Any],
-  descend: scala.Boolean
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275staticContentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵstaticContentQuery[T](
-  directiveIndex: scala.Double,
-  predicate: typings.angularCore.mod.Type[js.Any],
-  descend: scala.Boolean,
-  read: js.Any
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275staticContentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵstyleMap(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMap")().asInstanceOf[Unit]
+inline def ɵɵstyleMap(styles: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMap")(styles.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def ɵɵstyleMap(styles: StringDictionary[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMap")(styles.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵɵstaticViewQuery[T](predicate: js.Array[java.lang.String], descend: scala.Boolean): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275staticViewQuery")(predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵstaticViewQuery[T](predicate: js.Array[java.lang.String], descend: scala.Boolean, read: js.Any): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275staticViewQuery")(predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵstaticViewQuery[T](predicate: typings.angularCore.mod.InjectionToken[js.Any], descend: scala.Boolean): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275staticViewQuery")(predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵstaticViewQuery[T](predicate: typings.angularCore.mod.InjectionToken[js.Any], descend: scala.Boolean, read: js.Any): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275staticViewQuery")(predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵstaticViewQuery[T](predicate: typings.angularCore.mod.Type[js.Any], descend: scala.Boolean): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275staticViewQuery")(predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵstaticViewQuery[T](predicate: typings.angularCore.mod.Type[js.Any], descend: scala.Boolean, read: js.Any): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275staticViewQuery")(predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵstyleMapInterpolate1(prefix: String, v0: Any, suffix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate1")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵstyleMap(): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMap")().asInstanceOf[scala.Unit]
-inline def ɵɵstyleMap(styles: java.lang.String): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMap")(styles.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def ɵɵstyleMap(styles: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMap")(styles.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def ɵɵstyleMapInterpolate2(prefix: String, v0: Any, i0: String, v1: Any, suffix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate2")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵstyleMapInterpolate1(prefix: java.lang.String, v0: js.Any, suffix: java.lang.String): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate1")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def ɵɵstyleMapInterpolate2(prefix: java.lang.String, v0: js.Any, i0: java.lang.String, v1: js.Any, suffix: java.lang.String): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate2")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-
-inline def ɵɵstyleMapInterpolate3(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  suffix: java.lang.String
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate3")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵstyleMapInterpolate3(prefix: String, v0: Any, i0: String, v1: Any, i1: String, v2: Any, suffix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate3")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def ɵɵstyleMapInterpolate4(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  suffix: java.lang.String
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate4")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  suffix: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate4")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def ɵɵstyleMapInterpolate5(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  suffix: java.lang.String
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate5")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  suffix: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate5")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def ɵɵstyleMapInterpolate6(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  suffix: java.lang.String
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate6")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  suffix: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate6")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def ɵɵstyleMapInterpolate7(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  suffix: java.lang.String
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate7")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  suffix: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate7")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def ɵɵstyleMapInterpolate8(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  i6: java.lang.String,
-  v7: js.Any,
-  suffix: java.lang.String
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate8")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  i6: String,
+  v7: Any,
+  suffix: String
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolate8")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵstyleMapInterpolateV(values: js.Array[js.Any]): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolateV")(values.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def ɵɵstyleMapInterpolateV(values: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleMapInterpolateV")(values.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def ɵɵstyleProp(prop: java.lang.String): js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstyleProp(prop: String): js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any]]
-inline def ɵɵstyleProp(prop: java.lang.String, value: java.lang.String): js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstyleProp(prop: String, value: String): js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any]]
-inline def ɵɵstyleProp(prop: java.lang.String, value: java.lang.String, suffix: java.lang.String): js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstyleProp(prop: String, value: String, suffix: String): js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any]]
-inline def ɵɵstyleProp(prop: java.lang.String, value: scala.Double): js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstyleProp(prop: String, value: Double): js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any]]
-inline def ɵɵstyleProp(prop: java.lang.String, value: scala.Double, suffix: java.lang.String): js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstyleProp(prop: String, value: Double, suffix: String): js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any]]
-inline def ɵɵstyleProp(prop: java.lang.String, value: scala.Null, suffix: java.lang.String): js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstyleProp(prop: String, value: Null, suffix: String): js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any]]
-inline def ɵɵstyleProp(prop: java.lang.String, value: scala.Unit, suffix: java.lang.String): js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstyleProp(prop: String, value: Unit, suffix: String): js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any]]
-inline def ɵɵstyleProp(prop: java.lang.String, value: typings.angularCore.mod.ɵSafeValue): js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstyleProp(prop: String, value: ɵSafeValue): js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any]]
-inline def ɵɵstyleProp(prop: java.lang.String, value: typings.angularCore.mod.ɵSafeValue, suffix: java.lang.String): js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-/* prop */ java.lang.String, 
-/* value */ js.UndefOr[
-  java.lang.String | scala.Double | typings.angularCore.mod.ɵSafeValue | scala.Null
-], 
-/* suffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstyleProp(prop: String, value: ɵSafeValue, suffix: String): js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275styleProp")(prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* prop */ String, 
+/* value */ js.UndefOr[String | Double | ɵSafeValue | Null], 
+/* suffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstyleProp */ js.Any]]
 
-inline def ɵɵstylePropInterpolate1(prop: java.lang.String, prefix: java.lang.String, v0: js.Any, suffix: java.lang.String): js.Function5[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate1 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate1")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstylePropInterpolate1(prop: String, prefix: String, v0: Any, suffix: String): js.Function5[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate1 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate1")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate1 */ js.Any]]
-inline def ɵɵstylePropInterpolate1(
-  prop: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  suffix: java.lang.String,
-  valueSuffix: java.lang.String
-): js.Function5[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate1 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate1")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstylePropInterpolate1(prop: String, prefix: String, v0: Any, suffix: String, valueSuffix: String): js.Function5[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate1 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate1")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate1 */ js.Any]]
 
-inline def ɵɵstylePropInterpolate2(
-  prop: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  suffix: java.lang.String
-): js.Function7[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate2 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate2")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function7[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstylePropInterpolate2(prop: String, prefix: String, v0: Any, i0: String, v1: Any, suffix: String): js.Function7[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate2 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate2")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function7[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate2 */ js.Any]]
-inline def ɵɵstylePropInterpolate2(
-  prop: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  suffix: java.lang.String,
-  valueSuffix: java.lang.String
-): js.Function7[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate2 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate2")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function7[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstylePropInterpolate2(prop: String, prefix: String, v0: Any, i0: String, v1: Any, suffix: String, valueSuffix: String): js.Function7[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate2 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate2")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function7[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate2 */ js.Any]]
 
-inline def ɵɵstylePropInterpolate3(
-  prop: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  suffix: java.lang.String
-): js.Function9[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate3 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate3")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function9[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstylePropInterpolate3(prop: String, prefix: String, v0: Any, i0: String, v1: Any, i1: String, v2: Any, suffix: String): js.Function9[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate3 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate3")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function9[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate3 */ js.Any]]
 inline def ɵɵstylePropInterpolate3(
-  prop: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  suffix: java.lang.String,
-  valueSuffix: java.lang.String
+  prop: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  suffix: String,
+  valueSuffix: String
 ): js.Function9[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate3 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate3")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function9[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate3 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate3")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function9[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate3 */ js.Any]]
 
 inline def ɵɵstylePropInterpolate4(
-  prop: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  suffix: java.lang.String
+  prop: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  suffix: String
 ): js.Function11[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate4 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate4")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function11[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate4 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate4")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function11[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate4 */ js.Any]]
 inline def ɵɵstylePropInterpolate4(
-  prop: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  suffix: java.lang.String,
-  valueSuffix: java.lang.String
+  prop: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  suffix: String,
+  valueSuffix: String
 ): js.Function11[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate4 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate4")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function11[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate4 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate4")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function11[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate4 */ js.Any]]
 
 inline def ɵɵstylePropInterpolate5(
-  prop: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  suffix: java.lang.String
+  prop: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  suffix: String
 ): js.Function13[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate5 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate5")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function13[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate5 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate5")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function13[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate5 */ js.Any]]
 inline def ɵɵstylePropInterpolate5(
-  prop: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  suffix: java.lang.String,
-  valueSuffix: java.lang.String
+  prop: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  suffix: String,
+  valueSuffix: String
 ): js.Function13[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate5 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate5")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function13[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate5 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate5")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function13[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate5 */ js.Any]]
 
 inline def ɵɵstylePropInterpolate6(
-  prop: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  suffix: java.lang.String
+  prop: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  suffix: String
 ): js.Function15[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate6 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate6")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function15[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate6 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate6")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function15[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate6 */ js.Any]]
 inline def ɵɵstylePropInterpolate6(
-  prop: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  suffix: java.lang.String,
-  valueSuffix: java.lang.String
+  prop: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  suffix: String,
+  valueSuffix: String
 ): js.Function15[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate6 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate6")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function15[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate6 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate6")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function15[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate6 */ js.Any]]
 
 inline def ɵɵstylePropInterpolate7(
-  prop: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  suffix: java.lang.String
+  prop: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  suffix: String
 ): js.Function17[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate7 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate7")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function17[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate7 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate7")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function17[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate7 */ js.Any]]
 inline def ɵɵstylePropInterpolate7(
-  prop: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  suffix: java.lang.String,
-  valueSuffix: java.lang.String
+  prop: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  suffix: String,
+  valueSuffix: String
 ): js.Function17[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate7 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate7")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function17[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate7 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate7")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function17[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate7 */ js.Any]]
 
 inline def ɵɵstylePropInterpolate8(
-  prop: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  i6: java.lang.String,
-  v7: js.Any,
-  suffix: java.lang.String
+  prop: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  i6: String,
+  v7: Any,
+  suffix: String
 ): js.Function19[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate8 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate8")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function19[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate8 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate8")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function19[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate8 */ js.Any]]
 inline def ɵɵstylePropInterpolate8(
-  prop: java.lang.String,
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  i6: java.lang.String,
-  v7: js.Any,
-  suffix: java.lang.String,
-  valueSuffix: java.lang.String
+  prop: String,
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  i6: String,
+  v7: Any,
+  suffix: String,
+  valueSuffix: String
 ): js.Function19[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate8 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate8")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function19[
-/* prop */ java.lang.String, 
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate8 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolate8")(prop.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function19[
+/* prop */ String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolate8 */ js.Any]]
 
-inline def ɵɵstylePropInterpolateV(prop: java.lang.String, values: js.Array[js.Any]): js.Function3[
-/* prop */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolateV */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolateV")(prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-/* prop */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstylePropInterpolateV(prop: String, values: js.Array[Any]): js.Function3[
+/* prop */ String, 
+/* values */ js.Array[Any], 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolateV */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolateV")(prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* prop */ String, 
+/* values */ js.Array[Any], 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolateV */ js.Any]]
-inline def ɵɵstylePropInterpolateV(prop: java.lang.String, values: js.Array[js.Any], valueSuffix: java.lang.String): js.Function3[
-/* prop */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolateV */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolateV")(prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-/* prop */ java.lang.String, 
-/* values */ js.Array[js.Any], 
-/* valueSuffix */ js.UndefOr[java.lang.String | scala.Null], 
+inline def ɵɵstylePropInterpolateV(prop: String, values: js.Array[Any], valueSuffix: String): js.Function3[
+/* prop */ String, 
+/* values */ js.Array[Any], 
+/* valueSuffix */ js.UndefOr[String | Null], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolateV */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275stylePropInterpolateV")(prop.asInstanceOf[js.Any], values.asInstanceOf[js.Any], valueSuffix.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* prop */ String, 
+/* values */ js.Array[Any], 
+/* valueSuffix */ js.UndefOr[String | Null], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵstylePropInterpolateV */ js.Any]]
 
-inline def ɵɵsyntheticHostListener(eventName: java.lang.String, listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], js.Any]): js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵsyntheticHostListener */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275syntheticHostListener")(eventName.asInstanceOf[js.Any], listenerFn.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵsyntheticHostListener */ js.Any]]
-inline def ɵɵsyntheticHostListener(
-  eventName: java.lang.String,
-  listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], js.Any],
-  useCapture: scala.Boolean
-): js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵsyntheticHostListener */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275syntheticHostListener")(eventName.asInstanceOf[js.Any], listenerFn.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵsyntheticHostListener */ js.Any]]
-inline def ɵɵsyntheticHostListener(
-  eventName: java.lang.String,
-  listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], js.Any],
-  useCapture: scala.Boolean,
-  eventTargetResolver: typings.angularCore.mod.GlobalTargetResolver
-): js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵsyntheticHostListener */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275syntheticHostListener")(eventName.asInstanceOf[js.Any], listenerFn.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any], eventTargetResolver.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵsyntheticHostListener */ js.Any]]
-inline def ɵɵsyntheticHostListener(
-  eventName: java.lang.String,
-  listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], js.Any],
-  useCapture: scala.Unit,
-  eventTargetResolver: typings.angularCore.mod.GlobalTargetResolver
-): js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵsyntheticHostListener */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275syntheticHostListener")(eventName.asInstanceOf[js.Any], listenerFn.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any], eventTargetResolver.asInstanceOf[js.Any])).asInstanceOf[js.Function4[
-/* eventName */ java.lang.String, 
-/* listenerFn */ js.Function1[/* e */ js.UndefOr[js.Any], js.Any], 
-/* useCapture */ js.UndefOr[scala.Boolean], 
-/* eventTargetResolver */ js.UndefOr[typings.angularCore.mod.GlobalTargetResolver], 
+inline def ɵɵsyntheticHostListener(eventName: String, listenerFn: js.Function1[/* e */ js.UndefOr[Any], Any]): js.Function2[
+/* eventName */ String, 
+/* listenerFn */ js.Function1[/* e */ js.UndefOr[Any], Any], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵsyntheticHostListener */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275syntheticHostListener")(eventName.asInstanceOf[js.Any], listenerFn.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+/* eventName */ String, 
+/* listenerFn */ js.Function1[/* e */ js.UndefOr[Any], Any], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵsyntheticHostListener */ js.Any]]
 
-inline def ɵɵsyntheticHostProperty[T](propName: java.lang.String, value: T): typings.angularCore.anon.Fn0 = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275syntheticHostProperty")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Fn0]
-inline def ɵɵsyntheticHostProperty[T](propName: java.lang.String, value: T, sanitizer: typings.angularCore.mod.SanitizerFn): typings.angularCore.anon.Fn0 = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275syntheticHostProperty")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Fn0]
-inline def ɵɵsyntheticHostProperty[T](propName: java.lang.String, value: typings.angularCore.mod.ɵNOCHANGE): typings.angularCore.anon.Fn0 = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275syntheticHostProperty")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Fn0]
-inline def ɵɵsyntheticHostProperty[T](
-  propName: java.lang.String,
-  value: typings.angularCore.mod.ɵNOCHANGE,
-  sanitizer: typings.angularCore.mod.SanitizerFn
-): typings.angularCore.anon.Fn0 = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275syntheticHostProperty")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.anon.Fn0]
+inline def ɵɵsyntheticHostProperty[T](propName: String, value: T): Fn0 = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275syntheticHostProperty")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Fn0]
+inline def ɵɵsyntheticHostProperty[T](propName: String, value: T, sanitizer: SanitizerFn): Fn0 = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275syntheticHostProperty")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[Fn0]
+inline def ɵɵsyntheticHostProperty[T](propName: String, value: ɵNOCHANGE): Fn0 = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275syntheticHostProperty")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Fn0]
+inline def ɵɵsyntheticHostProperty[T](propName: String, value: ɵNOCHANGE, sanitizer: SanitizerFn): Fn0 = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275syntheticHostProperty")(propName.asInstanceOf[js.Any], value.asInstanceOf[js.Any], sanitizer.asInstanceOf[js.Any])).asInstanceOf[Fn0]
 
 inline def ɵɵtemplate(
-  index: scala.Double,
-  templateFn: typings.angularCore.mod.ComponentTemplate[js.Any] | scala.Null,
-  decls: scala.Double,
-  vars: scala.Double,
-  tagName: js.UndefOr[java.lang.String | scala.Null],
-  attrsIndex: js.UndefOr[scala.Double | scala.Null],
-  localRefsIndex: js.UndefOr[scala.Double | scala.Null],
-  localRefExtractor: js.UndefOr[typings.angularCore.mod.LocalRefExtractor]
-): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275template")(index.asInstanceOf[js.Any], templateFn.asInstanceOf[js.Any], decls.asInstanceOf[js.Any], vars.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any], localRefExtractor.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  index: Double,
+  templateFn: ComponentTemplate[Any] | Null,
+  decls: Double,
+  vars: Double,
+  tagName: js.UndefOr[String | Null],
+  attrsIndex: js.UndefOr[Double | Null],
+  localRefsIndex: js.UndefOr[Double | Null],
+  localRefExtractor: js.UndefOr[LocalRefExtractor]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275template")(index.asInstanceOf[js.Any], templateFn.asInstanceOf[js.Any], decls.asInstanceOf[js.Any], vars.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], attrsIndex.asInstanceOf[js.Any], localRefsIndex.asInstanceOf[js.Any], localRefExtractor.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵtemplateRefExtractor(tNode: typings.angularCore.mod.TNode, lView: typings.angularCore.mod.ɵangularPackagesCoreCoreBv): typings.angularCore.mod.TemplateRef[js.Any] | scala.Null = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275templateRefExtractor")(tNode.asInstanceOf[js.Any], lView.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.mod.TemplateRef[js.Any] | scala.Null]
+inline def ɵɵtemplateRefExtractor(tNode: TNode, lView: LView[Any]): TemplateRef[Any] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275templateRefExtractor")(tNode.asInstanceOf[js.Any], lView.asInstanceOf[js.Any])).asInstanceOf[TemplateRef[Any] | Null]
 
-inline def ɵɵtext(index: scala.Double): scala.Unit = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275text")(index.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def ɵɵtext(index: scala.Double, value: java.lang.String): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275text")(index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def ɵɵtext(index: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275text")(index.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def ɵɵtext(index: Double, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275text")(index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵtextInterpolate(v0: js.Any): js.Function1[
-/* v0 */ js.Any, 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate */ js.Any] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate")(v0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-/* v0 */ js.Any, 
+inline def ɵɵtextInterpolate(v0: Any): js.Function1[
+/* v0 */ Any, 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate")(v0.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+/* v0 */ Any, 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate */ js.Any]]
 
-inline def ɵɵtextInterpolate1(prefix: java.lang.String, v0: js.Any, suffix: java.lang.String): js.Function3[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate1 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate1")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* suffix */ java.lang.String, 
+inline def ɵɵtextInterpolate1(prefix: String, v0: Any, suffix: String): js.Function3[
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate1 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate1")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+/* prefix */ String, 
+/* v0 */ Any, 
+/* suffix */ String, 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate1 */ js.Any]]
 
-inline def ɵɵtextInterpolate2(prefix: java.lang.String, v0: js.Any, i0: java.lang.String, v1: js.Any, suffix: java.lang.String): js.Function5[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate2 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate2")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* suffix */ java.lang.String, 
+inline def ɵɵtextInterpolate2(prefix: String, v0: Any, i0: String, v1: Any, suffix: String): js.Function5[
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate2 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate2")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function5[
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* suffix */ String, 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate2 */ js.Any]]
 
-inline def ɵɵtextInterpolate3(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  suffix: java.lang.String
-): js.Function7[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate3 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate3")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function7[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* suffix */ java.lang.String, 
+inline def ɵɵtextInterpolate3(prefix: String, v0: Any, i0: String, v1: Any, i1: String, v2: Any, suffix: String): js.Function7[
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate3 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate3")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function7[
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* suffix */ String, 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate3 */ js.Any]]
 
 inline def ɵɵtextInterpolate4(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  suffix: java.lang.String
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  suffix: String
 ): js.Function9[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate4 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate4")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function9[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* suffix */ java.lang.String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate4 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate4")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function9[
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* suffix */ String, 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate4 */ js.Any]]
 
 inline def ɵɵtextInterpolate5(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  suffix: java.lang.String
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  suffix: String
 ): js.Function11[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate5 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate5")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function11[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* suffix */ java.lang.String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate5 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate5")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function11[
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* suffix */ String, 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate5 */ js.Any]]
 
 inline def ɵɵtextInterpolate6(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  suffix: java.lang.String
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  suffix: String
 ): js.Function13[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate6 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate6")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function13[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* suffix */ java.lang.String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate6 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate6")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function13[
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* suffix */ String, 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate6 */ js.Any]]
 
 inline def ɵɵtextInterpolate7(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  suffix: java.lang.String
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  suffix: String
 ): js.Function15[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate7 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate7")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function15[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* suffix */ java.lang.String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate7 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate7")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function15[
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* suffix */ String, 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate7 */ js.Any]]
 
 inline def ɵɵtextInterpolate8(
-  prefix: java.lang.String,
-  v0: js.Any,
-  i0: java.lang.String,
-  v1: js.Any,
-  i1: java.lang.String,
-  v2: js.Any,
-  i2: java.lang.String,
-  v3: js.Any,
-  i3: java.lang.String,
-  v4: js.Any,
-  i4: java.lang.String,
-  v5: js.Any,
-  i5: java.lang.String,
-  v6: js.Any,
-  i6: java.lang.String,
-  v7: js.Any,
-  suffix: java.lang.String
+  prefix: String,
+  v0: Any,
+  i0: String,
+  v1: Any,
+  i1: String,
+  v2: Any,
+  i2: String,
+  v3: Any,
+  i3: String,
+  v4: Any,
+  i4: String,
+  v5: Any,
+  i5: String,
+  v6: Any,
+  i6: String,
+  v7: Any,
+  suffix: String
 ): js.Function17[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate8 */ js.Any] = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate8")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function17[
-/* prefix */ java.lang.String, 
-/* v0 */ js.Any, 
-/* i0 */ java.lang.String, 
-/* v1 */ js.Any, 
-/* i1 */ java.lang.String, 
-/* v2 */ js.Any, 
-/* i2 */ java.lang.String, 
-/* v3 */ js.Any, 
-/* i3 */ java.lang.String, 
-/* v4 */ js.Any, 
-/* i4 */ java.lang.String, 
-/* v5 */ js.Any, 
-/* i5 */ java.lang.String, 
-/* v6 */ js.Any, 
-/* i6 */ java.lang.String, 
-/* v7 */ js.Any, 
-/* suffix */ java.lang.String, 
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate8 */ js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolate8")(prefix.asInstanceOf[js.Any], v0.asInstanceOf[js.Any], i0.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], i1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], i2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], i3.asInstanceOf[js.Any], v4.asInstanceOf[js.Any], i4.asInstanceOf[js.Any], v5.asInstanceOf[js.Any], i5.asInstanceOf[js.Any], v6.asInstanceOf[js.Any], i6.asInstanceOf[js.Any], v7.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[js.Function17[
+/* prefix */ String, 
+/* v0 */ Any, 
+/* i0 */ String, 
+/* v1 */ Any, 
+/* i1 */ String, 
+/* v2 */ Any, 
+/* i2 */ String, 
+/* v3 */ Any, 
+/* i3 */ String, 
+/* v4 */ Any, 
+/* i4 */ String, 
+/* v5 */ Any, 
+/* i5 */ String, 
+/* v6 */ Any, 
+/* i6 */ String, 
+/* v7 */ Any, 
+/* suffix */ String, 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolate8 */ js.Any]]
 
-inline def ɵɵtextInterpolateV(values: js.Array[js.Any]): js.Function1[
-/* values */ js.Array[js.Any], 
-/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolateV */ js.Any] = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolateV")(values.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-/* values */ js.Array[js.Any], 
+inline def ɵɵtextInterpolateV(values: js.Array[Any]): js.Function1[
+/* values */ js.Array[Any], 
+/* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolateV */ js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275textInterpolateV")(values.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+/* values */ js.Array[Any], 
 /* import warning: importer.ImportType#apply Failed type conversion: typeof ɵɵtextInterpolateV */ js.Any]]
 
-inline def ɵɵtrustConstantHtml(html: java.lang.String): typings.angularCore.mod.TrustedHTML | java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275trustConstantHtml")(html.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.TrustedHTML | java.lang.String]
+inline def ɵɵtrustConstantHtml(html: TemplateStringsArray): TrustedHTML | String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275trustConstantHtml")(html.asInstanceOf[js.Any]).asInstanceOf[TrustedHTML | String]
 
-inline def ɵɵtrustConstantResourceUrl(url: java.lang.String): typings.angularCore.mod.TrustedScriptURL | java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275trustConstantResourceUrl")(url.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.TrustedScriptURL | java.lang.String]
+inline def ɵɵtrustConstantResourceUrl(url: TemplateStringsArray): TrustedScriptURL | String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275trustConstantResourceUrl")(url.asInstanceOf[js.Any]).asInstanceOf[TrustedScriptURL | String]
 
-inline def ɵɵtrustConstantScript(script: java.lang.String): typings.angularCore.mod.TrustedScript | java.lang.String = typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275trustConstantScript")(script.asInstanceOf[js.Any]).asInstanceOf[typings.angularCore.mod.TrustedScript | java.lang.String]
+inline def ɵɵviewQuery[T](predicate: js.Array[String], flags: QueryFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵɵviewQuery[T](predicate: js.Array[String], flags: QueryFlags, read: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵɵviewQuery[T](predicate: ProviderToken[Any], flags: QueryFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def ɵɵviewQuery[T](predicate: ProviderToken[Any], flags: QueryFlags, read: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵviewQuery[T](predicate: js.Array[java.lang.String], descend: scala.Boolean): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵviewQuery[T](predicate: js.Array[java.lang.String], descend: scala.Boolean, read: js.Any): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵviewQuery[T](predicate: typings.angularCore.mod.InjectionToken[js.Any], descend: scala.Boolean): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵviewQuery[T](predicate: typings.angularCore.mod.InjectionToken[js.Any], descend: scala.Boolean, read: js.Any): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵviewQuery[T](predicate: typings.angularCore.mod.Type[js.Any], descend: scala.Boolean): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def ɵɵviewQuery[T](predicate: typings.angularCore.mod.Type[js.Any], descend: scala.Boolean, read: js.Any): scala.Unit = (typings.angularCore.mod.^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], descend.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+type AbstractType[T] = js.Function
 
-type ComponentInstance = js.Object
+type ChangeDetectionStrategy2 = Double
 
 /**
   * Definition of what a template rendering function should look like for a component.
   */
-type ComponentTemplate[T] = js.Function2[/* rf */ typings.angularCore.mod.ɵRenderFlags, /* ctx */ T, scala.Unit]
+type ComponentTemplate[T] = js.Function2[/* rf */ ɵRenderFlags, /* ctx */ T, Unit]
 
 /**
   * Definition of what a content queries function should look like.
   */
-type ContentQueriesFunction[T] = js.Function3[
-/* rf */ typings.angularCore.mod.ɵRenderFlags, 
-/* ctx */ T, 
-/* directiveIndex */ scala.Double, 
-scala.Unit]
+type ContentQueriesFunction[T] = js.Function3[/* rf */ ɵRenderFlags, /* ctx */ T, /* directiveIndex */ Double, Unit]
 
 /**
   * Expresses a single CSS Selector.
@@ -5440,21 +4465,17 @@ scala.Unit]
   *
   * See more examples in node_selector_matcher_spec.ts
   */
-type CssSelector = js.Array[java.lang.String | typings.angularCore.mod.SelectorFlags]
+type CssSelector = js.Array[String | SelectorFlags]
 
 /**
   * An object literal of this type is used to represent the metadata of a constructor dependency.
   * The type itself is never referred to from generated code.
+  *
+  * @publicApi
   */
-type CtorDependency = typings.angularCore.anon.Attribute | scala.Null
+type CtorDependency = typings.angularCore.anon.Attribute | Null
 
-/**
-  * Factory for ViewDefinitions/NgModuleDefinitions.
-  * We use a function so we can reexeute it in case an error happens and use the given logger
-  * function to log the error from the definition of the node, which is shown in all browser
-  * logs.
-  */
-type DefinitionFactory[D /* <: typings.angularCore.mod.Definition[js.Any] */] = js.Function1[/* logger */ typings.angularCore.mod.NodeLogger, D]
+type DependencyTypeList = js.Array[ɵDirectiveType[Any] | ɵComponentType[Any] | PipeType[Any] | Type[Any]]
 
 /**
   * Array of destroy hooks that should be executed for a view and their directive indices.
@@ -5474,36 +4495,20 @@ type DefinitionFactory[D /* <: typings.angularCore.mod.Definition[js.Any] */] = 
   * `CService` and `DService` are part of a `multi` provider where only `BService` and `DService`
   * have an `ngOnDestroy` hook.
   */
-type DestroyHookData = js.Array[typings.angularCore.mod.HookEntry | typings.angularCore.mod.HookData]
+type DestroyHookData = js.Array[HookEntry | HookData]
 
-type DirectiveDefList = js.Array[
-typings.angularCore.mod.ɵDirectiveDef[js.Any] | typings.angularCore.mod.ɵComponentDef[js.Any]]
+type DirectiveDefList = js.Array[ɵDirectiveDef[Any] | ɵComponentDef[Any]]
 
 /**
   * Type used for directiveDefs on component definition.
   *
   * The function is necessary to be able to support forward declarations.
   */
-type DirectiveDefListOrFactory = js.Function0[typings.angularCore.mod.DirectiveDefList] | typings.angularCore.mod.DirectiveDefList
+type DirectiveDefListOrFactory = js.Function0[DirectiveDefList] | DirectiveDefList
 
-type DirectiveInstance = js.Object
+type ForwardRefFn = js.Function0[Any]
 
-type DirectiveTypeList = js.Array[
-typings.angularCore.mod.ɵDirectiveType[js.Any] | typings.angularCore.mod.ɵComponentType[js.Any] | typings.angularCore.mod.Type[js.Any]]
-
-type DirectiveTypesOrFactory = js.Function0[typings.angularCore.mod.DirectiveTypeList] | typings.angularCore.mod.DirectiveTypeList
-
-type DisposableFn = js.Function0[scala.Unit]
-
-type ElementHandleEventFn = js.Function3[
-/* view */ typings.angularCore.mod.ViewData, 
-/* eventName */ java.lang.String, 
-/* event */ js.Any, 
-scala.Boolean]
-
-type ForwardRefFn = js.Function0[js.Any]
-
-type GlobalTargetResolver = js.Function1[/* element */ js.Any, typings.angularCore.anon.Name]
+type GlobalTargetResolver = js.Function1[/* element */ Any, EventTarget]
 
 /**
   * Array of hooks that should be executed for a view and their directive indices.
@@ -5517,24 +4522,20 @@ type GlobalTargetResolver = js.Function1[/* element */ js.Any, typings.angularCo
   * Special cases:
   *  - a negative directive index flags an init hook (ngOnInit, ngAfterContentInit, ngAfterViewInit)
   */
-type HookData = js.Array[typings.angularCore.mod.HookEntry]
+type HookData = js.Array[HookEntry]
 
 /**
   * Information necessary to call a hook. E.g. the callback that
   * needs to invoked and the index at which to find its context.
   */
-type HookEntry = scala.Double | typings.angularCore.mod.HookFn
+type HookEntry = Double | HookFn
 
 /** Single hook callback function. */
-type HookFn = js.Function0[scala.Unit]
+type HookFn = js.Function0[Unit]
 
-type HostBindingsFunction[T] = js.Function2[/* rf */ typings.angularCore.mod.ɵRenderFlags, /* ctx */ T, scala.Unit]
+type HostBindingsFunction[T] = js.Function2[/* rf */ ɵRenderFlags, /* ctx */ T, Unit]
 
-/** See CreateComponentOptions.hostFeatures */
-type HostFeature = js.Function2[
-/* component */ js.Any, 
-/* componentDef */ typings.angularCore.mod.ɵComponentDef[js.Any], 
-scala.Unit]
+type ImportProvidersSource = Type[Any] | ModuleWithProviders[Any] | js.Array[Any]
 
 /**
   * This array contains information about input properties that
@@ -5554,7 +4555,7 @@ scala.Unit]
   *
   * e.g. [null, ['role-min', 'minified-input', 'button']]
   */
-type InitialInputData = js.Array[typings.angularCore.mod.InitialInputs | scala.Null]
+type InitialInputData = js.Array[InitialInputs | Null]
 
 /**
   * Used by InitialInputData to store input properties
@@ -5566,12 +4567,12 @@ type InitialInputData = js.Array[typings.angularCore.mod.InitialInputs | scala.N
   *
   * e.g. ['role-min', 'minified-input', 'button']
   */
-type InitialInputs = js.Array[java.lang.String]
+type InitialInputs = js.Array[String]
 
 /**
   * See `TNode.insertBeforeIndex`
   */
-type InsertBeforeIndex = scala.Null | scala.Double | js.Array[scala.Double]
+type InsertBeforeIndex = Null | Double | js.Array[Double]
 
 /**
   * Type for a function that extracts a value for a local refs.
@@ -5579,42 +4580,28 @@ type InsertBeforeIndex = scala.Null | scala.Double | js.Array[scala.Double]
   * - `<div #nativeDivEl>` - `nativeDivEl` should point to the native `<div>` element;
   * - `<ng-template #tplRef>` - `tplRef` should point to the `TemplateRef` instance;
   */
-type LocalRefExtractor = js.Function2[
-/* tNode */ typings.angularCore.mod.TNodeWithLocalRefs, 
-/* currentView */ typings.angularCore.mod.ɵangularPackagesCoreCoreBv, 
-js.Any]
+type LocalRefExtractor = js.Function2[/* tNode */ TNodeWithLocalRefs, /* currentView */ LView[Any], Any]
 
-type NgIterable[T] = js.Array[T] | typings.std.Iterable[T]
+type NgIterable[T] = js.Array[T] | js.Iterable[T]
 
-/**
-  * Function to call console.error at the right source location. This is an indirection
-  * via another function as browser will log the location that actually called
-  * `console.error`.
-  */
-type NodeLogger = js.Function0[js.Function0[scala.Unit]]
+type OpaqueValue = Any
 
-type PipeDefList = js.Array[typings.angularCore.mod.ɵPipeDef[js.Any]]
+type PipeDefList = js.Array[ɵPipeDef[Any]]
 
 /**
   * Type used for PipeDefs on component definition.
   *
   * The function is necessary to be able to support forward declarations.
   */
-type PipeDefListOrFactory = js.Function0[typings.angularCore.mod.PipeDefList] | typings.angularCore.mod.PipeDefList
+type PipeDefListOrFactory = js.Function0[PipeDefList] | PipeDefList
 
-type PipeTypeList = js.Array[typings.angularCore.mod.PipeType[js.Any] | typings.angularCore.mod.Type[js.Any]]
-
-type PipeTypesOrFactory = js.Function0[typings.angularCore.mod.PipeTypeList] | typings.angularCore.mod.PipeTypeList
-
-type Predicate[T] = js.Function1[/* value */ T, scala.Boolean]
+type Predicate[T] = js.Function1[/* value */ T, Boolean]
 
 /**
   * Describes a function that is used to process provider lists (such as provider
   * overrides).
   */
-type ProcessProvidersFunction = js.Function1[
-/* providers */ js.Array[typings.angularCore.mod.Provider], 
-js.Array[typings.angularCore.mod.Provider]]
+type ProcessProvidersFunction = js.Function1[/* providers */ js.Array[Provider], js.Array[Provider]]
 
 /**
   * List of slots for a projection. A slot can be either based on a parsed CSS selector
@@ -5624,8 +4611,7 @@ js.Array[typings.angularCore.mod.Provider]]
   * using {@link ViewContainerRef#createComponent}. The last slot that specifies the
   * wildcard selector will retrieve all projectable nodes which do not match any selector.
   */
-type ProjectionSlots = js.Array[
-typings.angularCore.mod.ɵCssSelectorList | typings.angularCore.angularCoreStrings.Asterisk]
+type ProjectionSlots = js.Array[ɵCssSelectorList | Asterisk]
 
 /**
   * Store the runtime input or output names for all the directives.
@@ -5635,7 +4621,7 @@ typings.angularCore.mod.ɵCssSelectorList | typings.angularCore.angularCoreStrin
   *
   * e.g. [0, 'change-minified']
   */
-type PropertyAliasValue = js.Array[scala.Double | java.lang.String]
+type PropertyAliasValue = js.Array[Double | String]
 
 /**
   * This mapping is necessary so we can set input properties and output listeners
@@ -5647,7 +4633,7 @@ type PropertyAliasValue = js.Array[scala.Double | java.lang.String]
   * The value must be an array to support inputs and outputs with the same name
   * on the same node.
   */
-type PropertyAliases = org.scalablytyped.runtime.StringDictionary[typings.angularCore.mod.PropertyAliasValue]
+type PropertyAliases = StringDictionary[PropertyAliasValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.angularCore.mod.TypeProvider
@@ -5656,20 +4642,27 @@ type PropertyAliases = org.scalablytyped.runtime.StringDictionary[typings.angula
   - typings.angularCore.mod.ConstructorProvider
   - typings.angularCore.mod.ExistingProvider
   - typings.angularCore.mod.FactoryProvider
-  - js.Array[js.Any]
+  - js.Array[scala.Any]
 */
-type Provider = typings.angularCore.mod._Provider | js.Array[js.Any] | typings.angularCore.mod.TypeProvider
+type Provider = _Provider | js.Array[Any] | TypeProvider
+
+/* Rewritten from type alias, can be one of: 
+  - typings.angularCore.mod.Type[T]
+  - typings.angularCore.mod.AbstractType[T]
+  - typings.angularCore.mod.InjectionToken[T]
+*/
+type ProviderToken[T] = _ProviderToken[T] | AbstractType[T]
 
 /**
   * Function used to sanitize the value before writing it into the renderer.
   */
 type SanitizerFn = js.Function3[
-/* value */ js.Any, 
-/* tagName */ js.UndefOr[java.lang.String], 
-/* propName */ js.UndefOr[java.lang.String], 
-java.lang.String]
+/* value */ Any, 
+/* tagName */ js.UndefOr[String], 
+/* propName */ js.UndefOr[String], 
+String | TrustedHTML | TrustedScript | TrustedScriptURL]
 
-type SimpleChanges = org.scalablytyped.runtime.StringDictionary[typings.angularCore.mod.SimpleChange]
+type SimpleChanges = StringDictionary[SimpleChange]
 
 /* Rewritten from type alias, can be one of: 
   - typings.angularCore.mod.ValueProvider
@@ -5677,9 +4670,9 @@ type SimpleChanges = org.scalablytyped.runtime.StringDictionary[typings.angularC
   - typings.angularCore.mod.StaticClassProvider
   - typings.angularCore.mod.ConstructorProvider
   - typings.angularCore.mod.FactoryProvider
-  - js.Array[js.Any]
+  - js.Array[scala.Any]
 */
-type StaticProvider = typings.angularCore.mod._StaticProvider | js.Array[js.Any]
+type StaticProvider = _StaticProvider | js.Array[Any]
 
 /**
   * A combination of:
@@ -5687,8 +4680,7 @@ type StaticProvider = typings.angularCore.mod._StaticProvider | js.Array[js.Any]
   * - Special markers acting as flags to alter attributes processing.
   * - Parsed ngProjectAs selectors.
   */
-type TAttributes = js.Array[
-java.lang.String | typings.angularCore.mod.ɵAttributeMarker | typings.angularCore.mod.CssSelector]
+type TAttributes = js.Array[String | ɵAttributeMarker | CssSelector]
 
 /**
   * Constants that are associated with a view. Includes:
@@ -5696,7 +4688,7 @@ java.lang.String | typings.angularCore.mod.ɵAttributeMarker | typings.angularCo
   * - Local definition arrays.
   * - Translated messages (i18n).
   */
-type TConstants = js.Array[typings.angularCore.mod.TAttributes | java.lang.String]
+type TConstants = js.Array[TAttributes | String]
 
 /**
   * Factory function that returns an array of consts. Consts can be represented as a function in
@@ -5704,13 +4696,13 @@ type TConstants = js.Array[typings.angularCore.mod.TAttributes | java.lang.Strin
   * where additional i18n calls are generated, which should be executed when consts are requested
   * for the first time.
   */
-type TConstantsFactory = js.Function0[typings.angularCore.mod.TConstants]
+type TConstantsFactory = js.Function0[TConstants]
 
 /**
   * TConstants type that describes how the `consts` field is generated on ComponentDef: it can be
   * either an array or a factory function that returns that array.
   */
-type TConstantsOrFactory = typings.angularCore.mod.TConstants | typings.angularCore.mod.TConstantsFactory
+type TConstantsOrFactory = TConstants | TConstantsFactory
 
 /**
   * Static data that corresponds to the instance-specific data array on an LView.
@@ -5740,14 +4732,14 @@ type TConstantsOrFactory = typings.angularCore.mod.TConstants | typings.angularC
   * Injector bloom filters are also stored here.
   */
 type TData = js.Array[
-typings.angularCore.mod.TNode | typings.angularCore.mod.ɵPipeDef[js.Any] | typings.angularCore.mod.ɵDirectiveDef[js.Any] | typings.angularCore.mod.ɵComponentDef[js.Any] | scala.Double | typings.angularCore.mod.TStylingRange | typings.angularCore.mod.TStylingKey | typings.angularCore.mod.Type[js.Any] | typings.angularCore.mod.InjectionToken[js.Any] | typings.angularCore.mod.TI18n | typings.angularCore.mod.I18nUpdateOpCodes | typings.angularCore.mod.TIcu | scala.Null | java.lang.String]
+TNode | ɵPipeDef[Any] | ɵDirectiveDef[Any] | ɵComponentDef[Any] | Double | TStylingRange | TStylingKey | ProviderToken[Any] | TI18n | I18nUpdateOpCodes | TIcu | Null | String]
 
 /**
   * Value stored in the `TData` which is needed to re-concatenate the styling.
   *
   * See: `TStylingKeyPrimitive` and `TStylingStatic`
   */
-type TStylingKey = typings.angularCore.mod.TStylingKeyPrimitive | typings.angularCore.mod.TStylingStatic
+type TStylingKey = TStylingKeyPrimitive | TStylingStatic
 
 /**
   * The primitive portion (`TStylingStatic` removed) of the value stored in the `TData` which is
@@ -5759,7 +4751,7 @@ type TStylingKey = typings.angularCore.mod.TStylingKeyPrimitive | typings.angula
   *   is combined with directive which shadows its input `@Input('class')`. That way the binding
   *   should not participate in the styling resolution.
   */
-type TStylingKeyPrimitive = java.lang.String | scala.Null | typings.angularCore.angularCoreBooleans.`false`
+type TStylingKeyPrimitive = String | Null | `false`
 
 /**
   * Store the static values for the styling binding.
@@ -5821,57 +4813,49 @@ type TStylingKeyPrimitive = java.lang.String | scala.Null | typings.angularCore.
   *
   * This means that it is safe to add class.
   */
-type TStylingStatic = typings.angularCore.mod.KeyValueArray[js.Any]
+type TStylingStatic = KeyValueArray[Any]
 
-type TrackByFunction[T] = js.Function2[/* index */ scala.Double, /* item */ T, js.Any]
+type TrackByFunction[T] = js.Function2[/* index */ Double, /* item */ T, Any]
 
-type TypeProvider = typings.angularCore.mod.Type[js.Any]
+type Type2 = js.Function
 
-type ViewHandleEventFn = js.Function4[
-/* view */ typings.angularCore.mod.ViewData, 
-/* nodeIndex */ scala.Double, 
-/* eventName */ java.lang.String, 
-/* event */ js.Any, 
-scala.Boolean]
+type TypeOrFactory[T] = T | js.Function0[T]
+
+type TypeProvider = Type[Any]
 
 /**
   * Definition of what a view queries function should look like.
   */
-type ViewQueriesFunction[T] = js.Function2[/* rf */ typings.angularCore.mod.ɵRenderFlags, /* ctx */ T, scala.Unit]
+type ViewQueriesFunction[T] = js.Function2[/* rf */ ɵRenderFlags, /* ctx */ T, Unit]
 
-type ViewUpdateFn = js.Function2[
-/* check */ typings.angularCore.mod.NodeCheckFn, 
-/* view */ typings.angularCore.mod.ViewData, 
-scala.Unit]
+type viewEngineChangeDetectorRefInterface = ChangeDetectorRef
 
-type viewEngineChangeDetectorRefInterface = typings.angularCore.mod.ChangeDetectorRef
+type ɵCssSelectorList = js.Array[CssSelector]
 
-type ɵCssSelectorList = js.Array[typings.angularCore.mod.CssSelector]
+type ɵProfiler = js.Function3[
+/* event */ ɵProfilerEvent, 
+/* instance */ js.Object | Null, 
+/* hookOrListener */ js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Any]], 
+Unit]
 
-type ɵGetterFn = js.Function1[/* obj */ js.Any, js.Any]
+type ɵSafeHtml = ɵSafeValue
 
-type ɵMethodFn = js.Function2[/* obj */ js.Any, /* args */ js.Array[js.Any], js.Any]
+type ɵSafeResourceUrl = ɵSafeValue
 
-type ɵSafeHtml = typings.angularCore.mod.ɵSafeValue
+type ɵSafeScript = ɵSafeValue
 
-type ɵSafeResourceUrl = typings.angularCore.mod.ɵSafeValue
+type ɵSafeStyle = ɵSafeValue
 
-type ɵSafeScript = typings.angularCore.mod.ɵSafeValue
+type ɵSafeUrl = ɵSafeValue
 
-type ɵSafeStyle = typings.angularCore.mod.ɵSafeValue
+type ɵɵComponentDeclaration[T, Selector /* <: String */, ExportAs /* <: js.Array[String] */, InputMap /* <: StringDictionary[String] */, OutputMap /* <: StringDictionary[String] */, QueryFields /* <: js.Array[String] */, NgContentSelectors /* <: js.Array[String] */, IsStandalone /* <: Boolean */] = Any
 
-type ɵSafeUrl = typings.angularCore.mod.ɵSafeValue
+type ɵɵDirectiveDeclaration[T, Selector /* <: String */, ExportAs /* <: js.Array[String] */, InputMap /* <: StringDictionary[String] */, OutputMap /* <: StringDictionary[String] */, QueryFields /* <: js.Array[String] */, NgContentSelectors /* <: scala.Nothing */, IsStandalone /* <: Boolean */] = Any
 
-type ɵSetterFn = js.Function2[/* obj */ js.Any, /* value */ js.Any, scala.Unit]
+type ɵɵFactoryDeclaration[T, CtorDependencies /* <: js.Array[CtorDependency] */] = Any
 
-type ɵangularPackagesCoreCoreBt = typings.angularCore.angularCoreNumbers.`-1`
+type ɵɵInjectorDeclaration[T] = Any
 
-type ɵɵComponentDefWithMeta[T, Selector /* <: java.lang.String */, ExportAs /* <: js.Array[java.lang.String] */, InputMap /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */, OutputMap /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */, QueryFields /* <: js.Array[java.lang.String] */, NgContentSelectors /* <: js.Array[java.lang.String] */] = typings.angularCore.mod.ɵComponentDef[T]
+type ɵɵNgModuleDeclaration[T, Declarations, Imports, Exports] = Any
 
-type ɵɵDirectiveDefWithMeta[T, Selector /* <: java.lang.String */, ExportAs /* <: js.Array[java.lang.String] */, InputMap /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */, OutputMap /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String] */, QueryFields /* <: js.Array[java.lang.String] */] = typings.angularCore.mod.ɵDirectiveDef[T]
-
-type ɵɵFactoryDef[T, CtorDependencies /* <: js.Array[typings.angularCore.mod.CtorDependency] */] = js.Function0[T]
-
-type ɵɵNgModuleDefWithMeta[T, Declarations, Imports, Exports] = typings.angularCore.mod.ɵNgModuleDef[T]
-
-type ɵɵPipeDefWithMeta[T, Name /* <: java.lang.String */] = typings.angularCore.mod.ɵPipeDef[T]
+type ɵɵPipeDeclaration[T, Name /* <: String */, IsStandalone /* <: Boolean */] = Any

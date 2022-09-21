@@ -34,19 +34,19 @@ object GridData {
     
     inline def setColumnMetadataUndefined: Self = StObject.set(x, "columnMetadata", js.undefined)
     
-    inline def setColumnMetadataVarargs(value: DimensionProperties*): Self = StObject.set(x, "columnMetadata", js.Array(value :_*))
+    inline def setColumnMetadataVarargs(value: DimensionProperties*): Self = StObject.set(x, "columnMetadata", js.Array(value*))
     
     inline def setRowData(value: js.Array[RowData]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
     inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
     
-    inline def setRowDataVarargs(value: RowData*): Self = StObject.set(x, "rowData", js.Array(value :_*))
+    inline def setRowDataVarargs(value: RowData*): Self = StObject.set(x, "rowData", js.Array(value*))
     
     inline def setRowMetadata(value: js.Array[DimensionProperties]): Self = StObject.set(x, "rowMetadata", value.asInstanceOf[js.Any])
     
     inline def setRowMetadataUndefined: Self = StObject.set(x, "rowMetadata", js.undefined)
     
-    inline def setRowMetadataVarargs(value: DimensionProperties*): Self = StObject.set(x, "rowMetadata", js.Array(value :_*))
+    inline def setRowMetadataVarargs(value: DimensionProperties*): Self = StObject.set(x, "rowMetadata", js.Array(value*))
     
     inline def setStartColumn(value: Double): Self = StObject.set(x, "startColumn", value.asInstanceOf[js.Any])
     

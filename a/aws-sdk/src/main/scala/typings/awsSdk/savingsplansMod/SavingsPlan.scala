@@ -137,7 +137,7 @@ object SavingsPlan {
     
     inline def setProductTypesUndefined: Self = StObject.set(x, "productTypes", js.undefined)
     
-    inline def setProductTypesVarargs(value: SavingsPlanProductType*): Self = StObject.set(x, "productTypes", js.Array(value :_*))
+    inline def setProductTypesVarargs(value: SavingsPlanProductType*): Self = StObject.set(x, "productTypes", js.Array(value*))
     
     inline def setRecurringPaymentAmount(value: Amount): Self = StObject.set(x, "recurringPaymentAmount", value.asInstanceOf[js.Any])
     

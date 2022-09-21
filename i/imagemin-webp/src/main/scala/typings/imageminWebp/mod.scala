@@ -7,15 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-    * WebP imagemin plugin
-    */
-  inline def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
-  inline def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
-  
   @JSImport("imagemin-webp", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin]
+  inline def default(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
   trait Crop
     extends StObject
@@ -180,7 +177,7 @@ object mod {
       
       inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      inline def setMetadataVarargs(value: Metadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+      inline def setMetadataVarargs(value: Metadata*): Self = StObject.set(x, "metadata", js.Array(value*))
       
       inline def setMethod(value: Double): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("orientjs", "ODatabasePoolFactory")
 @js.native
-class ODatabasePoolFactory () extends StObject {
+open class ODatabasePoolFactory () extends StObject {
   
   def create(): js.Promise[ODatabase] = js.native
   

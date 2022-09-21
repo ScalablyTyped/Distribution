@@ -29,6 +29,6 @@ object InstanceInformationFilter {
     
     inline def setValueSet(value: InstanceInformationFilterValueSet): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
     
-    inline def setValueSetVarargs(value: InstanceInformationFilterValue*): Self = StObject.set(x, "valueSet", js.Array(value :_*))
+    inline def setValueSetVarargs(value: InstanceInformationFilterValue*): Self = StObject.set(x, "valueSet", js.Array(value*))
   }
 }

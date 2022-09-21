@@ -32,6 +32,6 @@ object ConnectFailureResults {
     
     inline def setRetryQueueUndefined: Self = StObject.set(x, "retryQueue", js.undefined)
     
-    inline def setRetryQueueVarargs(value: (/* This object contains details about a Connect failure result. */ ConnectFailureResult)*): Self = StObject.set(x, "retryQueue", js.Array(value :_*))
+    inline def setRetryQueueVarargs(value: (/* This object contains details about a Connect failure result. */ ConnectFailureResult)*): Self = StObject.set(x, "retryQueue", js.Array(value*))
   }
 }

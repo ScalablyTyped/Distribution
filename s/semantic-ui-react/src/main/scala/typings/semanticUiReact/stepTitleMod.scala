@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +13,12 @@ object stepTitleMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Step/StepTitle", JSImport.Default)
   @js.native
-  val default: StatelessComponent[StepTitleProps] = js.native
+  val default: FC[StepTitleProps] = js.native
   
   trait StepTitleProps
     extends StObject
        with StrictStepTitleProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object StepTitleProps {
     
     inline def apply(): StepTitleProps = {
@@ -30,7 +30,7 @@ object stepTitleMod extends Shortcut {
   trait StrictStepTitleProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -50,7 +50,7 @@ object stepTitleMod extends Shortcut {
     
     extension [Self <: StrictStepTitleProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -68,8 +68,8 @@ object stepTitleMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[StepTitleProps]
+  type _To = FC[StepTitleProps]
   
   /* This means you don't have to write `default`, but can instead just say `stepTitleMod.foo` */
-  override def _to: StatelessComponent[StepTitleProps] = default
+  override def _to: FC[StepTitleProps] = default
 }

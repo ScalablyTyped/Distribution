@@ -18,11 +18,11 @@ trait Dictionaries extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): Dictionary
+  def Item(Index: Any): Dictionary
   
   val Maximum: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.Dictionaries_typekey")
   var WordDotDictionaries_typekey: Dictionaries
@@ -36,9 +36,9 @@ object Dictionaries {
     ClearAll: () => Unit,
     Count: Double,
     Creator: Double,
-    Item: js.Any => Dictionary,
+    Item: Any => Dictionary,
     Maximum: Double,
-    Parent: js.Any,
+    Parent: Any,
     WordDotDictionaries_typekey: Dictionaries
   ): Dictionaries = {
     val __obj = js.Dynamic.literal(ActiveCustomDictionary = ActiveCustomDictionary.asInstanceOf[js.Any], Add = js.Any.fromFunction1(Add), Application = Application.asInstanceOf[js.Any], ClearAll = js.Any.fromFunction0(ClearAll), Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Maximum = Maximum.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -60,11 +60,11 @@ object Dictionaries {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => Dictionary): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Dictionary): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setMaximum(value: Double): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotDictionaries_typekey(value: Dictionaries): Self = StObject.set(x, "Word.Dictionaries_typekey", value.asInstanceOf[js.Any])
   }

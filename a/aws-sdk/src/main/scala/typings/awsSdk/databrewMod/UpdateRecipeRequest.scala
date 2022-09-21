@@ -40,6 +40,6 @@ object UpdateRecipeRequest {
     
     inline def setStepsUndefined: Self = StObject.set(x, "Steps", js.undefined)
     
-    inline def setStepsVarargs(value: RecipeStep*): Self = StObject.set(x, "Steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: RecipeStep*): Self = StObject.set(x, "Steps", js.Array(value*))
   }
 }

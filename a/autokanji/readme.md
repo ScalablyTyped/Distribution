@@ -10,10 +10,10 @@ Autocomplete suggestions for kana inputs.
 | ------------------ | :-------------: |
 | Full name          | autokanji |
 | Keywords           | Japanese, Kanji, Kana, Hiragana, Katakana |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 395 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 46.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/TylerMartinez/AutoKanji#readme)

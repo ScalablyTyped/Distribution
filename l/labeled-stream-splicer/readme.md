@@ -10,10 +10,10 @@ stream splicer with labels
 | ------------------ | :-------------: |
 | Full name          | labeled-stream-splicer |
 | Keywords           | splice, stream, labels, mutable, pipeline |
-| # releases         | 2 |
-| # dependents       | 45 |
-| # downloads        | 35304391 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5511059.333333333 |
+| # stars            | 40.0 |
 
 ## Links
 - [Homepage](https://github.com/browserify/labeled-stream-splicer)

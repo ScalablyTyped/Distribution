@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait View
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var view: js.Array[Node]
   
@@ -27,6 +27,6 @@ object View {
     
     inline def setViewModel(value: js.Object): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    inline def setViewVarargs(value: Node*): Self = StObject.set(x, "view", js.Array(value :_*))
+    inline def setViewVarargs(value: Node*): Self = StObject.set(x, "view", js.Array(value*))
   }
 }

@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fundamental-react", "Calendar")
 @js.native
-class Calendar () extends default
+open class Calendar () extends default

@@ -1,5 +1,6 @@
 package typings.reactNavigationRouters
 
+import typings.reactNavigationRouters.drawerRouterMod.DrawerStatus
 import typings.reactNavigationRouters.tabRouterMod.BackBehavior
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -56,8 +57,20 @@ object reactNavigationRoutersStrings {
   inline def TOGGLE_DRAWER: TOGGLE_DRAWER = "TOGGLE_DRAWER".asInstanceOf[TOGGLE_DRAWER]
   
   @js.native
+  sealed trait closed
+    extends StObject
+       with DrawerStatus
+  inline def closed: closed = "closed".asInstanceOf[closed]
+  
+  @js.native
   sealed trait drawer extends StObject
   inline def drawer: drawer = "drawer".asInstanceOf[drawer]
+  
+  @js.native
+  sealed trait firstRoute
+    extends StObject
+       with BackBehavior
+  inline def firstRoute: firstRoute = "firstRoute".asInstanceOf[firstRoute]
   
   @js.native
   sealed trait history
@@ -80,6 +93,12 @@ object reactNavigationRoutersStrings {
     extends StObject
        with BackBehavior
   inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
+  sealed trait open
+    extends StObject
+       with DrawerStatus
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
   sealed trait order

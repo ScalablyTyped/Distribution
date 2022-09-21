@@ -10,7 +10,7 @@ trait IgTreeGridUpdatingLocale
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies the label of the add child button in touch environment.

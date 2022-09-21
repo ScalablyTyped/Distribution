@@ -171,6 +171,10 @@ object mapboxGlStrings {
   inline def acos: acos = "acos".asInstanceOf[acos]
   
   @js.native
+  sealed trait albers extends StObject
+  inline def albers: albers = "albers".asInstanceOf[albers]
+  
+  @js.native
   sealed trait all
     extends StObject
        with ExpressionName
@@ -205,6 +209,10 @@ object mapboxGlStrings {
     extends StObject
        with ExpressionName
   inline def atan: atan = "atan".asInstanceOf[atan]
+  
+  @js.native
+  sealed trait atmosphere extends StObject
+  inline def atmosphere: atmosphere = "atmosphere".asInstanceOf[atmosphere]
   
   @js.native
   sealed trait auto
@@ -371,6 +379,14 @@ object mapboxGlStrings {
   inline def e: e = "e".asInstanceOf[e]
   
   @js.native
+  sealed trait equalEarth extends StObject
+  inline def equalEarth: equalEarth = "equalEarth".asInstanceOf[equalEarth]
+  
+  @js.native
+  sealed trait equirectangular extends StObject
+  inline def equirectangular: equirectangular = "equirectangular".asInstanceOf[equirectangular]
+  
+  @js.native
   sealed trait error
     extends StObject
        with PluginStatus
@@ -421,6 +437,14 @@ object mapboxGlStrings {
     extends StObject
        with ExpressionName
   inline def get_ : get_ = "get".asInstanceOf[get_]
+  
+  @js.native
+  sealed trait globe extends StObject
+  inline def globe: globe = "globe".asInstanceOf[globe]
+  
+  @js.native
+  sealed trait gradient extends StObject
+  inline def gradient: gradient = "gradient".asInstanceOf[gradient]
   
   @js.native
   sealed trait has
@@ -525,6 +549,10 @@ object mapboxGlStrings {
   @js.native
   sealed trait lab extends StObject
   inline def lab: lab = "lab".asInstanceOf[lab]
+  
+  @js.native
+  sealed trait lambertConformalConic extends StObject
+  inline def lambertConformalConic: lambertConformalConic = "lambertConformalConic".asInstanceOf[lambertConformalConic]
   
   @js.native
   sealed trait left
@@ -635,6 +663,10 @@ object mapboxGlStrings {
   inline def max: max = "max".asInstanceOf[max]
   
   @js.native
+  sealed trait mercator extends StObject
+  inline def mercator: mercator = "mercator".asInstanceOf[mercator]
+  
+  @js.native
   sealed trait metadata extends StObject
   inline def metadata: metadata = "metadata".asInstanceOf[metadata]
   
@@ -693,6 +725,10 @@ object mapboxGlStrings {
   inline def movestart: movestart = "movestart".asInstanceOf[movestart]
   
   @js.native
+  sealed trait naturalEarth extends StObject
+  inline def naturalEarth: naturalEarth = "naturalEarth".asInstanceOf[naturalEarth]
+  
+  @js.native
   sealed trait nautical extends StObject
   inline def nautical: nautical = "nautical".asInstanceOf[nautical]
   
@@ -713,10 +749,20 @@ object mapboxGlStrings {
   inline def number: number = "number".asInstanceOf[number]
   
   @js.native
+  sealed trait `number-format`
+    extends StObject
+       with ExpressionName
+  inline def `number-format`: `number-format` = "number-format".asInstanceOf[`number-format`]
+  
+  @js.native
   sealed trait `object`
     extends StObject
        with ExpressionName
   inline def `object`: `object` = "object".asInstanceOf[`object`]
+  
+  @js.native
+  sealed trait pbf extends StObject
+  inline def pbf: pbf = "pbf".asInstanceOf[pbf]
   
   @js.native
   sealed trait pi
@@ -819,6 +865,10 @@ object mapboxGlStrings {
   inline def sin: sin = "sin".asInstanceOf[sin]
   
   @js.native
+  sealed trait sky extends StObject
+  inline def sky: sky = "sky".asInstanceOf[sky]
+  
+  @js.native
   sealed trait slice
     extends StObject
        with ExpressionName
@@ -909,6 +959,12 @@ object mapboxGlStrings {
     extends StObject
        with ExpressionName
   inline def `to-number`: `to-number` = "to-number".asInstanceOf[`to-number`]
+  
+  @js.native
+  sealed trait `to-rgba`
+    extends StObject
+       with ExpressionName
+  inline def `to-rgba`: `to-rgba` = "to-rgba".asInstanceOf[`to-rgba`]
   
   @js.native
   sealed trait `to-string`
@@ -1015,12 +1071,26 @@ object mapboxGlStrings {
   inline def webglcontextrestored: webglcontextrestored = "webglcontextrestored".asInstanceOf[webglcontextrestored]
   
   @js.native
+  sealed trait webp extends StObject
+  inline def webp: webp = "webp".asInstanceOf[webp]
+  
+  @js.native
   sealed trait wheel extends StObject
   inline def wheel: wheel = "wheel".asInstanceOf[wheel]
   
   @js.native
   sealed trait width extends StObject
   inline def width: width = "width".asInstanceOf[width]
+  
+  @js.native
+  sealed trait winkelTripel extends StObject
+  inline def winkelTripel: winkelTripel = "winkelTripel".asInstanceOf[winkelTripel]
+  
+  @js.native
+  sealed trait within
+    extends StObject
+       with ExpressionName
+  inline def within: within = "within".asInstanceOf[within]
   
   @js.native
   sealed trait xyz extends StObject

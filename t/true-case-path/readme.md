@@ -10,10 +10,10 @@ Given a possibly case-variant version of an existing filesystem path, returns th
 | ------------------ | :-------------: |
 | Full name          | true-case-path |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 47 |
-| # downloads        | 235146929 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6849989E7 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/Profiscience/true-case-path#readme)

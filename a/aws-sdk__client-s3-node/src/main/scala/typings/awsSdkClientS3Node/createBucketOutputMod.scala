@@ -8,5 +8,5 @@ object createBucketOutputMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/CreateBucketOutput", "CreateBucketOutput")
   @js.native
-  val CreateBucketOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CreateBucketOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

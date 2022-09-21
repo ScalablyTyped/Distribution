@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".logkitty-0luekPG6" : "0.7.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".logkitty-0luekPG6" : "0.7.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

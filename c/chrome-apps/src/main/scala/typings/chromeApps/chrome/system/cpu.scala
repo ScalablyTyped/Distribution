@@ -79,13 +79,13 @@ object cpu {
       
       inline def setProcessors(value: js.Array[ProcessorInfo]): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
       
-      inline def setProcessorsVarargs(value: ProcessorInfo*): Self = StObject.set(x, "processors", js.Array(value :_*))
+      inline def setProcessorsVarargs(value: ProcessorInfo*): Self = StObject.set(x, "processors", js.Array(value*))
       
       inline def setTemperatures(value: js.Array[double]): Self = StObject.set(x, "temperatures", value.asInstanceOf[js.Any])
       
       inline def setTemperaturesUndefined: Self = StObject.set(x, "temperatures", js.undefined)
       
-      inline def setTemperaturesVarargs(value: double*): Self = StObject.set(x, "temperatures", js.Array(value :_*))
+      inline def setTemperaturesVarargs(value: double*): Self = StObject.set(x, "temperatures", js.Array(value*))
     }
   }
   

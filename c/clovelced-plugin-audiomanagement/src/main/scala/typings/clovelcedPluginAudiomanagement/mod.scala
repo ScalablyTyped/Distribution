@@ -76,27 +76,27 @@ object mod {
   
   inline def getAudioMode(
     onSuccess: js.Function1[/* results */ typings.clovelcedPluginAudiomanagement.anon.AudioMode, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
+    onError: js.Function1[/* error */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAudioMode")(onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getMaxVolume(
     `type`: VolumeType,
     onSuccess: js.Function1[/* results */ MaxVolume, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
+    onError: js.Function1[/* error */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getMaxVolume")(`type`.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getVolume(
     `type`: VolumeType,
     onSuccess: js.Function1[/* results */ Volume, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
+    onError: js.Function1[/* error */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getVolume")(`type`.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setAudioMode(mode: AudioMode, onSuccess: js.Function0[Unit], onError: js.Function1[/* error */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAudioMode")(mode.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setAudioMode(mode: AudioMode, onSuccess: js.Function0[Unit], onError: js.Function1[/* error */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAudioMode")(mode.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setVolume(
     `type`: VolumeType,
     volume: Double,
     onSuccess: js.Function0[Unit],
-    onError: js.Function1[/* error */ js.Any, Unit]
+    onError: js.Function1[/* error */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVolume")(`type`.asInstanceOf[js.Any], volume.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

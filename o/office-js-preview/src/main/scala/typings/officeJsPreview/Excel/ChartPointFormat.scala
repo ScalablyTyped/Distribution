@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the formatting object for chart points.
   *
-  * Represents formatting object for chart points.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -22,9 +22,9 @@ trait ChartPointFormat
      with ClientObject {
   
   /**
-    *
     * Represents the border format of a chart data point, which includes color, style, and weight information.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   val border: ChartBorder = js.native
@@ -34,9 +34,9 @@ trait ChartPointFormat
   var context_ChartPointFormat: RequestContext = js.native
   
   /**
-    *
     * Represents the fill format of a chart, which includes background formatting information.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val fill: ChartFill = js.native
@@ -54,14 +54,8 @@ trait ChartPointFormat
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartPointFormat): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartPointFormat): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

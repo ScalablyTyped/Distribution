@@ -96,7 +96,7 @@ object Move {
     
     inline def setContests(value: js.Array[MoveContest]): Self = StObject.set(x, "contests", value.asInstanceOf[js.Any])
     
-    inline def setContestsVarargs(value: MoveContest*): Self = StObject.set(x, "contests", js.Array(value :_*))
+    inline def setContestsVarargs(value: MoveContest*): Self = StObject.set(x, "contests", js.Array(value*))
     
     inline def setCritical_hit(value: Double): Self = StObject.set(x, "critical_hit", value.asInstanceOf[js.Any])
     
@@ -124,7 +124,7 @@ object Move {
     
     inline def setStat_modifiersUndefined: Self = StObject.set(x, "stat_modifiers", js.undefined)
     
-    inline def setStat_modifiersVarargs(value: MoveStatModifier*): Self = StObject.set(x, "stat_modifiers", js.Array(value :_*))
+    inline def setStat_modifiersVarargs(value: MoveStatModifier*): Self = StObject.set(x, "stat_modifiers", js.Array(value*))
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait VmImage extends StObject {
   /** Use VM image name to find the image. */
   var imageName: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the Google Cloud project that this VM image belongs to. Format: `projects/{project_id}` */
+  /** Required. The name of the Google Cloud project that this VM image belongs to. Format: `{project_id}` */
   var project: js.UndefOr[String] = js.undefined
 }
 object VmImage {

@@ -10,10 +10,10 @@ Get aliases for your lerna packages for the other tools
 | ------------------ | :-------------: |
 | Full name          | lerna-alias |
 | Keywords           | lerna, monorepo, alias, webpack, rollup, jest |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 83355 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15880.666666666666 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/Andarist/lerna-alias#readme)

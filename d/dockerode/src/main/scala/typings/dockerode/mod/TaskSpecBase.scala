@@ -42,7 +42,7 @@ object TaskSpecBase {
     
     inline def setNetworksUndefined: Self = StObject.set(x, "Networks", js.undefined)
     
-    inline def setNetworksVarargs(value: NetworkAttachmentConfig*): Self = StObject.set(x, "Networks", js.Array(value :_*))
+    inline def setNetworksVarargs(value: NetworkAttachmentConfig*): Self = StObject.set(x, "Networks", js.Array(value*))
     
     inline def setPlacement(value: Placement): Self = StObject.set(x, "Placement", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,7 @@ object RecommendedDto {
     
     inline def setBlock(value: js.Array[BlockDto]): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    inline def setBlockVarargs(value: BlockDto*): Self = StObject.set(x, "block", js.Array(value :_*))
+    inline def setBlockVarargs(value: BlockDto*): Self = StObject.set(x, "block", js.Array(value*))
     
     inline def setChampion(value: String): Self = StObject.set(x, "champion", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.AbstractMesh")
 @js.native
-class AbstractMesh protected ()
+open class AbstractMesh protected ()
   extends StObject
      with typings.babylonjs.BABYLON.AbstractMesh {
   /**
@@ -43,7 +43,7 @@ class AbstractMesh protected ()
   
   /**
     * Checks if a cullable object (mesh...) is in the camera frustum
-    * Unlike isInFrustum this cheks the full bounding box
+    * Unlike isInFrustum this checks the full bounding box
     * @param frustumPlanes Camera near/planes
     * @returns true if the object is in frustum otherwise false
     */
@@ -81,7 +81,7 @@ object AbstractMesh {
     */
   @JSGlobal("BABYLON.AbstractMesh.CULLINGSTRATEGY_BOUNDINGSPHERE_ONLY")
   @js.native
-  val CULLINGSTRATEGY_BOUNDINGSPHERE_ONLY: Double = js.native
+  val CULLINGSTRATEGY_BOUNDINGSPHERE_ONLY: /* 1 */ Double = js.native
   
   /** Culling strategy : Optimistic Inclusion.
     *  This in an inclusion test first, then the standard exclusion test.
@@ -94,7 +94,7 @@ object AbstractMesh {
     */
   @JSGlobal("BABYLON.AbstractMesh.CULLINGSTRATEGY_OPTIMISTIC_INCLUSION")
   @js.native
-  val CULLINGSTRATEGY_OPTIMISTIC_INCLUSION: Double = js.native
+  val CULLINGSTRATEGY_OPTIMISTIC_INCLUSION: /* 2 */ Double = js.native
   
   /** Culling strategy : Optimistic Inclusion then Bounding Sphere Only.
     *  This in an inclusion test first, then the bounding sphere only exclusion test.
@@ -107,7 +107,7 @@ object AbstractMesh {
     */
   @JSGlobal("BABYLON.AbstractMesh.CULLINGSTRATEGY_OPTIMISTIC_INCLUSION_THEN_BSPHERE_ONLY")
   @js.native
-  val CULLINGSTRATEGY_OPTIMISTIC_INCLUSION_THEN_BSPHERE_ONLY: Double = js.native
+  val CULLINGSTRATEGY_OPTIMISTIC_INCLUSION_THEN_BSPHERE_ONLY: /* 3 */ Double = js.native
   
   /** Default culling strategy : this is an exclusion test and it's the more accurate.
     *  Test order :
@@ -117,9 +117,9 @@ object AbstractMesh {
     */
   @JSGlobal("BABYLON.AbstractMesh.CULLINGSTRATEGY_STANDARD")
   @js.native
-  val CULLINGSTRATEGY_STANDARD: Double = js.native
+  val CULLINGSTRATEGY_STANDARD: /* 0 */ Double = js.native
   
-  /** Use an accurante occlusion algorithm */
+  /** Use an accurate occlusion algorithm */
   @JSGlobal("BABYLON.AbstractMesh.OCCLUSION_ALGORITHM_TYPE_ACCURATE")
   @js.native
   def OCCLUSION_ALGORITHM_TYPE_ACCURATE: Double = js.native
@@ -137,7 +137,7 @@ object AbstractMesh {
   def OCCLUSION_TYPE_NONE: Double = js.native
   inline def OCCLUSION_TYPE_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_NONE")(x.asInstanceOf[js.Any])
   
-  /** Occlusion set to optimisitic */
+  /** Occlusion set to optimistic */
   @JSGlobal("BABYLON.AbstractMesh.OCCLUSION_TYPE_OPTIMISTIC")
   @js.native
   def OCCLUSION_TYPE_OPTIMISTIC: Double = js.native

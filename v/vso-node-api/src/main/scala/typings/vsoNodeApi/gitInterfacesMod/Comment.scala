@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ trait Comment extends StObject {
   /**
     * Links to other related objects.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * The author of the comment.
@@ -41,12 +40,12 @@ trait Comment extends StObject {
   /**
     * The date the comment's content was last updated.
     */
-  var lastContentUpdatedDate: Date
+  var lastContentUpdatedDate: js.Date
   
   /**
     * The date the comment was last updated.
     */
-  var lastUpdatedDate: Date
+  var lastUpdatedDate: js.Date
   
   /**
     * The ID of the parent comment. This is used for replies.
@@ -56,7 +55,7 @@ trait Comment extends StObject {
   /**
     * The date the comment was first published.
     */
-  var publishedDate: Date
+  var publishedDate: js.Date
   
   /**
     * A list of the users who have liked this comment.
@@ -66,16 +65,16 @@ trait Comment extends StObject {
 object Comment {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     author: IdentityRef,
     commentType: CommentType,
     content: String,
     id: Double,
     isDeleted: Boolean,
-    lastContentUpdatedDate: Date,
-    lastUpdatedDate: Date,
+    lastContentUpdatedDate: js.Date,
+    lastUpdatedDate: js.Date,
     parentCommentId: Double,
-    publishedDate: Date,
+    publishedDate: js.Date,
     usersLiked: js.Array[IdentityRef]
   ): Comment = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], commentType = commentType.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isDeleted = isDeleted.asInstanceOf[js.Any], lastContentUpdatedDate = lastContentUpdatedDate.asInstanceOf[js.Any], lastUpdatedDate = lastUpdatedDate.asInstanceOf[js.Any], parentCommentId = parentCommentId.asInstanceOf[js.Any], publishedDate = publishedDate.asInstanceOf[js.Any], usersLiked = usersLiked.asInstanceOf[js.Any])
@@ -94,18 +93,18 @@ object Comment {
     
     inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
     
-    inline def setLastContentUpdatedDate(value: Date): Self = StObject.set(x, "lastContentUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastContentUpdatedDate(value: js.Date): Self = StObject.set(x, "lastContentUpdatedDate", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setParentCommentId(value: Double): Self = StObject.set(x, "parentCommentId", value.asInstanceOf[js.Any])
     
-    inline def setPublishedDate(value: Date): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
+    inline def setPublishedDate(value: js.Date): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
     
     inline def setUsersLiked(value: js.Array[IdentityRef]): Self = StObject.set(x, "usersLiked", value.asInstanceOf[js.Any])
     
-    inline def setUsersLikedVarargs(value: IdentityRef*): Self = StObject.set(x, "usersLiked", js.Array(value :_*))
+    inline def setUsersLikedVarargs(value: IdentityRef*): Self = StObject.set(x, "usersLiked", js.Array(value*))
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

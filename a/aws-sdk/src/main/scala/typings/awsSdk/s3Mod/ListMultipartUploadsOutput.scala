@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListMultipartUploadsOutput extends StObject {
   
   /**
-    * The name of the bucket to which the multipart upload was initiated.
+    * The name of the bucket to which the multipart upload was initiated. Does not return the access point ARN or access point alias if used.
     */
   var Bucket: js.UndefOr[BucketName] = js.undefined
   
@@ -83,7 +83,7 @@ object ListMultipartUploadsOutput {
     
     inline def setCommonPrefixesUndefined: Self = StObject.set(x, "CommonPrefixes", js.undefined)
     
-    inline def setCommonPrefixesVarargs(value: CommonPrefix*): Self = StObject.set(x, "CommonPrefixes", js.Array(value :_*))
+    inline def setCommonPrefixesVarargs(value: CommonPrefix*): Self = StObject.set(x, "CommonPrefixes", js.Array(value*))
     
     inline def setDelimiter(value: Delimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     
@@ -125,6 +125,6 @@ object ListMultipartUploadsOutput {
     
     inline def setUploadsUndefined: Self = StObject.set(x, "Uploads", js.undefined)
     
-    inline def setUploadsVarargs(value: MultipartUpload*): Self = StObject.set(x, "Uploads", js.Array(value :_*))
+    inline def setUploadsVarargs(value: MultipartUpload*): Self = StObject.set(x, "Uploads", js.Array(value*))
   }
 }

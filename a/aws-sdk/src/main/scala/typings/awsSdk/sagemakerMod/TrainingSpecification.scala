@@ -63,23 +63,23 @@ object TrainingSpecification {
     
     inline def setMetricDefinitionsUndefined: Self = StObject.set(x, "MetricDefinitions", js.undefined)
     
-    inline def setMetricDefinitionsVarargs(value: MetricDefinition*): Self = StObject.set(x, "MetricDefinitions", js.Array(value :_*))
+    inline def setMetricDefinitionsVarargs(value: MetricDefinition*): Self = StObject.set(x, "MetricDefinitions", js.Array(value*))
     
     inline def setSupportedHyperParameters(value: HyperParameterSpecifications): Self = StObject.set(x, "SupportedHyperParameters", value.asInstanceOf[js.Any])
     
     inline def setSupportedHyperParametersUndefined: Self = StObject.set(x, "SupportedHyperParameters", js.undefined)
     
-    inline def setSupportedHyperParametersVarargs(value: HyperParameterSpecification*): Self = StObject.set(x, "SupportedHyperParameters", js.Array(value :_*))
+    inline def setSupportedHyperParametersVarargs(value: HyperParameterSpecification*): Self = StObject.set(x, "SupportedHyperParameters", js.Array(value*))
     
     inline def setSupportedTrainingInstanceTypes(value: TrainingInstanceTypes): Self = StObject.set(x, "SupportedTrainingInstanceTypes", value.asInstanceOf[js.Any])
     
-    inline def setSupportedTrainingInstanceTypesVarargs(value: TrainingInstanceType*): Self = StObject.set(x, "SupportedTrainingInstanceTypes", js.Array(value :_*))
+    inline def setSupportedTrainingInstanceTypesVarargs(value: TrainingInstanceType*): Self = StObject.set(x, "SupportedTrainingInstanceTypes", js.Array(value*))
     
     inline def setSupportedTuningJobObjectiveMetrics(value: HyperParameterTuningJobObjectives): Self = StObject.set(x, "SupportedTuningJobObjectiveMetrics", value.asInstanceOf[js.Any])
     
     inline def setSupportedTuningJobObjectiveMetricsUndefined: Self = StObject.set(x, "SupportedTuningJobObjectiveMetrics", js.undefined)
     
-    inline def setSupportedTuningJobObjectiveMetricsVarargs(value: HyperParameterTuningJobObjective*): Self = StObject.set(x, "SupportedTuningJobObjectiveMetrics", js.Array(value :_*))
+    inline def setSupportedTuningJobObjectiveMetricsVarargs(value: HyperParameterTuningJobObjective*): Self = StObject.set(x, "SupportedTuningJobObjectiveMetrics", js.Array(value*))
     
     inline def setSupportsDistributedTraining(value: Boolean): Self = StObject.set(x, "SupportsDistributedTraining", value.asInstanceOf[js.Any])
     
@@ -87,7 +87,7 @@ object TrainingSpecification {
     
     inline def setTrainingChannels(value: ChannelSpecifications): Self = StObject.set(x, "TrainingChannels", value.asInstanceOf[js.Any])
     
-    inline def setTrainingChannelsVarargs(value: ChannelSpecification*): Self = StObject.set(x, "TrainingChannels", js.Array(value :_*))
+    inline def setTrainingChannelsVarargs(value: ChannelSpecification*): Self = StObject.set(x, "TrainingChannels", js.Array(value*))
     
     inline def setTrainingImage(value: ContainerImage): Self = StObject.set(x, "TrainingImage", value.asInstanceOf[js.Any])
     

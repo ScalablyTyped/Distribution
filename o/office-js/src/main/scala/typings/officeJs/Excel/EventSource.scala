@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait EventSource extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.EventSource")
@@ -14,8 +15,9 @@ sealed trait EventSource extends StObject
 object EventSource extends StObject {
   
   /**
-    * Local means event comes from local user session.
-    *
+    * Local means the event comes from a local user session.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait local
@@ -23,8 +25,9 @@ object EventSource extends StObject {
        with EventSource
   
   /**
-    * Remote means event comes from remote user session.
-    *
+    * Remote means the event comes from a remote user session.
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
   sealed trait remote

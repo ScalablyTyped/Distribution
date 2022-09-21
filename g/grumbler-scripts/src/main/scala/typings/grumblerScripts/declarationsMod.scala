@@ -12,13 +12,11 @@ object declarationsMod {
   
   @JSImport("grumbler-scripts/declarations", "__ENV__")
   @js.native
-  val __ENV__ : Values[
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ENV */ js.Any
-  ] = js.native
+  val __ENV__ : Values[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ENV */ Any] = js.native
   
   @JSImport("grumbler-scripts/declarations", "__GLOBAL__")
   @js.native
-  val __GLOBAL__ : js.Any = js.native
+  val __GLOBAL__ : Any = js.native
   
   @JSImport("grumbler-scripts/declarations", "__LOCAL__")
   @js.native
@@ -58,7 +56,7 @@ object declarationsMod {
   
   @JSImport("grumbler-scripts/declarations", "__WINDOW__")
   @js.native
-  val __WINDOW__ : js.Any = js.native
+  val __WINDOW__ : Any = js.native
   
   type Values[O /* <: js.Object */] = /* import warning: importer.ImportType#apply Failed type conversion: O[keyof O] */ js.Any
 }

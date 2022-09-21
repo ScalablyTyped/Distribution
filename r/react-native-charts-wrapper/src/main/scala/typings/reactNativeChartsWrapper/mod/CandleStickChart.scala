@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-charts-wrapper", "CandleStickChart")
 @js.native
-class CandleStickChart protected ()
-  extends Component[CandleStickChartProps, js.Object, js.Any] {
+open class CandleStickChart protected ()
+  extends Component[CandleStickChartProps, js.Object, Any] {
   def this(props: CandleStickChartProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: CandleStickChartProps, context: js.Any) = this()
+  def this(props: CandleStickChartProps, context: Any) = this()
 }

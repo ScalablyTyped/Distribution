@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The InputEvent class constructor produces an empty InputEvent.
   */
-class InputEvent () extends StObject {
+open class InputEvent () extends StObject {
   
   /**Gets or sets whether the alt key is being held down.*/
   var alt: Boolean = js.native

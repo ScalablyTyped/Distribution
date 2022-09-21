@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-webpack-plugin
 
-Typings are for version 4.5.0
+Typings are for version 5.5.0
 
 ## Library description:
 Simplifies creation of HTML files to serve your webpack bundles
@@ -10,10 +10,10 @@ Simplifies creation of HTML files to serve your webpack bundles
 | ------------------ | :-------------: |
 | Full name          | html-webpack-plugin |
 | Keywords           | webpack, plugin, html, html-webpack-plugin |
-| # releases         | 49 |
-| # dependents       | 7861 |
-| # downloads        | 323520720 |
-| # stars            | 195 |
+| # releases         | 37 |
+| # dependents       | 0.0 |
+| # downloads        | 5.2036953666666664E7 |
+| # stars            | 10185.0 |
 
 ## Links
 - [Homepage](https://github.com/jantimon/html-webpack-plugin)

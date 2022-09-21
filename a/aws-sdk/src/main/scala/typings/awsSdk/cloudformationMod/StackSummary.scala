@@ -9,30 +9,30 @@ trait StackSummary extends StObject {
   /**
     * The time the stack was created.
     */
-  var CreationTime: typings.awsSdk.cloudformationMod.CreationTime
+  var CreationTime: js.Date
   
   /**
     * The time the stack was deleted.
     */
-  var DeletionTime: js.UndefOr[typings.awsSdk.cloudformationMod.DeletionTime] = js.undefined
+  var DeletionTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Summarizes information on whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources.
+    * Summarizes information about whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources.
     */
   var DriftInformation: js.UndefOr[StackDriftInformationSummary] = js.undefined
   
   /**
     * The time the stack was last updated. This field will only be returned if the stack has been updated at least once.
     */
-  var LastUpdatedTime: js.UndefOr[typings.awsSdk.cloudformationMod.LastUpdatedTime] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * For nested stacks--stacks created as resources for another stack--the stack ID of the direct parent of this stack. For the first level of nested stacks, the root stack is also the parent stack. For more information, see Working with Nested Stacks in the AWS CloudFormation User Guide.
+    * For nested stacks--stacks created as resources for another stack--the stack ID of the direct parent of this stack. For the first level of nested stacks, the root stack is also the parent stack. For more information, see Working with Nested Stacks in the CloudFormation User Guide.
     */
   var ParentId: js.UndefOr[StackId] = js.undefined
   
   /**
-    * For nested stacks--stacks created as resources for another stack--the stack ID of the top-level stack to which the nested stack ultimately belongs. For more information, see Working with Nested Stacks in the AWS CloudFormation User Guide.
+    * For nested stacks--stacks created as resources for another stack--the stack ID of the top-level stack to which the nested stack ultimately belongs. For more information, see Working with Nested Stacks in the CloudFormation User Guide.
     */
   var RootId: js.UndefOr[StackId] = js.undefined
   
@@ -63,16 +63,16 @@ trait StackSummary extends StObject {
 }
 object StackSummary {
   
-  inline def apply(CreationTime: CreationTime, StackName: StackName, StackStatus: StackStatus): StackSummary = {
+  inline def apply(CreationTime: js.Date, StackName: StackName, StackStatus: StackStatus): StackSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any], StackStatus = StackStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackSummary]
   }
   
   extension [Self <: StackSummary](x: Self) {
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    inline def setDeletionTime(value: DeletionTime): Self = StObject.set(x, "DeletionTime", value.asInstanceOf[js.Any])
+    inline def setDeletionTime(value: js.Date): Self = StObject.set(x, "DeletionTime", value.asInstanceOf[js.Any])
     
     inline def setDeletionTimeUndefined: Self = StObject.set(x, "DeletionTime", js.undefined)
     
@@ -80,7 +80,7 @@ object StackSummary {
     
     inline def setDriftInformationUndefined: Self = StObject.set(x, "DriftInformation", js.undefined)
     
-    inline def setLastUpdatedTime(value: LastUpdatedTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     

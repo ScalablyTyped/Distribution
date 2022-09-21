@@ -37,6 +37,11 @@ trait NewPrivateVirtualInterface extends StObject {
   var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
   
   /**
+    * Indicates whether to enable or disable SiteLink.
+    */
+  var enableSiteLink: js.UndefOr[EnableSiteLink] = js.undefined
+  
+  /**
     * The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 9001. The default value is 1500.
     */
   var mtu: js.UndefOr[MTU] = js.undefined
@@ -92,6 +97,10 @@ object NewPrivateVirtualInterface {
     
     inline def setDirectConnectGatewayIdUndefined: Self = StObject.set(x, "directConnectGatewayId", js.undefined)
     
+    inline def setEnableSiteLink(value: EnableSiteLink): Self = StObject.set(x, "enableSiteLink", value.asInstanceOf[js.Any])
+    
+    inline def setEnableSiteLinkUndefined: Self = StObject.set(x, "enableSiteLink", js.undefined)
+    
     inline def setMtu(value: MTU): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
     
     inline def setMtuUndefined: Self = StObject.set(x, "mtu", js.undefined)
@@ -100,7 +109,7 @@ object NewPrivateVirtualInterface {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setVirtualGatewayId(value: VirtualGatewayId): Self = StObject.set(x, "virtualGatewayId", value.asInstanceOf[js.Any])
     

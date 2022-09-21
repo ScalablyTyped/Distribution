@@ -103,11 +103,11 @@ object util {
     extends StObject
        with ICache {
     
-    def forEach(callback: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Unit], opt_ctx: js.Any): Unit = js.native
+    def forEach(callback: js.Function3[/* s */ String, /* i */ Any, /* n */ Double, Unit], opt_ctx: Any): Unit = js.native
     def forEach(
-      callback: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Unit],
-      opt_ctx: js.Any,
-      opt_matcher: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Boolean]
+      callback: js.Function3[/* s */ String, /* i */ Any, /* n */ Double, Unit],
+      opt_ctx: Any,
+      opt_matcher: js.Function3[/* s */ String, /* i */ Any, /* n */ Double, Boolean]
     ): Unit = js.native
     
     /**
@@ -143,11 +143,11 @@ object util {
   object ChangeEvent {
     
     inline def apply(
-      currentTarget: js.Any,
+      currentTarget: Any,
       defaultPrevented: Boolean,
       preventDefault: () => Unit,
       stopPropagation: () => Unit,
-      target: js.Any,
+      target: Any,
       `type`: String
     ): ChangeEvent = {
       val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
@@ -257,7 +257,7 @@ object util {
     */
   trait Event extends StObject {
     
-    var currentTarget: js.Any
+    var currentTarget: Any
     
     var defaultPrevented: Boolean
     
@@ -271,18 +271,18 @@ object util {
       */
     def stopPropagation(): Unit
     
-    var target: js.Any
+    var target: Any
     
     var `type`: String
   }
   object Event {
     
     inline def apply(
-      currentTarget: js.Any,
+      currentTarget: Any,
       defaultPrevented: Boolean,
       preventDefault: () => Unit,
       stopPropagation: () => Unit,
-      target: js.Any,
+      target: Any,
       `type`: String
     ): Event = {
       val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
@@ -292,7 +292,7 @@ object util {
     
     extension [Self <: Event](x: Self) {
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
       
@@ -300,7 +300,7 @@ object util {
       
       inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -322,13 +322,8 @@ object util {
       */
     def addEventListener(`type`: String, handler: EventListenerOrEventListenerObject): Unit = js.native
     def addEventListener(`type`: String, handler: EventListenerOrEventListenerObject, opt_capture: Boolean): Unit = js.native
-    def addEventListener(
-      `type`: String,
-      handler: EventListenerOrEventListenerObject,
-      opt_capture: Boolean,
-      opt_scope: js.Any
-    ): Unit = js.native
-    def addEventListener(`type`: String, handler: EventListenerOrEventListenerObject, opt_capture: Unit, opt_scope: js.Any): Unit = js.native
+    def addEventListener(`type`: String, handler: EventListenerOrEventListenerObject, opt_capture: Boolean, opt_scope: Any): Unit = js.native
+    def addEventListener(`type`: String, handler: EventListenerOrEventListenerObject, opt_capture: Unit, opt_scope: Any): Unit = js.native
     
     /**
       * This method adds callback which is triggered when the object is being disposed
@@ -336,7 +331,7 @@ object util {
       * @param opt_scope {Object=} - An optional scope to call the callback in.
       */
     def addOnDisposeCallback(callback: js.Function0[Unit]): Unit = js.native
-    def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Any): Unit = js.native
+    def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: Any): Unit = js.native
     
     def dispatchEvent(evt: String): Unit = js.native
     /**
@@ -359,13 +354,8 @@ object util {
       */
     def removeEventListener(`type`: String, handler: EventListenerOrEventListenerObject): Unit = js.native
     def removeEventListener(`type`: String, handler: EventListenerOrEventListenerObject, opt_capture: Boolean): Unit = js.native
-    def removeEventListener(
-      `type`: String,
-      handler: EventListenerOrEventListenerObject,
-      opt_capture: Boolean,
-      opt_scope: js.Any
-    ): Unit = js.native
-    def removeEventListener(`type`: String, handler: EventListenerOrEventListenerObject, opt_capture: Unit, opt_scope: js.Any): Unit = js.native
+    def removeEventListener(`type`: String, handler: EventListenerOrEventListenerObject, opt_capture: Boolean, opt_scope: Any): Unit = js.native
+    def removeEventListener(`type`: String, handler: EventListenerOrEventListenerObject, opt_capture: Unit, opt_scope: Any): Unit = js.native
   }
   
   /**
@@ -382,13 +372,13 @@ object util {
       * @param size {number} - the size of the data element
       * @returns {boolean} - a boolean value indicating whether the data was added
       */
-    def add(id: js.Any, data: js.Any, size: Double): Boolean = js.native
+    def add(id: Any, data: Any, size: Double): Boolean = js.native
     
     /**
       * This method explicitly drops an element from the cache.
       * @param id {*} - the id of the item to drop
       */
-    def drop(id: js.Any): Unit = js.native
+    def drop(id: Any): Unit = js.native
     
     /**
       * This method will execute the provided callback function on each of the cache's entries. If the optional match predicate is passed to this method the callback will only be executed on
@@ -397,17 +387,17 @@ object util {
       * @param opt_ctx {Object=} - an optional context object to be used as this within the callback
       * @param opt_matcher {(function(string, ?, number): boolean)=} - an optional match predicate to customize on which entries the callback will be called
       */
-    def forEach(callback: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Unit]): Unit = js.native
-    def forEach(callback: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Unit], opt_ctx: js.Object): Unit = js.native
+    def forEach(callback: js.Function3[/* s */ String, /* t */ Any, /* n */ Double, Unit]): Unit = js.native
+    def forEach(callback: js.Function3[/* s */ String, /* t */ Any, /* n */ Double, Unit], opt_ctx: js.Object): Unit = js.native
     def forEach(
-      callback: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Unit],
+      callback: js.Function3[/* s */ String, /* t */ Any, /* n */ Double, Unit],
       opt_ctx: js.Object,
-      opt_matcher: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Boolean]
+      opt_matcher: js.Function3[/* s */ String, /* t */ Any, /* n */ Double, Boolean]
     ): Unit = js.native
     def forEach(
-      callback: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Unit],
+      callback: js.Function3[/* s */ String, /* t */ Any, /* n */ Double, Unit],
       opt_ctx: Unit,
-      opt_matcher: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Boolean]
+      opt_matcher: js.Function3[/* s */ String, /* t */ Any, /* n */ Double, Boolean]
     ): Unit = js.native
     
     /**
@@ -416,14 +406,14 @@ object util {
       * @param opt_noUpdate {boolean=} - and optional flag to indicate that the retrieved object should not be marked as 'most recently used'.
       * @returns {*} - returns the data associated with the ID or undefined if the data element is not currently in the cache.
       */
-    def get(id: String): js.Any = js.native
-    def get(id: String, opt_noUpdate: Boolean): js.Any = js.native
+    def get(id: String): Any = js.native
+    def get(id: String, opt_noUpdate: Boolean): Any = js.native
     
     /**
       * This method registers a callback that should be called each time an entry is dropped from the cache.
       * @param callback {(function(string, ?, number))} - the callback to be invoked for each entry
       */
-    def registerOnDrop(callback: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Unit]): Unit = js.native
+    def registerOnDrop(callback: js.Function3[/* s */ String, /* t */ Any, /* n */ Double, Unit]): Unit = js.native
     
     /**
       * This method removes all data elements from the cache. If the optional match predicate is passed to this method only those data elements will be removed for which the predicate
@@ -432,7 +422,7 @@ object util {
       * leave the entry in the cache respectively
       */
     def removeAll(): Unit = js.native
-    def removeAll(opt_matcher: js.Function3[/* s */ String, /* t */ js.Any, /* n */ Double, Boolean]): Unit = js.native
+    def removeAll(opt_matcher: js.Function3[/* s */ String, /* t */ Any, /* n */ Double, Boolean]): Unit = js.native
   }
   
   /**
@@ -486,7 +476,7 @@ object util {
     */
   object Job {
     
-    type Priority = js.Any
+    type Priority = Any
   }
   
   /**
@@ -507,8 +497,8 @@ object util {
       * @param opt_idx {number=} - The index where the new entry should be inserted; if omitted or greater then the current size of the list, the entry is added at the end of the list;
       * a negative index is treated as being relative from the end of the list
       */
-    def add(entry: js.Any): Unit = js.native
-    def add(entry: js.Any, opt_idx: Double): Unit = js.native
+    def add(entry: Any): Unit = js.native
+    def add(entry: Any, opt_idx: Double): Unit = js.native
     
     def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native
     
@@ -516,7 +506,7 @@ object util {
       * This method returns all list's entries as an array.
       * @returns {Array<*>} - The list as an array
       */
-    def asArray(): js.Array[js.Any] = js.native
+    def asArray(): js.Array[Any] = js.native
     
     /**
       * This method removes all entries from the list.
@@ -528,7 +518,7 @@ object util {
       * @param idx {number} - The index of the entry to get a negative index is treated as being relative from the end of the list
       * @returns {?} - The element at the given index
       */
-    def get(idx: Double): js.Any = js.native
+    def get(idx: Double): Any = js.native
     
     /**
       * This method returns the length of the list.
@@ -541,21 +531,21 @@ object util {
       * @param entry {?} - The entry for which to return the index.
       * @returns {number} - The index of the first matching entry in this list or -1 if the entry provided by the caller is not found in the list
       */
-    def indexOf(entry: js.Any): Double = js.native
+    def indexOf(entry: Any): Double = js.native
     
     /**
       * This method removes the the first entry which is identical with the given entry.
       * @param entry {?} - The entry to remove
       * @returns {boolean} - signals if the entry could be found in the list and is removed
       */
-    def remove(entry: js.Any): Boolean = js.native
+    def remove(entry: Any): Boolean = js.native
     
     /**
       * This method removes an entry by a given index from the list.
       * @param idx {number} - The index of the entry which should be removed; a negative index is treated as being relative from the end of the list
       * @returns {?} - The removed entry
       */
-    def removeAt(idx: Double): js.Any = js.native
+    def removeAt(idx: Double): Any = js.native
     
     /**
       * This method replaces an entry at the given index with the given entry.
@@ -563,7 +553,7 @@ object util {
       * @param entry {?} - The entry which replaces the existing one
       * @returns {?} - The replaced entry
       */
-    def set(idx: Double, entry: js.Any): js.Any = js.native
+    def set(idx: Double, entry: Any): Any = js.native
   }
   object OList {
     
@@ -580,11 +570,11 @@ object util {
     object Event {
       
       inline def apply(
-        currentTarget: js.Any,
+        currentTarget: Any,
         defaultPrevented: Boolean,
         preventDefault: () => Unit,
         stopPropagation: () => Unit,
-        target: js.Any,
+        target: Any,
         `type`: String
       ): typings.heremaps.H.util.OList.Event = {
         val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])

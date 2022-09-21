@@ -31,7 +31,7 @@ object IIOptionShadowDepthMaterial {
     
     inline def setRemappedVariablesUndefined: Self = StObject.set(x, "remappedVariables", js.undefined)
     
-    inline def setRemappedVariablesVarargs(value: String*): Self = StObject.set(x, "remappedVariables", js.Array(value :_*))
+    inline def setRemappedVariablesVarargs(value: String*): Self = StObject.set(x, "remappedVariables", js.Array(value*))
     
     inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
     

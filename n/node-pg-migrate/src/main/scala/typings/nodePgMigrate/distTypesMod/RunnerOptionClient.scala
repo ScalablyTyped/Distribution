@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RunnerOptionClient extends StObject {
   
+  /**
+    * Instance of [new pg.Client](https://node-postgres.com/api/client).
+    *
+    * Instance should be connected to DB and after finishing migration, user is responsible to close connection.
+    */
   var dbClient: ClientBase
 }
 object RunnerOptionClient {

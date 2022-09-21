@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object callableDottestMod {
   
-  @JSImport("@firebase/functions/dist/test/callable.test", "TEST_PROJECT")
+  @JSImport("@firebase/functions/dist/src/callable.test", "TEST_PROJECT")
   @js.native
-  val TEST_PROJECT: js.Any = js.native
+  val TEST_PROJECT: Any = js.native
 }

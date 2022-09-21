@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMCompositionEvent")
 @js.native
-/* private */ class DOMCompositionEvent ()
+/* private */ open class DOMCompositionEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMCompositionEvent {
   
@@ -83,7 +83,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val `type`: String = js.native
   
   /* CompleteClass */
-  override def view(pvarIndex: js.Any): js.Any = js.native
+  override def view(pvarIndex: Any): Any = js.native
   /* CompleteClass */
   @JSName("view")
   override val view_Original: IHTMLWindow2 = js.native

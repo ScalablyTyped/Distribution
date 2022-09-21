@@ -1,19 +1,19 @@
 
 # Scala.js typings for complex_dot_js
 
-Typings are for version 2.0
+Typings are for version 2.1.1
 
 ## Library description:
-A complex number library
+A complex numbers library
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | complex.js |
 | Keywords           | complex numbers, math, complex, number, calculus, parser, arithmetic |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 10838492 |
-| # stars            | 4 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1760600.6666666667 |
+| # stars            | 199.0 |
 
 ## Links
 - [Homepage](https://github.com/infusion/Complex.js)
@@ -24,7 +24,7 @@ A complex number library
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

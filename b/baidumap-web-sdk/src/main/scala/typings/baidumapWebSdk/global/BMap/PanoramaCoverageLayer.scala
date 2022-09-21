@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.PanoramaCoverageLayer")
 @js.native
-class PanoramaCoverageLayer ()
+open class PanoramaCoverageLayer ()
   extends StObject
      with typings.baidumapWebSdk.BMap.TileLayer {
   

@@ -10,13 +10,13 @@ trait Calls extends StObject {
   def all(): js.Array[CallInfo]
   
   /** By chaining the spy with calls.allArgs(), will return the arguments to all calls **/
-  def allArgs(): js.Array[js.Any]
+  def allArgs(): js.Array[scala.Any]
   
   /** By chaining the spy with calls.any(), will return false if the spy has not been called at all, and then true once at least one call happens. **/
   def any(): Boolean
   
   /** By chaining the spy with calls.argsFor(), will return the arguments passed to call number index **/
-  def argsFor(index: Double): js.Array[js.Any]
+  def argsFor(index: Double): js.Array[scala.Any]
   
   /** By chaining the spy with calls.count(), will return the number of times the spy was called **/
   def count(): Double
@@ -34,9 +34,9 @@ object Calls {
   
   inline def apply(
     all: () => js.Array[CallInfo],
-    allArgs: () => js.Array[js.Any],
+    allArgs: () => js.Array[scala.Any],
     any: () => Boolean,
-    argsFor: Double => js.Array[js.Any],
+    argsFor: Double => js.Array[scala.Any],
     count: () => Double,
     first: () => CallInfo,
     mostRecent: () => CallInfo,
@@ -50,11 +50,11 @@ object Calls {
     
     inline def setAll(value: () => js.Array[CallInfo]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
     
-    inline def setAllArgs(value: () => js.Array[js.Any]): Self = StObject.set(x, "allArgs", js.Any.fromFunction0(value))
+    inline def setAllArgs(value: () => js.Array[scala.Any]): Self = StObject.set(x, "allArgs", js.Any.fromFunction0(value))
     
     inline def setAny(value: () => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction0(value))
     
-    inline def setArgsFor(value: Double => js.Array[js.Any]): Self = StObject.set(x, "argsFor", js.Any.fromFunction1(value))
+    inline def setArgsFor(value: Double => js.Array[scala.Any]): Self = StObject.set(x, "argsFor", js.Any.fromFunction1(value))
     
     inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     

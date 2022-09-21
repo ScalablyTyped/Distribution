@@ -26,6 +26,7 @@ import typings.monacoEditor.monacoEditorStrings.full
 import typings.monacoEditor.monacoEditorStrings.gutter
 import typings.monacoEditor.monacoEditorStrings.indent
 import typings.monacoEditor.monacoEditorStrings.indentation
+import typings.monacoEditor.monacoEditorStrings.inherit
 import typings.monacoEditor.monacoEditorStrings.keep
 import typings.monacoEditor.monacoEditorStrings.line
 import typings.monacoEditor.monacoEditorStrings.mouseover
@@ -93,9 +94,14 @@ trait IEditorOptions extends StObject {
   var autoClosingBrackets: js.UndefOr[EditorAutoClosingStrategy] = js.undefined
   
   /**
+    * Options for pressing backspace near quotes or bracket pairs.
+    */
+  var autoClosingDelete: js.UndefOr[EditorAutoClosingEditStrategy] = js.undefined
+  
+  /**
     * Options for typing over closing quotes or brackets.
     */
-  var autoClosingOvertype: js.UndefOr[EditorAutoClosingOvertypeStrategy] = js.undefined
+  var autoClosingOvertype: js.UndefOr[EditorAutoClosingEditStrategy] = js.undefined
   
   /**
     * Options for auto closing quotes.
@@ -123,6 +129,11 @@ trait IEditorOptions extends StObject {
   var automaticLayout: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Configures bracket pair colorization (disabled by default).
+    */
+  var bracketPairColorization: js.UndefOr[IBracketPairColorizationOptions] = js.undefined
+  
+  /**
     * Timeout for running code actions on save.
     */
   var codeActionsOnSaveTimeout: js.UndefOr[Double] = js.undefined
@@ -132,6 +143,16 @@ trait IEditorOptions extends StObject {
     * Defaults to true.
     */
   var codeLens: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Code lens font family. Defaults to editor font family.
+    */
+  var codeLensFontFamily: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Code lens font size. Default to 90% of the editor font size
+    */
+  var codeLensFontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Enable inline color decorators and color picker rendering.
@@ -216,15 +237,33 @@ trait IEditorOptions extends StObject {
   var disableMonospaceOptimizations: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Should the textarea used for input use the DOM `readonly` attribute.
+    * Defaults to false.
+    */
+  var domReadOnly: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Controls if the editor should allow to move selections via drag and drop.
     * Defaults to false.
     */
   var dragAndDrop: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Controls dropping into the editor from an external source.
+    *
+    * When enabled, this shows a preview of the drop location and triggers an `onDropIntoEditor` event.
+    */
+  var dropIntoEditor: js.UndefOr[IDropIntoEditorOptions] = js.undefined
+  
+  /**
     * Copying without a selection copies the current line.
     */
   var emptySelectionClipboard: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Control the behavior of experimental options
+    */
+  var experimental: js.UndefOr[IEditorExperimentalOptions] = js.undefined
   
   /**
     * Class name to be added to the editor.
@@ -259,6 +298,18 @@ trait IEditorOptions extends StObject {
     * Defaults to true.
     */
   var foldingHighlight: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Auto fold imports folding regions.
+    * Defaults to true.
+    */
+  var foldingImportsByDefault: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Maximum number of foldable regions.
+    * Defaults to 5000.
+    */
+  var foldingMaximumRegions: js.UndefOr[Double] = js.undefined
   
   /**
     * Selects the folding strategy. 'auto' uses the strategies contributed for the current document, 'indentation' uses the indentation based folding strategy.
@@ -311,16 +362,15 @@ trait IEditorOptions extends StObject {
   var gotoLocation: js.UndefOr[IGotoLocationOptions] = js.undefined
   
   /**
+    * Controls the behavior of editor guides.
+    */
+  var guides: js.UndefOr[IGuidesOptions] = js.undefined
+  
+  /**
     * Should the cursor be hidden in the overview ruler.
     * Defaults to false.
     */
   var hideCursorInOverviewRuler: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Enable highlighting of the active indent guide.
-    * Defaults to true.
-    */
-  var highlightActiveIndentGuide: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Configure the editor's hover.
@@ -331,6 +381,13 @@ trait IEditorOptions extends StObject {
     * This editor is used inside a diff editor.
     */
   var inDiffEditor: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Control the behavior and rendering of the inline hints.
+    */
+  var inlayHints: js.UndefOr[IEditorInlayHintsOptions] = js.undefined
+  
+  var inlineSuggest: js.UndefOr[IInlineSuggestOptions] = js.undefined
   
   /**
     * The letter spacing
@@ -358,7 +415,7 @@ trait IEditorOptions extends StObject {
   /**
     * Control the rendering of line numbers.
     * If it is a function, it will be invoked when rendering a line number and the return value will be rendered.
-    * Otherwise, if it is a truey, line numbers will be rendered normally (equivalent of using an identity function).
+    * Otherwise, if it is a truthy, line numbers will be rendered normally (equivalent of using an identity function).
     * Otherwise, line numbers will not be rendered.
     * Defaults to `on`.
     */
@@ -369,6 +426,12 @@ trait IEditorOptions extends StObject {
     * Defaults to 5.
     */
   var lineNumbersMinChars: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Enable linked editing.
+    * Defaults to false.
+    */
+  var linkedEditing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable detecting links and making them clickable.
@@ -470,20 +533,19 @@ trait IEditorOptions extends StObject {
   var quickSuggestionsDelay: js.UndefOr[Double] = js.undefined
   
   /**
-    * Should the editor be read only.
+    * Should the editor be read only. See also `domReadOnly`.
     * Defaults to false.
     */
   var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Rename matching regions on type.
-    * Defaults to false.
+    * deprecated, use linkedEditing instead
     */
   var renameOnType: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable rendering of control characters.
-    * Defaults to false.
+    * Defaults to true.
     */
   var renderControlCharacters: js.UndefOr[Boolean] = js.undefined
   
@@ -492,12 +554,6 @@ trait IEditorOptions extends StObject {
     * Defaults to true.
     */
   var renderFinalNewline: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Enable rendering of indent guides.
-    * Defaults to true.
-    */
-  var renderIndentGuides: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable rendering of current line highlight.
@@ -519,7 +575,7 @@ trait IEditorOptions extends StObject {
   
   /**
     * Enable rendering of whitespace.
-    * Defaults to none.
+    * Defaults to 'selection'.
     */
   var renderWhitespace: js.UndefOr[none | boundary | selection | trailing | all] = js.undefined
   
@@ -592,12 +648,17 @@ trait IEditorOptions extends StObject {
     * Controls whether the fold actions in the gutter stay always visible or hide unless the mouse is over the gutter.
     * Defaults to 'mouseover'.
     */
-  var showFoldingControls: js.UndefOr[always | mouseover] = js.undefined
+  var showFoldingControls: js.UndefOr[always | never | mouseover] = js.undefined
   
   /**
     * Controls fading out of unused variables.
     */
   var showUnused: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Smart select options.
+    */
+  var smartSelect: js.UndefOr[ISmartSelectOptions] = js.undefined
   
   /**
     * Enable that the editor animates scrolling to a position.
@@ -609,6 +670,12 @@ trait IEditorOptions extends StObject {
     * Enable snippet suggestions. Default to 'true'.
     */
   var snippetSuggestions: js.UndefOr[top | bottom | `inline` | none] = js.undefined
+  
+  /**
+    * Emulate selection behaviour of tab characters when using spaces for indentation.
+    * This means selection will stick to tab stops.
+    */
+  var stickyTabStops: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Performance guard: Stop rendering a line after x characters.
@@ -662,10 +729,21 @@ trait IEditorOptions extends StObject {
   var unfoldOnClickAfterEndOfLine: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Controls the behavior of the unicode highlight feature
+    * (by default, ambiguous and invisible characters are highlighted).
+    */
+  var unicodeHighlight: js.UndefOr[IUnicodeHighlightOptions] = js.undefined
+  
+  /**
     * Remove unusual line terminators like LINE SEPARATOR (LS), PARAGRAPH SEPARATOR (PS).
     * Defaults to 'prompt'.
     */
-  var unusualLineTerminators: js.UndefOr[off | prompt | auto] = js.undefined
+  var unusualLineTerminators: js.UndefOr[auto | off | prompt] = js.undefined
+  
+  /**
+    * Control if the editor should use shadow DOM.
+    */
+  var useShadowDOM: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Inserting and deleting whitespace follows tab stops.
@@ -690,13 +768,11 @@ trait IEditorOptions extends StObject {
   
   /**
     * Configure word wrapping characters. A break will be introduced after these characters.
-    * Defaults to ' \t})]?|/&.,;¢°′″‰℃、。｡､￠，．：；？！％・･ゝゞヽヾーァィゥェォッャュョヮヵヶぁぃぅぇぉっゃゅょゎゕゖㇰㇱㇲㇳㇴㇵㇶㇷㇸㇹㇺㇻㇼㇽㇾㇿ々〻ｧｨｩｪｫｬｭｮｯｰ”〉》」』】〕）］｝｣'.
     */
   var wordWrapBreakAfterCharacters: js.UndefOr[String] = js.undefined
   
   /**
     * Configure word wrapping characters. A break will be introduced before these characters.
-    * Defaults to '([{‘“〈《「『【〔（［｛｢£¥＄￡￥+＋'.
     */
   var wordWrapBreakBeforeCharacters: js.UndefOr[String] = js.undefined
   
@@ -711,10 +787,14 @@ trait IEditorOptions extends StObject {
   var wordWrapColumn: js.UndefOr[Double] = js.undefined
   
   /**
-    * Force word wrapping when the text appears to be of a minified/generated file.
-    * Defaults to true.
+    * Override the `wordWrap` setting.
     */
-  var wordWrapMinified: js.UndefOr[Boolean] = js.undefined
+  var wordWrapOverride1: js.UndefOr[off | on | inherit] = js.undefined
+  
+  /**
+    * Override the `wordWrapOverride1` setting.
+    */
+  var wordWrapOverride2: js.UndefOr[off | on | inherit] = js.undefined
   
   /**
     * Control indentation of wrapped lines. Can be: 'none', 'same', 'indent' or 'deepIndent'.
@@ -761,7 +841,11 @@ object IEditorOptions {
     
     inline def setAutoClosingBracketsUndefined: Self = StObject.set(x, "autoClosingBrackets", js.undefined)
     
-    inline def setAutoClosingOvertype(value: EditorAutoClosingOvertypeStrategy): Self = StObject.set(x, "autoClosingOvertype", value.asInstanceOf[js.Any])
+    inline def setAutoClosingDelete(value: EditorAutoClosingEditStrategy): Self = StObject.set(x, "autoClosingDelete", value.asInstanceOf[js.Any])
+    
+    inline def setAutoClosingDeleteUndefined: Self = StObject.set(x, "autoClosingDelete", js.undefined)
+    
+    inline def setAutoClosingOvertype(value: EditorAutoClosingEditStrategy): Self = StObject.set(x, "autoClosingOvertype", value.asInstanceOf[js.Any])
     
     inline def setAutoClosingOvertypeUndefined: Self = StObject.set(x, "autoClosingOvertype", js.undefined)
     
@@ -781,11 +865,23 @@ object IEditorOptions {
     
     inline def setAutomaticLayoutUndefined: Self = StObject.set(x, "automaticLayout", js.undefined)
     
+    inline def setBracketPairColorization(value: IBracketPairColorizationOptions): Self = StObject.set(x, "bracketPairColorization", value.asInstanceOf[js.Any])
+    
+    inline def setBracketPairColorizationUndefined: Self = StObject.set(x, "bracketPairColorization", js.undefined)
+    
     inline def setCodeActionsOnSaveTimeout(value: Double): Self = StObject.set(x, "codeActionsOnSaveTimeout", value.asInstanceOf[js.Any])
     
     inline def setCodeActionsOnSaveTimeoutUndefined: Self = StObject.set(x, "codeActionsOnSaveTimeout", js.undefined)
     
     inline def setCodeLens(value: Boolean): Self = StObject.set(x, "codeLens", value.asInstanceOf[js.Any])
+    
+    inline def setCodeLensFontFamily(value: String): Self = StObject.set(x, "codeLensFontFamily", value.asInstanceOf[js.Any])
+    
+    inline def setCodeLensFontFamilyUndefined: Self = StObject.set(x, "codeLensFontFamily", js.undefined)
+    
+    inline def setCodeLensFontSize(value: Double): Self = StObject.set(x, "codeLensFontSize", value.asInstanceOf[js.Any])
+    
+    inline def setCodeLensFontSizeUndefined: Self = StObject.set(x, "codeLensFontSize", js.undefined)
     
     inline def setCodeLensUndefined: Self = StObject.set(x, "codeLens", js.undefined)
     
@@ -845,13 +941,25 @@ object IEditorOptions {
     
     inline def setDisableMonospaceOptimizationsUndefined: Self = StObject.set(x, "disableMonospaceOptimizations", js.undefined)
     
+    inline def setDomReadOnly(value: Boolean): Self = StObject.set(x, "domReadOnly", value.asInstanceOf[js.Any])
+    
+    inline def setDomReadOnlyUndefined: Self = StObject.set(x, "domReadOnly", js.undefined)
+    
     inline def setDragAndDrop(value: Boolean): Self = StObject.set(x, "dragAndDrop", value.asInstanceOf[js.Any])
     
     inline def setDragAndDropUndefined: Self = StObject.set(x, "dragAndDrop", js.undefined)
     
+    inline def setDropIntoEditor(value: IDropIntoEditorOptions): Self = StObject.set(x, "dropIntoEditor", value.asInstanceOf[js.Any])
+    
+    inline def setDropIntoEditorUndefined: Self = StObject.set(x, "dropIntoEditor", js.undefined)
+    
     inline def setEmptySelectionClipboard(value: Boolean): Self = StObject.set(x, "emptySelectionClipboard", value.asInstanceOf[js.Any])
     
     inline def setEmptySelectionClipboardUndefined: Self = StObject.set(x, "emptySelectionClipboard", js.undefined)
+    
+    inline def setExperimental(value: IEditorExperimentalOptions): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
     
     inline def setExtraEditorClassName(value: String): Self = StObject.set(x, "extraEditorClassName", value.asInstanceOf[js.Any])
     
@@ -874,6 +982,14 @@ object IEditorOptions {
     inline def setFoldingHighlight(value: Boolean): Self = StObject.set(x, "foldingHighlight", value.asInstanceOf[js.Any])
     
     inline def setFoldingHighlightUndefined: Self = StObject.set(x, "foldingHighlight", js.undefined)
+    
+    inline def setFoldingImportsByDefault(value: Boolean): Self = StObject.set(x, "foldingImportsByDefault", value.asInstanceOf[js.Any])
+    
+    inline def setFoldingImportsByDefaultUndefined: Self = StObject.set(x, "foldingImportsByDefault", js.undefined)
+    
+    inline def setFoldingMaximumRegions(value: Double): Self = StObject.set(x, "foldingMaximumRegions", value.asInstanceOf[js.Any])
+    
+    inline def setFoldingMaximumRegionsUndefined: Self = StObject.set(x, "foldingMaximumRegions", js.undefined)
     
     inline def setFoldingStrategy(value: auto | indentation): Self = StObject.set(x, "foldingStrategy", value.asInstanceOf[js.Any])
     
@@ -913,13 +1029,13 @@ object IEditorOptions {
     
     inline def setGotoLocationUndefined: Self = StObject.set(x, "gotoLocation", js.undefined)
     
+    inline def setGuides(value: IGuidesOptions): Self = StObject.set(x, "guides", value.asInstanceOf[js.Any])
+    
+    inline def setGuidesUndefined: Self = StObject.set(x, "guides", js.undefined)
+    
     inline def setHideCursorInOverviewRuler(value: Boolean): Self = StObject.set(x, "hideCursorInOverviewRuler", value.asInstanceOf[js.Any])
     
     inline def setHideCursorInOverviewRulerUndefined: Self = StObject.set(x, "hideCursorInOverviewRuler", js.undefined)
-    
-    inline def setHighlightActiveIndentGuide(value: Boolean): Self = StObject.set(x, "highlightActiveIndentGuide", value.asInstanceOf[js.Any])
-    
-    inline def setHighlightActiveIndentGuideUndefined: Self = StObject.set(x, "highlightActiveIndentGuide", js.undefined)
     
     inline def setHover(value: IEditorHoverOptions): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
@@ -928,6 +1044,14 @@ object IEditorOptions {
     inline def setInDiffEditor(value: Boolean): Self = StObject.set(x, "inDiffEditor", value.asInstanceOf[js.Any])
     
     inline def setInDiffEditorUndefined: Self = StObject.set(x, "inDiffEditor", js.undefined)
+    
+    inline def setInlayHints(value: IEditorInlayHintsOptions): Self = StObject.set(x, "inlayHints", value.asInstanceOf[js.Any])
+    
+    inline def setInlayHintsUndefined: Self = StObject.set(x, "inlayHints", js.undefined)
+    
+    inline def setInlineSuggest(value: IInlineSuggestOptions): Self = StObject.set(x, "inlineSuggest", value.asInstanceOf[js.Any])
+    
+    inline def setInlineSuggestUndefined: Self = StObject.set(x, "inlineSuggest", js.undefined)
     
     inline def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
@@ -954,6 +1078,10 @@ object IEditorOptions {
     inline def setLineNumbersMinCharsUndefined: Self = StObject.set(x, "lineNumbersMinChars", js.undefined)
     
     inline def setLineNumbersUndefined: Self = StObject.set(x, "lineNumbers", js.undefined)
+    
+    inline def setLinkedEditing(value: Boolean): Self = StObject.set(x, "linkedEditing", value.asInstanceOf[js.Any])
+    
+    inline def setLinkedEditingUndefined: Self = StObject.set(x, "linkedEditing", js.undefined)
     
     inline def setLinks(value: Boolean): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
@@ -1039,10 +1167,6 @@ object IEditorOptions {
     
     inline def setRenderFinalNewlineUndefined: Self = StObject.set(x, "renderFinalNewline", js.undefined)
     
-    inline def setRenderIndentGuides(value: Boolean): Self = StObject.set(x, "renderIndentGuides", value.asInstanceOf[js.Any])
-    
-    inline def setRenderIndentGuidesUndefined: Self = StObject.set(x, "renderIndentGuides", js.undefined)
-    
     inline def setRenderLineHighlight(value: none | gutter | line | all): Self = StObject.set(x, "renderLineHighlight", value.asInstanceOf[js.Any])
     
     inline def setRenderLineHighlightOnlyWhenFocus(value: Boolean): Self = StObject.set(x, "renderLineHighlightOnlyWhenFocus", value.asInstanceOf[js.Any])
@@ -1071,7 +1195,7 @@ object IEditorOptions {
     
     inline def setRulersUndefined: Self = StObject.set(x, "rulers", js.undefined)
     
-    inline def setRulersVarargs(value: (Double | IRulerOption)*): Self = StObject.set(x, "rulers", js.Array(value :_*))
+    inline def setRulersVarargs(value: (Double | IRulerOption)*): Self = StObject.set(x, "rulers", js.Array(value*))
     
     inline def setScrollBeyondLastColumn(value: Double): Self = StObject.set(x, "scrollBeyondLastColumn", value.asInstanceOf[js.Any])
     
@@ -1105,13 +1229,17 @@ object IEditorOptions {
     
     inline def setShowDeprecatedUndefined: Self = StObject.set(x, "showDeprecated", js.undefined)
     
-    inline def setShowFoldingControls(value: always | mouseover): Self = StObject.set(x, "showFoldingControls", value.asInstanceOf[js.Any])
+    inline def setShowFoldingControls(value: always | never | mouseover): Self = StObject.set(x, "showFoldingControls", value.asInstanceOf[js.Any])
     
     inline def setShowFoldingControlsUndefined: Self = StObject.set(x, "showFoldingControls", js.undefined)
     
     inline def setShowUnused(value: Boolean): Self = StObject.set(x, "showUnused", value.asInstanceOf[js.Any])
     
     inline def setShowUnusedUndefined: Self = StObject.set(x, "showUnused", js.undefined)
+    
+    inline def setSmartSelect(value: ISmartSelectOptions): Self = StObject.set(x, "smartSelect", value.asInstanceOf[js.Any])
+    
+    inline def setSmartSelectUndefined: Self = StObject.set(x, "smartSelect", js.undefined)
     
     inline def setSmoothScrolling(value: Boolean): Self = StObject.set(x, "smoothScrolling", value.asInstanceOf[js.Any])
     
@@ -1120,6 +1248,10 @@ object IEditorOptions {
     inline def setSnippetSuggestions(value: top | bottom | `inline` | none): Self = StObject.set(x, "snippetSuggestions", value.asInstanceOf[js.Any])
     
     inline def setSnippetSuggestionsUndefined: Self = StObject.set(x, "snippetSuggestions", js.undefined)
+    
+    inline def setStickyTabStops(value: Boolean): Self = StObject.set(x, "stickyTabStops", value.asInstanceOf[js.Any])
+    
+    inline def setStickyTabStopsUndefined: Self = StObject.set(x, "stickyTabStops", js.undefined)
     
     inline def setStopRenderingLineAfter(value: Double): Self = StObject.set(x, "stopRenderingLineAfter", value.asInstanceOf[js.Any])
     
@@ -1157,9 +1289,17 @@ object IEditorOptions {
     
     inline def setUnfoldOnClickAfterEndOfLineUndefined: Self = StObject.set(x, "unfoldOnClickAfterEndOfLine", js.undefined)
     
-    inline def setUnusualLineTerminators(value: off | prompt | auto): Self = StObject.set(x, "unusualLineTerminators", value.asInstanceOf[js.Any])
+    inline def setUnicodeHighlight(value: IUnicodeHighlightOptions): Self = StObject.set(x, "unicodeHighlight", value.asInstanceOf[js.Any])
+    
+    inline def setUnicodeHighlightUndefined: Self = StObject.set(x, "unicodeHighlight", js.undefined)
+    
+    inline def setUnusualLineTerminators(value: auto | off | prompt): Self = StObject.set(x, "unusualLineTerminators", value.asInstanceOf[js.Any])
     
     inline def setUnusualLineTerminatorsUndefined: Self = StObject.set(x, "unusualLineTerminators", js.undefined)
+    
+    inline def setUseShadowDOM(value: Boolean): Self = StObject.set(x, "useShadowDOM", value.asInstanceOf[js.Any])
+    
+    inline def setUseShadowDOMUndefined: Self = StObject.set(x, "useShadowDOM", js.undefined)
     
     inline def setUseTabStops(value: Boolean): Self = StObject.set(x, "useTabStops", value.asInstanceOf[js.Any])
     
@@ -1183,9 +1323,13 @@ object IEditorOptions {
     
     inline def setWordWrapColumnUndefined: Self = StObject.set(x, "wordWrapColumn", js.undefined)
     
-    inline def setWordWrapMinified(value: Boolean): Self = StObject.set(x, "wordWrapMinified", value.asInstanceOf[js.Any])
+    inline def setWordWrapOverride1(value: off | on | inherit): Self = StObject.set(x, "wordWrapOverride1", value.asInstanceOf[js.Any])
     
-    inline def setWordWrapMinifiedUndefined: Self = StObject.set(x, "wordWrapMinified", js.undefined)
+    inline def setWordWrapOverride1Undefined: Self = StObject.set(x, "wordWrapOverride1", js.undefined)
+    
+    inline def setWordWrapOverride2(value: off | on | inherit): Self = StObject.set(x, "wordWrapOverride2", value.asInstanceOf[js.Any])
+    
+    inline def setWordWrapOverride2Undefined: Self = StObject.set(x, "wordWrapOverride2", js.undefined)
     
     inline def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
     

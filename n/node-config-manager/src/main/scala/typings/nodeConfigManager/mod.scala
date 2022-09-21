@@ -20,11 +20,11 @@ object mod extends Shortcut {
     
     def get(key: String): String | Boolean = js.native
     
-    def getConfig(configName: String): js.Any = js.native
+    def getConfig(configName: String): Any = js.native
     
     def init(options: Options): ConfigManager = js.native
     
-    var method: js.Any = js.native
+    var method: Any = js.native
     
     def removeConfig(configName: String): ConfigManager = js.native
     

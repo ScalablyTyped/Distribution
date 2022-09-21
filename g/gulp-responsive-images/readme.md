@@ -10,15 +10,12 @@ Resize/rename images for responsive designs.
 | ------------------ | :-------------: |
 | Full name          | gulp-responsive-images |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 14142 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 486.6666666666667 |
+| # stars            | 20.0 |
 
 ## Links
-- [Homepage](https://github.com/dcgauld/gulp-responsive-images#readme)
-- [Bugs](https://github.com/dcgauld/gulp-responsive-images/issues)
-- [Repository](https://github.com/dcgauld/gulp-responsive-images)
 - [Npm](https://www.npmjs.com/package/gulp-responsive-images)
     
 

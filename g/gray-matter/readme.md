@@ -1,7 +1,7 @@
 
 # Scala.js typings for gray-matter
 
-Typings are for version 2.1.1
+Typings are for version 4.0.3
 
 ## Library description:
 Parse front-matter from a string or file. Fast, reliable and easy to use. Parses YAML front matter by default, but also has support for YAML, JSON, TOML or Coffee Front-Matter, with options to set custom delimiters. Used by metalsmith, assemble, verb and
@@ -11,9 +11,9 @@ Parse front-matter from a string or file. Fast, reliable and easy to use. Parses
 | Full name          | gray-matter |
 | Keywords           | assemble, coffee, coffee-script, data, docs, documentation, extract, extracting, front, front-matter, frontmatter, generate, generator, gh-pages, gray, javascript, jekyll, js, JSON, markdown, matter, parse, parser, parsing, site, static, template, toml, yaml, yfm |
 | # releases         | 2 |
-| # dependents       | 590 |
-| # downloads        | 22079421 |
-| # stars            | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 4028577.0 |
+| # stars            | 2599.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/gray-matter)

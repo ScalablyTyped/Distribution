@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "SignatureHelp")
 @js.native
-class SignatureHelp () extends StObject {
+open class SignatureHelp () extends StObject {
   
   /**
     * The active parameter of the active signature.

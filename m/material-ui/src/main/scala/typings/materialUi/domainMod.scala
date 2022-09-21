@@ -10,10 +10,10 @@ object domainMod {
   
   @JSImport("material-ui/svg-icons/social/domain", JSImport.Default)
   @js.native
-  class default () extends SocialDomain
+  open class default () extends SocialDomain
   
   @JSImport("material-ui/svg-icons/social/domain", "SocialDomain")
   @js.native
-  class SocialDomain ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class SocialDomain ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

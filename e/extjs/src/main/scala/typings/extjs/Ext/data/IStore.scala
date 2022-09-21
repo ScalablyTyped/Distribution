@@ -14,14 +14,14 @@ trait IStore
     * @param model Ext.data.Model[]/Ext.data.Model.../Object[]/Object... An array of Model instances or Model configuration objects, or variable number of Model instance or config arguments.
     * @returns Ext.data.Model[] The model instances that were added
     */
-  var add: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Array]] = js.undefined
+  var add: js.UndefOr[js.Function1[/* model */ js.UndefOr[Any], Array]] = js.undefined
   
   /** [Method] Adds a new Filter to this Store s filter set and by default applys the updated filter set to the Store s unfiltered
     * @param filters Object[]/Ext.util.Filter[] The set of filters to add to the current filter set.
     * @param applyFilters Boolean Pass as false to add the filter but not apply the updated filter set.
     */
   var addFilter: js.UndefOr[
-    js.Function2[/* filters */ js.UndefOr[js.Any], /* applyFilters */ js.UndefOr[Boolean], Unit]
+    js.Function2[/* filters */ js.UndefOr[Any], /* applyFilters */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   
   /** [Method] Local sort only Inserts the passed Record into the Store at the index where it should go based on the current sort
@@ -38,11 +38,11 @@ trait IStore
     */
   var aggregate: js.UndefOr[
     js.Function4[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       /* grouped */ js.UndefOr[Boolean], 
       /* args */ js.UndefOr[Array], 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -55,7 +55,7 @@ trait IStore
     * @returns Object The average value, if no items exist, 0.
     */
   var average: js.UndefOr[
-    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], js.Any]
+    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], Any]
   ] = js.undefined
   
   /** [Config Option] (Boolean) */
@@ -103,27 +103,27 @@ trait IStore
   var currentPage: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Object[]/Ext.data.Model[]) */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /** [Method] Calls the specified function for each record in the store
     * @param fn Function The function to call. The Record is passed as the first parameter. Returning false aborts and exits the iteration.
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the current record in the iteration.
     */
-  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Filters the loaded set of records by a given set of filters
     * @param filters Object[]/Ext.util.Filter[]/String The set of filters to apply to the data. These are stored internally on the store, but the filtering itself is done on the Store's MixedCollection. See MixedCollection's filter method for filter syntax. Alternatively, pass in a property string. If no parameters are passed, the Store's existing filter set is applied.
     * @param value String value to filter by (only if using a property string as the first argument)
     */
   var filter: js.UndefOr[
-    js.Function2[/* filters */ js.UndefOr[js.Any], /* value */ js.UndefOr[String], Unit]
+    js.Function2[/* filters */ js.UndefOr[Any], /* value */ js.UndefOr[String], Unit]
   ] = js.undefined
   
   /** [Method] Filters by a function
     * @param fn Function The function to be called. It will be passed the following parameters:
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to this Store.
     */
-  var filterBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var filterBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Finds the index of the first matching Record in this store by a specific field value
     * @param fieldName String The name of the Record field to test.
@@ -137,7 +137,7 @@ trait IStore
   var find: js.UndefOr[
     js.Function6[
       /* fieldName */ js.UndefOr[String], 
-      /* value */ js.UndefOr[js.Any], 
+      /* value */ js.UndefOr[Any], 
       /* startIndex */ js.UndefOr[Double], 
       /* anyMatch */ js.UndefOr[Boolean], 
       /* caseSensitive */ js.UndefOr[Boolean], 
@@ -154,8 +154,8 @@ trait IStore
     */
   var findBy: js.UndefOr[
     js.Function3[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       /* startIndex */ js.UndefOr[Double], 
       Double
     ]
@@ -170,7 +170,7 @@ trait IStore
   var findExact: js.UndefOr[
     js.Function3[
       /* fieldName */ js.UndefOr[String], 
-      /* value */ js.UndefOr[js.Any], 
+      /* value */ js.UndefOr[Any], 
       /* startIndex */ js.UndefOr[Double], 
       Double
     ]
@@ -188,7 +188,7 @@ trait IStore
   var findRecord: js.UndefOr[
     js.Function6[
       /* fieldName */ js.UndefOr[String], 
-      /* value */ js.UndefOr[js.Any], 
+      /* value */ js.UndefOr[Any], 
       /* startIndex */ js.UndefOr[Double], 
       /* anyMatch */ js.UndefOr[Boolean], 
       /* caseSensitive */ js.UndefOr[Boolean], 
@@ -201,7 +201,7 @@ trait IStore
     * @param grouped Boolean True to perform the operation for each group in the store. The value returned will be an object literal with the key being the group name and the first record being the value. The grouped parameter is only honored if the store has a groupField.
     * @returns Ext.data.Model/undefined The first model instance in the store, or undefined
     */
-  var first: js.UndefOr[js.Function1[/* grouped */ js.UndefOr[Boolean], js.Any]] = js.undefined
+  var first: js.UndefOr[js.Function1[/* grouped */ js.UndefOr[Boolean], Any]] = js.undefined
   
   /** [Method] Get the Record at the specified index
     * @param index Number The index of the Record to find.
@@ -213,7 +213,7 @@ trait IStore
     * @param id Mixed The id of the Record to find.
     * @returns Ext.data.Model The Record with the passed id. Returns null if not found.
     */
-  var getById: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], IModel]] = js.undefined
+  var getById: js.UndefOr[js.Function1[/* id */ js.UndefOr[Any], IModel]] = js.undefined
   
   /** [Method] Gets the number of records in store
     * @returns Number The number of Records in the Store.
@@ -230,7 +230,7 @@ trait IStore
     * @param groupName String Pass in an optional groupName argument to access a specific group as defined by getGroupString.
     * @returns Object/Object[] The grouped data
     */
-  var getGroups: js.UndefOr[js.Function1[/* groupName */ js.UndefOr[String], js.Any]] = js.undefined
+  var getGroups: js.UndefOr[js.Function1[/* groupName */ js.UndefOr[String], Any]] = js.undefined
   
   /** [Method] Determines the page from a record index
     * @param index Number The record index
@@ -248,7 +248,7 @@ trait IStore
     js.Function3[
       /* start */ js.UndefOr[Double], 
       /* end */ js.UndefOr[Double], 
-      /* options */ js.UndefOr[js.Any], 
+      /* options */ js.UndefOr[Any], 
       Array
     ]
   ] = js.undefined
@@ -263,7 +263,7 @@ trait IStore
     * @param direction String The overall direction to group the data by.
     */
   var group: js.UndefOr[
-    js.Function2[/* groupers */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String], Unit]
+    js.Function2[/* groupers */ js.UndefOr[Any], /* direction */ js.UndefOr[String], Unit]
   ] = js.undefined
   
   /** [Config Option] (String) */
@@ -284,11 +284,11 @@ trait IStore
     */
   var guaranteeRange: js.UndefOr[
     js.Function5[
-      /* start */ js.UndefOr[js.Any], 
-      /* end */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
+      /* start */ js.UndefOr[Any], 
+      /* end */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* options */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -334,7 +334,7 @@ trait IStore
     * @param grouped Boolean True to perform the operation for each group in the store. The value returned will be an object literal with the key being the group name and the last record being the value. The grouped parameter is only honored if the store has a groupField.
     * @returns Ext.data.Model/undefined The last model instance in the store, or undefined
     */
-  var last: js.UndefOr[js.Function1[/* grouped */ js.UndefOr[Boolean], js.Any]] = js.undefined
+  var last: js.UndefOr[js.Function1[/* grouped */ js.UndefOr[Boolean], Any]] = js.undefined
   
   /** [Config Option] (Number) */
   var leadingBufferZone: js.UndefOr[Double] = js.undefined
@@ -343,17 +343,13 @@ trait IStore
     * @param data Ext.data.Model[]/Object[] Array of data to load. Any non-model instances will be cast into model instances first.
     * @param append Boolean true to add the records to the existing records in the store, false to remove the old ones first.
     */
-  var loadData: js.UndefOr[
-    js.Function2[/* data */ js.UndefOr[js.Any], /* append */ js.UndefOr[Boolean], Unit]
-  ] = js.undefined
+  var loadData: js.UndefOr[js.Function2[/* data */ js.UndefOr[Any], /* append */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Loads a given page of data by setting the start and limit values appropriately
     * @param page Number The number of the page to load.
     * @param options Object See options for load.
     */
-  var loadPage: js.UndefOr[
-    js.Function2[/* page */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var loadPage: js.UndefOr[js.Function2[/* page */ js.UndefOr[Double], /* options */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Loads data via the bound Proxy s reader Use this method if you are attempting to load data and want to utilize the c
     * @param data Object[] The full JSON object you'd like to load into the Data store.
@@ -368,7 +364,7 @@ trait IStore
     * @param options Object
     */
   var loadRecords: js.UndefOr[
-    js.Function2[/* records */ js.UndefOr[Array], /* options */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* records */ js.UndefOr[Array], /* options */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] Gets the maximum value in the store
@@ -377,7 +373,7 @@ trait IStore
     * @returns Object The maximum value, if no items exist, undefined.
     */
   var max: js.UndefOr[
-    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], js.Any]
+    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], Any]
   ] = js.undefined
   
   /** [Method] Gets the minimum value in the store
@@ -386,13 +382,13 @@ trait IStore
     * @returns Object The minimum value, if no items exist, undefined.
     */
   var min: js.UndefOr[
-    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], js.Any]
+    js.Function2[/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean], Any]
   ] = js.undefined
   
   /** [Method] Loads the next page in the current data set
     * @param options Object See options for load
     */
-  var nextPage: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var nextPage: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
   var pageSize: js.UndefOr[Double] = js.undefined
@@ -400,26 +396,24 @@ trait IStore
   /** [Method] Prefetches data into the store using its configured proxy
     * @param options Object config object, passed into the Ext.data.Operation object before loading. See load
     */
-  var prefetch: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var prefetch: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Prefetches a page of data
     * @param page Number The page to prefetch
     * @param options Object config object, passed into the Ext.data.Operation object before loading. See load
     */
-  var prefetchPage: js.UndefOr[
-    js.Function2[/* page */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var prefetchPage: js.UndefOr[js.Function2[/* page */ js.UndefOr[Double], /* options */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Ensures that the specified range of rows is present in the cache
     * @param start Object
     * @param end Object
     */
-  var prefetchRange: js.UndefOr[js.Function2[/* start */ js.UndefOr[js.Any], /* end */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var prefetchRange: js.UndefOr[js.Function2[/* start */ js.UndefOr[Any], /* end */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Loads the previous page in the current data set
     * @param options Object See options for load
     */
-  var previousPage: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var previousPage: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
   var purgePageCount: js.UndefOr[Double] = js.undefined
@@ -435,7 +429,7 @@ trait IStore
   var query: js.UndefOr[
     js.Function5[
       /* property */ js.UndefOr[String], 
-      /* value */ js.UndefOr[js.Any], 
+      /* value */ js.UndefOr[Any], 
       /* anyMatch */ js.UndefOr[Boolean], 
       /* caseSensitive */ js.UndefOr[Boolean], 
       /* exactMatch */ js.UndefOr[Boolean], 
@@ -449,7 +443,7 @@ trait IStore
     * @returns Ext.util.MixedCollection Returns an Ext.util.MixedCollection of the matched records
     */
   var queryBy: js.UndefOr[
-    js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IMixedCollection]
+    js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], IMixedCollection]
   ] = js.undefined
   
   /** [Method] Rejects outstanding changes on all modified records and re insert any records that were removed locally  */
@@ -461,7 +455,7 @@ trait IStore
   /** [Method] Removes the specified record s from the Store firing the remove event for each instance that is removed
     * @param records Ext.data.Model/Ext.data.Model[]/Number/Number[] Model instance or array of instances to remove or an array of indices from which to remove records.
     */
-  var remove: js.UndefOr[js.Function1[/* records */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var remove: js.UndefOr[js.Function1[/* records */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Removes all items from the store
     * @param silent Boolean Pass true to prevent the record bulkremove and clear events from being fired.
@@ -482,7 +476,7 @@ trait IStore
     * @param applyFilters Boolean Pass as false to remove the filter but not apply the updated filter set. If null is passed, all anonymous Filters (Filters with no id property) will be removed.
     */
   var removeFilter: js.UndefOr[
-    js.Function2[/* toRemove */ js.UndefOr[js.Any], /* applyFilters */ js.UndefOr[Boolean], Unit]
+    js.Function2[/* toRemove */ js.UndefOr[Any], /* applyFilters */ js.UndefOr[Boolean], Unit]
   ] = js.undefined
   
   /** [Property] (Ext.util.MixedCollection) */
@@ -518,9 +512,9 @@ object IStore {
   
   extension [Self <: IStore](x: Self) {
     
-    inline def setAdd(value: /* model */ js.UndefOr[js.Any] => Array): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* model */ js.UndefOr[Any] => Array): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    inline def setAddFilter(value: (/* filters */ js.UndefOr[js.Any], /* applyFilters */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "addFilter", js.Any.fromFunction2(value))
+    inline def setAddFilter(value: (/* filters */ js.UndefOr[Any], /* applyFilters */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "addFilter", js.Any.fromFunction2(value))
     
     inline def setAddFilterUndefined: Self = StObject.set(x, "addFilter", js.undefined)
     
@@ -531,7 +525,7 @@ object IStore {
     inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     inline def setAggregate(
-      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* grouped */ js.UndefOr[Boolean], /* args */ js.UndefOr[Array]) => js.Any
+      value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* grouped */ js.UndefOr[Boolean], /* args */ js.UndefOr[Array]) => Any
     ): Self = StObject.set(x, "aggregate", js.Any.fromFunction4(value))
     
     inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
@@ -540,7 +534,7 @@ object IStore {
     
     inline def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
     
-    inline def setAverage(value: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "average", js.Any.fromFunction2(value))
+    inline def setAverage(value: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "average", js.Any.fromFunction2(value))
     
     inline def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
     
@@ -582,47 +576,47 @@ object IStore {
     
     inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
+    inline def setEach(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
     inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
-    inline def setFilter(value: (/* filters */ js.UndefOr[js.Any], /* value */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+    inline def setFilter(value: (/* filters */ js.UndefOr[Any], /* value */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
     
-    inline def setFilterBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "filterBy", js.Any.fromFunction2(value))
+    inline def setFilterBy(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "filterBy", js.Any.fromFunction2(value))
     
     inline def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     inline def setFind(
-      value: (/* fieldName */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => Double
+      value: (/* fieldName */ js.UndefOr[String], /* value */ js.UndefOr[Any], /* startIndex */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => Double
     ): Self = StObject.set(x, "find", js.Any.fromFunction6(value))
     
     inline def setFindBy(
-      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double]) => Double
+      value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* startIndex */ js.UndefOr[Double]) => Double
     ): Self = StObject.set(x, "findBy", js.Any.fromFunction3(value))
     
     inline def setFindByUndefined: Self = StObject.set(x, "findBy", js.undefined)
     
     inline def setFindExact(
-      value: (/* fieldName */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double]) => Double
+      value: (/* fieldName */ js.UndefOr[String], /* value */ js.UndefOr[Any], /* startIndex */ js.UndefOr[Double]) => Double
     ): Self = StObject.set(x, "findExact", js.Any.fromFunction3(value))
     
     inline def setFindExactUndefined: Self = StObject.set(x, "findExact", js.undefined)
     
     inline def setFindRecord(
-      value: (/* fieldName */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* startIndex */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => IModel
+      value: (/* fieldName */ js.UndefOr[String], /* value */ js.UndefOr[Any], /* startIndex */ js.UndefOr[Double], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => IModel
     ): Self = StObject.set(x, "findRecord", js.Any.fromFunction6(value))
     
     inline def setFindRecordUndefined: Self = StObject.set(x, "findRecord", js.undefined)
     
     inline def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
     
-    inline def setFirst(value: /* grouped */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
+    inline def setFirst(value: /* grouped */ js.UndefOr[Boolean] => Any): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
     
     inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
@@ -630,7 +624,7 @@ object IStore {
     
     inline def setGetAtUndefined: Self = StObject.set(x, "getAt", js.undefined)
     
-    inline def setGetById(value: /* id */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
+    inline def setGetById(value: /* id */ js.UndefOr[Any] => IModel): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
     
     inline def setGetByIdUndefined: Self = StObject.set(x, "getById", js.undefined)
     
@@ -642,7 +636,7 @@ object IStore {
     
     inline def setGetGroupStringUndefined: Self = StObject.set(x, "getGroupString", js.undefined)
     
-    inline def setGetGroups(value: /* groupName */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "getGroups", js.Any.fromFunction1(value))
+    inline def setGetGroups(value: /* groupName */ js.UndefOr[String] => Any): Self = StObject.set(x, "getGroups", js.Any.fromFunction1(value))
     
     inline def setGetGroupsUndefined: Self = StObject.set(x, "getGroups", js.undefined)
     
@@ -651,7 +645,7 @@ object IStore {
     inline def setGetPageFromRecordIndexUndefined: Self = StObject.set(x, "getPageFromRecordIndex", js.undefined)
     
     inline def setGetRange(
-      value: (/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => Array
+      value: (/* start */ js.UndefOr[Double], /* end */ js.UndefOr[Double], /* options */ js.UndefOr[Any]) => Array
     ): Self = StObject.set(x, "getRange", js.Any.fromFunction3(value))
     
     inline def setGetRangeUndefined: Self = StObject.set(x, "getRange", js.undefined)
@@ -660,7 +654,7 @@ object IStore {
     
     inline def setGetTotalCountUndefined: Self = StObject.set(x, "getTotalCount", js.undefined)
     
-    inline def setGroup(value: (/* groupers */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "group", js.Any.fromFunction2(value))
+    inline def setGroup(value: (/* groupers */ js.UndefOr[Any], /* direction */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "group", js.Any.fromFunction2(value))
     
     inline def setGroupDir(value: String): Self = StObject.set(x, "groupDir", value.asInstanceOf[js.Any])
     
@@ -677,7 +671,7 @@ object IStore {
     inline def setGroupersUndefined: Self = StObject.set(x, "groupers", js.undefined)
     
     inline def setGuaranteeRange(
-      value: (/* start */ js.UndefOr[js.Any], /* end */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit
+      value: (/* start */ js.UndefOr[Any], /* end */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "guaranteeRange", js.Any.fromFunction5(value))
     
     inline def setGuaranteeRangeUndefined: Self = StObject.set(x, "guaranteeRange", js.undefined)
@@ -706,7 +700,7 @@ object IStore {
     
     inline def setIsGroupedUndefined: Self = StObject.set(x, "isGrouped", js.undefined)
     
-    inline def setLast(value: /* grouped */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "last", js.Any.fromFunction1(value))
+    inline def setLast(value: /* grouped */ js.UndefOr[Boolean] => Any): Self = StObject.set(x, "last", js.Any.fromFunction1(value))
     
     inline def setLastUndefined: Self = StObject.set(x, "last", js.undefined)
     
@@ -714,11 +708,11 @@ object IStore {
     
     inline def setLeadingBufferZoneUndefined: Self = StObject.set(x, "leadingBufferZone", js.undefined)
     
-    inline def setLoadData(value: (/* data */ js.UndefOr[js.Any], /* append */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "loadData", js.Any.fromFunction2(value))
+    inline def setLoadData(value: (/* data */ js.UndefOr[Any], /* append */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "loadData", js.Any.fromFunction2(value))
     
     inline def setLoadDataUndefined: Self = StObject.set(x, "loadData", js.undefined)
     
-    inline def setLoadPage(value: (/* page */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "loadPage", js.Any.fromFunction2(value))
+    inline def setLoadPage(value: (/* page */ js.UndefOr[Double], /* options */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "loadPage", js.Any.fromFunction2(value))
     
     inline def setLoadPageUndefined: Self = StObject.set(x, "loadPage", js.undefined)
     
@@ -726,19 +720,19 @@ object IStore {
     
     inline def setLoadRawDataUndefined: Self = StObject.set(x, "loadRawData", js.undefined)
     
-    inline def setLoadRecords(value: (/* records */ js.UndefOr[Array], /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "loadRecords", js.Any.fromFunction2(value))
+    inline def setLoadRecords(value: (/* records */ js.UndefOr[Array], /* options */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "loadRecords", js.Any.fromFunction2(value))
     
     inline def setLoadRecordsUndefined: Self = StObject.set(x, "loadRecords", js.undefined)
     
-    inline def setMax(value: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
+    inline def setMax(value: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    inline def setMin(value: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
+    inline def setMin(value: (/* field */ js.UndefOr[String], /* grouped */ js.UndefOr[Boolean]) => Any): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setNextPage(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "nextPage", js.Any.fromFunction1(value))
+    inline def setNextPage(value: /* options */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "nextPage", js.Any.fromFunction1(value))
     
     inline def setNextPageUndefined: Self = StObject.set(x, "nextPage", js.undefined)
     
@@ -746,19 +740,19 @@ object IStore {
     
     inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    inline def setPrefetch(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "prefetch", js.Any.fromFunction1(value))
+    inline def setPrefetch(value: /* options */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "prefetch", js.Any.fromFunction1(value))
     
-    inline def setPrefetchPage(value: (/* page */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "prefetchPage", js.Any.fromFunction2(value))
+    inline def setPrefetchPage(value: (/* page */ js.UndefOr[Double], /* options */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "prefetchPage", js.Any.fromFunction2(value))
     
     inline def setPrefetchPageUndefined: Self = StObject.set(x, "prefetchPage", js.undefined)
     
-    inline def setPrefetchRange(value: (/* start */ js.UndefOr[js.Any], /* end */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "prefetchRange", js.Any.fromFunction2(value))
+    inline def setPrefetchRange(value: (/* start */ js.UndefOr[Any], /* end */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "prefetchRange", js.Any.fromFunction2(value))
     
     inline def setPrefetchRangeUndefined: Self = StObject.set(x, "prefetchRange", js.undefined)
     
     inline def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
     
-    inline def setPreviousPage(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "previousPage", js.Any.fromFunction1(value))
+    inline def setPreviousPage(value: /* options */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "previousPage", js.Any.fromFunction1(value))
     
     inline def setPreviousPageUndefined: Self = StObject.set(x, "previousPage", js.undefined)
     
@@ -767,10 +761,10 @@ object IStore {
     inline def setPurgePageCountUndefined: Self = StObject.set(x, "purgePageCount", js.undefined)
     
     inline def setQuery(
-      value: (/* property */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => IMixedCollection
+      value: (/* property */ js.UndefOr[String], /* value */ js.UndefOr[Any], /* anyMatch */ js.UndefOr[Boolean], /* caseSensitive */ js.UndefOr[Boolean], /* exactMatch */ js.UndefOr[Boolean]) => IMixedCollection
     ): Self = StObject.set(x, "query", js.Any.fromFunction5(value))
     
-    inline def setQueryBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => IMixedCollection): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
+    inline def setQueryBy(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IMixedCollection): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
     
     inline def setQueryByUndefined: Self = StObject.set(x, "queryBy", js.undefined)
     
@@ -784,7 +778,7 @@ object IStore {
     
     inline def setRemoteGroupUndefined: Self = StObject.set(x, "remoteGroup", js.undefined)
     
-    inline def setRemove(value: /* records */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: /* records */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     inline def setRemoveAll(value: /* silent */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction1(value))
     
@@ -794,7 +788,7 @@ object IStore {
     
     inline def setRemoveAtUndefined: Self = StObject.set(x, "removeAt", js.undefined)
     
-    inline def setRemoveFilter(value: (/* toRemove */ js.UndefOr[js.Any], /* applyFilters */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "removeFilter", js.Any.fromFunction2(value))
+    inline def setRemoveFilter(value: (/* toRemove */ js.UndefOr[Any], /* applyFilters */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "removeFilter", js.Any.fromFunction2(value))
     
     inline def setRemoveFilterUndefined: Self = StObject.set(x, "removeFilter", js.undefined)
     

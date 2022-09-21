@@ -1,8 +1,7 @@
 package typings.looksSame
 
 import typings.looksSame.anon.Tolerance
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,9 +57,9 @@ object mod {
   
   inline def createDiff(
     options: CreateDiffAsBufferOptions,
-    callback: js.Function2[/* error */ Error | Null, /* buffer */ Buffer, js.Any]
+    callback: js.Function2[/* error */ js.Error | Null, /* buffer */ Buffer, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiff")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def createDiff(options: CreateDiffOptions, callback: js.Function1[/* error */ Error | Null, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiff")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createDiff(options: CreateDiffOptions, callback: js.Function1[/* error */ js.Error | Null, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiff")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * bounded image
@@ -290,7 +289,7 @@ object mod {
     }
   }
   
-  type LooksSameCallback = js.Function2[/* error */ Error | Null, /* result */ LooksSameResult, Unit]
+  type LooksSameCallback = js.Function2[/* error */ js.Error | Null, /* result */ LooksSameResult, Unit]
   
   /**
     * The options passed to looksSame function
@@ -438,7 +437,7 @@ object mod {
       
       inline def setDiffClustersUndefined: Self = StObject.set(x, "diffClusters", js.undefined)
       
-      inline def setDiffClustersVarargs(value: CoordBounds*): Self = StObject.set(x, "diffClusters", js.Array(value :_*))
+      inline def setDiffClustersVarargs(value: CoordBounds*): Self = StObject.set(x, "diffClusters", js.Array(value*))
       
       inline def setEqual(value: Boolean): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
       

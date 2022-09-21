@@ -1,6 +1,5 @@
 package typings.wonderJs
 
-import typings.std.Float32Array
 import typings.wonderJs.matrix3Mod.Matrix3
 import typings.wonderJs.matrix4Mod.Matrix4
 import typings.wonderJs.vector4Mod.Vector4
@@ -12,7 +11,7 @@ object vector3Mod {
   
   @JSImport("wonder.js/dist/es2015/math/Vector3", "Vector3")
   @js.native
-  class Vector3 () extends StObject {
+  open class Vector3 () extends StObject {
     def this(x: Double, y: Double, z: Double) = this()
     
     def add(v: Vector3): this.type = js.native
@@ -27,17 +26,17 @@ object vector3Mod {
     
     def cross(lhs: Vector3, rhs: Vector3): this.type = js.native
     
-    def distanceTo(v: Vector3): js.Any = js.native
+    def distanceTo(v: Vector3): Any = js.native
     
     def distanceToSquared(v: Vector3): Double = js.native
     
-    def dot(rhs: js.Any): Double = js.native
+    def dot(rhs: Any): Double = js.native
     
     def isEqual(v: Vector3): Boolean = js.native
     
     def isZero(): Boolean = js.native
     
-    def length(): js.Any = js.native
+    def length(): Any = js.native
     
     def lerp(lhs: Vector3, rhs: Vector3, alpha: Double): this.type = js.native
     
@@ -53,11 +52,11 @@ object vector3Mod {
     
     def reverse(): Vector3 = js.native
     
-    def scale(scalar: Double): js.Any = js.native
-    def scale(x: Double, y: Double, z: Double): js.Any = js.native
+    def scale(scalar: Double): Any = js.native
+    def scale(x: Double, y: Double, z: Double): Any = js.native
     
-    def set(v: Vector3): js.Any = js.native
-    def set(x: Double, y: Double, z: Double): js.Any = js.native
+    def set(v: Vector3): Any = js.native
+    def set(x: Double, y: Double, z: Double): Any = js.native
     
     def sub(v: Vector3): Vector3 = js.native
     
@@ -67,7 +66,7 @@ object vector3Mod {
     
     def toVector4(): Vector4 = js.native
     
-    var values: Float32Array = js.native
+    var values: js.typedarray.Float32Array = js.native
     
     var x: Double = js.native
     
@@ -87,17 +86,17 @@ object vector3Mod {
     
     @JSImport("wonder.js/dist/es2015/math/Vector3", "Vector3.forward")
     @js.native
-    def forward: js.Any = js.native
-    inline def forward_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forward")(x.asInstanceOf[js.Any])
+    def forward: Any = js.native
+    inline def forward_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forward")(x.asInstanceOf[js.Any])
     
     @JSImport("wonder.js/dist/es2015/math/Vector3", "Vector3.right")
     @js.native
-    def right: js.Any = js.native
-    inline def right_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
+    def right: Any = js.native
+    inline def right_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
     
     @JSImport("wonder.js/dist/es2015/math/Vector3", "Vector3.up")
     @js.native
-    def up: js.Any = js.native
-    inline def up_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("up")(x.asInstanceOf[js.Any])
+    def up: Any = js.native
+    inline def up_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("up")(x.asInstanceOf[js.Any])
   }
 }

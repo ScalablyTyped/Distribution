@@ -22,7 +22,7 @@ trait HadoopJarStepConfig extends StObject {
   var MainClass: js.UndefOr[XmlString] = js.undefined
   
   /**
-    * A list of Java properties that are set when the step runs. You can use these properties to pass key value pairs to your main function.
+    * A list of Java properties that are set when the step runs. You can use these properties to pass key-value pairs to your main function.
     */
   var Properties: js.UndefOr[KeyValueList] = js.undefined
 }
@@ -39,7 +39,7 @@ object HadoopJarStepConfig {
     
     inline def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
     
-    inline def setArgsVarargs(value: XmlString*): Self = StObject.set(x, "Args", js.Array(value :_*))
+    inline def setArgsVarargs(value: XmlString*): Self = StObject.set(x, "Args", js.Array(value*))
     
     inline def setJar(value: XmlString): Self = StObject.set(x, "Jar", value.asInstanceOf[js.Any])
     
@@ -51,6 +51,6 @@ object HadoopJarStepConfig {
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
     
-    inline def setPropertiesVarargs(value: KeyValue*): Self = StObject.set(x, "Properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: KeyValue*): Self = StObject.set(x, "Properties", js.Array(value*))
   }
 }

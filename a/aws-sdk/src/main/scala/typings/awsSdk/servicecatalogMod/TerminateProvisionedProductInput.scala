@@ -12,7 +12,7 @@ trait TerminateProvisionedProductInput extends StObject {
   var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
-    * If set to true, AWS Service Catalog stops managing the specified provisioned product even if it cannot delete the underlying resources.
+    * If set to true, Service Catalog stops managing the specified provisioned product even if it cannot delete the underlying resources.
     */
   var IgnoreErrors: js.UndefOr[typings.awsSdk.servicecatalogMod.IgnoreErrors] = js.undefined
   

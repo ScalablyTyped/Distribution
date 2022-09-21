@@ -112,7 +112,7 @@ object BillingCharge {
     
     inline def setDiscountsUndefined: Self = StObject.set(x, "discounts", js.undefined)
     
-    inline def setDiscountsVarargs(value: BillingDiscount*): Self = StObject.set(x, "discounts", js.Array(value :_*))
+    inline def setDiscountsVarargs(value: BillingDiscount*): Self = StObject.set(x, "discounts", js.Array(value*))
     
     inline def setFirstEffectiveDate(value: String): Self = StObject.set(x, "firstEffectiveDate", value.asInstanceOf[js.Any])
     
@@ -134,7 +134,7 @@ object BillingCharge {
     
     inline def setPricesUndefined: Self = StObject.set(x, "prices", js.undefined)
     
-    inline def setPricesVarargs(value: BillingPrice*): Self = StObject.set(x, "prices", js.Array(value :_*))
+    inline def setPricesVarargs(value: BillingPrice*): Self = StObject.set(x, "prices", js.Array(value*))
     
     inline def setUnitPrice(value: String): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
     

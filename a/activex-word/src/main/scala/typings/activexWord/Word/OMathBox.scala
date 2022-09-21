@@ -18,7 +18,7 @@ trait OMathBox extends StObject {
   
   var OpEmu: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.OMathBox_typekey")
   var WordDotOMathBox_typekey: OMathBox
@@ -32,7 +32,7 @@ object OMathBox {
     E: OMath,
     NoBreak: Boolean,
     OpEmu: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     WordDotOMathBox_typekey: OMathBox
   ): OMathBox = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Diff = Diff.asInstanceOf[js.Any], E = E.asInstanceOf[js.Any], NoBreak = NoBreak.asInstanceOf[js.Any], OpEmu = OpEmu.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object OMathBox {
     
     inline def setOpEmu(value: Boolean): Self = StObject.set(x, "OpEmu", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotOMathBox_typekey(value: OMathBox): Self = StObject.set(x, "Word.OMathBox_typekey", value.asInstanceOf[js.Any])
   }

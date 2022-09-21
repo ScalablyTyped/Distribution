@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait hintConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -46,7 +46,7 @@ trait hintConfig extends StObject {
   
   var stepTimeout: js.UndefOr[Double] = js.undefined
   
-  var steps: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var steps: js.UndefOr[js.Array[Any]] = js.undefined
   
   var top: js.UndefOr[Double] = js.undefined
   
@@ -63,7 +63,7 @@ object hintConfig {
   
   extension [Self <: hintConfig](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -75,7 +75,7 @@ object hintConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -139,11 +139,11 @@ object hintConfig {
     
     inline def setStepTimeoutUndefined: Self = StObject.set(x, "stepTimeout", js.undefined)
     
-    inline def setSteps(value: js.Array[js.Any]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[Any]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
     inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    inline def setStepsVarargs(value: js.Any*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: Any*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     

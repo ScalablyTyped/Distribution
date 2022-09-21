@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-node", "PutObjectAclCommand")
 @js.native
-class PutObjectAclCommand protected ()
+open class PutObjectAclCommand protected ()
   extends typings.awsSdkClientS3Node.putObjectAclCommandMod.PutObjectAclCommand {
   def this(input: PutObjectAclInput) = this()
 }

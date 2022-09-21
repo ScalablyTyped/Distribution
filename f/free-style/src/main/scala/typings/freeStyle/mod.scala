@@ -13,35 +13,35 @@ object mod {
   
   @JSImport("free-style", "Cache")
   @js.native
-  class Cache[T /* <: Container[js.Any] */] () extends StObject {
+  open class Cache[T /* <: Container[Any] */] () extends StObject {
     def this(changes: Changes) = this()
     
-    /* private */ var _children: js.Any = js.native
+    /* private */ var _children: Any = js.native
     
-    /* private */ var _counters: js.Any = js.native
+    /* private */ var _counters: Any = js.native
     
-    /* private */ var _keys: js.Any = js.native
+    /* private */ var _keys: Any = js.native
     
     def add(style: T): Unit = js.native
     
     var changeId: Double = js.native
     
-    var changes: Changes = js.native
+    var changes: js.UndefOr[Changes] = js.native
     
-    def merge(cache: Cache[js.Any]): this.type = js.native
+    def merge(cache: Cache[Any]): this.type = js.native
     
     def remove(style: T): Unit = js.native
     
     var sheet: js.Array[String] = js.native
     
-    def unmerge(cache: Cache[js.Any]): this.type = js.native
+    def unmerge(cache: Cache[Any]): this.type = js.native
     
     def values(): js.Array[T] = js.native
   }
   
   @JSImport("free-style", "FreeStyle")
   @js.native
-  class FreeStyle protected ()
+  open class FreeStyle protected ()
     extends Cache[Rule | Style]
        with Container[FreeStyle] {
     def this(id: String) = this()
@@ -53,29 +53,25 @@ object mod {
     /* CompleteClass */
     var id: String = js.native
     
-    def registerCss(styles: Styles): Unit = js.native
-    
-    def registerHashRule(prefix: String, styles: Styles): String = js.native
-    
-    def registerKeyframes(keyframes: Styles): String = js.native
-    
-    def registerRule(rule: String, styles: Styles): Unit = js.native
-    
     def registerStyle(styles: Styles): String = js.native
   }
   
   @JSImport("free-style", "Rule")
   @js.native
-  class Rule protected ()
+  open class Rule protected ()
     extends Cache[Rule | Style]
        with Container[Rule] {
-    def this(rule: String, style: String, id: String) = this()
+    def this(rule: String, style: String, pid: String) = this()
     
     /* CompleteClass */
     override def getStyles(): String = js.native
     
     /* CompleteClass */
     var id: String = js.native
+    @JSName("id")
+    def id_MRule: String = js.native
+    
+    /* private */ var pid: Any = js.native
     
     var rule: String = js.native
     
@@ -84,32 +80,38 @@ object mod {
   
   @JSImport("free-style", "Selector")
   @js.native
-  class Selector protected ()
+  open class Selector protected ()
     extends StObject
        with Container[Selector] {
-    def this(selector: String, id: String) = this()
+    def this(selector: String) = this()
     
     /* CompleteClass */
     override def getStyles(): String = js.native
     
     /* CompleteClass */
     var id: String = js.native
+    @JSName("id")
+    def id_MSelector: String = js.native
     
     var selector: String = js.native
   }
   
   @JSImport("free-style", "Style")
   @js.native
-  class Style protected ()
+  open class Style protected ()
     extends Cache[Selector]
        with Container[Style] {
-    def this(style: String, id: String) = this()
+    def this(style: String, pid: String) = this()
     
     /* CompleteClass */
     override def getStyles(): String = js.native
     
     /* CompleteClass */
     var id: String = js.native
+    @JSName("id")
+    def id_MStyle: String = js.native
+    
+    /* private */ var pid: Any = js.native
     
     var style: String = js.native
   }
@@ -119,18 +121,18 @@ object mod {
   
   trait Changes extends StObject {
     
-    def add(style: Container[js.Any], index: Double): Unit
+    def add(style: Container[Any], index: Double): Unit
     
-    def change(style: Container[js.Any], oldIndex: Double, newIndex: Double): Unit
+    def change(style: Container[Any], oldIndex: Double, newIndex: Double): Unit
     
-    def remove(style: Container[js.Any], index: Double): Unit
+    def remove(style: Container[Any], index: Double): Unit
   }
   object Changes {
     
     inline def apply(
-      add: (Container[js.Any], Double) => Unit,
-      change: (Container[js.Any], Double, Double) => Unit,
-      remove: (Container[js.Any], Double) => Unit
+      add: (Container[Any], Double) => Unit,
+      change: (Container[Any], Double, Double) => Unit,
+      remove: (Container[Any], Double) => Unit
     ): Changes = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), change = js.Any.fromFunction3(change), remove = js.Any.fromFunction2(remove))
       __obj.asInstanceOf[Changes]
@@ -138,11 +140,11 @@ object mod {
     
     extension [Self <: Changes](x: Self) {
       
-      inline def setAdd(value: (Container[js.Any], Double) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (Container[Any], Double) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      inline def setChange(value: (Container[js.Any], Double, Double) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction3(value))
+      inline def setChange(value: (Container[Any], Double, Double) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction3(value))
       
-      inline def setRemove(value: (Container[js.Any], Double) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (Container[Any], Double) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
     }
   }
   
@@ -167,16 +169,17 @@ object mod {
     }
   }
   
-  type HashFunction = js.Function1[/* str */ String, String]
-  
-  type PropertyValue = Double | Boolean | String
+  type PropertyValue = js.UndefOr[Double | Boolean | String | Null]
   
   trait Styles
     extends StObject
-       with /* selector */ StringDictionary[js.UndefOr[Null | PropertyValue | js.Array[PropertyValue] | Styles]] {
+       with /* selector */ StringDictionary[PropertyValue | js.Array[PropertyValue] | Styles] {
     
     @JSName("$displayName")
     var $displayName: js.UndefOr[String] = js.undefined
+    
+    @JSName("$global")
+    var $global: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$unique")
     var $unique: js.UndefOr[Boolean] = js.undefined
@@ -193,6 +196,10 @@ object mod {
       inline def set$displayName(value: String): Self = StObject.set(x, "$displayName", value.asInstanceOf[js.Any])
       
       inline def set$displayNameUndefined: Self = StObject.set(x, "$displayName", js.undefined)
+      
+      inline def set$global(value: Boolean): Self = StObject.set(x, "$global", value.asInstanceOf[js.Any])
+      
+      inline def set$globalUndefined: Self = StObject.set(x, "$global", js.undefined)
       
       inline def set$unique(value: Boolean): Self = StObject.set(x, "$unique", value.asInstanceOf[js.Any])
       

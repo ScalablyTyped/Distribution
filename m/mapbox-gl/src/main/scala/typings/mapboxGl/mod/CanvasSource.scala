@@ -2,6 +2,7 @@ package typings.mapboxGl.mod
 
 import typings.mapboxGl.mapboxGlStrings.`raster-dem`
 import typings.mapboxGl.mapboxGlStrings.canvas
+import typings.mapboxGl.mapboxGlStrings.custom
 import typings.mapboxGl.mapboxGlStrings.geojson
 import typings.mapboxGl.mapboxGlStrings.image_
 import typings.mapboxGl.mapboxGlStrings.raster
@@ -14,10 +15,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "CanvasSource")
 @js.native
-class CanvasSource ()
+open class CanvasSource ()
   extends StObject
      with CanvasSourceRaw
-     with AnySourceImpl {
+     with _AnySourceImpl {
   
   /* CompleteClass */
   var canvas: String | HTMLCanvasElement = js.native
@@ -34,7 +35,7 @@ class CanvasSource ()
   def setCoordinates(coordinates: js.Array[js.Array[Double]]): this.type = js.native
   
   /* CompleteClass */
-  var `type`: vector | raster | `raster-dem` | geojson | image_ | video | canvas = js.native
+  var `type`: vector | raster | `raster-dem` | geojson | image_ | video | canvas | custom = js.native
   /* CompleteClass */
   @JSName("type")
   var type_CanvasSourceRaw: canvas = js.native

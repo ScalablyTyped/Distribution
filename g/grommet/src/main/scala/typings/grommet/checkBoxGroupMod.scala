@@ -1,44 +1,31 @@
 package typings.grommet
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.grommet.boxMod.BoxProps
 import typings.grommet.checkBoxMod.CheckBoxProps
-import typings.grommet.grommetStrings.checked
-import typings.grommet.utilsMod.Omit
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
-import typings.react.mod.DetailedHTMLProps
-import typings.react.mod.HTMLAttributes
-import typings.react.mod.InputHTMLAttributes
-import typings.std.HTMLDivElement
-import typings.std.HTMLInputElement
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkBoxGroupMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/CheckBoxGroup", "CheckBoxGroup")
   @js.native
-  class CheckBoxGroup protected ()
-    extends Component[
-          CheckBoxGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
-          ComponentState, 
-          js.Any
-        ] {
-    def this(props: CheckBoxGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
-    def this(
-      props: CheckBoxGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
-      context: js.Any
-    ) = this()
+  val CheckBoxGroup: FC[CheckBoxGroupExtendedProps] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onClick' | 'onChange'> ]: react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>[P]} */ trait CheckBoxGroupExtendedProps
+    extends StObject
+       with CheckBoxGroupProps
+       with BoxProps
+  object CheckBoxGroupExtendedProps {
+    
+    inline def apply(options: js.Array[CheckBoxType | String]): CheckBoxGroupExtendedProps = {
+      val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CheckBoxGroupExtendedProps]
+    }
   }
-  @JSImport("grommet/components/CheckBoxGroup", "CheckBoxGroup")
-  @js.native
-  val CheckBoxGroup: ComponentClass[
-    CheckBoxGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
-    ComponentState
-  ] = js.native
   
   trait CheckBoxGroupProps extends StObject {
     
@@ -50,7 +37,7 @@ object checkBoxGroupMod {
     
     var onChange: js.UndefOr[js.Function1[/* event */ js.UndefOr[OnChangeEvent], Unit]] = js.undefined
     
-    var options: js.Array[CheckBoxType]
+    var options: js.Array[CheckBoxType | String]
     
     var value: js.UndefOr[js.Array[Double | String]] = js.undefined
     
@@ -58,7 +45,7 @@ object checkBoxGroupMod {
   }
   object CheckBoxGroupProps {
     
-    inline def apply(options: js.Array[CheckBoxType]): CheckBoxGroupProps = {
+    inline def apply(options: js.Array[CheckBoxType | String]): CheckBoxGroupProps = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckBoxGroupProps]
     }
@@ -81,9 +68,9 @@ object checkBoxGroupMod {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOptions(value: js.Array[CheckBoxType]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[CheckBoxType | String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: CheckBoxType*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: (CheckBoxType | String)*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setValue(value: js.Array[Double | String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -93,14 +80,21 @@ object checkBoxGroupMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
-  type CheckBoxType = Omit[
-    CheckBoxProps & (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]), 
-    checked
-  ]
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof grommet.grommet/components/CheckBox.CheckBoxProps & react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'checked'> ]: grommet.grommet/components/CheckBox.CheckBoxProps & react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>[P]} */ trait CheckBoxType
+    extends StObject
+       with /* key */ StringDictionary[Any]
+  object CheckBoxType {
+    
+    inline def apply(): CheckBoxType = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CheckBoxType]
+    }
+  }
   
   trait OnChangeEvent extends StObject {
     

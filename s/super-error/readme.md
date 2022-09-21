@@ -1,7 +1,7 @@
 
 # Scala.js typings for super-error
 
-Typings are for version 2.2.1
+Typings are for version 2.5.1
 
 ## Library description:
 Easily subclass errors
@@ -10,10 +10,10 @@ Easily subclass errors
 | ------------------ | :-------------: |
 | Full name          | super-error |
 | Keywords           | error, class, subclass, inheritance |
-| # releases         | 6 |
-| # dependents       | 10 |
-| # downloads        | 251479 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 18491.333333333332 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/busbud/super-error)

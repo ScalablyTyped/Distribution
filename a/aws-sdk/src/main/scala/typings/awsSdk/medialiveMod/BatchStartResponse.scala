@@ -29,12 +29,12 @@ object BatchStartResponse {
     
     inline def setFailedUndefined: Self = StObject.set(x, "Failed", js.undefined)
     
-    inline def setFailedVarargs(value: BatchFailedResultModel*): Self = StObject.set(x, "Failed", js.Array(value :_*))
+    inline def setFailedVarargs(value: BatchFailedResultModel*): Self = StObject.set(x, "Failed", js.Array(value*))
     
     inline def setSuccessful(value: listOfBatchSuccessfulResultModel): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
     
     inline def setSuccessfulUndefined: Self = StObject.set(x, "Successful", js.undefined)
     
-    inline def setSuccessfulVarargs(value: BatchSuccessfulResultModel*): Self = StObject.set(x, "Successful", js.Array(value :_*))
+    inline def setSuccessfulVarargs(value: BatchSuccessfulResultModel*): Self = StObject.set(x, "Successful", js.Array(value*))
   }
 }

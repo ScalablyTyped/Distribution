@@ -20,7 +20,7 @@ trait OMathBorderBox extends StObject {
   
   var HideTop: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var StrikeBLTR: Boolean
   
@@ -43,7 +43,7 @@ object OMathBorderBox {
     HideLeft: Boolean,
     HideRight: Boolean,
     HideTop: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     StrikeBLTR: Boolean,
     StrikeH: Boolean,
     StrikeTLBR: Boolean,
@@ -71,7 +71,7 @@ object OMathBorderBox {
     
     inline def setHideTop(value: Boolean): Self = StObject.set(x, "HideTop", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setStrikeBLTR(value: Boolean): Self = StObject.set(x, "StrikeBLTR", value.asInstanceOf[js.Any])
     

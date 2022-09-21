@@ -25,6 +25,6 @@ object GooglePrivacyDlpV2TableOptions {
     
     inline def setIdentifyingFieldsUndefined: Self = StObject.set(x, "identifyingFields", js.undefined)
     
-    inline def setIdentifyingFieldsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "identifyingFields", js.Array(value :_*))
+    inline def setIdentifyingFieldsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "identifyingFields", js.Array(value*))
   }
 }

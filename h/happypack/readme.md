@@ -10,10 +10,10 @@ webpack speed booster, makes you happy!
 | ------------------ | :-------------: |
 | Full name          | happypack |
 | Keywords           | webpack, plugin, fast, speed, performance, compilation, transformer, loader, happiness, happy |
-| # releases         | 0 |
-| # dependents       | 378 |
-| # downloads        | 6639269 |
-| # stars            | 20 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 325693.6666666667 |
+| # stars            | 4245.0 |
 
 ## Links
 - [Homepage](https://github.com/amireh/happypack#readme)

@@ -16,8 +16,8 @@ trait ClassName_
 object ClassName_ {
   
   inline def apply(
-    appendToPropertyAndEscape: (String, js.Any, String) => Unit,
-    clone_ : StringDictionary[js.Any] => Node,
+    appendToPropertyAndEscape: (String, Any, String) => Unit,
+    clone_ : StringDictionary[Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
     next: () => Node,
     prev: () => Node,
@@ -25,8 +25,8 @@ object ClassName_ {
     rawSpaceBefore: String,
     remove: () => Node,
     replaceWith: /* repeated */ Node => Node,
-    setPropertyAndEscape: (String, js.Any, String) => Unit,
-    setPropertyWithoutEscape: (String, js.Any) => Unit,
+    setPropertyAndEscape: (String, Any, String) => Unit,
+    setPropertyWithoutEscape: (String, Any) => Unit,
     sourceIndex: Double,
     spaces: Spaces,
     value: String

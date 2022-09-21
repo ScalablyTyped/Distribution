@@ -29,6 +29,6 @@ object SessionsMiddleware {
     
     inline def setTransport(value: js.Array[SessionTransport]): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
-    inline def setTransportVarargs(value: SessionTransport*): Self = StObject.set(x, "transport", js.Array(value :_*))
+    inline def setTransportVarargs(value: SessionTransport*): Self = StObject.set(x, "transport", js.Array(value*))
   }
 }

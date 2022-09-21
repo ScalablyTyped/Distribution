@@ -4,16 +4,16 @@
 Typings are for version 3.3
 
 ## Library description:
-Mailjet NodeJS API client
+Mailjet API client
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | node-mailjet |
 | Keywords           | email, sms, node, mail, mailjet |
-| # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 1486249 |
-| # stars            | 2 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 242199.0 |
+| # stars            | 181.0 |
 
 ## Links
 - [Homepage](https://github.com/mailjet/mailjet-apiv3-nodejs#readme)

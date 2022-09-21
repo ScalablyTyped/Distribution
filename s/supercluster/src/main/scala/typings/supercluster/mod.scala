@@ -18,7 +18,7 @@ object mod {
     */
   @JSImport("supercluster", JSImport.Namespace)
   @js.native
-  class ^[P /* <: GeoJsonProperties */, C /* <: GeoJsonProperties */] ()
+  open class ^[P /* <: GeoJsonProperties */, C /* <: GeoJsonProperties */] ()
     extends StObject
        with Supercluster[P, C] {
     def this(options: Options[P, C]) = this()
@@ -28,7 +28,7 @@ object mod {
     * Default properties type, allowing any properties.
     * Try to avoid this for better typesafety by using proper types.
     */
-  type AnyProps = StringDictionary[js.Any]
+  type AnyProps = StringDictionary[Any]
   
   type ClusterFeature[C] = PointFeature[ClusterProperties & C]
   
@@ -83,6 +83,13 @@ object mod {
     var extent: js.UndefOr[Double] = js.undefined
     
     /**
+      * Whether to generate ids for input features in vector tiles.
+      *
+      * @default false
+      */
+    var generateId: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Whether timing info should be logged.
       *
       * @default false
@@ -103,6 +110,13 @@ object mod {
       * @default 16
       */
     var maxZoom: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Minimum number of points to form a cluster.
+      *
+      * @default 2
+      */
+    var minPoints: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum zoom level at which clusters are generated.
@@ -146,6 +160,10 @@ object mod {
       
       inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
+      inline def setGenerateId(value: Boolean): Self = StObject.set(x, "generateId", value.asInstanceOf[js.Any])
+      
+      inline def setGenerateIdUndefined: Self = StObject.set(x, "generateId", js.undefined)
+      
       inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
@@ -157,6 +175,10 @@ object mod {
       inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
       
       inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+      
+      inline def setMinPoints(value: Double): Self = StObject.set(x, "minPoints", value.asInstanceOf[js.Any])
+      
+      inline def setMinPointsUndefined: Self = StObject.set(x, "minPoints", js.undefined)
       
       inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
       
@@ -257,7 +279,7 @@ object mod {
       
       inline def setFeatures(value: js.Array[TileFeature[C, P]]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      inline def setFeaturesVarargs(value: (TileFeature[C, P])*): Self = StObject.set(x, "features", js.Array(value :_*))
+      inline def setFeaturesVarargs(value: (TileFeature[C, P])*): Self = StObject.set(x, "features", js.Array(value*))
     }
   }
   
@@ -281,7 +303,7 @@ object mod {
       
       inline def setGeometry(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
-      inline def setGeometryVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "geometry", js.Array(value :_*))
+      inline def setGeometryVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "geometry", js.Array(value*))
       
       inline def setTags(value: (ClusterProperties & C) | P): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       

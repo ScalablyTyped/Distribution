@@ -18,89 +18,89 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Document extends StObject {
   
-  def addEventListener(`type`: String, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
-  def addEventListener(`type`: String, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def addEventListener(`type`: String, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_backbutton(`type`: backbutton, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_backbutton(`type`: backbutton, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_backbutton(`type`: backbutton, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def addEventListener_backbutton(`type`: backbutton, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_deviceready(`type`: deviceready, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_deviceready(`type`: deviceready, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_deviceready(`type`: deviceready, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def addEventListener_deviceready(`type`: deviceready, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_endcallbutton(`type`: endcallbutton, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_endcallbutton(`type`: endcallbutton, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_endcallbutton(`type`: endcallbutton, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def addEventListener_endcallbutton(`type`: endcallbutton, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_menubutton(`type`: menubutton, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_menubutton(`type`: menubutton, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_menubutton(`type`: menubutton, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def addEventListener_menubutton(`type`: menubutton, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_pause(`type`: pause, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_pause(`type`: pause, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_pause(`type`: pause, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def addEventListener_pause(`type`: pause, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_resume(`type`: resume, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_resume(`type`: resume, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_resume(`type`: resume, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def addEventListener_resume(`type`: resume, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_searchbutton(`type`: searchbutton, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_searchbutton(`type`: searchbutton, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_searchbutton(`type`: searchbutton, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def addEventListener_searchbutton(`type`: searchbutton, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_startcallbutton(`type`: startcallbutton, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_startcallbutton(`type`: startcallbutton, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_startcallbutton(`type`: startcallbutton, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def addEventListener_startcallbutton(`type`: startcallbutton, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_volumedownbutton(`type`: volumedownbutton, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_volumedownbutton(`type`: volumedownbutton, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_volumedownbutton(`type`: volumedownbutton, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def addEventListener_volumedownbutton(`type`: volumedownbutton, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_volumeupbutton(`type`: volumeupbutton, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_volumeupbutton(`type`: volumeupbutton, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_volumeupbutton(`type`: volumeupbutton, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def addEventListener_volumeupbutton(`type`: volumeupbutton, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   
-  def removeEventListener(`type`: String, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
-  def removeEventListener(`type`: String, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def removeEventListener(`type`: String, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_backbutton(`type`: backbutton, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_backbutton(`type`: backbutton, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_backbutton(`type`: backbutton, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def removeEventListener_backbutton(`type`: backbutton, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_deviceready(`type`: deviceready, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_deviceready(`type`: deviceready, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_deviceready(`type`: deviceready, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def removeEventListener_deviceready(`type`: deviceready, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_endcallbutton(`type`: endcallbutton, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_endcallbutton(`type`: endcallbutton, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_endcallbutton(`type`: endcallbutton, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def removeEventListener_endcallbutton(`type`: endcallbutton, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_menubutton(`type`: menubutton, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_menubutton(`type`: menubutton, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_menubutton(`type`: menubutton, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def removeEventListener_menubutton(`type`: menubutton, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_pause(`type`: pause, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_pause(`type`: pause, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_pause(`type`: pause, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def removeEventListener_pause(`type`: pause, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_resume(`type`: resume, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_resume(`type`: resume, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_resume(`type`: resume, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def removeEventListener_resume(`type`: resume, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_searchbutton(`type`: searchbutton, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_searchbutton(`type`: searchbutton, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_searchbutton(`type`: searchbutton, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def removeEventListener_searchbutton(`type`: searchbutton, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_startcallbutton(`type`: startcallbutton, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_startcallbutton(`type`: startcallbutton, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_startcallbutton(`type`: startcallbutton, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def removeEventListener_startcallbutton(`type`: startcallbutton, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_volumedownbutton(`type`: volumedownbutton, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_volumedownbutton(`type`: volumedownbutton, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_volumedownbutton(`type`: volumedownbutton, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def removeEventListener_volumedownbutton(`type`: volumedownbutton, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_volumeupbutton(`type`: volumeupbutton, listener: js.Function1[/* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_volumeupbutton(`type`: volumeupbutton, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_volumeupbutton(`type`: volumeupbutton, listener: js.Function1[/* ev */ Event, js.Any], useCapture: Boolean): Unit = js.native
+  def removeEventListener_volumeupbutton(`type`: volumeupbutton, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
 }

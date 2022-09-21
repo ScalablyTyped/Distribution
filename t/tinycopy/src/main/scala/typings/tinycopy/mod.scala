@@ -1,7 +1,6 @@
 package typings.tinycopy
 
 import typings.std.Element
-import typings.std.Error
 import typings.std.NodeListOf
 import typings.tinycopy.tinycopyStrings.error
 import typings.tinycopy.tinycopyStrings.success
@@ -13,7 +12,7 @@ object mod {
   
   @JSImport("tinycopy", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with TinyCopy {
     def this(trigger: Element, target: String) = this()
@@ -29,16 +28,16 @@ object mod {
     
     inline def exec(
       value: String,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* data */ js.UndefOr[String], Unit]
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* data */ js.UndefOr[String], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @js.native
   trait TinyCopy extends StObject {
     
-    def on(`type`: String, action: js.Function1[/* e */ String | Error, Unit]): this.type = js.native
+    def on(`type`: String, action: js.Function1[/* e */ String | js.Error, Unit]): this.type = js.native
     @JSName("on")
-    def on_error(`type`: error, action: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(`type`: error, action: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_success(`type`: success, action: js.Function1[/* data */ String, Unit]): this.type = js.native
   }

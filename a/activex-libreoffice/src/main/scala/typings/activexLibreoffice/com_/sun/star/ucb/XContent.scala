@@ -64,7 +64,7 @@ object XContent {
     addContentEventListener: XContentEventListener => Unit,
     getContentType: () => String,
     getIdentifier: () => XContentIdentifier,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeContentEventListener: XContentEventListener => Unit
   ): XContent = {

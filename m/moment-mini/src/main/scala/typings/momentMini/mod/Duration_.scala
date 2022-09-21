@@ -43,7 +43,12 @@ trait Duration_
   def hours(): Double = js.native
   
   def humanize(): String = js.native
-  def humanize(withSuffix: Boolean): String = js.native
+  def humanize(argThresholds: argThresholdOpts): String = js.native
+  def humanize(argWithSuffix: Boolean): String = js.native
+  def humanize(argWithSuffix: Boolean, argThresholds: argThresholdOpts): String = js.native
+  def humanize(argWithSuffix: Unit, argThresholds: argThresholdOpts): String = js.native
+  
+  def isValid(): Boolean = js.native
   
   /**
     * @deprecated since version 2.8.0

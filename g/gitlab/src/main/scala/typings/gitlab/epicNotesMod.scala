@@ -10,7 +10,7 @@ object epicNotesMod {
   
   @JSImport("gitlab/dist/types/core/services/EpicNotes", "EpicNotes")
   @js.native
-  class EpicNotes protected () extends ResourceNotes {
+  open class EpicNotes protected () extends ResourceNotes {
     def this(options: BaseServiceOptions) = this()
   }
 }

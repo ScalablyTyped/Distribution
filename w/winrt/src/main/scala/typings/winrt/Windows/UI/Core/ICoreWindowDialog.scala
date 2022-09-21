@@ -27,7 +27,7 @@ trait ICoreWindowDialog extends StObject {
   
   var minSize: Size
   
-  var onshowing: js.Any
+  var onshowing: Any
   
   def showAsync(): IAsyncOperation[IUICommand]
   
@@ -43,7 +43,7 @@ object ICoreWindowDialog {
     isInteractionDelayed: Double,
     maxSize: Size,
     minSize: Size,
-    onshowing: js.Any,
+    onshowing: Any,
     showAsync: () => IAsyncOperation[IUICommand],
     title: String
   ): ICoreWindowDialog = {
@@ -67,7 +67,7 @@ object ICoreWindowDialog {
     
     inline def setMinSize(value: Size): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
-    inline def setOnshowing(value: js.Any): Self = StObject.set(x, "onshowing", value.asInstanceOf[js.Any])
+    inline def setOnshowing(value: Any): Self = StObject.set(x, "onshowing", value.asInstanceOf[js.Any])
     
     inline def setShowAsync(value: () => IAsyncOperation[IUICommand]): Self = StObject.set(x, "showAsync", js.Any.fromFunction0(value))
     

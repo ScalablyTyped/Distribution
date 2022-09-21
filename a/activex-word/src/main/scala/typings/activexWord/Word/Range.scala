@@ -35,7 +35,7 @@ trait Range extends StObject {
   
   val Cells: typings.activexWord.Word.Cells = js.native
   
-  val CharacterStyle: js.Any = js.native
+  val CharacterStyle: Any = js.native
   
   var CharacterWidth: WdCharacterWidth = js.native
   
@@ -44,18 +44,18 @@ trait Range extends StObject {
   def CheckGrammar(): Unit = js.native
   
   def CheckSpelling(
-    CustomDictionary: js.UndefOr[js.Any],
-    IgnoreUppercase: js.UndefOr[js.Any],
-    AlwaysSuggest: js.UndefOr[js.Any],
-    CustomDictionary2: js.UndefOr[js.Any],
-    CustomDictionary3: js.UndefOr[js.Any],
-    CustomDictionary4: js.UndefOr[js.Any],
-    CustomDictionary5: js.UndefOr[js.Any],
-    CustomDictionary6: js.UndefOr[js.Any],
-    CustomDictionary7: js.UndefOr[js.Any],
-    CustomDictionary8: js.UndefOr[js.Any],
-    CustomDictionary9: js.UndefOr[js.Any],
-    CustomDictionary10: js.UndefOr[js.Any]
+    CustomDictionary: js.UndefOr[Any],
+    IgnoreUppercase: js.UndefOr[Any],
+    AlwaysSuggest: js.UndefOr[Any],
+    CustomDictionary2: js.UndefOr[Any],
+    CustomDictionary3: js.UndefOr[Any],
+    CustomDictionary4: js.UndefOr[Any],
+    CustomDictionary5: js.UndefOr[Any],
+    CustomDictionary6: js.UndefOr[Any],
+    CustomDictionary7: js.UndefOr[Any],
+    CustomDictionary8: js.UndefOr[Any],
+    CustomDictionary9: js.UndefOr[Any],
+    CustomDictionary10: js.UndefOr[Any]
   ): Unit = js.native
   
   def CheckSynonyms(): Unit = js.native
@@ -77,203 +77,168 @@ trait Range extends StObject {
   val ContentControls: typings.activexWord.Word.ContentControls = js.native
   
   def ConvertHangulAndHanja(): Unit = js.native
-  def ConvertHangulAndHanja(ConversionsMode: js.Any): Unit = js.native
-  def ConvertHangulAndHanja(ConversionsMode: js.Any, FastConversion: js.Any): Unit = js.native
-  def ConvertHangulAndHanja(ConversionsMode: js.Any, FastConversion: js.Any, CheckHangulEnding: js.Any): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: Any): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: Any, FastConversion: Any): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: Any, FastConversion: Any, CheckHangulEnding: Any): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: Any, FastConversion: Any, CheckHangulEnding: Any, EnableRecentOrdering: Any): Unit = js.native
   def ConvertHangulAndHanja(
-    ConversionsMode: js.Any,
-    FastConversion: js.Any,
-    CheckHangulEnding: js.Any,
-    EnableRecentOrdering: js.Any
+    ConversionsMode: Any,
+    FastConversion: Any,
+    CheckHangulEnding: Any,
+    EnableRecentOrdering: Any,
+    CustomDictionary: Any
   ): Unit = js.native
   def ConvertHangulAndHanja(
-    ConversionsMode: js.Any,
-    FastConversion: js.Any,
-    CheckHangulEnding: js.Any,
-    EnableRecentOrdering: js.Any,
-    CustomDictionary: js.Any
-  ): Unit = js.native
-  def ConvertHangulAndHanja(
-    ConversionsMode: js.Any,
-    FastConversion: js.Any,
-    CheckHangulEnding: js.Any,
+    ConversionsMode: Any,
+    FastConversion: Any,
+    CheckHangulEnding: Any,
     EnableRecentOrdering: Unit,
-    CustomDictionary: js.Any
+    CustomDictionary: Any
   ): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: Any, FastConversion: Any, CheckHangulEnding: Unit, EnableRecentOrdering: Any): Unit = js.native
   def ConvertHangulAndHanja(
-    ConversionsMode: js.Any,
-    FastConversion: js.Any,
+    ConversionsMode: Any,
+    FastConversion: Any,
     CheckHangulEnding: Unit,
-    EnableRecentOrdering: js.Any
+    EnableRecentOrdering: Any,
+    CustomDictionary: Any
   ): Unit = js.native
   def ConvertHangulAndHanja(
-    ConversionsMode: js.Any,
-    FastConversion: js.Any,
-    CheckHangulEnding: Unit,
-    EnableRecentOrdering: js.Any,
-    CustomDictionary: js.Any
-  ): Unit = js.native
-  def ConvertHangulAndHanja(
-    ConversionsMode: js.Any,
-    FastConversion: js.Any,
+    ConversionsMode: Any,
+    FastConversion: Any,
     CheckHangulEnding: Unit,
     EnableRecentOrdering: Unit,
-    CustomDictionary: js.Any
+    CustomDictionary: Any
   ): Unit = js.native
-  def ConvertHangulAndHanja(ConversionsMode: js.Any, FastConversion: Unit, CheckHangulEnding: js.Any): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: Any, FastConversion: Unit, CheckHangulEnding: Any): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: Any, FastConversion: Unit, CheckHangulEnding: Any, EnableRecentOrdering: Any): Unit = js.native
   def ConvertHangulAndHanja(
-    ConversionsMode: js.Any,
+    ConversionsMode: Any,
     FastConversion: Unit,
-    CheckHangulEnding: js.Any,
-    EnableRecentOrdering: js.Any
-  ): Unit = js.native
-  def ConvertHangulAndHanja(
-    ConversionsMode: js.Any,
-    FastConversion: Unit,
-    CheckHangulEnding: js.Any,
-    EnableRecentOrdering: js.Any,
-    CustomDictionary: js.Any
+    CheckHangulEnding: Any,
+    EnableRecentOrdering: Any,
+    CustomDictionary: Any
   ): Unit = js.native
   def ConvertHangulAndHanja(
-    ConversionsMode: js.Any,
+    ConversionsMode: Any,
     FastConversion: Unit,
-    CheckHangulEnding: js.Any,
+    CheckHangulEnding: Any,
     EnableRecentOrdering: Unit,
-    CustomDictionary: js.Any
+    CustomDictionary: Any
   ): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: Any, FastConversion: Unit, CheckHangulEnding: Unit, EnableRecentOrdering: Any): Unit = js.native
   def ConvertHangulAndHanja(
-    ConversionsMode: js.Any,
+    ConversionsMode: Any,
     FastConversion: Unit,
     CheckHangulEnding: Unit,
-    EnableRecentOrdering: js.Any
+    EnableRecentOrdering: Any,
+    CustomDictionary: Any
   ): Unit = js.native
   def ConvertHangulAndHanja(
-    ConversionsMode: js.Any,
-    FastConversion: Unit,
-    CheckHangulEnding: Unit,
-    EnableRecentOrdering: js.Any,
-    CustomDictionary: js.Any
-  ): Unit = js.native
-  def ConvertHangulAndHanja(
-    ConversionsMode: js.Any,
+    ConversionsMode: Any,
     FastConversion: Unit,
     CheckHangulEnding: Unit,
     EnableRecentOrdering: Unit,
-    CustomDictionary: js.Any
+    CustomDictionary: Any
   ): Unit = js.native
-  def ConvertHangulAndHanja(ConversionsMode: Unit, FastConversion: js.Any): Unit = js.native
-  def ConvertHangulAndHanja(ConversionsMode: Unit, FastConversion: js.Any, CheckHangulEnding: js.Any): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: Unit, FastConversion: Any): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: Unit, FastConversion: Any, CheckHangulEnding: Any): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: Unit, FastConversion: Any, CheckHangulEnding: Any, EnableRecentOrdering: Any): Unit = js.native
   def ConvertHangulAndHanja(
     ConversionsMode: Unit,
-    FastConversion: js.Any,
-    CheckHangulEnding: js.Any,
-    EnableRecentOrdering: js.Any
-  ): Unit = js.native
-  def ConvertHangulAndHanja(
-    ConversionsMode: Unit,
-    FastConversion: js.Any,
-    CheckHangulEnding: js.Any,
-    EnableRecentOrdering: js.Any,
-    CustomDictionary: js.Any
+    FastConversion: Any,
+    CheckHangulEnding: Any,
+    EnableRecentOrdering: Any,
+    CustomDictionary: Any
   ): Unit = js.native
   def ConvertHangulAndHanja(
     ConversionsMode: Unit,
-    FastConversion: js.Any,
-    CheckHangulEnding: js.Any,
+    FastConversion: Any,
+    CheckHangulEnding: Any,
     EnableRecentOrdering: Unit,
-    CustomDictionary: js.Any
+    CustomDictionary: Any
   ): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: Unit, FastConversion: Any, CheckHangulEnding: Unit, EnableRecentOrdering: Any): Unit = js.native
   def ConvertHangulAndHanja(
     ConversionsMode: Unit,
-    FastConversion: js.Any,
+    FastConversion: Any,
     CheckHangulEnding: Unit,
-    EnableRecentOrdering: js.Any
+    EnableRecentOrdering: Any,
+    CustomDictionary: Any
   ): Unit = js.native
   def ConvertHangulAndHanja(
     ConversionsMode: Unit,
-    FastConversion: js.Any,
-    CheckHangulEnding: Unit,
-    EnableRecentOrdering: js.Any,
-    CustomDictionary: js.Any
-  ): Unit = js.native
-  def ConvertHangulAndHanja(
-    ConversionsMode: Unit,
-    FastConversion: js.Any,
+    FastConversion: Any,
     CheckHangulEnding: Unit,
     EnableRecentOrdering: Unit,
-    CustomDictionary: js.Any
+    CustomDictionary: Any
   ): Unit = js.native
-  def ConvertHangulAndHanja(ConversionsMode: Unit, FastConversion: Unit, CheckHangulEnding: js.Any): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: Unit, FastConversion: Unit, CheckHangulEnding: Any): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: Unit, FastConversion: Unit, CheckHangulEnding: Any, EnableRecentOrdering: Any): Unit = js.native
   def ConvertHangulAndHanja(
     ConversionsMode: Unit,
     FastConversion: Unit,
-    CheckHangulEnding: js.Any,
-    EnableRecentOrdering: js.Any
-  ): Unit = js.native
-  def ConvertHangulAndHanja(
-    ConversionsMode: Unit,
-    FastConversion: Unit,
-    CheckHangulEnding: js.Any,
-    EnableRecentOrdering: js.Any,
-    CustomDictionary: js.Any
+    CheckHangulEnding: Any,
+    EnableRecentOrdering: Any,
+    CustomDictionary: Any
   ): Unit = js.native
   def ConvertHangulAndHanja(
     ConversionsMode: Unit,
     FastConversion: Unit,
-    CheckHangulEnding: js.Any,
+    CheckHangulEnding: Any,
     EnableRecentOrdering: Unit,
-    CustomDictionary: js.Any
+    CustomDictionary: Any
   ): Unit = js.native
-  def ConvertHangulAndHanja(ConversionsMode: Unit, FastConversion: Unit, CheckHangulEnding: Unit, EnableRecentOrdering: js.Any): Unit = js.native
+  def ConvertHangulAndHanja(ConversionsMode: Unit, FastConversion: Unit, CheckHangulEnding: Unit, EnableRecentOrdering: Any): Unit = js.native
   def ConvertHangulAndHanja(
     ConversionsMode: Unit,
     FastConversion: Unit,
     CheckHangulEnding: Unit,
-    EnableRecentOrdering: js.Any,
-    CustomDictionary: js.Any
+    EnableRecentOrdering: Any,
+    CustomDictionary: Any
   ): Unit = js.native
   def ConvertHangulAndHanja(
     ConversionsMode: Unit,
     FastConversion: Unit,
     CheckHangulEnding: Unit,
     EnableRecentOrdering: Unit,
-    CustomDictionary: js.Any
+    CustomDictionary: Any
   ): Unit = js.native
   
   def ConvertToTable(
-    Separator: js.UndefOr[js.Any],
-    NumRows: js.UndefOr[js.Any],
-    NumColumns: js.UndefOr[js.Any],
-    InitialColumnWidth: js.UndefOr[js.Any],
-    Format: js.UndefOr[js.Any],
-    ApplyBorders: js.UndefOr[js.Any],
-    ApplyShading: js.UndefOr[js.Any],
-    ApplyFont: js.UndefOr[js.Any],
-    ApplyColor: js.UndefOr[js.Any],
-    ApplyHeadingRows: js.UndefOr[js.Any],
-    ApplyLastRow: js.UndefOr[js.Any],
-    ApplyFirstColumn: js.UndefOr[js.Any],
-    ApplyLastColumn: js.UndefOr[js.Any],
-    AutoFit: js.UndefOr[js.Any],
-    AutoFitBehavior: js.UndefOr[js.Any],
-    DefaultTableBehavior: js.UndefOr[js.Any]
+    Separator: js.UndefOr[Any],
+    NumRows: js.UndefOr[Any],
+    NumColumns: js.UndefOr[Any],
+    InitialColumnWidth: js.UndefOr[Any],
+    Format: js.UndefOr[Any],
+    ApplyBorders: js.UndefOr[Any],
+    ApplyShading: js.UndefOr[Any],
+    ApplyFont: js.UndefOr[Any],
+    ApplyColor: js.UndefOr[Any],
+    ApplyHeadingRows: js.UndefOr[Any],
+    ApplyLastRow: js.UndefOr[Any],
+    ApplyFirstColumn: js.UndefOr[Any],
+    ApplyLastColumn: js.UndefOr[Any],
+    AutoFit: js.UndefOr[Any],
+    AutoFitBehavior: js.UndefOr[Any],
+    DefaultTableBehavior: js.UndefOr[Any]
   ): Table = js.native
   
   def ConvertToTableOld(
-    Separator: js.UndefOr[js.Any],
-    NumRows: js.UndefOr[js.Any],
-    NumColumns: js.UndefOr[js.Any],
-    InitialColumnWidth: js.UndefOr[js.Any],
-    Format: js.UndefOr[js.Any],
-    ApplyBorders: js.UndefOr[js.Any],
-    ApplyShading: js.UndefOr[js.Any],
-    ApplyFont: js.UndefOr[js.Any],
-    ApplyColor: js.UndefOr[js.Any],
-    ApplyHeadingRows: js.UndefOr[js.Any],
-    ApplyLastRow: js.UndefOr[js.Any],
-    ApplyFirstColumn: js.UndefOr[js.Any],
-    ApplyLastColumn: js.UndefOr[js.Any],
-    AutoFit: js.UndefOr[js.Any]
+    Separator: js.UndefOr[Any],
+    NumRows: js.UndefOr[Any],
+    NumColumns: js.UndefOr[Any],
+    InitialColumnWidth: js.UndefOr[Any],
+    Format: js.UndefOr[Any],
+    ApplyBorders: js.UndefOr[Any],
+    ApplyShading: js.UndefOr[Any],
+    ApplyFont: js.UndefOr[Any],
+    ApplyColor: js.UndefOr[Any],
+    ApplyHeadingRows: js.UndefOr[Any],
+    ApplyLastRow: js.UndefOr[Any],
+    ApplyFirstColumn: js.UndefOr[Any],
+    ApplyLastColumn: js.UndefOr[Any],
+    AutoFit: js.UndefOr[Any]
   ): Table = js.native
   
   def Copy(): Unit = js.native
@@ -281,21 +246,21 @@ trait Range extends StObject {
   def CopyAsPicture(): Unit = js.native
   
   def CreatePublisher(): Unit = js.native
-  def CreatePublisher(Edition: js.Any): Unit = js.native
-  def CreatePublisher(Edition: js.Any, ContainsPICT: js.Any): Unit = js.native
-  def CreatePublisher(Edition: js.Any, ContainsPICT: js.Any, ContainsRTF: js.Any): Unit = js.native
-  def CreatePublisher(Edition: js.Any, ContainsPICT: js.Any, ContainsRTF: js.Any, ContainsText: js.Any): Unit = js.native
-  def CreatePublisher(Edition: js.Any, ContainsPICT: js.Any, ContainsRTF: Unit, ContainsText: js.Any): Unit = js.native
-  def CreatePublisher(Edition: js.Any, ContainsPICT: Unit, ContainsRTF: js.Any): Unit = js.native
-  def CreatePublisher(Edition: js.Any, ContainsPICT: Unit, ContainsRTF: js.Any, ContainsText: js.Any): Unit = js.native
-  def CreatePublisher(Edition: js.Any, ContainsPICT: Unit, ContainsRTF: Unit, ContainsText: js.Any): Unit = js.native
-  def CreatePublisher(Edition: Unit, ContainsPICT: js.Any): Unit = js.native
-  def CreatePublisher(Edition: Unit, ContainsPICT: js.Any, ContainsRTF: js.Any): Unit = js.native
-  def CreatePublisher(Edition: Unit, ContainsPICT: js.Any, ContainsRTF: js.Any, ContainsText: js.Any): Unit = js.native
-  def CreatePublisher(Edition: Unit, ContainsPICT: js.Any, ContainsRTF: Unit, ContainsText: js.Any): Unit = js.native
-  def CreatePublisher(Edition: Unit, ContainsPICT: Unit, ContainsRTF: js.Any): Unit = js.native
-  def CreatePublisher(Edition: Unit, ContainsPICT: Unit, ContainsRTF: js.Any, ContainsText: js.Any): Unit = js.native
-  def CreatePublisher(Edition: Unit, ContainsPICT: Unit, ContainsRTF: Unit, ContainsText: js.Any): Unit = js.native
+  def CreatePublisher(Edition: Any): Unit = js.native
+  def CreatePublisher(Edition: Any, ContainsPICT: Any): Unit = js.native
+  def CreatePublisher(Edition: Any, ContainsPICT: Any, ContainsRTF: Any): Unit = js.native
+  def CreatePublisher(Edition: Any, ContainsPICT: Any, ContainsRTF: Any, ContainsText: Any): Unit = js.native
+  def CreatePublisher(Edition: Any, ContainsPICT: Any, ContainsRTF: Unit, ContainsText: Any): Unit = js.native
+  def CreatePublisher(Edition: Any, ContainsPICT: Unit, ContainsRTF: Any): Unit = js.native
+  def CreatePublisher(Edition: Any, ContainsPICT: Unit, ContainsRTF: Any, ContainsText: Any): Unit = js.native
+  def CreatePublisher(Edition: Any, ContainsPICT: Unit, ContainsRTF: Unit, ContainsText: Any): Unit = js.native
+  def CreatePublisher(Edition: Unit, ContainsPICT: Any): Unit = js.native
+  def CreatePublisher(Edition: Unit, ContainsPICT: Any, ContainsRTF: Any): Unit = js.native
+  def CreatePublisher(Edition: Unit, ContainsPICT: Any, ContainsRTF: Any, ContainsText: Any): Unit = js.native
+  def CreatePublisher(Edition: Unit, ContainsPICT: Any, ContainsRTF: Unit, ContainsText: Any): Unit = js.native
+  def CreatePublisher(Edition: Unit, ContainsPICT: Unit, ContainsRTF: Any): Unit = js.native
+  def CreatePublisher(Edition: Unit, ContainsPICT: Unit, ContainsRTF: Any, ContainsText: Any): Unit = js.native
+  def CreatePublisher(Edition: Unit, ContainsPICT: Unit, ContainsRTF: Unit, ContainsText: Any): Unit = js.native
   
   val Creator: Double = js.native
   
@@ -321,18 +286,18 @@ trait Range extends StObject {
   var End: Double = js.native
   
   def EndOf(): Double = js.native
-  def EndOf(Unit: js.Any): Double = js.native
-  def EndOf(Unit: js.Any, Extend: js.Any): Double = js.native
-  def EndOf(Unit: Unit, Extend: js.Any): Double = js.native
+  def EndOf(Unit: Any): Double = js.native
+  def EndOf(Unit: Any, Extend: Any): Double = js.native
+  def EndOf(Unit: Unit, Extend: Any): Double = js.native
   
   val EndnoteOptions: typings.activexWord.Word.EndnoteOptions = js.native
   
   val Endnotes: typings.activexWord.Word.Endnotes = js.native
   
-  val EnhMetaFileBits: js.Any = js.native
+  val EnhMetaFileBits: Any = js.native
   
   def Expand(): Double = js.native
-  def Expand(Unit: js.Any): Double = js.native
+  def Expand(Unit: Any): Double = js.native
   
   /**
     * @param boolean [OpenAfterExport=false]
@@ -359,7 +324,7 @@ trait Range extends StObject {
     DocStructureTags: js.UndefOr[Boolean],
     BitmapMissingFonts: js.UndefOr[Boolean],
     UseISO19005_1: js.UndefOr[Boolean],
-    FixedFormatExtClassPtr: js.UndefOr[js.Any]
+    FixedFormatExtClassPtr: js.UndefOr[Any]
   ): Unit = js.native
   
   def ExportFragment(FileName: String, Format: WdSaveFormat): Unit = js.native
@@ -383,40 +348,40 @@ trait Range extends StObject {
   val Frames: typings.activexWord.Word.Frames = js.native
   
   def GetSpellingSuggestions(
-    CustomDictionary: js.UndefOr[js.Any],
-    IgnoreUppercase: js.UndefOr[js.Any],
-    MainDictionary: js.UndefOr[js.Any],
-    SuggestionMode: js.UndefOr[js.Any],
-    CustomDictionary2: js.UndefOr[js.Any],
-    CustomDictionary3: js.UndefOr[js.Any],
-    CustomDictionary4: js.UndefOr[js.Any],
-    CustomDictionary5: js.UndefOr[js.Any],
-    CustomDictionary6: js.UndefOr[js.Any],
-    CustomDictionary7: js.UndefOr[js.Any],
-    CustomDictionary8: js.UndefOr[js.Any],
-    CustomDictionary9: js.UndefOr[js.Any],
-    CustomDictionary10: js.UndefOr[js.Any]
+    CustomDictionary: js.UndefOr[Any],
+    IgnoreUppercase: js.UndefOr[Any],
+    MainDictionary: js.UndefOr[Any],
+    SuggestionMode: js.UndefOr[Any],
+    CustomDictionary2: js.UndefOr[Any],
+    CustomDictionary3: js.UndefOr[Any],
+    CustomDictionary4: js.UndefOr[Any],
+    CustomDictionary5: js.UndefOr[Any],
+    CustomDictionary6: js.UndefOr[Any],
+    CustomDictionary7: js.UndefOr[Any],
+    CustomDictionary8: js.UndefOr[Any],
+    CustomDictionary9: js.UndefOr[Any],
+    CustomDictionary10: js.UndefOr[Any]
   ): SpellingSuggestions = js.native
   
   def GoTo(): Range = js.native
-  def GoTo(What: js.Any): Range = js.native
-  def GoTo(What: js.Any, Which: js.Any): Range = js.native
-  def GoTo(What: js.Any, Which: js.Any, Count: js.Any): Range = js.native
-  def GoTo(What: js.Any, Which: js.Any, Count: js.Any, Name: js.Any): Range = js.native
-  def GoTo(What: js.Any, Which: js.Any, Count: Unit, Name: js.Any): Range = js.native
-  def GoTo(What: js.Any, Which: Unit, Count: js.Any): Range = js.native
-  def GoTo(What: js.Any, Which: Unit, Count: js.Any, Name: js.Any): Range = js.native
-  def GoTo(What: js.Any, Which: Unit, Count: Unit, Name: js.Any): Range = js.native
-  def GoTo(What: Unit, Which: js.Any): Range = js.native
-  def GoTo(What: Unit, Which: js.Any, Count: js.Any): Range = js.native
-  def GoTo(What: Unit, Which: js.Any, Count: js.Any, Name: js.Any): Range = js.native
-  def GoTo(What: Unit, Which: js.Any, Count: Unit, Name: js.Any): Range = js.native
-  def GoTo(What: Unit, Which: Unit, Count: js.Any): Range = js.native
-  def GoTo(What: Unit, Which: Unit, Count: js.Any, Name: js.Any): Range = js.native
-  def GoTo(What: Unit, Which: Unit, Count: Unit, Name: js.Any): Range = js.native
+  def GoTo(What: Any): Range = js.native
+  def GoTo(What: Any, Which: Any): Range = js.native
+  def GoTo(What: Any, Which: Any, Count: Any): Range = js.native
+  def GoTo(What: Any, Which: Any, Count: Any, Name: Any): Range = js.native
+  def GoTo(What: Any, Which: Any, Count: Unit, Name: Any): Range = js.native
+  def GoTo(What: Any, Which: Unit, Count: Any): Range = js.native
+  def GoTo(What: Any, Which: Unit, Count: Any, Name: Any): Range = js.native
+  def GoTo(What: Any, Which: Unit, Count: Unit, Name: Any): Range = js.native
+  def GoTo(What: Unit, Which: Any): Range = js.native
+  def GoTo(What: Unit, Which: Any, Count: Any): Range = js.native
+  def GoTo(What: Unit, Which: Any, Count: Any, Name: Any): Range = js.native
+  def GoTo(What: Unit, Which: Any, Count: Unit, Name: Any): Range = js.native
+  def GoTo(What: Unit, Which: Unit, Count: Any): Range = js.native
+  def GoTo(What: Unit, Which: Unit, Count: Any, Name: Any): Range = js.native
+  def GoTo(What: Unit, Which: Unit, Count: Unit, Name: Any): Range = js.native
   
   def GoToEditableRange(): Range = js.native
-  def GoToEditableRange(EditorID: js.Any): Range = js.native
+  def GoToEditableRange(EditorID: Any): Range = js.native
   
   def GoToNext(What: WdGoToItem): Range = js.native
   
@@ -444,7 +409,7 @@ trait Range extends StObject {
   
   def InStory(Range: Range): Boolean = js.native
   
-  def Information(Type: WdInformation): js.Any = js.native
+  def Information(Type: WdInformation): Any = js.native
   
   val InlineShapes: typings.activexWord.Word.InlineShapes = js.native
   
@@ -459,353 +424,343 @@ trait Range extends StObject {
   def InsertBefore(Text: String): Unit = js.native
   
   def InsertBreak(): Unit = js.native
-  def InsertBreak(Type: js.Any): Unit = js.native
+  def InsertBreak(Type: Any): Unit = js.native
   
-  def InsertCaption(Label: js.Any): Unit = js.native
-  def InsertCaption(Label: js.Any, Title: js.Any): Unit = js.native
-  def InsertCaption(Label: js.Any, Title: js.Any, TitleAutoText: js.Any): Unit = js.native
-  def InsertCaption(Label: js.Any, Title: js.Any, TitleAutoText: js.Any, Position: js.Any): Unit = js.native
-  def InsertCaption(Label: js.Any, Title: js.Any, TitleAutoText: js.Any, Position: js.Any, ExcludeLabel: js.Any): Unit = js.native
-  def InsertCaption(Label: js.Any, Title: js.Any, TitleAutoText: js.Any, Position: Unit, ExcludeLabel: js.Any): Unit = js.native
-  def InsertCaption(Label: js.Any, Title: js.Any, TitleAutoText: Unit, Position: js.Any): Unit = js.native
-  def InsertCaption(Label: js.Any, Title: js.Any, TitleAutoText: Unit, Position: js.Any, ExcludeLabel: js.Any): Unit = js.native
-  def InsertCaption(Label: js.Any, Title: js.Any, TitleAutoText: Unit, Position: Unit, ExcludeLabel: js.Any): Unit = js.native
-  def InsertCaption(Label: js.Any, Title: Unit, TitleAutoText: js.Any): Unit = js.native
-  def InsertCaption(Label: js.Any, Title: Unit, TitleAutoText: js.Any, Position: js.Any): Unit = js.native
-  def InsertCaption(Label: js.Any, Title: Unit, TitleAutoText: js.Any, Position: js.Any, ExcludeLabel: js.Any): Unit = js.native
-  def InsertCaption(Label: js.Any, Title: Unit, TitleAutoText: js.Any, Position: Unit, ExcludeLabel: js.Any): Unit = js.native
-  def InsertCaption(Label: js.Any, Title: Unit, TitleAutoText: Unit, Position: js.Any): Unit = js.native
-  def InsertCaption(Label: js.Any, Title: Unit, TitleAutoText: Unit, Position: js.Any, ExcludeLabel: js.Any): Unit = js.native
-  def InsertCaption(Label: js.Any, Title: Unit, TitleAutoText: Unit, Position: Unit, ExcludeLabel: js.Any): Unit = js.native
+  def InsertCaption(Label: Any): Unit = js.native
+  def InsertCaption(Label: Any, Title: Any): Unit = js.native
+  def InsertCaption(Label: Any, Title: Any, TitleAutoText: Any): Unit = js.native
+  def InsertCaption(Label: Any, Title: Any, TitleAutoText: Any, Position: Any): Unit = js.native
+  def InsertCaption(Label: Any, Title: Any, TitleAutoText: Any, Position: Any, ExcludeLabel: Any): Unit = js.native
+  def InsertCaption(Label: Any, Title: Any, TitleAutoText: Any, Position: Unit, ExcludeLabel: Any): Unit = js.native
+  def InsertCaption(Label: Any, Title: Any, TitleAutoText: Unit, Position: Any): Unit = js.native
+  def InsertCaption(Label: Any, Title: Any, TitleAutoText: Unit, Position: Any, ExcludeLabel: Any): Unit = js.native
+  def InsertCaption(Label: Any, Title: Any, TitleAutoText: Unit, Position: Unit, ExcludeLabel: Any): Unit = js.native
+  def InsertCaption(Label: Any, Title: Unit, TitleAutoText: Any): Unit = js.native
+  def InsertCaption(Label: Any, Title: Unit, TitleAutoText: Any, Position: Any): Unit = js.native
+  def InsertCaption(Label: Any, Title: Unit, TitleAutoText: Any, Position: Any, ExcludeLabel: Any): Unit = js.native
+  def InsertCaption(Label: Any, Title: Unit, TitleAutoText: Any, Position: Unit, ExcludeLabel: Any): Unit = js.native
+  def InsertCaption(Label: Any, Title: Unit, TitleAutoText: Unit, Position: Any): Unit = js.native
+  def InsertCaption(Label: Any, Title: Unit, TitleAutoText: Unit, Position: Any, ExcludeLabel: Any): Unit = js.native
+  def InsertCaption(Label: Any, Title: Unit, TitleAutoText: Unit, Position: Unit, ExcludeLabel: Any): Unit = js.native
   
-  def InsertCaptionXP(Label: js.Any): Unit = js.native
-  def InsertCaptionXP(Label: js.Any, Title: js.Any): Unit = js.native
-  def InsertCaptionXP(Label: js.Any, Title: js.Any, TitleAutoText: js.Any): Unit = js.native
-  def InsertCaptionXP(Label: js.Any, Title: js.Any, TitleAutoText: js.Any, Position: js.Any): Unit = js.native
-  def InsertCaptionXP(Label: js.Any, Title: js.Any, TitleAutoText: Unit, Position: js.Any): Unit = js.native
-  def InsertCaptionXP(Label: js.Any, Title: Unit, TitleAutoText: js.Any): Unit = js.native
-  def InsertCaptionXP(Label: js.Any, Title: Unit, TitleAutoText: js.Any, Position: js.Any): Unit = js.native
-  def InsertCaptionXP(Label: js.Any, Title: Unit, TitleAutoText: Unit, Position: js.Any): Unit = js.native
+  def InsertCaptionXP(Label: Any): Unit = js.native
+  def InsertCaptionXP(Label: Any, Title: Any): Unit = js.native
+  def InsertCaptionXP(Label: Any, Title: Any, TitleAutoText: Any): Unit = js.native
+  def InsertCaptionXP(Label: Any, Title: Any, TitleAutoText: Any, Position: Any): Unit = js.native
+  def InsertCaptionXP(Label: Any, Title: Any, TitleAutoText: Unit, Position: Any): Unit = js.native
+  def InsertCaptionXP(Label: Any, Title: Unit, TitleAutoText: Any): Unit = js.native
+  def InsertCaptionXP(Label: Any, Title: Unit, TitleAutoText: Any, Position: Any): Unit = js.native
+  def InsertCaptionXP(Label: Any, Title: Unit, TitleAutoText: Unit, Position: Any): Unit = js.native
   
-  def InsertCrossReference(ReferenceType: js.Any, ReferenceKind: WdReferenceKind, ReferenceItem: js.Any): Unit = js.native
+  def InsertCrossReference(ReferenceType: Any, ReferenceKind: WdReferenceKind, ReferenceItem: Any): Unit = js.native
+  def InsertCrossReference(ReferenceType: Any, ReferenceKind: WdReferenceKind, ReferenceItem: Any, InsertAsHyperlink: Any): Unit = js.native
   def InsertCrossReference(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
-    InsertAsHyperlink: js.Any
+    ReferenceItem: Any,
+    InsertAsHyperlink: Any,
+    IncludePosition: Any
   ): Unit = js.native
   def InsertCrossReference(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
-    InsertAsHyperlink: js.Any,
-    IncludePosition: js.Any
+    ReferenceItem: Any,
+    InsertAsHyperlink: Any,
+    IncludePosition: Any,
+    SeparateNumbers: Any
   ): Unit = js.native
   def InsertCrossReference(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
-    InsertAsHyperlink: js.Any,
-    IncludePosition: js.Any,
-    SeparateNumbers: js.Any
+    ReferenceItem: Any,
+    InsertAsHyperlink: Any,
+    IncludePosition: Any,
+    SeparateNumbers: Any,
+    SeparatorString: Any
   ): Unit = js.native
   def InsertCrossReference(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
-    InsertAsHyperlink: js.Any,
-    IncludePosition: js.Any,
-    SeparateNumbers: js.Any,
-    SeparatorString: js.Any
-  ): Unit = js.native
-  def InsertCrossReference(
-    ReferenceType: js.Any,
-    ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
-    InsertAsHyperlink: js.Any,
-    IncludePosition: js.Any,
+    ReferenceItem: Any,
+    InsertAsHyperlink: Any,
+    IncludePosition: Any,
     SeparateNumbers: Unit,
-    SeparatorString: js.Any
+    SeparatorString: Any
   ): Unit = js.native
   def InsertCrossReference(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
-    InsertAsHyperlink: js.Any,
+    ReferenceItem: Any,
+    InsertAsHyperlink: Any,
     IncludePosition: Unit,
-    SeparateNumbers: js.Any
+    SeparateNumbers: Any
   ): Unit = js.native
   def InsertCrossReference(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
-    InsertAsHyperlink: js.Any,
+    ReferenceItem: Any,
+    InsertAsHyperlink: Any,
     IncludePosition: Unit,
-    SeparateNumbers: js.Any,
-    SeparatorString: js.Any
+    SeparateNumbers: Any,
+    SeparatorString: Any
   ): Unit = js.native
   def InsertCrossReference(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
-    InsertAsHyperlink: js.Any,
+    ReferenceItem: Any,
+    InsertAsHyperlink: Any,
     IncludePosition: Unit,
     SeparateNumbers: Unit,
-    SeparatorString: js.Any
+    SeparatorString: Any
   ): Unit = js.native
   def InsertCrossReference(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
+    ReferenceItem: Any,
     InsertAsHyperlink: Unit,
-    IncludePosition: js.Any
+    IncludePosition: Any
   ): Unit = js.native
   def InsertCrossReference(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
+    ReferenceItem: Any,
     InsertAsHyperlink: Unit,
-    IncludePosition: js.Any,
-    SeparateNumbers: js.Any
+    IncludePosition: Any,
+    SeparateNumbers: Any
   ): Unit = js.native
   def InsertCrossReference(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
+    ReferenceItem: Any,
     InsertAsHyperlink: Unit,
-    IncludePosition: js.Any,
-    SeparateNumbers: js.Any,
-    SeparatorString: js.Any
+    IncludePosition: Any,
+    SeparateNumbers: Any,
+    SeparatorString: Any
   ): Unit = js.native
   def InsertCrossReference(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
+    ReferenceItem: Any,
     InsertAsHyperlink: Unit,
-    IncludePosition: js.Any,
+    IncludePosition: Any,
     SeparateNumbers: Unit,
-    SeparatorString: js.Any
+    SeparatorString: Any
   ): Unit = js.native
   def InsertCrossReference(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
+    ReferenceItem: Any,
     InsertAsHyperlink: Unit,
     IncludePosition: Unit,
-    SeparateNumbers: js.Any
+    SeparateNumbers: Any
   ): Unit = js.native
   def InsertCrossReference(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
+    ReferenceItem: Any,
     InsertAsHyperlink: Unit,
     IncludePosition: Unit,
-    SeparateNumbers: js.Any,
-    SeparatorString: js.Any
+    SeparateNumbers: Any,
+    SeparatorString: Any
   ): Unit = js.native
   def InsertCrossReference(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
+    ReferenceItem: Any,
     InsertAsHyperlink: Unit,
     IncludePosition: Unit,
     SeparateNumbers: Unit,
-    SeparatorString: js.Any
+    SeparatorString: Any
   ): Unit = js.native
   
-  def InsertCrossReference_2002(ReferenceType: js.Any, ReferenceKind: WdReferenceKind, ReferenceItem: js.Any): Unit = js.native
+  def InsertCrossReference_2002(ReferenceType: Any, ReferenceKind: WdReferenceKind, ReferenceItem: Any): Unit = js.native
+  def InsertCrossReference_2002(ReferenceType: Any, ReferenceKind: WdReferenceKind, ReferenceItem: Any, InsertAsHyperlink: Any): Unit = js.native
   def InsertCrossReference_2002(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
-    InsertAsHyperlink: js.Any
+    ReferenceItem: Any,
+    InsertAsHyperlink: Any,
+    IncludePosition: Any
   ): Unit = js.native
   def InsertCrossReference_2002(
-    ReferenceType: js.Any,
+    ReferenceType: Any,
     ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
-    InsertAsHyperlink: js.Any,
-    IncludePosition: js.Any
-  ): Unit = js.native
-  def InsertCrossReference_2002(
-    ReferenceType: js.Any,
-    ReferenceKind: WdReferenceKind,
-    ReferenceItem: js.Any,
+    ReferenceItem: Any,
     InsertAsHyperlink: Unit,
-    IncludePosition: js.Any
+    IncludePosition: Any
   ): Unit = js.native
   
   def InsertDatabase(
-    Format: js.UndefOr[js.Any],
-    Style: js.UndefOr[js.Any],
-    LinkToSource: js.UndefOr[js.Any],
-    Connection: js.UndefOr[js.Any],
-    SQLStatement: js.UndefOr[js.Any],
-    SQLStatement1: js.UndefOr[js.Any],
-    PasswordDocument: js.UndefOr[js.Any],
-    PasswordTemplate: js.UndefOr[js.Any],
-    WritePasswordDocument: js.UndefOr[js.Any],
-    WritePasswordTemplate: js.UndefOr[js.Any],
-    DataSource: js.UndefOr[js.Any],
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    IncludeFields: js.UndefOr[js.Any]
+    Format: js.UndefOr[Any],
+    Style: js.UndefOr[Any],
+    LinkToSource: js.UndefOr[Any],
+    Connection: js.UndefOr[Any],
+    SQLStatement: js.UndefOr[Any],
+    SQLStatement1: js.UndefOr[Any],
+    PasswordDocument: js.UndefOr[Any],
+    PasswordTemplate: js.UndefOr[Any],
+    WritePasswordDocument: js.UndefOr[Any],
+    WritePasswordTemplate: js.UndefOr[Any],
+    DataSource: js.UndefOr[Any],
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    IncludeFields: js.UndefOr[Any]
   ): Unit = js.native
   
   def InsertDateTime(): Unit = js.native
-  def InsertDateTime(DateTimeFormat: js.Any): Unit = js.native
-  def InsertDateTime(DateTimeFormat: js.Any, InsertAsField: js.Any): Unit = js.native
-  def InsertDateTime(DateTimeFormat: js.Any, InsertAsField: js.Any, InsertAsFullWidth: js.Any): Unit = js.native
-  def InsertDateTime(DateTimeFormat: js.Any, InsertAsField: js.Any, InsertAsFullWidth: js.Any, DateLanguage: js.Any): Unit = js.native
+  def InsertDateTime(DateTimeFormat: Any): Unit = js.native
+  def InsertDateTime(DateTimeFormat: Any, InsertAsField: Any): Unit = js.native
+  def InsertDateTime(DateTimeFormat: Any, InsertAsField: Any, InsertAsFullWidth: Any): Unit = js.native
+  def InsertDateTime(DateTimeFormat: Any, InsertAsField: Any, InsertAsFullWidth: Any, DateLanguage: Any): Unit = js.native
   def InsertDateTime(
-    DateTimeFormat: js.Any,
-    InsertAsField: js.Any,
-    InsertAsFullWidth: js.Any,
-    DateLanguage: js.Any,
-    CalendarType: js.Any
+    DateTimeFormat: Any,
+    InsertAsField: Any,
+    InsertAsFullWidth: Any,
+    DateLanguage: Any,
+    CalendarType: Any
   ): Unit = js.native
   def InsertDateTime(
-    DateTimeFormat: js.Any,
-    InsertAsField: js.Any,
-    InsertAsFullWidth: js.Any,
+    DateTimeFormat: Any,
+    InsertAsField: Any,
+    InsertAsFullWidth: Any,
     DateLanguage: Unit,
-    CalendarType: js.Any
+    CalendarType: Any
   ): Unit = js.native
-  def InsertDateTime(DateTimeFormat: js.Any, InsertAsField: js.Any, InsertAsFullWidth: Unit, DateLanguage: js.Any): Unit = js.native
+  def InsertDateTime(DateTimeFormat: Any, InsertAsField: Any, InsertAsFullWidth: Unit, DateLanguage: Any): Unit = js.native
   def InsertDateTime(
-    DateTimeFormat: js.Any,
-    InsertAsField: js.Any,
+    DateTimeFormat: Any,
+    InsertAsField: Any,
     InsertAsFullWidth: Unit,
-    DateLanguage: js.Any,
-    CalendarType: js.Any
+    DateLanguage: Any,
+    CalendarType: Any
   ): Unit = js.native
   def InsertDateTime(
-    DateTimeFormat: js.Any,
-    InsertAsField: js.Any,
-    InsertAsFullWidth: Unit,
-    DateLanguage: Unit,
-    CalendarType: js.Any
-  ): Unit = js.native
-  def InsertDateTime(DateTimeFormat: js.Any, InsertAsField: Unit, InsertAsFullWidth: js.Any): Unit = js.native
-  def InsertDateTime(DateTimeFormat: js.Any, InsertAsField: Unit, InsertAsFullWidth: js.Any, DateLanguage: js.Any): Unit = js.native
-  def InsertDateTime(
-    DateTimeFormat: js.Any,
-    InsertAsField: Unit,
-    InsertAsFullWidth: js.Any,
-    DateLanguage: js.Any,
-    CalendarType: js.Any
-  ): Unit = js.native
-  def InsertDateTime(
-    DateTimeFormat: js.Any,
-    InsertAsField: Unit,
-    InsertAsFullWidth: js.Any,
-    DateLanguage: Unit,
-    CalendarType: js.Any
-  ): Unit = js.native
-  def InsertDateTime(DateTimeFormat: js.Any, InsertAsField: Unit, InsertAsFullWidth: Unit, DateLanguage: js.Any): Unit = js.native
-  def InsertDateTime(
-    DateTimeFormat: js.Any,
-    InsertAsField: Unit,
-    InsertAsFullWidth: Unit,
-    DateLanguage: js.Any,
-    CalendarType: js.Any
-  ): Unit = js.native
-  def InsertDateTime(
-    DateTimeFormat: js.Any,
-    InsertAsField: Unit,
+    DateTimeFormat: Any,
+    InsertAsField: Any,
     InsertAsFullWidth: Unit,
     DateLanguage: Unit,
-    CalendarType: js.Any
+    CalendarType: Any
   ): Unit = js.native
-  def InsertDateTime(DateTimeFormat: Unit, InsertAsField: js.Any): Unit = js.native
-  def InsertDateTime(DateTimeFormat: Unit, InsertAsField: js.Any, InsertAsFullWidth: js.Any): Unit = js.native
-  def InsertDateTime(DateTimeFormat: Unit, InsertAsField: js.Any, InsertAsFullWidth: js.Any, DateLanguage: js.Any): Unit = js.native
+  def InsertDateTime(DateTimeFormat: Any, InsertAsField: Unit, InsertAsFullWidth: Any): Unit = js.native
+  def InsertDateTime(DateTimeFormat: Any, InsertAsField: Unit, InsertAsFullWidth: Any, DateLanguage: Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: Any,
+    InsertAsField: Unit,
+    InsertAsFullWidth: Any,
+    DateLanguage: Any,
+    CalendarType: Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: Any,
+    InsertAsField: Unit,
+    InsertAsFullWidth: Any,
+    DateLanguage: Unit,
+    CalendarType: Any
+  ): Unit = js.native
+  def InsertDateTime(DateTimeFormat: Any, InsertAsField: Unit, InsertAsFullWidth: Unit, DateLanguage: Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: Any,
+    InsertAsField: Unit,
+    InsertAsFullWidth: Unit,
+    DateLanguage: Any,
+    CalendarType: Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: Any,
+    InsertAsField: Unit,
+    InsertAsFullWidth: Unit,
+    DateLanguage: Unit,
+    CalendarType: Any
+  ): Unit = js.native
+  def InsertDateTime(DateTimeFormat: Unit, InsertAsField: Any): Unit = js.native
+  def InsertDateTime(DateTimeFormat: Unit, InsertAsField: Any, InsertAsFullWidth: Any): Unit = js.native
+  def InsertDateTime(DateTimeFormat: Unit, InsertAsField: Any, InsertAsFullWidth: Any, DateLanguage: Any): Unit = js.native
   def InsertDateTime(
     DateTimeFormat: Unit,
-    InsertAsField: js.Any,
-    InsertAsFullWidth: js.Any,
-    DateLanguage: js.Any,
-    CalendarType: js.Any
-  ): Unit = js.native
-  def InsertDateTime(
-    DateTimeFormat: Unit,
-    InsertAsField: js.Any,
-    InsertAsFullWidth: js.Any,
-    DateLanguage: Unit,
-    CalendarType: js.Any
-  ): Unit = js.native
-  def InsertDateTime(DateTimeFormat: Unit, InsertAsField: js.Any, InsertAsFullWidth: Unit, DateLanguage: js.Any): Unit = js.native
-  def InsertDateTime(
-    DateTimeFormat: Unit,
-    InsertAsField: js.Any,
-    InsertAsFullWidth: Unit,
-    DateLanguage: js.Any,
-    CalendarType: js.Any
+    InsertAsField: Any,
+    InsertAsFullWidth: Any,
+    DateLanguage: Any,
+    CalendarType: Any
   ): Unit = js.native
   def InsertDateTime(
     DateTimeFormat: Unit,
-    InsertAsField: js.Any,
+    InsertAsField: Any,
+    InsertAsFullWidth: Any,
+    DateLanguage: Unit,
+    CalendarType: Any
+  ): Unit = js.native
+  def InsertDateTime(DateTimeFormat: Unit, InsertAsField: Any, InsertAsFullWidth: Unit, DateLanguage: Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: Unit,
+    InsertAsField: Any,
+    InsertAsFullWidth: Unit,
+    DateLanguage: Any,
+    CalendarType: Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: Unit,
+    InsertAsField: Any,
     InsertAsFullWidth: Unit,
     DateLanguage: Unit,
-    CalendarType: js.Any
+    CalendarType: Any
   ): Unit = js.native
-  def InsertDateTime(DateTimeFormat: Unit, InsertAsField: Unit, InsertAsFullWidth: js.Any): Unit = js.native
-  def InsertDateTime(DateTimeFormat: Unit, InsertAsField: Unit, InsertAsFullWidth: js.Any, DateLanguage: js.Any): Unit = js.native
+  def InsertDateTime(DateTimeFormat: Unit, InsertAsField: Unit, InsertAsFullWidth: Any): Unit = js.native
+  def InsertDateTime(DateTimeFormat: Unit, InsertAsField: Unit, InsertAsFullWidth: Any, DateLanguage: Any): Unit = js.native
   def InsertDateTime(
     DateTimeFormat: Unit,
     InsertAsField: Unit,
-    InsertAsFullWidth: js.Any,
-    DateLanguage: js.Any,
-    CalendarType: js.Any
-  ): Unit = js.native
-  def InsertDateTime(
-    DateTimeFormat: Unit,
-    InsertAsField: Unit,
-    InsertAsFullWidth: js.Any,
-    DateLanguage: Unit,
-    CalendarType: js.Any
-  ): Unit = js.native
-  def InsertDateTime(DateTimeFormat: Unit, InsertAsField: Unit, InsertAsFullWidth: Unit, DateLanguage: js.Any): Unit = js.native
-  def InsertDateTime(
-    DateTimeFormat: Unit,
-    InsertAsField: Unit,
-    InsertAsFullWidth: Unit,
-    DateLanguage: js.Any,
-    CalendarType: js.Any
+    InsertAsFullWidth: Any,
+    DateLanguage: Any,
+    CalendarType: Any
   ): Unit = js.native
   def InsertDateTime(
     DateTimeFormat: Unit,
     InsertAsField: Unit,
+    InsertAsFullWidth: Any,
+    DateLanguage: Unit,
+    CalendarType: Any
+  ): Unit = js.native
+  def InsertDateTime(DateTimeFormat: Unit, InsertAsField: Unit, InsertAsFullWidth: Unit, DateLanguage: Any): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: Unit,
+    InsertAsField: Unit,
+    InsertAsFullWidth: Unit,
+    DateLanguage: Any,
+    CalendarType: Any
+  ): Unit = js.native
+  def InsertDateTime(
+    DateTimeFormat: Unit,
+    InsertAsField: Unit,
     InsertAsFullWidth: Unit,
     DateLanguage: Unit,
-    CalendarType: js.Any
+    CalendarType: Any
   ): Unit = js.native
   
   def InsertDateTimeOld(): Unit = js.native
-  def InsertDateTimeOld(DateTimeFormat: js.Any): Unit = js.native
-  def InsertDateTimeOld(DateTimeFormat: js.Any, InsertAsField: js.Any): Unit = js.native
-  def InsertDateTimeOld(DateTimeFormat: js.Any, InsertAsField: js.Any, InsertAsFullWidth: js.Any): Unit = js.native
-  def InsertDateTimeOld(DateTimeFormat: js.Any, InsertAsField: Unit, InsertAsFullWidth: js.Any): Unit = js.native
-  def InsertDateTimeOld(DateTimeFormat: Unit, InsertAsField: js.Any): Unit = js.native
-  def InsertDateTimeOld(DateTimeFormat: Unit, InsertAsField: js.Any, InsertAsFullWidth: js.Any): Unit = js.native
-  def InsertDateTimeOld(DateTimeFormat: Unit, InsertAsField: Unit, InsertAsFullWidth: js.Any): Unit = js.native
+  def InsertDateTimeOld(DateTimeFormat: Any): Unit = js.native
+  def InsertDateTimeOld(DateTimeFormat: Any, InsertAsField: Any): Unit = js.native
+  def InsertDateTimeOld(DateTimeFormat: Any, InsertAsField: Any, InsertAsFullWidth: Any): Unit = js.native
+  def InsertDateTimeOld(DateTimeFormat: Any, InsertAsField: Unit, InsertAsFullWidth: Any): Unit = js.native
+  def InsertDateTimeOld(DateTimeFormat: Unit, InsertAsField: Any): Unit = js.native
+  def InsertDateTimeOld(DateTimeFormat: Unit, InsertAsField: Any, InsertAsFullWidth: Any): Unit = js.native
+  def InsertDateTimeOld(DateTimeFormat: Unit, InsertAsField: Unit, InsertAsFullWidth: Any): Unit = js.native
   
   def InsertFile(FileName: String): Unit = js.native
-  def InsertFile(FileName: String, Range: js.Any): Unit = js.native
-  def InsertFile(FileName: String, Range: js.Any, ConfirmConversions: js.Any): Unit = js.native
-  def InsertFile(FileName: String, Range: js.Any, ConfirmConversions: js.Any, Link: js.Any): Unit = js.native
-  def InsertFile(FileName: String, Range: js.Any, ConfirmConversions: js.Any, Link: js.Any, Attachment: js.Any): Unit = js.native
-  def InsertFile(FileName: String, Range: js.Any, ConfirmConversions: js.Any, Link: Unit, Attachment: js.Any): Unit = js.native
-  def InsertFile(FileName: String, Range: js.Any, ConfirmConversions: Unit, Link: js.Any): Unit = js.native
-  def InsertFile(FileName: String, Range: js.Any, ConfirmConversions: Unit, Link: js.Any, Attachment: js.Any): Unit = js.native
-  def InsertFile(FileName: String, Range: js.Any, ConfirmConversions: Unit, Link: Unit, Attachment: js.Any): Unit = js.native
-  def InsertFile(FileName: String, Range: Unit, ConfirmConversions: js.Any): Unit = js.native
-  def InsertFile(FileName: String, Range: Unit, ConfirmConversions: js.Any, Link: js.Any): Unit = js.native
-  def InsertFile(FileName: String, Range: Unit, ConfirmConversions: js.Any, Link: js.Any, Attachment: js.Any): Unit = js.native
-  def InsertFile(FileName: String, Range: Unit, ConfirmConversions: js.Any, Link: Unit, Attachment: js.Any): Unit = js.native
-  def InsertFile(FileName: String, Range: Unit, ConfirmConversions: Unit, Link: js.Any): Unit = js.native
-  def InsertFile(FileName: String, Range: Unit, ConfirmConversions: Unit, Link: js.Any, Attachment: js.Any): Unit = js.native
-  def InsertFile(FileName: String, Range: Unit, ConfirmConversions: Unit, Link: Unit, Attachment: js.Any): Unit = js.native
+  def InsertFile(FileName: String, Range: Any): Unit = js.native
+  def InsertFile(FileName: String, Range: Any, ConfirmConversions: Any): Unit = js.native
+  def InsertFile(FileName: String, Range: Any, ConfirmConversions: Any, Link: Any): Unit = js.native
+  def InsertFile(FileName: String, Range: Any, ConfirmConversions: Any, Link: Any, Attachment: Any): Unit = js.native
+  def InsertFile(FileName: String, Range: Any, ConfirmConversions: Any, Link: Unit, Attachment: Any): Unit = js.native
+  def InsertFile(FileName: String, Range: Any, ConfirmConversions: Unit, Link: Any): Unit = js.native
+  def InsertFile(FileName: String, Range: Any, ConfirmConversions: Unit, Link: Any, Attachment: Any): Unit = js.native
+  def InsertFile(FileName: String, Range: Any, ConfirmConversions: Unit, Link: Unit, Attachment: Any): Unit = js.native
+  def InsertFile(FileName: String, Range: Unit, ConfirmConversions: Any): Unit = js.native
+  def InsertFile(FileName: String, Range: Unit, ConfirmConversions: Any, Link: Any): Unit = js.native
+  def InsertFile(FileName: String, Range: Unit, ConfirmConversions: Any, Link: Any, Attachment: Any): Unit = js.native
+  def InsertFile(FileName: String, Range: Unit, ConfirmConversions: Any, Link: Unit, Attachment: Any): Unit = js.native
+  def InsertFile(FileName: String, Range: Unit, ConfirmConversions: Unit, Link: Any): Unit = js.native
+  def InsertFile(FileName: String, Range: Unit, ConfirmConversions: Unit, Link: Any, Attachment: Any): Unit = js.native
+  def InsertFile(FileName: String, Range: Unit, ConfirmConversions: Unit, Link: Unit, Attachment: Any): Unit = js.native
   
   def InsertParagraph(): Unit = js.native
   
@@ -814,16 +769,16 @@ trait Range extends StObject {
   def InsertParagraphBefore(): Unit = js.native
   
   def InsertSymbol(CharacterNumber: Double): Unit = js.native
-  def InsertSymbol(CharacterNumber: Double, Font: js.Any): Unit = js.native
-  def InsertSymbol(CharacterNumber: Double, Font: js.Any, Unicode: js.Any): Unit = js.native
-  def InsertSymbol(CharacterNumber: Double, Font: js.Any, Unicode: js.Any, Bias: js.Any): Unit = js.native
-  def InsertSymbol(CharacterNumber: Double, Font: js.Any, Unicode: Unit, Bias: js.Any): Unit = js.native
-  def InsertSymbol(CharacterNumber: Double, Font: Unit, Unicode: js.Any): Unit = js.native
-  def InsertSymbol(CharacterNumber: Double, Font: Unit, Unicode: js.Any, Bias: js.Any): Unit = js.native
-  def InsertSymbol(CharacterNumber: Double, Font: Unit, Unicode: Unit, Bias: js.Any): Unit = js.native
+  def InsertSymbol(CharacterNumber: Double, Font: Any): Unit = js.native
+  def InsertSymbol(CharacterNumber: Double, Font: Any, Unicode: Any): Unit = js.native
+  def InsertSymbol(CharacterNumber: Double, Font: Any, Unicode: Any, Bias: Any): Unit = js.native
+  def InsertSymbol(CharacterNumber: Double, Font: Any, Unicode: Unit, Bias: Any): Unit = js.native
+  def InsertSymbol(CharacterNumber: Double, Font: Unit, Unicode: Any): Unit = js.native
+  def InsertSymbol(CharacterNumber: Double, Font: Unit, Unicode: Any, Bias: Any): Unit = js.native
+  def InsertSymbol(CharacterNumber: Double, Font: Unit, Unicode: Unit, Bias: Any): Unit = js.native
   
   def InsertXML(XML: String): Unit = js.native
-  def InsertXML(XML: String, Transform: js.Any): Unit = js.native
+  def InsertXML(XML: String, Transform: Any): Unit = js.native
   
   val IsEndOfRowMark: Boolean = js.native
   
@@ -847,16 +802,16 @@ trait Range extends StObject {
   
   val ListParagraphs: typings.activexWord.Word.ListParagraphs = js.native
   
-  val ListStyle: js.Any = js.native
+  val ListStyle: Any = js.native
   
   val Locks: CoAuthLocks = js.native
   
   def LookupNameProperties(): Unit = js.native
   
-  def ModifyEnclosure(Style: js.Any): Unit = js.native
-  def ModifyEnclosure(Style: js.Any, Symbol: js.Any): Unit = js.native
-  def ModifyEnclosure(Style: js.Any, Symbol: js.Any, EnclosedText: js.Any): Unit = js.native
-  def ModifyEnclosure(Style: js.Any, Symbol: Unit, EnclosedText: js.Any): Unit = js.native
+  def ModifyEnclosure(Style: Any): Unit = js.native
+  def ModifyEnclosure(Style: Any, Symbol: Any): Unit = js.native
+  def ModifyEnclosure(Style: Any, Symbol: Any, EnclosedText: Any): Unit = js.native
+  def ModifyEnclosure(Style: Any, Symbol: Unit, EnclosedText: Any): Unit = js.native
   
   def Move(): Double = js.native
   def Move(Unit: Unit, Count: Double): Double = js.native
@@ -868,33 +823,33 @@ trait Range extends StObject {
   def MoveEnd(Unit: WdUnits): Double = js.native
   def MoveEnd(Unit: WdUnits, Count: Double): Double = js.native
   
-  def MoveEndUntil(Cset: js.Any): Double = js.native
-  def MoveEndUntil(Cset: js.Any, Count: js.Any): Double = js.native
+  def MoveEndUntil(Cset: Any): Double = js.native
+  def MoveEndUntil(Cset: Any, Count: Any): Double = js.native
   
-  def MoveEndWhile(Cset: js.Any): Double = js.native
-  def MoveEndWhile(Cset: js.Any, Count: js.Any): Double = js.native
+  def MoveEndWhile(Cset: Any): Double = js.native
+  def MoveEndWhile(Cset: Any, Count: Any): Double = js.native
   
   def MoveStart(): Double = js.native
   def MoveStart(Unit: Unit, Count: Double): Double = js.native
   def MoveStart(Unit: WdUnits): Double = js.native
   def MoveStart(Unit: WdUnits, Count: Double): Double = js.native
   
-  def MoveStartUntil(Cset: js.Any): Double = js.native
-  def MoveStartUntil(Cset: js.Any, Count: js.Any): Double = js.native
+  def MoveStartUntil(Cset: Any): Double = js.native
+  def MoveStartUntil(Cset: Any, Count: Any): Double = js.native
   
-  def MoveStartWhile(Cset: js.Any): Double = js.native
-  def MoveStartWhile(Cset: js.Any, Count: js.Any): Double = js.native
+  def MoveStartWhile(Cset: Any): Double = js.native
+  def MoveStartWhile(Cset: Any, Count: Any): Double = js.native
   
-  def MoveUntil(Cset: js.Any): Double = js.native
-  def MoveUntil(Cset: js.Any, Count: js.Any): Double = js.native
+  def MoveUntil(Cset: Any): Double = js.native
+  def MoveUntil(Cset: Any, Count: Any): Double = js.native
   
-  def MoveWhile(Cset: js.Any): Double = js.native
-  def MoveWhile(Cset: js.Any, Count: js.Any): Double = js.native
+  def MoveWhile(Cset: Any): Double = js.native
+  def MoveWhile(Cset: Any, Count: Any): Double = js.native
   
   def Next(): Range = js.native
-  def Next(Unit: js.Any): Range = js.native
-  def Next(Unit: js.Any, Count: js.Any): Range = js.native
-  def Next(Unit: Unit, Count: js.Any): Range = js.native
+  def Next(Unit: Any): Range = js.native
+  def Next(Unit: Any, Count: Any): Range = js.native
+  def Next(Unit: Unit, Count: Any): Range = js.native
   
   val NextStoryRange: Range = js.native
   
@@ -910,11 +865,11 @@ trait Range extends StObject {
   
   var ParagraphFormat: typings.activexWord.Word.ParagraphFormat = js.native
   
-  val ParagraphStyle: js.Any = js.native
+  val ParagraphStyle: Any = js.native
   
   val Paragraphs: typings.activexWord.Word.Paragraphs = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ParentContentControl: ContentControl = js.native
   
@@ -929,13 +884,13 @@ trait Range extends StObject {
   def PasteExcelTable(LinkedToExcel: Boolean, WordFormatting: Boolean, RTF: Boolean): Unit = js.native
   
   def PasteSpecial(
-    IconIndex: js.UndefOr[js.Any],
-    Link: js.UndefOr[js.Any],
-    Placement: js.UndefOr[js.Any],
-    DisplayAsIcon: js.UndefOr[js.Any],
-    DataType: js.UndefOr[js.Any],
-    IconFileName: js.UndefOr[js.Any],
-    IconLabel: js.UndefOr[js.Any]
+    IconIndex: js.UndefOr[Any],
+    Link: js.UndefOr[Any],
+    Placement: js.UndefOr[Any],
+    DisplayAsIcon: js.UndefOr[Any],
+    DataType: js.UndefOr[Any],
+    IconFileName: js.UndefOr[Any],
+    IconLabel: js.UndefOr[Any]
   ): Unit = js.native
   
   /**
@@ -986,9 +941,9 @@ trait Range extends StObject {
   ): Unit = js.native
   
   def Previous(): Range = js.native
-  def Previous(Unit: js.Any): Range = js.native
-  def Previous(Unit: js.Any, Count: js.Any): Range = js.native
-  def Previous(Unit: Unit, Count: js.Any): Range = js.native
+  def Previous(Unit: Any): Range = js.native
+  def Previous(Unit: Any, Count: Any): Range = js.native
+  def Previous(Unit: Unit, Count: Any): Range = js.native
   
   val PreviousBookmarkID: Double = js.native
   
@@ -1002,7 +957,7 @@ trait Range extends StObject {
   
   val Rows: typings.activexWord.Word.Rows = js.native
   
-  def Scripts(Index: js.Any): Script = js.native
+  def Scripts(Index: Any): Script = js.native
   @JSName("Scripts")
   val Scripts_Original: Scripts = js.native
   
@@ -1025,25 +980,25 @@ trait Range extends StObject {
   val SmartTags: typings.activexWord.Word.SmartTags = js.native
   
   def Sort(
-    ExcludeHeader: js.UndefOr[js.Any],
-    FieldNumber: js.UndefOr[js.Any],
-    SortFieldType: js.UndefOr[js.Any],
-    SortOrder: js.UndefOr[js.Any],
-    FieldNumber2: js.UndefOr[js.Any],
-    SortFieldType2: js.UndefOr[js.Any],
-    SortOrder2: js.UndefOr[js.Any],
-    FieldNumber3: js.UndefOr[js.Any],
-    SortFieldType3: js.UndefOr[js.Any],
-    SortOrder3: js.UndefOr[js.Any],
-    SortColumn: js.UndefOr[js.Any],
-    Separator: js.UndefOr[js.Any],
-    CaseSensitive: js.UndefOr[js.Any],
-    BidiSort: js.UndefOr[js.Any],
-    IgnoreThe: js.UndefOr[js.Any],
-    IgnoreKashida: js.UndefOr[js.Any],
-    IgnoreDiacritics: js.UndefOr[js.Any],
-    IgnoreHe: js.UndefOr[js.Any],
-    LanguageID: js.UndefOr[js.Any]
+    ExcludeHeader: js.UndefOr[Any],
+    FieldNumber: js.UndefOr[Any],
+    SortFieldType: js.UndefOr[Any],
+    SortOrder: js.UndefOr[Any],
+    FieldNumber2: js.UndefOr[Any],
+    SortFieldType2: js.UndefOr[Any],
+    SortOrder2: js.UndefOr[Any],
+    FieldNumber3: js.UndefOr[Any],
+    SortFieldType3: js.UndefOr[Any],
+    SortOrder3: js.UndefOr[Any],
+    SortColumn: js.UndefOr[Any],
+    Separator: js.UndefOr[Any],
+    CaseSensitive: js.UndefOr[Any],
+    BidiSort: js.UndefOr[Any],
+    IgnoreThe: js.UndefOr[Any],
+    IgnoreKashida: js.UndefOr[Any],
+    IgnoreDiacritics: js.UndefOr[Any],
+    IgnoreHe: js.UndefOr[Any],
+    LanguageID: js.UndefOr[Any]
   ): Unit = js.native
   
   def SortAscending(): Unit = js.native
@@ -1051,20 +1006,20 @@ trait Range extends StObject {
   def SortDescending(): Unit = js.native
   
   def SortOld(
-    ExcludeHeader: js.UndefOr[js.Any],
-    FieldNumber: js.UndefOr[js.Any],
-    SortFieldType: js.UndefOr[js.Any],
-    SortOrder: js.UndefOr[js.Any],
-    FieldNumber2: js.UndefOr[js.Any],
-    SortFieldType2: js.UndefOr[js.Any],
-    SortOrder2: js.UndefOr[js.Any],
-    FieldNumber3: js.UndefOr[js.Any],
-    SortFieldType3: js.UndefOr[js.Any],
-    SortOrder3: js.UndefOr[js.Any],
-    SortColumn: js.UndefOr[js.Any],
-    Separator: js.UndefOr[js.Any],
-    CaseSensitive: js.UndefOr[js.Any],
-    LanguageID: js.UndefOr[js.Any]
+    ExcludeHeader: js.UndefOr[Any],
+    FieldNumber: js.UndefOr[Any],
+    SortFieldType: js.UndefOr[Any],
+    SortOrder: js.UndefOr[Any],
+    FieldNumber2: js.UndefOr[Any],
+    SortFieldType2: js.UndefOr[Any],
+    SortOrder2: js.UndefOr[Any],
+    FieldNumber3: js.UndefOr[Any],
+    SortFieldType3: js.UndefOr[Any],
+    SortOrder3: js.UndefOr[Any],
+    SortColumn: js.UndefOr[Any],
+    Separator: js.UndefOr[Any],
+    CaseSensitive: js.UndefOr[Any],
+    LanguageID: js.UndefOr[Any]
   ): Unit = js.native
   
   var SpellingChecked: Boolean = js.native
@@ -1074,20 +1029,20 @@ trait Range extends StObject {
   var Start: Double = js.native
   
   def StartOf(): Double = js.native
-  def StartOf(Unit: js.Any): Double = js.native
-  def StartOf(Unit: js.Any, Extend: js.Any): Double = js.native
-  def StartOf(Unit: Unit, Extend: js.Any): Double = js.native
+  def StartOf(Unit: Any): Double = js.native
+  def StartOf(Unit: Any, Extend: Any): Double = js.native
+  def StartOf(Unit: Unit, Extend: Any): Double = js.native
   
   val StoryLength: Double = js.native
   
   val StoryType: WdStoryType = js.native
   
-  var Style: js.Any = js.native
+  var Style: Any = js.native
   
   val Subdocuments: typings.activexWord.Word.Subdocuments = js.native
   
   def SubscribeTo(Edition: String): Unit = js.native
-  def SubscribeTo(Edition: String, Format: js.Any): Unit = js.native
+  def SubscribeTo(Edition: String, Format: Any): Unit = js.native
   
   val SynonymInfo: typings.activexWord.Word.SynonymInfo = js.native
   
@@ -1105,7 +1060,7 @@ trait Range extends StObject {
   def TCSCConverter(WdTCSCConverterDirection: WdTCSCConverterDirection, CommonTerms: Boolean, UseVariants: Boolean): Unit = js.native
   def TCSCConverter(WdTCSCConverterDirection: WdTCSCConverterDirection, CommonTerms: Unit, UseVariants: Boolean): Unit = js.native
   
-  val TableStyle: js.Any = js.native
+  val TableStyle: Any = js.native
   
   val Tables: typings.activexWord.Word.Tables = js.native
   

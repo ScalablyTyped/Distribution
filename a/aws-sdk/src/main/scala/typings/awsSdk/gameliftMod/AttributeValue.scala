@@ -22,7 +22,7 @@ trait AttributeValue extends StObject {
   var SDM: js.UndefOr[StringDoubleMap] = js.undefined
   
   /**
-    * For a list of up to 10 strings. Maximum length for each string is 100 characters. Duplicate values are not recognized; all occurrences of the repeated value after the first of a repeated value are ignored.
+    * For a list of up to 100 strings. Maximum length for each string is 100 characters. Duplicate values are not recognized; all occurrences of the repeated value after the first of a repeated value are ignored.
     */
   var SL: js.UndefOr[StringList] = js.undefined
 }
@@ -49,7 +49,7 @@ object AttributeValue {
     
     inline def setSLUndefined: Self = StObject.set(x, "SL", js.undefined)
     
-    inline def setSLVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "SL", js.Array(value :_*))
+    inline def setSLVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "SL", js.Array(value*))
     
     inline def setSUndefined: Self = StObject.set(x, "S", js.undefined)
   }

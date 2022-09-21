@@ -8,17 +8,17 @@ trait FormRegionStartup extends StObject {
   
   def BeforeFormRegionShow(FormRegion: FormRegion): Unit
   
-  def GetFormRegionIcon(FormRegionName: String, LCID: Double, Icon: OlFormRegionIcon): js.Any
+  def GetFormRegionIcon(FormRegionName: String, LCID: Double, Icon: OlFormRegionIcon): Any
   
-  def GetFormRegionManifest(FormRegionName: String, LCID: Double): js.Any
+  def GetFormRegionManifest(FormRegionName: String, LCID: Double): Any
   
   def GetFormRegionStorage(
     FormRegionName: String,
-    Item: js.Any,
+    Item: Any,
     LCID: Double,
     FormRegionMode: OlFormRegionMode,
     FormRegionSize: OlFormRegionSize
-  ): js.Any
+  ): Any
   
   /* private */ @JSName("Outlook.FormRegionStartup_typekey")
   var OutlookDotFormRegionStartup_typekey: FormRegionStartup
@@ -27,9 +27,9 @@ object FormRegionStartup {
   
   inline def apply(
     BeforeFormRegionShow: FormRegion => Unit,
-    GetFormRegionIcon: (String, Double, OlFormRegionIcon) => js.Any,
-    GetFormRegionManifest: (String, Double) => js.Any,
-    GetFormRegionStorage: (String, js.Any, Double, OlFormRegionMode, OlFormRegionSize) => js.Any,
+    GetFormRegionIcon: (String, Double, OlFormRegionIcon) => Any,
+    GetFormRegionManifest: (String, Double) => Any,
+    GetFormRegionStorage: (String, Any, Double, OlFormRegionMode, OlFormRegionSize) => Any,
     OutlookDotFormRegionStartup_typekey: FormRegionStartup
   ): FormRegionStartup = {
     val __obj = js.Dynamic.literal(BeforeFormRegionShow = js.Any.fromFunction1(BeforeFormRegionShow), GetFormRegionIcon = js.Any.fromFunction3(GetFormRegionIcon), GetFormRegionManifest = js.Any.fromFunction2(GetFormRegionManifest), GetFormRegionStorage = js.Any.fromFunction5(GetFormRegionStorage))
@@ -41,11 +41,11 @@ object FormRegionStartup {
     
     inline def setBeforeFormRegionShow(value: FormRegion => Unit): Self = StObject.set(x, "BeforeFormRegionShow", js.Any.fromFunction1(value))
     
-    inline def setGetFormRegionIcon(value: (String, Double, OlFormRegionIcon) => js.Any): Self = StObject.set(x, "GetFormRegionIcon", js.Any.fromFunction3(value))
+    inline def setGetFormRegionIcon(value: (String, Double, OlFormRegionIcon) => Any): Self = StObject.set(x, "GetFormRegionIcon", js.Any.fromFunction3(value))
     
-    inline def setGetFormRegionManifest(value: (String, Double) => js.Any): Self = StObject.set(x, "GetFormRegionManifest", js.Any.fromFunction2(value))
+    inline def setGetFormRegionManifest(value: (String, Double) => Any): Self = StObject.set(x, "GetFormRegionManifest", js.Any.fromFunction2(value))
     
-    inline def setGetFormRegionStorage(value: (String, js.Any, Double, OlFormRegionMode, OlFormRegionSize) => js.Any): Self = StObject.set(x, "GetFormRegionStorage", js.Any.fromFunction5(value))
+    inline def setGetFormRegionStorage(value: (String, Any, Double, OlFormRegionMode, OlFormRegionSize) => Any): Self = StObject.set(x, "GetFormRegionStorage", js.Any.fromFunction5(value))
     
     inline def setOutlookDotFormRegionStartup_typekey(value: FormRegionStartup): Self = StObject.set(x, "Outlook.FormRegionStartup_typekey", value.asInstanceOf[js.Any])
   }

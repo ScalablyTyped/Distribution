@@ -5,7 +5,6 @@ import typings.hapiJoi.hapiJoiStrings.map
 import typings.hapiJoi.hapiJoiStrings.number
 import typings.hapiJoi.hapiJoiStrings.set
 import typings.hapiJoi.hapiJoiStrings.string
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,9 +33,7 @@ trait AnySchema
     *  reference and any future assignment.
     */
   def default(): this.type = js.native
-  def default(
-    value: js.Function2[/* parent */ js.Any, /* helpers */ CustomHelpers[js.Any], BasicType | Reference]
-  ): this.type = js.native
+  def default(value: js.Function2[/* parent */ Any, /* helpers */ CustomHelpers[Any], BasicType | Reference]): this.type = js.native
   def default(value: BasicType): this.type = js.native
   def default(value: Reference): this.type = js.native
   
@@ -49,12 +46,12 @@ trait AnySchema
   /**
     * Flags of current schema.
     */
-  var _flags: Record[String, js.Any] = js.native
+  var _flags: Record[String, Any] = js.native
   
   /**
     * Whitelists a value
     */
-  def allow(values: js.Any*): this.type = js.native
+  def allow(values: Any*): this.type = js.native
   
   /**
     * Assign target alteration options to a schema that are applied when `any.tailor()` is called.
@@ -80,14 +77,7 @@ trait AnySchema
   /**
     * Casts the validated value to the specified type.
     */
-  @JSName("cast")
-  def cast_map(to: map): this.type = js.native
-  @JSName("cast")
-  def cast_number(to: number): this.type = js.native
-  @JSName("cast")
-  def cast_set(to: set): this.type = js.native
-  @JSName("cast")
-  def cast_string(to: string): this.type = js.native
+  def cast(to: map | number | set | string): this.type = js.native
   
   /**
     * Returns a new type that is the result of adding the rules of one type to another.
@@ -97,8 +87,8 @@ trait AnySchema
   /**
     * Adds a custom validation function.
     */
-  def custom(fn: CustomValidator[js.Any]): this.type = js.native
-  def custom(fn: CustomValidator[js.Any], description: String): this.type = js.native
+  def custom(fn: CustomValidator[Any]): this.type = js.native
+  def custom(fn: CustomValidator[Any], description: String): this.type = js.native
   
   /**
     * Returns a plain object representing the schema's rules and properties
@@ -113,7 +103,7 @@ trait AnySchema
   /**
     * Disallows values.
     */
-  def disallow(values: js.Any*): this.type = js.native
+  def disallow(values: Any*): this.type = js.native
   
   /**
     * Considers anything that matches the schema to be empty (undefined).
@@ -125,9 +115,8 @@ trait AnySchema
   /**
     * Adds the provided values into the allowed whitelist and marks them as the only valid values allowed.
     */
-  def equal(values: js.Any*): this.type = js.native
+  def equal(values: Any*): this.type = js.native
   
-  def error(err: ValidationErrorFunction): this.type = js.native
   /**
     * Overrides the default joi error with a custom error if the rule fails where:
     * @param err - can be:
@@ -146,13 +135,14 @@ trait AnySchema
     * override, that error will be returned and the override will be ignored (unless the `abortEarly`
     * option has been set to `false`).
     */
-  def error(err: Error): this.type = js.native
+  def error(err: js.Error): this.type = js.native
+  def error(err: ValidationErrorFunction): this.type = js.native
   
   /**
     * Annotates the key with an example value, must be valid.
     */
-  def example(value: js.Any): this.type = js.native
-  def example(value: js.Any, options: Override): this.type = js.native
+  def example(value: Any): this.type = js.native
+  def example(value: Any, options: Override): this.type = js.native
   
   /**
     * Marks a key as required which will not allow undefined as value. All keys are optional by default.
@@ -188,7 +178,7 @@ trait AnySchema
     * Using a function with a single argument performs some internal cloning which has a performance impact.
     * If you do not need access to the context, define the function without any arguments.
     */
-  def failover(value: js.Any): this.type = js.native
+  def failover(value: Any): this.type = js.native
   
   /**
     * Marks a key as forbidden which will not allow any value except undefined. Used to explicitly forbid keys.
@@ -215,7 +205,7 @@ trait AnySchema
   /**
     * Disallows values.
     */
-  def invalid(values: js.Any*): this.type = js.native
+  def invalid(values: Any*): this.type = js.native
   
   /**
     * Same as `rule({ keep: true })`.
@@ -252,7 +242,7 @@ trait AnySchema
   /**
     * Disallows values.
     */
-  def not(values: js.Any*): this.type = js.native
+  def not(values: Any*): this.type = js.native
   
   /**
     * Annotates the key
@@ -360,19 +350,19 @@ trait AnySchema
   /**
     * Adds the provided values into the allowed whitelist and marks them as the only valid values allowed.
     */
-  def valid(values: js.Any*): this.type = js.native
+  def valid(values: Any*): this.type = js.native
   
   /**
     * Validates a value using the schema and options.
     */
-  def validate(value: js.Any): ValidationResult = js.native
-  def validate(value: js.Any, options: ValidationOptions): ValidationResult = js.native
+  def validate(value: Any): ValidationResult = js.native
+  def validate(value: Any, options: ValidationOptions): ValidationResult = js.native
   
   /**
     * Validates a value using the schema and options.
     */
-  def validateAsync(value: js.Any): js.Promise[js.Any] = js.native
-  def validateAsync(value: js.Any, options: AsyncValidationOptions): js.Promise[js.Any] = js.native
+  def validateAsync(value: Any): js.Promise[Any] = js.native
+  def validateAsync(value: Any, options: AsyncValidationOptions): js.Promise[Any] = js.native
   
   /**
     * Same as `rule({ warn: true })`.

@@ -15,14 +15,13 @@ object reactSVGMod {
   
   @JSImport("react-svg/dist/ReactSVG", "ReactSVG")
   @js.native
-  class ReactSVG protected ()
-    extends Component[Props, State, js.Any] {
+  open class ReactSVG protected () extends Component[Props, State, Any] {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
     
     var _isMounted: Boolean = js.native
     
@@ -35,12 +34,14 @@ object reactSVGMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MReactSVG(): Unit = js.native
     
-    var container: js.UndefOr[WrapperType | Null] = js.native
-    
     var initialState: HasError = js.native
     
+    var nonReactWrapper: js.UndefOr[WrapperType | Null] = js.native
+    
+    var reactWrapper: js.UndefOr[WrapperType | Null] = js.native
+    
     def refCallback(): Unit = js.native
-    def refCallback(container: WrapperType): Unit = js.native
+    def refCallback(reactWrapper: WrapperType): Unit = js.native
     
     def removeSVG(): Unit = js.native
     
@@ -48,8 +49,6 @@ object reactSVGMod {
     
     @JSName("state")
     var state_ReactSVG: HasError = js.native
-    
-    var svgWrapper: js.UndefOr[WrapperType | Null] = js.native
   }
   /* static members */
   object ReactSVG {

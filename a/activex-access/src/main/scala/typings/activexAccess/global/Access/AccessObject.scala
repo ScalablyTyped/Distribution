@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.AccessObject")
 @js.native
-/* private */ class AccessObject ()
+/* private */ open class AccessObject ()
   extends StObject
      with typings.activexAccess.Access.AccessObject {
   
@@ -52,7 +52,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Name: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Properties(Index: String): typings.activexAccess.Access.AccessObjectProperty = js.native

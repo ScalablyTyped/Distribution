@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BackupPolicyDescription extends StObject {
   
   /**
-    * Describes the file system's backup policy, indicating whether automatic backups are turned on or off..
+    * Describes the file system's backup policy, indicating whether automatic backups are turned on or off.
     */
   var BackupPolicy: js.UndefOr[typings.awsSdk.efsMod.BackupPolicy] = js.undefined
 }

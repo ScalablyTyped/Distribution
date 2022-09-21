@@ -28,6 +28,13 @@ object mod {
       * but also for SVG and MathML content. Default: `2`.
       */
     var imageWeight: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Optional list of tags to be stripped from the output. If `true`, all tags are stripped.
+      *
+      * Tag names must be specified in lowercase.
+      */
+    var stripTags: js.UndefOr[js.Array[String] | `true`] = js.undefined
   }
   object ClipHtmlOptions {
     
@@ -43,6 +50,12 @@ object mod {
       inline def setImageWeight(value: Double): Self = StObject.set(x, "imageWeight", value.asInstanceOf[js.Any])
       
       inline def setImageWeightUndefined: Self = StObject.set(x, "imageWeight", js.undefined)
+      
+      inline def setStripTags(value: js.Array[String] | `true`): Self = StObject.set(x, "stripTags", value.asInstanceOf[js.Any])
+      
+      inline def setStripTagsUndefined: Self = StObject.set(x, "stripTags", js.undefined)
+      
+      inline def setStripTagsVarargs(value: String*): Self = StObject.set(x, "stripTags", js.Array(value*))
     }
   }
   

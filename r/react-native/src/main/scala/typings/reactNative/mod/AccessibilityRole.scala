@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.reactNative.reactNativeStrings.none
   - typings.reactNative.reactNativeStrings.button
+  - typings.reactNative.reactNativeStrings.togglebutton
   - typings.reactNative.reactNativeStrings.link
   - typings.reactNative.reactNativeStrings.search
   - typings.reactNative.reactNativeStrings.image
@@ -29,8 +30,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNative.reactNativeStrings.spinbutton
   - typings.reactNative.reactNativeStrings.switch
   - typings.reactNative.reactNativeStrings.tab
+  - typings.reactNative.reactNativeStrings.tabbar
   - typings.reactNative.reactNativeStrings.tablist
   - typings.reactNative.reactNativeStrings.timer
+  - typings.reactNative.reactNativeStrings.list
   - typings.reactNative.reactNativeStrings.toolbar
 */
 trait AccessibilityRole extends StObject
@@ -55,6 +58,8 @@ object AccessibilityRole {
   inline def keyboardkey: typings.reactNative.reactNativeStrings.keyboardkey = "keyboardkey".asInstanceOf[typings.reactNative.reactNativeStrings.keyboardkey]
   
   inline def link: typings.reactNative.reactNativeStrings.link = "link".asInstanceOf[typings.reactNative.reactNativeStrings.link]
+  
+  inline def list: typings.reactNative.reactNativeStrings.list = "list".asInstanceOf[typings.reactNative.reactNativeStrings.list]
   
   inline def menu: typings.reactNative.reactNativeStrings.menu = "menu".asInstanceOf[typings.reactNative.reactNativeStrings.menu]
   
@@ -82,11 +87,15 @@ object AccessibilityRole {
   
   inline def tab: typings.reactNative.reactNativeStrings.tab = "tab".asInstanceOf[typings.reactNative.reactNativeStrings.tab]
   
+  inline def tabbar: typings.reactNative.reactNativeStrings.tabbar = "tabbar".asInstanceOf[typings.reactNative.reactNativeStrings.tabbar]
+  
   inline def tablist: typings.reactNative.reactNativeStrings.tablist = "tablist".asInstanceOf[typings.reactNative.reactNativeStrings.tablist]
   
   inline def text: typings.reactNative.reactNativeStrings.text = "text".asInstanceOf[typings.reactNative.reactNativeStrings.text]
   
   inline def timer: typings.reactNative.reactNativeStrings.timer = "timer".asInstanceOf[typings.reactNative.reactNativeStrings.timer]
+  
+  inline def togglebutton: typings.reactNative.reactNativeStrings.togglebutton = "togglebutton".asInstanceOf[typings.reactNative.reactNativeStrings.togglebutton]
   
   inline def toolbar: typings.reactNative.reactNativeStrings.toolbar = "toolbar".asInstanceOf[typings.reactNative.reactNativeStrings.toolbar]
 }

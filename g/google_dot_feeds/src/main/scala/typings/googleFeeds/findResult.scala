@@ -27,7 +27,7 @@ object findResult {
     
     inline def setFindEntries(value: js.Array[findEntry]): Self = StObject.set(x, "findEntries", value.asInstanceOf[js.Any])
     
-    inline def setFindEntriesVarargs(value: findEntry*): Self = StObject.set(x, "findEntries", js.Array(value :_*))
+    inline def setFindEntriesVarargs(value: findEntry*): Self = StObject.set(x, "findEntries", js.Array(value*))
     
     inline def setXmlDocument(value: String): Self = StObject.set(x, "xmlDocument", value.asInstanceOf[js.Any])
     

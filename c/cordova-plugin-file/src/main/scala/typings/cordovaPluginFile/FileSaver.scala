@@ -1,6 +1,5 @@
 package typings.cordovaPluginFile
 
-import typings.std.Error
 import typings.std.EventTarget
 import typings.std.ProgressEvent
 import org.scalablytyped.runtime.StObject
@@ -20,7 +19,7 @@ trait FileSaver
   def abort(): Unit = js.native
   
   /** The last error that occurred on the FileSaver. */
-  var error: Error = js.native
+  var error: js.Error = js.native
   
   /** Handler for abort events. */
   def onabort(event: ProgressEvent[EventTarget]): Unit = js.native

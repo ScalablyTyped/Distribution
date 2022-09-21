@@ -33,7 +33,7 @@ object BulkEmailDestination {
     
     inline def setReplacementTagsUndefined: Self = StObject.set(x, "ReplacementTags", js.undefined)
     
-    inline def setReplacementTagsVarargs(value: MessageTag*): Self = StObject.set(x, "ReplacementTags", js.Array(value :_*))
+    inline def setReplacementTagsVarargs(value: MessageTag*): Self = StObject.set(x, "ReplacementTags", js.Array(value*))
     
     inline def setReplacementTemplateData(value: TemplateData): Self = StObject.set(x, "ReplacementTemplateData", value.asInstanceOf[js.Any])
     

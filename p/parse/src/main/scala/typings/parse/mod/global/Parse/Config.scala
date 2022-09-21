@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Parse.Config")
 @js.native
-class Config () extends StObject {
+open class Config () extends StObject {
   
-  def escape(attr: String): js.Any = js.native
+  def escape(attr: String): Any = js.native
   
-  def get(attr: String): js.Any = js.native
+  def get(attr: String): Any = js.native
 }
 object Config {
   
@@ -27,6 +27,6 @@ object Config {
   inline def get(options: UseMasterKeyOption): js.Promise[Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config]]
   
   /* static member */
-  inline def save(attr: js.Any): js.Promise[Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(attr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config]]
-  inline def save(attr: js.Any, options: StringDictionary[Boolean]): js.Promise[Config] = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(attr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Config]]
+  inline def save(attr: Any): js.Promise[Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(attr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Config]]
+  inline def save(attr: Any, options: StringDictionary[Boolean]): js.Promise[Config] = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(attr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Config]]
 }

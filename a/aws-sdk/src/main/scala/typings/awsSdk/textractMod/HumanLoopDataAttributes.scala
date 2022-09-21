@@ -24,6 +24,6 @@ object HumanLoopDataAttributes {
     
     inline def setContentClassifiersUndefined: Self = StObject.set(x, "ContentClassifiers", js.undefined)
     
-    inline def setContentClassifiersVarargs(value: ContentClassifier*): Self = StObject.set(x, "ContentClassifiers", js.Array(value :_*))
+    inline def setContentClassifiersVarargs(value: ContentClassifier*): Self = StObject.set(x, "ContentClassifiers", js.Array(value*))
   }
 }

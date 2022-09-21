@@ -39,7 +39,7 @@ object feedEntry {
     
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object feedEntry {
     
     inline def setMediaGroup(value: js.Array[MediaGroup]): Self = StObject.set(x, "mediaGroup", value.asInstanceOf[js.Any])
     
-    inline def setMediaGroupVarargs(value: MediaGroup*): Self = StObject.set(x, "mediaGroup", js.Array(value :_*))
+    inline def setMediaGroupVarargs(value: MediaGroup*): Self = StObject.set(x, "mediaGroup", js.Array(value*))
     
     inline def setPublishedDate(value: String): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
     

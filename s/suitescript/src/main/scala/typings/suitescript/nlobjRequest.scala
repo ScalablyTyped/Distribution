@@ -19,7 +19,7 @@ trait nlobjRequest
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * return an Object containing field names to file objects for all uploaded files.
@@ -31,7 +31,7 @@ Instantiable0[js.Any] {
     * @since 2009.1
     * @return
     */
-  def getAllFiles(): js.Any = js.native
+  def getAllFiles(): Any = js.native
   
   /**
     * return an Object containing all the request headers and their values.
@@ -43,7 +43,7 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @return
     */
-  def getAllHeaders(): js.Any = js.native
+  def getAllHeaders(): Any = js.native
   
   /**
     * return an Object containing all the request parameters and their values.
@@ -54,7 +54,7 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @return
     */
-  def getAllParameters(): js.Any = js.native
+  def getAllParameters(): Any = js.native
   
   /**
     * return the body of the POST request
@@ -65,7 +65,7 @@ Instantiable0[js.Any] {
     * @since 2008.1
     * @return
     */
-  def getBody(): js.Any = js.native
+  def getBody(): Any = js.native
   
   /**
     * return the value of an uploaded file.
@@ -125,7 +125,7 @@ Instantiable0[js.Any] {
     * @param line
     * @return
     */
-  def getLineItemValue(group: String, name: String, line: js.Any): String = js.native
+  def getLineItemValue(group: String, name: String, line: Any): String = js.native
   
   /**
     * return the METHOD of the request

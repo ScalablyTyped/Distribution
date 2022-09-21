@@ -14,7 +14,7 @@ object global {
     
     @JSGlobal("d3kit.AbstractChart")
     @js.native
-    class AbstractChart protected ()
+    open class AbstractChart protected ()
       extends typings.d3kit.mod.AbstractChart {
       def this(selector: String) = this()
       def this(selector: Element) = this()
@@ -33,7 +33,7 @@ object global {
     
     @JSGlobal("d3kit.AbstractPlate")
     @js.native
-    class AbstractPlate protected ()
+    open class AbstractPlate protected ()
       extends typings.d3kit.mod.AbstractPlate {
       def this(selector: String) = this()
       def this(selector: Element) = this()
@@ -53,7 +53,7 @@ object global {
     
     @JSGlobal("d3kit.Base")
     @js.native
-    class Base ()
+    open class Base ()
       extends typings.d3kit.mod.Base {
       def this(options: ChartOptions) = this()
     }
@@ -70,7 +70,7 @@ object global {
     
     @JSGlobal("d3kit.CanvasChart")
     @js.native
-    class CanvasChart protected ()
+    open class CanvasChart protected ()
       extends typings.d3kit.mod.CanvasChart {
       def this(selector: String) = this()
       def this(selector: Element) = this()
@@ -89,7 +89,7 @@ object global {
     
     @JSGlobal("d3kit.CanvasPlate")
     @js.native
-    class CanvasPlate ()
+    open class CanvasPlate ()
       extends typings.d3kit.mod.CanvasPlate {
       def this(options: ChartOptions) = this()
     }
@@ -106,7 +106,7 @@ object global {
     
     @JSGlobal("d3kit.DivPlate")
     @js.native
-    class DivPlate ()
+    open class DivPlate ()
       extends typings.d3kit.mod.DivPlate {
       def this(options: ChartOptions) = this()
     }
@@ -123,7 +123,7 @@ object global {
     
     @JSGlobal("d3kit.HybridChart")
     @js.native
-    class HybridChart protected ()
+    open class HybridChart protected ()
       extends typings.d3kit.mod.HybridChart {
       def this(selector: String) = this()
       def this(selector: Element) = this()
@@ -142,15 +142,15 @@ object global {
     
     @JSGlobal("d3kit.LayerOrganizer")
     @js.native
-    class LayerOrganizer protected ()
+    open class LayerOrganizer protected ()
       extends typings.d3kit.mod.LayerOrganizer {
-      def this(container: Selection_[BaseType, js.Any, BaseType, js.Any]) = this()
-      def this(container: Selection_[BaseType, js.Any, BaseType, js.Any], defaultTag: String) = this()
+      def this(container: Selection_[BaseType, Any, BaseType, Any]) = this()
+      def this(container: Selection_[BaseType, Any, BaseType, Any], defaultTag: String) = this()
     }
     
     @JSGlobal("d3kit.SvgChart")
     @js.native
-    class SvgChart protected ()
+    open class SvgChart protected ()
       extends typings.d3kit.mod.SvgChart {
       def this(selector: String) = this()
       def this(selector: Element) = this()
@@ -160,7 +160,7 @@ object global {
     
     @JSGlobal("d3kit.SvgPlate")
     @js.native
-    class SvgPlate ()
+    open class SvgPlate ()
       extends typings.d3kit.mod.SvgPlate {
       def this(options: ChartOptions) = this()
     }
@@ -181,23 +181,23 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def debounce(fn: js.Function1[/* repeated */ js.Any, Unit], delay: Double): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+      inline def debounce(fn: js.Function1[/* repeated */ Any, Unit], delay: Double): js.Function1[/* repeated */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
       
-      inline def deepExtend(dest: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepExtend")(dest.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def deepExtend(dest: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepExtend")(List(dest.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
       
-      inline def extend(dest: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(dest.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def extend(dest: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(List(dest.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
       
-      inline def functor(value: js.Any): js.Function1[/* repeated */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("functor")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
+      inline def functor(value: Any): js.Function1[/* repeated */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("functor")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Any]]
       
-      inline def isFunction(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isFunction(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      inline def isObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isObject(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       inline def kebabCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("kebabCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      inline def rebind(target: js.Any, source: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("rebind")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def rebind(target: Any, source: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("rebind")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Any]
       
-      inline def throttle(fn: js.Function1[/* repeated */ js.Any, Unit], delay: Double): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+      inline def throttle(fn: js.Function1[/* repeated */ Any, Unit], delay: Double): js.Function1[/* repeated */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
     }
   }
 }

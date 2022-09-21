@@ -10,10 +10,10 @@ For HTTP `Authorization` and `WWW-Authenticate` headers.
 | ------------------ | :-------------: |
 | Full name          | auth-header |
 | Keywords           | http, express, basic, auth, authorization |
-| # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 1419913 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 272074.6666666667 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/izaakschroeder/auth-header)

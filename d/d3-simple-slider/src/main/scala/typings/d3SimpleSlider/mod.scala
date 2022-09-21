@@ -31,8 +31,8 @@ object mod {
       *
       * @param context A [selection](https://github.com/d3/d3-selection) of SVG containers (either SVG or G elements) or a corresponding [transition](https://github.com/d3/d3-transition).
       */
-    def apply(context: Selection_[SVGGElement | SVGSVGElement, js.Any, js.Any, js.Any]): Unit = js.native
-    def apply(context: TransitionLike[SVGGElement | SVGSVGElement, js.Any]): Unit = js.native
+    def apply(context: Selection_[SVGGElement | SVGSVGElement, Any, Any, Any]): Unit = js.native
+    def apply(context: TransitionLike[SVGGElement | SVGSVGElement, Any]): Unit = js.native
     
     /**
       * Gets the current domain underlying the slider.

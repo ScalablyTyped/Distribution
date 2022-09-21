@@ -18,7 +18,7 @@ trait ContentControlListEntry extends StObject {
   
   def MoveUp(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Select(): Unit
   
@@ -38,7 +38,7 @@ object ContentControlListEntry {
     Index: Double,
     MoveDown: () => Unit,
     MoveUp: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     Select: () => Unit,
     Text: String,
     Value: String,
@@ -63,7 +63,7 @@ object ContentControlListEntry {
     
     inline def setMoveUp(value: () => Unit): Self = StObject.set(x, "MoveUp", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     

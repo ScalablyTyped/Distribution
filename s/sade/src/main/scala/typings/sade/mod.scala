@@ -1,63 +1,34 @@
 package typings.sade
 
-import typings.mri.mod.Options
-import typings.sade.anon.ReadonlyCommandOptions
-import typings.sade.anon.lazytrueParseOptions
+import typings.sade.anon.Alias
+import typings.sade.anon.lazybooleanundefinedOptio
+import typings.sade.anon.lazytrueOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(str: String): Sade = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Sade]
-  inline def apply(str: String, isOne: Boolean): Sade = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], isOne.asInstanceOf[js.Any])).asInstanceOf[Sade]
+  inline def apply(usage: String): Sade = ^.asInstanceOf[js.Dynamic].apply(usage.asInstanceOf[js.Any]).asInstanceOf[Sade]
+  inline def apply(usage: String, isSingle: Boolean): Sade = (^.asInstanceOf[js.Dynamic].apply(usage.asInstanceOf[js.Any], isSingle.asInstanceOf[js.Any])).asInstanceOf[Sade]
   
   @JSImport("sade", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  trait CommandOptions extends StObject {
-    
-    var default: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Optionally define one or more aliases for the current Command.
-      * When declared, the `opts.alias` value is passed directly to the [`prog.alias`](#progaliasnames) method.
-      */
-    var alias: js.UndefOr[String | js.Array[String]] = js.undefined
-  }
-  object CommandOptions {
-    
-    inline def apply(): CommandOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CommandOptions]
-    }
-    
-    extension [Self <: CommandOptions](x: Self) {
-      
-      inline def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
-      
-      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
-      
-      inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
-      
-      inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
-    }
-  }
+  type Arrayable[T] = T | js.Array[T]
   
   @js.native
   trait Handler extends StObject {
     
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(args: Any*): Any = js.native
   }
   
   trait LazyOutput extends StObject {
     
     var args: js.Array[String]
     
-    def handler(args: js.Any*): js.Any
+    def handler(args: Any*): Any
     @JSName("handler")
     var handler_Original: Handler
     
@@ -74,32 +45,11 @@ object mod {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setHandler(value: Handler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait ParseOptions
-    extends StObject
-       with Options {
-    
-    var `lazy`: js.UndefOr[Boolean] = js.undefined
-  }
-  object ParseOptions {
-    
-    inline def apply(): ParseOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ParseOptions]
-    }
-    
-    extension [Self <: ParseOptions](x: Self) {
-      
-      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
-      
-      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
     }
   }
   
@@ -108,32 +58,31 @@ object mod {
     
     def action(handler: Handler): Sade = js.native
     
-    /**
-      * Define one or more aliases for the current Command.
-      */
     def alias(names: String*): Sade = js.native
     
-    def command(str: String): Sade = js.native
-    def command(str: String, desc: String): Sade = js.native
-    def command(str: String, desc: String, opts: ReadonlyCommandOptions): Sade = js.native
-    def command(str: String, desc: Unit, opts: ReadonlyCommandOptions): Sade = js.native
+    def command(usage: String): Sade = js.native
+    def command(usage: String, description: String): Sade = js.native
+    def command(usage: String, description: String, options: Alias): Sade = js.native
+    def command(usage: String, description: Unit, options: Alias): Sade = js.native
     
-    def describe(str: String): Sade = js.native
-    def describe(str: js.Array[String]): Sade = js.native
+    def describe(text: Arrayable[String]): Sade = js.native
     
-    def example(str: String): Sade = js.native
+    def example(usage: String): Sade = js.native
     
-    def help(str: String): Unit = js.native
+    def help(): Unit = js.native
+    def help(cmd: String): Unit = js.native
     
-    def option(str: String, desc: String): Sade = js.native
-    def option(str: String, desc: String, `val`: String): Sade = js.native
-    def option(str: String, desc: String, `val`: Boolean): Sade = js.native
-    def option(str: String, desc: String, `val`: Double): Sade = js.native
+    def option(flag: String): Sade = js.native
+    def option(flag: String, description: String): Sade = js.native
+    def option(flag: String, description: String, value: Value): Sade = js.native
+    def option(flag: String, description: Unit, value: Value): Sade = js.native
     
     def parse(arr: js.Array[String]): Unit = js.native
-    def parse(arr: js.Array[String], opts: lazytrueParseOptions): LazyOutput = js.native
-    def parse(arr: js.Array[String], opts: ParseOptions): Unit = js.native
+    def parse(arr: js.Array[String], opts: lazybooleanundefinedOptio): Unit = js.native
+    def parse(arr: js.Array[String], opts: lazytrueOptions): LazyOutput = js.native
     
-    def version(str: String): Sade = js.native
+    def version(value: String): Sade = js.native
   }
+  
+  type Value = Double | String | Boolean | Null
 }

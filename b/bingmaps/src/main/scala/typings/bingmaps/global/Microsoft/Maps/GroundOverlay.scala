@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Microsoft.Maps.GroundOverlay")
 @js.native
-class GroundOverlay protected ()
+open class GroundOverlay protected ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.GroundOverlay {
   /**
@@ -82,7 +82,7 @@ class GroundOverlay protected ()
   
   /** Optional property to store any additional metadata for this layer. */
   /* CompleteClass */
-  var metadata: js.Any = js.native
+  var metadata: Any = js.native
   
   /**
     * Implement this method to perform any task that should be done when the overlay is added to the map.

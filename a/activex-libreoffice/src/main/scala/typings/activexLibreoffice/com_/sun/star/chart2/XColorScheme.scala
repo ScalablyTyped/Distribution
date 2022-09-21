@@ -27,7 +27,7 @@ object XColorScheme {
   inline def apply(
     acquire: () => Unit,
     getColorByIndex: Double => Color,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XColorScheme = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getColorByIndex = js.Any.fromFunction1(getColorByIndex), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

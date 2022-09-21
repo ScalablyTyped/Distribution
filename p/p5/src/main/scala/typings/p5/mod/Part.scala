@@ -46,7 +46,7 @@ trait Part extends StObject {
     *   @param callback The name of the callback you want
     *   to fire on every beat/tatum.
     */
-  def onStep(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+  def onStep(callback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
   
   /**
     *   Pause the part. Playback will resume from the
@@ -67,7 +67,7 @@ trait Part extends StObject {
     *   @param sequence Array of values to pass into the
     *   callback at each step of the phrase.
     */
-  def replaceSequence(phraseName: String, sequence: js.Array[js.Any]): Unit = js.native
+  def replaceSequence(phraseName: String, sequence: js.Array[Any]): Unit = js.native
   
   /**
     *   Set the tempo of this part, in Beats Per Minute.

@@ -1,8 +1,8 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.PartialClassNameMapListItDense
-import typings.materialUiCore.anon.PartialTypographyProps
+import typings.materialUiCore.anon.`5`
+import typings.materialUiCore.anon.`6`
 import typings.materialUiCore.materialUiCoreStrings.`additions removals`
 import typings.materialUiCore.materialUiCoreStrings.`additions text`
 import typings.materialUiCore.materialUiCoreStrings.`inline`
@@ -53,18 +53,20 @@ import typings.materialUiCore.materialUiCoreStrings.tree
 import typings.materialUiCore.materialUiCoreStrings.url
 import typings.materialUiCore.materialUiCoreStrings.vertical
 import typings.materialUiCore.materialUiCoreStrings.yes
+import typings.materialUiCore.typographyTypographyMod.TypographyProps
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
-import typings.react.mod.ComponentType
 import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
+import typings.react.mod.ElementType
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
@@ -80,7 +82,6 @@ import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.react.mod.RefObject
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -90,25 +91,28 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.react.mod.global.JSX.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object listItemTextListItemTextMod extends Shortcut {
+object listItemTextListItemTextMod {
   
-  @JSImport("@material-ui/core/ListItemText/ListItemText", JSImport.Default)
+  @JSImport("@material-ui/core/ListItemText/ListItemText", JSImport.Namespace)
   @js.native
-  val default: ComponentType[ListItemTextProps] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[PrimaryTypographyComponent /* <: ElementType[Any] */, SecondaryTypographyComponent /* <: ElementType[Any] */](props: ListItemTextProps[PrimaryTypographyComponent, SecondaryTypographyComponent]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiCore.materialUiCoreStrings.root
-    - typings.materialUiCore.materialUiCoreStrings.inset
+    - typings.materialUiCore.materialUiCoreStrings.multiline
     - typings.materialUiCore.materialUiCoreStrings.dense
+    - typings.materialUiCore.materialUiCoreStrings.inset
     - typings.materialUiCore.materialUiCoreStrings.primary
     - typings.materialUiCore.materialUiCoreStrings.secondary
-    - typings.materialUiCore.materialUiCoreStrings.textDense
   */
   trait ListItemTextClassKey extends StObject
   object ListItemTextClassKey {
@@ -117,17 +121,17 @@ object listItemTextListItemTextMod extends Shortcut {
     
     inline def inset: typings.materialUiCore.materialUiCoreStrings.inset = "inset".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.inset]
     
+    inline def multiline: typings.materialUiCore.materialUiCoreStrings.multiline = "multiline".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.multiline]
+    
     inline def primary: typings.materialUiCore.materialUiCoreStrings.primary = "primary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.primary]
     
     inline def root: typings.materialUiCore.materialUiCoreStrings.root = "root".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.root]
     
     inline def secondary: typings.materialUiCore.materialUiCoreStrings.secondary = "secondary".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.secondary]
-    
-    inline def textDense: typings.materialUiCore.materialUiCoreStrings.textDense = "textDense".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.textDense]
   }
   
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, @material-ui/core.@material-ui/core/ListItemText/ListItemText.ListItemTextClassKey, never> */
-  trait ListItemTextProps extends StObject {
+  trait ListItemTextProps[PrimaryTypographyComponent /* <: ElementType[Any] */, SecondaryTypographyComponent /* <: ElementType[Any] */] extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
     
@@ -135,11 +139,11 @@ object listItemTextListItemTextMod extends Shortcut {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -157,21 +161,21 @@ object listItemTextListItemTextMod extends Shortcut {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -185,11 +189,11 @@ object listItemTextListItemTextMod extends Shortcut {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -201,13 +205,13 @@ object listItemTextListItemTextMod extends Shortcut {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -217,7 +221,7 @@ object listItemTextListItemTextMod extends Shortcut {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -237,10 +241,16 @@ object listItemTextListItemTextMod extends Shortcut {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Alias for the `primary` prop.
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Override or extend the styles applied to the component.
+      */
     var classes: js.UndefOr[PartialClassNameMapListItDense] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
@@ -259,6 +269,12 @@ object listItemTextListItemTextMod extends Shortcut {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * If `true`, the children won't be wrapped by a Typography component.
+      * This can be useful to render an alternative Typography variant by wrapping
+      * the `children` (or `primary`) text, and optional `secondary` text
+      * with the Typography component.
+      */
     var disableTypography: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
@@ -267,12 +283,16 @@ object listItemTextListItemTextMod extends Shortcut {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
+    var innerRef: js.UndefOr[Ref[Any]] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
+    /**
+      * If `true`, the children will be indented.
+      * This should be used if there is no left avatar or left icon.
+      */
     var inset: js.UndefOr[Boolean] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
@@ -451,23 +471,39 @@ object listItemTextListItemTextMod extends Shortcut {
     
     var prefix: js.UndefOr[String] = js.undefined
     
+    /**
+      * The main content element.
+      */
     var primary: js.UndefOr[ReactNode] = js.undefined
     
-    var primaryTypographyProps: js.UndefOr[PartialTypographyProps] = js.undefined
+    /**
+      * These props will be forwarded to the primary typography component
+      * (as long as disableTypography is not `true`).
+      */
+    var primaryTypographyProps: js.UndefOr[TypographyProps[PrimaryTypographyComponent, `5`[PrimaryTypographyComponent]]] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var ref: js.UndefOr[Ref[Any]] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
+    /**
+      * The secondary content element.
+      */
     var secondary: js.UndefOr[ReactNode] = js.undefined
     
-    var secondaryTypographyProps: js.UndefOr[PartialTypographyProps] = js.undefined
+    /**
+      * These props will be forwarded to the secondary typography component
+      * (as long as disableTypography is not `true`).
+      */
+    var secondaryTypographyProps: js.UndefOr[TypographyProps[SecondaryTypographyComponent, `6`[SecondaryTypographyComponent]]] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -495,12 +531,12 @@ object listItemTextListItemTextMod extends Shortcut {
   }
   object ListItemTextProps {
     
-    inline def apply(): ListItemTextProps = {
+    inline def apply[PrimaryTypographyComponent /* <: ElementType[Any] */, SecondaryTypographyComponent /* <: ElementType[Any] */](): ListItemTextProps[PrimaryTypographyComponent, SecondaryTypographyComponent] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ListItemTextProps]
+      __obj.asInstanceOf[ListItemTextProps[PrimaryTypographyComponent, SecondaryTypographyComponent]]
     }
     
-    extension [Self <: ListItemTextProps](x: Self) {
+    extension [Self <: ListItemTextProps[?, ?], PrimaryTypographyComponent /* <: ElementType[Any] */, SecondaryTypographyComponent /* <: ElementType[Any] */](x: Self & (ListItemTextProps[PrimaryTypographyComponent, SecondaryTypographyComponent])) {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -514,7 +550,7 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -522,7 +558,7 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -558,7 +594,7 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -570,7 +606,7 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -578,7 +614,7 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -586,7 +622,7 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -614,15 +650,15 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -646,7 +682,7 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -656,7 +692,7 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -676,7 +712,7 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -756,7 +792,7 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -778,13 +814,13 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
-      inline def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
@@ -850,7 +886,7 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLDivElement, typings.std.Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -950,7 +986,7 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLDivElement, typings.std.Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1152,7 +1188,7 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def setPrimary(value: ReactNode): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      inline def setPrimaryTypographyProps(value: PartialTypographyProps): Self = StObject.set(x, "primaryTypographyProps", value.asInstanceOf[js.Any])
+      inline def setPrimaryTypographyProps(value: TypographyProps[PrimaryTypographyComponent, `5`[PrimaryTypographyComponent]]): Self = StObject.set(x, "primaryTypographyProps", value.asInstanceOf[js.Any])
       
       inline def setPrimaryTypographyPropsUndefined: Self = StObject.set(x, "primaryTypographyProps", js.undefined)
       
@@ -1166,6 +1202,14 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1174,13 +1218,13 @@ object listItemTextListItemTextMod extends Shortcut {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
       inline def setSecondary(value: ReactNode): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
       
-      inline def setSecondaryTypographyProps(value: PartialTypographyProps): Self = StObject.set(x, "secondaryTypographyProps", value.asInstanceOf[js.Any])
+      inline def setSecondaryTypographyProps(value: TypographyProps[SecondaryTypographyComponent, `6`[SecondaryTypographyComponent]]): Self = StObject.set(x, "secondaryTypographyProps", value.asInstanceOf[js.Any])
       
       inline def setSecondaryTypographyPropsUndefined: Self = StObject.set(x, "secondaryTypographyProps", js.undefined)
       
@@ -1235,9 +1279,4 @@ object listItemTextListItemTextMod extends Shortcut {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
-  
-  type _To = ComponentType[ListItemTextProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `listItemTextListItemTextMod.foo` */
-  override def _to: ComponentType[ListItemTextProps] = default
 }

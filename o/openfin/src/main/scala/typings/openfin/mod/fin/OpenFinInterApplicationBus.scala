@@ -24,17 +24,17 @@ trait OpenFinInterApplicationBus extends StObject {
   /**
     * Publishes a message to all applications running on OpenFin Runtime that are subscribed to the specified topic.
     */
-  def publish(topic: String, message: js.Any): Unit = js.native
-  def publish(topic: String, message: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  def publish(topic: String, message: Any): Unit = js.native
+  def publish(topic: String, message: Any, callback: js.Function0[Unit]): Unit = js.native
   def publish(
     topic: String,
-    message: js.Any,
+    message: Any,
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   def publish(
     topic: String,
-    message: js.Any,
+    message: Any,
     callback: Unit,
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
@@ -52,19 +52,13 @@ trait OpenFinInterApplicationBus extends StObject {
   /**
     * Sends a message to a specific application on a specific topic.
     */
-  def send(destinationUuid: String, name: String, topic: String, message: js.Any): Unit = js.native
+  def send(destinationUuid: String, name: String, topic: String, message: Any): Unit = js.native
+  def send(destinationUuid: String, name: String, topic: String, message: Any, callback: js.Function0[Unit]): Unit = js.native
   def send(
     destinationUuid: String,
     name: String,
     topic: String,
-    message: js.Any,
-    callback: js.Function0[Unit]
-  ): Unit = js.native
-  def send(
-    destinationUuid: String,
-    name: String,
-    topic: String,
-    message: js.Any,
+    message: Any,
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
@@ -72,23 +66,23 @@ trait OpenFinInterApplicationBus extends StObject {
     destinationUuid: String,
     name: String,
     topic: String,
-    message: js.Any,
+    message: Any,
     callback: Unit,
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
-  def send(destinationUuid: String, topic: String, message: js.Any): Unit = js.native
-  def send(destinationUuid: String, topic: String, message: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  def send(destinationUuid: String, topic: String, message: Any): Unit = js.native
+  def send(destinationUuid: String, topic: String, message: Any, callback: js.Function0[Unit]): Unit = js.native
   def send(
     destinationUuid: String,
     topic: String,
-    message: js.Any,
+    message: Any,
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   def send(
     destinationUuid: String,
     topic: String,
-    message: js.Any,
+    message: Any,
     callback: Unit,
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
@@ -101,20 +95,20 @@ trait OpenFinInterApplicationBus extends StObject {
     senderUuid: String,
     name: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit]
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit]
   ): Unit = js.native
   def subscribe(
     senderUuid: String,
     name: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit],
     callback: js.Function0[Unit]
   ): Unit = js.native
   def subscribe(
     senderUuid: String,
     name: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit],
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
@@ -122,32 +116,32 @@ trait OpenFinInterApplicationBus extends StObject {
     senderUuid: String,
     name: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit],
     callback: Unit,
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   def subscribe(
     senderUuid: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit]
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit]
   ): Unit = js.native
   def subscribe(
     senderUuid: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit],
     callback: js.Function0[Unit]
   ): Unit = js.native
   def subscribe(
     senderUuid: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit],
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   def subscribe(
     senderUuid: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit],
     callback: Unit,
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
@@ -159,20 +153,20 @@ trait OpenFinInterApplicationBus extends StObject {
     senderUuid: String,
     name: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit]
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit]
   ): Unit = js.native
   def unsubscribe(
     senderUuid: String,
     name: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit],
     callback: js.Function0[Unit]
   ): Unit = js.native
   def unsubscribe(
     senderUuid: String,
     name: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit],
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
@@ -180,32 +174,32 @@ trait OpenFinInterApplicationBus extends StObject {
     senderUuid: String,
     name: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit],
     callback: Unit,
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   def unsubscribe(
     senderUuid: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit]
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit]
   ): Unit = js.native
   def unsubscribe(
     senderUuid: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit],
     callback: js.Function0[Unit]
   ): Unit = js.native
   def unsubscribe(
     senderUuid: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit],
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   def unsubscribe(
     senderUuid: String,
     topic: String,
-    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    listener: js.Function3[/* message */ Any, /* uuid */ String, /* name */ String, Unit],
     callback: Unit,
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native

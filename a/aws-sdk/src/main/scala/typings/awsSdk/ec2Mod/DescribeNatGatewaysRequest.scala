@@ -48,7 +48,7 @@ object DescribeNatGatewaysRequest {
     
     inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    inline def setFilterVarargs(value: Filter*): Self = StObject.set(x, "Filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: Filter*): Self = StObject.set(x, "Filter", js.Array(value*))
     
     inline def setMaxResults(value: DescribeNatGatewaysMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -58,7 +58,7 @@ object DescribeNatGatewaysRequest {
     
     inline def setNatGatewayIdsUndefined: Self = StObject.set(x, "NatGatewayIds", js.undefined)
     
-    inline def setNatGatewayIdsVarargs(value: NatGatewayId*): Self = StObject.set(x, "NatGatewayIds", js.Array(value :_*))
+    inline def setNatGatewayIdsVarargs(value: NatGatewayId*): Self = StObject.set(x, "NatGatewayIds", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

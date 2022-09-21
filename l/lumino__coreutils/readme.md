@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__coreutils
 
-Typings are for version 1.5.3
+Typings are for version 1.12.1
 
 ## Library description:
 Lumino Core Utilities
@@ -10,15 +10,12 @@ Lumino Core Utilities
 | ------------------ | :-------------: |
 | Full name          | @lumino/coreutils |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 217 |
-| # downloads        | 1411209 |
-| # stars            | 0 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 313660.3333333333 |
+| # stars            | 370.0 |
 
 ## Links
-- [Homepage](https://github.com/jupyterlab/lumino)
-- [Bugs](https://github.com/jupyterlab/lumino/issues)
-- [Repository](https://github.com/jupyterlab/lumino)
 - [Npm](https://www.npmjs.com/package/%40lumino%2Fcoreutils)
     
 

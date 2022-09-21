@@ -31,7 +31,7 @@ trait Ets extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The parent eventStore name, such as "projects/1234/locations/global/catalogs/default_catalog/eventStores/default_event_store". */
+  /** Required. The parent eventStore name, such as `projects/1234/locations/global/catalogs/default_catalog/eventStores/default_event_store`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

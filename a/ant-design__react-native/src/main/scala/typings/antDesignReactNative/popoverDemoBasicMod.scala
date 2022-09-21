@@ -9,8 +9,8 @@ object popoverDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/popover/demo/basic", JSImport.Default)
   @js.native
-  class default protected () extends PopoverExample {
-    def this(props: js.Any) = this()
+  open class default protected () extends PopoverExample {
+    def this(props: Any) = this()
   }
   
   @JSImport("@ant-design/react-native/lib/popover/demo/basic", "description")
@@ -22,11 +22,10 @@ object popoverDemoBasicMod {
   val title: /* "Popover" */ String = js.native
   
   @js.native
-  trait PopoverExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait PopoverExample extends Component[Any, Any, Any] {
     
-    def onSelect(value: js.Any): Unit = js.native
+    def onSelect(value: Any): Unit = js.native
     
-    /* private */ var renderList: js.Any = js.native
+    /* private */ var renderList: Any = js.native
   }
 }

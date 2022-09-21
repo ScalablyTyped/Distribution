@@ -25,6 +25,6 @@ object ModifyColumnFamiliesRequest {
     
     inline def setModificationsUndefined: Self = StObject.set(x, "modifications", js.undefined)
     
-    inline def setModificationsVarargs(value: Modification*): Self = StObject.set(x, "modifications", js.Array(value :_*))
+    inline def setModificationsVarargs(value: Modification*): Self = StObject.set(x, "modifications", js.Array(value*))
   }
 }

@@ -9,7 +9,7 @@ trait UpdateProjectResponse extends StObject {
   /**
     * The date and time that the project was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the project that you updated.
@@ -25,7 +25,7 @@ object UpdateProjectResponse {
   
   extension [Self <: UpdateProjectResponse](x: Self) {
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     

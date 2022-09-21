@@ -17,33 +17,33 @@ trait LogManager extends StObject {
     * 写debug日志
     * @param args 要记录的日志内容
     */
-  def debug(args: js.Any*): Unit
+  def debug(args: Any*): Unit
   
   /**
     * 写info日志
     * @param args 要记录的日志内容
     */
-  def info(args: js.Any*): Unit
+  def info(args: Any*): Unit
   
   /**
     * 写log日志
     * @param args 要记录的日志内容
     */
-  def log(args: js.Any*): Unit
+  def log(args: Any*): Unit
   
   /**
     * 写warn日志
     * @param args 要记录的日志内容
     */
-  def warn(args: js.Any*): Unit
+  def warn(args: Any*): Unit
 }
 object LogManager {
   
   inline def apply(
-    debug: /* repeated */ js.Any => Unit,
-    info: /* repeated */ js.Any => Unit,
-    log: /* repeated */ js.Any => Unit,
-    warn: /* repeated */ js.Any => Unit
+    debug: /* repeated */ Any => Unit,
+    info: /* repeated */ Any => Unit,
+    log: /* repeated */ Any => Unit,
+    warn: /* repeated */ Any => Unit
   ): LogManager = {
     val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), info = js.Any.fromFunction1(info), log = js.Any.fromFunction1(log), warn = js.Any.fromFunction1(warn))
     __obj.asInstanceOf[LogManager]
@@ -51,12 +51,12 @@ object LogManager {
   
   extension [Self <: LogManager](x: Self) {
     
-    inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
-    inline def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+    inline def setInfo(value: /* repeated */ Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     
-    inline def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: /* repeated */ Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     
-    inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    inline def setWarn(value: /* repeated */ Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

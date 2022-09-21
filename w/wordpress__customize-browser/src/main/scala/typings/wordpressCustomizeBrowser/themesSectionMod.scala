@@ -16,7 +16,7 @@ object themesSectionMod {
   
   @JSImport("@wordpress/customize-browser/ThemesSection", "ThemesSection")
   @js.native
-  class ThemesSection protected () extends Section {
+  open class ThemesSection protected () extends Section {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     
@@ -56,7 +56,7 @@ object themesSectionMod {
     
     def loadMore(): Unit = js.native
     
-    def loadThemePreview(themeId: String): Promise[js.Any, js.Any, js.Any] = js.native
+    def loadThemePreview(themeId: String): Promise[Any, Any, Any] = js.native
     
     def loadThemes(): Unit = js.native
     

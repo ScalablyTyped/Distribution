@@ -10,10 +10,10 @@ The lodash method `_.before` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.before |
 | Keywords           | lodash-modularized, before |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 136241 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 30974.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

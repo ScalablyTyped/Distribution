@@ -14,58 +14,9 @@ object layoutProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  object LayoutProvider {
-    
-    inline def apply(
-      hasBaseIdPhoneLayoutTabletLayoutLandscapeTabletLayoutDesktopLayoutLargeDesktopLayoutChildren: LayoutProviderProps
-    ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasBaseIdPhoneLayoutTabletLayoutLandscapeTabletLayoutDesktopLayoutLargeDesktopLayoutChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-    
-    @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    object propTypes {
-      
-      @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider.propTypes")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider.propTypes.baseId")
-      @js.native
-      def baseId: js.Any = js.native
-      inline def baseId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("baseId")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider.propTypes.children")
-      @js.native
-      def children: js.Any = js.native
-      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider.propTypes.desktopLayout")
-      @js.native
-      def desktopLayout: js.Any = js.native
-      inline def desktopLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("desktopLayout")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider.propTypes.landscapeTabletLayout")
-      @js.native
-      def landscapeTabletLayout: js.Any = js.native
-      inline def landscapeTabletLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("landscapeTabletLayout")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider.propTypes.largeDesktopLayout")
-      @js.native
-      def largeDesktopLayout: js.Any = js.native
-      inline def largeDesktopLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("largeDesktopLayout")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider.propTypes.phoneLayout")
-      @js.native
-      def phoneLayout: js.Any = js.native
-      inline def phoneLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phoneLayout")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/layout/types/LayoutProvider", "LayoutProvider.propTypes.tabletLayout")
-      @js.native
-      def tabletLayout: js.Any = js.native
-      inline def tabletLayout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabletLayout")(x.asInstanceOf[js.Any])
-    }
-  }
+  inline def LayoutProvider(
+    hasBaseIdPhoneLayoutTabletLayoutLandscapeTabletLayoutDesktopLayoutLargeDesktopLayoutDefaultToggleableVisibleFixedAppBarChildren: LayoutProviderProps
+  ): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("LayoutProvider")(hasBaseIdPhoneLayoutTabletLayoutLandscapeTabletLayoutDesktopLayoutLargeDesktopLayoutDefaultToggleableVisibleFixedAppBarChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   inline def useLayoutConfig(): LayoutContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutConfig")().asInstanceOf[LayoutContext]
   
@@ -78,9 +29,26 @@ object layoutProviderMod {
     var baseId: String
     
     /**
+      * Boolean if the layout is currently using a fixed app bar which can be
+      * useful for determining specific scroll or layout behavior.
+      *
+      * @remarks \@since 2.8.3
+      */
+    var fixedAppBar: Boolean
+    
+    /**
       * A function that will set the `visible` state to `false`.
       */
     def hideNav(): Unit
+    
+    /**
+      * Boolean if one of the layout types are mini. This is mostly used internally
+      * to prevent the `<main>` element from unmounting (and losing state) for
+      * non-fixed app bar layouts.
+      *
+      * @remarks \@since 2.9.1
+      */
+    var isMiniable: Boolean
     
     /**
       * The current layout that is being used based on the app's size.
@@ -102,12 +70,14 @@ object layoutProviderMod {
     
     inline def apply(
       baseId: String,
+      fixedAppBar: Boolean,
       hideNav: () => Unit,
+      isMiniable: Boolean,
       layout: SupportedWideLayout,
       showNav: () => Unit,
       visible: Boolean
     ): LayoutContext = {
-      val __obj = js.Dynamic.literal(baseId = baseId.asInstanceOf[js.Any], hideNav = js.Any.fromFunction0(hideNav), layout = layout.asInstanceOf[js.Any], showNav = js.Any.fromFunction0(showNav), visible = visible.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(baseId = baseId.asInstanceOf[js.Any], fixedAppBar = fixedAppBar.asInstanceOf[js.Any], hideNav = js.Any.fromFunction0(hideNav), isMiniable = isMiniable.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], showNav = js.Any.fromFunction0(showNav), visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayoutContext]
     }
     
@@ -115,7 +85,11 @@ object layoutProviderMod {
       
       inline def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
       
+      inline def setFixedAppBar(value: Boolean): Self = StObject.set(x, "fixedAppBar", value.asInstanceOf[js.Any])
+      
       inline def setHideNav(value: () => Unit): Self = StObject.set(x, "hideNav", js.Any.fromFunction0(value))
+      
+      inline def setIsMiniable(value: Boolean): Self = StObject.set(x, "isMiniable", value.asInstanceOf[js.Any])
       
       inline def setLayout(value: SupportedWideLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
@@ -139,6 +113,9 @@ object layoutProviderMod {
       * The children to render that can inherit the current layout.
       */
     var children: ReactNode
+    
+    /** {@inheritDoc LayoutContext.fixedAppBar} */
+    var fixedAppBar: js.UndefOr[Boolean] = js.undefined
   }
   object LayoutProviderProps {
     
@@ -154,6 +131,10 @@ object layoutProviderMod {
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setFixedAppBar(value: Boolean): Self = StObject.set(x, "fixedAppBar", value.asInstanceOf[js.Any])
+      
+      inline def setFixedAppBarUndefined: Self = StObject.set(x, "fixedAppBar", js.undefined)
     }
   }
 }

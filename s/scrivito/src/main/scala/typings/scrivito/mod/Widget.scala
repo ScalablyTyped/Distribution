@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("scrivito", "Widget")
 @js.native
-class Widget protected () extends StObject {
+open class Widget protected () extends StObject {
   def this(arg: js.Object) = this()
   
   /* private */ val _id: String = js.native
@@ -20,7 +20,7 @@ class Widget protected () extends StObject {
   
   def destroy(): Unit = js.native
   
-  def get(attributeName: String): js.Any = js.native
+  def get(attributeName: String): Any = js.native
   
   def id(): String = js.native
   
@@ -28,5 +28,5 @@ class Widget protected () extends StObject {
   
   def objClass(): String = js.native
   
-  def update(attributes: js.Any): Unit = js.native
+  def update(attributes: Any): Unit = js.native
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "shorten-repo-url" : "3.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "shorten-repo-url" : "3.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

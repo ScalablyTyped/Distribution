@@ -26,7 +26,7 @@ object UrlMapsScopedList {
     
     inline def setUrlMapsUndefined: Self = StObject.set(x, "urlMaps", js.undefined)
     
-    inline def setUrlMapsVarargs(value: UrlMap*): Self = StObject.set(x, "urlMaps", js.Array(value :_*))
+    inline def setUrlMapsVarargs(value: UrlMap*): Self = StObject.set(x, "urlMaps", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

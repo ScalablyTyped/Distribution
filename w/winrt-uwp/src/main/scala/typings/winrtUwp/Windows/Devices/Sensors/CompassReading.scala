@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait CompassReading extends StObject {
   var headingTrueNorth: Double
   
   /** Gets the time at which the sensor reported the reading. */
-  var timestamp: Date
+  var timestamp: js.Date
 }
 object CompassReading {
   
@@ -26,7 +25,7 @@ object CompassReading {
     headingAccuracy: MagnetometerAccuracy,
     headingMagneticNorth: Double,
     headingTrueNorth: Double,
-    timestamp: Date
+    timestamp: js.Date
   ): CompassReading = {
     val __obj = js.Dynamic.literal(headingAccuracy = headingAccuracy.asInstanceOf[js.Any], headingMagneticNorth = headingMagneticNorth.asInstanceOf[js.Any], headingTrueNorth = headingTrueNorth.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompassReading]
@@ -40,6 +39,6 @@ object CompassReading {
     
     inline def setHeadingTrueNorth(value: Double): Self = StObject.set(x, "headingTrueNorth", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

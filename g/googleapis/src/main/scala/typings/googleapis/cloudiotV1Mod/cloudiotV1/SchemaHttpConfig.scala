@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The configuration of the HTTP bridge for a device registry.
-  */
 trait SchemaHttpConfig extends StObject {
   
   /**
-    * If enabled, allows devices to use DeviceService via the HTTP protocol.
-    * Otherwise, any requests to DeviceService will fail for this registry.
+    * If enabled, allows devices to use DeviceService via the HTTP protocol. Otherwise, any requests to DeviceService will fail for this registry.
     */
-  var httpEnabledState: js.UndefOr[String] = js.undefined
+  var httpEnabledState: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaHttpConfig {
   
@@ -25,6 +21,8 @@ object SchemaHttpConfig {
   extension [Self <: SchemaHttpConfig](x: Self) {
     
     inline def setHttpEnabledState(value: String): Self = StObject.set(x, "httpEnabledState", value.asInstanceOf[js.Any])
+    
+    inline def setHttpEnabledStateNull: Self = StObject.set(x, "httpEnabledState", null)
     
     inline def setHttpEnabledStateUndefined: Self = StObject.set(x, "httpEnabledState", js.undefined)
   }

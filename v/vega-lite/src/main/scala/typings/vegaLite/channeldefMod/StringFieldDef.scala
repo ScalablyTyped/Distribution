@@ -1,7 +1,6 @@
 package typings.vegaLite.channeldefMod
 
 import typings.vegaLite.binMod.BinParams
-import typings.vegaLite.srcGuideMod.FormatMixins
 import typings.vegaLite.srcTypeMod.StandardType
 import typings.vegaLite.vegaLiteStrings.binned
 import org.scalablytyped.runtime.StObject

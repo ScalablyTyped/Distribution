@@ -35,13 +35,13 @@ trait FileWriter extends StObject {
   
   var position: Double
   
-  var readyState: js.Any
+  var readyState: Any
   
   def seek(arg: Double): Unit
   
   def truncate(arg: Double): Unit
   
-  def write(arg: js.Any): Unit
+  def write(arg: Any): Unit
 }
 object FileWriter {
   
@@ -57,10 +57,10 @@ object FileWriter {
     onwriteend: js.Function,
     onwritestart: js.Function,
     position: Double,
-    readyState: js.Any,
+    readyState: Any,
     seek: Double => Unit,
     truncate: Double => Unit,
-    write: js.Any => Unit
+    write: Any => Unit
   ): FileWriter = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), error = error.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], onabort = onabort.asInstanceOf[js.Any], onerror = onerror.asInstanceOf[js.Any], onprogress = onprogress.asInstanceOf[js.Any], onwrite = onwrite.asInstanceOf[js.Any], onwriteend = onwriteend.asInstanceOf[js.Any], onwritestart = onwritestart.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], readyState = readyState.asInstanceOf[js.Any], seek = js.Any.fromFunction1(seek), truncate = js.Any.fromFunction1(truncate), write = js.Any.fromFunction1(write))
     __obj.asInstanceOf[FileWriter]
@@ -90,12 +90,12 @@ object FileWriter {
     
     inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    inline def setReadyState(value: js.Any): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
+    inline def setReadyState(value: Any): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
     
     inline def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
     
     inline def setTruncate(value: Double => Unit): Self = StObject.set(x, "truncate", js.Any.fromFunction1(value))
     
-    inline def setWrite(value: js.Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    inline def setWrite(value: Any => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
   }
 }

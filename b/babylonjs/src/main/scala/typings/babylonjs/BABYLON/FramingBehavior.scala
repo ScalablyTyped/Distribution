@@ -9,24 +9,24 @@ trait FramingBehavior
   extends StObject
      with Behavior[ArcRotateCamera] {
   
-  /* private */ var _animatables: js.Any = js.native
+  /* private */ var _animatables: Any = js.native
   
   /**
     *  Applies any current user interaction to the camera. Takes into account maximum alpha rotation.
     */
-  /* private */ var _applyUserInteraction: js.Any = js.native
+  /* private */ var _applyUserInteraction: Any = js.native
   
-  /* private */ var _attachedCamera: js.Any = js.native
+  /* private */ var _attachedCamera: Any = js.native
   
-  /* private */ var _betaIsAnimating: js.Any = js.native
+  /* private */ var _betaIsAnimating: Any = js.native
   
-  /* private */ var _betaTransition: js.Any = js.native
+  /* private */ var _betaTransition: Any = js.native
   
   /**
     * Calculates the lowest radius for the camera based on the bounding box of the mesh.
-    * @param mesh The mesh on which to base the calculation. mesh boundingInfo used to estimate necessary
-    *			  frustum width.
-    * @return The minimum distance from the primary mesh's center point at which the camera must be kept in order
+    * @param minimumWorld
+    * @param maximumWorld
+    * @returns The minimum distance from the primary mesh's center point at which the camera must be kept in order
     *		 to fully enclose the mesh in the viewing frustum.
     */
   /* protected */ def _calculateLowerRadiusFromModelBoundingSphere(minimumWorld: Vector3, maximumWorld: Vector3): Double = js.native
@@ -34,49 +34,49 @@ trait FramingBehavior
   /**
     * Removes all animation locks. Allows new animations to be added to any of the arcCamera properties.
     */
-  /* private */ var _clearAnimationLocks: js.Any = js.native
+  /* private */ var _clearAnimationLocks: Any = js.native
   
-  /* private */ var _defaultElevation: js.Any = js.native
+  /* private */ var _defaultElevation: Any = js.native
   
-  /* private */ var _elevationReturnTime: js.Any = js.native
+  /* private */ var _elevationReturnTime: Any = js.native
   
-  /* private */ var _elevationReturnWaitTime: js.Any = js.native
+  /* private */ var _elevationReturnWaitTime: Any = js.native
   
-  /* private */ var _framingTime: js.Any = js.native
+  /* private */ var _framingTime: Any = js.native
   
   /**
     * Returns the frustum slope based on the canvas ratio and camera FOV
     * @returns The frustum slope represented as a Vector2 with X and Y slopes
     */
-  /* private */ var _getFrustumSlope: js.Any = js.native
+  /* private */ var _getFrustumSlope: Any = js.native
   
-  /* private */ var _isPointerDown: js.Any = js.native
+  /* private */ var _isPointerDown: Any = js.native
   
-  /* private */ var _lastInteractionTime: js.Any = js.native
+  /* private */ var _lastInteractionTime: Any = js.native
   
   /**
     * Keeps the camera above the ground plane. If the user pulls the camera below the ground plane, the camera
     * is automatically returned to its default position (expected to be above ground plane).
     */
-  /* private */ var _maintainCameraAboveGround: js.Any = js.native
+  /* private */ var _maintainCameraAboveGround: Any = js.native
   
-  /* private */ var _mode: js.Any = js.native
+  /* private */ var _mode: Any = js.native
   
-  /* private */ var _onAfterCheckInputsObserver: js.Any = js.native
+  /* private */ var _onAfterCheckInputsObserver: Any = js.native
   
-  /* private */ var _onMeshTargetChangedObserver: js.Any = js.native
+  /* private */ var _onMeshTargetChangedObserver: Any = js.native
   
-  /* private */ var _onPrePointerObservableObserver: js.Any = js.native
+  /* private */ var _onPrePointerObservableObserver: Any = js.native
   
-  /* private */ var _positionScale: js.Any = js.native
+  /* private */ var _positionScale: Any = js.native
   
-  /* private */ var _radiusScale: js.Any = js.native
+  /* private */ var _radiusScale: Any = js.native
   
-  /* private */ var _radiusTransition: js.Any = js.native
+  /* private */ var _radiusTransition: Any = js.native
   
-  /* private */ var _vectorTransition: js.Any = js.native
+  /* private */ var _vectorTransition: Any = js.native
   
-  /* private */ var _zoomStopsAnimation: js.Any = js.native
+  /* private */ var _zoomStopsAnimation: Any = js.native
   
   /**
     * Define if the behavior should automatically change the configured
@@ -143,6 +143,11 @@ trait FramingBehavior
     */
   @JSName("name")
   def name_MFramingBehavior: String = js.native
+  
+  /**
+    * An event triggered when the animation to zoom on target mesh has ended
+    */
+  var onTargetFramingAnimationEndObservable: Observable[Unit] = js.native
   
   /**
     * Gets the scale to apply on Y axis to position camera focus. 0.5 by default which means the center of the bounding box.

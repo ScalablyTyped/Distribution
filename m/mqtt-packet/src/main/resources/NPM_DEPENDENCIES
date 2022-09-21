@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mqtt-packet" : "6.6.0"
+      "mqtt-packet" : "8.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "mqtt-packet" : "6.6.0"
+      "mqtt-packet" : "8.1.2"
     }
   ],
   "compile-devDependencies" : [

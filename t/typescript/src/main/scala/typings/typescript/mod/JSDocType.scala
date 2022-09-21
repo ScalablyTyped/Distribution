@@ -9,5 +9,5 @@ trait JSDocType
   extends StObject
      with TypeNode {
   
-  var _jsDocTypeBrand: js.Any = js.native
+  var _jsDocTypeBrand: Any = js.native
 }

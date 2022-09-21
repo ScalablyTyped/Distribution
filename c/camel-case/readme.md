@@ -1,7 +1,7 @@
 
 # Scala.js typings for camel-case
 
-Typings are for version 4.1.1
+Typings are for version 4.1.2
 
 ## Library description:
 Transform into a string with the separator denoted by the next word capitalized
@@ -10,10 +10,10 @@ Transform into a string with the separator denoted by the next word capitalized
 | ------------------ | :-------------: |
 | Full name          | camel-case |
 | Keywords           | camel, case, camelcase, camel-case, convert, transform, identifier |
-| # releases         | 6 |
-| # dependents       | 407 |
-| # downloads        | 419142368 |
-| # stars            | 6 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 6.4911615333333336E7 |
+| # stars            | 1788.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/camel-case#readme)

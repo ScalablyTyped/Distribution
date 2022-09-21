@@ -20,7 +20,7 @@ trait XReschedule
 }
 object XReschedule {
   
-  inline def apply(acquire: () => Unit, queryInterface: `type` => js.Any, release: () => Unit, reschedule: () => Unit): XReschedule = {
+  inline def apply(acquire: () => Unit, queryInterface: `type` => Any, release: () => Unit, reschedule: () => Unit): XReschedule = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), reschedule = js.Any.fromFunction0(reschedule))
     __obj.asInstanceOf[XReschedule]
   }

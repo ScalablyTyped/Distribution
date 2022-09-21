@@ -1,8 +1,12 @@
 package typings.webpackAssetsManifest
 
+import typings.std.Set
+import typings.tapable.mod.AsyncSeriesHook
 import typings.tapable.mod.SyncHook
 import typings.tapable.mod.SyncWaterfallHook
-import typings.webpackAssetsManifest.mod.AnyObject
+import typings.tapable.mod.UnsetAdditionalOptions
+import typings.webpack.mod.Asset
+import typings.webpack.mod.Stats
 import typings.webpackAssetsManifest.mod.Entry
 import typings.webpackAssetsManifest.mod.Options
 import typings.webpackAssetsManifest.mod.WebpackAssetsManifest
@@ -14,33 +18,40 @@ object anon {
   
   trait AfterOptions extends StObject {
     
-    var afterOptions: SyncHook[Options, js.Any, js.Any]
+    var afterOptions: SyncHook[js.Array[Options], Unit, UnsetAdditionalOptions]
     
     @JSName("apply")
-    var apply: SyncHook[WebpackAssetsManifest, js.Any, js.Any]
+    var apply: SyncHook[js.Array[WebpackAssetsManifest], Unit, UnsetAdditionalOptions]
     
-    /**
-      * The `SyncWaterfallHook` class supports 3 type parameters only but this hook actually has 4 parameters. The type of 4th parameter is `AnyObject`.
-      *
-      * Refer to https://github.com/webdeveric/webpack-assets-manifest#hooks for details
-      */
-    var customize: SyncWaterfallHook[Entry, AnyObject, WebpackAssetsManifest]
+    var customize: SyncWaterfallHook[
+        js.Tuple4[Entry, Entry, WebpackAssetsManifest, Asset | Null], 
+        UnsetAdditionalOptions
+      ]
     
-    var done: SyncHook[WebpackAssetsManifest, AnyObject, js.Any]
+    var done: AsyncSeriesHook[js.Tuple2[WebpackAssetsManifest, Stats], UnsetAdditionalOptions]
     
-    var options: SyncWaterfallHook[Options, js.Any, js.Any]
+    var options: SyncWaterfallHook[js.Array[Options], UnsetAdditionalOptions]
     
-    var transform: SyncWaterfallHook[AnyObject, WebpackAssetsManifest, js.Any]
+    var transform: SyncWaterfallHook[
+        js.Tuple2[typings.webpackAssetsManifest.mod.Assets, WebpackAssetsManifest], 
+        UnsetAdditionalOptions
+      ]
   }
   object AfterOptions {
     
     inline def apply(
-      afterOptions: SyncHook[Options, js.Any, js.Any],
-      apply: SyncHook[WebpackAssetsManifest, js.Any, js.Any],
-      customize: SyncWaterfallHook[Entry, AnyObject, WebpackAssetsManifest],
-      done: SyncHook[WebpackAssetsManifest, AnyObject, js.Any],
-      options: SyncWaterfallHook[Options, js.Any, js.Any],
-      transform: SyncWaterfallHook[AnyObject, WebpackAssetsManifest, js.Any]
+      afterOptions: SyncHook[js.Array[Options], Unit, UnsetAdditionalOptions],
+      apply: SyncHook[js.Array[WebpackAssetsManifest], Unit, UnsetAdditionalOptions],
+      customize: SyncWaterfallHook[
+          js.Tuple4[Entry, Entry, WebpackAssetsManifest, Asset | Null], 
+          UnsetAdditionalOptions
+        ],
+      done: AsyncSeriesHook[js.Tuple2[WebpackAssetsManifest, Stats], UnsetAdditionalOptions],
+      options: SyncWaterfallHook[js.Array[Options], UnsetAdditionalOptions],
+      transform: SyncWaterfallHook[
+          js.Tuple2[typings.webpackAssetsManifest.mod.Assets, WebpackAssetsManifest], 
+          UnsetAdditionalOptions
+        ]
     ): AfterOptions = {
       val __obj = js.Dynamic.literal(afterOptions = afterOptions.asInstanceOf[js.Any], apply = apply.asInstanceOf[js.Any], customize = customize.asInstanceOf[js.Any], done = done.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
       __obj.asInstanceOf[AfterOptions]
@@ -48,17 +59,50 @@ object anon {
     
     extension [Self <: AfterOptions](x: Self) {
       
-      inline def setAfterOptions(value: SyncHook[Options, js.Any, js.Any]): Self = StObject.set(x, "afterOptions", value.asInstanceOf[js.Any])
+      inline def setAfterOptions(value: SyncHook[js.Array[Options], Unit, UnsetAdditionalOptions]): Self = StObject.set(x, "afterOptions", value.asInstanceOf[js.Any])
       
-      inline def setApply(value: SyncHook[WebpackAssetsManifest, js.Any, js.Any]): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+      inline def setApply(value: SyncHook[js.Array[WebpackAssetsManifest], Unit, UnsetAdditionalOptions]): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
       
-      inline def setCustomize(value: SyncWaterfallHook[Entry, AnyObject, WebpackAssetsManifest]): Self = StObject.set(x, "customize", value.asInstanceOf[js.Any])
+      inline def setCustomize(
+        value: SyncWaterfallHook[
+              js.Tuple4[Entry, Entry, WebpackAssetsManifest, Asset | Null], 
+              UnsetAdditionalOptions
+            ]
+      ): Self = StObject.set(x, "customize", value.asInstanceOf[js.Any])
       
-      inline def setDone(value: SyncHook[WebpackAssetsManifest, AnyObject, js.Any]): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: AsyncSeriesHook[js.Tuple2[WebpackAssetsManifest, Stats], UnsetAdditionalOptions]): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      inline def setOptions(value: SyncWaterfallHook[Options, js.Any, js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: SyncWaterfallHook[js.Array[Options], UnsetAdditionalOptions]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setTransform(value: SyncWaterfallHook[AnyObject, WebpackAssetsManifest, js.Any]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(
+        value: SyncWaterfallHook[
+              js.Tuple2[typings.webpackAssetsManifest.mod.Assets, WebpackAssetsManifest], 
+              UnsetAdditionalOptions
+            ]
+      ): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Assets extends StObject {
+    
+    var assets: js.Array[Asset]
+    
+    var hmrFiles: Set[String]
+  }
+  object Assets {
+    
+    inline def apply(assets: js.Array[Asset], hmrFiles: Set[String]): Assets = {
+      val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], hmrFiles = hmrFiles.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Assets]
+    }
+    
+    extension [Self <: Assets](x: Self) {
+      
+      inline def setAssets(value: js.Array[Asset]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+      
+      inline def setAssetsVarargs(value: Asset*): Self = StObject.set(x, "assets", js.Array(value*))
+      
+      inline def setHmrFiles(value: Set[String]): Self = StObject.set(x, "hmrFiles", value.asInstanceOf[js.Any])
     }
   }
 }

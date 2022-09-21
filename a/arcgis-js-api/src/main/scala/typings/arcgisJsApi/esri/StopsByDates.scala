@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Date
 import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -16,13 +15,13 @@ trait StopsByDates
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#StopsByDates)
     */
-  var dates: js.Array[Date]
+  var dates: js.Array[js.Date]
 }
 object StopsByDates {
   
   inline def apply(
     constructor: js.Function,
-    dates: js.Array[Date],
+    dates: js.Array[js.Date],
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
   ): StopsByDates = {
@@ -32,8 +31,8 @@ object StopsByDates {
   
   extension [Self <: StopsByDates](x: Self) {
     
-    inline def setDates(value: js.Array[Date]): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
+    inline def setDates(value: js.Array[js.Date]): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
     
-    inline def setDatesVarargs(value: Date*): Self = StObject.set(x, "dates", js.Array(value :_*))
+    inline def setDatesVarargs(value: js.Date*): Self = StObject.set(x, "dates", js.Array(value*))
   }
 }

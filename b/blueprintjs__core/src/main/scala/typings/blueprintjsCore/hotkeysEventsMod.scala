@@ -34,10 +34,10 @@ object hotkeysEventsMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeysEvents", "HotkeysEvents")
   @js.native
-  class HotkeysEvents protected () extends StObject {
+  open class HotkeysEvents protected () extends StObject {
     def this(scope: HotkeyScope) = this()
     
-    /* private */ var actions: js.Any = js.native
+    /* private */ var actions: Any = js.native
     
     def clear(): Unit = js.native
     
@@ -47,13 +47,13 @@ object hotkeysEventsMod {
     
     def handleKeyUp(e: KeyboardEvent): Unit = js.native
     
-    /* private */ var invokeNamedCallbackIfComboRecognized: js.Any = js.native
+    /* private */ var invokeNamedCallbackIfComboRecognized: Any = js.native
     
-    /* private */ var isScope: js.Any = js.native
+    /* private */ var isScope: Any = js.native
     
-    /* private */ var isTextInput: js.Any = js.native
+    /* private */ var isTextInput: Any = js.native
     
-    /* private */ var scope: js.Any = js.native
+    /* private */ var scope: Any = js.native
     
     def setHotkeys(props: IHotkeysPropschildrenReacChildren): Unit = js.native
   }

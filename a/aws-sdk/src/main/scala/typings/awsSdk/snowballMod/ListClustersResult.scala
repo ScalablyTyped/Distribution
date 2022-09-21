@@ -29,7 +29,7 @@ object ListClustersResult {
     
     inline def setClusterListEntriesUndefined: Self = StObject.set(x, "ClusterListEntries", js.undefined)
     
-    inline def setClusterListEntriesVarargs(value: ClusterListEntry*): Self = StObject.set(x, "ClusterListEntries", js.Array(value :_*))
+    inline def setClusterListEntriesVarargs(value: ClusterListEntry*): Self = StObject.set(x, "ClusterListEntries", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

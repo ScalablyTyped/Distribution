@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Timer")
 @js.native
-class Timer ()
+open class Timer ()
   extends StObject
      with typings.typescriptServices.TypeScript.Timer {
   

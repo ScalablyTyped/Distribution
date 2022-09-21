@@ -35,11 +35,11 @@ object anon {
     
     var name: String
     
-    var value: js.Any
+    var value: Any
   }
   object Name {
     
-    inline def apply(name: String, value: js.Any): Name = {
+    inline def apply(name: String, value: Any): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
@@ -48,7 +48,7 @@ object anon {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

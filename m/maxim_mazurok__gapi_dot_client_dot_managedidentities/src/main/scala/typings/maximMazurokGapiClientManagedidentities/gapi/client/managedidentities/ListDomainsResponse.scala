@@ -28,7 +28,7 @@ object ListDomainsResponse {
     
     inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: Domain*): Self = StObject.set(x, "domains", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
@@ -38,6 +38,6 @@ object ListDomainsResponse {
     
     inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
-    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
+    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value*))
   }
 }

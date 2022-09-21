@@ -17,20 +17,20 @@ object albMod {
     var body: String | Null
     
     // URL encoded
-    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
+    var headers: js.UndefOr[ALBEventHeaders] = js.undefined
     
     var httpMethod: String
     
     var isBase64Encoded: Boolean
     
     // URL encoded
-    var multiValueHeaders: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
+    var multiValueHeaders: js.UndefOr[ALBEventMultiValueHeaders] = js.undefined
     
-    var multiValueQueryStringParameters: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
+    var multiValueQueryStringParameters: js.UndefOr[ALBEventMultiValueQueryStringParameters] = js.undefined
     
     var path: String
     
-    var queryStringParameters: js.UndefOr[StringDictionary[String]] = js.undefined
+    var queryStringParameters: js.UndefOr[ALBEventQueryStringParameters] = js.undefined
     
     var requestContext: ALBEventRequestContext
   }
@@ -47,7 +47,7 @@ object albMod {
       
       inline def setBodyNull: Self = StObject.set(x, "body", null)
       
-      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: ALBEventHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -55,23 +55,31 @@ object albMod {
       
       inline def setIsBase64Encoded(value: Boolean): Self = StObject.set(x, "isBase64Encoded", value.asInstanceOf[js.Any])
       
-      inline def setMultiValueHeaders(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
+      inline def setMultiValueHeaders(value: ALBEventMultiValueHeaders): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
       
       inline def setMultiValueHeadersUndefined: Self = StObject.set(x, "multiValueHeaders", js.undefined)
       
-      inline def setMultiValueQueryStringParameters(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "multiValueQueryStringParameters", value.asInstanceOf[js.Any])
+      inline def setMultiValueQueryStringParameters(value: ALBEventMultiValueQueryStringParameters): Self = StObject.set(x, "multiValueQueryStringParameters", value.asInstanceOf[js.Any])
       
       inline def setMultiValueQueryStringParametersUndefined: Self = StObject.set(x, "multiValueQueryStringParameters", js.undefined)
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setQueryStringParameters(value: StringDictionary[String]): Self = StObject.set(x, "queryStringParameters", value.asInstanceOf[js.Any])
+      inline def setQueryStringParameters(value: ALBEventQueryStringParameters): Self = StObject.set(x, "queryStringParameters", value.asInstanceOf[js.Any])
       
       inline def setQueryStringParametersUndefined: Self = StObject.set(x, "queryStringParameters", js.undefined)
       
       inline def setRequestContext(value: ALBEventRequestContext): Self = StObject.set(x, "requestContext", value.asInstanceOf[js.Any])
     }
   }
+  
+  type ALBEventHeaders = StringDictionary[js.UndefOr[String]]
+  
+  type ALBEventMultiValueHeaders = StringDictionary[js.UndefOr[js.Array[String]]]
+  
+  type ALBEventMultiValueQueryStringParameters = StringDictionary[js.UndefOr[js.Array[String]]]
+  
+  type ALBEventQueryStringParameters = StringDictionary[js.UndefOr[String]]
   
   trait ALBEventRequestContext extends StObject {
     

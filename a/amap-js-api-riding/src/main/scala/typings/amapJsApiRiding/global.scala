@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("AMap.Riding")
     @js.native
-    class Riding ()
+    open class Riding ()
       extends StObject
          with typings.amapJsApiRiding.AMap.Riding {
       def this(options: Options) = this()

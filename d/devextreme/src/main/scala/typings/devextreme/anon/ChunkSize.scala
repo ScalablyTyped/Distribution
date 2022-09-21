@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChunkSize extends StObject {
   
+  /**
+    * Specifies a chunk size, in bytes.
+    */
   var chunkSize: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the maximum upload file size, in bytes.
+    */
   var maxFileSize: js.UndefOr[Double] = js.undefined
 }
 object ChunkSize {

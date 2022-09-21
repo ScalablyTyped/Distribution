@@ -14,22 +14,22 @@ object mod {
   
   trait Redactor extends StObject {
     
-    def forEach(obj: js.Any): Unit
+    def forEach(obj: Any): Unit
     
-    def map(obj: js.Any): js.Any
+    def map(obj: Any): Any
   }
   object Redactor {
     
-    inline def apply(forEach: js.Any => Unit, map: js.Any => js.Any): Redactor = {
+    inline def apply(forEach: Any => Unit, map: Any => Any): Redactor = {
       val __obj = js.Dynamic.literal(forEach = js.Any.fromFunction1(forEach), map = js.Any.fromFunction1(map))
       __obj.asInstanceOf[Redactor]
     }
     
     extension [Self <: Redactor](x: Self) {
       
-      inline def setForEach(value: js.Any => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: Any => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      inline def setMap(value: js.Any => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: Any => Any): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
     }
   }
 }

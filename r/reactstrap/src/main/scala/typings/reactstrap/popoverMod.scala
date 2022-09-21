@@ -1,6 +1,9 @@
 package typings.reactstrap
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.popperjsCore.enumsMod.Boundary
+import typings.popperjsCore.enumsMod.Placement
+import typings.popperjsCore.typesMod.Modifier
 import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.MouseEvent
@@ -9,7 +12,7 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
 import typings.reactstrap.anon.Hide
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -18,40 +21,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object popoverMod {
   
-  @JSImport("reactstrap/lib/Popover", JSImport.Default)
+  @JSImport("reactstrap/types/lib/Popover", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PopoverProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PopoverProps, js.Object, Any]
   
-  type Popover = Component[PopoverProps, js.Object, js.Any]
+  type Popover = Component[PopoverProps, js.Object, Any]
   
-  type PopoverChildren = (js.Function1[/* props */ PopoverChildrenRenderProps, ReactNode]) | ReactNode
-  
-  trait PopoverChildrenRenderProps extends StObject {
-    
-    def scheduleUpdate(): Unit
-  }
-  object PopoverChildrenRenderProps {
-    
-    inline def apply(scheduleUpdate: () => Unit): PopoverChildrenRenderProps = {
-      val __obj = js.Dynamic.literal(scheduleUpdate = js.Any.fromFunction0(scheduleUpdate))
-      __obj.asInstanceOf[PopoverChildrenRenderProps]
-    }
-    
-    extension [Self <: PopoverChildrenRenderProps](x: Self) {
-      
-      inline def setScheduleUpdate(value: () => Unit): Self = StObject.set(x, "scheduleUpdate", js.Any.fromFunction0(value))
-    }
-  }
+  type PopoverChildren = ReactNode
   
   trait PopoverProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
-    var boundariesElement: js.UndefOr[
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Boundary */ js.Any) | Element
-      ] = js.undefined
+    var boundariesElement: js.UndefOr[Boundary | Element] = js.undefined
     
     @JSName("children")
     var children_PopoverProps: js.UndefOr[PopoverChildren] = js.undefined
@@ -74,21 +58,19 @@ object popoverMod {
     
     var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var modifiers: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Modifiers */ js.Any
-      ] = js.undefined
+    var modifiers: js.UndefOr[js.Array[Modifier[String, Any]]] = js.undefined
     
-    var placement: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Placement */ js.Any
-      ] = js.undefined
+    var placement: js.UndefOr[Placement] = js.undefined
     
     var placementPrefix: js.UndefOr[String] = js.undefined
     
     var popperClassName: js.UndefOr[String] = js.undefined
     
+    var strategy: js.UndefOr[String] = js.undefined
+    
     var target: String | HTMLElement | RefObject[HTMLElement]
     
-    var toggle: js.UndefOr[MouseEventHandler[js.Any] | js.Function0[Unit]] = js.undefined
+    var toggle: js.UndefOr[MouseEventHandler[Any] | js.Function0[Unit]] = js.undefined
   }
   object PopoverProps {
     
@@ -99,15 +81,13 @@ object popoverMod {
     
     extension [Self <: PopoverProps](x: Self) {
       
-      inline def setBoundariesElement(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Boundary */ js.Any) | Element
-      ): Self = StObject.set(x, "boundariesElement", value.asInstanceOf[js.Any])
+      inline def setBoundariesElement(value: Boundary | Element): Self = StObject.set(x, "boundariesElement", value.asInstanceOf[js.Any])
       
       inline def setBoundariesElementUndefined: Self = StObject.set(x, "boundariesElement", js.undefined)
       
-      inline def setChildren(value: PopoverChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setBoundariesElementVarargs(value: Element*): Self = StObject.set(x, "boundariesElement", js.Array(value*))
       
-      inline def setChildrenFunction1(value: /* props */ PopoverChildrenRenderProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: PopoverChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -147,15 +127,13 @@ object popoverMod {
       
       inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
       
-      inline def setModifiers(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Modifiers */ js.Any
-      ): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: js.Array[Modifier[String, Any]]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
       inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
       
-      inline def setPlacement(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Popper.Placement */ js.Any
-      ): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setModifiersVarargs(value: (Modifier[String, Any])*): Self = StObject.set(x, "modifiers", js.Array(value*))
+      
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setPlacementPrefix(value: String): Self = StObject.set(x, "placementPrefix", value.asInstanceOf[js.Any])
       
@@ -167,13 +145,17 @@ object popoverMod {
       
       inline def setPopperClassNameUndefined: Self = StObject.set(x, "popperClassName", js.undefined)
       
+      inline def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      
       inline def setTarget(value: String | HTMLElement | RefObject[HTMLElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      inline def setToggle(value: MouseEventHandler[js.Any] | js.Function0[Unit]): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+      inline def setToggle(value: MouseEventHandler[Any] | js.Function0[Unit]): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
       
       inline def setToggleFunction0(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
       
-      inline def setToggleFunction1(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+      inline def setToggleFunction1(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
       
       inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     }

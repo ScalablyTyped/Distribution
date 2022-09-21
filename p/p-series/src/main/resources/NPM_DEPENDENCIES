@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-series" : "2.1.0"
+      "p-series" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "p-series" : "2.1.0"
+      "p-series" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

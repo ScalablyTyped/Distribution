@@ -25,6 +25,14 @@ trait TargetTcpProxy extends StObject {
     */
   var name: js.UndefOr[String] = js.undefined
   
+  /**
+    * This field only applies when the forwarding rule that references this target proxy has a loadBalancingScheme set to INTERNAL_SELF_MANAGED. When this field is set to true, Envoy
+    * proxies set up inbound traffic interception and bind to the IP address and port specified in the forwarding rule. This is generally useful when using Traffic Director to configure
+    * Envoy as a gateway or middle proxy (in other words, not a sidecar proxy). The Envoy proxy listens for inbound requests and handles requests when it receives them. The default is
+    * false.
+    */
+  var proxyBind: js.UndefOr[Boolean] = js.undefined
+  
   /** Specifies the type of proxy header to append before sending data to the backend, either NONE or PROXY_V1. The default is NONE. */
   var proxyHeader: js.UndefOr[String] = js.undefined
   
@@ -62,6 +70,10 @@ object TargetTcpProxy {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setProxyBind(value: Boolean): Self = StObject.set(x, "proxyBind", value.asInstanceOf[js.Any])
+    
+    inline def setProxyBindUndefined: Self = StObject.set(x, "proxyBind", js.undefined)
     
     inline def setProxyHeader(value: String): Self = StObject.set(x, "proxyHeader", value.asInstanceOf[js.Any])
     

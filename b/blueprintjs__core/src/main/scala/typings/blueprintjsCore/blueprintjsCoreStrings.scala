@@ -5,6 +5,7 @@ import typings.blueprintjsCore.boundaryMod.Boundary
 import typings.blueprintjsCore.handlePropsMod.HandleInteractionKind
 import typings.blueprintjsCore.handlePropsMod.HandleType
 import typings.blueprintjsCore.intentMod.Intent
+import typings.blueprintjsCore.multistepDialogMod.MultistepDialogNavPosition
 import typings.blueprintjsCore.popoverMod.PopoverInteractionKind
 import typings.blueprintjsCore.popoverSharedPropsMod.PopoverPosition
 import typings.blueprintjsCore.positionMod.Position
@@ -23,12 +24,28 @@ object blueprintjsCoreStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait LifecycleCompatPolyfill extends StObject
-  inline def LifecycleCompatPolyfill: LifecycleCompatPolyfill = "LifecycleCompatPolyfill".asInstanceOf[LifecycleCompatPolyfill]
+  sealed trait ADD_HOTKEYS extends StObject
+  inline def ADD_HOTKEYS: ADD_HOTKEYS = "ADD_HOTKEYS".asInstanceOf[ADD_HOTKEYS]
+  
+  @js.native
+  sealed trait CLOSE_DIALOG extends StObject
+  inline def CLOSE_DIALOG: CLOSE_DIALOG = "CLOSE_DIALOG".asInstanceOf[CLOSE_DIALOG]
+  
+  @js.native
+  sealed trait OPEN_DIALOG extends StObject
+  inline def OPEN_DIALOG: OPEN_DIALOG = "OPEN_DIALOG".asInstanceOf[OPEN_DIALOG]
+  
+  @js.native
+  sealed trait REMOVE_HOTKEYS extends StObject
+  inline def REMOVE_HOTKEYS: REMOVE_HOTKEYS = "REMOVE_HOTKEYS".asInstanceOf[REMOVE_HOTKEYS]
   
   @js.native
   sealed trait ValidationMap extends StObject
   inline def ValidationMap: ValidationMap = "ValidationMap".asInstanceOf[ValidationMap]
+  
+  @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait a extends StObject
@@ -55,8 +72,16 @@ object blueprintjsCoreStrings {
   inline def address: address = "address".asInstanceOf[address]
   
   @js.native
+  sealed trait `after-edge` extends StObject
+  inline def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
+  
+  @js.native
   sealed trait all extends StObject
   inline def all: all = "all".asInstanceOf[all]
+  
+  @js.native
+  sealed trait alphabetic extends StObject
+  inline def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
   
   @js.native
   sealed trait animate extends StObject
@@ -69,6 +94,10 @@ object blueprintjsCoreStrings {
   @js.native
   sealed trait animateTransform extends StObject
   inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
+  
+  @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
   sealed trait area extends StObject
@@ -121,12 +150,24 @@ object blueprintjsCoreStrings {
   inline def base: base = "base".asInstanceOf[base]
   
   @js.native
+  sealed trait baseline extends StObject
+  inline def baseline: baseline = "baseline".asInstanceOf[baseline]
+  
+  @js.native
   sealed trait bdi extends StObject
   inline def bdi: bdi = "bdi".asInstanceOf[bdi]
   
   @js.native
   sealed trait bdo extends StObject
   inline def bdo: bdo = "bdo".asInstanceOf[bdo]
+  
+  @js.native
+  sealed trait `before-edge` extends StObject
+  inline def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
+  
+  @js.native
+  sealed trait bevel extends StObject
+  inline def bevel: bevel = "bevel".asInstanceOf[bevel]
   
   @js.native
   sealed trait big extends StObject
@@ -183,6 +224,10 @@ object blueprintjsCoreStrings {
   inline def br: br = "br".asInstanceOf[br]
   
   @js.native
+  sealed trait butt extends StObject
+  inline def butt: butt = "butt".asInstanceOf[butt]
+  
+  @js.native
   sealed trait button extends StObject
   inline def button: button = "button".asInstanceOf[button]
   
@@ -199,6 +244,10 @@ object blueprintjsCoreStrings {
     extends StObject
        with Alignment
   inline def center: center = "center".asInstanceOf[center]
+  
+  @js.native
+  sealed trait central extends StObject
+  inline def central: central = "central".asInstanceOf[central]
   
   @js.native
   sealed trait circle extends StObject
@@ -303,6 +352,10 @@ object blueprintjsCoreStrings {
   inline def dl: dl = "dl".asInstanceOf[dl]
   
   @js.native
+  sealed trait done extends StObject
+  inline def done: done = "done".asInstanceOf[done]
+  
+  @js.native
   sealed trait dt extends StObject
   inline def dt: dt = "dt".asInstanceOf[dt]
   
@@ -328,6 +381,18 @@ object blueprintjsCoreStrings {
        with Boundary
        with HandleType
   inline def end: end = "end".asInstanceOf[end]
+  
+  @js.native
+  sealed trait enter extends StObject
+  inline def enter: enter = "enter".asInstanceOf[enter]
+  
+  @js.native
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
+  
+  @js.native
+  sealed trait evenodd extends StObject
+  inline def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   
   @js.native
   sealed trait execute extends StObject
@@ -472,6 +537,10 @@ object blueprintjsCoreStrings {
   inline def g: g = "g".asInstanceOf[g]
   
   @js.native
+  sealed trait go extends StObject
+  inline def go: go = "go".asInstanceOf[go]
+  
+  @js.native
   sealed trait grammar extends StObject
   inline def grammar: grammar = "grammar".asInstanceOf[grammar]
   
@@ -502,6 +571,10 @@ object blueprintjsCoreStrings {
   @js.native
   sealed trait h6 extends StObject
   inline def h6: h6 = "h6".asInstanceOf[h6]
+  
+  @js.native
+  sealed trait hanging extends StObject
+  inline def hanging: hanging = "hanging".asInstanceOf[hanging]
   
   @js.native
   sealed trait head extends StObject
@@ -544,6 +617,10 @@ object blueprintjsCoreStrings {
   inline def i: i = "i".asInstanceOf[i]
   
   @js.native
+  sealed trait ideographic extends StObject
+  inline def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
+  
+  @js.native
   sealed trait iframe extends StObject
   inline def iframe: iframe = "iframe".asInstanceOf[iframe]
   
@@ -560,6 +637,10 @@ object blueprintjsCoreStrings {
   inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
+  sealed trait initial extends StObject
+  inline def initial: initial = "initial".asInstanceOf[initial]
+  
+  @js.native
   sealed trait `inline` extends StObject
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
@@ -570,6 +651,10 @@ object blueprintjsCoreStrings {
   @js.native
   sealed trait ins extends StObject
   inline def ins: ins = "ins".asInstanceOf[ins]
+  
+  @js.native
+  sealed trait isolated extends StObject
+  inline def isolated: isolated = "isolated".asInstanceOf[isolated]
   
   @js.native
   sealed trait kbd extends StObject
@@ -587,6 +672,7 @@ object blueprintjsCoreStrings {
   sealed trait left
     extends StObject
        with Alignment
+       with MultistepDialogNavPosition
        with PopoverPosition
        with Position
   inline def left: left = "left".asInstanceOf[left]
@@ -622,6 +708,10 @@ object blueprintjsCoreStrings {
   inline def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
   
   @js.native
+  sealed trait linearRGB extends StObject
+  inline def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
+  
+  @js.native
   sealed trait link extends StObject
   inline def link: link = "link".asInstanceOf[link]
   
@@ -632,6 +722,10 @@ object blueprintjsCoreStrings {
   @js.native
   sealed trait listbox extends StObject
   inline def listbox: listbox = "listbox".asInstanceOf[listbox]
+  
+  @js.native
+  sealed trait listoption extends StObject
+  inline def listoption: listoption = "listoption".asInstanceOf[listoption]
   
   @js.native
   sealed trait location extends StObject
@@ -664,6 +758,14 @@ object blueprintjsCoreStrings {
   inline def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
+  sealed trait mathematical extends StObject
+  inline def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
+  
+  @js.native
+  sealed trait medial extends StObject
+  inline def medial: medial = "medial".asInstanceOf[medial]
+  
+  @js.native
   sealed trait menu extends StObject
   inline def menu: menu = "menu".asInstanceOf[menu]
   
@@ -684,6 +786,14 @@ object blueprintjsCoreStrings {
   inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
+  sealed trait middle extends StObject
+  inline def middle: middle = "middle".asInstanceOf[middle]
+  
+  @js.native
+  sealed trait miter extends StObject
+  inline def miter: miter = "miter".asInstanceOf[miter]
+  
+  @js.native
   sealed trait mixed extends StObject
   inline def mixed: mixed = "mixed".asInstanceOf[mixed]
   
@@ -700,6 +810,10 @@ object blueprintjsCoreStrings {
   inline def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
+  sealed trait next extends StObject
+  inline def next: next = "next".asInstanceOf[next]
+  
+  @js.native
   sealed trait no extends StObject
   inline def no: no = "no".asInstanceOf[no]
   
@@ -713,6 +827,10 @@ object blueprintjsCoreStrings {
        with HandleInteractionKind
        with Intent
   inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
+  sealed trait nonzero extends StObject
+  inline def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   
   @js.native
   sealed trait noscript extends StObject
@@ -809,6 +927,10 @@ object blueprintjsCoreStrings {
   inline def pre: pre = "pre".asInstanceOf[pre]
   
   @js.native
+  sealed trait previous extends StObject
+  inline def previous: previous = "previous".asInstanceOf[previous]
+  
+  @js.native
   sealed trait primary
     extends StObject
        with Intent
@@ -837,6 +959,10 @@ object blueprintjsCoreStrings {
   inline def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
+  sealed trait refHandler extends StObject
+  inline def refHandler: refHandler = "refHandler".asInstanceOf[refHandler]
+  
+  @js.native
   sealed trait removals extends StObject
   inline def removals: removals = "removals".asInstanceOf[removals]
   
@@ -849,6 +975,10 @@ object blueprintjsCoreStrings {
   inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
+  sealed trait replace extends StObject
+  inline def replace: replace = "replace".asInstanceOf[replace]
+  
+  @js.native
   sealed trait reset extends StObject
   inline def reset: reset = "reset".asInstanceOf[reset]
   
@@ -856,6 +986,7 @@ object blueprintjsCoreStrings {
   sealed trait right
     extends StObject
        with Alignment
+       with MultistepDialogNavPosition
        with PopoverPosition
        with Position
   inline def right: right = "right".asInstanceOf[right]
@@ -875,6 +1006,10 @@ object blueprintjsCoreStrings {
   inline def `right-top`: `right-top` = "right-top".asInstanceOf[`right-top`]
   
   @js.native
+  sealed trait round extends StObject
+  inline def round: round = "round".asInstanceOf[round]
+  
+  @js.native
   sealed trait rp extends StObject
   inline def rp: rp = "rp".asInstanceOf[rp]
   
@@ -891,8 +1026,8 @@ object blueprintjsCoreStrings {
   inline def s: s = "s".asInstanceOf[s]
   
   @js.native
-  sealed trait safeInvokeMember extends StObject
-  inline def safeInvokeMember: safeInvokeMember = "safeInvokeMember".asInstanceOf[safeInvokeMember]
+  sealed trait sRGB extends StObject
+  inline def sRGB: sRGB = "sRGB".asInstanceOf[sRGB]
   
   @js.native
   sealed trait samp extends StObject
@@ -915,6 +1050,10 @@ object blueprintjsCoreStrings {
   inline def select: select = "select".asInstanceOf[select]
   
   @js.native
+  sealed trait send extends StObject
+  inline def send: send = "send".asInstanceOf[send]
+  
+  @js.native
   sealed trait slot extends StObject
   inline def slot: slot = "slot".asInstanceOf[slot]
   
@@ -933,6 +1072,10 @@ object blueprintjsCoreStrings {
   @js.native
   sealed trait spelling extends StObject
   inline def spelling: spelling = "spelling".asInstanceOf[spelling]
+  
+  @js.native
+  sealed trait square extends StObject
+  inline def square: square = "square".asInstanceOf[square]
   
   @js.native
   sealed trait start
@@ -970,6 +1113,10 @@ object blueprintjsCoreStrings {
     extends StObject
        with Intent
   inline def success: success = "success".asInstanceOf[success]
+  
+  @js.native
+  sealed trait sum extends StObject
+  inline def sum: sum = "sum".asInstanceOf[sum]
   
   @js.native
   sealed trait summary extends StObject
@@ -1012,6 +1159,10 @@ object blueprintjsCoreStrings {
   inline def template: template = "template".asInstanceOf[template]
   
   @js.native
+  sealed trait terminal extends StObject
+  inline def terminal: terminal = "terminal".asInstanceOf[terminal]
+  
+  @js.native
   sealed trait text extends StObject
   inline def text: text = "text".asInstanceOf[text]
   
@@ -1022,6 +1173,14 @@ object blueprintjsCoreStrings {
   @js.native
   sealed trait `text removals` extends StObject
   inline def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
+  
+  @js.native
+  sealed trait `text-after-edge` extends StObject
+  inline def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
+  
+  @js.native
+  sealed trait `text-before-edge` extends StObject
+  inline def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
   
   @js.native
   sealed trait textPath extends StObject
@@ -1054,6 +1213,7 @@ object blueprintjsCoreStrings {
   @js.native
   sealed trait top
     extends StObject
+       with MultistepDialogNavPosition
        with PopoverPosition
        with Position
        with ToasterPosition
@@ -1106,6 +1266,14 @@ object blueprintjsCoreStrings {
   @js.native
   sealed trait use extends StObject
   inline def use: use = "use".asInstanceOf[use]
+  
+  @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
+  
+  @js.native
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
   sealed trait `var` extends StObject

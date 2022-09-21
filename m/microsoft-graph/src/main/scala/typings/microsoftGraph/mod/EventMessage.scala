@@ -19,17 +19,12 @@ trait EventMessage
   
   var isAllDay: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  // True if this meeting request is accessible to a delegate, false otherwise. Default is false.
   var isDelegated: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   var isOutOfDate: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   var location: js.UndefOr[NullableOption[Location]] = js.undefined
   
-  /**
-    * The type of event message: none, meetingRequest, meetingCancelled, meetingAccepted, meetingTenativelyAccepted,
-    * meetingDeclined.
-    */
   var meetingMessageType: js.UndefOr[NullableOption[MeetingMessageType]] = js.undefined
   
   var recurrence: js.UndefOr[NullableOption[PatternedRecurrence]] = js.undefined

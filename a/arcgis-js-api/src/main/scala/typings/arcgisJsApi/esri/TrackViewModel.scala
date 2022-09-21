@@ -28,10 +28,12 @@ trait TrackViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track-TrackViewModel.html#start)
     */
-  def start(): Unit = js.native
+  def start(): scala.Unit = js.native
   
   /**
     * The current state of the widget.
+    *
+    * @default disabled
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track-TrackViewModel.html#state)
     */
@@ -42,10 +44,12 @@ trait TrackViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track-TrackViewModel.html#stop)
     */
-  def stop(): Unit = js.native
+  def stop(): scala.Unit = js.native
   
   /**
     * Indicates whether new positions are being watched.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track-TrackViewModel.html#tracking)
     */

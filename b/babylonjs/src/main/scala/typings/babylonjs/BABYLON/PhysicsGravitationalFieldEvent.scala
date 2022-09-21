@@ -10,21 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PhysicsGravitationalFieldEvent extends StObject {
   
-  /* private */ var _dataFetched: js.Any = js.native
+  /* private */ var _dataFetched: Any = js.native
   
-  /* private */ var _options: js.Any = js.native
+  /* private */ var _options: Any = js.native
   
-  /* private */ var _origin: js.Any = js.native
+  /* private */ var _origin: Any = js.native
   
-  /* private */ var _physicsHelper: js.Any = js.native
+  /* private */ var _physicsHelper: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _sphere: js.Any = js.native
+  /* private */ var _sphere: Any = js.native
   
-  /* private */ var _tick: js.Any = js.native
+  /* private */ var _tick: Any = js.native
   
-  /* private */ var _tickCallback: js.Any = js.native
+  /* private */ var _tickCallback: Any = js.native
   
   /**
     * Disables the gravitational field.

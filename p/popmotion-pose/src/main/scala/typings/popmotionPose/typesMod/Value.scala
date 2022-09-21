@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Value extends StObject {
   
-  var raw: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueReaction */ js.Any
+  var raw: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueReaction */ Any
   
   var `type`: js.UndefOr[ValueType] = js.undefined
 }
 object Value {
   
   inline def apply(
-    raw: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueReaction */ js.Any
+    raw: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueReaction */ Any
   ): Value = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
@@ -23,7 +23,7 @@ object Value {
   extension [Self <: Value](x: Self) {
     
     inline def setRaw(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueReaction */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ValueReaction */ Any
     ): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     inline def setType(value: ValueType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

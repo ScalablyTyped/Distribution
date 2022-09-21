@@ -9,7 +9,7 @@ object arrayObservableMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @JSImport("rxjs-compat/observable/ArrayObservable", "ArrayObservable")
   @js.native
-  class ArrayObservable[T] () extends StObject
+  open class ArrayObservable[T] () extends StObject
   /* static members */
   object ArrayObservable {
     
@@ -17,10 +17,10 @@ object arrayObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create[T](array: js.Array[T]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(array.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create[T](array: js.Array[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(array.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def create[T](
       array: js.Array[T],
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(array.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(array.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
 }

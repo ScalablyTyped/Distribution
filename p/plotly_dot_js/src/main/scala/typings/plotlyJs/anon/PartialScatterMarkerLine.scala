@@ -14,9 +14,13 @@ trait PartialScatterMarkerLine extends StObject {
   
   var cmax: js.UndefOr[Double] = js.undefined
   
+  var cmid: js.UndefOr[Double] = js.undefined
+  
   var cmin: js.UndefOr[Double] = js.undefined
   
   var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
+  
+  var coloraxis: js.UndefOr[String] = js.undefined
   
   var colorscale: js.UndefOr[ColorScale] = js.undefined
   
@@ -45,6 +49,10 @@ object PartialScatterMarkerLine {
     
     inline def setCmaxUndefined: Self = StObject.set(x, "cmax", js.undefined)
     
+    inline def setCmid(value: Double): Self = StObject.set(x, "cmid", value.asInstanceOf[js.Any])
+    
+    inline def setCmidUndefined: Self = StObject.set(x, "cmid", js.undefined)
+    
     inline def setCmin(value: Double): Self = StObject.set(x, "cmin", value.asInstanceOf[js.Any])
     
     inline def setCminUndefined: Self = StObject.set(x, "cmin", js.undefined)
@@ -53,13 +61,17 @@ object PartialScatterMarkerLine {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value*))
+    
+    inline def setColoraxis(value: String): Self = StObject.set(x, "coloraxis", value.asInstanceOf[js.Any])
+    
+    inline def setColoraxisUndefined: Self = StObject.set(x, "coloraxis", js.undefined)
     
     inline def setColorscale(value: ColorScale): Self = StObject.set(x, "colorscale", value.asInstanceOf[js.Any])
     
     inline def setColorscaleUndefined: Self = StObject.set(x, "colorscale", js.undefined)
     
-    inline def setColorscaleVarargs(value: (String | (js.Tuple2[Double, String]))*): Self = StObject.set(x, "colorscale", js.Array(value :_*))
+    inline def setColorscaleVarargs(value: (String | (js.Tuple2[Double, String]))*): Self = StObject.set(x, "colorscale", js.Array(value*))
     
     inline def setReversescale(value: Boolean): Self = StObject.set(x, "reversescale", value.asInstanceOf[js.Any])
     
@@ -69,6 +81,6 @@ object PartialScatterMarkerLine {
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    inline def setWidthVarargs(value: Double*): Self = StObject.set(x, "width", js.Array(value :_*))
+    inline def setWidthVarargs(value: Double*): Self = StObject.set(x, "width", js.Array(value*))
   }
 }

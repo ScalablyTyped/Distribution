@@ -36,6 +36,6 @@ object MetagameConfig {
     
     inline def setPlayerLevelsUndefined: Self = StObject.set(x, "playerLevels", js.undefined)
     
-    inline def setPlayerLevelsVarargs(value: PlayerLevel*): Self = StObject.set(x, "playerLevels", js.Array(value :_*))
+    inline def setPlayerLevelsVarargs(value: PlayerLevel*): Self = StObject.set(x, "playerLevels", js.Array(value*))
   }
 }

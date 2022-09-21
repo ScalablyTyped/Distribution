@@ -8,5 +8,5 @@ object referenceDoesNotExistExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/ReferenceDoesNotExistException", "ReferenceDoesNotExistException")
   @js.native
-  val ReferenceDoesNotExistException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ReferenceDoesNotExistException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

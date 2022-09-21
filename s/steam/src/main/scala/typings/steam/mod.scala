@@ -78,7 +78,7 @@ object mod {
   
   @JSImport("steam", "SteamClient")
   @js.native
-  class SteamClient () extends EventEmitter {
+  open class SteamClient () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
     // Event emitter
@@ -96,7 +96,7 @@ object mod {
     
     def removeListener(event: String, listener: js.Function): this.type = js.native
     
-    def sendMessage(source: js.Any, message: String, entryType: EChatEntryType): Unit = js.native
+    def sendMessage(source: Any, message: String, entryType: EChatEntryType): Unit = js.native
     
     var sessionId: String = js.native
     
@@ -106,13 +106,13 @@ object mod {
     
     var steamID: String = js.native
     
-    def webLogOn(callback: js.Function1[/* cookie */ js.Array[js.Any], Unit]): Unit = js.native
+    def webLogOn(callback: js.Function1[/* cookie */ js.Array[Any], Unit]): Unit = js.native
   }
   
   @JSImport("steam", "servers")
   @js.native
-  def servers: js.Any = js.native
-  inline def servers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("servers")(x.asInstanceOf[js.Any])
+  def servers: Any = js.native
+  inline def servers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("servers")(x.asInstanceOf[js.Any])
   
   trait LogonOptions extends StObject {
     

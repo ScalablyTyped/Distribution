@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Video Format List Response
-  */
 trait SchemaVideoFormatsListResponse extends StObject {
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#videoFormatsListResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#videoFormatsListResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Video format collection.
@@ -31,12 +27,14 @@ object SchemaVideoFormatsListResponse {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setVideoFormats(value: js.Array[SchemaVideoFormat]): Self = StObject.set(x, "videoFormats", value.asInstanceOf[js.Any])
     
     inline def setVideoFormatsUndefined: Self = StObject.set(x, "videoFormats", js.undefined)
     
-    inline def setVideoFormatsVarargs(value: SchemaVideoFormat*): Self = StObject.set(x, "videoFormats", js.Array(value :_*))
+    inline def setVideoFormatsVarargs(value: SchemaVideoFormat*): Self = StObject.set(x, "videoFormats", js.Array(value*))
   }
 }

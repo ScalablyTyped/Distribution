@@ -9,7 +9,7 @@ trait UpgradeHistory extends StObject {
   /**
     * UTC Timestamp at which the Upgrade API call was made in "yyyy-MM-ddTHH:mm:ssZ" format.
     */
-  var StartTimestamp: js.UndefOr[typings.awsSdk.esMod.StartTimestamp] = js.undefined
+  var StartTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  A list of  UpgradeStepItem  s representing information about each step performed as pard of a specific Upgrade or Upgrade Eligibility Check. 
@@ -35,7 +35,7 @@ object UpgradeHistory {
   
   extension [Self <: UpgradeHistory](x: Self) {
     
-    inline def setStartTimestamp(value: StartTimestamp): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
+    inline def setStartTimestamp(value: js.Date): Self = StObject.set(x, "StartTimestamp", value.asInstanceOf[js.Any])
     
     inline def setStartTimestampUndefined: Self = StObject.set(x, "StartTimestamp", js.undefined)
     
@@ -43,7 +43,7 @@ object UpgradeHistory {
     
     inline def setStepsListUndefined: Self = StObject.set(x, "StepsList", js.undefined)
     
-    inline def setStepsListVarargs(value: UpgradeStepItem*): Self = StObject.set(x, "StepsList", js.Array(value :_*))
+    inline def setStepsListVarargs(value: UpgradeStepItem*): Self = StObject.set(x, "StepsList", js.Array(value*))
     
     inline def setUpgradeName(value: UpgradeName): Self = StObject.set(x, "UpgradeName", value.asInstanceOf[js.Any])
     

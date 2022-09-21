@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-virtualized", "Column")
 @js.native
-class Column protected ()
+open class Column protected ()
   extends typings.reactVirtualized.esTableMod.Column {
   def this(props: ColumnProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ColumnProps, context: js.Any) = this()
+  def this(props: ColumnProps, context: Any) = this()
 }
 /* static members */
 object Column {

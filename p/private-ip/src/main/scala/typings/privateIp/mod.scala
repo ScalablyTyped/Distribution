@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
   @JSImport("private-ip", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

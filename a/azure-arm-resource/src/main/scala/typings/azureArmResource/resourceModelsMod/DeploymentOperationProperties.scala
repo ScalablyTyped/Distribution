@@ -1,6 +1,5 @@
 package typings.azureArmResource.resourceModelsMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +34,7 @@ trait DeploymentOperationProperties extends StObject {
   /**
     * Operation status message.
     */
-  val statusMessage: js.UndefOr[js.Any] = js.undefined
+  val statusMessage: js.UndefOr[Any] = js.undefined
   
   /**
     * The target resource.
@@ -45,7 +44,7 @@ trait DeploymentOperationProperties extends StObject {
   /**
     * The date and time of the operation.
     */
-  val timestamp: js.UndefOr[Date] = js.undefined
+  val timestamp: js.UndefOr[js.Date] = js.undefined
 }
 object DeploymentOperationProperties {
   
@@ -76,7 +75,7 @@ object DeploymentOperationProperties {
     
     inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     
-    inline def setStatusMessage(value: js.Any): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: Any): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
     inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
@@ -84,7 +83,7 @@ object DeploymentOperationProperties {
     
     inline def setTargetResourceUndefined: Self = StObject.set(x, "targetResource", js.undefined)
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }

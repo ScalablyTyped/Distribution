@@ -68,7 +68,7 @@ object SPHSystem {
     
     inline def setDensities(value: js.Array[Double]): Self = StObject.set(x, "densities", value.asInstanceOf[js.Any])
     
-    inline def setDensitiesVarargs(value: Double*): Self = StObject.set(x, "densities", js.Array(value :_*))
+    inline def setDensitiesVarargs(value: Double*): Self = StObject.set(x, "densities", js.Array(value*))
     
     inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
@@ -82,15 +82,15 @@ object SPHSystem {
     
     inline def setNeighbors(value: js.Array[Double]): Self = StObject.set(x, "neighbors", value.asInstanceOf[js.Any])
     
-    inline def setNeighborsVarargs(value: Double*): Self = StObject.set(x, "neighbors", js.Array(value :_*))
+    inline def setNeighborsVarargs(value: Double*): Self = StObject.set(x, "neighbors", js.Array(value*))
     
     inline def setParticles(value: js.Array[Particle]): Self = StObject.set(x, "particles", value.asInstanceOf[js.Any])
     
-    inline def setParticlesVarargs(value: Particle*): Self = StObject.set(x, "particles", js.Array(value :_*))
+    inline def setParticlesVarargs(value: Particle*): Self = StObject.set(x, "particles", js.Array(value*))
     
     inline def setPressures(value: js.Array[Double]): Self = StObject.set(x, "pressures", value.asInstanceOf[js.Any])
     
-    inline def setPressuresVarargs(value: Double*): Self = StObject.set(x, "pressures", js.Array(value :_*))
+    inline def setPressuresVarargs(value: Double*): Self = StObject.set(x, "pressures", js.Array(value*))
     
     inline def setRemove(value: Particle => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     

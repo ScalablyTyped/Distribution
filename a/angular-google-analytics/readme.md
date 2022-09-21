@@ -10,10 +10,10 @@ Angular Google Analytics - Easy tracking for your AngularJS application
 | ------------------ | :-------------: |
 | Full name          | angular-google-analytics |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 220760 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 20268.333333333332 |
+| # stars            | 656.0 |
 
 ## Links
 - [Homepage](http://github.com/revolunet/angular-google-analytics)

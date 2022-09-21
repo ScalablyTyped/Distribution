@@ -51,7 +51,7 @@ object LineDatasetConfig {
     
     inline def setCircleColorsUndefined: Self = StObject.set(x, "circleColors", js.undefined)
     
-    inline def setCircleColorsVarargs(value: Color*): Self = StObject.set(x, "circleColors", js.Array(value :_*))
+    inline def setCircleColorsVarargs(value: Color*): Self = StObject.set(x, "circleColors", js.Array(value*))
     
     inline def setCircleHoleColor(value: Color): Self = StObject.set(x, "circleHoleColor", value.asInstanceOf[js.Any])
     

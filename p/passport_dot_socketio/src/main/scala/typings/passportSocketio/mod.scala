@@ -2,14 +2,14 @@ package typings.passportSocketio
 
 import typings.express.mod.RequestHandler
 import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import typings.expressSession.mod.Store
 import typings.passport.mod.PassportStatic
 import typings.socketIo.mod.Server
 import typings.socketIo.mod.Socket
+import typings.socketIo.typedEventsMod.DefaultEventsMap
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,26 +20,45 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def authorize(options: PassportSocketIoOptions): js.Function2[/* socket */ Socket, /* fn */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* socket */ Socket, /* fn */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]]
+  inline def authorize(options: PassportSocketIoOptions): js.Function2[
+    /* socket */ Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any], 
+    /* fn */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* socket */ Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any], 
+    /* fn */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
+    Unit
+  ]]
   
-  inline def filterSocketsByUser(io: Server, filter: js.Function1[/* user */ js.Any, Boolean]): js.Array[Socket] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterSocketsByUser")(io.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[Socket]]
+  inline def filterSocketsByUser(
+    io: Server[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any],
+    filter: js.Function1[/* user */ Any, Boolean]
+  ): js.Array[Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterSocketsByUser")(io.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[Socket[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any]]]
   
   trait PassportSocketIoOptions extends StObject {
     
     /**
       * the same middleware you registrer in express.
       */
-    var cookieParser: js.UndefOr[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
+    var cookieParser: js.UndefOr[
+        RequestHandler[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+      ] = js.undefined
     
     /**
       * callback on fail/error.
       */
     var fail: js.UndefOr[
         js.Function4[
-          /* data */ js.Any, 
+          /* data */ Any, 
           /* message */ String, 
           /* critical */ Boolean, 
-          /* accept */ js.Function2[/* err */ js.UndefOr[js.Any], /* accepted */ js.UndefOr[Boolean], Unit], 
+          /* accept */ js.Function2[/* err */ js.UndefOr[Any], /* accepted */ js.UndefOr[Boolean], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -66,8 +85,8 @@ object mod {
       */
     var success: js.UndefOr[
         js.Function2[
-          /* data */ js.Any, 
-          /* accept */ js.Function2[/* err */ js.UndefOr[js.Any], /* accepted */ js.UndefOr[Boolean], Unit], 
+          /* data */ Any, 
+          /* accept */ js.Function2[/* err */ js.UndefOr[Any], /* accepted */ js.UndefOr[Boolean], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -81,14 +100,12 @@ object mod {
     
     extension [Self <: PassportSocketIoOptions](x: Self) {
       
-      inline def setCookieParser(
-        value: (/* req */ Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response[js.Any, Double], /* next */ NextFunction) => js.Any
-      ): Self = StObject.set(x, "cookieParser", js.Any.fromFunction3(value))
+      inline def setCookieParser(value: (/* req */ Request, /* res */ Response, /* next */ js.UndefOr[NextFunction]) => Any): Self = StObject.set(x, "cookieParser", js.Any.fromFunction3(value))
       
       inline def setCookieParserUndefined: Self = StObject.set(x, "cookieParser", js.undefined)
       
       inline def setFail(
-        value: (/* data */ js.Any, /* message */ String, /* critical */ Boolean, /* accept */ js.Function2[/* err */ js.UndefOr[js.Any], /* accepted */ js.UndefOr[Boolean], Unit]) => Unit
+        value: (/* data */ Any, /* message */ String, /* critical */ Boolean, /* accept */ js.Function2[/* err */ js.UndefOr[Any], /* accepted */ js.UndefOr[Boolean], Unit]) => Unit
       ): Self = StObject.set(x, "fail", js.Any.fromFunction4(value))
       
       inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
@@ -108,7 +125,7 @@ object mod {
       inline def setStore(value: Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
       inline def setSuccess(
-        value: (/* data */ js.Any, /* accept */ js.Function2[/* err */ js.UndefOr[js.Any], /* accepted */ js.UndefOr[Boolean], Unit]) => Unit
+        value: (/* data */ Any, /* accept */ js.Function2[/* err */ js.UndefOr[Any], /* accepted */ js.UndefOr[Boolean], Unit]) => Unit
       ): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
       
       inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAppInstanceAdminRequest extends StObject {
   
   /**
-    * The ARN of the app instance administrator.
+    * The ARN of the AppInstanceAdmin.
     */
   var AppInstanceAdminArn: ChimeArn
   
   /**
-    * The ARN of the app instance.
+    * The ARN of the AppInstance.
     */
   var AppInstanceArn: ChimeArn
 }

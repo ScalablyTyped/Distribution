@@ -25,7 +25,7 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Data.Vec3D")
     @js.native
-    class Vec3D protected ()
+    open class Vec3D protected ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Data.Vec3D {
       /**
@@ -65,7 +65,7 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Invitation.InvitationReply")
     @js.native
-    class InvitationReply ()
+    open class InvitationReply ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Invitation.InvitationReply
     /* static members */
@@ -90,7 +90,7 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Invitation.SFSInvitation")
     @js.native
-    class SFSInvitation protected ()
+    open class SFSInvitation protected ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Invitation.SFSInvitation {
       /**
@@ -131,7 +131,7 @@ object Entities {
   
   @JSGlobal("SFS2X.Entities.MMOItem")
   @js.native
-  class MMOItem protected ()
+  open class MMOItem protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Entities.MMOItem {
     /**
@@ -174,7 +174,7 @@ object Entities {
   
   @JSGlobal("SFS2X.Entities.MMORoom")
   @js.native
-  class MMORoom protected ()
+  open class MMORoom protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Entities.MMORoom {
     /**
@@ -357,7 +357,7 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Match.BoolMatch")
     @js.native
-    class BoolMatch ()
+    open class BoolMatch ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Match.BoolMatch
     /* static members */
@@ -382,7 +382,7 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Match.LogicOperator")
     @js.native
-    class LogicOperator ()
+    open class LogicOperator ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Match.LogicOperator
     /* static members */
@@ -407,36 +407,28 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Match.MatchExpression")
     @js.native
-    class MatchExpression protected ()
+    open class MatchExpression protected ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Match.MatchExpression {
-      def this(varName: String, condition: typings.smartFoxServer.SFS2X.Entities.Match.BoolMatch, value: js.Any) = this()
-      def this(varName: String, condition: typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch, value: js.Any) = this()
+      def this(varName: String, condition: typings.smartFoxServer.SFS2X.Entities.Match.BoolMatch, value: Any) = this()
+      def this(varName: String, condition: typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch, value: Any) = this()
       /**
         * Creates a new MatchExpression instance.
         * @param {string}            varName Name of the variable or property to match.
         * @param {(RoomProperties | UserProperties | BoolMatch | NumberMatch | StringMatch | Requests.Game.CreateSFSGameRequest | Requests.System.FindRoomsRequest | Requests.System.FindUsersRequest)} condition A matching condition among those provided by the BoolMatch, NumberMatch and StringMatch classes.
         * @param {any}               value   The value to compare against the variable or property during the matching.
         */
-      def this(
-        varName: String,
-        condition: typings.smartFoxServer.SFS2X.Entities.Match.RoomProperties,
-        value: js.Any
-      ) = this()
-      def this(varName: String, condition: typings.smartFoxServer.SFS2X.Entities.Match.StringMatch, value: js.Any) = this()
-      def this(
-        varName: String,
-        condition: typings.smartFoxServer.SFS2X.Entities.Match.UserProperties,
-        value: js.Any
-      ) = this()
-      def this(varName: String, condition: CreateSFSGameRequest, value: js.Any) = this()
-      def this(varName: String, condition: FindRoomsRequest, value: js.Any) = this()
-      def this(varName: String, condition: FindUsersRequest, value: js.Any) = this()
+      def this(varName: String, condition: typings.smartFoxServer.SFS2X.Entities.Match.RoomProperties, value: Any) = this()
+      def this(varName: String, condition: typings.smartFoxServer.SFS2X.Entities.Match.StringMatch, value: Any) = this()
+      def this(varName: String, condition: typings.smartFoxServer.SFS2X.Entities.Match.UserProperties, value: Any) = this()
+      def this(varName: String, condition: CreateSFSGameRequest, value: Any) = this()
+      def this(varName: String, condition: FindRoomsRequest, value: Any) = this()
+      def this(varName: String, condition: FindUsersRequest, value: Any) = this()
     }
     
     @JSGlobal("SFS2X.Entities.Match.NumberMatch")
     @js.native
-    class NumberMatch ()
+    open class NumberMatch ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch
     /* static members */
@@ -485,7 +477,7 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Match.RoomProperties")
     @js.native
-    class RoomProperties ()
+    open class RoomProperties ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Match.RoomProperties
     /* static members */
@@ -558,7 +550,7 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Match.StringMatch")
     @js.native
-    class StringMatch ()
+    open class StringMatch ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Match.StringMatch
     /* static members */
@@ -601,7 +593,7 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Match.UserProperties")
     @js.native
-    class UserProperties ()
+    open class UserProperties ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Match.UserProperties
     /* static members */
@@ -651,7 +643,7 @@ object Entities {
   
   @JSGlobal("SFS2X.Entities.SFSBuddy")
   @js.native
-  class SFSBuddy protected ()
+  open class SFSBuddy protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Entities.SFSBuddy {
     /**
@@ -749,7 +741,7 @@ object Entities {
   
   @JSGlobal("SFS2X.Entities.SFSRoom")
   @js.native
-  class SFSRoom protected ()
+  open class SFSRoom protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Entities.SFSRoom {
     /**
@@ -900,7 +892,7 @@ object Entities {
   
   @JSGlobal("SFS2X.Entities.SFSUser")
   @js.native
-  class SFSUser protected ()
+  open class SFSUser protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Entities.SFSUser {
     /**
@@ -1043,7 +1035,7 @@ object Entities {
   
   @JSGlobal("SFS2X.Entities.UserPrivileges")
   @js.native
-  class UserPrivileges ()
+  open class UserPrivileges ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Entities.UserPrivileges
   /* static members */
@@ -1085,7 +1077,7 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Variables.MMOItemVariable")
     @js.native
-    class MMOItemVariable protected ()
+    open class MMOItemVariable protected ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Variables.MMOItemVariable {
       /**
@@ -1094,8 +1086,8 @@ object Entities {
         * @param {any}    value The value of the MMOItem Variable; valid data types are: Boolean, Number, String, Object, Array. The value can also be null.
         * @param {number} [type=-1]  The type id of the MMOItem Variable among those available in the VariableType class. Usually it is not necessary to pass this parameter, as the type is auto-detected from the value.
         */
-      def this(name: String, value: js.Any) = this()
-      def this(name: String, value: js.Any, `type`: Double) = this()
+      def this(name: String, value: Any) = this()
+      def this(name: String, value: Any, `type`: Double) = this()
       
       /**
         * Indicates the type of this variable. Possibly returned strings are: Null, Bool, Int, Double, String, Object, Array.
@@ -1123,7 +1115,7 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Variables.ReservedBuddyVariables")
     @js.native
-    class ReservedBuddyVariables ()
+    open class ReservedBuddyVariables ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Variables.ReservedBuddyVariables
     /* static members */
@@ -1154,7 +1146,7 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Variables.ReservedRoomVariables")
     @js.native
-    class ReservedRoomVariables ()
+    open class ReservedRoomVariables ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Variables.ReservedRoomVariables
     /* static members */
@@ -1173,7 +1165,7 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Variables.SFSBuddyVariable")
     @js.native
-    class SFSBuddyVariable protected ()
+    open class SFSBuddyVariable protected ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Variables.SFSBuddyVariable {
       /**
@@ -1182,8 +1174,8 @@ object Entities {
         * @param {any}    value The value of the Buddy Variable; valid data types are: Boolean, Number, String, Object, Array. The value can also be null.
         * @param {number} [type=-1]  The type id of the Buddy Variable among those available in the VariableType class. Usually it is not necessary to pass this parameter, as the type is auto-detected from the value.
         */
-      def this(name: String, value: js.Any) = this()
-      def this(name: String, value: js.Any, `type`: Double) = this()
+      def this(name: String, value: Any) = this()
+      def this(name: String, value: Any, `type`: Double) = this()
       
       /**
         * Indicates the type of this variable. Possibly returned strings are: Null, Bool, Int, Double, String, Object, Array.
@@ -1231,7 +1223,7 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Variables.SFSRoomVariable")
     @js.native
-    class SFSRoomVariable protected ()
+    open class SFSRoomVariable protected ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Variables.SFSRoomVariable {
       /**
@@ -1240,8 +1232,8 @@ object Entities {
         * @param {any}    value The value of the Room Variable; valid data types are: Boolean, Number, String, Object, Array. The value can also be null.
         * @param {number} [type=-1]  The type id of the Room Variable among those available in the VariableType class. Usually it is not necessary to pass this parameter, as the type is auto-detected from the value.
         */
-      def this(name: String, value: js.Any) = this()
-      def this(name: String, value: js.Any, `type`: Double) = this()
+      def this(name: String, value: Any) = this()
+      def this(name: String, value: Any, `type`: Double) = this()
       
       /**
         * Indicates the type of this variable. Possibly returned strings are: Null, Bool, Int, Double, String, Object, Array.
@@ -1277,7 +1269,7 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Variables.SFSUserVariable")
     @js.native
-    class SFSUserVariable protected ()
+    open class SFSUserVariable protected ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Variables.SFSUserVariable {
       /**
@@ -1286,8 +1278,8 @@ object Entities {
         * @param {any}    value The value of the User Variable; valid data types are: Boolean, Number, String, Object, Array. The value can also be null.
         * @param {number} [type=-1]  The type id of the User Variable among those available in the VariableType class. Usually it is not necessary to pass this parameter, as the type is auto-detected from the value.
         */
-      def this(name: String, value: js.Any) = this()
-      def this(name: String, value: js.Any, `type`: Double) = this()
+      def this(name: String, value: Any) = this()
+      def this(name: String, value: Any, `type`: Double) = this()
       
       /**
         * Indicates the type of this variable. Possibly returned strings are: Null, Bool, Int, Double, String, Object, Array.
@@ -1315,7 +1307,7 @@ object Entities {
     
     @JSGlobal("SFS2X.Entities.Variables.VariableType")
     @js.native
-    class VariableType ()
+    open class VariableType ()
       extends StObject
          with typings.smartFoxServer.SFS2X.Entities.Variables.VariableType
     /* static members */

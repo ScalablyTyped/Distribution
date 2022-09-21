@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HoveredDate extends StObject {
   
-  var hoveredDate: typings.std.Date | Null
+  var hoveredDate: js.Date | Null
   
-  var receivedEndDate: String | typings.std.Date | Null
+  var receivedEndDate: String | js.Date | Null
   
-  var receivedStartDate: String | typings.std.Date | Null
+  var receivedStartDate: String | js.Date | Null
 }
 object HoveredDate {
   
@@ -21,15 +21,15 @@ object HoveredDate {
   
   extension [Self <: HoveredDate](x: Self) {
     
-    inline def setHoveredDate(value: typings.std.Date): Self = StObject.set(x, "hoveredDate", value.asInstanceOf[js.Any])
+    inline def setHoveredDate(value: js.Date): Self = StObject.set(x, "hoveredDate", value.asInstanceOf[js.Any])
     
     inline def setHoveredDateNull: Self = StObject.set(x, "hoveredDate", null)
     
-    inline def setReceivedEndDate(value: String | typings.std.Date): Self = StObject.set(x, "receivedEndDate", value.asInstanceOf[js.Any])
+    inline def setReceivedEndDate(value: String | js.Date): Self = StObject.set(x, "receivedEndDate", value.asInstanceOf[js.Any])
     
     inline def setReceivedEndDateNull: Self = StObject.set(x, "receivedEndDate", null)
     
-    inline def setReceivedStartDate(value: String | typings.std.Date): Self = StObject.set(x, "receivedStartDate", value.asInstanceOf[js.Any])
+    inline def setReceivedStartDate(value: String | js.Date): Self = StObject.set(x, "receivedStartDate", value.asInstanceOf[js.Any])
     
     inline def setReceivedStartDateNull: Self = StObject.set(x, "receivedStartDate", null)
   }

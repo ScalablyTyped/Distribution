@@ -10,12 +10,12 @@ object plainCardBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/HoverCard/PlainCard/PlainCard.base", "PlainCardBase")
   @js.native
-  class PlainCardBase protected ()
-    extends Component[IPlainCardProps, js.Object, js.Any] {
+  open class PlainCardBase protected ()
+    extends Component[IPlainCardProps, js.Object, Any] {
     def this(props: IPlainCardProps) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
   }
 }

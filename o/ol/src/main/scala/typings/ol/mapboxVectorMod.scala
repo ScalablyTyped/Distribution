@@ -5,7 +5,6 @@ import typings.ol.extentMod.Extent
 import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.renderMod.OrderFunction
 import typings.ol.vectorTileRenderTypeMod.VectorTileRenderType
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object mapboxVectorMod {
   
   @JSImport("ol/layer/MapboxVector", JSImport.Default)
   @js.native
-  class default protected () extends MapboxVectorLayer {
+  open class default protected () extends MapboxVectorLayer {
     def this(options: Options) = this()
   }
   
@@ -66,7 +65,7 @@ object mapboxVectorMod {
     /**
       * Handle configuration or loading error.
       */
-    /* protected */ def handleError(error: Error): Unit = js.native
+    /* protected */ def handleError(error: js.Error): Unit = js.native
     
     /**
       * Handle the loaded style object.
@@ -147,7 +146,7 @@ object mapboxVectorMod {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setMap(value: typings.ol.pluggableMapMod.default): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
@@ -267,7 +266,7 @@ object mapboxVectorMod {
       
       inline def setLayers(value: js.Array[LayerObject]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      inline def setLayersVarargs(value: LayerObject*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: LayerObject*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setSources(value: StringDictionary[SourceObject]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       

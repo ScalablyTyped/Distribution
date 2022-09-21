@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("two.js", "Path")
 @js.native
-class Path protected ()
+open class Path protected ()
   extends StObject
      with Object {
   def this(vertices: js.Array[Vector], closed: Boolean, curved: Boolean) = this()
@@ -28,6 +28,8 @@ class Path protected ()
   var closed: Boolean = js.native
   
   var curved: Boolean = js.native
+  
+  var dashes: js.Array[Double] = js.native
   
   var ending: Double = js.native
   
@@ -75,5 +77,5 @@ object Path {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def MakeObservable(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def MakeObservable(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

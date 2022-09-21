@@ -8,19 +8,19 @@ trait DeviceEnrollmentPlatformRestrictionsConfiguration
   extends StObject
      with DeviceEnrollmentConfiguration {
   
-  // Not yet documented
+  // Android restrictions based on platform, platform operating system version, and device ownership
   var androidRestriction: js.UndefOr[NullableOption[DeviceEnrollmentPlatformRestriction]] = js.undefined
   
-  // Not yet documented
+  // Ios restrictions based on platform, platform operating system version, and device ownership
   var iosRestriction: js.UndefOr[NullableOption[DeviceEnrollmentPlatformRestriction]] = js.undefined
   
-  // Not yet documented
+  // Mac restrictions based on platform, platform operating system version, and device ownership
   var macOSRestriction: js.UndefOr[NullableOption[DeviceEnrollmentPlatformRestriction]] = js.undefined
   
-  // Not yet documented
+  // Windows mobile restrictions based on platform, platform operating system version, and device ownership
   var windowsMobileRestriction: js.UndefOr[NullableOption[DeviceEnrollmentPlatformRestriction]] = js.undefined
   
-  // Not yet documented
+  // Windows restrictions based on platform, platform operating system version, and device ownership
   var windowsRestriction: js.UndefOr[NullableOption[DeviceEnrollmentPlatformRestriction]] = js.undefined
 }
 object DeviceEnrollmentPlatformRestrictionsConfiguration {

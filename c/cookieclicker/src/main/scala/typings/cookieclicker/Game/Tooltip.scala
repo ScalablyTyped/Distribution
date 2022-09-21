@@ -1,5 +1,6 @@
 package typings.cookieclicker.Game
 
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -51,6 +52,16 @@ trait Tooltip extends StObject {
     * The html text the tooltip should have
     */
   var text: js.Function0[String] | String = js.native
+  
+  /**
+    * The tooltip itself
+    */
+  var tt: HTMLDivElement = js.native
+  
+  /**
+    * The anchor of the tooltip which is positioned with `top` and `left`
+    */
+  var tta: HTMLDivElement = js.native
   
   /**
     * Updates the tooltip position and contents

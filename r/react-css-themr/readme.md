@@ -11,9 +11,9 @@ React CSS Themr
 | Full name          | react-css-themr |
 | Keywords           | css-modules, customization, react, react-css-themr, theming |
 | # releases         | 0 |
-| # dependents       | 65 |
-| # downloads        | 1526340 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 44652.333333333336 |
+| # stars            | 591.0 |
 
 ## Links
 - [Homepage](https://github.com/javivelasco/react-css-themr#readme)

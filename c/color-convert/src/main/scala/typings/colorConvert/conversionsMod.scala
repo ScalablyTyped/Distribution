@@ -348,7 +348,7 @@ object conversionsMod {
   
   type HWB_ = js.Tuple3[Double, Double, Double]
   
-  /* keyof color-convert.anon.TypeofcssKeywords */ /* Rewritten from type alias, can be one of: 
+  /* keyof color-convert.anon.Typeofcolors */ /* Rewritten from type alias, can be one of: 
     - typings.colorConvert.colorConvertStrings.black
     - typings.colorConvert.colorConvertStrings.magenta
     - typings.colorConvert.colorConvertStrings.skyblue

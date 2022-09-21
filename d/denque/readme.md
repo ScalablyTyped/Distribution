@@ -1,22 +1,22 @@
 
 # Scala.js typings for denque
 
-Typings are for version 1.4.1
+Typings are for version 2.1.0
 
 ## Library description:
-The fastest javascript implementation of a double-ended queue. Maintains compatability with deque.
+The fastest javascript implementation of a double-ended queue. Used by the official Redis, MongoDB, MariaDB & MySQL libraries for Node.js and many other libraries. Maintains compatability with deque.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | denque |
 | Keywords           | data-structure, data-structures, queue, double, end, ended, deque, denque, double-ended-queue |
-| # releases         | 3 |
-| # dependents       | 91 |
-| # downloads        | 119964702 |
-| # stars            | 5 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2.6865041666666668E7 |
+| # stars            | 299.0 |
 
 ## Links
-- [Homepage](https://github.com/invertase/denque#readme)
+- [Homepage](https://docs.page/invertase/denque)
 - [Bugs](https://github.com/invertase/denque/issues)
 - [Repository](https://github.com/invertase/denque)
 - [Npm](https://www.npmjs.com/package/denque)

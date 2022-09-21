@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A list of rows, one per result, grouped by key. Metrics in each row are
-  * aggregated for all data grouped by that key either by page or property, as
-  * specified by the aggregation type parameter.
-  */
 trait SchemaSearchAnalyticsQueryResponse extends StObject {
   
   /**
     * How the results were aggregated.
     */
-  var responseAggregationType: js.UndefOr[String] = js.undefined
+  var responseAggregationType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A list of rows grouped by the key values in the order given in the query.
@@ -32,12 +27,14 @@ object SchemaSearchAnalyticsQueryResponse {
     
     inline def setResponseAggregationType(value: String): Self = StObject.set(x, "responseAggregationType", value.asInstanceOf[js.Any])
     
+    inline def setResponseAggregationTypeNull: Self = StObject.set(x, "responseAggregationType", null)
+    
     inline def setResponseAggregationTypeUndefined: Self = StObject.set(x, "responseAggregationType", js.undefined)
     
     inline def setRows(value: js.Array[SchemaApiDataRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: SchemaApiDataRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: SchemaApiDataRow*): Self = StObject.set(x, "rows", js.Array(value*))
   }
 }

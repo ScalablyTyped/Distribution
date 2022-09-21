@@ -1,7 +1,7 @@
 
 # Scala.js typings for indent-string
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Indent each line in a string
@@ -11,9 +11,9 @@ Indent each line in a string
 | Full name          | indent-string |
 | Keywords           | indent, string, pad, align, line, text, each, every |
 | # releases         | 2 |
-| # dependents       | 473 |
-| # downloads        | 1025293147 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3160211366666667E8 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/indent-string#readme)

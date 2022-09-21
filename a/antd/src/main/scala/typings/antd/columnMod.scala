@@ -11,10 +11,7 @@ object columnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * This is a syntactic sugar for `columns` prop.
-    * So HOC will not work on this.
-    */
+  /** This is a syntactic sugar for `columns` prop. So HOC will not work on this. */
   inline def default[RecordType](_underscore: ColumnProps[RecordType]): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Null]
   
   trait ColumnProps[RecordType]

@@ -13,7 +13,7 @@ object marqueeMod {
   
   @JSImport("@ant-design/react-native/lib/notice-bar/Marquee", JSImport.Default)
   @js.native
-  class default protected () extends Marquee {
+  open class default protected () extends Marquee {
     def this(props: MarqueeProps) = this()
   }
   object default {
@@ -58,10 +58,9 @@ object marqueeMod {
   }
   
   @js.native
-  trait Marquee
-    extends PureComponent[MarqueeProps, js.Any, js.Any] {
+  trait Marquee extends PureComponent[MarqueeProps, Any, Any] {
     
-    var left: js.Any = js.native
+    var left: Any = js.native
     
     def moveToHeader(): Unit = js.native
     
@@ -71,7 +70,7 @@ object marqueeMod {
     
     def startMove(): Unit = js.native
     
-    var texts: js.Any = js.native
+    var texts: Any = js.native
     
     def tryStart(): Unit = js.native
   }

@@ -10,10 +10,10 @@ Browser SDK for AWS Key Management Service
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-kms-browser |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 0 |
-| # downloads        | 445 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 45.666666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fclient-kms-browser)

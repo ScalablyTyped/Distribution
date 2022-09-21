@@ -5,4 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type RepeatNote = typings.vexflow.Vex.Flow.GlyphNote
+type RepeatNote = GlyphNote

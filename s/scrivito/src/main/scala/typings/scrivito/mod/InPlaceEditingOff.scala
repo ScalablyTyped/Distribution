@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("scrivito", "InPlaceEditingOff")
 @js.native
-class InPlaceEditingOff protected ()
-  extends Component[js.Any, js.Any, js.Any] {
-  def this(props: js.Any) = this()
+open class InPlaceEditingOff protected () extends Component[Any, Any, Any] {
+  def this(props: Any) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: js.Any, context: js.Any) = this()
+  def this(props: Any, context: Any) = this()
 }

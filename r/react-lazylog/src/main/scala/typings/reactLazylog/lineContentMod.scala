@@ -13,8 +13,8 @@ object lineContentMod {
   
   @JSImport("react-lazylog/build/LineContent", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[LineContentProps, js.Object, js.Any]
+  open class default ()
+    extends Component[LineContentProps, js.Object, Any]
   /* static members */
   object default {
     
@@ -28,7 +28,7 @@ object lineContentMod {
     inline def defaultProps_=(x: PartialLineContentProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  type LineContent = Component[LineContentProps, js.Object, js.Any]
+  type LineContent = Component[LineContentProps, js.Object, Any]
   
   trait LineContentProps extends StObject {
     
@@ -51,7 +51,7 @@ object lineContentMod {
       
       inline def setData(value: js.Array[Text]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Text*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Text*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setFormatPart(value: /* text */ String => ReactNode): Self = StObject.set(x, "formatPart", js.Any.fromFunction1(value))
       

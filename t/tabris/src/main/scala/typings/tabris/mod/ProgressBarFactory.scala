@@ -10,5 +10,5 @@ trait ProgressBarFactory
   extends Factory[
       ProgressBarConstructor, 
       InstanceType[ProgressBarConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[ProgressBarConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

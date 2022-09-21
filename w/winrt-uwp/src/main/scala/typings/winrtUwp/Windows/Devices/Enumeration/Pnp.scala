@@ -83,7 +83,7 @@ object Pnp {
     var id: String
     
     /** A property store containing well-known values as well as additional specified properties. */
-    var properties: IMapView[String, js.Any]
+    var properties: IMapView[String, Any]
     
     /** The type of the PnpObject . */
     var `type`: PnpObjectType
@@ -98,7 +98,7 @@ object Pnp {
     
     inline def apply(
       id: String,
-      properties: IMapView[String, js.Any],
+      properties: IMapView[String, Any],
       `type`: PnpObjectType,
       update: PnpObjectUpdate => Unit
     ): PnpObject = {
@@ -111,7 +111,7 @@ object Pnp {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: IMapView[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setType(value: PnpObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -144,7 +144,7 @@ object Pnp {
       */
     def getMany(startIndex: Double): ItemsPnpObject = js.native
     
-    def indexOf(value: PnpObject, extra: js.Any*): Index = js.native
+    def indexOf(value: PnpObject, extra: Any*): Index = js.native
     /* hack */
     @JSName("indexOf")
     def indexOf_Double(searchElement: PnpObject): Double = js.native
@@ -160,14 +160,14 @@ object Pnp {
     var id: String
     
     /** The changed properties in an update to a PnpObject . */
-    var properties: IMapView[String, js.Any]
+    var properties: IMapView[String, Any]
     
     /** The type of the PnpObject . One of the values of the PnpObjectType enumeration. */
     var `type`: PnpObjectType
   }
   object PnpObjectUpdate {
     
-    inline def apply(id: String, properties: IMapView[String, js.Any], `type`: PnpObjectType): PnpObjectUpdate = {
+    inline def apply(id: String, properties: IMapView[String, Any], `type`: PnpObjectType): PnpObjectUpdate = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PnpObjectUpdate]
@@ -177,7 +177,7 @@ object Pnp {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: IMapView[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setType(value: PnpObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -187,15 +187,15 @@ object Pnp {
   @js.native
   trait PnpObjectWatcher extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_added(`type`: added, listener: TypedEventHandler[PnpObjectWatcher, PnpObject]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[PnpObjectWatcher, js.Any]): Unit = js.native
+    def addEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[PnpObjectWatcher, Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_removed(`type`: removed, listener: TypedEventHandler[PnpObjectWatcher, PnpObjectUpdate]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[PnpObjectWatcher, js.Any]): Unit = js.native
+    def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[PnpObjectWatcher, Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_updated(`type`: updated, listener: TypedEventHandler[PnpObjectWatcher, PnpObjectUpdate]): Unit = js.native
     
@@ -206,10 +206,10 @@ object Pnp {
     var onadded_Original: TypedEventHandler[PnpObjectWatcher, PnpObject] = js.native
     
     /** Occurs when the enumeration of Pnp device objects has been completed. */
-    def onenumerationcompleted(ev: js.Any & WinRTEvent[PnpObjectWatcher]): Unit = js.native
+    def onenumerationcompleted(ev: Any & WinRTEvent[PnpObjectWatcher]): Unit = js.native
     /** Occurs when the enumeration of Pnp device objects has been completed. */
     @JSName("onenumerationcompleted")
-    var onenumerationcompleted_Original: TypedEventHandler[PnpObjectWatcher, js.Any] = js.native
+    var onenumerationcompleted_Original: TypedEventHandler[PnpObjectWatcher, Any] = js.native
     
     /** Occurs when a PnpObject is removed from the collection enumerated by the PnpObjectWatcher . */
     def onremoved(ev: PnpObjectUpdate & WinRTEvent[PnpObjectWatcher]): Unit = js.native
@@ -218,10 +218,10 @@ object Pnp {
     var onremoved_Original: TypedEventHandler[PnpObjectWatcher, PnpObjectUpdate] = js.native
     
     /** Occurs when the PnpObjectWatcher has stopped monitoring changes to the collection of Pnp device objects. */
-    def onstopped(ev: js.Any & WinRTEvent[PnpObjectWatcher]): Unit = js.native
+    def onstopped(ev: Any & WinRTEvent[PnpObjectWatcher]): Unit = js.native
     /** Occurs when the PnpObjectWatcher has stopped monitoring changes to the collection of Pnp device objects. */
     @JSName("onstopped")
-    var onstopped_Original: TypedEventHandler[PnpObjectWatcher, js.Any] = js.native
+    var onstopped_Original: TypedEventHandler[PnpObjectWatcher, Any] = js.native
     
     /** Occurs when the properties of a PnpObject in the collection enumerated by the PnpObjectWatcher are updated. */
     def onupdated(ev: PnpObjectUpdate & WinRTEvent[PnpObjectWatcher]): Unit = js.native
@@ -229,15 +229,15 @@ object Pnp {
     @JSName("onupdated")
     var onupdated_Original: TypedEventHandler[PnpObjectWatcher, PnpObjectUpdate] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_added(`type`: added, listener: TypedEventHandler[PnpObjectWatcher, PnpObject]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[PnpObjectWatcher, js.Any]): Unit = js.native
+    def removeEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[PnpObjectWatcher, Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_removed(`type`: removed, listener: TypedEventHandler[PnpObjectWatcher, PnpObjectUpdate]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[PnpObjectWatcher, js.Any]): Unit = js.native
+    def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[PnpObjectWatcher, Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_updated(`type`: updated, listener: TypedEventHandler[PnpObjectWatcher, PnpObjectUpdate]): Unit = js.native
     

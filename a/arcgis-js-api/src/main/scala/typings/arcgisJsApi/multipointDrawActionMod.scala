@@ -22,7 +22,7 @@ object multipointDrawActionMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-MultipointDrawAction.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with MultipointDrawAction {
     def this(properties: MultipointDrawActionProperties) = this()

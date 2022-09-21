@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A unique identifier for a Cloud Repo.
-  */
 trait SchemaGoogleDevtoolsContaineranalysisV1alpha1RepoId extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaGoogleDevtoolsContaineranalysisV1alpha1RepoId extends StObject {
   /**
     * A server-assigned, globally unique identifier.
     */
-  var uid: js.UndefOr[String] = js.undefined
+  var uid: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleDevtoolsContaineranalysisV1alpha1RepoId {
   
@@ -33,6 +30,8 @@ object SchemaGoogleDevtoolsContaineranalysisV1alpha1RepoId {
     inline def setProjectRepoIdUndefined: Self = StObject.set(x, "projectRepoId", js.undefined)
     
     inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    
+    inline def setUidNull: Self = StObject.set(x, "uid", null)
     
     inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
   }

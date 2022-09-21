@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UnsupportedLayerConstructor
   extends StObject
-     with Instantiable0[UnsupportedLayer]
+     with /**
+  * Represents an unsupported layer instance.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-UnsupportedLayer.html)
+  */
+Instantiable0[UnsupportedLayer]
      with Instantiable1[/* properties */ UnsupportedLayerProperties, UnsupportedLayer]

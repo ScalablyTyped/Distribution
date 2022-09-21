@@ -1,13 +1,16 @@
 package typings.firebaseFirestore
 
+import typings.firebaseFirestore.firestoreProtoApiMod.ListenResponse
 import typings.firebaseFirestore.watchChangeMod.WatchChange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/test/util/spec_test_helpers", JSImport.Namespace)
-@js.native
-object specTestHelpersMod extends js.Object {
-  def encodeWatchChange(watchChange: WatchChange): js.Any = js.native
+object specTestHelpersMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/test/util/spec_test_helpers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def encodeWatchChange(watchChange: WatchChange): ListenResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWatchChange")(watchChange.asInstanceOf[js.Any]).asInstanceOf[ListenResponse]
 }
-

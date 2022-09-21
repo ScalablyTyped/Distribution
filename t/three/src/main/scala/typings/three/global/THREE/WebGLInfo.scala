@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.WebGLInfo")
 @js.native
-class WebGLInfo protected ()
+open class WebGLInfo protected ()
   extends typings.three.mod.WebGLInfo {
   def this(gl: WebGLRenderingContext) = this()
 }

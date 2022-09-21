@@ -32,6 +32,6 @@ object JobPayloadItem {
     
     inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     
-    inline def setViewsVarargs(value: String*): Self = StObject.set(x, "views", js.Array(value :_*))
+    inline def setViewsVarargs(value: String*): Self = StObject.set(x, "views", js.Array(value*))
   }
 }

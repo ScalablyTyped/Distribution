@@ -25,7 +25,7 @@ trait Alt extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Resource name for the location. */
+  /** The name of the project resource in the form: `projects/{project_id}` */
   var name: String
   
   /** OAuth 2.0 token for the current user. */

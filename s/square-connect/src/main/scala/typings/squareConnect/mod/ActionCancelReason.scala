@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ActionCancelReason")
 @js.native
-class ActionCancelReason () extends StObject
+open class ActionCancelReason () extends StObject

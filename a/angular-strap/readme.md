@@ -10,10 +10,10 @@ AngularStrap - AngularJS directives for Bootstrap
 | ------------------ | :-------------: |
 | Full name          | angular-strap |
 | Keywords           | angular, bootstrap |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 493693 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 40040.666666666664 |
+| # stars            | 5811.0 |
 
 ## Links
 - [Homepage](http://mgcrea.github.io/angular-strap)

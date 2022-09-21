@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(options: SmtpOptions): Transport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  inline def apply(options: SmtpOptions): Transport[Any] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport[Any]]
   
   @JSImport("nodemailer-smtp-transport", JSImport.Namespace)
   @js.native
@@ -45,7 +45,7 @@ object mod {
     var serviceClient: js.UndefOr[String] = js.undefined
     
     /** indicates the authetication type, defaults to ‘login’, other option is ‘oauth2’ */
-    var `type`: js.UndefOr[js.Any] = js.undefined
+    var `type`: js.UndefOr[Any] = js.undefined
     
     /** is the username */
     var user: js.UndefOr[String] = js.undefined
@@ -95,7 +95,7 @@ object mod {
       
       inline def setServiceClientUndefined: Self = StObject.set(x, "serviceClient", js.undefined)
       
-      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       

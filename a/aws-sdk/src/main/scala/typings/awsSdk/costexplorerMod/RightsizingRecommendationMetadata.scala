@@ -7,17 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RightsizingRecommendationMetadata extends StObject {
   
   /**
-    *  The timestamp for when AWS made this recommendation.
+    * Additional metadata that might be applicable to the recommendation.
+    */
+  var AdditionalMetadata: js.UndefOr[GenericString] = js.undefined
+  
+  /**
+    * The timestamp for when Amazon Web Services made this recommendation.
     */
   var GenerationTimestamp: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  How many days of previous usage that AWS considers when making this recommendation.
+    * The number of days of previous usage that Amazon Web Services considers when making this recommendation.
     */
   var LookbackPeriodInDays: js.UndefOr[typings.awsSdk.costexplorerMod.LookbackPeriodInDays] = js.undefined
   
   /**
-    *  The ID for this specific recommendation.
+    * The ID for this specific recommendation.
     */
   var RecommendationId: js.UndefOr[GenericString] = js.undefined
 }
@@ -29,6 +34,10 @@ object RightsizingRecommendationMetadata {
   }
   
   extension [Self <: RightsizingRecommendationMetadata](x: Self) {
+    
+    inline def setAdditionalMetadata(value: GenericString): Self = StObject.set(x, "AdditionalMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalMetadataUndefined: Self = StObject.set(x, "AdditionalMetadata", js.undefined)
     
     inline def setGenerationTimestamp(value: GenericString): Self = StObject.set(x, "GenerationTimestamp", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait SelectionInput extends StObject {
   
-  def addItem(text: js.Any, value: js.Any, selected: Boolean): SelectionInput
+  def addItem(text: Any, value: Any, selected: Boolean): SelectionInput
   
   def setFieldName(fieldName: String): SelectionInput
   
@@ -40,7 +40,7 @@ trait SelectionInput extends StObject {
 object SelectionInput {
   
   inline def apply(
-    addItem: (js.Any, js.Any, Boolean) => SelectionInput,
+    addItem: (Any, Any, Boolean) => SelectionInput,
     setFieldName: String => SelectionInput,
     setOnChangeAction: Action => SelectionInput,
     setTitle: String => SelectionInput,
@@ -52,7 +52,7 @@ object SelectionInput {
   
   extension [Self <: SelectionInput](x: Self) {
     
-    inline def setAddItem(value: (js.Any, js.Any, Boolean) => SelectionInput): Self = StObject.set(x, "addItem", js.Any.fromFunction3(value))
+    inline def setAddItem(value: (Any, Any, Boolean) => SelectionInput): Self = StObject.set(x, "addItem", js.Any.fromFunction3(value))
     
     inline def setSetFieldName(value: String => SelectionInput): Self = StObject.set(x, "setFieldName", js.Any.fromFunction1(value))
     

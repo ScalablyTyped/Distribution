@@ -33,6 +33,6 @@ object ConversationLogsResponse {
     
     inline def setLogSettingsUndefined: Self = StObject.set(x, "logSettings", js.undefined)
     
-    inline def setLogSettingsVarargs(value: LogSettingsResponse*): Self = StObject.set(x, "logSettings", js.Array(value :_*))
+    inline def setLogSettingsVarargs(value: LogSettingsResponse*): Self = StObject.set(x, "logSettings", js.Array(value*))
   }
 }

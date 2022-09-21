@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.WebGLGeometries")
 @js.native
-class WebGLGeometries protected ()
+open class WebGLGeometries protected ()
   extends typings.three.mod.WebGLGeometries {
   def this(gl: WebGLRenderingContext, attributes: WebGLAttributes, info: typings.three.webGLInfoMod.WebGLInfo) = this()
 }

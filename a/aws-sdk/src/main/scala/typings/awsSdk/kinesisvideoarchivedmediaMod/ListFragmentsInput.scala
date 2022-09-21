@@ -14,7 +14,7 @@ trait ListFragmentsInput extends StObject {
   /**
     * The total number of fragments to return. If the total number of fragments available is more than the value specified in max-results, then a ListFragmentsOutput$NextToken is provided in the output that you can use to resume pagination.
     */
-  var MaxResults: js.UndefOr[PageLimit] = js.undefined
+  var MaxResults: js.UndefOr[ListFragmentsMaxResults] = js.undefined
   
   /**
     * A token to specify where to start paginating. This is the ListFragmentsOutput$NextToken from a previously truncated response.
@@ -22,14 +22,19 @@ trait ListFragmentsInput extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.kinesisvideoarchivedmediaMod.NextToken] = js.undefined
   
   /**
-    * The name of the stream from which to retrieve a fragment list.
+    * The Amazon Resource Name (ARN) of the stream from which to retrieve a fragment list. Specify either this parameter or the StreamName parameter.
     */
-  var StreamName: typings.awsSdk.kinesisvideoarchivedmediaMod.StreamName
+  var StreamARN: js.UndefOr[ResourceARN] = js.undefined
+  
+  /**
+    * The name of the stream from which to retrieve a fragment list. Specify either this parameter or the StreamARN parameter.
+    */
+  var StreamName: js.UndefOr[typings.awsSdk.kinesisvideoarchivedmediaMod.StreamName] = js.undefined
 }
 object ListFragmentsInput {
   
-  inline def apply(StreamName: StreamName): ListFragmentsInput = {
-    val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
+  inline def apply(): ListFragmentsInput = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFragmentsInput]
   }
   
@@ -39,7 +44,7 @@ object ListFragmentsInput {
     
     inline def setFragmentSelectorUndefined: Self = StObject.set(x, "FragmentSelector", js.undefined)
     
-    inline def setMaxResults(value: PageLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ListFragmentsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
@@ -47,6 +52,12 @@ object ListFragmentsInput {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
+    inline def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+    
     inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

@@ -12,12 +12,10 @@ object alphaMod {
   
   @JSImport("react-color/lib/components/alpha/Alpha", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[AlphaPickerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[AlphaPickerProps, js.Object, Any]
   
-  @js.native
-  trait AlphaPicker
-    extends Component[AlphaPickerProps, js.Object, js.Any]
+  type AlphaPicker = Component[AlphaPickerProps, js.Object, Any]
   
   trait AlphaPickerProps
     extends StObject

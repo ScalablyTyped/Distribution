@@ -27,6 +27,6 @@ object Language {
     
     inline def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
     
-    inline def setRouteVarargs(value: Leg*): Self = StObject.set(x, "route", js.Array(value :_*))
+    inline def setRouteVarargs(value: Leg*): Self = StObject.set(x, "route", js.Array(value*))
   }
 }

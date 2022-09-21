@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AddHeldAccountsRequest extends StObject {
   
-  /** Account IDs to identify which accounts to add. Only account_ids or only emails should be specified, but not both. */
+  /** A comma-separated list of the account IDs of the accounts to add to the hold. Specify either **emails** or **account_ids**, but not both. */
   var accountIds: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** Emails to identify which accounts to add. Only emails or only account_ids should be specified, but not both. */
+  /** A comma-separated list of the emails of the accounts to add to the hold. Specify either **emails** or **account_ids**, but not both. */
   var emails: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AddHeldAccountsRequest {
@@ -25,12 +25,12 @@ object AddHeldAccountsRequest {
     
     inline def setAccountIdsUndefined: Self = StObject.set(x, "accountIds", js.undefined)
     
-    inline def setAccountIdsVarargs(value: String*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: String*): Self = StObject.set(x, "accountIds", js.Array(value*))
     
     inline def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
     inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
-    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value*))
   }
 }

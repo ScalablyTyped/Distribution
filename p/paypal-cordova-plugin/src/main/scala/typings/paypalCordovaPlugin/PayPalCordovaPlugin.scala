@@ -178,7 +178,7 @@ object PayPalCordovaPlugin {
       */
     def renderProfileSharingUI(
       scopes: js.Array[String],
-      completionCallback: js.Function1[/* result */ js.Any, Unit],
+      completionCallback: js.Function1[/* result */ Any, Unit],
       cancelCallback: js.Function1[/* cancelReason */ String, Unit]
     ): Unit
     
@@ -212,7 +212,7 @@ object PayPalCordovaPlugin {
       init: (PayPalClientIds, js.Function0[Unit]) => Unit,
       prepareToRender: (String, PayPalConfiguration, js.Function0[Unit]) => Unit,
       renderFuturePaymentUI: (js.Function1[/* result */ FuturePaymentResult, Unit], js.Function1[/* cancelReason */ String, Unit]) => Unit,
-      renderProfileSharingUI: (js.Array[String], js.Function1[/* result */ js.Any, Unit], js.Function1[/* cancelReason */ String, Unit]) => Unit,
+      renderProfileSharingUI: (js.Array[String], js.Function1[/* result */ Any, Unit], js.Function1[/* cancelReason */ String, Unit]) => Unit,
       renderSinglePaymentUI: (PayPalPayment, js.Function1[/* result */ SinglePaymentResult, Unit], js.Function1[/* cancelReason */ String, Unit]) => Unit,
       version: js.Function1[/* result */ String, Unit] => Unit
     ): PayPalMobileStatic = {
@@ -235,7 +235,7 @@ object PayPalCordovaPlugin {
       ): Self = StObject.set(x, "renderFuturePaymentUI", js.Any.fromFunction2(value))
       
       inline def setRenderProfileSharingUI(
-        value: (js.Array[String], js.Function1[/* result */ js.Any, Unit], js.Function1[/* cancelReason */ String, Unit]) => Unit
+        value: (js.Array[String], js.Function1[/* result */ Any, Unit], js.Function1[/* cancelReason */ String, Unit]) => Unit
       ): Self = StObject.set(x, "renderProfileSharingUI", js.Any.fromFunction3(value))
       
       inline def setRenderSinglePaymentUI(

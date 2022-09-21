@@ -1,8 +1,8 @@
 package typings.optimizeCssAssetsWebpackPlugin
 
 import typings.optimizeCssAssetsWebpackPlugin.anon.Process
-import typings.std.Plugin
-import typings.std.RegExp
+import typings.webpack.mod.Compiler
+import typings.webpack.mod.WebpackPluginInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +11,29 @@ object mod {
   
   @JSImport("optimize-css-assets-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
-       with Plugin {
+       with OptimizeCssAssetsPlugin {
     def this(options: Options) = this()
+    
+    /**
+    	 * The run point of the plugin, required method.
+    	 */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(compiler: Compiler): Unit = js.native
   }
   
-  type OptimizeCssAssetsPlugin = Plugin
+  trait OptimizeCssAssetsPlugin
+    extends StObject
+       with WebpackPluginInstance
+  object OptimizeCssAssetsPlugin {
+    
+    inline def apply(apply: Compiler => Unit): OptimizeCssAssetsPlugin = {
+      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
+      __obj.asInstanceOf[OptimizeCssAssetsPlugin]
+    }
+  }
   
   trait Options extends StObject {
     
@@ -29,7 +45,7 @@ object mod {
       *
       * @default /\.css$/g
       */
-    var assetNameRegExp: js.UndefOr[RegExp] = js.undefined
+    var assetNameRegExp: js.UndefOr[js.RegExp] = js.undefined
     
     /**
       * A boolean indicating if the plugin can print messages to the console.
@@ -70,7 +86,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAssetNameRegExp(value: RegExp): Self = StObject.set(x, "assetNameRegExp", value.asInstanceOf[js.Any])
+      inline def setAssetNameRegExp(value: js.RegExp): Self = StObject.set(x, "assetNameRegExp", value.asInstanceOf[js.Any])
       
       inline def setAssetNameRegExpUndefined: Self = StObject.set(x, "assetNameRegExp", js.undefined)
       

@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object interruptManagerMod {
   
-  @JSImport("@egjs/axes/InterruptManager", "InterruptManager")
+  @JSImport("@egjs/axes/declaration/InterruptManager", "InterruptManager")
   @js.native
-  class InterruptManager protected () extends StObject {
-    def this(options: AxesOption) = this()
+  open class InterruptManager protected () extends StObject {
+    def this(_options: AxesOption) = this()
     
-    /* private */ var _prevented: js.Any = js.native
+    /* private */ var _options: Any = js.native
+    
+    /* private */ var _prevented: Any = js.native
     
     def isInterrupted(): Boolean = js.native
     
     def isInterrupting(): Boolean = js.native
     
-    /* private */ var options: js.Any = js.native
-    
-    def setInterrupt(prevented: js.Any): Unit = js.native
+    def setInterrupt(prevented: Any): Unit = js.native
   }
 }

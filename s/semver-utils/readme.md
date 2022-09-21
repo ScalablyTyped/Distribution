@@ -11,9 +11,9 @@ Tools for manipulating semver strings and objects
 | Full name          | semver-utils |
 | Keywords           | semver, parse, parseRange, range |
 | # releases         | 0 |
-| # dependents       | 56 |
-| # downloads        | 7577814 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1430965.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://git.coolaj86.com/coolaj86/semver-utils.js)

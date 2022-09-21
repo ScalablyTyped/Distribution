@@ -1,7 +1,7 @@
 
 # Scala.js typings for random-float
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Generate a random float
@@ -10,15 +10,12 @@ Generate a random float
 | ------------------ | :-------------: |
 | Full name          | random-float |
 | Keywords           | random, randomize, float, floating, point, real, number, max, min, math, generate, generator |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 42693 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3360.6666666666665 |
+| # stars            | 28.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/random-float#readme)
-- [Bugs](https://github.com/sindresorhus/random-float/issues)
-- [Repository](https://github.com/sindresorhus/random-float)
 - [Npm](https://www.npmjs.com/package/random-float)
     
 

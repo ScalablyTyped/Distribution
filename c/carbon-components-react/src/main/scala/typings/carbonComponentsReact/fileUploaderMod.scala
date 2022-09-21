@@ -15,26 +15,26 @@ object fileUploaderMod {
   
   @JSImport("carbon-components-react/lib/components/FileUploader", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.carbonComponentsReact.fileUploaderFileUploaderMod.default {
     def this(props: FileUploaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: FileUploaderProps, context: js.Any) = this()
+    def this(props: FileUploaderProps, context: Any) = this()
   }
   
   @JSImport("carbon-components-react/lib/components/FileUploader", "FileUploader")
   @js.native
-  class FileUploader protected ()
+  open class FileUploader protected ()
     extends typings.carbonComponentsReact.fileUploaderFileUploaderMod.FileUploader {
     def this(props: FileUploaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: FileUploaderProps, context: js.Any) = this()
+    def this(props: FileUploaderProps, context: Any) = this()
   }
   
   @JSImport("carbon-components-react/lib/components/FileUploader", "FileUploaderButton")

@@ -12,21 +12,32 @@ object flyCameraMouseInputMod {
   @js.native
   /**
     * Listen to mouse events to control the camera.
-    * @param touchEnabled Define if touch is enabled. (Default is true.)
     * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
     */
-  class FlyCameraMouseInput ()
+  open class FlyCameraMouseInput ()
     extends StObject
        with ICameraInput[FlyCamera] {
-    def this(touchEnabled: Boolean) = this()
     
-    /* private */ var _observer: js.Any = js.native
+    /* private */ var _element: Any = js.native
     
-    /* private */ var _onMouseMove: js.Any = js.native
+    /* private */ var _noPreventDefault: Any = js.native
     
-    /* private */ var _pointerInput: js.Any = js.native
+    /* private */ var _observer: Any = js.native
     
-    /* private */ var _rollObserver: js.Any = js.native
+    /* private */ var _onMouseMove: Any = js.native
+    
+    /* private */ var _pointerInput: Any = js.native
+    
+    /* private */ var _previousPosition: Any = js.native
+    
+    /* private */ var _rollObserver: Any = js.native
+    
+    /**
+      * Rotate camera by mouse offset.
+      * @param offsetX
+      * @param offsetY
+      */
+    /* private */ var _rotateCamera: Any = js.native
     
     /**
       * Detect if any button is being pressed while mouse is moved.
@@ -68,17 +79,6 @@ object flyCameraMouseInputMod {
       */
     @JSName("camera")
     var camera_FlyCameraMouseInput: FlyCamera = js.native
-    
-    /* private */ var element: js.Any = js.native
-    
-    /* private */ var noPreventDefault: js.Any = js.native
-    
-    /* private */ var previousPosition: js.Any = js.native
-    
-    /**
-      * Rotate camera by mouse offset.
-      */
-    /* private */ var rotateCamera: js.Any = js.native
     
     /**
       * Defines if touch is enabled. (Default is true.)

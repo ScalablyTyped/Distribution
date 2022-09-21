@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListenerTls extends StObject {
   
   /**
-    * A reference to an object that represents a listener's TLS certificate.
+    * A reference to an object that represents a listener's Transport Layer Security (TLS) certificate.
     */
   var certificate: ListenerTlsCertificate
   
@@ -15,6 +15,11 @@ trait ListenerTls extends StObject {
     * Specify one of the following modes.    STRICT – Listener only accepts connections with TLS enabled.     PERMISSIVE – Listener accepts connections with or without TLS enabled.    DISABLED – Listener only accepts connections without TLS.   
     */
   var mode: ListenerTlsMode
+  
+  /**
+    * A reference to an object that represents a listener's Transport Layer Security (TLS) validation context.
+    */
+  var validation: js.UndefOr[ListenerTlsValidationContext] = js.undefined
 }
 object ListenerTls {
   
@@ -28,5 +33,9 @@ object ListenerTls {
     inline def setCertificate(value: ListenerTlsCertificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     inline def setMode(value: ListenerTlsMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setValidation(value: ListenerTlsValidationContext): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    
+    inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
   }
 }

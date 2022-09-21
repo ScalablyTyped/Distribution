@@ -32,7 +32,7 @@ object XMasterPageTarget {
     MasterPage: XDrawPage,
     acquire: () => Unit,
     getMasterPage: () => XDrawPage,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setMasterPage: XDrawPage => Unit
   ): XMasterPageTarget = {

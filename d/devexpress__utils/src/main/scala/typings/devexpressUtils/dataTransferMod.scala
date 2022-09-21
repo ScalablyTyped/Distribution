@@ -11,7 +11,7 @@ object dataTransferMod {
   
   @JSImport("@devexpress/utils/lib/utils/data-transfer", "DataTransferUtils")
   @js.native
-  class DataTransferUtils () extends StObject
+  open class DataTransferUtils () extends StObject
   /* static members */
   object DataTransferUtils {
     
@@ -29,7 +29,7 @@ object dataTransferMod {
     
     @JSImport("@devexpress/utils/lib/utils/data-transfer", "DataTransferUtils.isBrowserSupportExtendedClientBuffer")
     @js.native
-    def isBrowserSupportExtendedClientBuffer: js.Any = js.native
-    inline def isBrowserSupportExtendedClientBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isBrowserSupportExtendedClientBuffer")(x.asInstanceOf[js.Any])
+    def isBrowserSupportExtendedClientBuffer: Any = js.native
+    inline def isBrowserSupportExtendedClientBuffer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isBrowserSupportExtendedClientBuffer")(x.asInstanceOf[js.Any])
   }
 }

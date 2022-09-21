@@ -11,19 +11,20 @@ object groundMeshMod {
   
   @JSImport("babylonjs/Meshes/groundMesh", "GroundMesh")
   @js.native
-  class GroundMesh protected () extends Mesh {
+  open class GroundMesh protected () extends Mesh {
+    def this(name: String) = this()
     def this(name: String, scene: Scene) = this()
     
-    /* private */ var _computeHeightQuads: js.Any = js.native
+    /* private */ var _computeHeightQuads: Any = js.native
     
-    /* private */ var _getFacetAt: js.Any = js.native
+    /* private */ var _getFacetAt: Any = js.native
     
     /** @hidden */
     var _height: Double = js.native
     
-    /* private */ var _heightQuads: js.Any = js.native
+    /* private */ var _heightQuads: Any = js.native
     
-    /* private */ var _initHeightQuads: js.Any = js.native
+    /* private */ var _initHeightQuads: Any = js.native
     
     /** @hidden */
     var _maxX: Double = js.native
@@ -50,7 +51,7 @@ object groundMeshMod {
     var generateOctree: Boolean = js.native
     
     /**
-      * Returns a height (y) value in the Worl system :
+      * Returns a height (y) value in the World system :
       * the ground altitude at the coordinates (x, z) expressed in the World system.
       * @param x x coordinate
       * @param z z coordinate
@@ -70,7 +71,7 @@ object groundMeshMod {
     /**
       * Updates the Vector3 passed a reference with a normalized vector orthogonal to the ground
       * at the ground coordinates (x, z) expressed in the World system.
-      * Doesn't uptade the reference Vector3 if (x, z) are outside the ground surface.
+      * Doesn't update the reference Vector3 if (x, z) are outside the ground surface.
       * @param x x coordinate
       * @param z z coordinate
       * @param ref vector to store the result
@@ -79,10 +80,11 @@ object groundMeshMod {
     def getNormalAtCoordinatesToRef(x: Double, z: Double, ref: Vector3): GroundMesh = js.native
     
     /**
-      * This function will update an octree to help to select the right submeshes for rendering, picking and collision computations.
-      * Please note that you must have a decent number of submeshes to get performance improvements when using an octree
-      * @param chunksCount the number of subdivisions for x and y
-      * @param octreeBlocksSize (Default: 32)
+      * This function will divide the mesh into submeshes and update an octree to help to select the right submeshes
+      * for rendering, picking and collision computations. Please note that you must have a decent number of submeshes
+      * to get performance improvements when using an octree.
+      * @param chunksCount the number of submeshes the mesh will be divided into
+      * @param octreeBlocksSize the maximum size of the octree blocks (Default: 32)
       */
     def optimize(chunksCount: Double): Unit = js.native
     def optimize(chunksCount: Double, octreeBlocksSize: Double): Unit = js.native
@@ -123,6 +125,6 @@ object groundMeshMod {
       * @param scene the scene to create the ground mesh in
       * @returns the created ground mesh
       */
-    inline def Parse(parsedMesh: js.Any, scene: Scene): GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[GroundMesh]
+    inline def Parse(parsedMesh: Any, scene: Scene): GroundMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[GroundMesh]
   }
 }

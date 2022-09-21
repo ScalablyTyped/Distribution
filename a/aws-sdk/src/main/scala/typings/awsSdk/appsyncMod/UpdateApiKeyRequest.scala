@@ -17,7 +17,7 @@ trait UpdateApiKeyRequest extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * The time from update time after which the API key expires. The date is represented as seconds since the epoch. For more information, see .
+    * From the update time, the time after which the API key expires. The date is represented as seconds since the epoch. For more information, see .
     */
   var expires: js.UndefOr[Long] = js.undefined
   

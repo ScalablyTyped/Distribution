@@ -24,6 +24,6 @@ object ListServiceSpecificCredentialsResponse {
     
     inline def setServiceSpecificCredentialsUndefined: Self = StObject.set(x, "ServiceSpecificCredentials", js.undefined)
     
-    inline def setServiceSpecificCredentialsVarargs(value: ServiceSpecificCredentialMetadata*): Self = StObject.set(x, "ServiceSpecificCredentials", js.Array(value :_*))
+    inline def setServiceSpecificCredentialsVarargs(value: ServiceSpecificCredentialMetadata*): Self = StObject.set(x, "ServiceSpecificCredentials", js.Array(value*))
   }
 }

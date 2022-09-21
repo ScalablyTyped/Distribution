@@ -5,6 +5,7 @@ import typings.cleanCss.cleanCssBooleans.`true`
 import typings.cleanCss.cleanCssStrings.natural
 import typings.cleanCss.cleanCssStrings.none
 import typings.cleanCss.cleanCssStrings.standard
+import typings.sourceMap.mod.RawSourceMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,11 +67,11 @@ object anon {
       
       inline def setMergeablePseudoClassesUndefined: Self = StObject.set(x, "mergeablePseudoClasses", js.undefined)
       
-      inline def setMergeablePseudoClassesVarargs(value: String*): Self = StObject.set(x, "mergeablePseudoClasses", js.Array(value :_*))
+      inline def setMergeablePseudoClassesVarargs(value: String*): Self = StObject.set(x, "mergeablePseudoClasses", js.Array(value*))
       
       inline def setMergeablePseudoElements(value: js.Array[String]): Self = StObject.set(x, "mergeablePseudoElements", value.asInstanceOf[js.Any])
       
-      inline def setMergeablePseudoElementsVarargs(value: String*): Self = StObject.set(x, "mergeablePseudoElements", js.Array(value :_*))
+      inline def setMergeablePseudoElementsVarargs(value: String*): Self = StObject.set(x, "mergeablePseudoElements", js.Array(value*))
       
       inline def setMultiplePseudoMerging(value: Boolean): Self = StObject.set(x, "multiplePseudoMerging", value.asInstanceOf[js.Any])
     }
@@ -851,7 +852,7 @@ object anon {
       
       inline def setSkipPropertiesUndefined: Self = StObject.set(x, "skipProperties", js.undefined)
       
-      inline def setSkipPropertiesVarargs(value: String*): Self = StObject.set(x, "skipProperties", js.Array(value :_*))
+      inline def setSkipPropertiesVarargs(value: String*): Self = StObject.set(x, "skipProperties", js.Array(value*))
     }
   }
   
@@ -882,7 +883,7 @@ object anon {
     /**
       * The source map of the file, if needed
       */
-    var sourceMap: js.UndefOr[String] = js.undefined
+    var sourceMap: js.UndefOr[RawSourceMap | String] = js.undefined
     
     /**
       * The contents of the file, should be css
@@ -898,7 +899,7 @@ object anon {
     
     extension [Self <: SourceMap](x: Self) {
       
-      inline def setSourceMap(value: String): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: RawSourceMap | String): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
       inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
       

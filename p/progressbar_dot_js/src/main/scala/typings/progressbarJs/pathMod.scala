@@ -12,7 +12,7 @@ object pathMod {
   // tslint:disable-next-line no-empty-interface adds members from animation contract
   @JSImport("progressbar.js/path", JSImport.Namespace)
   @js.native
-  class ^[SElement /* <: Element */] ()
+  open class ^[SElement /* <: Element */] ()
     extends StObject
        with Path[SElement] {
     def this(path: SElement) = this()

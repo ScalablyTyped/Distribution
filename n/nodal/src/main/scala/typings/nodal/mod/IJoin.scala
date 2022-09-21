@@ -22,7 +22,7 @@ trait IJoin extends StObject {
   
   var key: js.UndefOr[String] = js.undefined
   
-  var multiFilter: js.UndefOr[js.Any] = js.undefined
+  var multiFilter: js.UndefOr[Any] = js.undefined
   
   var multiple: js.UndefOr[Boolean] = js.undefined
   
@@ -30,7 +30,7 @@ trait IJoin extends StObject {
   
   var offset: js.UndefOr[Double] = js.undefined
   
-  var orderBy: js.UndefOr[js.Any] = js.undefined
+  var orderBy: js.UndefOr[Any] = js.undefined
   
   var prevAlias: js.UndefOr[String] = js.undefined
   
@@ -59,7 +59,7 @@ object IJoin {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
@@ -79,7 +79,7 @@ object IJoin {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setMultiFilter(value: js.Any): Self = StObject.set(x, "multiFilter", value.asInstanceOf[js.Any])
+    inline def setMultiFilter(value: Any): Self = StObject.set(x, "multiFilter", value.asInstanceOf[js.Any])
     
     inline def setMultiFilterUndefined: Self = StObject.set(x, "multiFilter", js.undefined)
     
@@ -95,7 +95,7 @@ object IJoin {
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOrderBy(value: js.Any): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: Any): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
     inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     

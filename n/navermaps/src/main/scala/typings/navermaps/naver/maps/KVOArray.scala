@@ -11,28 +11,28 @@ trait KVOArray
   
   def clear(): Unit = js.native
   
-  def forEach(callback: js.Function2[/* element */ js.Any, /* index */ Double, Unit]): Unit = js.native
+  def forEach(callback: js.Function2[/* element */ Any, /* index */ Double, Unit]): Unit = js.native
   
-  def getArray(): js.Array[js.Any] = js.native
+  def getArray(): js.Array[Any] = js.native
   
-  def getAt(index: Double): js.Any = js.native
+  def getAt(index: Double): Any = js.native
   
-  def getIndexOfElement(element: js.Any): Double = js.native
+  def getIndexOfElement(element: Any): Double = js.native
   
   def getLength(): Double = js.native
   
-  def insertAt(index: Double, element: js.Any): Unit = js.native
+  def insertAt(index: Double, element: Any): Unit = js.native
   
-  def pop(): js.Any = js.native
+  def pop(): Any = js.native
   
-  def push(element: js.Any): Double = js.native
+  def push(element: Any): Double = js.native
   
-  def removeAt(index: Double): js.Any = js.native
+  def removeAt(index: Double): Any = js.native
   
-  def removeElement(element: js.Any): Unit = js.native
+  def removeElement(element: Any): Unit = js.native
   
-  def setAt(index: Double, element: js.Any): Unit = js.native
+  def setAt(index: Double, element: Any): Unit = js.native
   
-  def splice(startIndex: Double, deleteCount: Double): js.Array[js.Any] = js.native
-  def splice(startIndex: Double, deleteCount: Double, element: js.Any): js.Array[js.Any] = js.native
+  def splice(startIndex: Double, deleteCount: Double): js.Array[Any] = js.native
+  def splice(startIndex: Double, deleteCount: Double, element: Any): js.Array[Any] = js.native
 }

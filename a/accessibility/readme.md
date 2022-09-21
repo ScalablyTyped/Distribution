@@ -9,16 +9,13 @@ add accessibility to your website
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | accessibility |
-| Keywords           | accessibility, website, increase text size, underline links, text to speech, invert colors |
+| Keywords           | accessibility, website, increase text size, underline links, text to speech, invert colors, gray hues, underline links, big cursor, reading guide, text to speech, speech to text, suppress animations |
 | # releases         | 11 |
-| # dependents       | 0 |
-| # downloads        | 18039 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2460.3333333333335 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/ranbuch/accessibility#readme)
-- [Bugs](https://github.com/ranbuch/accessibility/issues)
-- [Repository](https://github.com/ranbuch/accessibility)
 - [Npm](https://www.npmjs.com/package/accessibility)
     
 

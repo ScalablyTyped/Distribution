@@ -1,6 +1,5 @@
 package typings.tableau.tableau
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,11 +13,11 @@ trait Pair extends StObject {
   var formattedValue: String
   
   /** Contains the raw native value for the field as a JavaScript type, which is one of String, Number, Boolean, or Date. */
-  var value: String | Double | Boolean | Date
+  var value: String | Double | Boolean | js.Date
 }
 object Pair {
   
-  inline def apply(fieldName: String, formattedValue: String, value: String | Double | Boolean | Date): Pair = {
+  inline def apply(fieldName: String, formattedValue: String, value: String | Double | Boolean | js.Date): Pair = {
     val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any], formattedValue = formattedValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pair]
   }
@@ -29,6 +28,6 @@ object Pair {
     
     inline def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: String | Double | Boolean | Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double | Boolean | js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

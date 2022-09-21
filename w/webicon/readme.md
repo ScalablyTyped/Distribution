@@ -11,9 +11,9 @@ Icon library
 | Full name          | webicon |
 | Keywords           | icons8, i8, icon, icon set, svg icon, svg set, svg sprite, jquery-plugin, angular module |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1379 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 94.33333333333333 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://icons8.github.io/webicon/)

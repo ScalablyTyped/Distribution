@@ -32,12 +32,12 @@ object ChangeNotificationCollection {
     
     inline def setValidationTokensUndefined: Self = StObject.set(x, "validationTokens", js.undefined)
     
-    inline def setValidationTokensVarargs(value: String*): Self = StObject.set(x, "validationTokens", js.Array(value :_*))
+    inline def setValidationTokensVarargs(value: String*): Self = StObject.set(x, "validationTokens", js.Array(value*))
     
     inline def setValue(value: js.Array[ChangeNotification]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: ChangeNotification*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: ChangeNotification*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

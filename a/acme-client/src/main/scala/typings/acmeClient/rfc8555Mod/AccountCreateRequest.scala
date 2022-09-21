@@ -27,7 +27,7 @@ object AccountCreateRequest {
     
     inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
-    inline def setContactVarargs(value: String*): Self = StObject.set(x, "contact", js.Array(value :_*))
+    inline def setContactVarargs(value: String*): Self = StObject.set(x, "contact", js.Array(value*))
     
     inline def setExternalAccountBinding(value: js.Object): Self = StObject.set(x, "externalAccountBinding", value.asInstanceOf[js.Any])
     

@@ -6,10 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "Constants")
 @js.native
-class Constants ()
+open class Constants ()
   extends typings.babylonjs.indexMod.Constants
 /* static members */
 object Constants {
+  
+  @JSImport("babylonjs/Legacy/legacy", "Constants")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Nothing
@@ -217,6 +221,14 @@ object Constants {
   @js.native
   val ALPHA_INTERPOLATE: Double = js.native
   
+  /**
+    * Defines that alpha blending is SRC * SRC ALPHA + DST * (1 - SRC ALPHA)
+    * Alpha will be set to SRC ALPHA + (1 - SRC ALPHA) * DST ALPHA
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.ALPHA_LAYER_ACCUMULATE")
+  @js.native
+  val ALPHA_LAYER_ACCUMULATE: Double = js.native
+  
   /** Defines that alpha blending is SRC ALPHA * SRC + (1 - SRC) * DEST */
   @JSImport("babylonjs/Legacy/legacy", "Constants.ALPHA_MAXIMIZED")
   @js.native
@@ -294,6 +306,41 @@ object Constants {
   @js.native
   val ALWAYS: Double = js.native
   
+  /** Flag to create a buffer suitable to be used as an index buffer */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.BUFFER_CREATIONFLAG_INDEX")
+  @js.native
+  val BUFFER_CREATIONFLAG_INDEX: Double = js.native
+  
+  /** Flag to create a readable buffer (the buffer can be the source of a copy) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.BUFFER_CREATIONFLAG_READ")
+  @js.native
+  val BUFFER_CREATIONFLAG_READ: Double = js.native
+  
+  /** Flag to create a readable and writable buffer */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.BUFFER_CREATIONFLAG_READWRITE")
+  @js.native
+  val BUFFER_CREATIONFLAG_READWRITE: Double = js.native
+  
+  /** Flag to create a buffer suitable to be used as a storage buffer */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.BUFFER_CREATIONFLAG_STORAGE")
+  @js.native
+  val BUFFER_CREATIONFLAG_STORAGE: Double = js.native
+  
+  /** Flag to create a buffer suitable to be used as a uniform buffer */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.BUFFER_CREATIONFLAG_UNIFORM")
+  @js.native
+  val BUFFER_CREATIONFLAG_UNIFORM: Double = js.native
+  
+  /** Flag to create a buffer suitable to be used as a vertex buffer */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.BUFFER_CREATIONFLAG_VERTEX")
+  @js.native
+  val BUFFER_CREATIONFLAG_VERTEX: Double = js.native
+  
+  /** Flag to create a writable buffer (the buffer can be the destination of a copy) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.BUFFER_CREATIONFLAG_WRITE")
+  @js.native
+  val BUFFER_CREATIONFLAG_WRITE: Double = js.native
+  
   /** Passed to stencilOperation to specify that stencil value must be decremented */
   @JSImport("babylonjs/Legacy/legacy", "Constants.DECR")
   @js.native
@@ -304,22 +351,22 @@ object Constants {
   @js.native
   val DECR_WRAP: Double = js.native
   
-  /** Defines that the ressource was successfully delay loaded */
+  /** Defines that the resource was successfully delay loaded */
   @JSImport("babylonjs/Legacy/legacy", "Constants.DELAYLOADSTATE_LOADED")
   @js.native
   val DELAYLOADSTATE_LOADED: Double = js.native
   
-  /** Defines that the ressource is currently delay loading */
+  /** Defines that the resource is currently delay loading */
   @JSImport("babylonjs/Legacy/legacy", "Constants.DELAYLOADSTATE_LOADING")
   @js.native
   val DELAYLOADSTATE_LOADING: Double = js.native
   
-  /** Defines that the ressource is not delayed*/
+  /** Defines that the resource is not delayed*/
   @JSImport("babylonjs/Legacy/legacy", "Constants.DELAYLOADSTATE_NONE")
   @js.native
   val DELAYLOADSTATE_NONE: Double = js.native
   
-  /** Defines that the ressource is delayed and has not started loading */
+  /** Defines that the resource is delayed and has not started loading */
   @JSImport("babylonjs/Legacy/legacy", "Constants.DELAYLOADSTATE_NOTLOADED")
   @js.native
   val DELAYLOADSTATE_NOTLOADED: Double = js.native
@@ -329,10 +376,118 @@ object Constants {
   @js.native
   val EQUAL: Double = js.native
   
+  /**
+    * This setting aligns the left and right bounds of the viewport to the left and right bounds of the camera frustum.
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.FOVMODE_HORIZONTAL_FIXED")
+  @js.native
+  val FOVMODE_HORIZONTAL_FIXED: Double = js.native
+  
+  /**
+    * This is the default FOV mode for perspective cameras.
+    * This setting aligns the upper and lower bounds of the viewport to the upper and lower bounds of the camera frustum.
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.FOVMODE_VERTICAL_FIXED")
+  @js.native
+  val FOVMODE_VERTICAL_FIXED: Double = js.native
+  
   /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is greater than or equal to the stored value */
   @JSImport("babylonjs/Legacy/legacy", "Constants.GEQUAL")
   @js.native
   val GEQUAL: Double = js.native
+  
+  /**
+    * GL constants
+    */
+  /** Alpha blend equation: ADD */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_EQUATION_ADD")
+  @js.native
+  val GL_ALPHA_EQUATION_ADD: Double = js.native
+  
+  /** Alpha equation: MAX */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_EQUATION_MAX")
+  @js.native
+  val GL_ALPHA_EQUATION_MAX: Double = js.native
+  
+  /** Alpha equation: MIN */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_EQUATION_MIN")
+  @js.native
+  val GL_ALPHA_EQUATION_MIN: Double = js.native
+  
+  /** Alpha equation: REVERSE_SUBTRACT */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_EQUATION_REVERSE_SUBTRACT")
+  @js.native
+  val GL_ALPHA_EQUATION_REVERSE_SUBTRACT: Double = js.native
+  
+  /** Alpha equation: SUBTRACT */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_EQUATION_SUBTRACT")
+  @js.native
+  val GL_ALPHA_EQUATION_SUBTRACT: Double = js.native
+  
+  /** Alpha blend function: CONSTANT_ALPHA */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_FUNCTION_CONSTANT_ALPHA")
+  @js.native
+  val GL_ALPHA_FUNCTION_CONSTANT_ALPHA: Double = js.native
+  
+  /** Alpha blend function: CONSTANT */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_FUNCTION_CONSTANT_COLOR")
+  @js.native
+  val GL_ALPHA_FUNCTION_CONSTANT_COLOR: Double = js.native
+  
+  /** Alpha blend function: DST_ALPHA */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_FUNCTION_DST_ALPHA")
+  @js.native
+  val GL_ALPHA_FUNCTION_DST_ALPHA: Double = js.native
+  
+  /** Alpha blend function: ONE_MINUS_DST */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_FUNCTION_DST_COLOR")
+  @js.native
+  val GL_ALPHA_FUNCTION_DST_COLOR: Double = js.native
+  
+  /** Alpha blend function: ONE_MINUS_CONSTANT_ALPHA */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_FUNCTION_ONE_MINUS_CONSTANT_ALPHA")
+  @js.native
+  val GL_ALPHA_FUNCTION_ONE_MINUS_CONSTANT_ALPHA: Double = js.native
+  
+  /** Alpha blend function: ONE_MINUS_CONSTANT */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_FUNCTION_ONE_MINUS_CONSTANT_COLOR")
+  @js.native
+  val GL_ALPHA_FUNCTION_ONE_MINUS_CONSTANT_COLOR: Double = js.native
+  
+  /** Alpha blend function: ONE_MINUS_DST_ALPHA */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_FUNCTION_ONE_MINUS_DST_ALPHA")
+  @js.native
+  val GL_ALPHA_FUNCTION_ONE_MINUS_DST_ALPHA: Double = js.native
+  
+  /** Alpha blend function: ONE_MINUS_DST */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_FUNCTION_ONE_MINUS_DST_COLOR")
+  @js.native
+  val GL_ALPHA_FUNCTION_ONE_MINUS_DST_COLOR: Double = js.native
+  
+  /** Alpha blend function: ONE_MINUS_SRC_ALPHA */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_FUNCTION_ONE_MINUS_SRC_ALPHA")
+  @js.native
+  val GL_ALPHA_FUNCTION_ONE_MINUS_SRC_ALPHA: Double = js.native
+  
+  /** Alpha blend function: ONE_MINUS_SRC */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_FUNCTION_ONE_MINUS_SRC_COLOR")
+  @js.native
+  val GL_ALPHA_FUNCTION_ONE_MINUS_SRC_COLOR: Double = js.native
+  
+  /** Alpha blend function: SRC */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_FUNCTION_SRC")
+  @js.native
+  val GL_ALPHA_FUNCTION_SRC: Double = js.native
+  
+  /** Alpha blend function: SRC_ALPHA */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_FUNCTION_SRC_ALPHA")
+  @js.native
+  val GL_ALPHA_FUNCTION_SRC_ALPHA: Double = js.native
+  
+  /** Alpha blend function: SRC_ALPHA_SATURATED */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.GL_ALPHA_FUNCTION_SRC_ALPHA_SATURATED")
+  @js.native
+  val GL_ALPHA_FUNCTION_SRC_ALPHA_SATURATED: Double = js.native
   
   /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is greater than the stored value */
   @JSImport("babylonjs/Legacy/legacy", "Constants.GREATER")
@@ -348,6 +503,48 @@ object Constants {
   @JSImport("babylonjs/Legacy/legacy", "Constants.INCR_WRAP")
   @js.native
   val INCR_WRAP: Double = js.native
+  
+  /**
+    * Constant used as key code for Alt key
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.INPUT_ALT_KEY")
+  @js.native
+  val INPUT_ALT_KEY: Double = js.native
+  
+  /**
+    * Constant used as key code for Ctrl key
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.INPUT_CTRL_KEY")
+  @js.native
+  val INPUT_CTRL_KEY: Double = js.native
+  
+  /**
+    * Constant used as key code for Meta key (Left Win, Left Cmd)
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.INPUT_META_KEY1")
+  @js.native
+  val INPUT_META_KEY1: Double = js.native
+  
+  /**
+    * Constant used as key code for Meta key (Right Win)
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.INPUT_META_KEY2")
+  @js.native
+  val INPUT_META_KEY2: Double = js.native
+  
+  /**
+    * Constant used as key code for Meta key (Right Win, Right Cmd)
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.INPUT_META_KEY3")
+  @js.native
+  val INPUT_META_KEY3: Double = js.native
+  
+  /**
+    * Constant used as key code for Shift key
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.INPUT_SHIFT_KEY")
+  @js.native
+  val INPUT_SHIFT_KEY: Double = js.native
   
   /** Passed to stencilOperation to specify that stencil value must be inverted */
   @JSImport("babylonjs/Legacy/legacy", "Constants.INVERT")
@@ -495,6 +692,13 @@ object Constants {
   @js.native
   val MATERIAL_WireFrameFillMode: Double = js.native
   
+  /**
+    * Maximum number of uv sets supported
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.MAX_SUPPORTED_UV_SETS")
+  @js.native
+  val MAX_SUPPORTED_UV_SETS: Double = js.native
+  
   /** Culling strategy : Bounding Sphere Only.
     *  This is an exclusion test. It's faster than the standard strategy because the bounding box is not tested.
     *  It's also less accurate than the standard because some not visible objects can still be selected.
@@ -552,6 +756,14 @@ object Constants {
   val NOTEQUAL: Double = js.native
   
   /**
+    * This helps creating camera with an orthographic mode.
+    * Orthographic is commonly used in engineering as a means to produce object specifications that communicate dimensions unambiguously, each line of 1 unit length (cm, meter..whatever) will appear to have the same length everywhere on the drawing. This allows the drafter to dimension only a subset of lines and let the reader know that other lines of that length on the drawing are also that length in reality. Every parallel line in the drawing is also parallel in the object.
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.ORTHOGRAPHIC_CAMERA")
+  @js.native
+  val ORTHOGRAPHIC_CAMERA: Double = js.native
+  
+  /**
     * Billboard mode will apply to all axes
     */
   @JSImport("babylonjs/Legacy/legacy", "Constants.PARTICLES_BILLBOARDMODE_ALL")
@@ -573,12 +785,21 @@ object Constants {
   val PARTICLES_BILLBOARDMODE_Y: Double = js.native
   
   /**
-    * Constant used to retrieve albedo index in the textures array in the prepass
-    * using the getIndex(Constants.PREPASS_ALBEDO_TEXTURE_TYPE)
+    * This is the default projection mode used by the cameras.
+    * It helps recreating a feeling of perspective and better appreciate depth.
+    * This is the best way to simulate real life cameras.
     */
-  @JSImport("babylonjs/Legacy/legacy", "Constants.PREPASS_ALBEDO_TEXTURE_TYPE")
+  @JSImport("babylonjs/Legacy/legacy", "Constants.PERSPECTIVE_CAMERA")
   @js.native
-  val PREPASS_ALBEDO_TEXTURE_TYPE: Double = js.native
+  val PERSPECTIVE_CAMERA: Double = js.native
+  
+  /**
+    * Constant used to retrieve albedo index in the textures array in the prepass
+    * using the getIndex(Constants.PREPASS_ALBEDO_SQRT_TEXTURE_TYPE)
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.PREPASS_ALBEDO_SQRT_TEXTURE_TYPE")
+  @js.native
+  val PREPASS_ALBEDO_SQRT_TEXTURE_TYPE: Double = js.native
   
   /**
     * Constant used to retrieve the lit color texture index in the textures array in the prepass
@@ -589,12 +810,12 @@ object Constants {
   val PREPASS_COLOR_TEXTURE_TYPE: Double = js.native
   
   /**
-    * Constant used to retrieve depth + normal index in the textures array in the prepass
-    * using the getIndex(Constants.PREPASS_DEPTHNORMAL_TEXTURE_TYPE)
+    * Constant used to retrieve depth index in the textures array in the prepass
+    * using the getIndex(Constants.PREPASS_DEPTH_TEXTURE_TYPE)
     */
-  @JSImport("babylonjs/Legacy/legacy", "Constants.PREPASS_DEPTHNORMAL_TEXTURE_TYPE")
+  @JSImport("babylonjs/Legacy/legacy", "Constants.PREPASS_DEPTH_TEXTURE_TYPE")
   @js.native
-  val PREPASS_DEPTHNORMAL_TEXTURE_TYPE: Double = js.native
+  val PREPASS_DEPTH_TEXTURE_TYPE: Double = js.native
   
   /**
     * Constant used to retrieve the irradiance texture index in the textures array in the prepass
@@ -603,6 +824,14 @@ object Constants {
   @JSImport("babylonjs/Legacy/legacy", "Constants.PREPASS_IRRADIANCE_TEXTURE_TYPE")
   @js.native
   val PREPASS_IRRADIANCE_TEXTURE_TYPE: Double = js.native
+  
+  /**
+    * Constant used to retrieve normal index in the textures array in the prepass
+    * using the getIndex(Constants.PREPASS_NORMAL_TEXTURE_TYPE)
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.PREPASS_NORMAL_TEXTURE_TYPE")
+  @js.native
+  val PREPASS_NORMAL_TEXTURE_TYPE: Double = js.native
   
   /**
     * Constant used to retrieve the position texture index in the textures array in the prepass
@@ -628,10 +857,83 @@ object Constants {
   @js.native
   val PREPASS_VELOCITY_TEXTURE_TYPE: Double = js.native
   
+  /**
+    * Prefixes used by the engine for sub mesh draw wrappers
+    */
+  /** @hidden */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.RENDERPASS_MAIN")
+  @js.native
+  val RENDERPASS_MAIN: Double = js.native
+  
   /** Passed to stencilOperation to specify that stencil value must be replaced */
   @JSImport("babylonjs/Legacy/legacy", "Constants.REPLACE")
   @js.native
   val REPLACE: Double = js.native
+  
+  /**
+    * Custom rig mode allowing rig cameras to be populated manually with any number of cameras
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.RIG_MODE_CUSTOM")
+  @js.native
+  val RIG_MODE_CUSTOM: Double = js.native
+  
+  /**
+    * This specifies there is no need for a camera rig.
+    * Basically only one eye is rendered corresponding to the camera.
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.RIG_MODE_NONE")
+  @js.native
+  val RIG_MODE_NONE: Double = js.native
+  
+  /**
+    * Simulates a camera Rig with one blue eye and one red eye.
+    * This can be use with 3d blue and red glasses.
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.RIG_MODE_STEREOSCOPIC_ANAGLYPH")
+  @js.native
+  val RIG_MODE_STEREOSCOPIC_ANAGLYPH: Double = js.native
+  
+  /**
+    * Defines that both eyes of the camera will be rendered on successive lines interlaced for passive 3d monitors.
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.RIG_MODE_STEREOSCOPIC_INTERLACED")
+  @js.native
+  val RIG_MODE_STEREOSCOPIC_INTERLACED: Double = js.native
+  
+  /**
+    * Defines that both eyes of the camera will be rendered over under each other.
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.RIG_MODE_STEREOSCOPIC_OVERUNDER")
+  @js.native
+  val RIG_MODE_STEREOSCOPIC_OVERUNDER: Double = js.native
+  
+  /**
+    * Defines that both eyes of the camera will be rendered side by side with a none parallel target.
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.RIG_MODE_STEREOSCOPIC_SIDEBYSIDE_CROSSEYED")
+  @js.native
+  val RIG_MODE_STEREOSCOPIC_SIDEBYSIDE_CROSSEYED: Double = js.native
+  
+  /**
+    * Defines that both eyes of the camera will be rendered side by side with a parallel target.
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.RIG_MODE_STEREOSCOPIC_SIDEBYSIDE_PARALLEL")
+  @js.native
+  val RIG_MODE_STEREOSCOPIC_SIDEBYSIDE_PARALLEL: Double = js.native
+  
+  /**
+    * Defines that both eyes of the camera should be renderered in a VR mode (carbox).
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.RIG_MODE_VR")
+  @js.native
+  val RIG_MODE_VR: Double = js.native
+  
+  /**
+    * Defines that both eyes of the camera should be renderered in a VR mode (webVR).
+    */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.RIG_MODE_WEBVR")
+  @js.native
+  val RIG_MODE_WEBVR: Double = js.native
   
   /** Defines that texture rescaling will use a ceil to find the closer power of 2 size */
   @JSImport("babylonjs/Legacy/legacy", "Constants.SCALEMODE_CEILING")
@@ -649,7 +951,7 @@ object Constants {
   val SCALEMODE_NEAREST: Double = js.native
   
   /**
-    * Detailled logging while loading
+    * Detailed logging while loading
     */
   @JSImport("babylonjs/Legacy/legacy", "Constants.SCENELOADER_DETAILED_LOGGING")
   @js.native
@@ -676,10 +978,166 @@ object Constants {
   @js.native
   val SCENELOADER_SUMMARY_LOGGING: Double = js.native
   
+  /** Fast snapshot rendering. In this mode, everything is static and only some limited form of dynamic behaviour is possible */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.SNAPSHOTRENDERING_FAST")
+  @js.native
+  val SNAPSHOTRENDERING_FAST: Double = js.native
+  
+  /** Standard snapshot rendering. In this mode, some form of dynamic behavior is possible (for eg, uniform buffers are still updated) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.SNAPSHOTRENDERING_STANDARD")
+  @js.native
+  val SNAPSHOTRENDERING_STANDARD: Double = js.native
+  
+  /** URL to the snippet server. Points to the public snippet server by default */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.SnippetUrl")
+  @js.native
+  def SnippetUrl: String = js.native
+  inline def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
+  
   /** ALPHA */
   @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_ALPHA")
   @js.native
   val TEXTUREFORMAT_ALPHA: Double = js.native
+  
+  /** BGRA */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_BGRA")
+  @js.native
+  val TEXTUREFORMAT_BGRA: Double = js.native
+  
+  /** Compressed ETC2 (RGB) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_RGB8_ETC2")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_RGB8_ETC2: Double = js.native
+  
+  /** Compressed ETC2 (RGB+A1) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2: Double = js.native
+  
+  /** Compressed ETC2 (RGB+A) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_RGBA8_ETC2_EAC")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_RGBA8_ETC2_EAC: Double = js.native
+  
+  /** Compressed ASTC 4x4 */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_RGBA_ASTC_4x4")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_RGBA_ASTC_4x4: Double = js.native
+  
+  /** Compressed BC7 */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_RGBA_BPTC_UNORM")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_RGBA_BPTC_UNORM: Double = js.native
+  
+  /** Compressed BC1 (RGBA) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_RGBA_S3TC_DXT1")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_RGBA_S3TC_DXT1: Double = js.native
+  
+  /** Compressed BC2 */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_RGBA_S3TC_DXT3")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_RGBA_S3TC_DXT3: Double = js.native
+  
+  /** Compressed BC3 */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_RGBA_S3TC_DXT5")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_RGBA_S3TC_DXT5: Double = js.native
+  
+  /** Compressed BC6 signed float */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_RGB_BPTC_SIGNED_FLOAT")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_RGB_BPTC_SIGNED_FLOAT: Double = js.native
+  
+  /** Compressed BC6 unsigned float */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT: Double = js.native
+  
+  /** Compressed ETC1 (RGB) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_RGB_ETC1_WEBGL")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_RGB_ETC1_WEBGL: Double = js.native
+  
+  /** Compressed BC1 (RGB) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_RGB_S3TC_DXT1")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_RGB_S3TC_DXT1: Double = js.native
+  
+  /** Compressed ASTC 4x4 (SRGB) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_SRGB8_ALPHA8_ASTC_4x4_KHR")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_SRGB8_ALPHA8_ASTC_4x4_KHR: Double = js.native
+  
+  /** Compressed ETC2 (SRGB+1) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_SRGB8_ALPHA8_ETC2_EAC")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_SRGB8_ALPHA8_ETC2_EAC: Double = js.native
+  
+  /** Compressed ETC2 (SRGB) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_SRGB8_ETC2")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_SRGB8_ETC2: Double = js.native
+  
+  /** Compressed ETC2 (SRGB+A1)*/
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2: Double = js.native
+  
+  /** Compressed BC7 (SRGB) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_SRGB_ALPHA_BPTC_UNORM")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_SRGB_ALPHA_BPTC_UNORM: Double = js.native
+  
+  /** Compressed BC1 (SRGB+A) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT: Double = js.native
+  
+  /** Compressed BC2 (SRGB) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT: Double = js.native
+  
+  /** Compressed BC3 (SRGB) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT: Double = js.native
+  
+  /** Compressed BC1 (SRGB) */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_COMPRESSED_SRGB_S3TC_DXT1_EXT")
+  @js.native
+  val TEXTUREFORMAT_COMPRESSED_SRGB_S3TC_DXT1_EXT: Double = js.native
+  
+  /** Depth 16 bits */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_DEPTH16")
+  @js.native
+  val TEXTUREFORMAT_DEPTH16: Double = js.native
+  
+  /** Depth 24 bits */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_DEPTH24")
+  @js.native
+  val TEXTUREFORMAT_DEPTH24: Double = js.native
+  
+  /** Depth 24 bits unorm + Stencil 8 bits */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_DEPTH24UNORM_STENCIL8")
+  @js.native
+  val TEXTUREFORMAT_DEPTH24UNORM_STENCIL8: Double = js.native
+  
+  /** Depth 24 bits + Stencil 8 bits */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_DEPTH24_STENCIL8")
+  @js.native
+  val TEXTUREFORMAT_DEPTH24_STENCIL8: Double = js.native
+  
+  /** Depth 32 bits float + Stencil 8 bits */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_DEPTH32FLOAT_STENCIL8")
+  @js.native
+  val TEXTUREFORMAT_DEPTH32FLOAT_STENCIL8: Double = js.native
+  
+  /** Depth 32 bits float */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_DEPTH32_FLOAT")
+  @js.native
+  val TEXTUREFORMAT_DEPTH32_FLOAT: Double = js.native
   
   /** LUMINANCE */
   @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTUREFORMAT_LUMINANCE")
@@ -771,6 +1229,11 @@ object Constants {
   @js.native
   val TEXTURETYPE_SHORT: Double = js.native
   
+  /** UNDEFINED */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTURETYPE_UNDEFINED")
+  @js.native
+  val TEXTURETYPE_UNDEFINED: Double = js.native
+  
   /** UNSIGNED_BYTE */
   @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTURETYPE_UNSIGNED_BYTE")
   @js.native
@@ -835,6 +1298,11 @@ object Constants {
   @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTURE_CLAMP_ADDRESSMODE")
   @js.native
   val TEXTURE_CLAMP_ADDRESSMODE: Double = js.native
+  
+  /** Flag to create a storage texture */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTURE_CREATIONFLAG_STORAGE")
+  @js.native
+  val TEXTURE_CREATIONFLAG_STORAGE: Double = js.native
   
   /** Cubic coordinates mode */
   @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTURE_CUBIC_MODE")
@@ -985,4 +1453,9 @@ object Constants {
   @JSImport("babylonjs/Legacy/legacy", "Constants.TEXTURE_WRAP_ADDRESSMODE")
   @js.native
   val TEXTURE_WRAP_ADDRESSMODE: Double = js.native
+  
+  /** Passed to stencilOperation to specify that stencil value must be zero */
+  @JSImport("babylonjs/Legacy/legacy", "Constants.ZERO")
+  @js.native
+  val ZERO: Double = js.native
 }

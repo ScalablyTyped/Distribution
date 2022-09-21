@@ -26,13 +26,13 @@ object mod extends Shortcut {
       * @param httpServer The HTTP server to use
       * @return A socketty server
       */
-    def createServer(httpServer: js.Any): SockettyServer
+    def createServer(httpServer: Any): SockettyServer
   }
   object Socketty {
     
     inline def apply(
       connect: (String, js.Function1[/* socket */ SockettySocket, Unit]) => SockettySocket,
-      createServer: js.Any => SockettyServer
+      createServer: Any => SockettyServer
     ): Socketty = {
       val __obj = js.Dynamic.literal(connect = js.Any.fromFunction2(connect), createServer = js.Any.fromFunction1(createServer))
       __obj.asInstanceOf[Socketty]
@@ -42,7 +42,7 @@ object mod extends Shortcut {
       
       inline def setConnect(value: (String, js.Function1[/* socket */ SockettySocket, Unit]) => SockettySocket): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
       
-      inline def setCreateServer(value: js.Any => SockettyServer): Self = StObject.set(x, "createServer", js.Any.fromFunction1(value))
+      inline def setCreateServer(value: Any => SockettyServer): Self = StObject.set(x, "createServer", js.Any.fromFunction1(value))
     }
   }
   
@@ -81,7 +81,7 @@ object mod extends Shortcut {
       * @param action The action to listen to
       * @param callback A callback to be run when the action is fired
       */
-    def on(action: String, callback: js.Function1[/* message */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def on(action: String, callback: js.Function1[/* message */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /**
       * Send an action, as well as an optional message.
@@ -89,7 +89,7 @@ object mod extends Shortcut {
       * @param message The message to send
       */
     def send(action: String): Unit = js.native
-    def send(action: String, message: js.Any): Unit = js.native
+    def send(action: String, message: Any): Unit = js.native
   }
   
   type _To = Socketty

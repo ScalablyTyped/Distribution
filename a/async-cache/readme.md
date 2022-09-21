@@ -10,10 +10,10 @@ Cache your async lookups and don't fetch the same thing more than necessary.
 | ------------------ | :-------------: |
 | Full name          | async-cache |
 | Keywords           | async, cache, lru |
-| # releases         | 0 |
-| # dependents       | 52 |
-| # downloads        | 9106820 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2788213.6666666665 |
+| # stars            | 122.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/async-cache#readme)

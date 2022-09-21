@@ -1,7 +1,7 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.mathColorMod.Color4
-import typings.babylonjs.mathVectorMod.Vector4
+import typings.babylonjs.BABYLON.Color4
+import typings.babylonjs.BABYLON.Vector4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ trait TileSize extends StObject {
   
   var alignVertical: js.UndefOr[Double] = js.undefined
   
-  var depth: Double
+  var depth: js.UndefOr[Double] = js.undefined
   
   var faceColors: js.UndefOr[js.Array[Color4]] = js.undefined
   
@@ -32,14 +32,12 @@ trait TileSize extends StObject {
   
   var tileWidth: js.UndefOr[Double] = js.undefined
   
-  var updatable: js.UndefOr[Boolean] = js.undefined
-  
   var width: js.UndefOr[Double] = js.undefined
 }
 object TileSize {
   
-  inline def apply(depth: Double): TileSize = {
-    val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any])
+  inline def apply(): TileSize = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileSize]
   }
   
@@ -55,17 +53,19 @@ object TileSize {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
+    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+    
     inline def setFaceColors(value: js.Array[Color4]): Self = StObject.set(x, "faceColors", value.asInstanceOf[js.Any])
     
     inline def setFaceColorsUndefined: Self = StObject.set(x, "faceColors", js.undefined)
     
-    inline def setFaceColorsVarargs(value: Color4*): Self = StObject.set(x, "faceColors", js.Array(value :_*))
+    inline def setFaceColorsVarargs(value: Color4*): Self = StObject.set(x, "faceColors", js.Array(value*))
     
     inline def setFaceUV(value: js.Array[Vector4]): Self = StObject.set(x, "faceUV", value.asInstanceOf[js.Any])
     
     inline def setFaceUVUndefined: Self = StObject.set(x, "faceUV", js.undefined)
     
-    inline def setFaceUVVarargs(value: Vector4*): Self = StObject.set(x, "faceUV", js.Array(value :_*))
+    inline def setFaceUVVarargs(value: Vector4*): Self = StObject.set(x, "faceUV", js.Array(value*))
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
@@ -94,10 +94,6 @@ object TileSize {
     inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
     
     inline def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
-    
-    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
-    
-    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

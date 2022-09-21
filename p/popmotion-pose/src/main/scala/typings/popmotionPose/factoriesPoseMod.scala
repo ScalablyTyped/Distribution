@@ -21,16 +21,16 @@ object factoriesPoseMod {
     /* config */ PoserConfig[Value], 
     Poser[
       Value, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
       P
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasTransformPoseAddListenerToValueExtendAPIReadValueFromSourcePosePrioritySetValueNative.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* config */ PoserConfig[Value], 
     Poser[
       Value, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ Any, 
       P
     ]
   ]]

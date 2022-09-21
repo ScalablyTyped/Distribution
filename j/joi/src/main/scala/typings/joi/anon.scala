@@ -15,6 +15,8 @@ import typings.joi.mod.NumberSchema
 import typings.joi.mod.ObjectSchema
 import typings.joi.mod.StringSchema
 import typings.joi.mod.SymbolSchema
+import typings.joi.mod.ValidationError
+import typings.joi.mod.ValidationResult
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +28,7 @@ object anon {
     
     var alternatives: AlternativesSchema
     
-    var any: AnySchema
+    var any: AnySchema[Any]
     
     var array: ArraySchema
     
@@ -42,7 +44,7 @@ object anon {
     
     var number: NumberSchema
     
-    var `object`: ObjectSchema[js.Any]
+    var `object`: ObjectSchema[Any]
     
     var string: StringSchema
     
@@ -52,7 +54,7 @@ object anon {
     
     inline def apply(
       alternatives: AlternativesSchema,
-      any: AnySchema,
+      any: AnySchema[Any],
       array: ArraySchema,
       binary: BinarySchema,
       boolean: BooleanSchema,
@@ -60,7 +62,7 @@ object anon {
       function: FunctionSchema,
       link: LinkSchema,
       number: NumberSchema,
-      `object`: ObjectSchema[js.Any],
+      `object`: ObjectSchema[Any],
       string: StringSchema,
       symbol: SymbolSchema
     ): Alternatives = {
@@ -73,7 +75,7 @@ object anon {
       
       inline def setAlternatives(value: AlternativesSchema): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
       
-      inline def setAny(value: AnySchema): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
+      inline def setAny(value: AnySchema[Any]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
       
       inline def setArray(value: ArraySchema): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,7 @@ object anon {
       
       inline def setNumber(value: NumberSchema): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      inline def setObject(value: ObjectSchema[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: ObjectSchema[Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setString(value: StringSchema): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,7 @@ object anon {
   trait Array extends StObject {
     
     /**
-      * the characters used around array avlues. Defaults to `'[]'`
+      * the characters used around array values. Defaults to `'[]'`
       *
       * @default '[]'
       */
@@ -112,6 +114,13 @@ object anon {
       * @default '"'
       */
     var label: js.UndefOr[String | `false`] = js.undefined
+    
+    /**
+      * the characters used around array string values. Defaults to no wrapping.
+      *
+      * @default false
+      */
+    var string: js.UndefOr[String | `false`] = js.undefined
   }
   object Array {
     
@@ -129,6 +138,10 @@ object anon {
       inline def setLabel(value: String | `false`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
+      inline def setString(value: String | `false`): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      
+      inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     }
   }
   
@@ -160,7 +173,7 @@ object anon {
   trait Build extends StObject {
     
     var build: js.UndefOr[
-        js.Function2[/* obj */ ExtensionBoundSchema, /* desc */ Record[String, js.Any], js.Any]
+        js.Function2[/* obj */ ExtensionBoundSchema, /* desc */ Record[String, Any], Any]
       ] = js.undefined
   }
   object Build {
@@ -172,9 +185,38 @@ object anon {
     
     extension [Self <: Build](x: Self) {
       
-      inline def setBuild(value: (/* obj */ ExtensionBoundSchema, /* desc */ Record[String, js.Any]) => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction2(value))
+      inline def setBuild(value: (/* obj */ ExtensionBoundSchema, /* desc */ Record[String, Any]) => Any): Self = StObject.set(x, "build", js.Any.fromFunction2(value))
       
       inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+    }
+  }
+  
+  trait Error[TSchema]
+    extends StObject
+       with ValidationResult[TSchema] {
+    
+    var error: Unit
+    
+    var value: TSchema
+    
+    var warning: js.UndefOr[ValidationError] = js.undefined
+  }
+  object Error {
+    
+    inline def apply[TSchema](error: Unit, value: TSchema): Error[TSchema] = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Error[TSchema]]
+    }
+    
+    extension [Self <: Error[?], TSchema](x: Self & Error[TSchema]) {
+      
+      inline def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: TSchema): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setWarning(value: ValidationError): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      
+      inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
   }
   
@@ -265,22 +307,51 @@ object anon {
   
   trait To extends StObject {
     
-    def from(value: js.Any): js.Any
+    def from(value: Any): Any
     
-    def to(value: js.Any, helpers: CustomHelpers[js.Any]): js.Any
+    def to(value: Any, helpers: CustomHelpers[Any]): Any
   }
   object To {
     
-    inline def apply(from: js.Any => js.Any, to: (js.Any, CustomHelpers[js.Any]) => js.Any): To = {
+    inline def apply(from: Any => Any, to: (Any, CustomHelpers[Any]) => Any): To = {
       val __obj = js.Dynamic.literal(from = js.Any.fromFunction1(from), to = js.Any.fromFunction2(to))
       __obj.asInstanceOf[To]
     }
     
     extension [Self <: To](x: Self) {
       
-      inline def setFrom(value: js.Any => js.Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
+      inline def setFrom(value: Any => Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
       
-      inline def setTo(value: (js.Any, CustomHelpers[js.Any]) => js.Any): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
+      inline def setTo(value: (Any, CustomHelpers[Any]) => Any): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
+    }
+  }
+  
+  trait Value
+    extends StObject
+       with ValidationResult[Any] {
+    
+    var error: ValidationError
+    
+    var value: Unit
+    
+    var warning: js.UndefOr[ValidationError] = js.undefined
+  }
+  object Value {
+    
+    inline def apply(error: ValidationError, value: Unit): Value = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Value]
+    }
+    
+    extension [Self <: Value](x: Self) {
+      
+      inline def setError(value: ValidationError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setWarning(value: ValidationError): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      
+      inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
   }
 }

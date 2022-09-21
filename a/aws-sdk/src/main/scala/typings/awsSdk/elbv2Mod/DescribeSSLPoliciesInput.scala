@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeSSLPoliciesInput extends StObject {
   
   /**
+    *  The type of load balancer. The default lists the SSL policies for all load balancers.
+    */
+  var LoadBalancerType: js.UndefOr[LoadBalancerTypeEnum] = js.undefined
+  
+  /**
     * The marker for the next set of results. (You received this marker from a previous call.)
     */
   var Marker: js.UndefOr[typings.awsSdk.elbv2Mod.Marker] = js.undefined
@@ -30,6 +35,10 @@ object DescribeSSLPoliciesInput {
   
   extension [Self <: DescribeSSLPoliciesInput](x: Self) {
     
+    inline def setLoadBalancerType(value: LoadBalancerTypeEnum): Self = StObject.set(x, "LoadBalancerType", value.asInstanceOf[js.Any])
+    
+    inline def setLoadBalancerTypeUndefined: Self = StObject.set(x, "LoadBalancerType", js.undefined)
+    
     inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
     inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
@@ -38,7 +47,7 @@ object DescribeSSLPoliciesInput {
     
     inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    inline def setNamesVarargs(value: SslPolicyName*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: SslPolicyName*): Self = StObject.set(x, "Names", js.Array(value*))
     
     inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     

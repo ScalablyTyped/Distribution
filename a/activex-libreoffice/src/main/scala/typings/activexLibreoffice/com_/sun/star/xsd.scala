@@ -147,12 +147,12 @@ object xsd {
       addVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
       explainInvalid: java.lang.String => java.lang.String,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: java.lang.String => js.Any,
-      queryInterface: `type` => js.Any,
+      getPropertyValue: java.lang.String => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removePropertyChangeListener: (java.lang.String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (java.lang.String, js.Any) => Unit,
+      setPropertyValue: (java.lang.String, Any) => Unit,
       validate: java.lang.String => scala.Boolean
     ): Date = {
       val __obj = js.Dynamic.literal(IsBasic = IsBasic.asInstanceOf[js.Any], MaxExclusiveDate = MaxExclusiveDate.asInstanceOf[js.Any], MaxInclusiveDate = MaxInclusiveDate.asInstanceOf[js.Any], MinExclusiveDate = MinExclusiveDate.asInstanceOf[js.Any], MinInclusiveDate = MinInclusiveDate.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], TypeClass = TypeClass.asInstanceOf[js.Any], WhiteSpaceTreatment = WhiteSpaceTreatment.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), explainInvalid = js.Any.fromFunction1(explainInvalid), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), validate = js.Any.fromFunction1(validate))
@@ -218,12 +218,12 @@ object xsd {
       addVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
       explainInvalid: java.lang.String => java.lang.String,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: java.lang.String => js.Any,
-      queryInterface: `type` => js.Any,
+      getPropertyValue: java.lang.String => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removePropertyChangeListener: (java.lang.String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (java.lang.String, js.Any) => Unit,
+      setPropertyValue: (java.lang.String, Any) => Unit,
       validate: java.lang.String => scala.Boolean
     ): DateTime = {
       val __obj = js.Dynamic.literal(IsBasic = IsBasic.asInstanceOf[js.Any], MaxExclusiveDateTime = MaxExclusiveDateTime.asInstanceOf[js.Any], MaxInclusiveDateTime = MaxInclusiveDateTime.asInstanceOf[js.Any], MinExclusiveDateTime = MinExclusiveDateTime.asInstanceOf[js.Any], MinInclusiveDateTime = MinInclusiveDateTime.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], TypeClass = TypeClass.asInstanceOf[js.Any], WhiteSpaceTreatment = WhiteSpaceTreatment.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), explainInvalid = js.Any.fromFunction1(explainInvalid), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), validate = js.Any.fromFunction1(validate))
@@ -289,12 +289,12 @@ object xsd {
       addVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
       explainInvalid: java.lang.String => java.lang.String,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: java.lang.String => js.Any,
-      queryInterface: `type` => js.Any,
+      getPropertyValue: java.lang.String => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removePropertyChangeListener: (java.lang.String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (java.lang.String, js.Any) => Unit,
+      setPropertyValue: (java.lang.String, Any) => Unit,
       validate: java.lang.String => scala.Boolean
     ): Day = {
       val __obj = js.Dynamic.literal(IsBasic = IsBasic.asInstanceOf[js.Any], MaxExclusiveInt = MaxExclusiveInt.asInstanceOf[js.Any], MaxInclusiveInt = MaxInclusiveInt.asInstanceOf[js.Any], MinExclusiveInt = MinExclusiveInt.asInstanceOf[js.Any], MinInclusiveInt = MinInclusiveInt.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], TypeClass = TypeClass.asInstanceOf[js.Any], WhiteSpaceTreatment = WhiteSpaceTreatment.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), explainInvalid = js.Any.fromFunction1(explainInvalid), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), validate = js.Any.fromFunction1(validate))
@@ -380,12 +380,12 @@ object xsd {
       addVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
       explainInvalid: java.lang.String => java.lang.String,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: java.lang.String => js.Any,
-      queryInterface: `type` => js.Any,
+      getPropertyValue: java.lang.String => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removePropertyChangeListener: (java.lang.String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (java.lang.String, js.Any) => Unit,
+      setPropertyValue: (java.lang.String, Any) => Unit,
       validate: java.lang.String => scala.Boolean
     ): Decimal = {
       val __obj = js.Dynamic.literal(FractionDigits = FractionDigits.asInstanceOf[js.Any], IsBasic = IsBasic.asInstanceOf[js.Any], MaxExclusiveDouble = MaxExclusiveDouble.asInstanceOf[js.Any], MaxInclusiveDouble = MaxInclusiveDouble.asInstanceOf[js.Any], MinExclusiveDouble = MinExclusiveDouble.asInstanceOf[js.Any], MinInclusiveDouble = MinInclusiveDouble.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], TotalDigits = TotalDigits.asInstanceOf[js.Any], TypeClass = TypeClass.asInstanceOf[js.Any], WhiteSpaceTreatment = WhiteSpaceTreatment.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), explainInvalid = js.Any.fromFunction1(explainInvalid), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), validate = js.Any.fromFunction1(validate))
@@ -455,12 +455,12 @@ object xsd {
       addVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
       explainInvalid: java.lang.String => java.lang.String,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: java.lang.String => js.Any,
-      queryInterface: `type` => js.Any,
+      getPropertyValue: java.lang.String => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removePropertyChangeListener: (java.lang.String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (java.lang.String, js.Any) => Unit,
+      setPropertyValue: (java.lang.String, Any) => Unit,
       validate: java.lang.String => scala.Boolean
     ): Month = {
       val __obj = js.Dynamic.literal(IsBasic = IsBasic.asInstanceOf[js.Any], MaxExclusiveInt = MaxExclusiveInt.asInstanceOf[js.Any], MaxInclusiveInt = MaxInclusiveInt.asInstanceOf[js.Any], MinExclusiveInt = MinExclusiveInt.asInstanceOf[js.Any], MinInclusiveInt = MinInclusiveInt.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], TypeClass = TypeClass.asInstanceOf[js.Any], WhiteSpaceTreatment = WhiteSpaceTreatment.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), explainInvalid = js.Any.fromFunction1(explainInvalid), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), validate = js.Any.fromFunction1(validate))
@@ -522,12 +522,12 @@ object xsd {
       addVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
       explainInvalid: java.lang.String => java.lang.String,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: java.lang.String => js.Any,
-      queryInterface: `type` => js.Any,
+      getPropertyValue: java.lang.String => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removePropertyChangeListener: (java.lang.String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (java.lang.String, js.Any) => Unit,
+      setPropertyValue: (java.lang.String, Any) => Unit,
       validate: java.lang.String => scala.Boolean
     ): String = {
       val __obj = js.Dynamic.literal(IsBasic = IsBasic.asInstanceOf[js.Any], Length = Length.asInstanceOf[js.Any], MaxLength = MaxLength.asInstanceOf[js.Any], MinLength = MinLength.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], TypeClass = TypeClass.asInstanceOf[js.Any], WhiteSpaceTreatment = WhiteSpaceTreatment.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), explainInvalid = js.Any.fromFunction1(explainInvalid), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), validate = js.Any.fromFunction1(validate))
@@ -591,12 +591,12 @@ object xsd {
       addVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
       explainInvalid: java.lang.String => java.lang.String,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: java.lang.String => js.Any,
-      queryInterface: `type` => js.Any,
+      getPropertyValue: java.lang.String => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removePropertyChangeListener: (java.lang.String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (java.lang.String, js.Any) => Unit,
+      setPropertyValue: (java.lang.String, Any) => Unit,
       validate: java.lang.String => scala.Boolean
     ): Time = {
       val __obj = js.Dynamic.literal(IsBasic = IsBasic.asInstanceOf[js.Any], MaxExclusiveTime = MaxExclusiveTime.asInstanceOf[js.Any], MaxInclusiveTime = MaxInclusiveTime.asInstanceOf[js.Any], MinExclusiveTime = MinExclusiveTime.asInstanceOf[js.Any], MinInclusiveTime = MinInclusiveTime.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], TypeClass = TypeClass.asInstanceOf[js.Any], WhiteSpaceTreatment = WhiteSpaceTreatment.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), explainInvalid = js.Any.fromFunction1(explainInvalid), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), validate = js.Any.fromFunction1(validate))
@@ -686,12 +686,12 @@ object xsd {
       addVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
       explainInvalid: java.lang.String => java.lang.String,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: java.lang.String => js.Any,
-      queryInterface: `type` => js.Any,
+      getPropertyValue: java.lang.String => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removePropertyChangeListener: (java.lang.String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (java.lang.String, js.Any) => Unit,
+      setPropertyValue: (java.lang.String, Any) => Unit,
       validate: java.lang.String => scala.Boolean
     ): XDataType = {
       val __obj = js.Dynamic.literal(IsBasic = IsBasic.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], TypeClass = TypeClass.asInstanceOf[js.Any], WhiteSpaceTreatment = WhiteSpaceTreatment.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), explainInvalid = js.Any.fromFunction1(explainInvalid), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), validate = js.Any.fromFunction1(validate))
@@ -763,12 +763,12 @@ object xsd {
       addVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
       explainInvalid: java.lang.String => java.lang.String,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: java.lang.String => js.Any,
-      queryInterface: `type` => js.Any,
+      getPropertyValue: java.lang.String => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removePropertyChangeListener: (java.lang.String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (java.lang.String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (java.lang.String, js.Any) => Unit,
+      setPropertyValue: (java.lang.String, Any) => Unit,
       validate: java.lang.String => scala.Boolean
     ): Year = {
       val __obj = js.Dynamic.literal(IsBasic = IsBasic.asInstanceOf[js.Any], MaxExclusiveInt = MaxExclusiveInt.asInstanceOf[js.Any], MaxInclusiveInt = MaxInclusiveInt.asInstanceOf[js.Any], MinExclusiveInt = MinExclusiveInt.asInstanceOf[js.Any], MinInclusiveInt = MinInclusiveInt.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], TypeClass = TypeClass.asInstanceOf[js.Any], WhiteSpaceTreatment = WhiteSpaceTreatment.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), explainInvalid = js.Any.fromFunction1(explainInvalid), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), validate = js.Any.fromFunction1(validate))

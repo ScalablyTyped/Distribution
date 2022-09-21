@@ -1,27 +1,34 @@
 package typings.sharedb.sharedbMod
 
-import typings.node.eventsMod.EventEmitter
-import typings.node.eventsMod.EventEmitterOptions
+import typings.sharedb.clientMod.Connection
+import typings.sharedb.sharedbStrings.qf
+import typings.sharedb.sharedbStrings.qs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sharedb/lib/sharedb", "Query")
 @js.native
-class Query () extends EventEmitter {
-  def this(options: EventEmitterOptions) = this()
+open class Query[T] () extends TypedEmitter[QueryEventMap[T]] {
   
-  def addListener(event: QueryEvent, callback: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
+  var action: qf | qs = js.native
+  
+  var collection: String = js.native
+  
+  var connection: Connection = js.native
   
   def destroy(): Unit = js.native
+  def destroy(callback: Callback): Unit = js.native
   
-  var extra: js.Any = js.native
+  var extra: Any = js.native
   
-  def on(event: QueryEvent, callback: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
+  var id: String = js.native
+  
+  var query: RequestQuery = js.native
   
   var ready: Boolean = js.native
   
-  def removeListener(event: QueryEvent, listener: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
+  var results: js.Array[Doc[T]] = js.native
   
-  var results: js.Array[Doc] = js.native
+  var sent: Boolean = js.native
 }

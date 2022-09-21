@@ -17,5 +17,5 @@ trait ChartGroups extends StObject {
   
   def Item(Index: Double): ChartGroup = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

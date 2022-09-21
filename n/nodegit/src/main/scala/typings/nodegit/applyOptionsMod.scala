@@ -10,11 +10,11 @@ object applyOptionsMod {
   
   @JSImport("nodegit/apply-options", "ApplyOptions")
   @js.native
-  class ApplyOptions () extends StObject {
+  open class ApplyOptions () extends StObject {
     
-    var deltaCb: js.UndefOr[js.Function2[/* delta */ DiffDelta, /* payload */ js.Any, Double]] = js.native
+    var deltaCb: js.UndefOr[js.Function2[/* delta */ DiffDelta, /* payload */ Any, Double]] = js.native
     
-    var hunkCb: js.UndefOr[js.Function2[/* hunk */ ConvenientHunk, /* payload */ js.Any, Double]] = js.native
+    var hunkCb: js.UndefOr[js.Function2[/* hunk */ ConvenientHunk, /* payload */ Any, Double]] = js.native
     
     var version: js.UndefOr[Double] = js.native
   }

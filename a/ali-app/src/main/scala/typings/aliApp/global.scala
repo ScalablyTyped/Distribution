@@ -126,10 +126,10 @@ object global {
   inline def App(app: PartialAppOptionsApp): Unit = js.Dynamic.global.applyDynamic("App")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def Behavior(): Component = js.Dynamic.global.applyDynamic("Behavior")().asInstanceOf[Component]
-  inline def Behavior(options: js.Any): Component = js.Dynamic.global.applyDynamic("Behavior")(options.asInstanceOf[js.Any]).asInstanceOf[Component]
+  inline def Behavior(options: Any): Component = js.Dynamic.global.applyDynamic("Behavior")(options.asInstanceOf[js.Any]).asInstanceOf[Component]
   
   inline def Component(): typings.aliApp.my.Component = js.Dynamic.global.applyDynamic("Component")().asInstanceOf[typings.aliApp.my.Component]
-  inline def Component(options: js.Any): typings.aliApp.my.Component = js.Dynamic.global.applyDynamic("Component")(options.asInstanceOf[js.Any]).asInstanceOf[typings.aliApp.my.Component]
+  inline def Component(options: Any): typings.aliApp.my.Component = js.Dynamic.global.applyDynamic("Component")(options.asInstanceOf[js.Any]).asInstanceOf[typings.aliApp.my.Component]
   
   inline def Page(options: PartialPageOptionsPage): Unit = js.Dynamic.global.applyDynamic("Page")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -286,7 +286,7 @@ object global {
       * @returns
       */
     inline def createSelectorQuery(): SelectorQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("createSelectorQuery")().asInstanceOf[SelectorQuery]
-    inline def createSelectorQuery(page: js.Any): SelectorQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("createSelectorQuery")(page.asInstanceOf[js.Any]).asInstanceOf[SelectorQuery]
+    inline def createSelectorQuery(page: Any): SelectorQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("createSelectorQuery")(page.asInstanceOf[js.Any]).asInstanceOf[SelectorQuery]
     
     /**
       * 创建并返回 web-view 上下文 webViewContext 对象。
@@ -404,7 +404,7 @@ object global {
       * 同步获取缓存数据。
       * 这是同步接口
       */
-    inline def getStorageSync(options: KeyString): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorageSync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getStorageSync(options: KeyString): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorageSync")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def getSystemInfo(options: GetSystemInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -431,7 +431,7 @@ object global {
       * 隐藏分享按钮。
       */
     inline def hideShareMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideShareMenu")().asInstanceOf[Unit]
-    inline def hideShareMenu(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideShareMenu")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def hideShareMenu(options: BaseOptions[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideShareMenu")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def hideToast(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideToast")().asInstanceOf[Unit]
     
@@ -481,7 +481,7 @@ object global {
       * 移除低功耗蓝牙设备的特征值变化事件的监听。
       */
     inline def offBLECharacteristicValueChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offBLECharacteristicValueChange")().asInstanceOf[Unit]
-    inline def offBLECharacteristicValueChange(callback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offBLECharacteristicValueChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def offBLECharacteristicValueChange(callback: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offBLECharacteristicValueChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 移除低功耗蓝牙连接状态变化事件的监听。
@@ -497,7 +497,7 @@ object global {
       * 移除寻找到新的蓝牙设备事件的监听。
       */
     inline def offBluetoothDeviceFound(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offBluetoothDeviceFound")().asInstanceOf[Unit]
-    inline def offBluetoothDeviceFound(callback: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offBluetoothDeviceFound")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def offBluetoothDeviceFound(callback: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offBluetoothDeviceFound")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 取消网络状态变化的监听
@@ -507,14 +507,14 @@ object global {
     /**
       * 取消监听WebSocket关闭。
       */
-    inline def offSocketClose(callback: js.Function1[/* error */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offSocketClose")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def offSocketClose(callback: js.Function1[/* error */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offSocketClose")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 取消监听WebSocket错误。
       */
-    inline def offSocketError(callback: js.Function1[/* error */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offSocketError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def offSocketError(callback: js.Function1[/* error */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offSocketError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def offSocketMessage(callback: js.Function1[/* error */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offSocketMessage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def offSocketMessage(callback: js.Function1[/* error */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offSocketMessage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 取消监听WebSocket连接打开事件。
@@ -574,7 +574,7 @@ object global {
     /**
       * 监听WebSocket错误。
       */
-    inline def onSocketError(callback: js.Function1[/* error */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onSocketError(callback: js.Function1[/* error */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听WebSocket接受到服务器的消息事件。
@@ -592,7 +592,7 @@ object global {
       * 监听用户主动截屏事件，用户使用系统截屏按键截屏时触发此事件
       */
     inline def onUserCaptureScreen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUserCaptureScreen")().asInstanceOf[Unit]
-    inline def onUserCaptureScreen(callback: js.Function1[/* res */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUserCaptureScreen")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onUserCaptureScreen(callback: js.Function1[/* res */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUserCaptureScreen")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 初始化小程序蓝牙模块，生效周期为调用 my.openBluetoothAdapter 至调用 my.closeBluetoothAdapter 或小程序被销毁为止。 在小程序蓝牙适配器模块生效期间，开发者可以正常调用下面的小程序API，并会收到蓝牙模块相关的 on 事件回调。
@@ -703,7 +703,7 @@ object global {
       */
     inline def paySignCenter(options: PaySignCenterOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("paySignCenter")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def postMessage(param: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("postMessage")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def postMessage(param: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("postMessage")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 预览图片。
@@ -753,7 +753,7 @@ object global {
       * @param eventName 自定义事件名，需申请
       * @param data 上报的数据
       */
-    inline def reportAnalytics(eventName: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reportAnalytics")(eventName.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def reportAnalytics(eventName: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reportAnalytics")(eventName.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * 非对称加密。
@@ -897,23 +897,23 @@ object global {
       * 调用震动功能。
       */
     inline def vibrate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrate")().asInstanceOf[Unit]
-    inline def vibrate(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrate")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def vibrate(options: BaseOptions[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrate")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 调用震动功能。
       */
     inline def vibrateLong(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateLong")().asInstanceOf[Unit]
-    inline def vibrateLong(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateLong")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def vibrateLong(options: BaseOptions[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateLong")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 调用震动功能。
       */
     inline def vibrateShort(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateShort")().asInstanceOf[Unit]
-    inline def vibrateShort(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateShort")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def vibrateShort(options: BaseOptions[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateShort")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     //#endregion
     //#region 摇一摇 https://docs.alipay.com/mini/api/shake
-    inline def watchShake(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("watchShake")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def watchShake(options: BaseOptions[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("watchShake")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 向低功耗蓝牙设备特征值中写入数据。

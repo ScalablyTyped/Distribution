@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SasPortalDeviceAirInterface extends StObject {
   
-  /** This field specifies the radio access technology that is used for the CBSD. Conditional */
+  /** Conditional. This field specifies the radio access technology that is used for the CBSD. */
   var radioTechnology: js.UndefOr[String] = js.undefined
   
-  /** This field is related to the radioTechnology field and provides the air interface specification that the CBSD is compliant with at the time of registration. Optional */
+  /** Optional. This field is related to the `radioTechnology` and provides the air interface specification that the CBSD is compliant with at the time of registration. */
   var supportedSpec: js.UndefOr[String] = js.undefined
 }
 object SasPortalDeviceAirInterface {

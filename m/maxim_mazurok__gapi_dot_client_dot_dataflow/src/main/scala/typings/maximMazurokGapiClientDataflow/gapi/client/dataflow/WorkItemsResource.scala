@@ -1,12 +1,12 @@
 package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientDataflow.anon.AccesstokenAlt
+import typings.maximMazurokGapiClientDataflow.anon.Alt
+import typings.maximMazurokGapiClientDataflow.anon.JobId
+import typings.maximMazurokGapiClientDataflow.anon.Oauthtoken
 import typings.maximMazurokGapiClientDataflow.anon.PrettyPrint
+import typings.maximMazurokGapiClientDataflow.anon.ProjectId
 import typings.maximMazurokGapiClientDataflow.anon.QuotaUser
-import typings.maximMazurokGapiClientDataflow.anon.UploadType
-import typings.maximMazurokGapiClientDataflow.anon.Uploadprotocol
-import typings.maximMazurokGapiClientDataflow.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,17 +14,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WorkItemsResource extends StObject {
   
-  def lease(request: PrettyPrint, body: LeaseWorkItemRequest): Request[LeaseWorkItemResponse] = js.native
-  def lease(request: QuotaUser, body: LeaseWorkItemRequest): Request[LeaseWorkItemResponse] = js.native
+  def lease(request: Alt, body: LeaseWorkItemRequest): Request[LeaseWorkItemResponse] = js.native
+  def lease(request: JobId, body: LeaseWorkItemRequest): Request[LeaseWorkItemResponse] = js.native
   /** Leases a dataflow WorkItem to run. */
-  def lease(request: UploadType): Request[LeaseWorkItemResponse] = js.native
+  def lease(request: Oauthtoken): Request[LeaseWorkItemResponse] = js.native
   /** Leases a dataflow WorkItem to run. */
-  def lease(request: Xgafv): Request[LeaseWorkItemResponse] = js.native
+  def lease(request: ProjectId): Request[LeaseWorkItemResponse] = js.native
   
+  def reportStatus(request: Alt, body: ReportWorkItemStatusRequest): Request[ReportWorkItemStatusResponse] = js.native
+  def reportStatus(request: JobId, body: ReportWorkItemStatusRequest): Request[ReportWorkItemStatusResponse] = js.native
   /** Reports the status of dataflow WorkItems leased by a worker. */
-  def reportStatus(request: AccesstokenAlt): Request[ReportWorkItemStatusResponse] = js.native
-  def reportStatus(request: PrettyPrint, body: ReportWorkItemStatusRequest): Request[ReportWorkItemStatusResponse] = js.native
-  def reportStatus(request: QuotaUser, body: ReportWorkItemStatusRequest): Request[ReportWorkItemStatusResponse] = js.native
+  def reportStatus(request: PrettyPrint): Request[ReportWorkItemStatusResponse] = js.native
   /** Reports the status of dataflow WorkItems leased by a worker. */
-  def reportStatus(request: Uploadprotocol): Request[ReportWorkItemStatusResponse] = js.native
+  def reportStatus(request: QuotaUser): Request[ReportWorkItemStatusResponse] = js.native
 }

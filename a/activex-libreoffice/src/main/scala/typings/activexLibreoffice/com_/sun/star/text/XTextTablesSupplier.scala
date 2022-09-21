@@ -32,7 +32,7 @@ object XTextTablesSupplier {
     TextTables: XNameAccess,
     acquire: () => Unit,
     getTextTables: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTextTablesSupplier = {
     val __obj = js.Dynamic.literal(TextTables = TextTables.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getTextTables = js.Any.fromFunction0(getTextTables), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

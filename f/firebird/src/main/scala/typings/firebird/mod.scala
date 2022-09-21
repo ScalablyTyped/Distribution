@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebird.firebirdBooleans.`false`
 import typings.firebird.firebirdBooleans.`true`
 import typings.firebird.firebirdStrings.all
-import typings.node.Buffer
-import typings.std.Date
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +25,7 @@ object mod {
     */
   @JSImport("firebird", "Connection")
   @js.native
-  class Connection () extends StObject {
+  open class Connection () extends StObject {
     
     /**
       * Registers connection to listen for firebird event name, called from PL\SQL (in stored procedures or triggers) with post_event 'name'.
@@ -49,7 +47,7 @@ object mod {
       *
       * @param callback function(err), where err is error object in case of error.
       */
-    def commit(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def commit(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
     
     /**
       * @summary
@@ -75,7 +73,7 @@ object mod {
       user: String,
       pass: String,
       role: String,
-      callback: js.Function1[/* err */ Error | Null, Unit]
+      callback: js.Function1[/* err */ js.Error | Null, Unit]
     ): Unit = js.native
     
     /**
@@ -123,7 +121,7 @@ object mod {
       * @param sql an SQL query to execute.
       * @param callback function(err,res), err - is error object or null, res - FBResult object.
       */
-    def query(sql: String, callback: js.Function2[/* err */ Error | Null, /* res */ FBResult, Unit]): Unit = js.native
+    def query(sql: String, callback: js.Function2[/* err */ js.Error | Null, /* res */ FBResult, Unit]): Unit = js.native
     
     /**
       * Executes SQL query.
@@ -141,7 +139,7 @@ object mod {
       *
       * @param callback function(err), where err is error object in case of error.
       */
-    def rollback(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def rollback(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
     
     /**
       * Synchronously rollbacks current transaction.
@@ -159,14 +157,14 @@ object mod {
       *
       * @param callback function(err), where err is error object in case of error.
       */
-    def start(callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def start(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
     
     /**
       * Creates new Transaction object and starts new transaction.
       *
       * @param callback function(err, transaction), where err is error object in case of error, transaction - newly created transaction.
       */
-    def startNewTransaction(callback: js.Function2[/* err */ Error | Null, /* transaction */ Transaction, Unit]): Unit = js.native
+    def startNewTransaction(callback: js.Function2[/* err */ js.Error | Null, /* transaction */ Transaction, Unit]): Unit = js.native
     
     /**
       * Creates new Transaction object and starts new transaction.
@@ -193,7 +191,7 @@ object mod {
     */
   @JSImport("firebird", "FBResult")
   @js.native
-  class FBResult () extends StObject {
+  open class FBResult () extends StObject {
     
     /**
       * Asynchronously fetches rows one by one.
@@ -207,19 +205,19 @@ object mod {
       rowCount: Double,
       asObject: Boolean,
       rowCallback: js.Function1[/* row */ js.Array[DataType] | StringDictionary[DataType], Unit],
-      eofCallback: js.Function2[/* err */ Error | Null, /* eof */ Boolean, Unit]
+      eofCallback: js.Function2[/* err */ js.Error | Null, /* eof */ Boolean, Unit]
     ): Unit = js.native
     def fetch(
       rowCount: all,
       asObject: `false`,
       rowCallback: js.Function1[/* row */ js.Array[DataType], Unit],
-      eofCallback: js.Function2[/* err */ Error | Null, /* eof */ Boolean, Unit]
+      eofCallback: js.Function2[/* err */ js.Error | Null, /* eof */ Boolean, Unit]
     ): Unit = js.native
     def fetch(
       rowCount: all,
       asObject: `true`,
       rowCallback: js.Function1[/* row */ StringDictionary[DataType], Unit],
-      eofCallback: js.Function2[/* err */ Error | Null, /* eof */ Boolean, Unit]
+      eofCallback: js.Function2[/* err */ js.Error | Null, /* eof */ Boolean, Unit]
     ): Unit = js.native
     
     /**
@@ -254,35 +252,35 @@ object mod {
       rowCount: all,
       asObject: `true`,
       rowCallback: js.Function1[/* row */ T, Unit],
-      eofCallback: js.Function2[/* err */ Error | Null, /* eof */ Boolean, Unit]
+      eofCallback: js.Function2[/* err */ js.Error | Null, /* eof */ Boolean, Unit]
     ): Unit = js.native
     @JSName("fetch")
     def fetch_all(
       rowCount: all,
       asObject: Boolean,
       rowCallback: js.Function1[/* row */ js.Array[DataType] | StringDictionary[DataType], Unit],
-      eofCallback: js.Function2[/* err */ Error | Null, /* eof */ Boolean, Unit]
+      eofCallback: js.Function2[/* err */ js.Error | Null, /* eof */ Boolean, Unit]
     ): Unit = js.native
     @JSName("fetch")
     def fetch_false(
       rowCount: Double,
       asObject: `false`,
       rowCallback: js.Function1[/* row */ js.Array[DataType], Unit],
-      eofCallback: js.Function2[/* err */ Error | Null, /* eof */ Boolean, Unit]
+      eofCallback: js.Function2[/* err */ js.Error | Null, /* eof */ Boolean, Unit]
     ): Unit = js.native
     @JSName("fetch")
     def fetch_true(
       rowCount: Double,
       asObject: `true`,
       rowCallback: js.Function1[/* row */ StringDictionary[DataType], Unit],
-      eofCallback: js.Function2[/* err */ Error | Null, /* eof */ Boolean, Unit]
+      eofCallback: js.Function2[/* err */ js.Error | Null, /* eof */ Boolean, Unit]
     ): Unit = js.native
     @JSName("fetch")
     def fetch_true_T_Object[T /* <: js.Object */](
       rowCount: Double,
       asObject: `true`,
       rowCallback: js.Function1[/* row */ T, Unit],
-      eofCallback: js.Function2[/* err */ Error | Null, /* eof */ Boolean, Unit]
+      eofCallback: js.Function2[/* err */ js.Error | Null, /* eof */ Boolean, Unit]
     ): Unit = js.native
   }
   
@@ -294,7 +292,7 @@ object mod {
     */
   @JSImport("firebird", "FBStatement")
   @js.native
-  class FBStatement () extends FBResult {
+  open class FBStatement () extends FBResult {
     
     /**
       * Asynchronously executes prepared statement with given parameters.
@@ -342,23 +340,23 @@ object mod {
     */
   @JSImport("firebird", "Stream")
   @js.native
-  class Stream protected ()
+  open class Stream protected ()
     extends typings.node.streamMod.Stream {
     def this(blob: FBBlob) = this()
     
     def check_destroyed(): Unit = js.native
     
-    def destroy(): Unit = js.native
-    def destroy(error: Error): Unit = js.native
+    def destroy(): this.type = js.native
+    def destroy(error: js.Error): this.type = js.native
     
-    def end(): Unit = js.native
-    def end(buffer: Buffer): Unit = js.native
-    def end(buffer: Buffer, cb: js.Function): Unit = js.native
-    def end(str: String): Unit = js.native
-    def end(str: String, cb: js.Function): Unit = js.native
-    def end(str: String, encoding: String): Unit = js.native
-    def end(str: String, encoding: String, cb: js.Function): Unit = js.native
-    def end(str: String, encoding: Unit, cb: js.Function): Unit = js.native
+    def end(): this.type = js.native
+    def end(buffer: Buffer): this.type = js.native
+    def end(buffer: Buffer, cb: js.Function): this.type = js.native
+    def end(str: String): this.type = js.native
+    def end(str: String, cb: js.Function): this.type = js.native
+    def end(str: String, encoding: String): this.type = js.native
+    def end(str: String, encoding: String, cb: js.Function): this.type = js.native
+    def end(str: String, encoding: Unit, cb: js.Function): this.type = js.native
     
     def pause(): this.type = js.native
     
@@ -403,7 +401,7 @@ object mod {
     * | DOUBLE    |     Number |
     * | BLOB      |     FBblob |
     */
-  type DataType = Date | String | Double | FBBlob
+  type DataType = js.Date | String | Double | FBBlob
   
   /**
     * Represents BLOB data type.
@@ -429,7 +427,7 @@ object mod {
       */
     def _read(
       buffer: Buffer,
-      callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
+      callback: js.Function3[/* err */ js.Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
     ): Unit = js.native
     
     /**
@@ -441,33 +439,33 @@ object mod {
       * @param callback - optional, function (err, buffer, len), err - Error object in case of error, or null;buffer - buffer filled with data; len - actual data length.
       */
     def _readAll(): Unit = js.native
-    def _readAll(callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]): Unit = js.native
+    def _readAll(callback: js.Function3[/* err */ js.Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]): Unit = js.native
     def _readAll(initialSize: Double): Unit = js.native
     def _readAll(
       initialSize: Double,
-      callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
+      callback: js.Function3[/* err */ js.Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
     ): Unit = js.native
     def _readAll(initialSize: Double, chunkSize: Double): Unit = js.native
     def _readAll(
       initialSize: Double,
       chunkSize: Double,
-      callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
+      callback: js.Function3[/* err */ js.Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
     ): Unit = js.native
     def _readAll(
       initialSize: Double,
       chunkSize: Unit,
-      callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
+      callback: js.Function3[/* err */ js.Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
     ): Unit = js.native
     def _readAll(initialSize: Unit, chunkSize: Double): Unit = js.native
     def _readAll(
       initialSize: Unit,
       chunkSize: Double,
-      callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
+      callback: js.Function3[/* err */ js.Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
     ): Unit = js.native
     def _readAll(
       initialSize: Unit,
       chunkSize: Unit,
-      callback: js.Function3[/* err */ Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
+      callback: js.Function3[/* err */ js.Error | Null, /* buffer */ Buffer, /* len */ Double, Unit]
     ): Unit = js.native
     
     /**
@@ -487,8 +485,8 @@ object mod {
       */
     def _write(buffer: Buffer): Unit = js.native
     def _write(buffer: Buffer, len: Double): Unit = js.native
-    def _write(buffer: Buffer, len: Double, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
-    def _write(buffer: Buffer, len: Unit, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+    def _write(buffer: Buffer, len: Double, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
+    def _write(buffer: Buffer, len: Unit, callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
     
     /**
       * Synchronously writes BLOB segment (chunk) from buffer.
@@ -518,7 +516,7 @@ object mod {
       *
       * @param callback function(err), where err is error object in case of error.
       */
-    def commit(callback: js.Function1[/* err */ Error | Null, Unit]): Unit
+    def commit(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit
     
     /**
       * Synchronously commits this transaction.
@@ -550,7 +548,7 @@ object mod {
       * @param sql an SQL query to execute.
       * @param callback err - is error object or null, res - FBResult object.
       */
-    def query(sql: String, callback: js.Function2[/* err */ Error | Null, /* res */ FBResult, Unit]): Unit
+    def query(sql: String, callback: js.Function2[/* err */ js.Error | Null, /* res */ FBResult, Unit]): Unit
     
     /**
       * Executes SQL query in context of this transaction. Returns FBResult object in case of success. Raises error otherwise.
@@ -567,7 +565,7 @@ object mod {
       *
       * @param callback function(err), where err is error object in case of error.
       */
-    def rollback(callback: js.Function1[/* err */ Error | Null, Unit]): Unit
+    def rollback(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit
     
     /**
       * Synchronously rollbacks transaction.
@@ -585,7 +583,7 @@ object mod {
       *
       * @param callback function(err), where err is error object in case of error.
       */
-    def start(callback: js.Function1[/* err */ Error | Null, Unit]): Unit
+    def start(callback: js.Function1[/* err */ js.Error | Null, Unit]): Unit
     
     /**
       * Synchronously starts transaction.
@@ -600,15 +598,15 @@ object mod {
   object Transaction {
     
     inline def apply(
-      commit: js.Function1[/* err */ Error | Null, Unit] => Unit,
+      commit: js.Function1[/* err */ js.Error | Null, Unit] => Unit,
       commitSync: () => Unit,
       inTransaction: Boolean,
       prepareSync: String => FBStatement,
-      query: (String, js.Function2[/* err */ Error | Null, /* res */ FBResult, Unit]) => Unit,
+      query: (String, js.Function2[/* err */ js.Error | Null, /* res */ FBResult, Unit]) => Unit,
       querySync: String => Unit,
-      rollback: js.Function1[/* err */ Error | Null, Unit] => Unit,
+      rollback: js.Function1[/* err */ js.Error | Null, Unit] => Unit,
       rollbackSync: () => Unit,
-      start: js.Function1[/* err */ Error | Null, Unit] => Unit,
+      start: js.Function1[/* err */ js.Error | Null, Unit] => Unit,
       startSync: () => Unit
     ): Transaction = {
       val __obj = js.Dynamic.literal(commit = js.Any.fromFunction1(commit), commitSync = js.Any.fromFunction0(commitSync), inTransaction = inTransaction.asInstanceOf[js.Any], prepareSync = js.Any.fromFunction1(prepareSync), query = js.Any.fromFunction2(query), querySync = js.Any.fromFunction1(querySync), rollback = js.Any.fromFunction1(rollback), rollbackSync = js.Any.fromFunction0(rollbackSync), start = js.Any.fromFunction1(start), startSync = js.Any.fromFunction0(startSync))
@@ -617,7 +615,7 @@ object mod {
     
     extension [Self <: Transaction](x: Self) {
       
-      inline def setCommit(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
+      inline def setCommit(value: js.Function1[/* err */ js.Error | Null, Unit] => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
       
       inline def setCommitSync(value: () => Unit): Self = StObject.set(x, "commitSync", js.Any.fromFunction0(value))
       
@@ -625,15 +623,15 @@ object mod {
       
       inline def setPrepareSync(value: String => FBStatement): Self = StObject.set(x, "prepareSync", js.Any.fromFunction1(value))
       
-      inline def setQuery(value: (String, js.Function2[/* err */ Error | Null, /* res */ FBResult, Unit]) => Unit): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
+      inline def setQuery(value: (String, js.Function2[/* err */ js.Error | Null, /* res */ FBResult, Unit]) => Unit): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
       
       inline def setQuerySync(value: String => Unit): Self = StObject.set(x, "querySync", js.Any.fromFunction1(value))
       
-      inline def setRollback(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "rollback", js.Any.fromFunction1(value))
+      inline def setRollback(value: js.Function1[/* err */ js.Error | Null, Unit] => Unit): Self = StObject.set(x, "rollback", js.Any.fromFunction1(value))
       
       inline def setRollbackSync(value: () => Unit): Self = StObject.set(x, "rollbackSync", js.Any.fromFunction0(value))
       
-      inline def setStart(value: js.Function1[/* err */ Error | Null, Unit] => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+      inline def setStart(value: js.Function1[/* err */ js.Error | Null, Unit] => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
       
       inline def setStartSync(value: () => Unit): Self = StObject.set(x, "startSync", js.Any.fromFunction0(value))
     }

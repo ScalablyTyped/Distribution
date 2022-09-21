@@ -4,16 +4,20 @@ import typings.blueprintjsCore.alignmentMod.Alignment
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IProps
 import typings.react.mod.AriaAttributes
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
 import typings.react.mod.DOMAttributes
+import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.react.reactStrings.decimal
 import typings.react.reactStrings.done
 import typings.react.reactStrings.email
 import typings.react.reactStrings.enter
+import typings.react.reactStrings.environment
 import typings.react.reactStrings.go
 import typings.react.reactStrings.inherit
 import typings.react.reactStrings.next
@@ -28,6 +32,7 @@ import typings.react.reactStrings.send
 import typings.react.reactStrings.tel
 import typings.react.reactStrings.text
 import typings.react.reactStrings.url
+import typings.react.reactStrings.user
 import typings.react.reactStrings.yes
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
@@ -38,24 +43,24 @@ object controlsMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/forms/controls", "Checkbox")
   @js.native
-  class Checkbox protected ()
-    extends AbstractPureComponent2[ICheckboxProps, ICheckboxState, js.Object] {
-    def this(props: ICheckboxProps) = this()
-    def this(props: ICheckboxProps, context: js.Any) = this()
+  open class Checkbox protected ()
+    extends AbstractPureComponent2[CheckboxProps, ICheckboxState, js.Object] {
+    def this(props: CheckboxProps) = this()
+    def this(props: CheckboxProps, context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MCheckbox(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MCheckbox(): Unit = js.native
+    def componentDidUpdate_MCheckbox(prevProps: CheckboxProps): Unit = js.native
     
-    /* private */ var handleChange: js.Any = js.native
+    /* private */ var handleChange: Any = js.native
     
-    /* private */ var handleInputRef: js.Any = js.native
+    /* private */ var handleInputRef: Any = js.native
     
-    /* private */ var input: js.Any = js.native
+    var input: HTMLInputElement | Null = js.native
     
-    /* private */ var updateIndeterminate: js.Any = js.native
+    /* private */ var updateIndeterminate: Any = js.native
   }
   /* static members */
   object Checkbox {
@@ -69,15 +74,15 @@ object controlsMod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps(hasIndeterminate: ICheckboxProps): ICheckboxState | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasIndeterminate.asInstanceOf[js.Any]).asInstanceOf[ICheckboxState | Null]
+    inline def getDerivedStateFromProps(hasIndeterminate: CheckboxProps): ICheckboxState | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasIndeterminate.asInstanceOf[js.Any]).asInstanceOf[ICheckboxState | Null]
   }
   
   @JSImport("@blueprintjs/core/lib/esm/components/forms/controls", "Radio")
   @js.native
-  class Radio protected ()
-    extends AbstractPureComponent2[IRadioProps, js.Object, js.Object] {
-    def this(props: IRadioProps) = this()
-    def this(props: IRadioProps, context: js.Any) = this()
+  open class Radio protected ()
+    extends AbstractPureComponent2[RadioProps, js.Object, js.Object] {
+    def this(props: RadioProps) = this()
+    def this(props: RadioProps, context: Any) = this()
   }
   /* static members */
   object Radio {
@@ -94,10 +99,10 @@ object controlsMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/forms/controls", "Switch")
   @js.native
-  class Switch protected ()
-    extends AbstractPureComponent2[ISwitchProps, js.Object, js.Object] {
-    def this(props: ISwitchProps) = this()
-    def this(props: ISwitchProps, context: js.Any) = this()
+  open class Switch protected ()
+    extends AbstractPureComponent2[SwitchProps, js.Object, js.Object] {
+    def this(props: SwitchProps) = this()
+    def this(props: SwitchProps, context: Any) = this()
   }
   /* static members */
   object Switch {
@@ -111,6 +116,10 @@ object controlsMod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
+  
+  type CheckboxProps = ICheckboxProps
+  
+  type ControlProps = IControlProps
   
   trait ICheckboxProps
     extends StObject
@@ -183,6 +192,7 @@ object controlsMod {
     
     /**
       * Alignment of the indicator within container.
+      *
       * @default Alignment.LEFT
       */
     var alignIndicator: js.UndefOr[Alignment] = js.undefined
@@ -200,7 +210,7 @@ object controlsMod {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.undefined
+    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
     /** Whether the control is checked. */
     var checked: js.UndefOr[Boolean] = js.undefined
@@ -250,7 +260,7 @@ object controlsMod {
     /** Whether the control should appear as an inline element. */
     var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -260,7 +270,7 @@ object controlsMod {
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
     /** Ref handler that receives HTML `<input>` element backing this component. */
-    var inputRef: js.UndefOr[js.Function1[/* ref */ HTMLInputElement | Null, js.Any]] = js.undefined
+    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
     /**
       * Specify that a standard HTML element should behave like a defined custom built-in element
@@ -337,7 +347,7 @@ object controlsMod {
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -370,14 +380,14 @@ object controlsMod {
       * @default "label"
       */
     var tagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
       ] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.undefined
+    var `type`: js.UndefOr[HTMLInputTypeAttribute] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
@@ -438,7 +448,7 @@ object controlsMod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -474,7 +484,7 @@ object controlsMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -532,7 +542,7 @@ object controlsMod {
       
       inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -540,7 +550,11 @@ object controlsMod {
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
-      inline def setInputRef(value: /* ref */ HTMLInputElement | Null => js.Any): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      inline def setInputRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
+      
+      inline def setInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      
+      inline def setInputRefNull: Self = StObject.set(x, "inputRef", null)
       
       inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
@@ -652,7 +666,7 @@ object controlsMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -696,7 +710,7 @@ object controlsMod {
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
       
@@ -708,7 +722,7 @@ object controlsMod {
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HTMLInputTypeAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -724,7 +738,7 @@ object controlsMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
@@ -736,7 +750,7 @@ object controlsMod {
     }
   }
   
-  type IRadioProps = IControlProps
+  type IRadioProps = ControlProps
   
   trait ISwitchProps
     extends StObject
@@ -751,6 +765,7 @@ object controlsMod {
       * Text to display inside the switch indicator when checked.
       * If `innerLabel` is provided and this prop is omitted, then `innerLabel`
       * will be used for both states.
+      *
       * @default innerLabel
       */
     var innerLabelChecked: js.UndefOr[String] = js.undefined
@@ -773,4 +788,8 @@ object controlsMod {
       inline def setInnerLabelUndefined: Self = StObject.set(x, "innerLabel", js.undefined)
     }
   }
+  
+  type RadioProps = IRadioProps
+  
+  type SwitchProps = ISwitchProps
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeRecommendationFeedbackResponse extends StObject {
   
   /**
-    *  The recommendation feedback given by the user. 
+    * The recommendation feedback given by the user.
     */
   var RecommendationFeedback: js.UndefOr[typings.awsSdk.codegurureviewerMod.RecommendationFeedback] = js.undefined
 }

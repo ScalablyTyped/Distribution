@@ -10,10 +10,10 @@ Packs/Unpacks/Measures structs according to Python's `struct` format
 | ------------------ | :-------------: |
 | Full name          | python-struct |
 | Keywords           | pack, unpack, struct, cstruct, python |
-| # releases         | 7 |
-| # dependents       | 14 |
-| # downloads        | 52789 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 402657.3333333333 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](https://github.com/danielgindi/node-python-struct)

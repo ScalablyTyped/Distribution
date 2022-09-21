@@ -1,13 +1,15 @@
 package typings.svgSpritemapWebpackPlugin
 
-import typings.std.Plugin
+import typings.glob.mod.IOptions
 import typings.svgSpritemapWebpackPlugin.anon.Assets
+import typings.svgSpritemapWebpackPlugin.anon.Callback
 import typings.svgSpritemapWebpackPlugin.anon.Chunk
-import typings.svgSpritemapWebpackPlugin.anon.Filename
 import typings.svgSpritemapWebpackPlugin.anon.Generate
 import typings.svgSpritemapWebpackPlugin.svgSpritemapWebpackPluginStrings.asset
 import typings.svgSpritemapWebpackPlugin.svgSpritemapWebpackPluginStrings.dir
 import typings.svgSpritemapWebpackPlugin.svgSpritemapWebpackPluginStrings.module
+import typings.webpack.mod.Compiler
+import typings.webpack.mod.WebpackPluginInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +18,7 @@ object mod {
   
   @JSImport("svg-spritemap-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with SVGSpritemapPlugin {
     def this(pattern: String) = this()
@@ -24,6 +26,46 @@ object mod {
     def this(pattern: String, options: Options) = this()
     def this(pattern: js.Array[String], options: Options) = this()
     def this(pattern: Unit, options: Options) = this()
+    
+    /**
+    	 * The run point of the plugin, required method.
+    	 */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(compiler: Compiler): Unit = js.native
+  }
+  
+  trait InputOptions extends StObject {
+    
+    /**
+      * Allow the usage of the same input SVG multiple times.
+      * This option work well together with the `sprite.idify` option to set a different name in the output file.
+      * @default false
+      */
+    var allowDuplicates: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Options object to pass to [`glob`](http://npmjs.com/package/glob) to find the sprites.
+      */
+    var options: js.UndefOr[IOptions] = js.undefined
+  }
+  object InputOptions {
+    
+    inline def apply(): InputOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InputOptions]
+    }
+    
+    extension [Self <: InputOptions](x: Self) {
+      
+      inline def setAllowDuplicates(value: Boolean): Self = StObject.set(x, "allowDuplicates", value.asInstanceOf[js.Any])
+      
+      inline def setAllowDuplicatesUndefined: Self = StObject.set(x, "allowDuplicates", js.undefined)
+      
+      inline def setOptions(value: IOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    }
   }
   
   /**
@@ -34,7 +76,7 @@ object mod {
     /**
       * The input object contains the configuration for the input of the plugin.
       */
-    var input: js.UndefOr[typings.svgSpritemapWebpackPlugin.anon.Options] = js.undefined
+    var input: js.UndefOr[InputOptions] = js.undefined
     
     /**
       * The output object contains the configuration for the main output (SVG) of the plugin.
@@ -46,7 +88,7 @@ object mod {
       */
     var sprite: js.UndefOr[Generate] = js.undefined
     
-    var styles: js.UndefOr[Boolean | String | Filename] = js.undefined
+    var styles: js.UndefOr[Boolean | String | Callback] = js.undefined
   }
   object Options {
     
@@ -57,7 +99,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setInput(value: typings.svgSpritemapWebpackPlugin.anon.Options): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: InputOptions): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
       inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
@@ -69,7 +111,7 @@ object mod {
       
       inline def setSpriteUndefined: Self = StObject.set(x, "sprite", js.undefined)
       
-      inline def setStyles(value: Boolean | String | Filename): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Boolean | String | Callback): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
@@ -78,21 +120,15 @@ object mod {
   @js.native
   trait SVGSpritemapPlugin
     extends StObject
-       with Plugin {
+       with WebpackPluginInstance {
     
     val directories: js.Array[String] = js.native
     
-    val files: js.Array[String] = js.native
-    
     /* private */ def getContentHash(source: String): String = js.native
     
-    /* private */ def getSpritemapHashes(
-      compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ js.Any
-    ): js.Array[String] = js.native
+    /* private */ def getSpritemapHashes(compilation: Any): js.Array[String] = js.native
     
-    /* private */ def getStylesHashes(
-      compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Compilation */ js.Any
-    ): js.Array[String] = js.native
+    /* private */ def getStylesHashes(compilation: Any): js.Array[String] = js.native
     
     /* private */ def getStylesType(styles: js.Object): js.UndefOr[asset | dir | module] = js.native
     /* private */ def getStylesType(styles: js.Object, filename: String): js.UndefOr[asset | dir | module] = js.native

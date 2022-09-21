@@ -8,5 +8,5 @@ object paginationMod {
   
   @JSImport("@nulogy/components/src/Pagination", "Pagination")
   @js.native
-  val Pagination: js.Any = js.native
+  val Pagination: Any = js.native
 }

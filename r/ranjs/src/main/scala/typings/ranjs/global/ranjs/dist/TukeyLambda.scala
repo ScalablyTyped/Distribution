@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.TukeyLambda")
 @js.native
-class TukeyLambda ()
+open class TukeyLambda ()
   extends typings.ranjs.mod.dist.TukeyLambda {
   def this(lambda: Double) = this()
 }

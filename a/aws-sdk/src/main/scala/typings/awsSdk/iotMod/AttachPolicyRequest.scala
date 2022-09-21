@@ -12,7 +12,7 @@ trait AttachPolicyRequest extends StObject {
   var policyName: PolicyName
   
   /**
-    * The identity to which the policy is attached.
+    * The identity to which the policy is attached. For example, a thing group or a certificate.
     */
   var target: PolicyTarget
 }

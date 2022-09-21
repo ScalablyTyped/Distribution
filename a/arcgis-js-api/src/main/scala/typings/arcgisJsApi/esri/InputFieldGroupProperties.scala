@@ -15,10 +15,13 @@ trait InputFieldGroupProperties extends StObject {
     */
   var description: js.UndefOr[String] = js.undefined
   
-  var initialState: js.UndefOr[expanded | collapsed] = js.undefined
+  var state: js.UndefOr[expanded | collapsed] = js.undefined
   
   /**
     * Arcade expression to determine whether this group is visible or not.
+    *
+    * @default null
+    * @deprecated Since 4.23. Use {@link esri/form/elements/GroupElement#visibilityExpression groupElement.visibilityExpression}
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#visibilityExpression)
     */
@@ -37,9 +40,9 @@ object InputFieldGroupProperties {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setInitialState(value: expanded | collapsed): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+    inline def setState(value: expanded | collapsed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     inline def setVisibilityExpression(value: String): Self = StObject.set(x, "visibilityExpression", value.asInstanceOf[js.Any])
     

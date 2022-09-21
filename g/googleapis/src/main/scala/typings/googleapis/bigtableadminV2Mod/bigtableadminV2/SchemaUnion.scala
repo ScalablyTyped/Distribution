@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A GcRule which deletes cells matching any of the given rules.
-  */
 trait SchemaUnion extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaUnion {
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: SchemaGcRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: SchemaGcRule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

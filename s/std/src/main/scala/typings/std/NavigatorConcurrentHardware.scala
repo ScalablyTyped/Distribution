@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NavigatorConcurrentHardware extends StObject {
   
+  /* standard dom */
   val hardwareConcurrency: Double
 }
 object NavigatorConcurrentHardware {

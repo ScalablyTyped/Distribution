@@ -14,7 +14,7 @@ object filterMod {
   
   @JSImport("nodegit/filter", "Filter")
   @js.native
-  class Filter () extends StObject {
+  open class Filter () extends StObject {
     
     var attributes: String = js.native
     
@@ -33,17 +33,17 @@ object filterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def listContains(filters: js.Any, name: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listContains")(filters.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def listContains(filters: Any, name: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listContains")(filters.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def listLength(fl: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("listLength")(fl.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def listLength(fl: Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("listLength")(fl.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    inline def listNew(repo: Repository, mode: Double, options: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("listNew")(repo.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def listNew(repo: Repository, mode: Double, options: Double): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("listNew")(repo.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
     
-    inline def listStreamBlob(filters: js.Any, blob: Blob, target: WriteStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listStreamBlob")(filters.asInstanceOf[js.Any], blob.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def listStreamBlob(filters: Any, blob: Blob, target: WriteStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listStreamBlob")(filters.asInstanceOf[js.Any], blob.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def listStreamData(filters: js.Any, data: Buf, target: WriteStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listStreamData")(filters.asInstanceOf[js.Any], data.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def listStreamData(filters: Any, data: Buf, target: WriteStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listStreamData")(filters.asInstanceOf[js.Any], data.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def listStreamFile(filters: js.Any, repo: Repository, path: String, target: WriteStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listStreamFile")(filters.asInstanceOf[js.Any], repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def listStreamFile(filters: Any, repo: Repository, path: String, target: WriteStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listStreamFile")(filters.asInstanceOf[js.Any], repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     inline def unregister(name: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
     

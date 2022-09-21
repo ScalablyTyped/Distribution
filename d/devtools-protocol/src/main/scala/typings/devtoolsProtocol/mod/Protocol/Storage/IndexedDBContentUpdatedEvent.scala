@@ -20,11 +20,16 @@ trait IndexedDBContentUpdatedEvent extends StObject {
     * Origin to update.
     */
   var origin: String
+  
+  /**
+    * Storage key to update.
+    */
+  var storageKey: String
 }
 object IndexedDBContentUpdatedEvent {
   
-  inline def apply(databaseName: String, objectStoreName: String, origin: String): IndexedDBContentUpdatedEvent = {
-    val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], objectStoreName = objectStoreName.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
+  inline def apply(databaseName: String, objectStoreName: String, origin: String, storageKey: String): IndexedDBContentUpdatedEvent = {
+    val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], objectStoreName = objectStoreName.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], storageKey = storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexedDBContentUpdatedEvent]
   }
   
@@ -35,5 +40,7 @@ object IndexedDBContentUpdatedEvent {
     inline def setObjectStoreName(value: String): Self = StObject.set(x, "objectStoreName", value.asInstanceOf[js.Any])
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
   }
 }

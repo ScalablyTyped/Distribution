@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetUserRequest extends StObject {
   
   /**
-    * The access token returned by the server response to get information about the user.
+    * A non-expired access token for the user whose information you want to query.
     */
   var AccessToken: TokenModelType
 }

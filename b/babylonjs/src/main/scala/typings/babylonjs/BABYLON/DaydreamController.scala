@@ -7,4 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DaydreamController
   extends StObject
-     with WebVRController
+     with WebVRController {
+  
+  /**
+    * Called once for each button that changed state since the last frame
+    * @param buttonIdx Which button index changed
+    * @param state New state of the button
+    */
+  /* protected */ def _handleButtonChange(buttonIdx: Double, state: ExtendedGamepadButton): Unit = js.native
+}

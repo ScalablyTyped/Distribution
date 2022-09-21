@@ -4,11 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Various utilities and convenience functions for watching [Accessor](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Accessor.html) properties.
+  *
+  * @deprecated since version 4.24. Use {@link module:esri/core/reactiveUtils} instead.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html)
+  */
 @js.native
 trait watchUtils extends StObject {
   
   /**
     * Watches a property for changes and calls the callback with the initial value of the property.
+    *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#watch reactiveUtils.watch()} instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#init)
     */
@@ -18,6 +27,8 @@ trait watchUtils extends StObject {
   /**
     * Watches a property for changes and automatically attaches and detaches an event handler for a given event to the property value as needed.
     *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#on reactiveUtils.on()} instead.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#on)
     */
   def on(obj: Accessor, propertyName: String, eventName: String, eventHandler: js.Function): WatchHandle = js.native
@@ -26,7 +37,7 @@ trait watchUtils extends StObject {
     propertyName: String,
     eventName: String,
     eventHandler: js.Function,
-    attachedHandler: Unit,
+    attachedHandler: scala.Unit,
     detachedHandler: EventAttachedCallback
   ): WatchHandle = js.native
   def on(
@@ -50,7 +61,7 @@ trait watchUtils extends StObject {
     propertyName: js.Array[String],
     eventName: String,
     eventHandler: js.Function,
-    attachedHandler: Unit,
+    attachedHandler: scala.Unit,
     detachedHandler: EventAttachedCallback
   ): WatchHandle = js.native
   def on(
@@ -72,6 +83,8 @@ trait watchUtils extends StObject {
   /**
     * Watches a property for changes once.
     *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#once reactiveUtils.once()} instead.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#once)
     */
   def once(obj: Accessor, propertyName: String): PromisedWatchHandle = js.native
@@ -81,6 +94,8 @@ trait watchUtils extends StObject {
   
   /**
     * Watches a property for changes.
+    *
+    * @deprecated Since 4.24.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#pausable)
     */
@@ -92,6 +107,8 @@ trait watchUtils extends StObject {
   /**
     * Watches a property for changes.
     *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#watch reactiveUtils.watch()} instead.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#watch)
     */
   def watch(obj: Accessor, propertyName: String, callback: WatchCallback): WatchHandle = js.native
@@ -99,6 +116,8 @@ trait watchUtils extends StObject {
   
   /**
     * Watches a property for becoming truthy.
+    *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#when reactiveUtils.when()} instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#when)
     */
@@ -108,6 +127,8 @@ trait watchUtils extends StObject {
   /**
     * Watches a property for becoming `defined`.
     *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#when reactiveUtils.when()} instead.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenDefined)
     */
   def whenDefined(obj: Accessor, propertyName: String, callback: WatchCallback): WatchHandle = js.native
@@ -115,6 +136,8 @@ trait watchUtils extends StObject {
   
   /**
     * Watches a property for becoming `defined` once.
+    *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#whenOnce reactiveUtils.whenOnce()} instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenDefinedOnce)
     */
@@ -126,20 +149,26 @@ trait watchUtils extends StObject {
   /**
     * Watches a property for becoming equal with a given `value`.
     *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#when reactiveUtils.when()} instead
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenEqual)
     */
-  def whenEqual(obj: Accessor, propertyName: String, value: js.Any, callback: WatchCallback): WatchHandle = js.native
+  def whenEqual(obj: Accessor, propertyName: String, value: Any, callback: WatchCallback): WatchHandle = js.native
   
   /**
     * Watches a property for becoming equal with a given `value`.
     *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#whenOnce reactiveUtils.whenOnce()} instead.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenEqualOnce)
     */
-  def whenEqualOnce(obj: Accessor, propertyName: String, value: js.Any): PromisedWatchHandle = js.native
-  def whenEqualOnce(obj: Accessor, propertyName: String, value: js.Any, callback: WatchCallback): PromisedWatchHandle = js.native
+  def whenEqualOnce(obj: Accessor, propertyName: String, value: Any): PromisedWatchHandle = js.native
+  def whenEqualOnce(obj: Accessor, propertyName: String, value: Any, callback: WatchCallback): PromisedWatchHandle = js.native
   
   /**
     * Watches a property for becoming `false`.
+    *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#when reactiveUtils.when()} instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenFalse)
     */
@@ -148,6 +177,8 @@ trait watchUtils extends StObject {
   
   /**
     * Watches a property for becoming `false` once.
+    *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#whenOnce reactiveUtils.whenOnce()} instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenFalseOnce)
     */
@@ -159,6 +190,8 @@ trait watchUtils extends StObject {
   /**
     * Watches a property for becoming falsy.
     *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#when reactiveUtils.when()} instead.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenNot)
     */
   def whenNot(obj: Accessor, propertyName: String, callback: WatchCallback): WatchHandle = js.native
@@ -166,6 +199,8 @@ trait watchUtils extends StObject {
   
   /**
     * Watches a property for becoming falsy once.
+    *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#whenOnce reactiveUtils.whenOnce()} instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenNotOnce)
     */
@@ -177,6 +212,8 @@ trait watchUtils extends StObject {
   /**
     * Watches a property for becoming truthy once.
     *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#whenOnce reactiveUtils.whenOnce()} instead.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenOnce)
     */
   def whenOnce(obj: Accessor, propertyName: String): PromisedWatchHandle = js.native
@@ -187,6 +224,8 @@ trait watchUtils extends StObject {
   /**
     * Watches a property for becoming `true`.
     *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#when reactiveUtils.when()} instead.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenTrue)
     */
   def whenTrue(obj: Accessor, propertyName: String, callback: WatchCallback): WatchHandle = js.native
@@ -194,6 +233,8 @@ trait watchUtils extends StObject {
   
   /**
     * Watches a property for becoming `true` once.
+    *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#whenOnce reactiveUtils.whenOnce()} instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenTrueOnce)
     */
@@ -205,6 +246,8 @@ trait watchUtils extends StObject {
   /**
     * Watches a property for becoming `undefined`.
     *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#when reactiveUtils.when()} instead.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenUndefined)
     */
   def whenUndefined(obj: Accessor, propertyName: String, callback: WatchCallback): WatchHandle = js.native
@@ -212,6 +255,8 @@ trait watchUtils extends StObject {
   
   /**
     * Watches a property for becoming `undefined` once.
+    *
+    * @deprecated since 4.24. Use {@link module:esri/core/reactiveUtils#whenOnce reactiveUtils.whenOnce()} instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-watchUtils.html#whenUndefinedOnce)
     */

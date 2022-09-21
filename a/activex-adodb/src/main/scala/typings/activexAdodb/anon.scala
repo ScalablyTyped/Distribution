@@ -124,7 +124,7 @@ object anon {
   
   trait CFields extends StObject {
     
-    val Fields: js.Any
+    val Fields: Any
     
     var adStatus: EventStatusEnum
     
@@ -139,7 +139,7 @@ object anon {
   }
   object CFields {
     
-    inline def apply(Fields: js.Any, adStatus: EventStatusEnum, cFields: Double, pError: Error, pRecordset: Recordset): CFields = {
+    inline def apply(Fields: Any, adStatus: EventStatusEnum, cFields: Double, pError: Error, pRecordset: Recordset): CFields = {
       val __obj = js.Dynamic.literal(Fields = Fields.asInstanceOf[js.Any], adStatus = adStatus.asInstanceOf[js.Any], cFields = cFields.asInstanceOf[js.Any], pError = pError.asInstanceOf[js.Any], pRecordset = pRecordset.asInstanceOf[js.Any])
       __obj.asInstanceOf[CFields]
     }
@@ -150,7 +150,7 @@ object anon {
       
       inline def setCFields(value: Double): Self = StObject.set(x, "cFields", value.asInstanceOf[js.Any])
       
-      inline def setFields(value: js.Any): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Any): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
       
       inline def setPError(value: Error): Self = StObject.set(x, "pError", value.asInstanceOf[js.Any])
       
@@ -230,7 +230,7 @@ object anon {
   
   trait Fields extends StObject {
     
-    val Fields: js.Any
+    val Fields: Any
     
     var adStatus: EventStatusEnum
     
@@ -243,7 +243,7 @@ object anon {
   }
   object Fields {
     
-    inline def apply(Fields: js.Any, adStatus: EventStatusEnum, cFields: Double, pRecordset: Recordset): Fields = {
+    inline def apply(Fields: Any, adStatus: EventStatusEnum, cFields: Double, pRecordset: Recordset): Fields = {
       val __obj = js.Dynamic.literal(Fields = Fields.asInstanceOf[js.Any], adStatus = adStatus.asInstanceOf[js.Any], cFields = cFields.asInstanceOf[js.Any], pRecordset = pRecordset.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fields]
     }
@@ -254,7 +254,7 @@ object anon {
       
       inline def setCFields(value: Double): Self = StObject.set(x, "cFields", value.asInstanceOf[js.Any])
       
-      inline def setFields(value: js.Any): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Any): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
       
       inline def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
     }

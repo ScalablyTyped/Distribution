@@ -11,9 +11,9 @@ Node.js wrapper for the ssdeep fuzzy hashing library
 | Full name          | ssdeep |
 | Keywords           | fuzzy, hash, ssdeep |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1108 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 66.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/pchaigno/node-ssdeep)

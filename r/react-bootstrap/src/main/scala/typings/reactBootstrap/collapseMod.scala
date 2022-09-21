@@ -3,6 +3,7 @@ package typings.reactBootstrap
 import typings.react.mod.ClassAttributes
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.reactBootstrap.mod.TransitionCallbacks
 import typings.reactBootstrap.reactBootstrapStrings.height
 import typings.reactBootstrap.reactBootstrapStrings.width
@@ -14,17 +15,17 @@ object collapseMod {
   
   @JSImport("react-bootstrap/lib/Collapse", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[CollapseProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[CollapseProps, js.Object, Any]
   
-  @js.native
-  trait Collapse
-    extends Component[CollapseProps, js.Object, js.Any]
+  type Collapse = Component[CollapseProps, js.Object, Any]
   
   trait CollapseProps
     extends StObject
        with TransitionCallbacks
        with ClassAttributes[Collapse] {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var dimension: js.UndefOr[height | width | js.Function0[String]] = js.undefined
     
@@ -48,6 +49,10 @@ object collapseMod {
     }
     
     extension [Self <: CollapseProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDimension(value: height | width | js.Function0[String]): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
       

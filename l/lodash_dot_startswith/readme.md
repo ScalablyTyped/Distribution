@@ -10,10 +10,10 @@ The lodash method `_.startsWith` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.startswith |
 | Keywords           | lodash-modularized, startswith |
-| # releases         | 0 |
-| # dependents       | 92 |
-| # downloads        | 6654627 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 958385.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

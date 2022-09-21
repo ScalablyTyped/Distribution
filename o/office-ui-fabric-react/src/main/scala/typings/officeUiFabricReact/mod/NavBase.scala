@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "NavBase")
 @js.native
-class NavBase protected ()
+open class NavBase protected ()
   extends typings.officeUiFabricReact.libNavMod.NavBase {
   def this(props: INavProps) = this()
 }

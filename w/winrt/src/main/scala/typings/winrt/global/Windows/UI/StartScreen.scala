@@ -24,7 +24,7 @@ object StartScreen {
   
   @JSGlobal("Windows.UI.StartScreen.SecondaryTile")
   @js.native
-  class SecondaryTile ()
+  open class SecondaryTile ()
     extends StObject
        with typings.winrt.Windows.UI.StartScreen.SecondaryTile {
     def this(tileId: String) = this()

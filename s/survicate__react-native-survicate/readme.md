@@ -10,10 +10,10 @@ React Native bindings for Survicate Mobile SDK
 | ------------------ | :-------------: |
 | Full name          | @survicate/react-native-survicate |
 | Keywords           | react-native |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 5459 |
-| # stars            | 0 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 4441.666666666667 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/Survicate/react-native-survicate#readme)

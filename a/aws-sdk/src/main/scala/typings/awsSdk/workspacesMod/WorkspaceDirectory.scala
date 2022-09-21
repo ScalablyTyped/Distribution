@@ -47,6 +47,11 @@ trait WorkspaceDirectory extends StObject {
   var RegistrationCode: js.UndefOr[typings.awsSdk.workspacesMod.RegistrationCode] = js.undefined
   
   /**
+    * Describes the enablement status, user access URL, and relay state parameter name that are used for configuring federation with an SAML 2.0 identity provider.
+    */
+  var SamlProperties: js.UndefOr[typings.awsSdk.workspacesMod.SamlProperties] = js.undefined
+  
+  /**
     * The default self-service permissions for WorkSpaces in the directory.
     */
   var SelfservicePermissions: js.UndefOr[typings.awsSdk.workspacesMod.SelfservicePermissions] = js.undefined
@@ -119,7 +124,7 @@ object WorkspaceDirectory {
     
     inline def setDnsIpAddressesUndefined: Self = StObject.set(x, "DnsIpAddresses", js.undefined)
     
-    inline def setDnsIpAddressesVarargs(value: IpAddress*): Self = StObject.set(x, "DnsIpAddresses", js.Array(value :_*))
+    inline def setDnsIpAddressesVarargs(value: IpAddress*): Self = StObject.set(x, "DnsIpAddresses", js.Array(value*))
     
     inline def setIamRoleId(value: ARN): Self = StObject.set(x, "IamRoleId", value.asInstanceOf[js.Any])
     
@@ -129,11 +134,15 @@ object WorkspaceDirectory {
     
     inline def setIpGroupIdsUndefined: Self = StObject.set(x, "ipGroupIds", js.undefined)
     
-    inline def setIpGroupIdsVarargs(value: IpGroupId*): Self = StObject.set(x, "ipGroupIds", js.Array(value :_*))
+    inline def setIpGroupIdsVarargs(value: IpGroupId*): Self = StObject.set(x, "ipGroupIds", js.Array(value*))
     
     inline def setRegistrationCode(value: RegistrationCode): Self = StObject.set(x, "RegistrationCode", value.asInstanceOf[js.Any])
     
     inline def setRegistrationCodeUndefined: Self = StObject.set(x, "RegistrationCode", js.undefined)
+    
+    inline def setSamlProperties(value: SamlProperties): Self = StObject.set(x, "SamlProperties", value.asInstanceOf[js.Any])
+    
+    inline def setSamlPropertiesUndefined: Self = StObject.set(x, "SamlProperties", js.undefined)
     
     inline def setSelfservicePermissions(value: SelfservicePermissions): Self = StObject.set(x, "SelfservicePermissions", value.asInstanceOf[js.Any])
     
@@ -147,7 +156,7 @@ object WorkspaceDirectory {
     
     inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
     
     inline def setTenancy(value: Tenancy): Self = StObject.set(x, "Tenancy", value.asInstanceOf[js.Any])
     

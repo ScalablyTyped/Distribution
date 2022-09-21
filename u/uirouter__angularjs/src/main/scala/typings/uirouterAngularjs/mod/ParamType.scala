@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/angularjs", "ParamType")
 @js.native
-class ParamType protected ()
+open class ParamType protected ()
   extends typings.uirouterCore.mod.ParamType {
   /**
     * @param def  A configuration object which contains the custom type definition.  The object's

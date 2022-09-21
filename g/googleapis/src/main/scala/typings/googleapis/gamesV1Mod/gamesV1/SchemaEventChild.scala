@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This is a JSON template for an event child relationship resource.
-  */
 trait SchemaEventChild extends StObject {
   
   /**
     * The ID of the child event.
     */
-  var childId: js.UndefOr[String] = js.undefined
+  var childId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Uniquely identifies the type of this resource. Value is always the fixed
-    * string games#eventChild.
+    * Uniquely identifies the type of this resource. Value is always the fixed string `games#eventChild`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaEventChild {
   
@@ -31,9 +27,13 @@ object SchemaEventChild {
     
     inline def setChildId(value: String): Self = StObject.set(x, "childId", value.asInstanceOf[js.Any])
     
+    inline def setChildIdNull: Self = StObject.set(x, "childId", null)
+    
     inline def setChildIdUndefined: Self = StObject.set(x, "childId", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

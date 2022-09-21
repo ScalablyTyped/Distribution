@@ -2,6 +2,7 @@ package typings.exceljs.mod
 
 import typings.exceljs.anon.ImageId
 import typings.exceljs.anon.IncludeEmpty
+import typings.exceljs.anon.PartialColumn
 import typings.exceljs.anon.PartialHeaderFooter
 import typings.exceljs.anon.PartialPageSetup
 import typings.exceljs.anon.PartialWorksheetProtectio
@@ -43,20 +44,20 @@ trait Worksheet extends StObject {
   def addImage(imageId: Double, range: editAsstringundefinedhype): Unit = js.native
   def addImage(imageId: Double, range: editAsstringundefinedhypeEditAs): Unit = js.native
   
-  def addRow(data: js.Any): Row = js.native
-  def addRow(data: js.Any, style: String): Row = js.native
   /**
   	 * Add a couple of Rows by key-value, after the last current row, using the column keys,
   	 * or add a row by contiguous Array (assign to columns A, B & C)
   	 */
-  def addRow(data: js.Array[js.Any]): Row = js.native
-  def addRow(data: js.Array[js.Any], style: String): Row = js.native
+  def addRow(data: js.Array[Any]): Row = js.native
+  def addRow(data: js.Array[Any], style: String): Row = js.native
+  def addRow(data: Any): Row = js.native
+  def addRow(data: Any, style: String): Row = js.native
   
   /**
   	 * Add multiple rows by providing an array of arrays or key-value pairs
   	 */
-  def addRows(rows: js.Array[js.Any]): js.Array[Row] = js.native
-  def addRows(rows: js.Array[js.Any], style: String): js.Array[Row] = js.native
+  def addRows(rows: js.Array[Any]): js.Array[Row] = js.native
+  def addRows(rows: js.Array[Any], style: String): js.Array[Row] = js.native
   
   /**
   	 * Add a new table and return a reference to it
@@ -79,7 +80,7 @@ trait Worksheet extends StObject {
   	 * Note: these column structures are a workbook-building convenience only,
   	 * apart from the column width, they will not be fully persisted.
   	 */
-  var columns: js.Array[Column] = js.native
+  var columns: js.Array[PartialColumn] = js.native
   
   def commit(): Unit = js.native
   
@@ -180,7 +181,7 @@ trait Worksheet extends StObject {
   /**
   	 * Get or create rows by 1-based index
   	 */
-  def getRows(start: Double, length: Double): js.Array[Row] = js.native
+  def getRows(start: Double, length: Double): js.UndefOr[js.Array[Row]] = js.native
   
   /**
   	 * return all rows as sparse array
@@ -206,21 +207,26 @@ trait Worksheet extends StObject {
   
   val id: Double = js.native
   
-  def insertRow(pos: Double, value: js.Any): Row = js.native
-  def insertRow(pos: Double, value: js.Any, style: String): Row = js.native
   /**
   	 * Insert a Row by key-value, at the position (shifiting down all rows from position),
   	 * using the column keys, or add a row by contiguous Array (assign to columns A, B & C)
   	 */
-  def insertRow(pos: Double, value: js.Array[js.Any]): Row = js.native
-  def insertRow(pos: Double, value: js.Array[js.Any], style: String): Row = js.native
+  def insertRow(pos: Double, value: js.Array[Any]): Row = js.native
+  def insertRow(pos: Double, value: js.Array[Any], style: String): Row = js.native
+  def insertRow(pos: Double, value: Any): Row = js.native
+  def insertRow(pos: Double, value: Any, style: String): Row = js.native
   
   /**
   	 * Insert multiple rows at position (shifiting down all rows from position)
   	 * by providing an array of arrays or key-value pairs
   	 */
-  def insertRows(pos: Double, values: js.Array[js.Any]): js.Array[Row] = js.native
-  def insertRows(pos: Double, values: js.Array[js.Any], style: String): js.Array[Row] = js.native
+  def insertRows(pos: Double, values: js.Array[Any]): js.Array[Row] = js.native
+  def insertRows(pos: Double, values: js.Array[Any], style: String): js.Array[Row] = js.native
+  
+  /**
+  	 * Get the last column in a worksheet
+  	 */
+  val lastColumn: Column = js.native
   
   /**
   	 * Get the last editable row in a worksheet (or undefined if there are none)
@@ -284,7 +290,7 @@ trait Worksheet extends StObject {
   /**
   	 * delete conditionalFormattingOptions
   	 */
-  def removeConditionalFormatting(filter: js.Any): Unit = js.native
+  def removeConditionalFormatting(filter: Any): Unit = js.native
   
   /**
   	 * delete table by name or id
@@ -309,7 +315,7 @@ trait Worksheet extends StObject {
   	 * Also: If the worksheet has more rows than values in the colulmn inserts,
   	 * the rows will still be shifted as if the values existed
   	 */
-  def spliceColumns(start: Double, count: Double, insert: js.Array[js.Any]*): Unit = js.native
+  def spliceColumns(start: Double, count: Double, insert: js.Array[Any]*): Unit = js.native
   
   /**
   	 * Cut one or more rows (rows below are shifted up)
@@ -317,7 +323,7 @@ trait Worksheet extends StObject {
   	 *
   	 * Known Issue: If a splice causes any merged cells to move, the results may be unpredictable
   	 */
-  def spliceRows(start: Double, count: Double, insert: js.Array[js.Any]*): Unit = js.native
+  def spliceRows(start: Double, count: Double, insert: js.Array[Any]*): Unit = js.native
   
   /**
   	 * Worksheet State

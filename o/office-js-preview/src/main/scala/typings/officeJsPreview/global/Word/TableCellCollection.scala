@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains the collection of the document's TableCell objects.
   *
+  * @remarks
   * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.TableCellCollection")
 @js.native
-class TableCellCollection ()
+open class TableCellCollection ()
   extends StObject
      with typings.officeJsPreview.Word.TableCellCollection {
   

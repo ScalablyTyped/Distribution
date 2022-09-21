@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateScalingPlanRequest extends StObject {
   
   /**
-    * A CloudFormation stack or set of tags.
+    * A CloudFormation stack or set of tags. For more information, see ApplicationSource in the AWS Auto Scaling API Reference.
     */
   var ApplicationSource: js.UndefOr[typings.awsSdk.autoscalingplansMod.ApplicationSource] = js.undefined
   
   /**
-    * The scaling instructions.
+    * The scaling instructions. For more information, see ScalingInstruction in the AWS Auto Scaling API Reference.
     */
   var ScalingInstructions: js.UndefOr[typings.awsSdk.autoscalingplansMod.ScalingInstructions] = js.undefined
   
@@ -22,7 +22,7 @@ trait UpdateScalingPlanRequest extends StObject {
   var ScalingPlanName: typings.awsSdk.autoscalingplansMod.ScalingPlanName
   
   /**
-    * The version number of the scaling plan.
+    * The version number of the scaling plan. The only valid value is 1. Currently, you cannot have multiple scaling plan versions.
     */
   var ScalingPlanVersion: typings.awsSdk.autoscalingplansMod.ScalingPlanVersion
 }
@@ -43,7 +43,7 @@ object UpdateScalingPlanRequest {
     
     inline def setScalingInstructionsUndefined: Self = StObject.set(x, "ScalingInstructions", js.undefined)
     
-    inline def setScalingInstructionsVarargs(value: ScalingInstruction*): Self = StObject.set(x, "ScalingInstructions", js.Array(value :_*))
+    inline def setScalingInstructionsVarargs(value: ScalingInstruction*): Self = StObject.set(x, "ScalingInstructions", js.Array(value*))
     
     inline def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
     

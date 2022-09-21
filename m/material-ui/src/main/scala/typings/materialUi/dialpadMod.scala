@@ -10,10 +10,10 @@ object dialpadMod {
   
   @JSImport("material-ui/svg-icons/communication/dialpad", JSImport.Default)
   @js.native
-  class default () extends CommunicationDialpad
+  open class default () extends CommunicationDialpad
   
   @JSImport("material-ui/svg-icons/communication/dialpad", "CommunicationDialpad")
   @js.native
-  class CommunicationDialpad ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationDialpad ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

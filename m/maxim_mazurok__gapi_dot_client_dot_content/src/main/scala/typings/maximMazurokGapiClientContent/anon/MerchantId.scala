@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
+import typings.maximMazurokGapiClientContent.gapi.client.content.ReturnShippingLabel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,6 @@ trait MerchantId extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the account whose website is claimed. */
-  var accountId: String
-  
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
@@ -28,26 +26,23 @@ trait MerchantId extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /**
-    * The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and `accountId` must be the ID of a sub-account
-    * of this account.
-    */
+  /** Required. The merchant the Return Shipping Label belongs to. */
   var merchantId: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Only available to selected merchants. When set to `True`, this flag removes any existing claim on the requested website by another account and replaces it with a claim from this
-    * account.
-    */
-  var overwrite: js.UndefOr[Boolean] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Request body */
+  var resource: ReturnShippingLabel
+  
+  /** Required. Provide the Google-generated merchant order return ID. */
+  var returnId: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -57,8 +52,8 @@ trait MerchantId extends StObject {
 }
 object MerchantId {
   
-  inline def apply(accountId: String, merchantId: String): MerchantId = {
-    val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], merchantId = merchantId.asInstanceOf[js.Any])
+  inline def apply(merchantId: String, resource: ReturnShippingLabel, returnId: String): MerchantId = {
+    val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], returnId = returnId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MerchantId]
   }
   
@@ -71,8 +66,6 @@ object MerchantId {
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
-    
-    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -96,10 +89,6 @@ object MerchantId {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
-    
-    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
-    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
@@ -107,6 +96,10 @@ object MerchantId {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: ReturnShippingLabel): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setReturnId(value: String): Self = StObject.set(x, "returnId", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

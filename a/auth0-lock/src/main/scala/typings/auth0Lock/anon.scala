@@ -6,39 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Aud extends StObject {
-    
-    var aud: String
-    
-    var exp: Double
-    
-    var iat: Double
-    
-    var iss: String
-    
-    var sub: String
-  }
-  object Aud {
-    
-    inline def apply(aud: String, exp: Double, iat: Double, iss: String, sub: String): Aud = {
-      val __obj = js.Dynamic.literal(aud = aud.asInstanceOf[js.Any], exp = exp.asInstanceOf[js.Any], iat = iat.asInstanceOf[js.Any], iss = iss.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Aud]
-    }
-    
-    extension [Self <: Aud](x: Self) {
-      
-      inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
-      
-      inline def setExp(value: Double): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
-      
-      inline def setIat(value: Double): Self = StObject.set(x, "iat", value.asInstanceOf[js.Any])
-      
-      inline def setIss(value: String): Self = StObject.set(x, "iss", value.asInstanceOf[js.Any])
-      
-      inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Email extends StObject {
     
     var email: js.UndefOr[String] = js.undefined

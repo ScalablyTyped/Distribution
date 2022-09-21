@@ -10,11 +10,11 @@ trait VBComponent extends StObject {
   
   val CodeModule: typings.activexVbide.VBIDE.CodeModule
   
-  def Collection(index: js.Any): VBComponent
+  def Collection(index: Any): VBComponent
   @JSName("Collection")
   val Collection_Original: VBComponents
   
-  val Designer: js.Any
+  val Designer: Any
   
   val DesignerID: String
   
@@ -26,7 +26,7 @@ trait VBComponent extends StObject {
   
   var Name: String
   
-  def Properties(index: js.Any): Property
+  def Properties(index: Any): Property
   @JSName("Properties")
   val Properties_Original: Properties
   
@@ -45,7 +45,7 @@ object VBComponent {
     Activate: () => Unit,
     CodeModule: CodeModule,
     Collection: VBComponents,
-    Designer: js.Any,
+    Designer: Any,
     DesignerID: String,
     DesignerWindow: () => Window,
     Export: String => Unit,
@@ -70,7 +70,7 @@ object VBComponent {
     
     inline def setCollection(value: VBComponents): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
     
-    inline def setDesigner(value: js.Any): Self = StObject.set(x, "Designer", value.asInstanceOf[js.Any])
+    inline def setDesigner(value: Any): Self = StObject.set(x, "Designer", value.asInstanceOf[js.Any])
     
     inline def setDesignerID(value: String): Self = StObject.set(x, "DesignerID", value.asInstanceOf[js.Any])
     

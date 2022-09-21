@@ -10,15 +10,12 @@ Datadog API Node.JS Client
 | ------------------ | :-------------: |
 | Full name          | dogapi |
 | Keywords           | datadog, api, datadog api, dog, dogapi, dog api |
-| # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 5001404 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3100521.3333333335 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/brettlangdon/node-dogapi#readme)
-- [Bugs](https://github.com/brettlangdon/node-dogapi/issues)
-- [Repository](https://github.com/brettlangdon/node-dogapi)
 - [Npm](https://www.npmjs.com/package/dogapi)
     
 

@@ -21,7 +21,7 @@ object layer {
     */
   @JSGlobal("H.map.layer.BaseTileLayer")
   @js.native
-  class BaseTileLayer protected ()
+  open class BaseTileLayer protected ()
     extends StObject
        with typings.heremaps.H.map.layer.BaseTileLayer {
     /**
@@ -43,7 +43,7 @@ object layer {
     * Constructor
     * @param opt_options {H.map.layer.Layer.Options=} - optional configuration object
     */
-  class Layer ()
+  open class Layer ()
     extends StObject
        with typings.heremaps.H.map.layer.Layer {
     def this(opt_options: typings.heremaps.H.map.layer.Layer.Options) = this()
@@ -54,7 +54,7 @@ object layer {
     */
   @JSGlobal("H.map.layer.MarkerTileLayer")
   @js.native
-  class MarkerTileLayer protected ()
+  open class MarkerTileLayer protected ()
     extends StObject
        with typings.heremaps.H.map.layer.MarkerTileLayer {
     /**
@@ -104,7 +104,7 @@ object layer {
     */
   @JSGlobal("H.map.layer.ObjectLayer")
   @js.native
-  class ObjectLayer protected ()
+  open class ObjectLayer protected ()
     extends StObject
        with typings.heremaps.H.map.layer.ObjectLayer {
     def this(provider: Provider) = this()
@@ -160,7 +160,7 @@ object layer {
     */
   @JSGlobal("H.map.layer.TileLayer")
   @js.native
-  class TileLayer protected ()
+  open class TileLayer protected ()
     extends StObject
        with typings.heremaps.H.map.layer.TileLayer {
     /**

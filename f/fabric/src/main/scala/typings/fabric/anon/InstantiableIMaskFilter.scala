@@ -17,5 +17,5 @@ trait InstantiableIMaskFilter
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
-  def fromObject(`object`: js.Any): IMaskFilter = js.native
+  def fromObject(`object`: Any): IMaskFilter = js.native
 }

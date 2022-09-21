@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.IInitEventHandler")
 @js.native
-/* private */ class IInitEventHandler ()
+/* private */ open class IInitEventHandler ()
   extends StObject
      with typings.activexInfopath.InfoPath.IInitEventHandler {
   
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   /* CompleteClass */
   override def InitEventHandler(
-    punkSender: js.Any,
+    punkSender: Any,
     pDocument: typings.activexInfopath.InfoPath._XDocument,
     pROMode: XdReadOnlyViewMode
   ): Unit = js.native

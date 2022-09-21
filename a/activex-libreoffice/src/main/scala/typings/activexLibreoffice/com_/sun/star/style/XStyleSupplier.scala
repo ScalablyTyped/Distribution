@@ -31,7 +31,7 @@ object XStyleSupplier {
     Style: XStyle,
     acquire: () => Unit,
     getStyle: () => XStyle,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setStyle: XStyle => Unit
   ): XStyleSupplier = {

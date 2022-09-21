@@ -28,6 +28,6 @@ object SunburstClickEvent {
     
     inline def setPoints(value: js.Array[SunburstPlotDatum]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: SunburstPlotDatum*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: SunburstPlotDatum*): Self = StObject.set(x, "points", js.Array(value*))
   }
 }

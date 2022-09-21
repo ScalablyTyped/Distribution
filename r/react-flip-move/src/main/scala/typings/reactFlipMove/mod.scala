@@ -15,8 +15,7 @@ object mod {
   
   @JSImport("react-flip-move", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[FlipMoveProps, js.Any, js.Any]
+  open class default () extends Component[FlipMoveProps, Any, Any]
   
   object FlipMove {
     
@@ -386,5 +385,5 @@ object mod {
     
     trait _AnimationProp extends StObject
   }
-  type FlipMove = Component[FlipMoveProps, js.Any, js.Any]
+  type FlipMove = Component[FlipMoveProps, Any, Any]
 }

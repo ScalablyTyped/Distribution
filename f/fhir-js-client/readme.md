@@ -10,10 +10,10 @@ JavaScript client for Fast Healthcare Interoperability Resources
 | ------------------ | :-------------: |
 | Full name          | fhir-js-client |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 845 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 17.666666666666668 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/fhir-js-client)

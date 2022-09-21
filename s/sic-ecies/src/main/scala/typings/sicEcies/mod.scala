@@ -2,7 +2,7 @@ package typings.sicEcies
 
 import typings.bitcoreLib.mod.PrivateKey
 import typings.bitcoreLib.mod.PublicKey
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

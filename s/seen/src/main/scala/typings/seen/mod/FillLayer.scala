@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "FillLayer")
 @js.native
-class FillLayer protected () extends RenderLayer {
+open class FillLayer protected () extends RenderLayer {
   def this(width: Double, height: Double, fill: String) = this()
 }

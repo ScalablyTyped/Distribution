@@ -10,10 +10,10 @@ object micNoneMod {
   
   @JSImport("material-ui/svg-icons/av/mic-none", JSImport.Default)
   @js.native
-  class default () extends AvMicNone
+  open class default () extends AvMicNone
   
   @JSImport("material-ui/svg-icons/av/mic-none", "AvMicNone")
   @js.native
-  class AvMicNone ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvMicNone ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

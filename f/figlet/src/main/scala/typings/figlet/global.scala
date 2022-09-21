@@ -5,7 +5,6 @@ import typings.figlet.mod.Defaults_
 import typings.figlet.mod.FontOptions
 import typings.figlet.mod.Fonts_
 import typings.figlet.mod.Options
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,26 +13,25 @@ object global {
   
   object figlet {
     
-    inline def apply(txt: String, cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(txt: String, cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def apply(
       txt: String,
       font: Fonts_,
-      cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
+      cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], font.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def apply(
       txt: String,
-      options: Unit,
-      cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
-    ): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    /**
-      * @desc
-      * This `unified-signatures` is disabled because `Fonts` type is too long
-      */
+      // This `unified-signatures` is disabled because `Fonts` type is too long
     // tslint:disable-next-line: unified-signatures
+    options: Unit,
+      cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def apply(
       txt: String,
-      options: Options,
-      cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
+      // This `unified-signatures` is disabled because `Fonts` type is too long
+    // tslint:disable-next-line: unified-signatures
+    options: Options,
+      cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].apply(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("figlet")
@@ -48,7 +46,7 @@ object global {
       * This method exists in node environment only.
       * In browser environment, this method does not exist.
       */
-    inline def fonts(cb: js.Function2[/* error */ Error | Null, /* fontList */ js.UndefOr[js.Array[Fonts_]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fonts")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def fonts(cb: js.Function2[/* error */ js.Error | Null, /* fontList */ js.UndefOr[js.Array[Fonts_]], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fonts")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * @warn
@@ -59,7 +57,7 @@ object global {
     
     inline def loadFont(
       font: Fonts_,
-      cb: js.Function2[/* error */ Error | Null, /* fontOptions */ js.UndefOr[FontOptions], Unit]
+      cb: js.Function2[/* error */ js.Error | Null, /* fontOptions */ js.UndefOr[FontOptions], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(font.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
@@ -76,23 +74,34 @@ object global {
     inline def metadata(
       font: Fonts_,
       cb: js.Function3[
-          /* error */ Error | Null, 
+          /* error */ js.Error | Null, 
           /* fontOptions */ js.UndefOr[FontOptions], 
           /* headerComment */ js.UndefOr[String], 
           Unit
         ]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(font.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def text(txt: String, cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(txt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /**
+      * @desc
+      * Load a custom font from a file.
+      *
+      * @param fontName
+      * The name you want to give the new font.
+      * @param fontFile
+      * The data from the font file.
+      */
+    inline def parseFont(fontName: String, fontFile: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFont")(fontName.asInstanceOf[js.Any], fontFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def text(txt: String, cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(txt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def text(
       txt: String,
       font: Fonts_,
-      cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
+      cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(txt.asInstanceOf[js.Any], font.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def text(
       txt: String,
       options: Unit,
-      cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
+      cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * @desc
@@ -102,7 +111,7 @@ object global {
     inline def text(
       txt: String,
       options: Options,
-      cb: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
+      cb: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[String], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(txt.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def textSync(txt: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("textSync")(txt.asInstanceOf[js.Any]).asInstanceOf[String]

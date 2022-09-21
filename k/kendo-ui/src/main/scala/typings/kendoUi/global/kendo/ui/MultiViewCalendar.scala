@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.MultiViewCalendar")
 @js.native
-class MultiViewCalendar protected ()
+open class MultiViewCalendar protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.MultiViewCalendar {
   def this(element: Element) = this()

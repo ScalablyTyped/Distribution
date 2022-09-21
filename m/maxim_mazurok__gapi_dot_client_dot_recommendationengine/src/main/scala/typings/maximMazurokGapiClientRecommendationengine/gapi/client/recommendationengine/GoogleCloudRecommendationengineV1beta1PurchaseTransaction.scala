@@ -15,7 +15,7 @@ trait GoogleCloudRecommendationengineV1beta1PurchaseTransaction extends StObject
   var costs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction & TopLevel[Any]
   ] = js.undefined
   
   /** Required. Currency code. Use three-character ISO-4217 code. This field is not required if the event type is `refund`. */
@@ -34,7 +34,7 @@ trait GoogleCloudRecommendationengineV1beta1PurchaseTransaction extends StObject
   var taxes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction & TopLevel[Any]
   ] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1PurchaseTransaction {
@@ -49,7 +49,7 @@ object GoogleCloudRecommendationengineV1beta1PurchaseTransaction {
     inline def setCosts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction & TopLevel[Any]
     ): Self = StObject.set(x, "costs", value.asInstanceOf[js.Any])
     
     inline def setCostsUndefined: Self = StObject.set(x, "costs", js.undefined)
@@ -69,7 +69,7 @@ object GoogleCloudRecommendationengineV1beta1PurchaseTransaction {
     inline def setTaxes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PurchaseTransaction & TopLevel[Any]
     ): Self = StObject.set(x, "taxes", value.asInstanceOf[js.Any])
     
     inline def setTaxesUndefined: Self = StObject.set(x, "taxes", js.undefined)

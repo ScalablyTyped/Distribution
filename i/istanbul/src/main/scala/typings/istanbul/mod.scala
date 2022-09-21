@@ -13,10 +13,10 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("istanbul", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Istanbul {
-    def this(options: js.Any) = this()
+    def this(options: Any) = this()
   }
   @JSImport("istanbul", JSImport.Namespace)
   @js.native
@@ -25,25 +25,25 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("istanbul", "Collector")
   @js.native
-  class CollectorCls ()
+  open class CollectorCls ()
     extends StObject
        with Collector {
-    def this(options: js.Any) = this()
+    def this(options: Any) = this()
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("istanbul", "Instrumenter")
   @js.native
-  class InstrumenterCls ()
+  open class InstrumenterCls ()
     extends StObject
        with Instrumenter {
-    def this(options: js.Any) = this()
+    def this(options: Any) = this()
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("istanbul", "Reporter")
   @js.native
-  class ReporterCls ()
+  open class ReporterCls ()
     extends StObject
        with Reporter {
     def this(cfg: Configuration) = this()
@@ -55,12 +55,12 @@ object mod extends Shortcut {
   trait Collector
     extends StObject
        with Instantiable0[Collector]
-       with Instantiable1[/* options */ js.Any, Collector] {
+       with Instantiable1[/* options */ Any, Collector] {
     
-    def add(coverage: js.Any): Unit = js.native
-    def add(coverage: js.Any, testName: String): Unit = js.native
+    def add(coverage: Any): Unit = js.native
+    def add(coverage: Any, testName: String): Unit = js.native
     
-    def getFinalCoverage(): js.Any = js.native
+    def getFinalCoverage(): Any = js.native
   }
   
   trait Config extends StObject
@@ -68,7 +68,7 @@ object mod extends Shortcut {
   @js.native
   trait Configuration
     extends StObject
-       with Instantiable2[/* obj */ js.Any, /* overrides */ js.Any, Configuration]
+       with Instantiable2[/* obj */ Any, /* overrides */ Any, Configuration]
   
   trait ContentWriter extends StObject
   
@@ -80,7 +80,7 @@ object mod extends Shortcut {
   trait Instrumenter
     extends StObject
        with Instantiable0[Instrumenter]
-       with Instantiable1[/* options */ js.Any, Instrumenter] {
+       with Instantiable1[/* options */ Any, Instrumenter] {
     
     def instrumentSync(code: String, filename: String): String = js.native
   }
@@ -89,7 +89,7 @@ object mod extends Shortcut {
   trait Istanbul
     extends StObject
        with Instantiable0[Istanbul]
-       with Instantiable1[/* options */ js.Any, Istanbul] {
+       with Instantiable1[/* options */ Any, Istanbul] {
     
     var Collector: typings.istanbul.mod.Collector = js.native
     

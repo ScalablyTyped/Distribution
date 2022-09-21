@@ -8,14 +8,13 @@ import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.googleProtobuf.typePbMod.Field.Cardinality
 import typings.googleProtobuf.typePbMod.Field.Kind
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/type_pb", "Field")
 @js.native
-class Field () extends Message {
+open class Field () extends Message {
   
   def addOptions(): Option = js.native
   def addOptions(value: Unit, index: Double): Option = js.native
@@ -229,7 +228,7 @@ object Field {
     /* 0 */ val TYPE_UNKNOWN: typings.googleProtobuf.typePbMod.Field.Kind.TYPE_UNKNOWN & Double = js.native
   }
   
-  inline def deserializeBinary(bytes: Uint8Array): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Field]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Field]
   
   inline def deserializeBinaryFromReader(message: Field, reader: BinaryReader): Field = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Field]
   
@@ -306,7 +305,7 @@ object Field {
       
       inline def setOptionsList(value: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject]): Self = StObject.set(x, "optionsList", value.asInstanceOf[js.Any])
       
-      inline def setOptionsListVarargs(value: typings.googleProtobuf.typePbMod.Option.AsObject*): Self = StObject.set(x, "optionsList", js.Array(value :_*))
+      inline def setOptionsListVarargs(value: typings.googleProtobuf.typePbMod.Option.AsObject*): Self = StObject.set(x, "optionsList", js.Array(value*))
       
       inline def setPacked(value: Boolean): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
       

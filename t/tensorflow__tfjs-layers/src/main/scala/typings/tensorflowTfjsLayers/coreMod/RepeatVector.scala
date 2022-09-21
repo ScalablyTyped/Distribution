@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "RepeatVector")
 @js.native
-class RepeatVector protected () extends Layer {
+open class RepeatVector protected () extends Layer {
   def this(args: RepeatVectorLayerArgs) = this()
   
   val n: Double = js.native

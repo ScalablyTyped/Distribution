@@ -1064,5 +1064,5 @@ object jsxNamespaceMod {
   
   type ReactJSXLibraryManagedAttributes[C, P] = LibraryManagedAttributes[C, P]
   
-  type WithConditionalCSSProp[P] = P | (P & Css)
+  type WithConditionalCSSProp[P] = js.Object | Css
 }

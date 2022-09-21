@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateRuntimeConfigurationOutput extends StObject {
   
   /**
-    * The runtime configuration currently in force. If the update was successful, this object matches the one in the request.
+    * The runtime configuration currently in use by all instances in the fleet. If the update was successful, all property changes are shown. 
     */
   var RuntimeConfiguration: js.UndefOr[typings.awsSdk.gameliftMod.RuntimeConfiguration] = js.undefined
 }

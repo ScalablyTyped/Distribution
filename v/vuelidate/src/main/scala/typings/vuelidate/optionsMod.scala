@@ -1,7 +1,6 @@
 package typings.vuelidate
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.vue.vueMod.Vue
 import typings.vuelidate.validatorsMod.ValidationRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,21 +11,21 @@ object optionsMod {
   @js.native
   trait AsyncDecl extends StObject {
     
-    def apply(args: js.Any*): Boolean | js.Promise[Boolean] = js.native
+    def apply(args: Any*): Boolean | js.Promise[Boolean] = js.native
   }
   
-  trait ComponentOptions[V /* <: Vue */] extends StObject {
+  trait ComponentOptions[V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */] extends StObject {
     
     var validations: js.UndefOr[RuleDecl | DynamicDecl] = js.undefined
   }
   object ComponentOptions {
     
-    inline def apply[V /* <: Vue */](): ComponentOptions[V] = {
+    inline def apply[V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */](): ComponentOptions[V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComponentOptions[V]]
     }
     
-    extension [Self <: ComponentOptions[?], V /* <: Vue */](x: Self & ComponentOptions[V]) {
+    extension [Self <: ComponentOptions[?], V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */](x: Self & ComponentOptions[V]) {
       
       inline def setValidations(value: RuleDecl | DynamicDecl): Self = StObject.set(x, "validations", value.asInstanceOf[js.Any])
       
@@ -57,5 +56,5 @@ object optionsMod {
   
   type ValidPropertyDecl = StringDictionary[RuleDecl]
   
-  type ValidationDecl = ValidationRule | (js.Function1[/* repeated */ js.Any, ValidationRule])
+  type ValidationDecl = ValidationRule | (js.Function1[/* repeated */ Any, ValidationRule])
 }

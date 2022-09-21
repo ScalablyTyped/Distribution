@@ -34,14 +34,14 @@ object memoizeMemoizeMod {
   }
   object IMemoizedFunctionMethods {
     
-    inline def apply(doLocked: js.Function0[js.Any] => js.Any, logPerformance: () => IMemoizedFunctionMethods): IMemoizedFunctionMethods = {
+    inline def apply(doLocked: js.Function0[Any] => Any, logPerformance: () => IMemoizedFunctionMethods): IMemoizedFunctionMethods = {
       val __obj = js.Dynamic.literal(doLocked = js.Any.fromFunction1(doLocked), logPerformance = js.Any.fromFunction0(logPerformance))
       __obj.asInstanceOf[IMemoizedFunctionMethods]
     }
     
     extension [Self <: IMemoizedFunctionMethods](x: Self) {
       
-      inline def setDoLocked(value: js.Function0[js.Any] => js.Any): Self = StObject.set(x, "doLocked", js.Any.fromFunction1(value))
+      inline def setDoLocked(value: js.Function0[Any] => Any): Self = StObject.set(x, "doLocked", js.Any.fromFunction1(value))
       
       inline def setLogPerformance(value: () => IMemoizedFunctionMethods): Self = StObject.set(x, "logPerformance", js.Any.fromFunction0(value))
     }

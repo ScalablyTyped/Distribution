@@ -65,7 +65,7 @@ object TextColumns {
     getColumnCount: () => Double,
     getColumns: () => SafeArray[TextColumn],
     getReferenceValue: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setColumnCount: Double => Unit,
     setColumns: SeqEquiv[TextColumn] => Unit

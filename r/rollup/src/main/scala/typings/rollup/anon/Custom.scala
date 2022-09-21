@@ -9,6 +9,8 @@ trait Custom extends StObject {
   
   var custom: js.UndefOr[CustomPluginOptions] = js.undefined
   
+  var isEntry: js.UndefOr[Boolean] = js.undefined
+  
   var skipSelf: js.UndefOr[Boolean] = js.undefined
 }
 object Custom {
@@ -23,6 +25,10 @@ object Custom {
     inline def setCustom(value: CustomPluginOptions): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setIsEntry(value: Boolean): Self = StObject.set(x, "isEntry", value.asInstanceOf[js.Any])
+    
+    inline def setIsEntryUndefined: Self = StObject.set(x, "isEntry", js.undefined)
     
     inline def setSkipSelf(value: Boolean): Self = StObject.set(x, "skipSelf", value.asInstanceOf[js.Any])
     

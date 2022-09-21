@@ -19,6 +19,6 @@ object Files {
     
     inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
   }
 }

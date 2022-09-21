@@ -1,6 +1,6 @@
 package typings.nodegit
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodegit.certMod.Cert
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object certX509Mod {
   
   @JSImport("nodegit/cert-x509", "CertX509")
   @js.native
-  class CertX509 () extends StObject {
+  open class CertX509 () extends StObject {
     
     var data: Buffer = js.native
     

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.CalloutFormat")
 @js.native
-/* private */ class CalloutFormat ()
+/* private */ open class CalloutFormat ()
   extends StObject
      with typings.activexWord.Word.CalloutFormat {
   
@@ -57,7 +57,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Length: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def PresetDrop(DropType: MsoCalloutDropType): Unit = js.native

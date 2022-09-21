@@ -14,7 +14,7 @@ trait ResourceGroupExportResult extends StObject {
   /**
     * The template content.
     */
-  var template: js.UndefOr[js.Any] = js.undefined
+  var template: js.UndefOr[Any] = js.undefined
 }
 object ResourceGroupExportResult {
   
@@ -29,7 +29,7 @@ object ResourceGroupExportResult {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }

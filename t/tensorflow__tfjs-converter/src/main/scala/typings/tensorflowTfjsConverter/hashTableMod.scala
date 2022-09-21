@@ -11,7 +11,7 @@ object hashTableMod {
   
   @JSImport("@tensorflow/tfjs-converter/dist/executor/hash_table", "HashTable")
   @js.native
-  class HashTable protected () extends StObject {
+  open class HashTable protected () extends StObject {
     /**
       * Constructor of HashTable. Creates a hash table.
       *
@@ -20,7 +20,7 @@ object hashTableMod {
       */
     def this(keyDType: DataType, valueDType: DataType) = this()
     
-    /* private */ var checkKeyAndValueTensor: js.Any = js.native
+    /* private */ var checkKeyAndValueTensor: Any = js.native
     
     /**
       * Dispose the tensors and handle and clear the hashtable.
@@ -44,7 +44,7 @@ object hashTableMod {
       */
     def find(keys: Tensor[Rank], defaultValue: Tensor[Rank]): js.Promise[Tensor[Rank]] = js.native
     
-    /* private */ var findWithDefault: js.Any = js.native
+    /* private */ var findWithDefault: Any = js.native
     
     val handle: Tensor[Rank] = js.native
     
@@ -64,7 +64,12 @@ object hashTableMod {
       */
     def size(): Double = js.native
     
-    /* private */ var tensorMap: js.Any = js.native
+    /* private */ var tensorMap: Any = js.native
+    
+    /**
+      * The number of items in the hash table as a rank-0 tensor.
+      */
+    def tensorSize(): Tensor[Rank] = js.native
     
     val valueDType: DataType = js.native
   }

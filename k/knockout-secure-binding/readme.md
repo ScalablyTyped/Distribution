@@ -9,10 +9,10 @@ Knockout Secure Binding =======================
 | ------------------ | :-------------: |
 | Full name          | knockout-secure-binding |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1977 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 158.0 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/brianmhunt/knockout-secure-binding)

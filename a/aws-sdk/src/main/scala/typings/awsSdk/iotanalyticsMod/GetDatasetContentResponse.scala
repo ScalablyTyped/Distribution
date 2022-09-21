@@ -12,14 +12,14 @@ trait GetDatasetContentResponse extends StObject {
   var entries: js.UndefOr[DatasetEntries] = js.undefined
   
   /**
-    * The status of the data set content.
+    * The status of the dataset content.
     */
   var status: js.UndefOr[DatasetContentStatus] = js.undefined
   
   /**
     * The time when the request was made.
     */
-  var timestamp: js.UndefOr[Timestamp] = js.undefined
+  var timestamp: js.UndefOr[js.Date] = js.undefined
 }
 object GetDatasetContentResponse {
   
@@ -34,13 +34,13 @@ object GetDatasetContentResponse {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    inline def setEntriesVarargs(value: DatasetEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: DatasetEntry*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setStatus(value: DatasetContentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }

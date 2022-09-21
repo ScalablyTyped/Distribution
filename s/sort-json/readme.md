@@ -10,10 +10,10 @@ Takes a json-file and return a copy of the same file, but sorted
 | ------------------ | :-------------: |
 | Full name          | sort-json |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 3401730 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 548360.6666666666 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](https://github.com/kesla/sort-json)

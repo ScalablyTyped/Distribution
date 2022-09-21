@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_driveactivity
 
-Typings are for version 2.0.20201118
+Typings are for version 2.0.20220810
 
 ## Library description:
 TypeScript typings for Drive Activity API v2
@@ -10,10 +10,10 @@ TypeScript typings for Drive Activity API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.driveactivity |
 | Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 1 |
-| # downloads        | 2446 |
-| # stars            | 0 |
+| # releases         | 157 |
+| # dependents       | 0.0 |
+| # downloads        | 1485.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

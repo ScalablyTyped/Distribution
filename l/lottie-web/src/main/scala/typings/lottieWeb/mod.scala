@@ -1,9 +1,7 @@
 package typings.lottieWeb
 
 import org.scalablytyped.runtime.Shortcut
-import typings.lottieWeb.lottieWebStrings.canvas
-import typings.lottieWeb.lottieWebStrings.html
-import typings.lottieWeb.lottieWebStrings.svg
+import typings.lottieWeb.anon.Play
 import typings.std.CanvasRenderingContext2D
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -16,9 +14,11 @@ object mod extends Shortcut {
   @js.native
   val default: LottiePlayer = js.native
   
-  trait AnimationConfig extends StObject {
+  trait AnimationConfig[T /* <: RendererType */] extends StObject {
     
     var assetsPath: js.UndefOr[String] = js.undefined
+    
+    var audioFactory: js.UndefOr[js.Function1[/* assetPath */ String, Play]] = js.undefined
     
     var autoplay: js.UndefOr[Boolean] = js.undefined
     
@@ -30,22 +30,28 @@ object mod extends Shortcut {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var renderer: js.UndefOr[svg | canvas | html] = js.undefined
+    var renderer: js.UndefOr[T] = js.undefined
     
-    var rendererSettings: js.UndefOr[SVGRendererConfig | CanvasRendererConfig | HTMLRendererConfig] = js.undefined
+    var rendererSettings: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: lottie-web.anon.Canvas[T] */ js.Any
+      ] = js.undefined
   }
   object AnimationConfig {
     
-    inline def apply(container: Element): AnimationConfig = {
+    inline def apply[T /* <: RendererType */](container: Element): AnimationConfig[T] = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AnimationConfig]
+      __obj.asInstanceOf[AnimationConfig[T]]
     }
     
-    extension [Self <: AnimationConfig](x: Self) {
+    extension [Self <: AnimationConfig[?], T /* <: RendererType */](x: Self & AnimationConfig[T]) {
       
       inline def setAssetsPath(value: String): Self = StObject.set(x, "assetsPath", value.asInstanceOf[js.Any])
       
       inline def setAssetsPathUndefined: Self = StObject.set(x, "assetsPath", js.undefined)
+      
+      inline def setAudioFactory(value: /* assetPath */ String => Play): Self = StObject.set(x, "audioFactory", js.Any.fromFunction1(value))
+      
+      inline def setAudioFactoryUndefined: Self = StObject.set(x, "audioFactory", js.undefined)
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
@@ -65,9 +71,11 @@ object mod extends Shortcut {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setRenderer(value: svg | canvas | html): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+      inline def setRenderer(value: T): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
       
-      inline def setRendererSettings(value: SVGRendererConfig | CanvasRendererConfig | HTMLRendererConfig): Self = StObject.set(x, "rendererSettings", value.asInstanceOf[js.Any])
+      inline def setRendererSettings(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: lottie-web.anon.Canvas[T] */ js.Any
+      ): Self = StObject.set(x, "rendererSettings", value.asInstanceOf[js.Any])
       
       inline def setRendererSettingsUndefined: Self = StObject.set(x, "rendererSettings", js.undefined)
       
@@ -75,41 +83,41 @@ object mod extends Shortcut {
     }
   }
   
-  trait AnimationConfigWithData
+  trait AnimationConfigWithData[T /* <: RendererType */]
     extends StObject
-       with AnimationConfig {
+       with AnimationConfig[T] {
     
-    var animationData: js.UndefOr[js.Any] = js.undefined
+    var animationData: js.UndefOr[Any] = js.undefined
   }
   object AnimationConfigWithData {
     
-    inline def apply(container: Element): AnimationConfigWithData = {
+    inline def apply[T /* <: RendererType */](container: Element): AnimationConfigWithData[T] = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AnimationConfigWithData]
+      __obj.asInstanceOf[AnimationConfigWithData[T]]
     }
     
-    extension [Self <: AnimationConfigWithData](x: Self) {
+    extension [Self <: AnimationConfigWithData[?], T /* <: RendererType */](x: Self & AnimationConfigWithData[T]) {
       
-      inline def setAnimationData(value: js.Any): Self = StObject.set(x, "animationData", value.asInstanceOf[js.Any])
+      inline def setAnimationData(value: Any): Self = StObject.set(x, "animationData", value.asInstanceOf[js.Any])
       
       inline def setAnimationDataUndefined: Self = StObject.set(x, "animationData", js.undefined)
     }
   }
   
-  trait AnimationConfigWithPath
+  trait AnimationConfigWithPath[T /* <: RendererType */]
     extends StObject
-       with AnimationConfig {
+       with AnimationConfig[T] {
     
     var path: js.UndefOr[String] = js.undefined
   }
   object AnimationConfigWithPath {
     
-    inline def apply(container: Element): AnimationConfigWithPath = {
+    inline def apply[T /* <: RendererType */](container: Element): AnimationConfigWithPath[T] = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AnimationConfigWithPath]
+      __obj.asInstanceOf[AnimationConfigWithPath[T]]
     }
     
-    extension [Self <: AnimationConfigWithPath](x: Self) {
+    extension [Self <: AnimationConfigWithPath[?], T /* <: RendererType */](x: Self & AnimationConfigWithPath[T]) {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -197,11 +205,19 @@ object mod extends Shortcut {
     def getDuration(): Double = js.native
     def getDuration(inFrames: Boolean): Double = js.native
     
+    def goToAndPlay(value: String): Unit = js.native
+    def goToAndPlay(value: String, isFrame: Boolean): Unit = js.native
+    def goToAndPlay(value: String, isFrame: Boolean, name: String): Unit = js.native
+    def goToAndPlay(value: String, isFrame: Unit, name: String): Unit = js.native
     def goToAndPlay(value: Double): Unit = js.native
     def goToAndPlay(value: Double, isFrame: Boolean): Unit = js.native
     def goToAndPlay(value: Double, isFrame: Boolean, name: String): Unit = js.native
     def goToAndPlay(value: Double, isFrame: Unit, name: String): Unit = js.native
     
+    def goToAndStop(value: String): Unit = js.native
+    def goToAndStop(value: String, isFrame: Boolean): Unit = js.native
+    def goToAndStop(value: String, isFrame: Boolean, name: String): Unit = js.native
+    def goToAndStop(value: String, isFrame: Unit, name: String): Unit = js.native
     def goToAndStop(value: Double): Unit = js.native
     def goToAndStop(value: Double, isFrame: Boolean): Unit = js.native
     def goToAndStop(value: Double, isFrame: Boolean, name: String): Unit = js.native
@@ -209,7 +225,7 @@ object mod extends Shortcut {
     
     def hide(): Unit = js.native
     
-    def includeLayers(data: js.Any): Unit = js.native
+    def includeLayers(data: Any): Unit = js.native
     
     var isLoaded: Boolean = js.native
     
@@ -217,7 +233,7 @@ object mod extends Shortcut {
     
     var isSubframeEnabled: Boolean = js.native
     
-    var loop: Boolean = js.native
+    var loop: Boolean | Double = js.native
     
     var name: String = js.native
     
@@ -241,7 +257,7 @@ object mod extends Shortcut {
     def removeEventListener[T](name: AnimationEventName): Unit = js.native
     def removeEventListener[T](name: AnimationEventName, callback: AnimationEventCallback[T]): Unit = js.native
     
-    var renderer: js.Any = js.native
+    var renderer: Any = js.native
     
     def resetSegments(forceFlag: Boolean): Unit = js.native
     
@@ -396,8 +412,8 @@ object mod extends Shortcut {
     def destroy(): Unit = js.native
     def destroy(name: String): Unit = js.native
     
-    def loadAnimation(params: AnimationConfigWithData): AnimationItem = js.native
-    def loadAnimation(params: AnimationConfigWithPath): AnimationItem = js.native
+    def loadAnimation[T /* <: RendererType */](params: AnimationConfigWithData[T]): AnimationItem = js.native
+    def loadAnimation[T /* <: RendererType */](params: AnimationConfigWithPath[T]): AnimationItem = js.native
     
     def pause(): Unit = js.native
     def pause(name: String): Unit = js.native
@@ -406,19 +422,21 @@ object mod extends Shortcut {
     def play(name: String): Unit = js.native
     
     def registerAnimation(element: Element): Unit = js.native
-    def registerAnimation(element: Element, animationData: js.Any): Unit = js.native
+    def registerAnimation(element: Element, animationData: Any): Unit = js.native
     
     def searchAnimations(): Unit = js.native
-    def searchAnimations(animationData: js.Any): Unit = js.native
-    def searchAnimations(animationData: js.Any, standalone: Boolean): Unit = js.native
-    def searchAnimations(animationData: js.Any, standalone: Boolean, renderer: String): Unit = js.native
-    def searchAnimations(animationData: js.Any, standalone: Unit, renderer: String): Unit = js.native
+    def searchAnimations(animationData: Any): Unit = js.native
+    def searchAnimations(animationData: Any, standalone: Boolean): Unit = js.native
+    def searchAnimations(animationData: Any, standalone: Boolean, renderer: String): Unit = js.native
+    def searchAnimations(animationData: Any, standalone: Unit, renderer: String): Unit = js.native
     def searchAnimations(animationData: Unit, standalone: Boolean): Unit = js.native
     def searchAnimations(animationData: Unit, standalone: Boolean, renderer: String): Unit = js.native
     def searchAnimations(animationData: Unit, standalone: Unit, renderer: String): Unit = js.native
     
     def setDirection(direction: AnimationDirection): Unit = js.native
     def setDirection(direction: AnimationDirection, name: String): Unit = js.native
+    
+    def setIDPrefix(prefix: String): Unit = js.native
     
     def setLocationHref(href: String): Unit = js.native
     
@@ -430,6 +448,23 @@ object mod extends Shortcut {
     
     def stop(): Unit = js.native
     def stop(name: String): Unit = js.native
+    
+    def updateDocumentData(path: js.Array[String | Double], documentData: TextDocumentData, index: Double): Unit = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.lottieWeb.lottieWebStrings.svg
+    - typings.lottieWeb.lottieWebStrings.canvas
+    - typings.lottieWeb.lottieWebStrings.html
+  */
+  trait RendererType extends StObject
+  object RendererType {
+    
+    inline def canvas: typings.lottieWeb.lottieWebStrings.canvas = "canvas".asInstanceOf[typings.lottieWeb.lottieWebStrings.canvas]
+    
+    inline def html: typings.lottieWeb.lottieWebStrings.html = "html".asInstanceOf[typings.lottieWeb.lottieWebStrings.html]
+    
+    inline def svg: typings.lottieWeb.lottieWebStrings.svg = "svg".asInstanceOf[typings.lottieWeb.lottieWebStrings.svg]
   }
   
   trait SVGRendererConfig
@@ -498,6 +533,73 @@ object mod extends Shortcut {
       inline def setViewBoxSize(value: String): Self = StObject.set(x, "viewBoxSize", value.asInstanceOf[js.Any])
       
       inline def setViewBoxSizeUndefined: Self = StObject.set(x, "viewBoxSize", js.undefined)
+    }
+  }
+  
+  trait TextDocumentData extends StObject {
+    
+    var ca: js.UndefOr[Double] = js.undefined
+    
+    var f: js.UndefOr[String] = js.undefined
+    
+    var fc: js.UndefOr[js.Tuple3[Double, Double, Double]] = js.undefined
+    
+    var j: js.UndefOr[Double] = js.undefined
+    
+    var lh: js.UndefOr[Double] = js.undefined
+    
+    var ls: js.UndefOr[Double] = js.undefined
+    
+    var s: js.UndefOr[Double] = js.undefined
+    
+    var t: js.UndefOr[String] = js.undefined
+    
+    var tr: js.UndefOr[Double] = js.undefined
+  }
+  object TextDocumentData {
+    
+    inline def apply(): TextDocumentData = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TextDocumentData]
+    }
+    
+    extension [Self <: TextDocumentData](x: Self) {
+      
+      inline def setCa(value: Double): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      
+      inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
+      
+      inline def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+      
+      inline def setFUndefined: Self = StObject.set(x, "f", js.undefined)
+      
+      inline def setFc(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "fc", value.asInstanceOf[js.Any])
+      
+      inline def setFcUndefined: Self = StObject.set(x, "fc", js.undefined)
+      
+      inline def setJ(value: Double): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
+      
+      inline def setJUndefined: Self = StObject.set(x, "j", js.undefined)
+      
+      inline def setLh(value: Double): Self = StObject.set(x, "lh", value.asInstanceOf[js.Any])
+      
+      inline def setLhUndefined: Self = StObject.set(x, "lh", js.undefined)
+      
+      inline def setLs(value: Double): Self = StObject.set(x, "ls", value.asInstanceOf[js.Any])
+      
+      inline def setLsUndefined: Self = StObject.set(x, "ls", js.undefined)
+      
+      inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      
+      inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+      
+      inline def setT(value: String): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      
+      inline def setTUndefined: Self = StObject.set(x, "t", js.undefined)
+      
+      inline def setTr(value: Double): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+      
+      inline def setTrUndefined: Self = StObject.set(x, "tr", js.undefined)
     }
   }
   

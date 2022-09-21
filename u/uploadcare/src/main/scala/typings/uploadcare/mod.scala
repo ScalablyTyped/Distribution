@@ -129,7 +129,7 @@ object mod {
       
       inline def setDpi(value: js.Array[Double]): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
       
-      inline def setDpiVarargs(value: Double*): Self = StObject.set(x, "dpi", js.Array(value :_*))
+      inline def setDpiVarargs(value: Double*): Self = StObject.set(x, "dpi", js.Array(value*))
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

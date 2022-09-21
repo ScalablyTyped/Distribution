@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.tfvcInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ trait TfvcChangesetRef extends StObject {
   /**
     * A collection of REST reference links.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Alias or display name of user
@@ -41,7 +40,7 @@ trait TfvcChangesetRef extends StObject {
   /**
     * Creation date of the changeset.
     */
-  var createdDate: Date
+  var createdDate: js.Date
   
   /**
     * URL to retrieve the item.
@@ -51,13 +50,13 @@ trait TfvcChangesetRef extends StObject {
 object TfvcChangesetRef {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     author: IdentityRef,
     changesetId: Double,
     checkedInBy: IdentityRef,
     comment: String,
     commentTruncated: Boolean,
-    createdDate: Date,
+    createdDate: js.Date,
     url: String
   ): TfvcChangesetRef = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], changesetId = changesetId.asInstanceOf[js.Any], checkedInBy = checkedInBy.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], commentTruncated = commentTruncated.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
@@ -76,10 +75,10 @@ object TfvcChangesetRef {
     
     inline def setCommentTruncated(value: Boolean): Self = StObject.set(x, "commentTruncated", value.asInstanceOf[js.Any])
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

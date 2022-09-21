@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RoutingStrategy extends StObject {
   
   /**
-    * The unique identifier for a fleet that the alias points to. This value is the fleet ID, not the fleet ARN.
+    * A unique identifier for the fleet that the alias points to. This value is the fleet ID, not the fleet ARN.
     */
   var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
   

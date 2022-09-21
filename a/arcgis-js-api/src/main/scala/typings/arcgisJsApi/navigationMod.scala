@@ -17,7 +17,12 @@ object navigationMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/views/navigation/Navigation", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Navigation related configuration settings on the View.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html)
+    */
+  open class Class ()
     extends StObject
        with Navigation {
     def this(properties: NavigationProperties) = this()

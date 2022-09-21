@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.PivotGrid")
 @js.native
-class PivotGrid protected ()
+open class PivotGrid protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.PivotGrid {
   def this(element: Element) = this()

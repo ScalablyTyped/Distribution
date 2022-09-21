@@ -1,19 +1,19 @@
 
 # Scala.js typings for parse-entities
 
-Typings are for version 2.0.0
+Typings are for version 4.0.0
 
 ## Library description:
-Parse HTML character references: fast, spec-compliant, positional information
+Parse HTML character references
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | parse-entities |
 | Keywords           | parse, html, character, reference, entity, entities |
 | # releases         | 4 |
-| # dependents       | 26 |
-| # downloads        | 227021777 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3.3333581333333332E7 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/parse-entities#readme)

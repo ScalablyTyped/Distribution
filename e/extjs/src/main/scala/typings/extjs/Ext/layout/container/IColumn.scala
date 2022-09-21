@@ -16,7 +16,7 @@ trait IColumn
     */
   @JSName("getItemSizePolicy")
   var getItemSizePolicy_IColumn: js.UndefOr[
-    js.Function2[/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any], ISizePolicy]
+    js.Function2[/* item */ js.UndefOr[Any], /* ownerSizeModel */ js.UndefOr[Any], ISizePolicy]
   ] = js.undefined
   
   /** [Method] This method sets the height and or width of the outerCt innerCt to adjust for the following browser specific issues
@@ -25,7 +25,7 @@ trait IColumn
     */
   @JSName("setCtSizeIfNeeded")
   var setCtSizeIfNeeded_IColumn: js.UndefOr[
-    js.Function2[/* ownerContext */ js.UndefOr[js.Any], /* containerSize */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* ownerContext */ js.UndefOr[Any], /* containerSize */ js.UndefOr[Any], Unit]
   ] = js.undefined
 }
 object IColumn {
@@ -37,11 +37,11 @@ object IColumn {
   
   extension [Self <: IColumn](x: Self) {
     
-    inline def setGetItemSizePolicy(value: (/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any]) => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction2(value))
+    inline def setGetItemSizePolicy(value: (/* item */ js.UndefOr[Any], /* ownerSizeModel */ js.UndefOr[Any]) => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction2(value))
     
     inline def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
     
-    inline def setSetCtSizeIfNeeded(value: (/* ownerContext */ js.UndefOr[js.Any], /* containerSize */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setCtSizeIfNeeded", js.Any.fromFunction2(value))
+    inline def setSetCtSizeIfNeeded(value: (/* ownerContext */ js.UndefOr[Any], /* containerSize */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setCtSizeIfNeeded", js.Any.fromFunction2(value))
     
     inline def setSetCtSizeIfNeededUndefined: Self = StObject.set(x, "setCtSizeIfNeeded", js.undefined)
   }

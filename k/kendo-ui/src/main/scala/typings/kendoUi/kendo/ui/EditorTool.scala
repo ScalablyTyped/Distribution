@@ -14,7 +14,7 @@ trait EditorTool extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var palette: js.UndefOr[String | js.Any] = js.undefined
+  var palette: js.UndefOr[String | Any] = js.undefined
   
   var template: js.UndefOr[String] = js.undefined
   
@@ -41,13 +41,13 @@ object EditorTool {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: EditorToolItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: EditorToolItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setPalette(value: String | js.Any): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: String | Any): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
     inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     

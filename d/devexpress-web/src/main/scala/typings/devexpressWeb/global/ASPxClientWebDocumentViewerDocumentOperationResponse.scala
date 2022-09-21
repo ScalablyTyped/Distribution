@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxClientWebDocumentViewerDocumentOperationResponse")
 @js.native
-class ASPxClientWebDocumentViewerDocumentOperationResponse ()
+open class ASPxClientWebDocumentViewerDocumentOperationResponse ()
   extends StObject
      with typings.devexpressWeb.ASPxClientWebDocumentViewerDocumentOperationResponse {
   

@@ -9,7 +9,7 @@ object dragZoomMod {
   
   @JSImport("ol/interaction/DragZoom", JSImport.Default)
   @js.native
-  class default () extends DragZoom {
+  open class default () extends DragZoom {
     def this(opt_options: Options) = this()
   }
   

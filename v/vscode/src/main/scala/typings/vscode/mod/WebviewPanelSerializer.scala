@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * There are two types of webview persistence:
   *
   * - Persistence within a session.
-  * - Persistence across sessions (across restarts of VS Code).
+  * - Persistence across sessions (across restarts of the editor).
   *
   * A `WebviewPanelSerializer` is only required for the second case: persisting a webview across sessions.
   *
@@ -31,8 +31,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * setState({ value: oldState.value + 1 })
   * ```
   *
-  * A `WebviewPanelSerializer` extends this persistence across restarts of VS Code. When the editor is shutdown,
-  * VS Code will save off the state from `setState` of all webviews that have a serializer. When the
+  * A `WebviewPanelSerializer` extends this persistence across restarts of the editor. When the editor is shutdown,
+  * it will save off the state from `setState` of all webviews that have a serializer. When the
   * webview first becomes visible after the restart, this state is passed to `deserializeWebviewPanel`.
   * The extension can then restore the old `WebviewPanel` from this state.
   *

@@ -5,36 +5,39 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents ink analysis data for an identified text line formed by ink strokes.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 trait InkAnalysisLineLoadOptions extends StObject {
   
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the ID of the InkAnalysisLine object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Reference to the parent InkAnalysisParagraph.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var paragraph: js.UndefOr[InkAnalysisParagraphLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the ink analysis words in this ink analysis line.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var words: js.UndefOr[InkAnalysisWordCollectionLoadOptions] = js.undefined

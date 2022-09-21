@@ -12,7 +12,7 @@ object walkContextMod {
   
   @JSImport("tslint/lib/language/walker/walkContext", "WalkContext")
   @js.native
-  class WalkContext[T] protected () extends StObject {
+  open class WalkContext[T] protected () extends StObject {
     def this(sourceFile: SourceFile, ruleName: String, options: T) = this()
     
     def addFailure(start: Double, end: Double, failure: String): Unit = js.native

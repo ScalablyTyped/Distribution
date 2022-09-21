@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.RfcommConnectionTrigger")
 @js.native
 /** Initializes a new instance of the RfcommConnectionTrigger class. */
-class RfcommConnectionTrigger ()
+open class RfcommConnectionTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.RfcommConnectionTrigger {
   

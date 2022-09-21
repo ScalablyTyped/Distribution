@@ -38,7 +38,7 @@ object tableTooltipMod {
       
       inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      inline def setRowsVarargs(value: js.Array[ReactNode]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Array[ReactNode]*): Self = StObject.set(x, "rows", js.Array(value*))
       
       inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

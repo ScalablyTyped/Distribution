@@ -4,16 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Options for object properties.
-  */
 trait SchemaObjectPropertyOptions extends StObject {
   
   /**
-    * The properties of the sub-object. These properties represent a nested
-    * object. For example, if this property represents a postal address, the
-    * subobjectProperties might be named *street*, *city*, and *state*. The
-    * maximum number of elements is 1000.
+    * The properties of the sub-object. These properties represent a nested object. For example, if this property represents a postal address, the subobjectProperties might be named *street*, *city*, and *state*. The maximum number of elements is 1000.
     */
   var subobjectProperties: js.UndefOr[js.Array[SchemaPropertyDefinition]] = js.undefined
 }
@@ -30,6 +24,6 @@ object SchemaObjectPropertyOptions {
     
     inline def setSubobjectPropertiesUndefined: Self = StObject.set(x, "subobjectProperties", js.undefined)
     
-    inline def setSubobjectPropertiesVarargs(value: SchemaPropertyDefinition*): Self = StObject.set(x, "subobjectProperties", js.Array(value :_*))
+    inline def setSubobjectPropertiesVarargs(value: SchemaPropertyDefinition*): Self = StObject.set(x, "subobjectProperties", js.Array(value*))
   }
 }

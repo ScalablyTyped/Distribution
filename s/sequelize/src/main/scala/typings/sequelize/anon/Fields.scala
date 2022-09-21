@@ -1,6 +1,5 @@
 package typings.sequelize.anon
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait Fields extends StObject {
   
   var message: js.UndefOr[String] = js.undefined
   
-  var parent: js.UndefOr[Error] = js.undefined
+  var parent: js.UndefOr[js.Error] = js.undefined
   
   var table: js.UndefOr[String] = js.undefined
 }
@@ -30,7 +29,7 @@ object Fields {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
@@ -40,7 +39,7 @@ object Fields {
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    inline def setParent(value: Error): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Error): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     

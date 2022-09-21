@@ -1,7 +1,7 @@
 
 # Scala.js typings for branca
 
-Typings are for version 0.3
+Typings are for version 0.4
 
 ## Library description:
 Authenticated and encrypted API tokens using modern crypto
@@ -10,10 +10,10 @@ Authenticated and encrypted API tokens using modern crypto
 | ------------------ | :-------------: |
 | Full name          | branca |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 9151 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3025.6666666666665 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/tuupola/branca-js)

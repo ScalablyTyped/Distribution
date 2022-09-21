@@ -2,7 +2,6 @@ package typings.googleScriptClientSide
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,22 +11,25 @@ object google {
   
   object script {
     
-    type Parameter = js.UndefOr[
-        Double | Boolean | String | (NumberDictionary[
-          /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias google.script.client-side.google.script.Parameter */ js.Object
-        ]) | (StringDictionary[
-          /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias google.script.client-side.google.script.Parameter */ js.Object
-        ]) | Null
-      ]
+    type Parameter = js.UndefOr[Double | Boolean | String | NumberDictionary[Any] | StringDictionary[Any] | Null]
     
-    trait Runner
+    trait PublicEndpoints
       extends StObject
          with /**
       * Executes the server-side Apps Script function with the corresponding name.
       */
     /* functionName */ StringDictionary[
               js.Function2[/* first */ js.UndefOr[Parameter | HTMLFormElement], /* repeated */ Parameter, Unit]
-            ] {
+            ]
+    object PublicEndpoints {
+      
+      inline def apply(): PublicEndpoints = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[PublicEndpoints]
+      }
+    }
+    
+    trait RunnerFunctions extends StObject {
       
       /**
         * Sets a callback function to run if the server-side function throws an exception.
@@ -36,14 +38,14 @@ object google {
         * @param handler a client-side callback function to run if the server-side function throws an exception;
         * the Error object is passed to the function as the first argument, and the user object (if any) is passed as a second argument
         */
-      def withFailureHandler(handler: js.Function2[/* error */ Error, /* object */ js.UndefOr[js.Any], Unit]): Runner
+      def withFailureHandler(handler: js.Function2[/* error */ js.Error, /* object */ js.UndefOr[Any], Unit]): RunnerFunctions & PublicEndpoints
       
       /**
         * Sets a callback function to run if the server-side function returns successfully.
         * @param handler a client-side callback function to run if the server-side function returns successfully;
         * the server's return value is passed to the function as the first argument, and the user object (if any) is passed as a second argument
         */
-      def withSuccessHandler(handler: js.Function2[/* value */ js.UndefOr[js.Any], /* object */ js.UndefOr[js.Any], Unit]): Runner
+      def withSuccessHandler(handler: js.Function2[/* value */ js.UndefOr[Any], /* object */ js.UndefOr[Any], Unit]): RunnerFunctions & PublicEndpoints
       
       /**
         * Sets an object to pass as a second parameter to the success and failure handlers.
@@ -51,28 +53,30 @@ object google {
         * because user objects are not sent to the server, they are not subject to the restrictions on parameters and return values for server calls.
         * User objects cannot, however, be objects constructed with the new operator
         */
-      def withUserObject(`object`: js.Any): Runner
+      def withUserObject(`object`: Any): RunnerFunctions & PublicEndpoints
     }
-    object Runner {
+    object RunnerFunctions {
       
       inline def apply(
-        withFailureHandler: js.Function2[/* error */ Error, /* object */ js.UndefOr[js.Any], Unit] => Runner,
-        withSuccessHandler: js.Function2[/* value */ js.UndefOr[js.Any], /* object */ js.UndefOr[js.Any], Unit] => Runner,
-        withUserObject: js.Any => Runner
-      ): Runner = {
+        withFailureHandler: js.Function2[/* error */ js.Error, /* object */ js.UndefOr[Any], Unit] => RunnerFunctions & PublicEndpoints,
+        withSuccessHandler: js.Function2[/* value */ js.UndefOr[Any], /* object */ js.UndefOr[Any], Unit] => RunnerFunctions & PublicEndpoints,
+        withUserObject: Any => RunnerFunctions & PublicEndpoints
+      ): RunnerFunctions = {
         val __obj = js.Dynamic.literal(withFailureHandler = js.Any.fromFunction1(withFailureHandler), withSuccessHandler = js.Any.fromFunction1(withSuccessHandler), withUserObject = js.Any.fromFunction1(withUserObject))
-        __obj.asInstanceOf[Runner]
+        __obj.asInstanceOf[RunnerFunctions]
       }
       
-      extension [Self <: Runner](x: Self) {
+      extension [Self <: RunnerFunctions](x: Self) {
         
-        inline def setWithFailureHandler(value: js.Function2[/* error */ Error, /* object */ js.UndefOr[js.Any], Unit] => Runner): Self = StObject.set(x, "withFailureHandler", js.Any.fromFunction1(value))
+        inline def setWithFailureHandler(
+          value: js.Function2[/* error */ js.Error, /* object */ js.UndefOr[Any], Unit] => RunnerFunctions & PublicEndpoints
+        ): Self = StObject.set(x, "withFailureHandler", js.Any.fromFunction1(value))
         
         inline def setWithSuccessHandler(
-          value: js.Function2[/* value */ js.UndefOr[js.Any], /* object */ js.UndefOr[js.Any], Unit] => Runner
+          value: js.Function2[/* value */ js.UndefOr[Any], /* object */ js.UndefOr[Any], Unit] => RunnerFunctions & PublicEndpoints
         ): Self = StObject.set(x, "withSuccessHandler", js.Any.fromFunction1(value))
         
-        inline def setWithUserObject(value: js.Any => Runner): Self = StObject.set(x, "withUserObject", js.Any.fromFunction1(value))
+        inline def setWithUserObject(value: Any => RunnerFunctions & PublicEndpoints): Self = StObject.set(x, "withUserObject", js.Any.fromFunction1(value))
       }
     }
     

@@ -11,9 +11,9 @@ Event handler management, and parameterized property setters, for ActiveX object
 | Full name          | activex-helpers |
 | Keywords           | activex, events |
 | # releases         | 2 |
-| # dependents       | 21 |
-| # downloads        | 14179 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1011.6666666666666 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/zspitz/activex-js-helpers#readme)

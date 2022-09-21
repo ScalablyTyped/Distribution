@@ -25,12 +25,12 @@ object CustomDns {
     
     inline def setDsRecordsUndefined: Self = StObject.set(x, "dsRecords", js.undefined)
     
-    inline def setDsRecordsVarargs(value: DsRecord*): Self = StObject.set(x, "dsRecords", js.Array(value :_*))
+    inline def setDsRecordsVarargs(value: DsRecord*): Self = StObject.set(x, "dsRecords", js.Array(value*))
     
     inline def setNameServers(value: js.Array[String]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
     
     inline def setNameServersUndefined: Self = StObject.set(x, "nameServers", js.undefined)
     
-    inline def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
+    inline def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value*))
   }
 }

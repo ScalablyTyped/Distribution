@@ -19,12 +19,17 @@ trait CertificateInfo extends StObject {
   /**
     * The date and time when the certificate will expire.
     */
-  var ExpiryDateTime: js.UndefOr[CertificateExpiryDateTime] = js.undefined
+  var ExpiryDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state of the certificate.
     */
   var State: js.UndefOr[CertificateState] = js.undefined
+  
+  /**
+    * The function that the registered certificate performs. Valid values include ClientLDAPS or ClientCertAuth. The default value is ClientLDAPS.
+    */
+  var Type: js.UndefOr[CertificateType] = js.undefined
 }
 object CertificateInfo {
   
@@ -43,12 +48,16 @@ object CertificateInfo {
     
     inline def setCommonNameUndefined: Self = StObject.set(x, "CommonName", js.undefined)
     
-    inline def setExpiryDateTime(value: CertificateExpiryDateTime): Self = StObject.set(x, "ExpiryDateTime", value.asInstanceOf[js.Any])
+    inline def setExpiryDateTime(value: js.Date): Self = StObject.set(x, "ExpiryDateTime", value.asInstanceOf[js.Any])
     
     inline def setExpiryDateTimeUndefined: Self = StObject.set(x, "ExpiryDateTime", js.undefined)
     
     inline def setState(value: CertificateState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    
+    inline def setType(value: CertificateType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

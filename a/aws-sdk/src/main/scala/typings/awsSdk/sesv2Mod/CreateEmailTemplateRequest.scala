@@ -12,7 +12,7 @@ trait CreateEmailTemplateRequest extends StObject {
   var TemplateContent: EmailTemplateContent
   
   /**
-    * The name of the template you want to create.
+    * The name of the template.
     */
   var TemplateName: EmailTemplateName
 }

@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class S3 () extends ^ {
+open class S3 () extends ^ {
   def this(options: ClientConfiguration) = this()
 }
 object S3 {
   
   @JSImport("aws-sdk/clients/browser_default", "S3.ManagedUpload")
   @js.native
-  class ManagedUpload protected ()
+  open class ManagedUpload protected ()
     extends typings.awsSdk.s3Mod.ManagedUpload {
     /**
       * Creates a managed upload object with a set of configuration options.
@@ -54,6 +54,6 @@ object S3 {
   
   @JSImport("aws-sdk/clients/browser_default", "S3.PresignedPost")
   @js.native
-  class PresignedPost ()
+  open class PresignedPost ()
     extends typings.awsSdk.s3Mod.PresignedPost
 }

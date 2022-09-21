@@ -1,13 +1,13 @@
 package typings.cassandraDriver.typesMod.types
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cassandra-driver/lib/types", "types.Duration")
 @js.native
-class Duration protected () extends StObject {
+open class Duration protected () extends StObject {
   def this(month: Double, days: Double, nanoseconds: Double) = this()
   def this(month: Double, days: Double, nanoseconds: Long) = this()
   

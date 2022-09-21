@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientTagmanager.anon
 
-import typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager.UserPermission
+import typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,13 +23,16 @@ trait UploadprotocolXgafv extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
+  /** When provided, this fingerprint must match the fingerprint of the container in storage. */
+  var fingerprint: js.UndefOr[String] = js.undefined
+  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** GTM UserPermission's API relative path. Example: accounts/{account_id}/user_permissions/{user_permission_id} */
+  /** GTM Container's API relative path. Example: accounts/{account_id}/containers/{container_id} */
   var path: String
   
   /** Returns response with indentations and line breaks. */
@@ -39,7 +42,7 @@ trait UploadprotocolXgafv extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: UserPermission
+  var resource: Container
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +52,7 @@ trait UploadprotocolXgafv extends StObject {
 }
 object UploadprotocolXgafv {
   
-  inline def apply(path: String, resource: UserPermission): UploadprotocolXgafv = {
+  inline def apply(path: String, resource: Container): UploadprotocolXgafv = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadprotocolXgafv]
   }
@@ -76,6 +79,10 @@ object UploadprotocolXgafv {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -94,7 +101,7 @@ object UploadprotocolXgafv {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: UserPermission): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Container): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ object videocamMod {
   
   @JSImport("material-ui/svg-icons/av/videocam", JSImport.Default)
   @js.native
-  class default () extends AvVideocam
+  open class default () extends AvVideocam
   
   @JSImport("material-ui/svg-icons/av/videocam", "AvVideocam")
   @js.native
-  class AvVideocam ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvVideocam ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

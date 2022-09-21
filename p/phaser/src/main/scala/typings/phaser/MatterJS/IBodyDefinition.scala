@@ -159,7 +159,7 @@ trait IBodyDefinition extends StObject {
     * @property gameObject
     * @type Phaser.GameObjects.GameObject
     */
-  var gameObject: js.UndefOr[js.Any] = js.undefined
+  var gameObject: js.UndefOr[Any] = js.undefined
   
   /**
     * Scale the influence of World gravity when applied to this body.
@@ -314,7 +314,7 @@ trait IBodyDefinition extends StObject {
     * @type object
     * @default null
     */
-  var onCollideWith: js.UndefOr[js.Any] = js.undefined
+  var onCollideWith: js.UndefOr[Any] = js.undefined
   
   /**
     * A self reference if the body is _not_ a part of another body.
@@ -483,7 +483,7 @@ object IBodyDefinition {
     
     inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
-    inline def setAxesVarargs(value: Vector*): Self = StObject.set(x, "axes", js.Array(value :_*))
+    inline def setAxesVarargs(value: Vector*): Self = StObject.set(x, "axes", js.Array(value*))
     
     inline def setBounds(value: IBound): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
@@ -513,7 +513,7 @@ object IBodyDefinition {
     
     inline def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
     
-    inline def setGameObject(value: js.Any): Self = StObject.set(x, "gameObject", value.asInstanceOf[js.Any])
+    inline def setGameObject(value: Any): Self = StObject.set(x, "gameObject", value.asInstanceOf[js.Any])
     
     inline def setGameObjectUndefined: Self = StObject.set(x, "gameObject", js.undefined)
     
@@ -577,7 +577,7 @@ object IBodyDefinition {
     
     inline def setOnCollideEndCallbackUndefined: Self = StObject.set(x, "onCollideEndCallback", js.undefined)
     
-    inline def setOnCollideWith(value: js.Any): Self = StObject.set(x, "onCollideWith", value.asInstanceOf[js.Any])
+    inline def setOnCollideWith(value: Any): Self = StObject.set(x, "onCollideWith", value.asInstanceOf[js.Any])
     
     inline def setOnCollideWithUndefined: Self = StObject.set(x, "onCollideWith", js.undefined)
     
@@ -589,7 +589,7 @@ object IBodyDefinition {
     
     inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
     
-    inline def setPartsVarargs(value: BodyType*): Self = StObject.set(x, "parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: BodyType*): Self = StObject.set(x, "parts", js.Array(value*))
     
     inline def setPosition(value: Vector): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
@@ -635,6 +635,6 @@ object IBodyDefinition {
     
     inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
     
-    inline def setVerticesVarargs(value: Vector*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: Vector*): Self = StObject.set(x, "vertices", js.Array(value*))
   }
 }

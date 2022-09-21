@@ -12,7 +12,8 @@ object headersEs5MinMod {
   /* was `typeof Headers` */
   @JSImport("fetch-headers/headers-es5.min", JSImport.Namespace)
   @js.native
-  class ^ () extends Headers {
+  /* standard dom */
+  open class ^ () extends Headers {
     def this(init: HeadersInit) = this()
   }
   

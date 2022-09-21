@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "AvgAggregation")
 @js.native
-class AvgAggregation protected ()
+open class AvgAggregation protected ()
   extends StObject
      with Aggregation {
   /*
@@ -50,5 +50,5 @@ class AvgAggregation protected ()
     Retrieves the internal agg object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

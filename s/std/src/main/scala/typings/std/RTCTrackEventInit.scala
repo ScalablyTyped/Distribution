@@ -8,12 +8,16 @@ trait RTCTrackEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var receiver: RTCRtpReceiver
   
+  /* standard dom */
   var streams: js.UndefOr[js.Array[MediaStream]] = js.undefined
   
+  /* standard dom */
   var track: MediaStreamTrack
   
+  /* standard dom */
   var transceiver: RTCRtpTransceiver
 }
 object RTCTrackEventInit {
@@ -31,7 +35,7 @@ object RTCTrackEventInit {
     
     inline def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
     
-    inline def setStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+    inline def setStreamsVarargs(value: MediaStream*): Self = StObject.set(x, "streams", js.Array(value*))
     
     inline def setTrack(value: MediaStreamTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     

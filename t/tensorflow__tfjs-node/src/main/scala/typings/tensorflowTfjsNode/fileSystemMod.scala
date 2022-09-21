@@ -15,7 +15,7 @@ object fileSystemMod {
   
   @JSImport("@tensorflow/tfjs-node/dist/io/file_system", "NodeFileSystem")
   @js.native
-  class NodeFileSystem protected ()
+  open class NodeFileSystem protected ()
     extends StObject
        with IOHandler {
     /**
@@ -55,7 +55,7 @@ object fileSystemMod {
     
     /* protected */ def loadJSONModel(): js.Promise[ModelArtifacts] = js.native
     
-    /* private */ var loadWeights: js.Any = js.native
+    /* private */ var loadWeights: Any = js.native
     
     @JSName("load")
     def load_MNodeFileSystem(): js.Promise[ModelArtifacts] = js.native

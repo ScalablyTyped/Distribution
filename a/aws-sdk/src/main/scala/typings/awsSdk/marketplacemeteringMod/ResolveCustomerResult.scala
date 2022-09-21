@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResolveCustomerResult extends StObject {
   
   /**
+    * The CustomerAWSAccountId provides the AWS account ID associated with the CustomerIdentifier for the individual customer.
+    */
+  var CustomerAWSAccountId: js.UndefOr[typings.awsSdk.marketplacemeteringMod.CustomerAWSAccountId] = js.undefined
+  
+  /**
     * The CustomerIdentifier is used to identify an individual customer in your application. Calls to BatchMeterUsage require CustomerIdentifiers for each UsageRecord.
     */
   var CustomerIdentifier: js.UndefOr[typings.awsSdk.marketplacemeteringMod.CustomerIdentifier] = js.undefined
@@ -24,6 +29,10 @@ object ResolveCustomerResult {
   }
   
   extension [Self <: ResolveCustomerResult](x: Self) {
+    
+    inline def setCustomerAWSAccountId(value: CustomerAWSAccountId): Self = StObject.set(x, "CustomerAWSAccountId", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerAWSAccountIdUndefined: Self = StObject.set(x, "CustomerAWSAccountId", js.undefined)
     
     inline def setCustomerIdentifier(value: CustomerIdentifier): Self = StObject.set(x, "CustomerIdentifier", value.asInstanceOf[js.Any])
     

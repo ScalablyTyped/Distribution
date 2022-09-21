@@ -29,6 +29,6 @@ object SecureServerOptions {
     
     inline def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
     
-    inline def setOriginsVarargs(value: String*): Self = StObject.set(x, "origins", js.Array(value :_*))
+    inline def setOriginsVarargs(value: String*): Self = StObject.set(x, "origins", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "FocusZone")
 @js.native
-class FocusZone protected ()
+open class FocusZone protected ()
   extends typings.officeUiFabricReact.libFocusZoneMod.FocusZone {
   def this(props: IFocusZoneProps) = this()
 }
@@ -25,8 +25,8 @@ object FocusZone {
     */
   @JSImport("office-ui-fabric-react", "FocusZone._onKeyDownCapture")
   @js.native
-  def _onKeyDownCapture: js.Any = js.native
-  inline def _onKeyDownCapture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_onKeyDownCapture")(x.asInstanceOf[js.Any])
+  def _onKeyDownCapture: Any = js.native
+  inline def _onKeyDownCapture_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_onKeyDownCapture")(x.asInstanceOf[js.Any])
   
   @JSImport("office-ui-fabric-react", "FocusZone.defaultProps")
   @js.native

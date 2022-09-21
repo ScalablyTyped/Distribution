@@ -1,6 +1,6 @@
 package typings.cathoQuantum
 
-import typings.cathoQuantum.anon.`12`
+import typings.cathoQuantum.anon.`19`
 import typings.cathoQuantum.cathoQuantumStrings.neutral
 import typings.cathoQuantum.cathoQuantumStrings.primary
 import typings.cathoQuantum.cathoQuantumStrings.secondary
@@ -13,10 +13,10 @@ object progressBarMod {
   
   @JSImport("@catho/quantum/ProgressBar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ProgressBarProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ProgressBarProps, js.Object, Any]
   
-  type ProgressBar = Component[ProgressBarProps, js.Object, js.Any]
+  type ProgressBar = Component[ProgressBarProps, js.Object, Any]
   
   trait ProgressBarProps extends StObject {
     
@@ -30,7 +30,7 @@ object progressBarMod {
     
     var skin: js.UndefOr[neutral | primary | secondary] = js.undefined
     
-    var theme: js.UndefOr[`12`] = js.undefined
+    var theme: js.UndefOr[`19`] = js.undefined
     
     var width: js.UndefOr[String] = js.undefined
   }
@@ -63,7 +63,7 @@ object progressBarMod {
       
       inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      inline def setTheme(value: `12`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: `19`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       

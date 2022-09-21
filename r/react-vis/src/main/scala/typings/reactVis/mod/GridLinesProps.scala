@@ -36,7 +36,7 @@ trait GridLinesProps extends StObject {
   
   var tickTotal: js.UndefOr[Double] = js.undefined
   
-  var tickValues: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var tickValues: js.UndefOr[js.Array[Any]] = js.undefined
   
   var top: js.UndefOr[Double] = js.undefined
   
@@ -101,11 +101,11 @@ object GridLinesProps {
     
     inline def setTickTotalUndefined: Self = StObject.set(x, "tickTotal", js.undefined)
     
-    inline def setTickValues(value: js.Array[js.Any]): Self = StObject.set(x, "tickValues", value.asInstanceOf[js.Any])
+    inline def setTickValues(value: js.Array[Any]): Self = StObject.set(x, "tickValues", value.asInstanceOf[js.Any])
     
     inline def setTickValuesUndefined: Self = StObject.set(x, "tickValues", js.undefined)
     
-    inline def setTickValuesVarargs(value: js.Any*): Self = StObject.set(x, "tickValues", js.Array(value :_*))
+    inline def setTickValuesVarargs(value: Any*): Self = StObject.set(x, "tickValues", js.Array(value*))
     
     inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     

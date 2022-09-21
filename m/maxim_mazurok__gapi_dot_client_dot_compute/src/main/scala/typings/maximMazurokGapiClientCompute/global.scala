@@ -8,6 +8,7 @@ import typings.maximMazurokGapiClientCompute.gapi.client.compute.BackendServices
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.DiskTypesResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.DisksResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.ExternalVpnGatewaysResource
+import typings.maximMazurokGapiClientCompute.gapi.client.compute.FirewallPoliciesResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.FirewallsResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.ForwardingRulesResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.GlobalAddressesResource
@@ -15,6 +16,7 @@ import typings.maximMazurokGapiClientCompute.gapi.client.compute.GlobalForwardin
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.GlobalNetworkEndpointGroupsResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.GlobalOperationsResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.GlobalOrganizationOperationsResource
+import typings.maximMazurokGapiClientCompute.gapi.client.compute.GlobalPublicDelegatedPrefixesResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.HealthChecksResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.HttpHealthChecksResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.HttpsHealthChecksResource
@@ -36,6 +38,8 @@ import typings.maximMazurokGapiClientCompute.gapi.client.compute.NodeTemplatesRe
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.NodeTypesResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.PacketMirroringsResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.ProjectsResource
+import typings.maximMazurokGapiClientCompute.gapi.client.compute.PublicAdvertisedPrefixesResource
+import typings.maximMazurokGapiClientCompute.gapi.client.compute.PublicDelegatedPrefixesResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.RegionAutoscalersResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.RegionBackendServicesResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.RegionCommitmentsResource
@@ -45,6 +49,7 @@ import typings.maximMazurokGapiClientCompute.gapi.client.compute.RegionHealthChe
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.RegionHealthChecksResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.RegionInstanceGroupManagersResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.RegionInstanceGroupsResource
+import typings.maximMazurokGapiClientCompute.gapi.client.compute.RegionInstancesResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.RegionNetworkEndpointGroupsResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.RegionNotificationEndpointsResource
 import typings.maximMazurokGapiClientCompute.gapi.client.compute.RegionOperationsResource
@@ -125,6 +130,10 @@ object global {
         @js.native
         val externalVpnGateways: ExternalVpnGatewaysResource = js.native
         
+        @JSGlobal("gapi.client.compute.firewallPolicies")
+        @js.native
+        val firewallPolicies: FirewallPoliciesResource = js.native
+        
         @JSGlobal("gapi.client.compute.firewalls")
         @js.native
         val firewalls: FirewallsResource = js.native
@@ -152,6 +161,10 @@ object global {
         @JSGlobal("gapi.client.compute.globalOrganizationOperations")
         @js.native
         val globalOrganizationOperations: GlobalOrganizationOperationsResource = js.native
+        
+        @JSGlobal("gapi.client.compute.globalPublicDelegatedPrefixes")
+        @js.native
+        val globalPublicDelegatedPrefixes: GlobalPublicDelegatedPrefixesResource = js.native
         
         @JSGlobal("gapi.client.compute.healthChecks")
         @js.native
@@ -237,6 +250,14 @@ object global {
         @js.native
         val projects: ProjectsResource = js.native
         
+        @JSGlobal("gapi.client.compute.publicAdvertisedPrefixes")
+        @js.native
+        val publicAdvertisedPrefixes: PublicAdvertisedPrefixesResource = js.native
+        
+        @JSGlobal("gapi.client.compute.publicDelegatedPrefixes")
+        @js.native
+        val publicDelegatedPrefixes: PublicDelegatedPrefixesResource = js.native
+        
         @JSGlobal("gapi.client.compute.regionAutoscalers")
         @js.native
         val regionAutoscalers: RegionAutoscalersResource = js.native
@@ -272,6 +293,10 @@ object global {
         @JSGlobal("gapi.client.compute.regionInstanceGroups")
         @js.native
         val regionInstanceGroups: RegionInstanceGroupsResource = js.native
+        
+        @JSGlobal("gapi.client.compute.regionInstances")
+        @js.native
+        val regionInstances: RegionInstancesResource = js.native
         
         @JSGlobal("gapi.client.compute.regionNetworkEndpointGroups")
         @js.native
@@ -396,7 +421,7 @@ object global {
       
       /** Load Compute Engine API v1 */
       inline def load(name: compute, version: v1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
-      inline def load(name: compute, version: v1, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def load(name: compute, version: v1, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
 }

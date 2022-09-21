@@ -291,6 +291,6 @@ object VerifyAssertionResponse {
     
     inline def setVerifiedProviderUndefined: Self = StObject.set(x, "verifiedProvider", js.undefined)
     
-    inline def setVerifiedProviderVarargs(value: String*): Self = StObject.set(x, "verifiedProvider", js.Array(value :_*))
+    inline def setVerifiedProviderVarargs(value: String*): Self = StObject.set(x, "verifiedProvider", js.Array(value*))
   }
 }

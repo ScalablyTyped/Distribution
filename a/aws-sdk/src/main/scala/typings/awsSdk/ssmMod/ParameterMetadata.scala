@@ -29,10 +29,10 @@ trait ParameterMetadata extends StObject {
   /**
     * Date the parameter was last changed or updated.
     */
-  var LastModifiedDate: js.UndefOr[DateTime] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Amazon Resource Name (ARN) of the AWS user who last changed the parameter.
+    * Amazon Resource Name (ARN) of the Amazon Web Services user who last changed the parameter.
     */
   var LastModifiedUser: js.UndefOr[String] = js.undefined
   
@@ -86,7 +86,7 @@ object ParameterMetadata {
     
     inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
-    inline def setLastModifiedDate(value: DateTime): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
@@ -102,7 +102,7 @@ object ParameterMetadata {
     
     inline def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
     
-    inline def setPoliciesVarargs(value: ParameterInlinePolicy*): Self = StObject.set(x, "Policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: ParameterInlinePolicy*): Self = StObject.set(x, "Policies", js.Array(value*))
     
     inline def setTier(value: ParameterTier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
     

@@ -22,41 +22,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataValidationData extends StObject {
   
   /**
-    *
     * Error alert when user enters invalid data.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var errorAlert: js.UndefOr[DataValidationErrorAlert] = js.undefined
   
   /**
+    * Specifies if data validation will be performed on blank cells. Default is `true`.
     *
-    * Specifies if data validation will be performed on blank cells, it defaults to true.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var ignoreBlanks: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Prompt when users select a cell.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var prompt: js.UndefOr[DataValidationPrompt] = js.undefined
   
   /**
-    *
     * Data validation rule that contains different type of data validation criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var rule: js.UndefOr[DataValidationRule] = js.undefined
   
   /**
+    * Type of the data validation, see `Excel.DataValidationType` for details.
     *
-    * Type of the data validation, see Excel.DataValidationType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var `type`: js.UndefOr[
@@ -64,11 +64,11 @@ trait DataValidationData extends StObject {
   ] = js.undefined
   
   /**
-    *
     * Represents if all cell values are valid according to the data validation rules.
-    Returns true if all cell values are valid, or false if all cell values are invalid.
-    Returns null if there are both valid and invalid cell values within the range.
+    Returns `true` if all cell values are valid, or `false` if all cell values are invalid.
+    Returns `null` if there are both valid and invalid cell values within the range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var valid: js.UndefOr[Boolean] = js.undefined

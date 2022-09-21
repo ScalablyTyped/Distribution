@@ -5,8 +5,9 @@ import typings.react.mod.ReactElement
 import typings.react.mod.RefAttributes
 import typings.reactMdList.listMod.ListElement
 import typings.reactMdTree.anon.BaseTreeItemvisibleIndexn
-import typings.reactMdTree.anon.PickTreeGroupPropshiddenc
+import typings.reactMdTree.anon.PickTreeItemWithContentCo
 import typings.reactMdTree.anon.RequiredTreeItemSelection
+import typings.reactMdTree.treeGroupMod.TreeGroupProps
 import typings.reactMdTree.typesMod.BaseTreeItem
 import typings.reactMdTree.typesMod.ExpandedIds
 import typings.reactMdTree.typesMod.ProvidedTreeItemProps
@@ -16,7 +17,6 @@ import typings.reactMdTree.typesMod.TreeData
 import typings.reactMdTree.typesMod.TreeItemExpansion
 import typings.reactMdTree.typesMod.TreeItemId
 import typings.reactMdTree.typesMod.TreeItemProps
-import typings.reactMdTree.typesMod.TreeItemWithContentComponentProps
 import typings.reactMdTree.typesMod.TreeProps
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
@@ -31,17 +31,15 @@ object mod {
   
   @JSImport("@react-md/tree", "Tree")
   @js.native
-  val Tree: ForwardRefExoticComponent[TreeProps[js.Any] & RefAttributes[ListElement]] = js.native
+  val Tree: ForwardRefExoticComponent[TreeProps[Any] & RefAttributes[ListElement]] = js.native
   
   @JSImport("@react-md/tree", "TreeGroup")
   @js.native
-  val TreeGroup: ForwardRefExoticComponent[PickTreeGroupPropshiddenc] = js.native
+  val TreeGroup: ForwardRefExoticComponent[TreeGroupProps & RefAttributes[ListElement]] = js.native
   
   @JSImport("@react-md/tree", "TreeItem")
   @js.native
-  val TreeItem: ForwardRefExoticComponent[
-    (TreeItemProps & RefAttributes[HTMLLIElement]) | (TreeItemWithContentComponentProps & RefAttributes[HTMLLIElement])
-  ] = js.native
+  val TreeItem: ForwardRefExoticComponent[(TreeItemProps & RefAttributes[HTMLLIElement]) | PickTreeItemWithContentCo] = js.native
   
   inline def defaultTreeItemRenderer(itemProps: ProvidedTreeItemProps, item: BaseTreeItemvisibleIndexn, treeProps: ProvidedTreeProps): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultTreeItemRenderer")(itemProps.asInstanceOf[js.Any], item.asInstanceOf[js.Any], treeProps.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   

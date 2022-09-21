@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait symbolsSymbol3D
   extends StObject
-     with typings.arcgisJsApi.esri.symbols.Symbol
-     with symbolsSymbol
+     with typings.arcgisJsApi.esri.symbols.Symbol2D3D
+     with Symbol2D3D

@@ -5,7 +5,6 @@ import typings.scriptableIos.Contact.EmailAddresses
 import typings.scriptableIos.Contact.PhoneNumbers
 import typings.scriptableIos.Contact.PostalAddresses
 import typings.scriptableIos.Contact.SocialProfiles
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `Contact.persistChanges()` to persist the changes.
   * @see https://docs.scriptable.app/contact/#-new-contact
   */
-class Contact ()
+open class Contact ()
   extends StObject
      with typings.scriptableIos.Contact {
   
@@ -35,7 +34,7 @@ class Contact ()
     * @see https://docs.scriptable.app/contact/#birthday
     */
   /* CompleteClass */
-  var birthday: Date = js.native
+  var birthday: js.Date = js.native
   
   /**
     * _Dates._
@@ -44,7 +43,7 @@ class Contact ()
     * @see https://docs.scriptable.app/contact/#dates
     */
   /* CompleteClass */
-  var dates: js.Array[StringDictionary[js.Any]] = js.native
+  var dates: js.Array[StringDictionary[Any]] = js.native
   
   /**
     * _Name of the department associated with the contact._
@@ -256,7 +255,7 @@ class Contact ()
   var isURLAddressesAvailable: Boolean = js.native
   
   /**
-    * _The contacts job title._
+    * _The contact's job title._
     * @see https://docs.scriptable.app/contact/#jobtitle
     */
   /* CompleteClass */
@@ -286,7 +285,7 @@ class Contact ()
   /**
     * _Note for the contact._
     *
-    * For security reasons, a contacts notes cannot be accessed in Siri, the Shortcuts app and in a notification.
+    * For security reasons, a contact's notes cannot be accessed in Siri, the Shortcuts app and in a notification.
     * @see https://docs.scriptable.app/contact/#note
     */
   /* CompleteClass */

@@ -13,14 +13,12 @@ trait IMemento
     * @param props String/String[] The property or array of properties to capture.
     * @param target Object The object from which to capture properties.
     */
-  var capture: js.UndefOr[
-    js.Function2[/* props */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  var capture: js.UndefOr[js.Function2[/* props */ js.UndefOr[Any], /* target */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Removes the specified properties from this memento
     * @param props String/String[] The property or array of properties to remove.
     */
-  var remove: js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var remove: js.UndefOr[js.Function1[/* props */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Restores the specified properties from this memento to the target object
     * @param props String/String[] The property or array of properties to restore.
@@ -29,9 +27,9 @@ trait IMemento
     */
   var restore: js.UndefOr[
     js.Function3[
-      /* props */ js.UndefOr[js.Any], 
+      /* props */ js.UndefOr[Any], 
       /* clear */ js.UndefOr[Boolean], 
-      /* target */ js.UndefOr[js.Any], 
+      /* target */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -41,11 +39,11 @@ trait IMemento
     * @param target Object The object to which to restore properties.
     */
   var restoreAll: js.UndefOr[
-    js.Function2[/* clear */ js.UndefOr[Boolean], /* target */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* clear */ js.UndefOr[Boolean], /* target */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Property] (Object) */
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
 }
 object IMemento {
   
@@ -56,25 +54,25 @@ object IMemento {
   
   extension [Self <: IMemento](x: Self) {
     
-    inline def setCapture(value: (/* props */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction2(value))
+    inline def setCapture(value: (/* props */ js.UndefOr[Any], /* target */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction2(value))
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
-    inline def setRemove(value: /* props */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: /* props */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
     inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     inline def setRestore(
-      value: (/* props */ js.UndefOr[js.Any], /* clear */ js.UndefOr[Boolean], /* target */ js.UndefOr[js.Any]) => Unit
+      value: (/* props */ js.UndefOr[Any], /* clear */ js.UndefOr[Boolean], /* target */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "restore", js.Any.fromFunction3(value))
     
-    inline def setRestoreAll(value: (/* clear */ js.UndefOr[Boolean], /* target */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "restoreAll", js.Any.fromFunction2(value))
+    inline def setRestoreAll(value: (/* clear */ js.UndefOr[Boolean], /* target */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "restoreAll", js.Any.fromFunction2(value))
     
     inline def setRestoreAllUndefined: Self = StObject.set(x, "restoreAll", js.undefined)
     
     inline def setRestoreUndefined: Self = StObject.set(x, "restore", js.undefined)
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }

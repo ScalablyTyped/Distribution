@@ -4,6 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Utility methods for working with URLs.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-urlUtils.html)
+  */
 trait urlUtils extends StObject {
   
   /**
@@ -18,21 +23,21 @@ trait urlUtils extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-urlUtils.html#getProxyRule)
     */
-  def getProxyRule(url: String): js.Any
+  def getProxyRule(url: String): Any
   
   /**
     * Converts the URL arguments to an object representation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-urlUtils.html#urlToObject)
     */
-  def urlToObject(url: String): js.Any
+  def urlToObject(url: String): Any
 }
 object urlUtils {
   
   inline def apply(
     addProxyRule: urlUtilsAddProxyRuleRule => Double,
-    getProxyRule: String => js.Any,
-    urlToObject: String => js.Any
+    getProxyRule: String => Any,
+    urlToObject: String => Any
   ): urlUtils = {
     val __obj = js.Dynamic.literal(addProxyRule = js.Any.fromFunction1(addProxyRule), getProxyRule = js.Any.fromFunction1(getProxyRule), urlToObject = js.Any.fromFunction1(urlToObject))
     __obj.asInstanceOf[urlUtils]
@@ -42,8 +47,8 @@ object urlUtils {
     
     inline def setAddProxyRule(value: urlUtilsAddProxyRuleRule => Double): Self = StObject.set(x, "addProxyRule", js.Any.fromFunction1(value))
     
-    inline def setGetProxyRule(value: String => js.Any): Self = StObject.set(x, "getProxyRule", js.Any.fromFunction1(value))
+    inline def setGetProxyRule(value: String => Any): Self = StObject.set(x, "getProxyRule", js.Any.fromFunction1(value))
     
-    inline def setUrlToObject(value: String => js.Any): Self = StObject.set(x, "urlToObject", js.Any.fromFunction1(value))
+    inline def setUrlToObject(value: String => Any): Self = StObject.set(x, "urlToObject", js.Any.fromFunction1(value))
   }
 }

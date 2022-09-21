@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WritingOptions
   extends StObject
-     with CommonOptions {
+     with CommonOptions
+     with SheetOption {
   
   /** Override workbook properties on save */
   var Props: js.UndefOr[Properties] = js.undefined
@@ -41,11 +42,8 @@ trait WritingOptions
     */
   var ignoreEC: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Name of Worksheet (for single-sheet formats)
-    * @default ''
-    */
-  var sheet: js.UndefOr[String] = js.undefined
+  /** Base64 encoding of NUMBERS base for exports */
+  var numbers: js.UndefOr[String] = js.undefined
   
   /** Output data encoding */
   var `type`: js.UndefOr[base64 | binary | buffer | file | array | string] = js.undefined
@@ -75,13 +73,13 @@ object WritingOptions {
     
     inline def setIgnoreECUndefined: Self = StObject.set(x, "ignoreEC", js.undefined)
     
+    inline def setNumbers(value: String): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
+    
+    inline def setNumbersUndefined: Self = StObject.set(x, "numbers", js.undefined)
+    
     inline def setProps(value: Properties): Self = StObject.set(x, "Props", value.asInstanceOf[js.Any])
     
     inline def setPropsUndefined: Self = StObject.set(x, "Props", js.undefined)
-    
-    inline def setSheet(value: String): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
-    
-    inline def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
     
     inline def setType(value: base64 | binary | buffer | file | array | string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

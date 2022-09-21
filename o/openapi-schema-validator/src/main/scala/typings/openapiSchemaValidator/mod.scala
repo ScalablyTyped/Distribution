@@ -1,8 +1,9 @@
 package typings.openapiSchemaValidator
 
-import typings.ajv.mod.ErrorObject
+import typings.ajv.distTypesMod.ErrorObject
 import typings.openapiTypes.mod.IJsonSchema
 import typings.openapiTypes.mod.OpenAPI.Document
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ object mod {
   
   @JSImport("openapi-schema-validator", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with OpenAPISchemaValidator {
     def this(args: OpenAPISchemaValidatorArgs) = this()
@@ -21,10 +22,10 @@ object mod {
       * return the results.
       */
     /* CompleteClass */
-    override def validate(doc: Document): OpenAPISchemaValidatorResult = js.native
+    override def validate(doc: Document[js.Object]): OpenAPISchemaValidatorResult = js.native
     
     /* private */ /* CompleteClass */
-    var validator: js.Any = js.native
+    var validator: Any = js.native
   }
   
   trait IOpenAPISchemaValidator extends StObject {
@@ -33,18 +34,18 @@ object mod {
       * Validate the provided OpenAPI doc against this validator's schema version and
       * return the results.
       */
-    def validate(doc: Document): OpenAPISchemaValidatorResult
+    def validate(doc: Document[js.Object]): OpenAPISchemaValidatorResult
   }
   object IOpenAPISchemaValidator {
     
-    inline def apply(validate: Document => OpenAPISchemaValidatorResult): IOpenAPISchemaValidator = {
+    inline def apply(validate: Document[js.Object] => OpenAPISchemaValidatorResult): IOpenAPISchemaValidator = {
       val __obj = js.Dynamic.literal(validate = js.Any.fromFunction1(validate))
       __obj.asInstanceOf[IOpenAPISchemaValidator]
     }
     
     extension [Self <: IOpenAPISchemaValidator](x: Self) {
       
-      inline def setValidate(value: Document => OpenAPISchemaValidatorResult): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: Document[js.Object] => OpenAPISchemaValidatorResult): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     }
   }
   
@@ -52,18 +53,18 @@ object mod {
     extends StObject
        with IOpenAPISchemaValidator {
     
-    /* private */ var validator: js.Any
+    /* private */ var validator: Any
   }
   object OpenAPISchemaValidator {
     
-    inline def apply(validate: Document => OpenAPISchemaValidatorResult, validator: js.Any): OpenAPISchemaValidator = {
+    inline def apply(validate: Document[js.Object] => OpenAPISchemaValidatorResult, validator: Any): OpenAPISchemaValidator = {
       val __obj = js.Dynamic.literal(validate = js.Any.fromFunction1(validate), validator = validator.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenAPISchemaValidator]
     }
     
     extension [Self <: OpenAPISchemaValidator](x: Self) {
       
-      inline def setValidator(value: js.Any): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+      inline def setValidator(value: Any): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,20 +93,20 @@ object mod {
   
   trait OpenAPISchemaValidatorResult extends StObject {
     
-    var errors: js.Array[ErrorObject]
+    var errors: js.Array[ErrorObject[String, Record[String, Any], Any]]
   }
   object OpenAPISchemaValidatorResult {
     
-    inline def apply(errors: js.Array[ErrorObject]): OpenAPISchemaValidatorResult = {
+    inline def apply(errors: js.Array[ErrorObject[String, Record[String, Any], Any]]): OpenAPISchemaValidatorResult = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenAPISchemaValidatorResult]
     }
     
     extension [Self <: OpenAPISchemaValidatorResult](x: Self) {
       
-      inline def setErrors(value: js.Array[ErrorObject]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[ErrorObject[String, Record[String, Any], Any]]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: ErrorObject*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: (ErrorObject[String, Record[String, Any], Any])*): Self = StObject.set(x, "errors", js.Array(value*))
     }
   }
 }

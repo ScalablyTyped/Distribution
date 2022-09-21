@@ -1,7 +1,7 @@
 
 # Scala.js typings for vuedraggable
 
-Typings are for version 2.23
+Typings are for version 2.24.3
 
 ## Library description:
 draggable component for vue
@@ -10,10 +10,10 @@ draggable component for vue
 | ------------------ | :-------------: |
 | Full name          | vuedraggable |
 | Keywords           | vue, vuejs, drag, and, drop, list, Sortable.js, component, nested |
-| # releases         | 19 |
-| # dependents       | 1025 |
-| # downloads        | 13200231 |
-| # stars            | 18 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 2430268.0 |
+| # stars            | 17527.0 |
 
 ## Links
 - [Homepage](https://github.com/SortableJS/Vue.Draggable#readme)
@@ -24,7 +24,7 @@ draggable component for vue
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

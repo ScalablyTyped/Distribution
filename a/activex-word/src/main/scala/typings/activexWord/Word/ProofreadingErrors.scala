@@ -14,7 +14,7 @@ trait ProofreadingErrors extends StObject {
   
   def Item(Index: Double): Range
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Type: WdProofreadingErrorType
   
@@ -28,7 +28,7 @@ object ProofreadingErrors {
     Count: Double,
     Creator: Double,
     Item: Double => Range,
-    Parent: js.Any,
+    Parent: Any,
     Type: WdProofreadingErrorType,
     WordDotProofreadingErrors_typekey: ProofreadingErrors
   ): ProofreadingErrors = {
@@ -47,7 +47,7 @@ object ProofreadingErrors {
     
     inline def setItem(value: Double => Range): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setType(value: WdProofreadingErrorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

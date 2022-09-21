@@ -65,13 +65,13 @@ object CreationDataStorage {
     
     inline def setIdx(value: js.Array[Double]): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     
-    inline def setIdxVarargs(value: Double*): Self = StObject.set(x, "idx", js.Array(value :_*))
+    inline def setIdxVarargs(value: Double*): Self = StObject.set(x, "idx", js.Array(value*))
     
     inline def setPath3D(value: Path3D): Self = StObject.set(x, "path3D", value.asInstanceOf[js.Any])
     
     inline def setPathArray(value: js.Array[js.Array[Vector3]]): Self = StObject.set(x, "pathArray", value.asInstanceOf[js.Any])
     
-    inline def setPathArrayVarargs(value: js.Array[Vector3]*): Self = StObject.set(x, "pathArray", js.Array(value :_*))
+    inline def setPathArrayVarargs(value: js.Array[Vector3]*): Self = StObject.set(x, "pathArray", js.Array(value*))
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

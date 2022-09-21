@@ -19,9 +19,15 @@ trait BubbleNode extends StObject {
   
   def findViewableParent(): BubbleNode = js.native
   
-  def getDefaultGeometry(): js.Any = js.native
+  def getDefaultGeometry(): Any = js.native
+  
+  def getDocument(): Document = js.native
+  
+  def getInputFileType(): String = js.native
   
   def getLodNode(): Boolean = js.native
+  
+  def getModelName(): String = js.native
   
   def getNamedViews(): js.Array[String] = js.native
   
@@ -29,7 +35,7 @@ trait BubbleNode extends StObject {
   
   def getRootNode(): BubbleNode = js.native
   
-  def getTag(tag: String): js.Any = js.native
+  def getTag(tag: String): Any = js.native
   
   def getViewableRootPath(): String = js.native
   
@@ -53,9 +59,14 @@ trait BubbleNode extends StObject {
   
   def isMetadata(): Boolean = js.native
   
+  def isRevitPdf(): Boolean = js.native
+  
   def isViewPreset(): Boolean = js.native
   
   def isViewable(): Boolean = js.native
+  
+  def lineageUrn(): String = js.native
+  def lineageUrn(encode: Boolean): String = js.native
   
   var lodNode: js.Object = js.native
   
@@ -67,7 +78,7 @@ trait BubbleNode extends StObject {
   
   def searchByTag(tagsToMatch: js.Object): js.Array[BubbleNode] = js.native
   
-  def setTag(tag: String, value: js.Any): Unit = js.native
+  def setTag(tag: String, value: Any): Unit = js.native
   
   var sharedPropertyDbPath: String = js.native
   

@@ -3,270 +3,222 @@ package typings.backboneRelational
 import typings.backbone.mod.Collection
 import typings.backbone.mod.CombinedModelConstructorOptions
 import typings.backbone.mod.EventsMixin
+import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
-import typings.backboneRelational.anon.TypeofModel
+import typings.backboneRelational.anon.TypeofRelationalModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* augmented module */
 object mod {
   
-  @JSImport("backbone-relational", "HasMany")
+  @JSImport("backbone", "HasMany")
   @js.native
-  class HasMany () extends Relation {
-    def this(attributes: js.Any) = this()
-    def this(
-      attributes: js.Any,
-      options: CombinedModelConstructorOptions[js.Object, typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]]
-    ) = this()
-    def this(
-      attributes: Unit,
-      options: CombinedModelConstructorOptions[js.Object, typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]]
-    ) = this()
+  open class HasMany () extends Relation {
+    def this(attributes: Any) = this()
+    def this(attributes: Any, options: CombinedModelConstructorOptions[Any, Model[Any, ModelSetOptions, Any]]) = this()
+    def this(attributes: Unit, options: CombinedModelConstructorOptions[Any, Model[Any, ModelSetOptions, Any]]) = this()
     
-    def addRelated(model: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object], options: js.Any): Unit = js.native
+    def addRelated(model: Model[Any, ModelSetOptions, Any], options: Any): Unit = js.native
     
-    var collectionType: js.Any = js.native
+    var collectionType: Any = js.native
     
-    def findRelated(options: js.Any): typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object] = js.native
+    def findRelated(options: Any): Model[Any, ModelSetOptions, Any] = js.native
     
-    def onChange(
-      model: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object],
-      attr: js.Any,
-      options: js.Any
-    ): Unit = js.native
+    def onChange(model: Model[Any, ModelSetOptions, Any], attr: Any, options: Any): Unit = js.native
     
-    def removeRelated(
-      model: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object],
-      coll: js.Any,
-      options: js.Any
-    ): Unit = js.native
+    def removeRelated(model: Model[Any, ModelSetOptions, Any], coll: Any, options: Any): Unit = js.native
     
     def setKeyContents(keyContents: String): Unit = js.native
     def setKeyContents(keyContents: Double): Unit = js.native
-    def setKeyContents(keyContents: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]): Unit = js.native
+    def setKeyContents(keyContents: Model[Any, ModelSetOptions, Any]): Unit = js.native
     
-    def tryAddRelated(
-      model: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object],
-      coll: js.Any,
-      options: js.Any
-    ): Unit = js.native
+    def tryAddRelated(model: Model[Any, ModelSetOptions, Any], coll: Any, options: Any): Unit = js.native
   }
   
-  @JSImport("backbone-relational", "HasOne")
+  @JSImport("backbone", "HasOne")
   @js.native
-  class HasOne () extends Relation {
-    def this(attributes: js.Any) = this()
-    def this(
-      attributes: js.Any,
-      options: CombinedModelConstructorOptions[js.Object, typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]]
-    ) = this()
-    def this(
-      attributes: Unit,
-      options: CombinedModelConstructorOptions[js.Object, typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]]
-    ) = this()
+  open class HasOne () extends Relation {
+    def this(attributes: Any) = this()
+    def this(attributes: Any, options: CombinedModelConstructorOptions[Any, Model[Any, ModelSetOptions, Any]]) = this()
+    def this(attributes: Unit, options: CombinedModelConstructorOptions[Any, Model[Any, ModelSetOptions, Any]]) = this()
     
-    def addRelated(model: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object], options: js.Any): Unit = js.native
+    def addRelated(model: Model[Any, ModelSetOptions, Any], options: Any): Unit = js.native
     
-    var collectionType: js.Any = js.native
+    var collectionType: Any = js.native
     
-    def findRelated(options: js.Any): typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object] = js.native
+    def findRelated(options: Any): Model[Any, ModelSetOptions, Any] = js.native
     
     def handleAddition(
-      model: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object],
-      coll: Collection[typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]],
-      options: js.Any
+      model: Model[Any, ModelSetOptions, Any],
+      coll: Collection[Model[Any, ModelSetOptions, Any]],
+      options: Any
     ): Unit = js.native
     
     def handleRemoval(
-      model: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object],
-      coll: Collection[typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]],
-      options: js.Any
+      model: Model[Any, ModelSetOptions, Any],
+      coll: Collection[Model[Any, ModelSetOptions, Any]],
+      options: Any
     ): Unit = js.native
     
-    def handleReset(coll: Collection[typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]], options: js.Any): Unit = js.native
+    def handleReset(coll: Collection[Model[Any, ModelSetOptions, Any]], options: Any): Unit = js.native
     
-    def onChange(
-      model: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object],
-      attr: js.Any,
-      options: js.Any
-    ): Unit = js.native
+    def onChange(model: Model[Any, ModelSetOptions, Any], attr: Any, options: Any): Unit = js.native
     
-    def removeRelated(
-      model: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object],
-      coll: js.Any,
-      options: js.Any
-    ): Unit = js.native
+    def removeRelated(model: Model[Any, ModelSetOptions, Any], coll: Any, options: Any): Unit = js.native
     
     def setKeyContents(keyContents: String): Unit = js.native
     def setKeyContents(keyContents: js.Array[Double | String]): Unit = js.native
     def setKeyContents(keyContents: Double): Unit = js.native
-    def setKeyContents(keyContents: Collection[typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]]): Unit = js.native
+    def setKeyContents(keyContents: Collection[Model[Any, ModelSetOptions, Any]]): Unit = js.native
     
-    def tryAddRelated(
-      model: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object],
-      coll: js.Any,
-      options: js.Any
-    ): Unit = js.native
+    def tryAddRelated(model: Model[Any, ModelSetOptions, Any], coll: Any, options: Any): Unit = js.native
   }
   
-  @JSImport("backbone-relational", "Model")
+  @JSImport("backbone", "Relation")
   @js.native
-  class Model ()
-    extends typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object] {
-    def this(attributes: js.Any) = this()
-    def this(
-      attributes: js.Any,
-      options: CombinedModelConstructorOptions[js.Object, typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]]
-    ) = this()
-    def this(
-      attributes: Unit,
-      options: CombinedModelConstructorOptions[js.Object, typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]]
-    ) = this()
+  open class Relation () extends Model[Any, ModelSetOptions, Any] {
+    def this(attributes: Any) = this()
+    def this(attributes: Any, options: CombinedModelConstructorOptions[Any, Model[Any, ModelSetOptions, Any]]) = this()
+    def this(attributes: Unit, options: CombinedModelConstructorOptions[Any, Model[Any, ModelSetOptions, Any]]) = this()
     
-    def fetchRelated(key: String): js.Any = js.native
-    def fetchRelated(key: String, options: js.Any): js.Any = js.native
-    def fetchRelated(key: String, options: js.Any, update: Boolean): js.Any = js.native
-    def fetchRelated(key: String, options: Unit, update: Boolean): js.Any = js.native
+    def checkPreconditions(): Boolean = js.native
+    
+    def getReverseRelations(model: RelationalModel): Relation = js.native
+    
+    var instance: Any = js.native
+    
+    var key: Any = js.native
+    
+    var keyContents: Any = js.native
+    
+    var options: Any = js.native
+    
+    var related: Any = js.native
+    
+    var relatedCollection: Any = js.native
+    
+    var relatedModel: Any = js.native
+    
+    var reverseRelation: Any = js.native
+    
+    def setRelated(related: Collection[Model[Any, ModelSetOptions, Any]]): Unit = js.native
+    def setRelated(related: Model[Any, ModelSetOptions, Any]): Unit = js.native
+  }
+  
+  @JSImport("backbone", "RelationalModel")
+  @js.native
+  open class RelationalModel () extends Model[Any, ModelSetOptions, Any] {
+    def this(attributes: Any) = this()
+    def this(attributes: Any, options: CombinedModelConstructorOptions[Any, Model[Any, ModelSetOptions, Any]]) = this()
+    def this(attributes: Unit, options: CombinedModelConstructorOptions[Any, Model[Any, ModelSetOptions, Any]]) = this()
+    
+    def fetchRelated(key: String): Any = js.native
+    def fetchRelated(key: String, options: Any): Any = js.native
+    def fetchRelated(key: String, options: Any, update: Boolean): Any = js.native
+    def fetchRelated(key: String, options: Unit, update: Boolean): Any = js.native
     
     def getRelation(name: String): Relation = js.native
     
     def getRelations(): js.Array[Relation] = js.native
     
-    def initializeRelations(options: js.Any): Unit = js.native
+    def initializeRelations(options: Any): Unit = js.native
     
     def processQueue(): Unit = js.native
     
-    def queue(func: js.Any): Unit = js.native
+    def queue(func: Any): Unit = js.native
     
     /**
       * Do not use, prefer TypeScript's extend functionality.
       **/
     //private static extend(properties:any, classProperties?:any):any;
-    var relations: js.Any = js.native
+    var relations: Any = js.native
     
-    var subModelTypeAttribute: js.Any = js.native
+    var subModelTypeAttribute: Any = js.native
     
-    var subModelTypes: js.Any = js.native
+    var subModelTypes: Any = js.native
     
-    def toJSON(): js.Any = js.native
-    def toJSON(options: js.Any): js.Any = js.native
+    def toJSON(): Any = js.native
+    def toJSON(options: Any): Any = js.native
     
-    def updateRelations(options: js.Any): Unit = js.native
+    def updateRelations(options: Any): Unit = js.native
   }
   /* static members */
-  object Model {
+  object RelationalModel {
     
-    @JSImport("backbone-relational", "Model")
+    @JSImport("backbone", "RelationalModel")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def build(attributes: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(attributes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def build(attributes: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def build(attributes: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(attributes.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def build(attributes: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def findOrCreate(attributes: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def findOrCreate(attributes: String, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def findOrCreate(attributes: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def findOrCreate(attributes: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def findOrCreate(attributes: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def findOrCreate(attributes: Double, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def findOrCreate(attributes: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def findOrCreate(attributes: String, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def findOrCreate(attributes: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def findOrCreate(attributes: Any, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def findOrCreate(attributes: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def findOrCreate(attributes: Double, options: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreate")(attributes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def setup(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[js.Any]
+    inline def setup(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Any]
   }
   
-  @JSImport("backbone-relational", "Relation")
+  @JSImport("backbone", "Store")
   @js.native
-  class Relation ()
-    extends typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object] {
-    def this(attributes: js.Any) = this()
-    def this(
-      attributes: js.Any,
-      options: CombinedModelConstructorOptions[js.Object, typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]]
-    ) = this()
-    def this(
-      attributes: Unit,
-      options: CombinedModelConstructorOptions[js.Object, typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]]
-    ) = this()
+  open class Store_ () extends EventsMixin {
     
-    def checkPreconditions(): Boolean = js.native
+    def addModelScope(scope: Any): Unit = js.native
     
-    def getReverseRelations(model: Model): Relation = js.native
+    def addOrphanRelation(relation: Any): Unit = js.native
     
-    var instance: js.Any = js.native
+    def addReverseRelation(relation: Any): Unit = js.native
     
-    var key: js.Any = js.native
+    def addSubModels(subModelTypes: RelationalModel, superModelType: RelationalModel): Unit = js.native
     
-    var keyContents: js.Any = js.native
+    def checkId(model: RelationalModel, id: Any): Unit = js.native
     
-    var options: js.Any = js.native
+    def getCollection(`type`: RelationalModel, create: Boolean): Collection[Model[Any, ModelSetOptions, Any]] = js.native
     
-    var related: js.Any = js.native
+    def getObjectByName(name: String): Any = js.native
     
-    var relatedCollection: js.Any = js.native
-    
-    var relatedModel: js.Any = js.native
-    
-    var reverseRelation: js.Any = js.native
-    
-    def setRelated(related: Collection[typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]]): Unit = js.native
-    def setRelated(related: typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]): Unit = js.native
-  }
-  
-  @JSImport("backbone-relational", "Store")
-  @js.native
-  class Store_ () extends EventsMixin {
-    
-    def addModelScope(scope: js.Any): Unit = js.native
-    
-    def addOrphanRelation(relation: js.Any): Unit = js.native
-    
-    def addReverseRelation(relation: js.Any): Unit = js.native
-    
-    def addSubModels(subModelTypes: Model, superModelType: Model): Unit = js.native
-    
-    def checkId(model: Model, id: js.Any): Unit = js.native
-    
-    def getCollection(`type`: Model, create: Boolean): Collection[typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]] = js.native
-    
-    def getObjectByName(name: String): js.Any = js.native
-    
-    def initializeRelation(model: js.Any, relation: js.Any, options: js.Any): js.Any = js.native
+    def initializeRelation(model: Any, relation: Any, options: Any): Any = js.native
     
     def processOrphanRelations(): Unit = js.native
     
-    def register(model: Model): Unit = js.native
+    def register(model: RelationalModel): Unit = js.native
     
-    def removeModelScope(scope: js.Any): Unit = js.native
+    def removeModelScope(scope: Any): Unit = js.native
     
     def reset(): Unit = js.native
     
-    def resolveIdForItem(`type`: js.Any, item: js.Any): js.Any = js.native
+    def resolveIdForItem(`type`: Any, item: Any): Any = js.native
     
-    def retroFitRelation(relation: Model, create: Boolean): Collection[typings.backbone.mod.Model[js.Any, ModelSetOptions, js.Object]] = js.native
+    def retroFitRelation(relation: RelationalModel, create: Boolean): Collection[Model[Any, ModelSetOptions, Any]] = js.native
     
-    def setupSuperModel(modelType: Model): Unit = js.native
+    def setupSuperModel(modelType: RelationalModel): Unit = js.native
     
-    def unregister(`type`: Collection[Model]): Unit = js.native
-    def unregister(`type`: TypeofModel): Unit = js.native
+    def unregister(`type`: Collection[Model[Any, ModelSetOptions, Any]]): Unit = js.native
+    def unregister(`type`: TypeofRelationalModel): Unit = js.native
     // tslint:disable-next-line use-default-type-parameter
-    def unregister(`type`: Model): Unit = js.native
+    def unregister(`type`: RelationalModel): Unit = js.native
     
-    def update(model: Model): Unit = js.native
+    def update(model: RelationalModel): Unit = js.native
   }
   /* static members */
   object Store_ {
     
-    @JSImport("backbone-relational", "Store")
+    @JSImport("backbone", "Store")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def find(`type`: js.Any, item: String): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Model]
-    inline def find(`type`: js.Any, item: js.Any): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Model]
-    inline def find(`type`: js.Any, item: Double): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Model]
-    inline def find(`type`: js.Any, item: Model): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Model]
+    inline def find(`type`: Any, item: String): RelationalModel = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[RelationalModel]
+    inline def find(`type`: Any, item: Any): RelationalModel = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[RelationalModel]
+    inline def find(`type`: Any, item: Double): RelationalModel = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[RelationalModel]
+    inline def find(`type`: Any, item: RelationalModel): RelationalModel = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(`type`.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[RelationalModel]
   }
   
-  @JSImport("backbone-relational", "store")
+  @JSImport("backbone", "store")
   @js.native
   val store: Store_ = js.native
 }

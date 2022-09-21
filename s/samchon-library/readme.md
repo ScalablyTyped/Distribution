@@ -11,9 +11,9 @@ Samchon Library; XML, EventDispatcher and StringUtil
 | Full name          | samchon-library |
 | Keywords           | XML, Event, EventDispatcher, StringUtil |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 235 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 28.333333333333332 |
+| # stars            | 73.0 |
 
 ## Links
 - [Homepage](https://github.com/samchon/framework)

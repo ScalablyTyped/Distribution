@@ -185,7 +185,7 @@ import typings.carbonComponentsReact.rowMod.RowCustomComponentProps
 import typings.carbonComponentsReact.rowMod.RowDefaultProps
 import typings.carbonComponentsReact.rowMod.RowIntrinsicProps
 import typings.carbonComponentsReact.typingsSharedMod.FCReturn
-import typings.react.mod.JSXElementConstructor
+import typings.carbonComponentsReact.typingsSharedMod.ReactComponentConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -197,7 +197,7 @@ object gridMod {
   val ^ : js.Any = js.native
   
   inline def Column(props: ColumnDefaultProps): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
-  inline def Column[T /* <: JSXElementConstructor[js.Any] */](props: ColumnCustomComponentProps[T]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def Column[T /* <: ReactComponentConstructor[scala.Nothing] */](props: ColumnCustomComponentProps[T]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Column_a(props: ColumnIntrinsicProps[a]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -550,7 +550,7 @@ object gridMod {
   inline def Column_webview(props: ColumnIntrinsicProps[webview]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Grid(props: GridDefaultProps): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
-  inline def Grid[T /* <: JSXElementConstructor[js.Any] */](props: GridCustomComponentProps[T]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def Grid[T /* <: ReactComponentConstructor[scala.Nothing] */](props: GridCustomComponentProps[T]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Grid_a(props: GridIntrinsicProps[a]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
@@ -903,7 +903,7 @@ object gridMod {
   inline def Grid_webview(props: GridIntrinsicProps[webview]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Grid")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Row(props: RowDefaultProps): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
-  inline def Row[T /* <: JSXElementConstructor[js.Any] */](props: RowCustomComponentProps[T]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def Row[T /* <: ReactComponentConstructor[scala.Nothing] */](props: RowCustomComponentProps[T]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def Row_a(props: RowIntrinsicProps[a]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

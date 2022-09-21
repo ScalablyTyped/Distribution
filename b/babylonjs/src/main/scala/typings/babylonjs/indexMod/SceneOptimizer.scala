@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "SceneOptimizer")
 @js.native
-class SceneOptimizer protected ()
+open class SceneOptimizer protected ()
   extends typings.babylonjs.miscIndexMod.SceneOptimizer {
   /**
     * Creates a new SceneOptimizer

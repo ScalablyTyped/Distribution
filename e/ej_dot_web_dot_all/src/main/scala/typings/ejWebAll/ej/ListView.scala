@@ -18,7 +18,7 @@ trait ListView
     * @returns {void}
     */
   def addItem(item: String, index: Double, groupid: String): Unit = js.native
-  def addItem(item: js.Any, index: Double, groupid: String): Unit = js.native
+  def addItem(item: Any, index: Double, groupid: String): Unit = js.native
   
   /** To check all the items.
     * @returns {void}
@@ -69,12 +69,12 @@ trait ListView
   /** To get all the checked items.
     * @returns {any[]}
     */
-  def getCheckedItems(): js.Array[js.Any] = js.native
+  def getCheckedItems(): js.Array[Any] = js.native
   
   /** To get the text of all the checked items.
     * @returns {any[]}
     */
-  def getCheckedItemsText(): js.Array[js.Any] = js.native
+  def getCheckedItemsText(): js.Array[Any] = js.native
   
   /** To get the text of the item in the given index.
     * @param {string|number} Specifies the index value to get the text value.
@@ -171,7 +171,7 @@ object ListView {
     
     /** returns the AJAX settings.
       */
-    var ajaxData: js.UndefOr[js.Any] = js.undefined
+    var ajaxData: js.UndefOr[Any] = js.undefined
     
     /** returns true if the event should be canceled; otherwise, false.
       */
@@ -194,7 +194,7 @@ object ListView {
     
     extension [Self <: AjaxBeforeLoadEventArgs](x: Self) {
       
-      inline def setAjaxData(value: js.Any): Self = StObject.set(x, "ajaxData", value.asInstanceOf[js.Any])
+      inline def setAjaxData(value: Any): Self = StObject.set(x, "ajaxData", value.asInstanceOf[js.Any])
       
       inline def setAjaxDataUndefined: Self = StObject.set(x, "ajaxData", js.undefined)
       
@@ -257,7 +257,7 @@ object ListView {
     
     /** returns the error thrown in the AJAX post.
       */
-    var errorThrown: js.UndefOr[js.Any] = js.undefined
+    var errorThrown: js.UndefOr[Any] = js.undefined
     
     /** returns the current item index.
       */
@@ -265,7 +265,7 @@ object ListView {
     
     /** returns the current list item.
       */
-    var item: js.UndefOr[js.Any] = js.undefined
+    var item: js.UndefOr[Any] = js.undefined
     
     /** returns the model value of the control.
       */
@@ -277,7 +277,7 @@ object ListView {
     
     /** returns the status.
       */
-    var textStatus: js.UndefOr[js.Any] = js.undefined
+    var textStatus: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -296,7 +296,7 @@ object ListView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setErrorThrown(value: js.Any): Self = StObject.set(x, "errorThrown", value.asInstanceOf[js.Any])
+      inline def setErrorThrown(value: Any): Self = StObject.set(x, "errorThrown", value.asInstanceOf[js.Any])
       
       inline def setErrorThrownUndefined: Self = StObject.set(x, "errorThrown", js.undefined)
       
@@ -304,7 +304,7 @@ object ListView {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
       inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
@@ -314,7 +314,7 @@ object ListView {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      inline def setTextStatus(value: js.Any): Self = StObject.set(x, "textStatus", value.asInstanceOf[js.Any])
+      inline def setTextStatus(value: Any): Self = StObject.set(x, "textStatus", value.asInstanceOf[js.Any])
       
       inline def setTextStatusUndefined: Self = StObject.set(x, "textStatus", js.undefined)
       
@@ -342,7 +342,7 @@ object ListView {
     
     /** It specifies the data as an object, will be passed in the query string.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** It specifies the type of data that you're expecting back from the response.
       */
@@ -373,7 +373,7 @@ object ListView {
       
       inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       
@@ -407,7 +407,7 @@ object ListView {
     
     /** returns the current list item.
       */
-    var item: js.UndefOr[js.Any] = js.undefined
+    var item: js.UndefOr[Any] = js.undefined
     
     /** returns the model value of the control.
       */
@@ -442,7 +442,7 @@ object ListView {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
       inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
@@ -468,7 +468,7 @@ object ListView {
     
     /** Defines the HTML attributes such as id, class, styles for the specific list item.
       */
-    var attributes: js.UndefOr[js.Any] = js.undefined
+    var attributes: js.UndefOr[Any] = js.undefined
     
     /** Defines the specific field name which contains Boolean values to specify whether the list items to be checked by default or not.
       */
@@ -527,7 +527,7 @@ object ListView {
     
     extension [Self <: FieldSettings](x: Self) {
       
-      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
@@ -687,7 +687,7 @@ object ListView {
     /** Set the index values to be selected on initial loading. This works only when enableCheckMark is set true.
       * @Default {[]}
       */
-    var checkedIndices: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var checkedIndices: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Sets the root class for ListView theme. This cssClass API helps to use custom skinning option for ListView control. By defining the root class using this API, we need to include
       * this root class in CSS.
@@ -697,7 +697,7 @@ object ListView {
     /** Contains the list of data for generating the ListView items.
       * @Default {[]}
       */
-    var dataSource: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dataSource: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Specifies whether to load AJAX content while selecting item.
       * @Default {false}
@@ -756,7 +756,7 @@ object ListView {
     /** Contains the array of items to be added in ListView.
       * @Default {[]}
       */
-    var items: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var items: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Event triggers before the items loaded.
       */
@@ -791,7 +791,7 @@ object ListView {
     /** Specifies the query to execute with the datasource.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Specifies whether need to render the control with the template contents.
       * @Default {false}
@@ -866,21 +866,21 @@ object ListView {
       
       inline def setAllowVirtualScrollingUndefined: Self = StObject.set(x, "allowVirtualScrolling", js.undefined)
       
-      inline def setCheckedIndices(value: js.Array[js.Any]): Self = StObject.set(x, "checkedIndices", value.asInstanceOf[js.Any])
+      inline def setCheckedIndices(value: js.Array[Any]): Self = StObject.set(x, "checkedIndices", value.asInstanceOf[js.Any])
       
       inline def setCheckedIndicesUndefined: Self = StObject.set(x, "checkedIndices", js.undefined)
       
-      inline def setCheckedIndicesVarargs(value: js.Any*): Self = StObject.set(x, "checkedIndices", js.Array(value :_*))
+      inline def setCheckedIndicesVarargs(value: Any*): Self = StObject.set(x, "checkedIndices", js.Array(value*))
       
       inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setDataSource(value: js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
       inline def setEnableAjax(value: Boolean): Self = StObject.set(x, "enableAjax", value.asInstanceOf[js.Any])
       
@@ -926,11 +926,11 @@ object ListView {
       
       inline def setItemRequestCountUndefined: Self = StObject.set(x, "itemRequestCount", js.undefined)
       
-      inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLoad(value: /* e */ LoadEventArgs => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
@@ -960,7 +960,7 @@ object ListView {
       
       inline def setPreventSelectionUndefined: Self = StObject.set(x, "preventSelection", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       

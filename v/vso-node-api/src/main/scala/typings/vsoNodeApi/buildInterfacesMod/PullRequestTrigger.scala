@@ -23,7 +23,7 @@ object PullRequestTrigger {
     
     inline def setBranchFilters(value: js.Array[String]): Self = StObject.set(x, "branchFilters", value.asInstanceOf[js.Any])
     
-    inline def setBranchFiltersVarargs(value: String*): Self = StObject.set(x, "branchFilters", js.Array(value :_*))
+    inline def setBranchFiltersVarargs(value: String*): Self = StObject.set(x, "branchFilters", js.Array(value*))
     
     inline def setForks(value: Forks): Self = StObject.set(x, "forks", value.asInstanceOf[js.Any])
   }

@@ -13,19 +13,19 @@ trait PerformanceReport extends StObject {
   var bidRequestRate: js.UndefOr[Double] = js.undefined
   
   /** Rate of various prefiltering statuses per match. Please refer to the callout-status-codes.txt file for different statuses. */
-  var calloutStatusRate: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var calloutStatusRate: js.UndefOr[js.Array[Any]] = js.undefined
   
   /** Average QPS for cookie matcher operations. */
-  var cookieMatcherStatusRate: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var cookieMatcherStatusRate: js.UndefOr[js.Array[Any]] = js.undefined
   
   /** Rate of ads with a given status. Please refer to the creative-status-codes.txt file for different statuses. */
-  var creativeStatusRate: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var creativeStatusRate: js.UndefOr[js.Array[Any]] = js.undefined
   
   /** The number of bid responses that were filtered due to a policy violation or other errors. */
   var filteredBidRate: js.UndefOr[Double] = js.undefined
   
   /** Average QPS for hosted match operations. */
-  var hostedMatchStatusRate: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var hostedMatchStatusRate: js.UndefOr[js.Array[Any]] = js.undefined
   
   /** The number of potential queries based on your pretargeting settings. */
   var inventoryMatchRate: js.UndefOr[Double] = js.undefined
@@ -89,33 +89,33 @@ object PerformanceReport {
     
     inline def setBidRequestRateUndefined: Self = StObject.set(x, "bidRequestRate", js.undefined)
     
-    inline def setCalloutStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "calloutStatusRate", value.asInstanceOf[js.Any])
+    inline def setCalloutStatusRate(value: js.Array[Any]): Self = StObject.set(x, "calloutStatusRate", value.asInstanceOf[js.Any])
     
     inline def setCalloutStatusRateUndefined: Self = StObject.set(x, "calloutStatusRate", js.undefined)
     
-    inline def setCalloutStatusRateVarargs(value: js.Any*): Self = StObject.set(x, "calloutStatusRate", js.Array(value :_*))
+    inline def setCalloutStatusRateVarargs(value: Any*): Self = StObject.set(x, "calloutStatusRate", js.Array(value*))
     
-    inline def setCookieMatcherStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "cookieMatcherStatusRate", value.asInstanceOf[js.Any])
+    inline def setCookieMatcherStatusRate(value: js.Array[Any]): Self = StObject.set(x, "cookieMatcherStatusRate", value.asInstanceOf[js.Any])
     
     inline def setCookieMatcherStatusRateUndefined: Self = StObject.set(x, "cookieMatcherStatusRate", js.undefined)
     
-    inline def setCookieMatcherStatusRateVarargs(value: js.Any*): Self = StObject.set(x, "cookieMatcherStatusRate", js.Array(value :_*))
+    inline def setCookieMatcherStatusRateVarargs(value: Any*): Self = StObject.set(x, "cookieMatcherStatusRate", js.Array(value*))
     
-    inline def setCreativeStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "creativeStatusRate", value.asInstanceOf[js.Any])
+    inline def setCreativeStatusRate(value: js.Array[Any]): Self = StObject.set(x, "creativeStatusRate", value.asInstanceOf[js.Any])
     
     inline def setCreativeStatusRateUndefined: Self = StObject.set(x, "creativeStatusRate", js.undefined)
     
-    inline def setCreativeStatusRateVarargs(value: js.Any*): Self = StObject.set(x, "creativeStatusRate", js.Array(value :_*))
+    inline def setCreativeStatusRateVarargs(value: Any*): Self = StObject.set(x, "creativeStatusRate", js.Array(value*))
     
     inline def setFilteredBidRate(value: Double): Self = StObject.set(x, "filteredBidRate", value.asInstanceOf[js.Any])
     
     inline def setFilteredBidRateUndefined: Self = StObject.set(x, "filteredBidRate", js.undefined)
     
-    inline def setHostedMatchStatusRate(value: js.Array[js.Any]): Self = StObject.set(x, "hostedMatchStatusRate", value.asInstanceOf[js.Any])
+    inline def setHostedMatchStatusRate(value: js.Array[Any]): Self = StObject.set(x, "hostedMatchStatusRate", value.asInstanceOf[js.Any])
     
     inline def setHostedMatchStatusRateUndefined: Self = StObject.set(x, "hostedMatchStatusRate", js.undefined)
     
-    inline def setHostedMatchStatusRateVarargs(value: js.Any*): Self = StObject.set(x, "hostedMatchStatusRate", js.Array(value :_*))
+    inline def setHostedMatchStatusRateVarargs(value: Any*): Self = StObject.set(x, "hostedMatchStatusRate", js.Array(value*))
     
     inline def setInventoryMatchRate(value: Double): Self = StObject.set(x, "inventoryMatchRate", value.asInstanceOf[js.Any])
     

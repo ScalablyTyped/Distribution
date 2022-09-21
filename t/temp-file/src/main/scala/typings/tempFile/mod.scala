@@ -12,17 +12,17 @@ object mod {
   
   @JSImport("temp-file", "TmpDir")
   @js.native
-  class TmpDir () extends StObject {
+  open class TmpDir () extends StObject {
     def this(debugName: String) = this()
     
-    def cleanup(): js.Promise[js.Any] = js.native
+    def cleanup(): js.Promise[Any] = js.native
     
     def cleanupSync(): Unit = js.native
     
     def createTempDir(): js.Promise[String] = js.native
     def createTempDir(options: GetTempFileOptions): js.Promise[String] = js.native
     
-    /* private */ val debugName: js.Any = js.native
+    /* private */ val debugName: Any = js.native
     
     def getTempDir(): js.Promise[String] = js.native
     def getTempDir(options: GetTempFileOptions): js.Promise[String] = js.native
@@ -32,11 +32,11 @@ object mod {
     def getTempFile(options: GetTempFileOptions): js.Promise[String] = js.native
     def getTempFile(options: GetTempFileOptions, isDir: Boolean): js.Promise[String] = js.native
     
-    /* private */ var registered: js.Any = js.native
+    /* private */ var registered: Any = js.native
     
     def rootTempDir: js.Promise[String] = js.native
     
-    /* private */ var tempFiles: js.Any = js.native
+    /* private */ var tempFiles: Any = js.native
   }
   
   inline def getTempName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTempName")().asInstanceOf[String]

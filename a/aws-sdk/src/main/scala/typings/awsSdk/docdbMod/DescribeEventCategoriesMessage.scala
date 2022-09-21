@@ -12,7 +12,7 @@ trait DescribeEventCategoriesMessage extends StObject {
   var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * The type of source that is generating the events. Valid values: db-instance, db-parameter-group, db-security-group, db-snapshot 
+    * The type of source that is generating the events. Valid values: db-instance, db-parameter-group, db-security-group 
     */
   var SourceType: js.UndefOr[String] = js.undefined
 }
@@ -29,7 +29,7 @@ object DescribeEventCategoriesMessage {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setSourceType(value: String): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     

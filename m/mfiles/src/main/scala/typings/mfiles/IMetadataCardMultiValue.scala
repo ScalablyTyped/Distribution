@@ -10,13 +10,13 @@ trait IMetadataCardMultiValue extends StObject {
   
   val IsMultiValue: Boolean
   
-  val State: js.Any
+  val State: Any
   
-  val ValueParts: js.Any
+  val ValueParts: Any
 }
 object IMetadataCardMultiValue {
   
-  inline def apply(ID: String, IsMultiValue: Boolean, State: js.Any, ValueParts: js.Any): IMetadataCardMultiValue = {
+  inline def apply(ID: String, IsMultiValue: Boolean, State: Any, ValueParts: Any): IMetadataCardMultiValue = {
     val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any], IsMultiValue = IsMultiValue.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], ValueParts = ValueParts.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMetadataCardMultiValue]
   }
@@ -27,8 +27,8 @@ object IMetadataCardMultiValue {
     
     inline def setIsMultiValue(value: Boolean): Self = StObject.set(x, "IsMultiValue", value.asInstanceOf[js.Any])
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    inline def setValueParts(value: js.Any): Self = StObject.set(x, "ValueParts", value.asInstanceOf[js.Any])
+    inline def setValueParts(value: Any): Self = StObject.set(x, "ValueParts", value.asInstanceOf[js.Any])
   }
 }

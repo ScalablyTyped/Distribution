@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Indenter")
 @js.native
-class Indenter ()
+open class Indenter ()
   extends StObject
      with typings.typescriptServices.TypeScript.Indenter {
   

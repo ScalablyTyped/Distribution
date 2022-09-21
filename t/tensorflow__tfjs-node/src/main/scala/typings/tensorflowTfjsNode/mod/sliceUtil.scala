@@ -2,6 +2,7 @@ package typings.tensorflowTfjsNode.mod
 
 import typings.tensorflowTfjsCore.anon.Begin
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.sliceUtilMod.SliceInfo_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,6 +41,18 @@ object sliceUtil {
   inline def parseSliceParams(x: TensorInfo, begin: Double): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSliceParams")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
   inline def parseSliceParams(x: TensorInfo, begin: Double, size: js.Array[Double]): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSliceParams")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
   inline def parseSliceParams(x: TensorInfo, begin: Double, size: Double): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSliceParams")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
+  
+  inline def sliceInfo(
+    xShape: js.Array[Double],
+    begin: js.Array[Double],
+    end: js.Array[Double],
+    strides: js.Array[Double],
+    beginMask: Double,
+    endMask: Double,
+    ellipsisMask: Double,
+    newAxisMask: Double,
+    shrinkAxisMask: Double
+  ): SliceInfo_ = (^.asInstanceOf[js.Dynamic].applyDynamic("sliceInfo")(xShape.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], beginMask.asInstanceOf[js.Any], endMask.asInstanceOf[js.Any], ellipsisMask.asInstanceOf[js.Any], newAxisMask.asInstanceOf[js.Any], shrinkAxisMask.asInstanceOf[js.Any])).asInstanceOf[SliceInfo_]
   
   inline def startForAxis(
     beginMask: Double,

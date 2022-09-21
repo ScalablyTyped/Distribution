@@ -10,10 +10,10 @@ object signalWifi1BarMod {
   
   @JSImport("material-ui/svg-icons/device/signal-wifi-1-bar", JSImport.Default)
   @js.native
-  class default () extends DeviceSignalWifi1Bar
+  open class default () extends DeviceSignalWifi1Bar
   
   @JSImport("material-ui/svg-icons/device/signal-wifi-1-bar", "DeviceSignalWifi1Bar")
   @js.native
-  class DeviceSignalWifi1Bar ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceSignalWifi1Bar ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

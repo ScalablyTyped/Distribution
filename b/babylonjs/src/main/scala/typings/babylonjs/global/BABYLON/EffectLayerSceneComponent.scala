@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.EffectLayerSceneComponent")
 @js.native
-class EffectLayerSceneComponent protected ()
+/**
+  * Creates a new instance of the component for the given scene
+  * @param scene Defines the scene to register the component in
+  */
+open class EffectLayerSceneComponent ()
   extends StObject
      with typings.babylonjs.BABYLON.EffectLayerSceneComponent {
-  /**
-    * Creates a new instance of the component for the given scene
-    * @param scene Defines the scene to register the component in
-    */
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /**

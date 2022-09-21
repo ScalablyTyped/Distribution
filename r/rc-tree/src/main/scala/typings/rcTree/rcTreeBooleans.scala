@@ -1,5 +1,6 @@
 package typings.rcTree
 
+import typings.rcTree.treeMod.ExpandAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object rcTreeBooleans {
   
   @js.native
-  sealed trait `false` extends StObject
+  sealed trait `false`
+    extends StObject
+       with ExpandAction
   inline def `false`: `false` = false.asInstanceOf[`false`]
   
   @js.native

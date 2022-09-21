@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "Steps")
 @js.native
-class Steps protected () extends default {
+open class Steps protected () extends default {
   def this(props: StepsProps) = this()
 }
 /* static members */

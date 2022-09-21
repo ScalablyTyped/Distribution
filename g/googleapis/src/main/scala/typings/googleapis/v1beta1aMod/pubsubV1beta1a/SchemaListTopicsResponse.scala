@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for the ListTopics method.
-  */
 trait SchemaListTopicsResponse extends StObject {
   
   /**
-    * If not empty, indicates that there are more topics that match the
-    * request, and this value should be passed to the next
-    * &lt;code&gt;ListTopicsRequest&lt;/code&gt; to continue.
+    * If not empty, indicates that there are more topics that match the request, and this value should be passed to the next ListTopicsRequest to continue.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The resulting topics.
@@ -32,12 +27,14 @@ object SchemaListTopicsResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setTopic(value: js.Array[SchemaTopic]): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
     
-    inline def setTopicVarargs(value: SchemaTopic*): Self = StObject.set(x, "topic", js.Array(value :_*))
+    inline def setTopicVarargs(value: SchemaTopic*): Self = StObject.set(x, "topic", js.Array(value*))
   }
 }

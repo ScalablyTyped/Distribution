@@ -1,21 +1,20 @@
 package typings.browserfs.zipFSMod
 
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("browserfs/dist/node/backend/ZipFS", "FileHeader")
 @js.native
-class FileHeader protected () extends StObject {
+open class FileHeader protected () extends StObject {
   def this(data: Buffer) = this()
   
   def compressionMethod(): CompressionMethod = js.native
   
   def crc32(): Double = js.native
   
-  /* private */ var data: js.Any = js.native
+  /* private */ var data: Any = js.native
   
   def extraField(): Buffer = js.native
   
@@ -38,7 +37,7 @@ class FileHeader protected () extends StObject {
   
   def flags(): Double = js.native
   
-  def lastModFileTime(): Date = js.native
+  def lastModFileTime(): js.Date = js.native
   
   def rawLastModFileTime(): Double = js.native
   

@@ -10,10 +10,10 @@ Get status bar height for React Native App
 | ------------------ | :-------------: |
 | Full name          | react-native-status-bar-height |
 | Keywords           | react-native |
-| # releases         | 9 |
-| # dependents       | 61 |
-| # downloads        | 4204146 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 323058.3333333333 |
+| # stars            | 391.0 |
 
 ## Links
 - [Homepage](https://github.com/ovr/react-native-status-bar-height#readme)

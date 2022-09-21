@@ -34,7 +34,7 @@ object mod {
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
     - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IState * / any */ trait IPermissionState extends StObject {
       
-      var data: js.UndefOr[js.Any | DataWithPermissions] = js.undefined
+      var data: js.UndefOr[Any | DataWithPermissions] = js.undefined
     }
     object IPermissionState {
       
@@ -45,7 +45,7 @@ object mod {
       
       extension [Self <: IPermissionState](x: Self) {
         
-        inline def setData(value: js.Any | DataWithPermissions): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: Any | DataWithPermissions): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
         inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       }
@@ -55,13 +55,13 @@ object mod {
       
       var permissionName: String
       
-      def validatePermission(): IPromise[js.Any]
+      def validatePermission(): IPromise[Any]
       
       var validationFunction: js.UndefOr[PermissionValidationFunction] = js.undefined
     }
     object Permission {
       
-      inline def apply(permissionName: String, validatePermission: () => IPromise[js.Any]): Permission = {
+      inline def apply(permissionName: String, validatePermission: () => IPromise[Any]): Permission = {
         val __obj = js.Dynamic.literal(permissionName = permissionName.asInstanceOf[js.Any], validatePermission = js.Any.fromFunction0(validatePermission))
         __obj.asInstanceOf[Permission]
       }
@@ -70,10 +70,10 @@ object mod {
         
         inline def setPermissionName(value: String): Self = StObject.set(x, "permissionName", value.asInstanceOf[js.Any])
         
-        inline def setValidatePermission(value: () => IPromise[js.Any]): Self = StObject.set(x, "validatePermission", js.Any.fromFunction0(value))
+        inline def setValidatePermission(value: () => IPromise[Any]): Self = StObject.set(x, "validatePermission", js.Any.fromFunction0(value))
         
         inline def setValidationFunction(
-          value: (/* permissionName */ js.UndefOr[String], /* transitionProperties */ js.UndefOr[TransitionProperties]) => Boolean | IPromise[js.Any]
+          value: (/* permissionName */ js.UndefOr[String], /* transitionProperties */ js.UndefOr[TransitionProperties]) => Boolean | IPromise[Any]
         ): Self = StObject.set(x, "validationFunction", js.Any.fromFunction2(value))
         
         inline def setValidationFunctionUndefined: Self = StObject.set(x, "validationFunction", js.undefined)
@@ -83,7 +83,7 @@ object mod {
     trait PermissionRedirectConfigation extends StObject {
       
       var options: js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateOptions */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateOptions */ Any
           ] = js.undefined
       
       var params: js.UndefOr[js.Object] = js.undefined
@@ -100,7 +100,7 @@ object mod {
       extension [Self <: PermissionRedirectConfigation](x: Self) {
         
         inline def setOptions(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateOptions */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateOptions */ Any
         ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
         inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
@@ -209,7 +209,7 @@ object mod {
     type PermissionValidationFunction = js.Function2[
         /* permissionName */ js.UndefOr[String], 
         /* transitionProperties */ js.UndefOr[TransitionProperties], 
-        Boolean | IPromise[js.Any]
+        Boolean | IPromise[Any]
       ]
     
     trait Role extends StObject {
@@ -218,13 +218,13 @@ object mod {
       
       var roleName: String
       
-      def validateRole(): IPromise[js.Any]
+      def validateRole(): IPromise[Any]
       
       var validationFunction: js.UndefOr[RoleValidationFunction] = js.undefined
     }
     object Role {
       
-      inline def apply(permissionNames: js.Array[String], roleName: String, validateRole: () => IPromise[js.Any]): Role = {
+      inline def apply(permissionNames: js.Array[String], roleName: String, validateRole: () => IPromise[Any]): Role = {
         val __obj = js.Dynamic.literal(permissionNames = permissionNames.asInstanceOf[js.Any], roleName = roleName.asInstanceOf[js.Any], validateRole = js.Any.fromFunction0(validateRole))
         __obj.asInstanceOf[Role]
       }
@@ -233,14 +233,14 @@ object mod {
         
         inline def setPermissionNames(value: js.Array[String]): Self = StObject.set(x, "permissionNames", value.asInstanceOf[js.Any])
         
-        inline def setPermissionNamesVarargs(value: String*): Self = StObject.set(x, "permissionNames", js.Array(value :_*))
+        inline def setPermissionNamesVarargs(value: String*): Self = StObject.set(x, "permissionNames", js.Array(value*))
         
         inline def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
         
-        inline def setValidateRole(value: () => IPromise[js.Any]): Self = StObject.set(x, "validateRole", js.Any.fromFunction0(value))
+        inline def setValidateRole(value: () => IPromise[Any]): Self = StObject.set(x, "validateRole", js.Any.fromFunction0(value))
         
         inline def setValidationFunction(
-          value: (/* roleName */ js.UndefOr[String], /* transitionProperties */ js.UndefOr[TransitionProperties]) => Boolean | IPromise[js.Any]
+          value: (/* roleName */ js.UndefOr[String], /* transitionProperties */ js.UndefOr[TransitionProperties]) => Boolean | IPromise[Any]
         ): Self = StObject.set(x, "validationFunction", js.Any.fromFunction2(value))
         
         inline def setValidationFunctionUndefined: Self = StObject.set(x, "validationFunction", js.undefined)
@@ -311,29 +311,29 @@ object mod {
     type RoleValidationFunction = js.Function2[
         /* roleName */ js.UndefOr[String], 
         /* transitionProperties */ js.UndefOr[TransitionProperties], 
-        Boolean | IPromise[js.Any]
+        Boolean | IPromise[Any]
       ]
     
     trait TransitionProperties extends StObject {
       
       var fromParams: js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateParamsService */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateParamsService */ Any
           ] = js.undefined
       
       var fromState: js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IState */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IState */ Any
           ] = js.undefined
       
       var options: js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateOptions */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateOptions */ Any
           ] = js.undefined
       
       var toParams: js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateParamsService */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateParamsService */ Any
           ] = js.undefined
       
       var toState: js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IState */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IState */ Any
           ] = js.undefined
     }
     object TransitionProperties {
@@ -346,31 +346,31 @@ object mod {
       extension [Self <: TransitionProperties](x: Self) {
         
         inline def setFromParams(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateParamsService */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateParamsService */ Any
         ): Self = StObject.set(x, "fromParams", value.asInstanceOf[js.Any])
         
         inline def setFromParamsUndefined: Self = StObject.set(x, "fromParams", js.undefined)
         
         inline def setFromState(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IState */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IState */ Any
         ): Self = StObject.set(x, "fromState", value.asInstanceOf[js.Any])
         
         inline def setFromStateUndefined: Self = StObject.set(x, "fromState", js.undefined)
         
         inline def setOptions(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateOptions */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateOptions */ Any
         ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
         inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
         
         inline def setToParams(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateParamsService */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IStateParamsService */ Any
         ): Self = StObject.set(x, "toParams", value.asInstanceOf[js.Any])
         
         inline def setToParamsUndefined: Self = StObject.set(x, "toParams", js.undefined)
         
         inline def setToState(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IState */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.ui.IState */ Any
         ): Self = StObject.set(x, "toState", value.asInstanceOf[js.Any])
         
         inline def setToStateUndefined: Self = StObject.set(x, "toState", js.undefined)

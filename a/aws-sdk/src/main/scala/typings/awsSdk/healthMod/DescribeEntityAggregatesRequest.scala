@@ -24,6 +24,6 @@ object DescribeEntityAggregatesRequest {
     
     inline def setEventArnsUndefined: Self = StObject.set(x, "eventArns", js.undefined)
     
-    inline def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value :_*))
+    inline def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value*))
   }
 }

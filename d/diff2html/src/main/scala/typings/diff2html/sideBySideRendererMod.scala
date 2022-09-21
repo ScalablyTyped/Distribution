@@ -20,7 +20,7 @@ object sideBySideRendererMod {
   
   @JSImport("diff2html/lib/side-by-side-renderer", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with SideBySideRenderer {
     def this(hoganUtils: typings.diff2html.hoganjsUtilsMod.default) = this()
@@ -136,7 +136,7 @@ object sideBySideRendererMod {
     
     def applyRematchMatching(oldLines: js.Array[DiffLine], newLines: js.Array[DiffLine], matcher: MatcherFn[DiffLine]): js.Array[js.Array[js.Array[DiffLine]]] = js.native
     
-    /* private */ val config: js.Any = js.native
+    /* private */ val config: Any = js.native
     
     def generateEmptyDiff(): FileHtml = js.native
     
@@ -150,11 +150,12 @@ object sideBySideRendererMod {
     def generateSingleHtml(): String = js.native
     def generateSingleHtml(line: DiffPreparedLine): String = js.native
     
-    /* private */ val hoganUtils: js.Any = js.native
+    /* private */ val hoganUtils: Any = js.native
     
     def makeFileDiffHtml(file: DiffFile, diffs: FileHtml): String = js.native
     
     def makeHeaderHtml(blockHeader: String): String = js.native
+    def makeHeaderHtml(blockHeader: String, file: DiffFile): String = js.native
     
     def processChangedLines(isCombined: Boolean, oldLines: js.Array[DiffLine], newLines: js.Array[DiffLine]): FileHtml = js.native
     

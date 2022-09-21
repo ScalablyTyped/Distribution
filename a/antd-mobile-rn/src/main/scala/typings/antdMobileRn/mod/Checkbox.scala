@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "Checkbox")
 @js.native
-class Checkbox protected () extends default {
-  def this(props: CheckboxPropsType, context: js.Any) = this()
+open class Checkbox protected () extends default {
+  def this(props: CheckboxPropsType, context: Any) = this()
 }
 /* static members */
 object Checkbox {
@@ -21,13 +21,13 @@ object Checkbox {
   
   @JSImport("antd-mobile-rn", "Checkbox.AgreeItem")
   @js.native
-  def AgreeItem: js.Any = js.native
-  inline def AgreeItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgreeItem")(x.asInstanceOf[js.Any])
+  def AgreeItem: Any = js.native
+  inline def AgreeItem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgreeItem")(x.asInstanceOf[js.Any])
   
   @JSImport("antd-mobile-rn", "Checkbox.CheckboxItem")
   @js.native
-  def CheckboxItem: js.Any = js.native
-  inline def CheckboxItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CheckboxItem")(x.asInstanceOf[js.Any])
+  def CheckboxItem: Any = js.native
+  inline def CheckboxItem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CheckboxItem")(x.asInstanceOf[js.Any])
   
   @JSImport("antd-mobile-rn", "Checkbox.defaultProps")
   @js.native

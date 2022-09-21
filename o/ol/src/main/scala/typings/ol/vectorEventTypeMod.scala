@@ -19,6 +19,12 @@ object vectorEventTypeMod {
     
     /* "clear" */ val CLEAR: typings.ol.vectorEventTypeMod.VectorEventType.CLEAR & String = js.native
     
+    /* "featuresloadend" */ val FEATURESLOADEND: typings.ol.vectorEventTypeMod.VectorEventType.FEATURESLOADEND & String = js.native
+    
+    /* "featuresloaderror" */ val FEATURESLOADERROR: typings.ol.vectorEventTypeMod.VectorEventType.FEATURESLOADERROR & String = js.native
+    
+    /* "featuresloadstart" */ val FEATURESLOADSTART: typings.ol.vectorEventTypeMod.VectorEventType.FEATURESLOADSTART & String = js.native
+    
     /* "removefeature" */ val REMOVEFEATURE: typings.ol.vectorEventTypeMod.VectorEventType.REMOVEFEATURE & String = js.native
   }
   
@@ -40,6 +46,21 @@ object vectorEventTypeMod {
     
     @js.native
     sealed trait CLEAR
+      extends StObject
+         with VectorEventType
+    
+    @js.native
+    sealed trait FEATURESLOADEND
+      extends StObject
+         with VectorEventType
+    
+    @js.native
+    sealed trait FEATURESLOADERROR
+      extends StObject
+         with VectorEventType
+    
+    @js.native
+    sealed trait FEATURESLOADSTART
       extends StObject
          with VectorEventType
     

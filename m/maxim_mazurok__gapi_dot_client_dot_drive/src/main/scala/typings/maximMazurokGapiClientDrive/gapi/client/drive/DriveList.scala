@@ -31,7 +31,7 @@ object DriveList {
     
     inline def setDrivesUndefined: Self = StObject.set(x, "drives", js.undefined)
     
-    inline def setDrivesVarargs(value: Drive*): Self = StObject.set(x, "drives", js.Array(value :_*))
+    inline def setDrivesVarargs(value: Drive*): Self = StObject.set(x, "drives", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

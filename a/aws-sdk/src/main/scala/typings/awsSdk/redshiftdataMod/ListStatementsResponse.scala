@@ -31,6 +31,6 @@ object ListStatementsResponse {
     
     inline def setStatements(value: StatementList): Self = StObject.set(x, "Statements", value.asInstanceOf[js.Any])
     
-    inline def setStatementsVarargs(value: StatementData*): Self = StObject.set(x, "Statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: StatementData*): Self = StObject.set(x, "Statements", js.Array(value*))
   }
 }

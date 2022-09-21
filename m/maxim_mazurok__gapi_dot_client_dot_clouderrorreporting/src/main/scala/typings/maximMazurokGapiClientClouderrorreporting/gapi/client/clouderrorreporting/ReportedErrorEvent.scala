@@ -9,7 +9,11 @@ trait ReportedErrorEvent extends StObject {
   /** Optional. A description of the context in which the error occurred. */
   var context: js.UndefOr[ErrorContext] = js.undefined
   
-  /** Optional. Time when the event occurred. If not provided, the time when the event was received by the Error Reporting system will be used. */
+  /**
+    * Optional. Time when the event occurred. If not provided, the time when the event was received by the Error Reporting system is used. If provided, the time must not exceed the [logs
+    * retention period](https://cloud.google.com/logging/quotas#logs_retention_periods) in the past, or be more than 24 hours in the future. If an invalid time is provided, then an error
+    * is returned.
+    */
   var eventTime: js.UndefOr[String] = js.undefined
   
   /**
@@ -19,8 +23,8 @@ trait ReportedErrorEvent extends StObject {
     * **Python**: Must be the return value of [`traceback.format_exc()`](https://docs.python.org/2/library/traceback.html#traceback.format_exc). * **JavaScript**: Must be the value of
     * [`error.stack`](https://github.com/v8/v8/wiki/Stack-Trace-API) as returned by V8. * **Ruby**: Must contain frames returned by
     * [`Exception.backtrace`](https://ruby-doc.org/core-2.2.0/Exception.html#method-i-backtrace). * **C#**: Must be the return value of
-    * [`Exception.ToString()`](https://msdn.microsoft.com/en-us/library/system.exception.tostring.aspx). * **PHP**: Must start with `PHP (Notice|Parse error|Fatal error|Warning)` and
-    * contain the result of [`(string)$exception`](http://php.net/manual/en/exception.tostring.php). * **Go**: Must be the return value of
+    * [`Exception.ToString()`](https://msdn.microsoft.com/en-us/library/system.exception.tostring.aspx). * **PHP**: Must be prefixed with `"PHP (Notice|Parse error|Fatal error|Warning):
+    * "` and contain the result of [`(string)$exception`](https://php.net/manual/en/exception.tostring.php). * **Go**: Must be the return value of
     * [`runtime.Stack()`](https://golang.org/pkg/runtime/debug/#Stack).
     */
   var message: js.UndefOr[String] = js.undefined

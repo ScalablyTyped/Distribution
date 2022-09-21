@@ -24,6 +24,6 @@ object DescribeStacksRequest {
     
     inline def setStackIdsUndefined: Self = StObject.set(x, "StackIds", js.undefined)
     
-    inline def setStackIdsVarargs(value: String*): Self = StObject.set(x, "StackIds", js.Array(value :_*))
+    inline def setStackIdsVarargs(value: String*): Self = StObject.set(x, "StackIds", js.Array(value*))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("webcola", "Calculator")
 @js.native
-class Calculator[Link] protected ()
+open class Calculator[Link] protected ()
   extends typings.webcola.shortestpathsMod.Calculator[Link] {
   def this(
     n: Double,

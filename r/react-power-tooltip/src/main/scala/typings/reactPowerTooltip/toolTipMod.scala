@@ -1,6 +1,7 @@
 package typings.reactPowerTooltip
 
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,8 +10,8 @@ object toolTipMod {
   
   @JSImport("react-power-tooltip/ToolTip", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TooltipProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TooltipProps, js.Object, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactPowerTooltip.reactPowerTooltipStrings.fade
@@ -81,7 +82,7 @@ object toolTipMod {
     inline def `top start`: typings.reactPowerTooltip.reactPowerTooltipStrings.`top start` = ("top start").asInstanceOf[typings.reactPowerTooltip.reactPowerTooltipStrings.`top start`]
   }
   
-  type Tooltip = Component[TooltipProps, js.Object, js.Any]
+  type Tooltip = Component[TooltipProps, js.Object, Any]
   
   trait TooltipProps extends StObject {
     
@@ -90,6 +91,8 @@ object toolTipMod {
     var arrowAlign: js.UndefOr[ArrowAlignType] = js.undefined
     
     var backgroundColor: js.UndefOr[String] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
@@ -143,6 +146,10 @@ object toolTipMod {
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

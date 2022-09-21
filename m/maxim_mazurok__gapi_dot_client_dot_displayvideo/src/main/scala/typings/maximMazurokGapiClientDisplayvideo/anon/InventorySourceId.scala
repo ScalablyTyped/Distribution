@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.EditInventorySourceReadWriteAccessorsRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ trait InventorySourceId extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** Required. The ID of the inventory source to fetch. */
+  /** Required. The ID of inventory source to update. */
   var inventorySourceId: String
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
@@ -31,14 +32,14 @@ trait InventorySourceId extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The ID of the DV360 partner to which the fetched inventory source is permissioned. */
-  var partnerId: js.UndefOr[String] = js.undefined
-  
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Request body */
+  var resource: EditInventorySourceReadWriteAccessorsRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -48,8 +49,8 @@ trait InventorySourceId extends StObject {
 }
 object InventorySourceId {
   
-  inline def apply(inventorySourceId: String): InventorySourceId = {
-    val __obj = js.Dynamic.literal(inventorySourceId = inventorySourceId.asInstanceOf[js.Any])
+  inline def apply(inventorySourceId: String, resource: EditInventorySourceReadWriteAccessorsRequest): InventorySourceId = {
+    val __obj = js.Dynamic.literal(inventorySourceId = inventorySourceId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventorySourceId]
   }
   
@@ -85,10 +86,6 @@ object InventorySourceId {
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
-    
-    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
-    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
@@ -96,6 +93,8 @@ object InventorySourceId {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: EditInventorySourceReadWriteAccessorsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

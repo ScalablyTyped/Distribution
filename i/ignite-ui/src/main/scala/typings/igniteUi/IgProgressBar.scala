@@ -11,7 +11,7 @@ trait IgProgressBar
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   var animate: js.UndefOr[Boolean] = js.undefined
   

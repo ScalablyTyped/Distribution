@@ -40,7 +40,7 @@ object Device {
     
     inline def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)
     
-    inline def setClaimsVarargs(value: DeviceClaim*): Self = StObject.set(x, "claims", js.Array(value :_*))
+    inline def setClaimsVarargs(value: DeviceClaim*): Self = StObject.set(x, "claims", js.Array(value*))
     
     inline def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

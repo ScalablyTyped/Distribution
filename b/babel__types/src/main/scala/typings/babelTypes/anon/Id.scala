@@ -1,8 +1,8 @@
 package typings.babelTypes.anon
 
 import typings.babelTypes.babelTypesStrings.`var`
-import typings.babelTypes.indexTs37Mod.Expression
-import typings.babelTypes.indexTs37Mod.LVal
+import typings.babelTypes.mod.Expression
+import typings.babelTypes.mod.LVal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -13,10 +13,10 @@ object categoryMod {
   
   @JSImport("emoji-mart/dist-es/components/category", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Props, js.Object, js.Any]
+  open class default ()
+    extends Component[Props, js.Object, Any]
   
-  type Category = Component[Props, js.Object, js.Any]
+  type Category = Component[Props, js.Object, Any]
   
   trait Props extends StObject {
     
@@ -60,7 +60,7 @@ object categoryMod {
       
       inline def setEmojisUndefined: Self = StObject.set(x, "emojis", js.undefined)
       
-      inline def setEmojisVarargs(value: (String | EmojiData)*): Self = StObject.set(x, "emojis", js.Array(value :_*))
+      inline def setEmojisVarargs(value: (String | EmojiData)*): Self = StObject.set(x, "emojis", js.Array(value*))
       
       inline def setHasStickyPosition(value: Boolean): Self = StObject.set(x, "hasStickyPosition", value.asInstanceOf[js.Any])
       
@@ -80,7 +80,7 @@ object categoryMod {
       
       inline def setRecentUndefined: Self = StObject.set(x, "recent", js.undefined)
       
-      inline def setRecentVarargs(value: String*): Self = StObject.set(x, "recent", js.Array(value :_*))
+      inline def setRecentVarargs(value: String*): Self = StObject.set(x, "recent", js.Array(value*))
     }
   }
 }

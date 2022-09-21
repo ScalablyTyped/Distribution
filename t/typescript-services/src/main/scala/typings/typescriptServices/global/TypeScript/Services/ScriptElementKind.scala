@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.ScriptElementKind")
 @js.native
-class ScriptElementKind ()
+open class ScriptElementKind ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.ScriptElementKind
 object ScriptElementKind {

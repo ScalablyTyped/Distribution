@@ -14,7 +14,7 @@ trait FleetSummary extends StObject {
   /**
     * The time when the fleet was created.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the fleet to display.
@@ -39,7 +39,7 @@ trait FleetSummary extends StObject {
   /**
     * The time when the fleet was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[DateTime] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The tags attached to the resource. A tag is a key-value pair.
@@ -59,7 +59,7 @@ object FleetSummary {
     
     inline def setCompanyCodeUndefined: Self = StObject.set(x, "CompanyCode", js.undefined)
     
-    inline def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -79,7 +79,7 @@ object FleetSummary {
     
     inline def setFleetStatusUndefined: Self = StObject.set(x, "FleetStatus", js.undefined)
     
-    inline def setLastUpdatedTime(value: DateTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("couchbase", "SpatialQuery")
 @js.native
-class SpatialQuery () extends StObject {
+open class SpatialQuery () extends StObject {
   
   /**
     * Specifies a bounding box to query the index for. This value must be an array of exactly 4 numbers which represents the left, top, right and bottom edges of the bounding box (in that order).
@@ -22,7 +22,7 @@ class SpatialQuery () extends StObject {
     * Allows you to specify custom view options that may not be available though the fluent interface defined by this class.
     * @param opts
     */
-  def custom(opts: js.Any): SpatialQuery = js.native
+  def custom(opts: Any): SpatialQuery = js.native
   
   /**
     * Specifies the design document and view name to use for this query.

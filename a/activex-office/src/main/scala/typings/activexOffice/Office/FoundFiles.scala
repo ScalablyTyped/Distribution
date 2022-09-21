@@ -9,7 +9,7 @@ trait FoundFiles extends StObject {
   
   def apply(Index: Double): String = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   

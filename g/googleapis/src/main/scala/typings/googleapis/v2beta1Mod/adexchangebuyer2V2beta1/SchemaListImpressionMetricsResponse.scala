@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for listing the metrics that are measured in number of
-  * impressions.
-  */
 trait SchemaListImpressionMetricsResponse extends StObject {
   
   /**
@@ -16,11 +12,9 @@ trait SchemaListImpressionMetricsResponse extends StObject {
   var impressionMetricsRows: js.UndefOr[js.Array[SchemaImpressionMetricsRow]] = js.undefined
   
   /**
-    * A token to retrieve the next page of results. Pass this value in the
-    * ListImpressionMetricsRequest.pageToken field in the subsequent call to
-    * the impressionMetrics.list method to retrieve the next page of results.
+    * A token to retrieve the next page of results. Pass this value in the ListImpressionMetricsRequest.pageToken field in the subsequent call to the impressionMetrics.list method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListImpressionMetricsResponse {
   
@@ -35,9 +29,11 @@ object SchemaListImpressionMetricsResponse {
     
     inline def setImpressionMetricsRowsUndefined: Self = StObject.set(x, "impressionMetricsRows", js.undefined)
     
-    inline def setImpressionMetricsRowsVarargs(value: SchemaImpressionMetricsRow*): Self = StObject.set(x, "impressionMetricsRows", js.Array(value :_*))
+    inline def setImpressionMetricsRowsVarargs(value: SchemaImpressionMetricsRow*): Self = StObject.set(x, "impressionMetricsRows", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

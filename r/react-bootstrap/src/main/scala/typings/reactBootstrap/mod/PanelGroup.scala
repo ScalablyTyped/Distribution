@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "PanelGroup")
 @js.native
-class PanelGroup ()
+open class PanelGroup ()
   extends typings.reactBootstrap.libMod.PanelGroup

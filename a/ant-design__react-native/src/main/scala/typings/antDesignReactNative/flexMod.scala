@@ -9,7 +9,7 @@ object flexMod {
   
   @JSImport("@ant-design/react-native/lib/flex", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.antDesignReactNative.flexFlexMod.default
   /* static members */
   object default {
@@ -20,8 +20,8 @@ object flexMod {
     
     @JSImport("@ant-design/react-native/lib/flex", "default.Item")
     @js.native
-    def Item: js.Any = js.native
-    inline def Item_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    def Item: Any = js.native
+    inline def Item_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/flex", "default.defaultProps")
     @js.native

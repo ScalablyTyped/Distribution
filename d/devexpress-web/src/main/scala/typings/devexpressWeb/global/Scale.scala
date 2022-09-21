@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Scale")
 @js.native
-class Scale ()
+open class Scale ()
   extends StObject
      with typings.devexpressWeb.Scale {
   

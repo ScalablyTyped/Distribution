@@ -17,14 +17,14 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in std.Exclude<keyof filepond.filepond.FilePond, react-filepond.react-filepond.FilteredMethods> ]: filepond.filepond.FilePond[P]} */ @JSImport("react-filepond", "FilePond")
   @js.native
-  class FilePond protected ()
-    extends Component[FilePondProps, js.Object, js.Any] {
+  open class FilePond protected ()
+    extends Component[FilePondProps, js.Object, Any] {
     def this(props: FilePondProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: FilePondProps, context: js.Any) = this()
+    def this(props: FilePondProps, context: Any) = this()
   }
   
   @JSImport("react-filepond", "FileStatus")
@@ -53,7 +53,7 @@ object mod {
     /* 10 */ val PROCESSING_REVERT_ERROR: typings.filepond.mod.FileStatus.PROCESSING_REVERT_ERROR & Double = js.native
   }
   
-  inline def registerPlugin(plugins: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(plugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerPlugin(plugins: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(plugins.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   trait FilePondProps
     extends StObject
@@ -76,7 +76,7 @@ object mod {
       
       inline def setAcceptedFileTypesUndefined: Self = StObject.set(x, "acceptedFileTypes", js.undefined)
       
-      inline def setAcceptedFileTypesVarargs(value: String*): Self = StObject.set(x, "acceptedFileTypes", js.Array(value :_*))
+      inline def setAcceptedFileTypesVarargs(value: String*): Self = StObject.set(x, "acceptedFileTypes", js.Array(value*))
     }
   }
   
@@ -193,6 +193,9 @@ object mod {
     - typings.reactFilepond.reactFilepondStrings.itemInsertLocationFreedom
     - typings.reactFilepond.reactFilepondStrings.itemInsertLocation
     - typings.reactFilepond.reactFilepondStrings.itemInsertInterval
+    - typings.reactFilepond.reactFilepondStrings.fileSizeBase
+    - typings.reactFilepond.reactFilepondStrings.storeAsFile
+    - typings.reactFilepond.reactFilepondStrings.credits
   */
   trait FilteredMethods extends StObject
   

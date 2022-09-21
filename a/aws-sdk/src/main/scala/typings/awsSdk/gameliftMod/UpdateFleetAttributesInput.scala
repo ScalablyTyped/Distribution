@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateFleetAttributesInput extends StObject {
   
   /**
-    * Human-readable description of a fleet.
+    * A human-readable description of a fleet.
     */
   var Description: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * A unique identifier for a fleet to update attribute metadata for. You can use either the fleet ID or ARN value.
+    * A unique identifier for the fleet to update attribute metadata for. You can use either the fleet ID or ARN value.
     */
   var FleetId: FleetIdOrArn
   
   /**
-    * Names of metric groups to include this fleet in. Amazon CloudWatch uses a fleet metric group is to aggregate metrics from multiple fleets. Use an existing metric group name to add this fleet to the group. Or use a new name to create a new metric group. A fleet can only be included in one metric group at a time.
+    * The name of a metric group to add this fleet to. Use a metric group in Amazon CloudWatch to aggregate the metrics from multiple fleets. Provide an existing metric group name, or create a new metric group by providing a new name. A fleet can only be in one metric group at a time.
     */
   var MetricGroups: js.UndefOr[MetricGroupList] = js.undefined
   
@@ -27,12 +27,12 @@ trait UpdateFleetAttributesInput extends StObject {
   var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * Game session protection policy to apply to all new instances created in this fleet. Instances that already exist are not affected. You can set protection for individual instances using UpdateGameSession.    NoProtection -- The game session can be terminated during a scale-down event.    FullProtection -- If the game session is in an ACTIVE status, it cannot be terminated during a scale-down event.  
+    * The game session protection policy to apply to all new instances created in this fleet. Instances that already exist are not affected. You can set protection for individual instances using UpdateGameSession.    NoProtection -- The game session can be terminated during a scale-down event.    FullProtection -- If the game session is in an ACTIVE status, it cannot be terminated during a scale-down event.  
     */
   var NewGameSessionProtectionPolicy: js.UndefOr[ProtectionPolicy] = js.undefined
   
   /**
-    * Policy that limits the number of game sessions an individual player can create over a span of time. 
+    * Policy settings that limit the number of game sessions an individual player can create over a span of time. 
     */
   var ResourceCreationLimitPolicy: js.UndefOr[typings.awsSdk.gameliftMod.ResourceCreationLimitPolicy] = js.undefined
 }
@@ -55,7 +55,7 @@ object UpdateFleetAttributesInput {
     
     inline def setMetricGroupsUndefined: Self = StObject.set(x, "MetricGroups", js.undefined)
     
-    inline def setMetricGroupsVarargs(value: MetricGroup*): Self = StObject.set(x, "MetricGroups", js.Array(value :_*))
+    inline def setMetricGroupsVarargs(value: MetricGroup*): Self = StObject.set(x, "MetricGroups", js.Array(value*))
     
     inline def setName(value: NonZeroAndMaxString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "ActivityIndicator")
 @js.native
-class ActivityIndicator () extends default
+open class ActivityIndicator () extends default
 /* static members */
 object ActivityIndicator {
   

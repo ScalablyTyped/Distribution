@@ -1,10 +1,14 @@
 package typings.hibp
 
+import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.StringDictionary
 import typings.hibp.anon.ApiKey
 import typings.hibp.anon.BaseUrl
 import typings.hibp.anon.Domain
 import typings.hibp.anon.Truncate
 import typings.hibp.anon.UserAgent
+import typings.std.Error
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,6 +18,37 @@ object mod {
   @JSImport("hibp", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("hibp", "RateLimitError")
+  @js.native
+  open class RateLimitError protected ()
+    extends StObject
+       with Error {
+    def this(
+      retryAfter: ReturnType[js.Function1[/* name */ String, String | Null]],
+      message: /* import warning: importer.ImportType#apply Failed type conversion: std.Error['constructor']['prototype']['message'] */ js.Any
+    ) = this()
+    def this(
+      retryAfter: ReturnType[js.Function1[/* name */ String, String | Null]],
+      message: /* import warning: importer.ImportType#apply Failed type conversion: std.Error['constructor']['prototype']['message'] */ js.Any,
+      options: /* import warning: importer.ImportType#apply Failed type conversion: std.Error['constructor']['prototype']['options'] */ js.Any
+    ) = this()
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /**
+      * The number of seconds to wait before attempting the request again. May be
+      * `undefined` if the API does not provide a `retry-after` header, but this
+      * should never happen.
+      */
+    var retryAfterSeconds: js.UndefOr[Double] = js.native
+  }
   
   inline def breach(breachName: String): js.Promise[Breach_ | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("breach")(breachName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Breach_ | Null]]
   inline def breach(breachName: String, options: BaseUrl): js.Promise[Breach_ | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("breach")(breachName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Breach_ | Null]]
@@ -33,8 +68,8 @@ object mod {
   inline def pwnedPassword(password: String): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPassword")(password.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
   inline def pwnedPassword(password: String, options: BaseUrl): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPassword")(password.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   
-  inline def pwnedPasswordRange(prefix: String): js.Promise[js.Array[PwnedPasswordSuffix]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPasswordRange")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[PwnedPasswordSuffix]]]
-  inline def pwnedPasswordRange(prefix: String, options: BaseUrl): js.Promise[js.Array[PwnedPasswordSuffix]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPasswordRange")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[PwnedPasswordSuffix]]]
+  inline def pwnedPasswordRange(prefix: String): js.Promise[PwnedPasswordSuffixes] = ^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPasswordRange")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PwnedPasswordSuffixes]]
+  inline def pwnedPasswordRange(prefix: String, options: BaseUrl): js.Promise[PwnedPasswordSuffixes] = (^.asInstanceOf[js.Dynamic].applyDynamic("pwnedPasswordRange")(prefix.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PwnedPasswordSuffixes]]
   
   inline def search(account: String): js.Promise[SearchResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(account.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SearchResults]]
   inline def search(account: String, breachOptions: Truncate): js.Promise[SearchResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(account.asInstanceOf[js.Any], breachOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SearchResults]]
@@ -102,7 +137,7 @@ object mod {
       
       inline def setDataClasses(value: js.Array[String]): Self = StObject.set(x, "DataClasses", value.asInstanceOf[js.Any])
       
-      inline def setDataClassesVarargs(value: String*): Self = StObject.set(x, "DataClasses", js.Array(value :_*))
+      inline def setDataClassesVarargs(value: String*): Self = StObject.set(x, "DataClasses", js.Array(value*))
       
       inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
@@ -131,6 +166,15 @@ object mod {
   }
   
   trait HIBP extends StObject {
+    
+    var RateLimitError: Instantiable3[
+        /* retryAfter */ ReturnType[js.Function1[/* name */ String, String | Null]], 
+        /* import warning: importer.ImportType#apply Failed type conversion: std.Error['constructor']['prototype']['message'] */ /* message */ js.Any, 
+        /* options */ js.UndefOr[
+          /* import warning: importer.ImportType#apply Failed type conversion: std.Error['constructor']['prototype']['options'] */ js.Any
+        ], 
+        typings.hibp.mod.RateLimitError
+      ]
     
     def breach(breachName: String): js.Promise[Breach_ | Null]
     def breach(breachName: String, options: BaseUrl): js.Promise[Breach_ | Null]
@@ -172,13 +216,13 @@ object mod {
     def pwnedPassword(password: String): js.Promise[Double]
     def pwnedPassword(password: String, options: BaseUrl): js.Promise[Double]
     
-    def pwnedPasswordRange(prefix: String): js.Promise[js.Array[PwnedPasswordSuffix]]
-    def pwnedPasswordRange(prefix: String, options: BaseUrl): js.Promise[js.Array[PwnedPasswordSuffix]]
+    def pwnedPasswordRange(prefix: String): js.Promise[PwnedPasswordSuffixes]
+    def pwnedPasswordRange(prefix: String, options: BaseUrl): js.Promise[PwnedPasswordSuffixes]
     @JSName("pwnedPasswordRange")
     var pwnedPasswordRange_Original: js.Function2[
         /* prefix */ String, 
         /* options */ js.UndefOr[BaseUrl], 
-        js.Promise[js.Array[PwnedPasswordSuffix]]
+        js.Promise[PwnedPasswordSuffixes]
       ]
     
     @JSName("pwnedPassword")
@@ -196,16 +240,24 @@ object mod {
   object HIBP {
     
     inline def apply(
+      RateLimitError: Instantiable3[
+          /* retryAfter */ ReturnType[js.Function1[/* name */ String, String | Null]], 
+          /* import warning: importer.ImportType#apply Failed type conversion: std.Error['constructor']['prototype']['message'] */ /* message */ js.Any, 
+          /* options */ js.UndefOr[
+            /* import warning: importer.ImportType#apply Failed type conversion: std.Error['constructor']['prototype']['options'] */ js.Any
+          ], 
+          RateLimitError
+        ],
       breach: (/* breachName */ String, /* options */ js.UndefOr[BaseUrl]) => js.Promise[Breach_ | Null],
       breachedAccount: (/* account */ String, /* options */ js.UndefOr[ApiKey]) => js.Promise[js.Array[Breach_] | Null],
       breaches: /* options */ js.UndefOr[Domain] => js.Promise[js.Array[Breach_]],
       dataClasses: /* options */ js.UndefOr[BaseUrl] => js.Promise[js.Array[String] | Null],
       pasteAccount: (/* email */ String, /* options */ js.UndefOr[UserAgent]) => js.Promise[js.Array[Paste] | Null],
       pwnedPassword: (/* password */ String, /* options */ js.UndefOr[BaseUrl]) => js.Promise[Double],
-      pwnedPasswordRange: (/* prefix */ String, /* options */ js.UndefOr[BaseUrl]) => js.Promise[js.Array[PwnedPasswordSuffix]],
+      pwnedPasswordRange: (/* prefix */ String, /* options */ js.UndefOr[BaseUrl]) => js.Promise[PwnedPasswordSuffixes],
       search: (/* account */ String, /* breachOptions */ js.UndefOr[Truncate]) => js.Promise[SearchResults]
     ): HIBP = {
-      val __obj = js.Dynamic.literal(breach = js.Any.fromFunction2(breach), breachedAccount = js.Any.fromFunction2(breachedAccount), breaches = js.Any.fromFunction1(breaches), dataClasses = js.Any.fromFunction1(dataClasses), pasteAccount = js.Any.fromFunction2(pasteAccount), pwnedPassword = js.Any.fromFunction2(pwnedPassword), pwnedPasswordRange = js.Any.fromFunction2(pwnedPasswordRange), search = js.Any.fromFunction2(search))
+      val __obj = js.Dynamic.literal(RateLimitError = RateLimitError.asInstanceOf[js.Any], breach = js.Any.fromFunction2(breach), breachedAccount = js.Any.fromFunction2(breachedAccount), breaches = js.Any.fromFunction1(breaches), dataClasses = js.Any.fromFunction1(dataClasses), pasteAccount = js.Any.fromFunction2(pasteAccount), pwnedPassword = js.Any.fromFunction2(pwnedPassword), pwnedPasswordRange = js.Any.fromFunction2(pwnedPasswordRange), search = js.Any.fromFunction2(search))
       __obj.asInstanceOf[HIBP]
     }
     
@@ -228,8 +280,19 @@ object mod {
       inline def setPwnedPassword(value: (/* password */ String, /* options */ js.UndefOr[BaseUrl]) => js.Promise[Double]): Self = StObject.set(x, "pwnedPassword", js.Any.fromFunction2(value))
       
       inline def setPwnedPasswordRange(
-        value: (/* prefix */ String, /* options */ js.UndefOr[BaseUrl]) => js.Promise[js.Array[PwnedPasswordSuffix]]
+        value: (/* prefix */ String, /* options */ js.UndefOr[BaseUrl]) => js.Promise[PwnedPasswordSuffixes]
       ): Self = StObject.set(x, "pwnedPasswordRange", js.Any.fromFunction2(value))
+      
+      inline def setRateLimitError(
+        value: Instantiable3[
+              /* retryAfter */ ReturnType[js.Function1[/* name */ String, String | Null]], 
+              /* import warning: importer.ImportType#apply Failed type conversion: std.Error['constructor']['prototype']['message'] */ /* message */ js.Any, 
+              /* options */ js.UndefOr[
+                /* import warning: importer.ImportType#apply Failed type conversion: std.Error['constructor']['prototype']['options'] */ js.Any
+              ], 
+              RateLimitError
+            ]
+      ): Self = StObject.set(x, "RateLimitError", value.asInstanceOf[js.Any])
       
       inline def setSearch(
         value: (/* account */ String, /* breachOptions */ js.UndefOr[Truncate]) => js.Promise[SearchResults]
@@ -270,26 +333,7 @@ object mod {
     }
   }
   
-  trait PwnedPasswordSuffix extends StObject {
-    
-    var count: Double
-    
-    var suffix: String
-  }
-  object PwnedPasswordSuffix {
-    
-    inline def apply(count: Double, suffix: String): PwnedPasswordSuffix = {
-      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PwnedPasswordSuffix]
-    }
-    
-    extension [Self <: PwnedPasswordSuffix](x: Self) {
-      
-      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
-      
-      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
-    }
-  }
+  type PwnedPasswordSuffixes = StringDictionary[Double]
   
   trait SearchResults extends StObject {
     
@@ -310,13 +354,13 @@ object mod {
       
       inline def setBreachesNull: Self = StObject.set(x, "breaches", null)
       
-      inline def setBreachesVarargs(value: Breach_ *): Self = StObject.set(x, "breaches", js.Array(value :_*))
+      inline def setBreachesVarargs(value: Breach_ *): Self = StObject.set(x, "breaches", js.Array(value*))
       
       inline def setPastes(value: js.Array[Paste]): Self = StObject.set(x, "pastes", value.asInstanceOf[js.Any])
       
       inline def setPastesNull: Self = StObject.set(x, "pastes", null)
       
-      inline def setPastesVarargs(value: Paste*): Self = StObject.set(x, "pastes", js.Array(value :_*))
+      inline def setPastesVarargs(value: Paste*): Self = StObject.set(x, "pastes", js.Array(value*))
     }
   }
 }

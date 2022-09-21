@@ -10,11 +10,11 @@ trait StreamFileInput extends StObject {
   
   var name: String
   
-  var stream: js.Any
+  var stream: Any
 }
 object StreamFileInput {
   
-  inline def apply(name: String, stream: js.Any): StreamFileInput = {
+  inline def apply(name: String, stream: Any): StreamFileInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamFileInput]
   }
@@ -27,6 +27,6 @@ object StreamFileInput {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }
 }

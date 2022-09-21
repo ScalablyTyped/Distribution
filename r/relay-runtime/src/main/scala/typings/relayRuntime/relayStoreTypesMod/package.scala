@@ -1,50 +1,58 @@
 package typings.relayRuntime.relayStoreTypesMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.relayRuntime.anon.Readonlykindmissingfieldl
+import typings.relayRuntime.anon.Readonlykindmissingfieldt
+import typings.relayRuntime.anon.Readonlykindrelayresolver
+import typings.relayRuntime.readerNodeMod.ReaderFragment
+import typings.relayRuntime.relayNetworkTypesMod.ReactFlightServerTree
+import typings.relayRuntime.relayOperationTrackerMod.RelayOperationTracker
+import typings.relayRuntime.relayRuntimeTypesMod.DataID
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AsyncLoadCallback = js.Function1[
-/* loadingState */ typings.relayRuntime.relayStoreTypesMod.LoadingState, 
-scala.Unit]
+type AsyncLoadCallback = js.Function1[/* loadingState */ LoadingState, Unit]
 
-type FragmentMap = org.scalablytyped.runtime.StringDictionary[typings.relayRuntime.readerNodeMod.ReaderFragment]
+type DataIDSet = Set[DataID]
 
-type FragmentReference = js.Any
+type FragmentMap = StringDictionary[ReaderFragment]
 
-type FragmentSpecResults = org.scalablytyped.runtime.StringDictionary[js.Any]
+type FragmentSpecResults = StringDictionary[Any]
 
-type LogFunction = js.Function1[/* logEvent */ typings.relayRuntime.relayStoreTypesMod.LogEvent, scala.Unit]
+type FragmentType = Any
 
-type OperationTracker = typings.relayRuntime.relayOperationTrackerMod.RelayOperationTracker
+type LogFunction = js.Function1[/* logEvent */ LogEvent, Unit]
 
-type Primitive = js.UndefOr[java.lang.String | scala.Double | scala.Boolean | scala.Null]
+type OperationTracker = RelayOperationTracker
 
-type Props = org.scalablytyped.runtime.StringDictionary[js.Any]
+type Primitive = js.UndefOr[String | Double | Boolean | Null]
 
-type Record = org.scalablytyped.runtime.StringDictionary[js.Any]
+type Props = StringDictionary[Any]
+
+type ReactFlightPayloadDeserializer = js.Function1[/* tree */ ReactFlightServerTree, ReactFlightClientResponse]
+
+type Record[T /* <: js.Object */] = StringDictionary[T]
 
 type RecordMap = // theoretically, this should be `[dataID: DataID]`, but `DataID` is a string.
-org.scalablytyped.runtime.StringDictionary[js.UndefOr[typings.relayRuntime.relayStoreTypesMod.Record | scala.Null]]
+StringDictionary[js.UndefOr[Record[js.Object] | Null]]
+
+type RelayResolverErrors = js.Array[RelayResolverError]
 
 type RequiredFieldLogger = js.Function1[
-/* arg */ typings.relayRuntime.anon.Readonlykindmissingfieldl | typings.relayRuntime.anon.Readonlykindmissingfieldt, 
-scala.Unit]
+/* arg */ Readonlykindmissingfieldl | Readonlykindmissingfieldt | Readonlykindrelayresolver, 
+Unit]
 
-type Scheduler = js.Function1[/* callback */ js.Function0[scala.Unit], scala.Unit]
+type Scheduler = js.Function1[/* callback */ js.Function0[Unit], Unit]
 
-type SelectorData = org.scalablytyped.runtime.StringDictionary[js.Any]
+type SelectorData = StringDictionary[Any]
 
-type SelectorStoreUpdater[T] = js.Function2[
-/* store */ typings.relayRuntime.relayStoreTypesMod.RecordSourceSelectorProxy[T], 
-/* data */ T, 
-scala.Unit]
+type SelectorStoreUpdater[T] = js.Function2[/* store */ RecordSourceSelectorProxy[T], /* data */ T, Unit]
 
-type Snapshot = typings.relayRuntime.relayStoreTypesMod.TypedSnapshot[typings.relayRuntime.relayStoreTypesMod.SelectorData]
+type Snapshot = TypedSnapshot[SelectorData]
 
-type StoreUpdater = js.Function1[/* store */ typings.relayRuntime.relayStoreTypesMod.RecordSourceProxy, scala.Unit]
+type StoreUpdater = js.Function1[/* store */ RecordSourceProxy, Unit]
 
 type Unarray[T] = T
-
-type UpdatedRecords = org.scalablytyped.runtime.StringDictionary[scala.Boolean]

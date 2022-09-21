@@ -9,10 +9,10 @@ A KnockoutJS Plugin for model and property validation
 | ------------------ | :-------------: |
 | Full name          | knockout.validation |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 15 |
-| # downloads        | 245910 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 48289.0 |
+| # stars            | 1032.0 |
 
 ## Links
 - [Homepage](https://github.com/Knockout-Contrib/Knockout-Validation#readme)

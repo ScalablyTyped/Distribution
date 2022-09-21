@@ -17,7 +17,7 @@ object ColorPickerDialog {
   
   inline def apply(
     absolutePosition: X,
-    addButton: (Widget, js.Any) => Unit,
+    addButton: (Widget, Any) => Unit,
     addClass: String => Unit,
     buttonNames: js.Array[String],
     buttons: js.Array[Widget],
@@ -34,7 +34,7 @@ object ColorPickerDialog {
     hide: () => Unit,
     horizontalChildExpansion: Boolean,
     html: HTMLElement,
-    layoutOptions: StringDictionary[js.Any],
+    layoutOptions: StringDictionary[Any],
     maxHeight: Double,
     maxWidth: Double,
     minHeight: Double,
@@ -50,7 +50,7 @@ object ColorPickerDialog {
     parent: Widget,
     parentName: String,
     position: X,
-    registerCallback: (String, String, js.Function, js.Any) => Unit,
+    registerCallback: (String, String, js.Function, Any) => Unit,
     removeButton: Widget => Unit,
     removeCallback: String => Unit,
     removeChild: Widget => Unit,

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Base64VLQFormat")
 @js.native
-class Base64VLQFormat ()
+open class Base64VLQFormat ()
   extends StObject
      with typings.typescriptServices.TypeScript.Base64VLQFormat
 object Base64VLQFormat {

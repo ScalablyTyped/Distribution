@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDataflow.anon
 
+import typings.maximMazurokGapiClientDataflow.gapi.client.dataflow.ReportWorkItemStatusRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ trait PrettyPrint extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** The job to be snapshotted. */
+  /** The job which the WorkItem is part of. */
   var jobId: String
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
@@ -34,11 +35,14 @@ trait PrettyPrint extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** The project which owns the job to be snapshotted. */
+  /** The project which owns the WorkItem's job. */
   var projectId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Request body */
+  var resource: ReportWorkItemStatusRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -48,8 +52,8 @@ trait PrettyPrint extends StObject {
 }
 object PrettyPrint {
   
-  inline def apply(jobId: String, projectId: String): PrettyPrint = {
-    val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
+  inline def apply(jobId: String, projectId: String, resource: ReportWorkItemStatusRequest): PrettyPrint = {
+    val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrint]
   }
   
@@ -94,6 +98,8 @@ object PrettyPrint {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: ReportWorkItemStatusRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

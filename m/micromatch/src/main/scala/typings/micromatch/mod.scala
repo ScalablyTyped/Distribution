@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.micromatch.anon.partstrueScanOptions
 import typings.micromatch.anon.tokenstrueScanOptions
 import typings.std.Partial
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,11 +22,11 @@ object mod extends Shortcut {
     
     var output: String
     
-    var regex: RegExp
+    var regex: js.RegExp
   }
   object Item {
     
-    inline def apply(glob: String, input: String, output: String, regex: RegExp): Item = {
+    inline def apply(glob: String, input: String, output: String, regex: js.RegExp): Item = {
       val __obj = js.Dynamic.literal(glob = glob.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Item]
     }
@@ -40,7 +39,7 @@ object mod extends Shortcut {
       
       inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -269,8 +268,8 @@ object mod extends Shortcut {
       * //=> /^(?:(\.[\\\/])?(?!\.)(?=.)[^\/]*?\.js)$/
       * ```
       */
-    def makeRe(pattern: String): RegExp = js.native
-    def makeRe(pattern: String, options: Options): RegExp = js.native
+    def makeRe(pattern: String): js.RegExp = js.native
+    def makeRe(pattern: String, options: Options): js.RegExp = js.native
     
     /**
       * Similar to the main function, but `pattern` must be a string.
@@ -778,7 +777,7 @@ object mod extends Shortcut {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setKeepQuotes(value: Boolean): Self = StObject.set(x, "keepQuotes", value.asInstanceOf[js.Any])
       
@@ -1043,11 +1042,11 @@ object mod extends Shortcut {
       
       inline def setParts(value: js.Array[String]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      inline def setPartsVarargs(value: String*): Self = StObject.set(x, "parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: String*): Self = StObject.set(x, "parts", js.Array(value*))
       
       inline def setSlashes(value: js.Array[Double]): Self = StObject.set(x, "slashes", value.asInstanceOf[js.Any])
       
-      inline def setSlashesVarargs(value: Double*): Self = StObject.set(x, "slashes", js.Array(value :_*))
+      inline def setSlashesVarargs(value: Double*): Self = StObject.set(x, "slashes", js.Array(value*))
     }
   }
   
@@ -1088,7 +1087,7 @@ object mod extends Shortcut {
       
       inline def setTokens(value: js.Array[ScanInfoToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      inline def setTokensVarargs(value: ScanInfoToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: ScanInfoToken*): Self = StObject.set(x, "tokens", js.Array(value*))
     }
   }
   

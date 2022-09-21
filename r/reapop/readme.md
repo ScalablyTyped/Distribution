@@ -1,7 +1,7 @@
 
 # Scala.js typings for reapop
 
-Typings are for version 3.0.0
+Typings are for version 4.0.5
 
 ## Library description:
 A simple & customizable notifications system for React
@@ -10,10 +10,10 @@ A simple & customizable notifications system for React
 | ------------------ | :-------------: |
 | Full name          | reapop |
 | Keywords           | reapop, react, redux, mobx, notifications, notification, toast, toasts, component |
-| # releases         | 6 |
-| # dependents       | 3 |
-| # downloads        | 236652 |
-| # stars            | 4 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 18829.333333333332 |
+| # stars            | 1308.0 |
 
 ## Links
 - [Homepage](https://github.com/LouisBarranqueiro/reapop#readme)

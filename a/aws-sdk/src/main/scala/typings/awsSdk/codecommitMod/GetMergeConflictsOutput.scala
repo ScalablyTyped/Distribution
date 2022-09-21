@@ -56,7 +56,7 @@ object GetMergeConflictsOutput {
     
     inline def setConflictMetadataList(value: ConflictMetadataList): Self = StObject.set(x, "conflictMetadataList", value.asInstanceOf[js.Any])
     
-    inline def setConflictMetadataListVarargs(value: ConflictMetadata*): Self = StObject.set(x, "conflictMetadataList", js.Array(value :_*))
+    inline def setConflictMetadataListVarargs(value: ConflictMetadata*): Self = StObject.set(x, "conflictMetadataList", js.Array(value*))
     
     inline def setDestinationCommitId(value: ObjectId): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
     

@@ -1,11 +1,14 @@
 package typings.overlayscrollbars.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.std.HTMLElement
+import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BasicEventCallback = js.ThisFunction0[/* this */ typings.overlayscrollbars.mod.OverlayScrollbars, scala.Unit]
+type BasicEventCallback = js.ThisFunction0[/* this */ OverlayScrollbars, Unit]
 
 /* Rewritten from type alias, can be one of: 
   - typings.overlayscrollbars.anon.X
@@ -17,42 +20,24 @@ type BasicEventCallback = js.ThisFunction0[/* this */ typings.overlayscrollbars.
   - typings.overlayscrollbars.mod.JQuery
   - typings.overlayscrollbars.anon.Block
 */
-type Coordinates = typings.overlayscrollbars.mod._Coordinates | (js.Tuple2[typings.overlayscrollbars.mod.Position, typings.overlayscrollbars.mod.Position]) | typings.overlayscrollbars.mod.Position | typings.std.HTMLElement
+type Coordinates = _Coordinates | (js.Tuple2[Position, Position]) | Position | HTMLElement
 
-type DirectionChangedCallback = js.ThisFunction1[
-/* this */ typings.overlayscrollbars.mod.OverlayScrollbars, 
-/* args */ js.UndefOr[typings.overlayscrollbars.mod.DirectionChangedArgs], 
-scala.Unit]
+type DirectionChangedCallback = js.ThisFunction1[/* this */ OverlayScrollbars, /* args */ js.UndefOr[DirectionChangedArgs], Unit]
 
-type Easing = js.UndefOr[java.lang.String | scala.Null]
+type Easing = js.UndefOr[String | Null]
 
-type Extensions = java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[js.Object]
+type Extensions = String | js.Array[String] | StringDictionary[js.Object]
 
-type Margin = scala.Double | scala.Boolean
+type Margin = Double | Boolean
 
-type OverflowAmountChangedCallback = js.ThisFunction1[
-/* this */ typings.overlayscrollbars.mod.OverlayScrollbars, 
-/* args */ js.UndefOr[typings.overlayscrollbars.mod.OverflowAmountChangedArgs], 
-scala.Unit]
+type OverflowAmountChangedCallback = js.ThisFunction1[/* this */ OverlayScrollbars, /* args */ js.UndefOr[OverflowAmountChangedArgs], Unit]
 
-type OverflowChangedCallback = js.ThisFunction1[
-/* this */ typings.overlayscrollbars.mod.OverlayScrollbars, 
-/* args */ js.UndefOr[typings.overlayscrollbars.mod.OverflowChangedArgs], 
-scala.Unit]
+type OverflowChangedCallback = js.ThisFunction1[/* this */ OverlayScrollbars, /* args */ js.UndefOr[OverflowChangedArgs], Unit]
 
-type Position = scala.Double | java.lang.String
+type Position = Double | String
 
-type ScrollEventCallback = js.ThisFunction1[
-/* this */ typings.overlayscrollbars.mod.OverlayScrollbars, 
-/* args */ js.UndefOr[typings.std.UIEvent], 
-scala.Unit]
+type ScrollEventCallback = js.ThisFunction1[/* this */ OverlayScrollbars, /* args */ js.UndefOr[UIEvent], Unit]
 
-type SizeChangedCallback = js.ThisFunction1[
-/* this */ typings.overlayscrollbars.mod.OverlayScrollbars, 
-/* args */ js.UndefOr[typings.overlayscrollbars.mod.SizeChangedArgs], 
-scala.Unit]
+type SizeChangedCallback = js.ThisFunction1[/* this */ OverlayScrollbars, /* args */ js.UndefOr[SizeChangedArgs], Unit]
 
-type UpdatedCallback = js.ThisFunction1[
-/* this */ typings.overlayscrollbars.mod.OverlayScrollbars, 
-/* args */ js.UndefOr[typings.overlayscrollbars.mod.UpdatedArgs], 
-scala.Unit]
+type UpdatedCallback = js.ThisFunction1[/* this */ OverlayScrollbars, /* args */ js.UndefOr[UpdatedArgs], Unit]

@@ -10,7 +10,7 @@ object licenceTemplatesMod {
   
   @JSImport("gitlab/dist/types/core/services/LicenceTemplates", "LicenceTemplates")
   @js.native
-  class LicenceTemplates protected () extends ResourceTemplates {
+  open class LicenceTemplates protected () extends ResourceTemplates {
     def this(options: BaseServiceOptions) = this()
   }
 }

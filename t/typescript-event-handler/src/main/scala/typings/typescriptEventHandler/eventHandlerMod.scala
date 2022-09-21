@@ -12,11 +12,11 @@ object eventHandlerMod {
   
   @JSImport("typescript-event-handler/dist/event-handler", "EventHandler")
   @js.native
-  class EventHandler[TInput] () extends StObject {
+  open class EventHandler[TInput] () extends StObject {
     
     def handleAsync(value: TInput): js.Promise[Unit] = js.native
     
-    /* private */ val handlers: js.Any = js.native
+    /* private */ val handlers: Any = js.native
     
     def register(pred: Predicate[TInput], handler: Action[TInput]): Unit = js.native
     

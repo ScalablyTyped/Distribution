@@ -49,7 +49,7 @@ object pathPathMod {
     override def compute(fromX: Double, fromY: Double, callback: ComputeCallback): Unit = js.native
   }
   
-  type ComputeCallback = js.Function2[/* x */ Double, /* y */ Double, js.Any]
+  type ComputeCallback = js.Function2[/* x */ Double, /* y */ Double, Any]
   
   trait Options extends StObject {
     
@@ -115,7 +115,7 @@ object pathPathMod {
       
       inline def set_dirs(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "_dirs", value.asInstanceOf[js.Any])
       
-      inline def set_dirsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "_dirs", js.Array(value :_*))
+      inline def set_dirsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "_dirs", js.Array(value*))
       
       inline def set_getNeighbors(value: (Double, Double) => js.Array[js.Array[Double]]): Self = StObject.set(x, "_getNeighbors", js.Any.fromFunction2(value))
       

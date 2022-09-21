@@ -1,5 +1,6 @@
 package typings.reactNative.mod
 
+import typings.reactNative.anon.PlatformConstantsosVersioIsTesting
 import typings.reactNative.reactNativeStrings.windows
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,4 +12,10 @@ trait PlatformWindowsOSStatic
      with PlatformStatic {
   
   var OS: windows = js.native
+  
+  @JSName("Version")
+  var Version_PlatformWindowsOSStatic: Double = js.native
+  
+  @JSName("constants")
+  var constants_PlatformWindowsOSStatic: PlatformConstantsosVersioIsTesting = js.native
 }

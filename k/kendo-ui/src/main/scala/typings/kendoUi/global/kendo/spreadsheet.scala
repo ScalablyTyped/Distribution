@@ -6,39 +6,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object spreadsheet {
   
+  @JSGlobal("kendo.spreadsheet")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSGlobal("kendo.spreadsheet.CustomFilter")
   @js.native
-  class CustomFilter ()
+  open class CustomFilter ()
     extends StObject
        with typings.kendoUi.kendo.spreadsheet.CustomFilter
   
   @JSGlobal("kendo.spreadsheet.DynamicFilter")
   @js.native
-  class DynamicFilter ()
+  open class DynamicFilter ()
     extends StObject
        with typings.kendoUi.kendo.spreadsheet.DynamicFilter
   
   @JSGlobal("kendo.spreadsheet.Range")
   @js.native
-  class Range ()
+  open class Range ()
     extends StObject
        with typings.kendoUi.kendo.spreadsheet.Range
   
   @JSGlobal("kendo.spreadsheet.Sheet")
   @js.native
-  class Sheet ()
+  open class Sheet ()
     extends StObject
        with typings.kendoUi.kendo.spreadsheet.Sheet
   
   @JSGlobal("kendo.spreadsheet.TopFilter")
   @js.native
-  class TopFilter ()
+  open class TopFilter ()
     extends StObject
        with typings.kendoUi.kendo.spreadsheet.TopFilter
   
   @JSGlobal("kendo.spreadsheet.ValueFilter")
   @js.native
-  class ValueFilter ()
+  open class ValueFilter ()
     extends StObject
        with typings.kendoUi.kendo.spreadsheet.ValueFilter
+  
+  inline def defineFunction(name: String, handler: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defineFunction")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

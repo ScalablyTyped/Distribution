@@ -1,7 +1,7 @@
 package typings.blueprintjsTable
 
 import typings.react.mod.CSSProperties
-import typings.std.ClientRect
+import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ object rectMod {
   
   @JSImport("@blueprintjs/table/lib/esm/common/rect", "Rect")
   @js.native
-  class Rect protected () extends StObject {
+  open class Rect protected () extends StObject {
     def this(left: Double, top: Double, width: Double, height: Double) = this()
     
     def containsX(clientX: Double): Boolean = js.native
@@ -70,5 +70,5 @@ object rectMod {
     inline def wrap(rect: AnyRect): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(rect.asInstanceOf[js.Any]).asInstanceOf[Rect]
   }
   
-  type AnyRect = Rect | ClientRect
+  type AnyRect = Rect | DOMRect
 }

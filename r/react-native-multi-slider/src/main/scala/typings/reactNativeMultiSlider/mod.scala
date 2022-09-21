@@ -14,8 +14,8 @@ object mod {
   
   @JSImport("react-native-multi-slider", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[MultiSliderProps, js.Object, js.Any]
+  open class default ()
+    extends Component[MultiSliderProps, js.Object, Any]
   
   trait MarkerProps extends StObject {
     
@@ -54,7 +54,7 @@ object mod {
     }
   }
   
-  type MultiSlider = Component[MultiSliderProps, js.Object, js.Any]
+  type MultiSlider = Component[MultiSliderProps, js.Object, Any]
   
   trait MultiSliderProps extends StObject {
     
@@ -224,7 +224,7 @@ object mod {
       
       inline def setOptionsArrayUndefined: Self = StObject.set(x, "optionsArray", js.undefined)
       
-      inline def setOptionsArrayVarargs(value: Double*): Self = StObject.set(x, "optionsArray", js.Array(value :_*))
+      inline def setOptionsArrayVarargs(value: Double*): Self = StObject.set(x, "optionsArray", js.Array(value*))
       
       inline def setPressedMarkerStyle(value: ViewStyle): Self = StObject.set(x, "pressedMarkerStyle", value.asInstanceOf[js.Any])
       
@@ -262,7 +262,7 @@ object mod {
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
 }

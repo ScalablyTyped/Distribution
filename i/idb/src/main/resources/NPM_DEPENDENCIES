@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "idb" : "3.0.2"
+      "idb" : "7.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "idb" : "3.0.2"
+      "idb" : "7.0.2"
     }
   ],
   "compile-devDependencies" : [

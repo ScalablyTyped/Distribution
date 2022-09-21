@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "ObjectType")
 @js.native
-class ObjectType ()
-  extends Type_[js.Object, js.Object, js.Any] {
+open class ObjectType ()
+  extends Type_[js.Object, js.Object, Any] {
   
   /**
     * @since 1.0.0

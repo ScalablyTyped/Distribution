@@ -51,6 +51,6 @@ object Proxy {
     
     inline def setPhoneNumberCountriesUndefined: Self = StObject.set(x, "PhoneNumberCountries", js.undefined)
     
-    inline def setPhoneNumberCountriesVarargs(value: String*): Self = StObject.set(x, "PhoneNumberCountries", js.Array(value :_*))
+    inline def setPhoneNumberCountriesVarargs(value: String*): Self = StObject.set(x, "PhoneNumberCountries", js.Array(value*))
   }
 }

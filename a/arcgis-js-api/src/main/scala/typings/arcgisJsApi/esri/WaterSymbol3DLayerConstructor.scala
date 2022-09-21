@@ -17,5 +17,5 @@ trait WaterSymbol3DLayerConstructor
 Instantiable0[WaterSymbol3DLayer]
      with Instantiable1[/* properties */ WaterSymbol3DLayerProperties, WaterSymbol3DLayer] {
   
-  def fromJSON(json: js.Any): WaterSymbol3DLayer = js.native
+  def fromJSON(json: Any): WaterSymbol3DLayer = js.native
 }

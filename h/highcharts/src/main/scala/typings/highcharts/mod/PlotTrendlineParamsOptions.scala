@@ -11,7 +11,9 @@ trait PlotTrendlineParamsOptions extends StObject {
     * example using OHLC data, index=2 means the indicator will be calculated
     * using Low values.
     */
-  var index: js.UndefOr[Double | String] = js.undefined
+  var index: js.UndefOr[Double] = js.undefined
+  
+  var period: js.UndefOr[String] = js.undefined
 }
 object PlotTrendlineParamsOptions {
   
@@ -22,8 +24,12 @@ object PlotTrendlineParamsOptions {
   
   extension [Self <: PlotTrendlineParamsOptions](x: Self) {
     
-    inline def setIndex(value: Double | String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

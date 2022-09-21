@@ -11,14 +11,11 @@ Create a set of commands that can be send to any receipt printer that supports E
 | Full name          | esc-pos-encoder |
 | Keywords           | pos, escpos, receipt, printer |
 | # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 11281 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1574.3333333333333 |
+| # stars            | 208.0 |
 
 ## Links
-- [Homepage](https://github.com/NielsLeenheer/EscPosEncoder#readme)
-- [Bugs](https://github.com/NielsLeenheer/EscPosEncoder/issues)
-- [Repository](https://github.com/NielsLeenheer/EscPosEncoder)
 - [Npm](https://www.npmjs.com/package/esc-pos-encoder)
     
 

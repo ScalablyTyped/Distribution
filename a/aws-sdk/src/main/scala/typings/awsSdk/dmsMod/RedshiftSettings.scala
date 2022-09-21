@@ -17,7 +17,7 @@ trait RedshiftSettings extends StObject {
   var AfterConnectScript: js.UndefOr[String] = js.undefined
   
   /**
-    * An S3 folder where the comma-separated-value (.csv) files are stored before being uploaded to the target Redshift cluster.  For full load mode, AWS DMS converts source records into .csv files and loads them to the BucketFolder/TableID path. AWS DMS uses the Redshift COPY command to upload the .csv files to the target table. The files are deleted once the COPY operation has finished. For more information, see Amazon Redshift Database Developer Guide  For change-data-capture (CDC) mode, AWS DMS creates a NetChanges table, and loads the .csv files to this BucketFolder/NetChangesTableID path.
+    * An S3 folder where the comma-separated-value (.csv) files are stored before being uploaded to the target Redshift cluster.  For full load mode, DMS converts source records into .csv files and loads them to the BucketFolder/TableID path. DMS uses the Redshift COPY command to upload the .csv files to the target table. The files are deleted once the COPY operation has finished. For more information, see COPY in the Amazon Redshift Database Developer Guide. For change-data-capture (CDC) mode, DMS creates a NetChanges table, and loads the .csv files to this BucketFolder/NetChangesTableID path.
     */
   var BucketFolder: js.UndefOr[String] = js.undefined
   
@@ -52,12 +52,12 @@ trait RedshiftSettings extends StObject {
   var DateFormat: js.UndefOr[String] = js.undefined
   
   /**
-    * A value that specifies whether AWS DMS should migrate empty CHAR and VARCHAR fields as NULL. A value of true sets empty CHAR and VARCHAR fields to null. The default is false.
+    * A value that specifies whether DMS should migrate empty CHAR and VARCHAR fields as NULL. A value of true sets empty CHAR and VARCHAR fields to null. The default is false.
     */
   var EmptyAsNull: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The type of server-side encryption that you want to use for your data. This encryption type is part of the endpoint settings or the extra connections attributes for Amazon S3. You can choose either SSE_S3 (the default) or SSE_KMS.   For the ModifyEndpoint operation, you can change the existing value of the EncryptionMode parameter from SSE_KMS to SSE_S3. But you can’t change the existing value from SSE_S3 to SSE_KMS.  To use SSE_S3, create an AWS Identity and Access Management (IAM) role with a policy that allows "arn:aws:s3:::*" to use the following actions: "s3:PutObject", "s3:ListBucket" 
+    * The type of server-side encryption that you want to use for your data. This encryption type is part of the endpoint settings or the extra connections attributes for Amazon S3. You can choose either SSE_S3 (the default) or SSE_KMS.   For the ModifyEndpoint operation, you can change the existing value of the EncryptionMode parameter from SSE_KMS to SSE_S3. But you can’t change the existing value from SSE_S3 to SSE_KMS.  To use SSE_S3, create an Identity and Access Management (IAM) role with a policy that allows "arn:aws:s3:::*" to use the following actions: "s3:PutObject", "s3:ListBucket" 
     */
   var EncryptionMode: js.UndefOr[EncryptionModeValue] = js.undefined
   
@@ -72,7 +72,7 @@ trait RedshiftSettings extends StObject {
   var FileTransferUploadStreams: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The amount of time to wait (in milliseconds) before timing out of operations performed by AWS DMS on a Redshift cluster, such as Redshift COPY, INSERT, DELETE, and UPDATE.
+    * The amount of time to wait (in milliseconds) before timing out of operations performed by DMS on a Redshift cluster, such as Redshift COPY, INSERT, DELETE, and UPDATE.
     */
   var LoadTimeout: js.UndefOr[IntegerOptional] = js.undefined
   
@@ -107,17 +107,27 @@ trait RedshiftSettings extends StObject {
   var ReplaceInvalidChars: js.UndefOr[String] = js.undefined
   
   /**
+    * The full Amazon Resource Name (ARN) of the IAM role that specifies DMS as the trusted entity and grants the required permissions to access the value in SecretsManagerSecret. The role must allow the iam:PassRole action. SecretsManagerSecret has the value of the Amazon Web Services Secrets Manager secret that allows access to the Amazon Redshift endpoint.  You can specify one of two sets of values for these permissions. You can specify the values for this setting and SecretsManagerSecretId. Or you can specify clear-text values for UserName, Password, ServerName, and Port. You can't specify both. For more information on creating this SecretsManagerSecret and the SecretsManagerAccessRoleArn and SecretsManagerSecretId required to access it, see Using secrets to access Database Migration Service resources in the Database Migration Service User Guide. 
+    */
+  var SecretsManagerAccessRoleArn: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The full ARN, partial ARN, or friendly name of the SecretsManagerSecret that contains the Amazon Redshift endpoint connection details.
+    */
+  var SecretsManagerSecretId: js.UndefOr[String] = js.undefined
+  
+  /**
     * The name of the Amazon Redshift cluster you are using.
     */
   var ServerName: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS KMS key ID. If you are using SSE_KMS for the EncryptionMode, provide this key ID. The key that you use needs an attached policy that enables IAM user permissions and allows use of the key.
+    * The KMS key ID. If you are using SSE_KMS for the EncryptionMode, provide this key ID. The key that you use needs an attached policy that enables IAM user permissions and allows use of the key.
     */
   var ServerSideEncryptionKmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role that has access to the Amazon Redshift service.
+    * The Amazon Resource Name (ARN) of the IAM role that has access to the Amazon Redshift service. The role must allow the iam:PassRole action.
     */
   var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
   
@@ -234,6 +244,14 @@ object RedshiftSettings {
     inline def setReplaceInvalidChars(value: String): Self = StObject.set(x, "ReplaceInvalidChars", value.asInstanceOf[js.Any])
     
     inline def setReplaceInvalidCharsUndefined: Self = StObject.set(x, "ReplaceInvalidChars", js.undefined)
+    
+    inline def setSecretsManagerAccessRoleArn(value: String): Self = StObject.set(x, "SecretsManagerAccessRoleArn", value.asInstanceOf[js.Any])
+    
+    inline def setSecretsManagerAccessRoleArnUndefined: Self = StObject.set(x, "SecretsManagerAccessRoleArn", js.undefined)
+    
+    inline def setSecretsManagerSecretId(value: String): Self = StObject.set(x, "SecretsManagerSecretId", value.asInstanceOf[js.Any])
+    
+    inline def setSecretsManagerSecretIdUndefined: Self = StObject.set(x, "SecretsManagerSecretId", js.undefined)
     
     inline def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     

@@ -8,5 +8,5 @@ object getTraceSummariesInputMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/GetTraceSummariesInput", "GetTraceSummariesInput")
   @js.native
-  val GetTraceSummariesInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetTraceSummariesInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

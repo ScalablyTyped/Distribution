@@ -42,6 +42,6 @@ object DiagnosticMessageChain {
     
     inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    inline def setNextVarargs(value: DiagnosticMessageChain*): Self = StObject.set(x, "next", js.Array(value :_*))
+    inline def setNextVarargs(value: DiagnosticMessageChain*): Self = StObject.set(x, "next", js.Array(value*))
   }
 }

@@ -8,11 +8,11 @@ trait Index extends StObject {
   
   var index: Double
   
-  var value: js.Any
+  var value: Any
 }
 object Index {
   
-  inline def apply(index: Double, value: js.Any): Index = {
+  inline def apply(index: Double, value: Any): Index = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Index]
   }
@@ -21,6 +21,6 @@ object Index {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

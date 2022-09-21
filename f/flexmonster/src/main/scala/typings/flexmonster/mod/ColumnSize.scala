@@ -35,7 +35,7 @@ object ColumnSize {
     
     inline def setTupleUndefined: Self = StObject.set(x, "tuple", js.undefined)
     
-    inline def setTupleVarargs(value: String*): Self = StObject.set(x, "tuple", js.Array(value :_*))
+    inline def setTupleVarargs(value: String*): Self = StObject.set(x, "tuple", js.Array(value*))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

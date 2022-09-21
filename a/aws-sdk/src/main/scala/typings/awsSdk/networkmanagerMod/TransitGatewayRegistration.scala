@@ -9,7 +9,7 @@ trait TransitGatewayRegistration extends StObject {
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: js.UndefOr[String] = js.undefined
+  var GlobalNetworkId: js.UndefOr[typings.awsSdk.networkmanagerMod.GlobalNetworkId] = js.undefined
   
   /**
     * The state of the transit gateway registration.
@@ -19,7 +19,7 @@ trait TransitGatewayRegistration extends StObject {
   /**
     * The Amazon Resource Name (ARN) of the transit gateway.
     */
-  var TransitGatewayArn: js.UndefOr[String] = js.undefined
+  var TransitGatewayArn: js.UndefOr[typings.awsSdk.networkmanagerMod.TransitGatewayArn] = js.undefined
 }
 object TransitGatewayRegistration {
   
@@ -30,7 +30,7 @@ object TransitGatewayRegistration {
   
   extension [Self <: TransitGatewayRegistration](x: Self) {
     
-    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
     inline def setGlobalNetworkIdUndefined: Self = StObject.set(x, "GlobalNetworkId", js.undefined)
     
@@ -38,7 +38,7 @@ object TransitGatewayRegistration {
     
     inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    inline def setTransitGatewayArn(value: String): Self = StObject.set(x, "TransitGatewayArn", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayArn(value: TransitGatewayArn): Self = StObject.set(x, "TransitGatewayArn", value.asInstanceOf[js.Any])
     
     inline def setTransitGatewayArnUndefined: Self = StObject.set(x, "TransitGatewayArn", js.undefined)
   }

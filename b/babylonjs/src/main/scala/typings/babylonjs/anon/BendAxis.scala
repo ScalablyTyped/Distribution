@@ -1,8 +1,8 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.boneMod.Bone
 import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.transformNodeMod.TransformNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,11 +19,11 @@ trait BendAxis extends StObject {
   
   var poleTargetLocalOffset: js.UndefOr[Vector3] = js.undefined
   
-  var poleTargetMesh: js.UndefOr[AbstractMesh] = js.undefined
+  var poleTargetMesh: js.UndefOr[TransformNode] = js.undefined
   
   var slerpAmount: js.UndefOr[Double] = js.undefined
   
-  var targetMesh: js.UndefOr[AbstractMesh] = js.undefined
+  var targetMesh: js.UndefOr[TransformNode] = js.undefined
 }
 object BendAxis {
   
@@ -54,7 +54,7 @@ object BendAxis {
     
     inline def setPoleTargetLocalOffsetUndefined: Self = StObject.set(x, "poleTargetLocalOffset", js.undefined)
     
-    inline def setPoleTargetMesh(value: AbstractMesh): Self = StObject.set(x, "poleTargetMesh", value.asInstanceOf[js.Any])
+    inline def setPoleTargetMesh(value: TransformNode): Self = StObject.set(x, "poleTargetMesh", value.asInstanceOf[js.Any])
     
     inline def setPoleTargetMeshUndefined: Self = StObject.set(x, "poleTargetMesh", js.undefined)
     
@@ -62,7 +62,7 @@ object BendAxis {
     
     inline def setSlerpAmountUndefined: Self = StObject.set(x, "slerpAmount", js.undefined)
     
-    inline def setTargetMesh(value: AbstractMesh): Self = StObject.set(x, "targetMesh", value.asInstanceOf[js.Any])
+    inline def setTargetMesh(value: TransformNode): Self = StObject.set(x, "targetMesh", value.asInstanceOf[js.Any])
     
     inline def setTargetMeshUndefined: Self = StObject.set(x, "targetMesh", js.undefined)
   }

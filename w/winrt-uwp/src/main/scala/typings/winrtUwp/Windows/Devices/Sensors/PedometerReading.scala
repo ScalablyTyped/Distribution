@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Sensors
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait PedometerReading extends StObject {
   var stepKind: PedometerStepKind
   
   /** Gets the time for the most recent pedometer reading. */
-  var timestamp: Date
+  var timestamp: js.Date
 }
 object PedometerReading {
   
@@ -26,7 +25,7 @@ object PedometerReading {
     cumulativeSteps: Double,
     cumulativeStepsDuration: Double,
     stepKind: PedometerStepKind,
-    timestamp: Date
+    timestamp: js.Date
   ): PedometerReading = {
     val __obj = js.Dynamic.literal(cumulativeSteps = cumulativeSteps.asInstanceOf[js.Any], cumulativeStepsDuration = cumulativeStepsDuration.asInstanceOf[js.Any], stepKind = stepKind.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PedometerReading]
@@ -40,6 +39,6 @@ object PedometerReading {
     
     inline def setStepKind(value: PedometerStepKind): Self = StObject.set(x, "stepKind", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

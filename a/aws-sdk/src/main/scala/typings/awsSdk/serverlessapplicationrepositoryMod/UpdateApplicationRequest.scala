@@ -68,7 +68,7 @@ object UpdateApplicationRequest {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
-    inline def setLabelsVarargs(value: string*): Self = StObject.set(x, "Labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: string*): Self = StObject.set(x, "Labels", js.Array(value*))
     
     inline def setReadmeBody(value: string): Self = StObject.set(x, "ReadmeBody", value.asInstanceOf[js.Any])
     

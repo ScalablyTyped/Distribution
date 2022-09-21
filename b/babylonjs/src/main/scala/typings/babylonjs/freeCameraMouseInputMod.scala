@@ -18,7 +18,7 @@ object freeCameraMouseInputMod {
     * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
     * @param touchEnabled Defines if touch is enabled or not
     */
-  class FreeCameraMouseInput ()
+  open class FreeCameraMouseInput ()
     extends StObject
        with ICameraInput[FreeCamera] {
     def this(/**
@@ -32,11 +32,17 @@ object freeCameraMouseInputMod {
       */
     var _allowCameraRotation: Boolean = js.native
     
-    /* private */ var _observer: js.Any = js.native
+    /* private */ var _contextMenuBind: Any = js.native
     
-    /* private */ var _onMouseMove: js.Any = js.native
+    /* private */ var _currentActiveButton: Any = js.native
     
-    /* private */ var _pointerInput: js.Any = js.native
+    /* private */ var _observer: Any = js.native
+    
+    /* private */ var _onMouseMove: Any = js.native
+    
+    /* private */ var _pointerInput: Any = js.native
+    
+    /* private */ var _previousPosition: Any = js.native
     
     /**
       * Defines the pointer angular sensibility  along the X and Y axis or how fast is the camera rotating.
@@ -57,15 +63,14 @@ object freeCameraMouseInputMod {
     /**
       * Called on JS contextmenu event.
       * Override this method to provide functionality.
+      * @param evt
       */
-    /* protected */ def onContextMenu(evt: PointerEvent): Unit = js.native
+    def onContextMenu(evt: PointerEvent): Unit = js.native
     
     /**
       * Observable for when a pointer move event occurs containing the move offset
       */
     var onPointerMovedObservable: Observable[OffsetX] = js.native
-    
-    /* private */ var previousPosition: js.Any = js.native
     
     /**
       * Define if touch is enabled in the mouse input

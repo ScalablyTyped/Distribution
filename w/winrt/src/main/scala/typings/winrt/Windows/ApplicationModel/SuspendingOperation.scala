@@ -1,6 +1,5 @@
 package typings.winrt.Windows.ApplicationModel
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait SuspendingOperation
      with ISuspendingOperation
 object SuspendingOperation {
   
-  inline def apply(deadline: Date, getDeferral: () => SuspendingDeferral): SuspendingOperation = {
+  inline def apply(deadline: js.Date, getDeferral: () => SuspendingDeferral): SuspendingOperation = {
     val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral))
     __obj.asInstanceOf[SuspendingOperation]
   }

@@ -37,7 +37,7 @@ object ClusterStatsParams {
     
     inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
-    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
+    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value*))
     
     inline def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

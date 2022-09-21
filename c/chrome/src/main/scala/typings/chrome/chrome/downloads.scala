@@ -1,6 +1,10 @@
 package typings.chrome.chrome
 
 import typings.chrome.chrome.events.Event
+import typings.chrome.chromeNumbers.`16`
+import typings.chrome.chromeNumbers.`32`
+import typings.chrome.chromeStrings.GET
+import typings.chrome.chromeStrings.POST
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,6 +42,36 @@ object downloads {
       
       inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.chrome.chromeStrings.file
+    - typings.chrome.chromeStrings.url
+    - typings.chrome.chromeStrings.content
+    - typings.chrome.chromeStrings.uncommon
+    - typings.chrome.chromeStrings.host
+    - typings.chrome.chromeStrings.unwanted
+    - typings.chrome.chromeStrings.safe
+    - typings.chrome.chromeStrings.accepted
+  */
+  trait DangerType extends StObject
+  object DangerType {
+    
+    inline def accepted: typings.chrome.chromeStrings.accepted = "accepted".asInstanceOf[typings.chrome.chromeStrings.accepted]
+    
+    inline def content: typings.chrome.chromeStrings.content = "content".asInstanceOf[typings.chrome.chromeStrings.content]
+    
+    inline def file: typings.chrome.chromeStrings.file = "file".asInstanceOf[typings.chrome.chromeStrings.file]
+    
+    inline def host: typings.chrome.chromeStrings.host = "host".asInstanceOf[typings.chrome.chromeStrings.host]
+    
+    inline def safe: typings.chrome.chromeStrings.safe = "safe".asInstanceOf[typings.chrome.chromeStrings.safe]
+    
+    inline def uncommon: typings.chrome.chromeStrings.uncommon = "uncommon".asInstanceOf[typings.chrome.chromeStrings.uncommon]
+    
+    inline def unwanted: typings.chrome.chromeStrings.unwanted = "unwanted".asInstanceOf[typings.chrome.chromeStrings.unwanted]
+    
+    inline def url: typings.chrome.chromeStrings.url = "url".asInstanceOf[typings.chrome.chromeStrings.url]
   }
   
   trait DoubleDelta extends StObject {
@@ -96,7 +130,7 @@ object downloads {
       * Optional. The change in finalUrl, if any.
       * @since Since Chrome 54.
       */
-    var finalUrl: StringDelta
+    var finalUrl: js.UndefOr[StringDelta] = js.undefined
     
     /** The id of the DownloadItem that changed. */
     var id: Double
@@ -121,8 +155,8 @@ object downloads {
   }
   object DownloadDelta {
     
-    inline def apply(finalUrl: StringDelta, id: Double): DownloadDelta = {
-      val __obj = js.Dynamic.literal(finalUrl = finalUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    inline def apply(id: Double): DownloadDelta = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[DownloadDelta]
     }
     
@@ -157,6 +191,8 @@ object downloads {
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
       inline def setFinalUrl(value: StringDelta): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
+      
+      inline def setFinalUrlUndefined: Self = StObject.set(x, "finalUrl", js.undefined)
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -221,6 +257,99 @@ object downloads {
     }
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.chrome.chromeStrings.FILE_FAILED
+    - typings.chrome.chromeStrings.FILE_ACCESS_DENIED
+    - typings.chrome.chromeStrings.FILE_NO_SPACE
+    - typings.chrome.chromeStrings.FILE_NAME_TOO_LONG
+    - typings.chrome.chromeStrings.FILE_TOO_LARGE
+    - typings.chrome.chromeStrings.FILE_VIRUS_INFECTED
+    - typings.chrome.chromeStrings.FILE_TRANSIENT_ERROR
+    - typings.chrome.chromeStrings.FILE_BLOCKED
+    - typings.chrome.chromeStrings.FILE_SECURITY_CHECK_FAILED
+    - typings.chrome.chromeStrings.FILE_TOO_SHORT
+    - typings.chrome.chromeStrings.FILE_HASH_MISMATCH
+    - typings.chrome.chromeStrings.FILE_SAME_AS_SOURCE
+    - typings.chrome.chromeStrings.NETWORK_FAILED
+    - typings.chrome.chromeStrings.NETWORK_TIMEOUT
+    - typings.chrome.chromeStrings.NETWORK_DISCONNECTED
+    - typings.chrome.chromeStrings.NETWORK_SERVER_DOWN
+    - typings.chrome.chromeStrings.NETWORK_INVALID_REQUEST
+    - typings.chrome.chromeStrings.SERVER_FAILED
+    - typings.chrome.chromeStrings.SERVER_NO_RANGE
+    - typings.chrome.chromeStrings.SERVER_BAD_CONTENT
+    - typings.chrome.chromeStrings.SERVER_UNAUTHORIZED
+    - typings.chrome.chromeStrings.SERVER_CERT_PROBLEM
+    - typings.chrome.chromeStrings.SERVER_FORBIDDEN
+    - typings.chrome.chromeStrings.SERVER_UNREACHABLE
+    - typings.chrome.chromeStrings.SERVER_CONTENT_LENGTH_MISMATCH
+    - typings.chrome.chromeStrings.SERVER_CROSS_ORIGIN_REDIRECT
+    - typings.chrome.chromeStrings.USER_CANCELED
+    - typings.chrome.chromeStrings.USER_SHUTDOWN
+    - typings.chrome.chromeStrings.CRASH
+  */
+  trait DownloadInterruptReason extends StObject
+  object DownloadInterruptReason {
+    
+    inline def CRASH: typings.chrome.chromeStrings.CRASH = "CRASH".asInstanceOf[typings.chrome.chromeStrings.CRASH]
+    
+    inline def FILE_ACCESS_DENIED: typings.chrome.chromeStrings.FILE_ACCESS_DENIED = "FILE_ACCESS_DENIED".asInstanceOf[typings.chrome.chromeStrings.FILE_ACCESS_DENIED]
+    
+    inline def FILE_BLOCKED: typings.chrome.chromeStrings.FILE_BLOCKED = "FILE_BLOCKED".asInstanceOf[typings.chrome.chromeStrings.FILE_BLOCKED]
+    
+    inline def FILE_FAILED: typings.chrome.chromeStrings.FILE_FAILED = "FILE_FAILED".asInstanceOf[typings.chrome.chromeStrings.FILE_FAILED]
+    
+    inline def FILE_HASH_MISMATCH: typings.chrome.chromeStrings.FILE_HASH_MISMATCH = "FILE_HASH_MISMATCH".asInstanceOf[typings.chrome.chromeStrings.FILE_HASH_MISMATCH]
+    
+    inline def FILE_NAME_TOO_LONG: typings.chrome.chromeStrings.FILE_NAME_TOO_LONG = "FILE_NAME_TOO_LONG".asInstanceOf[typings.chrome.chromeStrings.FILE_NAME_TOO_LONG]
+    
+    inline def FILE_NO_SPACE: typings.chrome.chromeStrings.FILE_NO_SPACE = "FILE_NO_SPACE".asInstanceOf[typings.chrome.chromeStrings.FILE_NO_SPACE]
+    
+    inline def FILE_SAME_AS_SOURCE: typings.chrome.chromeStrings.FILE_SAME_AS_SOURCE = "FILE_SAME_AS_SOURCE".asInstanceOf[typings.chrome.chromeStrings.FILE_SAME_AS_SOURCE]
+    
+    inline def FILE_SECURITY_CHECK_FAILED: typings.chrome.chromeStrings.FILE_SECURITY_CHECK_FAILED = "FILE_SECURITY_CHECK_FAILED".asInstanceOf[typings.chrome.chromeStrings.FILE_SECURITY_CHECK_FAILED]
+    
+    inline def FILE_TOO_LARGE: typings.chrome.chromeStrings.FILE_TOO_LARGE = "FILE_TOO_LARGE".asInstanceOf[typings.chrome.chromeStrings.FILE_TOO_LARGE]
+    
+    inline def FILE_TOO_SHORT: typings.chrome.chromeStrings.FILE_TOO_SHORT = "FILE_TOO_SHORT".asInstanceOf[typings.chrome.chromeStrings.FILE_TOO_SHORT]
+    
+    inline def FILE_TRANSIENT_ERROR: typings.chrome.chromeStrings.FILE_TRANSIENT_ERROR = "FILE_TRANSIENT_ERROR".asInstanceOf[typings.chrome.chromeStrings.FILE_TRANSIENT_ERROR]
+    
+    inline def FILE_VIRUS_INFECTED: typings.chrome.chromeStrings.FILE_VIRUS_INFECTED = "FILE_VIRUS_INFECTED".asInstanceOf[typings.chrome.chromeStrings.FILE_VIRUS_INFECTED]
+    
+    inline def NETWORK_DISCONNECTED: typings.chrome.chromeStrings.NETWORK_DISCONNECTED = "NETWORK_DISCONNECTED".asInstanceOf[typings.chrome.chromeStrings.NETWORK_DISCONNECTED]
+    
+    inline def NETWORK_FAILED: typings.chrome.chromeStrings.NETWORK_FAILED = "NETWORK_FAILED".asInstanceOf[typings.chrome.chromeStrings.NETWORK_FAILED]
+    
+    inline def NETWORK_INVALID_REQUEST: typings.chrome.chromeStrings.NETWORK_INVALID_REQUEST = "NETWORK_INVALID_REQUEST".asInstanceOf[typings.chrome.chromeStrings.NETWORK_INVALID_REQUEST]
+    
+    inline def NETWORK_SERVER_DOWN: typings.chrome.chromeStrings.NETWORK_SERVER_DOWN = "NETWORK_SERVER_DOWN".asInstanceOf[typings.chrome.chromeStrings.NETWORK_SERVER_DOWN]
+    
+    inline def NETWORK_TIMEOUT: typings.chrome.chromeStrings.NETWORK_TIMEOUT = "NETWORK_TIMEOUT".asInstanceOf[typings.chrome.chromeStrings.NETWORK_TIMEOUT]
+    
+    inline def SERVER_BAD_CONTENT: typings.chrome.chromeStrings.SERVER_BAD_CONTENT = "SERVER_BAD_CONTENT".asInstanceOf[typings.chrome.chromeStrings.SERVER_BAD_CONTENT]
+    
+    inline def SERVER_CERT_PROBLEM: typings.chrome.chromeStrings.SERVER_CERT_PROBLEM = "SERVER_CERT_PROBLEM".asInstanceOf[typings.chrome.chromeStrings.SERVER_CERT_PROBLEM]
+    
+    inline def SERVER_CONTENT_LENGTH_MISMATCH: typings.chrome.chromeStrings.SERVER_CONTENT_LENGTH_MISMATCH = "SERVER_CONTENT_LENGTH_MISMATCH".asInstanceOf[typings.chrome.chromeStrings.SERVER_CONTENT_LENGTH_MISMATCH]
+    
+    inline def SERVER_CROSS_ORIGIN_REDIRECT: typings.chrome.chromeStrings.SERVER_CROSS_ORIGIN_REDIRECT = "SERVER_CROSS_ORIGIN_REDIRECT".asInstanceOf[typings.chrome.chromeStrings.SERVER_CROSS_ORIGIN_REDIRECT]
+    
+    inline def SERVER_FAILED: typings.chrome.chromeStrings.SERVER_FAILED = "SERVER_FAILED".asInstanceOf[typings.chrome.chromeStrings.SERVER_FAILED]
+    
+    inline def SERVER_FORBIDDEN: typings.chrome.chromeStrings.SERVER_FORBIDDEN = "SERVER_FORBIDDEN".asInstanceOf[typings.chrome.chromeStrings.SERVER_FORBIDDEN]
+    
+    inline def SERVER_NO_RANGE: typings.chrome.chromeStrings.SERVER_NO_RANGE = "SERVER_NO_RANGE".asInstanceOf[typings.chrome.chromeStrings.SERVER_NO_RANGE]
+    
+    inline def SERVER_UNAUTHORIZED: typings.chrome.chromeStrings.SERVER_UNAUTHORIZED = "SERVER_UNAUTHORIZED".asInstanceOf[typings.chrome.chromeStrings.SERVER_UNAUTHORIZED]
+    
+    inline def SERVER_UNREACHABLE: typings.chrome.chromeStrings.SERVER_UNREACHABLE = "SERVER_UNREACHABLE".asInstanceOf[typings.chrome.chromeStrings.SERVER_UNREACHABLE]
+    
+    inline def USER_CANCELED: typings.chrome.chromeStrings.USER_CANCELED = "USER_CANCELED".asInstanceOf[typings.chrome.chromeStrings.USER_CANCELED]
+    
+    inline def USER_SHUTDOWN: typings.chrome.chromeStrings.USER_SHUTDOWN = "USER_SHUTDOWN".asInstanceOf[typings.chrome.chromeStrings.USER_SHUTDOWN]
+  }
+  
   trait DownloadItem extends StObject {
     
     /** Optional. The identifier for the extension that initiated this download if this download was initiated by an extension. Does not change once it is set.  */
@@ -236,13 +365,13 @@ object downloads {
     var canResume: Boolean
     
     /** Indication of whether this download is thought to be safe or known to be suspicious. */
-    var danger: String
+    var danger: DangerType
     
     /** Optional. The time when the download ended in ISO 8601 format. May be passed directly to the Date constructor: chrome.downloads.search({}, function(items){items.forEach(function(item){if (item.endTime) console.log(new Date(item.endTime))})})  */
     var endTime: js.UndefOr[String] = js.undefined
     
     /** Optional. Why the download was interrupted. Several kinds of HTTP errors may be grouped under one of the errors beginning with SERVER_. Errors relating to the network begin with NETWORK_, errors relating to the process of writing the file to the file system begin with FILE_, and interruptions initiated by the user begin with USER_.  */
-    var error: js.UndefOr[String] = js.undefined
+    var error: js.UndefOr[DownloadInterruptReason] = js.undefined
     
     /** Optional. Estimated time when the download will complete in ISO 8601 format. May be passed directly to the Date constructor: chrome.downloads.search({}, function(items){items.forEach(function(item){if (item.estimatedEndTime) console.log(new Date(item.estimatedEndTime))})})  */
     var estimatedEndTime: js.UndefOr[String] = js.undefined
@@ -281,7 +410,7 @@ object downloads {
     var startTime: String
     
     /** Indicates whether the download is progressing, interrupted, or complete. */
-    var state: String
+    var state: DownloadState
     
     /** Number of bytes in the whole file, without considering file compression, or -1 if unknown. */
     var totalBytes: Double
@@ -294,7 +423,7 @@ object downloads {
     inline def apply(
       bytesReceived: Double,
       canResume: Boolean,
-      danger: String,
+      danger: DangerType,
       exists: Boolean,
       fileSize: Double,
       filename: String,
@@ -305,7 +434,7 @@ object downloads {
       paused: Boolean,
       referrer: String,
       startTime: String,
-      state: String,
+      state: DownloadState,
       totalBytes: Double,
       url: String
     ): DownloadItem = {
@@ -327,13 +456,13 @@ object downloads {
       
       inline def setCanResume(value: Boolean): Self = StObject.set(x, "canResume", value.asInstanceOf[js.Any])
       
-      inline def setDanger(value: String): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
+      inline def setDanger(value: DangerType): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
       
       inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
       inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
-      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: DownloadInterruptReason): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -361,7 +490,7 @@ object downloads {
       
       inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: DownloadState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setTotalBytes(value: Double): Self = StObject.set(x, "totalBytes", value.asInstanceOf[js.Any])
       
@@ -375,7 +504,7 @@ object downloads {
     var body: js.UndefOr[String] = js.undefined
     
     /** Optional. The action to take if filename already exists.  */
-    var conflictAction: js.UndefOr[String] = js.undefined
+    var conflictAction: js.UndefOr[FilenameConflictAction] = js.undefined
     
     /** Optional. A file path relative to the Downloads directory to contain the downloaded file, possibly containing subdirectories. Absolute paths, empty paths, and paths containing back-references ".." will cause an error. onDeterminingFilename allows suggesting a filename after the file's MIME type and a tentative filename have been determined.  */
     var filename: js.UndefOr[String] = js.undefined
@@ -384,7 +513,7 @@ object downloads {
     var headers: js.UndefOr[js.Array[HeaderNameValuePair]] = js.undefined
     
     /** Optional. The HTTP method to use if the URL uses the HTTP[S] protocol.  */
-    var method: js.UndefOr[String] = js.undefined
+    var method: js.UndefOr[GET | POST] = js.undefined
     
     /** Optional. Use a file-chooser to allow the user to select a filename regardless of whether filename is set or already exists.  */
     var saveAs: js.UndefOr[Boolean] = js.undefined
@@ -405,7 +534,7 @@ object downloads {
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      inline def setConflictAction(value: String): Self = StObject.set(x, "conflictAction", value.asInstanceOf[js.Any])
+      inline def setConflictAction(value: FilenameConflictAction): Self = StObject.set(x, "conflictAction", value.asInstanceOf[js.Any])
       
       inline def setConflictActionUndefined: Self = StObject.set(x, "conflictAction", js.undefined)
       
@@ -417,9 +546,9 @@ object downloads {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: HeaderNameValuePair*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: HeaderNameValuePair*): Self = StObject.set(x, "headers", js.Array(value*))
       
-      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: GET | POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
@@ -573,7 +702,7 @@ object downloads {
       
       inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
       
-      inline def setOrderByVarargs(value: String*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
+      inline def setOrderByVarargs(value: String*): Self = StObject.set(x, "orderBy", js.Array(value*))
       
       inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
@@ -583,7 +712,7 @@ object downloads {
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      inline def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value :_*))
+      inline def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value*))
       
       inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
@@ -623,11 +752,41 @@ object downloads {
     }
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.chrome.chromeStrings.in_progress
+    - typings.chrome.chromeStrings.interrupted
+    - typings.chrome.chromeStrings.complete
+  */
+  trait DownloadState extends StObject
+  object DownloadState {
+    
+    inline def complete: typings.chrome.chromeStrings.complete = "complete".asInstanceOf[typings.chrome.chromeStrings.complete]
+    
+    inline def in_progress: typings.chrome.chromeStrings.in_progress = "in_progress".asInstanceOf[typings.chrome.chromeStrings.in_progress]
+    
+    inline def interrupted: typings.chrome.chromeStrings.interrupted = "interrupted".asInstanceOf[typings.chrome.chromeStrings.interrupted]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.chrome.chromeStrings.uniquify
+    - typings.chrome.chromeStrings.overwrite
+    - typings.chrome.chromeStrings.prompt
+  */
+  trait FilenameConflictAction extends StObject
+  object FilenameConflictAction {
+    
+    inline def overwrite: typings.chrome.chromeStrings.overwrite = "overwrite".asInstanceOf[typings.chrome.chromeStrings.overwrite]
+    
+    inline def prompt: typings.chrome.chromeStrings.prompt = "prompt".asInstanceOf[typings.chrome.chromeStrings.prompt]
+    
+    inline def uniquify: typings.chrome.chromeStrings.uniquify = "uniquify".asInstanceOf[typings.chrome.chromeStrings.uniquify]
+  }
+  
   trait GetFileIconOptions extends StObject {
     
     /** Optional. * The size of the returned icon. The icon will be square with dimensions size * size pixels. The default and largest size for the icon is 32x32 pixels. The only supported sizes are 16 and 32. It is an error to specify any other size.
       */
-    var size: js.UndefOr[Double] = js.undefined
+    var size: js.UndefOr[`16` | `32`] = js.undefined
   }
   object GetFileIconOptions {
     
@@ -638,7 +797,7 @@ object downloads {
     
     extension [Self <: GetFileIconOptions](x: Self) {
       
-      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: `16` | `32`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }

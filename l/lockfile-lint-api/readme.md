@@ -10,10 +10,10 @@ Lint an npm or yarn lockfile to analyze and detect issues
 | ------------------ | :-------------: |
 | Full name          | lockfile-lint-api |
 | Keywords           | lockfile, lock, file, lint, linter, parse, npm, yarn |
-| # releases         | 32 |
-| # dependents       | 1 |
-| # downloads        | 1704782 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 340689.6666666667 |
+| # stars            | 604.0 |
 
 ## Links
 - [Homepage](https://github.com/lirantal/lockfile-lint)

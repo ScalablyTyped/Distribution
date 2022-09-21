@@ -28,10 +28,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassSslSocket ()
+open class ClassSslSocket ()
   extends StObject
      with typings.fibjs.ClassSslSocket {
-  def this(certs: js.Array[js.Any]) = this()
+  def this(certs: js.Array[Any]) = this()
   /**
     * 
     * @brief SslSocket 构造函数，创建一个新的 SslSocket 对象

@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "TeamMemberAssignedLocationsAssignmentType")
 @js.native
-class TeamMemberAssignedLocationsAssignmentType () extends StObject
+open class TeamMemberAssignedLocationsAssignmentType () extends StObject

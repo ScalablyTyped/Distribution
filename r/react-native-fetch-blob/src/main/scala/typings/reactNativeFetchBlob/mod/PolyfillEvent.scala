@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-fetch-blob", "PolyfillEvent")
 @js.native
-class PolyfillEvent () extends StObject
+open class PolyfillEvent () extends StObject

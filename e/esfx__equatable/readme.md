@@ -1,7 +1,7 @@
 
 # Scala.js typings for esfx__equatable
 
-Typings are for version 1.0.0-pre.13
+Typings are for version 1.0.0-pre.19
 
 ## Library description:
 A low-level API for defining equality.
@@ -10,10 +10,10 @@ A low-level API for defining equality.
 | ------------------ | :-------------: |
 | Full name          | @esfx/equatable |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 26 |
-| # downloads        | 22942 |
-| # stars            | 0 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 9237.333333333334 |
+| # stars            | 161.0 |
 
 ## Links
 - [Homepage](https://github.com/esfx/esfx#readme)

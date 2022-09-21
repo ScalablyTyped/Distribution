@@ -58,7 +58,7 @@ object CreateEventSubscriptionMessage {
     
     inline def setEventCategoriesUndefined: Self = StObject.set(x, "EventCategories", js.undefined)
     
-    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value :_*))
+    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value*))
     
     inline def setSnsTopicArn(value: String): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
     
@@ -66,7 +66,7 @@ object CreateEventSubscriptionMessage {
     
     inline def setSourceIdsUndefined: Self = StObject.set(x, "SourceIds", js.undefined)
     
-    inline def setSourceIdsVarargs(value: String*): Self = StObject.set(x, "SourceIds", js.Array(value :_*))
+    inline def setSourceIdsVarargs(value: String*): Self = StObject.set(x, "SourceIds", js.Array(value*))
     
     inline def setSourceType(value: String): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
@@ -78,6 +78,6 @@ object CreateEventSubscriptionMessage {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

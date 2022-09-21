@@ -25,5 +25,5 @@ object symbolFactoriesMod {
   
   inline def wye(): SymbolFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("wye")().asInstanceOf[SymbolFactory]
   
-  type SymbolFactory = js.Function1[/* symbolSize */ Double, Symbol_[js.Any, js.Any]]
+  type SymbolFactory = js.Function1[/* symbolSize */ Double, Symbol_[Any, Any]]
 }

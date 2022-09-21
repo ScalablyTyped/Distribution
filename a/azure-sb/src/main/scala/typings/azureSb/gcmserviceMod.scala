@@ -11,7 +11,7 @@ object gcmserviceMod {
   
   @JSImport("azure-sb/lib/gcmservice", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with GcmService {
     def this(notificationHubService: typings.azureSb.notificationhubserviceMod.^) = this()

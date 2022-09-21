@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommitDiffSourceCodeType extends StObject {
   
   /**
-    *  The SHA of the destination commit used to generate a commit diff. 
+    * The SHA of the destination commit used to generate a commit diff. This field is required for a pull request code review.
     */
   var DestinationCommit: js.UndefOr[CommitId] = js.undefined
   
   /**
-    *  The SHA of the source commit used to generate a commit diff. 
+    * The SHA of the merge base of a commit.
+    */
+  var MergeBaseCommit: js.UndefOr[CommitId] = js.undefined
+  
+  /**
+    * The SHA of the source commit used to generate a commit diff. This field is required for a pull request code review.
     */
   var SourceCommit: js.UndefOr[CommitId] = js.undefined
 }
@@ -28,6 +33,10 @@ object CommitDiffSourceCodeType {
     inline def setDestinationCommit(value: CommitId): Self = StObject.set(x, "DestinationCommit", value.asInstanceOf[js.Any])
     
     inline def setDestinationCommitUndefined: Self = StObject.set(x, "DestinationCommit", js.undefined)
+    
+    inline def setMergeBaseCommit(value: CommitId): Self = StObject.set(x, "MergeBaseCommit", value.asInstanceOf[js.Any])
+    
+    inline def setMergeBaseCommitUndefined: Self = StObject.set(x, "MergeBaseCommit", js.undefined)
     
     inline def setSourceCommit(value: CommitId): Self = StObject.set(x, "SourceCommit", value.asInstanceOf[js.Any])
     

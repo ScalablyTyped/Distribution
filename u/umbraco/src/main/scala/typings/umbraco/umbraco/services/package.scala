@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Search media
   */
-type ISearchMedia = typings.umbraco.umbraco.services.ISearchContent
+type ISearchMedia = ISearchContent

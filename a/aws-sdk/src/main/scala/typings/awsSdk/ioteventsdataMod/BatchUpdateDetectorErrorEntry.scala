@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchUpdateDetectorErrorEntry extends StObject {
   
   /**
-    * The code of the error.
+    * The error code.
     */
   var errorCode: js.UndefOr[ErrorCode] = js.undefined
   
   /**
-    * A message describing the error.
+    * A message that describes the error.
     */
   var errorMessage: js.UndefOr[ErrorMessage] = js.undefined
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for sm-crypto
 
-Typings are for version 0.1
+Typings are for version 0.3
 
 ## Library description:
 sm-crypto
@@ -10,10 +10,10 @@ sm-crypto
 | ------------------ | :-------------: |
 | Full name          | sm-crypto |
 | Keywords           | sm, js, crypto |
-| # releases         | 8 |
-| # dependents       | 20 |
-| # downloads        | 18082 |
-| # stars            | 0 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 12976.0 |
+| # stars            | 476.0 |
 
 ## Links
 - [Homepage](https://github.com/JuneAndGreen/sm-crypto#readme)

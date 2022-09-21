@@ -1,7 +1,7 @@
 
 # Scala.js typings for tiny-lru
 
-Typings are for version 7.0.6
+Typings are for version 8.0.2
 
 ## Library description:
 Tiny LRU cache for Client or Server
@@ -10,10 +10,10 @@ Tiny LRU cache for Client or Server
 | ------------------ | :-------------: |
 | Full name          | tiny-lru |
 | Keywords           | LRU, cache, tiny, client, server, least, recently, used |
-| # releases         | 9 |
-| # dependents       | 45 |
-| # downloads        | 9600542 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3227206.0 |
+| # stars            | 112.0 |
 
 ## Links
 - [Homepage](https://github.com/avoidwork/tiny-lru)

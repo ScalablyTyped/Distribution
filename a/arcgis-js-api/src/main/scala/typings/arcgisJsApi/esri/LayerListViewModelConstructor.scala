@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LayerListViewModelConstructor
   extends StObject
-     with Instantiable0[LayerListViewModel]
+     with /**
+  * Provides the logic for the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-LayerListViewModel.html)
+  */
+Instantiable0[LayerListViewModel]
      with Instantiable1[/* properties */ LayerListViewModelProperties, LayerListViewModel]

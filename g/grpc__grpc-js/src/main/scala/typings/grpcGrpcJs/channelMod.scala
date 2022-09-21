@@ -5,9 +5,10 @@ import typings.grpcGrpcJs.callStreamMod.Deadline
 import typings.grpcGrpcJs.callStreamMod.Http2CallStream
 import typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
 import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
+import typings.grpcGrpcJs.channelzMod.ChannelRef
+import typings.grpcGrpcJs.connectivityStateMod.ConnectivityState
 import typings.grpcGrpcJs.metadataMod.Metadata
-import typings.std.Date
-import typings.std.Error
+import typings.grpcGrpcJs.serverCallMod.ServerSurfaceCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ object channelMod {
   
   @JSImport("@grpc/grpc-js/build/src/channel", "ChannelImplementation")
   @js.native
-  class ChannelImplementation protected ()
+  open class ChannelImplementation protected ()
     extends StObject
        with Channel {
     def this(target: String, credentials: ChannelCredentials, options: ChannelOptions) = this()
@@ -30,33 +31,72 @@ object channelMod {
       * the invariant is that callRefTimer is reffed if and only if pickQueue
       * is non-empty.
       */
-    /* private */ var callRefTimer: js.Any = js.native
+    /* private */ var callRefTimer: Any = js.native
     
-    /* private */ var connectivityState: js.Any = js.native
+    /* private */ var callRefTimerRef: Any = js.native
     
-    /* private */ var connectivityStateWatchers: js.Any = js.native
+    /* private */ var callRefTimerUnref: Any = js.native
     
-    /* private */ val credentials: js.Any = js.native
+    /* private */ var callTracker: Any = js.native
     
-    /* private */ var currentPicker: js.Any = js.native
+    /* private */ val channelzEnabled: Any = js.native
     
-    /* private */ var defaultAuthority: js.Any = js.native
+    /* private */ var channelzRef: Any = js.native
     
-    /* private */ var filterStackFactory: js.Any = js.native
+    /* private */ var channelzTrace: Any = js.native
     
-    /* private */ val options: js.Any = js.native
+    /* private */ var childrenTracker: Any = js.native
     
-    /* private */ var pickQueue: js.Any = js.native
+    /**
+      * Calls queued up to get a call config. Should only be populated before the
+      * first time the resolver returns a result, which includes the ConfigSelector.
+      */
+    /* private */ var configSelectionQueue: Any = js.native
     
-    /* private */ var pushPick: js.Any = js.native
+    /* private */ var configSelector: Any = js.native
     
-    /* private */ var removeConnectivityStateWatcher: js.Any = js.native
+    /* private */ var connectivityState: Any = js.native
     
-    /* private */ var resolvingLoadBalancer: js.Any = js.native
+    /* private */ var connectivityStateWatchers: Any = js.native
     
-    /* private */ var subchannelPool: js.Any = js.native
+    /* private */ val credentials: Any = js.native
     
-    /* private */ var target: js.Any = js.native
+    /* private */ var currentPicker: Any = js.native
+    
+    /**
+      * This is the error from the name resolver if it failed most recently. It
+      * is only used to end calls that start while there is no config selector
+      * and the name resolver is in backoff, so it should be nulled if
+      * configSelector becomes set or the channel state becomes anything other
+      * than TRANSIENT_FAILURE.
+      */
+    /* private */ var currentResolutionError: Any = js.native
+    
+    /* private */ var defaultAuthority: Any = js.native
+    
+    /* private */ var filterStackFactory: Any = js.native
+    
+    /* private */ var getChannelzInfo: Any = js.native
+    
+    /* private */ val options: Any = js.native
+    
+    /* private */ var originalTarget: Any = js.native
+    
+    /* private */ var pickQueue: Any = js.native
+    
+    /* private */ var pushPick: Any = js.native
+    
+    /* private */ var removeConnectivityStateWatcher: Any = js.native
+    
+    /* private */ var resolvingLoadBalancer: Any = js.native
+    
+    /* private */ var subchannelPool: Any = js.native
+    
+    /* private */ var target: Any = js.native
+    
+    /* private */ var trace: Any = js.native
+    
+    /* private */ var tryGetConfig: Any = js.native
     
     /**
       * Check the picker output for the given call and corresponding metadata,
@@ -65,49 +105,9 @@ object channelMod {
       * @param callStream
       * @param callMetadata
       */
-    /* private */ var tryPick: js.Any = js.native
+    /* private */ var tryPick: Any = js.native
     
-    /* private */ var updateState: js.Any = js.native
-  }
-  
-  @js.native
-  sealed trait ConnectivityState extends StObject
-  @JSImport("@grpc/grpc-js/build/src/channel", "ConnectivityState")
-  @js.native
-  object ConnectivityState extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ConnectivityState & Double] = js.native
-    
-    @js.native
-    sealed trait CONNECTING
-      extends StObject
-         with ConnectivityState
-    /* 0 */ val CONNECTING: typings.grpcGrpcJs.channelMod.ConnectivityState.CONNECTING & Double = js.native
-    
-    @js.native
-    sealed trait IDLE
-      extends StObject
-         with ConnectivityState
-    /* 3 */ val IDLE: typings.grpcGrpcJs.channelMod.ConnectivityState.IDLE & Double = js.native
-    
-    @js.native
-    sealed trait READY
-      extends StObject
-         with ConnectivityState
-    /* 1 */ val READY: typings.grpcGrpcJs.channelMod.ConnectivityState.READY & Double = js.native
-    
-    @js.native
-    sealed trait SHUTDOWN
-      extends StObject
-         with ConnectivityState
-    /* 4 */ val SHUTDOWN: typings.grpcGrpcJs.channelMod.ConnectivityState.SHUTDOWN & Double = js.native
-    
-    @js.native
-    sealed trait TRANSIENT_FAILURE
-      extends StObject
-         with ConnectivityState
-    /* 2 */ val TRANSIENT_FAILURE: typings.grpcGrpcJs.channelMod.ConnectivityState.TRANSIENT_FAILURE & Double = js.native
+    /* private */ var updateState: Any = js.native
   }
   
   @js.native
@@ -131,33 +131,42 @@ object channelMod {
       * @param propagateFlags A bitwise combination of elements of grpc.propagate
       *     that indicates what information to propagate from parentCall.
       */
-    def createCall(method: String, deadline: Deadline, host: String, parentCall: js.Any): Call = js.native
+    def createCall(method: String, deadline: Deadline): Call = js.native
+    def createCall(method: String, deadline: Deadline, host: String): Call = js.native
+    def createCall(method: String, deadline: Deadline, host: String, parentCall: Null, propagateFlags: Double): Call = js.native
+    def createCall(method: String, deadline: Deadline, host: String, parentCall: ServerSurfaceCall): Call = js.native
     def createCall(
       method: String,
       deadline: Deadline,
       host: String,
-      parentCall: js.Any,
-      // eslint-disable-line @typescript-eslint/no-explicit-any
-    propagateFlags: Double
+      parentCall: ServerSurfaceCall,
+      propagateFlags: Double
     ): Call = js.native
-    def createCall(method: String, deadline: Deadline, host: Null, parentCall: js.Any): Call = js.native
+    def createCall(method: String, deadline: Deadline, host: Null, parentCall: Null, propagateFlags: Double): Call = js.native
+    def createCall(method: String, deadline: Deadline, host: Null, parentCall: ServerSurfaceCall): Call = js.native
     def createCall(
       method: String,
       deadline: Deadline,
       host: Null,
-      parentCall: js.Any,
-      // eslint-disable-line @typescript-eslint/no-explicit-any
-    propagateFlags: Double
+      parentCall: ServerSurfaceCall,
+      propagateFlags: Double
     ): Call = js.native
-    def createCall(method: String, deadline: Deadline, host: Unit, parentCall: js.Any): Call = js.native
+    def createCall(method: String, deadline: Deadline, host: Unit, parentCall: Null, propagateFlags: Double): Call = js.native
+    def createCall(method: String, deadline: Deadline, host: Unit, parentCall: ServerSurfaceCall): Call = js.native
     def createCall(
       method: String,
       deadline: Deadline,
       host: Unit,
-      parentCall: js.Any,
-      // eslint-disable-line @typescript-eslint/no-explicit-any
-    propagateFlags: Double
+      parentCall: ServerSurfaceCall,
+      propagateFlags: Double
     ): Call = js.native
+    
+    /**
+      * Get the channelz reference object for this channel. A request to the
+      * channelz service for the id in this object will provide information
+      * about this channel.
+      */
+    def getChannelzRef(): ChannelRef = js.native
     
     /**
       * Get the channel's current connectivity state. This method is here mainly
@@ -174,11 +183,6 @@ object channelMod {
       */
     def getTarget(): String = js.native
     
-    def watchConnectivityState(
-      currentState: ConnectivityState,
-      deadline: Double,
-      callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
     /**
       * Watch for connectivity state changes. This is also here mainly because
       * it is in the existing external Channel class.
@@ -191,8 +195,13 @@ object channelMod {
       */
     def watchConnectivityState(
       currentState: ConnectivityState,
-      deadline: Date,
-      callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
+      deadline: js.Date,
+      callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]
+    ): Unit = js.native
+    def watchConnectivityState(
+      currentState: ConnectivityState,
+      deadline: Double,
+      callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
   }
 }

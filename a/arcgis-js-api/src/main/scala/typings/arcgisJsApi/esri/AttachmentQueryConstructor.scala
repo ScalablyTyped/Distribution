@@ -12,10 +12,10 @@ trait AttachmentQueryConstructor
      with /**
   * This class defines parameters for executing queries for feature attachments from a [feature layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).
   *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html)
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-AttachmentQuery.html)
   */
 Instantiable0[AttachmentQuery]
      with Instantiable1[/* properties */ AttachmentQueryProperties, AttachmentQuery] {
   
-  def fromJSON(json: js.Any): AttachmentQuery = js.native
+  def fromJSON(json: Any): AttachmentQuery = js.native
 }

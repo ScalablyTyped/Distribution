@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "typescript-tuple" : "2.2.1"
+      "typescript-tuple" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "typescript-tuple" : "2.2.1"
+      "typescript-tuple" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

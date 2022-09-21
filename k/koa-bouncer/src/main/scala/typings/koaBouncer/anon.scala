@@ -13,11 +13,11 @@ object anon {
     
     var key: String
     
-    var vals: js.Any
+    var vals: Any
   }
   object Ctx {
     
-    inline def apply(ctx: Context, key: String, vals: js.Any): Ctx = {
+    inline def apply(ctx: Context, key: String, vals: Any): Ctx = {
       val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], vals = vals.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ctx]
     }
@@ -28,7 +28,7 @@ object anon {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setVals(value: js.Any): Self = StObject.set(x, "vals", value.asInstanceOf[js.Any])
+      inline def setVals(value: Any): Self = StObject.set(x, "vals", value.asInstanceOf[js.Any])
     }
   }
   

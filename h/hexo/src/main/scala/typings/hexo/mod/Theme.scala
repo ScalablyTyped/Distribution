@@ -22,5 +22,5 @@ trait Theme extends Box {
   /**
     * Set a View
     */
-  def setView(path: String, data: js.Any): Unit = js.native
+  def setView(path: String, data: Any): Unit = js.native
 }

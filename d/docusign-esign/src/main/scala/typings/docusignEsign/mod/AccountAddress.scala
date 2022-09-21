@@ -123,6 +123,6 @@ object AccountAddress {
     
     inline def setSupportedCountriesUndefined: Self = StObject.set(x, "supportedCountries", js.undefined)
     
-    inline def setSupportedCountriesVarargs(value: Country*): Self = StObject.set(x, "supportedCountries", js.Array(value :_*))
+    inline def setSupportedCountriesVarargs(value: Country*): Self = StObject.set(x, "supportedCountries", js.Array(value*))
   }
 }

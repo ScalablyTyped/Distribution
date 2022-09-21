@@ -1,46 +1,104 @@
 package typings.parchment
 
 import typings.parchment.blotMod.Blot
+import typings.parchment.blotMod.BlotConstructor
 import typings.parchment.blotMod.Parent
+import typings.parchment.blotMod.Root
 import typings.parchment.linkedNodeMod.LinkedNode
-import typings.parchment.registryMod.Scope
+import typings.parchment.scopeMod.Scope
 import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("parchment/dist/src/blot/abstract/shadow", JSImport.Namespace)
-@js.native
-object shadowMod extends js.Object {
-  @js.native
-  trait ShadowBlot extends Blot {
-    val statics: js.Any = js.native
-    def replaceWith(name: String): Blot = js.native
-    def replaceWith(name: Blot, value: js.Any): Blot = js.native
-    def wrap(name: String): Parent = js.native
-    def wrap(name: Parent, value: js.Any): Parent = js.native
-  }
+object shadowMod {
   
+  @JSImport("parchment/dist/typings/blot/abstract/shadow", JSImport.Default)
   @js.native
-  class default protected () extends ShadowBlot {
-    def this(domNode: Node) = this()
-    /* CompleteClass */
-    override var next: LinkedNode | Null = js.native
-    /* CompleteClass */
-    override var prev: LinkedNode | Null = js.native
+  open class default protected ()
+    extends StObject
+       with ShadowBlot {
+    def this(scroll: Root, domNode: Node) = this()
+    
     /* CompleteClass */
     override def length(): Double = js.native
+    
+    /* CompleteClass */
+    var next: LinkedNode | Null = js.native
+    
+    /* CompleteClass */
+    var prev: LinkedNode | Null = js.native
+  }
+  object default {
+    
+    @JSImport("parchment/dist/typings/blot/abstract/shadow", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("parchment/dist/typings/blot/abstract/shadow", "default.blotName")
+    @js.native
+    def blotName: String = js.native
+    inline def blotName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blotName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("parchment/dist/typings/blot/abstract/shadow", "default.className")
+    @js.native
+    def className: String = js.native
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    inline def create(value: Any): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[Node]
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("parchment/dist/typings/blot/abstract/shadow", "default.requiredContainer")
+    @js.native
+    open class requiredContainer protected ()
+      extends StObject
+         with Blot {
+      def this(scroll: Root, node: Node) = this()
+      def this(scroll: Root, node: Node, value: Any) = this()
+      
+      /* CompleteClass */
+      override def length(): Double = js.native
+      
+      /* CompleteClass */
+      var next: LinkedNode | Null = js.native
+      
+      /* CompleteClass */
+      var prev: LinkedNode | Null = js.native
+    }
+    /* static member */
+    @JSImport("parchment/dist/typings/blot/abstract/shadow", "default.requiredContainer")
+    @js.native
+    def requiredContainer: BlotConstructor = js.native
+    inline def requiredContainer_=(x: BlotConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requiredContainer")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("parchment/dist/typings/blot/abstract/shadow", "default.scope")
+    @js.native
+    def scope: Scope = js.native
+    inline def scope_=(x: Scope): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scope")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("parchment/dist/typings/blot/abstract/shadow", "default.tagName")
+    @js.native
+    def tagName: String = js.native
+    inline def tagName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagName")(x.asInstanceOf[js.Any])
   }
   
-  /* static members */
   @js.native
-  object default extends js.Object {
-    var blotName: String = js.native
-    var className: String = js.native
-    var scope: Scope = js.native
-    var tagName: String = js.native
-    def create(value: js.Any): Node = js.native
+  trait ShadowBlot
+    extends StObject
+       with Blot {
+    
+    def replaceWith(name: String): Blot = js.native
+    def replaceWith(name: Blot, value: Any): Blot = js.native
+    
+    @JSName("statics")
+    def statics_MShadowBlot: Any = js.native
+    
+    def wrap(name: String): Parent = js.native
+    def wrap(name: Parent, value: Any): Parent = js.native
   }
-  
 }
-

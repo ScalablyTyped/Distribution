@@ -29,6 +29,6 @@ object AchievementUpdateMultipleRequest {
     
     inline def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
     
-    inline def setUpdatesVarargs(value: AchievementUpdateRequest*): Self = StObject.set(x, "updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: AchievementUpdateRequest*): Self = StObject.set(x, "updates", js.Array(value*))
   }
 }

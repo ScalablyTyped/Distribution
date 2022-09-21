@@ -1,6 +1,7 @@
 package typings.reactOverlays
 
 import typings.popperjsCore.anon.PartialState
+import typings.popperjsCore.typesMod.Obj
 import typings.popperjsCore.typesMod.PositioningStrategy
 import typings.reactOverlays.anon.PartialCSSStyleDeclaratio
 import typings.reactOverlays.anon.PartialModifieranyany
@@ -85,7 +86,7 @@ object usePopperMod {
   
   type Instance = typings.popperjsCore.typesMod.Instance
   
-  type Modifier[Name, Options] = typings.popperjsCore.typesMod.Modifier[Name, Options]
+  type Modifier[Name, Options /* <: js.UndefOr[Obj] */] = typings.popperjsCore.typesMod.Modifier[Name, OptionsWithUndefined[Options]]
   
   type ModifierMap = Record[String, PartialModifieranyany]
   
@@ -110,6 +111,7 @@ object usePopperMod {
     - typings.reactOverlays.reactOverlaysStrings.flat
     - typings.reactOverlays.reactOverlaysStrings.splice
     - typings.reactOverlays.reactOverlaysStrings.some
+    - typings.reactOverlays.reactOverlaysStrings.at
     - typings.reactOverlays.reactOverlaysStrings.unshift
     - typings.reactOverlays.reactOverlaysStrings.filter
     - typings.reactOverlays.reactOverlaysStrings.toString
@@ -126,6 +128,8 @@ object usePopperMod {
   */
   trait Modifiers extends StObject
   object Modifiers {
+    
+    inline def at: typings.reactOverlays.reactOverlaysStrings.at = "at".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.at]
     
     inline def concat: typings.reactOverlays.reactOverlaysStrings.concat = "concat".asInstanceOf[typings.reactOverlays.reactOverlaysStrings.concat]
     
@@ -196,6 +200,8 @@ object usePopperMod {
   
   type Options = typings.popperjsCore.typesMod.Options
   
+  type OptionsWithUndefined[T /* <: js.UndefOr[Obj] */] = Obj | T
+  
   type Placement = typings.popperjsCore.enumsMod.Placement
   
   type State = typings.popperjsCore.typesMod.State
@@ -230,7 +236,7 @@ object usePopperMod {
       
       inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
       
-      inline def setModifiersVarargs(value: typings.popperjsCore.anon.PartialModifieranyany*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+      inline def setModifiersVarargs(value: typings.popperjsCore.anon.PartialModifieranyany*): Self = StObject.set(x, "modifiers", js.Array(value*))
       
       inline def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
       
@@ -248,7 +254,7 @@ object usePopperMod {
   
   trait UsePopperState extends StObject {
     
-    var attributes: Record[String, Record[String, js.Any]]
+    var attributes: Record[String, Record[String, Any]]
     
     def forceUpdate(): Unit
     
@@ -263,7 +269,7 @@ object usePopperMod {
   object UsePopperState {
     
     inline def apply(
-      attributes: Record[String, Record[String, js.Any]],
+      attributes: Record[String, Record[String, Any]],
       forceUpdate: () => Unit,
       placement: Placement,
       styles: Record[String, PartialCSSStyleDeclaratio],
@@ -275,7 +281,7 @@ object usePopperMod {
     
     extension [Self <: UsePopperState](x: Self) {
       
-      inline def setAttributes(value: Record[String, Record[String, js.Any]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Record[String, Record[String, Any]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
       

@@ -1,9 +1,5 @@
 package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,12 +10,7 @@ trait ParamsResourceEditsApksUpload
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Unique identifier for this edit.
+    * Identifier of the edit.
     */
   var editId: js.UndefOr[String] = js.undefined
   
@@ -29,10 +20,14 @@ trait ParamsResourceEditsApksUpload
   var media: js.UndefOr[Body] = js.undefined
   
   /**
-    * Unique identifier for the Android app that is being updated; for example,
-    * "com.spiffygame".
+    * Package name of the app.
     */
   var packageName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Request body metadata
+    */
+  var requestBody: js.UndefOr[js.Object] = js.undefined
 }
 object ParamsResourceEditsApksUpload {
   
@@ -42,10 +37,6 @@ object ParamsResourceEditsApksUpload {
   }
   
   extension [Self <: ParamsResourceEditsApksUpload](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setEditId(value: String): Self = StObject.set(x, "editId", value.asInstanceOf[js.Any])
     
@@ -58,5 +49,9 @@ object ParamsResourceEditsApksUpload {
     inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
     inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    
+    inline def setRequestBody(value: js.Object): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

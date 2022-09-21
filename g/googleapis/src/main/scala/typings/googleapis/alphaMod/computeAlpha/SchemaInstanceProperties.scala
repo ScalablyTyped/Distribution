@@ -8,65 +8,64 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaInstanceProperties extends StObject {
   
   /**
-    * Enables instances created based on this template to send packets with
-    * source IP addresses other than their own and receive packets with
-    * destination IP addresses other than their own. If these instances will be
-    * used as an IP gateway or it will be set as the next-hop in a Route
-    * resource, specify true. If unsure, leave this set to false. See the
-    * Enable IP forwarding documentation for more information.
+    * Controls for advanced machine-related behavior features. Note that for MachineImage, this is not supported yet.
     */
-  var canIpForward: js.UndefOr[Boolean] = js.undefined
+  var advancedMachineFeatures: js.UndefOr[SchemaAdvancedMachineFeatures] = js.undefined
   
   /**
-    * An optional text description for the instances that are created from this
-    * instance template.
+    * Enables instances created based on these properties to send packets with source IP addresses other than their own and receive packets with destination IP addresses other than their own. If these instances will be used as an IP gateway or it will be set as the next-hop in a Route resource, specify true. If unsure, leave this set to false. See the Enable IP forwarding documentation for more information.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var canIpForward: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * An array of disks that are associated with the instances that are created
-    * from this template.
+    * Specifies the Confidential Instance options. Note that for MachineImage, this is not supported yet.
+    */
+  var confidentialInstanceConfig: js.UndefOr[SchemaConfidentialInstanceConfig] = js.undefined
+  
+  /**
+    * An optional text description for the instances that are created from these properties.
+    */
+  var description: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * An array of disks that are associated with the instances that are created from these properties.
     */
   var disks: js.UndefOr[js.Array[SchemaAttachedDisk]] = js.undefined
   
   /**
-    * Display Device properties to enable support for remote display products
-    * like: Teradici, VNC and TeamViewer
+    * Display Device properties to enable support for remote display products like: Teradici, VNC and TeamViewer Note that for MachineImage, this is not supported yet.
     */
   var displayDevice: js.UndefOr[SchemaDisplayDevice] = js.undefined
   
   /**
-    * A list of guest accelerator cards&#39; type and count to use for
-    * instances created from the instance template.
+    * A list of guest accelerator cards' type and count to use for instances created from these properties.
     */
   var guestAccelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.undefined
   
   /**
-    * Labels to apply to instances that are created from this template.
+    * KeyRevocationActionType of the instance. Supported options are "STOP" and "NONE". The default value is "NONE" if it is not specified.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
+  var keyRevocationActionType: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The machine type to use for instances that are created from this
-    * template.
+    * Labels to apply to instances that are created from these properties.
     */
-  var machineType: js.UndefOr[String] = js.undefined
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /**
-    * The metadata key/value pairs to assign to instances that are created from
-    * this template. These pairs can consist of custom metadata or predefined
-    * keys. See Project and instance metadata for more information.
+    * The machine type to use for instances that are created from these properties.
+    */
+  var machineType: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The metadata key/value pairs to assign to instances that are created from these properties. These pairs can consist of custom metadata or predefined keys. See Project and instance metadata for more information.
     */
   var metadata: js.UndefOr[SchemaMetadata] = js.undefined
   
   /**
-    * Minimum cpu/platform to be used by this instance. The instance may be
-    * scheduled on the specified or newer cpu/platform. Applicable values are
-    * the friendly names of CPU platforms, such as minCpuPlatform: &quot;Intel
-    * Haswell&quot; or minCpuPlatform: &quot;Intel Sandy Bridge&quot;. For more
-    * information, read Specifying a Minimum CPU Platform.
+    * Minimum cpu/platform to be used by instances. The instance may be scheduled on the specified or newer cpu/platform. Applicable values are the friendly names of CPU platforms, such as minCpuPlatform: "Intel Haswell" or minCpuPlatform: "Intel Sandy Bridge". For more information, read Specifying a Minimum CPU Platform.
     */
-  var minCpuPlatform: js.UndefOr[String] = js.undefined
+  var minCpuPlatform: js.UndefOr[String | Null] = js.undefined
   
   /**
     * An array of network access configurations for this interface.
@@ -74,38 +73,62 @@ trait SchemaInstanceProperties extends StObject {
   var networkInterfaces: js.UndefOr[js.Array[SchemaNetworkInterface]] = js.undefined
   
   /**
-    * The configuration of desired reservations which this Instance could
-    * consume capacity from.
+    * Note that for MachineImage, this is not supported yet.
+    */
+  var networkPerformanceConfig: js.UndefOr[SchemaNetworkPerformanceConfig] = js.undefined
+  
+  /**
+    * PostKeyRevocationActionType of the instance.
+    */
+  var postKeyRevocationActionType: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The private IPv6 google access type for VMs. If not specified, use INHERIT_FROM_SUBNETWORK as default. Note that for MachineImage, this is not supported yet.
+    */
+  var privateIpv6GoogleAccess: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Specifies the reservations that instances can consume from. Note that for MachineImage, this is not supported yet.
     */
   var reservationAffinity: js.UndefOr[SchemaReservationAffinity] = js.undefined
   
   /**
-    * Specifies the scheduling options for the instances that are created from
-    * this template.
+    * Resource manager tags to be bound to the instance. Tag keys and values have the same definition as resource manager tags. Keys must be in the format `tagKeys/{tag_key_id\}`, and values are in the format `tagValues/456`. The field is ignored (both PUT & PATCH) when empty.
+    */
+  var resourceManagerTags: js.UndefOr[StringDictionary[String] | Null] = js.undefined
+  
+  /**
+    * Resource policies (names, not URLs) applied to instances created from these properties. Note that for MachineImage, this is not supported yet.
+    */
+  var resourcePolicies: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  /**
+    * Specifies the scheduling options for the instances that are created from these properties.
     */
   var scheduling: js.UndefOr[SchemaScheduling] = js.undefined
   
   /**
-    * A list of service accounts with specified scopes. Access tokens for these
-    * service accounts are available to the instances that are created from
-    * this template. Use metadata queries to obtain the access tokens for these
-    * instances.
+    * [Input Only] Secure tags to apply to this instance. Maximum number of secure tags allowed is 50. Note that for MachineImage, this is not supported yet.
+    */
+  var secureTags: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  /**
+    * A list of service accounts with specified scopes. Access tokens for these service accounts are available to the instances that are created from these properties. Use metadata queries to obtain the access tokens for these instances.
     */
   var serviceAccounts: js.UndefOr[js.Array[SchemaServiceAccount]] = js.undefined
   
+  /**
+    * Note that for MachineImage, this is not supported yet.
+    */
   var shieldedInstanceConfig: js.UndefOr[SchemaShieldedInstanceConfig] = js.undefined
   
   /**
-    * Specifies the Shielded VM options for the instances that are created from
-    * this template.
+    * Specifies the Shielded VM options for the instances that are created from these properties.
     */
   var shieldedVmConfig: js.UndefOr[SchemaShieldedVmConfig] = js.undefined
   
   /**
-    * A list of tags to apply to the instances that are created from this
-    * template. The tags identify valid sources or targets for network
-    * firewalls. The setTags method can modify this list of tags. Each tag
-    * within the list must comply with RFC1035.
+    * A list of tags to apply to the instances that are created from these properties. The tags identify valid sources or targets for network firewalls. The setTags method can modify this list of tags. Each tag within the list must comply with RFC1035.
     */
   var tags: js.UndefOr[SchemaTags] = js.undefined
 }
@@ -118,11 +141,23 @@ object SchemaInstanceProperties {
   
   extension [Self <: SchemaInstanceProperties](x: Self) {
     
+    inline def setAdvancedMachineFeatures(value: SchemaAdvancedMachineFeatures): Self = StObject.set(x, "advancedMachineFeatures", value.asInstanceOf[js.Any])
+    
+    inline def setAdvancedMachineFeaturesUndefined: Self = StObject.set(x, "advancedMachineFeatures", js.undefined)
+    
     inline def setCanIpForward(value: Boolean): Self = StObject.set(x, "canIpForward", value.asInstanceOf[js.Any])
+    
+    inline def setCanIpForwardNull: Self = StObject.set(x, "canIpForward", null)
     
     inline def setCanIpForwardUndefined: Self = StObject.set(x, "canIpForward", js.undefined)
     
+    inline def setConfidentialInstanceConfig(value: SchemaConfidentialInstanceConfig): Self = StObject.set(x, "confidentialInstanceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setConfidentialInstanceConfigUndefined: Self = StObject.set(x, "confidentialInstanceConfig", js.undefined)
+    
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
@@ -130,7 +165,7 @@ object SchemaInstanceProperties {
     
     inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    inline def setDisksVarargs(value: SchemaAttachedDisk*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: SchemaAttachedDisk*): Self = StObject.set(x, "disks", js.Array(value*))
     
     inline def setDisplayDevice(value: SchemaDisplayDevice): Self = StObject.set(x, "displayDevice", value.asInstanceOf[js.Any])
     
@@ -140,13 +175,23 @@ object SchemaInstanceProperties {
     
     inline def setGuestAcceleratorsUndefined: Self = StObject.set(x, "guestAccelerators", js.undefined)
     
-    inline def setGuestAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = StObject.set(x, "guestAccelerators", js.Array(value :_*))
+    inline def setGuestAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = StObject.set(x, "guestAccelerators", js.Array(value*))
+    
+    inline def setKeyRevocationActionType(value: String): Self = StObject.set(x, "keyRevocationActionType", value.asInstanceOf[js.Any])
+    
+    inline def setKeyRevocationActionTypeNull: Self = StObject.set(x, "keyRevocationActionType", null)
+    
+    inline def setKeyRevocationActionTypeUndefined: Self = StObject.set(x, "keyRevocationActionType", js.undefined)
     
     inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsNull: Self = StObject.set(x, "labels", null)
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     inline def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
+    
+    inline def setMachineTypeNull: Self = StObject.set(x, "machineType", null)
     
     inline def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
@@ -156,27 +201,67 @@ object SchemaInstanceProperties {
     
     inline def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
     
+    inline def setMinCpuPlatformNull: Self = StObject.set(x, "minCpuPlatform", null)
+    
     inline def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
     
     inline def setNetworkInterfaces(value: js.Array[SchemaNetworkInterface]): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
     
     inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
     
-    inline def setNetworkInterfacesVarargs(value: SchemaNetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
+    inline def setNetworkInterfacesVarargs(value: SchemaNetworkInterface*): Self = StObject.set(x, "networkInterfaces", js.Array(value*))
+    
+    inline def setNetworkPerformanceConfig(value: SchemaNetworkPerformanceConfig): Self = StObject.set(x, "networkPerformanceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkPerformanceConfigUndefined: Self = StObject.set(x, "networkPerformanceConfig", js.undefined)
+    
+    inline def setPostKeyRevocationActionType(value: String): Self = StObject.set(x, "postKeyRevocationActionType", value.asInstanceOf[js.Any])
+    
+    inline def setPostKeyRevocationActionTypeNull: Self = StObject.set(x, "postKeyRevocationActionType", null)
+    
+    inline def setPostKeyRevocationActionTypeUndefined: Self = StObject.set(x, "postKeyRevocationActionType", js.undefined)
+    
+    inline def setPrivateIpv6GoogleAccess(value: String): Self = StObject.set(x, "privateIpv6GoogleAccess", value.asInstanceOf[js.Any])
+    
+    inline def setPrivateIpv6GoogleAccessNull: Self = StObject.set(x, "privateIpv6GoogleAccess", null)
+    
+    inline def setPrivateIpv6GoogleAccessUndefined: Self = StObject.set(x, "privateIpv6GoogleAccess", js.undefined)
     
     inline def setReservationAffinity(value: SchemaReservationAffinity): Self = StObject.set(x, "reservationAffinity", value.asInstanceOf[js.Any])
     
     inline def setReservationAffinityUndefined: Self = StObject.set(x, "reservationAffinity", js.undefined)
     
+    inline def setResourceManagerTags(value: StringDictionary[String]): Self = StObject.set(x, "resourceManagerTags", value.asInstanceOf[js.Any])
+    
+    inline def setResourceManagerTagsNull: Self = StObject.set(x, "resourceManagerTags", null)
+    
+    inline def setResourceManagerTagsUndefined: Self = StObject.set(x, "resourceManagerTags", js.undefined)
+    
+    inline def setResourcePolicies(value: js.Array[String]): Self = StObject.set(x, "resourcePolicies", value.asInstanceOf[js.Any])
+    
+    inline def setResourcePoliciesNull: Self = StObject.set(x, "resourcePolicies", null)
+    
+    inline def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
+    
+    inline def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value*))
+    
     inline def setScheduling(value: SchemaScheduling): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
     
     inline def setSchedulingUndefined: Self = StObject.set(x, "scheduling", js.undefined)
+    
+    inline def setSecureTags(value: js.Array[String]): Self = StObject.set(x, "secureTags", value.asInstanceOf[js.Any])
+    
+    inline def setSecureTagsNull: Self = StObject.set(x, "secureTags", null)
+    
+    inline def setSecureTagsUndefined: Self = StObject.set(x, "secureTags", js.undefined)
+    
+    inline def setSecureTagsVarargs(value: String*): Self = StObject.set(x, "secureTags", js.Array(value*))
     
     inline def setServiceAccounts(value: js.Array[SchemaServiceAccount]): Self = StObject.set(x, "serviceAccounts", value.asInstanceOf[js.Any])
     
     inline def setServiceAccountsUndefined: Self = StObject.set(x, "serviceAccounts", js.undefined)
     
-    inline def setServiceAccountsVarargs(value: SchemaServiceAccount*): Self = StObject.set(x, "serviceAccounts", js.Array(value :_*))
+    inline def setServiceAccountsVarargs(value: SchemaServiceAccount*): Self = StObject.set(x, "serviceAccounts", js.Array(value*))
     
     inline def setShieldedInstanceConfig(value: SchemaShieldedInstanceConfig): Self = StObject.set(x, "shieldedInstanceConfig", value.asInstanceOf[js.Any])
     

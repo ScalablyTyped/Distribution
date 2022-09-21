@@ -1,5 +1,7 @@
 package typings.scriptableIos.global
 
+import typings.scriptableIos.anon.Result
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("CallbackURL")
 @js.native
-class CallbackURL protected ()
+open class CallbackURL[T /* <: String */] protected ()
   extends StObject
-     with typings.scriptableIos.CallbackURL {
+     with typings.scriptableIos.CallbackURL[T] {
   /**
     * _Open x-callback-url requests._
     *
@@ -22,7 +24,7 @@ class CallbackURL protected ()
     * @param baseURL - Base URL of the request. This is usally something like my-app://x-callback-url/action
     * @see https://docs.scriptable.app/callbackurl/#-new-callbackurl
     */
-  def this(baseURL: String) = this()
+  def this(baseURL: T) = this()
   
   /**
     * _Construct CallbackURL._
@@ -54,5 +56,5 @@ class CallbackURL protected ()
     * @see https://docs.scriptable.app/callbackurl/#-open
     */
   /* CompleteClass */
-  override def open(): js.Promise[js.Any] = js.native
+  override def open(): js.Promise[(Record[String, String | Double | Boolean | Null]) | Result] = js.native
 }

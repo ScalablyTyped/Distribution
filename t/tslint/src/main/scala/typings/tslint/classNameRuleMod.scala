@@ -11,7 +11,7 @@ object classNameRuleMod {
   
   @JSImport("tslint/lib/rules/classNameRule", "Rule")
   @js.native
-  class Rule protected () extends AbstractRule {
+  open class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
   }
   /* static members */

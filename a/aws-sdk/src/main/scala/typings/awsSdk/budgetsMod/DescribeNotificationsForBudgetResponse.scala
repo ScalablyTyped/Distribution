@@ -33,6 +33,6 @@ object DescribeNotificationsForBudgetResponse {
     
     inline def setNotificationsUndefined: Self = StObject.set(x, "Notifications", js.undefined)
     
-    inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "Notifications", js.Array(value :_*))
+    inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "Notifications", js.Array(value*))
   }
 }

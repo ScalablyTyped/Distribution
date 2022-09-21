@@ -95,23 +95,18 @@ trait LocalStream
     */
   def replaceTrack(track: MediaStreamTrack): js.Promise[Unit] = js.native
   
-  @JSName("setAudioProfile")
-  def setAudioProfile_high(profile: high): Unit = js.native
   /**
     * 设置音频 Profile,该方法需要在调用 `initialize()` 之前调用。
     * @param profile 音频 Profile, 默认 `standard`
     * - `standard` 采样率：48000，声道：单声道，码率：40kbps
     * - `high` 采样率：48000，声道：单声道，码率：128kbps
     */
-  @JSName("setAudioProfile")
-  def setAudioProfile_standard(profile: standard): Unit = js.native
+  def setAudioProfile(profile: standard | high): Unit = js.native
   
   def setScreenProfile(profile: Profile): Unit = js.native
   /** 设置屏幕分享 Profile,该方法需要在调用 `initialize()` 之前调用。 */
   def setScreenProfile(profile: ScreenProfileString): Unit = js.native
   
-  @JSName("setVideoContentHint")
-  def setVideoContentHint_detail(hint: detail): Unit = js.native
   /**
     * 设置视频内容提示，主要用于提升在不同场景下的视频编码质量。该方法需要在调用 `initialize()` 成功之后调用。
     * @param hint 内容提示，参考 [MediaStreamTrack.contentHint](https://www.w3.org/TR/mst-content-hint/)
@@ -119,10 +114,7 @@ trait LocalStream
     * - `detail`：本地视频内容为 ppt、带有文本内容、绘画或艺术线条的网页。一般屏幕分享默认使用这个提示。
     * - `text`：本地视频内容主要是含有文本的 ppt 或网页等。
     */
-  @JSName("setVideoContentHint")
-  def setVideoContentHint_motion(hint: motion): Unit = js.native
-  @JSName("setVideoContentHint")
-  def setVideoContentHint_text(hint: text): Unit = js.native
+  def setVideoContentHint(hint: motion | detail | text): Unit = js.native
   
   def setVideoProfile(profile: Profile): Unit = js.native
   /**
@@ -160,8 +152,5 @@ trait LocalStream
     * - 摄像头设备标识通过 getCameras() 获取。在移动设备上，可以通过设置 deviceId 为 'user' 和 'environment' 来切换前置和后置摄像头。
     * - 麦克风设备标识通过 getMicrophones() 获取。
     */
-  @JSName("switchDevice")
-  def switchDevice_audio(`type`: audio, deviceId: String): js.Promise[Unit] = js.native
-  @JSName("switchDevice")
-  def switchDevice_video(`type`: video, deviceId: String): js.Promise[Unit] = js.native
+  def switchDevice(`type`: audio | video, deviceId: String): js.Promise[Unit] = js.native
 }

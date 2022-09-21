@@ -32,7 +32,7 @@ object ListAccessKeysResponse {
     
     inline def setAccessKeyMetadata(value: accessKeyMetadataListType): Self = StObject.set(x, "AccessKeyMetadata", value.asInstanceOf[js.Any])
     
-    inline def setAccessKeyMetadataVarargs(value: AccessKeyMetadata*): Self = StObject.set(x, "AccessKeyMetadata", js.Array(value :_*))
+    inline def setAccessKeyMetadataVarargs(value: AccessKeyMetadata*): Self = StObject.set(x, "AccessKeyMetadata", js.Array(value*))
     
     inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

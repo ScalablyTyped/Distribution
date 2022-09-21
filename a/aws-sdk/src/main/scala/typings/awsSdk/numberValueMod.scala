@@ -8,7 +8,7 @@ object numberValueMod {
   
   @JSImport("aws-sdk/lib/dynamodb/numberValue", "NumberValue")
   @js.native
-  class NumberValue protected () extends StObject {
+  open class NumberValue protected () extends StObject {
     def this(value: String) = this()
     def this(value: Double) = this()
     

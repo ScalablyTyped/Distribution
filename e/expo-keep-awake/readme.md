@@ -1,26 +1,8 @@
 
 # Scala.js typings for expo-keep-awake
 
-Typings are for version 8.3.0
+Typings are for version 10.2.0
 
-## Library description:
-Provides a React component that prevents the screen sleeping when rendered. It also exposes static methods to control the behavior imperatively.
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | expo-keep-awake |
-| Keywords           | react-native, expo, awake, keep-awake |
-| # releases         | 13 |
-| # dependents       | 6 |
-| # downloads        | 1179614 |
-| # stars            | 0 |
-
-## Links
-- [Homepage](https://docs.expo.io/versions/latest/sdk/keep-awake/)
-- [Bugs](https://github.com/expo/expo/issues)
-- [Repository](https://github.com/expo/expo)
-- [Npm](https://www.npmjs.com/package/expo-keep-awake)
-    
 
 
 ## Note

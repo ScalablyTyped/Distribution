@@ -31,12 +31,12 @@ object Logging {
     
     inline def setConsumerDestinationsUndefined: Self = StObject.set(x, "consumerDestinations", js.undefined)
     
-    inline def setConsumerDestinationsVarargs(value: LoggingDestination*): Self = StObject.set(x, "consumerDestinations", js.Array(value :_*))
+    inline def setConsumerDestinationsVarargs(value: LoggingDestination*): Self = StObject.set(x, "consumerDestinations", js.Array(value*))
     
     inline def setProducerDestinations(value: js.Array[LoggingDestination]): Self = StObject.set(x, "producerDestinations", value.asInstanceOf[js.Any])
     
     inline def setProducerDestinationsUndefined: Self = StObject.set(x, "producerDestinations", js.undefined)
     
-    inline def setProducerDestinationsVarargs(value: LoggingDestination*): Self = StObject.set(x, "producerDestinations", js.Array(value :_*))
+    inline def setProducerDestinationsVarargs(value: LoggingDestination*): Self = StObject.set(x, "producerDestinations", js.Array(value*))
   }
 }

@@ -10,6 +10,11 @@ trait SearchAvailablePhoneNumbersResponse extends StObject {
     * List of phone numbers, in E.164 format.
     */
   var E164PhoneNumbers: js.UndefOr[E164PhoneNumberList] = js.undefined
+  
+  /**
+    * The token used to retrieve the next page of search results.
+    */
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object SearchAvailablePhoneNumbersResponse {
   
@@ -24,6 +29,10 @@ object SearchAvailablePhoneNumbersResponse {
     
     inline def setE164PhoneNumbersUndefined: Self = StObject.set(x, "E164PhoneNumbers", js.undefined)
     
-    inline def setE164PhoneNumbersVarargs(value: E164PhoneNumber*): Self = StObject.set(x, "E164PhoneNumbers", js.Array(value :_*))
+    inline def setE164PhoneNumbersVarargs(value: E164PhoneNumber*): Self = StObject.set(x, "E164PhoneNumbers", js.Array(value*))
+    
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

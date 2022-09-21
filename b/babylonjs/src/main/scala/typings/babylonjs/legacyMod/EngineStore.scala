@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "EngineStore")
 @js.native
-class EngineStore ()
+open class EngineStore ()
   extends typings.babylonjs.indexMod.EngineStore
 /* static members */
 object EngineStore {

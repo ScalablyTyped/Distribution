@@ -13,7 +13,7 @@ object Popups {
   
   @JSGlobal("Windows.UI.Popups.MessageDialog")
   @js.native
-  class MessageDialog protected ()
+  open class MessageDialog protected ()
     extends StObject
        with typings.winrt.Windows.UI.Popups.MessageDialog {
     def this(content: String) = this()
@@ -73,21 +73,21 @@ object Popups {
   
   @JSGlobal("Windows.UI.Popups.PopupMenu")
   @js.native
-  class PopupMenu ()
+  open class PopupMenu ()
     extends StObject
        with typings.winrt.Windows.UI.Popups.PopupMenu
   
   @JSGlobal("Windows.UI.Popups.UICommand")
   @js.native
-  class UICommand ()
+  open class UICommand ()
     extends StObject
        with typings.winrt.Windows.UI.Popups.UICommand {
     def this(label: String) = this()
     def this(label: String, action: UICommandInvokedHandler) = this()
-    def this(label: String, action: UICommandInvokedHandler, commandId: js.Any) = this()
+    def this(label: String, action: UICommandInvokedHandler, commandId: Any) = this()
     
     /* CompleteClass */
-    var id: js.Any = js.native
+    var id: Any = js.native
     
     /* CompleteClass */
     override def invoked(command: IUICommand): Unit = js.native
@@ -101,12 +101,12 @@ object Popups {
   
   @JSGlobal("Windows.UI.Popups.UICommandSeparator")
   @js.native
-  class UICommandSeparator ()
+  open class UICommandSeparator ()
     extends StObject
        with typings.winrt.Windows.UI.Popups.UICommandSeparator {
     
     /* CompleteClass */
-    var id: js.Any = js.native
+    var id: Any = js.native
     
     /* CompleteClass */
     override def invoked(command: IUICommand): Unit = js.native

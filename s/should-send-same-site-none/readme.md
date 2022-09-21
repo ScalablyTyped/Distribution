@@ -10,10 +10,10 @@ A simple utility to detect incompatible user agents for `SameSite=None` cookie a
 | ------------------ | :-------------: |
 | Full name          | should-send-same-site-none |
 | Keywords           | Express, samesite, cookie, middleware |
-| # releases         | 11 |
-| # dependents       | 6 |
-| # downloads        | 648828 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 202363.0 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/linsight/should-send-same-site-none#readme)

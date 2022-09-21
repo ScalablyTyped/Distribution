@@ -37,7 +37,7 @@ trait Vpc extends StObject {
   var IsDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the VPC.
+    * The ID of the Amazon Web Services account that owns the VPC.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -71,7 +71,7 @@ object Vpc {
     
     inline def setCidrBlockAssociationSetUndefined: Self = StObject.set(x, "CidrBlockAssociationSet", js.undefined)
     
-    inline def setCidrBlockAssociationSetVarargs(value: VpcCidrBlockAssociation*): Self = StObject.set(x, "CidrBlockAssociationSet", js.Array(value :_*))
+    inline def setCidrBlockAssociationSetVarargs(value: VpcCidrBlockAssociation*): Self = StObject.set(x, "CidrBlockAssociationSet", js.Array(value*))
     
     inline def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
     
@@ -87,7 +87,7 @@ object Vpc {
     
     inline def setIpv6CidrBlockAssociationSetUndefined: Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", js.undefined)
     
-    inline def setIpv6CidrBlockAssociationSetVarargs(value: VpcIpv6CidrBlockAssociation*): Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", js.Array(value :_*))
+    inline def setIpv6CidrBlockAssociationSetVarargs(value: VpcIpv6CidrBlockAssociation*): Self = StObject.set(x, "Ipv6CidrBlockAssociationSet", js.Array(value*))
     
     inline def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object Vpc {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

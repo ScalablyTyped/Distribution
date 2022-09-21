@@ -14,15 +14,15 @@ object streamingMod {
   
   @JSImport("jsforce/streaming", "Streaming")
   @js.native
-  class Streaming protected () extends EventEmitter {
+  open class Streaming protected () extends EventEmitter {
     def this(connection: Connection) = this()
     
     def channel(channelId: String): Channel = js.native
     
-    def createClient(): js.Any = js.native
-    def createClient(extensions: js.Array[js.Any]): js.Any = js.native
+    def createClient(): Any = js.native
+    def createClient(extensions: js.Array[Any]): Any = js.native
     
-    def subscribe(name: String, listener: StreamingMessage): js.Any = js.native
+    def subscribe(name: String, listener: StreamingMessage): Any = js.native
     
     // Faye Subscription
     def topic(name: String): Topic = js.native
@@ -34,13 +34,13 @@ object streamingMod {
     
     @JSImport("jsforce/streaming", "StreamingExtension.AuthFailure")
     @js.native
-    class AuthFailure protected () extends StObject {
-      def this(failureCallback: js.Function0[js.Any]) = this()
+    open class AuthFailure protected () extends StObject {
+      def this(failureCallback: js.Function0[Any]) = this()
     }
     
     @JSImport("jsforce/streaming", "StreamingExtension.Replay")
     @js.native
-    class Replay protected () extends StObject {
+    open class Replay protected () extends StObject {
       def this(channel: String, replayId: Double) = this()
     }
   }
@@ -49,11 +49,11 @@ object streamingMod {
     
     var event: CreatedDate
     
-    var sobject: Record[js.Any]
+    var sobject: Record[Any]
   }
   object StreamingMessage {
     
-    inline def apply(event: CreatedDate, sobject: Record[js.Any]): StreamingMessage = {
+    inline def apply(event: CreatedDate, sobject: Record[Any]): StreamingMessage = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], sobject = sobject.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamingMessage]
     }
@@ -62,7 +62,7 @@ object streamingMod {
       
       inline def setEvent(value: CreatedDate): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      inline def setSobject(value: Record[js.Any]): Self = StObject.set(x, "sobject", value.asInstanceOf[js.Any])
+      inline def setSobject(value: Record[Any]): Self = StObject.set(x, "sobject", value.asInstanceOf[js.Any])
     }
   }
 }

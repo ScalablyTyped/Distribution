@@ -10,10 +10,10 @@ add magnet links and torrents to deluge
 | ------------------ | :-------------: |
 | Full name          | deluge |
 | Keywords           | deluge, deluge-webui, torrent |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 871 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 72.66666666666667 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/ginman86/deluge)

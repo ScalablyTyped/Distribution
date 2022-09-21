@@ -21,14 +21,14 @@ trait PlusVideoVideoPlayer extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
   def addEventListener(): Unit = js.native
-  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit], capture: Boolean): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ Any, Unit], capture: Boolean): Unit = js.native
   def addEventListener(event: Unit, listener: Unit, capture: Boolean): Unit = js.native
   def addEventListener(event: PlusVideoVideoPlayerEvents): Unit = js.native
-  def addEventListener(event: PlusVideoVideoPlayerEvents, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def addEventListener(event: PlusVideoVideoPlayerEvents, listener: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def addEventListener(
     event: PlusVideoVideoPlayerEvents,
-    listener: js.Function1[/* result */ js.Any, Unit],
+    listener: js.Function1[/* result */ Any, Unit],
     capture: Boolean
   ): Unit = js.native
   def addEventListener(event: PlusVideoVideoPlayerEvents, listener: Unit, capture: Boolean): Unit = js.native
@@ -105,7 +105,7 @@ trait PlusVideoVideoPlayer extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
   def sendDanmu(): Unit = js.native
-  def sendDanmu(danmu: js.Any): Unit = js.native
+  def sendDanmu(danmu: Any): Unit = js.native
   
   /**
     * 设置视频播放控件参数（将废弃，使用setStyles）

@@ -1,6 +1,5 @@
 package typings.whatwgUrl
 
-import typings.whatwgUrl.mod.StateOverride
 import typings.whatwgUrl.mod.URLRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,11 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait `0` extends StObject {
+    
+    var doNotStripQMark: js.UndefOr[Boolean] = js.undefined
+  }
+  object `0` {
+    
+    inline def apply(): `0` = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[`0`]
+    }
+    
+    extension [Self <: `0`](x: Self) {
+      
+      inline def setDoNotStripQMark(value: Boolean): Self = StObject.set(x, "doNotStripQMark", value.asInstanceOf[js.Any])
+      
+      inline def setDoNotStripQMarkUndefined: Self = StObject.set(x, "doNotStripQMark", js.undefined)
+    }
+  }
+  
   trait BaseURL extends StObject {
     
-    var baseURL: js.UndefOr[String] = js.undefined
-    
-    var encodingOverride: js.UndefOr[String] = js.undefined
+    val baseURL: js.UndefOr[String] = js.undefined
   }
   object BaseURL {
     
@@ -26,16 +42,29 @@ object anon {
       inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       
       inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
+    }
+  }
+  
+  trait Context extends StObject {
+    
+    var context: String
+  }
+  object Context {
+    
+    inline def apply(context: String): Context = {
+      val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Context]
+    }
+    
+    extension [Self <: Context](x: Self) {
       
-      inline def setEncodingOverride(value: String): Self = StObject.set(x, "encodingOverride", value.asInstanceOf[js.Any])
-      
-      inline def setEncodingOverrideUndefined: Self = StObject.set(x, "encodingOverride", js.undefined)
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }
   }
   
   trait DoNotStripQMark extends StObject {
     
-    var doNotStripQMark: js.UndefOr[Boolean] = js.undefined
+    val doNotStripQMark: js.UndefOr[Boolean] = js.undefined
   }
   object DoNotStripQMark {
     
@@ -52,34 +81,28 @@ object anon {
     }
   }
   
-  trait EncodingOverride extends StObject {
+  trait StateOverride extends StObject {
     
     var baseURL: js.UndefOr[String] = js.undefined
     
-    var encodingOverride: js.UndefOr[String] = js.undefined
-    
-    var stateOverride: js.UndefOr[StateOverride] = js.undefined
+    var stateOverride: js.UndefOr[typings.whatwgUrl.mod.StateOverride] = js.undefined
     
     var url: js.UndefOr[URLRecord] = js.undefined
   }
-  object EncodingOverride {
+  object StateOverride {
     
-    inline def apply(): EncodingOverride = {
+    inline def apply(): StateOverride = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[EncodingOverride]
+      __obj.asInstanceOf[StateOverride]
     }
     
-    extension [Self <: EncodingOverride](x: Self) {
+    extension [Self <: StateOverride](x: Self) {
       
       inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       
       inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
       
-      inline def setEncodingOverride(value: String): Self = StObject.set(x, "encodingOverride", value.asInstanceOf[js.Any])
-      
-      inline def setEncodingOverrideUndefined: Self = StObject.set(x, "encodingOverride", js.undefined)
-      
-      inline def setStateOverride(value: StateOverride): Self = StObject.set(x, "stateOverride", value.asInstanceOf[js.Any])
+      inline def setStateOverride(value: typings.whatwgUrl.mod.StateOverride): Self = StObject.set(x, "stateOverride", value.asInstanceOf[js.Any])
       
       inline def setStateOverrideUndefined: Self = StObject.set(x, "stateOverride", js.undefined)
       

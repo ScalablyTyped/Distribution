@@ -29,7 +29,7 @@ object ListBackupJobsOutput {
     
     inline def setBackupJobsUndefined: Self = StObject.set(x, "BackupJobs", js.undefined)
     
-    inline def setBackupJobsVarargs(value: BackupJob*): Self = StObject.set(x, "BackupJobs", js.Array(value :_*))
+    inline def setBackupJobsVarargs(value: BackupJob*): Self = StObject.set(x, "BackupJobs", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

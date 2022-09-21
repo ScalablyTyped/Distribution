@@ -15,9 +15,6 @@ trait CertificateDescription extends StObject {
   /** The hash of the x.509 certificate. */
   var certFingerprint: js.UndefOr[CertificateFingerprint] = js.undefined
   
-  /** Describes some of the technical fields in a certificate. */
-  var configValues: js.UndefOr[ReusableConfigValues] = js.undefined
-  
   /** Describes a list of locations to obtain CRL information, i.e. the DistributionPoint.fullName described by https://tools.ietf.org/html/rfc5280#section-4.2.1.13 */
   var crlDistributionPoints: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -29,6 +26,9 @@ trait CertificateDescription extends StObject {
   
   /** Provides a means of identifiying certificates that contain a particular public key, per https://tools.ietf.org/html/rfc5280#section-4.2.1.2. */
   var subjectKeyId: js.UndefOr[KeyId] = js.undefined
+  
+  /** Describes some of the technical X.509 fields in a certificate. */
+  var x509Description: js.UndefOr[X509Parameters] = js.undefined
 }
 object CertificateDescription {
   
@@ -43,7 +43,7 @@ object CertificateDescription {
     
     inline def setAiaIssuingCertificateUrlsUndefined: Self = StObject.set(x, "aiaIssuingCertificateUrls", js.undefined)
     
-    inline def setAiaIssuingCertificateUrlsVarargs(value: String*): Self = StObject.set(x, "aiaIssuingCertificateUrls", js.Array(value :_*))
+    inline def setAiaIssuingCertificateUrlsVarargs(value: String*): Self = StObject.set(x, "aiaIssuingCertificateUrls", js.Array(value*))
     
     inline def setAuthorityKeyId(value: KeyId): Self = StObject.set(x, "authorityKeyId", value.asInstanceOf[js.Any])
     
@@ -53,15 +53,11 @@ object CertificateDescription {
     
     inline def setCertFingerprintUndefined: Self = StObject.set(x, "certFingerprint", js.undefined)
     
-    inline def setConfigValues(value: ReusableConfigValues): Self = StObject.set(x, "configValues", value.asInstanceOf[js.Any])
-    
-    inline def setConfigValuesUndefined: Self = StObject.set(x, "configValues", js.undefined)
-    
     inline def setCrlDistributionPoints(value: js.Array[String]): Self = StObject.set(x, "crlDistributionPoints", value.asInstanceOf[js.Any])
     
     inline def setCrlDistributionPointsUndefined: Self = StObject.set(x, "crlDistributionPoints", js.undefined)
     
-    inline def setCrlDistributionPointsVarargs(value: String*): Self = StObject.set(x, "crlDistributionPoints", js.Array(value :_*))
+    inline def setCrlDistributionPointsVarargs(value: String*): Self = StObject.set(x, "crlDistributionPoints", js.Array(value*))
     
     inline def setPublicKey(value: PublicKey): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
@@ -74,5 +70,9 @@ object CertificateDescription {
     inline def setSubjectKeyId(value: KeyId): Self = StObject.set(x, "subjectKeyId", value.asInstanceOf[js.Any])
     
     inline def setSubjectKeyIdUndefined: Self = StObject.set(x, "subjectKeyId", js.undefined)
+    
+    inline def setX509Description(value: X509Parameters): Self = StObject.set(x, "x509Description", value.asInstanceOf[js.Any])
+    
+    inline def setX509DescriptionUndefined: Self = StObject.set(x, "x509Description", js.undefined)
   }
 }

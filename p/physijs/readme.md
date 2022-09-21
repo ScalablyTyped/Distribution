@@ -1,6 +1,7 @@
 
 # Scala.js typings for physijs
 
+Typings are for version 1.0.4
 
 ## Library description:
 Physics plugin for Three.js
@@ -9,10 +10,10 @@ Physics plugin for Three.js
 | ------------------ | :-------------: |
 | Full name          | physijs |
 | Keywords           | physijs, threejs |
-| # releases         | 9 |
-| # dependents       | 1 |
-| # downloads        | 973 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 108.33333333333333 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/renay/physijs#readme)
@@ -23,7 +24,7 @@ Physics plugin for Three.js
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

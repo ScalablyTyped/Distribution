@@ -9,7 +9,7 @@ object slotListMod {
   
   @JSImport("signals.js/lib/org/osflash/signals/SlotList", "SlotList")
   @js.native
-  class SlotList protected () extends StObject {
+  open class SlotList protected () extends StObject {
     /**
       * Creates and returns a new SlotList object.
       *

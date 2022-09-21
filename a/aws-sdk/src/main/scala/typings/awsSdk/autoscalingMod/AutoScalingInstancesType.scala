@@ -29,7 +29,7 @@ object AutoScalingInstancesType {
     
     inline def setAutoScalingInstancesUndefined: Self = StObject.set(x, "AutoScalingInstances", js.undefined)
     
-    inline def setAutoScalingInstancesVarargs(value: AutoScalingInstanceDetails*): Self = StObject.set(x, "AutoScalingInstances", js.Array(value :_*))
+    inline def setAutoScalingInstancesVarargs(value: AutoScalingInstanceDetails*): Self = StObject.set(x, "AutoScalingInstances", js.Array(value*))
     
     inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

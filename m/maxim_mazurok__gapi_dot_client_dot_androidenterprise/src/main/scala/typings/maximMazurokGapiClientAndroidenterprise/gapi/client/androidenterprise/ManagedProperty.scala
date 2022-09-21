@@ -50,7 +50,7 @@ object ManagedProperty {
     
     inline def setValueBundleArrayUndefined: Self = StObject.set(x, "valueBundleArray", js.undefined)
     
-    inline def setValueBundleArrayVarargs(value: ManagedPropertyBundle*): Self = StObject.set(x, "valueBundleArray", js.Array(value :_*))
+    inline def setValueBundleArrayVarargs(value: ManagedPropertyBundle*): Self = StObject.set(x, "valueBundleArray", js.Array(value*))
     
     inline def setValueBundleUndefined: Self = StObject.set(x, "valueBundle", js.undefined)
     
@@ -64,7 +64,7 @@ object ManagedProperty {
     
     inline def setValueStringArrayUndefined: Self = StObject.set(x, "valueStringArray", js.undefined)
     
-    inline def setValueStringArrayVarargs(value: String*): Self = StObject.set(x, "valueStringArray", js.Array(value :_*))
+    inline def setValueStringArrayVarargs(value: String*): Self = StObject.set(x, "valueStringArray", js.Array(value*))
     
     inline def setValueStringUndefined: Self = StObject.set(x, "valueString", js.undefined)
   }

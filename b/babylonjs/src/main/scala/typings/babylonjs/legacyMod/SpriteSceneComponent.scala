@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "SpriteSceneComponent")
 @js.native
-class SpriteSceneComponent protected ()
+open class SpriteSceneComponent protected ()
   extends typings.babylonjs.indexMod.SpriteSceneComponent {
   /**
     * Creates a new instance of the component for the given scene

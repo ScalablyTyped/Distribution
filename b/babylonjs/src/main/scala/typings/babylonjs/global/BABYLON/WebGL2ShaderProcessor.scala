@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebGL2ShaderProcessor")
 @js.native
-class WebGL2ShaderProcessor ()
+open class WebGL2ShaderProcessor ()
   extends StObject
      with typings.babylonjs.BABYLON.WebGL2ShaderProcessor {
   
@@ -17,6 +17,9 @@ class WebGL2ShaderProcessor ()
   /* CompleteClass */
   @JSName("postProcessor")
   override def postProcessor_MWebGL2ShaderProcessor(code: String, defines: js.Array[String], isFragment: Boolean): String = js.native
+  
+  /* CompleteClass */
+  var shaderLanguage: typings.babylonjs.BABYLON.ShaderLanguage = js.native
   
   /* CompleteClass */
   @JSName("varyingProcessor")

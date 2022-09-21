@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DynamoDBAction extends StObject {
   
   /**
-    * The name of the hash key (also called the partition key).
+    * The name of the hash key (also called the partition key). The hashKeyField value must match the partition key of the target DynamoDB table.
     */
   var hashKeyField: DynamoKeyField
   
   /**
-    * The data type for the hash key (also called the partition key). You can specify the following values:    STRING - The hash key is a string.    NUMBER - The hash key is a number.   If you don't specify hashKeyType, the default value is STRING.
+    * The data type for the hash key (also called the partition key). You can specify the following values:    'STRING' - The hash key is a string.    'NUMBER' - The hash key is a number.   If you don't specify hashKeyType, the default value is 'STRING'.
     */
   var hashKeyType: js.UndefOr[DynamoKeyType] = js.undefined
   
@@ -22,7 +22,7 @@ trait DynamoDBAction extends StObject {
   var hashKeyValue: DynamoKeyValue
   
   /**
-    * The type of operation to perform. You can specify the following values:     INSERT - Insert data as a new item into the DynamoDB table. This item uses the specified hash key as a partition key. If you specified a range key, the item uses the range key as a sort key.    UPDATE - Update an existing item of the DynamoDB table with new data. This item's partition key must match the specified hash key. If you specified a range key, the range key must match the item's sort key.    DELETE - Delete an existing item of the DynamoDB table. This item's partition key must match the specified hash key. If you specified a range key, the range key must match the item's sort key.   If you don't specify this parameter, AWS IoT Events triggers the INSERT operation.
+    * The type of operation to perform. You can specify the following values:     'INSERT' - Insert data as a new item into the DynamoDB table. This item uses the specified hash key as a partition key. If you specified a range key, the item uses the range key as a sort key.    'UPDATE' - Update an existing item of the DynamoDB table with new data. This item's partition key must match the specified hash key. If you specified a range key, the range key must match the item's sort key.    'DELETE' - Delete an existing item of the DynamoDB table. This item's partition key must match the specified hash key. If you specified a range key, the range key must match the item's sort key.   If you don't specify this parameter, AWS IoT Events triggers the 'INSERT' operation.
     */
   var operation: js.UndefOr[DynamoOperation] = js.undefined
   
@@ -34,12 +34,12 @@ trait DynamoDBAction extends StObject {
   var payloadField: js.UndefOr[DynamoKeyField] = js.undefined
   
   /**
-    * The name of the range key (also called the sort key).
+    * The name of the range key (also called the sort key). The rangeKeyField value must match the sort key of the target DynamoDB table. 
     */
   var rangeKeyField: js.UndefOr[DynamoKeyField] = js.undefined
   
   /**
-    * The data type for the range key (also called the sort key), You can specify the following values:    STRING - The range key is a string.    NUMBER - The range key is number.   If you don't specify rangeKeyField, the default value is STRING.
+    * The data type for the range key (also called the sort key), You can specify the following values:    'STRING' - The range key is a string.    'NUMBER' - The range key is number.   If you don't specify rangeKeyField, the default value is 'STRING'.
     */
   var rangeKeyType: js.UndefOr[DynamoKeyType] = js.undefined
   
@@ -49,7 +49,7 @@ trait DynamoDBAction extends StObject {
   var rangeKeyValue: js.UndefOr[DynamoKeyValue] = js.undefined
   
   /**
-    * The name of the DynamoDB table.
+    * The name of the DynamoDB table. The tableName value must match the table name of the target DynamoDB table. 
     */
   var tableName: DynamoTableName
 }

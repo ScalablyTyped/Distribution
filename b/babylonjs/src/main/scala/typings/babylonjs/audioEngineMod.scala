@@ -5,8 +5,10 @@ import typings.babylonjs.iaudioengineMod.IAudioEngine
 import typings.babylonjs.observableMod.Observable
 import typings.babylonjs.typesMod.Nullable
 import typings.std.AudioContext
+import typings.std.AudioDestinationNode
 import typings.std.GainNode
 import typings.std.HTMLElement
+import typings.std.MediaStreamAudioDestinationNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,11 +23,35 @@ object audioEngineMod {
     * There should be only one per page as some browsers restrict the number
     * of audio contexts you can create.
     * @param hostElement defines the host element where to display the mute icon if necessary
+    * @param audioContext defines the audio context to be used by the audio engine
+    * @param audioDestination defines the audio destination node to be used by audio engine
     */
-  class AudioEngine ()
+  open class AudioEngine ()
     extends StObject
        with IAudioEngine {
     def this(hostElement: Nullable[HTMLElement]) = this()
+    def this(hostElement: Unit, audioContext: Nullable[AudioContext]) = this()
+    def this(hostElement: Nullable[HTMLElement], audioContext: Nullable[AudioContext]) = this()
+    def this(
+      hostElement: Unit,
+      audioContext: Unit,
+      audioDestination: Nullable[AudioDestinationNode | MediaStreamAudioDestinationNode]
+    ) = this()
+    def this(
+      hostElement: Unit,
+      audioContext: Nullable[AudioContext],
+      audioDestination: Nullable[AudioDestinationNode | MediaStreamAudioDestinationNode]
+    ) = this()
+    def this(
+      hostElement: Nullable[HTMLElement],
+      audioContext: Unit,
+      audioDestination: Nullable[AudioDestinationNode | MediaStreamAudioDestinationNode]
+    ) = this()
+    def this(
+      hostElement: Nullable[HTMLElement],
+      audioContext: Nullable[AudioContext],
+      audioDestination: Nullable[AudioDestinationNode | MediaStreamAudioDestinationNode]
+    ) = this()
     
     /**
       * Defines if Babylon should emit a warning if WebAudio is not supported.
@@ -34,33 +60,35 @@ object audioEngineMod {
     /* CompleteClass */
     var WarnedWebAudioUnsupported: Boolean = js.native
     
-    /* private */ var _audioContext: js.Any = js.native
+    /* private */ var _audioContext: Any = js.native
     
-    /* private */ var _audioContextInitialized: js.Any = js.native
+    /* private */ var _audioContextInitialized: Any = js.native
     
-    /* private */ var _connectedAnalyser: js.Any = js.native
+    /* private */ var _audioDestination: Any = js.native
     
-    /* private */ var _displayMuteButton: js.Any = js.native
+    /* private */ var _connectedAnalyser: Any = js.native
     
-    /* private */ var _hideMuteButton: js.Any = js.native
+    /* private */ var _displayMuteButton: Any = js.native
     
-    /* private */ var _hostElement: js.Any = js.native
+    /* private */ var _hideMuteButton: Any = js.native
     
-    /* private */ var _initializeAudioContext: js.Any = js.native
+    /* private */ var _hostElement: Any = js.native
     
-    /* private */ var _moveButtonToTopLeft: js.Any = js.native
+    /* private */ var _initializeAudioContext: Any = js.native
     
-    /* private */ var _muteButton: js.Any = js.native
+    /* private */ var _moveButtonToTopLeft: Any = js.native
     
-    /* private */ var _onResize: js.Any = js.native
+    /* private */ var _muteButton: Any = js.native
     
-    /* private */ var _resumeAudioContext: js.Any = js.native
+    /* private */ var _onResize: Any = js.native
     
-    /* private */ var _triggerRunningState: js.Any = js.native
+    /* private */ var _resumeAudioContext: Any = js.native
     
-    /* private */ var _triggerSuspendedState: js.Any = js.native
+    /* private */ var _triggerRunningState: Any = js.native
     
-    /* private */ var _tryToRun: js.Any = js.native
+    /* private */ var _triggerSuspendedState: Any = js.native
+    
+    /* private */ var _tryToRun: Any = js.native
     
     /**
       * Gets the current AudioContext if available.
@@ -81,7 +109,7 @@ object audioEngineMod {
     
     /**
       * Connect the audio engine to an audio analyser allowing some amazing
-      * synchornization between the sounds/music and your visualization (VuMeter for instance).
+      * synchronization between the sounds/music and your visualization (VuMeter for instance).
       * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#using-the-analyser
       * @param analyser The analyser to connect to the engine
       */

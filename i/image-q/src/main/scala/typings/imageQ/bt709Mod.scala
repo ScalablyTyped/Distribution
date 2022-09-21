@@ -8,7 +8,7 @@ object bt709Mod {
   
   @js.native
   sealed trait Y_ extends StObject
-  @JSImport("image-q/dist/constants/bt709", "Y")
+  @JSImport("image-q/dist/types/src/constants/bt709", "Y")
   @js.native
   object Y_ extends StObject {
     
@@ -42,7 +42,7 @@ object bt709Mod {
   
   @js.native
   sealed trait x extends StObject
-  @JSImport("image-q/dist/constants/bt709", "x")
+  @JSImport("image-q/dist/types/src/constants/bt709", "x")
   @js.native
   object x extends StObject {
     
@@ -76,7 +76,7 @@ object bt709Mod {
   
   @js.native
   sealed trait y extends StObject
-  @JSImport("image-q/dist/constants/bt709", "y")
+  @JSImport("image-q/dist/types/src/constants/bt709", "y")
   @js.native
   object y extends StObject {
     

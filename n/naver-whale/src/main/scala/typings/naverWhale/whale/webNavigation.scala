@@ -171,7 +171,7 @@ object webNavigation {
       
       inline def setUrl(value: js.Array[UrlFilter]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      inline def setUrlVarargs(value: UrlFilter*): Self = StObject.set(x, "url", js.Array(value :_*))
+      inline def setUrlVarargs(value: UrlFilter*): Self = StObject.set(x, "url", js.Array(value*))
     }
   }
   
@@ -358,7 +358,7 @@ object webNavigation {
       
       inline def setTransitionQualifiers(value: js.Array[String]): Self = StObject.set(x, "transitionQualifiers", value.asInstanceOf[js.Any])
       
-      inline def setTransitionQualifiersVarargs(value: String*): Self = StObject.set(x, "transitionQualifiers", js.Array(value :_*))
+      inline def setTransitionQualifiersVarargs(value: String*): Self = StObject.set(x, "transitionQualifiers", js.Array(value*))
       
       inline def setTransitionType(value: String): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
     }

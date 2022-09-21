@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticlunr", "Configuration")
 @js.native
-class Configuration[T] protected () extends StObject {
+open class Configuration[T /* <: js.Object */] protected () extends StObject {
   def this(config: String, fields: js.Array[/* keyof T */ String]) = this()
   
   def addAllFields2UserConfig(bool: Bool, expand: Boolean, fields: js.Array[/* keyof T */ String]): Unit = js.native

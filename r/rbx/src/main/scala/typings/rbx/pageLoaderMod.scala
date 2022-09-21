@@ -11,5 +11,5 @@ object pageLoaderMod {
   
   @JSImport("rbx/elements/page-loader", "PageLoader")
   @js.native
-  val PageLoader: ForwardRefAsExoticComponent[PageLoaderProps, ElementType[js.Any]] = js.native
+  val PageLoader: ForwardRefAsExoticComponent[PageLoaderProps, ElementType[Any]] = js.native
 }

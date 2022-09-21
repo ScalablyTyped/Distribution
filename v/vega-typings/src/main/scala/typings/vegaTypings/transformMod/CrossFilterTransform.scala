@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CrossFilterTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
   var fields: (js.Array[String | TransformField]) | SignalRef
   
@@ -34,11 +34,11 @@ object CrossFilterTransform {
     
     inline def setFields(value: (js.Array[String | TransformField]) | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: (String | TransformField)*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: (String | TransformField)*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setQuery(value: (js.Array[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    inline def setQueryVarargs(value: ((Vector2[Double | SignalRef]) | SignalRef)*): Self = StObject.set(x, "query", js.Array(value :_*))
+    inline def setQueryVarargs(value: ((Vector2[Double | SignalRef]) | SignalRef)*): Self = StObject.set(x, "query", js.Array(value*))
     
     inline def setSignal(value: SignalName): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

@@ -3,6 +3,7 @@ package typings.gliderJs
 import typings.gliderJs.gliderJsStrings.arrow
 import typings.gliderJs.gliderJsStrings.dot
 import typings.gliderJs.gliderJsStrings.slide
+import typings.gliderJs.mod.Arrow
 import typings.gliderJs.mod.Selector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,6 +33,31 @@ object anon {
       inline def setPrev(value: Selector): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
       inline def setPrevNull: Self = StObject.set(x, "prev", null)
+    }
+  }
+  
+  trait Prev extends StObject {
+    
+    var next: js.UndefOr[Arrow] = js.undefined
+    
+    var prev: js.UndefOr[Arrow] = js.undefined
+  }
+  object Prev {
+    
+    inline def apply(): Prev = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Prev]
+    }
+    
+    extension [Self <: Prev](x: Self) {
+      
+      inline def setNext(value: Arrow): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      
+      inline def setPrev(value: Arrow): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      
+      inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     }
   }
   

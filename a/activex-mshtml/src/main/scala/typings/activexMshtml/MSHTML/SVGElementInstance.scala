@@ -9,7 +9,7 @@ trait SVGElementInstance extends StObject {
   /* private */ @JSName("MSHTML.SVGElementInstance_typekey")
   var MSHTMLDotSVGElementInstance_typekey: SVGElementInstance
   
-  def addEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit
+  def addEventListener(`type`: String, listener: Any, useCapture: Boolean): Unit
   
   val childNodes: ISVGElementInstanceList
   
@@ -29,13 +29,13 @@ trait SVGElementInstance extends StObject {
   
   val previousSibling: ISVGElementInstance
   
-  def removeEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit
+  def removeEventListener(`type`: String, listener: Any, useCapture: Boolean): Unit
 }
 object SVGElementInstance {
   
   inline def apply(
     MSHTMLDotSVGElementInstance_typekey: SVGElementInstance,
-    addEventListener: (String, js.Any, Boolean) => Unit,
+    addEventListener: (String, Any, Boolean) => Unit,
     childNodes: ISVGElementInstanceList,
     correspondingElement: ISVGElement,
     correspondingUseElement: ISVGUseElement,
@@ -45,7 +45,7 @@ object SVGElementInstance {
     nextSibling: ISVGElementInstance,
     parentNode: ISVGElementInstance,
     previousSibling: ISVGElementInstance,
-    removeEventListener: (String, js.Any, Boolean) => Unit
+    removeEventListener: (String, Any, Boolean) => Unit
   ): SVGElementInstance = {
     val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction3(addEventListener), childNodes = childNodes.asInstanceOf[js.Any], correspondingElement = correspondingElement.asInstanceOf[js.Any], correspondingUseElement = correspondingUseElement.asInstanceOf[js.Any], dispatchEvent = js.Any.fromFunction1(dispatchEvent), firstChild = firstChild.asInstanceOf[js.Any], lastChild = lastChild.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction3(removeEventListener))
     __obj.updateDynamic("MSHTML.SVGElementInstance_typekey")(MSHTMLDotSVGElementInstance_typekey.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object SVGElementInstance {
   
   extension [Self <: SVGElementInstance](x: Self) {
     
-    inline def setAddEventListener(value: (String, js.Any, Boolean) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
+    inline def setAddEventListener(value: (String, Any, Boolean) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
     
     inline def setChildNodes(value: ISVGElementInstanceList): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
     
@@ -76,6 +76,6 @@ object SVGElementInstance {
     
     inline def setPreviousSibling(value: ISVGElementInstance): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
     
-    inline def setRemoveEventListener(value: (String, js.Any, Boolean) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
+    inline def setRemoveEventListener(value: (String, Any, Boolean) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
   }
 }

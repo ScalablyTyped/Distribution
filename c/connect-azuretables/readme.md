@@ -10,10 +10,10 @@ Azure Table Storage session store for express-session
 | ------------------ | :-------------: |
 | Full name          | connect-azuretables |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 16002 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 588.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/mike-goodwin/connect-azuretables)

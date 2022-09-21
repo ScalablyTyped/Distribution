@@ -25,10 +25,9 @@ object itemContentMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/views/Item/ItemContent", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[ItemContentProps, ComponentState, js.Any] {
+  open class default protected () extends Component[ItemContentProps, ComponentState, Any] {
     def this(props: ItemContentProps) = this()
-    def this(props: ItemContentProps, context: js.Any) = this()
+    def this(props: ItemContentProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/views/Item/ItemContent", JSImport.Default)
   @js.native
@@ -37,7 +36,7 @@ object itemContentMod extends Shortcut {
   trait ItemContentProps
     extends StObject
        with StrictItemContentProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ItemContentProps {
     
     inline def apply(): ItemContentProps = {
@@ -49,7 +48,7 @@ object itemContentMod extends Shortcut {
   trait StrictItemContentProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -84,7 +83,7 @@ object itemContentMod extends Shortcut {
     
     extension [Self <: StrictItemContentProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

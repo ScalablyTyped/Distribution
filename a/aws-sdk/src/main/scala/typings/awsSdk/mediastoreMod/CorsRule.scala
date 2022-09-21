@@ -42,23 +42,23 @@ object CorsRule {
     
     inline def setAllowedHeaders(value: AllowedHeaders): Self = StObject.set(x, "AllowedHeaders", value.asInstanceOf[js.Any])
     
-    inline def setAllowedHeadersVarargs(value: Header*): Self = StObject.set(x, "AllowedHeaders", js.Array(value :_*))
+    inline def setAllowedHeadersVarargs(value: Header*): Self = StObject.set(x, "AllowedHeaders", js.Array(value*))
     
     inline def setAllowedMethods(value: AllowedMethods): Self = StObject.set(x, "AllowedMethods", value.asInstanceOf[js.Any])
     
     inline def setAllowedMethodsUndefined: Self = StObject.set(x, "AllowedMethods", js.undefined)
     
-    inline def setAllowedMethodsVarargs(value: MethodName*): Self = StObject.set(x, "AllowedMethods", js.Array(value :_*))
+    inline def setAllowedMethodsVarargs(value: MethodName*): Self = StObject.set(x, "AllowedMethods", js.Array(value*))
     
     inline def setAllowedOrigins(value: AllowedOrigins): Self = StObject.set(x, "AllowedOrigins", value.asInstanceOf[js.Any])
     
-    inline def setAllowedOriginsVarargs(value: Origin*): Self = StObject.set(x, "AllowedOrigins", js.Array(value :_*))
+    inline def setAllowedOriginsVarargs(value: Origin*): Self = StObject.set(x, "AllowedOrigins", js.Array(value*))
     
     inline def setExposeHeaders(value: ExposeHeaders): Self = StObject.set(x, "ExposeHeaders", value.asInstanceOf[js.Any])
     
     inline def setExposeHeadersUndefined: Self = StObject.set(x, "ExposeHeaders", js.undefined)
     
-    inline def setExposeHeadersVarargs(value: Header*): Self = StObject.set(x, "ExposeHeaders", js.Array(value :_*))
+    inline def setExposeHeadersVarargs(value: Header*): Self = StObject.set(x, "ExposeHeaders", js.Array(value*))
     
     inline def setMaxAgeSeconds(value: MaxAgeSeconds): Self = StObject.set(x, "MaxAgeSeconds", value.asInstanceOf[js.Any])
     

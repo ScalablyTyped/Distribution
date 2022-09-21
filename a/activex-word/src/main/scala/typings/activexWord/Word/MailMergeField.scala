@@ -22,7 +22,7 @@ trait MailMergeField extends StObject {
   
   val Next: MailMergeField
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Previous: MailMergeField
   
@@ -44,7 +44,7 @@ object MailMergeField {
     Delete: () => Unit,
     Locked: Boolean,
     Next: MailMergeField,
-    Parent: js.Any,
+    Parent: Any,
     Previous: MailMergeField,
     Select: () => Unit,
     Type: WdFieldType,
@@ -73,7 +73,7 @@ object MailMergeField {
     
     inline def setNext(value: MailMergeField): Self = StObject.set(x, "Next", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPrevious(value: MailMergeField): Self = StObject.set(x, "Previous", value.asInstanceOf[js.Any])
     

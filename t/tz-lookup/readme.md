@@ -10,10 +10,10 @@ fast time zone lookup
 | ------------------ | :-------------: |
 | Full name          | tz-lookup |
 | Keywords           | tz, timezone, time zone |
-| # releases         | 8 |
-| # dependents       | 17 |
-| # downloads        | 1108806 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 154928.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/tz-lookup)

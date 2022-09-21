@@ -20,7 +20,7 @@ trait IJsonWriter
   /** [Method] The Reader classes support dot delimited data mappings for extracting nested raw data into fields so the writer must
     * @param data Object
     */
-  var getExpandedData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var getExpandedData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
   var root: js.UndefOr[String] = js.undefined
@@ -46,7 +46,7 @@ object IJsonWriter {
     
     inline def setExpandDataUndefined: Self = StObject.set(x, "expandData", js.undefined)
     
-    inline def setGetExpandedData(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getExpandedData", js.Any.fromFunction1(value))
+    inline def setGetExpandedData(value: /* data */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getExpandedData", js.Any.fromFunction1(value))
     
     inline def setGetExpandedDataUndefined: Self = StObject.set(x, "getExpandedData", js.undefined)
     

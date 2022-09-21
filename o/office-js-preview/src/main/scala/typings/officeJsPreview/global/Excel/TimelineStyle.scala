@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a `TimelineStyle`, which defines style elements by region in the timeline.
   *
-  * Represents a Timeline style, which defines style elements by region in the Timeline.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.TimelineStyle")
 @js.native
-class TimelineStyle ()
+open class TimelineStyle ()
   extends StObject
      with typings.officeJsPreview.Excel.TimelineStyle {
   

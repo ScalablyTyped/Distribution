@@ -16,14 +16,16 @@ trait IConnackPacket
   
   var properties: js.UndefOr[AssignedClientIdentifier] = js.undefined
   
-  var returnCode: Double
+  var reasonCode: js.UndefOr[Double] = js.undefined
+  
+  var returnCode: js.UndefOr[Double] = js.undefined
   
   var sessionPresent: Boolean
 }
 object IConnackPacket {
   
-  inline def apply(returnCode: Double, sessionPresent: Boolean): IConnackPacket = {
-    val __obj = js.Dynamic.literal(cmd = "connack", returnCode = returnCode.asInstanceOf[js.Any], sessionPresent = sessionPresent.asInstanceOf[js.Any])
+  inline def apply(sessionPresent: Boolean): IConnackPacket = {
+    val __obj = js.Dynamic.literal(cmd = "connack", sessionPresent = sessionPresent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConnackPacket]
   }
   
@@ -35,7 +37,13 @@ object IConnackPacket {
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
+    inline def setReasonCode(value: Double): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
+    
+    inline def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
+    
     inline def setReturnCode(value: Double): Self = StObject.set(x, "returnCode", value.asInstanceOf[js.Any])
+    
+    inline def setReturnCodeUndefined: Self = StObject.set(x, "returnCode", js.undefined)
     
     inline def setSessionPresent(value: Boolean): Self = StObject.set(x, "sessionPresent", value.asInstanceOf[js.Any])
   }

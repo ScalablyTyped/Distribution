@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeSubscriptionResponse extends StObject {
   
   /**
-    * The AWS Shield Advanced subscription details for an account.
+    * The Shield Advanced subscription details for an account.
     */
   var Subscription: js.UndefOr[typings.awsSdk.shieldMod.Subscription] = js.undefined
 }

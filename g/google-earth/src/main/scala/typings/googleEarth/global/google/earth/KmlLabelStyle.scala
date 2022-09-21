@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.KmlLabelStyle")
 @js.native
-class KmlLabelStyle ()
+open class KmlLabelStyle ()
   extends StObject
      with typings.googleEarth.google.earth.KmlLabelStyle {
   

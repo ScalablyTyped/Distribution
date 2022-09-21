@@ -48,37 +48,37 @@ trait Presentation extends StObject {
   
   val Broadcast: typings.activexPowerpoint.PowerPoint.Broadcast = js.native
   
-  val BuiltInDocumentProperties: js.Any = js.native
+  val BuiltInDocumentProperties: Any = js.native
   
   def CanCheckIn(): Boolean = js.native
   
   /** @param boolean [SaveChanges=true] */
   def CheckIn(): Unit = js.native
   def CheckIn(SaveChanges: Boolean): Unit = js.native
-  def CheckIn(SaveChanges: Boolean, Comments: js.Any): Unit = js.native
-  def CheckIn(SaveChanges: Boolean, Comments: js.Any, MakePublic: js.Any): Unit = js.native
-  def CheckIn(SaveChanges: Boolean, Comments: Unit, MakePublic: js.Any): Unit = js.native
-  def CheckIn(SaveChanges: Unit, Comments: js.Any): Unit = js.native
-  def CheckIn(SaveChanges: Unit, Comments: js.Any, MakePublic: js.Any): Unit = js.native
-  def CheckIn(SaveChanges: Unit, Comments: Unit, MakePublic: js.Any): Unit = js.native
+  def CheckIn(SaveChanges: Boolean, Comments: Any): Unit = js.native
+  def CheckIn(SaveChanges: Boolean, Comments: Any, MakePublic: Any): Unit = js.native
+  def CheckIn(SaveChanges: Boolean, Comments: Unit, MakePublic: Any): Unit = js.native
+  def CheckIn(SaveChanges: Unit, Comments: Any): Unit = js.native
+  def CheckIn(SaveChanges: Unit, Comments: Any, MakePublic: Any): Unit = js.native
+  def CheckIn(SaveChanges: Unit, Comments: Unit, MakePublic: Any): Unit = js.native
   
   /** @param boolean [SaveChanges=true] */
   def CheckInWithVersion(): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: Unit, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: Unit, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any, MakePublic: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any, MakePublic: Unit, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: Unit, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Any, MakePublic: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Any, MakePublic: Any, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Any, MakePublic: Unit, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: Any, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: Unit, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Any, MakePublic: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Any, MakePublic: Any, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Any, MakePublic: Unit, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: Any, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: Unit, VersionType: Any): Unit = js.native
   
   def Close(): Unit = js.native
   
@@ -91,7 +91,7 @@ trait Presentation extends StObject {
   @JSName("CommandBars")
   val CommandBars_Original: CommandBars = js.native
   
-  val Container: js.Any = js.native
+  val Container: Any = js.native
   
   def ContentTypeProperties(Index: String): MetaProperty = js.native
   def ContentTypeProperties(Index: Double): MetaProperty = js.native
@@ -324,7 +324,7 @@ trait Presentation extends StObject {
   
   val CreateVideoStatus: PpMediaTaskStatus = js.native
   
-  val CustomDocumentProperties: js.Any = js.native
+  val CustomDocumentProperties: Any = js.native
   
   def CustomXMLParts(Index: String): CustomXMLPart = js.native
   def CustomXMLParts(Index: Double): CustomXMLPart = js.native
@@ -401,7 +401,7 @@ trait Presentation extends StObject {
     DocStructureTags: js.UndefOr[Boolean],
     BitmapMissingFonts: js.UndefOr[Boolean],
     UseISO19005_1: js.UndefOr[Boolean],
-    ExternalExporter: js.UndefOr[js.Any]
+    ExternalExporter: js.UndefOr[Any]
   ): Unit = js.native
   
   val ExtraColors: typings.activexPowerpoint.PowerPoint.ExtraColors = js.native
@@ -482,7 +482,7 @@ trait Presentation extends StObject {
   
   val PageSetup: typings.activexPowerpoint.PowerPoint.PageSetup = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Password: String = js.native
   
@@ -496,7 +496,7 @@ trait Presentation extends StObject {
   
   val Path: String = js.native
   
-  def Permission(Index: js.Any): UserPermission = js.native
+  def Permission(Index: Any): UserPermission = js.native
   @JSName("Permission")
   val Permission_Original: Permission = js.native
   
@@ -623,18 +623,18 @@ trait Presentation extends StObject {
   def SendForReview(Recipients: String): Unit = js.native
   def SendForReview(Recipients: String, Subject: String): Unit = js.native
   def SendForReview(Recipients: String, Subject: String, ShowMessage: Boolean): Unit = js.native
-  def SendForReview(Recipients: String, Subject: String, ShowMessage: Boolean, IncludeAttachment: js.Any): Unit = js.native
-  def SendForReview(Recipients: String, Subject: String, ShowMessage: Unit, IncludeAttachment: js.Any): Unit = js.native
+  def SendForReview(Recipients: String, Subject: String, ShowMessage: Boolean, IncludeAttachment: Any): Unit = js.native
+  def SendForReview(Recipients: String, Subject: String, ShowMessage: Unit, IncludeAttachment: Any): Unit = js.native
   def SendForReview(Recipients: String, Subject: Unit, ShowMessage: Boolean): Unit = js.native
-  def SendForReview(Recipients: String, Subject: Unit, ShowMessage: Boolean, IncludeAttachment: js.Any): Unit = js.native
-  def SendForReview(Recipients: String, Subject: Unit, ShowMessage: Unit, IncludeAttachment: js.Any): Unit = js.native
+  def SendForReview(Recipients: String, Subject: Unit, ShowMessage: Boolean, IncludeAttachment: Any): Unit = js.native
+  def SendForReview(Recipients: String, Subject: Unit, ShowMessage: Unit, IncludeAttachment: Any): Unit = js.native
   def SendForReview(Recipients: Unit, Subject: String): Unit = js.native
   def SendForReview(Recipients: Unit, Subject: String, ShowMessage: Boolean): Unit = js.native
-  def SendForReview(Recipients: Unit, Subject: String, ShowMessage: Boolean, IncludeAttachment: js.Any): Unit = js.native
-  def SendForReview(Recipients: Unit, Subject: String, ShowMessage: Unit, IncludeAttachment: js.Any): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: String, ShowMessage: Boolean, IncludeAttachment: Any): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: String, ShowMessage: Unit, IncludeAttachment: Any): Unit = js.native
   def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: Boolean): Unit = js.native
-  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: Boolean, IncludeAttachment: js.Any): Unit = js.native
-  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: Unit, IncludeAttachment: js.Any): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: Boolean, IncludeAttachment: Any): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: Unit, IncludeAttachment: Any): Unit = js.native
   
   def ServerPolicy(Index: String): PolicyItem = js.native
   def ServerPolicy(Index: Double): PolicyItem = js.native

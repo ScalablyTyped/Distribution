@@ -2,17 +2,19 @@ package typings.reactMdForm
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdForm.anon.InputTogglePropstypecheck
-import typings.reactMdForm.anon.InputTogglePropstyperadio
 import typings.reactMdForm.asyncSwitchMod.AsyncSwitchProps
 import typings.reactMdForm.checkboxMod.CheckboxProps
+import typings.reactMdForm.inputToggleIconMod.InputToggleIconProps
+import typings.reactMdForm.inputToggleMod.Props
 import typings.reactMdForm.radioMod.RadioProps
 import typings.reactMdForm.switchMod.SwitchProps
+import typings.reactMdForm.switchTrackMod.SwitchTrackProps
 import typings.reactMdForm.toggleContainerMod.ToggleContainerProps
 import typings.reactMdForm.useCheckedMod.ChangeEventHandler
 import typings.reactMdForm.useCheckedMod.SetChecked
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
+import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,7 +35,11 @@ object toggleMod {
   
   @JSImport("@react-md/form/types/toggle", "InputToggle")
   @js.native
-  val InputToggle: ForwardRefExoticComponent[InputTogglePropstyperadio | InputTogglePropstypecheck] = js.native
+  val InputToggle: ForwardRefExoticComponent[Props & RefAttributes[HTMLInputElement]] = js.native
+  
+  @JSImport("@react-md/form/types/toggle", "InputToggleIcon")
+  @js.native
+  val InputToggleIcon: ForwardRefExoticComponent[InputToggleIconProps & RefAttributes[HTMLSpanElement]] = js.native
   
   @JSImport("@react-md/form/types/toggle", "Radio")
   @js.native
@@ -42,6 +48,10 @@ object toggleMod {
   @JSImport("@react-md/form/types/toggle", "Switch")
   @js.native
   val Switch: ForwardRefExoticComponent[SwitchProps & RefAttributes[HTMLInputElement]] = js.native
+  
+  @JSImport("@react-md/form/types/toggle", "SwitchTrack")
+  @js.native
+  val SwitchTrack: ForwardRefExoticComponent[SwitchTrackProps & RefAttributes[HTMLInputElement]] = js.native
   
   @JSImport("@react-md/form/types/toggle", "ToggleContainer")
   @js.native

@@ -26,7 +26,7 @@ object XDrawPageExpander {
   inline def apply(
     acquire: () => Unit,
     expand: XDrawPage => XDrawPages,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDrawPageExpander = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), expand = js.Any.fromFunction1(expand), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

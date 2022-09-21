@@ -61,11 +61,11 @@ object anon {
       
       inline def setW1(value: PinDefinition): Self = StObject.set(x, "W1", value.asInstanceOf[js.Any])
       
-      inline def setW1Varargs(value: Double*): Self = StObject.set(x, "W1", js.Array(value :_*))
+      inline def setW1Varargs(value: Double*): Self = StObject.set(x, "W1", js.Array(value*))
       
       inline def setW2(value: PinDefinition): Self = StObject.set(x, "W2", value.asInstanceOf[js.Any])
       
-      inline def setW2Varargs(value: Double*): Self = StObject.set(x, "W2", js.Array(value :_*))
+      inline def setW2Varargs(value: Double*): Self = StObject.set(x, "W2", js.Array(value*))
     }
   }
   

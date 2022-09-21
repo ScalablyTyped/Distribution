@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Reflog")
 @js.native
-class Reflog ()
+open class Reflog ()
   extends typings.nodegit.refLogMod.Reflog
 /* static members */
 object Reflog {

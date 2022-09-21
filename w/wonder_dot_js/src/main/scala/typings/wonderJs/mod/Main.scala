@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "Main")
 @js.native
-class Main ()
+open class Main ()
   extends typings.wonderJs.mainMod.Main
 /* static members */
 object Main {

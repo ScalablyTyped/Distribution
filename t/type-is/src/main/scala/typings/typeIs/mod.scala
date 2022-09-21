@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(request: IncomingMessage, types: String*): String | `false` | Null = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String | `false` | Null]
+  inline def apply(request: IncomingMessage, types: String*): String | `false` | Null = ^.asInstanceOf[js.Dynamic].apply(List(request.asInstanceOf[js.Any]).`++`(types.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String | `false` | Null]
   inline def apply(request: IncomingMessage, types: js.Array[String]): String | `false` | Null = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String | `false` | Null]
   
   @JSImport("type-is", JSImport.Namespace)
@@ -17,7 +17,7 @@ object mod {
   
   inline def hasBody(request: IncomingMessage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBody")(request.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def is(mediaType: String, types: String*): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(mediaType.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  inline def is(mediaType: String, types: String*): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(List(mediaType.asInstanceOf[js.Any]).`++`(types.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String | `false`]
   inline def is(mediaType: String, types: js.Array[String]): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(mediaType.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   
   inline def mimeMatch(expected: String, actual: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("mimeMatch")(expected.asInstanceOf[js.Any], actual.asInstanceOf[js.Any])).asInstanceOf[Boolean]

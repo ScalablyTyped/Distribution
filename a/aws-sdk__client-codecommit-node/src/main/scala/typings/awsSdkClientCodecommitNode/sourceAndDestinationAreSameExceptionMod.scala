@@ -8,5 +8,5 @@ object sourceAndDestinationAreSameExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/SourceAndDestinationAreSameException", "SourceAndDestinationAreSameException")
   @js.native
-  val SourceAndDestinationAreSameException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SourceAndDestinationAreSameException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -19,6 +19,6 @@ object ArtifactSourceIdsQueryResult {
     
     inline def setArtifactSourceIds(value: js.Array[ArtifactSourceId]): Self = StObject.set(x, "artifactSourceIds", value.asInstanceOf[js.Any])
     
-    inline def setArtifactSourceIdsVarargs(value: ArtifactSourceId*): Self = StObject.set(x, "artifactSourceIds", js.Array(value :_*))
+    inline def setArtifactSourceIdsVarargs(value: ArtifactSourceId*): Self = StObject.set(x, "artifactSourceIds", js.Array(value*))
   }
 }

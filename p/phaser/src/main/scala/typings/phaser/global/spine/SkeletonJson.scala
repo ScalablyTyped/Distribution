@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.SkeletonJson")
 @js.native
-class SkeletonJson protected ()
+open class SkeletonJson protected ()
   extends StObject
      with typings.phaser.spine.SkeletonJson {
   def this(attachmentLoader: AttachmentLoader) = this()

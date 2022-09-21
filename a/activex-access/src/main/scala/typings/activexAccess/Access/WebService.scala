@@ -9,7 +9,7 @@ trait WebService extends StObject {
   /* private */ @JSName("Access.WebService_typekey")
   var AccessDotWebService_typekey: WebService
   
-  def Entities(Index: js.Any): Entity
+  def Entities(Index: Any): Entity
   @JSName("Entities")
   val Entities_Original: Entities
   
@@ -17,7 +17,7 @@ trait WebService extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
 }
 object WebService {
   
@@ -26,7 +26,7 @@ object WebService {
     Entities: Entities,
     IsMemberSafe: Double => Boolean,
     Name: String,
-    Parent: js.Any
+    Parent: Any
   ): WebService = {
     val __obj = js.Dynamic.literal(Entities = Entities.asInstanceOf[js.Any], IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Access.WebService_typekey")(AccessDotWebService_typekey.asInstanceOf[js.Any])
@@ -43,6 +43,6 @@ object WebService {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

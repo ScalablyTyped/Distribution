@@ -1,20 +1,16 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.dialogDialogMod.DialogProps
-import typings.react.mod.ComponentType
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object dialogMod extends Shortcut {
+object dialogMod {
   
-  @JSImport("@material-ui/core/Dialog", JSImport.Default)
+  @JSImport("@material-ui/core/Dialog", JSImport.Namespace)
   @js.native
-  val default: ComponentType[DialogProps] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ComponentType[DialogProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `dialogMod.foo` */
-  override def _to: ComponentType[DialogProps] = default
+  inline def default(props: DialogProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

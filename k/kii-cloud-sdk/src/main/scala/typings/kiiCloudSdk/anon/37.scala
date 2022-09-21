@@ -6,21 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `37` extends StObject {
   
-  def failure(errString: String): js.Any
+  def failure(errString: String): Any
   
-  def success(): js.Any
+  def success(): Any
 }
 object `37` {
   
-  inline def apply(failure: String => js.Any, success: () => js.Any): `37` = {
+  inline def apply(failure: String => Any, success: () => Any): `37` = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction1(failure), success = js.Any.fromFunction0(success))
     __obj.asInstanceOf[`37`]
   }
   
   extension [Self <: `37`](x: Self) {
     
-    inline def setFailure(value: String => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
+    inline def setFailure(value: String => Any): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
     
-    inline def setSuccess(value: () => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
+    inline def setSuccess(value: () => Any): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
   }
 }

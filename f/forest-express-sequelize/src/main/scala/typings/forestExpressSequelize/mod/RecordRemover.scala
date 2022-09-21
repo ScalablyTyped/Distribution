@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forest-express-sequelize", "RecordRemover")
 @js.native
-class RecordRemover protected () extends AbstractRecordTool {
+open class RecordRemover protected () extends AbstractRecordTool {
   def this(model: js.Object) = this()
   
   def remove(recordId: String): js.Promise[Unit] = js.native

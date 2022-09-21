@@ -10,10 +10,10 @@ Resolve the path of a globally installed module
 | ------------------ | :-------------: |
 | Full name          | resolve-global |
 | Keywords           | resolve, global, package, module, globally, path, npm, yarn, packages, require |
-| # releases         | 2 |
-| # dependents       | 39 |
-| # downloads        | 24654277 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 7945747.333333333 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/resolve-global#readme)

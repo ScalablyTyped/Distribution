@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents an upload session reference. This reference is created via
-  * upload method. Updating of item content may refer to this uploaded content
-  * via contentDataRef.
-  */
 trait SchemaUploadItemRef extends StObject {
   
   /**
-    * Name of the content reference. The maximum length is 2048 characters.
+    * The name of the content reference. The maximum length is 2048 characters.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUploadItemRef {
   
@@ -26,6 +21,8 @@ object SchemaUploadItemRef {
   extension [Self <: SchemaUploadItemRef](x: Self) {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

@@ -113,7 +113,7 @@ object WizardOptions {
     
     inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    inline def setStepsVarargs(value: WizardStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: WizardStep*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setValidateForms(value: Boolean): Self = StObject.set(x, "validateForms", value.asInstanceOf[js.Any])
     

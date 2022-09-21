@@ -14,17 +14,27 @@ object anon {
   @js.native
   trait ReadonlyArrayCookietoValu
     extends StObject
-       with /* n */ NumberDictionary[Cookie] {
+       with /* standard es5 */
+  /* n */ NumberDictionary[Cookie] {
+    
+    /**
+      * Returns the item located at the specified index.
+      * @param index The zero-based index of the desired code unit. A negative index will count back from the last item.
+      */
+    /* standard es2022.array */
+    def at(index: Double): js.UndefOr[Cookie] = js.native
     
     /**
       * Combines two or more arrays.
       * @param items Additional items to add to the end of array1.
       */
+    /* standard es5 */
     def concat(items: (js.Array[Cookie] | Cookie)*): js.Array[Cookie] = js.native
     
     /**
       * Returns an iterable of key, value pairs for every entry in the array
       */
+    /* standard es2015.iterable */
     def entries(): IterableIterator[js.Tuple2[Double, Cookie]] = js.native
     
     /**
@@ -35,12 +45,11 @@ object anon {
       * @param thisArg An object to which the this keyword can refer in the predicate function.
       * If thisArg is omitted, undefined is used as the this value.
       */
+    /* standard es5 */
+    def every(predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], Any]): Boolean = js.native
     def every(
-      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], js.Any]
-    ): Boolean = js.native
-    def every(
-      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], js.Any],
-      thisArg: js.Any
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], Any],
+      thisArg: Any
     ): Boolean = js.native
     /**
       * Determines whether all the members of an array satisfy the specified test.
@@ -50,6 +59,7 @@ object anon {
       * @param thisArg An object to which the this keyword can refer in the predicate function.
       * If thisArg is omitted, undefined is used as the this value.
       */
+    /* standard es5 */
     @JSName("every")
     def every_S_Cookie[S /* <: Cookie */](
       predicate: js.Function3[
@@ -67,7 +77,7 @@ object anon {
           /* array */ js.Array[Cookie], 
           /* is S */ Boolean
         ],
-      thisArg: js.Any
+      thisArg: Any
     ): /* is std.Array<S> */ Boolean = js.native
     
     /**
@@ -75,18 +85,18 @@ object anon {
       * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
+    /* standard es5 */
+    def filter(predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], Any]): js.Array[Cookie] = js.native
     def filter(
-      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], js.Any]
-    ): js.Array[Cookie] = js.native
-    def filter(
-      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], js.Any],
-      thisArg: js.Any
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], Any],
+      thisArg: Any
     ): js.Array[Cookie] = js.native
     /**
       * Returns the elements of an array that meet the condition specified in a callback function.
       * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
+    /* standard es5 */
     @JSName("filter")
     def filter_S_Cookie[S /* <: Cookie */](
       predicate: js.Function3[
@@ -104,15 +114,14 @@ object anon {
           /* array */ js.Array[Cookie], 
           /* is S */ Boolean
         ],
-      thisArg: js.Any
+      thisArg: Any
     ): js.Array[S] = js.native
     
+    /* standard es2015.core */
+    def find(predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], Any]): js.UndefOr[Cookie] = js.native
     def find(
-      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], js.Any]
-    ): js.UndefOr[Cookie] = js.native
-    def find(
-      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], js.Any],
-      thisArg: js.Any
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], Any],
+      thisArg: Any
     ): js.UndefOr[Cookie] = js.native
     /**
       * Returns the value of the first element in the array where predicate is true, and undefined
@@ -123,6 +132,7 @@ object anon {
       * @param thisArg If provided, it will be used as the this value for each invocation of
       * predicate. If it is not provided, undefined is used instead.
       */
+    /* standard es2015.core */
     def find[S /* <: Cookie */](
       predicate: js.ThisFunction3[
           /* this */ Unit, 
@@ -140,7 +150,7 @@ object anon {
           /* obj */ js.Array[Cookie], 
           /* is S */ Boolean
         ],
-      thisArg: js.Any
+      thisArg: Any
     ): js.UndefOr[S] = js.native
     
     /**
@@ -152,12 +162,11 @@ object anon {
       * @param thisArg If provided, it will be used as the this value for each invocation of
       * predicate. If it is not provided, undefined is used instead.
       */
+    /* standard es2015.core */
+    def findIndex(predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], Any]): Double = js.native
     def findIndex(
-      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], js.Any]
-    ): Double = js.native
-    def findIndex(
-      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], js.Any],
-      thisArg: js.Any
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], Any],
+      thisArg: Any
     ): Double = js.native
     
     /**
@@ -166,6 +175,7 @@ object anon {
       *
       * @param depth The maximum recursion depth
       */
+    /* standard es2019.array */
     def flat[A, D /* <: Double */](): js.Array[FlatArray[A, D]] = js.native
     def flat[A, D /* <: Double */](depth: D): js.Array[FlatArray[A, D]] = js.native
     
@@ -179,6 +189,7 @@ object anon {
       * @param thisArg An object to which the this keyword can refer in the callback function. If
       * thisArg is omitted, undefined is used as the this value.
       */
+    /* standard es2019.array */
     def flatMap[U, This](
       callback: js.ThisFunction3[
           /* this */ This, 
@@ -204,12 +215,13 @@ object anon {
       * @param callbackfn  A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.
       * @param thisArg  An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
       */
+    /* standard es5 */
     def forEach(
       callbackfn: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], Unit]
     ): Unit = js.native
     def forEach(
       callbackfn: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], Unit],
-      thisArg: js.Any
+      thisArg: Any
     ): Unit = js.native
     
     /**
@@ -217,6 +229,7 @@ object anon {
       * @param searchElement The element to search for.
       * @param fromIndex The position in this array at which to begin searching for searchElement.
       */
+    /* standard es2016.array.include */
     def includes(searchElement: Cookie): Boolean = js.native
     def includes(searchElement: Cookie, fromIndex: Double): Boolean = js.native
     
@@ -225,10 +238,12 @@ object anon {
       * @param searchElement The value to locate in the array.
       * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the search starts at index 0.
       */
+    /* standard es5 */
     def indexOf(searchElement: Cookie): Double = js.native
     def indexOf(searchElement: Cookie, fromIndex: Double): Double = js.native
     
     /** Iterator of values in the array. */
+    /* standard es2015.iterable */
     @JSName(js.Symbol.iterator)
     var iterator: js.Function0[IterableIterator[Cookie]] = js.native
     
@@ -236,12 +251,14 @@ object anon {
       * Adds all the elements of an array separated by the specified separator string.
       * @param separator A string used to separate one element of an array from the next in the resulting String. If omitted, the array elements are separated with a comma.
       */
+    /* standard es5 */
     def join(): String = js.native
     def join(separator: String): String = js.native
     
     /**
       * Returns an iterable of keys in the array
       */
+    /* standard es2015.iterable */
     def keys(): IterableIterator[Double] = js.native
     
     /**
@@ -249,12 +266,14 @@ object anon {
       * @param searchElement The value to locate in the array.
       * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the search starts at the last index in the array.
       */
+    /* standard es5 */
     def lastIndexOf(searchElement: Cookie): Double = js.native
     def lastIndexOf(searchElement: Cookie, fromIndex: Double): Double = js.native
     
     /**
       * Gets the length of the array. This is a number one higher than the highest element defined in an array.
       */
+    /* standard es5 */
     val length: Double = js.native
     
     /**
@@ -262,10 +281,11 @@ object anon {
       * @param callbackfn A function that accepts up to three arguments. The map method calls the callbackfn function one time for each element in the array.
       * @param thisArg An object to which the this keyword can refer in the callbackfn function. If thisArg is omitted, undefined is used as the this value.
       */
+    /* standard es5 */
     def map[U](callbackfn: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], U]): js.Array[U] = js.native
     def map[U](
       callbackfn: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], U],
-      thisArg: js.Any
+      thisArg: Any
     ): js.Array[U] = js.native
     
     /**
@@ -273,6 +293,7 @@ object anon {
       * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
       * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
       */
+    /* standard es5 */
     def reduce(
       callbackfn: js.Function4[
           /* previousValue */ Cookie, 
@@ -282,6 +303,7 @@ object anon {
           Cookie
         ]
     ): Cookie = js.native
+    /* standard es5 */
     def reduce(
       callbackfn: js.Function4[
           /* previousValue */ Cookie, 
@@ -297,6 +319,7 @@ object anon {
       * @param callbackfn A function that accepts up to four arguments. The reduce method calls the callbackfn function one time for each element in the array.
       * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
       */
+    /* standard es5 */
     def reduce[U](
       callbackfn: js.Function4[
           /* previousValue */ U, 
@@ -313,6 +336,7 @@ object anon {
       * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
       * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
       */
+    /* standard es5 */
     def reduceRight(
       callbackfn: js.Function4[
           /* previousValue */ Cookie, 
@@ -322,6 +346,7 @@ object anon {
           Cookie
         ]
     ): Cookie = js.native
+    /* standard es5 */
     def reduceRight(
       callbackfn: js.Function4[
           /* previousValue */ Cookie, 
@@ -337,6 +362,7 @@ object anon {
       * @param callbackfn A function that accepts up to four arguments. The reduceRight method calls the callbackfn function one time for each element in the array.
       * @param initialValue If initialValue is specified, it is used as the initial value to start the accumulation. The first call to the callbackfn function provides this value as an argument instead of an array value.
       */
+    /* standard es5 */
     def reduceRight[U](
       callbackfn: js.Function4[
           /* previousValue */ U, 
@@ -353,6 +379,7 @@ object anon {
       * @param start The beginning of the specified portion of the array.
       * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
       */
+    /* standard es5 */
     def slice(): js.Array[Cookie] = js.native
     def slice(start: Double): js.Array[Cookie] = js.native
     def slice(start: Double, end: Double): js.Array[Cookie] = js.native
@@ -366,12 +393,11 @@ object anon {
       * @param thisArg An object to which the this keyword can refer in the predicate function.
       * If thisArg is omitted, undefined is used as the this value.
       */
+    /* standard es5 */
+    def some(predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], Any]): Boolean = js.native
     def some(
-      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], js.Any]
-    ): Boolean = js.native
-    def some(
-      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], js.Any],
-      thisArg: js.Any
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], Any],
+      thisArg: Any
     ): Boolean = js.native
     
     def toValueString(): String = js.native
@@ -379,6 +405,7 @@ object anon {
     /**
       * Returns an iterable of values in the array
       */
+    /* standard es2015.iterable */
     def values(): IterableIterator[Cookie] = js.native
   }
 }

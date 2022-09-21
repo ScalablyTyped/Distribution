@@ -29,7 +29,7 @@ object ListAccountAssignmentDeletionStatusResponse {
     
     inline def setAccountAssignmentsDeletionStatusUndefined: Self = StObject.set(x, "AccountAssignmentsDeletionStatus", js.undefined)
     
-    inline def setAccountAssignmentsDeletionStatusVarargs(value: AccountAssignmentOperationStatusMetadata*): Self = StObject.set(x, "AccountAssignmentsDeletionStatus", js.Array(value :_*))
+    inline def setAccountAssignmentsDeletionStatusVarargs(value: AccountAssignmentOperationStatusMetadata*): Self = StObject.set(x, "AccountAssignmentsDeletionStatus", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -12,14 +12,14 @@ trait StepExecution extends StObject {
   var Action: js.UndefOr[AutomationActionName] = js.undefined
   
   /**
-    * If a step has finished execution, this contains the time the execution ended. If the step has not yet concluded, this field is not populated.
+    * If a step has finished execution, this contains the time the execution ended. If the step hasn't yet concluded, this field isn't populated.
     */
-  var ExecutionEndTime: js.UndefOr[DateTime] = js.undefined
+  var ExecutionEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * If a step has begun execution, this contains the time the step started. If the step is in Pending status, this field is not populated.
+    * If a step has begun execution, this contains the time the step started. If the step is in Pending status, this field isn't populated.
     */
-  var ExecutionStartTime: js.UndefOr[DateTime] = js.undefined
+  var ExecutionStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Information about the Automation failure.
@@ -97,7 +97,7 @@ trait StepExecution extends StObject {
   var StepStatus: js.UndefOr[AutomationExecutionStatus] = js.undefined
   
   /**
-    * The combination of AWS Regions and accounts targeted by the current Automation execution.
+    * The combination of Amazon Web Services Regions and Amazon Web Services accounts targeted by the current Automation execution.
     */
   var TargetLocation: js.UndefOr[typings.awsSdk.ssmMod.TargetLocation] = js.undefined
   
@@ -129,11 +129,11 @@ object StepExecution {
     
     inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
-    inline def setExecutionEndTime(value: DateTime): Self = StObject.set(x, "ExecutionEndTime", value.asInstanceOf[js.Any])
+    inline def setExecutionEndTime(value: js.Date): Self = StObject.set(x, "ExecutionEndTime", value.asInstanceOf[js.Any])
     
     inline def setExecutionEndTimeUndefined: Self = StObject.set(x, "ExecutionEndTime", js.undefined)
     
-    inline def setExecutionStartTime(value: DateTime): Self = StObject.set(x, "ExecutionStartTime", value.asInstanceOf[js.Any])
+    inline def setExecutionStartTime(value: js.Date): Self = StObject.set(x, "ExecutionStartTime", value.asInstanceOf[js.Any])
     
     inline def setExecutionStartTimeUndefined: Self = StObject.set(x, "ExecutionStartTime", js.undefined)
     
@@ -205,7 +205,7 @@ object StepExecution {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
-    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value*))
     
     inline def setTimeoutSeconds(value: Long): Self = StObject.set(x, "TimeoutSeconds", value.asInstanceOf[js.Any])
     
@@ -215,6 +215,6 @@ object StepExecution {
     
     inline def setValidNextStepsUndefined: Self = StObject.set(x, "ValidNextSteps", js.undefined)
     
-    inline def setValidNextStepsVarargs(value: ValidNextStep*): Self = StObject.set(x, "ValidNextSteps", js.Array(value :_*))
+    inline def setValidNextStepsVarargs(value: ValidNextStep*): Self = StObject.set(x, "ValidNextSteps", js.Array(value*))
   }
 }

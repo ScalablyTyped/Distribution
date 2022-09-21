@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* was `typeof TabBarIOS` */
 @JSImport("antd-mobile-rn", "TabBar")
 @js.native
-class TabBar () extends default
+open class TabBar () extends default
 /* was `typeof TabBarIOS` */
 object TabBar {
   
@@ -19,8 +19,8 @@ object TabBar {
   /* static member */
   @JSImport("antd-mobile-rn", "TabBar.Item")
   @js.native
-  def Item: js.Any = js.native
-  inline def Item_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  def Item: Any = js.native
+  inline def Item_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   
   /* static member */
   object defaultProps {

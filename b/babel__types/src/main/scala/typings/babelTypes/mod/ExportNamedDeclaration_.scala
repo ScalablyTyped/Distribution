@@ -14,9 +14,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with Declaration
      with ExportDeclaration
      with ModuleDeclaration
+     with Standardized
      with Statement {
   
-  var assertions: ImportAttribute_ | Null
+  var assertions: js.Array[ImportAttribute_] | Null
   
   var declaration: Declaration | Null
   
@@ -39,9 +40,11 @@ object ExportNamedDeclaration_ {
   
   extension [Self <: ExportNamedDeclaration_](x: Self) {
     
-    inline def setAssertions(value: ImportAttribute_): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
+    inline def setAssertions(value: js.Array[ImportAttribute_]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
     
     inline def setAssertionsNull: Self = StObject.set(x, "assertions", null)
+    
+    inline def setAssertionsVarargs(value: ImportAttribute_ *): Self = StObject.set(x, "assertions", js.Array(value*))
     
     inline def setDeclaration(value: Declaration): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     
@@ -57,7 +60,7 @@ object ExportNamedDeclaration_ {
     
     inline def setSpecifiers(value: js.Array[ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_]): Self = StObject.set(x, "specifiers", value.asInstanceOf[js.Any])
     
-    inline def setSpecifiersVarargs(value: (ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_)*): Self = StObject.set(x, "specifiers", js.Array(value :_*))
+    inline def setSpecifiersVarargs(value: (ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_)*): Self = StObject.set(x, "specifiers", js.Array(value*))
     
     inline def setType(value: ExportNamedDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

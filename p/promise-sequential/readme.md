@@ -10,10 +10,10 @@ Simple like Promise.all(), but sequentially!
 | ------------------ | :-------------: |
 | Full name          | promise-sequential |
 | Keywords           | promise, queue, seq, sequence, sequential |
-| # releases         | 0 |
-| # dependents       | 52 |
-| # downloads        | 996940 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 183365.66666666666 |
+| # stars            | 192.0 |
 
 ## Links
 - [Homepage](https://github.com/russiann/promise-sequential#readme)

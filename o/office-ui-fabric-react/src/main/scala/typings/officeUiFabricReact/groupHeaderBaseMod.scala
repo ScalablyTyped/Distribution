@@ -10,27 +10,28 @@ object groupHeaderBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/GroupedList/GroupHeader.base", "GroupHeaderBase")
   @js.native
-  class GroupHeaderBase protected ()
-    extends Component[IGroupHeaderProps, IGroupHeaderState, js.Any] {
+  open class GroupHeaderBase protected () extends Component[IGroupHeaderProps, IGroupHeaderState, Any] {
     def this(props: IGroupHeaderProps) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _defaultCheckboxRender: js.Any = js.native
+    /* private */ var _defaultCheckboxRender: Any = js.native
     
-    /* private */ var _fastDefaultCheckboxRender: js.Any = js.native
+    /* private */ var _fastDefaultCheckboxRender: Any = js.native
     
-    /* private */ var _onHeaderClick: js.Any = js.native
+    /* private */ var _id: Any = js.native
     
-    /* private */ var _onKeyUp: js.Any = js.native
+    /* private */ var _onHeaderClick: Any = js.native
     
-    /* private */ var _onRenderTitle: js.Any = js.native
+    /* private */ var _onKeyUp: Any = js.native
     
-    /* private */ var _onToggleClick: js.Any = js.native
+    /* private */ var _onRenderName: Any = js.native
     
-    /* private */ var _onToggleSelectGroupClick: js.Any = js.native
+    /* private */ var _onRenderTitle: Any = js.native
     
-    /* private */ var _toggleCollapse: js.Any = js.native
+    /* private */ var _onToggleClick: Any = js.native
+    
+    /* private */ var _toggleCollapse: Any = js.native
   }
   /* static members */
   object GroupHeaderBase {

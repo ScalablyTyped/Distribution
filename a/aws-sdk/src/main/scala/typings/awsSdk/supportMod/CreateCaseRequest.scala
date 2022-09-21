@@ -12,17 +12,17 @@ trait CreateCaseRequest extends StObject {
   var attachmentSetId: js.UndefOr[AttachmentSetId] = js.undefined
   
   /**
-    * The category of problem for the AWS Support case. You also use the DescribeServices operation to get the category code for a service. Each AWS service defines its own set of category codes.
+    * The category of problem for the support case. You also use the DescribeServices operation to get the category code for a service. Each Amazon Web Services service defines its own set of category codes.
     */
   var categoryCode: js.UndefOr[CategoryCode] = js.undefined
   
   /**
-    * A list of email addresses that AWS Support copies on case correspondence. AWS Support identifies the account that creates the case when you specify your AWS credentials in an HTTP POST method or use the AWS SDKs. 
+    * A list of email addresses that Amazon Web Services Support copies on case correspondence. Amazon Web Services Support identifies the account that creates the case when you specify your Amazon Web Services credentials in an HTTP POST method or use the Amazon Web Services SDKs. 
     */
   var ccEmailAddresses: js.UndefOr[CcEmailAddressList] = js.undefined
   
   /**
-    * The communication body text that describes the issue. This text appears in the Description field on the AWS Support Center Create Case page.
+    * The communication body text that describes the issue. This text appears in the Description field on the Amazon Web Services Support Center Create Case page.
     */
   var communicationBody: CommunicationBody
   
@@ -32,22 +32,22 @@ trait CreateCaseRequest extends StObject {
   var issueType: js.UndefOr[IssueType] = js.undefined
   
   /**
-    * The language in which AWS Support handles the case. You must specify the ISO 639-1 code for the language parameter if you want support in that language. Currently, English ("en") and Japanese ("ja") are supported.
+    * The language in which Amazon Web Services Support handles the case. You must specify the ISO 639-1 code for the language parameter if you want support in that language. Currently, English ("en") and Japanese ("ja") are supported.
     */
   var language: js.UndefOr[Language] = js.undefined
   
   /**
-    * The code for the AWS service. You can use the DescribeServices operation to get the possible serviceCode values.
+    * The code for the Amazon Web Services service. You can use the DescribeServices operation to get the possible serviceCode values.
     */
   var serviceCode: js.UndefOr[ServiceCode] = js.undefined
   
   /**
-    * A value that indicates the urgency of the case. This value determines the response time according to your service level agreement with AWS Support. You can use the DescribeSeverityLevels operation to get the possible values for severityCode.  For more information, see SeverityLevel and Choosing a Severity in the AWS Support User Guide.  The availability of severity levels depends on the support plan for the AWS account. 
+    * A value that indicates the urgency of the case. This value determines the response time according to your service level agreement with Amazon Web Services Support. You can use the DescribeSeverityLevels operation to get the possible values for severityCode.  For more information, see SeverityLevel and Choosing a Severity in the Amazon Web Services Support User Guide.  The availability of severity levels depends on the support plan for the Amazon Web Services account. 
     */
   var severityCode: js.UndefOr[SeverityCode] = js.undefined
   
   /**
-    * The title of the AWS Support case. The title appears in the Subject field on the AWS Support Center Create Case page.
+    * The title of the support case. The title appears in the Subject field on the Amazon Web Services Support Center Create Case page.
     */
   var subject: Subject
 }
@@ -72,7 +72,7 @@ object CreateCaseRequest {
     
     inline def setCcEmailAddressesUndefined: Self = StObject.set(x, "ccEmailAddresses", js.undefined)
     
-    inline def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value :_*))
+    inline def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value*))
     
     inline def setCommunicationBody(value: CommunicationBody): Self = StObject.set(x, "communicationBody", value.asInstanceOf[js.Any])
     

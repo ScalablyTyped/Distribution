@@ -9,7 +9,7 @@ trait PartialCsvReadOptions extends StObject {
   
   var dateFormats: js.UndefOr[js.Array[String]] = js.undefined
   
-  var map: js.UndefOr[js.Function2[/* value */ js.Any, /* index */ Double, js.Any]] = js.undefined
+  var map: js.UndefOr[js.Function2[/* value */ Any, /* index */ Double, Any]] = js.undefined
   
   var parserOptions: js.UndefOr[PartialFastCsvParserOptio] = js.undefined
   
@@ -28,9 +28,9 @@ object PartialCsvReadOptions {
     
     inline def setDateFormatsUndefined: Self = StObject.set(x, "dateFormats", js.undefined)
     
-    inline def setDateFormatsVarargs(value: String*): Self = StObject.set(x, "dateFormats", js.Array(value :_*))
+    inline def setDateFormatsVarargs(value: String*): Self = StObject.set(x, "dateFormats", js.Array(value*))
     
-    inline def setMap(value: (/* value */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    inline def setMap(value: (/* value */ Any, /* index */ Double) => Any): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     

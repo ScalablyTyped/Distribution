@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ConnectorFormat")
 @js.native
-/* private */ class ConnectorFormat ()
+/* private */ open class ConnectorFormat ()
   extends StObject
      with typings.activexOffice.Office.ConnectorFormat {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override def BeginConnect(ConnectedShape: typings.activexOffice.Office.Shape, ConnectionSite: Double): Unit = js.native
@@ -53,7 +53,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotConnectorFormat_typekey: typings.activexOffice.Office.ConnectorFormat = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Type: MsoConnectorType = js.native

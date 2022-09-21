@@ -21,7 +21,7 @@ object control {
   
   @JSGlobal("ymaps.control.Button")
   @js.native
-  class Button ()
+  open class Button ()
     extends typings.yandexMaps.mod.control.Button {
     def this(parameters: String) = this()
     def this(parameters: IButtonParameters) = this()
@@ -29,35 +29,35 @@ object control {
   
   @JSGlobal("ymaps.control.FullscreenControl")
   @js.native
-  class FullscreenControl ()
+  open class FullscreenControl ()
     extends typings.yandexMaps.mod.control.FullscreenControl {
     def this(parameters: IFullscreenControlParameters) = this()
   }
   
   @JSGlobal("ymaps.control.GeolocationControl")
   @js.native
-  class GeolocationControl ()
+  open class GeolocationControl ()
     extends typings.yandexMaps.mod.control.GeolocationControl {
     def this(parameters: IGeolocationControlParameters) = this()
   }
   
   @JSGlobal("ymaps.control.ListBox")
   @js.native
-  class ListBox ()
+  open class ListBox ()
     extends typings.yandexMaps.mod.control.ListBox {
     def this(parameters: IListBoxParameters) = this()
   }
   
   @JSGlobal("ymaps.control.ListBoxItem")
   @js.native
-  class ListBoxItem ()
+  open class ListBoxItem ()
     extends typings.yandexMaps.mod.control.ListBoxItem {
     def this(parameters: IListBoxItemParameters) = this()
   }
   
   @JSGlobal("ymaps.control.Manager")
   @js.native
-  class Manager protected ()
+  open class Manager protected ()
     extends typings.yandexMaps.mod.control.Manager {
     def this(map: typings.yandexMaps.mod.Map_) = this()
     def this(map: typings.yandexMaps.mod.Map_, controls: js.Array[String | IControl]) = this()
@@ -67,42 +67,42 @@ object control {
   
   @JSGlobal("ymaps.control.RouteButton")
   @js.native
-  class RouteButton ()
+  open class RouteButton ()
     extends typings.yandexMaps.mod.control.RouteButton {
     def this(parameters: IRouteButtonParameters) = this()
   }
   
   @JSGlobal("ymaps.control.RouteEditor")
   @js.native
-  class RouteEditor ()
+  open class RouteEditor ()
     extends typings.yandexMaps.mod.control.RouteEditor {
     def this(parameters: IRouteEditorParameters) = this()
   }
   
   @JSGlobal("ymaps.control.RulerControl")
   @js.native
-  class RulerControl ()
+  open class RulerControl ()
     extends typings.yandexMaps.mod.control.RulerControl {
     def this(parameters: IRulerControlParameters) = this()
   }
   
   @JSGlobal("ymaps.control.SearchControl")
   @js.native
-  class SearchControl ()
+  open class SearchControl ()
     extends typings.yandexMaps.mod.control.SearchControl {
     def this(parameters: ISearchControlParameters) = this()
   }
   
   @JSGlobal("ymaps.control.TypeSelector")
   @js.native
-  class TypeSelector ()
+  open class TypeSelector ()
     extends typings.yandexMaps.mod.control.TypeSelector {
     def this(parameters: ITypeSelectorParameters) = this()
   }
   
   @JSGlobal("ymaps.control.ZoomControl")
   @js.native
-  class ZoomControl ()
+  open class ZoomControl ()
     extends typings.yandexMaps.mod.control.ZoomControl {
     def this(parameters: IZoomControlParameters) = this()
   }

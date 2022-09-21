@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Web.Http
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.System.Diagnostics.ProcessDiagnosticInfo
@@ -49,7 +48,7 @@ object Diagnostics {
     var initiator: HttpDiagnosticRequestInitiator = js.native
     
     /* CompleteClass */
-    var processId: js.Any = js.native
+    var processId: Any = js.native
     
     /* unmapped type */
     /** Gets the URI of the requested response. */
@@ -57,11 +56,11 @@ object Diagnostics {
     var requestedUri: Uri = js.native
     
     /* CompleteClass */
-    var sourceLocations: js.Any = js.native
+    var sourceLocations: Any = js.native
     
     /* unmapped type */
     /* CompleteClass */
-    var threadId: js.Any = js.native
+    var threadId: Any = js.native
     
     /* unmapped type */
     /** Gets the timestamp for connection events. */
@@ -78,39 +77,39 @@ object Diagnostics {
     
     /** Gets the last time local cache was checked. */
     /* CompleteClass */
-    var cacheCheckedTimestamp: Date = js.native
+    var cacheCheckedTimestamp: js.Date = js.native
     
     /** Gets the timestamp for the end of the TCP connection phase. */
     /* CompleteClass */
-    var connectionCompletedTimestamp: Date = js.native
+    var connectionCompletedTimestamp: js.Date = js.native
     
     /** Gets the timestamp for the start of the TCP connection phase. */
     /* CompleteClass */
-    var connectionInitiatedTimestamp: Date = js.native
+    var connectionInitiatedTimestamp: js.Date = js.native
     
     /** Gets the time of the DNS name resolution. */
     /* CompleteClass */
-    var nameResolvedTimestamp: Date = js.native
+    var nameResolvedTimestamp: js.Date = js.native
     
     /** Gets the timestamp for the last byte sent. */
     /* CompleteClass */
-    var requestCompletedTimestamp: Date = js.native
+    var requestCompletedTimestamp: js.Date = js.native
     
     /** Gets the timestamp for the first byte sent. */
     /* CompleteClass */
-    var requestSentTimestamp: Date = js.native
+    var requestSentTimestamp: js.Date = js.native
     
     /** Gets the timestamp for the last byte received. */
     /* CompleteClass */
-    var responseCompletedTimestamp: Date = js.native
+    var responseCompletedTimestamp: js.Date = js.native
     
     /** Gets the timestamp for the fir byte received. */
     /* CompleteClass */
-    var responseReceivedTimestamp: Date = js.native
+    var responseReceivedTimestamp: js.Date = js.native
     
     /** Gets the time of the SSL handshake negotiation. */
     /* CompleteClass */
-    var sslNegotiatedTimestamp: Date = js.native
+    var sslNegotiatedTimestamp: js.Date = js.native
   }
   
   /** Provides data for the RequestSent event. */
@@ -146,7 +145,7 @@ object Diagnostics {
     
     /** Gets the timestamp of when the HttpRequestMessage was sent. */
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   /** Provides data for the ResponseReceived event. */
@@ -166,7 +165,7 @@ object Diagnostics {
     
     /** Gets the timestamp of when the HttpResponseMessage was received. */
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   /** Provides the source of the request. */

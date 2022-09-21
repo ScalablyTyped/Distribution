@@ -1,9 +1,5 @@
 package typings.googleapis.classroomV1Mod.classroomV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,21 +9,12 @@ trait ParamsResourceCoursesStudentsCreate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Identifier of the course to create the student in. This identifier can be
-    * either the Classroom-assigned identifier or an alias.
+    * Identifier of the course to create the student in. This identifier can be either the Classroom-assigned identifier or an alias.
     */
   var courseId: js.UndefOr[String] = js.undefined
   
   /**
-    * Enrollment code of the course to create the student in. This code is
-    * required if userId corresponds to the requesting user; it may be omitted
-    * if the requesting user has administrative permissions to create students
-    * for any user.
+    * Enrollment code of the course to create the student in. This code is required if userId corresponds to the requesting user; it may be omitted if the requesting user has administrative permissions to create students for any user.
     */
   var enrollmentCode: js.UndefOr[String] = js.undefined
   
@@ -44,10 +31,6 @@ object ParamsResourceCoursesStudentsCreate {
   }
   
   extension [Self <: ParamsResourceCoursesStudentsCreate](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
     

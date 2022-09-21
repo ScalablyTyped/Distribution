@@ -17,7 +17,7 @@ object curMod {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
-  class ^ () extends CUR {
+  open class ^ () extends CUR {
     def this(options: ClientConfiguration) = this()
   }
   
@@ -58,6 +58,8 @@ object curMod {
   type AdditionalArtifact = _AdditionalArtifact | String
   
   type AdditionalArtifactList = js.Array[AdditionalArtifact]
+  
+  type BillingViewArn = String
   
   trait Blob extends StObject
   
@@ -253,7 +255,7 @@ object curMod {
       
       inline def setReportDefinitionsUndefined: Self = StObject.set(x, "ReportDefinitions", js.undefined)
       
-      inline def setReportDefinitionsVarargs(value: ReportDefinition*): Self = StObject.set(x, "ReportDefinitions", js.Array(value :_*))
+      inline def setReportDefinitionsVarargs(value: ReportDefinition*): Self = StObject.set(x, "ReportDefinitions", js.Array(value*))
     }
   }
   
@@ -320,6 +322,11 @@ object curMod {
       */
     var AdditionalSchemaElements: SchemaElementList
     
+    /**
+      *  The Amazon resource name of the billing view. You can get this value by using the billing view service public APIs. 
+      */
+    var BillingViewArn: js.UndefOr[typings.awsSdk.curMod.BillingViewArn] = js.undefined
+    
     var Compression: CompressionFormat
     
     var Format: ReportFormat
@@ -366,11 +373,15 @@ object curMod {
       
       inline def setAdditionalArtifactsUndefined: Self = StObject.set(x, "AdditionalArtifacts", js.undefined)
       
-      inline def setAdditionalArtifactsVarargs(value: AdditionalArtifact*): Self = StObject.set(x, "AdditionalArtifacts", js.Array(value :_*))
+      inline def setAdditionalArtifactsVarargs(value: AdditionalArtifact*): Self = StObject.set(x, "AdditionalArtifacts", js.Array(value*))
       
       inline def setAdditionalSchemaElements(value: SchemaElementList): Self = StObject.set(x, "AdditionalSchemaElements", value.asInstanceOf[js.Any])
       
-      inline def setAdditionalSchemaElementsVarargs(value: SchemaElement*): Self = StObject.set(x, "AdditionalSchemaElements", js.Array(value :_*))
+      inline def setAdditionalSchemaElementsVarargs(value: SchemaElement*): Self = StObject.set(x, "AdditionalSchemaElements", js.Array(value*))
+      
+      inline def setBillingViewArn(value: BillingViewArn): Self = StObject.set(x, "BillingViewArn", value.asInstanceOf[js.Any])
+      
+      inline def setBillingViewArnUndefined: Self = StObject.set(x, "BillingViewArn", js.undefined)
       
       inline def setCompression(value: CompressionFormat): Self = StObject.set(x, "Compression", value.asInstanceOf[js.Any])
       

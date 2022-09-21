@@ -14,7 +14,7 @@ trait AuthorizationData extends StObject {
   /**
     * The Unix time in seconds and milliseconds when the authorization token expires. Authorization tokens are valid for 12 hours.
     */
-  var expiresAt: js.UndefOr[ExpirationTimestamp] = js.undefined
+  var expiresAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The registry URL to use for this authorization token in a docker login command. The Amazon ECR registry URL format is https://aws_account_id.dkr.ecr.region.amazonaws.com. For example, https://012345678910.dkr.ecr.us-east-1.amazonaws.com.. 
@@ -34,7 +34,7 @@ object AuthorizationData {
     
     inline def setAuthorizationTokenUndefined: Self = StObject.set(x, "authorizationToken", js.undefined)
     
-    inline def setExpiresAt(value: ExpirationTimestamp): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+    inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
     
     inline def setExpiresAtUndefined: Self = StObject.set(x, "expiresAt", js.undefined)
     

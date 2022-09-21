@@ -5,7 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MultiSelectOptions extends StObject {
+trait MultiSelectOptions
+  extends StObject
+     with AllEditorOptions {
   
   var animation: js.UndefOr[Boolean | MultiSelectAnimation] = js.undefined
   
@@ -23,7 +25,7 @@ trait MultiSelectOptions extends StObject {
   
   var dataBound: js.UndefOr[js.Function1[/* e */ MultiSelectDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
   
   var dataTextField: js.UndefOr[String] = js.undefined
   
@@ -33,9 +35,13 @@ trait MultiSelectOptions extends StObject {
   
   var deselect: js.UndefOr[js.Function1[/* e */ MultiSelectDeselectEvent, Unit]] = js.undefined
   
+  var downArrow: js.UndefOr[Boolean] = js.undefined
+  
   var enable: js.UndefOr[Boolean] = js.undefined
   
   var enforceMinLength: js.UndefOr[Boolean] = js.undefined
+  
+  var fillMode: js.UndefOr[String] = js.undefined
   
   var filter: js.UndefOr[String] = js.undefined
   
@@ -71,13 +77,17 @@ trait MultiSelectOptions extends StObject {
   
   var popup: js.UndefOr[MultiSelectPopup] = js.undefined
   
+  var rounded: js.UndefOr[String] = js.undefined
+  
   var select: js.UndefOr[js.Function1[/* e */ MultiSelectSelectEvent, Unit]] = js.undefined
+  
+  var size: js.UndefOr[String] = js.undefined
   
   var tagMode: js.UndefOr[String] = js.undefined
   
   var tagTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
   
   var valuePrimitive: js.UndefOr[Boolean] = js.undefined
   
@@ -124,7 +134,7 @@ object MultiSelectOptions {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -144,6 +154,10 @@ object MultiSelectOptions {
     
     inline def setDeselectUndefined: Self = StObject.set(x, "deselect", js.undefined)
     
+    inline def setDownArrow(value: Boolean): Self = StObject.set(x, "downArrow", value.asInstanceOf[js.Any])
+    
+    inline def setDownArrowUndefined: Self = StObject.set(x, "downArrow", js.undefined)
+    
     inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
     inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
@@ -151,6 +165,10 @@ object MultiSelectOptions {
     inline def setEnforceMinLength(value: Boolean): Self = StObject.set(x, "enforceMinLength", value.asInstanceOf[js.Any])
     
     inline def setEnforceMinLengthUndefined: Self = StObject.set(x, "enforceMinLength", js.undefined)
+    
+    inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
+    
+    inline def setFillModeUndefined: Self = StObject.set(x, "fillMode", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
@@ -220,9 +238,17 @@ object MultiSelectOptions {
     
     inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
+    inline def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+    
     inline def setSelect(value: /* e */ MultiSelectSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setTagMode(value: String): Self = StObject.set(x, "tagMode", value.asInstanceOf[js.Any])
     
@@ -232,7 +258,7 @@ object MultiSelectOptions {
     
     inline def setTagTemplateUndefined: Self = StObject.set(x, "tagTemplate", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValuePrimitive(value: Boolean): Self = StObject.set(x, "valuePrimitive", value.asInstanceOf[js.Any])
     

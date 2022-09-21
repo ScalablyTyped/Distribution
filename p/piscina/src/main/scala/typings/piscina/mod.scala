@@ -1,11 +1,11 @@
 package typings.piscina
 
+import typings.node.workerThreadsMod.MessagePort
 import typings.node.workerThreadsMod.Worker
 import typings.piscina.commonMod.TaskQueue
 import typings.piscina.commonMod.Transferable
 import typings.piscina.piscinaStrings.abort
 import typings.piscina.piscinaStrings.auto
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,17 +14,19 @@ object mod {
   
   @JSImport("piscina", JSImport.Namespace)
   @js.native
-  class ^ () extends Piscina {
+  open class ^ () extends Piscina {
     def this(options: Options) = this()
   }
   @JSImport("piscina", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def move(`val`: js.typedarray.ArrayBuffer): js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | MessagePort | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | MessagePort | Transferable]
+  inline def move(`val`: js.typedarray.ArrayBufferView): js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | MessagePort | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | MessagePort | Transferable]
+  inline def move(`val`: MessagePort): js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | MessagePort | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | MessagePort | Transferable]
   /* static member */
-  inline def move(`val`: Transferable): ArrayBufferView | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferView | Transferable]
-  inline def move(`val`: TransferListItem): ArrayBufferView | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferView | Transferable]
-  inline def move(`val`: ArrayBufferView): ArrayBufferView | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferView | Transferable]
+  inline def move(`val`: Transferable): js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | MessagePort | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | MessagePort | Transferable]
+  inline def move(`val`: TransferListItem): js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | MessagePort | Transferable = ^.asInstanceOf[js.Dynamic].applyDynamic("move")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | MessagePort | Transferable]
   
   /* Rewritten from type alias, can be one of: 
     - typings.piscina.mod.AbortSignalEventTarget
@@ -36,17 +38,22 @@ object mod {
     extends StObject
        with AbortSignalAny {
     
+    @JSName("off")
+    def off_abort(name: abort, listener: js.Function0[Unit]): Unit
+    
     @JSName("once")
     def once_abort(name: abort, listener: js.Function0[Unit]): Unit
   }
   object AbortSignalEventEmitter {
     
-    inline def apply(once: (abort, js.Function0[Unit]) => Unit): AbortSignalEventEmitter = {
-      val __obj = js.Dynamic.literal(once = js.Any.fromFunction2(once))
+    inline def apply(off: (abort, js.Function0[Unit]) => Unit, once: (abort, js.Function0[Unit]) => Unit): AbortSignalEventEmitter = {
+      val __obj = js.Dynamic.literal(off = js.Any.fromFunction2(off), once = js.Any.fromFunction2(once))
       __obj.asInstanceOf[AbortSignalEventEmitter]
     }
     
     extension [Self <: AbortSignalEventEmitter](x: Self) {
+      
+      inline def setOff(value: (abort, js.Function0[Unit]) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
       inline def setOnce(value: (abort, js.Function0[Unit]) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
     }
@@ -63,6 +70,9 @@ object mod {
     def addEventListener_abort(name: abort, listener: js.Function0[Unit]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_abort(name: abort, listener: js.Function0[Unit], options: AbortSignalEventTargetAddOptions): Unit = js.native
+    
+    @JSName("removeEventListener")
+    def removeEventListener_abort(name: abort, listener: js.Function0[Unit]): Unit = js.native
   }
   
   trait AbortSignalEventTargetAddOptions extends StObject {
@@ -82,7 +92,7 @@ object mod {
     }
   }
   
-  type EnvSpecifier = js.Any
+  type EnvSpecifier = Any
   
   trait FilledOptions
     extends StObject
@@ -106,6 +116,9 @@ object mod {
     @JSName("minThreads")
     var minThreads_FilledOptions: Double
     
+    @JSName("name")
+    var name_FilledOptions: String
+    
     @JSName("niceIncrement")
     var niceIncrement_FilledOptions: Double
     
@@ -123,11 +136,12 @@ object mod {
       maxQueue: Double,
       maxThreads: Double,
       minThreads: Double,
+      name: String,
       niceIncrement: Double,
       taskQueue: TaskQueue,
       useAtomics: Boolean
     ): FilledOptions = {
-      val __obj = js.Dynamic.literal(concurrentTasksPerWorker = concurrentTasksPerWorker.asInstanceOf[js.Any], idleTimeout = idleTimeout.asInstanceOf[js.Any], maxQueue = maxQueue.asInstanceOf[js.Any], maxThreads = maxThreads.asInstanceOf[js.Any], minThreads = minThreads.asInstanceOf[js.Any], niceIncrement = niceIncrement.asInstanceOf[js.Any], taskQueue = taskQueue.asInstanceOf[js.Any], useAtomics = useAtomics.asInstanceOf[js.Any], filename = null)
+      val __obj = js.Dynamic.literal(concurrentTasksPerWorker = concurrentTasksPerWorker.asInstanceOf[js.Any], idleTimeout = idleTimeout.asInstanceOf[js.Any], maxQueue = maxQueue.asInstanceOf[js.Any], maxThreads = maxThreads.asInstanceOf[js.Any], minThreads = minThreads.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], niceIncrement = niceIncrement.asInstanceOf[js.Any], taskQueue = taskQueue.asInstanceOf[js.Any], useAtomics = useAtomics.asInstanceOf[js.Any], filename = null)
       __obj.asInstanceOf[FilledOptions]
     }
     
@@ -146,6 +160,8 @@ object mod {
       inline def setMaxThreads(value: Double): Self = StObject.set(x, "maxThreads", value.asInstanceOf[js.Any])
       
       inline def setMinThreads(value: Double): Self = StObject.set(x, "minThreads", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNiceIncrement(value: Double): Self = StObject.set(x, "niceIncrement", value.asInstanceOf[js.Any])
       
@@ -175,15 +191,19 @@ object mod {
     
     var minThreads: js.UndefOr[Double] = js.undefined
     
+    var name: js.UndefOr[String] = js.undefined
+    
     var niceIncrement: js.UndefOr[Double] = js.undefined
     
     var resourceLimits: js.UndefOr[ResourceLimits] = js.undefined
     
     var taskQueue: js.UndefOr[TaskQueue] = js.undefined
     
+    var trackUnmanagedFds: js.UndefOr[Boolean] = js.undefined
+    
     var useAtomics: js.UndefOr[Boolean] = js.undefined
     
-    var workerData: js.UndefOr[js.Any] = js.undefined
+    var workerData: js.UndefOr[Any] = js.undefined
   }
   object Options {
     
@@ -198,7 +218,7 @@ object mod {
       
       inline def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
       
-      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value*))
       
       inline def setConcurrentTasksPerWorker(value: Double): Self = StObject.set(x, "concurrentTasksPerWorker", value.asInstanceOf[js.Any])
       
@@ -212,7 +232,7 @@ object mod {
       
       inline def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
       
-      inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value :_*))
+      inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value*))
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -236,6 +256,10 @@ object mod {
       
       inline def setMinThreadsUndefined: Self = StObject.set(x, "minThreads", js.undefined)
       
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
       inline def setNiceIncrement(value: Double): Self = StObject.set(x, "niceIncrement", value.asInstanceOf[js.Any])
       
       inline def setNiceIncrementUndefined: Self = StObject.set(x, "niceIncrement", js.undefined)
@@ -248,11 +272,15 @@ object mod {
       
       inline def setTaskQueueUndefined: Self = StObject.set(x, "taskQueue", js.undefined)
       
+      inline def setTrackUnmanagedFds(value: Boolean): Self = StObject.set(x, "trackUnmanagedFds", value.asInstanceOf[js.Any])
+      
+      inline def setTrackUnmanagedFdsUndefined: Self = StObject.set(x, "trackUnmanagedFds", js.undefined)
+      
       inline def setUseAtomics(value: Boolean): Self = StObject.set(x, "useAtomics", value.asInstanceOf[js.Any])
       
       inline def setUseAtomicsUndefined: Self = StObject.set(x, "useAtomics", js.undefined)
       
-      inline def setWorkerData(value: js.Any): Self = StObject.set(x, "workerData", value.asInstanceOf[js.Any])
+      inline def setWorkerData(value: Any): Self = StObject.set(x, "workerData", value.asInstanceOf[js.Any])
       
       inline def setWorkerDataUndefined: Self = StObject.set(x, "workerData", js.undefined)
     }
@@ -270,47 +298,83 @@ object mod {
     
     def options: FilledOptions = js.native
     
-    /* private */ var `private`: js.Any = js.native
+    /* private */ var `private`: Any = js.native
     
     def queueSize: Double = js.native
     
-    def runTask(task: js.Any): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: String): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: String, filename: String): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: String, filename: String, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: String, filename: Unit, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: String, filename: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: String, filename: AbortSignalAny, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: Unit, filename: String): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: Unit, filename: String, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: Unit, filename: Unit, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: Unit, filename: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: Unit, filename: AbortSignalAny, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: AbortSignalAny, filename: String): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: AbortSignalAny, filename: String, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: AbortSignalAny, filename: Unit, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: AbortSignalAny, filename: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: AbortSignalAny, filename: AbortSignalAny, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: TransferList): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: TransferList, filename: String): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: TransferList, filename: String, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: TransferList, filename: Unit, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: TransferList, filename: AbortSignalAny): js.Promise[js.Any] = js.native
-    def runTask(task: js.Any, transferList: TransferList, filename: AbortSignalAny, abortSignal: AbortSignalAny): js.Promise[js.Any] = js.native
+    def run(task: Any): js.Promise[Any] = js.native
+    def run(task: Any, options: RunOptions): js.Promise[Any] = js.native
     
-    def runTime: js.Any = js.native
+    /** @deprecated Use run(task, options) instead **/
+    def runTask(task: Any): js.Promise[Any] = js.native
+    def runTask(task: Any, transferList: String): js.Promise[Any] = js.native
+    def runTask(task: Any, transferList: String, filename: AbortSignalAny): js.Promise[Any] = js.native
+    def runTask(task: Any, transferList: Unit, filename: String): js.Promise[Any] = js.native
+    def runTask(task: Any, transferList: Unit, filename: String, abortSignal: AbortSignalAny): js.Promise[Any] = js.native
+    def runTask(task: Any, transferList: Unit, filename: Unit, abortSignal: AbortSignalAny): js.Promise[Any] = js.native
+    def runTask(task: Any, transferList: Unit, filename: AbortSignalAny): js.Promise[Any] = js.native
+    def runTask(task: Any, transferList: AbortSignalAny): js.Promise[Any] = js.native
+    def runTask(task: Any, transferList: TransferList): js.Promise[Any] = js.native
+    def runTask(task: Any, transferList: TransferList, filename: String): js.Promise[Any] = js.native
+    def runTask(task: Any, transferList: TransferList, filename: String, abortSignal: AbortSignalAny): js.Promise[Any] = js.native
+    def runTask(task: Any, transferList: TransferList, filename: Unit, abortSignal: AbortSignalAny): js.Promise[Any] = js.native
+    def runTask(task: Any, transferList: TransferList, filename: AbortSignalAny): js.Promise[Any] = js.native
+    
+    def runTime: Any = js.native
     
     def threads: js.Array[Worker] = js.native
     
     def utilization: Double = js.native
     
-    def waitTime: js.Any = js.native
+    def waitTime: Any = js.native
   }
   
   type ResourceLimits = js.Object
   
-  type TransferList = js.Any
+  trait RunOptions extends StObject {
+    
+    var filename: js.UndefOr[String | Null] = js.undefined
+    
+    var name: js.UndefOr[String | Null] = js.undefined
+    
+    var signal: js.UndefOr[AbortSignalAny | Null] = js.undefined
+    
+    var transferList: js.UndefOr[TransferList] = js.undefined
+  }
+  object RunOptions {
+    
+    inline def apply(): RunOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RunOptions]
+    }
+    
+    extension [Self <: RunOptions](x: Self) {
+      
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setFilenameNull: Self = StObject.set(x, "filename", null)
+      
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameNull: Self = StObject.set(x, "name", null)
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setSignal(value: AbortSignalAny): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalNull: Self = StObject.set(x, "signal", null)
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      
+      inline def setTransferList(value: TransferList): Self = StObject.set(x, "transferList", value.asInstanceOf[js.Any])
+      
+      inline def setTransferListUndefined: Self = StObject.set(x, "transferList", js.undefined)
+    }
+  }
   
-  type TransferListItem = js.Any
+  type TransferList = Any
+  
+  type TransferListItem = Any
 }

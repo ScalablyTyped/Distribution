@@ -6,13 +6,12 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.react.mod.ErrorInfo
+import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactInstance
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.react.mod.ValidationMap
 import typings.recompose.anon.Children
-import typings.std.Error
 import typings.std.Exclude
 import typings.std.Partial
 import typings.std.Pick
@@ -28,68 +27,68 @@ object mod {
   
   inline def branch[TOutter](
     test: predicate[TOutter],
-    trueEnhancer: (ComponentEnhancer[js.Any, js.Any]) | InferableComponentEnhancer[js.Object]
-  ): ComponentEnhancer[js.Any, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("branch")(test.asInstanceOf[js.Any], trueEnhancer.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[js.Any, TOutter]]
+    trueEnhancer: (ComponentEnhancer[Any, Any]) | InferableComponentEnhancer[js.Object]
+  ): ComponentEnhancer[Any, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("branch")(test.asInstanceOf[js.Any], trueEnhancer.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[Any, TOutter]]
   inline def branch[TOutter](
     test: predicate[TOutter],
-    trueEnhancer: (ComponentEnhancer[js.Any, js.Any]) | InferableComponentEnhancer[js.Object],
-    falseEnhancer: (ComponentEnhancer[js.Any, js.Any]) | InferableComponentEnhancer[js.Object]
-  ): ComponentEnhancer[js.Any, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("branch")(test.asInstanceOf[js.Any], trueEnhancer.asInstanceOf[js.Any], falseEnhancer.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[js.Any, TOutter]]
+    trueEnhancer: (ComponentEnhancer[Any, Any]) | InferableComponentEnhancer[js.Object],
+    falseEnhancer: (ComponentEnhancer[Any, Any]) | InferableComponentEnhancer[js.Object]
+  ): ComponentEnhancer[Any, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("branch")(test.asInstanceOf[js.Any], trueEnhancer.asInstanceOf[js.Any], falseEnhancer.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[Any, TOutter]]
   
-  inline def componentFromProp(propName: String): StatelessComponent[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFromProp")(propName.asInstanceOf[js.Any]).asInstanceOf[StatelessComponent[js.Any]]
+  inline def componentFromProp(propName: String): FunctionComponent[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFromProp")(propName.asInstanceOf[js.Any]).asInstanceOf[FunctionComponent[Any]]
   
   inline def componentFromStream[TProps](propsToReactNode: mapper[Subscribable[TProps], Subscribable[ReactNode]]): ComponentType[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFromStream")(propsToReactNode.asInstanceOf[js.Any]).asInstanceOf[ComponentType[TProps]]
   
   inline def componentFromStreamWithConfig(config: ObservableConfig): js.Function1[
-    /* propsToReactNode */ mapper[Subscribable[js.Any], Subscribable[ReactNode]], 
-    ComponentType[js.Any]
+    /* propsToReactNode */ mapper[Subscribable[Any], Subscribable[ReactNode]], 
+    ComponentType[Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFromStreamWithConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* propsToReactNode */ mapper[Subscribable[js.Any], Subscribable[ReactNode]], 
-    ComponentType[js.Any]
+    /* propsToReactNode */ mapper[Subscribable[Any], Subscribable[ReactNode]], 
+    ComponentType[Any]
   ]]
   
-  inline def compose[TInner, TOutter](functions: js.Function*): ComponentEnhancer[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(functions.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[TInner, TOutter]]
+  inline def compose[TInner, TOutter](functions: js.Function*): ComponentEnhancer[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(functions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ComponentEnhancer[TInner, TOutter]]
   
   inline def createEagerElement(`type`: String): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   inline def createEagerElement(`type`: String, props: js.Object): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   inline def createEagerElement(`type`: String, props: js.Object, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   inline def createEagerElement(`type`: String, props: Unit, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  inline def createEagerElement(`type`: ComponentType[js.Any]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-  inline def createEagerElement(`type`: ComponentType[js.Any], props: js.Object): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  inline def createEagerElement(`type`: ComponentType[js.Any], props: js.Object, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  inline def createEagerElement(`type`: ComponentType[js.Any], props: Unit, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def createEagerElement(`type`: ComponentType[Any]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def createEagerElement(`type`: ComponentType[Any], props: js.Object): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def createEagerElement(`type`: ComponentType[Any], props: js.Object, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def createEagerElement(`type`: ComponentType[Any], props: Unit, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   
   inline def createEagerFactory(`type`: String): componentFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[componentFactory]
-  inline def createEagerFactory(`type`: ComponentType[js.Any]): componentFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[componentFactory]
+  inline def createEagerFactory(`type`: ComponentType[Any]): componentFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[componentFactory]
   
   inline def createEventHandler[T, TSubs /* <: Subscribable[T] */](): EventHandlerOf[T, TSubs] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventHandler")().asInstanceOf[EventHandlerOf[T, TSubs]]
   
-  inline def createEventHandlerWithConfig(config: ObservableConfig): js.Function0[EventHandlerOf[js.Any, Subscribable[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventHandlerWithConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[EventHandlerOf[js.Any, Subscribable[js.Any]]]]
+  inline def createEventHandlerWithConfig(config: ObservableConfig): js.Function0[EventHandlerOf[Any, Subscribable[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventHandlerWithConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[EventHandlerOf[Any, Subscribable[Any]]]]
   
-  inline def createSink(callback: js.Function1[/* props */ js.Object, Unit]): ComponentClass[js.Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSink")(callback.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Any, ComponentState]]
+  inline def createSink(callback: js.Function1[/* props */ js.Object, Unit]): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSink")(callback.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[Any, ComponentState]]
   
   inline def defaultProps[T](props: T): DefaultingInferableComponentEnhancer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProps")(props.asInstanceOf[js.Any]).asInstanceOf[DefaultingInferableComponentEnhancer[T]]
   
-  inline def flattenProp(propName: String): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenProp")(propName.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
+  inline def flattenProp(propName: String): ComponentEnhancer[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenProp")(propName.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[Any, Any]]
   
   inline def fromRenderProps[TInner, TOutter, TRenderProps](
-    RenderPropsComponent: ComponentType[js.Any],
+    RenderPropsComponent: ComponentType[Any],
     propsMapper: js.Function1[/* props */ TRenderProps, TInner]
   ): ComponentEnhancer[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRenderProps")(RenderPropsComponent.asInstanceOf[js.Any], propsMapper.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[TInner & TOutter, TOutter]]
   inline def fromRenderProps[TInner, TOutter, TRenderProps](
-    RenderPropsComponent: ComponentType[js.Any],
+    RenderPropsComponent: ComponentType[Any],
     propsMapper: js.Function1[/* props */ TRenderProps, TInner],
     renderPropName: String
   ): ComponentEnhancer[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRenderProps")(RenderPropsComponent.asInstanceOf[js.Any], propsMapper.asInstanceOf[js.Any], renderPropName.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[TInner & TOutter, TOutter]]
   
   inline def getContext[TContext](contextTypes: ValidationMap[TContext]): InferableComponentEnhancer[TContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(contextTypes.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[TContext]]
   
-  inline def getDisplayName(component: ComponentType[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(component.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDisplayName(component: ComponentType[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(component.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def hoistStatics[TProps](hoc: InferableComponentEnhancer[TProps]): InferableComponentEnhancer[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("hoistStatics")(hoc.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[TProps]]
   inline def hoistStatics[TProps](hoc: InferableComponentEnhancer[TProps], blacklist: StringDictionary[Boolean]): InferableComponentEnhancer[TProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistStatics")(hoc.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancer[TProps]]
   
-  inline def isClassComponent(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClassComponent")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isClassComponent(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClassComponent")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def lifecycle[TProps, TState, TInstance](spec: (ReactLifeCycleFunctions[TProps, TState, TInstance]) & TInstance): InferableComponentEnhancer[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("lifecycle")(spec.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[js.Object]]
   
@@ -98,14 +97,14 @@ object mod {
   inline def mapPropsStream[TInner, TOutter](transform: mapper[Subscribable[TOutter], Subscribable[TInner]]): ComponentEnhancer[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapPropsStream")(transform.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[TInner, TOutter]]
   
   inline def mapPropsStreamWithConfig(config: ObservableConfig): js.Function1[
-    /* transform */ mapper[Subscribable[js.Any], Subscribable[js.Any]], 
-    ComponentEnhancer[js.Any, js.Any]
+    /* transform */ mapper[Subscribable[Any], Subscribable[Any]], 
+    ComponentEnhancer[Any, Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapPropsStreamWithConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* transform */ mapper[Subscribable[js.Any], Subscribable[js.Any]], 
-    ComponentEnhancer[js.Any, js.Any]
+    /* transform */ mapper[Subscribable[Any], Subscribable[Any]], 
+    ComponentEnhancer[Any, Any]
   ]]
   
-  inline def nest(Components: (String | ComponentType[js.Any])*): ComponentClass[js.Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("nest")(Components.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Any, ComponentState]]
+  inline def nest(Components: (String | ComponentType[Any])*): ComponentClass[Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("nest")(Components.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ComponentClass[Any, ComponentState]]
   
   inline def onlyUpdateForKeys(propKeys: js.Array[String]): InferableComponentEnhancer[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyUpdateForKeys")(propKeys.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[js.Object]]
   
@@ -117,24 +116,24 @@ object mod {
   
   inline def pure[TProps](component: ComponentType[TProps]): ComponentType[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("pure")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[TProps]]
   
-  inline def renameProp(outterName: String, innerName: String): ComponentEnhancer[js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("renameProp")(outterName.asInstanceOf[js.Any], innerName.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
+  inline def renameProp(outterName: String, innerName: String): ComponentEnhancer[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("renameProp")(outterName.asInstanceOf[js.Any], innerName.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[Any, Any]]
   
-  inline def renameProps(nameMap: NameMap): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renameProps")(nameMap.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
+  inline def renameProps(nameMap: NameMap): ComponentEnhancer[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renameProps")(nameMap.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[Any, Any]]
   
-  inline def renderComponent[TProps](component: String): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderComponent")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
-  inline def renderComponent[TProps](component: ComponentType[TProps]): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderComponent")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
+  inline def renderComponent[TProps](component: String): ComponentEnhancer[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderComponent")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[Any, Any]]
+  inline def renderComponent[TProps](component: ComponentType[TProps]): ComponentEnhancer[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderComponent")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[Any, Any]]
   
   @JSImport("recompose", "renderNothing")
   @js.native
   val renderNothing: InferableComponentEnhancer[js.Object] = js.native
   
-  inline def setDisplayName(displayName: String): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayName")(displayName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
+  inline def setDisplayName(displayName: String): js.Function1[/* component */ ComponentType[Any], ComponentType[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayName")(displayName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]]
   
   inline def setObservableConfig(config: ObservableConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setObservableConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setPropTypes[P](propTypes: ValidationMap[P]): js.Function1[/* component */ ComponentType[P], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setPropTypes")(propTypes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P], ComponentType[P]]]
   
-  inline def setStatic(key: String, value: js.Any): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatic")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
+  inline def setStatic(key: String, value: Any): js.Function1[/* component */ ComponentType[Any], ComponentType[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatic")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* component */ ComponentType[Any], ComponentType[Any]]]
   
   inline def shallowEqual(a: js.Object, b: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -144,9 +143,9 @@ object mod {
   @js.native
   val toClass: InferableComponentEnhancer[js.Object] = js.native
   
-  inline def toRenderProps[TInner, TOutter](hoc: InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]): StatelessComponent[TOutter & Children[TInner]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRenderProps")(hoc.asInstanceOf[js.Any]).asInstanceOf[StatelessComponent[TOutter & Children[TInner]]]
+  inline def toRenderProps[TInner, TOutter](hoc: InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]): FunctionComponent[TOutter & Children[TInner]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRenderProps")(hoc.asInstanceOf[js.Any]).asInstanceOf[FunctionComponent[TOutter & Children[TInner]]]
   
-  inline def withContext[TContext, TProps](childContextTypes: ValidationMap[TContext], getChildContext: mapper[TProps, js.Any]): InferableComponentEnhancer[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("withContext")(childContextTypes.asInstanceOf[js.Any], getChildContext.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancer[js.Object]]
+  inline def withContext[TContext, TProps](childContextTypes: ValidationMap[TContext], getChildContext: mapper[TProps, Any]): InferableComponentEnhancer[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("withContext")(childContextTypes.asInstanceOf[js.Any], getChildContext.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancer[js.Object]]
   
   inline def withHandlers[TOutter, THandlers](handlerCreators: HandleCreators[TOutter, THandlers]): InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("withHandlers")(handlerCreators.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter]]
   inline def withHandlers[TOutter, THandlers](handlerCreators: HandleCreatorsFactory[TOutter, THandlers]): InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("withHandlers")(handlerCreators.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter]]
@@ -176,7 +175,7 @@ object mod {
   inline def withStateHandlers[TState, TUpdaters /* <: StateHandlerMap[TState] */, TOutter](createProps: TState, stateUpdaters: StateUpdaters[TOutter, TState, TUpdaters]): InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStateHandlers")(createProps.asInstanceOf[js.Any], stateUpdaters.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter]]
   inline def withStateHandlers[TState, TUpdaters /* <: StateHandlerMap[TState] */, TOutter](createProps: mapper[TOutter, TState], stateUpdaters: StateUpdaters[TOutter, TState, TUpdaters]): InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStateHandlers")(createProps.asInstanceOf[js.Any], stateUpdaters.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter]]
   
-  inline def wrapDisplayName(component: ComponentType[js.Any], wrapperName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapDisplayName")(component.asInstanceOf[js.Any], wrapperName.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def wrapDisplayName(component: ComponentType[Any], wrapperName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapDisplayName")(component.asInstanceOf[js.Any], wrapperName.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type ComponentEnhancer[TInner, TOutter] = js.Function1[/* component */ ComponentType[TInner], ComponentClass[TOutter, ComponentState]]
   
@@ -235,9 +234,9 @@ object mod {
   // setObservableConfig: https://github.com/acdlite/recompose/blob/master/docs/API.md#setObservableConfig
   trait ObservableConfig extends StObject {
     
-    var fromESObservable: js.UndefOr[js.Function1[/* observable */ Subscribable[js.Any], js.Any]] = js.undefined
+    var fromESObservable: js.UndefOr[js.Function1[/* observable */ Subscribable[Any], Any]] = js.undefined
     
-    var toESObservable: js.UndefOr[js.Function1[/* stream */ js.Any, Subscribable[js.Any]]] = js.undefined
+    var toESObservable: js.UndefOr[js.Function1[/* stream */ Any, Subscribable[Any]]] = js.undefined
   }
   object ObservableConfig {
     
@@ -248,11 +247,11 @@ object mod {
     
     extension [Self <: ObservableConfig](x: Self) {
       
-      inline def setFromESObservable(value: /* observable */ Subscribable[js.Any] => js.Any): Self = StObject.set(x, "fromESObservable", js.Any.fromFunction1(value))
+      inline def setFromESObservable(value: /* observable */ Subscribable[Any] => Any): Self = StObject.set(x, "fromESObservable", js.Any.fromFunction1(value))
       
       inline def setFromESObservableUndefined: Self = StObject.set(x, "fromESObservable", js.undefined)
       
-      inline def setToESObservable(value: /* stream */ js.Any => Subscribable[js.Any]): Self = StObject.set(x, "toESObservable", js.Any.fromFunction1(value))
+      inline def setToESObservable(value: /* stream */ Any => Subscribable[Any]): Self = StObject.set(x, "toESObservable", js.Any.fromFunction1(value))
       
       inline def setToESObservableUndefined: Self = StObject.set(x, "toESObservable", js.undefined)
     }
@@ -309,7 +308,7 @@ object mod {
     var componentDidCatch: js.UndefOr[
         js.ThisFunction2[
           /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
-          /* error */ Error, 
+          /* error */ js.Error, 
           /* info */ ErrorInfo, 
           Unit
         ]
@@ -374,7 +373,7 @@ object mod {
       inline def setComponentDidCatch(
         value: js.ThisFunction2[
               /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
-              /* error */ Error, 
+              /* error */ js.Error, 
               /* info */ ErrorInfo, 
               Unit
             ]
@@ -478,7 +477,7 @@ object mod {
   @js.native
   trait StateHandler[TState] extends StObject {
     
-    def apply(payload: js.Any*): js.UndefOr[Partial[TState]] = js.native
+    def apply(payload: Any*): js.UndefOr[Partial[TState]] = js.native
   }
   
   type StateHandlerMap[TState] = StringDictionary[StateHandler[TState]]
@@ -524,10 +523,10 @@ object mod {
   @js.native
   trait _ReactLifeCycleFunctionsThisArguments[TProps, TState] extends StObject {
     
-    var context: js.Any = js.native
+    var context: Any = js.native
     
     def forceUpdate(): Unit = js.native
-    def forceUpdate(callBack: js.Function0[js.Any]): Unit = js.native
+    def forceUpdate(callBack: js.Function0[Any]): Unit = js.native
     
     var props: TProps = js.native
     
@@ -536,10 +535,10 @@ object mod {
     def setState[TKeyOfState /* <: /* keyof TState */ String */](f: js.Function2[/* prevState */ TState, /* props */ TProps, Pick[TState, TKeyOfState]]): Unit = js.native
     def setState[TKeyOfState /* <: /* keyof TState */ String */](
       f: js.Function2[/* prevState */ TState, /* props */ TProps, Pick[TState, TKeyOfState]],
-      callback: js.Function0[js.Any]
+      callback: js.Function0[Any]
     ): Unit = js.native
     def setState[TKeyOfState /* <: /* keyof TState */ String */](state: Pick[TState, TKeyOfState]): Unit = js.native
-    def setState[TKeyOfState /* <: /* keyof TState */ String */](state: Pick[TState, TKeyOfState], callback: js.Function0[js.Any]): Unit = js.native
+    def setState[TKeyOfState /* <: /* keyof TState */ String */](state: Pick[TState, TKeyOfState], callback: js.Function0[Any]): Unit = js.native
     
     var state: TState = js.native
   }

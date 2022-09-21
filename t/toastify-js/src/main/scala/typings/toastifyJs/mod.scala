@@ -1,7 +1,8 @@
 package typings.toastifyJs
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.std.Element
 import typings.std.Node
-import typings.toastifyJs.anon.ShowToast
 import typings.toastifyJs.toastifyJsStrings.bottom
 import typings.toastifyJs.toastifyJsStrings.center
 import typings.toastifyJs.toastifyJsStrings.left
@@ -13,8 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): ShowToast = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ShowToast]
-  inline def apply(options: Options): ShowToast = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ShowToast]
+  inline def apply(): Toastify = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Toastify]
+  inline def apply(options: Options): Toastify = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Toastify]
   
   @JSImport("toastify-js", JSImport.Namespace)
   @js.native
@@ -50,6 +51,9 @@ object mod {
       */
     var avatar: js.UndefOr[String] = js.undefined
     
+    /**
+      * @deprecated use style.background option instead
+      */
     var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
@@ -65,6 +69,11 @@ object mod {
     
     var duration: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Toggle the default behavior of escaping HTML markup
+      */
+    var escapeMarkup: js.UndefOr[Boolean] = js.undefined
+    
     var gravity: js.UndefOr[top | bottom] = js.undefined
     
     var newWindow: js.UndefOr[Boolean] = js.undefined
@@ -73,16 +82,26 @@ object mod {
     
     var offset: js.UndefOr[Offset] = js.undefined
     
+    /**
+      * Set the order in which toasts are stacked in page
+      */
+    var oldestFirst: js.UndefOr[Boolean] = js.undefined
+    
     var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var position: js.UndefOr[left | center | right] = js.undefined
     
-    var selector: js.UndefOr[String] = js.undefined
+    var selector: js.UndefOr[String | Node] = js.undefined
     
     /**
       * @default true
       */
     var stopOnFocus: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * HTML DOM Style properties to add any style directly to toast
+      */
+    var style: js.UndefOr[StringDictionary[String]] = js.undefined
     
     var text: js.UndefOr[String] = js.undefined
   }
@@ -123,6 +142,10 @@ object mod {
       
       inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
+      inline def setEscapeMarkup(value: Boolean): Self = StObject.set(x, "escapeMarkup", value.asInstanceOf[js.Any])
+      
+      inline def setEscapeMarkupUndefined: Self = StObject.set(x, "escapeMarkup", js.undefined)
+      
       inline def setGravity(value: top | bottom): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
       
       inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
@@ -139,6 +162,10 @@ object mod {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
+      inline def setOldestFirst(value: Boolean): Self = StObject.set(x, "oldestFirst", value.asInstanceOf[js.Any])
+      
+      inline def setOldestFirstUndefined: Self = StObject.set(x, "oldestFirst", js.undefined)
+      
       inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
@@ -147,7 +174,7 @@ object mod {
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String | Node): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
       inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
@@ -155,9 +182,56 @@ object mod {
       
       inline def setStopOnFocusUndefined: Self = StObject.set(x, "stopOnFocus", js.undefined)
       
+      inline def setStyle(value: StringDictionary[String]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    }
+  }
+  
+  trait Toastify extends StObject {
+    
+    /**
+      * Hide the toast
+      */
+    def hideToast(): Unit
+    
+    /**
+      * The configuration object to configure Toastify
+      */
+    val options: Options
+    
+    /**
+      * Display the toast
+      */
+    def showToast(): Unit
+    
+    /**
+      * The element that is the Toast
+      */
+    val toastElement: Element | Null
+  }
+  object Toastify {
+    
+    inline def apply(hideToast: () => Unit, options: Options, showToast: () => Unit): Toastify = {
+      val __obj = js.Dynamic.literal(hideToast = js.Any.fromFunction0(hideToast), options = options.asInstanceOf[js.Any], showToast = js.Any.fromFunction0(showToast), toastElement = null)
+      __obj.asInstanceOf[Toastify]
+    }
+    
+    extension [Self <: Toastify](x: Self) {
+      
+      inline def setHideToast(value: () => Unit): Self = StObject.set(x, "hideToast", js.Any.fromFunction0(value))
+      
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      
+      inline def setShowToast(value: () => Unit): Self = StObject.set(x, "showToast", js.Any.fromFunction0(value))
+      
+      inline def setToastElement(value: Element): Self = StObject.set(x, "toastElement", value.asInstanceOf[js.Any])
+      
+      inline def setToastElementNull: Self = StObject.set(x, "toastElement", null)
     }
   }
 }

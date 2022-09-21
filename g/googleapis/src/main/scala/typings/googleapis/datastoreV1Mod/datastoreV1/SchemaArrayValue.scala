@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An array value.
-  */
 trait SchemaArrayValue extends StObject {
   
   /**
-    * Values in the array. The order of values in an array is preserved as long
-    * as all values have identical settings for &#39;exclude_from_indexes&#39;.
+    * Values in the array. The order of values in an array is preserved as long as all values have identical settings for 'exclude_from_indexes'.
     */
   var values: js.UndefOr[js.Array[SchemaValue]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaArrayValue {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: SchemaValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SchemaValue*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

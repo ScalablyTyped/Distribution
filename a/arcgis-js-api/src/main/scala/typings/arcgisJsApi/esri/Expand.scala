@@ -16,16 +16,27 @@ trait Expand
   /**
     * Automatically collapses the expand widget instance when the view's viewpoint updates.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#autoCollapse)
     */
   var autoCollapse: Boolean = js.native
+  
+  /**
+    * When true, the Expand widget will close after the Escape key is pressed when the keyboard focus is within its content.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#closeOnEsc)
+    */
+  var closeOnEsc: Boolean | js.Function = js.native
   
   /**
     * Collapse the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#collapse)
     */
-  def collapse(): Unit = js.native
+  def collapse(): scala.Unit = js.native
   
   /**
     * Icon font used to style the Expand button.
@@ -36,6 +47,8 @@ trait Expand
   
   /**
     * Tooltip to display to indicate Expand widget can be collapsed.
+    *
+    * @default "Collapse" (English locale)
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#collapseTooltip)
     */
@@ -53,7 +66,7 @@ trait Expand
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expand)
     */
-  def expand(): Unit = js.native
+  def expand(): scala.Unit = js.native
   
   /**
     * Icon font used to style the Expand button.
@@ -65,12 +78,16 @@ trait Expand
   /**
     * Tooltip to display to indicate Expand widget can be expanded.
     *
+    * @default "Expand" (English locale)
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expandTooltip)
     */
   var expandTooltip: String = js.native
   
   /**
     * Indicates whether the widget is currently expanded or not.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expanded)
     */
@@ -93,6 +110,8 @@ trait Expand
   /**
     * The mode in which the widget displays.
     *
+    * @default "auto"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#mode)
     */
   var mode: auto | floating | drawer = js.native
@@ -102,7 +121,7 @@ trait Expand
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#toggle)
     */
-  def toggle(): Unit = js.native
+  def toggle(): scala.Unit = js.native
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).

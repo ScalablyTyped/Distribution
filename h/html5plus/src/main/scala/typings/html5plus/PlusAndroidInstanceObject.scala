@@ -19,8 +19,8 @@ trait PlusAndroidInstanceObject extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/android.html](http://www.html5plus.org/doc/zh_cn/android.html)
     */
-  def plusGetAttribute(): js.Any = js.native
-  def plusGetAttribute(name: String): js.Any = js.native
+  def plusGetAttribute(): Any = js.native
+  def plusGetAttribute(name: String): Any = js.native
   
   /**
     * 设置Java实例对象的属性
@@ -29,6 +29,6 @@ trait PlusAndroidInstanceObject extends StObject {
     */
   def plusSetAttribute(): Unit = js.native
   def plusSetAttribute(name: String): Unit = js.native
-  def plusSetAttribute(name: String, value: js.Any): Unit = js.native
-  def plusSetAttribute(name: Unit, value: js.Any): Unit = js.native
+  def plusSetAttribute(name: String, value: Any): Unit = js.native
+  def plusSetAttribute(name: Unit, value: Any): Unit = js.native
 }

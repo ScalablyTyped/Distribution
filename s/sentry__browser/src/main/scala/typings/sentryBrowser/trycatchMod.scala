@@ -10,30 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object trycatchMod {
   
-  @JSImport("@sentry/browser/dist/integrations/trycatch", "TryCatch")
+  @JSImport("@sentry/browser/types/integrations/trycatch", "TryCatch")
   @js.native
   /**
     * @inheritDoc
     */
-  class TryCatch ()
+  open class TryCatch ()
     extends StObject
        with Integration {
     def this(options: PartialTryCatchOptions) = this()
     
     /** JSDoc */
-    /* private */ val _options: js.Any = js.native
-    
-    /** JSDoc */
-    /* private */ var _wrapEventTarget: js.Any = js.native
-    
-    /** JSDoc */
-    /* private */ var _wrapRAF: js.Any = js.native
-    
-    /** JSDoc */
-    /* private */ var _wrapTimeFunction: js.Any = js.native
-    
-    /** JSDoc */
-    /* private */ var _wrapXHR: js.Any = js.native
+    /* private */ val _options: Any = js.native
     
     /**
       * Returns {@link IntegrationClass.id}
@@ -59,14 +47,14 @@ object trycatchMod {
   /* static members */
   object TryCatch {
     
-    @JSImport("@sentry/browser/dist/integrations/trycatch", "TryCatch")
+    @JSImport("@sentry/browser/types/integrations/trycatch", "TryCatch")
     @js.native
     val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    @JSImport("@sentry/browser/dist/integrations/trycatch", "TryCatch.id")
+    @JSImport("@sentry/browser/types/integrations/trycatch", "TryCatch.id")
     @js.native
     def id: String = js.native
     inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
@@ -102,7 +90,7 @@ object trycatchMod {
       
       inline def setEventTarget(value: Boolean | js.Array[String]): Self = StObject.set(x, "eventTarget", value.asInstanceOf[js.Any])
       
-      inline def setEventTargetVarargs(value: String*): Self = StObject.set(x, "eventTarget", js.Array(value :_*))
+      inline def setEventTargetVarargs(value: String*): Self = StObject.set(x, "eventTarget", js.Array(value*))
       
       inline def setRequestAnimationFrame(value: Boolean): Self = StObject.set(x, "requestAnimationFrame", value.asInstanceOf[js.Any])
       

@@ -10,15 +10,12 @@ easily add a modal to your angular app
 | ------------------ | :-------------: |
 | Full name          | angular-modal |
 | Keywords           | angular, angularjs, modal |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 48044 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1704.0 |
+| # stars            | 234.0 |
 
 ## Links
-- [Homepage](https://github.com/btford/angular-modal)
-- [Bugs](https://github.com/btford/angular-modal/issues)
-- [Repository](https://github.com/btford/angular-modal)
 - [Npm](https://www.npmjs.com/package/angular-modal)
     
 

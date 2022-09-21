@@ -59,6 +59,10 @@ object tensorflowTfjsStrings {
   inline def complex64: complex64 = "complex64".asInstanceOf[complex64]
   
   @js.native
+  sealed trait constant extends StObject
+  inline def constant: constant = "constant".asInstanceOf[constant]
+  
+  @js.native
   sealed trait euclidean extends StObject
   inline def euclidean: euclidean = "euclidean".asInstanceOf[euclidean]
   
@@ -79,6 +83,10 @@ object tensorflowTfjsStrings {
   inline def int32: int32 = "int32".asInstanceOf[int32]
   
   @js.native
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
+  
+  @js.native
   sealed trait max extends StObject
   inline def max: max = "max".asInstanceOf[max]
   
@@ -89,6 +97,10 @@ object tensorflowTfjsStrings {
   @js.native
   sealed trait reflect extends StObject
   inline def reflect: reflect = "reflect".asInstanceOf[reflect]
+  
+  @js.native
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait round extends StObject
@@ -109,4 +121,8 @@ object tensorflowTfjsStrings {
   @js.native
   sealed trait valid extends StObject
   inline def valid: valid = "valid".asInstanceOf[valid]
+  
+  @js.native
+  sealed trait wrap extends StObject
+  inline def wrap: wrap = "wrap".asInstanceOf[wrap]
 }

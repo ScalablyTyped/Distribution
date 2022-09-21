@@ -57,7 +57,7 @@ object Place {
     
     inline def setContained_within(value: js.Array[Place]): Self = StObject.set(x, "contained_within", value.asInstanceOf[js.Any])
     
-    inline def setContained_withinVarargs(value: Place*): Self = StObject.set(x, "contained_within", js.Array(value :_*))
+    inline def setContained_withinVarargs(value: Place*): Self = StObject.set(x, "contained_within", js.Array(value*))
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

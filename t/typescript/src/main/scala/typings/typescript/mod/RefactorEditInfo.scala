@@ -31,11 +31,11 @@ object RefactorEditInfo {
     
     inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
-    inline def setCommandsVarargs(value: CodeActionCommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: CodeActionCommand*): Self = StObject.set(x, "commands", js.Array(value*))
     
     inline def setEdits(value: js.Array[FileTextChanges]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     
-    inline def setEditsVarargs(value: FileTextChanges*): Self = StObject.set(x, "edits", js.Array(value :_*))
+    inline def setEditsVarargs(value: FileTextChanges*): Self = StObject.set(x, "edits", js.Array(value*))
     
     inline def setRenameFilename(value: java.lang.String): Self = StObject.set(x, "renameFilename", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.Rectangle")
 @js.native
-class Rectangle ()
+open class Rectangle ()
   extends StObject
      with typings.navermaps.naver.maps.Rectangle {
   def this(options: RectangleOptions) = this()

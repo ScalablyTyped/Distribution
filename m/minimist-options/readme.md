@@ -10,10 +10,10 @@ Pretty options for minimist
 | ------------------ | :-------------: |
 | Full name          | minimist-options |
 | Keywords           | minimist, argv, args |
-| # releases         | 4 |
-| # dependents       | 61 |
-| # downloads        | 242529193 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.7217211666666664E7 |
+| # stars            | 54.0 |
 
 ## Links
 - [Homepage](https://github.com/vadimdemedes/minimist-options#readme)

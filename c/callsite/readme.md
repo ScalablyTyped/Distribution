@@ -10,10 +10,10 @@ access to v8's CallSites
 | ------------------ | :-------------: |
 | Full name          | callsite |
 | Keywords           | stack, trace, line |
-| # releases         | 0 |
-| # dependents       | 384 |
-| # downloads        | 195463572 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0354048666666666E7 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/callsite)

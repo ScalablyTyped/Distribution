@@ -9,7 +9,7 @@ trait EffectivePolicy extends StObject {
   /**
     * The time of the last update to this policy.
     */
-  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The text content of the policy.
@@ -35,7 +35,7 @@ object EffectivePolicy {
   
   extension [Self <: EffectivePolicy](x: Self) {
     
-    inline def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
     

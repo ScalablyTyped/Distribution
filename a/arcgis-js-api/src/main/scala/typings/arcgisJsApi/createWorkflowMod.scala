@@ -22,7 +22,7 @@ object createWorkflowMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-CreateWorkflow.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with CreateWorkflow {
     def this(properties: CreateWorkflowProperties) = this()

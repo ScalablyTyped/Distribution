@@ -12,7 +12,7 @@ trait NodegroupResources extends StObject {
   var autoScalingGroups: js.UndefOr[AutoScalingGroupList] = js.undefined
   
   /**
-    * The remote access security group associated with the node group. This security group controls SSH access to the worker nodes.
+    * The remote access security group associated with the node group. This security group controls SSH access to the nodes.
     */
   var remoteAccessSecurityGroup: js.UndefOr[String] = js.undefined
 }
@@ -29,7 +29,7 @@ object NodegroupResources {
     
     inline def setAutoScalingGroupsUndefined: Self = StObject.set(x, "autoScalingGroups", js.undefined)
     
-    inline def setAutoScalingGroupsVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "autoScalingGroups", js.Array(value :_*))
+    inline def setAutoScalingGroupsVarargs(value: AutoScalingGroup*): Self = StObject.set(x, "autoScalingGroups", js.Array(value*))
     
     inline def setRemoteAccessSecurityGroup(value: String): Self = StObject.set(x, "remoteAccessSecurityGroup", value.asInstanceOf[js.Any])
     

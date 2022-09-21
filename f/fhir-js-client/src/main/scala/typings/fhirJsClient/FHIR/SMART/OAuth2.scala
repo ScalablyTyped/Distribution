@@ -16,7 +16,7 @@ trait OAuth2 extends StObject {
     * @param errback Method which is triggered when an error occurs during the OAuth2 authorization workflow
     */
   def authorize(params: OAuth2Configuration): Unit = js.native
-  def authorize(params: OAuth2Configuration, errback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def authorize(params: OAuth2Configuration, errback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
   
   /**
     * Handles the OAuth2 redirect
@@ -28,9 +28,9 @@ trait OAuth2 extends StObject {
   def ready(callback: js.Function1[/* smart */ SMARTClient, Unit]): Unit = js.native
   def ready(
     callback: js.Function1[/* smart */ SMARTClient, Unit],
-    errback: js.Function1[/* repeated */ js.Any, Unit]
+    errback: js.Function1[/* repeated */ Any, Unit]
   ): Unit = js.native
-  def ready(callback: Unit, errback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def ready(callback: Unit, errback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
   
   /**
     * Resolves the Authorization type of the FHIR server. Can be used to identify if a server supports SMART on FHIR.

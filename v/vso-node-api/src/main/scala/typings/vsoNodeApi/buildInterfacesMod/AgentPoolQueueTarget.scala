@@ -13,7 +13,7 @@ trait AgentPoolQueueTarget
     */
   var allowScriptsAuthAccessOption: Boolean
   
-  var demands: js.Array[js.Any]
+  var demands: js.Array[Any]
   
   /**
     * The execution options.
@@ -29,7 +29,7 @@ object AgentPoolQueueTarget {
   
   inline def apply(
     allowScriptsAuthAccessOption: Boolean,
-    demands: js.Array[js.Any],
+    demands: js.Array[Any],
     executionOptions: AgentTargetExecutionOptions,
     queue: AgentPoolQueue,
     `type`: Double
@@ -43,9 +43,9 @@ object AgentPoolQueueTarget {
     
     inline def setAllowScriptsAuthAccessOption(value: Boolean): Self = StObject.set(x, "allowScriptsAuthAccessOption", value.asInstanceOf[js.Any])
     
-    inline def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    inline def setDemands(value: js.Array[Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
-    inline def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
+    inline def setDemandsVarargs(value: Any*): Self = StObject.set(x, "demands", js.Array(value*))
     
     inline def setExecutionOptions(value: AgentTargetExecutionOptions): Self = StObject.set(x, "executionOptions", value.asInstanceOf[js.Any])
     

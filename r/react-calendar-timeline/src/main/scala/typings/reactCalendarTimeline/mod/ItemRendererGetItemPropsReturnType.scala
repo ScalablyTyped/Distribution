@@ -33,7 +33,7 @@ trait ItemRendererGetItemPropsReturnType extends StObject {
   
   var onTouchStart: TouchEventHandler[Element]
   
-  var ref: Ref[js.Any]
+  var ref: Ref[Any]
   
   var style: CSSProperties
 }
@@ -72,9 +72,9 @@ object ItemRendererGetItemPropsReturnType {
     
     inline def setOnTouchStart(value: TouchEvent[Element] => scala.Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
     
-    inline def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setRefFunction1(value: /* instance */ js.Any | Null => scala.Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRefFunction1(value: /* instance */ Any | Null => scala.Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     inline def setRefNull: Self = StObject.set(x, "ref", null)
     

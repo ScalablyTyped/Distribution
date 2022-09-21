@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.InverseChi2")
 @js.native
-class InverseChi2 ()
+open class InverseChi2 ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[InverseChi] {
   def this(nu: Double) = this()

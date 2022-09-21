@@ -2,8 +2,6 @@ package typings.moxios
 
 import typings.axios.mod.AxiosInstance
 import typings.axios.mod.AxiosRequestConfig
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +38,7 @@ object mod {
     * @param response The response to use when a match is made
     */
   inline def stubFailure(method: String, urlOrRegExp: String, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubFailure")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def stubFailure(method: String, urlOrRegExp: RegExp, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubFailure")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def stubFailure(method: String, urlOrRegExp: js.RegExp, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubFailure")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Stub a response to be used one or more times to respond to a request matching a
@@ -51,8 +49,17 @@ object mod {
     * @param response The response to use when a match is made
     */
   inline def stubOnce(method: String, urlOrRegExp: String, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubOnce")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def stubOnce(method: String, urlOrRegExp: RegExp, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubOnce")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def stubOnce(method: String, urlOrRegExp: js.RegExp, response: Item): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("stubOnce")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
+  /**
+    * Stub a response to be used to respond to a request matching a URL or RegExp
+    *
+    * @param method An axios command
+    * @param urlOrRegExp A URL or RegExp to test against
+    * @param response The response to use when a match is made
+    */
+  inline def stubRequest(method: String, urlOrRegExp: String, response: Item): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stubRequest")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stubRequest(method: String, urlOrRegExp: js.RegExp, response: Item): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stubRequest")(method.asInstanceOf[js.Any], urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Stub a response to be used to respond to a request matching a URL or RegExp
     *
@@ -60,7 +67,7 @@ object mod {
     * @param response The response to use when a match is made
     */
   inline def stubRequest(urlOrRegExp: String, response: Item): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stubRequest")(urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def stubRequest(urlOrRegExp: RegExp, response: Item): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stubRequest")(urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stubRequest(urlOrRegExp: js.RegExp, response: Item): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stubRequest")(urlOrRegExp.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Stub a timeout to be used to respond to a request matching a URL or RegExp
@@ -68,7 +75,7 @@ object mod {
     * @param urlOrRegExp A URL or RegExp to test against
     */
   inline def stubTimeout(urlOrRegExp: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stubTimeout")(urlOrRegExp.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def stubTimeout(urlOrRegExp: RegExp): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stubTimeout")(urlOrRegExp.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stubTimeout(urlOrRegExp: js.RegExp): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stubTimeout")(urlOrRegExp.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("moxios", "stubs")
   @js.native
@@ -77,8 +84,8 @@ object mod {
   
   @JSImport("moxios", "timeoutException")
   @js.native
-  def timeoutException: Error = js.native
-  inline def timeoutException_=(x: Error): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeoutException")(x.asInstanceOf[js.Any])
+  def timeoutException: js.Error = js.native
+  inline def timeoutException_=(x: js.Error): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeoutException")(x.asInstanceOf[js.Any])
   
   /**
     * Uninstall the mock adapter and reset state
@@ -108,9 +115,9 @@ object mod {
   
   trait Item extends StObject {
     
-    var headers: js.UndefOr[js.Any] = js.undefined
+    var headers: js.UndefOr[Any] = js.undefined
     
-    var response: js.UndefOr[js.Any] = js.undefined
+    var response: js.UndefOr[Any] = js.undefined
     
     var responseText: js.UndefOr[String] = js.undefined
     
@@ -127,11 +134,11 @@ object mod {
     
     extension [Self <: Item](x: Self) {
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
       inline def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
       
@@ -151,9 +158,9 @@ object mod {
   
   trait Request extends StObject {
     
-    var config: AxiosRequestConfig
+    var config: AxiosRequestConfig[Any]
     
-    var headers: js.Any
+    var headers: Any
     
     /**
       * Respond to this request with a specified result
@@ -181,8 +188,8 @@ object mod {
   object Request {
     
     inline def apply(
-      config: AxiosRequestConfig,
-      headers: js.Any,
+      config: AxiosRequestConfig[Any],
+      headers: Any,
       respondWith: Item => js.Promise[Response],
       respondWithTimeout: () => js.Promise[Response],
       responseType: String,
@@ -196,9 +203,9 @@ object mod {
     
     extension [Self <: Request](x: Self) {
       
-      inline def setConfig(value: AxiosRequestConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: AxiosRequestConfig[Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setRespondWith(value: Item => js.Promise[Response]): Self = StObject.set(x, "respondWith", js.Any.fromFunction1(value))
       
@@ -218,11 +225,11 @@ object mod {
     
     var code: js.UndefOr[String] = js.undefined
     
-    var config: AxiosRequestConfig
+    var config: AxiosRequestConfig[Any]
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
-    var headers: js.Any
+    var headers: Any
     
     var request: Request
     
@@ -232,7 +239,7 @@ object mod {
   }
   object Response {
     
-    inline def apply(config: AxiosRequestConfig, headers: js.Any, request: Request): Response = {
+    inline def apply(config: AxiosRequestConfig[Any], headers: Any, request: Request): Response = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
@@ -243,13 +250,13 @@ object mod {
       
       inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      inline def setConfig(value: AxiosRequestConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: AxiosRequestConfig[Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       

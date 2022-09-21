@@ -12,7 +12,7 @@ trait ApplePayPaymentToken extends StObject {
   /**
     * An object containing the encrypted payment data.
     */
-  var paymentData: js.Any
+  var paymentData: Any
   
   /**
     * Information about the card used in the transaction.
@@ -26,14 +26,14 @@ trait ApplePayPaymentToken extends StObject {
 }
 object ApplePayPaymentToken {
   
-  inline def apply(paymentData: js.Any, paymentMethod: ApplePayPaymentMethod, transactionIdentifier: String): ApplePayPaymentToken = {
+  inline def apply(paymentData: Any, paymentMethod: ApplePayPaymentMethod, transactionIdentifier: String): ApplePayPaymentToken = {
     val __obj = js.Dynamic.literal(paymentData = paymentData.asInstanceOf[js.Any], paymentMethod = paymentMethod.asInstanceOf[js.Any], transactionIdentifier = transactionIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePayPaymentToken]
   }
   
   extension [Self <: ApplePayPaymentToken](x: Self) {
     
-    inline def setPaymentData(value: js.Any): Self = StObject.set(x, "paymentData", value.asInstanceOf[js.Any])
+    inline def setPaymentData(value: Any): Self = StObject.set(x, "paymentData", value.asInstanceOf[js.Any])
     
     inline def setPaymentMethod(value: ApplePayPaymentMethod): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     

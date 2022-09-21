@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateAccountCustomizationResponse extends StObject {
   
   /**
-    * The QuickSight customizations you're adding in the current AWS Region. 
+    * The Amazon QuickSight customizations you're adding in the current Amazon Web Services Region. 
     */
   var AccountCustomization: js.UndefOr[typings.awsSdk.quicksightMod.AccountCustomization] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) for the customization that you created for this AWS account.
+    * The Amazon Resource Name (ARN) for the customization that you created for this Amazon Web Services account.
     */
   var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
-    * The ID for the AWS account that you want to customize QuickSight for.
+    * The ID for the Amazon Web Services account that you want to customize Amazon QuickSight for.
     */
   var AwsAccountId: js.UndefOr[typings.awsSdk.quicksightMod.AwsAccountId] = js.undefined
   
@@ -27,7 +27,7 @@ trait CreateAccountCustomizationResponse extends StObject {
   var Namespace: js.UndefOr[typings.awsSdk.quicksightMod.Namespace] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   

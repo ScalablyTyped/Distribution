@@ -18,9 +18,9 @@ trait State extends StObject {
   
   var modifiersData: Dictkey
   
-  var options: OptionsGeneric[js.Any]
+  var options: OptionsGeneric[Any]
   
-  var orderedModifiers: js.Array[Modifier[js.Any, js.Any]]
+  var orderedModifiers: js.Array[Modifier[Any, Any]]
   
   var placement: Placement
   
@@ -40,8 +40,8 @@ object State {
     attributes: StringDictionary[StringDictionary[String | Boolean]],
     elements: Arrow,
     modifiersData: Dictkey,
-    options: OptionsGeneric[js.Any],
-    orderedModifiers: js.Array[Modifier[js.Any, js.Any]],
+    options: OptionsGeneric[Any],
+    orderedModifiers: js.Array[Modifier[Any, Any]],
     placement: Placement,
     rects: StateRects,
     reset: Boolean,
@@ -61,11 +61,11 @@ object State {
     
     inline def setModifiersData(value: Dictkey): Self = StObject.set(x, "modifiersData", value.asInstanceOf[js.Any])
     
-    inline def setOptions(value: OptionsGeneric[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: OptionsGeneric[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOrderedModifiers(value: js.Array[Modifier[js.Any, js.Any]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
+    inline def setOrderedModifiers(value: js.Array[Modifier[Any, Any]]): Self = StObject.set(x, "orderedModifiers", value.asInstanceOf[js.Any])
     
-    inline def setOrderedModifiersVarargs(value: (Modifier[js.Any, js.Any])*): Self = StObject.set(x, "orderedModifiers", js.Array(value :_*))
+    inline def setOrderedModifiersVarargs(value: (Modifier[Any, Any])*): Self = StObject.set(x, "orderedModifiers", js.Array(value*))
     
     inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     

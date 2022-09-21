@@ -17,6 +17,11 @@ trait MemberConfiguration extends StObject {
   var FrameworkConfiguration: MemberFrameworkConfiguration
   
   /**
+    * The Amazon Resource Name (ARN) of the customer managed key in AWS Key Management Service (AWS KMS) to use for encryption at rest in the member. This parameter is inherited by any nodes that this member creates. Use one of the following options to specify this parameter:    Undefined or empty string - The member uses an AWS owned KMS key for encryption by default.    A valid symmetric customer managed KMS key - The member uses the specified key for encryption. Amazon Managed Blockchain doesn't support asymmetric keys. For more information, see Using symmetric and asymmetric keys in the AWS Key Management Service Developer Guide. The following is an example of a KMS key ARN: arn:aws:kms:us-east-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab   
+    */
+  var KmsKeyArn: js.UndefOr[ArnString] = js.undefined
+  
+  /**
     * Configuration properties for logging events associated with a member of a Managed Blockchain network.
     */
   var LogPublishingConfiguration: js.UndefOr[MemberLogPublishingConfiguration] = js.undefined
@@ -25,6 +30,11 @@ trait MemberConfiguration extends StObject {
     * The name of the member.
     */
   var Name: NetworkMemberNameString
+  
+  /**
+    * Tags assigned to the member. Tags consist of a key and optional value. For more information about tags, see Tagging Resources in the Amazon Managed Blockchain Hyperledger Fabric Developer Guide. When specifying tags during creation, you can specify multiple key-value pairs in a single request, with an overall maximum of 50 tags added to each resource.
+    */
+  var Tags: js.UndefOr[InputTagMap] = js.undefined
 }
 object MemberConfiguration {
   
@@ -41,10 +51,18 @@ object MemberConfiguration {
     
     inline def setFrameworkConfiguration(value: MemberFrameworkConfiguration): Self = StObject.set(x, "FrameworkConfiguration", value.asInstanceOf[js.Any])
     
+    inline def setKmsKeyArn(value: ArnString): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
+    
     inline def setLogPublishingConfiguration(value: MemberLogPublishingConfiguration): Self = StObject.set(x, "LogPublishingConfiguration", value.asInstanceOf[js.Any])
     
     inline def setLogPublishingConfigurationUndefined: Self = StObject.set(x, "LogPublishingConfiguration", js.undefined)
     
     inline def setName(value: NetworkMemberNameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: InputTagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

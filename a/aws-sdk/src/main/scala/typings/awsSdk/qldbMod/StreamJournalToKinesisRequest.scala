@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StreamJournalToKinesisRequest extends StObject {
   
   /**
-    * The exclusive date and time that specifies when the stream ends. If you don't define this parameter, the stream runs indefinitely until you cancel it. The ExclusiveEndTime must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: 2019-06-13T21:36:34Z 
+    * The exclusive date and time that specifies when the stream ends. If you don't define this parameter, the stream runs indefinitely until you cancel it. The ExclusiveEndTime must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: 2019-06-13T21:36:34Z.
     */
-  var ExclusiveEndTime: js.UndefOr[Timestamp] = js.undefined
+  var ExclusiveEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The inclusive start date and time from which to start streaming journal data. This parameter must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: 2019-06-13T21:36:34Z  The InclusiveStartTime cannot be in the future and must be before ExclusiveEndTime. If you provide an InclusiveStartTime that is before the ledger's CreationDateTime, QLDB effectively defaults it to the ledger's CreationDateTime.
+    * The inclusive start date and time from which to start streaming journal data. This parameter must be in ISO 8601 date and time format and in Universal Coordinated Time (UTC). For example: 2019-06-13T21:36:34Z. The InclusiveStartTime cannot be in the future and must be before ExclusiveEndTime. If you provide an InclusiveStartTime that is before the ledger's CreationDateTime, QLDB effectively defaults it to the ledger's CreationDateTime.
     */
-  var InclusiveStartTime: Timestamp
+  var InclusiveStartTime: js.Date
   
   /**
     * The configuration settings of the Kinesis Data Streams destination for your stream request.
@@ -27,7 +27,7 @@ trait StreamJournalToKinesisRequest extends StObject {
   var LedgerName: typings.awsSdk.qldbMod.LedgerName
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role that grants QLDB permissions for a journal stream to write data records to a Kinesis Data Streams resource.
+    * The Amazon Resource Name (ARN) of the IAM role that grants QLDB permissions for a journal stream to write data records to a Kinesis Data Streams resource. To pass a role to QLDB when requesting a journal stream, you must have permissions to perform the iam:PassRole action on the IAM role resource. This is required for all journal stream requests.
     */
   var RoleArn: Arn
   
@@ -44,7 +44,7 @@ trait StreamJournalToKinesisRequest extends StObject {
 object StreamJournalToKinesisRequest {
   
   inline def apply(
-    InclusiveStartTime: Timestamp,
+    InclusiveStartTime: js.Date,
     KinesisConfiguration: KinesisConfiguration,
     LedgerName: LedgerName,
     RoleArn: Arn,
@@ -56,11 +56,11 @@ object StreamJournalToKinesisRequest {
   
   extension [Self <: StreamJournalToKinesisRequest](x: Self) {
     
-    inline def setExclusiveEndTime(value: Timestamp): Self = StObject.set(x, "ExclusiveEndTime", value.asInstanceOf[js.Any])
+    inline def setExclusiveEndTime(value: js.Date): Self = StObject.set(x, "ExclusiveEndTime", value.asInstanceOf[js.Any])
     
     inline def setExclusiveEndTimeUndefined: Self = StObject.set(x, "ExclusiveEndTime", js.undefined)
     
-    inline def setInclusiveStartTime(value: Timestamp): Self = StObject.set(x, "InclusiveStartTime", value.asInstanceOf[js.Any])
+    inline def setInclusiveStartTime(value: js.Date): Self = StObject.set(x, "InclusiveStartTime", value.asInstanceOf[js.Any])
     
     inline def setKinesisConfiguration(value: KinesisConfiguration): Self = StObject.set(x, "KinesisConfiguration", value.asInstanceOf[js.Any])
     

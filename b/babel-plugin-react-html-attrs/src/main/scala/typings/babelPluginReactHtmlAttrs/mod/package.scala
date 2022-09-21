@@ -1,425 +1,209 @@
 package typings.babelPluginReactHtmlAttrs.mod
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.TopLevel
+import typings.babelPluginReactHtmlAttrs.anon.Default
+import typings.babelPluginReactHtmlAttrs.anon.`1`
+import typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.input
+import typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.mount
+import typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.ref
+import typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.update
+import typings.babelPluginReactHtmlAttrs.mod.^
+import typings.csstype.mod.Properties
+import typings.propTypes.mod.InferProps
+import typings.std.Element
+import typings.std.Event
+import typings.std.EventTarget
+import typings.std.Exclude
+import typings.std.Extract
+import typings.std.HTMLElement
+import typings.std.HTMLInputElement
+import typings.std.InstanceType
+import typings.std.Partial
+import typings.std.Pick
+import typings.std.SVGElement
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def Children: typings.babelPluginReactHtmlAttrs.mod.ReactChildren = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Children").asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactChildren]
+inline def Children: ReactChildren = ^.asInstanceOf[js.Dynamic].selectDynamic("Children").asInstanceOf[ReactChildren]
 
-inline def Fragment: typings.babelPluginReactHtmlAttrs.mod.ExoticComponent[typings.babelPluginReactHtmlAttrs.anon.Children] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Fragment").asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ExoticComponent[typings.babelPluginReactHtmlAttrs.anon.Children]]
+inline def Fragment: ExoticComponent[typings.babelPluginReactHtmlAttrs.anon.Children] = ^.asInstanceOf[js.Dynamic].selectDynamic("Fragment").asInstanceOf[ExoticComponent[typings.babelPluginReactHtmlAttrs.anon.Children]]
 
-inline def Profiler: typings.babelPluginReactHtmlAttrs.mod.ExoticComponent[typings.babelPluginReactHtmlAttrs.mod.ProfilerProps] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Profiler").asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ExoticComponent[typings.babelPluginReactHtmlAttrs.mod.ProfilerProps]]
+inline def Profiler: ExoticComponent[ProfilerProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Profiler").asInstanceOf[ExoticComponent[ProfilerProps]]
 
-inline def StrictMode: typings.babelPluginReactHtmlAttrs.mod.ExoticComponent[typings.babelPluginReactHtmlAttrs.anon.Children] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("StrictMode").asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ExoticComponent[typings.babelPluginReactHtmlAttrs.anon.Children]]
+inline def StrictMode: ExoticComponent[typings.babelPluginReactHtmlAttrs.anon.Children] = ^.asInstanceOf[js.Dynamic].selectDynamic("StrictMode").asInstanceOf[ExoticComponent[typings.babelPluginReactHtmlAttrs.anon.Children]]
 
 /**
   * This feature is not yet available for server-side rendering.
   * Suspense support will be added in a later release.
   */
-inline def Suspense: typings.babelPluginReactHtmlAttrs.mod.ExoticComponent[typings.babelPluginReactHtmlAttrs.mod.SuspenseProps] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Suspense").asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ExoticComponent[typings.babelPluginReactHtmlAttrs.mod.SuspenseProps]]
+inline def Suspense: ExoticComponent[SuspenseProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("Suspense").asInstanceOf[ExoticComponent[SuspenseProps]]
 
-inline def SuspenseList: typings.babelPluginReactHtmlAttrs.mod.ExoticComponent[
-typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListProps] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SuspenseList").asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ExoticComponent[
+inline def SuspenseList: ExoticComponent[
+typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("SuspenseList").asInstanceOf[ExoticComponent[
 typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListProps]]
 
 // Custom components
+inline def cloneElement[P](element: FunctionComponentElement[P], props: Partial[P] & Attributes, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
+inline def cloneElement[P](element: FunctionComponentElement[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
 inline def cloneElement[P](
-  element: typings.babelPluginReactHtmlAttrs.mod.FunctionComponentElement[P],
-  props: typings.std.Partial[P] & typings.babelPluginReactHtmlAttrs.mod.Attributes,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.FunctionComponentElement[P] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.FunctionComponentElement[P]]
-inline def cloneElement[P](
-  element: typings.babelPluginReactHtmlAttrs.mod.FunctionComponentElement[P],
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.FunctionComponentElement[P] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.FunctionComponentElement[P]]
-inline def cloneElement[P](
-  element: typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-  P, 
-  java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]
-],
-  props: typings.std.Partial[P] & typings.babelPluginReactHtmlAttrs.mod.Attributes,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]]]
-inline def cloneElement[P](
-  element: typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-  P, 
-  java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]
-],
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]]]
-inline def cloneElement[P, T /* <: typings.babelPluginReactHtmlAttrs.mod.Component[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState, js.Any] */](
-  element: typings.babelPluginReactHtmlAttrs.mod.CElement[P, T],
-  props: typings.std.Partial[P] & typings.babelPluginReactHtmlAttrs.mod.ClassAttributes[T],
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.CElement[P, T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.CElement[P, T]]
-inline def cloneElement[P, T /* <: typings.babelPluginReactHtmlAttrs.mod.Component[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState, js.Any] */](
-  element: typings.babelPluginReactHtmlAttrs.mod.CElement[P, T],
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.CElement[P, T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.CElement[P, T]]
+  element: ReactElement[P, String | JSXElementConstructor[Any]],
+  props: Partial[P] & Attributes,
+  children: ReactNode*
+): ReactElement[P, String | JSXElementConstructor[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement[P, String | JSXElementConstructor[Any]]]
+inline def cloneElement[P](element: ReactElement[P, String | JSXElementConstructor[Any]], props: Unit, children: ReactNode*): ReactElement[P, String | JSXElementConstructor[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement[P, String | JSXElementConstructor[Any]]]
+inline def cloneElement[P, T /* <: Component[P, ComponentState, Any] */](element: CElement[P, T], props: Partial[P] & ClassAttributes[T], children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[CElement[P, T]]
+inline def cloneElement[P, T /* <: Component[P, ComponentState, Any] */](element: CElement[P, T], props: Unit, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[CElement[P, T]]
 // DOM Element (has to be the last, because type checking stops at first overload that fits)
-inline def cloneElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.DOMAttributes[T] */, T /* <: typings.std.Element */](
-  element: typings.babelPluginReactHtmlAttrs.mod.DOMElement[P, T],
-  props: typings.babelPluginReactHtmlAttrs.mod.DOMAttributes[T] & P,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.DOMElement[P, T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.DOMElement[P, T]]
-inline def cloneElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.DOMAttributes[T] */, T /* <: typings.std.Element */](
-  element: typings.babelPluginReactHtmlAttrs.mod.DOMElement[P, T],
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.DOMElement[P, T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.DOMElement[P, T]]
+inline def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T], props: DOMAttributes[T] & P, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DOMElement[P, T]]
+inline def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T], props: Unit, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DOMElement[P, T]]
 // DOM Elements
 // ReactHTMLElement
-inline def cloneElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.HTMLAttributes[T] */, T /* <: typings.std.HTMLElement */](
-  element: typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[P, T],
-  props: P,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[P, T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[P, T]]
-inline def cloneElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.HTMLAttributes[T] */, T /* <: typings.std.HTMLElement */](
-  element: typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[P, T],
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[P, T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[P, T]]
+inline def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T], props: P, children: ReactNode*): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
+inline def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T], props: Unit, children: ReactNode*): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
 // SVGElement
-inline def cloneElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.SVGAttributes[T] */, T /* <: typings.std.SVGElement */](
-  element: typings.babelPluginReactHtmlAttrs.mod.ReactSVGElement,
-  props: P,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactSVGElement = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactSVGElement]
-inline def cloneElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.SVGAttributes[T] */, T /* <: typings.std.SVGElement */](
-  element: typings.babelPluginReactHtmlAttrs.mod.ReactSVGElement,
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactSVGElement = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactSVGElement]
+inline def cloneElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](element: ReactSVGElement, props: P, children: ReactNode*): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
+inline def cloneElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](element: ReactSVGElement, props: Unit, children: ReactNode*): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
 
 // ReactHTMLElement, less specific
-inline def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.HTMLAttributes[T] */, T /* <: typings.std.HTMLElement */](
-  element: typings.babelPluginReactHtmlAttrs.mod.ReactHTMLElement[T],
-  props: P,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactHTMLElement[T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactHTMLElement[T]]
-inline def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.HTMLAttributes[T] */, T /* <: typings.std.HTMLElement */](
-  element: typings.babelPluginReactHtmlAttrs.mod.ReactHTMLElement[T],
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactHTMLElement[T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactHTMLElement[T]]
+inline def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: P, children: ReactNode*): ReactHTMLElement[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactHTMLElement[T]]
+inline def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: Unit, children: ReactNode*): ReactHTMLElement[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")((List(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactHTMLElement[T]]
 
 inline def createContext[T](
   // If you thought this should be optional, see
 // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/24509#issuecomment-382213106
 defaultValue: T
-): typings.babelPluginReactHtmlAttrs.mod.Context[T] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.Context[T]]
+): Context[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[Context[T]]
 inline def createContext[T](
   // If you thought this should be optional, see
 // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/24509#issuecomment-382213106
 defaultValue: T,
-  calculateChangedBits: js.Function2[/* prev */ T, /* next */ T, scala.Double]
-): typings.babelPluginReactHtmlAttrs.mod.Context[T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(defaultValue.asInstanceOf[js.Any], calculateChangedBits.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.Context[T]]
+  calculateChangedBits: js.Function2[/* prev */ T, /* next */ T, Double]
+): Context[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(defaultValue.asInstanceOf[js.Any], calculateChangedBits.asInstanceOf[js.Any])).asInstanceOf[Context[T]]
 
+inline def createElement[P /* <: js.Object */](`type`: String, props: Attributes & P, children: ReactNode*): ReactElement[P, String | JSXElementConstructor[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement[P, String | JSXElementConstructor[Any]]]
+inline def createElement[P /* <: js.Object */](`type`: String, props: Null, children: ReactNode*): ReactElement[P, String | JSXElementConstructor[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement[P, String | JSXElementConstructor[Any]]]
+inline def createElement[P /* <: js.Object */](`type`: String, props: Unit, children: ReactNode*): ReactElement[P, String | JSXElementConstructor[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement[P, String | JSXElementConstructor[Any]]]
 inline def createElement[P /* <: js.Object */](
-  `type`: java.lang.String,
-  props: typings.babelPluginReactHtmlAttrs.mod.Attributes & P,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]]]
+  `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
+  props: (ClassAttributes[ClassicComponent[P, ComponentState]]) & P,
+  children: ReactNode*
+): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
 inline def createElement[P /* <: js.Object */](
-  `type`: java.lang.String,
-  props: scala.Null,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]]]
+  `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
+  props: Null,
+  children: ReactNode*
+): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
 inline def createElement[P /* <: js.Object */](
-  `type`: java.lang.String,
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]]]
-inline def createElement[P /* <: js.Object */](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.ClassType[
-  P, 
-  typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState], 
-  typings.babelPluginReactHtmlAttrs.mod.ClassicComponentClass[P]
-],
-  props: (typings.babelPluginReactHtmlAttrs.mod.ClassAttributes[
-  typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState]
-]) & P,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.CElement[
-P, 
-typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.CElement[
-P, 
-typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState]]]
-inline def createElement[P /* <: js.Object */](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.ClassType[
-  P, 
-  typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState], 
-  typings.babelPluginReactHtmlAttrs.mod.ClassicComponentClass[P]
-],
-  props: scala.Null,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.CElement[
-P, 
-typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.CElement[
-P, 
-typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState]]]
-inline def createElement[P /* <: js.Object */](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.ClassType[
-  P, 
-  typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState], 
-  typings.babelPluginReactHtmlAttrs.mod.ClassicComponentClass[P]
-],
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.CElement[
-P, 
-typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.CElement[
-P, 
-typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState]]]
-inline def createElement[P /* <: js.Object */](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.ComponentClass[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState],
-  props: typings.babelPluginReactHtmlAttrs.mod.Attributes & P,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]]]
-inline def createElement[P /* <: js.Object */](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.ComponentClass[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState],
-  props: scala.Null,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]]]
-inline def createElement[P /* <: js.Object */](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.ComponentClass[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState],
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]]]
+  `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
+  props: Unit,
+  children: ReactNode*
+): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
+inline def createElement[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Attributes & P, children: ReactNode*): ReactElement[P, String | JSXElementConstructor[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement[P, String | JSXElementConstructor[Any]]]
+inline def createElement[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Null, children: ReactNode*): ReactElement[P, String | JSXElementConstructor[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement[P, String | JSXElementConstructor[Any]]]
+inline def createElement[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Unit, children: ReactNode*): ReactElement[P, String | JSXElementConstructor[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement[P, String | JSXElementConstructor[Any]]]
 // Custom components
-inline def createElement[P /* <: js.Object */](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.FunctionComponent[P],
-  props: typings.babelPluginReactHtmlAttrs.mod.Attributes & P,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.FunctionComponentElement[P] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.FunctionComponentElement[P]]
-inline def createElement[P /* <: js.Object */](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.FunctionComponent[P],
-  props: scala.Null,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.FunctionComponentElement[P] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.FunctionComponentElement[P]]
-inline def createElement[P /* <: js.Object */](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.FunctionComponent[P],
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.FunctionComponentElement[P] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.FunctionComponentElement[P]]
-inline def createElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.HTMLAttributes[T] */, T /* <: typings.std.HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
-  props: typings.babelPluginReactHtmlAttrs.mod.ClassAttributes[T] & P,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[P, T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[P, T]]
-inline def createElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.HTMLAttributes[T] */, T /* <: typings.std.HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
-  props: scala.Null,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[P, T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[P, T]]
-inline def createElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.HTMLAttributes[T] */, T /* <: typings.std.HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[P, T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[P, T]]
-inline def createElement[P /* <: js.Object */, T /* <: typings.babelPluginReactHtmlAttrs.mod.Component[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState, js.Any] */, C /* <: typings.babelPluginReactHtmlAttrs.mod.ComponentClass[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState] */](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.ClassType[P, T, C],
-  props: typings.babelPluginReactHtmlAttrs.mod.ClassAttributes[T] & P,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.CElement[P, T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.CElement[P, T]]
-inline def createElement[P /* <: js.Object */, T /* <: typings.babelPluginReactHtmlAttrs.mod.Component[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState, js.Any] */, C /* <: typings.babelPluginReactHtmlAttrs.mod.ComponentClass[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState] */](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.ClassType[P, T, C],
-  props: scala.Null,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.CElement[P, T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.CElement[P, T]]
-inline def createElement[P /* <: js.Object */, T /* <: typings.babelPluginReactHtmlAttrs.mod.Component[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState, js.Any] */, C /* <: typings.babelPluginReactHtmlAttrs.mod.ComponentClass[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState] */](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.ClassType[P, T, C],
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.CElement[P, T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.CElement[P, T]]
+inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
+inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
+inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
+inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+  props: ClassAttributes[T] & P,
+  children: ReactNode*
+): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
+inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+  props: Null,
+  children: ReactNode*
+): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
+inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any,
+  props: Unit,
+  children: ReactNode*
+): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
 
-inline def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.DOMAttributes[T] */, T /* <: typings.std.Element */](
-  `type`: java.lang.String,
-  props: typings.babelPluginReactHtmlAttrs.mod.ClassAttributes[T] & P,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.DOMElement[P, T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.DOMElement[P, T]]
-inline def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.DOMAttributes[T] */, T /* <: typings.std.Element */](
-  `type`: java.lang.String,
-  props: scala.Null,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.DOMElement[P, T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.DOMElement[P, T]]
-inline def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.DOMAttributes[T] */, T /* <: typings.std.Element */](
-  `type`: java.lang.String,
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.DOMElement[P, T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.DOMElement[P, T]]
+inline def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] & P, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DOMElement[P, T]]
+inline def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Null, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DOMElement[P, T]]
+inline def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DOMElement[P, T]]
 
-inline def createElement_P_Object_ReactElement[P /* <: js.Object */](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.FunctionComponent[P],
-  props: typings.babelPluginReactHtmlAttrs.mod.Attributes & P,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]]]
-inline def createElement_P_Object_ReactElement[P /* <: js.Object */](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.FunctionComponent[P],
-  props: scala.Null,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]]]
-inline def createElement_P_Object_ReactElement[P /* <: js.Object */](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.FunctionComponent[P],
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-P, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]]]
+inline def createElement_P_ObjectT_ComponentPComponentStateAnyC_ComponentClassPComponentState_CElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] & P, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[CElement[P, T]]
+inline def createElement_P_ObjectT_ComponentPComponentStateAnyC_ComponentClassPComponentState_CElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[CElement[P, T]]
+inline def createElement_P_ObjectT_ComponentPComponentStateAnyC_ComponentClassPComponentState_CElement[P /* <: js.Object */, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Unit, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[CElement[P, T]]
 
-inline def createElement_P_SVGAttributesTT_SVGElement_ReactSVGElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.SVGAttributes[T] */, T /* <: typings.std.SVGElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
-  props: typings.babelPluginReactHtmlAttrs.mod.ClassAttributes[T] & P,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactSVGElement = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactSVGElement]
-inline def createElement_P_SVGAttributesTT_SVGElement_ReactSVGElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.SVGAttributes[T] */, T /* <: typings.std.SVGElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
-  props: scala.Null,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactSVGElement = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactSVGElement]
-inline def createElement_P_SVGAttributesTT_SVGElement_ReactSVGElement[P /* <: typings.babelPluginReactHtmlAttrs.mod.SVGAttributes[T] */, T /* <: typings.std.SVGElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.ReactSVGElement = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ReactSVGElement]
+inline def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): ReactElement[P, String | JSXElementConstructor[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement[P, String | JSXElementConstructor[Any]]]
+inline def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): ReactElement[P, String | JSXElementConstructor[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement[P, String | JSXElementConstructor[Any]]]
+inline def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): ReactElement[P, String | JSXElementConstructor[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactElement[P, String | JSXElementConstructor[Any]]]
+
+inline def createElement_P_SVGAttributesTT_SVGElement_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+  props: ClassAttributes[T] & P,
+  children: ReactNode*
+): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
+inline def createElement_P_SVGAttributesTT_SVGElement_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+  props: Null,
+  children: ReactNode*
+): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
+inline def createElement_P_SVGAttributesTT_SVGElement_ReactSVGElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any,
+  props: Unit,
+  children: ReactNode*
+): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ReactSVGElement]
 
 // DOM Elements
 // TODO: generalize this to everything in `keyof ReactHTML`, not just "input"
 inline def createElement_input(
-  `type`: typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.input,
-  props: typings.babelPluginReactHtmlAttrs.mod.InputHTMLAttributes[typings.std.HTMLInputElement] & typings.babelPluginReactHtmlAttrs.mod.ClassAttributes[typings.std.HTMLInputElement],
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[
-typings.babelPluginReactHtmlAttrs.mod.InputHTMLAttributes[typings.std.HTMLInputElement], 
-typings.std.HTMLInputElement] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[
-typings.babelPluginReactHtmlAttrs.mod.InputHTMLAttributes[typings.std.HTMLInputElement], 
-typings.std.HTMLInputElement]]
-inline def createElement_input(
-  `type`: typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.input,
-  props: scala.Null,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[
-typings.babelPluginReactHtmlAttrs.mod.InputHTMLAttributes[typings.std.HTMLInputElement], 
-typings.std.HTMLInputElement] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[
-typings.babelPluginReactHtmlAttrs.mod.InputHTMLAttributes[typings.std.HTMLInputElement], 
-typings.std.HTMLInputElement]]
-inline def createElement_input(
-  `type`: typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.input,
-  props: scala.Unit,
-  children: typings.babelPluginReactHtmlAttrs.mod.ReactNode*
-): typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[
-typings.babelPluginReactHtmlAttrs.mod.InputHTMLAttributes[typings.std.HTMLInputElement], 
-typings.std.HTMLInputElement] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[
-typings.babelPluginReactHtmlAttrs.mod.InputHTMLAttributes[typings.std.HTMLInputElement], 
-typings.std.HTMLInputElement]]
+  `type`: input,
+  props: InputHTMLAttributes[HTMLInputElement] & ClassAttributes[HTMLInputElement],
+  children: ReactNode*
+): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
+inline def createElement_input(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
+inline def createElement_input(`type`: input, props: Unit, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
 
-inline def createFactory(`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any): typings.babelPluginReactHtmlAttrs.mod.SVGFactory = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.SVGFactory]
-inline def createFactory[P](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.ClassType[
-  P, 
-  typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState], 
-  typings.babelPluginReactHtmlAttrs.mod.ClassicComponentClass[P]
-]
-): typings.babelPluginReactHtmlAttrs.mod.CFactory[
-P, 
-typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState]] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.CFactory[
-P, 
-typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState]]]
-inline def createFactory[P](
-  `type`: typings.babelPluginReactHtmlAttrs.mod.ComponentClass[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState]
-): typings.babelPluginReactHtmlAttrs.mod.Factory[P] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.Factory[P]]
+inline def createFactory(`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ Any): SVGFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[SVGFactory]
+inline def createFactory[P](`type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]]): CFactory[P, ClassicComponent[P, ComponentState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[CFactory[P, ClassicComponent[P, ComponentState]]]
+inline def createFactory[P](`type`: ComponentClass[P, ComponentState]): Factory[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[Factory[P]]
 // Custom components
-inline def createFactory[P](`type`: typings.babelPluginReactHtmlAttrs.mod.FunctionComponent[P]): typings.babelPluginReactHtmlAttrs.mod.FunctionComponentFactory[P] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.FunctionComponentFactory[P]]
-inline def createFactory[P /* <: typings.babelPluginReactHtmlAttrs.mod.DOMAttributes[T] */, T /* <: typings.std.Element */](`type`: java.lang.String): typings.babelPluginReactHtmlAttrs.mod.DOMFactory[P, T] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.DOMFactory[P, T]]
-inline def createFactory[P, T /* <: typings.babelPluginReactHtmlAttrs.mod.Component[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState, js.Any] */, C /* <: typings.babelPluginReactHtmlAttrs.mod.ComponentClass[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState] */](`type`: typings.babelPluginReactHtmlAttrs.mod.ClassType[P, T, C]): typings.babelPluginReactHtmlAttrs.mod.CFactory[P, T] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.CFactory[P, T]]
+inline def createFactory[P](`type`: FunctionComponent[P]): FunctionComponentFactory[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[FunctionComponentFactory[P]]
+inline def createFactory[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String): DOMFactory[P, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[DOMFactory[P, T]]
+
+inline def createFactory_PT_ComponentPComponentStateAnyC_ComponentClassPComponentState_CFactory[P, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CFactory[P, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[CFactory[P, T]]
 
 //
 // Top Level API
 // ----------------------------------------------------------------------
 // DOM Elements
-inline def createFactory_T_HTMLElement_HTMLFactory[T /* <: typings.std.HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any): typings.babelPluginReactHtmlAttrs.mod.HTMLFactory[T] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.HTMLFactory[T]]
+inline def createFactory_T_HTMLElement_HTMLFactory[T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ Any): HTMLFactory[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[HTMLFactory[T]]
 
-inline def createRef[T](): typings.babelPluginReactHtmlAttrs.mod.RefObject[T] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createRef")().asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.RefObject[T]]
+inline def createRef[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRef")().asInstanceOf[RefObject[T]]
 
-inline def forwardRef[T, P](render: typings.babelPluginReactHtmlAttrs.mod.ForwardRefRenderFunction[T, P]): typings.babelPluginReactHtmlAttrs.mod.ForwardRefExoticComponent[
-typings.babelPluginReactHtmlAttrs.mod.PropsWithoutRef[P] & typings.babelPluginReactHtmlAttrs.mod.RefAttributes[T]] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("forwardRef")(render.asInstanceOf[js.Any]).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.ForwardRefExoticComponent[
-typings.babelPluginReactHtmlAttrs.mod.PropsWithoutRef[P] & typings.babelPluginReactHtmlAttrs.mod.RefAttributes[T]]]
+inline def forwardRef[T, P](render: ForwardRefRenderFunction[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forwardRef")(render.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[T]]]
 
-inline def isValidElement[P](): /* is babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactElement<P, string | babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.JSXElementConstructor<any>> */ scala.Boolean = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isValidElement")().asInstanceOf[/* is babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactElement<P, string | babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.JSXElementConstructor<any>> */ scala.Boolean]
-inline def isValidElement[P](`object`: js.Object): /* is babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactElement<P, string | babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.JSXElementConstructor<any>> */ scala.Boolean = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isValidElement")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactElement<P, string | babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.JSXElementConstructor<any>> */ scala.Boolean]
+inline def isValidElement[P](): /* is babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactElement<P, string | babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.JSXElementConstructor<any>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidElement")().asInstanceOf[/* is babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactElement<P, string | babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.JSXElementConstructor<any>> */ Boolean]
+inline def isValidElement[P](`object`: js.Object): /* is babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactElement<P, string | babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.JSXElementConstructor<any>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidElement")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ReactElement<P, string | babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.JSXElementConstructor<any>> */ Boolean]
 
-inline def `lazy`[T /* <: typings.babelPluginReactHtmlAttrs.mod.ComponentType[js.Any] */](factory: js.Function0[js.Promise[typings.babelPluginReactHtmlAttrs.anon.Default[T]]]): typings.babelPluginReactHtmlAttrs.mod.LazyExoticComponent[T] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(factory.asInstanceOf[js.Any]).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.LazyExoticComponent[T]]
+inline def `lazy`[T /* <: ComponentType[Any] */](factory: js.Function0[js.Promise[Default[T]]]): LazyExoticComponent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(factory.asInstanceOf[js.Any]).asInstanceOf[LazyExoticComponent[T]]
 
-inline def memo[T /* <: typings.babelPluginReactHtmlAttrs.mod.ComponentType[js.Any] */](Component: T): typings.babelPluginReactHtmlAttrs.mod.MemoExoticComponent[T] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("memo")(Component.asInstanceOf[js.Any]).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.MemoExoticComponent[T]]
-inline def memo[T /* <: typings.babelPluginReactHtmlAttrs.mod.ComponentType[js.Any] */](
+inline def memo[T /* <: ComponentType[Any] */](Component: T): MemoExoticComponent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("memo")(Component.asInstanceOf[js.Any]).asInstanceOf[MemoExoticComponent[T]]
+inline def memo[T /* <: ComponentType[Any] */](
   Component: T,
-  propsAreEqual: js.Function2[
-  /* prevProps */ typings.babelPluginReactHtmlAttrs.mod.ComponentProps[T], 
-  /* nextProps */ typings.babelPluginReactHtmlAttrs.mod.ComponentProps[T], 
-  scala.Boolean
-]
-): typings.babelPluginReactHtmlAttrs.mod.MemoExoticComponent[T] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("memo")(Component.asInstanceOf[js.Any], propsAreEqual.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.MemoExoticComponent[T]]
-inline def memo[P /* <: js.Object */](Component: typings.babelPluginReactHtmlAttrs.mod.SFC[P]): typings.babelPluginReactHtmlAttrs.mod.NamedExoticComponent[P] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("memo")(Component.asInstanceOf[js.Any]).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.NamedExoticComponent[P]]
+  propsAreEqual: js.Function2[/* prevProps */ ComponentProps[T], /* nextProps */ ComponentProps[T], Boolean]
+): MemoExoticComponent[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("memo")(Component.asInstanceOf[js.Any], propsAreEqual.asInstanceOf[js.Any])).asInstanceOf[MemoExoticComponent[T]]
+inline def memo[P /* <: js.Object */](Component: SFC[P]): NamedExoticComponent[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("memo")(Component.asInstanceOf[js.Any]).asInstanceOf[NamedExoticComponent[P]]
 inline def memo[P /* <: js.Object */](
-  Component: typings.babelPluginReactHtmlAttrs.mod.SFC[P],
-  propsAreEqual: js.Function2[
-  /* prevProps */ typings.babelPluginReactHtmlAttrs.mod.PropsWithChildren[P], 
-  /* nextProps */ typings.babelPluginReactHtmlAttrs.mod.PropsWithChildren[P], 
-  scala.Boolean
-]
-): typings.babelPluginReactHtmlAttrs.mod.NamedExoticComponent[P] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("memo")(Component.asInstanceOf[js.Any], propsAreEqual.asInstanceOf[js.Any])).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.NamedExoticComponent[P]]
+  Component: SFC[P],
+  propsAreEqual: js.Function2[/* prevProps */ PropsWithChildren[P], /* nextProps */ PropsWithChildren[P], Boolean]
+): NamedExoticComponent[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("memo")(Component.asInstanceOf[js.Any], propsAreEqual.asInstanceOf[js.Any])).asInstanceOf[NamedExoticComponent[P]]
 
-inline def unstableWithSuspenseConfig(scope: js.Function0[js.UndefOr[scala.Unit]]): scala.Unit = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unstable_withSuspenseConfig")(scope.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def unstableWithSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_withSuspenseConfig")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def unstableWithSuspenseConfig(
-  scope: js.Function0[js.UndefOr[scala.Unit]],
+  scope: js.Function0[js.UndefOr[Unit]],
   config: typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseConfig
-): scala.Unit = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unstable_withSuspenseConfig")(scope.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_withSuspenseConfig")(scope.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 // I made 'inputs' required here and in useMemo as there's no point to memoizing without the memoization key
 // useCallback(X) is identical to just using X, useMemo(() => Y) is identical to just using Y.
@@ -431,7 +215,7 @@ inline def unstableWithSuspenseConfig(
   * @see https://reactjs.org/docs/hooks-reference.html#usecallback
   */
 // TODO (TypeScript 3.0): <T extends (...args: never[]) => unknown>
-inline def useCallback[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T, deps: typings.babelPluginReactHtmlAttrs.mod.DependencyList): T = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useCallback")(callback.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def useCallback[T /* <: js.Function1[/* repeated */ Any, Any] */](callback: T, deps: DependencyList): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useCallback")(callback.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[T]
 
 // This will technically work if you give a Consumer<T> or Provider<T> but it's deprecated and warns
 /**
@@ -441,7 +225,7 @@ inline def useCallback[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](c
   * @version 16.8.0
   * @see https://reactjs.org/docs/hooks-reference.html#usecontext
   */
-inline def useContext[T](context: typings.babelPluginReactHtmlAttrs.mod.Context[T]): T = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useContext")(context.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def useContext[T](context: Context[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useContext")(context.asInstanceOf[js.Any]).asInstanceOf[T]
 
 /**
   * `useDebugValue` can be used to display a label for custom hooks in React DevTools.
@@ -454,14 +238,14 @@ inline def useContext[T](context: typings.babelPluginReactHtmlAttrs.mod.Context[
   */
 // the name of the custom hook is itself derived from the function name at runtime:
 // it's just the function name without the "use" prefix.
-inline def useDebugValue[T](value: T): scala.Unit = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useDebugValue")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def useDebugValue[T](value: T, format: js.Function1[/* value */ T, js.Any]): scala.Unit = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useDebugValue")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def useDebugValue[T](value: T): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useDebugValue")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def useDebugValue[T](value: T, format: js.Function1[/* value */ T, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useDebugValue")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def useDeferredValue[T](value: T): T = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useDeferredValue")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def useDeferredValue[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useDeferredValue")(value.asInstanceOf[js.Any]).asInstanceOf[T]
 inline def useDeferredValue[T](
   value: T,
   config: typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.TimeoutConfig
-): T = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useDeferredValue")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useDeferredValue")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
 
 /**
   * Accepts a function that contains imperative, possibly effectful code.
@@ -472,14 +256,11 @@ inline def useDeferredValue[T](
   * @version 16.8.0
   * @see https://reactjs.org/docs/hooks-reference.html#useeffect
   */
-inline def useEffect(effect: typings.babelPluginReactHtmlAttrs.mod.EffectCallback): scala.Unit = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def useEffect(
-  effect: typings.babelPluginReactHtmlAttrs.mod.EffectCallback,
-  deps: typings.babelPluginReactHtmlAttrs.mod.DependencyList
-): scala.Unit = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useEffect")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def useEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def useEffect(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEffect")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def useImperativeHandle[T, R /* <: T */](ref: scala.Unit, init: js.Function0[R]): scala.Unit = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def useImperativeHandle[T, R /* <: T */](ref: scala.Unit, init: js.Function0[R], deps: typings.babelPluginReactHtmlAttrs.mod.DependencyList): scala.Unit = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def useImperativeHandle[T, R /* <: T */](ref: Unit, init: js.Function0[R]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def useImperativeHandle[T, R /* <: T */](ref: Unit, init: js.Function0[R], deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
 // NOTE: this does not accept strings, but this will have to be fixed by removing strings from type Ref<T>
 /**
   * `useImperativeHandle` customizes the instance value that is exposed to parent components when using
@@ -490,12 +271,8 @@ inline def useImperativeHandle[T, R /* <: T */](ref: scala.Unit, init: js.Functi
   * @version 16.8.0
   * @see https://reactjs.org/docs/hooks-reference.html#useimperativehandle
   */
-inline def useImperativeHandle[T, R /* <: T */](ref: typings.babelPluginReactHtmlAttrs.mod.Ref[T], init: js.Function0[R]): scala.Unit = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def useImperativeHandle[T, R /* <: T */](
-  ref: typings.babelPluginReactHtmlAttrs.mod.Ref[T],
-  init: js.Function0[R],
-  deps: typings.babelPluginReactHtmlAttrs.mod.DependencyList
-): scala.Unit = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def useImperativeHandle[T, R /* <: T */](ref: Ref[T], init: js.Function0[R]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def useImperativeHandle[T, R /* <: T */](ref: Ref[T], init: js.Function0[R], deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 /**
   * The signature is identical to `useEffect`, but it fires synchronously after all DOM mutations.
@@ -510,11 +287,8 @@ inline def useImperativeHandle[T, R /* <: T */](
   * @version 16.8.0
   * @see https://reactjs.org/docs/hooks-reference.html#uselayouteffect
   */
-inline def useLayoutEffect(effect: typings.babelPluginReactHtmlAttrs.mod.EffectCallback): scala.Unit = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def useLayoutEffect(
-  effect: typings.babelPluginReactHtmlAttrs.mod.EffectCallback,
-  deps: typings.babelPluginReactHtmlAttrs.mod.DependencyList
-): scala.Unit = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutEffect")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def useLayoutEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def useLayoutEffect(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutEffect")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 /**
   * `useMemo` will only recompute the memoized value when one of the `deps` has changed.
@@ -535,55 +309,8 @@ inline def useLayoutEffect(
   * @see https://reactjs.org/docs/hooks-reference.html#usememo
   */
 // allow undefined, but don't make it optional as that is very likely a mistake
-inline def useMemo[T](factory: js.Function0[T]): T = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useMemo")(factory.asInstanceOf[js.Any]).asInstanceOf[T]
-inline def useMemo[T](factory: js.Function0[T], deps: typings.babelPluginReactHtmlAttrs.mod.DependencyList): T = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useMemo")(factory.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[T]
-
-/**
-  * An alternative to `useState`.
-  *
-  * `useReducer` is usually preferable to `useState` when you have complex state logic that involves
-  * multiple sub-values. It also lets you optimize performance for components that trigger deep
-  * updates because you can pass `dispatch` down instead of callbacks.
-  *
-  * @version 16.8.0
-  * @see https://reactjs.org/docs/hooks-reference.html#usereducer
-  */
-// overload where dispatch could accept 0 arguments.
-inline def useReducer[R /* <: typings.babelPluginReactHtmlAttrs.mod.ReducerWithoutAction[js.Any] */](
-  reducer: R,
-  initializerArg: typings.babelPluginReactHtmlAttrs.mod.ReducerStateWithoutAction[R],
-  initializer: scala.Unit
-): js.Tuple2[
-typings.babelPluginReactHtmlAttrs.mod.ReducerStateWithoutAction[R], 
-typings.babelPluginReactHtmlAttrs.mod.DispatchWithoutAction] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initializerArg.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
-typings.babelPluginReactHtmlAttrs.mod.ReducerStateWithoutAction[R], 
-typings.babelPluginReactHtmlAttrs.mod.DispatchWithoutAction]]
-/**
-  * An alternative to `useState`.
-  *
-  * `useReducer` is usually preferable to `useState` when you have complex state logic that involves
-  * multiple sub-values. It also lets you optimize performance for components that trigger deep
-  * updates because you can pass `dispatch` down instead of callbacks.
-  *
-  * @version 16.8.0
-  * @see https://reactjs.org/docs/hooks-reference.html#usereducer
-  */
-// overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
-// If "I" matches ReducerState<R> exactly then the last overload will allow initializer to be ommitted.
-// the last overload effectively behaves as if the identity function (x => x) is the initializer.
-// overload for free "I"; all goes as long as initializer converts it into "ReducerState<R>".
-inline def useReducer[R /* <: typings.babelPluginReactHtmlAttrs.mod.Reducer[js.Any, js.Any] */, I](
-  reducer: R,
-  initializerArg: (I & typings.babelPluginReactHtmlAttrs.mod.ReducerState[R]) | I,
-  initializer: js.Function1[
-  (/* arg */ I & typings.babelPluginReactHtmlAttrs.mod.ReducerState[R]) | (/* arg */ I), 
-  typings.babelPluginReactHtmlAttrs.mod.ReducerState[R]
-]
-): js.Tuple2[
-typings.babelPluginReactHtmlAttrs.mod.ReducerState[R], 
-typings.babelPluginReactHtmlAttrs.mod.Dispatch[typings.babelPluginReactHtmlAttrs.mod.ReducerAction[R]]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initializerArg.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
-typings.babelPluginReactHtmlAttrs.mod.ReducerState[R], 
-typings.babelPluginReactHtmlAttrs.mod.Dispatch[typings.babelPluginReactHtmlAttrs.mod.ReducerAction[R]]]]
+inline def useMemo[T](factory: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useMemo")(factory.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def useMemo[T](factory: js.Function0[T], deps: DependencyList): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useMemo")(factory.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[T]
 
 /**
   * An alternative to `useState`.
@@ -602,15 +329,26 @@ typings.babelPluginReactHtmlAttrs.mod.Dispatch[typings.babelPluginReactHtmlAttrs
 // which would prevent autocompletion from ever working.
 // TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
 // in older versions, or a regression in newer versions of the typescript completion service.
-inline def useReducer_R_ReducerAnyAny[R /* <: typings.babelPluginReactHtmlAttrs.mod.Reducer[js.Any, js.Any] */](
+inline def useReducer[R /* <: Reducer[Any, Any] */](reducer: R, initialState: ReducerState[R], initializer: Unit): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]]]
+/**
+  * An alternative to `useState`.
+  *
+  * `useReducer` is usually preferable to `useState` when you have complex state logic that involves
+  * multiple sub-values. It also lets you optimize performance for components that trigger deep
+  * updates because you can pass `dispatch` down instead of callbacks.
+  *
+  * @version 16.8.0
+  * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+  */
+// overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
+// If "I" matches ReducerState<R> exactly then the last overload will allow initializer to be ommitted.
+// the last overload effectively behaves as if the identity function (x => x) is the initializer.
+// overload for free "I"; all goes as long as initializer converts it into "ReducerState<R>".
+inline def useReducer[R /* <: Reducer[Any, Any] */, I](
   reducer: R,
-  initialState: typings.babelPluginReactHtmlAttrs.mod.ReducerState[R],
-  initializer: scala.Unit
-): js.Tuple2[
-typings.babelPluginReactHtmlAttrs.mod.ReducerState[R], 
-typings.babelPluginReactHtmlAttrs.mod.Dispatch[typings.babelPluginReactHtmlAttrs.mod.ReducerAction[R]]] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
-typings.babelPluginReactHtmlAttrs.mod.ReducerState[R], 
-typings.babelPluginReactHtmlAttrs.mod.Dispatch[typings.babelPluginReactHtmlAttrs.mod.ReducerAction[R]]]]
+  initializerArg: (I & ReducerState[R]) | I,
+  initializer: js.Function1[(/* arg */ I & ReducerState[R]) | (/* arg */ I), ReducerState[R]]
+): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initializerArg.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]]]
 
 /**
   * An alternative to `useState`.
@@ -623,15 +361,24 @@ typings.babelPluginReactHtmlAttrs.mod.Dispatch[typings.babelPluginReactHtmlAttrs
   * @see https://reactjs.org/docs/hooks-reference.html#usereducer
   */
 // overload where dispatch could accept 0 arguments.
-inline def useReducer_R_ReducerWithoutActionAnyI[R /* <: typings.babelPluginReactHtmlAttrs.mod.ReducerWithoutAction[js.Any] */, I](
+inline def useReducer_R_ReducerWithoutActionAny[R /* <: ReducerWithoutAction[Any] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: Unit): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initializerArg.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction]]
+
+/**
+  * An alternative to `useState`.
+  *
+  * `useReducer` is usually preferable to `useState` when you have complex state logic that involves
+  * multiple sub-values. It also lets you optimize performance for components that trigger deep
+  * updates because you can pass `dispatch` down instead of callbacks.
+  *
+  * @version 16.8.0
+  * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+  */
+// overload where dispatch could accept 0 arguments.
+inline def useReducer_R_ReducerWithoutActionAnyI[R /* <: ReducerWithoutAction[Any] */, I](
   reducer: R,
   initializerArg: I,
-  initializer: js.Function1[/* arg */ I, typings.babelPluginReactHtmlAttrs.mod.ReducerStateWithoutAction[R]]
-): js.Tuple2[
-typings.babelPluginReactHtmlAttrs.mod.ReducerStateWithoutAction[R], 
-typings.babelPluginReactHtmlAttrs.mod.DispatchWithoutAction] = (typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initializerArg.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
-typings.babelPluginReactHtmlAttrs.mod.ReducerStateWithoutAction[R], 
-typings.babelPluginReactHtmlAttrs.mod.DispatchWithoutAction]]
+  initializer: js.Function1[/* arg */ I, ReducerStateWithoutAction[R]]
+): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initializerArg.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction]]
 
 // convenience overload for refs given as a ref prop as they typically start with a null value
 /**
@@ -648,8 +395,8 @@ typings.babelPluginReactHtmlAttrs.mod.DispatchWithoutAction]]
   * @see https://reactjs.org/docs/hooks-reference.html#useref
   */
 // TODO (TypeScript 3.0): <T extends unknown>
-inline def useRef[T](): typings.babelPluginReactHtmlAttrs.mod.RefObject[T] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useRef")().asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.RefObject[T]]
-inline def useRef[T](initialValue: T): typings.babelPluginReactHtmlAttrs.mod.RefObject[T] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useRef")(initialValue.asInstanceOf[js.Any]).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.RefObject[T]]
+inline def useRef[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRef")().asInstanceOf[RefObject[T]]
+inline def useRef[T](initialValue: T): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRef")(initialValue.asInstanceOf[js.Any]).asInstanceOf[RefObject[T]]
 
 // convenience overload for potentially undefined initialValue / call with 0 arguments
 // has a default to stop it from defaulting to {} instead
@@ -664,7 +411,7 @@ inline def useRef[T](initialValue: T): typings.babelPluginReactHtmlAttrs.mod.Ref
   * @see https://reactjs.org/docs/hooks-reference.html#useref
   */
 // TODO (TypeScript 3.0): <T extends unknown>
-inline def useRef_T_MutableRefObject[T](): typings.babelPluginReactHtmlAttrs.mod.MutableRefObject[js.UndefOr[T]] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useRef")().asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.MutableRefObject[js.UndefOr[T]]]
+inline def useRef_T_MutableRefObject[T](): MutableRefObject[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRef")().asInstanceOf[MutableRefObject[js.UndefOr[T]]]
 /**
   * `useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument
   * (`initialValue`). The returned object will persist for the full lifetime of the component.
@@ -676,7 +423,7 @@ inline def useRef_T_MutableRefObject[T](): typings.babelPluginReactHtmlAttrs.mod
   * @see https://reactjs.org/docs/hooks-reference.html#useref
   */
 // TODO (TypeScript 3.0): <T extends unknown>
-inline def useRef_T_MutableRefObject[T](initialValue: T): typings.babelPluginReactHtmlAttrs.mod.MutableRefObject[T] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useRef")(initialValue.asInstanceOf[js.Any]).asInstanceOf[typings.babelPluginReactHtmlAttrs.mod.MutableRefObject[T]]
+inline def useRef_T_MutableRefObject[T](initialValue: T): MutableRefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRef")(initialValue.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[T]]
 
 // convenience overload when first argument is ommitted
 /**
@@ -685,127 +432,101 @@ inline def useRef_T_MutableRefObject[T](initialValue: T): typings.babelPluginRea
   * @version 16.8.0
   * @see https://reactjs.org/docs/hooks-reference.html#usestate
   */
-inline def useState[S](): js.Tuple2[
-js.UndefOr[S], 
-typings.babelPluginReactHtmlAttrs.mod.Dispatch[typings.babelPluginReactHtmlAttrs.mod.SetStateAction[js.UndefOr[S]]]] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useState")().asInstanceOf[js.Tuple2[
-js.UndefOr[S], 
-typings.babelPluginReactHtmlAttrs.mod.Dispatch[typings.babelPluginReactHtmlAttrs.mod.SetStateAction[js.UndefOr[S]]]]]
+inline def useState[S](): js.Tuple2[js.UndefOr[S], Dispatch[SetStateAction[js.UndefOr[S]]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useState")().asInstanceOf[js.Tuple2[js.UndefOr[S], Dispatch[SetStateAction[js.UndefOr[S]]]]]
 /**
   * Returns a stateful value, and a function to update it.
   *
   * @version 16.8.0
   * @see https://reactjs.org/docs/hooks-reference.html#usestate
   */
-inline def useState[S](initialState: S): js.Tuple2[
-S, 
-typings.babelPluginReactHtmlAttrs.mod.Dispatch[typings.babelPluginReactHtmlAttrs.mod.SetStateAction[S]]] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
-S, 
-typings.babelPluginReactHtmlAttrs.mod.Dispatch[typings.babelPluginReactHtmlAttrs.mod.SetStateAction[S]]]]
-inline def useState[S](initialState: js.Function0[S]): js.Tuple2[
-S, 
-typings.babelPluginReactHtmlAttrs.mod.Dispatch[typings.babelPluginReactHtmlAttrs.mod.SetStateAction[S]]] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
-S, 
-typings.babelPluginReactHtmlAttrs.mod.Dispatch[typings.babelPluginReactHtmlAttrs.mod.SetStateAction[S]]]]
+inline def useState[S](initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[S, Dispatch[SetStateAction[S]]]]
+inline def useState[S](initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[S, Dispatch[SetStateAction[S]]]]
 
 inline def useTransition(): js.Tuple2[
 typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.TransitionStartFunction, 
-scala.Boolean] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useTransition")().asInstanceOf[js.Tuple2[
+Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransition")().asInstanceOf[js.Tuple2[
 typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.TransitionStartFunction, 
-scala.Boolean]]
+Boolean]]
 inline def useTransition(
   config: typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseConfig
 ): js.Tuple2[
 typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.TransitionStartFunction, 
-scala.Boolean] = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useTransition")(config.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
+Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransition")(config.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
 typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.TransitionStartFunction, 
-scala.Boolean]]
+Boolean]]
 
-inline def version: java.lang.String = typings.babelPluginReactHtmlAttrs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 
-type AnimationEventHandler[T] = typings.babelPluginReactHtmlAttrs.mod.EventHandler[typings.babelPluginReactHtmlAttrs.mod.AnimationEvent[T]]
+type AnimationEventHandler[T] = EventHandler[AnimationEvent[T]]
 
-type AudioHTMLAttributes[T] = typings.babelPluginReactHtmlAttrs.mod.MediaHTMLAttributes[T]
+type AudioHTMLAttributes[T] = MediaHTMLAttributes[T]
 
-type Booleanish = scala.Boolean
+type Booleanish = Boolean
 
-type CElement[P, T /* <: typings.babelPluginReactHtmlAttrs.mod.Component[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState, js.Any] */] = typings.babelPluginReactHtmlAttrs.mod.ComponentElement[P, T]
+type CElement[P, T /* <: Component[P, ComponentState, Any] */] = ComponentElement[P, T]
 
-type CFactory[P, T /* <: typings.babelPluginReactHtmlAttrs.mod.Component[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState, js.Any] */] = typings.babelPluginReactHtmlAttrs.mod.ComponentFactory[P, T]
+type CFactory[P, T /* <: Component[P, ComponentState, Any] */] = ComponentFactory[P, T]
 
-type CSSProperties = typings.csstype.mod.Properties[java.lang.String | scala.Double]
+type CSSProperties = Properties[String | Double, String]
 
-type ChangeEventHandler[T] = typings.babelPluginReactHtmlAttrs.mod.EventHandler[typings.babelPluginReactHtmlAttrs.mod.ChangeEvent[T]]
+type ChangeEventHandler[T] = EventHandler[ChangeEvent[T]]
 
 /**
   * We use an intersection type to infer multiple type parameters from
   * a single argument, which is useful for many top-level API defs.
   * See https://github.com/Microsoft/TypeScript/issues/7234 for more info.
   */
-type ClassType[P, T /* <: typings.babelPluginReactHtmlAttrs.mod.Component[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState, js.Any] */, C /* <: typings.babelPluginReactHtmlAttrs.mod.ComponentClass[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState] */] = C & (org.scalablytyped.runtime.Instantiable2[/* props */ P, /* context */ js.UndefOr[js.Any], T])
+type ClassType[P, T /* <: Component[P, ComponentState, Any] */, C /* <: ComponentClass[P, ComponentState] */] = C & (Instantiable2[/* props */ P, /* context */ js.UndefOr[Any], T])
 
-type ClassicElement[P] = typings.babelPluginReactHtmlAttrs.mod.CElement[
-P, 
-typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState]]
+type ClassicElement[P] = CElement[P, ClassicComponent[P, ComponentState]]
 
-type ClassicFactory[P] = typings.babelPluginReactHtmlAttrs.mod.CFactory[
-P, 
-typings.babelPluginReactHtmlAttrs.mod.ClassicComponent[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState]]
+type ClassicFactory[P] = CFactory[P, ClassicComponent[P, ComponentState]]
 
-type ClipboardEventHandler[T] = typings.babelPluginReactHtmlAttrs.mod.EventHandler[typings.babelPluginReactHtmlAttrs.mod.ClipboardEvent[T]]
+type ClipboardEventHandler[T] = EventHandler[ClipboardEvent[T]]
 
 /**
   * NOTE: prefer ComponentPropsWithRef, if the ref is forwarded,
   * or ComponentPropsWithoutRef when refs are not supported.
   */
-type ComponentProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.<global>.JSX.IntrinsicElements[T] */ js.Any)
+type ComponentProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any */] = js.Object | (/* import warning: importer.ImportType#apply Failed type conversion: babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.<global>.JSX.IntrinsicElements[T] */ js.Any)
 
-type ComponentPropsWithRef[T /* <: typings.babelPluginReactHtmlAttrs.mod.ElementType[js.Any] */] = typings.babelPluginReactHtmlAttrs.mod.PropsWithRef[typings.babelPluginReactHtmlAttrs.mod.ComponentProps[T]] | (typings.babelPluginReactHtmlAttrs.mod.PropsWithoutRef[js.Any] & typings.babelPluginReactHtmlAttrs.mod.RefAttributes[typings.std.InstanceType[T]])
+type ComponentPropsWithRef[T /* <: ElementType[Any] */] = PropsWithRef[ComponentProps[T]] | (PropsWithoutRef[Any] & RefAttributes[InstanceType[T]])
 
-type ComponentPropsWithoutRef[T /* <: typings.babelPluginReactHtmlAttrs.mod.ElementType[js.Any] */] = typings.babelPluginReactHtmlAttrs.mod.PropsWithoutRef[typings.babelPluginReactHtmlAttrs.mod.ComponentProps[T]]
+type ComponentPropsWithoutRef[T /* <: ElementType[Any] */] = PropsWithoutRef[ComponentProps[T]]
 
-type ComponentState = js.Any
+type ComponentState = Any
 
-type ComponentType[P] = (typings.babelPluginReactHtmlAttrs.mod.ComponentClass[P, typings.babelPluginReactHtmlAttrs.mod.ComponentState]) | typings.babelPluginReactHtmlAttrs.mod.FunctionComponent[P]
+type ComponentType[P] = (ComponentClass[P, ComponentState]) | FunctionComponent[P]
 
-type CompositionEventHandler[T] = typings.babelPluginReactHtmlAttrs.mod.EventHandler[typings.babelPluginReactHtmlAttrs.mod.CompositionEvent[T]]
+type CompositionEventHandler[T] = EventHandler[CompositionEvent[T]]
 
-type Consumer[T] = typings.babelPluginReactHtmlAttrs.mod.ExoticComponent[typings.babelPluginReactHtmlAttrs.mod.ConsumerProps[T]]
+type Consumer[T] = ExoticComponent[ConsumerProps[T]]
 
-type ContextType[C /* <: typings.babelPluginReactHtmlAttrs.mod.Context[js.Any] */] = js.Any
+type ContextType[C /* <: Context[Any] */] = Any
 
 // Any prop that has a default prop becomes optional, but its type is unchanged
 // Undeclared default props are augmented into the resulting allowable attributes
 // If declared props have indexed properties, ignore default props entirely as keyof gets widened
 // Wrap in an outer-level conditional type to allow distribution over props that are unions
-type Defaultize[P, D] = ((typings.std.Pick[
-P, 
-typings.std.Exclude[/* keyof P */ java.lang.String, /* keyof D */ java.lang.String]]) & (typings.std.Partial[
-typings.std.Pick[
-  P, 
-  typings.std.Extract[/* keyof P */ java.lang.String, /* keyof D */ java.lang.String]
-]]) & (typings.std.Partial[
-typings.std.Pick[
-  D, 
-  typings.std.Exclude[/* keyof D */ java.lang.String, /* keyof P */ java.lang.String]
-]])) | P
+type Defaultize[P, D] = ((Pick[P, Exclude[/* keyof P */ String, /* keyof D */ String]]) & (Partial[Pick[P, Extract[/* keyof P */ String, /* keyof D */ String]]]) & (Partial[Pick[D, Exclude[/* keyof D */ String, /* keyof P */ String]]])) | P
 
 // TODO (TypeScript 3.0): ReadonlyArray<unknown>
-type DependencyList = js.Array[js.Any]
+type DependencyList = js.Array[Any]
 
-type DetailedHTMLProps[E /* <: typings.babelPluginReactHtmlAttrs.mod.HTMLAttributes[T] */, T] = typings.babelPluginReactHtmlAttrs.mod.ClassAttributes[T] & E
+type DetailedHTMLProps[E /* <: HTMLAttributes[T] */, T] = ClassAttributes[T] & E
 
 // this technically does accept a second argument, but it's already under a deprecation warning
 // and it's not even released so probably better to not define it.
-type Dispatch[A] = js.Function1[/* value */ A, scala.Unit]
+type Dispatch[A] = js.Function1[/* value */ A, Unit]
 
 // Since action _can_ be undefined, dispatch may be called without any parameters.
-type DispatchWithoutAction = js.Function0[scala.Unit]
+type DispatchWithoutAction = js.Function0[Unit]
 
-type DragEventHandler[T] = typings.babelPluginReactHtmlAttrs.mod.EventHandler[typings.babelPluginReactHtmlAttrs.mod.DragEvent[T]]
+type DragEventHandler[T] = EventHandler[DragEvent[T]]
 
 // NOTE: callbacks are _only_ allowed to return either void, or a destructor.
 // The destructor is itself only allowed to return void.
-type EffectCallback = js.Function0[scala.Unit | js.Function0[js.UndefOr[scala.Unit]]]
+type EffectCallback = js.Function0[Unit | js.Function0[js.UndefOr[Unit]]]
 
 /**
   * Gets the instance type for a React element. The instance will be different for various component types:
@@ -819,32 +540,32 @@ type EffectCallback = js.Function0[scala.Unit | js.Function0[js.UndefOr[scala.Un
   * - React stateless functional components that forward a `ref` will give you the `ElementRef` of the forwarded
   *   to component.
   *
-  * `C` must be the type _of_ a React component so you need to use typeof as in React.ElementRef<typeof MyComponent>.
+  * `C` must be the type _of_ a React component so you need to use typeof as in `React.ElementRef<typeof MyComponent>`.
   *
   * @todo In Flow, this works a little different with forwarded refs and the `AbstractComponent` that
   *       `React.forwardRef()` returns.
   */
-type ElementRef[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178 */ js.Any */] = js.UndefOr[js.Any | typings.std.InstanceType[C]]
+type ElementRef[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178 */ Any */] = js.UndefOr[Any | InstanceType[C]]
 
 //
 // React Elements
 // ----------------------------------------------------------------------
-type ElementType[P] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in 'a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'big' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'keygen' | 'label' | 'legend' | 'li' | 'link' | 'main' | 'map' | 'mark' | 'menu' | 'menuitem' | 'meta' | 'meter' | 'nav' | 'noindex' | 'noscript' | 'object' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'param' | 'picture' | 'pre' | 'progress' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'slot' | 'script' | 'section' | 'select' | 'small' | 'source' | 'span' | 'strong' | 'style' | 'sub' | 'summary' | 'sup' | 'table' | 'template' | 'tbody' | 'td' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'track' | 'u' | 'ul' | 'var' | 'video' | 'wbr' | 'webview' | 'svg' | 'animate' | 'animateMotion' | 'animateTransform' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feDropShadow' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'mpath' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'stop' | 'switch' | 'symbol' | 'text' | 'textPath' | 'tspan' | 'use' | 'view' ]: P extends babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.<global>.JSX.IntrinsicElements[K]? K : never}['a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'big' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'keygen' | 'label' | 'legend' | 'li' | 'link' | 'main' | 'map' | 'mark' | 'menu' | 'menuitem' | 'meta' | 'meter' | 'nav' | 'noindex' | 'noscript' | 'object' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'param' | 'picture' | 'pre' | 'progress' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'slot' | 'script' | 'section' | 'select' | 'small' | 'source' | 'span' | 'strong' | 'style' | 'sub' | 'summary' | 'sup' | 'table' | 'template' | 'tbody' | 'td' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'track' | 'u' | 'ul' | 'var' | 'video' | 'wbr' | 'webview' | 'svg' | 'animate' | 'animateMotion' | 'animateTransform' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feDropShadow' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'mpath' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'stop' | 'switch' | 'symbol' | 'text' | 'textPath' | 'tspan' | 'use' | 'view'] */ js.Any) | typings.babelPluginReactHtmlAttrs.mod.ComponentType[P]
+type ElementType[P] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in 'a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'big' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'keygen' | 'label' | 'legend' | 'li' | 'link' | 'main' | 'map' | 'mark' | 'menu' | 'menuitem' | 'meta' | 'meter' | 'nav' | 'noindex' | 'noscript' | 'object' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'param' | 'picture' | 'pre' | 'progress' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'slot' | 'script' | 'section' | 'select' | 'small' | 'source' | 'span' | 'strong' | 'style' | 'sub' | 'summary' | 'sup' | 'table' | 'template' | 'tbody' | 'td' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'track' | 'u' | 'ul' | 'var' | 'video' | 'wbr' | 'webview' | 'svg' | 'animate' | 'animateMotion' | 'animateTransform' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feDropShadow' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'mpath' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'stop' | 'switch' | 'symbol' | 'text' | 'textPath' | 'tspan' | 'use' | 'view' ]: P extends babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.<global>.JSX.IntrinsicElements[K]? K : never}['a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'big' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'keygen' | 'label' | 'legend' | 'li' | 'link' | 'main' | 'map' | 'mark' | 'menu' | 'menuitem' | 'meta' | 'meter' | 'nav' | 'noindex' | 'noscript' | 'object' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'param' | 'picture' | 'pre' | 'progress' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'slot' | 'script' | 'section' | 'select' | 'small' | 'source' | 'span' | 'strong' | 'style' | 'sub' | 'summary' | 'sup' | 'table' | 'template' | 'tbody' | 'td' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'track' | 'u' | 'ul' | 'var' | 'video' | 'wbr' | 'webview' | 'svg' | 'animate' | 'animateMotion' | 'animateTransform' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feDropShadow' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'mpath' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'stop' | 'switch' | 'symbol' | 'text' | 'textPath' | 'tspan' | 'use' | 'view'] */ js.Any) | ComponentType[P]
 
 //
 // Event Handler Types
 // ----------------------------------------------------------------------
-type EventHandler[E /* <: typings.babelPluginReactHtmlAttrs.mod.SyntheticEvent[js.Any, typings.std.Event] */] = js.Function1[/* event */ E, scala.Unit]
+type EventHandler[E /* <: SyntheticEvent[Any, Event] */] = js.Function1[/* event */ E, Unit]
 
 type ExactlyAnyPropertyKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.IsExactlyAny<T[K]> extends true? K : never}[keyof T] */ js.Any
 
-type FC[P] = typings.babelPluginReactHtmlAttrs.mod.FunctionComponent[P]
+type FC[P] = FunctionComponent[P]
 
-type FocusEventHandler[T] = typings.babelPluginReactHtmlAttrs.mod.EventHandler[typings.babelPluginReactHtmlAttrs.mod.FocusEvent[T]]
+type FocusEventHandler[T] = EventHandler[FocusEvent[T]]
 
-type FormEvent[T] = typings.babelPluginReactHtmlAttrs.mod.SyntheticEvent[T, typings.std.Event]
+type FormEvent[T] = SyntheticEvent[T, Event]
 
-type FormEventHandler[T] = typings.babelPluginReactHtmlAttrs.mod.EventHandler[typings.babelPluginReactHtmlAttrs.mod.FormEvent[T]]
+type FormEventHandler[T] = EventHandler[FormEvent[T]]
 
 type GetDerivedStateFromError[P, S] = /**
   * This lifecycle is invoked after an error has been thrown by a descendant component.
@@ -852,44 +573,31 @@ type GetDerivedStateFromError[P, S] = /**
   *
   * Note: its presence prevents any of the deprecated lifecycle methods from being invoked
   */
-js.Function1[/* error */ js.Any, typings.std.Partial[S] | scala.Null]
+js.Function1[/* error */ Any, Partial[S] | Null]
 
 type GetDerivedStateFromProps[P, S] = /**
   * Returns an update to a component's state based on its new props and old state.
   *
   * Note: its presence prevents any of the deprecated lifecycle methods from being invoked
   */
-js.Function2[/* nextProps */ P, /* prevState */ S, typings.std.Partial[S] | scala.Null]
+js.Function2[/* nextProps */ P, /* prevState */ S, Partial[S] | Null]
 
-type HTMLFactory[T /* <: typings.std.HTMLElement */] = typings.babelPluginReactHtmlAttrs.mod.DetailedHTMLFactory[typings.babelPluginReactHtmlAttrs.mod.AllHTMLAttributes[T], T]
+type HTMLFactory[T /* <: HTMLElement */] = DetailedHTMLFactory[AllHTMLAttributes[T], T]
 
-type JSXElementConstructor[P] = (js.Function1[
-/* props */ P, 
-(typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-  js.Any, 
-  java.lang.String | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.JSXElementConstructor<any> */ js.Object)
-]) | scala.Null]) | (org.scalablytyped.runtime.Instantiable1[/* props */ P, typings.babelPluginReactHtmlAttrs.mod.Component[P, js.Any, js.Any]])
+type JSXElementConstructor[P] = (js.Function1[/* props */ P, (ReactElement[Any, String | Any]) | Null]) | (Instantiable1[/* props */ P, Component[P, Any, Any]])
 
-type Key = java.lang.String | scala.Double
+type Key = String | Double
 
-type KeyboardEventHandler[T] = typings.babelPluginReactHtmlAttrs.mod.EventHandler[typings.babelPluginReactHtmlAttrs.mod.KeyboardEvent[T]]
+type KeyboardEventHandler[T] = EventHandler[KeyboardEvent[T]]
 
-type LegacyRef[T] = java.lang.String | typings.babelPluginReactHtmlAttrs.mod.Ref[T]
+type LegacyRef[T] = String | Ref[T]
 
 // Try to resolve ill-defined props like for JS users: props can be any, or sometimes objects with properties of type any
-type MergePropTypes[P, T] = ((typings.std.Pick[P, typings.babelPluginReactHtmlAttrs.mod.NotExactlyAnyPropertyKeys[P]]) & (// For props which are exactly any, use the type inferred from propTypes if present
-typings.std.Pick[
-T, 
-typings.std.Exclude[
-  /* keyof T */ java.lang.String, 
-  typings.babelPluginReactHtmlAttrs.mod.NotExactlyAnyPropertyKeys[P]
-]]) & (// Keep leftover props not specified in propTypes
-typings.std.Pick[
-P, 
-typings.std.Exclude[/* keyof P */ java.lang.String, /* keyof T */ java.lang.String]])) | P | T
+type MergePropTypes[P, T] = ((Pick[P, NotExactlyAnyPropertyKeys[P]]) & (// For props which are exactly any, use the type inferred from propTypes if present
+Pick[T, Exclude[/* keyof T */ String, NotExactlyAnyPropertyKeys[P]]]) & (// Keep leftover props not specified in propTypes
+Pick[P, Exclude[/* keyof P */ String, /* keyof T */ String]])) | P | T
 
-type MouseEventHandler[T] = typings.babelPluginReactHtmlAttrs.mod.EventHandler[
-typings.babelPluginReactHtmlAttrs.mod.MouseEvent[T, typings.babelPluginReactHtmlAttrs.mod.NativeMouseEvent]]
+type MouseEventHandler[T] = EventHandler[MouseEvent[T, NativeMouseEvent]]
 
 type NativeAnimationEvent = typings.std.AnimationEvent
 
@@ -915,102 +623,90 @@ type NativeUIEvent = typings.std.UIEvent
 
 type NativeWheelEvent = typings.std.WheelEvent
 
-type NotExactlyAnyPropertyKeys[T] = typings.std.Exclude[
-/* keyof T */ java.lang.String, 
-typings.babelPluginReactHtmlAttrs.mod.ExactlyAnyPropertyKeys[T]]
+type NotExactlyAnyPropertyKeys[T] = Exclude[/* keyof T */ String, ExactlyAnyPropertyKeys[T]]
 
-type PointerEventHandler[T] = typings.babelPluginReactHtmlAttrs.mod.EventHandler[typings.babelPluginReactHtmlAttrs.mod.PointerEvent[T]]
+type PointerEventHandler[T] = EventHandler[PointerEvent[T]]
 
 /**
   * {@link https://github.com/bvaughn/rfcs/blob/profiler/text/0000-profiler.md#detailed-design | API}
   */
 type ProfilerOnRenderCallback = js.Function7[
-/* id */ java.lang.String, 
-/* phase */ typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.mount | typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.update, 
-/* actualDuration */ scala.Double, 
-/* baseDuration */ scala.Double, 
-/* startTime */ scala.Double, 
-/* commitTime */ scala.Double, 
-/* interactions */ typings.std.Set[typings.babelPluginReactHtmlAttrs.mod.SchedulerInteraction], 
-scala.Unit]
+/* id */ String, 
+/* phase */ mount | update, 
+/* actualDuration */ Double, 
+/* baseDuration */ Double, 
+/* startTime */ Double, 
+/* commitTime */ Double, 
+/* interactions */ Set[SchedulerInteraction], 
+Unit]
 
 type PropsWithChildren[P] = P & typings.babelPluginReactHtmlAttrs.anon.Children
 
 /** Ensures that the props do not include string ref, which cannot be forwarded */
-type PropsWithRef[P] = P | (typings.babelPluginReactHtmlAttrs.mod.PropsWithoutRef[P] & typings.babelPluginReactHtmlAttrs.anon.`1`)
+type PropsWithRef[P] = P | (PropsWithoutRef[P] & `1`)
 
 /** Ensures that the props do not include ref at all */
-type PropsWithoutRef[P] = P | (typings.std.Pick[
-P, 
-typings.std.Exclude[
-  /* keyof P */ java.lang.String, 
-  typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.ref
-]])
+type PropsWithoutRef[P] = P | (Pick[P, Exclude[/* keyof P */ String, ref]])
 
 // NOTE: only the Context object itself can get a displayName
 // https://github.com/facebook/react-devtools/blob/e0b854e4c/backend/attachRendererFiber.js#L310-L325
-type Provider[T] = typings.babelPluginReactHtmlAttrs.mod.ProviderExoticComponent[typings.babelPluginReactHtmlAttrs.mod.ProviderProps[T]]
+type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
 
-type ReactChild = (typings.babelPluginReactHtmlAttrs.mod.ReactElement[
-js.Any, 
-java.lang.String | typings.babelPluginReactHtmlAttrs.mod.JSXElementConstructor[js.Any]]) | typings.babelPluginReactHtmlAttrs.mod.ReactText
+type ReactChild = (ReactElement[Any, String | Any]) | ReactText
 
-type ReactComponentElement[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */, P] = typings.babelPluginReactHtmlAttrs.mod.ReactElement[P, typings.std.Exclude[T, scala.Double]]
+type ReactComponentElement[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any */, P] = ReactElement[P, Exclude[T, Double]]
 
-type ReactEventHandler[T] = typings.babelPluginReactHtmlAttrs.mod.EventHandler[typings.babelPluginReactHtmlAttrs.mod.SyntheticEvent[T, typings.std.Event]]
+type ReactEventHandler[T] = EventHandler[SyntheticEvent[T, Event]]
 
-type ReactFragment = js.Object | typings.babelPluginReactHtmlAttrs.mod.ReactNodeArray
+type ReactFragment = js.Object | ReactNodeArray
 
 // ReactHTML for ReactHTMLElement
-type ReactHTMLElement[T /* <: typings.std.HTMLElement */] = typings.babelPluginReactHtmlAttrs.mod.DetailedReactHTMLElement[typings.babelPluginReactHtmlAttrs.mod.AllHTMLAttributes[T], T]
+type ReactHTMLElement[T /* <: HTMLElement */] = DetailedReactHTMLElement[AllHTMLAttributes[T], T]
 
 //
 // Component API
 // ----------------------------------------------------------------------
-type ReactInstance = (typings.babelPluginReactHtmlAttrs.mod.Component[js.Any, js.Object, js.Any]) | typings.std.Element
+type ReactInstance = (Component[Any, js.Object, Any]) | Element
 
-type ReactManagedAttributes[C, P] = P | (typings.babelPluginReactHtmlAttrs.mod.Defaultize[
-(typings.babelPluginReactHtmlAttrs.mod.MergePropTypes[P, typings.propTypes.mod.InferProps[js.Any]]) | P, 
-js.Any]) | (typings.babelPluginReactHtmlAttrs.mod.MergePropTypes[P, typings.propTypes.mod.InferProps[js.Any]])
+type ReactManagedAttributes[C, P] = P | (Defaultize[(MergePropTypes[P, InferProps[Any]]) | P, Any]) | (MergePropTypes[P, InferProps[Any]])
 
-type ReactNode = js.UndefOr[
-typings.babelPluginReactHtmlAttrs.mod.ReactChild | typings.babelPluginReactHtmlAttrs.mod.ReactFragment | typings.babelPluginReactHtmlAttrs.mod.ReactPortal | scala.Boolean | scala.Null]
+type ReactNode = js.UndefOr[Any | ReactFragment | ReactPortal | Boolean | Null]
 
 //
 // React Nodes
 // http://facebook.github.io/react/docs/glossary.html
 // ----------------------------------------------------------------------
-type ReactText = java.lang.String | scala.Double
+type ReactText = String | Double
 
 /**
   * @deprecated Please use `ElementType`
   */
-type ReactType[P] = typings.babelPluginReactHtmlAttrs.mod.ElementType[P]
+type ReactType[P] = ElementType[P]
 
 // Unlike redux, the actions _can_ be anything
 type Reducer[S, A] = js.Function2[/* prevState */ S, /* action */ A, S]
 
-type ReducerAction[R /* <: typings.babelPluginReactHtmlAttrs.mod.Reducer[js.Any, js.Any] */] = js.Any
+type ReducerAction[R /* <: Reducer[Any, Any] */] = Any
 
 // types used to try and prevent the compiler from reducing S
 // to a supertype common with the second argument to useReducer()
-type ReducerState[R /* <: typings.babelPluginReactHtmlAttrs.mod.Reducer[js.Any, js.Any] */] = js.Any
+type ReducerState[R /* <: Reducer[Any, Any] */] = Any
 
 // The identity check is done with the SameValue algorithm (Object.is), which is stricter than ===
-type ReducerStateWithoutAction[R /* <: typings.babelPluginReactHtmlAttrs.mod.ReducerWithoutAction[js.Any] */] = js.Any
+type ReducerStateWithoutAction[R /* <: ReducerWithoutAction[Any] */] = Any
 
 // If useReducer accepts a reducer without action, dispatch may be called without any parameters.
 type ReducerWithoutAction[S] = js.Function1[/* prevState */ S, S]
 
-type Ref[T] = typings.babelPluginReactHtmlAttrs.mod.RefCallback[T] | typings.babelPluginReactHtmlAttrs.mod.RefObject[T] | scala.Null
+type Ref[T] = RefCallback[T] | RefObject[T] | Null
 
-type RefCallback[T] = js.Function1[/* instance */ T | scala.Null, scala.Unit]
+type RefCallback[T] = js.Function1[/* instance */ T | Null, Unit]
 
 /**
   * @deprecated Use ForwardRefRenderFunction. forwardRef doesn't accept a
   *             "real" component.
   */
-type RefForwardingComponent[T, P] = typings.babelPluginReactHtmlAttrs.mod.ForwardRefRenderFunction[T, P]
+type RefForwardingComponent[T, P] = ForwardRefRenderFunction[T, P]
 
 type Requireable[T] = typings.propTypes.mod.Requireable[T]
 
@@ -1023,17 +719,17 @@ type Requireable[T] = typings.propTypes.mod.Requireable[T]
   *
   * @see [React Hooks](https://reactjs.org/docs/hooks-intro.html)
   */
-type SFC[P] = typings.babelPluginReactHtmlAttrs.mod.FunctionComponent[P]
+type SFC[P] = FunctionComponent[P]
 
 /**
   * @deprecated Please use `FunctionComponentElement`
   */
-type SFCElement[P] = typings.babelPluginReactHtmlAttrs.mod.FunctionComponentElement[P]
+type SFCElement[P] = FunctionComponentElement[P]
 
 /**
   * @deprecated Please use `FunctionComponentFactory`
   */
-type SFCFactory[P] = typings.babelPluginReactHtmlAttrs.mod.FunctionComponentFactory[P]
+type SFCFactory[P] = FunctionComponentFactory[P]
 
 //
 // React Hooks
@@ -1048,7 +744,7 @@ type SetStateAction[S] = S | (js.Function1[/* prevState */ S, S])
   *
   * @see [React Hooks](https://reactjs.org/docs/hooks-intro.html)
   */
-type StatelessComponent[P] = typings.babelPluginReactHtmlAttrs.mod.FunctionComponent[P]
+type StatelessComponent[P] = FunctionComponent[P]
 
 /**
   * currentTarget - a reference to the element on which the event listener is registered.
@@ -1057,20 +753,19 @@ type StatelessComponent[P] = typings.babelPluginReactHtmlAttrs.mod.FunctionCompo
   * This might be a child element to the element on which the event listener is registered.
   * If you thought this should be `EventTarget & T`, see https://github.com/DefinitelyTyped/DefinitelyTyped/pull/12239
   */
-type SyntheticEvent[T, E] = typings.babelPluginReactHtmlAttrs.mod.BaseSyntheticEvent[E, typings.std.EventTarget & T, typings.std.EventTarget]
+type SyntheticEvent[T, E] = BaseSyntheticEvent[E, EventTarget & T, EventTarget]
 
-type TouchEventHandler[T] = typings.babelPluginReactHtmlAttrs.mod.EventHandler[typings.babelPluginReactHtmlAttrs.mod.TouchEvent[T]]
+type TouchEventHandler[T] = EventHandler[TouchEvent[T]]
 
-type TransitionEventHandler[T] = typings.babelPluginReactHtmlAttrs.mod.EventHandler[typings.babelPluginReactHtmlAttrs.mod.TransitionEvent[T]]
+type TransitionEventHandler[T] = EventHandler[TransitionEvent[T]]
 
-type TransitionFunction = js.Function0[js.UndefOr[scala.Unit]]
+type TransitionFunction = js.Function0[js.UndefOr[Unit]]
 
 type TransitionStartFunction = js.Function1[
 /* callback */ typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.TransitionFunction, 
-scala.Unit]
+Unit]
 
-type UIEventHandler[T] = typings.babelPluginReactHtmlAttrs.mod.EventHandler[
-typings.babelPluginReactHtmlAttrs.mod.UIEvent[T, typings.babelPluginReactHtmlAttrs.mod.NativeUIEvent]]
+type UIEventHandler[T] = EventHandler[UIEvent[T, NativeUIEvent]]
 
 type ValidationMap[T] = typings.propTypes.mod.ValidationMap[T]
 
@@ -1081,6 +776,6 @@ type Validator[T] = typings.propTypes.mod.Validator[T]
 
 type WeakValidationMap[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof T ]:? null extends T[K]? babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.Validator<T[K] | null | undefined> : undefined extends T[K]? babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.Validator<T[K] | null | undefined> : babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.Validator<T[K]>}
-  */ typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.WeakValidationMap & org.scalablytyped.runtime.TopLevel[js.Any]
+  */ typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.WeakValidationMap & TopLevel[Any]
 
-type WheelEventHandler[T] = typings.babelPluginReactHtmlAttrs.mod.EventHandler[typings.babelPluginReactHtmlAttrs.mod.WheelEvent[T]]
+type WheelEventHandler[T] = EventHandler[WheelEvent[T]]

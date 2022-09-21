@@ -3,14 +3,13 @@ package typings.multer
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.multer.anon.FieldNameSize
 import typings.multer.anon.PartialFile
 import typings.multer.mod.global.Express.Multer.File
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +39,7 @@ object mod {
   
   @JSImport("multer", "MulterError")
   @js.native
-  class MulterError protected ()
+  open class MulterError protected ()
     extends StObject
        with Error {
     def this(code: ErrorCode) = this()
@@ -52,9 +51,11 @@ object mod {
     /** Name of the multipart form field associated with this error. */
     var field: js.UndefOr[String] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -90,9 +91,15 @@ object mod {
       */
     var destination: js.UndefOr[
         String | (js.Function3[
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
           /* file */ File, 
-          /* callback */ js.Function2[/* error */ Error | Null, /* destination */ String, Unit], 
+          /* callback */ js.Function2[/* error */ js.Error | Null, /* destination */ String, Unit], 
           Unit
         ])
       ] = js.undefined
@@ -108,9 +115,15 @@ object mod {
       */
     var filename: js.UndefOr[
         js.Function3[
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
           /* file */ File, 
-          /* callback */ js.Function2[/* error */ Error | Null, /* filename */ String, Unit], 
+          /* callback */ js.Function2[/* error */ js.Error | Null, /* filename */ String, Unit], 
           Unit
         ]
       ] = js.undefined
@@ -126,21 +139,39 @@ object mod {
       
       inline def setDestination(
         value: String | (js.Function3[
-              /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+              /* req */ Request_[
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+                Any, 
+                Any, 
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+                Record[String, Any]
+              ], 
               /* file */ File, 
-              /* callback */ js.Function2[/* error */ Error | Null, /* destination */ String, Unit], 
+              /* callback */ js.Function2[/* error */ js.Error | Null, /* destination */ String, Unit], 
               Unit
             ])
       ): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
       inline def setDestinationFunction3(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* destination */ String, Unit]) => Unit
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* file */ File, /* callback */ js.Function2[/* error */ js.Error | Null, /* destination */ String, Unit]) => Unit
       ): Self = StObject.set(x, "destination", js.Any.fromFunction3(value))
       
       inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
       
       inline def setFilename(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* filename */ String, Unit]) => Unit
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* file */ File, /* callback */ js.Function2[/* error */ js.Error | Null, /* filename */ String, Unit]) => Unit
       ): Self = StObject.set(x, "filename", js.Any.fromFunction3(value))
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
@@ -211,8 +242,8 @@ object mod {
   @js.native
   trait FileFilterCallback extends StObject {
     
+    def apply(error: js.Error): Unit = js.native
     def apply(error: Null, acceptFile: Boolean): Unit = js.native
-    def apply(error: Error): Unit = js.native
   }
   
   /**
@@ -228,7 +259,13 @@ object mod {
       * The `Request` object will be populated with a `files` array containing
       * an information object for each processed file.
       */
-    def any(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def any(): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
     /**
       * Returns middleware that processes multiple files sharing the same field
@@ -241,8 +278,20 @@ object mod {
       * @param maxCount Optional. Maximum number of files to process. (default: Infinity)
       * @throws `MulterError('LIMIT_UNEXPECTED_FILE')` if more than `maxCount` files are associated with `fieldName`
       */
-    def array(fieldName: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def array(fieldName: String, maxCount: Double): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def array(fieldName: String): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def array(fieldName: String, maxCount: Double): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
     /**
       * Returns middleware that processes multiple files associated with the
@@ -255,14 +304,26 @@ object mod {
       * @param fields Array of `Field` objects describing multipart form fields to process.
       * @throws `MulterError('LIMIT_UNEXPECTED_FILE')` if more than `maxCount` files are associated with `fieldName` for any field.
       */
-    def fields(fields: js.Array[Field]): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def fields(fields: js.Array[Field]): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
     /**
       * Returns middleware that accepts only non-file multipart form fields.
       *
       * @throws `MulterError('LIMIT_UNEXPECTED_FILE')` if any file is encountered.
       */
-    def none(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def none(): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
     /**
       * Returns middleware that processes a single file associated with the
@@ -273,7 +334,13 @@ object mod {
       *
       * @param fieldName Name of the multipart form field to process.
       */
-    def single(fieldName: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def single(fieldName: String): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
   }
   
   /** Options for initializing a Multer instance. */
@@ -298,7 +365,13 @@ object mod {
       */
     var fileFilter: js.UndefOr[
         js.Function3[
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
           /* file */ File, 
           /* callback */ FileFilterCallback, 
           Unit
@@ -335,7 +408,13 @@ object mod {
       inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       
       inline def setFileFilter(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* file */ File, /* callback */ FileFilterCallback) => Unit
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* file */ File, /* callback */ FileFilterCallback) => Unit
       ): Self = StObject.set(x, "fileFilter", js.Any.fromFunction3(value))
       
       inline def setFileFilterUndefined: Self = StObject.set(x, "fileFilter", js.undefined)
@@ -375,9 +454,15 @@ object mod {
       * @param callback Callback to specify file information.
       */
     def _handleFile(
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       file: File,
-      callback: js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[PartialFile], Unit]
+      callback: js.Function2[/* error */ js.UndefOr[Any], /* info */ js.UndefOr[PartialFile], Unit]
     ): Unit
     
     /**
@@ -391,16 +476,34 @@ object mod {
       * @param callback Callback to indicate completion.
       */
     def _removeFile(
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
       file: File,
-      callback: js.Function1[/* error */ Error, Unit]
+      callback: js.Function1[/* error */ js.Error | Null, Unit]
     ): Unit
   }
   object StorageEngine {
     
     inline def apply(
-      _handleFile: (Request_[ParamsDictionary, js.Any, js.Any, Query], File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[PartialFile], Unit]) => Unit,
-      _removeFile: (Request_[ParamsDictionary, js.Any, js.Any, Query], File, js.Function1[/* error */ Error, Unit]) => Unit
+      _handleFile: (Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ], File, js.Function2[/* error */ js.UndefOr[Any], /* info */ js.UndefOr[PartialFile], Unit]) => Unit,
+      _removeFile: (Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ], File, js.Function1[/* error */ js.Error | Null, Unit]) => Unit
     ): StorageEngine = {
       val __obj = js.Dynamic.literal(_handleFile = js.Any.fromFunction3(_handleFile), _removeFile = js.Any.fromFunction3(_removeFile))
       __obj.asInstanceOf[StorageEngine]
@@ -409,11 +512,23 @@ object mod {
     extension [Self <: StorageEngine](x: Self) {
       
       inline def set_handleFile(
-        value: (Request_[ParamsDictionary, js.Any, js.Any, Query], File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[PartialFile], Unit]) => Unit
+        value: (Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], File, js.Function2[/* error */ js.UndefOr[Any], /* info */ js.UndefOr[PartialFile], Unit]) => Unit
       ): Self = StObject.set(x, "_handleFile", js.Any.fromFunction3(value))
       
       inline def set_removeFile(
-        value: (Request_[ParamsDictionary, js.Any, js.Any, Query], File, js.Function1[/* error */ Error, Unit]) => Unit
+        value: (Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], File, js.Function1[/* error */ js.Error | Null, Unit]) => Unit
       ): Self = StObject.set(x, "_removeFile", js.Any.fromFunction3(value))
     }
   }
@@ -510,18 +625,18 @@ object mod {
       trait Request extends StObject {
         
         /** `Multer.File` object populated by `single()` middleware. */
-        var file: File
+        var file: js.UndefOr[File] = js.undefined
         
         /**
           * Array or dictionary of `Multer.File` object populated by `array()`,
           * `fields()`, and `any()` middleware.
           */
-        var files: StringDictionary[js.Array[File]] | js.Array[File]
+        var files: js.UndefOr[StringDictionary[js.Array[File]] | js.Array[File]] = js.undefined
       }
       object Request {
         
-        inline def apply(file: File, files: StringDictionary[js.Array[File]] | js.Array[File]): Request = {
-          val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
+        inline def apply(): Request = {
+          val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Request]
         }
         
@@ -529,9 +644,13 @@ object mod {
           
           inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
           
+          inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+          
           inline def setFiles(value: StringDictionary[js.Array[File]] | js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
           
-          inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+          inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+          
+          inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value*))
         }
       }
     }

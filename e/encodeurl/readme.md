@@ -10,10 +10,10 @@ Encode a URL to a percent-encoded form, excluding already-encoded sequences
 | ------------------ | :-------------: |
 | Full name          | encodeurl |
 | Keywords           | encode, encodeurl, url |
-| # releases         | 0 |
-| # dependents       | 262 |
-| # downloads        | 661100056 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.646796766666667E7 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/pillarjs/encodeurl#readme)

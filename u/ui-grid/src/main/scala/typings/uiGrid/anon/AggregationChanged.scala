@@ -11,15 +11,15 @@ trait AggregationChanged[TEntity] extends StObject {
   
   /**
     * raised whenever aggregation is changed, added or removed from a column
-    * @param {ng.IScope} scope Grid Scope
-    * @param {aggregationChangedHandler} handler Callback method
+    * @param scope Grid Scope
+    * @param handler Callback method
     */
   def aggregationChanged(scope: IScope, handler: aggregationChangedHandler[TEntity]): Unit
   
   /**
     * raised whenever the grouped columns change
-    * @param {ng.IScope} scope Grid Scope
-    * @param {groupingChangedHandler} handler Callback method
+    * @param scope Grid Scope
+    * @param handler Callback method
     */
   def groupingChanged(scope: IScope, handler: groupingChangedHandler[TEntity]): Unit
 }

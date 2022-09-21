@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains information about a Drive object&#39;s permissions that changed as
-  * a result of a permissionChange type event.
-  */
 trait SchemaPermissionChange extends StObject {
   
   /**
@@ -33,12 +29,12 @@ object SchemaPermissionChange {
     
     inline def setAddedPermissionsUndefined: Self = StObject.set(x, "addedPermissions", js.undefined)
     
-    inline def setAddedPermissionsVarargs(value: SchemaPermission*): Self = StObject.set(x, "addedPermissions", js.Array(value :_*))
+    inline def setAddedPermissionsVarargs(value: SchemaPermission*): Self = StObject.set(x, "addedPermissions", js.Array(value*))
     
     inline def setRemovedPermissions(value: js.Array[SchemaPermission]): Self = StObject.set(x, "removedPermissions", value.asInstanceOf[js.Any])
     
     inline def setRemovedPermissionsUndefined: Self = StObject.set(x, "removedPermissions", js.undefined)
     
-    inline def setRemovedPermissionsVarargs(value: SchemaPermission*): Self = StObject.set(x, "removedPermissions", js.Array(value :_*))
+    inline def setRemovedPermissionsVarargs(value: SchemaPermission*): Self = StObject.set(x, "removedPermissions", js.Array(value*))
   }
 }

@@ -11,9 +11,9 @@ A responsive image polyfill.
 | Full name          | picturefill |
 | Keywords           | picturefill, srcset, picture, responsive, responsive images |
 | # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 5305087 |
-| # stars            | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 443973.0 |
+| # stars            | 10030.0 |
 
 ## Links
 - [Homepage](https://scottjehl.github.io/picturefill/)

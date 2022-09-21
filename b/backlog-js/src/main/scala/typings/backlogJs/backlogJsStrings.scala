@@ -1,10 +1,11 @@
 package typings.backlogJs
 
-import typings.backlogJs.mod.Error.BacklogErrorNameType
-import typings.backlogJs.mod.Option.Issue.SortKey
-import typings.backlogJs.mod.Option.Order
-import typings.backlogJs.mod.Option.Project.IssueTypeColor
-import typings.backlogJs.mod.Option.Project.TextFormattingRule
+import typings.backlogJs.errorMod.BacklogErrorNameType
+import typings.backlogJs.optionMod.Issue.SortKey
+import typings.backlogJs.optionMod.Order
+import typings.backlogJs.optionMod.Project.IssueTypeColor
+import typings.backlogJs.optionMod.Project.ProjectStatusColor
+import typings.backlogJs.optionMod.Project.TextFormattingRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,6 +37,24 @@ object backlogJsStrings {
   inline def Numbersign2779ca: Numbersign2779ca = "#2779ca".asInstanceOf[Numbersign2779ca]
   
   @js.native
+  sealed trait Numbersign393939
+    extends StObject
+       with ProjectStatusColor
+  inline def Numbersign393939: Numbersign393939 = "#393939".asInstanceOf[Numbersign393939]
+  
+  @js.native
+  sealed trait Numbersign3b9dbd
+    extends StObject
+       with ProjectStatusColor
+  inline def Numbersign3b9dbd: Numbersign3b9dbd = "#3b9dbd".asInstanceOf[Numbersign3b9dbd]
+  
+  @js.native
+  sealed trait Numbersign4caf93
+    extends StObject
+       with ProjectStatusColor
+  inline def Numbersign4caf93: Numbersign4caf93 = "#4caf93".asInstanceOf[Numbersign4caf93]
+  
+  @js.native
   sealed trait Numbersign666665
     extends StObject
        with IssueTypeColor
@@ -54,6 +73,12 @@ object backlogJsStrings {
   inline def Numbersign814fbc: Numbersign814fbc = "#814fbc".asInstanceOf[Numbersign814fbc]
   
   @js.native
+  sealed trait Numbersign868cb7
+    extends StObject
+       with ProjectStatusColor
+  inline def Numbersign868cb7: Numbersign868cb7 = "#868cb7".asInstanceOf[Numbersign868cb7]
+  
+  @js.native
   sealed trait Numbersign934981
     extends StObject
        with IssueTypeColor
@@ -66,10 +91,46 @@ object backlogJsStrings {
   inline def Numbersign990000: Numbersign990000 = "#990000".asInstanceOf[Numbersign990000]
   
   @js.native
+  sealed trait Numbersignb0be3c
+    extends StObject
+       with ProjectStatusColor
+  inline def Numbersignb0be3c: Numbersignb0be3c = "#b0be3c".asInstanceOf[Numbersignb0be3c]
+  
+  @js.native
+  sealed trait Numbersigne07b9a
+    extends StObject
+       with ProjectStatusColor
+  inline def Numbersigne07b9a: Numbersigne07b9a = "#e07b9a".asInstanceOf[Numbersigne07b9a]
+  
+  @js.native
   sealed trait Numbersigne30000
     extends StObject
        with IssueTypeColor
   inline def Numbersigne30000: Numbersigne30000 = "#e30000".asInstanceOf[Numbersigne30000]
+  
+  @js.native
+  sealed trait Numbersigne87758
+    extends StObject
+       with ProjectStatusColor
+  inline def Numbersigne87758: Numbersigne87758 = "#e87758".asInstanceOf[Numbersigne87758]
+  
+  @js.native
+  sealed trait Numbersignea2c00
+    extends StObject
+       with ProjectStatusColor
+  inline def Numbersignea2c00: Numbersignea2c00 = "#ea2c00".asInstanceOf[Numbersignea2c00]
+  
+  @js.native
+  sealed trait Numbersigneda62a
+    extends StObject
+       with ProjectStatusColor
+  inline def Numbersigneda62a: Numbersigneda62a = "#eda62a".asInstanceOf[Numbersigneda62a]
+  
+  @js.native
+  sealed trait Numbersignf42858
+    extends StObject
+       with ProjectStatusColor
+  inline def Numbersignf42858: Numbersignf42858 = "#f42858".asInstanceOf[Numbersignf42858]
   
   @js.native
   sealed trait Numbersignff3265

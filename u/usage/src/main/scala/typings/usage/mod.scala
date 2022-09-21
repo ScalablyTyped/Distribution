@@ -1,6 +1,5 @@
 package typings.usage
 
-import typings.std.Error
 import typings.usage.anon.Rss
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,11 +14,11 @@ object mod {
   inline def clearHistory(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearHistory")().asInstanceOf[Unit]
   inline def clearHistory(pid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearHistory")(pid.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def lookup(pid: Double, callback: js.Function2[/* err */ Error, /* result */ ResultObject, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lookup(pid: Double, callback: js.Function2[/* err */ js.Error, /* result */ ResultObject, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def lookup(
     pid: Double,
     options: Options,
-    callback: js.Function2[/* err */ Error, /* result */ ResultObject, Unit]
+    callback: js.Function2[/* err */ js.Error, /* result */ ResultObject, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Options extends StObject {

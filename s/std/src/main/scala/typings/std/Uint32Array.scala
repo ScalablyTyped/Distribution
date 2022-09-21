@@ -12,26 +12,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Uint32Array
   extends StObject
-     with /* index */ NumberDictionary[Double] {
+     with /* standard es5 */
+/* index */ NumberDictionary[Double] {
   
   /**
     * The size in bytes of each element in the array.
     */
+  /* standard es5 */
   val BYTES_PER_ELEMENT: Double = js.native
+  
+  /**
+    * Returns the item located at the specified index.
+    * @param index The zero-based index of the desired code unit. A negative index will count back from the last item.
+    */
+  /* standard es2022.array */
+  def at(index: Double): js.UndefOr[Double] = js.native
   
   /**
     * The ArrayBuffer instance referenced by the array.
     */
+  /* standard es5 */
   val buffer: ArrayBufferLike = js.native
   
   /**
     * The length in bytes of the array.
     */
+  /* standard es5 */
   val byteLength: Double = js.native
   
   /**
     * The offset in bytes of the array.
     */
+  /* standard es5 */
   val byteOffset: Double = js.native
   
   /**
@@ -43,12 +55,14 @@ trait Uint32Array
     * is treated as length+end.
     * @param end If not specified, length of the this object is used as its default value.
     */
+  /* standard es5 */
   def copyWithin(target: Double, start: Double): this.type = js.native
   def copyWithin(target: Double, start: Double, end: Double): this.type = js.native
   
   /**
     * Returns an array of key, value pairs for every entry in the array
     */
+  /* standard es2015.iterable */
   def entries(): IterableIterator[js.Tuple2[Double, Double]] = js.native
   
   /**
@@ -59,20 +73,22 @@ trait Uint32Array
     * @param thisArg An object to which the this keyword can refer in the predicate function.
     * If thisArg is omitted, undefined is used as the this value.
     */
-  def every(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any]): scala.Boolean = js.native
+  /* standard es5 */
+  def every(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any]): scala.Boolean = js.native
   def every(
-    predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any],
-    thisArg: js.Any
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any],
+    thisArg: Any
   ): scala.Boolean = js.native
   
   /**
-    * Returns the this object after filling the section identified by start and end with value
+    * Changes all array elements from `start` to `end` index to a static `value` and returns the modified array
     * @param value value to fill array section with
     * @param start index to start filling the array at. If start is negative, it is treated as
     * length+start where length is the length of the array.
     * @param end index to stop filling the array at. If end is negative, it is treated as
     * length+end.
     */
+  /* standard es5 */
   def fill(value: Double): this.type = js.native
   def fill(value: Double, start: Double): this.type = js.native
   def fill(value: Double, start: Double, end: Double): this.type = js.native
@@ -85,11 +101,12 @@ trait Uint32Array
     * @param thisArg An object to which the this keyword can refer in the predicate function.
     * If thisArg is omitted, undefined is used as the this value.
     */
-  def filter(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any]): Uint32Array = js.native
+  /* standard es5 */
+  def filter(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any]): js.typedarray.Uint32Array = js.native
   def filter(
-    predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any],
-    thisArg: js.Any
-  ): Uint32Array = js.native
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any],
+    thisArg: Any
+  ): js.typedarray.Uint32Array = js.native
   
   /**
     * Returns the value of the first element in the array where predicate is true, and undefined
@@ -100,12 +117,13 @@ trait Uint32Array
     * @param thisArg If provided, it will be used as the this value for each invocation of
     * predicate. If it is not provided, undefined is used instead.
     */
+  /* standard es5 */
   def find(
     predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean]
   ): js.UndefOr[Double] = js.native
   def find(
     predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): js.UndefOr[Double] = js.native
   
   /**
@@ -117,12 +135,13 @@ trait Uint32Array
     * @param thisArg If provided, it will be used as the this value for each invocation of
     * predicate. If it is not provided, undefined is used instead.
     */
+  /* standard es5 */
   def findIndex(
     predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean]
   ): Double = js.native
   def findIndex(
     predicate: js.Function3[/* value */ Double, /* index */ Double, /* obj */ this.type, scala.Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): Double = js.native
   
   /**
@@ -132,10 +151,11 @@ trait Uint32Array
     * @param thisArg  An object to which the this keyword can refer in the callbackfn function.
     * If thisArg is omitted, undefined is used as the this value.
     */
+  /* standard es5 */
   def forEach(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Unit]): Unit = js.native
   def forEach(
     callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Unit],
-    thisArg: js.Any
+    thisArg: Any
   ): Unit = js.native
   
   /**
@@ -143,6 +163,7 @@ trait Uint32Array
     * @param searchElement The element to search for.
     * @param fromIndex The position in this array at which to begin searching for searchElement.
     */
+  /* standard es2016.array.include */
   def includes(searchElement: Double): scala.Boolean = js.native
   def includes(searchElement: Double, fromIndex: Double): scala.Boolean = js.native
   
@@ -152,9 +173,11 @@ trait Uint32Array
     * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the
     *  search starts at index 0.
     */
+  /* standard es5 */
   def indexOf(searchElement: Double): Double = js.native
   def indexOf(searchElement: Double, fromIndex: Double): Double = js.native
   
+  /* standard es2015.iterable */
   @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Double]] = js.native
   
@@ -163,12 +186,14 @@ trait Uint32Array
     * @param separator A string used to separate one element of an array from the next in the
     * resulting String. If omitted, the array elements are separated with a comma.
     */
+  /* standard es5 */
   def join(): java.lang.String = js.native
   def join(separator: java.lang.String): java.lang.String = js.native
   
   /**
     * Returns an list of keys in the array
     */
+  /* standard es2015.iterable */
   def keys(): IterableIterator[Double] = js.native
   
   /**
@@ -177,12 +202,14 @@ trait Uint32Array
     * @param fromIndex The array index at which to begin the search. If fromIndex is omitted, the
     * search starts at index 0.
     */
+  /* standard es5 */
   def lastIndexOf(searchElement: Double): Double = js.native
   def lastIndexOf(searchElement: Double, fromIndex: Double): Double = js.native
   
   /**
     * The length of the array.
     */
+  /* standard es5 */
   val length: Double = js.native
   
   /**
@@ -193,11 +220,12 @@ trait Uint32Array
     * @param thisArg An object to which the this keyword can refer in the callbackfn function.
     * If thisArg is omitted, undefined is used as the this value.
     */
-  def map(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Double]): Uint32Array = js.native
+  /* standard es5 */
+  def map(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Double]): js.typedarray.Uint32Array = js.native
   def map(
     callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Double],
-    thisArg: js.Any
-  ): Uint32Array = js.native
+    thisArg: Any
+  ): js.typedarray.Uint32Array = js.native
   
   /**
     * Calls the specified callback function for all the elements in an array. The return value of
@@ -209,6 +237,7 @@ trait Uint32Array
     * the accumulation. The first call to the callbackfn function provides this value as an argument
     * instead of an array value.
     */
+  /* standard es5 */
   def reduce(
     callbackfn: js.Function4[
       /* previousValue */ Double, 
@@ -218,6 +247,7 @@ trait Uint32Array
       Double
     ]
   ): Double = js.native
+  /* standard es5 */
   def reduce(
     callbackfn: js.Function4[
       /* previousValue */ Double, 
@@ -238,6 +268,7 @@ trait Uint32Array
     * the accumulation. The first call to the callbackfn function provides this value as an argument
     * instead of an array value.
     */
+  /* standard es5 */
   def reduce[U](
     callbackfn: js.Function4[
       /* previousValue */ U, 
@@ -259,6 +290,7 @@ trait Uint32Array
     * the accumulation. The first call to the callbackfn function provides this value as an
     * argument instead of an array value.
     */
+  /* standard es5 */
   def reduceRight(
     callbackfn: js.Function4[
       /* previousValue */ Double, 
@@ -268,6 +300,7 @@ trait Uint32Array
       Double
     ]
   ): Double = js.native
+  /* standard es5 */
   def reduceRight(
     callbackfn: js.Function4[
       /* previousValue */ Double, 
@@ -288,6 +321,7 @@ trait Uint32Array
     * the accumulation. The first call to the callbackfn function provides this value as an argument
     * instead of an array value.
     */
+  /* standard es5 */
   def reduceRight[U](
     callbackfn: js.Function4[
       /* previousValue */ U, 
@@ -302,13 +336,15 @@ trait Uint32Array
   /**
     * Reverses the elements in an Array.
     */
-  def reverse(): Uint32Array = js.native
+  /* standard es5 */
+  def reverse(): js.typedarray.Uint32Array = js.native
   
   /**
     * Sets a value or an array of values.
     * @param array A typed or untyped array of values to set.
     * @param offset The index in the current array at which the values are to be written.
     */
+  /* standard es5 */
   def set(array: ArrayLike[Double]): Unit = js.native
   def set(array: ArrayLike[Double], offset: Double): Unit = js.native
   
@@ -317,10 +353,11 @@ trait Uint32Array
     * @param start The beginning of the specified portion of the array.
     * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
-  def slice(): Uint32Array = js.native
-  def slice(start: Double): Uint32Array = js.native
-  def slice(start: Double, end: Double): Uint32Array = js.native
-  def slice(start: Unit, end: Double): Uint32Array = js.native
+  /* standard es5 */
+  def slice(): js.typedarray.Uint32Array = js.native
+  def slice(start: Double): js.typedarray.Uint32Array = js.native
+  def slice(start: Double, end: Double): js.typedarray.Uint32Array = js.native
+  def slice(start: Unit, end: Double): js.typedarray.Uint32Array = js.native
   
   /**
     * Determines whether the specified callback function returns true for any element of an array.
@@ -330,21 +367,23 @@ trait Uint32Array
     * @param thisArg An object to which the this keyword can refer in the predicate function.
     * If thisArg is omitted, undefined is used as the this value.
     */
-  def some(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any]): scala.Boolean = js.native
+  /* standard es5 */
+  def some(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any]): scala.Boolean = js.native
   def some(
-    predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any],
-    thisArg: js.Any
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any],
+    thisArg: Any
   ): scala.Boolean = js.native
   
   /**
     * Sorts an array.
     * @param compareFn Function used to determine the order of the elements. It is expected to return
     * a negative value if first argument is less than second argument, zero if they're equal and a positive
-    * value otherwise. If omitted, the elements are sorted in ascending, ASCII character order.
+    * value otherwise. If omitted, the elements are sorted in ascending order.
     * ```ts
     * [11,2,22,1].sort((a, b) => a - b)
     * ```
     */
+  /* standard es5 */
   def sort(): this.type = js.native
   def sort(compareFn: js.Function2[/* a */ Double, /* b */ Double, Double]): this.type = js.native
   
@@ -354,16 +393,19 @@ trait Uint32Array
     * @param begin The index of the beginning of the array.
     * @param end The index of the end of the array.
     */
-  def subarray(): Uint32Array = js.native
-  def subarray(begin: Double): Uint32Array = js.native
-  def subarray(begin: Double, end: Double): Uint32Array = js.native
-  def subarray(begin: Unit, end: Double): Uint32Array = js.native
+  /* standard es5 */
+  def subarray(): js.typedarray.Uint32Array = js.native
+  def subarray(begin: Double): js.typedarray.Uint32Array = js.native
+  def subarray(begin: Double, end: Double): js.typedarray.Uint32Array = js.native
+  def subarray(begin: Unit, end: Double): js.typedarray.Uint32Array = js.native
   
+  /* standard es2015.symbol.wellknown */
   @JSName(js.Symbol.toStringTag)
   val toStringTag: typings.std.stdStrings.Uint32Array = js.native
   
   /**
     * Returns an list of values in the array
     */
+  /* standard es2015.iterable */
   def values(): IterableIterator[Double] = js.native
 }

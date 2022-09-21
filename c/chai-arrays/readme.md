@@ -1,7 +1,7 @@
 
 # Scala.js typings for chai-arrays
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 a simple chai plugin for better array assertions
@@ -10,15 +10,12 @@ a simple chai plugin for better array assertions
 | ------------------ | :-------------: |
 | Full name          | chai-arrays |
 | Keywords           | chai, chai-plugin, testing, assert, expect, Array |
-| # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 1513975 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 142001.66666666666 |
+| # stars            | 7.0 |
 
 ## Links
-- [Homepage](https://github.com/GaneshSPatil/chai-arrays#readme)
-- [Bugs](https://github.com/GaneshSPatil/chai-arrays/issues)
-- [Repository](https://github.com/GaneshSPatil/chai-arrays)
 - [Npm](https://www.npmjs.com/package/chai-arrays)
     
 

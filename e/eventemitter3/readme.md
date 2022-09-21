@@ -10,15 +10,12 @@ EventEmitter3 focuses on performance while maintaining a Node.js AND browser com
 | ------------------ | :-------------: |
 | Full name          | eventemitter3 |
 | Keywords           | EventEmitter, EventEmitter2, EventEmitter3, Events, addEventListener, addListener, emit, emits, emitter, event, once, pub/sub, publish, reactor, subscribe |
-| # releases         | 11 |
-| # dependents       | 2159 |
-| # downloads        | 704692470 |
-| # stars            | 40 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 9.3906648E7 |
+| # stars            | 2665.0 |
 
 ## Links
-- [Homepage](https://github.com/primus/eventemitter3#readme)
-- [Bugs](https://github.com/primus/eventemitter3/issues)
-- [Repository](https://github.com/primus/eventemitter3)
 - [Npm](https://www.npmjs.com/package/eventemitter3)
     
 

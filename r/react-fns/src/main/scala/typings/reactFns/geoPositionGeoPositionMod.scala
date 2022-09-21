@@ -12,14 +12,13 @@ object geoPositionGeoPositionMod {
   
   @JSImport("react-fns/dist/GeoPosition/GeoPosition", "GeoPosition")
   @js.native
-  class GeoPosition protected ()
-    extends Component[SharedRenderProps[GeoPositionProps], GeoPositionProps, js.Any] {
+  open class GeoPosition protected () extends Component[SharedRenderProps[GeoPositionProps], GeoPositionProps, Any] {
     def this(props: SharedRenderProps[GeoPositionProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SharedRenderProps[GeoPositionProps], context: js.Any) = this()
+    def this(props: SharedRenderProps[GeoPositionProps], context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MGeoPosition(): Unit = js.native
@@ -27,7 +26,7 @@ object geoPositionGeoPositionMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MGeoPosition(): Unit = js.native
     
-    var geoId: js.Any = js.native
+    var geoId: Any = js.native
     
     def requestGeo(): Unit = js.native
     
@@ -40,7 +39,7 @@ object geoPositionGeoPositionMod {
     var coords: js.UndefOr[Latitude] = js.undefined
     
     var error: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PositionError */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PositionError */ Any
       ] = js.undefined
     
     var isLoading: Boolean
@@ -59,7 +58,7 @@ object geoPositionGeoPositionMod {
       inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
       
       inline def setError(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PositionError */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PositionError */ Any
       ): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)

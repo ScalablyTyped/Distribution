@@ -1,5 +1,7 @@
 package typings.maximMazurokGapiClientMl.gapi.client.ml
 
+import org.scalablytyped.runtime.TopLevel
+import typings.maximMazurokGapiClientMl.maximMazurokGapiClientMlStrings.GoogleCloudMlV1__TrainingOutput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,6 +31,17 @@ trait GoogleCloudMlV1TrainingOutput extends StObject {
   
   /** Results for individual Hyperparameter trials. Only set for hyperparameter tuning jobs. */
   var trials: js.UndefOr[js.Array[GoogleCloudMlV1HyperparameterOutput]] = js.undefined
+  
+  /**
+    * Output only. URIs for accessing [interactive shells](https://cloud.google.com/ai-platform/training/docs/monitor-debug-interactive-shell) (one URI for each training node). Only
+    * available if training_input.enable_web_access is `true`. The keys are names of each node in the training job; for example, `master-replica-0` for the master node, `worker-replica-0`
+    * for the first worker, and `ps-replica-0` for the first parameter server. The values are the URIs for each node's interactive shell.
+    */
+  var webAccessUris: js.UndefOr[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in string ]: string}
+    */ GoogleCloudMlV1__TrainingOutput & TopLevel[Any]
+  ] = js.undefined
 }
 object GoogleCloudMlV1TrainingOutput {
   
@@ -67,6 +80,14 @@ object GoogleCloudMlV1TrainingOutput {
     
     inline def setTrialsUndefined: Self = StObject.set(x, "trials", js.undefined)
     
-    inline def setTrialsVarargs(value: GoogleCloudMlV1HyperparameterOutput*): Self = StObject.set(x, "trials", js.Array(value :_*))
+    inline def setTrialsVarargs(value: GoogleCloudMlV1HyperparameterOutput*): Self = StObject.set(x, "trials", js.Array(value*))
+    
+    inline def setWebAccessUris(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: string}
+      */ GoogleCloudMlV1__TrainingOutput & TopLevel[Any]
+    ): Self = StObject.set(x, "webAccessUris", value.asInstanceOf[js.Any])
+    
+    inline def setWebAccessUrisUndefined: Self = StObject.set(x, "webAccessUris", js.undefined)
   }
 }

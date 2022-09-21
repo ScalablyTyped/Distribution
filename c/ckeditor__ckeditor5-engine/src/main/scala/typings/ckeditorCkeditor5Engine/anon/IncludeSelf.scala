@@ -6,14 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IncludeSelf extends StObject {
   
-  var includeSelf: Boolean
-  
-  var parentFirst: Boolean
+  var includeSelf: js.UndefOr[Boolean] = js.undefined
 }
 object IncludeSelf {
   
-  inline def apply(includeSelf: Boolean, parentFirst: Boolean): IncludeSelf = {
-    val __obj = js.Dynamic.literal(includeSelf = includeSelf.asInstanceOf[js.Any], parentFirst = parentFirst.asInstanceOf[js.Any])
+  inline def apply(): IncludeSelf = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncludeSelf]
   }
   
@@ -21,6 +19,6 @@ object IncludeSelf {
     
     inline def setIncludeSelf(value: Boolean): Self = StObject.set(x, "includeSelf", value.asInstanceOf[js.Any])
     
-    inline def setParentFirst(value: Boolean): Self = StObject.set(x, "parentFirst", value.asInstanceOf[js.Any])
+    inline def setIncludeSelfUndefined: Self = StObject.set(x, "includeSelf", js.undefined)
   }
 }

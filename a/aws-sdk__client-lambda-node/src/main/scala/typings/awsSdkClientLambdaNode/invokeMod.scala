@@ -8,5 +8,5 @@ object invokeMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/Invoke", "Invoke")
   @js.native
-  val Invoke: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val Invoke: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

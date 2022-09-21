@@ -1,0 +1,29 @@
+package typings.googleapis.dialogflowV3Mod.dialogflowV3
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaGoogleCloudDialogflowCxV3beta1IntentInput extends StObject {
+  
+  /**
+    * Required. The unique identifier of the intent. Format: `projects//locations//agents//intents/`.
+    */
+  var intent: js.UndefOr[String | Null] = js.undefined
+}
+object SchemaGoogleCloudDialogflowCxV3beta1IntentInput {
+  
+  inline def apply(): SchemaGoogleCloudDialogflowCxV3beta1IntentInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaGoogleCloudDialogflowCxV3beta1IntentInput]
+  }
+  
+  extension [Self <: SchemaGoogleCloudDialogflowCxV3beta1IntentInput](x: Self) {
+    
+    inline def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    
+    inline def setIntentNull: Self = StObject.set(x, "intent", null)
+    
+    inline def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
+  }
+}

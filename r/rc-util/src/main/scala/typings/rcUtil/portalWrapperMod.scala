@@ -1,8 +1,7 @@
 package typings.rcUtil
 
 import typings.rcUtil.anon.AfterClose
-import typings.rcUtil.anon.PrevProps
-import typings.rcUtil.anon.PrevPropsAny
+import typings.rcUtil.anon.PartialPortalWrapperProps
 import typings.rcUtil.portalMod.PortalRef
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
@@ -20,17 +19,8 @@ object portalWrapperMod {
   
   @JSImport("rc-util/lib/PortalWrapper", JSImport.Default)
   @js.native
-  class default protected () extends PortalWrapper {
+  open class default protected () extends PortalWrapper {
     def this(props: PortalWrapperProps) = this()
-  }
-  object default {
-    
-    @JSImport("rc-util/lib/PortalWrapper", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    inline def getDerivedStateFromProps(props: js.Any, hasPrevProps_self: PrevProps): PrevPropsAny = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], hasPrevProps_self.asInstanceOf[js.Any])).asInstanceOf[PrevPropsAny]
   }
   
   inline def getOpenCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpenCount")().asInstanceOf[Double]
@@ -39,7 +29,7 @@ object portalWrapperMod {
   
   @js.native
   trait PortalWrapper
-    extends Component[PortalWrapperProps, PortalWrapperState, js.Any] {
+    extends Component[PortalWrapperProps, js.Object, Any] {
     
     def attachToParent(): Boolean = js.native
     def attachToParent(force: Boolean): Boolean = js.native
@@ -48,7 +38,7 @@ object portalWrapperMod {
     def componentDidMount_MPortalWrapper(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MPortalWrapper(): Unit = js.native
+    def componentDidUpdate_MPortalWrapper(prevProps: PortalWrapperProps): Unit = js.native
     
     var componentRef: RefObject[PortalRef] = js.native
     
@@ -65,6 +55,8 @@ object portalWrapperMod {
     
     var renderComponent: js.UndefOr[js.Function1[/* info */ AfterClose, Unit]] = js.native
     
+    var scrollLocker: typings.rcUtil.scrollLockerMod.default = js.native
+    
     def setWrapperClassName(): Unit = js.native
     
     /**
@@ -76,6 +68,12 @@ object portalWrapperMod {
       * @memberof PortalWrapper
       */
     def switchScrollingEffect(): Unit = js.native
+    
+    def updateOpenCount(): Unit = js.native
+    def updateOpenCount(prevProps: PartialPortalWrapperProps): Unit = js.native
+    
+    def updateScrollLocker(): Unit = js.native
+    def updateScrollLocker(prevProps: PartialPortalWrapperProps): Unit = js.native
   }
   
   trait PortalWrapperProps extends StObject {
@@ -118,23 +116,6 @@ object portalWrapperMod {
       inline def setWrapperClassName(value: String): Self = StObject.set(x, "wrapperClassName", value.asInstanceOf[js.Any])
       
       inline def setWrapperClassNameUndefined: Self = StObject.set(x, "wrapperClassName", js.undefined)
-    }
-  }
-  
-  trait PortalWrapperState extends StObject {
-    
-    var _self: PortalWrapper
-  }
-  object PortalWrapperState {
-    
-    inline def apply(_self: PortalWrapper): PortalWrapperState = {
-      val __obj = js.Dynamic.literal(_self = _self.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PortalWrapperState]
-    }
-    
-    extension [Self <: PortalWrapperState](x: Self) {
-      
-      inline def set_self(value: PortalWrapper): Self = StObject.set(x, "_self", value.asInstanceOf[js.Any])
     }
   }
 }

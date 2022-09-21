@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DatasetContentDeliveryDestination extends StObject {
   
   /**
-    * Configuration information for delivery of dataset contents to AWS IoT Events.
+    * Configuration information for delivery of dataset contents to IoT Events.
     */
   var iotEventsDestinationConfiguration: js.UndefOr[IotEventsDestinationConfiguration] = js.undefined
   

@@ -10,10 +10,10 @@ A jQuery image zoom plug-in, with tints, easing and gallery integration.
 | ------------------ | :-------------: |
 | Full name          | ez-plus |
 | Keywords           | zoom, effects, elements, zooming |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 61952 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5759.0 |
+| # stars            | 151.0 |
 
 ## Links
 - [Homepage](http://igorlino.github.io/elevatezoom-plus/)

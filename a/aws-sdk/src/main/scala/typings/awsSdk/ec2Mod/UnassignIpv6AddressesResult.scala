@@ -15,6 +15,11 @@ trait UnassignIpv6AddressesResult extends StObject {
     * The IPv6 addresses that have been unassigned from the network interface.
     */
   var UnassignedIpv6Addresses: js.UndefOr[Ipv6AddressList] = js.undefined
+  
+  /**
+    * The IPv4 prefixes that have been unassigned from the network interface.
+    */
+  var UnassignedIpv6Prefixes: js.UndefOr[IpPrefixList] = js.undefined
 }
 object UnassignIpv6AddressesResult {
   
@@ -33,6 +38,12 @@ object UnassignIpv6AddressesResult {
     
     inline def setUnassignedIpv6AddressesUndefined: Self = StObject.set(x, "UnassignedIpv6Addresses", js.undefined)
     
-    inline def setUnassignedIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "UnassignedIpv6Addresses", js.Array(value :_*))
+    inline def setUnassignedIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "UnassignedIpv6Addresses", js.Array(value*))
+    
+    inline def setUnassignedIpv6Prefixes(value: IpPrefixList): Self = StObject.set(x, "UnassignedIpv6Prefixes", value.asInstanceOf[js.Any])
+    
+    inline def setUnassignedIpv6PrefixesUndefined: Self = StObject.set(x, "UnassignedIpv6Prefixes", js.undefined)
+    
+    inline def setUnassignedIpv6PrefixesVarargs(value: String*): Self = StObject.set(x, "UnassignedIpv6Prefixes", js.Array(value*))
   }
 }

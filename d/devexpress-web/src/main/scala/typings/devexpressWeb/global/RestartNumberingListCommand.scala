@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("RestartNumberingListCommand")
 @js.native
-class RestartNumberingListCommand ()
+open class RestartNumberingListCommand ()
   extends StObject
      with typings.devexpressWeb.RestartNumberingListCommand {
   

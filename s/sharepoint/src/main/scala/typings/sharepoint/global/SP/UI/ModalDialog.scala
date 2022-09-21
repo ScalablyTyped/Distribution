@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a modal dialog */
 @JSGlobal("SP.UI.ModalDialog")
 @js.native
-class ModalDialog ()
+open class ModalDialog ()
   extends StObject
      with typings.sharepoint.SP.UI.ModalDialog {
   
@@ -19,7 +19,7 @@ class ModalDialog ()
   override def autoSize(): Unit = js.native
   
   /* CompleteClass */
-  override def autoSizeSuppressScrollbar(resizePageCallBack: js.Any): Unit = js.native
+  override def autoSizeSuppressScrollbar(resizePageCallBack: Any): Unit = js.native
   
   /** Closes the dialog using the specified dialog result. */
   /* CompleteClass */
@@ -29,7 +29,7 @@ class ModalDialog ()
   override def get_allowMaximize(): Boolean = js.native
   
   /* CompleteClass */
-  override def get_args(): js.Any = js.native
+  override def get_args(): Any = js.native
   
   /* CompleteClass */
   override def get_closed(): Boolean = js.native
@@ -53,7 +53,7 @@ class ModalDialog ()
   override def get_lastTabStop(): HTMLElement = js.native
   
   /* CompleteClass */
-  override def get_returnValue(): js.Any = js.native
+  override def get_returnValue(): Any = js.native
   
   /* CompleteClass */
   override def get_showClose(): Boolean = js.native
@@ -65,7 +65,7 @@ class ModalDialog ()
   override def get_url(): String = js.native
   
   /* CompleteClass */
-  override def set_returnValue(value: js.Any): Unit = js.native
+  override def set_returnValue(value: Any): Unit = js.native
 }
 object ModalDialog {
   
@@ -90,7 +90,7 @@ object ModalDialog {
   
   /** Should be called from an existing dialog. */
   /* static member */
-  inline def commonModalDialogClose(dialogResult: typings.sharepoint.SP.UI.DialogResult, returnValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogClose")(dialogResult.asInstanceOf[js.Any], returnValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def commonModalDialogClose(dialogResult: typings.sharepoint.SP.UI.DialogResult, returnValue: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogClose")(dialogResult.asInstanceOf[js.Any], returnValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Shows a modal dialog, specified by url, callback, args, and options. Internally, uses SP.UI.ModalDialog.showModalDialog.
     @param url overrides options.url
@@ -98,9 +98,9 @@ object ModalDialog {
     @param args overrides options.args */
   /* static member */
   inline def commonModalDialogOpen(url: String, options: IDialogOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogOpen")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def commonModalDialogOpen(url: String, options: IDialogOptions, callback: Unit, args: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogOpen")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def commonModalDialogOpen(url: String, options: IDialogOptions, callback: Unit, args: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogOpen")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def commonModalDialogOpen(url: String, options: IDialogOptions, callback: DialogReturnValueCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogOpen")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def commonModalDialogOpen(url: String, options: IDialogOptions, callback: DialogReturnValueCallback, args: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogOpen")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def commonModalDialogOpen(url: String, options: IDialogOptions, callback: DialogReturnValueCallback, args: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commonModalDialogOpen")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   inline def getChildDialog(): typings.sharepoint.SP.UI.ModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("get_childDialog")().asInstanceOf[typings.sharepoint.SP.UI.ModalDialog]

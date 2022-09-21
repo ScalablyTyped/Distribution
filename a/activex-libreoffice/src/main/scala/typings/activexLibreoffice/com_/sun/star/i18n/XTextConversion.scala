@@ -44,7 +44,7 @@ trait XTextConversion
     * @param Locale Locale the conversion is referring to.
     * @param nTextConversionType One of {@link TextConversionType} values.
     * @param nTextConversionOptions Combination of {@link TextConversionOption} values.
-    * @returns {@link TextConversionResult}
+    * @returns
     * @throws NoSupportException when **nConversionDictionaryType** is not known by the implementation, or when the locale is not supported.
     */
   def getConversions(
@@ -73,7 +73,7 @@ object XTextConversion {
     getConversion: (String, Double, Double, Locale, Double, Double) => String,
     getConversions: (String, Double, Double, Locale, Double, Double) => TextConversionResult,
     interactiveConversion: (Locale, Double, Double) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTextConversion = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getConversion = js.Any.fromFunction6(getConversion), getConversions = js.Any.fromFunction6(getConversions), interactiveConversion = js.Any.fromFunction3(interactiveConversion), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

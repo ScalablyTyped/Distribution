@@ -11,7 +11,7 @@ object links {
   
   @JSImport("react-native-firebase", "RNFirebase.links.DynamicLink")
   @js.native
-  class DynamicLink protected () extends StObject {
+  open class DynamicLink protected () extends StObject {
     def this(link: String, domainURIPrefix: String) = this()
     
     var analytics: AnalyticsParameters = js.native
@@ -173,23 +173,19 @@ object links {
     }
   }
   
-  @js.native
   trait Links extends StObject {
     
     /** Creates a standard dynamic link. */
-    def createDynamicLink(dynamicLink: DynamicLink): js.Promise[String] = js.native
+    def createDynamicLink(dynamicLink: DynamicLink): js.Promise[String]
     
     /** Creates a short dynamic link. */
-    @JSName("createShortDynamicLink")
-    def createShortDynamicLink_SHORT(dynamicLink: DynamicLink, `type`: SHORT): js.Promise[String] = js.native
-    @JSName("createShortDynamicLink")
-    def createShortDynamicLink_UNGUESSABLE(dynamicLink: DynamicLink, `type`: UNGUESSABLE): js.Promise[String] = js.native
+    def createShortDynamicLink(dynamicLink: DynamicLink, `type`: SHORT | UNGUESSABLE): js.Promise[String]
     
     /**
       * Returns the URL that the app has been launched from. If the app was
       * not launched from a URL the return value will be null.
       */
-    def getInitialLink(): js.Promise[String | Null] = js.native
+    def getInitialLink(): js.Promise[String | Null]
     
     /**
       * Subscribe to URL open events while the app is still running.
@@ -199,7 +195,30 @@ object links {
       * Returns an unsubscribe function, call the returned function to
       * unsubscribe from all future events.
       */
-    def onLink(listener: js.Function1[/* url */ String, Unit]): js.Function0[Unit] = js.native
+    def onLink(listener: js.Function1[/* url */ String, Unit]): js.Function0[Unit]
+  }
+  object Links {
+    
+    inline def apply(
+      createDynamicLink: DynamicLink => js.Promise[String],
+      createShortDynamicLink: (DynamicLink, SHORT | UNGUESSABLE) => js.Promise[String],
+      getInitialLink: () => js.Promise[String | Null],
+      onLink: js.Function1[/* url */ String, Unit] => js.Function0[Unit]
+    ): Links = {
+      val __obj = js.Dynamic.literal(createDynamicLink = js.Any.fromFunction1(createDynamicLink), createShortDynamicLink = js.Any.fromFunction2(createShortDynamicLink), getInitialLink = js.Any.fromFunction0(getInitialLink), onLink = js.Any.fromFunction1(onLink))
+      __obj.asInstanceOf[Links]
+    }
+    
+    extension [Self <: Links](x: Self) {
+      
+      inline def setCreateDynamicLink(value: DynamicLink => js.Promise[String]): Self = StObject.set(x, "createDynamicLink", js.Any.fromFunction1(value))
+      
+      inline def setCreateShortDynamicLink(value: (DynamicLink, SHORT | UNGUESSABLE) => js.Promise[String]): Self = StObject.set(x, "createShortDynamicLink", js.Any.fromFunction2(value))
+      
+      inline def setGetInitialLink(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getInitialLink", js.Any.fromFunction0(value))
+      
+      inline def setOnLink(value: js.Function1[/* url */ String, Unit] => js.Function0[Unit]): Self = StObject.set(x, "onLink", js.Any.fromFunction1(value))
+    }
   }
   
   trait LinksStatics extends StObject {

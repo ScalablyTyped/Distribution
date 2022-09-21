@@ -29,7 +29,7 @@ trait ScaleData extends StObject {
     *
     * If the minimum is automatic, this means, each view that represents the model containing this scale, has to calculate a minimum by its own means.
     */
-  var Maximum: js.Any
+  var Maximum: Any
   
   /**
     * if the any contains a double value this is used as a fixed maximum. Otherwise, if the any is empty or contains an incompatible type, the maximum is
@@ -37,7 +37,7 @@ trait ScaleData extends StObject {
     *
     * If the maximum is automatic, this means, each view that represents the model containing this scale, has to calculate a maximum by its own means.
     */
-  var Minimum: js.Any
+  var Minimum: Any
   
   /**
     * {@link Axis} orientation (standard or reversed).
@@ -53,7 +53,7 @@ trait ScaleData extends StObject {
     * The Origin indicates where other axes cross this axis. If the any contains a double value that value is used. Otherwise an appropriate value has to be
     * calculated by that instances using Origin.
     */
-  var Origin: js.Any
+  var Origin: Any
   
   var Scaling: XScaling
   
@@ -73,10 +73,10 @@ object ScaleData {
     AxisType: Double,
     Categories: XLabeledDataSequence,
     IncrementData: IncrementData,
-    Maximum: js.Any,
-    Minimum: js.Any,
+    Maximum: Any,
+    Minimum: Any,
     Orientation: AxisOrientation,
-    Origin: js.Any,
+    Origin: Any,
     Scaling: XScaling,
     ShiftedCategoryPosition: Boolean,
     TimeIncrement: TimeIncrement
@@ -95,13 +95,13 @@ object ScaleData {
     
     inline def setIncrementData(value: IncrementData): Self = StObject.set(x, "IncrementData", value.asInstanceOf[js.Any])
     
-    inline def setMaximum(value: js.Any): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: Any): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     
-    inline def setMinimum(value: js.Any): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: Any): Self = StObject.set(x, "Minimum", value.asInstanceOf[js.Any])
     
     inline def setOrientation(value: AxisOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    inline def setOrigin(value: js.Any): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Any): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
     
     inline def setScaling(value: XScaling): Self = StObject.set(x, "Scaling", value.asInstanceOf[js.Any])
     

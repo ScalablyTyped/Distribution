@@ -22,28 +22,20 @@ object mod {
   
   inline def loadSource(compiled: String): Template = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSource")(compiled.asInstanceOf[js.Any]).asInstanceOf[Template]
   
-  inline def makeBase(global: js.Any): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("makeBase")(global.asInstanceOf[js.Any]).asInstanceOf[Context]
+  inline def makeBase(global: Any): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("makeBase")(global.asInstanceOf[js.Any]).asInstanceOf[Context]
   inline def makeBase(global: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("makeBase")(global.asInstanceOf[js.Any]).asInstanceOf[Context]
   
   inline def register(name: String, tmpl: Template): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(name.asInstanceOf[js.Any], tmpl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def render(name: String, context: js.Any, callback: js.Function2[/* err */ js.Any, /* out */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def render(name: String, context: Context, callback: js.Function2[/* err */ js.Any, /* out */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def render(name: String, context: Any, callback: js.Function2[/* err */ Any, /* out */ String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def render(name: String, context: Context, callback: js.Function2[/* err */ Any, /* out */ String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def renderSource(source: String, context: js.Any): Stream_ = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSource")(source.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Stream_]
-  inline def renderSource(
-    source: String,
-    context: js.Any,
-    callback: js.Function2[/* err */ js.Any, /* out */ String, js.Any]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSource")(source.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderSource(source: String, context: Any): Stream_ = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSource")(source.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Stream_]
+  inline def renderSource(source: String, context: Any, callback: js.Function2[/* err */ Any, /* out */ String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSource")(source.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def renderSource(source: String, context: Context): Stream_ = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSource")(source.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Stream_]
-  inline def renderSource(
-    source: String,
-    context: Context,
-    callback: js.Function2[/* err */ js.Any, /* out */ String, js.Any]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSource")(source.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderSource(source: String, context: Context, callback: js.Function2[/* err */ Any, /* out */ String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSource")(source.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def stream(name: String, context: js.Any): Stream_ = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Stream_]
+  inline def stream(name: String, context: Any): Stream_ = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Stream_]
   inline def stream(name: String, context: Context): Stream_ = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Stream_]
   
   trait Chunk extends StObject {
@@ -56,22 +48,22 @@ object mod {
     /**
       * Creates a new chunk and passes it to callback. Use map to wrap asynchronous functions and to partition the template for streaming.
       */
-    def map(callback: js.Function1[/* chunk */ this.type, js.Any]): Chunk
+    def map(callback: js.Function1[/* chunk */ this.type, Any]): Chunk
     
     /**
       * Renders a template block, such as a default block or an else block.
       */
-    def render(body: js.Any, context: Context): Chunk
+    def render(body: Any, context: Context): Chunk
     
     /**
       * Sets an error on this chunk and immediately flushes the output.
       */
-    def setError(err: js.Any): Chunk
+    def setError(err: Any): Chunk
     
     /**
       * Convenience method to apply filters to a stream.
       */
-    def tap(callback: js.Function1[/* value */ js.Any, js.Any]): Chunk
+    def tap(callback: js.Function1[/* value */ Any, Any]): Chunk
     
     /**
       * Removes the head tap function from the list.
@@ -87,10 +79,10 @@ object mod {
     
     inline def apply(
       end: String => Chunk,
-      map: js.Function1[Chunk, js.Any] => Chunk,
-      render: (js.Any, Context) => Chunk,
-      setError: js.Any => Chunk,
-      tap: js.Function1[/* value */ js.Any, js.Any] => Chunk,
+      map: js.Function1[Chunk, Any] => Chunk,
+      render: (Any, Context) => Chunk,
+      setError: Any => Chunk,
+      tap: js.Function1[/* value */ Any, Any] => Chunk,
       untap: () => Chunk,
       write: String => Chunk
     ): Chunk = {
@@ -102,13 +94,13 @@ object mod {
       
       inline def setEnd(value: String => Chunk): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
       
-      inline def setMap(value: js.Function1[Chunk, js.Any] => Chunk): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Function1[Chunk, Any] => Chunk): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      inline def setRender(value: (js.Any, Context) => Chunk): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (Any, Context) => Chunk): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
-      inline def setSetError(value: js.Any => Chunk): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
+      inline def setSetError(value: Any => Chunk): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
       
-      inline def setTap(value: js.Function1[/* value */ js.Any, js.Any] => Chunk): Self = StObject.set(x, "tap", js.Any.fromFunction1(value))
+      inline def setTap(value: js.Function1[/* value */ Any, Any] => Chunk): Self = StObject.set(x, "tap", js.Any.fromFunction1(value))
       
       inline def setUntap(value: () => Chunk): Self = StObject.set(x, "untap", js.Any.fromFunction0(value))
       
@@ -122,30 +114,30 @@ object mod {
     /**
       * Returns the head of the context stack.
       */
-    def current(): js.Any = js.native
+    def current(): Any = js.native
     
     /**
       * Retrieves the value at key from the context stack.
       */
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     
     /**
       * Pushes an arbitrary value onto the context stack and returns a new context instance. Specify index and/or length to enable enumeration helpers.
       */
-    def push(head: js.Any): Context = js.native
-    def push(head: js.Any, idx: Double): Context = js.native
-    def push(head: js.Any, idx: Double, len: Double): Context = js.native
-    def push(head: js.Any, idx: Unit, len: Double): Context = js.native
+    def push(head: Any): Context = js.native
+    def push(head: Any, idx: Double): Context = js.native
+    def push(head: Any, idx: Double, len: Double): Context = js.native
+    def push(head: Any, idx: Unit, len: Double): Context = js.native
     
     /**
       * Returns a new context instance consisting only of the value at head, plus any previously defined global object.
       */
-    def rebase(head: js.Any): Context = js.native
+    def rebase(head: Any): Context = js.native
   }
   
   trait Stream_ extends StObject {
     
-    def emit(evt: String, data: js.Any): Unit
+    def emit(evt: String, data: Any): Unit
     
     def flush(): Unit
     
@@ -153,16 +145,16 @@ object mod {
       * Registers an event listener. Streams accept a single listener for a given event.
       * @param evt the event. Possible values are data, end, error (maybe more, look in the source).
       */
-    def on(evt: String, callback: js.Function1[/* data */ js.UndefOr[js.Any], js.Any]): this.type
+    def on(evt: String, callback: js.Function1[/* data */ js.UndefOr[Any], Any]): this.type
     
     def pipe(stream: Stream_): Stream_
   }
   object Stream_ {
     
     inline def apply(
-      emit: (String, js.Any) => Unit,
+      emit: (String, Any) => Unit,
       flush: () => Unit,
-      on: (String, js.Function1[/* data */ js.UndefOr[js.Any], js.Any]) => Stream_,
+      on: (String, js.Function1[/* data */ js.UndefOr[Any], Any]) => Stream_,
       pipe: Stream_ => Stream_
     ): Stream_ = {
       val __obj = js.Dynamic.literal(emit = js.Any.fromFunction2(emit), flush = js.Any.fromFunction0(flush), on = js.Any.fromFunction2(on), pipe = js.Any.fromFunction1(pipe))
@@ -171,11 +163,11 @@ object mod {
     
     extension [Self <: Stream_](x: Self) {
       
-      inline def setEmit(value: (String, js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
       inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      inline def setOn(value: (String, js.Function1[/* data */ js.UndefOr[js.Any], js.Any]) => Stream_): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function1[/* data */ js.UndefOr[Any], Any]) => Stream_): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
       inline def setPipe(value: Stream_ => Stream_): Self = StObject.set(x, "pipe", js.Any.fromFunction1(value))
     }

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.MemberFunctionDeclarationSyntax")
 @js.native
-class MemberFunctionDeclarationSyntax protected ()
+open class MemberFunctionDeclarationSyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.MemberFunctionDeclarationSyntax {
   def this(
@@ -25,7 +25,7 @@ class MemberFunctionDeclarationSyntax protected ()
   ) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): ISyntaxElement = js.native

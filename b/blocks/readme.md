@@ -10,10 +10,10 @@ jsblocks - Better MV-ish Framework
 | ------------------ | :-------------: |
 | Full name          | blocks |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 15642 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 165.33333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/astoilkov/jsblocks)

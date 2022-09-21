@@ -8,5 +8,5 @@ object retireGrantMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/RetireGrant", "RetireGrant")
   @js.native
-  val RetireGrant: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val RetireGrant: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

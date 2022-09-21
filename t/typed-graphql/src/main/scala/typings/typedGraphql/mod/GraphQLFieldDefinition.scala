@@ -31,7 +31,7 @@ object GraphQLFieldDefinition {
     
     inline def setArgs(value: js.Array[GraphQLArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: GraphQLArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: GraphQLArgument*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setDeprecationReason(value: String): Self = StObject.set(x, "deprecationReason", value.asInstanceOf[js.Any])
     
@@ -42,7 +42,7 @@ object GraphQLFieldDefinition {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setResolve(
-      value: (/* source */ js.Any, /* args */ StringDictionary[js.Any], /* context */ js.Any, /* info */ GraphQLResolveInfo) => js.Any
+      value: (/* source */ Any, /* args */ StringDictionary[Any], /* context */ Any, /* info */ GraphQLResolveInfo) => Any
     ): Self = StObject.set(x, "resolve", js.Any.fromFunction4(value))
     
     inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)

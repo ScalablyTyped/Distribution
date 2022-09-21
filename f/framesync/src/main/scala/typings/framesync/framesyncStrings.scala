@@ -14,6 +14,12 @@ object framesyncStrings {
   inline def postRender: postRender = "postRender".asInstanceOf[postRender]
   
   @js.native
+  sealed trait postUpdate
+    extends StObject
+       with StepId
+  inline def postUpdate: postUpdate = "postUpdate".asInstanceOf[postUpdate]
+  
+  @js.native
   sealed trait preRender
     extends StObject
        with StepId

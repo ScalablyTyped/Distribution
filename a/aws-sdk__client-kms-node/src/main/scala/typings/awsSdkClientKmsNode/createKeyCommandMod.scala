@@ -16,7 +16,7 @@ object createKeyCommandMod {
   
   @JSImport("@aws-sdk/client-kms-node/commands/CreateKeyCommand", "CreateKeyCommand")
   @js.native
-  class CreateKeyCommand protected ()
+  open class CreateKeyCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object createKeyCommandMod {
     override val middlewareStack: MiddlewareStack[CreateKeyInput, CreateKeyOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[CreateKeyInput, CreateKeyOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[CreateKeyInput, CreateKeyOutput] = js.native
   }
 }

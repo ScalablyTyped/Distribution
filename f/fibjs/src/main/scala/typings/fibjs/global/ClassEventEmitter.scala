@@ -17,6 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassEventEmitter ()
+open class ClassEventEmitter ()
   extends StObject
      with typings.fibjs.ClassEventEmitter

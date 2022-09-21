@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.html5plus.html5plusNumbers.`5`
   - typings.html5plus.html5plusNumbers.`-1`
 */
-type PlusDownloaderDownloadState = js.UndefOr[typings.html5plus._PlusDownloaderDownloadState]
+type PlusDownloaderDownloadState = js.UndefOr[_PlusDownloaderDownloadState]
 
 /**
   * 本地路径URL
@@ -29,7 +29,7 @@ type PlusDownloaderDownloadState = js.UndefOr[typings.html5plus._PlusDownloaderD
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
   */
-type PlusIoLocalURL = js.Any
+type PlusIoLocalURL = Any
 
 /**
   * 网络路径URL
@@ -38,7 +38,7 @@ type PlusIoLocalURL = js.Any
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
   */
-type PlusIoRemoteURL = js.Any
+type PlusIoRemoteURL = Any
 
 /**
   * Objective-C类对象
@@ -47,7 +47,7 @@ type PlusIoRemoteURL = js.Any
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/ios.html](http://www.html5plus.org/doc/zh_cn/ios.html)
   */
-type PlusIosClassObject = js.Any
+type PlusIosClassObject = Any
 
 /**
   * 上传任务的状态，Number类型
@@ -64,4 +64,4 @@ type PlusIosClassObject = js.Any
   - typings.html5plus.html5plusNumbers.`5`
   - typings.html5plus.html5plusNumbers.`-1`
 */
-type PlusUploaderUploadState = js.UndefOr[typings.html5plus._PlusUploaderUploadState]
+type PlusUploaderUploadState = js.UndefOr[_PlusUploaderUploadState]

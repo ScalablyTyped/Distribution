@@ -23,6 +23,10 @@ object ScriptTarget extends StObject {
   
   /* 7 */ val ES2020: typings.typescript.mod.ScriptTarget.ES2020 & Double = js.native
   
+  /* 8 */ val ES2021: typings.typescript.mod.ScriptTarget.ES2021 & Double = js.native
+  
+  /* 9 */ val ES2022: typings.typescript.mod.ScriptTarget.ES2022 & Double = js.native
+  
   /* 0 */ val ES3: typings.typescript.mod.ScriptTarget.ES3 & Double = js.native
   
   /* 1 */ val ES5: typings.typescript.mod.ScriptTarget.ES5 & Double = js.native

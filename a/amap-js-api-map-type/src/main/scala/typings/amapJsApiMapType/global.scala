@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("AMap.MapType")
     @js.native
-    class MapType ()
+    open class MapType ()
       extends StObject
          with typings.amapJsApiMapType.AMap.MapType {
       def this(options: Options) = this()

@@ -17,8 +17,16 @@ object googleVisualizationStrings {
   inline def absolute: absolute = "absolute".asInstanceOf[absolute]
   
   @js.native
+  sealed trait area extends StObject
+  inline def area: area = "area".asInstanceOf[area]
+  
+  @js.native
   sealed trait auto extends StObject
   inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
+  sealed trait bars extends StObject
+  inline def bars: bars = "bars".asInstanceOf[bars]
   
   @js.native
   sealed trait both extends StObject
@@ -29,6 +37,10 @@ object googleVisualizationStrings {
     extends StObject
        with ChartLegendPosition
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @js.native
+  sealed trait boxes extends StObject
+  inline def boxes: boxes = "boxes".asInstanceOf[boxes]
   
   @js.native
   sealed trait center
@@ -59,12 +71,20 @@ object googleVisualizationStrings {
   inline def exponential: exponential = "exponential".asInstanceOf[exponential]
   
   @js.native
+  sealed trait focus extends StObject
+  inline def focus: focus = "focus".asInstanceOf[focus]
+  
+  @js.native
   sealed trait full extends StObject
   inline def full: full = "full".asInstanceOf[full]
   
   @js.native
   sealed trait function extends StObject
   inline def function: function = "function".asInstanceOf[function]
+  
+  @js.native
+  sealed trait gradient extends StObject
+  inline def gradient: gradient = "gradient".asInstanceOf[gradient]
   
   @js.native
   sealed trait horizontal
@@ -84,10 +104,18 @@ object googleVisualizationStrings {
   inline def inner: inner = "inner".asInstanceOf[inner]
   
   @js.native
+  sealed trait labeled extends StObject
+  inline def labeled: labeled = "labeled".asInstanceOf[labeled]
+  
+  @js.native
   sealed trait left
     extends StObject
        with ChartLegendPosition
   inline def left: left = "left".asInstanceOf[left]
+  
+  @js.native
+  sealed trait line extends StObject
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
   sealed trait linear extends StObject
@@ -125,6 +153,10 @@ object googleVisualizationStrings {
   inline def percent: percent = "percent".asInstanceOf[percent]
   
   @js.native
+  sealed trait points extends StObject
+  inline def points: points = "points".asInstanceOf[points]
+  
+  @js.native
   sealed trait polygon
     extends StObject
        with ChartPointShape
@@ -159,6 +191,10 @@ object googleVisualizationStrings {
   inline def single: single = "single".asInstanceOf[single]
   
   @js.native
+  sealed trait source extends StObject
+  inline def source: source = "source".asInstanceOf[source]
+  
+  @js.native
   sealed trait square
     extends StObject
        with ChartPointShape
@@ -177,6 +213,14 @@ object googleVisualizationStrings {
   inline def start: start = "start".asInstanceOf[start]
   
   @js.native
+  sealed trait sticks extends StObject
+  inline def sticks: sticks = "sticks".asInstanceOf[sticks]
+  
+  @js.native
+  sealed trait target extends StObject
+  inline def target: target = "target".asInstanceOf[target]
+  
+  @js.native
   sealed trait top
     extends StObject
        with ChartLegendPosition
@@ -189,8 +233,16 @@ object googleVisualizationStrings {
   inline def triangle: triangle = "triangle".asInstanceOf[triangle]
   
   @js.native
+  sealed trait unique extends StObject
+  inline def unique: unique = "unique".asInstanceOf[unique]
+  
+  @js.native
   sealed trait vertical
     extends StObject
        with ChartOrientation
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @js.native
+  sealed trait visualization extends StObject
+  inline def visualization: visualization = "visualization".asInstanceOf[visualization]
 }

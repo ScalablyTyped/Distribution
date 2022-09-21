@@ -21,6 +21,6 @@ object OnSelectedRowsChangedEventArgs {
     
     inline def setRows(value: js.Array[Double]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: Double*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Double*): Self = StObject.set(x, "rows", js.Array(value*))
   }
 }

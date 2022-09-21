@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.azdata.mod.ComponentProperties because Already inherited
-- typings.azdata.mod.InputBoxProperties because var conflicts: CSSStyles, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined value, ariaLive, placeHolder, inputType, required, multiline, rows, columns, min, max, stopEnterPropagation */ @js.native
+- typings.azdata.mod.InputBoxProperties because var conflicts: CSSStyles, ariaHidden, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined value, ariaLive, placeHolder, inputType, required, multiline, rows, columns, min, max, stopEnterPropagation, validationErrorMessage, readOnly, title, maxLength */ @js.native
 trait InputBoxComponent
   extends StObject
      with Component {
@@ -19,8 +19,19 @@ trait InputBoxComponent
   
   var inputType: js.UndefOr[InputBoxInputType] = js.native
   
+  /**
+    * The maximum value allowed for the input. Only valid for number inputs.
+    */
   var max: js.UndefOr[Double] = js.native
   
+  /**
+    * The maximum number of characters allowed in the input box.
+    */
+  var maxLength: js.UndefOr[Double] = js.native
+  
+  /**
+    * The minimum value allowed for the input. Only valid for number inputs.
+    */
   var min: js.UndefOr[Double] = js.native
   
   var multiline: js.UndefOr[Boolean] = js.native
@@ -28,32 +39,29 @@ trait InputBoxComponent
   /**
     * Event that's fired whenever enter is pressed within the input box
     */
-  def onEnterKeyPressed(listener: js.Function1[/* e */ String, js.Any]): Disposable = js.native
-  def onEnterKeyPressed(listener: js.Function1[/* e */ String, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onEnterKeyPressed(
-    listener: js.Function1[/* e */ String, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onEnterKeyPressed(listener: js.Function1[/* e */ String, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onEnterKeyPressed(listener: js.Function1[/* e */ String, Any]): Disposable = js.native
+  def onEnterKeyPressed(listener: js.Function1[/* e */ String, Any], thisArgs: Any): Disposable = js.native
+  def onEnterKeyPressed(listener: js.Function1[/* e */ String, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onEnterKeyPressed(listener: js.Function1[/* e */ String, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   /**
     * Event that's fired whenever enter is pressed within the input box
     */
   @JSName("onEnterKeyPressed")
   var onEnterKeyPressed_Original: Event[String] = js.native
   
-  def onTextChanged(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable = js.native
-  def onTextChanged(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onTextChanged(
-    listener: js.Function1[/* e */ js.Any, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onTextChanged(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onTextChanged(listener: js.Function1[/* e */ Any, Any]): Disposable = js.native
+  def onTextChanged(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable = js.native
+  def onTextChanged(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onTextChanged(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   @JSName("onTextChanged")
-  var onTextChanged_Original: Event[js.Any] = js.native
+  var onTextChanged_Original: Event[Any] = js.native
   
   var placeHolder: js.UndefOr[String] = js.native
+  
+  /**
+    * Whether the input box is marked with the 'readonly' attribute
+    */
+  var readOnly: js.UndefOr[Boolean] = js.native
   
   var required: js.UndefOr[Boolean] = js.native
   
@@ -64,6 +72,18 @@ trait InputBoxComponent
     * means the event will propagate up to any parents that have handlers (such as validate on Dialogs)
     */
   var stopEnterPropagation: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * This title will show when hovered over
+    */
+  var title: js.UndefOr[String] = js.native
+  
+  /**
+    * The error message to show when custom validation fails. Note that built-in validations
+    * (such as min/max values) will use the default error messages for those validations
+    * as appropriate.
+    */
+  var validationErrorMessage: js.UndefOr[String] = js.native
   
   var value: js.UndefOr[String] = js.native
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.PanoramaLabel")
 @js.native
-class PanoramaLabel protected ()
+open class PanoramaLabel protected ()
   extends StObject
      with typings.bmapgl.BMapGL.PanoramaLabel {
   def this(content: String) = this()

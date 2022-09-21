@@ -29,6 +29,6 @@ object ListNotificationConfigsResponse {
     
     inline def setNotificationConfigsUndefined: Self = StObject.set(x, "notificationConfigs", js.undefined)
     
-    inline def setNotificationConfigsVarargs(value: NotificationConfig*): Self = StObject.set(x, "notificationConfigs", js.Array(value :_*))
+    inline def setNotificationConfigsVarargs(value: NotificationConfig*): Self = StObject.set(x, "notificationConfigs", js.Array(value*))
   }
 }

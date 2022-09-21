@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@apollo/protobufjs", "BufferWriter")
 @js.native
 /** Constructs a new buffer writer instance. */
-class BufferWriter () extends Writer
+open class BufferWriter () extends Writer
 /* static members */
 object BufferWriter {
   
@@ -20,5 +20,5 @@ object BufferWriter {
     * @param size Buffer size
     * @returns Buffer
     */
-  inline def alloc(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def alloc(size: Double): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
 }

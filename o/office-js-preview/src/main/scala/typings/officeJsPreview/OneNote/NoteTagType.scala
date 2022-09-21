@@ -7,67 +7,116 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait NoteTagType extends StObject
 /**
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.NoteTagType")
 @js.native
 object NoteTagType extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait address
     extends StObject
        with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait contact
     extends StObject
        with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait critical
     extends StObject
        with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait idea
     extends StObject
        with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait important
     extends StObject
        with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait phoneNumber
     extends StObject
        with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait question
     extends StObject
        with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait toDo
     extends StObject
        with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait toDoPriority1
     extends StObject
        with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait toDoPriority2
     extends StObject
        with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait unknown
     extends StObject
        with NoteTagType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
   sealed trait website
     extends StObject

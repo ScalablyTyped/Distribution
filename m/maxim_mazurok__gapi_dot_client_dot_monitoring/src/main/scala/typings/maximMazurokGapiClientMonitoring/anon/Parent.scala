@@ -29,7 +29,7 @@ trait Parent extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The project in which to create the Uptime check. The format is: projects/[PROJECT_ID_OR_NUMBER] */
+  /** Required. The project (https://cloud.google.com/monitoring/api/v3#project_name) in which to create the Uptime check. The format is: projects/[PROJECT_ID_OR_NUMBER] */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

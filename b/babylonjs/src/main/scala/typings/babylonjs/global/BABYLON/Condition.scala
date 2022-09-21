@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Condition")
 @js.native
-class Condition protected ()
+open class Condition protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Condition {
   /**
@@ -38,13 +38,16 @@ class Condition protected ()
   
   /**
     * Internal only
+    * @param target
+    * @param propertyPath
     * @hidden
     */
   /* CompleteClass */
-  override def _getEffectiveTarget(target: js.Any, propertyPath: String): js.Any = js.native
+  override def _getEffectiveTarget(target: Any, propertyPath: String): Any = js.native
   
   /**
     * Internal only
+    * @param propertyPath
     * @hidden
     */
   /* CompleteClass */
@@ -52,10 +55,11 @@ class Condition protected ()
   
   /**
     * Internal only
+    * @param serializedCondition
     * @hidden
     */
   /* protected */ /* CompleteClass */
-  override def _serialize(serializedCondition: js.Any): js.Any = js.native
+  override def _serialize(serializedCondition: Any): Any = js.native
   
   /**
     * Check if the current condition is valid
@@ -69,5 +73,5 @@ class Condition protected ()
     * @returns the serialized object
     */
   /* CompleteClass */
-  override def serialize(): js.Any = js.native
+  override def serialize(): Any = js.native
 }

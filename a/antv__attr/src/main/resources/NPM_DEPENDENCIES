@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@antv/attr" : "0.3.2"
+      "@antv/attr" : "0.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@antv/attr" : "0.3.2"
+      "@antv/attr" : "0.3.3"
     }
   ],
   "compile-devDependencies" : [

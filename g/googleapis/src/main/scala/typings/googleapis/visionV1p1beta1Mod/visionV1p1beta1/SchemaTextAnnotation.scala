@@ -4,15 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * TextAnnotation contains a structured representation of OCR extracted text.
-  * The hierarchy of an OCR extracted text structure is like this:
-  * TextAnnotation -&gt; Page -&gt; Block -&gt; Paragraph -&gt; Word -&gt;
-  * Symbol Each structural component, starting from Page, may further have
-  * their own properties. Properties describe detected languages, breaks etc..
-  * Please refer to the TextAnnotation.TextProperty message definition below
-  * for more detail.
-  */
 trait SchemaTextAnnotation extends StObject {
   
   /**
@@ -23,7 +14,7 @@ trait SchemaTextAnnotation extends StObject {
   /**
     * UTF-8 text detected on the pages.
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTextAnnotation {
   
@@ -38,9 +29,11 @@ object SchemaTextAnnotation {
     
     inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    inline def setPagesVarargs(value: SchemaPage*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: SchemaPage*): Self = StObject.set(x, "pages", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }

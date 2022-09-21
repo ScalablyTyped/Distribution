@@ -17,12 +17,12 @@ trait Reservation extends StObject {
   var Instances: js.UndefOr[InstanceList] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the reservation.
+    * The ID of the Amazon Web Services account that owns the reservation.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the requester that launched the instances on your behalf (for example, AWS Management Console or Auto Scaling).
+    * The ID of the requester that launched the instances on your behalf (for example, Amazon Web Services Management Console or Auto Scaling).
     */
   var RequesterId: js.UndefOr[String] = js.undefined
   
@@ -44,13 +44,13 @@ object Reservation {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setInstances(value: InstanceList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
     inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value*))
     
     inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     

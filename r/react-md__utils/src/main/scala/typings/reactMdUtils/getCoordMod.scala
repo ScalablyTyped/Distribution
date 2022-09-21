@@ -1,6 +1,5 @@
 package typings.reactMdUtils
 
-import typings.std.ClientRect
 import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,7 +37,7 @@ object getCoordMod {
   
   trait XCoordConfig extends StObject {
     
-    var containerRect: DOMRect | ClientRect
+    var containerRect: DOMRect
     
     var elWidth: Double
     
@@ -48,14 +47,14 @@ object getCoordMod {
   }
   object XCoordConfig {
     
-    inline def apply(containerRect: DOMRect | ClientRect, elWidth: Double, xMargin: Double): XCoordConfig = {
+    inline def apply(containerRect: DOMRect, elWidth: Double, xMargin: Double): XCoordConfig = {
       val __obj = js.Dynamic.literal(containerRect = containerRect.asInstanceOf[js.Any], elWidth = elWidth.asInstanceOf[js.Any], xMargin = xMargin.asInstanceOf[js.Any])
       __obj.asInstanceOf[XCoordConfig]
     }
     
     extension [Self <: XCoordConfig](x: Self) {
       
-      inline def setContainerRect(value: DOMRect | ClientRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
+      inline def setContainerRect(value: DOMRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
       
       inline def setElWidth(value: Double): Self = StObject.set(x, "elWidth", value.asInstanceOf[js.Any])
       
@@ -69,7 +68,7 @@ object getCoordMod {
   
   trait YCoordConfig extends StObject {
     
-    var containerRect: DOMRect | ClientRect
+    var containerRect: DOMRect
     
     var elHeight: Double
     
@@ -79,14 +78,14 @@ object getCoordMod {
   }
   object YCoordConfig {
     
-    inline def apply(containerRect: DOMRect | ClientRect, elHeight: Double, yMargin: Double): YCoordConfig = {
+    inline def apply(containerRect: DOMRect, elHeight: Double, yMargin: Double): YCoordConfig = {
       val __obj = js.Dynamic.literal(containerRect = containerRect.asInstanceOf[js.Any], elHeight = elHeight.asInstanceOf[js.Any], yMargin = yMargin.asInstanceOf[js.Any])
       __obj.asInstanceOf[YCoordConfig]
     }
     
     extension [Self <: YCoordConfig](x: Self) {
       
-      inline def setContainerRect(value: DOMRect | ClientRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
+      inline def setContainerRect(value: DOMRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
       
       inline def setElHeight(value: Double): Self = StObject.set(x, "elHeight", value.asInstanceOf[js.Any])
       

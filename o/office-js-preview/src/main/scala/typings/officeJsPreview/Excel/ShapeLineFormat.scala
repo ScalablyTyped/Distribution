@@ -28,9 +28,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the line formatting for the shape object. For images and geometric shapes, line formatting represents the border of the shape.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -39,9 +39,9 @@ trait ShapeLineFormat
      with ClientObject {
   
   /**
+    * Represents the line color in HTML color format, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
-    * Represents the line color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var color: String = js.native
@@ -51,9 +51,9 @@ trait ShapeLineFormat
   var context_ShapeLineFormat: RequestContext = js.native
   
   /**
+    * Represents the line style of the shape. Returns `null` when the line is not visible or there are inconsistent dash styles. See `Excel.ShapeLineDashStyle` for details.
     *
-    * Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent dash styles. See Excel.ShapeLineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var dashStyle: ShapeLineDashStyle | Dash | DashDot | DashDotDot | LongDash | LongDashDot | RoundDot | Solid | SquareDot | LongDashDotDot | SystemDash | SystemDot | SystemDashDot = js.native
@@ -69,14 +69,8 @@ trait ShapeLineFormat
   def load(propertyNames: String): ShapeLineFormat = js.native
   def load(propertyNames: js.Array[String]): ShapeLineFormat = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ShapeLineFormat): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -86,9 +80,9 @@ trait ShapeLineFormat
   def set(properties: ShapeLineFormat): Unit = js.native
   
   /**
+    * Represents the line style of the shape. Returns `null` when the line is not visible or there are inconsistent styles. See `Excel.ShapeLineStyle` for details.
     *
-    * Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent styles. See Excel.ShapeLineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var style: ShapeLineStyle | Single | ThickBetweenThin | ThickThin | ThinThick | ThinThin = js.native
@@ -100,25 +94,25 @@ trait ShapeLineFormat
   def toJSON(): ShapeLineFormatData = js.native
   
   /**
+    * Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear). Returns `null` when the shape has inconsistent transparencies.
     *
-    * Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear). Returns null when the shape has inconsistent transparencies.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var transparency: Double = js.native
   
   /**
+    * Specifies if the line formatting of a shape element is visible. Returns `null` when the shape has inconsistent visibilities.
     *
-    * Specifies if the line formatting of a shape element is visible. Returns null when the shape has inconsistent visibilities.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var visible: Boolean = js.native
   
   /**
+    * Represents the weight of the line, in points. Returns `null` when the line is not visible or there are inconsistent line weights.
     *
-    * Represents the weight of the line, in points. Returns null when the line is not visible or there are inconsistent line weights.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var weight: Double = js.native

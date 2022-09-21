@@ -19,11 +19,11 @@ object TextDocumentRegistrationOptions {
     __obj.asInstanceOf[TextDocumentRegistrationOptions]
   }
   
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "TextDocumentRegistrationOptions")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "TextDocumentRegistrationOptions")
   @js.native
   val ^ : js.Any = js.native
   
-  inline def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.TextDocumentRegistrationOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.TextDocumentRegistrationOptions */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.TextDocumentRegistrationOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.TextDocumentRegistrationOptions */ Boolean]
   
   extension [Self <: TextDocumentRegistrationOptions](x: Self) {
     
@@ -31,6 +31,6 @@ object TextDocumentRegistrationOptions {
     
     inline def setDocumentSelectorNull: Self = StObject.set(x, "documentSelector", null)
     
-    inline def setDocumentSelectorVarargs(value: (String | DocumentFilter)*): Self = StObject.set(x, "documentSelector", js.Array(value :_*))
+    inline def setDocumentSelectorVarargs(value: (String | DocumentFilter)*): Self = StObject.set(x, "documentSelector", js.Array(value*))
   }
 }

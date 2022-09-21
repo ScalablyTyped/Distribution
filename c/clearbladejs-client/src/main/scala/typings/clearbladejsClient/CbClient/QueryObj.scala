@@ -1,6 +1,5 @@
 package typings.clearbladejsClient.CbClient
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +36,7 @@ trait QueryObj extends StObject {
   
   var limit: Double
   
-  def matches(field: String, pattern: RegExp): Unit
+  def matches(field: String, pattern: js.RegExp): Unit
   
   def notEqualTo(field: String, value: QueryValue): Unit
   
@@ -77,7 +76,7 @@ object QueryObj {
     lessThan: (String, QueryValue) => Unit,
     lessThanEqualTo: (String, QueryValue) => Unit,
     limit: Double,
-    matches: (String, RegExp) => Unit,
+    matches: (String, js.RegExp) => Unit,
     notEqualTo: (String, QueryValue) => Unit,
     offset: Double,
     or: QueryObj => Unit,
@@ -121,13 +120,13 @@ object QueryObj {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    inline def setMatches(value: (String, RegExp) => Unit): Self = StObject.set(x, "matches", js.Any.fromFunction2(value))
+    inline def setMatches(value: (String, js.RegExp) => Unit): Self = StObject.set(x, "matches", js.Any.fromFunction2(value))
     
     inline def setNotEqualTo(value: (String, QueryValue) => Unit): Self = StObject.set(x, "notEqualTo", js.Any.fromFunction2(value))
     
     inline def setOR(value: js.Array[Query]): Self = StObject.set(x, "OR", value.asInstanceOf[js.Any])
     
-    inline def setORVarargs(value: Query*): Self = StObject.set(x, "OR", js.Array(value :_*))
+    inline def setORVarargs(value: Query*): Self = StObject.set(x, "OR", js.Array(value*))
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

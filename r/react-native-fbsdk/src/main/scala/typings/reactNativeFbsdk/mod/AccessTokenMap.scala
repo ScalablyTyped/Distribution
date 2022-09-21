@@ -57,19 +57,19 @@ object AccessTokenMap {
     
     inline def setDeclinedPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "declinedPermissions", value.asInstanceOf[js.Any])
     
-    inline def setDeclinedPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "declinedPermissions", js.Array(value :_*))
+    inline def setDeclinedPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "declinedPermissions", js.Array(value*))
     
     inline def setExpirationTime(value: Double): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
     inline def setExpiredPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "expiredPermissions", value.asInstanceOf[js.Any])
     
-    inline def setExpiredPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "expiredPermissions", js.Array(value :_*))
+    inline def setExpiredPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "expiredPermissions", js.Array(value*))
     
     inline def setLastRefreshTime(value: Double): Self = StObject.set(x, "lastRefreshTime", value.asInstanceOf[js.Any])
     
     inline def setPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    inline def setPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: Permissions*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
   }

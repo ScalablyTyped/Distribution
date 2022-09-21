@@ -9,25 +9,25 @@ object commonMod {
   
   @JSImport("react-color/lib/components/common", "Alpha")
   @js.native
-  class Alpha () extends default
+  open class Alpha () extends default
   
   @JSImport("react-color/lib/components/common", "Checkboard")
   @js.native
-  class Checkboard ()
+  open class Checkboard ()
     extends typings.reactColor.checkboardMod.default
   
   @JSImport("react-color/lib/components/common", "EditableInput")
   @js.native
-  class EditableInput ()
+  open class EditableInput ()
     extends typings.reactColor.editableInputMod.default
   
   @JSImport("react-color/lib/components/common", "Hue")
   @js.native
-  class Hue ()
+  open class Hue ()
     extends typings.reactColor.hueMod.default
   
   @JSImport("react-color/lib/components/common", "Saturation")
   @js.native
-  class Saturation ()
+  open class Saturation ()
     extends typings.reactColor.saturationMod.default
 }

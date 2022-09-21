@@ -8,18 +8,19 @@ object firebaseComponentAugmentingMod {
   
   trait NameServiceMapping extends StObject {
     
-    var auth: FirebaseAuth
+    var `auth-compat`: FirebaseAuth
   }
   object NameServiceMapping {
     
-    inline def apply(auth: FirebaseAuth): NameServiceMapping = {
-      val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any])
+    inline def apply(`auth-compat`: FirebaseAuth): NameServiceMapping = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("auth-compat")(`auth-compat`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NameServiceMapping]
     }
     
     extension [Self <: NameServiceMapping](x: Self) {
       
-      inline def setAuth(value: FirebaseAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def `setAuth-compat`(value: FirebaseAuth): Self = StObject.set(x, "auth-compat", value.asInstanceOf[js.Any])
     }
   }
 }

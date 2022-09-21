@@ -2,7 +2,6 @@ package typings.blueprintjsDatetime
 
 import typings.blueprintjsCore.boundaryMod.Boundary
 import typings.blueprintjsDatetime.dateRangeMod.DateRange
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object dateRangeSelectionStrategyMod {
   
   @JSImport("@blueprintjs/datetime/lib/esm/dateRangeSelectionStrategy", "DateRangeSelectionStrategy")
   @js.native
-  class DateRangeSelectionStrategy () extends StObject
+  open class DateRangeSelectionStrategy () extends StObject
   /* static members */
   object DateRangeSelectionStrategy {
     
@@ -21,24 +20,24 @@ object dateRangeSelectionStrategyMod {
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateRangeSelectionStrategy", "DateRangeSelectionStrategy.createRange")
     @js.native
-    def createRange: js.Any = js.native
+    def createRange: Any = js.native
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateRangeSelectionStrategy", "DateRangeSelectionStrategy.createRangeForBoundary")
     @js.native
-    def createRangeForBoundary: js.Any = js.native
-    inline def createRangeForBoundary_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createRangeForBoundary")(x.asInstanceOf[js.Any])
+    def createRangeForBoundary: Any = js.native
+    inline def createRangeForBoundary_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createRangeForBoundary")(x.asInstanceOf[js.Any])
     
-    inline def createRange_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createRange")(x.asInstanceOf[js.Any])
+    inline def createRange_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createRange")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateRangeSelectionStrategy", "DateRangeSelectionStrategy.getBoundaryDate")
     @js.native
-    def getBoundaryDate: js.Any = js.native
-    inline def getBoundaryDate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getBoundaryDate")(x.asInstanceOf[js.Any])
+    def getBoundaryDate: Any = js.native
+    inline def getBoundaryDate_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getBoundaryDate")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateRangeSelectionStrategy", "DateRangeSelectionStrategy.getDefaultNextState")
     @js.native
-    def getDefaultNextState: js.Any = js.native
-    inline def getDefaultNextState_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultNextState")(x.asInstanceOf[js.Any])
+    def getDefaultNextState: Any = js.native
+    inline def getDefaultNextState_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultNextState")(x.asInstanceOf[js.Any])
     
     /**
       * Returns the new date-range and the boundary that would be affected if `day` were clicked. The
@@ -46,23 +45,23 @@ object dateRangeSelectionStrategyMod {
       * clicking a particular boundary's selected date will always deselect it regardless of which
       * `boundary` you provide to this function (because it's simply a more intuitive interaction).
       */
-    inline def getNextState(currentRange: DateRange, day: Date, allowSingleDayRange: Boolean): IDateRangeSelectionState = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextState")(currentRange.asInstanceOf[js.Any], day.asInstanceOf[js.Any], allowSingleDayRange.asInstanceOf[js.Any])).asInstanceOf[IDateRangeSelectionState]
-    inline def getNextState(currentRange: DateRange, day: Date, allowSingleDayRange: Boolean, boundary: Boundary): IDateRangeSelectionState = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextState")(currentRange.asInstanceOf[js.Any], day.asInstanceOf[js.Any], allowSingleDayRange.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any])).asInstanceOf[IDateRangeSelectionState]
+    inline def getNextState(currentRange: DateRange, day: js.Date, allowSingleDayRange: Boolean): IDateRangeSelectionState = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextState")(currentRange.asInstanceOf[js.Any], day.asInstanceOf[js.Any], allowSingleDayRange.asInstanceOf[js.Any])).asInstanceOf[IDateRangeSelectionState]
+    inline def getNextState(currentRange: DateRange, day: js.Date, allowSingleDayRange: Boolean, boundary: Boundary): IDateRangeSelectionState = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextState")(currentRange.asInstanceOf[js.Any], day.asInstanceOf[js.Any], allowSingleDayRange.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any])).asInstanceOf[IDateRangeSelectionState]
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateRangeSelectionStrategy", "DateRangeSelectionStrategy.getNextStateForBoundary")
     @js.native
-    def getNextStateForBoundary: js.Any = js.native
-    inline def getNextStateForBoundary_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getNextStateForBoundary")(x.asInstanceOf[js.Any])
+    def getNextStateForBoundary: Any = js.native
+    inline def getNextStateForBoundary_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getNextStateForBoundary")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateRangeSelectionStrategy", "DateRangeSelectionStrategy.getOtherBoundary")
     @js.native
-    def getOtherBoundary: js.Any = js.native
-    inline def getOtherBoundary_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOtherBoundary")(x.asInstanceOf[js.Any])
+    def getOtherBoundary: Any = js.native
+    inline def getOtherBoundary_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOtherBoundary")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateRangeSelectionStrategy", "DateRangeSelectionStrategy.isOverlappingOtherBoundary")
     @js.native
-    def isOverlappingOtherBoundary: js.Any = js.native
-    inline def isOverlappingOtherBoundary_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isOverlappingOtherBoundary")(x.asInstanceOf[js.Any])
+    def isOverlappingOtherBoundary: Any = js.native
+    inline def isOverlappingOtherBoundary_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isOverlappingOtherBoundary")(x.asInstanceOf[js.Any])
   }
   
   trait IDateRangeSelectionState extends StObject {

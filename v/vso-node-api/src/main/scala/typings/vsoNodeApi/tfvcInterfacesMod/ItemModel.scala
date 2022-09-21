@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ItemModel extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   var contentMetadata: FileContentMetadata
   
@@ -21,7 +21,7 @@ trait ItemModel extends StObject {
 object ItemModel {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     contentMetadata: FileContentMetadata,
     isFolder: Boolean,
     isSymLink: Boolean,
@@ -44,6 +44,6 @@ object ItemModel {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

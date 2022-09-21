@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "WebXRFeaturesManager")
 @js.native
-class WebXRFeaturesManager protected ()
+open class WebXRFeaturesManager protected ()
   extends typings.babylonjs.xRIndexMod.WebXRFeaturesManager {
   /**
     * constructs a new features manages.
@@ -61,7 +61,7 @@ object WebXRFeaturesManager {
     featureName: String,
     version: Double,
     xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
-    options: js.Any
+    options: Any
   ): js.Function0[IWebXRFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("ConstructFeature")(featureName.asInstanceOf[js.Any], version.asInstanceOf[js.Any], xrSessionManager.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[IWebXRFeature]]
   inline def ConstructFeature(
     featureName: String,
@@ -72,7 +72,7 @@ object WebXRFeaturesManager {
     featureName: String,
     version: Unit,
     xrSessionManager: typings.babylonjs.webXRSessionManagerMod.WebXRSessionManager,
-    options: js.Any
+    options: Any
   ): js.Function0[IWebXRFeature] = (^.asInstanceOf[js.Dynamic].applyDynamic("ConstructFeature")(featureName.asInstanceOf[js.Any], version.asInstanceOf[js.Any], xrSessionManager.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[IWebXRFeature]]
   
   /**
@@ -105,5 +105,12 @@ object WebXRFeaturesManager {
   
   @JSImport("babylonjs/index", "WebXRFeaturesManager._AvailableFeatures")
   @js.native
-  val _AvailableFeatures: js.Any = js.native
+  val _AvailableFeatures: Any = js.native
+  
+  /**
+    * The key is the feature to check and the value is the feature that conflicts.
+    */
+  @JSImport("babylonjs/index", "WebXRFeaturesManager._ConflictingFeatures")
+  @js.native
+  val _ConflictingFeatures: Any = js.native
 }

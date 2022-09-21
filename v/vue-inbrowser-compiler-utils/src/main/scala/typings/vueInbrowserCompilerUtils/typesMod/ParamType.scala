@@ -23,7 +23,7 @@ object ParamType {
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    inline def setElementsVarargs(value: ParamType*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: ParamType*): Self = StObject.set(x, "elements", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

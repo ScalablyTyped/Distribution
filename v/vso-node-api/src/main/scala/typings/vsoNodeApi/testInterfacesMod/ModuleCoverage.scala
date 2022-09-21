@@ -41,11 +41,11 @@ object ModuleCoverage {
     
     inline def setBlockData(value: js.Array[Double]): Self = StObject.set(x, "blockData", value.asInstanceOf[js.Any])
     
-    inline def setBlockDataVarargs(value: Double*): Self = StObject.set(x, "blockData", js.Array(value :_*))
+    inline def setBlockDataVarargs(value: Double*): Self = StObject.set(x, "blockData", js.Array(value*))
     
     inline def setFunctions(value: js.Array[FunctionCoverage]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
-    inline def setFunctionsVarargs(value: FunctionCoverage*): Self = StObject.set(x, "functions", js.Array(value :_*))
+    inline def setFunctionsVarargs(value: FunctionCoverage*): Self = StObject.set(x, "functions", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

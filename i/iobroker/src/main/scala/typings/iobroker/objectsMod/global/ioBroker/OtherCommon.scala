@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OtherCommon
   extends StObject
      with ObjectCommon
-     with /* propName */ StringDictionary[js.Any] {
+     with /* propName */ StringDictionary[Any] {
   
   // Make it possible to narrow the object type using the custom property
   var custom: Unit

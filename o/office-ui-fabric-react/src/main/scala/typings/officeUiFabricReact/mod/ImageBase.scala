@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "ImageBase")
 @js.native
-class ImageBase protected ()
+open class ImageBase protected ()
   extends typings.officeUiFabricReact.libImageMod.ImageBase {
   def this(props: IImageProps) = this()
 }
@@ -21,8 +21,8 @@ object ImageBase {
   
   @JSImport("office-ui-fabric-react", "ImageBase._svgRegex")
   @js.native
-  def _svgRegex: js.Any = js.native
-  inline def _svgRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_svgRegex")(x.asInstanceOf[js.Any])
+  def _svgRegex: Any = js.native
+  inline def _svgRegex_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_svgRegex")(x.asInstanceOf[js.Any])
   
   @JSImport("office-ui-fabric-react", "ImageBase.defaultProps")
   @js.native

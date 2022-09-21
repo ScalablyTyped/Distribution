@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RemoveFromGlobalClusterMessage extends StObject {
   
   /**
-    *  The Amazon Resource Name (ARN) identifying the cluster that was detached from the Aurora global database cluster. 
+    * The Amazon Resource Name (ARN) identifying the cluster that was detached from the Aurora global database cluster.
     */
   var DbClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    *  The cluster identifier to detach from the Aurora global database cluster. 
+    * The cluster identifier to detach from the Aurora global database cluster.
     */
   var GlobalClusterIdentifier: js.UndefOr[String] = js.undefined
 }

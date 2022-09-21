@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-default-unit
 
-Typings are for version 10.5.0
+Typings are for version 10.9.2
 
 ## Library description:
 JSS plugin that adds default custom unit to numeric values where needed
@@ -10,10 +10,10 @@ JSS plugin that adds default custom unit to numeric values where needed
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-default-unit |
 | Keywords           | cssinjs, css-in-js, css in js, jss, plugin, px, unit, default-unit |
-| # releases         | 30 |
-| # dependents       | 12 |
-| # downloads        | 56912875 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 9978126.666666666 |
+| # stars            | 6773.0 |
 
 ## Links
 - [Homepage](https://github.com/cssinjs/jss#readme)

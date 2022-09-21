@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PhysicsEngine")
 @js.native
-class PhysicsEngine protected ()
+open class PhysicsEngine protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PhysicsEngine {
   /**
@@ -22,7 +22,7 @@ class PhysicsEngine protected ()
   
   /**
     * Called by the scene. No need to call it.
-    * @param delta defines the timespam between frames
+    * @param delta defines the timespan between frames
     */
   /* CompleteClass */
   override def _step(delta: Double): Unit = js.native
@@ -68,7 +68,7 @@ class PhysicsEngine protected ()
     * @returns the PhysicsImpostor or null if not found
     */
   /* CompleteClass */
-  override def getImpostorWithPhysicsBody(body: js.Any): Nullable[typings.babylonjs.BABYLON.PhysicsImpostor] = js.native
+  override def getImpostorWithPhysicsBody(body: Any): Nullable[typings.babylonjs.BABYLON.PhysicsImpostor] = js.native
   
   /**
     * Gets the list of physic impostors

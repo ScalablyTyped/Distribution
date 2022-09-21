@@ -8,21 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofPropertyBindingComposite extends StObject {
   
-  var Composite: Instantiable2[
-    /* targetGroup */ js.Any, 
-    /* path */ js.Any, 
-    typings.three.mod.PropertyBinding.Composite
-  ]
+  var Composite: Instantiable2[/* targetGroup */ Any, /* path */ Any, typings.three.mod.PropertyBinding.Composite]
 }
 object TypeofPropertyBindingComposite {
   
-  inline def apply(Composite: Instantiable2[/* targetGroup */ js.Any, /* path */ js.Any, Composite]): TypeofPropertyBindingComposite = {
+  inline def apply(Composite: Instantiable2[/* targetGroup */ Any, /* path */ Any, Composite]): TypeofPropertyBindingComposite = {
     val __obj = js.Dynamic.literal(Composite = Composite.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPropertyBindingComposite]
   }
   
   extension [Self <: TypeofPropertyBindingComposite](x: Self) {
     
-    inline def setComposite(value: Instantiable2[/* targetGroup */ js.Any, /* path */ js.Any, Composite]): Self = StObject.set(x, "Composite", value.asInstanceOf[js.Any])
+    inline def setComposite(value: Instantiable2[/* targetGroup */ Any, /* path */ Any, Composite]): Self = StObject.set(x, "Composite", value.asInstanceOf[js.Any])
   }
 }

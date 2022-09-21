@@ -6,7 +6,6 @@ import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.requester_
 import typings.awsSdkClientS3Browser.outputTypesUnionMod._OutputTypesUnion
 import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ object typesCreateMultipartUploadOutputMod {
     /**
       * <p>Date when multipart upload will become eligible for abort operation by lifecycle.</p>
       */
-    var AbortDate: js.UndefOr[Date] = js.undefined
+    var AbortDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * <p>Id of the lifecycle rule that makes a multipart upload eligible for abort operation.</p>
@@ -77,7 +76,7 @@ object typesCreateMultipartUploadOutputMod {
     
     extension [Self <: CreateMultipartUploadOutput](x: Self) {
       
-      inline def setAbortDate(value: Date): Self = StObject.set(x, "AbortDate", value.asInstanceOf[js.Any])
+      inline def setAbortDate(value: js.Date): Self = StObject.set(x, "AbortDate", value.asInstanceOf[js.Any])
       
       inline def setAbortDateUndefined: Self = StObject.set(x, "AbortDate", js.undefined)
       

@@ -15,6 +15,6 @@ object usePickerInputMod {
   val ^ : js.Any = js.native
   
   inline def default(
-    hasOpenValueIsClickOutsideTriggerOpenForwardKeyDownBlurToCancelOnSubmitOnCancelOnFocusOnBlur: BlurToCancel
-  ): js.Tuple2[DOMAttributes[HTMLInputElement], Focused] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOpenValueIsClickOutsideTriggerOpenForwardKeyDownBlurToCancelOnSubmitOnCancelOnFocusOnBlur.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[DOMAttributes[HTMLInputElement], Focused]]
+    hasOpenValueIsClickOutsideTriggerOpenForwardKeyDownOnKeyDownBlurToCancelOnSubmitOnCancelOnFocusOnBlur: BlurToCancel
+  ): js.Tuple2[DOMAttributes[HTMLInputElement], Focused] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOpenValueIsClickOutsideTriggerOpenForwardKeyDownOnKeyDownBlurToCancelOnSubmitOnCancelOnFocusOnBlur.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[DOMAttributes[HTMLInputElement], Focused]]
 }

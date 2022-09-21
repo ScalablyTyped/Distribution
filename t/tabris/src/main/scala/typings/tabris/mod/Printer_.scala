@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "Printer")
 @js.native
-/* private */ class Printer_ () extends NativeObject {
+/**
+  * Allows to print PDF documents or images from the device. A printer object is always available from
+  * tabris.printer.
+  */
+/* private */ open class Printer_ () extends NativeObject {
   
   /**
     * Prints a PDF document using the native printing capabilities of the device. The data has to be
@@ -18,6 +22,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @param data The bytes of the document to print. The value can either be an ArrayBuffer or a typed array containing the bytes of a PDF document or image.
     * @param options An optional set of configuration parameters.
     */
-  def print(data: js.Any): js.Promise[Unit] = js.native
-  def print(data: js.Any, options: ContentType): js.Promise[Unit] = js.native
+  def print(data: Any): js.Promise[Unit] = js.native
+  def print(data: Any, options: ContentType): js.Promise[Unit] = js.native
 }

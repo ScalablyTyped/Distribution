@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices.Sensors
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
@@ -47,7 +46,7 @@ object ActivitySensor {
     * @return Asynchronously returns a list of ActivitySensorReading objects that represent info about the sensor.
     */
   /* static member */
-  inline def getSystemHistoryAsync(fromTime: Date): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemHistoryAsync")(fromTime.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+  inline def getSystemHistoryAsync(fromTime: js.Date): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemHistoryAsync")(fromTime.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
   /**
     * Asynchronously gets sensor readings from a specific time and duration.
     * @param fromTime The time at which to get sensor readings.
@@ -55,5 +54,5 @@ object ActivitySensor {
     * @return Asynchronously returns a list of ActivitySensorReading objects that represent info about the sensor.
     */
   /* static member */
-  inline def getSystemHistoryAsync(fromTime: Date, duration: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSystemHistoryAsync")(fromTime.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+  inline def getSystemHistoryAsync(fromTime: js.Date, duration: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSystemHistoryAsync")(fromTime.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
 }

@@ -36,6 +36,6 @@ object GoogleCloudDatalabelingV1alpha1CreateInstructionMetadata {
     
     inline def setPartialFailuresUndefined: Self = StObject.set(x, "partialFailures", js.undefined)
     
-    inline def setPartialFailuresVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "partialFailures", js.Array(value :_*))
+    inline def setPartialFailuresVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "partialFailures", js.Array(value*))
   }
 }

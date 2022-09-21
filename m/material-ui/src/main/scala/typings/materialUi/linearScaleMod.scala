@@ -10,10 +10,10 @@ object linearScaleMod {
   
   @JSImport("material-ui/svg-icons/editor/linear-scale", JSImport.Default)
   @js.native
-  class default () extends EditorLinearScale
+  open class default () extends EditorLinearScale
   
   @JSImport("material-ui/svg-icons/editor/linear-scale", "EditorLinearScale")
   @js.native
-  class EditorLinearScale ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorLinearScale ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

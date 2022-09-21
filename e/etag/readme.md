@@ -10,10 +10,10 @@ Create simple HTTP ETags
 | ------------------ | :-------------: |
 | Full name          | etag |
 | Keywords           | etag, http, res |
-| # releases         | 0 |
-| # dependents       | 704 |
-| # downloads        | 662989098 |
-| # stars            | 20 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.661207333333333E7 |
+| # stars            | 227.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/etag#readme)

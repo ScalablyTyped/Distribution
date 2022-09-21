@@ -10,10 +10,10 @@ A Vue wrapper component for cropperjs
 | ------------------ | :-------------: |
 | Full name          | vue-cropperjs |
 | Keywords           | vue, vuejs, cropper, cropperjs, component |
-| # releases         | 4 |
-| # dependents       | 44 |
-| # downloads        | 1028348 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 208420.33333333334 |
+| # stars            | 812.0 |
 
 ## Links
 - [Homepage](https://github.com/Agontuk/vue-cropperjs#readme)

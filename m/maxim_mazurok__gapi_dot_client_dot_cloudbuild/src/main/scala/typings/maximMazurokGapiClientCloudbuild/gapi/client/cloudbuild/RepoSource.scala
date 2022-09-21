@@ -25,14 +25,14 @@ trait RepoSource extends StObject {
   /** ID of the project that owns the Cloud Source Repository. If omitted, the project ID requesting the build is assumed. */
   var projectId: js.UndefOr[String] = js.undefined
   
-  /** Required. Name of the Cloud Source Repository. */
+  /** Name of the Cloud Source Repository. */
   var repoName: js.UndefOr[String] = js.undefined
   
   /** Substitutions to use in a triggered build. Should only be used with RunBuildTrigger */
   var substitutions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.RepoSource & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.RepoSource & TopLevel[Any]
   ] = js.undefined
   
   /** Regex matching tags to build. The syntax of the regular expressions accepted is the syntax accepted by RE2 and described at https://github.com/google/re2/wiki/Syntax */
@@ -74,7 +74,7 @@ object RepoSource {
     inline def setSubstitutions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.RepoSource & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.RepoSource & TopLevel[Any]
     ): Self = StObject.set(x, "substitutions", value.asInstanceOf[js.Any])
     
     inline def setSubstitutionsUndefined: Self = StObject.set(x, "substitutions", js.undefined)

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cannon", "Spring")
 @js.native
-class Spring ()
+open class Spring ()
   extends StObject
      with typings.cannon.CANNON.Spring {
   def this(options: ISpringOptions) = this()

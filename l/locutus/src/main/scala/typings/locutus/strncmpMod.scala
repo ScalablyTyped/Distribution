@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object strncmpMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(str1: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(str1.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(str1: js.Any, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str1: js.Any, str2: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str1: js.Any, str2: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str1: Unit, str2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str1: Unit, str2: js.Any, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str1: Unit, str2: Unit, lgth: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(str1: Any): Any = ^.asInstanceOf[js.Dynamic].apply(str1.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(str1: Any, str2: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str1: Any, str2: Any, lgth: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str1: Any, str2: Unit, lgth: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str1: Unit, str2: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str1: Unit, str2: Any, lgth: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str1: Unit, str2: Unit, lgth: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any], lgth.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/strncmp", JSImport.Namespace)
   @js.native

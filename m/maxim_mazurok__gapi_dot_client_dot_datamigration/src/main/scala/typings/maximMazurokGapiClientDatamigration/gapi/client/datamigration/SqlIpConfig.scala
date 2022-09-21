@@ -16,7 +16,7 @@ trait SqlIpConfig extends StObject {
   var enableIpv4: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The resource link for the VPC network from which the Cloud SQL instance is accessible for private IP. For example, `/projects/myProject/global/networks/default`. This setting can be
+    * The resource link for the VPC network from which the Cloud SQL instance is accessible for private IP. For example, `projects/myProject/global/networks/default`. This setting can be
     * updated, but it cannot be removed after it is set.
     */
   var privateNetwork: js.UndefOr[String] = js.undefined
@@ -37,7 +37,7 @@ object SqlIpConfig {
     
     inline def setAuthorizedNetworksUndefined: Self = StObject.set(x, "authorizedNetworks", js.undefined)
     
-    inline def setAuthorizedNetworksVarargs(value: SqlAclEntry*): Self = StObject.set(x, "authorizedNetworks", js.Array(value :_*))
+    inline def setAuthorizedNetworksVarargs(value: SqlAclEntry*): Self = StObject.set(x, "authorizedNetworks", js.Array(value*))
     
     inline def setEnableIpv4(value: Boolean): Self = StObject.set(x, "enableIpv4", value.asInstanceOf[js.Any])
     

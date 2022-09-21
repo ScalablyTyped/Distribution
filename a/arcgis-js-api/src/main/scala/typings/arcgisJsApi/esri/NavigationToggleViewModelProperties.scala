@@ -11,6 +11,8 @@ trait NavigationToggleViewModelProperties extends StObject {
   /**
     * The navigation mode of the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html#view).
     *
+    * @default pan
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html#navigationMode)
     */
   var navigationMode: js.UndefOr[pan | rotate] = js.undefined

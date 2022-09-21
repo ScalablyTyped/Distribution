@@ -4,36 +4,25 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A search result contains information about a YouTube video, channel, or
-  * playlist that matches the search parameters specified in an API request.
-  * While a search result points to a uniquely identifiable resource, like a
-  * video, it does not have its own persistent data.
-  */
 trait SchemaSearchResult extends StObject {
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The id object contains information that can be used to uniquely identify
-    * the resource that matches the search request.
+    * The id object contains information that can be used to uniquely identify the resource that matches the search request.
     */
   var id: js.UndefOr[SchemaResourceId] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;youtube#searchResult&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "youtube#searchResult".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The snippet object contains basic details about a search result, such as
-    * its title or description. For example, if the search result is a video,
-    * then the title will be the video&#39;s title and the description will be
-    * the video&#39;s description.
+    * The snippet object contains basic details about a search result, such as its title or description. For example, if the search result is a video, then the title will be the video's title and the description will be the video's description.
     */
   var snippet: js.UndefOr[SchemaSearchResultSnippet] = js.undefined
 }
@@ -48,6 +37,8 @@ object SchemaSearchResult {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setId(value: SchemaResourceId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -55,6 +46,8 @@ object SchemaSearchResult {
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

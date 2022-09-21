@@ -16,7 +16,7 @@ object untagResourceCommandMod {
   
   @JSImport("@aws-sdk/client-kms-node/commands/UntagResourceCommand", "UntagResourceCommand")
   @js.native
-  class UntagResourceCommand protected ()
+  open class UntagResourceCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object untagResourceCommandMod {
     override val middlewareStack: MiddlewareStack[UntagResourceInput, UntagResourceOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: KMSResolvedConfiguration
     ): Handler[UntagResourceInput, UntagResourceOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KMSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[UntagResourceInput, UntagResourceOutput] = js.native
   }
 }

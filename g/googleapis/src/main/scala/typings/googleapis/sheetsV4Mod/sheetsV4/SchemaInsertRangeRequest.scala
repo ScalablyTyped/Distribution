@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Inserts cells into a range, shifting the existing cells over or down.
-  */
 trait SchemaInsertRangeRequest extends StObject {
   
   /**
@@ -15,11 +12,9 @@ trait SchemaInsertRangeRequest extends StObject {
   var range: js.UndefOr[SchemaGridRange] = js.undefined
   
   /**
-    * The dimension which will be shifted when inserting cells. If ROWS,
-    * existing cells will be shifted down. If COLUMNS, existing cells will be
-    * shifted right.
+    * The dimension which will be shifted when inserting cells. If ROWS, existing cells will be shifted down. If COLUMNS, existing cells will be shifted right.
     */
-  var shiftDimension: js.UndefOr[String] = js.undefined
+  var shiftDimension: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaInsertRangeRequest {
   
@@ -35,6 +30,8 @@ object SchemaInsertRangeRequest {
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
     inline def setShiftDimension(value: String): Self = StObject.set(x, "shiftDimension", value.asInstanceOf[js.Any])
+    
+    inline def setShiftDimensionNull: Self = StObject.set(x, "shiftDimension", null)
     
     inline def setShiftDimensionUndefined: Self = StObject.set(x, "shiftDimension", js.undefined)
   }

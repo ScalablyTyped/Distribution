@@ -17,7 +17,12 @@ object polygonDrawActionMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/views/draw/PolygonDrawAction", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * This class uses different [events](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolygonDrawAction.html#events-summary) to generate a set of vertices to create a new [Polygon](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html) geometry using [Draw](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolygonDrawAction.html)
+    */
+  open class Class ()
     extends StObject
        with PolygonDrawAction {
     def this(properties: PolygonDrawActionProperties) = this()

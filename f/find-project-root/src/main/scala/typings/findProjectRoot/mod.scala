@@ -1,5 +1,8 @@
 package typings.findProjectRoot
 
+import typings.findProjectRoot.findProjectRootNumbers.`9`
+import typings.findProjectRoot.findProjectRootStrings.Dotgit
+import typings.findProjectRoot.findProjectRootStrings.Dothg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +15,14 @@ object mod {
   @JSImport("find-project-root", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("find-project-root", "MARKERS")
+  @js.native
+  val MARKERS: js.Tuple2[Dotgit, Dothg] = js.native
+  
+  @JSImport("find-project-root", "MAX_DEPTH")
+  @js.native
+  val MAX_DEPTH: `9` = js.native
   
   trait Options extends StObject {
     
@@ -38,7 +49,7 @@ object mod {
       
       inline def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
       
-      inline def setMarkersVarargs(value: String*): Self = StObject.set(x, "markers", js.Array(value :_*))
+      inline def setMarkersVarargs(value: String*): Self = StObject.set(x, "markers", js.Array(value*))
       
       inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       

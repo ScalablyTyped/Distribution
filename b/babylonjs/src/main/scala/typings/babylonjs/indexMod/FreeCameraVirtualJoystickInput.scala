@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "FreeCameraVirtualJoystickInput")
 @js.native
-class FreeCameraVirtualJoystickInput ()
+open class FreeCameraVirtualJoystickInput ()
   extends typings.babylonjs.babylonjsMod.FreeCameraVirtualJoystickInput

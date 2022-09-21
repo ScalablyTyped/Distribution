@@ -10,5 +10,6 @@ trait MediaStreamAudioSourceNode
   extends StObject
      with AudioNode {
   
+  /* standard dom */
   val mediaStream: MediaStream = js.native
 }

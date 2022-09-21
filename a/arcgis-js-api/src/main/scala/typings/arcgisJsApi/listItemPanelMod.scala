@@ -24,12 +24,14 @@ object listItemPanelMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with ListItemPanel {
     
     /**
       * Adds a CSS class used to style a node that represents the panel.
+      *
+      * @default esri-icon-layer-list
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#className)
       */
@@ -42,7 +44,7 @@ object listItemPanelMod extends Shortcut {
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#content)
       */
     /* CompleteClass */
-    var content: Widget_ | HTMLElement | String | js.Array[js.Any] = js.native
+    var content: Widget_ | HTMLElement | String | js.Array[Any] = js.native
     
     /**
       * The URL or data URI of an image used to represent the panel.
@@ -63,6 +65,8 @@ object listItemPanelMod extends Shortcut {
     /**
       * Indicates if the panel's content is open and visible to the user.
       *
+      * @default false
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#open)
       */
     /* CompleteClass */
@@ -78,6 +82,8 @@ object listItemPanelMod extends Shortcut {
     
     /**
       * Indicates if the node containing the [image](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#image) or [icon font](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#className) is visible to the user.
+      *
+      * @default true
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#visible)
       */

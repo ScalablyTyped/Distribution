@@ -19,6 +19,12 @@ trait Xgafv extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /**
+    * Optional. [Resource name](https://cloud.google.com/apis/design/resource_names) of the customer. If you're using this API for your own organization, use `customers/my_customer`
+    * If you're using this API to manage another organization, use `customers/{customer}`, where customer is the customer to whom the device belongs.
+    */
+  var customer: js.UndefOr[String] = js.undefined
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
@@ -27,9 +33,6 @@ trait Xgafv extends StObject {
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /** Required. The parent `Group` resource under which to create the `Membership`. Must be of the form `groups/{group_id}`. */
-  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -45,8 +48,8 @@ trait Xgafv extends StObject {
 }
 object Xgafv {
   
-  inline def apply(parent: String): Xgafv = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(): Xgafv = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Xgafv]
   }
   
@@ -68,6 +71,10 @@ object Xgafv {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -79,8 +86,6 @@ object Xgafv {
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

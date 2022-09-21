@@ -4,16 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The matching products.
-  */
 trait SchemaProductsListResponse extends StObject {
-  
-  /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;androidenterprise#productsListResponse&quot;.
-    */
-  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * General pagination information.
@@ -21,8 +12,7 @@ trait SchemaProductsListResponse extends StObject {
   var pageInfo: js.UndefOr[SchemaPageInfo] = js.undefined
   
   /**
-    * Information about a product (e.g. an app) in the Google Play store, for
-    * display to an enterprise admin.
+    * Information about a product (e.g. an app) in the Google Play store, for display to an enterprise admin.
     */
   var product: js.UndefOr[js.Array[SchemaProduct]] = js.undefined
   
@@ -40,10 +30,6 @@ object SchemaProductsListResponse {
   
   extension [Self <: SchemaProductsListResponse](x: Self) {
     
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
-    
     inline def setPageInfo(value: SchemaPageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     
     inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
@@ -52,7 +38,7 @@ object SchemaProductsListResponse {
     
     inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
-    inline def setProductVarargs(value: SchemaProduct*): Self = StObject.set(x, "product", js.Array(value :_*))
+    inline def setProductVarargs(value: SchemaProduct*): Self = StObject.set(x, "product", js.Array(value*))
     
     inline def setTokenPagination(value: SchemaTokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     

@@ -13,7 +13,7 @@ trait IBookmarkListDef extends StObject {
   /**
     * Data typ JSON
     */
-  var qData: js.Any
+  var qData: Any
   
   /**
     * Type of the list
@@ -22,14 +22,14 @@ trait IBookmarkListDef extends StObject {
 }
 object IBookmarkListDef {
   
-  inline def apply(qData: js.Any): IBookmarkListDef = {
+  inline def apply(qData: Any): IBookmarkListDef = {
     val __obj = js.Dynamic.literal(qData = qData.asInstanceOf[js.Any], qType = "bookmark")
     __obj.asInstanceOf[IBookmarkListDef]
   }
   
   extension [Self <: IBookmarkListDef](x: Self) {
     
-    inline def setQData(value: js.Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
+    inline def setQData(value: Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
     inline def setQType(value: bookmark): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }

@@ -11,14 +11,11 @@ Programmatically access the Tinder dating service API
 | Full name          | tinder |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 997 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 212.66666666666666 |
+| # stars            | 67.0 |
 
 ## Links
-- [Homepage](https://github.com/tinderjs/tinderjs#readme)
-- [Bugs](https://github.com/tinderjs/tinderjs/issues)
-- [Repository](https://github.com/tinderjs/tinderjs)
 - [Npm](https://www.npmjs.com/package/tinder)
     
 

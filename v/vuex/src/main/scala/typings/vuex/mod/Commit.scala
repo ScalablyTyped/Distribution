@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Commit extends StObject {
   
   def apply(`type`: String): Unit = js.native
-  def apply(`type`: String, payload: js.Any): Unit = js.native
-  def apply(`type`: String, payload: js.Any, options: CommitOptions): Unit = js.native
+  def apply(`type`: String, payload: Any): Unit = js.native
+  def apply(`type`: String, payload: Any, options: CommitOptions): Unit = js.native
   def apply(`type`: String, payload: Unit, options: CommitOptions): Unit = js.native
   def apply[P /* <: Payload */](payloadWithType: P): Unit = js.native
   def apply[P /* <: Payload */](payloadWithType: P, options: CommitOptions): Unit = js.native

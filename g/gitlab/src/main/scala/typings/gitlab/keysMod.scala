@@ -12,7 +12,7 @@ object keysMod {
   
   @JSImport("gitlab/dist/types/core/services/Keys", "Keys")
   @js.native
-  class Keys () extends BaseService {
+  open class Keys () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def show(keyId: String): js.Promise[GetResponse] = js.native

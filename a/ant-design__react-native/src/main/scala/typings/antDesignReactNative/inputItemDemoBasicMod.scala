@@ -9,14 +9,13 @@ object inputItemDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/input-item/demo/basic", JSImport.Default)
   @js.native
-  class default protected () extends BasicInputItemExample {
-    def this(props: js.Any) = this()
+  open class default protected () extends BasicInputItemExample {
+    def this(props: Any) = this()
   }
   
   @js.native
-  trait BasicInputItemExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait BasicInputItemExample extends Component[Any, Any, Any] {
     
-    var inputRef: js.Any = js.native
+    var inputRef: Any = js.native
   }
 }

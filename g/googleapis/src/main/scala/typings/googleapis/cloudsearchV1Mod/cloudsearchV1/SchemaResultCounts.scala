@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Result count information
-  */
 trait SchemaResultCounts extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaResultCounts {
     
     inline def setSourceResultCountsUndefined: Self = StObject.set(x, "sourceResultCounts", js.undefined)
     
-    inline def setSourceResultCountsVarargs(value: SchemaSourceResultCount*): Self = StObject.set(x, "sourceResultCounts", js.Array(value :_*))
+    inline def setSourceResultCountsVarargs(value: SchemaSourceResultCount*): Self = StObject.set(x, "sourceResultCounts", js.Array(value*))
   }
 }

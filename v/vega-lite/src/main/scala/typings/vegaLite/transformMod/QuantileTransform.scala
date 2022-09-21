@@ -53,13 +53,13 @@ object QuantileTransform {
     
     inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setProbs(value: js.Array[Double]): Self = StObject.set(x, "probs", value.asInstanceOf[js.Any])
     
     inline def setProbsUndefined: Self = StObject.set(x, "probs", js.undefined)
     
-    inline def setProbsVarargs(value: Double*): Self = StObject.set(x, "probs", js.Array(value :_*))
+    inline def setProbsVarargs(value: Double*): Self = StObject.set(x, "probs", js.Array(value*))
     
     inline def setQuantile(value: FieldName): Self = StObject.set(x, "quantile", value.asInstanceOf[js.Any])
     

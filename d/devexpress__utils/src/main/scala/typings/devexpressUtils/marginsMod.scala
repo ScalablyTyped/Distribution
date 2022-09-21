@@ -10,7 +10,7 @@ object marginsMod {
   
   @JSImport("@devexpress/utils/lib/geometry/margins", "Margins")
   @js.native
-  class Margins protected ()
+  open class Margins protected ()
     extends Offsets
        with ICloneable[Margins] {
     def this(left: Double, right: Double, top: Double, bottom: Double) = this()

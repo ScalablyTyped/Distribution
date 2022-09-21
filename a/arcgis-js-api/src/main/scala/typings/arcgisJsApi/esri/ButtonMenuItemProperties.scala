@@ -9,6 +9,8 @@ trait ButtonMenuItemProperties extends StObject {
   /**
     * Indicates whether to automatically close the menu's item.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuItem.html#autoCloseMenu)
     */
   var autoCloseMenu: js.UndefOr[Boolean] = js.undefined
@@ -44,6 +46,8 @@ trait ButtonMenuItemProperties extends StObject {
   /**
     * Indicates if the menu content is visible.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuItem.html#open)
     */
   var open: js.UndefOr[Boolean] = js.undefined
@@ -51,12 +55,16 @@ trait ButtonMenuItemProperties extends StObject {
   /**
     * Indicates whether the menu item is selected.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuItem.html#selected)
     */
   var selected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether a toggled state should be applied to individual menu items.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuItem.html#selectionEnabled)
     */
@@ -75,7 +83,7 @@ object ButtonMenuItemProperties {
     
     inline def setAutoCloseMenuUndefined: Self = StObject.set(x, "autoCloseMenu", js.undefined)
     
-    inline def setClickFunction(value: /* event */ js.Any => Unit): Self = StObject.set(x, "clickFunction", js.Any.fromFunction1(value))
+    inline def setClickFunction(value: /* event */ Any => scala.Unit): Self = StObject.set(x, "clickFunction", js.Any.fromFunction1(value))
     
     inline def setClickFunctionUndefined: Self = StObject.set(x, "clickFunction", js.undefined)
     
@@ -87,7 +95,7 @@ object ButtonMenuItemProperties {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: ButtonMenuItemProperties*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ButtonMenuItemProperties*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,7 @@ object anon {
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      inline def setAttributesVarargs(value: Parameter*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: Parameter*): Self = StObject.set(x, "attributes", js.Array(value*))
       
       inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       
@@ -38,7 +38,7 @@ object anon {
       
       inline def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
       
-      inline def setUniformsVarargs(value: Parameter*): Self = StObject.set(x, "uniforms", js.Array(value :_*))
+      inline def setUniformsVarargs(value: Parameter*): Self = StObject.set(x, "uniforms", js.Array(value*))
       
       inline def setVertex(value: String): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
     }
@@ -65,13 +65,13 @@ object anon {
       
       inline def setAttributes(value: js.Array[Parameter]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      inline def setAttributesVarargs(value: Parameter*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: Parameter*): Self = StObject.set(x, "attributes", js.Array(value*))
       
       inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       
       inline def setUniforms(value: js.Array[Parameter]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       
-      inline def setUniformsVarargs(value: Parameter*): Self = StObject.set(x, "uniforms", js.Array(value :_*))
+      inline def setUniformsVarargs(value: Parameter*): Self = StObject.set(x, "uniforms", js.Array(value*))
       
       inline def setVertex(value: String): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
     }

@@ -9,7 +9,7 @@ trait BannerClickEventUIParam extends StObject {
   /**
     * Get the banner html element in the DOM.
     */
-  var bannerElement: js.UndefOr[js.Any] = js.undefined
+  var bannerElement: js.UndefOr[Any] = js.undefined
 }
 object BannerClickEventUIParam {
   
@@ -20,7 +20,7 @@ object BannerClickEventUIParam {
   
   extension [Self <: BannerClickEventUIParam](x: Self) {
     
-    inline def setBannerElement(value: js.Any): Self = StObject.set(x, "bannerElement", value.asInstanceOf[js.Any])
+    inline def setBannerElement(value: Any): Self = StObject.set(x, "bannerElement", value.asInstanceOf[js.Any])
     
     inline def setBannerElementUndefined: Self = StObject.set(x, "bannerElement", js.undefined)
   }

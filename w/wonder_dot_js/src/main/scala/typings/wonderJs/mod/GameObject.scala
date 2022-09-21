@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "GameObject")
 @js.native
-class GameObject ()
+open class GameObject ()
   extends typings.wonderJs.gameObjectMod.GameObject
 /* static members */
 object GameObject {

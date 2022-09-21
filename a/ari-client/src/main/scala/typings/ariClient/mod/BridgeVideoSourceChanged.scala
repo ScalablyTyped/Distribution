@@ -1,6 +1,5 @@
 package typings.ariClient.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ trait BridgeVideoSourceChanged
 }
 object BridgeVideoSourceChanged {
   
-  inline def apply(application: String, bridge: Bridge, timestamp: Date, `type`: String): BridgeVideoSourceChanged = {
+  inline def apply(application: String, bridge: Bridge, timestamp: js.Date, `type`: String): BridgeVideoSourceChanged = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], bridge = bridge.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BridgeVideoSourceChanged]

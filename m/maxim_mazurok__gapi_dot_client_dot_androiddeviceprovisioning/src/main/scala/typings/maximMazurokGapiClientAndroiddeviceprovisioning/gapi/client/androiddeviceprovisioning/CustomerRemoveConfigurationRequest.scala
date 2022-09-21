@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CustomerRemoveConfigurationRequest extends StObject {
   
-  /** Required. The device to remove the configuration from. */
+  /** Required. The device to remove the configuration from. There are custom validations in RemoveConfigurationRequestValidator */
   var device: js.UndefOr[DeviceReference] = js.undefined
 }
 object CustomerRemoveConfigurationRequest {

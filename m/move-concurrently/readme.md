@@ -11,9 +11,9 @@ Promises of moves of files or directories with rename, falling back to recursive
 | Full name          | move-concurrently |
 | Keywords           | move |
 | # releases         | 1 |
-| # dependents       | 63 |
-| # downloads        | 454863765 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4.1129797E7 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://www.npmjs.com/package/move-concurrently)

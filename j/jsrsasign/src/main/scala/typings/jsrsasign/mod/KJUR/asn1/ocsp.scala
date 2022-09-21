@@ -2,6 +2,7 @@ package typings.jsrsasign.mod.KJUR.asn1
 
 import typings.jsrsasign.anon.Keyhash
 import typings.jsrsasign.anon.Namehash
+import typings.jsrsasign.anon.Tlv
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.CertificateRequest
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.CertificateRequestList
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.OCSPUtil.ResponseInfo
@@ -59,7 +60,7 @@ object ocsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.ocsp.CertID")
   @js.native
-  class CertID ()
+  open class CertID ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.CertID {
     def this(params: Keyhash) = this()
@@ -108,6 +109,10 @@ object ocsp {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -133,7 +138,7 @@ object ocsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.ocsp.OCSPRequest")
   @js.native
-  class OCSPRequest ()
+  open class OCSPRequest ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.OCSPRequest {
     def this(params: CertificateRequestList) = this()
@@ -181,6 +186,10 @@ object ocsp {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -254,7 +263,7 @@ object ocsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.ocsp.Request")
   @js.native
-  class Request ()
+  open class Request ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.Request {
     def this(params: Namehash) = this()
@@ -303,6 +312,10 @@ object ocsp {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -329,7 +342,7 @@ object ocsp {
     */
   @JSImport("jsrsasign", "KJUR.asn1.ocsp.TBSRequest")
   @js.native
-  class TBSRequest ()
+  open class TBSRequest ()
     extends StObject
        with typings.jsrsasign.jsrsasign.KJUR.asn1.ocsp.TBSRequest {
     def this(params: CertificateRequestList) = this()
@@ -377,6 +390,10 @@ object ocsp {
     /** flag whether internal data was changed */
     /* CompleteClass */
     var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
     
     /**
       * set TBSRequest ASN.1 object by array of parameters.

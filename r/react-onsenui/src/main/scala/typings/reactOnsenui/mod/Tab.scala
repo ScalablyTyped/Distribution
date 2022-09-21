@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "Tab")
 @js.native
-class Tab protected ()
+open class Tab protected ()
   extends Component[Label, js.Object] {
   def this(props: HTMLAttributesidclassName & Label) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & Label, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & Label, context: Any) = this()
 }

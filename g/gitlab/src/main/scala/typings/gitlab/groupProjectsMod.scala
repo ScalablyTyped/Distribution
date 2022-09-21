@@ -13,7 +13,7 @@ object groupProjectsMod {
   
   @JSImport("gitlab/dist/types/core/services/GroupProjects", "GroupProjects")
   @js.native
-  class GroupProjects () extends BaseService {
+  open class GroupProjects () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def add(groupId: String, projectId: String): js.Promise[js.Object] = js.native

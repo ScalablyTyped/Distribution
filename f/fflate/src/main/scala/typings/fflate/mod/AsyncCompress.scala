@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates an asynchronous GZIP stream
   * @param cb The callback to call whenever data is deflated
   */
-class AsyncCompress () extends AsyncGzip {
+open class AsyncCompress () extends AsyncGzip {
   def this(cb: AsyncFlateStreamHandler) = this()
   /**
     * Creates an asynchronous GZIP stream

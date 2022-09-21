@@ -8,5 +8,5 @@ object invalidParameterExceptionMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/InvalidParameterException", "InvalidParameterException")
   @js.native
-  val InvalidParameterException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidParameterException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

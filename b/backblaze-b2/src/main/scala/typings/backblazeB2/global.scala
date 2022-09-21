@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("BackBlazeB2")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.backblazeB2.mod.^ {
       def this(options: B2InitOptions) = this()
     }

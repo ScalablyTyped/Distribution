@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.KiiThingContext")
 @js.native
-class KiiThingContext ()
+open class KiiThingContext ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.KiiThingContext

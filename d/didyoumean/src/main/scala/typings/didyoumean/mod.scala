@@ -20,8 +20,8 @@ object mod {
   
   @JSImport("didyoumean", "nullResultValue")
   @js.native
-  def nullResultValue: js.Any = js.native
-  inline def nullResultValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nullResultValue")(x.asInstanceOf[js.Any])
+  def nullResultValue: Any = js.native
+  inline def nullResultValue_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nullResultValue")(x.asInstanceOf[js.Any])
   
   @JSImport("didyoumean", "returnFirstMatch")
   @js.native

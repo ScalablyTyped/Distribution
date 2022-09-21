@@ -7,14 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ComputedKeyframe
   extends StObject
-     with /* property */ StringDictionary[js.UndefOr[java.lang.String | Double | Null]] {
+     with /* standard dom */
+/* property */ StringDictionary[js.UndefOr[java.lang.String | Double | Null]] {
   
+  /* standard dom */
   var composite: CompositeOperationOrAuto
   
+  /* standard dom */
   var computedOffset: Double
   
+  /* standard dom */
   var easing: java.lang.String
   
+  /* standard dom */
   var offset: Double | Null
 }
 object ComputedKeyframe {

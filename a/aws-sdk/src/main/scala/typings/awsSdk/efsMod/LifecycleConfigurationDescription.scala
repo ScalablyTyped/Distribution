@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LifecycleConfigurationDescription extends StObject {
   
   /**
-    * An array of lifecycle management policies. Currently, EFS supports a maximum of one policy per file system.
+    * An array of lifecycle management policies. EFS supports a maximum of one policy per file system.
     */
   var LifecyclePolicies: js.UndefOr[typings.awsSdk.efsMod.LifecyclePolicies] = js.undefined
 }
@@ -24,6 +24,6 @@ object LifecycleConfigurationDescription {
     
     inline def setLifecyclePoliciesUndefined: Self = StObject.set(x, "LifecyclePolicies", js.undefined)
     
-    inline def setLifecyclePoliciesVarargs(value: LifecyclePolicy*): Self = StObject.set(x, "LifecyclePolicies", js.Array(value :_*))
+    inline def setLifecyclePoliciesVarargs(value: LifecyclePolicy*): Self = StObject.set(x, "LifecyclePolicies", js.Array(value*))
   }
 }

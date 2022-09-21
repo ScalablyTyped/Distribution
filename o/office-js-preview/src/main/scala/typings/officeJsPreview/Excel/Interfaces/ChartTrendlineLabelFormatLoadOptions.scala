@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the format properties for the chart trendline label.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait ChartTrendlineLabelFormatLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait ChartTrendlineLabelFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the border format, which includes color, linestyle, and weight.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var border: js.UndefOr[ChartBorderLoadOptions] = js.undefined
   
   /**
+    * Specifies the font attributes (such as font name, font size, and color) for a chart trendline label.
     *
-    * Specifies the font attributes (font name, font size, color, etc.) for a chart trendline label.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var font: js.UndefOr[ChartFontLoadOptions] = js.undefined

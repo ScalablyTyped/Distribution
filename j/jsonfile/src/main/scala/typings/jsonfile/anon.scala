@@ -1,15 +1,16 @@
 package typings.jsonfile
 
 import typings.jsonfile.mod.FS
-import typings.node.Buffer
-import typings.node.BufferEncoding
-import typings.node.NodeJS.ArrayBufferView
-import typings.node.NodeJS.ErrnoException
-import typings.node.anon.BaseEncodingOptionsflagst
-import typings.node.anon.EncodingBufferEncoding
-import typings.node.anon.`3`
+import typings.node.anon.EncodingFlag
+import typings.node.anon.Flag
+import typings.node.anon.ObjectEncodingOptionsflag
+import typings.node.anon.ObjectEncodingOptionsflagEncoding
+import typings.node.anon.encodingBufferEncodingflaEncoding
+import typings.node.anon.encodingnullundefinedflagEncoding
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.NoParamCallback
-import typings.node.fsMod.PathLike
+import typings.node.fsMod.PathOrFileDescriptor
 import typings.node.fsMod.WriteFileOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,7 +30,7 @@ object anon {
     
     var mode: js.UndefOr[String | Double] = js.undefined
     
-    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]] = js.undefined
+    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ Any, Any]] = js.undefined
     
     var spaces: js.UndefOr[String | Double] = js.undefined
   }
@@ -64,7 +65,7 @@ object anon {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      inline def setReplacer(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
       inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
       
@@ -82,7 +83,7 @@ object anon {
     
     var fs: js.UndefOr[FS] = js.undefined
     
-    var reviver: js.UndefOr[js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any]] = js.undefined
+    var reviver: js.UndefOr[js.Function2[/* key */ Any, /* value */ Any, Any]] = js.undefined
     
     var throws: js.UndefOr[Boolean] = js.undefined
   }
@@ -109,7 +110,7 @@ object anon {
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      inline def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
+      inline def setReviver(value: (/* key */ Any, /* value */ Any) => Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
       
       inline def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
       
@@ -119,111 +120,140 @@ object anon {
     }
   }
   
-  @js.native
-  trait FnCall extends StObject {
+  trait FinalEOL extends StObject {
     
-    def apply(path: Double): String | Buffer = js.native
-    def apply(path: Double, options: BufferEncoding): String = js.native
-    def apply(path: Double, options: BaseEncodingOptionsflagst): String | Buffer = js.native
-    def apply(path: Double, options: EncodingBufferEncoding): String = js.native
-    def apply(path: Double, options: `3`): Buffer = js.native
-    def apply(path: PathLike): String | Buffer = js.native
-    def apply(path: PathLike, options: BufferEncoding): String = js.native
-    def apply(path: PathLike, options: BaseEncodingOptionsflagst): String | Buffer = js.native
-    def apply(path: PathLike, options: EncodingBufferEncoding): String = js.native
-    def apply(path: PathLike, options: `3`): Buffer = js.native
+    var EOL: js.UndefOr[String] = js.undefined
+    
+    var finalEOL: js.UndefOr[Boolean] = js.undefined
+    
+    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ Any, Any]] = js.undefined
+    
+    var spaces: js.UndefOr[String | Double] = js.undefined
+  }
+  object FinalEOL {
+    
+    inline def apply(): FinalEOL = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FinalEOL]
+    }
+    
+    extension [Self <: FinalEOL](x: Self) {
+      
+      inline def setEOL(value: String): Self = StObject.set(x, "EOL", value.asInstanceOf[js.Any])
+      
+      inline def setEOLUndefined: Self = StObject.set(x, "EOL", js.undefined)
+      
+      inline def setFinalEOL(value: Boolean): Self = StObject.set(x, "finalEOL", value.asInstanceOf[js.Any])
+      
+      inline def setFinalEOLUndefined: Self = StObject.set(x, "finalEOL", js.undefined)
+      
+      inline def setReplacer(value: (/* key */ String, /* value */ Any) => Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      
+      inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
+      
+      inline def setSpaces(value: String | Double): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+      
+      inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
+    }
   }
   
   @js.native
-  trait FnCallPathDataOptions extends StObject {
+  trait FnCall extends StObject {
     
-    def apply(path: Double, data: String): Unit = js.native
-    def apply(path: Double, data: String, options: WriteFileOptions): Unit = js.native
-    def apply(path: Double, data: ArrayBufferView): Unit = js.native
-    def apply(path: Double, data: ArrayBufferView, options: WriteFileOptions): Unit = js.native
-    def apply(path: PathLike, data: String): Unit = js.native
-    def apply(path: PathLike, data: String, options: WriteFileOptions): Unit = js.native
-    def apply(path: PathLike, data: ArrayBufferView): Unit = js.native
-    def apply(path: PathLike, data: ArrayBufferView, options: WriteFileOptions): Unit = js.native
+    def apply(path: PathOrFileDescriptor): String | Buffer = js.native
+    def apply(path: PathOrFileDescriptor, options: EncodingFlag): String = js.native
+    def apply(path: PathOrFileDescriptor, options: Flag): Buffer = js.native
+    def apply(path: PathOrFileDescriptor, options: ObjectEncodingOptionsflagEncoding): String | Buffer = js.native
+    def apply(path: PathOrFileDescriptor, options: BufferEncoding): String = js.native
+  }
+  
+  @js.native
+  trait FnCallFileDataOptions extends StObject {
+    
+    def apply(file: PathOrFileDescriptor, data: String): Unit = js.native
+    def apply(file: PathOrFileDescriptor, data: String, options: WriteFileOptions): Unit = js.native
+    def apply(file: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView): Unit = js.native
+    def apply(file: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView, options: WriteFileOptions): Unit = js.native
   }
   
   @js.native
   trait TypeoffsReadFile extends StObject {
     
-    def apply(path: Double, callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]): Unit = js.native
     def apply(
-      path: Double,
-      options: String,
-      callback: js.Function2[ErrnoException | Null, Buffer | (/* data */ String), Unit]
+      path: PathOrFileDescriptor,
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* data */ Buffer, 
+          Unit
+        ]
     ): Unit = js.native
     def apply(
-      path: Double,
+      path: PathOrFileDescriptor,
       options: Null,
-      callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
+      callback: js.Function2[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          (/* data */ Buffer) | String, 
+          Unit
+        ]
     ): Unit = js.native
     def apply(
-      path: Double,
+      path: PathOrFileDescriptor,
       options: Unit,
-      callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
+      callback: js.Function2[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          (/* data */ Buffer) | String, 
+          Unit
+        ]
     ): Unit = js.native
     def apply(
-      path: Double,
-      options: BaseEncodingOptionsflagst,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String | Buffer, Unit]
+      path: PathOrFileDescriptor,
+      options: ObjectEncodingOptionsflag,
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* data */ String | Buffer, 
+          Unit
+        ]
     ): Unit = js.native
     def apply(
-      path: Double,
-      options: EncodingBufferEncoding,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String, Unit]
+      path: PathOrFileDescriptor,
+      options: encodingBufferEncodingflaEncoding,
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* data */ String, 
+          Unit
+        ]
     ): Unit = js.native
     def apply(
-      path: Double,
-      options: `3`,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]
-    ): Unit = js.native
-    def apply(path: PathLike, callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]): Unit = js.native
-    def apply(
-      path: PathLike,
-      options: String,
-      callback: js.Function2[ErrnoException | Null, Buffer | (/* data */ String), Unit]
+      path: PathOrFileDescriptor,
+      options: encodingnullundefinedflagEncoding,
+      callback: js.Function2[
+          /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          /* data */ Buffer, 
+          Unit
+        ]
     ): Unit = js.native
     def apply(
-      path: PathLike,
-      options: Null,
-      callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
-    ): Unit = js.native
-    def apply(
-      path: PathLike,
-      options: Unit,
-      callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
-    ): Unit = js.native
-    def apply(
-      path: PathLike,
-      options: BaseEncodingOptionsflagst,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String | Buffer, Unit]
-    ): Unit = js.native
-    def apply(
-      path: PathLike,
-      options: EncodingBufferEncoding,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* data */ String, Unit]
-    ): Unit = js.native
-    def apply(
-      path: PathLike,
-      options: `3`,
-      callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]
+      path: PathOrFileDescriptor,
+      options: BufferEncoding,
+      callback: js.Function2[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+          Buffer | (/* data */ String), 
+          Unit
+        ]
     ): Unit = js.native
   }
   
   @js.native
   trait TypeoffsWriteFile extends StObject {
     
-    def apply(path: Double, data: String, callback: NoParamCallback): Unit = js.native
-    def apply(path: Double, data: String, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native
-    def apply(path: Double, data: ArrayBufferView, callback: NoParamCallback): Unit = js.native
-    def apply(path: Double, data: ArrayBufferView, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native
-    def apply(path: PathLike, data: String, callback: NoParamCallback): Unit = js.native
-    def apply(path: PathLike, data: String, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native
-    def apply(path: PathLike, data: ArrayBufferView, callback: NoParamCallback): Unit = js.native
-    def apply(path: PathLike, data: ArrayBufferView, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native
+    def apply(file: PathOrFileDescriptor, data: String, options: WriteFileOptions, callback: NoParamCallback): Unit = js.native
+    def apply(
+      file: PathOrFileDescriptor,
+      data: js.typedarray.ArrayBufferView,
+      options: WriteFileOptions,
+      callback: NoParamCallback
+    ): Unit = js.native
+    def apply(path: PathOrFileDescriptor, data: String, callback: NoParamCallback): Unit = js.native
+    def apply(path: PathOrFileDescriptor, data: js.typedarray.ArrayBufferView, callback: NoParamCallback): Unit = js.native
   }
 }

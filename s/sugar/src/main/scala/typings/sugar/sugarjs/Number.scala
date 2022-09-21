@@ -169,7 +169,7 @@ object Number {
           /* obj */ js.Object, 
           SugarDefaultChainable[Unit]
         ],
-      init: js.Any
+      init: Any
     ): SugarDefaultChainable[T] = js.native
     
     def reject(find: java.lang.String): SugarDefaultChainable[js.Object] = js.native
@@ -198,7 +198,7 @@ object Number {
     def sum[T, U](map: java.lang.String): SugarDefaultChainable[Double] = js.native
     def sum[T, U](map: mapFn[T, U]): SugarDefaultChainable[Double] = js.native
     
-    def tap(tapFn: js.Function1[/* obj */ js.Object, SugarDefaultChainable[js.Any]]): SugarDefaultChainable[js.Object] = js.native
+    def tap(tapFn: js.Function1[/* obj */ js.Object, SugarDefaultChainable[Any]]): SugarDefaultChainable[js.Object] = js.native
     
     def toQueryString[T, U](): SugarDefaultChainable[js.Object] = js.native
     def toQueryString[T, U](options: QueryStringOptions[T, U]): SugarDefaultChainable[js.Object] = js.native
@@ -555,7 +555,7 @@ object Number {
     
     def tan(): SugarDefaultChainable[Double] = js.native
     
-    def times[T](indexMapFn: js.Function1[/* i */ Double, SugarDefaultChainable[js.Any]]): SugarDefaultChainable[T] = js.native
+    def times[T](indexMapFn: js.Function1[/* i */ Double, SugarDefaultChainable[Any]]): SugarDefaultChainable[T] = js.native
     
     def toExponential(): SugarDefaultChainable[java.lang.String] = js.native
     def toExponential(fractionDigits: Double): SugarDefaultChainable[java.lang.String] = js.native
@@ -1035,7 +1035,7 @@ object Number {
     
     def secondsFromNow(instance: Double): typings.sugar.Date = js.native
     
-    def setOption(name: java.lang.String, value: js.Any): Unit = js.native
+    def setOption(name: java.lang.String, value: Any): Unit = js.native
     def setOption(options: NumberOptions): Unit = js.native
     
     def sin(instance: Double): Double = js.native
@@ -1044,7 +1044,7 @@ object Number {
     
     def tan(instance: Double): Double = js.native
     
-    def times[T](instance: Double, indexMapFn: js.Function1[/* i */ Double, js.Any]): T = js.native
+    def times[T](instance: Double, indexMapFn: js.Function1[/* i */ Double, Any]): T = js.native
     
     def toNumber(instance: Double): Double = js.native
     

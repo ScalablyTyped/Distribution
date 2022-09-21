@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +13,12 @@ object modalDescriptionMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/modules/Modal/ModalDescription", JSImport.Default)
   @js.native
-  val default: StatelessComponent[ModalDescriptionProps] = js.native
+  val default: FC[ModalDescriptionProps] = js.native
   
   trait ModalDescriptionProps
     extends StObject
        with StrictModalDescriptionProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ModalDescriptionProps {
     
     inline def apply(): ModalDescriptionProps = {
@@ -30,7 +30,7 @@ object modalDescriptionMod extends Shortcut {
   trait StrictModalDescriptionProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -50,7 +50,7 @@ object modalDescriptionMod extends Shortcut {
     
     extension [Self <: StrictModalDescriptionProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -68,8 +68,8 @@ object modalDescriptionMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[ModalDescriptionProps]
+  type _To = FC[ModalDescriptionProps]
   
   /* This means you don't have to write `default`, but can instead just say `modalDescriptionMod.foo` */
-  override def _to: StatelessComponent[ModalDescriptionProps] = default
+  override def _to: FC[ModalDescriptionProps] = default
 }

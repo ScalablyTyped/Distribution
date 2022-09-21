@@ -11,11 +11,12 @@ import typings.reactIntl.reactIntlStrings.none
 import typings.reactIntl.reactIntlStrings.region
 import typings.reactIntl.reactIntlStrings.script
 import typings.reactIntl.reactIntlStrings.short
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined @formatjs/intl-displaynames.@formatjs/intl-displaynames.DisplayNamesOptions & {  value :string | number | object} */
+/* Inlined @formatjs/intl-displaynames.@formatjs/intl-displaynames.DisplayNamesOptions & {  value :string | number | std.Record<string, unknown>} */
 trait DisplayNamesOptionsvalues extends StObject {
   
   var fallback: js.UndefOr[code | none] = js.undefined
@@ -26,11 +27,11 @@ trait DisplayNamesOptionsvalues extends StObject {
   
   var `type`: language | region | script | currency
   
-  var value: String | Double | js.Object
+  var value: String | Double | (Record[String, Any])
 }
 object DisplayNamesOptionsvalues {
   
-  inline def apply(`type`: language | region | script | currency, value: String | Double | js.Object): DisplayNamesOptionsvalues = {
+  inline def apply(`type`: language | region | script | currency, value: String | Double | (Record[String, Any])): DisplayNamesOptionsvalues = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayNamesOptionsvalues]
@@ -52,6 +53,6 @@ object DisplayNamesOptionsvalues {
     
     inline def setType(value: language | region | script | currency): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: String | Double | js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double | (Record[String, Any])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

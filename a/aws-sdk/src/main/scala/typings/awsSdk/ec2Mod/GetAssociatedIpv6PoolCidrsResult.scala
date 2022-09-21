@@ -29,7 +29,7 @@ object GetAssociatedIpv6PoolCidrsResult {
     
     inline def setIpv6CidrAssociationsUndefined: Self = StObject.set(x, "Ipv6CidrAssociations", js.undefined)
     
-    inline def setIpv6CidrAssociationsVarargs(value: Ipv6CidrAssociation*): Self = StObject.set(x, "Ipv6CidrAssociations", js.Array(value :_*))
+    inline def setIpv6CidrAssociationsVarargs(value: Ipv6CidrAssociation*): Self = StObject.set(x, "Ipv6CidrAssociations", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

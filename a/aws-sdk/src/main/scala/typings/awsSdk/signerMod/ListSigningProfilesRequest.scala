@@ -20,6 +20,16 @@ trait ListSigningProfilesRequest extends StObject {
     * Value for specifying the next set of paginated results to return. After you receive a response with truncated results, use this parameter in a subsequent request. Set it to the value of nextToken from the response that you just received.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
+  
+  /**
+    * Filters results to return only signing jobs initiated for a specified signing platform.
+    */
+  var platformId: js.UndefOr[PlatformId] = js.undefined
+  
+  /**
+    * Filters results to return only signing jobs with statuses in the specified list.
+    */
+  var statuses: js.UndefOr[Statuses] = js.undefined
 }
 object ListSigningProfilesRequest {
   
@@ -41,5 +51,15 @@ object ListSigningProfilesRequest {
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    
+    inline def setPlatformId(value: PlatformId): Self = StObject.set(x, "platformId", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformIdUndefined: Self = StObject.set(x, "platformId", js.undefined)
+    
+    inline def setStatuses(value: Statuses): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
+    
+    inline def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
+    
+    inline def setStatusesVarargs(value: SigningProfileStatus*): Self = StObject.set(x, "statuses", js.Array(value*))
   }
 }

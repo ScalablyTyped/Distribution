@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Messager extends StObject {
   
-  def hide(): js.Any = js.native
-  def hide(cb: CallBack): js.Any = js.native
+  def hide(): Any = js.native
+  def hide(cb: CallBack): Any = js.native
   
-  def show(): js.Any = js.native
-  def show(cb: CallBack): js.Any = js.native
-  def show(message: String): js.Any = js.native
-  def show(message: String, cb: CallBack): js.Any = js.native
+  def show(): Any = js.native
+  def show(cb: CallBack): Any = js.native
+  def show(message: String): Any = js.native
+  def show(message: String, cb: CallBack): Any = js.native
 }

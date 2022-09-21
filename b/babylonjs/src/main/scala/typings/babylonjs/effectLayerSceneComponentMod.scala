@@ -11,36 +11,36 @@ object effectLayerSceneComponentMod {
   
   @JSImport("babylonjs/Layers/effectLayerSceneComponent", "EffectLayerSceneComponent")
   @js.native
-  class EffectLayerSceneComponent protected ()
+  /**
+    * Creates a new instance of the component for the given scene
+    * @param scene Defines the scene to register the component in
+    */
+  open class EffectLayerSceneComponent ()
     extends StObject
        with ISceneSerializableComponent {
-    /**
-      * Creates a new instance of the component for the given scene
-      * @param scene Defines the scene to register the component in
-      */
     def this(scene: Scene) = this()
     
-    /* private */ var _draw: js.Any = js.native
+    /* private */ var _draw: Any = js.native
     
-    /* private */ var _drawCamera: js.Any = js.native
+    /* private */ var _drawCamera: Any = js.native
     
-    /* private */ var _drawRenderingGroup: js.Any = js.native
+    /* private */ var _drawRenderingGroup: Any = js.native
     
-    /* private */ var _engine: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
-    /* private */ var _isReadyForMesh: js.Any = js.native
+    /* private */ var _isReadyForMesh: Any = js.native
     
-    /* private */ var _needStencil: js.Any = js.native
+    /* private */ var _needStencil: Any = js.native
     
-    /* private */ var _previousStencilState: js.Any = js.native
+    /* private */ var _previousStencilState: Any = js.native
     
-    /* private */ var _renderEffects: js.Any = js.native
+    /* private */ var _renderEffects: Any = js.native
     
-    /* private */ var _renderMainTexture: js.Any = js.native
+    /* private */ var _renderMainTexture: Any = js.native
     
-    /* private */ var _setStencil: js.Any = js.native
+    /* private */ var _setStencil: Any = js.native
     
-    /* private */ var _setStencilBack: js.Any = js.native
+    /* private */ var _setStencilBack: Any = js.native
     
     /**
       * Disposes the component and the associated ressources.
@@ -116,7 +116,7 @@ object effectLayerSceneComponentMod {
         
         inline def setEffectLayers(value: js.Array[EffectLayer]): Self = StObject.set(x, "effectLayers", value.asInstanceOf[js.Any])
         
-        inline def setEffectLayersVarargs(value: EffectLayer*): Self = StObject.set(x, "effectLayers", js.Array(value :_*))
+        inline def setEffectLayersVarargs(value: EffectLayer*): Self = StObject.set(x, "effectLayers", js.Array(value*))
         
         inline def setRemoveEffectLayer(value: EffectLayer => Double): Self = StObject.set(x, "removeEffectLayer", js.Any.fromFunction1(value))
       }

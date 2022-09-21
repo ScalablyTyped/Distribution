@@ -1,7 +1,7 @@
 
 # Scala.js typings for rabin-wasm
 
-Typings are for version 0.1.4
+Typings are for version 0.1.5
 
 ## Library description:
 Rabin fingerprinting implemented in AssemblyScript
@@ -10,10 +10,10 @@ Rabin fingerprinting implemented in AssemblyScript
 | ------------------ | :-------------: |
 | Full name          | rabin-wasm |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 3 |
-| # downloads        | 211318 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 120696.66666666667 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/hugomrdias/rabin-wasm)

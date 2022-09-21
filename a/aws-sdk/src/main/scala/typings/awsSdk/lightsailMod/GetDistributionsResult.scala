@@ -29,7 +29,7 @@ object GetDistributionsResult {
     
     inline def setDistributionsUndefined: Self = StObject.set(x, "distributions", js.undefined)
     
-    inline def setDistributionsVarargs(value: LightsailDistribution*): Self = StObject.set(x, "distributions", js.Array(value :_*))
+    inline def setDistributionsVarargs(value: LightsailDistribution*): Self = StObject.set(x, "distributions", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

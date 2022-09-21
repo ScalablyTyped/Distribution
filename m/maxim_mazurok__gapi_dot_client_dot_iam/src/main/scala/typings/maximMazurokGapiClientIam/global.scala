@@ -1,6 +1,7 @@
 package typings.maximMazurokGapiClientIam
 
 import typings.maximMazurokGapiClientIam.gapi.client.iam.IamPoliciesResource
+import typings.maximMazurokGapiClientIam.gapi.client.iam.LocationsResource
 import typings.maximMazurokGapiClientIam.gapi.client.iam.OrganizationsResource
 import typings.maximMazurokGapiClientIam.gapi.client.iam.PermissionsResource
 import typings.maximMazurokGapiClientIam.gapi.client.iam.ProjectsResource
@@ -27,6 +28,10 @@ object global {
         @js.native
         val iamPolicies: IamPoliciesResource = js.native
         
+        @JSGlobal("gapi.client.iam.locations")
+        @js.native
+        val locations: LocationsResource = js.native
+        
         @JSGlobal("gapi.client.iam.organizations")
         @js.native
         val organizations: OrganizationsResource = js.native
@@ -46,7 +51,7 @@ object global {
       
       /** Load Identity and Access Management (IAM) API v1 */
       inline def load(name: iam, version: v1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
-      inline def load(name: iam, version: v1, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def load(name: iam, version: v1, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
 }

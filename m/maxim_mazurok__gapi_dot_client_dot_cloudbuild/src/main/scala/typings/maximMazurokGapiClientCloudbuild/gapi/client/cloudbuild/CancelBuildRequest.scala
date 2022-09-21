@@ -9,7 +9,7 @@ trait CancelBuildRequest extends StObject {
   /** Required. ID of the build. */
   var id: js.UndefOr[String] = js.undefined
   
-  /** The name of the `Build` to retrieve. Format: `projects/{project}/locations/{location}/builds/{build}` */
+  /** The name of the `Build` to cancel. Format: `projects/{project}/locations/{location}/builds/{build}` */
   var name: js.UndefOr[String] = js.undefined
   
   /** Required. ID of the project. */

@@ -101,7 +101,7 @@ object anon {
       
       inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
       
-      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value*))
       
       inline def setVoip(value: Boolean | String): Self = StObject.set(x, "voip", value.asInstanceOf[js.Any])
       
@@ -238,7 +238,7 @@ object anon {
       
       inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
       
-      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value*))
       
       inline def setVibrate(value: Boolean): Self = StObject.set(x, "vibrate", value.asInstanceOf[js.Any])
       

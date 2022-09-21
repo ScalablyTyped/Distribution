@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * This object represents the attributes for a chart's error bars.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait ChartErrorBarsLoadOptions extends StObject {
@@ -19,41 +19,41 @@ trait ChartErrorBarsLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if error bars have an end style cap.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endStyleCap: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the formatting type of the error bars.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var format: js.UndefOr[ChartErrorBarsFormatLoadOptions] = js.undefined
   
   /**
-    *
     * Specifies which parts of the error bars to include.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var include: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The type of range marked by the error bars.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies whether the error bars are displayed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var visible: js.UndefOr[Boolean] = js.undefined

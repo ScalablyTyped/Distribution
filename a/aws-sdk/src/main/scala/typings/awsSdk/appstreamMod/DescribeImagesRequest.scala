@@ -44,7 +44,7 @@ object DescribeImagesRequest {
     
     inline def setArnsUndefined: Self = StObject.set(x, "Arns", js.undefined)
     
-    inline def setArnsVarargs(value: Arn*): Self = StObject.set(x, "Arns", js.Array(value :_*))
+    inline def setArnsVarargs(value: Arn*): Self = StObject.set(x, "Arns", js.Array(value*))
     
     inline def setMaxResults(value: DescribeImagesMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -54,7 +54,7 @@ object DescribeImagesRequest {
     
     inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "Names", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

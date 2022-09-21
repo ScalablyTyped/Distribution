@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ContentLeft extends StObject {
   
+  var answered: String
+  
   var asCell: String
   
   var comment: String
@@ -36,6 +38,10 @@ trait ContentLeft extends StObject {
   
   var headerTop: String
   
+  var icon: String
+  
+  var iconExpanded: String
+  
   var indent: Double
   
   var mainRoot: String
@@ -48,6 +54,12 @@ trait ContentLeft extends StObject {
   
   var title: String
   
+  var titleCollapsed: String
+  
+  var titleExpandable: String
+  
+  var titleExpanded: String
+  
   var titleLeftRoot: String
   
   var titleOnAnswer: String
@@ -59,6 +71,7 @@ trait ContentLeft extends StObject {
 object ContentLeft {
   
   inline def apply(
+    answered: String,
     asCell: String,
     comment: String,
     content: String,
@@ -74,22 +87,29 @@ object ContentLeft {
     headerBottom: String,
     headerLeft: String,
     headerTop: String,
+    icon: String,
+    iconExpanded: String,
     indent: Double,
     mainRoot: String,
     number: String,
     required: String,
     requiredText: String,
     title: String,
+    titleCollapsed: String,
+    titleExpandable: String,
+    titleExpanded: String,
     titleLeftRoot: String,
     titleOnAnswer: String,
     titleOnError: String,
     titleRequired: String
   ): ContentLeft = {
-    val __obj = js.Dynamic.literal(asCell = asCell.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentLeft = contentLeft.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], descriptionUnderInput = descriptionUnderInput.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], flowRoot = flowRoot.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], formGroup = formGroup.asInstanceOf[js.Any], hasError = hasError.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerBottom = headerBottom.asInstanceOf[js.Any], headerLeft = headerLeft.asInstanceOf[js.Any], headerTop = headerTop.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], mainRoot = mainRoot.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], requiredText = requiredText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleLeftRoot = titleLeftRoot.asInstanceOf[js.Any], titleOnAnswer = titleOnAnswer.asInstanceOf[js.Any], titleOnError = titleOnError.asInstanceOf[js.Any], titleRequired = titleRequired.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(answered = answered.asInstanceOf[js.Any], asCell = asCell.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], contentLeft = contentLeft.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], descriptionUnderInput = descriptionUnderInput.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], flowRoot = flowRoot.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], formGroup = formGroup.asInstanceOf[js.Any], hasError = hasError.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], headerBottom = headerBottom.asInstanceOf[js.Any], headerLeft = headerLeft.asInstanceOf[js.Any], headerTop = headerTop.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iconExpanded = iconExpanded.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], mainRoot = mainRoot.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], requiredText = requiredText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleCollapsed = titleCollapsed.asInstanceOf[js.Any], titleExpandable = titleExpandable.asInstanceOf[js.Any], titleExpanded = titleExpanded.asInstanceOf[js.Any], titleLeftRoot = titleLeftRoot.asInstanceOf[js.Any], titleOnAnswer = titleOnAnswer.asInstanceOf[js.Any], titleOnError = titleOnError.asInstanceOf[js.Any], titleRequired = titleRequired.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentLeft]
   }
   
   extension [Self <: ContentLeft](x: Self) {
+    
+    inline def setAnswered(value: String): Self = StObject.set(x, "answered", value.asInstanceOf[js.Any])
     
     inline def setAsCell(value: String): Self = StObject.set(x, "asCell", value.asInstanceOf[js.Any])
     
@@ -121,6 +141,10 @@ object ContentLeft {
     
     inline def setHeaderTop(value: String): Self = StObject.set(x, "headerTop", value.asInstanceOf[js.Any])
     
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconExpanded(value: String): Self = StObject.set(x, "iconExpanded", value.asInstanceOf[js.Any])
+    
     inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
     inline def setMainRoot(value: String): Self = StObject.set(x, "mainRoot", value.asInstanceOf[js.Any])
@@ -132,6 +156,12 @@ object ContentLeft {
     inline def setRequiredText(value: String): Self = StObject.set(x, "requiredText", value.asInstanceOf[js.Any])
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleCollapsed(value: String): Self = StObject.set(x, "titleCollapsed", value.asInstanceOf[js.Any])
+    
+    inline def setTitleExpandable(value: String): Self = StObject.set(x, "titleExpandable", value.asInstanceOf[js.Any])
+    
+    inline def setTitleExpanded(value: String): Self = StObject.set(x, "titleExpanded", value.asInstanceOf[js.Any])
     
     inline def setTitleLeftRoot(value: String): Self = StObject.set(x, "titleLeftRoot", value.asInstanceOf[js.Any])
     

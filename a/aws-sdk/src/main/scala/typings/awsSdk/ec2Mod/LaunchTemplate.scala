@@ -9,7 +9,7 @@ trait LaunchTemplate extends StObject {
   /**
     * The time launch template was created.
     */
-  var CreateTime: js.UndefOr[DateTime] = js.undefined
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The principal that created the launch template. 
@@ -50,7 +50,7 @@ object LaunchTemplate {
   
   extension [Self <: LaunchTemplate](x: Self) {
     
-    inline def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
@@ -78,6 +78,6 @@ object LaunchTemplate {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

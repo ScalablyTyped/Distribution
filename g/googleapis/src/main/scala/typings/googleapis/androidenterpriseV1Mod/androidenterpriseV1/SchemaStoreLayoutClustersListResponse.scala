@@ -4,21 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The store page resources for the enterprise.
-  */
 trait SchemaStoreLayoutClustersListResponse extends StObject {
   
   /**
     * A store cluster of an enterprise.
     */
   var cluster: js.UndefOr[js.Array[SchemaStoreCluster]] = js.undefined
-  
-  /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;androidenterprise#storeLayoutClustersListResponse&quot;.
-    */
-  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaStoreLayoutClustersListResponse {
   
@@ -33,10 +24,6 @@ object SchemaStoreLayoutClustersListResponse {
     
     inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    inline def setClusterVarargs(value: SchemaStoreCluster*): Self = StObject.set(x, "cluster", js.Array(value :_*))
-    
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setClusterVarargs(value: SchemaStoreCluster*): Self = StObject.set(x, "cluster", js.Array(value*))
   }
 }

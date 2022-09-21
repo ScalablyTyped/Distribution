@@ -17,5 +17,5 @@ trait PieChartMediaInfoConstructor
 Instantiable0[PieChartMediaInfo]
      with Instantiable1[/* properties */ PieChartMediaInfoProperties, PieChartMediaInfo] {
   
-  def fromJSON(json: js.Any): PieChartMediaInfo = js.native
+  def fromJSON(json: Any): PieChartMediaInfo = js.native
 }

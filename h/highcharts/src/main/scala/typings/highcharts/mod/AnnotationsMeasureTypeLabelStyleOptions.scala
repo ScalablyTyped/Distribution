@@ -8,7 +8,7 @@ trait AnnotationsMeasureTypeLabelStyleOptions extends StObject {
   
   var color: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[String] = js.undefined
+  var fontSize: js.UndefOr[Double] = js.undefined
 }
 object AnnotationsMeasureTypeLabelStyleOptions {
   
@@ -23,7 +23,7 @@ object AnnotationsMeasureTypeLabelStyleOptions {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
   }

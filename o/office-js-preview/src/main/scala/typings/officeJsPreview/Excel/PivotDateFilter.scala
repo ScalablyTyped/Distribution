@@ -44,58 +44,58 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Configurable template for a date filter to apply to a PivotField.
   The `condition` defines what criteria need to be set in order for the filter to operate.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 trait PivotDateFilter extends StObject {
   
   /**
-    *
     * The comparator is the static value to which other values are compared. The type of comparison is defined by the condition.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var comparator: js.UndefOr[FilterDatetime] = js.undefined
   
   /**
-    *
     * Specifies the condition for the filter, which defines the necessary filtering criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var condition: DateFilterCondition | Unknown_ | Equals | Before | BeforeOrEqualTo | After | AfterOrEqualTo | Between | Tomorrow | Today | Yesterday | NextWeek | ThisWeek | LastWeek | NextMonth | ThisMonth | LastMonth | NextQuarter | ThisQuarter | LastQuarter | NextYear | ThisYear | LastYear | YearToDate | AllDatesInPeriodQuarter1 | AllDatesInPeriodQuarter2 | AllDatesInPeriodQuarter3 | AllDatesInPeriodQuarter4 | AllDatesInPeriodJanuary | AllDatesInPeriodFebruary | AllDatesInPeriodMarch | AllDatesInPeriodApril | AllDatesInPeriodMay | AllDatesInPeriodJune | AllDatesInPeriodJuly | AllDatesInPeriodAugust | AllDatesInPeriodSeptember | AllDatesInPeriodOctober | AllDatesInPeriodNovember | AllDatesInPeriodDecember
   
   /**
+    * If `true`, filter *excludes* items that meet criteria. The default is `false` (filter to include items that meet criteria).
     *
-    * If true, filter *excludes* items that meet criteria. The default is false (filter to include items that meet criteria).
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var exclusive: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The lower-bound of the range for the `between` filter condition.
     *
-    * The lower-bound of the range for the `Between` filter condition.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var lowerBound: js.UndefOr[FilterDatetime] = js.undefined
   
   /**
+    * The upper-bound of the range for the `between` filter condition.
     *
-    * The upper-bound of the range for the `Between` filter condition.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var upperBound: js.UndefOr[FilterDatetime] = js.undefined
   
   /**
+    * For `equals`, `before`, `after`, and `between` filter conditions, indicates if comparisons should be made as whole days.
     *
-    * For `Equals`, `Before`, `After`, and `Between` filter conditions, indicates if comparisons should be made as whole days.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var wholeDays: js.UndefOr[Boolean] = js.undefined

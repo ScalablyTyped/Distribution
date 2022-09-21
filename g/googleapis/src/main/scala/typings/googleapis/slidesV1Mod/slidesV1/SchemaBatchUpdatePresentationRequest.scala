@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for PresentationsService.BatchUpdatePresentation.
-  */
 trait SchemaBatchUpdatePresentationRequest extends StObject {
   
   /**
@@ -32,7 +29,7 @@ object SchemaBatchUpdatePresentationRequest {
     
     inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    inline def setRequestsVarargs(value: SchemaRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: SchemaRequest*): Self = StObject.set(x, "requests", js.Array(value*))
     
     inline def setWriteControl(value: SchemaWriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
     

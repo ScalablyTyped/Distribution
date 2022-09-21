@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(ms: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  
   @JSImport("yoctodelay", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(milliseconds: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

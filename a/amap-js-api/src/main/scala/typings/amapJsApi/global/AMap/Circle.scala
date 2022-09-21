@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 圆形覆盖物
   * @param options 覆盖物选项
   */
-class Circle[ExtraData] ()
+open class Circle[ExtraData] ()
   extends StObject
      with typings.amapJsApi.AMap.Circle[ExtraData] {
   def this(options: Options[ExtraData]) = this()

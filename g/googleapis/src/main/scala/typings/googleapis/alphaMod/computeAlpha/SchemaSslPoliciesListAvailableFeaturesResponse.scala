@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaSslPoliciesListAvailableFeaturesResponse extends StObject {
   
-  var features: js.UndefOr[js.Array[String]] = js.undefined
+  var features: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaSslPoliciesListAvailableFeaturesResponse {
   
@@ -19,8 +19,10 @@ object SchemaSslPoliciesListAvailableFeaturesResponse {
     
     inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
+    inline def setFeaturesNull: Self = StObject.set(x, "features", null)
+    
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value*))
   }
 }

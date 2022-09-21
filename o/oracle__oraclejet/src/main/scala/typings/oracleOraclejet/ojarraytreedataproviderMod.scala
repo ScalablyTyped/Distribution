@@ -11,13 +11,13 @@ object ojarraytreedataproviderMod {
   
   @JSImport("@oracle/oraclejet/ojarraytreedataprovider", JSImport.Namespace)
   @js.native
-  class ^[K, D] protected ()
+  open class ^[K, D] protected ()
     extends StObject
        with ArrayTreeDataProvider[K, D] {
-    def this(data: js.Array[js.Any]) = this()
-    def this(data: js.Function0[js.Array[js.Any]]) = this()
-    def this(data: js.Array[js.Any], options: ChildrenAttribute[D]) = this()
-    def this(data: js.Function0[js.Array[js.Any]], options: ChildrenAttribute[D]) = this()
+    def this(data: js.Array[Any]) = this()
+    def this(data: js.Function0[js.Array[Any]]) = this()
+    def this(data: js.Array[Any], options: ChildrenAttribute[D]) = this()
+    def this(data: js.Function0[js.Array[Any]], options: ChildrenAttribute[D]) = this()
   }
   
   @js.native
@@ -27,7 +27,7 @@ object ojarraytreedataproviderMod {
     
     def addEventListener(eventType: String, listener: EventListener): Unit = js.native
     
-    def getCapability(): js.Any = js.native
+    def getCapability(): Any = js.native
     
     def removeEventListener(eventType: String, listener: EventListener): Unit = js.native
   }

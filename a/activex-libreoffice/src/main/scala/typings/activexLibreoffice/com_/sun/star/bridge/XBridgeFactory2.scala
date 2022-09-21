@@ -27,7 +27,7 @@ object XBridgeFactory2 {
     dispose: () => Unit,
     getBridge: String => XBridge,
     getExistingBridges: () => SafeArray[XBridge],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit
   ): XBridgeFactory2 = {

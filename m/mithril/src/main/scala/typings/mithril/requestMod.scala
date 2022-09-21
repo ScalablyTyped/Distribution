@@ -13,15 +13,15 @@ object requestMod extends Shortcut {
   
   trait Static extends StObject {
     
-    var jsonp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jsonp */ js.Any
+    var jsonp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jsonp */ Any
     
-    var request: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof request */ js.Any
+    var request: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof request */ Any
   }
   object Static {
     
     inline def apply(
-      jsonp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jsonp */ js.Any,
-      request: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof request */ js.Any
+      jsonp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jsonp */ Any,
+      request: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof request */ Any
     ): Static = {
       val __obj = js.Dynamic.literal(jsonp = jsonp.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[Static]
@@ -29,9 +29,9 @@ object requestMod extends Shortcut {
     
     extension [Self <: Static](x: Self) {
       
-      inline def setJsonp(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jsonp */ js.Any): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+      inline def setJsonp(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof jsonp */ Any): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
       
-      inline def setRequest(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof request */ js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof request */ Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   

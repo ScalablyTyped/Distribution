@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.VerticalAlign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait VerticalAlignProps[TLength] extends StObject {
   
-  val verticalAlign: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val verticalAlign: js.UndefOr[ResponsiveValue[VerticalAlign[TLength]]] = js.undefined
 }
 object VerticalAlignProps {
   
@@ -21,16 +18,10 @@ object VerticalAlignProps {
   
   extension [Self <: VerticalAlignProps[?], TLength](x: Self & VerticalAlignProps[TLength]) {
     
-    inline def setVerticalAlign(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: ResponsiveValue[VerticalAlign[TLength]]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
-    inline def setVerticalAlignVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
+    inline def setVerticalAlignVarargs(value: VerticalAlign[TLength]*): Self = StObject.set(x, "verticalAlign", js.Array(value*))
   }
 }

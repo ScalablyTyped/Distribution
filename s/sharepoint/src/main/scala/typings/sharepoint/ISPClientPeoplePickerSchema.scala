@@ -83,7 +83,7 @@ trait ISPClientPeoplePickerSchema extends StObject {
   var WebApplicationID: js.UndefOr[Guid] = js.undefined
   
   /** Number or '100%'*/
-  var Width: js.UndefOr[js.Any] = js.undefined
+  var Width: js.UndefOr[Any] = js.undefined
 }
 object ISPClientPeoplePickerSchema {
   
@@ -146,7 +146,7 @@ object ISPClientPeoplePickerSchema {
     
     inline def setInitialSuggestionsUndefined: Self = StObject.set(x, "InitialSuggestions", js.undefined)
     
-    inline def setInitialSuggestionsVarargs(value: ISPClientPeoplePickerEntity*): Self = StObject.set(x, "InitialSuggestions", js.Array(value :_*))
+    inline def setInitialSuggestionsVarargs(value: ISPClientPeoplePickerEntity*): Self = StObject.set(x, "InitialSuggestions", js.Array(value*))
     
     inline def setMaximumEntitySuggestions(value: Double): Self = StObject.set(x, "MaximumEntitySuggestions", value.asInstanceOf[js.Any])
     
@@ -216,7 +216,7 @@ object ISPClientPeoplePickerSchema {
     
     inline def setWebApplicationIDUndefined: Self = StObject.set(x, "WebApplicationID", js.undefined)
     
-    inline def setWidth(value: js.Any): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Any): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "Width", js.undefined)
   }

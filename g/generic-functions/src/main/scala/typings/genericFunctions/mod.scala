@@ -16,7 +16,7 @@ object mod {
   
   inline def icstrendswith(str: String, suffix: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("icstrendswith")(str.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def objGetKeyByValue(`object`: js.Object, value: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("objGetKeyByValue")(`object`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def objGetKeyByValue(`object`: js.Object, value: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("objGetKeyByValue")(`object`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def println(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("println")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

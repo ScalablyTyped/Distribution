@@ -17,9 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BillingAccountsResource extends StObject {
   
   /**
-    * Creates a billing account. This method can only be used to create [billing subaccounts](https://cloud.google.com/billing/docs/concepts) by Google Cloud resellers. When creating a
-    * subaccount, the current authenticated user must have the `billing.accounts.update` IAM permission on the master account, which is typically given to billing account
-    * [administrators](https://cloud.google.com/billing/docs/how-to/billing-access). This method will return an error if the master account has not been provisioned as a reseller account.
+    * This method creates [billing subaccounts](https://cloud.google.com/billing/docs/concepts#subaccounts). Google Cloud resellers should use the Channel Services APIs,
+    * [accounts.customers.create](https://cloud.google.com/channel/docs/reference/rest/v1/accounts.customers/create) and
+    * [accounts.customers.entitlements.create](https://cloud.google.com/channel/docs/reference/rest/v1/accounts.customers.entitlements/create). When creating a subaccount, the current
+    * authenticated user must have the `billing.accounts.update` IAM permission on the parent account, which is typically given to billing account
+    * [administrators](https://cloud.google.com/billing/docs/how-to/billing-access). This method will return an error if the parent account has not been provisioned as a reseller account.
     */
   def create(request: Fields): Request[BillingAccount] = js.native
   def create(request: Key, body: BillingAccount): Request[BillingAccount] = js.native

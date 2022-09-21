@@ -12,7 +12,7 @@ trait PropertyNotification extends StObject {
   var state: PropertyNotificationState
   
   /**
-    * The MQTT topic to which AWS IoT SiteWise publishes property value update notifications.
+    * The MQTT topic to which IoT SiteWise publishes property value update notifications.
     */
   var topic: PropertyNotificationTopic
 }

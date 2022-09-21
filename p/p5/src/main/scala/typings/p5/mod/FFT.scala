@@ -26,10 +26,10 @@ trait FFT extends StObject {
     *   spectrum. Lowest energy (silence) = 0, highest
     *   possible is 255.
     */
-  def analyze(): js.Array[js.Any] = js.native
-  def analyze(bins: Double): js.Array[js.Any] = js.native
-  def analyze(bins: Double, scale: Double): js.Array[js.Any] = js.native
-  def analyze(bins: Unit, scale: Double): js.Array[js.Any] = js.native
+  def analyze(): js.Array[Any] = js.native
+  def analyze(bins: Double): js.Array[Any] = js.native
+  def analyze(bins: Double, scale: Double): js.Array[Any] = js.native
+  def analyze(bins: Unit, scale: Double): js.Array[Any] = js.native
   
   /**
     *   Returns the  spectral centroid of the input
@@ -37,8 +37,8 @@ trait FFT extends StObject {
     *   getCentroid(). Analyze() tells the FFT to analyze
     *   frequency data, and getCentroid() uses the results
     *   determine the spectral centroid.
-    *   @return Spectral Centroid Frequency Frequency of
-    *   the spectral centroid in Hz.
+    *   @return Spectral Centroid Frequency of the
+    *   spectral centroid in Hz.
     */
   def getCentroid(): Double = js.native
   
@@ -48,14 +48,14 @@ trait FFT extends StObject {
     *   Returns the amount of energy (volume) at a
     *   specific  frequency, or the average amount of
     *   energy between two frequencies. Accepts Number(s)
-    *   corresponding to frequency (in Hz), or a String
+    *   corresponding to frequency (in Hz), or a "string"
     *   corresponding to predefined frequency ranges
     *   ("bass", "lowMid", "mid", "highMid", "treble").
     *   Returns a range between 0 (no energy/volume at
     *   that frequency) and 255 (maximum energy). NOTE:
     *   analyze() must be called prior to getEnergy().
-    *   Analyze() tells the FFT to analyze frequency data,
-    *   and getEnergy() uses the results determine the
+    *   analyze() tells the FFT to analyze frequency data,
+    *   and getEnergy() uses the results to determine the
     *   value at a specific frequency or range of
     *   frequencies.
     *   @param frequency1 Will return a value representing
@@ -85,7 +85,7 @@ trait FFT extends StObject {
     *   @return octaveBands Array of octave band objects
     *   with their bounds
     */
-  def getOctaveBands(N: Double, fCtr0: Double): js.Array[js.Any] = js.native
+  def getOctaveBands(N: Double, fCtr0: Double): js.Array[Any] = js.native
   
   /**
     *   Returns an array of average amplitude values for a
@@ -99,7 +99,7 @@ trait FFT extends StObject {
     *   @return linearAverages Array of average amplitude
     *   values for each group
     */
-  def linAverages(N: Double): js.Array[js.Any] = js.native
+  def linAverages(N: Double): js.Array[Any] = js.native
   
   /**
     *   Returns an array of average amplitude values of
@@ -113,7 +113,7 @@ trait FFT extends StObject {
     *   @return logAverages Array of average amplitude
     *   values for each group
     */
-  def logAverages(octaveBands: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def logAverages(octaveBands: js.Array[Any]): js.Array[Any] = js.native
   
   /**
     *   Set the input source for the FFT analysis. If no
@@ -147,8 +147,8 @@ trait FFT extends StObject {
     *   @return Array Array of amplitude values (-1 to 1)
     *   over time. Array length = bins.
     */
-  def waveform(): js.Array[js.Any] = js.native
-  def waveform(bins: Double): js.Array[js.Any] = js.native
-  def waveform(bins: Double, precision: String): js.Array[js.Any] = js.native
-  def waveform(bins: Unit, precision: String): js.Array[js.Any] = js.native
+  def waveform(): js.Array[Any] = js.native
+  def waveform(bins: Double): js.Array[Any] = js.native
+  def waveform(bins: Double, precision: String): js.Array[Any] = js.native
+  def waveform(bins: Unit, precision: String): js.Array[Any] = js.native
 }

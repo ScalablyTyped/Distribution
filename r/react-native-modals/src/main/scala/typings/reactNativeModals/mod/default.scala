@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-modals", JSImport.Default)
 @js.native
-class default () extends Modal
+open class default () extends Modal

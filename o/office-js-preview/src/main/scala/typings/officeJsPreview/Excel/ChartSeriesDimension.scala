@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ChartSeriesDimension extends StObject
 /**
-  *
   * Represents the dimensions when getting values from chart series.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @JSGlobal("Excel.ChartSeriesDimension")
@@ -18,7 +18,8 @@ object ChartSeriesDimension extends StObject {
   
   /**
     * The chart series axis for the bubble sizes in bubble charts.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait bubbleSizes
@@ -27,7 +28,8 @@ object ChartSeriesDimension extends StObject {
   
   /**
     * The chart series axis for the categories.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait categories
@@ -36,7 +38,8 @@ object ChartSeriesDimension extends StObject {
   
   /**
     * The chart series axis for the values.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait values
@@ -45,7 +48,8 @@ object ChartSeriesDimension extends StObject {
   
   /**
     * The chart series axis for the x-axis values in scatter and bubble charts.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait xvalues
@@ -54,7 +58,8 @@ object ChartSeriesDimension extends StObject {
   
   /**
     * The chart series axis for the y-axis values in scatter and bubble charts.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
     */
   @js.native
   sealed trait yvalues

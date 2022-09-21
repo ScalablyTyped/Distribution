@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HistogramSeries extends StObject {
   
-  /** The color of the column representing this series in each bucket. This field is optional. */
+  /** The color of the column representing this series in each bucket. This field is optional. Deprecated: Use bar_color_style. */
   var barColor: js.UndefOr[Color] = js.undefined
   
   /** The color of the column representing this series in each bucket. This field is optional. If bar_color is also set, this field takes precedence. */

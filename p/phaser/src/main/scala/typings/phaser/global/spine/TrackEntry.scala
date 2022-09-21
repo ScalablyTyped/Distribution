@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.TrackEntry")
 @js.native
-class TrackEntry ()
+open class TrackEntry ()
   extends StObject
      with typings.phaser.spine.TrackEntry {
   

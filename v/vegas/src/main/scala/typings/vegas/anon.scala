@@ -97,11 +97,11 @@ object anon {
       
       inline def setAnimationRegisterUndefined: Self = StObject.set(x, "animationRegister", js.undefined)
       
-      inline def setAnimationRegisterVarargs(value: String*): Self = StObject.set(x, "animationRegister", js.Array(value :_*))
+      inline def setAnimationRegisterVarargs(value: String*): Self = StObject.set(x, "animationRegister", js.Array(value*))
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      inline def setAnimationVarargs(value: Animation*): Self = StObject.set(x, "animation", js.Array(value :_*))
+      inline def setAnimationVarargs(value: Animation*): Self = StObject.set(x, "animation", js.Array(value*))
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
@@ -131,7 +131,7 @@ object anon {
       
       inline def setFirstTransitionUndefined: Self = StObject.set(x, "firstTransition", js.undefined)
       
-      inline def setFirstTransitionVarargs(value: Transition*): Self = StObject.set(x, "firstTransition", js.Array(value :_*))
+      inline def setFirstTransitionVarargs(value: Transition*): Self = StObject.set(x, "firstTransition", js.Array(value*))
       
       inline def setInit(value: /* settings */ Settings => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
@@ -177,7 +177,7 @@ object anon {
       
       inline def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
       
-      inline def setSlidesVarargs(value: Slide*): Self = StObject.set(x, "slides", js.Array(value :_*))
+      inline def setSlidesVarargs(value: Slide*): Self = StObject.set(x, "slides", js.Array(value*))
       
       inline def setTimer(value: Boolean): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
       
@@ -193,11 +193,11 @@ object anon {
       
       inline def setTransitionRegisterUndefined: Self = StObject.set(x, "transitionRegister", js.undefined)
       
-      inline def setTransitionRegisterVarargs(value: String*): Self = StObject.set(x, "transitionRegister", js.Array(value :_*))
+      inline def setTransitionRegisterVarargs(value: String*): Self = StObject.set(x, "transitionRegister", js.Array(value*))
       
       inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
       
-      inline def setTransitionVarargs(value: Transition*): Self = StObject.set(x, "transition", js.Array(value :_*))
+      inline def setTransitionVarargs(value: Transition*): Self = StObject.set(x, "transition", js.Array(value*))
       
       inline def setValign(value: AlignType): Self = StObject.set(x, "valign", value.asInstanceOf[js.Any])
       

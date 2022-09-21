@@ -47,6 +47,11 @@ trait TransitGatewayOptions extends StObject {
   var PropagationDefaultRouteTableId: js.UndefOr[String] = js.undefined
   
   /**
+    * The transit gateway CIDR blocks.
+    */
+  var TransitGatewayCidrBlocks: js.UndefOr[ValueStringList] = js.undefined
+  
+  /**
     * Indicates whether Equal Cost Multipath Protocol support is enabled.
     */
   var VpnEcmpSupport: js.UndefOr[VpnEcmpSupportValue] = js.undefined
@@ -91,6 +96,12 @@ object TransitGatewayOptions {
     inline def setPropagationDefaultRouteTableId(value: String): Self = StObject.set(x, "PropagationDefaultRouteTableId", value.asInstanceOf[js.Any])
     
     inline def setPropagationDefaultRouteTableIdUndefined: Self = StObject.set(x, "PropagationDefaultRouteTableId", js.undefined)
+    
+    inline def setTransitGatewayCidrBlocks(value: ValueStringList): Self = StObject.set(x, "TransitGatewayCidrBlocks", value.asInstanceOf[js.Any])
+    
+    inline def setTransitGatewayCidrBlocksUndefined: Self = StObject.set(x, "TransitGatewayCidrBlocks", js.undefined)
+    
+    inline def setTransitGatewayCidrBlocksVarargs(value: String*): Self = StObject.set(x, "TransitGatewayCidrBlocks", js.Array(value*))
     
     inline def setVpnEcmpSupport(value: VpnEcmpSupportValue): Self = StObject.set(x, "VpnEcmpSupport", value.asInstanceOf[js.Any])
     

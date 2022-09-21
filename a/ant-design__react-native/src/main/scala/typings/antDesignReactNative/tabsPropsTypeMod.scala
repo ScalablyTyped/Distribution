@@ -59,7 +59,7 @@ object tabsPropsTypeMod {
     var renderTabBar: js.UndefOr[(js.Function1[/* props */ TabBarPropsType, ReactNode]) | `false`] = js.undefined
     
     /** render the underline of tabbar */
-    var renderUnderline: js.UndefOr[js.Function1[/* style */ js.Any, ReactNode]] = js.undefined
+    var renderUnderline: js.UndefOr[js.Function1[/* style */ Any, ReactNode]] = js.undefined
     
     var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
@@ -160,7 +160,7 @@ object tabsPropsTypeMod {
       
       inline def setRenderTabUndefined: Self = StObject.set(x, "renderTab", js.undefined)
       
-      inline def setRenderUnderline(value: /* style */ js.Any => ReactNode): Self = StObject.set(x, "renderUnderline", js.Any.fromFunction1(value))
+      inline def setRenderUnderline(value: /* style */ Any => ReactNode): Self = StObject.set(x, "renderUnderline", js.Any.fromFunction1(value))
       
       inline def setRenderUnderlineUndefined: Self = StObject.set(x, "renderUnderline", js.undefined)
       
@@ -208,7 +208,7 @@ object tabsPropsTypeMod {
       
       inline def setTabs(value: js.Array[TabData]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      inline def setTabsVarargs(value: TabData*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: TabData*): Self = StObject.set(x, "tabs", js.Array(value*))
       
       inline def setUseLeftInsteadTransform(value: Boolean): Self = StObject.set(x, "useLeftInsteadTransform", value.asInstanceOf[js.Any])
       
@@ -247,7 +247,7 @@ object tabsPropsTypeMod {
     var renderTab: js.UndefOr[js.Function1[/* tab */ TabData, ReactNode]] = js.undefined
     
     /** render the underline of tabbar */
-    var renderUnderline: js.UndefOr[js.Function1[/* style */ js.Any, ReactNode]] = js.undefined
+    var renderUnderline: js.UndefOr[js.Function1[/* style */ Any, ReactNode]] = js.undefined
     
     /** tabBar active text color */
     var tabBarActiveTextColor: js.UndefOr[String] = js.undefined
@@ -305,7 +305,7 @@ object tabsPropsTypeMod {
       
       inline def setRenderTabUndefined: Self = StObject.set(x, "renderTab", js.undefined)
       
-      inline def setRenderUnderline(value: /* style */ js.Any => ReactNode): Self = StObject.set(x, "renderUnderline", js.Any.fromFunction1(value))
+      inline def setRenderUnderline(value: /* style */ Any => ReactNode): Self = StObject.set(x, "renderUnderline", js.Any.fromFunction1(value))
       
       inline def setRenderUnderlineUndefined: Self = StObject.set(x, "renderUnderline", js.undefined)
       
@@ -339,13 +339,13 @@ object tabsPropsTypeMod {
       
       inline def setTabs(value: js.Array[TabData]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      inline def setTabsVarargs(value: TabData*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: TabData*): Self = StObject.set(x, "tabs", js.Array(value*))
     }
   }
   
   trait TabData
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var key: js.UndefOr[String] = js.undefined
     

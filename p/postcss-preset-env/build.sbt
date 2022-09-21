@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "postcss-preset-env"
-version := "6.7-dt-20200830Z-ea56a7"
-scalaVersion := "3.0.1"
+version := "7.7-dt-20220621Z-867e5b"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "autoprefixer" % "9.7-dt-20200515Z-2df693",
-  "org.scalablytyped" %%% "browserslist" % "4.8-dt-20200515Z-b9a7e4",
-  "org.scalablytyped" %%% "postcss" % "7.0.35-7d3225",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-081b8e",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "autoprefixer" % "10.4.12-5b9965",
+  "org.scalablytyped" %%% "browserslist" % "4.21.4-994ede",
+  "org.scalablytyped" %%% "postcss" % "8.4.16-aeb026",
+  "org.scalablytyped" %%% "source-map-js" % "1.0.2-4da518",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

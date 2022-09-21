@@ -17,14 +17,14 @@ trait ConfigStreamDeliveryInfo extends StObject {
   var lastErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
-    * Status of the last attempted delivery.  Note Providing an SNS topic on a DeliveryChannel for AWS Config is optional. If the SNS delivery is turned off, the last status will be Not_Applicable.
+    * Status of the last attempted delivery.  Note Providing an SNS topic on a DeliveryChannel for Config is optional. If the SNS delivery is turned off, the last status will be Not_Applicable.
     */
   var lastStatus: js.UndefOr[DeliveryStatus] = js.undefined
   
   /**
     * The time from the last status change.
     */
-  var lastStatusChangeTime: js.UndefOr[Date] = js.undefined
+  var lastStatusChangeTime: js.UndefOr[js.Date] = js.undefined
 }
 object ConfigStreamDeliveryInfo {
   
@@ -45,7 +45,7 @@ object ConfigStreamDeliveryInfo {
     
     inline def setLastStatus(value: DeliveryStatus): Self = StObject.set(x, "lastStatus", value.asInstanceOf[js.Any])
     
-    inline def setLastStatusChangeTime(value: Date): Self = StObject.set(x, "lastStatusChangeTime", value.asInstanceOf[js.Any])
+    inline def setLastStatusChangeTime(value: js.Date): Self = StObject.set(x, "lastStatusChangeTime", value.asInstanceOf[js.Any])
     
     inline def setLastStatusChangeTimeUndefined: Self = StObject.set(x, "lastStatusChangeTime", js.undefined)
     

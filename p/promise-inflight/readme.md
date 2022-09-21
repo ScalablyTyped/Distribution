@@ -10,15 +10,12 @@ One promise for multiple requests in flight to avoid async duplication
 | ------------------ | :-------------: |
 | Full name          | promise-inflight |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 61 |
-| # downloads        | 457289540 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.5928301333333336E7 |
+| # stars            | 15.0 |
 
 ## Links
-- [Homepage](https://github.com/iarna/promise-inflight#readme)
-- [Bugs](https://github.com/iarna/promise-inflight/issues)
-- [Repository](https://github.com/iarna/promise-inflight)
 - [Npm](https://www.npmjs.com/package/promise-inflight)
     
 

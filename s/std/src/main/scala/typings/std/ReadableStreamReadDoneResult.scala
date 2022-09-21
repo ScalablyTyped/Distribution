@@ -5,27 +5,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadableStreamReadDoneResult[T]
+trait ReadableStreamReadDoneResult
   extends StObject
-     with ReadableStreamReadResult[T] {
+     with ReadableStreamReadResult[Any] {
   
+  /* standard dom */
   var done: `true`
   
-  var value: js.UndefOr[T] = js.undefined
+  /* standard dom */
+  var value: Unit
 }
 object ReadableStreamReadDoneResult {
   
-  inline def apply[T](): ReadableStreamReadDoneResult[T] = {
-    val __obj = js.Dynamic.literal(done = true)
-    __obj.asInstanceOf[ReadableStreamReadDoneResult[T]]
+  inline def apply(value: Unit): ReadableStreamReadDoneResult = {
+    val __obj = js.Dynamic.literal(done = true, value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReadableStreamReadDoneResult]
   }
   
-  extension [Self <: ReadableStreamReadDoneResult[?], T](x: Self & ReadableStreamReadDoneResult[T]) {
+  extension [Self <: ReadableStreamReadDoneResult](x: Self) {
     
     inline def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    
-    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

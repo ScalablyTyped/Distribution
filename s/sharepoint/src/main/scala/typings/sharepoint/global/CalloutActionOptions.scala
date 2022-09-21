@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CalloutActionOptions")
 @js.native
-class CalloutActionOptions ()
+open class CalloutActionOptions ()
   extends StObject
      with typings.sharepoint.CalloutActionOptions {
   
@@ -30,7 +30,7 @@ class CalloutActionOptions ()
     @param event Standard javascript event object
     @param action The action object */
   /* CompleteClass */
-  override def onClickCallback(event: Event, action: typings.sharepoint.CalloutAction): js.Any = js.native
+  override def onClickCallback(event: Event, action: typings.sharepoint.CalloutAction): Any = js.native
   
   /** Text for the action link */
   /* CompleteClass */

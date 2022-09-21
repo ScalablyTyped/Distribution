@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FilterFactory extends StObject {
   
-  def apply(I: js.Any*): IFilterFunction = js.native
+  def apply(I: Any*): IFilterFunction = js.native
 }

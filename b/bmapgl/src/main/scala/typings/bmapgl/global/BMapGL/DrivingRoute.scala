@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.DrivingRoute")
 @js.native
-class DrivingRoute protected ()
+open class DrivingRoute protected ()
   extends StObject
      with typings.bmapgl.BMapGL.DrivingRoute {
   def this(location: String) = this()

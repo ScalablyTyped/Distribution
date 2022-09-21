@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("jsrsasign", "ECPointFp")
 @js.native
-class ECPointFp protected ()
+open class ECPointFp protected ()
   extends StObject
      with typings.jsrsasign.jsrsasign.ECPointFp {
   def this(

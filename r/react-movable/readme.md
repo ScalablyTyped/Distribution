@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-movable
 
-Typings are for version 2.5.3
+Typings are for version 3.0.4
 
 ## Library description:
 Drag and drop lists.
@@ -10,10 +10,10 @@ Drag and drop lists.
 | ------------------ | :-------------: |
 | Full name          | react-movable |
 | Keywords           | react, react-dom, react-component, sortable, reorder, reorderable, drag, drop, list, table, drag and drop, dnd, movable |
-| # releases         | 14 |
-| # dependents       | 9 |
-| # downloads        | 994395 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 187095.33333333334 |
+| # stars            | 1253.0 |
 
 ## Links
 - [Homepage](https://github.com/tajo/react-movable#readme)

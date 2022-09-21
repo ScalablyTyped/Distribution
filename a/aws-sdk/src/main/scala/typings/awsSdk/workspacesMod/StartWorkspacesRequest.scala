@@ -22,6 +22,6 @@ object StartWorkspacesRequest {
     
     inline def setStartWorkspaceRequests(value: StartWorkspaceRequests): Self = StObject.set(x, "StartWorkspaceRequests", value.asInstanceOf[js.Any])
     
-    inline def setStartWorkspaceRequestsVarargs(value: StartRequest*): Self = StObject.set(x, "StartWorkspaceRequests", js.Array(value :_*))
+    inline def setStartWorkspaceRequestsVarargs(value: StartRequest*): Self = StObject.set(x, "StartWorkspaceRequests", js.Array(value*))
   }
 }

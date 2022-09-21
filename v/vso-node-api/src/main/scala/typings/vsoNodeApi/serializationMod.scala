@@ -24,11 +24,11 @@ object serializationMod {
       * @param unwrapWrappedCollections If true check for wrapped arrays (REST apis will not return arrays directly as the root result but will instead wrap them in a { values: [], count: 0 } object.
       */
     inline def deserialize(
-      data: js.Any,
+      data: Any,
       contractMetadata: ContractMetadata,
       preserveOriginal: Boolean,
       unwrapWrappedCollections: Boolean
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any], contractMetadata.asInstanceOf[js.Any], preserveOriginal.asInstanceOf[js.Any], unwrapWrappedCollections.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any], contractMetadata.asInstanceOf[js.Any], preserveOriginal.asInstanceOf[js.Any], unwrapWrappedCollections.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Process a contract in its raw form (e.g. date fields are Dates, and Enums are numbers) and
@@ -38,7 +38,7 @@ object serializationMod {
       * @param contractMetadata The type info/metadata for the contract type being serialized
       * @param preserveOriginal If true, don't modify the original object. False modifies the original object (the return value points to the data argument).
       */
-    inline def serialize(data: js.Any, contractMetadata: ContractMetadata, preserveOriginal: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(data.asInstanceOf[js.Any], contractMetadata.asInstanceOf[js.Any], preserveOriginal.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def serialize(data: Any, contractMetadata: ContractMetadata, preserveOriginal: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(data.asInstanceOf[js.Any], contractMetadata.asInstanceOf[js.Any], preserveOriginal.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   trait ContractEnumMetadata extends StObject {
@@ -162,11 +162,11 @@ object serializationMod {
     
     var count: Double
     
-    var value: js.Array[js.Any]
+    var value: js.Array[Any]
   }
   object IWebApiArrayResult {
     
-    inline def apply(count: Double, value: js.Array[js.Any]): IWebApiArrayResult = {
+    inline def apply(count: Double, value: js.Array[Any]): IWebApiArrayResult = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWebApiArrayResult]
     }
@@ -175,9 +175,9 @@ object serializationMod {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   

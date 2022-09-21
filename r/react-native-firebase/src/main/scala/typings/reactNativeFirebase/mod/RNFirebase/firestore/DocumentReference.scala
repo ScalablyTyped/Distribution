@@ -41,30 +41,30 @@ trait DocumentReference extends StObject {
   def set(data: js.Object): js.Promise[Unit] = js.native
   def set(data: js.Object, writeOptions: SetOptions): js.Promise[Unit] = js.native
   
-  def update(key1: UpdateKey, val1: js.Any): js.Promise[Unit] = js.native
-  def update(key1: UpdateKey, val1: js.Any, key2: UpdateKey, val2: js.Any): js.Promise[Unit] = js.native
-  def update(key1: UpdateKey, val1: js.Any, key2: UpdateKey, val2: js.Any, key3: UpdateKey, val3: js.Any): js.Promise[Unit] = js.native
+  def update(key1: UpdateKey, val1: Any): js.Promise[Unit] = js.native
+  def update(key1: UpdateKey, val1: Any, key2: UpdateKey, val2: Any): js.Promise[Unit] = js.native
+  def update(key1: UpdateKey, val1: Any, key2: UpdateKey, val2: Any, key3: UpdateKey, val3: Any): js.Promise[Unit] = js.native
   def update(
     key1: UpdateKey,
-    val1: js.Any,
+    val1: Any,
     key2: UpdateKey,
-    val2: js.Any,
+    val2: Any,
     key3: UpdateKey,
-    val3: js.Any,
+    val3: Any,
     key4: UpdateKey,
-    val4: js.Any
+    val4: Any
   ): js.Promise[Unit] = js.native
   def update(
     key1: UpdateKey,
-    val1: js.Any,
+    val1: Any,
     key2: UpdateKey,
-    val2: js.Any,
+    val2: Any,
     key3: UpdateKey,
-    val3: js.Any,
+    val3: Any,
     key4: UpdateKey,
-    val4: js.Any,
+    val4: Any,
     key5: UpdateKey,
-    val5: js.Any
+    val5: Any
   ): js.Promise[Unit] = js.native
   def update(obj: js.Object): js.Promise[Unit] = js.native
 }

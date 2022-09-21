@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AudioFileInputNode extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_filecompleted(`type`: filecompleted, listener: TypedEventHandler[AudioFileInputNode, js.Any]): Unit = js.native
+  def addEventListener_filecompleted(`type`: filecompleted, listener: TypedEventHandler[AudioFileInputNode, Any]): Unit = js.native
   
   /**
     * Adds an outgoing connection to the audio file input node.
@@ -67,10 +67,10 @@ trait AudioFileInputNode extends StObject {
   var loopCount: Double = js.native
   
   /** Notifies of completion of the file associated with the audio file input node. */
-  def onfilecompleted(ev: js.Any & WinRTEvent[AudioFileInputNode]): Unit = js.native
+  def onfilecompleted(ev: Any & WinRTEvent[AudioFileInputNode]): Unit = js.native
   /** Notifies of completion of the file associated with the audio file input node. */
   @JSName("onfilecompleted")
-  var onfilecompleted_Original: TypedEventHandler[AudioFileInputNode, js.Any] = js.native
+  var onfilecompleted_Original: TypedEventHandler[AudioFileInputNode, Any] = js.native
   
   /** Gets the list of outgoing connections from the audio file input node to other nodes in the audio graph. */
   var outgoingConnections: IVectorView[AudioGraphConnection] = js.native
@@ -84,9 +84,9 @@ trait AudioFileInputNode extends StObject {
   /** Gets the position of the audio file input node. */
   var position: Double = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_filecompleted(`type`: filecompleted, listener: TypedEventHandler[AudioFileInputNode, js.Any]): Unit = js.native
+  def removeEventListener_filecompleted(`type`: filecompleted, listener: TypedEventHandler[AudioFileInputNode, Any]): Unit = js.native
   
   /**
     * Removes the outgoing connection for the audio file input node.

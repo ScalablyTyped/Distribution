@@ -15,7 +15,7 @@ object chromaticAberrationPostProcessMod {
   
   @JSImport("babylonjs/PostProcesses/chromaticAberrationPostProcess", "ChromaticAberrationPostProcess")
   @js.native
-  class ChromaticAberrationPostProcess protected () extends PostProcess {
+  open class ChromaticAberrationPostProcess protected () extends PostProcess {
     /**
       * Creates a new instance ChromaticAberrationPostProcess
       * @param name The name of the effect.
@@ -43,17 +43,17 @@ object chromaticAberrationPostProcessMod {
     ) = this()
     
     /**
-      * The amount of seperation of rgb channels (default: 30)
+      * The amount of separation of rgb channels (default: 30)
       */
     var aberrationAmount: Double = js.native
     
     /**
-      * The center position where the radialIntensity should be around. [0.5,0.5 is center of screen, 1,1 is top right corder] (default: Vector2(0.5 ,0.5))
+      * The center position where the radialIntensity should be around. [0.5,0.5 is center of screen, 1,1 is top right corner] (default: Vector2(0.5 ,0.5))
       */
     var centerPosition: Vector2 = js.native
     
     /**
-      * The normilized direction in which the rgb channels should be seperated. If set to 0,0 radial direction will be used. (default: Vector2(0.707,0.707))
+      * The normalized direction in which the rgb channels should be separated. If set to 0,0 radial direction will be used. (default: Vector2(0.707,0.707))
       */
     var direction: Vector2 = js.native
     
@@ -75,7 +75,13 @@ object chromaticAberrationPostProcessMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** @hidden */
-    inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[ChromaticAberrationPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[ChromaticAberrationPostProcess]]
+    /**
+      * @param parsedPostProcess
+      * @param targetCamera
+      * @param scene
+      * @param rootUrl
+      * @hidden
+      */
+    inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[ChromaticAberrationPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[ChromaticAberrationPostProcess]]
   }
 }

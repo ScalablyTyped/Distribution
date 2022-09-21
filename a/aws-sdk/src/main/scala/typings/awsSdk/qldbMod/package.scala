@@ -1,24 +1,34 @@
 package typings.awsSdk.qldbMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Arn = java.lang.String
+type Arn = String
 
 type Boolean = scala.Boolean
 
 type DeletionProtection = scala.Boolean
 
-type Digest = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.qldbMod.Blob | java.lang.String
+type Digest = Buffer | js.typedarray.Uint8Array | Blob | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.UPDATING
+  - typings.awsSdk.awsSdkStrings.KMS_KEY_INACCESSIBLE
+  - java.lang.String
+*/
+type EncryptionStatus = _EncryptionStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.KINESIS_STREAM_NOT_FOUND
   - typings.awsSdk.awsSdkStrings.IAM_PERMISSION_REVOKED
   - java.lang.String
 */
-type ErrorCause = typings.awsSdk.qldbMod._ErrorCause | java.lang.String
+type ErrorCause = _ErrorCause | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -26,17 +36,19 @@ type ErrorCause = typings.awsSdk.qldbMod._ErrorCause | java.lang.String
   - typings.awsSdk.awsSdkStrings.CANCELLED
   - java.lang.String
 */
-type ExportStatus = typings.awsSdk.qldbMod._ExportStatus | java.lang.String
+type ExportStatus = _ExportStatus | String
 
-type IonText = java.lang.String
+type IonText = String
 
-type JournalKinesisStreamDescriptionList = js.Array[typings.awsSdk.qldbMod.JournalKinesisStreamDescription]
+type JournalKinesisStreamDescriptionList = js.Array[JournalKinesisStreamDescription]
 
-type JournalS3ExportList = js.Array[typings.awsSdk.qldbMod.JournalS3ExportDescription]
+type JournalS3ExportList = js.Array[JournalS3ExportDescription]
 
-type LedgerList = js.Array[typings.awsSdk.qldbMod.LedgerSummary]
+type KmsKey = String
 
-type LedgerName = java.lang.String
+type LedgerList = js.Array[LedgerSummary]
+
+type LedgerName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -45,15 +57,28 @@ type LedgerName = java.lang.String
   - typings.awsSdk.awsSdkStrings.DELETED
   - java.lang.String
 */
-type LedgerState = typings.awsSdk.qldbMod._LedgerState | java.lang.String
+type LedgerState = _LedgerState | String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type PermissionsMode = typings.awsSdk.awsSdkStrings.ALLOW_ALL | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ION_BINARY
+  - typings.awsSdk.awsSdkStrings.ION_TEXT
+  - typings.awsSdk.awsSdkStrings.JSON
+  - java.lang.String
+*/
+type OutputFormat = _OutputFormat | String
 
-type S3Bucket = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALLOW_ALL
+  - typings.awsSdk.awsSdkStrings.STANDARD
+  - java.lang.String
+*/
+type PermissionsMode = _PermissionsMode | String
+
+type S3Bucket = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SSE_KMS
@@ -61,11 +86,11 @@ type S3Bucket = java.lang.String
   - typings.awsSdk.awsSdkStrings.NO_ENCRYPTION
   - java.lang.String
 */
-type S3ObjectEncryptionType = typings.awsSdk.qldbMod._S3ObjectEncryptionType | java.lang.String
+type S3ObjectEncryptionType = _S3ObjectEncryptionType | String
 
-type S3Prefix = java.lang.String
+type S3Prefix = String
 
-type StreamName = java.lang.String
+type StreamName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -75,23 +100,23 @@ type StreamName = java.lang.String
   - typings.awsSdk.awsSdkStrings.IMPAIRED
   - java.lang.String
 */
-type StreamStatus = typings.awsSdk.qldbMod._StreamStatus | java.lang.String
+type StreamStatus = _StreamStatus | String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.qldbMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type Tags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.qldbMod.TagValue]
+type Tags = StringDictionary[TagValue]
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
-type UniqueId = java.lang.String
+type UniqueId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-01-02`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.qldbMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

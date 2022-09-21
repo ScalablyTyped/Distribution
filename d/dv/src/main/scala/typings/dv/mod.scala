@@ -49,7 +49,7 @@ import typings.dv.dvStrings.sparse_text
 import typings.dv.dvStrings.sparse_text_osd
 import typings.dv.dvStrings.unlv
 import typings.dv.dvStrings.vertical
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,16 +58,15 @@ object mod {
   
   @JSImport("dv", "Image")
   @js.native
-  class Image protected () extends StObject {
+  open class Image protected () extends StObject {
     /**
       *  Creates a copy of otherImage.
       */
     def this(otherImage: Image) = this()
-    def this(`type`: jpg, buffer: Buffer) = this()
     /**
       * Creates an image from a Buffer object, that contains the PNG/JPG encoded image.
       */
-    def this(`type`: png, buffer: Buffer) = this()
+    def this(`type`: png | jpg, buffer: Buffer) = this()
     /**
       * Creates a 32 bit imagen from three 8 bit images, where each image represents one channel of RGB or HSV.
       */
@@ -76,9 +75,7 @@ object mod {
       * Creates an empty image with the specified dimensions (!!! note: this constructor is experimental and likely to change).
       */
     def this(width: Double, height: Double, depth: Double) = this()
-    def this(`type`: gray, buffer: Buffer, width: Double, height: Double) = this()
-    def this(`type`: rgba, buffer: Buffer, width: Double, height: Double) = this()
-    def this(`type`: rgb, buffer: Buffer, width: Double, height: Double) = this()
+    def this(`type`: rgba | rgb | gray, buffer: Buffer, width: Double, height: Double) = this()
     
     /**
       * If the images are monochrome, dispatches to Leptonica's pixOr. Otherwise, returns the channelwise addition of b to a, clipped at 255.
@@ -113,10 +110,7 @@ object mod {
     /**
       * Only available for monochrome images. Tries to extract connected components (think of flood fill). The connectivity can be specified as 4 or 8 directions.
       */
-    @JSName("connectedComponents")
-    def connectedComponents_4(connectivity: `4`): js.Array[Component] = js.native
-    @JSName("connectedComponents")
-    def connectedComponents_8(connectivity: `8`): js.Array[Component] = js.native
+    def connectedComponents(connectivity: `4` | `8`): js.Array[Component] = js.native
     
     /**
       * Applies a convoltuion kernel with the specified dimensions. Image convolution is an operation where each destination pixel is computed based on a weighted sum of a set of nearby source pixels.
@@ -142,17 +136,27 @@ object mod {
     /**
       * The Distance Function works on 1bpp images. It labels each pixel with the largest distance between this and any other pixel in its connected component. The connectivity is either 4 or 8.
       */
-    @JSName("distanceFunction")
-    def distanceFunction_4(connectivity: `4`): Image = js.native
-    @JSName("distanceFunction")
-    def distanceFunction_8(connectivity: `8`): Image = js.native
+    def distanceFunction(connectivity: `4` | `8`): Image = js.native
     
+    /**
+      * !!! Note: this function actually changes the image!
+      * Draws a rectangle to this image with the specified border. The possible pixel manipulating operations are set, clear and flip.
+      */
+    def drawBox(box: Box, borderWidth: Double, operation: set | clear | flip): this.type = js.native
     /**
       * !!! Note: this function actually changes the image!
       * Draws a rectangle to this image with the specified border in the specified color with an optional blending parameter (0.0: transparent; 1.0: no transparency).
       */
     def drawBox(box: Box, borderWidth: Double, red: Double, green: Double, blue: Double): this.type = js.native
     def drawBox(box: Box, borderWidth: Double, red: Double, green: Double, blue: Double, frac: Double): this.type = js.native
+    def drawBox(
+      x: Double,
+      y: Double,
+      width: Double,
+      height: Double,
+      borderWidth: Double,
+      operation: set | clear | flip
+    ): this.type = js.native
     def drawBox(
       x: Double,
       y: Double,
@@ -174,22 +178,6 @@ object mod {
       blue: Double,
       frac: Double
     ): this.type = js.native
-    @JSName("drawBox")
-    def drawBox_clear(box: Box, borderWidth: Double, operation: clear): this.type = js.native
-    @JSName("drawBox")
-    def drawBox_clear(x: Double, y: Double, width: Double, height: Double, borderWidth: Double, operation: clear): this.type = js.native
-    @JSName("drawBox")
-    def drawBox_flip(box: Box, borderWidth: Double, operation: flip): this.type = js.native
-    @JSName("drawBox")
-    def drawBox_flip(x: Double, y: Double, width: Double, height: Double, borderWidth: Double, operation: flip): this.type = js.native
-    /**
-      * !!! Note: this function actually changes the image!
-      * Draws a rectangle to this image with the specified border. The possible pixel manipulating operations are set, clear and flip.
-      */
-    @JSName("drawBox")
-    def drawBox_set(box: Box, borderWidth: Double, operation: set): this.type = js.native
-    @JSName("drawBox")
-    def drawBox_set(x: Double, y: Double, width: Double, height: Double, borderWidth: Double, operation: set): this.type = js.native
     
     /**
       * !!! Note: this function actually changes the image!
@@ -200,20 +188,15 @@ object mod {
     
     /**
       * !!! Note: this function actually changes the image!
+      * Draws a line between p1 and p2 to this image with the specified line width. The possible pixel manipulating operations are set, clear and flip.
+      */
+    def drawLine(p1: Point, p2: Point, width: Double, operation: set | clear | flip): this.type = js.native
+    /**
+      * !!! Note: this function actually changes the image!
       * Draws a line between p1 and p2 to this image with the specified line width in the specified color with an optional blending parameter (0.0: transparent; 1.0: no transparency).
       */
     def drawLine(p1: Point, p2: Point, width: Double, red: Double, green: Double, blue: Double): this.type = js.native
     def drawLine(p1: Point, p2: Point, width: Double, red: Double, green: Double, blue: Double, frac: Double): this.type = js.native
-    @JSName("drawLine")
-    def drawLine_clear(p1: Point, p2: Point, width: Double, operation: clear): this.type = js.native
-    @JSName("drawLine")
-    def drawLine_flip(p1: Point, p2: Point, width: Double, operation: flip): this.type = js.native
-    /**
-      * !!! Note: this function actually changes the image!
-      * Draws a line between p1 and p2 to this image with the specified line width. The possible pixel manipulating operations are set, clear and flip.
-      */
-    @JSName("drawLine")
-    def drawLine_set(p1: Point, p2: Point, width: Double, operation: set): this.type = js.native
     
     /**
       * Applies an Erode Filter and returns the result.
@@ -276,13 +259,10 @@ object mod {
       */
     def lineSegments(accuracy: Double, maxLineSegments: Double, useWeightedMeanShift: Boolean): js.Array[Segment] = js.native
     
-    @JSName("maxDynamicRange")
-    def maxDynamicRange_linear(scale: linear): Image = js.native
     /**
       * Scales an 8bpp image for maximum dynamic range. scale must be either log or linear.
       */
-    @JSName("maxDynamicRange")
-    def maxDynamicRange_log(scale: log): Image = js.native
+    def maxDynamicRange(scale: log | linear): Image = js.native
     
     /**
       * Color image quantization using median cut algorithm.
@@ -328,10 +308,7 @@ object mod {
     /**
       * Computes the horizontal or vertical projection of an 1bpp or 8bpp image.
       */
-    @JSName("projection")
-    def projection_horizontal(mode: horizontal): js.Array[Double] = js.native
-    @JSName("projection")
-    def projection_vertical(mode: vertical): js.Array[Double] = js.native
+    def projection(mode: horizontal | vertical): js.Array[Double] = js.native
     
     /**
       * Applies a rank (0.0 ... 1.0) filter of the specified width
@@ -370,13 +347,10 @@ object mod {
       */
     def subtract(otherImage: Image): Image = js.native
     
-    @JSName("thin")
-    def thin_bg(`type`: bg, connectivity: Double, maxIterations: Double): Image = js.native
     /**
       * Applies morphological thinning of type (fg or bg) with the specified connectivitiy (4 or 8) and maxIterations (0 to iterate until complete).
       */
-    @JSName("thin")
-    def thin_fg(`type`: fg, connectivity: Double, maxIterations: Double): Image = js.native
+    def thin(`type`: fg | bg, connectivity: Double, maxIterations: Double): Image = js.native
     
     /**
       * Converts a grayscale image to monochrome using a global threshold. value must be between 0 and 255.
@@ -392,12 +366,7 @@ object mod {
       * Specifying jpg returns a JPG encoded image as buffer.
       */
     def toBuffer(): Buffer = js.native
-    @JSName("toBuffer")
-    def toBuffer_jpg(format: jpg): Buffer = js.native
-    @JSName("toBuffer")
-    def toBuffer_png(format: png): Buffer = js.native
-    @JSName("toBuffer")
-    def toBuffer_raw(format: raw): Buffer = js.native
+    def toBuffer(format: raw | png | jpg): Buffer = js.native
     
     /**
       * Converts a grayscale image to a color image.
@@ -412,15 +381,12 @@ object mod {
       * Converts an RGB image to grayscale using the specified widths for each channel.
       */
     def toGray(redWeight: Double, greenWeight: Double, blueWeight: Double): Image = js.native
-    @JSName("toGray")
-    def toGray_max(selector: max): Image = js.native
     /**
       * Converts an RGB image to grayscale by selecting either the 'min' or 'max' channel.
       * This can act as a simple color filter: 'max' maps colored pixels towards white,
       * while 'min' maps colored pixels towards black.
       */
-    @JSName("toGray")
-    def toGray_min(selector: min): Image = js.native
+    def toGray(selector: min | max): Image = js.native
     
     /**
       * Converts from RGB to HSV color space. HSV has the following ranges:
@@ -455,9 +421,9 @@ object mod {
   /**
     * Creates a Tesseract engine with language set to english.
     */
-  class Tesseract ()
+  open class Tesseract ()
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     def this(datapath: String) = this()
     /**
       * Creates a Tesseract engine with the specified language.
@@ -494,25 +460,16 @@ object mod {
     def findSymbols(recognize: Boolean): js.Array[js.Symbol] = js.native
     
     /**
+      * Returns text in the specified format. Valid formats are: plain, unlv.
+      */
+    def findText(format: plain | unlv): String = js.native
+    def findText(format: hocr | box, pageNumber: Double): String = js.native
+    def findText(format: plain | unlv, withConfidence: Boolean): String = js.native
+    
+    /**
       * Returns an array of objects, You can omit text information by setting recognize = false, which is considerably faster.
       */
     def findTextLines(recognize: Boolean): js.Array[Textline] = js.native
-    
-    @JSName("findText")
-    def findText_box(format: box, pageNumber: Double): String = js.native
-    @JSName("findText")
-    def findText_hocr(format: hocr, pageNumber: Double): String = js.native
-    /**
-      * Returns text in the specified format. Valid formats are: plain, unlv.
-      */
-    @JSName("findText")
-    def findText_plain(format: plain): String = js.native
-    @JSName("findText")
-    def findText_plain(format: plain, withConfidence: Boolean): String = js.native
-    @JSName("findText")
-    def findText_unlv(format: unlv): String = js.native
-    @JSName("findText")
-    def findText_unlv(format: unlv, withConfidence: Boolean): String = js.native
     
     /**
       * Returns an array of objects, You can omit text information by setting recognize = false, which is considerably faster.
@@ -542,7 +499,7 @@ object mod {
   
   @JSImport("dv", "ZXing")
   @js.native
-  class ZXing () extends StObject {
+  open class ZXing () extends StObject {
     def this(image: Image) = this()
     
     /**
@@ -612,7 +569,7 @@ object mod {
       
       inline def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -906,7 +863,7 @@ object mod {
       
       inline def setChoices(value: js.Array[Choice]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       
-      inline def setChoicesVarargs(value: Choice*): Self = StObject.set(x, "choices", js.Array(value :_*))
+      inline def setChoicesVarargs(value: Choice*): Self = StObject.set(x, "choices", js.Array(value*))
     }
   }
   

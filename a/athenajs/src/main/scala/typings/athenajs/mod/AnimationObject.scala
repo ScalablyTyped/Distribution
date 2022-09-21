@@ -30,7 +30,7 @@ object AnimationObject {
     
     inline def setFrames(value: js.Array[Height]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    inline def setFramesVarargs(value: Height*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: Height*): Self = StObject.set(x, "frames", js.Array(value*))
     
     inline def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     

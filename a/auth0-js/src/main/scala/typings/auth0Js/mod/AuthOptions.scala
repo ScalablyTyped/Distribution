@@ -17,7 +17,7 @@ trait AuthOptions extends StObject {
   
   var _sendTelemetry: js.UndefOr[Boolean] = js.undefined
   
-  var _telemetryInfo: js.UndefOr[js.Any] = js.undefined
+  var _telemetryInfo: js.UndefOr[Any] = js.undefined
   
   var _timesToRetryFailedRequests: js.UndefOr[Double] = js.undefined
   
@@ -39,7 +39,7 @@ trait AuthOptions extends StObject {
   
   var overrides: js.UndefOr[Jwksuri] = js.undefined
   
-  var plugins: js.UndefOr[js.Any] = js.undefined
+  var plugins: js.UndefOr[Any] = js.undefined
   
   var popupOrigin: js.UndefOr[String] = js.undefined
   
@@ -94,7 +94,7 @@ object AuthOptions {
     
     inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    inline def setPlugins(value: js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
@@ -158,7 +158,7 @@ object AuthOptions {
     
     inline def set_sendTelemetryUndefined: Self = StObject.set(x, "_sendTelemetry", js.undefined)
     
-    inline def set_telemetryInfo(value: js.Any): Self = StObject.set(x, "_telemetryInfo", value.asInstanceOf[js.Any])
+    inline def set_telemetryInfo(value: Any): Self = StObject.set(x, "_telemetryInfo", value.asInstanceOf[js.Any])
     
     inline def set_telemetryInfoUndefined: Self = StObject.set(x, "_telemetryInfo", js.undefined)
     

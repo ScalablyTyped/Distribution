@@ -61,7 +61,7 @@ object XExtendedTransliteration {
     loadModuleByImplName: (String, Locale) => Unit,
     loadModuleNew: (SeqEquiv[TransliterationModulesNew], Locale) => Unit,
     loadModulesByImplNames: (SeqEquiv[String], Locale) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     transliterate: (String, Double, Double, js.Array[SeqEquiv[Double]]) => String,
     transliterateChar2Char: String => String,

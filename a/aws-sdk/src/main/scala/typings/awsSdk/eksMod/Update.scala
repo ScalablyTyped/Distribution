@@ -9,7 +9,7 @@ trait Update extends StObject {
   /**
     * The Unix epoch timestamp in seconds for when the update was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Any errors associated with a Failed update.
@@ -45,7 +45,7 @@ object Update {
   
   extension [Self <: Update](x: Self) {
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -53,7 +53,7 @@ object Update {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: ErrorDetail*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ErrorDetail*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -63,7 +63,7 @@ object Update {
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setParamsVarargs(value: UpdateParam*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: UpdateParam*): Self = StObject.set(x, "params", js.Array(value*))
     
     inline def setStatus(value: UpdateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

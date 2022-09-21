@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttachManagedPolicyToPermissionSetRequest extends StObject {
   
   /**
-    * The ARN of the SSO instance under which the operation will be executed. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
+    * The ARN of the IAM Identity Center instance under which the operation will be executed. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
     */
   var InstanceArn: typings.awsSdk.ssoadminMod.InstanceArn
   
   /**
-    * The IAM managed policy ARN to be attached to a permission set.
+    * The AWS managed policy ARN to be attached to a permission set.
     */
   var ManagedPolicyArn: typings.awsSdk.ssoadminMod.ManagedPolicyArn
   

@@ -12,5 +12,5 @@ trait ArcGISMapServiceConstructor
      with Instantiable0[ArcGISMapService]
      with Instantiable1[/* properties */ ArcGISMapServiceProperties, ArcGISMapService] {
   
-  def fromJSON(json: js.Any): ArcGISMapService = js.native
+  def fromJSON(json: Any): ArcGISMapService = js.native
 }

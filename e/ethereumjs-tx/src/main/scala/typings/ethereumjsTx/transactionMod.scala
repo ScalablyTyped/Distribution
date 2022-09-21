@@ -8,7 +8,7 @@ import typings.ethereumjsTx.typesMod.PrefixedHexString
 import typings.ethereumjsTx.typesMod.TransactionOptions
 import typings.ethereumjsTx.typesMod.TxData
 import typings.ethereumjsUtil.mod.BN
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,7 +46,7 @@ object transactionMod {
     * const tx = new Transaction(txData);
     * ```
     */
-  class default ()
+  open class default ()
     extends StObject
        with Transaction {
     def this(data: js.Array[BufferLike]) = this()
@@ -63,19 +63,19 @@ object transactionMod {
   @js.native
   trait Transaction extends StObject {
     
-    /* private */ var _common: js.Any = js.native
+    /* private */ var _common: Any = js.native
     
     /* protected */ var _from: js.UndefOr[Buffer] = js.native
     
-    /* private */ var _implementsEIP155: js.Any = js.native
+    /* private */ var _implementsEIP155: Any = js.native
     
-    /* private */ var _isSigned: js.Any = js.native
+    /* private */ var _isSigned: Any = js.native
     
-    /* private */ var _overrideVSetterWithValidation: js.Any = js.native
+    /* private */ var _overrideVSetterWithValidation: Any = js.native
     
-    /* private */ var _senderPubKey: js.Any = js.native
+    /* private */ var _senderPubKey: Any = js.native
     
-    /* private */ var _validateV: js.Any = js.native
+    /* private */ var _validateV: Any = js.native
     
     var data: Buffer = js.native
     

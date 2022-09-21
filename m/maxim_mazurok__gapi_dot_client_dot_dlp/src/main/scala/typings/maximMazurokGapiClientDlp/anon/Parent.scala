@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDlp.anon
 
-import typings.maximMazurokGapiClientDlp.gapi.client.dlp.GooglePrivacyDlpV2CreateStoredInfoTypeRequest
+import typings.maximMazurokGapiClientDlp.gapi.client.dlp.GooglePrivacyDlpV2CreateDlpJobRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,10 +30,9 @@ trait Parent extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. Parent resource name. The format of this value varies depending on the scope of the request (project or organization) and whether you have [specified a processing
+    * Required. Parent resource name. The format of this value varies depending on whether you have [specified a processing
     * location](https://cloud.google.com/dlp/docs/specifying-location): + Projects scope, location specified: `projects/`PROJECT_ID`/locations/`LOCATION_ID + Projects scope, no
-    * location specified (defaults to global): `projects/`PROJECT_ID + Organizations scope, location specified: `organizations/`ORG_ID`/locations/`LOCATION_ID + Organizations scope,
-    * no location specified (defaults to global): `organizations/`ORG_ID The following example `parent` string specifies a parent project with the identifier `example-project`, and
+    * location specified (defaults to global): `projects/`PROJECT_ID The following example `parent` string specifies a parent project with the identifier `example-project`, and
     * specifies the `europe-west3` location for processing data: parent=projects/example-project/locations/europe-west3
     */
   var parent: String
@@ -45,7 +44,7 @@ trait Parent extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GooglePrivacyDlpV2CreateStoredInfoTypeRequest
+  var resource: GooglePrivacyDlpV2CreateDlpJobRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -55,7 +54,7 @@ trait Parent extends StObject {
 }
 object Parent {
   
-  inline def apply(parent: String, resource: GooglePrivacyDlpV2CreateStoredInfoTypeRequest): Parent = {
+  inline def apply(parent: String, resource: GooglePrivacyDlpV2CreateDlpJobRequest): Parent = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parent]
   }
@@ -100,7 +99,7 @@ object Parent {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GooglePrivacyDlpV2CreateStoredInfoTypeRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: GooglePrivacyDlpV2CreateDlpJobRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

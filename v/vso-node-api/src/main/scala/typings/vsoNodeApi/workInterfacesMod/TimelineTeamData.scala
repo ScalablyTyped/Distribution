@@ -104,7 +104,7 @@ object TimelineTeamData {
     
     inline def setFieldReferenceNames(value: js.Array[String]): Self = StObject.set(x, "fieldReferenceNames", value.asInstanceOf[js.Any])
     
-    inline def setFieldReferenceNamesVarargs(value: String*): Self = StObject.set(x, "fieldReferenceNames", js.Array(value :_*))
+    inline def setFieldReferenceNamesVarargs(value: String*): Self = StObject.set(x, "fieldReferenceNames", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -112,7 +112,7 @@ object TimelineTeamData {
     
     inline def setIterations(value: js.Array[TimelineTeamIteration]): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
-    inline def setIterationsVarargs(value: TimelineTeamIteration*): Self = StObject.set(x, "iterations", js.Array(value :_*))
+    inline def setIterationsVarargs(value: TimelineTeamIteration*): Self = StObject.set(x, "iterations", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -120,7 +120,7 @@ object TimelineTeamData {
     
     inline def setPartiallyPagedFieldReferenceNames(value: js.Array[String]): Self = StObject.set(x, "partiallyPagedFieldReferenceNames", value.asInstanceOf[js.Any])
     
-    inline def setPartiallyPagedFieldReferenceNamesVarargs(value: String*): Self = StObject.set(x, "partiallyPagedFieldReferenceNames", js.Array(value :_*))
+    inline def setPartiallyPagedFieldReferenceNamesVarargs(value: String*): Self = StObject.set(x, "partiallyPagedFieldReferenceNames", js.Array(value*))
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
@@ -132,10 +132,10 @@ object TimelineTeamData {
     
     inline def setTeamFieldValues(value: js.Array[TeamFieldValue]): Self = StObject.set(x, "teamFieldValues", value.asInstanceOf[js.Any])
     
-    inline def setTeamFieldValuesVarargs(value: TeamFieldValue*): Self = StObject.set(x, "teamFieldValues", js.Array(value :_*))
+    inline def setTeamFieldValuesVarargs(value: TeamFieldValue*): Self = StObject.set(x, "teamFieldValues", js.Array(value*))
     
     inline def setWorkItemTypeColors(value: js.Array[WorkItemColor]): Self = StObject.set(x, "workItemTypeColors", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemTypeColorsVarargs(value: WorkItemColor*): Self = StObject.set(x, "workItemTypeColors", js.Array(value :_*))
+    inline def setWorkItemTypeColorsVarargs(value: WorkItemColor*): Self = StObject.set(x, "workItemTypeColors", js.Array(value*))
   }
 }

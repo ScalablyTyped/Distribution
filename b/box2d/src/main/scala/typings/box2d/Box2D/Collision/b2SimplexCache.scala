@@ -39,11 +39,11 @@ object b2SimplexCache {
     
     inline def setIndexA(value: js.Array[Double]): Self = StObject.set(x, "indexA", value.asInstanceOf[js.Any])
     
-    inline def setIndexAVarargs(value: Double*): Self = StObject.set(x, "indexA", js.Array(value :_*))
+    inline def setIndexAVarargs(value: Double*): Self = StObject.set(x, "indexA", js.Array(value*))
     
     inline def setIndexB(value: js.Array[Double]): Self = StObject.set(x, "indexB", value.asInstanceOf[js.Any])
     
-    inline def setIndexBVarargs(value: Double*): Self = StObject.set(x, "indexB", js.Array(value :_*))
+    inline def setIndexBVarargs(value: Double*): Self = StObject.set(x, "indexB", js.Array(value*))
     
     inline def setMetric(value: Double): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
   }

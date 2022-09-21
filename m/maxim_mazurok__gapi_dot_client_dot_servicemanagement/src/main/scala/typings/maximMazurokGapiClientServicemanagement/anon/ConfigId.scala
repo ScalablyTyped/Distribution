@@ -37,7 +37,7 @@ trait ConfigId extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the service. See the [overview](/service-management/overview) for naming requirements. For example: `example.googleapis.com`. */
+  /** Required. The name of the service. See the [overview](https://cloud.google.com/service-management/overview) for naming requirements. For example: `example.googleapis.com`. */
   var serviceName: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

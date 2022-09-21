@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.accordionitem because var conflicts: $height, $scope, $skin_Original, $view, $width, config, name, on_click_Original, on_context, on_dblclick_Original, on_mouse_move_Original. Inlined  */ @JSGlobal("webix.ui.accordionitem")
+- typings.webix.webix.ui.accordionitem because var conflicts: $height, $scope, $setNode, $skin_Original, $view, $width, config, name, on_click_Original, on_context, on_dblclick_Original, on_mouse_move_Original. Inlined  */ @JSGlobal("webix.ui.accordionitem")
 @js.native
-class accordionitem ()
+open class accordionitem ()
   extends typings.webix.mod.ui.accordionitem

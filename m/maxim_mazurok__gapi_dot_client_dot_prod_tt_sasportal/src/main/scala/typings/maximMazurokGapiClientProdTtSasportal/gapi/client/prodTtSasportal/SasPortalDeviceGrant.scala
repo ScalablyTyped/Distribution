@@ -18,8 +18,11 @@ trait SasPortalDeviceGrant extends StObject {
   /** Grant Id. */
   var grantId: js.UndefOr[String] = js.undefined
   
+  /** The transmit expiration time of the last heartbeat. */
+  var lastHeartbeatTransmitExpireTime: js.UndefOr[String] = js.undefined
+  
   /**
-    * Maximum Equivalent Isotropically Radiated Power (EIRP) permitted by the grant. The maximum EIRP is in units of dBm/MHz. The value of maxEirp represents the average (RMS) EIRP that
+    * Maximum Equivalent Isotropically Radiated Power (EIRP) permitted by the grant. The maximum EIRP is in units of dBm/MHz. The value of `maxEirp` represents the average (RMS) EIRP that
     * would be measured by the procedure defined in FCC part 96.41(e)(3).
     */
   var maxEirp: js.UndefOr[Double] = js.undefined
@@ -58,6 +61,10 @@ object SasPortalDeviceGrant {
     
     inline def setGrantIdUndefined: Self = StObject.set(x, "grantId", js.undefined)
     
+    inline def setLastHeartbeatTransmitExpireTime(value: String): Self = StObject.set(x, "lastHeartbeatTransmitExpireTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastHeartbeatTransmitExpireTimeUndefined: Self = StObject.set(x, "lastHeartbeatTransmitExpireTime", js.undefined)
+    
     inline def setMaxEirp(value: Double): Self = StObject.set(x, "maxEirp", value.asInstanceOf[js.Any])
     
     inline def setMaxEirpUndefined: Self = StObject.set(x, "maxEirp", js.undefined)
@@ -66,7 +73,7 @@ object SasPortalDeviceGrant {
     
     inline def setMoveListUndefined: Self = StObject.set(x, "moveList", js.undefined)
     
-    inline def setMoveListVarargs(value: SasPortalDpaMoveList*): Self = StObject.set(x, "moveList", js.Array(value :_*))
+    inline def setMoveListVarargs(value: SasPortalDpaMoveList*): Self = StObject.set(x, "moveList", js.Array(value*))
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
@@ -76,6 +83,6 @@ object SasPortalDeviceGrant {
     
     inline def setSuspensionReasonUndefined: Self = StObject.set(x, "suspensionReason", js.undefined)
     
-    inline def setSuspensionReasonVarargs(value: String*): Self = StObject.set(x, "suspensionReason", js.Array(value :_*))
+    inline def setSuspensionReasonVarargs(value: String*): Self = StObject.set(x, "suspensionReason", js.Array(value*))
   }
 }

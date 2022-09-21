@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark", "Models.CreateTemplateRequest")
 @js.native
-class CreateTemplateRequest protected ()
+open class CreateTemplateRequest protected ()
   extends typings.postmark.modelsMod.CreateTemplateRequest {
   def this(
     Name: String,

@@ -10,7 +10,7 @@ trait VisitedExpression extends StObject {
   var sourcePosition: js.UndefOr[SourcePosition] = js.undefined
   
   /** The evaluated value for the visited expression, e.g. true/false */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object VisitedExpression {
   
@@ -25,7 +25,7 @@ object VisitedExpression {
     
     inline def setSourcePositionUndefined: Self = StObject.set(x, "sourcePosition", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

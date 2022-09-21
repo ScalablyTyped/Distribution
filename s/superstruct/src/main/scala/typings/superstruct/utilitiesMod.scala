@@ -2,7 +2,13 @@ package typings.superstruct
 
 import typings.std.Omit
 import typings.std.Pick
+import typings.superstruct.structMod.Context
 import typings.superstruct.structMod.Struct
+import typings.superstruct.structMod.Validator
+import typings.superstruct.utilsMod.Assign
+import typings.superstruct.utilsMod.ObjectSchema
+import typings.superstruct.utilsMod.ObjectType
+import typings.superstruct.utilsMod.PartialObjectSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,163 +19,42 @@ object utilitiesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def assign[A /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */, B /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */](
-    Structs: js.Tuple2[
-      Struct[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<A> */ js.Any, 
-        A
-      ], 
-      Struct[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<B> */ js.Any, 
-        B
-      ]
-    ]
+  inline def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */](A: Struct[ObjectType[A], A], B: Struct[ObjectType[B], B]): Struct[ObjectType[Assign[A, B]], Assign[A, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any])).asInstanceOf[Struct[ObjectType[Assign[A, B]], Assign[A, B]]]
+  inline def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */, C /* <: ObjectSchema */](A: Struct[ObjectType[A], A], B: Struct[ObjectType[B], B], C: Struct[ObjectType[C], C]): Struct[ObjectType[Assign[Assign[A, B], C]], Assign[Assign[A, B], C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], C.asInstanceOf[js.Any])).asInstanceOf[Struct[ObjectType[Assign[Assign[A, B], C]], Assign[Assign[A, B], C]]]
+  inline def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */, C /* <: ObjectSchema */, D /* <: ObjectSchema */](
+    A: Struct[ObjectType[A], A],
+    B: Struct[ObjectType[B], B],
+    C: Struct[ObjectType[C], C],
+    D: Struct[ObjectType[D], D]
+  ): Struct[ObjectType[Assign[Assign[Assign[A, B], C], D]], Assign[Assign[Assign[A, B], C], D]] = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], C.asInstanceOf[js.Any], D.asInstanceOf[js.Any])).asInstanceOf[Struct[ObjectType[Assign[Assign[Assign[A, B], C], D]], Assign[Assign[Assign[A, B], C], D]]]
+  inline def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */, C /* <: ObjectSchema */, D /* <: ObjectSchema */, E /* <: ObjectSchema */](
+    A: Struct[ObjectType[A], A],
+    B: Struct[ObjectType[B], B],
+    C: Struct[ObjectType[C], C],
+    D: Struct[ObjectType[D], D],
+    E: Struct[ObjectType[E], E]
   ): Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<Assign<A, B>> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Assign<A, B> */ js.Any
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(Structs.asInstanceOf[js.Any]).asInstanceOf[Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<Assign<A, B>> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Assign<A, B> */ js.Any
-  ]]
-  inline def assign[A /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */, B /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */, C /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */](
-    Structs: js.Tuple3[
-      Struct[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<A> */ js.Any, 
-        A
-      ], 
-      Struct[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<B> */ js.Any, 
-        B
-      ], 
-      Struct[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<C> */ js.Any, 
-        C
-      ]
-    ]
-  ): Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<Assign<Assign<A, B>, C>> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Assign<Assign<A, B>, C> */ js.Any
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(Structs.asInstanceOf[js.Any]).asInstanceOf[Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<Assign<Assign<A, B>, C>> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Assign<Assign<A, B>, C> */ js.Any
-  ]]
-  inline def assign[A /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */, B /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */, C /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */, D /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */](
-    Structs: js.Tuple4[
-      Struct[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<A> */ js.Any, 
-        A
-      ], 
-      Struct[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<B> */ js.Any, 
-        B
-      ], 
-      Struct[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<C> */ js.Any, 
-        C
-      ], 
-      Struct[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<D> */ js.Any, 
-        D
-      ]
-    ]
-  ): Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<Assign<Assign<Assign<A, B>, C>, D>> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Assign<Assign<Assign<A, B>, C>, D> */ js.Any
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(Structs.asInstanceOf[js.Any]).asInstanceOf[Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<Assign<Assign<Assign<A, B>, C>, D>> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Assign<Assign<Assign<A, B>, C>, D> */ js.Any
-  ]]
-  inline def assign[A /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */, B /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */, C /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */, D /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */, E /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */](
-    Structs: js.Tuple5[
-      Struct[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<A> */ js.Any, 
-        A
-      ], 
-      Struct[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<B> */ js.Any, 
-        B
-      ], 
-      Struct[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<C> */ js.Any, 
-        C
-      ], 
-      Struct[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<D> */ js.Any, 
-        D
-      ], 
-      Struct[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<E> */ js.Any, 
-        E
-      ]
-    ]
-  ): Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<Assign<Assign<Assign<Assign<A, B>, C>, D>, E>> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Assign<Assign<Assign<Assign<A, B>, C>, D>, E> */ js.Any
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(Structs.asInstanceOf[js.Any]).asInstanceOf[Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<Assign<Assign<Assign<Assign<A, B>, C>, D>, E>> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Assign<Assign<Assign<Assign<A, B>, C>, D>, E> */ js.Any
+    ObjectType[Assign[Assign[Assign[Assign[A, B], C], D], E]], 
+    Assign[Assign[Assign[Assign[A, B], C], D], E]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any], C.asInstanceOf[js.Any], D.asInstanceOf[js.Any], E.asInstanceOf[js.Any])).asInstanceOf[Struct[
+    ObjectType[Assign[Assign[Assign[Assign[A, B], C], D], E]], 
+    Assign[Assign[Assign[Assign[A, B], C], D], E]
   ]]
   
-  inline def dynamic[T](
-    fn: js.Function2[
-      /* value */ js.Any, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Context<T, null> */ /* ctx */ js.Any, 
-      Struct[T, js.Any]
-    ]
-  ): Struct[T, Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("dynamic")(fn.asInstanceOf[js.Any]).asInstanceOf[Struct[T, Null]]
+  inline def define[T](name: String, validator: Validator): Struct[T, Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Struct[T, Null]]
   
-  inline def `lazy`[T](fn: js.Function0[Struct[T, js.Any]]): Struct[T, Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(fn.asInstanceOf[js.Any]).asInstanceOf[Struct[T, Null]]
+  inline def deprecated[T](struct: Struct[T, Any], log: js.Function2[/* value */ Any, /* ctx */ Context, Unit]): Struct[T, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(struct.asInstanceOf[js.Any], log.asInstanceOf[js.Any])).asInstanceOf[Struct[T, Any]]
   
-  inline def omit[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */, K /* <: /* keyof S */ String */](
-    struct: Struct[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<S> */ js.Any, 
-      S
-    ],
-    keys: js.Array[K]
-  ): Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<Omit<S, K>> */ js.Any, 
-    Omit[S, K]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(struct.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<Omit<S, K>> */ js.Any, 
-    Omit[S, K]
-  ]]
+  inline def dynamic[T](fn: js.Function2[/* value */ Any, /* ctx */ Context, Struct[T, Any]]): Struct[T, Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("dynamic")(fn.asInstanceOf[js.Any]).asInstanceOf[Struct[T, Null]]
   
-  inline def partial[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */](struct: S): Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<PartialObjectSchema<S>> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialObjectSchema<S> */ js.Any
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(struct.asInstanceOf[js.Any]).asInstanceOf[Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<PartialObjectSchema<S>> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialObjectSchema<S> */ js.Any
-  ]]
-  inline def partial[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */](
-    struct: Struct[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<S> */ js.Any, 
-      S
-    ]
-  ): Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<PartialObjectSchema<S>> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialObjectSchema<S> */ js.Any
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(struct.asInstanceOf[js.Any]).asInstanceOf[Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<PartialObjectSchema<S>> */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PartialObjectSchema<S> */ js.Any
-  ]]
+  inline def `lazy`[T](fn: js.Function0[Struct[T, Any]]): Struct[T, Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(fn.asInstanceOf[js.Any]).asInstanceOf[Struct[T, Null]]
   
-  inline def pick[S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectSchema */ js.Any */, K /* <: /* keyof S */ String */](
-    struct: Struct[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<S> */ js.Any, 
-      S
-    ],
-    keys: js.Array[K]
-  ): Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<Pick<S, K>> */ js.Any, 
-    Pick[S, K]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(struct.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Struct[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectType<Pick<S, K>> */ js.Any, 
-    Pick[S, K]
-  ]]
+  inline def omit[S /* <: ObjectSchema */, K /* <: /* keyof S */ String */](struct: Struct[ObjectType[S], S], keys: js.Array[K]): Struct[ObjectType[Omit[S, K]], Omit[S, K]] = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(struct.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Struct[ObjectType[Omit[S, K]], Omit[S, K]]]
   
-  inline def struct[T](
-    name: String,
-    validator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Validator<T, null> */ js.Any
-  ): Struct[T, Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(name.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Struct[T, Null]]
+  inline def partial[S /* <: ObjectSchema */](struct: S): Struct[ObjectType[PartialObjectSchema[S]], PartialObjectSchema[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(struct.asInstanceOf[js.Any]).asInstanceOf[Struct[ObjectType[PartialObjectSchema[S]], PartialObjectSchema[S]]]
+  inline def partial[S /* <: ObjectSchema */](struct: Struct[ObjectType[S], S]): Struct[ObjectType[PartialObjectSchema[S]], PartialObjectSchema[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(struct.asInstanceOf[js.Any]).asInstanceOf[Struct[ObjectType[PartialObjectSchema[S]], PartialObjectSchema[S]]]
+  
+  inline def pick[S /* <: ObjectSchema */, K /* <: /* keyof S */ String */](struct: Struct[ObjectType[S], S], keys: js.Array[K]): Struct[ObjectType[Pick[S, K]], Pick[S, K]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(struct.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Struct[ObjectType[Pick[S, K]], Pick[S, K]]]
+  
+  inline def struct[T](name: String, validator: Validator): Struct[T, Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(name.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Struct[T, Null]]
 }

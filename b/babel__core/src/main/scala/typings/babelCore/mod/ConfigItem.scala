@@ -32,11 +32,11 @@ trait ConfigItem extends StObject {
   /**
     * The resolved value of the plugin.
     */
-  var value: js.Object | (js.Function1[/* repeated */ js.Any, js.Any])
+  var value: js.Object | (js.Function1[/* repeated */ Any, Any])
 }
 object ConfigItem {
   
-  inline def apply(dirname: String, value: js.Object | (js.Function1[/* repeated */ js.Any, js.Any])): ConfigItem = {
+  inline def apply(dirname: String, value: js.Object | (js.Function1[/* repeated */ Any, Any])): ConfigItem = {
     val __obj = js.Dynamic.literal(dirname = dirname.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigItem]
   }
@@ -59,8 +59,8 @@ object ConfigItem {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setValue(value: js.Object | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Object | (js.Function1[/* repeated */ Any, Any])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+    inline def setValueFunction1(value: /* repeated */ Any => Any): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
   }
 }

@@ -10,12 +10,15 @@ import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IActionProps
 import typings.blueprintjsCore.propsMod.IElementRefProps
 import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsCore.refsMod.IRefObject
-import typings.blueprintjsIcons.iconNameMod.IconName
+import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
+import typings.react.mod.AnchorHTMLAttributes
+import typings.react.mod.ButtonHTMLAttributes
 import typings.react.mod.FocusEvent
-import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.ReactNode
+import typings.std.Element
+import typings.std.HTMLAnchorElement
+import typings.std.HTMLButtonElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,22 +28,29 @@ object abstractButtonMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/button/abstractButton", "AbstractButton")
   @js.native
-  abstract class AbstractButton[H /* <: HTMLAttributes[HTMLElement] */] protected ()
-    extends AbstractPureComponent2[IButtonProps & H, IButtonState, js.Object] {
-    def this(props: IButtonProps & H) = this()
-    def this(props: IButtonProps & H, context: js.Any) = this()
+  abstract class AbstractButton[E /* <: HTMLButtonElement | HTMLAnchorElement */] protected ()
+    extends AbstractPureComponent2[
+          ButtonProps[E] & (AnchorHTMLAttributes[HTMLAnchorElement] | ButtonHTMLAttributes[HTMLButtonElement]), 
+          IButtonState, 
+          js.Object
+        ] {
+    def this(props: ButtonProps[E] & (AnchorHTMLAttributes[HTMLAnchorElement] | ButtonHTMLAttributes[HTMLButtonElement])) = this()
+    def this(
+      props: ButtonProps[E] & (AnchorHTMLAttributes[HTMLAnchorElement] | ButtonHTMLAttributes[HTMLButtonElement]),
+      context: Any
+    ) = this()
     
-    /* protected */ var buttonRef: HTMLElement | IRefObject[HTMLElement] | Null = js.native
+    /* protected */ var buttonRef: HTMLElement | Null = js.native
     
-    /* private */ var currentKeyDown: js.Any = js.native
+    /* private */ var currentKeyDown: Any = js.native
     
-    /* protected */ def getCommonButtonProps(): ClassName[H] = js.native
+    /* protected */ def getCommonButtonProps(): ClassName[E] = js.native
     
-    /* protected */ def handleBlur(e: FocusEvent[js.Any]): Unit = js.native
+    /* protected */ def handleBlur(e: FocusEvent[Any, Element]): Unit = js.native
     
-    /* protected */ def handleKeyDown(e: KeyboardEvent[js.Any]): Unit = js.native
+    /* protected */ def handleKeyDown(e: KeyboardEvent[Any]): Unit = js.native
     
-    /* protected */ def handleKeyUp(e: KeyboardEvent[js.Any]): Unit = js.native
+    /* protected */ def handleKeyUp(e: KeyboardEvent[Any]): Unit = js.native
     
     /* protected */ def renderChildren(): ReactNode = js.native
     
@@ -48,14 +58,21 @@ object abstractButtonMod {
     var state_AbstractButton: IsActive = js.native
   }
   
-  trait IButtonProps
+  type AnchorButtonProps = IAnchorButtonProps
+  
+  type ButtonProps[E /* <: HTMLButtonElement | HTMLAnchorElement */] = IButtonProps[E]
+  
+  type IAnchorButtonProps = ButtonProps[HTMLAnchorElement]
+  
+  trait IButtonProps[E /* <: HTMLButtonElement | HTMLAnchorElement */]
     extends StObject
        with IActionProps
-       with IElementRefProps[js.Any] {
+       with IElementRefProps[E] {
     
     /**
       * If set to `true`, the button will display in an active state.
       * This is equivalent to setting `className={Classes.ACTIVE}`.
+      *
       * @default false
       */
     var active: js.UndefOr[Boolean] = js.undefined
@@ -65,9 +82,13 @@ object abstractButtonMod {
       * within the button. Passing `"left"` or `"right"` will align the button
       * text to that side and push `icon` and `rightIcon` to either edge. Passing
       * `"center"` will center the text and icons together.
+      *
       * @default Alignment.CENTER
       */
     var alignText: js.UndefOr[Alignment] = js.undefined
+    
+    /** Button contents. */
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Whether this button should expand to fill its container. */
     var fill: js.UndefOr[Boolean] = js.undefined
@@ -76,8 +97,10 @@ object abstractButtonMod {
     var large: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * If set to `true`, the button will display a centered loading spinner instead of its contents.
-      * The width of the button is not affected by the value of this prop.
+      * If set to `true`, the button will display a centered loading spinner instead of its contents
+      * and the button will be disabled (_even if_ `disabled={false}`). The width of the button is
+      * not affected by the value of this prop.
+      *
       * @default false
       */
     var loading: js.UndefOr[Boolean] = js.undefined
@@ -89,7 +112,7 @@ object abstractButtonMod {
     var outlined: js.UndefOr[Boolean] = js.undefined
     
     /** Name of a Blueprint UI icon (or an icon element) to render after the text. */
-    var rightIcon: js.UndefOr[IconName | MaybeElement] = js.undefined
+    var rightIcon: js.UndefOr[BlueprintIcons16Id | MaybeElement] = js.undefined
     
     /** Whether this button should use small styles. */
     var small: js.UndefOr[Boolean] = js.undefined
@@ -97,18 +120,19 @@ object abstractButtonMod {
     /**
       * HTML `type` attribute of button. Accepted values are `"button"`, `"submit"`, and `"reset"`.
       * Note that this prop has no effect on `AnchorButton`; it only affects `Button`.
+      *
       * @default "button"
       */
     var `type`: js.UndefOr[submit | reset | button] = js.undefined
   }
   object IButtonProps {
     
-    inline def apply(): IButtonProps = {
+    inline def apply[E /* <: HTMLButtonElement | HTMLAnchorElement */](): IButtonProps[E] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IButtonProps]
+      __obj.asInstanceOf[IButtonProps[E]]
     }
     
-    extension [Self <: IButtonProps](x: Self) {
+    extension [Self <: IButtonProps[?], E /* <: HTMLButtonElement | HTMLAnchorElement */](x: Self & IButtonProps[E]) {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -117,6 +141,10 @@ object abstractButtonMod {
       inline def setAlignText(value: Alignment): Self = StObject.set(x, "alignText", value.asInstanceOf[js.Any])
       
       inline def setAlignTextUndefined: Self = StObject.set(x, "alignText", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -138,7 +166,7 @@ object abstractButtonMod {
       
       inline def setOutlinedUndefined: Self = StObject.set(x, "outlined", js.undefined)
       
-      inline def setRightIcon(value: IconName | MaybeElement): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
+      inline def setRightIcon(value: BlueprintIcons16Id | MaybeElement): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
       
       inline def setRightIconNull: Self = StObject.set(x, "rightIcon", null)
       

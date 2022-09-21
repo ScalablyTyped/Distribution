@@ -22,6 +22,6 @@ object RegionGeoTargetArea {
     
     inline def setGeotargetCriteriaIdsUndefined: Self = StObject.set(x, "geotargetCriteriaIds", js.undefined)
     
-    inline def setGeotargetCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "geotargetCriteriaIds", js.Array(value :_*))
+    inline def setGeotargetCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "geotargetCriteriaIds", js.Array(value*))
   }
 }

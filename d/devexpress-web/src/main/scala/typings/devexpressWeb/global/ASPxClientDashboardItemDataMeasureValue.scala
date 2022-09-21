@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardItemDataMeasureValue")
 @js.native
-class ASPxClientDashboardItemDataMeasureValue ()
+open class ASPxClientDashboardItemDataMeasureValue ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardItemDataMeasureValue {
   
@@ -23,5 +23,5 @@ class ASPxClientDashboardItemDataMeasureValue ()
     * Gets the measure value.
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
 }

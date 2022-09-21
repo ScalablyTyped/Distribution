@@ -29,7 +29,7 @@ object DescribeConfigurationAggregatorSourcesStatusResponse {
     
     inline def setAggregatedSourceStatusListUndefined: Self = StObject.set(x, "AggregatedSourceStatusList", js.undefined)
     
-    inline def setAggregatedSourceStatusListVarargs(value: AggregatedSourceStatus*): Self = StObject.set(x, "AggregatedSourceStatusList", js.Array(value :_*))
+    inline def setAggregatedSourceStatusListVarargs(value: AggregatedSourceStatus*): Self = StObject.set(x, "AggregatedSourceStatusList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

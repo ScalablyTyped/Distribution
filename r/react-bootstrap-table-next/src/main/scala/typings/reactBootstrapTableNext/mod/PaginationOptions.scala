@@ -162,7 +162,7 @@ object PaginationOptions {
     
     inline def setSizePerPageListUndefined: Self = StObject.set(x, "sizePerPageList", js.undefined)
     
-    inline def setSizePerPageListVarargs(value: (Double | Text)*): Self = StObject.set(x, "sizePerPageList", js.Array(value :_*))
+    inline def setSizePerPageListVarargs(value: (Double | Text)*): Self = StObject.set(x, "sizePerPageList", js.Array(value*))
     
     inline def setSizePerPageOptionRenderer(value: /* options */ SizePerPageOptionRendererOptions => Element): Self = StObject.set(x, "sizePerPageOptionRenderer", js.Any.fromFunction1(value))
     

@@ -12,7 +12,7 @@ trait RestoreSecretResponse extends StObject {
   var ARN: js.UndefOr[SecretARNType] = js.undefined
   
   /**
-    * The friendly name of the secret that was restored.
+    * The name of the secret that was restored.
     */
   var Name: js.UndefOr[SecretNameType] = js.undefined
 }

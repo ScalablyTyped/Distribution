@@ -11,9 +11,9 @@ Single component release of transition
 | Full name          | semantic-ui-transition |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 93297 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 20709.333333333332 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)

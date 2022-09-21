@@ -11,7 +11,7 @@ object cssMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def css(args: ICssInput*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def css(args: ICssInput*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
   type ICssInput = js.UndefOr[String | ISerializableObject | IDictionary | Null | Boolean]
   

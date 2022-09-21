@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mapboxGl.mod.CirclePaint
   - typings.mapboxGl.mod.HeatmapPaint
   - typings.mapboxGl.mod.HillshadePaint
+  - typings.mapboxGl.mod.SkyPaint
 */
 trait AnyPaint extends StObject
 object AnyPaint {
@@ -56,6 +57,11 @@ object AnyPaint {
   inline def RasterPaint(): typings.mapboxGl.mod.RasterPaint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.mapboxGl.mod.RasterPaint]
+  }
+  
+  inline def SkyPaint(): typings.mapboxGl.mod.SkyPaint = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[typings.mapboxGl.mod.SkyPaint]
   }
   
   inline def SymbolPaint(): typings.mapboxGl.mod.SymbolPaint = {

@@ -1,5 +1,6 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.domainJoinedDevice
   - typings.microsoftGraph.microsoftGraphStrings.approvedApplication
   - typings.microsoftGraph.microsoftGraphStrings.compliantApplication
-  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typings.microsoftGraph.microsoftGraphStrings.passwordChange
+  - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
 trait ConditionalAccessGrantControl extends StObject
 object ConditionalAccessGrantControl {
@@ -28,5 +30,7 @@ object ConditionalAccessGrantControl {
   
   inline def mfa: typings.microsoftGraph.microsoftGraphStrings.mfa = "mfa".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mfa]
   
-  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def passwordChange: typings.microsoftGraph.microsoftGraphStrings.passwordChange = "passwordChange".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.passwordChange]
+  
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
 }

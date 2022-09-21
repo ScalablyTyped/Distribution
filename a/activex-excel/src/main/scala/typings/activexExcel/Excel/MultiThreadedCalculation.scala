@@ -15,7 +15,7 @@ trait MultiThreadedCalculation extends StObject {
   /* private */ @JSName("Excel.MultiThreadedCalculation_typekey")
   var ExcelDotMultiThreadedCalculation_typekey: MultiThreadedCalculation
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ThreadCount: Double
   
@@ -28,7 +28,7 @@ object MultiThreadedCalculation {
     Creator: XlCreator,
     Enabled: Boolean,
     ExcelDotMultiThreadedCalculation_typekey: MultiThreadedCalculation,
-    Parent: js.Any,
+    Parent: Any,
     ThreadCount: Double,
     ThreadMode: XlThreadMode
   ): MultiThreadedCalculation = {
@@ -47,7 +47,7 @@ object MultiThreadedCalculation {
     
     inline def setExcelDotMultiThreadedCalculation_typekey(value: MultiThreadedCalculation): Self = StObject.set(x, "Excel.MultiThreadedCalculation_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setThreadCount(value: Double): Self = StObject.set(x, "ThreadCount", value.asInstanceOf[js.Any])
     

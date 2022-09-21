@@ -17,9 +17,19 @@ trait ScalingPolicy extends StObject {
   var EvaluationPeriods: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
-    * A unique identifier for a fleet that is associated with this scaling policy.
+    * The Amazon Resource Name (ARN) that is assigned to a GameLift fleet resource and uniquely identifies it. ARNs are unique across all Regions. Format is arn:aws:gamelift:&lt;region&gt;::fleet/fleet-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912.
+    */
+  var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.undefined
+  
+  /**
+    * A unique identifier for the fleet that is associated with this scaling policy.
     */
   var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
+  
+  /**
+    *  The fleet location. 
+    */
+  var Location: js.UndefOr[LocationStringModel] = js.undefined
   
   /**
     * Name of the Amazon GameLift-defined metric that is used to trigger a scaling adjustment. For detailed descriptions of fleet metrics, see Monitor Amazon GameLift with Amazon CloudWatch.     ActivatingGameSessions -- Game sessions in the process of being created.    ActiveGameSessions -- Game sessions that are currently running.    ActiveInstances -- Fleet instances that are currently running at least one game session.    AvailableGameSessions -- Additional game sessions that fleet could host simultaneously, given current capacity.    AvailablePlayerSessions -- Empty player slots in currently active game sessions. This includes game sessions that are not currently accepting players. Reserved player slots are not included.    CurrentPlayerSessions -- Player slots in active game sessions that are being used by a player or are reserved for a player.     IdleInstances -- Active instances that are currently hosting zero game sessions.     PercentAvailableGameSessions -- Unused percentage of the total number of game sessions that a fleet could host simultaneously, given current capacity. Use this metric for a target-based scaling policy.    PercentIdleInstances -- Percentage of the total number of active instances that are hosting zero game sessions.    QueueDepth -- Pending game session placement requests, in any queue, where the current fleet is the top-priority destination.    WaitTime -- Current wait time for pending game session placement requests, in any queue, where the current fleet is the top-priority destination.   
@@ -27,7 +37,7 @@ trait ScalingPolicy extends StObject {
   var MetricName: js.UndefOr[typings.awsSdk.gameliftMod.MetricName] = js.undefined
   
   /**
-    * A descriptive label that is associated with a scaling policy. Policy names do not need to be unique.
+    * A descriptive label that is associated with a fleet's scaling policy. Policy names do not need to be unique.
     */
   var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
@@ -52,7 +62,7 @@ trait ScalingPolicy extends StObject {
   var Status: js.UndefOr[ScalingStatusType] = js.undefined
   
   /**
-    * The settings for a target-based scaling policy.
+    * An object that contains settings for a target-based scaling policy.
     */
   var TargetConfiguration: js.UndefOr[typings.awsSdk.gameliftMod.TargetConfiguration] = js.undefined
   
@@ -60,6 +70,11 @@ trait ScalingPolicy extends StObject {
     * Metric value used to trigger a scaling event.
     */
   var Threshold: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The current status of the fleet's scaling policies in a requested fleet location. The status PENDING_UPDATE indicates that an update was requested for the fleet but has not yet been completed for the location.
+    */
+  var UpdateStatus: js.UndefOr[LocationUpdateStatus] = js.undefined
 }
 object ScalingPolicy {
   
@@ -78,9 +93,17 @@ object ScalingPolicy {
     
     inline def setEvaluationPeriodsUndefined: Self = StObject.set(x, "EvaluationPeriods", js.undefined)
     
+    inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
+    
+    inline def setFleetArnUndefined: Self = StObject.set(x, "FleetArn", js.undefined)
+    
     inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
     inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    
+    inline def setLocation(value: LocationStringModel): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
@@ -113,5 +136,9 @@ object ScalingPolicy {
     inline def setThreshold(value: Double): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
     
     inline def setThresholdUndefined: Self = StObject.set(x, "Threshold", js.undefined)
+    
+    inline def setUpdateStatus(value: LocationUpdateStatus): Self = StObject.set(x, "UpdateStatus", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateStatusUndefined: Self = StObject.set(x, "UpdateStatus", js.undefined)
   }
 }

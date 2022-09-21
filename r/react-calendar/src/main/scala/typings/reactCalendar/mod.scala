@@ -1,10 +1,18 @@
 package typings.reactCalendar
 
-import typings.reactCalendar.anon.CalendarTilePropertiesact
+import typings.react.mod.ChangeEvent
+import typings.react.mod.MouseEvent
+import typings.react.mod.MutableRefObject
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
+import typings.react.mod.RefObject
+import typings.react.mod.global.JSX.Element
+import typings.reactCalendar.anon.Date
 import typings.reactCalendar.reactCalendarStrings.end
 import typings.reactCalendar.reactCalendarStrings.range
 import typings.reactCalendar.reactCalendarStrings.start
-import typings.std.Date
+import typings.std.HTMLButtonElement
+import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,19 +23,23 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(props: CalendarProps): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(props: CalendarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def CenturyView(props: DetailViewProps): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CenturyView")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def Calendar(props: CalendarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Calendar")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def DecadeView(props: DetailViewProps): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DecadeView")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def CenturyView(props: DetailViewProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CenturyView")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def MonthView(props: DetailViewProps): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("MonthView")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def DecadeView(props: DetailViewProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DecadeView")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def YearView(props: DetailViewProps): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("YearView")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def MonthView(props: DetailViewProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MonthView")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def Navigation(props: NavigationProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Navigation")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def YearView(props: DetailViewProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("YearView")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait CalendarProps extends StObject {
     
-    var activeStartDate: js.UndefOr[Date] = js.undefined
+    var activeStartDate: js.UndefOr[js.Date] = js.undefined
     
     var allowPartialRange: js.UndefOr[Boolean] = js.undefined
     
@@ -35,11 +47,15 @@ object mod {
     
     var className: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var defaultActiveStartDate: js.UndefOr[Date] = js.undefined
+    var closeCalendar: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[Date | js.Array[Date]] = js.undefined
+    var defaultActiveStartDate: js.UndefOr[js.Date] = js.undefined
+    
+    var defaultValue: js.UndefOr[js.Date | js.Array[js.Date]] = js.undefined
     
     var defaultView: js.UndefOr[Detail] = js.undefined
+    
+    var formatDay: js.UndefOr[FormatterCallback] = js.undefined
     
     var formatLongDate: js.UndefOr[FormatterCallback] = js.undefined
     
@@ -51,40 +67,35 @@ object mod {
     
     var formatYear: js.UndefOr[FormatterCallback] = js.undefined
     
+    var inputRef: js.UndefOr[
+        (js.Function1[/* ref */ HTMLInputElement | Null, Unit]) | RefObject[HTMLInputElement] | (MutableRefObject[HTMLInputElement | Null])
+      ] = js.undefined
+    
     var locale: js.UndefOr[String] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
     var maxDetail: js.UndefOr[Detail] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
     var minDetail: js.UndefOr[Detail] = js.undefined
     
     var navigationAriaLabel: js.UndefOr[String] = js.undefined
     
-    var navigationLabel: js.UndefOr[
-        js.Function1[
-          /* props */ typings.reactCalendar.anon.Date, 
-          String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-        ]
-      ] = js.undefined
+    var navigationLabel: js.UndefOr[js.Function1[/* props */ Date, String | Element | Null]] = js.undefined
     
     var next2AriaLabel: js.UndefOr[String] = js.undefined
     
-    var next2Label: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-      ] = js.undefined
+    var next2Label: js.UndefOr[String | Element | Null] = js.undefined
     
     var nextAriaLabel: js.UndefOr[String] = js.undefined
     
-    var nextLabel: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-      ] = js.undefined
+    var nextLabel: js.UndefOr[String | Element | Null] = js.undefined
     
     var onActiveStartDateChange: js.UndefOr[ViewCallback] = js.undefined
     
-    var onChange: js.UndefOr[OnChangeDateCallback] = js.undefined
+    var onChange: js.UndefOr[OnChangeDateCallback | OnChangeDateRangeCallback] = js.undefined
     
     var onClickDay: js.UndefOr[DateCallback] = js.undefined
     
@@ -96,32 +107,20 @@ object mod {
     
     var onClickYear: js.UndefOr[DateCallback] = js.undefined
     
-    var onDrillDown: js.UndefOr[ViewCallback] = js.undefined
+    var onDrillDown: js.UndefOr[DrillCallback] = js.undefined
     
-    var onDrillUp: js.UndefOr[ViewCallback] = js.undefined
+    var onDrillUp: js.UndefOr[DrillCallback] = js.undefined
     
     var onViewChange: js.UndefOr[ViewCallback] = js.undefined
     
     var prev2AriaLabel: js.UndefOr[String] = js.undefined
     
-    var prev2Label: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-      ] = js.undefined
+    var prev2Label: js.UndefOr[String | Element | Null] = js.undefined
     
     var prevAriaLabel: js.UndefOr[String] = js.undefined
     
-    var prevLabel: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-      ] = js.undefined
+    var prevLabel: js.UndefOr[String | Element | Null] = js.undefined
     
-    var renderChildren: js.UndefOr[
-        js.Function1[
-          /* props */ CalendarTileProperties, 
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-        ]
-      ] = js.undefined
-    
-    // For backwards compatibility
     var returnValue: js.UndefOr[start | end | range] = js.undefined
     
     var selectRange: js.UndefOr[Boolean] = js.undefined
@@ -141,15 +140,12 @@ object mod {
       ] = js.undefined
     
     var tileContent: js.UndefOr[
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | (js.Function1[
-          /* props */ CalendarTileProperties, 
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-        ])
+        String | Element | (js.Function1[/* props */ CalendarTileProperties, Element | Null])
       ] = js.undefined
     
-    var tileDisabled: js.UndefOr[js.Function1[/* props */ CalendarTilePropertiesact, Boolean]] = js.undefined
+    var tileDisabled: js.UndefOr[js.Function1[/* props */ CalendarTileProperties, Boolean]] = js.undefined
     
-    var value: js.UndefOr[Date | js.Array[Date] | Null] = js.undefined
+    var value: js.UndefOr[js.Date | Null | (js.Tuple2[js.Date | Null, js.Date | Null])] = js.undefined
     
     var view: js.UndefOr[Detail] = js.undefined
   }
@@ -162,7 +158,7 @@ object mod {
     
     extension [Self <: CalendarProps](x: Self) {
       
-      inline def setActiveStartDate(value: Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
+      inline def setActiveStartDate(value: js.Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
       
       inline def setActiveStartDateUndefined: Self = StObject.set(x, "activeStartDate", js.undefined)
       
@@ -178,47 +174,63 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value :_*))
+      inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value*))
       
-      inline def setDefaultActiveStartDate(value: Date): Self = StObject.set(x, "defaultActiveStartDate", value.asInstanceOf[js.Any])
+      inline def setCloseCalendar(value: Boolean): Self = StObject.set(x, "closeCalendar", value.asInstanceOf[js.Any])
+      
+      inline def setCloseCalendarUndefined: Self = StObject.set(x, "closeCalendar", js.undefined)
+      
+      inline def setDefaultActiveStartDate(value: js.Date): Self = StObject.set(x, "defaultActiveStartDate", value.asInstanceOf[js.Any])
       
       inline def setDefaultActiveStartDateUndefined: Self = StObject.set(x, "defaultActiveStartDate", js.undefined)
       
-      inline def setDefaultValue(value: Date | js.Array[Date]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Date | js.Array[js.Date]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: Date*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: js.Date*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDefaultView(value: Detail): Self = StObject.set(x, "defaultView", value.asInstanceOf[js.Any])
       
       inline def setDefaultViewUndefined: Self = StObject.set(x, "defaultView", js.undefined)
       
-      inline def setFormatLongDate(value: (/* locale */ String, /* date */ Date) => String): Self = StObject.set(x, "formatLongDate", js.Any.fromFunction2(value))
+      inline def setFormatDay(value: (/* locale */ String, /* date */ js.Date) => String): Self = StObject.set(x, "formatDay", js.Any.fromFunction2(value))
+      
+      inline def setFormatDayUndefined: Self = StObject.set(x, "formatDay", js.undefined)
+      
+      inline def setFormatLongDate(value: (/* locale */ String, /* date */ js.Date) => String): Self = StObject.set(x, "formatLongDate", js.Any.fromFunction2(value))
       
       inline def setFormatLongDateUndefined: Self = StObject.set(x, "formatLongDate", js.undefined)
       
-      inline def setFormatMonth(value: (/* locale */ String, /* date */ Date) => String): Self = StObject.set(x, "formatMonth", js.Any.fromFunction2(value))
+      inline def setFormatMonth(value: (/* locale */ String, /* date */ js.Date) => String): Self = StObject.set(x, "formatMonth", js.Any.fromFunction2(value))
       
       inline def setFormatMonthUndefined: Self = StObject.set(x, "formatMonth", js.undefined)
       
-      inline def setFormatMonthYear(value: (/* locale */ String, /* date */ Date) => String): Self = StObject.set(x, "formatMonthYear", js.Any.fromFunction2(value))
+      inline def setFormatMonthYear(value: (/* locale */ String, /* date */ js.Date) => String): Self = StObject.set(x, "formatMonthYear", js.Any.fromFunction2(value))
       
       inline def setFormatMonthYearUndefined: Self = StObject.set(x, "formatMonthYear", js.undefined)
       
-      inline def setFormatShortWeekday(value: (/* locale */ String, /* date */ Date) => String): Self = StObject.set(x, "formatShortWeekday", js.Any.fromFunction2(value))
+      inline def setFormatShortWeekday(value: (/* locale */ String, /* date */ js.Date) => String): Self = StObject.set(x, "formatShortWeekday", js.Any.fromFunction2(value))
       
       inline def setFormatShortWeekdayUndefined: Self = StObject.set(x, "formatShortWeekday", js.undefined)
       
-      inline def setFormatYear(value: (/* locale */ String, /* date */ Date) => String): Self = StObject.set(x, "formatYear", js.Any.fromFunction2(value))
+      inline def setFormatYear(value: (/* locale */ String, /* date */ js.Date) => String): Self = StObject.set(x, "formatYear", js.Any.fromFunction2(value))
       
       inline def setFormatYearUndefined: Self = StObject.set(x, "formatYear", js.undefined)
+      
+      inline def setInputRef(
+        value: (js.Function1[/* ref */ HTMLInputElement | Null, Unit]) | RefObject[HTMLInputElement] | (MutableRefObject[HTMLInputElement | Null])
+      ): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
+      
+      inline def setInputRefFunction1(value: /* ref */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      
+      inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
@@ -226,7 +238,7 @@ object mod {
       
       inline def setMaxDetailUndefined: Self = StObject.set(x, "maxDetail", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -238,9 +250,7 @@ object mod {
       
       inline def setNavigationAriaLabelUndefined: Self = StObject.set(x, "navigationAriaLabel", js.undefined)
       
-      inline def setNavigationLabel(
-        value: /* props */ typings.reactCalendar.anon.Date => String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-      ): Self = StObject.set(x, "navigationLabel", js.Any.fromFunction1(value))
+      inline def setNavigationLabel(value: /* props */ Date => String | Element | Null): Self = StObject.set(x, "navigationLabel", js.Any.fromFunction1(value))
       
       inline def setNavigationLabelUndefined: Self = StObject.set(x, "navigationLabel", js.undefined)
       
@@ -248,9 +258,7 @@ object mod {
       
       inline def setNext2AriaLabelUndefined: Self = StObject.set(x, "next2AriaLabel", js.undefined)
       
-      inline def setNext2Label(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-      ): Self = StObject.set(x, "next2Label", value.asInstanceOf[js.Any])
+      inline def setNext2Label(value: String | Element): Self = StObject.set(x, "next2Label", value.asInstanceOf[js.Any])
       
       inline def setNext2LabelNull: Self = StObject.set(x, "next2Label", null)
       
@@ -260,9 +268,9 @@ object mod {
       
       inline def setNextAriaLabelUndefined: Self = StObject.set(x, "nextAriaLabel", js.undefined)
       
-      inline def setNextLabel(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-      ): Self = StObject.set(x, "nextLabel", value.asInstanceOf[js.Any])
+      inline def setNextLabel(value: String | Element): Self = StObject.set(x, "nextLabel", value.asInstanceOf[js.Any])
+      
+      inline def setNextLabelNull: Self = StObject.set(x, "nextLabel", null)
       
       inline def setNextLabelUndefined: Self = StObject.set(x, "nextLabel", js.undefined)
       
@@ -270,35 +278,39 @@ object mod {
       
       inline def setOnActiveStartDateChangeUndefined: Self = StObject.set(x, "onActiveStartDateChange", js.undefined)
       
-      inline def setOnChange(value: /* date */ Date | js.Array[Date] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(
+        value: (js.Array[js.Date] | (/* value */ js.Date) | (js.Tuple2[js.Date, js.Date]), /* event */ ChangeEvent[HTMLInputElement]) => Unit
+      ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnClickDay(value: /* date */ Date => Unit): Self = StObject.set(x, "onClickDay", js.Any.fromFunction1(value))
+      inline def setOnClickDay(value: (/* value */ js.Date, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClickDay", js.Any.fromFunction2(value))
       
       inline def setOnClickDayUndefined: Self = StObject.set(x, "onClickDay", js.undefined)
       
-      inline def setOnClickDecade(value: /* date */ Date => Unit): Self = StObject.set(x, "onClickDecade", js.Any.fromFunction1(value))
+      inline def setOnClickDecade(value: (/* value */ js.Date, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClickDecade", js.Any.fromFunction2(value))
       
       inline def setOnClickDecadeUndefined: Self = StObject.set(x, "onClickDecade", js.undefined)
       
-      inline def setOnClickMonth(value: /* date */ Date => Unit): Self = StObject.set(x, "onClickMonth", js.Any.fromFunction1(value))
+      inline def setOnClickMonth(value: (/* value */ js.Date, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClickMonth", js.Any.fromFunction2(value))
       
       inline def setOnClickMonthUndefined: Self = StObject.set(x, "onClickMonth", js.undefined)
       
-      inline def setOnClickWeekNumber(value: (/* weekNumber */ Double, /* date */ Date) => Unit): Self = StObject.set(x, "onClickWeekNumber", js.Any.fromFunction2(value))
+      inline def setOnClickWeekNumber(
+        value: (/* weekNumber */ Double, /* date */ js.Date, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent]) => Unit
+      ): Self = StObject.set(x, "onClickWeekNumber", js.Any.fromFunction3(value))
       
       inline def setOnClickWeekNumberUndefined: Self = StObject.set(x, "onClickWeekNumber", js.undefined)
       
-      inline def setOnClickYear(value: /* date */ Date => Unit): Self = StObject.set(x, "onClickYear", js.Any.fromFunction1(value))
+      inline def setOnClickYear(value: (/* value */ js.Date, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClickYear", js.Any.fromFunction2(value))
       
       inline def setOnClickYearUndefined: Self = StObject.set(x, "onClickYear", js.undefined)
       
-      inline def setOnDrillDown(value: /* props */ ViewCallbackProperties => Unit): Self = StObject.set(x, "onDrillDown", js.Any.fromFunction1(value))
+      inline def setOnDrillDown(value: /* props */ DrillCallbackProperties => Unit): Self = StObject.set(x, "onDrillDown", js.Any.fromFunction1(value))
       
       inline def setOnDrillDownUndefined: Self = StObject.set(x, "onDrillDown", js.undefined)
       
-      inline def setOnDrillUp(value: /* props */ ViewCallbackProperties => Unit): Self = StObject.set(x, "onDrillUp", js.Any.fromFunction1(value))
+      inline def setOnDrillUp(value: /* props */ DrillCallbackProperties => Unit): Self = StObject.set(x, "onDrillUp", js.Any.fromFunction1(value))
       
       inline def setOnDrillUpUndefined: Self = StObject.set(x, "onDrillUp", js.undefined)
       
@@ -310,9 +322,7 @@ object mod {
       
       inline def setPrev2AriaLabelUndefined: Self = StObject.set(x, "prev2AriaLabel", js.undefined)
       
-      inline def setPrev2Label(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-      ): Self = StObject.set(x, "prev2Label", value.asInstanceOf[js.Any])
+      inline def setPrev2Label(value: String | Element): Self = StObject.set(x, "prev2Label", value.asInstanceOf[js.Any])
       
       inline def setPrev2LabelNull: Self = StObject.set(x, "prev2Label", null)
       
@@ -322,17 +332,11 @@ object mod {
       
       inline def setPrevAriaLabelUndefined: Self = StObject.set(x, "prevAriaLabel", js.undefined)
       
-      inline def setPrevLabel(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
-      ): Self = StObject.set(x, "prevLabel", value.asInstanceOf[js.Any])
+      inline def setPrevLabel(value: String | Element): Self = StObject.set(x, "prevLabel", value.asInstanceOf[js.Any])
+      
+      inline def setPrevLabelNull: Self = StObject.set(x, "prevLabel", null)
       
       inline def setPrevLabelUndefined: Self = StObject.set(x, "prevLabel", js.undefined)
-      
-      inline def setRenderChildren(
-        value: /* props */ CalendarTileProperties => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-      ): Self = StObject.set(x, "renderChildren", js.Any.fromFunction1(value))
-      
-      inline def setRenderChildrenUndefined: Self = StObject.set(x, "renderChildren", js.undefined)
       
       inline def setReturnValue(value: start | end | range): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
       
@@ -370,32 +374,23 @@ object mod {
       
       inline def setTileClassNameUndefined: Self = StObject.set(x, "tileClassName", js.undefined)
       
-      inline def setTileClassNameVarargs(value: String*): Self = StObject.set(x, "tileClassName", js.Array(value :_*))
+      inline def setTileClassNameVarargs(value: String*): Self = StObject.set(x, "tileClassName", js.Array(value*))
       
-      inline def setTileContent(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | (js.Function1[
-              /* props */ CalendarTileProperties, 
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-            ])
-      ): Self = StObject.set(x, "tileContent", value.asInstanceOf[js.Any])
+      inline def setTileContent(value: String | Element | (js.Function1[/* props */ CalendarTileProperties, Element | Null])): Self = StObject.set(x, "tileContent", value.asInstanceOf[js.Any])
       
-      inline def setTileContentFunction1(
-        value: /* props */ CalendarTileProperties => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-      ): Self = StObject.set(x, "tileContent", js.Any.fromFunction1(value))
+      inline def setTileContentFunction1(value: /* props */ CalendarTileProperties => Element | Null): Self = StObject.set(x, "tileContent", js.Any.fromFunction1(value))
       
       inline def setTileContentUndefined: Self = StObject.set(x, "tileContent", js.undefined)
       
-      inline def setTileDisabled(value: /* props */ CalendarTilePropertiesact => Boolean): Self = StObject.set(x, "tileDisabled", js.Any.fromFunction1(value))
+      inline def setTileDisabled(value: /* props */ CalendarTileProperties => Boolean): Self = StObject.set(x, "tileDisabled", js.Any.fromFunction1(value))
       
       inline def setTileDisabledUndefined: Self = StObject.set(x, "tileDisabled", js.undefined)
       
-      inline def setValue(value: Date | js.Array[Date]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Date | (js.Tuple2[js.Date | Null, js.Date | Null])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueNull: Self = StObject.set(x, "value", null)
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-      
-      inline def setValueVarargs(value: Date*): Self = StObject.set(x, "value", js.Array(value :_*))
       
       inline def setView(value: Detail): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
@@ -405,24 +400,24 @@ object mod {
   
   trait CalendarTileProperties extends StObject {
     
-    var activeStartDate: Date
+    var activeStartDate: js.Date
     
-    var date: Date
+    var date: js.Date
     
     var view: Detail
   }
   object CalendarTileProperties {
     
-    inline def apply(activeStartDate: Date, date: Date, view: Detail): CalendarTileProperties = {
+    inline def apply(activeStartDate: js.Date, date: js.Date, view: Detail): CalendarTileProperties = {
       val __obj = js.Dynamic.literal(activeStartDate = activeStartDate.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
       __obj.asInstanceOf[CalendarTileProperties]
     }
     
     extension [Self <: CalendarTileProperties](x: Self) {
       
-      inline def setActiveStartDate(value: Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
+      inline def setActiveStartDate(value: js.Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setView(value: Detail): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
@@ -446,9 +441,18 @@ object mod {
     inline def US: typings.reactCalendar.reactCalendarStrings.US = "US".asInstanceOf[typings.reactCalendar.reactCalendarStrings.US]
   }
   
-  type ClickWeekNumberCallback = js.Function2[/* weekNumber */ Double, /* date */ Date, Unit]
+  type ClickWeekNumberCallback = js.Function3[
+    /* weekNumber */ Double, 
+    /* date */ js.Date, 
+    /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], 
+    Unit
+  ]
   
-  type DateCallback = js.Function1[/* date */ Date, Unit]
+  type DateCallback = js.Function2[
+    /* value */ js.Date, 
+    /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], 
+    Unit
+  ]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactCalendar.reactCalendarStrings.month
@@ -470,61 +474,51 @@ object mod {
   
   trait DetailViewProps extends StObject {
     
-    var activeStartDate: Date
+    var activeStartDate: js.Date
     
     var calendarType: js.UndefOr[CalendarType] = js.undefined
     
-    var hover: js.UndefOr[Date] = js.undefined
+    var hover: js.UndefOr[js.Date] = js.undefined
     
     var locale: js.UndefOr[String] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
     var onClick: js.UndefOr[DateCallback] = js.undefined
     
     var onMouseOver: js.UndefOr[DateCallback] = js.undefined
     
-    var renderChildren: js.UndefOr[
-        js.Function1[
-          /* props */ CalendarTileProperties, 
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-        ]
-      ] = js.undefined
+    var renderChildren: js.UndefOr[js.Function1[/* props */ CalendarTileProperties, Element | Null]] = js.undefined
     
     // For backwards compatibility
     var tileClassName: js.UndefOr[
         String | js.Array[String] | (js.Function1[/* props */ CalendarTileProperties, String | js.Array[String] | Null])
       ] = js.undefined
     
-    var tileContent: js.UndefOr[
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | (js.Function1[
-          /* props */ CalendarTileProperties, 
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-        ])
-      ] = js.undefined
+    var tileContent: js.UndefOr[Element | (js.Function1[/* props */ CalendarTileProperties, Element | Null])] = js.undefined
     
     var tileDisabled: js.UndefOr[js.Function1[/* props */ CalendarTileProperties, Boolean]] = js.undefined
     
-    var value: js.UndefOr[Date | js.Array[Date]] = js.undefined
+    var value: js.UndefOr[js.Date | js.Array[js.Date]] = js.undefined
   }
   object DetailViewProps {
     
-    inline def apply(activeStartDate: Date): DetailViewProps = {
+    inline def apply(activeStartDate: js.Date): DetailViewProps = {
       val __obj = js.Dynamic.literal(activeStartDate = activeStartDate.asInstanceOf[js.Any])
       __obj.asInstanceOf[DetailViewProps]
     }
     
     extension [Self <: DetailViewProps](x: Self) {
       
-      inline def setActiveStartDate(value: Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
+      inline def setActiveStartDate(value: js.Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
       
       inline def setCalendarType(value: CalendarType): Self = StObject.set(x, "calendarType", value.asInstanceOf[js.Any])
       
       inline def setCalendarTypeUndefined: Self = StObject.set(x, "calendarType", js.undefined)
       
-      inline def setHover(value: Date): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+      inline def setHover(value: js.Date): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
       
       inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
       
@@ -532,25 +526,23 @@ object mod {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      inline def setOnClick(value: /* date */ Date => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: (/* value */ js.Date, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnMouseOver(value: /* date */ Date => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
+      inline def setOnMouseOver(value: (/* value */ js.Date, /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction2(value))
       
       inline def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
       
-      inline def setRenderChildren(
-        value: /* props */ CalendarTileProperties => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-      ): Self = StObject.set(x, "renderChildren", js.Any.fromFunction1(value))
+      inline def setRenderChildren(value: /* props */ CalendarTileProperties => Element | Null): Self = StObject.set(x, "renderChildren", js.Any.fromFunction1(value))
       
       inline def setRenderChildrenUndefined: Self = StObject.set(x, "renderChildren", js.undefined)
       
@@ -562,18 +554,11 @@ object mod {
       
       inline def setTileClassNameUndefined: Self = StObject.set(x, "tileClassName", js.undefined)
       
-      inline def setTileClassNameVarargs(value: String*): Self = StObject.set(x, "tileClassName", js.Array(value :_*))
+      inline def setTileClassNameVarargs(value: String*): Self = StObject.set(x, "tileClassName", js.Array(value*))
       
-      inline def setTileContent(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | (js.Function1[
-              /* props */ CalendarTileProperties, 
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-            ])
-      ): Self = StObject.set(x, "tileContent", value.asInstanceOf[js.Any])
+      inline def setTileContent(value: Element | (js.Function1[/* props */ CalendarTileProperties, Element | Null])): Self = StObject.set(x, "tileContent", value.asInstanceOf[js.Any])
       
-      inline def setTileContentFunction1(
-        value: /* props */ CalendarTileProperties => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any) | Null
-      ): Self = StObject.set(x, "tileContent", js.Any.fromFunction1(value))
+      inline def setTileContentFunction1(value: /* props */ CalendarTileProperties => Element | Null): Self = StObject.set(x, "tileContent", js.Any.fromFunction1(value))
       
       inline def setTileContentUndefined: Self = StObject.set(x, "tileContent", js.undefined)
       
@@ -581,38 +566,265 @@ object mod {
       
       inline def setTileDisabledUndefined: Self = StObject.set(x, "tileDisabled", js.undefined)
       
-      inline def setValue(value: Date | js.Array[Date]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Date | js.Array[js.Date]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: Date*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: js.Date*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
-  type FormatterCallback = js.Function2[/* locale */ String, /* date */ Date, String]
+  type DrillCallback = js.Function1[/* props */ DrillCallbackProperties, Unit]
   
-  type OnChangeDateCallback = js.Function1[/* date */ Date | js.Array[Date], Unit]
+  trait DrillCallbackProperties extends StObject {
+    
+    var activeStartDate: js.Date
+    
+    var view: Detail
+  }
+  object DrillCallbackProperties {
+    
+    inline def apply(activeStartDate: js.Date, view: Detail): DrillCallbackProperties = {
+      val __obj = js.Dynamic.literal(activeStartDate = activeStartDate.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DrillCallbackProperties]
+    }
+    
+    extension [Self <: DrillCallbackProperties](x: Self) {
+      
+      inline def setActiveStartDate(value: js.Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
+      
+      inline def setView(value: Detail): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type FormatterCallback = js.Function2[/* locale */ String, /* date */ js.Date, String]
+  
+  trait NavigationLabelType extends StObject {
+    
+    var date: js.Date
+    
+    var label: String
+    
+    var locale: String
+    
+    var view: ViewType
+  }
+  object NavigationLabelType {
+    
+    inline def apply(date: js.Date, label: String, locale: String, view: ViewType): NavigationLabelType = {
+      val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NavigationLabelType]
+    }
+    
+    extension [Self <: NavigationLabelType](x: Self) {
+      
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      
+      inline def setView(value: ViewType): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait NavigationProps extends StObject {
+    
+    var activeStartDate: js.Date
+    
+    def drillUp(): Unit
+    
+    var formatMonthYear: js.UndefOr[js.Function2[/* locale */ String, /* date */ js.Date, Unit]] = js.undefined
+    
+    var formatYear: js.UndefOr[js.Function2[/* locale */ String, /* date */ js.Date, Unit]] = js.undefined
+    
+    var locale: js.UndefOr[String] = js.undefined
+    
+    var maxDate: js.UndefOr[js.Date] = js.undefined
+    
+    var minDate: js.UndefOr[js.Date] = js.undefined
+    
+    var navigationAriaLabel: js.UndefOr[ReactNode] = js.undefined
+    
+    var navigationAriaLive: js.UndefOr[ReactNode] = js.undefined
+    
+    var navigationLabel: js.UndefOr[js.Function1[/* props */ NavigationLabelType, String]] = js.undefined
+    
+    var next2AriaLabel: js.UndefOr[String] = js.undefined
+    
+    var next2Label: js.UndefOr[ReactNode] = js.undefined
+    
+    var nextAriaLabel: js.UndefOr[String] = js.undefined
+    
+    var nextLabel: js.UndefOr[ReactNode] = js.undefined
+    
+    var prev2AriaLabel: js.UndefOr[String] = js.undefined
+    
+    var prev2Label: js.UndefOr[ReactNode] = js.undefined
+    
+    var prevAriaLabel: js.UndefOr[ReactNode] = js.undefined
+    
+    var prevLabel: js.UndefOr[ReactNode] = js.undefined
+    
+    def setActiveStartDate(activeStartDate: js.Date): Unit
+    
+    var showDoubleView: js.UndefOr[Boolean] = js.undefined
+    
+    var view: ViewType
+    
+    var views: js.Array[ViewType]
+  }
+  object NavigationProps {
+    
+    inline def apply(
+      activeStartDate: js.Date,
+      drillUp: () => Unit,
+      setActiveStartDate: js.Date => Unit,
+      view: ViewType,
+      views: js.Array[ViewType]
+    ): NavigationProps = {
+      val __obj = js.Dynamic.literal(activeStartDate = activeStartDate.asInstanceOf[js.Any], drillUp = js.Any.fromFunction0(drillUp), setActiveStartDate = js.Any.fromFunction1(setActiveStartDate), view = view.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NavigationProps]
+    }
+    
+    extension [Self <: NavigationProps](x: Self) {
+      
+      inline def setActiveStartDate(value: js.Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
+      
+      inline def setDrillUp(value: () => Unit): Self = StObject.set(x, "drillUp", js.Any.fromFunction0(value))
+      
+      inline def setFormatMonthYear(value: (/* locale */ String, /* date */ js.Date) => Unit): Self = StObject.set(x, "formatMonthYear", js.Any.fromFunction2(value))
+      
+      inline def setFormatMonthYearUndefined: Self = StObject.set(x, "formatMonthYear", js.undefined)
+      
+      inline def setFormatYear(value: (/* locale */ String, /* date */ js.Date) => Unit): Self = StObject.set(x, "formatYear", js.Any.fromFunction2(value))
+      
+      inline def setFormatYearUndefined: Self = StObject.set(x, "formatYear", js.undefined)
+      
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      
+      inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
+      
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      
+      inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
+      
+      inline def setNavigationAriaLabel(value: ReactNode): Self = StObject.set(x, "navigationAriaLabel", value.asInstanceOf[js.Any])
+      
+      inline def setNavigationAriaLabelUndefined: Self = StObject.set(x, "navigationAriaLabel", js.undefined)
+      
+      inline def setNavigationAriaLive(value: ReactNode): Self = StObject.set(x, "navigationAriaLive", value.asInstanceOf[js.Any])
+      
+      inline def setNavigationAriaLiveUndefined: Self = StObject.set(x, "navigationAriaLive", js.undefined)
+      
+      inline def setNavigationLabel(value: /* props */ NavigationLabelType => String): Self = StObject.set(x, "navigationLabel", js.Any.fromFunction1(value))
+      
+      inline def setNavigationLabelUndefined: Self = StObject.set(x, "navigationLabel", js.undefined)
+      
+      inline def setNext2AriaLabel(value: String): Self = StObject.set(x, "next2AriaLabel", value.asInstanceOf[js.Any])
+      
+      inline def setNext2AriaLabelUndefined: Self = StObject.set(x, "next2AriaLabel", js.undefined)
+      
+      inline def setNext2Label(value: ReactNode): Self = StObject.set(x, "next2Label", value.asInstanceOf[js.Any])
+      
+      inline def setNext2LabelUndefined: Self = StObject.set(x, "next2Label", js.undefined)
+      
+      inline def setNextAriaLabel(value: String): Self = StObject.set(x, "nextAriaLabel", value.asInstanceOf[js.Any])
+      
+      inline def setNextAriaLabelUndefined: Self = StObject.set(x, "nextAriaLabel", js.undefined)
+      
+      inline def setNextLabel(value: ReactNode): Self = StObject.set(x, "nextLabel", value.asInstanceOf[js.Any])
+      
+      inline def setNextLabelUndefined: Self = StObject.set(x, "nextLabel", js.undefined)
+      
+      inline def setPrev2AriaLabel(value: String): Self = StObject.set(x, "prev2AriaLabel", value.asInstanceOf[js.Any])
+      
+      inline def setPrev2AriaLabelUndefined: Self = StObject.set(x, "prev2AriaLabel", js.undefined)
+      
+      inline def setPrev2Label(value: ReactNode): Self = StObject.set(x, "prev2Label", value.asInstanceOf[js.Any])
+      
+      inline def setPrev2LabelUndefined: Self = StObject.set(x, "prev2Label", js.undefined)
+      
+      inline def setPrevAriaLabel(value: ReactNode): Self = StObject.set(x, "prevAriaLabel", value.asInstanceOf[js.Any])
+      
+      inline def setPrevAriaLabelUndefined: Self = StObject.set(x, "prevAriaLabel", js.undefined)
+      
+      inline def setPrevLabel(value: ReactNode): Self = StObject.set(x, "prevLabel", value.asInstanceOf[js.Any])
+      
+      inline def setPrevLabelUndefined: Self = StObject.set(x, "prevLabel", js.undefined)
+      
+      inline def setSetActiveStartDate(value: js.Date => Unit): Self = StObject.set(x, "setActiveStartDate", js.Any.fromFunction1(value))
+      
+      inline def setShowDoubleView(value: Boolean): Self = StObject.set(x, "showDoubleView", value.asInstanceOf[js.Any])
+      
+      inline def setShowDoubleViewUndefined: Self = StObject.set(x, "showDoubleView", js.undefined)
+      
+      inline def setView(value: ViewType): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      
+      inline def setViews(value: js.Array[ViewType]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      
+      inline def setViewsVarargs(value: ViewType*): Self = StObject.set(x, "views", js.Array(value*))
+    }
+  }
+  
+  type OnChangeDateCallback = js.Function2[/* value */ js.Date, /* event */ ChangeEvent[HTMLInputElement], Unit]
+  
+  type OnChangeDateRangeCallback = js.Function2[
+    /* values */ js.Array[js.Date] | (js.Tuple2[js.Date, js.Date]), 
+    /* event */ ChangeEvent[HTMLInputElement], 
+    Unit
+  ]
   
   type ViewCallback = js.Function1[/* props */ ViewCallbackProperties, Unit]
   
   trait ViewCallbackProperties extends StObject {
     
-    var activeStartDate: Date
+    var action: String
+    
+    var activeStartDate: js.Date
+    
+    var value: js.Date
     
     var view: Detail
   }
   object ViewCallbackProperties {
     
-    inline def apply(activeStartDate: Date, view: Detail): ViewCallbackProperties = {
-      val __obj = js.Dynamic.literal(activeStartDate = activeStartDate.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+    inline def apply(action: String, activeStartDate: js.Date, value: js.Date, view: Detail): ViewCallbackProperties = {
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], activeStartDate = activeStartDate.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
       __obj.asInstanceOf[ViewCallbackProperties]
     }
     
     extension [Self <: ViewCallbackProperties](x: Self) {
       
-      inline def setActiveStartDate(value: Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActiveStartDate(value: js.Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setView(value: Detail): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactCalendar.reactCalendarStrings.century
+    - typings.reactCalendar.reactCalendarStrings.decade
+    - typings.reactCalendar.reactCalendarStrings.year
+    - typings.reactCalendar.reactCalendarStrings.month
+  */
+  trait ViewType extends StObject
+  object ViewType {
+    
+    inline def century: typings.reactCalendar.reactCalendarStrings.century = "century".asInstanceOf[typings.reactCalendar.reactCalendarStrings.century]
+    
+    inline def decade: typings.reactCalendar.reactCalendarStrings.decade = "decade".asInstanceOf[typings.reactCalendar.reactCalendarStrings.decade]
+    
+    inline def month: typings.reactCalendar.reactCalendarStrings.month = "month".asInstanceOf[typings.reactCalendar.reactCalendarStrings.month]
+    
+    inline def year: typings.reactCalendar.reactCalendarStrings.year = "year".asInstanceOf[typings.reactCalendar.reactCalendarStrings.year]
   }
 }

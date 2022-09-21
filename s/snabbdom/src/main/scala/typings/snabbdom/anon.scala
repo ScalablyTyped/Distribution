@@ -39,7 +39,45 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<snabbdom.snabbdom/build/package/modules/module.Module> */
+  trait Fragments extends StObject {
+    
+    var fragments: js.UndefOr[Boolean] = js.undefined
+  }
+  object Fragments {
+    
+    inline def apply(): Fragments = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Fragments]
+    }
+    
+    extension [Self <: Fragments](x: Self) {
+      
+      inline def setFragments(value: Boolean): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
+      
+      inline def setFragmentsUndefined: Self = StObject.set(x, "fragments", js.undefined)
+    }
+  }
+  
+  trait Key extends StObject {
+    
+    var key: js.UndefOr[typings.snabbdom.vnodeMod.Key] = js.undefined
+  }
+  object Key {
+    
+    inline def apply(): Key = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Key]
+    }
+    
+    extension [Self <: Key](x: Self) {
+      
+      inline def setKey(value: typings.snabbdom.vnodeMod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<snabbdom.snabbdom/build/modules/module.Module> */
   trait PartialModule extends StObject {
     
     var create: js.UndefOr[CreateHook] = js.undefined
@@ -63,27 +101,27 @@ object anon {
     
     extension [Self <: PartialModule](x: Self) {
       
-      inline def setCreate(value: (/* emptyVNode */ VNode_, /* vNode */ VNode_) => js.Any): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+      inline def setCreate(value: (/* emptyVNode */ VNode_, /* vNode */ VNode_) => Any): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
       inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      inline def setDestroy(value: /* vNode */ VNode_ => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* vNode */ VNode_ => Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      inline def setPost(value: () => js.Any): Self = StObject.set(x, "post", js.Any.fromFunction0(value))
+      inline def setPost(value: () => Any): Self = StObject.set(x, "post", js.Any.fromFunction0(value))
       
       inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
       
-      inline def setPre(value: () => js.Any): Self = StObject.set(x, "pre", js.Any.fromFunction0(value))
+      inline def setPre(value: () => Any): Self = StObject.set(x, "pre", js.Any.fromFunction0(value))
       
       inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
       
-      inline def setRemove(value: (/* vNode */ VNode_, /* removeCallback */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (/* vNode */ VNode_, /* removeCallback */ js.Function0[Unit]) => Any): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
       inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      inline def setUpdate(value: (/* oldVNode */ VNode_, /* vNode */ VNode_) => js.Any): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(value: (/* oldVNode */ VNode_, /* vNode */ VNode_) => Any): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
       
       inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }

@@ -1,0 +1,18 @@
+package typings.tensorflowModelsFaceDetection
+
+import typings.tensorflowModelsFaceDetection.typesMod.MediaPipeFaceDetectorMediaPipeEstimationConfig
+import typings.tensorflowModelsFaceDetection.typesMod.MediaPipeFaceDetectorMediaPipeModelConfig
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object mediapipeConstantsMod {
+  
+  @JSImport("@tensorflow-models/face-detection/dist/mediapipe/constants", "DEFAULT_FACE_DETECTOR_ESTIMATION_CONFIG")
+  @js.native
+  val DEFAULT_FACE_DETECTOR_ESTIMATION_CONFIG: MediaPipeFaceDetectorMediaPipeEstimationConfig = js.native
+  
+  @JSImport("@tensorflow-models/face-detection/dist/mediapipe/constants", "DEFAULT_FACE_DETECTOR_MODEL_CONFIG")
+  @js.native
+  val DEFAULT_FACE_DETECTOR_MODEL_CONFIG: MediaPipeFaceDetectorMediaPipeModelConfig = js.native
+}

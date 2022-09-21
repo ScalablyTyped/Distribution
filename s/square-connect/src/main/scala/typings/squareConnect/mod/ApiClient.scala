@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ApiClient")
 @js.native
-class ApiClient () extends StObject {
+open class ApiClient () extends StObject {
   
   /**
     * The authentication methods to be included for all API calls.

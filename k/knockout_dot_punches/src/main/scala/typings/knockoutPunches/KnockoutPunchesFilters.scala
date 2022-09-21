@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KnockoutPunchesFilters extends StObject {
   
   // If the value is blank, null, or an empty array, replace it with the given default value
-  def default(value: js.Any): js.Any = js.native
-  def default(value: js.Any, defaultValue: js.Any): js.Any = js.native
+  def default(value: Any): Any = js.native
+  def default(value: Any, defaultValue: Any): Any = js.native
   
   def fit(value: String): String = js.native
   def fit(value: String, length: Double): String = js.native
@@ -34,10 +34,10 @@ trait KnockoutPunchesFilters extends StObject {
   def fit(value: Double, length: Unit, replacement: Unit, trimWhere: String): String = js.native
   
   // Convert the value to a JSON string using ko.toJSON. You can give a space value to format the JSON output.
-  def json(rootObject: js.Any): String = js.native
-  def json(rootObject: js.Any, space: js.Any): String = js.native
-  def json(rootObject: js.Any, space: js.Any, replacer: js.Any): String = js.native
-  def json(rootObject: js.Any, space: Unit, replacer: js.Any): String = js.native
+  def json(rootObject: Any): String = js.native
+  def json(rootObject: Any, space: Any): String = js.native
+  def json(rootObject: Any, space: Any, replacer: Any): String = js.native
+  def json(rootObject: Any, space: Unit, replacer: Any): String = js.native
   
   // Convert the value to lowercase.
   def lowercase(value: String): String = js.native

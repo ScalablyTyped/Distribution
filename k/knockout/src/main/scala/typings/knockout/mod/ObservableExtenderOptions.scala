@@ -13,7 +13,7 @@ trait ObservableExtenderOptions[T] extends StObject {
   var deferred: js.UndefOr[`true`] = js.undefined
   
   @JSName("notify")
-  var notify_FObservableExtenderOptions: js.UndefOr[always | js.Any] = js.undefined
+  var notify_FObservableExtenderOptions: js.UndefOr[always | Any] = js.undefined
   
   var rateLimit: js.UndefOr[Double | RateLimitOptions] = js.undefined
   
@@ -34,7 +34,7 @@ object ObservableExtenderOptions {
     
     inline def setDeferredUndefined: Self = StObject.set(x, "deferred", js.undefined)
     
-    inline def setNotify_(value: always | js.Any): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
+    inline def setNotify_(value: always | Any): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
     
     inline def setNotify_Undefined: Self = StObject.set(x, "notify", js.undefined)
     

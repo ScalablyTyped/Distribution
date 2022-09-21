@@ -1,6 +1,5 @@
 package typings.lodash.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,22 +13,22 @@ trait TemplateSettings extends StObject {
   /**
     * The "escape" delimiter.
     **/
-  var escape: js.UndefOr[RegExp] = js.undefined
+  var escape: js.UndefOr[js.RegExp] = js.undefined
   
   /**
     * The "evaluate" delimiter.
     **/
-  var evaluate: js.UndefOr[RegExp] = js.undefined
+  var evaluate: js.UndefOr[js.RegExp] = js.undefined
   
   /**
     * An object to import into the template as local variables.
     */
-  var imports: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var imports: js.UndefOr[Dictionary[Any]] = js.undefined
   
   /**
     * The "interpolate" delimiter.
     */
-  var interpolate: js.UndefOr[RegExp] = js.undefined
+  var interpolate: js.UndefOr[js.RegExp] = js.undefined
   
   /**
     * Used to reference the data object in the template text.
@@ -45,19 +44,19 @@ object TemplateSettings {
   
   extension [Self <: TemplateSettings](x: Self) {
     
-    inline def setEscape(value: RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+    inline def setEscape(value: js.RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     
     inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
     
-    inline def setEvaluate(value: RegExp): Self = StObject.set(x, "evaluate", value.asInstanceOf[js.Any])
+    inline def setEvaluate(value: js.RegExp): Self = StObject.set(x, "evaluate", value.asInstanceOf[js.Any])
     
     inline def setEvaluateUndefined: Self = StObject.set(x, "evaluate", js.undefined)
     
-    inline def setImports(value: Dictionary[js.Any]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: Dictionary[Any]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    inline def setInterpolate(value: RegExp): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
+    inline def setInterpolate(value: js.RegExp): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
     
     inline def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
     

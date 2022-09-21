@@ -1,5 +1,8 @@
 package typings.vscodeLanguageserverProtocol.mod
 
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`1`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`2`
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,19 +14,19 @@ object WatchKind {
     */
   @JSImport("vscode-languageserver-protocol", "WatchKind.Change")
   @js.native
-  val Change: /* 2 */ Double = js.native
+  val Change: `2` = js.native
   
   /**
     * Interested in create events.
     */
   @JSImport("vscode-languageserver-protocol", "WatchKind.Create")
   @js.native
-  val Create: /* 1 */ Double = js.native
+  val Create: `1` = js.native
   
   /**
     * Interested in delete events
     */
   @JSImport("vscode-languageserver-protocol", "WatchKind.Delete")
   @js.native
-  val Delete: /* 4 */ Double = js.native
+  val Delete: `4` = js.native
 }

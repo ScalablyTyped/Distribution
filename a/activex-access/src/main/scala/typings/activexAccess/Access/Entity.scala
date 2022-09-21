@@ -18,7 +18,7 @@ trait Entity extends StObject {
   @JSName("Operations")
   val Operations_Original: Operations
   
-  val Parent: js.Any
+  val Parent: Any
 }
 object Entity {
   
@@ -27,7 +27,7 @@ object Entity {
     IsMemberSafe: Double => Boolean,
     Name: String,
     Operations: Operations,
-    Parent: js.Any
+    Parent: Any
   ): Entity = {
     val __obj = js.Dynamic.literal(IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), Name = Name.asInstanceOf[js.Any], Operations = Operations.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Access.Entity_typekey")(AccessDotEntity_typekey.asInstanceOf[js.Any])
@@ -44,6 +44,6 @@ object Entity {
     
     inline def setOperations(value: Operations): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,8 @@ object VariableAPI {
       * qIncludeInBookmark | Boolean | Optional. Set to true to update the variable when applying a bookmark. The variable value will be persisted in the bookmark.
       * @return - Returns a promise of a variable model.
       */
-    def create(qProp: String): IPromise[js.Any] = js.native
-    def create(qProp: js.Any): IPromise[js.Any] = js.native
+    def create(qProp: String): IPromise[Any] = js.native
+    def create(qProp: Any): IPromise[Any] = js.native
     
     /**
       * Creates a session variable, that is a temporary variable which is not
@@ -38,21 +38,21 @@ object VariableAPI {
       * qIncludeInBookmark | Boolean | Optional. Include in bookmark flag.
       * @return - A promise of a variable model.
       */
-    def createSessionVariable(qProp: js.Any): IPromise[js.Any] = js.native
+    def createSessionVariable(qProp: Any): IPromise[Any] = js.native
     
     /**
       * Gets a variable by id.
       * @param qId - Variable id.
       * @return - A promise of a variable model.
       */
-    def get(qId: String): IPromise[js.Any] = js.native
+    def get(qId: String): IPromise[Any] = js.native
     
     /**
       * Gets a variable by name.
       * @param qName - Variable name.
       * @return - A promise of a variable model.
       */
-    def getByName(qName: String): IPromise[js.Any] = js.native
+    def getByName(qName: String): IPromise[Any] = js.native
     
     /**
       * Gets variable content.
@@ -60,7 +60,7 @@ object VariableAPI {
       * @param callback - Callback to receive the content.
       * @return - A promise of a Qlik engine reply.
       */
-    def getContent(name: String, callback: js.Any): IPromise[js.Any] = js.native
+    def getContent(name: String, callback: Any): IPromise[Any] = js.native
     
     /**
       * Sets the content of a variable.
@@ -68,7 +68,7 @@ object VariableAPI {
       * @param content - Variable content.
       * @return - A promise of a Qlik engine reply.
       */
-    def setContent(name: String, content: String): IPromise[js.Any] = js.native
+    def setContent(name: String, content: String): IPromise[Any] = js.native
     
     /**
       * Sets a numeric value as a variable.
@@ -76,7 +76,7 @@ object VariableAPI {
       * @param qVal - Variable value.
       * @return - A promise of a Qlik engine reply.
       */
-    def setNumValue(qName: String, qVal: Double): IPromise[js.Any] = js.native
+    def setNumValue(qName: String, qVal: Double): IPromise[Any] = js.native
     
     /**
       * Sets variable string value.
@@ -84,6 +84,6 @@ object VariableAPI {
       * @param qVal - Variable value.
       * @return - A promise of a Qlik engine reply.
       */
-    def setStringValue(qName: String, qVal: String): IPromise[js.Any] = js.native
+    def setStringValue(qName: String, qVal: String): IPromise[Any] = js.native
   }
 }

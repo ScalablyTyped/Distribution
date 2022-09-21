@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object backgroundSelectorMod {
   
-  @JSImport("@storybook/addon-backgrounds/dist/containers/BackgroundSelector", "BackgroundSelector")
+  @JSImport("@storybook/addon-backgrounds/dist/ts3.9/containers/BackgroundSelector", "BackgroundSelector")
   @js.native
   val BackgroundSelector: FunctionComponent[js.Object] = js.native
 }

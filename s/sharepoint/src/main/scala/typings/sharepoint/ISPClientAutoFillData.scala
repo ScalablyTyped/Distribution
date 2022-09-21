@@ -8,7 +8,7 @@ trait ISPClientAutoFillData extends StObject {
   
   var AutoFillDisplayText: js.UndefOr[String] = js.undefined
   
-  var AutoFillKey: js.UndefOr[js.Any] = js.undefined
+  var AutoFillKey: js.UndefOr[Any] = js.undefined
   
   var AutoFillMenuOptionType: js.UndefOr[Double] = js.undefined
   
@@ -29,7 +29,7 @@ object ISPClientAutoFillData {
     
     inline def setAutoFillDisplayTextUndefined: Self = StObject.set(x, "AutoFillDisplayText", js.undefined)
     
-    inline def setAutoFillKey(value: js.Any): Self = StObject.set(x, "AutoFillKey", value.asInstanceOf[js.Any])
+    inline def setAutoFillKey(value: Any): Self = StObject.set(x, "AutoFillKey", value.asInstanceOf[js.Any])
     
     inline def setAutoFillKeyUndefined: Self = StObject.set(x, "AutoFillKey", js.undefined)
     

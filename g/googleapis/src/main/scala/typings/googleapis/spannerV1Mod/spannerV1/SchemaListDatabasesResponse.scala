@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response for ListDatabases.
-  */
 trait SchemaListDatabasesResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaListDatabasesResponse extends StObject {
   var databases: js.UndefOr[js.Array[SchemaDatabase]] = js.undefined
   
   /**
-    * `next_page_token` can be sent in a subsequent ListDatabases call to fetch
-    * more of the matching databases.
+    * `next_page_token` can be sent in a subsequent ListDatabases call to fetch more of the matching databases.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListDatabasesResponse {
   
@@ -33,9 +29,11 @@ object SchemaListDatabasesResponse {
     
     inline def setDatabasesUndefined: Self = StObject.set(x, "databases", js.undefined)
     
-    inline def setDatabasesVarargs(value: SchemaDatabase*): Self = StObject.set(x, "databases", js.Array(value :_*))
+    inline def setDatabasesVarargs(value: SchemaDatabase*): Self = StObject.set(x, "databases", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

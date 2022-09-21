@@ -2,6 +2,7 @@ package typings.fabric.fabricImplMod
 
 import typings.fabric.anon.Bl
 import typings.fabric.anon.Left
+import typings.fabric.anon.Readonlyleftnumberundefin
 import typings.fabric.fabricStrings.getImageData
 import typings.fabric.fabricStrings.setLineDash
 import typings.fabric.fabricStrings.toDataURL
@@ -20,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {Object} [options] Options object
   * @return {Object} thisArg
   */
-class StaticCanvas ()
+open class StaticCanvas ()
   extends StObject
      with IObservable[StaticCanvas]
      with IStaticCanvasOptions
@@ -40,7 +41,7 @@ class StaticCanvas ()
     * @return {fabric.Canvas} instance
     * @chainable
     */
-  def absolutePan(point: Point): Canvas = js.native
+  def absolutePan(point: IPoint): Canvas = js.native
   
   /**
     * Moves an object or a selection up in stack of drawn objects
@@ -119,8 +120,8 @@ class StaticCanvas ()
     */
   def clearContext(ctx: CanvasRenderingContext2D): Canvas = js.native
   
-  def clone(callback: js.Any): Unit = js.native
-  def clone(callback: js.Any, properties: js.Array[String]): Unit = js.native
+  def clone(callback: Any): Unit = js.native
+  def clone(callback: Any, properties: js.Array[String]): Unit = js.native
   def clone(callback: Unit, properties: js.Array[String]): Unit = js.native
   
   /**
@@ -130,7 +131,7 @@ class StaticCanvas ()
     * @param [callback] Receives cloned instance as a first argument
     */
   def cloneWithoutData(): Unit = js.native
-  def cloneWithoutData(callback: js.Any): Unit = js.native
+  def cloneWithoutData(callback: Any): Unit = js.native
   
   /**
     * Creates markup containing SVG font faces,
@@ -139,7 +140,7 @@ class StaticCanvas ()
     * @param {Array} objects Array of fabric objects
     * @return {String}
     */
-  def createSVGFontFacesMarkup(objects: js.Array[js.Any]): String = js.native
+  def createSVGFontFacesMarkup(objects: js.Array[Any]): String = js.native
   
   /**
     * Creates markup containing SVG referenced elements like patterns, gradients etc.
@@ -159,7 +160,7 @@ class StaticCanvas ()
     */
   def drawClipPathOnCanvas(ctx: CanvasRenderingContext2D): Unit = js.native
   
-  var freeDrawingBrush: FreeDrawingBrush = js.native
+  var freeDrawingBrush: BaseBrush = js.native
   
   /**
     * Returns coordinates of a center of canvas.
@@ -204,22 +205,6 @@ class StaticCanvas ()
   def getZoom(): Double = js.native
   
   /**
-    * Populates canvas with data from the specified dataless JSON.
-    * JSON format must conform to the one of {@link fabric.Canvas#toDatalessJSON}
-    * @deprecated since 1.2.2
-    * @param {String|Object} json JSON string or object
-    * @param {Function} callback Callback, invoked when json is parsed
-    *                            and corresponding objects (e.g: {@link fabric.Image})
-    *                            are initialized
-    * @param {Function} [reviver] Method for further parsing of JSON elements, called after each fabric object created.
-    * @return {fabric.Canvas} instance
-    * @chainable
-    * @tutorial {@link http://fabricjs.com/fabric-intro-part-3#deserialization}
-    */
-  def loadFromDatalessJSON(json: js.Any, callback: js.Function): Canvas = js.native
-  def loadFromDatalessJSON(json: js.Any, callback: js.Function, reviver: js.Function): Canvas = js.native
-  
-  /**
     * Populates canvas with data from the specified JSON.
     * JSON format must conform to the one of {@link fabric.Canvas#toJSON}
     * @param {String|Object} json JSON string or object
@@ -229,8 +214,8 @@ class StaticCanvas ()
     * @param {Function} [reviver] Method for further parsing of JSON elements, called after each fabric object created.
     * @return {fabric.Canvas} instance
     */
-  def loadFromJSON(json: js.Any, callback: js.Function): Canvas = js.native
-  def loadFromJSON(json: js.Any, callback: js.Function, reviver: js.Function): Canvas = js.native
+  def loadFromJSON(json: Any, callback: js.Function): Canvas = js.native
+  def loadFromJSON(json: Any, callback: js.Function, reviver: js.Function): Canvas = js.native
   
   /**
     * Moves an object to specified level in stack of drawn objects
@@ -247,7 +232,7 @@ class StaticCanvas ()
     * @return {fabric.Canvas} instance
     * @chainable
     */
-  def relativePan(point: Point): Canvas = js.native
+  def relativePan(point: IPoint): Canvas = js.native
   
   /**
     * Renders the canvas
@@ -415,6 +400,24 @@ class StaticCanvas ()
   def straightenObject(`object`: Object): Canvas = js.native
   
   /**
+    * Create a new HTMLCanvas element painted with the current canvas content.
+    * No need to resize the actual one or repaint it.
+    * Will transfer object ownership to a new canvas, paint it, and set everything back.
+    * This is an intermediary step used to get to a dataUrl but also it is useful to
+    * create quick image copies of a canvas without passing for the dataUrl string
+    * @param {Number} [multiplier] a zoom factor.
+    * @param {Object} [cropping] Cropping informations
+    * @param {Number} [cropping.left] Cropping left offset.
+    * @param {Number} [cropping.top] Cropping top offset.
+    * @param {Number} [cropping.width] Cropping width.
+    * @param {Number} [cropping.height] Cropping height.
+    */
+  def toCanvasElement(): HTMLCanvasElement = js.native
+  def toCanvasElement(multiplier: Double): HTMLCanvasElement = js.native
+  def toCanvasElement(multiplier: Double, cropping: Readonlyleftnumberundefin): HTMLCanvasElement = js.native
+  def toCanvasElement(multiplier: Unit, cropping: Readonlyleftnumberundefin): HTMLCanvasElement = js.native
+  
+  /**
     * Exports canvas element to a dataurl image. Note that when multiplier is used, cropping is scaled appropriately
     * @param [options] Options object
     */
@@ -434,8 +437,8 @@ class StaticCanvas ()
     * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
     * @return {Object} object representation of an instance
     */
-  def toDatalessObject(): js.Any = js.native
-  def toDatalessObject(propertiesToInclude: js.Array[String]): js.Any = js.native
+  def toDatalessObject(): Any = js.native
+  def toDatalessObject(propertiesToInclude: js.Array[String]): Any = js.native
   
   /**
     * Returns JSON representation of canvas
@@ -450,8 +453,8 @@ class StaticCanvas ()
     * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
     * @return {Object} object representation of an instance
     */
-  def toObject(): js.Any = js.native
-  def toObject(propertiesToInclude: js.Array[String]): js.Any = js.native
+  def toObject(): Any = js.native
+  def toObject(propertiesToInclude: js.Array[String]): Any = js.native
   
   /**
     * Returns SVG representation of canvas
@@ -495,7 +498,7 @@ class StaticCanvas ()
     * @return {fabric.Canvas} instance
     * @chainable true
     */
-  def zoomToPoint(point: Point, value: Double): Canvas = js.native
+  def zoomToPoint(point: IPoint, value: Double): Canvas = js.native
 }
 /* static members */
 object StaticCanvas {
@@ -523,13 +526,7 @@ object StaticCanvas {
     * @return {Boolean | null} `true` if method is supported (or at least exists),
     *                          `null` if canvas element or context can not be initialized
     */
-  inline def supports_getImageData(methodName: getImageData): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def supports_setLineDash(methodName: setLineDash): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def supports_toDataURL(methodName: toDataURL): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def supports_toDataURLWithQuality(methodName: toDataURLWithQuality): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def supports(methodName: getImageData | toDataURL | toDataURLWithQuality | setLineDash): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supports")(methodName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Returns JSON representation of canvas

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This is a JSON template for an event period update resource.
-  */
 trait SchemaEventUpdateResponse extends StObject {
   
   /**
@@ -20,10 +17,9 @@ trait SchemaEventUpdateResponse extends StObject {
   var eventFailures: js.UndefOr[js.Array[SchemaEventRecordFailure]] = js.undefined
   
   /**
-    * Uniquely identifies the type of this resource. Value is always the fixed
-    * string games#eventUpdateResponse.
+    * Uniquely identifies the type of this resource. Value is always the fixed string `games#eventUpdateResponse`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The current status of any updated events
@@ -43,15 +39,17 @@ object SchemaEventUpdateResponse {
     
     inline def setBatchFailuresUndefined: Self = StObject.set(x, "batchFailures", js.undefined)
     
-    inline def setBatchFailuresVarargs(value: SchemaEventBatchRecordFailure*): Self = StObject.set(x, "batchFailures", js.Array(value :_*))
+    inline def setBatchFailuresVarargs(value: SchemaEventBatchRecordFailure*): Self = StObject.set(x, "batchFailures", js.Array(value*))
     
     inline def setEventFailures(value: js.Array[SchemaEventRecordFailure]): Self = StObject.set(x, "eventFailures", value.asInstanceOf[js.Any])
     
     inline def setEventFailuresUndefined: Self = StObject.set(x, "eventFailures", js.undefined)
     
-    inline def setEventFailuresVarargs(value: SchemaEventRecordFailure*): Self = StObject.set(x, "eventFailures", js.Array(value :_*))
+    inline def setEventFailuresVarargs(value: SchemaEventRecordFailure*): Self = StObject.set(x, "eventFailures", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -59,6 +57,6 @@ object SchemaEventUpdateResponse {
     
     inline def setPlayerEventsUndefined: Self = StObject.set(x, "playerEvents", js.undefined)
     
-    inline def setPlayerEventsVarargs(value: SchemaPlayerEvent*): Self = StObject.set(x, "playerEvents", js.Array(value :_*))
+    inline def setPlayerEventsVarargs(value: SchemaPlayerEvent*): Self = StObject.set(x, "playerEvents", js.Array(value*))
   }
 }

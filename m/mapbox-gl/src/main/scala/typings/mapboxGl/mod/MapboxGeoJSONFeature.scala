@@ -18,7 +18,7 @@ trait MapboxGeoJSONFeature
   
   var sourceLayer: String
   
-  var state: StringDictionary[js.Any]
+  var state: StringDictionary[Any]
 }
 object MapboxGeoJSONFeature {
   
@@ -27,7 +27,7 @@ object MapboxGeoJSONFeature {
     layer: Layer,
     source: String,
     sourceLayer: String,
-    state: StringDictionary[js.Any]
+    state: StringDictionary[Any]
   ): MapboxGeoJSONFeature = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceLayer = sourceLayer.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], properties = null)
     __obj.updateDynamic("type")("Feature")
@@ -42,6 +42,6 @@ object MapboxGeoJSONFeature {
     
     inline def setSourceLayer(value: String): Self = StObject.set(x, "sourceLayer", value.asInstanceOf[js.Any])
     
-    inline def setState(value: StringDictionary[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: StringDictionary[Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

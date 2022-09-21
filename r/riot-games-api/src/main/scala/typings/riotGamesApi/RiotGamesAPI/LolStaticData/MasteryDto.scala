@@ -42,7 +42,7 @@ object MasteryDto {
     
     inline def setDescription(value: js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value :_*))
+    inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -58,6 +58,6 @@ object MasteryDto {
     
     inline def setSanitizedDescription(value: js.Array[String]): Self = StObject.set(x, "sanitizedDescription", value.asInstanceOf[js.Any])
     
-    inline def setSanitizedDescriptionVarargs(value: String*): Self = StObject.set(x, "sanitizedDescription", js.Array(value :_*))
+    inline def setSanitizedDescriptionVarargs(value: String*): Self = StObject.set(x, "sanitizedDescription", js.Array(value*))
   }
 }

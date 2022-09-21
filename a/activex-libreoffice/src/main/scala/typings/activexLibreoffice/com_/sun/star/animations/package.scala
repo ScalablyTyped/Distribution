@@ -6,28 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 /** @since LibreOffice 4.1 */
-type AnimateColor = typings.activexLibreoffice.com_.sun.star.animations.XAnimate
+type AnimateColor = XAnimate
 
 /** @since LibreOffice 4.1 */
-type AnimateMotion = typings.activexLibreoffice.com_.sun.star.animations.XAnimationNode
+type AnimateMotion = XAnimationNode
 
 /** @since LibreOffice 4.1 */
-type AnimateSet = typings.activexLibreoffice.com_.sun.star.animations.XAnimate
+type AnimateSet = XAnimate
 
 /** @since LibreOffice 4.1 */
-type Audio = typings.activexLibreoffice.com_.sun.star.animations.XAudio
+type Audio = XAudio
 
 /** @since LibreOffice 4.1 */
-type Command = typings.activexLibreoffice.com_.sun.star.animations.XCommand
+type Command = XCommand
 
 /** @since LibreOffice 4.1 */
-type IterateContainer = typings.activexLibreoffice.com_.sun.star.animations.XTimeContainer
+type IterateContainer = XTimeContainer
 
 /** @since LibreOffice 4.1 */
-type ParallelTimeContainer = typings.activexLibreoffice.com_.sun.star.animations.XParallelTimeContainer
+type ParallelTimeContainer = XParallelTimeContainer
 
 /** @since LibreOffice 4.1 */
-type SequenceTimeContainer = typings.activexLibreoffice.com_.sun.star.animations.XTimeContainer
+type SequenceTimeContainer = XTimeContainer
 
 /**
   * Interface for animation by simply setting the value of the target attribute to a constant value. This interface provides a simple means of just
@@ -37,4 +37,4 @@ type SequenceTimeContainer = typings.activexLibreoffice.com_.sun.star.animations
   * XAnimate.Accumulate}{@link XAnimate.Additive}{@link XAnimate.From}{@link XAnimate.By}{@link XAnimate.TimeFilter}
   * @see http://www.w3.org/TR/smil20/animation.html#edef-set
   */
-type XAnimateSet = typings.activexLibreoffice.com_.sun.star.animations.XAnimate
+type XAnimateSet = XAnimate

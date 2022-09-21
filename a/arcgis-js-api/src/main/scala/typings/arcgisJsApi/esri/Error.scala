@@ -11,7 +11,7 @@ trait Error extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html#details)
     */
-  var details: js.Any
+  var details: Any
   
   /**
     * A message describing the details of the error.
@@ -29,14 +29,14 @@ trait Error extends StObject {
 }
 object Error {
   
-  inline def apply(details: js.Any, message: String, name: String): Error = {
+  inline def apply(details: Any, message: String, name: String): Error = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
   
   extension [Self <: Error](x: Self) {
     
-    inline def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

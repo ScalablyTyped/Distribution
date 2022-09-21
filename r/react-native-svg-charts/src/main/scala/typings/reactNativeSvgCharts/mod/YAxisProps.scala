@@ -15,7 +15,7 @@ trait YAxisProps[T]
   
   var min: js.UndefOr[Double] = js.undefined
   
-  var yAccessor: js.UndefOr[AccessorFunction[T, js.Any]] = js.undefined
+  var yAccessor: js.UndefOr[AccessorFunction[T, Any]] = js.undefined
 }
 object YAxisProps {
   
@@ -38,7 +38,7 @@ object YAxisProps {
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    inline def setYAccessor(value: /* props */ AccessorFunctionProps[T] => js.Any): Self = StObject.set(x, "yAccessor", js.Any.fromFunction1(value))
+    inline def setYAccessor(value: /* props */ AccessorFunctionProps[T] => Any): Self = StObject.set(x, "yAccessor", js.Any.fromFunction1(value))
     
     inline def setYAccessorUndefined: Self = StObject.set(x, "yAccessor", js.undefined)
   }

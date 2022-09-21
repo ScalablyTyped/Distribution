@@ -14,7 +14,7 @@ trait RestrictedLaunchActivatedEventArgs extends StObject {
   var previousExecutionState: ApplicationExecutionState
   
   /** Gets information about a shared context for the restricted launch. */
-  var sharedContext: js.Any
+  var sharedContext: Any
   
   /** Gets the splash screen object, which provides information about the transition from the splash screen to the activated app. */
   var splashScreen: SplashScreen
@@ -24,7 +24,7 @@ object RestrictedLaunchActivatedEventArgs {
   inline def apply(
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
-    sharedContext: js.Any,
+    sharedContext: Any,
     splashScreen: SplashScreen
   ): RestrictedLaunchActivatedEventArgs = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], sharedContext = sharedContext.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
@@ -37,7 +37,7 @@ object RestrictedLaunchActivatedEventArgs {
     
     inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    inline def setSharedContext(value: js.Any): Self = StObject.set(x, "sharedContext", value.asInstanceOf[js.Any])
+    inline def setSharedContext(value: Any): Self = StObject.set(x, "sharedContext", value.asInstanceOf[js.Any])
     
     inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }

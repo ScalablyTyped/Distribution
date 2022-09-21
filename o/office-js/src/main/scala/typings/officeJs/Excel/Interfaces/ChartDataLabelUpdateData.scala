@@ -25,66 +25,66 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartDataLabelUpdateData extends StObject {
   
   /**
-    *
     * Specifies if the data label automatically generates appropriate text based on context.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var autoText: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the format of chart data label.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var format: js.UndefOr[ChartDataLabelFormatUpdateData] = js.undefined
   
   /**
-    *
     * String value that represents the formula of chart data label using A1-style notation.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var formula: js.UndefOr[String] = js.undefined
   
   /**
+    * Represents the horizontal alignment for chart data label. See `Excel.ChartTextHorizontalAlignment` for details.
+    This property is valid only when `TextOrientation` of data label is -90, 90, or 180.
     *
-    * Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
-    This property is valid only when TextOrientation of data label is -90, 90, or 180.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var horizontalAlignment: js.UndefOr[ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed] = js.undefined
   
   /**
+    * Represents the distance, in points, from the left edge of chart data label to the left edge of chart area. Value is `null` if the chart data label is not visible.
     *
-    * Represents the distance, in points, from the left edge of chart data label to the left edge of chart area. Null if chart data label is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var left: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var linkNumberFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * String value that represents the format code for data label.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var numberFormat: js.UndefOr[String] = js.undefined
   
   /**
+    * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
     *
-    * DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var position: js.UndefOr[
@@ -92,90 +92,90 @@ trait ChartDataLabelUpdateData extends StObject {
   ] = js.undefined
   
   /**
-    *
     * String representing the separator used for the data label on a chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var separator: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Specifies if the data label bubble size is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showBubbleSize: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the data label category name is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showCategoryName: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the data label legend key is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showLegendKey: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the data label percentage is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showPercentage: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the data label series name is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showSeriesName: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies if the data label value is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showValue: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * String representing the text of the data label on a chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var text: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Represents the angle to which the text is oriented for the chart data label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var textOrientation: js.UndefOr[Double] = js.undefined
   
   /**
+    * Represents the distance, in points, from the top edge of chart data label to the top of chart area. Value is `null` if the chart data label is not visible.
     *
-    * Represents the distance, in points, from the top edge of chart data label to the top of chart area. Null if chart data label is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var top: js.UndefOr[Double] = js.undefined
   
   /**
+    * Represents the vertical alignment of chart data label. See `Excel.ChartTextVerticalAlignment` for details.
+    This property is valid only when `TextOrientation` of data label is 0.
     *
-    * Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details.
-    This property is valid only when TextOrientation of data label is 0.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var verticalAlignment: js.UndefOr[ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed] = js.undefined

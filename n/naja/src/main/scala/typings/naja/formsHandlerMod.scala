@@ -1,15 +1,25 @@
 package typings.naja
 
+import typings.naja.najaMod.Naja
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formsHandlerMod {
   
-  @JSImport("naja/src/core/FormsHandler", "FormsHandler")
+  @JSImport("naja/dist/core/FormsHandler", "FormsHandler")
   @js.native
-  class FormsHandler () extends StObject {
+  open class FormsHandler protected () extends StObject {
+    def this(naja: Naja) = this()
     
-    var netteForms: js.Any = js.native
+    /* private */ var initForms: Any = js.native
+    
+    /* private */ var initialize: Any = js.native
+    
+    /* private */ val naja: Any = js.native
+    
+    var netteForms: Any = js.native
+    
+    /* private */ var processForm: Any = js.native
   }
 }

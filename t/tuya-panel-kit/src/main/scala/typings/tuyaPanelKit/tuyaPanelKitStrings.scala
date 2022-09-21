@@ -1,6 +1,7 @@
 package typings.tuyaPanelKit
 
 import typings.tuyaPanelKit.mod.DpType
+import typings.tuyaPanelKit.mod.IconFontName
 import typings.tuyaPanelKit.mod.MobileService
 import typings.tuyaPanelKit.mod.NetworkType
 import typings.tuyaPanelKit.stackTypesMod.GestureDirection
@@ -16,6 +17,12 @@ object tuyaPanelKitStrings {
   @js.native
   sealed trait default extends StObject
   inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
+  sealed trait `-_`
+    extends StObject
+       with IconFontName
+  inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
   sealed trait AY
@@ -40,8 +47,30 @@ object tuyaPanelKitStrings {
   inline def CLOSE_DRAWER: CLOSE_DRAWER = "CLOSE_DRAWER".asInstanceOf[CLOSE_DRAWER]
   
   @js.native
+  sealed trait Colon
+    extends StObject
+       with IconFontName
+  inline def Colon: Colon = ":".asInstanceOf[Colon]
+  
+  @js.native
+  sealed trait Comma
+    extends StObject
+       with IconFontName
+  inline def Comma: Comma = ",".asInstanceOf[Comma]
+  
+  @js.native
+  sealed trait `DIN Alternate` extends StObject
+  inline def `DIN Alternate`: `DIN Alternate` = ("DIN Alternate").asInstanceOf[`DIN Alternate`]
+  
+  @js.native
   sealed trait DevInfo extends StObject
   inline def DevInfo: DevInfo = "DevInfo".asInstanceOf[DevInfo]
+  
+  @js.native
+  sealed trait Dot
+    extends StObject
+       with IconFontName
+  inline def Dot: Dot = ".".asInstanceOf[Dot]
   
   @js.native
   sealed trait EU
@@ -100,6 +129,26 @@ object tuyaPanelKitStrings {
   inline def PUSH: PUSH = "PUSH".asInstanceOf[PUSH]
   
   @js.native
+  sealed trait Percentsign
+    extends StObject
+       with IconFontName
+  inline def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
+  
+  @js.native
+  sealed trait `PingFangHK-Medium` extends StObject
+  inline def `PingFangHK-Medium`: `PingFangHK-Medium` = "PingFangHK-Medium".asInstanceOf[`PingFangHK-Medium`]
+  
+  @js.native
+  sealed trait `PingFangHK-Regular` extends StObject
+  inline def `PingFangHK-Regular`: `PingFangHK-Regular` = "PingFangHK-Regular".asInstanceOf[`PingFangHK-Regular`]
+  
+  @js.native
+  sealed trait Plussign
+    extends StObject
+       with IconFontName
+  inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
+  
+  @js.native
   sealed trait PullUp extends StObject
   inline def PullUp: PullUp = "PullUp".asInstanceOf[PullUp]
   
@@ -134,6 +183,10 @@ object tuyaPanelKitStrings {
   @js.native
   sealed trait TOGGLE_DRAWER extends StObject
   inline def TOGGLE_DRAWER: TOGGLE_DRAWER = "TOGGLE_DRAWER".asInstanceOf[TOGGLE_DRAWER]
+  
+  @js.native
+  sealed trait `Times New Roman` extends StObject
+  inline def `Times New Roman`: `Times New Roman` = ("Times New Roman").asInstanceOf[`Times New Roman`]
   
   @js.native
   sealed trait UE
@@ -194,6 +247,12 @@ object tuyaPanelKitStrings {
   inline def always: always = "always".asInstanceOf[always]
   
   @js.native
+  sealed trait arrow
+    extends StObject
+       with IconFontName
+  inline def arrow: arrow = "arrow".asInstanceOf[arrow]
+  
+  @js.native
   sealed trait assertive extends StObject
   inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
@@ -204,6 +263,18 @@ object tuyaPanelKitStrings {
   @js.native
   sealed trait automatic extends StObject
   inline def automatic: automatic = "automatic".asInstanceOf[automatic]
+  
+  @js.native
+  sealed trait backAndroid
+    extends StObject
+       with IconFontName
+  inline def backAndroid: backAndroid = "backAndroid".asInstanceOf[backAndroid]
+  
+  @js.native
+  sealed trait backIos
+    extends StObject
+       with IconFontName
+  inline def backIos: backIos = "backIos".asInstanceOf[backIos]
   
   @js.native
   sealed trait balanced extends StObject
@@ -224,6 +295,22 @@ object tuyaPanelKitStrings {
   @js.native
   sealed trait bevel extends StObject
   inline def bevel: bevel = "bevel".asInstanceOf[bevel]
+  
+  @js.native
+  sealed trait `birthdate-day` extends StObject
+  inline def `birthdate-day`: `birthdate-day` = "birthdate-day".asInstanceOf[`birthdate-day`]
+  
+  @js.native
+  sealed trait `birthdate-full` extends StObject
+  inline def `birthdate-full`: `birthdate-full` = "birthdate-full".asInstanceOf[`birthdate-full`]
+  
+  @js.native
+  sealed trait `birthdate-month` extends StObject
+  inline def `birthdate-month`: `birthdate-month` = "birthdate-month".asInstanceOf[`birthdate-month`]
+  
+  @js.native
+  sealed trait `birthdate-year` extends StObject
+  inline def `birthdate-year`: `birthdate-year` = "birthdate-year".asInstanceOf[`birthdate-year`]
   
   @js.native
   sealed trait bitmap
@@ -282,10 +369,6 @@ object tuyaPanelKitStrings {
   inline def butt: butt = "butt".asInstanceOf[butt]
   
   @js.native
-  sealed trait button extends StObject
-  inline def button: button = "button".asInstanceOf[button]
-  
-  @js.native
   sealed trait canGoBack extends StObject
   inline def canGoBack: canGoBack = "canGoBack".asInstanceOf[canGoBack]
   
@@ -304,6 +387,10 @@ object tuyaPanelKitStrings {
   inline def `cc-exp`: `cc-exp` = "cc-exp".asInstanceOf[`cc-exp`]
   
   @js.native
+  sealed trait `cc-exp-day` extends StObject
+  inline def `cc-exp-day`: `cc-exp-day` = "cc-exp-day".asInstanceOf[`cc-exp-day`]
+  
+  @js.native
   sealed trait `cc-exp-month` extends StObject
   inline def `cc-exp-month`: `cc-exp-month` = "cc-exp-month".asInstanceOf[`cc-exp-month`]
   
@@ -314,6 +401,12 @@ object tuyaPanelKitStrings {
   @js.native
   sealed trait `cc-number` extends StObject
   inline def `cc-number`: `cc-number` = "cc-number".asInstanceOf[`cc-number`]
+  
+  @js.native
+  sealed trait celsius
+    extends StObject
+       with IconFontName
+  inline def celsius: celsius = "celsius".asInstanceOf[celsius]
   
   @js.native
   sealed trait center extends StObject
@@ -332,8 +425,20 @@ object tuyaPanelKitStrings {
   inline def clip: clip = "clip".asInstanceOf[clip]
   
   @js.native
+  sealed trait close
+    extends StObject
+       with IconFontName
+  inline def close: close = "close".asInstanceOf[close]
+  
+  @js.native
   sealed trait column extends StObject
   inline def column: column = "column".asInstanceOf[column]
+  
+  @js.native
+  sealed trait correct
+    extends StObject
+       with IconFontName
+  inline def correct: correct = "correct".asInstanceOf[correct]
   
   @js.native
   sealed trait countryName extends StObject
@@ -364,6 +469,10 @@ object tuyaPanelKitStrings {
   inline def datetime: datetime = "datetime".asInstanceOf[datetime]
   
   @js.native
+  sealed trait delete extends StObject
+  inline def delete: delete = "delete".asInstanceOf[delete]
+  
+  @js.native
   sealed trait devInfo_ extends StObject
   inline def devInfo_ : devInfo_ = "devInfo".asInstanceOf[devInfo_]
   
@@ -378,10 +487,6 @@ object tuyaPanelKitStrings {
   @js.native
   sealed trait deviceOnline extends StObject
   inline def deviceOnline: deviceOnline = "deviceOnline".asInstanceOf[deviceOnline]
-  
-  @js.native
-  sealed trait dialog extends StObject
-  inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
   sealed trait dispatch extends StObject
@@ -400,8 +505,10 @@ object tuyaPanelKitStrings {
   inline def drawer: drawer = "drawer".asInstanceOf[drawer]
   
   @js.native
-  sealed trait dropdown extends StObject
-  inline def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
+  sealed trait edit
+    extends StObject
+       with IconFontName
+  inline def edit: edit = "edit".asInstanceOf[edit]
   
   @js.native
   sealed trait ellipse extends StObject
@@ -426,12 +533,20 @@ object tuyaPanelKitStrings {
   inline def `enum`: `enum` = "enum".asInstanceOf[`enum`]
   
   @js.native
-  sealed trait error extends StObject
+  sealed trait error
+    extends StObject
+       with IconFontName
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait fade_ extends StObject
   inline def fade_ : fade_ = "fade".asInstanceOf[fade_]
+  
+  @js.native
+  sealed trait fahrenheit
+    extends StObject
+       with IconFontName
+  inline def fahrenheit: fahrenheit = "fahrenheit".asInstanceOf[fahrenheit]
   
   @js.native
   sealed trait familyName extends StObject
@@ -464,12 +579,20 @@ object tuyaPanelKitStrings {
   inline def formSheet: formSheet = "formSheet".asInstanceOf[formSheet]
   
   @js.native
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
+  
+  @js.native
   sealed trait fullScreen extends StObject
   inline def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
   
   @js.native
   sealed trait fullStreetAddress extends StObject
   inline def fullStreetAddress: fullStreetAddress = "fullStreetAddress".asInstanceOf[fullStreetAddress]
+  
+  @js.native
+  sealed trait gender extends StObject
+  inline def gender: gender = "gender".asInstanceOf[gender]
   
   @js.native
   sealed trait gestureCancel extends StObject
@@ -502,6 +625,18 @@ object tuyaPanelKitStrings {
   @js.native
   sealed trait heading extends StObject
   inline def heading: heading = "heading".asInstanceOf[heading]
+  
+  @js.native
+  sealed trait help
+    extends StObject
+       with IconFontName
+  inline def help: help = "help".asInstanceOf[help]
+  
+  @js.native
+  sealed trait `help-sharp`
+    extends StObject
+       with IconFontName
+  inline def `help-sharp`: `help-sharp` = "help-sharp".asInstanceOf[`help-sharp`]
   
   @js.native
   sealed trait highQuality extends StObject
@@ -608,6 +743,12 @@ object tuyaPanelKitStrings {
   inline def middleName: middleName = "middleName".asInstanceOf[middleName]
   
   @js.native
+  sealed trait minus
+    extends StObject
+       with IconFontName
+  inline def minus: minus = "minus".asInstanceOf[minus]
+  
+  @js.native
   sealed trait miter extends StObject
   inline def miter: miter = "miter".asInstanceOf[miter]
   
@@ -622,8 +763,44 @@ object tuyaPanelKitStrings {
   inline def month: month = "month".asInstanceOf[month]
   
   @js.native
+  sealed trait moreH
+    extends StObject
+       with IconFontName
+  inline def moreH: moreH = "moreH".asInstanceOf[moreH]
+  
+  @js.native
+  sealed trait moreV
+    extends StObject
+       with IconFontName
+  inline def moreV: moreV = "moreV".asInstanceOf[moreV]
+  
+  @js.native
   sealed trait name extends StObject
   inline def name: name = "name".asInstanceOf[name]
+  
+  @js.native
+  sealed trait `name-family` extends StObject
+  inline def `name-family`: `name-family` = "name-family".asInstanceOf[`name-family`]
+  
+  @js.native
+  sealed trait `name-given` extends StObject
+  inline def `name-given`: `name-given` = "name-given".asInstanceOf[`name-given`]
+  
+  @js.native
+  sealed trait `name-middle` extends StObject
+  inline def `name-middle`: `name-middle` = "name-middle".asInstanceOf[`name-middle`]
+  
+  @js.native
+  sealed trait `name-middle-initial` extends StObject
+  inline def `name-middle-initial`: `name-middle-initial` = "name-middle-initial".asInstanceOf[`name-middle-initial`]
+  
+  @js.native
+  sealed trait `name-prefix` extends StObject
+  inline def `name-prefix`: `name-prefix` = "name-prefix".asInstanceOf[`name-prefix`]
+  
+  @js.native
+  sealed trait `name-suffix` extends StObject
+  inline def `name-suffix`: `name-suffix` = "name-suffix".asInstanceOf[`name-suffix`]
   
   @js.native
   sealed trait namePrefix extends StObject
@@ -681,6 +858,12 @@ object tuyaPanelKitStrings {
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
+  sealed trait `notice-sharp`
+    extends StObject
+       with IconFontName
+  inline def `notice-sharp`: `notice-sharp` = "notice-sharp".asInstanceOf[`notice-sharp`]
+  
+  @js.native
   sealed trait off extends StObject
   inline def off: off = "off".asInstanceOf[off]
   
@@ -719,12 +902,32 @@ object tuyaPanelKitStrings {
   inline def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
   
   @js.native
+  sealed trait parcel extends StObject
+  inline def parcel: parcel = "parcel".asInstanceOf[parcel]
+  
+  @js.native
   sealed trait password extends StObject
   inline def password: password = "password".asInstanceOf[password]
   
   @js.native
+  sealed trait `password-new` extends StObject
+  inline def `password-new`: `password-new` = "password-new".asInstanceOf[`password-new`]
+  
+  @js.native
+  sealed trait pen
+    extends StObject
+       with IconFontName
+  inline def pen: pen = "pen".asInstanceOf[pen]
+  
+  @js.native
   sealed trait phoneNumber extends StObject
   inline def phoneNumber: phoneNumber = "phoneNumber".asInstanceOf[phoneNumber]
+  
+  @js.native
+  sealed trait plus
+    extends StObject
+       with IconFontName
+  inline def plus: plus = "plus".asInstanceOf[plus]
   
   @js.native
   sealed trait polite extends StObject
@@ -743,12 +946,42 @@ object tuyaPanelKitStrings {
   inline def `portrait-upside-down`: `portrait-upside-down` = "portrait-upside-down".asInstanceOf[`portrait-upside-down`]
   
   @js.native
+  sealed trait `postal-address` extends StObject
+  inline def `postal-address`: `postal-address` = "postal-address".asInstanceOf[`postal-address`]
+  
+  @js.native
+  sealed trait `postal-address-country` extends StObject
+  inline def `postal-address-country`: `postal-address-country` = "postal-address-country".asInstanceOf[`postal-address-country`]
+  
+  @js.native
+  sealed trait `postal-address-extended` extends StObject
+  inline def `postal-address-extended`: `postal-address-extended` = "postal-address-extended".asInstanceOf[`postal-address-extended`]
+  
+  @js.native
+  sealed trait `postal-address-extended-postal-code` extends StObject
+  inline def `postal-address-extended-postal-code`: `postal-address-extended-postal-code` = "postal-address-extended-postal-code".asInstanceOf[`postal-address-extended-postal-code`]
+  
+  @js.native
+  sealed trait `postal-address-locality` extends StObject
+  inline def `postal-address-locality`: `postal-address-locality` = "postal-address-locality".asInstanceOf[`postal-address-locality`]
+  
+  @js.native
+  sealed trait `postal-address-region` extends StObject
+  inline def `postal-address-region`: `postal-address-region` = "postal-address-region".asInstanceOf[`postal-address-region`]
+  
+  @js.native
   sealed trait `postal-code` extends StObject
   inline def `postal-code`: `postal-code` = "postal-code".asInstanceOf[`postal-code`]
   
   @js.native
   sealed trait postalCode extends StObject
   inline def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
+  
+  @js.native
+  sealed trait power
+    extends StObject
+       with IconFontName
+  inline def power: power = "power".asInstanceOf[power]
   
   @js.native
   sealed trait primary extends StObject
@@ -773,14 +1006,6 @@ object tuyaPanelKitStrings {
   @js.native
   sealed trait radio extends StObject
   inline def radio: radio = "radio".asInstanceOf[radio]
-  
-  @js.native
-  sealed trait radiobutton_checked extends StObject
-  inline def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
-  
-  @js.native
-  sealed trait radiobutton_unchecked extends StObject
-  inline def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
   
   @js.native
   sealed trait raw
@@ -839,6 +1064,28 @@ object tuyaPanelKitStrings {
   inline def scrollableAxes: scrollableAxes = "scrollableAxes".asInstanceOf[scrollableAxes]
   
   @js.native
+  sealed trait secondary extends StObject
+  inline def secondary: secondary = "secondary".asInstanceOf[secondary]
+  
+  @js.native
+  sealed trait selected
+    extends StObject
+       with IconFontName
+  inline def selected: selected = "selected".asInstanceOf[selected]
+  
+  @js.native
+  sealed trait `selected-sharp`
+    extends StObject
+       with IconFontName
+  inline def `selected-sharp`: `selected-sharp` = "selected-sharp".asInstanceOf[`selected-sharp`]
+  
+  @js.native
+  sealed trait selectedUnBordered
+    extends StObject
+       with IconFontName
+  inline def selectedUnBordered: selectedUnBordered = "selectedUnBordered".asInstanceOf[selectedUnBordered]
+  
+  @js.native
   sealed trait sentences extends StObject
   inline def sentences: sentences = "sentences".asInstanceOf[sentences]
   
@@ -869,6 +1116,10 @@ object tuyaPanelKitStrings {
   @js.native
   sealed trait small extends StObject
   inline def small: small = "small".asInstanceOf[small]
+  
+  @js.native
+  sealed trait `sms-otp` extends StObject
+  inline def `sms-otp`: `sms-otp` = "sms-otp".asInstanceOf[`sms-otp`]
   
   @js.native
   sealed trait spring extends StObject
@@ -945,6 +1196,18 @@ object tuyaPanelKitStrings {
   inline def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
+  sealed trait `tel-country-code` extends StObject
+  inline def `tel-country-code`: `tel-country-code` = "tel-country-code".asInstanceOf[`tel-country-code`]
+  
+  @js.native
+  sealed trait `tel-device` extends StObject
+  inline def `tel-device`: `tel-device` = "tel-device".asInstanceOf[`tel-device`]
+  
+  @js.native
+  sealed trait `tel-national` extends StObject
+  inline def `tel-national`: `tel-national` = "tel-national".asInstanceOf[`tel-national`]
+  
+  @js.native
   sealed trait telephoneNumber extends StObject
   inline def telephoneNumber: telephoneNumber = "telephoneNumber".asInstanceOf[telephoneNumber]
   
@@ -997,8 +1260,24 @@ object tuyaPanelKitStrings {
   inline def `unless-editing`: `unless-editing` = "unless-editing".asInstanceOf[`unless-editing`]
   
   @js.native
+  sealed trait unselected
+    extends StObject
+       with IconFontName
+  inline def unselected: unselected = "unselected".asInstanceOf[unselected]
+  
+  @js.native
+  sealed trait `unselected-sharp`
+    extends StObject
+       with IconFontName
+  inline def `unselected-sharp`: `unselected-sharp` = "unselected-sharp".asInstanceOf[`unselected-sharp`]
+  
+  @js.native
   sealed trait username extends StObject
   inline def username: username = "username".asInstanceOf[username]
+  
+  @js.native
+  sealed trait `username-new` extends StObject
+  inline def `username-new`: `username-new` = "username-new".asInstanceOf[`username-new`]
   
   @js.native
   sealed trait value
@@ -1019,7 +1298,63 @@ object tuyaPanelKitStrings {
   inline def `vertical-inverted`: `vertical-inverted` = "vertical-inverted".asInstanceOf[`vertical-inverted`]
   
   @js.native
-  sealed trait warning extends StObject
+  sealed trait `volume-border-1`
+    extends StObject
+       with IconFontName
+  inline def `volume-border-1`: `volume-border-1` = "volume-border-1".asInstanceOf[`volume-border-1`]
+  
+  @js.native
+  sealed trait `volume-border-2`
+    extends StObject
+       with IconFontName
+  inline def `volume-border-2`: `volume-border-2` = "volume-border-2".asInstanceOf[`volume-border-2`]
+  
+  @js.native
+  sealed trait `volume-border-off`
+    extends StObject
+       with IconFontName
+  inline def `volume-border-off`: `volume-border-off` = "volume-border-off".asInstanceOf[`volume-border-off`]
+  
+  @js.native
+  sealed trait `volume-sharp-max`
+    extends StObject
+       with IconFontName
+  inline def `volume-sharp-max`: `volume-sharp-max` = "volume-sharp-max".asInstanceOf[`volume-sharp-max`]
+  
+  @js.native
+  sealed trait `volume-sharp-off`
+    extends StObject
+       with IconFontName
+  inline def `volume-sharp-off`: `volume-sharp-off` = "volume-sharp-off".asInstanceOf[`volume-sharp-off`]
+  
+  @js.native
+  sealed trait volumeMax
+    extends StObject
+       with IconFontName
+  inline def volumeMax: volumeMax = "volumeMax".asInstanceOf[volumeMax]
+  
+  @js.native
+  sealed trait volumeMaxBorder
+    extends StObject
+       with IconFontName
+  inline def volumeMaxBorder: volumeMaxBorder = "volumeMaxBorder".asInstanceOf[volumeMaxBorder]
+  
+  @js.native
+  sealed trait volumeMute
+    extends StObject
+       with IconFontName
+  inline def volumeMute: volumeMute = "volumeMute".asInstanceOf[volumeMute]
+  
+  @js.native
+  sealed trait volumeMuteBorder
+    extends StObject
+       with IconFontName
+  inline def volumeMuteBorder: volumeMuteBorder = "volumeMuteBorder".asInstanceOf[volumeMuteBorder]
+  
+  @js.native
+  sealed trait warning
+    extends StObject
+       with IconFontName
   inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "VertexBuffer")
 @js.native
-class VertexBuffer protected ()
-  extends typings.babylonjs.babylonjsIndexMod.VertexBuffer {
+open class VertexBuffer protected ()
+  extends typings.babylonjs.buffersIndexMod.VertexBuffer {
   /**
     * Constructor
     * @param engine the engine
@@ -27,8 +27,8 @@ class VertexBuffer protected ()
     * @param takeBufferOwnership defines if the buffer should be released when the vertex buffer is disposed
     */
   def this(
-    engine: js.Any,
-    data: DataArray | typings.babylonjs.bufferMod.Buffer,
+    engine: Any,
+    data: DataArray | typings.babylonjs.bufferMod.Buffer | typings.babylonjs.dataBufferMod.DataBuffer,
     kind: String,
     updatable: Boolean,
     postponeInternalCreation: js.UndefOr[Boolean],
@@ -56,6 +56,13 @@ object VertexBuffer {
   @JSImport("babylonjs/index", "VertexBuffer.BYTE")
   @js.native
   val BYTE: Double = js.native
+  
+  /**
+    * Instance Colors
+    */
+  @JSImport("babylonjs/index", "VertexBuffer.ColorInstanceKind")
+  @js.native
+  val ColorInstanceKind: String = js.native
   
   /**
     * Colors
@@ -233,8 +240,13 @@ object VertexBuffer {
   @js.native
   val UVKind: String = js.native
   
+  @JSImport("babylonjs/index", "VertexBuffer._Counter")
+  @js.native
+  def _Counter: Any = js.native
+  inline def _Counter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Counter")(x.asInstanceOf[js.Any])
+  
   @JSImport("babylonjs/index", "VertexBuffer._GetFloatValue")
   @js.native
-  def _GetFloatValue: js.Any = js.native
-  inline def _GetFloatValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFloatValue")(x.asInstanceOf[js.Any])
+  def _GetFloatValue: Any = js.native
+  inline def _GetFloatValue_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetFloatValue")(x.asInstanceOf[js.Any])
 }

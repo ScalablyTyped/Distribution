@@ -7,7 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DkimAttributes extends StObject {
   
   /**
-    * A string that indicates how DKIM was configured for the identity. There are two possible values:    AWS_SES – Indicates that DKIM was configured for the identity by using Easy DKIM.    EXTERNAL – Indicates that DKIM was configured for the identity by using Bring Your Own DKIM (BYODKIM).  
+    * [Easy DKIM] The key length of the DKIM key pair in use.
+    */
+  var CurrentSigningKeyLength: js.UndefOr[DkimSigningKeyLength] = js.undefined
+  
+  /**
+    * [Easy DKIM] The last time a key pair was generated for this identity.
+    */
+  var LastKeyGenerationTimestamp: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * [Easy DKIM] The key length of the future DKIM key pair to be generated. This can be changed at most once per day.
+    */
+  var NextSigningKeyLength: js.UndefOr[DkimSigningKeyLength] = js.undefined
+  
+  /**
+    * A string that indicates how DKIM was configured for the identity. These are the possible values:    AWS_SES – Indicates that DKIM was configured for the identity by using Easy DKIM.    EXTERNAL – Indicates that DKIM was configured for the identity by using Bring Your Own DKIM (BYODKIM).  
     */
   var SigningAttributesOrigin: js.UndefOr[DkimSigningAttributesOrigin] = js.undefined
   
@@ -35,6 +50,18 @@ object DkimAttributes {
   
   extension [Self <: DkimAttributes](x: Self) {
     
+    inline def setCurrentSigningKeyLength(value: DkimSigningKeyLength): Self = StObject.set(x, "CurrentSigningKeyLength", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentSigningKeyLengthUndefined: Self = StObject.set(x, "CurrentSigningKeyLength", js.undefined)
+    
+    inline def setLastKeyGenerationTimestamp(value: js.Date): Self = StObject.set(x, "LastKeyGenerationTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setLastKeyGenerationTimestampUndefined: Self = StObject.set(x, "LastKeyGenerationTimestamp", js.undefined)
+    
+    inline def setNextSigningKeyLength(value: DkimSigningKeyLength): Self = StObject.set(x, "NextSigningKeyLength", value.asInstanceOf[js.Any])
+    
+    inline def setNextSigningKeyLengthUndefined: Self = StObject.set(x, "NextSigningKeyLength", js.undefined)
+    
     inline def setSigningAttributesOrigin(value: DkimSigningAttributesOrigin): Self = StObject.set(x, "SigningAttributesOrigin", value.asInstanceOf[js.Any])
     
     inline def setSigningAttributesOriginUndefined: Self = StObject.set(x, "SigningAttributesOrigin", js.undefined)
@@ -51,6 +78,6 @@ object DkimAttributes {
     
     inline def setTokensUndefined: Self = StObject.set(x, "Tokens", js.undefined)
     
-    inline def setTokensVarargs(value: DnsToken*): Self = StObject.set(x, "Tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: DnsToken*): Self = StObject.set(x, "Tokens", js.Array(value*))
   }
 }

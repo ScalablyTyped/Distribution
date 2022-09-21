@@ -11,9 +11,9 @@ a wrapper around tape that catches and reports exceptions
 | Full name          | tape-catch |
 | Keywords           | tape, exception, catch |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 235691 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 32714.333333333332 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/michaelrhodes/tape-catch)

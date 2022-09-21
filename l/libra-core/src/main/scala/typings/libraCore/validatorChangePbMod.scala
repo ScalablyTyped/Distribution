@@ -8,7 +8,6 @@ import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.eventsPbMod.EventWithProof
 import typings.libraCore.ledgerInfoPbMod.LedgerInfoWithSignatures
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object validatorChangePbMod {
   
   @JSImport("libra-core/lib/@/generated/validator_change_pb", "ValidatorChangeEventWithProof")
   @js.native
-  class ValidatorChangeEventWithProof () extends Message {
+  open class ValidatorChangeEventWithProof () extends Message {
     
     def clearEventWithProof(): Unit = js.native
     
@@ -44,7 +43,7 @@ object validatorChangePbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): ValidatorChangeEventWithProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ValidatorChangeEventWithProof]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): ValidatorChangeEventWithProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ValidatorChangeEventWithProof]
     
     inline def deserializeBinaryFromReader(message: ValidatorChangeEventWithProof, reader: BinaryReader): ValidatorChangeEventWithProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ValidatorChangeEventWithProof]
     

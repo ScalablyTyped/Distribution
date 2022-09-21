@@ -15,5 +15,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The constructor produces a CommandHandler with the default key bindings.
   */
-class CommandHandler ()
+open class CommandHandler ()
   extends typings.go.mod.CommandHandler

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-node", "CreateMultipartUploadCommand")
 @js.native
-class CreateMultipartUploadCommand protected ()
+open class CreateMultipartUploadCommand protected ()
   extends typings.awsSdkClientS3Node.createMultipartUploadCommandMod.CreateMultipartUploadCommand {
   def this(input: CreateMultipartUploadInput) = this()
 }

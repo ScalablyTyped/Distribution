@@ -10,6 +10,9 @@ trait Domain extends StObject {
   /** Optional. The name of delegated administrator account used to perform Active Directory operations. If not specified, `setupadmin` will be used. */
   var admin: js.UndefOr[String] = js.undefined
   
+  /** Optional. Configuration for audit logs. True if audit logs are enabled, else false. Default is audit logs disabled. */
+  var auditLogsEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Optional. The full names of the Google Compute Engine [networks](/compute/docs/networks-and-firewalls#networks) the domain instance is connected to. Networks can be added using
     * UpdateDomain. The domain is only available on networks listed in `authorized_networks`. If CIDR subnets overlap between networks, domain creation will fail.
@@ -29,7 +32,7 @@ trait Domain extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientManagedidentities.maximMazurokGapiClientManagedidentitiesStrings.Domain & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientManagedidentities.maximMazurokGapiClientManagedidentitiesStrings.Domain & TopLevel[Any]
   ] = js.undefined
   
   /** Required. Locations where domain needs to be provisioned. regions e.g. us-west1 or us-east4 Service supports up to 4 locations at once. Each location will use a /26 block. */
@@ -69,11 +72,15 @@ object Domain {
     
     inline def setAdminUndefined: Self = StObject.set(x, "admin", js.undefined)
     
+    inline def setAuditLogsEnabled(value: Boolean): Self = StObject.set(x, "auditLogsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAuditLogsEnabledUndefined: Self = StObject.set(x, "auditLogsEnabled", js.undefined)
+    
     inline def setAuthorizedNetworks(value: js.Array[String]): Self = StObject.set(x, "authorizedNetworks", value.asInstanceOf[js.Any])
     
     inline def setAuthorizedNetworksUndefined: Self = StObject.set(x, "authorizedNetworks", js.undefined)
     
-    inline def setAuthorizedNetworksVarargs(value: String*): Self = StObject.set(x, "authorizedNetworks", js.Array(value :_*))
+    inline def setAuthorizedNetworksVarargs(value: String*): Self = StObject.set(x, "authorizedNetworks", js.Array(value*))
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
@@ -86,7 +93,7 @@ object Domain {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientManagedidentities.maximMazurokGapiClientManagedidentitiesStrings.Domain & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientManagedidentities.maximMazurokGapiClientManagedidentitiesStrings.Domain & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -95,7 +102,7 @@ object Domain {
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -117,7 +124,7 @@ object Domain {
     
     inline def setTrustsUndefined: Self = StObject.set(x, "trusts", js.undefined)
     
-    inline def setTrustsVarargs(value: Trust*): Self = StObject.set(x, "trusts", js.Array(value :_*))
+    inline def setTrustsVarargs(value: Trust*): Self = StObject.set(x, "trusts", js.Array(value*))
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     

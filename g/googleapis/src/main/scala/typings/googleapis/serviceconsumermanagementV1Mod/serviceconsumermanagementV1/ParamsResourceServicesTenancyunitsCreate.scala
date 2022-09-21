@@ -1,9 +1,5 @@
 package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagementV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,17 +9,7 @@ trait ParamsResourceServicesTenancyunitsCreate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * services/{service}/{collection id}/{resource id} {collection id} is the
-    * cloud resource collection type representing the service consumer, for
-    * example 'projects', or 'organizations'. {resource id} is the consumer
-    * numeric id, such as project number: '123456'. {service} the name of a
-    * managed service, such as 'service.googleapis.com'. Enables service
-    * binding using the new tenancy unit.
+    * Required. services/{service\}/{collection id\}/{resource id\} {collection id\} is the cloud resource collection type representing the service consumer, for example 'projects', or 'organizations'. {resource id\} is the consumer numeric id, such as project number: '123456'. {service\} the name of a managed service, such as 'service.googleapis.com'. Enables service binding using the new tenancy unit.
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -40,10 +26,6 @@ object ParamsResourceServicesTenancyunitsCreate {
   }
   
   extension [Self <: ParamsResourceServicesTenancyunitsCreate](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,6 @@ import typings.dateIoCore.dateIoCoreStrings.shortDate
 import typings.dateIoCore.dateIoCoreStrings.weekday
 import typings.dateIoCore.dateIoCoreStrings.weekdayShort
 import typings.dateIoCore.dateIoCoreStrings.year
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -92,7 +91,7 @@ object mod {
     /** Month with date format string @example "January 1" */
     var monthAndDate: TLibFormatToken
     
-    /** Short month format string @example "January 2018" */
+    /** Month with year format string @example "January 2018" */
     var monthAndYear: TLibFormatToken
     
     /** Short month format string @example "Jan" */
@@ -212,8 +211,10 @@ object mod {
     }
   }
   
+  trait ExtendableDateType extends StObject
+  
   @js.native
-  trait IUtils[TDate] extends StObject {
+  trait IUtils[TDate /* <: ExtendableDateType */] extends StObject {
     
     def addDays(value: TDate, count: Double): TDate = js.native
     
@@ -227,17 +228,21 @@ object mod {
     
     def addWeeks(value: TDate, count: Double): TDate = js.native
     
+    def addYears(value: TDate, count: Double): TDate = js.native
+    
     // constructor (options?: { formats?: DateIOFormats, locale?: any, instance?: any });
     def date(): TDate | Null = js.native
-    def date(value: js.Any): TDate | Null = js.native
+    def date(value: Any): TDate | Null = js.native
     
-    var dayjs: js.UndefOr[js.Any] = js.native
+    var dayjs: js.UndefOr[Any] = js.native
     
     def endOfDay(value: TDate): TDate = js.native
     
     def endOfMonth(value: TDate): TDate = js.native
     
     def endOfWeek(value: TDate): TDate = js.native
+    
+    def endOfYear(value: TDate): TDate = js.native
     
     def format(
       value: TDate,
@@ -248,7 +253,7 @@ object mod {
     
     def formatNumber(numberToFormat: String): String = js.native
     
-    var formats: DateIOFormats[js.Any] = js.native
+    var formats: DateIOFormats[Any] = js.native
     
     def getCurrentLocaleCode(): String = js.native
     
@@ -265,10 +270,7 @@ object mod {
     def getHours(value: TDate): Double = js.native
     
     /** Allow to customize displaying "am/pm" strings */
-    @JSName("getMeridiemText")
-    def getMeridiemText_am(ampm: am): String = js.native
-    @JSName("getMeridiemText")
-    def getMeridiemText_pm(ampm: pm): String = js.native
+    def getMeridiemText(ampm: am | pm): String = js.native
     
     def getMinutes(value: TDate): Double = js.native
     
@@ -304,7 +306,7 @@ object mod {
     
     def isBeforeYear(value: TDate, comparing: TDate): Boolean = js.native
     
-    def isEqual(value: js.Any, comparing: js.Any): Boolean = js.native
+    def isEqual(value: Any, comparing: Any): Boolean = js.native
     
     def isNull(): Boolean = js.native
     def isNull(value: TDate): Boolean = js.native
@@ -317,20 +319,22 @@ object mod {
     
     def isSameYear(value: TDate, comparing: TDate): Boolean = js.native
     
-    def isValid(value: js.Any): Boolean = js.native
+    def isValid(value: Any): Boolean = js.native
     
     def isWithinRange(value: TDate, range: js.Tuple2[TDate, TDate]): Boolean = js.native
     
     /** Name of the library that is used right now */
     var lib: String = js.native
     
-    var locale: js.UndefOr[js.Any] = js.native
+    var locale: js.UndefOr[Any] = js.native
     
     def mergeDateAndTime(date: TDate, time: TDate): TDate = js.native
     
-    var moment: js.UndefOr[js.Any] = js.native
+    var moment: js.UndefOr[Any] = js.native
     
     def parse(value: String, format: String): TDate | Null = js.native
+    
+    def parseISO(isString: String): TDate = js.native
     
     def setHours(value: TDate, count: Double): TDate = js.native
     
@@ -348,7 +352,11 @@ object mod {
     
     def startOfWeek(value: TDate): TDate = js.native
     
-    def toJsDate(value: TDate): Date = js.native
+    def startOfYear(value: TDate): TDate = js.native
+    
+    def toISO(value: TDate): String = js.native
+    
+    def toJsDate(value: TDate): js.Date = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

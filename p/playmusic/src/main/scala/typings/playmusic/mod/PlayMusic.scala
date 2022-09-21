@@ -1,6 +1,5 @@
 package typings.playmusic.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ trait PlayMusic extends StObject {
     */
   def addPlayList(
     playlistName: String,
-    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit]
+    callback: js.Function2[/* error */ js.Error, /* mutateResponses */ MutateResponses, Unit]
   ): Unit = js.native
   
   /**
@@ -31,50 +30,50 @@ trait PlayMusic extends StObject {
   def addTrackToPlayList(
     songIds: String,
     playlistId: String,
-    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit]
+    callback: js.Function2[/* error */ js.Error, /* mutateResponses */ MutateResponses, Unit]
   ): Unit = js.native
   def addTrackToPlayList(
     songIds: String,
     playlistId: String,
-    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit],
+    callback: js.Function2[/* error */ js.Error, /* mutateResponses */ MutateResponses, Unit],
     entryBeforeClientId: String
   ): Unit = js.native
   def addTrackToPlayList(
     songIds: String,
     playlistId: String,
-    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit],
+    callback: js.Function2[/* error */ js.Error, /* mutateResponses */ MutateResponses, Unit],
     entryBeforeClientId: String,
     entryAfterClientId: String
   ): Unit = js.native
   def addTrackToPlayList(
     songIds: String,
     playlistId: String,
-    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit],
+    callback: js.Function2[/* error */ js.Error, /* mutateResponses */ MutateResponses, Unit],
     entryBeforeClientId: Unit,
     entryAfterClientId: String
   ): Unit = js.native
   def addTrackToPlayList(
     songIds: js.Array[String],
     playlistId: String,
-    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit]
+    callback: js.Function2[/* error */ js.Error, /* mutateResponses */ MutateResponses, Unit]
   ): Unit = js.native
   def addTrackToPlayList(
     songIds: js.Array[String],
     playlistId: String,
-    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit],
+    callback: js.Function2[/* error */ js.Error, /* mutateResponses */ MutateResponses, Unit],
     entryBeforeClientId: String
   ): Unit = js.native
   def addTrackToPlayList(
     songIds: js.Array[String],
     playlistId: String,
-    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit],
+    callback: js.Function2[/* error */ js.Error, /* mutateResponses */ MutateResponses, Unit],
     entryBeforeClientId: String,
     entryAfterClientId: String
   ): Unit = js.native
   def addTrackToPlayList(
     songIds: js.Array[String],
     playlistId: String,
-    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit],
+    callback: js.Function2[/* error */ js.Error, /* mutateResponses */ MutateResponses, Unit],
     entryBeforeClientId: Unit,
     entryAfterClientId: String
   ): Unit = js.native
@@ -88,7 +87,7 @@ trait PlayMusic extends StObject {
     * @param song object - the track dictionary. You can get from getAllAccessTrack or from getLibrary
     * @param callback function(err, success) - success callback
     */
-  def changeTrackMetadata(song: js.Any, callback: js.Function2[/* error */ Error, /* success */ MutateResponses, Unit]): Unit = js.native
+  def changeTrackMetadata(song: Any, callback: js.Function2[/* error */ js.Error, /* success */ MutateResponses, Unit]): Unit = js.native
   
   /**
     * Deletes a playlist
@@ -98,7 +97,7 @@ trait PlayMusic extends StObject {
     */
   def deletePlaylist(
     playlistId: String,
-    callback: js.Function2[/* error */ Error, /* mutationStatus */ MutateResponses, Unit]
+    callback: js.Function2[/* error */ js.Error, /* mutationStatus */ MutateResponses, Unit]
   ): Unit = js.native
   
   /**
@@ -106,7 +105,7 @@ trait PlayMusic extends StObject {
     *
     * @param callback function(error, response) - success callback
     */
-  def getLibrary(callback: js.Function2[/* error */ Error, /* response */ LibraryResponse, Unit]): Unit = js.native
+  def getLibrary(callback: js.Function2[/* error */ js.Error, /* response */ LibraryResponse, Unit]): Unit = js.native
   /**
     * Returns list of all tracks.
     *
@@ -115,7 +114,7 @@ trait PlayMusic extends StObject {
     */
   def getLibrary(
     options: LibraryOptions,
-    callback: js.Function2[/* error */ Error, /* response */ LibraryResponse, Unit]
+    callback: js.Function2[/* error */ js.Error, /* response */ LibraryResponse, Unit]
   ): Unit = js.native
   
   /**
@@ -123,7 +122,7 @@ trait PlayMusic extends StObject {
     *
     * @param callback function(error, response) - success callback
     */
-  def getPlayListEntries(callback: js.Function2[/* error */ Error, /* response */ PlaylistResponse, Unit]): Unit = js.native
+  def getPlayListEntries(callback: js.Function2[/* error */ js.Error, /* response */ PlaylistResponse, Unit]): Unit = js.native
   /**
     * Returns tracks on all playlists.
     *
@@ -132,7 +131,7 @@ trait PlayMusic extends StObject {
     */
   def getPlayListEntries(
     options: PlaylistOptions,
-    callback: js.Function2[/* error */ Error, /* response */ PlaylistResponse, Unit]
+    callback: js.Function2[/* error */ js.Error, /* response */ PlaylistResponse, Unit]
   ): Unit = js.native
   
   /**
@@ -140,14 +139,14 @@ trait PlayMusic extends StObject {
     *
     * @param callback function(error, playlists) - success callback
     */
-  def getPlayLists(callback: js.Function2[/* error */ Error, /* response */ PlaylistListResponse, Unit]): Unit = js.native
+  def getPlayLists(callback: js.Function2[/* error */ js.Error, /* response */ PlaylistListResponse, Unit]): Unit = js.native
   
   /**
     * Returns settings / device ids authorized for account.
     *
     * @param callback function(error, response) - success callback
     */
-  def getSettings(callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
+  def getSettings(callback: js.Function2[/* error */ js.Error, /* response */ Any, Unit]): Unit = js.native
   
   /**
     * Opens and returns a stream object
@@ -155,7 +154,7 @@ trait PlayMusic extends StObject {
     * @param id string - track id, hyphenated is preferred, but "nid" will work for all access tracks (not uploaded ones)
     * @param callback function(stream) - success callback
     */
-  def getStream(id: String, callback: js.Function2[/* error */ Error, /* stream */ js.Any, Unit]): Unit = js.native
+  def getStream(id: String, callback: js.Function2[/* error */ js.Error, /* stream */ Any, Unit]): Unit = js.native
   
   /**
     * Returns stream URL for a track.
@@ -163,7 +162,7 @@ trait PlayMusic extends StObject {
     * @param id string - track id, hyphenated is preferred, but "nid" will work for all access tracks (not uploaded ones)
     * @param callback function(err, streamUrl) - success callback
     */
-  def getStreamUrl(id: String, callback: js.Function2[/* error */ Error, /* streamUrl */ String, Unit]): Unit = js.native
+  def getStreamUrl(id: String, callback: js.Function2[/* error */ js.Error, /* streamUrl */ String, Unit]): Unit = js.native
   
   /**
     * Increments track's playcount
@@ -173,14 +172,14 @@ trait PlayMusic extends StObject {
     */
   def incrementTrackPlaycount(
     songId: String,
-    callback: js.Function2[/* error */ Error, /* mutationStatus */ MutateResponses, Unit]
+    callback: js.Function2[/* error */ js.Error, /* mutationStatus */ MutateResponses, Unit]
   ): Unit = js.native
   
-  def init(options: InitOptions, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  def init(options: InitOptions, callback: js.Function1[/* error */ js.Error, Unit]): Unit = js.native
   
   def login(
     options: LoginOptions,
-    callback: js.Function2[/* error */ Error, /* response */ LoginResponse, Unit]
+    callback: js.Function2[/* error */ js.Error, /* response */ LoginResponse, Unit]
   ): Unit = js.native
   
   /**
@@ -195,7 +194,7 @@ trait PlayMusic extends StObject {
     entryToMove: String,
     entryBeforeClientId: String,
     entryAfterClientId: String,
-    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit]
+    callback: js.Function2[/* error */ js.Error, /* mutateResponses */ MutateResponses, Unit]
   ): Unit = js.native
   
   /**
@@ -206,11 +205,11 @@ trait PlayMusic extends StObject {
     */
   def removePlayListEntry(
     playlistItemIds: String,
-    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit]
+    callback: js.Function2[/* error */ js.Error, /* mutateResponses */ MutateResponses, Unit]
   ): Unit = js.native
   def removePlayListEntry(
     playlistItemIds: js.Array[String],
-    callback: js.Function2[/* error */ Error, /* mutateResponses */ MutateResponses, Unit]
+    callback: js.Function2[/* error */ js.Error, /* mutateResponses */ MutateResponses, Unit]
   ): Unit = js.native
   
   /**
@@ -223,7 +222,7 @@ trait PlayMusic extends StObject {
   def search(
     text: String,
     maxResults: Double,
-    callback: js.Function2[/* error */ Error, /* searchResults */ js.Any, Unit]
+    callback: js.Function2[/* error */ js.Error, /* searchResults */ Any, Unit]
   ): Unit = js.native
   
   /**
@@ -236,6 +235,6 @@ trait PlayMusic extends StObject {
   def updatePlayListMeta(
     playlistId: String,
     updates: PlaylistMeta,
-    callback: js.Function2[/* error */ Error, /* mutationStatus */ MutateResponses, Unit]
+    callback: js.Function2[/* error */ js.Error, /* mutationStatus */ MutateResponses, Unit]
   ): Unit = js.native
 }

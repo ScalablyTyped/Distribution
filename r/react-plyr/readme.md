@@ -10,10 +10,10 @@ A simple, accessible HTML5 media player React Component
 | ------------------ | :-------------: |
 | Full name          | react-plyr |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 169151 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 10816.666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/react-plyr)

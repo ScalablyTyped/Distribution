@@ -1,6 +1,7 @@
 package typings.chardet
 
-import typings.node.Buffer
+import typings.chardet.anon.PartialFullOptions
+import typings.chardet.matchMod.Match
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,58 +12,54 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def detect(buf: Buffer): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(buf.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  inline def detect(buf: Buffer, opts: Options): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("detect")(buf.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  
-  inline def detectAll(buf: Buffer): js.Array[Confidence] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detectAll")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Array[Confidence] | Null]
-  inline def detectAll(buf: Buffer, opts: Options): js.Array[Confidence] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("detectAll")(buf.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[Confidence] | Null]
-  
-  inline def detectFile(path: String, cb: js.Function2[/* err */ js.Any, /* result */ String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFile")(path.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def detectFile(path: String, opts: Options, cb: js.Function2[/* err */ js.Any, /* result */ String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFile")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def detectFileAll(path: String, cb: js.Function2[/* err */ js.Any, /* result */ js.Array[Confidence] | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFileAll")(path.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def detectFileAll(
-    path: String,
-    opts: Options,
-    cb: js.Function2[/* err */ js.Any, /* result */ js.Array[Confidence] | Null, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFileAll")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def detectFileAllSync(path: String): js.Array[Confidence] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detectFileAllSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Confidence] | Null]
-  inline def detectFileAllSync(path: String, opts: Options): js.Array[Confidence] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFileAllSync")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[Confidence] | Null]
-  
-  inline def detectFileSync(path: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detectFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  inline def detectFileSync(path: String, opts: Options): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFileSync")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-  
-  trait Confidence extends StObject {
+  object default {
     
-    var confidence: Double
+    @JSImport("chardet", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    var lang: js.UndefOr[String] = js.undefined
+    inline def analyse(buffer: js.typedarray.Uint8Array): js.Array[Match] = ^.asInstanceOf[js.Dynamic].applyDynamic("analyse")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Array[Match]]
     
-    var name: String
+    inline def detect(buffer: js.typedarray.Uint8Array): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(buffer.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    
+    inline def detectFile(filepath: String): js.Promise[DetectResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectFile")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DetectResult]]
+    inline def detectFile(filepath: String, opts: PartialFullOptions): js.Promise[DetectResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFile")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DetectResult]]
+    
+    inline def detectFileSync(filepath: String): DetectResult = ^.asInstanceOf[js.Dynamic].applyDynamic("detectFileSync")(filepath.asInstanceOf[js.Any]).asInstanceOf[DetectResult]
+    inline def detectFileSync(filepath: String, opts: PartialFullOptions): DetectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFileSync")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DetectResult]
   }
-  object Confidence {
+  
+  inline def analyse(buffer: js.typedarray.Uint8Array): js.Array[Match] = ^.asInstanceOf[js.Dynamic].applyDynamic("analyse")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Array[Match]]
+  
+  inline def detect(buffer: js.typedarray.Uint8Array): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(buffer.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  
+  inline def detectFile(filepath: String): js.Promise[DetectResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectFile")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DetectResult]]
+  inline def detectFile(filepath: String, opts: Options): js.Promise[DetectResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFile")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DetectResult]]
+  
+  inline def detectFileSync(filepath: String): DetectResult = ^.asInstanceOf[js.Dynamic].applyDynamic("detectFileSync")(filepath.asInstanceOf[js.Any]).asInstanceOf[DetectResult]
+  inline def detectFileSync(filepath: String, opts: Options): DetectResult = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFileSync")(filepath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DetectResult]
+  
+  type DetectResult = js.Array[Match] | String | Null
+  
+  trait FullOptions extends StObject {
     
-    inline def apply(confidence: Double, name: String): Confidence = {
-      val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Confidence]
+    var sampleSize: Double
+  }
+  object FullOptions {
+    
+    inline def apply(sampleSize: Double): FullOptions = {
+      val __obj = js.Dynamic.literal(sampleSize = sampleSize.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FullOptions]
     }
     
-    extension [Self <: Confidence](x: Self) {
+    extension [Self <: FullOptions](x: Self) {
       
-      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
-      
-      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
-      
-      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setSampleSize(value: Double): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
     }
   }
   
+  /* Inlined std.Partial<chardet.chardet.FullOptions> */
   trait Options extends StObject {
-    
-    var returnAllMatches: js.UndefOr[Boolean] = js.undefined
     
     var sampleSize: js.UndefOr[Double] = js.undefined
   }
@@ -74,10 +71,6 @@ object mod {
     }
     
     extension [Self <: Options](x: Self) {
-      
-      inline def setReturnAllMatches(value: Boolean): Self = StObject.set(x, "returnAllMatches", value.asInstanceOf[js.Any])
-      
-      inline def setReturnAllMatchesUndefined: Self = StObject.set(x, "returnAllMatches", js.undefined)
       
       inline def setSampleSize(value: Double): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,7 +64,7 @@ trait IPhysicsEnabledObject extends StObject {
     * @param kind The type of vertex data
     * @returns A nullable array of numbers, or a float32 array
     */
-  def getVerticesData(kind: String): Nullable[js.Array[Double] | Float32Array] = js.native
+  def getVerticesData(kind: String): Nullable[js.Array[Double] | js.typedarray.Float32Array] = js.native
   
   /**
     * Gets the world matrix
@@ -76,7 +75,7 @@ trait IPhysicsEnabledObject extends StObject {
   /**
     * The parent of the physics-enabled object
     */
-  var parent: js.UndefOr[js.Any] = js.native
+  var parent: js.UndefOr[Any] = js.native
   
   /**
     * The position of the physics-enabled object

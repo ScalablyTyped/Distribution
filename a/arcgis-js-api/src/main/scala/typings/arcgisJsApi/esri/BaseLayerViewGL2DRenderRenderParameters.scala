@@ -16,7 +16,7 @@ trait BaseLayerViewGL2DRenderRenderParameters
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#render)
     */
-  var context: WebGLRenderingContext | js.Any
+  var context: WebGLRenderingContext | Any
   
   /**
     * The object that describes view state.
@@ -36,7 +36,7 @@ object BaseLayerViewGL2DRenderRenderParameters {
   
   inline def apply(
     constructor: js.Function,
-    context: WebGLRenderingContext | js.Any,
+    context: WebGLRenderingContext | Any,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     state: ViewState,
@@ -48,7 +48,7 @@ object BaseLayerViewGL2DRenderRenderParameters {
   
   extension [Self <: BaseLayerViewGL2DRenderRenderParameters](x: Self) {
     
-    inline def setContext(value: WebGLRenderingContext | js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: WebGLRenderingContext | Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setState(value: ViewState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

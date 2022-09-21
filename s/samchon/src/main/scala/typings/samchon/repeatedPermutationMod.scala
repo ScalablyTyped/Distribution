@@ -9,7 +9,7 @@ object repeatedPermutationMod {
   
   @JSImport("samchon/library/case_generators/RepeatedPermutation", "RepeatedPermutation")
   @js.native
-  class RepeatedPermutation protected ()
+  open class RepeatedPermutation protected ()
     extends StObject
        with ICaseGenerator {
     /**
@@ -32,7 +32,7 @@ object repeatedPermutationMod {
     /**
       * @hidden
       */
-    /* private */ var divider_array: js.Any = js.native
+    /* private */ var divider_array: Any = js.native
     
     /**
       * Get N, number of candidates.
@@ -42,7 +42,7 @@ object repeatedPermutationMod {
     /**
       * @hidden
       */
-    /* private */ var n_ : js.Any = js.native
+    /* private */ var n_ : Any = js.native
     
     /**
       * Get R, number of elements for each case.
@@ -52,7 +52,7 @@ object repeatedPermutationMod {
     /**
       * @hidden
       */
-    /* private */ var r_ : js.Any = js.native
+    /* private */ var r_ : Any = js.native
     
     /**
       * Get size of all cases.
@@ -65,6 +65,6 @@ object repeatedPermutationMod {
     /**
       * @hidden
       */
-    /* private */ var size_ : js.Any = js.native
+    /* private */ var size_ : Any = js.native
   }
 }

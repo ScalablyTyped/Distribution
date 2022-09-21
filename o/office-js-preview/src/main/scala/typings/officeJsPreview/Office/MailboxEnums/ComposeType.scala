@@ -7,15 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ComposeType extends StObject
 /**
-  * Compose type.
-  *
-  * [Api set: Mailbox Preview]
+  * Specifies a message's compose type.
   *
   * @remarks
+  * [Api set: Mailbox 1.10]
   *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
-  *
-  * @beta
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
   */
 @JSGlobal("Office.MailboxEnums.ComposeType")
 @js.native
@@ -23,8 +20,6 @@ object ComposeType extends StObject {
   
   /**
     * Forward.
-    *
-    * [Api set: Mailbox Preview]
     */
   @js.native
   sealed trait Forward
@@ -33,8 +28,6 @@ object ComposeType extends StObject {
   
   /**
     * New mail.
-    *
-    * [Api set: Mailbox Preview]
     */
   @js.native
   sealed trait NewMail
@@ -43,8 +36,6 @@ object ComposeType extends StObject {
   
   /**
     * Reply.
-    *
-    * [Api set: Mailbox Preview]
     */
   @js.native
   sealed trait Reply

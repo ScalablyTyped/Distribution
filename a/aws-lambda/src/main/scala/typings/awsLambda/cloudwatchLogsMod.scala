@@ -40,7 +40,7 @@ object cloudwatchLogsMod {
       
       inline def setLogEvents(value: js.Array[CloudWatchLogsLogEvent]): Self = StObject.set(x, "logEvents", value.asInstanceOf[js.Any])
       
-      inline def setLogEventsVarargs(value: CloudWatchLogsLogEvent*): Self = StObject.set(x, "logEvents", js.Array(value :_*))
+      inline def setLogEventsVarargs(value: CloudWatchLogsLogEvent*): Self = StObject.set(x, "logEvents", js.Array(value*))
       
       inline def setLogGroup(value: String): Self = StObject.set(x, "logGroup", value.asInstanceOf[js.Any])
       
@@ -52,7 +52,7 @@ object cloudwatchLogsMod {
       
       inline def setSubscriptionFilters(value: js.Array[String]): Self = StObject.set(x, "subscriptionFilters", value.asInstanceOf[js.Any])
       
-      inline def setSubscriptionFiltersVarargs(value: String*): Self = StObject.set(x, "subscriptionFilters", js.Array(value :_*))
+      inline def setSubscriptionFiltersVarargs(value: String*): Self = StObject.set(x, "subscriptionFilters", js.Array(value*))
     }
   }
   
@@ -94,7 +94,7 @@ object cloudwatchLogsMod {
   
   trait CloudWatchLogsLogEvent extends StObject {
     
-    var extractedFields: js.UndefOr[StringDictionary[String]] = js.undefined
+    var extractedFields: js.UndefOr[CloudWatchLogsLogEventExtractedFields] = js.undefined
     
     var id: String
     
@@ -111,7 +111,7 @@ object cloudwatchLogsMod {
     
     extension [Self <: CloudWatchLogsLogEvent](x: Self) {
       
-      inline def setExtractedFields(value: StringDictionary[String]): Self = StObject.set(x, "extractedFields", value.asInstanceOf[js.Any])
+      inline def setExtractedFields(value: CloudWatchLogsLogEventExtractedFields): Self = StObject.set(x, "extractedFields", value.asInstanceOf[js.Any])
       
       inline def setExtractedFieldsUndefined: Self = StObject.set(x, "extractedFields", js.undefined)
       
@@ -122,4 +122,6 @@ object cloudwatchLogsMod {
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
+  
+  type CloudWatchLogsLogEventExtractedFields = StringDictionary[js.UndefOr[String]]
 }

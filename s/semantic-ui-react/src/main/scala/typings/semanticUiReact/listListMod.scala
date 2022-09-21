@@ -2,11 +2,11 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticFLOATS
 import typings.semanticUiReact.genericMod.SemanticSIZES
 import typings.semanticUiReact.genericMod.SemanticShorthandCollection
@@ -36,23 +36,23 @@ object listListMod extends Shortcut {
     extends StObject
        with FunctionComponent[ListProps] {
     
-    var Content: StatelessComponent[ListContentProps] = js.native
+    var Content: FC[ListContentProps] = js.native
     
-    var Description: StatelessComponent[ListDescriptionProps] = js.native
+    var Description: FC[ListDescriptionProps] = js.native
     
-    var Header: StatelessComponent[ListHeaderProps] = js.native
+    var Header: FC[ListHeaderProps] = js.native
     
-    var Icon: StatelessComponent[ListIconProps] = js.native
+    var Icon: FC[ListIconProps] = js.native
     
-    var Item: StatelessComponent[ListItemProps] = js.native
+    var Item: FC[ListItemProps] = js.native
     
-    var List: StatelessComponent[ListListProps] = js.native
+    var List: FC[ListListProps] = js.native
   }
   
   trait ListProps
     extends StObject
        with StrictListProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ListProps {
     
     inline def apply(): ListProps = {
@@ -67,7 +67,7 @@ object listListMod extends Shortcut {
     var animated: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A list can mark items with a bullet. */
     var bulleted: js.UndefOr[Boolean] = js.undefined
@@ -144,7 +144,7 @@ object listListMod extends Shortcut {
       
       inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -188,7 +188,7 @@ object listListMod extends Shortcut {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: SemanticShorthandItem[ListItemProps]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SemanticShorthandItem[ListItemProps]*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLink(value: Boolean): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       

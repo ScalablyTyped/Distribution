@@ -6,17 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ClassBody
   extends StObject
-     with BaseNode
-     with Node {
+     with BaseNode {
   
-  var body: js.Array[MethodDefinition]
+  var body: js.Array[MethodDefinition | PropertyDefinition | StaticBlock]
   
   @JSName("type")
   var type_ClassBody: typings.estree.estreeStrings.ClassBody
 }
 object ClassBody {
   
-  inline def apply(body: js.Array[MethodDefinition]): ClassBody = {
+  inline def apply(body: js.Array[MethodDefinition | PropertyDefinition | StaticBlock]): ClassBody = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ClassBody")
     __obj.asInstanceOf[ClassBody]
@@ -24,9 +23,9 @@ object ClassBody {
   
   extension [Self <: ClassBody](x: Self) {
     
-    inline def setBody(value: js.Array[MethodDefinition]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Array[MethodDefinition | PropertyDefinition | StaticBlock]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setBodyVarargs(value: MethodDefinition*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: (MethodDefinition | PropertyDefinition | StaticBlock)*): Self = StObject.set(x, "body", js.Array(value*))
     
     inline def setType(value: typings.estree.estreeStrings.ClassBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

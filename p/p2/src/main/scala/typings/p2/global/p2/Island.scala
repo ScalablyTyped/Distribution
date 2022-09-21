@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.Island")
 @js.native
-class Island ()
+open class Island ()
   extends typings.p2.mod.Island

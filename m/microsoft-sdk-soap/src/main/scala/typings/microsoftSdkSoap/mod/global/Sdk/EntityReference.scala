@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.EntityReference")
 @js.native
-class EntityReference protected () extends StObject {
+open class EntityReference protected () extends StObject {
   /**
     * Identifies a record.
     * @param logicalName The logical name of the entity.

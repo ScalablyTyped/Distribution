@@ -5,32 +5,50 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.candidatepair
-  - typings.std.stdStrings.datachannel
-  - typings.std.stdStrings.inboundrtp
-  - typings.std.stdStrings.localcandidate
-  - typings.std.stdStrings.outboundrtp
-  - typings.std.stdStrings.remotecandidate
-  - typings.std.stdStrings.session
+  - typings.std.stdStrings.`candidate-pair`
+  - typings.std.stdStrings.certificate
+  - typings.std.stdStrings.codec
+  - typings.std.stdStrings.csrc
+  - typings.std.stdStrings.`data-channel`
+  - typings.std.stdStrings.`inbound-rtp`
+  - typings.std.stdStrings.`local-candidate`
+  - typings.std.stdStrings.`media-source`
+  - typings.std.stdStrings.`outbound-rtp`
+  - typings.std.stdStrings.`peer-connection`
+  - typings.std.stdStrings.`remote-candidate`
+  - typings.std.stdStrings.`remote-inbound-rtp`
+  - typings.std.stdStrings.`remote-outbound-rtp`
   - typings.std.stdStrings.track
   - typings.std.stdStrings.transport
 */
 trait RTCStatsType extends StObject
 object RTCStatsType {
   
-  inline def candidatepair: typings.std.stdStrings.candidatepair = "candidatepair".asInstanceOf[typings.std.stdStrings.candidatepair]
+  inline def `candidate-pair`: typings.std.stdStrings.`candidate-pair` = "candidate-pair".asInstanceOf[typings.std.stdStrings.`candidate-pair`]
   
-  inline def datachannel: typings.std.stdStrings.datachannel = "datachannel".asInstanceOf[typings.std.stdStrings.datachannel]
+  inline def certificate: typings.std.stdStrings.certificate = "certificate".asInstanceOf[typings.std.stdStrings.certificate]
   
-  inline def inboundrtp: typings.std.stdStrings.inboundrtp = "inboundrtp".asInstanceOf[typings.std.stdStrings.inboundrtp]
+  inline def codec: typings.std.stdStrings.codec = "codec".asInstanceOf[typings.std.stdStrings.codec]
   
-  inline def localcandidate: typings.std.stdStrings.localcandidate = "localcandidate".asInstanceOf[typings.std.stdStrings.localcandidate]
+  inline def csrc: typings.std.stdStrings.csrc = "csrc".asInstanceOf[typings.std.stdStrings.csrc]
   
-  inline def outboundrtp: typings.std.stdStrings.outboundrtp = "outboundrtp".asInstanceOf[typings.std.stdStrings.outboundrtp]
+  inline def `data-channel`: typings.std.stdStrings.`data-channel` = "data-channel".asInstanceOf[typings.std.stdStrings.`data-channel`]
   
-  inline def remotecandidate: typings.std.stdStrings.remotecandidate = "remotecandidate".asInstanceOf[typings.std.stdStrings.remotecandidate]
+  inline def `inbound-rtp`: typings.std.stdStrings.`inbound-rtp` = "inbound-rtp".asInstanceOf[typings.std.stdStrings.`inbound-rtp`]
   
-  inline def session: typings.std.stdStrings.session = "session".asInstanceOf[typings.std.stdStrings.session]
+  inline def `local-candidate`: typings.std.stdStrings.`local-candidate` = "local-candidate".asInstanceOf[typings.std.stdStrings.`local-candidate`]
+  
+  inline def `media-source`: typings.std.stdStrings.`media-source` = "media-source".asInstanceOf[typings.std.stdStrings.`media-source`]
+  
+  inline def `outbound-rtp`: typings.std.stdStrings.`outbound-rtp` = "outbound-rtp".asInstanceOf[typings.std.stdStrings.`outbound-rtp`]
+  
+  inline def `peer-connection`: typings.std.stdStrings.`peer-connection` = "peer-connection".asInstanceOf[typings.std.stdStrings.`peer-connection`]
+  
+  inline def `remote-candidate`: typings.std.stdStrings.`remote-candidate` = "remote-candidate".asInstanceOf[typings.std.stdStrings.`remote-candidate`]
+  
+  inline def `remote-inbound-rtp`: typings.std.stdStrings.`remote-inbound-rtp` = "remote-inbound-rtp".asInstanceOf[typings.std.stdStrings.`remote-inbound-rtp`]
+  
+  inline def `remote-outbound-rtp`: typings.std.stdStrings.`remote-outbound-rtp` = "remote-outbound-rtp".asInstanceOf[typings.std.stdStrings.`remote-outbound-rtp`]
   
   inline def track: typings.std.stdStrings.track = "track".asInstanceOf[typings.std.stdStrings.track]
   

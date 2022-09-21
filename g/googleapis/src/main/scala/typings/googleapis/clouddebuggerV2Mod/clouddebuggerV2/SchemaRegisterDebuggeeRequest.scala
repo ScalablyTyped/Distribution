@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to register a debuggee.
-  */
 trait SchemaRegisterDebuggeeRequest extends StObject {
   
   /**
-    * Debuggee information to register. The fields `project`, `uniquifier`,
-    * `description` and `agent_version` of the debuggee must be set.
+    * Required. Debuggee information to register. The fields `project`, `uniquifier`, `description` and `agent_version` of the debuggee must be set.
     */
   var debuggee: js.UndefOr[SchemaDebuggee] = js.undefined
 }

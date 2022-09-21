@@ -10,12 +10,15 @@ A client side JavaScript image compression library
 | ------------------ | :-------------: |
 | Full name          | compress.js |
 | Keywords           | javascript, image, compression, base64 |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 89600 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 22988.0 |
+| # stars            | 112.0 |
 
 ## Links
+- [Homepage](https://github.com/alextanhongpin/compress.js#readme)
+- [Bugs](https://github.com/alextanhongpin/compress.js/issues)
+- [Repository](https://github.com/alextanhongpin/compress.js)
 - [Npm](https://www.npmjs.com/package/compress.js)
     
 

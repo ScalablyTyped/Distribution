@@ -48,13 +48,13 @@ object ManifestCatalog {
     
     inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
-    inline def setExtraVarargs(value: ManifestExtra*): Self = StObject.set(x, "extra", js.Array(value :_*))
+    inline def setExtraVarargs(value: ManifestExtra*): Self = StObject.set(x, "extra", js.Array(value*))
     
     inline def setGenres(value: js.Array[String]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
     
     inline def setGenresUndefined: Self = StObject.set(x, "genres", js.undefined)
     
-    inline def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value :_*))
+    inline def setGenresVarargs(value: String*): Self = StObject.set(x, "genres", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ trait ButtonProps
      with ButtonHTMLAttributes[HTMLButtonElement] {
   
   @JSName("children")
-  val children_ButtonProps: js.UndefOr[js.Any] = js.undefined
+  val children_ButtonProps: js.UndefOr[Any] = js.undefined
   
   val secondary: js.UndefOr[Boolean] = js.undefined
   
@@ -28,7 +28,7 @@ object ButtonProps {
   
   extension [Self <: ButtonProps](x: Self) {
     
-    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

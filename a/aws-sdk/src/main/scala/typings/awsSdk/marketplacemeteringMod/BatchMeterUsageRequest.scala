@@ -29,6 +29,6 @@ object BatchMeterUsageRequest {
     
     inline def setUsageRecords(value: UsageRecordList): Self = StObject.set(x, "UsageRecords", value.asInstanceOf[js.Any])
     
-    inline def setUsageRecordsVarargs(value: UsageRecord*): Self = StObject.set(x, "UsageRecords", js.Array(value :_*))
+    inline def setUsageRecordsVarargs(value: UsageRecord*): Self = StObject.set(x, "UsageRecords", js.Array(value*))
   }
 }

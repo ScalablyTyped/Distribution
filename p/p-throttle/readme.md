@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-throttle
 
-Typings are for version 3.1.0
+Typings are for version 5.0.0
 
 ## Library description:
 Throttle promise-returning & async functions
@@ -10,10 +10,10 @@ Throttle promise-returning & async functions
 | ------------------ | :-------------: |
 | Full name          | p-throttle |
 | Keywords           | promise, throttle, throat, limit, limited, interval, rate, batch, ratelimit, queue, discard, async, await, promises, time, out, cancel, bluebird |
-| # releases         | 2 |
-| # dependents       | 46 |
-| # downloads        | 879466 |
-| # stars            | 2 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1950141.3333333333 |
+| # stars            | 277.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-throttle#readme)

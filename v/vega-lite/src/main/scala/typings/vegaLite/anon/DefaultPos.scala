@@ -15,8 +15,6 @@ trait DefaultPos extends StObject {
   
   var defaultPos: mid | zeroOrMin | zeroOrMax | Null
   
-  var isMidPoint: js.UndefOr[Boolean] = js.undefined
-  
   var vgChannel: js.UndefOr[x | y | xc | yc] = js.undefined
 }
 object DefaultPos {
@@ -31,10 +29,6 @@ object DefaultPos {
     inline def setDefaultPos(value: mid | zeroOrMin | zeroOrMax): Self = StObject.set(x, "defaultPos", value.asInstanceOf[js.Any])
     
     inline def setDefaultPosNull: Self = StObject.set(x, "defaultPos", null)
-    
-    inline def setIsMidPoint(value: Boolean): Self = StObject.set(x, "isMidPoint", value.asInstanceOf[js.Any])
-    
-    inline def setIsMidPointUndefined: Self = StObject.set(x, "isMidPoint", js.undefined)
     
     inline def setVgChannel(value: typings.vegaLite.vegaLiteStrings.x | y | xc | yc): Self = StObject.set(x, "vgChannel", value.asInstanceOf[js.Any])
     

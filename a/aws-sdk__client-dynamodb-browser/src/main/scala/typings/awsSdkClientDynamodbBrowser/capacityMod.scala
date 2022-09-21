@@ -8,5 +8,5 @@ object capacityMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/_Capacity", "_Capacity")
   @js.native
-  val Capacity: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Capacity: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

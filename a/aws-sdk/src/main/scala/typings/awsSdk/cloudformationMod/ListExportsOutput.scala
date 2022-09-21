@@ -29,7 +29,7 @@ object ListExportsOutput {
     
     inline def setExportsUndefined: Self = StObject.set(x, "Exports", js.undefined)
     
-    inline def setExportsVarargs(value: Export*): Self = StObject.set(x, "Exports", js.Array(value :_*))
+    inline def setExportsVarargs(value: Export*): Self = StObject.set(x, "Exports", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

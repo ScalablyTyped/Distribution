@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SparkAxes")
 @js.native
-/* private */ class SparkAxes ()
+/* private */ open class SparkAxes ()
   extends StObject
      with typings.activexExcel.Excel.SparkAxes {
   
@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Horizontal: typings.activexExcel.Excel.SparkHorizontalAxis = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Vertical: typings.activexExcel.Excel.SparkVerticalAxis = js.native

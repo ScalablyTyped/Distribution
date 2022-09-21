@@ -14,7 +14,7 @@ trait MotionImageInserter extends StObject {
   /**
     * Specify the .mov file or series of .png files that you want to overlay on your video. For .png files, provide the file name of the first file in the series. Make sure that the names of the .png files end with sequential numbers that specify the order that they are played in. For example, overlay_000.png, overlay_001.png, overlay_002.png, and so on. The sequence must start at zero, and each image file name must have the same number of digits. Pad your initial file names with enough zeros to complete the sequence. For example, if the first image is overlay_0.png, there can be only 10 images in the sequence, with the last image being overlay_9.png. But if the first image is overlay_00.png, there can be 100 images in the sequence.
     */
-  var Input: js.UndefOr[stringMin14Max1285PatternS3Mov09PngHttpsMov09Png] = js.undefined
+  var Input: js.UndefOr[stringMin14PatternS3Mov09PngHttpsMov09Png] = js.undefined
   
   /**
     * Choose the type of motion graphic asset that you are providing for your overlay. You can choose either a .mov file or a series of .png files.
@@ -49,7 +49,7 @@ object MotionImageInserter {
     
     inline def setFramerateUndefined: Self = StObject.set(x, "Framerate", js.undefined)
     
-    inline def setInput(value: stringMin14Max1285PatternS3Mov09PngHttpsMov09Png): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+    inline def setInput(value: stringMin14PatternS3Mov09PngHttpsMov09Png): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
     inline def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
     

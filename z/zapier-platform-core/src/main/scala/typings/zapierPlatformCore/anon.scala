@@ -1,16 +1,13 @@
 package typings.zapierPlatformCore
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
-import typings.zapierPlatformCore.mod.AppError
-import typings.zapierPlatformCore.mod.ExpiredAuthError
-import typings.zapierPlatformCore.mod.HaltedError
+import typings.std.ReadableStream
 import typings.zapierPlatformCore.mod.HttpMethod
-import typings.zapierPlatformCore.mod.RefreshAuthError
 import typings.zapierPlatformCore.zapierPlatformCoreBooleans.`true`
 import typings.zapierPlatformCore.zapierPlatformCoreStrings.error
 import typings.zapierPlatformCore.zapierPlatformCoreStrings.follow
@@ -71,14 +68,16 @@ object anon {
         /* message */ String, 
         /* code */ js.UndefOr[String], 
         /* status */ js.UndefOr[Double], 
-        AppError
+        js.Error
       ]
     
-    var ExpiredAuthError: Instantiable0[typings.zapierPlatformCore.mod.ExpiredAuthError]
+    var ExpiredAuthError: Instantiable0[js.Error]
     
-    var HaltedError: Instantiable0[typings.zapierPlatformCore.mod.HaltedError]
+    var HaltedError: Instantiable0[js.Error]
     
-    var RefreshAuthError: Instantiable0[typings.zapierPlatformCore.mod.RefreshAuthError]
+    var RefreshAuthError: Instantiable0[js.Error]
+    
+    var ThrottledError: Instantiable2[/* message */ String, /* delay */ js.UndefOr[Double], js.Error]
   }
   object Error {
     
@@ -87,13 +86,14 @@ object anon {
           /* message */ String, 
           /* code */ js.UndefOr[String], 
           /* status */ js.UndefOr[Double], 
-          AppError
+          js.Error
         ],
-      ExpiredAuthError: Instantiable0[ExpiredAuthError],
-      HaltedError: Instantiable0[HaltedError],
-      RefreshAuthError: Instantiable0[RefreshAuthError]
+      ExpiredAuthError: Instantiable0[js.Error],
+      HaltedError: Instantiable0[js.Error],
+      RefreshAuthError: Instantiable0[js.Error],
+      ThrottledError: Instantiable2[/* message */ String, /* delay */ js.UndefOr[Double], js.Error]
     ): Error = {
-      val __obj = js.Dynamic.literal(Error = Error.asInstanceOf[js.Any], ExpiredAuthError = ExpiredAuthError.asInstanceOf[js.Any], HaltedError = HaltedError.asInstanceOf[js.Any], RefreshAuthError = RefreshAuthError.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(Error = Error.asInstanceOf[js.Any], ExpiredAuthError = ExpiredAuthError.asInstanceOf[js.Any], HaltedError = HaltedError.asInstanceOf[js.Any], RefreshAuthError = RefreshAuthError.asInstanceOf[js.Any], ThrottledError = ThrottledError.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
@@ -104,43 +104,42 @@ object anon {
               /* message */ String, 
               /* code */ js.UndefOr[String], 
               /* status */ js.UndefOr[Double], 
-              AppError
+              js.Error
             ]
       ): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
       
-      inline def setExpiredAuthError(value: Instantiable0[ExpiredAuthError]): Self = StObject.set(x, "ExpiredAuthError", value.asInstanceOf[js.Any])
+      inline def setExpiredAuthError(value: Instantiable0[js.Error]): Self = StObject.set(x, "ExpiredAuthError", value.asInstanceOf[js.Any])
       
-      inline def setHaltedError(value: Instantiable0[HaltedError]): Self = StObject.set(x, "HaltedError", value.asInstanceOf[js.Any])
+      inline def setHaltedError(value: Instantiable0[js.Error]): Self = StObject.set(x, "HaltedError", value.asInstanceOf[js.Any])
       
-      inline def setRefreshAuthError(value: Instantiable0[RefreshAuthError]): Self = StObject.set(x, "RefreshAuthError", value.asInstanceOf[js.Any])
+      inline def setRefreshAuthError(value: Instantiable0[js.Error]): Self = StObject.set(x, "RefreshAuthError", value.asInstanceOf[js.Any])
+      
+      inline def setThrottledError(value: Instantiable2[/* message */ String, /* delay */ js.UndefOr[Double], js.Error]): Self = StObject.set(x, "ThrottledError", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
   trait FnCall extends StObject {
     
-    def apply(value: js.Any): String = js.native
-    def apply(value: js.Any, replacer: js.Array[Double | String]): String = js.native
-    def apply(value: js.Any, replacer: js.Array[Double | String], space: String): String = js.native
-    def apply(value: js.Any, replacer: js.Array[Double | String], space: Double): String = js.native
+    def apply(value: Any): String = js.native
+    def apply(value: Any, replacer: js.Array[Double | String]): String = js.native
+    def apply(value: Any, replacer: js.Array[Double | String], space: String): String = js.native
+    def apply(value: Any, replacer: js.Array[Double | String], space: Double): String = js.native
+    def apply(value: Any, replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]): String = js.native
     def apply(
-      value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]
-    ): String = js.native
-    def apply(
-      value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any],
+      value: Any,
+      replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any],
       space: String
     ): String = js.native
     def apply(
-      value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any],
+      value: Any,
+      replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any],
       space: Double
     ): String = js.native
-    def apply(value: js.Any, replacer: Null, space: String): String = js.native
-    def apply(value: js.Any, replacer: Null, space: Double): String = js.native
-    def apply(value: js.Any, replacer: Unit, space: String): String = js.native
-    def apply(value: js.Any, replacer: Unit, space: Double): String = js.native
+    def apply(value: Any, replacer: Null, space: String): String = js.native
+    def apply(value: Any, replacer: Null, space: Double): String = js.native
+    def apply(value: Any, replacer: Unit, space: String): String = js.native
+    def apply(value: Any, replacer: Unit, space: Double): String = js.native
   }
   
   trait Get extends StObject {
@@ -169,7 +168,7 @@ object anon {
     
     var agent: js.UndefOr[Agent] = js.undefined
     
-    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.undefined
+    var body: js.UndefOr[String | Buffer | ReadableStream[Any] | js.Object] = js.undefined
     
     var compress: js.UndefOr[Boolean] = js.undefined
     
@@ -179,7 +178,7 @@ object anon {
     
     var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var json: js.UndefOr[js.Object | js.Array[js.Any]] = js.undefined
+    var json: js.UndefOr[js.Object | js.Array[Any]] = js.undefined
     
     var method: js.UndefOr[HttpMethod] = js.undefined
     
@@ -212,7 +211,7 @@ object anon {
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      inline def setBody(value: String | Buffer | ReadableStream | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | Buffer | ReadableStream[Any] | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -232,11 +231,11 @@ object anon {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setJson(value: js.Object | js.Array[js.Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: js.Object | js.Array[Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      inline def setJsonVarargs(value: js.Any*): Self = StObject.set(x, "json", js.Array(value :_*))
+      inline def setJsonVarargs(value: Any*): Self = StObject.set(x, "json", js.Array(value*))
       
       inline def setMethod(value: HttpMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -279,7 +278,7 @@ object anon {
     
     var agent: js.UndefOr[Agent] = js.undefined
     
-    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.undefined
+    var body: js.UndefOr[String | Buffer | ReadableStream[Any] | js.Object] = js.undefined
     
     var compress: js.UndefOr[Boolean] = js.undefined
     
@@ -289,7 +288,7 @@ object anon {
     
     var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var json: js.UndefOr[js.Object | js.Array[js.Any]] = js.undefined
+    var json: js.UndefOr[js.Object | js.Array[Any]] = js.undefined
     
     var method: js.UndefOr[HttpMethod] = js.undefined
     
@@ -322,7 +321,7 @@ object anon {
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      inline def setBody(value: String | Buffer | ReadableStream | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | Buffer | ReadableStream[Any] | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -342,11 +341,11 @@ object anon {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setJson(value: js.Object | js.Array[js.Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: js.Object | js.Array[Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      inline def setJsonVarargs(value: js.Any*): Self = StObject.set(x, "json", js.Array(value :_*))
+      inline def setJsonVarargs(value: Any*): Self = StObject.set(x, "json", js.Array(value*))
       
       inline def setMethod(value: HttpMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -387,7 +386,7 @@ object anon {
     
     var agent: js.UndefOr[Agent] = js.undefined
     
-    var body: js.UndefOr[String | Buffer | ReadableStream | js.Object] = js.undefined
+    var body: js.UndefOr[String | Buffer | ReadableStream[Any] | js.Object] = js.undefined
     
     var compress: js.UndefOr[Boolean] = js.undefined
     
@@ -397,7 +396,7 @@ object anon {
     
     var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var json: js.UndefOr[js.Object | js.Array[js.Any]] = js.undefined
+    var json: js.UndefOr[js.Object | js.Array[Any]] = js.undefined
     
     var method: js.UndefOr[HttpMethod] = js.undefined
     
@@ -430,7 +429,7 @@ object anon {
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      inline def setBody(value: String | Buffer | ReadableStream | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | Buffer | ReadableStream[Any] | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -450,11 +449,11 @@ object anon {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setJson(value: js.Object | js.Array[js.Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: js.Object | js.Array[Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      inline def setJsonVarargs(value: js.Any*): Self = StObject.set(x, "json", js.Array(value :_*))
+      inline def setJsonVarargs(value: Any*): Self = StObject.set(x, "json", js.Array(value*))
       
       inline def setMethod(value: HttpMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -516,7 +515,9 @@ object anon {
     def inject(filename: String): Unit = js.native
   }
   
-  trait IsFillingDynamicDropdown extends StObject {
+  trait IsBulkRead extends StObject {
+    
+    var isBulkRead: Boolean
     
     var isFillingDynamicDropdown: Boolean
     
@@ -532,21 +533,24 @@ object anon {
     
     var zap: js.UndefOr[Id] = js.undefined
   }
-  object IsFillingDynamicDropdown {
+  object IsBulkRead {
     
     inline def apply(
+      isBulkRead: Boolean,
       isFillingDynamicDropdown: Boolean,
       isLoadingSample: Boolean,
       isPopulatingDedupe: Boolean,
       isTestingAuth: Boolean,
       limit: Double,
       page: Double
-    ): IsFillingDynamicDropdown = {
-      val __obj = js.Dynamic.literal(isFillingDynamicDropdown = isFillingDynamicDropdown.asInstanceOf[js.Any], isLoadingSample = isLoadingSample.asInstanceOf[js.Any], isPopulatingDedupe = isPopulatingDedupe.asInstanceOf[js.Any], isTestingAuth = isTestingAuth.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IsFillingDynamicDropdown]
+    ): IsBulkRead = {
+      val __obj = js.Dynamic.literal(isBulkRead = isBulkRead.asInstanceOf[js.Any], isFillingDynamicDropdown = isFillingDynamicDropdown.asInstanceOf[js.Any], isLoadingSample = isLoadingSample.asInstanceOf[js.Any], isPopulatingDedupe = isPopulatingDedupe.asInstanceOf[js.Any], isTestingAuth = isTestingAuth.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IsBulkRead]
     }
     
-    extension [Self <: IsFillingDynamicDropdown](x: Self) {
+    extension [Self <: IsBulkRead](x: Self) {
+      
+      inline def setIsBulkRead(value: Boolean): Self = StObject.set(x, "isBulkRead", value.asInstanceOf[js.Any])
       
       inline def setIsFillingDynamicDropdown(value: Boolean): Self = StObject.set(x, "isFillingDynamicDropdown", value.asInstanceOf[js.Any])
       
@@ -571,43 +575,40 @@ object anon {
     /**
       * Acts a lot like regular `JSON.parse`, but throws a nice error for improper json input
       */
-    def parse(text: String): js.Any
+    def parse(text: String): Any
     
-    def stringify(value: js.Any): String
-    def stringify(value: js.Any, replacer: js.Array[Double | String]): String
-    def stringify(value: js.Any, replacer: js.Array[Double | String], space: String): String
-    def stringify(value: js.Any, replacer: js.Array[Double | String], space: Double): String
+    def stringify(value: Any): String
+    def stringify(value: Any, replacer: js.Array[Double | String]): String
+    def stringify(value: Any, replacer: js.Array[Double | String], space: String): String
+    def stringify(value: Any, replacer: js.Array[Double | String], space: Double): String
+    def stringify(value: Any, replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]): String
     def stringify(
-      value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]
-    ): String
-    def stringify(
-      value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any],
+      value: Any,
+      replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any],
       space: String
     ): String
     def stringify(
-      value: js.Any,
-      replacer: js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any],
+      value: Any,
+      replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any],
       space: Double
     ): String
-    def stringify(value: js.Any, replacer: Null, space: String): String
-    def stringify(value: js.Any, replacer: Null, space: Double): String
-    def stringify(value: js.Any, replacer: Unit, space: String): String
-    def stringify(value: js.Any, replacer: Unit, space: Double): String
+    def stringify(value: Any, replacer: Null, space: String): String
+    def stringify(value: Any, replacer: Null, space: Double): String
+    def stringify(value: Any, replacer: Unit, space: String): String
+    def stringify(value: Any, replacer: Unit, space: Double): String
     @JSName("stringify")
     var stringify_Original: FnCall
   }
   object Parse {
     
-    inline def apply(parse: String => js.Any, stringify: FnCall): Parse = {
+    inline def apply(parse: String => Any, stringify: FnCall): Parse = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = stringify.asInstanceOf[js.Any])
       __obj.asInstanceOf[Parse]
     }
     
     extension [Self <: Parse](x: Self) {
       
-      inline def setParse(value: String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: String => Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
       inline def setStringify(value: FnCall): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
     }

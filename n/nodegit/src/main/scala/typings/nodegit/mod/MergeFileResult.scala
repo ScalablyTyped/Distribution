@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "MergeFileResult")
 @js.native
-class MergeFileResult ()
+open class MergeFileResult ()
   extends typings.nodegit.mergeFileResultMod.MergeFileResult

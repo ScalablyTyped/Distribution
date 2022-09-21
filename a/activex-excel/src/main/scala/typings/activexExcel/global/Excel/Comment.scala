@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Comment")
 @js.native
-/* private */ class Comment ()
+/* private */ open class Comment ()
   extends StObject
      with typings.activexExcel.Excel.Comment

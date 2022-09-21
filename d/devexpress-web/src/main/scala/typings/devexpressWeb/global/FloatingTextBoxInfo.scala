@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("FloatingTextBoxInfo")
 @js.native
-class FloatingTextBoxInfo ()
+open class FloatingTextBoxInfo ()
   extends StObject
      with typings.devexpressWeb.FloatingTextBoxInfo {
   

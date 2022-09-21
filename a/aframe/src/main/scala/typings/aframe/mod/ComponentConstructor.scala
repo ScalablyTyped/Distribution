@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComponentConstructor[T /* <: js.Object */]
   extends StObject
      with Instantiable3[
-      /* el */ Entity[ObjectMap[Component[js.Any, System[js.Any]]]], 
+      /* el */ Entity[ObjectMap[Component[Any, System[Any]]]], 
       /* attrValue */ String, 
       /* id */ String, 
-      T & (Component[js.Any, System[js.Any]])
+      T & (Component[Any, System[Any]])
     ]

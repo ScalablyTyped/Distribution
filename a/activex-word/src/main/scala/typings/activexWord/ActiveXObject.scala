@@ -127,15 +127,28 @@ trait ActiveXObject extends StObject {
   
   def on(
     obj: Application,
-    event: DocumentBeforeClose,
-    argNames: js.Tuple2[Doc, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexWord.anon.Cancel, Unit]
+    event: DocumentOpen | EPostageInsert | EPostagePropertyDialog | MailMergeAfterRecordMerge | MailMergeDataSourceLoad | MailMergeWizardSendToCustom | NewDocument | ProtectedViewWindowActivate | ProtectedViewWindowDeactivate | ProtectedViewWindowOpen | ProtectedViewWindowSize,
+    argNames: js.Array[Doc | PvWindow],
+    handler: js.ThisFunction1[
+      /* this */ Application, 
+      (/* parameter */ DocDocument) | (/* parameter */ typings.activexWord.anon.PvWindow), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: Application,
-    event: DocumentBeforePrint,
-    argNames: js.Tuple2[Doc, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexWord.anon.Cancel, Unit]
+    event: DocumentBeforeClose | DocumentBeforePrint | MailMergeBeforeRecordMerge | WindowActivate | WindowBeforeDoubleClick | WindowBeforeRightClick | WindowDeactivate | WindowSize,
+    argNames: js.Tuple2[Doc | Sel, Cancel | Wn],
+    handler: js.ThisFunction1[
+      /* this */ Application, 
+      (/* parameter */ typings.activexWord.anon.Cancel) | (/* parameter */ typings.activexWord.anon.Sel) | (/* parameter */ typings.activexWord.anon.Wn), 
+      Unit
+    ]
+  ): Unit = js.native
+  def on(
+    obj: Application,
+    event: AddRef | DocumentChange | Quit | Release | Startup,
+    handler: js.ThisFunction1[/* this */ Application, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -145,27 +158,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: Application,
-    event: DocumentOpen,
-    argNames: js.Array[Doc],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ DocDocument, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
     event: DocumentSync,
     argNames: js.Tuple2[Doc, SyncEventType],
     handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexWord.anon.SyncEventType, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: EPostageInsert,
-    argNames: js.Array[Doc],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ DocDocument, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: EPostagePropertyDialog,
-    argNames: js.Array[Doc],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ DocDocument, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -193,27 +188,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: Application,
-    event: MailMergeAfterRecordMerge,
-    argNames: js.Array[Doc],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ DocDocument, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
     event: MailMergeBeforeMerge,
     argNames: js.Tuple4[Doc, StartRecord, EndRecord, Cancel],
     handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexWord.anon.EndRecord, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: MailMergeBeforeRecordMerge,
-    argNames: js.Tuple2[Doc, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexWord.anon.Cancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: MailMergeDataSourceLoad,
-    argNames: js.Array[Doc],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ DocDocument, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -229,27 +206,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: Application,
-    event: MailMergeWizardSendToCustom,
-    argNames: js.Array[Doc],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ DocDocument, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
     event: MailMergeWizardStateChange,
     argNames: js.Tuple4[Doc, FromState, ToState, Handled],
     handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexWord.anon.FromState, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: NewDocument,
-    argNames: js.Array[Doc],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ DocDocument, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: ProtectedViewWindowActivate,
-    argNames: js.Array[PvWindow],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexWord.anon.PvWindow, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -265,63 +224,15 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: Application,
-    event: ProtectedViewWindowDeactivate,
-    argNames: js.Array[PvWindow],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexWord.anon.PvWindow, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: ProtectedViewWindowOpen,
-    argNames: js.Array[PvWindow],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexWord.anon.PvWindow, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: ProtectedViewWindowSize,
-    argNames: js.Array[PvWindow],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexWord.anon.PvWindow, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
     handler: js.ThisFunction1[/* this */ Application, /* parameter */ PpvObj, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
-    event: WindowActivate,
-    argNames: js.Tuple2[Doc, Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexWord.anon.Wn, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: WindowBeforeDoubleClick,
-    argNames: js.Tuple2[Sel, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexWord.anon.Sel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: WindowBeforeRightClick,
-    argNames: js.Tuple2[Sel, Cancel],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexWord.anon.Sel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: WindowDeactivate,
-    argNames: js.Tuple2[Doc, Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexWord.anon.Wn, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
     event: WindowSelectionChange,
     argNames: js.Array[Sel],
     handler: js.ThisFunction1[/* this */ Application, /* parameter */ SelSelection, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Application,
-    event: WindowSize,
-    argNames: js.Tuple2[Doc, Wn],
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ typings.activexWord.anon.Wn, Unit]
   ): Unit = js.native
   def on(
     obj: Application,
@@ -337,6 +248,17 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: Document,
+    event: ContentControlBeforeContentUpdate | ContentControlBeforeStoreUpdate,
+    argNames: js.Tuple2[ContentControl, Content],
+    handler: js.ThisFunction1[/* this */ Document, /* parameter */ typings.activexWord.anon.Content, Unit]
+  ): Unit = js.native
+  def on(
+    obj: Document,
+    event: Close | New | Open,
+    handler: js.ThisFunction1[/* this */ Document, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  def on(
+    obj: Document,
     event: BuildingBlockInsert,
     argNames: js.Tuple5[Range, Name, Category, BlockType, Template],
     handler: js.ThisFunction1[/* this */ Document, /* parameter */ typings.activexWord.anon.BlockType, Unit]
@@ -349,12 +271,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: Document,
-    event: ContentControlBeforeContentUpdate,
-    argNames: js.Tuple2[ContentControl, Content],
-    handler: js.ThisFunction1[/* this */ Document, /* parameter */ typings.activexWord.anon.Content, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Document,
     event: ContentControlBeforeDelete,
     argNames: js.Tuple2[OldContentControl, InUndoRedo],
     handler: js.ThisFunction1[
@@ -362,12 +278,6 @@ trait ActiveXObject extends StObject {
       /* parameter */ typings.activexWord.anon.OldContentControl, 
       Unit
     ]
-  ): Unit = js.native
-  def on(
-    obj: Document,
-    event: ContentControlBeforeStoreUpdate,
-    argNames: js.Tuple2[ContentControl, Content],
-    handler: js.ThisFunction1[/* this */ Document, /* parameter */ typings.activexWord.anon.Content, Unit]
   ): Unit = js.native
   def on(
     obj: Document,
@@ -399,23 +309,10 @@ trait ActiveXObject extends StObject {
     argNames: js.Tuple3[DeletedRange, OldXMLNode, InUndoRedo],
     handler: js.ThisFunction1[/* this */ Document, /* parameter */ typings.activexWord.anon.DeletedRange, Unit]
   ): Unit = js.native
-  @JSName("on")
-  def on_AddRef(
-    obj: Application,
-    event: AddRef,
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Close(
-    obj: Document,
-    event: Close,
-    handler: js.ThisFunction1[/* this */ Document, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DocumentChange(
-    obj: Application,
-    event: DocumentChange,
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ js.Object, Unit]
+  def on(
+    obj: OLEControl,
+    event: GotFocus | LostFocus,
+    handler: js.ThisFunction1[/* this */ OLEControl, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_EPostageInsertEx(
@@ -425,62 +322,15 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ Application, /* parameter */ ApplicationEPostageInsertExParameter, Unit]
   ): Unit = js.native
   @JSName("on")
-  def on_GotFocus(
-    obj: OLEControl,
-    event: GotFocus,
-    handler: js.ThisFunction1[/* this */ OLEControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
   def on_Invoke(
     obj: Application,
     event: Invoke,
     argNames: ApplicationInvokeArgNames,
     handler: js.ThisFunction1[/* this */ Application, /* parameter */ ApplicationInvokeParameter, Unit]
   ): Unit = js.native
-  @JSName("on")
-  def on_LostFocus(
-    obj: OLEControl,
-    event: LostFocus,
-    handler: js.ThisFunction1[/* this */ OLEControl, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_New(
-    obj: Document,
-    event: New,
-    handler: js.ThisFunction1[/* this */ Document, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Open(
-    obj: Document,
-    event: Open,
-    handler: js.ThisFunction1[/* this */ Document, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Quit(
-    obj: Application,
-    event: Quit,
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Release(
-    obj: Application,
-    event: Release,
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Startup(
-    obj: Application,
-    event: Startup,
-    handler: js.ThisFunction1[/* this */ Application, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
   
   @JSName("set")
-  def set_ActiveWritingStyle(
-    obj: Document,
-    propertyName: ActiveWritingStyle,
-    parameterTypes: js.Array[js.Any],
-    newValue: String
-  ): Unit = js.native
+  def set_ActiveWritingStyle(obj: Document, propertyName: ActiveWritingStyle, parameterTypes: js.Array[Any], newValue: String): Unit = js.native
   @JSName("set")
   def set_Compatibility(
     obj: Document,

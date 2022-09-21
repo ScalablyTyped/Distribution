@@ -9,7 +9,7 @@ object amStockChartMod {
   
   @JSImport("amcharts/AmStockChart", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with AmStockChart {
     
@@ -88,13 +88,13 @@ object amStockChartMod {
       * ]
       */
     /* CompleteClass */
-    var colors: js.Array[js.Any] = js.native
+    var colors: js.Array[Any] = js.native
     
     /**
       * Array of data sets selected for comparing.
       */
     /* CompleteClass */
-    var comparedDataSets: js.Array[js.Any] = js.native
+    var comparedDataSets: js.Array[Any] = js.native
     
     /**
       * DataSetSelector object.
@@ -107,14 +107,14 @@ object amStockChartMod {
       * Array of DataSets.
       */
     /* CompleteClass */
-    var dataSets: js.Array[js.Any] = js.native
+    var dataSets: js.Array[Any] = js.native
     
     /**
       * Current end date of the selected period, get only.
       * To set start/end dates, use stockChart.zoom(startDate, endDate) method.
       */
     /* CompleteClass */
-    var endDate: typings.std.Date = js.native
+    var endDate: js.Date = js.native
     
     /**
       * Defines on which day week starts. 0 - Sunday, 1 - Monday..
@@ -151,7 +151,7 @@ object amStockChartMod {
       * Array of StockPanels (charts).
       */
     /* CompleteClass */
-    var panels: js.Array[js.Any] = js.native
+    var panels: js.Array[Any] = js.native
     
     /**
       * Settings for stock panels.
@@ -171,7 +171,7 @@ object amStockChartMod {
       * Removes event listener from chart object.
       */
     /* CompleteClass */
-    override def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit = js.native
+    override def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: Any): Unit = js.native
     
     /**
       * Removes panel from the stock chart. Requires stockChart.validateNow() method to be called after this action.
@@ -196,13 +196,13 @@ object amStockChartMod {
       * To set start/end dates, use stockChart.zoom(startDate, endDate) method.
       */
     /* CompleteClass */
-    var startDate: typings.std.Date = js.native
+    var startDate: js.Date = js.native
     
     /**
       * Settings for stock events.
       */
     /* CompleteClass */
-    var stockEventsSettings: js.Any = js.native
+    var stockEventsSettings: Any = js.native
     
     /**
       * Method which should be called after data was changed.
@@ -232,7 +232,7 @@ object amStockChartMod {
       * Zooms chart to specified dates. startDate, endDate - Date objects.
       */
     /* CompleteClass */
-    override def zoom(startDate: typings.std.Date, endDate: typings.std.Date): Unit = js.native
+    override def zoom(startDate: js.Date, endDate: js.Date): Unit = js.native
     
     /**
       * Zooms out the chart.
@@ -313,12 +313,12 @@ object amStockChartMod {
       * "#00CC00", "#0000CC", "#DDDDDD", "#999999", "#333333", "#990000"
       * ]
       */
-    var colors: js.Array[js.Any]
+    var colors: js.Array[Any]
     
     /**
       * Array of data sets selected for comparing.
       */
-    var comparedDataSets: js.Array[js.Any]
+    var comparedDataSets: js.Array[Any]
     
     /**
       * DataSetSelector object.
@@ -329,13 +329,13 @@ object amStockChartMod {
     /**
       * Array of DataSets.
       */
-    var dataSets: js.Array[js.Any]
+    var dataSets: js.Array[Any]
     
     /**
       * Current end date of the selected period, get only.
       * To set start/end dates, use stockChart.zoom(startDate, endDate) method.
       */
-    var endDate: typings.std.Date
+    var endDate: js.Date
     
     /**
       * Defines on which day week starts. 0 - Sunday, 1 - Monday..
@@ -366,7 +366,7 @@ object amStockChartMod {
     /**
       * Array of StockPanels (charts).
       */
-    var panels: js.Array[js.Any]
+    var panels: js.Array[Any]
     
     /**
       * Settings for stock panels.
@@ -383,7 +383,7 @@ object amStockChartMod {
     /**
       * Removes event listener from chart object.
       */
-    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit
+    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: Any): Unit
     
     /**
       * Removes panel from the stock chart. Requires stockChart.validateNow() method to be called after this action.
@@ -404,12 +404,12 @@ object amStockChartMod {
       * Current start date of the selected period, get only.
       * To set start/end dates, use stockChart.zoom(startDate, endDate) method.
       */
-    var startDate: typings.std.Date
+    var startDate: js.Date
     
     /**
       * Settings for stock events.
       */
-    var stockEventsSettings: js.Any
+    var stockEventsSettings: Any
     
     /**
       * Method which should be called after data was changed.
@@ -434,7 +434,7 @@ object amStockChartMod {
     /**
       * Zooms chart to specified dates. startDate, endDate - Date objects.
       */
-    def zoom(startDate: typings.std.Date, endDate: typings.std.Date): Unit
+    def zoom(startDate: js.Date, endDate: js.Date): Unit
     
     /**
       * Zooms out the chart.
@@ -459,30 +459,30 @@ object amStockChartMod {
       chartCursorSettings: typings.amcharts.chartCursorSettingsMod.default,
       chartScrollbarSettings: typings.amcharts.chartScrollbarSettingsMod.default,
       clear: () => Unit,
-      colors: js.Array[js.Any],
-      comparedDataSets: js.Array[js.Any],
+      colors: js.Array[Any],
+      comparedDataSets: js.Array[Any],
       dataSetSelector: typings.amcharts.dataSetSelectorMod.default,
-      dataSets: js.Array[js.Any],
-      endDate: typings.std.Date,
+      dataSets: js.Array[Any],
+      endDate: js.Date,
       firstDayOfWeek: Double,
       glueToTheEnd: Boolean,
       hideStockEvents: () => Unit,
       legendSettings: typings.amcharts.legendSettingsMod.default,
       mainDataSet: typings.amcharts.dataSetMod.default,
-      panels: js.Array[js.Any],
+      panels: js.Array[Any],
       panelsSettings: typings.amcharts.panelSettingsMod.default,
       periodSelector: typings.amcharts.periodSelectorMod.default,
-      removeListener: (typings.amcharts.amChartMod.default, String, js.Any) => Unit,
+      removeListener: (typings.amcharts.amChartMod.default, String, Any) => Unit,
       removePanel: typings.amcharts.stockPanelMod.default => Unit,
       scrollbarChart: typings.amcharts.amSerialChartMod.default,
       showStockEvents: () => Unit,
-      startDate: typings.std.Date,
-      stockEventsSettings: js.Any,
+      startDate: js.Date,
+      stockEventsSettings: Any,
       validateData: () => Unit,
       validateNow: () => Unit,
       valueAxesSettings: typings.amcharts.valueAxesSettingsMod.default,
       version: String,
-      zoom: (typings.std.Date, typings.std.Date) => Unit,
+      zoom: (js.Date, js.Date) => Unit,
       zoomOut: () => Unit,
       zoomOutOnDataSetChange: Boolean
     ): AmStockChart = {
@@ -512,21 +512,21 @@ object amStockChartMod {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      inline def setColors(value: js.Array[js.Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: js.Array[Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      inline def setColorsVarargs(value: js.Any*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: Any*): Self = StObject.set(x, "colors", js.Array(value*))
       
-      inline def setComparedDataSets(value: js.Array[js.Any]): Self = StObject.set(x, "comparedDataSets", value.asInstanceOf[js.Any])
+      inline def setComparedDataSets(value: js.Array[Any]): Self = StObject.set(x, "comparedDataSets", value.asInstanceOf[js.Any])
       
-      inline def setComparedDataSetsVarargs(value: js.Any*): Self = StObject.set(x, "comparedDataSets", js.Array(value :_*))
+      inline def setComparedDataSetsVarargs(value: Any*): Self = StObject.set(x, "comparedDataSets", js.Array(value*))
       
       inline def setDataSetSelector(value: typings.amcharts.dataSetSelectorMod.default): Self = StObject.set(x, "dataSetSelector", value.asInstanceOf[js.Any])
       
-      inline def setDataSets(value: js.Array[js.Any]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
+      inline def setDataSets(value: js.Array[Any]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
       
-      inline def setDataSetsVarargs(value: js.Any*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
+      inline def setDataSetsVarargs(value: Any*): Self = StObject.set(x, "dataSets", js.Array(value*))
       
-      inline def setEndDate(value: typings.std.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
       inline def setFirstDayOfWeek(value: Double): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
       
@@ -538,15 +538,15 @@ object amStockChartMod {
       
       inline def setMainDataSet(value: typings.amcharts.dataSetMod.default): Self = StObject.set(x, "mainDataSet", value.asInstanceOf[js.Any])
       
-      inline def setPanels(value: js.Array[js.Any]): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
+      inline def setPanels(value: js.Array[Any]): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
       
       inline def setPanelsSettings(value: typings.amcharts.panelSettingsMod.default): Self = StObject.set(x, "panelsSettings", value.asInstanceOf[js.Any])
       
-      inline def setPanelsVarargs(value: js.Any*): Self = StObject.set(x, "panels", js.Array(value :_*))
+      inline def setPanelsVarargs(value: Any*): Self = StObject.set(x, "panels", js.Array(value*))
       
       inline def setPeriodSelector(value: typings.amcharts.periodSelectorMod.default): Self = StObject.set(x, "periodSelector", value.asInstanceOf[js.Any])
       
-      inline def setRemoveListener(value: (typings.amcharts.amChartMod.default, String, js.Any) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
+      inline def setRemoveListener(value: (typings.amcharts.amChartMod.default, String, Any) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
       
       inline def setRemovePanel(value: typings.amcharts.stockPanelMod.default => Unit): Self = StObject.set(x, "removePanel", js.Any.fromFunction1(value))
       
@@ -554,9 +554,9 @@ object amStockChartMod {
       
       inline def setShowStockEvents(value: () => Unit): Self = StObject.set(x, "showStockEvents", js.Any.fromFunction0(value))
       
-      inline def setStartDate(value: typings.std.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
-      inline def setStockEventsSettings(value: js.Any): Self = StObject.set(x, "stockEventsSettings", value.asInstanceOf[js.Any])
+      inline def setStockEventsSettings(value: Any): Self = StObject.set(x, "stockEventsSettings", value.asInstanceOf[js.Any])
       
       inline def setValidateData(value: () => Unit): Self = StObject.set(x, "validateData", js.Any.fromFunction0(value))
       
@@ -566,7 +566,7 @@ object amStockChartMod {
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      inline def setZoom(value: (typings.std.Date, typings.std.Date) => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction2(value))
+      inline def setZoom(value: (js.Date, js.Date) => Unit): Self = StObject.set(x, "zoom", js.Any.fromFunction2(value))
       
       inline def setZoomOut(value: () => Unit): Self = StObject.set(x, "zoomOut", js.Any.fromFunction0(value))
       

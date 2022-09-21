@@ -33,7 +33,7 @@ trait ConnectionProfilesResource extends StObject {
   def getIamPolicy(): Request[Policy] = js.native
   def getIamPolicy(request: Key): Request[Policy] = js.native
   
-  /** Retrieve a list of all connection profiles in a given project and location. */
+  /** Retrieves a list of all connection profiles in a given project and location. */
   def list(): Request[ListConnectionProfilesResponse] = js.native
   def list(request: Filter): Request[ListConnectionProfilesResponse] = js.native
   

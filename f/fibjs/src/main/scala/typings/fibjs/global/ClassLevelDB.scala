@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_LevelDB")
 @js.native
-class ClassLevelDB ()
+open class ClassLevelDB ()
   extends StObject
      with typings.fibjs.ClassLevelDB

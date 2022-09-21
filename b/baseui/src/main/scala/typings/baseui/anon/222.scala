@@ -1,33 +1,33 @@
 package typings.baseui.anon
 
-import typings.baseui.baseuiStrings.AE
-import typings.baseui.baseuiStrings.Plussign971
-import typings.baseui.baseuiStrings.`United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis`
+import typings.baseui.baseuiStrings.Plussign46
+import typings.baseui.baseuiStrings.SE
+import typings.baseui.baseuiStrings.`Sweden LeftparenthesisSverigeRightparenthesis`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `222` extends StObject {
   
-  var dialCode: Plussign971
+  val dialCode: Plussign46
   
-  var id: AE
+  val id: SE
   
-  var label: `United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis`
+  val label: `Sweden LeftparenthesisSverigeRightparenthesis`
 }
 object `222` {
   
   inline def apply(): `222` = {
-    val __obj = js.Dynamic.literal(dialCode = "+971", id = "AE", label = "United Arab Emirates (\u202B\u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062A \u0627\u0644\u0639\u0631\u0628\u064A\u0629 \u0627\u0644\u0645\u062A\u062D\u062F\u0629\u202C\u200E)")
+    val __obj = js.Dynamic.literal(dialCode = "+46", id = "SE", label = "Sweden (Sverige)")
     __obj.asInstanceOf[`222`]
   }
   
   extension [Self <: `222`](x: Self) {
     
-    inline def setDialCode(value: Plussign971): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
+    inline def setDialCode(value: Plussign46): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
     
-    inline def setId(value: AE): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: SE): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLabel(value: `United Arab Emirates Leftparenthesis‫الإمارات العربية المتحدة‬‎Rightparenthesis`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: `Sweden LeftparenthesisSverigeRightparenthesis`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

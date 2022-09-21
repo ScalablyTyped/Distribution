@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@lumino/widgets", "BoxSizer")
 @js.native
-class BoxSizer ()
+open class BoxSizer ()
   extends typings.luminoWidgets.boxengineMod.BoxSizer

@@ -2,7 +2,7 @@ package typings.stropheJs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
-import typings.stropheJs.mucMod.stropheAugmentingMod.Strophe.MUC.Plugin
+import typings.stropheJs.mucMod.global.Strophe.MUC.Plugin
 import typings.stropheJs.stropheJsStrings.chat
 import typings.stropheJs.stropheJsStrings.groupchat
 import typings.stropheJs.stropheJsStrings.message
@@ -15,28 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mucMod {
   
   object global {
-    
-    object Strophe {
-      
-      object MUC {
-        
-        type Occupant = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _MUC.Occupant */ js.Any
-        
-        type OccupantInfo = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _MUC.OccupantInfo */ js.Any
-        
-        type OccupantMap = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _MUC.OccupantMap */ js.Any
-        
-        type Plugin = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _MUC.Plugin */ js.Any
-        
-        type RoomConfig = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _MUC.RoomConfig */ js.Any
-        
-        type XmppRoom = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _MUC.XmppRoom */ js.Any
-      }
-    }
-  }
-  
-  /* augmented module */
-  object stropheAugmentingMod {
     
     object Strophe {
       
@@ -59,6 +37,45 @@ object mucMod {
       
       object MUC {
         
+        type Occupant = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _MUC.Occupant */ Any
+        
+        type OccupantInfo = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _MUC.OccupantInfo */ Any
+        
+        type OccupantMap = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _MUC.OccupantMap */ Any
+        
+        type Plugin = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _MUC.Plugin */ Any
+        
+        type RoomConfig = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _MUC.RoomConfig */ Any
+        
+        type XmppRoom = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _MUC.XmppRoom */ Any
+      }
+    }
+  }
+  
+  /* augmented module */
+  object stropheAugmentingMod {
+    
+    object Strophe {
+      
+      trait Connection extends StObject {
+        
+        var muc: typings.stropheJs.mucMod.stropheAugmentingMod.Strophe.MUC.Plugin
+      }
+      object Connection {
+        
+        inline def apply(muc: typings.stropheJs.mucMod.stropheAugmentingMod.Strophe.MUC.Plugin): Connection = {
+          val __obj = js.Dynamic.literal(muc = muc.asInstanceOf[js.Any])
+          __obj.asInstanceOf[Connection]
+        }
+        
+        extension [Self <: Connection](x: Self) {
+          
+          inline def setMuc(value: typings.stropheJs.mucMod.stropheAugmentingMod.Strophe.MUC.Plugin): Self = StObject.set(x, "muc", value.asInstanceOf[js.Any])
+        }
+      }
+      
+      object MUC {
+        
         @js.native
         trait Occupant
           extends StObject
@@ -66,228 +83,223 @@ object mucMod {
           
           def admin(): String = js.native
           def admin(reason: String): String = js.native
-          def admin(reason: String, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def admin(reason: String, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def admin(
             reason: String,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def admin(reason: String, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
-          def admin(reason: Unit, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def admin(reason: String, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def admin(reason: Unit, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def admin(
             reason: Unit,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def admin(reason: Unit, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def admin(reason: Unit, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def ban(): String = js.native
           def ban(reason: String): String = js.native
-          def ban(reason: String, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def ban(reason: String, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def ban(
             reason: String,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def ban(reason: String, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
-          def ban(reason: Unit, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def ban(reason: String, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def ban(reason: Unit, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def ban(
             reason: Unit,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def ban(reason: Unit, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def ban(reason: Unit, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def deop(): String = js.native
           def deop(reason: String): String = js.native
-          def deop(reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def deop(reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def deop(
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def deop(reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
-          def deop(reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def deop(reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def deop(reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def deop(
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def deop(reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def deop(reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def kick(): String = js.native
           def kick(reason: String): String = js.native
-          def kick(reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def kick(reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def kick(
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def kick(reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
-          def kick(reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def kick(reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def kick(reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def kick(
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def kick(reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def kick(reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def member(): String = js.native
           def member(reason: String): String = js.native
-          def member(reason: String, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def member(reason: String, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def member(
             reason: String,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def member(reason: String, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
-          def member(reason: Unit, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def member(reason: String, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def member(reason: Unit, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def member(
             reason: Unit,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def member(reason: Unit, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def member(reason: Unit, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def modifyAffiliation(affiliation: String): String = js.native
           def modifyAffiliation(affiliation: String, reason: String): String = js.native
-          def modifyAffiliation(affiliation: String, reason: String, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def modifyAffiliation(affiliation: String, reason: String, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def modifyAffiliation(
             affiliation: String,
             reason: String,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyAffiliation(
             affiliation: String,
             reason: String,
             success_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def modifyAffiliation(affiliation: String, reason: Unit, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def modifyAffiliation(affiliation: String, reason: Unit, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def modifyAffiliation(
             affiliation: String,
             reason: Unit,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyAffiliation(
             affiliation: String,
             reason: Unit,
             success_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           
           def modifyRole(role: String): String = js.native
           def modifyRole(role: String, reason: String): String = js.native
-          def modifyRole(role: String, reason: String, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def modifyRole(role: String, reason: String, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def modifyRole(
             role: String,
             reason: String,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def modifyRole(
-            role: String,
-            reason: String,
-            success_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
-          ): String = js.native
-          def modifyRole(role: String, reason: Unit, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def modifyRole(role: String, reason: String, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def modifyRole(role: String, reason: Unit, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def modifyRole(
             role: String,
             reason: Unit,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def modifyRole(role: String, reason: Unit, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def modifyRole(role: String, reason: Unit, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def mute(): String = js.native
           def mute(reason: String): String = js.native
-          def mute(reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def mute(reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def mute(
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def mute(reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
-          def mute(reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def mute(reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def mute(reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def mute(
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def mute(reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def mute(reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def op(): String = js.native
           def op(reason: String): String = js.native
-          def op(reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def op(reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def op(
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def op(reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
-          def op(reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def op(reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def op(reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def op(
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def op(reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def op(reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def owner(): String = js.native
           def owner(reason: String): String = js.native
-          def owner(reason: String, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def owner(reason: String, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def owner(
             reason: String,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def owner(reason: String, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
-          def owner(reason: Unit, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def owner(reason: String, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def owner(reason: Unit, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def owner(
             reason: Unit,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def owner(reason: Unit, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def owner(reason: Unit, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def revoke(): String = js.native
           def revoke(reason: String): String = js.native
-          def revoke(reason: String, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def revoke(reason: String, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def revoke(
             reason: String,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def revoke(reason: String, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
-          def revoke(reason: Unit, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def revoke(reason: String, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def revoke(reason: Unit, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def revoke(
             reason: Unit,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def revoke(reason: Unit, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def revoke(reason: Unit, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def update(data: OccupantInfo): Unit = js.native
           
           def voice(): String = js.native
           def voice(reason: String): String = js.native
-          def voice(reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def voice(reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def voice(
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def voice(reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
-          def voice(reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def voice(reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def voice(reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def voice(
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def voice(reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def voice(reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
         }
         
         trait OccupantInfo extends StObject {
@@ -356,35 +368,35 @@ object mucMod {
             */
           def ban(room: String, jid: String): String = js.native
           def ban(room: String, jid: String, reason: String): String = js.native
-          def ban(room: String, jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def ban(room: String, jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def ban(
             room: String,
             jid: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def ban(
             room: String,
             jid: String,
             reason: String,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def ban(room: String, jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def ban(room: String, jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def ban(
             room: String,
             jid: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def ban(
             room: String,
             jid: String,
             reason: Unit,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           
           /**
@@ -412,13 +424,13 @@ object mucMod {
             * @return id - the unique id used to send the configuration request
             */
           def configure(room: String): String = js.native
-          def configure(room: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def configure(room: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def configure(
             room: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def configure(room: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def configure(room: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           /**
             * Create a configured room.
@@ -431,9 +443,9 @@ object mucMod {
             */
           def createConfiguredRoom(
             room: String,
-            config: js.Any,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            config: Any,
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           
           /**
@@ -445,13 +457,13 @@ object mucMod {
             * @return id - the unique id used to create the chat room.
             */
           def createInstantRoom(room: String): String = js.native
-          def createInstantRoom(room: String, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def createInstantRoom(room: String, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def createInstantRoom(
             room: String,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def createInstantRoom(room: String, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def createInstantRoom(room: String, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           /**
             * De-Op a user.
@@ -465,35 +477,35 @@ object mucMod {
             */
           def deop(room: String, nick: String): String = js.native
           def deop(room: String, nick: String, reason: String): String = js.native
-          def deop(room: String, nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def deop(room: String, nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def deop(
             room: String,
             nick: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def deop(
             room: String,
             nick: String,
             reason: String,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def deop(room: String, nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def deop(room: String, nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def deop(
             room: String,
             nick: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def deop(
             room: String,
             nick: String,
             reason: Unit,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           
           /**
@@ -577,7 +589,7 @@ object mucMod {
             pres_handler_cb: js.Function2[/* stanza */ Element, /* room */ XmppRoom, Boolean],
             roster_cb: js.Function2[/* occupants */ OccupantMap, /* room */ XmppRoom, Boolean],
             password: String,
-            history_attrs: js.Any
+            history_attrs: Any
           ): Unit = js.native
           def join(
             room: String,
@@ -586,7 +598,7 @@ object mucMod {
             pres_handler_cb: js.Function2[/* stanza */ Element, /* room */ XmppRoom, Boolean],
             roster_cb: js.Function2[/* occupants */ OccupantMap, /* room */ XmppRoom, Boolean],
             password: String,
-            history_attrs: js.Any,
+            history_attrs: Any,
             extended_presence: Element
           ): Unit = js.native
           def join(
@@ -606,7 +618,7 @@ object mucMod {
             pres_handler_cb: js.Function2[/* stanza */ Element, /* room */ XmppRoom, Boolean],
             roster_cb: js.Function2[/* occupants */ OccupantMap, /* room */ XmppRoom, Boolean],
             password: Unit,
-            history_attrs: js.Any
+            history_attrs: Any
           ): Unit = js.native
           def join(
             room: String,
@@ -615,7 +627,7 @@ object mucMod {
             pres_handler_cb: js.Function2[/* stanza */ Element, /* room */ XmppRoom, Boolean],
             roster_cb: js.Function2[/* occupants */ OccupantMap, /* room */ XmppRoom, Boolean],
             password: Unit,
-            history_attrs: js.Any,
+            history_attrs: Any,
             extended_presence: Element
           ): Unit = js.native
           def join(
@@ -641,35 +653,35 @@ object mucMod {
             */
           def kick(room: String, nick: String): String = js.native
           def kick(room: String, nick: String, reason: String): String = js.native
-          def kick(room: String, nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def kick(room: String, nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def kick(
             room: String,
             nick: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def kick(
             room: String,
             nick: String,
             reason: String,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def kick(room: String, nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def kick(room: String, nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def kick(
             room: String,
             nick: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def kick(
             room: String,
             nick: String,
             reason: Unit,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           
           /**
@@ -700,8 +712,8 @@ object mucMod {
             */
           def listRooms(
             server: String,
-            handle_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* error */ js.Any, js.Any]
+            handle_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* error */ Any, Any]
           ): Unit = js.native
           
           /**
@@ -716,39 +728,37 @@ object mucMod {
             */
           def member(room: String, jid: String): String = js.native
           def member(room: String, jid: String, reason: String): String = js.native
-          def member(room: String, jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def member(room: String, jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def member(
             room: String,
             jid: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def member(
             room: String,
             jid: String,
             reason: String,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def member(room: String, jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def member(room: String, jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def member(
             room: String,
             jid: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def member(
             room: String,
             jid: String,
             reason: Unit,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           
-          @JSName("message")
-          def message_chat(room: String, nick: String, message: String, html_message: String, `type`: chat): String = js.native
           /**
             * Send a message to a room.
             *
@@ -759,8 +769,7 @@ object mucMod {
             * @param type - "groupchat" for group chat messages o "chat" for private chat messages
             * @return msgiq - the unique id used to send the message
             */
-          @JSName("message")
-          def message_groupchat(room: String, nick: String, message: String, html_message: String, `type`: groupchat): String = js.native
+          def message(room: String, nick: String, message: String, html_message: String, `type`: groupchat | chat): String = js.native
           
           /**
             * Changes the affiliation of a member of a MUC room.
@@ -782,15 +791,15 @@ object mucMod {
             jid: String,
             affiliation: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyAffiliation(
             room: String,
             jid: String,
             affiliation: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyAffiliation(
             room: String,
@@ -798,22 +807,22 @@ object mucMod {
             affiliation: String,
             reason: String,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyAffiliation(
             room: String,
             jid: String,
             affiliation: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyAffiliation(
             room: String,
             jid: String,
             affiliation: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyAffiliation(
             room: String,
@@ -821,7 +830,7 @@ object mucMod {
             affiliation: String,
             reason: Unit,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           
           /**
@@ -844,15 +853,15 @@ object mucMod {
             nick: String,
             role: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyRole(
             room: String,
             nick: String,
             role: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyRole(
             room: String,
@@ -860,22 +869,22 @@ object mucMod {
             role: String,
             reason: String,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyRole(
             room: String,
             nick: String,
             role: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyRole(
             room: String,
             nick: String,
             role: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyRole(
             room: String,
@@ -883,7 +892,7 @@ object mucMod {
             role: String,
             reason: Unit,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           
           /**
@@ -909,35 +918,35 @@ object mucMod {
             */
           def mute(room: String, nick: String): String = js.native
           def mute(room: String, nick: String, reason: String): String = js.native
-          def mute(room: String, nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def mute(room: String, nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def mute(
             room: String,
             nick: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def mute(
             room: String,
             nick: String,
             reason: String,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def mute(room: String, nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def mute(room: String, nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def mute(
             room: String,
             nick: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def mute(
             room: String,
             nick: String,
             reason: Unit,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           
           /**
@@ -952,35 +961,35 @@ object mucMod {
             */
           def op(room: String, nick: String): String = js.native
           def op(room: String, nick: String, reason: String): String = js.native
-          def op(room: String, nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def op(room: String, nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def op(
             room: String,
             nick: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def op(
             room: String,
             nick: String,
             reason: String,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def op(room: String, nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def op(room: String, nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def op(
             room: String,
             nick: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def op(
             room: String,
             nick: String,
             reason: Unit,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           
           /**
@@ -995,35 +1004,35 @@ object mucMod {
             */
           def owner(room: String, jid: String): String = js.native
           def owner(room: String, jid: String, reason: String): String = js.native
-          def owner(room: String, jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def owner(room: String, jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def owner(
             room: String,
             jid: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def owner(
             room: String,
             jid: String,
             reason: String,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def owner(room: String, jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def owner(room: String, jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def owner(
             room: String,
             jid: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def owner(
             room: String,
             jid: String,
             reason: Unit,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           
           /**
@@ -1035,13 +1044,13 @@ object mucMod {
             * @return id - the unique id used to send the info request
             */
           def queryOccupants(room: String): String = js.native
-          def queryOccupants(room: String, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def queryOccupants(room: String, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def queryOccupants(
             room: String,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* error */ js.Any, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* error */ Any, Any]
           ): String = js.native
-          def queryOccupants(room: String, success_cb: Unit, error_cb: js.Function1[/* error */ js.Any, js.Any]): String = js.native
+          def queryOccupants(room: String, success_cb: Unit, error_cb: js.Function1[/* error */ Any, Any]): String = js.native
           
           /**
             * Registering with a room.
@@ -1053,8 +1062,8 @@ object mucMod {
             */
           def registrationRequest(
             room: String,
-            handle_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handle_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): Unit = js.native
           
           /**
@@ -1069,35 +1078,35 @@ object mucMod {
             */
           def revoke(room: String, jid: String): String = js.native
           def revoke(room: String, jid: String, reason: String): String = js.native
-          def revoke(room: String, jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def revoke(room: String, jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def revoke(
             room: String,
             jid: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def revoke(
             room: String,
             jid: String,
             reason: String,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def revoke(room: String, jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def revoke(room: String, jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def revoke(
             room: String,
             jid: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def revoke(
             room: String,
             jid: String,
             reason: Unit,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           
           /**
@@ -1109,20 +1118,15 @@ object mucMod {
             * @param error_cb - Optional function to handle an error.
             * @return id - the unique id used to save the configuration.
             */
-          def saveConfiguration(room: String, config: js.Any): String = js.native
-          def saveConfiguration(room: String, config: js.Any, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def saveConfiguration(room: String, config: Any): String = js.native
+          def saveConfiguration(room: String, config: Any, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def saveConfiguration(
             room: String,
-            config: js.Any,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            config: Any,
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def saveConfiguration(
-            room: String,
-            config: js.Any,
-            success_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
-          ): String = js.native
+          def saveConfiguration(room: String, config: Any, success_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           /**
             * Change the current users status.
@@ -1152,9 +1156,9 @@ object mucMod {
             */
           def submitRegistrationForm(
             room: String,
-            fields: js.Any,
-            handle_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            fields: Any,
+            handle_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): Unit = js.native
           
           /**
@@ -1169,50 +1173,48 @@ object mucMod {
             */
           def voice(room: String, nick: String): String = js.native
           def voice(room: String, nick: String, reason: String): String = js.native
-          def voice(room: String, nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def voice(room: String, nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def voice(
             room: String,
             nick: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def voice(
             room: String,
             nick: String,
             reason: String,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def voice(room: String, nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def voice(room: String, nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def voice(
             room: String,
             nick: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def voice(
             room: String,
             nick: String,
             reason: Unit,
             handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
         }
         
         @js.native
         trait RoomConfig extends StObject {
           
-          def parse(): js.Any = js.native
-          def parse(info: Element): js.Any = js.native
+          def parse(): Any = js.native
+          def parse(info: Element): Any = js.native
         }
         
         @js.native
         trait XmppRoom extends StObject {
           
-          @JSName("addHandler")
-          def addHandler_message(handler_type: message, handler: js.Function1[/* stanza */ Element, js.Any]): Double = js.native
           /**
             * Adds a handler to the MUC room.
             * Parameters:
@@ -1220,88 +1222,70 @@ object mucMod {
             * @param handler - The handler function.
             * @return id - the id of handler.
             */
-          @JSName("addHandler")
-          def addHandler_presence(handler_type: presence, handler: js.Function1[/* stanza */ Element, js.Any]): Double = js.native
-          @JSName("addHandler")
-          def addHandler_roster(handler_type: roster, handler: js.Function1[/* stanza */ Element, js.Any]): Double = js.native
+          def addHandler(handler_type: presence | message | roster, handler: js.Function1[/* stanza */ Element, Any]): Double = js.native
           
           def admin(jid: String): String = js.native
           def admin(jid: String, reason: String): String = js.native
-          def admin(jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def admin(jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def admin(
             jid: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def admin(
-            jid: String,
-            reason: String,
-            handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
-          ): String = js.native
-          def admin(jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def admin(jid: String, reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def admin(jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def admin(
             jid: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def admin(jid: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def admin(jid: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def ban(jid: String): String = js.native
           def ban(jid: String, reason: String): String = js.native
-          def ban(jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def ban(jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def ban(
             jid: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def ban(
-            jid: String,
-            reason: String,
-            handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
-          ): String = js.native
-          def ban(jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def ban(jid: String, reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def ban(jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def ban(
             jid: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def ban(jid: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def ban(jid: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def cancelConfigure(): String = js.native
           
           def changeNick(nick: String): String = js.native
           
-          def configure(handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def configure(handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def deop(nick: String): String = js.native
           def deop(nick: String, reason: String): String = js.native
-          def deop(nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def deop(nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def deop(
             nick: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def deop(
-            nick: String,
-            reason: String,
-            handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
-          ): String = js.native
-          def deop(nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def deop(nick: String, reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def deop(nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def deop(
             nick: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def deop(nick: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def deop(nick: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def directInvite(receiver: String): String = js.native
           def directInvite(receiver: String, reason: String): String = js.native
@@ -1313,68 +1297,55 @@ object mucMod {
           def invite(receiver: String, reason: String): String = js.native
           
           def join(
-            msg_handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            pres_handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            roster_cb: js.Function1[/* stanza */ Element, js.Any]
+            msg_handler_cb: js.Function1[/* stanza */ Element, Any],
+            pres_handler_cb: js.Function1[/* stanza */ Element, Any],
+            roster_cb: js.Function1[/* stanza */ Element, Any]
           ): Unit = js.native
           
           def kick(nick: String): String = js.native
           def kick(nick: String, reason: String): String = js.native
-          def kick(nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def kick(nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def kick(
             nick: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def kick(
-            nick: String,
-            reason: String,
-            handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
-          ): String = js.native
-          def kick(nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def kick(nick: String, reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def kick(nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def kick(
             nick: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def kick(nick: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def kick(nick: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def leave(): Unit = js.native
-          def leave(handler_cb: js.Function1[/* stanza */ Element, js.Any]): Unit = js.native
-          def leave(handler_cb: js.Function1[/* stanza */ Element, js.Any], exit_msg: String): Unit = js.native
+          def leave(handler_cb: js.Function1[/* stanza */ Element, Any]): Unit = js.native
+          def leave(handler_cb: js.Function1[/* stanza */ Element, Any], exit_msg: String): Unit = js.native
           def leave(handler_cb: Unit, exit_msg: String): Unit = js.native
           
           def member(jid: String): String = js.native
           def member(jid: String, reason: String): String = js.native
-          def member(jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def member(jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def member(
             jid: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def member(
-            jid: String,
-            reason: String,
-            handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
-          ): String = js.native
-          def member(jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def member(jid: String, reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def member(jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def member(
             jid: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def member(jid: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def member(jid: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
-          @JSName("message")
-          def message_chat(message: String, html_message: String, `type`: chat): String = js.native
-          @JSName("message")
-          def message_groupchat(message: String, html_message: String, `type`: groupchat): String = js.native
+          def message(message: String, html_message: String, `type`: groupchat | chat): String = js.native
           
           def modifyAffiliation(jid: String, affiliation: String): String = js.native
           def modifyAffiliation(jid: String, affiliation: String, reason: String): String = js.native
@@ -1382,74 +1353,74 @@ object mucMod {
             jid: String,
             affiliation: String,
             reason: String,
-            success_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyAffiliation(
             jid: String,
             affiliation: String,
             reason: String,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyAffiliation(
             jid: String,
             affiliation: String,
             reason: String,
             success_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyAffiliation(
             jid: String,
             affiliation: String,
             reason: Unit,
-            success_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyAffiliation(
             jid: String,
             affiliation: String,
             reason: Unit,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyAffiliation(
             jid: String,
             affiliation: String,
             reason: Unit,
             success_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           
           def modifyRole(nick: String, role: String): String = js.native
           def modifyRole(nick: String, role: String, reason: String): String = js.native
-          def modifyRole(nick: String, role: String, reason: String, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def modifyRole(nick: String, role: String, reason: String, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def modifyRole(
             nick: String,
             role: String,
             reason: String,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyRole(
             nick: String,
             role: String,
             reason: String,
             success_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def modifyRole(nick: String, role: String, reason: Unit, success_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def modifyRole(nick: String, role: String, reason: Unit, success_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def modifyRole(
             nick: String,
             role: String,
             reason: Unit,
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           def modifyRole(
             nick: String,
             role: String,
             reason: Unit,
             success_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
           
           def multipleInvites(receivers: js.Array[String]): String = js.native
@@ -1457,79 +1428,64 @@ object mucMod {
           
           def mute(nick: String): String = js.native
           def mute(nick: String, reason: String): String = js.native
-          def mute(nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def mute(nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def mute(
             nick: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def mute(
-            nick: String,
-            reason: String,
-            handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
-          ): String = js.native
-          def mute(nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def mute(nick: String, reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def mute(nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def mute(
             nick: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def mute(nick: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def mute(nick: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def op(nick: String): String = js.native
           def op(nick: String, reason: String): String = js.native
-          def op(nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def op(nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def op(
             nick: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def op(
-            nick: String,
-            reason: String,
-            handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
-          ): String = js.native
-          def op(nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def op(nick: String, reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def op(nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def op(
             nick: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def op(nick: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def op(nick: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def owner(jid: String): String = js.native
           def owner(jid: String, reason: String): String = js.native
-          def owner(jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def owner(jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def owner(
             jid: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def owner(
-            jid: String,
-            reason: String,
-            handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
-          ): String = js.native
-          def owner(jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def owner(jid: String, reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def owner(jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def owner(
             jid: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def owner(jid: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def owner(jid: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
           def queryOccupants(
-            success_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            success_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): Unit = js.native
           
           /**
@@ -1544,29 +1500,24 @@ object mucMod {
           
           def revoke(jid: String): String = js.native
           def revoke(jid: String, reason: String): String = js.native
-          def revoke(jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def revoke(jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def revoke(
             jid: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def revoke(
-            jid: String,
-            reason: String,
-            handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
-          ): String = js.native
-          def revoke(jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def revoke(jid: String, reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def revoke(jid: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def revoke(
             jid: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def revoke(jid: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def revoke(jid: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           
-          def saveConfiguration(config: js.Any): String = js.native
+          def saveConfiguration(config: Any): String = js.native
           
           def setStatus(show: String, status: String): String = js.native
           
@@ -1574,27 +1525,22 @@ object mucMod {
           
           def voice(nick: String): String = js.native
           def voice(nick: String, reason: String): String = js.native
-          def voice(nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def voice(nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def voice(
             nick: String,
             reason: String,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def voice(
-            nick: String,
-            reason: String,
-            handler_cb: Unit,
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
-          ): String = js.native
-          def voice(nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def voice(nick: String, reason: String, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
+          def voice(nick: String, reason: Unit, handler_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
           def voice(
             nick: String,
             reason: Unit,
-            handler_cb: js.Function1[/* stanza */ Element, js.Any],
-            error_cb: js.Function1[/* stanza */ Element, js.Any]
+            handler_cb: js.Function1[/* stanza */ Element, Any],
+            error_cb: js.Function1[/* stanza */ Element, Any]
           ): String = js.native
-          def voice(nick: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+          def voice(nick: String, reason: Unit, handler_cb: Unit, error_cb: js.Function1[/* stanza */ Element, Any]): String = js.native
         }
       }
     }

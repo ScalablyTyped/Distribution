@@ -10,7 +10,7 @@ trait IFnJQuery extends StObject {
   
   def fnPlugin(
     context: JQuery[HTMLElement],
-    options: js.Any,
+    options: Any,
     command: String,
     pluginName: String,
     pluginDataAttribute: String
@@ -18,13 +18,13 @@ trait IFnJQuery extends StObject {
 }
 object IFnJQuery {
   
-  inline def apply(fnPlugin: (JQuery[HTMLElement], js.Any, String, String, String) => JQuery[HTMLElement]): IFnJQuery = {
+  inline def apply(fnPlugin: (JQuery[HTMLElement], Any, String, String, String) => JQuery[HTMLElement]): IFnJQuery = {
     val __obj = js.Dynamic.literal(fnPlugin = js.Any.fromFunction5(fnPlugin))
     __obj.asInstanceOf[IFnJQuery]
   }
   
   extension [Self <: IFnJQuery](x: Self) {
     
-    inline def setFnPlugin(value: (JQuery[HTMLElement], js.Any, String, String, String) => JQuery[HTMLElement]): Self = StObject.set(x, "fnPlugin", js.Any.fromFunction5(value))
+    inline def setFnPlugin(value: (JQuery[HTMLElement], Any, String, String, String) => JQuery[HTMLElement]): Self = StObject.set(x, "fnPlugin", js.Any.fromFunction5(value))
   }
 }

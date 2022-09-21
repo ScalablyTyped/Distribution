@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardItemDataAxisPoint")
 @js.native
-class ASPxClientDashboardItemDataAxisPoint ()
+open class ASPxClientDashboardItemDataAxisPoint ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardItemDataAxisPoint

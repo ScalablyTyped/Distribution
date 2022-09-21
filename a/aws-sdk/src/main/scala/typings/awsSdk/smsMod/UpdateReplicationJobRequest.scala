@@ -34,7 +34,7 @@ trait UpdateReplicationJobRequest extends StObject {
   /**
     * The start time of the next replication run.
     */
-  var nextReplicationRunStartTime: js.UndefOr[Timestamp] = js.undefined
+  var nextReplicationRunStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum number of SMS-created AMIs to retain. The oldest is deleted after the maximum number is reached and a new AMI is created.
@@ -47,7 +47,7 @@ trait UpdateReplicationJobRequest extends StObject {
   var replicationJobId: ReplicationJobId
   
   /**
-    * The name of the IAM role to be used by AWS SMS.
+    * The name of the IAM role to be used by Server Migration Service.
     */
   var roleName: js.UndefOr[RoleName] = js.undefined
 }
@@ -80,7 +80,7 @@ object UpdateReplicationJobRequest {
     
     inline def setLicenseTypeUndefined: Self = StObject.set(x, "licenseType", js.undefined)
     
-    inline def setNextReplicationRunStartTime(value: Timestamp): Self = StObject.set(x, "nextReplicationRunStartTime", value.asInstanceOf[js.Any])
+    inline def setNextReplicationRunStartTime(value: js.Date): Self = StObject.set(x, "nextReplicationRunStartTime", value.asInstanceOf[js.Any])
     
     inline def setNextReplicationRunStartTimeUndefined: Self = StObject.set(x, "nextReplicationRunStartTime", js.undefined)
     

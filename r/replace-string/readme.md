@@ -1,7 +1,7 @@
 
 # Scala.js typings for replace-string
 
-Typings are for version 3.1.0
+Typings are for version 4.0.0
 
 ## Library description:
 Replace all substring matches in a string
@@ -9,16 +9,13 @@ Replace all substring matches in a string
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | replace-string |
-| Keywords           | replace, string, text, all, many, multiple, global, match, matches, replacement, replacer, modify, substring, sub-string, needle, search |
-| # releases         | 3 |
-| # dependents       | 50 |
-| # downloads        | 2718377 |
-| # stars            | 3 |
+| Keywords           | replace, string, text, all, many, multiple, global, match, matches, replacement, replacer, modify, substring, sub-string, needle, search, replaceall |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 284188.3333333333 |
+| # stars            | 83.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/replace-string#readme)
-- [Bugs](https://github.com/sindresorhus/replace-string/issues)
-- [Repository](https://github.com/sindresorhus/replace-string)
 - [Npm](https://www.npmjs.com/package/replace-string)
     
 

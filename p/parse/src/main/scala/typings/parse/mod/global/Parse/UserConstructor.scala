@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UserConstructor
   extends StObject
-     with ObjectStatic
+     with ObjectStatic[User[Attributes]]
      with Instantiable0[User[Attributes]]
      with Instantiable1[/* attributes */ Attributes, User[Attributes]] {
   
@@ -24,14 +24,16 @@ trait UserConstructor
   
   def currentAsync[T /* <: User[Attributes] */](): js.Promise[T | Null] = js.native
   
+  def disableUnsafeCurrentUser(): Unit = js.native
+  
   def enableUnsafeCurrentUser(): Unit = js.native
   
-  def extend(): js.Any = js.native
-  def extend(protoProps: js.Any): js.Any = js.native
-  def extend(protoProps: js.Any, classProps: js.Any): js.Any = js.native
-  def extend(protoProps: Unit, classProps: js.Any): js.Any = js.native
+  def extend(): Any = js.native
+  def extend(protoProps: Any): Any = js.native
+  def extend(protoProps: Any, classProps: Any): Any = js.native
+  def extend(protoProps: Unit, classProps: Any): Any = js.native
   
-  def hydrate[T /* <: User[Attributes] */](userJSON: js.Any): js.Promise[T] = js.native
+  def hydrate[T /* <: User[Attributes] */](userJSON: Any): js.Promise[T] = js.native
   
   def logIn[T /* <: User[Attributes] */](username: String, password: String): js.Promise[T] = js.native
   def logIn[T /* <: User[Attributes] */](username: String, password: String, options: FullOptions): js.Promise[T] = js.native
@@ -43,9 +45,12 @@ trait UserConstructor
   
   def logOut[T /* <: User[Attributes] */](): js.Promise[T] = js.native
   
+  def requestEmailVerification[T /* <: User[Attributes] */](email: String): js.Promise[T] = js.native
+  def requestEmailVerification[T /* <: User[Attributes] */](email: String, options: UseMasterKeyOption): js.Promise[T] = js.native
+  
   def requestPasswordReset[T /* <: User[Attributes] */](email: String): js.Promise[T] = js.native
   def requestPasswordReset[T /* <: User[Attributes] */](email: String, options: SuccessFailureOptions): js.Promise[T] = js.native
   
-  def signUp[T /* <: User[Attributes] */](username: String, password: String, attrs: js.Any): js.Promise[T] = js.native
-  def signUp[T /* <: User[Attributes] */](username: String, password: String, attrs: js.Any, options: SignUpOptions): js.Promise[T] = js.native
+  def signUp[T /* <: User[Attributes] */](username: String, password: String, attrs: Any): js.Promise[T] = js.native
+  def signUp[T /* <: User[Attributes] */](username: String, password: String, attrs: Any, options: SignUpOptions): js.Promise[T] = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("thrift", "TCompactProtocol")
 @js.native
-class TCompactProtocol protected ()
+open class TCompactProtocol protected ()
   extends StObject
      with TProtocol {
   def this(trans: TTransport) = this()

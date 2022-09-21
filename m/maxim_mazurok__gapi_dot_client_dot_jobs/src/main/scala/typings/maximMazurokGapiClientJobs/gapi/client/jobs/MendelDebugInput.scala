@@ -15,7 +15,7 @@ trait MendelDebugInput extends StObject {
   var namespacedDebugInput: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.jobs.gapi.client.jobs.NamespacedDebugInput}
-    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.MendelDebugInput & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.MendelDebugInput & TopLevel[Any]
   ] = js.undefined
 }
 object MendelDebugInput {
@@ -30,7 +30,7 @@ object MendelDebugInput {
     inline def setNamespacedDebugInput(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.jobs.gapi.client.jobs.NamespacedDebugInput}
-      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.MendelDebugInput & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.MendelDebugInput & TopLevel[Any]
     ): Self = StObject.set(x, "namespacedDebugInput", value.asInstanceOf[js.Any])
     
     inline def setNamespacedDebugInputUndefined: Self = StObject.set(x, "namespacedDebugInput", js.undefined)

@@ -39,7 +39,7 @@ trait univariateColorSizeContinuousRendererResult
   var defaultValuesUsed: Boolean
   
   /**
-    * The renderer object configured to best match the given basemap and the spread of the data.
+    * The renderer object configured to best match the view's background and the spread of the data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#ContinuousRendererResult)
     */

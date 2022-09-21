@@ -9,7 +9,7 @@ object sphericalMod {
   
   @JSImport("three/src/math/Spherical", "Spherical")
   @js.native
-  class Spherical () extends StObject {
+  open class Spherical () extends StObject {
     def this(radius: Double) = this()
     def this(radius: Double, phi: Double) = this()
     def this(radius: Unit, phi: Double) = this()
@@ -23,13 +23,13 @@ object sphericalMod {
     def makeSafe(): this.type = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var phi: Double = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var radius: Double = js.native
     
     def set(radius: Double, phi: Double, theta: Double): this.type = js.native
@@ -39,8 +39,8 @@ object sphericalMod {
     def setFromVector3(v: Vector3): this.type = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var theta: Double = js.native
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("dav", "Account")
 @js.native
-class Account () extends StObject {
+open class Account () extends StObject {
   def this(options: AccountOptions) = this()
   
   var addressBooks: js.Array[AddressBook] = js.native

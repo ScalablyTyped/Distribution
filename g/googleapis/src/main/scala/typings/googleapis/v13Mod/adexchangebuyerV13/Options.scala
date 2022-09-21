@@ -1,6 +1,6 @@
 package typings.googleapis.v13Mod.adexchangebuyerV13
 
-import typings.googleapis.googleapisStrings.v1_3
+import typings.googleapis.googleapisStrings.v1Dot3
 import typings.googleapisCommon.apiMod.GlobalOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,17 +10,17 @@ trait Options
   extends StObject
      with GlobalOptions {
   
-  var version: v1_3
+  var version: v1Dot3
 }
 object Options {
   
   inline def apply(): Options = {
-    val __obj = js.Dynamic.literal(version = "v1_3")
+    val __obj = js.Dynamic.literal(version = "v1.3")
     __obj.asInstanceOf[Options]
   }
   
   extension [Self <: Options](x: Self) {
     
-    inline def setVersion(value: v1_3): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: v1Dot3): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "AccumulateLoyaltyPointsRequest")
 @js.native
-class AccumulateLoyaltyPointsRequest () extends StObject {
+open class AccumulateLoyaltyPointsRequest () extends StObject {
   
   /**
     * The points to add to the account. If you are using the Orders API to manage orders, you specify the order ID.

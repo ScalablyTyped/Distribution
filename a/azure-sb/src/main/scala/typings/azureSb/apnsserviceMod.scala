@@ -3,7 +3,6 @@ package typings.azureSb
 import typings.azureSb.anon.Headers
 import typings.azureSb.mod.Azure.ServiceBus.ListNotificationHubsOptions
 import typings.azureSb.mod.Azure.ServiceBus.ResponseCallback
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object apnsserviceMod {
   
   @JSImport("azure-sb/lib/apnsservice", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with ApnsService {
     def this(notificationHubService: typings.azureSb.notificationhubserviceMod.^) = this()
@@ -143,7 +142,7 @@ object apnsserviceMod {
     
     var badge: js.UndefOr[Double] = js.undefined
     
-    var expiry: js.UndefOr[Date] = js.undefined
+    var expiry: js.UndefOr[js.Date] = js.undefined
     
     var payload: js.UndefOr[js.Object] = js.undefined
     
@@ -170,7 +169,7 @@ object apnsserviceMod {
       
       inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      inline def setExpiry(value: Date): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
+      inline def setExpiry(value: js.Date): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
       
       inline def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
       

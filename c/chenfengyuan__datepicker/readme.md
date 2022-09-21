@@ -10,10 +10,10 @@ A simple jQuery datepicker plugin.
 | ------------------ | :-------------: |
 | Full name          | @chenfengyuan/datepicker |
 | Keywords           | date, picker, datepicker, jquery, plugin, jquery-plugin, html, css, javascript, front-end, web |
-| # releases         | 11 |
-| # dependents       | 4 |
-| # downloads        | 112811 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 24904.666666666668 |
+| # stars            | 1178.0 |
 
 ## Links
 - [Homepage](https://fengyuanchen.github.io/datepicker)

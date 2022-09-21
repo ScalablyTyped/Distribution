@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jimp/types" : "0.16.1"
+      "@jimp/types" : "0.16.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@jimp/types" : "0.16.1"
+      "@jimp/types" : "0.16.2"
     }
   ],
   "compile-devDependencies" : [

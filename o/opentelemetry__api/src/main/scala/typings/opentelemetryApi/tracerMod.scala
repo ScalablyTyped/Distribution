@@ -1,8 +1,8 @@
 package typings.opentelemetryApi
 
+import typings.opentelemetryApi.contextTypesMod.Context
 import typings.opentelemetryApi.spanMod.Span
 import typings.opentelemetryApi.spanOptionsMod.SpanOptions
-import typings.opentelemetryContextBase.mod.Context
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,33 +14,57 @@ object tracerMod {
   trait Tracer extends StObject {
     
     /**
-      * Bind a span as the target's context or propagate the current one.
+      * Starts a new {@link Span} and calls the given function passing it the
+      * created span as first argument.
+      * Additionally the new span gets set in context and this context is activated
+      * for the duration of the function call.
       *
-      * @param target Any object to which a context need to be set
-      * @param [context] Optionally specify the context which you want to bind
+      * @param name The name of the span
+      * @param [options] SpanOptions used for span creation
+      * @param [context] Context to use to extract parent
+      * @param fn function called in the context of the span and receives the newly created span as an argument
+      * @returns return value of fn
+      * @example
+      *     const something = tracer.startActiveSpan('op', span => {
+      *       try {
+      *         do some work
+      *         span.setStatus({code: SpanStatusCode.OK});
+      *         return something;
+      *       } catch (err) {
+      *         span.setStatus({
+      *           code: SpanStatusCode.ERROR,
+      *           message: err.message,
+      *         });
+      *         throw err;
+      *       } finally {
+      *         span.end();
+      *       }
+      *     });
+      *
+      * @example
+      *     const span = tracer.startActiveSpan('op', span => {
+      *       try {
+      *         do some work
+      *         return span;
+      *       } catch (err) {
+      *         span.setStatus({
+      *           code: SpanStatusCode.ERROR,
+      *           message: err.message,
+      *         });
+      *         throw err;
+      *       }
+      *     });
+      *     do some more work
+      *     span.end();
       */
-    def bind[T](target: T): T = js.native
-    def bind[T](target: T, context: Span): T = js.native
+    def startActiveSpan[F /* <: js.Function1[/* span */ Span, Any] */](name: String, fn: F): ReturnType[F] = js.native
+    def startActiveSpan[F /* <: js.Function1[/* span */ Span, Any] */](name: String, options: SpanOptions, context: Context, fn: F): ReturnType[F] = js.native
+    def startActiveSpan[F /* <: js.Function1[/* span */ Span, Any] */](name: String, options: SpanOptions, fn: F): ReturnType[F] = js.native
     
     /**
-      * Returns the current Span from the current context if available.
+      * Starts a new {@link Span}. Start the span without setting it on context.
       *
-      * If there is no Span associated with the current context, `undefined` is
-      * returned.
-      *
-      * To install a {@link Span} to the current Context use
-      * {@link Tracer.withSpan}.
-      *
-      * @returns Span The currently active Span
-      */
-    def getCurrentSpan(): js.UndefOr[Span] = js.native
-    
-    /**
-      * Starts a new {@link Span}. Start the span without setting it as the current
-      * span in this tracer's context.
-      *
-      * This method do NOT modify the current Context. To install a {@link
-      * Span} to the current Context use {@link Tracer.withSpan}.
+      * This method do NOT modify the current Context.
       *
       * @param name The name of the span
       * @param [options] SpanOptions used for span creation
@@ -55,22 +79,5 @@ object tracerMod {
     def startSpan(name: String, options: Unit, context: Context): Span = js.native
     def startSpan(name: String, options: SpanOptions): Span = js.native
     def startSpan(name: String, options: SpanOptions, context: Context): Span = js.native
-    
-    /**
-      * Executes the function given by fn within the context provided by Span.
-      *
-      * This is a convenience method for creating spans attached to the tracer's
-      * context. Applications that need more control over the span lifetime should
-      * use {@link Tracer.startSpan} instead.
-      *
-      * @param span The span that provides the context
-      * @param fn The function to be executed inside the provided context
-      * @example
-      *     tracer.withSpan(span, () => {
-      *         tracer.getCurrentSpan().addEvent("parent's event");
-      *         doSomeOtherWork();  // Here "span" is the current Span.
-      *     });
-      */
-    def withSpan[T /* <: js.Function1[/* repeated */ js.Any, ReturnType[T]] */](span: Span, fn: T): ReturnType[T] = js.native
   }
 }

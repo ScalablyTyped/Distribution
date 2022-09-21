@@ -14,7 +14,7 @@ object signing {
   
   @JSGlobal("sawtooth.signing.CryptoFactory")
   @js.native
-  class CryptoFactory protected ()
+  open class CryptoFactory protected ()
     extends typings.sawtoothSdk.mod.signing.CryptoFactory {
     /**
       * Constructs a CryptoFactory.
@@ -26,7 +26,7 @@ object signing {
   
   @JSGlobal("sawtooth.signing.Signer")
   @js.native
-  class Signer protected ()
+  open class Signer protected ()
     extends typings.sawtoothSdk.mod.signing.Signer {
     /**
       * Constructs a new Signer

@@ -10,10 +10,10 @@ A simple library to serialize/deserialize JSON-RPC 2.0 messages
 | ------------------ | :-------------: |
 | Full name          | jsonrpc-serializer |
 | Keywords           | json, jsonrpc, json-rpc, jsonrpc2 |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 48324 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 471.0 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/soggie/jsonrpc-serializer#readme)

@@ -33,6 +33,6 @@ object ListUserImportJobsResponse {
     
     inline def setUserImportJobsUndefined: Self = StObject.set(x, "UserImportJobs", js.undefined)
     
-    inline def setUserImportJobsVarargs(value: UserImportJobType*): Self = StObject.set(x, "UserImportJobs", js.Array(value :_*))
+    inline def setUserImportJobsVarargs(value: UserImportJobType*): Self = StObject.set(x, "UserImportJobs", js.Array(value*))
   }
 }

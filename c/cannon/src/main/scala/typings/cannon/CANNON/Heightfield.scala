@@ -16,9 +16,9 @@ trait Heightfield
   
   def getConvexTrianglePillar(xi: Double, yi: Double, getUpperTriangle: Boolean): Unit
   
-  def getIndexOfPosition(x: Double, y: Double, result: js.Array[js.Any], clamp: Boolean): Boolean
+  def getIndexOfPosition(x: Double, y: Double, result: js.Array[Any], clamp: Boolean): Boolean
   
-  def getRectMinMax(iMinX: Double, iMinY: Double, iMaxX: Double, iMaxY: Double, result: js.Array[js.Any]): Unit
+  def getRectMinMax(iMinX: Double, iMinY: Double, iMaxX: Double, iMaxY: Double, result: js.Array[Any]): Unit
   
   var maxValue: Double
   
@@ -46,8 +46,9 @@ object Heightfield {
     data: js.Array[js.Array[Double]],
     elementSize: Double,
     getConvexTrianglePillar: (Double, Double, Boolean) => Unit,
-    getIndexOfPosition: (Double, Double, js.Array[js.Any], Boolean) => Boolean,
-    getRectMinMax: (Double, Double, Double, Double, js.Array[js.Any]) => Unit,
+    getIndexOfPosition: (Double, Double, js.Array[Any], Boolean) => Boolean,
+    getRectMinMax: (Double, Double, Double, Double, js.Array[Any]) => Unit,
+    id: Double,
     maxValue: Double,
     minValue: Double,
     pillarConvex: ConvexPolyhedron,
@@ -60,7 +61,7 @@ object Heightfield {
     updateMinValue: () => Unit,
     volume: () => Double
   ): Heightfield = {
-    val __obj = js.Dynamic.literal(boundingSphereRadius = boundingSphereRadius.asInstanceOf[js.Any], cacheEnabled = cacheEnabled.asInstanceOf[js.Any], calculateLocalInertia = js.Any.fromFunction2(calculateLocalInertia), collisionResponse = collisionResponse.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], elementSize = elementSize.asInstanceOf[js.Any], getConvexTrianglePillar = js.Any.fromFunction3(getConvexTrianglePillar), getIndexOfPosition = js.Any.fromFunction4(getIndexOfPosition), getRectMinMax = js.Any.fromFunction5(getRectMinMax), maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any], pillarConvex = pillarConvex.asInstanceOf[js.Any], pillarOffset = pillarOffset.asInstanceOf[js.Any], setHeightValueAtIndex = js.Any.fromFunction3(setHeightValueAtIndex), update = js.Any.fromFunction0(update), updateBoundingSphereRadius = js.Any.fromFunction0(updateBoundingSphereRadius), updateMaxValue = js.Any.fromFunction0(updateMaxValue), updateMinValue = js.Any.fromFunction0(updateMinValue), volume = js.Any.fromFunction0(volume))
+    val __obj = js.Dynamic.literal(boundingSphereRadius = boundingSphereRadius.asInstanceOf[js.Any], cacheEnabled = cacheEnabled.asInstanceOf[js.Any], calculateLocalInertia = js.Any.fromFunction2(calculateLocalInertia), collisionResponse = collisionResponse.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], elementSize = elementSize.asInstanceOf[js.Any], getConvexTrianglePillar = js.Any.fromFunction3(getConvexTrianglePillar), getIndexOfPosition = js.Any.fromFunction4(getIndexOfPosition), getRectMinMax = js.Any.fromFunction5(getRectMinMax), id = id.asInstanceOf[js.Any], maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any], pillarConvex = pillarConvex.asInstanceOf[js.Any], pillarOffset = pillarOffset.asInstanceOf[js.Any], setHeightValueAtIndex = js.Any.fromFunction3(setHeightValueAtIndex), update = js.Any.fromFunction0(update), updateBoundingSphereRadius = js.Any.fromFunction0(updateBoundingSphereRadius), updateMaxValue = js.Any.fromFunction0(updateMaxValue), updateMinValue = js.Any.fromFunction0(updateMinValue), volume = js.Any.fromFunction0(volume))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Heightfield]
   }
@@ -71,15 +72,15 @@ object Heightfield {
     
     inline def setData(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: js.Array[Double]*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Array[Double]*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setElementSize(value: Double): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
     
     inline def setGetConvexTrianglePillar(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "getConvexTrianglePillar", js.Any.fromFunction3(value))
     
-    inline def setGetIndexOfPosition(value: (Double, Double, js.Array[js.Any], Boolean) => Boolean): Self = StObject.set(x, "getIndexOfPosition", js.Any.fromFunction4(value))
+    inline def setGetIndexOfPosition(value: (Double, Double, js.Array[Any], Boolean) => Boolean): Self = StObject.set(x, "getIndexOfPosition", js.Any.fromFunction4(value))
     
-    inline def setGetRectMinMax(value: (Double, Double, Double, Double, js.Array[js.Any]) => Unit): Self = StObject.set(x, "getRectMinMax", js.Any.fromFunction5(value))
+    inline def setGetRectMinMax(value: (Double, Double, Double, Double, js.Array[Any]) => Unit): Self = StObject.set(x, "getRectMinMax", js.Any.fromFunction5(value))
     
     inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     

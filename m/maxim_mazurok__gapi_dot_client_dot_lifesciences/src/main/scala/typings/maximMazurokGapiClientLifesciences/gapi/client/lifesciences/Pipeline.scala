@@ -11,13 +11,19 @@ trait Pipeline extends StObject {
   var actions: js.UndefOr[js.Array[Action]] = js.undefined
   
   /**
+    * The encrypted environment to pass into every action. Each action can also specify its own encrypted environment. The secret must decrypt to a JSON-encoded dictionary where key-value
+    * pairs serve as environment variable names and their values. The decoded environment variables can overwrite the values specified by the `environment` field.
+    */
+  var encryptedEnvironment: js.UndefOr[Secret] = js.undefined
+  
+  /**
     * The environment to pass into every action. Each action can also specify additional environment variables but cannot delete an entry from this map (though they can overwrite it with
     * a different value).
     */
   var environment: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Pipeline & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Pipeline & TopLevel[Any]
   ] = js.undefined
   
   /** The resources required for execution. */
@@ -42,12 +48,16 @@ object Pipeline {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value*))
+    
+    inline def setEncryptedEnvironment(value: Secret): Self = StObject.set(x, "encryptedEnvironment", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptedEnvironmentUndefined: Self = StObject.set(x, "encryptedEnvironment", js.undefined)
     
     inline def setEnvironment(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Pipeline & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Pipeline & TopLevel[Any]
     ): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)

@@ -25,7 +25,7 @@ object ModeledVolume {
     
     inline def setStripsUndefined: Self = StObject.set(x, "strips", js.undefined)
     
-    inline def setStripsVarargs(value: TriangleStrip*): Self = StObject.set(x, "strips", js.Array(value :_*))
+    inline def setStripsVarargs(value: TriangleStrip*): Self = StObject.set(x, "strips", js.Array(value*))
     
     inline def setVertexOffsets(value: Vertex3DList): Self = StObject.set(x, "vertexOffsets", value.asInstanceOf[js.Any])
     

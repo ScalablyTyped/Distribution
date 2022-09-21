@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the formatting object for chart points.
   *
-  * Represents formatting object for chart points.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartPointFormat")
 @js.native
-class ChartPointFormat ()
+open class ChartPointFormat ()
   extends StObject
      with typings.officeJsPreview.Excel.ChartPointFormat {
   

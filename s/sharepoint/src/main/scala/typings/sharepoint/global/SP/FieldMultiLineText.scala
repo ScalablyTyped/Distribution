@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.FieldMultiLineText")
 @js.native
-class FieldMultiLineText ()
+open class FieldMultiLineText ()
   extends StObject
      with typings.sharepoint.SP.FieldMultiLineText

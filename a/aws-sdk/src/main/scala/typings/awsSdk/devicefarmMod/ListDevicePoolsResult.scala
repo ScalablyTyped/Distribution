@@ -29,7 +29,7 @@ object ListDevicePoolsResult {
     
     inline def setDevicePoolsUndefined: Self = StObject.set(x, "devicePools", js.undefined)
     
-    inline def setDevicePoolsVarargs(value: DevicePool*): Self = StObject.set(x, "devicePools", js.Array(value :_*))
+    inline def setDevicePoolsVarargs(value: DevicePool*): Self = StObject.set(x, "devicePools", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

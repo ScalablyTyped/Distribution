@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for ListJobTriggers.
-  */
 trait SchemaGooglePrivacyDlpV2ListJobTriggersResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaGooglePrivacyDlpV2ListJobTriggersResponse extends StObject {
   var jobTriggers: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2JobTrigger]] = js.undefined
   
   /**
-    * If the next page is available then the next page token to be used in
-    * following ListJobTriggers request.
+    * If the next page is available then the next page token to be used in following ListJobTriggers request.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ListJobTriggersResponse {
   
@@ -33,9 +29,11 @@ object SchemaGooglePrivacyDlpV2ListJobTriggersResponse {
     
     inline def setJobTriggersUndefined: Self = StObject.set(x, "jobTriggers", js.undefined)
     
-    inline def setJobTriggersVarargs(value: SchemaGooglePrivacyDlpV2JobTrigger*): Self = StObject.set(x, "jobTriggers", js.Array(value :_*))
+    inline def setJobTriggersVarargs(value: SchemaGooglePrivacyDlpV2JobTrigger*): Self = StObject.set(x, "jobTriggers", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

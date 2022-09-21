@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "Drawer")
 @js.native
-class Drawer () extends default
+open class Drawer () extends default
 /* static members */
 object Drawer {
   

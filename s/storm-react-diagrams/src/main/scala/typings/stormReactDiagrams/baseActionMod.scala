@@ -8,7 +8,7 @@ object baseActionMod {
   
   @JSImport("storm-react-diagrams/dist/src/actions/BaseAction", "BaseAction")
   @js.native
-  class BaseAction protected () extends StObject {
+  open class BaseAction protected () extends StObject {
     def this(mouseX: Double, mouseY: Double) = this()
     
     var mouseX: Double = js.native

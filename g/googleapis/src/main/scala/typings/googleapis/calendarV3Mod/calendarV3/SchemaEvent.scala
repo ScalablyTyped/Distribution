@@ -12,289 +12,225 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaEvent extends StObject {
   
   /**
-    * Whether anyone can invite themselves to the event (currently works for
-    * Google+ events only). Optional. The default is False.
+    * Whether anyone can invite themselves to the event (deprecated). Optional. The default is False.
     */
-  var anyoneCanAddSelf: js.UndefOr[Boolean] = js.undefined
+  var anyoneCanAddSelf: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * File attachments for the event. Currently only Google Drive attachments
-    * are supported. In order to modify attachments the supportsAttachments
-    * request parameter should be set to true. There can be at most 25
-    * attachments per event,
+    * File attachments for the event.
+    * In order to modify attachments the supportsAttachments request parameter should be set to true.
+    * There can be at most 25 attachments per event,
     */
   var attachments: js.UndefOr[js.Array[SchemaEventAttachment]] = js.undefined
   
   /**
-    * The attendees of the event. See the Events with attendees guide for more
-    * information on scheduling events with other calendar users.
+    * The attendees of the event. See the Events with attendees guide for more information on scheduling events with other calendar users. Service accounts need to use domain-wide delegation of authority to populate the attendee list.
     */
   var attendees: js.UndefOr[js.Array[SchemaEventAttendee]] = js.undefined
   
   /**
-    * Whether attendees may have been omitted from the event&#39;s
-    * representation. When retrieving an event, this may be due to a
-    * restriction specified by the maxAttendee query parameter. When updating
-    * an event, this can be used to only update the participant&#39;s response.
-    * Optional. The default is False.
+    * Whether attendees may have been omitted from the event's representation. When retrieving an event, this may be due to a restriction specified by the maxAttendee query parameter. When updating an event, this can be used to only update the participant's response. Optional. The default is False.
     */
-  var attendeesOmitted: js.UndefOr[Boolean] = js.undefined
+  var attendeesOmitted: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * The color of the event. This is an ID referring to an entry in the event
-    * section of the colors definition (see the  colors endpoint). Optional.
+    * The color of the event. This is an ID referring to an entry in the event section of the colors definition (see the  colors endpoint). Optional.
     */
-  var colorId: js.UndefOr[String] = js.undefined
+  var colorId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The conference-related information, such as details of a Hangouts Meet
-    * conference. To create new conference details use the createRequest field.
-    * To persist your changes, remember to set the conferenceDataVersion
-    * request parameter to 1 for all event modification requests.
+    * The conference-related information, such as details of a Google Meet conference. To create new conference details use the createRequest field. To persist your changes, remember to set the conferenceDataVersion request parameter to 1 for all event modification requests.
     */
   var conferenceData: js.UndefOr[SchemaConferenceData] = js.undefined
   
   /**
     * Creation time of the event (as a RFC3339 timestamp). Read-only.
     */
-  var created: js.UndefOr[String] = js.undefined
+  var created: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The creator of the event. Read-only.
     */
-  var creator: js.UndefOr[Self] = js.undefined
+  var creator: js.UndefOr[Self | Null] = js.undefined
   
   /**
-    * Description of the event. Optional.
+    * Description of the event. Can contain HTML. Optional.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The (exclusive) end time of the event. For a recurring event, this is the
-    * end time of the first instance.
+    * The (exclusive) end time of the event. For a recurring event, this is the end time of the first instance.
     */
   var end: js.UndefOr[SchemaEventDateTime] = js.undefined
   
   /**
-    * Whether the end time is actually unspecified. An end time is still
-    * provided for compatibility reasons, even if this attribute is set to
-    * True. The default is False.
+    * Whether the end time is actually unspecified. An end time is still provided for compatibility reasons, even if this attribute is set to True. The default is False.
     */
-  var endTimeUnspecified: js.UndefOr[Boolean] = js.undefined
+  var endTimeUnspecified: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Specific type of the event. Read-only. Possible values are:
+    * - "default" - A regular event or not further specified.
+    * - "outOfOffice" - An out-of-office event.
+    * - "focusTime" - A focus-time event.
+    */
+  var eventType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Extended properties of the event.
     */
-  var extendedProperties: js.UndefOr[Private] = js.undefined
+  var extendedProperties: js.UndefOr[Private | Null] = js.undefined
   
   /**
-    * A gadget that extends this event.
+    * A gadget that extends this event. Gadgets are deprecated; this structure is instead only used for returning birthday calendar metadata.
     */
-  var gadget: js.UndefOr[Display] = js.undefined
+  var gadget: js.UndefOr[Display | Null] = js.undefined
   
   /**
-    * Whether attendees other than the organizer can invite others to the
-    * event. Optional. The default is True.
+    * Whether attendees other than the organizer can invite others to the event. Optional. The default is True.
     */
-  var guestsCanInviteOthers: js.UndefOr[Boolean] = js.undefined
+  var guestsCanInviteOthers: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Whether attendees other than the organizer can modify the event.
-    * Optional. The default is False.
+    * Whether attendees other than the organizer can modify the event. Optional. The default is False.
     */
-  var guestsCanModify: js.UndefOr[Boolean] = js.undefined
+  var guestsCanModify: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Whether attendees other than the organizer can see who the event&#39;s
-    * attendees are. Optional. The default is True.
+    * Whether attendees other than the organizer can see who the event's attendees are. Optional. The default is True.
     */
-  var guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.undefined
+  var guestsCanSeeOtherGuests: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * An absolute link to the Google+ hangout associated with this event.
-    * Read-only.
+    * An absolute link to the Google Hangout associated with this event. Read-only.
     */
-  var hangoutLink: js.UndefOr[String] = js.undefined
+  var hangoutLink: js.UndefOr[String | Null] = js.undefined
   
   /**
     * An absolute link to this event in the Google Calendar Web UI. Read-only.
     */
-  var htmlLink: js.UndefOr[String] = js.undefined
+  var htmlLink: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Event unique identifier as defined in RFC5545. It is used to uniquely
-    * identify events accross calendaring systems and must be supplied when
-    * importing events via the import method. Note that the icalUID and the id
-    * are not identical and only one of them should be supplied at event
-    * creation time. One difference in their semantics is that in recurring
-    * events, all occurrences of one event have different ids while they all
-    * share the same icalUIDs.
+    * Event unique identifier as defined in RFC5545. It is used to uniquely identify events accross calendaring systems and must be supplied when importing events via the import method.
+    * Note that the iCalUID and the id are not identical and only one of them should be supplied at event creation time. One difference in their semantics is that in recurring events, all occurrences of one event have different ids while they all share the same iCalUIDs. To retrieve an event using its iCalUID, call the events.list method using the iCalUID parameter. To retrieve an event using its id, call the events.get method.
     */
-  var iCalUID: js.UndefOr[String] = js.undefined
+  var iCalUID: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Opaque identifier of the event. When creating new single or recurring
-    * events, you can specify their IDs. Provided IDs must follow these rules:
-    * - characters allowed in the ID are those used in base32hex encoding, i.e.
-    * lowercase letters a-v and digits 0-9, see section 3.1.2 in RFC2938  - the
-    * length of the ID must be between 5 and 1024 characters  - the ID must be
-    * unique per calendar  Due to the globally distributed nature of the
-    * system, we cannot guarantee that ID collisions will be detected at event
-    * creation time. To minimize the risk of collisions we recommend using an
-    * established UUID algorithm such as one described in RFC4122. If you do
-    * not specify an ID, it will be automatically generated by the server. Note
-    * that the icalUID and the id are not identical and only one of them should
-    * be supplied at event creation time. One difference in their semantics is
-    * that in recurring events, all occurrences of one event have different ids
-    * while they all share the same icalUIDs.
+    * Opaque identifier of the event. When creating new single or recurring events, you can specify their IDs. Provided IDs must follow these rules:
+    * - characters allowed in the ID are those used in base32hex encoding, i.e. lowercase letters a-v and digits 0-9, see section 3.1.2 in RFC2938
+    * - the length of the ID must be between 5 and 1024 characters
+    * - the ID must be unique per calendar  Due to the globally distributed nature of the system, we cannot guarantee that ID collisions will be detected at event creation time. To minimize the risk of collisions we recommend using an established UUID algorithm such as one described in RFC4122.
+    * If you do not specify an ID, it will be automatically generated by the server.
+    * Note that the icalUID and the id are not identical and only one of them should be supplied at event creation time. One difference in their semantics is that in recurring events, all occurrences of one event have different ids while they all share the same icalUIDs.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Type of the resource (&quot;calendar#event&quot;).
+    * Type of the resource ("calendar#event").
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Geographic location of the event as free-form text. Optional.
     */
-  var location: js.UndefOr[String] = js.undefined
+  var location: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Whether this is a locked event copy where no changes can be made to the
-    * main event fields &quot;summary&quot;, &quot;description&quot;,
-    * &quot;location&quot;, &quot;start&quot;, &quot;end&quot; or
-    * &quot;recurrence&quot;. The default is False. Read-Only.
+    * Whether this is a locked event copy where no changes can be made to the main event fields "summary", "description", "location", "start", "end" or "recurrence". The default is False. Read-Only.
     */
-  var locked: js.UndefOr[Boolean] = js.undefined
+  var locked: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * The organizer of the event. If the organizer is also an attendee, this is
-    * indicated with a separate entry in attendees with the organizer field set
-    * to True. To change the organizer, use the move operation. Read-only,
-    * except when importing an event.
+    * The organizer of the event. If the organizer is also an attendee, this is indicated with a separate entry in attendees with the organizer field set to True. To change the organizer, use the move operation. Read-only, except when importing an event.
     */
-  var organizer: js.UndefOr[Self] = js.undefined
+  var organizer: js.UndefOr[Self | Null] = js.undefined
   
   /**
-    * For an instance of a recurring event, this is the time at which this
-    * event would start according to the recurrence data in the recurring event
-    * identified by recurringEventId. It uniquely identifies the instance
-    * within the recurring event series even if the instance was moved to a
-    * different time. Immutable.
+    * For an instance of a recurring event, this is the time at which this event would start according to the recurrence data in the recurring event identified by recurringEventId. It uniquely identifies the instance within the recurring event series even if the instance was moved to a different time. Immutable.
     */
   var originalStartTime: js.UndefOr[SchemaEventDateTime] = js.undefined
   
   /**
-    * Whether this is a private event copy where changes are not shared with
-    * other copies on other calendars. Optional. Immutable. The default is
-    * False.
+    * If set to True, Event propagation is disabled. Note that it is not the same thing as Private event properties. Optional. Immutable. The default is False.
     */
-  var privateCopy: js.UndefOr[Boolean] = js.undefined
+  var privateCopy: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * List of RRULE, EXRULE, RDATE and EXDATE lines for a recurring event, as
-    * specified in RFC5545. Note that DTSTART and DTEND lines are not allowed
-    * in this field; event start and end times are specified in the start and
-    * end fields. This field is omitted for single events or instances of
-    * recurring events.
+    * List of RRULE, EXRULE, RDATE and EXDATE lines for a recurring event, as specified in RFC5545. Note that DTSTART and DTEND lines are not allowed in this field; event start and end times are specified in the start and end fields. This field is omitted for single events or instances of recurring events.
     */
-  var recurrence: js.UndefOr[js.Array[String]] = js.undefined
+  var recurrence: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * For an instance of a recurring event, this is the id of the recurring
-    * event to which this instance belongs. Immutable.
+    * For an instance of a recurring event, this is the id of the recurring event to which this instance belongs. Immutable.
     */
-  var recurringEventId: js.UndefOr[String] = js.undefined
+  var recurringEventId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Information about the event&#39;s reminders for the authenticated user.
+    * Information about the event's reminders for the authenticated user.
     */
-  var reminders: js.UndefOr[Overrides] = js.undefined
+  var reminders: js.UndefOr[Overrides | Null] = js.undefined
   
   /**
     * Sequence number as per iCalendar.
     */
-  var sequence: js.UndefOr[Double] = js.undefined
+  var sequence: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Source from which the event was created. For example, a web page, an
-    * email message or any document identifiable by an URL with HTTP or HTTPS
-    * scheme. Can only be seen or modified by the creator of the event.
+    * Source from which the event was created. For example, a web page, an email message or any document identifiable by an URL with HTTP or HTTPS scheme. Can only be seen or modified by the creator of the event.
     */
-  var source: js.UndefOr[TitleUrl] = js.undefined
+  var source: js.UndefOr[TitleUrl | Null] = js.undefined
   
   /**
-    * The (inclusive) start time of the event. For a recurring event, this is
-    * the start time of the first instance.
+    * The (inclusive) start time of the event. For a recurring event, this is the start time of the first instance.
     */
   var start: js.UndefOr[SchemaEventDateTime] = js.undefined
   
   /**
-    * Status of the event. Optional. Possible values are:   -
-    * &quot;confirmed&quot; - The event is confirmed. This is the default
-    * status.  - &quot;tentative&quot; - The event is tentatively confirmed.  -
-    * &quot;cancelled&quot; - The event is cancelled (deleted). The list method
-    * returns cancelled events only on incremental sync (when syncToken or
-    * updatedMin are specified) or if the showDeleted flag is set to true. The
-    * get method always returns them. A cancelled status represents two
-    * different states depending on the event type:   - Cancelled exceptions of
-    * an uncancelled recurring event indicate that this instance should no
-    * longer be presented to the user. Clients should store these events for
-    * the lifetime of the parent recurring event. Cancelled exceptions are only
-    * guaranteed to have values for the id, recurringEventId and
-    * originalStartTime fields populated. The other fields might be empty.   -
-    * All other cancelled events represent deleted events. Clients should
-    * remove their locally synced copies. Such cancelled events will eventually
-    * disappear, so do not rely on them being available indefinitely. Deleted
-    * events are only guaranteed to have the id field populated.   On the
-    * organizer&#39;s calendar, cancelled events continue to expose event
-    * details (summary, location, etc.) so that they can be restored
-    * (undeleted). Similarly, the events to which the user was invited and that
-    * they manually removed continue to provide details. However, incremental
-    * sync requests with showDeleted set to false will not return these
-    * details. If an event changes its organizer (for example via the move
-    * operation) and the original organizer is not on the attendee list, it
-    * will leave behind a cancelled event where only the id field is guaranteed
-    * to be populated.
+    * Status of the event. Optional. Possible values are:
+    * - "confirmed" - The event is confirmed. This is the default status.
+    * - "tentative" - The event is tentatively confirmed.
+    * - "cancelled" - The event is cancelled (deleted). The list method returns cancelled events only on incremental sync (when syncToken or updatedMin are specified) or if the showDeleted flag is set to true. The get method always returns them.
+    * A cancelled status represents two different states depending on the event type:
+    * - Cancelled exceptions of an uncancelled recurring event indicate that this instance should no longer be presented to the user. Clients should store these events for the lifetime of the parent recurring event.
+    * Cancelled exceptions are only guaranteed to have values for the id, recurringEventId and originalStartTime fields populated. The other fields might be empty.
+    * - All other cancelled events represent deleted events. Clients should remove their locally synced copies. Such cancelled events will eventually disappear, so do not rely on them being available indefinitely.
+    * Deleted events are only guaranteed to have the id field populated.   On the organizer's calendar, cancelled events continue to expose event details (summary, location, etc.) so that they can be restored (undeleted). Similarly, the events to which the user was invited and that they manually removed continue to provide details. However, incremental sync requests with showDeleted set to false will not return these details.
+    * If an event changes its organizer (for example via the move operation) and the original organizer is not on the attendee list, it will leave behind a cancelled event where only the id field is guaranteed to be populated.
     */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Title of the event.
     */
-  var summary: js.UndefOr[String] = js.undefined
+  var summary: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Whether the event blocks time on the calendar. Optional. Possible values
-    * are:   - &quot;opaque&quot; - Default value. The event does block time on
-    * the calendar. This is equivalent to setting Show me as to Busy in the
-    * Calendar UI.  - &quot;transparent&quot; - The event does not block time
-    * on the calendar. This is equivalent to setting Show me as to Available in
-    * the Calendar UI.
+    * Whether the event blocks time on the calendar. Optional. Possible values are:
+    * - "opaque" - Default value. The event does block time on the calendar. This is equivalent to setting Show me as to Busy in the Calendar UI.
+    * - "transparent" - The event does not block time on the calendar. This is equivalent to setting Show me as to Available in the Calendar UI.
     */
-  var transparency: js.UndefOr[String] = js.undefined
+  var transparency: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Last modification time of the event (as a RFC3339 timestamp). Read-only.
     */
-  var updated: js.UndefOr[String] = js.undefined
+  var updated: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Visibility of the event. Optional. Possible values are:   -
-    * &quot;default&quot; - Uses the default visibility for events on the
-    * calendar. This is the default value.  - &quot;public&quot; - The event is
-    * public and event details are visible to all readers of the calendar.  -
-    * &quot;private&quot; - The event is private and only event attendees may
-    * view event details.  - &quot;confidential&quot; - The event is private.
-    * This value is provided for compatibility reasons.
+    * Visibility of the event. Optional. Possible values are:
+    * - "default" - Uses the default visibility for events on the calendar. This is the default value.
+    * - "public" - The event is public and event details are visible to all readers of the calendar.
+    * - "private" - The event is private and only event attendees may view event details.
+    * - "confidential" - The event is private. This value is provided for compatibility reasons.
     */
-  var visibility: js.UndefOr[String] = js.undefined
+  var visibility: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaEvent {
   
@@ -307,25 +243,31 @@ object SchemaEvent {
     
     inline def setAnyoneCanAddSelf(value: Boolean): Self = StObject.set(x, "anyoneCanAddSelf", value.asInstanceOf[js.Any])
     
+    inline def setAnyoneCanAddSelfNull: Self = StObject.set(x, "anyoneCanAddSelf", null)
+    
     inline def setAnyoneCanAddSelfUndefined: Self = StObject.set(x, "anyoneCanAddSelf", js.undefined)
     
     inline def setAttachments(value: js.Array[SchemaEventAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: SchemaEventAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: SchemaEventAttachment*): Self = StObject.set(x, "attachments", js.Array(value*))
     
     inline def setAttendees(value: js.Array[SchemaEventAttendee]): Self = StObject.set(x, "attendees", value.asInstanceOf[js.Any])
     
     inline def setAttendeesOmitted(value: Boolean): Self = StObject.set(x, "attendeesOmitted", value.asInstanceOf[js.Any])
     
+    inline def setAttendeesOmittedNull: Self = StObject.set(x, "attendeesOmitted", null)
+    
     inline def setAttendeesOmittedUndefined: Self = StObject.set(x, "attendeesOmitted", js.undefined)
     
     inline def setAttendeesUndefined: Self = StObject.set(x, "attendees", js.undefined)
     
-    inline def setAttendeesVarargs(value: SchemaEventAttendee*): Self = StObject.set(x, "attendees", js.Array(value :_*))
+    inline def setAttendeesVarargs(value: SchemaEventAttendee*): Self = StObject.set(x, "attendees", js.Array(value*))
     
     inline def setColorId(value: String): Self = StObject.set(x, "colorId", value.asInstanceOf[js.Any])
+    
+    inline def setColorIdNull: Self = StObject.set(x, "colorId", null)
     
     inline def setColorIdUndefined: Self = StObject.set(x, "colorId", js.undefined)
     
@@ -335,13 +277,19 @@ object SchemaEvent {
     
     inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
+    inline def setCreatedNull: Self = StObject.set(x, "created", null)
+    
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    inline def setCreator(value: Self): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: typings.googleapis.anon.Self): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+    
+    inline def setCreatorNull: Self = StObject.set(x, "creator", null)
     
     inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
@@ -349,63 +297,99 @@ object SchemaEvent {
     
     inline def setEndTimeUnspecified(value: Boolean): Self = StObject.set(x, "endTimeUnspecified", value.asInstanceOf[js.Any])
     
+    inline def setEndTimeUnspecifiedNull: Self = StObject.set(x, "endTimeUnspecified", null)
+    
     inline def setEndTimeUnspecifiedUndefined: Self = StObject.set(x, "endTimeUnspecified", js.undefined)
     
     inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    
+    inline def setEventTypeNull: Self = StObject.set(x, "eventType", null)
+    
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
+    
     inline def setExtendedProperties(value: Private): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
+    
+    inline def setExtendedPropertiesNull: Self = StObject.set(x, "extendedProperties", null)
     
     inline def setExtendedPropertiesUndefined: Self = StObject.set(x, "extendedProperties", js.undefined)
     
     inline def setGadget(value: Display): Self = StObject.set(x, "gadget", value.asInstanceOf[js.Any])
     
+    inline def setGadgetNull: Self = StObject.set(x, "gadget", null)
+    
     inline def setGadgetUndefined: Self = StObject.set(x, "gadget", js.undefined)
     
     inline def setGuestsCanInviteOthers(value: Boolean): Self = StObject.set(x, "guestsCanInviteOthers", value.asInstanceOf[js.Any])
+    
+    inline def setGuestsCanInviteOthersNull: Self = StObject.set(x, "guestsCanInviteOthers", null)
     
     inline def setGuestsCanInviteOthersUndefined: Self = StObject.set(x, "guestsCanInviteOthers", js.undefined)
     
     inline def setGuestsCanModify(value: Boolean): Self = StObject.set(x, "guestsCanModify", value.asInstanceOf[js.Any])
     
+    inline def setGuestsCanModifyNull: Self = StObject.set(x, "guestsCanModify", null)
+    
     inline def setGuestsCanModifyUndefined: Self = StObject.set(x, "guestsCanModify", js.undefined)
     
     inline def setGuestsCanSeeOtherGuests(value: Boolean): Self = StObject.set(x, "guestsCanSeeOtherGuests", value.asInstanceOf[js.Any])
+    
+    inline def setGuestsCanSeeOtherGuestsNull: Self = StObject.set(x, "guestsCanSeeOtherGuests", null)
     
     inline def setGuestsCanSeeOtherGuestsUndefined: Self = StObject.set(x, "guestsCanSeeOtherGuests", js.undefined)
     
     inline def setHangoutLink(value: String): Self = StObject.set(x, "hangoutLink", value.asInstanceOf[js.Any])
     
+    inline def setHangoutLinkNull: Self = StObject.set(x, "hangoutLink", null)
+    
     inline def setHangoutLinkUndefined: Self = StObject.set(x, "hangoutLink", js.undefined)
     
     inline def setHtmlLink(value: String): Self = StObject.set(x, "htmlLink", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlLinkNull: Self = StObject.set(x, "htmlLink", null)
     
     inline def setHtmlLinkUndefined: Self = StObject.set(x, "htmlLink", js.undefined)
     
     inline def setICalUID(value: String): Self = StObject.set(x, "iCalUID", value.asInstanceOf[js.Any])
     
+    inline def setICalUIDNull: Self = StObject.set(x, "iCalUID", null)
+    
     inline def setICalUIDUndefined: Self = StObject.set(x, "iCalUID", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationNull: Self = StObject.set(x, "location", null)
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
+    inline def setLockedNull: Self = StObject.set(x, "locked", null)
+    
     inline def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
     
-    inline def setOrganizer(value: Self): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
+    inline def setOrganizer(value: typings.googleapis.anon.Self): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
+    
+    inline def setOrganizerNull: Self = StObject.set(x, "organizer", null)
     
     inline def setOrganizerUndefined: Self = StObject.set(x, "organizer", js.undefined)
     
@@ -415,27 +399,39 @@ object SchemaEvent {
     
     inline def setPrivateCopy(value: Boolean): Self = StObject.set(x, "privateCopy", value.asInstanceOf[js.Any])
     
+    inline def setPrivateCopyNull: Self = StObject.set(x, "privateCopy", null)
+    
     inline def setPrivateCopyUndefined: Self = StObject.set(x, "privateCopy", js.undefined)
     
     inline def setRecurrence(value: js.Array[String]): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
+    inline def setRecurrenceNull: Self = StObject.set(x, "recurrence", null)
+    
     inline def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
     
-    inline def setRecurrenceVarargs(value: String*): Self = StObject.set(x, "recurrence", js.Array(value :_*))
+    inline def setRecurrenceVarargs(value: String*): Self = StObject.set(x, "recurrence", js.Array(value*))
     
     inline def setRecurringEventId(value: String): Self = StObject.set(x, "recurringEventId", value.asInstanceOf[js.Any])
+    
+    inline def setRecurringEventIdNull: Self = StObject.set(x, "recurringEventId", null)
     
     inline def setRecurringEventIdUndefined: Self = StObject.set(x, "recurringEventId", js.undefined)
     
     inline def setReminders(value: Overrides): Self = StObject.set(x, "reminders", value.asInstanceOf[js.Any])
     
+    inline def setRemindersNull: Self = StObject.set(x, "reminders", null)
+    
     inline def setRemindersUndefined: Self = StObject.set(x, "reminders", js.undefined)
     
     inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
+    inline def setSequenceNull: Self = StObject.set(x, "sequence", null)
+    
     inline def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
     
     inline def setSource(value: TitleUrl): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
@@ -445,21 +441,31 @@ object SchemaEvent {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
+    
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    
+    inline def setSummaryNull: Self = StObject.set(x, "summary", null)
     
     inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
     
     inline def setTransparency(value: String): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
     
+    inline def setTransparencyNull: Self = StObject.set(x, "transparency", null)
+    
     inline def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
     
     inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
+    inline def setUpdatedNull: Self = StObject.set(x, "updated", null)
+    
     inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
     inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityNull: Self = StObject.set(x, "visibility", null)
     
     inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }

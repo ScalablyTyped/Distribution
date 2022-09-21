@@ -40,6 +40,11 @@ trait DispatchMouseEventRequest extends StObject {
   var deltaY: js.UndefOr[Double] = js.undefined
   
   /**
+    * The normalized pressure, which has a range of [0,1] (default: 0).
+    */
+  var force: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Bit field representing pressed modifier keys. Alt=1, Ctrl=2, Meta/Command=4, Shift=8
     * (default: 0).
     */
@@ -51,9 +56,29 @@ trait DispatchMouseEventRequest extends StObject {
   var pointerType: js.UndefOr[mouse | pen] = js.undefined
   
   /**
+    * The normalized tangential pressure, which has a range of [-1,1] (default: 0).
+    */
+  var tangentialPressure: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The plane angle between the Y-Z plane and the plane containing both the stylus axis and the Y axis, in degrees of the range [-90,90], a positive tiltX is to the right (default: 0).
+    */
+  var tiltX: js.UndefOr[integer] = js.undefined
+  
+  /**
+    * The plane angle between the X-Z plane and the plane containing both the stylus axis and the X axis, in degrees of the range [-90,90], a positive tiltY is towards the user (default: 0).
+    */
+  var tiltY: js.UndefOr[integer] = js.undefined
+  
+  /**
     * Time at which the event occurred.
     */
   var timestamp: js.UndefOr[TimeSinceEpoch] = js.undefined
+  
+  /**
+    * The clockwise rotation of a pen stylus around its own major axis, in degrees in the range [0,359] (default: 0).
+    */
+  var twist: js.UndefOr[integer] = js.undefined
   
   /**
     * Type of the mouse event. (DispatchMouseEventRequestType enum)
@@ -101,6 +126,10 @@ object DispatchMouseEventRequest {
     
     inline def setDeltaYUndefined: Self = StObject.set(x, "deltaY", js.undefined)
     
+    inline def setForce(value: Double): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    
     inline def setModifiers(value: integer): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
@@ -109,9 +138,25 @@ object DispatchMouseEventRequest {
     
     inline def setPointerTypeUndefined: Self = StObject.set(x, "pointerType", js.undefined)
     
+    inline def setTangentialPressure(value: Double): Self = StObject.set(x, "tangentialPressure", value.asInstanceOf[js.Any])
+    
+    inline def setTangentialPressureUndefined: Self = StObject.set(x, "tangentialPressure", js.undefined)
+    
+    inline def setTiltX(value: integer): Self = StObject.set(x, "tiltX", value.asInstanceOf[js.Any])
+    
+    inline def setTiltXUndefined: Self = StObject.set(x, "tiltX", js.undefined)
+    
+    inline def setTiltY(value: integer): Self = StObject.set(x, "tiltY", value.asInstanceOf[js.Any])
+    
+    inline def setTiltYUndefined: Self = StObject.set(x, "tiltY", js.undefined)
+    
     inline def setTimestamp(value: TimeSinceEpoch): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    
+    inline def setTwist(value: integer): Self = StObject.set(x, "twist", value.asInstanceOf[js.Any])
+    
+    inline def setTwistUndefined: Self = StObject.set(x, "twist", js.undefined)
     
     inline def setType(value: mousePressed | mouseReleased | mouseMoved | mouseWheel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

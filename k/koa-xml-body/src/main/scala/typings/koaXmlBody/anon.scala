@@ -1,7 +1,6 @@
 package typings.koaXmlBody
 
 import typings.koa.mod.Context
-import typings.std.Error
 import typings.xml2js.mod.ParserOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,6 +13,9 @@ object anon {
     // requested encoding. Default is utf8. If not set, the lib will retrive it from content-type(such as content-type:application/xml;charset=gb2312).
     var encoding: js.UndefOr[String] = js.undefined
     
+    // Key used for decoding when to parse ctx.request; default is 'body'
+    var key: js.UndefOr[String] = js.undefined
+    
     // length of the body. When content-length is found, it will be overwritten automatically.
     var length: js.UndefOr[Double] = js.undefined
     
@@ -21,7 +23,7 @@ object anon {
     var limit: js.UndefOr[Double] = js.undefined
     
     // error handler. Default is a noop function. It means it will eat the error silently. You can config it to customize the response.
-    var onerror: js.UndefOr[js.Function2[/* err */ Error, /* ctx */ Context, Unit]] = js.undefined
+    var onerror: js.UndefOr[js.Function2[/* err */ js.Error, /* ctx */ Context, Unit]] = js.undefined
     
     // options which will be used to parse xml. Default is {}. See xml2js Options for details.
     var xmlOptions: js.UndefOr[ParserOptions] = js.undefined
@@ -39,6 +41,10 @@ object anon {
       
       inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
       inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
@@ -47,7 +53,7 @@ object anon {
       
       inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      inline def setOnerror(value: (/* err */ Error, /* ctx */ Context) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction2(value))
+      inline def setOnerror(value: (/* err */ js.Error, /* ctx */ Context) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction2(value))
       
       inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       

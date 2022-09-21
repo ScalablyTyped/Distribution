@@ -6,7 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 /** Represents a method that handles a smart card personal identification number (PIN) reset. */
-type SmartCardPinResetHandler = js.Function2[
-/* sender */ typings.winrtUwp.Windows.Devices.SmartCards.SmartCardProvisioning, 
-/* request */ typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinResetRequest, 
-scala.Unit]
+type SmartCardPinResetHandler = js.Function2[/* sender */ SmartCardProvisioning, /* request */ SmartCardPinResetRequest, Unit]

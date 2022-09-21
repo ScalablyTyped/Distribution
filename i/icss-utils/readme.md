@@ -1,7 +1,7 @@
 
 # Scala.js typings for icss-utils
 
-Typings are for version 4.1
+Typings are for version 5.1
 
 ## Library description:
 ICSS utils for postcss ast
@@ -11,9 +11,9 @@ ICSS utils for postcss ast
 | Full name          | icss-utils |
 | Keywords           | css, modules, icss, postcss |
 | # releases         | 4 |
-| # dependents       | 61 |
-| # downloads        | 381477564 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6.990809733333333E7 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/css-modules/icss-utils#readme)

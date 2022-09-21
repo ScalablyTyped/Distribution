@@ -1,6 +1,5 @@
 package typings.xmlchars
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,15 +46,15 @@ object mod {
         
         @JSImport("xmlchars", "XMLNS_1_0.ED3.regexes.NC_NAME")
         @js.native
-        val NC_NAME: RegExp = js.native
+        val NC_NAME: js.RegExp = js.native
         
         @JSImport("xmlchars", "XMLNS_1_0.ED3.regexes.NC_NAME_CHAR")
         @js.native
-        val NC_NAME_CHAR: RegExp = js.native
+        val NC_NAME_CHAR: js.RegExp = js.native
         
         @JSImport("xmlchars", "XMLNS_1_0.ED3.regexes.NC_NAME_START_CHAR")
         @js.native
-        val NC_NAME_START_CHAR: RegExp = js.native
+        val NC_NAME_START_CHAR: js.RegExp = js.native
       }
     }
   }
@@ -120,47 +119,47 @@ object mod {
         
         @JSImport("xmlchars", "XML_1_0.ED4.regexes.BASE_CHAR")
         @js.native
-        val BASE_CHAR: RegExp = js.native
+        val BASE_CHAR: js.RegExp = js.native
         
         @JSImport("xmlchars", "XML_1_0.ED4.regexes.CHAR")
         @js.native
-        val CHAR: RegExp = js.native
+        val CHAR: js.RegExp = js.native
         
         @JSImport("xmlchars", "XML_1_0.ED4.regexes.COMBINING_CHAR")
         @js.native
-        val COMBINING_CHAR: RegExp = js.native
+        val COMBINING_CHAR: js.RegExp = js.native
         
         @JSImport("xmlchars", "XML_1_0.ED4.regexes.DIGIT")
         @js.native
-        val DIGIT: RegExp = js.native
+        val DIGIT: js.RegExp = js.native
         
         @JSImport("xmlchars", "XML_1_0.ED4.regexes.EXTENDER")
         @js.native
-        val EXTENDER: RegExp = js.native
+        val EXTENDER: js.RegExp = js.native
         
         @JSImport("xmlchars", "XML_1_0.ED4.regexes.IDEOGRAPHIC")
         @js.native
-        val IDEOGRAPHIC: RegExp = js.native
+        val IDEOGRAPHIC: js.RegExp = js.native
         
         @JSImport("xmlchars", "XML_1_0.ED4.regexes.LETTER")
         @js.native
-        val LETTER: RegExp = js.native
+        val LETTER: js.RegExp = js.native
         
         @JSImport("xmlchars", "XML_1_0.ED4.regexes.NAME")
         @js.native
-        val NAME: RegExp = js.native
+        val NAME: js.RegExp = js.native
         
         @JSImport("xmlchars", "XML_1_0.ED4.regexes.NAME_CHAR")
         @js.native
-        val NAME_CHAR: RegExp = js.native
+        val NAME_CHAR: js.RegExp = js.native
         
         @JSImport("xmlchars", "XML_1_0.ED4.regexes.NMTOKEN")
         @js.native
-        val NMTOKEN: RegExp = js.native
+        val NMTOKEN: js.RegExp = js.native
         
         @JSImport("xmlchars", "XML_1_0.ED4.regexes.S")
         @js.native
-        val S: RegExp = js.native
+        val S: js.RegExp = js.native
       }
     }
     
@@ -230,27 +229,27 @@ object mod {
         
         @JSImport("xmlchars", "XML_1_0.ED5.regexes.CHAR")
         @js.native
-        val CHAR: RegExp = js.native
+        val CHAR: js.RegExp = js.native
         
         @JSImport("xmlchars", "XML_1_0.ED5.regexes.NAME")
         @js.native
-        val NAME: RegExp = js.native
+        val NAME: js.RegExp = js.native
         
         @JSImport("xmlchars", "XML_1_0.ED5.regexes.NAME_CHAR")
         @js.native
-        val NAME_CHAR: RegExp = js.native
+        val NAME_CHAR: js.RegExp = js.native
         
         @JSImport("xmlchars", "XML_1_0.ED5.regexes.NAME_START_CHAR")
         @js.native
-        val NAME_START_CHAR: RegExp = js.native
+        val NAME_START_CHAR: js.RegExp = js.native
         
         @JSImport("xmlchars", "XML_1_0.ED5.regexes.NMTOKEN")
         @js.native
-        val NMTOKEN: RegExp = js.native
+        val NMTOKEN: js.RegExp = js.native
         
         @JSImport("xmlchars", "XML_1_0.ED5.regexes.S")
         @js.native
-        val S: RegExp = js.native
+        val S: js.RegExp = js.native
       }
     }
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cannon", "Transform")
 @js.native
-class Transform ()
+open class Transform ()
   extends StObject
      with typings.cannon.CANNON.Transform
 /* static members */

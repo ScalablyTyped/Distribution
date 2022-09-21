@@ -10,10 +10,10 @@ Node file system library and fs-extra module promisified with bluebird
 | ------------------ | :-------------: |
 | Full name          | fs-extra-promise |
 | Keywords           | fs, fs-extra, file, promise, bluebird, extend |
-| # releases         | 0 |
-| # dependents       | 251 |
-| # downloads        | 811134 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 75039.0 |
+| # stars            | 45.0 |
 
 ## Links
 - [Homepage](https://github.com/overlookmotel/fs-extra-promise#readme)

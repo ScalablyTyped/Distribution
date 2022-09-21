@@ -20,7 +20,7 @@ object mod {
   
   @JSImport("gulp-diff", "diff")
   @js.native
-  val diff: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof gulp_diff */ js.Any = js.native
+  val diff: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof gulp_diff */ Any = js.native
   
   inline def reporter(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("reporter")().asInstanceOf[Transform]
   inline def reporter(opts: ReporterOptions): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("reporter")(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]

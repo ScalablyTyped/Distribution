@@ -18,11 +18,13 @@ trait TooltipPositionerPointObject extends Point {
     * The reference point relative to the plot area. Add chart.plotLeft to get
     * the full coordinates.
     */
-  var plotX: Double = js.native
+  @JSName("plotX")
+  var plotX_TooltipPositionerPointObject: Double = js.native
   
   /**
     * The reference point relative to the plot area. Add chart.plotTop to get
     * the full coordinates.
     */
-  var plotY: Double = js.native
+  @JSName("plotY")
+  var plotY_TooltipPositionerPointObject: Double = js.native
 }

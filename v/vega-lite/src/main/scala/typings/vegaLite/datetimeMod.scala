@@ -32,7 +32,7 @@ object datetimeMod {
   
   inline def dateTimeToTimestamp(d: DateTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dateTimeToTimestamp")(d.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def isDateTime(o: js.Any): /* is vega-lite.vega-lite/build/src/datetime.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/datetime.DateTime */ Boolean]
+  inline def isDateTime(o: Any): /* is vega-lite.vega-lite/build/src/datetime.DateTime */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTime")(o.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/datetime.DateTime */ Boolean]
   
   trait DateTime extends StObject {
     

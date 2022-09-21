@@ -1,7 +1,7 @@
 
 # Scala.js typings for trusted-types
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Polyfill for the Trusted Types
@@ -10,10 +10,10 @@ Polyfill for the Trusted Types
 | ------------------ | :-------------: |
 | Full name          | trusted-types |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 7407 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4032.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/trusted-types)

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isPlainObjectMod {
   
-  @JSImport("@antv/util/lib/is-plain-object", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/is-plain-object", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(value: js.Any): /* is object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is object */ Boolean]
+  inline def default(value: Any): /* is object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is object */ Boolean]
 }

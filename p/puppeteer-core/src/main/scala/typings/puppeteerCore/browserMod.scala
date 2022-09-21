@@ -1,15 +1,16 @@
 package typings.puppeteerCore
 
+import typings.devtoolsProtocol.mod.Protocol.Browser.PermissionType
+import typings.devtoolsProtocol.mod.Protocol.Target.TargetInfo
 import typings.node.childProcessMod.ChildProcess
 import typings.puppeteerCore.anon.Timeout
-import typings.puppeteerCore.connectionMod.Connection
 import typings.puppeteerCore.eventEmitterMod.EventEmitter
 import typings.puppeteerCore.pageMod.Page
+import typings.puppeteerCore.puppeteerCoreStrings.camera_
 import typings.puppeteerCore.puppeteerCoreStrings.disconnected
-import typings.puppeteerCore.puppeteerCoreStrings.targetchanged
+import typings.puppeteerCore.puppeteerCoreStrings.targetchanged_
 import typings.puppeteerCore.puppeteerCoreStrings.targetcreated
 import typings.puppeteerCore.puppeteerCoreStrings.targetdestroyed
-import typings.puppeteerCore.puppeteerViewportMod.Viewport
 import typings.puppeteerCore.targetMod.Target
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
@@ -18,107 +19,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object browserMod {
   
-  @JSImport("puppeteer-core/lib/cjs/puppeteer/common/Browser", "Browser")
+  @JSImport("puppeteer-core/lib/cjs/puppeteer/api/Browser", "Browser")
   @js.native
-  class Browser protected () extends EventEmitter {
+  /**
+    * @internal
+    */
+  open class Browser () extends EventEmitter {
+    
     /**
       * @internal
       */
-    def this(connection: Connection, contextIds: js.Array[String], ignoreHTTPSErrors: Boolean) = this()
-    def this(
-      connection: Connection,
-      contextIds: js.Array[String],
-      ignoreHTTPSErrors: Boolean,
-      defaultViewport: Viewport
-    ) = this()
-    def this(
-      connection: Connection,
-      contextIds: js.Array[String],
-      ignoreHTTPSErrors: Boolean,
-      defaultViewport: Unit,
-      process: ChildProcess
-    ) = this()
-    def this(
-      connection: Connection,
-      contextIds: js.Array[String],
-      ignoreHTTPSErrors: Boolean,
-      defaultViewport: Viewport,
-      process: ChildProcess
-    ) = this()
-    def this(
-      connection: Connection,
-      contextIds: js.Array[String],
-      ignoreHTTPSErrors: Boolean,
-      defaultViewport: Unit,
-      process: Unit,
-      closeCallback: BrowserCloseCallback
-    ) = this()
-    def this(
-      connection: Connection,
-      contextIds: js.Array[String],
-      ignoreHTTPSErrors: Boolean,
-      defaultViewport: Unit,
-      process: ChildProcess,
-      closeCallback: BrowserCloseCallback
-    ) = this()
-    def this(
-      connection: Connection,
-      contextIds: js.Array[String],
-      ignoreHTTPSErrors: Boolean,
-      defaultViewport: Viewport,
-      process: Unit,
-      closeCallback: BrowserCloseCallback
-    ) = this()
-    def this(
-      connection: Connection,
-      contextIds: js.Array[String],
-      ignoreHTTPSErrors: Boolean,
-      defaultViewport: Viewport,
-      process: ChildProcess,
-      closeCallback: BrowserCloseCallback
-    ) = this()
-    
-    /* private */ var _closeCallback: js.Any = js.native
-    
-    /* private */ var _connection: js.Any = js.native
-    
-    /* private */ var _contexts: js.Any = js.native
+    def _attach(): js.Promise[Unit] = js.native
     
     /**
       * @internal
-      * Used by BrowserContext directly so cannot be marked private.
       */
     def _createPageInContext(): js.Promise[Page] = js.native
     def _createPageInContext(contextId: String): js.Promise[Page] = js.native
     
-    /* private */ var _defaultContext: js.Any = js.native
-    
-    /* private */ var _defaultViewport: js.Any = js.native
+    /**
+      * @internal
+      */
+    def _detach(): Unit = js.native
     
     /**
       * @internal
-      * Used by BrowserContext directly so cannot be marked private.
       */
     def _disposeContext(): js.Promise[Unit] = js.native
     def _disposeContext(contextId: String): js.Promise[Unit] = js.native
     
-    /* private */ var _getVersion: js.Any = js.native
-    
-    /* private */ var _ignoreHTTPSErrors: js.Any = js.native
-    
-    /* private */ var _process: js.Any = js.native
-    
-    /* private */ var _targetCreated: js.Any = js.native
-    
-    /* private */ var _targetDestroyed: js.Any = js.native
-    
-    /* private */ var _targetInfoChanged: js.Any = js.native
+    /**
+      * @internal
+      */
+    def _getIsPageTargetCallback(): js.UndefOr[IsPageTargetCallback] = js.native
     
     /**
       * @internal
-      * Used in Target.ts directly so cannot be marked private.
       */
-    var _targets: Map[String, Target] = js.native
+    def _targets: Map[String, Target] = js.native
     
     /**
       * Returns an array of all open browser contexts. In a newly created browser, this will
@@ -137,9 +75,10 @@ object browserMod {
       * browser contexts.
       *
       * @example
-      * ```js
+      *
+      * ```ts
       * (async () => {
-      *  const browser = await puppeteer.launch();
+      *   const browser = await puppeteer.launch();
       *   // Create a new incognito browser context.
       *   const context = await browser.createIncognitoBrowserContext();
       *   // Create a new page in a pristine context.
@@ -150,6 +89,7 @@ object browserMod {
       * ```
       */
     def createIncognitoBrowserContext(): js.Promise[BrowserContext] = js.native
+    def createIncognitoBrowserContext(options: BrowserContextOptions): js.Promise[BrowserContext] = js.native
     
     /**
       * Returns the default browser context. The default browser context cannot be closed.
@@ -169,7 +109,8 @@ object browserMod {
     def isConnected(): Boolean = js.native
     
     /**
-      * Creates a {@link Page} in the default browser context.
+      * Promise which resolves to a new {@link Page} object. The Page is created in
+      * a default browser context.
       */
     def newPage(): js.Promise[Page] = js.native
     
@@ -228,13 +169,19 @@ object browserMod {
       * @example
       *
       * An example of finding a target for a page opened via `window.open`:
-      * ```js
+      *
+      * ```ts
       * await page.evaluate(() => window.open('https://www.example.com/'));
-      * const newWindowTarget = await browser.waitForTarget(target => target.url() === 'https://www.example.com/');
+      * const newWindowTarget = await browser.waitForTarget(
+      *   target => target.url() === 'https://www.example.com/'
+      * );
       * ```
       */
-    def waitForTarget(predicate: js.Function1[/* x */ Target, Boolean]): js.Promise[Target] = js.native
-    def waitForTarget(predicate: js.Function1[/* x */ Target, Boolean], options: WaitForTargetOptions): js.Promise[Target] = js.native
+    def waitForTarget(predicate: js.Function1[/* x */ Target, Boolean | js.Promise[Boolean]]): js.Promise[Target] = js.native
+    def waitForTarget(
+      predicate: js.Function1[/* x */ Target, Boolean | js.Promise[Boolean]],
+      options: WaitForTargetOptions
+    ): js.Promise[Target] = js.native
     
     /**
       * The browser websocket endpoint which can be used as an argument to
@@ -255,85 +202,13 @@ object browserMod {
       */
     def wsEndpoint(): String = js.native
   }
-  /* static members */
-  object Browser {
-    
-    @JSImport("puppeteer-core/lib/cjs/puppeteer/common/Browser", "Browser")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * @internal
-      */
-    inline def create(connection: Connection, contextIds: js.Array[String], ignoreHTTPSErrors: Boolean): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
-    inline def create(
-      connection: Connection,
-      contextIds: js.Array[String],
-      ignoreHTTPSErrors: Boolean,
-      defaultViewport: Unit,
-      process: Unit,
-      closeCallback: BrowserCloseCallback
-    ): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
-    inline def create(
-      connection: Connection,
-      contextIds: js.Array[String],
-      ignoreHTTPSErrors: Boolean,
-      defaultViewport: Unit,
-      process: ChildProcess
-    ): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
-    inline def create(
-      connection: Connection,
-      contextIds: js.Array[String],
-      ignoreHTTPSErrors: Boolean,
-      defaultViewport: Unit,
-      process: ChildProcess,
-      closeCallback: BrowserCloseCallback
-    ): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
-    inline def create(
-      connection: Connection,
-      contextIds: js.Array[String],
-      ignoreHTTPSErrors: Boolean,
-      defaultViewport: Viewport
-    ): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
-    inline def create(
-      connection: Connection,
-      contextIds: js.Array[String],
-      ignoreHTTPSErrors: Boolean,
-      defaultViewport: Viewport,
-      process: Unit,
-      closeCallback: BrowserCloseCallback
-    ): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
-    inline def create(
-      connection: Connection,
-      contextIds: js.Array[String],
-      ignoreHTTPSErrors: Boolean,
-      defaultViewport: Viewport,
-      process: ChildProcess
-    ): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
-    inline def create(
-      connection: Connection,
-      contextIds: js.Array[String],
-      ignoreHTTPSErrors: Boolean,
-      defaultViewport: Viewport,
-      process: ChildProcess,
-      closeCallback: BrowserCloseCallback
-    ): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
-  }
   
-  @JSImport("puppeteer-core/lib/cjs/puppeteer/common/Browser", "BrowserContext")
+  @JSImport("puppeteer-core/lib/cjs/puppeteer/api/Browser", "BrowserContext")
   @js.native
-  class BrowserContext protected () extends EventEmitter {
-    /**
-      * @internal
-      */
-    def this(connection: Connection, browser: Browser) = this()
-    def this(connection: Connection, browser: Browser, contextId: String) = this()
-    
-    /* private */ var _browser: js.Any = js.native
-    
-    /* private */ var _connection: js.Any = js.native
-    
-    /* private */ var _id: js.Any = js.native
+  /**
+    * @internal
+    */
+  open class BrowserContext () extends EventEmitter {
     
     /**
       * The browser this browser context belongs to.
@@ -344,7 +219,8 @@ object browserMod {
       * Clears all permission overrides for the browser context.
       *
       * @example
-      * ```js
+      *
+      * ```ts
       * const context = browser.defaultBrowserContext();
       * context.overridePermissions('https://example.com', ['clipboard-read']);
       * // do stuff ..
@@ -378,16 +254,19 @@ object browserMod {
     
     /**
       * @example
-      * ```js
+      *
+      * ```ts
       * const context = browser.defaultBrowserContext();
-      * await context.overridePermissions('https://html5demos.com', ['geolocation']);
+      * await context.overridePermissions('https://html5demos.com', [
+      *   'geolocation',
+      * ]);
       * ```
       *
       * @param origin - The origin to grant permissions to, e.g. "https://example.com".
       * @param permissions - An array of permissions to grant.
       * All permissions that are not listed here will be automatically denied.
       */
-    def overridePermissions(origin: String, permissions: js.Array[String]): js.Promise[Unit] = js.native
+    def overridePermissions(origin: String, permissions: js.Array[Permission]): js.Promise[Unit] = js.native
     
     /**
       * An array of all pages inside the browser context.
@@ -408,9 +287,12 @@ object browserMod {
       *
       * @example
       * An example of finding a target for a page opened via `window.open`:
-      * ```js
+      *
+      * ```ts
       * await page.evaluate(() => window.open('https://www.example.com/'));
-      * const newWindowTarget = await browserContext.waitForTarget(target => target.url() === 'https://www.example.com/');
+      * const newWindowTarget = await browserContext.waitForTarget(
+      *   target => target.url() === 'https://www.example.com/'
+      * );
       * ```
       *
       * @param predicate - A function to be run for every target
@@ -420,14 +302,18 @@ object browserMod {
       * @returns Promise which resolves to the first target found
       * that matches the `predicate` function.
       */
-    def waitForTarget(predicate: js.Function1[/* x */ Target, Boolean]): js.Promise[Target] = js.native
-    def waitForTarget(predicate: js.Function1[/* x */ Target, Boolean], options: Timeout): js.Promise[Target] = js.native
+    def waitForTarget(predicate: js.Function1[/* x */ Target, Boolean | js.Promise[Boolean]]): js.Promise[Target] = js.native
+    def waitForTarget(predicate: js.Function1[/* x */ Target, Boolean | js.Promise[Boolean]], options: Timeout): js.Promise[Target] = js.native
   }
+  
+  @JSImport("puppeteer-core/lib/cjs/puppeteer/api/Browser", "WEB_PERMISSION_TO_PROTOCOL_PERMISSION")
+  @js.native
+  val WEB_PERMISSION_TO_PROTOCOL_PERMISSION: Map[Permission, PermissionType] = js.native
   
   type BrowserCloseCallback = js.Function0[js.Promise[Unit] | Unit]
   
   /* Rewritten from type alias, can be one of: 
-    - typings.puppeteerCore.puppeteerCoreStrings.targetchanged
+    - typings.puppeteerCore.puppeteerCoreStrings.targetchanged_
     - typings.puppeteerCore.puppeteerCoreStrings.targetcreated
     - typings.puppeteerCore.puppeteerCoreStrings.targetdestroyed
   */
@@ -438,7 +324,7 @@ object browserMod {
       * Emitted when the url of a target inside the browser context changes.
       * Contains a {@link Target} instance.
       */
-    inline def TargetChanged: targetchanged = "targetchanged".asInstanceOf[targetchanged]
+    inline def TargetChanged: targetchanged_ = "targetchanged".asInstanceOf[targetchanged_]
     
     /**
       * Emitted when a target is created within the browser context, for example
@@ -457,9 +343,43 @@ object browserMod {
     inline def TargetDestroyed: targetdestroyed = "targetdestroyed".asInstanceOf[targetdestroyed]
   }
   
+  trait BrowserContextOptions extends StObject {
+    
+    /**
+      * Bypass the proxy for the given list of hosts.
+      */
+    var proxyBypassList: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * Proxy server with optional port to use for all requests.
+      * Username and password can be set in `Page.authenticate`.
+      */
+    var proxyServer: js.UndefOr[String] = js.undefined
+  }
+  object BrowserContextOptions {
+    
+    inline def apply(): BrowserContextOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BrowserContextOptions]
+    }
+    
+    extension [Self <: BrowserContextOptions](x: Self) {
+      
+      inline def setProxyBypassList(value: js.Array[String]): Self = StObject.set(x, "proxyBypassList", value.asInstanceOf[js.Any])
+      
+      inline def setProxyBypassListUndefined: Self = StObject.set(x, "proxyBypassList", js.undefined)
+      
+      inline def setProxyBypassListVarargs(value: String*): Self = StObject.set(x, "proxyBypassList", js.Array(value*))
+      
+      inline def setProxyServer(value: String): Self = StObject.set(x, "proxyServer", value.asInstanceOf[js.Any])
+      
+      inline def setProxyServerUndefined: Self = StObject.set(x, "proxyServer", js.undefined)
+    }
+  }
+  
   /* Rewritten from type alias, can be one of: 
     - typings.puppeteerCore.puppeteerCoreStrings.disconnected
-    - typings.puppeteerCore.puppeteerCoreStrings.targetchanged
+    - typings.puppeteerCore.puppeteerCoreStrings.targetchanged_
     - typings.puppeteerCore.puppeteerCoreStrings.targetcreated
     - typings.puppeteerCore.puppeteerCoreStrings.targetdestroyed
   */
@@ -483,7 +403,7 @@ object browserMod {
       *
       * Note that this includes target changes in incognito browser contexts.
       */
-    inline def TargetChanged: targetchanged = "targetchanged".asInstanceOf[targetchanged]
+    inline def TargetChanged: targetchanged_ = "targetchanged".asInstanceOf[targetchanged_]
     
     /**
       * Emitted when a target is created, for example when a new page is opened by
@@ -508,6 +428,67 @@ object browserMod {
       */
     inline def TargetDestroyed: targetdestroyed = "targetdestroyed".asInstanceOf[targetdestroyed]
   }
+  
+  type IsPageTargetCallback = js.Function1[/* target */ TargetInfo, Boolean]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.puppeteerCore.puppeteerCoreStrings.geolocation
+    - typings.puppeteerCore.puppeteerCoreStrings.midi
+    - typings.puppeteerCore.puppeteerCoreStrings.notifications
+    - typings.puppeteerCore.puppeteerCoreStrings.camera_
+    - typings.puppeteerCore.puppeteerCoreStrings.microphone
+    - typings.puppeteerCore.puppeteerCoreStrings.`background-sync`
+    - typings.puppeteerCore.puppeteerCoreStrings.`ambient-light-sensor`
+    - typings.puppeteerCore.puppeteerCoreStrings.accelerometer
+    - typings.puppeteerCore.puppeteerCoreStrings.gyroscope
+    - typings.puppeteerCore.puppeteerCoreStrings.magnetometer
+    - typings.puppeteerCore.puppeteerCoreStrings.`accessibility-events`
+    - typings.puppeteerCore.puppeteerCoreStrings.`clipboard-read`
+    - typings.puppeteerCore.puppeteerCoreStrings.`clipboard-write`
+    - typings.puppeteerCore.puppeteerCoreStrings.`payment-handler`
+    - typings.puppeteerCore.puppeteerCoreStrings.`persistent-storage`
+    - typings.puppeteerCore.puppeteerCoreStrings.`idle-detection`
+    - typings.puppeteerCore.puppeteerCoreStrings.`midi-sysex`
+  */
+  trait Permission extends StObject
+  object Permission {
+    
+    inline def accelerometer: typings.puppeteerCore.puppeteerCoreStrings.accelerometer = "accelerometer".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.accelerometer]
+    
+    inline def `accessibility-events`: typings.puppeteerCore.puppeteerCoreStrings.`accessibility-events` = "accessibility-events".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`accessibility-events`]
+    
+    inline def `ambient-light-sensor`: typings.puppeteerCore.puppeteerCoreStrings.`ambient-light-sensor` = "ambient-light-sensor".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`ambient-light-sensor`]
+    
+    inline def `background-sync`: typings.puppeteerCore.puppeteerCoreStrings.`background-sync` = "background-sync".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`background-sync`]
+    
+    inline def camera: camera_ = "camera".asInstanceOf[camera_]
+    
+    inline def `clipboard-read`: typings.puppeteerCore.puppeteerCoreStrings.`clipboard-read` = "clipboard-read".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`clipboard-read`]
+    
+    inline def `clipboard-write`: typings.puppeteerCore.puppeteerCoreStrings.`clipboard-write` = "clipboard-write".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`clipboard-write`]
+    
+    inline def geolocation: typings.puppeteerCore.puppeteerCoreStrings.geolocation = "geolocation".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.geolocation]
+    
+    inline def gyroscope: typings.puppeteerCore.puppeteerCoreStrings.gyroscope = "gyroscope".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.gyroscope]
+    
+    inline def `idle-detection`: typings.puppeteerCore.puppeteerCoreStrings.`idle-detection` = "idle-detection".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`idle-detection`]
+    
+    inline def magnetometer: typings.puppeteerCore.puppeteerCoreStrings.magnetometer = "magnetometer".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.magnetometer]
+    
+    inline def microphone: typings.puppeteerCore.puppeteerCoreStrings.microphone = "microphone".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.microphone]
+    
+    inline def midi: typings.puppeteerCore.puppeteerCoreStrings.midi = "midi".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.midi]
+    
+    inline def `midi-sysex`: typings.puppeteerCore.puppeteerCoreStrings.`midi-sysex` = "midi-sysex".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`midi-sysex`]
+    
+    inline def notifications: typings.puppeteerCore.puppeteerCoreStrings.notifications = "notifications".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.notifications]
+    
+    inline def `payment-handler`: typings.puppeteerCore.puppeteerCoreStrings.`payment-handler` = "payment-handler".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`payment-handler`]
+    
+    inline def `persistent-storage`: typings.puppeteerCore.puppeteerCoreStrings.`persistent-storage` = "persistent-storage".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.`persistent-storage`]
+  }
+  
+  type TargetFilterCallback = js.Function1[/* target */ TargetInfo, Boolean]
   
   trait WaitForTargetOptions extends StObject {
     

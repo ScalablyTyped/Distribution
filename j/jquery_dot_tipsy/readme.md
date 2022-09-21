@@ -9,10 +9,10 @@ Facebook-style tooltip plugin for jQuery
 | ------------------ | :-------------: |
 | Full name          | jquery.tipsy |
 | Keywords           | jquery, tipsy, facebook |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 11205 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1008.0 |
+| # stars            | 2027.0 |
 
 ## Links
 - [Homepage](https://github.com/jaz303/tipsy#readme)

@@ -179,9 +179,9 @@ trait ShapeNodes extends StObject {
     Y3: Double
   ): Unit = js.native
   
-  def Item(Index: js.Any): ShapeNode = js.native
+  def Item(Index: Any): ShapeNode = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def SetEditingType(Index: Double, EditingType: MsoEditingType): Unit = js.native
   

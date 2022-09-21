@@ -1,13 +1,12 @@
 package typings.ngmap
 
-import typings.googlemaps.google.maps.Animation
-import typings.googlemaps.google.maps.Icon
-import typings.googlemaps.google.maps.Map
-import typings.googlemaps.google.maps.MarkerShape
-import typings.googlemaps.google.maps.Point
-import typings.googlemaps.google.maps.StreetViewPanorama
-import typings.googlemaps.google.maps.Symbol
-import typings.std.Element
+import typings.googleMaps.google.maps.Animation
+import typings.googleMaps.google.maps.Icon
+import typings.googleMaps.google.maps.Map
+import typings.googleMaps.google.maps.MarkerShape
+import typings.googleMaps.google.maps.Point
+import typings.googleMaps.google.maps.StreetViewPanorama
+import typings.googleMaps.google.maps.Symbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,7 +58,7 @@ object anon {
       * @type {(Map|StreetViewPanorama)}
       *
       */
-    var map: js.UndefOr[Map[Element] | StreetViewPanorama] = js.undefined
+    var map: js.UndefOr[Map | StreetViewPanorama] = js.undefined
     
     /** The marker's opacity between 0.0 and 1.0. */
     var opacity: js.UndefOr[Double] = js.undefined
@@ -127,7 +126,7 @@ object anon {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setMap(value: Map[Element] | StreetViewPanorama): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Map | StreetViewPanorama): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
       inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       

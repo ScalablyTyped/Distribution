@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "TextureLoader")
 @js.native
-class TextureLoader ()
-  extends typings.three.textureLoaderMod.TextureLoader {
+open class TextureLoader ()
+  extends typings.three.threeMod.TextureLoader {
   def this(manager: typings.three.loadingManagerMod.LoadingManager) = this()
 }

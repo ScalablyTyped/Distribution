@@ -1,37 +1,36 @@
 package typings.devextreme.anon
 
-import typings.devextreme.mod.DevExpress.core.dxElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `7`[T] extends StObject {
+trait `7` extends StObject {
   
-  var component: js.UndefOr[T] = js.undefined
+  /**
+    * Configures the appearance of the tile borders in the selected state.
+    */
+  var border: js.UndefOr[ColorWidth] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.undefined
-  
-  var model: js.UndefOr[js.Any] = js.undefined
+  /**
+    * Colors tiles in the selected state.
+    */
+  var color: js.UndefOr[String] = js.undefined
 }
 object `7` {
   
-  inline def apply[T](): `7`[T] = {
+  inline def apply(): `7` = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`7`[T]]
+    __obj.asInstanceOf[`7`]
   }
   
-  extension [Self <: `7`[?], T](x: Self & `7`[T]) {
+  extension [Self <: `7`](x: Self) {
     
-    inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setBorder(value: ColorWidth): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
-    
-    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
-    
-    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

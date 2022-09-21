@@ -24,6 +24,6 @@ object NodegroupHealth {
     
     inline def setIssuesUndefined: Self = StObject.set(x, "issues", js.undefined)
     
-    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value :_*))
+    inline def setIssuesVarargs(value: Issue*): Self = StObject.set(x, "issues", js.Array(value*))
   }
 }

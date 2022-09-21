@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-json-tree" : "0.17.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-json-tree" : "0.17.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

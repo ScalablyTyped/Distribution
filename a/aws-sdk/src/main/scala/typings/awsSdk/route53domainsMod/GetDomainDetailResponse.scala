@@ -34,10 +34,10 @@ trait GetDomainDetailResponse extends StObject {
   /**
     * The date when the domain was created as found in the response to a WHOIS query. The date and time is in Unix time format and Coordinated Universal time (UTC).
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Reserved for future use.
+    * Deprecated.
     */
   var DnsSec: js.UndefOr[DNSSec] = js.undefined
   
@@ -49,7 +49,7 @@ trait GetDomainDetailResponse extends StObject {
   /**
     * The date when the registration for the domain is set to expire. The date and time is in Unix time format and Coordinated Universal time (UTC).
     */
-  var ExpirationDate: js.UndefOr[Timestamp] = js.undefined
+  var ExpirationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the domain.
@@ -104,7 +104,7 @@ trait GetDomainDetailResponse extends StObject {
   /**
     * The last updated date of the domain as found in the response to a WHOIS query. The date and time is in Unix time format and Coordinated Universal time (UTC).
     */
-  var UpdatedDate: js.UndefOr[Timestamp] = js.undefined
+  var UpdatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The fully qualified name of the WHOIS server that can answer the WHOIS query for the domain.
@@ -144,7 +144,7 @@ object GetDomainDetailResponse {
     
     inline def setAutoRenewUndefined: Self = StObject.set(x, "AutoRenew", js.undefined)
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -154,13 +154,13 @@ object GetDomainDetailResponse {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
     inline def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
     
     inline def setNameservers(value: NameserverList): Self = StObject.set(x, "Nameservers", value.asInstanceOf[js.Any])
     
-    inline def setNameserversVarargs(value: Nameserver*): Self = StObject.set(x, "Nameservers", js.Array(value :_*))
+    inline def setNameserversVarargs(value: Nameserver*): Self = StObject.set(x, "Nameservers", js.Array(value*))
     
     inline def setRegistrantContact(value: ContactDetail): Self = StObject.set(x, "RegistrantContact", value.asInstanceOf[js.Any])
     
@@ -188,7 +188,7 @@ object GetDomainDetailResponse {
     
     inline def setStatusListUndefined: Self = StObject.set(x, "StatusList", js.undefined)
     
-    inline def setStatusListVarargs(value: DomainStatus*): Self = StObject.set(x, "StatusList", js.Array(value :_*))
+    inline def setStatusListVarargs(value: DomainStatus*): Self = StObject.set(x, "StatusList", js.Array(value*))
     
     inline def setTechContact(value: ContactDetail): Self = StObject.set(x, "TechContact", value.asInstanceOf[js.Any])
     
@@ -196,7 +196,7 @@ object GetDomainDetailResponse {
     
     inline def setTechPrivacyUndefined: Self = StObject.set(x, "TechPrivacy", js.undefined)
     
-    inline def setUpdatedDate(value: Timestamp): Self = StObject.set(x, "UpdatedDate", value.asInstanceOf[js.Any])
+    inline def setUpdatedDate(value: js.Date): Self = StObject.set(x, "UpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setUpdatedDateUndefined: Self = StObject.set(x, "UpdatedDate", js.undefined)
     

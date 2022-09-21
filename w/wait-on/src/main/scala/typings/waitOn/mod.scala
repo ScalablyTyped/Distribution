@@ -1,5 +1,6 @@
 package typings.waitOn
 
+import typings.node.tlsMod.SecureContextOptions
 import typings.std.Record
 import typings.waitOn.anon.Password
 import org.scalablytyped.runtime.StObject
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(options: WaitOnOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def apply(options: WaitOnOptions, cb: js.Function1[/* err */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(options: WaitOnOptions, cb: js.Function1[/* err */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("wait-on", JSImport.Namespace)
   @js.native
@@ -92,7 +93,9 @@ object mod {
     }
   }
   
-  trait WaitOnOptions extends StObject {
+  trait WaitOnOptions
+    extends StObject
+       with SecureContextOptions {
     
     /**
       * Https specific option.
@@ -108,7 +111,7 @@ object mod {
     
     var followRedirect: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[Record[String, js.Any]] = js.undefined
+    var headers: js.UndefOr[Record[String, Any]] = js.undefined
     
     /**
       * http HEAD/GET timeout to wait for request
@@ -203,7 +206,7 @@ object mod {
       
       inline def setFollowRedirectUndefined: Self = StObject.set(x, "followRedirect", js.undefined)
       
-      inline def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Record[String, Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -225,7 +228,7 @@ object mod {
       
       inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value*))
       
       inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       

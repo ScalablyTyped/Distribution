@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html)
   */
-class ViewAnimationCls ()
+open class ViewAnimationCls ()
   extends StObject
      with typings.arcgisJsApi.esri.ViewAnimation {
   def this(properties: ViewAnimationProperties) = this()

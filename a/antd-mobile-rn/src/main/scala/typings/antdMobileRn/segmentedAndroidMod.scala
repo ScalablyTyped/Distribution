@@ -14,7 +14,7 @@ object segmentedAndroidMod {
   
   @JSImport("antd-mobile-rn/lib/segmented-control/segmented.android", JSImport.Default)
   @js.native
-  class default protected () extends SegmentedControl {
+  open class default protected () extends SegmentedControl {
     def this(props: SegmentControlNativeProps) = this()
   }
   /* static members */
@@ -60,12 +60,11 @@ object segmentedAndroidMod {
   }
   
   @js.native
-  trait SegmentedControl
-    extends Component[SegmentControlNativeProps, js.Any, js.Any] {
+  trait SegmentedControl extends Component[SegmentControlNativeProps, Any, Any] {
     
     @JSName("componentWillReceiveProps")
     def componentWillReceiveProps_MSegmentedControl(nextProps: SegmentControlNativeProps): Unit = js.native
     
-    def onPress(e: js.Any, index: Double, value: String): Unit = js.native
+    def onPress(e: Any, index: Double, value: String): Unit = js.native
   }
 }

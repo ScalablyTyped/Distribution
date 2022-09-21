@@ -21,7 +21,7 @@ trait nlobjSelectOption
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * return internal ID for select option

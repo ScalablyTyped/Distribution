@@ -1,7 +1,7 @@
 
 # Scala.js typings for parse5-parser-stream
 
-Typings are for version 5.0
+Typings are for version 7.0.0
 
 ## Library description:
 Streaming HTML parser with scripting support.
@@ -10,10 +10,10 @@ Streaming HTML parser with scripting support.
 | ------------------ | :-------------: |
 | Full name          | parse5-parser-stream |
 | Keywords           | parse5, parser, stream, streaming |
-| # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 1869 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1091.3333333333333 |
+| # stars            | 2911.0 |
 
 ## Links
 - [Homepage](https://github.com/inikulin/parse5)
@@ -24,7 +24,7 @@ Streaming HTML parser with scripting support.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

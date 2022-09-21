@@ -1,50 +1,22 @@
 package typings.firebaseFunctions
 
-import org.scalablytyped.runtime.Instantiable0
-import typings.firebaseFunctions.mod.FirebaseApp
-import typings.firebaseFunctionsTypes.mod.FirebaseFunctions
 import typings.std.RequestInfo
 import typings.std.RequestInit
 import typings.std.Response
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Call extends StObject {
-    
-    def apply(): FirebaseFunctions = js.native
-    def apply(app: FirebaseApp): FirebaseFunctions = js.native
-    
-    var Functions: Instantiable0[FirebaseFunctions] = js.native
-  }
-  
-  trait Delete extends StObject {
-    
-    def delete(): js.Promise[Unit]
-  }
-  object Delete {
-    
-    inline def apply(delete: () => js.Promise[Unit]): Delete = {
-      val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete))
-      __obj.asInstanceOf[Delete]
-    }
-    
-    extension [Self <: Delete](x: Self) {
-      
-      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
-    }
-  }
-  
   trait Details extends StObject {
     
-    var details: js.UndefOr[js.Any] = js.undefined
+    var details: js.UndefOr[Any] = js.undefined
     
-    var message: js.UndefOr[js.Any] = js.undefined
+    var message: js.UndefOr[Any] = js.undefined
     
-    var status: js.UndefOr[js.Any] = js.undefined
+    var status: js.UndefOr[Any] = js.undefined
   }
   object Details {
     
@@ -55,15 +27,15 @@ object anon {
     
     extension [Self <: Details](x: Self) {
       
-      inline def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
       inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      inline def setStatus(value: js.Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Any): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
@@ -74,5 +46,7 @@ object anon {
     
     def apply(input: RequestInfo): js.Promise[Response] = js.native
     def apply(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
+    def apply(input: URL): js.Promise[Response] = js.native
+    def apply(input: URL, init: RequestInit): js.Promise[Response] = js.native
   }
 }

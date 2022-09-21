@@ -78,7 +78,7 @@ object Page {
     /** 如果 `from` 值是 `button`，则 `target` 是触发这次转发事件的 `button`，否则为 `undefined`
       *
       * 最低基础库： `1.2.4` */
-    var target: js.Any
+    var target: Any
     
     /** 页面中包含`<web-view>`组件时，返回当前`<web-view>`的url
       *
@@ -88,7 +88,7 @@ object Page {
   }
   object IShareAppMessageOption {
     
-    inline def apply(from: button | menu | java.lang.String, target: js.Any): IShareAppMessageOption = {
+    inline def apply(from: button | menu | java.lang.String, target: Any): IShareAppMessageOption = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[IShareAppMessageOption]
     }
@@ -97,7 +97,7 @@ object Page {
       
       inline def setFrom(value: button | menu | java.lang.String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setWebViewUrl(value: java.lang.String): Self = StObject.set(x, "webViewUrl", value.asInstanceOf[js.Any])
       
@@ -134,7 +134,7 @@ object Page {
   }
   
   type PageConstructor = js.Function1[
-    /* options */ (PageInstance[IAnyObject, IAnyObject & (PageInstance[js.Any, js.Any])]) & IAnyObject & (PageInstance[js.Any, js.Any]), 
+    /* options */ (PageInstance[IAnyObject, IAnyObject & (PageInstance[Any, Any])]) & IAnyObject & (PageInstance[Any, Any]), 
     Unit
   ]
   

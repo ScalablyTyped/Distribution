@@ -19,36 +19,35 @@ object mod {
   
   @JSImport("react-native-material-textfield", "FilledTextField")
   @js.native
-  class FilledTextField protected () extends TextField {
+  open class FilledTextField protected () extends TextField {
     def this(props: TextFieldProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TextFieldProps, context: js.Any) = this()
+    def this(props: TextFieldProps, context: Any) = this()
   }
   
   @JSImport("react-native-material-textfield", "OutlinedTextField")
   @js.native
-  class OutlinedTextField protected () extends TextField {
+  open class OutlinedTextField protected () extends TextField {
     def this(props: TextFieldProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TextFieldProps, context: js.Any) = this()
+    def this(props: TextFieldProps, context: Any) = this()
   }
   
   @JSImport("react-native-material-textfield", "TextField")
   @js.native
-  class TextField protected ()
-    extends Component[TextFieldProps, js.Any, js.Any] {
+  open class TextField protected () extends Component[TextFieldProps, Any, Any] {
     def this(props: TextFieldProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TextFieldProps, context: js.Any) = this()
+    def this(props: TextFieldProps, context: Any) = this()
     
     /*
       * Release focus
@@ -118,6 +117,55 @@ object mod {
     }
   }
   
+  trait LabelOffset extends StObject {
+    
+    /**
+      * Horizontal offset for inactive state
+      */
+    var x0: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Horizontal offset for active state
+      */
+    var x1: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Vertical offset for inactive state
+      */
+    var y0: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Vertical offset for active state
+      */
+    var y1: js.UndefOr[Double] = js.undefined
+  }
+  object LabelOffset {
+    
+    inline def apply(): LabelOffset = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[LabelOffset]
+    }
+    
+    extension [Self <: LabelOffset](x: Self) {
+      
+      inline def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
+      
+      inline def setX0Undefined: Self = StObject.set(x, "x0", js.undefined)
+      
+      inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+      
+      inline def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
+      
+      inline def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
+      
+      inline def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
+      
+      inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+      
+      inline def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
+    }
+  }
+  
   trait TextFieldProps
     extends StObject
        with TextInputProps {
@@ -155,6 +203,11 @@ object mod {
     var label: js.UndefOr[String] = js.undefined
     
     var labelFontSize: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Label position adjustment
+      */
+    var labelOffset: js.UndefOr[LabelOffset] = js.undefined
     
     var labelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
@@ -263,6 +316,10 @@ object mod {
       inline def setLabelFontSize(value: Double): Self = StObject.set(x, "labelFontSize", value.asInstanceOf[js.Any])
       
       inline def setLabelFontSizeUndefined: Self = StObject.set(x, "labelFontSize", js.undefined)
+      
+      inline def setLabelOffset(value: LabelOffset): Self = StObject.set(x, "labelOffset", value.asInstanceOf[js.Any])
+      
+      inline def setLabelOffsetUndefined: Self = StObject.set(x, "labelOffset", js.undefined)
       
       inline def setLabelTextStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "labelTextStyle", value.asInstanceOf[js.Any])
       

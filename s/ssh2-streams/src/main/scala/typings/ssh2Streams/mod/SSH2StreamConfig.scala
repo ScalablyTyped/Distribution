@@ -19,7 +19,7 @@ trait SSH2StreamConfig extends StObject {
   /**
     * Set this to a function that receives a single string argument to get detailed (local) debug information.
     */
-  var debug: js.UndefOr[js.Function1[/* information */ String, js.Any]] = js.undefined
+  var debug: js.UndefOr[js.Function1[/* information */ String, Any]] = js.undefined
   
   /**
     * This is the highWaterMark to use for the parser stream.
@@ -66,7 +66,7 @@ object SSH2StreamConfig {
     
     inline def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
     
-    inline def setDebug(value: /* information */ String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    inline def setDebug(value: /* information */ String => Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     

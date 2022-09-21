@@ -10,9 +10,9 @@ object bufferedTokenStreamMod {
   
   @JSImport("antlr4/BufferedTokenStream", "BufferedTokenStream")
   @js.native
-  class BufferedTokenStream () extends StObject {
+  open class BufferedTokenStream () extends StObject {
     
-    def LA(i: Double): js.Any = js.native
+    def LA(i: Double): Any = js.native
     
     def LB(k: Double): Token = js.native
     
@@ -30,13 +30,13 @@ object bufferedTokenStreamMod {
     
     def get(index: Double): Token = js.native
     
-    def getHiddenTokensToRight(tokenIndex: Double, channel: js.Any): js.Array[Token] = js.native
+    def getHiddenTokensToRight(tokenIndex: Double, channel: Any): js.Array[Token] = js.native
     
-    def getSourceName(): js.Any = js.native
+    def getSourceName(): Any = js.native
     
-    def getText(interval: Interval): js.Any = js.native
+    def getText(interval: Interval): Any = js.native
     
-    def getTokens(start: Double, stop: Double, types: js.Any): js.Array[Token] = js.native
+    def getTokens(start: Double, stop: Double, types: Any): js.Array[Token] = js.native
     
     var index: Double = js.native
     
@@ -44,9 +44,9 @@ object bufferedTokenStreamMod {
     
     def mark(): Double = js.native
     
-    def nextTokenOnChannel(i: Double, channel: js.Any): Double = js.native
+    def nextTokenOnChannel(i: Double, channel: Any): Double = js.native
     
-    def previousTokenOnChannel(i: Double, channel: js.Any): Double = js.native
+    def previousTokenOnChannel(i: Double, channel: Any): Double = js.native
     
     def release(marker: Double): Double = js.native
     
@@ -54,13 +54,13 @@ object bufferedTokenStreamMod {
     
     def seek(index: Double): Unit = js.native
     
-    def setTokenSource(tokenSource: js.Any): Unit = js.native
+    def setTokenSource(tokenSource: Any): Unit = js.native
     
     def setup(): Unit = js.native
     
     def sync(i: Double): Boolean = js.native
     
-    var tokenSource: js.Any = js.native
+    var tokenSource: Any = js.native
     
     var tokens: js.Array[Token] = js.native
   }

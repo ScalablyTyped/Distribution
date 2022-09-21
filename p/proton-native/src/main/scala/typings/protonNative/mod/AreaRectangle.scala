@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("proton-native", "AreaRectangle")
 @js.native
-class AreaRectangle protected ()
-  extends Component[AreaRectangleProps, js.Object, js.Any] {
+open class AreaRectangle protected ()
+  extends Component[AreaRectangleProps, js.Object, Any] {
   def this(props: AreaRectangleProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: AreaRectangleProps, context: js.Any) = this()
+  def this(props: AreaRectangleProps, context: Any) = this()
 }

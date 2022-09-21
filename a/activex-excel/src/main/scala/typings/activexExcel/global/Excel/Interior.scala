@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Interior")
 @js.native
-/* private */ class Interior ()
+/* private */ open class Interior ()
   extends StObject
      with typings.activexExcel.Excel.Interior {
   
@@ -32,13 +32,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ExcelDotInterior_typekey: typings.activexExcel.Excel.Interior = js.native
   
   /* CompleteClass */
-  override val Gradient: js.Any = js.native
+  override val Gradient: Any = js.native
   
   /* CompleteClass */
   var InvertIfNegative: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Pattern: XlPattern = js.native

@@ -20,17 +20,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartLineFormatData extends StObject {
   
   /**
-    *
     * HTML color code representing the color of lines in the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var color: js.UndefOr[String] = js.undefined
   
   /**
+    * Represents the line style. See `Excel.ChartLineStyle` for details.
     *
-    * Represents the line style. See Excel.ChartLineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var lineStyle: js.UndefOr[
@@ -38,9 +38,9 @@ trait ChartLineFormatData extends StObject {
   ] = js.undefined
   
   /**
-    *
     * Represents weight of the line, in points.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var weight: js.UndefOr[Double] = js.undefined

@@ -31,7 +31,7 @@ object XDatabaseEnvironment {
     getConnectionWithInfo: (String, SeqEquiv[PropertyValue]) => XConnection,
     getDatabaseAccess: String => XDatabaseAccess,
     getLoginTimeout: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setLoginTimeout: Double => Unit
   ): XDatabaseEnvironment = {

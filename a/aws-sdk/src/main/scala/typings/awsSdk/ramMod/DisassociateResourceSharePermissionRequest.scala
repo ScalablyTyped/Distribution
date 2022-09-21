@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisassociateResourceSharePermissionRequest extends StObject {
   
   /**
-    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+    * Specifies a unique, case-sensitive identifier that you provide to ensure the idempotency of the request. This lets you safely retry the request without accidentally performing the same operation a second time. Passing the same value to a later call to an operation requires that you also pass the same value for all other parameters. We recommend that you use a UUID type of value.. If you don't provide this value, then Amazon Web Services generates a random one for you.
     */
   var clientToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The ARN of the permission to disassociate from the resource share.
+    * The Amazon Resoure Name (ARN) of the permission to disassociate from the resource share. Changes to permissions take effect immediately.
     */
   var permissionArn: String
   
   /**
-    * The Amazon Resource Name (ARN) of the resource share.
+    * The Amazon Resoure Name (ARN) of the resource share from which you want to disassociate a permission.
     */
   var resourceShareArn: String
 }

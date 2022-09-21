@@ -10,7 +10,7 @@ trait IgTreeGridLocale
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies the collapse indicator tooltip text.

@@ -9,5 +9,5 @@ trait ShadowGeneratorSceneComponent
   extends StObject
      with ISceneSerializableComponent {
   
-  /* private */ var _gatherRenderTargets: js.Any = js.native
+  /* private */ var _gatherRenderTargets: Any = js.native
 }

@@ -9,47 +9,51 @@ object mod {
   
   @JSImport("promise-ftp-common", "FtpConnectionError")
   @js.native
-  class FtpConnectionError ()
+  open class FtpConnectionError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("promise-ftp-common", "FtpReconnectError")
   @js.native
-  class FtpReconnectError ()
+  open class FtpReconnectError ()
     extends StObject
        with Error {
     def this(disconnectError: String) = this()
-    def this(disconnectError: Error) = this()
+    def this(disconnectError: js.Error) = this()
     def this(disconnectError: String, connectError: String) = this()
-    def this(disconnectError: String, connectError: Error) = this()
+    def this(disconnectError: String, connectError: js.Error) = this()
+    def this(disconnectError: js.Error, connectError: String) = this()
+    def this(disconnectError: js.Error, connectError: js.Error) = this()
     def this(disconnectError: Unit, connectError: String) = this()
-    def this(disconnectError: Unit, connectError: Error) = this()
-    def this(disconnectError: Error, connectError: String) = this()
-    def this(disconnectError: Error, connectError: Error) = this()
+    def this(disconnectError: Unit, connectError: js.Error) = this()
     def this(disconnectError: String, connectError: String, onCwd: Boolean) = this()
+    def this(disconnectError: String, connectError: js.Error, onCwd: Boolean) = this()
     def this(disconnectError: String, connectError: Unit, onCwd: Boolean) = this()
-    def this(disconnectError: String, connectError: Error, onCwd: Boolean) = this()
+    def this(disconnectError: js.Error, connectError: String, onCwd: Boolean) = this()
+    def this(disconnectError: js.Error, connectError: js.Error, onCwd: Boolean) = this()
+    def this(disconnectError: js.Error, connectError: Unit, onCwd: Boolean) = this()
     def this(disconnectError: Unit, connectError: String, onCwd: Boolean) = this()
+    def this(disconnectError: Unit, connectError: js.Error, onCwd: Boolean) = this()
     def this(disconnectError: Unit, connectError: Unit, onCwd: Boolean) = this()
-    def this(disconnectError: Unit, connectError: Error, onCwd: Boolean) = this()
-    def this(disconnectError: Error, connectError: String, onCwd: Boolean) = this()
-    def this(disconnectError: Error, connectError: Unit, onCwd: Boolean) = this()
-    def this(disconnectError: Error, connectError: Error, onCwd: Boolean) = this()
     
-    var connectError: String | Error = js.native
+    var connectError: String | js.Error = js.native
     
-    var disconnectError: String | Error = js.native
+    var disconnectError: String | js.Error = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

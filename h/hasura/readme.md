@@ -10,10 +10,10 @@ CLI for hasura.io (coming soon!)
 | ------------------ | :-------------: |
 | Full name          | hasura |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 6956 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 860.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/hasura)

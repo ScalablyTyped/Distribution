@@ -10,10 +10,10 @@ a rpc client for node
 | ------------------ | :-------------: |
 | Full name          | node-ral |
 | Keywords           | rpc, ral, fis |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 8302 |
-| # stars            | 1 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 601.0 |
+| # stars            | 135.0 |
 
 ## Links
 - [Homepage](https://github.com/fex-team/node-ral)

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutConfigurationSetDeliveryOptionsRequest extends StObject {
   
   /**
-    * The name of the configuration set that you want to associate with a dedicated IP pool.
+    * The name of the configuration set to associate with a dedicated IP pool.
     */
   var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName
   
   /**
-    * The name of the dedicated IP pool that you want to associate with the configuration set.
+    * The name of the dedicated IP pool to associate with the configuration set.
     */
   var SendingPoolName: js.UndefOr[typings.awsSdk.sesv2Mod.SendingPoolName] = js.undefined
   

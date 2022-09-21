@@ -12,7 +12,7 @@ trait CreateInstanceExportTaskRequest extends StObject {
   var Description: js.UndefOr[String] = js.undefined
   
   /**
-    * The format and location for an instance export task.
+    * The format and location for an export instance task.
     */
   var ExportToS3Task: ExportToS3TaskSpecification
   
@@ -22,7 +22,7 @@ trait CreateInstanceExportTaskRequest extends StObject {
   var InstanceId: typings.awsSdk.ec2Mod.InstanceId
   
   /**
-    * The tags to apply to the instance export task during creation.
+    * The tags to apply to the export instance task during creation.
     */
   var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
   
@@ -56,7 +56,7 @@ object CreateInstanceExportTaskRequest {
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
     
     inline def setTargetEnvironment(value: ExportEnvironment): Self = StObject.set(x, "TargetEnvironment", value.asInstanceOf[js.Any])
   }

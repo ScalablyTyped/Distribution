@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsdoc-to-markdown
 
-Typings are for version 6.0
+Typings are for version 7.0
 
 ## Library description:
 Generates markdown API documentation from jsdoc annotated source code
@@ -10,10 +10,10 @@ Generates markdown API documentation from jsdoc annotated source code
 | ------------------ | :-------------: |
 | Full name          | jsdoc-to-markdown |
 | Keywords           | jsdoc, markdown, api, generator, javascript, js, documentation |
-| # releases         | 8 |
-| # dependents       | 116 |
-| # downloads        | 2115053 |
-| # stars            | 37 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 441177.6666666667 |
+| # stars            | 1400.0 |
 
 ## Links
 - [Homepage](https://github.com/jsdoc2md/jsdoc-to-markdown#readme)

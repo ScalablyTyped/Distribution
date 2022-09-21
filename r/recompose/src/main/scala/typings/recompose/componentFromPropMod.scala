@@ -1,6 +1,6 @@
 package typings.recompose
 
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,5 +12,5 @@ object componentFromPropMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(propName: String): StatelessComponent[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(propName.asInstanceOf[js.Any]).asInstanceOf[StatelessComponent[js.Any]]
+  inline def default(propName: String): FunctionComponent[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(propName.asInstanceOf[js.Any]).asInstanceOf[FunctionComponent[Any]]
 }

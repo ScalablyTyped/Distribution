@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DatabaseConnection extends StObject {
   
-  def queryAsync[T](query: String, params: js.Any*): typings.bluebird.mod.^[RowCount[T]] = js.native
+  def queryAsync[T](query: String, params: Any*): typings.bluebird.mod.^[RowCount[T]] = js.native
   def queryAsync[T](query: QueryLike): typings.bluebird.mod.^[RowCount[T]] = js.native
 }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchPutMessageErrorEntry extends StObject {
   
   /**
-    * The code associated with the error.
+    * The error code.
     */
   var errorCode: js.UndefOr[ErrorCode] = js.undefined
   
   /**
-    * More information about the error.
+    * A message that describes the error.
     */
   var errorMessage: js.UndefOr[ErrorMessage] = js.undefined
   

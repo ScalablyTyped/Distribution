@@ -18,13 +18,6 @@ trait TemplateItem
   var description: String = js.native
   
   /**
-    * Fetches the thumbnail used to display the template item.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html#fetchThumbnail)
-    */
-  def fetchThumbnail(): js.Promise[js.Any] = js.native
-  
-  /**
     * The label that is displayed for the template item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html#label)

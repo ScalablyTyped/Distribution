@@ -69,7 +69,7 @@ object Colors {
     
     inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
-    inline def setLinesVarargs(value: Class*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: Class*): Self = StObject.set(x, "lines", js.Array(value*))
     
     inline def setPadding(value: typings.c3.mod.Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
@@ -79,7 +79,7 @@ object Colors {
     
     inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    inline def setRegionsVarargs(value: Opacity*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: Opacity*): Self = StObject.set(x, "regions", js.Array(value*))
     
     inline def setScaleFormat(value: pow10 | (js.Function1[/* arg0 */ Double, String])): Self = StObject.set(x, "scaleFormat", value.asInstanceOf[js.Any])
     
@@ -107,6 +107,6 @@ object Colors {
     
     inline def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
     
-    inline def setTextsVarargs(value: Content*): Self = StObject.set(x, "texts", js.Array(value :_*))
+    inline def setTextsVarargs(value: Content*): Self = StObject.set(x, "texts", js.Array(value*))
   }
 }

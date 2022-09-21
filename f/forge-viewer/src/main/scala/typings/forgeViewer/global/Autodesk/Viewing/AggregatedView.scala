@@ -6,6 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Autodesk.Viewing.AggregatedView")
 @js.native
-class AggregatedView ()
+open class AggregatedView ()
   extends StObject
      with typings.forgeViewer.Autodesk.Viewing.AggregatedView
+object AggregatedView {
+  
+  @JSGlobal("Autodesk.Viewing.AggregatedView")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def findDiffSupportModel(sheetNode: typings.forgeViewer.Autodesk.Viewing.BubbleNode): typings.forgeViewer.Autodesk.Viewing.BubbleNode = ^.asInstanceOf[js.Dynamic].applyDynamic("findDiffSupportModel")(sheetNode.asInstanceOf[js.Any]).asInstanceOf[typings.forgeViewer.Autodesk.Viewing.BubbleNode]
+  
+  /* static member */
+  inline def findDiffSupportModels(diffConfig: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("findDiffSupportModels")(diffConfig.asInstanceOf[js.Any]).asInstanceOf[Unit]
+}

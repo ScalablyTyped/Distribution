@@ -2,6 +2,7 @@ package typings.summernote.mod.global.Summernote
 
 import typings.summernote.summernoteStrings.color
 import typings.summernote.summernoteStrings.font
+import typings.summernote.summernoteStrings.fontname_
 import typings.summernote.summernoteStrings.fontsize_
 import typings.summernote.summernoteStrings.height
 import typings.summernote.summernoteStrings.help
@@ -19,7 +20,7 @@ trait Options extends StObject {
   
   var airMode: js.UndefOr[Boolean] = js.undefined
   
-  var callbacks: js.UndefOr[js.Any] = js.undefined
+  var callbacks: js.UndefOr[SummernoteCallbacks | SummernoteUndocumentedCallbacks] = js.undefined
   
   // todo
   var codemirror: js.UndefOr[CodemirrorOptions] = js.undefined
@@ -68,7 +69,7 @@ trait Options extends StObject {
   
   var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maximumImageFileSize: js.UndefOr[js.Any] = js.undefined
+  var maximumImageFileSize: js.UndefOr[Any] = js.undefined
   
   var minHeight: js.UndefOr[Double] = js.undefined
   
@@ -109,7 +110,7 @@ object Options {
     
     inline def setAirModeUndefined: Self = StObject.set(x, "airMode", js.undefined)
     
-    inline def setCallbacks(value: js.Any): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+    inline def setCallbacks(value: SummernoteCallbacks | SummernoteUndocumentedCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     
     inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
     
@@ -133,13 +134,13 @@ object Options {
     
     inline def setCodeviewIframeWhitelistSrcUndefined: Self = StObject.set(x, "codeviewIframeWhitelistSrc", js.undefined)
     
-    inline def setCodeviewIframeWhitelistSrcVarargs(value: String*): Self = StObject.set(x, "codeviewIframeWhitelistSrc", js.Array(value :_*))
+    inline def setCodeviewIframeWhitelistSrcVarargs(value: String*): Self = StObject.set(x, "codeviewIframeWhitelistSrc", js.Array(value*))
     
     inline def setColors(value: colorsDef): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: js.Array[js.Array[String]]*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: js.Array[js.Array[String]]*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setDialogsFade(value: Boolean): Self = StObject.set(x, "dialogsFade", value.asInstanceOf[js.Any])
     
@@ -167,23 +168,23 @@ object Options {
     
     inline def setFontNamesIgnoreCheckUndefined: Self = StObject.set(x, "fontNamesIgnoreCheck", js.undefined)
     
-    inline def setFontNamesIgnoreCheckVarargs(value: String*): Self = StObject.set(x, "fontNamesIgnoreCheck", js.Array(value :_*))
+    inline def setFontNamesIgnoreCheckVarargs(value: String*): Self = StObject.set(x, "fontNamesIgnoreCheck", js.Array(value*))
     
     inline def setFontNamesUndefined: Self = StObject.set(x, "fontNames", js.undefined)
     
-    inline def setFontNamesVarargs(value: String*): Self = StObject.set(x, "fontNames", js.Array(value :_*))
+    inline def setFontNamesVarargs(value: String*): Self = StObject.set(x, "fontNames", js.Array(value*))
     
     inline def setFontSizeUnits(value: js.Array[fontSizeUnitOptions]): Self = StObject.set(x, "fontSizeUnits", value.asInstanceOf[js.Any])
     
     inline def setFontSizeUnitsUndefined: Self = StObject.set(x, "fontSizeUnits", js.undefined)
     
-    inline def setFontSizeUnitsVarargs(value: fontSizeUnitOptions*): Self = StObject.set(x, "fontSizeUnits", js.Array(value :_*))
+    inline def setFontSizeUnitsVarargs(value: fontSizeUnitOptions*): Self = StObject.set(x, "fontSizeUnits", js.Array(value*))
     
     inline def setFontSizes(value: js.Array[String]): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
     
     inline def setFontSizesUndefined: Self = StObject.set(x, "fontSizes", js.undefined)
     
-    inline def setFontSizesVarargs(value: String*): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
+    inline def setFontSizesVarargs(value: String*): Self = StObject.set(x, "fontSizes", js.Array(value*))
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
@@ -213,13 +214,13 @@ object Options {
     
     inline def setLineHeightsUndefined: Self = StObject.set(x, "lineHeights", js.undefined)
     
-    inline def setLineHeightsVarargs(value: String*): Self = StObject.set(x, "lineHeights", js.Array(value :_*))
+    inline def setLineHeightsVarargs(value: String*): Self = StObject.set(x, "lineHeights", js.Array(value*))
     
     inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
     inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    inline def setMaximumImageFileSize(value: js.Any): Self = StObject.set(x, "maximumImageFileSize", value.asInstanceOf[js.Any])
+    inline def setMaximumImageFileSize(value: Any): Self = StObject.set(x, "maximumImageFileSize", value.asInstanceOf[js.Any])
     
     inline def setMaximumImageFileSizeUndefined: Self = StObject.set(x, "maximumImageFileSize", js.undefined)
     
@@ -247,7 +248,7 @@ object Options {
     
     inline def setStyleTagsUndefined: Self = StObject.set(x, "styleTags", js.undefined)
     
-    inline def setStyleTagsVarargs(value: styleTagsOptions*): Self = StObject.set(x, "styleTags", js.Array(value :_*))
+    inline def setStyleTagsVarargs(value: styleTagsOptions*): Self = StObject.set(x, "styleTags", js.Array(value*))
     
     inline def setStyleWithSpan(value: Boolean): Self = StObject.set(x, "styleWithSpan", value.asInstanceOf[js.Any])
     
@@ -275,12 +276,12 @@ object Options {
     
     inline def setToolbarVarargs(
       value: (js.Tuple2[
-          style | font | fontsize_ | color | para | height | table | insert | view | help | misc, 
+          style | font | fontname_ | fontsize_ | color | para | height | table | insert | view | help | misc, 
           js.Array[
-            miscGroupOptions | toolbarColorGroupOptions | toolbarFontGroupOptions | toolbarFontsizeGroupOptions | toolbarHeightGroupOptions | toolbarHelpGroupOptions | toolbarInsertGroupOptions | toolbarParaGroupOptions | toolbarStyleGroupOptions | toolbarTableGroupOptions | toolbarViewGroupOptions
+            miscGroupOptions | toolbarColorGroupOptions | toolbarFontGroupOptions | toolbarFontNameOptions | toolbarFontsizeGroupOptions | toolbarHeightGroupOptions | toolbarHelpGroupOptions | toolbarInsertGroupOptions | toolbarParaGroupOptions | toolbarStyleGroupOptions | toolbarTableGroupOptions | toolbarViewGroupOptions
           ]
         ])*
-    ): Self = StObject.set(x, "toolbar", js.Array(value :_*))
+    ): Self = StObject.set(x, "toolbar", js.Array(value*))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeRecommendationExportJobsRequest extends StObject {
   
   /**
-    * An array of objects that describe a filter to return a more specific list of export jobs.
+    * An array of objects to specify a filter that returns a more specific list of export jobs.
     */
   var filters: js.UndefOr[JobFilters] = js.undefined
   
@@ -17,7 +17,7 @@ trait DescribeRecommendationExportJobsRequest extends StObject {
   var jobIds: js.UndefOr[JobIds] = js.undefined
   
   /**
-    * The maximum number of export jobs to return with a single request. To retrieve the remaining results, make another request with the returned NextToken value.
+    * The maximum number of export jobs to return with a single request. To retrieve the remaining results, make another request with the returned nextToken value.
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
   
@@ -39,13 +39,13 @@ object DescribeRecommendationExportJobsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: JobFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: JobFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setJobIds(value: JobIds): Self = StObject.set(x, "jobIds", value.asInstanceOf[js.Any])
     
     inline def setJobIdsUndefined: Self = StObject.set(x, "jobIds", js.undefined)
     
-    inline def setJobIdsVarargs(value: JobId*): Self = StObject.set(x, "jobIds", js.Array(value :_*))
+    inline def setJobIdsVarargs(value: JobId*): Self = StObject.set(x, "jobIds", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

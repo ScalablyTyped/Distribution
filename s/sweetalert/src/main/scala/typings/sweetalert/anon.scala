@@ -31,7 +31,7 @@ object anon {
     
     var closeModal: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String | js.Any] = js.undefined
+    var value: js.UndefOr[String | Any] = js.undefined
   }
   object CloseModal {
     
@@ -46,7 +46,7 @@ object anon {
       
       inline def setCloseModalUndefined: Self = StObject.set(x, "closeModal", js.undefined)
       
-      inline def setValue(value: String | js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -88,7 +88,7 @@ object anon {
       
       inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      inline def setButtonsVarargs(value: (String | Boolean)*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: (String | Boolean)*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

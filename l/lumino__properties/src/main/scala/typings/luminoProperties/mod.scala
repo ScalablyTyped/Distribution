@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("@lumino/properties", "AttachedProperty")
   @js.native
-  class AttachedProperty[T, U] protected () extends StObject {
+  open class AttachedProperty[T, U] protected () extends StObject {
     /**
       * Construct a new attached property.
       *
@@ -17,35 +17,35 @@ object mod {
       */
     def this(options: IOptions[T, U]) = this()
     
-    /* private */ var _changed: js.Any = js.native
+    /* private */ var _changed: Any = js.native
     
-    /* private */ var _coerce: js.Any = js.native
+    /* private */ var _coerce: Any = js.native
     
     /**
       * Coerce the value for the given owner.
       */
-    /* private */ var _coerceValue: js.Any = js.native
+    /* private */ var _coerceValue: Any = js.native
     
-    /* private */ var _compare: js.Any = js.native
+    /* private */ var _compare: Any = js.native
     
     /**
       * Compare the old value and new value for equality.
       */
-    /* private */ var _compareValue: js.Any = js.native
+    /* private */ var _compareValue: Any = js.native
     
-    /* private */ var _create: js.Any = js.native
+    /* private */ var _create: Any = js.native
     
     /**
       * Get or create the default value for the given owner.
       */
-    /* private */ var _createValue: js.Any = js.native
+    /* private */ var _createValue: Any = js.native
     
     /**
       * Run the change notification if the given values are different.
       */
-    /* private */ var _maybeNotify: js.Any = js.native
+    /* private */ var _maybeNotify: Any = js.native
     
-    /* private */ var _pid: js.Any = js.native
+    /* private */ var _pid: Any = js.native
     
     /**
       * Explicitly coerce the current property value for a given owner.
@@ -104,7 +104,7 @@ object mod {
       * This will clear all property values for the owner, but it will
       * **not** run the change notification for any of the properties.
       */
-    inline def clearData(owner: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearData")(owner.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def clearData(owner: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearData")(owner.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * The options object used to initialize an attached property.

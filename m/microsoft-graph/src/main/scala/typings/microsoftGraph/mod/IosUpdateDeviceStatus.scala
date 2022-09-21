@@ -24,7 +24,8 @@ trait IosUpdateDeviceStatus
     * The installation status of the policy report. Possible values are: success, available, idle, unknown, downloading,
     * downloadFailed, downloadRequiresComputer, downloadInsufficientSpace, downloadInsufficientPower,
     * downloadInsufficientNetwork, installing, installInsufficientSpace, installInsufficientPower,
-    * installPhoneCallInProgress, installFailed, notSupportedOperation, sharedDeviceUserLoggedInError.
+    * installPhoneCallInProgress, installFailed, notSupportedOperation, sharedDeviceUserLoggedInError,
+    * deviceOsHigherThanDesiredOsVersion.
     */
   var installStatus: js.UndefOr[IosUpdatesInstallStatus] = js.undefined
   

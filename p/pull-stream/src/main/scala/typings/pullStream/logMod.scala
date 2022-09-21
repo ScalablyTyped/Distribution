@@ -10,7 +10,7 @@ object logMod {
   /**
     * Output the stream to `console.log`.
     */
-  inline def apply(): Sink[js.Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Sink[js.Any]]
+  inline def apply(): Sink[Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Sink[Any]]
   
   @JSImport("pull-stream/sinks/log", JSImport.Namespace)
   @js.native

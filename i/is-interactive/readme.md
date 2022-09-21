@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-interactive
 
-Typings are for version 1.0.0
+Typings are for version 2.0.0
 
 ## Library description:
 Check if stdout or stderr is interactive
@@ -10,10 +10,10 @@ Check if stdout or stderr is interactive
 | ------------------ | :-------------: |
 | Full name          | is-interactive |
 | Keywords           | interactive, stdout, stderr, detect, is, terminal, shell, tty |
-| # releases         | 4 |
-| # dependents       | 38 |
-| # downloads        | 90389757 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3.4644845E7 |
+| # stars            | 108.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-interactive#readme)

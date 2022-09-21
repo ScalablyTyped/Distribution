@@ -12,7 +12,7 @@ trait DescribeInstancePatchesResult extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
-    * Each entry in the array is a structure containing: Title (string) KBId (string) Classification (string) Severity (string) State (string, such as "INSTALLED" or "FAILED") InstalledTime (DateTime) InstalledBy (string)
+    * Each entry in the array is a structure containing:   Title (string)   KBId (string)   Classification (string)   Severity (string)   State (string, such as "INSTALLED" or "FAILED")   InstalledTime (DateTime)   InstalledBy (string)  
     */
   var Patches: js.UndefOr[PatchComplianceDataList] = js.undefined
 }
@@ -33,6 +33,6 @@ object DescribeInstancePatchesResult {
     
     inline def setPatchesUndefined: Self = StObject.set(x, "Patches", js.undefined)
     
-    inline def setPatchesVarargs(value: PatchComplianceData*): Self = StObject.set(x, "Patches", js.Array(value :_*))
+    inline def setPatchesVarargs(value: PatchComplianceData*): Self = StObject.set(x, "Patches", js.Array(value*))
   }
 }

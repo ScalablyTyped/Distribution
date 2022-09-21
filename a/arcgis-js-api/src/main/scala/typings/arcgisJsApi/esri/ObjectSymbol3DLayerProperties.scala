@@ -1,10 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.bottom
-import typings.arcgisJsApi.arcgisJsApiStrings.center
+import typings.arcgisJsApi.arcgisJsApiStrings.bottom_
+import typings.arcgisJsApi.arcgisJsApiStrings.center_
 import typings.arcgisJsApi.arcgisJsApiStrings.origin
-import typings.arcgisJsApi.arcgisJsApiStrings.relative
-import typings.arcgisJsApi.arcgisJsApiStrings.top
+import typings.arcgisJsApi.arcgisJsApiStrings.relative_
+import typings.arcgisJsApi.arcgisJsApiStrings.top_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +16,11 @@ trait ObjectSymbol3DLayerProperties
   /**
     * The positioning of the symbol relative to the geometry.
     *
+    * @default origin
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchor)
     */
-  var anchor: js.UndefOr[center | top | bottom | origin | relative] = js.undefined
+  var anchor: js.UndefOr[center_ | top_ | bottom_ | origin | relative_] = js.undefined
   
   /**
     * Defines the [anchor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchor) relative to the center of the [symbol layer resource](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource).
@@ -30,12 +32,16 @@ trait ObjectSymbol3DLayerProperties
   /**
     * Indicates whether the symbol layer geometry casts shadows in the scene.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#castShadows)
     */
   var castShadows: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The depth, or diameter from north to south, of the object in meters.
+    *
+    * @default 10
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#depth)
     */
@@ -51,6 +57,8 @@ trait ObjectSymbol3DLayerProperties
   /**
     * The height of the object in meters.
     *
+    * @default 10
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#height)
     */
   var height: js.UndefOr[Double] = js.undefined
@@ -64,6 +72,8 @@ trait ObjectSymbol3DLayerProperties
   
   /**
     * The primitive shape (`primitive`) or external 3D model (`href`) used to visualize the points.
+    *
+    * @default { primitive: "sphere" }
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource)
     */
@@ -86,6 +96,8 @@ trait ObjectSymbol3DLayerProperties
   /**
     * The width, or diameter from east to west, of the object in meters.
     *
+    * @default 10
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#width)
     */
   var width: js.UndefOr[Double] = js.undefined
@@ -99,7 +111,7 @@ object ObjectSymbol3DLayerProperties {
   
   extension [Self <: ObjectSymbol3DLayerProperties](x: Self) {
     
-    inline def setAnchor(value: center | top | bottom | origin | relative): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: center_ | top_ | bottom_ | origin | relative_): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
     inline def setAnchorPosition(value: ObjectSymbol3DLayerAnchorPosition): Self = StObject.set(x, "anchorPosition", value.asInstanceOf[js.Any])
     

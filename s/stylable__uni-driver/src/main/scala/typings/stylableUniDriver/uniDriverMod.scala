@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object uniDriverMod {
   
-  @JSImport("@stylable/uni-driver/cjs/uni-driver", "StylableUnidriverUtil")
+  @JSImport("@stylable/uni-driver/dist/uni-driver", "StylableUnidriverUtil")
   @js.native
-  class StylableUnidriverUtil protected () extends StObject {
+  open class StylableUnidriverUtil protected () extends StObject {
     def this(stylesheet: MinimalStylesheet) = this()
     
-    /* private */ var getBaseStateWithParam: js.Any = js.native
+    /* private */ var getBaseStateWithParam: Any = js.native
     
     def getStateValueFromClassName(cls: String, baseState: String): String = js.native
     
@@ -23,6 +23,6 @@ object uniDriverMod {
     def hasStyleState(base: ElementRemoteApi, stateName: String): js.Promise[Boolean] = js.native
     def hasStyleState(base: ElementRemoteApi, stateName: String, param: StateValue): js.Promise[Boolean] = js.native
     
-    /* private */ var stylesheet: js.Any = js.native
+    /* private */ var stylesheet: Any = js.native
   }
 }

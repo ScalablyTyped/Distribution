@@ -1,7 +1,7 @@
 
 # Scala.js typings for xdg-basedir
 
-Typings are for version 4.0.0
+Typings are for version 5.1.0
 
 ## Library description:
 Get XDG Base Directory paths
@@ -10,10 +10,10 @@ Get XDG Base Directory paths
 | ------------------ | :-------------: |
 | Full name          | xdg-basedir |
 | Keywords           | xdg, base, directory, basedir, path, data, config, cache, linux, unix, spec |
-| # releases         | 2 |
-| # dependents       | 128 |
-| # downloads        | 405705386 |
-| # stars            | 5 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4.7906743333333336E7 |
+| # stars            | 69.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/xdg-basedir#readme)

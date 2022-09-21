@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-random
 
-Typings are for version 2.2
+Typings are for version 3.0
 
 ## Library description:
 Generate random numbers from various distributions.
@@ -10,10 +10,10 @@ Generate random numbers from various distributions.
 | ------------------ | :-------------: |
 | Full name          | d3-random |
 | Keywords           | d3, d3-module, random, rng |
-| # releases         | 7 |
-| # dependents       | 44 |
-| # downloads        | 37814118 |
-| # stars            | 1 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 5872849.666666667 |
+| # stars            | 124.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-random/)

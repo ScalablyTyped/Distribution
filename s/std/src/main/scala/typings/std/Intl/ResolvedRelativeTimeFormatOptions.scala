@@ -7,26 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * An object with properties reflecting the locale
   * and formatting options computed during initialization
-  * of the `Intel.RelativeTimeFormat` object
+  * of the `Intl.RelativeTimeFormat` object
   *
   * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat/resolvedOptions#Description).
-  *
-  * [Specification](https://tc39.es/ecma402/#table-relativetimeformat-resolvedoptions-properties)
   */
 trait ResolvedRelativeTimeFormatOptions extends StObject {
   
-  var locale: BCP47LanguageTag
+  /* standard es2020.intl */
+  var locale: UnicodeBCP47LocaleIdentifier
   
+  /* standard es2020.intl */
   var numberingSystem: String
   
+  /* standard es2020.intl */
   var numeric: RelativeTimeFormatNumeric
   
+  /* standard es2020.intl */
   var style: RelativeTimeFormatStyle
 }
 object ResolvedRelativeTimeFormatOptions {
   
   inline def apply(
-    locale: BCP47LanguageTag,
+    locale: UnicodeBCP47LocaleIdentifier,
     numberingSystem: String,
     numeric: RelativeTimeFormatNumeric,
     style: RelativeTimeFormatStyle
@@ -37,7 +39,7 @@ object ResolvedRelativeTimeFormatOptions {
   
   extension [Self <: ResolvedRelativeTimeFormatOptions](x: Self) {
     
-    inline def setLocale(value: BCP47LanguageTag): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: UnicodeBCP47LocaleIdentifier): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
     

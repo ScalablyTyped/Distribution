@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with BaseNode
      with BlockParent
      with Scopable
+     with Standardized
      with Statement {
   
   var cases: js.Array[SwitchCase_]
@@ -32,7 +33,7 @@ object SwitchStatement_ {
     
     inline def setCases(value: js.Array[SwitchCase_]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
     
-    inline def setCasesVarargs(value: SwitchCase_ *): Self = StObject.set(x, "cases", js.Array(value :_*))
+    inline def setCasesVarargs(value: SwitchCase_ *): Self = StObject.set(x, "cases", js.Array(value*))
     
     inline def setDiscriminant(value: Expression): Self = StObject.set(x, "discriminant", value.asInstanceOf[js.Any])
     

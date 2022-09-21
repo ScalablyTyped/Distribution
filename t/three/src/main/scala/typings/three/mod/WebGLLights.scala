@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "WebGLLights")
 @js.native
-class WebGLLights protected ()
-  extends typings.three.webGLLightsMod.WebGLLights {
+open class WebGLLights protected ()
+  extends typings.three.threeMod.WebGLLights {
   def this(
     extensions: typings.three.webGLExtensionsMod.WebGLExtensions,
     capabilities: typings.three.webGLCapabilitiesMod.WebGLCapabilities

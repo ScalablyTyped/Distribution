@@ -8,7 +8,7 @@ object messageQueueMod {
   
   @JSImport("react-native/Libraries/BatchedBridge/MessageQueue", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with MessageQueue {
     

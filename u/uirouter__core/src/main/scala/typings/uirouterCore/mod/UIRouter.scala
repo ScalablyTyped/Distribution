@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param locationConfig a [[LocationConfig]] implementation
   * @internal
   */
-class UIRouter ()
+open class UIRouter ()
   extends typings.uirouterCore.routerMod.UIRouter {
   def this(locationService: LocationServices) = this()
   def this(locationService: Unit, locationConfig: LocationConfig) = this()

@@ -1,7 +1,7 @@
 package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.TopLevel
-import typings.maximMazurokGapiClientBigquery.anon.Domain
+import typings.maximMazurokGapiClientBigquery.anon.TagKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,13 +14,16 @@ trait Dataset extends StObject {
     * READER; access.specialGroup: projectWriters; access.role: WRITER; access.specialGroup: projectOwners; access.role: OWNER; access.userByEmail: [dataset creator email]; access.role:
     * OWNER;
     */
-  var access: js.UndefOr[js.Array[Domain]] = js.undefined
+  var access: js.UndefOr[js.Array[typings.maximMazurokGapiClientBigquery.anon.Dataset]] = js.undefined
   
   /** [Output-only] The time when this dataset was created, in milliseconds since the epoch. */
   var creationTime: js.UndefOr[String] = js.undefined
   
   /** [Required] A reference that identifies the dataset. */
   var datasetReference: js.UndefOr[DatasetReference] = js.undefined
+  
+  /** [Output-only] The default collation of the dataset. */
+  var defaultCollation: js.UndefOr[String] = js.undefined
   
   var defaultEncryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.undefined
   
@@ -56,6 +59,9 @@ trait Dataset extends StObject {
     */
   var id: js.UndefOr[String] = js.undefined
   
+  /** [Optional] Indicates if table names are case insensitive in the dataset. */
+  var isCaseInsensitive: js.UndefOr[Boolean] = js.undefined
+  
   /** [Output-only] The resource type. */
   var kind: js.UndefOr[String] = js.undefined
   
@@ -66,7 +72,7 @@ trait Dataset extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Dataset & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Dataset & TopLevel[Any]
   ] = js.undefined
   
   /** [Output-only] The date when this dataset or any of its tables was last modified, in milliseconds since the epoch. */
@@ -75,11 +81,17 @@ trait Dataset extends StObject {
   /** The geographic location where the dataset should reside. The default value is US. See details at https://cloud.google.com/bigquery/docs/locations. */
   var location: js.UndefOr[String] = js.undefined
   
+  /** [Optional] Number of hours for the max time travel for all tables in the dataset. */
+  var maxTimeTravelHours: js.UndefOr[String] = js.undefined
+  
   /** [Output-only] Reserved for future use. */
-  var satisfiesPZS: js.UndefOr[Boolean] = js.undefined
+  var satisfiesPzs: js.UndefOr[Boolean] = js.undefined
   
   /** [Output-only] A URL that can be used to access the resource again. You can use this URL in Get or Update requests to the resource. */
   var selfLink: js.UndefOr[String] = js.undefined
+  
+  /** [Optional]The tags associated with this dataset. Tag keys are globally unique. */
+  var tags: js.UndefOr[js.Array[TagKey]] = js.undefined
 }
 object Dataset {
   
@@ -90,11 +102,11 @@ object Dataset {
   
   extension [Self <: Dataset](x: Self) {
     
-    inline def setAccess(value: js.Array[Domain]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: js.Array[typings.maximMazurokGapiClientBigquery.anon.Dataset]): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
     inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
-    inline def setAccessVarargs(value: Domain*): Self = StObject.set(x, "access", js.Array(value :_*))
+    inline def setAccessVarargs(value: typings.maximMazurokGapiClientBigquery.anon.Dataset*): Self = StObject.set(x, "access", js.Array(value*))
     
     inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
@@ -103,6 +115,10 @@ object Dataset {
     inline def setDatasetReference(value: DatasetReference): Self = StObject.set(x, "datasetReference", value.asInstanceOf[js.Any])
     
     inline def setDatasetReferenceUndefined: Self = StObject.set(x, "datasetReference", js.undefined)
+    
+    inline def setDefaultCollation(value: String): Self = StObject.set(x, "defaultCollation", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultCollationUndefined: Self = StObject.set(x, "defaultCollation", js.undefined)
     
     inline def setDefaultEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "defaultEncryptionConfiguration", value.asInstanceOf[js.Any])
     
@@ -132,6 +148,10 @@ object Dataset {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
+    inline def setIsCaseInsensitive(value: Boolean): Self = StObject.set(x, "isCaseInsensitive", value.asInstanceOf[js.Any])
+    
+    inline def setIsCaseInsensitiveUndefined: Self = StObject.set(x, "isCaseInsensitive", js.undefined)
+    
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
@@ -139,7 +159,7 @@ object Dataset {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Dataset & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Dataset & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -152,12 +172,22 @@ object Dataset {
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    inline def setSatisfiesPZS(value: Boolean): Self = StObject.set(x, "satisfiesPZS", value.asInstanceOf[js.Any])
+    inline def setMaxTimeTravelHours(value: String): Self = StObject.set(x, "maxTimeTravelHours", value.asInstanceOf[js.Any])
     
-    inline def setSatisfiesPZSUndefined: Self = StObject.set(x, "satisfiesPZS", js.undefined)
+    inline def setMaxTimeTravelHoursUndefined: Self = StObject.set(x, "maxTimeTravelHours", js.undefined)
+    
+    inline def setSatisfiesPzs(value: Boolean): Self = StObject.set(x, "satisfiesPzs", value.asInstanceOf[js.Any])
+    
+    inline def setSatisfiesPzsUndefined: Self = StObject.set(x, "satisfiesPzs", js.undefined)
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    
+    inline def setTags(value: js.Array[TagKey]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: TagKey*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

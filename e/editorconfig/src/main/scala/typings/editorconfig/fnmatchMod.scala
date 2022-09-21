@@ -2,7 +2,6 @@ package typings.editorconfig
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object fnmatchMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("editorconfig/src/lib/fnmatch", "Minimatch")
   @js.native
-  class Minimatch protected ()
+  open class Minimatch protected ()
     extends StObject
        with IMinimatch {
     def this(pattern: String) = this()
@@ -39,8 +38,8 @@ object fnmatchMod {
   /**
     * Make a regular expression object from the pattern.
     */
-  inline def makeRe(pattern: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRe")(pattern.asInstanceOf[js.Any]).asInstanceOf[RegExp]
-  inline def makeRe(pattern: String, options: IOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRe")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  inline def makeRe(pattern: String): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRe")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
+  inline def makeRe(pattern: String, options: IOptions): js.RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRe")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.RegExp]
   
   /**
     * Match against the list of files, in the style of fnmatch or glob.
@@ -88,7 +87,7 @@ object fnmatchMod {
       * Generate the regexp member if necessary, and return it.
       * Will return false if the pattern is invalid.
       */
-    def makeRe(): RegExp = js.native
+    def makeRe(): js.RegExp = js.native
     
     // regexp or boolean
     /**
@@ -138,12 +137,12 @@ object fnmatchMod {
       * A single regular expression expressing the entire pattern.
       * Created by the makeRe method.
       */
-    var regexp: RegExp = js.native
+    var regexp: js.RegExp = js.native
     
     /**
       * A 2-dimensional array of regexp or string expressions.
       */
-    var set: js.Array[js.Array[js.Any]] = js.native
+    var set: js.Array[js.Array[Any]] = js.native
   }
   
   @js.native

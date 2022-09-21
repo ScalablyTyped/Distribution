@@ -26,7 +26,7 @@ object SessionListener {
     doQuit: () => Unit,
     doRestore: () => Boolean,
     doSave: (Boolean, Boolean) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     shutdownCanceled: () => Unit
   ): SessionListener = {

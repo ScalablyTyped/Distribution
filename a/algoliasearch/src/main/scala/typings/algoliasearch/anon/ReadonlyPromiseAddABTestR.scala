@@ -17,9 +17,9 @@ trait ReadonlyPromiseAddABTestR extends StObject {
 object ReadonlyPromiseAddABTestR {
   
   inline def apply(
-    `catch`: () => js.Promise[AddABTestResponse | js.Any],
+    `catch`: () => js.Promise[AddABTestResponse | Any],
     `finally`: () => js.Promise[AddABTestResponse],
-    `then`: () => js.Promise[js.Any | js.Any]
+    `then`: () => js.Promise[Any | Any]
   ): ReadonlyPromiseAddABTestR = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("catch")(js.Any.fromFunction0(`catch`))
@@ -30,10 +30,10 @@ object ReadonlyPromiseAddABTestR {
   
   extension [Self <: ReadonlyPromiseAddABTestR](x: Self) {
     
-    inline def setCatch(value: () => js.Promise[AddABTestResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[AddABTestResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
     inline def setFinally(value: () => js.Promise[AddABTestResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[Any | Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

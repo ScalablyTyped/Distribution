@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientAndroidpublisher.anon
 
+import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.ActivateBasePlanRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +17,9 @@ trait KeyOauthtoken extends StObject {
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
+  /** Required. The unique base plan ID of the base plan to activate. */
+  var basePlanId: String
+  
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
@@ -28,28 +32,31 @@ trait KeyOauthtoken extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Unique identifier of the Android app. */
+  /** Required. The parent app (package name) of the base plan to activate. */
   var packageName: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
+  /** Required. The parent subscription (ID) of the base plan to activate. */
+  var productId: String
+  
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
+  
+  /** Request body */
+  var resource: ActivateBasePlanRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
-  
-  /** The version code of the App Bundle. */
-  var versionCode: String
 }
 object KeyOauthtoken {
   
-  inline def apply(packageName: String, versionCode: String): KeyOauthtoken = {
-    val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any], versionCode = versionCode.asInstanceOf[js.Any])
+  inline def apply(basePlanId: String, packageName: String, productId: String, resource: ActivateBasePlanRequest): KeyOauthtoken = {
+    val __obj = js.Dynamic.literal(basePlanId = basePlanId.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOauthtoken]
   }
   
@@ -66,6 +73,8 @@ object KeyOauthtoken {
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    
+    inline def setBasePlanId(value: String): Self = StObject.set(x, "basePlanId", value.asInstanceOf[js.Any])
     
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
@@ -89,9 +98,13 @@ object KeyOauthtoken {
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: ActivateBasePlanRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     
@@ -100,7 +113,5 @@ object KeyOauthtoken {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
-    
-    inline def setVersionCode(value: String): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
   }
 }

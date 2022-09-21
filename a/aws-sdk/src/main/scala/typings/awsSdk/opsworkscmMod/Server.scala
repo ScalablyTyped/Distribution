@@ -24,7 +24,7 @@ trait Server extends StObject {
   /**
     * Time stamp of server creation. Example 2016-07-29T13:38:47.520Z 
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An optional public endpoint of a server, such as https://aws.my-company.com. You cannot access the server by using the Endpoint value if the server has a CustomDomain specified.
@@ -57,7 +57,7 @@ trait Server extends StObject {
   var EngineModel: js.UndefOr[String] = js.undefined
   
   /**
-    * The engine version of the server. For a Chef server, the valid value for EngineVersion is currently 2. For a Puppet server, the valid value is 2017. 
+    * The engine version of the server. For a Chef server, the valid value for EngineVersion is currently 2. For a Puppet server, specify either 2019 or 2017. 
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   
@@ -147,7 +147,7 @@ object Server {
     
     inline def setCloudFormationStackArnUndefined: Self = StObject.set(x, "CloudFormationStackArn", js.undefined)
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -169,7 +169,7 @@ object Server {
     
     inline def setEngineAttributesUndefined: Self = StObject.set(x, "EngineAttributes", js.undefined)
     
-    inline def setEngineAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "EngineAttributes", js.Array(value :_*))
+    inline def setEngineAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "EngineAttributes", js.Array(value*))
     
     inline def setEngineModel(value: String): Self = StObject.set(x, "EngineModel", value.asInstanceOf[js.Any])
     
@@ -209,7 +209,7 @@ object Server {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setServerArn(value: String): Self = StObject.set(x, "ServerArn", value.asInstanceOf[js.Any])
     
@@ -235,6 +235,6 @@ object Server {
     
     inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
   }
 }

@@ -71,7 +71,7 @@ object GoogleCloudVisionV1p4beta1EntityAnnotation {
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: GoogleCloudVisionV1p4beta1LocationInfo*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: GoogleCloudVisionV1p4beta1LocationInfo*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setMid(value: String): Self = StObject.set(x, "mid", value.asInstanceOf[js.Any])
     
@@ -81,7 +81,7 @@ object GoogleCloudVisionV1p4beta1EntityAnnotation {
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    inline def setPropertiesVarargs(value: GoogleCloudVisionV1p4beta1Property*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: GoogleCloudVisionV1p4beta1Property*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     

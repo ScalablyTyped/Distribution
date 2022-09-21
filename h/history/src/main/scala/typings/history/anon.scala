@@ -1,64 +1,88 @@
 package typings.history
 
-import typings.history.createBrowserHistoryMod.BrowserHistoryBuildOptions
-import typings.history.createHashHistoryMod.HashHistoryBuildOptions
-import typings.history.createMemoryHistoryMod.MemoryHistory
-import typings.history.createMemoryHistoryMod.MemoryHistoryBuildOptions
-import typings.history.mod.History
-import typings.history.mod.Location
-import typings.history.mod.LocationDescriptor
-import typings.history.mod.LocationDescriptorObject
-import typings.history.mod.LocationKey
-import typings.history.mod.Path
+import typings.history.mod.Hash
+import typings.history.mod.Key
+import typings.history.mod.Pathname
+import typings.history.mod.Search
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Fn0 extends StObject {
+  /* Inlined std.Partial<history.history.Location> */
+  trait PartialLocation extends StObject {
     
-    def apply[S](): MemoryHistory[S] = js.native
-    def apply[S](options: MemoryHistoryBuildOptions): MemoryHistory[S] = js.native
+    var hash: js.UndefOr[Hash] = js.undefined
+    
+    var key: js.UndefOr[Key] = js.undefined
+    
+    var pathname: js.UndefOr[Pathname] = js.undefined
+    
+    var search: js.UndefOr[Search] = js.undefined
+    
+    var state: js.UndefOr[Any] = js.undefined
+  }
+  object PartialLocation {
+    
+    inline def apply(): PartialLocation = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialLocation]
+    }
+    
+    extension [Self <: PartialLocation](x: Self) {
+      
+      inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      
+      inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
+      
+      inline def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    }
   }
   
-  @js.native
-  trait FnCall extends StObject {
+  /* Inlined std.Partial<history.history.Path> */
+  trait PartialPath extends StObject {
     
-    def apply[S](): History[S] = js.native
-    def apply[S](options: BrowserHistoryBuildOptions): History[S] = js.native
+    var hash: js.UndefOr[Hash] = js.undefined
+    
+    var pathname: js.UndefOr[Pathname] = js.undefined
+    
+    var search: js.UndefOr[Search] = js.undefined
   }
-  
-  @js.native
-  trait FnCallLocation extends StObject {
+  object PartialPath {
     
-    def apply[S](location: LocationDescriptorObject[S]): Path = js.native
-  }
-  
-  @js.native
-  trait FnCallLvRv extends StObject {
+    inline def apply(): PartialPath = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialPath]
+    }
     
-    def apply[S](lv: LocationDescriptor[S], rv: LocationDescriptor[S]): Boolean = js.native
-  }
-  
-  @js.native
-  trait FnCallOptions extends StObject {
-    
-    def apply[S](): History[S] = js.native
-    def apply[S](options: HashHistoryBuildOptions): History[S] = js.native
-  }
-  
-  @js.native
-  trait FnCallPathStateKeyCurrentLocation extends StObject {
-    
-    def apply[S](path: LocationDescriptor[S]): Location[S] = js.native
-    def apply[S](path: LocationDescriptor[S], state: S): Location[S] = js.native
-    def apply[S](path: LocationDescriptor[S], state: S, key: Unit, currentLocation: Location[S]): Location[S] = js.native
-    def apply[S](path: LocationDescriptor[S], state: S, key: LocationKey): Location[S] = js.native
-    def apply[S](path: LocationDescriptor[S], state: S, key: LocationKey, currentLocation: Location[S]): Location[S] = js.native
-    def apply[S](path: LocationDescriptor[S], state: Unit, key: Unit, currentLocation: Location[S]): Location[S] = js.native
-    def apply[S](path: LocationDescriptor[S], state: Unit, key: LocationKey): Location[S] = js.native
-    def apply[S](path: LocationDescriptor[S], state: Unit, key: LocationKey, currentLocation: Location[S]): Location[S] = js.native
+    extension [Self <: PartialPath](x: Self) {
+      
+      inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      
+      inline def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      
+      inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
+      
+      inline def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    }
   }
 }

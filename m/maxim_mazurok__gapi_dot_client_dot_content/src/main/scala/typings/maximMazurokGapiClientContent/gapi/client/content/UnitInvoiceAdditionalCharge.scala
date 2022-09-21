@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UnitInvoiceAdditionalCharge extends StObject {
   
-  /** [required] Amount of the additional charge. */
+  /**
+    * [required] Amount of the additional charge per unit. *Note:* Invoicing works on a per unit bases. The `additionalChargeAmount` is the amount charged per unit, and will be multiplied
+    * by the number of entries in `shipmentUnitID`.
+    */
   var additionalChargeAmount: js.UndefOr[Amount] = js.undefined
   
   /** [required] Type of the additional charge. Acceptable values are: - "`shipping`" */

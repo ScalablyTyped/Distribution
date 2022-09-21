@@ -31,12 +31,12 @@ object VideoContentDetailsRegionRestriction {
     
     inline def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
     
-    inline def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value :_*))
+    inline def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value*))
     
     inline def setBlocked(value: js.Array[String]): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
     inline def setBlockedUndefined: Self = StObject.set(x, "blocked", js.undefined)
     
-    inline def setBlockedVarargs(value: String*): Self = StObject.set(x, "blocked", js.Array(value :_*))
+    inline def setBlockedVarargs(value: String*): Self = StObject.set(x, "blocked", js.Array(value*))
   }
 }

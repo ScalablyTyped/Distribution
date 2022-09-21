@@ -16,23 +16,23 @@ trait JQueryMaskedInputOptions extends StObject {
   
   var greedy: js.UndefOr[Boolean] = js.undefined
   
-  var isComplete: js.UndefOr[js.Function2[/* buffer */ js.Any, /* options */ js.Any, js.Object]] = js.undefined
+  var isComplete: js.UndefOr[js.Function2[/* buffer */ Any, /* options */ Any, js.Object]] = js.undefined
   
   var mask: js.UndefOr[String] = js.undefined
   
   var numeric: js.UndefOr[Boolean] = js.undefined
   
-  var onBeforeMask: js.UndefOr[js.Function1[/* initialValue */ js.Any, Unit]] = js.undefined
+  var onBeforeMask: js.UndefOr[js.Function1[/* initialValue */ Any, Unit]] = js.undefined
   
-  var onBeforePaste: js.UndefOr[js.Function1[/* pastedValue */ js.Any, Unit]] = js.undefined
+  var onBeforePaste: js.UndefOr[js.Function1[/* pastedValue */ Any, Unit]] = js.undefined
   
-  var onKeyValidation: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
+  var onKeyValidation: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.undefined
   
-  var onUnMask: js.UndefOr[js.Function2[/* maskedValue */ js.Any, /* unmaskedValue */ js.Any, Unit]] = js.undefined
+  var onUnMask: js.UndefOr[js.Function2[/* maskedValue */ Any, /* unmaskedValue */ Any, Unit]] = js.undefined
   
   var oncleared: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var oncomplete: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var oncomplete: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   var onincomplete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -81,7 +81,7 @@ object JQueryMaskedInputOptions {
     
     inline def setGreedyUndefined: Self = StObject.set(x, "greedy", js.undefined)
     
-    inline def setIsComplete(value: (/* buffer */ js.Any, /* options */ js.Any) => js.Object): Self = StObject.set(x, "isComplete", js.Any.fromFunction2(value))
+    inline def setIsComplete(value: (/* buffer */ Any, /* options */ Any) => js.Object): Self = StObject.set(x, "isComplete", js.Any.fromFunction2(value))
     
     inline def setIsCompleteUndefined: Self = StObject.set(x, "isComplete", js.undefined)
     
@@ -93,19 +93,19 @@ object JQueryMaskedInputOptions {
     
     inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
     
-    inline def setOnBeforeMask(value: /* initialValue */ js.Any => Unit): Self = StObject.set(x, "onBeforeMask", js.Any.fromFunction1(value))
+    inline def setOnBeforeMask(value: /* initialValue */ Any => Unit): Self = StObject.set(x, "onBeforeMask", js.Any.fromFunction1(value))
     
     inline def setOnBeforeMaskUndefined: Self = StObject.set(x, "onBeforeMask", js.undefined)
     
-    inline def setOnBeforePaste(value: /* pastedValue */ js.Any => Unit): Self = StObject.set(x, "onBeforePaste", js.Any.fromFunction1(value))
+    inline def setOnBeforePaste(value: /* pastedValue */ Any => Unit): Self = StObject.set(x, "onBeforePaste", js.Any.fromFunction1(value))
     
     inline def setOnBeforePasteUndefined: Self = StObject.set(x, "onBeforePaste", js.undefined)
     
-    inline def setOnKeyValidation(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onKeyValidation", js.Any.fromFunction1(value))
+    inline def setOnKeyValidation(value: /* result */ Any => Unit): Self = StObject.set(x, "onKeyValidation", js.Any.fromFunction1(value))
     
     inline def setOnKeyValidationUndefined: Self = StObject.set(x, "onKeyValidation", js.undefined)
     
-    inline def setOnUnMask(value: (/* maskedValue */ js.Any, /* unmaskedValue */ js.Any) => Unit): Self = StObject.set(x, "onUnMask", js.Any.fromFunction2(value))
+    inline def setOnUnMask(value: (/* maskedValue */ Any, /* unmaskedValue */ Any) => Unit): Self = StObject.set(x, "onUnMask", js.Any.fromFunction2(value))
     
     inline def setOnUnMaskUndefined: Self = StObject.set(x, "onUnMask", js.undefined)
     
@@ -113,7 +113,7 @@ object JQueryMaskedInputOptions {
     
     inline def setOnclearedUndefined: Self = StObject.set(x, "oncleared", js.undefined)
     
-    inline def setOncomplete(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction1(value))
+    inline def setOncomplete(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction1(value))
     
     inline def setOncompleteUndefined: Self = StObject.set(x, "oncomplete", js.undefined)
     

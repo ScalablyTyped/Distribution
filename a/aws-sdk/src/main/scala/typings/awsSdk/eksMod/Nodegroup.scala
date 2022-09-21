@@ -12,6 +12,11 @@ trait Nodegroup extends StObject {
   var amiType: js.UndefOr[AMITypes] = js.undefined
   
   /**
+    * The capacity type of your managed node group.
+    */
+  var capacityType: js.UndefOr[CapacityTypes] = js.undefined
+  
+  /**
     * The name of the cluster that the managed node group resides in.
     */
   var clusterName: js.UndefOr[String] = js.undefined
@@ -19,7 +24,7 @@ trait Nodegroup extends StObject {
   /**
     * The Unix epoch timestamp in seconds for when the managed node group was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If the node group wasn't deployed with a launch template, then this is the disk size in the node group configuration. If the node group was deployed with a launch template, then this is null.
@@ -49,10 +54,10 @@ trait Nodegroup extends StObject {
   /**
     * The Unix epoch timestamp in seconds for when the managed node group was last modified.
     */
-  var modifiedAt: js.UndefOr[Timestamp] = js.undefined
+  var modifiedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The IAM role associated with your node group. The Amazon EKS worker node kubelet daemon makes calls to AWS APIs on your behalf. Worker nodes receive permissions for these API calls through an IAM instance profile and associated policies.
+    * The IAM role associated with your node group. The Amazon EKS node kubelet daemon makes calls to Amazon Web Services APIs on your behalf. Nodes receive permissions for these API calls through an IAM instance profile and associated policies.
     */
   var nodeRole: js.UndefOr[String] = js.undefined
   
@@ -67,7 +72,7 @@ trait Nodegroup extends StObject {
   var nodegroupName: js.UndefOr[String] = js.undefined
   
   /**
-    * If the node group was deployed using a launch template with a custom AMI, then this is the AMI ID that was specified in the launch template. For node groups that weren't deployed using a launch template, this is the version of the Amazon EKS-optimized AMI that the node group was deployed with.
+    * If the node group was deployed using a launch template with a custom AMI, then this is the AMI ID that was specified in the launch template. For node groups that weren't deployed using a launch template, this is the version of the Amazon EKS optimized AMI that the node group was deployed with.
     */
   var releaseVersion: js.UndefOr[String] = js.undefined
   
@@ -97,9 +102,19 @@ trait Nodegroup extends StObject {
   var subnets: js.UndefOr[StringList] = js.undefined
   
   /**
-    * The metadata applied to the node group to assist with categorization and organization. Each tag consists of a key and an optional value, both of which you define. Node group tags do not propagate to any other resources associated with the node group, such as the Amazon EC2 instances or subnets. 
+    * The metadata applied to the node group to assist with categorization and organization. Each tag consists of a key and an optional value. You define both. Node group tags do not propagate to any other resources associated with the node group, such as the Amazon EC2 instances or subnets. 
     */
   var tags: js.UndefOr[TagMap] = js.undefined
+  
+  /**
+    * The Kubernetes taints to be applied to the nodes in the node group when they are created. Effect is one of No_Schedule, Prefer_No_Schedule, or No_Execute. Kubernetes taints can be used together with tolerations to control how workloads are scheduled to your nodes. For more information, see Node taints on managed node groups.
+    */
+  var taints: js.UndefOr[taintsList] = js.undefined
+  
+  /**
+    * The node group update configuration.
+    */
+  var updateConfig: js.UndefOr[NodegroupUpdateConfig] = js.undefined
   
   /**
     * The Kubernetes version of the managed node group.
@@ -119,11 +134,15 @@ object Nodegroup {
     
     inline def setAmiTypeUndefined: Self = StObject.set(x, "amiType", js.undefined)
     
+    inline def setCapacityType(value: CapacityTypes): Self = StObject.set(x, "capacityType", value.asInstanceOf[js.Any])
+    
+    inline def setCapacityTypeUndefined: Self = StObject.set(x, "capacityType", js.undefined)
+    
     inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
     inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -139,7 +158,7 @@ object Nodegroup {
     
     inline def setInstanceTypesUndefined: Self = StObject.set(x, "instanceTypes", js.undefined)
     
-    inline def setInstanceTypesVarargs(value: String*): Self = StObject.set(x, "instanceTypes", js.Array(value :_*))
+    inline def setInstanceTypesVarargs(value: String*): Self = StObject.set(x, "instanceTypes", js.Array(value*))
     
     inline def setLabels(value: labelsMap): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
@@ -149,7 +168,7 @@ object Nodegroup {
     
     inline def setLaunchTemplateUndefined: Self = StObject.set(x, "launchTemplate", js.undefined)
     
-    inline def setModifiedAt(value: Timestamp): Self = StObject.set(x, "modifiedAt", value.asInstanceOf[js.Any])
+    inline def setModifiedAt(value: js.Date): Self = StObject.set(x, "modifiedAt", value.asInstanceOf[js.Any])
     
     inline def setModifiedAtUndefined: Self = StObject.set(x, "modifiedAt", js.undefined)
     
@@ -189,11 +208,21 @@ object Nodegroup {
     
     inline def setSubnetsUndefined: Self = StObject.set(x, "subnets", js.undefined)
     
-    inline def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTaints(value: taintsList): Self = StObject.set(x, "taints", value.asInstanceOf[js.Any])
+    
+    inline def setTaintsUndefined: Self = StObject.set(x, "taints", js.undefined)
+    
+    inline def setTaintsVarargs(value: Taint*): Self = StObject.set(x, "taints", js.Array(value*))
+    
+    inline def setUpdateConfig(value: NodegroupUpdateConfig): Self = StObject.set(x, "updateConfig", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateConfigUndefined: Self = StObject.set(x, "updateConfig", js.undefined)
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

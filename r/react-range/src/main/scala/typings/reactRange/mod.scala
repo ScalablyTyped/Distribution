@@ -33,7 +33,7 @@ object mod {
   
   @JSImport("react-range", "Range")
   @js.native
-  class Range protected () extends default {
+  open class Range protected () extends default {
     def this(props: IProps) = this()
   }
   object Range {
@@ -86,6 +86,8 @@ object mod {
       inline def step_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("step")(x.asInstanceOf[js.Any])
     }
   }
+  
+  inline def checkValuesAgainstBoundaries(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("checkValuesAgainstBoundaries")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def getTrackBackground(hasValuesColorsMinMaxDirectionRtl: ITrackBackground): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTrackBackground")(hasValuesColorsMinMaxDirectionRtl.asInstanceOf[js.Any]).asInstanceOf[String]
   

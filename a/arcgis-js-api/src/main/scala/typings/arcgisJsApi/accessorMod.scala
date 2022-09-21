@@ -9,9 +9,9 @@ object accessorMod {
   
   @JSImport("esri/core/Accessor", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Accessor {
-    def this(obj: js.Any) = this()
+    def this(obj: Any) = this()
   }
 }

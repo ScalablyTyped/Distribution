@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("@pollyjs/adapter-xhr", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.pollyjsAdapter.mod.default
   
   type XHRAdapter = typings.pollyjsAdapter.mod.default

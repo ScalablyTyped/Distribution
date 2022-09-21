@@ -11,13 +11,13 @@ trait LodashForIn extends StObject {
   def apply[T](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ]
   ): js.UndefOr[T | Null] = js.native
   def apply[T](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      js.Any
+      Any
     ],
     `object`: T
   ): js.UndefOr[T | Null] = js.native

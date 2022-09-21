@@ -1,7 +1,7 @@
 
 # Scala.js typings for ref-napi
 
-Typings are for version 1.4
+Typings are for version 3.0
 
 ## Library description:
 Turn Buffer instances into "pointers"
@@ -10,10 +10,10 @@ Turn Buffer instances into "pointers"
 | ------------------ | :-------------: |
 | Full name          | ref-napi |
 | Keywords           | native, buffer, extensions, c++, pointer, reference, dereference, type, int, long, float, double, byte, 64, napi |
-| # releases         | 14 |
-| # dependents       | 94 |
-| # downloads        | 732274 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 150041.66666666666 |
+| # stars            | 79.0 |
 
 ## Links
 - [Homepage](https://github.com/node-ffi-napi/ref-napi#readme)

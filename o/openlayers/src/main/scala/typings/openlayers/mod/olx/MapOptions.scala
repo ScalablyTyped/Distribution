@@ -57,13 +57,13 @@ object MapOptions {
     
     inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
     
-    inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
+    inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value*))
     
     inline def setInteractions(value: Collection[Interaction] | js.Array[Interaction]): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
     
     inline def setInteractionsUndefined: Self = StObject.set(x, "interactions", js.undefined)
     
-    inline def setInteractionsVarargs(value: Interaction*): Self = StObject.set(x, "interactions", js.Array(value :_*))
+    inline def setInteractionsVarargs(value: Interaction*): Self = StObject.set(x, "interactions", js.Array(value*))
     
     inline def setKeyboardEventTarget(value: Element | Document | String): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
     
@@ -73,7 +73,7 @@ object MapOptions {
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: Base*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: Base*): Self = StObject.set(x, "layers", js.Array(value*))
     
     inline def setLoadTilesWhileAnimating(value: Boolean): Self = StObject.set(x, "loadTilesWhileAnimating", value.asInstanceOf[js.Any])
     
@@ -95,7 +95,7 @@ object MapOptions {
     
     inline def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
     
-    inline def setOverlaysVarargs(value: Overlay*): Self = StObject.set(x, "overlays", js.Array(value :_*))
+    inline def setOverlaysVarargs(value: Overlay*): Self = StObject.set(x, "overlays", js.Array(value*))
     
     inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object MapOptions {
     
     inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
-    inline def setRendererVarargs(value: (RendererType | String)*): Self = StObject.set(x, "renderer", js.Array(value :_*))
+    inline def setRendererVarargs(value: (RendererType | String)*): Self = StObject.set(x, "renderer", js.Array(value*))
     
     inline def setTarget(value: Element | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

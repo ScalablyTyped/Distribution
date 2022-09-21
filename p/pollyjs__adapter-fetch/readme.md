@@ -10,15 +10,12 @@ Fetch adapter for @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/adapter-fetch |
 | Keywords           | polly, pollyjs, record, replay, fetch, adapter |
-| # releases         | 23 |
-| # dependents       | 5 |
-| # downloads        | 282037 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 39932.0 |
+| # stars            | 9730.0 |
 
 ## Links
-- [Homepage](https://github.com/netflix/pollyjs#readme)
-- [Bugs](https://github.com/netflix/pollyjs/issues)
-- [Repository](https://github.com/netflix/pollyjs)
 - [Npm](https://www.npmjs.com/package/%40pollyjs%2Fadapter-fetch)
     
 

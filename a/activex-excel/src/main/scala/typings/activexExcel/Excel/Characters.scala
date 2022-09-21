@@ -25,7 +25,7 @@ trait Characters extends StObject {
   def Insert(): String = js.native
   def Insert(String: String): String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var PhoneticCharacters: String = js.native
   

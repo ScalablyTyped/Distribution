@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Size extends StObject {
   
-  def fromJS(expose: js.Function2[/* width */ Double, /* height */ Double, js.Any]): Unit
+  def fromJS(expose: js.Function2[/* width */ Double, /* height */ Double, Any]): Unit
   
   val height: Double
   
@@ -15,7 +15,7 @@ trait Size extends StObject {
 object Size {
   
   inline def apply(
-    fromJS: js.Function2[/* width */ Double, /* height */ Double, js.Any] => Unit,
+    fromJS: js.Function2[/* width */ Double, /* height */ Double, Any] => Unit,
     height: Double,
     width: Double
   ): Size = {
@@ -25,7 +25,7 @@ object Size {
   
   extension [Self <: Size](x: Self) {
     
-    inline def setFromJS(value: js.Function2[/* width */ Double, /* height */ Double, js.Any] => Unit): Self = StObject.set(x, "fromJS", js.Any.fromFunction1(value))
+    inline def setFromJS(value: js.Function2[/* width */ Double, /* height */ Double, Any] => Unit): Self = StObject.set(x, "fromJS", js.Any.fromFunction1(value))
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

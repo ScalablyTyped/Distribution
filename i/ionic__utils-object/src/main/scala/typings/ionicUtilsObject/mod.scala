@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("@ionic/utils-object", "AliasedMap")
   @js.native
-  class AliasedMap[K, V] ()
+  open class AliasedMap[K, V] ()
     extends StObject
        with Map[AliasedMapKey | K, AliasedMapKey | V] {
     
@@ -28,7 +28,7 @@ object mod {
   
   @JSImport("@ionic/utils-object", "CaseInsensitiveProxyHandler")
   @js.native
-  val CaseInsensitiveProxyHandler: ProxyHandler[js.Any] = js.native
+  val CaseInsensitiveProxyHandler: ProxyHandler[Any] = js.native
   
   inline def createCaseInsensitiveObject[T](): StringDictionary[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCaseInsensitiveObject")().asInstanceOf[StringDictionary[T]]
   

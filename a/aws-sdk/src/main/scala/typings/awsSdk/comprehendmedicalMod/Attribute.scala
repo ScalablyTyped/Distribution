@@ -27,7 +27,7 @@ trait Attribute extends StObject {
   var Id: js.UndefOr[Integer] = js.undefined
   
   /**
-    *  The level of confidence that Amazon Comprehend Medical has that this attribute is correctly related to this entity. 
+    *  The level of confidence that Comprehend Medical; has that this attribute is correctly related to this entity. 
     */
   var RelationshipScore: js.UndefOr[Float] = js.undefined
   
@@ -37,7 +37,7 @@ trait Attribute extends StObject {
   var RelationshipType: js.UndefOr[typings.awsSdk.comprehendmedicalMod.RelationshipType] = js.undefined
   
   /**
-    *  The level of confidence that Amazon Comprehend Medical has that the segment of text is correctly recognized as an attribute. 
+    *  The level of confidence that Comprehend Medical; has that the segment of text is correctly recognized as an attribute. 
     */
   var Score: js.UndefOr[Float] = js.undefined
   
@@ -101,7 +101,7 @@ object Attribute {
     
     inline def setTraitsUndefined: Self = StObject.set(x, "Traits", js.undefined)
     
-    inline def setTraitsVarargs(value: Trait*): Self = StObject.set(x, "Traits", js.Array(value :_*))
+    inline def setTraitsVarargs(value: Trait*): Self = StObject.set(x, "Traits", js.Array(value*))
     
     inline def setType(value: EntitySubType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

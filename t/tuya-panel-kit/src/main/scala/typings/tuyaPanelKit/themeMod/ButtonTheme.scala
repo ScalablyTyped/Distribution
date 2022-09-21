@@ -45,6 +45,6 @@ object ButtonTheme {
     
     inline def setMargin(value: js.Array[Double]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    inline def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    inline def setMarginVarargs(value: Double*): Self = StObject.set(x, "margin", js.Array(value*))
   }
 }

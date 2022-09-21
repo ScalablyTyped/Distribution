@@ -1,7 +1,7 @@
 
 # Scala.js typings for onsenui
 
-Typings are for version 2.11.1
+Typings are for version 2.12.2
 
 ## Library description:
 HTML5 Mobile Framework & UI Components
@@ -10,10 +10,10 @@ HTML5 Mobile Framework & UI Components
 | ------------------ | :-------------: |
 | Full name          | onsenui |
 | Keywords           | phonegap, cordova, web-components, react, components, angular, vue, hybrid, app, ui, mobile, onsen, onsenui |
-| # releases         | 8 |
-| # dependents       | 11 |
-| # downloads        | 779787 |
-| # stars            | 5 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 156238.33333333334 |
+| # stars            | 8619.0 |
 
 ## Links
 - [Homepage](https://onsen.io/)

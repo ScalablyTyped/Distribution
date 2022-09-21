@@ -1,10 +1,13 @@
 package typings.vscodeLanguageserverTypes
 
+import typings.vscodeLanguageserverTypes.mod.CodeActionTriggerKind
 import typings.vscodeLanguageserverTypes.mod.CompletionItemKind
 import typings.vscodeLanguageserverTypes.mod.DiagnosticSeverity
 import typings.vscodeLanguageserverTypes.mod.DiagnosticTag
 import typings.vscodeLanguageserverTypes.mod.DocumentHighlightKind
+import typings.vscodeLanguageserverTypes.mod.InlayHintKind
 import typings.vscodeLanguageserverTypes.mod.InsertTextFormat
+import typings.vscodeLanguageserverTypes.mod.InsertTextMode
 import typings.vscodeLanguageserverTypes.mod.SymbolKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,11 +18,14 @@ object vscodeLanguageserverTypesNumbers {
   @js.native
   sealed trait `1`
     extends StObject
+       with CodeActionTriggerKind
        with CompletionItemKind
        with DiagnosticSeverity
        with DiagnosticTag
        with DocumentHighlightKind
+       with InlayHintKind
        with InsertTextFormat
+       with InsertTextMode
        with SymbolKind
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
@@ -96,11 +102,14 @@ object vscodeLanguageserverTypesNumbers {
   @js.native
   sealed trait `2`
     extends StObject
+       with CodeActionTriggerKind
        with CompletionItemKind
        with DiagnosticSeverity
        with DiagnosticTag
        with DocumentHighlightKind
+       with InlayHintKind
        with InsertTextFormat
+       with InsertTextMode
        with SymbolKind
   inline def `2`: `2` = 2.asInstanceOf[`2`]
   

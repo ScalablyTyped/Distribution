@@ -12,19 +12,19 @@ object previewThumbnailMod {
   
   @JSImport("playable/dist/src/modules/ui/preview-thumbnail/preview-thumbnail", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with PreviewThumbnail {
     def this(hasPreviewService: PreviewServiceIPreviewService) = this()
     
     /* private */ /* CompleteClass */
-    var _currentFrames: js.Any = js.native
+    var _currentFrames: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initUI: js.Any = js.native
+    var _initUI: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _previewService: js.Any = js.native
+    var _previewService: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -68,20 +68,20 @@ object previewThumbnailMod {
     extends StObject
        with IPreviewThumbnail {
     
-    /* private */ var _currentFrames: js.Any
+    /* private */ var _currentFrames: Any
     
-    /* private */ var _initUI: js.Any
+    /* private */ var _initUI: Any
     
-    /* private */ var _previewService: js.Any
+    /* private */ var _previewService: Any
     
     var view: typings.playable.previewThumbnailViewMod.default
   }
   object PreviewThumbnail {
     
     inline def apply(
-      _currentFrames: js.Any,
-      _initUI: js.Any,
-      _previewService: js.Any,
+      _currentFrames: Any,
+      _initUI: Any,
+      _previewService: Any,
       destroy: () => Unit,
       getElement: () => HTMLElement,
       setTime: String => Unit,
@@ -96,11 +96,11 @@ object previewThumbnailMod {
       
       inline def setView(value: typings.playable.previewThumbnailViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      inline def set_currentFrames(value: js.Any): Self = StObject.set(x, "_currentFrames", value.asInstanceOf[js.Any])
+      inline def set_currentFrames(value: Any): Self = StObject.set(x, "_currentFrames", value.asInstanceOf[js.Any])
       
-      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      inline def set_previewService(value: js.Any): Self = StObject.set(x, "_previewService", value.asInstanceOf[js.Any])
+      inline def set_previewService(value: Any): Self = StObject.set(x, "_previewService", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -1,8 +1,9 @@
 package typings.ethereumjsUtil
 
+import typings.ethereumjsUtil.externalsMod.BN
 import typings.ethereumjsUtil.typesMod.BNLike
 import typings.ethereumjsUtil.typesMod.BufferLike
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,26 +20,26 @@ object accountMod {
     * This constructor assigns and validates the values.
     * Use the static factory methods to assist in creating an Account from varying data types.
     */
-  class Account () extends StObject {
-    def this(nonce: typings.bnJs.mod.^) = this()
-    def this(nonce: Unit, balance: typings.bnJs.mod.^) = this()
-    def this(nonce: typings.bnJs.mod.^, balance: typings.bnJs.mod.^) = this()
+  open class Account () extends StObject {
+    def this(nonce: BN) = this()
+    def this(nonce: Unit, balance: BN) = this()
+    def this(nonce: BN, balance: BN) = this()
     def this(nonce: Unit, balance: Unit, stateRoot: Buffer) = this()
-    def this(nonce: Unit, balance: typings.bnJs.mod.^, stateRoot: Buffer) = this()
-    def this(nonce: typings.bnJs.mod.^, balance: Unit, stateRoot: Buffer) = this()
-    def this(nonce: typings.bnJs.mod.^, balance: typings.bnJs.mod.^, stateRoot: Buffer) = this()
+    def this(nonce: Unit, balance: BN, stateRoot: Buffer) = this()
+    def this(nonce: BN, balance: Unit, stateRoot: Buffer) = this()
+    def this(nonce: BN, balance: BN, stateRoot: Buffer) = this()
     def this(nonce: Unit, balance: Unit, stateRoot: Unit, codeHash: Buffer) = this()
     def this(nonce: Unit, balance: Unit, stateRoot: Buffer, codeHash: Buffer) = this()
-    def this(nonce: Unit, balance: typings.bnJs.mod.^, stateRoot: Unit, codeHash: Buffer) = this()
-    def this(nonce: Unit, balance: typings.bnJs.mod.^, stateRoot: Buffer, codeHash: Buffer) = this()
-    def this(nonce: typings.bnJs.mod.^, balance: Unit, stateRoot: Unit, codeHash: Buffer) = this()
-    def this(nonce: typings.bnJs.mod.^, balance: Unit, stateRoot: Buffer, codeHash: Buffer) = this()
-    def this(nonce: typings.bnJs.mod.^, balance: typings.bnJs.mod.^, stateRoot: Unit, codeHash: Buffer) = this()
-    def this(nonce: typings.bnJs.mod.^, balance: typings.bnJs.mod.^, stateRoot: Buffer, codeHash: Buffer) = this()
+    def this(nonce: Unit, balance: BN, stateRoot: Unit, codeHash: Buffer) = this()
+    def this(nonce: Unit, balance: BN, stateRoot: Buffer, codeHash: Buffer) = this()
+    def this(nonce: BN, balance: Unit, stateRoot: Unit, codeHash: Buffer) = this()
+    def this(nonce: BN, balance: Unit, stateRoot: Buffer, codeHash: Buffer) = this()
+    def this(nonce: BN, balance: BN, stateRoot: Unit, codeHash: Buffer) = this()
+    def this(nonce: BN, balance: BN, stateRoot: Buffer, codeHash: Buffer) = this()
     
-    /* private */ var _validate: js.Any = js.native
+    /* private */ var _validate: Any = js.native
     
-    var balance: typings.bnJs.mod.^ = js.native
+    var balance: BN = js.native
     
     var codeHash: Buffer = js.native
     
@@ -54,7 +55,7 @@ object accountMod {
       */
     def isEmpty(): Boolean = js.native
     
-    var nonce: typings.bnJs.mod.^ = js.native
+    var nonce: BN = js.native
     
     /**
       * Returns a Buffer Array of the raw Buffers for the account, in order.
@@ -91,7 +92,7 @@ object accountMod {
   inline def isValidAddress(hexAddress: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidAddress")(hexAddress.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isValidChecksumAddress(hexAddress: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidChecksumAddress")(hexAddress.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def isValidChecksumAddress(hexAddress: String, eip1191ChainId: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidChecksumAddress")(hexAddress.asInstanceOf[js.Any], eip1191ChainId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValidChecksumAddress(hexAddress: String, eip1191ChainId: BNLike): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidChecksumAddress")(hexAddress.asInstanceOf[js.Any], eip1191ChainId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isValidPrivate(privateKey: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPrivate")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -111,7 +112,7 @@ object accountMod {
   inline def publicToAddress(pubKey: Buffer, sanitize: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("publicToAddress")(pubKey.asInstanceOf[js.Any], sanitize.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   inline def toChecksumAddress(hexAddress: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toChecksumAddress")(hexAddress.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def toChecksumAddress(hexAddress: String, eip1191ChainId: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toChecksumAddress")(hexAddress.asInstanceOf[js.Any], eip1191ChainId.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toChecksumAddress(hexAddress: String, eip1191ChainId: BNLike): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toChecksumAddress")(hexAddress.asInstanceOf[js.Any], eip1191ChainId.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def zeroAddress(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroAddress")().asInstanceOf[String]
   
@@ -142,7 +143,7 @@ object accountMod {
       
       inline def setCodeHashUndefined: Self = StObject.set(x, "codeHash", js.undefined)
       
-      inline def setCodeHashVarargs(value: Double*): Self = StObject.set(x, "codeHash", js.Array(value :_*))
+      inline def setCodeHashVarargs(value: Double*): Self = StObject.set(x, "codeHash", js.Array(value*))
       
       inline def setNonce(value: BNLike): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,7 @@ object accountMod {
       
       inline def setStateRootUndefined: Self = StObject.set(x, "stateRoot", js.undefined)
       
-      inline def setStateRootVarargs(value: Double*): Self = StObject.set(x, "stateRoot", js.Array(value :_*))
+      inline def setStateRootVarargs(value: Double*): Self = StObject.set(x, "stateRoot", js.Array(value*))
     }
   }
 }

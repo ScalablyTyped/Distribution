@@ -19,7 +19,7 @@ object mod {
   
   @JSImport("react-split-pane", JSImport.Default)
   @js.native
-  class default () extends SplitPane
+  open class default () extends SplitPane
   object default {
     
     @JSImport("react-split-pane", JSImport.Default)
@@ -38,14 +38,14 @@ object mod {
   
   @JSImport("react-split-pane", "Pane")
   @js.native
-  class Pane protected ()
-    extends PureComponent[PaneProps, js.Object, js.Any] {
+  open class Pane protected ()
+    extends PureComponent[PaneProps, js.Object, Any] {
     def this(props: PaneProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PaneProps, context: js.Any) = this()
+    def this(props: PaneProps, context: Any) = this()
   }
   
   trait PaneProps extends StObject {
@@ -106,8 +106,7 @@ object mod {
   }
   
   @js.native
-  trait SplitPane
-    extends Component[SplitPaneProps, SplitPaneState, js.Any] {
+  trait SplitPane extends Component[SplitPaneProps, SplitPaneState, Any] {
     
     def onMouseDown(event: MouseEvent): Unit = js.native
     

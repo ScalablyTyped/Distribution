@@ -44,7 +44,7 @@ object mod {
   @js.native
   trait resize extends StObject {
     
-    def apply(ev: js.Any): js.Any = js.native
+    def apply(ev: Any): Any = js.native
     
     /**
       * Dynamically change the canvas' target scale.
@@ -58,6 +58,6 @@ object mod {
       * Dynamically change the canvas' target scale.
       * Note that you still need to manually trigger a resize after doing this.
       */
-    var scale: js.UndefOr[Double] = js.native
+    var scale: Double = js.native
   }
 }

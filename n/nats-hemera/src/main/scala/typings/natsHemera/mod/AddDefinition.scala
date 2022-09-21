@@ -10,7 +10,7 @@ trait AddDefinition extends StObject {
   
   var action: js.Function = js.native
   
-  def end(action: js.Function1[/* request */ ServerPattern, js.Promise[js.Any]]): Unit = js.native
+  def end(action: js.Function1[/* request */ ServerPattern, js.Promise[Any]]): Unit = js.native
   def end(action: js.Function2[/* request */ ServerPattern, /* cb */ NodeCallback, Unit]): Unit = js.native
   
   var pattern: ServerPattern = js.native

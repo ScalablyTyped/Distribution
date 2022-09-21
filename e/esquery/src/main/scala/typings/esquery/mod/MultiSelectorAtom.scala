@@ -22,6 +22,6 @@ object MultiSelectorAtom {
     
     inline def setSelectors(value: js.Array[SubjectSelector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    inline def setSelectorsVarargs(value: SubjectSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: SubjectSelector*): Self = StObject.set(x, "selectors", js.Array(value*))
   }
 }

@@ -96,7 +96,7 @@ object utilsMod {
     *
     * @param defaultOptions used to override or add existing defaultOptions.
     */
-  class OTP[T /* <: OTPOptions */] () extends StObject {
+  open class OTP[T /* <: OTPOptions */] () extends StObject {
     def this(defaultOptions: Partial[T]) = this()
     
     /**
@@ -259,7 +259,7 @@ object utilsMod {
     }
   }
   
-  type OTPOptions = StringDictionary[js.Any]
+  type OTPOptions = StringDictionary[Any]
   
   type SecretKey = String
 }

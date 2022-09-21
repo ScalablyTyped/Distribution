@@ -34,7 +34,7 @@ object DescribeCommandsRequest {
     
     inline def setCommandIdsUndefined: Self = StObject.set(x, "CommandIds", js.undefined)
     
-    inline def setCommandIdsVarargs(value: String*): Self = StObject.set(x, "CommandIds", js.Array(value :_*))
+    inline def setCommandIdsVarargs(value: String*): Self = StObject.set(x, "CommandIds", js.Array(value*))
     
     inline def setDeploymentId(value: String): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
     

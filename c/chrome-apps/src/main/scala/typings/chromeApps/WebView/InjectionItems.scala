@@ -14,7 +14,7 @@ trait InjectionItems extends StObject {
     * The list of JavaScript or CSS files to be injected into matching pages.
     * These are injected in the order they appear in this array.
     */
-  var files: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var files: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object InjectionItems {
   
@@ -29,10 +29,10 @@ object InjectionItems {
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    inline def setFiles(value: js.Array[js.Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: js.Any*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: Any*): Self = StObject.set(x, "files", js.Array(value*))
   }
 }

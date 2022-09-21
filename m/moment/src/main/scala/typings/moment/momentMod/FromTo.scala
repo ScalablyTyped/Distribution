@@ -27,7 +27,7 @@ object FromTo {
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    inline def setFromVarargs(value: (Double | String)*): Self = StObject.set(x, "from", js.Array(value :_*))
+    inline def setFromVarargs(value: (Double | String)*): Self = StObject.set(x, "from", js.Array(value*))
     
     inline def setTo(value: MomentInput): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
@@ -35,6 +35,6 @@ object FromTo {
     
     inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
-    inline def setToVarargs(value: (Double | String)*): Self = StObject.set(x, "to", js.Array(value :_*))
+    inline def setToVarargs(value: (Double | String)*): Self = StObject.set(x, "to", js.Array(value*))
   }
 }

@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.GameObjects
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,16 +27,24 @@ trait Ellipse
      with Shape {
   
   /**
+    * Sets the size of the ellipse by changing the underlying geometry data, rather than scaling the object.
+    * This call can be chained.
+    * @param width The width of the ellipse.
+    * @param height The height of the ellipse.
+    */
+  def setSize(width: Double, height: Double): this.type = js.native
+  
+  /**
     * Sets the smoothness of the ellipse. The number of points used when rendering it.
     * Increase this value for a smoother ellipse, at the cost of more polygons being rendered.
     * This call can be chained.
     * @param value The value to set the smoothness to.
     */
-  def setSmoothness(value: integer): this.type = js.native
+  def setSmoothness(value: Double): this.type = js.native
   
   /**
     * The smoothness of the ellipse. The number of points used when rendering it.
     * Increase this value for a smoother ellipse, at the cost of more polygons being rendered.
     */
-  var smoothness: integer = js.native
+  var smoothness: Double = js.native
 }

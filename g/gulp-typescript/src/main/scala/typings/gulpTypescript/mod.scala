@@ -31,7 +31,7 @@ object mod {
   inline def createProject(tsConfigFileName: String): Project = ^.asInstanceOf[js.Dynamic].applyDynamic("createProject")(tsConfigFileName.asInstanceOf[js.Any]).asInstanceOf[Project]
   inline def createProject(tsConfigFileName: String, settings: Settings): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("createProject")(tsConfigFileName.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Project]
   
-  inline def filter(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def filter(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   object reporter {
     
@@ -59,7 +59,7 @@ object mod {
   
   trait Settings
     extends StObject
-       with /* name */ StringDictionary[js.Any] {
+       with /* name */ StringDictionary[Any] {
     
     var allowNonTsExtensions: js.UndefOr[Boolean] = js.undefined
     
@@ -113,7 +113,7 @@ object mod {
     
     var rootDir: js.UndefOr[String] = js.undefined
     
-    var rootDirs: js.UndefOr[js.Any] = js.undefined
+    var rootDirs: js.UndefOr[Any] = js.undefined
     
     var sortOutput: js.UndefOr[Boolean] = js.undefined
     
@@ -176,7 +176,7 @@ object mod {
       
       inline def setLibUndefined: Self = StObject.set(x, "lib", js.undefined)
       
-      inline def setLibVarargs(value: String*): Self = StObject.set(x, "lib", js.Array(value :_*))
+      inline def setLibVarargs(value: String*): Self = StObject.set(x, "lib", js.Array(value*))
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -242,7 +242,7 @@ object mod {
       
       inline def setRootDirUndefined: Self = StObject.set(x, "rootDir", js.undefined)
       
-      inline def setRootDirs(value: js.Any): Self = StObject.set(x, "rootDirs", value.asInstanceOf[js.Any])
+      inline def setRootDirs(value: Any): Self = StObject.set(x, "rootDirs", value.asInstanceOf[js.Any])
       
       inline def setRootDirsUndefined: Self = StObject.set(x, "rootDirs", js.undefined)
       

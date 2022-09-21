@@ -1,25 +1,33 @@
 package typings.invityApi.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.invityApi.invityApiStrings.NONE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BuyTradeQuoteResponse = js.Array[typings.invityApi.mod.BuyTrade]
+type BuyTradeQuoteResponse = js.Array[BuyTrade]
 
-type ExchangeCoinListResponse = js.Array[typings.invityApi.mod.ExchangeCoinInfo]
+type ExchangeCoinListResponse = js.Array[ExchangeCoinInfo]
 
 /* Rewritten from type alias, can be one of: 
   - scala.Double
   - typings.invityApi.invityApiStrings.INCLUDED
   - typings.invityApi.invityApiStrings.UNKNOWN
 */
-type ExchangeFee = typings.invityApi.mod._ExchangeFee | scala.Double
+type ExchangeFee = _ExchangeFee | Double
 
-type ExchangeListResponse = js.Array[typings.invityApi.mod.ExchangeProviderInfo]
+type ExchangeListResponse = js.Array[ExchangeProviderInfo]
 
-type ExchangeMaximum = scala.Double | typings.invityApi.invityApiStrings.NONE
+type ExchangeMaximum = Double | NONE
 
-type ExchangeTradeQuoteResponse = js.Array[typings.invityApi.mod.ExchangeTrade]
+type ExchangeTradeQuoteResponse = js.Array[ExchangeTrade]
 
-type StringMap = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type SellFiatTradeQuoteResponse = js.Array[SellFiatTrade]
+
+type SellVoucherTradeQuoteResponse = js.Array[SellVoucherTrade]
+
+type SpendTrade = SellVoucherTrade
+
+type StringMap = StringDictionary[String]

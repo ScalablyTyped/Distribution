@@ -35,7 +35,7 @@ object XLinguServiceManager2 {
     getHyphenator: () => XHyphenator,
     getSpellChecker: () => XSpellChecker,
     getThesaurus: () => XThesaurus,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     removeLinguServiceManagerListener: XEventListener => Boolean,

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typedoc", "ArgumentsReader")
 @js.native
-class ArgumentsReader protected ()
-  extends typings.typedoc.optionsMod.ArgumentsReader {
+open class ArgumentsReader protected ()
+  extends typings.typedoc.libUtilsMod.ArgumentsReader {
   def this(priority: Double) = this()
   def this(priority: Double, args: js.Array[String]) = this()
 }

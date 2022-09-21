@@ -89,7 +89,6 @@ import typings.jqueryui.jqueryuiStrings.toArray
 import typings.jqueryui.jqueryuiStrings.value
 import typings.jqueryui.jqueryuiStrings.values
 import typings.jqueryui.jqueryuiStrings.widget
-import typings.std.Date
 import typings.std.Element
 import typings.std.MouseEvent
 import typings.std.ThisType
@@ -102,9 +101,9 @@ trait JQuery extends StObject {
   
   def accordion(): JQuery = js.native
   def accordion(methodName: String): JQuery = js.native
-  def accordion(optionLiteral: String, optionName: String): js.Any = js.native
-  def accordion(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def accordion(optionLiteral: String, options: AccordionOptions): js.Any = js.native
+  def accordion(optionLiteral: String, optionName: String): Any = js.native
+  def accordion(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def accordion(optionLiteral: String, options: AccordionOptions): Any = js.native
   def accordion(options: AccordionOptions): JQuery = js.native
   @JSName("accordion")
   def accordion_destroy(methodName: destroy): Unit = js.native
@@ -117,27 +116,27 @@ trait JQuery extends StObject {
   @JSName("accordion")
   def accordion_widget(methodName: widget): JQuery = js.native
   
-  def addClass(classNames: String): JQuery = js.native
-  def addClass(classNames: String, speed: String): JQuery = js.native
-  def addClass(classNames: String, speed: String, callback: js.Function): JQuery = js.native
-  def addClass(classNames: String, speed: String, easing: String): JQuery = js.native
-  def addClass(classNames: String, speed: String, easing: String, callback: js.Function): JQuery = js.native
-  def addClass(classNames: String, speed: String, easing: Unit, callback: js.Function): JQuery = js.native
-  def addClass(classNames: String, speed: Double): JQuery = js.native
-  def addClass(classNames: String, speed: Double, callback: js.Function): JQuery = js.native
-  def addClass(classNames: String, speed: Double, easing: String): JQuery = js.native
-  def addClass(classNames: String, speed: Double, easing: String, callback: js.Function): JQuery = js.native
-  def addClass(classNames: String, speed: Double, easing: Unit, callback: js.Function): JQuery = js.native
-  def addClass(classNames: String, speed: Unit, callback: js.Function): JQuery = js.native
-  def addClass(classNames: String, speed: Unit, easing: String): JQuery = js.native
-  def addClass(classNames: String, speed: Unit, easing: String, callback: js.Function): JQuery = js.native
-  def addClass(classNames: String, speed: Unit, easing: Unit, callback: js.Function): JQuery = js.native
+  def addClass(classNames: String): this.type = js.native
+  def addClass(classNames: String, speed: String): this.type = js.native
+  def addClass(classNames: String, speed: String, callback: js.Function): this.type = js.native
+  def addClass(classNames: String, speed: String, easing: String): this.type = js.native
+  def addClass(classNames: String, speed: String, easing: String, callback: js.Function): this.type = js.native
+  def addClass(classNames: String, speed: String, easing: Unit, callback: js.Function): this.type = js.native
+  def addClass(classNames: String, speed: Double): this.type = js.native
+  def addClass(classNames: String, speed: Double, callback: js.Function): this.type = js.native
+  def addClass(classNames: String, speed: Double, easing: String): this.type = js.native
+  def addClass(classNames: String, speed: Double, easing: String, callback: js.Function): this.type = js.native
+  def addClass(classNames: String, speed: Double, easing: Unit, callback: js.Function): this.type = js.native
+  def addClass(classNames: String, speed: Unit, callback: js.Function): this.type = js.native
+  def addClass(classNames: String, speed: Unit, easing: String): this.type = js.native
+  def addClass(classNames: String, speed: Unit, easing: String, callback: js.Function): this.type = js.native
+  def addClass(classNames: String, speed: Unit, easing: Unit, callback: js.Function): this.type = js.native
   
   def autocomplete(): JQuery = js.native
   def autocomplete(methodName: String): JQuery = js.native
-  def autocomplete(optionLiteral: String, optionName: String): js.Any = js.native
-  def autocomplete(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def autocomplete(optionLiteral: String, options: AutocompleteOptions): js.Any = js.native
+  def autocomplete(optionLiteral: String, optionName: String): Any = js.native
+  def autocomplete(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def autocomplete(optionLiteral: String, options: AutocompleteOptions): Any = js.native
   def autocomplete(options: AutocompleteOptions): JQuery = js.native
   @JSName("autocomplete")
   def autocomplete_close(methodName: close): Unit = js.native
@@ -156,9 +155,9 @@ trait JQuery extends StObject {
   
   def button(): JQuery = js.native
   def button(methodName: String): JQuery = js.native
-  def button(optionLiteral: String, optionName: String): js.Any = js.native
-  def button(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def button(optionLiteral: String, options: ButtonOptions): js.Any = js.native
+  def button(optionLiteral: String, optionName: String): Any = js.native
+  def button(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def button(optionLiteral: String, options: ButtonOptions): Any = js.native
   def button(options: ButtonOptions): JQuery = js.native
   @JSName("button")
   def button_destroy(methodName: destroy): Unit = js.native
@@ -173,9 +172,9 @@ trait JQuery extends StObject {
   
   def buttonset(): JQuery = js.native
   def buttonset(methodName: String): JQuery = js.native
-  def buttonset(optionLiteral: String, optionName: String): js.Any = js.native
-  def buttonset(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def buttonset(optionLiteral: String, options: ButtonOptions): js.Any = js.native
+  def buttonset(optionLiteral: String, optionName: String): Any = js.native
+  def buttonset(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def buttonset(optionLiteral: String, options: ButtonOptions): Any = js.native
   def buttonset(options: ButtonOptions): JQuery = js.native
   @JSName("buttonset")
   def buttonset_destroy(methodName: destroy): Unit = js.native
@@ -193,14 +192,14 @@ trait JQuery extends StObject {
     */
   def datepicker(): JQuery = js.native
   // Used for getting and setting options
-  def datepicker(methodName: String, otherParams: js.Any*): js.Any = js.native
+  def datepicker(methodName: String, otherParams: Any*): Any = js.native
   /**
     * Get the altField option, after initialization
     *
     * @param methodName 'option'
     * @param optionName 'altField'
     */
-  def datepicker(methodName: option, optionName: altField): js.Any = js.native
+  def datepicker(methodName: option, optionName: altField): Any = js.native
   /**
     * Set the altField option, after initialization
     *
@@ -283,14 +282,14 @@ trait JQuery extends StObject {
     * @param methodName 'option'
     * @param optionName 'beforeShow'
     */
-  def datepicker(methodName: option, optionName: beforeShow): js.Function2[/* input */ Element, /* inst */ js.Any, DatepickerOptions] = js.native
+  def datepicker(methodName: option, optionName: beforeShow): js.Function2[/* input */ Element, /* inst */ Any, DatepickerOptions] = js.native
   /**
     * Get the beforeShow option, after initialization
     *
     * @param methodName 'option'
     * @param optionName 'beforeShowDay'
     */
-  def datepicker(methodName: option, optionName: beforeShowDay): js.Function1[/* date */ Date, js.Array[js.Any]] = js.native
+  def datepicker(methodName: option, optionName: beforeShowDay): js.Function1[/* date */ js.Date, js.Array[Any]] = js.native
   /**
     * Set the beforeShow option, after initialization
     *
@@ -305,7 +304,7 @@ trait JQuery extends StObject {
   def datepicker(
     methodName: option,
     optionName: beforeShowDay,
-    beforeShowDayValue: js.Function1[/* date */ Date, js.Array[js.Any]]
+    beforeShowDayValue: js.Function1[/* date */ js.Date, js.Array[Any]]
   ): JQuery = js.native
   /**
     * Set the beforeShow option, after initialization
@@ -317,7 +316,7 @@ trait JQuery extends StObject {
   def datepicker(
     methodName: option,
     optionName: beforeShow,
-    beforeShowValue: js.Function2[/* input */ Element, /* inst */ js.Any, DatepickerOptions]
+    beforeShowValue: js.Function2[/* input */ Element, /* inst */ Any, DatepickerOptions]
   ): JQuery = js.native
   /**
     * Get the buttonImage option, after initialization
@@ -370,7 +369,7 @@ trait JQuery extends StObject {
     * @param methodName 'option'
     * @param optionName 'calculateWeek'
     */
-  def datepicker(methodName: option, optionName: calculateWeek): js.Function1[/* date */ Date, String] = js.native
+  def datepicker(methodName: option, optionName: calculateWeek): js.Function1[/* date */ js.Date, String] = js.native
   /**
     * Set the calculateWeek option, after initialization
     *
@@ -381,7 +380,7 @@ trait JQuery extends StObject {
   def datepicker(
     methodName: option,
     optionName: calculateWeek,
-    calculateWeekValue: js.Function1[/* date */ Date, String]
+    calculateWeekValue: js.Function1[/* date */ js.Date, String]
   ): JQuery = js.native
   /**
     * Get the changeMonth option, after initialization
@@ -524,7 +523,7 @@ trait JQuery extends StObject {
     * @param methodName 'option'
     * @param optionName 'defaultDate'
     */
-  def datepicker(methodName: option, optionName: defaultDate): js.Any = js.native
+  def datepicker(methodName: option, optionName: defaultDate): Any = js.native
   /**
     * Set the defaultDate option, after initialization
     *
@@ -538,17 +537,17 @@ trait JQuery extends StObject {
     *
     * @param methodName 'option'
     * @param optionName 'defaultDate'
-    * @param defaultDateValue A number of days from today. For example 2 represents two days from today and -1 represents yesterday.
+    * @param defaultDateValue A date object containing the default date.
     */
-  def datepicker(methodName: option, optionName: defaultDate, defaultDateValue: Double): JQuery = js.native
+  def datepicker(methodName: option, optionName: defaultDate, defaultDateValue: js.Date): JQuery = js.native
   /**
     * Set the defaultDate option, after initialization
     *
     * @param methodName 'option'
     * @param optionName 'defaultDate'
-    * @param defaultDateValue A date object containing the default date.
+    * @param defaultDateValue A number of days from today. For example 2 represents two days from today and -1 represents yesterday.
     */
-  def datepicker(methodName: option, optionName: defaultDate, defaultDateValue: Date): JQuery = js.native
+  def datepicker(methodName: option, optionName: defaultDate, defaultDateValue: Double): JQuery = js.native
   /**
     * Get the duration option, after initialization
     *
@@ -570,7 +569,7 @@ trait JQuery extends StObject {
     * @param methodName 'option'
     * @param optionName 'endDate'
     */
-  def datepicker(methodName: option, optionName: endDate): Date = js.native
+  def datepicker(methodName: option, optionName: endDate): js.Date = js.native
   /**
     * Get the firstDay option, after initialization
     *
@@ -679,25 +678,25 @@ trait JQuery extends StObject {
     * @param pos The position of the top/left of the dialog as [x, y] or a MouseEvent that contains the coordinates. If not specified the dialog is centered on the screen.
     */
   @JSName("datepicker")
-  def datepicker_dialog(methodName: dialog, date: Date): JQuery = js.native
+  def datepicker_dialog(methodName: dialog, date: js.Date): JQuery = js.native
   @JSName("datepicker")
-  def datepicker_dialog(methodName: dialog, date: Date, onSelect: js.Function0[Unit]): JQuery = js.native
+  def datepicker_dialog(methodName: dialog, date: js.Date, onSelect: js.Function0[Unit]): JQuery = js.native
   @JSName("datepicker")
   def datepicker_dialog(
     methodName: dialog,
-    date: Date,
+    date: js.Date,
     onSelect: js.Function0[Unit],
     settings: Unit,
     pos: js.Array[Double]
   ): JQuery = js.native
   @JSName("datepicker")
-  def datepicker_dialog(methodName: dialog, date: Date, onSelect: js.Function0[Unit], settings: Unit, pos: MouseEvent): JQuery = js.native
+  def datepicker_dialog(methodName: dialog, date: js.Date, onSelect: js.Function0[Unit], settings: Unit, pos: MouseEvent): JQuery = js.native
   @JSName("datepicker")
-  def datepicker_dialog(methodName: dialog, date: Date, onSelect: js.Function0[Unit], settings: DatepickerOptions): JQuery = js.native
+  def datepicker_dialog(methodName: dialog, date: js.Date, onSelect: js.Function0[Unit], settings: DatepickerOptions): JQuery = js.native
   @JSName("datepicker")
   def datepicker_dialog(
     methodName: dialog,
-    date: Date,
+    date: js.Date,
     onSelect: js.Function0[Unit],
     settings: DatepickerOptions,
     pos: js.Array[Double]
@@ -705,28 +704,34 @@ trait JQuery extends StObject {
   @JSName("datepicker")
   def datepicker_dialog(
     methodName: dialog,
-    date: Date,
+    date: js.Date,
     onSelect: js.Function0[Unit],
     settings: DatepickerOptions,
     pos: MouseEvent
   ): JQuery = js.native
   @JSName("datepicker")
-  def datepicker_dialog(methodName: dialog, date: Date, onSelect: Unit, settings: Unit, pos: js.Array[Double]): JQuery = js.native
+  def datepicker_dialog(methodName: dialog, date: js.Date, onSelect: Unit, settings: Unit, pos: js.Array[Double]): JQuery = js.native
   @JSName("datepicker")
-  def datepicker_dialog(methodName: dialog, date: Date, onSelect: Unit, settings: Unit, pos: MouseEvent): JQuery = js.native
+  def datepicker_dialog(methodName: dialog, date: js.Date, onSelect: Unit, settings: Unit, pos: MouseEvent): JQuery = js.native
   @JSName("datepicker")
-  def datepicker_dialog(methodName: dialog, date: Date, onSelect: Unit, settings: DatepickerOptions): JQuery = js.native
+  def datepicker_dialog(methodName: dialog, date: js.Date, onSelect: Unit, settings: DatepickerOptions): JQuery = js.native
   @JSName("datepicker")
-  def datepicker_dialog(methodName: dialog, date: Date, onSelect: Unit, settings: DatepickerOptions, pos: js.Array[Double]): JQuery = js.native
+  def datepicker_dialog(
+    methodName: dialog,
+    date: js.Date,
+    onSelect: Unit,
+    settings: DatepickerOptions,
+    pos: js.Array[Double]
+  ): JQuery = js.native
   @JSName("datepicker")
-  def datepicker_dialog(methodName: dialog, date: Date, onSelect: Unit, settings: DatepickerOptions, pos: MouseEvent): JQuery = js.native
+  def datepicker_dialog(methodName: dialog, date: js.Date, onSelect: Unit, settings: DatepickerOptions, pos: MouseEvent): JQuery = js.native
   /**
     * Returns the current date for the datepicker or null if no date has been selected.
     *
     * @param methodName 'getDate'
     */
   @JSName("datepicker")
-  def datepicker_getDate(methodName: getDate): Date = js.native
+  def datepicker_getDate(methodName: getDate): js.Date = js.native
   /**
     * Close a previously opened date picker.
     *
@@ -748,9 +753,9 @@ trait JQuery extends StObject {
     * @param optionName The name of the option to get.
     */
   @JSName("datepicker")
-  def datepicker_option(methodName: option, optionName: String): js.Any = js.native
+  def datepicker_option(methodName: option, optionName: String): Any = js.native
   @JSName("datepicker")
-  def datepicker_option(methodName: option, optionName: String, otherParams: js.Any*): js.Any = js.native
+  def datepicker_option(methodName: option, optionName: String, otherParams: Any*): Any = js.native
   /**
     * Redraw the date picker, after having made some external modifications.
     *
@@ -773,7 +778,7 @@ trait JQuery extends StObject {
     * @param date The new date.
     */
   @JSName("datepicker")
-  def datepicker_setDate(methodName: setDate, date: Date): JQuery = js.native
+  def datepicker_setDate(methodName: setDate, date: js.Date): JQuery = js.native
   /**
     * Open the date picker. If the datepicker is attached to an input, the input must be visible for the datepicker to be shown.
     *
@@ -791,9 +796,9 @@ trait JQuery extends StObject {
   
   def dialog(): JQuery = js.native
   def dialog(methodName: String): JQuery = js.native
-  def dialog(optionLiteral: String, optionName: String): js.Any = js.native
-  def dialog(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def dialog(optionLiteral: String, options: DialogOptions): js.Any = js.native
+  def dialog(optionLiteral: String, optionName: String): Any = js.native
+  def dialog(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def dialog(optionLiteral: String, options: DialogOptions): Any = js.native
   def dialog(options: DialogOptions): JQuery = js.native
   @JSName("dialog")
   def dialog_close(methodName: close): JQuery = js.native
@@ -812,9 +817,9 @@ trait JQuery extends StObject {
   
   def draggable(): JQuery = js.native
   def draggable(methodName: String): JQuery = js.native
-  def draggable(optionLiteral: String, optionName: String): js.Any = js.native
-  def draggable(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def draggable(optionLiteral: String, options: DraggableOptions): js.Any = js.native
+  def draggable(optionLiteral: String, optionName: String): Any = js.native
+  def draggable(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def draggable(optionLiteral: String, options: DraggableOptions): Any = js.native
   def draggable(options: DraggableOptions): JQuery = js.native
   @JSName("draggable")
   def draggable_destroy(methodName: destroy): Unit = js.native
@@ -827,9 +832,9 @@ trait JQuery extends StObject {
   
   def droppable(): JQuery = js.native
   def droppable(methodName: String): JQuery = js.native
-  def droppable(optionLiteral: String, optionName: String): js.Any = js.native
-  def droppable(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def droppable(optionLiteral: String, options: DraggableOptions): js.Any = js.native
+  def droppable(optionLiteral: String, optionName: String): Any = js.native
+  def droppable(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def droppable(optionLiteral: String, options: DraggableOptions): Any = js.native
   def droppable(options: DroppableOptions): JQuery = js.native
   @JSName("droppable")
   def droppable_destroy(methodName: destroy): Unit = js.native
@@ -840,47 +845,47 @@ trait JQuery extends StObject {
   @JSName("droppable")
   def droppable_widget(methodName: widget): JQuery = js.native
   
-  def effect(effect: String): JQuery = js.native
-  def effect(effect: String, options: js.Any): JQuery = js.native
-  def effect(effect: String, options: js.Any, duration: String): JQuery = js.native
-  def effect(effect: String, options: js.Any, duration: String, complete: js.Function): JQuery = js.native
-  def effect(effect: String, options: js.Any, duration: Double): JQuery = js.native
-  def effect(effect: String, options: js.Any, duration: Double, complete: js.Function): JQuery = js.native
-  def effect(effect: String, options: js.Any, duration: Unit, complete: js.Function): JQuery = js.native
-  def effect(effect: String, options: Unit, duration: String): JQuery = js.native
-  def effect(effect: String, options: Unit, duration: String, complete: js.Function): JQuery = js.native
-  def effect(effect: String, options: Unit, duration: Double): JQuery = js.native
-  def effect(effect: String, options: Unit, duration: Double, complete: js.Function): JQuery = js.native
-  def effect(effect: String, options: Unit, duration: Unit, complete: js.Function): JQuery = js.native
-  def effect(options: js.Any): JQuery = js.native
+  def effect(effect: String): this.type = js.native
+  def effect(effect: String, options: Any): this.type = js.native
+  def effect(effect: String, options: Any, duration: String): this.type = js.native
+  def effect(effect: String, options: Any, duration: String, complete: js.Function): this.type = js.native
+  def effect(effect: String, options: Any, duration: Double): this.type = js.native
+  def effect(effect: String, options: Any, duration: Double, complete: js.Function): this.type = js.native
+  def effect(effect: String, options: Any, duration: Unit, complete: js.Function): this.type = js.native
+  def effect(effect: String, options: Unit, duration: String): this.type = js.native
+  def effect(effect: String, options: Unit, duration: String, complete: js.Function): this.type = js.native
+  def effect(effect: String, options: Unit, duration: Double): this.type = js.native
+  def effect(effect: String, options: Unit, duration: Double, complete: js.Function): this.type = js.native
+  def effect(effect: String, options: Unit, duration: Unit, complete: js.Function): this.type = js.native
+  def effect(options: Any): this.type = js.native
   
   def enableSelection(): JQuery = js.native
   
   def focus(delay: Double): JQuery = js.native
   def focus(delay: Double, callback: js.Function): JQuery = js.native
   
-  def hide(effect: String): JQuery = js.native
-  def hide(effect: String, options: js.Any): JQuery = js.native
-  def hide(effect: String, options: js.Any, duration: String): JQuery = js.native
-  def hide(effect: String, options: js.Any, duration: String, complete: js.Function): JQuery = js.native
-  def hide(effect: String, options: js.Any, duration: Double): JQuery = js.native
-  def hide(effect: String, options: js.Any, duration: Double, complete: js.Function): JQuery = js.native
-  def hide(effect: String, options: js.Any, duration: Unit, complete: js.Function): JQuery = js.native
-  def hide(effect: String, options: Unit, duration: String): JQuery = js.native
-  def hide(effect: String, options: Unit, duration: String, complete: js.Function): JQuery = js.native
-  def hide(effect: String, options: Unit, duration: Double): JQuery = js.native
-  def hide(effect: String, options: Unit, duration: Double, complete: js.Function): JQuery = js.native
-  def hide(effect: String, options: Unit, duration: Unit, complete: js.Function): JQuery = js.native
-  def hide(options: js.Any): JQuery = js.native
+  def hide(effect: String): this.type = js.native
+  def hide(effect: String, options: Any): this.type = js.native
+  def hide(effect: String, options: Any, duration: String): this.type = js.native
+  def hide(effect: String, options: Any, duration: String, complete: js.Function): this.type = js.native
+  def hide(effect: String, options: Any, duration: Double): this.type = js.native
+  def hide(effect: String, options: Any, duration: Double, complete: js.Function): this.type = js.native
+  def hide(effect: String, options: Any, duration: Unit, complete: js.Function): this.type = js.native
+  def hide(effect: String, options: Unit, duration: String): this.type = js.native
+  def hide(effect: String, options: Unit, duration: String, complete: js.Function): this.type = js.native
+  def hide(effect: String, options: Unit, duration: Double): this.type = js.native
+  def hide(effect: String, options: Unit, duration: Double, complete: js.Function): this.type = js.native
+  def hide(effect: String, options: Unit, duration: Unit, complete: js.Function): this.type = js.native
+  def hide(options: Any): this.type = js.native
   
   var jQuery: JQueryStatic = js.native
   
   def menu(): JQuery = js.native
   def menu(methodName: String): JQuery = js.native
   def menu(methodName: String, event: JQueryEventObject, item: JQuery): Unit = js.native
-  def menu(optionLiteral: String, optionName: String): js.Any = js.native
-  def menu(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def menu(optionLiteral: String, options: MenuOptions): js.Any = js.native
+  def menu(optionLiteral: String, optionName: String): Any = js.native
+  def menu(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def menu(optionLiteral: String, options: MenuOptions): Any = js.native
   def menu(options: MenuOptions): JQuery = js.native
   @JSName("menu")
   var menu_Original: Call = js.native
@@ -939,9 +944,9 @@ trait JQuery extends StObject {
   
   def progressbar(): JQuery = js.native
   def progressbar(methodName: String): JQuery = js.native
-  def progressbar(optionLiteral: String, optionName: String): js.Any = js.native
-  def progressbar(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def progressbar(optionLiteral: String, options: ProgressbarOptions): js.Any = js.native
+  def progressbar(optionLiteral: String, optionName: String): Any = js.native
+  def progressbar(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def progressbar(optionLiteral: String, options: ProgressbarOptions): Any = js.native
   def progressbar(options: ProgressbarOptions): JQuery = js.native
   @JSName("progressbar")
   def progressbar_destroy(methodName: destroy): Unit = js.native
@@ -952,7 +957,7 @@ trait JQuery extends StObject {
   @JSName("progressbar")
   def progressbar_refresh(methodName: refresh): Unit = js.native
   @JSName("progressbar")
-  def progressbar_value(methodName: value): js.Any = js.native
+  def progressbar_value(methodName: value): Any = js.native
   @JSName("progressbar")
   def progressbar_value(methodName: value, value: Boolean): Unit = js.native
   // number or boolean
@@ -961,29 +966,29 @@ trait JQuery extends StObject {
   @JSName("progressbar")
   def progressbar_widget(methodName: widget): JQuery = js.native
   
-  def removeClass(classNames: String): JQuery = js.native
-  def removeClass(classNames: String, speed: String): JQuery = js.native
-  def removeClass(classNames: String, speed: String, callback: js.Function): JQuery = js.native
-  def removeClass(classNames: String, speed: String, easing: String): JQuery = js.native
-  def removeClass(classNames: String, speed: String, easing: String, callback: js.Function): JQuery = js.native
-  def removeClass(classNames: String, speed: String, easing: Unit, callback: js.Function): JQuery = js.native
-  def removeClass(classNames: String, speed: Double): JQuery = js.native
-  def removeClass(classNames: String, speed: Double, callback: js.Function): JQuery = js.native
-  def removeClass(classNames: String, speed: Double, easing: String): JQuery = js.native
-  def removeClass(classNames: String, speed: Double, easing: String, callback: js.Function): JQuery = js.native
-  def removeClass(classNames: String, speed: Double, easing: Unit, callback: js.Function): JQuery = js.native
-  def removeClass(classNames: String, speed: Unit, callback: js.Function): JQuery = js.native
-  def removeClass(classNames: String, speed: Unit, easing: String): JQuery = js.native
-  def removeClass(classNames: String, speed: Unit, easing: String, callback: js.Function): JQuery = js.native
-  def removeClass(classNames: String, speed: Unit, easing: Unit, callback: js.Function): JQuery = js.native
+  def removeClass(classNames: String): this.type = js.native
+  def removeClass(classNames: String, speed: String): this.type = js.native
+  def removeClass(classNames: String, speed: String, callback: js.Function): this.type = js.native
+  def removeClass(classNames: String, speed: String, easing: String): this.type = js.native
+  def removeClass(classNames: String, speed: String, easing: String, callback: js.Function): this.type = js.native
+  def removeClass(classNames: String, speed: String, easing: Unit, callback: js.Function): this.type = js.native
+  def removeClass(classNames: String, speed: Double): this.type = js.native
+  def removeClass(classNames: String, speed: Double, callback: js.Function): this.type = js.native
+  def removeClass(classNames: String, speed: Double, easing: String): this.type = js.native
+  def removeClass(classNames: String, speed: Double, easing: String, callback: js.Function): this.type = js.native
+  def removeClass(classNames: String, speed: Double, easing: Unit, callback: js.Function): this.type = js.native
+  def removeClass(classNames: String, speed: Unit, callback: js.Function): this.type = js.native
+  def removeClass(classNames: String, speed: Unit, easing: String): this.type = js.native
+  def removeClass(classNames: String, speed: Unit, easing: String, callback: js.Function): this.type = js.native
+  def removeClass(classNames: String, speed: Unit, easing: Unit, callback: js.Function): this.type = js.native
   
   def removeUniqueId(): JQuery = js.native
   
   def resizable(): JQuery = js.native
   def resizable(methodName: String): JQuery = js.native
-  def resizable(optionLiteral: String, optionName: String): js.Any = js.native
-  def resizable(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def resizable(optionLiteral: String, options: ResizableOptions): js.Any = js.native
+  def resizable(optionLiteral: String, optionName: String): Any = js.native
+  def resizable(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def resizable(optionLiteral: String, options: ResizableOptions): Any = js.native
   def resizable(options: ResizableOptions): JQuery = js.native
   @JSName("resizable")
   def resizable_destroy(methodName: destroy): Unit = js.native
@@ -998,9 +1003,9 @@ trait JQuery extends StObject {
   
   def selectable(): JQuery = js.native
   def selectable(methodName: String): JQuery = js.native
-  def selectable(optionLiteral: String, optionName: String): js.Any = js.native
-  def selectable(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def selectable(optionLiteral: String, options: SelectableOptions): js.Any = js.native
+  def selectable(optionLiteral: String, optionName: String): Any = js.native
+  def selectable(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def selectable(optionLiteral: String, options: SelectableOptions): Any = js.native
   def selectable(options: SelectableOptions): JQuery = js.native
   @JSName("selectable")
   def selectable_destroy(methodName: destroy): Unit = js.native
@@ -1013,9 +1018,9 @@ trait JQuery extends StObject {
   
   def selectmenu(): JQuery = js.native
   def selectmenu(methodName: String): JQuery = js.native
-  def selectmenu(optionLiteral: String, optionName: String): js.Any = js.native
-  def selectmenu(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def selectmenu(optionLiteral: String, options: SelectMenuOptions): js.Any = js.native
+  def selectmenu(optionLiteral: String, optionName: String): Any = js.native
+  def selectmenu(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def selectmenu(optionLiteral: String, options: SelectMenuOptions): Any = js.native
   def selectmenu(options: SelectMenuOptions): JQuery = js.native
   @JSName("selectmenu")
   def selectmenu_close(methodName: close): JQuery = js.native
@@ -1026,7 +1031,7 @@ trait JQuery extends StObject {
   @JSName("selectmenu")
   def selectmenu_enable(methodName: enable): JQuery = js.native
   @JSName("selectmenu")
-  def selectmenu_instance(methodName: instance): js.Any = js.native
+  def selectmenu_instance(methodName: instance): Any = js.native
   @JSName("selectmenu")
   def selectmenu_menuWidget(methodName: menuWidget): JQuery = js.native
   @JSName("selectmenu")
@@ -1036,27 +1041,27 @@ trait JQuery extends StObject {
   @JSName("selectmenu")
   def selectmenu_widget(methodName: widget): JQuery = js.native
   
-  def show(effect: String): JQuery = js.native
-  def show(effect: String, options: js.Any): JQuery = js.native
-  def show(effect: String, options: js.Any, duration: String): JQuery = js.native
-  def show(effect: String, options: js.Any, duration: String, complete: js.Function): JQuery = js.native
-  def show(effect: String, options: js.Any, duration: Double): JQuery = js.native
-  def show(effect: String, options: js.Any, duration: Double, complete: js.Function): JQuery = js.native
-  def show(effect: String, options: js.Any, duration: Unit, complete: js.Function): JQuery = js.native
-  def show(effect: String, options: Unit, duration: String): JQuery = js.native
-  def show(effect: String, options: Unit, duration: String, complete: js.Function): JQuery = js.native
-  def show(effect: String, options: Unit, duration: Double): JQuery = js.native
-  def show(effect: String, options: Unit, duration: Double, complete: js.Function): JQuery = js.native
-  def show(effect: String, options: Unit, duration: Unit, complete: js.Function): JQuery = js.native
-  def show(options: js.Any): JQuery = js.native
+  def show(effect: String): this.type = js.native
+  def show(effect: String, options: Any): this.type = js.native
+  def show(effect: String, options: Any, duration: String): this.type = js.native
+  def show(effect: String, options: Any, duration: String, complete: js.Function): this.type = js.native
+  def show(effect: String, options: Any, duration: Double): this.type = js.native
+  def show(effect: String, options: Any, duration: Double, complete: js.Function): this.type = js.native
+  def show(effect: String, options: Any, duration: Unit, complete: js.Function): this.type = js.native
+  def show(effect: String, options: Unit, duration: String): this.type = js.native
+  def show(effect: String, options: Unit, duration: String, complete: js.Function): this.type = js.native
+  def show(effect: String, options: Unit, duration: Double): this.type = js.native
+  def show(effect: String, options: Unit, duration: Double, complete: js.Function): this.type = js.native
+  def show(effect: String, options: Unit, duration: Unit, complete: js.Function): this.type = js.native
+  def show(options: Any): this.type = js.native
   
   def slider(): JQuery = js.native
   def slider(methodName: String): JQuery = js.native
   def slider(methodName: String, index: Double, value: Double): Unit = js.native
   def slider(methodName: String, values: js.Array[Double]): Unit = js.native
-  def slider(optionLiteral: String, optionName: String): js.Any = js.native
-  def slider(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def slider(optionLiteral: String, options: SliderOptions): js.Any = js.native
+  def slider(optionLiteral: String, optionName: String): Any = js.native
+  def slider(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def slider(optionLiteral: String, options: SliderOptions): Any = js.native
   def slider(options: SliderOptions): JQuery = js.native
   @JSName("slider")
   def slider_destroy(methodName: destroy): Unit = js.native
@@ -1083,9 +1088,9 @@ trait JQuery extends StObject {
   
   def sortable(): JQuery = js.native
   def sortable(methodName: String): JQuery = js.native
-  def sortable(optionLiteral: String, optionName: String): js.Any = js.native
-  def sortable(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def sortable(optionLiteral: String, options: SortableOptions): js.Any = js.native
+  def sortable(optionLiteral: String, optionName: String): Any = js.native
+  def sortable(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def sortable(optionLiteral: String, options: SortableOptions): Any = js.native
   def sortable(options: SortableOptions): JQuery = js.native
   @JSName("sortable")
   def sortable_destroy(methodName: destroy): Unit = js.native
@@ -1106,9 +1111,9 @@ trait JQuery extends StObject {
   
   def spinner(): JQuery = js.native
   def spinner(methodName: String): JQuery = js.native
-  def spinner(optionLiteral: String, optionName: String): js.Any = js.native
-  def spinner(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def spinner(optionLiteral: String, options: SpinnerOptions): js.Any = js.native
+  def spinner(optionLiteral: String, optionName: String): Any = js.native
+  def spinner(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def spinner(optionLiteral: String, options: SpinnerOptions): Any = js.native
   def spinner(options: SpinnerOptions): JQuery = js.native
   @JSName("spinner")
   def spinner_destroy(methodName: destroy): Unit = js.native
@@ -1139,54 +1144,54 @@ trait JQuery extends StObject {
   @JSName("spinner")
   def spinner_widget(methodName: widget): JQuery = js.native
   
-  def switchClass(removeClassName: String, addClassName: String): JQuery = js.native
-  def switchClass(removeClassName: String, addClassName: String, duration: String): JQuery = js.native
-  def switchClass(removeClassName: String, addClassName: String, duration: String, easing: String): JQuery = js.native
+  def switchClass(removeClassName: String, addClassName: String): this.type = js.native
+  def switchClass(removeClassName: String, addClassName: String, duration: String): this.type = js.native
+  def switchClass(removeClassName: String, addClassName: String, duration: String, easing: String): this.type = js.native
   def switchClass(
     removeClassName: String,
     addClassName: String,
     duration: String,
     easing: String,
     complete: js.Function
-  ): JQuery = js.native
+  ): this.type = js.native
   def switchClass(
     removeClassName: String,
     addClassName: String,
     duration: String,
     easing: Unit,
     complete: js.Function
-  ): JQuery = js.native
-  def switchClass(removeClassName: String, addClassName: String, duration: Double): JQuery = js.native
-  def switchClass(removeClassName: String, addClassName: String, duration: Double, easing: String): JQuery = js.native
+  ): this.type = js.native
+  def switchClass(removeClassName: String, addClassName: String, duration: Double): this.type = js.native
+  def switchClass(removeClassName: String, addClassName: String, duration: Double, easing: String): this.type = js.native
   def switchClass(
     removeClassName: String,
     addClassName: String,
     duration: Double,
     easing: String,
     complete: js.Function
-  ): JQuery = js.native
+  ): this.type = js.native
   def switchClass(
     removeClassName: String,
     addClassName: String,
     duration: Double,
     easing: Unit,
     complete: js.Function
-  ): JQuery = js.native
-  def switchClass(removeClassName: String, addClassName: String, duration: Unit, easing: String): JQuery = js.native
+  ): this.type = js.native
+  def switchClass(removeClassName: String, addClassName: String, duration: Unit, easing: String): this.type = js.native
   def switchClass(
     removeClassName: String,
     addClassName: String,
     duration: Unit,
     easing: String,
     complete: js.Function
-  ): JQuery = js.native
-  def switchClass(removeClassName: String, addClassName: String, duration: Unit, easing: Unit, complete: js.Function): JQuery = js.native
+  ): this.type = js.native
+  def switchClass(removeClassName: String, addClassName: String, duration: Unit, easing: Unit, complete: js.Function): this.type = js.native
   
   def tabs(): JQuery = js.native
   def tabs(methodName: String): JQuery = js.native
-  def tabs(optionLiteral: String, optionName: String): js.Any = js.native
-  def tabs(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def tabs(optionLiteral: String, options: TabsOptions): js.Any = js.native
+  def tabs(optionLiteral: String, optionName: String): Any = js.native
+  def tabs(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def tabs(optionLiteral: String, options: TabsOptions): Any = js.native
   def tabs(options: TabsOptions): JQuery = js.native
   @JSName("tabs")
   def tabs_destroy(methodName: destroy): Unit = js.native
@@ -1207,60 +1212,60 @@ trait JQuery extends StObject {
   @JSName("tabs")
   def tabs_widget(methodName: widget): JQuery = js.native
   
-  def toggle(effect: String): JQuery = js.native
-  def toggle(effect: String, options: js.Any): JQuery = js.native
-  def toggle(effect: String, options: js.Any, duration: String): JQuery = js.native
-  def toggle(effect: String, options: js.Any, duration: String, complete: js.Function): JQuery = js.native
-  def toggle(effect: String, options: js.Any, duration: Double): JQuery = js.native
-  def toggle(effect: String, options: js.Any, duration: Double, complete: js.Function): JQuery = js.native
-  def toggle(effect: String, options: js.Any, duration: Unit, complete: js.Function): JQuery = js.native
-  def toggle(effect: String, options: Unit, duration: String): JQuery = js.native
-  def toggle(effect: String, options: Unit, duration: String, complete: js.Function): JQuery = js.native
-  def toggle(effect: String, options: Unit, duration: Double): JQuery = js.native
-  def toggle(effect: String, options: Unit, duration: Double, complete: js.Function): JQuery = js.native
-  def toggle(effect: String, options: Unit, duration: Unit, complete: js.Function): JQuery = js.native
-  def toggle(options: js.Any): JQuery = js.native
+  def toggle(effect: String): this.type = js.native
+  def toggle(effect: String, options: Any): this.type = js.native
+  def toggle(effect: String, options: Any, duration: String): this.type = js.native
+  def toggle(effect: String, options: Any, duration: String, complete: js.Function): this.type = js.native
+  def toggle(effect: String, options: Any, duration: Double): this.type = js.native
+  def toggle(effect: String, options: Any, duration: Double, complete: js.Function): this.type = js.native
+  def toggle(effect: String, options: Any, duration: Unit, complete: js.Function): this.type = js.native
+  def toggle(effect: String, options: Unit, duration: String): this.type = js.native
+  def toggle(effect: String, options: Unit, duration: String, complete: js.Function): this.type = js.native
+  def toggle(effect: String, options: Unit, duration: Double): this.type = js.native
+  def toggle(effect: String, options: Unit, duration: Double, complete: js.Function): this.type = js.native
+  def toggle(effect: String, options: Unit, duration: Unit, complete: js.Function): this.type = js.native
+  def toggle(options: Any): this.type = js.native
   
-  def toggleClass(className: String): JQuery = js.native
-  def toggleClass(className: String, aswitch: Boolean): JQuery = js.native
-  def toggleClass(className: String, aswitch: Boolean, duration: String): JQuery = js.native
-  def toggleClass(className: String, aswitch: Boolean, duration: String, easing: String): JQuery = js.native
-  def toggleClass(className: String, aswitch: Boolean, duration: String, easing: String, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, aswitch: Boolean, duration: String, easing: Unit, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, aswitch: Boolean, duration: Double): JQuery = js.native
-  def toggleClass(className: String, aswitch: Boolean, duration: Double, easing: String): JQuery = js.native
-  def toggleClass(className: String, aswitch: Boolean, duration: Double, easing: String, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, aswitch: Boolean, duration: Double, easing: Unit, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, aswitch: Boolean, duration: Unit, easing: String): JQuery = js.native
-  def toggleClass(className: String, aswitch: Boolean, duration: Unit, easing: String, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, aswitch: Boolean, duration: Unit, easing: Unit, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, aswitch: Unit, duration: String, easing: String): JQuery = js.native
-  def toggleClass(className: String, aswitch: Unit, duration: String, easing: String, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, aswitch: Unit, duration: String, easing: Unit, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, aswitch: Unit, duration: Double): JQuery = js.native
-  def toggleClass(className: String, aswitch: Unit, duration: Double, easing: String): JQuery = js.native
-  def toggleClass(className: String, aswitch: Unit, duration: Double, easing: String, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, aswitch: Unit, duration: Double, easing: Unit, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, aswitch: Unit, duration: Unit, easing: String): JQuery = js.native
-  def toggleClass(className: String, aswitch: Unit, duration: Unit, easing: String, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, aswitch: Unit, duration: Unit, easing: Unit, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, duration: String): JQuery = js.native
-  def toggleClass(className: String, duration: String, easing: String): JQuery = js.native
-  def toggleClass(className: String, duration: String, easing: String, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, duration: String, easing: Unit, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, duration: Double): JQuery = js.native
-  def toggleClass(className: String, duration: Double, easing: String): JQuery = js.native
-  def toggleClass(className: String, duration: Double, easing: String, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, duration: Double, easing: Unit, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, duration: Unit, easing: String): JQuery = js.native
-  def toggleClass(className: String, duration: Unit, easing: String, complete: js.Function): JQuery = js.native
-  def toggleClass(className: String, duration: Unit, easing: Unit, complete: js.Function): JQuery = js.native
+  def toggleClass(className: String): this.type = js.native
+  def toggleClass(className: String, aswitch: Boolean): this.type = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: String): this.type = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: String, easing: String): this.type = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: String, easing: String, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: String, easing: Unit, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: Double): this.type = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: Double, easing: String): this.type = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: Double, easing: String, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: Double, easing: Unit, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: Unit, easing: String): this.type = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: Unit, easing: String, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, aswitch: Boolean, duration: Unit, easing: Unit, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: String, easing: String): this.type = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: String, easing: String, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: String, easing: Unit, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: Double): this.type = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: Double, easing: String): this.type = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: Double, easing: String, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: Double, easing: Unit, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: Unit, easing: String): this.type = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: Unit, easing: String, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, aswitch: Unit, duration: Unit, easing: Unit, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, duration: String): this.type = js.native
+  def toggleClass(className: String, duration: String, easing: String): this.type = js.native
+  def toggleClass(className: String, duration: String, easing: String, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, duration: String, easing: Unit, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, duration: Double): this.type = js.native
+  def toggleClass(className: String, duration: Double, easing: String): this.type = js.native
+  def toggleClass(className: String, duration: Double, easing: String, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, duration: Double, easing: Unit, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, duration: Unit, easing: String): this.type = js.native
+  def toggleClass(className: String, duration: Unit, easing: String, complete: js.Function): this.type = js.native
+  def toggleClass(className: String, duration: Unit, easing: Unit, complete: js.Function): this.type = js.native
   
   def tooltip(): JQuery = js.native
   def tooltip(methodName: String): JQuery = js.native
-  def tooltip(optionLiteral: String, optionName: String): js.Any = js.native
-  def tooltip(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def tooltip(optionLiteral: String, options: TooltipOptions): js.Any = js.native
+  def tooltip(optionLiteral: String, optionName: String): Any = js.native
+  def tooltip(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def tooltip(optionLiteral: String, options: TooltipOptions): Any = js.native
   def tooltip(options: TooltipOptions): JQuery = js.native
   @JSName("tooltip")
   def tooltip_close(methodName: close): Unit = js.native
@@ -1278,9 +1283,9 @@ trait JQuery extends StObject {
   def uniqueId(): JQuery = js.native
   
   def widget(methodName: String): JQuery = js.native
-  def widget(optionLiteral: String, optionName: String): js.Any = js.native
-  def widget(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery = js.native
-  def widget(optionLiteral: String, options: WidgetOptions): js.Any = js.native
+  def widget(optionLiteral: String, optionName: String): Any = js.native
+  def widget(optionLiteral: String, optionName: String, optionValue: Any): JQuery = js.native
+  def widget(optionLiteral: String, options: WidgetOptions): Any = js.native
   def widget(options: AccordionOptions): JQuery = js.native
   def widget(options: WidgetOptions): JQuery = js.native
   def widget[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native

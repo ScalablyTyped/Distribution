@@ -10,9 +10,9 @@ object defaultIfEmptyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def defaultIfEmpty[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")().asInstanceOf[js.Any]
-  inline def defaultIfEmpty[T](defaultValue: T): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def defaultIfEmpty[T](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")().asInstanceOf[Any]
+  inline def defaultIfEmpty[T](defaultValue: T): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def defaultIfEmpty_TR[T, R](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")().asInstanceOf[js.Any]
-  inline def defaultIfEmpty_TR[T, R](defaultValue: R): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def defaultIfEmpty_TR[T, R](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")().asInstanceOf[Any]
+  inline def defaultIfEmpty_TR[T, R](defaultValue: R): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultIfEmpty")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

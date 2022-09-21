@@ -16,11 +16,11 @@ trait SparklineValueAxisItemLabels extends StObject {
   
   var format: js.UndefOr[String] = js.undefined
   
-  var margin: js.UndefOr[Double | js.Any] = js.undefined
+  var margin: js.UndefOr[Double | Any] = js.undefined
   
   var mirror: js.UndefOr[Boolean] = js.undefined
   
-  var padding: js.UndefOr[Double | js.Any] = js.undefined
+  var padding: js.UndefOr[Double | Any] = js.undefined
   
   var rotation: js.UndefOr[Double] = js.undefined
   
@@ -61,7 +61,7 @@ object SparklineValueAxisItemLabels {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setMargin(value: Double | js.Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Double | Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
@@ -69,7 +69,7 @@ object SparklineValueAxisItemLabels {
     
     inline def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
     
-    inline def setPadding(value: Double | js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     

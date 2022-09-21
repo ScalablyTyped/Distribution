@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-input-mask
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Masked input component for React
@@ -10,10 +10,10 @@ Masked input component for React
 | ------------------ | :-------------: |
 | Full name          | react-input-mask |
 | Keywords           | react, input, mask, masked, react-component |
-| # releases         | 4 |
-| # dependents       | 224 |
-| # downloads        | 8555646 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1908703.6666666667 |
+| # stars            | 1954.0 |
 
 ## Links
 - [Homepage](https://github.com/sanniassin/react-input-mask)

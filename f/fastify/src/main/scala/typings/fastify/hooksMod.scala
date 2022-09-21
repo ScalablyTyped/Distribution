@@ -2,16 +2,22 @@ package typings.fastify
 
 import typings.fastify.anon.Path
 import typings.fastify.instanceMod.FastifyInstance
+import typings.fastify.loggerMod.FastifyBaseLogger
+import typings.fastify.pluginMod.FastifyPluginOptions
+import typings.fastify.registerMod.RegisterOptions
 import typings.fastify.replyMod.FastifyReply
 import typings.fastify.requestMod.FastifyRequest
 import typings.fastify.routeMod.RouteGenericInterface
 import typings.fastify.routeMod.RouteOptions
+import typings.fastify.schemaMod.FastifySchema
+import typings.fastify.typeProviderMod.FastifyTypeProvider
+import typings.fastify.typeProviderMod.ResolveFastifyReplyType
+import typings.fastify.typeProviderMod.ResolveFastifyRequestType
 import typings.fastify.utilsMod.RawReplyDefaultExpression
 import typings.fastify.utilsMod.RawRequestDefaultExpression
 import typings.fastify.utilsMod.RawServerBase
 import typings.fastifyError.mod.FastifyError
 import typings.node.streamMod.Readable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,8 +29,8 @@ object hooksMod {
   trait DoneFuncWithErrOrRes extends StObject {
     
     def apply(): Unit = js.native
-    def apply(err: Null, res: js.Any): Unit = js.native
-    def apply[TError /* <: Error */](err: TError): Unit = js.native
+    def apply(err: Null, res: Any): Unit = js.native
+    def apply[TError /* <: js.Error */](err: TError): Unit = js.native
   }
   
   type HookHandlerDoneFunction = js.Function1[/* err */ js.UndefOr[FastifyError], Unit]
@@ -35,119 +41,408 @@ object hooksMod {
     var receivedEncodedLength: js.UndefOr[Double] = js.native
   }
   
-  type onCloseHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, Logger] = js.Function2[
-    /* instance */ FastifyInstance[RawServer, RawRequest, RawReply, Logger], 
+  type onCloseAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */] = js.Function1[
+    /* instance */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    js.Promise[Any]
+  ]
+  
+  type onCloseHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */] = js.Function2[
+    /* instance */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
     /* done */ HookHandlerDoneFunction, 
-    js.Promise[js.Any] | Unit
+    Unit
   ]
   
-  type onErrorAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, TError /* <: Error */] = js.Function3[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
+  type onErrorAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, TError /* <: js.Error */, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction3[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
     /* error */ TError, 
-    js.Promise[js.Any]
+    js.Promise[Any]
   ]
   
-  type onErrorHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, TError /* <: Error */] = js.Function4[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
+  type onErrorHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, TError /* <: js.Error */, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction4[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
     /* error */ TError, 
     /* done */ js.Function0[Unit], 
     Unit
   ]
   
-  type onReadyAsyncHookHandler = js.Function0[js.Promise[js.Any]]
-  
-  type onReadyHookHandler = js.Function1[/* done */ HookHandlerDoneFunction, Unit]
-  
-  type onRegisterHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, Logger] = js.Function2[
-    /* instance */ FastifyInstance[RawServer, RawRequest, RawReply, Logger], 
-    /* done */ HookHandlerDoneFunction, 
-    js.Promise[js.Any] | Unit
+  type onReadyAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */] = js.ThisFunction0[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    js.Promise[Any]
   ]
   
-  type onRequestAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function2[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
-    js.Promise[js.Any]
-  ]
-  
-  type onRequestHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function3[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
+  type onReadyHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */] = js.ThisFunction1[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
     /* done */ HookHandlerDoneFunction, 
     Unit
   ]
   
-  type onResponseAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function2[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
-    js.Promise[js.Any]
+  type onRegisterHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, Logger /* <: FastifyBaseLogger */, TypeProvider /* <: FastifyTypeProvider */, Options /* <: FastifyPluginOptions */] = js.Function3[
+    /* instance */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* opts */ RegisterOptions & Options, 
+    /* done */ HookHandlerDoneFunction, 
+    js.Promise[Any] | Unit
   ]
   
-  type onResponseHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function3[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
+  type onRequestAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction2[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    js.Promise[Any]
+  ]
+  
+  type onRequestHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction3[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
     /* done */ HookHandlerDoneFunction, 
     Unit
   ]
   
-  type onRouteHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function1[
-    /* opts */ (RouteOptions[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig]) & Path, 
-    js.Promise[js.Any] | Unit
+  type onResponseAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction2[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    js.Promise[Any]
   ]
   
-  type onSendAsyncHookHandler[OnSendPayload, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function3[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
+  type onResponseHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction3[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* done */ HookHandlerDoneFunction, 
+    Unit
+  ]
+  
+  type onRouteHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction1[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* opts */ (RouteOptions[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      FastifyBaseLogger
+    ]) & Path, 
+    js.Promise[Any] | Unit
+  ]
+  
+  type onSendAsyncHookHandler[OnSendPayload, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction3[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
     /* payload */ OnSendPayload, 
-    js.Promise[js.Any]
+    js.Promise[Any]
   ]
   
-  type onSendHookHandler[OnSendPayload, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function4[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
+  type onSendHookHandler[OnSendPayload, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction4[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
     /* payload */ OnSendPayload, 
     /* done */ DoneFuncWithErrOrRes, 
     Unit
   ]
   
-  type onTimeoutAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function2[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
-    js.Promise[js.Any]
+  type onTimeoutAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction2[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    js.Promise[Any]
   ]
   
-  type onTimeoutHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function3[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
+  type onTimeoutHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction3[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
     /* done */ HookHandlerDoneFunction, 
     Unit
   ]
   
-  type preHandlerAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function2[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
-    js.Promise[js.Any]
+  type preHandlerAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction2[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    js.Promise[Any]
   ]
   
-  type preHandlerHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function3[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
+  type preHandlerHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction3[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
     /* done */ HookHandlerDoneFunction, 
     Unit
   ]
   
-  type preParsingAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function3[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
+  type preParsingAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction3[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
     /* payload */ RequestPayload, 
-    js.Promise[RequestPayload | js.Any]
+    js.Promise[RequestPayload | Any]
   ]
   
-  type preParsingHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function4[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
+  type preParsingHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction4[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
     /* payload */ RequestPayload, 
     /* done */ js.Function2[
       /* err */ js.UndefOr[FastifyError | Null], 
@@ -157,30 +452,106 @@ object hooksMod {
     Unit
   ]
   
-  type preSerializationAsyncHookHandler[PreSerializationPayload, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function3[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
+  type preSerializationAsyncHookHandler[PreSerializationPayload, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction3[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
     /* payload */ PreSerializationPayload, 
-    js.Promise[js.Any]
+    js.Promise[Any]
   ]
   
-  type preSerializationHookHandler[PreSerializationPayload, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function4[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
+  type preSerializationHookHandler[PreSerializationPayload, RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction4[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
     /* payload */ PreSerializationPayload, 
     /* done */ DoneFuncWithErrOrRes, 
     Unit
   ]
   
-  type preValidationAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function2[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
-    js.Promise[js.Any]
+  type preValidationAsyncHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction2[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    js.Promise[Any]
   ]
   
-  type preValidationHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig] = js.Function3[
-    /* request */ FastifyRequest[RouteGeneric, RawServer, RawRequest], 
-    /* reply */ FastifyReply[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig], 
+  type preValidationHookHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */, Logger /* <: FastifyBaseLogger */] = js.ThisFunction3[
+    /* this */ FastifyInstance[RawServer, RawRequest, RawReply, Logger, TypeProvider], 
+    /* request */ FastifyRequest[
+      RouteGeneric, 
+      RawServer, 
+      RawRequest, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ContextConfig, 
+      Logger, 
+      ResolveFastifyRequestType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
+    /* reply */ FastifyReply[
+      RawServer, 
+      RawRequest, 
+      RawReply, 
+      RouteGeneric, 
+      ContextConfig, 
+      SchemaCompiler, 
+      TypeProvider, 
+      ResolveFastifyReplyType[TypeProvider, SchemaCompiler, RouteGeneric]
+    ], 
     /* done */ HookHandlerDoneFunction, 
     Unit
   ]

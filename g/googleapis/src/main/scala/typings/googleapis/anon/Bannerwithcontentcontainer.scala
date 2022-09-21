@@ -52,6 +52,6 @@ object Bannerwithcontentcontainer {
     
     inline def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
-    inline def setVolumesVarargs(value: SchemaVolume*): Self = StObject.set(x, "volumes", js.Array(value :_*))
+    inline def setVolumesVarargs(value: SchemaVolume*): Self = StObject.set(x, "volumes", js.Array(value*))
   }
 }

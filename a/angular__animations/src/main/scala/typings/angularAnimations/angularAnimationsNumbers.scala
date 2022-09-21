@@ -1,6 +1,6 @@
 package typings.angularAnimations
 
-import typings.angularAnimations.browserBrowserMod.AnimationTransitionInstructionType
+import typings.angularAnimations.browserMod.AnimationTransitionInstructionType
 import typings.angularAnimations.mod.AnimationMetadataType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

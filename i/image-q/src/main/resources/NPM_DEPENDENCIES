@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "image-q" : "1.1.1"
+      "image-q" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "image-q" : "1.1.1"
+      "image-q" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

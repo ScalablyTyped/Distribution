@@ -18,10 +18,10 @@ object mapPropsStreamMod {
   inline def default[TInner, TOutter](transform: mapper[Subscribable[TOutter], Subscribable[TInner]]): ComponentEnhancer[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(transform.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[TInner, TOutter]]
   
   inline def mapPropsStreamWithConfig(config: ObservableConfig): js.Function1[
-    /* transform */ mapper[Subscribable[js.Any], Subscribable[js.Any]], 
-    ComponentEnhancer[js.Any, js.Any]
+    /* transform */ mapper[Subscribable[Any], Subscribable[Any]], 
+    ComponentEnhancer[Any, Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapPropsStreamWithConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* transform */ mapper[Subscribable[js.Any], Subscribable[js.Any]], 
-    ComponentEnhancer[js.Any, js.Any]
+    /* transform */ mapper[Subscribable[Any], Subscribable[Any]], 
+    ComponentEnhancer[Any, Any]
   ]]
 }

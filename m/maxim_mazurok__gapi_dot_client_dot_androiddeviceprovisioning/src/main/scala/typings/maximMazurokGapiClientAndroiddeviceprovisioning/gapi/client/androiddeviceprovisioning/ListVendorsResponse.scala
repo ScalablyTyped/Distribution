@@ -36,6 +36,6 @@ object ListVendorsResponse {
     
     inline def setVendorsUndefined: Self = StObject.set(x, "vendors", js.undefined)
     
-    inline def setVendorsVarargs(value: Company*): Self = StObject.set(x, "vendors", js.Array(value :_*))
+    inline def setVendorsVarargs(value: Company*): Self = StObject.set(x, "vendors", js.Array(value*))
   }
 }

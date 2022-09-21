@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("video.js", "default.TimeToolTip")
 @js.native
-class TimeToolTipCls protected ()
+open class TimeToolTipCls protected ()
   extends StObject
      with TimeToolTip {
   /**

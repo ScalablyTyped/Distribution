@@ -19,7 +19,7 @@ trait Locals extends StObject {
   /**
     * Get a Variable
     */
-  def get(`type`: String): js.Any = js.native
+  def get(`type`: String): Any = js.native
   @JSName("get")
   def get_categories(`type`: categories): Model[Category] = js.native
   @JSName("get")
@@ -42,12 +42,12 @@ trait Locals extends StObject {
   /**
     * Set a Variable
     */
-  def set(`type`: String, fn: js.Function0[js.Any]): this.type = js.native
+  def set(`type`: String, fn: js.Function0[Any]): this.type = js.native
   
   /**
     * Get All Variable
     */
-  def toObject(): js.Any = js.native
+  def toObject(): Any = js.native
 }
 object Locals {
   
@@ -80,7 +80,7 @@ object Locals {
   
   trait Page
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var comments: Boolean
     
@@ -171,7 +171,7 @@ object Locals {
       
       inline def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
       
-      inline def setPhotosVarargs(value: String*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: String*): Self = StObject.set(x, "photos", js.Array(value*))
       
       inline def setPrev(value: Page): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
@@ -227,7 +227,7 @@ object Locals {
       
       inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
       
-      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
       
@@ -235,7 +235,7 @@ object Locals {
       
       inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   

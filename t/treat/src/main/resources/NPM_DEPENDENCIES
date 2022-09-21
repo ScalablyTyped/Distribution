@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "treat" : "1.6.1"
+      "treat" : "2.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "treat" : "1.6.1"
+      "treat" : "2.0.4"
     }
   ],
   "compile-devDependencies" : [

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeInventoryDeletionsRequest extends StObject {
   
   /**
-    * Specify the delete inventory ID for which you want information. This ID was returned by the DeleteInventory action.
+    * Specify the delete inventory ID for which you want information. This ID was returned by the DeleteInventory operation.
     */
   var DeletionId: js.UndefOr[UUID] = js.undefined
   

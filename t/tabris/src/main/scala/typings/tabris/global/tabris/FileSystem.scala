@@ -6,5 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.FileSystem")
 @js.native
-/* private */ class FileSystem ()
+/**
+  * The `fs` object provides methods to read and write files. All methods are asynchronous and return a
+  * promise.
+  */
+/* private */ open class FileSystem ()
   extends typings.tabris.mod.FileSystem

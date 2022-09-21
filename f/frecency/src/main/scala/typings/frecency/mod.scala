@@ -3,8 +3,8 @@ package typings.frecency
 import typings.frecency.anon.ExactQueryMatchWeight
 import typings.frecency.anon.FrecencyScore
 import typings.frecency.anon.KeepScores
+import typings.frecency.anon.Results
 import typings.frecency.anon.SearchQuery
-import typings.frecency.anon.SearchResults
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("frecency", JSImport.Default)
   @js.native
-  class default[T] protected ()
+  open class default[T] protected ()
     extends StObject
        with Frecency[T] {
     def this(constructOpts: ExactQueryMatchWeight) = this()
@@ -23,7 +23,7 @@ object mod {
     
     /* CompleteClass */
     var sort: js.Function1[
-        (/* arg */ KeepScores[T]) | (/* arg */ SearchResults[T]), 
+        (/* arg */ KeepScores[T]) | (/* arg */ Results[T]), 
         js.Array[(T & FrecencyScore) | T]
       ] = js.native
   }
@@ -33,7 +33,7 @@ object mod {
     def save(arg: SearchQuery[T]): Unit
     
     var sort: js.Function1[
-        (/* arg */ KeepScores[T]) | (/* arg */ SearchResults[T]), 
+        (/* arg */ KeepScores[T]) | (/* arg */ Results[T]), 
         js.Array[(T & FrecencyScore) | T]
       ]
   }
@@ -41,7 +41,7 @@ object mod {
     
     inline def apply[T](
       save: SearchQuery[T] => Unit,
-      sort: (/* arg */ KeepScores[T]) | (/* arg */ SearchResults[T]) => js.Array[(T & FrecencyScore) | T]
+      sort: (/* arg */ KeepScores[T]) | (/* arg */ Results[T]) => js.Array[(T & FrecencyScore) | T]
     ): Frecency[T] = {
       val __obj = js.Dynamic.literal(save = js.Any.fromFunction1(save), sort = js.Any.fromFunction1(sort))
       __obj.asInstanceOf[Frecency[T]]
@@ -51,9 +51,7 @@ object mod {
       
       inline def setSave(value: SearchQuery[T] => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
       
-      inline def setSort(
-        value: (/* arg */ KeepScores[T]) | (/* arg */ SearchResults[T]) => js.Array[(T & FrecencyScore) | T]
-      ): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
+      inline def setSort(value: (/* arg */ KeepScores[T]) | (/* arg */ Results[T]) => js.Array[(T & FrecencyScore) | T]): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     }
   }
   

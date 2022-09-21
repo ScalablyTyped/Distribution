@@ -2,7 +2,7 @@ package typings.rcTable.interfaceMod
 
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
-import typings.std.HTMLElement
+import typings.react.mod.TdHTMLAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,7 +57,7 @@ object ColumnSharedType {
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setOnHeaderCell(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any, /* index */ js.UndefOr[Double]) => HTMLAttributes[Any] | TdHTMLAttributes[Any]
     ): Self = StObject.set(x, "onHeaderCell", js.Any.fromFunction2(value))
     
     inline def setOnHeaderCellUndefined: Self = StObject.set(x, "onHeaderCell", js.undefined)

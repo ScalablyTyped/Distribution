@@ -10,14 +10,13 @@ Async loader for google maps api (browser, typescript)
 | ------------------ | :-------------: |
 | Full name          | google-maps |
 | Keywords           | google, maps, asynchronous, async, loader, browser |
-| # releases         | 12 |
-| # dependents       | 73 |
-| # downloads        | 2806504 |
-| # stars            | 29 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 345482.3333333333 |
+| # stars            | 281.0 |
 
 ## Links
 - [Homepage](https://github.com/davidkudera/google-maps-loader#readme)
-- [Bugs](https://github.com/davidkudera/google-maps-loader/issues)
 - [Repository](https://github.com/davidkudera/google-maps-loader)
 - [Npm](https://www.npmjs.com/package/google-maps)
     

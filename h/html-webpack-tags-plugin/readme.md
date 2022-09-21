@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-webpack-tags-plugin
 
-Typings are for version 2.0.17
+Typings are for version 3.0.2
 
 ## Library description:
 lets you define html tags to inject with html-webpack-plugin
@@ -10,10 +10,10 @@ lets you define html tags to inject with html-webpack-plugin
 | ------------------ | :-------------: |
 | Full name          | html-webpack-tags-plugin |
 | Keywords           | webpack, plugin, html-webpack-plugin, html, tags, inject, include, assets |
-| # releases         | 18 |
-| # dependents       | 65 |
-| # downloads        | 1803492 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 190149.33333333334 |
+| # stars            | 243.0 |
 
 ## Links
 - [Homepage](https://github.com/jharris4/html-webpack-tags-plugin)

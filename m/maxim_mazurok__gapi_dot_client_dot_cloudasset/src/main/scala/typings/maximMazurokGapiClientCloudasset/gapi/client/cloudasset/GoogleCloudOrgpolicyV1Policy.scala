@@ -27,7 +27,7 @@ trait GoogleCloudOrgpolicyV1Policy extends StObject {
   var listPolicy: js.UndefOr[GoogleCloudOrgpolicyV1ListPolicy] = js.undefined
   
   /** Restores the default behavior of the constraint; independent of `Constraint` type. */
-  var restoreDefault: js.UndefOr[js.Any] = js.undefined
+  var restoreDefault: js.UndefOr[Any] = js.undefined
   
   /**
     * The time stamp the `Policy` was previously updated. This is set by the server, not specified by the caller, and represents the last time a call to `SetOrgPolicy` was made for that
@@ -63,7 +63,7 @@ object GoogleCloudOrgpolicyV1Policy {
     
     inline def setListPolicyUndefined: Self = StObject.set(x, "listPolicy", js.undefined)
     
-    inline def setRestoreDefault(value: js.Any): Self = StObject.set(x, "restoreDefault", value.asInstanceOf[js.Any])
+    inline def setRestoreDefault(value: Any): Self = StObject.set(x, "restoreDefault", value.asInstanceOf[js.Any])
     
     inline def setRestoreDefaultUndefined: Self = StObject.set(x, "restoreDefault", js.undefined)
     

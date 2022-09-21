@@ -15,6 +15,8 @@ trait EventObject extends StObject {
   var itemsInSlide: Double
   
   var slide: Double
+  
+  var `type`: String
 }
 object EventObject {
   
@@ -23,9 +25,11 @@ object EventObject {
     isPrevSlideDisabled: Boolean,
     item: Double,
     itemsInSlide: Double,
-    slide: Double
+    slide: Double,
+    `type`: String
   ): EventObject = {
     val __obj = js.Dynamic.literal(isNextSlideDisabled = isNextSlideDisabled.asInstanceOf[js.Any], isPrevSlideDisabled = isPrevSlideDisabled.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemsInSlide = itemsInSlide.asInstanceOf[js.Any], slide = slide.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventObject]
   }
   
@@ -40,5 +44,7 @@ object EventObject {
     inline def setItemsInSlide(value: Double): Self = StObject.set(x, "itemsInSlide", value.asInstanceOf[js.Any])
     
     inline def setSlide(value: Double): Self = StObject.set(x, "slide", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,5 @@
 package typings.braintree.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object SubMerchantAccountApprovedNotification {
   inline def apply(
     kind: SubMerchantAccountApprovedNotificationKind,
     merchantAccount: MerchantAccount,
-    timestamp: Date
+    timestamp: js.Date
   ): SubMerchantAccountApprovedNotification = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], merchantAccount = merchantAccount.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubMerchantAccountApprovedNotification]

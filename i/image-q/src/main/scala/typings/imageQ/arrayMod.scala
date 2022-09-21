@@ -1,20 +1,16 @@
 package typings.imageQ
 
-import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
-import typings.imageQ.commonMod.IImageDitherer
-import typings.imageQ.pointContainerMod.PointContainer
-import typings.imageQ.utilsPaletteMod.Palette
+import typings.imageQ.distanceCalculatorMod.AbstractDistanceCalculator
+import typings.imageQ.imageQuantizerMod.AbstractImageQuantizer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrayMod {
   
-  @JSImport("image-q/dist/image/array", "ErrorDiffusionArray")
+  @JSImport("image-q/dist/types/src/image/array", "ErrorDiffusionArray")
   @js.native
-  class ErrorDiffusionArray protected ()
-    extends StObject
-       with IImageDitherer {
+  open class ErrorDiffusionArray protected () extends AbstractImageQuantizer {
     def this(colorDistanceCalculator: AbstractDistanceCalculator, kernel: ErrorDiffusionArrayKernel) = this()
     def this(
       colorDistanceCalculator: AbstractDistanceCalculator,
@@ -63,27 +59,24 @@ object arrayMod {
     ) = this()
     
     /** true = GIMP, false = XNVIEW */
-    /* private */ var _calculateErrorLikeGIMP: js.Any = js.native
+    /* private */ var _calculateErrorLikeGIMP: Any = js.native
     
-    /* private */ var _distance: js.Any = js.native
+    /* private */ var _distance: Any = js.native
     
-    /* private */ def _fillErrorLine(errorLine: js.Any, width: js.Any): js.Any = js.native
+    /* private */ var _fillErrorLine: Any = js.native
     
-    /* private */ var _kernel: js.Any = js.native
+    /* private */ var _kernel: Any = js.native
     
-    /* private */ var _minColorDistance: js.Any = js.native
+    /* private */ var _minColorDistance: Any = js.native
     
-    /* private */ var _serpentine: js.Any = js.native
+    /* private */ var _serpentine: Any = js.native
     
-    /* private */ def _setKernel(kernel: js.Any): js.Any = js.native
-    
-    /* CompleteClass */
-    override def quantize(pointBuffer: PointContainer, palette: Palette): PointContainer = js.native
+    /* private */ var _setKernel: Any = js.native
   }
   
   @js.native
   sealed trait ErrorDiffusionArrayKernel extends StObject
-  @JSImport("image-q/dist/image/array", "ErrorDiffusionArrayKernel")
+  @JSImport("image-q/dist/types/src/image/array", "ErrorDiffusionArrayKernel")
   @js.native
   object ErrorDiffusionArrayKernel extends StObject {
     

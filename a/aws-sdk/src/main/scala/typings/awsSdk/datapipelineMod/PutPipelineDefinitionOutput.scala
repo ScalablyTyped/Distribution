@@ -36,12 +36,12 @@ object PutPipelineDefinitionOutput {
     
     inline def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
     
-    inline def setValidationErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "validationErrors", js.Array(value :_*))
+    inline def setValidationErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "validationErrors", js.Array(value*))
     
     inline def setValidationWarnings(value: ValidationWarnings): Self = StObject.set(x, "validationWarnings", value.asInstanceOf[js.Any])
     
     inline def setValidationWarningsUndefined: Self = StObject.set(x, "validationWarnings", js.undefined)
     
-    inline def setValidationWarningsVarargs(value: ValidationWarning*): Self = StObject.set(x, "validationWarnings", js.Array(value :_*))
+    inline def setValidationWarningsVarargs(value: ValidationWarning*): Self = StObject.set(x, "validationWarnings", js.Array(value*))
   }
 }

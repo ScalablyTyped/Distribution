@@ -18,18 +18,18 @@ object mod {
          with HighChartsNGConfig {
       
       //This is a simple way to access all the Highcharts API that is not currently managed by this directive.
-      def getHighcharts(): js.Any
+      def getHighcharts(): Any
     }
     object HighChartsNGChart {
       
-      inline def apply(getHighcharts: () => js.Any, options: Options): HighChartsNGChart = {
+      inline def apply(getHighcharts: () => Any, options: Options): HighChartsNGChart = {
         val __obj = js.Dynamic.literal(getHighcharts = js.Any.fromFunction0(getHighcharts), options = options.asInstanceOf[js.Any])
         __obj.asInstanceOf[HighChartsNGChart]
       }
       
       extension [Self <: HighChartsNGChart](x: Self) {
         
-        inline def setGetHighcharts(value: () => js.Any): Self = StObject.set(x, "getHighcharts", js.Any.fromFunction0(value))
+        inline def setGetHighcharts(value: () => Any): Self = StObject.set(x, "getHighcharts", js.Any.fromFunction0(value))
       }
     }
     
@@ -38,7 +38,7 @@ object mod {
       //function (optional) - setup some logic for the chart
       var func: js.UndefOr[
             js.Function1[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ChartObject */ /* chart */ js.Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ChartObject */ /* chart */ Any, 
               Unit
             ]
           ] = js.undefined
@@ -56,7 +56,7 @@ object mod {
       //Series object (optional) - a list of series using normal highcharts series options.
       var series: js.UndefOr[
             js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ js.Any
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ Any
             ]
           ] = js.undefined
       
@@ -83,7 +83,7 @@ object mod {
       extension [Self <: HighChartsNGConfig](x: Self) {
         
         inline def setFunc(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ChartObject */ /* chart */ js.Any => Unit
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ChartObject */ /* chart */ Any => Unit
         ): Self = StObject.set(x, "func", js.Any.fromFunction1(value))
         
         inline def setFuncUndefined: Self = StObject.set(x, "func", js.undefined)
@@ -100,15 +100,15 @@ object mod {
         
         inline def setSeries(
           value: js.Array[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ js.Any
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ Any
                 ]
         ): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
         
         inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
         
         inline def setSeriesVarargs(
-          value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ js.Any)*
-        ): Self = StObject.set(x, "series", js.Array(value :_*))
+          value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ Any)*
+        ): Self = StObject.set(x, "series", js.Array(value*))
         
         inline def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         

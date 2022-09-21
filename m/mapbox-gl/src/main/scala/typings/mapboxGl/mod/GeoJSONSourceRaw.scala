@@ -9,7 +9,7 @@ trait GeoJSONSourceRaw
   extends StObject
      with Source
      with GeoJSONSourceOptions
-     with AnySourceData {
+     with _AnySourceData {
   
   @JSName("type")
   var type_GeoJSONSourceRaw: geojson

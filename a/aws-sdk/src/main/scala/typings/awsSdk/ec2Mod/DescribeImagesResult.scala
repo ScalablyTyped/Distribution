@@ -24,6 +24,6 @@ object DescribeImagesResult {
     
     inline def setImagesUndefined: Self = StObject.set(x, "Images", js.undefined)
     
-    inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "Images", js.Array(value :_*))
+    inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "Images", js.Array(value*))
   }
 }

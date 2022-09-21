@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("OpenTableBordersAndShadingDialogCommand")
 @js.native
-class OpenTableBordersAndShadingDialogCommand ()
+open class OpenTableBordersAndShadingDialogCommand ()
   extends StObject
      with typings.devexpressWeb.OpenTableBordersAndShadingDialogCommand {
   

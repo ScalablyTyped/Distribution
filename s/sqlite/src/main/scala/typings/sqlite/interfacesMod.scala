@@ -109,7 +109,7 @@ object interfacesMod {
         
         inline def setMigrationsUndefined: Self = StObject.set(x, "migrations", js.undefined)
         
-        inline def setMigrationsVarargs(value: MigrationData*): Self = StObject.set(x, "migrations", js.Array(value :_*))
+        inline def setMigrationsVarargs(value: MigrationData*): Self = StObject.set(x, "migrations", js.Array(value*))
         
         inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
         
@@ -135,7 +135,7 @@ object interfacesMod {
         * const driver = sqlite.Database
         * ```
         */
-      var driver: js.Any
+      var driver: Any
       
       /**
         * Valid values are filenames, ":memory:" for an anonymous in-memory
@@ -153,14 +153,14 @@ object interfacesMod {
     }
     object Config {
       
-      inline def apply(driver: js.Any, filename: String): Config = {
+      inline def apply(driver: Any, filename: String): Config = {
         val __obj = js.Dynamic.literal(driver = driver.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any])
         __obj.asInstanceOf[Config]
       }
       
       extension [Self <: Config](x: Self) {
         
-        inline def setDriver(value: js.Any): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+        inline def setDriver(value: Any): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
         
         inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
         
@@ -235,7 +235,7 @@ object interfacesMod {
     
     trait SqlObj extends StObject {
       
-      var params: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var params: js.UndefOr[js.Array[Any]] = js.undefined
       
       var sql: String
     }
@@ -248,11 +248,11 @@ object interfacesMod {
       
       extension [Self <: SqlObj](x: Self) {
         
-        inline def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: js.Array[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
         inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         
-        inline def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
+        inline def setParamsVarargs(value: Any*): Self = StObject.set(x, "params", js.Array(value*))
         
         inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
       }

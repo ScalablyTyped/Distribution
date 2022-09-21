@@ -11,7 +11,7 @@ object global {
     @JSGlobal("Heap")
     @js.native
     // Constructor
-    class ^[T] ()
+    open class ^[T] ()
       extends typings.heap.mod.^[T] {
       def this(cmp: js.Function2[/* a */ T, /* b */ T, Double]) = this()
     }

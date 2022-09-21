@@ -10,7 +10,6 @@ import typings.restifyPlugins.anon.MaxBodySize
 import typings.restifyPlugins.anon.Message
 import typings.restifyPlugins.anon.Server
 import typings.restifyPlugins.anon.UserAgentRegExp
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,10 +22,10 @@ object mod {
   
   inline def acceptParser(accepts: js.Array[String]): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("acceptParser")(accepts.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
-  inline def auditLogger(options: AuditLoggerOptions): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("auditLogger")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  inline def auditLogger(options: AuditLoggerOptions): js.Function1[/* repeated */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("auditLogger")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
   
   inline def authorizationParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("authorizationParser")().asInstanceOf[RequestHandler]
-  inline def authorizationParser(options: js.Any): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("authorizationParser")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def authorizationParser(options: Any): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("authorizationParser")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
   inline def bodyParser(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyParser")().asInstanceOf[js.Array[RequestHandler]]
   inline def bodyParser(options: BodyParserOptions): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("bodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler]]
@@ -42,14 +41,14 @@ object mod {
   inline def fullResponse(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("fullResponse")().asInstanceOf[RequestHandler]
   
   inline def gzipResponse(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipResponse")().asInstanceOf[RequestHandler]
-  inline def gzipResponse(options: js.Any): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipResponse")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def gzipResponse(options: Any): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipResponse")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
   
   inline def jsonBodyParser(): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonBodyParser")().asInstanceOf[js.Array[RequestHandler]]
   inline def jsonBodyParser(options: MapParams): js.Array[RequestHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RequestHandler]]
   
   inline def jsonp(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")().asInstanceOf[RequestHandler]
   
-  inline def metrics(opts: Server, callback: js.Function1[/* options */ MetricsCallback, js.Any]): js.Function1[/* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("metrics")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  inline def metrics(opts: Server, callback: js.Function1[/* options */ MetricsCallback, Any]): js.Function1[/* repeated */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("metrics")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
   
   inline def multipartBodyParser(): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("multipartBodyParser")().asInstanceOf[RequestHandler]
   inline def multipartBodyParser(options: MultipartBodyParser_): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("multipartBodyParser")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
@@ -127,7 +126,7 @@ object mod {
     /**
       * Ringbuffer which is written to if passed in
       */
-    var logBuffer: js.UndefOr[js.Any] = js.undefined
+    var logBuffer: js.UndefOr[Any] = js.undefined
     
     /**
       * When true, prints audit logs. default true.
@@ -154,7 +153,7 @@ object mod {
       
       inline def setLog(value: typings.bunyan.mod.^): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      inline def setLogBuffer(value: js.Any): Self = StObject.set(x, "logBuffer", value.asInstanceOf[js.Any])
+      inline def setLogBuffer(value: Any): Self = StObject.set(x, "logBuffer", value.asInstanceOf[js.Any])
       
       inline def setLogBufferUndefined: Self = StObject.set(x, "logBuffer", js.undefined)
       
@@ -230,7 +229,7 @@ object mod {
       */
     var rejectUnknown: js.UndefOr[Boolean] = js.undefined
     
-    var reviver: js.UndefOr[js.Any] = js.undefined
+    var reviver: js.UndefOr[Any] = js.undefined
     
     /**
       * Where uploaded files are intermediately stored during transfer before the contents is mapped into req.params. Does nothing if multipartFileHandler is defined.
@@ -290,7 +289,7 @@ object mod {
       
       inline def setRejectUnknownUndefined: Self = StObject.set(x, "rejectUnknown", js.undefined)
       
-      inline def setReviver(value: js.Any): Self = StObject.set(x, "reviver", value.asInstanceOf[js.Any])
+      inline def setReviver(value: Any): Self = StObject.set(x, "reviver", value.asInstanceOf[js.Any])
       
       inline def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
       
@@ -305,7 +304,7 @@ object mod {
     /**
       *  An error if the request had an error
       */
-    var err: Error
+    var err: js.Error
     
     var metrics: MetricsCallbackOptions
     
@@ -320,14 +319,14 @@ object mod {
   }
   object MetricsCallback {
     
-    inline def apply(err: Error, metrics: MetricsCallbackOptions, req: Request, res: Response, route: Route): MetricsCallback = {
+    inline def apply(err: js.Error, metrics: MetricsCallbackOptions, req: Request, res: Response, route: Route): MetricsCallback = {
       val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetricsCallback]
     }
     
     extension [Self <: MetricsCallback](x: Self) {
       
-      inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
       inline def setMetrics(value: MetricsCallbackOptions): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
@@ -404,9 +403,9 @@ object mod {
     
     var maxFieldsSize: js.UndefOr[Double] = js.undefined
     
-    var multipartFileHandler: js.UndefOr[js.Any] = js.undefined
+    var multipartFileHandler: js.UndefOr[Any] = js.undefined
     
-    var multipartHandler: js.UndefOr[js.Any] = js.undefined
+    var multipartHandler: js.UndefOr[Any] = js.undefined
     
     var multiples: js.UndefOr[Boolean] = js.undefined
     
@@ -443,11 +442,11 @@ object mod {
       
       inline def setMaxFieldsSizeUndefined: Self = StObject.set(x, "maxFieldsSize", js.undefined)
       
-      inline def setMultipartFileHandler(value: js.Any): Self = StObject.set(x, "multipartFileHandler", value.asInstanceOf[js.Any])
+      inline def setMultipartFileHandler(value: Any): Self = StObject.set(x, "multipartFileHandler", value.asInstanceOf[js.Any])
       
       inline def setMultipartFileHandlerUndefined: Self = StObject.set(x, "multipartFileHandler", js.undefined)
       
-      inline def setMultipartHandler(value: js.Any): Self = StObject.set(x, "multipartHandler", value.asInstanceOf[js.Any])
+      inline def setMultipartHandler(value: Any): Self = StObject.set(x, "multipartHandler", value.asInstanceOf[js.Any])
       
       inline def setMultipartHandlerUndefined: Self = StObject.set(x, "multipartHandler", js.undefined)
       
@@ -602,13 +601,13 @@ object mod {
   
   trait RequestLogger_ extends StObject {
     
-    var headers: js.UndefOr[js.Any] = js.undefined
+    var headers: js.UndefOr[Any] = js.undefined
     
-    var log: js.UndefOr[js.Any] = js.undefined
+    var log: js.UndefOr[Any] = js.undefined
     
-    var properties: js.UndefOr[js.Any] = js.undefined
+    var properties: js.UndefOr[Any] = js.undefined
     
-    var serializers: js.UndefOr[js.Any] = js.undefined
+    var serializers: js.UndefOr[Any] = js.undefined
   }
   object RequestLogger_ {
     
@@ -619,19 +618,19 @@ object mod {
     
     extension [Self <: RequestLogger_](x: Self) {
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      inline def setSerializers(value: js.Any): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
+      inline def setSerializers(value: Any): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
       
       inline def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
     }
@@ -639,7 +638,7 @@ object mod {
   
   trait ServeStatic_ extends StObject {
     
-    var default: js.UndefOr[js.Any] = js.undefined
+    var default: js.UndefOr[Any] = js.undefined
     
     var appendRequestPath: js.UndefOr[Boolean] = js.undefined
     
@@ -653,7 +652,7 @@ object mod {
     
     var gzip: js.UndefOr[Boolean] = js.undefined
     
-    var `match`: js.UndefOr[js.Any] = js.undefined
+    var `match`: js.UndefOr[Any] = js.undefined
     
     var maxAge: js.UndefOr[Double] = js.undefined
   }
@@ -674,7 +673,7 @@ object mod {
       
       inline def setCharSetUndefined: Self = StObject.set(x, "charSet", js.undefined)
       
-      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
@@ -694,7 +693,7 @@ object mod {
       
       inline def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
       
-      inline def setMatch(value: js.Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
@@ -719,11 +718,11 @@ object mod {
     
     var maxKeys: js.UndefOr[Double] = js.undefined
     
-    var overrides: js.UndefOr[js.Any] = js.undefined
+    var overrides: js.UndefOr[Any] = js.undefined
     
     var rate: js.UndefOr[Double] = js.undefined
     
-    var tokensTable: js.UndefOr[js.Any] = js.undefined
+    var tokensTable: js.UndefOr[Any] = js.undefined
     
     var username: js.UndefOr[Boolean] = js.undefined
     
@@ -750,7 +749,7 @@ object mod {
       
       inline def setMaxKeysUndefined: Self = StObject.set(x, "maxKeys", js.undefined)
       
-      inline def setOverrides(value: js.Any): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: Any): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
       inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
@@ -758,7 +757,7 @@ object mod {
       
       inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
       
-      inline def setTokensTable(value: js.Any): Self = StObject.set(x, "tokensTable", value.asInstanceOf[js.Any])
+      inline def setTokensTable(value: Any): Self = StObject.set(x, "tokensTable", value.asInstanceOf[js.Any])
       
       inline def setTokensTableUndefined: Self = StObject.set(x, "tokensTable", js.undefined)
       

@@ -9,7 +9,7 @@ trait StorageClass extends StObject {
   /** Target storage class. Required iff the type of the action is SetStorageClass. */
   var storageClass: js.UndefOr[String] = js.undefined
   
-  /** Type of the action. Currently, only Delete and SetStorageClass are supported. */
+  /** Type of the action. Currently, only Delete, SetStorageClass, and AbortIncompleteMultipartUpload are supported. */
   var `type`: js.UndefOr[String] = js.undefined
 }
 object StorageClass {

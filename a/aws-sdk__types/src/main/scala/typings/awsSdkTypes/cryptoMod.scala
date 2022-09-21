@@ -2,13 +2,9 @@ package typings.awsSdkTypes
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.awsSdkTypes.anon.Instantiable
 import typings.awsSdkTypes.awsSdkTypesStrings.ascii
 import typings.awsSdkTypes.awsSdkTypesStrings.latin1
 import typings.awsSdkTypes.awsSdkTypesStrings.utf8
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +18,7 @@ object cryptoMod {
       * Finalizes the hash and provides a promise that will be fulfilled with the
       * raw bytes of the calculated hash.
       */
-    def digest(): js.Promise[Uint8Array] = js.native
+    def digest(): js.Promise[js.typedarray.Uint8Array] = js.native
     
     /**
       * Adds a chunk of data to the hash. If a buffer is provided, the `encoding`
@@ -33,12 +29,7 @@ object cryptoMod {
       * UTF-8.
       */
     def update(toHash: SourceData): Unit = js.native
-    @JSName("update")
-    def update_ascii(toHash: SourceData, encoding: ascii): Unit = js.native
-    @JSName("update")
-    def update_latin1(toHash: SourceData, encoding: latin1): Unit = js.native
-    @JSName("update")
-    def update_utf8(toHash: SourceData, encoding: utf8): Unit = js.native
+    def update(toHash: SourceData, encoding: utf8 | ascii | latin1): Unit = js.native
   }
   
   @js.native
@@ -47,9 +38,13 @@ object cryptoMod {
        with Instantiable0[Hash]
        with Instantiable1[/* secret */ SourceData, Hash]
   
-  type SourceData = String | ArrayBuffer | ArrayBufferView
+  type SourceData = String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView
   
-  type StreamHasher[StreamType] = js.Function2[/* hashCtor */ Instantiable, /* stream */ StreamType, js.Promise[Uint8Array]]
+  type StreamHasher[StreamType] = js.Function2[
+    /* hashCtor */ HashConstructor, 
+    /* stream */ StreamType, 
+    js.Promise[js.typedarray.Uint8Array]
+  ]
   
-  type randomValues = js.Function1[/* byteLength */ Double, js.Promise[Uint8Array]]
+  type randomValues = js.Function1[/* byteLength */ Double, js.Promise[js.typedarray.Uint8Array]]
 }

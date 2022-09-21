@@ -61,9 +61,9 @@ object mod {
     
     trait WzStep extends StObject {
       
-      def canenter(args: js.Any*): Boolean
+      def canenter(args: Any*): Boolean
       
-      def canexit(args: js.Any*): Boolean
+      def canexit(args: Any*): Boolean
       
       var description: String
       
@@ -71,19 +71,19 @@ object mod {
       
       var title: String
       
-      var wzData: js.Any
+      var wzData: Any
       
       var wzTitle: String
     }
     object WzStep {
       
       inline def apply(
-        canenter: /* repeated */ js.Any => Boolean,
-        canexit: /* repeated */ js.Any => Boolean,
+        canenter: /* repeated */ Any => Boolean,
+        canexit: /* repeated */ Any => Boolean,
         description: String,
         selected: Boolean,
         title: String,
-        wzData: js.Any,
+        wzData: Any,
         wzTitle: String
       ): WzStep = {
         val __obj = js.Dynamic.literal(canenter = js.Any.fromFunction1(canenter), canexit = js.Any.fromFunction1(canexit), description = description.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], wzData = wzData.asInstanceOf[js.Any], wzTitle = wzTitle.asInstanceOf[js.Any])
@@ -92,9 +92,9 @@ object mod {
       
       extension [Self <: WzStep](x: Self) {
         
-        inline def setCanenter(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "canenter", js.Any.fromFunction1(value))
+        inline def setCanenter(value: /* repeated */ Any => Boolean): Self = StObject.set(x, "canenter", js.Any.fromFunction1(value))
         
-        inline def setCanexit(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "canexit", js.Any.fromFunction1(value))
+        inline def setCanexit(value: /* repeated */ Any => Boolean): Self = StObject.set(x, "canexit", js.Any.fromFunction1(value))
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -102,7 +102,7 @@ object mod {
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        inline def setWzData(value: js.Any): Self = StObject.set(x, "wzData", value.asInstanceOf[js.Any])
+        inline def setWzData(value: Any): Self = StObject.set(x, "wzData", value.asInstanceOf[js.Any])
         
         inline def setWzTitle(value: String): Self = StObject.set(x, "wzTitle", value.asInstanceOf[js.Any])
       }

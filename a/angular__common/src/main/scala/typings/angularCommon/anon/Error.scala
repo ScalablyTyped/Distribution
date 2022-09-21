@@ -1,13 +1,13 @@
 package typings.angularCommon.anon
 
-import typings.angularCommon.httpHttpMod.HttpHeaders
+import typings.angularCommon.httpMod.HttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Error extends StObject {
   
-  var error: js.UndefOr[js.Any] = js.undefined
+  var error: js.UndefOr[Any] = js.undefined
   
   var headers: js.UndefOr[HttpHeaders] = js.undefined
   
@@ -26,7 +26,7 @@ object Error {
   
   extension [Self <: Error](x: Self) {
     
-    inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     

@@ -10,7 +10,7 @@ object inputStreamMod {
   
   @JSImport("guacamole-client/lib/InputStream", "InputStream")
   @js.native
-  class InputStream protected () extends StObject {
+  open class InputStream protected () extends StObject {
     /**
       * @param client The client owning this stream.
       * @param index The index of this stream.

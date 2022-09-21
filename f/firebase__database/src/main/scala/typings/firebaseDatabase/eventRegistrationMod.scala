@@ -1,220 +1,46 @@
 package typings.firebaseDatabase
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseDatabase.changeMod.Change
-import typings.firebaseDatabase.dataSnapshotMod.DataSnapshot
 import typings.firebaseDatabase.eventMod.CancelEvent
-import typings.firebaseDatabase.eventMod.DataEvent
 import typings.firebaseDatabase.eventMod.Event
 import typings.firebaseDatabase.pathMod.Path
-import typings.firebaseDatabase.queryMod.Query
-import typings.std.Error
+import typings.firebaseDatabase.queryParamsMod.QueryParams
+import typings.firebaseDatabase.referenceImplMod.DataSnapshot
+import typings.firebaseDatabase.repoMod.Repo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventRegistrationMod {
   
-  @JSImport("@firebase/database/dist/src/core/view/EventRegistration", "ChildEventRegistration")
+  @JSImport("@firebase/database/dist/node-esm/src/core/view/EventRegistration", "CallbackContext")
   @js.native
-  /**
-    * @param {?Object.<string, function(!DataSnapshot, ?string=)>} callbacks_
-    * @param {?function(Error)} cancelCallback_
-    * @param {Object=} context_
-    */
-  class ChildEventRegistration ()
-    extends StObject
-       with EventRegistration {
-    def this(callbacks_ : StringDictionary[js.Function2[/* d */ DataSnapshot, /* s */ js.UndefOr[String | Null], Unit]]) = this()
-    def this(
-      callbacks_ : StringDictionary[js.Function2[/* d */ DataSnapshot, /* s */ js.UndefOr[String | Null], Unit]],
-      cancelCallback_ : js.Function1[/* e */ Error, Unit]
-    ) = this()
-    def this(callbacks_ : Null, cancelCallback_ : js.Function1[/* e */ Error, Unit]) = this()
-    def this(
-      callbacks_ : StringDictionary[js.Function2[/* d */ DataSnapshot, /* s */ js.UndefOr[String | Null], Unit]],
-      cancelCallback_ : js.Function1[/* e */ Error, Unit],
-      context_ : js.Object
-    ) = this()
-    def this(
-      callbacks_ : StringDictionary[js.Function2[/* d */ DataSnapshot, /* s */ js.UndefOr[String | Null], Unit]],
-      cancelCallback_ : Null,
-      context_ : js.Object
-    ) = this()
-    def this(callbacks_ : Null, cancelCallback_ : js.Function1[/* e */ Error, Unit], context_ : js.Object) = this()
-    def this(callbacks_ : Null, cancelCallback_ : Null, context_ : js.Object) = this()
+  open class CallbackContext protected () extends StObject {
+    def this(snapshotCallback: UserCallback) = this()
+    def this(snapshotCallback: UserCallback, cancelCallback: js.Function1[/* error */ js.Error, Any]) = this()
     
-    /* private */ var callbacks_ : js.Any = js.native
+    /* private */ val cancelCallback: Any = js.native
     
-    /* private */ var cancelCallback_ : js.Any = js.native
+    def hasCancelCallback: Boolean = js.native
     
-    /* private */ var context_ : js.Any = js.native
+    def matches(other: CallbackContext): Boolean = js.native
     
-    /**
-      * @param {!Error} error
-      * @param {!Path} path
-      * @return {?CancelEvent}
-      */
-    /* CompleteClass */
-    override def createCancelEvent(error: Error, path: Path): CancelEvent | Null = js.native
+    def onCancel(error: js.Error): Unit = js.native
     
-    /**
-      * @param {!Change} change
-      * @param {!Query} query
-      * @return {!Event}
-      */
-    /* CompleteClass */
-    override def createEvent(change: Change, query: Query): Event = js.native
+    def onValue(expDataSnapshot: DataSnapshot): Unit = js.native
+    def onValue(expDataSnapshot: DataSnapshot, previousChildName: String): Unit = js.native
     
-    /**
-      * @inheritDoc
-      */
-    def getEventRunner(eventData: CancelEvent): js.Function0[Unit] = js.native
-    def getEventRunner(eventData: DataEvent): js.Function0[Unit] = js.native
-    /**
-      * Given event data, return a function to trigger the user's callback
-      * @param {!Event} eventData
-      * @return {function()}
-      */
-    /* CompleteClass */
-    override def getEventRunner(eventData: Event): js.Function0[Unit] = js.native
-    
-    /**
-      * False basically means this is a "dummy" callback container being used as a sentinel
-      * to remove all callback containers of a particular type.  (e.g. if the user does
-      * ref.off('value') without specifying a specific callback).
-      *
-      * (TODO: Rework this, since it's hacky)
-      *
-      * @return {boolean}
-      */
-    /* CompleteClass */
-    override def hasAnyCallback(): Boolean = js.native
-    
-    /**
-      * @param {!EventRegistration} other
-      * @return {boolean}
-      */
-    /* CompleteClass */
-    override def matches(other: EventRegistration): Boolean = js.native
-    
-    /**
-      * True if this container has a callback to trigger for this event type
-      * @param {!string} eventType
-      * @return {boolean}
-      */
-    /* CompleteClass */
-    override def respondsTo(eventType: String): Boolean = js.native
-  }
-  
-  @JSImport("@firebase/database/dist/src/core/view/EventRegistration", "ValueEventRegistration")
-  @js.native
-  /**
-    * @param {?function(!DataSnapshot)} callback_
-    * @param {?function(Error)} cancelCallback_
-    * @param {?Object} context_
-    */
-  class ValueEventRegistration ()
-    extends StObject
-       with EventRegistration {
-    def this(callback_ : js.Function1[/* d */ DataSnapshot, Unit]) = this()
-    def this(
-      callback_ : js.Function1[/* d */ DataSnapshot, Unit],
-      cancelCallback_ : js.Function1[/* e */ Error, Unit]
-    ) = this()
-    def this(callback_ : Null, cancelCallback_ : js.Function1[/* e */ Error, Unit]) = this()
-    def this(
-      callback_ : js.Function1[/* d */ DataSnapshot, Unit],
-      cancelCallback_ : js.Function1[/* e */ Error, Unit],
-      context_ : js.Object
-    ) = this()
-    def this(callback_ : js.Function1[/* d */ DataSnapshot, Unit], cancelCallback_ : Null, context_ : js.Object) = this()
-    def this(callback_ : Null, cancelCallback_ : js.Function1[/* e */ Error, Unit], context_ : js.Object) = this()
-    def this(callback_ : Null, cancelCallback_ : Null, context_ : js.Object) = this()
-    
-    /* private */ var callback_ : js.Any = js.native
-    
-    /* private */ var cancelCallback_ : js.Any = js.native
-    
-    /* private */ var context_ : js.Any = js.native
-    
-    /**
-      * @param {!Error} error
-      * @param {!Path} path
-      * @return {?CancelEvent}
-      */
-    /* CompleteClass */
-    override def createCancelEvent(error: Error, path: Path): CancelEvent | Null = js.native
-    
-    /**
-      * @param {!Change} change
-      * @param {!Query} query
-      * @return {!Event}
-      */
-    /* CompleteClass */
-    override def createEvent(change: Change, query: Query): Event = js.native
-    
-    /**
-      * @inheritDoc
-      */
-    def getEventRunner(eventData: CancelEvent): js.Function0[Unit] = js.native
-    def getEventRunner(eventData: DataEvent): js.Function0[Unit] = js.native
-    /**
-      * Given event data, return a function to trigger the user's callback
-      * @param {!Event} eventData
-      * @return {function()}
-      */
-    /* CompleteClass */
-    override def getEventRunner(eventData: Event): js.Function0[Unit] = js.native
-    
-    /**
-      * False basically means this is a "dummy" callback container being used as a sentinel
-      * to remove all callback containers of a particular type.  (e.g. if the user does
-      * ref.off('value') without specifying a specific callback).
-      *
-      * (TODO: Rework this, since it's hacky)
-      *
-      * @return {boolean}
-      */
-    /* CompleteClass */
-    override def hasAnyCallback(): Boolean = js.native
-    
-    /**
-      * @param {!EventRegistration} other
-      * @return {boolean}
-      */
-    /* CompleteClass */
-    override def matches(other: EventRegistration): Boolean = js.native
-    
-    /**
-      * True if this container has a callback to trigger for this event type
-      * @param {!string} eventType
-      * @return {boolean}
-      */
-    /* CompleteClass */
-    override def respondsTo(eventType: String): Boolean = js.native
+    /* private */ val snapshotCallback: Any = js.native
   }
   
   trait EventRegistration extends StObject {
     
-    /**
-      * @param {!Error} error
-      * @param {!Path} path
-      * @return {?CancelEvent}
-      */
-    def createCancelEvent(error: Error, path: Path): CancelEvent | Null
+    def createCancelEvent(error: js.Error, path: Path): CancelEvent | Null
     
-    /**
-      * @param {!Change} change
-      * @param {!Query} query
-      * @return {!Event}
-      */
-    def createEvent(change: Change, query: Query): Event
+    def createEvent(change: Change, query: QueryContext): Event
     
     /**
       * Given event data, return a function to trigger the user's callback
-      * @param {!Event} eventData
-      * @return {function()}
       */
     def getEventRunner(eventData: Event): js.Function0[Unit]
     
@@ -225,28 +51,21 @@ object eventRegistrationMod {
       *
       * (TODO: Rework this, since it's hacky)
       *
-      * @return {boolean}
       */
     def hasAnyCallback(): Boolean
     
-    /**
-      * @param {!EventRegistration} other
-      * @return {boolean}
-      */
     def matches(other: EventRegistration): Boolean
     
     /**
       * True if this container has a callback to trigger for this event type
-      * @param {!string} eventType
-      * @return {boolean}
       */
     def respondsTo(eventType: String): Boolean
   }
   object EventRegistration {
     
     inline def apply(
-      createCancelEvent: (Error, Path) => CancelEvent | Null,
-      createEvent: (Change, Query) => Event,
+      createCancelEvent: (js.Error, Path) => CancelEvent | Null,
+      createEvent: (Change, QueryContext) => Event,
       getEventRunner: Event => js.Function0[Unit],
       hasAnyCallback: () => Boolean,
       matches: EventRegistration => Boolean,
@@ -258,9 +77,9 @@ object eventRegistrationMod {
     
     extension [Self <: EventRegistration](x: Self) {
       
-      inline def setCreateCancelEvent(value: (Error, Path) => CancelEvent | Null): Self = StObject.set(x, "createCancelEvent", js.Any.fromFunction2(value))
+      inline def setCreateCancelEvent(value: (js.Error, Path) => CancelEvent | Null): Self = StObject.set(x, "createCancelEvent", js.Any.fromFunction2(value))
       
-      inline def setCreateEvent(value: (Change, Query) => Event): Self = StObject.set(x, "createEvent", js.Any.fromFunction2(value))
+      inline def setCreateEvent(value: (Change, QueryContext) => Event): Self = StObject.set(x, "createEvent", js.Any.fromFunction2(value))
       
       inline def setGetEventRunner(value: Event => js.Function0[Unit]): Self = StObject.set(x, "getEventRunner", js.Any.fromFunction1(value))
       
@@ -270,5 +89,55 @@ object eventRegistrationMod {
       
       inline def setRespondsTo(value: String => Boolean): Self = StObject.set(x, "respondsTo", js.Any.fromFunction1(value))
     }
+  }
+  
+  trait QueryContext extends StObject {
+    
+    val _path: Path
+    
+    val _queryIdentifier: String
+    
+    val _queryObject: js.Object
+    
+    val _queryParams: QueryParams
+    
+    val _repo: Repo
+  }
+  object QueryContext {
+    
+    inline def apply(
+      _path: Path,
+      _queryIdentifier: String,
+      _queryObject: js.Object,
+      _queryParams: QueryParams,
+      _repo: Repo
+    ): QueryContext = {
+      val __obj = js.Dynamic.literal(_path = _path.asInstanceOf[js.Any], _queryIdentifier = _queryIdentifier.asInstanceOf[js.Any], _queryObject = _queryObject.asInstanceOf[js.Any], _queryParams = _queryParams.asInstanceOf[js.Any], _repo = _repo.asInstanceOf[js.Any])
+      __obj.asInstanceOf[QueryContext]
+    }
+    
+    extension [Self <: QueryContext](x: Self) {
+      
+      inline def set_path(value: Path): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
+      
+      inline def set_queryIdentifier(value: String): Self = StObject.set(x, "_queryIdentifier", value.asInstanceOf[js.Any])
+      
+      inline def set_queryObject(value: js.Object): Self = StObject.set(x, "_queryObject", value.asInstanceOf[js.Any])
+      
+      inline def set_queryParams(value: QueryParams): Self = StObject.set(x, "_queryParams", value.asInstanceOf[js.Any])
+      
+      inline def set_repo(value: Repo): Self = StObject.set(x, "_repo", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  @js.native
+  trait UserCallback extends StObject {
+    
+    def apply(dataSnapshot: DataSnapshot): Any = js.native
+    def apply(dataSnapshot: DataSnapshot, previousChildName: String): Any = js.native
+    
+    var context: js.UndefOr[js.Object | Null] = js.native
+    
+    var userCallback: js.UndefOr[Any] = js.native
   }
 }

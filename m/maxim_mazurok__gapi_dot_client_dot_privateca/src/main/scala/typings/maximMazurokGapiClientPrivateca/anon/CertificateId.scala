@@ -29,13 +29,22 @@ trait CertificateId extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
+  /**
+    * Optional. The resource ID of the CertificateAuthority that should issue the certificate. This optional field will ignore the load-balancing scheme of the Pool and directly issue
+    * the certificate from the CA with the specified ID, contained in the same CaPool referenced by `parent`. Per-CA quota rules apply. If left empty, a CertificateAuthority will be
+    * chosen from the CaPool by the service. For example, to issue a Certificate from a Certificate Authority with resource name
+    * "projects/my-project/locations/us-central1/caPools/my-pool/certificateAuthorities/my-ca", you can set the parent to "projects/my-project/locations/us-central1/caPools/my-pool"
+    * and the issuing_certificate_authority_id to "my-ca".
+    */
+  var issuingCertificateAuthorityId: js.UndefOr[String] = js.undefined
+  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The resource name of the location and CertificateAuthority associated with the Certificate, in the format `projects/∗/locations/∗/certificateAuthorities/ *`. */
+  /** Required. The resource name of the CaPool associated with the Certificate, in the format `projects/ *‍/locations/ *‍/caPools/ *`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -46,7 +55,7 @@ trait CertificateId extends StObject {
   
   /**
     * Optional. An ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been
-    * completed. The server will guarantee that for at least 60 minutes since the first request. For example, consider a situation where you make an initial request and t he request
+    * completed. The server will guarantee that for at least 60 minutes since the first request. For example, consider a situation where you make an initial request and the request
     * times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the
     * second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported
     * (00000000-0000-0000-0000-000000000000).
@@ -61,6 +70,9 @@ trait CertificateId extends StObject {
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
+  
+  /** Optional. If this is true, no Certificate resource will be persisted regardless of the CaPool's tier, and the returned Certificate will not contain the pem_certificate field. */
+  var validateOnly: js.UndefOr[Boolean] = js.undefined
 }
 object CertificateId {
   
@@ -95,6 +107,10 @@ object CertificateId {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
+    inline def setIssuingCertificateAuthorityId(value: String): Self = StObject.set(x, "issuingCertificateAuthorityId", value.asInstanceOf[js.Any])
+    
+    inline def setIssuingCertificateAuthorityIdUndefined: Self = StObject.set(x, "issuingCertificateAuthorityId", js.undefined)
+    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -126,5 +142,9 @@ object CertificateId {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+    
+    inline def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
+    
+    inline def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }
 }

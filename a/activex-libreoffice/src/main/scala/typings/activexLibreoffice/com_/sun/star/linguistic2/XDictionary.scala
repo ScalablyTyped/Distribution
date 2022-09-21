@@ -179,7 +179,7 @@ object XDictionary {
     getName: () => String,
     isActive: () => Boolean,
     isFull: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     remove: String => Boolean,
     removeDictionaryEventListener: XDictionaryEventListener => Boolean,

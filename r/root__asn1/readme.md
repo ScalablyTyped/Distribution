@@ -10,10 +10,10 @@ VanillaJS, Lightweight, Zero-Dependency, ASN.1 encoder and decoder.
 | ------------------ | :-------------: |
 | Full name          | @root/asn1 |
 | Keywords           | ASN.1, asn1, x509, PEM |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 117364 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 79127.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40root%2Fasn1)

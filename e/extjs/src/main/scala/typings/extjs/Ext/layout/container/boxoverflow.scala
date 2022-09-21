@@ -85,7 +85,7 @@ object boxoverflow {
       * @param animate Boolean True to animate the scrolling
       */
     var scrollToItem: js.UndefOr[
-        js.Function2[/* item */ js.UndefOr[js.Any], /* animate */ js.UndefOr[Boolean], Unit]
+        js.Function2[/* item */ js.UndefOr[Any], /* animate */ js.UndefOr[Boolean], Unit]
       ] = js.undefined
     
     /** [Config Option] (String) */
@@ -139,7 +139,7 @@ object boxoverflow {
       
       inline def setScrollRepeatIntervalUndefined: Self = StObject.set(x, "scrollRepeatInterval", js.undefined)
       
-      inline def setScrollToItem(value: (/* item */ js.UndefOr[js.Any], /* animate */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "scrollToItem", js.Any.fromFunction2(value))
+      inline def setScrollToItem(value: (/* item */ js.UndefOr[Any], /* animate */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "scrollToItem", js.Any.fromFunction2(value))
       
       inline def setScrollToItemUndefined: Self = StObject.set(x, "scrollToItem", js.undefined)
       

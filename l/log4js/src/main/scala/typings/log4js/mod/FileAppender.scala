@@ -5,35 +5,37 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileAppender
-  extends StObject
-     with Appender {
+trait FileAppender extends StObject {
   
-  // (default value = 5) - the number of old log files to keep during log rolling.
+  // (defaults to 5) the number of old log files to keep (excluding the hot file).
   var backups: js.UndefOr[Double] = js.undefined
   
+  // (defaults to false) compress the backup files using gzip (backup files will have .gz extension)
   var compress: js.UndefOr[Boolean] = js.undefined
   
+  // (defaults to utf-8)
   var encoding: js.UndefOr[String] = js.undefined
+  
+  // (defaults to .) the filename separator when rolling. e.g.: abc.log`.`1 or abc`.`1.log (keepFileExt)
+  var fileNameSep: js.UndefOr[String] = js.undefined
   
   // the path of the file where you want your logs written.
   var filename: String
   
+  // (defaults to a)
   var flags: js.UndefOr[String] = js.undefined
   
-  // compress the backups
-  // keep the file extension when rotating logs
+  // (defaults to false) preserve the file extension when rotating log files (`file.log` becomes `file.1.log` instead of `file.log.1`).
   var keepFileExt: js.UndefOr[Boolean] = js.undefined
   
-  // defaults to basic layout
+  // (defaults to BasicLayout)
   var layout: js.UndefOr[Layout] = js.undefined
   
-  // the maximum size (in bytes) for the log file. If not specified, then no log rolling will happen.
+  // (defaults to undefined) the maximum size (in bytes) for the log file. If not specified or 0, then no log rolling will happen.
   var maxLogSize: js.UndefOr[Double | String] = js.undefined
   
+  // (defaults to 0o600)
   var mode: js.UndefOr[Double] = js.undefined
-  
-  var numBackups: js.UndefOr[Double] = js.undefined
   
   var `type`: file
 }
@@ -59,6 +61,10 @@ object FileAppender {
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
+    inline def setFileNameSep(value: String): Self = StObject.set(x, "fileNameSep", value.asInstanceOf[js.Any])
+    
+    inline def setFileNameSepUndefined: Self = StObject.set(x, "fileNameSep", js.undefined)
+    
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
@@ -80,10 +86,6 @@ object FileAppender {
     inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
-    
-    inline def setNumBackups(value: Double): Self = StObject.set(x, "numBackups", value.asInstanceOf[js.Any])
-    
-    inline def setNumBackupsUndefined: Self = StObject.set(x, "numBackups", js.undefined)
     
     inline def setType(value: file): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

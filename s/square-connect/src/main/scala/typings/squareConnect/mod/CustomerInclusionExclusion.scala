@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CustomerInclusionExclusion")
 @js.native
-class CustomerInclusionExclusion () extends StObject
+open class CustomerInclusionExclusion () extends StObject

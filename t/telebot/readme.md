@@ -11,9 +11,9 @@ The easy way to write Telegram bots.
 | Full name          | telebot |
 | Keywords           | bot, api, wrapper, telebot, telegram, telegram api, telegram bot, telegram bot api |
 | # releases         | 4 |
-| # dependents       | 16 |
-| # downloads        | 37203 |
-| # stars            | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 3375.0 |
+| # stars            | 1314.0 |
 
 ## Links
 - [Homepage](https://github.com/mullwar/telebot)

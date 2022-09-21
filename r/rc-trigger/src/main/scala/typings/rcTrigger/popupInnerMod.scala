@@ -40,6 +40,8 @@ object popupInnerMod extends Shortcut {
     
     var destroyPopupOnHide: js.UndefOr[Boolean] = js.undefined
     
+    var forceRender: js.UndefOr[Boolean] = js.undefined
+    
     var getClassNameFromAlign: js.UndefOr[js.Function1[/* align */ AlignType, String]] = js.undefined
     
     var getRootDomNode: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
@@ -47,6 +49,8 @@ object popupInnerMod extends Shortcut {
     var motion: CSSMotionProps
     
     var onAlign: js.UndefOr[js.Function2[/* element */ HTMLElement, /* align */ AlignType, Unit]] = js.undefined
+    
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
     var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -102,6 +106,10 @@ object popupInnerMod extends Shortcut {
       
       inline def setDestroyPopupOnHideUndefined: Self = StObject.set(x, "destroyPopupOnHide", js.undefined)
       
+      inline def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
+      
+      inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
+      
       inline def setGetClassNameFromAlign(value: /* align */ AlignType => String): Self = StObject.set(x, "getClassNameFromAlign", js.Any.fromFunction1(value))
       
       inline def setGetClassNameFromAlignUndefined: Self = StObject.set(x, "getClassNameFromAlign", js.undefined)
@@ -115,6 +123,10 @@ object popupInnerMod extends Shortcut {
       inline def setOnAlign(value: (/* element */ HTMLElement, /* align */ AlignType) => Unit): Self = StObject.set(x, "onAlign", js.Any.fromFunction2(value))
       
       inline def setOnAlignUndefined: Self = StObject.set(x, "onAlign", js.undefined)
+      
+      inline def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       inline def setOnMouseDown(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       

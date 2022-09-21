@@ -29,7 +29,7 @@ object SelectResult {
     
     inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "Items", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -22,6 +22,8 @@ trait RaisedButtonProps
   
   var buttonStyle: js.UndefOr[CSSProperties] = js.undefined
   
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -80,6 +82,10 @@ object RaisedButtonProps {
     inline def setButtonStyle(value: CSSProperties): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
     
     inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

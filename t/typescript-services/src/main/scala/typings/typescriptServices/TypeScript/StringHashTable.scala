@@ -8,11 +8,11 @@ trait StringHashTable[T]
   extends StObject
      with IHashTable[T] {
   
-  /* private */ var itemCount: js.Any
+  /* private */ var itemCount: Any
   
   def remove(key: String): Unit
   
-  /* private */ var table: js.Any
+  /* private */ var table: Any
 }
 object StringHashTable {
   
@@ -20,14 +20,14 @@ object StringHashTable {
     add: (String, T) => Boolean,
     addOrUpdate: (String, T) => Boolean,
     count: () => Double,
-    every: (js.Function3[/* k */ String, T, /* context */ js.Any, Unit], js.Any) => Boolean,
+    every: (js.Function3[/* k */ String, T, /* context */ Any, Unit], Any) => Boolean,
     getAllKeys: () => js.Array[String],
-    itemCount: js.Any,
+    itemCount: Any,
     lookup: String => T,
-    map: (js.Function3[/* k */ String, T, /* context */ js.Any, Unit], js.Any) => Unit,
+    map: (js.Function3[/* k */ String, T, /* context */ Any, Unit], Any) => Unit,
     remove: String => Unit,
-    some: (js.Function3[/* k */ String, T, /* context */ js.Any, Unit], js.Any) => Boolean,
-    table: js.Any
+    some: (js.Function3[/* k */ String, T, /* context */ Any, Unit], Any) => Boolean,
+    table: Any
   ): StringHashTable[T] = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), addOrUpdate = js.Any.fromFunction2(addOrUpdate), count = js.Any.fromFunction0(count), every = js.Any.fromFunction2(every), getAllKeys = js.Any.fromFunction0(getAllKeys), itemCount = itemCount.asInstanceOf[js.Any], lookup = js.Any.fromFunction1(lookup), map = js.Any.fromFunction2(map), remove = js.Any.fromFunction1(remove), some = js.Any.fromFunction2(some), table = table.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringHashTable[T]]
@@ -35,10 +35,10 @@ object StringHashTable {
   
   extension [Self <: StringHashTable[?], T](x: Self & StringHashTable[T]) {
     
-    inline def setItemCount(value: js.Any): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: Any): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     
     inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    inline def setTable(value: js.Any): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: Any): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
   }
 }

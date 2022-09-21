@@ -10,11 +10,11 @@ object baseMod {
   
   type CancelFn = js.Function0[Unit]
   
-  type DoneFn = js.Function2[/* err */ js.UndefOr[js.Any], /* state */ js.UndefOr[State], Unit]
+  type DoneFn = js.Function2[/* err */ js.UndefOr[Any], /* state */ js.UndefOr[State], Unit]
   
   trait NavigationOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var force: js.UndefOr[Boolean] = js.undefined
     
@@ -51,7 +51,7 @@ object baseMod {
     }
   }
   
-  type Params = Record[String, js.Any]
+  type Params = Record[String, Any]
   
   trait SimpleState extends StObject {
     

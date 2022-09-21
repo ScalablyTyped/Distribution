@@ -6,103 +6,111 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesMod {
   
-  @JSImport("bitcoinjs-lib/types/types", JSImport.Namespace)
+  @JSImport("bitcoinjs-lib/src/types", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "Array")
+  @JSImport("bitcoinjs-lib/src/types", "Array")
   @js.native
-  val Array: js.Any = js.native
+  val Array: Any = js.native
   
   object BIP32Path {
     
     inline def apply(value: java.lang.String): scala.Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
     
-    @JSImport("bitcoinjs-lib/types/types", "BIP32Path")
+    @JSImport("bitcoinjs-lib/src/types", "BIP32Path")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("bitcoinjs-lib/types/types", "BIP32Path.toJSON")
+    @JSImport("bitcoinjs-lib/src/types", "BIP32Path.toJSON")
     @js.native
     def toJSON: js.Function0[java.lang.String] = js.native
     inline def toJSON_=(x: js.Function0[java.lang.String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSON")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("bitcoinjs-lib/types/types", "Boolean")
+  @JSImport("bitcoinjs-lib/src/types", "Boolean")
   @js.native
-  val Boolean: js.Any = js.native
+  val Boolean: Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "Buffer")
+  @JSImport("bitcoinjs-lib/src/types", "Buffer")
   @js.native
-  val Buffer: js.Any = js.native
+  val Buffer: Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "Buffer256bit")
+  @JSImport("bitcoinjs-lib/src/types", "Buffer256bit")
   @js.native
-  val Buffer256bit: js.Any = js.native
+  val Buffer256bit: Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "BufferN")
+  @JSImport("bitcoinjs-lib/src/types", "BufferN")
   @js.native
-  val BufferN: js.Any = js.native
+  val BufferN: Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "ECPoint")
+  @JSImport("bitcoinjs-lib/src/types", "ECPoint")
   @js.native
-  val ECPoint: js.Any = js.native
+  val ECPoint: Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "Function")
+  @JSImport("bitcoinjs-lib/src/types", "Function")
   @js.native
-  val Function: js.Any = js.native
+  val Function: Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "Hash160bit")
+  @JSImport("bitcoinjs-lib/src/types", "Hash160bit")
   @js.native
-  val Hash160bit: js.Any = js.native
+  val Hash160bit: Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "Hash256bit")
+  @JSImport("bitcoinjs-lib/src/types", "Hash256bit")
   @js.native
-  val Hash256bit: js.Any = js.native
+  val Hash256bit: Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "Hex")
+  @JSImport("bitcoinjs-lib/src/types", "Hex")
   @js.native
-  val Hex: js.Any = js.native
+  val Hex: Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "Network")
+  @JSImport("bitcoinjs-lib/src/types", "Network")
   @js.native
-  val Network: js.Any = js.native
+  val Network: Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "Null")
+  @JSImport("bitcoinjs-lib/src/types", "Null")
   @js.native
-  val Null: js.Any = js.native
+  val Null: Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "Number")
+  @JSImport("bitcoinjs-lib/src/types", "Number")
   @js.native
-  val Number: js.Any = js.native
+  val Number: Any = js.native
   
   inline def Satoshi(value: Double): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Satoshi")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
-  inline def Signer(obj: js.Any): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Signer")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+  inline def Signer(obj: Any): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Signer")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
-  @JSImport("bitcoinjs-lib/types/types", "String")
+  @JSImport("bitcoinjs-lib/src/types", "String")
   @js.native
-  val String: js.Any = js.native
+  val String: Any = js.native
   
   inline def UInt31(value: Double): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("UInt31")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
-  @JSImport("bitcoinjs-lib/types/types", "UInt32")
+  @JSImport("bitcoinjs-lib/src/types", "UInt32")
   @js.native
-  val UInt32: js.Any = js.native
+  val UInt32: Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "UInt8")
+  @JSImport("bitcoinjs-lib/src/types", "UInt8")
   @js.native
-  val UInt8: js.Any = js.native
+  val UInt8: Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "maybe")
-  @js.native
-  val maybe: js.Any = js.native
+  inline def isPoint(): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPoint")().asInstanceOf[scala.Boolean]
+  inline def isPoint(p: Double): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPoint")(p.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+  inline def isPoint(p: typings.node.bufferMod.global.Buffer): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPoint")(p.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
-  @JSImport("bitcoinjs-lib/types/types", "oneOf")
+  @JSImport("bitcoinjs-lib/src/types", "maybe")
   @js.native
-  val oneOf: js.Any = js.native
+  val maybe: Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "tuple")
+  @JSImport("bitcoinjs-lib/src/types", "oneOf")
   @js.native
-  val tuple: js.Any = js.native
+  val oneOf: Any = js.native
+  
+  @JSImport("bitcoinjs-lib/src/types", "tuple")
+  @js.native
+  val tuple: Any = js.native
+  
+  @JSImport("bitcoinjs-lib/src/types", "typeforce")
+  @js.native
+  val typeforce: Any = js.native
 }

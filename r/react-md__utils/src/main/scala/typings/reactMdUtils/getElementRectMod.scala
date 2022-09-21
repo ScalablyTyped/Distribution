@@ -1,7 +1,6 @@
 package typings.reactMdUtils
 
-import typings.reactMdUtils.typesMod.Coords
-import typings.std.ClientRect
+import typings.reactMdUtils.positioningTypesMod.Coords
 import typings.std.DOMRect
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -14,6 +13,6 @@ object getElementRectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getElementRect(element: HTMLElement): DOMRect | ClientRect = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementRect")(element.asInstanceOf[js.Any]).asInstanceOf[DOMRect | ClientRect]
-  inline def getElementRect(element: HTMLElement, coords: Coords): DOMRect | ClientRect = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementRect")(element.asInstanceOf[js.Any], coords.asInstanceOf[js.Any])).asInstanceOf[DOMRect | ClientRect]
+  inline def getElementRect(element: HTMLElement): DOMRect = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementRect")(element.asInstanceOf[js.Any]).asInstanceOf[DOMRect]
+  inline def getElementRect(element: HTMLElement, coords: Coords): DOMRect = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementRect")(element.asInstanceOf[js.Any], coords.asInstanceOf[js.Any])).asInstanceOf[DOMRect]
 }

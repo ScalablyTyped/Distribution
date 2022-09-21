@@ -10,10 +10,10 @@ object editLocationMod {
   
   @JSImport("material-ui/svg-icons/maps/edit-location", JSImport.Default)
   @js.native
-  class default () extends MapsEditLocation
+  open class default () extends MapsEditLocation
   
   @JSImport("material-ui/svg-icons/maps/edit-location", "MapsEditLocation")
   @js.native
-  class MapsEditLocation ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsEditLocation ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

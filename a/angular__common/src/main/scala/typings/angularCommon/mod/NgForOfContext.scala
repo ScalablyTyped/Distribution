@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/common", "NgForOfContext")
 @js.native
-class NgForOfContext[T, U /* <: NgIterable[T] */] protected () extends StObject {
+open class NgForOfContext[T, U /* <: NgIterable[T] */] protected () extends StObject {
   def this($implicit: T, ngForOf: U, index: Double, count: Double) = this()
   
   @JSName("$implicit")

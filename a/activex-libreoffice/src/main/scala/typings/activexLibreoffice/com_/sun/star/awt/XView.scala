@@ -61,7 +61,7 @@ object XView {
     draw: (Double, Double) => Unit,
     getGraphics: () => XGraphics,
     getSize: () => Size,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setGraphics: XGraphics => Boolean,
     setZoom: (Double, Double) => Unit

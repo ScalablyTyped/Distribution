@@ -1,7 +1,7 @@
 
 # Scala.js typings for split-at
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Split a string at one or more indices
@@ -10,10 +10,10 @@ Split a string at one or more indices
 | ------------------ | :-------------: |
 | Full name          | split-at |
 | Keywords           | split, cut, at, string, text, index, indexes, indices |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 12573 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 465.0 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/split-at#readme)

@@ -9,5 +9,5 @@ trait FxaaPostProcess
   extends StObject
      with PostProcess {
   
-  /* private */ var _getDefines: js.Any = js.native
+  /* private */ var _getDefines: Any = js.native
 }

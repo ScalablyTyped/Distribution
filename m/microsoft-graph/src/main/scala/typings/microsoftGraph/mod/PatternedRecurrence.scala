@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PatternedRecurrence extends StObject {
   
-  // The frequency of an event.
+  /**
+    * The frequency of an event. For access reviews: Do not specify this property for a one-time access review. Only
+    * interval, dayOfMonth, and type (weekly, absoluteMonthly) properties of recurrencePattern are supported.
+    */
   var pattern: js.UndefOr[NullableOption[RecurrencePattern]] = js.undefined
   
   // The duration of an event.

@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A named range.
-  */
 trait SchemaNamedRange extends StObject {
   
   /**
     * The name of the named range.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID of the named range.
     */
-  var namedRangeId: js.UndefOr[String] = js.undefined
+  var namedRangeId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The range this represents.
@@ -35,9 +32,13 @@ object SchemaNamedRange {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
+    
+    inline def setNamedRangeIdNull: Self = StObject.set(x, "namedRangeId", null)
     
     inline def setNamedRangeIdUndefined: Self = StObject.set(x, "namedRangeId", js.undefined)
     

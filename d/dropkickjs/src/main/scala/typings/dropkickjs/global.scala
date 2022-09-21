@@ -9,7 +9,7 @@ object global {
   
   @JSGlobal("Dropkick")
   @js.native
-  class Dropkick protected ()
+  open class Dropkick protected ()
     extends StObject
        with typings.dropkickjs.Dropkick {
     def this(id: String) = this()

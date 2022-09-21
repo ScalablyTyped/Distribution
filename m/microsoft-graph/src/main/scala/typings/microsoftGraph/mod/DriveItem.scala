@@ -18,8 +18,11 @@ trait DriveItem
   // Analytics about the view activities that took place on this item.
   var analytics: js.UndefOr[NullableOption[ItemAnalytics]] = js.undefined
   
-  // Audio metadata, if the item is an audio file. Read-only.
+  // Audio metadata, if the item is an audio file. Read-only. Read-only. Only on OneDrive Personal.
   var audio: js.UndefOr[NullableOption[Audio]] = js.undefined
+  
+  // Bundle metadata, if the item is a bundle. Read-only.
+  var bundle: js.UndefOr[NullableOption[Bundle]] = js.undefined
   
   /**
     * An eTag for the content of the item. This eTag is not changed if only the metadata is changed. Note This property is
@@ -34,7 +37,7 @@ trait DriveItem
   var children: js.UndefOr[NullableOption[js.Array[DriveItem]]] = js.undefined
   
   // The content stream, if the item represents a file.
-  var content: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var content: js.UndefOr[NullableOption[Any]] = js.undefined
   
   // Information about the deleted state of the item. Read-only.
   var deleted: js.UndefOr[NullableOption[Deleted]] = js.undefined
@@ -56,6 +59,9 @@ trait DriveItem
   
   // Location metadata, if the item has location data. Read-only.
   var location: js.UndefOr[NullableOption[GeoCoordinates]] = js.undefined
+  
+  // Malware metadata, if the item was detected to contain malware. Read-only.
+  var malware: js.UndefOr[NullableOption[Malware]] = js.undefined
   
   /**
     * If present, indicates that one or more operations that might affect the state of the driveItem are pending completion.
@@ -141,6 +147,12 @@ object DriveItem {
     
     inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
+    inline def setBundle(value: NullableOption[Bundle]): Self = StObject.set(x, "bundle", value.asInstanceOf[js.Any])
+    
+    inline def setBundleNull: Self = StObject.set(x, "bundle", null)
+    
+    inline def setBundleUndefined: Self = StObject.set(x, "bundle", js.undefined)
+    
     inline def setCTag(value: NullableOption[String]): Self = StObject.set(x, "cTag", value.asInstanceOf[js.Any])
     
     inline def setCTagNull: Self = StObject.set(x, "cTag", null)
@@ -153,9 +165,9 @@ object DriveItem {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: DriveItem*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: DriveItem*): Self = StObject.set(x, "children", js.Array(value*))
     
-    inline def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NullableOption[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentNull: Self = StObject.set(x, "content", null)
     
@@ -203,6 +215,12 @@ object DriveItem {
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
+    inline def setMalware(value: NullableOption[Malware]): Self = StObject.set(x, "malware", value.asInstanceOf[js.Any])
+    
+    inline def setMalwareNull: Self = StObject.set(x, "malware", null)
+    
+    inline def setMalwareUndefined: Self = StObject.set(x, "malware", js.undefined)
+    
     inline def setPendingOperations(value: NullableOption[PendingOperations]): Self = StObject.set(x, "pendingOperations", value.asInstanceOf[js.Any])
     
     inline def setPendingOperationsNull: Self = StObject.set(x, "pendingOperations", null)
@@ -215,7 +233,7 @@ object DriveItem {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: Permission*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setPhoto(value: NullableOption[Photo]): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
@@ -277,7 +295,7 @@ object DriveItem {
     
     inline def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
     
-    inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value*))
     
     inline def setThumbnails(value: NullableOption[js.Array[ThumbnailSet]]): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     
@@ -285,7 +303,7 @@ object DriveItem {
     
     inline def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
     
-    inline def setThumbnailsVarargs(value: ThumbnailSet*): Self = StObject.set(x, "thumbnails", js.Array(value :_*))
+    inline def setThumbnailsVarargs(value: ThumbnailSet*): Self = StObject.set(x, "thumbnails", js.Array(value*))
     
     inline def setVersions(value: NullableOption[js.Array[DriveItemVersion]]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
@@ -293,7 +311,7 @@ object DriveItem {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    inline def setVersionsVarargs(value: DriveItemVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: DriveItemVersion*): Self = StObject.set(x, "versions", js.Array(value*))
     
     inline def setVideo(value: NullableOption[Video]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     

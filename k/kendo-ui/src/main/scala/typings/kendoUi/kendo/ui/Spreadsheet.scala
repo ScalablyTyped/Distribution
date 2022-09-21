@@ -25,12 +25,12 @@ trait Spreadsheet
   
   def defineName(name: String, value: String, hidden: Boolean): Unit = js.native
   
-  def fromFile(blob: Blob): JQueryPromise[js.Any] = js.native
-  def fromFile(blob: File): JQueryPromise[js.Any] = js.native
+  def fromFile(blob: Blob): JQueryPromise[Any] = js.native
+  def fromFile(blob: File): JQueryPromise[Any] = js.native
   
-  def fromJSON(data: js.Any): Unit = js.native
+  def fromJSON(data: Any): Unit = js.native
   
-  def insertSheet(options: js.Any): Sheet = js.native
+  def insertSheet(options: Any): Sheet = js.native
   
   def moveSheetToIndex(sheet: Sheet, index: Double): Unit = js.native
   
@@ -47,7 +47,9 @@ trait Spreadsheet
   
   def saveAsExcel(): Unit = js.native
   
-  def saveAsPDF(): JQueryPromise[js.Any] = js.native
+  def saveAsPDF(): JQueryPromise[Any] = js.native
+  
+  def saveJSON(): JQueryPromise[Any] = js.native
   
   def sheetByIndex(index: Double): Sheet = js.native
   
@@ -55,9 +57,9 @@ trait Spreadsheet
   
   def sheetIndex(sheet: Sheet): Double = js.native
   
-  def sheets(): js.Any = js.native
+  def sheets(): Any = js.native
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   def undefineName(name: String): Unit = js.native
   

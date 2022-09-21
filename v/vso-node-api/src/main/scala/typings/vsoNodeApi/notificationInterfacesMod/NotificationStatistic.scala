@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.notificationInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NotificationStatistic extends StObject {
   
-  var date: Date
+  var date: js.Date
   
   var hitCount: Double
   
@@ -20,7 +19,13 @@ trait NotificationStatistic extends StObject {
 }
 object NotificationStatistic {
   
-  inline def apply(date: Date, hitCount: Double, path: String, `type`: NotificationStatisticType, user: IdentityRef): NotificationStatistic = {
+  inline def apply(
+    date: js.Date,
+    hitCount: Double,
+    path: String,
+    `type`: NotificationStatisticType,
+    user: IdentityRef
+  ): NotificationStatistic = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], hitCount = hitCount.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationStatistic]
@@ -28,7 +33,7 @@ object NotificationStatistic {
   
   extension [Self <: NotificationStatistic](x: Self) {
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setHitCount(value: Double): Self = StObject.set(x, "hitCount", value.asInstanceOf[js.Any])
     

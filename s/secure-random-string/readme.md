@@ -10,15 +10,12 @@ Generates a secure random string with a given length
 | ------------------ | :-------------: |
 | Full name          | secure-random-string |
 | Keywords           | crypto, cryptography, secure, random, string, token |
-| # releases         | 3 |
-| # dependents       | 28 |
-| # downloads        | 188308 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 19408.0 |
+| # stars            | 19.0 |
 
 ## Links
-- [Homepage](https://github.com/S2-/securerandomstring)
-- [Bugs](https://github.com/S2-/securerandomstring/issues)
-- [Repository](https://github.com/S2-/securerandomstring)
 - [Npm](https://www.npmjs.com/package/secure-random-string)
     
 

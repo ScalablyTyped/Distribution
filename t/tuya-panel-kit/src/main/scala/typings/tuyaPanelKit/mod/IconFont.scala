@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "IconFont")
 @js.native
-class IconFont protected ()
-  extends Component[IconFontProps, js.Object, js.Any] {
+open class IconFont protected ()
+  extends Component[IconFontProps, js.Object, Any] {
   def this(props: IconFontProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: IconFontProps, context: js.Any) = this()
+  def this(props: IconFontProps, context: Any) = this()
 }

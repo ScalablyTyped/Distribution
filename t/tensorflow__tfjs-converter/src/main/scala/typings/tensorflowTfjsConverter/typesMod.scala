@@ -47,7 +47,7 @@ object typesMod {
       
       inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value*))
     }
   }
   

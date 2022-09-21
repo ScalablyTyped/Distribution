@@ -12,7 +12,7 @@ object osgridrefMod {
   
   @JSImport("geodesy/osgridref", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with OsGridRef {
     def this(easting: Double, northing: Double) = this()
@@ -30,7 +30,7 @@ object osgridrefMod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("geodesy/osgridref", "Dms")
   @js.native
-  class Dms ()
+  open class Dms ()
     extends typings.geodesy.latlonEllipsoidalDatumMod.Dms
   object Dms {
     
@@ -85,7 +85,7 @@ object osgridrefMod {
   
   @JSImport("geodesy/osgridref", "LatLon")
   @js.native
-  class LatLon () extends LatLonOsGridRef
+  open class LatLon () extends LatLonOsGridRef
   
   @js.native
   trait LatLonOsGridRef

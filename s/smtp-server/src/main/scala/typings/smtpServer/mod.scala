@@ -14,7 +14,6 @@ import typings.smtpServer.smtpServerStrings.PLAIN
 import typings.smtpServer.smtpServerStrings.XOAUTH2
 import typings.smtpServer.smtpServerStrings.close
 import typings.smtpServer.smtpServerStrings.error
-import typings.std.Error
 import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -25,33 +24,33 @@ object mod {
   
   @JSImport("smtp-server", "SMTPServer")
   @js.native
-  class SMTPServer () extends EventEmitter {
+  open class SMTPServer () extends EventEmitter {
     def this(options: SMTPServerOptions) = this()
     
     @JSName("addListener")
     def addListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     // tslint:disable-line unified-signatures
     /** Closes the server */
     def close(): Unit = js.native
     def close(callback: js.Function0[Unit]): Unit = js.native
     
-    var connections: Set[js.Any] = js.native
+    var connections: Set[Any] = js.native
     
     @JSName("emit")
     def emit_close(event: close): Boolean = js.native
     @JSName("emit")
-    def emit_error(event: error, err: Error): Boolean = js.native
+    def emit_error(event: error, err: js.Error): Boolean = js.native
     
     /** Start listening on selected port and interface */
     def listen(): Server = js.native
-    def listen(handle: js.Any): Server = js.native
-    def listen(handle: js.Any, backlog: Double): Server = js.native
-    def listen(handle: js.Any, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(handle: js.Any, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(handle: js.Any, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(handle: Any): Server = js.native
+    def listen(handle: Any, backlog: Double): Server = js.native
+    def listen(handle: Any, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(handle: Any, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(handle: Any, listeningListener: js.Function0[Unit]): Server = js.native
     def listen(options: ListenOptions): Server = js.native
     def listen(options: ListenOptions, listeningListener: js.Function0[Unit]): Server = js.native
     def listen(path: String): Unit = js.native
@@ -87,97 +86,91 @@ object mod {
     @JSName("listen")
     def listen_Server(path: String): Server = js.native
     
-    @JSName("listenerCount")
-    def listenerCount_close(event: close): Double = js.native
-    @JSName("listenerCount")
-    def listenerCount_error(event: error): Double = js.native
+    def listenerCount(event: close | error): Double = js.native
     
     @JSName("listeners")
     def listeners_close(event: close): js.Array[js.Function0[Unit]] = js.native
     @JSName("listeners")
-    def listeners_error(event: error): js.Array[js.Function1[/* err */ Error, Unit]] = js.native
+    def listeners_error(event: error): js.Array[js.Function1[/* err */ js.Error, Unit]] = js.native
     
     var logger: Logger = js.native
     
     @JSName("off")
     def off_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("off")
-    def off_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def off_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     /** Authentication handler. Override this */
     def onAuth(
       auth: SMTPServerAuthentication,
       session: SMTPServerSession,
       callback: js.Function2[
-          /* err */ js.UndefOr[Error | Null], 
+          /* err */ js.UndefOr[js.Error | Null], 
           /* response */ js.UndefOr[SMTPServerAuthenticationResponse], 
           Unit
         ]
     ): Unit = js.native
     
     /** Override this */
-    def onClose(session: SMTPServerSession, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    def onClose(session: SMTPServerSession, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
     
     /** Override this */
-    def onConnect(session: SMTPServerSession, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    def onConnect(session: SMTPServerSession, callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
     
     /** Override this */
     def onData(
       stream: SMTPServerDataStream,
       session: SMTPServerSession,
-      callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
     
     /** Override this */
     def onMailFrom(
       address: SMTPServerAddress,
       session: SMTPServerSession,
-      callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
     
     /** Override this */
     def onRcptTo(
       address: SMTPServerAddress,
       session: SMTPServerSession,
-      callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
     ): Unit = js.native
     
     @JSName("on")
     def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("once")
     def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     var options: SMTPServerOptions = js.native
     
     @JSName("prependListener")
     def prependListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("prependOnceListener")
     def prependOnceListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     @JSName("rawListeners")
     def rawListeners_close(event: close): js.Array[js.Function0[Unit]] = js.native
     @JSName("rawListeners")
-    def rawListeners_error(event: error): js.Array[js.Function1[/* err */ Error, Unit]] = js.native
+    def rawListeners_error(event: error): js.Array[js.Function1[/* err */ js.Error, Unit]] = js.native
     
-    @JSName("removeAllListener")
-    def removeAllListener_close(event: close): this.type = js.native
-    @JSName("removeAllListener")
-    def removeAllListener_error(event: error): this.type = js.native
+    def removeAllListener(event: close | error): this.type = js.native
     
     @JSName("removeListener")
     def removeListener_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def removeListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     var secureContext: Map[String, SecureContext] = js.native
     
@@ -281,7 +274,7 @@ object mod {
       * and this value is used later with the session data to identify the user.
       * If this value is empty, then the authentication is considered failed
       */
-    var user: js.UndefOr[js.Any] = js.undefined
+    var user: js.UndefOr[Any] = js.undefined
   }
   object SMTPServerAuthenticationResponse {
     
@@ -296,7 +289,7 @@ object mod {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
       inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
@@ -343,7 +336,7 @@ object mod {
       
       inline def setRcptTo(value: js.Array[SMTPServerAddress]): Self = StObject.set(x, "rcptTo", value.asInstanceOf[js.Any])
       
-      inline def setRcptToVarargs(value: SMTPServerAddress*): Self = StObject.set(x, "rcptTo", js.Array(value :_*))
+      inline def setRcptToVarargs(value: SMTPServerAddress*): Self = StObject.set(x, "rcptTo", js.Array(value*))
     }
   }
   
@@ -456,7 +449,7 @@ object mod {
           /* auth */ SMTPServerAuthentication, 
           /* session */ SMTPServerSession, 
           /* callback */ js.Function2[
-            /* err */ js.UndefOr[Error | Null], 
+            /* err */ js.UndefOr[js.Error | Null], 
             /* response */ js.UndefOr[SMTPServerAuthenticationResponse], 
             Unit
           ], 
@@ -470,7 +463,7 @@ object mod {
     var onClose: js.UndefOr[
         js.Function2[
           /* session */ SMTPServerSession, 
-          /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit], 
+          /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -481,7 +474,7 @@ object mod {
     var onConnect: js.UndefOr[
         js.Function2[
           /* session */ SMTPServerSession, 
-          /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit], 
+          /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -493,7 +486,7 @@ object mod {
         js.Function3[
           /* stream */ SMTPServerDataStream, 
           /* session */ SMTPServerSession, 
-          /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit], 
+          /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -505,7 +498,7 @@ object mod {
         js.Function3[
           /* address */ SMTPServerAddress, 
           /* session */ SMTPServerSession, 
-          /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit], 
+          /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -517,7 +510,7 @@ object mod {
         js.Function3[
           /* address */ SMTPServerAddress, 
           /* session */ SMTPServerSession, 
-          /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit], 
+          /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit], 
           Unit
         ]
       ] = js.undefined
@@ -587,7 +580,7 @@ object mod {
       
       inline def setAuthMethodsUndefined: Self = StObject.set(x, "authMethods", js.undefined)
       
-      inline def setAuthMethodsVarargs(value: String*): Self = StObject.set(x, "authMethods", js.Array(value :_*))
+      inline def setAuthMethodsVarargs(value: String*): Self = StObject.set(x, "authMethods", js.Array(value*))
       
       inline def setAuthOptional(value: Boolean): Self = StObject.set(x, "authOptional", value.asInstanceOf[js.Any])
       
@@ -609,7 +602,7 @@ object mod {
       
       inline def setDisabledCommandsUndefined: Self = StObject.set(x, "disabledCommands", js.undefined)
       
-      inline def setDisabledCommandsVarargs(value: String*): Self = StObject.set(x, "disabledCommands", js.Array(value :_*))
+      inline def setDisabledCommandsVarargs(value: String*): Self = StObject.set(x, "disabledCommands", js.Array(value*))
       
       inline def setHide8BITMIME(value: Boolean): Self = StObject.set(x, "hide8BITMIME", value.asInstanceOf[js.Any])
       
@@ -649,7 +642,7 @@ object mod {
       
       inline def setOnAuth(
         value: (/* auth */ SMTPServerAuthentication, /* session */ SMTPServerSession, /* callback */ js.Function2[
-              /* err */ js.UndefOr[Error | Null], 
+              /* err */ js.UndefOr[js.Error | Null], 
               /* response */ js.UndefOr[SMTPServerAuthenticationResponse], 
               Unit
             ]) => Unit
@@ -658,31 +651,31 @@ object mod {
       inline def setOnAuthUndefined: Self = StObject.set(x, "onAuth", js.undefined)
       
       inline def setOnClose(
-        value: (/* session */ SMTPServerSession, /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit
+        value: (/* session */ SMTPServerSession, /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]) => Unit
       ): Self = StObject.set(x, "onClose", js.Any.fromFunction2(value))
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
       inline def setOnConnect(
-        value: (/* session */ SMTPServerSession, /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit
+        value: (/* session */ SMTPServerSession, /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]) => Unit
       ): Self = StObject.set(x, "onConnect", js.Any.fromFunction2(value))
       
       inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
       
       inline def setOnData(
-        value: (/* stream */ SMTPServerDataStream, /* session */ SMTPServerSession, /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit
+        value: (/* stream */ SMTPServerDataStream, /* session */ SMTPServerSession, /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]) => Unit
       ): Self = StObject.set(x, "onData", js.Any.fromFunction3(value))
       
       inline def setOnDataUndefined: Self = StObject.set(x, "onData", js.undefined)
       
       inline def setOnMailFrom(
-        value: (/* address */ SMTPServerAddress, /* session */ SMTPServerSession, /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit
+        value: (/* address */ SMTPServerAddress, /* session */ SMTPServerSession, /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]) => Unit
       ): Self = StObject.set(x, "onMailFrom", js.Any.fromFunction3(value))
       
       inline def setOnMailFromUndefined: Self = StObject.set(x, "onMailFrom", js.undefined)
       
       inline def setOnRcptTo(
-        value: (/* address */ SMTPServerAddress, /* session */ SMTPServerSession, /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit
+        value: (/* address */ SMTPServerAddress, /* session */ SMTPServerSession, /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]) => Unit
       ): Self = StObject.set(x, "onRcptTo", js.Any.fromFunction3(value))
       
       inline def setOnRcptToUndefined: Self = StObject.set(x, "onRcptTo", js.undefined)
@@ -776,6 +769,11 @@ object mod {
     var tlsOptions: TlsOptions
     
     var transmissionType: String
+    
+    /*
+      * Optional parameter that is added to the session object if provided to the onAuth callback
+      */
+    var user: js.UndefOr[String] = js.undefined
   }
   object SMTPServerSession {
     
@@ -822,6 +820,10 @@ object mod {
       inline def setTlsOptions(value: TlsOptions): Self = StObject.set(x, "tlsOptions", value.asInstanceOf[js.Any])
       
       inline def setTransmissionType(value: String): Self = StObject.set(x, "transmissionType", value.asInstanceOf[js.Any])
+      
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   

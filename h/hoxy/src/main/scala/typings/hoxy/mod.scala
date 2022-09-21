@@ -1,12 +1,10 @@
 package typings.hoxy
 
-import typings.cheerio.cheerio.CheerioAPI
 import typings.hoxy.anon.PartialSlow
-import typings.node.Buffer
+import typings.hoxy.anon.Typeofcheerio
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Writable
-import typings.std.Error
 import typings.std.Record
-import typings.std.RegExp
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +18,7 @@ object mod {
   
   @JSImport("hoxy", "Cycle")
   @js.native
-  /* private */ class Cycle () extends StObject {
+  /* private */ open class Cycle () extends StObject {
     
     /**
       * Stores and retrieves data on a cycle instance. This is useful since the same
@@ -28,8 +26,8 @@ object mod {
       * allowing you to share related data across disparate scopes. With two params this
       * method behaves as a setter, with one param as a getter.
       */
-    def data(name: String): js.Any = js.native
-    def data(name: String, value: js.Any): js.Any = js.native
+    def data(name: String): Any = js.native
+    def data(name: String, value: Any): Any = js.native
     
     /**
       * Provisions responses from the local filesystem. Generally, the reason you'd do
@@ -48,7 +46,7 @@ object mod {
   
   @JSImport("hoxy", "Proxy")
   @js.native
-  class Proxy protected () extends StObject {
+  open class Proxy protected () extends StObject {
     /* protected */ def this(opts: CreateServerOptions) = this()
     
     /**
@@ -124,7 +122,7 @@ object mod {
   
   @JSImport("hoxy", "Request")
   @js.native
-  /* private */ class Request () extends StObject {
+  /* private */ open class Request () extends StObject {
     
     /**
       * Request body binary buffer. This is only present if you intercept the
@@ -154,7 +152,7 @@ object mod {
       * Request body parsed as JSON. This is only present if you intercept the
       * request as:'json'. Changes made to this object will be seen by the server.
       */
-    var json: js.UndefOr[Record[String, js.Any]] = js.native
+    var json: js.UndefOr[Record[String, Any]] = js.native
     
     /**
       * All-caps HTTP method used. Lowercase values are converted to uppercase
@@ -221,7 +219,7 @@ object mod {
   
   @JSImport("hoxy", "Response")
   @js.native
-  /* private */ class Response () extends StObject {
+  /* private */ open class Response () extends StObject {
     
     /**
       * Response body parsed as DOM. This object is only present if you intercept
@@ -229,7 +227,7 @@ object mod {
       * API. Changes made to it will be seen by the client.
       */
     @JSName("$")
-    var $: js.UndefOr[ReturnType[CheerioAPI]] = js.native
+    var $: js.UndefOr[ReturnType[Typeofcheerio]] = js.native
     
     /**
       * Response body binary buffer. This is only present if you intercept the
@@ -247,7 +245,7 @@ object mod {
       * Response body parsed as JSON. This is only present if you intercept the
       * response as:'json'. Changes to this object will be seen by the client.
       */
-    var json: js.UndefOr[js.Any] = js.native
+    var json: js.UndefOr[Any] = js.native
     
     /**
       * Simulates slowness during request phase. With this method you can set a minimum
@@ -325,11 +323,11 @@ object mod {
       
       inline def setCert(value: String | (js.Array[Buffer | String]) | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      inline def setCertVarargs(value: (Buffer | String)*): Self = StObject.set(x, "cert", js.Array(value :_*))
+      inline def setCertVarargs(value: (Buffer | String)*): Self = StObject.set(x, "cert", js.Array(value*))
       
       inline def setKey(value: String | (js.Array[Buffer | js.Object | String]) | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setKeyVarargs(value: (Buffer | js.Object | String)*): Self = StObject.set(x, "key", js.Array(value :_*))
+      inline def setKeyVarargs(value: (Buffer | js.Object | String)*): Self = StObject.set(x, "key", js.Array(value*))
     }
   }
   
@@ -403,7 +401,7 @@ object mod {
     }
   }
   
-  type Filter[T] = RegExp | TesterFunction[T] | T
+  type Filter[T] = js.RegExp | TesterFunction[T] | T
   
   /* Rewritten from type alias, can be one of: 
     - typings.hoxy.hoxyStrings.POST
@@ -602,7 +600,7 @@ object mod {
   
   trait Log extends StObject {
     
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[js.Error] = js.undefined
     
     var level: LogLevel
     
@@ -617,7 +615,7 @@ object mod {
     
     extension [Self <: Log](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -645,7 +643,7 @@ object mod {
     inline def warn: typings.hoxy.hoxyStrings.warn = "warn".asInstanceOf[typings.hoxy.hoxyStrings.warn]
   }
   
-  type LoggerCallbackFunction = js.Function1[/* log */ Log, js.Any]
+  type LoggerCallbackFunction = js.Function1[/* log */ Log, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.hoxy.hoxyStrings.request
@@ -665,7 +663,7 @@ object mod {
     inline def `response-sent`: typings.hoxy.hoxyStrings.`response-sent` = "response-sent".asInstanceOf[typings.hoxy.hoxyStrings.`response-sent`]
   }
   
-  type PossibleErrorCallback = js.Function1[/* err */ js.UndefOr[Error], js.Any]
+  type PossibleErrorCallback = js.Function1[/* err */ js.UndefOr[js.Error], Any]
   
   trait ServeOptions extends StObject {
     

@@ -12,16 +12,16 @@ object previewServiceMod {
   
   @JSImport("playable/dist/src/modules/ui/preview-service/preview-service", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with PreviewService {
     def this(hasEngine: EngineIPlaybackEngine) = this()
     
     /* private */ /* CompleteClass */
-    var _engine: js.Any = js.native
+    var _engine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _framesMap: js.Any = js.native
+    var _framesMap: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -55,15 +55,15 @@ object previewServiceMod {
     extends StObject
        with IPreviewService {
     
-    /* private */ var _engine: js.Any
+    /* private */ var _engine: Any
     
-    /* private */ var _framesMap: js.Any
+    /* private */ var _framesMap: Any
   }
   object PreviewService {
     
     inline def apply(
-      _engine: js.Any,
-      _framesMap: js.Any,
+      _engine: Any,
+      _framesMap: Any,
       destroy: () => Unit,
       getAt: Double => js.Array[INormalizedFramesQuality],
       setFramesMap: IFramesData => Unit
@@ -74,9 +74,9 @@ object previewServiceMod {
     
     extension [Self <: PreviewService](x: Self) {
       
-      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      inline def set_framesMap(value: js.Any): Self = StObject.set(x, "_framesMap", value.asInstanceOf[js.Any])
+      inline def set_framesMap(value: Any): Self = StObject.set(x, "_framesMap", value.asInstanceOf[js.Any])
     }
   }
 }

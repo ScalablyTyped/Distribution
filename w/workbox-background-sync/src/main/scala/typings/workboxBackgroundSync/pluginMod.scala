@@ -12,7 +12,7 @@ object pluginMod {
   
   @JSImport("workbox-background-sync/Plugin", "Plugin")
   @js.native
-  class Plugin protected ()
+  open class Plugin protected ()
     extends StObject
        with WorkboxPlugin {
     def this(name: String) = this()

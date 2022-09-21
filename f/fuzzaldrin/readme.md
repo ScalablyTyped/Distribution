@@ -10,10 +10,10 @@ Fuzzy filtering and string scoring
 | ------------------ | :-------------: |
 | Full name          | fuzzaldrin |
 | Keywords           | fuzzy, filter, stringscore |
-| # releases         | 0 |
-| # dependents       | 56 |
-| # downloads        | 6067651 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 422736.6666666667 |
+| # stars            | 316.0 |
 
 ## Links
 - [Homepage](https://github.com/atom/fuzzaldrin#readme)

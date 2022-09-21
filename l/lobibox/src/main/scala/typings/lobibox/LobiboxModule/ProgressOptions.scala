@@ -13,7 +13,7 @@ trait ProgressOptions
   // Show percentage of progress
   var label: js.UndefOr[String] = js.undefined
   
-  var progressCompleted: js.UndefOr[js.Any] = js.undefined
+  var progressCompleted: js.UndefOr[Any] = js.undefined
   
   // Show progress label
   var progressTpl: js.UndefOr[Boolean] = js.undefined
@@ -21,7 +21,7 @@ trait ProgressOptions
   //Template of progress bar
   //Events
   @JSName("progressUpdated")
-  var progressUpdated_ProgressOptions: js.UndefOr[js.Any] = js.undefined
+  var progressUpdated_ProgressOptions: js.UndefOr[Any] = js.undefined
   
   var showProgressLabel: js.UndefOr[Boolean] = js.undefined
 }
@@ -38,7 +38,7 @@ object ProgressOptions {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setProgressCompleted(value: js.Any): Self = StObject.set(x, "progressCompleted", value.asInstanceOf[js.Any])
+    inline def setProgressCompleted(value: Any): Self = StObject.set(x, "progressCompleted", value.asInstanceOf[js.Any])
     
     inline def setProgressCompletedUndefined: Self = StObject.set(x, "progressCompleted", js.undefined)
     
@@ -46,7 +46,7 @@ object ProgressOptions {
     
     inline def setProgressTplUndefined: Self = StObject.set(x, "progressTpl", js.undefined)
     
-    inline def setProgressUpdated(value: js.Any): Self = StObject.set(x, "progressUpdated", value.asInstanceOf[js.Any])
+    inline def setProgressUpdated(value: Any): Self = StObject.set(x, "progressUpdated", value.asInstanceOf[js.Any])
     
     inline def setProgressUpdatedUndefined: Self = StObject.set(x, "progressUpdated", js.undefined)
     

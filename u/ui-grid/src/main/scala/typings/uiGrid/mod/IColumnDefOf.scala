@@ -35,6 +35,11 @@ trait IColumnDefOf[TEntity]
   var aggregationType: js.UndefOr[Double | js.Function] = js.undefined
   
   /**
+    * Allows float number in column width calculation
+    */
+  var allowFloatWidth: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * cellClass can be a string specifying the class to append to a cell
     * or it can be a function(row,rowRenderIndex, col, colRenderIndex)
     * that returns a class name
@@ -218,8 +223,8 @@ trait IColumnDefOf[TEntity]
     */
   var sortingAlgorithm: js.UndefOr[
     js.Function5[
-      /* a */ js.Any, 
-      /* b */ js.Any, 
+      /* a */ Any, 
+      /* b */ Any, 
       /* rowA */ IGridRowOf[TEntity], 
       /* rowB */ IGridRowOf[TEntity], 
       /* direction */ String, 
@@ -270,6 +275,10 @@ object IColumnDefOf {
     inline def setAggregationType(value: Double | js.Function): Self = StObject.set(x, "aggregationType", value.asInstanceOf[js.Any])
     
     inline def setAggregationTypeUndefined: Self = StObject.set(x, "aggregationType", js.undefined)
+    
+    inline def setAllowFloatWidth(value: Boolean): Self = StObject.set(x, "allowFloatWidth", value.asInstanceOf[js.Any])
+    
+    inline def setAllowFloatWidthUndefined: Self = StObject.set(x, "allowFloatWidth", js.undefined)
     
     inline def setCellClass(value: String | ICellClassGetter[TEntity]): Self = StObject.set(x, "cellClass", value.asInstanceOf[js.Any])
     
@@ -341,7 +350,7 @@ object IColumnDefOf {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: IFilterOptions*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: IFilterOptions*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setFooterCellClass(value: String | IHeaderFooterCellClassGetter[TEntity]): Self = StObject.set(x, "footerCellClass", value.asInstanceOf[js.Any])
     
@@ -389,7 +398,7 @@ object IColumnDefOf {
     
     inline def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
     
-    inline def setMenuItemsVarargs(value: IMenuItem*): Self = StObject.set(x, "menuItems", js.Array(value :_*))
+    inline def setMenuItemsVarargs(value: IMenuItem*): Self = StObject.set(x, "menuItems", js.Array(value*))
     
     inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
@@ -409,12 +418,12 @@ object IColumnDefOf {
     
     inline def setSortDirectionCycleUndefined: Self = StObject.set(x, "sortDirectionCycle", js.undefined)
     
-    inline def setSortDirectionCycleVarargs(value: (Null | String)*): Self = StObject.set(x, "sortDirectionCycle", js.Array(value :_*))
+    inline def setSortDirectionCycleVarargs(value: (Null | String)*): Self = StObject.set(x, "sortDirectionCycle", js.Array(value*))
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
     inline def setSortingAlgorithm(
-      value: (/* a */ js.Any, /* b */ js.Any, /* rowA */ IGridRowOf[TEntity], /* rowB */ IGridRowOf[TEntity], /* direction */ String) => Double
+      value: (/* a */ Any, /* b */ Any, /* rowA */ IGridRowOf[TEntity], /* rowB */ IGridRowOf[TEntity], /* direction */ String) => Double
     ): Self = StObject.set(x, "sortingAlgorithm", js.Any.fromFunction5(value))
     
     inline def setSortingAlgorithmUndefined: Self = StObject.set(x, "sortingAlgorithm", js.undefined)

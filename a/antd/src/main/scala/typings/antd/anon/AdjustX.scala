@@ -6,25 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AdjustX extends StObject {
   
-  var adjustX: js.UndefOr[Boolean] = js.undefined
+  var adjustX: Double
   
-  var adjustY: js.UndefOr[Boolean] = js.undefined
+  var adjustY: Double
 }
 object AdjustX {
   
-  inline def apply(): AdjustX = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(adjustX: Double, adjustY: Double): AdjustX = {
+    val __obj = js.Dynamic.literal(adjustX = adjustX.asInstanceOf[js.Any], adjustY = adjustY.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdjustX]
   }
   
   extension [Self <: AdjustX](x: Self) {
     
-    inline def setAdjustX(value: Boolean): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
+    inline def setAdjustX(value: Double): Self = StObject.set(x, "adjustX", value.asInstanceOf[js.Any])
     
-    inline def setAdjustXUndefined: Self = StObject.set(x, "adjustX", js.undefined)
-    
-    inline def setAdjustY(value: Boolean): Self = StObject.set(x, "adjustY", value.asInstanceOf[js.Any])
-    
-    inline def setAdjustYUndefined: Self = StObject.set(x, "adjustY", js.undefined)
+    inline def setAdjustY(value: Double): Self = StObject.set(x, "adjustY", value.asInstanceOf[js.Any])
   }
 }

@@ -10,10 +10,10 @@ A memcache client for node using the binary protocol and SASL authentication
 | ------------------ | :-------------: |
 | Full name          | memjs |
 | Keywords           | cache, memcache, memcached, MemCachier |
-| # releases         | 3 |
-| # dependents       | 33 |
-| # downloads        | 399368 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 204415.0 |
+| # stars            | 170.0 |
 
 ## Links
 - [Homepage](http://github.com/memcachier/memjs)

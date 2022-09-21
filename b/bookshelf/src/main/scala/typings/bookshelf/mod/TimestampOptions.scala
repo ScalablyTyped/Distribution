@@ -1,19 +1,24 @@
 package typings.bookshelf.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimestampOptions extends js.Object {
+trait TimestampOptions extends StObject {
+  
   var method: js.UndefOr[String] = js.undefined
 }
-
 object TimestampOptions {
-  @scala.inline
-  def apply(method: String = null): TimestampOptions = {
+  
+  inline def apply(): TimestampOptions = {
     val __obj = js.Dynamic.literal()
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimestampOptions]
   }
+  
+  extension [Self <: TimestampOptions](x: Self) {
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+  }
 }
-

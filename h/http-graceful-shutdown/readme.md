@@ -1,7 +1,7 @@
 
 # Scala.js typings for http-graceful-shutdown
 
-Typings are for version 2.3.2
+Typings are for version 3.1.8
 
 ## Library description:
 gracefully shuts downs http server
@@ -9,11 +9,11 @@ gracefully shuts downs http server
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | http-graceful-shutdown |
-| Keywords           | http, https, koa, express, fastify, shutdown, graceful, force, graceful-shutdown, http-shutdown, http-terminate, shutdown, kubernetes, prometheus |
-| # releases         | 4 |
-| # dependents       | 16 |
-| # downloads        | 1669130 |
-| # stars            | 2 |
+| Keywords           | http, https, koa, express, fastify, shutdown, graceful, force, graceful-shutdown, http-shutdown, http-terminate, shutdown, kubernetes, prometheus, backend |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 377939.6666666667 |
+| # stars            | 162.0 |
 
 ## Links
 - [Homepage](https://github.com/sebhildebrandt/http-graceful-shutdown)

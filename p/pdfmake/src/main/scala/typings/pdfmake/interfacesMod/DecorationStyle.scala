@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
+  - typings.pdfmake.pdfmakeStrings.solid
   - typings.pdfmake.pdfmakeStrings.dashed
   - typings.pdfmake.pdfmakeStrings.dotted
   - typings.pdfmake.pdfmakeStrings.double
@@ -18,6 +19,8 @@ object DecorationStyle {
   inline def dotted: typings.pdfmake.pdfmakeStrings.dotted = "dotted".asInstanceOf[typings.pdfmake.pdfmakeStrings.dotted]
   
   inline def double: typings.pdfmake.pdfmakeStrings.double = "double".asInstanceOf[typings.pdfmake.pdfmakeStrings.double]
+  
+  inline def solid: typings.pdfmake.pdfmakeStrings.solid = "solid".asInstanceOf[typings.pdfmake.pdfmakeStrings.solid]
   
   inline def wavy: typings.pdfmake.pdfmakeStrings.wavy = "wavy".asInstanceOf[typings.pdfmake.pdfmakeStrings.wavy]
 }

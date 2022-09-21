@@ -12,7 +12,7 @@ trait RegionsInfo extends StObject {
   var AdditionalRegions: js.UndefOr[typings.awsSdk.directoryserviceMod.AdditionalRegions] = js.undefined
   
   /**
-    * The Region from where the AWS Managed Microsoft AD directory was originally created.
+    * The Region where the Managed Microsoft AD directory was originally created.
     */
   var PrimaryRegion: js.UndefOr[RegionName] = js.undefined
 }
@@ -29,7 +29,7 @@ object RegionsInfo {
     
     inline def setAdditionalRegionsUndefined: Self = StObject.set(x, "AdditionalRegions", js.undefined)
     
-    inline def setAdditionalRegionsVarargs(value: RegionName*): Self = StObject.set(x, "AdditionalRegions", js.Array(value :_*))
+    inline def setAdditionalRegionsVarargs(value: RegionName*): Self = StObject.set(x, "AdditionalRegions", js.Array(value*))
     
     inline def setPrimaryRegion(value: RegionName): Self = StObject.set(x, "PrimaryRegion", value.asInstanceOf[js.Any])
     

@@ -32,6 +32,6 @@ object TargetConfiguration {
     
     inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    inline def setImportsVarargs(value: ImportFile*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: ImportFile*): Self = StObject.set(x, "imports", js.Array(value*))
   }
 }

@@ -39,7 +39,7 @@ object Logging {
   
   @JSImport("matrix-appservice-bridge", "Logging.LogWrapper")
   @js.native
-  class LogWrapper ()
+  open class LogWrapper ()
     extends typings.matrixAppserviceBridge.loggingMod.LogWrapper
   
   inline def configure(config: LoggerConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]

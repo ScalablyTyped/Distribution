@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.CanvasContext")
 @js.native
-class CanvasContext protected ()
+open class CanvasContext protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.CanvasContext {
   def this(context: CanvasRenderingContext2D) = this()

@@ -11,9 +11,9 @@ Javascript Rubik's Cube Scramble Generator
 | Full name          | scrambo |
 | Keywords           | scramble, scrambo, cube, rubik, jsss |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1410 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 193.33333333333334 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/nickcolley/scrambo)

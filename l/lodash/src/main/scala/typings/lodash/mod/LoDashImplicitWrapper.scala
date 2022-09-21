@@ -3,8 +3,6 @@ package typings.lodash.mod
 import typings.lodash.anon.Typeoflodash
 import typings.lodash.lodashBooleans.`false`
 import typings.lodash.lodashBooleans.`true`
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,12 +24,12 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.attempt
     */
-  def attempt[TResult](args: js.Any*): TResult | Error = js.native
+  def attempt[TResult](args: Any*): TResult | js.Error = js.native
   
   /**
     * @see _.bind
     */
-  def bind(thisArg: js.Any, partials: js.Any*): Function[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+  def bind(thisArg: Any, partials: Any*): Function[js.Function1[/* repeated */ Any, Any]] = js.native
   
   /**
     * @see _.bindAll
@@ -41,7 +39,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.bindKey
     */
-  def bindKey(key: java.lang.String, partials: js.Any*): Function[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+  def bindKey(key: java.lang.String, partials: Any*): Function[js.Function1[/* repeated */ Any, Any]] = js.native
   
   /**
     * @see _.camelCase
@@ -80,7 +78,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.cloneDeepWith
     */
-  def cloneDeepWith(customizer: CloneDeepWithCustomizer[TValue]): js.Any = js.native
+  def cloneDeepWith(customizer: CloneDeepWithCustomizer[TValue]): Any = js.native
   
   /**
     * @see _.cloneWith
@@ -134,12 +132,12 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.defer
     */
-  def defer(args: js.Any*): Primitive[Double] = js.native
+  def defer(args: Any*): Primitive[Double] = js.native
   
   /**
     * @see _.delay
     */
-  def delay(wait: Double, args: js.Any*): Primitive[Double] = js.native
+  def delay(wait: Double, args: Any*): Primitive[Double] = js.native
   
   /**
     * @see _.divide
@@ -157,17 +155,12 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.entries
     */
-  def entries(): Collection[js.Tuple2[java.lang.String, js.Any]] = js.native
+  def entries(): Collection[js.Tuple2[java.lang.String, Any]] = js.native
   
   /**
     * @see _.entriesIn
     */
-  def entriesIn(): Collection[js.Tuple2[java.lang.String, js.Any]] = js.native
-  
-  /**
-    * @see _.eq
-    */
-  def eq(other: js.Any): Boolean = js.native
+  def entriesIn(): Collection[js.Tuple2[java.lang.String, Any]] = js.native
   
   /**
     * @see _.escape
@@ -201,25 +194,25 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
     * @see _.forIn
     */
   def forIn(): this.type = js.native
-  def forIn(iteratee: ObjectIterator[TValue, js.Any]): this.type = js.native
+  def forIn(iteratee: ObjectIterator[TValue, Any]): this.type = js.native
   
   /**
     * @see _.forInRight
     */
   def forInRight(): this.type = js.native
-  def forInRight(iteratee: ObjectIterator[TValue, js.Any]): this.type = js.native
+  def forInRight(iteratee: ObjectIterator[TValue, Any]): this.type = js.native
   
   /**
     * @see _.forOwn
     */
   def forOwn(): this.type = js.native
-  def forOwn(iteratee: ObjectIterator[TValue, js.Any]): this.type = js.native
+  def forOwn(iteratee: ObjectIterator[TValue, Any]): this.type = js.native
   
   /**
     * @see _.forOwnRight
     */
   def forOwnRight(): this.type = js.native
-  def forOwnRight(iteratee: ObjectIterator[TValue, js.Any]): this.type = js.native
+  def forOwnRight(iteratee: ObjectIterator[TValue, Any]): this.type = js.native
   
   /**
     * @see _.functions
@@ -234,12 +227,12 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.gt
     */
-  def gt(other: js.Any): Boolean = js.native
+  def gt(other: Any): Boolean = js.native
   
   /**
     * @see _.gte
     */
-  def gte(other: js.Any): Boolean = js.native
+  def gte(other: Any): Boolean = js.native
   
   /**
     * @see _.has
@@ -270,16 +263,16 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.invoke
     */
-  def invoke(path: PropertyPath, args: js.Any*): js.Any = js.native
+  def invoke(path: PropertyPath, args: Any*): Any = js.native
   
   /**
     * @see _.invokeMap
     */
-  def invokeMap(methodName: java.lang.String, args: js.Any*): Collection[js.Any] = js.native
+  def invokeMap(methodName: java.lang.String, args: Any*): Collection[Any] = js.native
   /**
     * @see _.invokeMap
     */
-  def invokeMap[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: js.Any*): Collection[TResult] = js.native
+  def invokeMap[TResult](method: js.Function1[/* repeated */ Any, TResult], args: Any*): Collection[TResult] = js.native
   
   /**
     * @see _.isArguments
@@ -334,13 +327,13 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.isEqual
     */
-  def isEqual(other: js.Any): Boolean = js.native
+  def isEqual(other: Any): Boolean = js.native
   
   /**
     * @see _.isEqualWith
     */
-  def isEqualWith(other: js.Any): Boolean = js.native
-  def isEqualWith(other: js.Any, customizer: IsEqualCustomizer): Boolean = js.native
+  def isEqualWith(other: Any): Boolean = js.native
+  def isEqualWith(other: Any, customizer: IsEqualCustomizer): Boolean = js.native
   
   /**
     * @see _.isError
@@ -495,12 +488,12 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.lt
     */
-  def lt(other: js.Any): Boolean = js.native
+  def lt(other: Any): Boolean = js.native
   
   /**
     * @see _.lte
     */
-  def lte(other: js.Any): Boolean = js.native
+  def lte(other: Any): Boolean = js.native
   
   /**
     * @see _.matches
@@ -510,7 +503,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.matchesProperty
     */
-  def matchesProperty[SrcValue](srcValue: SrcValue): Function[js.Function1[/* value */ js.Any, Boolean]] = js.native
+  def matchesProperty[SrcValue](srcValue: SrcValue): Function[js.Function1[/* value */ Any, Boolean]] = js.native
   /**
     * @see _.matchesProperty
     */
@@ -525,12 +518,12 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.method
     */
-  def method(args: js.Any*): Function[js.Function1[/* object */ js.Any, js.Any]] = js.native
+  def method(args: Any*): Function[js.Function1[/* object */ Any, Any]] = js.native
   
   /**
     * @see _.methodOf
     */
-  def methodOf(args: js.Any*): LoDashImplicitWrapper[js.Function1[/* path */ PropertyPath, js.Any]] = js.native
+  def methodOf(args: Any*): LoDashImplicitWrapper[js.Function1[/* path */ PropertyPath, Any]] = js.native
   
   /**
     * @see _.mixin
@@ -540,8 +533,8 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.mixin
     */
-  def mixin(source: Dictionary[js.Function1[/* repeated */ js.Any, js.Any]]): this.type = js.native
-  def mixin(source: Dictionary[js.Function1[/* repeated */ js.Any, js.Any]], options: MixinOptions): this.type = js.native
+  def mixin(source: Dictionary[js.Function1[/* repeated */ Any, Any]]): this.type = js.native
+  def mixin(source: Dictionary[js.Function1[/* repeated */ Any, Any]], options: MixinOptions): this.type = js.native
   
   /**
     * @see _.multiply
@@ -556,7 +549,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.noop
     */
-  def noop(args: js.Any*): Unit = js.native
+  def noop(args: Any*): Unit = js.native
   
   /**
     * @see _.now
@@ -566,7 +559,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.nthArg
     */
-  def nthArg(): Function[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+  def nthArg(): Function[js.Function1[/* repeated */ Any, Any]] = js.native
   
   /**
     * @see _.pad
@@ -601,7 +594,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.plant
     */
-  def plant(value: js.Any): this.type = js.native
+  def plant(value: Any): this.type = js.native
   
   /**
     * @see _.property
@@ -611,7 +604,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.propertyOf
     */
-  def propertyOf(): LoDashImplicitWrapper[js.Function1[/* path */ PropertyPath, js.Any]] = js.native
+  def propertyOf(): LoDashImplicitWrapper[js.Function1[/* path */ PropertyPath, Any]] = js.native
   
   /**
     * @see _.random
@@ -648,11 +641,11 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   
   def replace(pattern: java.lang.String, replacement: java.lang.String): java.lang.String = js.native
   def replace(pattern: java.lang.String, replacement: ReplaceFunction): java.lang.String = js.native
-  def replace(pattern: RegExp, replacement: java.lang.String): java.lang.String = js.native
+  def replace(pattern: js.RegExp, replacement: java.lang.String): java.lang.String = js.native
   /**
     * @see _.replace
     */
-  def replace(pattern: RegExp, replacement: ReplaceFunction): java.lang.String = js.native
+  def replace(pattern: js.RegExp, replacement: ReplaceFunction): java.lang.String = js.native
   def replace(replacement: java.lang.String): java.lang.String = js.native
   /**
     * @see _.replace
@@ -664,7 +657,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
     */
   def result[TResult](path: PropertyPath): TResult = js.native
   def result[TResult](path: PropertyPath, defaultValue: TResult): TResult = js.native
-  def result[TResult](path: PropertyPath, defaultValue: js.Function1[/* repeated */ js.Any, TResult]): TResult = js.native
+  def result[TResult](path: PropertyPath, defaultValue: js.Function1[/* repeated */ Any, TResult]): TResult = js.native
   
   /**
     * @see _.reverse
@@ -685,26 +678,26 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.set
     */
-  def set(path: PropertyPath, value: js.Any): this.type = js.native
+  def set(path: PropertyPath, value: Any): this.type = js.native
   
   /**
     * @see _.setWith
     */
-  def setWith(path: PropertyPath, value: js.Any): this.type = js.native
-  def setWith(path: PropertyPath, value: js.Any, customizer: SetWithCustomizer[TValue]): this.type = js.native
+  def setWith(path: PropertyPath, value: Any): this.type = js.native
+  def setWith(path: PropertyPath, value: Any, customizer: SetWithCustomizer[TValue]): this.type = js.native
   /**
     * @see _.setWith
     */
   @JSName("setWith")
-  def setWith_TResult_ImpChain[TResult](path: PropertyPath, value: js.Any): ImpChain[TResult] = js.native
+  def setWith_TResult_ImpChain[TResult](path: PropertyPath, value: Any): ImpChain[TResult] = js.native
   @JSName("setWith")
-  def setWith_TResult_ImpChain[TResult](path: PropertyPath, value: js.Any, customizer: SetWithCustomizer[TValue]): ImpChain[TResult] = js.native
+  def setWith_TResult_ImpChain[TResult](path: PropertyPath, value: Any, customizer: SetWithCustomizer[TValue]): ImpChain[TResult] = js.native
   
   /**
     * @see _.set
     */
   @JSName("set")
-  def set_TResult_ImpChain[TResult](path: PropertyPath, value: js.Any): ImpChain[TResult] = js.native
+  def set_TResult_ImpChain[TResult](path: PropertyPath, value: Any): ImpChain[TResult] = js.native
   
   /**
     * @see _.size
@@ -722,9 +715,9 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   def split(): Collection[java.lang.String] = js.native
   def split(separator: java.lang.String): Collection[java.lang.String] = js.native
   def split(separator: java.lang.String, limit: Double): Collection[java.lang.String] = js.native
+  def split(separator: js.RegExp): Collection[java.lang.String] = js.native
+  def split(separator: js.RegExp, limit: Double): Collection[java.lang.String] = js.native
   def split(separator: Unit, limit: Double): Collection[java.lang.String] = js.native
-  def split(separator: RegExp): Collection[java.lang.String] = js.native
-  def split(separator: RegExp, limit: Double): Collection[java.lang.String] = js.native
   
   /**
     * @see _.startCase
@@ -742,7 +735,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.stubArray
     */
-  def stubArray(): js.Array[js.Any] = js.native
+  def stubArray(): js.Array[Any] = js.native
   
   /**
     * @see _.stubFalse
@@ -752,7 +745,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.stubObject
     */
-  def stubObject(): js.Any = js.native
+  def stubObject(): Any = js.native
   
   /**
     * @see _.stubString
@@ -832,12 +825,12 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.toPairs
     */
-  def toPairs(): Collection[js.Tuple2[java.lang.String, js.Any]] = js.native
+  def toPairs(): Collection[js.Tuple2[java.lang.String, Any]] = js.native
   
   /**
     * @see _.toPairsIn
     */
-  def toPairsIn(): Collection[js.Tuple2[java.lang.String, js.Any]] = js.native
+  def toPairsIn(): Collection[js.Tuple2[java.lang.String, Any]] = js.native
   
   /**
     * @see _.toPath
@@ -847,7 +840,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.toPlainObject
     */
-  def toPlainObject(): Object[js.Any] = js.native
+  def toPlainObject(): Object[Any] = js.native
   
   /**
     * @see _.toSafeInteger
@@ -901,7 +894,7 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.update
     */
-  def update(path: PropertyPath, updater: js.Function1[/* value */ js.Any, js.Any]): Object[js.Any] = js.native
+  def update(path: PropertyPath, updater: js.Function1[/* value */ Any, Any]): Object[Any] = js.native
   
   /**
     * @see _.upperCase
@@ -921,9 +914,9 @@ trait LoDashImplicitWrapper[TValue] extends StObject {
   /**
     * @see _.words
     */
-  def words(): js.Array[java.lang.String] = js.native
-  def words(pattern: java.lang.String): js.Array[java.lang.String] = js.native
-  def words(pattern: RegExp): js.Array[java.lang.String] = js.native
+  def words(): Collection[java.lang.String] = js.native
+  def words(pattern: java.lang.String): Collection[java.lang.String] = js.native
+  def words(pattern: js.RegExp): Collection[java.lang.String] = js.native
   
   /**
     * @see _.wrap

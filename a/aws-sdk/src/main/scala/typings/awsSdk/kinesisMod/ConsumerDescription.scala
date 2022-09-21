@@ -14,7 +14,7 @@ trait ConsumerDescription extends StObject {
   /**
     * 
     */
-  var ConsumerCreationTimestamp: Timestamp
+  var ConsumerCreationTimestamp: js.Date
   
   /**
     * The name of the consumer is something you choose when you register the consumer.
@@ -35,7 +35,7 @@ object ConsumerDescription {
   
   inline def apply(
     ConsumerARN: ConsumerARN,
-    ConsumerCreationTimestamp: Timestamp,
+    ConsumerCreationTimestamp: js.Date,
     ConsumerName: ConsumerName,
     ConsumerStatus: ConsumerStatus,
     StreamARN: StreamARN
@@ -48,7 +48,7 @@ object ConsumerDescription {
     
     inline def setConsumerARN(value: ConsumerARN): Self = StObject.set(x, "ConsumerARN", value.asInstanceOf[js.Any])
     
-    inline def setConsumerCreationTimestamp(value: Timestamp): Self = StObject.set(x, "ConsumerCreationTimestamp", value.asInstanceOf[js.Any])
+    inline def setConsumerCreationTimestamp(value: js.Date): Self = StObject.set(x, "ConsumerCreationTimestamp", value.asInstanceOf[js.Any])
     
     inline def setConsumerName(value: ConsumerName): Self = StObject.set(x, "ConsumerName", value.asInstanceOf[js.Any])
     

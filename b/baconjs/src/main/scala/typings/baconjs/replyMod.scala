@@ -15,5 +15,5 @@ object replyMod {
   @js.native
   val noMore: Reply = js.native
   
-  type Reply = `Lessthansignno-moreGreaterthansign` | js.Any
+  type Reply = `Lessthansignno-moreGreaterthansign` | Any
 }

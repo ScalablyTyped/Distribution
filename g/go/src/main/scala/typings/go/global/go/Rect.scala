@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The default constructor (no argument) results in a Rect(0,0,0,0).
   */
-class Rect ()
+open class Rect ()
   extends typings.go.mod.Rect {
   /**
     * The constructor taking two Points produces a Rect that spans both points.

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDiscovererResponse extends StObject {
   
   /**
+    * The Status if the discoverer will discover schemas from events sent from another account.
+    */
+  var CrossAccount: js.UndefOr[boolean] = js.undefined
+  
+  /**
     * The description of the discoverer.
     */
   var Description: js.UndefOr[string] = js.undefined
@@ -44,6 +49,10 @@ object DescribeDiscovererResponse {
   }
   
   extension [Self <: DescribeDiscovererResponse](x: Self) {
+    
+    inline def setCrossAccount(value: boolean): Self = StObject.set(x, "CrossAccount", value.asInstanceOf[js.Any])
+    
+    inline def setCrossAccountUndefined: Self = StObject.set(x, "CrossAccount", js.undefined)
     
     inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

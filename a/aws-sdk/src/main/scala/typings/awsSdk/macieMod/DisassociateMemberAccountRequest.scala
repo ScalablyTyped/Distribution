@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisassociateMemberAccountRequest extends StObject {
   
   /**
-    * The ID of the member account that you want to remove from Amazon Macie Classic.
+    * (Discontinued) The ID of the member account that you want to remove from Amazon Macie Classic.
     */
   var memberAccountId: AWSAccountId
 }

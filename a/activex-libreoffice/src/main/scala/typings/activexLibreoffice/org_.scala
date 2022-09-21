@@ -96,7 +96,7 @@ object org_ {
           InstallResources: (Double, SeqEquiv[String], SeqEquiv[String], String) => Unit,
           RemovePackageByFiles: (Double, SeqEquiv[String], String) => Unit,
           acquire: () => Unit,
-          queryInterface: `type` => js.Any,
+          queryInterface: `type` => Any,
           release: () => Unit
         ): XModify = {
           val __obj = js.Dynamic.literal(InstallCatalogs = js.Any.fromFunction3(InstallCatalogs), InstallFontconfigResources = js.Any.fromFunction3(InstallFontconfigResources), InstallGStreamerResources = js.Any.fromFunction3(InstallGStreamerResources), InstallMimeTypes = js.Any.fromFunction3(InstallMimeTypes), InstallPackageFiles = js.Any.fromFunction3(InstallPackageFiles), InstallPackageNames = js.Any.fromFunction3(InstallPackageNames), InstallPrinterDrivers = js.Any.fromFunction3(InstallPrinterDrivers), InstallProvideFiles = js.Any.fromFunction3(InstallProvideFiles), InstallResources = js.Any.fromFunction4(InstallResources), RemovePackageByFiles = js.Any.fromFunction3(RemovePackageByFiles), acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -153,7 +153,7 @@ object org_ {
           IsInstalled: (String, String, js.Array[Boolean]) => Unit,
           SearchFile: (String, String, js.Array[Boolean], js.Array[String]) => Unit,
           acquire: () => Unit,
-          queryInterface: `type` => js.Any,
+          queryInterface: `type` => Any,
           release: () => Unit
         ): XQuery = {
           val __obj = js.Dynamic.literal(IsInstalled = js.Any.fromFunction3(IsInstalled), SearchFile = js.Any.fromFunction4(SearchFile), acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -188,7 +188,7 @@ object org_ {
           RemovePackageByFiles: (Double, SeqEquiv[String], String) => Unit,
           SearchFile: (String, String, js.Array[Boolean], js.Array[String]) => Unit,
           acquire: () => Unit,
-          queryInterface: `type` => js.Any,
+          queryInterface: `type` => Any,
           release: () => Unit
         ): XSyncDbusSessionHelper = {
           val __obj = js.Dynamic.literal(InstallCatalogs = js.Any.fromFunction3(InstallCatalogs), InstallFontconfigResources = js.Any.fromFunction3(InstallFontconfigResources), InstallGStreamerResources = js.Any.fromFunction3(InstallGStreamerResources), InstallMimeTypes = js.Any.fromFunction3(InstallMimeTypes), InstallPackageFiles = js.Any.fromFunction3(InstallPackageFiles), InstallPackageNames = js.Any.fromFunction3(InstallPackageNames), InstallPrinterDrivers = js.Any.fromFunction3(InstallPrinterDrivers), InstallProvideFiles = js.Any.fromFunction3(InstallProvideFiles), InstallResources = js.Any.fromFunction4(InstallResources), IsInstalled = js.Any.fromFunction3(IsInstalled), RemovePackageByFiles = js.Any.fromFunction3(RemovePackageByFiles), SearchFile = js.Any.fromFunction4(SearchFile), acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

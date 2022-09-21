@@ -1,5 +1,6 @@
 package typings.inversify
 
+import typings.inversify.anon.Name
 import typings.inversify.interfacesMod.interfaces.Binding
 import typings.inversify.interfacesMod.interfaces.Container
 import typings.inversify.interfacesMod.interfaces.Request
@@ -11,15 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object serializationMod {
   
-  @JSImport("inversify/dts/utils/serialization", JSImport.Namespace)
+  @JSImport("inversify/lib/utils/serialization", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def circularDependencyToException(request: Request): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("circularDependencyToException")(request.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def getFunctionName(v: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionName")(v.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getFunctionName(func: Name): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionName")(func.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getServiceIdentifierAsString(serviceIdentifier: ServiceIdentifier[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceIdentifierAsString")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getServiceIdentifierAsString(serviceIdentifier: ServiceIdentifier[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getServiceIdentifierAsString")(serviceIdentifier.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def getSymbolDescription(symbol: js.Symbol): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSymbolDescription")(symbol.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def listMetadataForTarget(serviceIdentifierString: String, target: Target): String = (^.asInstanceOf[js.Dynamic].applyDynamic("listMetadataForTarget")(serviceIdentifierString.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -28,8 +31,8 @@ object serializationMod {
     serviceIdentifier: String,
     getBindings: js.Function2[
       /* container */ Container, 
-      /* serviceIdentifier */ ServiceIdentifier[js.Any], 
-      js.Array[Binding[js.Any]]
+      /* serviceIdentifier */ ServiceIdentifier[Any], 
+      js.Array[Binding[Any]]
     ]
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("listRegisteredBindingsForServiceIdentifier")(container.asInstanceOf[js.Any], serviceIdentifier.asInstanceOf[js.Any], getBindings.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bcroundMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(`val`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(`val`: js.Any, precision: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(`val`: Unit, precision: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(`val`: Any): Any = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(`val`: Any, precision: Any): Any = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(`val`: Unit, precision: Any): Any = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/bc/bcround", JSImport.Namespace)
   @js.native

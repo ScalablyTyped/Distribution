@@ -7,6 +7,7 @@ import typings.konva.anon.Handler
 import typings.konva.anon.HeightWidth
 import typings.konva.anon.MimeType
 import typings.konva.anon.OffsetX
+import typings.konva.anon.PixelRatio
 import typings.konva.anon.RelativeTo
 import typings.konva.anon.Width
 import typings.konva.anon.X
@@ -20,20 +21,22 @@ import typings.konva.konvaStrings.animationend
 import typings.konva.konvaStrings.animationiteration
 import typings.konva.konvaStrings.animationstart
 import typings.konva.konvaStrings.auxclick
+import typings.konva.konvaStrings.beforeinput
 import typings.konva.konvaStrings.blur
-import typings.konva.konvaStrings.cancel
 import typings.konva.konvaStrings.canplay
 import typings.konva.konvaStrings.canplaythrough
 import typings.konva.konvaStrings.change
 import typings.konva.konvaStrings.click
 import typings.konva.konvaStrings.close
+import typings.konva.konvaStrings.compositionend
+import typings.konva.konvaStrings.compositionstart
+import typings.konva.konvaStrings.compositionupdate
 import typings.konva.konvaStrings.contextmenu
 import typings.konva.konvaStrings.cuechange
 import typings.konva.konvaStrings.dblclick
 import typings.konva.konvaStrings.drag
 import typings.konva.konvaStrings.dragend
 import typings.konva.konvaStrings.dragenter
-import typings.konva.konvaStrings.dragexit
 import typings.konva.konvaStrings.dragleave
 import typings.konva.konvaStrings.dragover
 import typings.konva.konvaStrings.dragstart
@@ -45,6 +48,7 @@ import typings.konva.konvaStrings.error
 import typings.konva.konvaStrings.focus
 import typings.konva.konvaStrings.focusin
 import typings.konva.konvaStrings.focusout
+import typings.konva.konvaStrings.formdata
 import typings.konva.konvaStrings.gotpointercapture
 import typings.konva.konvaStrings.input
 import typings.konva.konvaStrings.invalid
@@ -85,6 +89,7 @@ import typings.konva.konvaStrings.seeking
 import typings.konva.konvaStrings.select
 import typings.konva.konvaStrings.selectionchange
 import typings.konva.konvaStrings.selectstart
+import typings.konva.konvaStrings.slotchange
 import typings.konva.konvaStrings.stalled
 import typings.konva.konvaStrings.submit
 import typings.konva.konvaStrings.suspend
@@ -100,6 +105,10 @@ import typings.konva.konvaStrings.transitionrun
 import typings.konva.konvaStrings.transitionstart
 import typings.konva.konvaStrings.volumechange
 import typings.konva.konvaStrings.waiting
+import typings.konva.konvaStrings.webkitanimationend
+import typings.konva.konvaStrings.webkitanimationiteration
+import typings.konva.konvaStrings.webkitanimationstart
+import typings.konva.konvaStrings.webkittransitionend
 import typings.konva.konvaStrings.wheel
 import typings.konva.layerMod.Layer
 import typings.konva.shapeMod.Shape
@@ -108,17 +117,19 @@ import typings.konva.stageMod.Stage
 import typings.konva.typesMod.GetSet
 import typings.konva.typesMod.IRect
 import typings.konva.typesMod.Vector2d
-import typings.konva.utilMod.Collection
 import typings.konva.utilMod.Transform
 import typings.std.AnimationEvent
+import typings.std.CompositionEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.FocusEvent
+import typings.std.FormDataEvent
 import typings.std.GlobalEventHandlersEventMap
 import typings.std.HTMLCanvasElement
 import typings.std.ImageData
+import typings.std.InputEvent
 import typings.std.KeyboardEvent
 import typings.std.Map
 import typings.std.MouseEvent
@@ -126,6 +137,7 @@ import typings.std.Number
 import typings.std.PointerEvent
 import typings.std.ProgressEvent
 import typings.std.SecurityPolicyViolationEvent
+import typings.std.SubmitEvent
 import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
@@ -136,11 +148,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object nodeMod {
   
-  @JSImport("konva/types/Node", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("konva/types/Node", "Node")
+  @JSImport("konva/lib/Node", "Node")
   @js.native
   abstract class Node[Config /* <: NodeConfig */] () extends StObject {
     def this(config: Config) = this()
@@ -151,13 +159,13 @@ object nodeMod {
     
     var _attrsAffectingSize: js.Array[String] = js.native
     
-    def _batchTransformChanges(func: js.Any): Unit = js.native
+    def _batchTransformChanges(func: Any): Unit = js.native
     
     var _batchingTransformChange: Boolean = js.native
     
-    var _cache: Map[String, js.Any] = js.native
+    var _cache: Map[String, Any] = js.native
     
-    def _calculate(name: js.Any, deps: js.Any, getter: js.Any): js.Any = js.native
+    def _calculate(name: String, deps: js.Array[String], getter: js.Function): Any = js.native
     
     def _clearCache(): Unit = js.native
     def _clearCache(attr: String): Unit = js.native
@@ -166,12 +174,10 @@ object nodeMod {
     
     def _clearSelfAndDescendantCache(): Unit = js.native
     def _clearSelfAndDescendantCache(attr: String): Unit = js.native
-    def _clearSelfAndDescendantCache(attr: String, forceEvent: Boolean): Unit = js.native
-    def _clearSelfAndDescendantCache(attr: Unit, forceEvent: Boolean): Unit = js.native
     
     def _clearTransform(): OffsetX = js.native
     
-    def _createDragElement(evt: js.Any): Unit = js.native
+    def _createDragElement(evt: Any): Unit = js.native
     
     def _delegate(event: String, selector: String, handler: js.Function1[/* e */ Event, Unit]): Unit = js.native
     
@@ -185,29 +191,29 @@ object nodeMod {
     
     def _drawCachedSceneCanvas(context: Context): Unit = js.native
     
-    def _eachAncestorReverse(func: js.Any, top: js.Any): Unit = js.native
+    def _eachAncestorReverse(func: Any, top: Any): Unit = js.native
     
     var _filterUpToDate: Boolean = js.native
     
-    def _fire(eventType: js.Any, evt: js.Any): Unit = js.native
+    def _fire(eventType: Any, evt: Any): Unit = js.native
     
-    def _fireAndBubble(eventType: js.Any, evt: js.Any): Unit = js.native
-    def _fireAndBubble(eventType: js.Any, evt: js.Any, compareShape: js.Any): Unit = js.native
+    def _fireAndBubble(eventType: Any, evt: Any): Unit = js.native
+    def _fireAndBubble(eventType: Any, evt: Any, compareShape: Any): Unit = js.native
     
-    def _fireChangeEvent(attr: js.Any, oldVal: js.Any, newVal: js.Any): Unit = js.native
+    def _fireChangeEvent(attr: Any, oldVal: Any, newVal: Any): Unit = js.native
     
     def _getAbsoluteOpacity(): Double = js.native
     
     def _getAbsoluteTransform(): Transform = js.native
     def _getAbsoluteTransform(top: Node[NodeConfig]): Transform = js.native
     
-    def _getCache(attr: String, privateGetter: js.Function): js.Any = js.native
+    def _getCache(attr: String, privateGetter: js.Function): Any = js.native
     
-    def _getCachedSceneCanvas(): js.Any = js.native
+    def _getCachedSceneCanvas(): Any = js.native
     
-    def _getCanvasCache(): js.Any = js.native
+    def _getCanvasCache(): Any = js.native
     
-    def _getProtoListeners(eventType: js.Any): js.Any = js.native
+    def _getProtoListeners(eventType: Any): Any = js.native
     
     def _getStage(): js.UndefOr[Stage] = js.native
     
@@ -215,14 +221,16 @@ object nodeMod {
     
     var _id: Double = js.native
     
-    def _isListening(): js.Any = js.native
-    def _isListening(relativeTo: Node[NodeConfig]): js.Any = js.native
+    def _isListening(): Boolean = js.native
+    def _isListening(relativeTo: Node[NodeConfig]): Boolean = js.native
     
-    def _isMatch(selector: js.Any): js.Any = js.native
+    def _isMatch(selector: String): Any = js.native
+    def _isMatch(selector: js.Function): Any = js.native
     
     var _isUnderCache: Boolean = js.native
     
-    def _isVisible(relativeTo: js.Any): js.Any = js.native
+    def _isVisible(): Boolean = js.native
+    def _isVisible(relativeTo: Node[NodeConfig]): Boolean = js.native
     
     var _lastPos: Vector2d = js.native
     
@@ -230,25 +238,26 @@ object nodeMod {
     
     var _needClearTransformCache: Boolean = js.native
     
-    def _off(`type`: js.Any): Unit = js.native
-    def _off(`type`: js.Any, name: js.Any): Unit = js.native
-    def _off(`type`: js.Any, name: js.Any, callback: js.Any): Unit = js.native
-    def _off(`type`: js.Any, name: Unit, callback: js.Any): Unit = js.native
+    def _off(`type`: Any): Unit = js.native
+    def _off(`type`: Any, name: Any): Unit = js.native
+    def _off(`type`: Any, name: Any, callback: Any): Unit = js.native
+    def _off(`type`: Any, name: Unit, callback: Any): Unit = js.native
     
     def _remove(): Unit = js.native
     
-    def _setAttr(key: js.Any, `val`: js.Any): Unit = js.native
-    def _setAttr(key: js.Any, `val`: js.Any, skipFire: Boolean): Unit = js.native
+    def _requestDraw(): Unit = js.native
     
-    def _setComponentAttr(key: js.Any, component: js.Any, `val`: js.Any): Unit = js.native
+    def _setAttr(key: Any, `val`: Any): Unit = js.native
     
-    def _setDragPosition(evt: js.Any, elem: js.Any): Unit = js.native
+    def _setComponentAttr(key: Any, component: Any, `val`: Any): Unit = js.native
     
-    def _setTransform(trans: js.Any): Unit = js.native
+    def _setDragPosition(evt: Any, elem: Any): Unit = js.native
+    
+    def _setTransform(trans: Any): Unit = js.native
     
     var _shouldFireChangeEvents: Boolean = js.native
     
-    def _toKonvaCanvas(config: js.Any): SceneCanvas = js.native
+    def _toKonvaCanvas(config: Any): SceneCanvas = js.native
     
     def _transformedRect(rect: IRect, top: Node[NodeConfig]): Width = js.native
     
@@ -259,14 +268,14 @@ object nodeMod {
     
     def addEventListener(`type`: String, handler: js.Function1[/* e */ Event, Unit]): this.type = js.native
     
-    def addName(name: js.Any): this.type = js.native
+    def addName(name: Any): this.type = js.native
     
     def alpha(): Double = js.native
     def alpha(v: Double): this.type = js.native
     @JSName("alpha")
     var alpha_Original: GetSet[Double, this.type] = js.native
     
-    var attrs: js.Any = js.native
+    var attrs: Any = js.native
     
     def blue(): Double = js.native
     def blue(v: Double): this.type = js.native
@@ -286,13 +295,11 @@ object nodeMod {
     def cache(): this.type = js.native
     def cache(config: DrawBorder): this.type = js.native
     
-    var children: Collection[js.Any] = js.native
-    
     var className: String = js.native
     
     def clearCache(): this.type = js.native
     
-    def clone(obj: js.Any): js.Any = js.native
+    def clone(obj: Any): Any = js.native
     
     def contrast(): Double = js.native
     def contrast(v: Double): this.type = js.native
@@ -301,7 +308,7 @@ object nodeMod {
     
     def destroy(): this.type = js.native
     
-    def dispatchEvent(evt: js.Any): this.type = js.native
+    def dispatchEvent(evt: Any): this.type = js.native
     
     def dragBoundFunc(): js.ThisFunction1[/* this */ Node[NodeConfig], /* pos */ Vector2d, Vector2d] = js.native
     def dragBoundFunc(v: js.ThisFunction1[/* this */ Node[NodeConfig], /* pos */ Vector2d, Vector2d]): this.type = js.native
@@ -365,43 +372,45 @@ object nodeMod {
     @JSName("filters")
     var filters_Original: GetSet[js.Array[Filter], this.type] = js.native
     
-    def findAncestor(selector: js.Any): Node[NodeConfig] = js.native
-    def findAncestor(selector: js.Any, includeSelf: js.Any): Node[NodeConfig] = js.native
-    def findAncestor(selector: js.Any, includeSelf: js.Any, stopNode: js.Any): Node[NodeConfig] = js.native
-    def findAncestor(selector: js.Any, includeSelf: Unit, stopNode: js.Any): Node[NodeConfig] = js.native
+    def findAncestor(): Node[NodeConfig] = js.native
+    def findAncestor(selector: String): Node[NodeConfig] = js.native
+    def findAncestor(selector: String, includeSelf: Boolean): Node[NodeConfig] = js.native
+    def findAncestor(selector: String, includeSelf: Boolean, stopNode: Container[Node[NodeConfig]]): Node[NodeConfig] = js.native
+    def findAncestor(selector: String, includeSelf: Unit, stopNode: Container[Node[NodeConfig]]): Node[NodeConfig] = js.native
+    def findAncestor(selector: Unit, includeSelf: Boolean): Node[NodeConfig] = js.native
+    def findAncestor(selector: Unit, includeSelf: Boolean, stopNode: Container[Node[NodeConfig]]): Node[NodeConfig] = js.native
+    def findAncestor(selector: Unit, includeSelf: Unit, stopNode: Container[Node[NodeConfig]]): Node[NodeConfig] = js.native
     
-    def findAncestors(selector: js.Any): js.Array[Node[NodeConfig]] = js.native
-    def findAncestors(selector: js.Any, includeSelf: js.Any): js.Array[Node[NodeConfig]] = js.native
-    def findAncestors(selector: js.Any, includeSelf: js.Any, stopNode: js.Any): js.Array[Node[NodeConfig]] = js.native
-    def findAncestors(selector: js.Any, includeSelf: Unit, stopNode: js.Any): js.Array[Node[NodeConfig]] = js.native
+    def findAncestors(selector: String): js.Array[Node[NodeConfig]] = js.native
+    def findAncestors(selector: String, includeSelf: Boolean): js.Array[Node[NodeConfig]] = js.native
+    def findAncestors(selector: String, includeSelf: Boolean, stopNode: Node[NodeConfig]): js.Array[Node[NodeConfig]] = js.native
+    def findAncestors(selector: String, includeSelf: Unit, stopNode: Node[NodeConfig]): js.Array[Node[NodeConfig]] = js.native
     
-    def fire(eventType: js.Any): this.type = js.native
-    def fire(eventType: js.Any, evt: js.Any): this.type = js.native
-    def fire(eventType: js.Any, evt: js.Any, bubble: js.Any): this.type = js.native
-    def fire(eventType: js.Any, evt: Unit, bubble: js.Any): this.type = js.native
+    def fire(eventType: String): this.type = js.native
+    def fire(eventType: String, evt: Any): this.type = js.native
+    def fire(eventType: String, evt: Any, bubble: Boolean): this.type = js.native
+    def fire(eventType: String, evt: Unit, bubble: Boolean): this.type = js.native
     
-    def getAbsoluteOpacity(): js.Any = js.native
+    def getAbsoluteOpacity(): Any = js.native
     
     def getAbsolutePosition(): X = js.native
-    def getAbsolutePosition(top: js.Any): X = js.native
+    def getAbsolutePosition(top: Node[NodeConfig]): X = js.native
     
     def getAbsoluteRotation(): Double = js.native
     
     def getAbsoluteScale(): X = js.native
-    def getAbsoluteScale(top: js.Any): X = js.native
+    def getAbsoluteScale(top: Node[NodeConfig]): X = js.native
     
     def getAbsoluteTransform(): Transform = js.native
     def getAbsoluteTransform(top: Node[NodeConfig]): Transform = js.native
     
     def getAbsoluteZIndex(): Double = js.native
     
-    def getAncestors(): Collection[Node[NodeConfig]] = js.native
+    def getAncestors(): js.Array[Node[NodeConfig]] = js.native
     
-    def getAttr(attr: String): js.Any = js.native
+    def getAttr(attr: String): Any = js.native
     
-    def getAttrs(): js.Any = js.native
-    
-    def getChildren(): Collection[js.Any] = js.native
+    def getAttrs(): Any = js.native
     
     def getClassName(): String = js.native
     
@@ -410,13 +419,15 @@ object nodeMod {
     
     def getDepth(): Double = js.native
     
-    def getDragDistance(): js.Any = js.native
+    def getDragDistance(): Double = js.native
     
     def getLayer(): Layer | Null = js.native
     
     def getParent(): Container[Node[NodeConfig]] = js.native
     
     def getPosition(): X = js.native
+    
+    def getRelativePointerPosition(): X = js.native
     
     def getSize(): HeightWidth = js.native
     
@@ -440,7 +451,7 @@ object nodeMod {
     
     def hasChildren(): Boolean = js.native
     
-    def hasName(name: js.Any): Boolean = js.native
+    def hasName(name: Any): Boolean = js.native
     
     def height(): Double = js.native
     def height(v: Double): this.type = js.native
@@ -461,15 +472,18 @@ object nodeMod {
     
     var index: Double = js.native
     
-    def isAncestorOf(node: js.Any): Boolean = js.native
+    def isAncestorOf(node: Node[NodeConfig]): Boolean = js.native
     
     def isCached(): Boolean = js.native
     
+    def isClientRectOnScreen(): Boolean = js.native
+    def isClientRectOnScreen(margin: X): Boolean = js.native
+    
     def isDragging(): Boolean = js.native
     
-    def isListening(): js.Any = js.native
+    def isListening(): Any = js.native
     
-    def isVisible(): js.Any = js.native
+    def isVisible(): Any = js.native
     
     def kaleidoscopeAngle(): Double = js.native
     def kaleidoscopeAngle(v: Double): this.type = js.native
@@ -496,11 +510,11 @@ object nodeMod {
     @JSName("luminance")
     var luminance_Original: GetSet[Double, this.type] = js.native
     
-    def move(change: js.Any): this.type = js.native
+    def move(change: Vector2d): this.type = js.native
     
     def moveDown(): Boolean = js.native
     
-    def moveTo(newContainer: js.Any): this.type = js.native
+    def moveTo(newContainer: Any): this.type = js.native
     
     def moveToBottom(): Boolean = js.native
     
@@ -520,8 +534,10 @@ object nodeMod {
     @JSName("noise")
     var noise_Original: GetSet[Double, this.type] = js.native
     
+    def off(): this.type = js.native
     def off(evtStr: String): this.type = js.native
     def off(evtStr: String, callback: js.Function): this.type = js.native
+    def off(evtStr: Unit, callback: js.Function): this.type = js.native
     
     def offset(): Vector2d = js.native
     def offset(v: Vector2d): this.type = js.native
@@ -540,182 +556,198 @@ object nodeMod {
     var offset_Original: GetSet[Vector2d, this.type] = js.native
     
     @JSName("on")
-    def on_abort(evtStr: abort, handler: KonvaEventListener[this.type, UIEvent]): js.Any = js.native
+    def on_abort(evtStr: abort, handler: KonvaEventListener[this.type, UIEvent]): Any = js.native
     @JSName("on")
-    def on_animationcancel(evtStr: animationcancel, handler: KonvaEventListener[this.type, AnimationEvent]): js.Any = js.native
+    def on_animationcancel(evtStr: animationcancel, handler: KonvaEventListener[this.type, AnimationEvent]): Any = js.native
     @JSName("on")
-    def on_animationend(evtStr: animationend, handler: KonvaEventListener[this.type, AnimationEvent]): js.Any = js.native
+    def on_animationend(evtStr: animationend, handler: KonvaEventListener[this.type, AnimationEvent]): Any = js.native
     @JSName("on")
-    def on_animationiteration(evtStr: animationiteration, handler: KonvaEventListener[this.type, AnimationEvent]): js.Any = js.native
+    def on_animationiteration(evtStr: animationiteration, handler: KonvaEventListener[this.type, AnimationEvent]): Any = js.native
     @JSName("on")
-    def on_animationstart(evtStr: animationstart, handler: KonvaEventListener[this.type, AnimationEvent]): js.Any = js.native
+    def on_animationstart(evtStr: animationstart, handler: KonvaEventListener[this.type, AnimationEvent]): Any = js.native
     @JSName("on")
-    def on_auxclick(evtStr: auxclick, handler: KonvaEventListener[this.type, MouseEvent]): js.Any = js.native
+    def on_auxclick(evtStr: auxclick, handler: KonvaEventListener[this.type, MouseEvent]): Any = js.native
     @JSName("on")
-    def on_blur(evtStr: blur, handler: KonvaEventListener[this.type, FocusEvent]): js.Any = js.native
+    def on_beforeinput(evtStr: beforeinput, handler: KonvaEventListener[this.type, InputEvent]): Any = js.native
     @JSName("on")
-    def on_cancel(evtStr: cancel, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_blur(evtStr: blur, handler: KonvaEventListener[this.type, FocusEvent]): Any = js.native
     @JSName("on")
-    def on_canplay(evtStr: canplay, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_canplay(evtStr: canplay, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_canplaythrough(evtStr: canplaythrough, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_canplaythrough(evtStr: canplaythrough, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_change(evtStr: change, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_change(evtStr: change, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_click(evtStr: click, handler: KonvaEventListener[this.type, MouseEvent]): js.Any = js.native
+    def on_click(evtStr: click, handler: KonvaEventListener[this.type, MouseEvent]): Any = js.native
     @JSName("on")
-    def on_close(evtStr: close, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_close(evtStr: close, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_contextmenu(evtStr: contextmenu, handler: KonvaEventListener[this.type, MouseEvent]): js.Any = js.native
+    def on_compositionend(evtStr: compositionend, handler: KonvaEventListener[this.type, CompositionEvent]): Any = js.native
     @JSName("on")
-    def on_cuechange(evtStr: cuechange, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_compositionstart(evtStr: compositionstart, handler: KonvaEventListener[this.type, CompositionEvent]): Any = js.native
     @JSName("on")
-    def on_dblclick(evtStr: dblclick, handler: KonvaEventListener[this.type, MouseEvent]): js.Any = js.native
+    def on_compositionupdate(evtStr: compositionupdate, handler: KonvaEventListener[this.type, CompositionEvent]): Any = js.native
     @JSName("on")
-    def on_drag(evtStr: drag, handler: KonvaEventListener[this.type, DragEvent]): js.Any = js.native
+    def on_contextmenu(evtStr: contextmenu, handler: KonvaEventListener[this.type, MouseEvent]): Any = js.native
     @JSName("on")
-    def on_dragend(evtStr: dragend, handler: KonvaEventListener[this.type, DragEvent]): js.Any = js.native
+    def on_cuechange(evtStr: cuechange, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_dragenter(evtStr: dragenter, handler: KonvaEventListener[this.type, DragEvent]): js.Any = js.native
+    def on_dblclick(evtStr: dblclick, handler: KonvaEventListener[this.type, MouseEvent]): Any = js.native
     @JSName("on")
-    def on_dragexit(evtStr: dragexit, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_drag(evtStr: drag, handler: KonvaEventListener[this.type, DragEvent]): Any = js.native
     @JSName("on")
-    def on_dragleave(evtStr: dragleave, handler: KonvaEventListener[this.type, DragEvent]): js.Any = js.native
+    def on_dragend(evtStr: dragend, handler: KonvaEventListener[this.type, DragEvent]): Any = js.native
     @JSName("on")
-    def on_dragover(evtStr: dragover, handler: KonvaEventListener[this.type, DragEvent]): js.Any = js.native
+    def on_dragenter(evtStr: dragenter, handler: KonvaEventListener[this.type, DragEvent]): Any = js.native
     @JSName("on")
-    def on_dragstart(evtStr: dragstart, handler: KonvaEventListener[this.type, DragEvent]): js.Any = js.native
+    def on_dragleave(evtStr: dragleave, handler: KonvaEventListener[this.type, DragEvent]): Any = js.native
     @JSName("on")
-    def on_drop(evtStr: drop, handler: KonvaEventListener[this.type, DragEvent]): js.Any = js.native
+    def on_dragover(evtStr: dragover, handler: KonvaEventListener[this.type, DragEvent]): Any = js.native
     @JSName("on")
-    def on_durationchange(evtStr: durationchange, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_dragstart(evtStr: dragstart, handler: KonvaEventListener[this.type, DragEvent]): Any = js.native
     @JSName("on")
-    def on_emptied(evtStr: emptied, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_drop(evtStr: drop, handler: KonvaEventListener[this.type, DragEvent]): Any = js.native
     @JSName("on")
-    def on_ended(evtStr: ended, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_durationchange(evtStr: durationchange, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_error(evtStr: error, handler: KonvaEventListener[this.type, ErrorEvent]): js.Any = js.native
+    def on_emptied(evtStr: emptied, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_focus(evtStr: focus, handler: KonvaEventListener[this.type, FocusEvent]): js.Any = js.native
+    def on_ended(evtStr: ended, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_focusin(evtStr: focusin, handler: KonvaEventListener[this.type, FocusEvent]): js.Any = js.native
+    def on_error(evtStr: error, handler: KonvaEventListener[this.type, ErrorEvent]): Any = js.native
     @JSName("on")
-    def on_focusout(evtStr: focusout, handler: KonvaEventListener[this.type, FocusEvent]): js.Any = js.native
+    def on_focus(evtStr: focus, handler: KonvaEventListener[this.type, FocusEvent]): Any = js.native
     @JSName("on")
-    def on_gotpointercapture(evtStr: gotpointercapture, handler: KonvaEventListener[this.type, PointerEvent]): js.Any = js.native
+    def on_focusin(evtStr: focusin, handler: KonvaEventListener[this.type, FocusEvent]): Any = js.native
     @JSName("on")
-    def on_input(evtStr: input, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_focusout(evtStr: focusout, handler: KonvaEventListener[this.type, FocusEvent]): Any = js.native
     @JSName("on")
-    def on_invalid(evtStr: invalid, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_formdata(evtStr: formdata, handler: KonvaEventListener[this.type, FormDataEvent]): Any = js.native
     @JSName("on")
-    def on_keydown(evtStr: keydown, handler: KonvaEventListener[this.type, KeyboardEvent]): js.Any = js.native
+    def on_gotpointercapture(evtStr: gotpointercapture, handler: KonvaEventListener[this.type, PointerEvent]): Any = js.native
     @JSName("on")
-    def on_keypress(evtStr: keypress, handler: KonvaEventListener[this.type, KeyboardEvent]): js.Any = js.native
+    def on_input(evtStr: input, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_keyup(evtStr: keyup, handler: KonvaEventListener[this.type, KeyboardEvent]): js.Any = js.native
+    def on_invalid(evtStr: invalid, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_load(evtStr: load, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_keydown(evtStr: keydown, handler: KonvaEventListener[this.type, KeyboardEvent]): Any = js.native
     @JSName("on")
-    def on_loadeddata(evtStr: loadeddata, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_keypress(evtStr: keypress, handler: KonvaEventListener[this.type, KeyboardEvent]): Any = js.native
     @JSName("on")
-    def on_loadedmetadata(evtStr: loadedmetadata, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_keyup(evtStr: keyup, handler: KonvaEventListener[this.type, KeyboardEvent]): Any = js.native
     @JSName("on")
-    def on_loadstart(evtStr: loadstart, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_load(evtStr: load, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_lostpointercapture(evtStr: lostpointercapture, handler: KonvaEventListener[this.type, PointerEvent]): js.Any = js.native
+    def on_loadeddata(evtStr: loadeddata, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_mousedown(evtStr: mousedown, handler: KonvaEventListener[this.type, MouseEvent]): js.Any = js.native
+    def on_loadedmetadata(evtStr: loadedmetadata, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_mouseenter(evtStr: mouseenter, handler: KonvaEventListener[this.type, MouseEvent]): js.Any = js.native
+    def on_loadstart(evtStr: loadstart, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_mouseleave(evtStr: mouseleave, handler: KonvaEventListener[this.type, MouseEvent]): js.Any = js.native
+    def on_lostpointercapture(evtStr: lostpointercapture, handler: KonvaEventListener[this.type, PointerEvent]): Any = js.native
     @JSName("on")
-    def on_mousemove(evtStr: mousemove, handler: KonvaEventListener[this.type, MouseEvent]): js.Any = js.native
+    def on_mousedown(evtStr: mousedown, handler: KonvaEventListener[this.type, MouseEvent]): Any = js.native
     @JSName("on")
-    def on_mouseout(evtStr: mouseout, handler: KonvaEventListener[this.type, MouseEvent]): js.Any = js.native
+    def on_mouseenter(evtStr: mouseenter, handler: KonvaEventListener[this.type, MouseEvent]): Any = js.native
     @JSName("on")
-    def on_mouseover(evtStr: mouseover, handler: KonvaEventListener[this.type, MouseEvent]): js.Any = js.native
+    def on_mouseleave(evtStr: mouseleave, handler: KonvaEventListener[this.type, MouseEvent]): Any = js.native
     @JSName("on")
-    def on_mouseup(evtStr: mouseup, handler: KonvaEventListener[this.type, MouseEvent]): js.Any = js.native
+    def on_mousemove(evtStr: mousemove, handler: KonvaEventListener[this.type, MouseEvent]): Any = js.native
     @JSName("on")
-    def on_pause(evtStr: pause, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_mouseout(evtStr: mouseout, handler: KonvaEventListener[this.type, MouseEvent]): Any = js.native
     @JSName("on")
-    def on_play(evtStr: play, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_mouseover(evtStr: mouseover, handler: KonvaEventListener[this.type, MouseEvent]): Any = js.native
     @JSName("on")
-    def on_playing(evtStr: playing, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_mouseup(evtStr: mouseup, handler: KonvaEventListener[this.type, MouseEvent]): Any = js.native
     @JSName("on")
-    def on_pointercancel(evtStr: pointercancel, handler: KonvaEventListener[this.type, PointerEvent]): js.Any = js.native
+    def on_pause(evtStr: pause, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_pointerdown(evtStr: pointerdown, handler: KonvaEventListener[this.type, PointerEvent]): js.Any = js.native
+    def on_play(evtStr: play, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_pointerenter(evtStr: pointerenter, handler: KonvaEventListener[this.type, PointerEvent]): js.Any = js.native
+    def on_playing(evtStr: playing, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_pointerleave(evtStr: pointerleave, handler: KonvaEventListener[this.type, PointerEvent]): js.Any = js.native
+    def on_pointercancel(evtStr: pointercancel, handler: KonvaEventListener[this.type, PointerEvent]): Any = js.native
     @JSName("on")
-    def on_pointermove(evtStr: pointermove, handler: KonvaEventListener[this.type, PointerEvent]): js.Any = js.native
+    def on_pointerdown(evtStr: pointerdown, handler: KonvaEventListener[this.type, PointerEvent]): Any = js.native
     @JSName("on")
-    def on_pointerout(evtStr: pointerout, handler: KonvaEventListener[this.type, PointerEvent]): js.Any = js.native
+    def on_pointerenter(evtStr: pointerenter, handler: KonvaEventListener[this.type, PointerEvent]): Any = js.native
     @JSName("on")
-    def on_pointerover(evtStr: pointerover, handler: KonvaEventListener[this.type, PointerEvent]): js.Any = js.native
+    def on_pointerleave(evtStr: pointerleave, handler: KonvaEventListener[this.type, PointerEvent]): Any = js.native
     @JSName("on")
-    def on_pointerup(evtStr: pointerup, handler: KonvaEventListener[this.type, PointerEvent]): js.Any = js.native
+    def on_pointermove(evtStr: pointermove, handler: KonvaEventListener[this.type, PointerEvent]): Any = js.native
     @JSName("on")
-    def on_progress(evtStr: progress, handler: KonvaEventListener[this.type, ProgressEvent[EventTarget]]): js.Any = js.native
+    def on_pointerout(evtStr: pointerout, handler: KonvaEventListener[this.type, PointerEvent]): Any = js.native
     @JSName("on")
-    def on_ratechange(evtStr: ratechange, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_pointerover(evtStr: pointerover, handler: KonvaEventListener[this.type, PointerEvent]): Any = js.native
     @JSName("on")
-    def on_reset(evtStr: reset, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_pointerup(evtStr: pointerup, handler: KonvaEventListener[this.type, PointerEvent]): Any = js.native
     @JSName("on")
-    def on_resize(evtStr: resize, handler: KonvaEventListener[this.type, UIEvent]): js.Any = js.native
+    def on_progress(evtStr: progress, handler: KonvaEventListener[this.type, ProgressEvent[EventTarget]]): Any = js.native
     @JSName("on")
-    def on_scroll(evtStr: scroll, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_ratechange(evtStr: ratechange, handler: KonvaEventListener[this.type, Event]): Any = js.native
+    @JSName("on")
+    def on_reset(evtStr: reset, handler: KonvaEventListener[this.type, Event]): Any = js.native
+    @JSName("on")
+    def on_resize(evtStr: resize, handler: KonvaEventListener[this.type, UIEvent]): Any = js.native
+    @JSName("on")
+    def on_scroll(evtStr: scroll, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
     def on_securitypolicyviolation(
       evtStr: securitypolicyviolation,
       handler: KonvaEventListener[this.type, SecurityPolicyViolationEvent]
-    ): js.Any = js.native
+    ): Any = js.native
     @JSName("on")
-    def on_seeked(evtStr: seeked, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_seeked(evtStr: seeked, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_seeking(evtStr: seeking, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_seeking(evtStr: seeking, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_select(evtStr: select, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_select(evtStr: select, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_selectionchange(evtStr: selectionchange, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_selectionchange(evtStr: selectionchange, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_selectstart(evtStr: selectstart, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_selectstart(evtStr: selectstart, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_stalled(evtStr: stalled, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_slotchange(evtStr: slotchange, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_submit(evtStr: submit, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_stalled(evtStr: stalled, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_suspend(evtStr: suspend, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_submit(evtStr: submit, handler: KonvaEventListener[this.type, SubmitEvent]): Any = js.native
     @JSName("on")
-    def on_timeupdate(evtStr: timeupdate, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_suspend(evtStr: suspend, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_toggle(evtStr: toggle, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_timeupdate(evtStr: timeupdate, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_touchcancel(evtStr: touchcancel, handler: KonvaEventListener[this.type, TouchEvent]): js.Any = js.native
+    def on_toggle(evtStr: toggle, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_touchend(evtStr: touchend, handler: KonvaEventListener[this.type, TouchEvent]): js.Any = js.native
+    def on_touchcancel(evtStr: touchcancel, handler: KonvaEventListener[this.type, TouchEvent]): Any = js.native
     @JSName("on")
-    def on_touchmove(evtStr: touchmove, handler: KonvaEventListener[this.type, TouchEvent]): js.Any = js.native
+    def on_touchend(evtStr: touchend, handler: KonvaEventListener[this.type, TouchEvent]): Any = js.native
     @JSName("on")
-    def on_touchstart(evtStr: touchstart, handler: KonvaEventListener[this.type, TouchEvent]): js.Any = js.native
+    def on_touchmove(evtStr: touchmove, handler: KonvaEventListener[this.type, TouchEvent]): Any = js.native
     @JSName("on")
-    def on_transitioncancel(evtStr: transitioncancel, handler: KonvaEventListener[this.type, TransitionEvent]): js.Any = js.native
+    def on_touchstart(evtStr: touchstart, handler: KonvaEventListener[this.type, TouchEvent]): Any = js.native
     @JSName("on")
-    def on_transitionend(evtStr: transitionend, handler: KonvaEventListener[this.type, TransitionEvent]): js.Any = js.native
+    def on_transitioncancel(evtStr: transitioncancel, handler: KonvaEventListener[this.type, TransitionEvent]): Any = js.native
     @JSName("on")
-    def on_transitionrun(evtStr: transitionrun, handler: KonvaEventListener[this.type, TransitionEvent]): js.Any = js.native
+    def on_transitionend(evtStr: transitionend, handler: KonvaEventListener[this.type, TransitionEvent]): Any = js.native
     @JSName("on")
-    def on_transitionstart(evtStr: transitionstart, handler: KonvaEventListener[this.type, TransitionEvent]): js.Any = js.native
+    def on_transitionrun(evtStr: transitionrun, handler: KonvaEventListener[this.type, TransitionEvent]): Any = js.native
     @JSName("on")
-    def on_volumechange(evtStr: volumechange, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_transitionstart(evtStr: transitionstart, handler: KonvaEventListener[this.type, TransitionEvent]): Any = js.native
     @JSName("on")
-    def on_waiting(evtStr: waiting, handler: KonvaEventListener[this.type, Event]): js.Any = js.native
+    def on_volumechange(evtStr: volumechange, handler: KonvaEventListener[this.type, Event]): Any = js.native
     @JSName("on")
-    def on_wheel(evtStr: wheel, handler: KonvaEventListener[this.type, WheelEvent]): js.Any = js.native
+    def on_waiting(evtStr: waiting, handler: KonvaEventListener[this.type, Event]): Any = js.native
+    @JSName("on")
+    def on_webkitanimationend(evtStr: webkitanimationend, handler: KonvaEventListener[this.type, Event]): Any = js.native
+    @JSName("on")
+    def on_webkitanimationiteration(evtStr: webkitanimationiteration, handler: KonvaEventListener[this.type, Event]): Any = js.native
+    @JSName("on")
+    def on_webkitanimationstart(evtStr: webkitanimationstart, handler: KonvaEventListener[this.type, Event]): Any = js.native
+    @JSName("on")
+    def on_webkittransitionend(evtStr: webkittransitionend, handler: KonvaEventListener[this.type, Event]): Any = js.native
+    @JSName("on")
+    def on_wheel(evtStr: wheel, handler: KonvaEventListener[this.type, WheelEvent]): Any = js.native
     
     def opacity(): Double = js.native
     def opacity(v: Double): this.type = js.native
@@ -748,9 +780,9 @@ object nodeMod {
     
     def removeEventListener(`type`: String): this.type = js.native
     
-    def removeName(name: js.Any): this.type = js.native
+    def removeName(name: Any): this.type = js.native
     
-    def rotate(theta: js.Any): this.type = js.native
+    def rotate(theta: Double): this.type = js.native
     
     def rotation(): Double = js.native
     def rotation(v: Double): this.type = js.native
@@ -762,7 +794,7 @@ object nodeMod {
     @JSName("saturation")
     var saturation_Original: GetSet[Double, this.type] = js.native
     
-    def scale(): Vector2d = js.native
+    def scale(): this.type = js.native
     def scale(v: Vector2d): this.type = js.native
     
     def scaleX(): Double = js.native
@@ -776,28 +808,28 @@ object nodeMod {
     var scaleY_Original: GetSet[Double, this.type] = js.native
     
     @JSName("scale")
-    var scale_Original: GetSet[Vector2d, this.type] = js.native
+    var scale_Original: GetSet[js.UndefOr[Vector2d], this.type] = js.native
+    @JSName("scale")
+    def scale_Union(): js.UndefOr[Vector2d] = js.native
     
-    def setAbsolutePosition(pos: js.Any): this.type = js.native
+    def setAbsolutePosition(pos: Vector2d): this.type = js.native
     
-    def setAttr(attr: js.Any, `val`: js.Any): this.type = js.native
+    def setAttr(attr: Any, `val`: Any): this.type = js.native
     
-    def setAttrs(config: js.Any): this.type = js.native
+    def setAttrs(config: Any): this.type = js.native
     
-    def setDraggable(draggable: js.Any): Unit = js.native
+    def setDraggable(draggable: Any): Unit = js.native
     
-    def setId(id: js.Any): this.type = js.native
+    def setPosition(pos: Vector2d): this.type = js.native
     
-    def setName(name: js.Any): this.type = js.native
+    def setSize(size: Any): this.type = js.native
     
-    def setPosition(pos: js.Any): this.type = js.native
+    def setZIndex(zIndex: Any): this.type = js.native
     
-    def setSize(size: js.Any): this.type = js.native
-    
-    def setZIndex(zIndex: js.Any): this.type = js.native
-    
-    def shouldDrawHit(): js.Any = js.native
-    def shouldDrawHit(top: Node[NodeConfig]): js.Any = js.native
+    def shouldDrawHit(): Boolean = js.native
+    def shouldDrawHit(top: Unit, skipDragCheck: Boolean): Boolean = js.native
+    def shouldDrawHit(top: Node[NodeConfig]): Boolean = js.native
+    def shouldDrawHit(top: Node[NodeConfig], skipDragCheck: Boolean): Boolean = js.native
     
     def show(): this.type = js.native
     
@@ -823,12 +855,12 @@ object nodeMod {
     var skew_Original: GetSet[Vector2d, this.type] = js.native
     
     def startDrag(): Unit = js.native
-    def startDrag(evt: js.Any): Unit = js.native
-    def startDrag(evt: js.Any, bubbleEvent: Boolean): Unit = js.native
+    def startDrag(evt: Any): Unit = js.native
+    def startDrag(evt: Any, bubbleEvent: Boolean): Unit = js.native
     def startDrag(evt: Unit, bubbleEvent: Boolean): Unit = js.native
     
     def stopDrag(): Unit = js.native
-    def stopDrag(evt: js.Any): Unit = js.native
+    def stopDrag(evt: Any): Unit = js.native
     
     def threshold(): Double = js.native
     def threshold(v: Double): this.type = js.native
@@ -837,17 +869,21 @@ object nodeMod {
     
     def to(params: AnimTo): Unit = js.native
     
-    def toCanvas(config: js.Any): HTMLCanvasElement = js.native
+    def toBlob(): js.Promise[Any] = js.native
+    def toBlob(config: PixelRatio): js.Promise[Any] = js.native
+    
+    def toCanvas(): HTMLCanvasElement = js.native
+    def toCanvas(config: Any): HTMLCanvasElement = js.native
     
     def toDataURL(): String = js.native
     def toDataURL(config: Callback): String = js.native
     
-    def toImage(): Unit = js.native
-    def toImage(config: MimeType): Unit = js.native
+    def toImage(): js.Promise[Any] = js.native
+    def toImage(config: MimeType): js.Promise[Any] = js.native
     
     def toJSON(): String = js.native
     
-    def toObject(): js.Any = js.native
+    def toObject(): Any = js.native
     
     def transformsEnabled(): String = js.native
     def transformsEnabled(v: String): this.type = js.native
@@ -887,30 +923,16 @@ object nodeMod {
   /* static members */
   object Node {
     
-    @JSImport("konva/types/Node", "Node")
+    @JSImport("konva/lib/Node", "Node")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def _createNode(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_createNode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def _createNode(obj: js.Any, container: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_createNode")(obj.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _createNode(obj: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_createNode")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def _createNode(obj: Any, container: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_createNode")(obj.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def create(data: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def create(data: js.Any, container: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def create(data: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def create(data: Any, container: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
-  
-  inline def addName(node: js.Any, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_addName")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  @JSImport("konva/types/Node", "ids")
-  @js.native
-  val ids: js.Any = js.native
-  
-  @JSImport("konva/types/Node", "names")
-  @js.native
-  val names: js.Any = js.native
-  
-  inline def removeId(id: String, node: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_removeId")(id.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def removeName(name: String, _id: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_removeName")(name.asInstanceOf[js.Any], _id.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait AnimTo
     extends StObject
@@ -960,6 +982,8 @@ object nodeMod {
     var evt: EventType
     
     var target: Shape[ShapeConfig] | Stage
+    
+    var `type`: String
   }
   object KonvaEventObject {
     
@@ -967,9 +991,11 @@ object nodeMod {
       cancelBubble: Boolean,
       currentTarget: Node[NodeConfig],
       evt: EventType,
-      target: Shape[ShapeConfig] | Stage
+      target: Shape[ShapeConfig] | Stage,
+      `type`: String
     ): KonvaEventObject[EventType] = {
       val __obj = js.Dynamic.literal(cancelBubble = cancelBubble.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], evt = evt.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[KonvaEventObject[EventType]]
     }
     
@@ -986,12 +1012,14 @@ object nodeMod {
       inline def setEvt(value: EventType): Self = StObject.set(x, "evt", value.asInstanceOf[js.Any])
       
       inline def setTarget(value: Shape[ShapeConfig] | Stage): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   trait NodeConfig
     extends StObject
-       with /* index */ StringDictionary[js.Any] {
+       with /* index */ StringDictionary[Any] {
     
     var dragBoundFunc: js.UndefOr[js.ThisFunction1[/* this */ Node[this.type], /* pos */ Vector2d, Vector2d]] = js.undefined
     
@@ -1064,7 +1092,7 @@ object nodeMod {
       
       inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value*))
       
       inline def setGlobalCompositeOperation(value: globalCompositeOperationType): Self = StObject.set(x, "globalCompositeOperation", value.asInstanceOf[js.Any])
       
@@ -1147,7 +1175,7 @@ object nodeMod {
   trait NodeEventMap
     extends StObject
        with GlobalEventHandlersEventMap
-       with /* index */ StringDictionary[js.Any]
+       with /* index */ StringDictionary[Any]
   object NodeEventMap {
     
     inline def apply(
@@ -1157,20 +1185,22 @@ object nodeMod {
       animationiteration: AnimationEvent,
       animationstart: AnimationEvent,
       auxclick: MouseEvent,
+      beforeinput: InputEvent,
       blur: FocusEvent,
-      cancel: Event,
       canplay: Event,
       canplaythrough: Event,
       change: Event,
       click: MouseEvent,
       close: Event,
+      compositionend: CompositionEvent,
+      compositionstart: CompositionEvent,
+      compositionupdate: CompositionEvent,
       contextmenu: MouseEvent,
       cuechange: Event,
       dblclick: MouseEvent,
       drag: DragEvent,
       dragend: DragEvent,
       dragenter: DragEvent,
-      dragexit: Event,
       dragleave: DragEvent,
       dragover: DragEvent,
       dragstart: DragEvent,
@@ -1182,6 +1212,7 @@ object nodeMod {
       focus: FocusEvent,
       focusin: FocusEvent,
       focusout: FocusEvent,
+      formdata: FormDataEvent,
       gotpointercapture: PointerEvent,
       input: Event,
       invalid: Event,
@@ -1222,8 +1253,9 @@ object nodeMod {
       select: Event,
       selectionchange: Event,
       selectstart: Event,
+      slotchange: Event,
       stalled: Event,
-      submit: Event,
+      submit: SubmitEvent,
       suspend: Event,
       timeupdate: Event,
       toggle: Event,
@@ -1237,9 +1269,13 @@ object nodeMod {
       transitionstart: TransitionEvent,
       volumechange: Event,
       waiting: Event,
+      webkitanimationend: Event,
+      webkitanimationiteration: Event,
+      webkitanimationstart: Event,
+      webkittransitionend: Event,
       wheel: WheelEvent
     ): NodeEventMap = {
-      val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragexit = dragexit.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectionchange = selectionchange.asInstanceOf[js.Any], selectstart = selectstart.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], beforeinput = beforeinput.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], compositionend = compositionend.asInstanceOf[js.Any], compositionstart = compositionstart.asInstanceOf[js.Any], compositionupdate = compositionupdate.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], formdata = formdata.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectionchange = selectionchange.asInstanceOf[js.Any], selectstart = selectstart.asInstanceOf[js.Any], slotchange = slotchange.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], webkitanimationend = webkitanimationend.asInstanceOf[js.Any], webkitanimationiteration = webkitanimationiteration.asInstanceOf[js.Any], webkitanimationstart = webkitanimationstart.asInstanceOf[js.Any], webkittransitionend = webkittransitionend.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeEventMap]
     }
   }

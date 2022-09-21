@@ -29,7 +29,7 @@ object ListSignalingChannelsOutput {
     
     inline def setChannelInfoListUndefined: Self = StObject.set(x, "ChannelInfoList", js.undefined)
     
-    inline def setChannelInfoListVarargs(value: ChannelInfo*): Self = StObject.set(x, "ChannelInfoList", js.Array(value :_*))
+    inline def setChannelInfoListVarargs(value: ChannelInfo*): Self = StObject.set(x, "ChannelInfoList", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

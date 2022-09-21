@@ -99,6 +99,20 @@ trait Comprehend extends Service {
   var config_Comprehend: ConfigBase & ClientConfiguration = js.native
   
   /**
+    * Analyzes input text for the presence of personally identifiable information (PII) and returns the labels of identified PII entity types such as name, address, bank account number, or phone number.
+    */
+  def containsPiiEntities(): Request[ContainsPiiEntitiesResponse, AWSError] = js.native
+  def containsPiiEntities(callback: js.Function2[/* err */ AWSError, /* data */ ContainsPiiEntitiesResponse, Unit]): Request[ContainsPiiEntitiesResponse, AWSError] = js.native
+  /**
+    * Analyzes input text for the presence of personally identifiable information (PII) and returns the labels of identified PII entity types such as name, address, bank account number, or phone number.
+    */
+  def containsPiiEntities(params: ContainsPiiEntitiesRequest): Request[ContainsPiiEntitiesResponse, AWSError] = js.native
+  def containsPiiEntities(
+    params: ContainsPiiEntitiesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ContainsPiiEntitiesResponse, Unit]
+  ): Request[ContainsPiiEntitiesResponse, AWSError] = js.native
+  
+  /**
     * Creates a new document classifier that you can use to categorize documents. To create a classifier, you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. For more information, see how-document-classification.
     */
   def createDocumentClassifier(): Request[CreateDocumentClassifierResponse, AWSError] = js.native
@@ -113,12 +127,12 @@ trait Comprehend extends Service {
   ): Request[CreateDocumentClassifierResponse, AWSError] = js.native
   
   /**
-    * Creates a model-specific endpoint for synchronous inference for a previously trained custom model 
+    * Creates a model-specific endpoint for synchronous inference for a previously trained custom model For information about endpoints, see Managing endpoints.
     */
   def createEndpoint(): Request[CreateEndpointResponse, AWSError] = js.native
   def createEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ CreateEndpointResponse, Unit]): Request[CreateEndpointResponse, AWSError] = js.native
   /**
-    * Creates a model-specific endpoint for synchronous inference for a previously trained custom model 
+    * Creates a model-specific endpoint for synchronous inference for a previously trained custom model For information about endpoints, see Managing endpoints.
     */
   def createEndpoint(params: CreateEndpointRequest): Request[CreateEndpointResponse, AWSError] = js.native
   def createEndpoint(
@@ -155,12 +169,12 @@ trait Comprehend extends Service {
   ): Request[DeleteDocumentClassifierResponse, AWSError] = js.native
   
   /**
-    * Deletes a model-specific endpoint for a previously-trained custom model. All endpoints must be deleted in order for the model to be deleted.
+    * Deletes a model-specific endpoint for a previously-trained custom model. All endpoints must be deleted in order for the model to be deleted. For information about endpoints, see Managing endpoints.
     */
   def deleteEndpoint(): Request[DeleteEndpointResponse, AWSError] = js.native
   def deleteEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ DeleteEndpointResponse, Unit]): Request[DeleteEndpointResponse, AWSError] = js.native
   /**
-    * Deletes a model-specific endpoint for a previously-trained custom model. All endpoints must be deleted in order for the model to be deleted.
+    * Deletes a model-specific endpoint for a previously-trained custom model. All endpoints must be deleted in order for the model to be deleted. For information about endpoints, see Managing endpoints.
     */
   def deleteEndpoint(params: DeleteEndpointRequest): Request[DeleteEndpointResponse, AWSError] = js.native
   def deleteEndpoint(
@@ -181,6 +195,20 @@ trait Comprehend extends Service {
     params: DeleteEntityRecognizerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEntityRecognizerResponse, Unit]
   ): Request[DeleteEntityRecognizerResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a resource-based policy that is attached to a custom model.
+    */
+  def deleteResourcePolicy(): Request[DeleteResourcePolicyResponse, AWSError] = js.native
+  def deleteResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourcePolicyResponse, Unit]): Request[DeleteResourcePolicyResponse, AWSError] = js.native
+  /**
+    * Deletes a resource-based policy that is attached to a custom model.
+    */
+  def deleteResourcePolicy(params: DeleteResourcePolicyRequest): Request[DeleteResourcePolicyResponse, AWSError] = js.native
+  def deleteResourcePolicy(
+    params: DeleteResourcePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourcePolicyResponse, Unit]
+  ): Request[DeleteResourcePolicyResponse, AWSError] = js.native
   
   /**
     * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
@@ -229,12 +257,12 @@ trait Comprehend extends Service {
   ): Request[DescribeDominantLanguageDetectionJobResponse, AWSError] = js.native
   
   /**
-    * Gets the properties associated with a specific endpoint. Use this operation to get the status of an endpoint.
+    * Gets the properties associated with a specific endpoint. Use this operation to get the status of an endpoint. For information about endpoints, see Managing endpoints.
     */
   def describeEndpoint(): Request[DescribeEndpointResponse, AWSError] = js.native
   def describeEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointResponse, Unit]): Request[DescribeEndpointResponse, AWSError] = js.native
   /**
-    * Gets the properties associated with a specific endpoint. Use this operation to get the status of an endpoint.
+    * Gets the properties associated with a specific endpoint. Use this operation to get the status of an endpoint. For information about endpoints, see Managing endpoints.
     */
   def describeEndpoint(params: DescribeEndpointRequest): Request[DescribeEndpointResponse, AWSError] = js.native
   def describeEndpoint(
@@ -271,6 +299,20 @@ trait Comprehend extends Service {
   ): Request[DescribeEntityRecognizerResponse, AWSError] = js.native
   
   /**
+    * Gets the status and details of an events detection job.
+    */
+  def describeEventsDetectionJob(): Request[DescribeEventsDetectionJobResponse, AWSError] = js.native
+  def describeEventsDetectionJob(callback: js.Function2[/* err */ AWSError, /* data */ DescribeEventsDetectionJobResponse, Unit]): Request[DescribeEventsDetectionJobResponse, AWSError] = js.native
+  /**
+    * Gets the status and details of an events detection job.
+    */
+  def describeEventsDetectionJob(params: DescribeEventsDetectionJobRequest): Request[DescribeEventsDetectionJobResponse, AWSError] = js.native
+  def describeEventsDetectionJob(
+    params: DescribeEventsDetectionJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeEventsDetectionJobResponse, Unit]
+  ): Request[DescribeEventsDetectionJobResponse, AWSError] = js.native
+  
+  /**
     * Gets the properties associated with a key phrases detection job. Use this operation to get the status of a detection job.
     */
   def describeKeyPhrasesDetectionJob(): Request[DescribeKeyPhrasesDetectionJobResponse, AWSError] = js.native
@@ -303,6 +345,20 @@ trait Comprehend extends Service {
   ): Request[DescribePiiEntitiesDetectionJobResponse, AWSError] = js.native
   
   /**
+    * Gets the details of a resource-based policy that is attached to a custom model, including the JSON body of the policy.
+    */
+  def describeResourcePolicy(): Request[DescribeResourcePolicyResponse, AWSError] = js.native
+  def describeResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ DescribeResourcePolicyResponse, Unit]): Request[DescribeResourcePolicyResponse, AWSError] = js.native
+  /**
+    * Gets the details of a resource-based policy that is attached to a custom model, including the JSON body of the policy.
+    */
+  def describeResourcePolicy(params: DescribeResourcePolicyRequest): Request[DescribeResourcePolicyResponse, AWSError] = js.native
+  def describeResourcePolicy(
+    params: DescribeResourcePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeResourcePolicyResponse, Unit]
+  ): Request[DescribeResourcePolicyResponse, AWSError] = js.native
+  
+  /**
     * Gets the properties associated with a sentiment detection job. Use this operation to get the status of a detection job.
     */
   def describeSentimentDetectionJob(): Request[DescribeSentimentDetectionJobResponse, AWSError] = js.native
@@ -315,6 +371,22 @@ trait Comprehend extends Service {
     params: DescribeSentimentDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSentimentDetectionJobResponse, Unit]
   ): Request[DescribeSentimentDetectionJobResponse, AWSError] = js.native
+  
+  /**
+    * Gets the properties associated with a targeted sentiment detection job. Use this operation to get the status of the job.
+    */
+  def describeTargetedSentimentDetectionJob(): Request[DescribeTargetedSentimentDetectionJobResponse, AWSError] = js.native
+  def describeTargetedSentimentDetectionJob(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTargetedSentimentDetectionJobResponse, Unit]
+  ): Request[DescribeTargetedSentimentDetectionJobResponse, AWSError] = js.native
+  /**
+    * Gets the properties associated with a targeted sentiment detection job. Use this operation to get the status of the job.
+    */
+  def describeTargetedSentimentDetectionJob(params: DescribeTargetedSentimentDetectionJobRequest): Request[DescribeTargetedSentimentDetectionJobResponse, AWSError] = js.native
+  def describeTargetedSentimentDetectionJob(
+    params: DescribeTargetedSentimentDetectionJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTargetedSentimentDetectionJobResponse, Unit]
+  ): Request[DescribeTargetedSentimentDetectionJobResponse, AWSError] = js.native
   
   /**
     * Gets the properties associated with a topic detection job. Use this operation to get the status of a detection job.
@@ -415,6 +487,20 @@ trait Comprehend extends Service {
   ): Request[DetectSyntaxResponse, AWSError] = js.native
   
   /**
+    * Creates a new custom model that replicates a source custom model that you import. The source model can be in your AWS account or another one. If the source model is in another AWS account, then it must have a resource-based policy that authorizes you to import it. The source model must be in the same AWS region that you're using when you import. You can't import a model that's in a different region.
+    */
+  def importModel(): Request[ImportModelResponse, AWSError] = js.native
+  def importModel(callback: js.Function2[/* err */ AWSError, /* data */ ImportModelResponse, Unit]): Request[ImportModelResponse, AWSError] = js.native
+  /**
+    * Creates a new custom model that replicates a source custom model that you import. The source model can be in your AWS account or another one. If the source model is in another AWS account, then it must have a resource-based policy that authorizes you to import it. The source model must be in the same AWS region that you're using when you import. You can't import a model that's in a different region.
+    */
+  def importModel(params: ImportModelRequest): Request[ImportModelResponse, AWSError] = js.native
+  def importModel(
+    params: ImportModelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ImportModelResponse, Unit]
+  ): Request[ImportModelResponse, AWSError] = js.native
+  
+  /**
     * Gets a list of the documentation classification jobs that you have submitted.
     */
   def listDocumentClassificationJobs(): Request[ListDocumentClassificationJobsResponse, AWSError] = js.native
@@ -429,6 +515,22 @@ trait Comprehend extends Service {
     params: ListDocumentClassificationJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDocumentClassificationJobsResponse, Unit]
   ): Request[ListDocumentClassificationJobsResponse, AWSError] = js.native
+  
+  /**
+    * Gets a list of summaries of the document classifiers that you have created
+    */
+  def listDocumentClassifierSummaries(): Request[ListDocumentClassifierSummariesResponse, AWSError] = js.native
+  def listDocumentClassifierSummaries(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDocumentClassifierSummariesResponse, Unit]
+  ): Request[ListDocumentClassifierSummariesResponse, AWSError] = js.native
+  /**
+    * Gets a list of summaries of the document classifiers that you have created
+    */
+  def listDocumentClassifierSummaries(params: ListDocumentClassifierSummariesRequest): Request[ListDocumentClassifierSummariesResponse, AWSError] = js.native
+  def listDocumentClassifierSummaries(
+    params: ListDocumentClassifierSummariesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDocumentClassifierSummariesResponse, Unit]
+  ): Request[ListDocumentClassifierSummariesResponse, AWSError] = js.native
   
   /**
     * Gets a list of the document classifiers that you have created.
@@ -461,12 +563,12 @@ trait Comprehend extends Service {
   ): Request[ListDominantLanguageDetectionJobsResponse, AWSError] = js.native
   
   /**
-    * Gets a list of all existing endpoints that you've created.
+    * Gets a list of all existing endpoints that you've created. For information about endpoints, see Managing endpoints.
     */
   def listEndpoints(): Request[ListEndpointsResponse, AWSError] = js.native
   def listEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ ListEndpointsResponse, Unit]): Request[ListEndpointsResponse, AWSError] = js.native
   /**
-    * Gets a list of all existing endpoints that you've created.
+    * Gets a list of all existing endpoints that you've created. For information about endpoints, see Managing endpoints.
     */
   def listEndpoints(params: ListEndpointsRequest): Request[ListEndpointsResponse, AWSError] = js.native
   def listEndpoints(
@@ -489,6 +591,20 @@ trait Comprehend extends Service {
   ): Request[ListEntitiesDetectionJobsResponse, AWSError] = js.native
   
   /**
+    * Gets a list of summaries for the entity recognizers that you have created.
+    */
+  def listEntityRecognizerSummaries(): Request[ListEntityRecognizerSummariesResponse, AWSError] = js.native
+  def listEntityRecognizerSummaries(callback: js.Function2[/* err */ AWSError, /* data */ ListEntityRecognizerSummariesResponse, Unit]): Request[ListEntityRecognizerSummariesResponse, AWSError] = js.native
+  /**
+    * Gets a list of summaries for the entity recognizers that you have created.
+    */
+  def listEntityRecognizerSummaries(params: ListEntityRecognizerSummariesRequest): Request[ListEntityRecognizerSummariesResponse, AWSError] = js.native
+  def listEntityRecognizerSummaries(
+    params: ListEntityRecognizerSummariesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListEntityRecognizerSummariesResponse, Unit]
+  ): Request[ListEntityRecognizerSummariesResponse, AWSError] = js.native
+  
+  /**
     * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
     */
   def listEntityRecognizers(): Request[ListEntityRecognizersResponse, AWSError] = js.native
@@ -501,6 +617,20 @@ trait Comprehend extends Service {
     params: ListEntityRecognizersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListEntityRecognizersResponse, Unit]
   ): Request[ListEntityRecognizersResponse, AWSError] = js.native
+  
+  /**
+    * Gets a list of the events detection jobs that you have submitted.
+    */
+  def listEventsDetectionJobs(): Request[ListEventsDetectionJobsResponse, AWSError] = js.native
+  def listEventsDetectionJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListEventsDetectionJobsResponse, Unit]): Request[ListEventsDetectionJobsResponse, AWSError] = js.native
+  /**
+    * Gets a list of the events detection jobs that you have submitted.
+    */
+  def listEventsDetectionJobs(params: ListEventsDetectionJobsRequest): Request[ListEventsDetectionJobsResponse, AWSError] = js.native
+  def listEventsDetectionJobs(
+    params: ListEventsDetectionJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListEventsDetectionJobsResponse, Unit]
+  ): Request[ListEventsDetectionJobsResponse, AWSError] = js.native
   
   /**
     * Get a list of key phrase detection jobs that you have submitted.
@@ -559,6 +689,22 @@ trait Comprehend extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
+    * Gets a list of targeted sentiment detection jobs that you have submitted.
+    */
+  def listTargetedSentimentDetectionJobs(): Request[ListTargetedSentimentDetectionJobsResponse, AWSError] = js.native
+  def listTargetedSentimentDetectionJobs(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTargetedSentimentDetectionJobsResponse, Unit]
+  ): Request[ListTargetedSentimentDetectionJobsResponse, AWSError] = js.native
+  /**
+    * Gets a list of targeted sentiment detection jobs that you have submitted.
+    */
+  def listTargetedSentimentDetectionJobs(params: ListTargetedSentimentDetectionJobsRequest): Request[ListTargetedSentimentDetectionJobsResponse, AWSError] = js.native
+  def listTargetedSentimentDetectionJobs(
+    params: ListTargetedSentimentDetectionJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTargetedSentimentDetectionJobsResponse, Unit]
+  ): Request[ListTargetedSentimentDetectionJobsResponse, AWSError] = js.native
+  
+  /**
     * Gets a list of the topic detection jobs that you have submitted.
     */
   def listTopicsDetectionJobs(): Request[ListTopicsDetectionJobsResponse, AWSError] = js.native
@@ -571,6 +717,20 @@ trait Comprehend extends Service {
     params: ListTopicsDetectionJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTopicsDetectionJobsResponse, Unit]
   ): Request[ListTopicsDetectionJobsResponse, AWSError] = js.native
+  
+  /**
+    * Attaches a resource-based policy to a custom model. You can use this policy to authorize an entity in another AWS account to import the custom model, which replicates it in Amazon Comprehend in their account.
+    */
+  def putResourcePolicy(): Request[PutResourcePolicyResponse, AWSError] = js.native
+  def putResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyResponse, Unit]): Request[PutResourcePolicyResponse, AWSError] = js.native
+  /**
+    * Attaches a resource-based policy to a custom model. You can use this policy to authorize an entity in another AWS account to import the custom model, which replicates it in Amazon Comprehend in their account.
+    */
+  def putResourcePolicy(params: PutResourcePolicyRequest): Request[PutResourcePolicyResponse, AWSError] = js.native
+  def putResourcePolicy(
+    params: PutResourcePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyResponse, Unit]
+  ): Request[PutResourcePolicyResponse, AWSError] = js.native
   
   /**
     * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
@@ -619,6 +779,20 @@ trait Comprehend extends Service {
   ): Request[StartEntitiesDetectionJobResponse, AWSError] = js.native
   
   /**
+    * Starts an asynchronous event detection job for a collection of documents.
+    */
+  def startEventsDetectionJob(): Request[StartEventsDetectionJobResponse, AWSError] = js.native
+  def startEventsDetectionJob(callback: js.Function2[/* err */ AWSError, /* data */ StartEventsDetectionJobResponse, Unit]): Request[StartEventsDetectionJobResponse, AWSError] = js.native
+  /**
+    * Starts an asynchronous event detection job for a collection of documents.
+    */
+  def startEventsDetectionJob(params: StartEventsDetectionJobRequest): Request[StartEventsDetectionJobResponse, AWSError] = js.native
+  def startEventsDetectionJob(
+    params: StartEventsDetectionJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartEventsDetectionJobResponse, Unit]
+  ): Request[StartEventsDetectionJobResponse, AWSError] = js.native
+  
+  /**
     * Starts an asynchronous key phrase detection job for a collection of documents. Use the operation to track the status of a job.
     */
   def startKeyPhrasesDetectionJob(): Request[StartKeyPhrasesDetectionJobResponse, AWSError] = js.native
@@ -647,18 +821,34 @@ trait Comprehend extends Service {
   ): Request[StartPiiEntitiesDetectionJobResponse, AWSError] = js.native
   
   /**
-    * Starts an asynchronous sentiment detection job for a collection of documents. use the operation to track the status of a job.
+    * Starts an asynchronous sentiment detection job for a collection of documents. Use the operation to track the status of a job.
     */
   def startSentimentDetectionJob(): Request[StartSentimentDetectionJobResponse, AWSError] = js.native
   def startSentimentDetectionJob(callback: js.Function2[/* err */ AWSError, /* data */ StartSentimentDetectionJobResponse, Unit]): Request[StartSentimentDetectionJobResponse, AWSError] = js.native
   /**
-    * Starts an asynchronous sentiment detection job for a collection of documents. use the operation to track the status of a job.
+    * Starts an asynchronous sentiment detection job for a collection of documents. Use the operation to track the status of a job.
     */
   def startSentimentDetectionJob(params: StartSentimentDetectionJobRequest): Request[StartSentimentDetectionJobResponse, AWSError] = js.native
   def startSentimentDetectionJob(
     params: StartSentimentDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartSentimentDetectionJobResponse, Unit]
   ): Request[StartSentimentDetectionJobResponse, AWSError] = js.native
+  
+  /**
+    * Starts an asynchronous targeted sentiment detection job for a collection of documents. Use the operation to track the status of a job.
+    */
+  def startTargetedSentimentDetectionJob(): Request[StartTargetedSentimentDetectionJobResponse, AWSError] = js.native
+  def startTargetedSentimentDetectionJob(
+    callback: js.Function2[/* err */ AWSError, /* data */ StartTargetedSentimentDetectionJobResponse, Unit]
+  ): Request[StartTargetedSentimentDetectionJobResponse, AWSError] = js.native
+  /**
+    * Starts an asynchronous targeted sentiment detection job for a collection of documents. Use the operation to track the status of a job.
+    */
+  def startTargetedSentimentDetectionJob(params: StartTargetedSentimentDetectionJobRequest): Request[StartTargetedSentimentDetectionJobResponse, AWSError] = js.native
+  def startTargetedSentimentDetectionJob(
+    params: StartTargetedSentimentDetectionJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartTargetedSentimentDetectionJobResponse, Unit]
+  ): Request[StartTargetedSentimentDetectionJobResponse, AWSError] = js.native
   
   /**
     * Starts an asynchronous topic detection job. Use the DescribeTopicDetectionJob operation to track the status of a job.
@@ -705,6 +895,20 @@ trait Comprehend extends Service {
   ): Request[StopEntitiesDetectionJobResponse, AWSError] = js.native
   
   /**
+    * Stops an events detection job in progress.
+    */
+  def stopEventsDetectionJob(): Request[StopEventsDetectionJobResponse, AWSError] = js.native
+  def stopEventsDetectionJob(callback: js.Function2[/* err */ AWSError, /* data */ StopEventsDetectionJobResponse, Unit]): Request[StopEventsDetectionJobResponse, AWSError] = js.native
+  /**
+    * Stops an events detection job in progress.
+    */
+  def stopEventsDetectionJob(params: StopEventsDetectionJobRequest): Request[StopEventsDetectionJobResponse, AWSError] = js.native
+  def stopEventsDetectionJob(
+    params: StopEventsDetectionJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopEventsDetectionJobResponse, Unit]
+  ): Request[StopEventsDetectionJobResponse, AWSError] = js.native
+  
+  /**
     * Stops a key phrases detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
     */
   def stopKeyPhrasesDetectionJob(): Request[StopKeyPhrasesDetectionJobResponse, AWSError] = js.native
@@ -733,18 +937,34 @@ trait Comprehend extends Service {
   ): Request[StopPiiEntitiesDetectionJobResponse, AWSError] = js.native
   
   /**
-    * Stops a sentiment detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is be stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
+    * Stops a sentiment detection job in progress. If the job state is IN_PROGRESS, the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is be stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
     */
   def stopSentimentDetectionJob(): Request[StopSentimentDetectionJobResponse, AWSError] = js.native
   def stopSentimentDetectionJob(callback: js.Function2[/* err */ AWSError, /* data */ StopSentimentDetectionJobResponse, Unit]): Request[StopSentimentDetectionJobResponse, AWSError] = js.native
   /**
-    * Stops a sentiment detection job in progress. If the job state is IN_PROGRESS the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is be stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
+    * Stops a sentiment detection job in progress. If the job state is IN_PROGRESS, the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is be stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
     */
   def stopSentimentDetectionJob(params: StopSentimentDetectionJobRequest): Request[StopSentimentDetectionJobResponse, AWSError] = js.native
   def stopSentimentDetectionJob(
     params: StopSentimentDetectionJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StopSentimentDetectionJobResponse, Unit]
   ): Request[StopSentimentDetectionJobResponse, AWSError] = js.native
+  
+  /**
+    * Stops a targeted sentiment detection job in progress. If the job state is IN_PROGRESS, the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is be stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
+    */
+  def stopTargetedSentimentDetectionJob(): Request[StopTargetedSentimentDetectionJobResponse, AWSError] = js.native
+  def stopTargetedSentimentDetectionJob(
+    callback: js.Function2[/* err */ AWSError, /* data */ StopTargetedSentimentDetectionJobResponse, Unit]
+  ): Request[StopTargetedSentimentDetectionJobResponse, AWSError] = js.native
+  /**
+    * Stops a targeted sentiment detection job in progress. If the job state is IN_PROGRESS, the job is marked for termination and put into the STOP_REQUESTED state. If the job completes before it can be stopped, it is put into the COMPLETED state; otherwise the job is be stopped and put into the STOPPED state. If the job is in the COMPLETED or FAILED state when you call the StopDominantLanguageDetectionJob operation, the operation returns a 400 Internal Request Exception.  When a job is stopped, any documents already processed are written to the output location.
+    */
+  def stopTargetedSentimentDetectionJob(params: StopTargetedSentimentDetectionJobRequest): Request[StopTargetedSentimentDetectionJobResponse, AWSError] = js.native
+  def stopTargetedSentimentDetectionJob(
+    params: StopTargetedSentimentDetectionJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopTargetedSentimentDetectionJobResponse, Unit]
+  ): Request[StopTargetedSentimentDetectionJobResponse, AWSError] = js.native
   
   /**
     * Stops a document classifier training job while in progress. If the training job state is TRAINING, the job is marked for termination and put into the STOP_REQUESTED state. If the training job completes before it can be stopped, it is put into the TRAINED; otherwise the training job is stopped and put into the STOPPED state and the service sends back an HTTP 200 response with an empty HTTP body. 
@@ -805,12 +1025,12 @@ trait Comprehend extends Service {
   ): Request[UntagResourceResponse, AWSError] = js.native
   
   /**
-    * Updates information about the specified endpoint.
+    * Updates information about the specified endpoint. For information about endpoints, see Managing endpoints.
     */
   def updateEndpoint(): Request[UpdateEndpointResponse, AWSError] = js.native
   def updateEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ UpdateEndpointResponse, Unit]): Request[UpdateEndpointResponse, AWSError] = js.native
   /**
-    * Updates information about the specified endpoint.
+    * Updates information about the specified endpoint. For information about endpoints, see Managing endpoints.
     */
   def updateEndpoint(params: UpdateEndpointRequest): Request[UpdateEndpointResponse, AWSError] = js.native
   def updateEndpoint(

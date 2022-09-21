@@ -16,5 +16,5 @@ trait TypeDecorator extends StObject {
   /**
     * Invoke as decorator.
     */
-  def apply[T /* <: Type[js.Any] */](`type`: T): T = js.native
+  def apply[T /* <: Type[Any] */](`type`: T): T = js.native
 }

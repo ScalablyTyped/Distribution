@@ -1,30 +1,30 @@
 
 # Scala.js typings for redis
 
-Typings are for version 2.8
+Typings are for version 4.3.1
 
 ## Library description:
-A high performance Redis client.
+A modern, high performance Redis client
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | redis |
-| Keywords           | database, redis, transaction, pipelining, performance, queue, nodejs, pubsub, backpressure |
-| # releases         | 4 |
-| # dependents       | 4985 |
-| # downloads        | 83598905 |
-| # stars            | 447 |
+| Keywords           | - |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1837796333333334E7 |
+| # stars            | 15500.0 |
 
 ## Links
-- [Homepage](https://github.com/NodeRedis/node-redis)
-- [Bugs](https://github.com/NodeRedis/node-redis/issues)
-- [Repository](https://github.com/NodeRedis/node-redis)
+- [Homepage](https://github.com/redis/node-redis)
+- [Bugs](https://github.com/redis/node-redis/issues)
+- [Repository](https://github.com/redis/node-redis)
 - [Npm](https://www.npmjs.com/package/redis)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for trtc-js-sdk
 
-Typings are for version 4.3
+Typings are for version 4.8
 
 ## Library description:
 Tencent Cloud RTC SDK for Web
@@ -9,16 +9,16 @@ Tencent Cloud RTC SDK for Web
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | trtc-js-sdk |
-| Keywords           | 实时音视频, 视频通话, 音频通话, WEBRTC, 直播 |
-| # releases         | 37 |
-| # dependents       | 11 |
-| # downloads        | 34900 |
-| # stars            | 0 |
+| Keywords           | webrtc, TRTC, rtc, javascript, video, audio, camera, microphone, live streaming, real-time communication |
+| # releases         | 46 |
+| # dependents       | 0.0 |
+| # downloads        | 7053.666666666667 |
+| # stars            | 36.0 |
 
 ## Links
-- [Homepage](https://github.com/tencentyun/TRTCSDK#readme)
-- [Bugs](https://github.com/tencentyun/TRTCSDK/issues)
-- [Repository](https://github.com/tencentyun/TRTCSDK)
+- [Homepage](https://web.sdk.qcloud.com/trtc/webrtc/doc/en/index.html)
+- [Bugs](https://github.com/LiteAVSDK/TRTC_Web/issues)
+- [Repository](https://github.com/LiteAVSDK/TRTC_Web)
 - [Npm](https://www.npmjs.com/package/trtc-js-sdk)
     
 

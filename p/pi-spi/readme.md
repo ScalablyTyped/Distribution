@@ -9,10 +9,10 @@ Simple async SPI library for Raspberry Pi
 | ------------------ | :-------------: |
 | Full name          | pi-spi |
 | Keywords           | raspi, spi |
-| # releases         | 4 |
-| # dependents       | 28 |
-| # downloads        | 6454 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 333.3333333333333 |
+| # stars            | 95.0 |
 
 ## Links
 - [Homepage](https://github.com/natevw/pi-spi#readme)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".sucrase-TbLAtQ5t" : "3.21.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".sucrase-TbLAtQ5t" : "3.21.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

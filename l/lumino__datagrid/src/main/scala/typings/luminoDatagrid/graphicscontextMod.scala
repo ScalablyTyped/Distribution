@@ -22,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object graphicscontextMod {
   
-  @JSImport("@lumino/datagrid/lib/graphicscontext", "GraphicsContext")
+  @JSImport("@lumino/datagrid/types/graphicscontext", "GraphicsContext")
   @js.native
-  class GraphicsContext protected ()
+  open class GraphicsContext protected ()
     extends StObject
        with IDisposable {
     /**
@@ -34,11 +34,11 @@ object graphicscontextMod {
       */
     def this(context: CanvasRenderingContext2D) = this()
     
-    /* private */ var _context: js.Any = js.native
+    /* private */ var _context: Any = js.native
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
-    /* private */ var _state: js.Any = js.native
+    /* private */ var _state: Any = js.native
     
     def arc(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double): Unit = js.native
     def arc(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, anticlockwise: Boolean): Unit = js.native

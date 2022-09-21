@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.PathAttachment")
 @js.native
-class PathAttachment protected ()
+open class PathAttachment protected ()
   extends StObject
      with typings.phaser.spine.PathAttachment {
   def this(name: String) = this()

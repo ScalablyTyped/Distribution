@@ -7,25 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * AdSense Management API
-  *
-  * Accesses AdSense publishers&#39; inventory and generates performance
-  * reports.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const adsense = google.adsense('v1.4');
-  *
-  * @namespace adsense
-  * @type {Function}
-  * @version v1.4
-  * @variation v1.4
-  * @param {object=} options Options for Adsense
-  */
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Adsense")
 @js.native
-class Adsense protected () extends StObject {
+open class Adsense protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   

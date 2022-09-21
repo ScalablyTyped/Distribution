@@ -17,7 +17,7 @@ object toggleMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Toggle", "ToggleBase")
   @js.native
-  class ToggleBase protected ()
+  open class ToggleBase protected ()
     extends typings.officeUiFabricReact.toggleBaseMod.ToggleBase {
     def this(props: IToggleProps) = this()
   }

@@ -33,6 +33,6 @@ object ResourceTagsDescriptionMessage {
     
     inline def setResourceTagsUndefined: Self = StObject.set(x, "ResourceTags", js.undefined)
     
-    inline def setResourceTagsVarargs(value: Tag*): Self = StObject.set(x, "ResourceTags", js.Array(value :_*))
+    inline def setResourceTagsVarargs(value: Tag*): Self = StObject.set(x, "ResourceTags", js.Array(value*))
   }
 }

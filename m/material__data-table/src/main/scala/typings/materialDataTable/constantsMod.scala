@@ -202,6 +202,11 @@ object constantsMod {
     @js.native
     val ^ : js.Any = js.native
     
+    @JSImport("@material/data-table/constants", "events.ROW_CLICK")
+    @js.native
+    def ROW_CLICK: String = js.native
+    inline def ROW_CLICK_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROW_CLICK")(x.asInstanceOf[js.Any])
+    
     @JSImport("@material/data-table/constants", "events.ROW_SELECTION_CHANGED")
     @js.native
     def ROW_SELECTION_CHANGED: String = js.native

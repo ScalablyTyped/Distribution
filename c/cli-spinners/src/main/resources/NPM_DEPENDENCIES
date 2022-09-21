@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cli-spinners" : "2.5.0"
+      "cli-spinners" : "2.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "cli-spinners" : "2.5.0"
+      "cli-spinners" : "2.7.0"
     }
   ],
   "compile-devDependencies" : [

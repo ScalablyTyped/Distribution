@@ -11,14 +11,11 @@ Convert a string to snake case.
 | Full name          | to-snake-case |
 | Keywords           | snake, case, snakecase, string |
 | # releases         | 0 |
-| # dependents       | 64 |
-| # downloads        | 12505078 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1069865.0 |
+| # stars            | 25.0 |
 
 ## Links
-- [Homepage](https://github.com/ianstormtaylor/to-snake-case)
-- [Bugs](https://github.com/ianstormtaylor/to-snake-case/issues)
-- [Repository](https://github.com/ianstormtaylor/to-snake-case)
 - [Npm](https://www.npmjs.com/package/to-snake-case)
     
 

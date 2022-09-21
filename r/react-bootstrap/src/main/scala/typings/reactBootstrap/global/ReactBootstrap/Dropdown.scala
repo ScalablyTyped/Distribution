@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.Dropdown")
 @js.native
-class Dropdown ()
+open class Dropdown ()
   extends typings.reactBootstrap.mod.Dropdown
 object Dropdown {
   
@@ -18,7 +18,7 @@ object Dropdown {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Dropdown.Menu")
   @js.native
-  class Menu ()
+  open class Menu ()
     extends typings.reactBootstrap.dropdownMenuMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Dropdown.Menu")
@@ -29,7 +29,7 @@ object Dropdown {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Dropdown.Toggle")
   @js.native
-  class Toggle ()
+  open class Toggle ()
     extends typings.reactBootstrap.dropdownToggleMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Dropdown.Toggle")

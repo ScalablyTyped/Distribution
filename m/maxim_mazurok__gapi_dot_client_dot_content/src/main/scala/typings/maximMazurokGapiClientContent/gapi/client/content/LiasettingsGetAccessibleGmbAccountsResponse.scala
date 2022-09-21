@@ -9,10 +9,10 @@ trait LiasettingsGetAccessibleGmbAccountsResponse extends StObject {
   /** The ID of the Merchant Center account. */
   var accountId: js.UndefOr[String] = js.undefined
   
-  /** A list of GMB accounts which are available to the merchant. */
+  /** A list of Business Profiles which are available to the merchant. */
   var gmbAccounts: js.UndefOr[js.Array[GmbAccountsGmbAccount]] = js.undefined
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#liasettingsGetAccessibleGmbAccountsResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#liasettingsGetAccessibleGmbAccountsResponse`". */
   var kind: js.UndefOr[String] = js.undefined
 }
 object LiasettingsGetAccessibleGmbAccountsResponse {
@@ -32,7 +32,7 @@ object LiasettingsGetAccessibleGmbAccountsResponse {
     
     inline def setGmbAccountsUndefined: Self = StObject.set(x, "gmbAccounts", js.undefined)
     
-    inline def setGmbAccountsVarargs(value: GmbAccountsGmbAccount*): Self = StObject.set(x, "gmbAccounts", js.Array(value :_*))
+    inline def setGmbAccountsVarargs(value: GmbAccountsGmbAccount*): Self = StObject.set(x, "gmbAccounts", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -10,15 +10,12 @@ Lightweight Angular module for access to cookies
 | ------------------ | :-------------: |
 | Full name          | angular-cookie |
 | Keywords           | angular, cookie |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 255921 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 16222.0 |
+| # stars            | 271.0 |
 
 ## Links
-- [Homepage](https://github.com/ivpusic/angular-cookie)
-- [Bugs](https://github.com/ivpusic/angular-cookie/issues)
-- [Repository](https://github.com/ivpusic/angular-cookie)
 - [Npm](https://www.npmjs.com/package/angular-cookie)
     
 

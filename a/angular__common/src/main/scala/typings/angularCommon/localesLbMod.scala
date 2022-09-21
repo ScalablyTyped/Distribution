@@ -11,15 +11,15 @@ object localesLbMod extends Shortcut {
   @JSImport("@angular/common/locales/lb", JSImport.Default)
   @js.native
   val default: js.Array[
-    String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | ATSAUD
+    String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* val */ Double, Double]) | ATSAUD
   ] = js.native
   
   type _To = js.Array[
-    String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | ATSAUD
+    String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* val */ Double, Double]) | ATSAUD
   ]
   
   /* This means you don't have to write `default`, but can instead just say `localesLbMod.foo` */
   override def _to: js.Array[
-    String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | ATSAUD
+    String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* val */ Double, Double]) | ATSAUD
   ] = default
 }

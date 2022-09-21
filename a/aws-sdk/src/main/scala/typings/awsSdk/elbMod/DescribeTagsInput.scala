@@ -22,6 +22,6 @@ object DescribeTagsInput {
     
     inline def setLoadBalancerNames(value: LoadBalancerNamesMax20): Self = StObject.set(x, "LoadBalancerNames", value.asInstanceOf[js.Any])
     
-    inline def setLoadBalancerNamesVarargs(value: AccessPointName*): Self = StObject.set(x, "LoadBalancerNames", js.Array(value :_*))
+    inline def setLoadBalancerNamesVarargs(value: AccessPointName*): Self = StObject.set(x, "LoadBalancerNames", js.Array(value*))
   }
 }

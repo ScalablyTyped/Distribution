@@ -1,24 +1,21 @@
 
 # Scala.js typings for git-remote-origin-url
 
-Typings are for version 3.1.0
+Typings are for version 4.0.0
 
 ## Library description:
-Get the remote origin url of a Git repository
+Get the remote origin URL of a Git repository
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | git-remote-origin-url |
 | Keywords           | git, config, url, repo, remote, origin |
-| # releases         | 3 |
-| # dependents       | 154 |
-| # downloads        | 56730769 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 8041940.333333333 |
+| # stars            | 39.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/git-remote-origin-url#readme)
-- [Bugs](https://github.com/sindresorhus/git-remote-origin-url/issues)
-- [Repository](https://github.com/sindresorhus/git-remote-origin-url)
 - [Npm](https://www.npmjs.com/package/git-remote-origin-url)
     
 

@@ -17,121 +17,111 @@ object mod {
   
   @JSImport("modesl", "Connection")
   @js.native
-  class Connection protected () extends EventEmitter {
-    def this(args: js.Any*) = this()
+  open class Connection protected () extends EventEmitter {
+    def this(args: Any*) = this()
     
-    def api(command: js.Any, args: js.Array[String]): Unit = js.native
-    def api(command: js.Any, args: js.Array[String], cb: js.Function0[Unit]): Unit = js.native
+    def api(command: Any, args: js.Array[String]): Unit = js.native
+    def api(command: Any, args: js.Array[String], cb: js.Function0[Unit]): Unit = js.native
     
     def auth(cb: js.Function0[Unit]): Unit = js.native
     
-    def bgapi(command: js.Any, args: js.Array[String]): Unit = js.native
-    def bgapi(command: js.Any, args: js.Array[String], jobid: js.Any): Unit = js.native
-    def bgapi(command: js.Any, args: js.Array[String], jobid: js.Any, cb: js.Function0[Unit]): Unit = js.native
-    def bgapi(command: js.Any, args: js.Array[String], jobid: Unit, cb: js.Function0[Unit]): Unit = js.native
+    def bgapi(command: Any, args: js.Array[String]): Unit = js.native
+    def bgapi(command: Any, args: js.Array[String], jobid: Any): Unit = js.native
+    def bgapi(command: Any, args: js.Array[String], jobid: Any, cb: js.Function0[Unit]): Unit = js.native
+    def bgapi(command: Any, args: js.Array[String], jobid: Unit, cb: js.Function0[Unit]): Unit = js.native
     
-    def connected(): js.Any = js.native
+    def connected(): Any = js.native
     
     def disconnect(): Unit = js.native
     
-    @JSName("events")
-    def events_json(`type`: json, events: String): Unit = js.native
-    @JSName("events")
-    def events_json(`type`: json, events: String, cb: js.Function0[Unit]): Unit = js.native
-    @JSName("events")
-    def events_plain(`type`: plain, events: String): Unit = js.native
-    @JSName("events")
-    def events_plain(`type`: plain, events: String, cb: js.Function0[Unit]): Unit = js.native
-    @JSName("events")
-    def events_xml(`type`: xml, events: String): Unit = js.native
-    @JSName("events")
-    def events_xml(`type`: xml, events: String, cb: js.Function0[Unit]): Unit = js.native
+    def events(`type`: json | plain | xml, events: String): Unit = js.native
+    def events(`type`: json | plain | xml, events: String, cb: js.Function0[Unit]): Unit = js.native
     
-    def execute(app: js.Any): js.Any = js.native
-    def execute(app: js.Any, arg: String): js.Any = js.native
-    def execute(app: js.Any, arg: String, uuid: String): js.Any = js.native
-    def execute(app: js.Any, arg: String, uuid: String, cb: js.Function0[Unit]): js.Any = js.native
-    def execute(app: js.Any, arg: String, uuid: Unit, cb: js.Function0[Unit]): js.Any = js.native
-    def execute(app: js.Any, arg: Unit, uuid: String): js.Any = js.native
-    def execute(app: js.Any, arg: Unit, uuid: String, cb: js.Function0[Unit]): js.Any = js.native
-    def execute(app: js.Any, arg: Unit, uuid: Unit, cb: js.Function0[Unit]): js.Any = js.native
+    def execute(app: Any): Any = js.native
+    def execute(app: Any, arg: String): Any = js.native
+    def execute(app: Any, arg: String, uuid: String): Any = js.native
+    def execute(app: Any, arg: String, uuid: String, cb: js.Function0[Unit]): Any = js.native
+    def execute(app: Any, arg: String, uuid: Unit, cb: js.Function0[Unit]): Any = js.native
+    def execute(app: Any, arg: Unit, uuid: String): Any = js.native
+    def execute(app: Any, arg: Unit, uuid: String, cb: js.Function0[Unit]): Any = js.native
+    def execute(app: Any, arg: Unit, uuid: Unit, cb: js.Function0[Unit]): Any = js.native
     
-    def executeAsync(app: js.Any): js.Any = js.native
-    def executeAsync(app: js.Any, arg: String): js.Any = js.native
-    def executeAsync(app: js.Any, arg: String, uuid: String): js.Any = js.native
-    def executeAsync(app: js.Any, arg: String, uuid: String, cb: js.Function0[Unit]): js.Any = js.native
-    def executeAsync(app: js.Any, arg: String, uuid: Unit, cb: js.Function0[Unit]): js.Any = js.native
-    def executeAsync(app: js.Any, arg: Unit, uuid: String): js.Any = js.native
-    def executeAsync(app: js.Any, arg: Unit, uuid: String, cb: js.Function0[Unit]): js.Any = js.native
-    def executeAsync(app: js.Any, arg: Unit, uuid: Unit, cb: js.Function0[Unit]): js.Any = js.native
+    def executeAsync(app: Any): Any = js.native
+    def executeAsync(app: Any, arg: String): Any = js.native
+    def executeAsync(app: Any, arg: String, uuid: String): Any = js.native
+    def executeAsync(app: Any, arg: String, uuid: String, cb: js.Function0[Unit]): Any = js.native
+    def executeAsync(app: Any, arg: String, uuid: Unit, cb: js.Function0[Unit]): Any = js.native
+    def executeAsync(app: Any, arg: Unit, uuid: String): Any = js.native
+    def executeAsync(app: Any, arg: Unit, uuid: String, cb: js.Function0[Unit]): Any = js.native
+    def executeAsync(app: Any, arg: Unit, uuid: Unit, cb: js.Function0[Unit]): Any = js.native
     
-    def filter(header: js.Any, value: js.Any): Unit = js.native
-    def filter(header: js.Any, value: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def filter(header: Any, value: Any): Unit = js.native
+    def filter(header: Any, value: Any, cb: js.Function0[Unit]): Unit = js.native
     
-    def filterDelete(header: js.Any, value: js.Any): Unit = js.native
-    def filterDelete(header: js.Any, value: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def filterDelete(header: Any, value: Any): Unit = js.native
+    def filterDelete(header: Any, value: Any, cb: js.Function0[Unit]): Unit = js.native
     
-    def getInfo(): js.Any = js.native
+    def getInfo(): Any = js.native
     
-    def message(options: js.Any): Unit = js.native
-    def message(options: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def message(options: Any): Unit = js.native
+    def message(options: Any, cb: js.Function0[Unit]): Unit = js.native
     
-    def originate(options: js.Any): Unit = js.native
-    def originate(options: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def originate(options: Any): Unit = js.native
+    def originate(options: Any, cb: js.Function0[Unit]): Unit = js.native
     
     def recvEvent(): Unit = js.native
     def recvEvent(cb: js.Function0[Unit]): Unit = js.native
     
-    def recvEventTimed(ms: js.Any): Unit = js.native
-    def recvEventTimed(ms: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def recvEventTimed(ms: Any): Unit = js.native
+    def recvEventTimed(ms: Any, cb: js.Function0[Unit]): Unit = js.native
     
-    def send(command: js.Any, args: js.Any): Unit = js.native
+    def send(command: Any, args: Any): Unit = js.native
     
-    def sendEvent(event: js.Any): Unit = js.native
-    def sendEvent(event: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def sendEvent(event: Any): Unit = js.native
+    def sendEvent(event: Any, cb: js.Function0[Unit]): Unit = js.native
     
-    def sendRecv(command: js.Any, args: js.Any): Unit = js.native
-    def sendRecv(command: js.Any, args: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def sendRecv(command: Any, args: Any): Unit = js.native
+    def sendRecv(command: Any, args: Any, cb: js.Function0[Unit]): Unit = js.native
     
-    def setAsyncExecute(value: js.Any): Unit = js.native
+    def setAsyncExecute(value: Any): Unit = js.native
     
-    def setEventLock(value: js.Any): Unit = js.native
+    def setEventLock(value: Any): Unit = js.native
     
-    def show(item: js.Any, format: js.Any): Unit = js.native
-    def show(item: js.Any, format: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def show(item: Any, format: Any): Unit = js.native
+    def show(item: Any, format: Any, cb: js.Function0[Unit]): Unit = js.native
     
-    def socketDescriptor(): js.Any = js.native
+    def socketDescriptor(): Any = js.native
     
-    def subscribe(events: js.Any): Unit = js.native
-    def subscribe(events: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def subscribe(events: Any): Unit = js.native
+    def subscribe(events: Any, cb: js.Function0[Unit]): Unit = js.native
   }
   
   @JSImport("modesl", "Event")
   @js.native
-  class Event protected () extends StObject {
-    def this(`type`: js.Any, subclass: js.Any) = this()
+  open class Event protected () extends StObject {
+    def this(`type`: Any, subclass: Any) = this()
     
-    def addBody(value: js.Any): js.Any = js.native
+    def addBody(value: Any): Any = js.native
     
-    def addHeader(name: js.Any, value: js.Any): js.Any = js.native
+    def addHeader(name: Any, value: Any): Any = js.native
     
-    def delHeader(name: js.Any): js.Any = js.native
+    def delHeader(name: Any): Any = js.native
     
-    def firstHeader(): js.Any = js.native
+    def firstHeader(): Any = js.native
     
-    def getBody(): js.Any = js.native
+    def getBody(): Any = js.native
     
-    def getHeader(name: js.Any): String = js.native
+    def getHeader(name: Any): String = js.native
     
-    def getType(): js.Any = js.native
+    def getType(): Any = js.native
     
     var headers: js.Array[Header] = js.native
     
-    def nextHeader(): js.Any = js.native
+    def nextHeader(): Any = js.native
     
-    def serialize(format: js.Any): js.Any = js.native
+    def serialize(format: Any): Any = js.native
     
-    def setPriority(priority: js.Any): Unit = js.native
+    def setPriority(priority: Any): Unit = js.native
   }
   /* static members */
   object Event {
@@ -143,22 +133,22 @@ object mod {
   
   @JSImport("modesl", "Parser")
   @js.native
-  class Parser protected () extends StObject {
-    def this(socket: js.Any) = this()
+  open class Parser protected () extends StObject {
+    def this(socket: Any) = this()
   }
   
   @JSImport("modesl", "Server")
   @js.native
-  class Server protected () extends EventEmitter {
-    def this(opts: js.Any) = this()
-    def this(opts: js.Any, readycb: js.Function0[Unit]) = this()
+  open class Server protected () extends EventEmitter {
+    def this(opts: Any) = this()
+    def this(opts: Any, readycb: js.Function0[Unit]) = this()
     
-    def close(callback: js.Any): Unit = js.native
+    def close(callback: Any): Unit = js.native
   }
   
-  inline def eslSetLogLevel(level: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("eslSetLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def eslSetLogLevel(level: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("eslSetLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setLogLevel(level: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLogLevel(level: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Header extends StObject {
     

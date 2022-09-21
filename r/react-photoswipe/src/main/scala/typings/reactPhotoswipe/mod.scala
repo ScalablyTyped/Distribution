@@ -15,26 +15,26 @@ object mod {
   
   @JSImport("react-photoswipe", "PhotoSwipe")
   @js.native
-  class PhotoSwipe protected ()
-    extends Component[PhotoSwipeProps, js.Object, js.Any] {
+  open class PhotoSwipe protected ()
+    extends Component[PhotoSwipeProps, js.Object, Any] {
     def this(props: PhotoSwipeProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PhotoSwipeProps, context: js.Any) = this()
+    def this(props: PhotoSwipeProps, context: Any) = this()
   }
   
   @JSImport("react-photoswipe", "PhotoSwipeGallery")
   @js.native
-  class PhotoSwipeGallery protected ()
-    extends Component[PhotoSwipeGalleryProps, js.Object, js.Any] {
+  open class PhotoSwipeGallery protected ()
+    extends Component[PhotoSwipeGalleryProps, js.Object, Any] {
     def this(props: PhotoSwipeGalleryProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PhotoSwipeGalleryProps, context: js.Any) = this()
+    def this(props: PhotoSwipeGalleryProps, context: Any) = this()
   }
   
   trait PhotoSwipeGalleryItem
@@ -200,7 +200,7 @@ object mod {
       
       inline def setItems(value: js.Array[PhotoSwipeGalleryItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: PhotoSwipeGalleryItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: PhotoSwipeGalleryItem*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setMouseUsed(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "mouseUsed", js.Any.fromFunction1(value))
       
@@ -489,7 +489,7 @@ object mod {
       
       inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setMouseUsed(value: /* instance */ PhotoSwipe => Unit): Self = StObject.set(x, "mouseUsed", js.Any.fromFunction1(value))
       

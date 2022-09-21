@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashFlatMapDepth3x6 extends StObject {
   
-  def apply(iteratee: String): js.Array[js.Any] = js.native
+  def apply(iteratee: String): js.Array[Any] = js.native
   def apply(iteratee: js.Object): js.Array[Boolean] = js.native
 }

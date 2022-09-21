@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GameSession extends StObject {
   
   /**
-    * Time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
+    * A time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A unique identifier for a player. This ID is used to enforce a resource protection policy (if one exists), that limits the number of game sessions a player can create.
@@ -22,7 +22,7 @@ trait GameSession extends StObject {
   var CurrentPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined
   
   /**
-    * DNS identifier assigned to the instance that is running the game session. Values have the following format:   TLS-enabled fleets: &lt;unique identifier&gt;.&lt;region identifier&gt;.amazongamelift.com.   Non-TLS-enabled fleets: ec2-&lt;unique identifier&gt;.compute.amazonaws.com. (See Amazon EC2 Instance IP Addressing.)   When connecting to a game session that is running on a TLS-enabled fleet, you must use the DNS name, not the IP address.
+    * The DNS identifier assigned to the instance that is running the game session. Values have the following format:   TLS-enabled fleets: &lt;unique identifier&gt;.&lt;region identifier&gt;.amazongamelift.com.   Non-TLS-enabled fleets: ec2-&lt;unique identifier&gt;.compute.amazonaws.com. (See Amazon EC2 Instance IP Addressing.)   When connecting to a game session that is running on a TLS-enabled fleet, you must use the DNS name, not the IP address.
     */
   var DnsName: js.UndefOr[typings.awsSdk.gameliftMod.DnsName] = js.undefined
   
@@ -32,19 +32,19 @@ trait GameSession extends StObject {
   var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.undefined
   
   /**
-    * A unique identifier for a fleet that the game session is running on.
+    * A unique identifier for the fleet that the game session is running on.
     */
   var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
   
   /**
-    * Set of custom properties for a game session, formatted as key:value pairs. These properties are passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session). You can search for active game sessions based on this custom data with SearchGameSessions.
+    * A set of custom properties for a game session, formatted as key:value pairs. These properties are passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session). You can search for active game sessions based on this custom data with SearchGameSessions.
     */
   var GameProperties: js.UndefOr[GamePropertyList] = js.undefined
   
   /**
-    * Set of custom game session properties, formatted as a single string value. This data is passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session).
+    * A set of custom game session properties, formatted as a single string value. This data is passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session).
     */
-  var GameSessionData: js.UndefOr[typings.awsSdk.gameliftMod.GameSessionData] = js.undefined
+  var GameSessionData: js.UndefOr[LargeGameSessionData] = js.undefined
   
   /**
     * A unique identifier for the game session. A game session ARN has the following format: arn:aws:gamelift:&lt;region&gt;::gamesession/&lt;fleet ID&gt;/&lt;custom ID string or idempotency token&gt;.
@@ -52,9 +52,14 @@ trait GameSession extends StObject {
   var GameSessionId: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * IP address of the instance that is running the game session. When connecting to a Amazon GameLift game server, a client needs to reference an IP address (or DNS name) and port number.
+    * The IP address of the game session. To connect to a GameLift game server, an app needs both the IP address and port number.
     */
   var IpAddress: js.UndefOr[typings.awsSdk.gameliftMod.IpAddress] = js.undefined
+  
+  /**
+    * The fleet location where the game session is running. This value might specify the fleet's home Region or a remote location. Location is expressed as an Amazon Web Services Region code such as us-west-2. 
+    */
+  var Location: js.UndefOr[LocationStringModel] = js.undefined
   
   /**
     * Information about the matchmaking process that was used to create the game session. It is in JSON syntax, formatted as a string. In addition the matchmaking configuration used, it contains data on all players assigned to the match, including player attributes and team assignments. For more details on matchmaker data, see Match Data. Matchmaker data is useful when requesting match backfills, and is updated whenever new players are added during a successful backfill (see StartMatchBackfill). 
@@ -77,7 +82,7 @@ trait GameSession extends StObject {
   var PlayerSessionCreationPolicy: js.UndefOr[typings.awsSdk.gameliftMod.PlayerSessionCreationPolicy] = js.undefined
   
   /**
-    * Port number for the game session. To connect to a Amazon GameLift game server, an app needs both the IP address and port number.
+    * The port number for the game session. To connect to a GameLift game server, an app needs both the IP address and port number.
     */
   var Port: js.UndefOr[PortNumber] = js.undefined
   
@@ -92,9 +97,9 @@ trait GameSession extends StObject {
   var StatusReason: js.UndefOr[GameSessionStatusReason] = js.undefined
   
   /**
-    * Time stamp indicating when this data object was terminated. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
+    * A time stamp indicating when this data object was terminated. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var TerminationTime: js.UndefOr[Timestamp] = js.undefined
+  var TerminationTime: js.UndefOr[js.Date] = js.undefined
 }
 object GameSession {
   
@@ -105,7 +110,7 @@ object GameSession {
   
   extension [Self <: GameSession](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -133,9 +138,9 @@ object GameSession {
     
     inline def setGamePropertiesUndefined: Self = StObject.set(x, "GameProperties", js.undefined)
     
-    inline def setGamePropertiesVarargs(value: GameProperty*): Self = StObject.set(x, "GameProperties", js.Array(value :_*))
+    inline def setGamePropertiesVarargs(value: GameProperty*): Self = StObject.set(x, "GameProperties", js.Array(value*))
     
-    inline def setGameSessionData(value: GameSessionData): Self = StObject.set(x, "GameSessionData", value.asInstanceOf[js.Any])
+    inline def setGameSessionData(value: LargeGameSessionData): Self = StObject.set(x, "GameSessionData", value.asInstanceOf[js.Any])
     
     inline def setGameSessionDataUndefined: Self = StObject.set(x, "GameSessionData", js.undefined)
     
@@ -146,6 +151,10 @@ object GameSession {
     inline def setIpAddress(value: IpAddress): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
     inline def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
+    
+    inline def setLocation(value: LocationStringModel): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
     
     inline def setMatchmakerData(value: MatchmakerData): Self = StObject.set(x, "MatchmakerData", value.asInstanceOf[js.Any])
     
@@ -175,7 +184,7 @@ object GameSession {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setTerminationTime(value: Timestamp): Self = StObject.set(x, "TerminationTime", value.asInstanceOf[js.Any])
+    inline def setTerminationTime(value: js.Date): Self = StObject.set(x, "TerminationTime", value.asInstanceOf[js.Any])
     
     inline def setTerminationTimeUndefined: Self = StObject.set(x, "TerminationTime", js.undefined)
   }

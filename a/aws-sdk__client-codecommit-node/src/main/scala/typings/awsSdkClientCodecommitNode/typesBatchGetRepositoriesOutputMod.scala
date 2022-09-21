@@ -46,11 +46,11 @@ object typesBatchGetRepositoriesOutputMod {
       
       inline def setRepositoriesNotFoundUndefined: Self = StObject.set(x, "repositoriesNotFound", js.undefined)
       
-      inline def setRepositoriesNotFoundVarargs(value: String*): Self = StObject.set(x, "repositoriesNotFound", js.Array(value :_*))
+      inline def setRepositoriesNotFoundVarargs(value: String*): Self = StObject.set(x, "repositoriesNotFound", js.Array(value*))
       
       inline def setRepositoriesUndefined: Self = StObject.set(x, "repositories", js.undefined)
       
-      inline def setRepositoriesVarargs(value: UnmarshalledRepositoryMetadata*): Self = StObject.set(x, "repositories", js.Array(value :_*))
+      inline def setRepositoriesVarargs(value: UnmarshalledRepositoryMetadata*): Self = StObject.set(x, "repositories", js.Array(value*))
     }
   }
 }

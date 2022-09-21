@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.GameObjects
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,5 +36,5 @@ trait Polygon
     * @param iterations The number of times to apply the polygon smoothing. Default 1.
     */
   def smooth(): this.type = js.native
-  def smooth(iterations: integer): this.type = js.native
+  def smooth(iterations: Double): this.type = js.native
 }

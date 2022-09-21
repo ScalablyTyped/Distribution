@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_alertcenter
 
-Typings are for version 1.0.20201121
+Typings are for version 1.0.20220808
 
 ## Library description:
 TypeScript typings for Google Workspace Alert Center API v1beta1
@@ -10,10 +10,10 @@ TypeScript typings for Google Workspace Alert Center API v1beta1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.alertcenter |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 1 |
-| # downloads        | 1478 |
-| # stars            | 0 |
+| # releases         | 88 |
+| # dependents       | 0.0 |
+| # downloads        | 1030.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

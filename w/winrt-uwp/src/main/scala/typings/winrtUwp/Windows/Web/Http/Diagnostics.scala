@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Web.Http
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
@@ -88,7 +87,7 @@ object Diagnostics {
   @js.native
   trait HttpDiagnosticProvider extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_requestresponsecompleted(
       `type`: requestresponsecompleted,
@@ -123,7 +122,7 @@ object Diagnostics {
     @JSName("onresponsereceived")
     var onresponsereceived_Original: TypedEventHandler[HttpDiagnosticProvider, HttpDiagnosticProviderResponseReceivedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_requestresponsecompleted(
       `type`: requestresponsecompleted,
@@ -156,16 +155,16 @@ object Diagnostics {
     /** Gets the type of operation initiating this request. */
     var initiator: HttpDiagnosticRequestInitiator
     
-    var processId: js.Any
+    var processId: Any
     
     /* unmapped type */
     /** Gets the URI of the requested response. */
     var requestedUri: Uri
     
-    var sourceLocations: js.Any
+    var sourceLocations: Any
     
     /* unmapped type */
-    var threadId: js.Any
+    var threadId: Any
     
     /* unmapped type */
     /** Gets the timestamp for connection events. */
@@ -176,10 +175,10 @@ object Diagnostics {
     inline def apply(
       activityId: String,
       initiator: HttpDiagnosticRequestInitiator,
-      processId: js.Any,
+      processId: Any,
       requestedUri: Uri,
-      sourceLocations: js.Any,
-      threadId: js.Any,
+      sourceLocations: Any,
+      threadId: Any,
       timestamps: HttpDiagnosticProviderRequestResponseTimestamps
     ): HttpDiagnosticProviderRequestResponseCompletedEventArgs = {
       val __obj = js.Dynamic.literal(activityId = activityId.asInstanceOf[js.Any], initiator = initiator.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], requestedUri = requestedUri.asInstanceOf[js.Any], sourceLocations = sourceLocations.asInstanceOf[js.Any], threadId = threadId.asInstanceOf[js.Any], timestamps = timestamps.asInstanceOf[js.Any])
@@ -192,13 +191,13 @@ object Diagnostics {
       
       inline def setInitiator(value: HttpDiagnosticRequestInitiator): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
       
-      inline def setProcessId(value: js.Any): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+      inline def setProcessId(value: Any): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
       
       inline def setRequestedUri(value: Uri): Self = StObject.set(x, "requestedUri", value.asInstanceOf[js.Any])
       
-      inline def setSourceLocations(value: js.Any): Self = StObject.set(x, "sourceLocations", value.asInstanceOf[js.Any])
+      inline def setSourceLocations(value: Any): Self = StObject.set(x, "sourceLocations", value.asInstanceOf[js.Any])
       
-      inline def setThreadId(value: js.Any): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
+      inline def setThreadId(value: Any): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
       
       inline def setTimestamps(value: HttpDiagnosticProviderRequestResponseTimestamps): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     }
@@ -208,44 +207,44 @@ object Diagnostics {
   trait HttpDiagnosticProviderRequestResponseTimestamps extends StObject {
     
     /** Gets the last time local cache was checked. */
-    var cacheCheckedTimestamp: Date
+    var cacheCheckedTimestamp: js.Date
     
     /** Gets the timestamp for the end of the TCP connection phase. */
-    var connectionCompletedTimestamp: Date
+    var connectionCompletedTimestamp: js.Date
     
     /** Gets the timestamp for the start of the TCP connection phase. */
-    var connectionInitiatedTimestamp: Date
+    var connectionInitiatedTimestamp: js.Date
     
     /** Gets the time of the DNS name resolution. */
-    var nameResolvedTimestamp: Date
+    var nameResolvedTimestamp: js.Date
     
     /** Gets the timestamp for the last byte sent. */
-    var requestCompletedTimestamp: Date
+    var requestCompletedTimestamp: js.Date
     
     /** Gets the timestamp for the first byte sent. */
-    var requestSentTimestamp: Date
+    var requestSentTimestamp: js.Date
     
     /** Gets the timestamp for the last byte received. */
-    var responseCompletedTimestamp: Date
+    var responseCompletedTimestamp: js.Date
     
     /** Gets the timestamp for the fir byte received. */
-    var responseReceivedTimestamp: Date
+    var responseReceivedTimestamp: js.Date
     
     /** Gets the time of the SSL handshake negotiation. */
-    var sslNegotiatedTimestamp: Date
+    var sslNegotiatedTimestamp: js.Date
   }
   object HttpDiagnosticProviderRequestResponseTimestamps {
     
     inline def apply(
-      cacheCheckedTimestamp: Date,
-      connectionCompletedTimestamp: Date,
-      connectionInitiatedTimestamp: Date,
-      nameResolvedTimestamp: Date,
-      requestCompletedTimestamp: Date,
-      requestSentTimestamp: Date,
-      responseCompletedTimestamp: Date,
-      responseReceivedTimestamp: Date,
-      sslNegotiatedTimestamp: Date
+      cacheCheckedTimestamp: js.Date,
+      connectionCompletedTimestamp: js.Date,
+      connectionInitiatedTimestamp: js.Date,
+      nameResolvedTimestamp: js.Date,
+      requestCompletedTimestamp: js.Date,
+      requestSentTimestamp: js.Date,
+      responseCompletedTimestamp: js.Date,
+      responseReceivedTimestamp: js.Date,
+      sslNegotiatedTimestamp: js.Date
     ): HttpDiagnosticProviderRequestResponseTimestamps = {
       val __obj = js.Dynamic.literal(cacheCheckedTimestamp = cacheCheckedTimestamp.asInstanceOf[js.Any], connectionCompletedTimestamp = connectionCompletedTimestamp.asInstanceOf[js.Any], connectionInitiatedTimestamp = connectionInitiatedTimestamp.asInstanceOf[js.Any], nameResolvedTimestamp = nameResolvedTimestamp.asInstanceOf[js.Any], requestCompletedTimestamp = requestCompletedTimestamp.asInstanceOf[js.Any], requestSentTimestamp = requestSentTimestamp.asInstanceOf[js.Any], responseCompletedTimestamp = responseCompletedTimestamp.asInstanceOf[js.Any], responseReceivedTimestamp = responseReceivedTimestamp.asInstanceOf[js.Any], sslNegotiatedTimestamp = sslNegotiatedTimestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpDiagnosticProviderRequestResponseTimestamps]
@@ -253,23 +252,23 @@ object Diagnostics {
     
     extension [Self <: HttpDiagnosticProviderRequestResponseTimestamps](x: Self) {
       
-      inline def setCacheCheckedTimestamp(value: Date): Self = StObject.set(x, "cacheCheckedTimestamp", value.asInstanceOf[js.Any])
+      inline def setCacheCheckedTimestamp(value: js.Date): Self = StObject.set(x, "cacheCheckedTimestamp", value.asInstanceOf[js.Any])
       
-      inline def setConnectionCompletedTimestamp(value: Date): Self = StObject.set(x, "connectionCompletedTimestamp", value.asInstanceOf[js.Any])
+      inline def setConnectionCompletedTimestamp(value: js.Date): Self = StObject.set(x, "connectionCompletedTimestamp", value.asInstanceOf[js.Any])
       
-      inline def setConnectionInitiatedTimestamp(value: Date): Self = StObject.set(x, "connectionInitiatedTimestamp", value.asInstanceOf[js.Any])
+      inline def setConnectionInitiatedTimestamp(value: js.Date): Self = StObject.set(x, "connectionInitiatedTimestamp", value.asInstanceOf[js.Any])
       
-      inline def setNameResolvedTimestamp(value: Date): Self = StObject.set(x, "nameResolvedTimestamp", value.asInstanceOf[js.Any])
+      inline def setNameResolvedTimestamp(value: js.Date): Self = StObject.set(x, "nameResolvedTimestamp", value.asInstanceOf[js.Any])
       
-      inline def setRequestCompletedTimestamp(value: Date): Self = StObject.set(x, "requestCompletedTimestamp", value.asInstanceOf[js.Any])
+      inline def setRequestCompletedTimestamp(value: js.Date): Self = StObject.set(x, "requestCompletedTimestamp", value.asInstanceOf[js.Any])
       
-      inline def setRequestSentTimestamp(value: Date): Self = StObject.set(x, "requestSentTimestamp", value.asInstanceOf[js.Any])
+      inline def setRequestSentTimestamp(value: js.Date): Self = StObject.set(x, "requestSentTimestamp", value.asInstanceOf[js.Any])
       
-      inline def setResponseCompletedTimestamp(value: Date): Self = StObject.set(x, "responseCompletedTimestamp", value.asInstanceOf[js.Any])
+      inline def setResponseCompletedTimestamp(value: js.Date): Self = StObject.set(x, "responseCompletedTimestamp", value.asInstanceOf[js.Any])
       
-      inline def setResponseReceivedTimestamp(value: Date): Self = StObject.set(x, "responseReceivedTimestamp", value.asInstanceOf[js.Any])
+      inline def setResponseReceivedTimestamp(value: js.Date): Self = StObject.set(x, "responseReceivedTimestamp", value.asInstanceOf[js.Any])
       
-      inline def setSslNegotiatedTimestamp(value: Date): Self = StObject.set(x, "sslNegotiatedTimestamp", value.asInstanceOf[js.Any])
+      inline def setSslNegotiatedTimestamp(value: js.Date): Self = StObject.set(x, "sslNegotiatedTimestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -295,7 +294,7 @@ object Diagnostics {
     var threadId: Double
     
     /** Gets the timestamp of when the HttpRequestMessage was sent. */
-    var timestamp: Date
+    var timestamp: js.Date
   }
   object HttpDiagnosticProviderRequestSentEventArgs {
     
@@ -306,7 +305,7 @@ object Diagnostics {
       processId: Double,
       sourceLocations: IVectorView[HttpDiagnosticSourceLocation],
       threadId: Double,
-      timestamp: Date
+      timestamp: js.Date
     ): HttpDiagnosticProviderRequestSentEventArgs = {
       val __obj = js.Dynamic.literal(activityId = activityId.asInstanceOf[js.Any], initiator = initiator.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], sourceLocations = sourceLocations.asInstanceOf[js.Any], threadId = threadId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpDiagnosticProviderRequestSentEventArgs]
@@ -326,7 +325,7 @@ object Diagnostics {
       
       inline def setThreadId(value: Double): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -340,11 +339,11 @@ object Diagnostics {
     var message: HttpResponseMessage
     
     /** Gets the timestamp of when the HttpResponseMessage was received. */
-    var timestamp: Date
+    var timestamp: js.Date
   }
   object HttpDiagnosticProviderResponseReceivedEventArgs {
     
-    inline def apply(activityId: String, message: HttpResponseMessage, timestamp: Date): HttpDiagnosticProviderResponseReceivedEventArgs = {
+    inline def apply(activityId: String, message: HttpResponseMessage, timestamp: js.Date): HttpDiagnosticProviderResponseReceivedEventArgs = {
       val __obj = js.Dynamic.literal(activityId = activityId.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpDiagnosticProviderResponseReceivedEventArgs]
     }
@@ -355,7 +354,7 @@ object Diagnostics {
       
       inline def setMessage(value: HttpResponseMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   

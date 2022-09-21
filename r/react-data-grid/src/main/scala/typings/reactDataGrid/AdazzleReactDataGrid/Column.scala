@@ -3,8 +3,8 @@ package typings.reactDataGrid.AdazzleReactDataGrid
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
-import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +36,7 @@ trait Column[T] extends StObject {
     * @default A simple text editor
     */
   var editor: js.UndefOr[
-    ReactElement | (ComponentClass[EditorBaseProps, ComponentState]) | StatelessComponent[EditorBaseProps]
+    ReactElement | (ComponentClass[EditorBaseProps, ComponentState]) | FunctionComponent[EditorBaseProps]
   ] = js.undefined
   
   /**
@@ -50,9 +50,7 @@ trait Column[T] extends StObject {
   /**
     * A custom formatter for this column's filter.
     */
-  var filterRenderer: js.UndefOr[
-    ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]
-  ] = js.undefined
+  var filterRenderer: js.UndefOr[ReactElement | (ComponentClass[Any, ComponentState]) | FunctionComponent[Any]] = js.undefined
   
   /**
     * Whether the rows in the grid can be filtered by this column.
@@ -63,21 +61,17 @@ trait Column[T] extends StObject {
   /**
     * A custom read-only formatter for this column. An image formatter is available in "react-data-grid/addons".
     */
-  var formatter: js.UndefOr[
-    ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]
-  ] = js.undefined
+  var formatter: js.UndefOr[ReactElement | (ComponentClass[Any, ComponentState]) | FunctionComponent[Any]] = js.undefined
   
   /**
     * Retrieve meta data about the row, optionally provide column as a second argument
     */
-  var getRowMetaData: js.UndefOr[js.Function2[/* rowdata */ T, /* column */ js.UndefOr[Column[T]], js.Any]] = js.undefined
+  var getRowMetaData: js.UndefOr[js.Function2[/* rowdata */ T, /* column */ js.UndefOr[Column[T]], Any]] = js.undefined
   
   /**
     * A custom formatter for this column's header.
     */
-  var headerRenderer: js.UndefOr[
-    ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]
-  ] = js.undefined
+  var headerRenderer: js.UndefOr[ReactElement | (ComponentClass[Any, ComponentState]) | FunctionComponent[Any]] = js.undefined
   
   /**
     * A unique key for this column. Required.
@@ -136,7 +130,7 @@ object Column {
     inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
     inline def setEditor(
-      value: ReactElement | (ComponentClass[EditorBaseProps, ComponentState]) | StatelessComponent[EditorBaseProps]
+      value: ReactElement | (ComponentClass[EditorBaseProps, ComponentState]) | FunctionComponent[EditorBaseProps]
     ): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
@@ -145,7 +139,7 @@ object Column {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setFilterRenderer(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "filterRenderer", value.asInstanceOf[js.Any])
+    inline def setFilterRenderer(value: ReactElement | (ComponentClass[Any, ComponentState]) | FunctionComponent[Any]): Self = StObject.set(x, "filterRenderer", value.asInstanceOf[js.Any])
     
     inline def setFilterRendererUndefined: Self = StObject.set(x, "filterRenderer", js.undefined)
     
@@ -153,15 +147,15 @@ object Column {
     
     inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
     
-    inline def setFormatter(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    inline def setFormatter(value: ReactElement | (ComponentClass[Any, ComponentState]) | FunctionComponent[Any]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
-    inline def setGetRowMetaData(value: (/* rowdata */ T, /* column */ js.UndefOr[Column[T]]) => js.Any): Self = StObject.set(x, "getRowMetaData", js.Any.fromFunction2(value))
+    inline def setGetRowMetaData(value: (/* rowdata */ T, /* column */ js.UndefOr[Column[T]]) => Any): Self = StObject.set(x, "getRowMetaData", js.Any.fromFunction2(value))
     
     inline def setGetRowMetaDataUndefined: Self = StObject.set(x, "getRowMetaData", js.undefined)
     
-    inline def setHeaderRenderer(value: ReactElement | (ComponentClass[js.Any, ComponentState]) | StatelessComponent[js.Any]): Self = StObject.set(x, "headerRenderer", value.asInstanceOf[js.Any])
+    inline def setHeaderRenderer(value: ReactElement | (ComponentClass[Any, ComponentState]) | FunctionComponent[Any]): Self = StObject.set(x, "headerRenderer", value.asInstanceOf[js.Any])
     
     inline def setHeaderRendererUndefined: Self = StObject.set(x, "headerRenderer", js.undefined)
     

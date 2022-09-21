@@ -11,14 +11,14 @@ object anon {
     var basename: js.UndefOr[String] = js.undefined
     
     var chunk: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Chunk */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Chunk */ Any
       ] = js.undefined
     
     var filename: js.UndefOr[String] = js.undefined
     
     var hash: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
   }
   object Basename {
     
@@ -34,7 +34,7 @@ object anon {
       inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
       
       inline def setChunk(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Chunk */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilation.Chunk */ Any
       ): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       
       inline def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
@@ -47,7 +47,7 @@ object anon {
       
       inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }

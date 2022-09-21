@@ -28,6 +28,6 @@ object ClassedColorSliderViewModelProperties {
     
     inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
     
-    inline def setBreaksVarargs(value: ClassedColorSliderViewModelBreaks*): Self = StObject.set(x, "breaks", js.Array(value :_*))
+    inline def setBreaksVarargs(value: ClassedColorSliderViewModelBreaks*): Self = StObject.set(x, "breaks", js.Array(value*))
   }
 }

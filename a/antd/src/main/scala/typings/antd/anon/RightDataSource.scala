@@ -23,10 +23,10 @@ object RightDataSource {
     
     inline def setLeftDataSource(value: js.Array[KeyWise[RecordType]]): Self = StObject.set(x, "leftDataSource", value.asInstanceOf[js.Any])
     
-    inline def setLeftDataSourceVarargs(value: KeyWise[RecordType]*): Self = StObject.set(x, "leftDataSource", js.Array(value :_*))
+    inline def setLeftDataSourceVarargs(value: KeyWise[RecordType]*): Self = StObject.set(x, "leftDataSource", js.Array(value*))
     
     inline def setRightDataSource(value: js.Array[KeyWise[RecordType]]): Self = StObject.set(x, "rightDataSource", value.asInstanceOf[js.Any])
     
-    inline def setRightDataSourceVarargs(value: KeyWise[RecordType]*): Self = StObject.set(x, "rightDataSource", js.Array(value :_*))
+    inline def setRightDataSourceVarargs(value: KeyWise[RecordType]*): Self = StObject.set(x, "rightDataSource", js.Array(value*))
   }
 }

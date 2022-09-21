@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object retryingClientMod {
   
-  @JSImport("@firebase/remote-config/dist/src/client/retrying_client", JSImport.Namespace)
+  @JSImport("@firebase/remote-config/dist/esm/src/client/retrying_client", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@firebase/remote-config/dist/src/client/retrying_client", "RetryingClient")
+  @JSImport("@firebase/remote-config/dist/esm/src/client/retrying_client", "RetryingClient")
   @js.native
-  class RetryingClient protected ()
+  open class RetryingClient protected ()
     extends StObject
        with RemoteConfigFetchClient {
     def this(client: RemoteConfigFetchClient, storage: Storage) = this()
@@ -30,7 +30,7 @@ object retryingClientMod {
       */
     def attemptFetch(request: FetchRequest, hasThrottleEndTimeMillisBackoffCount: ThrottleMetadata): js.Promise[FetchResponse] = js.native
     
-    /* private */ val client: js.Any = js.native
+    /* private */ val client: Any = js.native
     
     /**
       * @throws if response status is not 200 or 304.
@@ -38,7 +38,7 @@ object retryingClientMod {
     /* CompleteClass */
     override def fetch(request: FetchRequest): js.Promise[FetchResponse] = js.native
     
-    /* private */ val storage: js.Any = js.native
+    /* private */ val storage: Any = js.native
   }
   
   inline def setAbortableTimeout(signal: RemoteConfigAbortSignal, throttleEndTimeMillis: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setAbortableTimeout")(signal.asInstanceOf[js.Any], throttleEndTimeMillis.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]

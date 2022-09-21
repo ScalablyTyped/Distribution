@@ -11,8 +11,24 @@ object maximMazurokGapiClientSpannerStrings {
   inline def ExecuteSqlRequest: ExecuteSqlRequest = "ExecuteSqlRequest".asInstanceOf[ExecuteSqlRequest]
   
   @js.native
+  sealed trait IndexedHotKey extends StObject
+  inline def IndexedHotKey: IndexedHotKey = "IndexedHotKey".asInstanceOf[IndexedHotKey]
+  
+  @js.native
+  sealed trait IndexedKeyRangeInfos extends StObject
+  inline def IndexedKeyRangeInfos: IndexedKeyRangeInfos = "IndexedKeyRangeInfos".asInstanceOf[IndexedKeyRangeInfos]
+  
+  @js.native
   sealed trait Instance extends StObject
   inline def Instance: Instance = "Instance".asInstanceOf[Instance]
+  
+  @js.native
+  sealed trait LocalizedString extends StObject
+  inline def LocalizedString: LocalizedString = "LocalizedString".asInstanceOf[LocalizedString]
+  
+  @js.native
+  sealed trait Metric extends StObject
+  inline def Metric: Metric = "Metric".asInstanceOf[Metric]
   
   @js.native
   sealed trait Operation extends StObject
@@ -29,6 +45,10 @@ object maximMazurokGapiClientSpannerStrings {
   @js.native
   sealed trait ResultSetStats extends StObject
   inline def ResultSetStats: ResultSetStats = "ResultSetStats".asInstanceOf[ResultSetStats]
+  
+  @js.native
+  sealed trait Scan extends StObject
+  inline def Scan: Scan = "Scan".asInstanceOf[Scan]
   
   @js.native
   sealed trait Session extends StObject

@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AddMatterPermissionsRequest extends StObject {
   
-  /** Only relevant if send_emails is true. True to CC requestor in the email message. False to not CC requestor. */
+  /** Only relevant if **sendEmails** is **true**. To CC the requestor in the email message, set to **true**. To not CC requestor, set to **false**. */
   var ccMe: js.UndefOr[Boolean] = js.undefined
   
-  /** The MatterPermission to add. */
+  /** The account and its role to add. */
   var matterPermission: js.UndefOr[MatterPermission] = js.undefined
   
-  /** True to send notification email to the added account. False to not send notification email. */
+  /** To send a notification email to the added account, set to **true**. To not send a notification email, set to **false**. */
   var sendEmails: js.UndefOr[Boolean] = js.undefined
 }
 object AddMatterPermissionsRequest {

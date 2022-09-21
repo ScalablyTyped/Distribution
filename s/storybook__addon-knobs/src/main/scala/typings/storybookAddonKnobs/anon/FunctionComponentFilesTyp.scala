@@ -1,6 +1,5 @@
 package typings.storybookAddonKnobs.anon
 
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import typings.storybookAddonKnobs.filesMod.FilesTypeProps
@@ -12,10 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionComponentFilesTyp extends StObject {
   
-  def apply(props: PropsWithChildren[FilesTypeProps]): ReactElement | Null = js.native
-  def apply(props: PropsWithChildren[FilesTypeProps], context: js.Any): ReactElement | Null = js.native
+  def apply(props: FilesTypeProps): ReactElement | Null = js.native
+  def apply(props: FilesTypeProps, context: Any): ReactElement | Null = js.native
   
-  var contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
+  var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   
   var defaultProps: js.UndefOr[PartialFilesTypeProps] = js.native
   

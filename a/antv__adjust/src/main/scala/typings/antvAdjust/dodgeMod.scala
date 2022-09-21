@@ -9,7 +9,7 @@ object dodgeMod {
   
   @JSImport("@antv/adjust/lib/adjusts/dodge", JSImport.Default)
   @js.native
-  class default protected () extends Dodge {
+  open class default protected () extends Dodge {
     def this(cfg: DodgeCfg) = this()
   }
   
@@ -17,20 +17,20 @@ object dodgeMod {
   trait Dodge
     extends typings.antvAdjust.adjustMod.default {
     
-    /* private */ var adjustDataArray: js.Any = js.native
+    /* private */ var adjustDataArray: Any = js.native
     
-    /* private */ var cacheMap: js.Any = js.native
+    /* private */ var cacheMap: Any = js.native
     
-    /* private */ var getDistribution: js.Any = js.native
+    /* private */ var getDistribution: Any = js.native
     
-    /* private */ var getDodgeOffset: js.Any = js.native
+    /* private */ var getDodgeOffset: Any = js.native
     
-    /* private */ var getDodgeOnlyOffset: js.Any = js.native
+    /* private */ var getDodgeOnlyOffset: Any = js.native
     
-    /* private */ var getIntervalAndDodgeOffset: js.Any = js.native
+    /* private */ var getIntervalAndDodgeOffset: Any = js.native
     
-    /* private */ var getIntervalOnlyOffset: js.Any = js.native
+    /* private */ var getIntervalOnlyOffset: Any = js.native
     
-    /* private */ var mergeData: js.Any = js.native
+    /* private */ var mergeData: Any = js.native
   }
 }

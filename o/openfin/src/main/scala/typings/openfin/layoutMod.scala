@@ -11,13 +11,13 @@ object layoutMod {
   
   @JSImport("openfin/_v2/api/platform/layout", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with LayoutModule
   
   @JSImport("openfin/_v2/api/platform/layout", "Layout")
   @js.native
-  class Layout protected () extends StObject {
+  open class Layout protected () extends StObject {
     def this(identity: Identity) = this()
     
     /**
@@ -42,7 +42,7 @@ object layoutMod {
     def init(): js.Promise[Layout] = js.native
     def init(options: InitLayoutOptions): js.Promise[Layout] = js.native
     
-    /* private */ var platform: js.Any = js.native
+    /* private */ var platform: Any = js.native
     
     /**
       * Replaces a Platform window's layout with a new layout.  Any views that were in the old layout but not the new layout

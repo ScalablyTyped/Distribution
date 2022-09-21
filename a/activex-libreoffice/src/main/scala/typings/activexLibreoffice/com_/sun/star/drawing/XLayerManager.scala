@@ -48,13 +48,13 @@ object XLayerManager {
     ElementType: `type`,
     acquire: () => Unit,
     attachShapeToLayer: (XShape, XLayer) => Unit,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     getLayerForShape: XShape => XLayer,
     hasElements: () => Boolean,
     insertNewByIndex: Double => XLayer,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     remove: XLayer => Unit
   ): XLayerManager = {

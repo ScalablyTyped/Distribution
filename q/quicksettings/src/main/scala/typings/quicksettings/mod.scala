@@ -5,7 +5,6 @@ import typings.quicksettings.quicksettingsBooleans.`false`
 import typings.quicksettings.quicksettingsBooleans.`true`
 import typings.quicksettings.quicksettingsStrings.numbers
 import typings.quicksettings.quicksettingsStrings.percent
-import typings.std.Date
 import typings.std.File
 import typings.std.HTMLElement
 import typings.std.Pick
@@ -20,11 +19,11 @@ object mod extends Shortcut {
   @js.native
   val default: QuickSettings = js.native
   
-  type AnyModel = Record[String, js.Any]
+  type AnyModel = Record[String, Any]
   
   type ChangeHandler[T] = js.Function1[/* value */ T, Unit]
   
-  type DropDownItems[T] = js.Array[(T & (String | Double)) | DropDownOption[T]]
+  type DropDownItems[T] = js.Array[(String & T) | (Double & T) | DropDownOption[T]]
   
   trait DropDownOption[T] extends StObject {
     
@@ -124,8 +123,8 @@ object mod extends Shortcut {
     def addColor(title: KeyWhereType[M, String], color: String): this.type = js.native
     def addColor(title: KeyWhereType[M, String], color: String, callback: ChangeHandler[String]): this.type = js.native
     
-    def addDate[K /* <: KeyWhereType[M, String | Date] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any */](title: K, date: V): this.type = js.native
-    def addDate[K /* <: KeyWhereType[M, String | Date] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any */](title: K, date: V, callback: ChangeHandler[V]): this.type = js.native
+    def addDate[K /* <: KeyWhereType[M, String | js.Date] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any */](title: K, date: V): this.type = js.native
+    def addDate[K /* <: KeyWhereType[M, String | js.Date] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any */](title: K, date: V, callback: ChangeHandler[V]): this.type = js.native
     
     def addDropDown[K /* <: /* keyof M */ String */](
       title: K,
@@ -169,10 +168,7 @@ object mod extends Shortcut {
     def addPassword(title: KeyWhereType[M, String], text: String, callback: ChangeHandler[String]): this.type = js.native
     
     def addProgressBar(title: String, max: Double, value: Double): this.type = js.native
-    @JSName("addProgressBar")
-    def addProgressBar_numbers(title: String, max: Double, value: Double, valueDisplay: numbers): this.type = js.native
-    @JSName("addProgressBar")
-    def addProgressBar_percent(title: String, max: Double, value: Double, valueDisplay: percent): this.type = js.native
+    def addProgressBar(title: String, max: Double, value: Double, valueDisplay: numbers | percent): this.type = js.native
     
     def addRange(title: KeyWhereType[M, Double], min: Double, max: Double, value: Double, step: Double): this.type = js.native
     def addRange(
@@ -190,14 +186,14 @@ object mod extends Shortcut {
     def addTextArea(title: KeyWhereType[M, String], text: String): this.type = js.native
     def addTextArea(title: KeyWhereType[M, String], text: String, callback: ChangeHandler[String]): this.type = js.native
     
-    def addTime[K /* <: KeyWhereType[M, String | Date] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any */](title: K, date: V): this.type = js.native
-    def addTime[K /* <: KeyWhereType[M, String | Date] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any */](title: K, date: V, callback: ChangeHandler[V]): this.type = js.native
+    def addTime[K /* <: KeyWhereType[M, String | js.Date] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any */](title: K, date: V): this.type = js.native
+    def addTime[K /* <: KeyWhereType[M, String | js.Date] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any */](title: K, date: V, callback: ChangeHandler[V]): this.type = js.native
     
     def bindBoolean[K /* <: KeyWhereType[M, Boolean] */](title: K, value: Boolean, `object`: Record[K, Boolean]): this.type = js.native
     
     def bindColor[K /* <: KeyWhereType[M, String] */](title: K, color: String, `object`: Record[K, String]): this.type = js.native
     
-    def bindDate[K /* <: KeyWhereType[M, String | Date] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any */](title: K, date: V, `object`: Record[K, V]): this.type = js.native
+    def bindDate[K /* <: KeyWhereType[M, String | js.Date] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any */](title: K, date: V, `object`: Record[K, V]): this.type = js.native
     
     def bindDropDown[K /* <: /* keyof M */ String */](
       title: K,
@@ -217,7 +213,7 @@ object mod extends Shortcut {
     
     def bindTextArea[K /* <: KeyWhereType[M, String] */](title: K, text: String, `object`: Record[K, String]): this.type = js.native
     
-    def bindTime[K /* <: KeyWhereType[M, String | Date] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any */](title: K, date: V, `object`: Record[K, V]): this.type = js.native
+    def bindTime[K /* <: KeyWhereType[M, String | js.Date] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: M[K] */ js.Any */](title: K, date: V, `object`: Record[K, V]): this.type = js.native
     
     def clearLocalStorage(name: String): this.type = js.native
     

@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.Types.GameObjects
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait JSONGameObject extends StObject {
   /**
     * Sets the Blend Mode being used by this Game Object.
     */
-  var blendMode: integer | String
+  var blendMode: Double | String
   
   /**
     * The data of this Game Object.
@@ -84,7 +83,7 @@ trait JSONGameObject extends StObject {
   /**
     * The Scale Mode being used by this Game Object.
     */
-  var scaleMode: integer
+  var scaleMode: Double
   
   /**
     * The texture key of this Game Object.
@@ -115,7 +114,7 @@ object JSONGameObject {
   
   inline def apply(
     alpha: Double,
-    blendMode: integer | String,
+    blendMode: Double | String,
     data: js.Object,
     flipX: Boolean,
     flipY: Boolean,
@@ -128,7 +127,7 @@ object JSONGameObject {
     scale: js.Object,
     scaleDotx: Double,
     scaleDoty: Double,
-    scaleMode: integer,
+    scaleMode: Double,
     textureKey: String,
     `type`: String,
     visible: Boolean,
@@ -148,7 +147,7 @@ object JSONGameObject {
     
     inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    inline def setBlendMode(value: integer | String): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
+    inline def setBlendMode(value: Double | String): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
@@ -174,7 +173,7 @@ object JSONGameObject {
     
     inline def setScaleDoty(value: Double): Self = StObject.set(x, "scale.y", value.asInstanceOf[js.Any])
     
-    inline def setScaleMode(value: integer): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
+    inline def setScaleMode(value: Double): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
     
     inline def setTextureKey(value: String): Self = StObject.set(x, "textureKey", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,7 @@ object ListAppsResult {
     
     inline def setApps(value: Apps): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     
-    inline def setAppsVarargs(value: App*): Self = StObject.set(x, "apps", js.Array(value :_*))
+    inline def setAppsVarargs(value: App*): Self = StObject.set(x, "apps", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

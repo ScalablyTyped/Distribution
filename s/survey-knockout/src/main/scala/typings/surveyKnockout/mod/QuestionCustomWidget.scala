@@ -6,33 +6,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionCustomWidget")
 @js.native
-class QuestionCustomWidget protected () extends StObject {
-  def this(name: String, widgetJson: js.Any) = this()
+open class QuestionCustomWidget protected () extends StObject {
+  def this(name: String, widgetJson: Any) = this()
   
   def activatedByChanged(activatedBy: String): Unit = js.native
   
-  def afterRender(question: IQuestion, el: js.Any): Unit = js.native
+  def afterRender(question: IQuestion, el: Any): Unit = js.native
+  
+  def canShowInToolbox: Boolean = js.native
   
   def getDisplayValue(question: IQuestion): String = js.native
-  def getDisplayValue(question: IQuestion, value: js.Any): String = js.native
+  def getDisplayValue(question: IQuestion, value: Any): String = js.native
   
   var htmlTemplate: String = js.native
   
   def init(): Unit = js.native
   
-  val isDefaultRender: Boolean = js.native
-  
-  var isFirstRender: Boolean = js.native
+  def isDefaultRender: Boolean = js.native
   
   def isFit(question: IQuestion): Boolean = js.native
   
   var name: String = js.native
   
-  val pdfQuestionType: String = js.native
+  def pdfQuestionType: String = js.native
   
-  val pdfRender: js.Any = js.native
+  def pdfRender: Any = js.native
   
-  var widgetJson: js.Any = js.native
+  def showInToolbox: Boolean = js.native
+  def showInToolbox_=(`val`: Boolean): Unit = js.native
   
-  def willUnmount(question: IQuestion, el: js.Any): Unit = js.native
+  var widgetJson: Any = js.native
+  
+  def willUnmount(question: IQuestion, el: Any): Unit = js.native
 }

@@ -1,21 +1,55 @@
 package typings.awsSdk.firehoseMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.NoEncryption
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AWSKMSKeyARN = java.lang.String
+type AWSKMSKeyARN = String
 
-type BlockSizeBytes = scala.Double
+type AmazonopensearchserviceBufferingIntervalInSeconds = Double
 
-type BooleanObject = scala.Boolean
+type AmazonopensearchserviceBufferingSizeInMBs = Double
 
-type BucketARN = java.lang.String
+type AmazonopensearchserviceClusterEndpoint = String
 
-type ClusterJDBCURL = java.lang.String
+type AmazonopensearchserviceDomainARN = String
 
-type ColumnToJsonKeyMappings = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.firehoseMod.NonEmptyString]
+type AmazonopensearchserviceIndexName = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NoRotation
+  - typings.awsSdk.awsSdkStrings.OneHour
+  - typings.awsSdk.awsSdkStrings.OneDay
+  - typings.awsSdk.awsSdkStrings.OneWeek
+  - typings.awsSdk.awsSdkStrings.OneMonth
+  - java.lang.String
+*/
+type AmazonopensearchserviceIndexRotationPeriod = _AmazonopensearchserviceIndexRotationPeriod | String
+
+type AmazonopensearchserviceRetryDurationInSeconds = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FailedDocumentsOnly
+  - typings.awsSdk.awsSdkStrings.AllDocuments
+  - java.lang.String
+*/
+type AmazonopensearchserviceS3BackupMode = _AmazonopensearchserviceS3BackupMode | String
+
+type AmazonopensearchserviceTypeName = String
+
+type BlockSizeBytes = Double
+
+type BooleanObject = Boolean
+
+type BucketARN = String
+
+type ClusterJDBCURL = String
+
+type ColumnToJsonKeyMappings = StringDictionary[NonEmptyString]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UNCOMPRESSED
@@ -25,26 +59,26 @@ type ColumnToJsonKeyMappings = org.scalablytyped.runtime.StringDictionary[typing
   - typings.awsSdk.awsSdkStrings.HADOOP_SNAPPY
   - java.lang.String
 */
-type CompressionFormat = typings.awsSdk.firehoseMod._CompressionFormat | java.lang.String
+type CompressionFormat = _CompressionFormat | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.GZIP
   - java.lang.String
 */
-type ContentEncoding = typings.awsSdk.firehoseMod._ContentEncoding | java.lang.String
+type ContentEncoding = _ContentEncoding | String
 
-type CopyOptions = java.lang.String
+type CopyOptions = String
 
-type Data = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.firehoseMod.Blob | java.lang.String
+type Data = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type DataTableColumns = java.lang.String
+type DataTableColumns = String
 
-type DataTableName = java.lang.String
+type DataTableName = String
 
-type DeliveryStartTimestamp = typings.std.Date
+type DeliveryStartTimestamp = js.Date
 
-type DeliveryStreamARN = java.lang.String
+type DeliveryStreamARN = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
@@ -55,7 +89,7 @@ type DeliveryStreamARN = java.lang.String
   - typings.awsSdk.awsSdkStrings.DISABLING_FAILED
   - java.lang.String
 */
-type DeliveryStreamEncryptionStatus = typings.awsSdk.firehoseMod._DeliveryStreamEncryptionStatus | java.lang.String
+type DeliveryStreamEncryptionStatus = _DeliveryStreamEncryptionStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RETIRE_KMS_GRANT_FAILED
@@ -75,11 +109,11 @@ type DeliveryStreamEncryptionStatus = typings.awsSdk.firehoseMod._DeliveryStream
   - typings.awsSdk.awsSdkStrings.UNKNOWN_ERROR
   - java.lang.String
 */
-type DeliveryStreamFailureType = typings.awsSdk.firehoseMod._DeliveryStreamFailureType | java.lang.String
+type DeliveryStreamFailureType = _DeliveryStreamFailureType | String
 
-type DeliveryStreamName = java.lang.String
+type DeliveryStreamName = String
 
-type DeliveryStreamNameList = js.Array[typings.awsSdk.firehoseMod.DeliveryStreamName]
+type DeliveryStreamNameList = js.Array[DeliveryStreamName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -89,32 +123,32 @@ type DeliveryStreamNameList = js.Array[typings.awsSdk.firehoseMod.DeliveryStream
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - java.lang.String
 */
-type DeliveryStreamStatus = typings.awsSdk.firehoseMod._DeliveryStreamStatus | java.lang.String
+type DeliveryStreamStatus = _DeliveryStreamStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DirectPut
   - typings.awsSdk.awsSdkStrings.KinesisStreamAsSource
   - java.lang.String
 */
-type DeliveryStreamType = typings.awsSdk.firehoseMod._DeliveryStreamType | java.lang.String
+type DeliveryStreamType = _DeliveryStreamType | String
 
-type DeliveryStreamVersionId = java.lang.String
+type DeliveryStreamVersionId = String
 
-type DescribeDeliveryStreamInputLimit = scala.Double
+type DescribeDeliveryStreamInputLimit = Double
 
-type DestinationDescriptionList = js.Array[typings.awsSdk.firehoseMod.DestinationDescription]
+type DestinationDescriptionList = js.Array[DestinationDescription]
 
-type DestinationId = java.lang.String
+type DestinationId = String
 
-type ElasticsearchBufferingIntervalInSeconds = scala.Double
+type ElasticsearchBufferingIntervalInSeconds = Double
 
-type ElasticsearchBufferingSizeInMBs = scala.Double
+type ElasticsearchBufferingSizeInMBs = Double
 
-type ElasticsearchClusterEndpoint = java.lang.String
+type ElasticsearchClusterEndpoint = String
 
-type ElasticsearchDomainARN = java.lang.String
+type ElasticsearchDomainARN = String
 
-type ElasticsearchIndexName = java.lang.String
+type ElasticsearchIndexName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NoRotation
@@ -124,95 +158,95 @@ type ElasticsearchIndexName = java.lang.String
   - typings.awsSdk.awsSdkStrings.OneMonth
   - java.lang.String
 */
-type ElasticsearchIndexRotationPeriod = typings.awsSdk.firehoseMod._ElasticsearchIndexRotationPeriod | java.lang.String
+type ElasticsearchIndexRotationPeriod = _ElasticsearchIndexRotationPeriod | String
 
-type ElasticsearchRetryDurationInSeconds = scala.Double
+type ElasticsearchRetryDurationInSeconds = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FailedDocumentsOnly
   - typings.awsSdk.awsSdkStrings.AllDocuments
   - java.lang.String
 */
-type ElasticsearchS3BackupMode = typings.awsSdk.firehoseMod._ElasticsearchS3BackupMode | java.lang.String
+type ElasticsearchS3BackupMode = _ElasticsearchS3BackupMode | String
 
-type ElasticsearchTypeName = java.lang.String
+type ElasticsearchTypeName = String
 
-type ErrorCode = java.lang.String
+type ErrorCode = String
 
-type ErrorMessage = java.lang.String
+type ErrorMessage = String
 
-type ErrorOutputPrefix = java.lang.String
+type ErrorOutputPrefix = String
 
-type HECAcknowledgmentTimeoutInSeconds = scala.Double
+type HECAcknowledgmentTimeoutInSeconds = Double
 
-type HECEndpoint = java.lang.String
+type HECEndpoint = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Raw_
   - typings.awsSdk.awsSdkStrings.Event_
   - java.lang.String
 */
-type HECEndpointType = typings.awsSdk.firehoseMod._HECEndpointType | java.lang.String
+type HECEndpointType = _HECEndpointType | String
 
-type HECToken = java.lang.String
+type HECToken = String
 
-type HttpEndpointAccessKey = java.lang.String
+type HttpEndpointAccessKey = String
 
-type HttpEndpointAttributeName = java.lang.String
+type HttpEndpointAttributeName = String
 
-type HttpEndpointAttributeValue = java.lang.String
+type HttpEndpointAttributeValue = String
 
-type HttpEndpointBufferingIntervalInSeconds = scala.Double
+type HttpEndpointBufferingIntervalInSeconds = Double
 
-type HttpEndpointBufferingSizeInMBs = scala.Double
+type HttpEndpointBufferingSizeInMBs = Double
 
-type HttpEndpointCommonAttributesList = js.Array[typings.awsSdk.firehoseMod.HttpEndpointCommonAttribute]
+type HttpEndpointCommonAttributesList = js.Array[HttpEndpointCommonAttribute]
 
-type HttpEndpointName = java.lang.String
+type HttpEndpointName = String
 
-type HttpEndpointRetryDurationInSeconds = scala.Double
+type HttpEndpointRetryDurationInSeconds = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FailedDataOnly
   - typings.awsSdk.awsSdkStrings.AllData
   - java.lang.String
 */
-type HttpEndpointS3BackupMode = typings.awsSdk.firehoseMod._HttpEndpointS3BackupMode | java.lang.String
+type HttpEndpointS3BackupMode = _HttpEndpointS3BackupMode | String
 
-type HttpEndpointUrl = java.lang.String
+type HttpEndpointUrl = String
 
-type IntervalInSeconds = scala.Double
+type IntervalInSeconds = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AWS_OWNED_CMK
   - typings.awsSdk.awsSdkStrings.CUSTOMER_MANAGED_CMK
   - java.lang.String
 */
-type KeyType = typings.awsSdk.firehoseMod._KeyType | java.lang.String
+type KeyType = _KeyType | String
 
-type KinesisStreamARN = java.lang.String
+type KinesisStreamARN = String
 
-type ListDeliveryStreamsInputLimit = scala.Double
+type ListDeliveryStreamsInputLimit = Double
 
-type ListOfNonEmptyStrings = js.Array[typings.awsSdk.firehoseMod.NonEmptyString]
+type ListOfNonEmptyStrings = js.Array[NonEmptyString]
 
-type ListOfNonEmptyStringsWithoutWhitespace = js.Array[typings.awsSdk.firehoseMod.NonEmptyStringWithoutWhitespace]
+type ListOfNonEmptyStringsWithoutWhitespace = js.Array[NonEmptyStringWithoutWhitespace]
 
-type ListTagsForDeliveryStreamInputLimit = scala.Double
+type ListTagsForDeliveryStreamInputLimit = Double
 
-type ListTagsForDeliveryStreamOutputTagList = js.Array[typings.awsSdk.firehoseMod.Tag]
+type ListTagsForDeliveryStreamOutputTagList = js.Array[Tag]
 
-type LogGroupName = java.lang.String
+type LogGroupName = String
 
-type LogStreamName = java.lang.String
+type LogStreamName = String
 
-type NoEncryptionConfig = typings.awsSdk.awsSdkStrings.NoEncryption | java.lang.String
+type NoEncryptionConfig = NoEncryption | String
 
-type NonEmptyString = java.lang.String
+type NonEmptyString = String
 
-type NonEmptyStringWithoutWhitespace = java.lang.String
+type NonEmptyStringWithoutWhitespace = String
 
-type NonNegativeIntegerObject = scala.Double
+type NonNegativeIntegerObject = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -220,18 +254,18 @@ type NonNegativeIntegerObject = scala.Double
   - typings.awsSdk.awsSdkStrings.SNAPPY
   - java.lang.String
 */
-type OrcCompression = typings.awsSdk.firehoseMod._OrcCompression | java.lang.String
+type OrcCompression = _OrcCompression | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.V0_11
   - typings.awsSdk.awsSdkStrings.V0_12
   - java.lang.String
 */
-type OrcFormatVersion = typings.awsSdk.firehoseMod._OrcFormatVersion | java.lang.String
+type OrcFormatVersion = _OrcFormatVersion | String
 
-type OrcRowIndexStride = scala.Double
+type OrcRowIndexStride = Double
 
-type OrcStripeSizeBytes = scala.Double
+type OrcStripeSizeBytes = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UNCOMPRESSED
@@ -239,95 +273,108 @@ type OrcStripeSizeBytes = scala.Double
   - typings.awsSdk.awsSdkStrings.SNAPPY
   - java.lang.String
 */
-type ParquetCompression = typings.awsSdk.firehoseMod._ParquetCompression | java.lang.String
+type ParquetCompression = _ParquetCompression | String
 
-type ParquetPageSizeBytes = scala.Double
+type ParquetPageSizeBytes = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.V1
   - typings.awsSdk.awsSdkStrings.V2
   - java.lang.String
 */
-type ParquetWriterVersion = typings.awsSdk.firehoseMod._ParquetWriterVersion | java.lang.String
+type ParquetWriterVersion = _ParquetWriterVersion | String
 
-type Password = java.lang.String
+type Password = String
 
-type Prefix = java.lang.String
+type Prefix = String
 
-type ProcessorList = js.Array[typings.awsSdk.firehoseMod.Processor]
+type ProcessorList = js.Array[Processor]
 
-type ProcessorParameterList = js.Array[typings.awsSdk.firehoseMod.ProcessorParameter]
+type ProcessorParameterList = js.Array[ProcessorParameter]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LambdaArn
   - typings.awsSdk.awsSdkStrings.NumberOfRetries
+  - typings.awsSdk.awsSdkStrings.MetadataExtractionQuery
+  - typings.awsSdk.awsSdkStrings.JsonParsingEngine
   - typings.awsSdk.awsSdkStrings.RoleArn
   - typings.awsSdk.awsSdkStrings.BufferSizeInMBs
   - typings.awsSdk.awsSdkStrings.BufferIntervalInSeconds
+  - typings.awsSdk.awsSdkStrings.SubRecordType
+  - typings.awsSdk.awsSdkStrings.Delimiter
   - java.lang.String
 */
-type ProcessorParameterName = typings.awsSdk.firehoseMod._ProcessorParameterName | java.lang.String
+type ProcessorParameterName = _ProcessorParameterName | String
 
-type ProcessorParameterValue = java.lang.String
+type ProcessorParameterValue = String
 
-type ProcessorType = typings.awsSdk.awsSdkStrings.Lambda_ | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RecordDeAggregation
+  - typings.awsSdk.awsSdkStrings.Lambda_
+  - typings.awsSdk.awsSdkStrings.MetadataExtraction
+  - typings.awsSdk.awsSdkStrings.AppendDelimiterToRecord
+  - java.lang.String
+*/
+type ProcessorType = _ProcessorType | String
 
-type Proportion = scala.Double
+type Proportion = Double
 
-type PutRecordBatchRequestEntryList = js.Array[typings.awsSdk.firehoseMod.Record]
+type PutRecordBatchRequestEntryList = js.Array[Record]
 
-type PutRecordBatchResponseEntryList = js.Array[typings.awsSdk.firehoseMod.PutRecordBatchResponseEntry]
+type PutRecordBatchResponseEntryList = js.Array[PutRecordBatchResponseEntry]
 
-type PutResponseRecordId = java.lang.String
+type PutResponseRecordId = String
 
-type RedshiftRetryDurationInSeconds = scala.Double
+type RedshiftRetryDurationInSeconds = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Disabled_
   - typings.awsSdk.awsSdkStrings.Enabled_
   - java.lang.String
 */
-type RedshiftS3BackupMode = typings.awsSdk.firehoseMod._RedshiftS3BackupMode | java.lang.String
+type RedshiftS3BackupMode = _RedshiftS3BackupMode | String
 
-type RoleARN = java.lang.String
+type RetryDurationInSeconds = Double
+
+type RoleARN = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Disabled_
   - typings.awsSdk.awsSdkStrings.Enabled_
   - java.lang.String
 */
-type S3BackupMode = typings.awsSdk.firehoseMod._S3BackupMode | java.lang.String
+type S3BackupMode = _S3BackupMode | String
 
-type SecurityGroupIdList = js.Array[typings.awsSdk.firehoseMod.NonEmptyStringWithoutWhitespace]
+type SecurityGroupIdList = js.Array[NonEmptyStringWithoutWhitespace]
 
-type SizeInMBs = scala.Double
+type SizeInMBs = Double
 
-type SplunkRetryDurationInSeconds = scala.Double
+type SplunkRetryDurationInSeconds = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FailedEventsOnly
   - typings.awsSdk.awsSdkStrings.AllEvents
   - java.lang.String
 */
-type SplunkS3BackupMode = typings.awsSdk.firehoseMod._SplunkS3BackupMode | java.lang.String
+type SplunkS3BackupMode = _SplunkS3BackupMode | String
 
-type SubnetIdList = js.Array[typings.awsSdk.firehoseMod.NonEmptyStringWithoutWhitespace]
+type SubnetIdList = js.Array[NonEmptyStringWithoutWhitespace]
 
-type TagDeliveryStreamInputTagList = js.Array[typings.awsSdk.firehoseMod.Tag]
+type TagDeliveryStreamInputTagList = js.Array[Tag]
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.firehoseMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
-type Username = java.lang.String
+type Username = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2015-08-04`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.firehoseMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

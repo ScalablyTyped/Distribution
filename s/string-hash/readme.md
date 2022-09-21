@@ -11,9 +11,9 @@ fast string hashing function
 | Full name          | string-hash |
 | Keywords           | string, hashing |
 | # releases         | 0 |
-| # dependents       | 359 |
-| # downloads        | 68333272 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 9699474.333333334 |
+| # stars            | 300.0 |
 
 ## Links
 - [Homepage](https://github.com/darkskyapp/string-hash#readme)

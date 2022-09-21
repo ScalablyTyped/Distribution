@@ -53,7 +53,7 @@ object mod {
     
     var enableUrlBarHiding: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.undefined
+    var headers: js.UndefOr[Any] = js.undefined
     
     var showPageTitle: js.UndefOr[Boolean] = js.undefined
     
@@ -80,7 +80,7 @@ object mod {
       
       inline def setEnableUrlBarHidingUndefined: Self = StObject.set(x, "enableUrlBarHiding", js.undefined)
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       

@@ -45,12 +45,12 @@ object CultureInfo {
     
     inline def setDateTimeFormat(value: js.Array[String]): Self = StObject.set(x, "dateTimeFormat", value.asInstanceOf[js.Any])
     
-    inline def setDateTimeFormatVarargs(value: String*): Self = StObject.set(x, "dateTimeFormat", js.Array(value :_*))
+    inline def setDateTimeFormatVarargs(value: String*): Self = StObject.set(x, "dateTimeFormat", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNumberFormat(value: js.Array[String]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
-    inline def setNumberFormatVarargs(value: String*): Self = StObject.set(x, "numberFormat", js.Array(value :_*))
+    inline def setNumberFormatVarargs(value: String*): Self = StObject.set(x, "numberFormat", js.Array(value*))
   }
 }

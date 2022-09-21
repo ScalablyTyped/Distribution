@@ -5,6 +5,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.asana.mod.Dispatcher
 import typings.asana.mod.resources.Users.FindAllParams
 import typings.asana.mod.resources.Users.Type
+import typings.bluebird.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Users
   extends StObject
-     with Resource {
+     with TopLevelResource {
   
   /**
     * * Returns the user records for all users in all workspaces and organizations
@@ -36,8 +37,8 @@ trait Users
     * @param dispatchOptions?
     * @return
     */
-  def findAll(params: FindAllParams): typings.bluebird.mod.^[SimpleResourceList] = js.native
-  def findAll(params: FindAllParams, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
+  def findAll(params: FindAllParams): ^[SimpleResourceList] = js.native
+  def findAll(params: FindAllParams, dispatchOptions: Any): ^[SimpleResourceList] = js.native
   
   /**
     * * Returns the full user record for the single user with the provided ID.
@@ -52,19 +53,19 @@ trait Users
     * @param dispatchOptions?
     * @return
     */
-  def findById(user: String): typings.bluebird.mod.^[Type] = js.native
-  def findById(user: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def findById(user: String, params: Params): typings.bluebird.mod.^[Type] = js.native
-  def findById(user: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def findById(user: Double): typings.bluebird.mod.^[Type] = js.native
-  def findById(user: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def findById(user: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
-  def findById(user: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(user: String): ^[Type] = js.native
+  def findById(user: String, params: Unit, dispatchOptions: Any): ^[Type] = js.native
+  def findById(user: String, params: Params): ^[Type] = js.native
+  def findById(user: String, params: Params, dispatchOptions: Any): ^[Type] = js.native
+  def findById(user: Double): ^[Type] = js.native
+  def findById(user: Double, params: Unit, dispatchOptions: Any): ^[Type] = js.native
+  def findById(user: Double, params: Params): ^[Type] = js.native
+  def findById(user: Double, params: Params, dispatchOptions: Any): ^[Type] = js.native
   
-  def findByWorkspace(workspace: String): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: String, params: Params): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: String): ^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: String, params: Unit, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: String, params: Params): ^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: String, params: Params, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
   /**
     * * Returns the user records for all users in the specified workspace or
     * * organization.
@@ -77,10 +78,10 @@ trait Users
     * @param dispatchOptions?
     * @return
     */
-  def findByWorkspace(workspace: Double): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: Double, params: Params): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double): ^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double, params: Unit, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double, params: Params): ^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double, params: Params, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
   
   /**
     * * Returns the full user record for the currently authenticated user.
@@ -91,17 +92,17 @@ trait Users
     * @param dispatchOptions?
     * @return
     */
-  def me(): typings.bluebird.mod.^[Type] = js.native
-  def me(params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def me(params: Params): typings.bluebird.mod.^[Type] = js.native
-  def me(params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def me(): ^[Type] = js.native
+  def me(params: Unit, dispatchOptions: Any): ^[Type] = js.native
+  def me(params: Params): ^[Type] = js.native
+  def me(params: Params, dispatchOptions: Any): ^[Type] = js.native
 }
 object Users extends Shortcut {
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Users")
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Users {
     /**
@@ -133,22 +134,55 @@ object Users extends Shortcut {
     }
   }
   
-  @js.native
   trait ShortType
     extends StObject
        with Resource {
     
-    var email: String = js.native
+    var email: String
     
-    var photo: StringDictionary[String] = js.native
+    var photo: StringDictionary[String]
+  }
+  object ShortType {
+    
+    inline def apply(email: String, gid: String, name: String, photo: StringDictionary[String], resource_type: String): ShortType = {
+      val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], gid = gid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], photo = photo.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ShortType]
+    }
+    
+    extension [Self <: ShortType](x: Self) {
+      
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      
+      inline def setPhoto(value: StringDictionary[String]): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait Type
     extends StObject
        with ShortType {
     
-    var workspaces: js.Array[Resource] = js.native
+    var workspaces: js.Array[Resource]
+  }
+  object Type {
+    
+    inline def apply(
+      email: String,
+      gid: String,
+      name: String,
+      photo: StringDictionary[String],
+      resource_type: String,
+      workspaces: js.Array[Resource]
+    ): Type = {
+      val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], gid = gid.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], photo = photo.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any], workspaces = workspaces.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Type]
+    }
+    
+    extension [Self <: Type](x: Self) {
+      
+      inline def setWorkspaces(value: js.Array[Resource]): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
+      
+      inline def setWorkspacesVarargs(value: Resource*): Self = StObject.set(x, "workspaces", js.Array(value*))
+    }
   }
   
   type _To = UsersStatic

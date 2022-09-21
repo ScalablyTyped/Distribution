@@ -11,9 +11,9 @@ node.js implementation of James Coglan's "Sylvester" matrix math library.
 | Full name          | sylvester |
 | Keywords           | matrix, vector, linear, line, algebra, matrices |
 | # releases         | 0 |
-| # dependents       | 42 |
-| # downloads        | 4725538 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 430237.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/sylvester)

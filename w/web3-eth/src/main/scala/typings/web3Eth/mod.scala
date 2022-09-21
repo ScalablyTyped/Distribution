@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.bignumberJs.mod.BigNumber
 import typings.bnJs.mod.^
 import typings.node.netMod.Socket
-import typings.std.Error
 import typings.web3Core.mod.BlockNumber
 import typings.web3Core.mod.Common
 import typings.web3Core.mod.Extension
@@ -22,6 +21,8 @@ import typings.web3Core.mod.TransactionReceipt
 import typings.web3Core.mod.chain
 import typings.web3Core.mod.hardfork
 import typings.web3CoreSubscriptions.mod.Subscription
+import typings.web3Eth.web3EthBooleans.`false`
+import typings.web3Eth.web3EthBooleans.`true`
 import typings.web3Eth.web3EthStrings.logs
 import typings.web3Eth.web3EthStrings.newBlockHeaders
 import typings.web3Eth.web3EthStrings.pendingTransactions
@@ -41,7 +42,7 @@ object mod {
   
   @JSImport("web3-eth", "Eth")
   @js.native
-  class Eth () extends StObject {
+  open class Eth () extends StObject {
     def this(provider: typings.web3Core.mod.provider) = this()
     def this(provider: typings.web3Core.mod.provider, net: Socket) = this()
     
@@ -63,16 +64,28 @@ object mod {
     def call(transactionConfig: TransactionConfig): js.Promise[String] = js.native
     def call(
       transactionConfig: TransactionConfig,
-      callback: js.Function2[/* error */ Error, /* data */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* data */ String, Unit]
     ): js.Promise[String] = js.native
     def call(transactionConfig: TransactionConfig, defaultBlock: BlockNumber): js.Promise[String] = js.native
     def call(
       transactionConfig: TransactionConfig,
       defaultBlock: BlockNumber,
-      callback: js.Function2[/* error */ Error, /* data */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* data */ String, Unit]
     ): js.Promise[String] = js.native
     
-    def clearSubscriptions(callback: js.Function2[/* error */ Error, /* result */ Boolean, Unit]): Unit = js.native
+    def clearSubscriptions(callback: js.Function2[/* error */ js.Error, /* result */ Boolean, Unit]): Unit = js.native
+    
+    def createAccessList(transactionConfig: TransactionConfig): js.Promise[CreateAccessList] = js.native
+    def createAccessList(
+      transactionConfig: TransactionConfig,
+      callback: js.Function2[/* error */ js.Error, /* result */ CreateAccessList, Unit]
+    ): js.Promise[CreateAccessList] = js.native
+    def createAccessList(transactionConfig: TransactionConfig, defaultBlock: BlockNumber): js.Promise[CreateAccessList] = js.native
+    def createAccessList(
+      transactionConfig: TransactionConfig,
+      defaultBlock: BlockNumber,
+      callback: js.Function2[/* error */ js.Error, /* result */ CreateAccessList, Unit]
+    ): js.Promise[CreateAccessList] = js.native
     
     val currentProvider: typings.web3Core.mod.provider = js.native
     
@@ -91,332 +104,469 @@ object mod {
     def estimateGas(transactionConfig: TransactionConfig): js.Promise[Double] = js.native
     def estimateGas(
       transactionConfig: TransactionConfig,
-      callback: js.Function2[/* error */ Error, /* gas */ Double, Unit]
+      callback: js.Function2[/* error */ js.Error, /* gas */ Double, Unit]
     ): js.Promise[Double] = js.native
     
-    def extend(`extension`: Extension): js.Any = js.native
+    def extend(`extension`: Extension): Any = js.native
     
     def getAccounts(): js.Promise[js.Array[String]] = js.native
-    def getAccounts(callback: js.Function2[/* error */ Error, /* accounts */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native
+    def getAccounts(callback: js.Function2[/* error */ js.Error, /* accounts */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native
     
     def getBalance(address: String): js.Promise[String] = js.native
-    def getBalance(address: String, callback: js.Function2[/* error */ Error, /* balance */ String, Unit]): js.Promise[String] = js.native
+    def getBalance(address: String, callback: js.Function2[/* error */ js.Error, /* balance */ String, Unit]): js.Promise[String] = js.native
     def getBalance(address: String, defaultBlock: BlockNumber): js.Promise[String] = js.native
     def getBalance(
       address: String,
       defaultBlock: BlockNumber,
-      callback: js.Function2[/* error */ Error, /* balance */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* balance */ String, Unit]
     ): js.Promise[String] = js.native
     
     def getBlock(blockHashOrBlockNumber: String): js.Promise[BlockTransactionString] = js.native
     def getBlock(
       blockHashOrBlockNumber: String,
-      callback: js.Function2[/* error */ Error, /* block */ BlockTransactionString, Unit]
+      callback: js.Function2[/* error */ js.Error, /* block */ BlockTransactionString, Unit]
     ): js.Promise[BlockTransactionString] = js.native
-    def getBlock(blockHashOrBlockNumber: String, returnTransactionObjects: Boolean): js.Promise[BlockTransactionObject] = js.native
-    def getBlock(
-      blockHashOrBlockNumber: String,
-      returnTransactionObjects: Boolean,
-      callback: js.Function2[/* error */ Error, /* block */ BlockTransactionObject, Unit]
-    ): js.Promise[BlockTransactionObject] = js.native
     def getBlock(blockHashOrBlockNumber: BlockNumber): js.Promise[BlockTransactionString] = js.native
     def getBlock(
       blockHashOrBlockNumber: BlockNumber,
-      callback: js.Function2[/* error */ Error, /* block */ BlockTransactionString, Unit]
+      callback: js.Function2[/* error */ js.Error, /* block */ BlockTransactionString, Unit]
     ): js.Promise[BlockTransactionString] = js.native
-    def getBlock(blockHashOrBlockNumber: BlockNumber, returnTransactionObjects: Boolean): js.Promise[BlockTransactionObject] = js.native
-    def getBlock(
-      blockHashOrBlockNumber: BlockNumber,
-      returnTransactionObjects: Boolean,
-      callback: js.Function2[/* error */ Error, /* block */ BlockTransactionObject, Unit]
-    ): js.Promise[BlockTransactionObject] = js.native
     
     def getBlockNumber(): js.Promise[Double] = js.native
-    def getBlockNumber(callback: js.Function2[/* error */ Error, /* blockNumber */ Double, Unit]): js.Promise[Double] = js.native
+    def getBlockNumber(callback: js.Function2[/* error */ js.Error, /* blockNumber */ Double, Unit]): js.Promise[Double] = js.native
     
     def getBlockTransactionCount(blockHashOrBlockNumber: String): js.Promise[Double] = js.native
     def getBlockTransactionCount(
       blockHashOrBlockNumber: String,
-      callback: js.Function2[/* error */ Error, /* numberOfTransactions */ Double, Unit]
+      callback: js.Function2[/* error */ js.Error, /* numberOfTransactions */ Double, Unit]
     ): js.Promise[Double] = js.native
     def getBlockTransactionCount(blockHashOrBlockNumber: BlockNumber): js.Promise[Double] = js.native
     def getBlockTransactionCount(
       blockHashOrBlockNumber: BlockNumber,
-      callback: js.Function2[/* error */ Error, /* numberOfTransactions */ Double, Unit]
+      callback: js.Function2[/* error */ js.Error, /* numberOfTransactions */ Double, Unit]
     ): js.Promise[Double] = js.native
     
     def getBlockUncleCount(blockHashOrBlockNumber: String): js.Promise[Double] = js.native
     def getBlockUncleCount(
       blockHashOrBlockNumber: String,
-      callback: js.Function2[/* error */ Error, /* numberOfTransactions */ Double, Unit]
+      callback: js.Function2[/* error */ js.Error, /* numberOfTransactions */ Double, Unit]
     ): js.Promise[Double] = js.native
     def getBlockUncleCount(blockHashOrBlockNumber: BlockNumber): js.Promise[Double] = js.native
     def getBlockUncleCount(
       blockHashOrBlockNumber: BlockNumber,
-      callback: js.Function2[/* error */ Error, /* numberOfTransactions */ Double, Unit]
+      callback: js.Function2[/* error */ js.Error, /* numberOfTransactions */ Double, Unit]
     ): js.Promise[Double] = js.native
     
+    @JSName("getBlock")
+    def getBlock_false(blockHashOrBlockNumber: String, returnTransactionObjects: `false`): js.Promise[BlockTransactionString] = js.native
+    @JSName("getBlock")
+    def getBlock_false(
+      blockHashOrBlockNumber: String,
+      returnTransactionObjects: `false`,
+      callback: js.Function2[/* error */ js.Error, /* block */ BlockTransactionString, Unit]
+    ): js.Promise[BlockTransactionString] = js.native
+    @JSName("getBlock")
+    def getBlock_false(blockHashOrBlockNumber: BlockNumber, returnTransactionObjects: `false`): js.Promise[BlockTransactionString] = js.native
+    @JSName("getBlock")
+    def getBlock_false(
+      blockHashOrBlockNumber: BlockNumber,
+      returnTransactionObjects: `false`,
+      callback: js.Function2[/* error */ js.Error, /* block */ BlockTransactionString, Unit]
+    ): js.Promise[BlockTransactionString] = js.native
+    @JSName("getBlock")
+    def getBlock_true(blockHashOrBlockNumber: String, returnTransactionObjects: `true`): js.Promise[BlockTransactionObject] = js.native
+    @JSName("getBlock")
+    def getBlock_true(
+      blockHashOrBlockNumber: String,
+      returnTransactionObjects: `true`,
+      callback: js.Function2[/* error */ js.Error, /* block */ BlockTransactionObject, Unit]
+    ): js.Promise[BlockTransactionObject] = js.native
+    @JSName("getBlock")
+    def getBlock_true(blockHashOrBlockNumber: BlockNumber, returnTransactionObjects: `true`): js.Promise[BlockTransactionObject] = js.native
+    @JSName("getBlock")
+    def getBlock_true(
+      blockHashOrBlockNumber: BlockNumber,
+      returnTransactionObjects: `true`,
+      callback: js.Function2[/* error */ js.Error, /* block */ BlockTransactionObject, Unit]
+    ): js.Promise[BlockTransactionObject] = js.native
+    
     def getChainId(): js.Promise[Double] = js.native
-    def getChainId(callback: js.Function2[/* error */ Error, /* version */ Double, Unit]): js.Promise[Double] = js.native
+    def getChainId(callback: js.Function2[/* error */ js.Error, /* version */ Double, Unit]): js.Promise[Double] = js.native
     
     def getCode(address: String): js.Promise[String] = js.native
-    def getCode(address: String, callback: js.Function2[/* error */ Error, /* code */ String, Unit]): js.Promise[String] = js.native
+    def getCode(address: String, callback: js.Function2[/* error */ js.Error, /* code */ String, Unit]): js.Promise[String] = js.native
     def getCode(address: String, defaultBlock: BlockNumber): js.Promise[String] = js.native
     def getCode(
       address: String,
       defaultBlock: BlockNumber,
-      callback: js.Function2[/* error */ Error, /* code */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* code */ String, Unit]
     ): js.Promise[String] = js.native
     
     def getCoinbase(): js.Promise[String] = js.native
-    def getCoinbase(callback: js.Function2[/* error */ Error, /* coinbaseAddress */ String, Unit]): js.Promise[String] = js.native
+    def getCoinbase(callback: js.Function2[/* error */ js.Error, /* coinbaseAddress */ String, Unit]): js.Promise[String] = js.native
+    
+    def getFeeHistory(blockCount: String, lastBlock: String, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: String,
+      lastBlock: String,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(blockCount: String, lastBlock: Double, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: String,
+      lastBlock: Double,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(blockCount: String, lastBlock: BigNumber, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: String,
+      lastBlock: BigNumber,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(blockCount: String, lastBlock: ^, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: String,
+      lastBlock: ^,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(blockCount: Double, lastBlock: String, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: Double,
+      lastBlock: String,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(blockCount: Double, lastBlock: Double, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: Double,
+      lastBlock: Double,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(blockCount: Double, lastBlock: BigNumber, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: Double,
+      lastBlock: BigNumber,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(blockCount: Double, lastBlock: ^, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: Double,
+      lastBlock: ^,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(blockCount: BigNumber, lastBlock: String, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: BigNumber,
+      lastBlock: String,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(blockCount: BigNumber, lastBlock: Double, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: BigNumber,
+      lastBlock: Double,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(blockCount: BigNumber, lastBlock: BigNumber, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: BigNumber,
+      lastBlock: BigNumber,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(blockCount: BigNumber, lastBlock: ^, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: BigNumber,
+      lastBlock: ^,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(blockCount: ^, lastBlock: String, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: ^,
+      lastBlock: String,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(blockCount: ^, lastBlock: Double, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: ^,
+      lastBlock: Double,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(blockCount: ^, lastBlock: BigNumber, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: ^,
+      lastBlock: BigNumber,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(blockCount: ^, lastBlock: ^, rewardPercentiles: js.Array[Double]): js.Promise[FeeHistoryResult] = js.native
+    def getFeeHistory(
+      blockCount: ^,
+      lastBlock: ^,
+      rewardPercentiles: js.Array[Double],
+      callback: js.Function2[/* error */ js.Error, /* feeHistory */ FeeHistoryResult, Unit]
+    ): js.Promise[FeeHistoryResult] = js.native
     
     def getGasPrice(): js.Promise[String] = js.native
-    def getGasPrice(callback: js.Function2[/* error */ Error, /* gasPrice */ String, Unit]): js.Promise[String] = js.native
+    def getGasPrice(callback: js.Function2[/* error */ js.Error, /* gasPrice */ String, Unit]): js.Promise[String] = js.native
     
     def getHashrate(): js.Promise[Double] = js.native
-    def getHashrate(callback: js.Function2[/* error */ Error, /* hashes */ Double, Unit]): js.Promise[Double] = js.native
+    def getHashrate(callback: js.Function2[/* error */ js.Error, /* hashes */ Double, Unit]): js.Promise[Double] = js.native
     
     def getNodeInfo(): js.Promise[String] = js.native
-    def getNodeInfo(callback: js.Function2[/* error */ Error, /* version */ String, Unit]): js.Promise[String] = js.native
+    def getNodeInfo(callback: js.Function2[/* error */ js.Error, /* version */ String, Unit]): js.Promise[String] = js.native
     
     def getPastLogs(options: PastLogsOptions): js.Promise[js.Array[Log]] = js.native
     def getPastLogs(
       options: PastLogsOptions,
-      callback: js.Function2[/* error */ Error, /* logs */ js.Array[Log], Unit]
+      callback: js.Function2[/* error */ js.Error, /* logs */ js.Array[Log], Unit]
     ): js.Promise[js.Array[Log]] = js.native
     
     def getPendingTransactions(): js.Promise[js.Array[Transaction]] = js.native
-    def getPendingTransactions(callback: js.Function2[/* error */ Error, /* result */ js.Array[Transaction], Unit]): js.Promise[js.Array[Transaction]] = js.native
+    def getPendingTransactions(callback: js.Function2[/* error */ js.Error, /* result */ js.Array[Transaction], Unit]): js.Promise[js.Array[Transaction]] = js.native
     
     def getProof(address: String, storageKey: js.Array[BigNumber | Double | String | ^], blockNumber: BlockNumber): js.Promise[GetProof] = js.native
     def getProof(
       address: String,
       storageKey: js.Array[BigNumber | Double | String | ^],
       blockNumber: BlockNumber,
-      callback: js.Function2[/* error */ Error, /* result */ GetProof, Unit]
+      callback: js.Function2[/* error */ js.Error, /* result */ GetProof, Unit]
     ): js.Promise[GetProof] = js.native
     
     def getProtocolVersion(): js.Promise[String] = js.native
-    def getProtocolVersion(callback: js.Function2[/* error */ Error, /* protocolVersion */ String, Unit]): js.Promise[String] = js.native
+    def getProtocolVersion(callback: js.Function2[/* error */ js.Error, /* protocolVersion */ String, Unit]): js.Promise[String] = js.native
     
     def getStorageAt(address: String, position: String): js.Promise[String] = js.native
     def getStorageAt(
       address: String,
       position: String,
-      callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* storageAt */ String, Unit]
     ): js.Promise[String] = js.native
     def getStorageAt(address: String, position: String, defaultBlock: BlockNumber): js.Promise[String] = js.native
     def getStorageAt(
       address: String,
       position: String,
       defaultBlock: BlockNumber,
-      callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* storageAt */ String, Unit]
     ): js.Promise[String] = js.native
     def getStorageAt(address: String, position: Double): js.Promise[String] = js.native
     def getStorageAt(
       address: String,
       position: Double,
-      callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* storageAt */ String, Unit]
     ): js.Promise[String] = js.native
     def getStorageAt(address: String, position: Double, defaultBlock: BlockNumber): js.Promise[String] = js.native
     def getStorageAt(
       address: String,
       position: Double,
       defaultBlock: BlockNumber,
-      callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* storageAt */ String, Unit]
     ): js.Promise[String] = js.native
     def getStorageAt(address: String, position: BigNumber): js.Promise[String] = js.native
     def getStorageAt(
       address: String,
       position: BigNumber,
-      callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* storageAt */ String, Unit]
     ): js.Promise[String] = js.native
     def getStorageAt(address: String, position: BigNumber, defaultBlock: BlockNumber): js.Promise[String] = js.native
     def getStorageAt(
       address: String,
       position: BigNumber,
       defaultBlock: BlockNumber,
-      callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* storageAt */ String, Unit]
     ): js.Promise[String] = js.native
     def getStorageAt(address: String, position: ^): js.Promise[String] = js.native
     def getStorageAt(
       address: String,
       position: ^,
-      callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* storageAt */ String, Unit]
     ): js.Promise[String] = js.native
     def getStorageAt(address: String, position: ^, defaultBlock: BlockNumber): js.Promise[String] = js.native
     def getStorageAt(
       address: String,
       position: ^,
       defaultBlock: BlockNumber,
-      callback: js.Function2[/* error */ Error, /* storageAt */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* storageAt */ String, Unit]
     ): js.Promise[String] = js.native
     
     def getTransaction(transactionHash: String): js.Promise[Transaction] = js.native
     def getTransaction(
       transactionHash: String,
-      callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+      callback: js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]
     ): js.Promise[Transaction] = js.native
     
     def getTransactionCount(address: String): js.Promise[Double] = js.native
-    def getTransactionCount(address: String, callback: js.Function2[/* error */ Error, /* count */ Double, Unit]): js.Promise[Double] = js.native
+    def getTransactionCount(address: String, callback: js.Function2[/* error */ js.Error, /* count */ Double, Unit]): js.Promise[Double] = js.native
     def getTransactionCount(address: String, defaultBlock: BlockNumber): js.Promise[Double] = js.native
     def getTransactionCount(
       address: String,
       defaultBlock: BlockNumber,
-      callback: js.Function2[/* error */ Error, /* count */ Double, Unit]
+      callback: js.Function2[/* error */ js.Error, /* count */ Double, Unit]
     ): js.Promise[Double] = js.native
     
     def getTransactionFromBlock(blockHashOrBlockNumber: String, indexNumber: String): js.Promise[Transaction] = js.native
     def getTransactionFromBlock(
       blockHashOrBlockNumber: String,
       indexNumber: String,
-      callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+      callback: js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]
     ): js.Promise[Transaction] = js.native
     def getTransactionFromBlock(blockHashOrBlockNumber: String, indexNumber: Double): js.Promise[Transaction] = js.native
     def getTransactionFromBlock(
       blockHashOrBlockNumber: String,
       indexNumber: Double,
-      callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+      callback: js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]
     ): js.Promise[Transaction] = js.native
     def getTransactionFromBlock(blockHashOrBlockNumber: String, indexNumber: ^): js.Promise[Transaction] = js.native
     def getTransactionFromBlock(
       blockHashOrBlockNumber: String,
       indexNumber: ^,
-      callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+      callback: js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]
     ): js.Promise[Transaction] = js.native
     def getTransactionFromBlock(blockHashOrBlockNumber: BlockNumber, indexNumber: String): js.Promise[Transaction] = js.native
     def getTransactionFromBlock(
       blockHashOrBlockNumber: BlockNumber,
       indexNumber: String,
-      callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+      callback: js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]
     ): js.Promise[Transaction] = js.native
     def getTransactionFromBlock(blockHashOrBlockNumber: BlockNumber, indexNumber: Double): js.Promise[Transaction] = js.native
     def getTransactionFromBlock(
       blockHashOrBlockNumber: BlockNumber,
       indexNumber: Double,
-      callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+      callback: js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]
     ): js.Promise[Transaction] = js.native
     def getTransactionFromBlock(blockHashOrBlockNumber: BlockNumber, indexNumber: ^): js.Promise[Transaction] = js.native
     def getTransactionFromBlock(
       blockHashOrBlockNumber: BlockNumber,
       indexNumber: ^,
-      callback: js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]
+      callback: js.Function2[/* error */ js.Error, /* transaction */ Transaction, Unit]
     ): js.Promise[Transaction] = js.native
     
     def getTransactionReceipt(hash: String): js.Promise[TransactionReceipt] = js.native
     def getTransactionReceipt(
       hash: String,
-      callback: js.Function2[/* error */ Error, /* transactionReceipt */ TransactionReceipt, Unit]
+      callback: js.Function2[/* error */ js.Error, /* transactionReceipt */ TransactionReceipt, Unit]
     ): js.Promise[TransactionReceipt] = js.native
     
     def getUncle(blockHashOrBlockNumber: String, uncleIndex: String): js.Promise[BlockTransactionString] = js.native
     def getUncle(
       blockHashOrBlockNumber: String,
       uncleIndex: String,
-      callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error, /* uncle */ Any, Unit]
     ): js.Promise[BlockTransactionString] = js.native
     def getUncle(blockHashOrBlockNumber: String, uncleIndex: String, returnTransactionObjects: Boolean): js.Promise[BlockTransactionObject] = js.native
     def getUncle(
       blockHashOrBlockNumber: String,
       uncleIndex: String,
       returnTransactionObjects: Boolean,
-      callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error, /* uncle */ Any, Unit]
     ): js.Promise[BlockTransactionObject] = js.native
     def getUncle(blockHashOrBlockNumber: String, uncleIndex: Double): js.Promise[BlockTransactionString] = js.native
     def getUncle(
       blockHashOrBlockNumber: String,
       uncleIndex: Double,
-      callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error, /* uncle */ Any, Unit]
     ): js.Promise[BlockTransactionString] = js.native
     def getUncle(blockHashOrBlockNumber: String, uncleIndex: Double, returnTransactionObjects: Boolean): js.Promise[BlockTransactionObject] = js.native
     def getUncle(
       blockHashOrBlockNumber: String,
       uncleIndex: Double,
       returnTransactionObjects: Boolean,
-      callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error, /* uncle */ Any, Unit]
     ): js.Promise[BlockTransactionObject] = js.native
     def getUncle(blockHashOrBlockNumber: String, uncleIndex: ^): js.Promise[BlockTransactionString] = js.native
     def getUncle(
       blockHashOrBlockNumber: String,
       uncleIndex: ^,
-      callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error, /* uncle */ Any, Unit]
     ): js.Promise[BlockTransactionString] = js.native
     def getUncle(blockHashOrBlockNumber: String, uncleIndex: ^, returnTransactionObjects: Boolean): js.Promise[BlockTransactionObject] = js.native
     def getUncle(
       blockHashOrBlockNumber: String,
       uncleIndex: ^,
       returnTransactionObjects: Boolean,
-      callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error, /* uncle */ Any, Unit]
     ): js.Promise[BlockTransactionObject] = js.native
     def getUncle(blockHashOrBlockNumber: BlockNumber, uncleIndex: String): js.Promise[BlockTransactionString] = js.native
     def getUncle(
       blockHashOrBlockNumber: BlockNumber,
       uncleIndex: String,
-      callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error, /* uncle */ Any, Unit]
     ): js.Promise[BlockTransactionString] = js.native
     def getUncle(blockHashOrBlockNumber: BlockNumber, uncleIndex: String, returnTransactionObjects: Boolean): js.Promise[BlockTransactionObject] = js.native
     def getUncle(
       blockHashOrBlockNumber: BlockNumber,
       uncleIndex: String,
       returnTransactionObjects: Boolean,
-      callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error, /* uncle */ Any, Unit]
     ): js.Promise[BlockTransactionObject] = js.native
     def getUncle(blockHashOrBlockNumber: BlockNumber, uncleIndex: Double): js.Promise[BlockTransactionString] = js.native
     def getUncle(
       blockHashOrBlockNumber: BlockNumber,
       uncleIndex: Double,
-      callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error, /* uncle */ Any, Unit]
     ): js.Promise[BlockTransactionString] = js.native
     def getUncle(blockHashOrBlockNumber: BlockNumber, uncleIndex: Double, returnTransactionObjects: Boolean): js.Promise[BlockTransactionObject] = js.native
     def getUncle(
       blockHashOrBlockNumber: BlockNumber,
       uncleIndex: Double,
       returnTransactionObjects: Boolean,
-      callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error, /* uncle */ Any, Unit]
     ): js.Promise[BlockTransactionObject] = js.native
     def getUncle(blockHashOrBlockNumber: BlockNumber, uncleIndex: ^): js.Promise[BlockTransactionString] = js.native
     def getUncle(
       blockHashOrBlockNumber: BlockNumber,
       uncleIndex: ^,
-      callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error, /* uncle */ Any, Unit]
     ): js.Promise[BlockTransactionString] = js.native
     def getUncle(blockHashOrBlockNumber: BlockNumber, uncleIndex: ^, returnTransactionObjects: Boolean): js.Promise[BlockTransactionObject] = js.native
     def getUncle(
       blockHashOrBlockNumber: BlockNumber,
       uncleIndex: ^,
       returnTransactionObjects: Boolean,
-      callback: js.Function2[/* error */ Error, /* uncle */ js.Any, Unit]
+      callback: js.Function2[/* error */ js.Error, /* uncle */ Any, Unit]
     ): js.Promise[BlockTransactionObject] = js.native
     
     def getWork(): js.Promise[js.Array[String]] = js.native
-    def getWork(callback: js.Function2[/* error */ Error, /* result */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native
+    def getWork(callback: js.Function2[/* error */ js.Error, /* result */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native
     
-    val givenProvider: js.Any = js.native
+    val givenProvider: Any = js.native
     
     var handleRevert: Boolean = js.native
     
     def isMining(): js.Promise[Boolean] = js.native
-    def isMining(callback: js.Function2[/* error */ Error, /* mining */ Boolean, Unit]): js.Promise[Boolean] = js.native
+    def isMining(callback: js.Function2[/* error */ js.Error, /* mining */ Boolean, Unit]): js.Promise[Boolean] = js.native
     
     def isSyncing(): js.Promise[Syncing | Boolean] = js.native
-    def isSyncing(callback: js.Function2[/* error */ Error, /* syncing */ Syncing, Unit]): js.Promise[Syncing | Boolean] = js.native
+    def isSyncing(callback: js.Function2[/* error */ js.Error, /* syncing */ Syncing, Unit]): js.Promise[Syncing | Boolean] = js.native
     
     var net: Network = js.native
     
     var personal: Personal = js.native
     
     def requestAccounts(): js.Promise[js.Array[String]] = js.native
-    def requestAccounts(callback: js.Function2[/* error */ Error, /* result */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native
+    def requestAccounts(callback: js.Function2[/* error */ js.Error, /* result */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native
     
     def sendSignedTransaction(signedTransactionData: String): PromiEvent[TransactionReceipt] = js.native
-    def sendSignedTransaction(signedTransactionData: String, callback: js.Function2[/* error */ Error, /* hash */ String, Unit]): PromiEvent[TransactionReceipt] = js.native
+    def sendSignedTransaction(
+      signedTransactionData: String,
+      callback: js.Function2[/* error */ js.Error, /* hash */ String, Unit]
+    ): PromiEvent[TransactionReceipt] = js.native
     
     def sendTransaction(transactionConfig: TransactionConfig): PromiEvent[TransactionReceipt] = js.native
     def sendTransaction(
       transactionConfig: TransactionConfig,
-      callback: js.Function2[/* error */ Error, /* hash */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* hash */ String, Unit]
     ): PromiEvent[TransactionReceipt] = js.native
     
     def setProvider(provider: typings.web3Core.mod.provider): Boolean = js.native
@@ -425,13 +575,13 @@ object mod {
     def sign(
       dataToSign: String,
       address: String,
-      callback: js.Function2[/* error */ Error, /* signature */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* signature */ String, Unit]
     ): js.Promise[String] = js.native
     def sign(dataToSign: String, address: Double): js.Promise[String] = js.native
     def sign(
       dataToSign: String,
       address: Double,
-      callback: js.Function2[/* error */ Error, /* signature */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* signature */ String, Unit]
     ): js.Promise[String] = js.native
     
     def signTransaction(transactionConfig: TransactionConfig): js.Promise[RLPEncodedTransaction] = js.native
@@ -439,41 +589,45 @@ object mod {
     def signTransaction(
       transactionConfig: TransactionConfig,
       address: String,
-      callback: js.Function2[/* error */ Error, /* signedTransaction */ RLPEncodedTransaction, Unit]
+      callback: js.Function2[/* error */ js.Error, /* signedTransaction */ RLPEncodedTransaction, Unit]
     ): js.Promise[RLPEncodedTransaction] = js.native
     def signTransaction(
       transactionConfig: TransactionConfig,
-      callback: js.Function2[/* error */ Error, /* signedTransaction */ RLPEncodedTransaction, Unit]
+      callback: js.Function2[/* error */ js.Error, /* signedTransaction */ RLPEncodedTransaction, Unit]
     ): js.Promise[RLPEncodedTransaction] = js.native
     
     def submitWork(data: js.Tuple3[String, String, String]): js.Promise[Boolean] = js.native
     def submitWork(
       data: js.Tuple3[String, String, String],
-      callback: js.Function2[/* error */ Error, /* result */ Boolean, Unit]
+      callback: js.Function2[/* error */ js.Error, /* result */ Boolean, Unit]
     ): js.Promise[Boolean] = js.native
     
     @JSName("subscribe")
     def subscribe_logs(`type`: logs, options: LogsOptions): Subscription[Log] = js.native
     @JSName("subscribe")
-    def subscribe_logs(`type`: logs, options: LogsOptions, callback: js.Function2[/* error */ Error, /* log */ Log, Unit]): Subscription[Log] = js.native
+    def subscribe_logs(
+      `type`: logs,
+      options: LogsOptions,
+      callback: js.Function2[/* error */ js.Error, /* log */ Log, Unit]
+    ): Subscription[Log] = js.native
     @JSName("subscribe")
     def subscribe_newBlockHeaders(`type`: newBlockHeaders): Subscription[BlockHeader] = js.native
     @JSName("subscribe")
     def subscribe_newBlockHeaders(
       `type`: newBlockHeaders,
-      callback: js.Function2[/* error */ Error, /* blockHeader */ BlockHeader, Unit]
+      callback: js.Function2[/* error */ js.Error, /* blockHeader */ BlockHeader, Unit]
     ): Subscription[BlockHeader] = js.native
     @JSName("subscribe")
     def subscribe_pendingTransactions(`type`: pendingTransactions): Subscription[String] = js.native
     @JSName("subscribe")
     def subscribe_pendingTransactions(
       `type`: pendingTransactions,
-      callback: js.Function2[/* error */ Error, /* transactionHash */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* transactionHash */ String, Unit]
     ): Subscription[String] = js.native
     @JSName("subscribe")
     def subscribe_syncing(`type`: syncing): Subscription[Syncing] = js.native
     @JSName("subscribe")
-    def subscribe_syncing(`type`: syncing, callback: js.Function2[/* error */ Error, /* result */ Syncing, Unit]): Subscription[Syncing] = js.native
+    def subscribe_syncing(`type`: syncing, callback: js.Function2[/* error */ js.Error, /* result */ Syncing, Unit]): Subscription[Syncing] = js.native
     
     var transactionBlockTimeout: Double = js.native
     
@@ -486,11 +640,34 @@ object mod {
     
     @JSImport("web3-eth", "Eth.givenProvider")
     @js.native
-    val givenProvider: js.Any = js.native
+    val givenProvider: Any = js.native
     
     @JSImport("web3-eth", "Eth.providers")
     @js.native
     val providers: Providers = js.native
+  }
+  
+  trait AccessTuple extends StObject {
+    
+    var address: String
+    
+    var storageKeys: js.Array[String]
+  }
+  object AccessTuple {
+    
+    inline def apply(address: String, storageKeys: js.Array[String]): AccessTuple = {
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], storageKeys = storageKeys.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AccessTuple]
+    }
+    
+    extension [Self <: AccessTuple](x: Self) {
+      
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      
+      inline def setStorageKeys(value: js.Array[String]): Self = StObject.set(x, "storageKeys", value.asInstanceOf[js.Any])
+      
+      inline def setStorageKeysVarargs(value: String*): Self = StObject.set(x, "storageKeys", js.Array(value*))
+    }
   }
   
   trait Block
@@ -512,17 +689,17 @@ object mod {
       nonce: String,
       number: Double,
       parentHash: String,
-      receiptRoot: String,
+      receiptsRoot: String,
       sha3Uncles: String,
       size: Double,
       stateRoot: String,
       timestamp: Double | String,
       totalDifficulty: Double,
-      transactionRoot: String,
       transactions: js.Array[String | Transaction],
+      transactionsRoot: String,
       uncles: js.Array[String]
     ): Block = {
-      val __obj = js.Dynamic.literal(difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], logsBloom = logsBloom.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], receiptRoot = receiptRoot.asInstanceOf[js.Any], sha3Uncles = sha3Uncles.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stateRoot = stateRoot.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], totalDifficulty = totalDifficulty.asInstanceOf[js.Any], transactionRoot = transactionRoot.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any], uncles = uncles.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], logsBloom = logsBloom.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], receiptsRoot = receiptsRoot.asInstanceOf[js.Any], sha3Uncles = sha3Uncles.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stateRoot = stateRoot.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], totalDifficulty = totalDifficulty.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any], transactionsRoot = transactionsRoot.asInstanceOf[js.Any], uncles = uncles.asInstanceOf[js.Any])
       __obj.asInstanceOf[Block]
     }
     
@@ -530,11 +707,13 @@ object mod {
       
       inline def setTransactions(value: js.Array[String | Transaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
-      inline def setTransactionsVarargs(value: (String | Transaction)*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+      inline def setTransactionsVarargs(value: (String | Transaction)*): Self = StObject.set(x, "transactions", js.Array(value*))
     }
   }
   
   trait BlockHeader extends StObject {
+    
+    var baseFeePerGas: js.UndefOr[Double] = js.undefined
     
     var extraData: String
     
@@ -554,7 +733,7 @@ object mod {
     
     var parentHash: String
     
-    var receiptRoot: String
+    var receiptsRoot: String
     
     var sha3Uncles: String
     
@@ -562,7 +741,7 @@ object mod {
     
     var timestamp: Double | String
     
-    var transactionRoot: String
+    var transactionsRoot: String
   }
   object BlockHeader {
     
@@ -576,17 +755,21 @@ object mod {
       nonce: String,
       number: Double,
       parentHash: String,
-      receiptRoot: String,
+      receiptsRoot: String,
       sha3Uncles: String,
       stateRoot: String,
       timestamp: Double | String,
-      transactionRoot: String
+      transactionsRoot: String
     ): BlockHeader = {
-      val __obj = js.Dynamic.literal(extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], logsBloom = logsBloom.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], receiptRoot = receiptRoot.asInstanceOf[js.Any], sha3Uncles = sha3Uncles.asInstanceOf[js.Any], stateRoot = stateRoot.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], transactionRoot = transactionRoot.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], logsBloom = logsBloom.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], receiptsRoot = receiptsRoot.asInstanceOf[js.Any], sha3Uncles = sha3Uncles.asInstanceOf[js.Any], stateRoot = stateRoot.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], transactionsRoot = transactionsRoot.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlockHeader]
     }
     
     extension [Self <: BlockHeader](x: Self) {
+      
+      inline def setBaseFeePerGas(value: Double): Self = StObject.set(x, "baseFeePerGas", value.asInstanceOf[js.Any])
+      
+      inline def setBaseFeePerGasUndefined: Self = StObject.set(x, "baseFeePerGas", js.undefined)
       
       inline def setExtraData(value: String): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
       
@@ -606,7 +789,7 @@ object mod {
       
       inline def setParentHash(value: String): Self = StObject.set(x, "parentHash", value.asInstanceOf[js.Any])
       
-      inline def setReceiptRoot(value: String): Self = StObject.set(x, "receiptRoot", value.asInstanceOf[js.Any])
+      inline def setReceiptsRoot(value: String): Self = StObject.set(x, "receiptsRoot", value.asInstanceOf[js.Any])
       
       inline def setSha3Uncles(value: String): Self = StObject.set(x, "sha3Uncles", value.asInstanceOf[js.Any])
       
@@ -614,7 +797,7 @@ object mod {
       
       inline def setTimestamp(value: Double | String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      inline def setTransactionRoot(value: String): Self = StObject.set(x, "transactionRoot", value.asInstanceOf[js.Any])
+      inline def setTransactionsRoot(value: String): Self = StObject.set(x, "transactionsRoot", value.asInstanceOf[js.Any])
     }
   }
   
@@ -643,16 +826,16 @@ object mod {
       nonce: String,
       number: Double,
       parentHash: String,
-      receiptRoot: String,
+      receiptsRoot: String,
       sha3Uncles: String,
       size: Double,
       stateRoot: String,
       timestamp: Double | String,
       totalDifficulty: Double,
-      transactionRoot: String,
+      transactionsRoot: String,
       uncles: js.Array[String]
     ): BlockTransactionBase = {
-      val __obj = js.Dynamic.literal(difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], logsBloom = logsBloom.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], receiptRoot = receiptRoot.asInstanceOf[js.Any], sha3Uncles = sha3Uncles.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stateRoot = stateRoot.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], totalDifficulty = totalDifficulty.asInstanceOf[js.Any], transactionRoot = transactionRoot.asInstanceOf[js.Any], uncles = uncles.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], logsBloom = logsBloom.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], receiptsRoot = receiptsRoot.asInstanceOf[js.Any], sha3Uncles = sha3Uncles.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stateRoot = stateRoot.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], totalDifficulty = totalDifficulty.asInstanceOf[js.Any], transactionsRoot = transactionsRoot.asInstanceOf[js.Any], uncles = uncles.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlockTransactionBase]
     }
     
@@ -666,7 +849,7 @@ object mod {
       
       inline def setUncles(value: js.Array[String]): Self = StObject.set(x, "uncles", value.asInstanceOf[js.Any])
       
-      inline def setUnclesVarargs(value: String*): Self = StObject.set(x, "uncles", js.Array(value :_*))
+      inline def setUnclesVarargs(value: String*): Self = StObject.set(x, "uncles", js.Array(value*))
     }
   }
   
@@ -689,17 +872,17 @@ object mod {
       nonce: String,
       number: Double,
       parentHash: String,
-      receiptRoot: String,
+      receiptsRoot: String,
       sha3Uncles: String,
       size: Double,
       stateRoot: String,
       timestamp: Double | String,
       totalDifficulty: Double,
-      transactionRoot: String,
       transactions: js.Array[Transaction],
+      transactionsRoot: String,
       uncles: js.Array[String]
     ): BlockTransactionObject = {
-      val __obj = js.Dynamic.literal(difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], logsBloom = logsBloom.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], receiptRoot = receiptRoot.asInstanceOf[js.Any], sha3Uncles = sha3Uncles.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stateRoot = stateRoot.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], totalDifficulty = totalDifficulty.asInstanceOf[js.Any], transactionRoot = transactionRoot.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any], uncles = uncles.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], logsBloom = logsBloom.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], receiptsRoot = receiptsRoot.asInstanceOf[js.Any], sha3Uncles = sha3Uncles.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stateRoot = stateRoot.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], totalDifficulty = totalDifficulty.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any], transactionsRoot = transactionsRoot.asInstanceOf[js.Any], uncles = uncles.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlockTransactionObject]
     }
     
@@ -707,7 +890,7 @@ object mod {
       
       inline def setTransactions(value: js.Array[Transaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
-      inline def setTransactionsVarargs(value: Transaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+      inline def setTransactionsVarargs(value: Transaction*): Self = StObject.set(x, "transactions", js.Array(value*))
     }
   }
   
@@ -730,17 +913,17 @@ object mod {
       nonce: String,
       number: Double,
       parentHash: String,
-      receiptRoot: String,
+      receiptsRoot: String,
       sha3Uncles: String,
       size: Double,
       stateRoot: String,
       timestamp: Double | String,
       totalDifficulty: Double,
-      transactionRoot: String,
       transactions: js.Array[String],
+      transactionsRoot: String,
       uncles: js.Array[String]
     ): BlockTransactionString = {
-      val __obj = js.Dynamic.literal(difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], logsBloom = logsBloom.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], receiptRoot = receiptRoot.asInstanceOf[js.Any], sha3Uncles = sha3Uncles.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stateRoot = stateRoot.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], totalDifficulty = totalDifficulty.asInstanceOf[js.Any], transactionRoot = transactionRoot.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any], uncles = uncles.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], logsBloom = logsBloom.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], receiptsRoot = receiptsRoot.asInstanceOf[js.Any], sha3Uncles = sha3Uncles.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stateRoot = stateRoot.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], totalDifficulty = totalDifficulty.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any], transactionsRoot = transactionsRoot.asInstanceOf[js.Any], uncles = uncles.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlockTransactionString]
     }
     
@@ -748,7 +931,76 @@ object mod {
       
       inline def setTransactions(value: js.Array[String]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
       
-      inline def setTransactionsVarargs(value: String*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+      inline def setTransactionsVarargs(value: String*): Self = StObject.set(x, "transactions", js.Array(value*))
+    }
+  }
+  
+  trait CreateAccessList extends StObject {
+    
+    var accessList: js.Array[AccessTuple]
+    
+    var error: js.UndefOr[String] = js.undefined
+    
+    var gasUsed: String
+  }
+  object CreateAccessList {
+    
+    inline def apply(accessList: js.Array[AccessTuple], gasUsed: String): CreateAccessList = {
+      val __obj = js.Dynamic.literal(accessList = accessList.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CreateAccessList]
+    }
+    
+    extension [Self <: CreateAccessList](x: Self) {
+      
+      inline def setAccessList(value: js.Array[AccessTuple]): Self = StObject.set(x, "accessList", value.asInstanceOf[js.Any])
+      
+      inline def setAccessListVarargs(value: AccessTuple*): Self = StObject.set(x, "accessList", js.Array(value*))
+      
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      
+      inline def setGasUsed(value: String): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait FeeHistoryResult extends StObject {
+    
+    var baseFeePerGas: js.Array[String]
+    
+    var gasUsedRatio: js.Array[Double]
+    
+    var oldestBlock: Double
+    
+    var reward: js.Array[js.Array[String]]
+  }
+  object FeeHistoryResult {
+    
+    inline def apply(
+      baseFeePerGas: js.Array[String],
+      gasUsedRatio: js.Array[Double],
+      oldestBlock: Double,
+      reward: js.Array[js.Array[String]]
+    ): FeeHistoryResult = {
+      val __obj = js.Dynamic.literal(baseFeePerGas = baseFeePerGas.asInstanceOf[js.Any], gasUsedRatio = gasUsedRatio.asInstanceOf[js.Any], oldestBlock = oldestBlock.asInstanceOf[js.Any], reward = reward.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FeeHistoryResult]
+    }
+    
+    extension [Self <: FeeHistoryResult](x: Self) {
+      
+      inline def setBaseFeePerGas(value: js.Array[String]): Self = StObject.set(x, "baseFeePerGas", value.asInstanceOf[js.Any])
+      
+      inline def setBaseFeePerGasVarargs(value: String*): Self = StObject.set(x, "baseFeePerGas", js.Array(value*))
+      
+      inline def setGasUsedRatio(value: js.Array[Double]): Self = StObject.set(x, "gasUsedRatio", value.asInstanceOf[js.Any])
+      
+      inline def setGasUsedRatioVarargs(value: Double*): Self = StObject.set(x, "gasUsedRatio", js.Array(value*))
+      
+      inline def setOldestBlock(value: Double): Self = StObject.set(x, "oldestBlock", value.asInstanceOf[js.Any])
+      
+      inline def setReward(value: js.Array[js.Array[String]]): Self = StObject.set(x, "reward", value.asInstanceOf[js.Any])
+      
+      inline def setRewardVarargs(value: js.Array[String]*): Self = StObject.set(x, "reward", js.Array(value*))
     }
   }
   
@@ -787,7 +1039,7 @@ object mod {
       
       inline def setAccountProof(value: js.Array[String]): Self = StObject.set(x, "accountProof", value.asInstanceOf[js.Any])
       
-      inline def setAccountProofVarargs(value: String*): Self = StObject.set(x, "accountProof", js.Array(value :_*))
+      inline def setAccountProofVarargs(value: String*): Self = StObject.set(x, "accountProof", js.Array(value*))
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -801,7 +1053,7 @@ object mod {
       
       inline def setStorageProof(value: js.Array[StorageProof]): Self = StObject.set(x, "storageProof", value.asInstanceOf[js.Any])
       
-      inline def setStorageProofVarargs(value: StorageProof*): Self = StObject.set(x, "storageProof", js.Array(value :_*))
+      inline def setStorageProofVarargs(value: StorageProof*): Self = StObject.set(x, "storageProof", js.Array(value*))
     }
   }
   
@@ -826,7 +1078,7 @@ object mod {
       
       inline def setProof(value: js.Array[String]): Self = StObject.set(x, "proof", value.asInstanceOf[js.Any])
       
-      inline def setProofVarargs(value: String*): Self = StObject.set(x, "proof", js.Array(value :_*))
+      inline def setProofVarargs(value: String*): Self = StObject.set(x, "proof", js.Array(value*))
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

@@ -4,24 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The zip file information for a zip deployment.
-  */
 trait SchemaZipInfo extends StObject {
   
   /**
-    * An estimate of the number of files in a zip for a zip deployment. If set,
-    * must be greater than or equal to the actual number of files. Used for
-    * optimizing performance; if not provided, deployment may be slow.
+    * An estimate of the number of files in a zip for a zip deployment. If set, must be greater than or equal to the actual number of files. Used for optimizing performance; if not provided, deployment may be slow.
     */
-  var filesCount: js.UndefOr[Double] = js.undefined
+  var filesCount: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * URL of the zip file to deploy from. Must be a URL to a resource in Google
-    * Cloud Storage in the form
-    * &#39;http(s)://storage.googleapis.com/&lt;bucket&gt;/&lt;object&gt;&#39;.
+    * URL of the zip file to deploy from. Must be a URL to a resource in Google Cloud Storage in the form 'http(s)://storage.googleapis.com//'.
     */
-  var sourceUrl: js.UndefOr[String] = js.undefined
+  var sourceUrl: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaZipInfo {
   
@@ -34,9 +27,13 @@ object SchemaZipInfo {
     
     inline def setFilesCount(value: Double): Self = StObject.set(x, "filesCount", value.asInstanceOf[js.Any])
     
+    inline def setFilesCountNull: Self = StObject.set(x, "filesCount", null)
+    
     inline def setFilesCountUndefined: Self = StObject.set(x, "filesCount", js.undefined)
     
     inline def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUrlNull: Self = StObject.set(x, "sourceUrl", null)
     
     inline def setSourceUrlUndefined: Self = StObject.set(x, "sourceUrl", js.undefined)
   }

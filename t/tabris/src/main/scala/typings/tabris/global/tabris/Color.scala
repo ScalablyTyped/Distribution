@@ -7,8 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.Color")
 @js.native
-class Color protected ()
+open class Color protected ()
   extends typings.tabris.mod.Color {
+  /**
+    * Represents a color. See also ${doc:ColorValue}
+    */
   def this(red: Double, green: Double, blue: Double) = this()
   def this(red: Double, green: Double, blue: Double, alpha: Double) = this()
 }
@@ -73,14 +76,14 @@ object Color {
     * value will be accepted by a color property. This is also a valid TypeScript type guard function.
     * @param value The value to test
     */
-  inline def isColorValue(value: js.Any): /* is tabris.tabris.ColorValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isColorValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.ColorValue */ Boolean]
+  inline def isColorValue(value: Any): /* is tabris.tabris.ColorValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isColorValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.ColorValue */ Boolean]
   
   /**
     * Returns true if value is a valid ColorValue. This excludes `null` and `'initial'`. Use this to check
     * if a value will be accepted by Color.from. This is also a valid TypeScript type guard function.
     * @param value The value to test
     */
-  inline def isValidColorValue(value: js.Any): /* is tabris.tabris.ColorValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidColorValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.ColorValue */ Boolean]
+  inline def isValidColorValue(value: Any): /* is tabris.tabris.ColorValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidColorValue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is tabris.tabris.ColorValue */ Boolean]
   
   /**
     * @constant

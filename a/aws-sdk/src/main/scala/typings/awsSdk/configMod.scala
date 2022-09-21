@@ -19,7 +19,7 @@ object configMod {
     * Creates a new configuration object.
     * This is the object that passes option data along to service requests, including credentials, security, region information, and some service specific settings.
     */
-  class Config ()
+  open class Config ()
     extends typings.awsSdk.configBaseMod.ConfigBase {
     def this(options: ConfigurationOptions & ConfigurationServicePlaceholders & APIVersions) = this()
     
@@ -35,7 +35,7 @@ object configMod {
   
   @JSImport("aws-sdk/lib/config", "ConfigBase")
   @js.native
-  class ConfigBase ()
+  open class ConfigBase ()
     extends typings.awsSdk.configBaseMod.ConfigBase {
     def this(options: ConfigurationOptions) = this()
   }
@@ -72,12 +72,14 @@ object configMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.awsSdk.configServicePlaceholdersMod.ConfigurationServicePlaceholders because Inheritance from two classes. Inlined acm, apigateway, applicationautoscaling, appstream, autoscaling, batch, budgets, clouddirectory, cloudformation, cloudfront, cloudhsm, cloudsearch, cloudsearchdomain, cloudtrail, cloudwatch, cloudwatchevents, cloudwatchlogs, codebuild, codecommit, codedeploy, codepipeline, cognitoidentity, cognitoidentityserviceprovider, cognitosync, configservice, cur, datapipeline, devicefarm, directconnect, directoryservice, discovery, dms, dynamodb, dynamodbstreams, ec2, ecr, ecs, efs, elasticache, elasticbeanstalk, elb, elbv2, emr, es, elastictranscoder, firehose, gamelift, glacier, health, iam, importexport, inspector, iot, iotdata, kinesis, kinesisanalytics, kms, lambda, lexruntime, lightsail, machinelearning, marketplacecommerceanalytics, marketplacemetering, mturk, mobileanalytics, opsworks, opsworkscm, organizations, pinpoint, polly, rds, redshift, rekognition, resourcegroupstaggingapi, route53, route53domains, s3, s3control, servicecatalog, ses, shield, simpledb, sms, snowball, sns, sqs, ssm, storagegateway, stepfunctions, sts, support, swf, xray, waf, wafregional, workdocs, workspaces, codestar, lexmodelbuildingservice, marketplaceentitlementservice, athena, greengrass, dax, migrationhub, cloudhsmv2, glue, mobile, pricing, costexplorer, mediaconvert, medialive, mediapackage, mediastore, mediastoredata, appsync, guardduty, mq, comprehend, iotjobsdataplane, kinesisvideoarchivedmedia, kinesisvideomedia, kinesisvideo, sagemakerruntime, sagemaker, translate, resourcegroups, alexaforbusiness, cloud9, serverlessapplicationrepository, servicediscovery, workmail, autoscalingplans, transcribeservice, connect, acmpca, fms, secretsmanager, iotanalytics, iot1clickdevicesservice, iot1clickprojects, pi, neptune, mediatailor, eks, macie, dlm, signer, chime, pinpointemail, ram, route53resolver, pinpointsmsvoice, quicksight, rdsdataservice, amplify, datasync, robomaker, transfer, globalaccelerator, comprehendmedical, kinesisanalyticsv2, mediaconnect, fsx, securityhub, appmesh, licensemanager, kafka, apigatewaymanagementapi, apigatewayv2, docdb, backup, worklink, textract, managedblockchain, mediapackagevod, groundstation, iotthingsgraph, iotevents, ioteventsdata, personalize, personalizeevents, personalizeruntime, applicationinsights, servicequotas, ec2instanceconnect, eventbridge, lakeformation, forecastservice, forecastqueryservice, qldb, qldbsession, workmailmessageflow, codestarnotifications, savingsplans, sso, ssooidc, marketplacecatalog, dataexchange, sesv2, migrationhubconfig, connectparticipant, appconfig, iotsecuretunneling, wafv2, elasticinference, imagebuilder, schemas, accessanalyzer, codegurureviewer, codeguruprofiler, computeoptimizer, frauddetector, kendra, networkmanager, outposts, augmentedairuntime, ebs, kinesisvideosignalingchannels, detective, codestarconnections, synthetics, iotsitewise, macie2, codeartifact, honeycode, ivs, braket, identitystore, appflow, redshiftdata, ssoadmin, timestreamquery, timestreamwrite, s3outposts, databrew, servicecatalogappregistry, networkfirewall */ @js.native
+  - typings.awsSdk.configServicePlaceholdersMod.ConfigurationServicePlaceholders because Inheritance from two classes. Inlined acm, apigateway, applicationautoscaling, appstream, autoscaling, batch, budgets, clouddirectory, cloudformation, cloudfront, cloudhsm, cloudsearch, cloudsearchdomain, cloudtrail, cloudwatch, cloudwatchevents, cloudwatchlogs, codebuild, codecommit, codedeploy, codepipeline, cognitoidentity, cognitoidentityserviceprovider, cognitosync, configservice, cur, datapipeline, devicefarm, directconnect, directoryservice, discovery, dms, dynamodb, dynamodbstreams, ec2, ecr, ecs, efs, elasticache, elasticbeanstalk, elb, elbv2, emr, es, elastictranscoder, firehose, gamelift, glacier, health, iam, importexport, inspector, iot, iotdata, kinesis, kinesisanalytics, kms, lambda, lexruntime, lightsail, machinelearning, marketplacecommerceanalytics, marketplacemetering, mturk, mobileanalytics, opsworks, opsworkscm, organizations, pinpoint, polly, rds, redshift, rekognition, resourcegroupstaggingapi, route53, route53domains, s3, s3control, servicecatalog, ses, shield, simpledb, sms, snowball, sns, sqs, ssm, storagegateway, stepfunctions, sts, support, swf, xray, waf, wafregional, workdocs, workspaces, codestar, lexmodelbuildingservice, marketplaceentitlementservice, athena, greengrass, dax, migrationhub, cloudhsmv2, glue, mobile, pricing, costexplorer, mediaconvert, medialive, mediapackage, mediastore, mediastoredata, appsync, guardduty, mq, comprehend, iotjobsdataplane, kinesisvideoarchivedmedia, kinesisvideomedia, kinesisvideo, sagemakerruntime, sagemaker, translate, resourcegroups, alexaforbusiness, cloud9, serverlessapplicationrepository, servicediscovery, workmail, autoscalingplans, transcribeservice, connect, acmpca, fms, secretsmanager, iotanalytics, iot1clickdevicesservice, iot1clickprojects, pi, neptune, mediatailor, eks, macie, dlm, signer, chime, pinpointemail, ram, route53resolver, pinpointsmsvoice, quicksight, rdsdataservice, amplify, datasync, robomaker, transfer, globalaccelerator, comprehendmedical, kinesisanalyticsv2, mediaconnect, fsx, securityhub, appmesh, licensemanager, kafka, apigatewaymanagementapi, apigatewayv2, docdb, backup, worklink, textract, managedblockchain, mediapackagevod, groundstation, iotthingsgraph, iotevents, ioteventsdata, personalize, personalizeevents, personalizeruntime, applicationinsights, servicequotas, ec2instanceconnect, eventbridge, lakeformation, forecastservice, forecastqueryservice, qldb, qldbsession, workmailmessageflow, codestarnotifications, savingsplans, sso, ssooidc, marketplacecatalog, dataexchange, sesv2, migrationhubconfig, connectparticipant, appconfig, iotsecuretunneling, wafv2, elasticinference, imagebuilder, schemas, accessanalyzer, codegurureviewer, codeguruprofiler, computeoptimizer, frauddetector, kendra, networkmanager, outposts, augmentedairuntime, ebs, kinesisvideosignalingchannels, detective, codestarconnections, synthetics, iotsitewise, macie2, codeartifact, honeycode, ivs, braket, identitystore, appflow, redshiftdata, ssoadmin, timestreamquery, timestreamwrite, s3outposts, databrew, servicecatalogappregistry, networkfirewall, mwaa, amplifybackend, appintegrations, connectcontactlens, devopsguru, ecrpublic, lookoutvision, sagemakerfeaturestoreruntime, customerprofiles, auditmanager, emrcontainers, healthlake, sagemakeredge, amp, greengrassv2, iotdeviceadvisor, iotfleethub, iotwireless, location, wellarchitected, lexmodelsv2, lexruntimev2, fis, lookoutmetrics, mgn, lookoutequipment, nimble, finspace, finspacedata, ssmcontacts, ssmincidents, applicationcostprofiler, apprunner, proton, route53recoverycluster, route53recoverycontrolconfig, route53recoveryreadiness, chimesdkidentity, chimesdkmessaging, snowdevicemanagement, memorydb, opensearch, kafkaconnect, voiceid, wisdom, account, cloudcontrol, grafana, panorama, chimesdkmeetings, resiliencehub, migrationhubstrategy, appconfigdata, drs, migrationhubrefactorspaces, evidently, inspector2, rbin, rum, backupgateway, iottwinmaker, workspacesweb, amplifyuibuilder, keyspaces, billingconductor, gamesparks, pinpointsmsvoicev2, ivschat, chimesdkmediapipelines, emrserverless, m2, connectcampaigns, redshiftserverless, rolesanywhere, licensemanagerusersubscriptions, backupstorage, privatenetworks, supportapp, controltower */ @js.native
   trait GlobalConfigInstance
     extends Config
        with APIVersions {
     
     var accessanalyzer: js.UndefOr[ClientConfiguration] = js.native
+    
+    var account: js.UndefOr[typings.awsSdk.accountMod.ClientConfiguration] = js.native
     
     var acm: js.UndefOr[typings.awsSdk.acmMod.ClientConfiguration] = js.native
     
@@ -85,7 +87,13 @@ object configMod {
     
     var alexaforbusiness: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientConfiguration] = js.native
     
+    var amp: js.UndefOr[typings.awsSdk.ampMod.ClientConfiguration] = js.native
+    
     var amplify: js.UndefOr[typings.awsSdk.amplifyMod.ClientConfiguration] = js.native
+    
+    var amplifybackend: js.UndefOr[typings.awsSdk.amplifybackendMod.ClientConfiguration] = js.native
+    
+    var amplifyuibuilder: js.UndefOr[typings.awsSdk.amplifyuibuilderMod.ClientConfiguration] = js.native
     
     var apigateway: js.UndefOr[typings.awsSdk.apigatewayMod.ClientConfiguration] = js.native
     
@@ -95,19 +103,29 @@ object configMod {
     
     var appconfig: js.UndefOr[typings.awsSdk.appconfigMod.ClientConfiguration] = js.native
     
+    var appconfigdata: js.UndefOr[typings.awsSdk.appconfigdataMod.ClientConfiguration] = js.native
+    
     var appflow: js.UndefOr[typings.awsSdk.appflowMod.ClientConfiguration] = js.native
     
+    var appintegrations: js.UndefOr[typings.awsSdk.appintegrationsMod.ClientConfiguration] = js.native
+    
     var applicationautoscaling: js.UndefOr[typings.awsSdk.applicationautoscalingMod.ClientConfiguration] = js.native
+    
+    var applicationcostprofiler: js.UndefOr[typings.awsSdk.applicationcostprofilerMod.ClientConfiguration] = js.native
     
     var applicationinsights: js.UndefOr[typings.awsSdk.applicationinsightsMod.ClientConfiguration] = js.native
     
     var appmesh: js.UndefOr[typings.awsSdk.appmeshMod.ClientConfiguration] = js.native
+    
+    var apprunner: js.UndefOr[typings.awsSdk.apprunnerMod.ClientConfiguration] = js.native
     
     var appstream: js.UndefOr[typings.awsSdk.appstreamMod.ClientConfiguration] = js.native
     
     var appsync: js.UndefOr[typings.awsSdk.appsyncMod.ClientConfiguration] = js.native
     
     var athena: js.UndefOr[typings.awsSdk.athenaMod.ClientConfiguration] = js.native
+    
+    var auditmanager: js.UndefOr[typings.awsSdk.auditmanagerMod.ClientConfiguration] = js.native
     
     var augmentedairuntime: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.ClientConfiguration] = js.native
     
@@ -117,7 +135,13 @@ object configMod {
     
     var backup: js.UndefOr[typings.awsSdk.backupMod.ClientConfiguration] = js.native
     
+    var backupgateway: js.UndefOr[typings.awsSdk.backupgatewayMod.ClientConfiguration] = js.native
+    
+    var backupstorage: js.UndefOr[typings.awsSdk.backupstorageMod.ClientConfiguration] = js.native
+    
     var batch: js.UndefOr[typings.awsSdk.batchMod.ClientConfiguration] = js.native
+    
+    var billingconductor: js.UndefOr[typings.awsSdk.billingconductorMod.ClientConfiguration] = js.native
     
     var braket: js.UndefOr[typings.awsSdk.braketMod.ClientConfiguration] = js.native
     
@@ -125,7 +149,17 @@ object configMod {
     
     var chime: js.UndefOr[typings.awsSdk.chimeMod.ClientConfiguration] = js.native
     
+    var chimesdkidentity: js.UndefOr[typings.awsSdk.chimesdkidentityMod.ClientConfiguration] = js.native
+    
+    var chimesdkmediapipelines: js.UndefOr[typings.awsSdk.chimesdkmediapipelinesMod.ClientConfiguration] = js.native
+    
+    var chimesdkmeetings: js.UndefOr[typings.awsSdk.chimesdkmeetingsMod.ClientConfiguration] = js.native
+    
+    var chimesdkmessaging: js.UndefOr[typings.awsSdk.chimesdkmessagingMod.ClientConfiguration] = js.native
+    
     var cloud9: js.UndefOr[typings.awsSdk.cloud9Mod.ClientConfiguration] = js.native
+    
+    var cloudcontrol: js.UndefOr[typings.awsSdk.cloudcontrolMod.ClientConfiguration] = js.native
     
     var clouddirectory: js.UndefOr[typings.awsSdk.clouddirectoryMod.ClientConfiguration] = js.native
     
@@ -185,11 +219,19 @@ object configMod {
     
     var connect: js.UndefOr[typings.awsSdk.connectMod.ClientConfiguration] = js.native
     
+    var connectcampaigns: js.UndefOr[typings.awsSdk.connectcampaignsMod.ClientConfiguration] = js.native
+    
+    var connectcontactlens: js.UndefOr[typings.awsSdk.connectcontactlensMod.ClientConfiguration] = js.native
+    
     var connectparticipant: js.UndefOr[typings.awsSdk.connectparticipantMod.ClientConfiguration] = js.native
+    
+    var controltower: js.UndefOr[typings.awsSdk.controltowerMod.ClientConfiguration] = js.native
     
     var costexplorer: js.UndefOr[typings.awsSdk.costexplorerMod.ClientConfiguration] = js.native
     
     var cur: js.UndefOr[typings.awsSdk.curMod.ClientConfiguration] = js.native
+    
+    var customerprofiles: js.UndefOr[typings.awsSdk.customerprofilesMod.ClientConfiguration] = js.native
     
     var databrew: js.UndefOr[typings.awsSdk.databrewMod.ClientConfiguration] = js.native
     
@@ -205,6 +247,8 @@ object configMod {
     
     var devicefarm: js.UndefOr[typings.awsSdk.devicefarmMod.ClientConfiguration] = js.native
     
+    var devopsguru: js.UndefOr[typings.awsSdk.devopsguruMod.ClientConfiguration] = js.native
+    
     var directconnect: js.UndefOr[typings.awsSdk.directconnectMod.ClientConfiguration] = js.native
     
     var directoryservice: js.UndefOr[typings.awsSdk.directoryserviceMod.ClientConfiguration] = js.native
@@ -217,6 +261,8 @@ object configMod {
     
     var docdb: js.UndefOr[typings.awsSdk.docdbMod.ClientConfiguration] = js.native
     
+    var drs: js.UndefOr[typings.awsSdk.drsMod.ClientConfiguration] = js.native
+    
     var dynamodb: js.UndefOr[typings.awsSdk.dynamodbMod.ClientConfiguration] = js.native
     
     var dynamodbstreams: js.UndefOr[typings.awsSdk.dynamodbstreamsMod.ClientConfiguration] = js.native
@@ -228,6 +274,8 @@ object configMod {
     var ec2instanceconnect: js.UndefOr[typings.awsSdk.ec2instanceconnectMod.ClientConfiguration] = js.native
     
     var ecr: js.UndefOr[typings.awsSdk.ecrMod.ClientConfiguration] = js.native
+    
+    var ecrpublic: js.UndefOr[typings.awsSdk.ecrpublicMod.ClientConfiguration] = js.native
     
     var ecs: js.UndefOr[typings.awsSdk.ecsMod.ClientConfiguration] = js.native
     
@@ -249,11 +297,23 @@ object configMod {
     
     var emr: js.UndefOr[typings.awsSdk.emrMod.ClientConfiguration] = js.native
     
+    var emrcontainers: js.UndefOr[typings.awsSdk.emrcontainersMod.ClientConfiguration] = js.native
+    
+    var emrserverless: js.UndefOr[typings.awsSdk.emrserverlessMod.ClientConfiguration] = js.native
+    
     var es: js.UndefOr[typings.awsSdk.esMod.ClientConfiguration] = js.native
     
     var eventbridge: js.UndefOr[typings.awsSdk.eventbridgeMod.ClientConfiguration] = js.native
     
+    var evidently: js.UndefOr[typings.awsSdk.evidentlyMod.ClientConfiguration] = js.native
+    
+    var finspace: js.UndefOr[typings.awsSdk.finspaceMod.ClientConfiguration] = js.native
+    
+    var finspacedata: js.UndefOr[typings.awsSdk.finspacedataMod.ClientConfiguration] = js.native
+    
     var firehose: js.UndefOr[typings.awsSdk.firehoseMod.ClientConfiguration] = js.native
+    
+    var fis: js.UndefOr[typings.awsSdk.fisMod.ClientConfiguration] = js.native
     
     var fms: js.UndefOr[typings.awsSdk.fmsMod.ClientConfiguration] = js.native
     
@@ -267,19 +327,27 @@ object configMod {
     
     var gamelift: js.UndefOr[typings.awsSdk.gameliftMod.ClientConfiguration] = js.native
     
+    var gamesparks: js.UndefOr[typings.awsSdk.gamesparksMod.ClientConfiguration] = js.native
+    
     var glacier: js.UndefOr[typings.awsSdk.glacierMod.ClientConfiguration] = js.native
     
     var globalaccelerator: js.UndefOr[typings.awsSdk.globalacceleratorMod.ClientConfiguration] = js.native
     
     var glue: js.UndefOr[typings.awsSdk.glueMod.ClientConfiguration] = js.native
     
+    var grafana: js.UndefOr[typings.awsSdk.grafanaMod.ClientConfiguration] = js.native
+    
     var greengrass: js.UndefOr[typings.awsSdk.greengrassMod.ClientConfiguration] = js.native
+    
+    var greengrassv2: js.UndefOr[typings.awsSdk.greengrassv2Mod.ClientConfiguration] = js.native
     
     var groundstation: js.UndefOr[typings.awsSdk.groundstationMod.ClientConfiguration] = js.native
     
     var guardduty: js.UndefOr[typings.awsSdk.guarddutyMod.ClientConfiguration] = js.native
     
     var health: js.UndefOr[typings.awsSdk.healthMod.ClientConfiguration] = js.native
+    
+    var healthlake: js.UndefOr[typings.awsSdk.healthlakeMod.ClientConfiguration] = js.native
     
     var honeycode: js.UndefOr[typings.awsSdk.honeycodeMod.ClientConfiguration] = js.native
     
@@ -293,6 +361,8 @@ object configMod {
     
     var inspector: js.UndefOr[typings.awsSdk.inspectorMod.ClientConfiguration] = js.native
     
+    var inspector2: js.UndefOr[typings.awsSdk.inspector2Mod.ClientConfiguration] = js.native
+    
     var iot: js.UndefOr[typings.awsSdk.iotMod.ClientConfiguration] = js.native
     
     var iot1clickdevicesservice: js.UndefOr[typings.awsSdk.iot1clickdevicesserviceMod.ClientConfiguration] = js.native
@@ -303,9 +373,13 @@ object configMod {
     
     var iotdata: js.UndefOr[typings.awsSdk.iotdataMod.ClientConfiguration] = js.native
     
+    var iotdeviceadvisor: js.UndefOr[typings.awsSdk.iotdeviceadvisorMod.ClientConfiguration] = js.native
+    
     var iotevents: js.UndefOr[typings.awsSdk.ioteventsMod.ClientConfiguration] = js.native
     
     var ioteventsdata: js.UndefOr[typings.awsSdk.ioteventsdataMod.ClientConfiguration] = js.native
+    
+    var iotfleethub: js.UndefOr[typings.awsSdk.iotfleethubMod.ClientConfiguration] = js.native
     
     var iotjobsdataplane: js.UndefOr[typings.awsSdk.iotjobsdataplaneMod.ClientConfiguration] = js.native
     
@@ -315,11 +389,21 @@ object configMod {
     
     var iotthingsgraph: js.UndefOr[typings.awsSdk.iotthingsgraphMod.ClientConfiguration] = js.native
     
+    var iottwinmaker: js.UndefOr[typings.awsSdk.iottwinmakerMod.ClientConfiguration] = js.native
+    
+    var iotwireless: js.UndefOr[typings.awsSdk.iotwirelessMod.ClientConfiguration] = js.native
+    
     var ivs: js.UndefOr[typings.awsSdk.ivsMod.ClientConfiguration] = js.native
+    
+    var ivschat: js.UndefOr[typings.awsSdk.ivschatMod.ClientConfiguration] = js.native
     
     var kafka: js.UndefOr[typings.awsSdk.kafkaMod.ClientConfiguration] = js.native
     
+    var kafkaconnect: js.UndefOr[typings.awsSdk.kafkaconnectMod.ClientConfiguration] = js.native
+    
     var kendra: js.UndefOr[typings.awsSdk.kendraMod.ClientConfiguration] = js.native
+    
+    var keyspaces: js.UndefOr[typings.awsSdk.keyspacesMod.ClientConfiguration] = js.native
     
     var kinesis: js.UndefOr[typings.awsSdk.kinesisMod.ClientConfiguration] = js.native
     
@@ -343,11 +427,27 @@ object configMod {
     
     var lexmodelbuildingservice: js.UndefOr[typings.awsSdk.lexmodelbuildingserviceMod.ClientConfiguration] = js.native
     
+    var lexmodelsv2: js.UndefOr[typings.awsSdk.lexmodelsv2Mod.ClientConfiguration] = js.native
+    
     var lexruntime: js.UndefOr[typings.awsSdk.lexruntimeMod.ClientConfiguration] = js.native
+    
+    var lexruntimev2: js.UndefOr[typings.awsSdk.lexruntimev2Mod.ClientConfiguration] = js.native
     
     var licensemanager: js.UndefOr[typings.awsSdk.licensemanagerMod.ClientConfiguration] = js.native
     
+    var licensemanagerusersubscriptions: js.UndefOr[typings.awsSdk.licensemanagerusersubscriptionsMod.ClientConfiguration] = js.native
+    
     var lightsail: js.UndefOr[typings.awsSdk.lightsailMod.ClientConfiguration] = js.native
+    
+    var location: js.UndefOr[typings.awsSdk.locationMod.ClientConfiguration] = js.native
+    
+    var lookoutequipment: js.UndefOr[typings.awsSdk.lookoutequipmentMod.ClientConfiguration] = js.native
+    
+    var lookoutmetrics: js.UndefOr[typings.awsSdk.lookoutmetricsMod.ClientConfiguration] = js.native
+    
+    var lookoutvision: js.UndefOr[typings.awsSdk.lookoutvisionMod.ClientConfiguration] = js.native
+    
+    var m2: js.UndefOr[typings.awsSdk.m2Mod.ClientConfiguration] = js.native
     
     var machinelearning: js.UndefOr[typings.awsSdk.machinelearningMod.ClientConfiguration] = js.native
     
@@ -381,9 +481,17 @@ object configMod {
     
     var mediatailor: js.UndefOr[typings.awsSdk.mediatailorMod.ClientConfiguration] = js.native
     
+    var memorydb: js.UndefOr[typings.awsSdk.memorydbMod.ClientConfiguration] = js.native
+    
+    var mgn: js.UndefOr[typings.awsSdk.mgnMod.ClientConfiguration] = js.native
+    
     var migrationhub: js.UndefOr[typings.awsSdk.migrationhubMod.ClientConfiguration] = js.native
     
     var migrationhubconfig: js.UndefOr[typings.awsSdk.migrationhubconfigMod.ClientConfiguration] = js.native
+    
+    var migrationhubrefactorspaces: js.UndefOr[typings.awsSdk.migrationhubrefactorspacesMod.ClientConfiguration] = js.native
+    
+    var migrationhubstrategy: js.UndefOr[typings.awsSdk.migrationhubstrategyMod.ClientConfiguration] = js.native
     
     var mobile: js.UndefOr[typings.awsSdk.mobileMod.ClientConfiguration] = js.native
     
@@ -393,11 +501,17 @@ object configMod {
     
     var mturk: js.UndefOr[typings.awsSdk.mturkMod.ClientConfiguration] = js.native
     
+    var mwaa: js.UndefOr[typings.awsSdk.mwaaMod.ClientConfiguration] = js.native
+    
     var neptune: js.UndefOr[typings.awsSdk.neptuneMod.ClientConfiguration] = js.native
     
     var networkfirewall: js.UndefOr[typings.awsSdk.networkfirewallMod.ClientConfiguration] = js.native
     
     var networkmanager: js.UndefOr[typings.awsSdk.networkmanagerMod.ClientConfiguration] = js.native
+    
+    var nimble: js.UndefOr[typings.awsSdk.nimbleMod.ClientConfiguration] = js.native
+    
+    var opensearch: js.UndefOr[typings.awsSdk.opensearchMod.ClientConfiguration] = js.native
     
     var opsworks: js.UndefOr[typings.awsSdk.opsworksMod.ClientConfiguration] = js.native
     
@@ -406,6 +520,8 @@ object configMod {
     var organizations: js.UndefOr[typings.awsSdk.organizationsMod.ClientConfiguration] = js.native
     
     var outposts: js.UndefOr[typings.awsSdk.outpostsMod.ClientConfiguration] = js.native
+    
+    var panorama: js.UndefOr[typings.awsSdk.panoramaMod.ClientConfiguration] = js.native
     
     var personalize: js.UndefOr[typings.awsSdk.personalizeMod.ClientConfiguration] = js.native
     
@@ -421,9 +537,15 @@ object configMod {
     
     var pinpointsmsvoice: js.UndefOr[typings.awsSdk.pinpointsmsvoiceMod.ClientConfiguration] = js.native
     
+    var pinpointsmsvoicev2: js.UndefOr[typings.awsSdk.pinpointsmsvoicev2Mod.ClientConfiguration] = js.native
+    
     var polly: js.UndefOr[typings.awsSdk.pollyMod.ClientConfiguration] = js.native
     
     var pricing: js.UndefOr[typings.awsSdk.pricingMod.ClientConfiguration] = js.native
+    
+    var privatenetworks: js.UndefOr[typings.awsSdk.privatenetworksMod.ClientConfiguration] = js.native
+    
+    var proton: js.UndefOr[typings.awsSdk.protonMod.ClientConfiguration] = js.native
     
     var qldb: js.UndefOr[typings.awsSdk.qldbMod.ClientConfiguration] = js.native
     
@@ -433,6 +555,8 @@ object configMod {
     
     var ram: js.UndefOr[typings.awsSdk.ramMod.ClientConfiguration] = js.native
     
+    var rbin: js.UndefOr[typings.awsSdk.rbinMod.ClientConfiguration] = js.native
+    
     var rds: js.UndefOr[typings.awsSdk.rdsMod.ClientConfiguration] = js.native
     
     var rdsdataservice: js.UndefOr[typings.awsSdk.rdsdataserviceMod.ClientConfiguration] = js.native
@@ -441,7 +565,11 @@ object configMod {
     
     var redshiftdata: js.UndefOr[typings.awsSdk.redshiftdataMod.ClientConfiguration] = js.native
     
+    var redshiftserverless: js.UndefOr[typings.awsSdk.redshiftserverlessMod.ClientConfiguration] = js.native
+    
     var rekognition: js.UndefOr[typings.awsSdk.rekognitionMod.ClientConfiguration] = js.native
+    
+    var resiliencehub: js.UndefOr[typings.awsSdk.resiliencehubMod.ClientConfiguration] = js.native
     
     var resourcegroups: js.UndefOr[typings.awsSdk.resourcegroupsMod.ClientConfiguration] = js.native
     
@@ -449,11 +577,21 @@ object configMod {
     
     var robomaker: js.UndefOr[typings.awsSdk.robomakerMod.ClientConfiguration] = js.native
     
+    var rolesanywhere: js.UndefOr[typings.awsSdk.rolesanywhereMod.ClientConfiguration] = js.native
+    
     var route53: js.UndefOr[typings.awsSdk.route53Mod.ClientConfiguration] = js.native
     
     var route53domains: js.UndefOr[typings.awsSdk.route53domainsMod.ClientConfiguration] = js.native
     
+    var route53recoverycluster: js.UndefOr[typings.awsSdk.route53recoveryclusterMod.ClientConfiguration] = js.native
+    
+    var route53recoverycontrolconfig: js.UndefOr[typings.awsSdk.route53recoverycontrolconfigMod.ClientConfiguration] = js.native
+    
+    var route53recoveryreadiness: js.UndefOr[typings.awsSdk.route53recoveryreadinessMod.ClientConfiguration] = js.native
+    
     var route53resolver: js.UndefOr[typings.awsSdk.route53resolverMod.ClientConfiguration] = js.native
+    
+    var rum: js.UndefOr[typings.awsSdk.rumMod.ClientConfiguration] = js.native
     
     var s3: js.UndefOr[typings.awsSdk.s3Mod.ClientConfiguration] = js.native
     
@@ -462,6 +600,10 @@ object configMod {
     var s3outposts: js.UndefOr[typings.awsSdk.s3outpostsMod.ClientConfiguration] = js.native
     
     var sagemaker: js.UndefOr[typings.awsSdk.sagemakerMod.ClientConfiguration] = js.native
+    
+    var sagemakeredge: js.UndefOr[typings.awsSdk.sagemakeredgeMod.ClientConfiguration] = js.native
+    
+    var sagemakerfeaturestoreruntime: js.UndefOr[typings.awsSdk.sagemakerfeaturestoreruntimeMod.ClientConfiguration] = js.native
     
     var sagemakerruntime: js.UndefOr[typings.awsSdk.sagemakerruntimeMod.ClientConfiguration] = js.native
     
@@ -497,11 +639,17 @@ object configMod {
     
     var snowball: js.UndefOr[typings.awsSdk.snowballMod.ClientConfiguration] = js.native
     
+    var snowdevicemanagement: js.UndefOr[typings.awsSdk.snowdevicemanagementMod.ClientConfiguration] = js.native
+    
     var sns: js.UndefOr[typings.awsSdk.snsMod.ClientConfiguration] = js.native
     
     var sqs: js.UndefOr[typings.awsSdk.sqsMod.ClientConfiguration] = js.native
     
     var ssm: js.UndefOr[typings.awsSdk.ssmMod.ClientConfiguration] = js.native
+    
+    var ssmcontacts: js.UndefOr[typings.awsSdk.ssmcontactsMod.ClientConfiguration] = js.native
+    
+    var ssmincidents: js.UndefOr[typings.awsSdk.ssmincidentsMod.ClientConfiguration] = js.native
     
     var sso: js.UndefOr[typings.awsSdk.ssoMod.ClientConfiguration] = js.native
     
@@ -516,6 +664,8 @@ object configMod {
     var sts: js.UndefOr[typings.awsSdk.stsMod.ClientConfiguration] = js.native
     
     var support: js.UndefOr[typings.awsSdk.supportMod.ClientConfiguration] = js.native
+    
+    var supportapp: js.UndefOr[typings.awsSdk.supportappMod.ClientConfiguration] = js.native
     
     var swf: js.UndefOr[typings.awsSdk.swfMod.ClientConfiguration] = js.native
     
@@ -533,11 +683,17 @@ object configMod {
     
     var translate: js.UndefOr[typings.awsSdk.translateMod.ClientConfiguration] = js.native
     
+    var voiceid: js.UndefOr[typings.awsSdk.voiceidMod.ClientConfiguration] = js.native
+    
     var waf: js.UndefOr[typings.awsSdk.wafMod.ClientConfiguration] = js.native
     
     var wafregional: js.UndefOr[typings.awsSdk.wafregionalMod.ClientConfiguration] = js.native
     
     var wafv2: js.UndefOr[typings.awsSdk.wafv2Mod.ClientConfiguration] = js.native
+    
+    var wellarchitected: js.UndefOr[typings.awsSdk.wellarchitectedMod.ClientConfiguration] = js.native
+    
+    var wisdom: js.UndefOr[typings.awsSdk.wisdomMod.ClientConfiguration] = js.native
     
     var workdocs: js.UndefOr[typings.awsSdk.workdocsMod.ClientConfiguration] = js.native
     
@@ -548,6 +704,8 @@ object configMod {
     var workmailmessageflow: js.UndefOr[typings.awsSdk.workmailmessageflowMod.ClientConfiguration] = js.native
     
     var workspaces: js.UndefOr[typings.awsSdk.workspacesMod.ClientConfiguration] = js.native
+    
+    var workspacesweb: js.UndefOr[typings.awsSdk.workspaceswebMod.ClientConfiguration] = js.native
     
     var xray: js.UndefOr[typings.awsSdk.xrayMod.ClientConfiguration] = js.native
   }

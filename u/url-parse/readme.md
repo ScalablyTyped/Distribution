@@ -10,10 +10,10 @@ Small footprint URL parser that works seamlessly across Node.js and browser envi
 | ------------------ | :-------------: |
 | Full name          | url-parse |
 | Keywords           | URL, parser, uri, url, parse, query, string, querystring, stringify |
-| # releases         | 4 |
-| # dependents       | 1261 |
-| # downloads        | 433675849 |
-| # stars            | 43 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 4.5220844666666664E7 |
+| # stars            | 961.0 |
 
 ## Links
 - [Homepage](https://github.com/unshiftio/url-parse#readme)

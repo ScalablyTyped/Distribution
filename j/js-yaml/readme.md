@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-yaml
 
-Typings are for version 3.12
+Typings are for version 4.0
 
 ## Library description:
 YAML 1.2 parser and serializer
@@ -10,15 +10,12 @@ YAML 1.2 parser and serializer
 | ------------------ | :-------------: |
 | Full name          | js-yaml |
 | Keywords           | yaml, parser, serializer, pyyaml |
-| # releases         | 8 |
-| # dependents       | 9413 |
-| # downloads        | 948970125 |
-| # stars            | 121 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9875897033333334E8 |
+| # stars            | 5575.0 |
 
 ## Links
-- [Homepage](https://github.com/nodeca/js-yaml#readme)
-- [Bugs](https://github.com/nodeca/js-yaml/issues)
-- [Repository](https://github.com/nodeca/js-yaml)
 - [Npm](https://www.npmjs.com/package/js-yaml)
     
 

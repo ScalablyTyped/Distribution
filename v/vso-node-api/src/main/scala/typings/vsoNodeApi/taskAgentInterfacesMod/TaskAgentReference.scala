@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TaskAgentReference extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Gets or sets a value indicating whether or not this agent should be enabled for job execution.
@@ -35,14 +35,7 @@ trait TaskAgentReference extends StObject {
 }
 object TaskAgentReference {
   
-  inline def apply(
-    _links: js.Any,
-    enabled: Boolean,
-    id: Double,
-    name: String,
-    status: TaskAgentStatus,
-    version: String
-  ): TaskAgentReference = {
+  inline def apply(_links: Any, enabled: Boolean, id: Double, name: String, status: TaskAgentStatus, version: String): TaskAgentReference = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskAgentReference]
   }
@@ -59,6 +52,6 @@ object TaskAgentReference {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

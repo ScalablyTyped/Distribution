@@ -6,27 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.PredicateType, 'type' | 'name' | 'asserts' | 'targetType'> */
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ trait PredicateType
-  extends StObject
-     with SomeType {
+trait PredicateType extends StObject {
   
-  var asserts: ModelToObject[Boolean] | Boolean
+  var asserts: ToSerialized[Boolean]
   
-  var name: ModelToObject[String] | String
+  var name: ToSerialized[String]
   
-  var targetType: js.UndefOr[
-    ModelToObject[js.UndefOr[typings.typedoc.typesAbstractMod.Type]] | typings.typedoc.typesAbstractMod.Type
-  ] = js.undefined
+  var targetType: ToSerialized[js.UndefOr[typings.typedoc.modelsTypesMod.SomeType]]
   
-  var `type`: (ModelToObject[/* "predicate" */ String]) | (/* "predicate" */ String)
+  var `type`: ToSerialized[/* "predicate" */ String]
 }
 object PredicateType {
   
   inline def apply(
-    asserts: ModelToObject[Boolean] | Boolean,
-    name: ModelToObject[String] | String,
-    `type`: (ModelToObject[/* "predicate" */ String]) | (/* "predicate" */ String)
+    asserts: ToSerialized[Boolean],
+    name: ToSerialized[String],
+    `type`: ToSerialized[/* "predicate" */ String]
   ): PredicateType = {
     val __obj = js.Dynamic.literal(asserts = asserts.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -35,24 +30,22 @@ object PredicateType {
   
   extension [Self <: PredicateType](x: Self) {
     
-    inline def setAsserts(value: ModelToObject[Boolean] | Boolean): Self = StObject.set(x, "asserts", value.asInstanceOf[js.Any])
+    inline def setAsserts(value: ToSerialized[Boolean]): Self = StObject.set(x, "asserts", value.asInstanceOf[js.Any])
     
-    inline def setAssertsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "asserts", js.Array(value :_*))
+    inline def setAssertsVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "asserts", js.Array(value*))
     
-    inline def setName(value: ModelToObject[String] | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ToSerialized[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "name", js.Array(value*))
     
-    inline def setTargetType(
-      value: ModelToObject[js.UndefOr[typings.typedoc.typesAbstractMod.Type]] | typings.typedoc.typesAbstractMod.Type
-    ): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: ToSerialized[js.UndefOr[typings.typedoc.modelsTypesMod.SomeType]]): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
     
     inline def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
     
-    inline def setTargetTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "targetType", js.Array(value :_*))
+    inline def setTargetTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "targetType", js.Array(value*))
     
-    inline def setType(value: (ModelToObject[/* "predicate" */ String]) | (/* "predicate" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ToSerialized[/* "predicate" */ String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

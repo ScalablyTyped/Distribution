@@ -30,10 +30,10 @@ trait Ellipse
   def setBounds(bounds: Bounds): Unit = js.native
   def setBounds(bounds: BoundsLiteral): Unit = js.native
   
-  def setOptions(key: String, value: js.Any): Unit = js.native
+  def setOptions(key: String, value: Any): Unit = js.native
   def setOptions(options: EllipseOptions): Unit = js.native
   
-  def setStyles(key: String, value: js.Any): Unit = js.native
+  def setStyles(key: String, value: Any): Unit = js.native
   def setStyles(options: EllipseOptions): Unit = js.native
   
   def setVisible(visible: Boolean): Unit = js.native

@@ -11,9 +11,11 @@ abstract class BaseError ()
   extends StObject
      with Error {
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
 }
@@ -24,6 +26,6 @@ object BaseError {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def _setPrototypeOf(o: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_setPrototypeOf")(o.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def _setPrototypeOf(o: js.Any, proto: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_setPrototypeOf")(o.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def _setPrototypeOf(o: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_setPrototypeOf")(o.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def _setPrototypeOf(o: Any, proto: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_setPrototypeOf")(o.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

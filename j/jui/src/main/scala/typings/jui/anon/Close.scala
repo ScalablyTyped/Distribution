@@ -12,7 +12,7 @@ trait Close extends StObject {
     */
   var close: js.UndefOr[Boolean] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.undefined
+  var event: js.UndefOr[Any] = js.undefined
   
   /**
     * @cfg {Integer} [height=0]
@@ -36,7 +36,7 @@ trait Close extends StObject {
     * @cfg {Array} nodes
     * Sets a dropdown list to data rather than markup
     */
-  var nodes: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var nodes: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * @cfg {Integer} [top=0]
@@ -44,7 +44,7 @@ trait Close extends StObject {
     */
   var top: js.UndefOr[Double] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.undefined
+  var tpl: js.UndefOr[Any] = js.undefined
   
   /**
     * @cfg {Integer} [width=0]
@@ -65,7 +65,7 @@ object Close {
     
     inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
@@ -81,17 +81,17 @@ object Close {
     
     inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    inline def setNodes(value: js.Array[js.Any]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[Any]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    inline def setNodesVarargs(value: js.Any*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Any*): Self = StObject.set(x, "nodes", js.Array(value*))
     
     inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
     inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
     

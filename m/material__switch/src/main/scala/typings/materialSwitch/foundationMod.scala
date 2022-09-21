@@ -1,8 +1,8 @@
 package typings.materialSwitch
 
 import typings.materialBase.foundationMod.MDCFoundation
-import typings.materialSwitch.adapterMod.MDCSwitchAdapter
 import typings.materialSwitch.anon.PartialMDCSwitchAdapter
+import typings.materialSwitch.deprecatedAdapterMod.MDCSwitchAdapter
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object foundationMod {
   
-  @JSImport("@material/switch/foundation", JSImport.Default)
+  @JSImport("@material/switch/deprecated/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCSwitchFoundation {
+  open class default () extends MDCSwitchFoundation {
     def this(adapter: PartialMDCSwitchAdapter) = this()
   }
   
-  @JSImport("@material/switch/foundation", "MDCSwitchFoundation")
+  @JSImport("@material/switch/deprecated/foundation", "MDCSwitchFoundation")
   @js.native
-  class MDCSwitchFoundation () extends MDCFoundation[MDCSwitchAdapter] {
+  open class MDCSwitchFoundation () extends MDCFoundation[MDCSwitchAdapter] {
     def this(adapter: PartialMDCSwitchAdapter) = this()
     
     /** Handles the change event for the switch native control. */
@@ -29,5 +29,10 @@ object foundationMod {
     
     /** Sets the disabled state of the switch. */
     def setDisabled(disabled: Boolean): Unit = js.native
+    
+    /* private */ var updateAriaChecked: Any = js.native
+    
+    /** Updates the styling of the switch based on its checked state. */
+    /* private */ var updateCheckedStyling: Any = js.native
   }
 }

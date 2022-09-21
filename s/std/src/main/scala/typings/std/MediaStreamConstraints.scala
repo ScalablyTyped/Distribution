@@ -6,10 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MediaStreamConstraints extends StObject {
   
+  /* standard dom */
   var audio: js.UndefOr[scala.Boolean | MediaTrackConstraints] = js.undefined
   
+  /* standard dom */
   var peerIdentity: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
+  var preferCurrentTab: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var video: js.UndefOr[scala.Boolean | MediaTrackConstraints] = js.undefined
 }
 object MediaStreamConstraints {
@@ -28,6 +34,10 @@ object MediaStreamConstraints {
     inline def setPeerIdentity(value: java.lang.String): Self = StObject.set(x, "peerIdentity", value.asInstanceOf[js.Any])
     
     inline def setPeerIdentityUndefined: Self = StObject.set(x, "peerIdentity", js.undefined)
+    
+    inline def setPreferCurrentTab(value: scala.Boolean): Self = StObject.set(x, "preferCurrentTab", value.asInstanceOf[js.Any])
+    
+    inline def setPreferCurrentTabUndefined: Self = StObject.set(x, "preferCurrentTab", js.undefined)
     
     inline def setVideo(value: scala.Boolean | MediaTrackConstraints): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     

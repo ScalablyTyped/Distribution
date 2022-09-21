@@ -3,7 +3,6 @@ package typings.reactNative
 import typings.reactNative.mod.AccessibilityActionName
 import typings.reactNative.mod.AccessibilityChangeEventName
 import typings.reactNative.mod.AccessibilityRole
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AlertType
 import typings.reactNative.mod.Animated.ExtrapolateType
 import typings.reactNative.mod.Animated.NonAnimatedProps
@@ -19,6 +18,8 @@ import typings.reactNative.mod.KeyboardEventEasing
 import typings.reactNative.mod.KeyboardEventName
 import typings.reactNative.mod.KeyboardType
 import typings.reactNative.mod.KeyboardTypeIOS
+import typings.reactNative.mod.LayoutAnimationProperty
+import typings.reactNative.mod.LayoutAnimationType
 import typings.reactNative.mod.Permission
 import typings.reactNative.mod.PermissionStatus
 import typings.reactNative.mod.PlatformOSType
@@ -99,6 +100,10 @@ object reactNativeStrings {
   @js.native
   sealed trait AnimatedProps extends StObject
   inline def AnimatedProps: AnimatedProps = "AnimatedProps".asInstanceOf[AnimatedProps]
+  
+  @js.native
+  sealed trait Color extends StObject
+  inline def Color: Color = "Color".asInstanceOf[Color]
   
   @js.native
   sealed trait Dragging extends StObject
@@ -266,7 +271,6 @@ object reactNativeStrings {
   sealed trait adjustable
     extends StObject
        with AccessibilityRole
-       with AccessibilityTrait
   inline def adjustable: adjustable = "adjustable".asInstanceOf[adjustable]
   
   @js.native
@@ -282,12 +286,6 @@ object reactNativeStrings {
   inline def all_ : all_ = "all".asInstanceOf[all_]
   
   @js.native
-  sealed trait allowsDirectInteraction
-    extends StObject
-       with AccessibilityTrait
-  inline def allowsDirectInteraction: allowsDirectInteraction = "allowsDirectInteraction".asInstanceOf[allowsDirectInteraction]
-  
-  @js.native
   sealed trait always extends StObject
   inline def always: always = "always".asInstanceOf[always]
   
@@ -296,6 +294,18 @@ object reactNativeStrings {
     extends StObject
        with PlatformOSType
   inline def android: android = "android".asInstanceOf[android]
+  
+  @js.native
+  sealed trait androidDotpermissionDotACCEPT_HANDOVER
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotACCEPT_HANDOVER: androidDotpermissionDotACCEPT_HANDOVER = "android.permission.ACCEPT_HANDOVER".asInstanceOf[androidDotpermissionDotACCEPT_HANDOVER]
+  
+  @js.native
+  sealed trait androidDotpermissionDotACCESS_BACKGROUND_LOCATION
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotACCESS_BACKGROUND_LOCATION: androidDotpermissionDotACCESS_BACKGROUND_LOCATION = "android.permission.ACCESS_BACKGROUND_LOCATION".asInstanceOf[androidDotpermissionDotACCESS_BACKGROUND_LOCATION]
   
   @js.native
   sealed trait androidDotpermissionDotACCESS_COARSE_LOCATION
@@ -310,10 +320,52 @@ object reactNativeStrings {
   inline def androidDotpermissionDotACCESS_FINE_LOCATION: androidDotpermissionDotACCESS_FINE_LOCATION = "android.permission.ACCESS_FINE_LOCATION".asInstanceOf[androidDotpermissionDotACCESS_FINE_LOCATION]
   
   @js.native
+  sealed trait androidDotpermissionDotACCESS_MEDIA_LOCATION
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotACCESS_MEDIA_LOCATION: androidDotpermissionDotACCESS_MEDIA_LOCATION = "android.permission.ACCESS_MEDIA_LOCATION".asInstanceOf[androidDotpermissionDotACCESS_MEDIA_LOCATION]
+  
+  @js.native
+  sealed trait androidDotpermissionDotACTIVITY_RECOGNITION
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotACTIVITY_RECOGNITION: androidDotpermissionDotACTIVITY_RECOGNITION = "android.permission.ACTIVITY_RECOGNITION".asInstanceOf[androidDotpermissionDotACTIVITY_RECOGNITION]
+  
+  @js.native
+  sealed trait androidDotpermissionDotANSWER_PHONE_CALLS
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotANSWER_PHONE_CALLS: androidDotpermissionDotANSWER_PHONE_CALLS = "android.permission.ANSWER_PHONE_CALLS".asInstanceOf[androidDotpermissionDotANSWER_PHONE_CALLS]
+  
+  @js.native
+  sealed trait androidDotpermissionDotBLUETOOTH_ADVERTISE
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotBLUETOOTH_ADVERTISE: androidDotpermissionDotBLUETOOTH_ADVERTISE = "android.permission.BLUETOOTH_ADVERTISE".asInstanceOf[androidDotpermissionDotBLUETOOTH_ADVERTISE]
+  
+  @js.native
+  sealed trait androidDotpermissionDotBLUETOOTH_CONNECT
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotBLUETOOTH_CONNECT: androidDotpermissionDotBLUETOOTH_CONNECT = "android.permission.BLUETOOTH_CONNECT".asInstanceOf[androidDotpermissionDotBLUETOOTH_CONNECT]
+  
+  @js.native
+  sealed trait androidDotpermissionDotBLUETOOTH_SCAN
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotBLUETOOTH_SCAN: androidDotpermissionDotBLUETOOTH_SCAN = "android.permission.BLUETOOTH_SCAN".asInstanceOf[androidDotpermissionDotBLUETOOTH_SCAN]
+  
+  @js.native
   sealed trait androidDotpermissionDotBODY_SENSORS
     extends StObject
        with Permission
   inline def androidDotpermissionDotBODY_SENSORS: androidDotpermissionDotBODY_SENSORS = "android.permission.BODY_SENSORS".asInstanceOf[androidDotpermissionDotBODY_SENSORS]
+  
+  @js.native
+  sealed trait androidDotpermissionDotBODY_SENSORS_BACKGROUND
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotBODY_SENSORS_BACKGROUND: androidDotpermissionDotBODY_SENSORS_BACKGROUND = "android.permission.BODY_SENSORS_BACKGROUND".asInstanceOf[androidDotpermissionDotBODY_SENSORS_BACKGROUND]
   
   @js.native
   sealed trait androidDotpermissionDotCALL_PHONE
@@ -332,6 +384,18 @@ object reactNativeStrings {
     extends StObject
        with Permission
   inline def androidDotpermissionDotGET_ACCOUNTS: androidDotpermissionDotGET_ACCOUNTS = "android.permission.GET_ACCOUNTS".asInstanceOf[androidDotpermissionDotGET_ACCOUNTS]
+  
+  @js.native
+  sealed trait androidDotpermissionDotNEARBY_WIFI_DEVICES
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotNEARBY_WIFI_DEVICES: androidDotpermissionDotNEARBY_WIFI_DEVICES = "android.permission.NEARBY_WIFI_DEVICES".asInstanceOf[androidDotpermissionDotNEARBY_WIFI_DEVICES]
+  
+  @js.native
+  sealed trait androidDotpermissionDotPOST_NOTIFICATIONS
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotPOST_NOTIFICATIONS: androidDotpermissionDotPOST_NOTIFICATIONS = "android.permission.POST_NOTIFICATIONS".asInstanceOf[androidDotpermissionDotPOST_NOTIFICATIONS]
   
   @js.native
   sealed trait androidDotpermissionDotPROCESS_OUTGOING_CALLS
@@ -362,6 +426,30 @@ object reactNativeStrings {
     extends StObject
        with Permission
   inline def androidDotpermissionDotREAD_EXTERNAL_STORAGE: androidDotpermissionDotREAD_EXTERNAL_STORAGE = "android.permission.READ_EXTERNAL_STORAGE".asInstanceOf[androidDotpermissionDotREAD_EXTERNAL_STORAGE]
+  
+  @js.native
+  sealed trait androidDotpermissionDotREAD_MEDIA_AUDIO
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotREAD_MEDIA_AUDIO: androidDotpermissionDotREAD_MEDIA_AUDIO = "android.permission.READ_MEDIA_AUDIO".asInstanceOf[androidDotpermissionDotREAD_MEDIA_AUDIO]
+  
+  @js.native
+  sealed trait androidDotpermissionDotREAD_MEDIA_IMAGES
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotREAD_MEDIA_IMAGES: androidDotpermissionDotREAD_MEDIA_IMAGES = "android.permission.READ_MEDIA_IMAGES".asInstanceOf[androidDotpermissionDotREAD_MEDIA_IMAGES]
+  
+  @js.native
+  sealed trait androidDotpermissionDotREAD_MEDIA_VIDEO
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotREAD_MEDIA_VIDEO: androidDotpermissionDotREAD_MEDIA_VIDEO = "android.permission.READ_MEDIA_VIDEO".asInstanceOf[androidDotpermissionDotREAD_MEDIA_VIDEO]
+  
+  @js.native
+  sealed trait androidDotpermissionDotREAD_PHONE_NUMBERS
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotREAD_PHONE_NUMBERS: androidDotpermissionDotREAD_PHONE_NUMBERS = "android.permission.READ_PHONE_NUMBERS".asInstanceOf[androidDotpermissionDotREAD_PHONE_NUMBERS]
   
   @js.native
   sealed trait androidDotpermissionDotREAD_PHONE_STATE
@@ -410,6 +498,12 @@ object reactNativeStrings {
     extends StObject
        with Permission
   inline def androidDotpermissionDotUSE_SIP: androidDotpermissionDotUSE_SIP = "android.permission.USE_SIP".asInstanceOf[androidDotpermissionDotUSE_SIP]
+  
+  @js.native
+  sealed trait androidDotpermissionDotUWB_RANGING
+    extends StObject
+       with Permission
+  inline def androidDotpermissionDotUWB_RANGING: androidDotpermissionDotUWB_RANGING = "android.permission.UWB_RANGING".asInstanceOf[androidDotpermissionDotUWB_RANGING]
   
   @js.native
   sealed trait androidDotpermissionDotWRITE_CALENDAR
@@ -490,8 +584,20 @@ object reactNativeStrings {
   inline def basic: basic = "basic".asInstanceOf[basic]
   
   @js.native
-  sealed trait bevel extends StObject
-  inline def bevel: bevel = "bevel".asInstanceOf[bevel]
+  sealed trait `birthdate-day` extends StObject
+  inline def `birthdate-day`: `birthdate-day` = "birthdate-day".asInstanceOf[`birthdate-day`]
+  
+  @js.native
+  sealed trait `birthdate-full` extends StObject
+  inline def `birthdate-full`: `birthdate-full` = "birthdate-full".asInstanceOf[`birthdate-full`]
+  
+  @js.native
+  sealed trait `birthdate-month` extends StObject
+  inline def `birthdate-month`: `birthdate-month` = "birthdate-month".asInstanceOf[`birthdate-month`]
+  
+  @js.native
+  sealed trait `birthdate-year` extends StObject
+  inline def `birthdate-year`: `birthdate-year` = "birthdate-year".asInstanceOf[`birthdate-year`]
   
   @js.native
   sealed trait black extends StObject
@@ -536,14 +642,9 @@ object reactNativeStrings {
   inline def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
   
   @js.native
-  sealed trait butt extends StObject
-  inline def butt: butt = "butt".asInstanceOf[butt]
-  
-  @js.native
   sealed trait button
     extends StObject
        with AccessibilityRole
-       with AccessibilityTrait
   inline def button: button = "button".asInstanceOf[button]
   
   @js.native
@@ -565,12 +666,20 @@ object reactNativeStrings {
   inline def capitalize: capitalize = "capitalize".asInstanceOf[capitalize]
   
   @js.native
+  sealed trait car extends StObject
+  inline def car: car = "car".asInstanceOf[car]
+  
+  @js.native
   sealed trait `cc-csc` extends StObject
   inline def `cc-csc`: `cc-csc` = "cc-csc".asInstanceOf[`cc-csc`]
   
   @js.native
   sealed trait `cc-exp` extends StObject
   inline def `cc-exp`: `cc-exp` = "cc-exp".asInstanceOf[`cc-exp`]
+  
+  @js.native
+  sealed trait `cc-exp-day` extends StObject
+  inline def `cc-exp-day`: `cc-exp-day` = "cc-exp-day".asInstanceOf[`cc-exp-day`]
   
   @js.native
   sealed trait `cc-exp-month` extends StObject
@@ -623,6 +732,10 @@ object reactNativeStrings {
   inline def clock: clock = "clock".asInstanceOf[clock]
   
   @js.native
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
+  
+  @js.native
   sealed trait column extends StObject
   inline def column: column = "column".asInstanceOf[column]
   
@@ -637,10 +750,26 @@ object reactNativeStrings {
   inline def comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL: comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL = "com.android.voicemail.permission.ADD_VOICEMAIL".asInstanceOf[comDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL]
   
   @js.native
+  sealed trait comDotandroidDotvoicemailDotpermissionDotREAD_VOICEMAIL
+    extends StObject
+       with Permission
+  inline def comDotandroidDotvoicemailDotpermissionDotREAD_VOICEMAIL: comDotandroidDotvoicemailDotpermissionDotREAD_VOICEMAIL = "com.android.voicemail.permission.READ_VOICEMAIL".asInstanceOf[comDotandroidDotvoicemailDotpermissionDotREAD_VOICEMAIL]
+  
+  @js.native
+  sealed trait comDotandroidDotvoicemailDotpermissionDotWRITE_VOICEMAIL
+    extends StObject
+       with Permission
+  inline def comDotandroidDotvoicemailDotpermissionDotWRITE_VOICEMAIL: comDotandroidDotvoicemailDotpermissionDotWRITE_VOICEMAIL = "com.android.voicemail.permission.WRITE_VOICEMAIL".asInstanceOf[comDotandroidDotvoicemailDotpermissionDotWRITE_VOICEMAIL]
+  
+  @js.native
   sealed trait combobox
     extends StObject
        with AccessibilityRole
   inline def combobox: combobox = "combobox".asInstanceOf[combobox]
+  
+  @js.native
+  sealed trait compact extends StObject
+  inline def compact: compact = "compact".asInstanceOf[compact]
   
   @js.native
   sealed trait contacts extends StObject
@@ -728,18 +857,12 @@ object reactNativeStrings {
   inline def denied: denied = "denied".asInstanceOf[denied]
   
   @js.native
+  sealed trait desk extends StObject
+  inline def desk: desk = "desk".asInstanceOf[desk]
+  
+  @js.native
   sealed trait destructive extends StObject
   inline def destructive: destructive = "destructive".asInstanceOf[destructive]
-  
-  @js.native
-  sealed trait dialog extends StObject
-  inline def dialog: dialog = "dialog".asInstanceOf[dialog]
-  
-  @js.native
-  sealed trait disabled
-    extends StObject
-       with AccessibilityTrait
-  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
   sealed trait disk extends StObject
@@ -779,25 +902,24 @@ object reactNativeStrings {
   inline def downloads: downloads = "downloads".asInstanceOf[downloads]
   
   @js.native
-  sealed trait dropdown extends StObject
-  inline def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
-  
-  @js.native
   sealed trait easeIn
     extends StObject
        with KeyboardEventEasing
+       with LayoutAnimationType
   inline def easeIn: easeIn = "easeIn".asInstanceOf[easeIn]
   
   @js.native
   sealed trait easeInEaseOut
     extends StObject
        with KeyboardEventEasing
+       with LayoutAnimationType
   inline def easeInEaseOut: easeInEaseOut = "easeInEaseOut".asInstanceOf[easeInEaseOut]
   
   @js.native
   sealed trait easeOut
     extends StObject
        with KeyboardEventEasing
+       with LayoutAnimationType
   inline def easeOut: easeOut = "easeOut".asInstanceOf[easeOut]
   
   @js.native
@@ -906,10 +1028,8 @@ object reactNativeStrings {
   inline def formSheet: formSheet = "formSheet".asInstanceOf[formSheet]
   
   @js.native
-  sealed trait frequentUpdates
-    extends StObject
-       with AccessibilityTrait
-  inline def frequentUpdates: frequentUpdates = "frequentUpdates".asInstanceOf[frequentUpdates]
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
   sealed trait fullScreen extends StObject
@@ -918,6 +1038,10 @@ object reactNativeStrings {
   @js.native
   sealed trait fullStreetAddress extends StObject
   inline def fullStreetAddress: fullStreetAddress = "fullStreetAddress".asInstanceOf[fullStreetAddress]
+  
+  @js.native
+  sealed trait gender extends StObject
+  inline def gender: gender = "gender".asInstanceOf[gender]
   
   @js.native
   sealed trait getDerivedStateFromError extends StObject
@@ -973,7 +1097,6 @@ object reactNativeStrings {
   sealed trait header
     extends StObject
        with AccessibilityRole
-       with AccessibilityTrait
   inline def header: header = "header".asInstanceOf[header]
   
   @js.native
@@ -997,20 +1120,19 @@ object reactNativeStrings {
   inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
+  sealed trait iOS extends StObject
+  inline def iOS: iOS = "iOS".asInstanceOf[iOS]
+  
+  @js.native
   sealed trait identity
     extends StObject
        with ExtrapolateType
   inline def identity: identity = "identity".asInstanceOf[identity]
   
   @js.native
-  sealed trait ifRoom extends StObject
-  inline def ifRoom: ifRoom = "ifRoom".asInstanceOf[ifRoom]
-  
-  @js.native
   sealed trait image
     extends StObject
        with AccessibilityRole
-       with AccessibilityTrait
   inline def image: image = "image".asInstanceOf[image]
   
   @js.native
@@ -1042,6 +1164,10 @@ object reactNativeStrings {
   inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
+  sealed trait `inline` extends StObject
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @js.native
   sealed trait interactive extends StObject
   inline def interactive: interactive = "interactive".asInstanceOf[interactive]
   
@@ -1052,10 +1178,10 @@ object reactNativeStrings {
   inline def invertColorsChanged: invertColorsChanged = "invertColorsChanged".asInstanceOf[invertColorsChanged]
   
   @js.native
-  sealed trait ios
+  sealed trait ios_
     extends StObject
        with PlatformOSType
-  inline def ios: ios = "ios".asInstanceOf[ios]
+  inline def ios_ : ios_ = "ios".asInstanceOf[ios_]
   
   @js.native
   sealed trait italic extends StObject
@@ -1089,7 +1215,6 @@ object reactNativeStrings {
   @js.native
   sealed trait key
     extends StObject
-       with AccessibilityTrait
        with NonAnimatedProps
   inline def key: key = "key".asInstanceOf[key]
   
@@ -1097,6 +1222,7 @@ object reactNativeStrings {
   sealed trait keyboard
     extends StObject
        with KeyboardEventEasing
+       with LayoutAnimationType
   inline def keyboard: keyboard = "keyboard".asInstanceOf[keyboard]
   
   @js.native
@@ -1185,6 +1311,7 @@ object reactNativeStrings {
   sealed trait linear
     extends StObject
        with KeyboardEventEasing
+       with LayoutAnimationType
   inline def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
@@ -1197,9 +1324,14 @@ object reactNativeStrings {
   sealed trait link
     extends StObject
        with AccessibilityRole
-       with AccessibilityTrait
        with DataDetectorTypes
   inline def link: link = "link".asInstanceOf[link]
+  
+  @js.native
+  sealed trait list
+    extends StObject
+       with AccessibilityRole
+  inline def list: list = "list".asInstanceOf[list]
   
   @js.native
   sealed trait load extends StObject
@@ -1292,6 +1424,10 @@ object reactNativeStrings {
   inline def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
   
   @js.native
+  sealed trait message extends StObject
+  inline def message: message = "message".asInstanceOf[message]
+  
+  @js.native
   sealed trait middle extends StObject
   inline def middle: middle = "middle".asInstanceOf[middle]
   
@@ -1302,10 +1438,6 @@ object reactNativeStrings {
   @js.native
   sealed trait minute extends StObject
   inline def minute: minute = "minute".asInstanceOf[minute]
-  
-  @js.native
-  sealed trait miter extends StObject
-  inline def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
   sealed trait mixed extends StObject
@@ -1332,10 +1464,34 @@ object reactNativeStrings {
   inline def name: name = "name".asInstanceOf[name]
   
   @js.native
+  sealed trait `name-family` extends StObject
+  inline def `name-family`: `name-family` = "name-family".asInstanceOf[`name-family`]
+  
+  @js.native
+  sealed trait `name-given` extends StObject
+  inline def `name-given`: `name-given` = "name-given".asInstanceOf[`name-given`]
+  
+  @js.native
+  sealed trait `name-middle` extends StObject
+  inline def `name-middle`: `name-middle` = "name-middle".asInstanceOf[`name-middle`]
+  
+  @js.native
+  sealed trait `name-middle-initial` extends StObject
+  inline def `name-middle-initial`: `name-middle-initial` = "name-middle-initial".asInstanceOf[`name-middle-initial`]
+  
+  @js.native
   sealed trait `name-phone-pad`
     extends StObject
        with KeyboardTypeIOS
   inline def `name-phone-pad`: `name-phone-pad` = "name-phone-pad".asInstanceOf[`name-phone-pad`]
+  
+  @js.native
+  sealed trait `name-prefix` extends StObject
+  inline def `name-prefix`: `name-prefix` = "name-prefix".asInstanceOf[`name-prefix`]
+  
+  @js.native
+  sealed trait `name-suffix` extends StObject
+  inline def `name-suffix`: `name-suffix` = "name-suffix".asInstanceOf[`name-suffix`]
   
   @js.native
   sealed trait namePrefix extends StObject
@@ -1404,7 +1560,6 @@ object reactNativeStrings {
   sealed trait none
     extends StObject
        with AccessibilityRole
-       with AccessibilityTrait
        with DataDetectorTypes
        with ReturnKeyTypeAndroid
        with ReturnKeyTypeOptions
@@ -1472,6 +1627,12 @@ object reactNativeStrings {
   inline def `only-if-cached`: `only-if-cached` = "only-if-cached".asInstanceOf[`only-if-cached`]
   
   @js.native
+  sealed trait opacity
+    extends StObject
+       with LayoutAnimationProperty
+  inline def opacity: opacity = "opacity".asInstanceOf[opacity]
+  
+  @js.native
   sealed trait opaque
     extends StObject
        with ResponseType
@@ -1482,6 +1643,10 @@ object reactNativeStrings {
     extends StObject
        with ResponseType
   inline def opaqueredirect: opaqueredirect = "opaqueredirect".asInstanceOf[opaqueredirect]
+  
+  @js.native
+  sealed trait open extends StObject
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
   sealed trait organizationName extends StObject
@@ -1500,14 +1665,12 @@ object reactNativeStrings {
   inline def pageSheet: pageSheet = "pageSheet".asInstanceOf[pageSheet]
   
   @js.native
-  sealed trait pageTurn
-    extends StObject
-       with AccessibilityTrait
-  inline def pageTurn: pageTurn = "pageTurn".asInstanceOf[pageTurn]
-  
-  @js.native
   sealed trait password extends StObject
   inline def password: password = "password".asInstanceOf[password]
+  
+  @js.native
+  sealed trait `password-new` extends StObject
+  inline def `password-new`: `password-new` = "password-new".asInstanceOf[`password-new`]
   
   @js.native
   sealed trait `phone-pad`
@@ -1532,12 +1695,6 @@ object reactNativeStrings {
   inline def `plain-text`: `plain-text` = "plain-text".asInstanceOf[`plain-text`]
   
   @js.native
-  sealed trait plays
-    extends StObject
-       with AccessibilityTrait
-  inline def plays: plays = "plays".asInstanceOf[plays]
-  
-  @js.native
   sealed trait png extends StObject
   inline def png: png = "png".asInstanceOf[png]
   
@@ -1556,6 +1713,30 @@ object reactNativeStrings {
   @js.native
   sealed trait position extends StObject
   inline def position: position = "position".asInstanceOf[position]
+  
+  @js.native
+  sealed trait `postal-address` extends StObject
+  inline def `postal-address`: `postal-address` = "postal-address".asInstanceOf[`postal-address`]
+  
+  @js.native
+  sealed trait `postal-address-country` extends StObject
+  inline def `postal-address-country`: `postal-address-country` = "postal-address-country".asInstanceOf[`postal-address-country`]
+  
+  @js.native
+  sealed trait `postal-address-extended` extends StObject
+  inline def `postal-address-extended`: `postal-address-extended` = "postal-address-extended".asInstanceOf[`postal-address-extended`]
+  
+  @js.native
+  sealed trait `postal-address-extended-postal-code` extends StObject
+  inline def `postal-address-extended-postal-code`: `postal-address-extended-postal-code` = "postal-address-extended-postal-code".asInstanceOf[`postal-address-extended-postal-code`]
+  
+  @js.native
+  sealed trait `postal-address-locality` extends StObject
+  inline def `postal-address-locality`: `postal-address-locality` = "postal-address-locality".asInstanceOf[`postal-address-locality`]
+  
+  @js.native
+  sealed trait `postal-address-region` extends StObject
+  inline def `postal-address-region`: `postal-address-region` = "postal-address-region".asInstanceOf[`postal-address-region`]
   
   @js.native
   sealed trait `postal-code` extends StObject
@@ -1597,14 +1778,6 @@ object reactNativeStrings {
     extends StObject
        with AccessibilityRole
   inline def radio: radio = "radio".asInstanceOf[radio]
-  
-  @js.native
-  sealed trait radiobutton_checked extends StObject
-  inline def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
-  
-  @js.native
-  sealed trait radiobutton_unchecked extends StObject
-  inline def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
   
   @js.native
   sealed trait radiogroup
@@ -1673,10 +1846,6 @@ object reactNativeStrings {
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait round extends StObject
-  inline def round: round = "round".asInstanceOf[round]
-  
-  @js.native
   sealed trait route
     extends StObject
        with ReturnKeyTypeIOS
@@ -1707,6 +1876,24 @@ object reactNativeStrings {
   inline def scale: scale = "scale".asInstanceOf[scale]
   
   @js.native
+  sealed trait scaleX
+    extends StObject
+       with LayoutAnimationProperty
+  inline def scaleX: scaleX = "scaleX".asInstanceOf[scaleX]
+  
+  @js.native
+  sealed trait scaleXY
+    extends StObject
+       with LayoutAnimationProperty
+  inline def scaleXY: scaleXY = "scaleXY".asInstanceOf[scaleXY]
+  
+  @js.native
+  sealed trait scaleY
+    extends StObject
+       with LayoutAnimationProperty
+  inline def scaleY: scaleY = "scaleY".asInstanceOf[scaleY]
+  
+  @js.native
   sealed trait screen extends StObject
   inline def screen: screen = "screen".asInstanceOf[screen]
   
@@ -1734,7 +1921,6 @@ object reactNativeStrings {
   sealed trait search
     extends StObject
        with AccessibilityRole
-       with AccessibilityTrait
        with ReturnKeyType
        with ReturnKeyTypeOptions
   inline def search: search = "search".asInstanceOf[search]
@@ -1744,12 +1930,6 @@ object reactNativeStrings {
     extends StObject
        with AlertType
   inline def `secure-text`: `secure-text` = "secure-text".asInstanceOf[`secure-text`]
-  
-  @js.native
-  sealed trait selected
-    extends StObject
-       with AccessibilityTrait
-  inline def selected: selected = "selected".asInstanceOf[selected]
   
   @js.native
   sealed trait send
@@ -1787,6 +1967,10 @@ object reactNativeStrings {
   inline def small_ : small_ = "small".asInstanceOf[small_]
   
   @js.native
+  sealed trait `sms-otp` extends StObject
+  inline def `sms-otp`: `sms-otp` = "sms-otp".asInstanceOf[`sms-otp`]
+  
+  @js.native
   sealed trait solid extends StObject
   inline def solid: solid = "solid".asInstanceOf[solid]
   
@@ -1813,18 +1997,14 @@ object reactNativeStrings {
   inline def spinner: spinner = "spinner".asInstanceOf[spinner]
   
   @js.native
-  sealed trait square extends StObject
-  inline def square: square = "square".asInstanceOf[square]
+  sealed trait spring
+    extends StObject
+       with LayoutAnimationType
+  inline def spring: spring = "spring".asInstanceOf[spring]
   
   @js.native
   sealed trait start extends StObject
   inline def start: start = "start".asInstanceOf[start]
-  
-  @js.native
-  sealed trait startsMedia
-    extends StObject
-       with AccessibilityTrait
-  inline def startsMedia: startsMedia = "startsMedia".asInstanceOf[startsMedia]
   
   @js.native
   sealed trait `street-address` extends StObject
@@ -1853,7 +2033,6 @@ object reactNativeStrings {
   sealed trait summary
     extends StObject
        with AccessibilityRole
-       with AccessibilityTrait
   inline def summary: summary = "summary".asInstanceOf[summary]
   
   @js.native
@@ -1867,6 +2046,12 @@ object reactNativeStrings {
     extends StObject
        with AccessibilityRole
   inline def tab: tab = "tab".asInstanceOf[tab]
+  
+  @js.native
+  sealed trait tabbar
+    extends StObject
+       with AccessibilityRole
+  inline def tabbar: tabbar = "tabbar".asInstanceOf[tabbar]
   
   @js.native
   sealed trait tablist
@@ -1889,6 +2074,18 @@ object reactNativeStrings {
   inline def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
+  sealed trait `tel-country-code` extends StObject
+  inline def `tel-country-code`: `tel-country-code` = "tel-country-code".asInstanceOf[`tel-country-code`]
+  
+  @js.native
+  sealed trait `tel-device` extends StObject
+  inline def `tel-device`: `tel-device` = "tel-device".asInstanceOf[`tel-device`]
+  
+  @js.native
+  sealed trait `tel-national` extends StObject
+  inline def `tel-national`: `tel-national` = "tel-national".asInstanceOf[`tel-national`]
+  
+  @js.native
   sealed trait telephoneNumber extends StObject
   inline def telephoneNumber: telephoneNumber = "telephoneNumber".asInstanceOf[telephoneNumber]
   
@@ -1896,7 +2093,6 @@ object reactNativeStrings {
   sealed trait text
     extends StObject
        with AccessibilityRole
-       with AccessibilityTrait
        with XMLHttpRequestResponseType
   inline def text: text = "text".asInstanceOf[text]
   
@@ -1919,6 +2115,12 @@ object reactNativeStrings {
   inline def timer: timer = "timer".asInstanceOf[timer]
   
   @js.native
+  sealed trait togglebutton
+    extends StObject
+       with AccessibilityRole
+  inline def togglebutton: togglebutton = "togglebutton".asInstanceOf[togglebutton]
+  
+  @js.native
   sealed trait toolbar
     extends StObject
        with AccessibilityRole
@@ -1935,6 +2137,10 @@ object reactNativeStrings {
   @js.native
   sealed trait trailing extends StObject
   inline def trailing: trailing = "trailing".asInstanceOf[trailing]
+  
+  @js.native
+  sealed trait tv extends StObject
+  inline def tv: tv = "tv".asInstanceOf[tv]
   
   @js.native
   sealed trait twitter
@@ -1965,6 +2171,10 @@ object reactNativeStrings {
   inline def unlocked: unlocked = "unlocked".asInstanceOf[unlocked]
   
   @js.native
+  sealed trait unspecified extends StObject
+  inline def unspecified: unspecified = "unspecified".asInstanceOf[unspecified]
+  
+  @js.native
   sealed trait uppercase extends StObject
   inline def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
   
@@ -1979,6 +2189,10 @@ object reactNativeStrings {
   inline def username: username = "username".asInstanceOf[username]
   
   @js.native
+  sealed trait `username-new` extends StObject
+  inline def `username-new`: `username-new` = "username-new".asInstanceOf[`username-new`]
+  
+  @js.native
   sealed trait video extends StObject
   inline def video: video = "video".asInstanceOf[video]
   
@@ -1989,6 +2203,10 @@ object reactNativeStrings {
   @js.native
   sealed trait `visible-password` extends StObject
   inline def `visible-password`: `visible-password` = "visible-password".asInstanceOf[`visible-password`]
+  
+  @js.native
+  sealed trait watch extends StObject
+  inline def watch: watch = "watch".asInstanceOf[watch]
   
   @js.native
   sealed trait web

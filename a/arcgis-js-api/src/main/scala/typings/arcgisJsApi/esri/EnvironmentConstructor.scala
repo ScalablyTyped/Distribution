@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EnvironmentConstructor
   extends StObject
-     with Instantiable0[Environment]
+     with /**
+  * Represents settings that affect the environment in which the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html) is displayed (such as lighting).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Environment.html)
+  */
+Instantiable0[Environment]
      with Instantiable1[/* properties */ EnvironmentProperties, Environment]

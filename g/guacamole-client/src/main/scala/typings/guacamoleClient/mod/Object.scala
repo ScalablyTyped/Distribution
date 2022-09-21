@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "Object")
 @js.native
-class Object protected ()
+open class Object protected ()
   extends typings.guacamoleClient.objectMod.Object {
   /**
     * @param client The client owning this object.

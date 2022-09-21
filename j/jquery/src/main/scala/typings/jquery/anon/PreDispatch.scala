@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PreDispatch[TTarget]
   extends StObject
-     with _SpecialEventHook[TTarget, js.Any] {
+     with _SpecialEventHook[TTarget, Any] {
   
   def preDispatch(event: Event): `false` | Unit
 }

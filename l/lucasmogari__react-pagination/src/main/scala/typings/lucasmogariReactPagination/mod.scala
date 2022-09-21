@@ -110,7 +110,7 @@ object mod {
     
     var arrows: js.UndefOr[Boolean] = js.undefined
     
-    def getPageItemProps(parameters: js.Any*): Unit
+    def getPageItemProps(parameters: Any*): Unit
     
     var itemsPerPage: Double
     
@@ -124,7 +124,7 @@ object mod {
   }
   object UseNavigationParameters {
     
-    inline def apply(getPageItemProps: /* repeated */ js.Any => Unit, itemsPerPage: Double, totalItems: Double): UseNavigationParameters = {
+    inline def apply(getPageItemProps: /* repeated */ Any => Unit, itemsPerPage: Double, totalItems: Double): UseNavigationParameters = {
       val __obj = js.Dynamic.literal(getPageItemProps = js.Any.fromFunction1(getPageItemProps), itemsPerPage = itemsPerPage.asInstanceOf[js.Any], totalItems = totalItems.asInstanceOf[js.Any])
       __obj.asInstanceOf[UseNavigationParameters]
     }
@@ -135,7 +135,7 @@ object mod {
       
       inline def setArrowsUndefined: Self = StObject.set(x, "arrows", js.undefined)
       
-      inline def setGetPageItemProps(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "getPageItemProps", js.Any.fromFunction1(value))
+      inline def setGetPageItemProps(value: /* repeated */ Any => Unit): Self = StObject.set(x, "getPageItemProps", js.Any.fromFunction1(value))
       
       inline def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
       

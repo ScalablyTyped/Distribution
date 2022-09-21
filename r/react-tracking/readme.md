@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-tracking
 
-Typings are for version 7.0
+Typings are for version 8.1
 
 ## Library description:
 Declarative tracking for React apps.
@@ -10,10 +10,10 @@ Declarative tracking for React apps.
 | ------------------ | :-------------: |
 | Full name          | react-tracking |
 | Keywords           | declarative, layer, metrics, nyt, react, tracking |
-| # releases         | 17 |
-| # dependents       | 9 |
-| # downloads        | 761538 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 113452.33333333333 |
+| # stars            | 1651.0 |
 
 ## Links
 - [Homepage](https://github.com/nytimes/react-tracking)

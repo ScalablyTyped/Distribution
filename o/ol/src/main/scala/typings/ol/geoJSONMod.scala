@@ -21,7 +21,7 @@ object geoJSONMod {
   
   @JSImport("ol/format/GeoJSON", JSImport.Default)
   @js.native
-  class default () extends GeoJSON {
+  open class default () extends GeoJSON {
     def this(opt_options: Options) = this()
   }
   
@@ -39,7 +39,7 @@ object geoJSONMod {
   
   type GeoJSONGeometry = Geometry
   
-  type GeoJSONGeometryCollection = GeometryCollection
+  type GeoJSONGeometryCollection = GeometryCollection[Geometry]
   
   type GeoJSONLineString = LineString
   

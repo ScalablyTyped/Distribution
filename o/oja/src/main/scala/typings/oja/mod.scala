@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("oja", "Action")
   @js.native
-  class Action () extends Flow {
+  open class Action () extends Flow {
     
     def activate(): this.type = js.native
     
@@ -23,19 +23,19 @@ object mod {
   
   @JSImport("oja", "EventContext")
   @js.native
-  class EventContext protected () extends StObject {
+  open class EventContext protected () extends StObject {
     def this(context: js.Object) = this()
     def this(context: EventContext) = this()
     
-    def emit(name: String, value: js.Any): this.type = js.native
+    def emit(name: String, value: Any): this.type = js.native
     
-    def get(name: String): js.Any = js.native
+    def get(name: String): Any = js.native
     
-    def on(`type`: String, handler: js.Function1[/* event */ js.Any, Unit]): this.type = js.native
+    def on(`type`: String, handler: js.Function1[/* event */ Any, Unit]): this.type = js.native
     
-    def once(`type`: String, handler: js.Function1[/* event */ js.Any, Unit]): this.type = js.native
+    def once(`type`: String, handler: js.Function1[/* event */ Any, Unit]): this.type = js.native
     
-    def repub(`type`: String, handler: js.Function1[/* event */ js.Any, Unit]): Unit = js.native
+    def repub(`type`: String, handler: js.Function1[/* event */ Any, Unit]): Unit = js.native
     
     def stageContext(topics: String): StageContext = js.native
     def stageContext(topics: js.Array[String]): StageContext = js.native
@@ -45,12 +45,12 @@ object mod {
   
   @JSImport("oja", "Flow")
   @js.native
-  class Flow () extends StObject {
+  open class Flow () extends StObject {
     def this(baseFlow: Flow) = this()
     
-    def `catch`(callback: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def `catch`(callback: js.Function1[/* err */ Any, Unit]): this.type = js.native
     
-    def consume(topic: String): js.Promise[js.Any] = js.native
+    def consume(topic: String): js.Promise[Any] = js.native
     def consume(topic: String, callback: ConsumerCallback): this.type = js.native
     def consume(topic: js.Array[String], callback: ConsumerCallback): this.type = js.native
     def consume(topics: js.Array[String]): js.Promise[StringDictionary[String]] = js.native
@@ -75,32 +75,32 @@ object mod {
   
   @JSImport("oja", "FunctionAction")
   @js.native
-  class FunctionAction protected () extends Action {
-    def this(callback: js.Function1[/* runtime */ FunctionAction, js.Any]) = this()
+  open class FunctionAction protected () extends Action {
+    def this(callback: js.Function1[/* runtime */ FunctionAction, Any]) = this()
   }
   
   @JSImport("oja", "ReadableStream")
   @js.native
-  class ReadableStream protected () extends Readable {
+  open class ReadableStream protected () extends Readable {
     def this(topic: String, emitter: EventEmitter) = this()
   }
   
   @JSImport("oja", "StageContext")
   @js.native
-  class StageContext protected () extends EventContext {
+  open class StageContext protected () extends EventContext {
     def this(context: js.Object) = this()
     def this(context: EventContext) = this()
     
-    def pub(data: js.Any): Unit = js.native
+    def pub(data: Any): Unit = js.native
   }
   
   type AddableFunction = js.Function1[/* runtime */ Flow, Unit]
   
   type AddableToAction = Action | AddableFunction
   
-  type ConsumerCallback = js.Function2[/* payload */ js.Any, /* runtime */ Flow, Unit]
+  type ConsumerCallback = js.Function2[/* payload */ Any, /* runtime */ Flow, Unit]
   
-  type DefinitionFunction = js.Function2[/* publisher */ StageContext, /* runtime */ Flow, js.Any]
+  type DefinitionFunction = js.Function2[/* publisher */ StageContext, /* runtime */ Flow, Any]
   
   type Primitive = js.UndefOr[Boolean | Double | String | js.Symbol | Null]
   
@@ -121,11 +121,11 @@ object mod {
       
       inline def setPending(value: js.Array[String]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      inline def setPendingVarargs(value: String*): Self = StObject.set(x, "pending", js.Array(value :_*))
+      inline def setPendingVarargs(value: String*): Self = StObject.set(x, "pending", js.Array(value*))
       
       inline def setQueue(value: js.Array[String]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      inline def setQueueVarargs(value: String*): Self = StObject.set(x, "queue", js.Array(value :_*))
+      inline def setQueueVarargs(value: String*): Self = StObject.set(x, "queue", js.Array(value*))
     }
   }
 }

@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BwEstimate extends StObject {
   
-  var bitrates: js.Any
+  var bitrates: Any
   
   var bwEstimate: Double
   
-  var currentBitrate: js.Any
+  var currentBitrate: Any
   
   var deliveryPriority: MediaStreamDeliveryPriority
   
@@ -27,9 +27,9 @@ trait BwEstimate extends StObject {
 object BwEstimate {
   
   inline def apply(
-    bitrates: js.Any,
+    bitrates: Any,
     bwEstimate: Double,
-    currentBitrate: js.Any,
+    currentBitrate: Any,
     deliveryPriority: MediaStreamDeliveryPriority,
     nearestBufferSegInfo: End,
     overallBufferLength: Double,
@@ -43,11 +43,11 @@ object BwEstimate {
   
   extension [Self <: BwEstimate](x: Self) {
     
-    inline def setBitrates(value: js.Any): Self = StObject.set(x, "bitrates", value.asInstanceOf[js.Any])
+    inline def setBitrates(value: Any): Self = StObject.set(x, "bitrates", value.asInstanceOf[js.Any])
     
     inline def setBwEstimate(value: Double): Self = StObject.set(x, "bwEstimate", value.asInstanceOf[js.Any])
     
-    inline def setCurrentBitrate(value: js.Any): Self = StObject.set(x, "currentBitrate", value.asInstanceOf[js.Any])
+    inline def setCurrentBitrate(value: Any): Self = StObject.set(x, "currentBitrate", value.asInstanceOf[js.Any])
     
     inline def setDeliveryPriority(value: MediaStreamDeliveryPriority): Self = StObject.set(x, "deliveryPriority", value.asInstanceOf[js.Any])
     

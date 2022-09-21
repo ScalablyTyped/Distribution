@@ -10,10 +10,10 @@ Browser SDK for Amazon DynamoDB
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/client-dynamodb-browser |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 0 |
-| # downloads        | 915 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 47.666666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fclient-dynamodb-browser)

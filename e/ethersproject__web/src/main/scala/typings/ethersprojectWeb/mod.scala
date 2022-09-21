@@ -3,7 +3,7 @@ package typings.ethersprojectWeb
 import org.scalablytyped.runtime.StringDictionary
 import typings.ethersprojectWeb.ethersprojectWebStrings.block
 import typings.ethersprojectWeb.ethersprojectWebStrings.poll
-import typings.std.Uint8Array
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,54 +15,54 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def fetchData[T](connection: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def fetchData[T](connection: String, body: js.typedarray.Uint8Array): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def fetchData[T](
+    connection: String,
+    body: js.typedarray.Uint8Array,
+    processFunc: js.Function2[/* value */ js.typedarray.Uint8Array, /* response */ FetchJsonResponse, T]
+  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   inline def fetchData[T](
     connection: String,
     body: Unit,
-    processFunc: js.Function2[/* value */ Uint8Array, /* response */ FetchJsonResponse, T]
-  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  inline def fetchData[T](connection: String, body: Uint8Array): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  inline def fetchData[T](
-    connection: String,
-    body: Uint8Array,
-    processFunc: js.Function2[/* value */ Uint8Array, /* response */ FetchJsonResponse, T]
+    processFunc: js.Function2[/* value */ js.typedarray.Uint8Array, /* response */ FetchJsonResponse, T]
   ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   inline def fetchData[T](connection: ConnectionInfo): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def fetchData[T](connection: ConnectionInfo, body: js.typedarray.Uint8Array): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def fetchData[T](
+    connection: ConnectionInfo,
+    body: js.typedarray.Uint8Array,
+    processFunc: js.Function2[/* value */ js.typedarray.Uint8Array, /* response */ FetchJsonResponse, T]
+  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   inline def fetchData[T](
     connection: ConnectionInfo,
     body: Unit,
-    processFunc: js.Function2[/* value */ Uint8Array, /* response */ FetchJsonResponse, T]
-  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  inline def fetchData[T](connection: ConnectionInfo, body: Uint8Array): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  inline def fetchData[T](
-    connection: ConnectionInfo,
-    body: Uint8Array,
-    processFunc: js.Function2[/* value */ Uint8Array, /* response */ FetchJsonResponse, T]
+    processFunc: js.Function2[/* value */ js.typedarray.Uint8Array, /* response */ FetchJsonResponse, T]
   ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("_fetchData")(connection.asInstanceOf[js.Any], body.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  inline def fetchJson(connection: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  inline def fetchJson(connection: String, json: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def fetchJson(connection: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def fetchJson(connection: String, json: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def fetchJson(
     connection: String,
     json: String,
-    processFunc: js.Function2[/* value */ js.Any, /* response */ FetchJsonResponse, js.Any]
-  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    processFunc: js.Function2[/* value */ Any, /* response */ FetchJsonResponse, Any]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def fetchJson(
     connection: String,
     json: Unit,
-    processFunc: js.Function2[/* value */ js.Any, /* response */ FetchJsonResponse, js.Any]
-  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def fetchJson(connection: ConnectionInfo): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  inline def fetchJson(connection: ConnectionInfo, json: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    processFunc: js.Function2[/* value */ Any, /* response */ FetchJsonResponse, Any]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def fetchJson(connection: ConnectionInfo): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def fetchJson(connection: ConnectionInfo, json: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def fetchJson(
     connection: ConnectionInfo,
     json: String,
-    processFunc: js.Function2[/* value */ js.Any, /* response */ FetchJsonResponse, js.Any]
-  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    processFunc: js.Function2[/* value */ Any, /* response */ FetchJsonResponse, Any]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   inline def fetchJson(
     connection: ConnectionInfo,
     json: Unit,
-    processFunc: js.Function2[/* value */ js.Any, /* response */ FetchJsonResponse, js.Any]
-  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    processFunc: js.Function2[/* value */ Any, /* response */ FetchJsonResponse, Any]
+  ): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchJson")(connection.asInstanceOf[js.Any], json.asInstanceOf[js.Any], processFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   inline def poll[T](func: js.Function0[js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("poll")(func.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   inline def poll[T](func: js.Function0[js.Promise[T]], options: PollOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("poll")(func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
@@ -73,9 +73,15 @@ object mod {
     
     var allowInsecureAuthentication: js.UndefOr[Boolean] = js.undefined
     
+    var errorPassThrough: js.UndefOr[Boolean] = js.undefined
+    
+    var fetchOptions: js.UndefOr[Record[String, String]] = js.undefined
+    
     var headers: js.UndefOr[StringDictionary[String | Double]] = js.undefined
     
     var password: js.UndefOr[String] = js.undefined
+    
+    var skipFetchSetup: js.UndefOr[Boolean] = js.undefined
     
     var throttleCallback: js.UndefOr[js.Function2[/* attempt */ Double, /* url */ String, js.Promise[Boolean]]] = js.undefined
     
@@ -106,6 +112,14 @@ object mod {
       
       inline def setAllowInsecureAuthenticationUndefined: Self = StObject.set(x, "allowInsecureAuthentication", js.undefined)
       
+      inline def setErrorPassThrough(value: Boolean): Self = StObject.set(x, "errorPassThrough", value.asInstanceOf[js.Any])
+      
+      inline def setErrorPassThroughUndefined: Self = StObject.set(x, "errorPassThrough", js.undefined)
+      
+      inline def setFetchOptions(value: Record[String, String]): Self = StObject.set(x, "fetchOptions", value.asInstanceOf[js.Any])
+      
+      inline def setFetchOptionsUndefined: Self = StObject.set(x, "fetchOptions", js.undefined)
+      
       inline def setHeaders(value: StringDictionary[String | Double]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
@@ -113,6 +127,10 @@ object mod {
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
       inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      
+      inline def setSkipFetchSetup(value: Boolean): Self = StObject.set(x, "skipFetchSetup", value.asInstanceOf[js.Any])
+      
+      inline def setSkipFetchSetupUndefined: Self = StObject.set(x, "skipFetchSetup", js.undefined)
       
       inline def setThrottleCallback(value: (/* attempt */ Double, /* url */ String) => js.Promise[Boolean]): Self = StObject.set(x, "throttleCallback", js.Any.fromFunction2(value))
       

@@ -10,10 +10,10 @@ object rotate90DegreesCcwMod {
   
   @JSImport("material-ui/svg-icons/image/rotate-90-degrees-ccw", JSImport.Default)
   @js.native
-  class default () extends ImageRotate90DegreesCcw
+  open class default () extends ImageRotate90DegreesCcw
   
   @JSImport("material-ui/svg-icons/image/rotate-90-degrees-ccw", "ImageRotate90DegreesCcw")
   @js.native
-  class ImageRotate90DegreesCcw ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageRotate90DegreesCcw ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

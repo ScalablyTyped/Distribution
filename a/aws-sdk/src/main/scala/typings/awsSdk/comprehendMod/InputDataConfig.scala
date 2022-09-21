@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InputDataConfig extends StObject {
   
   /**
+    * The document reader config field applies only for InputDataConfig of StartEntitiesDetectionJob.  Use DocumentReaderConfig to provide specifications about how you want your inference documents read. Currently it applies for PDF documents in StartEntitiesDetectionJob custom inference.
+    */
+  var DocumentReaderConfig: js.UndefOr[typings.awsSdk.comprehendMod.DocumentReaderConfig] = js.undefined
+  
+  /**
     * Specifies how the text in an input file should be processed:    ONE_DOC_PER_FILE - Each file is considered a separate document. Use this option when you are processing large documents, such as newspaper articles or scientific papers.    ONE_DOC_PER_LINE - Each line in a file is considered a separate document. Use this option when you are processing many short documents, such as text messages.  
     */
   var InputFormat: js.UndefOr[typings.awsSdk.comprehendMod.InputFormat] = js.undefined
@@ -24,6 +29,10 @@ object InputDataConfig {
   }
   
   extension [Self <: InputDataConfig](x: Self) {
+    
+    inline def setDocumentReaderConfig(value: DocumentReaderConfig): Self = StObject.set(x, "DocumentReaderConfig", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentReaderConfigUndefined: Self = StObject.set(x, "DocumentReaderConfig", js.undefined)
     
     inline def setInputFormat(value: InputFormat): Self = StObject.set(x, "InputFormat", value.asInstanceOf[js.Any])
     

@@ -7,25 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Content API for Shopping
-  *
-  * Manages product items, inventory, and Merchant Center accounts for Google
-  * Shopping.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const content = google.content('v2');
-  *
-  * @namespace content
-  * @type {Function}
-  * @version v2
-  * @variation v2
-  * @param {object=} options Options for Content
-  */
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Content")
 @js.native
-class Content protected () extends StObject {
+open class Content protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   
@@ -41,13 +25,9 @@ class Content protected () extends StObject {
   
   var datafeedstatuses: ResourceDatafeedstatuses = js.native
   
-  var inventory: ResourceInventory = js.native
-  
   var liasettings: ResourceLiasettings = js.native
   
   var orderinvoices: ResourceOrderinvoices = js.native
-  
-  var orderpayments: ResourceOrderpayments = js.native
   
   var orderreports: ResourceOrderreports = js.native
   

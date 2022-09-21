@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js/lib/core", "SessionDialog")
 @js.native
-class SessionDialog protected ()
+open class SessionDialog protected ()
   extends typings.sipJs.dialogsMod.SessionDialog {
   def this(
     initialTransaction: typings.sipJs.transactionsMod.InviteClientTransaction,

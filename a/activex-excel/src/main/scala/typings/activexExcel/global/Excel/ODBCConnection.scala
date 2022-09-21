@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ODBCConnection")
 @js.native
-/* private */ class ODBCConnection ()
+/* private */ open class ODBCConnection ()
   extends StObject
      with typings.activexExcel.Excel.ODBCConnection

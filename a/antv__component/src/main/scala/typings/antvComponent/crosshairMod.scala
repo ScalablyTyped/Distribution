@@ -15,16 +15,16 @@ object crosshairMod {
   
   @JSImport("@antv/component/lib/crosshair", "Circle")
   @js.native
-  class Circle ()
+  open class Circle ()
     extends typings.antvComponent.crosshairCircleMod.default
   
   @JSImport("@antv/component/lib/crosshair", "Html")
   @js.native
-  class Html[T /* <: HtmlCrossHairCfg */] ()
+  open class Html[T /* <: HtmlCrossHairCfg */] ()
     extends typings.antvComponent.crosshairHtmlMod.default[T]
   
   @JSImport("@antv/component/lib/crosshair", "Line")
   @js.native
-  class Line ()
+  open class Line ()
     extends typings.antvComponent.crosshairLineMod.default
 }

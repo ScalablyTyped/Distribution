@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "ScaleBlock")
 @js.native
-class ScaleBlock protected ()
+open class ScaleBlock protected ()
   extends typings.babylonjs.nodeIndexMod.ScaleBlock {
   /**
     * Creates a new ScaleBlock

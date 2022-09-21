@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HangoutsChatOptions extends StObject {
   
-  /** Set to true to include rooms. */
+  /** For searches by account or organizational unit, set to **true** to include rooms. */
   var includeRooms: js.UndefOr[Boolean] = js.undefined
 }
 object HangoutsChatOptions {

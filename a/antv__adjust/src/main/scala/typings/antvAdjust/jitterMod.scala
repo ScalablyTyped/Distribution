@@ -8,14 +8,14 @@ object jitterMod {
   
   @JSImport("@antv/adjust/lib/adjusts/jitter", JSImport.Default)
   @js.native
-  class default () extends Jitter
+  open class default () extends Jitter
   
   @js.native
   trait Jitter
     extends typings.antvAdjust.adjustMod.default {
     
-    /* private */ var adjustGroup: js.Any = js.native
+    /* private */ var adjustGroup: Any = js.native
     
-    /* private */ var getAdjustOffset: js.Any = js.native
+    /* private */ var getAdjustOffset: Any = js.native
   }
 }

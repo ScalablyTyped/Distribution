@@ -1,7 +1,7 @@
 
 # Scala.js typings for clsx
 
-Typings are for version 1.1.1
+Typings are for version 1.2.1
 
 ## Library description:
 A tiny (228B) utility for constructing className strings conditionally.
@@ -10,10 +10,10 @@ A tiny (228B) utility for constructing className strings conditionally.
 | ------------------ | :-------------: |
 | Full name          | clsx |
 | Keywords           | classes, classname, classnames |
-| # releases         | 10 |
-| # dependents       | 791 |
-| # downloads        | 65724199 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.701825E7 |
+| # stars            | 3367.0 |
 
 ## Links
 - [Homepage](https://github.com/lukeed/clsx#readme)

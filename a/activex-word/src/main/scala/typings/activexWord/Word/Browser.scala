@@ -12,7 +12,7 @@ trait Browser extends StObject {
   
   def Next(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Previous(): Unit
   
@@ -27,7 +27,7 @@ object Browser {
     Application: Application,
     Creator: Double,
     Next: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     Previous: () => Unit,
     Target: WdBrowseTarget,
     WordDotBrowser_typekey: Browser
@@ -45,7 +45,7 @@ object Browser {
     
     inline def setNext(value: () => Unit): Self = StObject.set(x, "Next", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPrevious(value: () => Unit): Self = StObject.set(x, "Previous", js.Any.fromFunction0(value))
     

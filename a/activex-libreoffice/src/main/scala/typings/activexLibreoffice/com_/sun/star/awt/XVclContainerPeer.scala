@@ -22,17 +22,17 @@ trait XVclContainerPeer
   def setGroup(Windows: SeqEquiv[XWindow]): Unit
   
   /** sets the tab order. */
-  def setTabOrder(WindowOrder: SeqEquiv[XWindow], Tabs: SeqEquiv[js.Any], GroupControl: Boolean): Unit
+  def setTabOrder(WindowOrder: SeqEquiv[XWindow], Tabs: SeqEquiv[Any], GroupControl: Boolean): Unit
 }
 object XVclContainerPeer {
   
   inline def apply(
     acquire: () => Unit,
     enableDialogControl: Boolean => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setGroup: SeqEquiv[XWindow] => Unit,
-    setTabOrder: (SeqEquiv[XWindow], SeqEquiv[js.Any], Boolean) => Unit
+    setTabOrder: (SeqEquiv[XWindow], SeqEquiv[Any], Boolean) => Unit
   ): XVclContainerPeer = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), enableDialogControl = js.Any.fromFunction1(enableDialogControl), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setGroup = js.Any.fromFunction1(setGroup), setTabOrder = js.Any.fromFunction3(setTabOrder))
     __obj.asInstanceOf[XVclContainerPeer]
@@ -44,6 +44,6 @@ object XVclContainerPeer {
     
     inline def setSetGroup(value: SeqEquiv[XWindow] => Unit): Self = StObject.set(x, "setGroup", js.Any.fromFunction1(value))
     
-    inline def setSetTabOrder(value: (SeqEquiv[XWindow], SeqEquiv[js.Any], Boolean) => Unit): Self = StObject.set(x, "setTabOrder", js.Any.fromFunction3(value))
+    inline def setSetTabOrder(value: (SeqEquiv[XWindow], SeqEquiv[Any], Boolean) => Unit): Self = StObject.set(x, "setTabOrder", js.Any.fromFunction3(value))
   }
 }

@@ -12,14 +12,14 @@ object sourceMod {
   
   @JSImport("vega-lite/build/src/compile/data/source", "SourceNode")
   @js.native
-  class SourceNode protected () extends DataFlowNode {
+  open class SourceNode protected () extends DataFlowNode {
     def this(data: Data) = this()
     
-    /* private */ var _data: js.Any = js.native
+    /* private */ var _data: Any = js.native
     
-    /* private */ var _generator: js.Any = js.native
+    /* private */ var _generator: Any = js.native
     
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _name: Any = js.native
     
     def assemble(): VgData = js.native
     

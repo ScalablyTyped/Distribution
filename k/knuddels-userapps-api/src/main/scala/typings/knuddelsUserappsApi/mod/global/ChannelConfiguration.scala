@@ -5,19 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-	 * @see https://developer.knuddels.de/docs/classes/ChannelConfiguration.html
-	 */
+  * @see https://developer.knuddels.de/docs/classes/ChannelConfiguration.html
+  */
 @JSGlobal("ChannelConfiguration")
 @js.native
-class ChannelConfiguration () extends StObject {
+open class ChannelConfiguration () extends StObject {
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/ChannelConfiguration.html#method_getChannelInformation
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/ChannelConfiguration.html#method_getChannelInformation
+    */
   def getChannelInformation(): ChannelInformation = js.native
   
   /**
-  		 * @see https://developer.knuddels.de/docs/classes/ChannelConfiguration.html#method_getChannelRights
-  		 */
+    * @see https://developer.knuddels.de/docs/classes/ChannelConfiguration.html#method_getChannelRights
+    */
   def getChannelRights(): ChannelRights = js.native
 }

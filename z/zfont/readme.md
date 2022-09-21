@@ -10,10 +10,10 @@ Text plugin for Zdog
 | ------------------ | :-------------: |
 | Full name          | zfont |
 | Keywords           | zdog, 3d, font, text, truetype, ttf |
-| # releases         | 12 |
-| # dependents       | 0 |
-| # downloads        | 3138 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 124.33333333333333 |
+| # stars            | 147.0 |
 
 ## Links
 - [Homepage](https://github.com/jaames/zfont)

@@ -64,11 +64,11 @@ object anon {
     
     var result: TOptions
     
-    var set: js.Any
+    var set: Any
   }
   object Result {
     
-    inline def apply[TOptions](result: TOptions, set: js.Any): Result[TOptions] = {
+    inline def apply[TOptions](result: TOptions, set: Any): Result[TOptions] = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result[TOptions]]
     }
@@ -77,7 +77,7 @@ object anon {
       
       inline def setResult(value: TOptions): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      inline def setSet(value: js.Any): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      inline def setSet(value: Any): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,7 +94,7 @@ object anon {
     
     inline def apply[TOptions](
       result: TOptions,
-      set: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: TOptions[TProperty] */ js.Any) => Result[TOptions]
+      set: (Any, /* import warning: importer.ImportType#apply Failed type conversion: TOptions[TProperty] */ js.Any) => Result[TOptions]
     ): Set[TOptions] = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[Set[TOptions]]
@@ -105,7 +105,7 @@ object anon {
       inline def setResult(value: TOptions): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setSet(
-        value: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: TOptions[TProperty] */ js.Any) => Result[TOptions]
+        value: (Any, /* import warning: importer.ImportType#apply Failed type conversion: TOptions[TProperty] */ js.Any) => Result[TOptions]
       ): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }

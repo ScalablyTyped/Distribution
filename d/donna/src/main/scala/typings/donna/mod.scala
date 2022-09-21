@@ -19,20 +19,20 @@ object mod {
     
     trait File extends StObject {
       
-      var exports: js.Any
+      var exports: Any
       
       var objects: NumberDictionary[Line]
     }
     object File {
       
-      inline def apply(exports: js.Any, objects: NumberDictionary[Line]): File = {
+      inline def apply(exports: Any, objects: NumberDictionary[Line]): File = {
         val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any])
         __obj.asInstanceOf[File]
       }
       
       extension [Self <: File](x: Self) {
         
-        inline def setExports(value: js.Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+        inline def setExports(value: Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
         
         inline def setObjects(value: NumberDictionary[Line]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       }
@@ -61,7 +61,7 @@ object mod {
       
       var bindingType: String
       
-      var classProperties: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var classProperties: js.UndefOr[js.Array[Any]] = js.undefined
       
       var doc: js.UndefOr[String] = js.undefined
       
@@ -87,11 +87,11 @@ object mod {
         
         inline def setBindingType(value: String): Self = StObject.set(x, "bindingType", value.asInstanceOf[js.Any])
         
-        inline def setClassProperties(value: js.Array[js.Any]): Self = StObject.set(x, "classProperties", value.asInstanceOf[js.Any])
+        inline def setClassProperties(value: js.Array[Any]): Self = StObject.set(x, "classProperties", value.asInstanceOf[js.Any])
         
         inline def setClassPropertiesUndefined: Self = StObject.set(x, "classProperties", js.undefined)
         
-        inline def setClassPropertiesVarargs(value: js.Any*): Self = StObject.set(x, "classProperties", js.Array(value :_*))
+        inline def setClassPropertiesVarargs(value: Any*): Self = StObject.set(x, "classProperties", js.Array(value*))
         
         inline def setDoc(value: String): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
         
@@ -103,17 +103,17 @@ object mod {
         
         inline def setParamNamesUndefined: Self = StObject.set(x, "paramNames", js.undefined)
         
-        inline def setParamNamesVarargs(value: String*): Self = StObject.set(x, "paramNames", js.Array(value :_*))
+        inline def setParamNamesVarargs(value: String*): Self = StObject.set(x, "paramNames", js.Array(value*))
         
         inline def setPrototypeProperties(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "prototypeProperties", value.asInstanceOf[js.Any])
         
         inline def setPrototypePropertiesUndefined: Self = StObject.set(x, "prototypeProperties", js.undefined)
         
-        inline def setPrototypePropertiesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "prototypeProperties", js.Array(value :_*))
+        inline def setPrototypePropertiesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "prototypeProperties", js.Array(value*))
         
         inline def setRange(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
-        inline def setRangeVarargs(value: js.Array[Double]*): Self = StObject.set(x, "range", js.Array(value :_*))
+        inline def setRangeVarargs(value: js.Array[Double]*): Self = StObject.set(x, "range", js.Array(value*))
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }

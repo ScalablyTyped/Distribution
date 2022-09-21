@@ -13,7 +13,7 @@ trait DataTable extends StObject {
     * A two-dimensional array of data without the sheet or column metadata.
     * The first array index is the row index and the second array index is the column index.
     */
-  def getData(): js.Array[js.Any]
+  def getData(): js.Array[Any]
   
   /** Whether the data is summary data or underlying data. Returns true for summary data. */
   def getIsSummaryData(): Boolean
@@ -28,7 +28,7 @@ object DataTable {
   
   inline def apply(
     getColumns: () => js.Array[Column],
-    getData: () => js.Array[js.Any],
+    getData: () => js.Array[Any],
     getIsSummaryData: () => Boolean,
     getName: () => String,
     getTotalRowCount: () => Double
@@ -41,7 +41,7 @@ object DataTable {
     
     inline def setGetColumns(value: () => js.Array[Column]): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     
-    inline def setGetData(value: () => js.Array[js.Any]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => js.Array[Any]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     inline def setGetIsSummaryData(value: () => Boolean): Self = StObject.set(x, "getIsSummaryData", js.Any.fromFunction0(value))
     

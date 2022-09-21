@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The ImageVersions in a project and location.
-  */
 trait SchemaListImageVersionsResponse extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaListImageVersionsResponse extends StObject {
   /**
     * The page token used to query for the next page if one exists.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListImageVersionsResponse {
   
@@ -32,9 +29,11 @@ object SchemaListImageVersionsResponse {
     
     inline def setImageVersionsUndefined: Self = StObject.set(x, "imageVersions", js.undefined)
     
-    inline def setImageVersionsVarargs(value: SchemaImageVersion*): Self = StObject.set(x, "imageVersions", js.Array(value :_*))
+    inline def setImageVersionsVarargs(value: SchemaImageVersion*): Self = StObject.set(x, "imageVersions", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

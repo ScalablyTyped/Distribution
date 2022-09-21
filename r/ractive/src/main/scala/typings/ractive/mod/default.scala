@@ -1,6 +1,8 @@
 package typings.ractive.mod
 
 import typings.ractive.anon.Instantiable
+import typings.ractive.anon.ReadonlyArrayExtendOptsan
+import typings.ractive.ractiveBooleans.`false`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ractive", JSImport.Default)
 @js.native
-class default[T /* <: Ractive[T] */] () extends Ractive[T] {
+open class default[T /* <: Ractive[T] */] () extends Ractive[T] {
   def this(opts: InitOpts[T]) = this()
 }
 /* static members */
@@ -21,7 +23,7 @@ object default {
   /* was `typeof ContextHelper` */
   @JSImport("ractive", "default.Context")
   @js.native
-  class Context ()
+  open class Context ()
     extends typings.ractive.mod.Ractive.Context
   
   /** When true, causes Ractive to emit warnings. Defaults to true. */
@@ -38,8 +40,8 @@ object default {
   /** The parent constructor used to create this constructor. */
   @JSImport("ractive", "default.Parent")
   @js.native
-  def Parent: Static[Ractive[Ractive[js.Any]]] = js.native
-  inline def Parent_=(x: Static[Ractive[Ractive[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parent")(x.asInstanceOf[js.Any])
+  def Parent: Static[Ractive[Ractive[Any]]] = js.native
+  inline def Parent_=(x: Static[Ractive[Ractive[Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parent")(x.asInstanceOf[js.Any])
   
   /** The Ractive constructor used to create this constructor. */
   @JSImport("ractive", "default.Ractive")
@@ -47,9 +49,16 @@ object default {
   def Ractive: Instantiable = js.native
   inline def Ractive_=(x: Instantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ractive")(x.asInstanceOf[js.Any])
   
+  /** The build version of Ractive. */
   @JSImport("ractive", "default.VERSION")
   @js.native
   val VERSION: String = js.native
+  
+  /** Setting this to false will prevent Ractive from printing a welcome console message when the first instance is created. */
+  @JSImport("ractive", "default.WELCOME_MESSAGE")
+  @js.native
+  def WELCOME_MESSAGE: js.UndefOr[`false`] = js.native
+  inline def WELCOME_MESSAGE_=(x: js.UndefOr[`false`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WELCOME_MESSAGE")(x.asInstanceOf[js.Any])
   
   @JSImport("ractive", "default.adaptors")
   @js.native
@@ -70,14 +79,14 @@ object default {
   
   @JSImport("ractive", "default.decorators")
   @js.native
-  def decorators: Registry[Decorator[Ractive[Ractive[js.Any]]]] = js.native
-  inline def decorators_=(x: Registry[Decorator[Ractive[Ractive[js.Any]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
+  def decorators: Registry[Decorator[Ractive[Ractive[Any]]]] = js.native
+  inline def decorators_=(x: Registry[Decorator[Ractive[Ractive[Any]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
   
   /** The registries that are inherited by all instance. */
   @JSImport("ractive", "default.defaults")
   @js.native
-  def defaults: Registries[Ractive[Ractive[js.Any]]] = js.native
-  inline def defaults_=(x: Registries[Ractive[Ractive[js.Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
+  def defaults: Registries[Ractive[Ractive[Any]]] = js.native
+  inline def defaults_=(x: Registries[Ractive[Ractive[Any]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
   
   @JSImport("ractive", "default.easings")
   @js.native
@@ -89,16 +98,19 @@ object default {
   
   @JSImport("ractive", "default.events")
   @js.native
-  def events: Registry[EventPlugin[Ractive[Ractive[js.Any]]]] = js.native
-  inline def events_=(x: Registry[EventPlugin[Ractive[Ractive[js.Any]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
+  def events: Registry[EventPlugin[Ractive[Ractive[Any]]]] = js.native
+  inline def events_=(x: Registry[EventPlugin[Ractive[Ractive[Any]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("events")(x.asInstanceOf[js.Any])
   
   /** Create a new component with this constructor as a starting point. */
-  inline def extend[U](): Static[Ractive[Ractive[Ractive[js.Any]] & U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[Static[Ractive[Ractive[Ractive[js.Any]] & U]]]
-  inline def extend[U](opts: ExtendOpts[Ractive[Ractive[js.Any]] & U]): Static[Ractive[Ractive[Ractive[js.Any]] & U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(opts.asInstanceOf[js.Any]).asInstanceOf[Static[Ractive[Ractive[Ractive[js.Any]] & U]]]
+  inline def extend(): Static[Ractive[Ractive[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[Static[Ractive[Ractive[Any]]]]
+  inline def extend[T /* <: ExtendOpts[Any] & ValueMap */, U /* <: ReadonlyArrayExtendOptsan */](
+    opts: T,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param more because its type U is not an array type */ more: U
+  ): Static[Ractive[Ractive[Any]] & (Merge[T, U, ExtendOpts[Ractive[Ractive[Any]]]])] = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(opts.asInstanceOf[js.Any], more.asInstanceOf[js.Any])).asInstanceOf[Static[Ractive[Ractive[Any]] & (Merge[T, U, ExtendOpts[Ractive[Ractive[Any]]]])]]
   
-  /** Create a new component with this constuuctor as a starting point using the given constructor. */
-  inline def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V]): Static[Ractive[Ractive[Ractive[js.Any]] & U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("extendWith")(c.asInstanceOf[js.Any]).asInstanceOf[Static[Ractive[Ractive[Ractive[js.Any]] & U]]]
-  inline def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V], opts: W): Static[Ractive[Ractive[Ractive[js.Any]] & U]] = (^.asInstanceOf[js.Dynamic].applyDynamic("extendWith")(c.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Static[Ractive[Ractive[Ractive[js.Any]] & U]]]
+  /** Create a new component with this constructor as a starting point using the given constructor. */
+  inline def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V]): Static[Ractive[U] & U] = ^.asInstanceOf[js.Dynamic].applyDynamic("extendWith")(c.asInstanceOf[js.Any]).asInstanceOf[Static[Ractive[U] & U]]
+  inline def extendWith[U /* <: Ractive[U] */, V /* <: InitOpts[U] */, W /* <: ExtendOpts[U] */](c: Constructor[U, V], opts: W): Static[Ractive[U] & U] = (^.asInstanceOf[js.Dynamic].applyDynamic("extendWith")(c.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Static[Ractive[U] & U]]
   
   /** Retrieve the CSS string for all loaded components. */
   inline def getCSS(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCSS")().asInstanceOf[String]
@@ -121,10 +133,10 @@ object default {
   inline def interpolators_=(x: Registry[Interpolator]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("interpolators")(x.asInstanceOf[js.Any])
   
   /** @returns true if the given object is an instance of this constructor */
-  inline def isInstance(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInstance(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** Safely join the given keys into a keypath. */
-  inline def joinKeys(keys: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("joinKeys")(keys.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def joinKeys(keys: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("joinKeys")(keys.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
   /**
   	 * Initialize a macro function.
@@ -145,32 +157,51 @@ object default {
   def partials: Registry[Partial] = js.native
   inline def partials_=(x: Registry[Partial]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("partials")(x.asInstanceOf[js.Any])
   
-  /** Get the value at the given keypath from the Ractive shared store. */
-  inline def sharedGet(keypath: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("sharedGet")(keypath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  /** Render component styles in their own style tags rather than in a single shared tag - defaults to false */
+  @JSImport("ractive", "default.perComponentStyleElements")
+  @js.native
+  def perComponentStyleElements: Boolean = js.native
+  inline def perComponentStyleElements_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("perComponentStyleElements")(x.asInstanceOf[js.Any])
   
-  /** Set the given keypath in the Ractive shared store to the given value. */
-  inline def sharedSet(keypath: String, value: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sharedSet")(keypath.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  /** Get the value at the given keypath from the Ractive shared store. */
+  inline def sharedGet[U](keypath: String): U = ^.asInstanceOf[js.Dynamic].applyDynamic("sharedGet")(keypath.asInstanceOf[js.Any]).asInstanceOf[U]
+  
   /** Set the given map of values in the Ractive shared store. */
   inline def sharedSet(map: ValueMap): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("sharedSet")(map.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  /** Set the given keypath in the Ractive shared store to the given value. */
+  inline def sharedSet[U](keypath: String, value: U): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("sharedSet")(keypath.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
   
   /** Split the given keypath into its constituent keys. */
   inline def splitKeypath(keypath: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitKeypath")(keypath.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   /** Get the css data for this constructor at the given keypath. */
-  inline def styleGet(keypath: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("styleGet")(keypath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def styleGet[U](keypath: String): U = ^.asInstanceOf[js.Dynamic].applyDynamic("styleGet")(keypath.asInstanceOf[js.Any]).asInstanceOf[U]
   
-  /** Set the css data for this constructor at the given keypath to the given value. */
-  inline def styleSet(keypath: String, value: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("styleSet")(keypath.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   /** Set the given map of values in the css data for this constructor. */
   inline def styleSet(map: ValueMap): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("styleSet")(map.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  /** Set the css data for this constructor at the given keypath to the given value. */
+  inline def styleSet[U](keypath: String, value: U): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("styleSet")(keypath.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
   
   /** true if Ractive detects that this environment supports svg. */
   @JSImport("ractive", "default.svg")
   @js.native
   val svg: Boolean = js.native
   
+  /**
+  	 * The current operation promise is available to things like observers and decorators using Ractive.tick,
+  	 * which will return undefined if there is not currently an operation in progress.
+  	 */
+  @JSImport("ractive", "default.tick")
+  @js.native
+  val tick: js.UndefOr[js.Promise[Unit]] = js.native
+  
+  @JSImport("ractive", "default.transitions")
+  @js.native
+  def transitions: Registry[Transition] = js.native
+  inline def transitions_=(x: Registry[Transition]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transitions")(x.asInstanceOf[js.Any])
+  
   /** Unescape the given key e.g. 'foo\.bar' becomes 'foo.bar'.k */
   inline def unescapeKey(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeKey")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def use(args: PluginExtend*): Static[Ractive[Ractive[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(args.asInstanceOf[js.Any]).asInstanceOf[Static[Ractive[Ractive[js.Any]]]]
+  inline def use(args: Plugin*): Static[Ractive[Ractive[Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Static[Ractive[Ractive[Any]]]]
 }

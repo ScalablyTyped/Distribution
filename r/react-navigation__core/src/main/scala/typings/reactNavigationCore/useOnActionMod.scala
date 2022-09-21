@@ -41,7 +41,7 @@ object useOnActionMod {
     
     var beforeRemoveListeners: Record[String, js.UndefOr[ChildBeforeRemoveListener]] = js.native
     
-    var emitter: NavigationEventEmitter[EventMapCore[js.Any]] = js.native
+    var emitter: NavigationEventEmitter[EventMapCore[Any]] = js.native
     
     def getState(): NavigationState[ParamListBase] = js.native
     

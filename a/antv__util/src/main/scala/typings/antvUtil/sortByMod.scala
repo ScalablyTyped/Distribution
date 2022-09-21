@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sortByMod {
   
-  @JSImport("@antv/util/lib/sort-by", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/sort-by", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

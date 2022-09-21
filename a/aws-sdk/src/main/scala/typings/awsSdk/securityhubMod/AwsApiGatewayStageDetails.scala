@@ -72,7 +72,7 @@ trait AwsApiGatewayStageDetails extends StObject {
   var StageName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Indicates whether active tracing with AWS X-Ray is enabled for the stage.
+    * Indicates whether active tracing with X-Ray is enabled for the stage.
     */
   var TracingEnabled: js.UndefOr[Boolean] = js.undefined
   
@@ -143,7 +143,7 @@ object AwsApiGatewayStageDetails {
     
     inline def setMethodSettingsUndefined: Self = StObject.set(x, "MethodSettings", js.undefined)
     
-    inline def setMethodSettingsVarargs(value: AwsApiGatewayMethodSettings*): Self = StObject.set(x, "MethodSettings", js.Array(value :_*))
+    inline def setMethodSettingsVarargs(value: AwsApiGatewayMethodSettings*): Self = StObject.set(x, "MethodSettings", js.Array(value*))
     
     inline def setStageName(value: NonEmptyString): Self = StObject.set(x, "StageName", value.asInstanceOf[js.Any])
     

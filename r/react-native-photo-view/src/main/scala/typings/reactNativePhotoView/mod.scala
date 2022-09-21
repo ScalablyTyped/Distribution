@@ -21,10 +21,10 @@ object mod {
   
   @JSImport("react-native-photo-view", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ReactNativePhotoViewProps & ViewProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ReactNativePhotoViewProps & ViewProps, js.Object, Any]
   
-  type ReactNativePhotoView = Component[ReactNativePhotoViewProps & ViewProps, js.Object, js.Any]
+  type ReactNativePhotoView = Component[ReactNativePhotoViewProps & ViewProps, js.Object, Any]
   
   trait ReactNativePhotoViewProps extends StObject {
     
@@ -87,7 +87,7 @@ object mod {
       
       inline def setLoadingIndicatorSourceUndefined: Self = StObject.set(x, "loadingIndicatorSource", js.undefined)
       
-      inline def setLoadingIndicatorSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "loadingIndicatorSource", js.Array(value :_*))
+      inline def setLoadingIndicatorSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "loadingIndicatorSource", js.Array(value*))
       
       inline def setMaximumZoomScale(value: Double): Self = StObject.set(x, "maximumZoomScale", value.asInstanceOf[js.Any])
       
@@ -141,7 +141,7 @@ object mod {
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      inline def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value :_*))
+      inline def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value*))
     }
   }
 }

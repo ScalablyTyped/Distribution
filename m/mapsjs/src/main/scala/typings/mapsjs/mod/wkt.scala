@@ -11,7 +11,7 @@ object wkt {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def parse(wkt: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(wkt.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def parse(wkt: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(wkt.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def parseLineString(wkt: String): geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLineString")(wkt.asInstanceOf[js.Any]).asInstanceOf[geometry]
   

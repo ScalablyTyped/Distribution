@@ -53,7 +53,7 @@ trait AllowAnonLogging extends StObject {
   
   var ratingsCount: js.UndefOr[Double] = js.undefined
   
-  var readingModes: js.UndefOr[js.Any] = js.undefined
+  var readingModes: js.UndefOr[Text] = js.undefined
   
   var samplePageCount: js.UndefOr[Double] = js.undefined
   
@@ -80,7 +80,7 @@ object AllowAnonLogging {
     
     inline def setAuthorsUndefined: Self = StObject.set(x, "authors", js.undefined)
     
-    inline def setAuthorsVarargs(value: String*): Self = StObject.set(x, "authors", js.Array(value :_*))
+    inline def setAuthorsVarargs(value: String*): Self = StObject.set(x, "authors", js.Array(value*))
     
     inline def setAverageRating(value: Double): Self = StObject.set(x, "averageRating", value.asInstanceOf[js.Any])
     
@@ -94,7 +94,7 @@ object AllowAnonLogging {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setComicsContent(value: Boolean): Self = StObject.set(x, "comicsContent", value.asInstanceOf[js.Any])
     
@@ -120,7 +120,7 @@ object AllowAnonLogging {
     
     inline def setIndustryIdentifiersUndefined: Self = StObject.set(x, "industryIdentifiers", js.undefined)
     
-    inline def setIndustryIdentifiersVarargs(value: Identifier*): Self = StObject.set(x, "industryIdentifiers", js.Array(value :_*))
+    inline def setIndustryIdentifiersVarargs(value: Identifier*): Self = StObject.set(x, "industryIdentifiers", js.Array(value*))
     
     inline def setInfoLink(value: String): Self = StObject.set(x, "infoLink", value.asInstanceOf[js.Any])
     
@@ -170,7 +170,7 @@ object AllowAnonLogging {
     
     inline def setRatingsCountUndefined: Self = StObject.set(x, "ratingsCount", js.undefined)
     
-    inline def setReadingModes(value: js.Any): Self = StObject.set(x, "readingModes", value.asInstanceOf[js.Any])
+    inline def setReadingModes(value: Text): Self = StObject.set(x, "readingModes", value.asInstanceOf[js.Any])
     
     inline def setReadingModesUndefined: Self = StObject.set(x, "readingModes", js.undefined)
     

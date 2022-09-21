@@ -1,19 +1,12 @@
 package typings.styledReactModal
 
 import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.TemplateStringsArray
-import typings.styledComponents.styledComponentsMod.AnyStyledComponent
-import typings.styledComponents.styledComponentsMod.CSSObject
-import typings.styledComponents.styledComponentsMod.InterpolationFunction
-import typings.styledComponents.styledComponentsMod.StyledComponent
-import typings.styledReactModal.styledReactModalStrings.div
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,8 +15,8 @@ object mod {
   
   @JSImport("styled-react-modal", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ModalProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ModalProps, js.Object, Any]
   object default {
     
     @JSImport("styled-react-modal", JSImport.Default)
@@ -31,29 +24,30 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def styled(`object`: CSSObject): StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("styled")(`object`.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing]]
-    inline def styled(`object`: InterpolationFunction[js.Any]): StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("styled")(`object`.asInstanceOf[js.Any]).asInstanceOf[StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing]]
+    inline def styled(
+      `object`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSObject */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InterpolationFunction<any> */ Any
+    ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("styled")(`object`.asInstanceOf[js.Any]).asInstanceOf[Any]
     /* static member */
-    inline def styled(strings: TemplateStringsArray, interpolations: js.Any*): StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("styled")(strings.asInstanceOf[js.Any], interpolations.asInstanceOf[js.Any])).asInstanceOf[StyledComponent[ComponentClass[ModalProps, ComponentState], js.Any, js.Object, scala.Nothing]]
+    inline def styled(strings: TemplateStringsArray, interpolations: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("styled")(List(strings.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   }
   
   @JSImport("styled-react-modal", "BaseModalBackground")
   @js.native
-  val BaseModalBackground: StyledComponent[div, js.Any, js.Object, scala.Nothing] = js.native
+  val BaseModalBackground: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StyledComponent<'div', any> */ Any = js.native
   
   @JSImport("styled-react-modal", "ModalProvider")
   @js.native
-  class ModalProvider protected ()
-    extends Component[ModalProviderProps, js.Object, js.Any] {
+  open class ModalProvider protected ()
+    extends Component[ModalProviderProps, js.Object, Any] {
     def this(props: ModalProviderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ModalProviderProps, context: js.Any) = this()
+    def this(props: ModalProviderProps, context: Any) = this()
   }
   
-  type Modal = Component[ModalProps, js.Object, js.Any]
+  type Modal = Component[ModalProps, js.Object, Any]
   
   trait ModalProps extends StObject {
     
@@ -132,7 +126,9 @@ object mod {
   
   trait ModalProviderProps extends StObject {
     
-    var backgroundComponent: js.UndefOr[AnyStyledComponent] = js.undefined
+    var backgroundComponent: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyStyledComponent */ Any
+      ] = js.undefined
     
     var children: ReactNode
   }
@@ -145,7 +141,9 @@ object mod {
     
     extension [Self <: ModalProviderProps](x: Self) {
       
-      inline def setBackgroundComponent(value: AnyStyledComponent): Self = StObject.set(x, "backgroundComponent", value.asInstanceOf[js.Any])
+      inline def setBackgroundComponent(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyStyledComponent */ Any
+      ): Self = StObject.set(x, "backgroundComponent", value.asInstanceOf[js.Any])
       
       inline def setBackgroundComponentUndefined: Self = StObject.set(x, "backgroundComponent", js.undefined)
       

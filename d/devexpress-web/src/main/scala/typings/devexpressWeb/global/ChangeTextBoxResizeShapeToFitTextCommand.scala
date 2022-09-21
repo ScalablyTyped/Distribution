@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeTextBoxResizeShapeToFitTextCommand")
 @js.native
-class ChangeTextBoxResizeShapeToFitTextCommand ()
+open class ChangeTextBoxResizeShapeToFitTextCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeTextBoxResizeShapeToFitTextCommand {
   

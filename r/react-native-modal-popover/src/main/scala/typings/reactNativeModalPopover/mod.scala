@@ -6,15 +6,20 @@ import typings.reactNativeModalPopover.anon.OnPopoverDisplayed
 import typings.reactNativeModalPopover.anon.PartialPopoverProps
 import typings.reactNativeModalPopover.popoverControllerMod.Props
 import typings.reactNativeModalPopover.popoverMod.PopoverProps
+import typings.reactNativeModalPopover.usePopoverMod.UsePopoverHook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("react-native-modal-popover", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("react-native-modal-popover", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.reactNativeModalPopover.popoverMod.Popover {
     def this(props: PopoverProps) = this()
   }
@@ -43,7 +48,7 @@ object mod {
   
   @JSImport("react-native-modal-popover", "Popover")
   @js.native
-  class Popover protected ()
+  open class Popover protected ()
     extends typings.reactNativeModalPopover.popoverMod.Popover {
     def this(props: PopoverProps) = this()
   }
@@ -72,14 +77,14 @@ object mod {
   
   @JSImport("react-native-modal-popover", "PopoverController")
   @js.native
-  class PopoverController protected ()
+  open class PopoverController protected ()
     extends typings.reactNativeModalPopover.popoverControllerMod.PopoverController {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   /* static members */
   object PopoverController {
@@ -96,7 +101,7 @@ object mod {
   
   @JSImport("react-native-modal-popover", "PopoverTouchable")
   @js.native
-  class PopoverTouchable protected ()
+  open class PopoverTouchable protected ()
     extends typings.reactNativeModalPopover.popoverTouchableMod.PopoverTouchable {
     def this(props: typings.reactNativeModalPopover.popoverTouchableMod.Props) = this()
   }
@@ -112,4 +117,7 @@ object mod {
     def propTypes: OnPopoverDisplayed = js.native
     inline def propTypes_=(x: OnPopoverDisplayed): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
+  
+  inline def usePopover(): UsePopoverHook = ^.asInstanceOf[js.Dynamic].applyDynamic("usePopover")().asInstanceOf[UsePopoverHook]
+  inline def usePopover(calculateStatusBar: Boolean): UsePopoverHook = ^.asInstanceOf[js.Dynamic].applyDynamic("usePopover")(calculateStatusBar.asInstanceOf[js.Any]).asInstanceOf[UsePopoverHook]
 }

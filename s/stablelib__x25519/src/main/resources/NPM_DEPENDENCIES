@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@stablelib/x25519" : "1.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@stablelib/x25519" : "1.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -8,15 +8,15 @@ object mutexMod {
   
   @JSImport("browserfs/dist/node/generic/mutex", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Mutex {
     
     /* private */ /* CompleteClass */
-    var _locked: js.Any = js.native
+    var _locked: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _waiters: js.Any = js.native
+    var _waiters: Any = js.native
     
     /* CompleteClass */
     override def isLocked(): Boolean = js.native
@@ -33,9 +33,9 @@ object mutexMod {
   
   trait Mutex extends StObject {
     
-    /* private */ var _locked: js.Any
+    /* private */ var _locked: Any
     
-    /* private */ var _waiters: js.Any
+    /* private */ var _waiters: Any
     
     def isLocked(): Boolean
     
@@ -48,8 +48,8 @@ object mutexMod {
   object Mutex {
     
     inline def apply(
-      _locked: js.Any,
-      _waiters: js.Any,
+      _locked: Any,
+      _waiters: Any,
       isLocked: () => Boolean,
       lock: js.Function => Unit,
       tryLock: () => Boolean,
@@ -69,9 +69,9 @@ object mutexMod {
       
       inline def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
       
-      inline def set_locked(value: js.Any): Self = StObject.set(x, "_locked", value.asInstanceOf[js.Any])
+      inline def set_locked(value: Any): Self = StObject.set(x, "_locked", value.asInstanceOf[js.Any])
       
-      inline def set_waiters(value: js.Any): Self = StObject.set(x, "_waiters", value.asInstanceOf[js.Any])
+      inline def set_waiters(value: Any): Self = StObject.set(x, "_waiters", value.asInstanceOf[js.Any])
     }
   }
 }

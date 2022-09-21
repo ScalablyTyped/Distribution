@@ -17,7 +17,7 @@ object referenceMod {
   
   @JSImport("nodegit/reference", "Reference")
   @js.native
-  class Reference () extends StObject {
+  open class Reference () extends StObject {
     
     def cmp(ref2: Reference): Double = js.native
     
@@ -87,7 +87,7 @@ object referenceMod {
     
     inline def isValidName(refname: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidName")(refname.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    inline def list(repo: Repository): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
+    inline def list(repo: Repository): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any]]]
     
     inline def lookup(repo: Repository, id: String): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
     inline def lookup(repo: Repository, id: String, callback: js.Function): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]

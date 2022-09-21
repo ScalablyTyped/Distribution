@@ -10,10 +10,10 @@ object sliderMod {
   
   @JSImport("material-ui/Slider", JSImport.Default)
   @js.native
-  class default () extends Slider
+  open class default () extends Slider
   
   @JSImport("material-ui/Slider", "Slider")
   @js.native
-  class Slider ()
-    extends Component[SliderProps, js.Object, js.Any]
+  open class Slider ()
+    extends Component[SliderProps, js.Object, Any]
 }

@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.fibers.futureMod.global.Function
 import typings.fibers.futureMod.global.FutureFunction
 import typings.fibers.futureMod.global.FutureObject
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object futureMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("fibers/future", JSImport.Namespace)
   @js.native
-  class Class[T] ()
+  open class Class[T] ()
     extends StObject
        with Future[T]
   
@@ -71,7 +70,7 @@ object futureMod extends Shortcut {
       * of error, and the second is a function(val){} callback.
       */
     def resolve(errback: FutureResolveFunction[T]): this.type = js.native
-    def resolve(future: Future[js.Any], callback: js.Function1[/* val */ T, Unit]): this.type = js.native
+    def resolve(future: Future[Any], callback: js.Function1[/* val */ T, Unit]): this.type = js.native
     
     /**
       * Resolve only in the case of success
@@ -107,7 +106,7 @@ object futureMod extends Shortcut {
       *
       * Example usage: aFuture.throw(new Error("Something borked"))
       */
-    def `throw`(err: Error): Unit = js.native
+    def `throw`(err: js.Error): Unit = js.native
   }
   
   @js.native
@@ -136,7 +135,7 @@ object futureMod extends Shortcut {
       *   // You can safely `wait` on stuff here
       * }).detach();
       */
-    def task[T](fn: js.Function1[/* repeated */ js.Any, T]): Future[T] = js.native
+    def task[T](fn: js.Function1[/* repeated */ Any, T]): Future[T] = js.native
     
     /**
       * Wait on a series of futures and then return. If the futures throw an exception this function
@@ -170,15 +169,15 @@ object futureMod extends Shortcut {
       *
       * Example usage: Future.wrap(asyncFunction)(arg1).wait()
       */
-    def wrap[T](fnOrObject: js.Function1[/* repeated */ js.Any, T]): FutureFunction[T] = js.native
-    def wrap[T](fnOrObject: js.Function1[/* repeated */ js.Any, T], multi: Boolean): FutureFunction[T] = js.native
-    def wrap[T](fnOrObject: js.Function1[/* repeated */ js.Any, T], multi: Boolean, suffix: String): FutureFunction[T] = js.native
-    def wrap[T](fnOrObject: js.Function1[/* repeated */ js.Any, T], multi: Unit, suffix: String): FutureFunction[T] = js.native
+    def wrap[T](fnOrObject: js.Function1[/* repeated */ Any, T]): FutureFunction[T] = js.native
+    def wrap[T](fnOrObject: js.Function1[/* repeated */ Any, T], multi: Boolean): FutureFunction[T] = js.native
+    def wrap[T](fnOrObject: js.Function1[/* repeated */ Any, T], multi: Boolean, suffix: String): FutureFunction[T] = js.native
+    def wrap[T](fnOrObject: js.Function1[/* repeated */ Any, T], multi: Unit, suffix: String): FutureFunction[T] = js.native
   }
   
-  type FutureOrFutureArray = Future[js.Any] | js.Array[Future[js.Any]]
+  type FutureOrFutureArray = Future[Any] | js.Array[Future[Any]]
   
-  type FutureResolveFunction[T] = js.Function2[/* err */ Error, /* val */ T, Unit]
+  type FutureResolveFunction[T] = js.Function2[/* err */ js.Error, /* val */ T, Unit]
   
   type _To = FutureConstructor
   
@@ -215,9 +214,9 @@ object futureMod extends Shortcut {
     @js.native
     trait FutureFunction[T] extends StObject {
       
-      def apply(args: js.Any*): Future[T] = js.native
+      def apply(args: Any*): Future[T] = js.native
     }
     
-    type FutureObject[T] = T & js.Any
+    type FutureObject[T] = T & Any
   }
 }

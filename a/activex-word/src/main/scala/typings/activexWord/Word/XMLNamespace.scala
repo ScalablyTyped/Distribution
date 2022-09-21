@@ -13,7 +13,7 @@ trait XMLNamespace extends StObject {
   
   val Application: typings.activexWord.Word.Application = js.native
   
-  def AttachToDocument(Document: js.Any): Unit = js.native
+  def AttachToDocument(Document: Any): Unit = js.native
   
   val Creator: Double = js.native
   
@@ -27,7 +27,7 @@ trait XMLNamespace extends StObject {
   def Location(): String = js.native
   def Location(AllUsers: Boolean): String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val URI: String = js.native
   

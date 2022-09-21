@@ -33,6 +33,6 @@ object ListSkillsStoreSkillsByCategoryResponse {
     
     inline def setSkillsStoreSkillsUndefined: Self = StObject.set(x, "SkillsStoreSkills", js.undefined)
     
-    inline def setSkillsStoreSkillsVarargs(value: SkillsStoreSkill*): Self = StObject.set(x, "SkillsStoreSkills", js.Array(value :_*))
+    inline def setSkillsStoreSkillsVarargs(value: SkillsStoreSkill*): Self = StObject.set(x, "SkillsStoreSkills", js.Array(value*))
   }
 }

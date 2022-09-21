@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.Sphere")
 @js.native
-class Sphere protected ()
+open class Sphere protected ()
   extends StObject
      with typings.cannon.CANNON.Sphere {
   def this(radius: Double) = this()
@@ -19,6 +19,9 @@ class Sphere protected ()
   
   /* CompleteClass */
   var collisionResponse: Boolean = js.native
+  
+  /* CompleteClass */
+  var id: Double = js.native
   
   /* CompleteClass */
   var radius: Double = js.native

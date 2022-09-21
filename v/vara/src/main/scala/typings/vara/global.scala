@@ -13,7 +13,7 @@ object global {
     /* was `typeof VaraType` */
     @JSGlobal("Vara")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.vara.mod.^ {
       def this(queryDom: String, fontJSONSource: String, textStep: js.Array[TextStep]) = this()
       def this(

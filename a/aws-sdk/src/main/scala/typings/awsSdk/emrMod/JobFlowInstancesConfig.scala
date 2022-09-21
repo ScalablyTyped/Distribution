@@ -17,7 +17,7 @@ trait JobFlowInstancesConfig extends StObject {
   var AdditionalSlaveSecurityGroups: js.UndefOr[SecurityGroupsList] = js.undefined
   
   /**
-    * The name of the EC2 key pair that can be used to ssh to the master node as the user called "hadoop."
+    * The name of the EC2 key pair that can be used to connect to the master node using SSH as the user called "hadoop."
     */
   var Ec2KeyName: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
@@ -32,17 +32,17 @@ trait JobFlowInstancesConfig extends StObject {
   var Ec2SubnetIds: js.UndefOr[XmlStringMaxLen256List] = js.undefined
   
   /**
-    * The identifier of the Amazon EC2 security group for the master node.
+    * The identifier of the Amazon EC2 security group for the master node. If you specify EmrManagedMasterSecurityGroup, you must also specify EmrManagedSlaveSecurityGroup.
     */
   var EmrManagedMasterSecurityGroup: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * The identifier of the Amazon EC2 security group for the core and task nodes.
+    * The identifier of the Amazon EC2 security group for the core and task nodes. If you specify EmrManagedSlaveSecurityGroup, you must also specify EmrManagedMasterSecurityGroup.
     */
   var EmrManagedSlaveSecurityGroup: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * Applies only to Amazon EMR release versions earlier than 4.0. The Hadoop version for the cluster. Valid inputs are "0.18" (deprecated), "0.20" (deprecated), "0.20.205" (deprecated), "1.0.3", "2.2.0", or "2.4.0". If you do not set this value, the default of 0.18 is used, unless the AmiVersion parameter is set in the RunJobFlow call, in which case the default version of Hadoop for that AMI version is used.
+    * Applies only to Amazon EMR release versions earlier than 4.0. The Hadoop version for the cluster. Valid inputs are "0.18" (no longer maintained), "0.20" (no longer maintained), "0.20.205" (no longer maintained), "1.0.3", "2.2.0", or "2.4.0". If you do not set this value, the default of 0.18 is used, unless the AmiVersion parameter is set in the RunJobFlow call, in which case the default version of Hadoop for that AMI version is used.
     */
   var HadoopVersion: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
@@ -62,7 +62,7 @@ trait JobFlowInstancesConfig extends StObject {
   var InstanceGroups: js.UndefOr[InstanceGroupConfigList] = js.undefined
   
   /**
-    * Specifies whether the cluster should remain available after completing all steps.
+    * Specifies whether the cluster should remain available after completing all steps. Defaults to true. For more information about configuring cluster termination, see Control Cluster Termination in the EMR Management Guide.
     */
   var KeepJobFlowAliveWhenNoSteps: js.UndefOr[Boolean] = js.undefined
   
@@ -104,13 +104,13 @@ object JobFlowInstancesConfig {
     
     inline def setAdditionalMasterSecurityGroupsUndefined: Self = StObject.set(x, "AdditionalMasterSecurityGroups", js.undefined)
     
-    inline def setAdditionalMasterSecurityGroupsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "AdditionalMasterSecurityGroups", js.Array(value :_*))
+    inline def setAdditionalMasterSecurityGroupsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "AdditionalMasterSecurityGroups", js.Array(value*))
     
     inline def setAdditionalSlaveSecurityGroups(value: SecurityGroupsList): Self = StObject.set(x, "AdditionalSlaveSecurityGroups", value.asInstanceOf[js.Any])
     
     inline def setAdditionalSlaveSecurityGroupsUndefined: Self = StObject.set(x, "AdditionalSlaveSecurityGroups", js.undefined)
     
-    inline def setAdditionalSlaveSecurityGroupsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "AdditionalSlaveSecurityGroups", js.Array(value :_*))
+    inline def setAdditionalSlaveSecurityGroupsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "AdditionalSlaveSecurityGroups", js.Array(value*))
     
     inline def setEc2KeyName(value: XmlStringMaxLen256): Self = StObject.set(x, "Ec2KeyName", value.asInstanceOf[js.Any])
     
@@ -124,7 +124,7 @@ object JobFlowInstancesConfig {
     
     inline def setEc2SubnetIdsUndefined: Self = StObject.set(x, "Ec2SubnetIds", js.undefined)
     
-    inline def setEc2SubnetIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "Ec2SubnetIds", js.Array(value :_*))
+    inline def setEc2SubnetIdsVarargs(value: XmlStringMaxLen256*): Self = StObject.set(x, "Ec2SubnetIds", js.Array(value*))
     
     inline def setEmrManagedMasterSecurityGroup(value: XmlStringMaxLen256): Self = StObject.set(x, "EmrManagedMasterSecurityGroup", value.asInstanceOf[js.Any])
     
@@ -146,13 +146,13 @@ object JobFlowInstancesConfig {
     
     inline def setInstanceFleetsUndefined: Self = StObject.set(x, "InstanceFleets", js.undefined)
     
-    inline def setInstanceFleetsVarargs(value: InstanceFleetConfig*): Self = StObject.set(x, "InstanceFleets", js.Array(value :_*))
+    inline def setInstanceFleetsVarargs(value: InstanceFleetConfig*): Self = StObject.set(x, "InstanceFleets", js.Array(value*))
     
     inline def setInstanceGroups(value: InstanceGroupConfigList): Self = StObject.set(x, "InstanceGroups", value.asInstanceOf[js.Any])
     
     inline def setInstanceGroupsUndefined: Self = StObject.set(x, "InstanceGroups", js.undefined)
     
-    inline def setInstanceGroupsVarargs(value: InstanceGroupConfig*): Self = StObject.set(x, "InstanceGroups", js.Array(value :_*))
+    inline def setInstanceGroupsVarargs(value: InstanceGroupConfig*): Self = StObject.set(x, "InstanceGroups", js.Array(value*))
     
     inline def setKeepJobFlowAliveWhenNoSteps(value: Boolean): Self = StObject.set(x, "KeepJobFlowAliveWhenNoSteps", value.asInstanceOf[js.Any])
     

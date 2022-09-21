@@ -1,7 +1,7 @@
 
 # Scala.js typings for cac
 
-Typings are for version 6.6.1
+Typings are for version 6.7.14
 
 ## Library description:
 Simple yet powerful framework for building command-line apps.
@@ -10,10 +10,10 @@ Simple yet powerful framework for building command-line apps.
 | ------------------ | :-------------: |
 | Full name          | cac |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 369 |
-| # downloads        | 14215092 |
-| # stars            | 5 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 2544947.3333333335 |
+| # stars            | 1857.0 |
 
 ## Links
 - [Homepage](https://github.com/egoist/cac#readme)

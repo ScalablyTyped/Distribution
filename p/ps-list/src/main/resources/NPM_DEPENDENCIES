@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ps-list" : "7.2.0"
+      "ps-list" : "8.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ps-list" : "7.2.0"
+      "ps-list" : "8.1.0"
     }
   ],
   "compile-devDependencies" : [

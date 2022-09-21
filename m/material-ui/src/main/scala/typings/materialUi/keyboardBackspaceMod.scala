@@ -10,10 +10,10 @@ object keyboardBackspaceMod {
   
   @JSImport("material-ui/svg-icons/hardware/keyboard-backspace", JSImport.Default)
   @js.native
-  class default () extends HardwareKeyboardBackspace
+  open class default () extends HardwareKeyboardBackspace
   
   @JSImport("material-ui/svg-icons/hardware/keyboard-backspace", "HardwareKeyboardBackspace")
   @js.native
-  class HardwareKeyboardBackspace ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareKeyboardBackspace ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

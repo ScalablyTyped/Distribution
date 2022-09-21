@@ -109,21 +109,21 @@ object application {
       *
       * Usually, this contains an instance of {@link com.sun.star.sdbc.SQLException} .
       */
-    var Error: js.Any
+    var Error: Any
     
     /** contains the result set which is being copied by the wizard currently. */
     var SourceData: XResultSet
   }
   object CopyTableRowEvent {
     
-    inline def apply(Error: js.Any, Source: XInterface, SourceData: XResultSet): CopyTableRowEvent = {
+    inline def apply(Error: Any, Source: XInterface, SourceData: XResultSet): CopyTableRowEvent = {
       val __obj = js.Dynamic.literal(Error = Error.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], SourceData = SourceData.asInstanceOf[js.Any])
       __obj.asInstanceOf[CopyTableRowEvent]
     }
     
     extension [Self <: CopyTableRowEvent](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
       
       inline def setSourceData(value: XResultSet): Self = StObject.set(x, "SourceData", value.asInstanceOf[js.Any])
     }
@@ -200,7 +200,7 @@ object application {
       create: (XPropertySet, XPropertySet) => Unit,
       createWithInteractionHandler: (XPropertySet, XPropertySet, XInteractionHandler) => Unit,
       execute: () => Double,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeCopyTableListener: XCopyTableListener => Unit,
       setTitle: String => Unit
@@ -283,11 +283,11 @@ object application {
       DataSource: XDataSource,
       Frame: XFrame,
       Model: XModel,
-      Selection: js.Any,
+      Selection: Any,
       SubComponents: SafeArray[XComponent],
       Title: String,
       Transferable: XTransferable,
-      ViewData: js.Any,
+      ViewData: Any,
       acquire: () => Unit,
       addEventListener: XEventListener => Unit,
       addKeyHandler: XKeyHandler => Unit,
@@ -303,10 +303,10 @@ object application {
       dispose: () => Unit,
       getFrame: () => XFrame,
       getModel: () => XModel,
-      getSelection: () => js.Any,
+      getSelection: () => Any,
       getTitle: () => String,
       getTransferable: () => XTransferable,
-      getViewData: () => js.Any,
+      getViewData: () => Any,
       identifySubComponent: XComponent => Pair[Double, String],
       insertTransferable: XTransferable => Unit,
       isConnected: () => Boolean,
@@ -314,7 +314,7 @@ object application {
       loadComponentWithArguments: (Double, String, Boolean, SeqEquiv[PropertyValue]) => XComponent,
       queryDispatch: (URL, String, Double) => XDispatch,
       queryDispatches: SeqEquiv[DispatchDescriptor] => SafeArray[XDispatch],
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       registerContextMenuInterceptor: XContextMenuInterceptor => Unit,
       release: () => Unit,
       releaseContextMenuInterceptor: XContextMenuInterceptor => Unit,
@@ -323,8 +323,8 @@ object application {
       removeMouseClickHandler: XMouseClickHandler => Unit,
       removeSelectionChangeListener: XSelectionChangeListener => Unit,
       removeTitleChangeListener: XTitleChangeListener => Unit,
-      restoreViewData: js.Any => Unit,
-      select: js.Any => Boolean,
+      restoreViewData: Any => Unit,
+      select: Any => Boolean,
       setTitle: String => Unit,
       suspend: Boolean => Boolean
     ): DefaultViewController = {
@@ -346,7 +346,7 @@ object application {
       acquire: () => Unit,
       createWithDocument: XOfficeDatabaseDocument => Unit,
       execute: () => Double,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setTitle: String => Unit
     ): MacroMigrationWizard = {
@@ -451,7 +451,7 @@ object application {
       copyRowError: CopyTableRowEvent => Double,
       copyingRow: CopyTableRowEvent => Unit,
       disposing: EventObject => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XCopyTableListener = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), copiedRow = js.Any.fromFunction1(copiedRow), copyRowError = js.Any.fromFunction1(copyRowError), copyingRow = js.Any.fromFunction1(copyingRow), disposing = js.Any.fromFunction1(disposing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -549,7 +549,7 @@ object application {
       acquire: () => Unit,
       addCopyTableListener: XCopyTableListener => Unit,
       execute: () => Double,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeCopyTableListener: XCopyTableListener => Unit,
       setTitle: String => Unit

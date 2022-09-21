@@ -4,30 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Accounts$Clients")
 @js.native
-class ResourceAccountsClients protected () extends StObject {
+open class ResourceAccountsClients protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * adexchangebuyer2.accounts.clients.create
-    * @desc Creates a new client buyer.
-    * @alias adexchangebuyer2.accounts.clients.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId Unique numerical account ID for the buyer of which the client buyer is a customer; the sponsor buyer to create a client for. (required)
-    * @param {().Client} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaClient] = js.native
   def create(callback: BodyResponseCallback[SchemaClient]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaClient] = js.native
@@ -35,8 +24,8 @@ class ResourceAccountsClients protected () extends StObject {
   def create(params: ParamsResourceAccountsClientsCreate, callback: BodyResponseCallback[SchemaClient]): Unit = js.native
   def create(
     params: ParamsResourceAccountsClientsCreate,
-    options: BodyResponseCallback[SchemaClient],
-    callback: BodyResponseCallback[SchemaClient]
+    options: BodyResponseCallback[Readable | SchemaClient],
+    callback: BodyResponseCallback[Readable | SchemaClient]
   ): Unit = js.native
   def create(params: ParamsResourceAccountsClientsCreate, options: MethodOptions): GaxiosPromise[SchemaClient] = js.native
   def create(
@@ -44,20 +33,87 @@ class ResourceAccountsClients protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaClient]
   ): Unit = js.native
-  
   /**
-    * adexchangebuyer2.accounts.clients.get
-    * @desc Gets a client buyer with a given client account ID.
-    * @alias adexchangebuyer2.accounts.clients.get
-    * @memberOf! ()
+    * Creates a new client buyer.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/adexchangebuyer2.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId Numerical account ID of the client's sponsor buyer. (required)
-    * @param {string} params.clientAccountId Numerical account ID of the client buyer to retrieve. (required)
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const adexchangebuyer2 = google.adexchangebuyer2('v2beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/adexchange.buyer'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await adexchangebuyer2.accounts.clients.create({
+    *     // Unique numerical account ID for the buyer of which the client buyer is a customer; the sponsor buyer to create a client for. (required)
+    *     accountId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "clientAccountId": "my_clientAccountId",
+    *       //   "clientName": "my_clientName",
+    *       //   "entityId": "my_entityId",
+    *       //   "entityName": "my_entityName",
+    *       //   "entityType": "my_entityType",
+    *       //   "partnerClientId": "my_partnerClientId",
+    *       //   "role": "my_role",
+    *       //   "status": "my_status",
+    *       //   "visibleToSeller": false
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientAccountId": "my_clientAccountId",
+    *   //   "clientName": "my_clientName",
+    *   //   "entityId": "my_entityId",
+    *   //   "entityName": "my_entityName",
+    *   //   "entityType": "my_entityType",
+    *   //   "partnerClientId": "my_partnerClientId",
+    *   //   "role": "my_role",
+    *   //   "status": "my_status",
+    *   //   "visibleToSeller": false
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceAccountsClientsCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceAccountsClientsCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaClient] = js.native
   def get(callback: BodyResponseCallback[SchemaClient]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaClient] = js.native
@@ -65,8 +121,8 @@ class ResourceAccountsClients protected () extends StObject {
   def get(params: ParamsResourceAccountsClientsGet, callback: BodyResponseCallback[SchemaClient]): Unit = js.native
   def get(
     params: ParamsResourceAccountsClientsGet,
-    options: BodyResponseCallback[SchemaClient],
-    callback: BodyResponseCallback[SchemaClient]
+    options: BodyResponseCallback[Readable | SchemaClient],
+    callback: BodyResponseCallback[Readable | SchemaClient]
   ): Unit = js.native
   def get(params: ParamsResourceAccountsClientsGet, options: MethodOptions): GaxiosPromise[SchemaClient] = js.native
   def get(
@@ -74,24 +130,75 @@ class ResourceAccountsClients protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaClient]
   ): Unit = js.native
+  /**
+    * Gets a client buyer with a given client account ID.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/adexchangebuyer2.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const adexchangebuyer2 = google.adexchangebuyer2('v2beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/adexchange.buyer'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await adexchangebuyer2.accounts.clients.get({
+    *     // Numerical account ID of the client's sponsor buyer. (required)
+    *     accountId: 'placeholder-value',
+    *     // Numerical account ID of the client buyer to retrieve. (required)
+    *     clientAccountId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientAccountId": "my_clientAccountId",
+    *   //   "clientName": "my_clientName",
+    *   //   "entityId": "my_entityId",
+    *   //   "entityName": "my_entityName",
+    *   //   "entityType": "my_entityType",
+    *   //   "partnerClientId": "my_partnerClientId",
+    *   //   "role": "my_role",
+    *   //   "status": "my_status",
+    *   //   "visibleToSeller": false
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def get(params: ParamsResourceAccountsClientsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceAccountsClientsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
   var invitations: ResourceAccountsClientsInvitations = js.native
   
-  /**
-    * adexchangebuyer2.accounts.clients.list
-    * @desc Lists all the clients for the current sponsor buyer.
-    * @alias adexchangebuyer2.accounts.clients.list
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId Unique numerical account ID of the sponsor buyer to list the clients for.
-    * @param {integer=} params.pageSize Requested page size. The server may return fewer clients than requested. If unspecified, the server will pick an appropriate default.
-    * @param {string=} params.pageToken A token identifying a page of results the server should return. Typically, this is the value of ListClientsResponse.nextPageToken returned from the previous call to the accounts.clients.list method.
-    * @param {string=} params.partnerClientId Optional unique identifier (from the standpoint of an Ad Exchange sponsor buyer partner) of the client to return. If specified, at most one client will be returned in the response.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def list(): GaxiosPromise[SchemaListClientsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListClientsResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListClientsResponse] = js.native
@@ -102,8 +209,8 @@ class ResourceAccountsClients protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceAccountsClientsList,
-    options: BodyResponseCallback[SchemaListClientsResponse],
-    callback: BodyResponseCallback[SchemaListClientsResponse]
+    options: BodyResponseCallback[Readable | SchemaListClientsResponse],
+    callback: BodyResponseCallback[Readable | SchemaListClientsResponse]
   ): Unit = js.native
   def list(params: ParamsResourceAccountsClientsList, options: MethodOptions): GaxiosPromise[SchemaListClientsResponse] = js.native
   def list(
@@ -111,21 +218,70 @@ class ResourceAccountsClients protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaListClientsResponse]
   ): Unit = js.native
-  
   /**
-    * adexchangebuyer2.accounts.clients.update
-    * @desc Updates an existing client buyer.
-    * @alias adexchangebuyer2.accounts.clients.update
-    * @memberOf! ()
+    * Lists all the clients for the current sponsor buyer.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/adexchangebuyer2.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId Unique numerical account ID for the buyer of which the client buyer is a customer; the sponsor buyer to update a client for. (required)
-    * @param {string} params.clientAccountId Unique numerical account ID of the client to update. (required)
-    * @param {().Client} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const adexchangebuyer2 = google.adexchangebuyer2('v2beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/adexchange.buyer'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await adexchangebuyer2.accounts.clients.list({
+    *     // Unique numerical account ID of the sponsor buyer to list the clients for.
+    *     accountId: 'placeholder-value',
+    *     // Requested page size. The server may return fewer clients than requested. If unspecified, the server will pick an appropriate default.
+    *     pageSize: 'placeholder-value',
+    *     // A token identifying a page of results the server should return. Typically, this is the value of ListClientsResponse.nextPageToken returned from the previous call to the accounts.clients.list method.
+    *     pageToken: 'placeholder-value',
+    *     // Optional unique identifier (from the standpoint of an Ad Exchange sponsor buyer partner) of the client to return. If specified, at most one client will be returned in the response.
+    *     partnerClientId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clients": [],
+    *   //   "nextPageToken": "my_nextPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceAccountsClientsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceAccountsClientsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaClient] = js.native
   def update(callback: BodyResponseCallback[SchemaClient]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaClient] = js.native
@@ -133,14 +289,96 @@ class ResourceAccountsClients protected () extends StObject {
   def update(params: ParamsResourceAccountsClientsUpdate, callback: BodyResponseCallback[SchemaClient]): Unit = js.native
   def update(
     params: ParamsResourceAccountsClientsUpdate,
-    options: BodyResponseCallback[SchemaClient],
-    callback: BodyResponseCallback[SchemaClient]
+    options: BodyResponseCallback[Readable | SchemaClient],
+    callback: BodyResponseCallback[Readable | SchemaClient]
   ): Unit = js.native
   def update(params: ParamsResourceAccountsClientsUpdate, options: MethodOptions): GaxiosPromise[SchemaClient] = js.native
   def update(
     params: ParamsResourceAccountsClientsUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaClient]
+  ): Unit = js.native
+  /**
+    * Updates an existing client buyer.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/adexchangebuyer2.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const adexchangebuyer2 = google.adexchangebuyer2('v2beta1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/adexchange.buyer'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await adexchangebuyer2.accounts.clients.update({
+    *     // Unique numerical account ID for the buyer of which the client buyer is a customer; the sponsor buyer to update a client for. (required)
+    *     accountId: 'placeholder-value',
+    *     // Unique numerical account ID of the client to update. (required)
+    *     clientAccountId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "clientAccountId": "my_clientAccountId",
+    *       //   "clientName": "my_clientName",
+    *       //   "entityId": "my_entityId",
+    *       //   "entityName": "my_entityName",
+    *       //   "entityType": "my_entityType",
+    *       //   "partnerClientId": "my_partnerClientId",
+    *       //   "role": "my_role",
+    *       //   "status": "my_status",
+    *       //   "visibleToSeller": false
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientAccountId": "my_clientAccountId",
+    *   //   "clientName": "my_clientName",
+    *   //   "entityId": "my_entityId",
+    *   //   "entityName": "my_entityName",
+    *   //   "entityType": "my_entityType",
+    *   //   "partnerClientId": "my_partnerClientId",
+    *   //   "role": "my_role",
+    *   //   "status": "my_status",
+    *   //   "visibleToSeller": false
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceAccountsClientsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceAccountsClientsUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
   
   var users: ResourceAccountsClientsUsers = js.native

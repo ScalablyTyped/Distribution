@@ -11,13 +11,13 @@ trait EditorChangeEvent extends StObject {
   var end: Position
   
   // insert, remove
-  var lines: js.Array[js.Any]
+  var lines: js.Array[Any]
   
   var start: Position
 }
 object EditorChangeEvent {
   
-  inline def apply(action: String, end: Position, lines: js.Array[js.Any], start: Position): EditorChangeEvent = {
+  inline def apply(action: String, end: Position, lines: js.Array[Any], start: Position): EditorChangeEvent = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorChangeEvent]
   }
@@ -28,9 +28,9 @@ object EditorChangeEvent {
     
     inline def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    inline def setLines(value: js.Array[js.Any]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Array[Any]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    inline def setLinesVarargs(value: js.Any*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: Any*): Self = StObject.set(x, "lines", js.Array(value*))
     
     inline def setStart(value: Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }

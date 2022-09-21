@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object notificationMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/Notification", JSImport.Default)
   @js.native
-  val default: SFC[NotificationProps] = js.native
+  val default: FC[NotificationProps] = js.native
   
   trait NotificationProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object NotificationProps {
     
@@ -29,14 +29,14 @@ object notificationMod extends Shortcut {
     
     extension [Self <: NotificationProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[NotificationProps]
+  type _To = FC[NotificationProps]
   
   /* This means you don't have to write `default`, but can instead just say `notificationMod.foo` */
-  override def _to: SFC[NotificationProps] = default
+  override def _to: FC[NotificationProps] = default
 }

@@ -16,7 +16,7 @@ object describeStreamSummaryCommandMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/commands/DescribeStreamSummaryCommand", "DescribeStreamSummaryCommand")
   @js.native
-  class DescribeStreamSummaryCommand protected ()
+  open class DescribeStreamSummaryCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object describeStreamSummaryCommandMod {
     override val middlewareStack: MiddlewareStack[DescribeStreamSummaryInput, DescribeStreamSummaryOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: KinesisResolvedConfiguration
     ): Handler[DescribeStreamSummaryInput, DescribeStreamSummaryOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: KinesisResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DescribeStreamSummaryInput, DescribeStreamSummaryOutput] = js.native
   }
 }

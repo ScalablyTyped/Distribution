@@ -1,7 +1,7 @@
 
 # Scala.js typings for lozad
 
-Typings are for version 1.9
+Typings are for version 1.16
 
 ## Library description:
 A light-weight JS library to lazy load any HTML element such as images, ads, videos etc.
@@ -10,10 +10,10 @@ A light-weight JS library to lazy load any HTML element such as images, ads, vid
 | ------------------ | :-------------: |
 | Full name          | lozad |
 | Keywords           | lazy, loader, lazyloader, lazyload, performance, image, video, iframe, ads |
-| # releases         | 4 |
-| # dependents       | 38 |
-| # downloads        | 1645477 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 135944.33333333334 |
+| # stars            | 7040.0 |
 
 ## Links
 - [Homepage](https://github.com/ApoorvSaxena/lozad.js)

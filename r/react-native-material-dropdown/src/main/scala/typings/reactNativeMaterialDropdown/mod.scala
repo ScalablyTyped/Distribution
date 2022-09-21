@@ -16,14 +16,14 @@ object mod {
   
   @JSImport("react-native-material-dropdown", "Dropdown")
   @js.native
-  class Dropdown protected ()
-    extends PureComponent[DropDownProps, js.Object, js.Any] {
+  open class Dropdown protected ()
+    extends PureComponent[DropDownProps, js.Object, Any] {
     def this(props: DropDownProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: DropDownProps, context: js.Any) = this()
+    def this(props: DropDownProps, context: Any) = this()
   }
   
   trait DropDownData extends StObject {
@@ -302,7 +302,7 @@ object mod {
       
       inline def setData(value: js.Array[DropDownData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: DropDownData*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: DropDownData*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -446,7 +446,7 @@ object mod {
       
       inline def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
       
-      inline def setSupportedOrientationsVarargs(value: String*): Self = StObject.set(x, "supportedOrientations", js.Array(value :_*))
+      inline def setSupportedOrientationsVarargs(value: String*): Self = StObject.set(x, "supportedOrientations", js.Array(value*))
       
       inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
       

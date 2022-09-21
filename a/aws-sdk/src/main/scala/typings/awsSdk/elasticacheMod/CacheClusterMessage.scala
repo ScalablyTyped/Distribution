@@ -29,7 +29,7 @@ object CacheClusterMessage {
     
     inline def setCacheClustersUndefined: Self = StObject.set(x, "CacheClusters", js.undefined)
     
-    inline def setCacheClustersVarargs(value: CacheCluster*): Self = StObject.set(x, "CacheClusters", js.Array(value :_*))
+    inline def setCacheClustersVarargs(value: CacheCluster*): Self = StObject.set(x, "CacheClusters", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

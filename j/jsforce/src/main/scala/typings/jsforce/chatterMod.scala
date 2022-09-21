@@ -4,7 +4,6 @@ import typings.jsforce.connectionMod.Callback
 import typings.jsforce.connectionMod.Connection
 import typings.jsforce.queryMod.Query
 import typings.node.streamMod.Stream
-import typings.std.Error
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +13,7 @@ object chatterMod {
   
   @JSImport("jsforce/api/chatter", "Chatter")
   @js.native
-  class Chatter protected () extends StObject {
+  open class Chatter protected () extends StObject {
     def this(conn: Connection) = this()
     
     def batch(): js.Promise[BatchRequestResults] = js.native
@@ -29,7 +28,7 @@ object chatterMod {
   
   @JSImport("jsforce/api/chatter", "Request")
   @js.native
-  class Request[T] protected ()
+  open class Request[T] protected ()
     extends StObject
        with PromiseLike[T] {
     def this(chatter: Chatter, params: RequestParams) = this()
@@ -44,16 +43,16 @@ object chatterMod {
     def stream(): Stream = js.native
     
     def thenCall(): Query[T] = js.native
-    def thenCall(callback: js.Function2[/* err */ Error, /* records */ T, Unit]): Query[T] = js.native
+    def thenCall(callback: js.Function2[/* err */ js.Error, /* records */ T, Unit]): Query[T] = js.native
   }
   
   @JSImport("jsforce/api/chatter", "RequestResult")
   @js.native
-  class RequestResult () extends StObject
+  open class RequestResult () extends StObject
   
   @JSImport("jsforce/api/chatter", "Resource")
   @js.native
-  class Resource[T] protected () extends Request[T] {
+  open class Resource[T] protected () extends Request[T] {
     def this(chatter: Chatter, url: String) = this()
     def this(chatter: Chatter, url: String, queryParams: js.Object) = this()
     
@@ -136,7 +135,7 @@ object chatterMod {
       
       inline def setResults(value: js.Array[BatchRequestResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      inline def setResultsVarargs(value: BatchRequestResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: BatchRequestResult*): Self = StObject.set(x, "results", js.Array(value*))
     }
   }
   

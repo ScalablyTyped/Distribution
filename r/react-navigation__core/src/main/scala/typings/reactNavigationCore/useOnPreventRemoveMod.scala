@@ -1,7 +1,7 @@
 package typings.reactNavigationCore
 
-import typings.reactNavigationCore.anon.`10`
-import typings.reactNavigationCore.anon.`11`
+import typings.reactNavigationCore.anon.`12`
+import typings.reactNavigationCore.anon.`13`
 import typings.reactNavigationCore.navigationBuilderContextMod.ChildBeforeRemoveListener
 import typings.reactNavigationCore.typesMod.EventMapCore
 import typings.reactNavigationCore.useEventEmitterMod.NavigationEventEmitter
@@ -22,10 +22,10 @@ object useOnPreventRemoveMod {
   inline def default(hasGetStateEmitterBeforeRemoveListeners: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasGetStateEmitterBeforeRemoveListeners.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def shouldPreventRemove(
-    emitter: NavigationEventEmitter[EventMapCore[js.Any]],
+    emitter: NavigationEventEmitter[EventMapCore[Any]],
     beforeRemoveListeners: Record[String, js.UndefOr[ChildBeforeRemoveListener]],
-    currentRoutes: js.Array[`10`],
-    nextRoutes: js.Array[`11`],
+    currentRoutes: js.Array[`12`],
+    nextRoutes: js.Array[`13`],
     action: NavigationAction
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldPreventRemove")(emitter.asInstanceOf[js.Any], beforeRemoveListeners.asInstanceOf[js.Any], currentRoutes.asInstanceOf[js.Any], nextRoutes.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -33,7 +33,7 @@ object useOnPreventRemoveMod {
     
     var beforeRemoveListeners: Record[String, js.UndefOr[ChildBeforeRemoveListener]]
     
-    var emitter: NavigationEventEmitter[EventMapCore[js.Any]]
+    var emitter: NavigationEventEmitter[EventMapCore[Any]]
     
     def getState(): NavigationState[ParamListBase]
   }
@@ -41,7 +41,7 @@ object useOnPreventRemoveMod {
     
     inline def apply(
       beforeRemoveListeners: Record[String, js.UndefOr[ChildBeforeRemoveListener]],
-      emitter: NavigationEventEmitter[EventMapCore[js.Any]],
+      emitter: NavigationEventEmitter[EventMapCore[Any]],
       getState: () => NavigationState[ParamListBase]
     ): Options = {
       val __obj = js.Dynamic.literal(beforeRemoveListeners = beforeRemoveListeners.asInstanceOf[js.Any], emitter = emitter.asInstanceOf[js.Any], getState = js.Any.fromFunction0(getState))
@@ -52,7 +52,7 @@ object useOnPreventRemoveMod {
       
       inline def setBeforeRemoveListeners(value: Record[String, js.UndefOr[ChildBeforeRemoveListener]]): Self = StObject.set(x, "beforeRemoveListeners", value.asInstanceOf[js.Any])
       
-      inline def setEmitter(value: NavigationEventEmitter[EventMapCore[js.Any]]): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
+      inline def setEmitter(value: NavigationEventEmitter[EventMapCore[Any]]): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
       
       inline def setGetState(value: () => NavigationState[ParamListBase]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     }

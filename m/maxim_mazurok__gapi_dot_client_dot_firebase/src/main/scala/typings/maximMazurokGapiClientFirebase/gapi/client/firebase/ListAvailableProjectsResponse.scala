@@ -32,6 +32,6 @@ object ListAvailableProjectsResponse {
     
     inline def setProjectInfoUndefined: Self = StObject.set(x, "projectInfo", js.undefined)
     
-    inline def setProjectInfoVarargs(value: ProjectInfo*): Self = StObject.set(x, "projectInfo", js.Array(value :_*))
+    inline def setProjectInfoVarargs(value: ProjectInfo*): Self = StObject.set(x, "projectInfo", js.Array(value*))
   }
 }

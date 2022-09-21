@@ -19,7 +19,7 @@ trait IRowEditor
     * @returns Ext.form.Basic The Ext.form.Basic attached to this FormPanel
     */
   @JSName("loadRecord")
-  var loadRecord_IRowEditor: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], IBasic]] = js.undefined
+  var loadRecord_IRowEditor: js.UndefOr[js.Function1[/* record */ js.UndefOr[Any], IBasic]] = js.undefined
   
   /** [Method] Start editing the specified grid at the specified position
     * @param record Ext.data.Model The Store data record which backs the row to be edited.
@@ -42,7 +42,7 @@ object IRowEditor {
     
     inline def setGetRefItemsUndefined: Self = StObject.set(x, "getRefItems", js.undefined)
     
-    inline def setLoadRecord(value: /* record */ js.UndefOr[js.Any] => IBasic): Self = StObject.set(x, "loadRecord", js.Any.fromFunction1(value))
+    inline def setLoadRecord(value: /* record */ js.UndefOr[Any] => IBasic): Self = StObject.set(x, "loadRecord", js.Any.fromFunction1(value))
     
     inline def setLoadRecordUndefined: Self = StObject.set(x, "loadRecord", js.undefined)
     

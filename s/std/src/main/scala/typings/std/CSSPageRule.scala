@@ -10,7 +10,9 @@ trait CSSPageRule
   extends StObject
      with CSSGroupingRule {
   
+  /* standard dom */
   var selectorText: java.lang.String = js.native
   
+  /* standard dom */
   val style: CSSStyleDeclaration = js.native
 }

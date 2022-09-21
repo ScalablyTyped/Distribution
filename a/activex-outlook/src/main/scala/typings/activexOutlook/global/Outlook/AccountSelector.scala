@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.AccountSelector")
 @js.native
-/* private */ class AccountSelector ()
+/* private */ open class AccountSelector ()
   extends StObject
      with typings.activexOutlook.Outlook.AccountSelector {
   
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotAccountSelector_typekey: typings.activexOutlook.Outlook.AccountSelector = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val SelectedAccount: typings.activexOutlook.Outlook.Account = js.native

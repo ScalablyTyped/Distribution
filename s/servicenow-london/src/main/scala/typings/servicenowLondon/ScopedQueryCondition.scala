@@ -66,7 +66,7 @@ trait ScopedQueryCondition extends StObject {
     * @param value The value to query on.
     * @returns A reference to a GlideQueryConditon that was added to the GlideRecord.
     */
-  def addOrCondition(name: String, oper: QueryOperator, value: js.Any): ScopedQueryCondition = js.native
+  def addOrCondition(name: String, oper: QueryOperator, value: Any): ScopedQueryCondition = js.native
   def addOrCondition(name: String, value: String): ScopedQueryCondition = js.native
   /**
     * Appends a 2-or-3 parameter OR condition to an existing GlideQueryCondition.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StandardsSubscriptionRequest extends StObject {
   
   /**
-    * The ARN of the standard that you want to enable. To view the list of available standards and their ARNs, use the  DescribeStandards  operation.
+    * The ARN of the standard that you want to enable. To view the list of available standards and their ARNs, use the DescribeStandards operation.
     */
   var StandardsArn: NonEmptyString
   

@@ -9,13 +9,15 @@ object mod {
   
   @JSImport("leakage", "MemoryLeakError")
   @js.native
-  class MemoryLeakError ()
+  open class MemoryLeakError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -63,7 +65,7 @@ object mod {
     
     var gcollections: Double = js.native
     
-    var heapDiffs: js.Array[js.Any] = js.native
+    var heapDiffs: js.Array[Any] = js.native
     
     var iterations: Double = js.native
     

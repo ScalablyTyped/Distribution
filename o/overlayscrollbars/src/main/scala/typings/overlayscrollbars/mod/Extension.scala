@@ -11,7 +11,7 @@ trait Extension extends StObject {
   def added(): Unit = js.native
   def added(options: js.Object): Unit = js.native
   
-  def contract(global: js.Any): Boolean = js.native
+  def contract(global: Any): Boolean = js.native
   
   def on(callbackName: String): Unit = js.native
   def on(callbackName: String, callbackArgs: DirectionChangedArgs): Unit = js.native

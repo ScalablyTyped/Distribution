@@ -36,6 +36,6 @@ object RosterReceived {
     
     inline def setRoster(value: js.Array[RosterItem]): Self = StObject.set(x, "roster", value.asInstanceOf[js.Any])
     
-    inline def setRosterVarargs(value: RosterItem*): Self = StObject.set(x, "roster", js.Array(value :_*))
+    inline def setRosterVarargs(value: RosterItem*): Self = StObject.set(x, "roster", js.Array(value*))
   }
 }

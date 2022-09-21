@@ -2,8 +2,8 @@ package typings.reactMdTypography
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
-import typings.reactMdTypography.textMod.TextElement
-import typings.reactMdTypography.textMod.TextProps
+import typings.reactMdTypography.typographyMod.TypographyHTMLElement
+import typings.reactMdTypography.typographyMod.TypographyProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +12,11 @@ object srOnlyMod {
   
   @JSImport("@react-md/typography/types/SrOnly", "SrOnly")
   @js.native
-  val SrOnly: ForwardRefExoticComponent[SrOnlyProps & RefAttributes[TextElement]] = js.native
+  val SrOnly: ForwardRefExoticComponent[SrOnlyProps & RefAttributes[TypographyHTMLElement]] = js.native
   
   trait SrOnlyProps
     extends StObject
-       with TextProps {
+       with TypographyProps {
     
     /**
       * Boolean if the text should become visible when focused. If this prop is

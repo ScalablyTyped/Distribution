@@ -28,7 +28,7 @@ object mod {
   
   @JSImport("aws-kcl", "KCLManager")
   @js.native
-  class KCLManager protected () extends StObject {
+  open class KCLManager protected () extends StObject {
     def this(kclManagerInput: KCLInput) = this()
     def this(kclManagerInput: KCLInput, inputFile: ReadStream) = this()
     def this(kclManagerInput: KCLInput, inputFile: Unit, outputFile: WriteStream) = this()
@@ -157,7 +157,7 @@ object mod {
       
       inline def setRecords(value: js.Array[Record]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
       
-      inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "records", js.Array(value*))
     }
   }
   

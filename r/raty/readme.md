@@ -11,9 +11,9 @@ a node framework base koa@2 that can use full es2016, es2017 syntax anywhere
 | Full name          | raty |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1155 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 86.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/raty)

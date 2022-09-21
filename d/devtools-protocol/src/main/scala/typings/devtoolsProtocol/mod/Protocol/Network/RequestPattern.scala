@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestPattern extends StObject {
   
   /**
-    * Stage at wich to begin intercepting requests. Default is Request.
+    * Stage at which to begin intercepting requests. Default is Request.
     */
   var interceptionStage: js.UndefOr[InterceptionStage] = js.undefined
   
@@ -17,8 +17,8 @@ trait RequestPattern extends StObject {
   var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
-    * Wildcards ('*' -> zero or more, '?' -> exactly one) are allowed. Escape character is
-    * backslash. Omitting is equivalent to "*".
+    * Wildcards (`'*'` -> zero or more, `'?'` -> exactly one) are allowed. Escape character is
+    * backslash. Omitting is equivalent to `"*"`.
     */
   var urlPattern: js.UndefOr[String] = js.undefined
 }

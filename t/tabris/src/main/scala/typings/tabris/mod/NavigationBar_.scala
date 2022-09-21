@@ -1,7 +1,7 @@
 package typings.tabris.mod
 
 import typings.tabris.anon.OmitNavigationBarset
-import typings.tabris.anon.`2`
+import typings.tabris.anon.`15`
 import typings.tabris.tabrisStrings.background
 import typings.tabris.tabrisStrings.dark
 import typings.tabris.tabrisStrings.default
@@ -17,7 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "NavigationBar")
 @js.native
-/* private */ class NavigationBar_ () extends NativeObject {
+/**
+  * The navigation bar is the onscreen area where *Back*, *Home* and similar buttons are displayed. The
+  * singleton instance can be accessed via `navigationBar` and is only supported on Android.
+  */
+/* private */ open class NavigationBar_ () extends NativeObject {
   /* private */ def this(properties: Properties[NavigationBar_, OmitNavigationBarset]) = this()
   
   /**
@@ -43,7 +47,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @constant
     */
   @JSName("jsxAttributes")
-  val jsxAttributes_NavigationBar_ : (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `2` = js.native
+  val jsxAttributes_NavigationBar_ : (JSXAttributes[this.type, Omit[this.type, set | typings.tabris.tabrisStrings.jsxAttributes]]) & `15` = js.native
   
   /**
     * Fired when the [*background*](#background) property has changed.

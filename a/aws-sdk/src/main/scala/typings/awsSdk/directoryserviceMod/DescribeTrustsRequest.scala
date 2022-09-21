@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeTrustsRequest extends StObject {
   
   /**
-    * The Directory ID of the AWS directory that is a part of the requested trust relationship.
+    * The Directory ID of the Amazon Web Services directory that is a part of the requested trust relationship.
     */
   var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
@@ -51,6 +51,6 @@ object DescribeTrustsRequest {
     
     inline def setTrustIdsUndefined: Self = StObject.set(x, "TrustIds", js.undefined)
     
-    inline def setTrustIdsVarargs(value: TrustId*): Self = StObject.set(x, "TrustIds", js.Array(value :_*))
+    inline def setTrustIdsVarargs(value: TrustId*): Self = StObject.set(x, "TrustIds", js.Array(value*))
   }
 }

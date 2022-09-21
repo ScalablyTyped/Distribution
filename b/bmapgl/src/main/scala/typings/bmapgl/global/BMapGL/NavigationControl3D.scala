@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.NavigationControl3D")
 @js.native
-class NavigationControl3D ()
+open class NavigationControl3D ()
   extends StObject
      with typings.bmapgl.BMapGL.Control {
   def this(opts: NavigationControl3DOptions) = this()

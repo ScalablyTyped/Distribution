@@ -11,9 +11,9 @@ Easy stream-based messaging using RabbitMQ
 | Full name          | rabbit.js |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 38 |
-| # downloads        | 59660 |
-| # stars            | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 13448.0 |
+| # stars            | 1518.0 |
 
 ## Links
 - [Homepage](http://github.com/squaremo/rabbit.js)

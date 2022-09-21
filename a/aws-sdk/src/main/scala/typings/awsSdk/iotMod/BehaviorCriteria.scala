@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BehaviorCriteria extends StObject {
   
   /**
-    * The operator that relates the thing measured (metric) to the criteria (containing a value or statisticalThreshold).
+    * The operator that relates the thing measured (metric) to the criteria (containing a value or statisticalThreshold). Valid operators include:    string-list: in-set and not-in-set     number-list: in-set and not-in-set     ip-address-list: in-cidr-set and not-in-cidr-set     number: less-than, less-than-equals, greater-than, and greater-than-equals   
     */
   var comparisonOperator: js.UndefOr[ComparisonOperator] = js.undefined
   
@@ -22,12 +22,17 @@ trait BehaviorCriteria extends StObject {
   var consecutiveDatapointsToClear: js.UndefOr[ConsecutiveDatapointsToClear] = js.undefined
   
   /**
-    * Use this to specify the time duration over which the behavior is evaluated, for those criteria which have a time dimension (for example, NUM_MESSAGES_SENT). For a statisticalThreshhold metric comparison, measurements from all devices are accumulated over this time duration before being used to calculate percentiles, and later, measurements from an individual device are also accumulated over this time duration before being given a percentile rank.
+    * Use this to specify the time duration over which the behavior is evaluated, for those criteria that have a time dimension (for example, NUM_MESSAGES_SENT). For a statisticalThreshhold metric comparison, measurements from all devices are accumulated over this time duration before being used to calculate percentiles, and later, measurements from an individual device are also accumulated over this time duration before being given a percentile rank. Cannot be used with list-based metric datatypes.
     */
   var durationSeconds: js.UndefOr[DurationSeconds] = js.undefined
   
   /**
-    * A statistical ranking (percentile) which indicates a threshold value by which a behavior is determined to be in compliance or in violation of the behavior.
+    *  The configuration of an ML Detect 
+    */
+  var mlDetectionConfig: js.UndefOr[MachineLearningDetectionConfig] = js.undefined
+  
+  /**
+    * A statistical ranking (percentile)that indicates a threshold value by which a behavior is determined to be in compliance or in violation of the behavior.
     */
   var statisticalThreshold: js.UndefOr[StatisticalThreshold] = js.undefined
   
@@ -60,6 +65,10 @@ object BehaviorCriteria {
     inline def setDurationSeconds(value: DurationSeconds): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
     
     inline def setDurationSecondsUndefined: Self = StObject.set(x, "durationSeconds", js.undefined)
+    
+    inline def setMlDetectionConfig(value: MachineLearningDetectionConfig): Self = StObject.set(x, "mlDetectionConfig", value.asInstanceOf[js.Any])
+    
+    inline def setMlDetectionConfigUndefined: Self = StObject.set(x, "mlDetectionConfig", js.undefined)
     
     inline def setStatisticalThreshold(value: StatisticalThreshold): Self = StObject.set(x, "statisticalThreshold", value.asInstanceOf[js.Any])
     

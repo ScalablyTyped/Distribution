@@ -1442,6 +1442,12 @@ object antDesignIconsReactNativeStrings {
   inline def history: history = "history".asInstanceOf[history]
   
   @js.native
+  sealed trait holder
+    extends StObject
+       with OutlineGlyphMapType
+  inline def holder: holder = "holder".asInstanceOf[holder]
+  
+  @js.native
   sealed trait home
     extends StObject
        with FillGlyphMapType

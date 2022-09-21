@@ -9,11 +9,11 @@ FixedColumns for DataTables
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | datatables.net-fixedcolumns |
-| Keywords           | fixed columns, DataTables, jQuery, table, DataTables |
-| # releases         | 4 |
-| # dependents       | 10 |
-| # downloads        | 1787306 |
-| # stars            | 0 |
+| Keywords           | FixedColumns, Datatables, jQuery, table, filter, sort |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 237253.33333333334 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://datatables.net)

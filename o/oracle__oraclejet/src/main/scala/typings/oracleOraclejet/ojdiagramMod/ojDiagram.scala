@@ -111,47 +111,47 @@ trait ojDiagram[K1, K2, D1, D2]
   
   def addEventListener(
     `type`: animationOnDataChangeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: animationOnDataChangeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: animationOnDisplayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: animationOnDisplayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: highlightMatchChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: highlightMatchChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: hoverBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: hoverBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: linkHighlightModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[linkAndNodes | link], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[linkAndNodes | link], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: linkHighlightModeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[linkAndNodes | link], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[linkAndNodes | link], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
@@ -159,7 +159,7 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -167,35 +167,35 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: panDirectionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[x | y | auto], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[x | y | auto], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: panDirectionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[x | y | auto], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[x | y | auto], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: panningChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: panningChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: promotedLinkBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | full | `lazy`], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | full | `lazy`], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: promotedLinkBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | full | `lazy`], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[none | full | `lazy`], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
@@ -203,7 +203,7 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[single | multiple | none], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -211,59 +211,59 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[single | multiple | none], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: touchResponseChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: touchResponseChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: zoomingChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: zoomingChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[auto | none], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_asChanged(
     `type`: asChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_asChanged(
     `type`: asChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Drop], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Drop], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Drop], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Drop], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_expandedChanged(
     `type`: expandedChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K1]], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K1]], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_expandedChanged(
     `type`: expandedChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K1]], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[KeySet[K1]], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -274,7 +274,7 @@ trait ojDiagram[K1, K2, D1, D2]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -285,30 +285,30 @@ trait ojDiagram[K1, K2, D1, D2]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_hiddenCategoriesChanged(
     `type`: hiddenCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_hiddenCategoriesChanged(
     `type`: hiddenCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_highlightedCategoriesChanged(
     `type`: highlightedCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_highlightedCategoriesChanged(
     `type`: highlightedCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -319,7 +319,7 @@ trait ojDiagram[K1, K2, D1, D2]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -330,7 +330,7 @@ trait ojDiagram[K1, K2, D1, D2]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -340,7 +340,7 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Function1[/* param0 */ DvtDiagramLayoutContext, Unit]], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -349,7 +349,7 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Function1[/* param0 */ DvtDiagramLayoutContext, Unit]], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -359,7 +359,7 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K2, D2]) | Null], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -368,30 +368,30 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K2, D2]) | Null], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_maxZoomChanged(
     `type`: maxZoomChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_maxZoomChanged(
     `type`: maxZoomChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_minZoomChanged(
     `type`: minZoomChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_minZoomChanged(
     `type`: minZoomChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -400,7 +400,7 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K1, D1]) | Null], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -409,7 +409,7 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K1, D1]) | Null], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -419,7 +419,7 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeCollapse, 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -428,7 +428,7 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeCollapse, 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -438,7 +438,7 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeExpand, 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -447,7 +447,7 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeExpand, 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -457,7 +457,7 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojCollapse, 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -466,7 +466,7 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojCollapse, 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -476,7 +476,7 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojExpand, 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -485,19 +485,19 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojExpand, 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_overviewChanged(
     `type`: overviewChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Halign], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Halign], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_overviewChanged(
     `type`: overviewChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Halign], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Halign], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -506,7 +506,7 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement]], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -515,19 +515,19 @@ trait ojDiagram[K1, K2, D1, D2]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement]], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionChanged(
     `type`: selectionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K1 | K2]], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K1 | K2]], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionChanged(
     `type`: selectionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K1 | K2]], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K1 | K2]], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -538,7 +538,7 @@ trait ojDiagram[K1, K2, D1, D2]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -549,30 +549,30 @@ trait ojDiagram[K1, K2, D1, D2]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnimationDuration], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnimationDuration], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnimationDuration], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnimationDuration], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`5`[K1, K2, D1, D2]], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`5`[K1, K2, D1, D2]], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`5`[K1, K2, D1, D2]], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[`5`[K1, K2, D1, D2]], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -583,7 +583,7 @@ trait ojDiagram[K1, K2, D1, D2]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -594,7 +594,7 @@ trait ojDiagram[K1, K2, D1, D2]
       /* ev */ JetElementCustomEvent[
         (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
       ], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -706,107 +706,104 @@ trait ojDiagram[K1, K2, D1, D2]
   
   var nodeHighlightMode: nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node = js.native
   
-  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], js.Any]) | Null = js.native
+  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], Any]) | Null = js.native
   
-  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], js.Any]) | Null = js.native
+  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], Any]) | Null = js.native
   
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], js.Any]) | Null = js.native
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], Any]) | Null = js.native
   
-  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Drop], js.Any]) | Null = js.native
+  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Drop], Any]) | Null = js.native
   
-  var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K1]], js.Any]) | Null = js.native
+  var onExpandedChanged: (js.Function1[/* event */ JetElementCustomEvent[KeySet[K1]], Any]) | Null = js.native
   
   var onFocusRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], js.Any]) | Null = js.native
+  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], Any]) | Null = js.native
   
-  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], js.Any]) | Null = js.native
+  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], Any]) | Null = js.native
   
-  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], js.Any]) | Null = js.native
+  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], Any]) | Null = js.native
   
-  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], js.Any]) | Null = js.native
+  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], Any]) | Null = js.native
   
   var onHoverRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ], 
-    js.Any
+    Any
   ]) | Null = js.native
   
   var onLayoutChanged: (js.Function1[
     /* event */ JetElementCustomEvent[js.Function1[/* param0 */ DvtDiagramLayoutContext, Unit]], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onLinkDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K2, D2]) | Null], js.Any]) | Null = js.native
+  var onLinkDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K2, D2]) | Null], Any]) | Null = js.native
   
-  var onLinkHighlightModeChanged: (js.Function1[/* event */ JetElementCustomEvent[linkAndNodes | link], js.Any]) | Null = js.native
+  var onLinkHighlightModeChanged: (js.Function1[/* event */ JetElementCustomEvent[linkAndNodes | link], Any]) | Null = js.native
   
-  var onMaxZoomChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
+  var onMaxZoomChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], Any]) | Null = js.native
   
-  var onMinZoomChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
+  var onMinZoomChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], Any]) | Null = js.native
   
-  var onNodeDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K1, D1]) | Null], js.Any]) | Null = js.native
+  var onNodeDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K1, D1]) | Null], Any]) | Null = js.native
   
   var onNodeHighlightModeChanged: (js.Function1[
     /* event */ JetElementCustomEvent[nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onOjBeforeCollapse: (js.Function1[
-    /* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeCollapse, 
-    js.Any
-  ]) | Null = js.native
+  var onOjBeforeCollapse: (js.Function1[/* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeCollapse, Any]) | Null = js.native
   
-  var onOjBeforeExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeExpand, js.Any]) | Null = js.native
+  var onOjBeforeExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojBeforeExpand, Any]) | Null = js.native
   
-  var onOjCollapse: (js.Function1[/* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojCollapse, js.Any]) | Null = js.native
+  var onOjCollapse: (js.Function1[/* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojCollapse, Any]) | Null = js.native
   
-  var onOjExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojExpand, js.Any]) | Null = js.native
+  var onOjExpand: (js.Function1[/* event */ typings.oracleOraclejet.ojdiagramMod.ojDiagram.ojExpand, Any]) | Null = js.native
   
-  var onOverviewChanged: (js.Function1[/* event */ JetElementCustomEvent[Halign], js.Any]) | Null = js.native
+  var onOverviewChanged: (js.Function1[/* event */ JetElementCustomEvent[Halign], Any]) | Null = js.native
   
-  var onPanDirectionChanged: (js.Function1[/* event */ JetElementCustomEvent[x | y | auto], js.Any]) | Null = js.native
+  var onPanDirectionChanged: (js.Function1[/* event */ JetElementCustomEvent[x | y | auto], Any]) | Null = js.native
   
-  var onPanningChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], js.Any]) | Null = js.native
+  var onPanningChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], Any]) | Null = js.native
   
-  var onPromotedLinkBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[none | full | `lazy`], js.Any]) | Null = js.native
+  var onPromotedLinkBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[none | full | `lazy`], Any]) | Null = js.native
   
   var onRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement]], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K1 | K2]], js.Any]) | Null = js.native
+  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K1 | K2]], Any]) | Null = js.native
   
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], js.Any]) | Null = js.native
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], Any]) | Null = js.native
   
   var onSelectionRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnimationDuration], js.Any]) | Null = js.native
+  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnimationDuration], Any]) | Null = js.native
   
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`5`[K1, K2, D1, D2]], js.Any]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`5`[K1, K2, D1, D2]], Any]) | Null = js.native
   
-  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], js.Any]) | Null = js.native
+  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], Any]) | Null = js.native
   
   var onZoomRendererChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       (js.Function1[/* context */ RendererContext[K1, D1], InsertSVGElement | Unit]) | Null
     ], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], js.Any]) | Null = js.native
+  var onZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], Any]) | Null = js.native
   
   var overview: Halign = js.native
   
@@ -826,35 +823,21 @@ trait ojDiagram[K1, K2, D1, D2]
   
   def setProperties(properties: ojDiagramSettablePropertiesLenient[K1, K2, D1, D2]): Unit = js.native
   
-  def setProperty(property: animationOnDataChange, value: auto): Unit = js.native
-  def setProperty(property: animationOnDataChange, value: none): Unit = js.native
-  def setProperty(property: animationOnDisplay, value: auto): Unit = js.native
-  def setProperty(property: animationOnDisplay, value: none): Unit = js.native
-  def setProperty(property: highlightMatch, value: all): Unit = js.native
-  def setProperty(property: highlightMatch, value: any): Unit = js.native
-  def setProperty(property: hoverBehavior, value: dim): Unit = js.native
-  def setProperty(property: hoverBehavior, value: none): Unit = js.native
-  def setProperty(property: linkHighlightMode, value: link): Unit = js.native
-  def setProperty(property: linkHighlightMode, value: linkAndNodes): Unit = js.native
-  def setProperty(property: nodeHighlightMode, value: node): Unit = js.native
-  def setProperty(property: nodeHighlightMode, value: nodeAndIncomingLinks): Unit = js.native
-  def setProperty(property: nodeHighlightMode, value: nodeAndLinks): Unit = js.native
-  def setProperty(property: nodeHighlightMode, value: nodeAndOutgoingLinks): Unit = js.native
-  def setProperty(property: panDirection, value: auto): Unit = js.native
-  def setProperty(property: panDirection, value: x): Unit = js.native
-  def setProperty(property: panDirection, value: y): Unit = js.native
-  def setProperty(property: panning, value: auto): Unit = js.native
-  def setProperty(property: panning, value: none): Unit = js.native
-  def setProperty(property: promotedLinkBehavior, value: `lazy`): Unit = js.native
-  def setProperty(property: promotedLinkBehavior, value: full): Unit = js.native
-  def setProperty(property: promotedLinkBehavior, value: none): Unit = js.native
-  def setProperty(property: selectionMode, value: multiple): Unit = js.native
-  def setProperty(property: selectionMode, value: none): Unit = js.native
-  def setProperty(property: selectionMode, value: single): Unit = js.native
-  def setProperty(property: touchResponse, value: auto): Unit = js.native
-  def setProperty(property: touchResponse, value: touchStart): Unit = js.native
-  def setProperty(property: zooming, value: auto): Unit = js.native
-  def setProperty(property: zooming, value: none): Unit = js.native
+  def setProperty(property: animationOnDataChange, value: auto | none): Unit = js.native
+  def setProperty(property: animationOnDisplay, value: auto | none): Unit = js.native
+  def setProperty(property: highlightMatch, value: any | all): Unit = js.native
+  def setProperty(property: hoverBehavior, value: dim | none): Unit = js.native
+  def setProperty(property: linkHighlightMode, value: linkAndNodes | link): Unit = js.native
+  def setProperty(
+    property: nodeHighlightMode,
+    value: nodeAndIncomingLinks | nodeAndOutgoingLinks | nodeAndLinks | node
+  ): Unit = js.native
+  def setProperty(property: panDirection, value: x | y | auto): Unit = js.native
+  def setProperty(property: panning, value: auto | none): Unit = js.native
+  def setProperty(property: promotedLinkBehavior, value: none | full | `lazy`): Unit = js.native
+  def setProperty(property: selectionMode, value: single | multiple | none): Unit = js.native
+  def setProperty(property: touchResponse, value: touchStart | auto): Unit = js.native
+  def setProperty(property: zooming, value: auto | none): Unit = js.native
   @JSName("setProperty")
   def setProperty_as(property: as, value: String): Unit = js.native
   @JSName("setProperty")
@@ -1046,13 +1029,13 @@ object ojDiagram {
       
       inline def setData(value: js.Object | js.Array[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setId(value: K1 | K2): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setItemData(value: D1 | D2 | js.Array[D2]): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
       
-      inline def setItemDataVarargs(value: D2*): Self = StObject.set(x, "itemData", js.Array(value :_*))
+      inline def setItemDataVarargs(value: D2*): Self = StObject.set(x, "itemData", js.Array(value*))
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

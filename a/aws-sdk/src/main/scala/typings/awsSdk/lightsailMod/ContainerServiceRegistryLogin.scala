@@ -9,7 +9,7 @@ trait ContainerServiceRegistryLogin extends StObject {
   /**
     * The timestamp of when the container image registry username and password expire. The log in credentials expire 12 hours after they are created, at which point you will need to create a new set of log in credentials using the CreateContainerServiceRegistryLogin action.
     */
-  var expiresAt: js.UndefOr[IsoDate] = js.undefined
+  var expiresAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The container service registry password to use to push container images to the container image registry of a Lightsail account
@@ -35,7 +35,7 @@ object ContainerServiceRegistryLogin {
   
   extension [Self <: ContainerServiceRegistryLogin](x: Self) {
     
-    inline def setExpiresAt(value: IsoDate): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+    inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
     
     inline def setExpiresAtUndefined: Self = StObject.set(x, "expiresAt", js.undefined)
     

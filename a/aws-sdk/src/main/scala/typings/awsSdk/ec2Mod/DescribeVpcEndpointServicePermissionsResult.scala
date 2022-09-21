@@ -29,7 +29,7 @@ object DescribeVpcEndpointServicePermissionsResult {
     
     inline def setAllowedPrincipalsUndefined: Self = StObject.set(x, "AllowedPrincipals", js.undefined)
     
-    inline def setAllowedPrincipalsVarargs(value: AllowedPrincipal*): Self = StObject.set(x, "AllowedPrincipals", js.Array(value :_*))
+    inline def setAllowedPrincipalsVarargs(value: AllowedPrincipal*): Self = StObject.set(x, "AllowedPrincipals", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

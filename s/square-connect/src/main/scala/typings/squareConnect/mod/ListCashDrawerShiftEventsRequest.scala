@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ListCashDrawerShiftEventsRequest")
 @js.native
-class ListCashDrawerShiftEventsRequest () extends StObject {
+open class ListCashDrawerShiftEventsRequest () extends StObject {
   
   /**
     * Opaque cursor for fetching the next page of results.

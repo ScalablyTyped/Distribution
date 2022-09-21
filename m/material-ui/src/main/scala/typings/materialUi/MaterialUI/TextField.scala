@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait TextField
-  extends Component[TextFieldProps, js.Object, js.Any] {
+  extends Component[TextFieldProps, js.Object, Any] {
   
   def blur(): Unit = js.native
   

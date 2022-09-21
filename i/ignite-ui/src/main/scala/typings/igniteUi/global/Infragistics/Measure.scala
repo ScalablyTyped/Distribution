@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.Measure")
 @js.native
-class Measure ()
+open class Measure ()
   extends StObject
      with typings.igniteUi.Infragistics.Measure {
   

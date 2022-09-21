@@ -10,10 +10,10 @@ Library for converting numbers from one radix representation (encoding) to anoth
 | ------------------ | :-------------: |
 | Full name          | power-radix |
 | Keywords           | arithmetic, base conversion, base convert, base, base10, base58 decode, base58 encode, base58, base64 decode, base64 encode, base64, conversion, convert, decode, encode, hex, math, power, radix conversion, radix convert, radix |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 11207 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 736.6666666666666 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/cflynn07/power-radix)

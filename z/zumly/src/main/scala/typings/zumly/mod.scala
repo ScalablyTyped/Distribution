@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("zumly", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with typings.zumly.mod.zumly {
     /**
@@ -86,7 +86,7 @@ object mod {
     }
   }
   
-  type WithRender = (Record[String, js.Any]) & Render
+  type WithRender = (Record[String, Any]) & Render
   
   trait zumly extends StObject {
     

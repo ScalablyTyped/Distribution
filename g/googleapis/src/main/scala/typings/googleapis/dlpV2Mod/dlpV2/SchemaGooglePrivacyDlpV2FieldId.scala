@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * General identifier of a data field in a storage service.
-  */
 trait SchemaGooglePrivacyDlpV2FieldId extends StObject {
   
   /**
     * Name describing the field.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2FieldId {
   
@@ -24,6 +21,8 @@ object SchemaGooglePrivacyDlpV2FieldId {
   extension [Self <: SchemaGooglePrivacyDlpV2FieldId](x: Self) {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

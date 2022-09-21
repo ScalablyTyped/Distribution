@@ -43,7 +43,7 @@ object GetDefaultRetentionPolicyResponse {
     
     inline def setFolderConfigurationsUndefined: Self = StObject.set(x, "FolderConfigurations", js.undefined)
     
-    inline def setFolderConfigurationsVarargs(value: FolderConfiguration*): Self = StObject.set(x, "FolderConfigurations", js.Array(value :_*))
+    inline def setFolderConfigurationsVarargs(value: FolderConfiguration*): Self = StObject.set(x, "FolderConfigurations", js.Array(value*))
     
     inline def setId(value: ShortString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

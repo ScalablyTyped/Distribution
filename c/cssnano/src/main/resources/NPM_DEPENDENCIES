@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "cssnano" : "5.1.13"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "cssnano" : "5.1.13"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

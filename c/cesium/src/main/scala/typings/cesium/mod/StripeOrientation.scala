@@ -13,12 +13,18 @@ object StripeOrientation extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[StripeOrientation & Double] = js.native
   
+  /**
+    * Horizontal orientation.
+    */
   @js.native
   sealed trait HORIZONTAL
     extends StObject
        with StripeOrientation
   /* 0 */ val HORIZONTAL: typings.cesium.mod.StripeOrientation.HORIZONTAL & Double = js.native
   
+  /**
+    * Vertical orientation.
+    */
   @js.native
   sealed trait VERTICAL
     extends StObject

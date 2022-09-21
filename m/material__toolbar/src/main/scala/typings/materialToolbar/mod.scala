@@ -1,11 +1,11 @@
 package typings.materialToolbar
 
+import typings.materialBase.Element
 import typings.materialToolbar.adapterMod.MDCToolbarAdapter
 import typings.materialToolbar.anon.CHANGEEVENT
 import typings.materialToolbar.anon.FIXED
 import typings.materialToolbar.anon.MAXTITLESIZE
 import typings.materialToolbar.anon.PartialMDCToolbarAdapter
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,14 +14,10 @@ object mod {
   
   @JSImport("@material/toolbar", "MDCToolbar")
   @js.native
-  class MDCToolbar protected ()
+  open class MDCToolbar protected ()
     extends typings.materialToolbar.componentMod.MDCToolbar {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(
-      root: Element,
-      foundation: typings.materialToolbar.foundationMod.MDCToolbarFoundation,
-      args: js.Any*
-    ) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: typings.materialToolbar.foundationMod.MDCToolbarFoundation, args: Any*) = this()
   }
   /* static members */
   object MDCToolbar {
@@ -30,12 +26,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialToolbar.componentMod.MDCToolbar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialToolbar.componentMod.MDCToolbar]
+    inline def attachTo(root: typings.std.Element): typings.materialToolbar.componentMod.MDCToolbar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialToolbar.componentMod.MDCToolbar]
   }
   
   @JSImport("@material/toolbar", "MDCToolbarFoundation")
   @js.native
-  class MDCToolbarFoundation ()
+  open class MDCToolbarFoundation ()
     extends typings.materialToolbar.foundationMod.MDCToolbarFoundation {
     def this(adapter: PartialMDCToolbarAdapter) = this()
   }

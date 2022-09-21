@@ -19,7 +19,7 @@ trait SlicerItems extends StObject {
   def Item(Index: String): SlicerItem = js.native
   def Item(Index: Double): SlicerItem = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): SlicerItem = js.native
+  def _Default(Index: Any): SlicerItem = js.native
 }

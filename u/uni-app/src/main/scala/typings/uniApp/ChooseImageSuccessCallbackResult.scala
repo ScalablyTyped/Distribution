@@ -9,7 +9,7 @@ trait ChooseImageSuccessCallbackResult extends StObject {
   /**
     * 图片的本地文件路径列表
     */
-  var tempFilePaths: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  var tempFilePaths: js.UndefOr[String | js.Array[Any]] = js.undefined
   
   /**
     * 图片的本地文件列表，每一项是一个 File 对象
@@ -27,16 +27,16 @@ object ChooseImageSuccessCallbackResult {
   
   extension [Self <: ChooseImageSuccessCallbackResult](x: Self) {
     
-    inline def setTempFilePaths(value: String | js.Array[js.Any]): Self = StObject.set(x, "tempFilePaths", value.asInstanceOf[js.Any])
+    inline def setTempFilePaths(value: String | js.Array[Any]): Self = StObject.set(x, "tempFilePaths", value.asInstanceOf[js.Any])
     
     inline def setTempFilePathsUndefined: Self = StObject.set(x, "tempFilePaths", js.undefined)
     
-    inline def setTempFilePathsVarargs(value: js.Any*): Self = StObject.set(x, "tempFilePaths", js.Array(value :_*))
+    inline def setTempFilePathsVarargs(value: Any*): Self = StObject.set(x, "tempFilePaths", js.Array(value*))
     
     inline def setTempFiles(value: ChooseImageSuccessCallbackResultFile | js.Array[ChooseImageSuccessCallbackResultFile]): Self = StObject.set(x, "tempFiles", value.asInstanceOf[js.Any])
     
     inline def setTempFilesUndefined: Self = StObject.set(x, "tempFiles", js.undefined)
     
-    inline def setTempFilesVarargs(value: ChooseImageSuccessCallbackResultFile*): Self = StObject.set(x, "tempFiles", js.Array(value :_*))
+    inline def setTempFilesVarargs(value: ChooseImageSuccessCallbackResultFile*): Self = StObject.set(x, "tempFiles", js.Array(value*))
   }
 }

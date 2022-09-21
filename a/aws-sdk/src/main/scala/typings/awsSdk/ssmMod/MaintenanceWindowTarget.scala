@@ -17,7 +17,7 @@ trait MaintenanceWindowTarget extends StObject {
   var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   
   /**
-    * A user-provided value that will be included in any CloudWatch events that are raised while running tasks for these targets in this maintenance window.
+    * A user-provided value that will be included in any Amazon CloudWatch Events events that are raised while running tasks for these targets in this maintenance window.
     */
   var OwnerInformation: js.UndefOr[typings.awsSdk.ssmMod.OwnerInformation] = js.undefined
   
@@ -27,7 +27,7 @@ trait MaintenanceWindowTarget extends StObject {
   var ResourceType: js.UndefOr[MaintenanceWindowResourceType] = js.undefined
   
   /**
-    * The targets, either instances or tags. Specify instances using the following format:  Key=instanceids,Values=&lt;instanceid1&gt;,&lt;instanceid2&gt;  Tags are specified using the following format:  Key=&lt;tag name&gt;,Values=&lt;tag value&gt;.
+    * The targets, either managed nodes or tags. Specify managed nodes using the following format:  Key=instanceids,Values=&lt;instanceid1&gt;,&lt;instanceid2&gt;  Tags are specified using the following format:  Key=&lt;tag name&gt;,Values=&lt;tag value&gt;.
     */
   var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.undefined
   
@@ -70,7 +70,7 @@ object MaintenanceWindowTarget {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
-    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value*))
     
     inline def setWindowId(value: MaintenanceWindowId): Self = StObject.set(x, "WindowId", value.asInstanceOf[js.Any])
     

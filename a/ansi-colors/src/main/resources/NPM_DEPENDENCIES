@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ansi-colors" : "4.1.1"
+      "ansi-colors" : "4.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "ansi-colors" : "4.1.1"
+      "ansi-colors" : "4.1.3"
     }
   ],
   "compile-devDependencies" : [

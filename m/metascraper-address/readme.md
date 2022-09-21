@@ -11,9 +11,9 @@ A metascraper rule to extract address information from websites
 | Full name          | metascraper-address |
 | Keywords           | metascraper, address, street, location, poi, scrape, parse |
 | # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 466 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1129.6666666666667 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/goodhood-eu/metascraper-address#readme)

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.View")
 @js.native
-class View protected ()
+open class View protected ()
   extends StObject
      with typings.kendoUi.kendo.View {
   def this(element: String) = this()

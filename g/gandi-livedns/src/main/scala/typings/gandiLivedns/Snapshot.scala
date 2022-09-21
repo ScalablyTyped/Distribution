@@ -32,7 +32,7 @@ object Snapshot {
     
     inline def setZone_data(value: js.Array[ZoneRecord]): Self = StObject.set(x, "zone_data", value.asInstanceOf[js.Any])
     
-    inline def setZone_dataVarargs(value: ZoneRecord*): Self = StObject.set(x, "zone_data", js.Array(value :_*))
+    inline def setZone_dataVarargs(value: ZoneRecord*): Self = StObject.set(x, "zone_data", js.Array(value*))
     
     inline def setZone_uuid(value: String): Self = StObject.set(x, "zone_uuid", value.asInstanceOf[js.Any])
   }

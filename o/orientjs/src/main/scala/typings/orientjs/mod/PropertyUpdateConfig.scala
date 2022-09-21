@@ -1,14 +1,13 @@
 package typings.orientjs.mod
 
 import typings.orientjs.anon.Fields
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PropertyUpdateConfig extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.undefined
+  var default: js.UndefOr[Any] = js.undefined
   
   var collate: js.UndefOr[String] = js.undefined
   
@@ -30,7 +29,7 @@ trait PropertyUpdateConfig extends StObject {
   
   var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var regexp: js.UndefOr[RegExp | String] = js.undefined
+  var regexp: js.UndefOr[js.RegExp | String] = js.undefined
   
   var `type`: PropertyType
 }
@@ -52,7 +51,7 @@ object PropertyUpdateConfig {
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
@@ -86,7 +85,7 @@ object PropertyUpdateConfig {
     
     inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
     
-    inline def setRegexp(value: RegExp | String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+    inline def setRegexp(value: js.RegExp | String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     
     inline def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
     

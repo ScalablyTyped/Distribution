@@ -2,7 +2,6 @@ package typings.materialUiCore.anon
 
 import typings.enzyme.mod.MountRendererProps
 import typings.enzyme.mod.ReactWrapper
-import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -13,8 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NonePSnodeReactElementopt extends StObject {
   
-  def apply[P](node: ReactElement): ReactWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
-  def apply[P](node: ReactElement, options: MountRendererProps): ReactWrapper[P, js.Any, Component[js.Object, js.Object, js.Any]] = js.native
+  def apply[P](node: ReactElement): ReactWrapper[P, Any, typings.react.mod.Component[js.Object, js.Object, Any]] = js.native
+  def apply[P](node: ReactElement, options: MountRendererProps): ReactWrapper[P, Any, typings.react.mod.Component[js.Object, js.Object, Any]] = js.native
   
   var attachTo: HTMLElement = js.native
   

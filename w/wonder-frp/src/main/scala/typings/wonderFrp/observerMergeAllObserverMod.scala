@@ -11,10 +11,10 @@ object observerMergeAllObserverMod {
   
   @JSImport("wonder-frp/dist/es2015/observer/MergeAllObserver", "MergeAllObserver")
   @js.native
-  class MergeAllObserver protected () extends Observer {
+  open class MergeAllObserver protected () extends Observer {
     def this(currentObserver: IObserver, groupDisposable: GroupDisposable) = this()
     
-    /* private */ var _groupDisposable: js.Any = js.native
+    /* private */ var _groupDisposable: Any = js.native
     
     var currentObserver: IObserver = js.native
     

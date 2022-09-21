@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("parse", "GeoPoint")
 @js.native
-class GeoPoint ()
+open class GeoPoint ()
   extends typings.parse.mod.global.Parse.GeoPoint {
   def this(coords: js.Tuple2[Double, Double]) = this()
   def this(coords: Latitude) = this()

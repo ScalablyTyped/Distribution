@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDiscoveredResourcesRequest extends StObject {
   
   /**
-    * Specifies whether AWS Config includes deleted resources in the results. By default, deleted resources are not included.
+    * Specifies whether Config includes deleted resources in the results. By default, deleted resources are not included.
     */
   var includeDeletedResources: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The maximum number of resource identifiers returned on each page. The default is 100. You cannot specify a number greater than 100. If you specify 0, AWS Config uses the default.
+    * The maximum number of resource identifiers returned on each page. The default is 100. You cannot specify a number greater than 100. If you specify 0, Config uses the default.
     */
   var limit: js.UndefOr[Limit] = js.undefined
   
@@ -22,17 +22,17 @@ trait ListDiscoveredResourcesRequest extends StObject {
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * The IDs of only those resources that you want AWS Config to list in the response. If you do not specify this parameter, AWS Config lists all resources of the specified type that it has discovered.
+    * The IDs of only those resources that you want Config to list in the response. If you do not specify this parameter, Config lists all resources of the specified type that it has discovered.
     */
   var resourceIds: js.UndefOr[ResourceIdList] = js.undefined
   
   /**
-    * The custom name of only those resources that you want AWS Config to list in the response. If you do not specify this parameter, AWS Config lists all resources of the specified type that it has discovered.
+    * The custom name of only those resources that you want Config to list in the response. If you do not specify this parameter, Config lists all resources of the specified type that it has discovered.
     */
   var resourceName: js.UndefOr[ResourceName] = js.undefined
   
   /**
-    * The type of resources that you want AWS Config to list in the response.
+    * The type of resources that you want Config to list in the response.
     */
   var resourceType: ResourceType
 }
@@ -61,7 +61,7 @@ object ListDiscoveredResourcesRequest {
     
     inline def setResourceIdsUndefined: Self = StObject.set(x, "resourceIds", js.undefined)
     
-    inline def setResourceIdsVarargs(value: ResourceId*): Self = StObject.set(x, "resourceIds", js.Array(value :_*))
+    inline def setResourceIdsVarargs(value: ResourceId*): Self = StObject.set(x, "resourceIds", js.Array(value*))
     
     inline def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     

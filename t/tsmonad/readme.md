@@ -10,10 +10,10 @@ TsMonad - fun-size monads library for TypeScript
 | ------------------ | :-------------: |
 | Full name          | tsmonad |
 | Keywords           | typescript, monad, functional |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 60476 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10092.333333333334 |
+| # stars            | 386.0 |
 
 ## Links
 - [Homepage](https://github.com/cbowdon/TsMonad#readme)

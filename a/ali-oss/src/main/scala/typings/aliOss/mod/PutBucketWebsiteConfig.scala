@@ -6,9 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PutBucketWebsiteConfig extends StObject {
   
-  // default page, e.g.: index.html
+  /** error page, e.g.: 'error.html' */
   var error: js.UndefOr[String] = js.undefined
   
+  /** default page, e.g.: index.html */
   var index: String
 }
 object PutBucketWebsiteConfig {

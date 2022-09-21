@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientTreeViewNodeEventArgs")
 @js.native
-class BootstrapClientTreeViewNodeEventArgs protected ()
+open class BootstrapClientTreeViewNodeEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientTreeViewNodeEventArgs {
   /**

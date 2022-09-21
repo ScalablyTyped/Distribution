@@ -76,6 +76,6 @@ object DragDropContextProps {
     
     inline def setSensorsUndefined: Self = StObject.set(x, "sensors", js.undefined)
     
-    inline def setSensorsVarargs(value: Sensor*): Self = StObject.set(x, "sensors", js.Array(value :_*))
+    inline def setSensorsVarargs(value: Sensor*): Self = StObject.set(x, "sensors", js.Array(value*))
   }
 }

@@ -1,8 +1,14 @@
 package typings.fpTs
 
+import typings.fpTs.applicativeMod.Applicative2C
+import typings.fpTs.applyMod.Apply2C
+import typings.fpTs.chainMod.Chain2C
+import typings.fpTs.fpTsStrings.Writer
 import typings.fpTs.functorMod.Functor2
 import typings.fpTs.monadMod.Monad2C
 import typings.fpTs.monoidMod.Monoid
+import typings.fpTs.pointedMod.Pointed2C
+import typings.fpTs.semigroupMod.Semigroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +28,7 @@ object writerMod {
   val URI: /* "Writer" */ String = js.native
   type URI = /* "Writer" */ String
   
-  inline def censor[W](f: js.Function1[/* w */ W, W]): js.Function1[/* fa */ Writer_[W, js.Any], Writer_[W, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("censor")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Writer_[W, js.Any], Writer_[W, js.Any]]]
+  inline def censor[W](f: js.Function1[/* w */ W, W]): js.Function1[/* fa */ Writer_[W, Any], Writer_[W, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("censor")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Writer_[W, Any], Writer_[W, Any]]]
   
   inline def evalWriter[W, A](fa: Writer_[W, A]): A = ^.asInstanceOf[js.Dynamic].applyDynamic("evalWriter")(fa.asInstanceOf[js.Any]).asInstanceOf[A]
   
@@ -32,13 +38,23 @@ object writerMod {
   
   inline def execute[W, A](fa: Writer_[W, A]): W = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(fa.asInstanceOf[js.Any]).asInstanceOf[W]
   
+  inline def flap[A](a: A): js.Function1[/* fab */ Writer_[Any, js.Function1[/* a */ A, Any]], Writer_[Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Writer_[Any, js.Function1[/* a */ A, Any]], Writer_[Any, Any]]]
+  
+  inline def getApplicative[W](M: Monoid[W]): Applicative2C[Writer, W] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicative")(M.asInstanceOf[js.Any]).asInstanceOf[Applicative2C[Writer, W]]
+  
+  inline def getApply[W](S: Semigroup[W]): Apply2C[Writer, W] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApply")(S.asInstanceOf[js.Any]).asInstanceOf[Apply2C[Writer, W]]
+  
+  inline def getChain[W](M: Monoid[W]): Chain2C[typings.fpTs.writerMod.URI, W] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChain")(M.asInstanceOf[js.Any]).asInstanceOf[Chain2C[typings.fpTs.writerMod.URI, W]]
+  
   inline def getMonad[W](M: Monoid[W]): Monad2C[typings.fpTs.writerMod.URI, W] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonad")(M.asInstanceOf[js.Any]).asInstanceOf[Monad2C[typings.fpTs.writerMod.URI, W]]
+  
+  inline def getPointed[W](M: Monoid[W]): Pointed2C[Writer, W] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointed")(M.asInstanceOf[js.Any]).asInstanceOf[Pointed2C[Writer, W]]
   
   inline def listen[W, A](fa: Writer_[W, A]): Writer_[W, js.Tuple2[A, W]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(fa.asInstanceOf[js.Any]).asInstanceOf[Writer_[W, js.Tuple2[A, W]]]
   
-  inline def listens[W, B](f: js.Function1[/* w */ W, B]): js.Function1[/* fa */ Writer_[W, js.Any], Writer_[W, js.Tuple2[js.Any, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listens")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Writer_[W, js.Any], Writer_[W, js.Tuple2[js.Any, B]]]]
+  inline def listens[W, B](f: js.Function1[/* w */ W, B]): js.Function1[/* fa */ Writer_[W, Any], Writer_[W, js.Tuple2[Any, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listens")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Writer_[W, Any], Writer_[W, js.Tuple2[Any, B]]]]
   
-  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Writer_[js.Any, A], Writer_[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Writer_[js.Any, A], Writer_[js.Any, B]]]
+  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Writer_[Any, A], Writer_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Writer_[Any, A], Writer_[Any, B]]]
   
   inline def pass[W, A](fa: Writer_[W, js.Tuple2[A, js.Function1[/* w */ W, W]]]): Writer_[W, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("pass")(fa.asInstanceOf[js.Any]).asInstanceOf[Writer_[W, A]]
   

@@ -10,7 +10,7 @@ trait DataPolicyOperation
   
   /**
     * Represents when the request for this data policy operation was completed, in UTC time, using the ISO 8601 format. For
-    * example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Null until the operation completes.
+    * example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Null until the operation completes.
     */
   var completedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -25,7 +25,7 @@ trait DataPolicyOperation
   
   /**
     * Represents when the request for this data operation was submitted, in UTC time, using the ISO 8601 format. For example,
-    * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var submittedDateTime: js.UndefOr[String] = js.undefined
   

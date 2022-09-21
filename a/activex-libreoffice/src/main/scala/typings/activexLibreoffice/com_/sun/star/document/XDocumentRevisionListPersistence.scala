@@ -34,7 +34,7 @@ object XDocumentRevisionListPersistence {
   inline def apply(
     acquire: () => Unit,
     load: XStorage => SafeArray[RevisionTag],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     store: (XStorage, SeqEquiv[RevisionTag]) => Unit
   ): XDocumentRevisionListPersistence = {

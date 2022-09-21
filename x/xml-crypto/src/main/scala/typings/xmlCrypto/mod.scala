@@ -2,7 +2,7 @@ package typings.xmlCrypto
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Node
 import typings.xmlCrypto.anon.Attrs
 import typings.xmlCrypto.anon.CanonicalizationAlgorithm
@@ -19,7 +19,7 @@ object mod {
   
   @JSImport("xml-crypto", "FileKeyInfo")
   @js.native
-  class FileKeyInfo () extends StObject {
+  open class FileKeyInfo () extends StObject {
     def this(file: String) = this()
     
     var file: String = js.native
@@ -35,7 +35,7 @@ object mod {
   
   @JSImport("xml-crypto", "HashAlgorithm")
   @js.native
-  class HashAlgorithm () extends StObject {
+  open class HashAlgorithm () extends StObject {
     
     def getAlgorithmName(): String = js.native
     
@@ -44,7 +44,7 @@ object mod {
   
   @JSImport("xml-crypto", "SignatureAlgorithm")
   @js.native
-  class SignatureAlgorithm () extends StObject {
+  open class SignatureAlgorithm () extends StObject {
     
     def getAlgorithmName(): String = js.native
     
@@ -53,7 +53,7 @@ object mod {
   
   @JSImport("xml-crypto", "SignedXml")
   @js.native
-  class SignedXml () extends StObject {
+  open class SignedXml () extends StObject {
     def this(idMode: String) = this()
     def this(idMode: String, options: CanonicalizationAlgorithm) = this()
     def this(idMode: Null, options: CanonicalizationAlgorithm) = this()
@@ -120,7 +120,7 @@ object mod {
   
   @JSImport("xml-crypto", "TransformationAlgorithm")
   @js.native
-  class TransformationAlgorithm () extends StObject {
+  open class TransformationAlgorithm () extends StObject {
     
     def getAlgorithmName(): String = js.native
     
@@ -174,7 +174,7 @@ object mod {
       
       inline def setTransformsUndefined: Self = StObject.set(x, "transforms", js.undefined)
       
-      inline def setTransformsVarargs(value: String*): Self = StObject.set(x, "transforms", js.Array(value :_*))
+      inline def setTransformsVarargs(value: String*): Self = StObject.set(x, "transforms", js.Array(value*))
       
       inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       

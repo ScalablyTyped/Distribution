@@ -128,6 +128,13 @@ object mod {
     def formatHex(): String
     
     /**
+      * Returns a hexadecimal string representing this color in RGBA space, such as #f7eaba90.
+      * If this color is not displayable, a suitable displayable color is returned instead.
+      * For example, RGB channel values greater than 255 are clamped to 255.
+      */
+    def formatHex8(): String
+    
+    /**
       * Returns a string representing this color according to the CSS Color Module Level 3 specification, such as hsl(257, 50%, 80%) or hsla(257, 50%, 80%, 0.2).
       * If this color is not displayable, a suitable displayable color is returned instead by clamping S and L channel values to the interval [0, 100].
       */
@@ -149,11 +156,12 @@ object mod {
     inline def apply(
       displayable: () => Boolean,
       formatHex: () => String,
+      formatHex8: () => String,
       formatHsl: () => String,
       formatRgb: () => String,
       hex: () => String
     ): Color_ = {
-      val __obj = js.Dynamic.literal(displayable = js.Any.fromFunction0(displayable), formatHex = js.Any.fromFunction0(formatHex), formatHsl = js.Any.fromFunction0(formatHsl), formatRgb = js.Any.fromFunction0(formatRgb), hex = js.Any.fromFunction0(hex))
+      val __obj = js.Dynamic.literal(displayable = js.Any.fromFunction0(displayable), formatHex = js.Any.fromFunction0(formatHex), formatHex8 = js.Any.fromFunction0(formatHex8), formatHsl = js.Any.fromFunction0(formatHsl), formatRgb = js.Any.fromFunction0(formatRgb), hex = js.Any.fromFunction0(hex))
       __obj.asInstanceOf[Color_]
     }
     
@@ -162,6 +170,8 @@ object mod {
       inline def setDisplayable(value: () => Boolean): Self = StObject.set(x, "displayable", js.Any.fromFunction0(value))
       
       inline def setFormatHex(value: () => String): Self = StObject.set(x, "formatHex", js.Any.fromFunction0(value))
+      
+      inline def setFormatHex8(value: () => String): Self = StObject.set(x, "formatHex8", js.Any.fromFunction0(value))
       
       inline def setFormatHsl(value: () => String): Self = StObject.set(x, "formatHsl", js.Any.fromFunction0(value))
       
@@ -241,6 +251,7 @@ object mod {
       *
       * @param color A permissible color space instance.
       */
+    // tslint:disable-next-line:unified-signatures
     def apply(color: ColorSpaceObject): CubehelixColor = js.native
     /**
       * Parses the specified CSS Color Module Level 3 specifier string, returning an Cubehelix color.
@@ -340,6 +351,7 @@ object mod {
       *
       * @param color A permissible color space instance.
       */
+    // tslint:disable-next-line:unified-signatures
     def apply(color: ColorSpaceObject): HCLColor = js.native
     /**
       * Parses the specified CSS Color Module Level 3 specifier string, returning an HCL color.
@@ -374,6 +386,11 @@ object mod {
       */
     def brighter(): this.type = js.native
     def brighter(k: Double): this.type = js.native
+    
+    /**
+      * Returns a new HSL color where the h channel is clamped to the range [0, 360), and the s, l, and opacity channels are clamped to the range [0, 1].
+      */
+    def clamp(): this.type = js.native
     
     /**
       * Returns a copy of this color.
@@ -430,6 +447,7 @@ object mod {
       *
       * @param color A permissible color space instance.
       */
+    // tslint:disable-next-line:unified-signatures
     def apply(color: ColorSpaceObject): HSLColor = js.native
     /**
       * Parses the specified CSS Color Module Level 3 specifier string, returning an HSL color.
@@ -462,6 +480,7 @@ object mod {
       *
       * @param color A permissible color space instance.
       */
+    // tslint:disable-next-line:unified-signatures
     def apply(color: ColorSpaceObject): HCLColor = js.native
     /**
       * Parses the specified CSS Color Module Level 3 specifier string, returning an HCL color.
@@ -553,6 +572,7 @@ object mod {
       *
       * @param color A permissible color space instance.
       */
+    // tslint:disable-next-line:unified-signatures
     def apply(color: ColorSpaceObject): LabColor = js.native
     /**
       * Parses the specified CSS Color Module Level 3 specifier string, returning a Lab color.
@@ -592,6 +612,12 @@ object mod {
       */
     def brighter(): this.type = js.native
     def brighter(k: Double): this.type = js.native
+    
+    /**
+      * Returns a new RGB color where the r, g, and b channels are clamped to the range [0, 255] and rounded to the nearest integer value,
+      * and the opacity is clamped to the range [0, 1].
+      */
+    def clamp(): this.type = js.native
     
     /**
       * Returns a copy of this color.
@@ -642,6 +668,7 @@ object mod {
       *
       * @param color A permissible color space instance.
       */
+    // tslint:disable-next-line:unified-signatures
     def apply(color: ColorSpaceObject): RGBColor = js.native
     /**
       * Parses the specified CSS Color Module Level 3 specifier string, returning an RGB color.

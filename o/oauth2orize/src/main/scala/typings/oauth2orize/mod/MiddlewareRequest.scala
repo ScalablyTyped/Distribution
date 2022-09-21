@@ -10,5 +10,5 @@ trait MiddlewareRequest extends IncomingMessage {
   
   var oauth2: js.UndefOr[OAuth2] = js.native
   
-  var user: js.UndefOr[js.Any] = js.native
+  var user: js.UndefOr[Any] = js.native
 }

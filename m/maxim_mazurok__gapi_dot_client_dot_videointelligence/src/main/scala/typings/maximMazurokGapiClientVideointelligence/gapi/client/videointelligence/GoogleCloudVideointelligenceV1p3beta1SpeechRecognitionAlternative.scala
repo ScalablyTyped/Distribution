@@ -43,6 +43,6 @@ object GoogleCloudVideointelligenceV1p3beta1SpeechRecognitionAlternative {
     
     inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
-    inline def setWordsVarargs(value: GoogleCloudVideointelligenceV1p3beta1WordInfo*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: GoogleCloudVideointelligenceV1p3beta1WordInfo*): Self = StObject.set(x, "words", js.Array(value*))
   }
 }

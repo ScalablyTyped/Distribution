@@ -9,20 +9,20 @@ trait LifecycleHook extends StObject {
   /**
     * The name of the Auto Scaling group for the lifecycle hook.
     */
-  var AutoScalingGroupName: js.UndefOr[ResourceName] = js.undefined
+  var AutoScalingGroupName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
-    * Defines the action the Auto Scaling group should take when the lifecycle hook timeout elapses or if an unexpected failure occurs. The possible values are CONTINUE and ABANDON.
+    * The action the Auto Scaling group takes when the lifecycle hook timeout elapses or if an unexpected failure occurs. Valid values: CONTINUE | ABANDON 
     */
   var DefaultResult: js.UndefOr[LifecycleActionResult] = js.undefined
   
   /**
-    * The maximum time, in seconds, that an instance can remain in a Pending:Wait or Terminating:Wait state. The maximum is 172800 seconds (48 hours) or 100 times HeartbeatTimeout, whichever is smaller.
+    * The maximum time, in seconds, that an instance can remain in a wait state. The maximum is 172800 seconds (48 hours) or 100 times HeartbeatTimeout, whichever is smaller.
     */
   var GlobalTimeout: js.UndefOr[typings.awsSdk.autoscalingMod.GlobalTimeout] = js.undefined
   
   /**
-    * The maximum time, in seconds, that can elapse before the lifecycle hook times out. If the lifecycle hook times out, Amazon EC2 Auto Scaling performs the action that you specified in the DefaultResult parameter.
+    * The maximum time, in seconds, that can elapse before the lifecycle hook times out. If the lifecycle hook times out, Amazon EC2 Auto Scaling performs the action that you specified in the DefaultResult property.
     */
   var HeartbeatTimeout: js.UndefOr[typings.awsSdk.autoscalingMod.HeartbeatTimeout] = js.undefined
   
@@ -32,7 +32,7 @@ trait LifecycleHook extends StObject {
   var LifecycleHookName: js.UndefOr[AsciiStringMaxLen255] = js.undefined
   
   /**
-    * The state of the EC2 instance to which to attach the lifecycle hook. The following are possible values:   autoscaling:EC2_INSTANCE_LAUNCHING   autoscaling:EC2_INSTANCE_TERMINATING  
+    * The lifecycle transition. Valid values: autoscaling:EC2_INSTANCE_LAUNCHING | autoscaling:EC2_INSTANCE_TERMINATING 
     */
   var LifecycleTransition: js.UndefOr[typings.awsSdk.autoscalingMod.LifecycleTransition] = js.undefined
   
@@ -42,14 +42,14 @@ trait LifecycleHook extends StObject {
   var NotificationMetadata: js.UndefOr[XmlStringMaxLen1023] = js.undefined
   
   /**
-    * The ARN of the target that Amazon EC2 Auto Scaling sends notifications to when an instance is in the transition state for the lifecycle hook. The notification target can be either an SQS queue or an SNS topic.
+    * The ARN of the target that Amazon EC2 Auto Scaling sends notifications to when an instance is in a wait state for the lifecycle hook.
     */
-  var NotificationTargetARN: js.UndefOr[ResourceName] = js.undefined
+  var NotificationTargetARN: js.UndefOr[NotificationTargetResourceName] = js.undefined
   
   /**
-    * The ARN of the IAM role that allows the Auto Scaling group to publish to the specified notification target.
+    * The ARN of the IAM role that allows the Auto Scaling group to publish to the specified notification target (an Amazon SNS topic or an Amazon SQS queue).
     */
-  var RoleARN: js.UndefOr[ResourceName] = js.undefined
+  var RoleARN: js.UndefOr[XmlStringMaxLen255] = js.undefined
 }
 object LifecycleHook {
   
@@ -60,7 +60,7 @@ object LifecycleHook {
   
   extension [Self <: LifecycleHook](x: Self) {
     
-    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     inline def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
     
@@ -88,11 +88,11 @@ object LifecycleHook {
     
     inline def setNotificationMetadataUndefined: Self = StObject.set(x, "NotificationMetadata", js.undefined)
     
-    inline def setNotificationTargetARN(value: ResourceName): Self = StObject.set(x, "NotificationTargetARN", value.asInstanceOf[js.Any])
+    inline def setNotificationTargetARN(value: NotificationTargetResourceName): Self = StObject.set(x, "NotificationTargetARN", value.asInstanceOf[js.Any])
     
     inline def setNotificationTargetARNUndefined: Self = StObject.set(x, "NotificationTargetARN", js.undefined)
     
-    inline def setRoleARN(value: ResourceName): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: XmlStringMaxLen255): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
     inline def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
   }

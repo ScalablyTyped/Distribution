@@ -1,6 +1,6 @@
 package typings.typedoc
 
-import typings.typedoc.optionsOptionsMod.Options
+import typings.typedoc.anon.PickOptionsaddDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,5 @@ object optionsSourcesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addTSOptions(container: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTSOptions")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def addTypeDocOptions(options: typings.typedoc.optionsMod.Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTypeDocOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addTypeDocOptions(options: PickOptionsaddDeclaration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTypeDocOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

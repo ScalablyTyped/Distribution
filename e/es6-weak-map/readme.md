@@ -10,10 +10,10 @@ ECMAScript6 WeakMap polyfill
 | ------------------ | :-------------: |
 | Full name          | es6-weak-map |
 | Keywords           | map, weakmap, collection, es6, harmony, list, hash, gc, ponyfill |
-| # releases         | 2 |
-| # dependents       | 87 |
-| # downloads        | 195731394 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1877548E7 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/medikoo/es6-weak-map#readme)

@@ -2,7 +2,6 @@ package typings.hostile
 
 import typings.hostile.hostileStrings.CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts
 import typings.hostile.hostileStrings.SlashetcSlashhosts
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,9 +39,9 @@ object mod {
   inline def writeFile(lines: js.Array[Line], preserveFormatting: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(lines.asInstanceOf[js.Any], preserveFormatting.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def writeFile(lines: js.Array[Line], preserveFormatting: Boolean, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(lines.asInstanceOf[js.Any], preserveFormatting.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type Callback = js.Function1[/* error */ Error | Null, Unit]
+  type Callback = js.Function1[/* error */ js.Error | Null, Unit]
   
-  type GetCallback = js.Function2[/* error */ Error | Null, /* lines */ Lines, Unit]
+  type GetCallback = js.Function2[/* error */ js.Error | Null, /* lines */ Lines, Unit]
   
   type Line = String | (js.Tuple2[String, String])
   

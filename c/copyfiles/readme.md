@@ -10,10 +10,10 @@ copy some files
 | ------------------ | :-------------: |
 | Full name          | copyfiles |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 300 |
-| # downloads        | 31367488 |
-| # stars            | 10 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3318961.3333333335 |
+| # stars            | 338.0 |
 
 ## Links
 - [Homepage](https://github.com/calvinmetcalf/copyfiles#readme)

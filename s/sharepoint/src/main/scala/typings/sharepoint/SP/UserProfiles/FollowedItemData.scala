@@ -13,5 +13,5 @@ trait FollowedItemData
      with ClientObject {
   
   /** An unordered collection of key/value pairs for custom properties to be set on the item. */
-  def get_properties(): StringDictionary[js.Any] = js.native
+  def get_properties(): StringDictionary[Any] = js.native
 }

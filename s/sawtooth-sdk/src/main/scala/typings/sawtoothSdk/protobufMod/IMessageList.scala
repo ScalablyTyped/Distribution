@@ -24,6 +24,6 @@ object IMessageList {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setMessagesVarargs(value: IMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: IMessage*): Self = StObject.set(x, "messages", js.Array(value*))
   }
 }

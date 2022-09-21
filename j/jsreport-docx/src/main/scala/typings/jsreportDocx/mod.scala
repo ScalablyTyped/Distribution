@@ -1,10 +1,13 @@
 package typings.jsreportDocx
 
+import typings.jsreportCore.mod.Engine
 import typings.jsreportCore.mod.ExtensionDefinition
+import typings.jsreportCore.mod.Recipe
+import typings.jsreportCore.mod.TemplateBase
 import typings.jsreportDocx.anon.Content
 import typings.jsreportDocx.anon.Enabled
 import typings.jsreportDocx.mod.JsReportDocx.Configuration
-import typings.jsreportDocx.mod.JsReportDocx.DocxTemplate
+import typings.jsreportDocx.mod.JsReportDocx.DocxTemplateModifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,27 +66,46 @@ object mod {
         inline def setTemplateAssetUndefined: Self = StObject.set(x, "templateAsset", js.undefined)
       }
     }
+    
+    trait DocxTemplateModifier
+      extends StObject
+         with TemplateBase {
+      
+      var docx: js.UndefOr[DocxTemplate] = js.undefined
+    }
+    object DocxTemplateModifier {
+      
+      inline def apply(engine: Engine | String, recipe: Recipe | String): DocxTemplateModifier = {
+        val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any], recipe = recipe.asInstanceOf[js.Any])
+        __obj.asInstanceOf[DocxTemplateModifier]
+      }
+      
+      extension [Self <: DocxTemplateModifier](x: Self) {
+        
+        inline def setDocx(value: DocxTemplate): Self = StObject.set(x, "docx", value.asInstanceOf[js.Any])
+        
+        inline def setDocxUndefined: Self = StObject.set(x, "docx", js.undefined)
+      }
+    }
   }
   
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    trait Template extends StObject {
+    trait TemplateRegistry extends StObject {
       
-      var docx: js.UndefOr[DocxTemplate] = js.undefined
+      var DocxTemplateModifier: typings.jsreportDocx.mod.JsReportDocx.DocxTemplateModifier
     }
-    object Template {
+    object TemplateRegistry {
       
-      inline def apply(): Template = {
-        val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[Template]
+      inline def apply(DocxTemplateModifier: DocxTemplateModifier): TemplateRegistry = {
+        val __obj = js.Dynamic.literal(DocxTemplateModifier = DocxTemplateModifier.asInstanceOf[js.Any])
+        __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: Template](x: Self) {
+      extension [Self <: TemplateRegistry](x: Self) {
         
-        inline def setDocx(value: DocxTemplate): Self = StObject.set(x, "docx", value.asInstanceOf[js.Any])
-        
-        inline def setDocxUndefined: Self = StObject.set(x, "docx", js.undefined)
+        inline def setDocxTemplateModifier(value: DocxTemplateModifier): Self = StObject.set(x, "DocxTemplateModifier", value.asInstanceOf[js.Any])
       }
     }
   }

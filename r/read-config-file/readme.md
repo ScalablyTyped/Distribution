@@ -1,7 +1,7 @@
 
 # Scala.js typings for read-config-file
 
-Typings are for version 6.0.0
+Typings are for version 6.2.0
 
 ## Library description:
 Read configuration file in various formats:
@@ -10,10 +10,10 @@ Read configuration file in various formats:
 | ------------------ | :-------------: |
 | Full name          | read-config-file |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 37 |
-| # downloads        | 7070794 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1555917.6666666667 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/develar/read-config-file)

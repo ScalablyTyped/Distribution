@@ -10,18 +10,23 @@ trait VertexBuffer extends StObject {
   /** @hidden */
   var _buffer: Buffer = js.native
   
-  /* private */ var _instanceDivisor: js.Any = js.native
+  /* private */ var _computeHashCode: Any = js.native
   
-  /* private */ var _instanced: js.Any = js.native
+  /* private */ var _instanceDivisor: Any = js.native
   
-  /* private */ var _kind: js.Any = js.native
+  /* private */ var _instanced: Any = js.native
   
-  /* private */ var _ownsBuffer: js.Any = js.native
+  /* private */ var _kind: Any = js.native
+  
+  /* private */ var _ownsBuffer: Any = js.native
   
   /** @hidden */
   def _rebuild(): Unit = js.native
   
-  /* private */ var _size: js.Any = js.native
+  /* private */ var _size: Any = js.native
+  
+  /** @hidden */
+  var _validOffsetRange: Boolean = js.native
   
   /**
     * Gets the byte offset.
@@ -65,6 +70,15 @@ trait VertexBuffer extends StObject {
   def getData(): Nullable[DataArray] = js.native
   
   /**
+    * Gets current buffer's data as a float array. Float data is constructed if the vertex buffer data cannot be returned directly.
+    * @param totalVertices number of vertices in the buffer to take into account
+    * @param forceCopy defines a boolean indicating that the returned array must be cloned upon returning it
+    * @returns a float array containing vertex data
+    */
+  def getFloatData(totalVertices: Double): Nullable[FloatArray] = js.native
+  def getFloatData(totalVertices: Double, forceCopy: Boolean): Nullable[FloatArray] = js.native
+  
+  /**
     * Returns the instancing divisor, zero for non-instanced (integer).
     * @returns a number
     */
@@ -90,10 +104,12 @@ trait VertexBuffer extends StObject {
   def getOffset(): Double = js.native
   
   /**
-    * Returns the number of components per vertex attribute (integer)
-    * @returns the size in float
+    * Returns the number of components or the byte size per vertex attribute
+    * @param sizeInBytes If true, returns the size in bytes or else the size in number of components of the vertex attribute (default: false)
+    * @returns the number of components
     */
   def getSize(): Double = js.native
+  def getSize(sizeInBytes: Boolean): Double = js.native
   
   /**
     * Gets the stride in float32 units (i.e. byte stride / 4).
@@ -102,6 +118,13 @@ trait VertexBuffer extends StObject {
     * @deprecated Please use byteStride instead.
     */
   def getStrideSize(): Double = js.native
+  
+  /**
+    * Gets a hash code representing the format (type, normalized, size, instanced, stride) of this buffer
+    * All buffers with the same format will have the same hash code
+    */
+  @JSName("hashCode")
+  val hashCode_FVertexBuffer: Double = js.native
   
   /**
     * Gets or sets the instance divisor when in instanced mode
@@ -124,6 +147,11 @@ trait VertexBuffer extends StObject {
     * Gets the data type of each component in the array.
     */
   val `type`: Double = js.native
+  
+  /**
+    * Gets the unique id of this vertex buffer
+    */
+  val uniqueId: Double = js.native
   
   /**
     * Updates the underlying buffer according to the passed numeric array or Float32Array.

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object App {
   
-  type ActionReceiverCallback = js.Function1[/* action */ js.Any, Unit]
+  type ActionReceiverCallback = js.Function1[/* action */ Any, Unit]
   
   object BackgroundHandler {
     

@@ -10,15 +10,12 @@ ActiveDirectory is an ldapjs client for authN (authentication) and authZ (author
 | ------------------ | :-------------: |
 | Full name          | activedirectory2 |
 | Keywords           | ldap, active directory |
-| # releases         | 8 |
-| # dependents       | 7 |
-| # downloads        | 118333 |
-| # stars            | 3 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 20438.666666666668 |
+| # stars            | 47.0 |
 
 ## Links
-- [Homepage](https://github.com/jsumners/node-activedirectory#readme)
-- [Bugs](https://github.com/jsumners/node-activedirectory/issues)
-- [Repository](https://github.com/jsumners/node-activedirectory)
 - [Npm](https://www.npmjs.com/package/activedirectory2)
     
 

@@ -8,16 +8,16 @@ object RenderPolicies {
   
   @JSImport("plottable", "RenderPolicies.AnimationFrame")
   @js.native
-  class AnimationFrame ()
+  open class AnimationFrame ()
     extends typings.plottable.renderPolicyMod.AnimationFrame
   
   @JSImport("plottable", "RenderPolicies.Immediate")
   @js.native
-  class Immediate ()
+  open class Immediate ()
     extends typings.plottable.renderPolicyMod.Immediate
   
   @JSImport("plottable", "RenderPolicies.Timeout")
   @js.native
-  class Timeout ()
+  open class Timeout ()
     extends typings.plottable.renderPolicyMod.Timeout
 }

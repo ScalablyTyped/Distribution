@@ -33,6 +33,13 @@ trait SearchProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-Search.html#layers)
     */
   var layers: js.UndefOr[CollectionProperties[SearchLayerProperties]] = js.undefined
+  
+  /**
+    * A collection of tables to be included in search.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-Search.html#tables)
+    */
+  var tables: js.UndefOr[CollectionProperties[SearchTableProperties]] = js.undefined
 }
 object SearchProperties {
   
@@ -59,6 +66,12 @@ object SearchProperties {
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: SearchLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: SearchLayerProperties*): Self = StObject.set(x, "layers", js.Array(value*))
+    
+    inline def setTables(value: CollectionProperties[SearchTableProperties]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+    
+    inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
+    
+    inline def setTablesVarargs(value: SearchTableProperties*): Self = StObject.set(x, "tables", js.Array(value*))
   }
 }

@@ -1,21 +1,24 @@
 
 # Scala.js typings for nivo__waffle
 
-Typings are for version 0.62.0
+Typings are for version 0.80.0
 
 ## Library description:
-[![version](https://img.shields.io/npm/v/@nivo/waffle.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/waffle)
+<a href="https://nivo.rocks"><img alt="nivo" src="https://raw.githubusercontent.com/plouc/nivo/master/nivo.png" width="216" height="68"/></a>
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @nivo/waffle |
 | Keywords           | nivo, dataviz, react, d3, charts, waffle-chart |
-| # releases         | 29 |
-| # dependents       | 2 |
-| # downloads        | 18138 |
-| # stars            | 0 |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 8510.666666666666 |
+| # stars            | 10446.0 |
 
 ## Links
+- [Homepage](https://github.com/plouc/nivo#readme)
+- [Bugs](https://github.com/plouc/nivo/issues)
+- [Repository](https://github.com/plouc/nivo)
 - [Npm](https://www.npmjs.com/package/%40nivo%2Fwaffle)
     
 

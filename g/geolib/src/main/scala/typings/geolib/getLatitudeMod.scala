@@ -11,6 +11,6 @@ object getLatitudeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(point: GeolibInputCoordinates): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(point.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def default(point: GeolibInputCoordinates, raw: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(point.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(point: GeolibInputCoordinates): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(point.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def default(point: GeolibInputCoordinates, raw: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(point.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

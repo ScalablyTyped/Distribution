@@ -32,7 +32,7 @@ object Application {
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value*))
     
     inline def setVariables(value: Containers): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     

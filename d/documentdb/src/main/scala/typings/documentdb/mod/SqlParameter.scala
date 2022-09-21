@@ -10,11 +10,11 @@ trait SqlParameter extends StObject {
   var name: String
   
   /** The value of the parameter. */
-  var value: js.Any
+  var value: Any
 }
 object SqlParameter {
   
-  inline def apply(name: String, value: js.Any): SqlParameter = {
+  inline def apply(name: String, value: Any): SqlParameter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlParameter]
   }
@@ -23,6 +23,6 @@ object SqlParameter {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

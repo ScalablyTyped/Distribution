@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Get a list of categories
-  * 
+  *
   * GET /v1/browse/categories
   * https://developer.spotify.com/web-api/get-list-categories/
   */

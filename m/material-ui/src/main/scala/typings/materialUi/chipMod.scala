@@ -10,10 +10,10 @@ object chipMod {
   
   @JSImport("material-ui/Chip", JSImport.Default)
   @js.native
-  class default () extends Chip
+  open class default () extends Chip
   
   @JSImport("material-ui/Chip", "Chip")
   @js.native
-  class Chip ()
-    extends Component[ChipProps, js.Object, js.Any]
+  open class Chip ()
+    extends Component[ChipProps, js.Object, Any]
 }

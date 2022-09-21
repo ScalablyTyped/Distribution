@@ -1,7 +1,7 @@
 
 # Scala.js typings for time-span
 
-Typings are for version 4.0.0
+Typings are for version 5.1.0
 
 ## Library description:
 Simplified high resolution timing
@@ -10,15 +10,12 @@ Simplified high resolution timing
 | ------------------ | :-------------: |
 | Full name          | time-span |
 | Keywords           | time, span, elapsed, process, hrtime, highres, timing, perf, performance, bench, benchmark, profiling, measure, seconds, milliseconds, nanoseconds |
-| # releases         | 4 |
-| # dependents       | 29 |
-| # downloads        | 353010 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 795633.0 |
+| # stars            | 68.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/time-span#readme)
-- [Bugs](https://github.com/sindresorhus/time-span/issues)
-- [Repository](https://github.com/sindresorhus/time-span)
 - [Npm](https://www.npmjs.com/package/time-span)
     
 

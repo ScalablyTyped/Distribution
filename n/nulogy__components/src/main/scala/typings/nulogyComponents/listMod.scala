@@ -8,9 +8,9 @@ object listMod {
   
   @JSImport("@nulogy/components/src/List", "List")
   @js.native
-  val List: js.Any = js.native
+  val List: Any = js.native
   
   @JSImport("@nulogy/components/src/List", "ListItem")
   @js.native
-  val ListItem: js.Any = js.native
+  val ListItem: Any = js.native
 }

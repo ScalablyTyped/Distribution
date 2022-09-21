@@ -5,4 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type RenderFunction = js.Function1[/* ctx */ js.Any, java.lang.String]
+type RenderFunction = js.Function1[/* ctx */ Any, String]

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Gitana.Defer")
 @js.native
-class Defer ()
+open class Defer ()
   extends typings.gitana.mod.Defer
 object Defer {
   
@@ -15,5 +15,5 @@ object Defer {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def all(args: js.Any, obj: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(args.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def all(args: Any, obj: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(List(args.asInstanceOf[js.Any]).`++`(obj.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 }

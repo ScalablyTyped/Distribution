@@ -21,7 +21,7 @@ object UpdateRefsRequest {
     
     inline def setRefUpdateRequests(value: js.Array[GitRefUpdate]): Self = StObject.set(x, "refUpdateRequests", value.asInstanceOf[js.Any])
     
-    inline def setRefUpdateRequestsVarargs(value: GitRefUpdate*): Self = StObject.set(x, "refUpdateRequests", js.Array(value :_*))
+    inline def setRefUpdateRequestsVarargs(value: GitRefUpdate*): Self = StObject.set(x, "refUpdateRequests", js.Array(value*))
     
     inline def setUpdateMode(value: GitRefUpdateMode): Self = StObject.set(x, "updateMode", value.asInstanceOf[js.Any])
   }

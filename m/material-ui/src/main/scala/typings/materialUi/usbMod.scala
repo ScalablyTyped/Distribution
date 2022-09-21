@@ -10,10 +10,10 @@ object usbMod {
   
   @JSImport("material-ui/svg-icons/device/usb", JSImport.Default)
   @js.native
-  class default () extends DeviceUsb
+  open class default () extends DeviceUsb
   
   @JSImport("material-ui/svg-icons/device/usb", "DeviceUsb")
   @js.native
-  class DeviceUsb ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceUsb ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

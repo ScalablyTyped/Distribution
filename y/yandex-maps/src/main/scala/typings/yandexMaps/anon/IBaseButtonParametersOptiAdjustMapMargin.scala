@@ -69,7 +69,7 @@ object IBaseButtonParametersOptiAdjustMapMargin {
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    inline def setMaxWidthVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
+    inline def setMaxWidthVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "maxWidth", js.Array(value*))
     
     inline def setPopupFloat(value: left | right): Self = StObject.set(x, "popupFloat", value.asInstanceOf[js.Any])
     

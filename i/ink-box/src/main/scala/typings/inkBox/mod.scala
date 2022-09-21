@@ -10,6 +10,7 @@ import typings.inkBox.inkBoxStrings.round
 import typings.inkBox.inkBoxStrings.single
 import typings.inkBox.inkBoxStrings.singleDouble
 import typings.react.mod.FC
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,6 +46,8 @@ object mod extends Shortcut {
     
     var borderStyle: js.UndefOr[single | double | round | singleDouble | doubleSingle | classic | BottomLeft] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var dimBorder: js.UndefOr[Boolean] = js.undefined
     
     var float: js.UndefOr[Alignment] = js.undefined
@@ -77,6 +80,10 @@ object mod extends Shortcut {
       inline def setBorderStyle(value: single | double | round | singleDouble | doubleSingle | classic | BottomLeft): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDimBorder(value: Boolean): Self = StObject.set(x, "dimBorder", value.asInstanceOf[js.Any])
       

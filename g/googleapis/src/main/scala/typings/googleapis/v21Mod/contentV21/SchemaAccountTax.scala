@@ -4,25 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The tax settings of a merchant account. All methods require the admin role.
-  */
 trait SchemaAccountTax extends StObject {
   
   /**
-    * The ID of the account to which these account tax settings belong.
+    * Required. The ID of the account to which these account tax settings belong.
     */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;content#accountTax&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "`content#accountTax`".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Tax rules. Updating the tax rules will enable US taxes (not reversible).
-    * Defining no rules is equivalent to not charging tax at all.
+    * Tax rules. Updating the tax rules will enable "US" taxes (not reversible). Defining no rules is equivalent to not charging tax at all.
     */
   var rules: js.UndefOr[js.Array[SchemaAccountTaxTaxRule]] = js.undefined
 }
@@ -37,9 +32,13 @@ object SchemaAccountTax {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
+    inline def setAccountIdNull: Self = StObject.set(x, "accountId", null)
+    
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -47,6 +46,6 @@ object SchemaAccountTax {
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: SchemaAccountTaxTaxRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: SchemaAccountTaxTaxRule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

@@ -11,7 +11,7 @@ trait SessionOptions extends StObject {
     *
     * @default `{}`
     */
-  var customHeaders: js.UndefOr[js.Any] = js.undefined
+  var customHeaders: js.UndefOr[Any] = js.undefined
   
   /**
     * If non-null, Fine Uploader will send a `GET` request on startup to this endpoint, expecting a `JSON` response containing data about the initial file list to populate
@@ -25,7 +25,7 @@ trait SessionOptions extends StObject {
     *
     * @default `{}`
     */
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Any] = js.undefined
   
   /**
     * Set this to `false` if you do not want the file list to be retrieved from the server as part of a reset.
@@ -43,7 +43,7 @@ object SessionOptions {
   
   extension [Self <: SessionOptions](x: Self) {
     
-    inline def setCustomHeaders(value: js.Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+    inline def setCustomHeaders(value: Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
     
     inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
     
@@ -51,7 +51,7 @@ object SessionOptions {
     
     inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     

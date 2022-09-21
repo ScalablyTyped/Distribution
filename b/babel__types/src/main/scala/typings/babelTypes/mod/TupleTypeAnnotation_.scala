@@ -31,6 +31,6 @@ object TupleTypeAnnotation_ {
     
     inline def setTypes(value: js.Array[FlowType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: FlowType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: FlowType*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

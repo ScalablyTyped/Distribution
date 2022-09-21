@@ -6,6 +6,7 @@ import typings.devtoolsProtocol.mod.Protocol.Cast.EnableRequest
 import typings.devtoolsProtocol.mod.Protocol.Cast.IssueUpdatedEvent
 import typings.devtoolsProtocol.mod.Protocol.Cast.SetSinkToUseRequest
 import typings.devtoolsProtocol.mod.Protocol.Cast.SinksUpdatedEvent
+import typings.devtoolsProtocol.mod.Protocol.Cast.StartDesktopMirroringRequest
 import typings.devtoolsProtocol.mod.Protocol.Cast.StartTabMirroringRequest
 import typings.devtoolsProtocol.mod.Protocol.Cast.StopCastingRequest
 import org.scalablytyped.runtime.StObject
@@ -47,6 +48,11 @@ trait CastApi extends StObject {
     * sink via Presentation API, Remote Playback API, or Cast SDK.
     */
   def setSinkToUse(params: SetSinkToUseRequest): js.Promise[Unit] = js.native
+  
+  /**
+    * Starts mirroring the desktop to the sink.
+    */
+  def startDesktopMirroring(params: StartDesktopMirroringRequest): js.Promise[Unit] = js.native
   
   /**
     * Starts mirroring the tab to the sink.

@@ -19,11 +19,11 @@ trait ASPxClientTreeListBatchEditNodeRecoveringEventArgs
   /**
     * Gets a hashtable that maintains information about recovered cells.
     */
-  var nodeValues: js.Any
+  var nodeValues: Any
 }
 object ASPxClientTreeListBatchEditNodeRecoveringEventArgs {
   
-  inline def apply(cancel: Boolean, nodeKey: String, nodeValues: js.Any): ASPxClientTreeListBatchEditNodeRecoveringEventArgs = {
+  inline def apply(cancel: Boolean, nodeKey: String, nodeValues: Any): ASPxClientTreeListBatchEditNodeRecoveringEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], nodeKey = nodeKey.asInstanceOf[js.Any], nodeValues = nodeValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListBatchEditNodeRecoveringEventArgs]
   }
@@ -32,6 +32,6 @@ object ASPxClientTreeListBatchEditNodeRecoveringEventArgs {
     
     inline def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
     
-    inline def setNodeValues(value: js.Any): Self = StObject.set(x, "nodeValues", value.asInstanceOf[js.Any])
+    inline def setNodeValues(value: Any): Self = StObject.set(x, "nodeValues", value.asInstanceOf[js.Any])
   }
 }

@@ -12,7 +12,7 @@ trait SlideShowWindows extends StObject {
   
   def Item(Index: Double): SlideShowWindow
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.SlideShowWindows_typekey")
   var PowerPointDotSlideShowWindows_typekey: SlideShowWindows
@@ -23,7 +23,7 @@ object SlideShowWindows {
     Application: Application,
     Count: Double,
     Item: Double => SlideShowWindow,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotSlideShowWindows_typekey: SlideShowWindows
   ): SlideShowWindows = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object SlideShowWindows {
     
     inline def setItem(value: Double => SlideShowWindow): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotSlideShowWindows_typekey(value: SlideShowWindows): Self = StObject.set(x, "PowerPoint.SlideShowWindows_typekey", value.asInstanceOf[js.Any])
   }

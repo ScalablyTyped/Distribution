@@ -8,5 +8,5 @@ object getSamplingStatisticSummariesInputMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/GetSamplingStatisticSummariesInput", "GetSamplingStatisticSummariesInput")
   @js.native
-  val GetSamplingStatisticSummariesInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetSamplingStatisticSummariesInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -2,6 +2,7 @@ package typings.reactLatexNext
 
 import typings.react.mod.Component
 import typings.reactLatexNext.anon.PartialLatexProps
+import typings.reactLatexNext.renderLatexMod.Macros
 import typings.reactLatexNext.typesMod.Delimiter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +12,7 @@ object latexMod {
   
   @JSImport("react-latex-next/dist/Latex", JSImport.Default)
   @js.native
-  class default () extends Latex
+  open class default () extends Latex
   /* static members */
   object default {
     
@@ -27,13 +28,15 @@ object latexMod {
   
   @js.native
   trait Latex
-    extends Component[LatexProps, js.Object, js.Any]
+    extends Component[LatexProps, js.Object, Any]
   
   trait LatexProps extends StObject {
     
     var children: String
     
     var delimiters: js.UndefOr[js.Array[Delimiter]] = js.undefined
+    
+    var macros: js.UndefOr[Macros] = js.undefined
     
     var strict: js.UndefOr[Boolean] = js.undefined
   }
@@ -52,7 +55,11 @@ object latexMod {
       
       inline def setDelimitersUndefined: Self = StObject.set(x, "delimiters", js.undefined)
       
-      inline def setDelimitersVarargs(value: Delimiter*): Self = StObject.set(x, "delimiters", js.Array(value :_*))
+      inline def setDelimitersVarargs(value: Delimiter*): Self = StObject.set(x, "delimiters", js.Array(value*))
+      
+      inline def setMacros(value: Macros): Self = StObject.set(x, "macros", value.asInstanceOf[js.Any])
+      
+      inline def setMacrosUndefined: Self = StObject.set(x, "macros", js.undefined)
       
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       

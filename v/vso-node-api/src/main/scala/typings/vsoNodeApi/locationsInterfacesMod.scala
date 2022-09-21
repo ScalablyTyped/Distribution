@@ -1,6 +1,5 @@
 package typings.vsoNodeApi
 
-import typings.std.Date
 import typings.vsoNodeApi.anon.EnumValuesAccount
 import typings.vsoNodeApi.anon.EnumValuesAssigned
 import typings.vsoNodeApi.anon.EnumValuesContext
@@ -115,8 +114,8 @@ object locationsInterfacesMod {
     
     @JSImport("vso-node-api/interfaces/LocationsInterfaces", "TypeInfo.ConnectionData")
     @js.native
-    def ConnectionData: js.Any = js.native
-    inline def ConnectionData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConnectionData")(x.asInstanceOf[js.Any])
+    def ConnectionData: Any = js.native
+    inline def ConnectionData_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConnectionData")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/LocationsInterfaces", "TypeInfo.InheritLevel")
     @js.native
@@ -125,8 +124,8 @@ object locationsInterfacesMod {
     
     @JSImport("vso-node-api/interfaces/LocationsInterfaces", "TypeInfo.LocationServiceData")
     @js.native
-    def LocationServiceData: js.Any = js.native
-    inline def LocationServiceData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LocationServiceData")(x.asInstanceOf[js.Any])
+    def LocationServiceData: Any = js.native
+    inline def LocationServiceData_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LocationServiceData")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/LocationsInterfaces", "TypeInfo.RelativeToSetting")
     @js.native
@@ -135,8 +134,8 @@ object locationsInterfacesMod {
     
     @JSImport("vso-node-api/interfaces/LocationsInterfaces", "TypeInfo.ServiceDefinition")
     @js.native
-    def ServiceDefinition: js.Any = js.native
-    inline def ServiceDefinition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServiceDefinition")(x.asInstanceOf[js.Any])
+    def ServiceDefinition: Any = js.native
+    inline def ServiceDefinition_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServiceDefinition")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/LocationsInterfaces", "TypeInfo.ServiceStatus")
     @js.native
@@ -214,7 +213,7 @@ object locationsInterfacesMod {
     /**
       * The last user access for this instance.  Null if not requested specifically.
       */
-    var lastUserAccess: Date
+    var lastUserAccess: js.Date
     
     /**
       * Data that the location service holds.
@@ -233,7 +232,7 @@ object locationsInterfacesMod {
       authorizedUser: Identity,
       deploymentId: String,
       instanceId: String,
-      lastUserAccess: Date,
+      lastUserAccess: js.Date,
       locationServiceData: LocationServiceData,
       webApplicationRelativeDirectory: String
     ): ConnectionData = {
@@ -251,7 +250,7 @@ object locationsInterfacesMod {
       
       inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      inline def setLastUserAccess(value: Date): Self = StObject.set(x, "lastUserAccess", value.asInstanceOf[js.Any])
+      inline def setLastUserAccess(value: js.Date): Self = StObject.set(x, "lastUserAccess", value.asInstanceOf[js.Any])
       
       inline def setLocationServiceData(value: LocationServiceData): Self = StObject.set(x, "locationServiceData", value.asInstanceOf[js.Any])
       
@@ -342,7 +341,7 @@ object locationsInterfacesMod {
       
       inline def setAccessMappings(value: js.Array[AccessMapping]): Self = StObject.set(x, "accessMappings", value.asInstanceOf[js.Any])
       
-      inline def setAccessMappingsVarargs(value: AccessMapping*): Self = StObject.set(x, "accessMappings", js.Array(value :_*))
+      inline def setAccessMappingsVarargs(value: AccessMapping*): Self = StObject.set(x, "accessMappings", js.Array(value*))
       
       inline def setClientCacheFresh(value: Boolean): Self = StObject.set(x, "clientCacheFresh", value.asInstanceOf[js.Any])
       
@@ -356,7 +355,7 @@ object locationsInterfacesMod {
       
       inline def setServiceDefinitions(value: js.Array[ServiceDefinition]): Self = StObject.set(x, "serviceDefinitions", value.asInstanceOf[js.Any])
       
-      inline def setServiceDefinitionsVarargs(value: ServiceDefinition*): Self = StObject.set(x, "serviceDefinitions", js.Array(value :_*))
+      inline def setServiceDefinitionsVarargs(value: ServiceDefinition*): Self = StObject.set(x, "serviceDefinitions", js.Array(value*))
       
       inline def setServiceOwner(value: String): Self = StObject.set(x, "serviceOwner", value.asInstanceOf[js.Any])
     }
@@ -413,7 +412,7 @@ object locationsInterfacesMod {
     
     var parentServiceType: String
     
-    var properties: js.Any
+    var properties: Any
     
     var relativePath: String
     
@@ -452,7 +451,7 @@ object locationsInterfacesMod {
       minVersion: String,
       parentIdentifier: String,
       parentServiceType: String,
-      properties: js.Any,
+      properties: Any,
       relativePath: String,
       relativeToSetting: RelativeToSetting,
       releasedVersion: String,
@@ -478,7 +477,7 @@ object locationsInterfacesMod {
       
       inline def setLocationMappings(value: js.Array[LocationMapping]): Self = StObject.set(x, "locationMappings", value.asInstanceOf[js.Any])
       
-      inline def setLocationMappingsVarargs(value: LocationMapping*): Self = StObject.set(x, "locationMappings", js.Array(value :_*))
+      inline def setLocationMappingsVarargs(value: LocationMapping*): Self = StObject.set(x, "locationMappings", js.Array(value*))
       
       inline def setMaxVersion(value: String): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
       
@@ -488,7 +487,7 @@ object locationsInterfacesMod {
       
       inline def setParentServiceType(value: String): Self = StObject.set(x, "parentServiceType", value.asInstanceOf[js.Any])
       
-      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
       

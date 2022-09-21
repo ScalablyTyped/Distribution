@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object minipassStrings {
   
   @js.native
+  sealed trait buffer extends StObject
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
+  
+  @js.native
   sealed trait close extends StObject
   inline def close: close = "close".asInstanceOf[close]
   
@@ -21,6 +25,10 @@ object minipassStrings {
   @js.native
   sealed trait end extends StObject
   inline def end: end = "end".asInstanceOf[end]
+  
+  @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait finish extends StObject

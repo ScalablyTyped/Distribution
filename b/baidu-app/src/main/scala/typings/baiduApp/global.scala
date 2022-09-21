@@ -168,7 +168,6 @@ import typings.baiduApp.swan.navigateToSmartProgramOptions
 import typings.baiduApp.swan.openShareOptions
 import typings.baiduApp.swan.requestPolymerPaymentOptions
 import typings.baiduApp.swan.verifyOptions
-import typings.std.ArrayBuffer
 import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -333,7 +332,7 @@ object global {
       * 将 ArrayBuffer 数据转成 Base64 字符串
       *
       */
-    inline def arrayBufferToBase64(arrayBuffer: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayBufferToBase64")(arrayBuffer.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def arrayBufferToBase64(arrayBuffer: js.typedarray.ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayBufferToBase64")(arrayBuffer.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * 提前向用户发起授权请求。
@@ -346,7 +345,7 @@ object global {
       * 将 Base64 字符串转成 ArrayBuffer 数据
       *
       */
-    inline def base64ToArrayBuffer(base64: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("base64ToArrayBuffer")(base64.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+    inline def base64ToArrayBuffer(base64: String): js.typedarray.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("base64ToArrayBuffer")(base64.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer]
     
     /**
       * 判断小程序的API，回调，参数，组件等是否在当前版本可用。
@@ -477,7 +476,7 @@ object global {
       * @version 1.6.0
       */
     inline def createCameraContext(): CameraContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createCameraContext")().asInstanceOf[CameraContext]
-    inline def createCameraContext(instance: js.Any): CameraContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createCameraContext")(instance.asInstanceOf[js.Any]).asInstanceOf[CameraContext]
+    inline def createCameraContext(instance: Any): CameraContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createCameraContext")(instance.asInstanceOf[js.Any]).asInstanceOf[CameraContext]
     
     /**
       * 创建并返回绘图上下文context对象。
@@ -493,8 +492,8 @@ object global {
       */
     inline def createInnerAudioContext(): InnerAudioContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createInnerAudioContext")().asInstanceOf[InnerAudioContext]
     
-    inline def createIntersectionObserver(context: Component[js.Any, js.Any]): IntersectionObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("createIntersectionObserver")(context.asInstanceOf[js.Any]).asInstanceOf[IntersectionObserver]
-    inline def createIntersectionObserver(context: Component[js.Any, js.Any], options: CreateIntersectionObserverOption): IntersectionObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("createIntersectionObserver")(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IntersectionObserver]
+    inline def createIntersectionObserver(context: Component[Any, Any]): IntersectionObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("createIntersectionObserver")(context.asInstanceOf[js.Any]).asInstanceOf[IntersectionObserver]
+    inline def createIntersectionObserver(context: Component[Any, Any], options: CreateIntersectionObserverOption): IntersectionObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("createIntersectionObserver")(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IntersectionObserver]
     
     /**
       * 操作对应的 <live-player/> 组件。
@@ -502,7 +501,7 @@ object global {
       * 在自定义组件下，第二个参数传入组件实例this，以操作组件内 <live-player/> 组件
       * @version 1.7.0
       */
-    inline def createLivePlayerContext(id: String, instance: js.Any): LivePlayerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createLivePlayerContext")(id.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[LivePlayerContext]
+    inline def createLivePlayerContext(id: String, instance: Any): LivePlayerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createLivePlayerContext")(id.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[LivePlayerContext]
     
     /**
       * 创建并返回 map 上下文 mapContext 对象
@@ -583,7 +582,7 @@ object global {
       * 微信客户端 6.5.6 版本开始支持
       * @version 1.1.0
       */
-    inline def getClipboardData(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getClipboardData")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getClipboardData(options: BaseOptions[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getClipboardData")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 根据 uuid 获取处于已连接状态的设备
@@ -698,7 +697,7 @@ object global {
       * 从本地缓存中同步获取指定 key 对应的内容。
       *
       */
-    inline def getStorageSync(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorageSync")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getStorageSync(key: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorageSync")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /**
       * 获取 swanid。
@@ -727,7 +726,7 @@ object global {
       * @version 1.6.0
       */
     inline def getWifiList(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getWifiList")().asInstanceOf[Unit]
-    inline def getWifiList(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getWifiList")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getWifiList(options: BaseOptions[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getWifiList")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 收起键盘。
@@ -827,7 +826,7 @@ object global {
       * @param func
       * @version 2.2.3
       */
-    inline def nextTick(func: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def nextTick(func: js.Function0[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 启用低功耗蓝牙设备特征值变化时的 notify 功能。
@@ -918,10 +917,10 @@ object global {
     inline def onNetworkStatusChange(callback: js.Function1[/* res */ IsConnected, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onNetworkStatusChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** 监听WebSocket关闭。 */
-    inline def onSocketClose(callback: js.Function1[/* res */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketClose")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onSocketClose(callback: js.Function1[/* res */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketClose")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** 监听WebSocket错误。 */
-    inline def onSocketError(callback: js.Function1[/* error */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onSocketError(callback: js.Function1[/* error */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听WebSocket接受到服务器的消息事件。
@@ -929,14 +928,14 @@ object global {
     inline def onSocketMessage(callback: js.Function1[/* res */ DataResponse, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketMessage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** 监听WebSocket连接打开事件。 */
-    inline def onSocketOpen(callback: js.Function1[/* res */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketOpen")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onSocketOpen(callback: js.Function1[/* res */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketOpen")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听用户主动截屏事件，用户使用系统截屏按键截屏时触发此事件
       * @version 1.4.0
       */
     inline def onUserCaptureScreen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUserCaptureScreen")().asInstanceOf[Unit]
-    inline def onUserCaptureScreen(callback: js.Function1[/* res */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUserCaptureScreen")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onUserCaptureScreen(callback: js.Function1[/* res */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUserCaptureScreen")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听连接上 Wi-Fi 的事件。
@@ -1183,7 +1182,7 @@ object global {
       * @param key 本地缓存中的指定的 key
       * @param data 需要存储的内容
       */
-    inline def setStorageSync(key: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStorageSync")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setStorageSync(key: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStorageSync")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     // 界面-----设置tabBar
     /**
@@ -1297,7 +1296,7 @@ object global {
       * @version 1.5.0
       */
     inline def startPullDownRefresh(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startPullDownRefresh")().asInstanceOf[Unit]
-    inline def startPullDownRefresh(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startPullDownRefresh")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def startPullDownRefresh(options: BaseOptions[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startPullDownRefresh")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 开始录音。当主动调用swan.stopRecord，
@@ -1314,7 +1313,7 @@ object global {
       * @version 1.6.0
       */
     inline def startWifi(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWifi")().asInstanceOf[Unit]
-    inline def startWifi(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWifi")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def startWifi(options: BaseOptions[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWifi")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 停止监听加速度数据。
@@ -1351,7 +1350,7 @@ object global {
       * @version 1.5.0
       */
     inline def stopPullDownRefresh(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPullDownRefresh")().asInstanceOf[Unit]
-    inline def stopPullDownRefresh(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPullDownRefresh")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stopPullDownRefresh(options: BaseOptions[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPullDownRefresh")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 主动调用停止录音。
@@ -1370,7 +1369,7 @@ object global {
       * @version 1.6.0
       */
     inline def stopWifi(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWifi")().asInstanceOf[Unit]
-    inline def stopWifi(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWifi")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stopWifi(options: BaseOptions[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWifi")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面
@@ -1404,14 +1403,14 @@ object global {
       * @version 1.2.0
       */
     inline def vibrateLong(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateLong")().asInstanceOf[Unit]
-    inline def vibrateLong(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateLong")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def vibrateLong(options: BaseOptions[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateLong")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 使手机发生较短时间的振动（15ms）
       * @version 1.2.0
       */
     inline def vibrateShort(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateShort")().asInstanceOf[Unit]
-    inline def vibrateShort(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateShort")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def vibrateShort(options: BaseOptions[Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateShort")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 向低功耗蓝牙设备特征值中写入二进制数据。

@@ -9,12 +9,12 @@ trait CreateInstanceRequest extends StObject {
   
   /**
     * Required. The clusters to be created within the instance, mapped by desired cluster ID, e.g., just `mycluster` rather than
-    * `projects/myproject/instances/myinstance/clusters/mycluster`. Fields marked `OutputOnly` must be left blank. Currently, at most four clusters can be specified.
+    * `projects/myproject/instances/myinstance/clusters/mycluster`. Fields marked `OutputOnly` must be left blank.
     */
   var clusters: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.Cluster}
-    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateInstanceRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateInstanceRequest & TopLevel[Any]
   ] = js.undefined
   
   /** Required. The instance to create. Fields marked `OutputOnly` must be left blank. */
@@ -38,7 +38,7 @@ object CreateInstanceRequest {
     inline def setClusters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.Cluster}
-      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateInstanceRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.CreateInstanceRequest & TopLevel[Any]
     ): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
     inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)

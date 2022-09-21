@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -102,6 +103,20 @@ trait SphericalHarmonics extends StObject {
     * @param scale the amount to scale
     */
   def scaleInPlace(scale: Double): Unit
+  
+  /**
+    * update the spherical harmonics coefficients from the given array
+    * @param data defines the 9x3 coefficients (l00, l1-1, l10, l11, l2-2, l2-1, l20, l21, l22)
+    * @returns the spherical harmonics (this)
+    */
+  def updateFromArray(data: ArrayLike[ArrayLike[Double]]): SphericalHarmonics
+  
+  /**
+    * update the spherical harmonics coefficients from the given floats array
+    * @param data defines the 9x3 coefficients (l00, l1-1, l10, l11, l2-2, l2-1, l20, l21, l22)
+    * @returns the spherical harmonics (this)
+    */
+  def updateFromFloatsArray(data: ArrayLike[Double]): SphericalHarmonics
 }
 object SphericalHarmonics {
   
@@ -120,9 +135,11 @@ object SphericalHarmonics {
     l2_2: Vector3,
     preScaleForRendering: () => Unit,
     preScaled: Boolean,
-    scaleInPlace: Double => Unit
+    scaleInPlace: Double => Unit,
+    updateFromArray: ArrayLike[ArrayLike[Double]] => SphericalHarmonics,
+    updateFromFloatsArray: ArrayLike[Double] => SphericalHarmonics
   ): SphericalHarmonics = {
-    val __obj = js.Dynamic.literal(addLight = js.Any.fromFunction3(addLight), convertIncidentRadianceToIrradiance = js.Any.fromFunction0(convertIncidentRadianceToIrradiance), convertIrradianceToLambertianRadiance = js.Any.fromFunction0(convertIrradianceToLambertianRadiance), l00 = l00.asInstanceOf[js.Any], l10 = l10.asInstanceOf[js.Any], l11 = l11.asInstanceOf[js.Any], l1_1 = l1_1.asInstanceOf[js.Any], l20 = l20.asInstanceOf[js.Any], l21 = l21.asInstanceOf[js.Any], l22 = l22.asInstanceOf[js.Any], l2_1 = l2_1.asInstanceOf[js.Any], l2_2 = l2_2.asInstanceOf[js.Any], preScaleForRendering = js.Any.fromFunction0(preScaleForRendering), preScaled = preScaled.asInstanceOf[js.Any], scaleInPlace = js.Any.fromFunction1(scaleInPlace))
+    val __obj = js.Dynamic.literal(addLight = js.Any.fromFunction3(addLight), convertIncidentRadianceToIrradiance = js.Any.fromFunction0(convertIncidentRadianceToIrradiance), convertIrradianceToLambertianRadiance = js.Any.fromFunction0(convertIrradianceToLambertianRadiance), l00 = l00.asInstanceOf[js.Any], l10 = l10.asInstanceOf[js.Any], l11 = l11.asInstanceOf[js.Any], l1_1 = l1_1.asInstanceOf[js.Any], l20 = l20.asInstanceOf[js.Any], l21 = l21.asInstanceOf[js.Any], l22 = l22.asInstanceOf[js.Any], l2_1 = l2_1.asInstanceOf[js.Any], l2_2 = l2_2.asInstanceOf[js.Any], preScaleForRendering = js.Any.fromFunction0(preScaleForRendering), preScaled = preScaled.asInstanceOf[js.Any], scaleInPlace = js.Any.fromFunction1(scaleInPlace), updateFromArray = js.Any.fromFunction1(updateFromArray), updateFromFloatsArray = js.Any.fromFunction1(updateFromFloatsArray))
     __obj.asInstanceOf[SphericalHarmonics]
   }
   
@@ -157,5 +174,9 @@ object SphericalHarmonics {
     inline def setPreScaled(value: Boolean): Self = StObject.set(x, "preScaled", value.asInstanceOf[js.Any])
     
     inline def setScaleInPlace(value: Double => Unit): Self = StObject.set(x, "scaleInPlace", js.Any.fromFunction1(value))
+    
+    inline def setUpdateFromArray(value: ArrayLike[ArrayLike[Double]] => SphericalHarmonics): Self = StObject.set(x, "updateFromArray", js.Any.fromFunction1(value))
+    
+    inline def setUpdateFromFloatsArray(value: ArrayLike[Double] => SphericalHarmonics): Self = StObject.set(x, "updateFromFloatsArray", js.Any.fromFunction1(value))
   }
 }

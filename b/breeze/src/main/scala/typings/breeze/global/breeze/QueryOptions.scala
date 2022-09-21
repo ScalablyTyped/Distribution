@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("breeze.QueryOptions")
 @js.native
-class QueryOptions ()
+open class QueryOptions ()
   extends StObject
      with typings.breeze.breeze.QueryOptions {
   def this(config: QueryOptionsConfiguration) = this()

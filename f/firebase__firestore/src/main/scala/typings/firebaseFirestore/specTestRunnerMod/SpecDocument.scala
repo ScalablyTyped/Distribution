@@ -1,30 +1,40 @@
 package typings.firebaseFirestore.specTestRunnerMod
 
-import typings.firebaseFirestore.documentMod.DocumentOptions
 import typings.firebaseFirestore.objectValueMod.JsonObject
-import typings.firebaseFirestore.testUtilHelpersMod.TestSnapshotVersion
+import typings.firebaseFirestore.utilHelpersMod.TestSnapshotVersion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpecDocument extends js.Object {
+trait SpecDocument extends StObject {
+  
   var key: String
+  
   var options: js.UndefOr[DocumentOptions] = js.undefined
-  var value: JsonObject[_] | Null
+  
+  var value: JsonObject[Any] | Null
+  
   var version: TestSnapshotVersion
 }
-
 object SpecDocument {
-  @scala.inline
-  def apply(
-    key: String,
-    version: TestSnapshotVersion,
-    options: DocumentOptions = null,
-    value: JsonObject[_] = null
-  ): SpecDocument = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+  
+  inline def apply(key: String, version: TestSnapshotVersion): SpecDocument = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], value = null)
     __obj.asInstanceOf[SpecDocument]
   }
+  
+  extension [Self <: SpecDocument](x: Self) {
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setOptions(value: DocumentOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setValue(value: JsonObject[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
+    
+    inline def setVersion(value: TestSnapshotVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+  }
 }
-

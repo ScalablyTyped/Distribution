@@ -1,7 +1,7 @@
 package typings.knockoutRx
 
 import typings.knockoutRx.Rx.Observable
-import typings.rx.Rx.ISubject
+import typings.rxCoreBinding.Rx.ISubject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

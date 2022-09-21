@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     if using ordersv3
   * @public
   */
-class TransactionDecision ()
+open class TransactionDecision ()
   extends typings.actionsOnGoogle.helperMod.TransactionDecision {
   def this(options: GoogleActionsTransactionsV3TransactionDecisionValueSpec) = this()
   def this(options: GoogleActionsV2TransactionDecisionValueSpec) = this()

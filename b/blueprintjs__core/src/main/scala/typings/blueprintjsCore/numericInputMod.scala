@@ -5,12 +5,8 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.left
 import typings.blueprintjsCore.blueprintjsCoreStrings.none
 import typings.blueprintjsCore.blueprintjsCoreStrings.right
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
+import typings.blueprintjsCore.inputSharedPropsMod.InputSharedProps
 import typings.blueprintjsCore.propsMod.HTMLInputProps
-import typings.blueprintjsCore.propsMod.IIntentProps
-import typings.blueprintjsCore.propsMod.IProps
-import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsIcons.iconNameMod.IconName
-import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,67 +16,71 @@ object numericInputMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput")
   @js.native
-  class NumericInput protected ()
-    extends AbstractPureComponent2[HTMLInputProps & INumericInputProps, INumericInputState, js.Object] {
-    def this(props: HTMLInputProps & INumericInputProps) = this()
-    def this(props: HTMLInputProps & INumericInputProps, context: js.Any) = this()
+  open class NumericInput protected ()
+    extends AbstractPureComponent2[HTMLInputProps & NumericInputProps, INumericInputState, js.Object] {
+    def this(props: HTMLInputProps & NumericInputProps) = this()
+    def this(props: HTMLInputProps & NumericInputProps, context: Any) = this()
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MNumericInput(prevProps: INumericInputProps, prevState: INumericInputState): Unit = js.native
+    def componentDidUpdate_MNumericInput(prevProps: NumericInputProps, prevState: INumericInputState): Unit = js.native
     
-    /* private */ var decrementButtonHandlers: js.Any = js.native
+    /* private */ var decrementButtonHandlers: Any = js.native
     
-    /* private */ var delta: js.Any = js.native
+    /* private */ var delta: Any = js.native
     
-    /* private */ var didPasteEventJustOccur: js.Any = js.native
+    /* private */ var didPasteEventJustOccur: Any = js.native
     
-    /* private */ var getButtonEventHandlers: js.Any = js.native
+    /* private */ var getButtonEventHandlers: Any = js.native
     
-    /* private */ var getIncrementDelta: js.Any = js.native
+    /* private */ var getCurrentValueAsNumber: Any = js.native
     
-    /* private */ var handleButtonClick: js.Any = js.native
+    /* private */ var getIncrementDelta: Any = js.native
     
-    /* private */ var handleCompositionEnd: js.Any = js.native
+    /* private */ var handleButtonClick: Any = js.native
     
-    /* private */ var handleCompositionUpdate: js.Any = js.native
+    /* private */ var handleCompositionEnd: Any = js.native
     
-    /* private */ var handleContinuousChange: js.Any = js.native
+    /* private */ var handleCompositionUpdate: Any = js.native
     
-    /* private */ var handleInputBlur: js.Any = js.native
+    /* private */ var handleContinuousChange: Any = js.native
     
-    /* private */ var handleInputChange: js.Any = js.native
+    /* private */ var handleInputBlur: Any = js.native
     
-    /* private */ var handleInputFocus: js.Any = js.native
+    /* private */ var handleInputChange: Any = js.native
     
-    /* private */ var handleInputKeyDown: js.Any = js.native
+    /* private */ var handleInputFocus: Any = js.native
     
-    /* private */ var handleInputKeyPress: js.Any = js.native
+    /* private */ var handleInputKeyDown: Any = js.native
     
-    /* private */ var handleInputPaste: js.Any = js.native
+    /* private */ var handleInputKeyPress: Any = js.native
     
-    /* private */ var handleNextValue: js.Any = js.native
+    /* private */ var handleInputPaste: Any = js.native
     
-    /* private */ var incrementButtonHandlers: js.Any = js.native
+    /* private */ var handleNextValue: Any = js.native
     
-    /* private */ var incrementValue: js.Any = js.native
+    /* private */ var incrementButtonHandlers: Any = js.native
     
-    /* private */ var inputElement: js.Any = js.native
+    /* private */ var incrementValue: Any = js.native
     
-    /* private */ var inputRef: js.Any = js.native
+    var inputElement: HTMLInputElement | Null = js.native
     
-    /* private */ var intervalId: js.Any = js.native
+    /* private */ var inputRef: Any = js.native
     
-    /* private */ var renderButtons: js.Any = js.native
+    /* private */ var intervalId: Any = js.native
     
-    /* private */ var renderInput: js.Any = js.native
+    /* private */ var numericInputId: Any = js.native
     
-    /* private */ var roundAndClampValue: js.Any = js.native
+    /* private */ var renderButtons: Any = js.native
     
-    /* private */ var startContinuousChange: js.Any = js.native
+    /* private */ var renderInput: Any = js.native
     
-    /* private */ var stopContinuousChange: js.Any = js.native
+    /* private */ var roundAndClampValue: Any = js.native
     
-    /* private */ var updateDelta: js.Any = js.native
+    /* private */ var startContinuousChange: Any = js.native
+    
+    /* private */ var stopContinuousChange: Any = js.native
+    
+    /* private */ var updateDelta: Any = js.native
   }
   /* static members */
   object NumericInput {
@@ -91,13 +91,13 @@ object numericInputMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput.CONTINUOUS_CHANGE_DELAY")
     @js.native
-    def CONTINUOUS_CHANGE_DELAY: js.Any = js.native
-    inline def CONTINUOUS_CHANGE_DELAY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTINUOUS_CHANGE_DELAY")(x.asInstanceOf[js.Any])
+    def CONTINUOUS_CHANGE_DELAY: Any = js.native
+    inline def CONTINUOUS_CHANGE_DELAY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTINUOUS_CHANGE_DELAY")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput.CONTINUOUS_CHANGE_INTERVAL")
     @js.native
-    def CONTINUOUS_CHANGE_INTERVAL: js.Any = js.native
-    inline def CONTINUOUS_CHANGE_INTERVAL_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTINUOUS_CHANGE_INTERVAL")(x.asInstanceOf[js.Any])
+    def CONTINUOUS_CHANGE_INTERVAL: Any = js.native
+    inline def CONTINUOUS_CHANGE_INTERVAL_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTINUOUS_CHANGE_INTERVAL")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput.VALUE_EMPTY")
     @js.native
@@ -111,35 +111,35 @@ object numericInputMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput.defaultProps")
     @js.native
-    def defaultProps: INumericInputProps = js.native
-    inline def defaultProps_=(x: INumericInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: NumericInputProps = js.native
+    inline def defaultProps_=(x: NumericInputProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput.displayName")
     @js.native
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    inline def getDerivedStateFromProps(props: INumericInputProps, state: INumericInputState): PrevMaxProp = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PrevMaxProp]
+    inline def getDerivedStateFromProps(props: NumericInputProps, state: INumericInputState): PrevMaxProp = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PrevMaxProp]
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput.getStepMaxPrecision")
     @js.native
-    def getStepMaxPrecision: js.Any = js.native
-    inline def getStepMaxPrecision_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getStepMaxPrecision")(x.asInstanceOf[js.Any])
+    def getStepMaxPrecision: Any = js.native
+    inline def getStepMaxPrecision_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getStepMaxPrecision")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput.roundAndClampValue")
     @js.native
-    def roundAndClampValue: js.Any = js.native
-    inline def roundAndClampValue_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roundAndClampValue")(x.asInstanceOf[js.Any])
+    def roundAndClampValue: Any = js.native
+    inline def roundAndClampValue_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roundAndClampValue")(x.asInstanceOf[js.Any])
   }
   
   trait INumericInputProps
     extends StObject
-       with IIntentProps
-       with IProps {
+       with InputSharedProps {
     
     /**
       * Whether to allow only floating-point number characters in the field,
       * mimicking the native `input[type="number"]`.
+      *
       * @default true
       */
     var allowNumericCharactersOnly: js.UndefOr[Boolean] = js.undefined
@@ -153,6 +153,7 @@ object numericInputMod {
     
     /**
       * The position of the buttons with respect to the input field.
+      *
       * @default Position.RIGHT
       */
     var buttonPosition: js.UndefOr[left | right | none] = js.undefined
@@ -161,6 +162,7 @@ object numericInputMod {
       * Whether the value should be clamped to `[min, max]` on blur.
       * The value will be clamped to each bound only if the bound is defined.
       * Note that native `input[type="number"]` controls do *NOT* clamp on blur.
+      *
       * @default false
       */
     var clampValueOnBlur: js.UndefOr[Boolean] = js.undefined
@@ -169,40 +171,24 @@ object numericInputMod {
       * In uncontrolled mode, this sets the default value of the input.
       * Note that this value is only used upon component instantiation and changes to this prop
       * during the component lifecycle will be ignored.
+      *
       * @default ""
       */
     var defaultValue: js.UndefOr[Double | String] = js.undefined
     
     /**
-      * Whether the input is non-interactive.
-      * @default false
-      */
-    var disabled: js.UndefOr[Boolean] = js.undefined
-    
-    /** Whether the numeric input should take up the full width of its container. */
-    var fill: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Ref handler that receives HTML `<input>` element backing this component.
-      */
-    var inputRef: js.UndefOr[js.Function1[/* ref */ HTMLInputElement | Null, js.Any]] = js.undefined
-    
-    /**
       * If set to `true`, the input will display with larger styling.
       * This is equivalent to setting `Classes.LARGE` via className on the
       * parent control group and on the child input group.
+      *
       * @default false
       */
     var large: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Name of a Blueprint UI icon (or an icon element) to render on the left side of input.
-      */
-    var leftIcon: js.UndefOr[IconName | MaybeElement] = js.undefined
-    
-    /**
       * The locale name, which is passed to the component to format the number and allowing to type the number in the specific locale.
       * [See MDN documentation for more info about browser locale identification](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#Locale_identification_and_negotiation).
+      *
       * @default ""
       */
     var locale: js.UndefOr[String] = js.undefined
@@ -210,6 +196,7 @@ object numericInputMod {
     /**
       * The increment between successive values when <kbd>shift</kbd> is held.
       * Pass explicit `null` value to disable this interaction.
+      *
       * @default 10
       */
     var majorStepSize: js.UndefOr[Double | Null] = js.undefined
@@ -223,6 +210,7 @@ object numericInputMod {
     /**
       * The increment between successive values when <kbd>alt</kbd> is held.
       * Pass explicit `null` value to disable this interaction.
+      *
       * @default 0.1
       */
     var minorStepSize: js.UndefOr[Double | Null] = js.undefined
@@ -240,29 +228,23 @@ object numericInputMod {
         ]
       ] = js.undefined
     
-    /** The placeholder text in the absence of any value. */
-    var placeholder: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Element to render on right side of input.
-      * For best results, use a minimal button, tag, or small spinner.
-      */
-    var rightElement: js.UndefOr[Element] = js.undefined
-    
     /**
       * Whether the entire text field should be selected on focus.
+      *
       * @default false
       */
     var selectAllOnFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the entire text field should be selected on increment.
+      *
       * @default false
       */
     var selectAllOnIncrement: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The increment between successive values when no modifier keys are held.
+      *
       * @default 1
       */
     var stepSize: js.UndefOr[Double] = js.undefined
@@ -301,27 +283,9 @@ object numericInputMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-      
-      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
-      
-      inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
-      
-      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
-      
-      inline def setInputRef(value: /* ref */ HTMLInputElement | Null => js.Any): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
-      
-      inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
-      
       inline def setLarge(value: Boolean): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
       inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
-      
-      inline def setLeftIcon(value: IconName | MaybeElement): Self = StObject.set(x, "leftIcon", value.asInstanceOf[js.Any])
-      
-      inline def setLeftIconNull: Self = StObject.set(x, "leftIcon", null)
-      
-      inline def setLeftIconUndefined: Self = StObject.set(x, "leftIcon", js.undefined)
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -356,14 +320,6 @@ object numericInputMod {
       ): Self = StObject.set(x, "onValueChange", js.Any.fromFunction3(value))
       
       inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
-      
-      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
-      
-      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
-      
-      inline def setRightElement(value: Element): Self = StObject.set(x, "rightElement", value.asInstanceOf[js.Any])
-      
-      inline def setRightElementUndefined: Self = StObject.set(x, "rightElement", js.undefined)
       
       inline def setSelectAllOnFocus(value: Boolean): Self = StObject.set(x, "selectAllOnFocus", value.asInstanceOf[js.Any])
       
@@ -428,4 +384,6 @@ object numericInputMod {
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
+  
+  type NumericInputProps = INumericInputProps
 }

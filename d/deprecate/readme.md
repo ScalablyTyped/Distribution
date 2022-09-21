@@ -10,10 +10,10 @@ Mark methods as deprecated and warn the user when they're called
 | ------------------ | :-------------: |
 | Full name          | deprecate |
 | Keywords           | deprecate |
-| # releases         | 2 |
-| # dependents       | 93 |
-| # downloads        | 16917906 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1297928.3333333333 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/brianc/node-deprecate#readme)

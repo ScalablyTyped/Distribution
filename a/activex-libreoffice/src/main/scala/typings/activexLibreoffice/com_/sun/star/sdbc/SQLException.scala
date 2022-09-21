@@ -24,14 +24,14 @@ trait SQLException
   var ErrorCode: Double
   
   /** returns a chain to the next Exception. This can be used to provide additional error information. */
-  var NextException: js.Any
+  var NextException: Any
   
   /** returns a string, which uses the XOPEN SQLState conventions. The values of the SQLState string are described in the XOPEN SQL spec. */
   var SQLState: String
 }
 object SQLException {
   
-  inline def apply(Context: XInterface, ErrorCode: Double, Message: String, NextException: js.Any, SQLState: String): SQLException = {
+  inline def apply(Context: XInterface, ErrorCode: Double, Message: String, NextException: Any, SQLState: String): SQLException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], ErrorCode = ErrorCode.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], NextException = NextException.asInstanceOf[js.Any], SQLState = SQLState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SQLException]
   }
@@ -40,7 +40,7 @@ object SQLException {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    inline def setNextException(value: js.Any): Self = StObject.set(x, "NextException", value.asInstanceOf[js.Any])
+    inline def setNextException(value: Any): Self = StObject.set(x, "NextException", value.asInstanceOf[js.Any])
     
     inline def setSQLState(value: String): Self = StObject.set(x, "SQLState", value.asInstanceOf[js.Any])
   }

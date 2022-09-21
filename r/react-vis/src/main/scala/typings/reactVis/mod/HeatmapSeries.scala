@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "HeatmapSeries")
 @js.native
-class HeatmapSeries protected () extends AbstractSeries[HeatmapSeriesProps] {
+open class HeatmapSeries protected () extends AbstractSeries[HeatmapSeriesProps] {
   def this(props: HeatmapSeriesProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HeatmapSeriesProps, context: js.Any) = this()
+  def this(props: HeatmapSeriesProps, context: Any) = this()
 }

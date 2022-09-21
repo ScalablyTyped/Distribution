@@ -25,6 +25,6 @@ object Billing {
     
     inline def setConsumerDestinationsUndefined: Self = StObject.set(x, "consumerDestinations", js.undefined)
     
-    inline def setConsumerDestinationsVarargs(value: BillingDestination*): Self = StObject.set(x, "consumerDestinations", js.Array(value :_*))
+    inline def setConsumerDestinationsVarargs(value: BillingDestination*): Self = StObject.set(x, "consumerDestinations", js.Array(value*))
   }
 }

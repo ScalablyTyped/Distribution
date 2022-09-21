@@ -33,6 +33,6 @@ object PartitionError {
     
     inline def setPartitionValuesUndefined: Self = StObject.set(x, "PartitionValues", js.undefined)
     
-    inline def setPartitionValuesVarargs(value: ValueString*): Self = StObject.set(x, "PartitionValues", js.Array(value :_*))
+    inline def setPartitionValuesVarargs(value: ValueString*): Self = StObject.set(x, "PartitionValues", js.Array(value*))
   }
 }

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a single frame of video data. */
 @JSGlobal("Windows.Media.VideoFrame")
 @js.native
-class VideoFrame protected ()
+open class VideoFrame protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.VideoFrame {
   /**

@@ -21,7 +21,7 @@ object mod {
     /**
       * An object mapping string argument names to default values
       */
-    var default: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var default: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /**
       * When true, populate argv._ with everything before the -- and argv['--'] with everything after the --.
@@ -77,9 +77,9 @@ object mod {
       
       inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
       
-      inline def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value :_*))
+      inline def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value*))
       
-      inline def setDefault(value: StringDictionary[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: StringDictionary[Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
@@ -91,7 +91,7 @@ object mod {
       
       inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
       
-      inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value :_*))
+      inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value*))
       
       inline def setUnknown(value: /* arg */ String => Boolean): Self = StObject.set(x, "unknown", js.Any.fromFunction1(value))
       
@@ -101,7 +101,7 @@ object mod {
   
   trait ParsedArgs
     extends StObject
-       with /* arg */ StringDictionary[js.Any] {
+       with /* arg */ StringDictionary[Any] {
     
     /**
       * If opts['--'] is true, populated with everything after the --
@@ -128,11 +128,11 @@ object mod {
       
       inline def `set--Undefined`: Self = StObject.set(x, "--", js.undefined)
       
-      inline def `set--Varargs`(value: String*): Self = StObject.set(x, "--", js.Array(value :_*))
+      inline def `set--Varargs`(value: String*): Self = StObject.set(x, "--", js.Array(value*))
       
       inline def set_underscore(value: js.Array[String]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
       
-      inline def set_underscoreVarargs(value: String*): Self = StObject.set(x, "_", js.Array(value :_*))
+      inline def set_underscoreVarargs(value: String*): Self = StObject.set(x, "_", js.Array(value*))
     }
   }
 }

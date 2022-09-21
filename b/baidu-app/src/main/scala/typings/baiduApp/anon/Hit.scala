@@ -26,7 +26,7 @@ object Hit {
     
     inline def setHit(value: js.Array[String]): Self = StObject.set(x, "hit", value.asInstanceOf[js.Any])
     
-    inline def setHitVarargs(value: String*): Self = StObject.set(x, "hit", js.Array(value :_*))
+    inline def setHitVarargs(value: String*): Self = StObject.set(x, "hit", js.Array(value*))
     
     inline def setLabel(value: Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -30,6 +30,9 @@ trait GoogleCloudRecommenderV1Recommendation extends StObject {
   /** The primary impact that this recommendation can have while trying to optimize for one category. */
   var primaryImpact: js.UndefOr[GoogleCloudRecommenderV1Impact] = js.undefined
   
+  /** Recommendation's priority. */
+  var priority: js.UndefOr[String] = js.undefined
+  
   /**
     * Contains an identifier for a subtype of recommendations produced for the same recommender. Subtype is a function of content and impact, meaning a new subtype might be added when
     * significant changes to `content` or `primary_impact.category` are introduced. See the Recommenders section to see a list of subtypes for a given Recommender. Examples: For
@@ -39,6 +42,12 @@ trait GoogleCloudRecommenderV1Recommendation extends StObject {
   
   /** Information for state. Contains state and metadata. */
   var stateInfo: js.UndefOr[GoogleCloudRecommenderV1RecommendationStateInfo] = js.undefined
+  
+  /**
+    * Corresponds to a mutually exclusive group ID within a recommender. A non-empty ID indicates that the recommendation belongs to a mutually exclusive group. This means that only one
+    * recommendation within the group is suggested to be applied.
+    */
+  var xorGroupId: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommenderV1Recommendation {
   
@@ -53,13 +62,13 @@ object GoogleCloudRecommenderV1Recommendation {
     
     inline def setAdditionalImpactUndefined: Self = StObject.set(x, "additionalImpact", js.undefined)
     
-    inline def setAdditionalImpactVarargs(value: GoogleCloudRecommenderV1Impact*): Self = StObject.set(x, "additionalImpact", js.Array(value :_*))
+    inline def setAdditionalImpactVarargs(value: GoogleCloudRecommenderV1Impact*): Self = StObject.set(x, "additionalImpact", js.Array(value*))
     
     inline def setAssociatedInsights(value: js.Array[GoogleCloudRecommenderV1RecommendationInsightReference]): Self = StObject.set(x, "associatedInsights", value.asInstanceOf[js.Any])
     
     inline def setAssociatedInsightsUndefined: Self = StObject.set(x, "associatedInsights", js.undefined)
     
-    inline def setAssociatedInsightsVarargs(value: GoogleCloudRecommenderV1RecommendationInsightReference*): Self = StObject.set(x, "associatedInsights", js.Array(value :_*))
+    inline def setAssociatedInsightsVarargs(value: GoogleCloudRecommenderV1RecommendationInsightReference*): Self = StObject.set(x, "associatedInsights", js.Array(value*))
     
     inline def setContent(value: GoogleCloudRecommenderV1RecommendationContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
@@ -85,6 +94,10 @@ object GoogleCloudRecommenderV1Recommendation {
     
     inline def setPrimaryImpactUndefined: Self = StObject.set(x, "primaryImpact", js.undefined)
     
+    inline def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    
     inline def setRecommenderSubtype(value: String): Self = StObject.set(x, "recommenderSubtype", value.asInstanceOf[js.Any])
     
     inline def setRecommenderSubtypeUndefined: Self = StObject.set(x, "recommenderSubtype", js.undefined)
@@ -92,5 +105,9 @@ object GoogleCloudRecommenderV1Recommendation {
     inline def setStateInfo(value: GoogleCloudRecommenderV1RecommendationStateInfo): Self = StObject.set(x, "stateInfo", value.asInstanceOf[js.Any])
     
     inline def setStateInfoUndefined: Self = StObject.set(x, "stateInfo", js.undefined)
+    
+    inline def setXorGroupId(value: String): Self = StObject.set(x, "xorGroupId", value.asInstanceOf[js.Any])
+    
+    inline def setXorGroupIdUndefined: Self = StObject.set(x, "xorGroupId", js.undefined)
   }
 }

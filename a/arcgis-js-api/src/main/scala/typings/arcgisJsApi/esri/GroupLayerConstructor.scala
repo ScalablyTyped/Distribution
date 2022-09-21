@@ -17,5 +17,5 @@ trait GroupLayerConstructor
 Instantiable0[GroupLayer]
      with Instantiable1[/* properties */ GroupLayerProperties, GroupLayer] {
   
-  def fromJSON(json: js.Any): GroupLayer = js.native
+  def fromJSON(json: Any): GroupLayer = js.native
 }

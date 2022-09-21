@@ -8,5 +8,5 @@ object updateApnsChannelOutputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/UpdateApnsChannelOutput", "UpdateApnsChannelOutput")
   @js.native
-  val UpdateApnsChannelOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UpdateApnsChannelOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

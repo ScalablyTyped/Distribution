@@ -9,7 +9,7 @@ trait ListProfileTimesRequest extends StObject {
   /**
     * The end time of the time range from which to list the profiles.
     */
-  var endTime: Timestamp
+  var endTime: js.Date
   
   /**
     * The maximum number of profile time results returned by ListProfileTimes in paginated output. When this parameter is used, ListProfileTimes only returns maxResults results in a single page with a nextToken response element. The remaining results of the initial request can be seen by sending another ListProfileTimes request with the returned nextToken value. 
@@ -39,15 +39,15 @@ trait ListProfileTimesRequest extends StObject {
   /**
     * The start time of the time range from which to list the profiles.
     */
-  var startTime: Timestamp
+  var startTime: js.Date
 }
 object ListProfileTimesRequest {
   
   inline def apply(
-    endTime: Timestamp,
+    endTime: js.Date,
     period: AggregationPeriod,
     profilingGroupName: ProfilingGroupName,
-    startTime: Timestamp
+    startTime: js.Date
   ): ListProfileTimesRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], profilingGroupName = profilingGroupName.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProfileTimesRequest]
@@ -55,7 +55,7 @@ object ListProfileTimesRequest {
   
   extension [Self <: ListProfileTimesRequest](x: Self) {
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -73,6 +73,6 @@ object ListProfileTimesRequest {
     
     inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

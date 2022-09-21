@@ -13,12 +13,12 @@ object nodeEnvMod {
   
   @JSImport("openfin/_v2/environment/node-env", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with NodeEnvironment {
     
     /* CompleteClass */
-    override def createChildWindow(options: js.Any): js.Promise[js.Any] = js.native
+    override def createChildWindow(options: Any): js.Promise[Any] = js.native
     
     /* CompleteClass */
     override def getCurrentEntityIdentity(): Identity = js.native
@@ -27,7 +27,7 @@ object nodeEnvMod {
     override def getCurrentEntityType(): EntityType = js.native
     
     /* CompleteClass */
-    override def getNextMessageId(): js.Any = js.native
+    override def getNextMessageId(): Any = js.native
     
     /* CompleteClass */
     override def getRandomId(): String = js.native
@@ -39,10 +39,10 @@ object nodeEnvMod {
     override def isWindowExists(uuid: String, name: String): Boolean = js.native
     
     /* private */ /* CompleteClass */
-    var messageCounter: js.Any = js.native
+    var messageCounter: Any = js.native
     
     /* CompleteClass */
-    override def raiseEvent(eventName: String, eventArgs: js.Any): Unit = js.native
+    override def raiseEvent(eventName: String, eventArgs: Any): Unit = js.native
     
     /* CompleteClass */
     override def retrievePort(config: NewConnectConfig): js.Promise[Double] = js.native
@@ -55,20 +55,20 @@ object nodeEnvMod {
     extends StObject
        with Environment {
     
-    /* private */ var messageCounter: js.Any
+    /* private */ var messageCounter: Any
   }
   object NodeEnvironment {
     
     inline def apply(
-      createChildWindow: js.Any => js.Promise[js.Any],
+      createChildWindow: Any => js.Promise[Any],
       getCurrentEntityIdentity: () => Identity,
       getCurrentEntityType: () => EntityType,
-      getNextMessageId: () => js.Any,
+      getNextMessageId: () => Any,
       getRandomId: () => String,
       getWebWindow: Identity => Window,
       isWindowExists: (String, String) => Boolean,
-      messageCounter: js.Any,
-      raiseEvent: (String, js.Any) => Unit,
+      messageCounter: Any,
+      raiseEvent: (String, Any) => Unit,
       retrievePort: NewConnectConfig => js.Promise[Double],
       writeToken: (String, String) => js.Promise[String]
     ): NodeEnvironment = {
@@ -78,7 +78,7 @@ object nodeEnvMod {
     
     extension [Self <: NodeEnvironment](x: Self) {
       
-      inline def setMessageCounter(value: js.Any): Self = StObject.set(x, "messageCounter", value.asInstanceOf[js.Any])
+      inline def setMessageCounter(value: Any): Self = StObject.set(x, "messageCounter", value.asInstanceOf[js.Any])
     }
   }
 }

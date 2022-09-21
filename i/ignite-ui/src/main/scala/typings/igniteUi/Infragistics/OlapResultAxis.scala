@@ -14,11 +14,11 @@ trait OlapResultAxis extends StObject {
   /**
     * Returns an array of $.ig.OlapResultTuple objects which form the axis.
     */
-  def tuples(): js.Array[js.Any]
+  def tuples(): js.Array[Any]
 }
 object OlapResultAxis {
   
-  inline def apply(tupleSize: () => Double, tuples: () => js.Array[js.Any]): OlapResultAxis = {
+  inline def apply(tupleSize: () => Double, tuples: () => js.Array[Any]): OlapResultAxis = {
     val __obj = js.Dynamic.literal(tupleSize = js.Any.fromFunction0(tupleSize), tuples = js.Any.fromFunction0(tuples))
     __obj.asInstanceOf[OlapResultAxis]
   }
@@ -27,6 +27,6 @@ object OlapResultAxis {
     
     inline def setTupleSize(value: () => Double): Self = StObject.set(x, "tupleSize", js.Any.fromFunction0(value))
     
-    inline def setTuples(value: () => js.Array[js.Any]): Self = StObject.set(x, "tuples", js.Any.fromFunction0(value))
+    inline def setTuples(value: () => js.Array[Any]): Self = StObject.set(x, "tuples", js.Any.fromFunction0(value))
   }
 }

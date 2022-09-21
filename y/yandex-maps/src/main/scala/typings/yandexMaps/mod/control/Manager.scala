@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("yandex-maps", "control.Manager")
 @js.native
-class Manager protected () extends StObject {
+open class Manager protected () extends StObject {
   def this(map: Map_) = this()
   def this(map: Map_, controls: js.Array[String | IControl]) = this()
   def this(map: Map_, controls: js.Array[String | IControl], options: IManagerOptions) = this()

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Prompt")
 @js.native
-class Prompt protected ()
+open class Prompt protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Prompt {
   def this(element: Element) = this()

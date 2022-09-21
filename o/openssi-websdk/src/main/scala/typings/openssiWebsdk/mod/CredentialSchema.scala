@@ -33,7 +33,7 @@ object CredentialSchema {
     
     inline def setAttr_names(value: js.Array[String]): Self = StObject.set(x, "attr_names", value.asInstanceOf[js.Any])
     
-    inline def setAttr_namesVarargs(value: String*): Self = StObject.set(x, "attr_names", js.Array(value :_*))
+    inline def setAttr_namesVarargs(value: String*): Self = StObject.set(x, "attr_names", js.Array(value*))
     
     inline def setId(value: CredentialSchemaID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs")
 @js.native
-class ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs protected ()
+open class ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs {
   /**

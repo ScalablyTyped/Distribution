@@ -44,6 +44,23 @@ object typesTypesMod {
   
   type Maybe[T, NotFound] = T | NotFound
   
+  trait NonNullRef[T] extends StObject {
+    
+    val current: T
+  }
+  object NonNullRef {
+    
+    inline def apply[T](current: T): NonNullRef[T] = {
+      val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NonNullRef[T]]
+    }
+    
+    extension [Self <: NonNullRef[?], T](x: Self & NonNullRef[T]) {
+      
+      inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    }
+  }
+  
   type PropsWithRef[P /* <: js.Object */, E /* <: HTMLElement */] = P & Ref[E]
   
   type RequireAtLeastOne[T, Keys /* <: /* keyof T */ String */] = (Pick[T, Exclude[/* keyof T */ String, Keys]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Keys ]: -? std.Required<std.Pick<T, K>> & std.Partial<std.Pick<T, std.Exclude<Keys, K>>>}[Keys] */ js.Any)

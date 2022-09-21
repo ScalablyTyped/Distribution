@@ -10,7 +10,7 @@ trait DataSourceSettingsGroupby
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Default collapse state
@@ -45,7 +45,7 @@ trait DataSourceSettingsGroupby
     * Each summary object has the following format { field:"fieldName", summaryFunctions: [] }, where the summaryFunctions arrays can contain either a summary name (avg, sum, count etc.) or a custom function for caclulating a custom summary.
     *
     */
-  var summaries: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var summaries: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Specifies the postion for the summaries for each field inside each group.
@@ -83,7 +83,7 @@ object DataSourceSettingsGroupby {
     
     inline def setPagingModeUndefined: Self = StObject.set(x, "pagingMode", js.undefined)
     
-    inline def setSummaries(value: js.Array[js.Any]): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
+    inline def setSummaries(value: js.Array[Any]): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
     
     inline def setSummariesPosition(value: String): Self = StObject.set(x, "summariesPosition", value.asInstanceOf[js.Any])
     
@@ -91,6 +91,6 @@ object DataSourceSettingsGroupby {
     
     inline def setSummariesUndefined: Self = StObject.set(x, "summaries", js.undefined)
     
-    inline def setSummariesVarargs(value: js.Any*): Self = StObject.set(x, "summaries", js.Array(value :_*))
+    inline def setSummariesVarargs(value: Any*): Self = StObject.set(x, "summaries", js.Array(value*))
   }
 }

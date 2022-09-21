@@ -19,7 +19,7 @@ object rangeContextMod extends Shortcut {
   
   trait RangeContextProps extends StObject {
     
-    var hoverRangedValue: js.UndefOr[RangeValue[js.Any]] = js.undefined
+    var hoverRangedValue: js.UndefOr[RangeValue[Any]] = js.undefined
     
     var inRange: js.UndefOr[Boolean] = js.undefined
     
@@ -29,7 +29,7 @@ object rangeContextMod extends Shortcut {
       * Set displayed range value style.
       * Panel only has one value, this is only style effect.
       */
-    var rangedValue: js.UndefOr[(js.Tuple2[NullableDateType[js.Any], NullableDateType[js.Any]]) | Null] = js.undefined
+    var rangedValue: js.UndefOr[(js.Tuple2[NullableDateType[Any], NullableDateType[Any]]) | Null] = js.undefined
   }
   object RangeContextProps {
     
@@ -40,7 +40,7 @@ object rangeContextMod extends Shortcut {
     
     extension [Self <: RangeContextProps](x: Self) {
       
-      inline def setHoverRangedValue(value: RangeValue[js.Any]): Self = StObject.set(x, "hoverRangedValue", value.asInstanceOf[js.Any])
+      inline def setHoverRangedValue(value: RangeValue[Any]): Self = StObject.set(x, "hoverRangedValue", value.asInstanceOf[js.Any])
       
       inline def setHoverRangedValueNull: Self = StObject.set(x, "hoverRangedValue", null)
       
@@ -54,7 +54,7 @@ object rangeContextMod extends Shortcut {
       
       inline def setPanelPositionUndefined: Self = StObject.set(x, "panelPosition", js.undefined)
       
-      inline def setRangedValue(value: js.Tuple2[NullableDateType[js.Any], NullableDateType[js.Any]]): Self = StObject.set(x, "rangedValue", value.asInstanceOf[js.Any])
+      inline def setRangedValue(value: js.Tuple2[NullableDateType[Any], NullableDateType[Any]]): Self = StObject.set(x, "rangedValue", value.asInstanceOf[js.Any])
       
       inline def setRangedValueNull: Self = StObject.set(x, "rangedValue", null)
       

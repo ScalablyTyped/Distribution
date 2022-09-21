@@ -9,10 +9,10 @@ Typings are for version 4.x
 | ------------------ | :-------------: |
 | Full name          | greasemonkey |
 | Keywords           | firefox, chrome, api, user.js, userscript, greasemonkey |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 117 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 20.666666666666668 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/greasemonkey)

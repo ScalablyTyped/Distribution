@@ -11,5 +11,5 @@ abstract class ProcessLauncherResult ()
      with typings.winrtUwp.Windows.System.ProcessLauncherResult {
   
   /* CompleteClass */
-  var exitCode: js.Any = js.native
+  var exitCode: Any = js.native
 }

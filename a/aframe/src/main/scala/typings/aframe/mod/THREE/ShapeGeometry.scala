@@ -7,11 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.ShapeGeometry")
 @js.native
-class ShapeGeometry protected ()
-  extends typings.three.mod.ShapeGeometry {
-  /**
-  	 * @param shapes
-  	 * @param [curveSegments=12]
-  	 */
-  def this(shapes: typings.three.shapeMod.Shape) = this()
-}
+open class ShapeGeometry ()
+  extends typings.three.mod.ShapeGeometry

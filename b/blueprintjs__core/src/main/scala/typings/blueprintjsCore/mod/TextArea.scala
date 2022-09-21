@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.textAreaMod.ITextAreaProps
+import typings.blueprintjsCore.textAreaMod.TextAreaProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "TextArea")
 @js.native
-class TextArea protected ()
+open class TextArea protected ()
   extends typings.blueprintjsCore.componentsMod.TextArea {
-  def this(props: ITextAreaProps) = this()
-  def this(props: ITextAreaProps, context: js.Any) = this()
+  def this(props: TextAreaProps) = this()
+  def this(props: TextAreaProps, context: Any) = this()
 }
 /* static members */
 object TextArea {

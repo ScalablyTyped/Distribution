@@ -17,7 +17,7 @@ object carouselIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/carousel/index.native", JSImport.Default)
   @js.native
-  class default protected () extends Carousel {
+  open class default protected () extends Carousel {
     def this(props: CarouselProps) = this()
   }
   object default {
@@ -34,14 +34,13 @@ object carouselIndexNativeMod {
   }
   
   @js.native
-  trait Carousel
-    extends Component[CarouselProps, CarouselState, js.Any] {
+  trait Carousel extends Component[CarouselProps, CarouselState, Any] {
     
-    /* private */ var androidScrollEndTimer: js.Any = js.native
+    /* private */ var androidScrollEndTimer: Any = js.native
     
     def autoplay(): Unit = js.native
     
-    /* private */ var autoplayTimer: js.Any = js.native
+    /* private */ var autoplayTimer: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MCarousel(): Unit = js.native
@@ -69,11 +68,11 @@ object carouselIndexNativeMod {
     
     def renderDots(index: Double): js.UndefOr[js.Object | Null] = js.native
     
-    /* private */ var scrollEndTimter: js.Any = js.native
+    /* private */ var scrollEndTimter: Any = js.native
     
     def scrollNextPage(): Unit = js.native
     
-    /* private */ var scrollviewRef: js.Any = js.native
+    /* private */ var scrollviewRef: Any = js.native
     
     def updateIndex(offset: CarouselOffset): Unit = js.native
   }
@@ -133,7 +132,7 @@ object carouselIndexNativeMod {
     
     var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.undefined
+    var styles: js.UndefOr[Any] = js.undefined
   }
   object CarouselProps {
     
@@ -186,7 +185,7 @@ object carouselIndexNativeMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
@@ -251,13 +250,13 @@ object carouselIndexNativeMod {
     
     var dotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.Any
+    var styles: Any
     
     var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object PaginationProps {
     
-    inline def apply(count: Double, current: Double, styles: js.Any): PaginationProps = {
+    inline def apply(count: Double, current: Double, styles: Any): PaginationProps = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationProps]
     }
@@ -280,7 +279,7 @@ object carouselIndexNativeMod {
       
       inline def setDotStyleUndefined: Self = StObject.set(x, "dotStyle", js.undefined)
       
-      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
       inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       

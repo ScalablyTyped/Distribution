@@ -3,18 +3,17 @@ package typings.startServerWebpackPlugin
 import typings.startServerWebpackPlugin.startServerWebpackPluginBooleans.`false`
 import typings.startServerWebpackPlugin.startServerWebpackPluginBooleans.`true`
 import typings.startServerWebpackPlugin.startServerWebpackPluginStrings.SIGUSR2
-import typings.std.Plugin
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("start-server-webpack-plugin", JSImport.Namespace)
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("start-server-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends StObject
-       with Plugin {
+  open class ^ () extends StObject {
     def this(options: String) = this()
     def this(options: Options) = this()
   }
@@ -64,7 +63,7 @@ object mod {
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
       
@@ -78,7 +77,7 @@ object mod {
       
       inline def setNodeArgsUndefined: Self = StObject.set(x, "nodeArgs", js.undefined)
       
-      inline def setNodeArgsVarargs(value: String*): Self = StObject.set(x, "nodeArgs", js.Array(value :_*))
+      inline def setNodeArgsVarargs(value: String*): Self = StObject.set(x, "nodeArgs", js.Array(value*))
       
       inline def setSignal(value: `false` | `true` | SIGUSR2): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       

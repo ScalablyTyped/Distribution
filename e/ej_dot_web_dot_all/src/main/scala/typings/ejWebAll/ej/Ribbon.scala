@@ -14,8 +14,8 @@ trait Ribbon
     * @param {number} index to the backstage item this is optional.
     * @returns {void}
     */
-  def addBackStageItem(item: js.Any): Unit = js.native
-  def addBackStageItem(item: js.Any, index: Double): Unit = js.native
+  def addBackStageItem(item: Any): Unit = js.native
+  def addBackStageItem(item: Any, index: Double): Unit = js.native
   
   /** Adds contextual tab or contextual tab set dynamically in the ribbon control with contextual tabs object and index position. When index is null, ribbon contextual tab or contextual
     * tab set is added at the last index.
@@ -23,8 +23,8 @@ trait Ribbon
     * @param {number} index of the contextual tab or contextual tab set, this is optional.
     * @returns {void}
     */
-  def addContextualTabs(contextualTabSet: js.Any): Unit = js.native
-  def addContextualTabs(contextualTabSet: js.Any, index: Double): Unit = js.native
+  def addContextualTabs(contextualTabSet: Any): Unit = js.native
+  def addContextualTabs(contextualTabSet: Any, index: Double): Unit = js.native
   
   /** Adds tab dynamically in the ribbon control with given name, tab group array and index position. When index is null, ribbon tab is added at the last index.
     * @param {string} ribbon tab display text.
@@ -32,8 +32,8 @@ trait Ribbon
     * @param {number} index of the ribbon tab,this is optional.
     * @returns {void}
     */
-  def addTab(tabText: String, ribbonGroups: js.Array[js.Any]): Unit = js.native
-  def addTab(tabText: String, ribbonGroups: js.Array[js.Any], index: Double): Unit = js.native
+  def addTab(tabText: String, ribbonGroups: js.Array[Any]): Unit = js.native
+  def addTab(tabText: String, ribbonGroups: js.Array[Any], index: Double): Unit = js.native
   
   /** Adds tab group dynamically in the ribbon control with given tab index, tab group object and group index position. When group index is null, ribbon group is added at the last index.
     * @param {number} ribbon tab index.
@@ -41,8 +41,8 @@ trait Ribbon
     * @param {number} index of the ribbon group,this is optional.
     * @returns {void}
     */
-  def addTabGroup(tabIndex: Double, tabGroup: js.Any): Unit = js.native
-  def addTabGroup(tabIndex: Double, tabGroup: js.Any, groupIndex: Double): Unit = js.native
+  def addTabGroup(tabIndex: Double, tabGroup: Any): Unit = js.native
+  def addTabGroup(tabIndex: Double, tabGroup: Any, groupIndex: Double): Unit = js.native
   
   /** Adds group content dynamically in the ribbon control with given tab index, group index, content, content index and sub group index position. When content index is null, content is
     * added at the last index.
@@ -53,10 +53,10 @@ trait Ribbon
     * @param {number} sub group index in the ribbon group. This is optional. If the value is not given, then by default contentIndex will be considered as 0.
     * @returns {void}
     */
-  def addTabGroupContent(tabIndex: Double, groupIndex: Double, content: js.Any): Unit = js.native
-  def addTabGroupContent(tabIndex: Double, groupIndex: Double, content: js.Any, contentIndex: Double): Unit = js.native
-  def addTabGroupContent(tabIndex: Double, groupIndex: Double, content: js.Any, contentIndex: Double, subGroupIndex: Double): Unit = js.native
-  def addTabGroupContent(tabIndex: Double, groupIndex: Double, content: js.Any, contentIndex: Unit, subGroupIndex: Double): Unit = js.native
+  def addTabGroupContent(tabIndex: Double, groupIndex: Double, content: Any): Unit = js.native
+  def addTabGroupContent(tabIndex: Double, groupIndex: Double, content: Any, contentIndex: Double): Unit = js.native
+  def addTabGroupContent(tabIndex: Double, groupIndex: Double, content: Any, contentIndex: Double, subGroupIndex: Double): Unit = js.native
+  def addTabGroupContent(tabIndex: Double, groupIndex: Double, content: Any, contentIndex: Unit, subGroupIndex: Double): Unit = js.native
   
   /** Collapses the ribbon tab content.
     * @returns {void}
@@ -150,7 +150,7 @@ trait Ribbon
     * @returns {void}
     */
   def updateBackStageItem(index: Double): Unit = js.native
-  def updateBackStageItem(index: Double, item: js.Any): Unit = js.native
+  def updateBackStageItem(index: Double, item: Any): Unit = js.native
   
   /** To customize Group alone in the inside content.
     * @param {number} ribbon tab index.
@@ -159,7 +159,7 @@ trait Ribbon
     * @returns {void}
     */
   def updateGroup(tabIndex: Double, groupId: String): Unit = js.native
-  def updateGroup(tabIndex: Double, groupId: String, contentGroup: js.Any): Unit = js.native
+  def updateGroup(tabIndex: Double, groupId: String, contentGroup: Any): Unit = js.native
 }
 object Ribbon {
   
@@ -322,7 +322,7 @@ object Ribbon {
     /** Specifies the menu members, events by using the menu settings for the menu in the application tab.
       * @Default {Object}
       */
-    var menuSettings: js.UndefOr[js.Any] = js.undefined
+    var menuSettings: js.UndefOr[Any] = js.undefined
     
     /** Specifies the application menu or backstage page. Specify the type of application tab as &quot;ej.Ribbon.ApplicationTabType.Menu&quot; to render the application menu or
       * &quot;ej.Ribbon.ApplicationTabType.Backstage&quot; to render backstage page in the ribbon control.
@@ -347,7 +347,7 @@ object Ribbon {
       
       inline def setMenuItemIDUndefined: Self = StObject.set(x, "menuItemID", js.undefined)
       
-      inline def setMenuSettings(value: js.Any): Self = StObject.set(x, "menuSettings", value.asInstanceOf[js.Any])
+      inline def setMenuSettings(value: Any): Self = StObject.set(x, "menuSettings", value.asInstanceOf[js.Any])
       
       inline def setMenuSettingsUndefined: Self = StObject.set(x, "menuSettings", js.undefined)
       
@@ -405,7 +405,7 @@ object Ribbon {
       
       inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
       
-      inline def setPagesVarargs(value: ApplicationTabBackstageSettingsPage*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: ApplicationTabBackstageSettingsPage*): Self = StObject.set(x, "pages", js.Array(value*))
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -488,7 +488,7 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the item clicked in the gallery.
       */
@@ -519,7 +519,7 @@ object Ribbon {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -549,7 +549,7 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -572,7 +572,7 @@ object Ribbon {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -590,7 +590,7 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -609,7 +609,7 @@ object Ribbon {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -624,7 +624,7 @@ object Ribbon {
     /** Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
       * @Default {Object}
       */
-    var customToolTip: js.UndefOr[js.Any] = js.undefined
+    var customToolTip: js.UndefOr[Any] = js.undefined
     
     /** Sets tooltip for the collapse pin .
       * @Default {null}
@@ -640,7 +640,7 @@ object Ribbon {
     
     extension [Self <: CollapsePinSettings](x: Self) {
       
-      inline def setCustomToolTip(value: js.Any): Self = StObject.set(x, "customToolTip", value.asInstanceOf[js.Any])
+      inline def setCustomToolTip(value: Any): Self = StObject.set(x, "customToolTip", value.asInstanceOf[js.Any])
       
       inline def setCustomToolTipUndefined: Self = StObject.set(x, "customToolTip", js.undefined)
       
@@ -665,7 +665,7 @@ object Ribbon {
     /** Specifies the tabs to present in the contextual tabs and tab set. Refer to the tabs section for adding tabs into the contextual tabs and tab set.
       * @Default {Array}
       */
-    var tabs: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var tabs: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object ContextualTab {
     
@@ -684,11 +684,11 @@ object Ribbon {
       
       inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
-      inline def setTabs(value: js.Array[js.Any]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Array[Any]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
       inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      inline def setTabsVarargs(value: js.Any*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Any*): Self = StObject.set(x, "tabs", js.Array(value*))
     }
   }
   
@@ -700,7 +700,7 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -719,7 +719,7 @@ object Ribbon {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -741,7 +741,7 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -764,7 +764,7 @@ object Ribbon {
       
       inline def setDeleteIndexUndefined: Self = StObject.set(x, "deleteIndex", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -782,7 +782,7 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -801,7 +801,7 @@ object Ribbon {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -816,7 +816,7 @@ object Ribbon {
     /** Specifies the custom tooltip for expand pin.Refer to ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
       * @Default {Object}
       */
-    var customToolTip: js.UndefOr[js.Any] = js.undefined
+    var customToolTip: js.UndefOr[Any] = js.undefined
     
     /** Sets tooltip for the expand pin.
       * @Default {null}
@@ -832,7 +832,7 @@ object Ribbon {
     
     extension [Self <: ExpandPinSettings](x: Self) {
       
-      inline def setCustomToolTip(value: js.Any): Self = StObject.set(x, "customToolTip", value.asInstanceOf[js.Any])
+      inline def setCustomToolTip(value: Any): Self = StObject.set(x, "customToolTip", value.asInstanceOf[js.Any])
       
       inline def setCustomToolTipUndefined: Self = StObject.set(x, "customToolTip", js.undefined)
       
@@ -850,11 +850,11 @@ object Ribbon {
     
     /** returns the gallery model.
       */
-    var galleryModel: js.UndefOr[js.Any] = js.undefined
+    var galleryModel: js.UndefOr[Any] = js.undefined
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the item clicked in the gallery.
       */
@@ -877,11 +877,11 @@ object Ribbon {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setGalleryModel(value: js.Any): Self = StObject.set(x, "galleryModel", value.asInstanceOf[js.Any])
+      inline def setGalleryModel(value: Any): Self = StObject.set(x, "galleryModel", value.asInstanceOf[js.Any])
       
       inline def setGalleryModelUndefined: Self = StObject.set(x, "galleryModel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -903,7 +903,7 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the control clicked in the group.
       */
@@ -926,7 +926,7 @@ object Ribbon {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -948,7 +948,7 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the clicked group expander.
       */
@@ -971,7 +971,7 @@ object Ribbon {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -993,7 +993,7 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -1012,7 +1012,7 @@ object Ribbon {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1046,7 +1046,7 @@ object Ribbon {
       * defined in buttonSettings and content defaults.
       * @Default {Object}
       */
-    var buttonDefaults: js.UndefOr[js.Any] = js.undefined
+    var buttonDefaults: js.UndefOr[Any] = js.undefined
     
     /** Triggered when the ribbon control is collapsed.
       */
@@ -1083,7 +1083,7 @@ object Ribbon {
     /** Specifies the index or indexes to disable the given index tab or indexes tabs in the ribbon control.
       * @Default {0}
       */
-    var disabledItemIndex: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var disabledItemIndex: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Set enableOnDemand as true to load ribbon tab and backstage contents while corresponding item clicked.
       * @Default {false}
@@ -1098,7 +1098,7 @@ object Ribbon {
     /** Specifies the index or indexes to enable the given index tab or indexes tabs in the ribbon control.
       * @Default {null}
       */
-    var enabledItemIndex: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var enabledItemIndex: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Triggered when the ribbon control is expanded.
       */
@@ -1209,7 +1209,7 @@ object Ribbon {
       
       inline def setBeforeTabRemoveUndefined: Self = StObject.set(x, "beforeTabRemove", js.undefined)
       
-      inline def setButtonDefaults(value: js.Any): Self = StObject.set(x, "buttonDefaults", value.asInstanceOf[js.Any])
+      inline def setButtonDefaults(value: Any): Self = StObject.set(x, "buttonDefaults", value.asInstanceOf[js.Any])
       
       inline def setButtonDefaultsUndefined: Self = StObject.set(x, "buttonDefaults", js.undefined)
       
@@ -1229,7 +1229,7 @@ object Ribbon {
       
       inline def setContextualTabsUndefined: Self = StObject.set(x, "contextualTabs", js.undefined)
       
-      inline def setContextualTabsVarargs(value: ContextualTab*): Self = StObject.set(x, "contextualTabs", js.Array(value :_*))
+      inline def setContextualTabsVarargs(value: ContextualTab*): Self = StObject.set(x, "contextualTabs", js.Array(value*))
       
       inline def setCreate(value: /* e */ CreateEventArgs => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -1243,11 +1243,11 @@ object Ribbon {
       
       inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      inline def setDisabledItemIndex(value: js.Array[js.Any]): Self = StObject.set(x, "disabledItemIndex", value.asInstanceOf[js.Any])
+      inline def setDisabledItemIndex(value: js.Array[Any]): Self = StObject.set(x, "disabledItemIndex", value.asInstanceOf[js.Any])
       
       inline def setDisabledItemIndexUndefined: Self = StObject.set(x, "disabledItemIndex", js.undefined)
       
-      inline def setDisabledItemIndexVarargs(value: js.Any*): Self = StObject.set(x, "disabledItemIndex", js.Array(value :_*))
+      inline def setDisabledItemIndexVarargs(value: Any*): Self = StObject.set(x, "disabledItemIndex", js.Array(value*))
       
       inline def setEnableOnDemand(value: Boolean): Self = StObject.set(x, "enableOnDemand", value.asInstanceOf[js.Any])
       
@@ -1257,11 +1257,11 @@ object Ribbon {
       
       inline def setEnableRTLUndefined: Self = StObject.set(x, "enableRTL", js.undefined)
       
-      inline def setEnabledItemIndex(value: js.Array[js.Any]): Self = StObject.set(x, "enabledItemIndex", value.asInstanceOf[js.Any])
+      inline def setEnabledItemIndex(value: js.Array[Any]): Self = StObject.set(x, "enabledItemIndex", value.asInstanceOf[js.Any])
       
       inline def setEnabledItemIndexUndefined: Self = StObject.set(x, "enabledItemIndex", js.undefined)
       
-      inline def setEnabledItemIndexVarargs(value: js.Any*): Self = StObject.set(x, "enabledItemIndex", js.Array(value :_*))
+      inline def setEnabledItemIndexVarargs(value: Any*): Self = StObject.set(x, "enabledItemIndex", js.Array(value*))
       
       inline def setExpand(value: /* e */ ExpandEventArgs => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
       
@@ -1331,7 +1331,7 @@ object Ribbon {
       
       inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      inline def setTabsVarargs(value: typings.ejWebAll.ej.Ribbon.Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: typings.ejWebAll.ej.Ribbon.Tab*): Self = StObject.set(x, "tabs", js.Array(value*))
       
       inline def setToggleButtonClick(value: /* e */ ToggleButtonClickEventArgs => Unit): Self = StObject.set(x, "toggleButtonClick", js.Any.fromFunction1(value))
       
@@ -1351,7 +1351,7 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the clicked menu item text.
       */
@@ -1374,7 +1374,7 @@ object Ribbon {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1418,7 +1418,7 @@ object Ribbon {
       
       inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      inline def setGroupsVarargs(value: TabsGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: TabsGroup*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -1438,15 +1438,15 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns new added tab content panel.
       */
-    var tabContent: js.UndefOr[js.Any] = js.undefined
+    var tabContent: js.UndefOr[Any] = js.undefined
     
     /** returns new added tab header.
       */
-    var tabHeader: js.UndefOr[js.Any] = js.undefined
+    var tabHeader: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -1465,15 +1465,15 @@ object Ribbon {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTabContent(value: js.Any): Self = StObject.set(x, "tabContent", value.asInstanceOf[js.Any])
+      inline def setTabContent(value: Any): Self = StObject.set(x, "tabContent", value.asInstanceOf[js.Any])
       
       inline def setTabContentUndefined: Self = StObject.set(x, "tabContent", js.undefined)
       
-      inline def setTabHeader(value: js.Any): Self = StObject.set(x, "tabHeader", value.asInstanceOf[js.Any])
+      inline def setTabHeader(value: Any): Self = StObject.set(x, "tabHeader", value.asInstanceOf[js.Any])
       
       inline def setTabHeaderUndefined: Self = StObject.set(x, "tabHeader", js.undefined)
       
@@ -1487,7 +1487,7 @@ object Ribbon {
     
     /** returns current active tab header .
       */
-    var activeHeader: js.UndefOr[js.Any] = js.undefined
+    var activeHeader: js.UndefOr[Any] = js.undefined
     
     /** returns current active index.
       */
@@ -1499,11 +1499,11 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns previous active tab header.
       */
-    var prevActiveHeader: js.UndefOr[js.Any] = js.undefined
+    var prevActiveHeader: js.UndefOr[Any] = js.undefined
     
     /** returns previous active index.
       */
@@ -1522,7 +1522,7 @@ object Ribbon {
     
     extension [Self <: TabClickEventArgs](x: Self) {
       
-      inline def setActiveHeader(value: js.Any): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
+      inline def setActiveHeader(value: Any): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
       
       inline def setActiveHeaderUndefined: Self = StObject.set(x, "activeHeader", js.undefined)
       
@@ -1534,11 +1534,11 @@ object Ribbon {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPrevActiveHeader(value: js.Any): Self = StObject.set(x, "prevActiveHeader", value.asInstanceOf[js.Any])
+      inline def setPrevActiveHeader(value: Any): Self = StObject.set(x, "prevActiveHeader", value.asInstanceOf[js.Any])
       
       inline def setPrevActiveHeaderUndefined: Self = StObject.set(x, "prevActiveHeader", js.undefined)
       
@@ -1564,7 +1564,7 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event.
       */
@@ -1587,7 +1587,7 @@ object Ribbon {
       
       inline def setDeleteIndexUndefined: Self = StObject.set(x, "deleteIndex", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1605,7 +1605,7 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the removed index.
       */
@@ -1628,7 +1628,7 @@ object Ribbon {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1646,7 +1646,7 @@ object Ribbon {
     
     /** returns current active tab header .
       */
-    var activeHeader: js.UndefOr[js.Any] = js.undefined
+    var activeHeader: js.UndefOr[Any] = js.undefined
     
     /** returns current active index.
       */
@@ -1658,11 +1658,11 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns previous active tab header.
       */
-    var prevActiveHeader: js.UndefOr[js.Any] = js.undefined
+    var prevActiveHeader: js.UndefOr[Any] = js.undefined
     
     /** returns previous active index.
       */
@@ -1681,7 +1681,7 @@ object Ribbon {
     
     extension [Self <: TabSelectEventArgs](x: Self) {
       
-      inline def setActiveHeader(value: js.Any): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
+      inline def setActiveHeader(value: Any): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
       
       inline def setActiveHeaderUndefined: Self = StObject.set(x, "activeHeader", js.undefined)
       
@@ -1693,11 +1693,11 @@ object Ribbon {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPrevActiveHeader(value: js.Any): Self = StObject.set(x, "prevActiveHeader", value.asInstanceOf[js.Any])
+      inline def setPrevActiveHeader(value: Any): Self = StObject.set(x, "prevActiveHeader", value.asInstanceOf[js.Any])
       
       inline def setPrevActiveHeaderUndefined: Self = StObject.set(x, "prevActiveHeader", js.undefined)
       
@@ -1775,7 +1775,7 @@ object Ribbon {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setContentVarargs(value: TabsGroupsContent*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: TabsGroupsContent*): Self = StObject.set(x, "content", js.Array(value*))
       
       inline def setCustomContent(value: String): Self = StObject.set(x, "customContent", value.asInstanceOf[js.Any])
       
@@ -1828,7 +1828,7 @@ object Ribbon {
       
       inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      inline def setGroupsVarargs(value: TabsGroupsContentGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: TabsGroupsContentGroup*): Self = StObject.set(x, "groups", js.Array(value*))
     }
   }
   
@@ -1886,7 +1886,7 @@ object Ribbon {
     /** Specifies the Syncfusion button members, events by using this buttonSettings.
       * @Default {Object}
       */
-    var buttonSettings: js.UndefOr[js.Any] = js.undefined
+    var buttonSettings: js.UndefOr[Any] = js.undefined
     
     /** It is used to set the count of gallery contents in a row.
       * @Default {null}
@@ -1916,7 +1916,7 @@ object Ribbon {
     /** Specifies the Syncfusion dropdown list members, events by using this dropdownSettings.
       * @Default {Object}
       */
-    var dropdownSettings: js.UndefOr[js.Any] = js.undefined
+    var dropdownSettings: js.UndefOr[Any] = js.undefined
     
     /** Specifies the separator to the control that is in row type group. The separator separates the control from the next control in the group. Set &quot;true&quot; to enable the
       * separator.
@@ -1967,7 +1967,7 @@ object Ribbon {
     /** Specifies the Syncfusion split button members, events by using this splitButtonSettings.
       * @Default {Object}
       */
-    var splitButtonSettings: js.UndefOr[js.Any] = js.undefined
+    var splitButtonSettings: js.UndefOr[Any] = js.undefined
     
     /** Specifies the text for button, split button, toggle button controls in the sub groups.
       * @Default {null}
@@ -1977,7 +1977,7 @@ object Ribbon {
     /** Specifies the Syncfusion toggle button members, events by using toggleButtonSettings.
       * @Default {Object}
       */
-    var toggleButtonSettings: js.UndefOr[js.Any] = js.undefined
+    var toggleButtonSettings: js.UndefOr[Any] = js.undefined
     
     /** Specifies the tooltip for button, split button, dropdown list, toggle button, custom controls in the sub groups.
       * @Default {null}
@@ -2000,7 +2000,7 @@ object Ribbon {
     
     extension [Self <: TabsGroupsContentGroup](x: Self) {
       
-      inline def setButtonSettings(value: js.Any): Self = StObject.set(x, "buttonSettings", value.asInstanceOf[js.Any])
+      inline def setButtonSettings(value: Any): Self = StObject.set(x, "buttonSettings", value.asInstanceOf[js.Any])
       
       inline def setButtonSettingsUndefined: Self = StObject.set(x, "buttonSettings", js.undefined)
       
@@ -2020,13 +2020,13 @@ object Ribbon {
       
       inline def setCustomGalleryItemsUndefined: Self = StObject.set(x, "customGalleryItems", js.undefined)
       
-      inline def setCustomGalleryItemsVarargs(value: TabsGroupsContentGroupsCustomGalleryItem*): Self = StObject.set(x, "customGalleryItems", js.Array(value :_*))
+      inline def setCustomGalleryItemsVarargs(value: TabsGroupsContentGroupsCustomGalleryItem*): Self = StObject.set(x, "customGalleryItems", js.Array(value*))
       
       inline def setCustomToolTip(value: TabsGroupsContentGroupsCustomToolTip): Self = StObject.set(x, "customToolTip", value.asInstanceOf[js.Any])
       
       inline def setCustomToolTipUndefined: Self = StObject.set(x, "customToolTip", js.undefined)
       
-      inline def setDropdownSettings(value: js.Any): Self = StObject.set(x, "dropdownSettings", value.asInstanceOf[js.Any])
+      inline def setDropdownSettings(value: Any): Self = StObject.set(x, "dropdownSettings", value.asInstanceOf[js.Any])
       
       inline def setDropdownSettingsUndefined: Self = StObject.set(x, "dropdownSettings", js.undefined)
       
@@ -2042,7 +2042,7 @@ object Ribbon {
       
       inline def setGalleryItemsUndefined: Self = StObject.set(x, "galleryItems", js.undefined)
       
-      inline def setGalleryItemsVarargs(value: TabsGroupsContentGroupsGalleryItem*): Self = StObject.set(x, "galleryItems", js.Array(value :_*))
+      inline def setGalleryItemsVarargs(value: TabsGroupsContentGroupsGalleryItem*): Self = StObject.set(x, "galleryItems", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -2068,7 +2068,7 @@ object Ribbon {
       
       inline def setQuickAccessModeUndefined: Self = StObject.set(x, "quickAccessMode", js.undefined)
       
-      inline def setSplitButtonSettings(value: js.Any): Self = StObject.set(x, "splitButtonSettings", value.asInstanceOf[js.Any])
+      inline def setSplitButtonSettings(value: Any): Self = StObject.set(x, "splitButtonSettings", value.asInstanceOf[js.Any])
       
       inline def setSplitButtonSettingsUndefined: Self = StObject.set(x, "splitButtonSettings", js.undefined)
       
@@ -2076,7 +2076,7 @@ object Ribbon {
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setToggleButtonSettings(value: js.Any): Self = StObject.set(x, "toggleButtonSettings", value.asInstanceOf[js.Any])
+      inline def setToggleButtonSettings(value: Any): Self = StObject.set(x, "toggleButtonSettings", value.asInstanceOf[js.Any])
       
       inline def setToggleButtonSettingsUndefined: Self = StObject.set(x, "toggleButtonSettings", js.undefined)
       
@@ -2095,7 +2095,7 @@ object Ribbon {
     /** Specifies the Syncfusion button members, events by using buttonSettings.
       * @Default {Object}
       */
-    var buttonSettings: js.UndefOr[js.Any] = js.undefined
+    var buttonSettings: js.UndefOr[Any] = js.undefined
     
     /** Specifies the type as ej.Ribbon.CustomItemType.Menu or ej.Ribbon.CustomItemType.Button to render Syncfusion button and menu.
       * @Default {ej.Ribbon.CustomItemType.Button}
@@ -2105,7 +2105,7 @@ object Ribbon {
     /** Specifies the custom tooltip for gallery extra item's button. Refer to ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
       * @Default {Object}
       */
-    var customToolTip: js.UndefOr[js.Any] = js.undefined
+    var customToolTip: js.UndefOr[Any] = js.undefined
     
     /** Specifies the UL list id to render menu as gallery extra item.
       * @Default {null}
@@ -2115,7 +2115,7 @@ object Ribbon {
     /** Specifies the Syncfusion menu members, events by using menuSettings.
       * @Default {Object}
       */
-    var menuSettings: js.UndefOr[js.Any] = js.undefined
+    var menuSettings: js.UndefOr[Any] = js.undefined
     
     /** Specifies the text for gallery extra item's button.
       * @Default {null}
@@ -2136,7 +2136,7 @@ object Ribbon {
     
     extension [Self <: TabsGroupsContentGroupsCustomGalleryItem](x: Self) {
       
-      inline def setButtonSettings(value: js.Any): Self = StObject.set(x, "buttonSettings", value.asInstanceOf[js.Any])
+      inline def setButtonSettings(value: Any): Self = StObject.set(x, "buttonSettings", value.asInstanceOf[js.Any])
       
       inline def setButtonSettingsUndefined: Self = StObject.set(x, "buttonSettings", js.undefined)
       
@@ -2144,7 +2144,7 @@ object Ribbon {
       
       inline def setCustomItemTypeUndefined: Self = StObject.set(x, "customItemType", js.undefined)
       
-      inline def setCustomToolTip(value: js.Any): Self = StObject.set(x, "customToolTip", value.asInstanceOf[js.Any])
+      inline def setCustomToolTip(value: Any): Self = StObject.set(x, "customToolTip", value.asInstanceOf[js.Any])
       
       inline def setCustomToolTipUndefined: Self = StObject.set(x, "customToolTip", js.undefined)
       
@@ -2152,7 +2152,7 @@ object Ribbon {
       
       inline def setMenuIdUndefined: Self = StObject.set(x, "menuId", js.undefined)
       
-      inline def setMenuSettings(value: js.Any): Self = StObject.set(x, "menuSettings", value.asInstanceOf[js.Any])
+      inline def setMenuSettings(value: Any): Self = StObject.set(x, "menuSettings", value.asInstanceOf[js.Any])
       
       inline def setMenuSettingsUndefined: Self = StObject.set(x, "menuSettings", js.undefined)
       
@@ -2211,12 +2211,12 @@ object Ribbon {
     /** Specifies the Syncfusion button members, events by using buttonSettings.
       * @Default {Object}
       */
-    var buttonSettings: js.UndefOr[js.Any] = js.undefined
+    var buttonSettings: js.UndefOr[Any] = js.undefined
     
     /** Specifies the custom tooltip for gallery content. Refer to ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
       * @Default {Object}
       */
-    var customToolTip: js.UndefOr[js.Any] = js.undefined
+    var customToolTip: js.UndefOr[Any] = js.undefined
     
     /** Sets text for the gallery content.
       * @Default {null}
@@ -2237,11 +2237,11 @@ object Ribbon {
     
     extension [Self <: TabsGroupsContentGroupsGalleryItem](x: Self) {
       
-      inline def setButtonSettings(value: js.Any): Self = StObject.set(x, "buttonSettings", value.asInstanceOf[js.Any])
+      inline def setButtonSettings(value: Any): Self = StObject.set(x, "buttonSettings", value.asInstanceOf[js.Any])
       
       inline def setButtonSettingsUndefined: Self = StObject.set(x, "buttonSettings", js.undefined)
       
-      inline def setCustomToolTip(value: js.Any): Self = StObject.set(x, "customToolTip", value.asInstanceOf[js.Any])
+      inline def setCustomToolTip(value: Any): Self = StObject.set(x, "customToolTip", value.asInstanceOf[js.Any])
       
       inline def setCustomToolTipUndefined: Self = StObject.set(x, "customToolTip", js.undefined)
       
@@ -2260,7 +2260,7 @@ object Ribbon {
     /** Specifies the custom tooltip for group expander.Refer to ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
       * @Default {Object}
       */
-    var customToolTip: js.UndefOr[js.Any] = js.undefined
+    var customToolTip: js.UndefOr[Any] = js.undefined
     
     /** Sets tooltip for the group expander of the group.
       * @Default {null}
@@ -2276,7 +2276,7 @@ object Ribbon {
     
     extension [Self <: TabsGroupsGroupExpanderSettings](x: Self) {
       
-      inline def setCustomToolTip(value: js.Any): Self = StObject.set(x, "customToolTip", value.asInstanceOf[js.Any])
+      inline def setCustomToolTip(value: Any): Self = StObject.set(x, "customToolTip", value.asInstanceOf[js.Any])
       
       inline def setCustomToolTipUndefined: Self = StObject.set(x, "customToolTip", js.undefined)
       
@@ -2294,7 +2294,7 @@ object Ribbon {
     
     /** returns the ribbon model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** returns the expand/collapse button.
       */
@@ -2317,7 +2317,7 @@ object Ribbon {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       

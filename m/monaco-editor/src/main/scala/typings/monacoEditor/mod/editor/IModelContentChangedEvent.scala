@@ -52,7 +52,7 @@ object IModelContentChangedEvent {
     
     inline def setChanges(value: js.Array[IModelContentChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    inline def setChangesVarargs(value: IModelContentChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: IModelContentChange*): Self = StObject.set(x, "changes", js.Array(value*))
     
     inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
     

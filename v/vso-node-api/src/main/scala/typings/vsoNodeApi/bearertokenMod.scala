@@ -10,7 +10,7 @@ object bearertokenMod {
   
   @JSImport("vso-node-api/handlers/bearertoken", "BearerCredentialHandler")
   @js.native
-  class BearerCredentialHandler protected ()
+  open class BearerCredentialHandler protected ()
     extends StObject
        with IRequestHandler {
     def this(token: String) = this()
@@ -19,10 +19,10 @@ object bearertokenMod {
     override def canHandleAuthentication(res: IHttpResponse): Boolean = js.native
     
     /* CompleteClass */
-    override def handleAuthentication(httpClient: js.Any, protocol: js.Any, options: js.Any, objs: js.Any, finalCallback: js.Any): Unit = js.native
+    override def handleAuthentication(httpClient: Any, protocol: Any, options: Any, objs: Any, finalCallback: Any): Unit = js.native
     
     /* CompleteClass */
-    override def prepareRequest(options: js.Any): Unit = js.native
+    override def prepareRequest(options: Any): Unit = js.native
     
     var token: String = js.native
   }

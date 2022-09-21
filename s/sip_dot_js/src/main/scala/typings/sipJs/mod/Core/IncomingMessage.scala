@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Core.IncomingMessage")
 @js.native
-class IncomingMessage ()
+open class IncomingMessage ()
   extends typings.sipJs.coreMod.IncomingMessage

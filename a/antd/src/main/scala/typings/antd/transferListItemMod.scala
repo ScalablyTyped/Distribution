@@ -1,7 +1,7 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.anon.KeyWiseTransferItem
+import typings.antd.transferMod.KeyWiseTransferItem
 import typings.react.mod.MemoExoticComponent
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element

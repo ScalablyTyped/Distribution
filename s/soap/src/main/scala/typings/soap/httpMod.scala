@@ -1,10 +1,13 @@
 package typings.soap
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.ReadableStream
-import typings.request.mod.Response
+import typings.axios.mod.AxiosPromise
+import typings.axios.mod.AxiosResponse
+import typings.node.fsMod.ReadStream
+import typings.soap.typesMod.IExOptions
 import typings.soap.typesMod.IHeaders
+import typings.soap.typesMod.IHttpClient
 import typings.soap.typesMod.IOptions
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +16,12 @@ object httpMod {
   
   @JSImport("soap/lib/http", "HttpClient")
   @js.native
-  class HttpClient () extends StObject {
+  open class HttpClient ()
+    extends StObject
+       with IHttpClient {
     def this(options: IOptions) = this()
     
-    /* private */ var _request: js.Any = js.native
+    /* private */ var _request: Any = js.native
     
     /**
       * Build the HTTP request (method, uri, headers, ...)
@@ -26,10 +31,10 @@ object httpMod {
       * @param {Object} exoptions Extra options
       * @returns {Object} The http request object for the `request` module
       */
-    def buildRequest(rurl: String, data: js.Any): js.Any = js.native
-    def buildRequest(rurl: String, data: js.Any, exheaders: Unit, exoptions: IExOptions): js.Any = js.native
-    def buildRequest(rurl: String, data: js.Any, exheaders: IHeaders): js.Any = js.native
-    def buildRequest(rurl: String, data: js.Any, exheaders: IHeaders, exoptions: IExOptions): js.Any = js.native
+    def buildRequest(rurl: String, data: Any): Any = js.native
+    def buildRequest(rurl: String, data: Any, exheaders: Unit, exoptions: IExOptions): Any = js.native
+    def buildRequest(rurl: String, data: Any, exheaders: IHeaders): Any = js.native
+    def buildRequest(rurl: String, data: Any, exheaders: IHeaders, exoptions: IExOptions): Any = js.native
     
     /**
       * Handle the http response
@@ -38,119 +43,31 @@ object httpMod {
       * @param {Object} body The http body
       * @param {Object} The parsed body
       */
-    def handleResponse(req: typings.request.mod.Request, res: Response, body: js.Any): js.Any = js.native
+    def handleResponse(req: AxiosPromise[Any], res: AxiosResponse[Any, Any], body: Any): Any = js.native
     
-    def request(
-      rurl: String,
-      data: js.Any,
-      callback: js.Function3[
-          /* error */ js.Any, 
-          /* res */ js.UndefOr[js.Any], 
-          /* body */ js.UndefOr[js.Any], 
-          js.Any
-        ]
-    ): typings.request.mod.Request = js.native
-    def request(
-      rurl: String,
-      data: js.Any,
-      callback: js.Function3[
-          /* error */ js.Any, 
-          /* res */ js.UndefOr[js.Any], 
-          /* body */ js.UndefOr[js.Any], 
-          js.Any
-        ],
-      exheaders: Unit,
-      exoptions: Unit,
-      caller: js.Any
-    ): typings.request.mod.Request = js.native
-    def request(
-      rurl: String,
-      data: js.Any,
-      callback: js.Function3[
-          /* error */ js.Any, 
-          /* res */ js.UndefOr[js.Any], 
-          /* body */ js.UndefOr[js.Any], 
-          js.Any
-        ],
-      exheaders: Unit,
-      exoptions: IExOptions
-    ): typings.request.mod.Request = js.native
-    def request(
-      rurl: String,
-      data: js.Any,
-      callback: js.Function3[
-          /* error */ js.Any, 
-          /* res */ js.UndefOr[js.Any], 
-          /* body */ js.UndefOr[js.Any], 
-          js.Any
-        ],
-      exheaders: Unit,
-      exoptions: IExOptions,
-      caller: js.Any
-    ): typings.request.mod.Request = js.native
-    def request(
-      rurl: String,
-      data: js.Any,
-      callback: js.Function3[
-          /* error */ js.Any, 
-          /* res */ js.UndefOr[js.Any], 
-          /* body */ js.UndefOr[js.Any], 
-          js.Any
-        ],
-      exheaders: IHeaders
-    ): typings.request.mod.Request = js.native
-    def request(
-      rurl: String,
-      data: js.Any,
-      callback: js.Function3[
-          /* error */ js.Any, 
-          /* res */ js.UndefOr[js.Any], 
-          /* body */ js.UndefOr[js.Any], 
-          js.Any
-        ],
-      exheaders: IHeaders,
-      exoptions: Unit,
-      caller: js.Any
-    ): typings.request.mod.Request = js.native
-    def request(
-      rurl: String,
-      data: js.Any,
-      callback: js.Function3[
-          /* error */ js.Any, 
-          /* res */ js.UndefOr[js.Any], 
-          /* body */ js.UndefOr[js.Any], 
-          js.Any
-        ],
-      exheaders: IHeaders,
-      exoptions: IExOptions
-    ): typings.request.mod.Request = js.native
-    def request(
-      rurl: String,
-      data: js.Any,
-      callback: js.Function3[
-          /* error */ js.Any, 
-          /* res */ js.UndefOr[js.Any], 
-          /* body */ js.UndefOr[js.Any], 
-          js.Any
-        ],
-      exheaders: IHeaders,
-      exoptions: IExOptions,
-      caller: js.Any
-    ): typings.request.mod.Request = js.native
+    /* private */ var options: Any = js.native
     
-    def requestStream(rurl: String, data: js.Any): typings.request.mod.Request = js.native
-    def requestStream(rurl: String, data: js.Any, exheaders: Unit, exoptions: Unit, caller: js.Any): typings.request.mod.Request = js.native
-    def requestStream(rurl: String, data: js.Any, exheaders: Unit, exoptions: IExOptions): typings.request.mod.Request = js.native
-    def requestStream(rurl: String, data: js.Any, exheaders: Unit, exoptions: IExOptions, caller: js.Any): typings.request.mod.Request = js.native
-    def requestStream(rurl: String, data: js.Any, exheaders: IHeaders): typings.request.mod.Request = js.native
-    def requestStream(rurl: String, data: js.Any, exheaders: IHeaders, exoptions: Unit, caller: js.Any): typings.request.mod.Request = js.native
-    def requestStream(rurl: String, data: js.Any, exheaders: IHeaders, exoptions: IExOptions): typings.request.mod.Request = js.native
-    def requestStream(rurl: String, data: js.Any, exheaders: IHeaders, exoptions: IExOptions, caller: js.Any): typings.request.mod.Request = js.native
+    @JSName("requestStream")
+    def requestStream_MHttpClient(rurl: String, data: Any): AxiosPromise[ReadStream] = js.native
+    @JSName("requestStream")
+    def requestStream_MHttpClient(rurl: String, data: Any, exheaders: Unit, exoptions: Unit, caller: Any): AxiosPromise[ReadStream] = js.native
+    @JSName("requestStream")
+    def requestStream_MHttpClient(rurl: String, data: Any, exheaders: Unit, exoptions: IExOptions): AxiosPromise[ReadStream] = js.native
+    @JSName("requestStream")
+    def requestStream_MHttpClient(rurl: String, data: Any, exheaders: Unit, exoptions: IExOptions, caller: Any): AxiosPromise[ReadStream] = js.native
+    @JSName("requestStream")
+    def requestStream_MHttpClient(rurl: String, data: Any, exheaders: IHeaders): AxiosPromise[ReadStream] = js.native
+    @JSName("requestStream")
+    def requestStream_MHttpClient(rurl: String, data: Any, exheaders: IHeaders, exoptions: Unit, caller: Any): AxiosPromise[ReadStream] = js.native
+    @JSName("requestStream")
+    def requestStream_MHttpClient(rurl: String, data: Any, exheaders: IHeaders, exoptions: IExOptions): AxiosPromise[ReadStream] = js.native
+    @JSName("requestStream")
+    def requestStream_MHttpClient(rurl: String, data: Any, exheaders: IHeaders, exoptions: IExOptions, caller: Any): AxiosPromise[ReadStream] = js.native
   }
   
   trait IAttachment extends StObject {
     
-    var body: ReadableStream
+    var body: ReadableStream[Any]
     
     var contentId: String
     
@@ -160,14 +77,14 @@ object httpMod {
   }
   object IAttachment {
     
-    inline def apply(body: ReadableStream, contentId: String, mimetype: String, name: String): IAttachment = {
+    inline def apply(body: ReadableStream[Any], contentId: String, mimetype: String, name: String): IAttachment = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], contentId = contentId.asInstanceOf[js.Any], mimetype = mimetype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAttachment]
     }
     
     extension [Self <: IAttachment](x: Self) {
       
-      inline def setBody(value: ReadableStream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: ReadableStream[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
       
@@ -176,8 +93,4 @@ object httpMod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
-  
-  type IExOptions = StringDictionary[js.Any]
-  
-  type Request = typings.request.mod.Request
 }

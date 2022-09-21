@@ -1,7 +1,6 @@
 package typings.websequencediagrams
 
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,31 +11,37 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def diagram(description: String, style: Null, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diagram(description: String, style: Null, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diagram(description: String, style: Style, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diagram(description: String, style: Style, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diagram(description: Buffer, style: Null, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diagram(description: Buffer, style: Null, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diagram(description: Buffer, style: Style, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diagram(description: Buffer, style: Style, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  /** @async */
+  inline def diagram(message: String): js.Promise[DiagramTuple] = ^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DiagramTuple]]
+  inline def diagram(message: String, style: Unit, format: OutputType): js.Promise[DiagramTuple] = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(message.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DiagramTuple]]
+  inline def diagram(message: String, style: Style): js.Promise[DiagramTuple] = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(message.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DiagramTuple]]
+  inline def diagram(message: String, style: Style, format: OutputType): js.Promise[DiagramTuple] = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(message.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DiagramTuple]]
+  inline def diagram(message: Buffer): js.Promise[DiagramTuple] = ^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DiagramTuple]]
+  inline def diagram(message: Buffer, style: Unit, format: OutputType): js.Promise[DiagramTuple] = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(message.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DiagramTuple]]
+  inline def diagram(message: Buffer, style: Style): js.Promise[DiagramTuple] = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(message.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DiagramTuple]]
+  inline def diagram(message: Buffer, style: Style, format: OutputType): js.Promise[DiagramTuple] = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(message.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DiagramTuple]]
   
-  inline def diagramUrl(description: String, style: Null, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diagramUrl(description: String, style: Null, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diagramUrl(description: String, style: Style, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diagramUrl(description: String, style: Style, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diagramUrl(description: Buffer, style: Null, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diagramUrl(description: Buffer, style: Null, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diagramUrl(description: Buffer, style: Style, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def diagramUrl(description: Buffer, style: Style, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  /** @async */
+  inline def diagramURL(message: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("diagramURL")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def diagramURL(message: String, style: Unit, format: OutputType): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("diagramURL")(message.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def diagramURL(message: String, style: Style): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("diagramURL")(message.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def diagramURL(message: String, style: Style, format: OutputType): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("diagramURL")(message.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def diagramURL(message: Buffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("diagramURL")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def diagramURL(message: Buffer, style: Unit, format: OutputType): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("diagramURL")(message.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def diagramURL(message: Buffer, style: Style): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("diagramURL")(message.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def diagramURL(message: Buffer, style: Style, format: OutputType): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("diagramURL")(message.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("websequencediagrams", "root")
   @js.native
-  val root: String = js.native
+  def root: String = js.native
+  inline def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
   
   @JSImport("websequencediagrams", "styles")
   @js.native
-  val styles: js.Array[Style] = js.native
+  def styles: js.Array[Style] = js.native
+  inline def styles_=(x: js.Array[Style]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styles")(x.asInstanceOf[js.Any])
+  
+  type DiagramTuple = js.Tuple2[Buffer, String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.websequencediagrams.websequencediagramsStrings.png
@@ -56,16 +61,16 @@ object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.websequencediagrams.websequencediagramsStrings.default
     - typings.websequencediagrams.websequencediagramsStrings.earth
+    - typings.websequencediagrams.websequencediagramsStrings.magazine
     - typings.websequencediagrams.websequencediagramsStrings.`modern-blue`
-    - typings.websequencediagrams.websequencediagramsStrings.mscgen
+    - typings.websequencediagrams.websequencediagramsStrings.mscgenComma
+    - typings.websequencediagrams.websequencediagramsStrings.napkin
     - typings.websequencediagrams.websequencediagramsStrings.omegapple
+    - typings.websequencediagrams.websequencediagramsStrings.patent
     - typings.websequencediagrams.websequencediagramsStrings.qsd
     - typings.websequencediagrams.websequencediagramsStrings.rose
     - typings.websequencediagrams.websequencediagramsStrings.roundgreen
-    - typings.websequencediagrams.websequencediagramsStrings.napkin
-    - typings.websequencediagrams.websequencediagramsStrings.magazine
     - typings.websequencediagrams.websequencediagramsStrings.vs2010
-    - typings.websequencediagrams.websequencediagramsStrings.patent
   */
   trait Style extends StObject
   object Style {
@@ -78,7 +83,7 @@ object mod {
     
     inline def `modern-blue`: typings.websequencediagrams.websequencediagramsStrings.`modern-blue` = "modern-blue".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.`modern-blue`]
     
-    inline def mscgen: typings.websequencediagrams.websequencediagramsStrings.mscgen = "mscgen".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.mscgen]
+    inline def mscgenComma: typings.websequencediagrams.websequencediagramsStrings.mscgenComma = "mscgen,".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.mscgenComma]
     
     inline def napkin: typings.websequencediagrams.websequencediagramsStrings.napkin = "napkin".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.napkin]
     
@@ -94,13 +99,4 @@ object mod {
     
     inline def vs2010: typings.websequencediagrams.websequencediagramsStrings.vs2010 = "vs2010".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.vs2010]
   }
-  
-  type diagramCallback = js.Function3[
-    /* error */ Error | Null, 
-    /* buffer */ js.UndefOr[Buffer], 
-    /* mimeType */ js.UndefOr[String], 
-    Unit
-  ]
-  
-  type diagramUrlCallback = js.Function2[/* error */ Error | Null, /* url */ js.UndefOr[String], Unit]
 }

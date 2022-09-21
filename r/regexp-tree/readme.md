@@ -1,7 +1,7 @@
 
 # Scala.js typings for regexp-tree
 
-Typings are for version 0.1.11
+Typings are for version 0.1.24
 
 ## Library description:
 Regular Expressions parser in JavaScript
@@ -10,10 +10,10 @@ Regular Expressions parser in JavaScript
 | ------------------ | :-------------: |
 | Full name          | regexp-tree |
 | Keywords           | regexp, parser, AST, tree, JavaScript, ECMAScript |
-| # releases         | 60 |
-| # dependents       | 10 |
-| # downloads        | 18334291 |
-| # stars            | 3 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 8230245.666666667 |
+| # stars            | 340.0 |
 
 ## Links
 - [Homepage](https://github.com/DmitrySoshnikov/regexp-tree)

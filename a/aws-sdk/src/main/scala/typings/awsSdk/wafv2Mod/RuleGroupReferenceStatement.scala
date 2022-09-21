@@ -12,7 +12,7 @@ trait RuleGroupReferenceStatement extends StObject {
   var ARN: ResourceArn
   
   /**
-    * The names of rules that are in the referenced rule group, but that you want AWS WAF to exclude from processing for this rule statement. 
+    * The rules in the referenced rule group whose actions are set to Count. When you exclude a rule, WAF evaluates it exactly as it would if the rule action setting were Count. This is a useful option for testing the rules in a rule group without modifying how they handle your web traffic.
     */
   var ExcludedRules: js.UndefOr[typings.awsSdk.wafv2Mod.ExcludedRules] = js.undefined
 }
@@ -31,6 +31,6 @@ object RuleGroupReferenceStatement {
     
     inline def setExcludedRulesUndefined: Self = StObject.set(x, "ExcludedRules", js.undefined)
     
-    inline def setExcludedRulesVarargs(value: ExcludedRule*): Self = StObject.set(x, "ExcludedRules", js.Array(value :_*))
+    inline def setExcludedRulesVarargs(value: ExcludedRule*): Self = StObject.set(x, "ExcludedRules", js.Array(value*))
   }
 }

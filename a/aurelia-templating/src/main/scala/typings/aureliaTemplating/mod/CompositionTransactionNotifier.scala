@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-templating", "CompositionTransactionNotifier")
 @js.native
-class CompositionTransactionNotifier () extends StObject {
-  def this(owner: js.Any) = this()
+open class CompositionTransactionNotifier protected () extends StObject {
+  def this(owner: Any) = this()
   
   /**
-    * Notifies the owning transaction that its work is done.
-    */
+  	* Notifies the owning transaction that its work is done.
+  	*/
   def done(): Unit = js.native
 }

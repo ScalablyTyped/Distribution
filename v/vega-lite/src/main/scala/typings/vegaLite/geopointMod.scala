@@ -12,7 +12,7 @@ object geopointMod {
   
   @JSImport("vega-lite/build/src/compile/data/geopoint", "GeoPointNode")
   @js.native
-  class GeoPointNode protected () extends DataFlowNode {
+  open class GeoPointNode protected () extends DataFlowNode {
     def this(
       parent: DataFlowNode,
       projection: String,
@@ -20,13 +20,13 @@ object geopointMod {
       as: js.Tuple2[String, String]
     ) = this()
     
-    /* private */ var as: js.Any = js.native
+    /* private */ var as: Any = js.native
     
     def assemble(): GeoPointTransform = js.native
     
-    /* private */ var fields: js.Any = js.native
+    /* private */ var fields: Any = js.native
     
-    /* private */ var projection: js.Any = js.native
+    /* private */ var projection: Any = js.native
   }
   /* static members */
   object GeoPointNode {

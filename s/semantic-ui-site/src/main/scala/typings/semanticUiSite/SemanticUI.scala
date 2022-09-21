@@ -2,33 +2,8 @@ package typings.semanticUiSite
 
 import typings.semanticUiSite.SemanticUI.Site.NamespaceStubSettings
 import typings.semanticUiSite.SemanticUI.Site.NamespaceStubSettings.Param
-import typings.semanticUiSite.anon.PartialPickImplkeyofImpl
-import typings.semanticUiSite.anon.PartialPickImplkeyofImplCache
-import typings.semanticUiSite.anon.PickImplcache
-import typings.semanticUiSite.anon.PickImplconfig
-import typings.semanticUiSite.anon.PickImpldebug
-import typings.semanticUiSite.anon.PickImplmodules
-import typings.semanticUiSite.anon.PickImplname
-import typings.semanticUiSite.anon.PickImplnamespace
-import typings.semanticUiSite.anon.PickImplnamespaceStub
-import typings.semanticUiSite.anon.PickImplperformance
-import typings.semanticUiSite.anon.PickImplsection
-import typings.semanticUiSite.anon.PickImplsections
-import typings.semanticUiSite.anon.PickImplsilent
-import typings.semanticUiSite.anon.PickImplsiteNamespace
-import typings.semanticUiSite.anon.PickImplutilities
-import typings.semanticUiSite.anon.PickImplverbose
-import typings.semanticUiSite.semanticUiSiteStrings.debug
 import typings.semanticUiSite.semanticUiSiteStrings.destroy
-import typings.semanticUiSite.semanticUiSiteStrings.modules
-import typings.semanticUiSite.semanticUiSiteStrings.name
-import typings.semanticUiSite.semanticUiSiteStrings.namespace
-import typings.semanticUiSite.semanticUiSiteStrings.namespaceStub
-import typings.semanticUiSite.semanticUiSiteStrings.performance
 import typings.semanticUiSite.semanticUiSiteStrings.setting
-import typings.semanticUiSite.semanticUiSiteStrings.silent
-import typings.semanticUiSite.semanticUiSiteStrings.siteNamespace
-import typings.semanticUiSite.semanticUiSiteStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,26 +15,14 @@ object SemanticUI {
     
     def apply(): JQuery = js.native
     def apply(behavior: destroy): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: modules, value: js.Array[String]): JQuery = js.native
-    def apply(behavior: setting, name: modules, value: Unit): js.Array[String] = js.native
-    def apply(behavior: setting, name: namespaceStub, value: Unit): NamespaceStubSettings = js.native
-    def apply(behavior: setting, name: namespaceStub, value: NamespaceStubSettings): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
-    def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: Unit): String = js.native
-    def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
-    def apply(behavior: setting, name: siteNamespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: siteNamespace, value: Unit): String = js.native
-    def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: SiteSettings): JQuery = js.native
     def apply(settings: SiteSettings): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-site.SemanticUI.SiteSettings */ String */](
+      behavior: setting,
+      name: K,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-site.SemanticUI.SiteSettings._Impl[K] */ js.Any
+    ): JQuery = js.native
+    def apply[K /* <: /* keyof semantic-ui-site.SemanticUI.SiteSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-site.SemanticUI.SiteSettings._Impl[K] */ js.Any = js.native
     
     var settings: SiteSettings = js.native
   }
@@ -69,38 +32,72 @@ object SemanticUI {
       
       trait Impl extends StObject {
         
-        var cache: js.Any
+        var cache: Any
         
-        var config: js.Any
+        var config: Any
         
-        var section: js.Any
+        var section: Any
         
-        var sections: js.Any
+        var sections: Any
         
-        var utilities: js.Any
+        var utilities: Any
       }
       object Impl {
         
-        inline def apply(cache: js.Any, config: js.Any, section: js.Any, sections: js.Any, utilities: js.Any): Impl = {
+        inline def apply(cache: Any, config: Any, section: Any, sections: Any, utilities: Any): Impl = {
           val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], sections = sections.asInstanceOf[js.Any], utilities = utilities.asInstanceOf[js.Any])
           __obj.asInstanceOf[Impl]
         }
         
         extension [Self <: Impl](x: Self) {
           
-          inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+          inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
           
-          inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+          inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
           
-          inline def setSection(value: js.Any): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+          inline def setSection(value: Any): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
           
-          inline def setSections(value: js.Any): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+          inline def setSections(value: Any): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
           
-          inline def setUtilities(value: js.Any): Self = StObject.set(x, "utilities", value.asInstanceOf[js.Any])
+          inline def setUtilities(value: Any): Self = StObject.set(x, "utilities", value.asInstanceOf[js.Any])
         }
       }
       
-      type Param = (PickImplcache | PickImplconfig | PickImplsections | PickImplsection | PickImplutilities) & PartialPickImplkeyofImplCache
+      /* Rewritten from type alias, can be one of: 
+        - typings.semanticUiSite.anon.PickImplcachePartialPickI
+        - typings.semanticUiSite.anon.PickImplconfigPartialPick
+        - typings.semanticUiSite.anon.PickImplsectionsPartialPi
+        - typings.semanticUiSite.anon.PickImplsectionPartialPic
+        - typings.semanticUiSite.anon.PickImplutilitiesPartialP
+      */
+      trait Param extends StObject
+      object Param {
+        
+        inline def PickImplcachePartialPickI(cache: Any & js.UndefOr[Any]): typings.semanticUiSite.anon.PickImplcachePartialPickI = {
+          val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiSite.anon.PickImplcachePartialPickI]
+        }
+        
+        inline def PickImplconfigPartialPick(config: Any & js.UndefOr[Any]): typings.semanticUiSite.anon.PickImplconfigPartialPick = {
+          val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiSite.anon.PickImplconfigPartialPick]
+        }
+        
+        inline def PickImplsectionPartialPic(section: Any & js.UndefOr[Any]): typings.semanticUiSite.anon.PickImplsectionPartialPic = {
+          val __obj = js.Dynamic.literal(section = section.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiSite.anon.PickImplsectionPartialPic]
+        }
+        
+        inline def PickImplsectionsPartialPi(sections: Any & js.UndefOr[Any]): typings.semanticUiSite.anon.PickImplsectionsPartialPi = {
+          val __obj = js.Dynamic.literal(sections = sections.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiSite.anon.PickImplsectionsPartialPi]
+        }
+        
+        inline def PickImplutilitiesPartialP(utilities: Any & js.UndefOr[Any]): typings.semanticUiSite.anon.PickImplutilitiesPartialP = {
+          val __obj = js.Dynamic.literal(utilities = utilities.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiSite.anon.PickImplutilitiesPartialP]
+        }
+      }
     }
     type NamespaceStubSettings = Param
   }
@@ -172,7 +169,7 @@ object SemanticUI {
         
         inline def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
         
-        inline def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value :_*))
+        inline def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value*))
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -190,7 +187,65 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplmodules | PickImplsiteNamespace | PickImplnamespaceStub | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
+    /* Rewritten from type alias, can be one of: 
+      - typings.semanticUiSite.anon.PickImplmodulesPartialPic
+      - typings.semanticUiSite.anon.PickImplsiteNamespacePart
+      - typings.semanticUiSite.anon.PickImplnamespaceStubPart
+      - typings.semanticUiSite.anon.PickImplnamespacePartialP
+      - typings.semanticUiSite.anon.PickImplnamePartialPickIm
+      - typings.semanticUiSite.anon.PickImplsilentPartialPick
+      - typings.semanticUiSite.anon.PickImpldebugPartialPickI
+      - typings.semanticUiSite.anon.PickImplperformancePartia
+      - typings.semanticUiSite.anon.PickImplverbosePartialPic
+    */
+    trait Param extends StObject
+    object Param {
+      
+      inline def PickImpldebugPartialPickI(debug: Boolean & js.UndefOr[Boolean]): typings.semanticUiSite.anon.PickImpldebugPartialPickI = {
+        val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiSite.anon.PickImpldebugPartialPickI]
+      }
+      
+      inline def PickImplmodulesPartialPic(modules: js.Array[String] & js.UndefOr[js.Array[String]]): typings.semanticUiSite.anon.PickImplmodulesPartialPic = {
+        val __obj = js.Dynamic.literal(modules = modules.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiSite.anon.PickImplmodulesPartialPic]
+      }
+      
+      inline def PickImplnamePartialPickIm(name: String & js.UndefOr[String]): typings.semanticUiSite.anon.PickImplnamePartialPickIm = {
+        val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiSite.anon.PickImplnamePartialPickIm]
+      }
+      
+      inline def PickImplnamespacePartialP(namespace: String & js.UndefOr[String]): typings.semanticUiSite.anon.PickImplnamespacePartialP = {
+        val __obj = js.Dynamic.literal(namespace = namespace.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiSite.anon.PickImplnamespacePartialP]
+      }
+      
+      inline def PickImplnamespaceStubPart(namespaceStub: NamespaceStubSettings & js.UndefOr[NamespaceStubSettings]): typings.semanticUiSite.anon.PickImplnamespaceStubPart = {
+        val __obj = js.Dynamic.literal(namespaceStub = namespaceStub.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiSite.anon.PickImplnamespaceStubPart]
+      }
+      
+      inline def PickImplperformancePartia(performance: Boolean & js.UndefOr[Boolean]): typings.semanticUiSite.anon.PickImplperformancePartia = {
+        val __obj = js.Dynamic.literal(performance = performance.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiSite.anon.PickImplperformancePartia]
+      }
+      
+      inline def PickImplsilentPartialPick(silent: Boolean & js.UndefOr[Boolean]): typings.semanticUiSite.anon.PickImplsilentPartialPick = {
+        val __obj = js.Dynamic.literal(silent = silent.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiSite.anon.PickImplsilentPartialPick]
+      }
+      
+      inline def PickImplsiteNamespacePart(siteNamespace: String & js.UndefOr[String]): typings.semanticUiSite.anon.PickImplsiteNamespacePart = {
+        val __obj = js.Dynamic.literal(siteNamespace = siteNamespace.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiSite.anon.PickImplsiteNamespacePart]
+      }
+      
+      inline def PickImplverbosePartialPic(verbose: Boolean & js.UndefOr[Boolean]): typings.semanticUiSite.anon.PickImplverbosePartialPic = {
+        val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.semanticUiSite.anon.PickImplverbosePartialPic]
+      }
+    }
   }
   type SiteSettings = typings.semanticUiSite.SemanticUI.SiteSettings.Param
 }

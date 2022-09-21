@@ -14,9 +14,9 @@ object libKeytipLayerMod {
   
   @JSImport("office-ui-fabric-react/lib/KeytipLayer", "KeytipLayerBase")
   @js.native
-  class KeytipLayerBase protected ()
+  open class KeytipLayerBase protected ()
     extends typings.officeUiFabricReact.keytipLayerMod.KeytipLayerBase {
-    def this(props: IKeytipLayerProps, context: js.Any) = this()
+    def this(props: IKeytipLayerProps, context: Any) = this()
   }
   /* static members */
   object KeytipLayerBase {

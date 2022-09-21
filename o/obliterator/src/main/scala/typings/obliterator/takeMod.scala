@@ -1,13 +1,15 @@
 package typings.obliterator
 
-import typings.std.Iterator
+import typings.obliterator.typesMod.IntoInterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("obliterator/take", JSImport.Namespace)
-@js.native
-object takeMod extends js.Object {
-  def default[T](iterator: Iterator[T, _, js.UndefOr[scala.Nothing]], n: Double): js.Array[T] = js.native
+object takeMod {
+  
+  @JSImport("obliterator/take", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[T](iterator: IntoInterator[T], n: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(iterator.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }
-

@@ -19,10 +19,10 @@ trait Block
 object Block {
   
   inline def apply(
-    _astID: js.Any,
+    _astID: Any,
     _end: Double,
-    _postComments: js.Any,
-    _preComments: js.Any,
+    _postComments: Any,
+    _preComments: Any,
     _start: Double,
     _trailingTriviaWidth: Double,
     closeBraceLeadingComments: js.Array[Comment],
@@ -51,7 +51,7 @@ object Block {
     
     inline def setCloseBraceLeadingComments(value: js.Array[Comment]): Self = StObject.set(x, "closeBraceLeadingComments", value.asInstanceOf[js.Any])
     
-    inline def setCloseBraceLeadingCommentsVarargs(value: Comment*): Self = StObject.set(x, "closeBraceLeadingComments", js.Array(value :_*))
+    inline def setCloseBraceLeadingCommentsVarargs(value: Comment*): Self = StObject.set(x, "closeBraceLeadingComments", js.Array(value*))
     
     inline def setCloseBraceToken(value: IASTSpan): Self = StObject.set(x, "closeBraceToken", value.asInstanceOf[js.Any])
     

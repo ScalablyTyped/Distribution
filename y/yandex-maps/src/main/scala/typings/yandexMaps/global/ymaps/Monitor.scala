@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ymaps.Monitor")
 @js.native
-class Monitor protected ()
+open class Monitor protected ()
   extends typings.yandexMaps.mod.Monitor {
   def this(dataManager: IDataManager) = this()
   def this(dataManager: IOptionManager) = this()

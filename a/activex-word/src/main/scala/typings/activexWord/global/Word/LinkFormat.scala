@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.LinkFormat")
 @js.native
-/* private */ class LinkFormat ()
+/* private */ open class LinkFormat ()
   extends StObject
      with typings.activexWord.Word.LinkFormat {
   
@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Locked: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var SavePictureWithDocument: Boolean = js.native

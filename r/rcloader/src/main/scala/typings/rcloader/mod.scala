@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("rcloader", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with RcLoader {
     def this(configfilename: String, options: String) = this()
@@ -18,7 +18,7 @@ object mod {
   
   trait Options
     extends StObject
-       with /* property */ StringDictionary[js.Any] {
+       with /* property */ StringDictionary[Any] {
     
     var lookup: js.UndefOr[Boolean] = js.undefined
   }
@@ -41,6 +41,6 @@ object mod {
   trait RcLoader extends StObject {
     
     def `for`(path: String): Unit = js.native
-    def `for`(path: String, callback: js.Function2[/* error */ js.Any, /* fileOpts */ js.Any, Unit]): Unit = js.native
+    def `for`(path: String, callback: js.Function2[/* error */ Any, /* fileOpts */ Any, Unit]): Unit = js.native
   }
 }

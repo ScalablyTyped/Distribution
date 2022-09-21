@@ -11,7 +11,7 @@ object StackTrace {
   
   trait StackFrame extends StObject {
     
-    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var args: js.UndefOr[js.Array[Any]] = js.undefined
     
     var columnNumber: js.UndefOr[Double] = js.undefined
     
@@ -21,7 +21,7 @@ object StackTrace {
     
     var functionName: js.UndefOr[String] = js.undefined
     
-    def getArgs(): js.Array[js.Any]
+    def getArgs(): js.Array[Any]
     
     def getColumnNumber(): Double
     
@@ -80,7 +80,7 @@ object StackTrace {
   object StackFrame {
     
     inline def apply(
-      getArgs: () => js.Array[js.Any],
+      getArgs: () => js.Array[Any],
       getColumnNumber: () => Double,
       getEvalOrigin: () => StackFrame,
       getFileName: () => String,
@@ -109,11 +109,11 @@ object StackTrace {
     
     extension [Self <: StackFrame](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       
@@ -131,7 +131,7 @@ object StackTrace {
       
       inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
       
-      inline def setGetArgs(value: () => js.Array[js.Any]): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
+      inline def setGetArgs(value: () => js.Array[Any]): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
       
       inline def setGetColumnNumber(value: () => Double): Self = StObject.set(x, "getColumnNumber", js.Any.fromFunction0(value))
       

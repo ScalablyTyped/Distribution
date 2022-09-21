@@ -57,7 +57,7 @@ object WebACL {
     
     inline def setRules(value: ActivatedRules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    inline def setRulesVarargs(value: ActivatedRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: ActivatedRule*): Self = StObject.set(x, "Rules", js.Array(value*))
     
     inline def setWebACLArn(value: ResourceArn): Self = StObject.set(x, "WebACLArn", value.asInstanceOf[js.Any])
     

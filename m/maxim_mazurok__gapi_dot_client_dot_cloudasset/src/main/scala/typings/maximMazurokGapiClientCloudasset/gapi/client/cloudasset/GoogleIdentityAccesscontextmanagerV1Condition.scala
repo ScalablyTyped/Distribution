@@ -54,13 +54,13 @@ object GoogleIdentityAccesscontextmanagerV1Condition {
     
     inline def setIpSubnetworksUndefined: Self = StObject.set(x, "ipSubnetworks", js.undefined)
     
-    inline def setIpSubnetworksVarargs(value: String*): Self = StObject.set(x, "ipSubnetworks", js.Array(value :_*))
+    inline def setIpSubnetworksVarargs(value: String*): Self = StObject.set(x, "ipSubnetworks", js.Array(value*))
     
     inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
     
@@ -70,12 +70,12 @@ object GoogleIdentityAccesscontextmanagerV1Condition {
     
     inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value*))
     
     inline def setRequiredAccessLevels(value: js.Array[String]): Self = StObject.set(x, "requiredAccessLevels", value.asInstanceOf[js.Any])
     
     inline def setRequiredAccessLevelsUndefined: Self = StObject.set(x, "requiredAccessLevels", js.undefined)
     
-    inline def setRequiredAccessLevelsVarargs(value: String*): Self = StObject.set(x, "requiredAccessLevels", js.Array(value :_*))
+    inline def setRequiredAccessLevelsVarargs(value: String*): Self = StObject.set(x, "requiredAccessLevels", js.Array(value*))
   }
 }

@@ -34,7 +34,7 @@ trait PhysicsJointData extends StObject {
   /**
     * Native Oimo/Cannon/Energy data
     */
-  var nativeParams: js.UndefOr[js.Any] = js.undefined
+  var nativeParams: js.UndefOr[Any] = js.undefined
 }
 object PhysicsJointData {
   
@@ -65,7 +65,7 @@ object PhysicsJointData {
     
     inline def setMainPivotUndefined: Self = StObject.set(x, "mainPivot", js.undefined)
     
-    inline def setNativeParams(value: js.Any): Self = StObject.set(x, "nativeParams", value.asInstanceOf[js.Any])
+    inline def setNativeParams(value: Any): Self = StObject.set(x, "nativeParams", value.asInstanceOf[js.Any])
     
     inline def setNativeParamsUndefined: Self = StObject.set(x, "nativeParams", js.undefined)
   }

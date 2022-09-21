@@ -8,5 +8,5 @@ object deleteBucketEncryptionOutputMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/DeleteBucketEncryptionOutput", "DeleteBucketEncryptionOutput")
   @js.native
-  val DeleteBucketEncryptionOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteBucketEncryptionOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

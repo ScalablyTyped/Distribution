@@ -22,7 +22,7 @@ object layerListMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with LayerList {
     def this(properties: LayerListProperties) = this()

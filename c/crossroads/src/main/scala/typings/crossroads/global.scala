@@ -26,9 +26,9 @@ object global {
       * <br />- inspired by Robert Penner's AS3 Signals.
       * @author Miller Medeiros
       */
-    class bypassed ()
+    open class bypassed ()
       extends StObject
-         with Signal[js.Any]
+         with Signal[Any]
     
     /**
       * Signal dispatched every time that crossroads.parse find a Route that matches the request. Useful for debuging and for executing tasks that should happen at each routing.
@@ -41,9 +41,9 @@ object global {
       * <br />- inspired by Robert Penner's AS3 Signals.
       * @author Miller Medeiros
       */
-    class routed ()
+    open class routed ()
       extends StObject
-         with Signal[js.Any]
+         with Signal[Any]
     
     type _To = CrossRoadsStatic
     

@@ -38,13 +38,13 @@ object TestExecutionStep {
     
     inline def setTestIssuesUndefined: Self = StObject.set(x, "testIssues", js.undefined)
     
-    inline def setTestIssuesVarargs(value: TestIssue*): Self = StObject.set(x, "testIssues", js.Array(value :_*))
+    inline def setTestIssuesVarargs(value: TestIssue*): Self = StObject.set(x, "testIssues", js.Array(value*))
     
     inline def setTestSuiteOverviews(value: js.Array[TestSuiteOverview]): Self = StObject.set(x, "testSuiteOverviews", value.asInstanceOf[js.Any])
     
     inline def setTestSuiteOverviewsUndefined: Self = StObject.set(x, "testSuiteOverviews", js.undefined)
     
-    inline def setTestSuiteOverviewsVarargs(value: TestSuiteOverview*): Self = StObject.set(x, "testSuiteOverviews", js.Array(value :_*))
+    inline def setTestSuiteOverviewsVarargs(value: TestSuiteOverview*): Self = StObject.set(x, "testSuiteOverviews", js.Array(value*))
     
     inline def setTestTiming(value: TestTiming): Self = StObject.set(x, "testTiming", value.asInstanceOf[js.Any])
     

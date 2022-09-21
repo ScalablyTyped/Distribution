@@ -13,7 +13,6 @@ import typings.ejWebAll.ej.Slider_
 import typings.ejWebAll.ej.Widget_
 import typings.ejWebAll.ej.browserInfoOptions
 import typings.ejWebAll.ej.culture
-import typings.std.Date
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,7 +27,7 @@ trait Typeofej extends StObject {
     typings.ejWebAll.ej.Accordion
   ]) & TypeofAccordion = js.native
   
-  var Adaptor: Instantiable1[/* ds */ js.Any, typings.ejWebAll.ej.Adaptor] = js.native
+  var Adaptor: Instantiable1[/* ds */ Any, typings.ejWebAll.ej.Adaptor] = js.native
   
   val Autocomplete: (Instantiable2[
     /* element */ JQuery | Element, 
@@ -77,9 +76,9 @@ trait Typeofej extends StObject {
   var CurrencyTextbox: Instantiable0[typings.ejWebAll.ej.CurrencyTextbox] = js.native
   
   var DataManager: Instantiable3[
-    /* dataSource */ js.UndefOr[js.Any], 
+    /* dataSource */ js.UndefOr[Any], 
     /* query */ js.UndefOr[Query], 
-    /* adaptor */ js.UndefOr[js.Any], 
+    /* adaptor */ js.UndefOr[Any], 
     typings.ejWebAll.ej.DataManager
   ] = js.native
   
@@ -149,7 +148,7 @@ trait Typeofej extends StObject {
     typings.ejWebAll.ej.FileExplorer
   ]) & TypeofFileExplorer = js.native
   
-  var ForeignKeyAdaptor: Instantiable2[/* data */ js.Any, /* type */ String, typings.ejWebAll.ej.ForeignKeyAdaptor] = js.native
+  var ForeignKeyAdaptor: Instantiable2[/* data */ Any, /* type */ String, typings.ejWebAll.ej.ForeignKeyAdaptor] = js.native
   
   val Gantt: (Instantiable2[
     /* element */ JQuery | Element, 
@@ -201,7 +200,7 @@ trait Typeofej extends StObject {
     typings.ejWebAll.ej.Menu
   ]) & TypeofMenu = js.native
   
-  var Model: Instantiable3[/* json */ js.Any, /* table */ String, /* name */ String, typings.ejWebAll.ej.Model] = js.native
+  var Model: Instantiable3[/* json */ Any, /* table */ String, /* name */ String, typings.ejWebAll.ej.Model] = js.native
   
   val NavigationDrawer: (Instantiable2[
     /* element */ JQuery | Element, 
@@ -229,9 +228,9 @@ trait Typeofej extends StObject {
   
   var PercentageTextbox: Instantiable0[typings.ejWebAll.ej.PercentageTextbox] = js.native
   
-  val Pivot: js.Any = js.native
+  val Pivot: Any = js.native
   
-  val PivotAnalysis: js.Any = js.native
+  val PivotAnalysis: Any = js.native
   
   val PivotChart: (Instantiable2[
     /* element */ JQuery | Element, 
@@ -327,18 +326,6 @@ trait Typeofej extends StObject {
     typings.ejWebAll.ej.RecurrenceEditor
   ]) & TypeofRecurrenceEditor = js.native
   
-  val ReportDesigner: (Instantiable2[
-    /* element */ JQuery | Element, 
-    /* options */ js.UndefOr[Model], 
-    typings.ejWebAll.ej.ReportDesigner
-  ]) & TypeofReportDesigner = js.native
-  
-  val ReportViewer: (Instantiable2[
-    /* element */ JQuery | Element, 
-    /* options */ js.UndefOr[Model], 
-    typings.ejWebAll.ej.ReportViewer
-  ]) & TypeofReportViewer = js.native
-  
   val Resizable: (Instantiable2[
     /* element */ JQuery | Element, 
     /* options */ js.UndefOr[Model], 
@@ -407,7 +394,7 @@ trait Typeofej extends StObject {
     typings.ejWebAll.ej.Spreadsheet
   ]) & TypeofSpreadsheet = js.native
   
-  val Sunburst: js.Any = js.native
+  val Sunburst: Any = js.native
   
   val SunburstChart: (Instantiable2[
     /* element */ JQuery | Element, 
@@ -423,9 +410,9 @@ trait Typeofej extends StObject {
   
   var TableModel: Instantiable4[
     /* name */ String, 
-    /* jsonArray */ js.Array[js.Any], 
+    /* jsonArray */ js.Array[Any], 
     /* dataManager */ DataManager, 
-    /* modelComputed */ js.Any, 
+    /* modelComputed */ Any, 
     typings.ejWebAll.ej.TableModel
   ] = js.native
   
@@ -495,38 +482,38 @@ trait Typeofej extends StObject {
   
   var WebMethodAdaptor: Instantiable0[typings.ejWebAll.ej.WebMethodAdaptor] = js.native
   
-  var Widget: (Instantiable3[/* pluginName */ String, /* className */ String, /* proto */ js.Any, Widget_]) & TypeofWidget_ = js.native
+  var Widget: (Instantiable3[/* pluginName */ String, /* className */ String, /* proto */ Any, Widget_]) & TypeofWidget_ = js.native
   
   var WidgetBase: Instantiable0[typings.ejWebAll.ej.WidgetBase] = js.native
   
   def addCulture(name: String): Unit = js.native
-  def addCulture(name: String, culture: js.Any): Unit = js.native
+  def addCulture(name: String, culture: Any): Unit = js.native
   
   def addPrefix(style: String): String = js.native
   
   def animationEndEvent(): String = js.native
   
-  def avg(json: js.Any, filedName: String): js.Any = js.native
+  def avg(json: Any, filedName: String): Any = js.native
   
-  def blockDefaultActions(e: js.Any): Unit = js.native
+  def blockDefaultActions(e: Any): Unit = js.native
   
   def browserInfo(): browserInfoOptions = js.native
   
   def buildTag(tag: String): JQuery = js.native
   def buildTag(tag: String, innerHtml: String): JQuery = js.native
-  def buildTag(tag: String, innerHtml: String, styles: js.Any): JQuery = js.native
-  def buildTag(tag: String, innerHtml: String, styles: js.Any, attrs: js.Any): JQuery = js.native
-  def buildTag(tag: String, innerHtml: String, styles: Unit, attrs: js.Any): JQuery = js.native
-  def buildTag(tag: String, innerHtml: Unit, styles: js.Any): JQuery = js.native
-  def buildTag(tag: String, innerHtml: Unit, styles: js.Any, attrs: js.Any): JQuery = js.native
-  def buildTag(tag: String, innerHtml: Unit, styles: Unit, attrs: js.Any): JQuery = js.native
+  def buildTag(tag: String, innerHtml: String, styles: Any): JQuery = js.native
+  def buildTag(tag: String, innerHtml: String, styles: Any, attrs: Any): JQuery = js.native
+  def buildTag(tag: String, innerHtml: String, styles: Unit, attrs: Any): JQuery = js.native
+  def buildTag(tag: String, innerHtml: Unit, styles: Any): JQuery = js.native
+  def buildTag(tag: String, innerHtml: Unit, styles: Any, attrs: Any): JQuery = js.native
+  def buildTag(tag: String, innerHtml: Unit, styles: Unit, attrs: Any): JQuery = js.native
   
   def cancelEvent(): String = js.native
   
   def copyObject(): String = js.native
   
-  def createObject(element: js.Any, eventEmitter: js.Any, model: js.Any): js.Any = js.native
-  def createObject(nameSpace: String, value: js.Any, initIn: js.Any): JQuery = js.native
+  def createObject(element: Any, eventEmitter: Any, model: Any): Any = js.native
+  def createObject(nameSpace: String, value: Any, initIn: Any): JQuery = js.native
   
   val cssUA: String = js.native
   
@@ -536,63 +523,63 @@ trait Typeofej extends StObject {
   
   val datavisualization: Typeofdatavisualization = js.native
   
-  def defineClass(className: String, constructor: js.Any, proto: js.Any, replace: Boolean): js.Any = js.native
+  def defineClass(className: String, constructor: Any, proto: Any, replace: Boolean): Any = js.native
   
-  def destroyWidgets(element: js.Any): Unit = js.native
+  def destroyWidgets(element: Any): Unit = js.native
   
   val device: Typeofdevice = js.native
   
   def endEvent(): String = js.native
   
-  def event(`type`: String, data: js.Any, eventProp: js.Any): js.Any = js.native
+  def event(`type`: String, data: Any, eventProp: Any): Any = js.native
   
   def findCulture(): culture = js.native
   def findCulture(culture: String): culture = js.native
   
-  def format(value: js.Any, format: String): String = js.native
-  def format(value: js.Any, format: String, culture: String): String = js.native
+  def format(value: Any, format: String): String = js.native
+  def format(value: Any, format: String, culture: String): String = js.native
   
-  def getAndroidVersion(): js.Any = js.native
+  def getAndroidVersion(): Any = js.native
   
-  def getAttrVal(ele: js.Any, `val`: String, option: js.Any): js.Any = js.native
+  def getAttrVal(ele: Any, `val`: String, option: Any): Any = js.native
   
-  def getBooleanVal(ele: js.Any, `val`: String, option: js.Any): js.Any = js.native
+  def getBooleanVal(ele: Any, `val`: String, option: Any): Any = js.native
   
   def getClearString(): String = js.native
   
   def getCurrentPage(): JQuery = js.native
   
-  def getDimension(element: js.Any, method: String): js.Any = js.native
+  def getDimension(element: Any, method: String): Any = js.native
   
-  def getFontString(fontObj: js.Any): String = js.native
+  def getFontString(fontObj: Any): String = js.native
   
   def getFontStyle(style: String): String = js.native
   
   def getGuid(prefix: String): Double = js.native
   
-  def getLocalizedConstants(controlName: String): js.Any = js.native
-  def getLocalizedConstants(controlName: String, culture: String): js.Any = js.native
+  def getLocalizedConstants(controlName: String): Any = js.native
+  def getLocalizedConstants(controlName: String, culture: String): Any = js.native
   
   def getMaxZindex(): Double = js.native
   
   def getNameSpace(className: String): String = js.native
   
-  def getObject(element: String, model: js.Any): js.Any = js.native
-  def getObject(nameSpace: String): js.Any = js.native
+  def getObject(element: String, model: Any): Any = js.native
+  def getObject(nameSpace: String): Any = js.native
   
-  def getOffset(ele: String): js.Any = js.native
+  def getOffset(ele: String): Any = js.native
   
   def getRenderMode(): String = js.native
   
-  def getScrollableParents(element: js.Any): JQuery = js.native
+  def getScrollableParents(element: Any): JQuery = js.native
   
   def getTheme(): String = js.native
   
-  def getZindexPartial(element: js.Any, popupEle: String): Double = js.native
+  def getZindexPartial(element: Any, popupEle: String): Double = js.native
   
   val globalize: typings.ejWebAll.ej.globalize = js.native
   
-  def group(jsonArray: js.Any, field: String, agg: String, level: Double, groupDs: String): js.Any = js.native
+  def group(jsonArray: Any, field: String, agg: String, level: Double, groupDs: String): Any = js.native
   
   def hasRenderMode(element: String): Unit = js.native
   
@@ -628,11 +615,11 @@ trait Typeofej extends StObject {
   
   def isMobile(): Boolean = js.native
   
-  def isNullOrUndefined(value: js.Any): Boolean = js.native
+  def isNullOrUndefined(value: Any): Boolean = js.native
   
   def isPlainObject(): JQuery = js.native
   
-  def isPortrait(): js.Any = js.native
+  def isPortrait(): Any = js.native
   
   def isTablet(): Boolean = js.native
   
@@ -642,75 +629,61 @@ trait Typeofej extends StObject {
   
   def isWindowsWebView(): String = js.native
   
-  def listenEvents(selectors: js.Any, eventTypes: js.Any, handlers: js.Any): Unit = js.native
-  def listenEvents(selectors: js.Any, eventTypes: js.Any, handlers: js.Any, remove: js.Any): Unit = js.native
-  def listenEvents(selectors: js.Any, eventTypes: js.Any, handlers: js.Any, remove: js.Any, pluginObj: js.Any): Unit = js.native
+  def listenEvents(selectors: Any, eventTypes: Any, handlers: Any): Unit = js.native
+  def listenEvents(selectors: Any, eventTypes: Any, handlers: Any, remove: Any): Unit = js.native
+  def listenEvents(selectors: Any, eventTypes: Any, handlers: Any, remove: Any, pluginObj: Any): Unit = js.native
+  def listenEvents(selectors: Any, eventTypes: Any, handlers: Any, remove: Any, pluginObj: Any, disableMouse: Boolean): Unit = js.native
   def listenEvents(
-    selectors: js.Any,
-    eventTypes: js.Any,
-    handlers: js.Any,
-    remove: js.Any,
-    pluginObj: js.Any,
-    disableMouse: Boolean
-  ): Unit = js.native
-  def listenEvents(
-    selectors: js.Any,
-    eventTypes: js.Any,
-    handlers: js.Any,
-    remove: js.Any,
+    selectors: Any,
+    eventTypes: Any,
+    handlers: Any,
+    remove: Any,
     pluginObj: Unit,
     disableMouse: Boolean
   ): Unit = js.native
-  def listenEvents(selectors: js.Any, eventTypes: js.Any, handlers: js.Any, remove: Unit, pluginObj: js.Any): Unit = js.native
+  def listenEvents(selectors: Any, eventTypes: Any, handlers: Any, remove: Unit, pluginObj: Any): Unit = js.native
   def listenEvents(
-    selectors: js.Any,
-    eventTypes: js.Any,
-    handlers: js.Any,
+    selectors: Any,
+    eventTypes: Any,
+    handlers: Any,
     remove: Unit,
-    pluginObj: js.Any,
+    pluginObj: Any,
     disableMouse: Boolean
   ): Unit = js.native
   def listenEvents(
-    selectors: js.Any,
-    eventTypes: js.Any,
-    handlers: js.Any,
+    selectors: Any,
+    eventTypes: Any,
+    handlers: Any,
     remove: Unit,
     pluginObj: Unit,
     disableMouse: Boolean
   ): Unit = js.native
   
-  def listenTouchEvent(selectors: js.Any, eventTypes: js.Any, handlers: js.Any): Unit = js.native
-  def listenTouchEvent(selectors: js.Any, eventTypes: js.Any, handlers: js.Any, remove: js.Any): Unit = js.native
-  def listenTouchEvent(selectors: js.Any, eventTypes: js.Any, handlers: js.Any, remove: js.Any, pluginObj: js.Any): Unit = js.native
+  def listenTouchEvent(selectors: Any, eventTypes: Any, handlers: Any): Unit = js.native
+  def listenTouchEvent(selectors: Any, eventTypes: Any, handlers: Any, remove: Any): Unit = js.native
+  def listenTouchEvent(selectors: Any, eventTypes: Any, handlers: Any, remove: Any, pluginObj: Any): Unit = js.native
+  def listenTouchEvent(selectors: Any, eventTypes: Any, handlers: Any, remove: Any, pluginObj: Any, disableMouse: Boolean): Unit = js.native
   def listenTouchEvent(
-    selectors: js.Any,
-    eventTypes: js.Any,
-    handlers: js.Any,
-    remove: js.Any,
-    pluginObj: js.Any,
-    disableMouse: Boolean
-  ): Unit = js.native
-  def listenTouchEvent(
-    selectors: js.Any,
-    eventTypes: js.Any,
-    handlers: js.Any,
-    remove: js.Any,
+    selectors: Any,
+    eventTypes: Any,
+    handlers: Any,
+    remove: Any,
     pluginObj: Unit,
     disableMouse: Boolean
   ): Unit = js.native
-  def listenTouchEvent(selectors: js.Any, eventTypes: js.Any, handlers: js.Any, remove: Unit, pluginObj: js.Any): Unit = js.native
+  def listenTouchEvent(selectors: Any, eventTypes: Any, handlers: Any, remove: Unit, pluginObj: Any): Unit = js.native
   def listenTouchEvent(
-    selectors: js.Any,
-    eventTypes: js.Any,
-    handlers: js.Any,
+    selectors: Any,
+    eventTypes: Any,
+    handlers: Any,
     remove: Unit,
-    pluginObj: js.Any,
+    pluginObj: Any,
     disableMouse: Boolean
   ): Unit = js.native
   def listenTouchEvent(
-    selectors: js.Any,
-    eventTypes: js.Any,
-    handlers: js.Any,
+    selectors: Any,
+    eventTypes: Any,
+    handlers: Any,
     remove: Unit,
     pluginObj: Unit,
     disableMouse: Boolean
@@ -718,55 +691,55 @@ trait Typeofej extends StObject {
   
   def logBase(`val`: String, base: String): Double = js.native
   
-  def max(jsonArray: js.Any): js.Any = js.native
-  def max(jsonArray: js.Any, fieldName: String): js.Any = js.native
-  def max(jsonArray: js.Any, fieldName: String, comparer: String): js.Any = js.native
-  def max(jsonArray: js.Any, fieldName: Unit, comparer: String): js.Any = js.native
+  def max(jsonArray: Any): Any = js.native
+  def max(jsonArray: Any, fieldName: String): Any = js.native
+  def max(jsonArray: Any, fieldName: String, comparer: String): Any = js.native
+  def max(jsonArray: Any, fieldName: Unit, comparer: String): Any = js.native
   
   def measureText(text: String, maxwidth: Double, font: String): String = js.native
   
-  def merge(first: String, second: String): js.Any = js.native
+  def merge(first: String, second: String): Any = js.native
   
-  def mergeshort(jsonArray: js.Any, fieldName: String, comparer: String): js.Any = js.native
+  def mergeshort(jsonArray: Any, fieldName: String, comparer: String): Any = js.native
   
-  def min(jsonArray: js.Any, fieldName: String, comparer: String): js.Any = js.native
+  def min(jsonArray: Any, fieldName: String, comparer: String): Any = js.native
   
   def moveEvent(): String = js.native
   
-  def parseDate(value: String, format: String): Date = js.native
-  def parseDate(value: String, format: String, culture: String): Date = js.native
+  def parseDate(value: String, format: String): js.Date = js.native
+  def parseDate(value: String, format: String, culture: String): js.Date = js.native
   
   def parseFloat(value: String): Double = js.native
-  def parseFloat(value: String, radix: js.Any): Double = js.native
-  def parseFloat(value: String, radix: js.Any, culture: String): Double = js.native
+  def parseFloat(value: String, radix: Any): Double = js.native
+  def parseFloat(value: String, radix: Any, culture: String): Double = js.native
   def parseFloat(value: String, radix: Unit, culture: String): Double = js.native
   
   def parseInt(value: String): Double = js.native
-  def parseInt(value: String, radix: js.Any): Double = js.native
-  def parseInt(value: String, radix: js.Any, culture: String): Double = js.native
+  def parseInt(value: String, radix: Any): Double = js.native
+  def parseInt(value: String, radix: Any, culture: String): Double = js.native
   def parseInt(value: String, radix: Unit, culture: String): Double = js.native
   
   def parseJSON(jsonText: String): String = js.native
   
-  def parseTable(table: Double, headerOption: String, headerRowIndex: String): js.Any = js.native
+  def parseTable(table: Double, headerOption: String, headerRowIndex: String): Any = js.native
   
   def preferredCulture(): culture = js.native
   def preferredCulture(culture: String): culture = js.native
   
-  def print(element: String, printWindow: js.Any): Unit = js.native
+  def print(element: String, printWindow: Any): Unit = js.native
   
-  def proxy(fn: js.Any): js.Any = js.native
-  def proxy(fn: js.Any, context: String): js.Any = js.native
-  def proxy(fn: js.Any, context: String, arg: String): js.Any = js.native
-  def proxy(fn: js.Any, context: Unit, arg: String): js.Any = js.native
+  def proxy(fn: Any): Any = js.native
+  def proxy(fn: Any, context: String): Any = js.native
+  def proxy(fn: Any, context: String, arg: String): Any = js.native
+  def proxy(fn: Any, context: Unit, arg: String): Any = js.native
   
   var remoteSaveAdaptor: Instantiable0[typings.ejWebAll.ej.remoteSaveAdaptor] = js.native
   
-  def round(value: String, div: String, up: String): js.Any = js.native
+  def round(value: String, div: String, up: String): Any = js.native
   
-  def select(jsonArray: js.Any, fields: String): js.Any = js.native
+  def select(jsonArray: Any, fields: String): Any = js.native
   
-  def sendAjaxRequest(ajaxOptions: js.Any): Unit = js.native
+  def sendAjaxRequest(ajaxOptions: Any): Unit = js.native
   
   val serverTimezoneOffset: Double = js.native
   
@@ -776,25 +749,25 @@ trait Typeofej extends StObject {
   
   def setRenderMode(element: String): Unit = js.native
   
-  def setTheme(): js.Any = js.native
+  def setTheme(): Any = js.native
   
   def setTransition(): Boolean = js.native
   
-  val slider: js.Any = js.native
+  val slider: Any = js.native
   
   def startEvent(): String = js.native
   
   def sum(json: String, fieldName: String): String = js.native
   
-  def swap(array: js.Any, x: String, y: String): js.Any = js.native
+  def swap(array: Any, x: String, y: String): Any = js.native
   
   def tapEvent(): String = js.native
   
   def tapHoldEvent(): String = js.native
   
-  val template: js.Any = js.native
+  val template: Any = js.native
   
-  def throwError(): js.Any = js.native
+  def throwError(): Any = js.native
   
   val transform: String = js.native
   
@@ -808,7 +781,7 @@ trait Typeofej extends StObject {
   
   val transitionDuration: String = js.native
   
-  def transitionEndEvent(): js.Any = js.native
+  def transitionEndEvent(): Any = js.native
   
   val transitionProperty: String = js.native
   
@@ -819,5 +792,5 @@ trait Typeofej extends StObject {
   val util: ValueFunction = js.native
   
   val widget: Typeofwidget = js.native
-  def widget(pluginName: String, className: String, proto: js.Any): js.Any = js.native
+  def widget(pluginName: String, className: String, proto: Any): Any = js.native
 }

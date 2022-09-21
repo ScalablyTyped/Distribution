@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait bulletConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
-  var bands: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var bands: js.UndefOr[js.Array[Any]] = js.undefined
   
   var barWidth: js.UndefOr[Double] = js.undefined
   
@@ -20,7 +20,7 @@ trait bulletConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -58,9 +58,9 @@ trait bulletConfig extends StObject {
   
   var minWidth: js.UndefOr[Double] = js.undefined
   
-  var placeholder: js.UndefOr[js.Any] = js.undefined
+  var placeholder: js.UndefOr[Any] = js.undefined
   
-  var scale: js.UndefOr[js.Any] = js.undefined
+  var scale: js.UndefOr[Any] = js.undefined
   
   var smoothFlow: js.UndefOr[Boolean] = js.undefined
   
@@ -83,15 +83,15 @@ object bulletConfig {
   
   extension [Self <: bulletConfig](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    inline def setBands(value: js.Array[js.Any]): Self = StObject.set(x, "bands", value.asInstanceOf[js.Any])
+    inline def setBands(value: js.Array[Any]): Self = StObject.set(x, "bands", value.asInstanceOf[js.Any])
     
     inline def setBandsUndefined: Self = StObject.set(x, "bands", js.undefined)
     
-    inline def setBandsVarargs(value: js.Any*): Self = StObject.set(x, "bands", js.Array(value :_*))
+    inline def setBandsVarargs(value: Any*): Self = StObject.set(x, "bands", js.Array(value*))
     
     inline def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
     
@@ -109,7 +109,7 @@ object bulletConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -185,11 +185,11 @@ object bulletConfig {
     
     inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    inline def setPlaceholder(value: js.Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: Any): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setScale(value: js.Any): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Any): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     

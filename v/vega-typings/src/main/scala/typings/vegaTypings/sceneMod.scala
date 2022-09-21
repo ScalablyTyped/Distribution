@@ -1,9 +1,12 @@
 package typings.vegaTypings
 
 import typings.vegaTypings.anon.Index
-import typings.vegaTypings.anon.Role
+import typings.vegaTypings.vegaTypingsStrings.bottom
+import typings.vegaTypings.vegaTypingsStrings.left
 import typings.vegaTypings.vegaTypingsStrings.ltr
+import typings.vegaTypings.vegaTypingsStrings.right
 import typings.vegaTypings.vegaTypingsStrings.rtl
+import typings.vegaTypings.vegaTypingsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +19,7 @@ object sceneMod {
   
   @JSImport("vega-typings/types/runtime/scene", "Bounds")
   @js.native
-  class Bounds () extends StObject {
+  open class Bounds () extends StObject {
     
     def add(x: Double, y: Double): Bounds = js.native
     
@@ -105,13 +108,38 @@ object sceneMod {
       
       inline def setItems(value: js.Array[SceneGroup]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: SceneGroup*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SceneGroup*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setMarktype(value: String): Self = StObject.set(x, "marktype", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SceneAxis
+    extends StObject
+       with SceneItem {
+    
+    var orient: bottom | left | right | top
+  }
+  object SceneAxis {
+    
+    inline def apply(
+      bounds: Bounds,
+      mark: typings.vegaTypings.anon.Bounds,
+      orient: bottom | left | right | top,
+      x: Double,
+      y: Double
+    ): SceneAxis = {
+      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], orient = orient.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SceneAxis]
+    }
+    
+    extension [Self <: SceneAxis](x: Self) {
+      
+      inline def setOrient(value: bottom | left | right | top): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,7 +183,7 @@ object sceneMod {
       context: SceneContext,
       height: Double,
       items: js.Array[SceneItem],
-      mark: Role,
+      mark: typings.vegaTypings.anon.Bounds,
       width: Double,
       x: Double,
       y: Double
@@ -172,7 +200,7 @@ object sceneMod {
       
       inline def setItems(value: js.Array[SceneItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: SceneItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SceneItem*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
@@ -188,7 +216,9 @@ object sceneMod {
     
     var datum: js.UndefOr[js.Object] = js.undefined
     
-    var mark: Role
+    var mark: typings.vegaTypings.anon.Bounds
+    
+    var opacity: js.UndefOr[Double] = js.undefined
     
     var x: Double
     
@@ -196,7 +226,7 @@ object sceneMod {
   }
   object SceneItem {
     
-    inline def apply(bounds: Bounds, mark: Role, x: Double, y: Double): SceneItem = {
+    inline def apply(bounds: Bounds, mark: typings.vegaTypings.anon.Bounds, x: Double, y: Double): SceneItem = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[SceneItem]
     }
@@ -209,7 +239,11 @@ object sceneMod {
       
       inline def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
       
-      inline def setMark(value: Role): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+      inline def setMark(value: typings.vegaTypings.anon.Bounds): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+      
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -238,8 +272,6 @@ object sceneMod {
     extends StObject
        with SceneItem {
     
-    var opacity: Double
-    
     var stroke: String
     
     var strokeWidth: Double
@@ -252,8 +284,7 @@ object sceneMod {
     
     inline def apply(
       bounds: Bounds,
-      mark: Role,
-      opacity: Double,
+      mark: typings.vegaTypings.anon.Bounds,
       stroke: String,
       strokeWidth: Double,
       x: Double,
@@ -261,13 +292,11 @@ object sceneMod {
       y: Double,
       y2: Double
     ): SceneLine = {
-      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], stroke = stroke.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], stroke = stroke.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
       __obj.asInstanceOf[SceneLine]
     }
     
     extension [Self <: SceneLine](x: Self) {
-      
-      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
@@ -283,24 +312,62 @@ object sceneMod {
     extends StObject
        with SceneItem {
     
+    var cornerRadius: js.UndefOr[Double] = js.undefined
+    
     var fill: String
     
+    var fillOpacity: js.UndefOr[Double] = js.undefined
+    
     var height: Double
+    
+    var stroke: js.UndefOr[String] = js.undefined
+    
+    var strokeOpacity: js.UndefOr[Double] = js.undefined
+    
+    var strokeWidth: js.UndefOr[Double] = js.undefined
     
     var width: Double
   }
   object SceneRect {
     
-    inline def apply(bounds: Bounds, fill: String, height: Double, mark: Role, width: Double, x: Double, y: Double): SceneRect = {
+    inline def apply(
+      bounds: Bounds,
+      fill: String,
+      height: Double,
+      mark: typings.vegaTypings.anon.Bounds,
+      width: Double,
+      x: Double,
+      y: Double
+    ): SceneRect = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[SceneRect]
     }
     
     extension [Self <: SceneRect](x: Self) {
       
+      inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+      
+      inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
+      
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
+      inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+      
+      inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+      
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+      
+      inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+      
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
@@ -312,25 +379,30 @@ object sceneMod {
     
     var fill: String
     
+    var fillOpacity: js.UndefOr[Double] = js.undefined
+    
     var shape: String
     
     var size: Double
     
-    var strokeWidth: Double
+    var stroke: js.UndefOr[String] = js.undefined
+    
+    var strokeOpacity: js.UndefOr[Double] = js.undefined
+    
+    var strokeWidth: js.UndefOr[Double] = js.undefined
   }
   object SceneSymbol {
     
     inline def apply(
       bounds: Bounds,
       fill: String,
-      mark: Role,
+      mark: typings.vegaTypings.anon.Bounds,
       shape: String,
       size: Double,
-      strokeWidth: Double,
       x: Double,
       y: Double
     ): SceneSymbol = {
-      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[SceneSymbol]
     }
     
@@ -338,11 +410,25 @@ object sceneMod {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
+      inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+      
+      inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+      
       inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
+      inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+      
+      inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+      
       inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     }
   }
   
@@ -395,7 +481,7 @@ object sceneMod {
       fill: String,
       font: String,
       fontSize: Double,
-      mark: Role,
+      mark: typings.vegaTypings.anon.Bounds,
       text: String,
       x: Double,
       y: Double

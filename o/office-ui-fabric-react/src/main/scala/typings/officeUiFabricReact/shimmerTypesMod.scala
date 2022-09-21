@@ -305,7 +305,7 @@ object shimmerTypesMod {
       
       inline def setShimmerElementsUndefined: Self = StObject.set(x, "shimmerElements", js.undefined)
       
-      inline def setShimmerElementsVarargs(value: IShimmerElement*): Self = StObject.set(x, "shimmerElements", js.Array(value :_*))
+      inline def setShimmerElementsVarargs(value: IShimmerElement*): Self = StObject.set(x, "shimmerElements", js.Array(value*))
       
       inline def setStyles(value: IStyleFunctionOrObject[IShimmerStyleProps, IShimmerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

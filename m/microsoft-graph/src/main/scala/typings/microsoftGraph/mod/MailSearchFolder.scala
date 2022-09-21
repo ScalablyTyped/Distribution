@@ -57,6 +57,6 @@ object MailSearchFolder {
     
     inline def setSourceFolderIdsUndefined: Self = StObject.set(x, "sourceFolderIds", js.undefined)
     
-    inline def setSourceFolderIdsVarargs(value: String*): Self = StObject.set(x, "sourceFolderIds", js.Array(value :_*))
+    inline def setSourceFolderIdsVarargs(value: String*): Self = StObject.set(x, "sourceFolderIds", js.Array(value*))
   }
 }

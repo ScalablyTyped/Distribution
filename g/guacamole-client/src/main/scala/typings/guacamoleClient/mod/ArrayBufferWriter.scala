@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "ArrayBufferWriter")
 @js.native
-class ArrayBufferWriter protected ()
+open class ArrayBufferWriter protected ()
   extends typings.guacamoleClient.arrayBufferWriterMod.ArrayBufferWriter {
   /**
     * @param stream The stream that data will be written

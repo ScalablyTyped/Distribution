@@ -15,10 +15,10 @@ trait NativeDataBuffer
   /**
     * Accessor value used to identify/retrieve a natively-stored index buffer.
     */
-  var nativeIndexBuffer: js.UndefOr[js.Any] = js.native
+  var nativeIndexBuffer: js.UndefOr[js.typedarray.Uint32Array] = js.native
   
   /**
     * Accessor value used to identify/retrieve a natively-stored vertex buffer.
     */
-  var nativeVertexBuffer: js.UndefOr[js.Any] = js.native
+  var nativeVertexBuffer: js.UndefOr[js.typedarray.Uint32Array] = js.native
 }

@@ -13,7 +13,7 @@ trait PartialClientCreateCall extends StObject {
   
   var op: js.UndefOr[create] = js.undefined
   
-  var properties: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var properties: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -34,7 +34,7 @@ object PartialClientCreateCall {
     
     inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
     
-    inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     

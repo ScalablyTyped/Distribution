@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridBatchEditSummaryDisplayTextEventArgs")
 @js.native
-class ASPxClientGridBatchEditSummaryDisplayTextEventArgs protected ()
+open class ASPxClientGridBatchEditSummaryDisplayTextEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridBatchEditSummaryDisplayTextEventArgs {
   /**
@@ -18,7 +18,7 @@ class ASPxClientGridBatchEditSummaryDisplayTextEventArgs protected ()
     * @param text The summary text.
     * @param groupRowVisibleIndex The group row's visible index.
     */
-  def this(summaryInfo: js.Any, text: String, groupRowVisibleIndex: Double) = this()
+  def this(summaryInfo: Any, text: String, groupRowVisibleIndex: Double) = this()
   
   /**
     * Gets or sets the summary item's display text.
@@ -54,7 +54,7 @@ class ASPxClientGridBatchEditSummaryDisplayTextEventArgs protected ()
     * Gets the element that contains the summary item.
     */
   /* CompleteClass */
-  var summaryElement: js.Any = js.native
+  var summaryElement: Any = js.native
   
   /**
     * Gets the summary item's field name.

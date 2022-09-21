@@ -7,17 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("chartmogul-node", "ChartMogulError")
 @js.native
-class ChartMogulError ()
+open class ChartMogulError ()
   extends StObject
      with Error {
   
   var httpStatus: Double = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
   
-  var response: js.Any = js.native
+  var response: Any = js.native
 }

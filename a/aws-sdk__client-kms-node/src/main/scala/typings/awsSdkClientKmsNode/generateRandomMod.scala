@@ -8,5 +8,5 @@ object generateRandomMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/GenerateRandom", "GenerateRandom")
   @js.native
-  val GenerateRandom: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GenerateRandom: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

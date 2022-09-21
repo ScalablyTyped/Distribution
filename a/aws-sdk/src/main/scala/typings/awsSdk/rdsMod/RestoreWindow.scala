@@ -9,12 +9,12 @@ trait RestoreWindow extends StObject {
   /**
     * The earliest time you can restore an instance to.
     */
-  var EarliestTime: js.UndefOr[TStamp] = js.undefined
+  var EarliestTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The latest time you can restore an instance to.
     */
-  var LatestTime: js.UndefOr[TStamp] = js.undefined
+  var LatestTime: js.UndefOr[js.Date] = js.undefined
 }
 object RestoreWindow {
   
@@ -25,11 +25,11 @@ object RestoreWindow {
   
   extension [Self <: RestoreWindow](x: Self) {
     
-    inline def setEarliestTime(value: TStamp): Self = StObject.set(x, "EarliestTime", value.asInstanceOf[js.Any])
+    inline def setEarliestTime(value: js.Date): Self = StObject.set(x, "EarliestTime", value.asInstanceOf[js.Any])
     
     inline def setEarliestTimeUndefined: Self = StObject.set(x, "EarliestTime", js.undefined)
     
-    inline def setLatestTime(value: TStamp): Self = StObject.set(x, "LatestTime", value.asInstanceOf[js.Any])
+    inline def setLatestTime(value: js.Date): Self = StObject.set(x, "LatestTime", value.asInstanceOf[js.Any])
     
     inline def setLatestTimeUndefined: Self = StObject.set(x, "LatestTime", js.undefined)
   }

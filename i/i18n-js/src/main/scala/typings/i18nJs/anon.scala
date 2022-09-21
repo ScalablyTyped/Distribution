@@ -8,18 +8,20 @@ object anon {
   
   trait Message extends StObject {
     
-    var message: String
+    var message: typings.i18nJs.mod.Message
   }
   object Message {
     
-    inline def apply(message: String): Message = {
+    inline def apply(message: typings.i18nJs.mod.Message): Message = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
     extension [Self <: Message](x: Self) {
       
-      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: typings.i18nJs.mod.Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageFunction1(value: /* scope */ typings.i18nJs.mod.Scope => String | js.Object): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
     }
   }
   
@@ -38,7 +40,7 @@ object anon {
       
       inline def setScope(value: typings.i18nJs.mod.Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
     }
   }
 }

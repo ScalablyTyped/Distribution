@@ -22,6 +22,6 @@ object Assignments {
     
     inline def setAssignments(value: Assignment | js.Array[Assignment]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     
-    inline def setAssignmentsVarargs(value: Assignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: Assignment*): Self = StObject.set(x, "assignments", js.Array(value*))
   }
 }

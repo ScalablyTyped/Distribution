@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.DoubleGamma")
 @js.native
-class DoubleGamma ()
+open class DoubleGamma ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.DoubleGamma] {
   def this(alpha: Double) = this()

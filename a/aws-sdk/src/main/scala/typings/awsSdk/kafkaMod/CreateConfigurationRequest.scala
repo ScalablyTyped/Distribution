@@ -52,7 +52,7 @@ object CreateConfigurationRequest {
     
     inline def setKafkaVersionsUndefined: Self = StObject.set(x, "KafkaVersions", js.undefined)
     
-    inline def setKafkaVersionsVarargs(value: string*): Self = StObject.set(x, "KafkaVersions", js.Array(value :_*))
+    inline def setKafkaVersionsVarargs(value: string*): Self = StObject.set(x, "KafkaVersions", js.Array(value*))
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

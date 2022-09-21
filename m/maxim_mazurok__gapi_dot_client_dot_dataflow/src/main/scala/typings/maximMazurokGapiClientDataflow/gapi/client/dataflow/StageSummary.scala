@@ -23,6 +23,9 @@ trait StageSummary extends StObject {
   
   /** State of this stage. */
   var state: js.UndefOr[String] = js.undefined
+  
+  /** Straggler summary for this stage. */
+  var stragglerSummary: js.UndefOr[StragglerSummary] = js.undefined
 }
 object StageSummary {
   
@@ -41,7 +44,7 @@ object StageSummary {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: MetricUpdate*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: MetricUpdate*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setProgress(value: ProgressTimeseries): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
@@ -58,5 +61,9 @@ object StageSummary {
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setStragglerSummary(value: StragglerSummary): Self = StObject.set(x, "stragglerSummary", value.asInstanceOf[js.Any])
+    
+    inline def setStragglerSummaryUndefined: Self = StObject.set(x, "stragglerSummary", js.undefined)
   }
 }

@@ -1,7 +1,6 @@
 package typings.web3ProvidersHttp
 
 import typings.node.httpMod.Agent
-import typings.std.Error
 import typings.web3CoreHelpers.mod.HttpProviderBase
 import typings.web3CoreHelpers.mod.JsonRpcResponse
 import org.scalablytyped.runtime.StObject
@@ -12,7 +11,7 @@ object mod {
   
   @JSImport("web3-providers-http", "HttpProvider")
   @js.native
-  class HttpProvider () extends HttpProviderBase {
+  open class HttpProvider () extends HttpProviderBase {
     def this(host: String) = this()
     def this(host: String, options: HttpProviderOptions) = this()
     def this(host: Unit, options: HttpProviderOptions) = this()
@@ -24,12 +23,12 @@ object mod {
     def send(payload: js.Object): Unit = js.native
     def send(
       payload: js.Object,
-      callback: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]
     ): Unit = js.native
     
     var timeout: Double = js.native
     
-    var withCredentials: Boolean = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.native
   }
   
   trait HttpHeader extends StObject {
@@ -55,8 +54,6 @@ object mod {
   
   trait HttpProviderAgent extends StObject {
     
-    var baseUrl: js.UndefOr[String] = js.undefined
-    
     var http: js.UndefOr[Agent] = js.undefined
     
     var https: js.UndefOr[typings.node.httpsMod.Agent] = js.undefined
@@ -69,10 +66,6 @@ object mod {
     }
     
     extension [Self <: HttpProviderAgent](x: Self) {
-      
-      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
-      
-      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
       inline def setHttp(value: Agent): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
@@ -113,7 +106,7 @@ object mod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
       

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@frctl/fractal", "Fractal")
 @js.native
-class Fractal_ () extends ConfigurableEmitter[FractalConfig] {
+open class Fractal_ () extends ConfigurableEmitter[FractalConfig] {
   def this(config: FractalConfig) = this()
   
   val assets: AssetSourceCollection = js.native
@@ -26,7 +26,7 @@ class Fractal_ () extends ConfigurableEmitter[FractalConfig] {
   val docs: DocSource = js.native
   
   def extend(plugin: String): this.type = js.native
-  def extend(plugin: js.ThisFunction1[/* this */ this.type, /* core */ js.Any, Unit]): this.type = js.native
+  def extend(plugin: js.ThisFunction1[/* this */ this.type, /* core */ Any, Unit]): this.type = js.native
   
   def load(): js.Promise[Unit] = js.native
   

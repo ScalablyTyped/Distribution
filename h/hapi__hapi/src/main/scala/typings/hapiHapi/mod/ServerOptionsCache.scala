@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ServerOptionsCache
   extends StObject
-     with PolicyOptions[js.Any]
+     with PolicyOptions[Any]
      with /** other options passed to the catbox strategy used. Other options are only passed to catbox when engine above is a class or function and ignored if engine is a catbox engine object). */
-/* s */ StringDictionary[js.Any] {
+/* s */ StringDictionary[Any] {
   
   /** catbox engine object. */
-  var engine: js.UndefOr[ClientApi[js.Any]] = js.undefined
+  var engine: js.UndefOr[ClientApi[Any]] = js.undefined
   
   /**
     * an identifier used later when provisioning or configuring caching for server methods or plugins. Each cache name must be unique. A single item may omit the name option which defines
@@ -43,7 +43,7 @@ object ServerOptionsCache {
   
   extension [Self <: ServerOptionsCache](x: Self) {
     
-    inline def setEngine(value: ClientApi[js.Any]): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: ClientApi[Any]): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
     inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
     

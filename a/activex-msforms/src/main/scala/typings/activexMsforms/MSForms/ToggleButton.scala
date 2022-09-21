@@ -68,7 +68,7 @@ trait ToggleButton extends StObject {
   
   val Valid: Boolean
   
-  var Value: js.Any
+  var Value: Any
   
   var WordWrap: Boolean
   
@@ -107,7 +107,7 @@ object ToggleButton {
     TextAlign: fmTextAlign,
     TripleState: Boolean,
     Valid: Boolean,
-    Value: js.Any,
+    Value: Any,
     WordWrap: Boolean,
     _Font_Reserved: NewFont
   ): ToggleButton = {
@@ -178,7 +178,7 @@ object ToggleButton {
     
     inline def setValid(value: Boolean): Self = StObject.set(x, "Valid", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
     inline def setWordWrap(value: Boolean): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
     

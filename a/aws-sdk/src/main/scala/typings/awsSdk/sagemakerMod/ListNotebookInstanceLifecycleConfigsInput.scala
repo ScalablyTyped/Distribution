@@ -9,22 +9,22 @@ trait ListNotebookInstanceLifecycleConfigsInput extends StObject {
   /**
     * A filter that returns only lifecycle configurations that were created after the specified time (timestamp).
     */
-  var CreationTimeAfter: js.UndefOr[CreationTime] = js.undefined
+  var CreationTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only lifecycle configurations that were created before the specified time (timestamp).
     */
-  var CreationTimeBefore: js.UndefOr[CreationTime] = js.undefined
+  var CreationTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only lifecycle configurations that were modified after the specified time (timestamp).
     */
-  var LastModifiedTimeAfter: js.UndefOr[LastModifiedTime] = js.undefined
+  var LastModifiedTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only lifecycle configurations that were modified before the specified time (timestamp).
     */
-  var LastModifiedTimeBefore: js.UndefOr[LastModifiedTime] = js.undefined
+  var LastModifiedTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum number of lifecycle configurations to return in the response.
@@ -60,19 +60,19 @@ object ListNotebookInstanceLifecycleConfigsInput {
   
   extension [Self <: ListNotebookInstanceLifecycleConfigsInput](x: Self) {
     
-    inline def setCreationTimeAfter(value: CreationTime): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
+    inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
     
-    inline def setCreationTimeBefore(value: CreationTime): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
+    inline def setCreationTimeBefore(value: js.Date): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
     
-    inline def setLastModifiedTimeAfter(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTimeAfter", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTimeAfter(value: js.Date): Self = StObject.set(x, "LastModifiedTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeAfterUndefined: Self = StObject.set(x, "LastModifiedTimeAfter", js.undefined)
     
-    inline def setLastModifiedTimeBefore(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTimeBefore", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTimeBefore(value: js.Date): Self = StObject.set(x, "LastModifiedTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeBeforeUndefined: Self = StObject.set(x, "LastModifiedTimeBefore", js.undefined)
     

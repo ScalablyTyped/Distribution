@@ -31,7 +31,7 @@ object VariableDeclaration {
     
     inline def setDeclarations(value: js.Array[VariableDeclarator]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     
-    inline def setDeclarationsVarargs(value: VariableDeclarator*): Self = StObject.set(x, "declarations", js.Array(value :_*))
+    inline def setDeclarationsVarargs(value: VariableDeclarator*): Self = StObject.set(x, "declarations", js.Array(value*))
     
     inline def setKind(value: `var` | let | const): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

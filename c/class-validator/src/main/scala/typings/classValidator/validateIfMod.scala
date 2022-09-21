@@ -12,9 +12,9 @@ object validateIfMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ValidateIf(condition: js.Function2[/* object */ js.Any, /* value */ js.Any, Boolean]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidateIf")(condition.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def ValidateIf(condition: js.Function2[/* object */ Any, /* value */ Any, Boolean]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidateIf")(condition.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def ValidateIf(
-    condition: js.Function2[/* object */ js.Any, /* value */ js.Any, Boolean],
+    condition: js.Function2[/* object */ Any, /* value */ Any, Boolean],
     validationOptions: ValidationOptions
   ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateIf")(condition.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
 }

@@ -44,7 +44,7 @@ object StridedSliceAttrs {
     
     inline def setBeginMask(value: Double): Self = StObject.set(x, "beginMask", value.asInstanceOf[js.Any])
     
-    inline def setBeginVarargs(value: Double*): Self = StObject.set(x, "begin", js.Array(value :_*))
+    inline def setBeginVarargs(value: Double*): Self = StObject.set(x, "begin", js.Array(value*))
     
     inline def setEllipsisMask(value: Double): Self = StObject.set(x, "ellipsisMask", value.asInstanceOf[js.Any])
     
@@ -52,7 +52,7 @@ object StridedSliceAttrs {
     
     inline def setEndMask(value: Double): Self = StObject.set(x, "endMask", value.asInstanceOf[js.Any])
     
-    inline def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value :_*))
+    inline def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value*))
     
     inline def setNewAxisMask(value: Double): Self = StObject.set(x, "newAxisMask", value.asInstanceOf[js.Any])
     
@@ -60,6 +60,6 @@ object StridedSliceAttrs {
     
     inline def setStrides(value: js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
     
-    inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+    inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value*))
   }
 }

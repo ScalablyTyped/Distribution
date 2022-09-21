@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ISatnav extends StObject {
   
-  def change(onChange: js.Function3[/* hash */ String, /* params */ js.Any, /* old */ js.Any, js.Any]): ISatnav
+  def change(onChange: js.Function3[/* hash */ String, /* params */ Any, /* old */ Any, Any]): ISatnav
   
   def go(): ISatnav
   
@@ -17,7 +17,7 @@ trait ISatnav extends StObject {
 object ISatnav {
   
   inline def apply(
-    change: js.Function3[/* hash */ String, /* params */ js.Any, /* old */ js.Any, js.Any] => ISatnav,
+    change: js.Function3[/* hash */ String, /* params */ Any, /* old */ Any, Any] => ISatnav,
     go: () => ISatnav,
     navigate: INavigationOptions => ISatnav,
     otherwise: String => ISatnav
@@ -28,7 +28,7 @@ object ISatnav {
   
   extension [Self <: ISatnav](x: Self) {
     
-    inline def setChange(value: js.Function3[/* hash */ String, /* params */ js.Any, /* old */ js.Any, js.Any] => ISatnav): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: js.Function3[/* hash */ String, /* params */ Any, /* old */ Any, Any] => ISatnav): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     inline def setGo(value: () => ISatnav): Self = StObject.set(x, "go", js.Any.fromFunction0(value))
     

@@ -17,7 +17,7 @@ object libCheckboxMod {
   
   @JSImport("office-ui-fabric-react/lib/Checkbox", "CheckboxBase")
   @js.native
-  class CheckboxBase protected ()
+  open class CheckboxBase protected ()
     extends typings.officeUiFabricReact.checkboxMod.CheckboxBase {
     /**
       * Initialize a new instance of the Checkbox
@@ -25,7 +25,7 @@ object libCheckboxMod {
       * @param context - Context or initial state for the base component.
       */
     def this(props: ICheckboxProps) = this()
-    def this(props: ICheckboxProps, context: js.Any) = this()
+    def this(props: ICheckboxProps, context: Any) = this()
   }
   /* static members */
   object CheckboxBase {

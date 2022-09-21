@@ -10,12 +10,12 @@ object globalStyleMod {
   
   @JSImport("@catho/quantum/GlobalStyle", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[js.Object, js.Object, js.Any]
+  open class default ()
+    extends Component[js.Object, js.Object, Any]
   
   @JSImport("@catho/quantum/GlobalStyle", "Typography")
   @js.native
   val Typography: FC[js.Object] = js.native
   
-  type GlobalStyle = Component[js.Object, js.Object, js.Any]
+  type GlobalStyle = Component[js.Object, js.Object, Any]
 }

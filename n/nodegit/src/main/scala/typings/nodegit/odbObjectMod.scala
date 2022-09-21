@@ -1,6 +1,6 @@
 package typings.nodegit
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodegit.oidMod.Oid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +10,7 @@ object odbObjectMod {
   
   @JSImport("nodegit/odb-object", "OdbObject")
   @js.native
-  class OdbObject () extends StObject {
+  open class OdbObject () extends StObject {
     
     def data(): Buffer = js.native
     

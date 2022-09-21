@@ -58,7 +58,7 @@ trait PageSetup extends StObject {
   
   var PaperSize: WdPaperSize
   
-  val Parent: js.Any
+  val Parent: Any
   
   var RightMargin: Double
   
@@ -114,7 +114,7 @@ object PageSetup {
     PageHeight: Double,
     PageWidth: Double,
     PaperSize: WdPaperSize,
-    Parent: js.Any,
+    Parent: Any,
     RightMargin: Double,
     SectionDirection: WdSectionDirection,
     SectionStart: WdSectionStart,
@@ -187,7 +187,7 @@ object PageSetup {
     
     inline def setPaperSize(value: WdPaperSize): Self = StObject.set(x, "PaperSize", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
     

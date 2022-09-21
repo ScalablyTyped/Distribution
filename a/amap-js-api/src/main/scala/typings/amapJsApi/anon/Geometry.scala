@@ -12,13 +12,13 @@ trait Geometry
   
   var geometry: typings.amapJsApi.AMap.GeoJSON.Geometry
   
-  var properties: js.Any
+  var properties: Any
   
   var `type`: Feature
 }
 object Geometry {
   
-  inline def apply(geometry: typings.amapJsApi.AMap.GeoJSON.Geometry, properties: js.Any): Geometry = {
+  inline def apply(geometry: typings.amapJsApi.AMap.GeoJSON.Geometry, properties: Any): Geometry = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Feature")
     __obj.asInstanceOf[Geometry]
@@ -28,7 +28,7 @@ object Geometry {
     
     inline def setGeometry(value: typings.amapJsApi.AMap.GeoJSON.Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setType(value: Feature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

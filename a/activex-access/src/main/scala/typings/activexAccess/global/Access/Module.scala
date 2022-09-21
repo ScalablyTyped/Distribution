@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Module")
 @js.native
-/* private */ class Module ()
+/* private */ open class Module ()
   extends StObject
      with typings.activexAccess.Access.Module

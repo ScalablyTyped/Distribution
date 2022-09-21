@@ -8,25 +8,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON template for an Analytics account filter.
-  */
 trait SchemaFilter extends StObject {
   
   /**
     * Account ID to which this filter belongs.
     */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Details for the filter of the type ADVANCED.
     */
-  var advancedDetails: js.UndefOr[CaseSensitive] = js.undefined
+  var advancedDetails: js.UndefOr[CaseSensitive | Null] = js.undefined
   
   /**
     * Time this filter was created.
     */
-  var created: js.UndefOr[String] = js.undefined
+  var created: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Details for the filter of the type EXCLUDE.
@@ -36,7 +33,7 @@ trait SchemaFilter extends StObject {
   /**
     * Filter ID.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Details for the filter of the type INCLUDE.
@@ -46,49 +43,47 @@ trait SchemaFilter extends StObject {
   /**
     * Resource type for Analytics filter.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Details for the filter of the type LOWER.
     */
-  var lowercaseDetails: js.UndefOr[Field] = js.undefined
+  var lowercaseDetails: js.UndefOr[Field | Null] = js.undefined
   
   /**
     * Name of this filter.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Parent link for this filter. Points to the account to which this filter
-    * belongs.
+    * Parent link for this filter. Points to the account to which this filter belongs.
     */
-  var parentLink: js.UndefOr[Href] = js.undefined
+  var parentLink: js.UndefOr[Href | Null] = js.undefined
   
   /**
     * Details for the filter of the type SEARCH_AND_REPLACE.
     */
-  var searchAndReplaceDetails: js.UndefOr[FieldIndex] = js.undefined
+  var searchAndReplaceDetails: js.UndefOr[FieldIndex | Null] = js.undefined
   
   /**
     * Link for this filter.
     */
-  var selfLink: js.UndefOr[String] = js.undefined
+  var selfLink: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Type of this filter. Possible values are INCLUDE, EXCLUDE, LOWERCASE,
-    * UPPERCASE, SEARCH_AND_REPLACE and ADVANCED.
+    * Type of this filter. Possible values are INCLUDE, EXCLUDE, LOWERCASE, UPPERCASE, SEARCH_AND_REPLACE and ADVANCED.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Time this filter was last modified.
     */
-  var updated: js.UndefOr[String] = js.undefined
+  var updated: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Details for the filter of the type UPPER.
     */
-  var uppercaseDetails: js.UndefOr[Field] = js.undefined
+  var uppercaseDetails: js.UndefOr[Field | Null] = js.undefined
 }
 object SchemaFilter {
   
@@ -101,13 +96,19 @@ object SchemaFilter {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
+    inline def setAccountIdNull: Self = StObject.set(x, "accountId", null)
+    
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     inline def setAdvancedDetails(value: CaseSensitive): Self = StObject.set(x, "advancedDetails", value.asInstanceOf[js.Any])
     
+    inline def setAdvancedDetailsNull: Self = StObject.set(x, "advancedDetails", null)
+    
     inline def setAdvancedDetailsUndefined: Self = StObject.set(x, "advancedDetails", js.undefined)
     
     inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedNull: Self = StObject.set(x, "created", null)
     
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
@@ -117,6 +118,8 @@ object SchemaFilter {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setIncludeDetails(value: SchemaFilterExpression): Self = StObject.set(x, "includeDetails", value.asInstanceOf[js.Any])
@@ -125,37 +128,55 @@ object SchemaFilter {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setLowercaseDetails(value: Field): Self = StObject.set(x, "lowercaseDetails", value.asInstanceOf[js.Any])
+    
+    inline def setLowercaseDetailsNull: Self = StObject.set(x, "lowercaseDetails", null)
     
     inline def setLowercaseDetailsUndefined: Self = StObject.set(x, "lowercaseDetails", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setParentLink(value: Href): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
+    
+    inline def setParentLinkNull: Self = StObject.set(x, "parentLink", null)
     
     inline def setParentLinkUndefined: Self = StObject.set(x, "parentLink", js.undefined)
     
     inline def setSearchAndReplaceDetails(value: FieldIndex): Self = StObject.set(x, "searchAndReplaceDetails", value.asInstanceOf[js.Any])
     
+    inline def setSearchAndReplaceDetailsNull: Self = StObject.set(x, "searchAndReplaceDetails", null)
+    
     inline def setSearchAndReplaceDetailsUndefined: Self = StObject.set(x, "searchAndReplaceDetails", js.undefined)
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    
+    inline def setSelfLinkNull: Self = StObject.set(x, "selfLink", null)
     
     inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
+    inline def setUpdatedNull: Self = StObject.set(x, "updated", null)
+    
     inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
     inline def setUppercaseDetails(value: Field): Self = StObject.set(x, "uppercaseDetails", value.asInstanceOf[js.Any])
+    
+    inline def setUppercaseDetailsNull: Self = StObject.set(x, "uppercaseDetails", null)
     
     inline def setUppercaseDetailsUndefined: Self = StObject.set(x, "uppercaseDetails", js.undefined)
   }

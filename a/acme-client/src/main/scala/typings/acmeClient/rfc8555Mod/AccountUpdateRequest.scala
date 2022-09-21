@@ -25,7 +25,7 @@ object AccountUpdateRequest {
     
     inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
-    inline def setContactVarargs(value: String*): Self = StObject.set(x, "contact", js.Array(value :_*))
+    inline def setContactVarargs(value: String*): Self = StObject.set(x, "contact", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

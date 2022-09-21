@@ -75,7 +75,7 @@ object JQRangeSliderOptions {
     
     inline def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
     
-    inline def setScalesVarargs(value: jQRangeSliderScale*): Self = StObject.set(x, "scales", js.Array(value :_*))
+    inline def setScalesVarargs(value: jQRangeSliderScale*): Self = StObject.set(x, "scales", js.Array(value*))
     
     inline def setSymmetricPositionning(value: Boolean): Self = StObject.set(x, "symmetricPositionning", value.asInstanceOf[js.Any])
     

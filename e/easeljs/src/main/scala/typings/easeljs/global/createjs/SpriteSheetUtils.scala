@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.SpriteSheetUtils")
 @js.native
-class SpriteSheetUtils ()
+open class SpriteSheetUtils ()
   extends StObject
      with typings.easeljs.createjs.SpriteSheetUtils
 /* static members */

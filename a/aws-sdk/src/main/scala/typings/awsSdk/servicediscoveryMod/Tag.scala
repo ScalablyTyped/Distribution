@@ -12,7 +12,7 @@ trait Tag extends StObject {
   var Key: TagKey
   
   /**
-    * The string value associated with the key of the tag. You can set the value of a tag to an empty string, but you can't set the value of a tag to null.
+    * The string value that's associated with the key of the tag. You can set the value of a tag to an empty string, but you can't set the value of a tag to null.
     */
   var Value: TagValue
 }

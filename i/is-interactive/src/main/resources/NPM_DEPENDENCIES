@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-interactive" : "1.0.0"
+      "is-interactive" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "is-interactive" : "1.0.0"
+      "is-interactive" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

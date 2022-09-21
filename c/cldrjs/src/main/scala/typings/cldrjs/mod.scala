@@ -13,7 +13,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("cldrjs", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with CldrStatic {
     /**
@@ -57,7 +57,7 @@ object mod extends Shortcut {
       * @description
       * Language subtag {@link http://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions}
       */
-    var language: js.Any
+    var language: Any
     
     /**
       * @name languageId
@@ -70,7 +70,7 @@ object mod extends Shortcut {
       * @description
       * Language Id {@link http://www.unicode.org/reports/tr35/#Unicode_language_identifier}
       */
-    var languageId: js.Any
+    var languageId: Any
     
     /**
       * @name maxLanguageId
@@ -83,7 +83,7 @@ object mod extends Shortcut {
       * @description
       * Maximized Language Id {@link http://www.unicode.org/reports/tr35/#Likely_Subtags}
       */
-    var maxLanguageId: js.Any
+    var maxLanguageId: Any
     
     /**
       * @name minLanguageId
@@ -96,7 +96,7 @@ object mod extends Shortcut {
       * @description
       * Minimized Language Id {@link http://www.unicode.org/reports/tr35/#Likely_Subtags}
       */
-    var minLanguageId: js.Any
+    var minLanguageId: Any
     
     /**
       * @name region
@@ -109,7 +109,7 @@ object mod extends Shortcut {
       * @description
       * Region subtag {@link http://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions}
       */
-    var region: js.Any
+    var region: Any
     
     /**
       * @name script
@@ -122,7 +122,7 @@ object mod extends Shortcut {
       * @description
       * Script subtag {@link http://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions}
       */
-    var script: js.Any
+    var script: Any
     
     /**
       * @name territory
@@ -135,18 +135,18 @@ object mod extends Shortcut {
       * @description
       * Region subtag (territory variant) {@link http://www.unicode.org/reports/tr35/#Language_Locale_Field_Definitions}
       */
-    var territory: js.Any
+    var territory: Any
   }
   object Attributes {
     
     inline def apply(
-      language: js.Any,
-      languageId: js.Any,
-      maxLanguageId: js.Any,
-      minLanguageId: js.Any,
-      region: js.Any,
-      script: js.Any,
-      territory: js.Any
+      language: Any,
+      languageId: Any,
+      maxLanguageId: Any,
+      minLanguageId: Any,
+      region: Any,
+      script: Any,
+      territory: Any
     ): Attributes = {
       val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], languageId = languageId.asInstanceOf[js.Any], maxLanguageId = maxLanguageId.asInstanceOf[js.Any], minLanguageId = minLanguageId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], territory = territory.asInstanceOf[js.Any])
       __obj.asInstanceOf[Attributes]
@@ -154,19 +154,19 @@ object mod extends Shortcut {
     
     extension [Self <: Attributes](x: Self) {
       
-      inline def setLanguage(value: js.Any): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: Any): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      inline def setLanguageId(value: js.Any): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
+      inline def setLanguageId(value: Any): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
       
-      inline def setMaxLanguageId(value: js.Any): Self = StObject.set(x, "maxLanguageId", value.asInstanceOf[js.Any])
+      inline def setMaxLanguageId(value: Any): Self = StObject.set(x, "maxLanguageId", value.asInstanceOf[js.Any])
       
-      inline def setMinLanguageId(value: js.Any): Self = StObject.set(x, "minLanguageId", value.asInstanceOf[js.Any])
+      inline def setMinLanguageId(value: Any): Self = StObject.set(x, "minLanguageId", value.asInstanceOf[js.Any])
       
-      inline def setRegion(value: js.Any): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: Any): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      inline def setScript(value: js.Any): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: Any): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      inline def setTerritory(value: js.Any): Self = StObject.set(x, "territory", value.asInstanceOf[js.Any])
+      inline def setTerritory(value: Any): Self = StObject.set(x, "territory", value.asInstanceOf[js.Any])
     }
   }
   
@@ -210,7 +210,7 @@ object mod extends Shortcut {
       *
       * @returns {void}
       */
-    def load(json: js.Any, otherJson: js.Any*): Unit = js.native
+    def load(json: Any, otherJson: Any*): Unit = js.native
     
     /**
       * Allow user to override locale separator "-" (default) | "_".
@@ -219,11 +219,11 @@ object mod extends Shortcut {
       */
     var localeSep: `-_` | _underscore = js.native
     
-    def off(event: String, listener: js.Function2[/* path */ String, /* value */ js.Any, Unit]): Unit = js.native
+    def off(event: String, listener: js.Function2[/* path */ String, /* value */ Any, Unit]): Unit = js.native
     
-    def on(event: String, listener: js.Function2[/* path */ String, /* value */ js.Any, Unit]): Unit = js.native
+    def on(event: String, listener: js.Function2[/* path */ String, /* value */ Any, Unit]): Unit = js.native
     
-    def once(event: String, listener: js.Function2[/* path */ String, /* value */ js.Any, Unit]): Unit = js.native
+    def once(event: String, listener: js.Function2[/* path */ String, /* value */ Any, Unit]): Unit = js.native
   }
   
   /**
@@ -264,7 +264,7 @@ object mod extends Shortcut {
       *
       * @returns {any} The cldr member.
       */
-    def get(path: String): js.Any = js.native
+    def get(path: String): Any = js.native
     /**
       * @name get
       * @memberof cldr.CldrStatic
@@ -278,7 +278,7 @@ object mod extends Shortcut {
       *
       * @returns {any} The cldr member.
       */
-    def get(paths: js.Array[String]): js.Any = js.native
+    def get(paths: js.Array[String]): Any = js.native
     
     /**
       * @name locale
@@ -306,7 +306,7 @@ object mod extends Shortcut {
       *
       * @returns {any} The cldr member.
       */
-    def main(path: String): js.Any = js.native
+    def main(path: String): Any = js.native
     /**
       * @name main
       * @memberof cldr.CldrStatic
@@ -320,16 +320,16 @@ object mod extends Shortcut {
       *
       * @returns {any} The cldr member.
       */
-    def main(paths: js.Array[String]): js.Any = js.native
+    def main(paths: js.Array[String]): Any = js.native
     
-    def off(event: String, listener: js.Function2[/* path */ String, /* value */ js.Any, Unit]): Unit = js.native
+    def off(event: String, listener: js.Function2[/* path */ String, /* value */ Any, Unit]): Unit = js.native
     
-    def on(event: String, listener: js.Function2[/* path */ String, /* value */ js.Any, Unit]): Unit = js.native
+    def on(event: String, listener: js.Function2[/* path */ String, /* value */ Any, Unit]): Unit = js.native
     
-    def once(event: String, listener: js.Function2[/* path */ String, /* value */ js.Any, Unit]): Unit = js.native
+    def once(event: String, listener: js.Function2[/* path */ String, /* value */ Any, Unit]): Unit = js.native
     
-    def supplemental(path: String): js.Any = js.native
-    def supplemental(paths: js.Array[String]): js.Any = js.native
+    def supplemental(path: String): Any = js.native
+    def supplemental(paths: js.Array[String]): Any = js.native
     @JSName("supplemental")
     var supplemental_Original: SupplementalStatic = js.native
   }
@@ -337,8 +337,8 @@ object mod extends Shortcut {
   @js.native
   trait SupplementalStatic extends StObject {
     
-    def apply(path: String): js.Any = js.native
-    def apply(paths: js.Array[String]): js.Any = js.native
+    def apply(path: String): Any = js.native
+    def apply(paths: js.Array[String]): Any = js.native
     
     var timeData: TimeDataStatic = js.native
     

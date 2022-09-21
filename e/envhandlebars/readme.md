@@ -10,10 +10,10 @@ Simple handlebars templating for configuration files using environment variables
 | ------------------ | :-------------: |
 | Full name          | envhandlebars |
 | Keywords           | docker, handlebars, env, environment, variables, config, template |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 33646 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2978.0 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/cgmartin/envhandlebars#readme)

@@ -11,5 +11,5 @@ object dividerMod {
   
   @JSImport("rbx/layout/divider", "Divider")
   @js.native
-  val Divider: ForwardRefAsExoticComponent[DividerProps, ElementType[js.Any]] = js.native
+  val Divider: ForwardRefAsExoticComponent[DividerProps, ElementType[Any]] = js.native
 }

@@ -14,7 +14,7 @@ object geomMod {
   
   @JSImport("webcola/dist/src/geom", "BiTangent")
   @js.native
-  class BiTangent protected () extends StObject {
+  open class BiTangent protected () extends StObject {
     def this(t1: Double, t2: Double) = this()
     
     var t1: Double = js.native
@@ -24,7 +24,7 @@ object geomMod {
   
   @JSImport("webcola/dist/src/geom", "BiTangents")
   @js.native
-  class BiTangents () extends StObject {
+  open class BiTangents () extends StObject {
     
     var ll: BiTangent = js.native
     
@@ -43,7 +43,7 @@ object geomMod {
   
   @JSImport("webcola/dist/src/geom", "LineSegment")
   @js.native
-  class LineSegment protected () extends StObject {
+  open class LineSegment protected () extends StObject {
     def this(x1: Double, y1: Double, x2: Double, y2: Double) = this()
     
     var x1: Double = js.native
@@ -57,7 +57,7 @@ object geomMod {
   
   @JSImport("webcola/dist/src/geom", "Point")
   @js.native
-  class Point () extends StObject {
+  open class Point () extends StObject {
     
     var x: Double = js.native
     
@@ -66,7 +66,7 @@ object geomMod {
   
   @JSImport("webcola/dist/src/geom", "PolyPoint")
   @js.native
-  class PolyPoint () extends Point {
+  open class PolyPoint () extends Point {
     
     var polyIndex: Double = js.native
   }
@@ -77,14 +77,14 @@ object geomMod {
   
   @JSImport("webcola/dist/src/geom", "TVGPoint")
   @js.native
-  class TVGPoint () extends Point {
+  open class TVGPoint () extends Point {
     
     var vv: VisibilityVertex = js.native
   }
   
   @JSImport("webcola/dist/src/geom", "TangentVisibilityGraph")
   @js.native
-  class TangentVisibilityGraph protected () extends StObject {
+  open class TangentVisibilityGraph protected () extends StObject {
     def this(P: js.Array[js.Array[TVGPoint]]) = this()
     def this(P: js.Array[js.Array[TVGPoint]], g0: E) = this()
     
@@ -98,12 +98,12 @@ object geomMod {
     
     def addPoint(p: TVGPoint, i1: Double): VisibilityVertex = js.native
     
-    /* private */ var intersectsPolys: js.Any = js.native
+    /* private */ var intersectsPolys: Any = js.native
   }
   
   @JSImport("webcola/dist/src/geom", "VisibilityEdge")
   @js.native
-  class VisibilityEdge protected () extends StObject {
+  open class VisibilityEdge protected () extends StObject {
     def this(source: VisibilityVertex, target: VisibilityVertex) = this()
     
     def length(): Double = js.native
@@ -115,7 +115,7 @@ object geomMod {
   
   @JSImport("webcola/dist/src/geom", "VisibilityVertex")
   @js.native
-  class VisibilityVertex protected () extends StObject {
+  open class VisibilityVertex protected () extends StObject {
     def this(id: Double, polyid: Double, polyvertid: Double, p: TVGPoint) = this()
     
     var id: Double = js.native

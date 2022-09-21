@@ -1,46 +1,43 @@
 package typings.reactInstantsearchCore.anon
 
-import typings.reactInstantsearchCore.mod.RefinementValue
-import typings.reactInstantsearchCore.mod.SearchState
+import typings.reactInstantsearchCore.mod.Hit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Attribute extends StObject {
+trait Attribute[TDoc] extends StObject {
   
   var attribute: String
   
-  var id: String
+  var highlightProperty: String
   
-  var index: String
+  var hit: Hit[TDoc]
   
-  var label: String
+  var postTag: js.UndefOr[String] = js.undefined
   
-  var value: RefinementValue
+  var preTag: js.UndefOr[String] = js.undefined
 }
 object Attribute {
   
-  inline def apply(
-    attribute: String,
-    id: String,
-    index: String,
-    label: String,
-    value: /* searchState */ SearchState => SearchState
-  ): Attribute = {
-    val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], value = js.Any.fromFunction1(value))
-    __obj.asInstanceOf[Attribute]
+  inline def apply[TDoc](attribute: String, highlightProperty: String, hit: Hit[TDoc]): Attribute[TDoc] = {
+    val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], highlightProperty = highlightProperty.asInstanceOf[js.Any], hit = hit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Attribute[TDoc]]
   }
   
-  extension [Self <: Attribute](x: Self) {
+  extension [Self <: Attribute[?], TDoc](x: Self & Attribute[TDoc]) {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setHighlightProperty(value: String): Self = StObject.set(x, "highlightProperty", value.asInstanceOf[js.Any])
     
-    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setHit(value: Hit[TDoc]): Self = StObject.set(x, "hit", value.asInstanceOf[js.Any])
     
-    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setPostTag(value: String): Self = StObject.set(x, "postTag", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: /* searchState */ SearchState => SearchState): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+    inline def setPostTagUndefined: Self = StObject.set(x, "postTag", js.undefined)
+    
+    inline def setPreTag(value: String): Self = StObject.set(x, "preTag", value.asInstanceOf[js.Any])
+    
+    inline def setPreTagUndefined: Self = StObject.set(x, "preTag", js.undefined)
   }
 }

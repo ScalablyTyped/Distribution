@@ -20,7 +20,7 @@ trait Menu extends StObject {
   def removeItem(id: String): Unit = js.native
   
   def setAction(id: String, action: String): Unit = js.native
-  def setAction(id: String, action: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def setAction(id: String, action: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
   
   def setDisabled(id: String, state: Boolean): Unit = js.native
   

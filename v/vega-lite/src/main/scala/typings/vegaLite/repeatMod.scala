@@ -1,12 +1,11 @@
 package typings.vegaLite
 
-import typings.vegaLite.channeldefMod.FieldName
+import typings.vegaLite.channeldefMod.Field
 import typings.vegaLite.specBaseMod.BaseSpec
 import typings.vegaLite.specBaseMod.GenericCompositionLayoutWithColumns
 import typings.vegaLite.specBaseMod.ResolveMixins
 import typings.vegaLite.specLayerMod.LayerSpec
-import typings.vegaLite.specMod.GenericSpec
-import typings.vegaLite.specUnitMod.FacetedUnitSpec
+import typings.vegaLite.specMod.NonNormalizedSpec
 import typings.vegaLite.specUnitMod.UnitSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -42,7 +41,7 @@ object repeatMod {
       
       inline def setLayer(value: js.Array[String]): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
-      inline def setLayerVarargs(value: String*): Self = StObject.set(x, "layer", js.Array(value :_*))
+      inline def setLayerVarargs(value: String*): Self = StObject.set(x, "layer", js.Array(value*))
     }
   }
   
@@ -63,11 +62,11 @@ object repeatMod {
     /**
       * A specification of the view that gets repeated.
       */
-    var spec: LayerSpec | UnitSpec
+    var spec: LayerSpec[Field] | UnitSpec[Field]
   }
   object LayerRepeatSpec {
     
-    inline def apply(repeat: LayerRepeatMapping, spec: LayerSpec | UnitSpec): LayerRepeatSpec = {
+    inline def apply(repeat: LayerRepeatMapping, spec: LayerSpec[Field] | UnitSpec[Field]): LayerRepeatSpec = {
       val __obj = js.Dynamic.literal(repeat = repeat.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayerRepeatSpec]
     }
@@ -76,7 +75,7 @@ object repeatMod {
       
       inline def setRepeat(value: LayerRepeatMapping): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      inline def setSpec(value: LayerSpec | UnitSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: LayerSpec[Field] | UnitSpec[Field]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,14 +96,11 @@ object repeatMod {
     /**
       * A specification of the view that gets repeated.
       */
-    var spec: GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, FieldName]
+    var spec: NonNormalizedSpec
   }
   object NonLayerRepeatSpec {
     
-    inline def apply(
-      repeat: js.Array[String] | RepeatMapping,
-      spec: GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, FieldName]
-    ): NonLayerRepeatSpec = {
+    inline def apply(repeat: js.Array[String] | RepeatMapping, spec: NonNormalizedSpec): NonLayerRepeatSpec = {
       val __obj = js.Dynamic.literal(repeat = repeat.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
       __obj.asInstanceOf[NonLayerRepeatSpec]
     }
@@ -113,9 +109,9 @@ object repeatMod {
       
       inline def setRepeat(value: js.Array[String] | RepeatMapping): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      inline def setRepeatVarargs(value: String*): Self = StObject.set(x, "repeat", js.Array(value :_*))
+      inline def setRepeatVarargs(value: String*): Self = StObject.set(x, "repeat", js.Array(value*))
       
-      inline def setSpec(value: GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, FieldName]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: NonNormalizedSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     }
   }
   
@@ -144,13 +140,13 @@ object repeatMod {
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setColumnVarargs(value: String*): Self = StObject.set(x, "column", js.Array(value :_*))
+      inline def setColumnVarargs(value: String*): Self = StObject.set(x, "column", js.Array(value*))
       
       inline def setRow(value: js.Array[String]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
       inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
       
-      inline def setRowVarargs(value: String*): Self = StObject.set(x, "row", js.Array(value :_*))
+      inline def setRowVarargs(value: String*): Self = StObject.set(x, "row", js.Array(value*))
     }
   }
   
@@ -161,15 +157,12 @@ object repeatMod {
   trait RepeatSpec extends StObject
   object RepeatSpec {
     
-    inline def LayerRepeatSpec(repeat: LayerRepeatMapping, spec: LayerSpec | UnitSpec): typings.vegaLite.repeatMod.LayerRepeatSpec = {
+    inline def LayerRepeatSpec(repeat: LayerRepeatMapping, spec: LayerSpec[Field] | UnitSpec[Field]): typings.vegaLite.repeatMod.LayerRepeatSpec = {
       val __obj = js.Dynamic.literal(repeat = repeat.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.repeatMod.LayerRepeatSpec]
     }
     
-    inline def NonLayerRepeatSpec(
-      repeat: js.Array[String] | RepeatMapping,
-      spec: GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, FieldName]
-    ): typings.vegaLite.repeatMod.NonLayerRepeatSpec = {
+    inline def NonLayerRepeatSpec(repeat: js.Array[String] | RepeatMapping, spec: NonNormalizedSpec): typings.vegaLite.repeatMod.NonLayerRepeatSpec = {
       val __obj = js.Dynamic.literal(repeat = repeat.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.repeatMod.NonLayerRepeatSpec]
     }

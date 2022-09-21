@@ -22,6 +22,6 @@ object StoreLayoutPagesListResponse {
     
     inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    inline def setPageVarargs(value: StorePage*): Self = StObject.set(x, "page", js.Array(value :_*))
+    inline def setPageVarargs(value: StorePage*): Self = StObject.set(x, "page", js.Array(value*))
   }
 }

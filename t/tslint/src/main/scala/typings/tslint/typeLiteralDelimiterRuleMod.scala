@@ -11,10 +11,10 @@ object typeLiteralDelimiterRuleMod {
   
   @JSImport("tslint/lib/rules/typeLiteralDelimiterRule", "Rule")
   @js.native
-  class Rule protected () extends AbstractRule {
+  open class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
     
-    /* private */ var getRuleOptions: js.Any = js.native
+    /* private */ var getRuleOptions: Any = js.native
   }
   /* static members */
   object Rule {

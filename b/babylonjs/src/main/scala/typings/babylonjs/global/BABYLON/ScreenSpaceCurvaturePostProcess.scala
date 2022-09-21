@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ScreenSpaceCurvaturePostProcess")
 @js.native
-class ScreenSpaceCurvaturePostProcess protected ()
+open class ScreenSpaceCurvaturePostProcess protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ScreenSpaceCurvaturePostProcess {
   /**
@@ -42,9 +42,15 @@ object ScreenSpaceCurvaturePostProcess {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /**
+    * @param parsedPostProcess
+    * @param targetCamera
+    * @param scene
+    * @param rootUrl
+    * @hidden
+    */
   inline def _Parse(
-    parsedPostProcess: js.Any,
+    parsedPostProcess: Any,
     targetCamera: typings.babylonjs.BABYLON.Camera,
     scene: typings.babylonjs.BABYLON.Scene,
     rootUrl: String

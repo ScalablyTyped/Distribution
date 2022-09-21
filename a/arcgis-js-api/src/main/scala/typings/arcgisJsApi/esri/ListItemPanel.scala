@@ -10,6 +10,8 @@ trait ListItemPanel extends StObject {
   /**
     * Adds a CSS class used to style a node that represents the panel.
     *
+    * @default esri-icon-layer-list
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#className)
     */
   var className: String
@@ -19,7 +21,7 @@ trait ListItemPanel extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#content)
     */
-  var content: Widget_ | HTMLElement | String | js.Array[js.Any]
+  var content: Widget_ | HTMLElement | String | js.Array[Any]
   
   /**
     * The URL or data URI of an image used to represent the panel.
@@ -38,6 +40,8 @@ trait ListItemPanel extends StObject {
   /**
     * Indicates if the panel's content is open and visible to the user.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#open)
     */
   var open: Boolean
@@ -52,6 +56,8 @@ trait ListItemPanel extends StObject {
   /**
     * Indicates if the node containing the [image](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#image) or [icon font](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#className) is visible to the user.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#visible)
     */
   var visible: Boolean
@@ -60,7 +66,7 @@ object ListItemPanel {
   
   inline def apply(
     className: String,
-    content: Widget_ | HTMLElement | String | js.Array[js.Any],
+    content: Widget_ | HTMLElement | String | js.Array[Any],
     image: String,
     listItem: ListItem,
     open: Boolean,
@@ -75,9 +81,9 @@ object ListItemPanel {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    inline def setContent(value: Widget_ | HTMLElement | String | js.Array[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Widget_ | HTMLElement | String | js.Array[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setContentVarargs(value: js.Any*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: Any*): Self = StObject.set(x, "content", js.Array(value*))
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

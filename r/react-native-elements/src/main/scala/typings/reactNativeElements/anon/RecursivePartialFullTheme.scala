@@ -1,17 +1,21 @@
 package typings.reactNativeElements.anon
 
+import typings.reactNativeElements.inputMod.InputProps
+import typings.reactNativeElements.searchBarMod.SearchBarProps
+import typings.reactNativeElements.themeProviderMod.RecursivePartial
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-native-elements.react-native-elements.RecursivePartial<react-native-elements.react-native-elements.FullTheme> */
+/* Inlined react-native-elements.react-native-elements/dist/config/ThemeProvider.RecursivePartial<react-native-elements.react-native-elements/dist/config/theme.FullTheme> */
 trait RecursivePartialFullTheme extends StObject {
   
-  var Accessory: js.UndefOr[RecursivePartialPartialIc] = js.undefined
-  
-  var AirbnbRating: js.UndefOr[RecursivePartialPartialAi] = js.undefined
+  var AirbnbRating: js.UndefOr[RecursivePartialPartialSw] = js.undefined
   
   var Avatar: js.UndefOr[RecursivePartialPartialAv] = js.undefined
+  
+  var AvatarAccessory: js.UndefOr[RecursivePartialPartialAc] = js.undefined
   
   var Badge: js.UndefOr[RecursivePartialPartialBa] = js.undefined
   
@@ -37,25 +41,31 @@ trait RecursivePartialFullTheme extends StObject {
   
   var Divider: js.UndefOr[RecursivePartialPartialDi] = js.undefined
   
+  var FAB: js.UndefOr[RecursivePartialPartialFA] = js.undefined
+  
   var Header: js.UndefOr[RecursivePartialPartialHe] = js.undefined
   
-  var Icon: js.UndefOr[RecursivePartialPartialIcAccessibilityActions] = js.undefined
+  var Icon: js.UndefOr[RecursivePartialPartialIc] = js.undefined
   
   var Image: js.UndefOr[RecursivePartialPartialIm] = js.undefined
   
-  var Input: js.UndefOr[RecursivePartialPartialIn] = js.undefined
+  var Input: js.UndefOr[RecursivePartial[Partial[InputProps]]] = js.undefined
+  
+  var LinearProgress: js.UndefOr[RecursivePartialPartialLiAccessibilityActions] = js.undefined
   
   var ListItem: js.UndefOr[RecursivePartialPartialLi] = js.undefined
+  
+  var ListItemAccordion: js.UndefOr[RecursivePartialPartialLiAccessibilityElementsHidden] = js.undefined
   
   var ListItemButtonGroup: js.UndefOr[RecursivePartialPartialBuActiveOpacity] = js.undefined
   
   var ListItemCheckBox: js.UndefOr[RecursivePartialPartialCh] = js.undefined
   
-  var ListItemChevron: js.UndefOr[RecursivePartialPartialIcAccessibilityActions] = js.undefined
+  var ListItemChevron: js.UndefOr[RecursivePartialPartialIc] = js.undefined
   
   var ListItemContent: js.UndefOr[RecursivePartialPartialVi] = js.undefined
   
-  var ListItemInput: js.UndefOr[RecursivePartialPartialIn] = js.undefined
+  var ListItemInput: js.UndefOr[RecursivePartial[Partial[InputProps]]] = js.undefined
   
   var ListItemSubtitle: js.UndefOr[RecursivePartialPartialTe] = js.undefined
   
@@ -65,13 +75,27 @@ trait RecursivePartialFullTheme extends StObject {
   
   var PricingCard: js.UndefOr[RecursivePartialPartialPr] = js.undefined
   
-  var Rating: js.UndefOr[RecursivePartialPartialRa] = js.undefined
+  var Rating: js.UndefOr[RecursivePartialPartialTaCount] = js.undefined
   
-  var SearchBar: js.UndefOr[RecursivePartialPartialSe] = js.undefined
+  var SearchBar: js.UndefOr[RecursivePartial[Partial[SearchBarProps]]] = js.undefined
   
   var Slider: js.UndefOr[RecursivePartialPartialSl] = js.undefined
   
   var SocialIcon: js.UndefOr[RecursivePartialPartialSo] = js.undefined
+  
+  var SpeedDial: js.UndefOr[RecursivePartialPartialSp] = js.undefined
+  
+  var SpeedDialAction: js.UndefOr[RecursivePartialPartialSpAccessibilityActions] = js.undefined
+  
+  var Switch: js.UndefOr[RecursivePartialPartialSwAccessibilityActions] = js.undefined
+  
+  var Tab: js.UndefOr[RecursivePartialPartialTaAccessibilityActions] = js.undefined
+  
+  var TabItem: js.UndefOr[RecursivePartialPartialTaAccessibilityElementsHidden] = js.undefined
+  
+  var TabView: js.UndefOr[RecursivePartialPartialTa] = js.undefined
+  
+  var TabViewItem: js.UndefOr[RecursivePartialPartialVi] = js.undefined
   
   var Text: js.UndefOr[RecursivePartialPartialTe] = js.undefined
   
@@ -90,15 +114,15 @@ object RecursivePartialFullTheme {
   
   extension [Self <: RecursivePartialFullTheme](x: Self) {
     
-    inline def setAccessory(value: RecursivePartialPartialIc): Self = StObject.set(x, "Accessory", value.asInstanceOf[js.Any])
-    
-    inline def setAccessoryUndefined: Self = StObject.set(x, "Accessory", js.undefined)
-    
-    inline def setAirbnbRating(value: RecursivePartialPartialAi): Self = StObject.set(x, "AirbnbRating", value.asInstanceOf[js.Any])
+    inline def setAirbnbRating(value: RecursivePartialPartialSw): Self = StObject.set(x, "AirbnbRating", value.asInstanceOf[js.Any])
     
     inline def setAirbnbRatingUndefined: Self = StObject.set(x, "AirbnbRating", js.undefined)
     
     inline def setAvatar(value: RecursivePartialPartialAv): Self = StObject.set(x, "Avatar", value.asInstanceOf[js.Any])
+    
+    inline def setAvatarAccessory(value: RecursivePartialPartialAc): Self = StObject.set(x, "AvatarAccessory", value.asInstanceOf[js.Any])
+    
+    inline def setAvatarAccessoryUndefined: Self = StObject.set(x, "AvatarAccessory", js.undefined)
     
     inline def setAvatarUndefined: Self = StObject.set(x, "Avatar", js.undefined)
     
@@ -154,11 +178,15 @@ object RecursivePartialFullTheme {
     
     inline def setDividerUndefined: Self = StObject.set(x, "Divider", js.undefined)
     
+    inline def setFAB(value: RecursivePartialPartialFA): Self = StObject.set(x, "FAB", value.asInstanceOf[js.Any])
+    
+    inline def setFABUndefined: Self = StObject.set(x, "FAB", js.undefined)
+    
     inline def setHeader(value: RecursivePartialPartialHe): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     
     inline def setHeaderUndefined: Self = StObject.set(x, "Header", js.undefined)
     
-    inline def setIcon(value: RecursivePartialPartialIcAccessibilityActions): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: RecursivePartialPartialIc): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
     inline def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
     
@@ -166,11 +194,19 @@ object RecursivePartialFullTheme {
     
     inline def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
     
-    inline def setInput(value: RecursivePartialPartialIn): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+    inline def setInput(value: RecursivePartial[Partial[InputProps]]): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
     inline def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
     
+    inline def setLinearProgress(value: RecursivePartialPartialLiAccessibilityActions): Self = StObject.set(x, "LinearProgress", value.asInstanceOf[js.Any])
+    
+    inline def setLinearProgressUndefined: Self = StObject.set(x, "LinearProgress", js.undefined)
+    
     inline def setListItem(value: RecursivePartialPartialLi): Self = StObject.set(x, "ListItem", value.asInstanceOf[js.Any])
+    
+    inline def setListItemAccordion(value: RecursivePartialPartialLiAccessibilityElementsHidden): Self = StObject.set(x, "ListItemAccordion", value.asInstanceOf[js.Any])
+    
+    inline def setListItemAccordionUndefined: Self = StObject.set(x, "ListItemAccordion", js.undefined)
     
     inline def setListItemButtonGroup(value: RecursivePartialPartialBuActiveOpacity): Self = StObject.set(x, "ListItemButtonGroup", value.asInstanceOf[js.Any])
     
@@ -180,7 +216,7 @@ object RecursivePartialFullTheme {
     
     inline def setListItemCheckBoxUndefined: Self = StObject.set(x, "ListItemCheckBox", js.undefined)
     
-    inline def setListItemChevron(value: RecursivePartialPartialIcAccessibilityActions): Self = StObject.set(x, "ListItemChevron", value.asInstanceOf[js.Any])
+    inline def setListItemChevron(value: RecursivePartialPartialIc): Self = StObject.set(x, "ListItemChevron", value.asInstanceOf[js.Any])
     
     inline def setListItemChevronUndefined: Self = StObject.set(x, "ListItemChevron", js.undefined)
     
@@ -188,7 +224,7 @@ object RecursivePartialFullTheme {
     
     inline def setListItemContentUndefined: Self = StObject.set(x, "ListItemContent", js.undefined)
     
-    inline def setListItemInput(value: RecursivePartialPartialIn): Self = StObject.set(x, "ListItemInput", value.asInstanceOf[js.Any])
+    inline def setListItemInput(value: RecursivePartial[Partial[InputProps]]): Self = StObject.set(x, "ListItemInput", value.asInstanceOf[js.Any])
     
     inline def setListItemInputUndefined: Self = StObject.set(x, "ListItemInput", js.undefined)
     
@@ -210,11 +246,11 @@ object RecursivePartialFullTheme {
     
     inline def setPricingCardUndefined: Self = StObject.set(x, "PricingCard", js.undefined)
     
-    inline def setRating(value: RecursivePartialPartialRa): Self = StObject.set(x, "Rating", value.asInstanceOf[js.Any])
+    inline def setRating(value: RecursivePartialPartialTaCount): Self = StObject.set(x, "Rating", value.asInstanceOf[js.Any])
     
     inline def setRatingUndefined: Self = StObject.set(x, "Rating", js.undefined)
     
-    inline def setSearchBar(value: RecursivePartialPartialSe): Self = StObject.set(x, "SearchBar", value.asInstanceOf[js.Any])
+    inline def setSearchBar(value: RecursivePartial[Partial[SearchBarProps]]): Self = StObject.set(x, "SearchBar", value.asInstanceOf[js.Any])
     
     inline def setSearchBarUndefined: Self = StObject.set(x, "SearchBar", js.undefined)
     
@@ -225,6 +261,34 @@ object RecursivePartialFullTheme {
     inline def setSocialIcon(value: RecursivePartialPartialSo): Self = StObject.set(x, "SocialIcon", value.asInstanceOf[js.Any])
     
     inline def setSocialIconUndefined: Self = StObject.set(x, "SocialIcon", js.undefined)
+    
+    inline def setSpeedDial(value: RecursivePartialPartialSp): Self = StObject.set(x, "SpeedDial", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedDialAction(value: RecursivePartialPartialSpAccessibilityActions): Self = StObject.set(x, "SpeedDialAction", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedDialActionUndefined: Self = StObject.set(x, "SpeedDialAction", js.undefined)
+    
+    inline def setSpeedDialUndefined: Self = StObject.set(x, "SpeedDial", js.undefined)
+    
+    inline def setSwitch(value: RecursivePartialPartialSwAccessibilityActions): Self = StObject.set(x, "Switch", value.asInstanceOf[js.Any])
+    
+    inline def setSwitchUndefined: Self = StObject.set(x, "Switch", js.undefined)
+    
+    inline def setTab(value: RecursivePartialPartialTaAccessibilityActions): Self = StObject.set(x, "Tab", value.asInstanceOf[js.Any])
+    
+    inline def setTabItem(value: RecursivePartialPartialTaAccessibilityElementsHidden): Self = StObject.set(x, "TabItem", value.asInstanceOf[js.Any])
+    
+    inline def setTabItemUndefined: Self = StObject.set(x, "TabItem", js.undefined)
+    
+    inline def setTabUndefined: Self = StObject.set(x, "Tab", js.undefined)
+    
+    inline def setTabView(value: RecursivePartialPartialTa): Self = StObject.set(x, "TabView", value.asInstanceOf[js.Any])
+    
+    inline def setTabViewItem(value: RecursivePartialPartialVi): Self = StObject.set(x, "TabViewItem", value.asInstanceOf[js.Any])
+    
+    inline def setTabViewItemUndefined: Self = StObject.set(x, "TabViewItem", js.undefined)
+    
+    inline def setTabViewUndefined: Self = StObject.set(x, "TabView", js.undefined)
     
     inline def setText(value: RecursivePartialPartialTe): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     

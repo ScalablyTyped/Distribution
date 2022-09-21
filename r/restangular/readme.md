@@ -11,9 +11,9 @@ Restful Resources service for AngularJS apps
 | Full name          | restangular |
 | Keywords           | angular, client, browser, restful, resources, rest, api |
 | # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 786372 |
-| # stars            | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 176754.33333333334 |
+| # stars            | 7958.0 |
 
 ## Links
 - [Homepage](https://github.com/mgonto/restangular)

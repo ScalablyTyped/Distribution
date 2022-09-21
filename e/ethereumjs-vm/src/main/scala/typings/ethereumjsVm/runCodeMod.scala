@@ -3,7 +3,7 @@ package typings.ethereumjsVm
 import org.scalablytyped.runtime.StringDictionary
 import typings.ethereumjsVm.evmMod.ExecResult
 import typings.ethereumjsVm.evmMod.default
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ object runCodeMod {
     /**
       * The [`Block`](https://github.com/ethereumjs/ethereumjs-block) the `tx` belongs to. If omitted a blank block will be used
       */
-    var block: js.UndefOr[js.Any] = js.undefined
+    var block: js.UndefOr[Any] = js.undefined
     
     /**
       * The address that ran this code. The address should be a `Buffer` of 20 bits. Defaults to `0`
@@ -90,7 +90,7 @@ object runCodeMod {
       
       inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      inline def setBlock(value: js.Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
       inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       

@@ -24,7 +24,7 @@ trait XMultiPropertyStates
     * @throws UnknownPropertyException if one of the propertes does not exist.
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def getPropertyDefaults(aPropertyNames: SeqEquiv[String]): SafeArray[js.Any]
+  def getPropertyDefaults(aPropertyNames: SeqEquiv[String]): SafeArray[Any]
   
   /**
     * @param aPropertyName specifies the names of the properties. All names must be unique. This sequence must be alphabetically sorted.
@@ -54,9 +54,9 @@ object XMultiPropertyStates {
   
   inline def apply(
     acquire: () => Unit,
-    getPropertyDefaults: SeqEquiv[String] => SafeArray[js.Any],
+    getPropertyDefaults: SeqEquiv[String] => SafeArray[Any],
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setAllPropertiesToDefault: () => Unit,
     setPropertiesToDefault: SeqEquiv[String] => Unit
@@ -67,7 +67,7 @@ object XMultiPropertyStates {
   
   extension [Self <: XMultiPropertyStates](x: Self) {
     
-    inline def setGetPropertyDefaults(value: SeqEquiv[String] => SafeArray[js.Any]): Self = StObject.set(x, "getPropertyDefaults", js.Any.fromFunction1(value))
+    inline def setGetPropertyDefaults(value: SeqEquiv[String] => SafeArray[Any]): Self = StObject.set(x, "getPropertyDefaults", js.Any.fromFunction1(value))
     
     inline def setGetPropertyStates(value: SeqEquiv[String] => SafeArray[PropertyState]): Self = StObject.set(x, "getPropertyStates", js.Any.fromFunction1(value))
     

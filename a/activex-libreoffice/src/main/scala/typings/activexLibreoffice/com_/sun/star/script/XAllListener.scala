@@ -21,7 +21,7 @@ trait XAllListener
     *
     * That happens when the listener method raises an exception, or has a return value declared.
     */
-  def approveFiring(aEvent: AllEventObject): js.Any
+  def approveFiring(aEvent: AllEventObject): Any
   
   /** gets called when an event occurs at the object. */
   def firing(iaEvent: AllEventObject): Unit
@@ -30,10 +30,10 @@ object XAllListener {
   
   inline def apply(
     acquire: () => Unit,
-    approveFiring: AllEventObject => js.Any,
+    approveFiring: AllEventObject => Any,
     disposing: EventObject => Unit,
     firing: AllEventObject => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAllListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), approveFiring = js.Any.fromFunction1(approveFiring), disposing = js.Any.fromFunction1(disposing), firing = js.Any.fromFunction1(firing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -42,7 +42,7 @@ object XAllListener {
   
   extension [Self <: XAllListener](x: Self) {
     
-    inline def setApproveFiring(value: AllEventObject => js.Any): Self = StObject.set(x, "approveFiring", js.Any.fromFunction1(value))
+    inline def setApproveFiring(value: AllEventObject => Any): Self = StObject.set(x, "approveFiring", js.Any.fromFunction1(value))
     
     inline def setFiring(value: AllEventObject => Unit): Self = StObject.set(x, "firing", js.Any.fromFunction1(value))
   }

@@ -29,6 +29,6 @@ object IMapBoundsOptions {
     
     inline def setZoomMarginUndefined: Self = StObject.set(x, "zoomMargin", js.undefined)
     
-    inline def setZoomMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "zoomMargin", js.Array(value :_*))
+    inline def setZoomMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "zoomMargin", js.Array(value*))
   }
 }

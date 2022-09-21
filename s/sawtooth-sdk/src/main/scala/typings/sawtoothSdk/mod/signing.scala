@@ -14,7 +14,7 @@ object signing {
   
   @JSImport("sawtooth-sdk", "signing.CryptoFactory")
   @js.native
-  class CryptoFactory protected ()
+  open class CryptoFactory protected ()
     extends typings.sawtoothSdk.signingMod.CryptoFactory {
     /**
       * Constructs a CryptoFactory.
@@ -26,7 +26,7 @@ object signing {
   
   @JSImport("sawtooth-sdk", "signing.Signer")
   @js.native
-  class Signer protected ()
+  open class Signer protected ()
     extends typings.sawtoothSdk.signingMod.Signer {
     /**
       * Constructs a new Signer

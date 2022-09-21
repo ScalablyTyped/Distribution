@@ -1,18 +1,18 @@
 package typings.stylableDomTestKit
 
 import typings.std.Element
-import typings.stylableRuntime.typesMod.RuntimeStylesheet
+import typings.stylableDomTestKit.stylableDomUtilMod.StylesheetHost
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@stylable/dom-test-kit", "StylableDOMUtil")
+  @JSImport("@stylable/dom-test-kit/dist", "StylableDOMUtil")
   @js.native
-  class StylableDOMUtil protected ()
+  open class StylableDOMUtil protected ()
     extends typings.stylableDomTestKit.stylableDomUtilMod.StylableDOMUtil {
-    def this(stylesheet: RuntimeStylesheet) = this()
-    def this(stylesheet: RuntimeStylesheet, root: Element) = this()
+    def this(stylesheet: StylesheetHost) = this()
+    def this(stylesheet: StylesheetHost, root: Element) = this()
   }
 }

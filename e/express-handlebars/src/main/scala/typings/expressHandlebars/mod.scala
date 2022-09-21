@@ -1,18 +1,27 @@
 package typings.expressHandlebars
 
-import org.scalablytyped.runtime.Shortcut
+import typings.expressHandlebars.expressHandlebarsMod.default
+import typings.expressHandlebars.typesMod.ConfigOptions
+import typings.expressHandlebars.typesMod.Engine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
-  @JSImport("express-handlebars", JSImport.Namespace)
+  @JSImport("express-handlebars/dist", JSImport.Namespace)
   @js.native
-  val ^ : ExpressHandlebars = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ExpressHandlebars
+  @JSImport("express-handlebars/dist", "ExpressHandlebars")
+  @js.native
+  open class ExpressHandlebars () extends default {
+    def this(config: ConfigOptions) = this()
+  }
   
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: ExpressHandlebars = ^
+  inline def create(): default = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[default]
+  inline def create(config: ConfigOptions): default = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[default]
+  
+  inline def engine(): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("engine")().asInstanceOf[Engine]
+  inline def engine(config: ConfigOptions): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("engine")(config.asInstanceOf[js.Any]).asInstanceOf[Engine]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Guid")
 @js.native
-class Guid protected () extends AttributeBase {
+open class Guid protected () extends AttributeBase {
   /**
     * A Guid Attribute.
     * @param name The logical name of the attribute.

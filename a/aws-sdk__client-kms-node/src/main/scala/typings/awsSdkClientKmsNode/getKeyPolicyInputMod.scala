@@ -8,5 +8,5 @@ object getKeyPolicyInputMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/GetKeyPolicyInput", "GetKeyPolicyInput")
   @js.native
-  val GetKeyPolicyInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetKeyPolicyInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

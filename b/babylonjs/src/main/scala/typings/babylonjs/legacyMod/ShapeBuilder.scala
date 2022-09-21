@@ -1,77 +1,54 @@
 package typings.babylonjs.legacyMod
 
-import typings.babylonjs.anon.InvertUV
-import typings.babylonjs.anon.Path
+import typings.babylonjs.anon.AdjustFrame
+import typings.babylonjs.anon.ClosePath
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("babylonjs/Legacy/legacy", "ShapeBuilder")
-@js.native
-class ShapeBuilder ()
-  extends typings.babylonjs.indexMod.ShapeBuilder
-/* static members */
 object ShapeBuilder {
   
   @JSImport("babylonjs/Legacy/legacy", "ShapeBuilder")
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Creates an extruded shape mesh. The extrusion is a parametric shape. It has no predefined shape. Its final shape will depend on the input parameters.
-    * * The parameter `shape` is a required array of successive Vector3. This array depicts the shape to be extruded in its local space : the shape must be designed in the xOy plane and will be extruded along the Z axis.
-    * * The parameter `path` is a required array of successive Vector3. This is the axis curve the shape is extruded along.
-    * * The parameter `rotation` (float, default 0 radians) is the angle value to rotate the shape each step (each path point), from the former step (so rotation added each step) along the curve.
-    * * The parameter `scale` (float, default 1) is the value to scale the shape.
-    * * The parameter `cap` sets the way the extruded shape is capped. Possible values : BABYLON.Mesh.NO_CAP (default), BABYLON.Mesh.CAP_START, BABYLON.Mesh.CAP_END, BABYLON.Mesh.CAP_ALL
-    * * The optional parameter `instance` is an instance of an existing ExtrudedShape object to be updated with the passed `shape`, `path`, `scale` or `rotation` parameters : https://doc.babylonjs.com/how_to/how_to_dynamically_morph_a_mesh#extruded-shape
-    * * Remember you can only change the shape or path point positions, not their number when updating an extruded shape.
-    * * You can also set the mesh side orientation with the values : BABYLON.Mesh.FRONTSIDE (default), BABYLON.Mesh.BACKSIDE or BABYLON.Mesh.DOUBLESIDE
-    * * If you create a double-sided mesh, you can choose what parts of the texture image to crop and stick respectively on the front and the back sides with the parameters `frontUVs` and `backUVs` (Vector4). Detail here : https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation
-    * * The optional parameter `invertUV` (boolean, default false) swaps in the geometry the U and V coordinates to apply a texture.
-    * * The mesh can be set to updatable with the boolean parameter `updatable` (default false) if its internal geometry is supposed to change once created.
-    * @param name defines the name of the mesh
-    * @param options defines the options used to create the mesh
-    * @param scene defines the hosting scene
-    * @returns the extruded shape mesh
-    * @see https://doc.babylonjs.com/how_to/parametric_shapes
-    * @see https://doc.babylonjs.com/how_to/parametric_shapes#extruded-shapes
-    */
-  inline def ExtrudeShape(name: String, options: InvertUV): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-  inline def ExtrudeShape(name: String, options: InvertUV, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-  
-  /**
-    * Creates an custom extruded shape mesh.
-    * The custom extrusion is a parametric shape. It has no predefined shape. Its final shape will depend on the input parameters.
-    * * The parameter `shape` is a required array of successive Vector3. This array depicts the shape to be extruded in its local space : the shape must be designed in the xOy plane and will be extruded along the Z axis.
-    * * The parameter `path` is a required array of successive Vector3. This is the axis curve the shape is extruded along.
-    * * The parameter `rotationFunction` (JS function) is a custom Javascript function called on each path point. This function is passed the position i of the point in the path and the distance of this point from the begining of the path
-    * * It must returns a float value that will be the rotation in radians applied to the shape on each path point.
-    * * The parameter `scaleFunction` (JS function) is a custom Javascript function called on each path point. This function is passed the position i of the point in the path and the distance of this point from the begining of the path
-    * * It must returns a float value that will be the scale value applied to the shape on each path point
-    * * The parameter `ribbonClosePath` (boolean, default false) forces the extrusion underlying ribbon to close all the paths in its `pathArray`
-    * * The parameter `ribbonCloseArray` (boolean, default false) forces the extrusion underlying ribbon to close its `pathArray`
-    * * The parameter `cap` sets the way the extruded shape is capped. Possible values : BABYLON.Mesh.NO_CAP (default), BABYLON.Mesh.CAP_START, BABYLON.Mesh.CAP_END, BABYLON.Mesh.CAP_ALL
-    * * The optional parameter `instance` is an instance of an existing ExtrudedShape object to be updated with the passed `shape`, `path`, `scale` or `rotation` parameters : https://doc.babylonjs.com/how_to/how_to_dynamically_morph_a_mesh#extruded-shape
-    * * Remember you can only change the shape or path point positions, not their number when updating an extruded shape
-    * * You can also set the mesh side orientation with the values : BABYLON.Mesh.FRONTSIDE (default), BABYLON.Mesh.BACKSIDE or BABYLON.Mesh.DOUBLESIDE
-    * * If you create a double-sided mesh, you can choose what parts of the texture image to crop and stick respectively on the front and the back sides with the parameters `frontUVs` and `backUVs` (Vector4). Detail here : https://doc.babylonjs.com/babylon101/discover_basic_elements#side-orientation
-    * * The optional parameter `invertUV` (boolean, default false) swaps in the geometry the U and V coordinates to apply a texture
-    * * The mesh can be set to updatable with the boolean parameter `updatable` (default false) if its internal geometry is supposed to change once created
-    * @param name defines the name of the mesh
-    * @param options defines the options used to create the mesh
-    * @param scene defines the hosting scene
-    * @returns the custom extruded shape mesh
-    * @see https://doc.babylonjs.com/how_to/parametric_shapes#custom-extruded-shapes
-    * @see https://doc.babylonjs.com/how_to/parametric_shapes
-    * @see https://doc.babylonjs.com/how_to/parametric_shapes#extruded-shapes
-    */
-  inline def ExtrudeShapeCustom(name: String, options: Path): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-  inline def ExtrudeShapeCustom(name: String, options: Path, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
-  
-  @JSImport("babylonjs/Legacy/legacy", "ShapeBuilder._ExtrudeShapeGeneric")
+  @JSImport("babylonjs/Legacy/legacy", "ShapeBuilder.ExtrudeShape")
   @js.native
-  def _ExtrudeShapeGeneric: js.Any = js.native
-  inline def _ExtrudeShapeGeneric_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ExtrudeShapeGeneric")(x.asInstanceOf[js.Any])
+  def ExtrudeShape: js.Function3[
+    /* name */ String, 
+    /* options */ AdjustFrame, 
+    /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
+    typings.babylonjs.meshMod.Mesh
+  ] = js.native
+  inline def ExtrudeShape(name: String, options: AdjustFrame): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShape(name: String, options: AdjustFrame, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShape")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  
+  @JSImport("babylonjs/Legacy/legacy", "ShapeBuilder.ExtrudeShapeCustom")
+  @js.native
+  def ExtrudeShapeCustom: js.Function3[
+    /* name */ String, 
+    /* options */ ClosePath, 
+    /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
+    typings.babylonjs.meshMod.Mesh
+  ] = js.native
+  inline def ExtrudeShapeCustom(name: String, options: ClosePath): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShapeCustom(name: String, options: ClosePath, scene: Nullable[typings.babylonjs.sceneMod.Scene]): typings.babylonjs.meshMod.Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("ExtrudeShapeCustom")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.meshMod.Mesh]
+  inline def ExtrudeShapeCustom_=(
+    x: js.Function3[
+      /* name */ String, 
+      /* options */ ClosePath, 
+      /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
+      typings.babylonjs.meshMod.Mesh
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtrudeShapeCustom")(x.asInstanceOf[js.Any])
+  
+  inline def ExtrudeShape_=(
+    x: js.Function3[
+      /* name */ String, 
+      /* options */ AdjustFrame, 
+      /* scene */ js.UndefOr[Nullable[typings.babylonjs.sceneMod.Scene]], 
+      typings.babylonjs.meshMod.Mesh
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExtrudeShape")(x.asInstanceOf[js.Any])
 }

@@ -38,7 +38,7 @@ object SearchRoomsResponse {
     
     inline def setRoomsUndefined: Self = StObject.set(x, "Rooms", js.undefined)
     
-    inline def setRoomsVarargs(value: RoomData*): Self = StObject.set(x, "Rooms", js.Array(value :_*))
+    inline def setRoomsVarargs(value: RoomData*): Self = StObject.set(x, "Rooms", js.Array(value*))
     
     inline def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     

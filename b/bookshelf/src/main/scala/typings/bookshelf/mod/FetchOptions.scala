@@ -1,35 +1,43 @@
 package typings.bookshelf.mod
 
-import typings.knex.mod.Transaction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FetchOptions extends SyncOptions {
+trait FetchOptions
+  extends StObject
+     with SyncOptions {
+  
   var columns: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   /** @default true */
   var require: js.UndefOr[Boolean] = js.undefined
+  
   var withRelated: js.UndefOr[js.Array[String | WithRelatedQuery]] = js.undefined
 }
-
 object FetchOptions {
-  @scala.inline
-  def apply(
-    columns: String | js.Array[String] = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    require: js.UndefOr[Boolean] = js.undefined,
-    transacting: Transaction[_, _] = null,
-    withRelated: js.Array[String | WithRelatedQuery] = null,
-    withSchema: String = null
-  ): FetchOptions = {
+  
+  inline def apply(): FetchOptions = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(require)) __obj.updateDynamic("require")(require.get.asInstanceOf[js.Any])
-    if (transacting != null) __obj.updateDynamic("transacting")(transacting.asInstanceOf[js.Any])
-    if (withRelated != null) __obj.updateDynamic("withRelated")(withRelated.asInstanceOf[js.Any])
-    if (withSchema != null) __obj.updateDynamic("withSchema")(withSchema.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchOptions]
   }
+  
+  extension [Self <: FetchOptions](x: Self) {
+    
+    inline def setColumns(value: String | js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value*))
+    
+    inline def setRequire(value: Boolean): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+    
+    inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
+    
+    inline def setWithRelated(value: js.Array[String | WithRelatedQuery]): Self = StObject.set(x, "withRelated", value.asInstanceOf[js.Any])
+    
+    inline def setWithRelatedUndefined: Self = StObject.set(x, "withRelated", js.undefined)
+    
+    inline def setWithRelatedVarargs(value: (String | WithRelatedQuery)*): Self = StObject.set(x, "withRelated", js.Array(value*))
+  }
 }
-

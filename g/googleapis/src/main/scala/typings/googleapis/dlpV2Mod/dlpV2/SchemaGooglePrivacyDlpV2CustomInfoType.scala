@@ -4,16 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Custom information type provided by the user. Used to find domain-specific
-  * sensitive information configurable to the data in question.
-  */
 trait SchemaGooglePrivacyDlpV2CustomInfoType extends StObject {
   
   /**
-    * Set of detection rules to apply to all findings of this CustomInfoType.
-    * Rules are applied in order that they are specified. Not supported for the
-    * `surrogate_type` CustomInfoType.
+    * Set of detection rules to apply to all findings of this CustomInfoType. Rules are applied in order that they are specified. Not supported for the `surrogate_type` CustomInfoType.
     */
   var detectionRules: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2DetectionRule]] = js.undefined
   
@@ -23,27 +17,19 @@ trait SchemaGooglePrivacyDlpV2CustomInfoType extends StObject {
   var dictionary: js.UndefOr[SchemaGooglePrivacyDlpV2Dictionary] = js.undefined
   
   /**
-    * If set to EXCLUSION_TYPE_EXCLUDE this infoType will not cause a finding
-    * to be returned. It still can be used for rules matching.
+    * If set to EXCLUSION_TYPE_EXCLUDE this infoType will not cause a finding to be returned. It still can be used for rules matching.
     */
-  var exclusionType: js.UndefOr[String] = js.undefined
+  var exclusionType: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * CustomInfoType can either be a new infoType, or an extension of built-in
-    * infoType, when the name matches one of existing infoTypes and that
-    * infoType is specified in `InspectContent.info_types` field. Specifying
-    * the latter adds findings to the one detected by the system. If built-in
-    * info type is not specified in `InspectContent.info_types` list then the
-    * name is treated as a custom info type.
+    * CustomInfoType can either be a new infoType, or an extension of built-in infoType, when the name matches one of existing infoTypes and that infoType is specified in `InspectContent.info_types` field. Specifying the latter adds findings to the one detected by the system. If built-in info type is not specified in `InspectContent.info_types` list then the name is treated as a custom info type.
     */
   var infoType: js.UndefOr[SchemaGooglePrivacyDlpV2InfoType] = js.undefined
   
   /**
-    * Likelihood to return for this CustomInfoType. This base value can be
-    * altered by a detection rule if the finding meets the criteria specified
-    * by the rule. Defaults to `VERY_LIKELY` if not specified.
+    * Likelihood to return for this CustomInfoType. This base value can be altered by a detection rule if the finding meets the criteria specified by the rule. Defaults to `VERY_LIKELY` if not specified.
     */
-  var likelihood: js.UndefOr[String] = js.undefined
+  var likelihood: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Regular expression based CustomInfoType.
@@ -51,14 +37,12 @@ trait SchemaGooglePrivacyDlpV2CustomInfoType extends StObject {
   var regex: js.UndefOr[SchemaGooglePrivacyDlpV2Regex] = js.undefined
   
   /**
-    * Load an existing `StoredInfoType` resource for use in
-    * `InspectDataSource`. Not currently supported in `InspectContent`.
+    * Load an existing `StoredInfoType` resource for use in `InspectDataSource`. Not currently supported in `InspectContent`.
     */
   var storedType: js.UndefOr[SchemaGooglePrivacyDlpV2StoredType] = js.undefined
   
   /**
-    * Message for detecting output from deidentification transformations that
-    * support reversing.
+    * Message for detecting output from deidentification transformations that support reversing.
     */
   var surrogateType: js.UndefOr[SchemaGooglePrivacyDlpV2SurrogateType] = js.undefined
 }
@@ -75,13 +59,15 @@ object SchemaGooglePrivacyDlpV2CustomInfoType {
     
     inline def setDetectionRulesUndefined: Self = StObject.set(x, "detectionRules", js.undefined)
     
-    inline def setDetectionRulesVarargs(value: SchemaGooglePrivacyDlpV2DetectionRule*): Self = StObject.set(x, "detectionRules", js.Array(value :_*))
+    inline def setDetectionRulesVarargs(value: SchemaGooglePrivacyDlpV2DetectionRule*): Self = StObject.set(x, "detectionRules", js.Array(value*))
     
     inline def setDictionary(value: SchemaGooglePrivacyDlpV2Dictionary): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
     
     inline def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
     
     inline def setExclusionType(value: String): Self = StObject.set(x, "exclusionType", value.asInstanceOf[js.Any])
+    
+    inline def setExclusionTypeNull: Self = StObject.set(x, "exclusionType", null)
     
     inline def setExclusionTypeUndefined: Self = StObject.set(x, "exclusionType", js.undefined)
     
@@ -90,6 +76,8 @@ object SchemaGooglePrivacyDlpV2CustomInfoType {
     inline def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
     
     inline def setLikelihood(value: String): Self = StObject.set(x, "likelihood", value.asInstanceOf[js.Any])
+    
+    inline def setLikelihoodNull: Self = StObject.set(x, "likelihood", null)
     
     inline def setLikelihoodUndefined: Self = StObject.set(x, "likelihood", js.undefined)
     

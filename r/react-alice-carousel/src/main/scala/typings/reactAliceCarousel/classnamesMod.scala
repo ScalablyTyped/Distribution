@@ -19,4 +19,7 @@ object classnamesMod {
   
   inline def isClonedItem(i: Double, state: State): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isClonedItem")(i.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def isClonedItem(i: Unit, state: State): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isClonedItem")(i.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isTargetItem(i: Double, state: State): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTargetItem")(i.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isTargetItem(i: Unit, state: State): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTargetItem")(i.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientTranslateStrings {
   
   @js.native
+  sealed trait BatchTranslateDocumentRequest extends StObject
+  inline def BatchTranslateDocumentRequest: BatchTranslateDocumentRequest = "BatchTranslateDocumentRequest".asInstanceOf[BatchTranslateDocumentRequest]
+  
+  @js.native
   sealed trait BatchTranslateTextRequest extends StObject
   inline def BatchTranslateTextRequest: BatchTranslateTextRequest = "BatchTranslateTextRequest".asInstanceOf[BatchTranslateTextRequest]
   
@@ -25,6 +29,10 @@ object maximMazurokGapiClientTranslateStrings {
   @js.native
   sealed trait Status extends StObject
   inline def Status: Status = "Status".asInstanceOf[Status]
+  
+  @js.native
+  sealed trait TranslateDocumentRequest extends StObject
+  inline def TranslateDocumentRequest: TranslateDocumentRequest = "TranslateDocumentRequest".asInstanceOf[TranslateDocumentRequest]
   
   @js.native
   sealed trait TranslateTextRequest extends StObject

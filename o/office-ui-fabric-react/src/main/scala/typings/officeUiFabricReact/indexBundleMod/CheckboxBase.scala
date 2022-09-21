@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "CheckboxBase")
 @js.native
-class CheckboxBase protected ()
+open class CheckboxBase protected ()
   extends typings.officeUiFabricReact.mod.CheckboxBase {
   /**
     * Initialize a new instance of the Checkbox
@@ -18,7 +18,7 @@ class CheckboxBase protected ()
     * @param context - Context or initial state for the base component.
     */
   def this(props: ICheckboxProps) = this()
-  def this(props: ICheckboxProps, context: js.Any) = this()
+  def this(props: ICheckboxProps, context: Any) = this()
 }
 /* static members */
 object CheckboxBase {

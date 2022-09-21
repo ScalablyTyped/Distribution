@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Field
   extends StObject
-     with BaseValueRef[js.Any] {
+     with BaseValueRef[Any] {
   
   var field: typings.vegaTypings.encodeMod.Field
 }

@@ -33,6 +33,6 @@ object ListOfferingTransactionsResult {
     
     inline def setOfferingTransactionsUndefined: Self = StObject.set(x, "offeringTransactions", js.undefined)
     
-    inline def setOfferingTransactionsVarargs(value: OfferingTransaction*): Self = StObject.set(x, "offeringTransactions", js.Array(value :_*))
+    inline def setOfferingTransactionsVarargs(value: OfferingTransaction*): Self = StObject.set(x, "offeringTransactions", js.Array(value*))
   }
 }

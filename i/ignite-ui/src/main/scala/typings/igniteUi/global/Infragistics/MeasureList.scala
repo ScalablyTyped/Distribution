@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.MeasureList")
 @js.native
-class MeasureList ()
+open class MeasureList ()
   extends StObject
      with typings.igniteUi.Infragistics.MeasureList {
   
@@ -24,5 +24,5 @@ class MeasureList ()
     * @param value
     */
   /* CompleteClass */
-  override def measures(value: js.Object): js.Array[js.Any] = js.native
+  override def measures(value: js.Object): js.Array[Any] = js.native
 }

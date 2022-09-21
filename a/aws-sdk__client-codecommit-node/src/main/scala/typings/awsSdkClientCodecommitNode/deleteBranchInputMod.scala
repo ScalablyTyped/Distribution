@@ -8,5 +8,5 @@ object deleteBranchInputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/DeleteBranchInput", "DeleteBranchInput")
   @js.native
-  val DeleteBranchInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteBranchInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

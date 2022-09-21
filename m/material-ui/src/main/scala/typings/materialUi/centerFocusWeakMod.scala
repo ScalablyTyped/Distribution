@@ -10,10 +10,10 @@ object centerFocusWeakMod {
   
   @JSImport("material-ui/svg-icons/image/center-focus-weak", JSImport.Default)
   @js.native
-  class default () extends ImageCenterFocusWeak
+  open class default () extends ImageCenterFocusWeak
   
   @JSImport("material-ui/svg-icons/image/center-focus-weak", "ImageCenterFocusWeak")
   @js.native
-  class ImageCenterFocusWeak ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageCenterFocusWeak ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("react-popper-tooltip", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.reactPopperTooltip.tooltipTriggerMod.default
   object default {
     
@@ -21,10 +21,10 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @JSImport("react-popper-tooltip", "default.defaultProps.closeOnReferenceHidden")
+      @JSImport("react-popper-tooltip", "default.defaultProps.closeOnOutOfBoundaries")
       @js.native
-      def closeOnReferenceHidden: Boolean = js.native
-      inline def closeOnReferenceHidden_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeOnReferenceHidden")(x.asInstanceOf[js.Any])
+      def closeOnOutOfBoundaries: Boolean = js.native
+      inline def closeOnOutOfBoundaries_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeOnOutOfBoundaries")(x.asInstanceOf[js.Any])
       
       @JSImport("react-popper-tooltip", "default.defaultProps.defaultTooltipShown")
       @js.native
@@ -45,11 +45,6 @@ object mod {
       @js.native
       def followCursor: Boolean = js.native
       inline def followCursor_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("followCursor")(x.asInstanceOf[js.Any])
-      
-      @JSImport("react-popper-tooltip", "default.defaultProps.modifiers")
-      @js.native
-      def modifiers: js.Array[scala.Nothing] = js.native
-      inline def modifiers_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modifiers")(x.asInstanceOf[js.Any])
       
       @JSImport("react-popper-tooltip", "default.defaultProps.mutationObserverOptions")
       @js.native

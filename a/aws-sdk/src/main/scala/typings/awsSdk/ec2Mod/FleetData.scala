@@ -12,14 +12,19 @@ trait FleetData extends StObject {
   var ActivityStatus: js.UndefOr[FleetActivityStatus] = js.undefined
   
   /**
-    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency. Constraints: Maximum 64 ASCII characters
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see Ensuring idempotency. Constraints: Maximum 64 ASCII characters
     */
   var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
+    * Reserved.
+    */
+  var Context: js.UndefOr[String] = js.undefined
+  
+  /**
     * The creation date and time of the EC2 Fleet.
     */
-  var CreateTime: js.UndefOr[DateTime] = js.undefined
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Information about the instances that could not be launched by the fleet. Valid only when Type is set to instant.
@@ -67,7 +72,7 @@ trait FleetData extends StObject {
   var OnDemandOptions: js.UndefOr[typings.awsSdk.ec2Mod.OnDemandOptions] = js.undefined
   
   /**
-    * Indicates whether EC2 Fleet should replace unhealthy instances.
+    * Indicates whether EC2 Fleet should replace unhealthy Spot Instances. Supported only for fleets of type maintain. For more information, see EC2 Fleet health checks in the Amazon EC2 User Guide.
     */
   var ReplaceUnhealthyInstances: js.UndefOr[Boolean] = js.undefined
   
@@ -99,12 +104,12 @@ trait FleetData extends StObject {
   /**
     * The start date and time of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). The default is to start fulfilling the request immediately. 
     */
-  var ValidFrom: js.UndefOr[DateTime] = js.undefined
+  var ValidFrom: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The end date and time of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). At this point, no new instance requests are placed or able to fulfill the request. The default end date is 7 days from the current date. 
     */
-  var ValidUntil: js.UndefOr[DateTime] = js.undefined
+  var ValidUntil: js.UndefOr[js.Date] = js.undefined
 }
 object FleetData {
   
@@ -123,7 +128,11 @@ object FleetData {
     
     inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    inline def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+    
+    inline def setContextUndefined: Self = StObject.set(x, "Context", js.undefined)
+    
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
@@ -131,7 +140,7 @@ object FleetData {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: DescribeFleetError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: DescribeFleetError*): Self = StObject.set(x, "Errors", js.Array(value*))
     
     inline def setExcessCapacityTerminationPolicy(value: FleetExcessCapacityTerminationPolicy): Self = StObject.set(x, "ExcessCapacityTerminationPolicy", value.asInstanceOf[js.Any])
     
@@ -157,13 +166,13 @@ object FleetData {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    inline def setInstancesVarargs(value: DescribeFleetsInstances*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: DescribeFleetsInstances*): Self = StObject.set(x, "Instances", js.Array(value*))
     
     inline def setLaunchTemplateConfigs(value: FleetLaunchTemplateConfigList): Self = StObject.set(x, "LaunchTemplateConfigs", value.asInstanceOf[js.Any])
     
     inline def setLaunchTemplateConfigsUndefined: Self = StObject.set(x, "LaunchTemplateConfigs", js.undefined)
     
-    inline def setLaunchTemplateConfigsVarargs(value: FleetLaunchTemplateConfig*): Self = StObject.set(x, "LaunchTemplateConfigs", js.Array(value :_*))
+    inline def setLaunchTemplateConfigsVarargs(value: FleetLaunchTemplateConfig*): Self = StObject.set(x, "LaunchTemplateConfigs", js.Array(value*))
     
     inline def setOnDemandOptions(value: OnDemandOptions): Self = StObject.set(x, "OnDemandOptions", value.asInstanceOf[js.Any])
     
@@ -181,7 +190,7 @@ object FleetData {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTargetCapacitySpecification(value: TargetCapacitySpecification): Self = StObject.set(x, "TargetCapacitySpecification", value.asInstanceOf[js.Any])
     
@@ -195,11 +204,11 @@ object FleetData {
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    inline def setValidFrom(value: DateTime): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
+    inline def setValidFrom(value: js.Date): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
     
     inline def setValidFromUndefined: Self = StObject.set(x, "ValidFrom", js.undefined)
     
-    inline def setValidUntil(value: DateTime): Self = StObject.set(x, "ValidUntil", value.asInstanceOf[js.Any])
+    inline def setValidUntil(value: js.Date): Self = StObject.set(x, "ValidUntil", value.asInstanceOf[js.Any])
     
     inline def setValidUntilUndefined: Self = StObject.set(x, "ValidUntil", js.undefined)
   }

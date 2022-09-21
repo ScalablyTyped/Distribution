@@ -1,20 +1,17 @@
 package typings.grommet.anon
 
-import typings.grommet.baseMod.ExtendProps
-import typings.grommet.baseMod.ExtendType
-import typings.grommet.baseMod.ExtendValue
-import typings.std.Record
+import typings.grommet.utilsMod.OpacityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Thumb extends StObject {
   
-  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
+  var opacity: js.UndefOr[OpacityType] = js.undefined
   
-  var thumb: js.UndefOr[`3`] = js.undefined
+  var thumb: js.UndefOr[`4`] = js.undefined
   
-  var track: js.UndefOr[Upper] = js.undefined
+  var track: js.UndefOr[`4`] = js.undefined
 }
 object Thumb {
   
@@ -25,17 +22,15 @@ object Thumb {
   
   extension [Self <: Thumb](x: Self) {
     
-    inline def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: OpacityType): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
-    
-    inline def setThumb(value: `3`): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+    inline def setThumb(value: `4`): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
     
     inline def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
     
-    inline def setTrack(value: Upper): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: `4`): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
   }

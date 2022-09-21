@@ -5,13 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new ScriptComponentSystem.
-  * @param app - The application.
+  * Allows scripts to be attached to an Entity and executed.
+  *
+  * @augments ComponentSystem
   */
 @JSGlobal("pc.ScriptComponentSystem")
 @js.native
-class ScriptComponentSystem protected ()
-  extends StObject
-     with typings.playcanvas.pc.EventHandler {
-  def this(app: typings.playcanvas.pc.Application) = this()
+open class ScriptComponentSystem protected ()
+  extends typings.playcanvas.mod.ScriptComponentSystem {
+  /**
+    * Create a new ComponentSystem instance.
+    *
+    * @param {AppBase} app - The application managing this system.
+    */
+  def this(app: typings.playcanvas.mod.AppBase) = this()
 }

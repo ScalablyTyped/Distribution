@@ -13,7 +13,6 @@ import typings.std.EventTarget
 import typings.std.FocusEvent
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent
-import typings.std.MediaStreamErrorEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
 import typings.std.ProgressEvent
@@ -75,7 +74,7 @@ object mod {
   
   @JSImport("@lumino/virtualdom", "VirtualElement")
   @js.native
-  class VirtualElement protected ()
+  open class VirtualElement protected ()
     extends StObject
        with VirtualNode {
     /**
@@ -180,7 +179,7 @@ object mod {
   
   @JSImport("@lumino/virtualdom", "VirtualElementPass")
   @js.native
-  class VirtualElementPass protected () extends VirtualElement {
+  open class VirtualElementPass protected () extends VirtualElement {
     /**
       * DEPRECATED - use VirtualElement with a defined renderer param instead
       *
@@ -217,7 +216,7 @@ object mod {
   
   @JSImport("@lumino/virtualdom", "VirtualText")
   @js.native
-  class VirtualText protected ()
+  open class VirtualText protected ()
     extends StObject
        with VirtualNode {
     /**
@@ -243,10 +242,10 @@ object mod {
   
   object h {
     
-    inline def apply(tag: String, attrs: ElementAttrs, children: Child*): VirtualElement = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
-    inline def apply(tag: String, attrs: ElementAttrs, renderer: IRenderer, children: Child*): VirtualElement = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], renderer.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
-    inline def apply(tag: String, children: Child*): VirtualElement = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
-    inline def apply(tag: String, renderer: IRenderer, children: Child*): VirtualElement = (^.asInstanceOf[js.Dynamic].apply(tag.asInstanceOf[js.Any], renderer.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VirtualElement]
+    inline def apply(tag: String, attrs: ElementAttrs, children: Child*): VirtualElement = (^.asInstanceOf[js.Dynamic].apply((List(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
+    inline def apply(tag: String, attrs: ElementAttrs, renderer: IRenderer, children: Child*): VirtualElement = (^.asInstanceOf[js.Dynamic].apply((List(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], renderer.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
+    inline def apply(tag: String, children: Child*): VirtualElement = ^.asInstanceOf[js.Dynamic].apply(List(tag.asInstanceOf[js.Any]).`++`(children.asInstanceOf[Seq[js.Any]])*).asInstanceOf[VirtualElement]
+    inline def apply(tag: String, renderer: IRenderer, children: Child*): VirtualElement = (^.asInstanceOf[js.Dynamic].apply((List(tag.asInstanceOf[js.Any], renderer.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VirtualElement]
     
     @JSImport("@lumino/virtualdom", "h")
     @js.native
@@ -666,6 +665,159 @@ object mod {
     renderer: typings.luminoVirtualdom.mod.VirtualElementPass.IRenderer
   ): VirtualElementPass = (^.asInstanceOf[js.Dynamic].applyDynamic("hpass")(tag.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], renderer.asInstanceOf[js.Any])).asInstanceOf[VirtualElementPass]
   inline def hpass(tag: String, renderer: typings.luminoVirtualdom.mod.VirtualElementPass.IRenderer): VirtualElementPass = (^.asInstanceOf[js.Dynamic].applyDynamic("hpass")(tag.asInstanceOf[js.Any], renderer.asInstanceOf[js.Any])).asInstanceOf[VirtualElementPass]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-activedescendant`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-atomic`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-autocomplete`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-busy`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-checked`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-colcount`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-colindex`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-colspan`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-controls`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-current`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-describedby`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-details`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-dialog`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-disabled`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-dropeffect`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-errormessage`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-expanded`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-flowto`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-grabbed`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-haspopup`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-hidden`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-invalid`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-keyshortcuts`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-label`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-labelledby`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-level`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-live`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-multiline`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-multiselectable`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-orientation`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-owns`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-placeholder`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-posinset`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-pressed`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-readonly`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-relevant`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-required`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-roledescription`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-rowcount`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-rowindex`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-rowspan`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-selected`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-setsize`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-sort`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-valuemax`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-valuemin`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-valuenow`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-valuetext`
+    - typings.luminoVirtualdom.luminoVirtualdomStrings.role
+  */
+  trait ARIAAttrNames extends StObject
+  object ARIAAttrNames {
+    
+    inline def `aria-activedescendant`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-activedescendant` = "aria-activedescendant".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-activedescendant`]
+    
+    inline def `aria-atomic`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-atomic` = "aria-atomic".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-atomic`]
+    
+    inline def `aria-autocomplete`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-autocomplete` = "aria-autocomplete".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-autocomplete`]
+    
+    inline def `aria-busy`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-busy` = "aria-busy".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-busy`]
+    
+    inline def `aria-checked`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-checked` = "aria-checked".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-checked`]
+    
+    inline def `aria-colcount`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-colcount` = "aria-colcount".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-colcount`]
+    
+    inline def `aria-colindex`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-colindex` = "aria-colindex".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-colindex`]
+    
+    inline def `aria-colspan`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-colspan` = "aria-colspan".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-colspan`]
+    
+    inline def `aria-controls`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-controls` = "aria-controls".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-controls`]
+    
+    inline def `aria-current`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-current` = "aria-current".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-current`]
+    
+    inline def `aria-describedby`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-describedby` = "aria-describedby".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-describedby`]
+    
+    inline def `aria-details`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-details` = "aria-details".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-details`]
+    
+    inline def `aria-dialog`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-dialog` = "aria-dialog".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-dialog`]
+    
+    inline def `aria-disabled`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-disabled` = "aria-disabled".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-disabled`]
+    
+    inline def `aria-dropeffect`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-dropeffect` = "aria-dropeffect".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-dropeffect`]
+    
+    inline def `aria-errormessage`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-errormessage` = "aria-errormessage".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-errormessage`]
+    
+    inline def `aria-expanded`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-expanded` = "aria-expanded".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-expanded`]
+    
+    inline def `aria-flowto`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-flowto` = "aria-flowto".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-flowto`]
+    
+    inline def `aria-grabbed`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-grabbed` = "aria-grabbed".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-grabbed`]
+    
+    inline def `aria-haspopup`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-haspopup` = "aria-haspopup".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-haspopup`]
+    
+    inline def `aria-hidden`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-hidden` = "aria-hidden".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-hidden`]
+    
+    inline def `aria-invalid`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-invalid` = "aria-invalid".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-invalid`]
+    
+    inline def `aria-keyshortcuts`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-keyshortcuts` = "aria-keyshortcuts".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-keyshortcuts`]
+    
+    inline def `aria-label`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-label` = "aria-label".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-label`]
+    
+    inline def `aria-labelledby`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-labelledby` = "aria-labelledby".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-labelledby`]
+    
+    inline def `aria-level`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-level` = "aria-level".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-level`]
+    
+    inline def `aria-live`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-live` = "aria-live".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-live`]
+    
+    inline def `aria-multiline`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-multiline` = "aria-multiline".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-multiline`]
+    
+    inline def `aria-multiselectable`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-multiselectable` = "aria-multiselectable".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-multiselectable`]
+    
+    inline def `aria-orientation`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-orientation` = "aria-orientation".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-orientation`]
+    
+    inline def `aria-owns`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-owns` = "aria-owns".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-owns`]
+    
+    inline def `aria-placeholder`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-placeholder` = "aria-placeholder".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-placeholder`]
+    
+    inline def `aria-posinset`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-posinset` = "aria-posinset".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-posinset`]
+    
+    inline def `aria-pressed`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-pressed` = "aria-pressed".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-pressed`]
+    
+    inline def `aria-readonly`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-readonly` = "aria-readonly".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-readonly`]
+    
+    inline def `aria-relevant`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-relevant` = "aria-relevant".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-relevant`]
+    
+    inline def `aria-required`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-required` = "aria-required".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-required`]
+    
+    inline def `aria-roledescription`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-roledescription` = "aria-roledescription".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-roledescription`]
+    
+    inline def `aria-rowcount`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-rowcount` = "aria-rowcount".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-rowcount`]
+    
+    inline def `aria-rowindex`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-rowindex` = "aria-rowindex".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-rowindex`]
+    
+    inline def `aria-rowspan`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-rowspan` = "aria-rowspan".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-rowspan`]
+    
+    inline def `aria-selected`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-selected` = "aria-selected".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-selected`]
+    
+    inline def `aria-setsize`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-setsize` = "aria-setsize".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-setsize`]
+    
+    inline def `aria-sort`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-sort` = "aria-sort".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-sort`]
+    
+    inline def `aria-valuemax`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-valuemax` = "aria-valuemax".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-valuemax`]
+    
+    inline def `aria-valuemin`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-valuemin` = "aria-valuemin".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-valuemin`]
+    
+    inline def `aria-valuenow`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-valuenow` = "aria-valuenow".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-valuenow`]
+    
+    inline def `aria-valuetext`: typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-valuetext` = "aria-valuetext".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.`aria-valuetext`]
+    
+    inline def role: typings.luminoVirtualdom.luminoVirtualdomStrings.role = "role".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.role]
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.luminoVirtualdom.luminoVirtualdomStrings.alignContent
@@ -1666,6 +1818,314 @@ object mod {
     inline def zoom: typings.luminoVirtualdom.luminoVirtualdomStrings.zoom = "zoom".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.zoom]
   }
   
+  /* Inlined {readonly [ T in @lumino/virtualdom.@lumino/virtualdom.ARIAAttrNames ]:? string} */
+  trait ElementARIAAttrs extends StObject {
+    
+    val `aria-activedescendant`: js.UndefOr[String] = js.undefined
+    
+    val `aria-atomic`: js.UndefOr[String] = js.undefined
+    
+    val `aria-autocomplete`: js.UndefOr[String] = js.undefined
+    
+    val `aria-busy`: js.UndefOr[String] = js.undefined
+    
+    val `aria-checked`: js.UndefOr[String] = js.undefined
+    
+    val `aria-colcount`: js.UndefOr[String] = js.undefined
+    
+    val `aria-colindex`: js.UndefOr[String] = js.undefined
+    
+    val `aria-colspan`: js.UndefOr[String] = js.undefined
+    
+    val `aria-controls`: js.UndefOr[String] = js.undefined
+    
+    val `aria-current`: js.UndefOr[String] = js.undefined
+    
+    val `aria-describedby`: js.UndefOr[String] = js.undefined
+    
+    val `aria-details`: js.UndefOr[String] = js.undefined
+    
+    val `aria-dialog`: js.UndefOr[String] = js.undefined
+    
+    val `aria-disabled`: js.UndefOr[String] = js.undefined
+    
+    val `aria-dropeffect`: js.UndefOr[String] = js.undefined
+    
+    val `aria-errormessage`: js.UndefOr[String] = js.undefined
+    
+    val `aria-expanded`: js.UndefOr[String] = js.undefined
+    
+    val `aria-flowto`: js.UndefOr[String] = js.undefined
+    
+    val `aria-grabbed`: js.UndefOr[String] = js.undefined
+    
+    val `aria-haspopup`: js.UndefOr[String] = js.undefined
+    
+    val `aria-hidden`: js.UndefOr[String] = js.undefined
+    
+    val `aria-invalid`: js.UndefOr[String] = js.undefined
+    
+    val `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
+    
+    val `aria-label`: js.UndefOr[String] = js.undefined
+    
+    val `aria-labelledby`: js.UndefOr[String] = js.undefined
+    
+    val `aria-level`: js.UndefOr[String] = js.undefined
+    
+    val `aria-live`: js.UndefOr[String] = js.undefined
+    
+    val `aria-multiline`: js.UndefOr[String] = js.undefined
+    
+    val `aria-multiselectable`: js.UndefOr[String] = js.undefined
+    
+    val `aria-orientation`: js.UndefOr[String] = js.undefined
+    
+    val `aria-owns`: js.UndefOr[String] = js.undefined
+    
+    val `aria-placeholder`: js.UndefOr[String] = js.undefined
+    
+    val `aria-posinset`: js.UndefOr[String] = js.undefined
+    
+    val `aria-pressed`: js.UndefOr[String] = js.undefined
+    
+    val `aria-readonly`: js.UndefOr[String] = js.undefined
+    
+    val `aria-relevant`: js.UndefOr[String] = js.undefined
+    
+    val `aria-required`: js.UndefOr[String] = js.undefined
+    
+    val `aria-roledescription`: js.UndefOr[String] = js.undefined
+    
+    val `aria-rowcount`: js.UndefOr[String] = js.undefined
+    
+    val `aria-rowindex`: js.UndefOr[String] = js.undefined
+    
+    val `aria-rowspan`: js.UndefOr[String] = js.undefined
+    
+    val `aria-selected`: js.UndefOr[String] = js.undefined
+    
+    val `aria-setsize`: js.UndefOr[String] = js.undefined
+    
+    val `aria-sort`: js.UndefOr[String] = js.undefined
+    
+    val `aria-valuemax`: js.UndefOr[String] = js.undefined
+    
+    val `aria-valuemin`: js.UndefOr[String] = js.undefined
+    
+    val `aria-valuenow`: js.UndefOr[String] = js.undefined
+    
+    val `aria-valuetext`: js.UndefOr[String] = js.undefined
+    
+    val role: js.UndefOr[String] = js.undefined
+  }
+  object ElementARIAAttrs {
+    
+    inline def apply(): ElementARIAAttrs = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ElementARIAAttrs]
+    }
+    
+    extension [Self <: ElementARIAAttrs](x: Self) {
+      
+      inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
+      
+      inline def `setAria-atomic`(value: String): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
+      
+      inline def `setAria-autocomplete`(value: String): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
+      
+      inline def `setAria-busy`(value: String): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
+      
+      inline def `setAria-checked`(value: String): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
+      
+      inline def `setAria-colcount`(value: String): Self = StObject.set(x, "aria-colcount", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-colcountUndefined`: Self = StObject.set(x, "aria-colcount", js.undefined)
+      
+      inline def `setAria-colindex`(value: String): Self = StObject.set(x, "aria-colindex", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
+      
+      inline def `setAria-colspan`(value: String): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-colspanUndefined`: Self = StObject.set(x, "aria-colspan", js.undefined)
+      
+      inline def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
+      
+      inline def `setAria-current`(value: String): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
+      
+      inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
+      
+      inline def `setAria-details`(value: String): Self = StObject.set(x, "aria-details", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
+      
+      inline def `setAria-dialog`(value: String): Self = StObject.set(x, "aria-dialog", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-dialogUndefined`: Self = StObject.set(x, "aria-dialog", js.undefined)
+      
+      inline def `setAria-disabled`(value: String): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
+      
+      inline def `setAria-dropeffect`(value: String): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
+      
+      inline def `setAria-errormessage`(value: String): Self = StObject.set(x, "aria-errormessage", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
+      
+      inline def `setAria-expanded`(value: String): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
+      
+      inline def `setAria-flowto`(value: String): Self = StObject.set(x, "aria-flowto", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
+      
+      inline def `setAria-grabbed`(value: String): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
+      
+      inline def `setAria-haspopup`(value: String): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
+      
+      inline def `setAria-hidden`(value: String): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
+      
+      inline def `setAria-invalid`(value: String): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
+      
+      inline def `setAria-keyshortcuts`(value: String): Self = StObject.set(x, "aria-keyshortcuts", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-keyshortcutsUndefined`: Self = StObject.set(x, "aria-keyshortcuts", js.undefined)
+      
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      
+      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+      
+      inline def `setAria-level`(value: String): Self = StObject.set(x, "aria-level", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
+      
+      inline def `setAria-live`(value: String): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
+      
+      inline def `setAria-multiline`(value: String): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
+      
+      inline def `setAria-multiselectable`(value: String): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
+      
+      inline def `setAria-orientation`(value: String): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
+      
+      inline def `setAria-owns`(value: String): Self = StObject.set(x, "aria-owns", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-ownsUndefined`: Self = StObject.set(x, "aria-owns", js.undefined)
+      
+      inline def `setAria-placeholder`(value: String): Self = StObject.set(x, "aria-placeholder", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-placeholderUndefined`: Self = StObject.set(x, "aria-placeholder", js.undefined)
+      
+      inline def `setAria-posinset`(value: String): Self = StObject.set(x, "aria-posinset", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
+      
+      inline def `setAria-pressed`(value: String): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
+      
+      inline def `setAria-readonly`(value: String): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
+      
+      inline def `setAria-relevant`(value: String): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
+      
+      inline def `setAria-required`(value: String): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
+      
+      inline def `setAria-roledescription`(value: String): Self = StObject.set(x, "aria-roledescription", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-roledescriptionUndefined`: Self = StObject.set(x, "aria-roledescription", js.undefined)
+      
+      inline def `setAria-rowcount`(value: String): Self = StObject.set(x, "aria-rowcount", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-rowcountUndefined`: Self = StObject.set(x, "aria-rowcount", js.undefined)
+      
+      inline def `setAria-rowindex`(value: String): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
+      
+      inline def `setAria-rowspan`(value: String): Self = StObject.set(x, "aria-rowspan", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
+      
+      inline def `setAria-selected`(value: String): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
+      
+      inline def `setAria-setsize`(value: String): Self = StObject.set(x, "aria-setsize", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
+      
+      inline def `setAria-sort`(value: String): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
+      
+      inline def `setAria-valuemax`(value: String): Self = StObject.set(x, "aria-valuemax", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valuemaxUndefined`: Self = StObject.set(x, "aria-valuemax", js.undefined)
+      
+      inline def `setAria-valuemin`(value: String): Self = StObject.set(x, "aria-valuemin", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valueminUndefined`: Self = StObject.set(x, "aria-valuemin", js.undefined)
+      
+      inline def `setAria-valuenow`(value: String): Self = StObject.set(x, "aria-valuenow", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valuenowUndefined`: Self = StObject.set(x, "aria-valuenow", js.undefined)
+      
+      inline def `setAria-valuetext`(value: String): Self = StObject.set(x, "aria-valuetext", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
+      
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    }
+  }
+  
   /* Rewritten from type alias, can be one of: 
     - typings.luminoVirtualdom.luminoVirtualdomStrings.abbr
     - typings.luminoVirtualdom.luminoVirtualdomStrings.accept
@@ -1960,7 +2420,7 @@ object mod {
     inline def wrap: typings.luminoVirtualdom.luminoVirtualdomStrings.wrap = "wrap".asInstanceOf[typings.luminoVirtualdom.luminoVirtualdomStrings.wrap]
   }
   
-  /* Inlined @lumino/virtualdom.@lumino/virtualdom.ElementBaseAttrs & @lumino/virtualdom.@lumino/virtualdom.ElementEventAttrs & @lumino/virtualdom.@lumino/virtualdom.ElementSpecialAttrs */
+  /* Inlined @lumino/virtualdom.@lumino/virtualdom.ElementBaseAttrs & @lumino/virtualdom.@lumino/virtualdom.ElementARIAAttrs & @lumino/virtualdom.@lumino/virtualdom.ElementEventAttrs & @lumino/virtualdom.@lumino/virtualdom.ElementSpecialAttrs */
   trait ElementAttrs extends StObject {
     
     val default: js.UndefOr[String] = js.undefined
@@ -1978,6 +2438,102 @@ object mod {
     val allowfullscreen: js.UndefOr[String] = js.undefined
     
     val alt: js.UndefOr[String] = js.undefined
+    
+    val `aria-activedescendant`: js.UndefOr[String] = js.undefined
+    
+    val `aria-atomic`: js.UndefOr[String] = js.undefined
+    
+    val `aria-autocomplete`: js.UndefOr[String] = js.undefined
+    
+    val `aria-busy`: js.UndefOr[String] = js.undefined
+    
+    val `aria-checked`: js.UndefOr[String] = js.undefined
+    
+    val `aria-colcount`: js.UndefOr[String] = js.undefined
+    
+    val `aria-colindex`: js.UndefOr[String] = js.undefined
+    
+    val `aria-colspan`: js.UndefOr[String] = js.undefined
+    
+    val `aria-controls`: js.UndefOr[String] = js.undefined
+    
+    val `aria-current`: js.UndefOr[String] = js.undefined
+    
+    val `aria-describedby`: js.UndefOr[String] = js.undefined
+    
+    val `aria-details`: js.UndefOr[String] = js.undefined
+    
+    val `aria-dialog`: js.UndefOr[String] = js.undefined
+    
+    val `aria-disabled`: js.UndefOr[String] = js.undefined
+    
+    val `aria-dropeffect`: js.UndefOr[String] = js.undefined
+    
+    val `aria-errormessage`: js.UndefOr[String] = js.undefined
+    
+    val `aria-expanded`: js.UndefOr[String] = js.undefined
+    
+    val `aria-flowto`: js.UndefOr[String] = js.undefined
+    
+    val `aria-grabbed`: js.UndefOr[String] = js.undefined
+    
+    val `aria-haspopup`: js.UndefOr[String] = js.undefined
+    
+    val `aria-hidden`: js.UndefOr[String] = js.undefined
+    
+    val `aria-invalid`: js.UndefOr[String] = js.undefined
+    
+    val `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
+    
+    val `aria-label`: js.UndefOr[String] = js.undefined
+    
+    val `aria-labelledby`: js.UndefOr[String] = js.undefined
+    
+    val `aria-level`: js.UndefOr[String] = js.undefined
+    
+    val `aria-live`: js.UndefOr[String] = js.undefined
+    
+    val `aria-multiline`: js.UndefOr[String] = js.undefined
+    
+    val `aria-multiselectable`: js.UndefOr[String] = js.undefined
+    
+    val `aria-orientation`: js.UndefOr[String] = js.undefined
+    
+    val `aria-owns`: js.UndefOr[String] = js.undefined
+    
+    val `aria-placeholder`: js.UndefOr[String] = js.undefined
+    
+    val `aria-posinset`: js.UndefOr[String] = js.undefined
+    
+    val `aria-pressed`: js.UndefOr[String] = js.undefined
+    
+    val `aria-readonly`: js.UndefOr[String] = js.undefined
+    
+    val `aria-relevant`: js.UndefOr[String] = js.undefined
+    
+    val `aria-required`: js.UndefOr[String] = js.undefined
+    
+    val `aria-roledescription`: js.UndefOr[String] = js.undefined
+    
+    val `aria-rowcount`: js.UndefOr[String] = js.undefined
+    
+    val `aria-rowindex`: js.UndefOr[String] = js.undefined
+    
+    val `aria-rowspan`: js.UndefOr[String] = js.undefined
+    
+    val `aria-selected`: js.UndefOr[String] = js.undefined
+    
+    val `aria-setsize`: js.UndefOr[String] = js.undefined
+    
+    val `aria-sort`: js.UndefOr[String] = js.undefined
+    
+    val `aria-valuemax`: js.UndefOr[String] = js.undefined
+    
+    val `aria-valuemin`: js.UndefOr[String] = js.undefined
+    
+    val `aria-valuenow`: js.UndefOr[String] = js.undefined
+    
+    val `aria-valuetext`: js.UndefOr[String] = js.undefined
     
     val autocomplete: js.UndefOr[String] = js.undefined
     
@@ -2116,147 +2672,145 @@ object mod {
     
     val novalidate: js.UndefOr[String] = js.undefined
     
-    val onabort: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, js.Any]] = js.undefined
+    val onabort: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, Any]] = js.undefined
     
-    val onauxclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onauxclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onblur: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, js.Any]] = js.undefined
+    val onblur: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, Any]] = js.undefined
     
-    val oncanplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val oncanplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val oncanplaythrough: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val oncanplaythrough: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val oncontextmenu: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val oncontextmenu: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val oncopy: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, js.Any]] = js.undefined
+    val oncopy: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, Any]] = js.undefined
     
-    val oncuechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val oncuechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val oncut: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, js.Any]] = js.undefined
+    val oncut: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, Any]] = js.undefined
     
-    val ondblclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val ondblclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val ondrag: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondrag: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondragend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondragend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondragenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondragenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondragexit: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondragexit: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondragleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondragleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondragover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondragover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondragstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondragstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondrop: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondrop: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondurationchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val ondurationchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onemptied: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onemptied: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onended: js.UndefOr[
-        js.ThisFunction1[/* this */ HTMLElement, /* event */ MediaStreamErrorEvent, js.Any]
-      ] = js.undefined
+    val onended: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, Any]] = js.undefined
     
-    val onerror: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, js.Any]] = js.undefined
+    val onerror: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, Any]] = js.undefined
     
-    val onfocus: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, js.Any]] = js.undefined
+    val onfocus: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, Any]] = js.undefined
     
-    val oninput: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val oninput: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val oninvalid: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val oninvalid: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onkeydown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, js.Any]] = js.undefined
+    val onkeydown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, Any]] = js.undefined
     
-    val onkeypress: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, js.Any]] = js.undefined
+    val onkeypress: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, Any]] = js.undefined
     
-    val onkeyup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, js.Any]] = js.undefined
+    val onkeyup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, Any]] = js.undefined
     
-    val onload: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onload: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onloadeddata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onloadeddata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onloadedmetadata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onloadedmetadata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onloadend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onloadend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onloadstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onloadstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onmousedown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onmousedown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onmouseenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onmouseenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onmouseleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onmouseleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onmousemove: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onmousemove: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onmouseout: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onmouseout: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onmouseover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onmouseover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onmouseup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onmouseup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onmousewheel: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ WheelEvent, js.Any]] = js.undefined
+    val onmousewheel: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ WheelEvent, Any]] = js.undefined
     
-    val onpaste: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, js.Any]] = js.undefined
+    val onpaste: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, Any]] = js.undefined
     
-    val onpause: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onpause: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onplaying: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onplaying: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onpointercancel: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointercancel: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val onpointerdown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointerdown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val onpointerenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointerenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val onpointerleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointerleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val onpointermove: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointermove: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val onpointerout: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointerout: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val onpointerover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointerover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val onpointerup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointerup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
     val onprogress: js.UndefOr[
-        js.ThisFunction1[/* this */ HTMLElement, /* event */ ProgressEvent[EventTarget], js.Any]
+        js.ThisFunction1[/* this */ HTMLElement, /* event */ ProgressEvent[EventTarget], Any]
       ] = js.undefined
     
-    val onratechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onratechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onreset: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onreset: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onscroll: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, js.Any]] = js.undefined
+    val onscroll: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, Any]] = js.undefined
     
-    val onseeked: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onseeked: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onseeking: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onseeking: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onselect: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, js.Any]] = js.undefined
+    val onselect: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, Any]] = js.undefined
     
-    val onselectstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onselectstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onstalled: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onstalled: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onsubmit: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onsubmit: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onsuspend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onsuspend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val ontimeupdate: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val ontimeupdate: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onvolumechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onvolumechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onwaiting: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onwaiting: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
     val optimum: js.UndefOr[String] = js.undefined
     
@@ -2275,6 +2829,8 @@ object mod {
     val required: js.UndefOr[String] = js.undefined
     
     val reversed: js.UndefOr[String] = js.undefined
+    
+    val role: js.UndefOr[String] = js.undefined
     
     val rows: js.UndefOr[String] = js.undefined
     
@@ -2367,6 +2923,198 @@ object mod {
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
       inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      
+      inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
+      
+      inline def `setAria-atomic`(value: String): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
+      
+      inline def `setAria-autocomplete`(value: String): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
+      
+      inline def `setAria-busy`(value: String): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
+      
+      inline def `setAria-checked`(value: String): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
+      
+      inline def `setAria-colcount`(value: String): Self = StObject.set(x, "aria-colcount", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-colcountUndefined`: Self = StObject.set(x, "aria-colcount", js.undefined)
+      
+      inline def `setAria-colindex`(value: String): Self = StObject.set(x, "aria-colindex", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
+      
+      inline def `setAria-colspan`(value: String): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-colspanUndefined`: Self = StObject.set(x, "aria-colspan", js.undefined)
+      
+      inline def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
+      
+      inline def `setAria-current`(value: String): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
+      
+      inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
+      
+      inline def `setAria-details`(value: String): Self = StObject.set(x, "aria-details", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
+      
+      inline def `setAria-dialog`(value: String): Self = StObject.set(x, "aria-dialog", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-dialogUndefined`: Self = StObject.set(x, "aria-dialog", js.undefined)
+      
+      inline def `setAria-disabled`(value: String): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
+      
+      inline def `setAria-dropeffect`(value: String): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
+      
+      inline def `setAria-errormessage`(value: String): Self = StObject.set(x, "aria-errormessage", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
+      
+      inline def `setAria-expanded`(value: String): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
+      
+      inline def `setAria-flowto`(value: String): Self = StObject.set(x, "aria-flowto", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
+      
+      inline def `setAria-grabbed`(value: String): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
+      
+      inline def `setAria-haspopup`(value: String): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
+      
+      inline def `setAria-hidden`(value: String): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
+      
+      inline def `setAria-invalid`(value: String): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
+      
+      inline def `setAria-keyshortcuts`(value: String): Self = StObject.set(x, "aria-keyshortcuts", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-keyshortcutsUndefined`: Self = StObject.set(x, "aria-keyshortcuts", js.undefined)
+      
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      
+      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+      
+      inline def `setAria-level`(value: String): Self = StObject.set(x, "aria-level", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
+      
+      inline def `setAria-live`(value: String): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
+      
+      inline def `setAria-multiline`(value: String): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
+      
+      inline def `setAria-multiselectable`(value: String): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
+      
+      inline def `setAria-orientation`(value: String): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
+      
+      inline def `setAria-owns`(value: String): Self = StObject.set(x, "aria-owns", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-ownsUndefined`: Self = StObject.set(x, "aria-owns", js.undefined)
+      
+      inline def `setAria-placeholder`(value: String): Self = StObject.set(x, "aria-placeholder", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-placeholderUndefined`: Self = StObject.set(x, "aria-placeholder", js.undefined)
+      
+      inline def `setAria-posinset`(value: String): Self = StObject.set(x, "aria-posinset", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
+      
+      inline def `setAria-pressed`(value: String): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
+      
+      inline def `setAria-readonly`(value: String): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
+      
+      inline def `setAria-relevant`(value: String): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
+      
+      inline def `setAria-required`(value: String): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
+      
+      inline def `setAria-roledescription`(value: String): Self = StObject.set(x, "aria-roledescription", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-roledescriptionUndefined`: Self = StObject.set(x, "aria-roledescription", js.undefined)
+      
+      inline def `setAria-rowcount`(value: String): Self = StObject.set(x, "aria-rowcount", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-rowcountUndefined`: Self = StObject.set(x, "aria-rowcount", js.undefined)
+      
+      inline def `setAria-rowindex`(value: String): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
+      
+      inline def `setAria-rowspan`(value: String): Self = StObject.set(x, "aria-rowspan", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
+      
+      inline def `setAria-selected`(value: String): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
+      
+      inline def `setAria-setsize`(value: String): Self = StObject.set(x, "aria-setsize", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
+      
+      inline def `setAria-sort`(value: String): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
+      
+      inline def `setAria-valuemax`(value: String): Self = StObject.set(x, "aria-valuemax", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valuemaxUndefined`: Self = StObject.set(x, "aria-valuemax", js.undefined)
+      
+      inline def `setAria-valuemin`(value: String): Self = StObject.set(x, "aria-valuemin", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valueminUndefined`: Self = StObject.set(x, "aria-valuemin", js.undefined)
+      
+      inline def `setAria-valuenow`(value: String): Self = StObject.set(x, "aria-valuenow", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valuenowUndefined`: Self = StObject.set(x, "aria-valuenow", js.undefined)
+      
+      inline def `setAria-valuetext`(value: String): Self = StObject.set(x, "aria-valuetext", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
       
       inline def setAutocomplete(value: String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
       
@@ -2604,279 +3352,279 @@ object mod {
       
       inline def setNovalidateUndefined: Self = StObject.set(x, "novalidate", js.undefined)
       
-      inline def setOnabort(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, js.Any]): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
+      inline def setOnabort(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, Any]): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
       
       inline def setOnabortUndefined: Self = StObject.set(x, "onabort", js.undefined)
       
-      inline def setOnauxclick(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onauxclick", value.asInstanceOf[js.Any])
+      inline def setOnauxclick(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onauxclick", value.asInstanceOf[js.Any])
       
       inline def setOnauxclickUndefined: Self = StObject.set(x, "onauxclick", js.undefined)
       
-      inline def setOnblur(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, js.Any]): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
+      inline def setOnblur(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, Any]): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
       
       inline def setOnblurUndefined: Self = StObject.set(x, "onblur", js.undefined)
       
-      inline def setOncanplay(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
+      inline def setOncanplay(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
       
       inline def setOncanplayUndefined: Self = StObject.set(x, "oncanplay", js.undefined)
       
-      inline def setOncanplaythrough(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
+      inline def setOncanplaythrough(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
       
       inline def setOncanplaythroughUndefined: Self = StObject.set(x, "oncanplaythrough", js.undefined)
       
-      inline def setOnchange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
+      inline def setOnchange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
       
       inline def setOnchangeUndefined: Self = StObject.set(x, "onchange", js.undefined)
       
-      inline def setOnclick(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
+      inline def setOnclick(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
       
       inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
       
-      inline def setOncontextmenu(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "oncontextmenu", value.asInstanceOf[js.Any])
+      inline def setOncontextmenu(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "oncontextmenu", value.asInstanceOf[js.Any])
       
       inline def setOncontextmenuUndefined: Self = StObject.set(x, "oncontextmenu", js.undefined)
       
-      inline def setOncopy(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, js.Any]): Self = StObject.set(x, "oncopy", value.asInstanceOf[js.Any])
+      inline def setOncopy(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, Any]): Self = StObject.set(x, "oncopy", value.asInstanceOf[js.Any])
       
       inline def setOncopyUndefined: Self = StObject.set(x, "oncopy", js.undefined)
       
-      inline def setOncuechange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "oncuechange", value.asInstanceOf[js.Any])
+      inline def setOncuechange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "oncuechange", value.asInstanceOf[js.Any])
       
       inline def setOncuechangeUndefined: Self = StObject.set(x, "oncuechange", js.undefined)
       
-      inline def setOncut(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, js.Any]): Self = StObject.set(x, "oncut", value.asInstanceOf[js.Any])
+      inline def setOncut(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, Any]): Self = StObject.set(x, "oncut", value.asInstanceOf[js.Any])
       
       inline def setOncutUndefined: Self = StObject.set(x, "oncut", js.undefined)
       
-      inline def setOndblclick(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "ondblclick", value.asInstanceOf[js.Any])
+      inline def setOndblclick(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "ondblclick", value.asInstanceOf[js.Any])
       
       inline def setOndblclickUndefined: Self = StObject.set(x, "ondblclick", js.undefined)
       
-      inline def setOndrag(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
+      inline def setOndrag(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
       
       inline def setOndragUndefined: Self = StObject.set(x, "ondrag", js.undefined)
       
-      inline def setOndragend(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
+      inline def setOndragend(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
       
       inline def setOndragendUndefined: Self = StObject.set(x, "ondragend", js.undefined)
       
-      inline def setOndragenter(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
+      inline def setOndragenter(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
       
       inline def setOndragenterUndefined: Self = StObject.set(x, "ondragenter", js.undefined)
       
-      inline def setOndragexit(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondragexit", value.asInstanceOf[js.Any])
+      inline def setOndragexit(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondragexit", value.asInstanceOf[js.Any])
       
       inline def setOndragexitUndefined: Self = StObject.set(x, "ondragexit", js.undefined)
       
-      inline def setOndragleave(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
+      inline def setOndragleave(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
       
       inline def setOndragleaveUndefined: Self = StObject.set(x, "ondragleave", js.undefined)
       
-      inline def setOndragover(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
+      inline def setOndragover(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
       
       inline def setOndragoverUndefined: Self = StObject.set(x, "ondragover", js.undefined)
       
-      inline def setOndragstart(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondragstart", value.asInstanceOf[js.Any])
+      inline def setOndragstart(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondragstart", value.asInstanceOf[js.Any])
       
       inline def setOndragstartUndefined: Self = StObject.set(x, "ondragstart", js.undefined)
       
-      inline def setOndrop(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
+      inline def setOndrop(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
       
       inline def setOndropUndefined: Self = StObject.set(x, "ondrop", js.undefined)
       
-      inline def setOndurationchange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
+      inline def setOndurationchange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
       
       inline def setOndurationchangeUndefined: Self = StObject.set(x, "ondurationchange", js.undefined)
       
-      inline def setOnemptied(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
+      inline def setOnemptied(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
       
       inline def setOnemptiedUndefined: Self = StObject.set(x, "onemptied", js.undefined)
       
-      inline def setOnended(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MediaStreamErrorEvent, js.Any]): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
+      inline def setOnended(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, Any]): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
       
       inline def setOnendedUndefined: Self = StObject.set(x, "onended", js.undefined)
       
-      inline def setOnerror(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, js.Any]): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
+      inline def setOnerror(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, Any]): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
       
       inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       
-      inline def setOnfocus(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, js.Any]): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
+      inline def setOnfocus(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, Any]): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
       
       inline def setOnfocusUndefined: Self = StObject.set(x, "onfocus", js.undefined)
       
-      inline def setOninput(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
+      inline def setOninput(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
       
       inline def setOninputUndefined: Self = StObject.set(x, "oninput", js.undefined)
       
-      inline def setOninvalid(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "oninvalid", value.asInstanceOf[js.Any])
+      inline def setOninvalid(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "oninvalid", value.asInstanceOf[js.Any])
       
       inline def setOninvalidUndefined: Self = StObject.set(x, "oninvalid", js.undefined)
       
-      inline def setOnkeydown(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeydown", value.asInstanceOf[js.Any])
+      inline def setOnkeydown(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, Any]): Self = StObject.set(x, "onkeydown", value.asInstanceOf[js.Any])
       
       inline def setOnkeydownUndefined: Self = StObject.set(x, "onkeydown", js.undefined)
       
-      inline def setOnkeypress(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeypress", value.asInstanceOf[js.Any])
+      inline def setOnkeypress(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, Any]): Self = StObject.set(x, "onkeypress", value.asInstanceOf[js.Any])
       
       inline def setOnkeypressUndefined: Self = StObject.set(x, "onkeypress", js.undefined)
       
-      inline def setOnkeyup(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
+      inline def setOnkeyup(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, Any]): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
       
       inline def setOnkeyupUndefined: Self = StObject.set(x, "onkeyup", js.undefined)
       
-      inline def setOnload(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
+      inline def setOnload(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
       
       inline def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
       
-      inline def setOnloadeddata(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
+      inline def setOnloadeddata(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
       
       inline def setOnloadeddataUndefined: Self = StObject.set(x, "onloadeddata", js.undefined)
       
-      inline def setOnloadedmetadata(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
+      inline def setOnloadedmetadata(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
       
       inline def setOnloadedmetadataUndefined: Self = StObject.set(x, "onloadedmetadata", js.undefined)
       
-      inline def setOnloadend(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onloadend", value.asInstanceOf[js.Any])
+      inline def setOnloadend(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onloadend", value.asInstanceOf[js.Any])
       
       inline def setOnloadendUndefined: Self = StObject.set(x, "onloadend", js.undefined)
       
-      inline def setOnloadstart(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
+      inline def setOnloadstart(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
       
       inline def setOnloadstartUndefined: Self = StObject.set(x, "onloadstart", js.undefined)
       
-      inline def setOnmousedown(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onmousedown", value.asInstanceOf[js.Any])
+      inline def setOnmousedown(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onmousedown", value.asInstanceOf[js.Any])
       
       inline def setOnmousedownUndefined: Self = StObject.set(x, "onmousedown", js.undefined)
       
-      inline def setOnmouseenter(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseenter", value.asInstanceOf[js.Any])
+      inline def setOnmouseenter(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onmouseenter", value.asInstanceOf[js.Any])
       
       inline def setOnmouseenterUndefined: Self = StObject.set(x, "onmouseenter", js.undefined)
       
-      inline def setOnmouseleave(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseleave", value.asInstanceOf[js.Any])
+      inline def setOnmouseleave(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onmouseleave", value.asInstanceOf[js.Any])
       
       inline def setOnmouseleaveUndefined: Self = StObject.set(x, "onmouseleave", js.undefined)
       
-      inline def setOnmousemove(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onmousemove", value.asInstanceOf[js.Any])
+      inline def setOnmousemove(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onmousemove", value.asInstanceOf[js.Any])
       
       inline def setOnmousemoveUndefined: Self = StObject.set(x, "onmousemove", js.undefined)
       
-      inline def setOnmouseout(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
+      inline def setOnmouseout(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
       
       inline def setOnmouseoutUndefined: Self = StObject.set(x, "onmouseout", js.undefined)
       
-      inline def setOnmouseover(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
+      inline def setOnmouseover(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
       
       inline def setOnmouseoverUndefined: Self = StObject.set(x, "onmouseover", js.undefined)
       
-      inline def setOnmouseup(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseup", value.asInstanceOf[js.Any])
+      inline def setOnmouseup(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onmouseup", value.asInstanceOf[js.Any])
       
       inline def setOnmouseupUndefined: Self = StObject.set(x, "onmouseup", js.undefined)
       
-      inline def setOnmousewheel(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ WheelEvent, js.Any]): Self = StObject.set(x, "onmousewheel", value.asInstanceOf[js.Any])
+      inline def setOnmousewheel(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ WheelEvent, Any]): Self = StObject.set(x, "onmousewheel", value.asInstanceOf[js.Any])
       
       inline def setOnmousewheelUndefined: Self = StObject.set(x, "onmousewheel", js.undefined)
       
-      inline def setOnpaste(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, js.Any]): Self = StObject.set(x, "onpaste", value.asInstanceOf[js.Any])
+      inline def setOnpaste(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, Any]): Self = StObject.set(x, "onpaste", value.asInstanceOf[js.Any])
       
       inline def setOnpasteUndefined: Self = StObject.set(x, "onpaste", js.undefined)
       
-      inline def setOnpause(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
+      inline def setOnpause(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
       
       inline def setOnpauseUndefined: Self = StObject.set(x, "onpause", js.undefined)
       
-      inline def setOnplay(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
+      inline def setOnplay(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
       
       inline def setOnplayUndefined: Self = StObject.set(x, "onplay", js.undefined)
       
-      inline def setOnplaying(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
+      inline def setOnplaying(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
       
       inline def setOnplayingUndefined: Self = StObject.set(x, "onplaying", js.undefined)
       
-      inline def setOnpointercancel(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointercancel", value.asInstanceOf[js.Any])
+      inline def setOnpointercancel(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointercancel", value.asInstanceOf[js.Any])
       
       inline def setOnpointercancelUndefined: Self = StObject.set(x, "onpointercancel", js.undefined)
       
-      inline def setOnpointerdown(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerdown", value.asInstanceOf[js.Any])
+      inline def setOnpointerdown(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointerdown", value.asInstanceOf[js.Any])
       
       inline def setOnpointerdownUndefined: Self = StObject.set(x, "onpointerdown", js.undefined)
       
-      inline def setOnpointerenter(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerenter", value.asInstanceOf[js.Any])
+      inline def setOnpointerenter(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointerenter", value.asInstanceOf[js.Any])
       
       inline def setOnpointerenterUndefined: Self = StObject.set(x, "onpointerenter", js.undefined)
       
-      inline def setOnpointerleave(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerleave", value.asInstanceOf[js.Any])
+      inline def setOnpointerleave(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointerleave", value.asInstanceOf[js.Any])
       
       inline def setOnpointerleaveUndefined: Self = StObject.set(x, "onpointerleave", js.undefined)
       
-      inline def setOnpointermove(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointermove", value.asInstanceOf[js.Any])
+      inline def setOnpointermove(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointermove", value.asInstanceOf[js.Any])
       
       inline def setOnpointermoveUndefined: Self = StObject.set(x, "onpointermove", js.undefined)
       
-      inline def setOnpointerout(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerout", value.asInstanceOf[js.Any])
+      inline def setOnpointerout(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointerout", value.asInstanceOf[js.Any])
       
       inline def setOnpointeroutUndefined: Self = StObject.set(x, "onpointerout", js.undefined)
       
-      inline def setOnpointerover(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerover", value.asInstanceOf[js.Any])
+      inline def setOnpointerover(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointerover", value.asInstanceOf[js.Any])
       
       inline def setOnpointeroverUndefined: Self = StObject.set(x, "onpointerover", js.undefined)
       
-      inline def setOnpointerup(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerup", value.asInstanceOf[js.Any])
+      inline def setOnpointerup(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointerup", value.asInstanceOf[js.Any])
       
       inline def setOnpointerupUndefined: Self = StObject.set(x, "onpointerup", js.undefined)
       
-      inline def setOnprogress(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ProgressEvent[EventTarget], js.Any]): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
+      inline def setOnprogress(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ProgressEvent[EventTarget], Any]): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
       
       inline def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
       
-      inline def setOnratechange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
+      inline def setOnratechange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
       
       inline def setOnratechangeUndefined: Self = StObject.set(x, "onratechange", js.undefined)
       
-      inline def setOnreset(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
+      inline def setOnreset(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
       
       inline def setOnresetUndefined: Self = StObject.set(x, "onreset", js.undefined)
       
-      inline def setOnscroll(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, js.Any]): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
+      inline def setOnscroll(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, Any]): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
       
       inline def setOnscrollUndefined: Self = StObject.set(x, "onscroll", js.undefined)
       
-      inline def setOnseeked(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
+      inline def setOnseeked(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
       
       inline def setOnseekedUndefined: Self = StObject.set(x, "onseeked", js.undefined)
       
-      inline def setOnseeking(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
+      inline def setOnseeking(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
       
       inline def setOnseekingUndefined: Self = StObject.set(x, "onseeking", js.undefined)
       
-      inline def setOnselect(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, js.Any]): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
+      inline def setOnselect(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, Any]): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
       
       inline def setOnselectUndefined: Self = StObject.set(x, "onselect", js.undefined)
       
-      inline def setOnselectstart(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onselectstart", value.asInstanceOf[js.Any])
+      inline def setOnselectstart(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onselectstart", value.asInstanceOf[js.Any])
       
       inline def setOnselectstartUndefined: Self = StObject.set(x, "onselectstart", js.undefined)
       
-      inline def setOnstalled(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
+      inline def setOnstalled(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
       
       inline def setOnstalledUndefined: Self = StObject.set(x, "onstalled", js.undefined)
       
-      inline def setOnsubmit(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
+      inline def setOnsubmit(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
       
       inline def setOnsubmitUndefined: Self = StObject.set(x, "onsubmit", js.undefined)
       
-      inline def setOnsuspend(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
+      inline def setOnsuspend(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
       
       inline def setOnsuspendUndefined: Self = StObject.set(x, "onsuspend", js.undefined)
       
-      inline def setOntimeupdate(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
+      inline def setOntimeupdate(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
       
       inline def setOntimeupdateUndefined: Self = StObject.set(x, "ontimeupdate", js.undefined)
       
-      inline def setOnvolumechange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
+      inline def setOnvolumechange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
       
       inline def setOnvolumechangeUndefined: Self = StObject.set(x, "onvolumechange", js.undefined)
       
-      inline def setOnwaiting(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
+      inline def setOnwaiting(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
       
       inline def setOnwaitingUndefined: Self = StObject.set(x, "onwaiting", js.undefined)
       
@@ -2915,6 +3663,10 @@ object mod {
       inline def setReversed(value: String): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       
       inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+      
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
       inline def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
@@ -3617,147 +4369,145 @@ object mod {
   /* Inlined {readonly [ T in keyof @lumino/virtualdom.@lumino/virtualdom.ElementEventMap ]:? (this : std.HTMLElement, event : @lumino/virtualdom.@lumino/virtualdom.ElementEventMap[T]): any} */
   trait ElementEventAttrs extends StObject {
     
-    val onabort: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, js.Any]] = js.undefined
+    val onabort: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, Any]] = js.undefined
     
-    val onauxclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onauxclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onblur: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, js.Any]] = js.undefined
+    val onblur: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, Any]] = js.undefined
     
-    val oncanplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val oncanplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val oncanplaythrough: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val oncanplaythrough: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val oncontextmenu: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val oncontextmenu: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val oncopy: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, js.Any]] = js.undefined
+    val oncopy: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, Any]] = js.undefined
     
-    val oncuechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val oncuechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val oncut: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, js.Any]] = js.undefined
+    val oncut: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, Any]] = js.undefined
     
-    val ondblclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val ondblclick: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val ondrag: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondrag: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondragend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondragend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondragenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondragenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondragexit: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondragexit: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondragleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondragleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondragover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondragover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondragstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondragstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondrop: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]] = js.undefined
+    val ondrop: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]] = js.undefined
     
-    val ondurationchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val ondurationchange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onemptied: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onemptied: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onended: js.UndefOr[
-        js.ThisFunction1[/* this */ HTMLElement, /* event */ MediaStreamErrorEvent, js.Any]
-      ] = js.undefined
+    val onended: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, Any]] = js.undefined
     
-    val onerror: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, js.Any]] = js.undefined
+    val onerror: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, Any]] = js.undefined
     
-    val onfocus: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, js.Any]] = js.undefined
+    val onfocus: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, Any]] = js.undefined
     
-    val oninput: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val oninput: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val oninvalid: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val oninvalid: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onkeydown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, js.Any]] = js.undefined
+    val onkeydown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, Any]] = js.undefined
     
-    val onkeypress: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, js.Any]] = js.undefined
+    val onkeypress: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, Any]] = js.undefined
     
-    val onkeyup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, js.Any]] = js.undefined
+    val onkeyup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, Any]] = js.undefined
     
-    val onload: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onload: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onloadeddata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onloadeddata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onloadedmetadata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onloadedmetadata: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onloadend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onloadend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onloadstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onloadstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onmousedown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onmousedown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onmouseenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onmouseenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onmouseleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onmouseleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onmousemove: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onmousemove: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onmouseout: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onmouseout: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onmouseover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onmouseover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onmouseup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]] = js.undefined
+    val onmouseup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]] = js.undefined
     
-    val onmousewheel: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ WheelEvent, js.Any]] = js.undefined
+    val onmousewheel: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ WheelEvent, Any]] = js.undefined
     
-    val onpaste: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, js.Any]] = js.undefined
+    val onpaste: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, Any]] = js.undefined
     
-    val onpause: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onpause: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onplay: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onplaying: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onplaying: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onpointercancel: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointercancel: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val onpointerdown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointerdown: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val onpointerenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointerenter: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val onpointerleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointerleave: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val onpointermove: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointermove: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val onpointerout: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointerout: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val onpointerover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointerover: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
-    val onpointerup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]] = js.undefined
+    val onpointerup: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]] = js.undefined
     
     val onprogress: js.UndefOr[
-        js.ThisFunction1[/* this */ HTMLElement, /* event */ ProgressEvent[EventTarget], js.Any]
+        js.ThisFunction1[/* this */ HTMLElement, /* event */ ProgressEvent[EventTarget], Any]
       ] = js.undefined
     
-    val onratechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onratechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onreset: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onreset: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onscroll: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, js.Any]] = js.undefined
+    val onscroll: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, Any]] = js.undefined
     
-    val onseeked: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onseeked: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onseeking: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onseeking: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onselect: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, js.Any]] = js.undefined
+    val onselect: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, Any]] = js.undefined
     
-    val onselectstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onselectstart: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onstalled: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onstalled: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onsubmit: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onsubmit: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onsuspend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onsuspend: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val ontimeupdate: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val ontimeupdate: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onvolumechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onvolumechange: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
     
-    val onwaiting: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]] = js.undefined
+    val onwaiting: js.UndefOr[js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]] = js.undefined
   }
   object ElementEventAttrs {
     
@@ -3768,279 +4518,279 @@ object mod {
     
     extension [Self <: ElementEventAttrs](x: Self) {
       
-      inline def setOnabort(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, js.Any]): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
+      inline def setOnabort(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, Any]): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
       
       inline def setOnabortUndefined: Self = StObject.set(x, "onabort", js.undefined)
       
-      inline def setOnauxclick(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onauxclick", value.asInstanceOf[js.Any])
+      inline def setOnauxclick(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onauxclick", value.asInstanceOf[js.Any])
       
       inline def setOnauxclickUndefined: Self = StObject.set(x, "onauxclick", js.undefined)
       
-      inline def setOnblur(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, js.Any]): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
+      inline def setOnblur(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, Any]): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
       
       inline def setOnblurUndefined: Self = StObject.set(x, "onblur", js.undefined)
       
-      inline def setOncanplay(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
+      inline def setOncanplay(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
       
       inline def setOncanplayUndefined: Self = StObject.set(x, "oncanplay", js.undefined)
       
-      inline def setOncanplaythrough(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
+      inline def setOncanplaythrough(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
       
       inline def setOncanplaythroughUndefined: Self = StObject.set(x, "oncanplaythrough", js.undefined)
       
-      inline def setOnchange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
+      inline def setOnchange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
       
       inline def setOnchangeUndefined: Self = StObject.set(x, "onchange", js.undefined)
       
-      inline def setOnclick(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
+      inline def setOnclick(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
       
       inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
       
-      inline def setOncontextmenu(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "oncontextmenu", value.asInstanceOf[js.Any])
+      inline def setOncontextmenu(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "oncontextmenu", value.asInstanceOf[js.Any])
       
       inline def setOncontextmenuUndefined: Self = StObject.set(x, "oncontextmenu", js.undefined)
       
-      inline def setOncopy(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, js.Any]): Self = StObject.set(x, "oncopy", value.asInstanceOf[js.Any])
+      inline def setOncopy(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, Any]): Self = StObject.set(x, "oncopy", value.asInstanceOf[js.Any])
       
       inline def setOncopyUndefined: Self = StObject.set(x, "oncopy", js.undefined)
       
-      inline def setOncuechange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "oncuechange", value.asInstanceOf[js.Any])
+      inline def setOncuechange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "oncuechange", value.asInstanceOf[js.Any])
       
       inline def setOncuechangeUndefined: Self = StObject.set(x, "oncuechange", js.undefined)
       
-      inline def setOncut(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, js.Any]): Self = StObject.set(x, "oncut", value.asInstanceOf[js.Any])
+      inline def setOncut(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, Any]): Self = StObject.set(x, "oncut", value.asInstanceOf[js.Any])
       
       inline def setOncutUndefined: Self = StObject.set(x, "oncut", js.undefined)
       
-      inline def setOndblclick(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "ondblclick", value.asInstanceOf[js.Any])
+      inline def setOndblclick(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "ondblclick", value.asInstanceOf[js.Any])
       
       inline def setOndblclickUndefined: Self = StObject.set(x, "ondblclick", js.undefined)
       
-      inline def setOndrag(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
+      inline def setOndrag(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
       
       inline def setOndragUndefined: Self = StObject.set(x, "ondrag", js.undefined)
       
-      inline def setOndragend(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
+      inline def setOndragend(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
       
       inline def setOndragendUndefined: Self = StObject.set(x, "ondragend", js.undefined)
       
-      inline def setOndragenter(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
+      inline def setOndragenter(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
       
       inline def setOndragenterUndefined: Self = StObject.set(x, "ondragenter", js.undefined)
       
-      inline def setOndragexit(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondragexit", value.asInstanceOf[js.Any])
+      inline def setOndragexit(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondragexit", value.asInstanceOf[js.Any])
       
       inline def setOndragexitUndefined: Self = StObject.set(x, "ondragexit", js.undefined)
       
-      inline def setOndragleave(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
+      inline def setOndragleave(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
       
       inline def setOndragleaveUndefined: Self = StObject.set(x, "ondragleave", js.undefined)
       
-      inline def setOndragover(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
+      inline def setOndragover(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
       
       inline def setOndragoverUndefined: Self = StObject.set(x, "ondragover", js.undefined)
       
-      inline def setOndragstart(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondragstart", value.asInstanceOf[js.Any])
+      inline def setOndragstart(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondragstart", value.asInstanceOf[js.Any])
       
       inline def setOndragstartUndefined: Self = StObject.set(x, "ondragstart", js.undefined)
       
-      inline def setOndrop(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, js.Any]): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
+      inline def setOndrop(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ DragEvent, Any]): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
       
       inline def setOndropUndefined: Self = StObject.set(x, "ondrop", js.undefined)
       
-      inline def setOndurationchange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
+      inline def setOndurationchange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
       
       inline def setOndurationchangeUndefined: Self = StObject.set(x, "ondurationchange", js.undefined)
       
-      inline def setOnemptied(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
+      inline def setOnemptied(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
       
       inline def setOnemptiedUndefined: Self = StObject.set(x, "onemptied", js.undefined)
       
-      inline def setOnended(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MediaStreamErrorEvent, js.Any]): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
+      inline def setOnended(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, Any]): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
       
       inline def setOnendedUndefined: Self = StObject.set(x, "onended", js.undefined)
       
-      inline def setOnerror(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, js.Any]): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
+      inline def setOnerror(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ErrorEvent, Any]): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
       
       inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       
-      inline def setOnfocus(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, js.Any]): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
+      inline def setOnfocus(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ FocusEvent, Any]): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
       
       inline def setOnfocusUndefined: Self = StObject.set(x, "onfocus", js.undefined)
       
-      inline def setOninput(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
+      inline def setOninput(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
       
       inline def setOninputUndefined: Self = StObject.set(x, "oninput", js.undefined)
       
-      inline def setOninvalid(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "oninvalid", value.asInstanceOf[js.Any])
+      inline def setOninvalid(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "oninvalid", value.asInstanceOf[js.Any])
       
       inline def setOninvalidUndefined: Self = StObject.set(x, "oninvalid", js.undefined)
       
-      inline def setOnkeydown(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeydown", value.asInstanceOf[js.Any])
+      inline def setOnkeydown(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, Any]): Self = StObject.set(x, "onkeydown", value.asInstanceOf[js.Any])
       
       inline def setOnkeydownUndefined: Self = StObject.set(x, "onkeydown", js.undefined)
       
-      inline def setOnkeypress(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeypress", value.asInstanceOf[js.Any])
+      inline def setOnkeypress(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, Any]): Self = StObject.set(x, "onkeypress", value.asInstanceOf[js.Any])
       
       inline def setOnkeypressUndefined: Self = StObject.set(x, "onkeypress", js.undefined)
       
-      inline def setOnkeyup(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
+      inline def setOnkeyup(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ KeyboardEvent, Any]): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
       
       inline def setOnkeyupUndefined: Self = StObject.set(x, "onkeyup", js.undefined)
       
-      inline def setOnload(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
+      inline def setOnload(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
       
       inline def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
       
-      inline def setOnloadeddata(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
+      inline def setOnloadeddata(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
       
       inline def setOnloadeddataUndefined: Self = StObject.set(x, "onloadeddata", js.undefined)
       
-      inline def setOnloadedmetadata(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
+      inline def setOnloadedmetadata(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
       
       inline def setOnloadedmetadataUndefined: Self = StObject.set(x, "onloadedmetadata", js.undefined)
       
-      inline def setOnloadend(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onloadend", value.asInstanceOf[js.Any])
+      inline def setOnloadend(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onloadend", value.asInstanceOf[js.Any])
       
       inline def setOnloadendUndefined: Self = StObject.set(x, "onloadend", js.undefined)
       
-      inline def setOnloadstart(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
+      inline def setOnloadstart(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
       
       inline def setOnloadstartUndefined: Self = StObject.set(x, "onloadstart", js.undefined)
       
-      inline def setOnmousedown(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onmousedown", value.asInstanceOf[js.Any])
+      inline def setOnmousedown(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onmousedown", value.asInstanceOf[js.Any])
       
       inline def setOnmousedownUndefined: Self = StObject.set(x, "onmousedown", js.undefined)
       
-      inline def setOnmouseenter(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseenter", value.asInstanceOf[js.Any])
+      inline def setOnmouseenter(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onmouseenter", value.asInstanceOf[js.Any])
       
       inline def setOnmouseenterUndefined: Self = StObject.set(x, "onmouseenter", js.undefined)
       
-      inline def setOnmouseleave(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseleave", value.asInstanceOf[js.Any])
+      inline def setOnmouseleave(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onmouseleave", value.asInstanceOf[js.Any])
       
       inline def setOnmouseleaveUndefined: Self = StObject.set(x, "onmouseleave", js.undefined)
       
-      inline def setOnmousemove(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onmousemove", value.asInstanceOf[js.Any])
+      inline def setOnmousemove(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onmousemove", value.asInstanceOf[js.Any])
       
       inline def setOnmousemoveUndefined: Self = StObject.set(x, "onmousemove", js.undefined)
       
-      inline def setOnmouseout(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
+      inline def setOnmouseout(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
       
       inline def setOnmouseoutUndefined: Self = StObject.set(x, "onmouseout", js.undefined)
       
-      inline def setOnmouseover(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
+      inline def setOnmouseover(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
       
       inline def setOnmouseoverUndefined: Self = StObject.set(x, "onmouseover", js.undefined)
       
-      inline def setOnmouseup(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseup", value.asInstanceOf[js.Any])
+      inline def setOnmouseup(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ MouseEvent, Any]): Self = StObject.set(x, "onmouseup", value.asInstanceOf[js.Any])
       
       inline def setOnmouseupUndefined: Self = StObject.set(x, "onmouseup", js.undefined)
       
-      inline def setOnmousewheel(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ WheelEvent, js.Any]): Self = StObject.set(x, "onmousewheel", value.asInstanceOf[js.Any])
+      inline def setOnmousewheel(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ WheelEvent, Any]): Self = StObject.set(x, "onmousewheel", value.asInstanceOf[js.Any])
       
       inline def setOnmousewheelUndefined: Self = StObject.set(x, "onmousewheel", js.undefined)
       
-      inline def setOnpaste(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, js.Any]): Self = StObject.set(x, "onpaste", value.asInstanceOf[js.Any])
+      inline def setOnpaste(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ClipboardEvent, Any]): Self = StObject.set(x, "onpaste", value.asInstanceOf[js.Any])
       
       inline def setOnpasteUndefined: Self = StObject.set(x, "onpaste", js.undefined)
       
-      inline def setOnpause(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
+      inline def setOnpause(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
       
       inline def setOnpauseUndefined: Self = StObject.set(x, "onpause", js.undefined)
       
-      inline def setOnplay(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
+      inline def setOnplay(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
       
       inline def setOnplayUndefined: Self = StObject.set(x, "onplay", js.undefined)
       
-      inline def setOnplaying(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
+      inline def setOnplaying(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
       
       inline def setOnplayingUndefined: Self = StObject.set(x, "onplaying", js.undefined)
       
-      inline def setOnpointercancel(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointercancel", value.asInstanceOf[js.Any])
+      inline def setOnpointercancel(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointercancel", value.asInstanceOf[js.Any])
       
       inline def setOnpointercancelUndefined: Self = StObject.set(x, "onpointercancel", js.undefined)
       
-      inline def setOnpointerdown(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerdown", value.asInstanceOf[js.Any])
+      inline def setOnpointerdown(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointerdown", value.asInstanceOf[js.Any])
       
       inline def setOnpointerdownUndefined: Self = StObject.set(x, "onpointerdown", js.undefined)
       
-      inline def setOnpointerenter(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerenter", value.asInstanceOf[js.Any])
+      inline def setOnpointerenter(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointerenter", value.asInstanceOf[js.Any])
       
       inline def setOnpointerenterUndefined: Self = StObject.set(x, "onpointerenter", js.undefined)
       
-      inline def setOnpointerleave(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerleave", value.asInstanceOf[js.Any])
+      inline def setOnpointerleave(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointerleave", value.asInstanceOf[js.Any])
       
       inline def setOnpointerleaveUndefined: Self = StObject.set(x, "onpointerleave", js.undefined)
       
-      inline def setOnpointermove(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointermove", value.asInstanceOf[js.Any])
+      inline def setOnpointermove(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointermove", value.asInstanceOf[js.Any])
       
       inline def setOnpointermoveUndefined: Self = StObject.set(x, "onpointermove", js.undefined)
       
-      inline def setOnpointerout(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerout", value.asInstanceOf[js.Any])
+      inline def setOnpointerout(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointerout", value.asInstanceOf[js.Any])
       
       inline def setOnpointeroutUndefined: Self = StObject.set(x, "onpointerout", js.undefined)
       
-      inline def setOnpointerover(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerover", value.asInstanceOf[js.Any])
+      inline def setOnpointerover(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointerover", value.asInstanceOf[js.Any])
       
       inline def setOnpointeroverUndefined: Self = StObject.set(x, "onpointerover", js.undefined)
       
-      inline def setOnpointerup(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerup", value.asInstanceOf[js.Any])
+      inline def setOnpointerup(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ PointerEvent, Any]): Self = StObject.set(x, "onpointerup", value.asInstanceOf[js.Any])
       
       inline def setOnpointerupUndefined: Self = StObject.set(x, "onpointerup", js.undefined)
       
-      inline def setOnprogress(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ProgressEvent[EventTarget], js.Any]): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
+      inline def setOnprogress(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ ProgressEvent[EventTarget], Any]): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
       
       inline def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
       
-      inline def setOnratechange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
+      inline def setOnratechange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
       
       inline def setOnratechangeUndefined: Self = StObject.set(x, "onratechange", js.undefined)
       
-      inline def setOnreset(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
+      inline def setOnreset(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
       
       inline def setOnresetUndefined: Self = StObject.set(x, "onreset", js.undefined)
       
-      inline def setOnscroll(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, js.Any]): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
+      inline def setOnscroll(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, Any]): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
       
       inline def setOnscrollUndefined: Self = StObject.set(x, "onscroll", js.undefined)
       
-      inline def setOnseeked(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
+      inline def setOnseeked(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
       
       inline def setOnseekedUndefined: Self = StObject.set(x, "onseeked", js.undefined)
       
-      inline def setOnseeking(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
+      inline def setOnseeking(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
       
       inline def setOnseekingUndefined: Self = StObject.set(x, "onseeking", js.undefined)
       
-      inline def setOnselect(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, js.Any]): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
+      inline def setOnselect(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, Any]): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
       
       inline def setOnselectUndefined: Self = StObject.set(x, "onselect", js.undefined)
       
-      inline def setOnselectstart(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onselectstart", value.asInstanceOf[js.Any])
+      inline def setOnselectstart(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onselectstart", value.asInstanceOf[js.Any])
       
       inline def setOnselectstartUndefined: Self = StObject.set(x, "onselectstart", js.undefined)
       
-      inline def setOnstalled(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
+      inline def setOnstalled(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
       
       inline def setOnstalledUndefined: Self = StObject.set(x, "onstalled", js.undefined)
       
-      inline def setOnsubmit(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
+      inline def setOnsubmit(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
       
       inline def setOnsubmitUndefined: Self = StObject.set(x, "onsubmit", js.undefined)
       
-      inline def setOnsuspend(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
+      inline def setOnsuspend(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
       
       inline def setOnsuspendUndefined: Self = StObject.set(x, "onsuspend", js.undefined)
       
-      inline def setOntimeupdate(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
+      inline def setOntimeupdate(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
       
       inline def setOntimeupdateUndefined: Self = StObject.set(x, "ontimeupdate", js.undefined)
       
-      inline def setOnvolumechange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
+      inline def setOnvolumechange(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
       
       inline def setOnvolumechangeUndefined: Self = StObject.set(x, "onvolumechange", js.undefined)
       
-      inline def setOnwaiting(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, js.Any]): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
+      inline def setOnwaiting(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ Event, Any]): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
       
       inline def setOnwaitingUndefined: Self = StObject.set(x, "onwaiting", js.undefined)
     }
@@ -4092,7 +4842,7 @@ object mod {
     
     var onemptied: Event
     
-    var onended: MediaStreamErrorEvent
+    var onended: ErrorEvent
     
     var onerror: ErrorEvent
     
@@ -4211,7 +4961,7 @@ object mod {
       ondrop: DragEvent,
       ondurationchange: Event,
       onemptied: Event,
-      onended: MediaStreamErrorEvent,
+      onended: ErrorEvent,
       onerror: ErrorEvent,
       onfocus: FocusEvent,
       oninput: Event,
@@ -4309,7 +5059,7 @@ object mod {
       
       inline def setOnemptied(value: Event): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
       
-      inline def setOnended(value: MediaStreamErrorEvent): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
+      inline def setOnended(value: ErrorEvent): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
       
       inline def setOnerror(value: ErrorEvent): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
       

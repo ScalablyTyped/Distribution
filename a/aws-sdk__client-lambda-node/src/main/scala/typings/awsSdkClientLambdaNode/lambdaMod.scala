@@ -71,7 +71,7 @@ object lambdaMod {
   
   @JSImport("@aws-sdk/client-lambda-node/Lambda", "Lambda")
   @js.native
-  class Lambda protected () extends LambdaClient {
+  open class Lambda protected () extends LambdaClient {
     def this(configuration: LambdaConfiguration) = this()
     
     /**
@@ -90,7 +90,7 @@ object lambdaMod {
     def addPermission(args: AddPermissionInput): js.Promise[AddPermissionOutput] = js.native
     def addPermission(
       args: AddPermissionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[AddPermissionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[AddPermissionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -107,7 +107,7 @@ object lambdaMod {
     def createAlias(args: CreateAliasInput): js.Promise[CreateAliasOutput] = js.native
     def createAlias(
       args: CreateAliasInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateAliasOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateAliasOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -124,7 +124,7 @@ object lambdaMod {
     def createEventSourceMapping(args: CreateEventSourceMappingInput): js.Promise[CreateEventSourceMappingOutput] = js.native
     def createEventSourceMapping(
       args: CreateEventSourceMappingInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateEventSourceMappingOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateEventSourceMappingOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -142,7 +142,7 @@ object lambdaMod {
     def createFunction(args: CreateFunctionInput): js.Promise[CreateFunctionOutput] = js.native
     def createFunction(
       args: CreateFunctionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateFunctionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateFunctionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -157,7 +157,7 @@ object lambdaMod {
     def deleteAlias(args: DeleteAliasInput): js.Promise[DeleteAliasOutput] = js.native
     def deleteAlias(
       args: DeleteAliasInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteAliasOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteAliasOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -174,7 +174,7 @@ object lambdaMod {
     def deleteEventSourceMapping(args: DeleteEventSourceMappingInput): js.Promise[DeleteEventSourceMappingOutput] = js.native
     def deleteEventSourceMapping(
       args: DeleteEventSourceMappingInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteEventSourceMappingOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteEventSourceMappingOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -191,7 +191,7 @@ object lambdaMod {
     def deleteFunction(args: DeleteFunctionInput): js.Promise[DeleteFunctionOutput] = js.native
     def deleteFunction(
       args: DeleteFunctionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteFunctionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteFunctionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -207,7 +207,7 @@ object lambdaMod {
     def deleteFunctionConcurrency(args: DeleteFunctionConcurrencyInput): js.Promise[DeleteFunctionConcurrencyOutput] = js.native
     def deleteFunctionConcurrency(
       args: DeleteFunctionConcurrencyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteFunctionConcurrencyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteFunctionConcurrencyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -221,7 +221,7 @@ object lambdaMod {
     def getAccountSettings(args: GetAccountSettingsInput): js.Promise[GetAccountSettingsOutput] = js.native
     def getAccountSettings(
       args: GetAccountSettingsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetAccountSettingsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetAccountSettingsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -235,10 +235,7 @@ object lambdaMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def getAlias(args: GetAliasInput): js.Promise[GetAliasOutput] = js.native
-    def getAlias(
-      args: GetAliasInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetAliasOutput], Unit]
-    ): Unit = js.native
+    def getAlias(args: GetAliasInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetAliasOutput], Unit]): Unit = js.native
     
     /**
       * <p>Returns configuration information for the specified event source mapping (see <a>CreateEventSourceMapping</a>).</p> <p>This operation requires permission for the <code>lambda:GetEventSourceMapping</code> action.</p>
@@ -253,7 +250,7 @@ object lambdaMod {
     def getEventSourceMapping(args: GetEventSourceMappingInput): js.Promise[GetEventSourceMappingOutput] = js.native
     def getEventSourceMapping(
       args: GetEventSourceMappingInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetEventSourceMappingOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetEventSourceMappingOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -269,7 +266,7 @@ object lambdaMod {
     def getFunction(args: GetFunctionInput): js.Promise[GetFunctionOutput] = js.native
     def getFunction(
       args: GetFunctionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetFunctionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetFunctionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -285,7 +282,7 @@ object lambdaMod {
     def getFunctionConfiguration(args: GetFunctionConfigurationInput): js.Promise[GetFunctionConfigurationOutput] = js.native
     def getFunctionConfiguration(
       args: GetFunctionConfigurationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetFunctionConfigurationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetFunctionConfigurationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -301,7 +298,7 @@ object lambdaMod {
     def getPolicy(args: GetPolicyInput): js.Promise[GetPolicyOutput] = js.native
     def getPolicy(
       args: GetPolicyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetPolicyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetPolicyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -331,7 +328,7 @@ object lambdaMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def invoke(args: InvokeInput): js.Promise[InvokeOutput] = js.native
-    def invoke(args: InvokeInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[InvokeOutput], Unit]): Unit = js.native
+    def invoke(args: InvokeInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[InvokeOutput], Unit]): Unit = js.native
     
     /**
       * <important> <p>For asynchronous function invocation, use <a>Invoke</a>.</p> </important> <p>Submits an invocation request to AWS Lambda. Upon receiving the request, Lambda executes the specified function asynchronously. To see the logs generated by the Lambda function execution, see the CloudWatch Logs console.</p> <p>This operation requires permission for the <code>lambda:InvokeFunction</code> action.</p>
@@ -346,7 +343,7 @@ object lambdaMod {
     def invokeAsync(args: InvokeAsyncInput[Readable]): js.Promise[InvokeAsyncOutput] = js.native
     def invokeAsync(
       args: InvokeAsyncInput[Readable],
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[InvokeAsyncOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[InvokeAsyncOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -362,7 +359,7 @@ object lambdaMod {
     def listAliases(args: ListAliasesInput): js.Promise[ListAliasesOutput] = js.native
     def listAliases(
       args: ListAliasesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListAliasesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListAliasesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -378,7 +375,7 @@ object lambdaMod {
     def listEventSourceMappings(args: ListEventSourceMappingsInput): js.Promise[ListEventSourceMappingsOutput] = js.native
     def listEventSourceMappings(
       args: ListEventSourceMappingsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListEventSourceMappingsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListEventSourceMappingsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -393,7 +390,7 @@ object lambdaMod {
     def listFunctions(args: ListFunctionsInput): js.Promise[ListFunctionsOutput] = js.native
     def listFunctions(
       args: ListFunctionsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListFunctionsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListFunctionsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -407,10 +404,7 @@ object lambdaMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def listTags(args: ListTagsInput): js.Promise[ListTagsOutput] = js.native
-    def listTags(
-      args: ListTagsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListTagsOutput], Unit]
-    ): Unit = js.native
+    def listTags(args: ListTagsInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListTagsOutput], Unit]): Unit = js.native
     
     /**
       * <p>Lists all versions of a function. For information about versioning, see <a href="http://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html">AWS Lambda Function Versioning and Aliases</a>. </p>
@@ -425,7 +419,7 @@ object lambdaMod {
     def listVersionsByFunction(args: ListVersionsByFunctionInput): js.Promise[ListVersionsByFunctionOutput] = js.native
     def listVersionsByFunction(
       args: ListVersionsByFunctionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListVersionsByFunctionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListVersionsByFunctionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -443,7 +437,7 @@ object lambdaMod {
     def publishVersion(args: PublishVersionInput): js.Promise[PublishVersionOutput] = js.native
     def publishVersion(
       args: PublishVersionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PublishVersionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PublishVersionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -459,7 +453,7 @@ object lambdaMod {
     def putFunctionConcurrency(args: PutFunctionConcurrencyInput): js.Promise[PutFunctionConcurrencyOutput] = js.native
     def putFunctionConcurrency(
       args: PutFunctionConcurrencyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutFunctionConcurrencyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutFunctionConcurrencyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -476,7 +470,7 @@ object lambdaMod {
     def removePermission(args: RemovePermissionInput): js.Promise[RemovePermissionOutput] = js.native
     def removePermission(
       args: RemovePermissionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[RemovePermissionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[RemovePermissionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -492,7 +486,7 @@ object lambdaMod {
     def tagResource(args: TagResourceInput): js.Promise[TagResourceOutput] = js.native
     def tagResource(
       args: TagResourceInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[TagResourceOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[TagResourceOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -508,7 +502,7 @@ object lambdaMod {
     def untagResource(args: UntagResourceInput): js.Promise[UntagResourceOutput] = js.native
     def untagResource(
       args: UntagResourceInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UntagResourceOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UntagResourceOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -525,7 +519,7 @@ object lambdaMod {
     def updateAlias(args: UpdateAliasInput): js.Promise[UpdateAliasOutput] = js.native
     def updateAlias(
       args: UpdateAliasInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateAliasOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateAliasOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -543,7 +537,7 @@ object lambdaMod {
     def updateEventSourceMapping(args: UpdateEventSourceMappingInput): js.Promise[UpdateEventSourceMappingOutput] = js.native
     def updateEventSourceMapping(
       args: UpdateEventSourceMappingInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateEventSourceMappingOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateEventSourceMappingOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -561,7 +555,7 @@ object lambdaMod {
     def updateFunctionCode(args: UpdateFunctionCodeInput): js.Promise[UpdateFunctionCodeOutput] = js.native
     def updateFunctionCode(
       args: UpdateFunctionCodeInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateFunctionCodeOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateFunctionCodeOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -579,7 +573,7 @@ object lambdaMod {
     def updateFunctionConfiguration(args: UpdateFunctionConfigurationInput): js.Promise[UpdateFunctionConfigurationOutput] = js.native
     def updateFunctionConfiguration(
       args: UpdateFunctionConfigurationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateFunctionConfigurationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateFunctionConfigurationOutput], Unit]
     ): Unit = js.native
   }
 }

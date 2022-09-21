@@ -1,6 +1,5 @@
 package typings.kendoUi.kendo.data
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait SchedulerDataSource
   
   def cancelChanges(model: SchedulerEvent): Unit = js.native
   
-  def expand(start: Date, end: Date): SchedulerEvent = js.native
+  def expand(start: js.Date, end: js.Date): js.Array[SchedulerEvent] = js.native
   
   def indexOf(value: SchedulerEvent): Double = js.native
   

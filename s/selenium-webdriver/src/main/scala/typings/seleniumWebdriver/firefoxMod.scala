@@ -20,7 +20,7 @@ object firefoxMod {
   
   @JSImport("selenium-webdriver/firefox", "Driver")
   @js.native
-  class Driver protected () extends WebDriver {
+  open class Driver protected () extends WebDriver {
     def this(session: js.Promise[Session], executor: Executor) = this()
     // region Constructors
     /**
@@ -112,10 +112,10 @@ object firefoxMod {
     * @param {(Capabilities|Map<string, ?>|Object)=} other Another set of
     *     capabilities to initialize this instance from.
     */
-  class Options () extends Capabilities {
+  open class Options () extends Capabilities {
     def this(other: js.Object) = this()
     def this(other: typings.seleniumWebdriver.capabilitiesMod.Capabilities) = this()
-    def this(other: Map[String, js.Any]) = this()
+    def this(other: Map[String, Any]) = this()
     
     /**
       * Specify additional command line arguments that should be used when starting
@@ -148,7 +148,7 @@ object firefoxMod {
       * @return {!Options} A self reference.
       */
     def setBinary(binary: String): Options = js.native
-    def setBinary(binary: js.Any): Options = js.native
+    def setBinary(binary: Any): Options = js.native
     
     /**
       * @param {string} key the preference key.
@@ -197,7 +197,7 @@ object firefoxMod {
     * @param {string=} opt_exe Path to the server executable to use. If omitted,
     *     the builder will attempt to locate the geckodriver on the system PATH.
     */
-  class ServiceBuilder () extends Builder {
+  open class ServiceBuilder () extends Builder {
     def this(opt_exe: String) = this()
     
     /**
@@ -223,10 +223,10 @@ object firefoxMod {
   }
   
   inline def createWiresService(binary: String): DriverService = ^.asInstanceOf[js.Dynamic].applyDynamic("createWiresService")(binary.asInstanceOf[js.Any]).asInstanceOf[DriverService]
-  inline def createWiresService(binary: js.Any): DriverService = ^.asInstanceOf[js.Dynamic].applyDynamic("createWiresService")(binary.asInstanceOf[js.Any]).asInstanceOf[DriverService]
+  inline def createWiresService(binary: Any): DriverService = ^.asInstanceOf[js.Dynamic].applyDynamic("createWiresService")(binary.asInstanceOf[js.Any]).asInstanceOf[DriverService]
   
   inline def findWires(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("findWires")().asInstanceOf[String]
   
-  inline def prepareProfile(profile: String, port: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareProfile")(profile.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def prepareProfile(profile: js.Any, port: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareProfile")(profile.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def prepareProfile(profile: String, port: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareProfile")(profile.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def prepareProfile(profile: Any, port: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareProfile")(profile.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

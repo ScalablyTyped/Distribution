@@ -1,6 +1,5 @@
 package typings.turistFetch
 
-import typings.std.RegExp
 import typings.turistFetch.anon.Typeofdns
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +16,7 @@ object dnsResolveMod {
   
   @JSImport("@turist/fetch/dist/dns-resolve", "localhostRegex")
   @js.native
-  val localhostRegex: RegExp = js.native
+  val localhostRegex: js.RegExp = js.native
   
   inline def setupCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupCache")().asInstanceOf[Unit]
   
@@ -32,7 +31,7 @@ object dnsResolveMod {
     var resolver: js.UndefOr[Typeofdns] = js.undefined
     
     var retryOpts: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RetryOptions */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RetryOptions */ Any
       ] = js.undefined
   }
   object Options {
@@ -61,7 +60,7 @@ object dnsResolveMod {
       inline def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
       
       inline def setRetryOpts(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RetryOptions */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RetryOptions */ Any
       ): Self = StObject.set(x, "retryOpts", value.asInstanceOf[js.Any])
       
       inline def setRetryOptsUndefined: Self = StObject.set(x, "retryOpts", js.undefined)

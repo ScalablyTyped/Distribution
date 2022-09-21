@@ -19,5 +19,5 @@ object isMongoIdMod {
   inline def IsMongoId_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMongoId")().asInstanceOf[PropertyDecorator]
   inline def IsMongoId_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsMongoId")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  inline def isMongoId(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMongoId")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isMongoId(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMongoId")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

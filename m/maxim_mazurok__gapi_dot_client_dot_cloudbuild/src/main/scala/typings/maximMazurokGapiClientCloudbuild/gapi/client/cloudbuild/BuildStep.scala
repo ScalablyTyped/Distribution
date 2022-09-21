@@ -40,6 +40,9 @@ trait BuildStep extends StObject {
   /** Output only. Stores timing information for pulling this build step's builder image only. */
   var pullTiming: js.UndefOr[TimeSpan] = js.undefined
   
+  /** A shell script to be executed in the step. When script is provided, the user cannot specify the entrypoint or args. */
+  var script: js.UndefOr[String] = js.undefined
+  
   /** A list of environment variables which are encrypted using a Cloud Key Management Service crypto key. These values must be specified in the build's `Secret`. */
   var secretEnv: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -77,7 +80,7 @@ object BuildStep {
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
@@ -91,7 +94,7 @@ object BuildStep {
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value :_*))
+    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -105,11 +108,15 @@ object BuildStep {
     
     inline def setPullTimingUndefined: Self = StObject.set(x, "pullTiming", js.undefined)
     
+    inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    
+    inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+    
     inline def setSecretEnv(value: js.Array[String]): Self = StObject.set(x, "secretEnv", value.asInstanceOf[js.Any])
     
     inline def setSecretEnvUndefined: Self = StObject.set(x, "secretEnv", js.undefined)
     
-    inline def setSecretEnvVarargs(value: String*): Self = StObject.set(x, "secretEnv", js.Array(value :_*))
+    inline def setSecretEnvVarargs(value: String*): Self = StObject.set(x, "secretEnv", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
@@ -127,12 +134,12 @@ object BuildStep {
     
     inline def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
-    inline def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value :_*))
+    inline def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value*))
     
     inline def setWaitFor(value: js.Array[String]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
     
     inline def setWaitForUndefined: Self = StObject.set(x, "waitFor", js.undefined)
     
-    inline def setWaitForVarargs(value: String*): Self = StObject.set(x, "waitFor", js.Array(value :_*))
+    inline def setWaitForVarargs(value: String*): Self = StObject.set(x, "waitFor", js.Array(value*))
   }
 }

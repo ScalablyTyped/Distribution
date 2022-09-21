@@ -38,7 +38,7 @@ object DescribeElasticIpsRequest {
     
     inline def setIpsUndefined: Self = StObject.set(x, "Ips", js.undefined)
     
-    inline def setIpsVarargs(value: String*): Self = StObject.set(x, "Ips", js.Array(value :_*))
+    inline def setIpsVarargs(value: String*): Self = StObject.set(x, "Ips", js.Array(value*))
     
     inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     

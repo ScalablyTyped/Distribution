@@ -21,7 +21,7 @@ object SDPGroup {
     
     inline def setMids(value: js.Array[String]): Self = StObject.set(x, "mids", value.asInstanceOf[js.Any])
     
-    inline def setMidsVarargs(value: String*): Self = StObject.set(x, "mids", js.Array(value :_*))
+    inline def setMidsVarargs(value: String*): Self = StObject.set(x, "mids", js.Array(value*))
     
     inline def setSemantics(value: String): Self = StObject.set(x, "semantics", value.asInstanceOf[js.Any])
   }

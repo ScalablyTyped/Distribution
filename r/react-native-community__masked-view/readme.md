@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-community__masked-view
 
-Typings are for version 0.1.10
+Typings are for version 0.1.11
 
 ## Library description:
 React Native MaskedView component
@@ -10,10 +10,10 @@ React Native MaskedView component
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/masked-view |
 | Keywords           | react-native, react native, masked-view, masked view |
-| # releases         | 18 |
-| # dependents       | 122 |
-| # downloads        | 5206270 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1068453.0 |
+| # stars            | 673.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-community/react-native-masked-view#readme)

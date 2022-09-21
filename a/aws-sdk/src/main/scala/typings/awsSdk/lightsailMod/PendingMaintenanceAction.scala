@@ -14,7 +14,7 @@ trait PendingMaintenanceAction extends StObject {
   /**
     * The effective date of the pending database maintenance action.
     */
-  var currentApplyDate: js.UndefOr[IsoDate] = js.undefined
+  var currentApplyDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Additional detail about the pending database maintenance action.
@@ -34,7 +34,7 @@ object PendingMaintenanceAction {
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    inline def setCurrentApplyDate(value: IsoDate): Self = StObject.set(x, "currentApplyDate", value.asInstanceOf[js.Any])
+    inline def setCurrentApplyDate(value: js.Date): Self = StObject.set(x, "currentApplyDate", value.asInstanceOf[js.Any])
     
     inline def setCurrentApplyDateUndefined: Self = StObject.set(x, "currentApplyDate", js.undefined)
     

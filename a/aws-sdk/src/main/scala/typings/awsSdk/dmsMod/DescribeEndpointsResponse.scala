@@ -29,7 +29,7 @@ object DescribeEndpointsResponse {
     
     inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
-    inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "Endpoints", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

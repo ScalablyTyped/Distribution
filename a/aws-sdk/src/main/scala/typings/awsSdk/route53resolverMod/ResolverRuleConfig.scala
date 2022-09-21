@@ -42,6 +42,6 @@ object ResolverRuleConfig {
     
     inline def setTargetIpsUndefined: Self = StObject.set(x, "TargetIps", js.undefined)
     
-    inline def setTargetIpsVarargs(value: TargetAddress*): Self = StObject.set(x, "TargetIps", js.Array(value :_*))
+    inline def setTargetIpsVarargs(value: TargetAddress*): Self = StObject.set(x, "TargetIps", js.Array(value*))
   }
 }

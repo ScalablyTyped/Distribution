@@ -57,11 +57,11 @@ object anon {
       
       inline def setCssAsyncUndefined: Self = StObject.set(x, "cssAsync", js.undefined)
       
-      inline def setCssAsyncVarargs(value: String*): Self = StObject.set(x, "cssAsync", js.Array(value :_*))
+      inline def setCssAsyncVarargs(value: String*): Self = StObject.set(x, "cssAsync", js.Array(value*))
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value :_*))
+      inline def setCssVarargs(value: String*): Self = StObject.set(x, "css", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -87,7 +87,7 @@ object anon {
       
       inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
       
-      inline def setScriptVarargs(value: String*): Self = StObject.set(x, "script", js.Array(value :_*))
+      inline def setScriptVarargs(value: String*): Self = StObject.set(x, "script", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

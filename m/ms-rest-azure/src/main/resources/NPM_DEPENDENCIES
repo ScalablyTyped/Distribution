@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ms-rest-azure" : "2.6.0"
+      "ms-rest-azure" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "ms-rest-azure" : "2.6.0"
+      "ms-rest-azure" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

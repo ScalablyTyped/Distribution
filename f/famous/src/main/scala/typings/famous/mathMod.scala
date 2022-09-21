@@ -8,14 +8,14 @@ object mathMod {
   
   @JSImport("famous/math", "Mat33")
   @js.native
-  class Mat33 () extends StObject {
+  open class Mat33 () extends StObject {
     
     var values: js.Array[Double] = js.native
   }
   
   @JSImport("famous/math", "Quaternion")
   @js.native
-  class Quaternion () extends StObject {
+  open class Quaternion () extends StObject {
     
     def fromEuler(x: Double, y: Double, z: Double): Quaternion = js.native
     
@@ -32,7 +32,7 @@ object mathMod {
   
   @JSImport("famous/math", "Vec2")
   @js.native
-  class Vec2 () extends StObject {
+  open class Vec2 () extends StObject {
     def this(x: Double) = this()
     def this(x: Double, y: Double) = this()
     def this(x: Unit, y: Double) = this()
@@ -96,7 +96,7 @@ object mathMod {
   
   @JSImport("famous/math", "Vec3")
   @js.native
-  class Vec3 () extends StObject {
+  open class Vec3 () extends StObject {
     def this(x: Double) = this()
     def this(x: Double, y: Double) = this()
     def this(x: Unit, y: Double) = this()

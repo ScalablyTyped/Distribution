@@ -144,7 +144,7 @@ object tablesorterConfigurationMod {
     /**
       * The storage for the `build-table` widget.
       */
-    var data: js.UndefOr[js.Object | js.Array[js.Array[js.Any]]] = js.undefined
+    var data: js.UndefOr[js.Object | js.Array[js.Array[Any]]] = js.undefined
     
     /**
       * The date-range for two-digit years.
@@ -494,11 +494,11 @@ object tablesorterConfigurationMod {
       
       inline def setCssProcessingUndefined: Self = StObject.set(x, "cssProcessing", js.undefined)
       
-      inline def setData(value: js.Object | js.Array[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object | js.Array[js.Array[Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Array[Any]*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDateRange(value: Double): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
       
@@ -610,19 +610,19 @@ object tablesorterConfigurationMod {
       
       inline def setSortAppendUndefined: Self = StObject.set(x, "sortAppend", js.undefined)
       
-      inline def setSortAppendVarargs(value: SortDefinition*): Self = StObject.set(x, "sortAppend", js.Array(value :_*))
+      inline def setSortAppendVarargs(value: SortDefinition*): Self = StObject.set(x, "sortAppend", js.Array(value*))
       
       inline def setSortForce(value: js.Array[SortDefinition]): Self = StObject.set(x, "sortForce", value.asInstanceOf[js.Any])
       
       inline def setSortForceUndefined: Self = StObject.set(x, "sortForce", js.undefined)
       
-      inline def setSortForceVarargs(value: SortDefinition*): Self = StObject.set(x, "sortForce", js.Array(value :_*))
+      inline def setSortForceVarargs(value: SortDefinition*): Self = StObject.set(x, "sortForce", js.Array(value*))
       
       inline def setSortList(value: js.Array[SortDefinition]): Self = StObject.set(x, "sortList", value.asInstanceOf[js.Any])
       
       inline def setSortListUndefined: Self = StObject.set(x, "sortList", js.undefined)
       
-      inline def setSortListVarargs(value: SortDefinition*): Self = StObject.set(x, "sortList", js.Array(value :_*))
+      inline def setSortListVarargs(value: SortDefinition*): Self = StObject.set(x, "sortList", js.Array(value*))
       
       inline def setSortLocaleCompare(value: Boolean): Self = StObject.set(x, "sortLocaleCompare", value.asInstanceOf[js.Any])
       
@@ -702,7 +702,7 @@ object tablesorterConfigurationMod {
       
       inline def setWidgetsUndefined: Self = StObject.set(x, "widgets", js.undefined)
       
-      inline def setWidgetsVarargs(value: String*): Self = StObject.set(x, "widgets", js.Array(value :_*))
+      inline def setWidgetsVarargs(value: String*): Self = StObject.set(x, "widgets", js.Array(value*))
       
       inline def setWidthFixed(value: Boolean): Self = StObject.set(x, "widthFixed", value.asInstanceOf[js.Any])
       

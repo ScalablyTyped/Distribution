@@ -1,7 +1,7 @@
 package typings.amqplib
 
 import typings.amqplib.amqplibStrings.timestamp
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,41 +12,20 @@ object anon {
     
     var mechanism: String
     
-    def response(): Buffer
-  }
-  object Mechanism {
-    
-    inline def apply(mechanism: String, response: () => Buffer): Mechanism = {
-      val __obj = js.Dynamic.literal(mechanism = mechanism.asInstanceOf[js.Any], response = js.Any.fromFunction0(response))
-      __obj.asInstanceOf[Mechanism]
-    }
-    
-    extension [Self <: Mechanism](x: Self) {
-      
-      inline def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
-      
-      inline def setResponse(value: () => Buffer): Self = StObject.set(x, "response", js.Any.fromFunction0(value))
-    }
-  }
-  
-  trait Password extends StObject {
-    
-    var mechanism: String
-    
     var password: String
     
     def response(): Buffer
     
     var username: String
   }
-  object Password {
+  object Mechanism {
     
-    inline def apply(mechanism: String, password: String, response: () => Buffer, username: String): Password = {
+    inline def apply(mechanism: String, password: String, response: () => Buffer, username: String): Mechanism = {
       val __obj = js.Dynamic.literal(mechanism = mechanism.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], response = js.Any.fromFunction0(response), username = username.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Password]
+      __obj.asInstanceOf[Mechanism]
     }
     
-    extension [Self <: Password](x: Self) {
+    extension [Self <: Mechanism](x: Self) {
       
       inline def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
       
@@ -55,6 +34,44 @@ object anon {
       inline def setResponse(value: () => Buffer): Self = StObject.set(x, "response", js.Any.fromFunction0(value))
       
       inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Response extends StObject {
+    
+    var mechanism: String
+    
+    def response(): Buffer
+  }
+  object Response {
+    
+    inline def apply(mechanism: String, response: () => Buffer): Response = {
+      val __obj = js.Dynamic.literal(mechanism = mechanism.asInstanceOf[js.Any], response = js.Any.fromFunction0(response))
+      __obj.asInstanceOf[Response]
+    }
+    
+    extension [Self <: Response](x: Self) {
+      
+      inline def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
+      
+      inline def setResponse(value: () => Buffer): Self = StObject.set(x, "response", js.Any.fromFunction0(value))
+    }
+  }
+  
+  trait ServerProperties extends StObject {
+    
+    var serverProperties: typings.amqplib.propertiesMod.ServerProperties
+  }
+  object ServerProperties {
+    
+    inline def apply(serverProperties: typings.amqplib.propertiesMod.ServerProperties): ServerProperties = {
+      val __obj = js.Dynamic.literal(serverProperties = serverProperties.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ServerProperties]
+    }
+    
+    extension [Self <: ServerProperties](x: Self) {
+      
+      inline def setServerProperties(value: typings.amqplib.propertiesMod.ServerProperties): Self = StObject.set(x, "serverProperties", value.asInstanceOf[js.Any])
     }
   }
   

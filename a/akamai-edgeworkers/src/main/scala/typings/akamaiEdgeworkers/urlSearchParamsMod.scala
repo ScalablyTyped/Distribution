@@ -15,7 +15,7 @@ object urlSearchParamsMod {
   /**
     * Create a new URLSearchParams object.
     */
-  class default ()
+  open class default ()
     extends StObject
        with URLSearchParams {
     def this(init: String) = this()

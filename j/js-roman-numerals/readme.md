@@ -10,10 +10,10 @@ Roman Numerals - JS Library
 | ------------------ | :-------------: |
 | Full name          | js-roman-numerals |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1112 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 86.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/bcotrim/roman-numerals#readme)

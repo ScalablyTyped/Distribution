@@ -6,10 +6,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EnumObject
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.iobroker.objectsMod.global.ioBroker._ObjectIdToObjectType because Already inherited */ trait EnumObject
   extends StObject
      with BaseObject
-     with AnyObject {
+     with AnyObject
+     with _InferGetObjectViewItemType[Any, Any] {
   
   @JSName("common")
   var common_EnumObject: EnumCommon
@@ -19,7 +21,7 @@ trait EnumObject
 }
 object EnumObject {
   
-  inline def apply(_id: String, common: EnumCommon, native: Record[String, js.Any]): EnumObject = {
+  inline def apply(_id: String, common: EnumCommon, native: Record[String, Any]): EnumObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("enum")
     __obj.asInstanceOf[EnumObject]

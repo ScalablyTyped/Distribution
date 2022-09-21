@@ -7,22 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetRateBasedStatementManagedKeysRequest extends StObject {
   
   /**
-    * The name of the rate-based rule to get the keys for.
+    * The name of the rule group reference statement in your web ACL. This is required only when you have the rate-based rule nested inside a rule group. 
+    */
+  var RuleGroupRuleName: js.UndefOr[EntityName] = js.undefined
+  
+  /**
+    * The name of the rate-based rule to get the keys for. If you have the rule defined inside a rule group that you're using in your web ACL, also provide the name of the rule group reference statement in the request parameter RuleGroupRuleName.
     */
   var RuleName: EntityName
   
   /**
-    * Specifies whether this is for an AWS CloudFront distribution or for a regional application. A regional application can be an Application Load Balancer (ALB), an API Gateway REST API, or an AppSync GraphQL API.  To work with CloudFront, you must also specify the Region US East (N. Virginia) as follows:    CLI - Specify the Region when you use the CloudFront scope: --scope=CLOUDFRONT --region=us-east-1.    API and SDKs - For all calls, use the Region endpoint us-east-1.   
+    * Specifies whether this is for an Amazon CloudFront distribution or for a regional application. A regional application can be an Application Load Balancer (ALB), an Amazon API Gateway REST API, an AppSync GraphQL API, or an Amazon Cognito user pool.  To work with CloudFront, you must also specify the Region US East (N. Virginia) as follows:    CLI - Specify the Region when you use the CloudFront scope: --scope=CLOUDFRONT --region=us-east-1.    API and SDKs - For all calls, use the Region endpoint us-east-1.   
     */
   var Scope: typings.awsSdk.wafv2Mod.Scope
   
   /**
-    * The unique identifier for the Web ACL. This ID is returned in the responses to create and list commands. You provide it to operations like update and delete.
+    * The unique identifier for the web ACL. This ID is returned in the responses to create and list commands. You provide it to operations like update and delete.
     */
   var WebACLId: EntityId
   
   /**
-    * The name of the Web ACL. You cannot change the name of a Web ACL after you create it.
+    * The name of the web ACL. You cannot change the name of a web ACL after you create it.
     */
   var WebACLName: EntityName
 }
@@ -34,6 +39,10 @@ object GetRateBasedStatementManagedKeysRequest {
   }
   
   extension [Self <: GetRateBasedStatementManagedKeysRequest](x: Self) {
+    
+    inline def setRuleGroupRuleName(value: EntityName): Self = StObject.set(x, "RuleGroupRuleName", value.asInstanceOf[js.Any])
+    
+    inline def setRuleGroupRuleNameUndefined: Self = StObject.set(x, "RuleGroupRuleName", js.undefined)
     
     inline def setRuleName(value: EntityName): Self = StObject.set(x, "RuleName", value.asInstanceOf[js.Any])
     

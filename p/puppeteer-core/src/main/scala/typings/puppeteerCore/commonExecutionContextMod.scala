@@ -1,15 +1,12 @@
 package typings.puppeteerCore
 
-import typings.devtoolsProtocol.mod.Protocol.DOM.BackendNodeId
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ExecutionContextDescription
-import typings.puppeteerCore.commonConnectionMod.CDPSession
-import typings.puppeteerCore.commonDomworldMod.DOMWorld
-import typings.puppeteerCore.commonEvalTypesMod.EvaluateHandleFn
-import typings.puppeteerCore.commonEvalTypesMod.SerializableOrJSHandle
-import typings.puppeteerCore.commonFrameManagerMod.Frame
-import typings.puppeteerCore.commonJshandleMod.ElementHandle
-import typings.puppeteerCore.commonJshandleMod.JSHandle
-import typings.std.Element
+import typings.puppeteerCore.commonIsolatedWorldMod.IsolatedWorld
+import typings.puppeteerCore.commonTypesMod.EvaluateFunc
+import typings.puppeteerCore.commonTypesMod.HandleFor
+import typings.puppeteerCore.puppeteerCommonConnectionMod.CDPSession
+import typings.std.Awaited
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,25 +15,16 @@ object commonExecutionContextMod {
   
   @JSImport("puppeteer-core/lib/esm/puppeteer/common/ExecutionContext", "EVALUATION_SCRIPT_URL")
   @js.native
-  val EVALUATION_SCRIPT_URL: /* "__puppeteer_evaluation_script__" */ String = js.native
+  val EVALUATION_SCRIPT_URL: /* "pptr://__puppeteer_evaluation_script__" */ String = js.native
   
   @JSImport("puppeteer-core/lib/esm/puppeteer/common/ExecutionContext", "ExecutionContext")
   @js.native
-  class ExecutionContext protected () extends StObject {
+  open class ExecutionContext protected () extends StObject {
     /**
       * @internal
       */
-    def this(client: CDPSession, contextPayload: ExecutionContextDescription, world: DOMWorld) = this()
-    
-    /**
-      * @internal
-      */
-    def _adoptBackendNodeId(backendNodeId: BackendNodeId): js.Promise[ElementHandle[Element]] = js.native
-    
-    /**
-      * @internal
-      */
-    def _adoptElementHandle(elementHandle: ElementHandle[Element]): js.Promise[ElementHandle[Element]] = js.native
+    def this(client: CDPSession, contextPayload: ExecutionContextDescription) = this()
+    def this(client: CDPSession, contextPayload: ExecutionContextDescription, world: IsolatedWorld) = this()
     
     /**
       * @internal
@@ -48,136 +36,123 @@ object commonExecutionContextMod {
       */
     var _contextId: Double = js.native
     
-    /* private */ var _evaluateInternal: js.Any = js.native
+    /**
+      * @internal
+      */
+    var _contextName: String = js.native
     
     /**
       * @internal
       */
-    var _world: DOMWorld = js.native
+    var _world: js.UndefOr[IsolatedWorld] = js.native
     
-    def evaluate[ReturnType /* <: js.Any */](pageFunction: String, args: js.Any*): js.Promise[ReturnType] = js.native
     /**
-      * @remarks
-      * If the function passed to the `executionContext.evaluate` returns a
-      * Promise, then `executionContext.evaluate` would wait for the promise to
-      * resolve and return its value. If the function passed to the
-      * `executionContext.evaluate` returns a non-serializable value, then
-      * `executionContext.evaluate` resolves to `undefined`. DevTools Protocol also
-      * supports transferring some additional values that are not serializable by
-      * `JSON`: `-0`, `NaN`, `Infinity`, `-Infinity`, and bigint literals.
-      *
+      * Evaluates the given function.
       *
       * @example
-      * ```js
+      *
+      * ```ts
       * const executionContext = await page.mainFrame().executionContext();
       * const result = await executionContext.evaluate(() => Promise.resolve(8 * 7))* ;
       * console.log(result); // prints "56"
       * ```
       *
       * @example
-      * A string can also be passed in instead of a function.
+      * A string can also be passed in instead of a function:
       *
-      * ```js
+      * ```ts
       * console.log(await executionContext.evaluate('1 + 2')); // prints "3"
       * ```
       *
       * @example
-      * {@link JSHandle} instances can be passed as arguments to the
-      * `executionContext.* evaluate`:
-      * ```js
+      * Handles can also be passed as `args`. They resolve to their referenced object:
+      *
+      * ```ts
       * const oneHandle = await executionContext.evaluateHandle(() => 1);
       * const twoHandle = await executionContext.evaluateHandle(() => 2);
       * const result = await executionContext.evaluate(
-      *    (a, b) => a + b, oneHandle, * twoHandle
+      *   (a, b) => a + b,
+      *   oneHandle,
+      *   twoHandle
       * );
       * await oneHandle.dispose();
       * await twoHandle.dispose();
       * console.log(result); // prints '3'.
       * ```
-      * @param pageFunction a function to be evaluated in the `executionContext`
-      * @param args argument to pass to the page function
       *
-      * @returns A promise that resolves to the return value of the given function.
+      * @param pageFunction - The function to evaluate.
+      * @param args - Additional arguments to pass into the function.
+      * @returns The result of evaluating the function. If the result is an object,
+      * a vanilla object containing the serializable properties of the result is
+      * returned.
       */
-    def evaluate[ReturnType /* <: js.Any */](pageFunction: js.Function, args: js.Any*): js.Promise[ReturnType] = js.native
+    def evaluate[Params /* <: js.Array[Any] */, Func /* <: EvaluateFunc[Params] */](
+      pageFunction: Func,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Params is not an array type */ args: Params
+    ): js.Promise[Awaited[ReturnType[Func]]] = js.native
+    def evaluate[Params /* <: js.Array[Any] */, Func /* <: EvaluateFunc[Params] */](
+      pageFunction: String,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Params is not an array type */ args: Params
+    ): js.Promise[Awaited[ReturnType[Func]]] = js.native
     
     /**
-      * @remarks
-      * The only difference between `executionContext.evaluate` and
-      * `executionContext.evaluateHandle` is that `executionContext.evaluateHandle`
-      * returns an in-page object (a {@link JSHandle}).
-      * If the function passed to the `executionContext.evaluateHandle` returns a
-      * Promise, then `executionContext.evaluateHandle` would wait for the
-      * promise to resolve and return its value.
+      * Evaluates the given function.
+      *
+      * Unlike {@link ExecutionContext.evaluate | evaluate}, this method returns a
+      * handle to the result of the function.
+      *
+      * This method may be better suited if the object cannot be serialized (e.g.
+      * `Map`) and requires further manipulation.
       *
       * @example
-      * ```js
+      *
+      * ```ts
       * const context = await page.mainFrame().executionContext();
-      * const aHandle = await context.evaluateHandle(() => Promise.resolve(self));
-      * aHandle; // Handle for the global object.
+      * const handle: JSHandle<typeof globalThis> = await context.evaluateHandle(
+      *   () => Promise.resolve(self)
+      * );
       * ```
       *
       * @example
       * A string can also be passed in instead of a function.
       *
-      * ```js
-      * // Handle for the '3' * object.
-      * const aHandle = await context.evaluateHandle('1 + 2');
+      * ```ts
+      * const handle: JSHandle<number> = await context.evaluateHandle('1 + 2');
       * ```
       *
       * @example
-      * JSHandle instances can be passed as arguments
-      * to the `executionContext.* evaluateHandle`:
+      * Handles can also be passed as `args`. They resolve to their referenced object:
       *
-      * ```js
-      * const aHandle = await context.evaluateHandle(() => document.body);
-      * const resultHandle = await context.evaluateHandle(body => body.innerHTML, * aHandle);
-      * console.log(await resultHandle.jsonValue()); // prints body's innerHTML
-      * await aHandle.dispose();
-      * await resultHandle.dispose();
+      * ```ts
+      * const bodyHandle: ElementHandle<HTMLBodyElement> =
+      *   await context.evaluateHandle(() => {
+      *     return document.body;
+      *   });
+      * const stringHandle: JSHandle<string> = await context.evaluateHandle(
+      *   body => body.innerHTML,
+      *   body
+      * );
+      * console.log(await stringHandle.jsonValue()); // prints body's innerHTML
+      * // Always dispose your garbage! :)
+      * await bodyHandle.dispose();
+      * await stringHandle.dispose();
       * ```
       *
-      * @param pageFunction a function to be evaluated in the `executionContext`
-      * @param args argument to pass to the page function
-      *
-      * @returns A promise that resolves to the return value of the given function
-      * as an in-page object (a {@link JSHandle}).
+      * @param pageFunction - The function to evaluate.
+      * @param args - Additional arguments to pass into the function.
+      * @returns A {@link JSHandle | handle} to the result of evaluating the
+      * function. If the result is a `Node`, then this will return an
+      * {@link ElementHandle | element handle}.
       */
-    def evaluateHandle[HandleType /* <: JSHandle | ElementHandle[Element] */](pageFunction: EvaluateHandleFn, args: SerializableOrJSHandle*): js.Promise[HandleType] = js.native
+    def evaluateHandle[Params /* <: js.Array[Any] */, Func /* <: EvaluateFunc[Params] */](
+      pageFunction: Func,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Params is not an array type */ args: Params
+    ): js.Promise[HandleFor[Awaited[ReturnType[Func]]]] = js.native
+    def evaluateHandle[Params /* <: js.Array[Any] */, Func /* <: EvaluateFunc[Params] */](
+      pageFunction: String,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Params is not an array type */ args: Params
+    ): js.Promise[HandleFor[Awaited[ReturnType[Func]]]] = js.native
     
-    /**
-      * @remarks
-      *
-      * Not every execution context is associated with a frame. For
-      * example, workers and extensions have execution contexts that are not
-      * associated with frames.
-      *
-      * @returns The frame associated with this execution context.
-      */
-    def frame(): Frame | Null = js.native
-    
-    /**
-      * This method iterates the JavaScript heap and finds all the objects with the
-      * given prototype.
-      * @remarks
-      * @example
-      * ```js
-      * // Create a Map object
-      * await page.evaluate(() => window.map = new Map());
-      * // Get a handle to the Map object prototype
-      * const mapPrototype = await page.evaluateHandle(() => Map.prototype);
-      * // Query all map instances into an array
-      * const mapInstances = await page.queryObjects(mapPrototype);
-      * // Count amount of map objects in heap
-      * const count = await page.evaluate(maps => maps.length, mapInstances);
-      * await mapInstances.dispose();
-      * await mapPrototype.dispose();
-      * ```
-      *
-      * @param prototypeHandle a handle to the object prototype
-      *
-      * @returns A handle to an array of objects with the given prototype.
-      */
-    def queryObjects(prototypeHandle: JSHandle): js.Promise[JSHandle] = js.native
+    /* private */ var `private`: Any = js.native
   }
 }

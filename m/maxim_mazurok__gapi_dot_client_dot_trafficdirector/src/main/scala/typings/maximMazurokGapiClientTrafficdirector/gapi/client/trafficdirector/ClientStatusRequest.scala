@@ -22,6 +22,6 @@ object ClientStatusRequest {
     
     inline def setNodeMatchersUndefined: Self = StObject.set(x, "nodeMatchers", js.undefined)
     
-    inline def setNodeMatchersVarargs(value: NodeMatcher*): Self = StObject.set(x, "nodeMatchers", js.Array(value :_*))
+    inline def setNodeMatchersVarargs(value: NodeMatcher*): Self = StObject.set(x, "nodeMatchers", js.Array(value*))
   }
 }

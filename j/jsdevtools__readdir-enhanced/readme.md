@@ -10,10 +10,10 @@ fs.readdir with sync, async, streaming, and async iterator APIs + filtering, rec
 | ------------------ | :-------------: |
 | Full name          | @jsdevtools/readdir-enhanced |
 | Keywords           | fs, readdir, async, promise, iterator, generator, async-iterator, stream, event, event-emitter, recursive, deep, walk, crawl, filter, absolute |
-| # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 38096 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 9394.333333333334 |
+| # stars            | 79.0 |
 
 ## Links
 - [Homepage](https://jstools.dev/readdir-enhanced)

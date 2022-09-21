@@ -84,7 +84,7 @@ object IImageOptions {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: IBaseFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: IBaseFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setMinimumScaleTrigger(value: Double): Self = StObject.set(x, "minimumScaleTrigger", value.asInstanceOf[js.Any])
     

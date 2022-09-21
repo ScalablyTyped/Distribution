@@ -32,12 +32,12 @@ trait ModifyInstancePlacementRequest extends StObject {
   var InstanceId: typings.awsSdk.ec2Mod.InstanceId
   
   /**
-    * Reserved for future use.
+    * The number of the partition in which to place the instance. Valid only if the placement group strategy is set to partition.
     */
   var PartitionNumber: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The tenancy for the instance.
+    * The tenancy for the instance.  For T3 instances, you can't change the tenancy from dedicated to host, or from host to dedicated. Attempting to make one of these unsupported tenancy changes results in the InvalidTenancy error code. 
     */
   var Tenancy: js.UndefOr[HostTenancy] = js.undefined
 }

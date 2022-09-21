@@ -17,7 +17,7 @@ trait ListDataFormat extends StObject {
   
   val DecimalPlaces: Double
   
-  val DefaultValue: js.Any
+  val DefaultValue: Any
   
   /* private */ @JSName("Excel.ListDataFormat_typekey")
   var ExcelDotListDataFormat_typekey: ListDataFormat
@@ -30,7 +30,7 @@ trait ListDataFormat extends StObject {
   
   val MinNumber: Double | Null
   
-  val Parent: js.Any
+  val Parent: Any
   
   val ReadOnly: Boolean
   
@@ -50,11 +50,11 @@ object ListDataFormat {
     Choices: SafeArray[String],
     Creator: XlCreator,
     DecimalPlaces: Double,
-    DefaultValue: js.Any,
+    DefaultValue: Any,
     ExcelDotListDataFormat_typekey: ListDataFormat,
     IsPercent: Boolean,
     MaxCharacters: Double,
-    Parent: js.Any,
+    Parent: Any,
     ReadOnly: Boolean,
     Required: Boolean,
     Type: XlListDataType,
@@ -78,7 +78,7 @@ object ListDataFormat {
     
     inline def setDecimalPlaces(value: Double): Self = StObject.set(x, "DecimalPlaces", value.asInstanceOf[js.Any])
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
     inline def setExcelDotListDataFormat_typekey(value: ListDataFormat): Self = StObject.set(x, "Excel.ListDataFormat_typekey", value.asInstanceOf[js.Any])
     
@@ -96,7 +96,7 @@ object ListDataFormat {
     
     inline def setMinNumberNull: Self = StObject.set(x, "MinNumber", null)
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     

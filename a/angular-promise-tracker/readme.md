@@ -10,10 +10,10 @@ angular-promise-tracker =======================
 | ------------------ | :-------------: |
 | Full name          | angular-promise-tracker |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 21681 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1016.6666666666666 |
+| # stars            | 563.0 |
 
 ## Links
 - [Homepage](https://github.com/ajoslin/angular-promise-tracker)

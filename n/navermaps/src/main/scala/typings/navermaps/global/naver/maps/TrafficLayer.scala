@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.TrafficLayer")
 @js.native
-class TrafficLayer ()
+open class TrafficLayer ()
   extends StObject
      with typings.navermaps.naver.maps.TrafficLayer {
   def this(option: TrafficLayerOptions) = this()

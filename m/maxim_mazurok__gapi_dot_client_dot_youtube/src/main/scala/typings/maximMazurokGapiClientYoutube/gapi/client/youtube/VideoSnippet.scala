@@ -30,7 +30,7 @@ trait VideoSnippet extends StObject {
   /** Localized snippet selected with the hl parameter. If no such localization exists, this field is populated with the default snippet. (Read-only) */
   var localized: js.UndefOr[VideoLocalization] = js.undefined
   
-  /** The date and time that the video was uploaded. The value is specified in ISO 8601 format. */
+  /** The date and time when the video was uploaded. */
   var publishedAt: js.UndefOr[String] = js.undefined
   
   /** A list of keyword tags associated with the video. Tags may contain spaces. */
@@ -94,7 +94,7 @@ object VideoSnippet {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setThumbnails(value: ThumbnailDetails): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     

@@ -114,7 +114,7 @@ object Win32LobApp {
     
     inline def setReturnCodesUndefined: Self = StObject.set(x, "returnCodes", js.undefined)
     
-    inline def setReturnCodesVarargs(value: Win32LobAppReturnCode*): Self = StObject.set(x, "returnCodes", js.Array(value :_*))
+    inline def setReturnCodesVarargs(value: Win32LobAppReturnCode*): Self = StObject.set(x, "returnCodes", js.Array(value*))
     
     inline def setRules(value: NullableOption[js.Array[Win32LobAppRule]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
@@ -122,7 +122,7 @@ object Win32LobApp {
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: Win32LobAppRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Win32LobAppRule*): Self = StObject.set(x, "rules", js.Array(value*))
     
     inline def setSetupFilePath(value: NullableOption[String]): Self = StObject.set(x, "setupFilePath", value.asInstanceOf[js.Any])
     

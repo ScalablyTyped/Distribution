@@ -14,17 +14,17 @@ trait DataSourceOptions extends StObject {
   
   var change: js.UndefOr[js.Function1[/* e */ DataSourceChangeEvent, Unit]] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var error: js.UndefOr[js.Function1[/* e */ DataSourceErrorEvent, Unit]] = js.undefined
   
-  var filter: js.UndefOr[js.Any] = js.undefined
+  var filter: js.UndefOr[Any] = js.undefined
   
   var group: js.UndefOr[DataSourceGroupItem | js.Array[DataSourceGroupItem]] = js.undefined
   
   var inPlaceSort: js.UndefOr[Boolean] = js.undefined
   
-  var offlineStorage: js.UndefOr[js.Any] = js.undefined
+  var offlineStorage: js.UndefOr[Any] = js.undefined
   
   var page: js.UndefOr[Double] = js.undefined
   
@@ -48,7 +48,7 @@ trait DataSourceOptions extends StObject {
   
   var serverSorting: js.UndefOr[Boolean] = js.undefined
   
-  var sort: js.UndefOr[js.Any] = js.undefined
+  var sort: js.UndefOr[Any] = js.undefined
   
   var sync: js.UndefOr[js.Function1[/* e */ DataSourceEvent, Unit]] = js.undefined
   
@@ -69,7 +69,7 @@ object DataSourceOptions {
     
     inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
-    inline def setAggregateVarargs(value: DataSourceAggregateItem*): Self = StObject.set(x, "aggregate", js.Array(value :_*))
+    inline def setAggregateVarargs(value: DataSourceAggregateItem*): Self = StObject.set(x, "aggregate", js.Array(value*))
     
     inline def setAutoSync(value: Boolean): Self = StObject.set(x, "autoSync", value.asInstanceOf[js.Any])
     
@@ -83,7 +83,7 @@ object DataSourceOptions {
     
     inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -91,7 +91,7 @@ object DataSourceOptions {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
@@ -99,13 +99,13 @@ object DataSourceOptions {
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    inline def setGroupVarargs(value: DataSourceGroupItem*): Self = StObject.set(x, "group", js.Array(value :_*))
+    inline def setGroupVarargs(value: DataSourceGroupItem*): Self = StObject.set(x, "group", js.Array(value*))
     
     inline def setInPlaceSort(value: Boolean): Self = StObject.set(x, "inPlaceSort", value.asInstanceOf[js.Any])
     
     inline def setInPlaceSortUndefined: Self = StObject.set(x, "inPlaceSort", js.undefined)
     
-    inline def setOfflineStorage(value: js.Any): Self = StObject.set(x, "offlineStorage", value.asInstanceOf[js.Any])
+    inline def setOfflineStorage(value: Any): Self = StObject.set(x, "offlineStorage", value.asInstanceOf[js.Any])
     
     inline def setOfflineStorageUndefined: Self = StObject.set(x, "offlineStorage", js.undefined)
     
@@ -153,7 +153,7 @@ object DataSourceOptions {
     
     inline def setServerSortingUndefined: Self = StObject.set(x, "serverSorting", js.undefined)
     
-    inline def setSort(value: js.Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     

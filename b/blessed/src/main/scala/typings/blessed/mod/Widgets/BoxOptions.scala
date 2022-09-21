@@ -8,7 +8,7 @@ trait BoxOptions
   extends StObject
      with ScrollableTextOptions {
   
-  var bindings: js.UndefOr[js.Any] = js.undefined
+  var bindings: js.UndefOr[Any] = js.undefined
 }
 object BoxOptions {
   
@@ -19,7 +19,7 @@ object BoxOptions {
   
   extension [Self <: BoxOptions](x: Self) {
     
-    inline def setBindings(value: js.Any): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
+    inline def setBindings(value: Any): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
   }

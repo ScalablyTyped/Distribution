@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "ColorPickerBase")
 @js.native
-class ColorPickerBase protected ()
+open class ColorPickerBase protected ()
   extends typings.officeUiFabricReact.libColorPickerMod.ColorPickerBase {
   def this(props: IColorPickerProps) = this()
 }

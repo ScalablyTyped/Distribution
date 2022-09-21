@@ -27,6 +27,11 @@ trait ItemReference extends StObject {
   // Returns identifiers useful for SharePoint REST compatibility. Read-only.
   var sharepointIds: js.UndefOr[NullableOption[SharepointIds]] = js.undefined
   
+  /**
+    * For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document
+    * library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque
+    * string that consists of three identifiers of the site. For OneDrive, this property is not populated.
+    */
   var siteId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ItemReference {

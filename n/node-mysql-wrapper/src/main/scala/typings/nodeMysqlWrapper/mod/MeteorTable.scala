@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("node-mysql-wrapper", "MeteorTable")
 @js.native
-class MeteorTable[T] protected () extends StObject {
+open class MeteorTable[T] protected () extends StObject {
   def this(table: Table[T]) = this()
   
   def collection(): Collection[T] = js.native
   def collection(nameOfCollection: String): Collection[T] = js.native
-  def collection(nameOfCollection: String, fillWithCriteria: js.Any): Collection[T] = js.native
-  def collection(nameOfCollection: Unit, fillWithCriteria: js.Any): Collection[T] = js.native
+  def collection(nameOfCollection: String, fillWithCriteria: Any): Collection[T] = js.native
+  def collection(nameOfCollection: Unit, fillWithCriteria: Any): Collection[T] = js.native
   
   def insert(doc: T): T = js.native
   def insert(doc: T, callback: js.Function1[/* _result */ T, Unit]): T = js.native
   
-  def remove(selector: js.Any): DeleteAnswer = js.native
-  def remove(selector: js.Any, callback: js.Function0[DeleteAnswer]): DeleteAnswer = js.native
+  def remove(selector: Any): DeleteAnswer = js.native
+  def remove(selector: Any, callback: js.Function0[DeleteAnswer]): DeleteAnswer = js.native
   
   var table: Table[T] = js.native
   
-  def update(selector: js.Any, modifier: js.Any): Double = js.native
-  def update(selector: js.Any, modifier: js.Any, options: Unit, callback: js.Function1[/* result */ T, js.Any]): Double = js.native
-  def update(selector: js.Any, modifier: js.Any, options: Multi): Double = js.native
-  def update(selector: js.Any, modifier: js.Any, options: Multi, callback: js.Function1[/* result */ T, js.Any]): Double = js.native
+  def update(selector: Any, modifier: Any): Double = js.native
+  def update(selector: Any, modifier: Any, options: Unit, callback: js.Function1[/* result */ T, Any]): Double = js.native
+  def update(selector: Any, modifier: Any, options: Multi): Double = js.native
+  def update(selector: Any, modifier: Any, options: Multi, callback: js.Function1[/* result */ T, Any]): Double = js.native
 }

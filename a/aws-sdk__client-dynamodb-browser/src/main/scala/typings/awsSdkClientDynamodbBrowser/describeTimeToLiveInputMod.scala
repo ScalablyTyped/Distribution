@@ -8,5 +8,5 @@ object describeTimeToLiveInputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/DescribeTimeToLiveInput", "DescribeTimeToLiveInput")
   @js.native
-  val DescribeTimeToLiveInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DescribeTimeToLiveInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

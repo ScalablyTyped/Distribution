@@ -10,7 +10,7 @@ object xmlCollectionMod {
   
   @JSImport("xml-core/dist/types/xml_collection", "XmlCollection")
   @js.native
-  class XmlCollection[I /* <: XmlObject */] ()
+  open class XmlCollection[I /* <: XmlObject */] ()
     extends XmlObject
        with ICollection[I] {
     def this(properties: js.Object) = this()
@@ -80,7 +80,7 @@ object xmlCollectionMod {
     
     @JSImport("xml-core/dist/types/xml_collection", "XmlCollection.parser")
     @js.native
-    def parser: js.Any = js.native
-    inline def parser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parser")(x.asInstanceOf[js.Any])
+    def parser: Any = js.native
+    inline def parser_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parser")(x.asInstanceOf[js.Any])
   }
 }

@@ -8,5 +8,5 @@ object accessControlPolicyListMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/_AccessControlPolicyList", "_AccessControlPolicyList")
   @js.native
-  val AccessControlPolicyList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val AccessControlPolicyList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

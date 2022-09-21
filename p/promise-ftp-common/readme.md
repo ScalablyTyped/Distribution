@@ -10,10 +10,10 @@ error classes and other common code used in promise-ftp and promise-sftp
 | ------------------ | :-------------: |
 | Full name          | promise-ftp-common |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 1052932 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 130242.33333333333 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/realtymaps/promise-ftp-common#readme)

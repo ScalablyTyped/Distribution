@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGAnimatedPoints extends StObject {
   
+  /* standard dom */
   val animatedPoints: SVGPointList
   
+  /* standard dom */
   val points: SVGPointList
 }
 object SVGAnimatedPoints {

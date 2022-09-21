@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.android
+  - typings.microsoftGraph.microsoftGraphStrings.androidForWork
   - typings.microsoftGraph.microsoftGraphStrings.iOS
   - typings.microsoftGraph.microsoftGraphStrings.macOS
   - typings.microsoftGraph.microsoftGraphStrings.windowsPhone81
   - typings.microsoftGraph.microsoftGraphStrings.windows81AndLater
   - typings.microsoftGraph.microsoftGraphStrings.windows10AndLater
-  - typings.microsoftGraph.microsoftGraphStrings.androidWorkProfile
   - typings.microsoftGraph.microsoftGraphStrings.all
 */
 trait PolicyPlatformType extends StObject
@@ -21,7 +21,7 @@ object PolicyPlatformType {
   
   inline def android: typings.microsoftGraph.microsoftGraphStrings.android = "android".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.android]
   
-  inline def androidWorkProfile: typings.microsoftGraph.microsoftGraphStrings.androidWorkProfile = "androidWorkProfile".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.androidWorkProfile]
+  inline def androidForWork: typings.microsoftGraph.microsoftGraphStrings.androidForWork = "androidForWork".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.androidForWork]
   
   inline def iOS: typings.microsoftGraph.microsoftGraphStrings.iOS = "iOS".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.iOS]
   

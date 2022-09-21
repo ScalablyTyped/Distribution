@@ -22,8 +22,8 @@ object mod extends Shortcut {
     def toJpeg(node: Node): js.Promise[String] = js.native
     def toJpeg(node: Node, options: Options): js.Promise[String] = js.native
     
-    def toPixelData(node: Node): js.Promise[String] = js.native
-    def toPixelData(node: Node, options: Options): js.Promise[String] = js.native
+    def toPixelData(node: Node): js.Promise[js.typedarray.Uint8ClampedArray] = js.native
+    def toPixelData(node: Node, options: Options): js.Promise[js.typedarray.Uint8ClampedArray] = js.native
     
     def toPng(node: Node): js.Promise[String] = js.native
     def toPng(node: Node, options: Options): js.Promise[String] = js.native

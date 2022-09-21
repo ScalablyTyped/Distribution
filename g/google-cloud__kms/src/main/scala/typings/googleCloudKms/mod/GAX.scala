@@ -128,7 +128,7 @@ object GAX {
       
       inline def setRetryCodes(value: js.Array[String]): Self = StObject.set(x, "retryCodes", value.asInstanceOf[js.Any])
       
-      inline def setRetryCodesVarargs(value: String*): Self = StObject.set(x, "retryCodes", js.Array(value :_*))
+      inline def setRetryCodesVarargs(value: String*): Self = StObject.set(x, "retryCodes", js.Array(value*))
     }
   }
 }

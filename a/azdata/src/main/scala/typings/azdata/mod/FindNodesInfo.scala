@@ -41,7 +41,7 @@ object FindNodesInfo {
     
     inline def setParentObjectNames(value: js.Array[String]): Self = StObject.set(x, "parentObjectNames", value.asInstanceOf[js.Any])
     
-    inline def setParentObjectNamesVarargs(value: String*): Self = StObject.set(x, "parentObjectNames", js.Array(value :_*))
+    inline def setParentObjectNamesVarargs(value: String*): Self = StObject.set(x, "parentObjectNames", js.Array(value*))
     
     inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

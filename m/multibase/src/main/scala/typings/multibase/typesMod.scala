@@ -9,7 +9,6 @@ import typings.multibase.multibaseStrings.t_
 import typings.multibase.multibaseStrings.u_
 import typings.multibase.multibaseStrings.v_
 import typings.multibase.multibaseStrings.z_
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -312,22 +311,22 @@ object typesMod {
   
   trait Codec extends StObject {
     
-    def decode(hash: String): Uint8Array
+    def decode(hash: String): js.typedarray.Uint8Array
     
-    def encode(buffer: Uint8Array): String
+    def encode(buffer: js.typedarray.Uint8Array): String
   }
   object Codec {
     
-    inline def apply(decode: String => Uint8Array, encode: Uint8Array => String): Codec = {
+    inline def apply(decode: String => js.typedarray.Uint8Array, encode: js.typedarray.Uint8Array => String): Codec = {
       val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
       __obj.asInstanceOf[Codec]
     }
     
     extension [Self <: Codec](x: Self) {
       
-      inline def setDecode(value: String => Uint8Array): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      inline def setDecode(value: String => js.typedarray.Uint8Array): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
-      inline def setEncode(value: Uint8Array => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: js.typedarray.Uint8Array => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     }
   }
   

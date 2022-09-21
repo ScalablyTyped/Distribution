@@ -25,10 +25,10 @@ object Captured {
     
     inline def setCaptured(value: js.Array[CapturedBarcode]): Self = StObject.set(x, "captured", value.asInstanceOf[js.Any])
     
-    inline def setCapturedVarargs(value: CapturedBarcode*): Self = StObject.set(x, "captured", js.Array(value :_*))
+    inline def setCapturedVarargs(value: CapturedBarcode*): Self = StObject.set(x, "captured", js.Array(value*))
     
     inline def setRequired(value: js.Array[Barcode]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    inline def setRequiredVarargs(value: Barcode*): Self = StObject.set(x, "required", js.Array(value :_*))
+    inline def setRequiredVarargs(value: Barcode*): Self = StObject.set(x, "required", js.Array(value*))
   }
 }

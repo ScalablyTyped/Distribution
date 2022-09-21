@@ -39,8 +39,10 @@ object svgiconMod {
       * This prop **should not** be used with the `children` prop as only one will
       * be rendered.
       *
-      * > NOTE: IE **does not support** external SVGs. Please see the demo for more
-      * > details.
+      * @remarks
+      *
+      * NOTE: IE **does not support** external SVGs. Please see the demo for more
+      * details.
       */
     var use: js.UndefOr[String] = js.undefined
     

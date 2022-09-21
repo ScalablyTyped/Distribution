@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchAvailablePhoneNumbersRequest extends StObject {
   
   /**
-    * The area code used to filter results.
+    * The area code used to filter results. Only applies to the US.
     */
   var AreaCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The city used to filter results.
+    * The city used to filter results. Only applies to the US.
     */
   var City: js.UndefOr[String] = js.undefined
   
   /**
-    * The country used to filter results.
+    * The country used to filter results. Defaults to the US Format: ISO 3166-1 alpha-2.
     */
-  var Country: js.UndefOr[String] = js.undefined
+  var Country: js.UndefOr[Alpha2CountryCode] = js.undefined
   
   /**
     * The maximum number of results to return in a single call.
@@ -27,17 +27,22 @@ trait SearchAvailablePhoneNumbersRequest extends StObject {
   var MaxResults: js.UndefOr[PhoneNumberMaxResults] = js.undefined
   
   /**
-    * The token to use to retrieve the next page of results.
+    * The token used to retrieve the next page of results.
     */
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The state used to filter results.
+    * The phone number type used to filter results. Required for non-US numbers.
+    */
+  var PhoneNumberType: js.UndefOr[typings.awsSdk.chimeMod.PhoneNumberType] = js.undefined
+  
+  /**
+    * The state used to filter results. Required only if you provide City. Only applies to the US.
     */
   var State: js.UndefOr[String] = js.undefined
   
   /**
-    * The toll-free prefix that you use to filter results.
+    * The toll-free prefix that you use to filter results. Only applies to the US.
     */
   var TollFreePrefix: js.UndefOr[typings.awsSdk.chimeMod.TollFreePrefix] = js.undefined
 }
@@ -58,7 +63,7 @@ object SearchAvailablePhoneNumbersRequest {
     
     inline def setCityUndefined: Self = StObject.set(x, "City", js.undefined)
     
-    inline def setCountry(value: String): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: Alpha2CountryCode): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     
     inline def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
     
@@ -69,6 +74,10 @@ object SearchAvailablePhoneNumbersRequest {
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setPhoneNumberType(value: PhoneNumberType): Self = StObject.set(x, "PhoneNumberType", value.asInstanceOf[js.Any])
+    
+    inline def setPhoneNumberTypeUndefined: Self = StObject.set(x, "PhoneNumberType", js.undefined)
     
     inline def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

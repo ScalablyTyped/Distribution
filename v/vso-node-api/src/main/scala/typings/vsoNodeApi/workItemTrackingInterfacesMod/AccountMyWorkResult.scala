@@ -29,6 +29,6 @@ object AccountMyWorkResult {
     
     inline def setWorkItemDetails(value: js.Array[AccountWorkWorkItemModel]): Self = StObject.set(x, "workItemDetails", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemDetailsVarargs(value: AccountWorkWorkItemModel*): Self = StObject.set(x, "workItemDetails", js.Array(value :_*))
+    inline def setWorkItemDetailsVarargs(value: AccountWorkWorkItemModel*): Self = StObject.set(x, "workItemDetails", js.Array(value*))
   }
 }

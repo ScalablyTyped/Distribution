@@ -5,91 +5,72 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Common config settings for resources of Compute Engine cluster instances,
-  * applicable to all instances in the cluster.
-  */
 trait SchemaGceClusterConfig extends StObject {
   
   /**
-    * Optional. If true, all instances in the cluster will only have internal
-    * IP addresses. By default, clusters are not restricted to internal IP
-    * addresses, and will have ephemeral external IP addresses assigned to each
-    * instance. This internal_ip_only restriction can only be enabled for
-    * subnetwork enabled networks, and all off-cluster dependencies must be
-    * configured to be accessible without external IP addresses.
+    * Optional. Confidential Instance Config for clusters using Confidential VMs (https://cloud.google.com/compute/confidential-vm/docs).
     */
-  var internalIpOnly: js.UndefOr[Boolean] = js.undefined
+  var confidentialInstanceConfig: js.UndefOr[SchemaConfidentialInstanceConfig] = js.undefined
   
   /**
-    * The Compute Engine metadata entries to add to all instances (see Project
-    * and instance metadata
-    * (https://cloud.google.com/compute/docs/storing-retrieving-metadata#project_and_instance_metadata)).
+    * Optional. If true, all instances in the cluster will only have internal IP addresses. By default, clusters are not restricted to internal IP addresses, and will have ephemeral external IP addresses assigned to each instance. This internal_ip_only restriction can only be enabled for subnetwork enabled networks, and all off-cluster dependencies must be configured to be accessible without external IP addresses.
     */
-  var metadata: js.UndefOr[StringDictionary[String]] = js.undefined
+  var internalIpOnly: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Optional. The Compute Engine network to be used for machine
-    * communications. Cannot be specified with subnetwork_uri. If neither
-    * network_uri nor subnetwork_uri is specified, the &quot;default&quot;
-    * network of the project is used, if it exists. Cannot be a &quot;Custom
-    * Subnet Network&quot; (see Using Subnetworks for more information).A full
-    * URL, partial URI, or short name are valid. Examples:
-    * https://www.googleapis.com/compute/v1/projects/[project_id]/regions/global/default
-    * projects/[project_id]/regions/global/default default
+    * The Compute Engine metadata entries to add to all instances (see Project and instance metadata (https://cloud.google.com/compute/docs/storing-retrieving-metadata#project_and_instance_metadata)).
     */
-  var networkUri: js.UndefOr[String] = js.undefined
+  var metadata: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /**
-    * Optional. The service account of the instances. Defaults to the default
-    * Compute Engine service account. Custom service accounts need permissions
-    * equivalent to the following IAM roles: roles/logging.logWriter
-    * roles/storage.objectAdmin(see
-    * https://cloud.google.com/compute/docs/access/service-accounts#custom_service_accounts
-    * for more information). Example:
-    * [account_id]@[project_id].iam.gserviceaccount.com
+    * Optional. The Compute Engine network to be used for machine communications. Cannot be specified with subnetwork_uri. If neither network_uri nor subnetwork_uri is specified, the "default" network of the project is used, if it exists. Cannot be a "Custom Subnet Network" (see Using Subnetworks (https://cloud.google.com/compute/docs/subnetworks) for more information).A full URL, partial URI, or short name are valid. Examples: https://www.googleapis.com/compute/v1/projects/[project_id]/regions/global/default projects/[project_id]/regions/global/default default
     */
-  var serviceAccount: js.UndefOr[String] = js.undefined
+  var networkUri: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional. The URIs of service account scopes to be included in Compute
-    * Engine instances. The following base set of scopes is always included:
-    * https://www.googleapis.com/auth/cloud.useraccounts.readonly
-    * https://www.googleapis.com/auth/devstorage.read_write
-    * https://www.googleapis.com/auth/logging.writeIf no scopes are specified,
-    * the following defaults are also provided:
-    * https://www.googleapis.com/auth/bigquery
-    * https://www.googleapis.com/auth/bigtable.admin.table
-    * https://www.googleapis.com/auth/bigtable.data
-    * https://www.googleapis.com/auth/devstorage.full_control
+    * Optional. Node Group Affinity for sole-tenant clusters.
     */
-  var serviceAccountScopes: js.UndefOr[js.Array[String]] = js.undefined
+  var nodeGroupAffinity: js.UndefOr[SchemaNodeGroupAffinity] = js.undefined
   
   /**
-    * Optional. The Compute Engine subnetwork to be used for machine
-    * communications. Cannot be specified with network_uri.A full URL, partial
-    * URI, or short name are valid. Examples:
-    * https://www.googleapis.com/compute/v1/projects/[project_id]/regions/us-east1/sub0
-    * projects/[project_id]/regions/us-east1/sub0 sub0
+    * Optional. The type of IPv6 access for a cluster.
     */
-  var subnetworkUri: js.UndefOr[String] = js.undefined
+  var privateIpv6GoogleAccess: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The Compute Engine tags to add to all instances (see Tagging instances).
+    * Optional. Reservation Affinity for consuming Zonal reservation.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.undefined
+  var reservationAffinity: js.UndefOr[SchemaReservationAffinity] = js.undefined
   
   /**
-    * Optional. The zone where the Compute Engine cluster will be located. On a
-    * create request, it is required in the &quot;global&quot; region. If
-    * omitted in a non-global Cloud Dataproc region, the service will pick a
-    * zone in the corresponding Compute Engine region. On a get request, zone
-    * will always be present.A full URL, partial URI, or short name are valid.
-    * Examples:
-    * https://www.googleapis.com/compute/v1/projects/[project_id]/zones/[zone]
-    * projects/[project_id]/zones/[zone] us-central1-f
+    * Optional. The Dataproc service account (https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/service-accounts#service_accounts_in_dataproc) (also see VM Data Plane identity (https://cloud.google.com/dataproc/docs/concepts/iam/dataproc-principals#vm_service_account_data_plane_identity)) used by Dataproc cluster VM instances to access Google Cloud Platform services.If not specified, the Compute Engine default service account (https://cloud.google.com/compute/docs/access/service-accounts#default_service_account) is used.
     */
-  var zoneUri: js.UndefOr[String] = js.undefined
+  var serviceAccount: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Optional. The URIs of service account scopes to be included in Compute Engine instances. The following base set of scopes is always included: https://www.googleapis.com/auth/cloud.useraccounts.readonly https://www.googleapis.com/auth/devstorage.read_write https://www.googleapis.com/auth/logging.writeIf no scopes are specified, the following defaults are also provided: https://www.googleapis.com/auth/bigquery https://www.googleapis.com/auth/bigtable.admin.table https://www.googleapis.com/auth/bigtable.data https://www.googleapis.com/auth/devstorage.full_control
+    */
+  var serviceAccountScopes: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  /**
+    * Optional. Shielded Instance Config for clusters using Compute Engine Shielded VMs (https://cloud.google.com/security/shielded-cloud/shielded-vm).
+    */
+  var shieldedInstanceConfig: js.UndefOr[SchemaShieldedInstanceConfig] = js.undefined
+  
+  /**
+    * Optional. The Compute Engine subnetwork to be used for machine communications. Cannot be specified with network_uri.A full URL, partial URI, or short name are valid. Examples: https://www.googleapis.com/compute/v1/projects/[project_id]/regions/us-east1/subnetworks/sub0 projects/[project_id]/regions/us-east1/subnetworks/sub0 sub0
+    */
+  var subnetworkUri: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The Compute Engine tags to add to all instances (see Tagging instances (https://cloud.google.com/compute/docs/label-or-tag-resources#tags)).
+    */
+  var tags: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  /**
+    * Optional. The zone where the Compute Engine cluster will be located. On a create request, it is required in the "global" region. If omitted in a non-global Dataproc region, the service will pick a zone in the corresponding Compute Engine region. On a get request, zone will always be present.A full URL, partial URI, or short name are valid. Examples: https://www.googleapis.com/compute/v1/projects/[project_id]/zones/[zone] projects/[project_id]/zones/[zone] us-central1-f
+    */
+  var zoneUri: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGceClusterConfig {
   
@@ -100,39 +81,77 @@ object SchemaGceClusterConfig {
   
   extension [Self <: SchemaGceClusterConfig](x: Self) {
     
+    inline def setConfidentialInstanceConfig(value: SchemaConfidentialInstanceConfig): Self = StObject.set(x, "confidentialInstanceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setConfidentialInstanceConfigUndefined: Self = StObject.set(x, "confidentialInstanceConfig", js.undefined)
+    
     inline def setInternalIpOnly(value: Boolean): Self = StObject.set(x, "internalIpOnly", value.asInstanceOf[js.Any])
+    
+    inline def setInternalIpOnlyNull: Self = StObject.set(x, "internalIpOnly", null)
     
     inline def setInternalIpOnlyUndefined: Self = StObject.set(x, "internalIpOnly", js.undefined)
     
     inline def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
+    inline def setMetadataNull: Self = StObject.set(x, "metadata", null)
+    
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     inline def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
     
+    inline def setNetworkUriNull: Self = StObject.set(x, "networkUri", null)
+    
     inline def setNetworkUriUndefined: Self = StObject.set(x, "networkUri", js.undefined)
+    
+    inline def setNodeGroupAffinity(value: SchemaNodeGroupAffinity): Self = StObject.set(x, "nodeGroupAffinity", value.asInstanceOf[js.Any])
+    
+    inline def setNodeGroupAffinityUndefined: Self = StObject.set(x, "nodeGroupAffinity", js.undefined)
+    
+    inline def setPrivateIpv6GoogleAccess(value: String): Self = StObject.set(x, "privateIpv6GoogleAccess", value.asInstanceOf[js.Any])
+    
+    inline def setPrivateIpv6GoogleAccessNull: Self = StObject.set(x, "privateIpv6GoogleAccess", null)
+    
+    inline def setPrivateIpv6GoogleAccessUndefined: Self = StObject.set(x, "privateIpv6GoogleAccess", js.undefined)
+    
+    inline def setReservationAffinity(value: SchemaReservationAffinity): Self = StObject.set(x, "reservationAffinity", value.asInstanceOf[js.Any])
+    
+    inline def setReservationAffinityUndefined: Self = StObject.set(x, "reservationAffinity", js.undefined)
     
     inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
+    inline def setServiceAccountNull: Self = StObject.set(x, "serviceAccount", null)
+    
     inline def setServiceAccountScopes(value: js.Array[String]): Self = StObject.set(x, "serviceAccountScopes", value.asInstanceOf[js.Any])
+    
+    inline def setServiceAccountScopesNull: Self = StObject.set(x, "serviceAccountScopes", null)
     
     inline def setServiceAccountScopesUndefined: Self = StObject.set(x, "serviceAccountScopes", js.undefined)
     
-    inline def setServiceAccountScopesVarargs(value: String*): Self = StObject.set(x, "serviceAccountScopes", js.Array(value :_*))
+    inline def setServiceAccountScopesVarargs(value: String*): Self = StObject.set(x, "serviceAccountScopes", js.Array(value*))
     
     inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
+    inline def setShieldedInstanceConfig(value: SchemaShieldedInstanceConfig): Self = StObject.set(x, "shieldedInstanceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setShieldedInstanceConfigUndefined: Self = StObject.set(x, "shieldedInstanceConfig", js.undefined)
+    
     inline def setSubnetworkUri(value: String): Self = StObject.set(x, "subnetworkUri", value.asInstanceOf[js.Any])
+    
+    inline def setSubnetworkUriNull: Self = StObject.set(x, "subnetworkUri", null)
     
     inline def setSubnetworkUriUndefined: Self = StObject.set(x, "subnetworkUri", js.undefined)
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
+    inline def setTagsNull: Self = StObject.set(x, "tags", null)
+    
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setZoneUri(value: String): Self = StObject.set(x, "zoneUri", value.asInstanceOf[js.Any])
+    
+    inline def setZoneUriNull: Self = StObject.set(x, "zoneUri", null)
     
     inline def setZoneUriUndefined: Self = StObject.set(x, "zoneUri", js.undefined)
   }

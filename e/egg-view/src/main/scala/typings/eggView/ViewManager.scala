@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ViewManager
   extends StObject
-     with Map[String, js.Any] {
+     with Map[String, Any] {
   
   def resolve(name: String): js.Promise[String] = js.native
   

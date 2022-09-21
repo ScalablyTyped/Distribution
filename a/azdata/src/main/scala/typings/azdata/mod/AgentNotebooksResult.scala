@@ -21,6 +21,6 @@ object AgentNotebooksResult {
     
     inline def setNotebooks(value: js.Array[AgentNotebookInfo]): Self = StObject.set(x, "notebooks", value.asInstanceOf[js.Any])
     
-    inline def setNotebooksVarargs(value: AgentNotebookInfo*): Self = StObject.set(x, "notebooks", js.Array(value :_*))
+    inline def setNotebooksVarargs(value: AgentNotebookInfo*): Self = StObject.set(x, "notebooks", js.Array(value*))
   }
 }

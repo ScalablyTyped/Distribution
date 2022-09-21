@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "TupleDictionary")
 @js.native
-class TupleDictionary () extends StObject {
+open class TupleDictionary () extends StObject {
   
   def copy(dict: TupleDictionary): Unit = js.native
   
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   def get(i: Double, j: Double): Double = js.native
   
-  def getByKey(key: Double): js.Any = js.native
+  def getByKey(key: Double): Any = js.native
   
   def getKey(id1: Double, id2: Double): String = js.native
   

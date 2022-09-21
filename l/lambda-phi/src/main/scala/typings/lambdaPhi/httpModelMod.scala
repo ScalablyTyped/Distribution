@@ -8,7 +8,7 @@ object httpModelMod {
   
   @JSImport("lambda-phi/lib/http-model", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with HttpModel
   /* static members */

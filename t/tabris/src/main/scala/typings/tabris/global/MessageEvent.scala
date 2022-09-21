@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MessageEvent")
 @js.native
-class MessageEvent protected ()
+open class MessageEvent protected ()
   extends StObject
      with typings.tabris.MessageEvent {
   def this(`type`: String) = this()
@@ -33,7 +33,7 @@ class MessageEvent protected ()
   override val currentTarget: typings.tabris.EventTarget = js.native
   
   /* CompleteClass */
-  override val data: js.Any = js.native
+  override val data: Any = js.native
   
   /* CompleteClass */
   override val defaultPrevented: Boolean = js.native
@@ -49,10 +49,10 @@ class MessageEvent protected ()
     typeArg: String,
     canBubbleArg: Boolean,
     cancelableArg: Boolean,
-    dataArg: js.Any,
+    dataArg: Any,
     originArg: String,
     lastEventIdArg: String,
-    sourceArg: js.Any
+    sourceArg: Any
   ): Unit = js.native
   
   /* CompleteClass */
@@ -62,13 +62,13 @@ class MessageEvent protected ()
   override val origin: String = js.native
   
   /* CompleteClass */
-  override val ports: js.Any = js.native
+  override val ports: Any = js.native
   
   /* CompleteClass */
   override def preventDefault(): Unit = js.native
   
   /* CompleteClass */
-  override val source: js.Any = js.native
+  override val source: Any = js.native
   
   /* CompleteClass */
   override def stopImmediatePropagation(): Unit = js.native

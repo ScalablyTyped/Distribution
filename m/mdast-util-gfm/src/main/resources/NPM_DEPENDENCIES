@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mdast-util-gfm" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mdast-util-gfm" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

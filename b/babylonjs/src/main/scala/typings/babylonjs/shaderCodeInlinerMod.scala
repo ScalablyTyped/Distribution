@@ -8,7 +8,7 @@ object shaderCodeInlinerMod {
   
   @JSImport("babylonjs/Engines/Processors/shaderCodeInliner", "ShaderCodeInliner")
   @js.native
-  class ShaderCodeInliner protected () extends StObject {
+  open class ShaderCodeInliner protected () extends StObject {
     /**
       * Initializes the inliner
       * @param sourceCode shader code source to inline
@@ -17,29 +17,19 @@ object shaderCodeInlinerMod {
     def this(sourceCode: String) = this()
     def this(sourceCode: String, numMaxIterations: Double) = this()
     
-    /* private */ var _collectFunctions: js.Any = js.native
+    /* private */ var _collectFunctions: Any = js.native
     
-    /* private */ var _escapeRegExp: js.Any = js.native
+    /* private */ var _functionDescr: Any = js.native
     
-    /* private */ var _extractBetweenMarkers: js.Any = js.native
+    /* private */ var _numMaxIterations: Any = js.native
     
-    /* private */ var _findBackward: js.Any = js.native
+    /* private */ var _processInlining: Any = js.native
     
-    /* private */ var _functionDescr: js.Any = js.native
+    /* private */ var _replaceFunctionCallsByCode: Any = js.native
     
-    /* private */ var _numMaxIterations: js.Any = js.native
+    /* private */ var _replaceNames: Any = js.native
     
-    /* private */ var _processInlining: js.Any = js.native
-    
-    /* private */ var _removeComments: js.Any = js.native
-    
-    /* private */ var _replaceFunctionCallsByCode: js.Any = js.native
-    
-    /* private */ var _replaceNames: js.Any = js.native
-    
-    /* private */ var _skipWhitespaces: js.Any = js.native
-    
-    /* private */ var _sourceCode: js.Any = js.native
+    /* private */ var _sourceCode: Any = js.native
     
     /** Gets the code after the inlining process */
     def code: String = js.native
@@ -60,6 +50,6 @@ object shaderCodeInlinerMod {
     
     @JSImport("babylonjs/Engines/Processors/shaderCodeInliner", "ShaderCodeInliner._RegexpFindFunctionNameAndType")
     @js.native
-    val _RegexpFindFunctionNameAndType: js.Any = js.native
+    val _RegexpFindFunctionNameAndType: Any = js.native
   }
 }

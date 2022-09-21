@@ -6,91 +6,91 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BYN extends StObject {
   
-  var BYN: js.Array[scala.Nothing]
+  var BYN: js.Array[js.UndefOr[String]]
   
-  var DKK: js.Array[scala.Nothing]
+  var CAD: js.Array[js.UndefOr[String]]
   
-  var HRK: js.Array[scala.Nothing]
+  var JPY: js.Array[String]
   
-  var ISK: js.Array[scala.Nothing]
+  var MXN: js.Array[js.UndefOr[String]]
   
-  var NOK: js.Array[scala.Nothing]
+  var NAD: js.Array[String]
   
-  var PLN: js.Array[scala.Nothing]
+  var PHP: js.Array[js.UndefOr[String]]
   
-  var RUR: js.Array[scala.Nothing]
-  
-  var SEK: js.Array[scala.Nothing]
+  var RON: js.Array[js.UndefOr[String]]
   
   var THB: js.Array[String]
   
   var TWD: js.Array[String]
   
-  var XXX: js.Array[scala.Nothing]
+  var USD: js.Array[js.UndefOr[String]]
+  
+  var ZAR: js.Array[String]
 }
 object BYN {
   
   inline def apply(
-    BYN: js.Array[scala.Nothing],
-    DKK: js.Array[scala.Nothing],
-    HRK: js.Array[scala.Nothing],
-    ISK: js.Array[scala.Nothing],
-    NOK: js.Array[scala.Nothing],
-    PLN: js.Array[scala.Nothing],
-    RUR: js.Array[scala.Nothing],
-    SEK: js.Array[scala.Nothing],
+    BYN: js.Array[js.UndefOr[String]],
+    CAD: js.Array[js.UndefOr[String]],
+    JPY: js.Array[String],
+    MXN: js.Array[js.UndefOr[String]],
+    NAD: js.Array[String],
+    PHP: js.Array[js.UndefOr[String]],
+    RON: js.Array[js.UndefOr[String]],
     THB: js.Array[String],
     TWD: js.Array[String],
-    XXX: js.Array[scala.Nothing]
+    USD: js.Array[js.UndefOr[String]],
+    ZAR: js.Array[String]
   ): BYN = {
-    val __obj = js.Dynamic.literal(BYN = BYN.asInstanceOf[js.Any], DKK = DKK.asInstanceOf[js.Any], HRK = HRK.asInstanceOf[js.Any], ISK = ISK.asInstanceOf[js.Any], NOK = NOK.asInstanceOf[js.Any], PLN = PLN.asInstanceOf[js.Any], RUR = RUR.asInstanceOf[js.Any], SEK = SEK.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], XXX = XXX.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(BYN = BYN.asInstanceOf[js.Any], CAD = CAD.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], MXN = MXN.asInstanceOf[js.Any], NAD = NAD.asInstanceOf[js.Any], PHP = PHP.asInstanceOf[js.Any], RON = RON.asInstanceOf[js.Any], THB = THB.asInstanceOf[js.Any], TWD = TWD.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any], ZAR = ZAR.asInstanceOf[js.Any])
     __obj.asInstanceOf[BYN]
   }
   
   extension [Self <: BYN](x: Self) {
     
-    inline def setBYN(value: js.Array[scala.Nothing]): Self = StObject.set(x, "BYN", value.asInstanceOf[js.Any])
+    inline def setBYN(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "BYN", value.asInstanceOf[js.Any])
     
-    inline def setBYNVarargs(value: scala.Nothing*): Self = StObject.set(x, "BYN", js.Array(value :_*))
+    inline def setBYNVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "BYN", js.Array(value*))
     
-    inline def setDKK(value: js.Array[scala.Nothing]): Self = StObject.set(x, "DKK", value.asInstanceOf[js.Any])
+    inline def setCAD(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "CAD", value.asInstanceOf[js.Any])
     
-    inline def setDKKVarargs(value: scala.Nothing*): Self = StObject.set(x, "DKK", js.Array(value :_*))
+    inline def setCADVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "CAD", js.Array(value*))
     
-    inline def setHRK(value: js.Array[scala.Nothing]): Self = StObject.set(x, "HRK", value.asInstanceOf[js.Any])
+    inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    inline def setHRKVarargs(value: scala.Nothing*): Self = StObject.set(x, "HRK", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value*))
     
-    inline def setISK(value: js.Array[scala.Nothing]): Self = StObject.set(x, "ISK", value.asInstanceOf[js.Any])
+    inline def setMXN(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "MXN", value.asInstanceOf[js.Any])
     
-    inline def setISKVarargs(value: scala.Nothing*): Self = StObject.set(x, "ISK", js.Array(value :_*))
+    inline def setMXNVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "MXN", js.Array(value*))
     
-    inline def setNOK(value: js.Array[scala.Nothing]): Self = StObject.set(x, "NOK", value.asInstanceOf[js.Any])
+    inline def setNAD(value: js.Array[String]): Self = StObject.set(x, "NAD", value.asInstanceOf[js.Any])
     
-    inline def setNOKVarargs(value: scala.Nothing*): Self = StObject.set(x, "NOK", js.Array(value :_*))
+    inline def setNADVarargs(value: String*): Self = StObject.set(x, "NAD", js.Array(value*))
     
-    inline def setPLN(value: js.Array[scala.Nothing]): Self = StObject.set(x, "PLN", value.asInstanceOf[js.Any])
+    inline def setPHP(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "PHP", value.asInstanceOf[js.Any])
     
-    inline def setPLNVarargs(value: scala.Nothing*): Self = StObject.set(x, "PLN", js.Array(value :_*))
+    inline def setPHPVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "PHP", js.Array(value*))
     
-    inline def setRUR(value: js.Array[scala.Nothing]): Self = StObject.set(x, "RUR", value.asInstanceOf[js.Any])
+    inline def setRON(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "RON", value.asInstanceOf[js.Any])
     
-    inline def setRURVarargs(value: scala.Nothing*): Self = StObject.set(x, "RUR", js.Array(value :_*))
-    
-    inline def setSEK(value: js.Array[scala.Nothing]): Self = StObject.set(x, "SEK", value.asInstanceOf[js.Any])
-    
-    inline def setSEKVarargs(value: scala.Nothing*): Self = StObject.set(x, "SEK", js.Array(value :_*))
+    inline def setRONVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "RON", js.Array(value*))
     
     inline def setTHB(value: js.Array[String]): Self = StObject.set(x, "THB", value.asInstanceOf[js.Any])
     
-    inline def setTHBVarargs(value: String*): Self = StObject.set(x, "THB", js.Array(value :_*))
+    inline def setTHBVarargs(value: String*): Self = StObject.set(x, "THB", js.Array(value*))
     
     inline def setTWD(value: js.Array[String]): Self = StObject.set(x, "TWD", value.asInstanceOf[js.Any])
     
-    inline def setTWDVarargs(value: String*): Self = StObject.set(x, "TWD", js.Array(value :_*))
+    inline def setTWDVarargs(value: String*): Self = StObject.set(x, "TWD", js.Array(value*))
     
-    inline def setXXX(value: js.Array[scala.Nothing]): Self = StObject.set(x, "XXX", value.asInstanceOf[js.Any])
+    inline def setUSD(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    inline def setXXXVarargs(value: scala.Nothing*): Self = StObject.set(x, "XXX", js.Array(value :_*))
+    inline def setUSDVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "USD", js.Array(value*))
+    
+    inline def setZAR(value: js.Array[String]): Self = StObject.set(x, "ZAR", value.asInstanceOf[js.Any])
+    
+    inline def setZARVarargs(value: String*): Self = StObject.set(x, "ZAR", js.Array(value*))
   }
 }

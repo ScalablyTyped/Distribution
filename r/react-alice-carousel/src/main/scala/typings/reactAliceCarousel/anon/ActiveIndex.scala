@@ -44,9 +44,15 @@ trait ActiveIndex extends StObject {
   
   var infinite: Boolean
   
+  var innerWidth: Double
+  
   var items: Unit
   
+  var keyboardNavigation: Boolean
+  
   var mouseTracking: Boolean
+  
+  var name: String
   
   def onInitialized(): Unit
   
@@ -63,6 +69,8 @@ trait ActiveIndex extends StObject {
   var paddingRight: Double
   
   var responsive: Unit
+  
+  var ssrSilentMode: Boolean
   
   var swipeDelta: Double
   
@@ -92,8 +100,11 @@ object ActiveIndex {
     disableDotsControls: Boolean,
     disableSlideInfo: Boolean,
     infinite: Boolean,
+    innerWidth: Double,
     items: Unit,
+    keyboardNavigation: Boolean,
     mouseTracking: Boolean,
+    name: String,
     onInitialized: () => Unit,
     onResizeEvent: Unit,
     onResized: () => Unit,
@@ -102,12 +113,13 @@ object ActiveIndex {
     paddingLeft: Double,
     paddingRight: Double,
     responsive: Unit,
+    ssrSilentMode: Boolean,
     swipeDelta: Double,
     swipeExtraPadding: Double,
     touchMoveDefaultEvents: Boolean,
     touchTracking: Boolean
   ): ActiveIndex = {
-    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], animationDuration = animationDuration.asInstanceOf[js.Any], animationEasingFunction = animationEasingFunction.asInstanceOf[js.Any], animationType = animationType.asInstanceOf[js.Any], autoHeight = autoHeight.asInstanceOf[js.Any], autoPlay = autoPlay.asInstanceOf[js.Any], autoPlayControls = autoPlayControls.asInstanceOf[js.Any], autoPlayDirection = autoPlayDirection.asInstanceOf[js.Any], autoPlayInterval = autoPlayInterval.asInstanceOf[js.Any], autoPlayStrategy = autoPlayStrategy.asInstanceOf[js.Any], autoWidth = autoWidth.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], controlsStrategy = controlsStrategy.asInstanceOf[js.Any], disableButtonsControls = disableButtonsControls.asInstanceOf[js.Any], disableDotsControls = disableDotsControls.asInstanceOf[js.Any], disableSlideInfo = disableSlideInfo.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], mouseTracking = mouseTracking.asInstanceOf[js.Any], onInitialized = js.Any.fromFunction0(onInitialized), onResizeEvent = onResizeEvent.asInstanceOf[js.Any], onResized = js.Any.fromFunction0(onResized), onSlideChange = js.Any.fromFunction0(onSlideChange), onSlideChanged = js.Any.fromFunction0(onSlideChanged), paddingLeft = paddingLeft.asInstanceOf[js.Any], paddingRight = paddingRight.asInstanceOf[js.Any], responsive = responsive.asInstanceOf[js.Any], swipeDelta = swipeDelta.asInstanceOf[js.Any], swipeExtraPadding = swipeExtraPadding.asInstanceOf[js.Any], touchMoveDefaultEvents = touchMoveDefaultEvents.asInstanceOf[js.Any], touchTracking = touchTracking.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], animationDuration = animationDuration.asInstanceOf[js.Any], animationEasingFunction = animationEasingFunction.asInstanceOf[js.Any], animationType = animationType.asInstanceOf[js.Any], autoHeight = autoHeight.asInstanceOf[js.Any], autoPlay = autoPlay.asInstanceOf[js.Any], autoPlayControls = autoPlayControls.asInstanceOf[js.Any], autoPlayDirection = autoPlayDirection.asInstanceOf[js.Any], autoPlayInterval = autoPlayInterval.asInstanceOf[js.Any], autoPlayStrategy = autoPlayStrategy.asInstanceOf[js.Any], autoWidth = autoWidth.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], controlsStrategy = controlsStrategy.asInstanceOf[js.Any], disableButtonsControls = disableButtonsControls.asInstanceOf[js.Any], disableDotsControls = disableDotsControls.asInstanceOf[js.Any], disableSlideInfo = disableSlideInfo.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], innerWidth = innerWidth.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], keyboardNavigation = keyboardNavigation.asInstanceOf[js.Any], mouseTracking = mouseTracking.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onInitialized = js.Any.fromFunction0(onInitialized), onResizeEvent = onResizeEvent.asInstanceOf[js.Any], onResized = js.Any.fromFunction0(onResized), onSlideChange = js.Any.fromFunction0(onSlideChange), onSlideChanged = js.Any.fromFunction0(onSlideChanged), paddingLeft = paddingLeft.asInstanceOf[js.Any], paddingRight = paddingRight.asInstanceOf[js.Any], responsive = responsive.asInstanceOf[js.Any], ssrSilentMode = ssrSilentMode.asInstanceOf[js.Any], swipeDelta = swipeDelta.asInstanceOf[js.Any], swipeExtraPadding = swipeExtraPadding.asInstanceOf[js.Any], touchMoveDefaultEvents = touchMoveDefaultEvents.asInstanceOf[js.Any], touchTracking = touchTracking.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveIndex]
   }
   
@@ -147,9 +159,15 @@ object ActiveIndex {
     
     inline def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
     
+    inline def setInnerWidth(value: Double): Self = StObject.set(x, "innerWidth", value.asInstanceOf[js.Any])
+    
     inline def setItems(value: Unit): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
+    inline def setKeyboardNavigation(value: Boolean): Self = StObject.set(x, "keyboardNavigation", value.asInstanceOf[js.Any])
+    
     inline def setMouseTracking(value: Boolean): Self = StObject.set(x, "mouseTracking", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setOnInitialized(value: () => Unit): Self = StObject.set(x, "onInitialized", js.Any.fromFunction0(value))
     
@@ -166,6 +184,8 @@ object ActiveIndex {
     inline def setPaddingRight(value: Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
     inline def setResponsive(value: Unit): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+    
+    inline def setSsrSilentMode(value: Boolean): Self = StObject.set(x, "ssrSilentMode", value.asInstanceOf[js.Any])
     
     inline def setSwipeDelta(value: Double): Self = StObject.set(x, "swipeDelta", value.asInstanceOf[js.Any])
     

@@ -200,7 +200,7 @@ object mod {
       
       inline def setAuthorities(value: js.Array[Authority]): Self = StObject.set(x, "authorities", value.asInstanceOf[js.Any])
       
-      inline def setAuthoritiesVarargs(value: Authority*): Self = StObject.set(x, "authorities", js.Array(value :_*))
+      inline def setAuthoritiesVarargs(value: Authority*): Self = StObject.set(x, "authorities", js.Array(value*))
       
       inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }

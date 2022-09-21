@@ -10,10 +10,10 @@ node crypto plugin for otplib
 | ------------------ | :-------------: |
 | Full name          | @otplib/plugin-crypto |
 | Keywords           | otplib-plugin, crypto |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 1479595 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 719435.3333333334 |
+| # stars            | 1410.0 |
 
 ## Links
 - [Homepage](https://github.com/yeojz/otplib#readme)

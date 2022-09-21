@@ -10,10 +10,10 @@ Transform Stream that is able to change the volume of PCM data piped in and out 
 | ------------------ | :-------------: |
 | Full name          | pcm-volume |
 | Keywords           | pcm, volume |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 6215 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 291.3333333333333 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](https://github.com/reneraab/pcm-volume)

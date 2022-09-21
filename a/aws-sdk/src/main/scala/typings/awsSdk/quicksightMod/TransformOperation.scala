@@ -35,6 +35,8 @@ trait TransformOperation extends StObject {
     * An operation that tags a column with additional information.
     */
   var TagColumnOperation: js.UndefOr[typings.awsSdk.quicksightMod.TagColumnOperation] = js.undefined
+  
+  var UntagColumnOperation: js.UndefOr[typings.awsSdk.quicksightMod.UntagColumnOperation] = js.undefined
 }
 object TransformOperation {
   
@@ -68,5 +70,9 @@ object TransformOperation {
     inline def setTagColumnOperation(value: TagColumnOperation): Self = StObject.set(x, "TagColumnOperation", value.asInstanceOf[js.Any])
     
     inline def setTagColumnOperationUndefined: Self = StObject.set(x, "TagColumnOperation", js.undefined)
+    
+    inline def setUntagColumnOperation(value: UntagColumnOperation): Self = StObject.set(x, "UntagColumnOperation", value.asInstanceOf[js.Any])
+    
+    inline def setUntagColumnOperationUndefined: Self = StObject.set(x, "UntagColumnOperation", js.undefined)
   }
 }

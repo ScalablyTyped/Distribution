@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.JsGrid.RecordFactory")
 @js.native
-class RecordFactory protected ()
+open class RecordFactory protected ()
   extends StObject
      with typings.sharepoint.SP.JsGrid.RecordFactory {
-  def this(gridFieldMap: js.Any, keyColumnName: String, fnGetPropType: js.Any) = this()
+  def this(gridFieldMap: Any, keyColumnName: String, fnGetPropType: Any) = this()
   
   /** Create a new record */
   /* CompleteClass */
-  override def MakeRecord(dataPropMap: js.Any, localizedPropMap: js.Any, bKeepRawData: Boolean): IRecord = js.native
+  override def MakeRecord(dataPropMap: Any, localizedPropMap: Any, bKeepRawData: Boolean): IRecord = js.native
   
   /* CompleteClass */
-  var gridFieldMap: js.Any = js.native
+  var gridFieldMap: Any = js.native
 }

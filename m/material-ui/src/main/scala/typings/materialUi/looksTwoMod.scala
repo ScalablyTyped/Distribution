@@ -10,10 +10,10 @@ object looksTwoMod {
   
   @JSImport("material-ui/svg-icons/image/looks-two", JSImport.Default)
   @js.native
-  class default () extends ImageLooksTwo
+  open class default () extends ImageLooksTwo
   
   @JSImport("material-ui/svg-icons/image/looks-two", "ImageLooksTwo")
   @js.native
-  class ImageLooksTwo ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageLooksTwo ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

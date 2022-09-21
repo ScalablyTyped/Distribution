@@ -27,7 +27,7 @@ object AudioChannelMapping {
     
     inline def setInputChannelLevels(value: listOfInputChannelLevel): Self = StObject.set(x, "InputChannelLevels", value.asInstanceOf[js.Any])
     
-    inline def setInputChannelLevelsVarargs(value: InputChannelLevel*): Self = StObject.set(x, "InputChannelLevels", js.Array(value :_*))
+    inline def setInputChannelLevelsVarargs(value: InputChannelLevel*): Self = StObject.set(x, "InputChannelLevels", js.Array(value*))
     
     inline def setOutputChannel(value: integerMin0Max7): Self = StObject.set(x, "OutputChannel", value.asInstanceOf[js.Any])
   }

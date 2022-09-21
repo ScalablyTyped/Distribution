@@ -14,7 +14,7 @@ trait SketchMSSymbolInstanceLayer
   
   var horizontalSpacing: Double
   
-  var overrideValues: js.Array[js.Any]
+  var overrideValues: js.Array[Any]
   
   var scale: Double
   
@@ -40,7 +40,7 @@ object SketchMSSymbolInstanceLayer {
     layerListExpandedType: Double,
     name: String,
     nameIsFixed: Boolean,
-    overrideValues: js.Array[js.Any],
+    overrideValues: js.Array[Any],
     resizingConstraint: Double,
     resizingType: SketchMSLayerResizingType,
     rotation: Double,
@@ -58,9 +58,9 @@ object SketchMSSymbolInstanceLayer {
     
     inline def setHorizontalSpacing(value: Double): Self = StObject.set(x, "horizontalSpacing", value.asInstanceOf[js.Any])
     
-    inline def setOverrideValues(value: js.Array[js.Any]): Self = StObject.set(x, "overrideValues", value.asInstanceOf[js.Any])
+    inline def setOverrideValues(value: js.Array[Any]): Self = StObject.set(x, "overrideValues", value.asInstanceOf[js.Any])
     
-    inline def setOverrideValuesVarargs(value: js.Any*): Self = StObject.set(x, "overrideValues", js.Array(value :_*))
+    inline def setOverrideValuesVarargs(value: Any*): Self = StObject.set(x, "overrideValues", js.Array(value*))
     
     inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     

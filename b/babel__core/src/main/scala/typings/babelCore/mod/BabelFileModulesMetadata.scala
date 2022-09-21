@@ -24,6 +24,6 @@ object BabelFileModulesMetadata {
     
     inline def setImports(value: js.Array[js.Object]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    inline def setImportsVarargs(value: js.Object*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: js.Object*): Self = StObject.set(x, "imports", js.Array(value*))
   }
 }

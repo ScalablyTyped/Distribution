@@ -10,7 +10,7 @@ object exhaustMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def exhaust[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("exhaust")().asInstanceOf[js.Any]
+  inline def exhaust[T](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("exhaust")().asInstanceOf[Any]
   
-  inline def exhaust_TR[T, R](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("exhaust")().asInstanceOf[js.Any]
+  inline def exhaust_TR[T, R](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("exhaust")().asInstanceOf[Any]
 }

@@ -33,7 +33,7 @@ object XCustomShapeHandle {
     Position: Point,
     acquire: () => Unit,
     getPosition: () => Point,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setControllerPosition: Point => Unit
   ): XCustomShapeHandle = {

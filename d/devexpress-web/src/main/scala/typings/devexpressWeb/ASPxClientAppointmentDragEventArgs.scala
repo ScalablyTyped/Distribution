@@ -24,11 +24,11 @@ trait ASPxClientAppointmentDragEventArgs
   /**
     * Gets a mouse event object related to the current drag operation.
     */
-  var mouseEvent: js.Any
+  var mouseEvent: Any
 }
 object ASPxClientAppointmentDragEventArgs {
   
-  inline def apply(allow: Boolean, dragInformation: js.Array[ASPxClientAppointmentDragInfo], mouseEvent: js.Any): ASPxClientAppointmentDragEventArgs = {
+  inline def apply(allow: Boolean, dragInformation: js.Array[ASPxClientAppointmentDragInfo], mouseEvent: Any): ASPxClientAppointmentDragEventArgs = {
     val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any], dragInformation = dragInformation.asInstanceOf[js.Any], mouseEvent = mouseEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientAppointmentDragEventArgs]
   }
@@ -39,8 +39,8 @@ object ASPxClientAppointmentDragEventArgs {
     
     inline def setDragInformation(value: js.Array[ASPxClientAppointmentDragInfo]): Self = StObject.set(x, "dragInformation", value.asInstanceOf[js.Any])
     
-    inline def setDragInformationVarargs(value: ASPxClientAppointmentDragInfo*): Self = StObject.set(x, "dragInformation", js.Array(value :_*))
+    inline def setDragInformationVarargs(value: ASPxClientAppointmentDragInfo*): Self = StObject.set(x, "dragInformation", js.Array(value*))
     
-    inline def setMouseEvent(value: js.Any): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
+    inline def setMouseEvent(value: Any): Self = StObject.set(x, "mouseEvent", value.asInstanceOf[js.Any])
   }
 }

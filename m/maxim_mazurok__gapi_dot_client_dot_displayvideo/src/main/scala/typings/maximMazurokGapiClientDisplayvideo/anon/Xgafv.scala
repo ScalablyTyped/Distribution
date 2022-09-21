@@ -13,8 +13,8 @@ trait Xgafv extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the advertiser that owns the fetched channel. */
-  var advertiserId: js.UndefOr[String] = js.undefined
+  /** Required. The ID of the advertiser this campaign belongs to. */
+  var advertiserId: String
   
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
@@ -22,8 +22,8 @@ trait Xgafv extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Required. The ID of the channel to fetch. */
-  var channelId: String
+  /** Required. The ID of the campaign to fetch. */
+  var campaignId: String
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -33,9 +33,6 @@ trait Xgafv extends StObject {
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /** The ID of the partner that owns the fetched channel. */
-  var partnerId: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -51,8 +48,8 @@ trait Xgafv extends StObject {
 }
 object Xgafv {
   
-  inline def apply(channelId: String, partnerId: String): Xgafv = {
-    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], partnerId = partnerId.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String, campaignId: String): Xgafv = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], campaignId = campaignId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xgafv]
   }
   
@@ -68,8 +65,6 @@ object Xgafv {
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
-    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
-    
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
@@ -78,7 +73,7 @@ object Xgafv {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -91,8 +86,6 @@ object Xgafv {
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

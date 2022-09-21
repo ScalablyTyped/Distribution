@@ -15,14 +15,14 @@ trait ContentIndexerQuery extends StObject {
     * Runs the query on the app's indexed content properties.
     * @return When this method completes, it returns the query results, represented as a collection of IIndexableContent instances.
     */
-  def getAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def getAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   /**
     * Runs the query on the app's indexed content properties and returns the specified number of items from the specified start index in the results collection.
     * @param startIndex The index of the first item to get from the results collection.
     * @param maxItems The maximum number of items to get.
     * @return When this method completes, it returns the query results, represented as a collection of IndexableContent instances.
     */
-  def getAsync(startIndex: Double, maxItems: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def getAsync(startIndex: Double, maxItems: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Gets the number of items in the search results.
@@ -34,14 +34,14 @@ trait ContentIndexerQuery extends StObject {
     * Retrieves a collection of property sets for an app, where the property sets are key-value pairs.
     * @return When this method completes, it returns the query results as a collection of PropertyValue instances.
     */
-  def getPropertiesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def getPropertiesAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   /**
     * Runs the query on the app's indexed content properties and returns the specified number of properties from the specified start index in the results collection.
     * @param startIndex The index of the first item to get from the results collection.
     * @param maxItems The maximum number of items to get.
     * @return When this method completes, it returns the query results as a collection of PropertyValue instances.
     */
-  def getPropertiesAsync(startIndex: Double, maxItems: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def getPropertiesAsync(startIndex: Double, maxItems: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /** Gets the StorageFolder representation of the app-provided items in the ContentIndexer query. */
   var queryFolder: StorageFolder = js.native

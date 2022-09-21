@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListLanguageModelsResponse extends StObject {
   
   /**
-    * A list of objects containing information about custom language models.
+    * Provides information about the custom language models that match the criteria specified in your request.
     */
   var Models: js.UndefOr[typings.awsSdk.transcribeserviceMod.Models] = js.undefined
   
   /**
-    * The operation returns a page of jobs at a time. The maximum size of the list is set by the MaxResults parameter. If there are more language models in the list than the page size, Amazon Transcribe returns the NextPage token. Include the token in the next request to the operation to return the next page of language models.
+    * If NextToken is present in your response, it indicates that not all results are displayed. To view the next set of results, copy the string associated with the NextToken parameter in your results output, then run your request again including NextToken with the value of the copied string. Repeat as needed to view all your results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListLanguageModelsResponse {
     
     inline def setModelsUndefined: Self = StObject.set(x, "Models", js.undefined)
     
-    inline def setModelsVarargs(value: LanguageModel*): Self = StObject.set(x, "Models", js.Array(value :_*))
+    inline def setModelsVarargs(value: LanguageModel*): Self = StObject.set(x, "Models", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

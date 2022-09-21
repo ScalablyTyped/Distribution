@@ -29,7 +29,7 @@ trait StartContinuousExportResponse extends StObject {
   /**
     * The timestamp representing when the continuous export was started.
     */
-  var startTime: js.UndefOr[TimeStamp] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
 }
 object StartContinuousExportResponse {
   
@@ -56,7 +56,7 @@ object StartContinuousExportResponse {
     
     inline def setSchemaStorageConfigUndefined: Self = StObject.set(x, "schemaStorageConfig", js.undefined)
     
-    inline def setStartTime(value: TimeStamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }

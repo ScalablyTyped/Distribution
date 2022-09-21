@@ -18,8 +18,8 @@ object toggleButtonGroupMod {
   
   @JSImport("react-bootstrap/lib/ToggleButtonGroup", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[ToggleButtonGroupProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[ToggleButtonGroupProps, js.Object, Any]
   
   trait BaseProps extends StObject {
     
@@ -27,13 +27,13 @@ object toggleButtonGroupMod {
       * You'll usually want to use string|number|string[]|number[] here,
       * but you can technically use any|any[].
       */
-    var defaultValue: js.UndefOr[js.Any] = js.undefined
+    var defaultValue: js.UndefOr[Any] = js.undefined
     
     /**
       * You'll usually want to use string|number|string[]|number[] here,
       * but you can technically use any|any[].
       */
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object BaseProps {
     
@@ -44,11 +44,11 @@ object toggleButtonGroupMod {
     
     extension [Self <: BaseProps](x: Self) {
       
-      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -58,7 +58,7 @@ object toggleButtonGroupMod {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* values */ js.Array[js.Any], Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* values */ js.Array[Any], Unit]] = js.undefined
     
     var `type`: checkbox
   }
@@ -76,7 +76,7 @@ object toggleButtonGroupMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnChange(value: /* values */ js.Array[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* values */ js.Array[Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -89,7 +89,7 @@ object toggleButtonGroupMod {
     /** Required if `type` is set to "radio" */
     var name: String
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.undefined
     
     var `type`: radio
   }
@@ -105,7 +105,7 @@ object toggleButtonGroupMod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setOnChange(value: /* value */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -113,9 +113,7 @@ object toggleButtonGroupMod {
     }
   }
   
-  @js.native
-  trait ToggleButtonGroup
-    extends Component[ToggleButtonGroupProps, js.Object, js.Any]
+  type ToggleButtonGroup = Component[ToggleButtonGroupProps, js.Object, Any]
   
-  type ToggleButtonGroupProps = BaseProps & (RadioProps | CheckboxProps) & (Omit[ButtonGroupProps, onChange]) & (Omit[HTMLProps[ToggleButtonGroup], defaultValue | `type` | value | onChange])
+  type ToggleButtonGroupProps = (RadioProps & BaseProps & (Omit[ButtonGroupProps, onChange]) & (Omit[HTMLProps[Any], defaultValue | `type` | value | onChange])) | (CheckboxProps & BaseProps & (Omit[ButtonGroupProps, onChange]) & (Omit[HTMLProps[Any], defaultValue | `type` | value | onChange]))
 }

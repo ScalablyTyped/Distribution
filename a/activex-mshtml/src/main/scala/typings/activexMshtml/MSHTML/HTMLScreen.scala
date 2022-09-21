@@ -17,7 +17,7 @@ trait HTMLScreen extends StObject {
   
   val colorDepth: Double
   
-  val constructor: js.Any
+  val constructor: Any
   
   val deviceXDPI: Double
   
@@ -49,7 +49,7 @@ object HTMLScreen {
     availWidth: Double,
     bufferDepth: Double,
     colorDepth: Double,
-    constructor: js.Any,
+    constructor: Any,
     deviceXDPI: Double,
     deviceYDPI: Double,
     fontSmoothingEnabled: Boolean,
@@ -77,7 +77,7 @@ object HTMLScreen {
     
     inline def setColorDepth(value: Double): Self = StObject.set(x, "colorDepth", value.asInstanceOf[js.Any])
     
-    inline def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
     inline def setDeviceXDPI(value: Double): Self = StObject.set(x, "deviceXDPI", value.asInstanceOf[js.Any])
     

@@ -11,14 +11,14 @@ trait PathSupportOption
      with BaseSupportOption[path]
      with _SupportOption {
   
-  var default: String
+  var default: js.UndefOr[String] = js.undefined
   
   var array: js.UndefOr[`false`] = js.undefined
 }
 object PathSupportOption {
   
-  inline def apply(category: String, default: String, since: String): PathSupportOption = {
-    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
+  inline def apply(category: String, since: String): PathSupportOption = {
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("path")
     __obj.asInstanceOf[PathSupportOption]
   }
@@ -30,5 +30,7 @@ object PathSupportOption {
     inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
     inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

@@ -12,7 +12,7 @@ trait DialogOptions extends StObject {
   /**
     * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
     */
-  var asyncContext: js.UndefOr[js.Any] = js.undefined
+  var asyncContext: js.UndefOr[Any] = js.undefined
   
   /**
     * Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable in Office on the web, and is
@@ -23,7 +23,7 @@ trait DialogOptions extends StObject {
   var displayInIframe: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Defines the width of the dialog as a percentage of the current display. Defaults to 80%. 250px minimum.
+    * Defines the height of the dialog as a percentage of the current display. Defaults to 80%. 250px minimum.
     */
   var height: js.UndefOr[Double] = js.undefined
   
@@ -36,7 +36,7 @@ trait DialogOptions extends StObject {
   var promptBeforeOpen: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Defines the height of the dialog as a percentage of the current display. Defaults to 80%. 150px minimum.
+    * Defines the width of the dialog as a percentage of the current display. Defaults to 80%. 150px minimum.
     */
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -49,7 +49,7 @@ object DialogOptions {
   
   extension [Self <: DialogOptions](x: Self) {
     
-    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
     inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     

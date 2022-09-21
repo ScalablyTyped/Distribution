@@ -8,5 +8,5 @@ object deleteEventSourceMappingOutputMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/DeleteEventSourceMappingOutput", "DeleteEventSourceMappingOutput")
   @js.native
-  val DeleteEventSourceMappingOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteEventSourceMappingOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

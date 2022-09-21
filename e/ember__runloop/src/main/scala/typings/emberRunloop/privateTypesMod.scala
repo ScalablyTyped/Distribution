@@ -29,6 +29,4 @@ object privateTypesMod {
     
     inline def sync: typings.emberRunloop.emberRunloopStrings.sync = "sync".asInstanceOf[typings.emberRunloop.emberRunloopStrings.sync]
   }
-  
-  type RunMethod[Target, Ret] = (js.ThisFunction1[/* this */ Target, /* repeated */ js.Any, Ret]) | (/* keyof Target */ String)
 }

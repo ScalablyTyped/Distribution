@@ -50,6 +50,18 @@ object ScriptTarget extends StObject {
   /* 7 */ val ES2020: typings.typescript.mod.ScriptTarget.ES2020 & Double = js.native
   
   @js.native
+  sealed trait ES2021
+    extends StObject
+       with ScriptTarget
+  /* 8 */ val ES2021: typings.typescript.mod.ScriptTarget.ES2021 & Double = js.native
+  
+  @js.native
+  sealed trait ES2022
+    extends StObject
+       with ScriptTarget
+  /* 9 */ val ES2022: typings.typescript.mod.ScriptTarget.ES2022 & Double = js.native
+  
+  @js.native
   sealed trait ES3
     extends StObject
        with ScriptTarget

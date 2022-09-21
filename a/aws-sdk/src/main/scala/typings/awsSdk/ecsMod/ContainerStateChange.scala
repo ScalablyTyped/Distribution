@@ -22,7 +22,7 @@ trait ContainerStateChange extends StObject {
   var imageDigest: js.UndefOr[String] = js.undefined
   
   /**
-    * Any network bindings associated with the container.
+    * Any network bindings that are associated with the container.
     */
   var networkBindings: js.UndefOr[NetworkBindings] = js.undefined
   
@@ -66,7 +66,7 @@ object ContainerStateChange {
     
     inline def setNetworkBindingsUndefined: Self = StObject.set(x, "networkBindings", js.undefined)
     
-    inline def setNetworkBindingsVarargs(value: NetworkBinding*): Self = StObject.set(x, "networkBindings", js.Array(value :_*))
+    inline def setNetworkBindingsVarargs(value: NetworkBinding*): Self = StObject.set(x, "networkBindings", js.Array(value*))
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

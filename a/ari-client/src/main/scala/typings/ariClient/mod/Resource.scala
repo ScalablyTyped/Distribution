@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Resource extends StObject {
   
   /**
+    * The ARI client instance.
+    */
+  var _client: Client = js.native
+  
+  /**
     * Notification that trying to move a channel to another Stasis application failed.
     */
   def addListener(
@@ -297,6 +302,31 @@ trait Resource extends StObject {
     event: TextMessageReceivedEventType,
     callback: js.Function2[/* event */ TextMessageReceived, /* endpoint */ Endpoint, Unit]
   ): Unit = js.native
+  /**
+    * Error event sent when connection to API fails.
+    */
+  // tslint:disable-next-line:unified-signatures
+  def addListener(`type`: APILoadErrorEventType, listener: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  /**
+    * Event emitted when a WebSocket pong is received.
+    */
+  // tslint:disable-next-line:unified-signatures
+  def addListener(`type`: PongEventType, listener: js.Function0[Unit]): Unit = js.native
+  /**
+    * Event emitted when the WebSocket is connected.
+    */
+  // tslint:disable-next-line:unified-signatures
+  def addListener(`type`: WebSocketConnectedEventType, listener: js.Function0[Unit]): Unit = js.native
+  /**
+    * Error emitted when WebSocket reconnection attempts exceeded MaxRetries.
+    */
+  // tslint:disable-next-line:unified-signatures
+  def addListener(`type`: WebSocketMaxRetriesEventType, listener: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  /**
+    * Error emitted when the WebSocket is reconnecting.
+    */
+  // tslint:disable-next-line:unified-signatures
+  def addListener(`type`: WebSocketReconnectingEventType, listener: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Notification that trying to move a channel to another Stasis application failed.
@@ -588,6 +618,31 @@ trait Resource extends StObject {
     event: TextMessageReceivedEventType,
     callback: js.Function2[/* event */ TextMessageReceived, /* endpoint */ Endpoint, Unit]
   ): Unit = js.native
+  /**
+    * Error event sent when connection to API fails.
+    */
+  // tslint:disable-next-line:unified-signatures
+  def on(`type`: APILoadErrorEventType, listener: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  /**
+    * Event emitted when a WebSocket pong is received.
+    */
+  // tslint:disable-next-line:unified-signatures
+  def on(`type`: PongEventType, listener: js.Function0[Unit]): Unit = js.native
+  /**
+    * Event emitted when the WebSocket is connected.
+    */
+  // tslint:disable-next-line:unified-signatures
+  def on(`type`: WebSocketConnectedEventType, listener: js.Function0[Unit]): Unit = js.native
+  /**
+    * Error emitted when WebSocket reconnection attempts exceeded MaxRetries.
+    */
+  // tslint:disable-next-line:unified-signatures
+  def on(`type`: WebSocketMaxRetriesEventType, listener: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  /**
+    * Error emitted when the WebSocket is reconnecting.
+    */
+  // tslint:disable-next-line:unified-signatures
+  def on(`type`: WebSocketReconnectingEventType, listener: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Notification that trying to move a channel to another Stasis application failed.
@@ -879,6 +934,31 @@ trait Resource extends StObject {
     event: TextMessageReceivedEventType,
     callback: js.Function2[/* event */ TextMessageReceived, /* endpoint */ Endpoint, Unit]
   ): Unit = js.native
+  /**
+    * Error event sent when connection to API fails.
+    */
+  // tslint:disable-next-line:unified-signatures
+  def once(`type`: APILoadErrorEventType, listener: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  /**
+    * Event emitted when a WebSocket pong is received.
+    */
+  // tslint:disable-next-line:unified-signatures
+  def once(`type`: PongEventType, listener: js.Function0[Unit]): Unit = js.native
+  /**
+    * Event emitted when the WebSocket is connected.
+    */
+  // tslint:disable-next-line:unified-signatures
+  def once(`type`: WebSocketConnectedEventType, listener: js.Function0[Unit]): Unit = js.native
+  /**
+    * Error emitted when WebSocket reconnection attempts exceeded MaxRetries.
+    */
+  // tslint:disable-next-line:unified-signatures
+  def once(`type`: WebSocketMaxRetriesEventType, listener: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  /**
+    * Error emitted when the WebSocket is reconnecting.
+    */
+  // tslint:disable-next-line:unified-signatures
+  def once(`type`: WebSocketReconnectingEventType, listener: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     *  Removes all listeners, or those of the specified event type.
@@ -892,5 +972,5 @@ trait Resource extends StObject {
     *  @param event - The event type.
     *  @param handler - The event listener function.
     */
-  def removeListener(event: AnyEventType, handler: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def removeListener(event: AnyEventType, handler: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
 }

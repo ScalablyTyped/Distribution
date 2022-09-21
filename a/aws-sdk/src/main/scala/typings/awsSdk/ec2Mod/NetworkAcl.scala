@@ -27,7 +27,7 @@ trait NetworkAcl extends StObject {
   var NetworkAclId: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the network ACL.
+    * The ID of the Amazon Web Services account that owns the network ACL.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -54,13 +54,13 @@ object NetworkAcl {
     
     inline def setAssociationsUndefined: Self = StObject.set(x, "Associations", js.undefined)
     
-    inline def setAssociationsVarargs(value: NetworkAclAssociation*): Self = StObject.set(x, "Associations", js.Array(value :_*))
+    inline def setAssociationsVarargs(value: NetworkAclAssociation*): Self = StObject.set(x, "Associations", js.Array(value*))
     
     inline def setEntries(value: NetworkAclEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
     inline def setEntriesUndefined: Self = StObject.set(x, "Entries", js.undefined)
     
-    inline def setEntriesVarargs(value: NetworkAclEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: NetworkAclEntry*): Self = StObject.set(x, "Entries", js.Array(value*))
     
     inline def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     
@@ -78,7 +78,7 @@ object NetworkAcl {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

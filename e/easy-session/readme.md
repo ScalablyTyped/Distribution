@@ -9,10 +9,10 @@ Session management and security simplifier
 | ------------------ | :-------------: |
 | Full name          | easy-session |
 | Keywords           | session, management, rbac |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 2382 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 153.33333333333334 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/DeadAlready/node-easy-session#readme)

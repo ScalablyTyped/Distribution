@@ -8,5 +8,5 @@ object messageMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/_Message", "_Message")
   @js.native
-  val Message: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Message: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("structured-source", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with StructuredSource {
     /**

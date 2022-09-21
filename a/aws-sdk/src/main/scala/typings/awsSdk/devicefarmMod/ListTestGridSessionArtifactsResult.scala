@@ -29,7 +29,7 @@ object ListTestGridSessionArtifactsResult {
     
     inline def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
     
-    inline def setArtifactsVarargs(value: TestGridSessionArtifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
+    inline def setArtifactsVarargs(value: TestGridSessionArtifact*): Self = StObject.set(x, "artifacts", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -17,5 +17,5 @@ trait InstantiableINoiseFilter
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
-  def fromObject(`object`: js.Any): INoiseFilter = js.native
+  def fromObject(`object`: Any): INoiseFilter = js.native
 }

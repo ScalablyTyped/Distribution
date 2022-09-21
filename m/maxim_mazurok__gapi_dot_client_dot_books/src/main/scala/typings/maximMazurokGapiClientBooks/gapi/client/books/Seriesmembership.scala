@@ -30,7 +30,7 @@ object Seriesmembership {
     
     inline def setMemberUndefined: Self = StObject.set(x, "member", js.undefined)
     
-    inline def setMemberVarargs(value: Volume*): Self = StObject.set(x, "member", js.Array(value :_*))
+    inline def setMemberVarargs(value: Volume*): Self = StObject.set(x, "member", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

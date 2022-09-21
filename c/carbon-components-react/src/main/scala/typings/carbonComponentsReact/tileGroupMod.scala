@@ -8,6 +8,6 @@ object tileGroupMod {
   
   @JSImport("carbon-components-react/lib/components/TileGroup", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.carbonComponentsReact.tileGroupTileGroupMod.default
 }

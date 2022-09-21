@@ -10,10 +10,9 @@ object documentCardStatusBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardStatus.base", "DocumentCardStatusBase")
   @js.native
-  class DocumentCardStatusBase protected ()
-    extends Component[IDocumentCardStatusProps, js.Any, js.Any] {
+  open class DocumentCardStatusBase protected () extends Component[IDocumentCardStatusProps, Any, Any] {
     def this(props: IDocumentCardStatusProps) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
   }
 }

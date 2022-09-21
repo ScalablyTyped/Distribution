@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.PivotPager")
 @js.native
-class PivotPager protected ()
+open class PivotPager protected ()
   extends StObject
      with typings.ejWebAll.ej.PivotPager {
   def this(element: JQuery) = this()
@@ -25,8 +25,8 @@ object PivotPager {
   /* static member */
   @JSGlobal("ej.PivotPager.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.PivotPager.Mode")
   @js.native

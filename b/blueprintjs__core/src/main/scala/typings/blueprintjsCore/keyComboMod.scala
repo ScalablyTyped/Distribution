@@ -10,14 +10,14 @@ object keyComboMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/keyCombo", "KeyCombo")
   @js.native
-  class KeyCombo protected ()
-    extends AbstractPureComponent2[IKeyComboProps, js.Object, js.Object] {
-    def this(props: IKeyComboProps) = this()
-    def this(props: IKeyComboProps, context: js.Any) = this()
+  open class KeyCombo protected ()
+    extends AbstractPureComponent2[KeyComboTagProps, js.Object, js.Object] {
+    def this(props: KeyComboTagProps) = this()
+    def this(props: KeyComboTagProps, context: Any) = this()
     
-    /* private */ var renderKey: js.Any = js.native
+    /* private */ var renderKey: Any = js.native
     
-    /* private */ var renderMinimalKey: js.Any = js.native
+    /* private */ var renderMinimalKey: Any = js.native
   }
   /* static members */
   object KeyCombo {
@@ -43,6 +43,7 @@ object keyComboMod {
       * Whether to render in a minimal style.
       * If `false`, each key in the combo will be rendered inside a `<kbd>` tag.
       * If `true`, only the icon or short name of a key will be rendered with no wrapper styles.
+      *
       * @default false
       */
     var minimal: js.UndefOr[Boolean] = js.undefined
@@ -63,4 +64,6 @@ object keyComboMod {
       inline def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
     }
   }
+  
+  type KeyComboTagProps = IKeyComboProps
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-dnd/invariant" : "2.0.0"
+      "@react-dnd/invariant" : "4.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-dnd/invariant" : "2.0.0"
+      "@react-dnd/invariant" : "4.0.2"
     }
   ],
   "compile-devDependencies" : [

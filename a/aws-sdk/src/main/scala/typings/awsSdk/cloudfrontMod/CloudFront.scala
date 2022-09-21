@@ -17,6 +17,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CloudFront extends CloudFrontCustomizations {
   
+  /**
+    * Associates an alias (also known as a CNAME or an alternate domain name) with a CloudFront distribution. With this operation you can move an alias that’s already in use on a CloudFront distribution to a different distribution in one step. This prevents the downtime that could occur if you first remove the alias from one distribution and then separately add the alias to another distribution. To use this operation to associate an alias with a distribution, you provide the alias and the ID of the target distribution for the alias. For more information, including how to set up the target distribution, prerequisites that you must complete, and other restrictions, see Moving an alternate domain name to a different distribution in the Amazon CloudFront Developer Guide.
+    */
+  def associateAlias(): Request[js.Object, AWSError] = js.native
+  def associateAlias(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Associates an alias (also known as a CNAME or an alternate domain name) with a CloudFront distribution. With this operation you can move an alias that’s already in use on a CloudFront distribution to a different distribution in one step. This prevents the downtime that could occur if you first remove the alias from one distribution and then separately add the alias to another distribution. To use this operation to associate an alias with a distribution, you provide the alias and the ID of the target distribution for the alias. For more information, including how to set up the target distribution, prerequisites that you must complete, and other restrictions, see Moving an alternate domain name to a different distribution in the Amazon CloudFront Developer Guide.
+    */
+  def associateAlias(params: AssociateAliasRequest): Request[js.Object, AWSError] = js.native
+  def associateAlias(
+    params: AssociateAliasRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
   @JSName("config")
   var config_CloudFront: ConfigBase & ClientConfiguration = js.native
   
@@ -111,6 +125,20 @@ trait CloudFront extends CloudFrontCustomizations {
   ): Request[CreateFieldLevelEncryptionProfileResult, AWSError] = js.native
   
   /**
+    * Creates a CloudFront function. To create a function, you provide the function code and some configuration information about the function. The response contains an Amazon Resource Name (ARN) that uniquely identifies the function. When you create a function, it’s in the DEVELOPMENT stage. In this stage, you can test the function with TestFunction, and update it with UpdateFunction. When you’re ready to use your function with a CloudFront distribution, use PublishFunction to copy the function from the DEVELOPMENT stage to LIVE. When it’s live, you can attach the function to a distribution’s cache behavior, using the function’s ARN.
+    */
+  def createFunction(): Request[CreateFunctionResult, AWSError] = js.native
+  def createFunction(callback: js.Function2[/* err */ AWSError, /* data */ CreateFunctionResult, Unit]): Request[CreateFunctionResult, AWSError] = js.native
+  /**
+    * Creates a CloudFront function. To create a function, you provide the function code and some configuration information about the function. The response contains an Amazon Resource Name (ARN) that uniquely identifies the function. When you create a function, it’s in the DEVELOPMENT stage. In this stage, you can test the function with TestFunction, and update it with UpdateFunction. When you’re ready to use your function with a CloudFront distribution, use PublishFunction to copy the function from the DEVELOPMENT stage to LIVE. When it’s live, you can attach the function to a distribution’s cache behavior, using the function’s ARN.
+    */
+  def createFunction(params: CreateFunctionRequest): Request[CreateFunctionResult, AWSError] = js.native
+  def createFunction(
+    params: CreateFunctionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateFunctionResult, Unit]
+  ): Request[CreateFunctionResult, AWSError] = js.native
+  
+  /**
     * Create a new invalidation. 
     */
   def createInvalidation(): Request[CreateInvalidationResult, AWSError] = js.native
@@ -151,6 +179,20 @@ trait CloudFront extends CloudFrontCustomizations {
     params: CreateMonitoringSubscriptionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateMonitoringSubscriptionResult, Unit]
   ): Request[CreateMonitoringSubscriptionResult, AWSError] = js.native
+  
+  /**
+    * Creates a new origin access control in CloudFront. After you create an origin access control, you can add it to an origin in a CloudFront distribution so that CloudFront sends authenticated (signed) requests to the origin. For an Amazon S3 origin, this makes it possible to block public access to the Amazon S3 bucket so that viewers (users) can access the content in the bucket only through CloudFront. For more information about using a CloudFront origin access control, see Restricting access to an Amazon S3 origin in the Amazon CloudFront Developer Guide.
+    */
+  def createOriginAccessControl(): Request[CreateOriginAccessControlResult, AWSError] = js.native
+  def createOriginAccessControl(callback: js.Function2[/* err */ AWSError, /* data */ CreateOriginAccessControlResult, Unit]): Request[CreateOriginAccessControlResult, AWSError] = js.native
+  /**
+    * Creates a new origin access control in CloudFront. After you create an origin access control, you can add it to an origin in a CloudFront distribution so that CloudFront sends authenticated (signed) requests to the origin. For an Amazon S3 origin, this makes it possible to block public access to the Amazon S3 bucket so that viewers (users) can access the content in the bucket only through CloudFront. For more information about using a CloudFront origin access control, see Restricting access to an Amazon S3 origin in the Amazon CloudFront Developer Guide.
+    */
+  def createOriginAccessControl(params: CreateOriginAccessControlRequest): Request[CreateOriginAccessControlResult, AWSError] = js.native
+  def createOriginAccessControl(
+    params: CreateOriginAccessControlRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateOriginAccessControlResult, Unit]
+  ): Request[CreateOriginAccessControlResult, AWSError] = js.native
   
   /**
     * Creates an origin request policy. After you create an origin request policy, you can attach it to one or more cache behaviors. When it’s attached to a cache behavior, the origin request policy determines the values that CloudFront includes in requests that it sends to the origin. Each request that CloudFront sends to the origin includes the following:   The request body and the URL path (without the domain name) from the viewer request.   The headers that CloudFront automatically includes in every origin request, including Host, User-Agent, and X-Amz-Cf-Id.   All HTTP headers, cookies, and URL query strings that are specified in the cache policy or the origin request policy. These can include items from the viewer request and, in the case of headers, additional ones that are added by CloudFront.   CloudFront sends a request when it can’t find a valid object in its cache that matches the request. If you want to send values to the origin and also include them in the cache key, use CachePolicy. For more information about origin request policies, see Controlling origin requests in the Amazon CloudFront Developer Guide.
@@ -195,12 +237,26 @@ trait CloudFront extends CloudFrontCustomizations {
   ): Request[CreateRealtimeLogConfigResult, AWSError] = js.native
   
   /**
-    * Creates a new RTMP distribution. An RTMP distribution is similar to a web distribution, but an RTMP distribution streams media files using the Adobe Real-Time Messaging Protocol (RTMP) instead of serving files using HTTP.  To create a new distribution, submit a POST request to the CloudFront API version/distribution resource. The request body must include a document with a StreamingDistributionConfig element. The response echoes the StreamingDistributionConfig element and returns other information about the RTMP distribution. To get the status of your request, use the GET StreamingDistribution API action. When the value of Enabled is true and the value of Status is Deployed, your distribution is ready. A distribution usually deploys in less than 15 minutes. For more information about web distributions, see Working with RTMP Distributions in the Amazon CloudFront Developer Guide.  Beginning with the 2012-05-05 version of the CloudFront API, we made substantial changes to the format of the XML document that you include in the request body when you create or update a web distribution or an RTMP distribution, and when you invalidate objects. With previous versions of the API, we discovered that it was too easy to accidentally delete one or more values for an element that accepts multiple values, for example, CNAMEs and trusted signers. Our changes for the 2012-05-05 release are intended to prevent these accidental deletions and to notify you when there's a mismatch between the number of values you say you're specifying in the Quantity element and the number of values specified. 
+    * Creates a response headers policy. A response headers policy contains information about a set of HTTP response headers and their values. To create a response headers policy, you provide some metadata about the policy, and a set of configurations that specify the response headers. After you create a response headers policy, you can use its ID to attach it to one or more cache behaviors in a CloudFront distribution. When it’s attached to a cache behavior, CloudFront adds the headers in the policy to HTTP responses that it sends for requests that match the cache behavior.
+    */
+  def createResponseHeadersPolicy(): Request[CreateResponseHeadersPolicyResult, AWSError] = js.native
+  def createResponseHeadersPolicy(callback: js.Function2[/* err */ AWSError, /* data */ CreateResponseHeadersPolicyResult, Unit]): Request[CreateResponseHeadersPolicyResult, AWSError] = js.native
+  /**
+    * Creates a response headers policy. A response headers policy contains information about a set of HTTP response headers and their values. To create a response headers policy, you provide some metadata about the policy, and a set of configurations that specify the response headers. After you create a response headers policy, you can use its ID to attach it to one or more cache behaviors in a CloudFront distribution. When it’s attached to a cache behavior, CloudFront adds the headers in the policy to HTTP responses that it sends for requests that match the cache behavior.
+    */
+  def createResponseHeadersPolicy(params: CreateResponseHeadersPolicyRequest): Request[CreateResponseHeadersPolicyResult, AWSError] = js.native
+  def createResponseHeadersPolicy(
+    params: CreateResponseHeadersPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateResponseHeadersPolicyResult, Unit]
+  ): Request[CreateResponseHeadersPolicyResult, AWSError] = js.native
+  
+  /**
+    * This API is deprecated. Amazon CloudFront is deprecating real-time messaging protocol (RTMP) distributions on December 31, 2020. For more information, read the announcement on the Amazon CloudFront discussion forum.
     */
   def createStreamingDistribution(): Request[CreateStreamingDistributionResult, AWSError] = js.native
   def createStreamingDistribution(callback: js.Function2[/* err */ AWSError, /* data */ CreateStreamingDistributionResult, Unit]): Request[CreateStreamingDistributionResult, AWSError] = js.native
   /**
-    * Creates a new RTMP distribution. An RTMP distribution is similar to a web distribution, but an RTMP distribution streams media files using the Adobe Real-Time Messaging Protocol (RTMP) instead of serving files using HTTP.  To create a new distribution, submit a POST request to the CloudFront API version/distribution resource. The request body must include a document with a StreamingDistributionConfig element. The response echoes the StreamingDistributionConfig element and returns other information about the RTMP distribution. To get the status of your request, use the GET StreamingDistribution API action. When the value of Enabled is true and the value of Status is Deployed, your distribution is ready. A distribution usually deploys in less than 15 minutes. For more information about web distributions, see Working with RTMP Distributions in the Amazon CloudFront Developer Guide.  Beginning with the 2012-05-05 version of the CloudFront API, we made substantial changes to the format of the XML document that you include in the request body when you create or update a web distribution or an RTMP distribution, and when you invalidate objects. With previous versions of the API, we discovered that it was too easy to accidentally delete one or more values for an element that accepts multiple values, for example, CNAMEs and trusted signers. Our changes for the 2012-05-05 release are intended to prevent these accidental deletions and to notify you when there's a mismatch between the number of values you say you're specifying in the Quantity element and the number of values specified. 
+    * This API is deprecated. Amazon CloudFront is deprecating real-time messaging protocol (RTMP) distributions on December 31, 2020. For more information, read the announcement on the Amazon CloudFront discussion forum.
     */
   def createStreamingDistribution(params: CreateStreamingDistributionRequest): Request[CreateStreamingDistributionResult, AWSError] = js.native
   def createStreamingDistribution(
@@ -209,14 +265,14 @@ trait CloudFront extends CloudFrontCustomizations {
   ): Request[CreateStreamingDistributionResult, AWSError] = js.native
   
   /**
-    * Create a new streaming distribution with tags.
+    * This API is deprecated. Amazon CloudFront is deprecating real-time messaging protocol (RTMP) distributions on December 31, 2020. For more information, read the announcement on the Amazon CloudFront discussion forum.
     */
   def createStreamingDistributionWithTags(): Request[CreateStreamingDistributionWithTagsResult, AWSError] = js.native
   def createStreamingDistributionWithTags(
     callback: js.Function2[/* err */ AWSError, /* data */ CreateStreamingDistributionWithTagsResult, Unit]
   ): Request[CreateStreamingDistributionWithTagsResult, AWSError] = js.native
   /**
-    * Create a new streaming distribution with tags.
+    * This API is deprecated. Amazon CloudFront is deprecating real-time messaging protocol (RTMP) distributions on December 31, 2020. For more information, read the announcement on the Amazon CloudFront discussion forum.
     */
   def createStreamingDistributionWithTags(params: CreateStreamingDistributionWithTagsRequest): Request[CreateStreamingDistributionWithTagsResult, AWSError] = js.native
   def createStreamingDistributionWithTags(
@@ -295,6 +351,20 @@ trait CloudFront extends CloudFrontCustomizations {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Deletes a CloudFront function. You cannot delete a function if it’s associated with a cache behavior. First, update your distributions to remove the function association from all cache behaviors, then delete the function. To delete a function, you must provide the function’s name and version (ETag value). To get these values, you can use ListFunctions and DescribeFunction.
+    */
+  def deleteFunction(): Request[js.Object, AWSError] = js.native
+  def deleteFunction(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a CloudFront function. You cannot delete a function if it’s associated with a cache behavior. First, update your distributions to remove the function association from all cache behaviors, then delete the function. To delete a function, you must provide the function’s name and version (ETag value). To get these values, you can use ListFunctions and DescribeFunction.
+    */
+  def deleteFunction(params: DeleteFunctionRequest): Request[js.Object, AWSError] = js.native
+  def deleteFunction(
+    params: DeleteFunctionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
     * Deletes a key group. You cannot delete a key group that is referenced in a cache behavior. First update your distributions to remove the key group from all cache behaviors, then delete the key group. To delete a key group, you must provide the key group’s identifier and version. To get these values, use ListKeyGroups followed by GetKeyGroup or GetKeyGroupConfig.
     */
   def deleteKeyGroup(): Request[js.Object, AWSError] = js.native
@@ -321,6 +391,20 @@ trait CloudFront extends CloudFrontCustomizations {
     params: DeleteMonitoringSubscriptionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteMonitoringSubscriptionResult, Unit]
   ): Request[DeleteMonitoringSubscriptionResult, AWSError] = js.native
+  
+  /**
+    * Deletes a CloudFront origin access control. You cannot delete an origin access control if it's in use. First, update all distributions to remove the origin access control from all origins, then delete the origin access control.
+    */
+  def deleteOriginAccessControl(): Request[js.Object, AWSError] = js.native
+  def deleteOriginAccessControl(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a CloudFront origin access control. You cannot delete an origin access control if it's in use. First, update all distributions to remove the origin access control from all origins, then delete the origin access control.
+    */
+  def deleteOriginAccessControl(params: DeleteOriginAccessControlRequest): Request[js.Object, AWSError] = js.native
+  def deleteOriginAccessControl(
+    params: DeleteOriginAccessControlRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
   
   /**
     * Deletes an origin request policy. You cannot delete an origin request policy if it’s attached to any cache behaviors. First update your distributions to remove the origin request policy from all cache behaviors, then delete the origin request policy. To delete an origin request policy, you must provide the policy’s identifier and version. To get the identifier, you can use ListOriginRequestPolicies or GetOriginRequestPolicy.
@@ -365,6 +449,20 @@ trait CloudFront extends CloudFrontCustomizations {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Deletes a response headers policy. You cannot delete a response headers policy if it’s attached to a cache behavior. First update your distributions to remove the response headers policy from all cache behaviors, then delete the response headers policy. To delete a response headers policy, you must provide the policy’s identifier and version. To get these values, you can use ListResponseHeadersPolicies or GetResponseHeadersPolicy. 
+    */
+  def deleteResponseHeadersPolicy(): Request[js.Object, AWSError] = js.native
+  def deleteResponseHeadersPolicy(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a response headers policy. You cannot delete a response headers policy if it’s attached to a cache behavior. First update your distributions to remove the response headers policy from all cache behaviors, then delete the response headers policy. To delete a response headers policy, you must provide the policy’s identifier and version. To get these values, you can use ListResponseHeadersPolicies or GetResponseHeadersPolicy. 
+    */
+  def deleteResponseHeadersPolicy(params: DeleteResponseHeadersPolicyRequest): Request[js.Object, AWSError] = js.native
+  def deleteResponseHeadersPolicy(
+    params: DeleteResponseHeadersPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
     * Delete a streaming distribution. To delete an RTMP distribution using the CloudFront API, perform the following steps.  To delete an RTMP distribution using the CloudFront API:   Disable the RTMP distribution.   Submit a GET Streaming Distribution Config request to get the current configuration and the Etag header for the distribution.    Update the XML document that was returned in the response to your GET Streaming Distribution Config request to change the value of Enabled to false.   Submit a PUT Streaming Distribution Config request to update the configuration for your distribution. In the request body, include the XML document that you updated in Step 3. Then set the value of the HTTP If-Match header to the value of the ETag header that CloudFront returned when you submitted the GET Streaming Distribution Config request in Step 2.   Review the response to the PUT Streaming Distribution Config request to confirm that the distribution was successfully disabled.   Submit a GET Streaming Distribution Config request to confirm that your changes have propagated. When propagation is complete, the value of Status is Deployed.   Submit a DELETE Streaming Distribution request. Set the value of the HTTP If-Match header to the value of the ETag header that CloudFront returned when you submitted the GET Streaming Distribution Config request in Step 2.   Review the response to your DELETE Streaming Distribution request to confirm that the distribution was successfully deleted.   For information about deleting a distribution using the CloudFront console, see Deleting a Distribution in the Amazon CloudFront Developer Guide.
     */
   def deleteStreamingDistribution(): Request[js.Object, AWSError] = js.native
@@ -377,6 +475,20 @@ trait CloudFront extends CloudFrontCustomizations {
     params: DeleteStreamingDistributionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Gets configuration information and metadata about a CloudFront function, but not the function’s code. To get a function’s code, use GetFunction. To get configuration information and metadata about a function, you must provide the function’s name and stage. To get these values, you can use ListFunctions.
+    */
+  def describeFunction(): Request[DescribeFunctionResult, AWSError] = js.native
+  def describeFunction(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFunctionResult, Unit]): Request[DescribeFunctionResult, AWSError] = js.native
+  /**
+    * Gets configuration information and metadata about a CloudFront function, but not the function’s code. To get a function’s code, use GetFunction. To get configuration information and metadata about a function, you must provide the function’s name and stage. To get these values, you can use ListFunctions.
+    */
+  def describeFunction(params: DescribeFunctionRequest): Request[DescribeFunctionResult, AWSError] = js.native
+  def describeFunction(
+    params: DescribeFunctionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFunctionResult, Unit]
+  ): Request[DescribeFunctionResult, AWSError] = js.native
   
   /**
     * Gets a cache policy, including the following metadata:   The policy’s identifier.   The date and time when the policy was last modified.   To get a cache policy, you must provide the policy’s identifier. If the cache policy is attached to a distribution’s cache behavior, you can get the policy’s identifier using ListDistributions or GetDistribution. If the cache policy is not attached to a cache behavior, you can get the identifier using ListCachePolicies.
@@ -525,6 +637,20 @@ trait CloudFront extends CloudFrontCustomizations {
   ): Request[GetFieldLevelEncryptionProfileConfigResult, AWSError] = js.native
   
   /**
+    * Gets the code of a CloudFront function. To get configuration information and metadata about a function, use DescribeFunction. To get a function’s code, you must provide the function’s name and stage. To get these values, you can use ListFunctions.
+    */
+  def getFunction(): Request[GetFunctionResult, AWSError] = js.native
+  def getFunction(callback: js.Function2[/* err */ AWSError, /* data */ GetFunctionResult, Unit]): Request[GetFunctionResult, AWSError] = js.native
+  /**
+    * Gets the code of a CloudFront function. To get configuration information and metadata about a function, use DescribeFunction. To get a function’s code, you must provide the function’s name and stage. To get these values, you can use ListFunctions.
+    */
+  def getFunction(params: GetFunctionRequest): Request[GetFunctionResult, AWSError] = js.native
+  def getFunction(
+    params: GetFunctionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetFunctionResult, Unit]
+  ): Request[GetFunctionResult, AWSError] = js.native
+  
+  /**
     * Get the information about an invalidation. 
     */
   def getInvalidation(): Request[GetInvalidationResult, AWSError] = js.native
@@ -579,6 +705,34 @@ trait CloudFront extends CloudFrontCustomizations {
     params: GetMonitoringSubscriptionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetMonitoringSubscriptionResult, Unit]
   ): Request[GetMonitoringSubscriptionResult, AWSError] = js.native
+  
+  /**
+    * Gets a CloudFront origin access control, including its unique identifier.
+    */
+  def getOriginAccessControl(): Request[GetOriginAccessControlResult, AWSError] = js.native
+  def getOriginAccessControl(callback: js.Function2[/* err */ AWSError, /* data */ GetOriginAccessControlResult, Unit]): Request[GetOriginAccessControlResult, AWSError] = js.native
+  /**
+    * Gets a CloudFront origin access control, including its unique identifier.
+    */
+  def getOriginAccessControl(params: GetOriginAccessControlRequest): Request[GetOriginAccessControlResult, AWSError] = js.native
+  def getOriginAccessControl(
+    params: GetOriginAccessControlRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetOriginAccessControlResult, Unit]
+  ): Request[GetOriginAccessControlResult, AWSError] = js.native
+  
+  /**
+    * Gets a CloudFront origin access control configuration.
+    */
+  def getOriginAccessControlConfig(): Request[GetOriginAccessControlConfigResult, AWSError] = js.native
+  def getOriginAccessControlConfig(callback: js.Function2[/* err */ AWSError, /* data */ GetOriginAccessControlConfigResult, Unit]): Request[GetOriginAccessControlConfigResult, AWSError] = js.native
+  /**
+    * Gets a CloudFront origin access control configuration.
+    */
+  def getOriginAccessControlConfig(params: GetOriginAccessControlConfigRequest): Request[GetOriginAccessControlConfigResult, AWSError] = js.native
+  def getOriginAccessControlConfig(
+    params: GetOriginAccessControlConfigRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetOriginAccessControlConfigResult, Unit]
+  ): Request[GetOriginAccessControlConfigResult, AWSError] = js.native
   
   /**
     * Gets an origin request policy, including the following metadata:   The policy’s identifier.   The date and time when the policy was last modified.   To get an origin request policy, you must provide the policy’s identifier. If the origin request policy is attached to a distribution’s cache behavior, you can get the policy’s identifier using ListDistributions or GetDistribution. If the origin request policy is not attached to a cache behavior, you can get the identifier using ListOriginRequestPolicies.
@@ -651,6 +805,34 @@ trait CloudFront extends CloudFrontCustomizations {
   ): Request[GetRealtimeLogConfigResult, AWSError] = js.native
   
   /**
+    * Gets a response headers policy, including metadata (the policy’s identifier and the date and time when the policy was last modified). To get a response headers policy, you must provide the policy’s identifier. If the response headers policy is attached to a distribution’s cache behavior, you can get the policy’s identifier using ListDistributions or GetDistribution. If the response headers policy is not attached to a cache behavior, you can get the identifier using ListResponseHeadersPolicies.
+    */
+  def getResponseHeadersPolicy(): Request[GetResponseHeadersPolicyResult, AWSError] = js.native
+  def getResponseHeadersPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetResponseHeadersPolicyResult, Unit]): Request[GetResponseHeadersPolicyResult, AWSError] = js.native
+  /**
+    * Gets a response headers policy, including metadata (the policy’s identifier and the date and time when the policy was last modified). To get a response headers policy, you must provide the policy’s identifier. If the response headers policy is attached to a distribution’s cache behavior, you can get the policy’s identifier using ListDistributions or GetDistribution. If the response headers policy is not attached to a cache behavior, you can get the identifier using ListResponseHeadersPolicies.
+    */
+  def getResponseHeadersPolicy(params: GetResponseHeadersPolicyRequest): Request[GetResponseHeadersPolicyResult, AWSError] = js.native
+  def getResponseHeadersPolicy(
+    params: GetResponseHeadersPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetResponseHeadersPolicyResult, Unit]
+  ): Request[GetResponseHeadersPolicyResult, AWSError] = js.native
+  
+  /**
+    * Gets a response headers policy configuration. To get a response headers policy configuration, you must provide the policy’s identifier. If the response headers policy is attached to a distribution’s cache behavior, you can get the policy’s identifier using ListDistributions or GetDistribution. If the response headers policy is not attached to a cache behavior, you can get the identifier using ListResponseHeadersPolicies.
+    */
+  def getResponseHeadersPolicyConfig(): Request[GetResponseHeadersPolicyConfigResult, AWSError] = js.native
+  def getResponseHeadersPolicyConfig(callback: js.Function2[/* err */ AWSError, /* data */ GetResponseHeadersPolicyConfigResult, Unit]): Request[GetResponseHeadersPolicyConfigResult, AWSError] = js.native
+  /**
+    * Gets a response headers policy configuration. To get a response headers policy configuration, you must provide the policy’s identifier. If the response headers policy is attached to a distribution’s cache behavior, you can get the policy’s identifier using ListDistributions or GetDistribution. If the response headers policy is not attached to a cache behavior, you can get the identifier using ListResponseHeadersPolicies.
+    */
+  def getResponseHeadersPolicyConfig(params: GetResponseHeadersPolicyConfigRequest): Request[GetResponseHeadersPolicyConfigResult, AWSError] = js.native
+  def getResponseHeadersPolicyConfig(
+    params: GetResponseHeadersPolicyConfigRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetResponseHeadersPolicyConfigResult, Unit]
+  ): Request[GetResponseHeadersPolicyConfigResult, AWSError] = js.native
+  
+  /**
     * Gets information about a specified RTMP distribution, including the distribution configuration.
     */
   def getStreamingDistribution(): Request[GetStreamingDistributionResult, AWSError] = js.native
@@ -679,12 +861,12 @@ trait CloudFront extends CloudFrontCustomizations {
   ): Request[GetStreamingDistributionConfigResult, AWSError] = js.native
   
   /**
-    * Gets a list of cache policies. You can optionally apply a filter to return only the managed policies created by AWS, or only the custom policies created in your AWS account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    * Gets a list of cache policies. You can optionally apply a filter to return only the managed policies created by Amazon Web Services, or only the custom policies created in your Amazon Web Services account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
     */
   def listCachePolicies(): Request[ListCachePoliciesResult, AWSError] = js.native
   def listCachePolicies(callback: js.Function2[/* err */ AWSError, /* data */ ListCachePoliciesResult, Unit]): Request[ListCachePoliciesResult, AWSError] = js.native
   /**
-    * Gets a list of cache policies. You can optionally apply a filter to return only the managed policies created by AWS, or only the custom policies created in your AWS account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    * Gets a list of cache policies. You can optionally apply a filter to return only the managed policies created by Amazon Web Services, or only the custom policies created in your Amazon Web Services account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
     */
   def listCachePolicies(params: ListCachePoliciesRequest): Request[ListCachePoliciesResult, AWSError] = js.native
   def listCachePolicies(
@@ -707,6 +889,20 @@ trait CloudFront extends CloudFrontCustomizations {
     params: ListCloudFrontOriginAccessIdentitiesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListCloudFrontOriginAccessIdentitiesResult, Unit]
   ): Request[ListCloudFrontOriginAccessIdentitiesResult, AWSError] = js.native
+  
+  /**
+    * Gets a list of aliases (also called CNAMEs or alternate domain names) that conflict or overlap with the provided alias, and the associated CloudFront distributions and Amazon Web Services accounts for each conflicting alias. In the returned list, the distribution and account IDs are partially hidden, which allows you to identify the distributions and accounts that you own, but helps to protect the information of ones that you don’t own. Use this operation to find aliases that are in use in CloudFront that conflict or overlap with the provided alias. For example, if you provide www.example.com as input, the returned list can include www.example.com and the overlapping wildcard alternate domain name (*.example.com), if they exist. If you provide *.example.com as input, the returned list can include *.example.com and any alternate domain names covered by that wildcard (for example, www.example.com, test.example.com, dev.example.com, and so on), if they exist. To list conflicting aliases, you provide the alias to search and the ID of a distribution in your account that has an attached SSL/TLS certificate that includes the provided alias. For more information, including how to set up the distribution and certificate, see Moving an alternate domain name to a different distribution in the Amazon CloudFront Developer Guide. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listConflictingAliases(): Request[ListConflictingAliasesResult, AWSError] = js.native
+  def listConflictingAliases(callback: js.Function2[/* err */ AWSError, /* data */ ListConflictingAliasesResult, Unit]): Request[ListConflictingAliasesResult, AWSError] = js.native
+  /**
+    * Gets a list of aliases (also called CNAMEs or alternate domain names) that conflict or overlap with the provided alias, and the associated CloudFront distributions and Amazon Web Services accounts for each conflicting alias. In the returned list, the distribution and account IDs are partially hidden, which allows you to identify the distributions and accounts that you own, but helps to protect the information of ones that you don’t own. Use this operation to find aliases that are in use in CloudFront that conflict or overlap with the provided alias. For example, if you provide www.example.com as input, the returned list can include www.example.com and the overlapping wildcard alternate domain name (*.example.com), if they exist. If you provide *.example.com as input, the returned list can include *.example.com and any alternate domain names covered by that wildcard (for example, www.example.com, test.example.com, dev.example.com, and so on), if they exist. To list conflicting aliases, you provide the alias to search and the ID of a distribution in your account that has an attached SSL/TLS certificate that includes the provided alias. For more information, including how to set up the distribution and certificate, see Moving an alternate domain name to a different distribution in the Amazon CloudFront Developer Guide. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listConflictingAliases(params: ListConflictingAliasesRequest): Request[ListConflictingAliasesResult, AWSError] = js.native
+  def listConflictingAliases(
+    params: ListConflictingAliasesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListConflictingAliasesResult, Unit]
+  ): Request[ListConflictingAliasesResult, AWSError] = js.native
   
   /**
     * List CloudFront distributions.
@@ -785,12 +981,36 @@ trait CloudFront extends CloudFrontCustomizations {
   ): Request[ListDistributionsByRealtimeLogConfigResult, AWSError] = js.native
   
   /**
-    * List the distributions that are associated with a specified AWS WAF web ACL. 
+    * Gets a list of distribution IDs for distributions that have a cache behavior that’s associated with the specified response headers policy. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listDistributionsByResponseHeadersPolicyId(): Request[ListDistributionsByResponseHeadersPolicyIdResult, AWSError] = js.native
+  def listDistributionsByResponseHeadersPolicyId(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ListDistributionsByResponseHeadersPolicyIdResult, 
+      Unit
+    ]
+  ): Request[ListDistributionsByResponseHeadersPolicyIdResult, AWSError] = js.native
+  /**
+    * Gets a list of distribution IDs for distributions that have a cache behavior that’s associated with the specified response headers policy. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listDistributionsByResponseHeadersPolicyId(params: ListDistributionsByResponseHeadersPolicyIdRequest): Request[ListDistributionsByResponseHeadersPolicyIdResult, AWSError] = js.native
+  def listDistributionsByResponseHeadersPolicyId(
+    params: ListDistributionsByResponseHeadersPolicyIdRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ListDistributionsByResponseHeadersPolicyIdResult, 
+      Unit
+    ]
+  ): Request[ListDistributionsByResponseHeadersPolicyIdResult, AWSError] = js.native
+  
+  /**
+    * List the distributions that are associated with a specified WAF web ACL.
     */
   def listDistributionsByWebACLId(): Request[ListDistributionsByWebACLIdResult, AWSError] = js.native
   def listDistributionsByWebACLId(callback: js.Function2[/* err */ AWSError, /* data */ ListDistributionsByWebACLIdResult, Unit]): Request[ListDistributionsByWebACLIdResult, AWSError] = js.native
   /**
-    * List the distributions that are associated with a specified AWS WAF web ACL. 
+    * List the distributions that are associated with a specified WAF web ACL.
     */
   def listDistributionsByWebACLId(params: ListDistributionsByWebACLIdRequest): Request[ListDistributionsByWebACLIdResult, AWSError] = js.native
   def listDistributionsByWebACLId(
@@ -829,6 +1049,20 @@ trait CloudFront extends CloudFrontCustomizations {
   ): Request[ListFieldLevelEncryptionProfilesResult, AWSError] = js.native
   
   /**
+    * Gets a list of all CloudFront functions in your Amazon Web Services account. You can optionally apply a filter to return only the functions that are in the specified stage, either DEVELOPMENT or LIVE. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listFunctions(): Request[ListFunctionsResult, AWSError] = js.native
+  def listFunctions(callback: js.Function2[/* err */ AWSError, /* data */ ListFunctionsResult, Unit]): Request[ListFunctionsResult, AWSError] = js.native
+  /**
+    * Gets a list of all CloudFront functions in your Amazon Web Services account. You can optionally apply a filter to return only the functions that are in the specified stage, either DEVELOPMENT or LIVE. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listFunctions(params: ListFunctionsRequest): Request[ListFunctionsResult, AWSError] = js.native
+  def listFunctions(
+    params: ListFunctionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListFunctionsResult, Unit]
+  ): Request[ListFunctionsResult, AWSError] = js.native
+  
+  /**
     * Lists invalidation batches. 
     */
   def listInvalidations(): Request[ListInvalidationsResult, AWSError] = js.native
@@ -857,12 +1091,26 @@ trait CloudFront extends CloudFrontCustomizations {
   ): Request[ListKeyGroupsResult, AWSError] = js.native
   
   /**
-    * Gets a list of origin request policies. You can optionally apply a filter to return only the managed policies created by AWS, or only the custom policies created in your AWS account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    * Gets the list of CloudFront origin access controls in this Amazon Web Services account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send another request that specifies the NextMarker value from the current response as the Marker value in the next request.
+    */
+  def listOriginAccessControls(): Request[ListOriginAccessControlsResult, AWSError] = js.native
+  def listOriginAccessControls(callback: js.Function2[/* err */ AWSError, /* data */ ListOriginAccessControlsResult, Unit]): Request[ListOriginAccessControlsResult, AWSError] = js.native
+  /**
+    * Gets the list of CloudFront origin access controls in this Amazon Web Services account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send another request that specifies the NextMarker value from the current response as the Marker value in the next request.
+    */
+  def listOriginAccessControls(params: ListOriginAccessControlsRequest): Request[ListOriginAccessControlsResult, AWSError] = js.native
+  def listOriginAccessControls(
+    params: ListOriginAccessControlsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListOriginAccessControlsResult, Unit]
+  ): Request[ListOriginAccessControlsResult, AWSError] = js.native
+  
+  /**
+    * Gets a list of origin request policies. You can optionally apply a filter to return only the managed policies created by Amazon Web Services, or only the custom policies created in your Amazon Web Services account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
     */
   def listOriginRequestPolicies(): Request[ListOriginRequestPoliciesResult, AWSError] = js.native
   def listOriginRequestPolicies(callback: js.Function2[/* err */ AWSError, /* data */ ListOriginRequestPoliciesResult, Unit]): Request[ListOriginRequestPoliciesResult, AWSError] = js.native
   /**
-    * Gets a list of origin request policies. You can optionally apply a filter to return only the managed policies created by AWS, or only the custom policies created in your AWS account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    * Gets a list of origin request policies. You can optionally apply a filter to return only the managed policies created by Amazon Web Services, or only the custom policies created in your Amazon Web Services account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
     */
   def listOriginRequestPolicies(params: ListOriginRequestPoliciesRequest): Request[ListOriginRequestPoliciesResult, AWSError] = js.native
   def listOriginRequestPolicies(
@@ -899,6 +1147,20 @@ trait CloudFront extends CloudFrontCustomizations {
   ): Request[ListRealtimeLogConfigsResult, AWSError] = js.native
   
   /**
+    * Gets a list of response headers policies. You can optionally apply a filter to get only the managed policies created by Amazon Web Services, or only the custom policies created in your Amazon Web Services account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listResponseHeadersPolicies(): Request[ListResponseHeadersPoliciesResult, AWSError] = js.native
+  def listResponseHeadersPolicies(callback: js.Function2[/* err */ AWSError, /* data */ ListResponseHeadersPoliciesResult, Unit]): Request[ListResponseHeadersPoliciesResult, AWSError] = js.native
+  /**
+    * Gets a list of response headers policies. You can optionally apply a filter to get only the managed policies created by Amazon Web Services, or only the custom policies created in your Amazon Web Services account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listResponseHeadersPolicies(params: ListResponseHeadersPoliciesRequest): Request[ListResponseHeadersPoliciesResult, AWSError] = js.native
+  def listResponseHeadersPolicies(
+    params: ListResponseHeadersPoliciesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListResponseHeadersPoliciesResult, Unit]
+  ): Request[ListResponseHeadersPoliciesResult, AWSError] = js.native
+  
+  /**
     * List streaming distributions. 
     */
   def listStreamingDistributions(): Request[ListStreamingDistributionsResult, AWSError] = js.native
@@ -927,6 +1189,20 @@ trait CloudFront extends CloudFrontCustomizations {
   ): Request[ListTagsForResourceResult, AWSError] = js.native
   
   /**
+    * Publishes a CloudFront function by copying the function code from the DEVELOPMENT stage to LIVE. This automatically updates all cache behaviors that are using this function to use the newly published copy in the LIVE stage. When a function is published to the LIVE stage, you can attach the function to a distribution’s cache behavior, using the function’s Amazon Resource Name (ARN). To publish a function, you must provide the function’s name and version (ETag value). To get these values, you can use ListFunctions and DescribeFunction.
+    */
+  def publishFunction(): Request[PublishFunctionResult, AWSError] = js.native
+  def publishFunction(callback: js.Function2[/* err */ AWSError, /* data */ PublishFunctionResult, Unit]): Request[PublishFunctionResult, AWSError] = js.native
+  /**
+    * Publishes a CloudFront function by copying the function code from the DEVELOPMENT stage to LIVE. This automatically updates all cache behaviors that are using this function to use the newly published copy in the LIVE stage. When a function is published to the LIVE stage, you can attach the function to a distribution’s cache behavior, using the function’s Amazon Resource Name (ARN). To publish a function, you must provide the function’s name and version (ETag value). To get these values, you can use ListFunctions and DescribeFunction.
+    */
+  def publishFunction(params: PublishFunctionRequest): Request[PublishFunctionResult, AWSError] = js.native
+  def publishFunction(
+    params: PublishFunctionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PublishFunctionResult, Unit]
+  ): Request[PublishFunctionResult, AWSError] = js.native
+  
+  /**
     * Add tags to a CloudFront resource.
     */
   def tagResource(): Request[js.Object, AWSError] = js.native
@@ -936,6 +1212,20 @@ trait CloudFront extends CloudFrontCustomizations {
     */
   def tagResource(params: TagResourceRequest): Request[js.Object, AWSError] = js.native
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Tests a CloudFront function. To test a function, you provide an event object that represents an HTTP request or response that your CloudFront distribution could receive in production. CloudFront runs the function, passing it the event object that you provided, and returns the function’s result (the modified event object) in the response. The response also contains function logs and error messages, if any exist. For more information about testing functions, see Testing functions in the Amazon CloudFront Developer Guide. To test a function, you provide the function’s name and version (ETag value) along with the event object. To get the function’s name and version, you can use ListFunctions and DescribeFunction.
+    */
+  def testFunction(): Request[TestFunctionResult, AWSError] = js.native
+  def testFunction(callback: js.Function2[/* err */ AWSError, /* data */ TestFunctionResult, Unit]): Request[TestFunctionResult, AWSError] = js.native
+  /**
+    * Tests a CloudFront function. To test a function, you provide an event object that represents an HTTP request or response that your CloudFront distribution could receive in production. CloudFront runs the function, passing it the event object that you provided, and returns the function’s result (the modified event object) in the response. The response also contains function logs and error messages, if any exist. For more information about testing functions, see Testing functions in the Amazon CloudFront Developer Guide. To test a function, you provide the function’s name and version (ETag value) along with the event object. To get the function’s name and version, you can use ListFunctions and DescribeFunction.
+    */
+  def testFunction(params: TestFunctionRequest): Request[TestFunctionResult, AWSError] = js.native
+  def testFunction(
+    params: TestFunctionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TestFunctionResult, Unit]
+  ): Request[TestFunctionResult, AWSError] = js.native
   
   /**
     * Remove tags from a CloudFront resource.
@@ -1028,6 +1318,20 @@ trait CloudFront extends CloudFrontCustomizations {
   ): Request[UpdateFieldLevelEncryptionProfileResult, AWSError] = js.native
   
   /**
+    * Updates a CloudFront function. You can update a function’s code or the comment that describes the function. You cannot update a function’s name. To update a function, you provide the function’s name and version (ETag value) along with the updated function code. To get the name and version, you can use ListFunctions and DescribeFunction.
+    */
+  def updateFunction(): Request[UpdateFunctionResult, AWSError] = js.native
+  def updateFunction(callback: js.Function2[/* err */ AWSError, /* data */ UpdateFunctionResult, Unit]): Request[UpdateFunctionResult, AWSError] = js.native
+  /**
+    * Updates a CloudFront function. You can update a function’s code or the comment that describes the function. You cannot update a function’s name. To update a function, you provide the function’s name and version (ETag value) along with the updated function code. To get the name and version, you can use ListFunctions and DescribeFunction.
+    */
+  def updateFunction(params: UpdateFunctionRequest): Request[UpdateFunctionResult, AWSError] = js.native
+  def updateFunction(
+    params: UpdateFunctionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateFunctionResult, Unit]
+  ): Request[UpdateFunctionResult, AWSError] = js.native
+  
+  /**
     * Updates a key group. When you update a key group, all the fields are updated with the values provided in the request. You cannot update some fields independent of others. To update a key group:   Get the current key group with GetKeyGroup or GetKeyGroupConfig.   Locally modify the fields in the key group that you want to update. For example, add or remove public key IDs.   Call UpdateKeyGroup with the entire key group object, including the fields that you modified and those that you didn’t.  
     */
   def updateKeyGroup(): Request[UpdateKeyGroupResult, AWSError] = js.native
@@ -1040,6 +1344,20 @@ trait CloudFront extends CloudFrontCustomizations {
     params: UpdateKeyGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateKeyGroupResult, Unit]
   ): Request[UpdateKeyGroupResult, AWSError] = js.native
+  
+  /**
+    * Updates a CloudFront origin access control.
+    */
+  def updateOriginAccessControl(): Request[UpdateOriginAccessControlResult, AWSError] = js.native
+  def updateOriginAccessControl(callback: js.Function2[/* err */ AWSError, /* data */ UpdateOriginAccessControlResult, Unit]): Request[UpdateOriginAccessControlResult, AWSError] = js.native
+  /**
+    * Updates a CloudFront origin access control.
+    */
+  def updateOriginAccessControl(params: UpdateOriginAccessControlRequest): Request[UpdateOriginAccessControlResult, AWSError] = js.native
+  def updateOriginAccessControl(
+    params: UpdateOriginAccessControlRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateOriginAccessControlResult, Unit]
+  ): Request[UpdateOriginAccessControlResult, AWSError] = js.native
   
   /**
     * Updates an origin request policy configuration. When you update an origin request policy configuration, all the fields are updated with the values provided in the request. You cannot update some fields independent of others. To update an origin request policy configuration:   Use GetOriginRequestPolicyConfig to get the current configuration.   Locally modify the fields in the origin request policy configuration that you want to update.   Call UpdateOriginRequestPolicy by providing the entire origin request policy configuration, including the fields that you modified and those that you didn’t.  
@@ -1082,6 +1400,20 @@ trait CloudFront extends CloudFrontCustomizations {
     params: UpdateRealtimeLogConfigRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateRealtimeLogConfigResult, Unit]
   ): Request[UpdateRealtimeLogConfigResult, AWSError] = js.native
+  
+  /**
+    * Updates a response headers policy. When you update a response headers policy, the entire policy is replaced. You cannot update some policy fields independent of others. To update a response headers policy configuration:   Use GetResponseHeadersPolicyConfig to get the current policy’s configuration.   Modify the fields in the response headers policy configuration that you want to update.   Call UpdateResponseHeadersPolicy, providing the entire response headers policy configuration, including the fields that you modified and those that you didn’t.  
+    */
+  def updateResponseHeadersPolicy(): Request[UpdateResponseHeadersPolicyResult, AWSError] = js.native
+  def updateResponseHeadersPolicy(callback: js.Function2[/* err */ AWSError, /* data */ UpdateResponseHeadersPolicyResult, Unit]): Request[UpdateResponseHeadersPolicyResult, AWSError] = js.native
+  /**
+    * Updates a response headers policy. When you update a response headers policy, the entire policy is replaced. You cannot update some policy fields independent of others. To update a response headers policy configuration:   Use GetResponseHeadersPolicyConfig to get the current policy’s configuration.   Modify the fields in the response headers policy configuration that you want to update.   Call UpdateResponseHeadersPolicy, providing the entire response headers policy configuration, including the fields that you modified and those that you didn’t.  
+    */
+  def updateResponseHeadersPolicy(params: UpdateResponseHeadersPolicyRequest): Request[UpdateResponseHeadersPolicyResult, AWSError] = js.native
+  def updateResponseHeadersPolicy(
+    params: UpdateResponseHeadersPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateResponseHeadersPolicyResult, Unit]
+  ): Request[UpdateResponseHeadersPolicyResult, AWSError] = js.native
   
   /**
     * Update a streaming distribution. 

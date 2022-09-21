@@ -29,7 +29,7 @@ trait SearchListResponse extends StObject {
   
   var regionCode: js.UndefOr[String] = js.undefined
   
-  var tokenPagination: js.UndefOr[js.Any] = js.undefined
+  var tokenPagination: js.UndefOr[Any] = js.undefined
   
   /** The visitorId identifies the visitor. */
   var visitorId: js.UndefOr[String] = js.undefined
@@ -55,7 +55,7 @@ object SearchListResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SearchResult*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SearchResult*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -77,7 +77,7 @@ object SearchListResponse {
     
     inline def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
     
-    inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+    inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     
     inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
     

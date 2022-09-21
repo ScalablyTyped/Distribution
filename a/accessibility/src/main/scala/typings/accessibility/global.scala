@@ -14,7 +14,7 @@ object global {
       */
     @JSGlobal("Accessibility")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.accessibility.mod.^ {
       def this(options: Options) = this()
     }

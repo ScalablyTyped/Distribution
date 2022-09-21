@@ -23,6 +23,7 @@ import typings.babelTypes.babelTypesStrings.QuestionmarkQuestionmark
 import typings.babelTypes.babelTypesStrings.Slash
 import typings.babelTypes.babelTypesStrings.Tilde
 import typings.babelTypes.babelTypesStrings.Verticalline
+import typings.babelTypes.babelTypesStrings.VerticallineGreaterthansign
 import typings.babelTypes.babelTypesStrings.VerticallineVerticalline
 import typings.babelTypes.babelTypesStrings.`--`
 import typings.babelTypes.babelTypesStrings.`-_`
@@ -74,11 +75,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.mod.JSXElement_
   - typings.babelTypes.mod.JSXFragment_
   - typings.babelTypes.mod.BindExpression_
-  - typings.babelTypes.mod.PipelinePrimaryTopicReference_
   - typings.babelTypes.mod.DoExpression_
   - typings.babelTypes.mod.RecordExpression_
   - typings.babelTypes.mod.TupleExpression_
   - typings.babelTypes.mod.DecimalLiteral_
+  - typings.babelTypes.mod.ModuleExpression_
+  - typings.babelTypes.mod.TopicReference_
+  - typings.babelTypes.mod.PipelineTopicExpression_
+  - typings.babelTypes.mod.PipelineBareFunction_
+  - typings.babelTypes.mod.PipelinePrimaryTopicReference_
+  - typings.babelTypes.mod.TSInstantiationExpression_
   - typings.babelTypes.mod.TSAsExpression_
   - typings.babelTypes.mod.TSTypeAssertion_
   - typings.babelTypes.mod.TSNonNullExpression_
@@ -99,9 +105,9 @@ object Expression {
     body: BlockStatement_ | Expression,
     expression: Boolean,
     generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+    params: js.Array[Identifier_ | Pattern | RestElement_]
   ): typings.babelTypes.mod.ArrowFunctionExpression_ = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, predicate = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("ArrowFunctionExpression")
     __obj.asInstanceOf[typings.babelTypes.mod.ArrowFunctionExpression_]
   }
@@ -126,7 +132,7 @@ object Expression {
   
   inline def BinaryExpression_(
     left: Expression | PrivateName_,
-    operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | typings.babelTypes.babelTypesStrings.^ | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
+    operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | typings.babelTypes.babelTypesStrings.^ | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign | VerticallineGreaterthansign,
     right: Expression
   ): typings.babelTypes.mod.BinaryExpression_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
@@ -149,7 +155,7 @@ object Expression {
   
   inline def CallExpression_(
     arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_],
-    callee: Expression | V8IntrinsicIdentifier_
+    callee: Expression | Super_ | V8IntrinsicIdentifier_
   ): typings.babelTypes.mod.CallExpression_ = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeArguments = null, typeParameters = null)
     __obj.updateDynamic("type")("CallExpression")
@@ -174,8 +180,8 @@ object Expression {
     __obj.asInstanceOf[typings.babelTypes.mod.DecimalLiteral_]
   }
   
-  inline def DoExpression_(body: BlockStatement_): typings.babelTypes.mod.DoExpression_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+  inline def DoExpression_(async: Boolean, body: BlockStatement_): typings.babelTypes.mod.DoExpression_ = {
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("DoExpression")
     __obj.asInstanceOf[typings.babelTypes.mod.DoExpression_]
   }
@@ -184,9 +190,9 @@ object Expression {
     async: Boolean,
     body: BlockStatement_,
     generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+    params: js.Array[Identifier_ | Pattern | RestElement_]
   ): typings.babelTypes.mod.FunctionExpression_ = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], end = null, id = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], end = null, id = null, innerComments = null, leadingComments = null, loc = null, predicate = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("FunctionExpression")
     __obj.asInstanceOf[typings.babelTypes.mod.FunctionExpression_]
   }
@@ -236,7 +242,11 @@ object Expression {
     __obj.asInstanceOf[typings.babelTypes.mod.LogicalExpression_]
   }
   
-  inline def MemberExpression_(computed: Boolean, `object`: Expression, property: Expression | Identifier_ | PrivateName_): typings.babelTypes.mod.MemberExpression_ = {
+  inline def MemberExpression_(
+    computed: Boolean,
+    `object`: Expression | Super_,
+    property: Expression | Identifier_ | PrivateName_
+  ): typings.babelTypes.mod.MemberExpression_ = {
     val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null)
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MemberExpression")
@@ -249,9 +259,15 @@ object Expression {
     __obj.asInstanceOf[typings.babelTypes.mod.MetaProperty_]
   }
   
+  inline def ModuleExpression_(body: Program_): typings.babelTypes.mod.ModuleExpression_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ModuleExpression")
+    __obj.asInstanceOf[typings.babelTypes.mod.ModuleExpression_]
+  }
+  
   inline def NewExpression_(
     arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_],
-    callee: Expression | V8IntrinsicIdentifier_
+    callee: Expression | Super_ | V8IntrinsicIdentifier_
   ): typings.babelTypes.mod.NewExpression_ = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeArguments = null, typeParameters = null)
     __obj.updateDynamic("type")("NewExpression")
@@ -277,7 +293,7 @@ object Expression {
   }
   
   inline def OptionalCallExpression_(
-    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_],
+    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_],
     callee: Expression,
     optional: Boolean
   ): typings.babelTypes.mod.OptionalCallExpression_ = {
@@ -299,10 +315,22 @@ object Expression {
     __obj.asInstanceOf[typings.babelTypes.mod.ParenthesizedExpression_]
   }
   
+  inline def PipelineBareFunction_(callee: Expression): typings.babelTypes.mod.PipelineBareFunction_ = {
+    val __obj = js.Dynamic.literal(callee = callee.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("PipelineBareFunction")
+    __obj.asInstanceOf[typings.babelTypes.mod.PipelineBareFunction_]
+  }
+  
   inline def PipelinePrimaryTopicReference_(): typings.babelTypes.mod.PipelinePrimaryTopicReference_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("PipelinePrimaryTopicReference")
     __obj.asInstanceOf[typings.babelTypes.mod.PipelinePrimaryTopicReference_]
+  }
+  
+  inline def PipelineTopicExpression_(expression: Expression): typings.babelTypes.mod.PipelineTopicExpression_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("PipelineTopicExpression")
+    __obj.asInstanceOf[typings.babelTypes.mod.PipelineTopicExpression_]
   }
   
   inline def RecordExpression_(properties: js.Array[ObjectProperty_ | SpreadElement_]): typings.babelTypes.mod.RecordExpression_ = {
@@ -341,6 +369,12 @@ object Expression {
     __obj.asInstanceOf[typings.babelTypes.mod.TSAsExpression_]
   }
   
+  inline def TSInstantiationExpression_(expression: Expression): typings.babelTypes.mod.TSInstantiationExpression_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("TSInstantiationExpression")
+    __obj.asInstanceOf[typings.babelTypes.mod.TSInstantiationExpression_]
+  }
+  
   inline def TSNonNullExpression_(expression: Expression): typings.babelTypes.mod.TSNonNullExpression_ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSNonNullExpression")
@@ -369,6 +403,12 @@ object Expression {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ThisExpression")
     __obj.asInstanceOf[typings.babelTypes.mod.ThisExpression_]
+  }
+  
+  inline def TopicReference_(): typings.babelTypes.mod.TopicReference_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TopicReference")
+    __obj.asInstanceOf[typings.babelTypes.mod.TopicReference_]
   }
   
   inline def TupleExpression_(elements: js.Array[Expression | SpreadElement_]): typings.babelTypes.mod.TupleExpression_ = {

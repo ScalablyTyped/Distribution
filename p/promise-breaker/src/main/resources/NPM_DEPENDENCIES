@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "promise-breaker" : "6.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "promise-breaker" : "6.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

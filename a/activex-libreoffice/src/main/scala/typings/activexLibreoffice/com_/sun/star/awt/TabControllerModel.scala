@@ -29,7 +29,7 @@ object TabControllerModel {
     getGroupControl: () => Boolean,
     getGroupCount: () => Double,
     getServiceName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     read: XObjectInputStream => Unit,
     release: () => Unit,
     setControlModels: SeqEquiv[XControlModel] => Unit,

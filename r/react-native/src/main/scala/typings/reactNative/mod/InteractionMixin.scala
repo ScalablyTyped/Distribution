@@ -14,14 +14,14 @@ trait InteractionMixin extends StObject {
     * Schedule work for after all interactions have completed.
     *
     */
-  def runAfterInteractions(callback: js.Function0[js.Any]): Unit
+  def runAfterInteractions(callback: js.Function0[Any]): Unit
 }
 object InteractionMixin {
   
   inline def apply(
     clearInteractionHandle: Double => Unit,
     createInteractionHandle: () => Double,
-    runAfterInteractions: js.Function0[js.Any] => Unit
+    runAfterInteractions: js.Function0[Any] => Unit
   ): InteractionMixin = {
     val __obj = js.Dynamic.literal(clearInteractionHandle = js.Any.fromFunction1(clearInteractionHandle), createInteractionHandle = js.Any.fromFunction0(createInteractionHandle), runAfterInteractions = js.Any.fromFunction1(runAfterInteractions))
     __obj.asInstanceOf[InteractionMixin]
@@ -33,6 +33,6 @@ object InteractionMixin {
     
     inline def setCreateInteractionHandle(value: () => Double): Self = StObject.set(x, "createInteractionHandle", js.Any.fromFunction0(value))
     
-    inline def setRunAfterInteractions(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "runAfterInteractions", js.Any.fromFunction1(value))
+    inline def setRunAfterInteractions(value: js.Function0[Any] => Unit): Self = StObject.set(x, "runAfterInteractions", js.Any.fromFunction1(value))
   }
 }

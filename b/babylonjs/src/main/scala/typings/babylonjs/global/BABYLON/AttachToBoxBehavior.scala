@@ -6,44 +6,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.AttachToBoxBehavior")
 @js.native
-class AttachToBoxBehavior protected ()
+open class AttachToBoxBehavior protected ()
   extends StObject
      with typings.babylonjs.BABYLON.AttachToBoxBehavior {
   /**
     * Creates the AttachToBoxBehavior, used to attach UI to the closest face of the box to a camera
-    * @param ui The transform node that should be attched to the mesh
+    * @param _ui The transform node that should be attached to the mesh
     */
-  def this(ui: typings.babylonjs.BABYLON.TransformNode) = this()
+  def this(_ui: typings.babylonjs.BABYLON.TransformNode) = this()
   
   /* private */ /* CompleteClass */
-  var _closestFace: js.Any = js.native
+  var _closestFace: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _faceVectors: js.Any = js.native
+  var _faceVectors: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _lookAtTmpMatrix: js.Any = js.native
+  var _lookAtTmpMatrix: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _lookAtToRef: js.Any = js.native
+  var _lookAtToRef: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _onRenderObserver: js.Any = js.native
+  var _onRenderObserver: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _scene: js.Any = js.native
+  var _scene: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _target: js.Any = js.native
+  var _target: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _tmpMatrix: js.Any = js.native
+  var _tmpMatrix: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _tmpVector: js.Any = js.native
+  var _tmpVector: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _zeroVector: js.Any = js.native
+  var _ui: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _zeroVector: Any = js.native
   
   /**
     * Called when the behavior is attached to a target
@@ -79,7 +82,4 @@ class AttachToBoxBehavior protected ()
   /** gets or sets behavior's name */
   /* CompleteClass */
   var name: String = js.native
-  
-  /* private */ /* CompleteClass */
-  var ui: js.Any = js.native
 }

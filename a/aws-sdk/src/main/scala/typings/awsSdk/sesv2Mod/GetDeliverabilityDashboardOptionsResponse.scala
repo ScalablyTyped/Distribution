@@ -29,7 +29,7 @@ trait GetDeliverabilityDashboardOptionsResponse extends StObject {
   /**
     * The date, in Unix time format, when your current subscription to the Deliverability dashboard is scheduled to expire, if your subscription is scheduled to expire at the end of the current calendar month. This value is null if you have an active subscription that isn’t due to expire at the end of the month.
     */
-  var SubscriptionExpiryDate: js.UndefOr[Timestamp] = js.undefined
+  var SubscriptionExpiryDate: js.UndefOr[js.Date] = js.undefined
 }
 object GetDeliverabilityDashboardOptionsResponse {
   
@@ -48,7 +48,7 @@ object GetDeliverabilityDashboardOptionsResponse {
     
     inline def setActiveSubscribedDomainsUndefined: Self = StObject.set(x, "ActiveSubscribedDomains", js.undefined)
     
-    inline def setActiveSubscribedDomainsVarargs(value: DomainDeliverabilityTrackingOption*): Self = StObject.set(x, "ActiveSubscribedDomains", js.Array(value :_*))
+    inline def setActiveSubscribedDomainsVarargs(value: DomainDeliverabilityTrackingOption*): Self = StObject.set(x, "ActiveSubscribedDomains", js.Array(value*))
     
     inline def setDashboardEnabled(value: Enabled): Self = StObject.set(x, "DashboardEnabled", value.asInstanceOf[js.Any])
     
@@ -56,9 +56,9 @@ object GetDeliverabilityDashboardOptionsResponse {
     
     inline def setPendingExpirationSubscribedDomainsUndefined: Self = StObject.set(x, "PendingExpirationSubscribedDomains", js.undefined)
     
-    inline def setPendingExpirationSubscribedDomainsVarargs(value: DomainDeliverabilityTrackingOption*): Self = StObject.set(x, "PendingExpirationSubscribedDomains", js.Array(value :_*))
+    inline def setPendingExpirationSubscribedDomainsVarargs(value: DomainDeliverabilityTrackingOption*): Self = StObject.set(x, "PendingExpirationSubscribedDomains", js.Array(value*))
     
-    inline def setSubscriptionExpiryDate(value: Timestamp): Self = StObject.set(x, "SubscriptionExpiryDate", value.asInstanceOf[js.Any])
+    inline def setSubscriptionExpiryDate(value: js.Date): Self = StObject.set(x, "SubscriptionExpiryDate", value.asInstanceOf[js.Any])
     
     inline def setSubscriptionExpiryDateUndefined: Self = StObject.set(x, "SubscriptionExpiryDate", js.undefined)
   }

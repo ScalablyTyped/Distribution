@@ -30,18 +30,18 @@ object GanttLocaleDate {
     
     inline def setDay_full(value: js.Array[String]): Self = StObject.set(x, "day_full", value.asInstanceOf[js.Any])
     
-    inline def setDay_fullVarargs(value: String*): Self = StObject.set(x, "day_full", js.Array(value :_*))
+    inline def setDay_fullVarargs(value: String*): Self = StObject.set(x, "day_full", js.Array(value*))
     
     inline def setDay_short(value: js.Array[String]): Self = StObject.set(x, "day_short", value.asInstanceOf[js.Any])
     
-    inline def setDay_shortVarargs(value: String*): Self = StObject.set(x, "day_short", js.Array(value :_*))
+    inline def setDay_shortVarargs(value: String*): Self = StObject.set(x, "day_short", js.Array(value*))
     
     inline def setMonth_full(value: js.Array[String]): Self = StObject.set(x, "month_full", value.asInstanceOf[js.Any])
     
-    inline def setMonth_fullVarargs(value: String*): Self = StObject.set(x, "month_full", js.Array(value :_*))
+    inline def setMonth_fullVarargs(value: String*): Self = StObject.set(x, "month_full", js.Array(value*))
     
     inline def setMonth_short(value: js.Array[String]): Self = StObject.set(x, "month_short", value.asInstanceOf[js.Any])
     
-    inline def setMonth_shortVarargs(value: String*): Self = StObject.set(x, "month_short", js.Array(value :_*))
+    inline def setMonth_shortVarargs(value: String*): Self = StObject.set(x, "month_short", js.Array(value*))
   }
 }

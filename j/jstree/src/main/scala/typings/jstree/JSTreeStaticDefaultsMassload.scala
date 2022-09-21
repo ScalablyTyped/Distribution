@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JSTreeStaticDefaultsMassload extends StObject {
   
-  var data: js.Any
+  var data: Any
   
   /**
     * massload configuration
@@ -28,19 +28,19 @@ trait JSTreeStaticDefaultsMassload extends StObject {
     * @name $.jstree.defaults.massload
     * @plugin massload
     */
-  var url: js.Any
+  var url: Any
 }
 object JSTreeStaticDefaultsMassload {
   
-  inline def apply(data: js.Any, url: js.Any): JSTreeStaticDefaultsMassload = {
+  inline def apply(data: Any, url: Any): JSTreeStaticDefaultsMassload = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaultsMassload]
   }
   
   extension [Self <: JSTreeStaticDefaultsMassload](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

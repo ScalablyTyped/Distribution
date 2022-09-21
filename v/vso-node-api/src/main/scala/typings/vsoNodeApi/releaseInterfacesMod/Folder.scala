@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,13 +9,13 @@ trait Folder extends StObject {
   
   var createdBy: IdentityRef
   
-  var createdOn: Date
+  var createdOn: js.Date
   
   var description: String
   
   var lastChangedBy: IdentityRef
   
-  var lastChangedDate: Date
+  var lastChangedDate: js.Date
   
   var path: String
 }
@@ -24,10 +23,10 @@ object Folder {
   
   inline def apply(
     createdBy: IdentityRef,
-    createdOn: Date,
+    createdOn: js.Date,
     description: String,
     lastChangedBy: IdentityRef,
-    lastChangedDate: Date,
+    lastChangedDate: js.Date,
     path: String
   ): Folder = {
     val __obj = js.Dynamic.literal(createdBy = createdBy.asInstanceOf[js.Any], createdOn = createdOn.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], lastChangedBy = lastChangedBy.asInstanceOf[js.Any], lastChangedDate = lastChangedDate.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
@@ -38,13 +37,13 @@ object Folder {
     
     inline def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setLastChangedBy(value: IdentityRef): Self = StObject.set(x, "lastChangedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastChangedDate(value: Date): Self = StObject.set(x, "lastChangedDate", value.asInstanceOf[js.Any])
+    inline def setLastChangedDate(value: js.Date): Self = StObject.set(x, "lastChangedDate", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

@@ -63,6 +63,10 @@ object rcMenuStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
+  sealed trait divider extends StObject
+  inline def divider: divider = "divider".asInstanceOf[divider]
+  
+  @js.native
   sealed trait email extends StObject
   inline def email: email = "email".asInstanceOf[email]
   
@@ -79,8 +83,8 @@ object rcMenuStrings {
   inline def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait hack extends StObject
-  inline def hack: hack = "hack".asInstanceOf[hack]
+  sealed trait group extends StObject
+  inline def group: group = "group".asInstanceOf[group]
   
   @js.native
   sealed trait horizontal
@@ -233,18 +237,6 @@ object rcMenuStrings {
     extends StObject
        with MenuMode
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
-  
-  @js.native
-  sealed trait `vertical-left`
-    extends StObject
-       with MenuMode
-  inline def `vertical-left`: `vertical-left` = "vertical-left".asInstanceOf[`vertical-left`]
-  
-  @js.native
-  sealed trait `vertical-right`
-    extends StObject
-       with MenuMode
-  inline def `vertical-right`: `vertical-right` = "vertical-right".asInstanceOf[`vertical-right`]
   
   @js.native
   sealed trait yes extends StObject

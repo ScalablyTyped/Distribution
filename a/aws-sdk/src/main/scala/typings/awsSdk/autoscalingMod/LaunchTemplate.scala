@@ -12,7 +12,7 @@ trait LaunchTemplate extends StObject {
   var LaunchTemplateSpecification: js.UndefOr[typings.awsSdk.autoscalingMod.LaunchTemplateSpecification] = js.undefined
   
   /**
-    * Any parameters that you specify override the same parameters in the launch template. If not provided, Amazon EC2 Auto Scaling uses the instance type specified in the launch template when it launches an instance. 
+    * Any properties that you specify override the same properties in the launch template. If not provided, Amazon EC2 Auto Scaling uses the instance type or instance type requirements specified in the launch template when it launches an instance. The overrides can include either one or more instance types or a set of instance requirements, but not both.
     */
   var Overrides: js.UndefOr[typings.awsSdk.autoscalingMod.Overrides] = js.undefined
 }
@@ -33,6 +33,6 @@ object LaunchTemplate {
     
     inline def setOverridesUndefined: Self = StObject.set(x, "Overrides", js.undefined)
     
-    inline def setOverridesVarargs(value: LaunchTemplateOverrides*): Self = StObject.set(x, "Overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: LaunchTemplateOverrides*): Self = StObject.set(x, "Overrides", js.Array(value*))
   }
 }

@@ -38,7 +38,7 @@ object GetMappingRequest {
     
     inline def setSinksUndefined: Self = StObject.set(x, "Sinks", js.undefined)
     
-    inline def setSinksVarargs(value: CatalogEntry*): Self = StObject.set(x, "Sinks", js.Array(value :_*))
+    inline def setSinksVarargs(value: CatalogEntry*): Self = StObject.set(x, "Sinks", js.Array(value*))
     
     inline def setSource(value: CatalogEntry): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }

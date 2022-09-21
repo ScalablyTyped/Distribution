@@ -10,10 +10,10 @@ Typescript Library for Libra
 | ------------------ | :-------------: |
 | Full name          | libra-core |
 | Keywords           | libra, library, crypto, facebook |
-| # releases         | 11 |
-| # dependents       | 0 |
-| # downloads        | 1622 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 27.0 |
+| # stars            | 141.0 |
 
 ## Links
 - [Homepage](https://github.com/perfectmak/libra-core#readme)

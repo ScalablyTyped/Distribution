@@ -1,7 +1,7 @@
 
 # Scala.js typings for ci-info
 
-Typings are for version 2.0
+Typings are for version 3.4.0
 
 ## Library description:
 Get details about the current Continuous Integration environment
@@ -10,10 +10,10 @@ Get details about the current Continuous Integration environment
 | ------------------ | :-------------: |
 | Full name          | ci-info |
 | Keywords           | ci, continuous, integration, test, detect |
-| # releases         | 1 |
-| # dependents       | 222 |
-| # downloads        | 754346770 |
-| # stars            | 2 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 1.54211781E8 |
+| # stars            | 230.0 |
 
 ## Links
 - [Homepage](https://github.com/watson/ci-info)
@@ -24,7 +24,7 @@ Get details about the current Continuous Integration environment
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

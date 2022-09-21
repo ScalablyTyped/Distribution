@@ -22,7 +22,7 @@ trait Page extends StObject {
   
   var ControlTipText: String = js.native
   
-  def Controls(varg: js.Any): js.Any = js.native
+  def Controls(varg: Any): Any = js.native
   @JSName("Controls")
   val Controls_Original: Controls = js.native
   
@@ -53,7 +53,7 @@ trait Page extends StObject {
   
   var Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Paste(): Unit = js.native
   
@@ -70,9 +70,9 @@ trait Page extends StObject {
   def Repaint(): Unit = js.native
   
   def Scroll(): Unit = js.native
-  def Scroll(xAction: js.Any): Unit = js.native
-  def Scroll(xAction: js.Any, yAction: js.Any): Unit = js.native
-  def Scroll(xAction: Unit, yAction: js.Any): Unit = js.native
+  def Scroll(xAction: Any): Unit = js.native
+  def Scroll(xAction: Any, yAction: Any): Unit = js.native
+  def Scroll(xAction: Unit, yAction: Any): Unit = js.native
   
   var ScrollBars: fmScrollBars = js.native
   
@@ -84,7 +84,7 @@ trait Page extends StObject {
   
   var ScrollWidth: Double = js.native
   
-  def Selected(varg: js.Any): js.Any = js.native
+  def Selected(varg: Any): Any = js.native
   @JSName("Selected")
   val Selected_Original: Controls = js.native
   

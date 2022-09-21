@@ -29,6 +29,6 @@ object DocumentTransform {
     
     inline def setFieldTransformsUndefined: Self = StObject.set(x, "fieldTransforms", js.undefined)
     
-    inline def setFieldTransformsVarargs(value: FieldTransform*): Self = StObject.set(x, "fieldTransforms", js.Array(value :_*))
+    inline def setFieldTransformsVarargs(value: FieldTransform*): Self = StObject.set(x, "fieldTransforms", js.Array(value*))
   }
 }

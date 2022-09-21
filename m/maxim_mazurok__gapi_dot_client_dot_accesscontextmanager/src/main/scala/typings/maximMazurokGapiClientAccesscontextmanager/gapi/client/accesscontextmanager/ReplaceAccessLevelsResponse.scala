@@ -22,6 +22,6 @@ object ReplaceAccessLevelsResponse {
     
     inline def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
-    inline def setAccessLevelsVarargs(value: AccessLevel*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
+    inline def setAccessLevelsVarargs(value: AccessLevel*): Self = StObject.set(x, "accessLevels", js.Array(value*))
   }
 }

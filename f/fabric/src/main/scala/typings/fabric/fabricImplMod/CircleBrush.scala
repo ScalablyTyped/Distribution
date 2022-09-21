@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric/fabric-impl", "CircleBrush")
 @js.native
-class CircleBrush () extends BaseBrush {
+open class CircleBrush () extends BaseBrush {
   
   /**
     * @return Just added pointer point
     */
-  def addPoint(pointer: js.Any): Point = js.native
+  def addPoint(pointer: Any): Point = js.native
   
   /**
     * Invoked inside on mouse down and mouse move
     */
-  def drawDot(pointer: js.Any): Unit = js.native
+  def drawDot(pointer: Any): Unit = js.native
 }

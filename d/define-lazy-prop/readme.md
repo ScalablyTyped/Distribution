@@ -1,7 +1,7 @@
 
 # Scala.js typings for define-lazy-prop
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Define a lazily evaluated property on an object
@@ -11,9 +11,9 @@ Define a lazily evaluated property on an object
 | Full name          | define-lazy-prop |
 | Keywords           | lazy, property, properties, prop, define, object, value, lazily, laziness, evaluation, eval, execute, getter, function, fn, memoize, cache, defer, deferred |
 | # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 542 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.9425606333333332E7 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/define-lazy-prop#readme)

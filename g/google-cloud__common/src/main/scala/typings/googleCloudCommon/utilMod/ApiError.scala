@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@google-cloud/common/build/src/util", "ApiError")
 @js.native
-class ApiError protected ()
+open class ApiError protected ()
   extends StObject
      with Error {
   def this(errorBody: GoogleErrorBody) = this()
@@ -18,13 +18,15 @@ class ApiError protected ()
   
   var errors: js.UndefOr[js.Array[GoogleInnerError]] = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
   
-  var response: js.UndefOr[Response[js.Any]] = js.native
+  var response: js.UndefOr[Response[Any]] = js.native
 }
 /* static members */
 object ApiError {

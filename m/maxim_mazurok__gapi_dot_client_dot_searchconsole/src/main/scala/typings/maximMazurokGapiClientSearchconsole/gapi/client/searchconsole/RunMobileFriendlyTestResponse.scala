@@ -38,13 +38,13 @@ object RunMobileFriendlyTestResponse {
     
     inline def setMobileFriendlyIssuesUndefined: Self = StObject.set(x, "mobileFriendlyIssues", js.undefined)
     
-    inline def setMobileFriendlyIssuesVarargs(value: MobileFriendlyIssue*): Self = StObject.set(x, "mobileFriendlyIssues", js.Array(value :_*))
+    inline def setMobileFriendlyIssuesVarargs(value: MobileFriendlyIssue*): Self = StObject.set(x, "mobileFriendlyIssues", js.Array(value*))
     
     inline def setResourceIssues(value: js.Array[ResourceIssue]): Self = StObject.set(x, "resourceIssues", value.asInstanceOf[js.Any])
     
     inline def setResourceIssuesUndefined: Self = StObject.set(x, "resourceIssues", js.undefined)
     
-    inline def setResourceIssuesVarargs(value: ResourceIssue*): Self = StObject.set(x, "resourceIssues", js.Array(value :_*))
+    inline def setResourceIssuesVarargs(value: ResourceIssue*): Self = StObject.set(x, "resourceIssues", js.Array(value*))
     
     inline def setScreenshot(value: Image): Self = StObject.set(x, "screenshot", value.asInstanceOf[js.Any])
     

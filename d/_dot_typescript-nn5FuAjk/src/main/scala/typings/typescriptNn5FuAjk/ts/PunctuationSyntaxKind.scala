@@ -1,0 +1,69 @@
+package typings.typescriptNn5FuAjk.ts
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.OpenBraceToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.CloseBraceToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.OpenParenToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.CloseParenToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.OpenBracketToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.CloseBracketToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.DotToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.DotDotDotToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.SemicolonToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.CommaToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.QuestionDotToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.LessThanToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.LessThanSlashToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.GreaterThanToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.LessThanEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.GreaterThanEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.EqualsEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.ExclamationEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.EqualsEqualsEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.ExclamationEqualsEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.EqualsGreaterThanToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.PlusToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.MinusToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.AsteriskToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.AsteriskAsteriskToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.SlashToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.PercentToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.PlusPlusToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.MinusMinusToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.LessThanLessThanToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.GreaterThanGreaterThanToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.GreaterThanGreaterThanGreaterThanToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.AmpersandToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.BarToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.CaretToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.ExclamationToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.TildeToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.AmpersandAmpersandToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.BarBarToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.QuestionQuestionToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.QuestionToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.ColonToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.AtToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.BacktickToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.HashToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.EqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.PlusEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.MinusEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.AsteriskEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.AsteriskAsteriskEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.SlashEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.PercentEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.LessThanLessThanEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.GreaterThanGreaterThanEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.GreaterThanGreaterThanGreaterThanEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.AmpersandEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.BarEqualsToken
+  - typings.typescriptNn5FuAjk.ts.SyntaxKind.CaretEqualsToken
+*/
+trait PunctuationSyntaxKind
+  extends StObject
+     with TokenSyntaxKind

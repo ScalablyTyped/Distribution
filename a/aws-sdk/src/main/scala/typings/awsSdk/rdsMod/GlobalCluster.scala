@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GlobalCluster extends StObject {
   
   /**
-    *  The default database name within the new global database cluster. 
+    * The default database name within the new global database cluster.
     */
   var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
-    *  The deletion protection setting for the new global database cluster. 
+    * The deletion protection setting for the new global database cluster.
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    *  The Aurora database engine used by the global database cluster. 
+    * The Aurora database engine used by the global database cluster.
     */
   var Engine: js.UndefOr[String] = js.undefined
   
@@ -27,22 +27,27 @@ trait GlobalCluster extends StObject {
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
+    * A data object containing all properties for the current state of an in-process or pending failover process for this Aurora global database. This object is empty unless the FailoverGlobalCluster API operation has been called on this Aurora global database (GlobalCluster).
+    */
+  var FailoverState: js.UndefOr[typings.awsSdk.rdsMod.FailoverState] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) for the global database cluster.
     */
   var GlobalClusterArn: js.UndefOr[String] = js.undefined
   
   /**
-    *  Contains a user-supplied global database cluster identifier. This identifier is the unique key that identifies a global database cluster. 
+    * Contains a user-supplied global database cluster identifier. This identifier is the unique key that identifies a global database cluster.
     */
   var GlobalClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    *  The list of cluster IDs for secondary clusters within the global database cluster. Currently limited to 1 item. 
+    * The list of cluster IDs for secondary clusters within the global database cluster. Currently limited to 1 item.
     */
   var GlobalClusterMembers: js.UndefOr[GlobalClusterMemberList] = js.undefined
   
   /**
-    *  The AWS Region-unique, immutable identifier for the global database cluster. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the DB cluster is accessed. 
+    * The Amazon Web Services Region-unique, immutable identifier for the global database cluster. This identifier is found in Amazon Web Services CloudTrail log entries whenever the Amazon Web Services KMS key for the DB cluster is accessed.
     */
   var GlobalClusterResourceId: js.UndefOr[String] = js.undefined
   
@@ -52,7 +57,7 @@ trait GlobalCluster extends StObject {
   var Status: js.UndefOr[String] = js.undefined
   
   /**
-    *  The storage encryption setting for the global database cluster. 
+    * The storage encryption setting for the global database cluster.
     */
   var StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
 }
@@ -81,6 +86,10 @@ object GlobalCluster {
     
     inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
+    inline def setFailoverState(value: FailoverState): Self = StObject.set(x, "FailoverState", value.asInstanceOf[js.Any])
+    
+    inline def setFailoverStateUndefined: Self = StObject.set(x, "FailoverState", js.undefined)
+    
     inline def setGlobalClusterArn(value: String): Self = StObject.set(x, "GlobalClusterArn", value.asInstanceOf[js.Any])
     
     inline def setGlobalClusterArnUndefined: Self = StObject.set(x, "GlobalClusterArn", js.undefined)
@@ -93,7 +102,7 @@ object GlobalCluster {
     
     inline def setGlobalClusterMembersUndefined: Self = StObject.set(x, "GlobalClusterMembers", js.undefined)
     
-    inline def setGlobalClusterMembersVarargs(value: GlobalClusterMember*): Self = StObject.set(x, "GlobalClusterMembers", js.Array(value :_*))
+    inline def setGlobalClusterMembersVarargs(value: GlobalClusterMember*): Self = StObject.set(x, "GlobalClusterMembers", js.Array(value*))
     
     inline def setGlobalClusterResourceId(value: String): Self = StObject.set(x, "GlobalClusterResourceId", value.asInstanceOf[js.Any])
     

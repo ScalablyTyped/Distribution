@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "FrontFacingBlock")
 @js.native
-class FrontFacingBlock protected ()
+open class FrontFacingBlock protected ()
   extends typings.babylonjs.nodeIndexMod.FrontFacingBlock {
   /**
     * Creates a new FrontFacingBlock

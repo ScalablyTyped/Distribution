@@ -1,18 +1,17 @@
 package typings.rxjs
 
-import typings.rxjs.typesMod.ObservableInput
-import typings.rxjs.typesMod.OperatorFunction
+import typings.rxjs.internalTypesMod.ObservableInput
+import typings.rxjs.internalTypesMod.ObservedValueOf
+import typings.rxjs.internalTypesMod.OperatorFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object switchAllMod {
   
-  @JSImport("rxjs/internal/operators/switchAll", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/operators/switchAll", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def switchAll[T](): OperatorFunction[ObservableInput[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchAll")().asInstanceOf[OperatorFunction[ObservableInput[T], T]]
-  
-  inline def switchAll_R[R](): OperatorFunction[js.Any, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchAll")().asInstanceOf[OperatorFunction[js.Any, R]]
+  inline def switchAll[O /* <: ObservableInput[Any] */](): OperatorFunction[O, ObservedValueOf[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchAll")().asInstanceOf[OperatorFunction[O, ObservedValueOf[O]]]
 }

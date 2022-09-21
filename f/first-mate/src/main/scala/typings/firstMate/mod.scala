@@ -3,7 +3,6 @@ package typings.firstMate
 import typings.eventKit.mod.Disposable
 import typings.firstMate.anon.MaxLineLength
 import typings.firstMate.firstMateBooleans.`false`
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object mod {
   
   @JSImport("first-mate", "Grammar")
   @js.native
-  class Grammar protected () extends StObject {
+  open class Grammar protected () extends StObject {
     def this(registry: GrammarRegistry) = this()
     def this(registry: GrammarRegistry, options: GrammarOptions) = this()
     
@@ -65,7 +64,7 @@ object mod {
   
   @JSImport("first-mate", "GrammarRegistry")
   @js.native
-  class GrammarRegistry () extends StObject {
+  open class GrammarRegistry () extends StObject {
     def this(options: MaxLineLength) = this()
     
     /**
@@ -108,7 +107,7 @@ object mod {
       */
     def loadGrammar(
       grammarPath: String,
-      callback: js.Function2[/* error */ Error | Null, /* grammar */ js.UndefOr[Grammar], Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* grammar */ js.UndefOr[Grammar], Unit]
     ): Unit = js.native
     
     /**
@@ -145,7 +144,7 @@ object mod {
       */
     def readGrammar(
       grammarPath: String,
-      callback: js.Function2[/* error */ Error | Null, /* grammar */ js.UndefOr[Grammar], Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* grammar */ js.UndefOr[Grammar], Unit]
     ): Unit = js.native
     
     /**
@@ -172,7 +171,7 @@ object mod {
   
   @JSImport("first-mate", "ScopeSelector")
   @js.native
-  class ScopeSelector protected () extends StObject {
+  open class ScopeSelector protected () extends StObject {
     /**
       *  Create a new scope selector.
       *  @param source The string to parse as a scope selector.
@@ -248,7 +247,7 @@ object mod {
       
       inline def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
       
-      inline def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
+      inline def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value*))
       
       inline def setFirstLineMatch(value: Boolean): Self = StObject.set(x, "firstLineMatch", value.asInstanceOf[js.Any])
       
@@ -282,7 +281,7 @@ object mod {
       
       inline def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
       
-      inline def setPatternsVarargs(value: js.Object*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: js.Object*): Self = StObject.set(x, "patterns", js.Array(value*))
       
       inline def setRepository(value: js.Object): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
       
@@ -338,7 +337,7 @@ object mod {
       
       inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -389,15 +388,15 @@ object mod {
       
       inline def setRuleStack(value: js.Array[GrammarRule]): Self = StObject.set(x, "ruleStack", value.asInstanceOf[js.Any])
       
-      inline def setRuleStackVarargs(value: GrammarRule*): Self = StObject.set(x, "ruleStack", js.Array(value :_*))
+      inline def setRuleStackVarargs(value: GrammarRule*): Self = StObject.set(x, "ruleStack", js.Array(value*))
       
       inline def setTags(value: js.Array[Double | String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: (Double | String)*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: (Double | String)*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setTokens(value: js.Array[GrammarToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
-      inline def setTokensVarargs(value: GrammarToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+      inline def setTokensVarargs(value: GrammarToken*): Self = StObject.set(x, "tokens", js.Array(value*))
     }
   }
 }

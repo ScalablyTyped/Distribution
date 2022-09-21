@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.CombineAction")
 @js.native
-class CombineAction protected ()
+open class CombineAction protected ()
   extends StObject
      with typings.babylonjs.BABYLON.CombineAction {
   /**
@@ -14,11 +14,24 @@ class CombineAction protected ()
     * @param triggerOptions defines the trigger options
     * @param children defines the list of aggregated animations to run
     * @param condition defines the trigger related conditions
+    * @param enableChildrenConditions defines if the children actions conditions should be check before execution
     */
-  def this(triggerOptions: js.Any, children: js.Array[typings.babylonjs.BABYLON.Action]) = this()
+  def this(triggerOptions: Any, children: js.Array[typings.babylonjs.BABYLON.Action]) = this()
   def this(
-    triggerOptions: js.Any,
+    triggerOptions: Any,
     children: js.Array[typings.babylonjs.BABYLON.Action],
     condition: typings.babylonjs.BABYLON.Condition
+  ) = this()
+  def this(
+    triggerOptions: Any,
+    children: js.Array[typings.babylonjs.BABYLON.Action],
+    condition: Unit,
+    enableChildrenConditions: Boolean
+  ) = this()
+  def this(
+    triggerOptions: Any,
+    children: js.Array[typings.babylonjs.BABYLON.Action],
+    condition: typings.babylonjs.BABYLON.Condition,
+    enableChildrenConditions: Boolean
   ) = this()
 }

@@ -1,7 +1,6 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.sawtoothSdk.protobufMod.StateChange.Type
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait IStateChange extends StObject {
   var `type`: js.UndefOr[Type | Null] = js.undefined
   
   /** StateChange value */
-  var value: js.UndefOr[Uint8Array | Null] = js.undefined
+  var value: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
 }
 object IStateChange {
   
@@ -38,7 +37,7 @@ object IStateChange {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setValue(value: Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.typedarray.Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueNull: Self = StObject.set(x, "value", null)
     

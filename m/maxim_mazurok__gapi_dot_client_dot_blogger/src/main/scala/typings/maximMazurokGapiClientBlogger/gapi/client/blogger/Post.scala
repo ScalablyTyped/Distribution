@@ -62,6 +62,9 @@ trait Post extends StObject {
   /** The title link URL, similar to atom's related link. */
   var titleLink: js.UndefOr[String] = js.undefined
   
+  /** RFC 3339 date-time when this Post was last trashed. */
+  var trashed: js.UndefOr[String] = js.undefined
+  
   /** RFC 3339 date-time when this Post was last updated. */
   var updated: js.UndefOr[String] = js.undefined
   
@@ -105,7 +108,7 @@ object Post {
     
     inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    inline def setImagesVarargs(value: Url*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: Url*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -115,7 +118,7 @@ object Post {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setLocation(value: Lat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
@@ -148,6 +151,10 @@ object Post {
     inline def setTitleLinkUndefined: Self = StObject.set(x, "titleLink", js.undefined)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTrashed(value: String): Self = StObject.set(x, "trashed", value.asInstanceOf[js.Any])
+    
+    inline def setTrashedUndefined: Self = StObject.set(x, "trashed", js.undefined)
     
     inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     

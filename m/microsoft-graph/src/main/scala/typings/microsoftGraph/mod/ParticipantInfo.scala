@@ -13,8 +13,8 @@ trait ParticipantInfo extends StObject {
   var countryCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * The type of endpoint the participant is using. Possible values are: default, skypeForBusiness, or
-    * skypeForBusinessVoipPhone. Read-only.
+    * The type of endpoint the participant is using. Possible values are: default, voicemail, skypeForBusiness,
+    * skypeForBusinessVoipPhone and unknownFutureValue. Read-only.
     */
   var endpointType: js.UndefOr[NullableOption[EndpointType]] = js.undefined
   
@@ -23,6 +23,9 @@ trait ParticipantInfo extends StObject {
   
   // The language culture string. Read-only.
   var languageId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // The participant ID of the participant. Read-only.
+  var participantId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not
@@ -60,6 +63,12 @@ object ParticipantInfo {
     inline def setLanguageIdNull: Self = StObject.set(x, "languageId", null)
     
     inline def setLanguageIdUndefined: Self = StObject.set(x, "languageId", js.undefined)
+    
+    inline def setParticipantId(value: NullableOption[String]): Self = StObject.set(x, "participantId", value.asInstanceOf[js.Any])
+    
+    inline def setParticipantIdNull: Self = StObject.set(x, "participantId", null)
+    
+    inline def setParticipantIdUndefined: Self = StObject.set(x, "participantId", js.undefined)
     
     inline def setRegion(value: NullableOption[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     

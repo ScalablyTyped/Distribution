@@ -39,13 +39,13 @@ object DescribeHostReservationsRequest {
     
     inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    inline def setFilterVarargs(value: Filter*): Self = StObject.set(x, "Filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: Filter*): Self = StObject.set(x, "Filter", js.Array(value*))
     
     inline def setHostReservationIdSet(value: HostReservationIdSet): Self = StObject.set(x, "HostReservationIdSet", value.asInstanceOf[js.Any])
     
     inline def setHostReservationIdSetUndefined: Self = StObject.set(x, "HostReservationIdSet", js.undefined)
     
-    inline def setHostReservationIdSetVarargs(value: HostReservationId*): Self = StObject.set(x, "HostReservationIdSet", js.Array(value :_*))
+    inline def setHostReservationIdSetVarargs(value: HostReservationId*): Self = StObject.set(x, "HostReservationIdSet", js.Array(value*))
     
     inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

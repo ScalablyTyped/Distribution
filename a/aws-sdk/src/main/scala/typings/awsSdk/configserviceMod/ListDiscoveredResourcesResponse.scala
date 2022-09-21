@@ -12,7 +12,7 @@ trait ListDiscoveredResourcesResponse extends StObject {
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * The details that identify a resource that is discovered by AWS Config, including the resource type, ID, and (if available) the custom resource name.
+    * The details that identify a resource that is discovered by Config, including the resource type, ID, and (if available) the custom resource name.
     */
   var resourceIdentifiers: js.UndefOr[ResourceIdentifierList] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListDiscoveredResourcesResponse {
     
     inline def setResourceIdentifiersUndefined: Self = StObject.set(x, "resourceIdentifiers", js.undefined)
     
-    inline def setResourceIdentifiersVarargs(value: ResourceIdentifier*): Self = StObject.set(x, "resourceIdentifiers", js.Array(value :_*))
+    inline def setResourceIdentifiersVarargs(value: ResourceIdentifier*): Self = StObject.set(x, "resourceIdentifiers", js.Array(value*))
   }
 }

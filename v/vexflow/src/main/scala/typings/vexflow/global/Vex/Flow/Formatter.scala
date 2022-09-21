@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.Formatter")
 @js.native
-class Formatter ()
+open class Formatter ()
   extends StObject
      with typings.vexflow.Vex.Flow.Formatter {
   def this(options: MaxIterations) = this()

@@ -24,8 +24,8 @@ object CustomShapeEngine {
     getInteraction: () => SafeArray[XCustomShapeHandle],
     getLineGeometry: () => PolyPolygonBezierCoords,
     getTextBounds: () => Rectangle,
-    initialize: SeqEquiv[js.Any] => Unit,
-    queryInterface: `type` => js.Any,
+    initialize: SeqEquiv[Any] => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
     render: () => XShape
   ): CustomShapeEngine = {

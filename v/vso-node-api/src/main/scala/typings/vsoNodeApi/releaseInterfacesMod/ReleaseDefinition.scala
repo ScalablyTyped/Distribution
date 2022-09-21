@@ -1,7 +1,6 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ trait ReleaseDefinition extends StObject {
   /**
     * Gets links to access the release definition.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Gets or sets the list of artifacts.
@@ -32,7 +31,7 @@ trait ReleaseDefinition extends StObject {
   /**
     * Gets date on which it got created.
     */
-  var createdOn: Date
+  var createdOn: js.Date
   
   /**
     * Gets or sets the description.
@@ -67,7 +66,7 @@ trait ReleaseDefinition extends StObject {
   /**
     * Gets date on which it got modified.
     */
-  var modifiedOn: Date
+  var modifiedOn: js.Date
   
   /**
     * Gets or sets the name.
@@ -87,7 +86,7 @@ trait ReleaseDefinition extends StObject {
   /**
     * Gets or sets properties.
     */
-  var properties: js.Any
+  var properties: Any
   
   /**
     * Gets or sets the release name format.
@@ -134,22 +133,22 @@ trait ReleaseDefinition extends StObject {
 object ReleaseDefinition {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     artifacts: js.Array[Artifact],
     comment: String,
     createdBy: IdentityRef,
-    createdOn: Date,
+    createdOn: js.Date,
     description: String,
     environments: js.Array[ReleaseDefinitionEnvironment],
     id: Double,
     isDeleted: Boolean,
     lastRelease: ReleaseReference,
     modifiedBy: IdentityRef,
-    modifiedOn: Date,
+    modifiedOn: js.Date,
     name: String,
     path: String,
     pipelineProcess: PipelineProcess,
-    properties: js.Any,
+    properties: Any,
     releaseNameFormat: String,
     retentionPolicy: RetentionPolicy,
     revision: Double,
@@ -168,19 +167,19 @@ object ReleaseDefinition {
     
     inline def setArtifacts(value: js.Array[Artifact]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
-    inline def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
+    inline def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value*))
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     inline def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setEnvironments(value: js.Array[ReleaseDefinitionEnvironment]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
-    inline def setEnvironmentsVarargs(value: ReleaseDefinitionEnvironment*): Self = StObject.set(x, "environments", js.Array(value :_*))
+    inline def setEnvironmentsVarargs(value: ReleaseDefinitionEnvironment*): Self = StObject.set(x, "environments", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -190,7 +189,7 @@ object ReleaseDefinition {
     
     inline def setModifiedBy(value: IdentityRef): Self = StObject.set(x, "modifiedBy", value.asInstanceOf[js.Any])
     
-    inline def setModifiedOn(value: Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
+    inline def setModifiedOn(value: js.Date): Self = StObject.set(x, "modifiedOn", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -198,7 +197,7 @@ object ReleaseDefinition {
     
     inline def setPipelineProcess(value: PipelineProcess): Self = StObject.set(x, "pipelineProcess", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setReleaseNameFormat(value: String): Self = StObject.set(x, "releaseNameFormat", value.asInstanceOf[js.Any])
     
@@ -210,20 +209,20 @@ object ReleaseDefinition {
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTriggers(value: js.Array[ReleaseTriggerBase]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
     
-    inline def setTriggersVarargs(value: ReleaseTriggerBase*): Self = StObject.set(x, "triggers", js.Array(value :_*))
+    inline def setTriggersVarargs(value: ReleaseTriggerBase*): Self = StObject.set(x, "triggers", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setVariableGroups(value: js.Array[Double]): Self = StObject.set(x, "variableGroups", value.asInstanceOf[js.Any])
     
-    inline def setVariableGroupsVarargs(value: Double*): Self = StObject.set(x, "variableGroups", js.Array(value :_*))
+    inline def setVariableGroupsVarargs(value: Double*): Self = StObject.set(x, "variableGroups", js.Array(value*))
     
     inline def setVariables(value: StringDictionary[ConfigurationVariableValue]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

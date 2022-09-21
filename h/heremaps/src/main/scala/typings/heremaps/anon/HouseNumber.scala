@@ -27,6 +27,6 @@ object HouseNumber {
     
     inline def setStreet(value: js.Array[Double]): Self = StObject.set(x, "Street", value.asInstanceOf[js.Any])
     
-    inline def setStreetVarargs(value: Double*): Self = StObject.set(x, "Street", js.Array(value :_*))
+    inline def setStreetVarargs(value: Double*): Self = StObject.set(x, "Street", js.Array(value*))
   }
 }

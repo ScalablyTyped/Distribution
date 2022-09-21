@@ -188,13 +188,13 @@ object scaronPrettyPhoto {
       * false OR interval time in ms
       * @default 5000
       */
-    var slideshow: js.UndefOr[js.Any] = js.undefined
+    var slideshow: js.UndefOr[Any] = js.undefined
     
     /**
       * Markup for social tools, set to html or false to disable
       * @default '<div class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div><div class="facebook"><iframe src="//www.facebook.com/plugins/like.php?locale=en_US&href={location_href}&amp;layout=button_count&amp;show_faces=true&amp;width=500&amp;action=like&amp;font&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:500px; height:23px;" allowTransparency="true"></iframe></div>'
       */
-    var social_tools: js.UndefOr[js.Any] = js.undefined
+    var social_tools: js.UndefOr[Any] = js.undefined
     
     /**
       * light_rounded / dark_rounded / light_square / dark_square / facebook
@@ -337,11 +337,11 @@ object scaronPrettyPhoto {
       
       inline def setShow_titleUndefined: Self = StObject.set(x, "show_title", js.undefined)
       
-      inline def setSlideshow(value: js.Any): Self = StObject.set(x, "slideshow", value.asInstanceOf[js.Any])
+      inline def setSlideshow(value: Any): Self = StObject.set(x, "slideshow", value.asInstanceOf[js.Any])
       
       inline def setSlideshowUndefined: Self = StObject.set(x, "slideshow", js.undefined)
       
-      inline def setSocial_tools(value: js.Any): Self = StObject.set(x, "social_tools", value.asInstanceOf[js.Any])
+      inline def setSocial_tools(value: Any): Self = StObject.set(x, "social_tools", value.asInstanceOf[js.Any])
       
       inline def setSocial_toolsUndefined: Self = StObject.set(x, "social_tools", js.undefined)
       

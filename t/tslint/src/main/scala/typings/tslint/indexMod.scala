@@ -10,7 +10,7 @@ object indexMod {
   
   @JSImport("tslint/lib/formatters/index", "CodeFrameFormatter")
   @js.native
-  class CodeFrameFormatter () extends Formatter
+  open class CodeFrameFormatter () extends Formatter
   /* static members */
   object CodeFrameFormatter {
     
@@ -26,7 +26,7 @@ object indexMod {
   
   @JSImport("tslint/lib/formatters/index", "FileslistFormatter")
   @js.native
-  class FileslistFormatter ()
+  open class FileslistFormatter ()
     extends typings.tslint.fileslistFormatterMod.Formatter
   /* static members */
   object FileslistFormatter {
@@ -43,7 +43,7 @@ object indexMod {
   
   @JSImport("tslint/lib/formatters/index", "JUnitFormatter")
   @js.native
-  class JUnitFormatter ()
+  open class JUnitFormatter ()
     extends typings.tslint.junitFormatterMod.Formatter
   /* static members */
   object JUnitFormatter {
@@ -60,7 +60,7 @@ object indexMod {
   
   @JSImport("tslint/lib/formatters/index", "JsonFormatter")
   @js.native
-  class JsonFormatter ()
+  open class JsonFormatter ()
     extends typings.tslint.jsonFormatterMod.Formatter
   /* static members */
   object JsonFormatter {
@@ -77,7 +77,7 @@ object indexMod {
   
   @JSImport("tslint/lib/formatters/index", "PmdFormatter")
   @js.native
-  class PmdFormatter ()
+  open class PmdFormatter ()
     extends typings.tslint.pmdFormatterMod.Formatter
   /* static members */
   object PmdFormatter {
@@ -94,7 +94,7 @@ object indexMod {
   
   @JSImport("tslint/lib/formatters/index", "ProseFormatter")
   @js.native
-  class ProseFormatter ()
+  open class ProseFormatter ()
     extends typings.tslint.proseFormatterMod.Formatter
   /* static members */
   object ProseFormatter {
@@ -111,7 +111,7 @@ object indexMod {
   
   @JSImport("tslint/lib/formatters/index", "StylishFormatter")
   @js.native
-  class StylishFormatter ()
+  open class StylishFormatter ()
     extends typings.tslint.stylishFormatterMod.Formatter
   /* static members */
   object StylishFormatter {
@@ -128,7 +128,7 @@ object indexMod {
   
   @JSImport("tslint/lib/formatters/index", "TapFormatter")
   @js.native
-  class TapFormatter ()
+  open class TapFormatter ()
     extends typings.tslint.tapFormatterMod.Formatter
   /* static members */
   object TapFormatter {
@@ -145,7 +145,7 @@ object indexMod {
   
   @JSImport("tslint/lib/formatters/index", "VerboseFormatter")
   @js.native
-  class VerboseFormatter ()
+  open class VerboseFormatter ()
     extends typings.tslint.verboseFormatterMod.Formatter
   /* static members */
   object VerboseFormatter {

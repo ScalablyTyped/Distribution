@@ -11,7 +11,7 @@ object simplexMod {
   /**
     * @param gradients Random gradients
     */
-  class default () extends Simplex {
+  open class default () extends Simplex {
     def this(gradients: Double) = this()
   }
   

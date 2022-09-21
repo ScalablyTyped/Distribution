@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_appengine
 
-Typings are for version 1.0.20201114
+Typings are for version 1.0.20220806
 
 ## Library description:
 TypeScript typings for App Engine Admin API v1
@@ -10,10 +10,10 @@ TypeScript typings for App Engine Admin API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.appengine |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 956 |
-| # stars            | 0 |
+| # releases         | 75 |
+| # dependents       | 0.0 |
+| # downloads        | 942.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

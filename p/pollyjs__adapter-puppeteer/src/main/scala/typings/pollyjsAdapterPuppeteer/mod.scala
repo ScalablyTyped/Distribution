@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("@pollyjs/adapter-puppeteer", JSImport.Namespace)
   @js.native
-  class ^ () extends default
+  open class ^ () extends default
   
   type PuppeteerAdapter = default
 }

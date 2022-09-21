@@ -17,7 +17,7 @@ trait ListProvisioningTemplateVersionsRequest extends StObject {
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * The name of the fleet provisioning template.
+    * The name of the provisioning template.
     */
   var templateName: TemplateName
 }

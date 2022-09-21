@@ -9,7 +9,7 @@ trait SchemaRegionDisksResizeRequest extends StObject {
   /**
     * The new size of the regional persistent disk, which is specified in GB.
     */
-  var sizeGb: js.UndefOr[String] = js.undefined
+  var sizeGb: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaRegionDisksResizeRequest {
   
@@ -21,6 +21,8 @@ object SchemaRegionDisksResizeRequest {
   extension [Self <: SchemaRegionDisksResizeRequest](x: Self) {
     
     inline def setSizeGb(value: String): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
+    
+    inline def setSizeGbNull: Self = StObject.set(x, "sizeGb", null)
     
     inline def setSizeGbUndefined: Self = StObject.set(x, "sizeGb", js.undefined)
   }

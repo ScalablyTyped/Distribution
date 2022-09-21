@@ -10,10 +10,10 @@ simple in memory key/value cache with autoclean by timeout
 | ------------------ | :-------------: |
 | Full name          | mem-cache |
 | Keywords           | cache |
-| # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 38073 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3970.3333333333335 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/silviom/node-mem-cache)

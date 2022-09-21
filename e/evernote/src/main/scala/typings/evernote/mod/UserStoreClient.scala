@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "UserStoreClient")
 @js.native
-class UserStoreClient () extends StObject {
+open class UserStoreClient () extends StObject {
   
   def authenticateLongSession(
     username: String,

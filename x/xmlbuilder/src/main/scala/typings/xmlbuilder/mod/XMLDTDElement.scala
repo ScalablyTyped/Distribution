@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("xmlbuilder", "XMLDTDElement")
 @js.native
-class XMLDTDElement () extends StObject {
+open class XMLDTDElement () extends StObject {
   
   /**
     * The name of the element

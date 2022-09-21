@@ -14,7 +14,7 @@ trait SecurityKey extends StObject {
   /**
     * When the security key was created.
     */
-  var CreationTime: js.UndefOr[timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The key of the security key.
@@ -34,7 +34,7 @@ object SecurityKey {
     
     inline def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     
-    inline def setCreationTime(value: timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

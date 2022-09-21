@@ -34,7 +34,7 @@ object DescribeReservedInstancesModificationsRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object DescribeReservedInstancesModificationsRequest {
     
     inline def setReservedInstancesModificationIdsUndefined: Self = StObject.set(x, "ReservedInstancesModificationIds", js.undefined)
     
-    inline def setReservedInstancesModificationIdsVarargs(value: ReservedInstancesModificationId*): Self = StObject.set(x, "ReservedInstancesModificationIds", js.Array(value :_*))
+    inline def setReservedInstancesModificationIdsVarargs(value: ReservedInstancesModificationId*): Self = StObject.set(x, "ReservedInstancesModificationIds", js.Array(value*))
   }
 }

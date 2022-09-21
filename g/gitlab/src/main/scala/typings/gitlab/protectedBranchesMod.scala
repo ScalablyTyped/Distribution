@@ -14,7 +14,7 @@ object protectedBranchesMod {
   
   @JSImport("gitlab/dist/types/core/services/ProtectedBranches", "ProtectedBranches")
   @js.native
-  class ProtectedBranches () extends BaseService {
+  open class ProtectedBranches () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[GetResponse] = js.native

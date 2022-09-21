@@ -9,12 +9,12 @@ trait ErrorDetail extends StObject {
   /**
     * The error code that identifies the type of error.
     */
-  var ErrorCode: js.UndefOr[StringValue] = js.undefined
+  var ErrorCode: js.UndefOr[ErrorCodeString] = js.undefined
   
   /**
     * The message for the error.
     */
-  var ErrorMessage: js.UndefOr[StringValue] = js.undefined
+  var ErrorMessage: js.UndefOr[ExceptionMessageContent] = js.undefined
 }
 object ErrorDetail {
   
@@ -25,11 +25,11 @@ object ErrorDetail {
   
   extension [Self <: ErrorDetail](x: Self) {
     
-    inline def setErrorCode(value: StringValue): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: ErrorCodeString): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
     inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    inline def setErrorMessage(value: StringValue): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ExceptionMessageContent): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
     inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
   }

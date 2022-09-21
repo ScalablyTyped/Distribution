@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XMLNamespaces extends StObject {
   
   /** @param boolean [InstallForAllUsers=false] */
-  def Add(Path: String, NamespaceURI: js.Any, Alias: js.Any): XMLNamespace = js.native
-  def Add(Path: String, NamespaceURI: js.Any, Alias: js.Any, InstallForAllUsers: Boolean): XMLNamespace = js.native
+  def Add(Path: String, NamespaceURI: Any, Alias: Any): XMLNamespace = js.native
+  def Add(Path: String, NamespaceURI: Any, Alias: Any, InstallForAllUsers: Boolean): XMLNamespace = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -21,9 +21,9 @@ trait XMLNamespaces extends StObject {
   def InstallManifest(Path: String): Unit = js.native
   def InstallManifest(Path: String, InstallForAllUsers: Boolean): Unit = js.native
   
-  def Item(Index: js.Any): XMLNamespace = js.native
+  def Item(Index: Any): XMLNamespace = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.XMLNamespaces_typekey")
   var WordDotXMLNamespaces_typekey: XMLNamespaces = js.native

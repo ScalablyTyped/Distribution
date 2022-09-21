@@ -1,7 +1,7 @@
 
 # Scala.js typings for passport-kakao
 
-Typings are for version 0.2
+Typings are for version 1.0
 
 ## Library description:
 kakao oauth2 login module
@@ -10,10 +10,10 @@ kakao oauth2 login module
 | ------------------ | :-------------: |
 | Full name          | passport-kakao |
 | Keywords           | passport, kakao, kakaotalk, oauth2 |
-| # releases         | 1 |
-| # dependents       | 1 |
-| # downloads        | 127426 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 7395.0 |
+| # stars            | 43.0 |
 
 ## Links
 - [Homepage](https://github.com/rotoshine/passport-kakao#readme)

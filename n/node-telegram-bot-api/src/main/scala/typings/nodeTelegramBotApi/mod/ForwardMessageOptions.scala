@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ForwardMessageOptions extends StObject {
   
   var disable_notification: js.UndefOr[Boolean] = js.undefined
+  
+  var protect_content: js.UndefOr[Boolean] = js.undefined
 }
 object ForwardMessageOptions {
   
@@ -20,5 +22,9 @@ object ForwardMessageOptions {
     inline def setDisable_notification(value: Boolean): Self = StObject.set(x, "disable_notification", value.asInstanceOf[js.Any])
     
     inline def setDisable_notificationUndefined: Self = StObject.set(x, "disable_notification", js.undefined)
+    
+    inline def setProtect_content(value: Boolean): Self = StObject.set(x, "protect_content", value.asInstanceOf[js.Any])
+    
+    inline def setProtect_contentUndefined: Self = StObject.set(x, "protect_content", js.undefined)
   }
 }

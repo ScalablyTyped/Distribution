@@ -7,11 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EffectRenderer extends StObject {
   
-  /* private */ var _fullscreenViewport: js.Any = js.native
+  /* private */ var _engine: Any = js.native
   
-  /* private */ var _indexBuffer: js.Any = js.native
+  /* private */ var _fullscreenViewport: Any = js.native
   
-  /* private */ var _vertexBuffers: js.Any = js.native
+  /* private */ var _indexBuffer: Any = js.native
+  
+  /* private */ var _isRenderTargetTexture: Any = js.native
+  
+  /* private */ var _onContextRestoredObserver: Any = js.native
+  
+  /* private */ var _vertexBuffers: Any = js.native
   
   /**
     * Sets the current effect wrapper to use during draw.
@@ -37,17 +43,13 @@ trait EffectRenderer extends StObject {
     */
   def draw(): Unit = js.native
   
-  /* private */ var engine: js.Any = js.native
-  
-  /* private */ var isRenderTargetTexture: js.Any = js.native
-  
   /**
     * renders one or more effects to a specified texture
     * @param effectWrapper the effect to renderer
     * @param outputTexture texture to draw to, if null it will render to the screen.
     */
   def render(effectWrapper: EffectWrapper): Unit = js.native
-  def render(effectWrapper: EffectWrapper, outputTexture: Nullable[InternalTexture | RenderTargetTexture]): Unit = js.native
+  def render(effectWrapper: EffectWrapper, outputTexture: Nullable[RenderTargetWrapper | IRenderTargetTexture]): Unit = js.native
   
   /**
     * Restores engine states

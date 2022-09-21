@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@codemirror/state" : "6.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@codemirror/state" : "6.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

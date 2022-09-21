@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "DiffBinaryFile")
 @js.native
-class DiffBinaryFile ()
+open class DiffBinaryFile ()
   extends typings.nodegit.diffBinaryFileMod.DiffBinaryFile

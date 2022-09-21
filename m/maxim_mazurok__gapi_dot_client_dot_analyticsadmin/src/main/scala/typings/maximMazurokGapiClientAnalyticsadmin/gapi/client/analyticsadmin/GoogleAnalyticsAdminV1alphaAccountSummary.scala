@@ -43,6 +43,6 @@ object GoogleAnalyticsAdminV1alphaAccountSummary {
     
     inline def setPropertySummariesUndefined: Self = StObject.set(x, "propertySummaries", js.undefined)
     
-    inline def setPropertySummariesVarargs(value: GoogleAnalyticsAdminV1alphaPropertySummary*): Self = StObject.set(x, "propertySummaries", js.Array(value :_*))
+    inline def setPropertySummariesVarargs(value: GoogleAnalyticsAdminV1alphaPropertySummary*): Self = StObject.set(x, "propertySummaries", js.Array(value*))
   }
 }

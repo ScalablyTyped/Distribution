@@ -6,12 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaManagedZonePeeringConfig extends StObject {
   
-  /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dns#managedZonePeeringConfig&quot;.
-    */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
+  /**
+    * The network with which to peer.
+    */
   var targetNetwork: js.UndefOr[SchemaManagedZonePeeringConfigTargetNetwork] = js.undefined
 }
 object SchemaManagedZonePeeringConfig {
@@ -24,6 +23,8 @@ object SchemaManagedZonePeeringConfig {
   extension [Self <: SchemaManagedZonePeeringConfig](x: Self) {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

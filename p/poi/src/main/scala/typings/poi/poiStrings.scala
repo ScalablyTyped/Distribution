@@ -66,6 +66,10 @@ object poiStrings {
   inline def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
+  sealed trait module extends StObject
+  inline def module: module = "module".asInstanceOf[module]
+  
+  @js.native
   sealed trait node extends StObject
   inline def node: node = "node".asInstanceOf[node]
   

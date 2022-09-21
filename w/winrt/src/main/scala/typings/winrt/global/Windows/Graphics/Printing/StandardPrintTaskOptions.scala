@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Graphics.Printing.StandardPrintTaskOptions")
 @js.native
-class StandardPrintTaskOptions ()
+open class StandardPrintTaskOptions ()
   extends StObject
      with typings.winrt.Windows.Graphics.Printing.StandardPrintTaskOptions
 /* static members */

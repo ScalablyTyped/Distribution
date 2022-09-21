@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientPrivateca.anon
 
-import typings.maximMazurokGapiClientPrivateca.gapi.client.privateca.ScheduleDeleteCertificateAuthorityRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ trait Xgafv extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The resource name for this CertificateAuthority in the format `projects/∗/locations/∗/certificateAuthorities/ *`. */
+  /** Required. The resource name for this CertificateTemplate in the format `projects/ *‍/locations/ *‍/certificateTemplates/ *`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -38,8 +37,14 @@ trait Xgafv extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: ScheduleDeleteCertificateAuthorityRequest
+  /**
+    * Optional. An ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been
+    * completed. The server will guarantee that for at least 60 minutes since the first request. For example, consider a situation where you make an initial request and t he request
+    * times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the
+    * second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported
+    * (00000000-0000-0000-0000-000000000000).
+    */
+  var requestId: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +54,8 @@ trait Xgafv extends StObject {
 }
 object Xgafv {
   
-  inline def apply(name: String, resource: ScheduleDeleteCertificateAuthorityRequest): Xgafv = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(name: String): Xgafv = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xgafv]
   }
   
@@ -94,7 +99,9 @@ object Xgafv {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: ScheduleDeleteCertificateAuthorityRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

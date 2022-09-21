@@ -34,7 +34,7 @@ trait IMetadataCard extends StObject {
   
   def GetSkipAction(): IMetadataCardAction = js.native
   
-  def GetUIData(key: String, defaultData: js.Any): js.Any = js.native
+  def GetUIData(key: String, defaultData: Any): Any = js.native
   
   def GetUseAsDefaultsOption(): IMetadataCardOption = js.native
   
@@ -52,13 +52,13 @@ trait IMetadataCard extends StObject {
   
   val Minimized: Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val PreviewerVisible: Boolean = js.native
   
   val PreviewerWidth: Double = js.native
   
-  def PromptForValue(dialog: js.Any): Boolean = js.native
+  def PromptForValue(dialog: Any): Boolean = js.native
   
   def ResumeAsyncOp(): Unit = js.native
   
@@ -77,8 +77,8 @@ trait IMetadataCard extends StObject {
   def ShowMessage(message: String): Double = js.native
   def ShowMessage(message: IMessage): Double = js.native
   
-  def ShowNewObjectDialog(ObjectType: Double, defaultName: String): js.Any = js.native
-  def ShowNewObjectDialog(ObjectType: MFBuiltInObjectType, defaultName: String): js.Any = js.native
+  def ShowNewObjectDialog(ObjectType: Double, defaultName: String): Any = js.native
+  def ShowNewObjectDialog(ObjectType: MFBuiltInObjectType, defaultName: String): Any = js.native
   
   def ShowPermissionsDialog(): Unit = js.native
   
@@ -86,7 +86,7 @@ trait IMetadataCard extends StObject {
   
   def StoreUIData(
     key: String,
-    data: js.Any,
+    data: Any,
     dataIsModeSpecific: Boolean,
     dataIsLayoutSpecific: Boolean,
     dataIsPermanent: Boolean

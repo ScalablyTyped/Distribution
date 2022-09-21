@@ -10,7 +10,7 @@ trait IgHierarchicalGridFeature
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Name of the feature to be enabled.

@@ -8,5 +8,5 @@ object writeRequestMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/_WriteRequest", "_WriteRequest")
   @js.native
-  val WriteRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val WriteRequest: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

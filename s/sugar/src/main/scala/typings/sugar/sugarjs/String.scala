@@ -162,7 +162,7 @@ object String {
           /* obj */ js.Object, 
           SugarDefaultChainable[Unit]
         ],
-      init: js.Any
+      init: Any
     ): SugarDefaultChainable[T] = js.native
     
     def reject(find: java.lang.String): SugarDefaultChainable[js.Object] = js.native
@@ -188,7 +188,7 @@ object String {
     def sum[T, U](map: java.lang.String): SugarDefaultChainable[Double] = js.native
     def sum[T, U](map: mapFn[T, U]): SugarDefaultChainable[Double] = js.native
     
-    def tap(tapFn: js.Function1[/* obj */ js.Object, SugarDefaultChainable[js.Any]]): SugarDefaultChainable[js.Object] = js.native
+    def tap(tapFn: js.Function1[/* obj */ js.Object, SugarDefaultChainable[Any]]): SugarDefaultChainable[js.Object] = js.native
     
     def toQueryString[T, U](): SugarDefaultChainable[js.Object] = js.native
     def toQueryString[T, U](options: QueryStringOptions[T, U]): SugarDefaultChainable[js.Object] = js.native
@@ -313,7 +313,7 @@ object String {
         ]
     ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     
-    def format(args: js.Any*): SugarDefaultChainable[java.lang.String] = js.native
+    def format(args: Any*): SugarDefaultChainable[java.lang.String] = js.native
     
     def from(): SugarDefaultChainable[java.lang.String] = js.native
     def from(index: Double): SugarDefaultChainable[java.lang.String] = js.native
@@ -424,15 +424,8 @@ object String {
     def `match`(regexp: typings.sugar.RegExp): SugarDefaultChainable[RegExpMatchArray | Null] = js.native
     
     def normalize(): SugarDefaultChainable[java.lang.String] = js.native
+    def normalize(form: NFC | NFD | NFKC | NFKD): SugarDefaultChainable[java.lang.String] = js.native
     def normalize(form: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
-    @JSName("normalize")
-    def normalize_NFC(form: NFC): SugarDefaultChainable[java.lang.String] = js.native
-    @JSName("normalize")
-    def normalize_NFD(form: NFD): SugarDefaultChainable[java.lang.String] = js.native
-    @JSName("normalize")
-    def normalize_NFKC(form: NFKC): SugarDefaultChainable[java.lang.String] = js.native
-    @JSName("normalize")
-    def normalize_NFKD(form: NFKD): SugarDefaultChainable[java.lang.String] = js.native
     
     def pad(num: Double): SugarDefaultChainable[java.lang.String] = js.native
     def pad(num: Double, padding: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
@@ -468,16 +461,16 @@ object String {
     def replace(searchValue: java.lang.String, replaceValue: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def replace(
       searchValue: java.lang.String,
-      replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
+      replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ Any, java.lang.String]
     ): SugarDefaultChainable[java.lang.String] = js.native
     def replace(searchValue: typings.sugar.RegExp, replaceValue: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def replace(
       searchValue: typings.sugar.RegExp,
-      replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
+      replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ Any, java.lang.String]
     ): SugarDefaultChainable[java.lang.String] = js.native
     
-    def replaceAll(f: java.lang.String, args: js.Any*): SugarDefaultChainable[java.lang.String] = js.native
-    def replaceAll(f: typings.sugar.RegExp, args: js.Any*): SugarDefaultChainable[java.lang.String] = js.native
+    def replaceAll(f: java.lang.String, args: Any*): SugarDefaultChainable[java.lang.String] = js.native
+    def replaceAll(f: typings.sugar.RegExp, args: Any*): SugarDefaultChainable[java.lang.String] = js.native
     
     def reverse(): SugarDefaultChainable[java.lang.String] = js.native
     
@@ -684,7 +677,7 @@ object String {
         ]
     ): typings.sugar.Array[T] = js.native
     
-    def format(instance: java.lang.String, args: js.Any*): java.lang.String = js.native
+    def format(instance: java.lang.String, args: Any*): java.lang.String = js.native
     
     def from(instance: java.lang.String): java.lang.String = js.native
     def from(instance: java.lang.String, index: Double): java.lang.String = js.native
@@ -804,8 +797,8 @@ object String {
     def removeTags(instance: java.lang.String, tag: Unit, replace: java.lang.String): java.lang.String = js.native
     def removeTags(instance: java.lang.String, tag: Unit, replace: replaceFn): java.lang.String = js.native
     
-    def replaceAll(instance: java.lang.String, f: java.lang.String, args: js.Any*): java.lang.String = js.native
-    def replaceAll(instance: java.lang.String, f: typings.sugar.RegExp, args: js.Any*): java.lang.String = js.native
+    def replaceAll(instance: java.lang.String, f: java.lang.String, args: Any*): java.lang.String = js.native
+    def replaceAll(instance: java.lang.String, f: typings.sugar.RegExp, args: Any*): java.lang.String = js.native
     
     def reverse(instance: java.lang.String): java.lang.String = js.native
     

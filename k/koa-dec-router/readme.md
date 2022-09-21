@@ -10,10 +10,10 @@ An ES6 decorator + class based router, support inherit, override, priority, auto
 | ------------------ | :-------------: |
 | Full name          | koa-dec-router |
 | Keywords           | koa, router, decorator, es6, es7, koa-router |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1739 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 736.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/koa-dec-router)

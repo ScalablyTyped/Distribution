@@ -1,11 +1,19 @@
 package typings.antd
 
-import typings.rcNotification.notificationMod.NotificationInstance
+import typings.antd.antdStrings.error
+import typings.antd.antdStrings.info
+import typings.antd.antdStrings.loading
+import typings.antd.antdStrings.success
+import typings.antd.antdStrings.warning
 import typings.react.mod.CSSProperties
 import typings.react.mod.Key
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,37 +28,46 @@ object messageMod {
   @js.native
   val default: MessageApi = js.native
   
-  inline def attachTypeApi(originalApi: js.Any, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTypeApi")(originalApi.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def attachTypeApi(originalApi: MessageApi, `type`: NoticeType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTypeApi")(originalApi.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def getInstance(): NotificationInstance | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[NotificationInstance | Null]
+  inline def getInstance(): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RCNotificationInstance */ Any) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[(/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RCNotificationInstance */ Any) | Null]
   
   inline def getKeyThenIncreaseKey(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyThenIncreaseKey")().asInstanceOf[Double]
+  
+  @JSImport("antd/lib/message", "typeList")
+  @js.native
+  val typeList: js.Array[success | warning | error | loading | info] = js.native
   
   trait ArgsProps extends StObject {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var content: ReactNode
+    var content: Any
     
-    var duration: Double | Null
+    var duration: js.UndefOr[Double] = js.undefined
+    
+    var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
     
     var icon: js.UndefOr[ReactNode] = js.undefined
     
     var key: js.UndefOr[String | Double] = js.undefined
     
+    var onClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.undefined
+    
     var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
+    var rootPrefixCls: js.UndefOr[String] = js.undefined
+    
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: NoticeType
+    var `type`: js.UndefOr[NoticeType] = js.undefined
   }
   object ArgsProps {
     
-    inline def apply(`type`: NoticeType): ArgsProps = {
-      val __obj = js.Dynamic.literal(duration = null)
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    inline def apply(content: Any): ArgsProps = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArgsProps]
     }
     
@@ -60,13 +77,15 @@ object messageMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
-      
-      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      inline def setDurationNull: Self = StObject.set(x, "duration", null)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      
+      inline def setGetPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
+      
+      inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
       
       inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -76,6 +95,10 @@ object messageMod {
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
+      inline def setOnClick(value: /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      
       inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
@@ -84,15 +107,21 @@ object messageMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
+      inline def setRootPrefixCls(value: String): Self = StObject.set(x, "rootPrefixCls", value.asInstanceOf[js.Any])
+      
+      inline def setRootPrefixClsUndefined: Self = StObject.set(x, "rootPrefixCls", js.undefined)
+      
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       inline def setType(value: NoticeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
-  type ConfigContent = ReactNode | String
+  type ConfigContent = ReactNode
   
   type ConfigDuration = Double | js.Function0[Unit]
   
@@ -205,16 +234,14 @@ object messageMod {
   }
   
   @js.native
-  trait MessageType extends StObject {
+  trait MessageType
+    extends StObject
+       with PromiseLike[Any] {
     
     def apply(): Unit = js.native
-    
-    var promise: js.Promise[Unit] = js.native
-    
-    def `then`(fill: ThenableArgument, reject: ThenableArgument): js.Promise[Unit] = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
+  /* keyof antd.anon.Loading */ /* Rewritten from type alias, can be one of: 
     - typings.antd.antdStrings.info
     - typings.antd.antdStrings.success
     - typings.antd.antdStrings.error
@@ -222,18 +249,6 @@ object messageMod {
     - typings.antd.antdStrings.loading
   */
   trait NoticeType extends StObject
-  object NoticeType {
-    
-    inline def error: typings.antd.antdStrings.error = "error".asInstanceOf[typings.antd.antdStrings.error]
-    
-    inline def info: typings.antd.antdStrings.info = "info".asInstanceOf[typings.antd.antdStrings.info]
-    
-    inline def loading: typings.antd.antdStrings.loading = "loading".asInstanceOf[typings.antd.antdStrings.loading]
-    
-    inline def success: typings.antd.antdStrings.success = "success".asInstanceOf[typings.antd.antdStrings.success]
-    
-    inline def warning: typings.antd.antdStrings.warning = "warning".asInstanceOf[typings.antd.antdStrings.warning]
-  }
   
-  type ThenableArgument = js.Function1[/* val */ js.Any, Unit]
+  type ThenableArgument = js.Function1[/* val */ Any, Unit]
 }

@@ -25,10 +25,10 @@ object mod {
             js.Function5[
               /* tokens */ js.Array[typings.markdownIt.tokenMod.^], 
               /* index */ Double, 
-              /* options */ js.Any, 
-              /* env */ js.Any, 
+              /* options */ Any, 
+              /* env */ Any, 
               /* self */ typings.markdownIt.rendererMod.^, 
-              Unit
+              String
             ]
           ] = js.undefined
       
@@ -48,7 +48,7 @@ object mod {
         inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
         
         inline def setRender(
-          value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* index */ Double, /* options */ js.Any, /* env */ js.Any, /* self */ typings.markdownIt.rendererMod.^) => Unit
+          value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* index */ Double, /* options */ Any, /* env */ Any, /* self */ typings.markdownIt.rendererMod.^) => String
         ): Self = StObject.set(x, "render", js.Any.fromFunction5(value))
         
         inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)

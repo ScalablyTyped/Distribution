@@ -1,9 +1,9 @@
 package typings.materialUiCore
 
-import typings.materialUiCore.anon.PartialWithWidth
-import typings.materialUiCore.withMobileDialogWithMobileDialogMod.InjectedProps
+import typings.materialUiCore.anon.PartialWithMobileDialog
+import typings.materialUiCore.withMobileDialogWithMobileDialogMod.WithMobileDialog
 import typings.materialUiCore.withMobileDialogWithMobileDialogMod.WithMobileDialogOptions
-import typings.react.mod.ComponentType
+import typings.materialUiTypes.mod.PropInjector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,18 +14,6 @@ object withMobileDialogMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[P](): js.Function1[
-    /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
-    ComponentType[P & PartialWithWidth]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[
-    /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
-    ComponentType[P & PartialWithWidth]
-  ]]
-  inline def default[P](options: WithMobileDialogOptions): js.Function1[
-    /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
-    ComponentType[P & PartialWithWidth]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
-    ComponentType[P & PartialWithWidth]
-  ]]
+  inline def default[P](): PropInjector[WithMobileDialog, PartialWithMobileDialog] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PropInjector[WithMobileDialog, PartialWithMobileDialog]]
+  inline def default[P](options: WithMobileDialogOptions): PropInjector[WithMobileDialog, PartialWithMobileDialog] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[PropInjector[WithMobileDialog, PartialWithMobileDialog]]
 }

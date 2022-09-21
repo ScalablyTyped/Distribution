@@ -10,10 +10,10 @@ A node.js module to run connect-like middlewares in sequence
 | ------------------ | :-------------: |
 | Full name          | connect-sequence |
 | Keywords           | node, node.js, connect, middleware, express |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 10953 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4979.0 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/sirap-group/connect-sequence#readme)

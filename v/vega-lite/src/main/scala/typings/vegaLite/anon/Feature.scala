@@ -11,7 +11,7 @@ trait Feature extends StObject {
   
   var mesh: js.UndefOr[String] = js.undefined
   
-  var parse: js.UndefOr[String | Dict[js.Any]] = js.undefined
+  var parse: js.UndefOr[String | Dict[Any]] = js.undefined
   
   var property: js.UndefOr[String] = js.undefined
   
@@ -34,7 +34,7 @@ object Feature {
     
     inline def setMeshUndefined: Self = StObject.set(x, "mesh", js.undefined)
     
-    inline def setParse(value: String | Dict[js.Any]): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    inline def setParse(value: String | Dict[Any]): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     
     inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     

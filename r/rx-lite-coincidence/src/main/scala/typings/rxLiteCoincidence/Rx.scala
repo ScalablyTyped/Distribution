@@ -54,7 +54,7 @@ object Rx {
     def partition(predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): js.Array[Observable[T]] = js.native
     def partition(
       predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
-      thisArg: js.Any
+      thisArg: Any
     ): js.Array[Observable[T]] = js.native
     
     def window[TWindowClosing](windowClosingSelector: js.Function0[Observable[TWindowClosing]]): Observable[Observable[T]] = js.native

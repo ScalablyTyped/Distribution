@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DialogButtonOptions
   extends StObject
-     with /* attr */ StringDictionary[js.Any] {
+     with /* attr */ StringDictionary[Any] {
   
-  var click: js.UndefOr[js.Function1[/* eventObject */ JQueryEventObject, js.Any]] = js.undefined
+  var click: js.UndefOr[js.Function1[/* eventObject */ JQueryEventObject, Any]] = js.undefined
   
-  var icons: js.UndefOr[js.Any] = js.undefined
+  var icons: js.UndefOr[Any] = js.undefined
   
   var showText: js.UndefOr[String | Boolean] = js.undefined
   
@@ -27,11 +27,11 @@ object DialogButtonOptions {
   
   extension [Self <: DialogButtonOptions](x: Self) {
     
-    inline def setClick(value: /* eventObject */ JQueryEventObject => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+    inline def setClick(value: /* eventObject */ JQueryEventObject => Any): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
     inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
-    inline def setIcons(value: js.Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     

@@ -8,5 +8,5 @@ object encryptionConfigurationMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_EncryptionConfiguration", "_EncryptionConfiguration")
   @js.native
-  val EncryptionConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val EncryptionConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

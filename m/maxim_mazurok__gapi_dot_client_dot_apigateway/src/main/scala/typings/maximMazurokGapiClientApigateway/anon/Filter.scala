@@ -40,7 +40,7 @@ trait Filter extends StObject {
   /** Page token. */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** Required. Parent resource of the Gateway, of the form: `projects/∗/locations/ *` */
+  /** Required. Parent resource of the Gateway, of the form: `projects/ *‍/locations/ *` */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

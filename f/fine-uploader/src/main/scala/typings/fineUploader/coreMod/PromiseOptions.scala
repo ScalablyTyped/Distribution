@@ -25,7 +25,7 @@ trait PromiseOptions extends StObject {
     * @param Object param : The value to pass to the promise's failure handler.
     * @return PromiseOptions : An instance of a promise
     */
-  def failure(param: js.Any): PromiseOptions
+  def failure(param: Any): PromiseOptions
   
   /**
     * Call this on a promise to indicate success.
@@ -34,7 +34,7 @@ trait PromiseOptions extends StObject {
     * @param Object param : The value to pass to the promise's success handler.
     * @return PromiseOptions : An instance of a promise
     */
-  def success(param: js.Any): PromiseOptions
+  def success(param: Any): PromiseOptions
   
   /**
     * Register callbacks from success and failure.
@@ -53,8 +53,8 @@ object PromiseOptions {
   
   inline def apply(
     done: js.Function => PromiseOptions,
-    failure: js.Any => PromiseOptions,
-    success: js.Any => PromiseOptions,
+    failure: Any => PromiseOptions,
+    success: Any => PromiseOptions,
     `then`: (js.Function, js.Function) => PromiseOptions
   ): PromiseOptions = {
     val __obj = js.Dynamic.literal(done = js.Any.fromFunction1(done), failure = js.Any.fromFunction1(failure), success = js.Any.fromFunction1(success))
@@ -66,9 +66,9 @@ object PromiseOptions {
     
     inline def setDone(value: js.Function => PromiseOptions): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
     
-    inline def setFailure(value: js.Any => PromiseOptions): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
+    inline def setFailure(value: Any => PromiseOptions): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
     
-    inline def setSuccess(value: js.Any => PromiseOptions): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Any => PromiseOptions): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     inline def setThen(value: (js.Function, js.Function) => PromiseOptions): Self = StObject.set(x, "then", js.Any.fromFunction2(value))
   }

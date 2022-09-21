@@ -1,12 +1,15 @@
 package typings.react
 
+import typings.react.mod.Consumer
 import typings.react.mod.ExoticComponent
+import typings.react.mod.Provider
 import typings.react.mod.ReactElement
 import typings.react.reactStrings.backwards
 import typings.react.reactStrings.forwards
+import typings.react.reactStrings.fulfilled
+import typings.react.reactStrings.pending
+import typings.react.reactStrings.rejected
 import typings.std.Exclude
-import typings.std.Iterable
-import typings.std.String
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,19 +23,11 @@ object experimentalMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def unstableStartTransition(scope: TransitionFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_startTransition")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    @JSImport("react", "unstable_SuspenseList")
+    @JSImport("react", "SuspenseList")
     @js.native
-    val unstableSuspenseList: ExoticComponent[SuspenseListProps] = js.native
+    val SuspenseList: ExoticComponent[SuspenseListProps] = js.native
     
-    inline def unstableUseDeferredValue[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useDeferredValue")(value.asInstanceOf[js.Any]).asInstanceOf[T]
-    
-    inline def unstableUseOpaqueIdentifier(): OpaqueIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useOpaqueIdentifier")().asInstanceOf[OpaqueIdentifier]
-    
-    inline def unstableUseTransition(config: js.UndefOr[SuspenseConfig | Null]): js.Tuple2[TransitionStartFunction, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useTransition")(config.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[TransitionStartFunction, Boolean]]
-    
-    inline def unstableWithSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]], config: js.UndefOr[SuspenseConfig | Null]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_withSuspenseConfig")(scope.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def experimentalUse[T](usable: Usable[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("experimental_use")(usable.asInstanceOf[js.Any]).asInstanceOf[T]
     
     trait DirectionalSuspenseListProps
       extends StObject
@@ -56,7 +51,7 @@ object experimentalMod {
     }
     object DirectionalSuspenseListProps {
       
-      inline def apply(children: ReactElement | Iterable[ReactElement], revealOrder: forwards | backwards): DirectionalSuspenseListProps = {
+      inline def apply(children: ReactElement | js.Iterable[ReactElement], revealOrder: forwards | backwards): DirectionalSuspenseListProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], revealOrder = revealOrder.asInstanceOf[js.Any])
         __obj.asInstanceOf[DirectionalSuspenseListProps]
       }
@@ -68,6 +63,35 @@ object experimentalMod {
         inline def setTail(value: SuspenseListTailMode): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
         
         inline def setTailUndefined: Self = StObject.set(x, "tail", js.undefined)
+      }
+    }
+    
+    trait FulfilledThenable[T]
+      extends StObject
+         with ThenableImpl[T]
+         with typings.react.mod.Thenable[T]
+         with Thenable[T] {
+      
+      var status: fulfilled
+      
+      var value: T
+    }
+    object FulfilledThenable {
+      
+      inline def apply[T](
+        `then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any],
+        value: T
+      ): FulfilledThenable[T] = {
+        val __obj = js.Dynamic.literal(status = "fulfilled", value = value.asInstanceOf[js.Any])
+        __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
+        __obj.asInstanceOf[FulfilledThenable[T]]
+      }
+      
+      extension [Self <: FulfilledThenable[?], T](x: Self & FulfilledThenable[T]) {
+        
+        inline def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        
+        inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
@@ -89,7 +113,7 @@ object experimentalMod {
     }
     object NonDirectionalSuspenseListProps {
       
-      inline def apply(children: ReactElement | Iterable[ReactElement]): NonDirectionalSuspenseListProps = {
+      inline def apply(children: ReactElement | js.Iterable[ReactElement]): NonDirectionalSuspenseListProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
         __obj.asInstanceOf[NonDirectionalSuspenseListProps]
       }
@@ -102,41 +126,54 @@ object experimentalMod {
       }
     }
     
-    /**
-      * WARNING: Don't use this as a `string`.
-      *
-      * This is an opaque type that is not supposed to type-check structurally.
-      * It is only valid if returned from React methods and passed to React e.g. `<button aria-labelledby={opaqueIdentifier} />`
-      */
-    // We can't create a type that would be rejected for string concatenation or `.toString()` calls.
-    // So in order to not have to add `string | OpaqueIdentifier` to every react-dom host prop we intersect it with `string`.
-    @js.native
-    trait OpaqueIdentifier
+    trait PendingThenable[T]
       extends StObject
-         with String
-    
-    trait SuspenseConfig extends StObject {
+         with ThenableImpl[T]
+         with typings.react.mod.Thenable[T]
+         with Thenable[T] {
       
-      var busyDelayMs: js.UndefOr[Double] = js.undefined
-      
-      var busyMinDurationMs: js.UndefOr[Double] = js.undefined
+      var status: pending
     }
-    object SuspenseConfig {
+    object PendingThenable {
       
-      inline def apply(): SuspenseConfig = {
-        val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[SuspenseConfig]
+      inline def apply[T](`then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any]): PendingThenable[T] = {
+        val __obj = js.Dynamic.literal(status = "pending")
+        __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
+        __obj.asInstanceOf[PendingThenable[T]]
       }
       
-      extension [Self <: SuspenseConfig](x: Self) {
+      extension [Self <: PendingThenable[?], T](x: Self & PendingThenable[T]) {
         
-        inline def setBusyDelayMs(value: Double): Self = StObject.set(x, "busyDelayMs", value.asInstanceOf[js.Any])
+        inline def setStatus(value: pending): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      }
+    }
+    
+    trait RejectedThenable[T]
+      extends StObject
+         with ThenableImpl[T]
+         with typings.react.mod.Thenable[T]
+         with Thenable[T] {
+      
+      var reason: Any
+      
+      var status: rejected
+    }
+    object RejectedThenable {
+      
+      inline def apply[T](
+        reason: Any,
+        `then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any]
+      ): RejectedThenable[T] = {
+        val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = "rejected")
+        __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
+        __obj.asInstanceOf[RejectedThenable[T]]
+      }
+      
+      extension [Self <: RejectedThenable[?], T](x: Self & RejectedThenable[T]) {
         
-        inline def setBusyDelayMsUndefined: Self = StObject.set(x, "busyDelayMs", js.undefined)
+        inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
         
-        inline def setBusyMinDurationMs(value: Double): Self = StObject.set(x, "busyMinDurationMs", value.asInstanceOf[js.Any])
-        
-        inline def setBusyMinDurationMsUndefined: Self = StObject.set(x, "busyMinDurationMs", js.undefined)
+        inline def setStatus(value: rejected): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       }
     }
     
@@ -149,18 +186,18 @@ object experimentalMod {
         * It does, however, allow those children to be wrapped inside a single
         * level of `<React.Fragment>`.
         */
-      var children: ReactElement | Iterable[ReactElement]
+      var children: ReactElement | js.Iterable[ReactElement]
     }
     object SuspenseListCommonProps {
       
-      inline def apply(children: ReactElement | Iterable[ReactElement]): SuspenseListCommonProps = {
+      inline def apply(children: ReactElement | js.Iterable[ReactElement]): SuspenseListCommonProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
         __obj.asInstanceOf[SuspenseListCommonProps]
       }
       
       extension [Self <: SuspenseListCommonProps](x: Self) {
         
-        inline def setChildren(value: ReactElement | Iterable[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactElement | js.Iterable[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       }
     }
     
@@ -171,12 +208,12 @@ object experimentalMod {
     trait SuspenseListProps extends StObject
     object SuspenseListProps {
       
-      inline def DirectionalSuspenseListProps(children: ReactElement | Iterable[ReactElement], revealOrder: forwards | backwards): typings.react.experimentalMod.reactAugmentingMod.DirectionalSuspenseListProps = {
+      inline def DirectionalSuspenseListProps(children: ReactElement | js.Iterable[ReactElement], revealOrder: forwards | backwards): typings.react.experimentalMod.reactAugmentingMod.DirectionalSuspenseListProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], revealOrder = revealOrder.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.react.experimentalMod.reactAugmentingMod.DirectionalSuspenseListProps]
       }
       
-      inline def NonDirectionalSuspenseListProps(children: ReactElement | Iterable[ReactElement]): typings.react.experimentalMod.reactAugmentingMod.NonDirectionalSuspenseListProps = {
+      inline def NonDirectionalSuspenseListProps(children: ReactElement | js.Iterable[ReactElement]): typings.react.experimentalMod.reactAugmentingMod.NonDirectionalSuspenseListProps = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.react.experimentalMod.reactAugmentingMod.NonDirectionalSuspenseListProps]
       }
@@ -233,8 +270,136 @@ object experimentalMod {
       }
     }
     
-    type TransitionFunction = js.Function0[js.UndefOr[Unit]]
+    /* Rewritten from type alias, can be one of: 
+      - typings.react.experimentalMod.reactAugmentingMod.UntrackedThenable[T]
+      - typings.react.experimentalMod.reactAugmentingMod.PendingThenable[T]
+      - typings.react.experimentalMod.reactAugmentingMod.FulfilledThenable[T]
+      - typings.react.experimentalMod.reactAugmentingMod.RejectedThenable[T]
+    */
+    trait Thenable[T]
+      extends StObject
+         with typings.react.mod.Usable[T]
+         with Usable[T]
+    object Thenable {
+      
+      inline def FulfilledThenable[T](
+        `then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any],
+        value: T
+      ): typings.react.experimentalMod.reactAugmentingMod.FulfilledThenable[T] = {
+        val __obj = js.Dynamic.literal(status = "fulfilled", value = value.asInstanceOf[js.Any])
+        __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
+        __obj.asInstanceOf[typings.react.experimentalMod.reactAugmentingMod.FulfilledThenable[T]]
+      }
+      
+      inline def PendingThenable[T](`then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any]): typings.react.experimentalMod.reactAugmentingMod.PendingThenable[T] = {
+        val __obj = js.Dynamic.literal(status = "pending")
+        __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
+        __obj.asInstanceOf[typings.react.experimentalMod.reactAugmentingMod.PendingThenable[T]]
+      }
+      
+      inline def RejectedThenable[T](
+        reason: Any,
+        `then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any]
+      ): typings.react.experimentalMod.reactAugmentingMod.RejectedThenable[T] = {
+        val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = "rejected")
+        __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
+        __obj.asInstanceOf[typings.react.experimentalMod.reactAugmentingMod.RejectedThenable[T]]
+      }
+      
+      inline def UntrackedThenable[T](`then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any]): typings.react.experimentalMod.reactAugmentingMod.UntrackedThenable[T] = {
+        val __obj = js.Dynamic.literal()
+        __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
+        __obj.asInstanceOf[typings.react.experimentalMod.reactAugmentingMod.UntrackedThenable[T]]
+      }
+    }
     
-    type TransitionStartFunction = js.Function1[/* callback */ TransitionFunction, Unit]
+    trait ThenableImpl[T] extends StObject {
+      
+      def `then`(onFulfill: js.Function1[/* value */ T, Any], onReject: js.Function1[/* error */ Any, Any]): Unit | js.Thenable[Any]
+    }
+    object ThenableImpl {
+      
+      inline def apply[T](
+        `then`: (js.Function1[/* value */ T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any]
+      ): ThenableImpl[T] = {
+        val __obj = js.Dynamic.literal()
+        __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
+        __obj.asInstanceOf[ThenableImpl[T]]
+      }
+      
+      extension [Self <: ThenableImpl[?], T](x: Self & ThenableImpl[T]) {
+        
+        inline def setThen(
+          value: (js.Function1[/* value */ T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any]
+        ): Self = StObject.set(x, "then", js.Any.fromFunction2(value))
+      }
+    }
+    
+    trait UntrackedThenable[T]
+      extends StObject
+         with ThenableImpl[T]
+         with typings.react.mod.Thenable[T]
+         with Thenable[T] {
+      
+      var status: js.UndefOr[Unit] = js.undefined
+    }
+    object UntrackedThenable {
+      
+      inline def apply[T](`then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any]): UntrackedThenable[T] = {
+        val __obj = js.Dynamic.literal()
+        __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
+        __obj.asInstanceOf[UntrackedThenable[T]]
+      }
+      
+      extension [Self <: UntrackedThenable[?], T](x: Self & UntrackedThenable[T]) {
+        
+        inline def setStatus(value: Unit): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      }
+    }
+    
+    /* Rewritten from type alias, can be one of: 
+      - typings.react.experimentalMod.reactAugmentingMod.Thenable[T]
+      - typings.react.mod.Context[T]
+    */
+    trait Usable[T] extends StObject
+    object Usable {
+      
+      inline def Context[T](Consumer: Consumer[T], Provider: Provider[T]): typings.react.mod.Context[T] = {
+        val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.react.mod.Context[T]]
+      }
+      
+      inline def FulfilledThenable[T](
+        `then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any],
+        value: T
+      ): typings.react.experimentalMod.reactAugmentingMod.FulfilledThenable[T] = {
+        val __obj = js.Dynamic.literal(status = "fulfilled", value = value.asInstanceOf[js.Any])
+        __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
+        __obj.asInstanceOf[typings.react.experimentalMod.reactAugmentingMod.FulfilledThenable[T]]
+      }
+      
+      inline def PendingThenable[T](`then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any]): typings.react.experimentalMod.reactAugmentingMod.PendingThenable[T] = {
+        val __obj = js.Dynamic.literal(status = "pending")
+        __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
+        __obj.asInstanceOf[typings.react.experimentalMod.reactAugmentingMod.PendingThenable[T]]
+      }
+      
+      inline def RejectedThenable[T](
+        reason: Any,
+        `then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any]
+      ): typings.react.experimentalMod.reactAugmentingMod.RejectedThenable[T] = {
+        val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = "rejected")
+        __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
+        __obj.asInstanceOf[typings.react.experimentalMod.reactAugmentingMod.RejectedThenable[T]]
+      }
+      
+      inline def UntrackedThenable[T](`then`: (js.Function1[T, Any], js.Function1[/* error */ Any, Any]) => Unit | js.Thenable[Any]): typings.react.experimentalMod.reactAugmentingMod.UntrackedThenable[T] = {
+        val __obj = js.Dynamic.literal()
+        __obj.updateDynamic("then")(js.Any.fromFunction2(`then`))
+        __obj.asInstanceOf[typings.react.experimentalMod.reactAugmentingMod.UntrackedThenable[T]]
+      }
+    }
   }
 }

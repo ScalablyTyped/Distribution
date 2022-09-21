@@ -1,6 +1,5 @@
 package typings.jsBase64
 
-import typings.jsBase64.mod.global.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,142 +10,185 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @js.native
-  trait Base64 extends StObject {
+  object Base64 {
     
-    var VERSION: String = js.native
+    @JSImport("js-base64", "Base64")
+    @js.native
+    val ^ : js.Any = js.native
     
-    def atob(base64: String): String = js.native
+    @JSImport("js-base64", "Base64.VERSION")
+    @js.native
+    def VERSION_ : String = js.native
     
-    def btoa(s: String): String = js.native
+    inline def VERSION__=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
     
-    def btou(s: String): String = js.native
+    inline def atob(asc: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atob")(asc.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    def decode(base64: String): String = js.native
+    inline def atobPolyfill(asc: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atobPolyfill")(asc.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    def encode(s: String): String = js.native
-    def encode(s: String, uriSafe: Boolean): String = js.native
+    inline def btoa(bin: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btoa")(bin.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    def encodeURI(s: String): String = js.native
+    inline def btoaPolyfill(bin: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btoaPolyfill")(bin.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    def encodeURL(s: String): String = js.native
-    @JSName("encodeURL")
-    var encodeURL_Original: js.Function1[/* s */ String, String] = js.native
+    inline def btou(b: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btou")(b.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    def extendBuiltins(): Unit = js.native
+    inline def decode(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(src.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    def extendString(): Unit = js.native
+    inline def encode(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def encode(src: String, urlsafe: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(src.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    def extendUint8Array(): Unit = js.native
+    inline def encodeURI(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeURI")(src.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    def fromBase64(base64: String): String = js.native
+    inline def encodeURL(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeURL")(src.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    def fromUint8Array(uint8Array: Uint8Array): String = js.native
-    def fromUint8Array(uint8Array: Uint8Array, uriSafe: Boolean): String = js.native
+    inline def extendBuiltins(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendBuiltins")().asInstanceOf[Unit]
     
-    def toBase64(s: String): String = js.native
-    def toBase64(s: String, uriSafe: Boolean): String = js.native
+    inline def extendString(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendString")().asInstanceOf[Unit]
     
-    def toUint8Array(s: String): Uint8Array = js.native
+    inline def extendUint8Array(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendUint8Array")().asInstanceOf[Unit]
     
-    def utob(s: String): String = js.native
+    inline def fromBase64(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def fromUint8Array(u8a: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(u8a.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def fromUint8Array(u8a: js.typedarray.Uint8Array, urlsafe: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(u8a.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def isValid(src: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(src.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    inline def toBase64(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBase64")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toBase64(src: String, urlsafe: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBase64")(src.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def toUint8Array(a: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toUint8Array")(a.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    
+    inline def utob(u: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("utob")(u.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @JSImport("js-base64", "Base64.version")
+    @js.native
+    def version: String = js.native
+    inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   }
-  @JSImport("js-base64", "Base64")
-  @js.native
-  val Base64: typings.jsBase64.mod.Base64 = js.native
   
+  /**
+    * @deprecated use lowercase `version`.
+    */
   @JSImport("js-base64", "VERSION")
   @js.native
-  val VERSION: String = js.native
+  val VERSION_ : /* "3.7.2" */ String = js.native
   
-  @JSImport("js-base64", "atob")
+  /**
+    * does what `window.atob` of web browsers do.
+    * @param {String} asc Base64-encoded string
+    * @returns {string} binary string
+    */
+  inline def atob(asc: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atob")(asc.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * polyfill version of `atob`
+    */
+  inline def atobPolyfill(asc: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atobPolyfill")(asc.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * does what `window.btoa` of web browsers do.
+    * @param {String} bin binary string
+    * @returns {string} Base64-encoded string
+    */
+  inline def btoa(bin: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btoa")(bin.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * polyfill version of `btoa`
+    */
+  inline def btoaPolyfill(bin: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btoaPolyfill")(bin.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * @deprecated should have been internal use only.
+    * @param {string} src UTF-16 string
+    * @returns {string} UTF-8 string
+    */
+  inline def btou(b: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btou")(b.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * converts a Base64 string to a UTF-8 string.
+    * @param {String} src Base64 string.  Both normal and URL-safe are supported
+    * @returns {string} UTF-8 string
+    */
+  inline def decode(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * converts a UTF-8-encoded string to a Base64 string.
+    * @param {boolean} [urlsafe] if `true` make the result URL-safe
+    * @returns {string} Base64 string
+    */
+  inline def encode(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(src: String, urlsafe: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(src.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  /**
+    * converts a UTF-8-encoded string to URL-safe Base64 RFC4648 §5.
+    * @returns {string} Base64 string
+    */
+  inline def encodeURI(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeURI")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * converts a UTF-8-encoded string to URL-safe Base64 RFC4648 §5.
+    * @returns {string} Base64 string
+    */
+  inline def encodeURL(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeURL")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * extend Builtin prototypes with relevant methods
+    */
+  inline def extendBuiltins(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendBuiltins")().asInstanceOf[Unit]
+  
+  /**
+    * extend String.prototype with relevant methods
+    */
+  inline def extendString(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendString")().asInstanceOf[Unit]
+  
+  /**
+    * extend Uint8Array.prototype with relevant methods
+    */
+  inline def extendUint8Array(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendUint8Array")().asInstanceOf[Unit]
+  
+  /**
+    * converts a Base64 string to a UTF-8 string.
+    * @param {String} src Base64 string.  Both normal and URL-safe are supported
+    * @returns {string} UTF-8 string
+    */
+  inline def fromBase64(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * converts a Uint8Array to a Base64 string.
+    * @param {boolean} [urlsafe] URL-and-filename-safe a la RFC4648 §5
+    * @returns {string} Base64 string
+    */
+  inline def fromUint8Array(u8a: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(u8a.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fromUint8Array(u8a: js.typedarray.Uint8Array, urlsafe: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(u8a.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  /**
+    * check if a value is a valid Base64 string
+    * @param {String} src a value to check
+    */
+  inline def isValid(src: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(src.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  /**
+    * converts a UTF-8-encoded string to a Base64 string.
+    * @param {boolean} [urlsafe] if `true` make the result URL-safe
+    * @returns {string} Base64 string
+    */
+  inline def toBase64(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBase64")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toBase64(src: String, urlsafe: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBase64")(src.asInstanceOf[js.Any], urlsafe.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  /**
+    * converts a Base64 string to a Uint8Array.
+    */
+  inline def toUint8Array(a: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toUint8Array")(a.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  
+  /**
+    * @deprecated should have been internal use only.
+    * @param {string} src UTF-8 string
+    * @returns {string} UTF-16 string
+    */
+  inline def utob(u: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("utob")(u.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSImport("js-base64", "version")
   @js.native
-  val atob: js.Function1[/* base64 */ String, String] = js.native
-  
-  @JSImport("js-base64", "btoa")
-  @js.native
-  val btoa: js.Function1[/* s */ String, String] = js.native
-  
-  @JSImport("js-base64", "btou")
-  @js.native
-  val btou: js.Function1[/* s */ String, String] = js.native
-  
-  @JSImport("js-base64", "decode")
-  @js.native
-  val decode: js.Function1[/* base64 */ String, String] = js.native
-  
-  @JSImport("js-base64", "encode")
-  @js.native
-  val encode: js.Function2[/* s */ String, /* uriSafe */ js.UndefOr[Boolean], String] = js.native
-  
-  @JSImport("js-base64", "encodeURI")
-  @js.native
-  val encodeURI: js.Function1[/* s */ String, String] = js.native
-  
-  @JSImport("js-base64", "encodeURL")
-  @js.native
-  val encodeURL: /* import warning: importer.ImportType#apply Failed type conversion: js-base64.js-base64.Base64['encodeURI'] */ js.Any = js.native
-  
-  @JSImport("js-base64", "extendBuiltins")
-  @js.native
-  val extendBuiltins: js.Function0[Unit] = js.native
-  
-  @JSImport("js-base64", "extendString")
-  @js.native
-  val extendString: js.Function0[Unit] = js.native
-  
-  @JSImport("js-base64", "extendUint8Array")
-  @js.native
-  val extendUint8Array: js.Function0[Unit] = js.native
-  
-  @JSImport("js-base64", "fromBase64")
-  @js.native
-  val fromBase64: js.Function1[/* base64 */ String, String] = js.native
-  
-  @JSImport("js-base64", "fromUint8Array")
-  @js.native
-  val fromUint8Array: js.Function2[/* uint8Array */ Uint8Array, /* uriSafe */ js.UndefOr[Boolean], String] = js.native
-  
-  inline def noConflict(): typings.jsBase64.mod.Base64 = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.jsBase64.mod.Base64]
-  
-  @JSImport("js-base64", "toBase64")
-  @js.native
-  val toBase64: js.Function2[/* s */ String, /* uriSafe */ js.UndefOr[Boolean], String] = js.native
-  
-  @JSImport("js-base64", "toUint8Array")
-  @js.native
-  val toUint8Array: js.Function1[/* s */ String, Uint8Array] = js.native
-  
-  @JSImport("js-base64", "utob")
-  @js.native
-  val utob: js.Function1[/* s */ String, String] = js.native
-  
-  object global {
-    
-    @js.native
-    trait String extends StObject {
-      
-      def fromBase64(): java.lang.String = js.native
-      
-      def toBase64(): java.lang.String = js.native
-      def toBase64(uriSafe: Boolean): java.lang.String = js.native
-      
-      def toBase64URI(): java.lang.String = js.native
-      
-      def toBase64URL(): java.lang.String = js.native
-      
-      def toUint8Array(): Uint8Array = js.native
-    }
-    
-    @js.native
-    trait Uint8Array extends StObject {
-      
-      def toBase64(): java.lang.String = js.native
-      def toBase64(uriSafe: Boolean): java.lang.String = js.native
-      
-      def toBase64URI(): java.lang.String = js.native
-      
-      def toBase64URL(): java.lang.String = js.native
-    }
-  }
+  val version: /* "3.7.2" */ String = js.native
 }

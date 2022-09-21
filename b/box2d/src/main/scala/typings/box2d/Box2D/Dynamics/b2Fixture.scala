@@ -79,7 +79,7 @@ trait b2Fixture extends StObject {
     * Get the user data that was assigned in the fixture definition. Use this to store your application specific data.
     * @return User provided data.  Cast to your object type.
     **/
-  def GetUserData(): js.Any = js.native
+  def GetUserData(): Any = js.native
   
   /**
     * Is this fixture a sensor (non-solid)?
@@ -105,7 +105,7 @@ trait b2Fixture extends StObject {
     * Set the contact filtering data. This will not update contacts until the next time step when either parent body is active and awake.
     * @param filter The new filter data.
     **/
-  def SetFilterData(filter: js.Any): Unit = js.native
+  def SetFilterData(filter: Any): Unit = js.native
   
   /**
     * Set the coefficient of friction.
@@ -129,7 +129,7 @@ trait b2Fixture extends StObject {
     * Set the user data. Use this to store your application specific data.
     * @param data User provided data.
     **/
-  def SetUserData(data: js.Any): Unit = js.native
+  def SetUserData(data: Any): Unit = js.native
   
   /**
     * Test a point for containment in this fixture.

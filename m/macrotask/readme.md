@@ -10,10 +10,10 @@ A cross browser macrotask library
 | ------------------ | :-------------: |
 | Full name          | macrotask |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 544 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 58.666666666666664 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/calvinmetcalf/macrotask#readme)

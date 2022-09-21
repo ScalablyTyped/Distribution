@@ -27,10 +27,10 @@ object CaptureSnapshotResponse {
     
     inline def setDocuments(value: js.Array[DocumentSnapshot]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
-    inline def setDocumentsVarargs(value: DocumentSnapshot*): Self = StObject.set(x, "documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: DocumentSnapshot*): Self = StObject.set(x, "documents", js.Array(value*))
     
     inline def setStrings(value: js.Array[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
-    inline def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value :_*))
+    inline def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value*))
   }
 }

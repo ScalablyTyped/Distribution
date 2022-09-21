@@ -9,7 +9,7 @@ trait GetMLTransformResponse extends StObject {
   /**
     * The date and time when the transform was created.
     */
-  var CreatedOn: js.UndefOr[Timestamp] = js.undefined
+  var CreatedOn: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of the transform.
@@ -22,12 +22,12 @@ trait GetMLTransformResponse extends StObject {
   var EvaluationMetrics: js.UndefOr[typings.awsSdk.glueMod.EvaluationMetrics] = js.undefined
   
   /**
-    * This value determines which version of AWS Glue this machine learning transform is compatible with. Glue 1.0 is recommended for most customers. If the value is not set, the Glue compatibility defaults to Glue 0.9. For more information, see AWS Glue Versions in the developer guide.
+    * This value determines which version of Glue this machine learning transform is compatible with. Glue 1.0 is recommended for most customers. If the value is not set, the Glue compatibility defaults to Glue 0.9. For more information, see Glue Versions in the developer guide.
     */
   var GlueVersion: js.UndefOr[GlueVersionString] = js.undefined
   
   /**
-    * A list of AWS Glue table definitions used by the transform.
+    * A list of Glue table definitions used by the transform.
     */
   var InputRecordTables: js.UndefOr[GlueTables] = js.undefined
   
@@ -39,10 +39,10 @@ trait GetMLTransformResponse extends StObject {
   /**
     * The date and time when the transform was last modified.
     */
-  var LastModifiedOn: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedOn: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The number of AWS Glue data processing units (DPUs) that are allocated to task runs for this transform. You can allocate from 2 to 100 DPUs; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page.  When the WorkerType field is set to a value other than Standard, the MaxCapacity field is set automatically and becomes read-only.
+    * The number of Glue data processing units (DPUs) that are allocated to task runs for this transform. You can allocate from 2 to 100 DPUs; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the Glue pricing page.  When the WorkerType field is set to a value other than Standard, the MaxCapacity field is set automatically and becomes read-only.
     */
   var MaxCapacity: js.UndefOr[NullableDouble] = js.undefined
   
@@ -110,7 +110,7 @@ object GetMLTransformResponse {
   
   extension [Self <: GetMLTransformResponse](x: Self) {
     
-    inline def setCreatedOn(value: Timestamp): Self = StObject.set(x, "CreatedOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "CreatedOn", value.asInstanceOf[js.Any])
     
     inline def setCreatedOnUndefined: Self = StObject.set(x, "CreatedOn", js.undefined)
     
@@ -130,13 +130,13 @@ object GetMLTransformResponse {
     
     inline def setInputRecordTablesUndefined: Self = StObject.set(x, "InputRecordTables", js.undefined)
     
-    inline def setInputRecordTablesVarargs(value: GlueTable*): Self = StObject.set(x, "InputRecordTables", js.Array(value :_*))
+    inline def setInputRecordTablesVarargs(value: GlueTable*): Self = StObject.set(x, "InputRecordTables", js.Array(value*))
     
     inline def setLabelCount(value: LabelCount): Self = StObject.set(x, "LabelCount", value.asInstanceOf[js.Any])
     
     inline def setLabelCountUndefined: Self = StObject.set(x, "LabelCount", js.undefined)
     
-    inline def setLastModifiedOn(value: Timestamp): Self = StObject.set(x, "LastModifiedOn", value.asInstanceOf[js.Any])
+    inline def setLastModifiedOn(value: js.Date): Self = StObject.set(x, "LastModifiedOn", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedOnUndefined: Self = StObject.set(x, "LastModifiedOn", js.undefined)
     
@@ -168,7 +168,7 @@ object GetMLTransformResponse {
     
     inline def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
     
-    inline def setSchemaVarargs(value: SchemaColumn*): Self = StObject.set(x, "Schema", js.Array(value :_*))
+    inline def setSchemaVarargs(value: SchemaColumn*): Self = StObject.set(x, "Schema", js.Array(value*))
     
     inline def setStatus(value: TransformStatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

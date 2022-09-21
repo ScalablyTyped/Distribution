@@ -59,26 +59,26 @@ object Annotation {
     
     inline def setDatasources(value: js.Array[Double]): Self = StObject.set(x, "datasources", value.asInstanceOf[js.Any])
     
-    inline def setDatasourcesVarargs(value: Double*): Self = StObject.set(x, "datasources", js.Array(value :_*))
+    inline def setDatasourcesVarargs(value: Double*): Self = StObject.set(x, "datasources", js.Array(value*))
     
     inline def setDistance(value: js.Array[Double]): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    inline def setDistanceVarargs(value: Double*): Self = StObject.set(x, "distance", js.Array(value :_*))
+    inline def setDistanceVarargs(value: Double*): Self = StObject.set(x, "distance", js.Array(value*))
     
     inline def setDuration(value: js.Array[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setDurationVarargs(value: Double*): Self = StObject.set(x, "duration", js.Array(value :_*))
+    inline def setDurationVarargs(value: Double*): Self = StObject.set(x, "duration", js.Array(value*))
     
     inline def setNodes(value: js.Array[Double]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: Double*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Double*): Self = StObject.set(x, "nodes", js.Array(value*))
     
     inline def setSpeed(value: js.Array[Double]): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    inline def setSpeedVarargs(value: Double*): Self = StObject.set(x, "speed", js.Array(value :_*))
+    inline def setSpeedVarargs(value: Double*): Self = StObject.set(x, "speed", js.Array(value*))
     
     inline def setWeight(value: js.Array[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    inline def setWeightVarargs(value: Double*): Self = StObject.set(x, "weight", js.Array(value :_*))
+    inline def setWeightVarargs(value: Double*): Self = StObject.set(x, "weight", js.Array(value*))
   }
 }

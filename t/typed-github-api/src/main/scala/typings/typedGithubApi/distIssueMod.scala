@@ -19,7 +19,7 @@ object distIssueMod {
   
   @JSImport("typed-github-api/dist/issue", "IssueClass")
   @js.native
-  class IssueClass protected ()
+  open class IssueClass protected ()
     extends GitHubRef
        with Issue {
     def this(data: typings.typedGithubApi.issueMod.Issue, options: OptionsOrRef) = this()
@@ -69,9 +69,9 @@ object distIssueMod {
     /* CompleteClass */
     override val number: Double = js.native
     
-    /* private */ var repository: js.Any = js.native
+    /* private */ var repository: Any = js.native
     
-    /* private */ var repositoryUri: js.Any = js.native
+    /* private */ var repositoryUri: Any = js.native
     
     /* CompleteClass */
     var state: open | closed = js.native
@@ -88,7 +88,7 @@ object distIssueMod {
   
   @JSImport("typed-github-api/dist/issue", "IssueCommentClass")
   @js.native
-  class IssueCommentClass protected ()
+  open class IssueCommentClass protected ()
     extends GitHubRef
        with IssueComment {
     def this(data: typings.typedGithubApi.issueMod.IssueComment, options: OptionsOrRef) = this()

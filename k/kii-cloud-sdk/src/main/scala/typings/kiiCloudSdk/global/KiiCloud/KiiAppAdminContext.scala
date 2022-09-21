@@ -16,6 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.KiiAppAdminContext")
 @js.native
-class KiiAppAdminContext ()
+open class KiiAppAdminContext ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.KiiAppAdminContext

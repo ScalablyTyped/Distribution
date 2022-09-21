@@ -16,6 +16,7 @@ import typings.consul.mod.Agent.MembersOptions
 import typings.consul.mod.Agent.SelfOptions
 import typings.consul.mod.Agent.Service
 import typings.consul.mod.Agent.ServicesOptions
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,12 +29,12 @@ trait Agent extends StObject {
   /**
     * Returns the checks the local agent is managing
     */
-  def checks[TData](): Thenable[TData] = js.native
+  def checks[TData](): js.Promise[TData] = js.native
   /**
     * Returns the checks the local agent is managing
     */
   def checks[TData](callback: Callback[TData]): Unit = js.native
-  def checks[TData](opts: ChecksOptions): Thenable[TData] = js.native
+  def checks[TData](opts: ChecksOptions): js.Promise[TData] = js.native
   /**
     * Returns the checks the local agent is managing
     */
@@ -44,7 +45,7 @@ trait Agent extends StObject {
   /**
     * Force remove node
     */
-  def forceLeave[TData](node: String): Thenable[TData] = js.native
+  def forceLeave[TData](node: String): js.Promise[TData] = js.native
   /**
     * Force remove node
     */
@@ -52,7 +53,7 @@ trait Agent extends StObject {
   /**
     * Force remove node
     */
-  def forceLeave[TData](opts: ForceLeaveOptions): Thenable[TData] = js.native
+  def forceLeave[TData](opts: ForceLeaveOptions): js.Promise[TData] = js.native
   /**
     * Force remove node
     */
@@ -61,7 +62,7 @@ trait Agent extends StObject {
   /**
     * Trigger local agent to join a node
     */
-  def join[TData](address: String): Thenable[TData] = js.native
+  def join[TData](address: String): js.Promise[TData] = js.native
   /**
     * Trigger local agent to join a node
     */
@@ -69,7 +70,7 @@ trait Agent extends StObject {
   /**
     * Trigger local agent to join a node
     */
-  def join[TData](opts: JoinOptions): Thenable[TData] = js.native
+  def join[TData](opts: JoinOptions): js.Promise[TData] = js.native
   /**
     * Trigger local agent to join a node
     */
@@ -78,7 +79,7 @@ trait Agent extends StObject {
   /**
     * Manages node maintenance mode
     */
-  def maintenance[TData](enable: Boolean): Thenable[TData] = js.native
+  def maintenance[TData](enable: Boolean): js.Promise[TData] = js.native
   /**
     * Manages node maintenance mode
     */
@@ -86,7 +87,7 @@ trait Agent extends StObject {
   /**
     * Manages node maintenance mode
     */
-  def maintenance[TData](opts: MaintenanceOptions): Thenable[TData] = js.native
+  def maintenance[TData](opts: MaintenanceOptions): js.Promise[TData] = js.native
   /**
     * Manages node maintenance mode
     */
@@ -95,12 +96,12 @@ trait Agent extends StObject {
   /**
     * Returns the members as seen by the local consul agent
     */
-  def members[TData](): Thenable[TData] = js.native
+  def members[TData](): js.Promise[TData] = js.native
   /**
     * Returns the members as seen by the local consul agent
     */
   def members[TData](callback: Callback[TData]): Unit = js.native
-  def members[TData](opts: MembersOptions): Thenable[TData] = js.native
+  def members[TData](opts: MembersOptions): js.Promise[TData] = js.native
   /**
     * Returns the members as seen by the local consul agent
     */
@@ -109,12 +110,12 @@ trait Agent extends StObject {
   /**
     * Returns the local node configuration
     */
-  def self[TData](): Thenable[TData] = js.native
+  def self[TData](): js.Promise[TData] = js.native
   /**
     * Returns the local node configuration
     */
   def self[TData](callback: Callback[TData]): Unit = js.native
-  def self[TData](opts: SelfOptions): Thenable[TData] = js.native
+  def self[TData](opts: SelfOptions): js.Promise[TData] = js.native
   /**
     * Returns the local node configuration
     */
@@ -125,12 +126,12 @@ trait Agent extends StObject {
   /**
     * Returns the services local agent is managing
     */
-  def services[TData](): Thenable[TData] = js.native
+  def services[TData](): js.Promise[TData] = js.native
   /**
     * Returns the services local agent is managing
     */
   def services[TData](callback: Callback[TData]): Unit = js.native
-  def services[TData](opts: ServicesOptions): Thenable[TData] = js.native
+  def services[TData](opts: ServicesOptions): js.Promise[TData] = js.native
   /**
     * Returns the services local agent is managing
     */
@@ -146,7 +147,7 @@ object Agent {
     /**
       * Deregister a local check
       */
-    def deregister[TData](id: String): Thenable[TData] = js.native
+    def deregister[TData](id: String): js.Promise[TData] = js.native
     /**
       * Deregister a local check
       */
@@ -154,7 +155,7 @@ object Agent {
     /**
       * Deregister a local check
       */
-    def deregister[TData](opts: DeregisterOptions): Thenable[TData] = js.native
+    def deregister[TData](opts: DeregisterOptions): js.Promise[TData] = js.native
     /**
       * Deregister a local check
       */
@@ -163,7 +164,7 @@ object Agent {
     /**
       * Mark a local test as critical
       */
-    def fail[TData](id: String): Thenable[TData] = js.native
+    def fail[TData](id: String): js.Promise[TData] = js.native
     /**
       * Mark a local test as critical
       */
@@ -171,7 +172,7 @@ object Agent {
     /**
       * Mark a local test as critical
       */
-    def fail[TData](opts: FailOptions): Thenable[TData] = js.native
+    def fail[TData](opts: FailOptions): js.Promise[TData] = js.native
     /**
       * Mark a local test as critical
       */
@@ -180,12 +181,12 @@ object Agent {
     /**
       * Returns the checks the local agent is managing
       */
-    def list[TData](): Thenable[TData] = js.native
+    def list[TData](): js.Promise[TData] = js.native
     /**
       * Returns the checks the local agent is managing
       */
     def list[TData](callback: Callback[TData]): Unit = js.native
-    def list[TData](opts: ListOptions): Thenable[TData] = js.native
+    def list[TData](opts: ListOptions): js.Promise[TData] = js.native
     /**
       * Returns the checks the local agent is managing
       */
@@ -194,7 +195,7 @@ object Agent {
     /**
       * Mark a local test as passing
       */
-    def pass[TData](id: String): Thenable[TData] = js.native
+    def pass[TData](id: String): js.Promise[TData] = js.native
     /**
       * Mark a local test as passing
       */
@@ -202,7 +203,7 @@ object Agent {
     /**
       * Mark a local test as passing
       */
-    def pass[TData](opts: PassOptions): Thenable[TData] = js.native
+    def pass[TData](opts: PassOptions): js.Promise[TData] = js.native
     /**
       * Mark a local test as passing
       */
@@ -211,7 +212,7 @@ object Agent {
     /**
       * Registers a new local check
       */
-    def register[TData](opts: RegisterOptions): Thenable[TData] = js.native
+    def register[TData](opts: RegisterOptions): js.Promise[TData] = js.native
     /**
       * Registers a new local check
       */
@@ -220,7 +221,7 @@ object Agent {
     /**
       * Mark a local test as warning
       */
-    def warn[TData](id: String): Thenable[TData] = js.native
+    def warn[TData](id: String): js.Promise[TData] = js.native
     /**
       * Mark a local test as warning
       */
@@ -228,7 +229,7 @@ object Agent {
     /**
       * Mark a local test as warning
       */
-    def warn[TData](opts: WarnOptions): Thenable[TData] = js.native
+    def warn[TData](opts: WarnOptions): js.Promise[TData] = js.native
     /**
       * Mark a local test as warning
       */
@@ -491,7 +492,7 @@ object Agent {
     /**
       * Deregister a local service
       */
-    def deregister[TData](id: String): Thenable[TData] = js.native
+    def deregister[TData](id: String): js.Promise[TData] = js.native
     /**
       * Deregister a local service
       */
@@ -499,7 +500,7 @@ object Agent {
     /**
       * Deregister a local service
       */
-    def deregister[TData](opts: typings.consul.mod.Agent.Service.DeregisterOptions): Thenable[TData] = js.native
+    def deregister[TData](opts: typings.consul.mod.Agent.Service.DeregisterOptions): js.Promise[TData] = js.native
     /**
       * Deregister a local service
       */
@@ -508,12 +509,12 @@ object Agent {
     /**
       * Returns the services local agent is managing
       */
-    def list[TData](): Thenable[TData] = js.native
+    def list[TData](): js.Promise[TData] = js.native
     /**
       * Returns the services local agent is managing
       */
     def list[TData](callback: Callback[TData]): Unit = js.native
-    def list[TData](opts: typings.consul.mod.Agent.Service.ListOptions): Thenable[TData] = js.native
+    def list[TData](opts: typings.consul.mod.Agent.Service.ListOptions): js.Promise[TData] = js.native
     /**
       * Returns the services local agent is managing
       */
@@ -522,7 +523,7 @@ object Agent {
     /**
       * Manages node maintenance mode
       */
-    def maintenance[TData](opts: typings.consul.mod.Agent.Service.MaintenanceOptions): Thenable[TData] = js.native
+    def maintenance[TData](opts: typings.consul.mod.Agent.Service.MaintenanceOptions): js.Promise[TData] = js.native
     /**
       * Manages node maintenance mode
       */
@@ -531,7 +532,7 @@ object Agent {
     /**
       * Registers a new local service
       */
-    def register[TData](name: String): Thenable[TData] = js.native
+    def register[TData](name: String): js.Promise[TData] = js.native
     /**
       * Registers a new local service
       */
@@ -539,7 +540,7 @@ object Agent {
     /**
       * Registers a new local service
       */
-    def register[TData](opts: typings.consul.mod.Agent.Service.RegisterOptions): Thenable[TData] = js.native
+    def register[TData](opts: typings.consul.mod.Agent.Service.RegisterOptions): js.Promise[TData] = js.native
     /**
       * Registers a new local service
       */
@@ -658,6 +659,8 @@ object Agent {
       
       var id: js.UndefOr[String] = js.undefined
       
+      var meta: js.UndefOr[Record[String, String]] = js.undefined
+      
       var name: String
       
       var port: js.UndefOr[Double] = js.undefined
@@ -685,11 +688,15 @@ object Agent {
         
         inline def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
         
-        inline def setChecksVarargs(value: RegisterCheck*): Self = StObject.set(x, "checks", js.Array(value :_*))
+        inline def setChecksVarargs(value: RegisterCheck*): Self = StObject.set(x, "checks", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
         inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        
+        inline def setMeta(value: Record[String, String]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+        
+        inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -701,7 +708,7 @@ object Agent {
         
         inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
         
-        inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+        inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
       }
     }
   }

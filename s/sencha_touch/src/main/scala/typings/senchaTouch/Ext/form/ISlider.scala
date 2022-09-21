@@ -37,7 +37,7 @@ trait ISlider
   /** [Method] Convenience method
     * @returns Object
     */
-  var getValues: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getValues: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (Number) */
   var increment: js.UndefOr[Double] = js.undefined
@@ -87,15 +87,15 @@ trait ISlider
     * @param tabIndex Object The new value.
     */
   @JSName("setTabIndex")
-  var setTabIndex_ISlider: js.UndefOr[js.Function1[/* tabIndex */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setTabIndex_ISlider: js.UndefOr[js.Function1[/* tabIndex */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Convenience method
     * @param value Object
     */
-  var setValues: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setValues: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Number/Number[]) */
-  var values: js.UndefOr[js.Any] = js.undefined
+  var values: js.UndefOr[Any] = js.undefined
 }
 object ISlider {
   
@@ -126,7 +126,7 @@ object ISlider {
     
     inline def setGetReadOnlyUndefined: Self = StObject.set(x, "getReadOnly", js.undefined)
     
-    inline def setGetValues(value: () => js.Any): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+    inline def setGetValues(value: () => Any): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
     
     inline def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
     
@@ -170,15 +170,15 @@ object ISlider {
     
     inline def setSetReadOnlyUndefined: Self = StObject.set(x, "setReadOnly", js.undefined)
     
-    inline def setSetTabIndex(value: /* tabIndex */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTabIndex", js.Any.fromFunction1(value))
+    inline def setSetTabIndex(value: /* tabIndex */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTabIndex", js.Any.fromFunction1(value))
     
     inline def setSetTabIndexUndefined: Self = StObject.set(x, "setTabIndex", js.undefined)
     
-    inline def setSetValues(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
+    inline def setSetValues(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setValues", js.Any.fromFunction1(value))
     
     inline def setSetValuesUndefined: Self = StObject.set(x, "setValues", js.undefined)
     
-    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }

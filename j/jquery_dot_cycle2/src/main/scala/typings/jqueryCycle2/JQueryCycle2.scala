@@ -20,8 +20,8 @@ object JQueryCycle2 {
   @js.native
   trait API extends StObject {
     
-    def add(slides: js.Any): Unit = js.native
-    def add(slides: js.Any, prepend: Boolean): Unit = js.native
+    def add(slides: Any): Unit = js.native
+    def add(slides: Any, prepend: Boolean): Unit = js.native
     
     // string or array or JQuery
     def addInitialSlides(): Unit = js.native
@@ -29,9 +29,9 @@ object JQueryCycle2 {
     def advanceSlide(numberOfOpositions: Double): Boolean = js.native
     
     // always false
-    def buildPagerLink(slideOptionHash: Options, slide: js.Any): Unit = js.native
+    def buildPagerLink(slideOptionHash: Options, slide: Any): Unit = js.native
     
-    def buildSlideOpts(slide: js.Any): Options = js.native
+    def buildSlideOpts(slide: Any): Options = js.native
     
     def calcFirstSlide(): Unit = js.native
     
@@ -51,11 +51,11 @@ object JQueryCycle2 {
     
     def goto(index: Double): Unit = js.native
     
-    def initSlide(slideOptions: Options, slide: js.Any, suggestedZindex: Double): Unit = js.native
+    def initSlide(slideOptions: Options, slide: Any, suggestedZindex: Double): Unit = js.native
     
     def initSlideshow(): Unit = js.native
     
-    def log(args: js.Any*): Unit = js.native
+    def log(args: Any*): Unit = js.native
     
     def next(): Unit = js.native
     
@@ -87,7 +87,7 @@ object JQueryCycle2 {
     
     def tmpl(templateString: String, optionHash: Options, slideEl: Element): Unit = js.native
     
-    def trigger(eventName: String, args: js.Any*): Unit = js.native
+    def trigger(eventName: String, args: Any*): Unit = js.native
     
     def updateView(): Unit = js.native
   }
@@ -96,8 +96,8 @@ object JQueryCycle2 {
   trait Cycle2 extends StObject {
     
     def apply(): JQuery = js.native
-    def apply(methodNameDontCallMe: String, arg1DontCallMe: js.Any, arg2DontCallMe: js.Any): JQuery = js.native
-    def apply(methodName: add, newSlide: js.Any): JQuery = js.native
+    def apply(methodNameDontCallMe: String, arg1DontCallMe: Any, arg2DontCallMe: Any): JQuery = js.native
+    def apply(methodName: add, newSlide: Any): JQuery = js.native
     // string or JQuery
     def apply(methodName: destroy): JQuery = js.native
     def apply(methodName: goto, index: Double): JQuery = js.native
@@ -115,7 +115,7 @@ object JQueryCycle2 {
     
     var allowWrap: js.UndefOr[Boolean] = js.undefined
     
-    var autoHeight: js.UndefOr[js.Any] = js.undefined
+    var autoHeight: js.UndefOr[Any] = js.undefined
     
     // number or string
     var autoSelector: js.UndefOr[String] = js.undefined
@@ -136,7 +136,7 @@ object JQueryCycle2 {
     
     var hideNonActive: js.UndefOr[Boolean] = js.undefined
     
-    var loader: js.UndefOr[js.Any] = js.undefined
+    var loader: js.UndefOr[Any] = js.undefined
     
     // boolean or 'wait'
     var log: js.UndefOr[Boolean] = js.undefined
@@ -163,7 +163,7 @@ object JQueryCycle2 {
     
     var pagerTemplate: js.UndefOr[String] = js.undefined
     
-    var pauseOnHover: js.UndefOr[js.Any] = js.undefined
+    var pauseOnHover: js.UndefOr[Any] = js.undefined
     
     // boolean or string
     var paused: js.UndefOr[Boolean] = js.undefined
@@ -182,7 +182,7 @@ object JQueryCycle2 {
     
     var slideClass: js.UndefOr[String] = js.undefined
     
-    var slideCss: js.UndefOr[js.Any] = js.undefined
+    var slideCss: js.UndefOr[Any] = js.undefined
     
     var slides: js.UndefOr[String] = js.undefined
     
@@ -213,7 +213,7 @@ object JQueryCycle2 {
       
       inline def setAllowWrapUndefined: Self = StObject.set(x, "allowWrap", js.undefined)
       
-      inline def setAutoHeight(value: js.Any): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
+      inline def setAutoHeight(value: Any): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
       
       inline def setAutoHeightUndefined: Self = StObject.set(x, "autoHeight", js.undefined)
       
@@ -253,7 +253,7 @@ object JQueryCycle2 {
       
       inline def setHideNonActiveUndefined: Self = StObject.set(x, "hideNonActive", js.undefined)
       
-      inline def setLoader(value: js.Any): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+      inline def setLoader(value: Any): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
       inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
       
@@ -305,7 +305,7 @@ object JQueryCycle2 {
       
       inline def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
       
-      inline def setPauseOnHover(value: js.Any): Self = StObject.set(x, "pauseOnHover", value.asInstanceOf[js.Any])
+      inline def setPauseOnHover(value: Any): Self = StObject.set(x, "pauseOnHover", value.asInstanceOf[js.Any])
       
       inline def setPauseOnHoverUndefined: Self = StObject.set(x, "pauseOnHover", js.undefined)
       
@@ -341,7 +341,7 @@ object JQueryCycle2 {
       
       inline def setSlideClassUndefined: Self = StObject.set(x, "slideClass", js.undefined)
       
-      inline def setSlideCss(value: js.Any): Self = StObject.set(x, "slideCss", value.asInstanceOf[js.Any])
+      inline def setSlideCss(value: Any): Self = StObject.set(x, "slideCss", value.asInstanceOf[js.Any])
       
       inline def setSlideCssUndefined: Self = StObject.set(x, "slideCss", js.undefined)
       

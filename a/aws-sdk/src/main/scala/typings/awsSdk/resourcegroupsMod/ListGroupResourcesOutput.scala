@@ -17,9 +17,14 @@ trait ListGroupResourcesOutput extends StObject {
   var QueryErrors: js.UndefOr[QueryErrorList] = js.undefined
   
   /**
-    * The ARNs and resource types of resources that are members of the group that you specified.
+    *    Deprecated - don't use this parameter. Use the Resources response field instead.   
     */
   var ResourceIdentifiers: js.UndefOr[ResourceIdentifierList] = js.undefined
+  
+  /**
+    * An array of resources from which you can determine each resource's identity, type, and group membership status.
+    */
+  var Resources: js.UndefOr[ListGroupResourcesItemList] = js.undefined
 }
 object ListGroupResourcesOutput {
   
@@ -38,12 +43,18 @@ object ListGroupResourcesOutput {
     
     inline def setQueryErrorsUndefined: Self = StObject.set(x, "QueryErrors", js.undefined)
     
-    inline def setQueryErrorsVarargs(value: QueryError*): Self = StObject.set(x, "QueryErrors", js.Array(value :_*))
+    inline def setQueryErrorsVarargs(value: QueryError*): Self = StObject.set(x, "QueryErrors", js.Array(value*))
     
     inline def setResourceIdentifiers(value: ResourceIdentifierList): Self = StObject.set(x, "ResourceIdentifiers", value.asInstanceOf[js.Any])
     
     inline def setResourceIdentifiersUndefined: Self = StObject.set(x, "ResourceIdentifiers", js.undefined)
     
-    inline def setResourceIdentifiersVarargs(value: ResourceIdentifier*): Self = StObject.set(x, "ResourceIdentifiers", js.Array(value :_*))
+    inline def setResourceIdentifiersVarargs(value: ResourceIdentifier*): Self = StObject.set(x, "ResourceIdentifiers", js.Array(value*))
+    
+    inline def setResources(value: ListGroupResourcesItemList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
+    
+    inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
+    
+    inline def setResourcesVarargs(value: ListGroupResourcesItem*): Self = StObject.set(x, "Resources", js.Array(value*))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AccounttaxListResponse extends StObject {
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#accounttaxListResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#accounttaxListResponse`". */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The token for the retrieval of the next page of account tax settings. */
@@ -35,6 +35,6 @@ object AccounttaxListResponse {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: AccountTax*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: AccountTax*): Self = StObject.set(x, "resources", js.Array(value*))
   }
 }

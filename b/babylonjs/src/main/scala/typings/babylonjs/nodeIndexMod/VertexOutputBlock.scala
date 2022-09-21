@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/Node/index", "VertexOutputBlock")
 @js.native
-class VertexOutputBlock protected ()
+open class VertexOutputBlock protected ()
   extends typings.babylonjs.blocksIndexMod.VertexOutputBlock {
   /**
     * Creates a new VertexOutputBlock

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServicePlanInfo extends StObject {
   
   /**
-    * The object the service plan can be assigned to. Possible values:'User' - service plan can be assigned to individual
-    * users.'Company' - service plan can be assigned to the entire tenant.
+    * The object the service plan can be assigned to. The possible values are:User - service plan can be assigned to
+    * individual users.Company - service plan can be assigned to the entire tenant.
     */
   var appliesTo: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * The provisioning status of the service plan. Possible values:'Success' - Service is fully provisioned.'Disabled' -
-    * Service has been disabled.'PendingInput' - Service is not yet provisioned; awaiting service
-    * confirmation.'PendingActivation' - Service is provisioned but requires explicit activation by administrator (for
-    * example, Intune_O365 service plan)'PendingProvisioning' - Microsoft has added a new service to the product SKU and it
-    * has not been activated in the tenant, yet.
+    * The provisioning status of the service plan. The possible values are:Success - Service is fully provisioned.Disabled -
+    * Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput
+    * - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires
+    * explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a
+    * new service to the product SKU and it has not been activated in the tenant, yet.
     */
   var provisioningStatus: js.UndefOr[NullableOption[String]] = js.undefined
   

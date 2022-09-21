@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetTrafficPolicyInstanceCountResponse extends StObject {
   
   /**
-    * The number of traffic policy instances that are associated with the current AWS account.
+    * The number of traffic policy instances that are associated with the current Amazon Web Services account.
     */
   var TrafficPolicyInstanceCount: typings.awsSdk.route53Mod.TrafficPolicyInstanceCount
 }

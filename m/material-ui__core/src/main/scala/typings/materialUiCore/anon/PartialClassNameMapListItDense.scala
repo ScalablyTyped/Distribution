@@ -4,20 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/ListItemText/ListItemText.ListItemTextClassKey>> */
+/* Inlined std.Partial<@material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/ListItemText/ListItemText.ListItemTextClassKey>> */
 trait PartialClassNameMapListItDense extends StObject {
   
   var dense: js.UndefOr[String] = js.undefined
   
   var inset: js.UndefOr[String] = js.undefined
   
+  var multiline: js.UndefOr[String] = js.undefined
+  
   var primary: js.UndefOr[String] = js.undefined
   
   var root: js.UndefOr[String] = js.undefined
   
   var secondary: js.UndefOr[String] = js.undefined
-  
-  var textDense: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapListItDense {
   
@@ -36,6 +36,10 @@ object PartialClassNameMapListItDense {
     
     inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
+    inline def setMultiline(value: String): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+    
+    inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+    
     inline def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
     inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
@@ -47,9 +51,5 @@ object PartialClassNameMapListItDense {
     inline def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
     inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
-    
-    inline def setTextDense(value: String): Self = StObject.set(x, "textDense", value.asInstanceOf[js.Any])
-    
-    inline def setTextDenseUndefined: Self = StObject.set(x, "textDense", js.undefined)
   }
 }

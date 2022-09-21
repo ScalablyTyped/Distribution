@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("rabbitmq-schema", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with RabbitMQSchema {
     def this(schema: js.Array[Topology]) = this()
@@ -95,7 +95,7 @@ object mod {
       
       inline def setBindings(value: js.Array[DirectBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
-      inline def setBindingsVarargs(value: DirectBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+      inline def setBindingsVarargs(value: DirectBinding*): Self = StObject.set(x, "bindings", js.Array(value*))
       
       inline def setType(value: direct): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -123,7 +123,7 @@ object mod {
       
       inline def setBindings(value: js.Array[Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
-      inline def setBindingsVarargs(value: Binding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+      inline def setBindingsVarargs(value: Binding*): Self = StObject.set(x, "bindings", js.Array(value*))
       
       inline def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
       
@@ -240,7 +240,7 @@ object mod {
       
       inline def setBindings(value: js.Array[TopicBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
-      inline def setBindingsVarargs(value: TopicBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+      inline def setBindingsVarargs(value: TopicBinding*): Self = StObject.set(x, "bindings", js.Array(value*))
       
       inline def setType(value: topic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "Material")
 @js.native
-class Material ()
-  extends typings.three.materialsMod.Material
+open class Material ()
+  extends typings.three.threeMod.Material

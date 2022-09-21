@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object rgbMod {
   
-  @JSImport("konva/types/filters/RGB", "RGB")
+  @JSImport("konva/lib/filters/RGB", "RGB")
   @js.native
   val RGB: Filter = js.native
 }

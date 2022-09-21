@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-isomorphic-layout-effect
 
-Typings are for version 1.1.0
+Typings are for version 1.1.2
 
 ## Library description:
 A React helper hook for scheduling a layout effect with a fallback to a regular effect for environments where layout effects should not be used (such as server-side rendering).
@@ -10,15 +10,12 @@ A React helper hook for scheduling a layout effect with a fallback to a regular 
 | ------------------ | :-------------: |
 | Full name          | use-isomorphic-layout-effect |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 15405076 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5173398E7 |
+| # stars            | 17.0 |
 
 ## Links
-- [Homepage](https://github.com/Andarist/use-isomorphic-layout-effect#readme)
-- [Bugs](https://github.com/Andarist/use-isomorphic-layout-effect/issues)
-- [Repository](https://github.com/Andarist/use-isomorphic-layout-effect)
 - [Npm](https://www.npmjs.com/package/use-isomorphic-layout-effect)
     
 

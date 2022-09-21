@@ -1,48 +1,189 @@
 package typings.firebaseFunctions
 
-import typings.firebaseFunctions.anon.Call
-import typings.firebaseFunctionsTypes.mod.FirebaseFunctions
+import typings.firebaseApp.mod.FirebaseApp
+import typings.firebaseFunctions.firebaseFunctionsStrings.functionsSlash$LeftcurlybracketFunctionsErrorCodeCoreRightcurlybracket
+import typings.firebaseUtil.mod.FirebaseError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  trait FirebaseApp extends StObject {
+  @JSImport("@firebase/functions", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def connectFunctionsEmulator(functionsInstance: Functions, host: String, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectFunctionsEmulator")(functionsInstance.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def getFunctions(): Functions = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctions")().asInstanceOf[Functions]
+  inline def getFunctions(app: Unit, regionOrCustomDomain: String): Functions = (^.asInstanceOf[js.Dynamic].applyDynamic("getFunctions")(app.asInstanceOf[js.Any], regionOrCustomDomain.asInstanceOf[js.Any])).asInstanceOf[Functions]
+  inline def getFunctions(app: FirebaseApp): Functions = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctions")(app.asInstanceOf[js.Any]).asInstanceOf[Functions]
+  inline def getFunctions(app: FirebaseApp, regionOrCustomDomain: String): Functions = (^.asInstanceOf[js.Dynamic].applyDynamic("getFunctions")(app.asInstanceOf[js.Any], regionOrCustomDomain.asInstanceOf[js.Any])).asInstanceOf[Functions]
+  
+  inline def httpsCallable[RequestData, ResponseData](functionsInstance: Functions, name: String): HttpsCallable_[RequestData, ResponseData] = (^.asInstanceOf[js.Dynamic].applyDynamic("httpsCallable")(functionsInstance.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HttpsCallable_[RequestData, ResponseData]]
+  inline def httpsCallable[RequestData, ResponseData](functionsInstance: Functions, name: String, options: HttpsCallableOptions): HttpsCallable_[RequestData, ResponseData] = (^.asInstanceOf[js.Dynamic].applyDynamic("httpsCallable")(functionsInstance.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HttpsCallable_[RequestData, ResponseData]]
+  
+  inline def httpsCallableFromURL[RequestData, ResponseData](functionsInstance: Functions, url: String): HttpsCallable_[RequestData, ResponseData] = (^.asInstanceOf[js.Dynamic].applyDynamic("httpsCallableFromURL")(functionsInstance.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[HttpsCallable_[RequestData, ResponseData]]
+  inline def httpsCallableFromURL[RequestData, ResponseData](functionsInstance: Functions, url: String, options: HttpsCallableOptions): HttpsCallable_[RequestData, ResponseData] = (^.asInstanceOf[js.Dynamic].applyDynamic("httpsCallableFromURL")(functionsInstance.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HttpsCallable_[RequestData, ResponseData]]
+  
+  trait Functions extends StObject {
     
-    var functions: js.UndefOr[js.Function1[/* regionOrCustomDomain */ js.UndefOr[String], FirebaseFunctions]] = js.undefined
+    /**
+      * The {@link @firebase/app#FirebaseApp} this `Functions` instance is associated with.
+      */
+    var app: FirebaseApp
+    
+    /**
+      * A custom domain hosting the callable Cloud Functions.
+      * ex: https://mydomain.com
+      */
+    var customDomain: String | Null
+    
+    /**
+      * The region the callable Cloud Functions are located in.
+      * Default is `us-central-1`.
+      */
+    var region: String
   }
-  object FirebaseApp {
+  object Functions {
     
-    inline def apply(): FirebaseApp = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FirebaseApp]
+    inline def apply(app: FirebaseApp, region: String): Functions = {
+      val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], customDomain = null)
+      __obj.asInstanceOf[Functions]
     }
     
-    extension [Self <: FirebaseApp](x: Self) {
+    extension [Self <: Functions](x: Self) {
       
-      inline def setFunctions(value: /* regionOrCustomDomain */ js.UndefOr[String] => FirebaseFunctions): Self = StObject.set(x, "functions", js.Any.fromFunction1(value))
+      inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+      inline def setCustomDomain(value: String): Self = StObject.set(x, "customDomain", value.asInstanceOf[js.Any])
+      
+      inline def setCustomDomainNull: Self = StObject.set(x, "customDomain", null)
+      
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     }
   }
   
-  trait FirebaseNamespace extends StObject {
+  @js.native
+  trait FunctionsError extends FirebaseError {
     
-    var functions: js.UndefOr[Call] = js.undefined
+    /**
+      * A standard error code that will be returned to the client. This also
+      * determines the HTTP status code of the response, as defined in code.proto.
+      */
+    @JSName("code")
+    val code_FunctionsError: FunctionsErrorCode = js.native
+    
+    /**
+      * Extra data to be converted to JSON and included in the error response.
+      */
+    val details: js.UndefOr[Any] = js.native
   }
-  object FirebaseNamespace {
+  
+  type FunctionsErrorCode = functionsSlash$LeftcurlybracketFunctionsErrorCodeCoreRightcurlybracket
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.firebaseFunctions.firebaseFunctionsStrings.ok
+    - typings.firebaseFunctions.firebaseFunctionsStrings.cancelled
+    - typings.firebaseFunctions.firebaseFunctionsStrings.unknown
+    - typings.firebaseFunctions.firebaseFunctionsStrings.`invalid-argument`
+    - typings.firebaseFunctions.firebaseFunctionsStrings.`deadline-exceeded`
+    - typings.firebaseFunctions.firebaseFunctionsStrings.`not-found`
+    - typings.firebaseFunctions.firebaseFunctionsStrings.`already-exists`
+    - typings.firebaseFunctions.firebaseFunctionsStrings.`permission-denied`
+    - typings.firebaseFunctions.firebaseFunctionsStrings.`resource-exhausted`
+    - typings.firebaseFunctions.firebaseFunctionsStrings.`failed-precondition`
+    - typings.firebaseFunctions.firebaseFunctionsStrings.aborted
+    - typings.firebaseFunctions.firebaseFunctionsStrings.`out-of-range`
+    - typings.firebaseFunctions.firebaseFunctionsStrings.unimplemented
+    - typings.firebaseFunctions.firebaseFunctionsStrings.internal
+    - typings.firebaseFunctions.firebaseFunctionsStrings.unavailable
+    - typings.firebaseFunctions.firebaseFunctionsStrings.`data-loss`
+    - typings.firebaseFunctions.firebaseFunctionsStrings.unauthenticated
+  */
+  trait FunctionsErrorCodeCore extends StObject
+  object FunctionsErrorCodeCore {
     
-    inline def apply(): FirebaseNamespace = {
+    inline def aborted: typings.firebaseFunctions.firebaseFunctionsStrings.aborted = "aborted".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.aborted]
+    
+    inline def `already-exists`: typings.firebaseFunctions.firebaseFunctionsStrings.`already-exists` = "already-exists".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.`already-exists`]
+    
+    inline def cancelled: typings.firebaseFunctions.firebaseFunctionsStrings.cancelled = "cancelled".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.cancelled]
+    
+    inline def `data-loss`: typings.firebaseFunctions.firebaseFunctionsStrings.`data-loss` = "data-loss".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.`data-loss`]
+    
+    inline def `deadline-exceeded`: typings.firebaseFunctions.firebaseFunctionsStrings.`deadline-exceeded` = "deadline-exceeded".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.`deadline-exceeded`]
+    
+    inline def `failed-precondition`: typings.firebaseFunctions.firebaseFunctionsStrings.`failed-precondition` = "failed-precondition".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.`failed-precondition`]
+    
+    inline def internal: typings.firebaseFunctions.firebaseFunctionsStrings.internal = "internal".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.internal]
+    
+    inline def `invalid-argument`: typings.firebaseFunctions.firebaseFunctionsStrings.`invalid-argument` = "invalid-argument".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.`invalid-argument`]
+    
+    inline def `not-found`: typings.firebaseFunctions.firebaseFunctionsStrings.`not-found` = "not-found".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.`not-found`]
+    
+    inline def ok: typings.firebaseFunctions.firebaseFunctionsStrings.ok = "ok".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.ok]
+    
+    inline def `out-of-range`: typings.firebaseFunctions.firebaseFunctionsStrings.`out-of-range` = "out-of-range".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.`out-of-range`]
+    
+    inline def `permission-denied`: typings.firebaseFunctions.firebaseFunctionsStrings.`permission-denied` = "permission-denied".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.`permission-denied`]
+    
+    inline def `resource-exhausted`: typings.firebaseFunctions.firebaseFunctionsStrings.`resource-exhausted` = "resource-exhausted".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.`resource-exhausted`]
+    
+    inline def unauthenticated: typings.firebaseFunctions.firebaseFunctionsStrings.unauthenticated = "unauthenticated".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.unauthenticated]
+    
+    inline def unavailable: typings.firebaseFunctions.firebaseFunctionsStrings.unavailable = "unavailable".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.unavailable]
+    
+    inline def unimplemented: typings.firebaseFunctions.firebaseFunctionsStrings.unimplemented = "unimplemented".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.unimplemented]
+    
+    inline def unknown: typings.firebaseFunctions.firebaseFunctionsStrings.unknown = "unknown".asInstanceOf[typings.firebaseFunctions.firebaseFunctionsStrings.unknown]
+  }
+  
+  trait HttpsCallableOptions extends StObject {
+    
+    /**
+      * Time in milliseconds after which to cancel if there is no response.
+      * Default is 70000.
+      */
+    var timeout: js.UndefOr[Double] = js.undefined
+  }
+  object HttpsCallableOptions {
+    
+    inline def apply(): HttpsCallableOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FirebaseNamespace]
+      __obj.asInstanceOf[HttpsCallableOptions]
     }
     
-    extension [Self <: FirebaseNamespace](x: Self) {
+    extension [Self <: HttpsCallableOptions](x: Self) {
       
-      inline def setFunctions(value: Call): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
+  
+  trait HttpsCallableResult[ResponseData] extends StObject {
+    
+    /**
+      * Data returned from callable function.
+      */
+    val data: ResponseData
+  }
+  object HttpsCallableResult {
+    
+    inline def apply[ResponseData](data: ResponseData): HttpsCallableResult[ResponseData] = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HttpsCallableResult[ResponseData]]
+    }
+    
+    extension [Self <: HttpsCallableResult[?], ResponseData](x: Self & HttpsCallableResult[ResponseData]) {
+      
+      inline def setData(value: ResponseData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type HttpsCallable_[RequestData, ResponseData] = js.Function1[
+    /* data */ js.UndefOr[RequestData | Null], 
+    js.Promise[HttpsCallableResult[ResponseData]]
+  ]
 }

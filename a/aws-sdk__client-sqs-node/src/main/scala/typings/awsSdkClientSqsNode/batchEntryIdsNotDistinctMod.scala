@@ -8,5 +8,5 @@ object batchEntryIdsNotDistinctMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/BatchEntryIdsNotDistinct", "BatchEntryIdsNotDistinct")
   @js.native
-  val BatchEntryIdsNotDistinct: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val BatchEntryIdsNotDistinct: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

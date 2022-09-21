@@ -1,24 +1,19 @@
 package typings.minappEnv.WXNS
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AnyObject = org.scalablytyped.runtime.StringDictionary[js.Any]
+type AnyObject = StringDictionary[Any]
 
-type downloadFile = js.Function1[
-/* param */ typings.minappEnv.WXNS.IDownloadFileParam, 
-typings.minappEnv.WXNS.IDownloadFileTask]
+type downloadFile = js.Function1[/* param */ IDownloadFileParam, IDownloadFileTask]
 
-type getFileInfo = js.Function1[/* param */ typings.minappEnv.WXNS.IGetFileInfoParam, scala.Unit]
+type getFileInfo = js.Function1[/* param */ IGetFileInfoParam, Unit]
 
-type operateWXData = js.Function1[/* param */ js.Any, scala.Unit]
+type operateWXData = js.Function1[/* param */ Any, Unit]
 
-type request = js.Function1[
-/* param */ typings.minappEnv.WXNS.IRequestParam, 
-typings.minappEnv.WXNS.IRequestTask]
+type request = js.Function1[/* param */ IRequestParam, IRequestTask]
 
-type uploadFile = js.Function1[
-/* param */ typings.minappEnv.WXNS.IUploadFileParam, 
-typings.minappEnv.WXNS.IUploadFileTask]
+type uploadFile = js.Function1[/* param */ IUploadFileParam, IUploadFileTask]

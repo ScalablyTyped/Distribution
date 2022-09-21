@@ -24,6 +24,6 @@ object DescribeCachediSCSIVolumesOutput {
     
     inline def setCachediSCSIVolumesUndefined: Self = StObject.set(x, "CachediSCSIVolumes", js.undefined)
     
-    inline def setCachediSCSIVolumesVarargs(value: CachediSCSIVolume*): Self = StObject.set(x, "CachediSCSIVolumes", js.Array(value :_*))
+    inline def setCachediSCSIVolumesVarargs(value: CachediSCSIVolume*): Self = StObject.set(x, "CachediSCSIVolumes", js.Array(value*))
   }
 }

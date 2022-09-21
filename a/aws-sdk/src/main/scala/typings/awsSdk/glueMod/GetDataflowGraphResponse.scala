@@ -29,12 +29,12 @@ object GetDataflowGraphResponse {
     
     inline def setDagEdgesUndefined: Self = StObject.set(x, "DagEdges", js.undefined)
     
-    inline def setDagEdgesVarargs(value: CodeGenEdge*): Self = StObject.set(x, "DagEdges", js.Array(value :_*))
+    inline def setDagEdgesVarargs(value: CodeGenEdge*): Self = StObject.set(x, "DagEdges", js.Array(value*))
     
     inline def setDagNodes(value: DagNodes): Self = StObject.set(x, "DagNodes", value.asInstanceOf[js.Any])
     
     inline def setDagNodesUndefined: Self = StObject.set(x, "DagNodes", js.undefined)
     
-    inline def setDagNodesVarargs(value: CodeGenNode*): Self = StObject.set(x, "DagNodes", js.Array(value :_*))
+    inline def setDagNodesVarargs(value: CodeGenNode*): Self = StObject.set(x, "DagNodes", js.Array(value*))
   }
 }

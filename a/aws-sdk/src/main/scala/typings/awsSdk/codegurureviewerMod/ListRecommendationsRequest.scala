@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListRecommendationsRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the  CodeReview  object. 
+    * The Amazon Resource Name (ARN) of the CodeReview object. 
     */
   var CodeReviewArn: Arn
   
   /**
-    *  The maximum number of results that are returned per call. The default is 100. 
+    * The maximum number of results that are returned per call. The default is 100.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.codegurureviewerMod.MaxResults] = js.undefined
+  var MaxResults: js.UndefOr[ListRecommendationsMaxResults] = js.undefined
   
   /**
-    *  Pagination token. 
+    * Pagination token.
     */
   var NextToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.NextToken] = js.undefined
 }
@@ -32,7 +32,7 @@ object ListRecommendationsRequest {
     
     inline def setCodeReviewArn(value: Arn): Self = StObject.set(x, "CodeReviewArn", value.asInstanceOf[js.Any])
     
-    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ListRecommendationsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     

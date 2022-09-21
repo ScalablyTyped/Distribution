@@ -26,6 +26,6 @@ object Todo {
     
     inline def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
     
-    inline def setListsVarargs(value: TodoTaskList*): Self = StObject.set(x, "lists", js.Array(value :_*))
+    inline def setListsVarargs(value: TodoTaskList*): Self = StObject.set(x, "lists", js.Array(value*))
   }
 }

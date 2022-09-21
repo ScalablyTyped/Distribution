@@ -11,17 +11,17 @@ object Parser {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getHeader(data: js.Any, headerStart: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getHeader")(data.asInstanceOf[js.Any], headerStart.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getHeader(data: Any, headerStart: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getHeader")(data.asInstanceOf[js.Any], headerStart.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def parseHeader(
     message: typings.sipJs.incomingRequestMessageMod.IncomingRequestMessage,
-    data: js.Any,
+    data: Any,
     headerStart: Double,
     headerEnd: Double
   ): Boolean | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHeader")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headerStart.asInstanceOf[js.Any], headerEnd.asInstanceOf[js.Any])).asInstanceOf[Boolean | Error]
   inline def parseHeader(
     message: typings.sipJs.incomingResponseMessageMod.IncomingResponseMessage,
-    data: js.Any,
+    data: Any,
     headerStart: Double,
     headerEnd: Double
   ): Boolean | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHeader")(message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], headerStart.asInstanceOf[js.Any], headerEnd.asInstanceOf[js.Any])).asInstanceOf[Boolean | Error]

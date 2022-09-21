@@ -1,0 +1,16 @@
+package typings.awsSdk.mod
+
+import typings.awsSdk.greengrassv2Mod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("aws-sdk", "GreengrassV2")
+@js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
+open class GreengrassV2 ()
+  extends typings.awsSdk.allMod.GreengrassV2 {
+  def this(options: ClientConfiguration) = this()
+}

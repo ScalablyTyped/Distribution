@@ -66,7 +66,7 @@ object mod {
       
       inline def setNodeArgsUndefined: Self = StObject.set(x, "nodeArgs", js.undefined)
       
-      inline def setNodeArgsVarargs(value: String*): Self = StObject.set(x, "nodeArgs", js.Array(value :_*))
+      inline def setNodeArgsVarargs(value: String*): Self = StObject.set(x, "nodeArgs", js.Array(value*))
       
       inline def setNodePath(value: String): Self = StObject.set(x, "nodePath", value.asInstanceOf[js.Any])
       
@@ -76,7 +76,7 @@ object mod {
       
       inline def setProgramArgsUndefined: Self = StObject.set(x, "programArgs", js.undefined)
       
-      inline def setProgramArgsVarargs(value: String*): Self = StObject.set(x, "programArgs", js.Array(value :_*))
+      inline def setProgramArgsVarargs(value: String*): Self = StObject.set(x, "programArgs", js.Array(value*))
       
       inline def setProgramPath(value: String): Self = StObject.set(x, "programPath", value.asInstanceOf[js.Any])
       

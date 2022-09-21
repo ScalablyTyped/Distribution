@@ -31,6 +31,6 @@ object WorkflowTypeInfos {
     
     inline def setTypeInfos(value: WorkflowTypeInfoList): Self = StObject.set(x, "typeInfos", value.asInstanceOf[js.Any])
     
-    inline def setTypeInfosVarargs(value: WorkflowTypeInfo*): Self = StObject.set(x, "typeInfos", js.Array(value :_*))
+    inline def setTypeInfosVarargs(value: WorkflowTypeInfo*): Self = StObject.set(x, "typeInfos", js.Array(value*))
   }
 }

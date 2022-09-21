@@ -14,7 +14,7 @@ import typings.libraCore.admissionControlPbMod.SubmitTransactionResponse
 import typings.libraCore.anon.PartialCallOptions
 import typings.libraCore.getWithProofPbMod.UpdateToLatestLedgerRequest
 import typings.libraCore.getWithProofPbMod.UpdateToLatestLedgerResponse
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ object admissionControlGrpcPbMod {
   
   @JSImport("libra-core/lib/@/generated/admission_control_grpc_pb", "AdmissionControlClient")
   @js.native
-  class AdmissionControlClient protected ()
+  open class AdmissionControlClient protected ()
     extends Client
        with IAdmissionControlClient {
     def this(address: String, credentials: ChannelCredentials) = this()

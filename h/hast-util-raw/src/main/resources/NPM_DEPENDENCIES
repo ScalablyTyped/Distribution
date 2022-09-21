@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "hast-util-raw" : "6.0.0"
+      "hast-util-raw" : "7.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "hast-util-raw" : "6.0.0"
+      "hast-util-raw" : "7.2.2"
     }
   ],
   "compile-devDependencies" : [

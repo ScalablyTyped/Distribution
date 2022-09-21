@@ -10,10 +10,10 @@ A JavaScript library for composing Ethereum provider objects using middleware mo
 | ------------------ | :-------------: |
 | Full name          | web3-provider-engine |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 221 |
-| # downloads        | 2182361 |
-| # stars            | 1 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1114923.3333333333 |
+| # stars            | 527.0 |
 
 ## Links
 - [Homepage](https://github.com/MetaMask/web3-provider-engine#readme)

@@ -29,7 +29,7 @@ object ListMultiplexesResponse {
     
     inline def setMultiplexesUndefined: Self = StObject.set(x, "Multiplexes", js.undefined)
     
-    inline def setMultiplexesVarargs(value: MultiplexSummary*): Self = StObject.set(x, "Multiplexes", js.Array(value :_*))
+    inline def setMultiplexesVarargs(value: MultiplexSummary*): Self = StObject.set(x, "Multiplexes", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

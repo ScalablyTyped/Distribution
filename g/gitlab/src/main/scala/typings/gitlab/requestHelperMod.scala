@@ -96,16 +96,16 @@ object requestHelperMod {
         /* service */ BaseService, 
         /* endpoint */ String, 
         /* options */ js.UndefOr[BaseRequestOptions], 
-        js.Any
+        Any
       ] = js.native
-    inline def stream(service: BaseService, endpoint: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def stream(service: BaseService, endpoint: String, options: BaseRequestOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def stream(service: BaseService, endpoint: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def stream(service: BaseService, endpoint: String, options: BaseRequestOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(service.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
     inline def stream_=(
       x: js.Function3[
           /* service */ BaseService, 
           /* endpoint */ String, 
           /* options */ js.UndefOr[BaseRequestOptions], 
-          js.Any
+          Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
   }
@@ -113,7 +113,7 @@ object requestHelperMod {
   trait BaseRequestOptions
     extends StObject
        with Sudo
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object BaseRequestOptions {
     
     inline def apply(): BaseRequestOptions = {
@@ -223,7 +223,7 @@ object requestHelperMod {
       
       inline def setData(value: js.Array[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setPagination(value: PaginationOptions): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     }

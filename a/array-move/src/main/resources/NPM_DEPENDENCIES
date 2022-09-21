@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "array-move" : "3.0.1"
+      "array-move" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "array-move" : "3.0.1"
+      "array-move" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

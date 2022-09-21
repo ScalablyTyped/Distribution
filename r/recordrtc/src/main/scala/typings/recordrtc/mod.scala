@@ -2,6 +2,8 @@ package typings.recordrtc
 
 import typings.recordrtc.anon.Height
 import typings.recordrtc.anon.Image
+import typings.recordrtc.anon.KinDiskStorageTypeBlob
+import typings.recordrtc.anon.OnRecordingStopped
 import typings.recordrtc.recordrtcNumbers.`1024`
 import typings.recordrtc.recordrtcNumbers.`16384`
 import typings.recordrtc.recordrtcNumbers.`1`
@@ -27,7 +29,6 @@ import typings.recordrtc.recordrtcStrings.videoSlashwebm
 import typings.recordrtc.recordrtcStrings.videoSlashwebmSemicoloncodecsEqualssignh264
 import typings.recordrtc.recordrtcStrings.videoSlashwebmSemicoloncodecsEqualssignvp8
 import typings.recordrtc.recordrtcStrings.videoSlashwebmSemicoloncodecsEqualssignvp9
-import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.File
 import typings.std.HTMLCanvasElement
@@ -43,7 +44,7 @@ object mod {
   
   @JSImport("recordrtc", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with RecordRTC {
     def this(stream: HTMLCanvasElement) = this()
@@ -61,49 +62,234 @@ object mod {
   
   @JSImport("recordrtc", "CanvasRecorder")
   @js.native
-  class CanvasRecorder protected () extends StObject {
-    def this(htmlElement: js.Any, config: js.Any) = this()
+  open class CanvasRecorder protected ()
+    extends StObject
+       with Recorder {
+    def this(htmlElement: MediaStream, config: Any) = this()
+  }
+  
+  /** DiskStorage is a standalone object used by RecordRTC to store recorded blobs in IndexedDB storage. */
+  /* static member */
+  object DiskStorage {
+    
+    @JSImport("recordrtc", "DiskStorage")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def Fetch(cb: js.Function2[/* dataURL */ String, /* type */ DiskStorageType, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Fetch")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def Store(data: KinDiskStorageTypeBlob): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Store")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @JSImport("recordrtc", "DiskStorage.dataStoreName")
+    @js.native
+    def dataStoreName: String = js.native
+    inline def dataStoreName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataStoreName")(x.asInstanceOf[js.Any])
+    
+    inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    
+    inline def onError(error: js.Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("recordrtc", "GifRecorder")
   @js.native
-  class GifRecorder protected () extends StObject {
-    def this(mediaStream: js.Any, config: js.Any) = this()
+  open class GifRecorder protected ()
+    extends StObject
+       with Recorder {
+    def this(mediaStream: MediaStream, config: Any) = this()
   }
   
   /* tslint:disable:no-unnecessary-class */
   @JSImport("recordrtc", "MediaStreamRecorder")
   @js.native
-  class MediaStreamRecorder protected () extends StObject {
-    def this(mediaStream: js.Any, config: js.Any) = this()
+  open class MediaStreamRecorder protected ()
+    extends StObject
+       with Recorder {
+    def this(mediaStream: MediaStream, config: Any) = this()
+  }
+  
+  @JSImport("recordrtc", "MultiStreamRecorder")
+  @js.native
+  /**
+    * MultiStreamRecorder can record multiple videos in single container.
+    * @summary Multi-videos recorder.
+    * @license {@link https://github.com/muaz-khan/RecordRTC/blob/master/LICENSE|MIT}
+    * @example
+    * var options = {
+    *     mimeType: 'video/webm'
+    * }
+    * var recorder = new MultiStreamRecorder(ArrayOfMediaStreams, options);
+    * recorder.record();
+    * recorder.stop(function(blob) {
+    *     video.src = URL.createObjectURL(blob);
+    *
+    *     // or
+    *     var blob = recorder.blob;
+    * });
+    * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
+    * @param mediaStreams - Array of MediaStreams.
+    * @param config - {disableLogs:true, frameInterval: 1, mimeType: "video/webm"}
+    */
+  open class MultiStreamRecorder ()
+    extends StObject
+       with Recorder {
+    def this(stream: js.Array[MediaStream]) = this()
+    def this(stream: js.Array[MediaStream], config: Any) = this()
+    def this(stream: Unit, config: Any) = this()
+    
+    /**
+      * Add extra media-streams to existing recordings.
+      * @param mediaStreams - Array of MediaStreams
+      * @example
+      * recorder.addStreams([newAudioStream, newVideoStream]);
+      */
+    def addStreams(streams: js.Array[MediaStream]): Unit = js.native
+    
+    /**
+      * This method resets currently recorded data.
+      * @example
+      * recorder.clearRecordedData();
+      */
+    def clearRecordedData(): Unit = js.native
+    
+    /**
+      * Returns MultiStreamsMixer
+      * @param mediaStreams - Array of MediaStreams
+      * @example
+      * let mixer = recorder.getMixer();
+      * mixer.appendStreams([newStream]);
+      */
+    def getMixer(): MultiStreamsMixer = js.native
+    
+    /**
+      * This method pauses the recording process.
+      * @example
+      * recorder.pause();
+      */
+    def pause(): Unit = js.native
+    
+    /**
+      * This method records all MediaStreams.
+      * @example
+      * recorder.record();
+      */
+    def record(): Unit = js.native
+    
+    /**
+      * Reset videos during live recording. Replace old videos e.g. replace cameras with full-screen.
+      * @param mediaStreams - Array of MediaStreams
+      * @example
+      * recorder.resetVideoStreams([newVideo1, newVideo2]);
+      */
+    def resetVideoStreams(streams: js.Array[MediaStream]): Unit = js.native
+    
+    /**
+      * This method resumes the recording process.
+      * @example
+      * recorder.resume();
+      */
+    def resume(): Unit = js.native
+    
+    /**
+      * This method stops recording MediaStream.
+      * @param callback - Callback function, that is used to pass recorded blob back to the callee.
+      * @example
+      * recorder.stop(function(blob) {
+      *     video.src = URL.createObjectURL(blob);
+      * });
+      */
+    def stop(callback: js.Function1[/* blob */ Blob, Unit]): Unit = js.native
+  }
+  
+  @JSImport("recordrtc", "MultiStreamsMixer")
+  @js.native
+  open class MultiStreamsMixer protected ()
+    extends StObject
+       with Recorder {
+    def this(arrayOfMediaStreams: js.Array[MediaStream], elementClass: String) = this()
+  }
+  
+  @JSImport("recordrtc", "RecordRTCPromisesHandler")
+  @js.native
+  open class RecordRTCPromisesHandler protected ()
+    extends StObject
+       with Recorder {
+    def this(stream: HTMLCanvasElement) = this()
+    def this(stream: HTMLElement) = this()
+    def this(stream: HTMLVideoElement) = this()
+    def this(stream: MediaStream) = this()
+    def this(stream: HTMLCanvasElement, options: Options) = this()
+    def this(stream: HTMLElement, options: Options) = this()
+    def this(stream: HTMLVideoElement, options: Options) = this()
+    def this(stream: MediaStream, options: Options) = this()
+    
+    var blob: Blob | Null = js.native
+    
+    def destroy(): js.Promise[Unit] = js.native
+    
+    def getBlob(): js.Promise[Blob] = js.native
+    
+    def getDataURL(): js.Promise[String] = js.native
+    
+    def getInternalRecorder(): js.Promise[Recorder] = js.native
+    
+    def getState(): js.Promise[State] = js.native
+    
+    def pauseRecording(): js.Promise[Unit] = js.native
+    
+    var recordRTC: RecordRTC = js.native
+    
+    def reset(): js.Promise[Unit] = js.native
+    
+    def resumeRecording(): js.Promise[Unit] = js.native
+    
+    def startRecording(): js.Promise[Unit] = js.native
+    
+    def stopRecording(): js.Promise[String] = js.native
+    
+    var version: String = js.native
   }
   
   @JSImport("recordrtc", "StereoAudioRecorder")
   @js.native
-  class StereoAudioRecorder protected () extends StObject {
-    def this(mediaStream: js.Any, config: js.Any) = this()
+  open class StereoAudioRecorder protected ()
+    extends StObject
+       with Recorder {
+    def this(mediaStream: MediaStream, config: Any) = this()
   }
   
   @JSImport("recordrtc", "WebAssemblyRecorder")
   @js.native
-  class WebAssemblyRecorder protected () extends StObject {
-    def this(stream: js.Any, config: js.Any) = this()
+  open class WebAssemblyRecorder protected ()
+    extends StObject
+       with Recorder {
+    def this(mediaStream: MediaStream, config: Any) = this()
   }
   
   @JSImport("recordrtc", "WhammyRecorder")
   @js.native
-  class WhammyRecorder protected () extends StObject {
-    def this(mediaStream: js.Any, config: js.Any) = this()
+  open class WhammyRecorder protected ()
+    extends StObject
+       with Recorder {
+    def this(mediaStream: MediaStream, config: Any) = this()
   }
   
   /** Given a number of bytes, this returns a human-readable string, e.g. 1.23 MB */
   /* static member */
   inline def bytesToSize(size: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToSize")(size.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  /* static member */
+  inline def getSeekableBlob(inputBlob: Blob, cb: js.Function1[/* outputBlob */ Blob, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSeekableBlob")(inputBlob.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /** invokes the browser's Save-As dialog */
   /* static member */
+  inline def invokeSaveAsDialog(file: Blob): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invokeSaveAsDialog")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def invokeSaveAsDialog(file: Blob, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeSaveAsDialog")(file.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def invokeSaveAsDialog(file: File): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invokeSaveAsDialog")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def invokeSaveAsDialog(file: File, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeSaveAsDialog")(file.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /** returns true if running in an Electron environment */
+  /* static member */
+  inline def isElectron(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElectron")().asInstanceOf[Boolean]
   
   //
   // static helpers
@@ -144,6 +330,21 @@ object mod {
       
       inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.recordrtc.recordrtcStrings.audioBlob
+    - typings.recordrtc.recordrtcStrings.videoBlob
+    - typings.recordrtc.recordrtcStrings.gifBlob
+  */
+  trait DiskStorageType extends StObject
+  object DiskStorageType {
+    
+    inline def audioBlob: typings.recordrtc.recordrtcStrings.audioBlob = "audioBlob".asInstanceOf[typings.recordrtc.recordrtcStrings.audioBlob]
+    
+    inline def gifBlob: typings.recordrtc.recordrtcStrings.gifBlob = "gifBlob".asInstanceOf[typings.recordrtc.recordrtcStrings.gifBlob]
+    
+    inline def videoBlob: typings.recordrtc.recordrtcStrings.videoBlob = "videoBlob".asInstanceOf[typings.recordrtc.recordrtcStrings.videoBlob]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -211,9 +412,7 @@ object mod {
     /** if you are recording multiple streams into single file, this helps you see what is being recorded */
     var previewStream: js.UndefOr[js.Function1[/* stream */ MediaStream, Unit]] = js.undefined
     
-    var recorderType: js.UndefOr[
-        MediaStreamRecorder | StereoAudioRecorder | WebAssemblyRecorder | CanvasRecorder | GifRecorder | WhammyRecorder
-      ] = js.undefined
+    var recorderType: js.UndefOr[Recorder] = js.undefined
     
     /** used by StereoAudioRecorder, the range is 22050 to 96000 (kHz). */
     var sampleRate: js.UndefOr[Double] = js.undefined
@@ -304,9 +503,7 @@ object mod {
       
       inline def setPreviewStreamUndefined: Self = StObject.set(x, "previewStream", js.undefined)
       
-      inline def setRecorderType(
-        value: MediaStreamRecorder | StereoAudioRecorder | WebAssemblyRecorder | CanvasRecorder | GifRecorder | WhammyRecorder
-      ): Self = StObject.set(x, "recorderType", value.asInstanceOf[js.Any])
+      inline def setRecorderType(value: Recorder): Self = StObject.set(x, "recorderType", value.asInstanceOf[js.Any])
       
       inline def setRecorderTypeUndefined: Self = StObject.set(x, "recorderType", js.undefined)
       
@@ -339,7 +536,7 @@ object mod {
     val blob: Blob = js.native
     
     /** array buffer; useful only for StereoAudioRecorder */
-    val buffer: ArrayBuffer = js.native
+    val buffer: js.typedarray.ArrayBuffer = js.native
     
     /** useful only for StereoAudioRecorder */
     val bufferSize: Double = js.native
@@ -356,20 +553,18 @@ object mod {
     /** returns Data-URL */
     def getDataURL(): String = js.native
     
+    /** get recorded blob from indexded-db storage */
     def getFromDisk(
       `type`: audio | video | gif,
       cb: js.Function2[/* dataURL */ String, /* type */ audio | video | gif, Unit]
     ): Unit = js.native
-    /** get recorded blob from indexded-db storage */
     def getFromDisk(`type`: all, cb: js.Function2[/* dataURL */ String, /* type */ audio | video | gif, Unit]): Unit = js.native
     
     /** returns internal recorder */
-    def getInternalRecorder(): Unit = js.native
-    
-    def getSeekableBlob(inputBlob: Blob, cb: js.Function1[/* outputBlob */ Blob, Unit]): Unit = js.native
+    def getInternalRecorder(): Recorder = js.native
     
     /** get recorder's state */
-    def getState(): Unit = js.native
+    def getState(): State = js.native
     
     def getTracks(stream: MediaStream, kind: MediaStreamKind): js.Array[MediaStreamTrack] = js.native
     
@@ -398,7 +593,9 @@ object mod {
     def setAdvertisementArray(webPImages: js.Array[Image]): Unit = js.native
     
     /** auto stop recording after specific duration */
-    def setRecordingDuration(): Unit = js.native
+    def setRecordingDuration(milliSeconds: Double): OnRecordingStopped = js.native
+    /** auto stop recording after specific duration */
+    def setRecordingDuration(milliSeconds: Double, onRecordingStopped: js.Function0[Unit]): Unit = js.native
     
     /** start the recording */
     def startRecording(): Unit = js.native
@@ -419,6 +616,19 @@ object mod {
     /** write recorded blob into indexed-db storage */
     def writeToDisk(options: Disk): Unit = js.native
   }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.recordrtc.mod.MediaStreamRecorder
+    - typings.recordrtc.mod.StereoAudioRecorder
+    - typings.recordrtc.mod.WebAssemblyRecorder
+    - typings.recordrtc.mod.CanvasRecorder
+    - typings.recordrtc.mod.GifRecorder
+    - typings.recordrtc.mod.WhammyRecorder
+    - typings.recordrtc.mod.MultiStreamsMixer
+    - typings.recordrtc.mod.MultiStreamRecorder
+    - typings.recordrtc.mod.RecordRTCPromisesHandler
+  */
+  trait Recorder extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.recordrtc.recordrtcStrings.inactive

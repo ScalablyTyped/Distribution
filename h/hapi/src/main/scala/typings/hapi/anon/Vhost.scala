@@ -31,6 +31,6 @@ object Vhost {
     
     inline def setVhostUndefined: Self = StObject.set(x, "vhost", js.undefined)
     
-    inline def setVhostVarargs(value: String*): Self = StObject.set(x, "vhost", js.Array(value :_*))
+    inline def setVhostVarargs(value: String*): Self = StObject.set(x, "vhost", js.Array(value*))
   }
 }

@@ -16,7 +16,7 @@ object updateEventSourceMappingCommandMod {
   
   @JSImport("@aws-sdk/client-lambda-node/commands/UpdateEventSourceMappingCommand", "UpdateEventSourceMappingCommand")
   @js.native
-  class UpdateEventSourceMappingCommand protected ()
+  open class UpdateEventSourceMappingCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object updateEventSourceMappingCommandMod {
     override val middlewareStack: MiddlewareStack[UpdateEventSourceMappingInput, UpdateEventSourceMappingOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: LambdaResolvedConfiguration
     ): Handler[UpdateEventSourceMappingInput, UpdateEventSourceMappingOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: LambdaResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[UpdateEventSourceMappingInput, UpdateEventSourceMappingOutput] = js.native
   }
 }

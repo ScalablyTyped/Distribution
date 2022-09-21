@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
   *
-  * Represents the the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 trait PresetCriteriaConditionalFormatLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait PresetCriteriaConditionalFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var format: js.UndefOr[ConditionalRangeFormatLoadOptions] = js.undefined
   
   /**
-    *
     * The rule of the conditional format.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var rule: js.UndefOr[Boolean] = js.undefined

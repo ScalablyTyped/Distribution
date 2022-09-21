@@ -100,7 +100,7 @@ trait IgTreeGridSelectionMethods extends StObject {
     *
     * If multiple selection is disabled the function will return null.
     */
-  def selectedCells(): js.Array[js.Any] = js.native
+  def selectedCells(): js.Array[Any] = js.native
   
   /**
     * Returns the currently selected row that has the format { element: , index: }, if any.
@@ -114,5 +114,5 @@ trait IgTreeGridSelectionMethods extends StObject {
     *
     * If multiple selection is disabled the function will return null.
     */
-  def selectedRows(): js.Array[js.Any] = js.native
+  def selectedRows(): js.Array[Any] = js.native
 }

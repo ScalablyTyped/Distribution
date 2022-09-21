@@ -23,14 +23,14 @@ object Begin {
     
     inline def setBegin(value: js.Array[Double]): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     
-    inline def setBeginVarargs(value: Double*): Self = StObject.set(x, "begin", js.Array(value :_*))
+    inline def setBeginVarargs(value: Double*): Self = StObject.set(x, "begin", js.Array(value*))
     
     inline def setEnd(value: js.Array[Double]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    inline def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value :_*))
+    inline def setEndVarargs(value: Double*): Self = StObject.set(x, "end", js.Array(value*))
     
     inline def setStrides(value: js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
     
-    inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+    inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value*))
   }
 }

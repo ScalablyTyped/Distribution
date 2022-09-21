@@ -11,6 +11,8 @@ object resultSetHeaderMod {
     
     var affectedRows: Double
     
+    var changedRows: js.UndefOr[Double] = js.undefined
+    
     var constructor: `2`
     
     var fieldCount: Double
@@ -41,6 +43,10 @@ object resultSetHeaderMod {
     extension [Self <: ResultSetHeader](x: Self) {
       
       inline def setAffectedRows(value: Double): Self = StObject.set(x, "affectedRows", value.asInstanceOf[js.Any])
+      
+      inline def setChangedRows(value: Double): Self = StObject.set(x, "changedRows", value.asInstanceOf[js.Any])
+      
+      inline def setChangedRowsUndefined: Self = StObject.set(x, "changedRows", js.undefined)
       
       inline def setConstructor(value: `2`): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
       

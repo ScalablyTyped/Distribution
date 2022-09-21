@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("GoToNextHeaderFooterCommand")
 @js.native
-class GoToNextHeaderFooterCommand ()
+open class GoToNextHeaderFooterCommand ()
   extends StObject
      with typings.devexpressWeb.GoToNextHeaderFooterCommand {
   

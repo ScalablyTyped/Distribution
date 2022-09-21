@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InlinePictureInfo")
 @js.native
-class InlinePictureInfo ()
+open class InlinePictureInfo ()
   extends StObject
      with typings.devexpressWeb.InlinePictureInfo {
   

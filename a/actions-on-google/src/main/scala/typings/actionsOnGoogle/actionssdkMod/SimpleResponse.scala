@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk", "SimpleResponse")
 @js.native
-class SimpleResponse protected ()
+open class SimpleResponse protected ()
   extends typings.actionsOnGoogle.conversationMod.SimpleResponse
      with _IncomingMessage {
   def this(options: String) = this()

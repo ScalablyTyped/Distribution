@@ -32,14 +32,14 @@ trait DescribeAlgorithmOutput extends StObject {
   var AlgorithmStatusDetails: typings.awsSdk.sagemakerMod.AlgorithmStatusDetails
   
   /**
-    * Whether the algorithm is certified to be listed in AWS Marketplace.
+    * Whether the algorithm is certified to be listed in Amazon Web Services Marketplace.
     */
   var CertifyForMarketplace: js.UndefOr[typings.awsSdk.sagemakerMod.CertifyForMarketplace] = js.undefined
   
   /**
     * A timestamp specifying when the algorithm was created.
     */
-  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime
+  var CreationTime: js.Date
   
   /**
     * Details about inference jobs that the algorithm runs.
@@ -57,7 +57,7 @@ trait DescribeAlgorithmOutput extends StObject {
   var TrainingSpecification: typings.awsSdk.sagemakerMod.TrainingSpecification
   
   /**
-    * Details about configurations for one or more training jobs that Amazon SageMaker runs to test the algorithm.
+    * Details about configurations for one or more training jobs that SageMaker runs to test the algorithm.
     */
   var ValidationSpecification: js.UndefOr[AlgorithmValidationSpecification] = js.undefined
 }
@@ -68,7 +68,7 @@ object DescribeAlgorithmOutput {
     AlgorithmName: EntityName,
     AlgorithmStatus: AlgorithmStatus,
     AlgorithmStatusDetails: AlgorithmStatusDetails,
-    CreationTime: CreationTime,
+    CreationTime: js.Date,
     TrainingSpecification: TrainingSpecification
   ): DescribeAlgorithmOutput = {
     val __obj = js.Dynamic.literal(AlgorithmArn = AlgorithmArn.asInstanceOf[js.Any], AlgorithmName = AlgorithmName.asInstanceOf[js.Any], AlgorithmStatus = AlgorithmStatus.asInstanceOf[js.Any], AlgorithmStatusDetails = AlgorithmStatusDetails.asInstanceOf[js.Any], CreationTime = CreationTime.asInstanceOf[js.Any], TrainingSpecification = TrainingSpecification.asInstanceOf[js.Any])
@@ -93,7 +93,7 @@ object DescribeAlgorithmOutput {
     
     inline def setCertifyForMarketplaceUndefined: Self = StObject.set(x, "CertifyForMarketplace", js.undefined)
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setInferenceSpecification(value: InferenceSpecification): Self = StObject.set(x, "InferenceSpecification", value.asInstanceOf[js.Any])
     

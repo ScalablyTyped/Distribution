@@ -84,7 +84,7 @@ object SwipeView {
     
     inline def setMasterPages(value: js.Array[HTMLElement]): Self = StObject.set(x, "masterPages", value.asInstanceOf[js.Any])
     
-    inline def setMasterPagesVarargs(value: HTMLElement*): Self = StObject.set(x, "masterPages", js.Array(value :_*))
+    inline def setMasterPagesVarargs(value: HTMLElement*): Self = StObject.set(x, "masterPages", js.Array(value*))
     
     inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     

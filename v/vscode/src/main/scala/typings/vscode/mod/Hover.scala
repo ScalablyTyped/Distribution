@@ -6,22 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "Hover")
 @js.native
-class Hover protected () extends StObject {
-  def this(contents: js.Array[MarkedString]) = this()
+open class Hover protected () extends StObject {
+  def this(contents: js.Array[MarkdownString | MarkedString]) = this()
   /**
     * Creates a new hover object.
     *
     * @param contents The contents of the hover.
     * @param range The range to which the hover applies.
     */
+  def this(contents: MarkdownString) = this()
   def this(contents: MarkedString) = this()
-  def this(contents: js.Array[MarkedString], range: Range) = this()
+  def this(contents: js.Array[MarkdownString | MarkedString], range: Range) = this()
+  def this(contents: MarkdownString, range: Range) = this()
   def this(contents: MarkedString, range: Range) = this()
   
   /**
     * The contents of this hover.
     */
-  var contents: js.Array[MarkedString] = js.native
+  var contents: js.Array[MarkdownString | MarkedString] = js.native
   
   /**
     * The range to which this hover applies. When missing, the

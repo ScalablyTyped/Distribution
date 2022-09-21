@@ -17,7 +17,7 @@ object modalNativeMod {
   
   @JSImport("antd-mobile-rn/lib/modal/Modal.native", JSImport.Default)
   @js.native
-  class default () extends AntmModal
+  open class default () extends AntmModal
   object default {
     
     @JSImport("antd-mobile-rn/lib/modal/Modal.native", JSImport.Default)
@@ -27,8 +27,8 @@ object modalNativeMod {
     /* static member */
     @JSImport("antd-mobile-rn/lib/modal/Modal.native", "default.alert")
     @js.native
-    def alert: js.Any = js.native
-    inline def alert_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alert")(x.asInstanceOf[js.Any])
+    def alert: Any = js.native
+    inline def alert_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alert")(x.asInstanceOf[js.Any])
     
     /* static member */
     object contextTypes {
@@ -101,25 +101,24 @@ object modalNativeMod {
     /* static member */
     @JSImport("antd-mobile-rn/lib/modal/Modal.native", "default.operation")
     @js.native
-    def operation: js.Any = js.native
-    inline def operation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operation")(x.asInstanceOf[js.Any])
+    def operation: Any = js.native
+    inline def operation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("operation")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("antd-mobile-rn/lib/modal/Modal.native", "default.prompt")
     @js.native
-    def prompt: js.Any = js.native
-    inline def prompt_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prompt")(x.asInstanceOf[js.Any])
+    def prompt: Any = js.native
+    inline def prompt_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prompt")(x.asInstanceOf[js.Any])
   }
   
   @js.native
-  trait AntmModal
-    extends Component[IModalNativeProps, js.Any, js.Any] {
+  trait AntmModal extends Component[IModalNativeProps, Any, Any] {
     
     def onFooterLayout(e: LayoutChangeEvent): Unit = js.native
     
     var root: View | Null = js.native
     
-    def saveRoot(root: js.Any): Unit = js.native
+    def saveRoot(root: Any): Unit = js.native
   }
   
   trait IModalNativeProps

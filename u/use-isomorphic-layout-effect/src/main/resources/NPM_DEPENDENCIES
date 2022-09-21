@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "use-isomorphic-layout-effect" : "1.1.0"
+      "use-isomorphic-layout-effect" : "1.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "use-isomorphic-layout-effect" : "1.1.0"
+      "use-isomorphic-layout-effect" : "1.1.2"
     }
   ],
   "compile-devDependencies" : [

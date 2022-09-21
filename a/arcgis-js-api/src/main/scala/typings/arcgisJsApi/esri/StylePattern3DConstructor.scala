@@ -17,5 +17,5 @@ trait StylePattern3DConstructor
 Instantiable0[StylePattern3D]
      with Instantiable1[/* properties */ StylePattern3DProperties, StylePattern3D] {
   
-  def fromJSON(json: js.Any): StylePattern3D = js.native
+  def fromJSON(json: Any): StylePattern3D = js.native
 }

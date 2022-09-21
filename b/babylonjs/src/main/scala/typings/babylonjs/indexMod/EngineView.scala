@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "EngineView")
 @js.native
-class EngineView ()
+open class EngineView ()
   extends typings.babylonjs.enginesIndexMod.EngineView

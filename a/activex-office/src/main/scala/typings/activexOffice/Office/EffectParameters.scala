@@ -10,7 +10,7 @@ trait EffectParameters extends StObject {
   def apply(Index: String): EffectParameter = js.native
   def apply(Index: Double): EffectParameter = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   

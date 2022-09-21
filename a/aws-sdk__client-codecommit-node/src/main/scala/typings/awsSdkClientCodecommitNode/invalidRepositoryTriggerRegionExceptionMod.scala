@@ -8,5 +8,5 @@ object invalidRepositoryTriggerRegionExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/InvalidRepositoryTriggerRegionException", "InvalidRepositoryTriggerRegionException")
   @js.native
-  val InvalidRepositoryTriggerRegionException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidRepositoryTriggerRegionException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

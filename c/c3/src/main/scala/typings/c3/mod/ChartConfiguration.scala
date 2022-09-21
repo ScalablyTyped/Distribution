@@ -34,7 +34,7 @@ trait ChartConfiguration extends StObject {
     * Note: When chart is not binded, c3 starts observing if chart.element is binded by MutationObserver. In this case, polyfill is required in IE9 and IE10 becuase they do not support
     * MutationObserver. On the other hand, if chart always will be binded, polyfill will not be required because MutationObserver will never be called.
     */
-  var bindto: js.UndefOr[String | HTMLElement | (Selection_[js.Any, js.Any, js.Any, js.Any]) | Null] = js.undefined
+  var bindto: js.UndefOr[String | HTMLElement | (Selection_[Any, Any, Any, Any]) | Null] = js.undefined
   
   var color: js.UndefOr[Pattern] = js.undefined
   
@@ -137,7 +137,7 @@ object ChartConfiguration {
     
     inline def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
     
-    inline def setBindto(value: String | HTMLElement | (Selection_[js.Any, js.Any, js.Any, js.Any])): Self = StObject.set(x, "bindto", value.asInstanceOf[js.Any])
+    inline def setBindto(value: String | HTMLElement | (Selection_[Any, Any, Any, Any])): Self = StObject.set(x, "bindto", value.asInstanceOf[js.Any])
     
     inline def setBindtoNull: Self = StObject.set(x, "bindto", null)
     
@@ -213,7 +213,7 @@ object ChartConfiguration {
     
     inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    inline def setRegionsVarargs(value: RegionOptions*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: RegionOptions*): Self = StObject.set(x, "regions", js.Array(value*))
     
     inline def setResize(value: Auto): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     

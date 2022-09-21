@@ -1,5 +1,12 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.ClassBreaksRendererProper
+import typings.arcgisJsApi.anon.FlowRendererPropertiestyp
+import typings.arcgisJsApi.anon.RasterColormapRendererPro
+import typings.arcgisJsApi.anon.RasterShadedReliefRendere
+import typings.arcgisJsApi.anon.RasterStretchRendererProp
+import typings.arcgisJsApi.anon.UniqueValueRendererProper
+import typings.arcgisJsApi.anon.VectorFieldRendererProper
 import typings.arcgisJsApi.arcgisJsApiStrings.all
 import typings.arcgisJsApi.arcgisJsApiStrings.any
 import typings.arcgisJsApi.arcgisJsApiStrings.bilinear
@@ -32,6 +39,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArcGISImageServiceProperties extends StObject {
   
   /**
+    * Defines a band combination using 0-based band indexes.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#bandIds)
+    */
+  var bandIds: js.UndefOr[js.Array[Double]] = js.undefined
+  
+  /**
     * Describes the layer's supported capabilities.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
@@ -47,6 +63,8 @@ trait ArcGISImageServiceProperties extends StObject {
   
   /**
     * Controls the tolerance of the lerc compression algorithm.
+    *
+    * @default 0.01
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#compressionTolerance)
     */
@@ -90,12 +108,16 @@ trait ArcGISImageServiceProperties extends StObject {
   /**
     * Indicates the maximum height of the image exported by the service.
     *
+    * @default 4100
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#imageMaxHeight)
     */
   var imageMaxHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the maximum width of the image exported by the service.
+    *
+    * @default 15000
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#imageMaxWidth)
     */
@@ -114,13 +136,6 @@ trait ArcGISImageServiceProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#mosaicRule)
     */
   var mosaicRule: js.UndefOr[MosaicRuleProperties] = js.undefined
-  
-  /**
-    * The multidimensional information associated with the layer if the layer's [hasMultidimensions](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#hasMultidimensions) property is `true`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#multidimensionalInfo)
-    */
-  var multidimensionalInfo: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The pixel value representing no available information.
@@ -158,19 +173,12 @@ trait ArcGISImageServiceProperties extends StObject {
   var pixelType: js.UndefOr[unknown | s8 | s16 | s32 | u8 | u16 | u32 | f32 | f64] = js.undefined
   
   /**
-    * Prefix used to define the fields from the raster attribute table.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterAttributeTableFieldPrefix)
-    */
-  var rasterAttributeTableFieldPrefix: js.UndefOr[String] = js.undefined
-  
-  /**
     * The renderer assigned to the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#renderer)
     */
   var renderer: js.UndefOr[
-    ClassBreaksRendererProperties | UniqueValueRendererProperties | RasterStretchRendererProperties | RasterShadedReliefRendererProperties | RasterColormapRendererProperties
+    ClassBreaksRendererProper | UniqueValueRendererProper | RasterStretchRendererProp | RasterShadedReliefRendere | RasterColormapRendererPro | VectorFieldRendererProper | FlowRendererPropertiestyp
   ] = js.undefined
   
   /**
@@ -185,7 +193,7 @@ trait ArcGISImageServiceProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.undefined
+  var sourceJSON: js.UndefOr[Any] = js.undefined
   
   /**
     * The URL to the REST endpoint of the layer.
@@ -202,6 +210,12 @@ object ArcGISImageServiceProperties {
   }
   
   extension [Self <: ArcGISImageServiceProperties](x: Self) {
+    
+    inline def setBandIds(value: js.Array[Double]): Self = StObject.set(x, "bandIds", value.asInstanceOf[js.Any])
+    
+    inline def setBandIdsUndefined: Self = StObject.set(x, "bandIds", js.undefined)
+    
+    inline def setBandIdsVarargs(value: Double*): Self = StObject.set(x, "bandIds", js.Array(value*))
     
     inline def setCapabilities(value: ArcGISImageServiceCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
@@ -227,7 +241,7 @@ object ArcGISImageServiceProperties {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setFormat(value: png | png8 | png24 | png32 | jpg | bmp | gif | jpgpng | lerc | tiff): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
@@ -253,10 +267,6 @@ object ArcGISImageServiceProperties {
     
     inline def setMosaicRuleUndefined: Self = StObject.set(x, "mosaicRule", js.undefined)
     
-    inline def setMultidimensionalInfo(value: js.Any): Self = StObject.set(x, "multidimensionalInfo", value.asInstanceOf[js.Any])
-    
-    inline def setMultidimensionalInfoUndefined: Self = StObject.set(x, "multidimensionalInfo", js.undefined)
-    
     inline def setNoData(value: Double | js.Array[Double]): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
     
     inline def setNoDataInterpretation(value: any | all): Self = StObject.set(x, "noDataInterpretation", value.asInstanceOf[js.Any])
@@ -265,13 +275,13 @@ object ArcGISImageServiceProperties {
     
     inline def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
     
-    inline def setNoDataVarargs(value: Double*): Self = StObject.set(x, "noData", js.Array(value :_*))
+    inline def setNoDataVarargs(value: Double*): Self = StObject.set(x, "noData", js.Array(value*))
     
     inline def setObjectIdField(value: String): Self = StObject.set(x, "objectIdField", value.asInstanceOf[js.Any])
     
     inline def setObjectIdFieldUndefined: Self = StObject.set(x, "objectIdField", js.undefined)
     
-    inline def setPixelFilter(value: /* pixelData */ PixelData => Unit): Self = StObject.set(x, "pixelFilter", js.Any.fromFunction1(value))
+    inline def setPixelFilter(value: /* pixelData */ PixelData => scala.Unit): Self = StObject.set(x, "pixelFilter", js.Any.fromFunction1(value))
     
     inline def setPixelFilterUndefined: Self = StObject.set(x, "pixelFilter", js.undefined)
     
@@ -279,12 +289,8 @@ object ArcGISImageServiceProperties {
     
     inline def setPixelTypeUndefined: Self = StObject.set(x, "pixelType", js.undefined)
     
-    inline def setRasterAttributeTableFieldPrefix(value: String): Self = StObject.set(x, "rasterAttributeTableFieldPrefix", value.asInstanceOf[js.Any])
-    
-    inline def setRasterAttributeTableFieldPrefixUndefined: Self = StObject.set(x, "rasterAttributeTableFieldPrefix", js.undefined)
-    
     inline def setRenderer(
-      value: ClassBreaksRendererProperties | UniqueValueRendererProperties | RasterStretchRendererProperties | RasterShadedReliefRendererProperties | RasterColormapRendererProperties
+      value: ClassBreaksRendererProper | UniqueValueRendererProper | RasterStretchRendererProp | RasterShadedReliefRendere | RasterColormapRendererPro | VectorFieldRendererProper | FlowRendererPropertiestyp
     ): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
     inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
@@ -293,7 +299,7 @@ object ArcGISImageServiceProperties {
     
     inline def setRenderingRuleUndefined: Self = StObject.set(x, "renderingRule", js.undefined)
     
-    inline def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    inline def setSourceJSON(value: Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
     inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     

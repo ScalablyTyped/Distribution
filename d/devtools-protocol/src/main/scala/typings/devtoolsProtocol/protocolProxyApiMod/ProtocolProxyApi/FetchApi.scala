@@ -4,6 +4,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.authRequired
 import typings.devtoolsProtocol.devtoolsProtocolStrings.requestPaused
 import typings.devtoolsProtocol.mod.Protocol.Fetch.AuthRequiredEvent
 import typings.devtoolsProtocol.mod.Protocol.Fetch.ContinueRequestRequest
+import typings.devtoolsProtocol.mod.Protocol.Fetch.ContinueResponseRequest
 import typings.devtoolsProtocol.mod.Protocol.Fetch.ContinueWithAuthRequest
 import typings.devtoolsProtocol.mod.Protocol.Fetch.EnableRequest
 import typings.devtoolsProtocol.mod.Protocol.Fetch.FailRequestRequest
@@ -24,6 +25,13 @@ trait FetchApi extends StObject {
     * Continues the request, optionally modifying some of its parameters.
     */
   def continueRequest(params: ContinueRequestRequest): js.Promise[Unit] = js.native
+  
+  /**
+    * Continues loading of the paused response, optionally modifying the
+    * response headers. If either responseCode or headers are modified, all of them
+    * must be present.
+    */
+  def continueResponse(params: ContinueResponseRequest): js.Promise[Unit] = js.native
   
   /**
     * Continues a request supplying authChallengeResponse following authRequired event.

@@ -27,7 +27,7 @@ object IFunctionDefLibrary {
     
     inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
-    inline def setFunctionVarargs(value: IFunctionDef*): Self = StObject.set(x, "function", js.Array(value :_*))
+    inline def setFunctionVarargs(value: IFunctionDef*): Self = StObject.set(x, "function", js.Array(value*))
     
     inline def setGradient(value: js.Array[IGradientDef]): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
@@ -35,6 +35,6 @@ object IFunctionDefLibrary {
     
     inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
     
-    inline def setGradientVarargs(value: IGradientDef*): Self = StObject.set(x, "gradient", js.Array(value :_*))
+    inline def setGradientVarargs(value: IGradientDef*): Self = StObject.set(x, "gradient", js.Array(value*))
   }
 }

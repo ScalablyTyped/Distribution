@@ -3,6 +3,7 @@ package typings.materialDataTable
 import typings.materialBase.foundationMod.MDCFoundation
 import typings.materialDataTable.adapterMod.MDCDataTableAdapter
 import typings.materialDataTable.anon.PartialMDCDataTableAdapte
+import typings.materialDataTable.typesMod.RowClickEventData
 import typings.materialDataTable.typesMod.SortActionEventData
 import typings.std.Element
 import typings.std.Event
@@ -14,7 +15,7 @@ object foundationMod {
   
   @JSImport("@material/data-table/foundation", "MDCDataTableFoundation")
   @js.native
-  class MDCDataTableFoundation () extends MDCFoundation[MDCDataTableAdapter] {
+  open class MDCDataTableFoundation () extends MDCFoundation[MDCDataTableAdapter] {
     def this(adapter: PartialMDCDataTableAdapte) = this()
     
     /**
@@ -48,6 +49,11 @@ object foundationMod {
     def handleRowCheckboxChange(event: Event): Unit = js.native
     
     /**
+      * Handles data table row click event.
+      */
+    def handleRowClick(hasRowIdRow: RowClickEventData): Unit = js.native
+    
+    /**
       * Handles sort action on sortable header cell.
       */
     def handleSortAction(eventData: SortActionEventData): Unit = js.native
@@ -58,16 +64,28 @@ object foundationMod {
     def hideProgress(): Unit = js.native
     
     /**
-      * Re-initializes header row checkbox and row checkboxes when selectable rows are added or removed from table.
-      * Use this if registering checkbox is synchronous.
+      * Re-initializes header row checkbox and row checkboxes when selectable rows
+      * are added or removed from table. Use this if registering checkbox is
+      * synchronous.
       */
     def layout(): Unit = js.native
     
     /**
-      * Re-initializes header row checkbox and row checkboxes when selectable rows are added or removed from table.
-      * Use this if registering checkbox is asynchronous.
+      * Re-initializes header row checkbox and row checkboxes when selectable rows
+      * are added or removed from table. Use this if registering checkbox is
+      * asynchronous.
       */
     def layoutAsync(): js.Promise[Unit] = js.native
+    
+    /**
+      * Sets the attributes of row element based on selection state.
+      */
+    /* private */ var selectRowAtIndex: Any = js.native
+    
+    /**
+      * Updates header row checkbox state based on number of rows selected.
+      */
+    /* private */ var setHeaderRowCheckboxState: Any = js.native
     
     /**
       * Sets selected row ids. Overwrites previously selected rows.

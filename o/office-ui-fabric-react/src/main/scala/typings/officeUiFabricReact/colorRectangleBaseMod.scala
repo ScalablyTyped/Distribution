@@ -23,28 +23,28 @@ object colorRectangleBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorRectangle/ColorRectangle.base", "ColorRectangleBase")
   @js.native
-  class ColorRectangleBase protected ()
-    extends Component[IColorRectangleProps, IColorRectangleState, js.Any]
+  open class ColorRectangleBase protected ()
+    extends Component[IColorRectangleProps, IColorRectangleState, Any]
        with IColorRectangle {
     def this(props: IColorRectangleProps) = this()
     
-    /* private */ var _descriptionId: js.Any = js.native
+    /* private */ var _descriptionId: Any = js.native
     
-    /* private */ var _disposables: js.Any = js.native
+    /* private */ var _disposables: Any = js.native
     
-    /* private */ var _disposeListeners: js.Any = js.native
+    /* private */ var _disposeListeners: Any = js.native
     
-    /* private */ var _isAdjustingSaturation: js.Any = js.native
+    /* private */ var _isAdjustingSaturation: Any = js.native
     
-    /* private */ var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: Any = js.native
     
-    /* private */ var _onMouseDown: js.Any = js.native
+    /* private */ var _onMouseDown: Any = js.native
     
-    /* private */ var _onMouseMove: js.Any = js.native
+    /* private */ var _onMouseMove: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
-    /* private */ var _updateColor: js.Any = js.native
+    /* private */ var _updateColor: Any = js.native
     
     /** Currently selected color. */
     /* CompleteClass */

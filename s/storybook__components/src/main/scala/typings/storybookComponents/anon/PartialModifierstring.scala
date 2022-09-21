@@ -1,14 +1,14 @@
 package typings.storybookComponents.anon
 
-import typings.popperjsCore.enumsMod.ModifierPhases_
-import typings.popperjsCore.typesMod.ModifierArguments
-import typings.popperjsCore.typesMod.Obj
-import typings.popperjsCore.typesMod.State
+import typings.storybookComponents.popperjsCoreLibEnumsMod.ModifierPhases_
+import typings.storybookComponents.popperjsCoreLibTypesMod.ModifierArguments
+import typings.storybookComponents.popperjsCoreLibTypesMod.Obj
+import typings.storybookComponents.popperjsCoreLibTypesMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@popperjs/core.@popperjs/core.Modifier<string, {}>> */
+/* Inlined std.Partial<@storybook/components.@storybook/components/dist/ts3.9/_modules/@popperjs-core-index.Modifier<string, {}>> */
 trait PartialModifierstring extends StObject {
   
   var data: js.UndefOr[Obj] = js.undefined
@@ -72,10 +72,10 @@ object PartialModifierstring {
     
     inline def setRequiresIfExistsUndefined: Self = StObject.set(x, "requiresIfExists", js.undefined)
     
-    inline def setRequiresIfExistsVarargs(value: String*): Self = StObject.set(x, "requiresIfExists", js.Array(value :_*))
+    inline def setRequiresIfExistsVarargs(value: String*): Self = StObject.set(x, "requiresIfExists", js.Array(value*))
     
     inline def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
     
-    inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
+    inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value*))
   }
 }

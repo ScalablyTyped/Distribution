@@ -1,19 +1,19 @@
 
 # Scala.js typings for get-folder-size
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
-Get the size of a folder by recursively iterating through all its sub(files && folders).
+Get the size of a folder by iterating through its sub-files and -folders.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | get-folder-size |
-| Keywords           | folder, size |
-| # releases         | 2 |
-| # dependents       | 100 |
-| # downloads        | 1493353 |
-| # stars            | 2 |
+| Keywords           | folder, directory, size |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 235955.66666666666 |
+| # stars            | 52.0 |
 
 ## Links
 - [Homepage](https://github.com/alessioalex/get-folder-size#readme)

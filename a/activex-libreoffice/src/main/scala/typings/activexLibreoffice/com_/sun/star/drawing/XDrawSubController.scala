@@ -24,18 +24,18 @@ object XDrawSubController {
   
   inline def apply(
     CurrentPage: XDrawPage,
-    Selection: js.Any,
+    Selection: Any,
     acquire: () => Unit,
     addSelectionChangeListener: XSelectionChangeListener => Unit,
     getCurrentPage: () => XDrawPage,
-    getFastPropertyValue: Double => js.Any,
-    getSelection: () => js.Any,
-    queryInterface: `type` => js.Any,
+    getFastPropertyValue: Double => Any,
+    getSelection: () => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeSelectionChangeListener: XSelectionChangeListener => Unit,
-    select: js.Any => Boolean,
+    select: Any => Boolean,
     setCurrentPage: XDrawPage => Unit,
-    setFastPropertyValue: (Double, js.Any) => Unit
+    setFastPropertyValue: (Double, Any) => Unit
   ): XDrawSubController = {
     val __obj = js.Dynamic.literal(CurrentPage = CurrentPage.asInstanceOf[js.Any], Selection = Selection.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addSelectionChangeListener = js.Any.fromFunction1(addSelectionChangeListener), getCurrentPage = js.Any.fromFunction0(getCurrentPage), getFastPropertyValue = js.Any.fromFunction1(getFastPropertyValue), getSelection = js.Any.fromFunction0(getSelection), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeSelectionChangeListener = js.Any.fromFunction1(removeSelectionChangeListener), select = js.Any.fromFunction1(select), setCurrentPage = js.Any.fromFunction1(setCurrentPage), setFastPropertyValue = js.Any.fromFunction2(setFastPropertyValue))
     __obj.asInstanceOf[XDrawSubController]

@@ -15,7 +15,7 @@ trait GoogleActionsV2OrdersLineItem extends StObject {
   /**
     * Extension to the line item based on its type.
     */
-  var `extension`: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var `extension`: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   /**
     * Unique id of the line item within the Cart/Order. Required.
@@ -72,7 +72,7 @@ object GoogleActionsV2OrdersLineItem {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
@@ -104,7 +104,7 @@ object GoogleActionsV2OrdersLineItem {
     
     inline def setSubLinesUndefined: Self = StObject.set(x, "subLines", js.undefined)
     
-    inline def setSubLinesVarargs(value: GoogleActionsV2OrdersLineItemSubLine*): Self = StObject.set(x, "subLines", js.Array(value :_*))
+    inline def setSubLinesVarargs(value: GoogleActionsV2OrdersLineItemSubLine*): Self = StObject.set(x, "subLines", js.Array(value*))
     
     inline def setType(value: GoogleActionsV2OrdersLineItemType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -8,20 +8,25 @@ object anon {
   
   trait Cooked extends StObject {
     
-    var cooked: String
+    /** It is null when the template literal is tagged and the text has an invalid escape (e.g. - tag`\\unicode and \\u{55}`) */
+    var cooked: js.UndefOr[String | Null] = js.undefined
     
     var raw: String
   }
   object Cooked {
     
-    inline def apply(cooked: String, raw: String): Cooked = {
-      val __obj = js.Dynamic.literal(cooked = cooked.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
+    inline def apply(raw: String): Cooked = {
+      val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cooked]
     }
     
     extension [Self <: Cooked](x: Self) {
       
       inline def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
+      
+      inline def setCookedNull: Self = StObject.set(x, "cooked", null)
+      
+      inline def setCookedUndefined: Self = StObject.set(x, "cooked", js.undefined)
       
       inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }

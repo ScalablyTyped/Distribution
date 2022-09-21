@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SharedWorkspaceMember extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -23,12 +23,12 @@ trait SharedWorkspaceMember extends StObject {
   /* private */ @JSName("Office.SharedWorkspaceMember_typekey")
   var OfficeDotSharedWorkspaceMember_typekey: SharedWorkspaceMember
   
-  val Parent: js.Any
+  val Parent: Any
 }
 object SharedWorkspaceMember {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     Delete: () => Unit,
     DomainName: String,
@@ -36,7 +36,7 @@ object SharedWorkspaceMember {
     Id: String,
     Name: String,
     OfficeDotSharedWorkspaceMember_typekey: SharedWorkspaceMember,
-    Parent: js.Any
+    Parent: Any
   ): SharedWorkspaceMember = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), DomainName = DomainName.asInstanceOf[js.Any], Email = Email.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Office.SharedWorkspaceMember_typekey")(OfficeDotSharedWorkspaceMember_typekey.asInstanceOf[js.Any])
@@ -45,7 +45,7 @@ object SharedWorkspaceMember {
   
   extension [Self <: SharedWorkspaceMember](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -61,6 +61,6 @@ object SharedWorkspaceMember {
     
     inline def setOfficeDotSharedWorkspaceMember_typekey(value: SharedWorkspaceMember): Self = StObject.set(x, "Office.SharedWorkspaceMember_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

@@ -13,6 +13,8 @@ trait Flags
   
   var global: Boolean
   
+  var hasIndices: Boolean
+  
   var ignoreCase: Boolean
   
   var multiline: Boolean
@@ -33,6 +35,7 @@ object Flags {
     dotAll: Boolean,
     end: Double,
     global: Boolean,
+    hasIndices: Boolean,
     ignoreCase: Boolean,
     multiline: Boolean,
     raw: String,
@@ -40,7 +43,7 @@ object Flags {
     sticky: Boolean,
     unicode: Boolean
   ): Flags = {
-    val __obj = js.Dynamic.literal(dotAll = dotAll.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], ignoreCase = ignoreCase.asInstanceOf[js.Any], multiline = multiline.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], sticky = sticky.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any], parent = null)
+    val __obj = js.Dynamic.literal(dotAll = dotAll.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], hasIndices = hasIndices.asInstanceOf[js.Any], ignoreCase = ignoreCase.asInstanceOf[js.Any], multiline = multiline.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], sticky = sticky.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any], parent = null)
     __obj.updateDynamic("type")("Flags")
     __obj.asInstanceOf[Flags]
   }
@@ -50,6 +53,8 @@ object Flags {
     inline def setDotAll(value: Boolean): Self = StObject.set(x, "dotAll", value.asInstanceOf[js.Any])
     
     inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    
+    inline def setHasIndices(value: Boolean): Self = StObject.set(x, "hasIndices", value.asInstanceOf[js.Any])
     
     inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     

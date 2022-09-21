@@ -15,14 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ApplicationView extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_consolidated(
     `type`: consolidated,
     listener: TypedEventHandler[ApplicationView, ApplicationViewConsolidatedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_visibleboundschanged(`type`: visibleboundschanged, listener: TypedEventHandler[ApplicationView, js.Any]): Unit = js.native
+  def addEventListener_visibleboundschanged(`type`: visibleboundschanged, listener: TypedEventHandler[ApplicationView, Any]): Unit = js.native
   
   /** Gets whether the current window (app view) is adjacent to the left edge of the screen, whether the window is full-screen or docked. */
   var adjacentToLeftDisplayEdge: Boolean = js.native
@@ -45,7 +45,7 @@ trait ApplicationView extends StObject {
   /** Gets whether the window (app view) fills the entire screen. */
   var isFullScreen: Boolean = js.native
   
-  var isFullScreenMode: js.Any = js.native
+  var isFullScreenMode: Any = js.native
   
   /* unmapped type */
   /** Gets whether the window (app view) is on the Windows lock screen. */
@@ -61,22 +61,22 @@ trait ApplicationView extends StObject {
   var onconsolidated_Original: TypedEventHandler[ApplicationView, ApplicationViewConsolidatedEventArgs] = js.native
   
   /** This event is raised when the value of VisibleBounds changes, typically as a result of the status bar, app bar, or other chrome being shown or hidden. */
-  def onvisibleboundschanged(ev: js.Any & WinRTEvent[ApplicationView]): Unit = js.native
+  def onvisibleboundschanged(ev: Any & WinRTEvent[ApplicationView]): Unit = js.native
   /** This event is raised when the value of VisibleBounds changes, typically as a result of the status bar, app bar, or other chrome being shown or hidden. */
   @JSName("onvisibleboundschanged")
-  var onvisibleboundschanged_Original: TypedEventHandler[ApplicationView, js.Any] = js.native
+  var onvisibleboundschanged_Original: TypedEventHandler[ApplicationView, Any] = js.native
   
   /** Gets the current orientation (landscape or portrait) of the window (app view) with respect to the display. */
   var orientation: ApplicationViewOrientation = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_consolidated(
     `type`: consolidated,
     listener: TypedEventHandler[ApplicationView, ApplicationViewConsolidatedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_visibleboundschanged(`type`: visibleboundschanged, listener: TypedEventHandler[ApplicationView, js.Any]): Unit = js.native
+  def removeEventListener_visibleboundschanged(`type`: visibleboundschanged, listener: TypedEventHandler[ApplicationView, Any]): Unit = js.native
   
   /**
     * Sets a value indicating the bounds used by the framework to lay out the contents of the window (app view).

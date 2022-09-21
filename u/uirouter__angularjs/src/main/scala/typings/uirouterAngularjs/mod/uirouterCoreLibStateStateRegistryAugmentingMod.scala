@@ -11,7 +11,7 @@ object uirouterCoreLibStateStateRegistryAugmentingMod {
   @js.native
   trait StateRegistry extends StObject {
     
-    def register(state: Instantiable): js.Any = js.native
-    def register(state: Ng1StateDeclaration): js.Any = js.native
+    def register(state: Instantiable): Any = js.native
+    def register(state: Ng1StateDeclaration): Any = js.native
   }
 }

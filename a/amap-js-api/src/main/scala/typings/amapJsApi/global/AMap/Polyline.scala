@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 折线
   * @param options 选项
   */
-class Polyline[ExtraData] ()
+open class Polyline[ExtraData] ()
   extends StObject
      with typings.amapJsApi.AMap.Polyline[ExtraData] {
   def this(options: Options[ExtraData]) = this()

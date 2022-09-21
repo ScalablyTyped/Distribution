@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SpatialManipulationUpdatedEventArgs extends StObject {
   
-  var interactionSourceKind: js.Any
+  var interactionSourceKind: Any
   
   /* unmapped type */
-  var tryGetCumulativeDelta: js.Any
+  var tryGetCumulativeDelta: Any
 }
 object SpatialManipulationUpdatedEventArgs {
   
-  inline def apply(interactionSourceKind: js.Any, tryGetCumulativeDelta: js.Any): SpatialManipulationUpdatedEventArgs = {
+  inline def apply(interactionSourceKind: Any, tryGetCumulativeDelta: Any): SpatialManipulationUpdatedEventArgs = {
     val __obj = js.Dynamic.literal(interactionSourceKind = interactionSourceKind.asInstanceOf[js.Any], tryGetCumulativeDelta = tryGetCumulativeDelta.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialManipulationUpdatedEventArgs]
   }
   
   extension [Self <: SpatialManipulationUpdatedEventArgs](x: Self) {
     
-    inline def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
+    inline def setInteractionSourceKind(value: Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
     
-    inline def setTryGetCumulativeDelta(value: js.Any): Self = StObject.set(x, "tryGetCumulativeDelta", value.asInstanceOf[js.Any])
+    inline def setTryGetCumulativeDelta(value: Any): Self = StObject.set(x, "tryGetCumulativeDelta", value.asInstanceOf[js.Any])
   }
 }

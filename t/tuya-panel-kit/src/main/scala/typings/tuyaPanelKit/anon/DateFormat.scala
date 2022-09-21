@@ -1,13 +1,12 @@
 package typings.tuyaPanelKit.anon
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DateFormat extends StObject {
   
-  def dateFormat(fmt: String, date: Date): Double
+  def dateFormat(fmt: String, date: js.Date): String
   
   def dateToTimer(timeStr: String): Double
   
@@ -26,7 +25,7 @@ trait DateFormat extends StObject {
 object DateFormat {
   
   inline def apply(
-    dateFormat: (String, Date) => Double,
+    dateFormat: (String, js.Date) => String,
     dateToTimer: String => Double,
     parseHour12: Double => String,
     parseSecond: (Double, Double) => js.Array[String],
@@ -41,7 +40,7 @@ object DateFormat {
   
   extension [Self <: DateFormat](x: Self) {
     
-    inline def setDateFormat(value: (String, Date) => Double): Self = StObject.set(x, "dateFormat", js.Any.fromFunction2(value))
+    inline def setDateFormat(value: (String, js.Date) => String): Self = StObject.set(x, "dateFormat", js.Any.fromFunction2(value))
     
     inline def setDateToTimer(value: String => Double): Self = StObject.set(x, "dateToTimer", js.Any.fromFunction1(value))
     

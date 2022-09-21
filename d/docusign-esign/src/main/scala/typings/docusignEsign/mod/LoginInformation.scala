@@ -33,6 +33,6 @@ object LoginInformation {
     
     inline def setLoginAccountsUndefined: Self = StObject.set(x, "loginAccounts", js.undefined)
     
-    inline def setLoginAccountsVarargs(value: LoginAccount*): Self = StObject.set(x, "loginAccounts", js.Array(value :_*))
+    inline def setLoginAccountsVarargs(value: LoginAccount*): Self = StObject.set(x, "loginAccounts", js.Array(value*))
   }
 }

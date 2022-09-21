@@ -18,10 +18,10 @@ trait ICompositeElement
   @JSName("addListener")
   var addListener_ICompositeElement: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* handler */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* opt */ js.UndefOr[js.Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* handler */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* opt */ js.UndefOr[Any], 
       typings.senchaTouch.Ext.dom.ICompositeElementLite
     ]
   ] = js.undefined
@@ -34,8 +34,8 @@ trait ICompositeElement
   @JSName("add")
   var add_ICompositeElement: js.UndefOr[
     js.Function2[
-      /* els */ js.UndefOr[js.Any], 
-      /* root */ js.UndefOr[js.Any], 
+      /* els */ js.UndefOr[Any], 
+      /* root */ js.UndefOr[Any], 
       typings.senchaTouch.Ext.dom.ICompositeElementLite
     ]
   ] = js.undefined
@@ -48,8 +48,8 @@ trait ICompositeElement
   @JSName("each")
   var each_ICompositeElement: js.UndefOr[
     js.Function2[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       typings.senchaTouch.Ext.dom.ICompositeElementLite
     ]
   ] = js.undefined
@@ -60,7 +60,7 @@ trait ICompositeElement
     */
   @JSName("fill")
   var fill_ICompositeElement: js.UndefOr[
-    js.Function1[/* els */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.ICompositeElementLite]
+    js.Function1[/* els */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.ICompositeElementLite]
   ] = js.undefined
   
   /** [Method] Filters this composite to only elements that match the passed selector
@@ -69,10 +69,7 @@ trait ICompositeElement
     */
   @JSName("filter")
   var filter_ICompositeElement: js.UndefOr[
-    js.Function1[
-      /* selector */ js.UndefOr[js.Any], 
-      typings.senchaTouch.Ext.dom.ICompositeElementLite
-    ]
+    js.Function1[/* selector */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.ICompositeElementLite]
   ] = js.undefined
   
   /** [Method] Removes the specified element s
@@ -83,7 +80,7 @@ trait ICompositeElement
   @JSName("removeElement")
   var removeElement_ICompositeElement: js.UndefOr[
     js.Function2[
-      /* el */ js.UndefOr[js.Any], 
+      /* el */ js.UndefOr[Any], 
       /* removeDom */ js.UndefOr[Boolean], 
       typings.senchaTouch.Ext.dom.ICompositeElementLite
     ]
@@ -98,8 +95,8 @@ trait ICompositeElement
   @JSName("replaceElement")
   var replaceElement_ICompositeElement: js.UndefOr[
     js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* replacement */ js.UndefOr[js.Any], 
+      /* el */ js.UndefOr[Any], 
+      /* replacement */ js.UndefOr[Any], 
       /* domReplace */ js.UndefOr[Boolean], 
       typings.senchaTouch.Ext.dom.ICompositeElementLite
     ]
@@ -113,7 +110,7 @@ trait ICompositeElement
   @JSName("select")
   var select_ICompositeElement: js.UndefOr[
     js.Function2[
-      /* selector */ js.UndefOr[js.Any], 
+      /* selector */ js.UndefOr[Any], 
       /* composite */ js.UndefOr[Boolean], 
       typings.senchaTouch.Ext.dom.ICompositeElementLite
     ]
@@ -129,11 +126,11 @@ object ICompositeElement {
   extension [Self <: ICompositeElement](x: Self) {
     
     inline def setAdd(
-      value: (/* els */ js.UndefOr[js.Any], /* root */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
+      value: (/* els */ js.UndefOr[Any], /* root */ js.UndefOr[Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
     ): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
     inline def setAddListener(
-      value: (/* eventName */ js.UndefOr[js.Any], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* opt */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
+      value: (/* eventName */ js.UndefOr[Any], /* handler */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* opt */ js.UndefOr[Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
     ): Self = StObject.set(x, "addListener", js.Any.fromFunction4(value))
     
     inline def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
@@ -141,33 +138,33 @@ object ICompositeElement {
     inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     inline def setEach(
-      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
+      value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
     ): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
     inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
-    inline def setFill(value: /* els */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.ICompositeElementLite): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
+    inline def setFill(value: /* els */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.ICompositeElementLite): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
     
     inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    inline def setFilter(value: /* selector */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.ICompositeElementLite): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: /* selector */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.ICompositeElementLite): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
     inline def setRemoveElement(
-      value: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
+      value: (/* el */ js.UndefOr[Any], /* removeDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
     ): Self = StObject.set(x, "removeElement", js.Any.fromFunction2(value))
     
     inline def setRemoveElementUndefined: Self = StObject.set(x, "removeElement", js.undefined)
     
     inline def setReplaceElement(
-      value: (/* el */ js.UndefOr[js.Any], /* replacement */ js.UndefOr[js.Any], /* domReplace */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
+      value: (/* el */ js.UndefOr[Any], /* replacement */ js.UndefOr[Any], /* domReplace */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
     ): Self = StObject.set(x, "replaceElement", js.Any.fromFunction3(value))
     
     inline def setReplaceElementUndefined: Self = StObject.set(x, "replaceElement", js.undefined)
     
     inline def setSelect(
-      value: (/* selector */ js.UndefOr[js.Any], /* composite */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
+      value: (/* selector */ js.UndefOr[Any], /* composite */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.ICompositeElementLite
     ): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)

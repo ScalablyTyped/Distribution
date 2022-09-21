@@ -12,11 +12,11 @@ object tysonBuilderMod {
   
   @JSImport("@hyperloris/tyson/dist/types/tysonBuilder", "TysonBuilder")
   @js.native
-  class TysonBuilder () extends StObject {
+  open class TysonBuilder () extends StObject {
     
-    /* private */ var _factories: js.Any = js.native
+    /* private */ var _factories: Any = js.native
     
-    /* private */ var _serializeNulls: js.Any = js.native
+    /* private */ var _serializeNulls: Any = js.native
     
     /**
       * Returns a new instance of Tyson configured with the options currently set in this builder.

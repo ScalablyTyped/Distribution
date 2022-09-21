@@ -1,25 +1,121 @@
 package typings.superstruct
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.superstruct.indexCjsMod.StructContext
-import typings.superstruct.indexCjsMod.StructResult
+import typings.superstruct.structMod.Context
+import typings.superstruct.structMod.Refiner
+import typings.superstruct.structMod.Result
+import typings.superstruct.structMod.Struct
+import typings.superstruct.structMod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
+  trait `0` extends StObject {
+    
+    var coerce: js.UndefOr[Boolean] = js.undefined
+  }
+  object `0` {
+    
+    inline def apply(): `0` = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[`0`]
+    }
+    
+    extension [Self <: `0`](x: Self) {
+      
+      inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
+      
+      inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
+    }
+  }
+  
+  trait Branch extends StObject {
+    
+    var branch: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    var coerce: js.UndefOr[Boolean] = js.undefined
+    
+    var mask: js.UndefOr[Boolean] = js.undefined
+    
+    var path: js.UndefOr[js.Array[Any]] = js.undefined
+  }
+  object Branch {
+    
+    inline def apply(): Branch = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Branch]
+    }
+    
+    extension [Self <: Branch](x: Self) {
+      
+      inline def setBranch(value: js.Array[Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      
+      inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+      
+      inline def setBranchVarargs(value: Any*): Self = StObject.set(x, "branch", js.Array(value*))
+      
+      inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
+      
+      inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
+      
+      inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      
+      inline def setPath(value: js.Array[Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      
+      inline def setPathVarargs(value: Any*): Self = StObject.set(x, "path", js.Array(value*))
+    }
+  }
+  
+  trait Coerce extends StObject {
+    
+    var coerce: js.UndefOr[Boolean] = js.undefined
+    
+    var mask: js.UndefOr[Boolean] = js.undefined
+  }
+  object Coerce {
+    
+    inline def apply(): Coerce = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Coerce]
+    }
+    
+    extension [Self <: Coerce](x: Self) {
+      
+      inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
+      
+      inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
+      
+      inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    }
+  }
+  
   trait Coercer[S, T] extends StObject {
     
-    var coercer: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
+    var coercer: js.UndefOr[typings.superstruct.structMod.Coercer[Any]] = js.undefined
     
-    var refiner: js.UndefOr[js.Function2[/* value */ T, /* context */ StructContext, StructResult]] = js.undefined
+    var entries: js.UndefOr[
+        js.Function2[
+          /* value */ Any, 
+          /* context */ Context, 
+          js.Iterable[js.Tuple3[String | Double, Any, Struct[Any | scala.Nothing, Any]]]
+        ]
+      ] = js.undefined
+    
+    var refiner: js.UndefOr[Refiner[T]] = js.undefined
     
     var schema: S
     
     var `type`: String
     
-    var validator: js.UndefOr[js.Function2[/* value */ js.Any, /* context */ StructContext, StructResult]] = js.undefined
+    var validator: js.UndefOr[Validator] = js.undefined
   }
   object Coercer {
     
@@ -31,11 +127,17 @@ object anon {
     
     extension [Self <: Coercer[?, ?], S, T](x: Self & (Coercer[S, T])) {
       
-      inline def setCoercer(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "coercer", js.Any.fromFunction1(value))
+      inline def setCoercer(value: (Any, /* context */ Context) => Any): Self = StObject.set(x, "coercer", js.Any.fromFunction2(value))
       
       inline def setCoercerUndefined: Self = StObject.set(x, "coercer", js.undefined)
       
-      inline def setRefiner(value: (/* value */ T, /* context */ StructContext) => StructResult): Self = StObject.set(x, "refiner", js.Any.fromFunction2(value))
+      inline def setEntries(
+        value: (/* value */ Any, /* context */ Context) => js.Iterable[js.Tuple3[String | Double, Any, Struct[Any | scala.Nothing, Any]]]
+      ): Self = StObject.set(x, "entries", js.Any.fromFunction2(value))
+      
+      inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+      
+      inline def setRefiner(value: (T, /* context */ Context) => Result): Self = StObject.set(x, "refiner", js.Any.fromFunction2(value))
       
       inline def setRefinerUndefined: Self = StObject.set(x, "refiner", js.undefined)
       
@@ -43,31 +145,52 @@ object anon {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setValidator(value: (/* value */ js.Any, /* context */ StructContext) => StructResult): Self = StObject.set(x, "validator", js.Any.fromFunction2(value))
+      inline def setValidator(value: (/* value */ Any, /* context */ Context) => Result): Self = StObject.set(x, "validator", js.Any.fromFunction2(value))
       
       inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
+    }
+  }
+  
+  trait Exclusive extends StObject {
+    
+    var exclusive: js.UndefOr[Boolean] = js.undefined
+  }
+  object Exclusive {
+    
+    inline def apply(): Exclusive = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Exclusive]
+    }
+    
+    extension [Self <: Exclusive](x: Self) {
+      
+      inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+      
+      inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
     }
   }
   
   @js.native
   trait Instantiable
     extends StObject
-       with Instantiable1[/* args */ js.Any, js.Any]
+       with Instantiable1[/* args */ Any, Any]
   
-  /* Inlined std.Partial<superstruct.superstruct/lib/typings.Failure> */
+  /* Inlined std.Partial<superstruct.superstruct/lib/error.Failure> */
   trait PartialFailure extends StObject {
     
-    var branch: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var branch: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var path: js.UndefOr[js.Array[String | Double]] = js.undefined
+    var key: js.UndefOr[Any] = js.undefined
+    
+    var message: js.UndefOr[String] = js.undefined
+    
+    var path: js.UndefOr[js.Array[Any]] = js.undefined
     
     var refinement: js.UndefOr[String] = js.undefined
     
     var `type`: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/typings.Context['value'] */ js.Any
-      ] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object PartialFailure {
     
@@ -78,17 +201,25 @@ object anon {
     
     extension [Self <: PartialFailure](x: Self) {
       
-      inline def setBranch(value: js.Array[js.Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      inline def setBranch(value: js.Array[Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
       inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
       
-      inline def setBranchVarargs(value: js.Any*): Self = StObject.set(x, "branch", js.Array(value :_*))
+      inline def setBranchVarargs(value: Any*): Self = StObject.set(x, "branch", js.Array(value*))
       
-      inline def setPath(value: js.Array[String | Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      
+      inline def setPath(value: js.Array[Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: Any*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setRefinement(value: String): Self = StObject.set(x, "refinement", value.asInstanceOf[js.Any])
       
@@ -98,261 +229,28 @@ object anon {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setValue(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/typings.Context['value'] */ js.Any
-      ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
-  /* Inlined std.Partial<superstruct.superstruct/lib/index.cjs.StructFailure> */
-  trait PartialStructFailure extends StObject {
+  trait Strict extends StObject {
     
-    var branch: js.UndefOr[js.Array[js.Any]] = js.undefined
-    
-    var path: js.UndefOr[js.Array[String | Double]] = js.undefined
-    
-    var `type`: js.UndefOr[String] = js.undefined
-    
-    var value: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/index.cjs.StructContext['value'] */ js.Any
-      ] = js.undefined
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
-  object PartialStructFailure {
+  object Strict {
     
-    inline def apply(): PartialStructFailure = {
+    inline def apply(): Strict = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialStructFailure]
+      __obj.asInstanceOf[Strict]
     }
     
-    extension [Self <: PartialStructFailure](x: Self) {
+    extension [Self <: Strict](x: Self) {
       
-      inline def setBranch(value: js.Array[js.Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
-      
-      inline def setBranchVarargs(value: js.Any*): Self = StObject.set(x, "branch", js.Array(value :_*))
-      
-      inline def setPath(value: js.Array[String | Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
-      
-      inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-      
-      inline def setValue(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/index.cjs.StructContext['value'] */ js.Any
-      ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    }
-  }
-  
-  /* Inlined std.Partial<superstruct.superstruct/lib/index.es.StructFailure> */
-  trait PartialStructFailureBranch extends StObject {
-    
-    var branch: js.UndefOr[js.Array[js.Any]] = js.undefined
-    
-    var path: js.UndefOr[js.Array[String | Double]] = js.undefined
-    
-    var `type`: js.UndefOr[String] = js.undefined
-    
-    var value: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/index.es.StructContext['value'] */ js.Any
-      ] = js.undefined
-  }
-  object PartialStructFailureBranch {
-    
-    inline def apply(): PartialStructFailureBranch = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialStructFailureBranch]
-    }
-    
-    extension [Self <: PartialStructFailureBranch](x: Self) {
-      
-      inline def setBranch(value: js.Array[js.Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
-      
-      inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
-      
-      inline def setBranchVarargs(value: js.Any*): Self = StObject.set(x, "branch", js.Array(value :_*))
-      
-      inline def setPath(value: js.Array[String | Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
-      
-      inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-      
-      inline def setValue(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/index.es.StructContext['value'] */ js.Any
-      ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    }
-  }
-  
-  /* Inlined std.Partial<superstruct.superstruct/lib/struct.StructFailure> */
-  trait PartialStructFailurePath extends StObject {
-    
-    var branch: js.UndefOr[js.Array[js.Any]] = js.undefined
-    
-    var path: js.UndefOr[js.Array[String | Double]] = js.undefined
-    
-    var `type`: js.UndefOr[String] = js.undefined
-    
-    var value: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/struct.StructContext['value'] */ js.Any
-      ] = js.undefined
-  }
-  object PartialStructFailurePath {
-    
-    inline def apply(): PartialStructFailurePath = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialStructFailurePath]
-    }
-    
-    extension [Self <: PartialStructFailurePath](x: Self) {
-      
-      inline def setBranch(value: js.Array[js.Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
-      
-      inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
-      
-      inline def setBranchVarargs(value: js.Any*): Self = StObject.set(x, "branch", js.Array(value :_*))
-      
-      inline def setPath(value: js.Array[String | Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
-      
-      inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-      
-      inline def setValue(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: superstruct.superstruct/lib/struct.StructContext['value'] */ js.Any
-      ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    }
-  }
-  
-  trait Refiner[S, T] extends StObject {
-    
-    var coercer: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
-    
-    var refiner: js.UndefOr[
-        js.Function2[
-          /* value */ T, 
-          /* context */ typings.superstruct.structMod.StructContext, 
-          typings.superstruct.structMod.StructResult
-        ]
-      ] = js.undefined
-    
-    var schema: S
-    
-    var `type`: String
-    
-    var validator: js.UndefOr[
-        js.Function2[
-          /* value */ js.Any, 
-          /* context */ typings.superstruct.structMod.StructContext, 
-          typings.superstruct.structMod.StructResult
-        ]
-      ] = js.undefined
-  }
-  object Refiner {
-    
-    inline def apply[S, T](schema: S, `type`: String): Refiner[S, T] = {
-      val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Refiner[S, T]]
-    }
-    
-    extension [Self <: Refiner[?, ?], S, T](x: Self & (Refiner[S, T])) {
-      
-      inline def setCoercer(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "coercer", js.Any.fromFunction1(value))
-      
-      inline def setCoercerUndefined: Self = StObject.set(x, "coercer", js.undefined)
-      
-      inline def setRefiner(
-        value: (/* value */ T, /* context */ typings.superstruct.structMod.StructContext) => typings.superstruct.structMod.StructResult
-      ): Self = StObject.set(x, "refiner", js.Any.fromFunction2(value))
-      
-      inline def setRefinerUndefined: Self = StObject.set(x, "refiner", js.undefined)
-      
-      inline def setSchema(value: S): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setValidator(
-        value: (/* value */ js.Any, /* context */ typings.superstruct.structMod.StructContext) => typings.superstruct.structMod.StructResult
-      ): Self = StObject.set(x, "validator", js.Any.fromFunction2(value))
-      
-      inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
-    }
-  }
-  
-  trait Schema[S, T] extends StObject {
-    
-    var coercer: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
-    
-    var refiner: js.UndefOr[
-        js.Function2[
-          /* value */ T, 
-          /* context */ typings.superstruct.indexEsMod.StructContext, 
-          typings.superstruct.indexEsMod.StructResult
-        ]
-      ] = js.undefined
-    
-    var schema: S
-    
-    var `type`: String
-    
-    var validator: js.UndefOr[
-        js.Function2[
-          /* value */ js.Any, 
-          /* context */ typings.superstruct.indexEsMod.StructContext, 
-          typings.superstruct.indexEsMod.StructResult
-        ]
-      ] = js.undefined
-  }
-  object Schema {
-    
-    inline def apply[S, T](schema: S, `type`: String): Schema[S, T] = {
-      val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Schema[S, T]]
-    }
-    
-    extension [Self <: Schema[?, ?], S, T](x: Self & (Schema[S, T])) {
-      
-      inline def setCoercer(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "coercer", js.Any.fromFunction1(value))
-      
-      inline def setCoercerUndefined: Self = StObject.set(x, "coercer", js.undefined)
-      
-      inline def setRefiner(
-        value: (/* value */ T, /* context */ typings.superstruct.indexEsMod.StructContext) => typings.superstruct.indexEsMod.StructResult
-      ): Self = StObject.set(x, "refiner", js.Any.fromFunction2(value))
-      
-      inline def setRefinerUndefined: Self = StObject.set(x, "refiner", js.undefined)
-      
-      inline def setSchema(value: S): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setValidator(
-        value: (/* value */ js.Any, /* context */ typings.superstruct.indexEsMod.StructContext) => typings.superstruct.indexEsMod.StructResult
-      ): Self = StObject.set(x, "validator", js.Any.fromFunction2(value))
-      
-      inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
 }

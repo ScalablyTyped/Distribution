@@ -12,19 +12,19 @@ trait UpdateAssetResponse extends StObject {
   var Arn: js.UndefOr[typings.awsSdk.dataexchangeMod.Arn] = js.undefined
   
   /**
-    * Information about the asset, including its size.
+    * Information about the asset.
     */
   var AssetDetails: js.UndefOr[typings.awsSdk.dataexchangeMod.AssetDetails] = js.undefined
   
   /**
-    * The type of file your data is stored in. Currently, the supported asset type is S3_SNAPSHOT.
+    * The type of asset that is added to a data set.
     */
   var AssetType: js.UndefOr[typings.awsSdk.dataexchangeMod.AssetType] = js.undefined
   
   /**
     * The date and time that the asset was created, in ISO 8601 format.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The unique identifier for the data set associated with this asset.
@@ -37,7 +37,7 @@ trait UpdateAssetResponse extends StObject {
   var Id: js.UndefOr[typings.awsSdk.dataexchangeMod.Id] = js.undefined
   
   /**
-    * The name of the asset When importing from Amazon S3, the S3 object key is used as the asset name. When exporting to Amazon S3, the asset name is used as default target S3 object key.
+    * The name of the asset. When importing from Amazon S3, the S3 object key is used as the asset name. When exporting to Amazon S3, the asset name is used as default target S3 object key. When importing from Amazon API Gateway API, the API name is used as the asset name. When importing from Amazon Redshift, the datashare name is used as the asset name.
     */
   var Name: js.UndefOr[AssetName] = js.undefined
   
@@ -54,7 +54,7 @@ trait UpdateAssetResponse extends StObject {
   /**
     * The date and time that the asset was last updated, in ISO 8601 format.
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
+  var UpdatedAt: js.UndefOr[js.Date] = js.undefined
 }
 object UpdateAssetResponse {
   
@@ -77,7 +77,7 @@ object UpdateAssetResponse {
     
     inline def setAssetTypeUndefined: Self = StObject.set(x, "AssetType", js.undefined)
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -101,7 +101,7 @@ object UpdateAssetResponse {
     
     inline def setSourceIdUndefined: Self = StObject.set(x, "SourceId", js.undefined)
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
   }

@@ -10,8 +10,8 @@ object panelMod {
   
   @JSImport("muicss/lib/react/panel", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PanelProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PanelProps, js.Object, Any]
   
-  type Panel = Component[PanelProps, js.Object, js.Any]
+  type Panel = Component[PanelProps, js.Object, Any]
 }

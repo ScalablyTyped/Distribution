@@ -17,7 +17,7 @@ trait ChildNodeInsertedEvent extends StObject {
   var parentNodeId: NodeId
   
   /**
-    * If of the previous siblint.
+    * Id of the previous sibling.
     */
   var previousNodeId: NodeId
 }

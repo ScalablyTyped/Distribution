@@ -1,5 +1,6 @@
 package typings.twineSugarcube
 
+import typings.std.DocumentFragment
 import typings.std.HTMLElement
 import typings.twineSugarcube.extensionsMod.global.Array
 import typings.twineSugarcube.twineSugarcubeBooleans.`false`
@@ -86,7 +87,7 @@ object macroMod {
   @js.native
   trait MacroArgsArray
     extends StObject
-       with Array[js.Any] {
+       with Array[Any] {
     
     /**
       * The current tag's argument string after converting all TwineScript syntax elements into their
@@ -100,13 +101,14 @@ object macroMod {
     var raw: String = js.native
   }
   
+  @js.native
   trait MacroContext extends StObject {
     
     /**
       * The argument string parsed into an array of discrete arguments.
       * @since 2.0.0
       */
-    var args: MacroArgsArray
+    var args: MacroArgsArray = js.native
     
     /**
       * Returns whether any of the macro's ancestors passed the test implemented by the given
@@ -115,7 +117,7 @@ object macroMod {
       * is passed in as its sole parameter.
       * @since 2.0.0
       */
-    def contextHas(filter: js.Function1[/* context */ MacroContextObject, Boolean]): Boolean
+    def contextHas(filter: js.Function1[/* context */ MacroContextObject, Boolean]): Boolean = js.native
     
     /**
       * Returns the first of the macro's ancestors which passed the test implemented by the given
@@ -124,7 +126,7 @@ object macroMod {
       * passed in as its sole parameter.
       * @since 2.0.0
       */
-    def contextSelect(filter: js.Function1[/* context */ MacroContextObject, Boolean]): js.Object
+    def contextSelect(filter: js.Function1[/* context */ MacroContextObject, Boolean]): js.Object = js.native
     
     /**
       * Returns a new array containing all of the macro's ancestors which passed the test implemented
@@ -132,85 +134,69 @@ object macroMod {
       * @since 2.0.0
       * @param filter
       */
-    def contextSelectAll(filter: js.Function1[/* context */ MacroContextObject, Boolean]): Array[js.Object]
+    def contextSelectAll(filter: js.Function1[/* context */ MacroContextObject, Boolean]): Array[js.Object] = js.native
+    
+    /**
+      * Returns a callback function that wraps the given callbacks to provide access to the variable
+      * shadowing system.
+      * This is only useful if you have an asynchronous callback (such as a button being pressed)
+      * that invokes code/content that needs to access variables shadowed by `<<capture>>`.
+      * @param callback Executed when the wrapper is invoked. Receives access to variable shadows.
+      * @param doneCallback Executed after the main callback returns. Does not have access.
+      * @param startCallback Executed before the main callback is invoked. Does not have access.
+      * @since 2.14.0
+      */
+    def createShadowWrapper[T /* <: Array[Any] */](callback: ShadowWrapperCallback[T]): js.Function1[/* args */ T, Unit] = js.native
+    def createShadowWrapper[T /* <: Array[Any] */](callback: ShadowWrapperCallback[T], doneCallback: Unit, startCallback: ShadowWrapperCallback[T]): js.Function1[/* args */ T, Unit] = js.native
+    def createShadowWrapper[T /* <: Array[Any] */](callback: ShadowWrapperCallback[T], doneCallback: ShadowWrapperCallback[T]): js.Function1[/* args */ T, Unit] = js.native
+    def createShadowWrapper[T /* <: Array[Any] */](
+      callback: ShadowWrapperCallback[T],
+      doneCallback: ShadowWrapperCallback[T],
+      startCallback: ShadowWrapperCallback[T]
+    ): js.Function1[/* args */ T, Unit] = js.native
     
     /**
       * Renders the message prefixed with the name of the macro and returns false.
       * @param message The error message to output.
       * @since 2.0.0
       */
-    def error(message: String): `false`
+    def error(message: String): `false` = js.native
     
     /**
       * The name of the macro.
       * @since 2.0.0
       */
-    var name: String
+    var name: String = js.native
     
     /**
       * The current output element.
       * @since 2.0.0
       */
-    var output: HTMLElement
+    var output: DocumentFragment | HTMLElement = js.native
     
     /**
       * The (execution) context object of the macro's parent, or null if the macro has no parent.
       * @since 2.0.0
       */
-    var parent: js.Object
+    var parent: Null | js.Object = js.native
+    
+    /**
+      * The parser instanced that generated the macro call.
+      * @since 2.0.0
+      */
+    var parser: Any = js.native
     
     /**
       * The text of a container macro parsed into discrete payload objects by tag.
       * @since 2.0.0
       */
-    var payload: Array[MacroContextObject]
+    var payload: Array[MacroContextObject] = js.native
     
     /**
       * The macro's definition — created via @see Macro.add()
       * @since 2.0.0
       */
-    var self: js.Object
-  }
-  object MacroContext {
-    
-    inline def apply(
-      args: MacroArgsArray,
-      contextHas: js.Function1[/* context */ MacroContextObject, Boolean] => Boolean,
-      contextSelect: js.Function1[/* context */ MacroContextObject, Boolean] => js.Object,
-      contextSelectAll: js.Function1[/* context */ MacroContextObject, Boolean] => Array[js.Object],
-      error: String => `false`,
-      name: String,
-      output: HTMLElement,
-      parent: js.Object,
-      payload: Array[MacroContextObject],
-      self: js.Object
-    ): MacroContext = {
-      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], contextHas = js.Any.fromFunction1(contextHas), contextSelect = js.Any.fromFunction1(contextSelect), contextSelectAll = js.Any.fromFunction1(contextSelectAll), error = js.Any.fromFunction1(error), name = name.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MacroContext]
-    }
-    
-    extension [Self <: MacroContext](x: Self) {
-      
-      inline def setArgs(value: MacroArgsArray): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
-      
-      inline def setContextHas(value: js.Function1[/* context */ MacroContextObject, Boolean] => Boolean): Self = StObject.set(x, "contextHas", js.Any.fromFunction1(value))
-      
-      inline def setContextSelect(value: js.Function1[/* context */ MacroContextObject, Boolean] => js.Object): Self = StObject.set(x, "contextSelect", js.Any.fromFunction1(value))
-      
-      inline def setContextSelectAll(value: js.Function1[/* context */ MacroContextObject, Boolean] => Array[js.Object]): Self = StObject.set(x, "contextSelectAll", js.Any.fromFunction1(value))
-      
-      inline def setError(value: String => `false`): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setOutput(value: HTMLElement): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
-      
-      inline def setParent(value: js.Object): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
-      
-      inline def setPayload(value: Array[MacroContextObject]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
-      
-      inline def setSelf(value: js.Object): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
-    }
+    var self: js.Object = js.native
   }
   
   trait MacroContextObject extends StObject {
@@ -252,9 +238,21 @@ object macroMod {
     
     def handler(): Unit
     
-    var skipArgs: js.UndefOr[Boolean] = js.undefined
+    /**
+      * Disables parsing argument strings into discrete arguments.
+      * This is used by macros that only use the raw/full argument strings.
+      * `true` to affect all tags
+      * Or Array of tags to affect
+      * @since 2.0.0
+      */
+    var skipArgs: js.UndefOr[Boolean | Array[String]] = js.undefined
     
-    var tags: js.UndefOr[Array[String]] = js.undefined
+    /**
+      * Having this property signifies that this is a container macro
+      * This should be an array of child tag names or `null`
+      * @since 2.0.0
+      */
+    var tags: js.UndefOr[Array[String] | Null] = js.undefined
   }
   object MacroDefinition {
     
@@ -267,11 +265,13 @@ object macroMod {
       
       inline def setHandler(value: () => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction0(value))
       
-      inline def setSkipArgs(value: Boolean): Self = StObject.set(x, "skipArgs", value.asInstanceOf[js.Any])
+      inline def setSkipArgs(value: Boolean | Array[String]): Self = StObject.set(x, "skipArgs", value.asInstanceOf[js.Any])
       
       inline def setSkipArgsUndefined: Self = StObject.set(x, "skipArgs", js.undefined)
       
       inline def setTags(value: Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      
+      inline def setTagsNull: Self = StObject.set(x, "tags", null)
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
@@ -310,4 +310,6 @@ object macroMod {
       inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     }
   }
+  
+  type ShadowWrapperCallback[T /* <: Array[Any] */] = js.ThisFunction1[/* this */ MacroContext, /* args */ T, Unit]
 }

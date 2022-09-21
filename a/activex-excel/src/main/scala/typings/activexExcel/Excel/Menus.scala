@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Menus extends StObject {
   
-  def apply(Index: js.Any): Menu = js.native
+  def apply(Index: Any): Menu = js.native
   
   def Add(Caption: String): Menu = js.native
-  def Add(Caption: String, Before: js.Any): Menu = js.native
-  def Add(Caption: String, Before: js.Any, Restore: js.Any): Menu = js.native
-  def Add(Caption: String, Before: Unit, Restore: js.Any): Menu = js.native
+  def Add(Caption: String, Before: Any): Menu = js.native
+  def Add(Caption: String, Before: Any, Restore: Any): Menu = js.native
+  def Add(Caption: String, Before: Unit, Restore: Any): Menu = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
@@ -20,9 +20,9 @@ trait Menus extends StObject {
   
   val Creator: XlCreator = js.native
   
-  def Item(Index: js.Any): Menu = js.native
+  def Item(Index: Any): Menu = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): Menu = js.native
+  def _Default(Index: Any): Menu = js.native
 }

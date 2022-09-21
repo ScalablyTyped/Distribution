@@ -11,16 +11,25 @@ trait CanvasRect
      with CanvasFilledElement
      with CanvasElement {
   
+  /** Height in `pt`. */
   var h: Double
   
+  /**
+    * Corner radius in `pt`.
+    *
+    * Defaults to `0`.
+    */
   var r: js.UndefOr[Double] = js.undefined
   
   var `type`: rect
   
+  /** Width in `pt`. */
   var w: Double
   
+  /** Horizontal position from the left edge of the canvas element in `pt`. */
   var x: Double
   
+  /** Vertical position from the top of the canvas element in `pt`. */
   var y: Double
 }
 object CanvasRect {

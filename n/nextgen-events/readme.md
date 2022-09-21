@@ -10,10 +10,10 @@ The next generation of events handling for javascript! New: abstract away the ne
 | ------------------ | :-------------: |
 | Full name          | nextgen-events |
 | Keywords           | events, async, emit, listener, context, series, serialize, namespace, proxy, network |
-| # releases         | 9 |
-| # dependents       | 9 |
-| # downloads        | 1234571 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 189053.0 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/cronvel/nextgen-events#readme)

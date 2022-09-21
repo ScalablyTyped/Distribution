@@ -1,7 +1,7 @@
 package typings.vsoNodeApi
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.ReadableStream
+import typings.std.ReadableStream
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
 import typings.vsoNodeApi.taskAgentInterfacesMod.AadLoginPromptOption
 import typings.vsoNodeApi.taskAgentInterfacesMod.AadOauthTokenRequest
@@ -52,7 +52,7 @@ object taskAgentApiBaseMod {
   
   @JSImport("vso-node-api/TaskAgentApiBase", "TaskAgentApiBase")
   @js.native
-  class TaskAgentApiBase protected () extends ITaskAgentApiBase {
+  open class TaskAgentApiBase protected () extends ITaskAgentApiBase {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
@@ -121,8 +121,8 @@ object taskAgentApiBaseMod {
     
     def deleteVariableGroup(project: String, groupId: Double): js.Promise[Unit] = js.native
     
-    def downloadSecureFile(project: String, secureFileId: String, ticket: String): js.Promise[ReadableStream] = js.native
-    def downloadSecureFile(project: String, secureFileId: String, ticket: String, download: Boolean): js.Promise[ReadableStream] = js.native
+    def downloadSecureFile(project: String, secureFileId: String, ticket: String): js.Promise[ReadableStream[Any]] = js.native
+    def downloadSecureFile(project: String, secureFileId: String, ticket: String, download: Boolean): js.Promise[ReadableStream[Any]] = js.native
     
     def executeServiceEndpointRequest(serviceEndpointRequest: ServiceEndpointRequest, project: String, endpointId: String): js.Promise[ServiceEndpointRequestResult] = js.native
     
@@ -174,7 +174,7 @@ object taskAgentApiBaseMod {
     
     def getAgentPoolMaintenanceJob(poolId: Double, jobId: Double): js.Promise[TaskAgentPoolMaintenanceJob] = js.native
     
-    def getAgentPoolMaintenanceJobLogs(poolId: Double, jobId: Double): js.Promise[ReadableStream] = js.native
+    def getAgentPoolMaintenanceJobLogs(poolId: Double, jobId: Double): js.Promise[ReadableStream[Any]] = js.native
     
     def getAgentPoolMaintenanceJobs(poolId: Double): js.Promise[js.Array[TaskAgentPoolMaintenanceJob]] = js.native
     def getAgentPoolMaintenanceJobs(poolId: Double, definitionId: Double): js.Promise[js.Array[TaskAgentPoolMaintenanceJob]] = js.native
@@ -606,10 +606,10 @@ object taskAgentApiBaseMod {
     ): js.Promise[js.Array[ServiceEndpoint]] = js.native
     def getServiceEndpoints(project: String, `type`: Unit, authSchemes: Unit, endpointIds: Unit, includeFailed: Boolean): js.Promise[js.Array[ServiceEndpoint]] = js.native
     
-    def getTaskContentZip(taskId: String, versionString: String): js.Promise[ReadableStream] = js.native
-    def getTaskContentZip(taskId: String, versionString: String, visibility: js.Array[String]): js.Promise[ReadableStream] = js.native
-    def getTaskContentZip(taskId: String, versionString: String, visibility: js.Array[String], scopeLocal: Boolean): js.Promise[ReadableStream] = js.native
-    def getTaskContentZip(taskId: String, versionString: String, visibility: Unit, scopeLocal: Boolean): js.Promise[ReadableStream] = js.native
+    def getTaskContentZip(taskId: String, versionString: String): js.Promise[ReadableStream[Any]] = js.native
+    def getTaskContentZip(taskId: String, versionString: String, visibility: js.Array[String]): js.Promise[ReadableStream[Any]] = js.native
+    def getTaskContentZip(taskId: String, versionString: String, visibility: js.Array[String], scopeLocal: Boolean): js.Promise[ReadableStream[Any]] = js.native
+    def getTaskContentZip(taskId: String, versionString: String, visibility: Unit, scopeLocal: Boolean): js.Promise[ReadableStream[Any]] = js.native
     
     def getTaskDefinition(taskId: String, versionString: String): js.Promise[TaskDefinition] = js.native
     def getTaskDefinition(taskId: String, versionString: String, visibility: js.Array[String]): js.Promise[TaskDefinition] = js.native
@@ -627,7 +627,7 @@ object taskAgentApiBaseMod {
     
     def getTaskGroupHistory(project: String, taskGroupId: String): js.Promise[js.Array[TaskGroupRevision]] = js.native
     
-    def getTaskGroupRevision(project: String, taskGroupId: String, revision: Double): js.Promise[ReadableStream] = js.native
+    def getTaskGroupRevision(project: String, taskGroupId: String, revision: Double): js.Promise[ReadableStream[Any]] = js.native
     
     def getTaskGroups(project: String): js.Promise[js.Array[TaskGroup]] = js.native
     def getTaskGroups(project: String, taskGroupId: String): js.Promise[js.Array[TaskGroup]] = js.native
@@ -705,7 +705,7 @@ object taskAgentApiBaseMod {
     
     def updateVariableGroup(group: VariableGroup, project: String, groupId: Double): js.Promise[VariableGroup] = js.native
     
-    def uploadSecureFile(customHeaders: js.Any, contentStream: ReadableStream, project: String, name: String): js.Promise[SecureFile] = js.native
+    def uploadSecureFile(customHeaders: Any, contentStream: ReadableStream[Any], project: String, name: String): js.Promise[SecureFile] = js.native
     
     def validateInputs(inputValidationRequest: InputValidationRequest): js.Promise[InputValidationRequest] = js.native
   }

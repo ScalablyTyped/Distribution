@@ -17,7 +17,7 @@ object Core {
        with ICoreApplicationView
   object CoreApplicationView {
     
-    inline def apply(coreWindow: CoreWindow, isHosted: Boolean, isMain: Boolean, onactivated: js.Any): CoreApplicationView = {
+    inline def apply(coreWindow: CoreWindow, isHosted: Boolean, isMain: Boolean, onactivated: Any): CoreApplicationView = {
       val __obj = js.Dynamic.literal(coreWindow = coreWindow.asInstanceOf[js.Any], isHosted = isHosted.asInstanceOf[js.Any], isMain = isMain.asInstanceOf[js.Any], onactivated = onactivated.asInstanceOf[js.Any])
       __obj.asInstanceOf[CoreApplicationView]
     }
@@ -29,9 +29,9 @@ object Core {
     
     var id: String
     
-    var onresuming: js.Any
+    var onresuming: Any
     
-    var onsuspending: js.Any
+    var onsuspending: Any
     
     var properties: IPropertySet
     
@@ -44,8 +44,8 @@ object Core {
     inline def apply(
       getCurrentView: () => CoreApplicationView,
       id: String,
-      onresuming: js.Any,
-      onsuspending: js.Any,
+      onresuming: Any,
+      onsuspending: Any,
       properties: IPropertySet,
       run: IFrameworkViewSource => Unit,
       runWithActivationFactories: IGetActivationFactory => Unit
@@ -60,9 +60,9 @@ object Core {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setOnresuming(value: js.Any): Self = StObject.set(x, "onresuming", value.asInstanceOf[js.Any])
+      inline def setOnresuming(value: Any): Self = StObject.set(x, "onresuming", value.asInstanceOf[js.Any])
       
-      inline def setOnsuspending(value: js.Any): Self = StObject.set(x, "onsuspending", value.asInstanceOf[js.Any])
+      inline def setOnsuspending(value: Any): Self = StObject.set(x, "onsuspending", value.asInstanceOf[js.Any])
       
       inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
@@ -76,11 +76,11 @@ object Core {
     
     def exit(): Unit
     
-    var onexiting: js.Any
+    var onexiting: Any
   }
   object ICoreApplicationExit {
     
-    inline def apply(exit: () => Unit, onexiting: js.Any): ICoreApplicationExit = {
+    inline def apply(exit: () => Unit, onexiting: Any): ICoreApplicationExit = {
       val __obj = js.Dynamic.literal(exit = js.Any.fromFunction0(exit), onexiting = onexiting.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICoreApplicationExit]
     }
@@ -89,7 +89,7 @@ object Core {
       
       inline def setExit(value: () => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
       
-      inline def setOnexiting(value: js.Any): Self = StObject.set(x, "onexiting", value.asInstanceOf[js.Any])
+      inline def setOnexiting(value: Any): Self = StObject.set(x, "onexiting", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,11 +122,11 @@ object Core {
     
     var isMain: Boolean
     
-    var onactivated: js.Any
+    var onactivated: Any
   }
   object ICoreApplicationView {
     
-    inline def apply(coreWindow: CoreWindow, isHosted: Boolean, isMain: Boolean, onactivated: js.Any): ICoreApplicationView = {
+    inline def apply(coreWindow: CoreWindow, isHosted: Boolean, isMain: Boolean, onactivated: Any): ICoreApplicationView = {
       val __obj = js.Dynamic.literal(coreWindow = coreWindow.asInstanceOf[js.Any], isHosted = isHosted.asInstanceOf[js.Any], isMain = isMain.asInstanceOf[js.Any], onactivated = onactivated.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICoreApplicationView]
     }
@@ -139,7 +139,7 @@ object Core {
       
       inline def setIsMain(value: Boolean): Self = StObject.set(x, "isMain", value.asInstanceOf[js.Any])
       
-      inline def setOnactivated(value: js.Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
+      inline def setOnactivated(value: Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
     }
   }
   

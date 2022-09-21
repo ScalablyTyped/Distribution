@@ -10,10 +10,10 @@ Calculate the Euclidean distance been two points in 2D/3D/nD space.
 | ------------------ | :-------------: |
 | Full name          | euclidean-distance |
 | Keywords           | distance, space, 3d, 2d, math, euclid, color, Lab, L*a*b*, Delta-E, dE, visualization, browser |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 83332 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2358.3333333333335 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](https://github.com/zeke/euclidean-distance#readme)

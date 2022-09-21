@@ -33,6 +33,6 @@ object DescribeScalingPlanResourcesResponse {
     
     inline def setScalingPlanResourcesUndefined: Self = StObject.set(x, "ScalingPlanResources", js.undefined)
     
-    inline def setScalingPlanResourcesVarargs(value: ScalingPlanResource*): Self = StObject.set(x, "ScalingPlanResources", js.Array(value :_*))
+    inline def setScalingPlanResourcesVarargs(value: ScalingPlanResource*): Self = StObject.set(x, "ScalingPlanResources", js.Array(value*))
   }
 }

@@ -12,7 +12,7 @@ trait PropertyDifference extends StObject {
   var ActualValue: PropertyValue
   
   /**
-    * The type of property difference.    ADD: A value has been added to a resource property that is an array or list data type.    REMOVE: The property has been removed from the current resource configuration.    NOT_EQUAL: The current property value differs from its expected value (as defined in the stack template and any values specified as template parameters).  
+    * The type of property difference.    ADD: A value has been added to a resource property that's an array or list data type.    REMOVE: The property has been removed from the current resource configuration.    NOT_EQUAL: The current property value differs from its expected value (as defined in the stack template and any values specified as template parameters).  
     */
   var DifferenceType: typings.awsSdk.cloudformationMod.DifferenceType
   

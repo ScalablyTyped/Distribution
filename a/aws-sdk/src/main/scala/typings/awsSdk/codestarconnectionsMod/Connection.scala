@@ -32,7 +32,7 @@ trait Connection extends StObject {
   var OwnerAccountId: js.UndefOr[AccountId] = js.undefined
   
   /**
-    * The name of the external provider where your third-party code repository is configured. The valid provider type is Bitbucket.
+    * The name of the external provider where your third-party code repository is configured.
     */
   var ProviderType: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ProviderType] = js.undefined
 }

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param start The interval's start position.
   * @param length The interval's length.
   */
-class Interval ()
+open class Interval ()
   extends StObject
      with typings.devexpressWeb.Interval {
   def this(start: Double) = this()

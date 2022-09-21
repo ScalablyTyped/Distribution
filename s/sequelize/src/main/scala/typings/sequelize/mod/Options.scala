@@ -31,7 +31,7 @@ trait Options extends StObject {
   /**
     * Default options for model definitions. See sequelize.define for options
     */
-  var define: js.UndefOr[DefineOptions[js.Any]] = js.undefined
+  var define: js.UndefOr[DefineOptions[Any]] = js.undefined
   
   /**
     * The dialect of the database you are connecting to. One of mysql, postgres, sqlite, mariadb and mssql.
@@ -221,7 +221,7 @@ object Options {
     
     inline def setDatabaseVersionUndefined: Self = StObject.set(x, "databaseVersion", js.undefined)
     
-    inline def setDefine(value: DefineOptions[js.Any]): Self = StObject.set(x, "define", value.asInstanceOf[js.Any])
+    inline def setDefine(value: DefineOptions[Any]): Self = StObject.set(x, "define", value.asInstanceOf[js.Any])
     
     inline def setDefineUndefined: Self = StObject.set(x, "define", js.undefined)
     

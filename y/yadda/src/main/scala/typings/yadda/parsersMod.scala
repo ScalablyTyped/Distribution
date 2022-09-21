@@ -11,14 +11,14 @@ object parsersMod {
   
   @JSImport("yadda/lib/parsers", "FeatureFileParser")
   @js.native
-  class FeatureFileParser () extends ^ {
+  open class FeatureFileParser () extends ^ {
     def this(language: typings.yadda.languageMod.^[Library]) = this()
     def this(options: Options) = this()
   }
   
   @JSImport("yadda/lib/parsers", "FeatureParser")
   @js.native
-  class FeatureParser ()
+  open class FeatureParser ()
     extends typings.yadda.featureParserMod.^ {
     def this(language: typings.yadda.languageMod.^[Library]) = this()
     def this(options: Options) = this()
@@ -26,6 +26,6 @@ object parsersMod {
   
   @JSImport("yadda/lib/parsers", "StepParser")
   @js.native
-  class StepParser ()
+  open class StepParser ()
     extends typings.yadda.stepParserMod.^
 }

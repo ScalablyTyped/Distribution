@@ -10,9 +10,9 @@ read(1) for node programs
 | Full name          | read |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 598 |
-| # downloads        | 112607487 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8108581E7 |
+| # stars            | 170.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/read#readme)

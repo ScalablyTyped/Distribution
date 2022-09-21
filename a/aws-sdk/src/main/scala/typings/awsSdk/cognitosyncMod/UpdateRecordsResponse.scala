@@ -24,6 +24,6 @@ object UpdateRecordsResponse {
     
     inline def setRecordsUndefined: Self = StObject.set(x, "Records", js.undefined)
     
-    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value*))
   }
 }

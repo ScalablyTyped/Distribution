@@ -12,7 +12,7 @@ trait PolySynth extends StObject {
     *   that is triggered. The p5.PolySynth defaults to
     *   using the p5.MonoSynth as its voice.
     */
-  var AudioVoice: js.Any = js.native
+  var AudioVoice: Any = js.native
   
   /**
     *   Connect to a p5.sound / Web Audio object.
@@ -136,7 +136,7 @@ trait PolySynth extends StObject {
     *   which is generating that note. When notes are
     *   released, the value of the key becomes undefined.
     */
-  var notes: js.Any = js.native
+  var notes: Any = js.native
   
   /**
     *   Play a note by triggering noteAttack and
@@ -171,7 +171,7 @@ trait PolySynth extends StObject {
     *   A PolySynth must have at least 1 voice, defaults
     *   to 8
     */
-  var polyvalue: js.Any = js.native
+  var polyvalue: Any = js.native
   
   /**
     *   Set the PolySynths global envelope. This method

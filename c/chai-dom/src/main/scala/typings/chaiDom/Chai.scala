@@ -16,6 +16,8 @@ object Chai {
     def attribute(name: String): Assertion = js.native
     def attribute(name: String, value: String): Assertion = js.native
     
+    var checked: Assertion = js.native
+    
     def `class`(className: String): Assertion = js.native
     
     // exist, length, and contain are already defined in @types/chai and have the
@@ -30,9 +32,15 @@ object Chai {
     
     var empty: Assertion = js.native
     
+    var focus: Assertion = js.native
+    
     def html(html: String): Assertion = js.native
     
     def id(id: String): Assertion = js.native
+    
+    var rendered: Assertion = js.native
+    
+    def style(property: String, value: String): Assertion = js.native
     
     def tagName(name: String): Assertion = js.native
     

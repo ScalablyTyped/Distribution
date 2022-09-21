@@ -13,9 +13,21 @@ trait TaskServicesProvider
   
   def getAllTasks(listTasksParams: ListTasksParams): Thenable[ListTasksResponse]
   
-  def registerOnTaskCreated(handler: js.Function1[/* response */ TaskInfo, js.Any]): Unit
+  /**
+    * Registers a handler for TaskCreated events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  def registerOnTaskCreated(handler: js.Function1[/* response */ TaskInfo, Any]): Unit
   
-  def registerOnTaskStatusChanged(handler: js.Function1[/* response */ TaskProgressInfo, js.Any]): Unit
+  /**
+    * Registers a handler for TaskStatusChanged events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  def registerOnTaskStatusChanged(handler: js.Function1[/* response */ TaskProgressInfo, Any]): Unit
 }
 object TaskServicesProvider {
   
@@ -23,8 +35,8 @@ object TaskServicesProvider {
     cancelTask: CancelTaskParams => Thenable[Boolean],
     getAllTasks: ListTasksParams => Thenable[ListTasksResponse],
     providerId: String,
-    registerOnTaskCreated: js.Function1[/* response */ TaskInfo, js.Any] => Unit,
-    registerOnTaskStatusChanged: js.Function1[/* response */ TaskProgressInfo, js.Any] => Unit
+    registerOnTaskCreated: js.Function1[/* response */ TaskInfo, Any] => Unit,
+    registerOnTaskStatusChanged: js.Function1[/* response */ TaskProgressInfo, Any] => Unit
   ): TaskServicesProvider = {
     val __obj = js.Dynamic.literal(cancelTask = js.Any.fromFunction1(cancelTask), getAllTasks = js.Any.fromFunction1(getAllTasks), providerId = providerId.asInstanceOf[js.Any], registerOnTaskCreated = js.Any.fromFunction1(registerOnTaskCreated), registerOnTaskStatusChanged = js.Any.fromFunction1(registerOnTaskStatusChanged))
     __obj.asInstanceOf[TaskServicesProvider]
@@ -36,8 +48,8 @@ object TaskServicesProvider {
     
     inline def setGetAllTasks(value: ListTasksParams => Thenable[ListTasksResponse]): Self = StObject.set(x, "getAllTasks", js.Any.fromFunction1(value))
     
-    inline def setRegisterOnTaskCreated(value: js.Function1[/* response */ TaskInfo, js.Any] => Unit): Self = StObject.set(x, "registerOnTaskCreated", js.Any.fromFunction1(value))
+    inline def setRegisterOnTaskCreated(value: js.Function1[/* response */ TaskInfo, Any] => Unit): Self = StObject.set(x, "registerOnTaskCreated", js.Any.fromFunction1(value))
     
-    inline def setRegisterOnTaskStatusChanged(value: js.Function1[/* response */ TaskProgressInfo, js.Any] => Unit): Self = StObject.set(x, "registerOnTaskStatusChanged", js.Any.fromFunction1(value))
+    inline def setRegisterOnTaskStatusChanged(value: js.Function1[/* response */ TaskProgressInfo, Any] => Unit): Self = StObject.set(x, "registerOnTaskStatusChanged", js.Any.fromFunction1(value))
   }
 }

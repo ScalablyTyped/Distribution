@@ -6,8 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IamPolicySearchResult extends StObject {
   
+  /**
+    * The type of the resource associated with this IAM policy. Example: `compute.googleapis.com/Disk`. To search against the `asset_type`: * specify the `asset_types` field in your
+    * search request.
+    */
+  var assetType: js.UndefOr[String] = js.undefined
+  
   /** Explanation about the IAM policy search result. It contains additional information to explain why the search result matches the query. */
   var explanation: js.UndefOr[Explanation] = js.undefined
+  
+  /**
+    * The folder(s) that the IAM policy belongs to, in the form of folders/{FOLDER_NUMBER}. This field is available when the IAM policy belongs to one or more folders. To search against
+    * `folders`: * use a field query. Example: `folders:(123 OR 456)` * use a free text query. Example: `123` * specify the `scope` field as this folder in your search request.
+    */
+  var folders: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * The organization that the IAM policy belongs to, in the form of organizations/{ORGANIZATION_NUMBER}. This field is available when the IAM policy belongs to an organization. To
+    * search against `organization`: * use a field query. Example: `organization:123` * use a free text query. Example: `123` * specify the `scope` field as this organization in your
+    * search request.
+    */
+  var organization: js.UndefOr[String] = js.undefined
   
   /**
     * The IAM policy directly set on the given resource. Note that the original IAM policy can contain multiple bindings. This only contains the bindings that match the given query. For
@@ -19,7 +38,7 @@ trait IamPolicySearchResult extends StObject {
   
   /**
     * The project that the associated GCP resource belongs to, in the form of projects/{PROJECT_NUMBER}. If an IAM policy is set on a resource (like VM instance, Cloud Storage bucket),
-    * the project field will indicate the project that contains the resource. If an IAM policy is set on a folder or orgnization, the project field will be empty. To search against the
+    * the project field will indicate the project that contains the resource. If an IAM policy is set on a folder or orgnization, this field will be empty. To search against the
     * `project`: * specify the `scope` field as this project in your search request.
     */
   var project: js.UndefOr[String] = js.undefined
@@ -40,9 +59,23 @@ object IamPolicySearchResult {
   
   extension [Self <: IamPolicySearchResult](x: Self) {
     
+    inline def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
+    
+    inline def setAssetTypeUndefined: Self = StObject.set(x, "assetType", js.undefined)
+    
     inline def setExplanation(value: Explanation): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
     
     inline def setExplanationUndefined: Self = StObject.set(x, "explanation", js.undefined)
+    
+    inline def setFolders(value: js.Array[String]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
+    
+    inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
+    
+    inline def setFoldersVarargs(value: String*): Self = StObject.set(x, "folders", js.Array(value*))
+    
+    inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+    
+    inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
     inline def setPolicy(value: Policy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     

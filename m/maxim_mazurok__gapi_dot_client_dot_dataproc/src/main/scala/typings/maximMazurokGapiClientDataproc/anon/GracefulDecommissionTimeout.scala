@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataproc.anon
 
-import typings.maximMazurokGapiClientDataproc.gapi.client.dataproc.Cluster
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,15 +52,16 @@ trait GracefulDecommissionTimeout extends StObject {
   var region: String
   
   /**
-    * Optional. A unique id used to identify the request. If the server receives two UpdateClusterRequest requests with the same id, then the second request will be ignored and the
-    * first google.longrunning.Operation created and stored in the backend is returned.It is recommended to always set this value to a UUID
-    * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The id must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-). The maximum length is
+    * Optional. A unique ID used to identify the request. If the server receives two UpdateClusterRequest
+    * (https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1#google.cloud.dataproc.v1.UpdateClusterRequest)s with the same id, then the second request will be
+    * ignored and the first google.longrunning.Operation created and stored in the backend is returned.It is recommended to always set this value to a UUID
+    * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The ID must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-). The maximum length is
     * 40 characters.
     */
   var requestId: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Cluster
+  var resource: typings.maximMazurokGapiClientDataproc.gapi.client.dataproc.Cluster
   
   /**
     * Required. Specifies the path, relative to Cluster, of the field to update. For example, to change the number of workers in a cluster to 5, the update_mask parameter would be
@@ -81,7 +81,12 @@ trait GracefulDecommissionTimeout extends StObject {
 }
 object GracefulDecommissionTimeout {
   
-  inline def apply(clusterName: String, projectId: String, region: String, resource: Cluster): GracefulDecommissionTimeout = {
+  inline def apply(
+    clusterName: String,
+    projectId: String,
+    region: String,
+    resource: typings.maximMazurokGapiClientDataproc.gapi.client.dataproc.Cluster
+  ): GracefulDecommissionTimeout = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[GracefulDecommissionTimeout]
   }
@@ -138,7 +143,7 @@ object GracefulDecommissionTimeout {
     
     inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
-    inline def setResource(value: Cluster): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: typings.maximMazurokGapiClientDataproc.gapi.client.dataproc.Cluster): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

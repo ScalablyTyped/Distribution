@@ -29,7 +29,7 @@ object GetActiveNamesResult {
     
     inline def setActiveNamesUndefined: Self = StObject.set(x, "activeNames", js.undefined)
     
-    inline def setActiveNamesVarargs(value: String*): Self = StObject.set(x, "activeNames", js.Array(value :_*))
+    inline def setActiveNamesVarargs(value: String*): Self = StObject.set(x, "activeNames", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

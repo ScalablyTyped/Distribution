@@ -18,7 +18,6 @@ import typings.scBroker.scBrokerStrings.subscribeFail
 import typings.scBroker.scBrokerStrings.unsubscribe
 import typings.scBroker.scBrokerStrings.warning
 import typings.scBroker.scbrokerMod.SCBrokerOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,8 +73,8 @@ object mod {
   
   type BrokerMessageListener = js.Function3[
     /* brokerId */ String, 
-    /* data */ js.Any, 
-    /* callback */ js.Function2[/* err */ Error | Null, /* data */ js.Any, Unit], 
+    /* data */ Any, 
+    /* callback */ js.Function2[/* err */ js.Error | Null, /* data */ Any, Unit], 
     Unit
   ]
   
@@ -112,7 +111,7 @@ object mod {
     
     var baseKey: js.UndefOr[KeyChain] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var noAck: js.UndefOr[Boolean] = js.undefined
   }
@@ -129,7 +128,7 @@ object mod {
       
       inline def setBaseKeyUndefined: Self = StObject.set(x, "baseKey", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -148,94 +147,94 @@ object mod {
     
     val DISCONNECTED: disconnected = js.native
     
-    def add(keyChain: KeyChain, value: js.Any): Unit = js.native
-    def add(keyChain: KeyChain, value: js.Any, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-    def add(keyChain: KeyChain, value: js.Any, getValue: Boolean): Unit = js.native
+    def add(keyChain: KeyChain, value: Any): Unit = js.native
+    def add(keyChain: KeyChain, value: Any, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
+    def add(keyChain: KeyChain, value: Any, getValue: Boolean): Unit = js.native
     def add(
       keyChain: KeyChain,
-      value: js.Any,
+      value: Any,
       getValue: Boolean,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     def add(
       keyChain: KeyChain,
-      value: js.Any,
+      value: Any,
       getValue: Unit,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     
     var autoReconnect: Boolean = js.native
     
     var autoReconnectOptions: js.UndefOr[AutoReconnectOptions] = js.native
     
-    def concat(keyChain: KeyChain, value: js.Any): Unit = js.native
-    def concat(keyChain: KeyChain, value: js.Any, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-    def concat(keyChain: KeyChain, value: js.Any, getValue: Boolean): Unit = js.native
+    def concat(keyChain: KeyChain, value: Any): Unit = js.native
+    def concat(keyChain: KeyChain, value: Any, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
+    def concat(keyChain: KeyChain, value: Any, getValue: Boolean): Unit = js.native
     def concat(
       keyChain: KeyChain,
-      value: js.Any,
+      value: Any,
       getValue: Boolean,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     def concat(
       keyChain: KeyChain,
-      value: js.Any,
+      value: Any,
       getValue: Unit,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     
     var connectAttempts: Double = js.native
     
     var connectRetryErrorThreshold: Double = js.native
     
-    def count(keyChain: KeyChain, callback: js.Function2[/* err */ Error | Null, /* value */ Double, Unit]): Unit = js.native
+    def count(keyChain: KeyChain, callback: js.Function2[/* err */ js.Error | Null, /* value */ Double, Unit]): Unit = js.native
     
-    def end(callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def end(callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     def exec(query: js.Function1[/* datamap */ FlexiMap, Unit]): Unit = js.native
     def exec(
       query: js.Function1[/* datamap */ FlexiMap, Unit],
-      callback: js.Function2[/* err */ Error | Null, /* data */ js.Any, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* data */ Any, Unit]
     ): Unit = js.native
     def exec(
       query: js.Function1[/* datamap */ FlexiMap, Unit],
       options: Unit,
-      callback: js.Function2[/* err */ Error | Null, /* data */ js.Any, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* data */ Any, Unit]
     ): Unit = js.native
     def exec(query: js.Function1[/* datamap */ FlexiMap, Unit], options: QueryOptions): Unit = js.native
     def exec(
       query: js.Function1[/* datamap */ FlexiMap, Unit],
       options: QueryOptions,
-      callback: js.Function2[/* err */ Error | Null, /* data */ js.Any, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* data */ Any, Unit]
     ): Unit = js.native
     
     def expire(keys: Keys, seconds: Double): Unit = js.native
-    def expire(keys: Keys, seconds: Double, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def expire(keys: Keys, seconds: Double, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     def extractKeys(keyChain: KeyChain): js.Array[String] = js.native
     
-    def extractValues(keyChain: KeyChain): js.Array[js.Any] = js.native
+    def extractValues(keyChain: KeyChain): js.Array[Any] = js.native
     
-    def get(keyChain: KeyChain, callback: js.Function2[/* err */ Error | Null, /* value */ js.Any, Unit]): Unit = js.native
+    def get(keyChain: KeyChain, callback: js.Function2[/* err */ js.Error | Null, /* value */ Any, Unit]): Unit = js.native
     
-    def getAll(callback: js.Function2[/* err */ Error | Null, /* value */ js.Array[js.Any] | js.Object, Unit]): Unit = js.native
+    def getAll(callback: js.Function2[/* err */ js.Error | Null, /* value */ js.Array[Any] | js.Object, Unit]): Unit = js.native
     
     def getExpiry(key: Key): Double = js.native
-    def getExpiry(key: Key, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Double = js.native
+    def getExpiry(key: Key, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Double = js.native
     
     def getRange(
       keyChain: KeyChain,
       fromIndex: Double,
-      callback: js.Function2[/* err */ Error | Null, /* value */ js.Any, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* value */ Any, Unit]
     ): Unit = js.native
     def getRange(
       keyChain: KeyChain,
       fromIndex: Double,
       toIndex: Double,
-      callback: js.Function2[/* err */ Error | Null, /* value */ js.Any, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* value */ Any, Unit]
     ): Unit = js.native
     
-    def hasKey(keyChain: KeyChain, callback: js.Function2[/* err */ Error | Null, /* data */ Boolean, Unit]): Unit = js.native
+    def hasKey(keyChain: KeyChain, callback: js.Function2[/* err */ js.Error | Null, /* data */ Boolean, Unit]): Unit = js.native
     
     var host: js.UndefOr[String] = js.native
     
@@ -245,64 +244,75 @@ object mod {
     def isSubscribed(channel: String, includePending: Boolean): Boolean = js.native
     
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ js.UndefOr[Error], Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): this.type = js.native
     @JSName("on")
-    def on_message(event: message, listener: js.Function2[/* channel */ String, /* data */ js.Any, Unit]): this.type = js.native
+    def on_message(event: message, listener: js.Function2[/* channel */ String, /* data */ Any, Unit]): this.type = js.native
     @JSName("on")
-    def on_ready(event: ready, listener: js.Function1[/* data */ js.Any, Unit]): this.type = js.native
+    def on_ready(event: ready, listener: js.Function1[/* data */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_subscribe(event: subscribe, listener: js.Function1[/* channel */ String, Unit]): this.type = js.native
     @JSName("on")
-    def on_subscribeFail(event: subscribeFail, listener: js.Function2[/* err */ Error | Null, /* channel */ String, Unit]): this.type = js.native
+    def on_subscribeFail(
+      event: subscribeFail,
+      listener: js.Function2[/* err */ js.Error | Null, /* channel */ String, Unit]
+    ): this.type = js.native
     @JSName("on")
     def on_unsubscribe(event: unsubscribe, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_warning(event: warning, listener: js.Function1[/* warning */ js.UndefOr[Error], Unit]): this.type = js.native
+    def on_warning(event: warning, listener: js.Function1[/* warning */ js.UndefOr[js.Error], Unit]): this.type = js.native
     
     var pendingReconnect: Boolean = js.native
     
     var pendingReconnectTimeout: Double | Null = js.native
     
-    def pop(keyChain: KeyChain, callback: js.Function2[/* err */ Error | Null, /* data */ js.Any, Unit]): Unit = js.native
+    def pop(keyChain: KeyChain, callback: js.Function2[/* err */ js.Error | Null, /* data */ Any, Unit]): Unit = js.native
     
     var port: js.UndefOr[Double] = js.native
     
-    def publish(channel: String, data: js.Any, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def publish(channel: String, data: Any, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     def query(query: js.Function1[/* datamap */ FlexiMap, Unit]): Unit = js.native
     def query(
       query: js.Function1[/* datamap */ FlexiMap, Unit],
-      callback: js.Function2[/* err */ Error | Null, /* data */ js.Any, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* data */ Any, Unit]
     ): Unit = js.native
-    def query(query: js.Function1[/* datamap */ FlexiMap, Unit], data: js.Any): Unit = js.native
+    def query(query: js.Function1[/* datamap */ FlexiMap, Unit], data: Any): Unit = js.native
     def query(
       query: js.Function1[/* datamap */ FlexiMap, Unit],
-      data: js.Any,
-      callback: js.Function2[/* err */ Error | Null, /* data */ js.Any, Unit]
+      data: Any,
+      callback: js.Function2[/* err */ js.Error | Null, /* data */ Any, Unit]
     ): Unit = js.native
     def query(
       query: js.Function1[/* datamap */ FlexiMap, Unit],
       data: Unit,
-      callback: js.Function2[/* err */ Error | Null, /* data */ js.Any, Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* data */ Any, Unit]
     ): Unit = js.native
     
     def remove(keyChain: KeyChain): Unit = js.native
-    def remove(keyChain: KeyChain, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def remove(keyChain: KeyChain, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     def remove(keyChain: KeyChain, getValue: Boolean): Unit = js.native
-    def remove(keyChain: KeyChain, getValue: Boolean, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-    def remove(keyChain: KeyChain, getValue: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def remove(
+      keyChain: KeyChain,
+      getValue: Boolean,
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+    ): Unit = js.native
+    def remove(keyChain: KeyChain, getValue: Unit, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     def removeAll(): Unit = js.native
-    def removeAll(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def removeAll(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
     def removeRange(keyChain: KeyChain, fromIndex: Double): Unit = js.native
-    def removeRange(keyChain: KeyChain, fromIndex: Double, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def removeRange(
+      keyChain: KeyChain,
+      fromIndex: Double,
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
+    ): Unit = js.native
     def removeRange(keyChain: KeyChain, fromIndex: Double, toIndex: Double): Unit = js.native
     def removeRange(
       keyChain: KeyChain,
       fromIndex: Double,
       toIndex: Double,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     def removeRange(keyChain: KeyChain, fromIndex: Double, toIndex: Double, getValue: Boolean): Unit = js.native
     def removeRange(
@@ -310,20 +320,20 @@ object mod {
       fromIndex: Double,
       toIndex: Double,
       getValue: Boolean,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     def removeRange(
       keyChain: KeyChain,
       fromIndex: Double,
       toIndex: Double,
       getValue: Unit,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     def removeRange(
       keyChain: KeyChain,
       fromIndex: Double,
       toIndex: Unit,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     def removeRange(keyChain: KeyChain, fromIndex: Double, toIndex: Unit, getValue: Boolean): Unit = js.native
     def removeRange(
@@ -331,58 +341,58 @@ object mod {
       fromIndex: Double,
       toIndex: Unit,
       getValue: Boolean,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     def removeRange(
       keyChain: KeyChain,
       fromIndex: Double,
       toIndex: Unit,
       getValue: Unit,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     
-    def send(data: js.Any, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def send(data: Any, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
-    def set(keyChain: KeyChain, value: js.Any): Unit = js.native
-    def set(keyChain: KeyChain, value: js.Any, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-    def set(keyChain: KeyChain, value: js.Any, getValue: Boolean): Unit = js.native
+    def set(keyChain: KeyChain, value: Any): Unit = js.native
+    def set(keyChain: KeyChain, value: Any, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
+    def set(keyChain: KeyChain, value: Any, getValue: Boolean): Unit = js.native
     def set(
       keyChain: KeyChain,
-      value: js.Any,
+      value: Any,
       getValue: Boolean,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     def set(
       keyChain: KeyChain,
-      value: js.Any,
+      value: Any,
       getValue: Unit,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     
     var socketPath: js.UndefOr[String] = js.native
     
     def splice(keyChain: KeyChain): Unit = js.native
-    def splice(keyChain: KeyChain, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-    def splice(keyChain: KeyChain, options: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def splice(keyChain: KeyChain, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
+    def splice(keyChain: KeyChain, options: Unit, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     def splice(keyChain: KeyChain, options: SpliceOptions): Unit = js.native
     def splice(
       keyChain: KeyChain,
       options: SpliceOptions,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+      callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]
     ): Unit = js.native
     
     var state: connected | connecting | disconnected = js.native
     
-    def subscribe(channel: String, ackCallback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-    def subscribe(channel: String, ackCallback: js.Function1[/* err */ js.UndefOr[Error], Unit], force: Boolean): Unit = js.native
+    def subscribe(channel: String, ackCallback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
+    def subscribe(channel: String, ackCallback: js.Function1[/* err */ js.UndefOr[js.Error], Unit], force: Boolean): Unit = js.native
     
     def subscriptions(): js.Array[String] = js.native
     def subscriptions(includePending: Boolean): js.Array[String] = js.native
     
     def unexpire(keys: Keys): Unit = js.native
-    def unexpire(keys: Keys, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def unexpire(keys: Keys, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
-    def unsubscribe(channel: String, ackCallback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def unsubscribe(channel: String, ackCallback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
   }
   
   trait SCBrokerClientOptions extends StObject {
@@ -462,29 +472,29 @@ object mod {
     @JSName("off")
     def off_brokerMessage(event: brokerMessage, listener: BrokerMessageListener): this.type = js.native
     @JSName("off")
-    def off_error(event: error, listener: js.Function1[/* err */ js.UndefOr[Error], Unit]): this.type = js.native
+    def off_error(event: error, listener: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): this.type = js.native
     @JSName("off")
     def off_exit(event: exit, listener: js.Function1[/* data */ ExitData, Unit]): this.type = js.native
     @JSName("off")
-    def off_ready(event: ready, listener: js.Function1[/* data */ js.Any, Unit]): this.type = js.native
+    def off_ready(event: ready, listener: js.Function1[/* data */ Any, Unit]): this.type = js.native
     
     @JSName("on")
     def on_brokerMessage(event: brokerMessage, listener: BrokerMessageListener): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ js.UndefOr[Error], Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): this.type = js.native
     @JSName("on")
     def on_exit(event: exit, listener: js.Function1[/* data */ ExitData, Unit]): this.type = js.native
     @JSName("on")
-    def on_ready(event: ready, listener: js.Function1[/* data */ js.Any, Unit]): this.type = js.native
+    def on_ready(event: ready, listener: js.Function1[/* data */ Any, Unit]): this.type = js.native
     
     @JSName("once")
     def once_brokerMessage(event: brokerMessage, listener: BrokerMessageListener): this.type = js.native
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ js.UndefOr[Error], Unit]): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): this.type = js.native
     @JSName("once")
     def once_exit(event: exit, listener: js.Function1[/* data */ ExitData, Unit]): this.type = js.native
     @JSName("once")
-    def once_ready(event: ready, listener: js.Function1[/* data */ js.Any, Unit]): this.type = js.native
+    def once_ready(event: ready, listener: js.Function1[/* data */ Any, Unit]): this.type = js.native
     
     var options: SCBrokerServerOptions = js.native
     
@@ -493,16 +503,16 @@ object mod {
     @JSName("removeListener")
     def removeListener_brokerMessage(event: brokerMessage, listener: BrokerMessageListener): this.type = js.native
     @JSName("removeListener")
-    def removeListener_error(event: error, listener: js.Function1[/* err */ js.UndefOr[Error], Unit]): this.type = js.native
+    def removeListener_error(event: error, listener: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_exit(event: exit, listener: js.Function1[/* data */ ExitData, Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_ready(event: ready, listener: js.Function1[/* data */ js.Any, Unit]): this.type = js.native
+    def removeListener_ready(event: ready, listener: js.Function1[/* data */ Any, Unit]): this.type = js.native
     
-    def sendToBroker(data: js.Any): Unit = js.native
+    def sendToBroker(data: Any): Unit = js.native
     def sendToBroker(
-      data: js.Any,
-      callback: js.Function3[/* err */ Error | Null, /* data */ js.Any, /* brokerId */ String, Unit]
+      data: Any,
+      callback: js.Function3[/* err */ js.Error | Null, /* data */ Any, /* brokerId */ String, Unit]
     ): Unit = js.native
     
     var socketPath: js.UndefOr[String] = js.native
@@ -607,7 +617,7 @@ object mod {
     
     var index: js.UndefOr[Double] = js.undefined
     
-    var items: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var items: js.UndefOr[js.Array[Any]] = js.undefined
     
     var noAck: js.UndefOr[Boolean] = js.undefined
   }
@@ -632,11 +642,11 @@ object mod {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setNoAck(value: Boolean): Self = StObject.set(x, "noAck", value.asInstanceOf[js.Any])
       

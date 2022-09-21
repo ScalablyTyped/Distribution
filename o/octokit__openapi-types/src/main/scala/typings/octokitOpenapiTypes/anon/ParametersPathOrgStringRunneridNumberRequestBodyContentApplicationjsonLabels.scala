@@ -1,0 +1,34 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ParametersPathOrgStringRunneridNumberRequestBodyContentApplicationjsonLabels extends StObject {
+  
+  var parameters: PathOrgStringRunneridNumber
+  
+  var requestBody: ContentApplicationjsonLabels
+  
+  var responses: `422Content418`
+}
+object ParametersPathOrgStringRunneridNumberRequestBodyContentApplicationjsonLabels {
+  
+  inline def apply(
+    parameters: PathOrgStringRunneridNumber,
+    requestBody: ContentApplicationjsonLabels,
+    responses: `422Content418`
+  ): ParametersPathOrgStringRunneridNumberRequestBodyContentApplicationjsonLabels = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParametersPathOrgStringRunneridNumberRequestBodyContentApplicationjsonLabels]
+  }
+  
+  extension [Self <: ParametersPathOrgStringRunneridNumberRequestBodyContentApplicationjsonLabels](x: Self) {
+    
+    inline def setParameters(value: PathOrgStringRunneridNumber): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    inline def setRequestBody(value: ContentApplicationjsonLabels): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    
+    inline def setResponses(value: `422Content418`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
 import typings.googleapis.googleapisStrings.v1
-import typings.googleapis.webfontsV1Mod.webfontsV1.Options
-import typings.googleapis.webfontsV1Mod.webfontsV1.Webfonts
+import typings.googleapis.localservicesV1Mod.localservicesV1.Localservices
+import typings.googleapis.localservicesV1Mod.localservicesV1.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn145 extends StObject {
   
-  def apply(options: Options): Webfonts = js.native
-  def apply(version: v1): Webfonts = js.native
+  def apply(options: Options): Localservices = js.native
+  def apply(version: v1): Localservices = js.native
 }

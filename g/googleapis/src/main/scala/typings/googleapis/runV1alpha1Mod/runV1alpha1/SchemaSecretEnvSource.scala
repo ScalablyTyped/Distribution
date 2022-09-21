@@ -4,22 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * SecretEnvSource selects a Secret to populate the environment variables
-  * with.  The contents of the target Secret&#39;s Data field will represent
-  * the key-value pairs as environment variables.
-  */
 trait SchemaSecretEnvSource extends StObject {
   
   /**
-    * The Secret to select from.
+    * This field should not be used directly as it is meant to be inlined directly into the message. Use the "name" field instead.
     */
   var localObjectReference: js.UndefOr[SchemaLocalObjectReference] = js.undefined
   
   /**
-    * Specify whether the Secret must be defined +optional
+    * The Secret to select from.
     */
-  var optional: js.UndefOr[Boolean] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * (Optional) Specify whether the Secret must be defined
+    */
+  var optional: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaSecretEnvSource {
   
@@ -34,7 +34,15 @@ object SchemaSecretEnvSource {
     
     inline def setLocalObjectReferenceUndefined: Self = StObject.set(x, "localObjectReference", js.undefined)
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    
+    inline def setOptionalNull: Self = StObject.set(x, "optional", null)
     
     inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
   }

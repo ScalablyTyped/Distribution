@@ -84,7 +84,7 @@ object expressionsMod {
   
   inline def stringToGlsl(context: ParsingContext, string: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToGlsl")(context.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  type ExpressionValue = js.Array[js.Any] | Color | String | Double | Boolean
+  type ExpressionValue = js.Array[Any] | Color | String | Double | Boolean
   
   @js.native
   trait Operator extends StObject {
@@ -120,7 +120,7 @@ object expressionsMod {
       
       inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
       
       inline def setInFragmentShader(value: Boolean): Self = StObject.set(x, "inFragmentShader", value.asInstanceOf[js.Any])
       
@@ -130,7 +130,7 @@ object expressionsMod {
       
       inline def setVariables(value: js.Array[String]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      inline def setVariablesVarargs(value: String*): Self = StObject.set(x, "variables", js.Array(value :_*))
+      inline def setVariablesVarargs(value: String*): Self = StObject.set(x, "variables", js.Array(value*))
     }
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResponseErrorLiteral[D] extends StObject {
   
   /**
-    * A number indicating the error type that occured.
+    * A number indicating the error type that occurred.
     */
   var code: Double
   
@@ -18,7 +18,7 @@ trait ResponseErrorLiteral[D] extends StObject {
   var data: js.UndefOr[D] = js.undefined
   
   /**
-    * A string providing a short decription of the error.
+    * A string providing a short description of the error.
     */
   var message: String
 }

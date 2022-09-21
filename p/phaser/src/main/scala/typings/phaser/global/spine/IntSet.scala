@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.IntSet")
 @js.native
-class IntSet ()
+open class IntSet ()
   extends StObject
      with typings.phaser.spine.IntSet {
   

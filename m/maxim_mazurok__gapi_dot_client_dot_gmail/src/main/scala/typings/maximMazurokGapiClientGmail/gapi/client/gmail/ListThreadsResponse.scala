@@ -36,6 +36,6 @@ object ListThreadsResponse {
     
     inline def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
     
-    inline def setThreadsVarargs(value: Thread*): Self = StObject.set(x, "threads", js.Array(value :_*))
+    inline def setThreadsVarargs(value: Thread*): Self = StObject.set(x, "threads", js.Array(value*))
   }
 }

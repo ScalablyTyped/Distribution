@@ -17,7 +17,7 @@ trait Table[T]
   
   def as(name: String): Table[T] = js.native
   
-  var columns: js.Array[Column[js.Any]] = js.native
+  var columns: js.Array[Column[Any]] = js.native
   
   def create(): CreateQuery = js.native
   
@@ -37,9 +37,9 @@ trait Table[T]
   
   var sql: SQL = js.native
   
-  def star(): Column[js.Any] = js.native
+  def star(): Column[Any] = js.native
   
   def subQuery[U](): SubQuery[U] = js.native
   
-  def update(o: js.Any): ModifyingQuery = js.native
+  def update(o: Any): ModifyingQuery = js.native
 }

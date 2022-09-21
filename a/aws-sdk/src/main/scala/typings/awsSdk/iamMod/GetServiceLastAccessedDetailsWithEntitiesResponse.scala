@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetServiceLastAccessedDetailsWithEntitiesResponse extends StObject {
   
   /**
-    * An EntityDetailsList object that contains details about when an IAM entity (user or role) used group or policy permissions in an attempt to access the specified AWS service.
+    * An EntityDetailsList object that contains details about when an IAM entity (user or role) used group or policy permissions in an attempt to access the specified Amazon Web Services service.
     */
   var EntityDetailsList: entityDetailsListType
   
@@ -24,12 +24,12 @@ trait GetServiceLastAccessedDetailsWithEntitiesResponse extends StObject {
   /**
     * The date and time, in ISO 8601 date-time format, when the generated report job was completed or failed. This field is null if the job is still in progress, as indicated by a job status value of IN_PROGRESS.
     */
-  var JobCompletionDate: dateType
+  var JobCompletionDate: js.Date
   
   /**
     * The date and time, in ISO 8601 date-time format, when the report job was created.
     */
-  var JobCreationDate: dateType
+  var JobCreationDate: js.Date
   
   /**
     * The status of the job.
@@ -45,8 +45,8 @@ object GetServiceLastAccessedDetailsWithEntitiesResponse {
   
   inline def apply(
     EntityDetailsList: entityDetailsListType,
-    JobCompletionDate: dateType,
-    JobCreationDate: dateType,
+    JobCompletionDate: js.Date,
+    JobCreationDate: js.Date,
     JobStatus: jobStatusType
   ): GetServiceLastAccessedDetailsWithEntitiesResponse = {
     val __obj = js.Dynamic.literal(EntityDetailsList = EntityDetailsList.asInstanceOf[js.Any], JobCompletionDate = JobCompletionDate.asInstanceOf[js.Any], JobCreationDate = JobCreationDate.asInstanceOf[js.Any], JobStatus = JobStatus.asInstanceOf[js.Any])
@@ -57,7 +57,7 @@ object GetServiceLastAccessedDetailsWithEntitiesResponse {
     
     inline def setEntityDetailsList(value: entityDetailsListType): Self = StObject.set(x, "EntityDetailsList", value.asInstanceOf[js.Any])
     
-    inline def setEntityDetailsListVarargs(value: EntityDetails*): Self = StObject.set(x, "EntityDetailsList", js.Array(value :_*))
+    inline def setEntityDetailsListVarargs(value: EntityDetails*): Self = StObject.set(x, "EntityDetailsList", js.Array(value*))
     
     inline def setError(value: ErrorDetails): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
@@ -67,9 +67,9 @@ object GetServiceLastAccessedDetailsWithEntitiesResponse {
     
     inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    inline def setJobCompletionDate(value: dateType): Self = StObject.set(x, "JobCompletionDate", value.asInstanceOf[js.Any])
+    inline def setJobCompletionDate(value: js.Date): Self = StObject.set(x, "JobCompletionDate", value.asInstanceOf[js.Any])
     
-    inline def setJobCreationDate(value: dateType): Self = StObject.set(x, "JobCreationDate", value.asInstanceOf[js.Any])
+    inline def setJobCreationDate(value: js.Date): Self = StObject.set(x, "JobCreationDate", value.asInstanceOf[js.Any])
     
     inline def setJobStatus(value: jobStatusType): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     

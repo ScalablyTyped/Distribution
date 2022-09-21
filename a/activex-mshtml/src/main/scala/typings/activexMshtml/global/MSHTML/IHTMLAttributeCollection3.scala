@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLAttributeCollection3")
 @js.native
-/* private */ class IHTMLAttributeCollection3 ()
+/* private */ open class IHTMLAttributeCollection3 ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLAttributeCollection3 {
   

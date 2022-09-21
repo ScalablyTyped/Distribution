@@ -15,7 +15,7 @@ object global {
       * 输入提示，根据输入关键字提示匹配信息
       * @param options 选项
       */
-    class Autocomplete ()
+    open class Autocomplete ()
       extends StObject
          with typings.amapJsApiAutocomplete.AMap.Autocomplete {
       def this(options: Options) = this()

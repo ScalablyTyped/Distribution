@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteEvaluationResultsRequest extends StObject {
   
   /**
-    * The name of the AWS Config rule for which you want to delete the evaluation results.
+    * The name of the Config rule for which you want to delete the evaluation results.
     */
   var ConfigRuleName: StringWithCharLimit64
 }

@@ -4,26 +4,28 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asn1js", "LocalIdentificationBlock")
 @js.native
-class LocalIdentificationBlock ()
-  extends LocalBaseBlock
-     with ILocalHexBlock {
-  def this(params: LocalIdentificationBlockParams) = this()
+trait LocalIdentificationBlock
+  extends StObject
+     with LocalBaseBlock
+     with ILocalIdentificationBlock {
   
-  var isConstructed: scala.Boolean = js.native
+  def fromBER(inputBuffer: js.typedarray.ArrayBuffer, inputOffset: Double, inputLength: Double): Double = js.native
+  def fromBER(inputBuffer: js.typedarray.Uint8Array, inputOffset: Double, inputLength: Double): Double = js.native
   
-  var tagClass: Double = js.native
-  
-  var tagNumber: Double = js.native
+  def toBER(): js.typedarray.ArrayBuffer = js.native
+  def toBER(sizeOnly: scala.Boolean): js.typedarray.ArrayBuffer = js.native
   
   /**
-    * Convertion for the block to JSON object
-    * 
-    * @returns {JsonLocalBaseBlock}
-    * 
-    * @memberOf LocalBaseBlock
+    * @deprecated since version 3.0.0
     */
-  /* InferMemberOverrides */
-  override def toJSON(): JsonLocalBaseBlock & js.Any = js.native
+  @JSName("valueBeforeDecode")
+  var valueBeforeDecode_FLocalIdentificationBlock: js.typedarray.ArrayBuffer = js.native
+  
+  /**
+    * Binary data in ArrayBuffer representation
+    *
+    * @deprecated since version 3.0.0
+    */
+  var valueHex: js.typedarray.ArrayBuffer = js.native
 }

@@ -29,7 +29,7 @@ object ListBackupPlanVersionsOutput {
     
     inline def setBackupPlanVersionsListUndefined: Self = StObject.set(x, "BackupPlanVersionsList", js.undefined)
     
-    inline def setBackupPlanVersionsListVarargs(value: BackupPlansListMember*): Self = StObject.set(x, "BackupPlanVersionsList", js.Array(value :_*))
+    inline def setBackupPlanVersionsListVarargs(value: BackupPlansListMember*): Self = StObject.set(x, "BackupPlanVersionsList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

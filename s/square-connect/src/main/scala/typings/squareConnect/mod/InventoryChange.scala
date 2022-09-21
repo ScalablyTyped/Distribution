@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "InventoryChange")
 @js.native
-class InventoryChange () extends StObject {
+open class InventoryChange () extends StObject {
   
   /**
     * Contains details about the inventory adjustment when `type` is `ADJUSTMENT` and unset for all other types.

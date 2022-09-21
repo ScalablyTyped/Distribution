@@ -29,7 +29,7 @@ trait TransferConfigsResource extends StObject {
   def get(): Request[TransferConfig] = js.native
   def get(request: Alt): Request[TransferConfig] = js.native
   
-  /** Returns information about all data transfers in the project. */
+  /** Returns information about all transfer configs owned by a project in the specified location. */
   def list(): Request[ListTransferConfigsResponse] = js.native
   def list(request: DataSourceIds): Request[ListTransferConfigsResponse] = js.native
   

@@ -39,6 +39,8 @@ trait InputField
   /**
     * The type of editor used when working with `string` fields.
     *
+    * @default text-box
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#editorType)
     */
   val editorType: `text-box` | `text-area` = js.native
@@ -73,6 +75,8 @@ trait InputField
   
   /**
     * For date inputs, this enables the time input part.
+    *
+    * @default {true}
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#includeTime)
     */
@@ -114,6 +118,13 @@ trait InputField
   val required: Boolean = js.native
   
   /**
+    * When true, this value can be submitted without _introducing_ data validation issues.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#submittable)
+    */
+  val submittable: Boolean = js.native
+  
+  /**
     * The type of input field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#type)
@@ -132,7 +143,7 @@ trait InputField
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputField.html#value)
     */
-  val value: Double | String | js.Any = js.native
+  val value: Double | String | Any = js.native
   
   /**
     * When `true`, the field is displayed.

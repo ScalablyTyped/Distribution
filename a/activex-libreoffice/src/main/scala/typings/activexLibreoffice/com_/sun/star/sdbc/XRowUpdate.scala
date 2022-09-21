@@ -112,7 +112,7 @@ trait XRowUpdate
     * @param scale defines the scale which should be used to write the numeric value
     * @throws SQLException if a database access error occurs.
     */
-  def updateNumericObject(columnIndex: Double, x: js.Any, scale: Double): Unit
+  def updateNumericObject(columnIndex: Double, x: Any, scale: Double): Unit
   
   /**
     * updates a column with an object value.
@@ -120,7 +120,7 @@ trait XRowUpdate
     * @param x the new column value
     * @throws SQLException if a database access error occurs.
     */
-  def updateObject(columnIndex: Double, x: js.Any): Unit
+  def updateObject(columnIndex: Double, x: Any): Unit
   
   /**
     * updates a column with a short value.
@@ -158,7 +158,7 @@ object XRowUpdate {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     updateBinaryStream: (Double, XInputStream, Double) => Unit,
     updateBoolean: (Double, Boolean) => Unit,
@@ -171,8 +171,8 @@ object XRowUpdate {
     updateInt: (Double, Double) => Unit,
     updateLong: (Double, Double) => Unit,
     updateNull: Double => Unit,
-    updateNumericObject: (Double, js.Any, Double) => Unit,
-    updateObject: (Double, js.Any) => Unit,
+    updateNumericObject: (Double, Any, Double) => Unit,
+    updateObject: (Double, Any) => Unit,
     updateShort: (Double, Double) => Unit,
     updateString: (Double, String) => Unit,
     updateTime: (Double, Time) => Unit,
@@ -206,9 +206,9 @@ object XRowUpdate {
     
     inline def setUpdateNull(value: Double => Unit): Self = StObject.set(x, "updateNull", js.Any.fromFunction1(value))
     
-    inline def setUpdateNumericObject(value: (Double, js.Any, Double) => Unit): Self = StObject.set(x, "updateNumericObject", js.Any.fromFunction3(value))
+    inline def setUpdateNumericObject(value: (Double, Any, Double) => Unit): Self = StObject.set(x, "updateNumericObject", js.Any.fromFunction3(value))
     
-    inline def setUpdateObject(value: (Double, js.Any) => Unit): Self = StObject.set(x, "updateObject", js.Any.fromFunction2(value))
+    inline def setUpdateObject(value: (Double, Any) => Unit): Self = StObject.set(x, "updateObject", js.Any.fromFunction2(value))
     
     inline def setUpdateShort(value: (Double, Double) => Unit): Self = StObject.set(x, "updateShort", js.Any.fromFunction2(value))
     

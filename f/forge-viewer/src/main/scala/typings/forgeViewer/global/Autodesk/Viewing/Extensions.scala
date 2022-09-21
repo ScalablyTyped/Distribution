@@ -1,28 +1,75 @@
 package typings.forgeViewer.global.Autodesk.Viewing
 
 import typings.forgeViewer.Autodesk.Viewing.MeasureCommon.SnapResult
-import typings.forgeViewer.Autodesk.Viewing.UI.ContentSize
-import typings.forgeViewer.Autodesk.Viewing.UI.DockingPanelOptions
-import typings.forgeViewer.Autodesk.Viewing.UI.ResizeOptions
-import typings.forgeViewer.Autodesk.Viewing.UI.ScrollContainerOptions
+import typings.forgeViewer.Autodesk.Viewing.Private.Viewer3DImpl
+import typings.forgeViewer.anon.AddEventListener
+import typings.forgeViewer.anon.EnableBrowserNavigation
 import typings.forgeViewer.anon.ForceSnapEdges
 import typings.forgeViewer.anon.X
-import typings.std.ClientRect
-import typings.std.Event
-import typings.std.HTMLElement
-import typings.std.MouseEvent
-import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Extensions {
   
+  @JSGlobal("Autodesk.Viewing.Extensions")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  object Multipage {
+    
+    object Events {
+      
+      @JSGlobal("Autodesk.Viewing.Extensions.Multipage.Events.FocusedPageChanged")
+      @js.native
+      val FocusedPageChanged: /* "focusedPageChanged" */ String = js.native
+      
+      @JSGlobal("Autodesk.Viewing.Extensions.Multipage.Events.PageLoaded")
+      @js.native
+      val PageLoaded: /* "pageLoaded" */ String = js.native
+    }
+    
+    @JSGlobal("Autodesk.Viewing.Extensions.Multipage.MultipageExtension")
+    @js.native
+    open class MultipageExtension protected ()
+      extends StObject
+         with typings.forgeViewer.Autodesk.Viewing.Extensions.Multipage.MultipageExtension {
+      def this(viewer: typings.forgeViewer.Autodesk.Viewing.Viewer3D) = this()
+      def this(viewer: typings.forgeViewer.Autodesk.Viewing.Viewer3D, options: Any) = this()
+    }
+  }
+  
+  object PDF {
+    
+    @JSGlobal("Autodesk.Viewing.Extensions.PDF.PDFExtension")
+    @js.native
+    open class PDFExtension protected ()
+      extends StObject
+         with typings.forgeViewer.Autodesk.Viewing.Extension {
+      def this(viewer: typings.forgeViewer.Autodesk.Viewing.Viewer3D) = this()
+      def this(viewer: typings.forgeViewer.Autodesk.Viewing.Viewer3D, options: EnableBrowserNavigation) = this()
+    }
+    
+    @JSGlobal("Autodesk.Viewing.Extensions.PDF.PDFLoader")
+    @js.native
+    open class PDFLoader protected ()
+      extends StObject
+         with typings.forgeViewer.Autodesk.Viewing.Extensions.PDF.PDFLoader {
+      def this(parent: Viewer3DImpl) = this()
+      
+      /* CompleteClass */
+      override def createPDFDocument(pdf: Any): typings.forgeViewer.Autodesk.Viewing.Document = js.native
+      
+      /* CompleteClass */
+      override def getDocument(): Any = js.native
+    }
+  }
+  
   object Snapping {
     
     @JSGlobal("Autodesk.Viewing.Extensions.Snapping.Snapper")
     @js.native
-    class Snapper protected ()
+    open class Snapper protected ()
       extends StObject
          with typings.forgeViewer.Autodesk.Viewing.Extensions.Snapping.Snapper {
       def this(viewer: typings.forgeViewer.Autodesk.Viewing.Viewer3D) = this()
@@ -35,22 +82,46 @@ object Extensions {
       override def clearSnapped(): Unit = js.native
       
       /* CompleteClass */
-      override def copyResults(destiny: js.Any): Unit = js.native
+      override def copyResults(destiny: Any): Unit = js.native
       
       /* CompleteClass */
       override def deactivate(): Unit = js.native
       
       /* CompleteClass */
-      override def getEdge(): js.Any = js.native
+      override def getArc(): Boolean = js.native
       
       /* CompleteClass */
-      override def getGeometry(): js.Any = js.native
+      override def getEdge(): Any = js.native
+      
+      /* CompleteClass */
+      override def getGeometry(): Any = js.native
+      
+      /* CompleteClass */
+      override def getGeometryType(): Double = js.native
+      
+      /* CompleteClass */
+      override def getIntersectPoint(): Any = js.native
+      
+      /* CompleteClass */
+      override def getName(): String = js.native
+      
+      /* CompleteClass */
+      override def getNames(): js.Array[String] = js.native
+      
+      /* CompleteClass */
+      override def getPriority(): Double = js.native
       
       /* CompleteClass */
       override def getSnapResult(): SnapResult = js.native
       
       /* CompleteClass */
-      override def getVertex(): js.Any = js.native
+      override def getSnapToArc(): Boolean = js.native
+      
+      /* CompleteClass */
+      override def getSnapToPixel(): Boolean = js.native
+      
+      /* CompleteClass */
+      override def getVertex(): Any = js.native
       
       /* CompleteClass */
       var indicator: typings.forgeViewer.Autodesk.Viewing.Extensions.Snapping.SnapperIndicator = js.native
@@ -62,12 +133,27 @@ object Extensions {
       override def isSnapped(): Boolean = js.native
       
       /* CompleteClass */
+      override def onMouseDown(mousePosition: X): Boolean = js.native
+      
+      /* CompleteClass */
       override def onMouseMove(mousePosition: X): Boolean = js.native
+      
+      /* CompleteClass */
+      override def setArc(isArc: Boolean): Boolean = js.native
+      
+      /* CompleteClass */
+      override def setSnapToArc(enable: Boolean): Unit = js.native
+      
+      /* CompleteClass */
+      override def setSnapToPixel(enable: Boolean): Unit = js.native
+      
+      /* CompleteClass */
+      override def setViewportId(vpId: Double): Unit = js.native
     }
     
     @JSGlobal("Autodesk.Viewing.Extensions.Snapping.SnapperIndicator")
     @js.native
-    class SnapperIndicator protected ()
+    open class SnapperIndicator protected ()
       extends StObject
          with typings.forgeViewer.Autodesk.Viewing.Extensions.Snapping.SnapperIndicator {
       def this(
@@ -86,101 +172,21 @@ object Extensions {
     }
   }
   
+  @JSGlobal("Autodesk.Viewing.Extensions.ViewerModelStructurePanel")
+  @js.native
+  open class ViewerModelStructurePanel protected ()
+    extends StObject
+       with typings.forgeViewer.Autodesk.Viewing.Extensions.ViewerModelStructurePanel {
+    def this(options: AddEventListener) = this()
+  }
+  
   @JSGlobal("Autodesk.Viewing.Extensions.ViewerPropertyPanel")
   @js.native
-  class ViewerPropertyPanel protected ()
+  open class ViewerPropertyPanel protected ()
     extends StObject
        with typings.forgeViewer.Autodesk.Viewing.Extensions.ViewerPropertyPanel {
     def this(viewer: typings.forgeViewer.Autodesk.Viewing.GuiViewer3D) = this()
-    
-    /* CompleteClass */
-    override def addEventListener(target: js.Object, eventId: String, callback: js.Function0[Unit]): Unit = js.native
-    
-    /* CompleteClass */
-    override def addVisibilityListener(callback: js.Function1[/* state */ Boolean, Unit]): Unit = js.native
-    
-    /* CompleteClass */
-    var closer: HTMLElement = js.native
-    
-    /* CompleteClass */
-    var container: HTMLElement = js.native
-    
-    /* CompleteClass */
-    var content: Node = js.native
-    
-    /* CompleteClass */
-    override def createCloseButton(): HTMLElement = js.native
-    
-    /* CompleteClass */
-    override def createFooter(): HTMLElement = js.native
-    
-    /* CompleteClass */
-    override def createScrollContainer(options: ScrollContainerOptions): Unit = js.native
-    
-    /* CompleteClass */
-    override def createTitleBar(title: String): HTMLElement = js.native
-    
-    /* CompleteClass */
-    var footer: HTMLElement = js.native
-    
-    /* CompleteClass */
-    override def getContainerBoundingRect(): ClientRect = js.native
-    
-    /* CompleteClass */
-    override def getContentSize(): ContentSize = js.native
-    
-    /* CompleteClass */
-    override def initialize(): Unit = js.native
-    
-    /* CompleteClass */
-    override def initializeCloseHandler(closer: HTMLElement): Unit = js.native
-    
-    /* CompleteClass */
-    override def initializeMoveHandlers(mover: HTMLElement): Unit = js.native
-    
-    /* CompleteClass */
-    override def isVisible(): Boolean = js.native
-    
-    /* CompleteClass */
-    override def onEndMove(event: MouseEvent, endX: Double, endY: Double): Unit = js.native
-    
-    /* CompleteClass */
-    override def onMove(event: MouseEvent, currentX: Double, currentY: Double): Unit = js.native
-    
-    /* CompleteClass */
-    override def onStartMove(event: MouseEvent, startX: Double, startY: Double): Unit = js.native
-    
-    /* CompleteClass */
-    override def onTitleClick(event: Event): Unit = js.native
-    
-    /* CompleteClass */
-    override def onTitleDoubleClick(event: Event): Unit = js.native
-    
-    /* CompleteClass */
-    override def removeEventListener(target: js.Object, eventId: String, callback: js.Function0[Unit]): Boolean = js.native
-    
-    /* CompleteClass */
-    override def resizeToContent(options: ResizeOptions): Unit = js.native
-    
-    /* CompleteClass */
-    var scrollContainer: HTMLElement = js.native
-    
-    /* CompleteClass */
-    override def setTitle(text: String, options: DockingPanelOptions): Unit = js.native
-    
-    /* CompleteClass */
-    override def setVisible(show: Boolean): Unit = js.native
-    
-    /* CompleteClass */
-    var title: HTMLElement = js.native
-    
-    /* CompleteClass */
-    var titleLabel: String = js.native
-    
-    /* CompleteClass */
-    override def uninitialize(): Unit = js.native
-    
-    /* CompleteClass */
-    override def visibilityChanged(): Unit = js.native
   }
+  
+  inline def generateDefaultViewerHandlerOptions(viewer: typings.forgeViewer.Autodesk.Viewing.GuiViewer3D): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("generateDefaultViewerHandlerOptions")(viewer.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

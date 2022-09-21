@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("auth0-js", "PasswordlessAuthentication")
 @js.native
-class PasswordlessAuthentication protected () extends StObject {
-  def this(request: js.Any, option: js.Any) = this()
+open class PasswordlessAuthentication protected () extends StObject {
+  def this(request: Any, option: Any) = this()
   
   /**
     * Builds and returns the passwordless TOTP verify url in order to initialize a new authN/authZ transaction
@@ -20,11 +20,11 @@ class PasswordlessAuthentication protected () extends StObject {
     *
     * @param options: https://auth0.com/docs/api/authentication#passwordless
     */
-  def start(options: PasswordlessStartOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
+  def start(options: PasswordlessStartOptions, callback: Auth0Callback[Any, Auth0Error]): Unit = js.native
   
   /**
     * Verifies the passwordless TOTP and returns an error if any.
     *
     */
-  def verify(options: PasswordlessVerifyOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
+  def verify(options: PasswordlessVerifyOptions, callback: Auth0Callback[Any, Auth0Error]): Unit = js.native
 }

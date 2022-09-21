@@ -10,10 +10,10 @@ Parse an author, contributor, maintainer or other 'person' string into an object
 | ------------------ | :-------------: |
 | Full name          | parse-author |
 | Keywords           | author, authors, contributor, exec, expression, extract, maintainer, maintainers, match, package, parse, person, pkg, re, regex, regexp, regular, somebody |
-| # releases         | 0 |
-| # dependents       | 131 |
-| # downloads        | 8443257 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1207533.3333333333 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/parse-author)

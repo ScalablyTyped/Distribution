@@ -10,15 +10,12 @@ Mouse wheel event unified for all browsers
 | ------------------ | :-------------: |
 | Full name          | wheel |
 | Keywords           | addWheelListener, wheel, mouse, DOMMouseScroll |
-| # releases         | 2 |
-| # dependents       | 17 |
-| # downloads        | 649177 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 115003.33333333333 |
+| # stars            | 30.0 |
 
 ## Links
-- [Homepage](https://github.com/anvaka/wheel#readme)
-- [Bugs](https://github.com/anvaka/wheel/issues)
-- [Repository](https://github.com/anvaka/wheel)
 - [Npm](https://www.npmjs.com/package/wheel)
     
 

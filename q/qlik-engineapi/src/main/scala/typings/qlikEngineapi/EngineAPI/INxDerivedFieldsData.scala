@@ -47,14 +47,14 @@ object INxDerivedFieldsData {
     
     inline def setQFieldDefs(value: js.Array[INxDerivedField]): Self = StObject.set(x, "qFieldDefs", value.asInstanceOf[js.Any])
     
-    inline def setQFieldDefsVarargs(value: INxDerivedField*): Self = StObject.set(x, "qFieldDefs", js.Array(value :_*))
+    inline def setQFieldDefsVarargs(value: INxDerivedField*): Self = StObject.set(x, "qFieldDefs", js.Array(value*))
     
     inline def setQGroupDefs(value: js.Array[INxDerivedGroup]): Self = StObject.set(x, "qGroupDefs", value.asInstanceOf[js.Any])
     
-    inline def setQGroupDefsVarargs(value: INxDerivedGroup*): Self = StObject.set(x, "qGroupDefs", js.Array(value :_*))
+    inline def setQGroupDefsVarargs(value: INxDerivedGroup*): Self = StObject.set(x, "qGroupDefs", js.Array(value*))
     
     inline def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
     
-    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
+    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value*))
   }
 }

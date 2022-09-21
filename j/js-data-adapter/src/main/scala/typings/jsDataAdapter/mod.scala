@@ -15,109 +15,109 @@ object mod {
   
   @JSImport("js-data-adapter", "Adapter")
   @js.native
-  class Adapter () extends StObject {
+  open class Adapter () extends StObject {
     def this(opts: IAdapterOpts) = this()
     
-    def afterCount(mapper: Mapper, props: IDict, opts: IDict, response: IDict): js.Any = js.native
-    def afterCount(mapper: Mapper, props: IDict, opts: IDict, response: Response): js.Any = js.native
+    def afterCount(mapper: Mapper, props: IDict, opts: IDict, response: IDict): Any = js.native
+    def afterCount(mapper: Mapper, props: IDict, opts: IDict, response: Response): Any = js.native
     
-    def afterCreate(mapper: Mapper, props: IDict, opts: IDict, response: IDict): js.Any = js.native
-    def afterCreate(mapper: Mapper, props: IDict, opts: IDict, response: Response): js.Any = js.native
+    def afterCreate(mapper: Mapper, props: IDict, opts: IDict, response: IDict): Any = js.native
+    def afterCreate(mapper: Mapper, props: IDict, opts: IDict, response: Response): Any = js.native
     
-    def afterCreateMany(mapper: Mapper, props: js.Array[IDict], opts: IDict, response: js.Array[IDict]): js.Any = js.native
-    def afterCreateMany(mapper: Mapper, props: js.Array[IDict], opts: IDict, response: Response): js.Any = js.native
+    def afterCreateMany(mapper: Mapper, props: js.Array[IDict], opts: IDict, response: js.Array[IDict]): Any = js.native
+    def afterCreateMany(mapper: Mapper, props: js.Array[IDict], opts: IDict, response: Response): Any = js.native
     
-    def afterDestroy(mapper: Mapper, id: String, opts: IDict, response: Unit): js.Any = js.native
-    def afterDestroy(mapper: Mapper, id: String, opts: IDict, response: Response): js.Any = js.native
-    def afterDestroy(mapper: Mapper, id: Double, opts: IDict, response: Unit): js.Any = js.native
-    def afterDestroy(mapper: Mapper, id: Double, opts: IDict, response: Response): js.Any = js.native
+    def afterDestroy(mapper: Mapper, id: String, opts: IDict, response: Unit): Any = js.native
+    def afterDestroy(mapper: Mapper, id: String, opts: IDict, response: Response): Any = js.native
+    def afterDestroy(mapper: Mapper, id: Double, opts: IDict, response: Unit): Any = js.native
+    def afterDestroy(mapper: Mapper, id: Double, opts: IDict, response: Response): Any = js.native
     
-    def afterDestroyAll(mapper: Mapper, query: IDict, opts: IDict, response: Unit): js.Any = js.native
-    def afterDestroyAll(mapper: Mapper, query: IDict, opts: IDict, response: Response): js.Any = js.native
+    def afterDestroyAll(mapper: Mapper, query: IDict, opts: IDict, response: Unit): Any = js.native
+    def afterDestroyAll(mapper: Mapper, query: IDict, opts: IDict, response: Response): Any = js.native
     
-    def afterFind(mapper: Mapper, id: String, opts: IDict, response: IDict): js.Any = js.native
-    def afterFind(mapper: Mapper, id: String, opts: IDict, response: Response): js.Any = js.native
-    def afterFind(mapper: Mapper, id: Double, opts: IDict, response: IDict): js.Any = js.native
-    def afterFind(mapper: Mapper, id: Double, opts: IDict, response: Response): js.Any = js.native
+    def afterFind(mapper: Mapper, id: String, opts: IDict, response: IDict): Any = js.native
+    def afterFind(mapper: Mapper, id: String, opts: IDict, response: Response): Any = js.native
+    def afterFind(mapper: Mapper, id: Double, opts: IDict, response: IDict): Any = js.native
+    def afterFind(mapper: Mapper, id: Double, opts: IDict, response: Response): Any = js.native
     
-    def afterFindAll(mapper: Mapper, query: IDict, opts: IDict, response: js.Array[IDict]): js.Any = js.native
-    def afterFindAll(mapper: Mapper, query: IDict, opts: IDict, response: Response): js.Any = js.native
+    def afterFindAll(mapper: Mapper, query: IDict, opts: IDict, response: js.Array[IDict]): Any = js.native
+    def afterFindAll(mapper: Mapper, query: IDict, opts: IDict, response: Response): Any = js.native
     
-    def afterSum(mapper: Mapper, field: String, query: IDict, opts: IDict, response: Double): js.Any = js.native
-    def afterSum(mapper: Mapper, field: String, query: IDict, opts: IDict, response: Response): js.Any = js.native
+    def afterSum(mapper: Mapper, field: String, query: IDict, opts: IDict, response: Double): Any = js.native
+    def afterSum(mapper: Mapper, field: String, query: IDict, opts: IDict, response: Response): Any = js.native
     
-    def afterUpdate(mapper: Mapper, id: String, props: IDict, opts: IDict, response: IDict): js.Any = js.native
-    def afterUpdate(mapper: Mapper, id: String, props: IDict, opts: IDict, response: Response): js.Any = js.native
-    def afterUpdate(mapper: Mapper, id: Double, props: IDict, opts: IDict, response: IDict): js.Any = js.native
-    def afterUpdate(mapper: Mapper, id: Double, props: IDict, opts: IDict, response: Response): js.Any = js.native
+    def afterUpdate(mapper: Mapper, id: String, props: IDict, opts: IDict, response: IDict): Any = js.native
+    def afterUpdate(mapper: Mapper, id: String, props: IDict, opts: IDict, response: Response): Any = js.native
+    def afterUpdate(mapper: Mapper, id: Double, props: IDict, opts: IDict, response: IDict): Any = js.native
+    def afterUpdate(mapper: Mapper, id: Double, props: IDict, opts: IDict, response: Response): Any = js.native
     
-    def afterUpdateAll(mapper: Mapper, props: IDict, query: IDict, opts: IDict, response: js.Array[IDict]): js.Any = js.native
-    def afterUpdateAll(mapper: Mapper, props: IDict, query: IDict, opts: IDict, response: Response): js.Any = js.native
+    def afterUpdateAll(mapper: Mapper, props: IDict, query: IDict, opts: IDict, response: js.Array[IDict]): Any = js.native
+    def afterUpdateAll(mapper: Mapper, props: IDict, query: IDict, opts: IDict, response: Response): Any = js.native
     
-    def afterUpdateMany(mapper: Mapper, props: js.Array[IDict], opts: IDict, response: js.Array[IDict]): js.Any = js.native
-    def afterUpdateMany(mapper: Mapper, props: js.Array[IDict], opts: IDict, response: Response): js.Any = js.native
+    def afterUpdateMany(mapper: Mapper, props: js.Array[IDict], opts: IDict, response: js.Array[IDict]): Any = js.native
+    def afterUpdateMany(mapper: Mapper, props: js.Array[IDict], opts: IDict, response: Response): Any = js.native
     
-    def beforeCount(mapper: Mapper, props: IDict, opts: IDict): js.Any = js.native
+    def beforeCount(mapper: Mapper, props: IDict, opts: IDict): Any = js.native
     
-    def beforeCreate(mapper: Mapper, props: IDict, opts: IDict): js.Any = js.native
+    def beforeCreate(mapper: Mapper, props: IDict, opts: IDict): Any = js.native
     
-    def beforeCreateMany(mapper: Mapper, props: js.Array[IDict], opts: IDict): js.Any = js.native
+    def beforeCreateMany(mapper: Mapper, props: js.Array[IDict], opts: IDict): Any = js.native
     
-    def beforeDestroy(mapper: Mapper, id: String, opts: IDict): js.Any = js.native
-    def beforeDestroy(mapper: Mapper, id: Double, opts: IDict): js.Any = js.native
+    def beforeDestroy(mapper: Mapper, id: String, opts: IDict): Any = js.native
+    def beforeDestroy(mapper: Mapper, id: Double, opts: IDict): Any = js.native
     
-    def beforeDestroyAll(mapper: Mapper, query: IDict, opts: IDict): js.Any = js.native
+    def beforeDestroyAll(mapper: Mapper, query: IDict, opts: IDict): Any = js.native
     
-    def beforeFind(mapper: Mapper, id: String, opts: IDict): js.Any = js.native
-    def beforeFind(mapper: Mapper, id: Double, opts: IDict): js.Any = js.native
+    def beforeFind(mapper: Mapper, id: String, opts: IDict): Any = js.native
+    def beforeFind(mapper: Mapper, id: Double, opts: IDict): Any = js.native
     
-    def beforeFindAll(mapper: Mapper, query: IDict, opts: IDict): js.Any = js.native
+    def beforeFindAll(mapper: Mapper, query: IDict, opts: IDict): Any = js.native
     
-    def beforeSum(mapper: Mapper, field: String, query: IDict, opts: IDict): js.Any = js.native
+    def beforeSum(mapper: Mapper, field: String, query: IDict, opts: IDict): Any = js.native
     
-    def beforeUpdate(mapper: Mapper, id: String, props: IDict, opts: IDict): js.Any = js.native
-    def beforeUpdate(mapper: Mapper, id: Double, props: IDict, opts: IDict): js.Any = js.native
+    def beforeUpdate(mapper: Mapper, id: String, props: IDict, opts: IDict): Any = js.native
+    def beforeUpdate(mapper: Mapper, id: Double, props: IDict, opts: IDict): Any = js.native
     
-    def beforeUpdateAll(mapper: Mapper, props: IDict, query: IDict, opts: IDict): js.Any = js.native
+    def beforeUpdateAll(mapper: Mapper, props: IDict, query: IDict, opts: IDict): Any = js.native
     
-    def beforeUpdateMany(mapper: Mapper, props: js.Array[IDict], opts: IDict): js.Any = js.native
+    def beforeUpdateMany(mapper: Mapper, props: js.Array[IDict], opts: IDict): Any = js.native
     
-    def count(mapper: Mapper, props: IDict, opts: IDict): js.Any = js.native
+    def count(mapper: Mapper, props: IDict, opts: IDict): Any = js.native
     
-    def create(mapper: Mapper, props: IDict, opts: IDict): js.Any = js.native
+    def create(mapper: Mapper, props: IDict, opts: IDict): Any = js.native
     
-    def createMany(mapper: Mapper, props: js.Array[IDict], opts: IDict): js.Any = js.native
+    def createMany(mapper: Mapper, props: js.Array[IDict], opts: IDict): Any = js.native
     
-    def dbg(args: js.Any*): Unit = js.native
+    def dbg(args: Any*): Unit = js.native
     
     var debug: Boolean = js.native
     
-    def destroy(mapper: Mapper, id: String, opts: IDict): js.Any = js.native
-    def destroy(mapper: Mapper, id: Double, opts: IDict): js.Any = js.native
+    def destroy(mapper: Mapper, id: String, opts: IDict): Any = js.native
+    def destroy(mapper: Mapper, id: Double, opts: IDict): Any = js.native
     
-    def destroyAll(mapper: Mapper, query: IDict, opts: IDict): js.Any = js.native
+    def destroyAll(mapper: Mapper, query: IDict, opts: IDict): Any = js.native
     
-    def find(mapper: Mapper, id: String, opts: IDict): js.Any = js.native
-    def find(mapper: Mapper, id: Double, opts: IDict): js.Any = js.native
+    def find(mapper: Mapper, id: String, opts: IDict): Any = js.native
+    def find(mapper: Mapper, id: Double, opts: IDict): Any = js.native
     
-    def findAll(mapper: Mapper, query: IDict, opts: IDict): js.Any = js.native
+    def findAll(mapper: Mapper, query: IDict, opts: IDict): Any = js.native
     
-    def loadBelongsTo(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[js.Any] = js.native
-    def loadBelongsTo(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[js.Any] = js.native
+    def loadBelongsTo(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[Any] = js.native
+    def loadBelongsTo(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[Any] = js.native
     
-    def loadHasMany(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[js.Any] = js.native
-    def loadHasMany(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[js.Any] = js.native
+    def loadHasMany(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[Any] = js.native
+    def loadHasMany(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[Any] = js.native
     
-    def loadHasManyForeignKeys(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[js.Any] = js.native
-    def loadHasManyForeignKeys(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[js.Any] = js.native
+    def loadHasManyForeignKeys(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[Any] = js.native
+    def loadHasManyForeignKeys(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[Any] = js.native
     
-    def loadHasManyLocalKeys(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[js.Any] = js.native
-    def loadHasManyLocalKeys(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[js.Any] = js.native
+    def loadHasManyLocalKeys(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[Any] = js.native
+    def loadHasManyLocalKeys(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[Any] = js.native
     
-    def loadHasOne(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[js.Any] = js.native
-    def loadHasOne(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[js.Any] = js.native
+    def loadHasOne(mapper: Mapper, `def`: IDict, records: js.Array[IDict], __opts: IDict): js.Promise[Any] = js.native
+    def loadHasOne(mapper: Mapper, `def`: IDict, records: IDict, __opts: IDict): js.Promise[Any] = js.native
     
-    def log(level: String, args: js.Any*): Unit = js.native
+    def log(level: String, args: Any*): Unit = js.native
     
     def makeBelongsToForeignKey(mapper: Mapper, `def`: IDict, record: IDict): String = js.native
     
@@ -131,14 +131,14 @@ object mod {
     
     def respond(response: Response, opts: IDict): IDict | Response = js.native
     
-    def sum(mapper: Mapper, field: String, query: IDict, opts: IDict): js.Any = js.native
+    def sum(mapper: Mapper, field: String, query: IDict, opts: IDict): Any = js.native
     
-    def update(mapper: Mapper, id: String, props: IDict, opts: IDict): js.Any = js.native
-    def update(mapper: Mapper, id: Double, props: IDict, opts: IDict): js.Any = js.native
+    def update(mapper: Mapper, id: String, props: IDict, opts: IDict): Any = js.native
+    def update(mapper: Mapper, id: Double, props: IDict, opts: IDict): Any = js.native
     
-    def updateAll(mapper: Mapper, props: IDict, query: IDict, opts: IDict): js.Any = js.native
+    def updateAll(mapper: Mapper, props: IDict, query: IDict, opts: IDict): Any = js.native
     
-    def updateMany(mapper: Mapper, props: js.Array[IDict], opts: IDict): js.Any = js.native
+    def updateMany(mapper: Mapper, props: js.Array[IDict], opts: IDict): Any = js.native
   }
   /* static members */
   object Adapter {
@@ -155,20 +155,20 @@ object mod {
   
   @JSImport("js-data-adapter", "Response")
   @js.native
-  class Response ()
+  open class Response ()
     extends StObject
        with IDict {
     
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     var op: String = js.native
   }
   
-  inline def noop(args: js.Any*): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def noop(args: Any*): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Promise[Any]]
   
-  inline def noop2(args: js.Any*): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noop2")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def noop2(args: Any*): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noop2")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Promise[Any]]
   
-  inline def unique(array: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def unique(array: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   trait IAdapterOpts
     extends StObject
@@ -197,5 +197,5 @@ object mod {
     }
   }
   
-  type IDict = StringDictionary[js.Any]
+  type IDict = StringDictionary[Any]
 }

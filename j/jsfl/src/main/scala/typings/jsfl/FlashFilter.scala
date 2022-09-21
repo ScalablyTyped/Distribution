@@ -14,7 +14,7 @@ trait FlashFilter extends StObject {
   
   var brightness: Double
   
-  var color: js.Any
+  var color: Any
   
   var contrast: Double
   
@@ -24,7 +24,7 @@ trait FlashFilter extends StObject {
   
   var hideObject: Boolean
   
-  var highlightColor: js.Any
+  var highlightColor: Any
   
   var hue: Double
   
@@ -38,7 +38,7 @@ trait FlashFilter extends StObject {
   
   var saturation: Double
   
-  var shadowColor: js.Any
+  var shadowColor: Any
   
   var strength: Double
   
@@ -51,19 +51,19 @@ object FlashFilter {
     blurX: Double,
     blurY: Double,
     brightness: Double,
-    color: js.Any,
+    color: Any,
     contrast: Double,
     distance: Double,
     enabled: Boolean,
     hideObject: Boolean,
-    highlightColor: js.Any,
+    highlightColor: Any,
     hue: Double,
     inner: Boolean,
     knockout: Boolean,
     name: String,
     quality: String,
     saturation: Double,
-    shadowColor: js.Any,
+    shadowColor: Any,
     strength: Double,
     `type`: String
   ): FlashFilter = {
@@ -82,7 +82,7 @@ object FlashFilter {
     
     inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
@@ -92,7 +92,7 @@ object FlashFilter {
     
     inline def setHideObject(value: Boolean): Self = StObject.set(x, "hideObject", value.asInstanceOf[js.Any])
     
-    inline def setHighlightColor(value: js.Any): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
+    inline def setHighlightColor(value: Any): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
     
     inline def setHue(value: Double): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
@@ -106,7 +106,7 @@ object FlashFilter {
     
     inline def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
-    inline def setShadowColor(value: js.Any): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    inline def setShadowColor(value: Any): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
     inline def setStrength(value: Double): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     

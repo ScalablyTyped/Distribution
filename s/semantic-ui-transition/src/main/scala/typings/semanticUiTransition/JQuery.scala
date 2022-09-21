@@ -1,10 +1,7 @@
 package typings.semanticUiTransition
 
 import typings.semanticUiTransition.SemanticUI.Transition
-import typings.semanticUiTransition.SemanticUI.Transition.ClassNameSettings
-import typings.semanticUiTransition.SemanticUI.Transition.ErrorSettings
 import typings.semanticUiTransition.SemanticUI.TransitionSettings
-import typings.semanticUiTransition.semanticUiTransitionBooleans.`false`
 import typings.semanticUiTransition.semanticUiTransitionStrings.`clear queue`
 import typings.semanticUiTransition.semanticUiTransitionStrings.`force repaint`
 import typings.semanticUiTransition.semanticUiTransitionStrings.`get animation event`
@@ -18,38 +15,17 @@ import typings.semanticUiTransition.semanticUiTransitionStrings.`restore conditi
 import typings.semanticUiTransition.semanticUiTransitionStrings.`save conditions`
 import typings.semanticUiTransition.semanticUiTransitionStrings.`set duration`
 import typings.semanticUiTransition.semanticUiTransitionStrings.`stop all`
-import typings.semanticUiTransition.semanticUiTransitionStrings.allowRepeats
-import typings.semanticUiTransition.semanticUiTransitionStrings.animation
-import typings.semanticUiTransition.semanticUiTransitionStrings.auto
-import typings.semanticUiTransition.semanticUiTransitionStrings.className
-import typings.semanticUiTransition.semanticUiTransitionStrings.debug
 import typings.semanticUiTransition.semanticUiTransitionStrings.destroy
 import typings.semanticUiTransition.semanticUiTransitionStrings.disable
-import typings.semanticUiTransition.semanticUiTransitionStrings.displayType
-import typings.semanticUiTransition.semanticUiTransitionStrings.duration
 import typings.semanticUiTransition.semanticUiTransitionStrings.enable
-import typings.semanticUiTransition.semanticUiTransitionStrings.error
 import typings.semanticUiTransition.semanticUiTransitionStrings.hide
-import typings.semanticUiTransition.semanticUiTransitionStrings.interval
 import typings.semanticUiTransition.semanticUiTransitionStrings.looping
-import typings.semanticUiTransition.semanticUiTransitionStrings.name
-import typings.semanticUiTransition.semanticUiTransitionStrings.namespace
-import typings.semanticUiTransition.semanticUiTransitionStrings.onComplete
-import typings.semanticUiTransition.semanticUiTransitionStrings.onHide
-import typings.semanticUiTransition.semanticUiTransitionStrings.onShow
-import typings.semanticUiTransition.semanticUiTransitionStrings.onStart
-import typings.semanticUiTransition.semanticUiTransitionStrings.performance
-import typings.semanticUiTransition.semanticUiTransitionStrings.queue
 import typings.semanticUiTransition.semanticUiTransitionStrings.repaint
 import typings.semanticUiTransition.semanticUiTransitionStrings.reset
-import typings.semanticUiTransition.semanticUiTransitionStrings.reverse
 import typings.semanticUiTransition.semanticUiTransitionStrings.setting
 import typings.semanticUiTransition.semanticUiTransitionStrings.show
-import typings.semanticUiTransition.semanticUiTransitionStrings.silent
 import typings.semanticUiTransition.semanticUiTransitionStrings.stop
 import typings.semanticUiTransition.semanticUiTransitionStrings.toggle
-import typings.semanticUiTransition.semanticUiTransitionStrings.useFailSafe
-import typings.semanticUiTransition.semanticUiTransitionStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,48 +33,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def transition(): JQuery
-  def transition(behavior: setting, name: allowRepeats, value: Boolean): JQuery
-  def transition(behavior: setting, name: allowRepeats, value: Unit): Boolean
-  def transition(behavior: setting, name: animation, value: String): JQuery
-  def transition(behavior: setting, name: animation, value: Unit): String
-  def transition(behavior: setting, name: className, value: Unit): ClassNameSettings
-  def transition(behavior: setting, name: className, value: ClassNameSettings): JQuery
-  def transition(behavior: setting, name: debug, value: Boolean): JQuery
-  def transition(behavior: setting, name: debug, value: Unit): Boolean
-  def transition(behavior: setting, name: displayType, value: String): JQuery
-  def transition(behavior: setting, name: displayType, value: Unit): `false` | String
-  def transition(behavior: setting, name: displayType, value: `false`): JQuery
-  def transition(behavior: setting, name: duration, value: Double): JQuery
-  def transition(behavior: setting, name: duration, value: Unit): Double
-  def transition(behavior: setting, name: error, value: Unit): ErrorSettings
-  def transition(behavior: setting, name: error, value: ErrorSettings): JQuery
-  def transition(behavior: setting, name: interval, value: Double): JQuery
-  def transition(behavior: setting, name: interval, value: Unit): Double
-  def transition(behavior: setting, name: namespace, value: String): JQuery
-  def transition(behavior: setting, name: namespace, value: Unit): String
-  def transition(behavior: setting, name: name, value: String): JQuery
-  def transition(behavior: setting, name: name, value: Unit): String
-  def transition(behavior: setting, name: onComplete, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
-  def transition(behavior: setting, name: onComplete, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
-  def transition(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
-  def transition(behavior: setting, name: onHide, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
-  def transition(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
-  def transition(behavior: setting, name: onShow, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
-  def transition(behavior: setting, name: onStart, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
-  def transition(behavior: setting, name: onStart, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
-  def transition(behavior: setting, name: performance, value: Boolean): JQuery
-  def transition(behavior: setting, name: performance, value: Unit): Boolean
-  def transition(behavior: setting, name: queue, value: Boolean): JQuery
-  def transition(behavior: setting, name: queue, value: Unit): Boolean
-  def transition(behavior: setting, name: reverse, value: Boolean): JQuery
-  def transition(behavior: setting, name: reverse, value: Unit): auto | Boolean
-  def transition(behavior: setting, name: reverse, value: auto): JQuery
-  def transition(behavior: setting, name: silent, value: Boolean): JQuery
-  def transition(behavior: setting, name: silent, value: Unit): Boolean
-  def transition(behavior: setting, name: useFailSafe, value: Boolean): JQuery
-  def transition(behavior: setting, name: useFailSafe, value: Unit): Boolean
-  def transition(behavior: setting, name: verbose, value: Boolean): JQuery
-  def transition(behavior: setting, name: verbose, value: Unit): Boolean
   def transition(settings: TransitionSettings): JQuery
   def transition(transition: String): JQuery
   @JSName("transition")
@@ -197,6 +131,14 @@ trait JQuery extends StObject {
   def transition_setduration(behavior: `set duration`, duration: Double): JQuery
   @JSName("transition")
   def transition_setting(behavior: setting, value: TransitionSettings): JQuery
+  @JSName("transition")
+  def transition_setting[K /* <: /* keyof semantic-ui-transition.SemanticUI.TransitionSettings */ String */](
+    behavior: setting,
+    name: K,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-transition.SemanticUI.TransitionSettings._Impl[K] */ js.Any
+  ): JQuery
+  @JSName("transition")
+  def transition_setting[K /* <: /* keyof semantic-ui-transition.SemanticUI.TransitionSettings */ String */](behavior: setting, name: K, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-transition.SemanticUI.TransitionSettings._Impl[K] */ js.Any
   /**
     * Stop current animation and show element
     */

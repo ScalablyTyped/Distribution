@@ -31,6 +31,6 @@ object IGeoDataResultSet {
     
     inline def setResults(value: js.Array[IGeoDataResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: IGeoDataResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: IGeoDataResult*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

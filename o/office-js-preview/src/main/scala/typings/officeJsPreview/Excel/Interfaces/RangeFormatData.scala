@@ -24,49 +24,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RangeFormatData extends StObject {
   
   /**
-    *
     * Specifies if text is automatically indented when text alignment is set to equal distribution.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var autoIndent: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Collection of border objects that apply to the overall range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var borders: js.UndefOr[js.Array[RangeBorderData]] = js.undefined
   
   /**
+    * Specifies the width of all colums within the range. If the column widths are not uniform, `null` will be returned.
     *
-    * Specifies the width of all colums within the range. If the column widths are not uniform, null will be returned.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var columnWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Returns the fill object defined on the overall range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var fill: js.UndefOr[RangeFillData] = js.undefined
   
   /**
-    *
     * Returns the font object defined on the overall range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var font: js.UndefOr[RangeFontData] = js.undefined
   
   /**
+    * Represents the horizontal alignment for the specified object. See `Excel.HorizontalAlignment` for details.
     *
-    * Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var horizontalAlignment: js.UndefOr[
@@ -74,89 +74,91 @@ trait RangeFormatData extends StObject {
   ] = js.undefined
   
   /**
-    *
     * An integer from 0 to 250 that indicates the indent level.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var indentLevel: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Returns the format protection object for a range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var protection: js.UndefOr[FormatProtectionData] = js.undefined
   
   /**
-    *
     * The reading order for the range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var readingOrder: js.UndefOr[ReadingOrder | Context | LeftToRight | RightToLeft] = js.undefined
   
   /**
+    * The height of all rows in the range. If the row heights are not uniform, `null` will be returned.
     *
-    * The height of all rows in the range. If the row heights are not uniform, null will be returned.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var rowHeight: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies if text automatically shrinks to fit in the available column width.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var shrinkToFit: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The text orientation of all the cells within the range.
     The text orientation should be an integer either from -90 to 90, or 180 for vertically-oriented text.
-    If the orientation within a range are not uniform, then null will be returned.
+    If the orientation within a range are not uniform, then `null` will be returned.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var textOrientation: js.UndefOr[Double] = js.undefined
   
   /**
+    * Determines if the row height of the `Range` object equals the standard height of the sheet.
+    Returns `true` if the row height of the `Range` object equals the standard height of the sheet.
+    Returns `null` if the range contains more than one row and the rows aren't all the same height.
+    Returns `false` otherwise.
+    Note: This property is only intended to be set to `true`. Setting it to `false` has no effect.
     *
-    * Determines if the row height of the Range object equals the standard height of the sheet.
-    Returns True if the row height of the Range object equals the standard height of the sheet.
-    Returns Null if the range contains more than one row and the rows aren't all the same height.
-    Returns False otherwise.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var useStandardHeight: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies if the column width of the `Range` object equals the standard width of the sheet.
+    Returns `true` if the column width of the `Range` object equals the standard width of the sheet.
+    Returns `null` if the range contains more than one column and the columns aren't all the same height.
+    Returns `false` otherwise.
+    Note: This property is only intended to be set to `true`. Setting it to `false` has no effect.
     *
-    * Specifies if the column width of the Range object equals the standard width of the sheet.
-    Returns True if the column width of the Range object equals the standard width of the sheet.
-    Returns Null if the range contains more than one column and the columns aren't all the same height.
-    Returns False otherwise.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var useStandardWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the vertical alignment for the specified object. See `Excel.VerticalAlignment` for details.
     *
-    * Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var verticalAlignment: js.UndefOr[VerticalAlignment | Top | Center | Bottom | Justify | Distributed] = js.undefined
   
   /**
+    * Specifies if Excel wraps the text in the object. A `null` value indicates that the entire range doesn't have a uniform wrap setting
     *
-    * Specifies if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var wrapText: js.UndefOr[Boolean] = js.undefined
@@ -178,7 +180,7 @@ object RangeFormatData {
     
     inline def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
     
-    inline def setBordersVarargs(value: RangeBorderData*): Self = StObject.set(x, "borders", js.Array(value :_*))
+    inline def setBordersVarargs(value: RangeBorderData*): Self = StObject.set(x, "borders", js.Array(value*))
     
     inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     

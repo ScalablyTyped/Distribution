@@ -29,6 +29,6 @@ object Section {
     
     inline def setWidgetsUndefined: Self = StObject.set(x, "widgets", js.undefined)
     
-    inline def setWidgetsVarargs(value: WidgetMarkup*): Self = StObject.set(x, "widgets", js.Array(value :_*))
+    inline def setWidgetsVarargs(value: WidgetMarkup*): Self = StObject.set(x, "widgets", js.Array(value*))
   }
 }

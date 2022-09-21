@@ -1,5 +1,7 @@
 package typings.carbonComponentsReact
 
+import typings.carbonComponentsReact.carbonComponentsReactStrings.md
+import typings.carbonComponentsReact.carbonComponentsReactStrings.sm
 import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
@@ -11,16 +13,18 @@ object toggleSkeletonMod {
   
   @JSImport("carbon-components-react/lib/components/Toggle/Toggle.Skeleton", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ToggleSkeletonProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ToggleSkeletonProps, js.Object, Any]
   
-  type ToggleSkeleton = Component[ToggleSkeletonProps, js.Object, js.Any]
+  type ToggleSkeleton = Component[ToggleSkeletonProps, js.Object, Any]
   
   trait ToggleSkeletonProps
     extends StObject
        with HTMLAttributes[HTMLDivElement] {
     
     var labelText: js.UndefOr[String] = js.undefined
+    
+    var size: js.UndefOr[sm | md] = js.undefined
   }
   object ToggleSkeletonProps {
     
@@ -34,6 +38,10 @@ object toggleSkeletonMod {
       inline def setLabelText(value: String): Self = StObject.set(x, "labelText", value.asInstanceOf[js.Any])
       
       inline def setLabelTextUndefined: Self = StObject.set(x, "labelText", js.undefined)
+      
+      inline def setSize(value: sm | md): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

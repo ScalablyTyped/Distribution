@@ -12,6 +12,8 @@ trait FilterMenuMessages extends StObject {
   
   var and: js.UndefOr[String] = js.undefined
   
+  var buttonTitle: js.UndefOr[String] = js.undefined
+  
   var clear: js.UndefOr[String] = js.undefined
   
   var filter: js.UndefOr[String] = js.undefined
@@ -50,6 +52,10 @@ object FilterMenuMessages {
     inline def setAnd(value: String): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     
     inline def setAndUndefined: Self = StObject.set(x, "and", js.undefined)
+    
+    inline def setButtonTitle(value: String): Self = StObject.set(x, "buttonTitle", value.asInstanceOf[js.Any])
+    
+    inline def setButtonTitleUndefined: Self = StObject.set(x, "buttonTitle", js.undefined)
     
     inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     

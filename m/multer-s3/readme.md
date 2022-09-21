@@ -1,7 +1,7 @@
 
 # Scala.js typings for multer-s3
 
-Typings are for version 2.7
+Typings are for version 3.0
 
 ## Library description:
 Streaming multer storage engine for AWS S3
@@ -10,10 +10,10 @@ Streaming multer storage engine for AWS S3
 | ------------------ | :-------------: |
 | Full name          | multer-s3 |
 | Keywords           | multer, s3, amazon, aws |
-| # releases         | 0 |
-| # dependents       | 57 |
-| # downloads        | 3242662 |
-| # stars            | 20 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 434811.6666666667 |
+| # stars            | 560.0 |
 
 ## Links
 - [Homepage](https://github.com/badunk/multer-s3#readme)

@@ -10,10 +10,10 @@ Typings are for version 1.1
 | ------------------ | :-------------: |
 | Full name          | ip |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1857 |
-| # downloads        | 472098110 |
-| # stars            | 54 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 7.7005275E7 |
+| # stars            | 1303.0 |
 
 ## Links
 - [Homepage](https://github.com/indutny/node-ip)

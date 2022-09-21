@@ -9,7 +9,7 @@ trait DisplayUnitLabel extends StObject {
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: Any = js.native
   
   val Border: typings.activexExcel.Excel.Border = js.native
   
@@ -22,7 +22,7 @@ trait DisplayUnitLabel extends StObject {
   
   val Creator: XlCreator = js.native
   
-  def Delete(): js.Any = js.native
+  def Delete(): Any = js.native
   
   /* private */ @JSName("Excel.DisplayUnitLabel_typekey")
   var ExcelDotDisplayUnitLabel_typekey: DisplayUnitLabel = js.native
@@ -53,13 +53,13 @@ trait DisplayUnitLabel extends StObject {
   
   var Orientation: XlOrientation = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Position: XlChartElementPosition = js.native
   
   var ReadingOrder: Double = js.native
   
-  def Select(): js.Any = js.native
+  def Select(): Any = js.native
   
   var Shadow: Boolean = js.native
   

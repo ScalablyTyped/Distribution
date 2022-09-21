@@ -25,7 +25,7 @@ trait CustomUpdatePayload extends StObject {
     * A blob of data to attach to the update. All game sessions launched from the update will be able to access this blob
     * through FBInstant.getEntryPointData(). Must be less than or equal to 1000 characters when stringified.
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /**
     * Data URL of a base64 encoded image.
@@ -45,8 +45,6 @@ trait CustomUpdatePayload extends StObject {
     * 'IMMEDIATE' - The update should be posted immediately.
     *
     * 'LAST' - The update should be posted when the game session ends. The most recent update sent using the 'LAST' strategy will be the one sent.
-    *
-    * 'IMMEDIATE_CLEAR' - The update is posted immediately, and clears any other pending updates (such as those sent with the 'LAST' strategy).
     *
     * If no strategy is specified, we default to 'IMMEDIATE'.
     */
@@ -80,7 +78,7 @@ object CustomUpdatePayload {
     
     inline def setCtaUndefined: Self = StObject.set(x, "cta", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

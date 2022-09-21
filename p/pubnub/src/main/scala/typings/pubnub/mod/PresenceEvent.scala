@@ -21,7 +21,7 @@ trait PresenceEvent extends StObject {
   
   var occupancy: Double
   
-  var state: js.UndefOr[js.Any] = js.undefined
+  var state: js.UndefOr[Any] = js.undefined
   
   /**
     * deprecated:
@@ -63,7 +63,7 @@ object PresenceEvent {
     
     inline def setOccupancy(value: Double): Self = StObject.set(x, "occupancy", value.asInstanceOf[js.Any])
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     

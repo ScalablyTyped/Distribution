@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("FileDownloadCommand")
 @js.native
-class FileDownloadCommand ()
+open class FileDownloadCommand ()
   extends StObject
      with typings.devexpressWeb.FileDownloadCommand {
   

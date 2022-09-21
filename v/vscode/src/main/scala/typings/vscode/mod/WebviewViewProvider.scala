@@ -20,12 +20,12 @@ trait WebviewViewProvider extends StObject {
     *
     * @return Optional thenable indicating that the view has been fully resolved.
     */
-  def resolveWebviewView(webviewView: WebviewView, context: WebviewViewResolveContext[js.Any], token: CancellationToken): Thenable[Unit] | Unit
+  def resolveWebviewView(webviewView: WebviewView, context: WebviewViewResolveContext[Any], token: CancellationToken): Thenable[Unit] | Unit
 }
 object WebviewViewProvider {
   
   inline def apply(
-    resolveWebviewView: (WebviewView, WebviewViewResolveContext[js.Any], CancellationToken) => Thenable[Unit] | Unit
+    resolveWebviewView: (WebviewView, WebviewViewResolveContext[Any], CancellationToken) => Thenable[Unit] | Unit
   ): WebviewViewProvider = {
     val __obj = js.Dynamic.literal(resolveWebviewView = js.Any.fromFunction3(resolveWebviewView))
     __obj.asInstanceOf[WebviewViewProvider]
@@ -33,8 +33,6 @@ object WebviewViewProvider {
   
   extension [Self <: WebviewViewProvider](x: Self) {
     
-    inline def setResolveWebviewView(
-      value: (WebviewView, WebviewViewResolveContext[js.Any], CancellationToken) => Thenable[Unit] | Unit
-    ): Self = StObject.set(x, "resolveWebviewView", js.Any.fromFunction3(value))
+    inline def setResolveWebviewView(value: (WebviewView, WebviewViewResolveContext[Any], CancellationToken) => Thenable[Unit] | Unit): Self = StObject.set(x, "resolveWebviewView", js.Any.fromFunction3(value))
   }
 }

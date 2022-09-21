@@ -33,6 +33,6 @@ object ErrorRootCause {
     
     inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
     
-    inline def setServicesVarargs(value: ErrorRootCauseService*): Self = StObject.set(x, "Services", js.Array(value :_*))
+    inline def setServicesVarargs(value: ErrorRootCauseService*): Self = StObject.set(x, "Services", js.Array(value*))
   }
 }

@@ -32,17 +32,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the preset criteria conditional format rule.
   *
-  * Represents the Preset Criteria Conditional Format Rule
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 trait ConditionalPresetCriteriaRule extends StObject {
   
   /**
-    *
     * The criterion of the conditional format.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var criterion: ConditionalFormatPresetCriterion | Invalid | Blanks | NonBlanks | Errors | NonErrors | Yesterday | Today | Tomorrow | LastSevenDays | LastWeek | ThisWeek | NextWeek | LastMonth | ThisMonth | NextMonth | AboveAverage | BelowAverage | EqualOrAboveAverage | EqualOrBelowAverage | OneStdDevAboveAverage | OneStdDevBelowAverage | TwoStdDevAboveAverage | TwoStdDevBelowAverage | ThreeStdDevAboveAverage | ThreeStdDevBelowAverage | UniqueValues | DuplicateValues

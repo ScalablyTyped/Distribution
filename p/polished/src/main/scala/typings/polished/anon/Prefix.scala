@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Prefix extends StObject {
   
-  var infix: RightToLeft
+  var infix: Notation
   
-  var prefix: ArgCountF
+  var prefix: Precedence
   
   var regSymbol: BackslashPlussign
   
@@ -18,16 +18,16 @@ trait Prefix extends StObject {
 }
 object Prefix {
   
-  inline def apply(infix: RightToLeft, prefix: ArgCountF): Prefix = {
+  inline def apply(infix: Notation, prefix: Precedence): Prefix = {
     val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], regSymbol = "\\+", symbol = "+")
     __obj.asInstanceOf[Prefix]
   }
   
   extension [Self <: Prefix](x: Self) {
     
-    inline def setInfix(value: RightToLeft): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
+    inline def setInfix(value: Notation): Self = StObject.set(x, "infix", value.asInstanceOf[js.Any])
     
-    inline def setPrefix(value: ArgCountF): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Precedence): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     inline def setRegSymbol(value: BackslashPlussign): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     

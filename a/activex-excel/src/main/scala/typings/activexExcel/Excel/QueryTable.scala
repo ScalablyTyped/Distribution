@@ -60,7 +60,7 @@ trait QueryTable extends StObject {
   @JSName("Parameters")
   val Parameters_Original: Parameters = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var PostText: String = js.native
   
@@ -110,7 +110,7 @@ trait QueryTable extends StObject {
   
   var SourceDataFile: String = js.native
   
-  var Sql: js.Any = js.native
+  var Sql: Any = js.native
   
   var TablesOnlyFromHTML: Boolean = js.native
   

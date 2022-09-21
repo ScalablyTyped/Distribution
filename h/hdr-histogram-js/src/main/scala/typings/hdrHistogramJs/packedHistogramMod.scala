@@ -1,6 +1,6 @@
 package typings.hdrHistogramJs
 
-import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
+import typings.hdrHistogramJs.jsHistogramMod.JsHistogram
 import typings.hdrHistogramJs.packedArrayMod.PackedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,9 +36,9 @@ object packedHistogramMod {
     * incurs allocation and copying of internal data structures.
     * <p>
     */
-  @JSImport("hdr-histogram-js/PackedHistogram", JSImport.Default)
+  @JSImport("hdr-histogram-js/dist/PackedHistogram", JSImport.Default)
   @js.native
-  class default protected () extends PackedHistogram {
+  open class default protected () extends PackedHistogram {
     def this(
       lowestDiscernibleValue: Double,
       highestTrackableValue: Double,
@@ -75,10 +75,8 @@ object packedHistogramMod {
     * <p>
     */
   @js.native
-  trait PackedHistogram extends AbstractHistogram {
+  trait PackedHistogram extends JsHistogram {
     
     var packedCounts: PackedArray = js.native
-    
-    var totalCount: Double = js.native
   }
 }

@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object strPadMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, padLength: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, padLength: js.Any, padString: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, padLength: js.Any, padString: js.Any, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, padLength: js.Any, padString: Unit, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, padLength: Unit, padString: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, padLength: Unit, padString: js.Any, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: js.Any, padLength: Unit, padString: Unit, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, padLength: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, padLength: js.Any, padString: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, padLength: js.Any, padString: js.Any, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, padLength: js.Any, padString: Unit, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, padLength: Unit, padString: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, padLength: Unit, padString: js.Any, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(input: Unit, padLength: Unit, padString: Unit, padType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(input: Any): Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(input: Any, padLength: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, padLength: Any, padString: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, padLength: Any, padString: Any, padType: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, padLength: Any, padString: Unit, padType: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, padLength: Unit, padString: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, padLength: Unit, padString: Any, padType: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Any, padLength: Unit, padString: Unit, padType: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, padLength: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, padLength: Any, padString: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, padLength: Any, padString: Any, padType: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, padLength: Any, padString: Unit, padType: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, padLength: Unit, padString: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, padLength: Unit, padString: Any, padType: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Unit, padLength: Unit, padString: Unit, padType: Any): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], padLength.asInstanceOf[js.Any], padString.asInstanceOf[js.Any], padType.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/str_pad", JSImport.Namespace)
   @js.native

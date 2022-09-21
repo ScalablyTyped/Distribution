@@ -81,7 +81,7 @@ object XBezierPolyPolygon2D {
     getNumberOfPolygonPoints: Double => Double,
     getNumberOfPolygons: () => Double,
     isClosed: Double => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setBezierSegment: (RealBezierSegment2D, Double, Double) => Unit,
     setBezierSegments: (SeqEquiv[SeqEquiv[RealBezierSegment2D]], Double) => Unit,

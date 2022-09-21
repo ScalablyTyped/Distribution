@@ -1,7 +1,7 @@
 package typings.rdfjsFetch
 
 import typings.rdfjsFetchLite.anon.FnCall
-import typings.rdfjsFetchLite.anon.PickparsersSinkMapEventEm
+import typings.rdfjsFetchLite.anon.Typeofformats
 import typings.std.AbortSignal
 import typings.std.BodyInit
 import typings.std.HeadersInit
@@ -27,7 +27,7 @@ object anon {
     
     var fetch: js.UndefOr[FnCall] = js.undefined
     
-    var formats: js.UndefOr[PickparsersSinkMapEventEm] = js.undefined
+    var formats: js.UndefOr[Typeofformats] = js.undefined
     
     var headers: js.UndefOr[HeadersInit] = js.undefined
     
@@ -47,7 +47,7 @@ object anon {
     
     var signal: js.UndefOr[AbortSignal | Null] = js.undefined
     
-    var window: js.UndefOr[js.Any] = js.undefined
+    var window: js.UndefOr[Null] = js.undefined
   }
   object PartialFormatsInit {
     
@@ -76,7 +76,7 @@ object anon {
       
       inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      inline def setFormats(value: PickparsersSinkMapEventEm): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: Typeofformats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
       inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
@@ -84,7 +84,7 @@ object anon {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
       
@@ -119,10 +119,6 @@ object anon {
       inline def setSignalNull: Self = StObject.set(x, "signal", null)
       
       inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
-      
-      inline def setWindow(value: js.Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
-      
-      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
 }

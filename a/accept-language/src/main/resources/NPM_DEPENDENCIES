@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "accept-language" : "3.0.18"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "accept-language" : "3.0.18"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

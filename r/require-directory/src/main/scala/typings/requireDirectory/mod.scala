@@ -1,8 +1,6 @@
 package typings.requireDirectory
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeModule
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,12 +14,32 @@ object mod {
     * @param options object with options for require-directory call
     * @returns hash of modules in specified directory
     */
-  inline def apply[T, U](m: NodeModule): RequireDirectoryResult[U] = ^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any]).asInstanceOf[RequireDirectoryResult[U]]
-  inline def apply[T, U](m: NodeModule, path: String): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
-  inline def apply[T, U](m: NodeModule, path: String, options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
-  inline def apply[T, U](m: NodeModule, path: Unit, options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
-  inline def apply[T, U](m: NodeModule, path: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
-  inline def apply[T, U](m: NodeModule, path: RequireDirectoryOptions[T, U], options: RequireDirectoryOptions[T, U]): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](
+    m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any
+  ): RequireDirectoryResult[U] = ^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any]).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](
+    m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
+    path: String
+  ): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](
+    m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
+    path: String,
+    options: RequireDirectoryOptions[T, U]
+  ): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](
+    m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
+    path: Unit,
+    options: RequireDirectoryOptions[T, U]
+  ): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](
+    m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
+    path: RequireDirectoryOptions[T, U]
+  ): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
+  inline def apply[T, U](
+    m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeModule */ Any,
+    path: RequireDirectoryOptions[T, U],
+    options: RequireDirectoryOptions[T, U]
+  ): RequireDirectoryResult[U] = (^.asInstanceOf[js.Dynamic].apply(m.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequireDirectoryResult[U]]
   
   @JSImport("require-directory", JSImport.Namespace)
   @js.native
@@ -32,7 +50,7 @@ object mod {
     */
   @JSImport("require-directory", "defaults")
   @js.native
-  val defaults: RequireDirectoryOptions[js.Any, js.Any] = js.native
+  val defaults: RequireDirectoryOptions[Any, Any] = js.native
   
   /**
     * @description function that checks path for whitelisting/blacklisting
@@ -47,7 +65,7 @@ object mod {
       * @description RegExp or function for blacklisting modules
       * @default undefined
       */
-    var exclude: js.UndefOr[RegExp | CheckPathFn] = js.undefined
+    var exclude: js.UndefOr[js.RegExp | CheckPathFn] = js.undefined
     
     /**
       * @description array of file extensions that will be included in resulting hash as modules
@@ -59,7 +77,7 @@ object mod {
       * @description RegExp or function for whitelisting modules
       * @default undefined
       */
-    var include: js.UndefOr[RegExp | CheckPathFn] = js.undefined
+    var include: js.UndefOr[js.RegExp | CheckPathFn] = js.undefined
     
     /**
       * @description option to include subdirectories
@@ -92,7 +110,7 @@ object mod {
     
     extension [Self <: RequireDirectoryOptions[?, ?], T, U](x: Self & (RequireDirectoryOptions[T, U])) {
       
-      inline def setExclude(value: RegExp | CheckPathFn): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.RegExp | CheckPathFn): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeFunction1(value: /* path */ String => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
       
@@ -102,9 +120,9 @@ object mod {
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
       
-      inline def setInclude(value: RegExp | CheckPathFn): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.RegExp | CheckPathFn): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeFunction1(value: /* path */ String => Boolean): Self = StObject.set(x, "include", js.Any.fromFunction1(value))
       

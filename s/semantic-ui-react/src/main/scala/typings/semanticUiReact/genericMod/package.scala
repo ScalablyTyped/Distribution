@@ -1,20 +1,28 @@
 package typings.semanticUiReact.genericMod
 
+import typings.react.mod.ElementType
+import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
+import typings.react.mod.ReactNodeArray
+import typings.semanticUiReact.anon.`0`
+import typings.semanticUiReact.semanticUiReactStrings.children
+import typings.std.Omit
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type SemanticShorthandCollection[TProps] = js.Array[typings.semanticUiReact.genericMod.SemanticShorthandItem[TProps]]
+type SemanticShorthandCollection[TProps] = js.Array[SemanticShorthandItem[TProps]]
 
-type SemanticShorthandContent = typings.react.mod.ReactNode
+type SemanticShorthandContent = ReactNode
 
-type SemanticShorthandItem[TProps /* <: typings.std.Record[java.lang.String, js.Any] */] = typings.react.mod.ReactNode | typings.semanticUiReact.genericMod.SemanticShorthandItemFunc[TProps] | ((typings.std.Omit[TProps, typings.semanticUiReact.semanticUiReactStrings.children]) & typings.semanticUiReact.anon.`0`[TProps])
+type SemanticShorthandItem[TProps /* <: Record[String, Any] */] = ReactNode | SemanticShorthandItemFunc[TProps] | ((Omit[TProps, children]) & `0`[TProps])
 
 type SemanticShorthandItemFunc[TProps] = js.Function3[
-/* component */ typings.react.mod.ElementType[TProps], 
+/* component */ ElementType[TProps], 
 /* props */ TProps, 
-/* children */ js.UndefOr[typings.react.mod.ReactNode | typings.react.mod.ReactNodeArray], 
-typings.react.mod.ReactElement | scala.Null]
+/* children */ js.UndefOr[ReactNode | ReactNodeArray], 
+ReactElement | Null]
 
-type ShorthandRenderFunction[C /* <: typings.react.mod.ElementType[js.Any] */, P] = js.Function2[/* Component */ C, /* props */ P, typings.react.mod.ReactNode]
+type ShorthandRenderFunction[C /* <: ElementType[Any] */, P] = js.Function2[/* Component */ C, /* props */ P, ReactNode]

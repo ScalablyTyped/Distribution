@@ -1,56 +1,30 @@
 package typings.reachSkipNav
 
-import typings.react.mod.Component
-import typings.react.mod.HTMLProps
-import typings.react.mod.ReactNode
-import typings.std.HTMLAnchorElement
-import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  /**
+    * SkipNavContent
+    *
+    * Renders a div as the target for the link.
+    *
+    * @see Docs https://reach.tech/skip-nav#skipnavcontent
+    */
   @JSImport("@reach/skip-nav", "SkipNavContent")
   @js.native
-  class SkipNavContent protected ()
-    extends Component[SkipNavProps & HTMLProps[HTMLDivElement], js.Object, js.Any] {
-    def this(props: SkipNavProps & HTMLProps[HTMLDivElement]) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: SkipNavProps & HTMLProps[HTMLDivElement], context: js.Any) = this()
-  }
+  val SkipNavContent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Polymorphic.ForwardRefComponent<'div', SkipNavContentProps> */ Any = js.native
   
+  /**
+    * SkipNavLink
+    *
+    * Renders a link that remains hidden until focused to skip to the main content.
+    *
+    * @see Docs https://reach.tech/skip-nav#skipnavlink
+    */
   @JSImport("@reach/skip-nav", "SkipNavLink")
   @js.native
-  class SkipNavLink protected ()
-    extends Component[SkipNavProps & HTMLProps[HTMLAnchorElement], js.Object, js.Any] {
-    def this(props: SkipNavProps & HTMLProps[HTMLAnchorElement]) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: SkipNavProps & HTMLProps[HTMLAnchorElement], context: js.Any) = this()
-  }
-  
-  trait SkipNavProps extends StObject {
-    
-    var children: js.UndefOr[String | ReactNode] = js.undefined
-  }
-  object SkipNavProps {
-    
-    inline def apply(): SkipNavProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SkipNavProps]
-    }
-    
-    extension [Self <: SkipNavProps](x: Self) {
-      
-      inline def setChildren(value: String | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-    }
-  }
+  val SkipNavLink: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Polymorphic.ForwardRefComponent<'a', SkipNavLinkProps> */ Any = js.native
 }

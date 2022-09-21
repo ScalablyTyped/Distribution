@@ -1,23 +1,22 @@
 organization := "org.scalablytyped"
 name := "firebase__firestore"
-version := "1.15.5-9341f1"
-scalaVersion := "2.13.2"
+version := "3.5.0-a75264"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.6.1-924929",
-  "org.scalablytyped" %%% "firebase__auth-interop-types" % "0.1.5-baeb5e",
-  "org.scalablytyped" %%% "firebase__component" % "0.1.15-3e36ec",
-  "org.scalablytyped" %%% "firebase__firestore-types" % "1.11.0-355393",
-  "org.scalablytyped" %%% "firebase__logger" % "0.2.5-9e97a2",
-  "org.scalablytyped" %%% "firebase__util" % "0.2.50-04c0ec",
-  "org.scalablytyped" %%% "grpc__grpc-js" % "0.6.18-595522",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
-  "org.scalablytyped" %%% "protobufjs" % "6.9.0-8bd81a",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8",
-  "org.scalablytyped" %%% "typescript" % "3.9.5-0b3ab7")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "firebase__app" % "0.7.33-70e6f2",
+  "org.scalablytyped" %%% "firebase__firestore-types" % "2.5.0-e7b95c",
+  "org.scalablytyped" %%% "firebase__logger" % "0.3.3-442cc4",
+  "org.scalablytyped" %%% "firebase__util" % "1.6.3-0d2002",
+  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.0-db6617",
+  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-7b2a61",
+  "org.scalablytyped" %%% "long" % "5.2.0-13a867",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "protobufjs" % "7.1.1-ba42e8",
+  "org.scalablytyped" %%% "rollup" % "2.79.0-aeffd0",
+  "org.scalablytyped" %%% "std" % "4.8-958c79",
+  "org.scalablytyped" %%% "typescript" % "4.8.3-775b25")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

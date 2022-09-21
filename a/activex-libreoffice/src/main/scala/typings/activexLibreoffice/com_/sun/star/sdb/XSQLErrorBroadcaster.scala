@@ -22,7 +22,7 @@ object XSQLErrorBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addSQLErrorListener: XSQLErrorListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeSQLErrorListener: XSQLErrorListener => Unit
   ): XSQLErrorBroadcaster = {

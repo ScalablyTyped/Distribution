@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.SplitSolver")
 @js.native
-class SplitSolver protected ()
+open class SplitSolver protected ()
   extends StObject
      with typings.cannon.CANNON.SplitSolver {
   def this(subsolver: typings.cannon.CANNON.Solver) = this()

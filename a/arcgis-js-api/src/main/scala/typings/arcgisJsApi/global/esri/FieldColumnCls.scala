@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumn.html)
   */
-class FieldColumnCls ()
+open class FieldColumnCls ()
   extends StObject
      with typings.arcgisJsApi.esri.FieldColumn {
   def this(properties: FieldColumnProperties) = this()
@@ -37,6 +37,8 @@ class FieldColumnCls ()
   
   /**
     * Indicates whether the column is resizable.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-Column.html#resizable)
     */

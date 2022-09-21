@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "LoyaltyEventType")
 @js.native
-class LoyaltyEventType () extends StObject
+open class LoyaltyEventType () extends StObject

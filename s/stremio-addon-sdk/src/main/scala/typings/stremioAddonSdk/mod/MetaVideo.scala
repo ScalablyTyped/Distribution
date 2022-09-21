@@ -103,7 +103,7 @@ object MetaVideo {
     
     inline def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
     
-    inline def setStreamsVarargs(value: Stream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+    inline def setStreamsVarargs(value: Stream*): Self = StObject.set(x, "streams", js.Array(value*))
     
     inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     

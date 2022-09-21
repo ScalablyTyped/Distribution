@@ -1,6 +1,5 @@
 package typings.timezonecomplete
 
-import typings.std.Date
 import typings.timezonecomplete.basicsMod.TimeStruct
 import typings.timezonecomplete.javascriptMod.DateFunctions
 import typings.timezonecomplete.tzDatabaseMod.NormalizeOption
@@ -24,17 +23,17 @@ object timezoneMod {
     * @throws timezonecomplete.NotFound.Zone if the given zone name doesn't exist
     * @throws timezonecomplete.InvalidTimeZoneData if the time zone database is invalid
     */
-  /* private */ class TimeZone () extends StObject {
+  /* private */ open class TimeZone () extends StObject {
     
     /**
       * Adhere to Daylight Saving Time if applicable
       */
-    /* private */ var _dst: js.Any = js.native
+    /* private */ var _dst: Any = js.native
     
     /**
       * The kind of time zone specified by _name
       */
-    /* private */ var _kind: js.Any = js.native
+    /* private */ var _kind: Any = js.native
     
     /**
       * Time zone identifier:
@@ -42,12 +41,12 @@ object timezoneMod {
       *  E.g. "-01:30" for a fixed offset from UTC
       *  E.g. "UTC" or "Europe/Amsterdam" for an Olsen TZ database time
       */
-    /* private */ var _name: js.Any = js.native
+    /* private */ var _name: Any = js.native
     
     /**
       * Only for fixed offsets: the offset in minutes
       */
-    /* private */ var _offset: js.Any = js.native
+    /* private */ var _offset: Any = js.native
     
     /**
       * Zone abbreviation at given UTC timestamp e.g. CEST for Central European Summer Time.
@@ -212,7 +211,7 @@ object timezoneMod {
       * @param funcs: the set of functions to use: get() or getUTC()
       * @throws timezonecomplete.InvalidTimeZoneData if values in the time zone database are invalid
       */
-    def offsetForUtcDate(date: Date, funcs: DateFunctions): Double = js.native
+    def offsetForUtcDate(date: js.Date, funcs: DateFunctions): Double = js.native
     
     /**
       * Calculate timezone offset from a zone-local time (NOT a UTC time).
@@ -260,7 +259,7 @@ object timezoneMod {
       * @param funcs: the set of functions to use: get() or getUTC()
       * @throws timezonecomplete.InvalidTimeZoneData if values in the time zone database are invalid
       */
-    def offsetForZoneDate(date: Date, funcs: DateFunctions): Double = js.native
+    def offsetForZoneDate(date: js.Date, funcs: DateFunctions): Double = js.native
     
     /**
       * Calculate timezone standard offset excluding DST from a UTC time.
@@ -309,8 +308,8 @@ object timezoneMod {
       */
     @JSImport("timezonecomplete/dist/lib/timezone", "TimeZone._cache")
     @js.native
-    def _cache: js.Any = js.native
-    inline def _cache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_cache")(x.asInstanceOf[js.Any])
+    def _cache: Any = js.native
+    inline def _cache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_cache")(x.asInstanceOf[js.Any])
     
     /**
       * Find in cache or create zone
@@ -320,8 +319,8 @@ object timezoneMod {
       */
     @JSImport("timezonecomplete/dist/lib/timezone", "TimeZone._findOrCreate")
     @js.native
-    def _findOrCreate: js.Any = js.native
-    inline def _findOrCreate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_findOrCreate")(x.asInstanceOf[js.Any])
+    def _findOrCreate: Any = js.native
+    inline def _findOrCreate_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_findOrCreate")(x.asInstanceOf[js.Any])
     
     /**
       * Returns true iff the first non-whitespace character of s is +, -, or Z
@@ -330,8 +329,8 @@ object timezoneMod {
       */
     @JSImport("timezonecomplete/dist/lib/timezone", "TimeZone._isOffsetString")
     @js.native
-    def _isOffsetString: js.Any = js.native
-    inline def _isOffsetString_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isOffsetString")(x.asInstanceOf[js.Any])
+    def _isOffsetString: Any = js.native
+    inline def _isOffsetString_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isOffsetString")(x.asInstanceOf[js.Any])
     
     /**
       * Normalize a string so it can be used as a key for a cache lookup
@@ -339,8 +338,8 @@ object timezoneMod {
       */
     @JSImport("timezonecomplete/dist/lib/timezone", "TimeZone._normalizeString")
     @js.native
-    def _normalizeString: js.Any = js.native
-    inline def _normalizeString_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_normalizeString")(x.asInstanceOf[js.Any])
+    def _normalizeString: Any = js.native
+    inline def _normalizeString_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_normalizeString")(x.asInstanceOf[js.Any])
     
     /**
       * The local time zone for a given date. Note that
@@ -435,7 +434,7 @@ object timezoneMod {
     /* 2 */ val Proper: typings.timezonecomplete.timezoneMod.TimeZoneKind.Proper & Double = js.native
   }
   
-  inline def isTimeZone(value: js.Any): /* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeZone")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ Boolean]
+  inline def isTimeZone(value: Any): /* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeZone")(value.asInstanceOf[js.Any]).asInstanceOf[/* is timezonecomplete.timezonecomplete/dist/lib/timezone.TimeZone */ Boolean]
   
   inline def local(): TimeZone = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[TimeZone]
   

@@ -2,7 +2,6 @@ package typings.angularHttp
 
 import typings.angularHttp.headersMod.Headers
 import typings.angularHttp.interfacesMod.ResponseOptionsArgs
-import typings.std.ArrayBuffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,17 +11,17 @@ object baseResponseOptionsMod {
   
   @JSImport("@angular/http/src/base_response_options", "BaseResponseOptions")
   @js.native
-  class BaseResponseOptions () extends ResponseOptions
+  open class BaseResponseOptions () extends ResponseOptions
   
   @JSImport("@angular/http/src/base_response_options", "ResponseOptions")
   @js.native
-  class ResponseOptions () extends StObject {
+  open class ResponseOptions () extends StObject {
     def this(opts: ResponseOptionsArgs) = this()
     
     /**
       * String, Object, ArrayBuffer or Blob representing the body of the {@link Response}.
       */
-    var body: String | js.Object | ArrayBuffer | Blob | Null = js.native
+    var body: String | js.Object | js.typedarray.ArrayBuffer | Blob | Null = js.native
     
     /**
       * Response {@link Headers headers}

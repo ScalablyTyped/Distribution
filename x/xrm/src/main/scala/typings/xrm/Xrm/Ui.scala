@@ -2,7 +2,9 @@ package typings.xrm.Xrm
 
 import typings.xrm.Xrm.Collection.ItemCollection
 import typings.xrm.Xrm.Controls.Control
+import typings.xrm.Xrm.Controls.FooterSection
 import typings.xrm.Xrm.Controls.FormSelector
+import typings.xrm.Xrm.Controls.HeaderSection
 import typings.xrm.Xrm.Controls.ProcessControl
 import typings.xrm.Xrm.Controls.QuickFormControl
 import typings.xrm.Xrm.Controls.Tab
@@ -35,6 +37,11 @@ trait Ui extends StObject {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
   var controls: ItemCollection[Control] = js.native
+  
+  /**
+    * Provides information on how to set the visibility of footer section.
+    */
+  var footerSection: FooterSection = js.native
   
   /**
     * The form selector API.
@@ -71,6 +78,11 @@ trait Ui extends StObject {
   def getViewPortWidth(): Double = js.native
   
   /**
+    * Provides information on how to set the visibility of header section.
+    */
+  var headerSection: HeaderSection = js.native
+  
+  /**
     * The navigation API.
     * @remarks This API does not exist with Microsoft Dynamics CRM for tablets.
     */
@@ -96,6 +108,13 @@ trait Ui extends StObject {
     */
   def refreshRibbon(): Unit = js.native
   def refreshRibbon(refreshAll: Boolean): Unit = js.native
+  
+  /**
+    * Sets the name of the table to be displayed on the form.
+    * @param name Name of the table to be displayed on the form.
+    * @see {@link https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/formcontext-ui/setformentityname External Link: setFormEntityName (Client API reference)}
+    */
+  def setFormEntityName(name: String): Unit = js.native
   
   /**
     * Displays a form level notification. Any number of notifications can be displayed and will remain until removed using clearFormNotification.

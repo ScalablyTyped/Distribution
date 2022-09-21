@@ -28,7 +28,7 @@ object GoogleCloudDatalabelingV1beta1VideoClassificationConfig {
     
     inline def setAnnotationSpecSetConfigsUndefined: Self = StObject.set(x, "annotationSpecSetConfigs", js.undefined)
     
-    inline def setAnnotationSpecSetConfigsVarargs(value: GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig*): Self = StObject.set(x, "annotationSpecSetConfigs", js.Array(value :_*))
+    inline def setAnnotationSpecSetConfigsVarargs(value: GoogleCloudDatalabelingV1beta1AnnotationSpecSetConfig*): Self = StObject.set(x, "annotationSpecSetConfigs", js.Array(value*))
     
     inline def setApplyShotDetection(value: Boolean): Self = StObject.set(x, "applyShotDetection", value.asInstanceOf[js.Any])
     

@@ -9,13 +9,12 @@ object progressDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/progress/demo/basic", JSImport.Default)
   @js.native
-  class default protected () extends BasicProgressExample {
-    def this(props: js.Any) = this()
+  open class default protected () extends BasicProgressExample {
+    def this(props: Any) = this()
   }
   
   @js.native
-  trait BasicProgressExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait BasicProgressExample extends Component[Any, Any, Any] {
     
     def onAdd(): Unit = js.native
   }

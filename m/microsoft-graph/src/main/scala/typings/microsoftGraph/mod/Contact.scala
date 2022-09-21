@@ -13,7 +13,7 @@ trait Contact
   
   /**
     * The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in
-    * UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var birthday: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -63,67 +63,49 @@ trait Contact
   // The contact's home phone numbers.
   var homePhones: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
-  // The contact's instant messaging (IM) addresses.
   var imAddresses: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
-  // The contact's initials.
   var initials: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The contact’s job title.
   var jobTitle: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The name of the contact's manager.
   var manager: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The contact's middle name.
   var middleName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The contact's mobile phone number.
   var mobilePhone: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
   var multiValueExtendedProperties: js.UndefOr[NullableOption[js.Array[MultiValueLegacyExtendedProperty]]] = js.undefined
   
-  // The contact's nickname.
   var nickName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The location of the contact's office.
   var officeLocation: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Other addresses for the contact.
   var otherAddress: js.UndefOr[NullableOption[PhysicalAddress]] = js.undefined
   
-  // The ID of the contact's parent folder.
   var parentFolderId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The user's notes about the contact.
   var personalNotes: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Optional contact picture. You can get or set a photo for a contact.
   var photo: js.UndefOr[NullableOption[ProfilePhoto]] = js.undefined
   
-  // The contact's profession.
   var profession: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The collection of single-value extended properties defined for the contact. Read-only. Nullable.
   var singleValueExtendedProperties: js.UndefOr[NullableOption[js.Array[SingleValueLegacyExtendedProperty]]] = js.undefined
   
-  // The name of the contact's spouse/partner.
   var spouseName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The contact's surname.
   var surname: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The contact's title.
   var title: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The phonetic Japanese company name of the contact.
   var yomiCompanyName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The phonetic Japanese given name (first name) of the contact.
   var yomiGivenName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The phonetic Japanese surname (last name) of the contact.
   var yomiSurname: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Contact {
@@ -165,7 +147,7 @@ object Contact {
     
     inline def setBusinessPhonesUndefined: Self = StObject.set(x, "businessPhones", js.undefined)
     
-    inline def setBusinessPhonesVarargs(value: String*): Self = StObject.set(x, "businessPhones", js.Array(value :_*))
+    inline def setBusinessPhonesVarargs(value: String*): Self = StObject.set(x, "businessPhones", js.Array(value*))
     
     inline def setChildren(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
@@ -173,7 +155,7 @@ object Contact {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setCompanyName(value: NullableOption[String]): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     
@@ -199,7 +181,7 @@ object Contact {
     
     inline def setEmailAddressesUndefined: Self = StObject.set(x, "emailAddresses", js.undefined)
     
-    inline def setEmailAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
+    inline def setEmailAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "emailAddresses", js.Array(value*))
     
     inline def setExtensions(value: NullableOption[js.Array[Extension]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
@@ -207,7 +189,7 @@ object Contact {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setFileAs(value: NullableOption[String]): Self = StObject.set(x, "fileAs", value.asInstanceOf[js.Any])
     
@@ -239,7 +221,7 @@ object Contact {
     
     inline def setHomePhonesUndefined: Self = StObject.set(x, "homePhones", js.undefined)
     
-    inline def setHomePhonesVarargs(value: String*): Self = StObject.set(x, "homePhones", js.Array(value :_*))
+    inline def setHomePhonesVarargs(value: String*): Self = StObject.set(x, "homePhones", js.Array(value*))
     
     inline def setImAddresses(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "imAddresses", value.asInstanceOf[js.Any])
     
@@ -247,7 +229,7 @@ object Contact {
     
     inline def setImAddressesUndefined: Self = StObject.set(x, "imAddresses", js.undefined)
     
-    inline def setImAddressesVarargs(value: String*): Self = StObject.set(x, "imAddresses", js.Array(value :_*))
+    inline def setImAddressesVarargs(value: String*): Self = StObject.set(x, "imAddresses", js.Array(value*))
     
     inline def setInitials(value: NullableOption[String]): Self = StObject.set(x, "initials", value.asInstanceOf[js.Any])
     
@@ -285,7 +267,7 @@ object Contact {
     
     inline def setMultiValueExtendedPropertiesUndefined: Self = StObject.set(x, "multiValueExtendedProperties", js.undefined)
     
-    inline def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value :_*))
+    inline def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value*))
     
     inline def setNickName(value: NullableOption[String]): Self = StObject.set(x, "nickName", value.asInstanceOf[js.Any])
     
@@ -335,7 +317,7 @@ object Contact {
     
     inline def setSingleValueExtendedPropertiesUndefined: Self = StObject.set(x, "singleValueExtendedProperties", js.undefined)
     
-    inline def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value :_*))
+    inline def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value*))
     
     inline def setSpouseName(value: NullableOption[String]): Self = StObject.set(x, "spouseName", value.asInstanceOf[js.Any])
     

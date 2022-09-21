@@ -9,16 +9,31 @@ trait NumberDeclarationOption
   extends StObject
      with DeclarationOptionBase
      with _DeclarationOption
-     with _KeyToDeclaration[js.Any] {
+     with _KeyToDeclaration[Any] {
   
+  /**
+    * If not specified defaults to 0.
+    */
   var defaultValue: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Highest possible value.
+    */
   var maxValue: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Lowest possible value.
+    */
   var minValue: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
   var type_NumberDeclarationOption: Number
+  
+  /**
+    * An optional validation function that validates a potential value of this option.
+    * The function must throw an Error if the validation fails and should do nothing otherwise.
+    */
+  var validate: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
 }
 object NumberDeclarationOption {
   
@@ -43,5 +58,9 @@ object NumberDeclarationOption {
     inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     inline def setType(value: Number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValidate(value: /* value */ Double => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

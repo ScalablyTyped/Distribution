@@ -17,7 +17,7 @@ trait CreateUsagePlanRequest extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] The name of the usage plan.
+    * The name of the usage plan.
     */
   var name: String
   
@@ -49,7 +49,7 @@ object CreateUsagePlanRequest {
     
     inline def setApiStagesUndefined: Self = StObject.set(x, "apiStages", js.undefined)
     
-    inline def setApiStagesVarargs(value: ApiStage*): Self = StObject.set(x, "apiStages", js.Array(value :_*))
+    inline def setApiStagesVarargs(value: ApiStage*): Self = StObject.set(x, "apiStages", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

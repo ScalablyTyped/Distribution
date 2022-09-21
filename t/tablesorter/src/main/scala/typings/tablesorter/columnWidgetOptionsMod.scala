@@ -36,7 +36,7 @@ object columnWidgetOptionsMod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setColumns_tfoot(value: Boolean): Self = StObject.set(x, "columns_tfoot", value.asInstanceOf[js.Any])
       

@@ -8,16 +8,13 @@ Redis session store for Connect
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | connect-redis |
-| Keywords           | - |
+| Keywords           | connect, redis, session, express |
 | # releases         | 8 |
-| # dependents       | 522 |
-| # downloads        | 11203163 |
-| # stars            | 113 |
+| # dependents       | 0.0 |
+| # downloads        | 1277832.3333333333 |
+| # stars            | 2647.0 |
 
 ## Links
-- [Homepage](https://github.com/visionmedia/connect-redis#readme)
-- [Bugs](https://github.com/visionmedia/connect-redis/issues)
-- [Repository](https://github.com/visionmedia/connect-redis)
 - [Npm](https://www.npmjs.com/package/connect-redis)
     
 

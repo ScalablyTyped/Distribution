@@ -9,35 +9,35 @@ object Orchestration {
   trait CurrentAppOrchestration extends StObject {
     
     /* unmapped type */
-    var startSingleAppMode: js.Any
+    var startSingleAppMode: Any
   }
   object CurrentAppOrchestration {
     
-    inline def apply(startSingleAppMode: js.Any): CurrentAppOrchestration = {
+    inline def apply(startSingleAppMode: Any): CurrentAppOrchestration = {
       val __obj = js.Dynamic.literal(startSingleAppMode = startSingleAppMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[CurrentAppOrchestration]
     }
     
     extension [Self <: CurrentAppOrchestration](x: Self) {
       
-      inline def setStartSingleAppMode(value: js.Any): Self = StObject.set(x, "startSingleAppMode", value.asInstanceOf[js.Any])
+      inline def setStartSingleAppMode(value: Any): Self = StObject.set(x, "startSingleAppMode", value.asInstanceOf[js.Any])
     }
   }
   
   trait SingleAppModeContext extends StObject {
     
-    var close: js.Any
+    var close: Any
   }
   object SingleAppModeContext {
     
-    inline def apply(close: js.Any): SingleAppModeContext = {
+    inline def apply(close: Any): SingleAppModeContext = {
       val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any])
       __obj.asInstanceOf[SingleAppModeContext]
     }
     
     extension [Self <: SingleAppModeContext](x: Self) {
       
-      inline def setClose(value: js.Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     }
   }
 }

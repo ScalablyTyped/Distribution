@@ -11,13 +11,13 @@ trait CollectWithCountIntoExpression
      with PartialStatement
      with Instantiable4[
       /* prev */ PartialStatement, 
-      /* dfns */ js.Array[js.Any], 
-      /* varname */ js.Any, 
-      /* options */ js.Any, 
+      /* dfns */ js.Array[Any], 
+      /* varname */ Any, 
+      /* options */ Any, 
       PartialStatement
     ] {
   
-  def options(newOpts: js.Any): js.Any = js.native
+  def options(newOpts: Any): Any = js.native
   
   def toAQL(): String = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for async-lock
 
-Typings are for version 1.1
+Typings are for version 1.3
 
 ## Library description:
 Lock on asynchronous code
@@ -10,10 +10,10 @@ Lock on asynchronous code
 | ------------------ | :-------------: |
 | Full name          | async-lock |
 | Keywords           | lock, async, concurrency, critical, section, mutex |
-| # releases         | 9 |
-| # dependents       | 188 |
-| # downloads        | 9806631 |
-| # stars            | 8 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1824203.0 |
+| # stars            | 293.0 |
 
 ## Links
 - [Homepage](https://github.com/rogierschouten/async-lock)

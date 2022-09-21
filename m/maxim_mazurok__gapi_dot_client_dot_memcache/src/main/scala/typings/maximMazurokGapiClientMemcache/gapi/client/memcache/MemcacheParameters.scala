@@ -9,7 +9,7 @@ trait MemcacheParameters extends StObject {
   
   /**
     * Output only. The unique ID associated with this set of parameters. Users can use this id to determine if the parameters associated with the instance differ from the parameters
-    * associated with the nodes and any action needs to be taken to apply parameters on nodes.
+    * associated with the nodes. A discrepancy between parameter ids can inform users that they may need to take action to apply parameters on nodes.
     */
   var id: js.UndefOr[String] = js.undefined
   
@@ -17,7 +17,7 @@ trait MemcacheParameters extends StObject {
   var params: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.MemcacheParameters & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.MemcacheParameters & TopLevel[Any]
   ] = js.undefined
 }
 object MemcacheParameters {
@@ -36,7 +36,7 @@ object MemcacheParameters {
     inline def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.MemcacheParameters & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.MemcacheParameters & TopLevel[Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

@@ -37,7 +37,7 @@ object mod {
         
         inline def setElements(value: NodeList | js.Array[ElementNullable]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
         
-        inline def setElementsVarargs(value: ElementNullable*): Self = StObject.set(x, "elements", js.Array(value :_*))
+        inline def setElementsVarargs(value: ElementNullable*): Self = StObject.set(x, "elements", js.Array(value*))
         
         inline def setReevaluate(value: Boolean): Self = StObject.set(x, "reevaluate", value.asInstanceOf[js.Any])
         

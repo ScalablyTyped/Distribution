@@ -29,6 +29,6 @@ object ChatRoomsDataReceived {
     
     inline def setRooms(value: js.Array[ChatRoom]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
     
-    inline def setRoomsVarargs(value: ChatRoom*): Self = StObject.set(x, "rooms", js.Array(value :_*))
+    inline def setRoomsVarargs(value: ChatRoom*): Self = StObject.set(x, "rooms", js.Array(value*))
   }
 }

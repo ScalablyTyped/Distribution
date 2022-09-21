@@ -10,10 +10,10 @@ A module for sending responses from lambda-funciton backed custom resources in A
 | ------------------ | :-------------: |
 | Full name          | cfn-response |
 | Keywords           | aws, cfn-response, response, lambda, function, cloudFormation, custom, resource, cloud, formation |
-| # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 416590 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 29297.333333333332 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/LukeMizuhashi/cfn-response)

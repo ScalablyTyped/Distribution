@@ -23,11 +23,11 @@ object mod {
     
     def enabled(name: String): Boolean
     
-    def get(name: String): js.Any
+    def get(name: String): Any
     
-    def set(name: String, `val`: js.Any): T & Configurable[T]
+    def set(name: String, `val`: Any): T & Configurable[T]
     
-    var settings: StringDictionary[js.Any]
+    var settings: StringDictionary[Any]
   }
   object Configurable {
     
@@ -36,9 +36,9 @@ object mod {
       disabled: String => Boolean,
       enable: String => T & Configurable[T],
       enabled: String => Boolean,
-      get: String => js.Any,
-      set: (String, js.Any) => T & Configurable[T],
-      settings: StringDictionary[js.Any]
+      get: String => Any,
+      set: (String, Any) => T & Configurable[T],
+      settings: StringDictionary[Any]
     ): Configurable[T] = {
       val __obj = js.Dynamic.literal(disable = js.Any.fromFunction1(disable), disabled = js.Any.fromFunction1(disabled), enable = js.Any.fromFunction1(enable), enabled = js.Any.fromFunction1(enabled), get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set), settings = settings.asInstanceOf[js.Any])
       __obj.asInstanceOf[Configurable[T]]
@@ -54,11 +54,11 @@ object mod {
       
       inline def setEnabled(value: String => Boolean): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
       
-      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      inline def setSet(value: (String, js.Any) => T & Configurable[T]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, Any) => T & Configurable[T]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      inline def setSettings(value: StringDictionary[js.Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: StringDictionary[Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }
   }
 }

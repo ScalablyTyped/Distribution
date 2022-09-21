@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TocLastLevelComputed extends StObject {
   
-  var tocLastLevelComputed: js.Any
+  var tocLastLevelComputed: scala.Any
 }
 object TocLastLevelComputed {
   
-  inline def apply(tocLastLevelComputed: js.Any): TocLastLevelComputed = {
+  inline def apply(tocLastLevelComputed: scala.Any): TocLastLevelComputed = {
     val __obj = js.Dynamic.literal(tocLastLevelComputed = tocLastLevelComputed.asInstanceOf[js.Any])
     __obj.asInstanceOf[TocLastLevelComputed]
   }
   
   extension [Self <: TocLastLevelComputed](x: Self) {
     
-    inline def setTocLastLevelComputed(value: js.Any): Self = StObject.set(x, "tocLastLevelComputed", value.asInstanceOf[js.Any])
+    inline def setTocLastLevelComputed(value: scala.Any): Self = StObject.set(x, "tocLastLevelComputed", value.asInstanceOf[js.Any])
   }
 }

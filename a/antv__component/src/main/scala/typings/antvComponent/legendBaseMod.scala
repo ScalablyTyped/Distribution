@@ -21,13 +21,13 @@ object legendBaseMod {
     
     /* protected */ def drawBackground(group: IGroup): Unit = js.native
     
-    /* protected */ def drawLegendContent(group: js.Any): js.Any = js.native
+    /* protected */ def drawLegendContent(group: Any): Any = js.native
     
     /* protected */ def drawTitle(group: IGroup): Unit = js.native
     
     /* protected */ def getDrawPoint(): Point = js.native
     
-    /* private */ var resetDraw: js.Any = js.native
+    /* private */ var resetDraw: Any = js.native
     
     /* protected */ def resetLocation(): Unit = js.native
     

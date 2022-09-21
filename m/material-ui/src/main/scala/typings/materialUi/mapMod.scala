@@ -10,10 +10,10 @@ object mapMod {
   
   @JSImport("material-ui/svg-icons/maps/map", JSImport.Default)
   @js.native
-  class default () extends MapsMap
+  open class default () extends MapsMap
   
   @JSImport("material-ui/svg-icons/maps/map", "MapsMap")
   @js.native
-  class MapsMap ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsMap ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

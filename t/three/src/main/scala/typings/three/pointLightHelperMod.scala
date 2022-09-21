@@ -1,8 +1,9 @@
 package typings.three
 
-import typings.three.colorMod.Color
+import typings.three.eventDispatcherMod.Event
 import typings.three.object3DMod.Object3D
 import typings.three.pointLightMod.PointLight
+import typings.three.utilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,17 +12,13 @@ object pointLightHelperMod {
   
   @JSImport("three/src/helpers/PointLightHelper", "PointLightHelper")
   @js.native
-  class PointLightHelper protected () extends Object3D {
+  open class PointLightHelper protected () extends Object3D[Event] {
     def this(light: PointLight) = this()
     def this(light: PointLight, sphereSize: Double) = this()
-    def this(light: PointLight, sphereSize: Double, color: String) = this()
-    def this(light: PointLight, sphereSize: Double, color: Double) = this()
-    def this(light: PointLight, sphereSize: Double, color: Color) = this()
-    def this(light: PointLight, sphereSize: Unit, color: String) = this()
-    def this(light: PointLight, sphereSize: Unit, color: Double) = this()
-    def this(light: PointLight, sphereSize: Unit, color: Color) = this()
+    def this(light: PointLight, sphereSize: Double, color: ColorRepresentation) = this()
+    def this(light: PointLight, sphereSize: Unit, color: ColorRepresentation) = this()
     
-    var color: js.UndefOr[Color | String | Double] = js.native
+    var color: js.UndefOr[ColorRepresentation] = js.native
     
     def dispose(): Unit = js.native
     

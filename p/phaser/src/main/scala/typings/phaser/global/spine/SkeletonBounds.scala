@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.SkeletonBounds")
 @js.native
-class SkeletonBounds ()
+open class SkeletonBounds ()
   extends StObject
      with typings.phaser.spine.SkeletonBounds {
   
@@ -60,7 +60,7 @@ class SkeletonBounds ()
   var minY: Double = js.native
   
   /* private */ /* CompleteClass */
-  var polygonPool: js.Any = js.native
+  var polygonPool: Any = js.native
   
   /* CompleteClass */
   var polygons: js.Array[ArrayLike[Double]] = js.native

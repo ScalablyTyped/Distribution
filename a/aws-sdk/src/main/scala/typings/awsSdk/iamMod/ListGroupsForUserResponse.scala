@@ -32,7 +32,7 @@ object ListGroupsForUserResponse {
     
     inline def setGroups(value: groupListType): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

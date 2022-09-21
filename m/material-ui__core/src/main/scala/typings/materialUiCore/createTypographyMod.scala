@@ -1,14 +1,9 @@
 package typings.materialUiCore
 
-import typings.csstype.mod.ColorProperty
-import typings.csstype.mod.FontFamilyProperty
-import typings.csstype.mod.FontSizeProperty
-import typings.csstype.mod.FontWeightProperty
-import typings.csstype.mod.LetterSpacingProperty
-import typings.csstype.mod.LineHeightProperty
-import typings.csstype.mod.TextTransformProperty
+import typings.csstype.mod.Property.FontFamily
+import typings.csstype.mod.Property.FontWeight
 import typings.materialUiCore.createPaletteMod.Palette
-import typings.materialUiCore.withStylesMod.CSSProperties
+import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,43 +17,48 @@ object createTypographyMod {
   inline def default(palette: Palette, typography: js.Function1[/* palette */ Palette, TypographyOptions]): Typography = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(palette.asInstanceOf[js.Any], typography.asInstanceOf[js.Any])).asInstanceOf[Typography]
   inline def default(palette: Palette, typography: TypographyOptions): Typography = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(palette.asInstanceOf[js.Any], typography.asInstanceOf[js.Any])).asInstanceOf[Typography]
   
-  /* Inlined parent std.Required<{  fontFamily :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontFamily'],   fontSize :number,   fontWeightLight :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontWeight'],   fontWeightRegular :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontWeight'],   fontWeightMedium :@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties['fontWeight']}> */
+  /* Inlined parent std.Required<{  fontFamily :react.react.CSSProperties['fontFamily'],   fontSize :number,   fontWeightLight :react.react.CSSProperties['fontWeight'],   fontWeightRegular :react.react.CSSProperties['fontWeight'],   fontWeightMedium :react.react.CSSProperties['fontWeight'],   fontWeightBold :react.react.CSSProperties['fontWeight']}> */
   trait FontStyle extends StObject {
     
-    var fontFamily: FontFamilyProperty
+    var fontFamily: FontFamily
     
     var fontSize: Double
     
-    var fontWeightLight: FontWeightProperty
+    var fontWeightBold: FontWeight
     
-    var fontWeightMedium: FontWeightProperty
+    var fontWeightLight: FontWeight
     
-    var fontWeightRegular: FontWeightProperty
+    var fontWeightMedium: FontWeight
+    
+    var fontWeightRegular: FontWeight
   }
   object FontStyle {
     
     inline def apply(
-      fontFamily: FontFamilyProperty,
+      fontFamily: FontFamily,
       fontSize: Double,
-      fontWeightLight: FontWeightProperty,
-      fontWeightMedium: FontWeightProperty,
-      fontWeightRegular: FontWeightProperty
+      fontWeightBold: FontWeight,
+      fontWeightLight: FontWeight,
+      fontWeightMedium: FontWeight,
+      fontWeightRegular: FontWeight
     ): FontStyle = {
-      val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeightLight = fontWeightLight.asInstanceOf[js.Any], fontWeightMedium = fontWeightMedium.asInstanceOf[js.Any], fontWeightRegular = fontWeightRegular.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeightBold = fontWeightBold.asInstanceOf[js.Any], fontWeightLight = fontWeightLight.asInstanceOf[js.Any], fontWeightMedium = fontWeightMedium.asInstanceOf[js.Any], fontWeightRegular = fontWeightRegular.asInstanceOf[js.Any])
       __obj.asInstanceOf[FontStyle]
     }
     
     extension [Self <: FontStyle](x: Self) {
       
-      inline def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: FontFamily): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
       inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      inline def setFontWeightLight(value: FontWeightProperty): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
+      inline def setFontWeightBold(value: FontWeight): Self = StObject.set(x, "fontWeightBold", value.asInstanceOf[js.Any])
       
-      inline def setFontWeightMedium(value: FontWeightProperty): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
+      inline def setFontWeightLight(value: FontWeight): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
       
-      inline def setFontWeightRegular(value: FontWeightProperty): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
+      inline def setFontWeightMedium(value: FontWeight): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
+      
+      inline def setFontWeightRegular(value: FontWeight): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,19 +67,19 @@ object createTypographyMod {
     
     var allVariants: js.UndefOr[CSSProperties] = js.undefined
     
-    var fontFamily: js.UndefOr[FontFamilyProperty] = js.undefined
+    var fontFamily: js.UndefOr[FontFamily] = js.undefined
     
     var fontSize: js.UndefOr[Double] = js.undefined
     
-    var fontWeightLight: js.UndefOr[FontWeightProperty] = js.undefined
+    var fontWeightBold: js.UndefOr[FontWeight] = js.undefined
     
-    var fontWeightMedium: js.UndefOr[FontWeightProperty] = js.undefined
+    var fontWeightLight: js.UndefOr[FontWeight] = js.undefined
     
-    var fontWeightRegular: js.UndefOr[FontWeightProperty] = js.undefined
+    var fontWeightMedium: js.UndefOr[FontWeight] = js.undefined
+    
+    var fontWeightRegular: js.UndefOr[FontWeight] = js.undefined
     
     var htmlFontSize: js.UndefOr[Double] = js.undefined
-    
-    var useNextVariants: js.UndefOr[Boolean] = js.undefined
   }
   object FontStyleOptions {
     
@@ -94,7 +94,7 @@ object createTypographyMod {
       
       inline def setAllVariantsUndefined: Self = StObject.set(x, "allVariants", js.undefined)
       
-      inline def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: FontFamily): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
       inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
@@ -102,95 +102,29 @@ object createTypographyMod {
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      inline def setFontWeightLight(value: FontWeightProperty): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
+      inline def setFontWeightBold(value: FontWeight): Self = StObject.set(x, "fontWeightBold", value.asInstanceOf[js.Any])
+      
+      inline def setFontWeightBoldUndefined: Self = StObject.set(x, "fontWeightBold", js.undefined)
+      
+      inline def setFontWeightLight(value: FontWeight): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
       
       inline def setFontWeightLightUndefined: Self = StObject.set(x, "fontWeightLight", js.undefined)
       
-      inline def setFontWeightMedium(value: FontWeightProperty): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
+      inline def setFontWeightMedium(value: FontWeight): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
       
       inline def setFontWeightMediumUndefined: Self = StObject.set(x, "fontWeightMedium", js.undefined)
       
-      inline def setFontWeightRegular(value: FontWeightProperty): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
+      inline def setFontWeightRegular(value: FontWeight): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
       
       inline def setFontWeightRegularUndefined: Self = StObject.set(x, "fontWeightRegular", js.undefined)
       
       inline def setHtmlFontSize(value: Double): Self = StObject.set(x, "htmlFontSize", value.asInstanceOf[js.Any])
       
       inline def setHtmlFontSizeUndefined: Self = StObject.set(x, "htmlFontSize", js.undefined)
-      
-      inline def setUseNextVariants(value: Boolean): Self = StObject.set(x, "useNextVariants", value.asInstanceOf[js.Any])
-      
-      inline def setUseNextVariantsUndefined: Self = StObject.set(x, "useNextVariants", js.undefined)
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.materialUiCore.materialUiCoreStrings.h1
-    - typings.materialUiCore.materialUiCoreStrings.h2
-    - typings.materialUiCore.materialUiCoreStrings.h3
-    - typings.materialUiCore.materialUiCoreStrings.h4
-    - typings.materialUiCore.materialUiCoreStrings.h5
-    - typings.materialUiCore.materialUiCoreStrings.h6
-    - typings.materialUiCore.materialUiCoreStrings.subtitle1
-    - typings.materialUiCore.materialUiCoreStrings.subtitle2
-    - typings.materialUiCore.materialUiCoreStrings.body1
-    - typings.materialUiCore.materialUiCoreStrings.body2
-    - typings.materialUiCore.materialUiCoreStrings.caption
-    - typings.materialUiCore.materialUiCoreStrings.button
-    - typings.materialUiCore.materialUiCoreStrings.overline
-    - typings.materialUiCore.materialUiCoreStrings.display4
-    - typings.materialUiCore.materialUiCoreStrings.display3
-    - typings.materialUiCore.materialUiCoreStrings.display2
-    - typings.materialUiCore.materialUiCoreStrings.display1
-    - typings.materialUiCore.materialUiCoreStrings.headline
-    - typings.materialUiCore.materialUiCoreStrings.title
-    - typings.materialUiCore.materialUiCoreStrings.subheading
-  */
-  trait ThemeStyle extends StObject
-  object ThemeStyle {
-    
-    inline def body1: typings.materialUiCore.materialUiCoreStrings.body1 = "body1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.body1]
-    
-    inline def body2: typings.materialUiCore.materialUiCoreStrings.body2 = "body2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.body2]
-    
-    inline def button: typings.materialUiCore.materialUiCoreStrings.button = "button".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.button]
-    
-    inline def caption: typings.materialUiCore.materialUiCoreStrings.caption = "caption".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.caption]
-    
-    inline def display1: typings.materialUiCore.materialUiCoreStrings.display1 = "display1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display1]
-    
-    inline def display2: typings.materialUiCore.materialUiCoreStrings.display2 = "display2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display2]
-    
-    inline def display3: typings.materialUiCore.materialUiCoreStrings.display3 = "display3".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display3]
-    
-    inline def display4: typings.materialUiCore.materialUiCoreStrings.display4 = "display4".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.display4]
-    
-    inline def h1: typings.materialUiCore.materialUiCoreStrings.h1 = "h1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h1]
-    
-    inline def h2: typings.materialUiCore.materialUiCoreStrings.h2 = "h2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h2]
-    
-    inline def h3: typings.materialUiCore.materialUiCoreStrings.h3 = "h3".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h3]
-    
-    inline def h4: typings.materialUiCore.materialUiCoreStrings.h4 = "h4".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h4]
-    
-    inline def h5: typings.materialUiCore.materialUiCoreStrings.h5 = "h5".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h5]
-    
-    inline def h6: typings.materialUiCore.materialUiCoreStrings.h6 = "h6".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h6]
-    
-    inline def headline: typings.materialUiCore.materialUiCoreStrings.headline = "headline".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.headline]
-    
-    inline def overline: typings.materialUiCore.materialUiCoreStrings.overline = "overline".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.overline]
-    
-    inline def subheading: typings.materialUiCore.materialUiCoreStrings.subheading = "subheading".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subheading]
-    
-    inline def subtitle1: typings.materialUiCore.materialUiCoreStrings.subtitle1 = "subtitle1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subtitle1]
-    
-    inline def subtitle2: typings.materialUiCore.materialUiCoreStrings.subtitle2 = "subtitle2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subtitle2]
-    
-    inline def title: typings.materialUiCore.materialUiCoreStrings.title = "title".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.title]
-  }
-  
-  /* Inlined parent std.Record<@material-ui/core.@material-ui/core/styles/createTypography.ThemeStyle, @material-ui/core.@material-ui/core/styles/createTypography.TypographyStyle> */
+  /* Inlined parent std.Record<@material-ui/core.@material-ui/core/styles/createTypography.Variant, @material-ui/core.@material-ui/core/styles/createTypography.TypographyStyle> */
   /* Inlined parent @material-ui/core.@material-ui/core/styles/createTypography.FontStyle */
   /* Inlined parent @material-ui/core.@material-ui/core/styles/createTypography.TypographyUtils */
   trait Typography extends StObject {
@@ -203,23 +137,17 @@ object createTypographyMod {
     
     var caption: TypographyStyle
     
-    var display1: TypographyStyle
-    
-    var display2: TypographyStyle
-    
-    var display3: TypographyStyle
-    
-    var display4: TypographyStyle
-    
-    var fontFamily: FontFamilyProperty
+    var fontFamily: FontFamily
     
     var fontSize: Double
     
-    var fontWeightLight: FontWeightProperty
+    var fontWeightBold: FontWeight
     
-    var fontWeightMedium: FontWeightProperty
+    var fontWeightLight: FontWeight
     
-    var fontWeightRegular: FontWeightProperty
+    var fontWeightMedium: FontWeight
+    
+    var fontWeightRegular: FontWeight
     
     var h1: TypographyStyle
     
@@ -233,19 +161,13 @@ object createTypographyMod {
     
     var h6: TypographyStyle
     
-    var headline: TypographyStyle
-    
     var overline: TypographyStyle
     
     def pxToRem(px: Double): String
     
-    var subheading: TypographyStyle
-    
     var subtitle1: TypographyStyle
     
     var subtitle2: TypographyStyle
-    
-    var title: TypographyStyle
   }
   object Typography {
     
@@ -254,30 +176,24 @@ object createTypographyMod {
       body2: TypographyStyle,
       button: TypographyStyle,
       caption: TypographyStyle,
-      display1: TypographyStyle,
-      display2: TypographyStyle,
-      display3: TypographyStyle,
-      display4: TypographyStyle,
-      fontFamily: FontFamilyProperty,
+      fontFamily: FontFamily,
       fontSize: Double,
-      fontWeightLight: FontWeightProperty,
-      fontWeightMedium: FontWeightProperty,
-      fontWeightRegular: FontWeightProperty,
+      fontWeightBold: FontWeight,
+      fontWeightLight: FontWeight,
+      fontWeightMedium: FontWeight,
+      fontWeightRegular: FontWeight,
       h1: TypographyStyle,
       h2: TypographyStyle,
       h3: TypographyStyle,
       h4: TypographyStyle,
       h5: TypographyStyle,
       h6: TypographyStyle,
-      headline: TypographyStyle,
       overline: TypographyStyle,
       pxToRem: Double => String,
-      subheading: TypographyStyle,
       subtitle1: TypographyStyle,
-      subtitle2: TypographyStyle,
-      title: TypographyStyle
+      subtitle2: TypographyStyle
     ): Typography = {
-      val __obj = js.Dynamic.literal(body1 = body1.asInstanceOf[js.Any], body2 = body2.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], display1 = display1.asInstanceOf[js.Any], display2 = display2.asInstanceOf[js.Any], display3 = display3.asInstanceOf[js.Any], display4 = display4.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeightLight = fontWeightLight.asInstanceOf[js.Any], fontWeightMedium = fontWeightMedium.asInstanceOf[js.Any], fontWeightRegular = fontWeightRegular.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], headline = headline.asInstanceOf[js.Any], overline = overline.asInstanceOf[js.Any], pxToRem = js.Any.fromFunction1(pxToRem), subheading = subheading.asInstanceOf[js.Any], subtitle1 = subtitle1.asInstanceOf[js.Any], subtitle2 = subtitle2.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(body1 = body1.asInstanceOf[js.Any], body2 = body2.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeightBold = fontWeightBold.asInstanceOf[js.Any], fontWeightLight = fontWeightLight.asInstanceOf[js.Any], fontWeightMedium = fontWeightMedium.asInstanceOf[js.Any], fontWeightRegular = fontWeightRegular.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], overline = overline.asInstanceOf[js.Any], pxToRem = js.Any.fromFunction1(pxToRem), subtitle1 = subtitle1.asInstanceOf[js.Any], subtitle2 = subtitle2.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typography]
     }
     
@@ -291,23 +207,17 @@ object createTypographyMod {
       
       inline def setCaption(value: TypographyStyle): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      inline def setDisplay1(value: TypographyStyle): Self = StObject.set(x, "display1", value.asInstanceOf[js.Any])
-      
-      inline def setDisplay2(value: TypographyStyle): Self = StObject.set(x, "display2", value.asInstanceOf[js.Any])
-      
-      inline def setDisplay3(value: TypographyStyle): Self = StObject.set(x, "display3", value.asInstanceOf[js.Any])
-      
-      inline def setDisplay4(value: TypographyStyle): Self = StObject.set(x, "display4", value.asInstanceOf[js.Any])
-      
-      inline def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: FontFamily): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
       inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      inline def setFontWeightLight(value: FontWeightProperty): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
+      inline def setFontWeightBold(value: FontWeight): Self = StObject.set(x, "fontWeightBold", value.asInstanceOf[js.Any])
       
-      inline def setFontWeightMedium(value: FontWeightProperty): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
+      inline def setFontWeightLight(value: FontWeight): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
       
-      inline def setFontWeightRegular(value: FontWeightProperty): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
+      inline def setFontWeightMedium(value: FontWeight): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
+      
+      inline def setFontWeightRegular(value: FontWeight): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
       
       inline def setH1(value: TypographyStyle): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
       
@@ -321,23 +231,17 @@ object createTypographyMod {
       
       inline def setH6(value: TypographyStyle): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
       
-      inline def setHeadline(value: TypographyStyle): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
-      
       inline def setOverline(value: TypographyStyle): Self = StObject.set(x, "overline", value.asInstanceOf[js.Any])
       
       inline def setPxToRem(value: Double => String): Self = StObject.set(x, "pxToRem", js.Any.fromFunction1(value))
       
-      inline def setSubheading(value: TypographyStyle): Self = StObject.set(x, "subheading", value.asInstanceOf[js.Any])
-      
       inline def setSubtitle1(value: TypographyStyle): Self = StObject.set(x, "subtitle1", value.asInstanceOf[js.Any])
       
       inline def setSubtitle2(value: TypographyStyle): Self = StObject.set(x, "subtitle2", value.asInstanceOf[js.Any])
-      
-      inline def setTitle(value: TypographyStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined parent std.Partial<std.Record<@material-ui/core.@material-ui/core/styles/createTypography.ThemeStyle, @material-ui/core.@material-ui/core/styles/createTypography.TypographyStyleOptions> & @material-ui/core.@material-ui/core/styles/createTypography.FontStyleOptions> */
+  /* Inlined parent std.Partial<std.Record<@material-ui/core.@material-ui/core/styles/createTypography.Variant, @material-ui/core.@material-ui/core/styles/createTypography.TypographyStyleOptions> & @material-ui/core.@material-ui/core/styles/createTypography.FontStyleOptions> */
   trait TypographyOptions extends StObject {
     
     var allVariants: js.UndefOr[CSSProperties] = js.undefined
@@ -350,23 +254,17 @@ object createTypographyMod {
     
     var caption: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var display1: js.UndefOr[TypographyStyleOptions] = js.undefined
-    
-    var display2: js.UndefOr[TypographyStyleOptions] = js.undefined
-    
-    var display3: js.UndefOr[TypographyStyleOptions] = js.undefined
-    
-    var display4: js.UndefOr[TypographyStyleOptions] = js.undefined
-    
-    var fontFamily: js.UndefOr[FontFamilyProperty] = js.undefined
+    var fontFamily: js.UndefOr[FontFamily] = js.undefined
     
     var fontSize: js.UndefOr[Double] = js.undefined
     
-    var fontWeightLight: js.UndefOr[FontWeightProperty] = js.undefined
+    var fontWeightBold: js.UndefOr[FontWeight] = js.undefined
     
-    var fontWeightMedium: js.UndefOr[FontWeightProperty] = js.undefined
+    var fontWeightLight: js.UndefOr[FontWeight] = js.undefined
     
-    var fontWeightRegular: js.UndefOr[FontWeightProperty] = js.undefined
+    var fontWeightMedium: js.UndefOr[FontWeight] = js.undefined
+    
+    var fontWeightRegular: js.UndefOr[FontWeight] = js.undefined
     
     var h1: js.UndefOr[TypographyStyleOptions] = js.undefined
     
@@ -380,21 +278,13 @@ object createTypographyMod {
     
     var h6: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var headline: js.UndefOr[TypographyStyleOptions] = js.undefined
-    
     var htmlFontSize: js.UndefOr[Double] = js.undefined
     
     var overline: js.UndefOr[TypographyStyleOptions] = js.undefined
     
-    var subheading: js.UndefOr[TypographyStyleOptions] = js.undefined
-    
     var subtitle1: js.UndefOr[TypographyStyleOptions] = js.undefined
     
     var subtitle2: js.UndefOr[TypographyStyleOptions] = js.undefined
-    
-    var title: js.UndefOr[TypographyStyleOptions] = js.undefined
-    
-    var useNextVariants: js.UndefOr[Boolean] = js.undefined
   }
   object TypographyOptions {
     
@@ -425,23 +315,7 @@ object createTypographyMod {
       
       inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
-      inline def setDisplay1(value: TypographyStyleOptions): Self = StObject.set(x, "display1", value.asInstanceOf[js.Any])
-      
-      inline def setDisplay1Undefined: Self = StObject.set(x, "display1", js.undefined)
-      
-      inline def setDisplay2(value: TypographyStyleOptions): Self = StObject.set(x, "display2", value.asInstanceOf[js.Any])
-      
-      inline def setDisplay2Undefined: Self = StObject.set(x, "display2", js.undefined)
-      
-      inline def setDisplay3(value: TypographyStyleOptions): Self = StObject.set(x, "display3", value.asInstanceOf[js.Any])
-      
-      inline def setDisplay3Undefined: Self = StObject.set(x, "display3", js.undefined)
-      
-      inline def setDisplay4(value: TypographyStyleOptions): Self = StObject.set(x, "display4", value.asInstanceOf[js.Any])
-      
-      inline def setDisplay4Undefined: Self = StObject.set(x, "display4", js.undefined)
-      
-      inline def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: FontFamily): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
       inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
@@ -449,15 +323,19 @@ object createTypographyMod {
       
       inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      inline def setFontWeightLight(value: FontWeightProperty): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
+      inline def setFontWeightBold(value: FontWeight): Self = StObject.set(x, "fontWeightBold", value.asInstanceOf[js.Any])
+      
+      inline def setFontWeightBoldUndefined: Self = StObject.set(x, "fontWeightBold", js.undefined)
+      
+      inline def setFontWeightLight(value: FontWeight): Self = StObject.set(x, "fontWeightLight", value.asInstanceOf[js.Any])
       
       inline def setFontWeightLightUndefined: Self = StObject.set(x, "fontWeightLight", js.undefined)
       
-      inline def setFontWeightMedium(value: FontWeightProperty): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
+      inline def setFontWeightMedium(value: FontWeight): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
       
       inline def setFontWeightMediumUndefined: Self = StObject.set(x, "fontWeightMedium", js.undefined)
       
-      inline def setFontWeightRegular(value: FontWeightProperty): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
+      inline def setFontWeightRegular(value: FontWeight): Self = StObject.set(x, "fontWeightRegular", value.asInstanceOf[js.Any])
       
       inline def setFontWeightRegularUndefined: Self = StObject.set(x, "fontWeightRegular", js.undefined)
       
@@ -485,10 +363,6 @@ object createTypographyMod {
       
       inline def setH6Undefined: Self = StObject.set(x, "h6", js.undefined)
       
-      inline def setHeadline(value: TypographyStyleOptions): Self = StObject.set(x, "headline", value.asInstanceOf[js.Any])
-      
-      inline def setHeadlineUndefined: Self = StObject.set(x, "headline", js.undefined)
-      
       inline def setHtmlFontSize(value: Double): Self = StObject.set(x, "htmlFontSize", value.asInstanceOf[js.Any])
       
       inline def setHtmlFontSizeUndefined: Self = StObject.set(x, "htmlFontSize", js.undefined)
@@ -497,10 +371,6 @@ object createTypographyMod {
       
       inline def setOverlineUndefined: Self = StObject.set(x, "overline", js.undefined)
       
-      inline def setSubheading(value: TypographyStyleOptions): Self = StObject.set(x, "subheading", value.asInstanceOf[js.Any])
-      
-      inline def setSubheadingUndefined: Self = StObject.set(x, "subheading", js.undefined)
-      
       inline def setSubtitle1(value: TypographyStyleOptions): Self = StObject.set(x, "subtitle1", value.asInstanceOf[js.Any])
       
       inline def setSubtitle1Undefined: Self = StObject.set(x, "subtitle1", js.undefined)
@@ -508,125 +378,12 @@ object createTypographyMod {
       inline def setSubtitle2(value: TypographyStyleOptions): Self = StObject.set(x, "subtitle2", value.asInstanceOf[js.Any])
       
       inline def setSubtitle2Undefined: Self = StObject.set(x, "subtitle2", js.undefined)
-      
-      inline def setTitle(value: TypographyStyleOptions): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-      
-      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
-      
-      inline def setUseNextVariants(value: Boolean): Self = StObject.set(x, "useNextVariants", value.asInstanceOf[js.Any])
-      
-      inline def setUseNextVariantsUndefined: Self = StObject.set(x, "useNextVariants", js.undefined)
     }
   }
   
-  /* Inlined std.Required<std.Pick<@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties, 'fontFamily' | 'fontSize' | 'fontWeight' | 'color'>> & std.Partial<std.Pick<@material-ui/core.@material-ui/core/styles/withStyles.CSSProperties, 'letterSpacing' | 'lineHeight' | 'textTransform'>> */
-  trait TypographyStyle extends StObject {
-    
-    var color: ColorProperty
-    
-    var fontFamily: FontFamilyProperty
-    
-    var fontSize: FontSizeProperty[Double | String]
-    
-    var fontWeight: FontWeightProperty
-    
-    var letterSpacing: js.UndefOr[LetterSpacingProperty[Double | String]] = js.undefined
-    
-    var lineHeight: js.UndefOr[LineHeightProperty[Double | String]] = js.undefined
-    
-    var textTransform: js.UndefOr[TextTransformProperty] = js.undefined
-  }
-  object TypographyStyle {
-    
-    inline def apply(
-      color: ColorProperty,
-      fontFamily: FontFamilyProperty,
-      fontSize: FontSizeProperty[Double | String],
-      fontWeight: FontWeightProperty
-    ): TypographyStyle = {
-      val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TypographyStyle]
-    }
-    
-    extension [Self <: TypographyStyle](x: Self) {
-      
-      inline def setColor(value: ColorProperty): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-      
-      inline def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
-      
-      inline def setFontSize(value: FontSizeProperty[Double | String]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
-      
-      inline def setFontWeight(value: FontWeightProperty): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
-      
-      inline def setLetterSpacing(value: LetterSpacingProperty[Double | String]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
-      
-      inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
-      
-      inline def setLineHeight(value: LineHeightProperty[Double | String]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
-      
-      inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
-      
-      inline def setTextTransform(value: TextTransformProperty): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
-      
-      inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
-    }
-  }
+  type TypographyStyle = typings.materialUiStyles.withStylesWithStylesMod.CSSProperties
   
-  /* Inlined parent std.Partial<@material-ui/core.@material-ui/core/styles/createTypography.TypographyStyle> */
-  trait TypographyStyleOptions extends StObject {
-    
-    var color: js.UndefOr[ColorProperty] = js.undefined
-    
-    var fontFamily: js.UndefOr[FontFamilyProperty] = js.undefined
-    
-    var fontSize: js.UndefOr[FontSizeProperty[Double | String]] = js.undefined
-    
-    var fontWeight: js.UndefOr[FontWeightProperty] = js.undefined
-    
-    var letterSpacing: js.UndefOr[LetterSpacingProperty[Double | String]] = js.undefined
-    
-    var lineHeight: js.UndefOr[LineHeightProperty[Double | String]] = js.undefined
-    
-    var textTransform: js.UndefOr[TextTransformProperty] = js.undefined
-  }
-  object TypographyStyleOptions {
-    
-    inline def apply(): TypographyStyleOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TypographyStyleOptions]
-    }
-    
-    extension [Self <: TypographyStyleOptions](x: Self) {
-      
-      inline def setColor(value: ColorProperty): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-      
-      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-      
-      inline def setFontFamily(value: FontFamilyProperty): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
-      
-      inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
-      
-      inline def setFontSize(value: FontSizeProperty[Double | String]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
-      
-      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
-      
-      inline def setFontWeight(value: FontWeightProperty): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
-      
-      inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
-      
-      inline def setLetterSpacing(value: LetterSpacingProperty[Double | String]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
-      
-      inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
-      
-      inline def setLineHeight(value: LineHeightProperty[Double | String]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
-      
-      inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
-      
-      inline def setTextTransform(value: TextTransformProperty): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
-      
-      inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
-    }
-  }
+  type TypographyStyleOptions = TypographyStyle
   
   trait TypographyUtils extends StObject {
     
@@ -643,5 +400,50 @@ object createTypographyMod {
       
       inline def setPxToRem(value: Double => String): Self = StObject.set(x, "pxToRem", js.Any.fromFunction1(value))
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.materialUiCore.materialUiCoreStrings.h1
+    - typings.materialUiCore.materialUiCoreStrings.h2
+    - typings.materialUiCore.materialUiCoreStrings.h3
+    - typings.materialUiCore.materialUiCoreStrings.h4
+    - typings.materialUiCore.materialUiCoreStrings.h5
+    - typings.materialUiCore.materialUiCoreStrings.h6
+    - typings.materialUiCore.materialUiCoreStrings.subtitle1
+    - typings.materialUiCore.materialUiCoreStrings.subtitle2
+    - typings.materialUiCore.materialUiCoreStrings.body1
+    - typings.materialUiCore.materialUiCoreStrings.body2
+    - typings.materialUiCore.materialUiCoreStrings.caption
+    - typings.materialUiCore.materialUiCoreStrings.button
+    - typings.materialUiCore.materialUiCoreStrings.overline
+  */
+  trait Variant extends StObject
+  object Variant {
+    
+    inline def body1: typings.materialUiCore.materialUiCoreStrings.body1 = "body1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.body1]
+    
+    inline def body2: typings.materialUiCore.materialUiCoreStrings.body2 = "body2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.body2]
+    
+    inline def button: typings.materialUiCore.materialUiCoreStrings.button = "button".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.button]
+    
+    inline def caption: typings.materialUiCore.materialUiCoreStrings.caption = "caption".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.caption]
+    
+    inline def h1: typings.materialUiCore.materialUiCoreStrings.h1 = "h1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h1]
+    
+    inline def h2: typings.materialUiCore.materialUiCoreStrings.h2 = "h2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h2]
+    
+    inline def h3: typings.materialUiCore.materialUiCoreStrings.h3 = "h3".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h3]
+    
+    inline def h4: typings.materialUiCore.materialUiCoreStrings.h4 = "h4".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h4]
+    
+    inline def h5: typings.materialUiCore.materialUiCoreStrings.h5 = "h5".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h5]
+    
+    inline def h6: typings.materialUiCore.materialUiCoreStrings.h6 = "h6".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.h6]
+    
+    inline def overline: typings.materialUiCore.materialUiCoreStrings.overline = "overline".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.overline]
+    
+    inline def subtitle1: typings.materialUiCore.materialUiCoreStrings.subtitle1 = "subtitle1".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subtitle1]
+    
+    inline def subtitle2: typings.materialUiCore.materialUiCoreStrings.subtitle2 = "subtitle2".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.subtitle2]
   }
 }

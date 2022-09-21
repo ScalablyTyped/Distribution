@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.OverviewMapControl")
 @js.native
-class OverviewMapControl protected ()
+open class OverviewMapControl protected ()
   extends StObject
      with typings.bmapgl.BMapGL.OverviewMapControl {
   def this(opts: OverviewMapControlOptions) = this()

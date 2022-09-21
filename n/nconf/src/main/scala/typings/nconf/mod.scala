@@ -1,7 +1,6 @@
 package typings.nconf
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,20 +13,20 @@ object mod {
   
   @JSImport("nconf", "Provider")
   @js.native
-  class Provider () extends StObject {
+  open class Provider () extends StObject {
     def this(options: IOptions) = this()
     
     def add(name: String): Provider = js.native
     def add(name: String, options: IOptions): Provider = js.native
     
-    def any(keys: js.Array[String]): js.Any = js.native
-    def any(keys: js.Array[String], callback: ICallbackFunction): js.Any = js.native
+    def any(keys: js.Array[String]): Any = js.native
+    def any(keys: js.Array[String], callback: ICallbackFunction): Any = js.native
     
     def argv(): Provider = js.native
     def argv(options: IOptions): Provider = js.native
     
-    def clear(key: String): js.Any = js.native
-    def clear(key: String, callback: ICallbackFunction): js.Any = js.native
+    def clear(key: String): Any = js.native
+    def clear(key: String, callback: ICallbackFunction): Any = js.native
     
     def create(name: String, options: IOptions): IStore = js.native
     
@@ -43,23 +42,23 @@ object mod {
     def file(name: String, options: IFileOptions): Provider = js.native
     def file(options: IFileOptions): Provider = js.native
     
-    def get(): js.Any = js.native
-    def get(key: String): js.Any = js.native
-    def get(key: String, callback: ICallbackFunction): js.Any = js.native
-    def get(key: Unit, callback: ICallbackFunction): js.Any = js.native
+    def get(): Any = js.native
+    def get(key: String): Any = js.native
+    def get(key: String, callback: ICallbackFunction): Any = js.native
+    def get(key: Unit, callback: ICallbackFunction): Any = js.native
     
     def init(): Unit = js.native
     def init(options: IOptions): Unit = js.native
     
-    def load(): js.Any = js.native
-    def load(callback: ICallbackFunction): js.Any = js.native
+    def load(): Any = js.native
+    def load(callback: ICallbackFunction): Any = js.native
     
-    def loadSources(): js.Any = js.native
+    def loadSources(): Any = js.native
     
-    def merge(key: String, value: js.Any): js.Any = js.native
-    def merge(key: String, value: js.Any, callback: ICallbackFunction): js.Any = js.native
+    def merge(key: String, value: Any): Any = js.native
+    def merge(key: String, value: Any, callback: ICallbackFunction): Any = js.native
     
-    def mergeSources(data: js.Any): Unit = js.native
+    def mergeSources(data: Any): Unit = js.native
     
     def overrides(): Provider = js.native
     def overrides(options: IOptions): Provider = js.native
@@ -68,18 +67,18 @@ object mod {
     
     def required(keys: js.Array[String]): Provider = js.native
     
-    def reset(): js.Any = js.native
-    def reset(callback: ICallbackFunction): js.Any = js.native
+    def reset(): Any = js.native
+    def reset(callback: ICallbackFunction): Any = js.native
     
-    def save(value: js.Any): js.Any = js.native
-    def save(value: js.Any, callback: ICallbackFunction): js.Any = js.native
+    def save(value: Any): Any = js.native
+    def save(value: Any, callback: ICallbackFunction): Any = js.native
     
-    def set(key: String, value: js.Any): js.Any = js.native
-    def set(key: String, value: js.Any, callback: ICallbackFunction): js.Any = js.native
+    def set(key: String, value: Any): Any = js.native
+    def set(key: String, value: Any, callback: ICallbackFunction): Any = js.native
     
-    var sources: js.Array[js.Any] = js.native
+    var sources: js.Array[Any] = js.native
     
-    var stores: js.Any = js.native
+    var stores: Any = js.native
     
     def use(name: String): Provider = js.native
     def use(name: String, options: IOptions): Provider = js.native
@@ -88,14 +87,14 @@ object mod {
   inline def add(name: String): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any]).asInstanceOf[Provider]
   inline def add(name: String, options: IOptions): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Provider]
   
-  inline def any(keys: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(keys.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def any(keys: js.Array[String], callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(keys.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def any(keys: js.Array[String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(keys.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def any(keys: js.Array[String], callback: ICallbackFunction): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(keys.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def argv(): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("argv")().asInstanceOf[Provider]
   inline def argv(options: IOptions): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("argv")(options.asInstanceOf[js.Any]).asInstanceOf[Provider]
   
-  inline def clear(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def clear(key: String, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def clear(key: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def clear(key: String, callback: ICallbackFunction): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def create(name: String, options: IOptions): IStore = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IStore]
   
@@ -116,69 +115,69 @@ object mod {
   def formats: IFormats = js.native
   inline def formats_=(x: IFormats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
   
-  inline def get(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Any]
-  inline def get(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def get(key: String, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def get(key: Unit, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[Any]
+  inline def get(key: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def get(key: String, callback: ICallbackFunction): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def get(key: Unit, callback: ICallbackFunction): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
   inline def init(options: IOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def key(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("key")(values.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def key(values: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("key")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
-  inline def load(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[js.Any]
-  inline def load(callback: ICallbackFunction): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def load(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[Any]
+  inline def load(callback: ICallbackFunction): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(callback.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def loadFiles(files: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFiles")(files.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def loadFiles(files: js.Any, callback: ICallbackFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFiles")(files.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadFiles(files: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFiles")(files.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def loadFiles(files: Any, callback: ICallbackFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFiles")(files.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def loadFilesSync(files: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFilesSync")(files.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def loadFilesSync(files: js.Any, callback: ICallbackFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFilesSync")(files.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadFilesSync(files: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFilesSync")(files.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def loadFilesSync(files: Any, callback: ICallbackFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFilesSync")(files.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def loadSources(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSources")().asInstanceOf[js.Any]
+  inline def loadSources(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSources")().asInstanceOf[Any]
   
-  inline def merge(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def merge(key: String, value: js.Any, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def merge(key: String, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def merge(key: String, value: Any, callback: ICallbackFunction): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def mergeSources(data: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeSources")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def mergeSources(data: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeSources")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def overrides(): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("overrides")().asInstanceOf[Provider]
   inline def overrides(options: IOptions): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("overrides")(options.asInstanceOf[js.Any]).asInstanceOf[Provider]
   
-  inline def path(key: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("path")(key.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def path(key: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("path")(key.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   inline def remove(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def required(keys: js.Array[String]): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("required")(keys.asInstanceOf[js.Any]).asInstanceOf[Provider]
   
-  inline def reset(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[js.Any]
-  inline def reset(callback: ICallbackFunction): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def reset(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Any]
+  inline def reset(callback: ICallbackFunction): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(callback.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def save(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def save(value: js.Any, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def save(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def save(value: Any, callback: ICallbackFunction): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def set(key: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def set(key: String, value: js.Any, callback: ICallbackFunction): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def set(key: String, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def set(key: String, value: Any, callback: ICallbackFunction): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("nconf", "sources")
   @js.native
-  def sources: js.Array[js.Any] = js.native
-  inline def sources_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sources")(x.asInstanceOf[js.Any])
+  def sources: js.Array[Any] = js.native
+  inline def sources_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sources")(x.asInstanceOf[js.Any])
   
   @JSImport("nconf", "stores")
   @js.native
-  def stores: js.Any = js.native
-  inline def stores_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stores")(x.asInstanceOf[js.Any])
+  def stores: Any = js.native
+  inline def stores_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stores")(x.asInstanceOf[js.Any])
   
   inline def use(name: String): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any]).asInstanceOf[Provider]
   inline def use(name: String, options: IOptions): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Provider]
   
   @JSImport("nconf", "version")
   @js.native
-  def version: Double = js.native
-  inline def version_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  def version: String = js.native
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
-  type ICallbackFunction = js.Function1[/* err */ Error, Unit]
+  type ICallbackFunction = js.Function1[/* err */ js.Error, Unit]
   
   trait IFileOptions extends StObject {
     
@@ -238,10 +237,10 @@ object mod {
   @js.native
   trait IFormat extends StObject {
     
-    def parse(str: String): js.Any = js.native
+    def parse(str: String): Any = js.native
     
-    def stringify(obj: js.Any, replacer: js.Any): String = js.native
-    def stringify(obj: js.Any, replacer: js.Any, spacing: js.Any): String = js.native
+    def stringify(obj: Any, replacer: Any): String = js.native
+    def stringify(obj: Any, replacer: Any, spacing: Any): String = js.native
   }
   
   trait IFormats extends StObject {
@@ -265,7 +264,7 @@ object mod {
     }
   }
   
-  type IOptions = StringDictionary[js.Any]
+  type IOptions = StringDictionary[Any]
   
   trait ISecureFileOptions extends StObject {
     
@@ -295,14 +294,14 @@ object mod {
     
     def clear(key: String): Boolean = js.native
     
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     
-    def merge(key: String, value: js.Any): Boolean = js.native
+    def merge(key: String, value: Any): Boolean = js.native
     
     def reset(): Boolean = js.native
     def reset(callback: ICallbackFunction): Boolean = js.native
     
-    def set(key: String, value: js.Any): Boolean = js.native
+    def set(key: String, value: Any): Boolean = js.native
     
     var `type`: String = js.native
   }

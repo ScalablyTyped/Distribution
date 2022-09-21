@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.Template")
 @js.native
-class Template ()
+open class Template ()
   extends StObject
      with typings.sharepoint.CUI.Template

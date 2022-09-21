@@ -17,7 +17,7 @@ trait CrosshairProps extends StObject {
   
   var innerWidth: js.UndefOr[Double] = js.undefined
   
-  var itemsFormat: js.UndefOr[js.Function1[/* x */ js.Any, js.Array[Title]]] = js.undefined
+  var itemsFormat: js.UndefOr[js.Function1[/* x */ Any, js.Array[Title]]] = js.undefined
   
   var marginLeft: js.UndefOr[Double] = js.undefined
   
@@ -25,13 +25,13 @@ trait CrosshairProps extends StObject {
   
   var orientation: js.UndefOr[left | right] = js.undefined
   
-  var series: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var series: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var style: js.UndefOr[Box] = js.undefined
   
-  var titleFormat: js.UndefOr[js.Function1[/* x */ js.Any, Title]] = js.undefined
+  var titleFormat: js.UndefOr[js.Function1[/* x */ Any, Title]] = js.undefined
   
-  var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var values: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object CrosshairProps {
   
@@ -54,7 +54,7 @@ object CrosshairProps {
     
     inline def setInnerWidthUndefined: Self = StObject.set(x, "innerWidth", js.undefined)
     
-    inline def setItemsFormat(value: /* x */ js.Any => js.Array[Title]): Self = StObject.set(x, "itemsFormat", js.Any.fromFunction1(value))
+    inline def setItemsFormat(value: /* x */ Any => js.Array[Title]): Self = StObject.set(x, "itemsFormat", js.Any.fromFunction1(value))
     
     inline def setItemsFormatUndefined: Self = StObject.set(x, "itemsFormat", js.undefined)
     
@@ -70,7 +70,7 @@ object CrosshairProps {
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    inline def setSeries(value: StringDictionary[js.Any]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: StringDictionary[Any]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
@@ -78,14 +78,14 @@ object CrosshairProps {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTitleFormat(value: /* x */ js.Any => Title): Self = StObject.set(x, "titleFormat", js.Any.fromFunction1(value))
+    inline def setTitleFormat(value: /* x */ Any => Title): Self = StObject.set(x, "titleFormat", js.Any.fromFunction1(value))
     
     inline def setTitleFormatUndefined: Self = StObject.set(x, "titleFormat", js.undefined)
     
-    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

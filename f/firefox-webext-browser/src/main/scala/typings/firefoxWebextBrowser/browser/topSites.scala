@@ -82,7 +82,7 @@ object topSites {
       
       inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
       
-      inline def setProvidersVarargs(value: String*): Self = StObject.set(x, "providers", js.Array(value :_*))
+      inline def setProvidersVarargs(value: String*): Self = StObject.set(x, "providers", js.Array(value*))
     }
   }
   

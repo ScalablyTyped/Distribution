@@ -18,7 +18,7 @@ import typings.libraCore.mempoolPbMod.GetBlockRequest
 import typings.libraCore.mempoolPbMod.GetBlockResponse
 import typings.libraCore.mempoolPbMod.HealthCheckRequest
 import typings.libraCore.mempoolPbMod.HealthCheckResponse
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ object mempoolGrpcPbMod {
   
   @JSImport("libra-core/lib/@/generated/mempool_grpc_pb", "MempoolClient")
   @js.native
-  class MempoolClient protected ()
+  open class MempoolClient protected ()
     extends Client
        with IMempoolClient {
     def this(address: String, credentials: ChannelCredentials) = this()

@@ -8,11 +8,17 @@ import typings.tensorflowTfjsCore.serializationMod.ConfigDict
 import typings.tensorflowTfjsCore.serializationMod.SerializableConstructor
 import typings.tensorflowTfjsCore.typesMod.IOHandler
 import typings.tensorflowTfjsCore.typesMod.LoadOptions
+import typings.tensorflowTfjsLayers.advancedActivationsMod.ELU
 import typings.tensorflowTfjsLayers.advancedActivationsMod.ELULayerArgs
+import typings.tensorflowTfjsLayers.advancedActivationsMod.LeakyReLU
 import typings.tensorflowTfjsLayers.advancedActivationsMod.LeakyReLULayerArgs
+import typings.tensorflowTfjsLayers.advancedActivationsMod.PReLU
 import typings.tensorflowTfjsLayers.advancedActivationsMod.PReLULayerArgs
+import typings.tensorflowTfjsLayers.advancedActivationsMod.ReLU
 import typings.tensorflowTfjsLayers.advancedActivationsMod.ReLULayerArgs
+import typings.tensorflowTfjsLayers.advancedActivationsMod.Softmax
 import typings.tensorflowTfjsLayers.advancedActivationsMod.SoftmaxLayerArgs
+import typings.tensorflowTfjsLayers.advancedActivationsMod.ThresholdedReLU
 import typings.tensorflowTfjsLayers.advancedActivationsMod.ThresholdedReLULayerArgs
 import typings.tensorflowTfjsLayers.baseCallbacksMod.BaseCallback
 import typings.tensorflowTfjsLayers.baseCallbacksMod.BaseCallbackConstructor
@@ -26,24 +32,42 @@ import typings.tensorflowTfjsLayers.constraintsMod.MinMaxNormArgs
 import typings.tensorflowTfjsLayers.constraintsMod.UnitNormArgs
 import typings.tensorflowTfjsLayers.containerMod.ContainerArgs
 import typings.tensorflowTfjsLayers.convolutionalDepthwiseMod.DepthwiseConv2DLayerArgs
+import typings.tensorflowTfjsLayers.convolutionalDepthwiseMod.DepthwiseConv2D_
+import typings.tensorflowTfjsLayers.convolutionalMod.Conv1D_
+import typings.tensorflowTfjsLayers.convolutionalMod.Conv2DTranspose
+import typings.tensorflowTfjsLayers.convolutionalMod.Conv2D_
+import typings.tensorflowTfjsLayers.convolutionalMod.Conv3D_
 import typings.tensorflowTfjsLayers.convolutionalMod.ConvLayerArgs
+import typings.tensorflowTfjsLayers.convolutionalMod.Cropping2D
 import typings.tensorflowTfjsLayers.convolutionalMod.Cropping2DLayerArgs
+import typings.tensorflowTfjsLayers.convolutionalMod.SeparableConv2D
 import typings.tensorflowTfjsLayers.convolutionalMod.SeparableConvLayerArgs
+import typings.tensorflowTfjsLayers.convolutionalMod.UpSampling2D
 import typings.tensorflowTfjsLayers.convolutionalMod.UpSampling2DLayerArgs
 import typings.tensorflowTfjsLayers.convolutionalRecurrentMod.ConvLSTM2D
 import typings.tensorflowTfjsLayers.convolutionalRecurrentMod.ConvLSTM2DArgs
 import typings.tensorflowTfjsLayers.convolutionalRecurrentMod.ConvLSTM2DCell
 import typings.tensorflowTfjsLayers.convolutionalRecurrentMod.ConvLSTM2DCellArgs
+import typings.tensorflowTfjsLayers.coreMod.Activation
 import typings.tensorflowTfjsLayers.coreMod.ActivationLayerArgs
+import typings.tensorflowTfjsLayers.coreMod.Dense
 import typings.tensorflowTfjsLayers.coreMod.DenseLayerArgs
+import typings.tensorflowTfjsLayers.coreMod.Dropout
 import typings.tensorflowTfjsLayers.coreMod.DropoutLayerArgs
+import typings.tensorflowTfjsLayers.coreMod.Flatten
 import typings.tensorflowTfjsLayers.coreMod.FlattenLayerArgs
+import typings.tensorflowTfjsLayers.coreMod.Masking
 import typings.tensorflowTfjsLayers.coreMod.MaskingArgs
+import typings.tensorflowTfjsLayers.coreMod.Permute
 import typings.tensorflowTfjsLayers.coreMod.PermuteLayerArgs
+import typings.tensorflowTfjsLayers.coreMod.RepeatVector
 import typings.tensorflowTfjsLayers.coreMod.RepeatVectorLayerArgs
+import typings.tensorflowTfjsLayers.coreMod.Reshape
 import typings.tensorflowTfjsLayers.coreMod.ReshapeLayerArgs
+import typings.tensorflowTfjsLayers.coreMod.SpatialDropout1D
 import typings.tensorflowTfjsLayers.coreMod.SpatialDropout1DLayerConfig
 import typings.tensorflowTfjsLayers.distTypesMod.Kwargs
+import typings.tensorflowTfjsLayers.embeddingsMod.Embedding
 import typings.tensorflowTfjsLayers.embeddingsMod.EmbeddingLayerArgs
 import typings.tensorflowTfjsLayers.initializersMod.ConstantArgs
 import typings.tensorflowTfjsLayers.initializersMod.IdentityArgs
@@ -56,10 +80,18 @@ import typings.tensorflowTfjsLayers.initializersMod.TruncatedNormalArgs
 import typings.tensorflowTfjsLayers.initializersMod.VarianceScalingArgs
 import typings.tensorflowTfjsLayers.initializersMod.Zeros
 import typings.tensorflowTfjsLayers.inputLayerMod.InputConfig
+import typings.tensorflowTfjsLayers.inputLayerMod.InputLayer
 import typings.tensorflowTfjsLayers.inputLayerMod.InputLayerArgs
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
+import typings.tensorflowTfjsLayers.mergeMod.Add_
+import typings.tensorflowTfjsLayers.mergeMod.Average_
 import typings.tensorflowTfjsLayers.mergeMod.ConcatenateLayerArgs
+import typings.tensorflowTfjsLayers.mergeMod.Concatenate_
+import typings.tensorflowTfjsLayers.mergeMod.Dot
 import typings.tensorflowTfjsLayers.mergeMod.DotLayerArgs
+import typings.tensorflowTfjsLayers.mergeMod.Maximum_
+import typings.tensorflowTfjsLayers.mergeMod.Minimum_
+import typings.tensorflowTfjsLayers.mergeMod.Multiply_
 import typings.tensorflowTfjsLayers.modelsMod.ModelAndWeightsConfig
 import typings.tensorflowTfjsLayers.modelsMod.Sequential
 import typings.tensorflowTfjsLayers.modelsMod.SequentialArgs
@@ -70,20 +102,40 @@ import typings.tensorflowTfjsLayers.noiseMod.GaussianDropoutArgs
 import typings.tensorflowTfjsLayers.noiseMod.GaussianNoise
 import typings.tensorflowTfjsLayers.noiseMod.GaussianNoiseArgs
 import typings.tensorflowTfjsLayers.normalizationMod.BatchNormalizationLayerArgs
+import typings.tensorflowTfjsLayers.normalizationMod.BatchNormalization_
+import typings.tensorflowTfjsLayers.normalizationMod.LayerNormalization
 import typings.tensorflowTfjsLayers.normalizationMod.LayerNormalizationLayerArgs
+import typings.tensorflowTfjsLayers.paddingMod.ZeroPadding2D
 import typings.tensorflowTfjsLayers.paddingMod.ZeroPadding2DLayerArgs
+import typings.tensorflowTfjsLayers.poolingMod.AveragePooling1D
+import typings.tensorflowTfjsLayers.poolingMod.AveragePooling2D
+import typings.tensorflowTfjsLayers.poolingMod.AveragePooling3D
+import typings.tensorflowTfjsLayers.poolingMod.GlobalAveragePooling1D
+import typings.tensorflowTfjsLayers.poolingMod.GlobalAveragePooling2D
+import typings.tensorflowTfjsLayers.poolingMod.GlobalMaxPooling1D
+import typings.tensorflowTfjsLayers.poolingMod.GlobalMaxPooling2D
 import typings.tensorflowTfjsLayers.poolingMod.GlobalPooling2DLayerArgs
+import typings.tensorflowTfjsLayers.poolingMod.MaxPooling1D
+import typings.tensorflowTfjsLayers.poolingMod.MaxPooling2D
+import typings.tensorflowTfjsLayers.poolingMod.MaxPooling3D
 import typings.tensorflowTfjsLayers.poolingMod.Pooling1DLayerArgs
 import typings.tensorflowTfjsLayers.poolingMod.Pooling2DLayerArgs
 import typings.tensorflowTfjsLayers.poolingMod.Pooling3DLayerArgs
+import typings.tensorflowTfjsLayers.recurrentMod.GRU
+import typings.tensorflowTfjsLayers.recurrentMod.GRUCell
 import typings.tensorflowTfjsLayers.recurrentMod.GRUCellLayerArgs
 import typings.tensorflowTfjsLayers.recurrentMod.GRULayerArgs
+import typings.tensorflowTfjsLayers.recurrentMod.LSTM
+import typings.tensorflowTfjsLayers.recurrentMod.LSTMCell
 import typings.tensorflowTfjsLayers.recurrentMod.LSTMCellLayerArgs
 import typings.tensorflowTfjsLayers.recurrentMod.LSTMLayerArgs
 import typings.tensorflowTfjsLayers.recurrentMod.RNNLayerArgs
 import typings.tensorflowTfjsLayers.recurrentMod.RNN_
+import typings.tensorflowTfjsLayers.recurrentMod.SimpleRNN
+import typings.tensorflowTfjsLayers.recurrentMod.SimpleRNNCell
 import typings.tensorflowTfjsLayers.recurrentMod.SimpleRNNCellLayerArgs
 import typings.tensorflowTfjsLayers.recurrentMod.SimpleRNNLayerArgs
+import typings.tensorflowTfjsLayers.recurrentMod.StackedRNNCells
 import typings.tensorflowTfjsLayers.recurrentMod.StackedRNNCellsArgs
 import typings.tensorflowTfjsLayers.regularizersMod.L1Args
 import typings.tensorflowTfjsLayers.regularizersMod.L1L2Args
@@ -95,6 +147,7 @@ import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import typings.tensorflowTfjsLayers.typesMod.PyJsonDict
 import typings.tensorflowTfjsLayers.wrappersMod.Bidirectional
 import typings.tensorflowTfjsLayers.wrappersMod.BidirectionalLayerArgs
+import typings.tensorflowTfjsLayers.wrappersMod.TimeDistributed
 import typings.tensorflowTfjsLayers.wrappersMod.WrapperLayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -119,7 +172,7 @@ object mod {
     * @param queueLength Queue length for keeping running statistics over
     *   callback execution time.
     */
-  class CallbackList ()
+  open class CallbackList ()
     extends typings.tensorflowTfjsLayers.baseCallbacksMod.CallbackList {
     def this(callbacks: js.Array[BaseCallback]) = this()
     def this(callbacks: js.Array[BaseCallback], queueLength: Double) = this()
@@ -128,7 +181,7 @@ object mod {
   
   @JSImport("@tensorflow/tfjs-layers", "CustomCallback")
   @js.native
-  class CustomCallback protected ()
+  open class CustomCallback protected ()
     extends typings.tensorflowTfjsLayers.baseCallbacksMod.CustomCallback {
     def this(args: CustomCallbackArgs) = this()
     def this(args: CustomCallbackArgs, yieldEvery: YieldEveryOptions) = this()
@@ -136,25 +189,25 @@ object mod {
   
   @JSImport("@tensorflow/tfjs-layers", "EarlyStopping")
   @js.native
-  class EarlyStopping () extends EarlyStopping_ {
+  open class EarlyStopping () extends EarlyStopping_ {
     def this(args: EarlyStoppingCallbackArgs) = this()
   }
   
   @JSImport("@tensorflow/tfjs-layers", "History")
   @js.native
-  class History ()
+  open class History ()
     extends typings.tensorflowTfjsLayers.baseCallbacksMod.History
   
   @JSImport("@tensorflow/tfjs-layers", "InputSpec")
   @js.native
-  class InputSpec protected ()
+  open class InputSpec protected ()
     extends typings.tensorflowTfjsLayers.topologyMod.InputSpec {
     def this(args: InputSpecArgs) = this()
   }
   
   @JSImport("@tensorflow/tfjs-layers", "LayerVariable")
   @js.native
-  class LayerVariable protected ()
+  open class LayerVariable protected ()
     extends typings.tensorflowTfjsLayers.variablesMod.LayerVariable {
     /**
       * Construct Variable from a `tf.Tensor`.
@@ -190,7 +243,7 @@ object mod {
   
   @JSImport("@tensorflow/tfjs-layers", "LayersModel")
   @js.native
-  class LayersModel protected ()
+  open class LayersModel protected ()
     extends typings.tensorflowTfjsLayers.trainingMod.LayersModel {
     def this(args: ContainerArgs) = this()
   }
@@ -210,7 +263,7 @@ object mod {
   
   @JSImport("@tensorflow/tfjs-layers", "RNN")
   @js.native
-  class RNN protected () extends RNN_ {
+  open class RNN protected () extends RNN_ {
     def this(args: RNNLayerArgs) = this()
   }
   /* static members */
@@ -233,7 +286,7 @@ object mod {
   
   @JSImport("@tensorflow/tfjs-layers", "Sequential")
   @js.native
-  class Sequential_ () extends Sequential {
+  open class Sequential_ () extends Sequential {
     def this(args: SequentialArgs) = this()
   }
   /* static members */
@@ -263,7 +316,7 @@ object mod {
   
   @JSImport("@tensorflow/tfjs-layers", "SymbolicTensor")
   @js.native
-  class SymbolicTensor protected ()
+  open class SymbolicTensor protected ()
     extends typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor {
     /**
       *
@@ -422,7 +475,7 @@ object mod {
     
     @JSImport("@tensorflow/tfjs-layers", "layers.RNN")
     @js.native
-    class RNN_ protected ()
+    open class RNN_ protected ()
       extends typings.tensorflowTfjsLayers.exportsLayersMod.RNN_ {
       def this(args: RNNLayerArgs) = this()
     }
@@ -444,177 +497,176 @@ object mod {
       inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
     }
     
-    inline def activation(args: ActivationLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("activation")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def activation(args: ActivationLayerArgs): Activation = ^.asInstanceOf[js.Dynamic].applyDynamic("activation")(args.asInstanceOf[js.Any]).asInstanceOf[Activation]
     
-    inline def add(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def add(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def add(): Add_ = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[Add_]
+    inline def add(args: LayerArgs): Add_ = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(args.asInstanceOf[js.Any]).asInstanceOf[Add_]
     
     inline def alphaDropout(args: AlphaDropoutArgs): AlphaDropout = ^.asInstanceOf[js.Dynamic].applyDynamic("alphaDropout")(args.asInstanceOf[js.Any]).asInstanceOf[AlphaDropout]
     
-    inline def average(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("average")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def average(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("average")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def average(): Average_ = ^.asInstanceOf[js.Dynamic].applyDynamic("average")().asInstanceOf[Average_]
+    inline def average(args: LayerArgs): Average_ = ^.asInstanceOf[js.Dynamic].applyDynamic("average")(args.asInstanceOf[js.Any]).asInstanceOf[Average_]
     
-    inline def averagePooling1d(args: Pooling1DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("averagePooling1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def averagePooling1d(args: Pooling1DLayerArgs): AveragePooling1D = ^.asInstanceOf[js.Dynamic].applyDynamic("averagePooling1d")(args.asInstanceOf[js.Any]).asInstanceOf[AveragePooling1D]
     
-    inline def averagePooling2d(args: Pooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("averagePooling2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def averagePooling2d(args: Pooling2DLayerArgs): AveragePooling2D = ^.asInstanceOf[js.Dynamic].applyDynamic("averagePooling2d")(args.asInstanceOf[js.Any]).asInstanceOf[AveragePooling2D]
     
-    inline def averagePooling3d(args: Pooling3DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("averagePooling3d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def averagePooling3d(args: Pooling3DLayerArgs): AveragePooling3D = ^.asInstanceOf[js.Dynamic].applyDynamic("averagePooling3d")(args.asInstanceOf[js.Any]).asInstanceOf[AveragePooling3D]
     
-    inline def avgPool1d(args: Pooling1DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPool1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def avgPool1d(args: Pooling1DLayerArgs): AveragePooling1D = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPool1d")(args.asInstanceOf[js.Any]).asInstanceOf[AveragePooling1D]
     
-    inline def avgPool2d(args: Pooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPool2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def avgPool2d(args: Pooling2DLayerArgs): AveragePooling2D = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPool2d")(args.asInstanceOf[js.Any]).asInstanceOf[AveragePooling2D]
     
-    inline def avgPool3d(args: Pooling3DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPool3d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def avgPool3d(args: Pooling3DLayerArgs): AveragePooling3D = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPool3d")(args.asInstanceOf[js.Any]).asInstanceOf[AveragePooling3D]
     
-    inline def avgPooling1d(args: Pooling1DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPooling1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def avgPooling1d(args: Pooling1DLayerArgs): AveragePooling1D = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPooling1d")(args.asInstanceOf[js.Any]).asInstanceOf[AveragePooling1D]
     
-    inline def avgPooling2d(args: Pooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPooling2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def avgPooling2d(args: Pooling2DLayerArgs): AveragePooling2D = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPooling2d")(args.asInstanceOf[js.Any]).asInstanceOf[AveragePooling2D]
     
-    inline def avgPooling3d(args: Pooling3DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPooling3d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def avgPooling3d(args: Pooling3DLayerArgs): AveragePooling3D = ^.asInstanceOf[js.Dynamic].applyDynamic("avgPooling3d")(args.asInstanceOf[js.Any]).asInstanceOf[AveragePooling3D]
     
-    inline def batchNormalization(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("batchNormalization")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def batchNormalization(args: BatchNormalizationLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("batchNormalization")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def batchNormalization(): BatchNormalization_ = ^.asInstanceOf[js.Dynamic].applyDynamic("batchNormalization")().asInstanceOf[BatchNormalization_]
+    inline def batchNormalization(args: BatchNormalizationLayerArgs): BatchNormalization_ = ^.asInstanceOf[js.Dynamic].applyDynamic("batchNormalization")(args.asInstanceOf[js.Any]).asInstanceOf[BatchNormalization_]
     
     inline def bidirectional(args: BidirectionalLayerArgs): Bidirectional = ^.asInstanceOf[js.Dynamic].applyDynamic("bidirectional")(args.asInstanceOf[js.Any]).asInstanceOf[Bidirectional]
     
-    inline def concatenate(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def concatenate(args: ConcatenateLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def concatenate(): Concatenate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")().asInstanceOf[Concatenate_]
+    inline def concatenate(args: ConcatenateLayerArgs): Concatenate_ = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(args.asInstanceOf[js.Any]).asInstanceOf[Concatenate_]
     
-    inline def conv1d(args: ConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def conv1d(args: ConvLayerArgs): Conv1D_ = ^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(args.asInstanceOf[js.Any]).asInstanceOf[Conv1D_]
     
-    inline def conv2d(args: ConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def conv2d(args: ConvLayerArgs): Conv2D_ = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(args.asInstanceOf[js.Any]).asInstanceOf[Conv2D_]
     
-    inline def conv2dTranspose(args: ConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2dTranspose")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def conv2dTranspose(args: ConvLayerArgs): Conv2DTranspose = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2dTranspose")(args.asInstanceOf[js.Any]).asInstanceOf[Conv2DTranspose]
     
-    inline def conv3d(args: ConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def conv3d(args: ConvLayerArgs): Conv3D_ = ^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(args.asInstanceOf[js.Any]).asInstanceOf[Conv3D_]
+    
+    inline def conv3dTranspose(args: ConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
     
     inline def convLstm2d(args: ConvLSTM2DArgs): ConvLSTM2D = ^.asInstanceOf[js.Dynamic].applyDynamic("convLstm2d")(args.asInstanceOf[js.Any]).asInstanceOf[ConvLSTM2D]
     
     inline def convLstm2dCell(args: ConvLSTM2DCellArgs): ConvLSTM2DCell = ^.asInstanceOf[js.Dynamic].applyDynamic("convLstm2dCell")(args.asInstanceOf[js.Any]).asInstanceOf[ConvLSTM2DCell]
     
-    inline def cropping2D(args: Cropping2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("cropping2D")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def cropping2D(args: Cropping2DLayerArgs): Cropping2D = ^.asInstanceOf[js.Dynamic].applyDynamic("cropping2D")(args.asInstanceOf[js.Any]).asInstanceOf[Cropping2D]
     
-    inline def dense(args: DenseLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("dense")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def dense(args: DenseLayerArgs): Dense = ^.asInstanceOf[js.Dynamic].applyDynamic("dense")(args.asInstanceOf[js.Any]).asInstanceOf[Dense]
     
-    inline def depthwiseConv2d(args: DepthwiseConv2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def depthwiseConv2d(args: DepthwiseConv2DLayerArgs): DepthwiseConv2D_ = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(args.asInstanceOf[js.Any]).asInstanceOf[DepthwiseConv2D_]
     
-    inline def dot(args: DotLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("dot")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def dot(args: DotLayerArgs): Dot = ^.asInstanceOf[js.Dynamic].applyDynamic("dot")(args.asInstanceOf[js.Any]).asInstanceOf[Dot]
     
-    inline def dropout(args: DropoutLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("dropout")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def dropout(args: DropoutLayerArgs): Dropout = ^.asInstanceOf[js.Dynamic].applyDynamic("dropout")(args.asInstanceOf[js.Any]).asInstanceOf[Dropout]
     
-    inline def elu(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("elu")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def elu(args: ELULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("elu")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def elu(): ELU = ^.asInstanceOf[js.Dynamic].applyDynamic("elu")().asInstanceOf[ELU]
+    inline def elu(args: ELULayerArgs): ELU = ^.asInstanceOf[js.Dynamic].applyDynamic("elu")(args.asInstanceOf[js.Any]).asInstanceOf[ELU]
     
-    inline def embedding(args: EmbeddingLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("embedding")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def embedding(args: EmbeddingLayerArgs): Embedding = ^.asInstanceOf[js.Dynamic].applyDynamic("embedding")(args.asInstanceOf[js.Any]).asInstanceOf[Embedding]
     
-    inline def flatten(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def flatten(args: FlattenLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def flatten(): Flatten = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[Flatten]
+    inline def flatten(args: FlattenLayerArgs): Flatten = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(args.asInstanceOf[js.Any]).asInstanceOf[Flatten]
     
     inline def gaussianDropout(args: GaussianDropoutArgs): GaussianDropout = ^.asInstanceOf[js.Dynamic].applyDynamic("gaussianDropout")(args.asInstanceOf[js.Any]).asInstanceOf[GaussianDropout]
     
     inline def gaussianNoise(args: GaussianNoiseArgs): GaussianNoise = ^.asInstanceOf[js.Dynamic].applyDynamic("gaussianNoise")(args.asInstanceOf[js.Any]).asInstanceOf[GaussianNoise]
     
-    inline def globalAveragePooling1d(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("globalAveragePooling1d")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def globalAveragePooling1d(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("globalAveragePooling1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def globalAveragePooling1d(): GlobalAveragePooling1D = ^.asInstanceOf[js.Dynamic].applyDynamic("globalAveragePooling1d")().asInstanceOf[GlobalAveragePooling1D]
+    inline def globalAveragePooling1d(args: LayerArgs): GlobalAveragePooling1D = ^.asInstanceOf[js.Dynamic].applyDynamic("globalAveragePooling1d")(args.asInstanceOf[js.Any]).asInstanceOf[GlobalAveragePooling1D]
     
-    inline def globalAveragePooling2d(args: GlobalPooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("globalAveragePooling2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def globalAveragePooling2d(args: GlobalPooling2DLayerArgs): GlobalAveragePooling2D = ^.asInstanceOf[js.Dynamic].applyDynamic("globalAveragePooling2d")(args.asInstanceOf[js.Any]).asInstanceOf[GlobalAveragePooling2D]
     
     @JSImport("@tensorflow/tfjs-layers", "layers.globalMaxPool1d")
     @js.native
-    val globalMaxPool1d: js.Function1[/* args */ js.UndefOr[LayerArgs], typings.tensorflowTfjsLayers.topologyMod.Layer] = js.native
+    val globalMaxPool1d: js.Function1[/* args */ js.UndefOr[LayerArgs], GlobalMaxPooling1D] = js.native
     
     @JSImport("@tensorflow/tfjs-layers", "layers.globalMaxPool2d")
     @js.native
-    val globalMaxPool2d: js.Function1[
-        /* args */ GlobalPooling2DLayerArgs, 
-        typings.tensorflowTfjsLayers.topologyMod.Layer
-      ] = js.native
+    val globalMaxPool2d: js.Function1[/* args */ GlobalPooling2DLayerArgs, GlobalMaxPooling2D] = js.native
     
-    inline def globalMaxPooling1d(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("globalMaxPooling1d")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def globalMaxPooling1d(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("globalMaxPooling1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def globalMaxPooling1d(): GlobalMaxPooling1D = ^.asInstanceOf[js.Dynamic].applyDynamic("globalMaxPooling1d")().asInstanceOf[GlobalMaxPooling1D]
+    inline def globalMaxPooling1d(args: LayerArgs): GlobalMaxPooling1D = ^.asInstanceOf[js.Dynamic].applyDynamic("globalMaxPooling1d")(args.asInstanceOf[js.Any]).asInstanceOf[GlobalMaxPooling1D]
     
-    inline def globalMaxPooling2d(args: GlobalPooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("globalMaxPooling2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def globalMaxPooling2d(args: GlobalPooling2DLayerArgs): GlobalMaxPooling2D = ^.asInstanceOf[js.Dynamic].applyDynamic("globalMaxPooling2d")(args.asInstanceOf[js.Any]).asInstanceOf[GlobalMaxPooling2D]
     
-    inline def gru(args: GRULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("gru")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def gru(args: GRULayerArgs): GRU = ^.asInstanceOf[js.Dynamic].applyDynamic("gru")(args.asInstanceOf[js.Any]).asInstanceOf[GRU]
     
-    inline def gruCell(args: GRUCellLayerArgs): typings.tensorflowTfjsLayers.recurrentMod.RNNCell = ^.asInstanceOf[js.Dynamic].applyDynamic("gruCell")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.recurrentMod.RNNCell]
+    inline def gruCell(args: GRUCellLayerArgs): GRUCell = ^.asInstanceOf[js.Dynamic].applyDynamic("gruCell")(args.asInstanceOf[js.Any]).asInstanceOf[GRUCell]
     
     inline def input(config: InputConfig): typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(config.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor]
     
-    inline def inputLayer(args: InputLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("inputLayer")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def inputLayer(args: InputLayerArgs): InputLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("inputLayer")(args.asInstanceOf[js.Any]).asInstanceOf[InputLayer]
     
-    inline def layerNormalization(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("layerNormalization")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def layerNormalization(args: LayerNormalizationLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("layerNormalization")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def layerNormalization(): LayerNormalization = ^.asInstanceOf[js.Dynamic].applyDynamic("layerNormalization")().asInstanceOf[LayerNormalization]
+    inline def layerNormalization(args: LayerNormalizationLayerArgs): LayerNormalization = ^.asInstanceOf[js.Dynamic].applyDynamic("layerNormalization")(args.asInstanceOf[js.Any]).asInstanceOf[LayerNormalization]
     
-    inline def leakyReLU(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("leakyReLU")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def leakyReLU(args: LeakyReLULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("leakyReLU")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def leakyReLU(): LeakyReLU = ^.asInstanceOf[js.Dynamic].applyDynamic("leakyReLU")().asInstanceOf[LeakyReLU]
+    inline def leakyReLU(args: LeakyReLULayerArgs): LeakyReLU = ^.asInstanceOf[js.Dynamic].applyDynamic("leakyReLU")(args.asInstanceOf[js.Any]).asInstanceOf[LeakyReLU]
     
-    inline def lstm(args: LSTMLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("lstm")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def lstm(args: LSTMLayerArgs): LSTM = ^.asInstanceOf[js.Dynamic].applyDynamic("lstm")(args.asInstanceOf[js.Any]).asInstanceOf[LSTM]
     
-    inline def lstmCell(args: LSTMCellLayerArgs): typings.tensorflowTfjsLayers.recurrentMod.RNNCell = ^.asInstanceOf[js.Dynamic].applyDynamic("lstmCell")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.recurrentMod.RNNCell]
+    inline def lstmCell(args: LSTMCellLayerArgs): LSTMCell = ^.asInstanceOf[js.Dynamic].applyDynamic("lstmCell")(args.asInstanceOf[js.Any]).asInstanceOf[LSTMCell]
     
-    inline def masking(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("masking")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def masking(args: MaskingArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("masking")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def masking(): Masking = ^.asInstanceOf[js.Dynamic].applyDynamic("masking")().asInstanceOf[Masking]
+    inline def masking(args: MaskingArgs): Masking = ^.asInstanceOf[js.Dynamic].applyDynamic("masking")(args.asInstanceOf[js.Any]).asInstanceOf[Masking]
     
     @JSImport("@tensorflow/tfjs-layers", "layers.maxPool1d")
     @js.native
-    val maxPool1d: js.Function1[/* args */ Pooling1DLayerArgs, typings.tensorflowTfjsLayers.topologyMod.Layer] = js.native
+    val maxPool1d: js.Function1[/* args */ Pooling1DLayerArgs, MaxPooling1D] = js.native
     
     @JSImport("@tensorflow/tfjs-layers", "layers.maxPool2d")
     @js.native
-    val maxPool2d: js.Function1[/* args */ Pooling2DLayerArgs, typings.tensorflowTfjsLayers.topologyMod.Layer] = js.native
+    val maxPool2d: js.Function1[/* args */ Pooling2DLayerArgs, MaxPooling2D] = js.native
     
-    inline def maxPooling1d(args: Pooling1DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("maxPooling1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def maxPooling1d(args: Pooling1DLayerArgs): MaxPooling1D = ^.asInstanceOf[js.Dynamic].applyDynamic("maxPooling1d")(args.asInstanceOf[js.Any]).asInstanceOf[MaxPooling1D]
     
-    inline def maxPooling2d(args: Pooling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("maxPooling2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def maxPooling2d(args: Pooling2DLayerArgs): MaxPooling2D = ^.asInstanceOf[js.Dynamic].applyDynamic("maxPooling2d")(args.asInstanceOf[js.Any]).asInstanceOf[MaxPooling2D]
     
-    inline def maxPooling3d(args: Pooling3DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("maxPooling3d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def maxPooling3d(args: Pooling3DLayerArgs): MaxPooling3D = ^.asInstanceOf[js.Dynamic].applyDynamic("maxPooling3d")(args.asInstanceOf[js.Any]).asInstanceOf[MaxPooling3D]
     
-    inline def maximum(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def maximum(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def maximum(): Maximum_ = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")().asInstanceOf[Maximum_]
+    inline def maximum(args: LayerArgs): Maximum_ = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(args.asInstanceOf[js.Any]).asInstanceOf[Maximum_]
     
-    inline def minimum(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def minimum(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def minimum(): Minimum_ = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")().asInstanceOf[Minimum_]
+    inline def minimum(args: LayerArgs): Minimum_ = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(args.asInstanceOf[js.Any]).asInstanceOf[Minimum_]
     
-    inline def multiply(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def multiply(args: LayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def multiply(): Multiply_ = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")().asInstanceOf[Multiply_]
+    inline def multiply(args: LayerArgs): Multiply_ = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(args.asInstanceOf[js.Any]).asInstanceOf[Multiply_]
     
-    inline def permute(args: PermuteLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("permute")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def permute(args: PermuteLayerArgs): Permute = ^.asInstanceOf[js.Dynamic].applyDynamic("permute")(args.asInstanceOf[js.Any]).asInstanceOf[Permute]
     
-    inline def prelu(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("prelu")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def prelu(args: PReLULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("prelu")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def prelu(): PReLU = ^.asInstanceOf[js.Dynamic].applyDynamic("prelu")().asInstanceOf[PReLU]
+    inline def prelu(args: PReLULayerArgs): PReLU = ^.asInstanceOf[js.Dynamic].applyDynamic("prelu")(args.asInstanceOf[js.Any]).asInstanceOf[PReLU]
     
-    inline def reLU(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("reLU")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def reLU(args: ReLULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("reLU")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def reLU(): ReLU = ^.asInstanceOf[js.Dynamic].applyDynamic("reLU")().asInstanceOf[ReLU]
+    inline def reLU(args: ReLULayerArgs): ReLU = ^.asInstanceOf[js.Dynamic].applyDynamic("reLU")(args.asInstanceOf[js.Any]).asInstanceOf[ReLU]
     
-    inline def repeatVector(args: RepeatVectorLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("repeatVector")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def repeatVector(args: RepeatVectorLayerArgs): RepeatVector = ^.asInstanceOf[js.Dynamic].applyDynamic("repeatVector")(args.asInstanceOf[js.Any]).asInstanceOf[RepeatVector]
     
-    inline def reshape(args: ReshapeLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def reshape(args: ReshapeLayerArgs): Reshape = ^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(args.asInstanceOf[js.Any]).asInstanceOf[Reshape]
     
-    inline def rnn(args: RNNLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("rnn")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def rnn(args: RNNLayerArgs): typings.tensorflowTfjsLayers.recurrentMod.RNN_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rnn")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.recurrentMod.RNN_]
     
-    inline def separableConv2d(args: SeparableConvLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("separableConv2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def separableConv2d(args: SeparableConvLayerArgs): SeparableConv2D = ^.asInstanceOf[js.Dynamic].applyDynamic("separableConv2d")(args.asInstanceOf[js.Any]).asInstanceOf[SeparableConv2D]
     
-    inline def simpleRNN(args: SimpleRNNLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleRNN")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def simpleRNN(args: SimpleRNNLayerArgs): SimpleRNN = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleRNN")(args.asInstanceOf[js.Any]).asInstanceOf[SimpleRNN]
     
-    inline def simpleRNNCell(args: SimpleRNNCellLayerArgs): typings.tensorflowTfjsLayers.recurrentMod.RNNCell = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleRNNCell")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.recurrentMod.RNNCell]
+    inline def simpleRNNCell(args: SimpleRNNCellLayerArgs): SimpleRNNCell = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleRNNCell")(args.asInstanceOf[js.Any]).asInstanceOf[SimpleRNNCell]
     
-    inline def softmax(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("softmax")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def softmax(args: SoftmaxLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("softmax")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def softmax(): Softmax = ^.asInstanceOf[js.Dynamic].applyDynamic("softmax")().asInstanceOf[Softmax]
+    inline def softmax(args: SoftmaxLayerArgs): Softmax = ^.asInstanceOf[js.Dynamic].applyDynamic("softmax")(args.asInstanceOf[js.Any]).asInstanceOf[Softmax]
     
-    inline def spatialDropout1d(args: SpatialDropout1DLayerConfig): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("spatialDropout1d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def spatialDropout1d(args: SpatialDropout1DLayerConfig): SpatialDropout1D = ^.asInstanceOf[js.Dynamic].applyDynamic("spatialDropout1d")(args.asInstanceOf[js.Any]).asInstanceOf[SpatialDropout1D]
     
-    inline def stackedRNNCells(args: StackedRNNCellsArgs): typings.tensorflowTfjsLayers.recurrentMod.RNNCell = ^.asInstanceOf[js.Dynamic].applyDynamic("stackedRNNCells")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.recurrentMod.RNNCell]
+    inline def stackedRNNCells(args: StackedRNNCellsArgs): StackedRNNCells = ^.asInstanceOf[js.Dynamic].applyDynamic("stackedRNNCells")(args.asInstanceOf[js.Any]).asInstanceOf[StackedRNNCells]
     
-    inline def thresholdedReLU(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("thresholdedReLU")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def thresholdedReLU(args: ThresholdedReLULayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("thresholdedReLU")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def thresholdedReLU(): ThresholdedReLU = ^.asInstanceOf[js.Dynamic].applyDynamic("thresholdedReLU")().asInstanceOf[ThresholdedReLU]
+    inline def thresholdedReLU(args: ThresholdedReLULayerArgs): ThresholdedReLU = ^.asInstanceOf[js.Dynamic].applyDynamic("thresholdedReLU")(args.asInstanceOf[js.Any]).asInstanceOf[ThresholdedReLU]
     
-    inline def timeDistributed(args: WrapperLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("timeDistributed")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def timeDistributed(args: WrapperLayerArgs): TimeDistributed = ^.asInstanceOf[js.Dynamic].applyDynamic("timeDistributed")(args.asInstanceOf[js.Any]).asInstanceOf[TimeDistributed]
     
-    inline def upSampling2d(args: UpSampling2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("upSampling2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def upSampling2d(args: UpSampling2DLayerArgs): UpSampling2D = ^.asInstanceOf[js.Dynamic].applyDynamic("upSampling2d")(args.asInstanceOf[js.Any]).asInstanceOf[UpSampling2D]
     
-    inline def zeroPadding2d(): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroPadding2d")().asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
-    inline def zeroPadding2d(args: ZeroPadding2DLayerArgs): typings.tensorflowTfjsLayers.topologyMod.Layer = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroPadding2d")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsLayers.topologyMod.Layer]
+    inline def zeroPadding2d(): ZeroPadding2D = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroPadding2d")().asInstanceOf[ZeroPadding2D]
+    inline def zeroPadding2d(args: ZeroPadding2DLayerArgs): ZeroPadding2D = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroPadding2d")(args.asInstanceOf[js.Any]).asInstanceOf[ZeroPadding2D]
   }
   
   inline def loadLayersModel(pathOrIOHandler: String): js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLayersModel")(pathOrIOHandler.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.tensorflowTfjsLayers.trainingMod.LayersModel]]
@@ -696,5 +748,5 @@ object mod {
   
   @JSImport("@tensorflow/tfjs-layers", "version_layers")
   @js.native
-  val versionLayers: /* "2.7.0" */ String = js.native
+  val versionLayers: /* "3.20.0" */ String = js.native
 }

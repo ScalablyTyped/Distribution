@@ -234,11 +234,11 @@ Instantiable0[nlobjForm] {
     */
   def addField(name: String, `type`: String): nlobjField = js.native
   def addField(name: String, `type`: String, label: String): nlobjField = js.native
-  def addField(name: String, `type`: String, label: String, sourceOrRadio: js.Any): nlobjField = js.native
-  def addField(name: String, `type`: String, label: String, sourceOrRadio: js.Any, tab: String): nlobjField = js.native
+  def addField(name: String, `type`: String, label: String, sourceOrRadio: Any): nlobjField = js.native
+  def addField(name: String, `type`: String, label: String, sourceOrRadio: Any, tab: String): nlobjField = js.native
   def addField(name: String, `type`: String, label: String, sourceOrRadio: Unit, tab: String): nlobjField = js.native
-  def addField(name: String, `type`: String, label: Unit, sourceOrRadio: js.Any): nlobjField = js.native
-  def addField(name: String, `type`: String, label: Unit, sourceOrRadio: js.Any, tab: String): nlobjField = js.native
+  def addField(name: String, `type`: String, label: Unit, sourceOrRadio: Any): nlobjField = js.native
+  def addField(name: String, `type`: String, label: Unit, sourceOrRadio: Any, tab: String): nlobjField = js.native
   def addField(name: String, `type`: String, label: Unit, sourceOrRadio: Unit, tab: String): nlobjField = js.native
   
   /**
@@ -257,7 +257,7 @@ Instantiable0[nlobjForm] {
     * @param tab
     * @return
     */
-  def addFieldGroup(name: String, label: String, tab: js.Any): nlobjFieldGroup = js.native
+  def addFieldGroup(name: String, label: String, tab: Any): nlobjFieldGroup = js.native
   
   /**
     * add a navigation cross-link to the page.
@@ -355,7 +355,7 @@ Instantiable0[nlobjForm] {
     * @since 2008.2
     * @param html
     */
-  def addTitleHtml(html: js.Any): Unit = js.native
+  def addTitleHtml(html: Any): Unit = js.native
   
   /**
     * get a button from this form by name.
@@ -496,7 +496,7 @@ Instantiable0[nlobjForm] {
     * @since 2008.2
     * @param values
     */
-  def setFieldValues(values: js.Any): Unit = js.native
+  def setFieldValues(values: Any): Unit = js.native
   
   /**
     * set the Client Script definition used for this page.
@@ -505,7 +505,7 @@ Instantiable0[nlobjForm] {
     * @since 2008.2
     * @param script
     */
-  def setScript(script: js.Any): Unit = js.native
+  def setScript(script: Any): Unit = js.native
   
   /**
     * set the page title.

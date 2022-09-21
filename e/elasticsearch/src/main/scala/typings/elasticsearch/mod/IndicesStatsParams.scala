@@ -42,25 +42,25 @@ object IndicesStatsParams {
     
     inline def setCompletionFieldsUndefined: Self = StObject.set(x, "completionFields", js.undefined)
     
-    inline def setCompletionFieldsVarargs(value: String*): Self = StObject.set(x, "completionFields", js.Array(value :_*))
+    inline def setCompletionFieldsVarargs(value: String*): Self = StObject.set(x, "completionFields", js.Array(value*))
     
     inline def setFielddataFields(value: NameList): Self = StObject.set(x, "fielddataFields", value.asInstanceOf[js.Any])
     
     inline def setFielddataFieldsUndefined: Self = StObject.set(x, "fielddataFields", js.undefined)
     
-    inline def setFielddataFieldsVarargs(value: String*): Self = StObject.set(x, "fielddataFields", js.Array(value :_*))
+    inline def setFielddataFieldsVarargs(value: String*): Self = StObject.set(x, "fielddataFields", js.Array(value*))
     
     inline def setFields(value: NameList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setGroups(value: NameList): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setHuman(value: Boolean): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
     
@@ -68,7 +68,7 @@ object IndicesStatsParams {
     
     inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
     
     inline def setLevel(value: cluster | indices | shards): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
@@ -78,12 +78,12 @@ object IndicesStatsParams {
     
     inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value :_*))
+    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value*))
     
     inline def setTypes(value: NameList): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

@@ -12,12 +12,17 @@ trait RemoveHandlerOptions extends StObject {
   /**
     * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
     */
-  var asyncContext: js.UndefOr[js.Any] = js.undefined
+  var asyncContext: js.UndefOr[Any] = js.undefined
   
   /**
-    * The handler to be removed. If a particular handler is not specified, then all handlers for the specified event type are removed. The `BindingEventHandler` type is defined with `type BindingEventHandler = (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any`.
+    * The handler to be removed. If a particular handler is not specified, then all handlers for the specified event type are removed.
     */
-  var handler: js.UndefOr[BindingEventHandler] = js.undefined
+  var handler: js.UndefOr[
+    js.Function1[
+      /* eventArgs */ js.UndefOr[BindingDataChangedEventArgs | BindingSelectionChangedEventArgs], 
+      Any
+    ]
+  ] = js.undefined
 }
 object RemoveHandlerOptions {
   
@@ -28,12 +33,12 @@ object RemoveHandlerOptions {
   
   extension [Self <: RemoveHandlerOptions](x: Self) {
     
-    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
     inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
     inline def setHandler(
-      value: /* eventArgs */ js.UndefOr[BindingDataChangedEventArgs | BindingSelectionChangedEventArgs] => js.Any
+      value: /* eventArgs */ js.UndefOr[BindingDataChangedEventArgs | BindingSelectionChangedEventArgs] => Any
     ): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
     
     inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)

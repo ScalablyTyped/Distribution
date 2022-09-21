@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ActionToggleConstructor
   extends StObject
-     with Instantiable0[ActionToggle]
+     with /**
+  * A customizable toggle used in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget that performs a specific action(s) which can be toggled on/off.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html)
+  */
+Instantiable0[ActionToggle]
      with Instantiable1[/* properties */ ActionToggleProperties, ActionToggle]

@@ -9,10 +9,10 @@ String manipulation extensions for Underscore.js javascript library.
 | ------------------ | :-------------: |
 | Full name          | underscore.string |
 | Keywords           | underscore, string |
-| # releases         | 0 |
-| # dependents       | 2511 |
-| # downloads        | 98488038 |
-| # stars            | 56 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8565318.333333334 |
+| # stars            | 3363.0 |
 
 ## Links
 - [Homepage](https://github.com/epeli/underscore.string#readme)

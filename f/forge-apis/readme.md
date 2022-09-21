@@ -1,7 +1,7 @@
 
 # Scala.js typings for forge-apis
 
-Typings are for version 0.7
+Typings are for version 0.8
 
 ## Library description:
 The Forge Platform contains an expanding collection of web service components that can be used with Autodesk cloud-based products or your own technologies. Take advantage of Autodesk’s expertise in design and engineering.
@@ -10,10 +10,10 @@ The Forge Platform contains an expanding collection of web service components th
 | ------------------ | :-------------: |
 | Full name          | forge-apis |
 | Keywords           | autodesk, autodesk-forge, rest, restful, api |
-| # releases         | 17 |
-| # dependents       | 10 |
-| # downloads        | 80715 |
-| # stars            | 2 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 30034.333333333332 |
+| # stars            | 104.0 |
 
 ## Links
 - [Homepage](https://github.com/Autodesk-Forge/forge-api-nodejs-client#readme)

@@ -6,10 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PlotRsiParamsOptions extends StObject {
   
-  /**
-    * (Highstock) Number of maximum decimals that are used in RSI calculations.
-    */
   var decimals: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highstock) The point index which indicator calculations will base. For
+    * example using OHLC data, index=2 means the indicator will be calculated
+    * using Low values.
+    */
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The base period for indicator calculations. This is the
@@ -30,6 +34,10 @@ object PlotRsiParamsOptions {
     inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
     
     inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

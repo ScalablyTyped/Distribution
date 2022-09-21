@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "EvaluatableExpression")
 @js.native
-class EvaluatableExpression protected () extends StObject {
+open class EvaluatableExpression protected () extends StObject {
   /**
     * Creates a new evaluatable expression object.
     *

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ListElementStyle extends StObject {
   
-  var item: js.UndefOr[js.Any] = js.undefined
+  var item: js.UndefOr[Any] = js.undefined
   
-  var selected: js.UndefOr[js.Any] = js.undefined
+  var selected: js.UndefOr[Any] = js.undefined
 }
 object ListElementStyle {
   
@@ -19,11 +19,11 @@ object ListElementStyle {
   
   extension [Self <: ListElementStyle](x: Self) {
     
-    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    inline def setSelected(value: js.Any): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Any): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }

@@ -14,9 +14,9 @@ object anon {
     
     var characterCount: Double
     
-    var lines: js.Any
+    var lines: Any
     
-    var unicode: js.Any
+    var unicode: Any
     
     var verifiedCount: Double
   }
@@ -26,8 +26,8 @@ object anon {
       addressCount: Double,
       bytes: Double,
       characterCount: Double,
-      lines: js.Any,
-      unicode: js.Any,
+      lines: Any,
+      unicode: Any,
       verifiedCount: Double
     ): AddressCount = {
       val __obj = js.Dynamic.literal(addressCount = addressCount.asInstanceOf[js.Any], bytes = bytes.asInstanceOf[js.Any], characterCount = characterCount.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any], verifiedCount = verifiedCount.asInstanceOf[js.Any])
@@ -42,9 +42,9 @@ object anon {
       
       inline def setCharacterCount(value: Double): Self = StObject.set(x, "characterCount", value.asInstanceOf[js.Any])
       
-      inline def setLines(value: js.Any): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: Any): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      inline def setUnicode(value: js.Any): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+      inline def setUnicode(value: Any): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
       
       inline def setVerifiedCount(value: Double): Self = StObject.set(x, "verifiedCount", value.asInstanceOf[js.Any])
     }
@@ -52,22 +52,22 @@ object anon {
   
   trait Addresses extends StObject {
     
-    var addresses: js.Any
+    var addresses: Any
     
-    var meta: js.Any
+    var meta: Any
   }
   object Addresses {
     
-    inline def apply(addresses: js.Any, meta: js.Any): Addresses = {
+    inline def apply(addresses: Any, meta: Any): Addresses = {
       val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[Addresses]
     }
     
     extension [Self <: Addresses](x: Self) {
       
-      inline def setAddresses(value: js.Any): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+      inline def setAddresses(value: Any): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
-      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
 }

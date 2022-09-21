@@ -76,7 +76,7 @@ object IExpandedMonarchLanguageAction {
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    inline def setGroupVarargs(value: IMonarchLanguageAction*): Self = StObject.set(x, "group", js.Array(value :_*))
+    inline def setGroupVarargs(value: IMonarchLanguageAction*): Self = StObject.set(x, "group", js.Array(value*))
     
     inline def setLog(value: String): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     

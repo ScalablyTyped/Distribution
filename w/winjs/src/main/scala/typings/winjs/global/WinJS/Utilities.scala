@@ -307,7 +307,7 @@ object Utilities {
     **/
   @JSGlobal("WinJS.Utilities.QueryCollection")
   @js.native
-  class QueryCollection[T] ()
+  open class QueryCollection[T] ()
     extends StObject
        with typings.winjs.WinJS.Utilities.QueryCollection[T]
   object QueryCollection {
@@ -393,10 +393,10 @@ object Utilities {
       * @param name An optional description of the drain request for diagnostics.
       * @returns A Promise which completes when the drain has finished. Canceling this Promise cancels the drain request. This Promise will never enter an error state.
       **/
-    inline def requestDrain(): typings.winjs.WinJS.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")().asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
-    inline def requestDrain(priority: Unit, name: String): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")(priority.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
-    inline def requestDrain(priority: Priority): typings.winjs.WinJS.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")(priority.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
-    inline def requestDrain(priority: Priority, name: String): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")(priority.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
+    inline def requestDrain(): typings.winjs.WinJS.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")().asInstanceOf[typings.winjs.WinJS.Promise[Any]]
+    inline def requestDrain(priority: Unit, name: String): typings.winjs.WinJS.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")(priority.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Any]]
+    inline def requestDrain(priority: Priority): typings.winjs.WinJS.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")(priority.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[Any]]
+    inline def requestDrain(priority: Priority, name: String): typings.winjs.WinJS.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")(priority.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Any]]
     
     /**
       * Returns a string representation of the scheduler's state for diagnostic purposes. The jobs and drain requests are displayed in the order in which they are currently expected to be processed. The current job and drain request are marked by an asterisk.
@@ -412,24 +412,14 @@ object Utilities {
       * @param name A description of the work item for diagnostics. The default value is an empty string.
       * @returns The job instance that represents this work item.
       **/
-    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any]): IJob = ^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any]).asInstanceOf[IJob]
-    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any], priority: Unit, thisArg: js.Any): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[IJob]
-    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any], priority: Unit, thisArg: js.Any, name: String): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IJob]
-    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any], priority: Unit, thisArg: Unit, name: String): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IJob]
-    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any], priority: Priority): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[IJob]
-    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any], priority: Priority, thisArg: js.Any): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[IJob]
-    inline def schedule(
-      work: js.Function1[/* jobInfo */ IJobInfo, js.Any],
-      priority: Priority,
-      thisArg: js.Any,
-      name: String
-    ): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IJob]
-    inline def schedule(
-      work: js.Function1[/* jobInfo */ IJobInfo, js.Any],
-      priority: Priority,
-      thisArg: Unit,
-      name: String
-    ): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IJob]
+    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, Any]): IJob = ^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any]).asInstanceOf[IJob]
+    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, Any], priority: Unit, thisArg: Any): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[IJob]
+    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, Any], priority: Unit, thisArg: Any, name: String): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IJob]
+    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, Any], priority: Unit, thisArg: Unit, name: String): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IJob]
+    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, Any], priority: Priority): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[IJob]
+    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, Any], priority: Priority, thisArg: Any): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[IJob]
+    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, Any], priority: Priority, thisArg: Any, name: String): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IJob]
+    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, Any], priority: Priority, thisArg: Unit, name: String): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IJob]
     
     /**
       * Schedules a job to complete the returned Promise at WinJS.Utilities.Scheduler.Priority.aboveNormal priority.
@@ -517,14 +507,14 @@ object Utilities {
     * @param events A variable list of property names.
     * @returns The object with the specified properties. The names of the properties are prefixed with 'on'.
     **/
-  inline def createEventProperties(events: String*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventProperties")(events.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createEventProperties(events: String*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventProperties")(events.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
   /**
     * Gets the data value associated with the specified element.
     * @param element The element.
     * @returns The value associated with the element.
     **/
-  inline def data(element: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def data(element: HTMLElement): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(element.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Disposes all first-generation disposable elements that are descendents of the specified element. The specified element itself is not disposed.
@@ -566,7 +556,7 @@ object Utilities {
       * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
       * @returns true if preventDefault was called on the event.
       **/
-    inline def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(`type`.asInstanceOf[js.Any], eventProperties.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def dispatchEvent(`type`: String, eventProperties: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(`type`.asInstanceOf[js.Any], eventProperties.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Removes an event listener from the control.
@@ -615,8 +605,8 @@ object Utilities {
     * @param root The root to start in. Defaults to the global object.
     * @returns The leaf-level type or namespace in the specified parent namespace.
     **/
-  inline def getMember(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMember")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def getMember(name: String, root: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMember")(name.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getMember(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMember")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getMember(name: String, root: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMember")(name.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Gets the position of the specified element.
@@ -737,8 +727,8 @@ object Utilities {
     * @param element Optional. The root element at which to start the query. If this parameter is omitted, the scope of the query is the entire document.
     * @returns A QueryCollection with zero or one elements matching the specified selector query.
     **/
-  inline def query(query: js.Any): typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(query.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement]]
-  inline def query(query: js.Any, element: HTMLElement): typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(query.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement]]
+  inline def query(query: Any): typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(query.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement]]
+  inline def query(query: Any, element: HTMLElement): typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(query.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement]]
   
   /**
     * Ensures that the specified function executes only after the DOMContentLoaded event has fired for the current page. The DOMContentLoaded event occurs after the page has been parsed but before all the resources are loaded.
@@ -746,10 +736,10 @@ object Utilities {
     * @param async If true, the callback should be executed asynchronously.
     * @returns A promise that completes after the DOMContentLoaded event has occurred.
     **/
-  inline def ready(): typings.winjs.WinJS.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")().asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
-  inline def ready(callback: js.Function): typings.winjs.WinJS.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
-  inline def ready(callback: js.Function, async: Boolean): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
-  inline def ready(callback: Unit, async: Boolean): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
+  inline def ready(): typings.winjs.WinJS.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")().asInstanceOf[typings.winjs.WinJS.Promise[Any]]
+  inline def ready(callback: js.Function): typings.winjs.WinJS.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[Any]]
+  inline def ready(callback: js.Function, async: Boolean): typings.winjs.WinJS.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Any]]
+  inline def ready(callback: Unit, async: Boolean): typings.winjs.WinJS.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Any]]
   
   /**
     * Removes the specified class from the specified element.

@@ -11,9 +11,9 @@ Node.js implementation of the Unix program uuencode.
 | Full name          | uuencode |
 | Keywords           | uuencode, uudecode, encode, decode |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 954889 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 236853.33333333334 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/zacbarton/node-uuencode#readme)

@@ -17,7 +17,7 @@ trait ProjectConfig extends StObject {
   var pubsubConfigs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.sourcerepo.gapi.client.sourcerepo.PubsubConfig}
-    */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.ProjectConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.ProjectConfig & TopLevel[Any]
   ] = js.undefined
 }
 object ProjectConfig {
@@ -40,7 +40,7 @@ object ProjectConfig {
     inline def setPubsubConfigs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.sourcerepo.gapi.client.sourcerepo.PubsubConfig}
-      */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.ProjectConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSourcerepo.maximMazurokGapiClientSourcerepoStrings.ProjectConfig & TopLevel[Any]
     ): Self = StObject.set(x, "pubsubConfigs", value.asInstanceOf[js.Any])
     
     inline def setPubsubConfigsUndefined: Self = StObject.set(x, "pubsubConfigs", js.undefined)

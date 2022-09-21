@@ -1,7 +1,7 @@
 
 # Scala.js typings for braintree
 
-Typings are for version 2.22
+Typings are for version 3.3
 
 ## Library description:
 A library for server-side integrating with Braintree.
@@ -10,10 +10,10 @@ A library for server-side integrating with Braintree.
 | ------------------ | :-------------: |
 | Full name          | braintree |
 | Keywords           | braintree, payments |
-| # releases         | 12 |
-| # dependents       | 33 |
-| # downloads        | 1962914 |
-| # stars            | 20 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 274452.0 |
+| # stars            | 308.0 |
 
 ## Links
 - [Homepage](https://github.com/braintree/braintree_node)

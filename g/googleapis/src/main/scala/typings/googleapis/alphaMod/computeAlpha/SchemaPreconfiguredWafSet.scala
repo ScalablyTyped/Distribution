@@ -24,6 +24,6 @@ object SchemaPreconfiguredWafSet {
     
     inline def setExpressionSetsUndefined: Self = StObject.set(x, "expressionSets", js.undefined)
     
-    inline def setExpressionSetsVarargs(value: SchemaWafExpressionSet*): Self = StObject.set(x, "expressionSets", js.Array(value :_*))
+    inline def setExpressionSetsVarargs(value: SchemaWafExpressionSet*): Self = StObject.set(x, "expressionSets", js.Array(value*))
   }
 }

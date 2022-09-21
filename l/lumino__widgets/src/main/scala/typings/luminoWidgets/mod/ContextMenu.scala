@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@lumino/widgets", "ContextMenu")
 @js.native
-class ContextMenu protected ()
+open class ContextMenu protected ()
   extends typings.luminoWidgets.contextmenuMod.ContextMenu {
   /**
     * Construct a new context menu.

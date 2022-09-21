@@ -1,6 +1,5 @@
 package typings.hapi.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait RequestAuth extends StObject {
   var credentials: AuthCredentials
   
   /** the authentication error is failed and mode set to 'try'. */
-  var error: Error
+  var error: js.Error
   
   /** true if the request has been successfully authenticated, otherwise false. */
   var isAuthenticated: Boolean
@@ -36,7 +35,7 @@ object RequestAuth {
   inline def apply(
     artifacts: js.Object,
     credentials: AuthCredentials,
-    error: Error,
+    error: js.Error,
     isAuthenticated: Boolean,
     isAuthorized: Boolean,
     mode: String,
@@ -52,7 +51,7 @@ object RequestAuth {
     
     inline def setCredentials(value: AuthCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setIsAuthenticated(value: Boolean): Self = StObject.set(x, "isAuthenticated", value.asInstanceOf[js.Any])
     

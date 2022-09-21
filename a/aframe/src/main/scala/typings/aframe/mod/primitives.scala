@@ -14,6 +14,6 @@ object primitives {
   
   @JSImport("aframe", "primitives.primitives")
   @js.native
-  def primitives: ObjectMap[Entity[ObjectMap[Component[js.Any, System[js.Any]]]]] = js.native
-  inline def primitives_=(x: ObjectMap[Entity[ObjectMap[Component[js.Any, System[js.Any]]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primitives")(x.asInstanceOf[js.Any])
+  def primitives: ObjectMap[Entity[ObjectMap[Component[Any, System[Any]]]]] = js.native
+  inline def primitives_=(x: ObjectMap[Entity[ObjectMap[Component[Any, System[Any]]]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primitives")(x.asInstanceOf[js.Any])
 }

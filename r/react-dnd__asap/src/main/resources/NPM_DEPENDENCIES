@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-dnd/asap" : "4.0.0"
+      "@react-dnd/asap" : "5.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-dnd/asap" : "4.0.0"
+      "@react-dnd/asap" : "5.0.2"
     }
   ],
   "compile-devDependencies" : [

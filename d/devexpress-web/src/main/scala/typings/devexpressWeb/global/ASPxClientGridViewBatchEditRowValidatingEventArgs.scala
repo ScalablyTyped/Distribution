@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridViewBatchEditRowValidatingEventArgs")
 @js.native
-class ASPxClientGridViewBatchEditRowValidatingEventArgs protected ()
+open class ASPxClientGridViewBatchEditRowValidatingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridViewBatchEditRowValidatingEventArgs {
   /**
@@ -18,19 +18,19 @@ class ASPxClientGridViewBatchEditRowValidatingEventArgs protected ()
     * @param validationInfo An object that provides the row's validation info.
     * @param key An object that is the row's key.
     */
-  def this(visibleIndex: Double, validationInfo: js.Any, key: js.Any) = this()
+  def this(visibleIndex: Double, validationInfo: Any, key: Any) = this()
   
   /**
     * Gets the row's key.
     */
   /* CompleteClass */
-  var key: js.Any = js.native
+  var key: Any = js.native
   
   /**
     * Provides validation information of a row currently being validated.
     */
   /* CompleteClass */
-  var validationInfo: js.Any = js.native
+  var validationInfo: Any = js.native
   
   /**
     * Gets the processed row's visible index.

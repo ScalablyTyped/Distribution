@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitlab", "ProjectCustomAttributes")
 @js.native
-class ProjectCustomAttributes protected ()
+open class ProjectCustomAttributes protected ()
   extends typings.gitlab.servicesMod.ProjectCustomAttributes {
   def this(options: BaseServiceOptions) = this()
 }

@@ -1,6 +1,7 @@
 package typings.pusherJs
 
-import typings.pusherJs.mod.Transport
+import typings.pusherJs.configMod.AuthTransport
+import typings.pusherJs.configMod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,11 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object pusherJsStrings {
   
   @js.native
-  sealed trait ajax extends StObject
+  sealed trait ajax
+    extends StObject
+       with AuthTransport
   inline def ajax: ajax = "ajax".asInstanceOf[ajax]
   
   @js.native
-  sealed trait jsonp extends StObject
+  sealed trait jsonp
+    extends StObject
+       with AuthTransport
   inline def jsonp: jsonp = "jsonp".asInstanceOf[jsonp]
   
   @js.native

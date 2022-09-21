@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.FullscreenViewModel")
 @js.native
-class FullscreenViewModelCls ()
+/**
+  * Provides the logic for the [Fullscreen](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Fullscreen-FullscreenViewModel.html)
+  */
+open class FullscreenViewModelCls ()
   extends StObject
      with typings.arcgisJsApi.esri.FullscreenViewModel {
   def this(properties: FullscreenViewModelProperties) = this()

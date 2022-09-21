@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StorageGateway extends Service {
   
   /**
-    * Activates the gateway you previously deployed on your host. In the activation process, you specify information such as the AWS Region that you want to use for storing snapshots or tapes, the time zone for scheduled snapshots the gateway snapshot schedule window, an activation key, and a name for your gateway. The activation process also associates your gateway with your account. For more information, see UpdateGatewayInformation.  You must turn on the gateway VM before you can activate your gateway. 
+    * Activates the gateway you previously deployed on your host. In the activation process, you specify information such as the Amazon Web Services Region that you want to use for storing snapshots or tapes, the time zone for scheduled snapshots the gateway snapshot schedule window, an activation key, and a name for your gateway. The activation process also associates your gateway with your account. For more information, see UpdateGatewayInformation.  You must turn on the gateway VM before you can activate your gateway. 
     */
   def activateGateway(): Request[ActivateGatewayOutput, AWSError] = js.native
   def activateGateway(callback: js.Function2[/* err */ AWSError, /* data */ ActivateGatewayOutput, Unit]): Request[ActivateGatewayOutput, AWSError] = js.native
   /**
-    * Activates the gateway you previously deployed on your host. In the activation process, you specify information such as the AWS Region that you want to use for storing snapshots or tapes, the time zone for scheduled snapshots the gateway snapshot schedule window, an activation key, and a name for your gateway. The activation process also associates your gateway with your account. For more information, see UpdateGatewayInformation.  You must turn on the gateway VM before you can activate your gateway. 
+    * Activates the gateway you previously deployed on your host. In the activation process, you specify information such as the Amazon Web Services Region that you want to use for storing snapshots or tapes, the time zone for scheduled snapshots the gateway snapshot schedule window, an activation key, and a name for your gateway. The activation process also associates your gateway with your account. For more information, see UpdateGatewayInformation.  You must turn on the gateway VM before you can activate your gateway. 
     */
   def activateGateway(params: ActivateGatewayInput): Request[ActivateGatewayOutput, AWSError] = js.native
   def activateGateway(
@@ -26,23 +26,23 @@ trait StorageGateway extends Service {
   ): Request[ActivateGatewayOutput, AWSError] = js.native
   
   /**
-    * Configures one or more gateway local disks as cache for a gateway. This operation is only supported in the cached volume, tape, and file gateway type (see How AWS Storage Gateway works (architecture). In the request, you specify the gateway Amazon Resource Name (ARN) to which you want to add cache, and one or more disk IDs that you want to configure as cache.
+    * Configures one or more gateway local disks as cache for a gateway. This operation is only supported in the cached volume, tape, and file gateway type (see How Storage Gateway works (architecture). In the request, you specify the gateway Amazon Resource Name (ARN) to which you want to add cache, and one or more disk IDs that you want to configure as cache.
     */
   def addCache(): Request[AddCacheOutput, AWSError] = js.native
   def addCache(callback: js.Function2[/* err */ AWSError, /* data */ AddCacheOutput, Unit]): Request[AddCacheOutput, AWSError] = js.native
   /**
-    * Configures one or more gateway local disks as cache for a gateway. This operation is only supported in the cached volume, tape, and file gateway type (see How AWS Storage Gateway works (architecture). In the request, you specify the gateway Amazon Resource Name (ARN) to which you want to add cache, and one or more disk IDs that you want to configure as cache.
+    * Configures one or more gateway local disks as cache for a gateway. This operation is only supported in the cached volume, tape, and file gateway type (see How Storage Gateway works (architecture). In the request, you specify the gateway Amazon Resource Name (ARN) to which you want to add cache, and one or more disk IDs that you want to configure as cache.
     */
   def addCache(params: AddCacheInput): Request[AddCacheOutput, AWSError] = js.native
   def addCache(params: AddCacheInput, callback: js.Function2[/* err */ AWSError, /* data */ AddCacheOutput, Unit]): Request[AddCacheOutput, AWSError] = js.native
   
   /**
-    * Adds one or more tags to the specified resource. You use tags to add metadata to resources, which you can use to categorize these resources. For example, you can categorize resources by purpose, owner, environment, or team. Each tag consists of a key and a value, which you define. You can add tags to the following AWS Storage Gateway resources:   Storage gateways of all types   Storage volumes   Virtual tapes   NFS and SMB file shares   You can create a maximum of 50 tags for each resource. Virtual tapes and storage volumes that are recovered to a new gateway maintain their tags.
+    * Adds one or more tags to the specified resource. You use tags to add metadata to resources, which you can use to categorize these resources. For example, you can categorize resources by purpose, owner, environment, or team. Each tag consists of a key and a value, which you define. You can add tags to the following Storage Gateway resources:   Storage gateways of all types   Storage volumes   Virtual tapes   NFS and SMB file shares   File System associations   You can create a maximum of 50 tags for each resource. Virtual tapes and storage volumes that are recovered to a new gateway maintain their tags.
     */
   def addTagsToResource(): Request[AddTagsToResourceOutput, AWSError] = js.native
   def addTagsToResource(callback: js.Function2[/* err */ AWSError, /* data */ AddTagsToResourceOutput, Unit]): Request[AddTagsToResourceOutput, AWSError] = js.native
   /**
-    * Adds one or more tags to the specified resource. You use tags to add metadata to resources, which you can use to categorize these resources. For example, you can categorize resources by purpose, owner, environment, or team. Each tag consists of a key and a value, which you define. You can add tags to the following AWS Storage Gateway resources:   Storage gateways of all types   Storage volumes   Virtual tapes   NFS and SMB file shares   You can create a maximum of 50 tags for each resource. Virtual tapes and storage volumes that are recovered to a new gateway maintain their tags.
+    * Adds one or more tags to the specified resource. You use tags to add metadata to resources, which you can use to categorize these resources. For example, you can categorize resources by purpose, owner, environment, or team. Each tag consists of a key and a value, which you define. You can add tags to the following Storage Gateway resources:   Storage gateways of all types   Storage volumes   Virtual tapes   NFS and SMB file shares   File System associations   You can create a maximum of 50 tags for each resource. Virtual tapes and storage volumes that are recovered to a new gateway maintain their tags.
     */
   def addTagsToResource(params: AddTagsToResourceInput): Request[AddTagsToResourceOutput, AWSError] = js.native
   def addTagsToResource(
@@ -51,12 +51,12 @@ trait StorageGateway extends Service {
   ): Request[AddTagsToResourceOutput, AWSError] = js.native
   
   /**
-    * Configures one or more gateway local disks as upload buffer for a specified gateway. This operation is supported for the stored volume, cached volume and tape gateway types. In the request, you specify the gateway Amazon Resource Name (ARN) to which you want to add upload buffer, and one or more disk IDs that you want to configure as upload buffer.
+    * Configures one or more gateway local disks as upload buffer for a specified gateway. This operation is supported for the stored volume, cached volume, and tape gateway types. In the request, you specify the gateway Amazon Resource Name (ARN) to which you want to add upload buffer, and one or more disk IDs that you want to configure as upload buffer.
     */
   def addUploadBuffer(): Request[AddUploadBufferOutput, AWSError] = js.native
   def addUploadBuffer(callback: js.Function2[/* err */ AWSError, /* data */ AddUploadBufferOutput, Unit]): Request[AddUploadBufferOutput, AWSError] = js.native
   /**
-    * Configures one or more gateway local disks as upload buffer for a specified gateway. This operation is supported for the stored volume, cached volume and tape gateway types. In the request, you specify the gateway Amazon Resource Name (ARN) to which you want to add upload buffer, and one or more disk IDs that you want to configure as upload buffer.
+    * Configures one or more gateway local disks as upload buffer for a specified gateway. This operation is supported for the stored volume, cached volume, and tape gateway types. In the request, you specify the gateway Amazon Resource Name (ARN) to which you want to add upload buffer, and one or more disk IDs that you want to configure as upload buffer.
     */
   def addUploadBuffer(params: AddUploadBufferInput): Request[AddUploadBufferOutput, AWSError] = js.native
   def addUploadBuffer(
@@ -79,18 +79,32 @@ trait StorageGateway extends Service {
   ): Request[AddWorkingStorageOutput, AWSError] = js.native
   
   /**
-    * Assigns a tape to a tape pool for archiving. The tape assigned to a pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the S3 storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool. Valid Values: GLACIER | DEEP_ARCHIVE 
+    * Assigns a tape to a tape pool for archiving. The tape assigned to a pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the S3 storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool.
     */
   def assignTapePool(): Request[AssignTapePoolOutput, AWSError] = js.native
   def assignTapePool(callback: js.Function2[/* err */ AWSError, /* data */ AssignTapePoolOutput, Unit]): Request[AssignTapePoolOutput, AWSError] = js.native
   /**
-    * Assigns a tape to a tape pool for archiving. The tape assigned to a pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the S3 storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool. Valid Values: GLACIER | DEEP_ARCHIVE 
+    * Assigns a tape to a tape pool for archiving. The tape assigned to a pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the S3 storage class (S3 Glacier or S3 Glacier Deep Archive) that corresponds to the pool.
     */
   def assignTapePool(params: AssignTapePoolInput): Request[AssignTapePoolOutput, AWSError] = js.native
   def assignTapePool(
     params: AssignTapePoolInput,
     callback: js.Function2[/* err */ AWSError, /* data */ AssignTapePoolOutput, Unit]
   ): Request[AssignTapePoolOutput, AWSError] = js.native
+  
+  /**
+    * Associate an Amazon FSx file system with the FSx File Gateway. After the association process is complete, the file shares on the Amazon FSx file system are available for access through the gateway. This operation only supports the FSx File Gateway type.
+    */
+  def associateFileSystem(): Request[AssociateFileSystemOutput, AWSError] = js.native
+  def associateFileSystem(callback: js.Function2[/* err */ AWSError, /* data */ AssociateFileSystemOutput, Unit]): Request[AssociateFileSystemOutput, AWSError] = js.native
+  /**
+    * Associate an Amazon FSx file system with the FSx File Gateway. After the association process is complete, the file shares on the Amazon FSx file system are available for access through the gateway. This operation only supports the FSx File Gateway type.
+    */
+  def associateFileSystem(params: AssociateFileSystemInput): Request[AssociateFileSystemOutput, AWSError] = js.native
+  def associateFileSystem(
+    params: AssociateFileSystemInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateFileSystemOutput, Unit]
+  ): Request[AssociateFileSystemOutput, AWSError] = js.native
   
   /**
     * Connects a volume to an iSCSI connection and then attaches the volume to the specified gateway. Detaching and attaching a volume enables you to recover your data from one gateway to a different gateway without creating a snapshot. It also makes it easier to move your volumes from an on-premises gateway to a gateway hosted on an Amazon EC2 instance.
@@ -152,12 +166,12 @@ trait StorageGateway extends Service {
   ): Request[CreateCachediSCSIVolumeOutput, AWSError] = js.native
   
   /**
-    * Creates a Network File System (NFS) file share on an existing file gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway exposes file shares using an NFS interface. This operation is only supported for file gateways.  File gateway requires AWS Security Token Service (AWS STS) to be activated to enable you to create a file share. Make sure AWS STS is activated in the AWS Region you are creating your file gateway in. If AWS STS is not activated in the AWS Region, activate it. For information about how to activate AWS STS, see Activating and deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide. File gateway does not support creating hard or symbolic links on a file share. 
+    * Creates a Network File System (NFS) file share on an existing S3 File Gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway exposes file shares using an NFS interface. This operation is only supported for S3 File Gateways.  S3 File gateway requires Security Token Service (Amazon Web Services STS) to be activated to enable you to create a file share. Make sure Amazon Web Services STS is activated in the Amazon Web Services Region you are creating your S3 File Gateway in. If Amazon Web Services STS is not activated in the Amazon Web Services Region, activate it. For information about how to activate Amazon Web Services STS, see Activating and deactivating Amazon Web Services STS in an Amazon Web Services Region in the Identity and Access Management User Guide. S3 File Gateways do not support creating hard or symbolic links on a file share. 
     */
   def createNFSFileShare(): Request[CreateNFSFileShareOutput, AWSError] = js.native
   def createNFSFileShare(callback: js.Function2[/* err */ AWSError, /* data */ CreateNFSFileShareOutput, Unit]): Request[CreateNFSFileShareOutput, AWSError] = js.native
   /**
-    * Creates a Network File System (NFS) file share on an existing file gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway exposes file shares using an NFS interface. This operation is only supported for file gateways.  File gateway requires AWS Security Token Service (AWS STS) to be activated to enable you to create a file share. Make sure AWS STS is activated in the AWS Region you are creating your file gateway in. If AWS STS is not activated in the AWS Region, activate it. For information about how to activate AWS STS, see Activating and deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide. File gateway does not support creating hard or symbolic links on a file share. 
+    * Creates a Network File System (NFS) file share on an existing S3 File Gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway exposes file shares using an NFS interface. This operation is only supported for S3 File Gateways.  S3 File gateway requires Security Token Service (Amazon Web Services STS) to be activated to enable you to create a file share. Make sure Amazon Web Services STS is activated in the Amazon Web Services Region you are creating your S3 File Gateway in. If Amazon Web Services STS is not activated in the Amazon Web Services Region, activate it. For information about how to activate Amazon Web Services STS, see Activating and deactivating Amazon Web Services STS in an Amazon Web Services Region in the Identity and Access Management User Guide. S3 File Gateways do not support creating hard or symbolic links on a file share. 
     */
   def createNFSFileShare(params: CreateNFSFileShareInput): Request[CreateNFSFileShareOutput, AWSError] = js.native
   def createNFSFileShare(
@@ -166,12 +180,12 @@ trait StorageGateway extends Service {
   ): Request[CreateNFSFileShareOutput, AWSError] = js.native
   
   /**
-    * Creates a Server Message Block (SMB) file share on an existing file gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway exposes file shares using an SMB interface. This operation is only supported for file gateways.  File gateways require AWS Security Token Service (AWS STS) to be activated to enable you to create a file share. Make sure that AWS STS is activated in the AWS Region you are creating your file gateway in. If AWS STS is not activated in this AWS Region, activate it. For information about how to activate AWS STS, see Activating and deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide. File gateways don't support creating hard or symbolic links on a file share. 
+    * Creates a Server Message Block (SMB) file share on an existing S3 File Gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway exposes file shares using an SMB interface. This operation is only supported for S3 File Gateways.  S3 File Gateways require Security Token Service (Amazon Web Services STS) to be activated to enable you to create a file share. Make sure that Amazon Web Services STS is activated in the Amazon Web Services Region you are creating your S3 File Gateway in. If Amazon Web Services STS is not activated in this Amazon Web Services Region, activate it. For information about how to activate Amazon Web Services STS, see Activating and deactivating Amazon Web Services STS in an Amazon Web Services Region in the Identity and Access Management User Guide. File gateways don't support creating hard or symbolic links on a file share. 
     */
   def createSMBFileShare(): Request[CreateSMBFileShareOutput, AWSError] = js.native
   def createSMBFileShare(callback: js.Function2[/* err */ AWSError, /* data */ CreateSMBFileShareOutput, Unit]): Request[CreateSMBFileShareOutput, AWSError] = js.native
   /**
-    * Creates a Server Message Block (SMB) file share on an existing file gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway exposes file shares using an SMB interface. This operation is only supported for file gateways.  File gateways require AWS Security Token Service (AWS STS) to be activated to enable you to create a file share. Make sure that AWS STS is activated in the AWS Region you are creating your file gateway in. If AWS STS is not activated in this AWS Region, activate it. For information about how to activate AWS STS, see Activating and deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide. File gateways don't support creating hard or symbolic links on a file share. 
+    * Creates a Server Message Block (SMB) file share on an existing S3 File Gateway. In Storage Gateway, a file share is a file system mount point backed by Amazon S3 cloud storage. Storage Gateway exposes file shares using an SMB interface. This operation is only supported for S3 File Gateways.  S3 File Gateways require Security Token Service (Amazon Web Services STS) to be activated to enable you to create a file share. Make sure that Amazon Web Services STS is activated in the Amazon Web Services Region you are creating your S3 File Gateway in. If Amazon Web Services STS is not activated in this Amazon Web Services Region, activate it. For information about how to activate Amazon Web Services STS, see Activating and deactivating Amazon Web Services STS in an Amazon Web Services Region in the Identity and Access Management User Guide. File gateways don't support creating hard or symbolic links on a file share. 
     */
   def createSMBFileShare(params: CreateSMBFileShareInput): Request[CreateSMBFileShareOutput, AWSError] = js.native
   def createSMBFileShare(
@@ -180,12 +194,12 @@ trait StorageGateway extends Service {
   ): Request[CreateSMBFileShareOutput, AWSError] = js.native
   
   /**
-    * Initiates a snapshot of a volume. AWS Storage Gateway provides the ability to back up point-in-time snapshots of your data to Amazon Simple Storage (Amazon S3) for durable off-site recovery, as well as import the data to an Amazon Elastic Block Store (EBS) volume in Amazon Elastic Compute Cloud (EC2). You can take snapshots of your gateway volume on a scheduled or ad hoc basis. This API enables you to take an ad hoc snapshot. For more information, see Editing a snapshot schedule. In the CreateSnapshot request, you identify the volume by providing its Amazon Resource Name (ARN). You must also provide description for the snapshot. When AWS Storage Gateway takes the snapshot of specified volume, the snapshot and description appears in the AWS Storage Gateway console. In response, AWS Storage Gateway returns you a snapshot ID. You can use this snapshot ID to check the snapshot progress or later use it when you want to create a volume from a snapshot. This operation is only supported in stored and cached volume gateway type.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, see DescribeSnapshots or DeleteSnapshot in the Amazon Elastic Compute Cloud API Reference.   Volume and snapshot IDs are changing to a longer length ID format. For more information, see the important note on the Welcome page. 
+    * Initiates a snapshot of a volume. Storage Gateway provides the ability to back up point-in-time snapshots of your data to Amazon Simple Storage (Amazon S3) for durable off-site recovery, and also import the data to an Amazon Elastic Block Store (EBS) volume in Amazon Elastic Compute Cloud (EC2). You can take snapshots of your gateway volume on a scheduled or ad hoc basis. This API enables you to take an ad hoc snapshot. For more information, see Editing a snapshot schedule. In the CreateSnapshot request, you identify the volume by providing its Amazon Resource Name (ARN). You must also provide description for the snapshot. When Storage Gateway takes the snapshot of specified volume, the snapshot and description appears in the Storage Gateway console. In response, Storage Gateway returns you a snapshot ID. You can use this snapshot ID to check the snapshot progress or later use it when you want to create a volume from a snapshot. This operation is only supported in stored and cached volume gateway type.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, see DescribeSnapshots or DeleteSnapshot in the Amazon Elastic Compute Cloud API Reference.   Volume and snapshot IDs are changing to a longer length ID format. For more information, see the important note on the Welcome page. 
     */
   def createSnapshot(): Request[CreateSnapshotOutput, AWSError] = js.native
   def createSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ CreateSnapshotOutput, Unit]): Request[CreateSnapshotOutput, AWSError] = js.native
   /**
-    * Initiates a snapshot of a volume. AWS Storage Gateway provides the ability to back up point-in-time snapshots of your data to Amazon Simple Storage (Amazon S3) for durable off-site recovery, as well as import the data to an Amazon Elastic Block Store (EBS) volume in Amazon Elastic Compute Cloud (EC2). You can take snapshots of your gateway volume on a scheduled or ad hoc basis. This API enables you to take an ad hoc snapshot. For more information, see Editing a snapshot schedule. In the CreateSnapshot request, you identify the volume by providing its Amazon Resource Name (ARN). You must also provide description for the snapshot. When AWS Storage Gateway takes the snapshot of specified volume, the snapshot and description appears in the AWS Storage Gateway console. In response, AWS Storage Gateway returns you a snapshot ID. You can use this snapshot ID to check the snapshot progress or later use it when you want to create a volume from a snapshot. This operation is only supported in stored and cached volume gateway type.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, see DescribeSnapshots or DeleteSnapshot in the Amazon Elastic Compute Cloud API Reference.   Volume and snapshot IDs are changing to a longer length ID format. For more information, see the important note on the Welcome page. 
+    * Initiates a snapshot of a volume. Storage Gateway provides the ability to back up point-in-time snapshots of your data to Amazon Simple Storage (Amazon S3) for durable off-site recovery, and also import the data to an Amazon Elastic Block Store (EBS) volume in Amazon Elastic Compute Cloud (EC2). You can take snapshots of your gateway volume on a scheduled or ad hoc basis. This API enables you to take an ad hoc snapshot. For more information, see Editing a snapshot schedule. In the CreateSnapshot request, you identify the volume by providing its Amazon Resource Name (ARN). You must also provide description for the snapshot. When Storage Gateway takes the snapshot of specified volume, the snapshot and description appears in the Storage Gateway console. In response, Storage Gateway returns you a snapshot ID. You can use this snapshot ID to check the snapshot progress or later use it when you want to create a volume from a snapshot. This operation is only supported in stored and cached volume gateway type.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, see DescribeSnapshots or DeleteSnapshot in the Amazon Elastic Compute Cloud API Reference.   Volume and snapshot IDs are changing to a longer length ID format. For more information, see the important note on the Welcome page. 
     */
   def createSnapshot(params: CreateSnapshotInput): Request[CreateSnapshotOutput, AWSError] = js.native
   def createSnapshot(
@@ -194,14 +208,14 @@ trait StorageGateway extends Service {
   ): Request[CreateSnapshotOutput, AWSError] = js.native
   
   /**
-    * Initiates a snapshot of a gateway from a volume recovery point. This operation is only supported in the cached volume gateway type. A volume recovery point is a point in time at which all data of the volume is consistent and from which you can create a snapshot. To get a list of volume recovery point for cached volume gateway, use ListVolumeRecoveryPoints. In the CreateSnapshotFromVolumeRecoveryPoint request, you identify the volume by providing its Amazon Resource Name (ARN). You must also provide a description for the snapshot. When the gateway takes a snapshot of the specified volume, the snapshot and its description appear in the AWS Storage Gateway console. In response, the gateway returns you a snapshot ID. You can use this snapshot ID to check the snapshot progress or later use it when you want to create a volume from a snapshot.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, see DescribeSnapshots or DeleteSnapshot in the Amazon Elastic Compute Cloud API Reference. 
+    * Initiates a snapshot of a gateway from a volume recovery point. This operation is only supported in the cached volume gateway type. A volume recovery point is a point in time at which all data of the volume is consistent and from which you can create a snapshot. To get a list of volume recovery point for cached volume gateway, use ListVolumeRecoveryPoints. In the CreateSnapshotFromVolumeRecoveryPoint request, you identify the volume by providing its Amazon Resource Name (ARN). You must also provide a description for the snapshot. When the gateway takes a snapshot of the specified volume, the snapshot and its description appear in the Storage Gateway console. In response, the gateway returns you a snapshot ID. You can use this snapshot ID to check the snapshot progress or later use it when you want to create a volume from a snapshot.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, see DescribeSnapshots or DeleteSnapshot in the Amazon Elastic Compute Cloud API Reference. 
     */
   def createSnapshotFromVolumeRecoveryPoint(): Request[CreateSnapshotFromVolumeRecoveryPointOutput, AWSError] = js.native
   def createSnapshotFromVolumeRecoveryPoint(
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSnapshotFromVolumeRecoveryPointOutput, Unit]
   ): Request[CreateSnapshotFromVolumeRecoveryPointOutput, AWSError] = js.native
   /**
-    * Initiates a snapshot of a gateway from a volume recovery point. This operation is only supported in the cached volume gateway type. A volume recovery point is a point in time at which all data of the volume is consistent and from which you can create a snapshot. To get a list of volume recovery point for cached volume gateway, use ListVolumeRecoveryPoints. In the CreateSnapshotFromVolumeRecoveryPoint request, you identify the volume by providing its Amazon Resource Name (ARN). You must also provide a description for the snapshot. When the gateway takes a snapshot of the specified volume, the snapshot and its description appear in the AWS Storage Gateway console. In response, the gateway returns you a snapshot ID. You can use this snapshot ID to check the snapshot progress or later use it when you want to create a volume from a snapshot.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, see DescribeSnapshots or DeleteSnapshot in the Amazon Elastic Compute Cloud API Reference. 
+    * Initiates a snapshot of a gateway from a volume recovery point. This operation is only supported in the cached volume gateway type. A volume recovery point is a point in time at which all data of the volume is consistent and from which you can create a snapshot. To get a list of volume recovery point for cached volume gateway, use ListVolumeRecoveryPoints. In the CreateSnapshotFromVolumeRecoveryPoint request, you identify the volume by providing its Amazon Resource Name (ARN). You must also provide a description for the snapshot. When the gateway takes a snapshot of the specified volume, the snapshot and its description appear in the Storage Gateway console. In response, the gateway returns you a snapshot ID. You can use this snapshot ID to check the snapshot progress or later use it when you want to create a volume from a snapshot.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, see DescribeSnapshots or DeleteSnapshot in the Amazon Elastic Compute Cloud API Reference. 
     */
   def createSnapshotFromVolumeRecoveryPoint(params: CreateSnapshotFromVolumeRecoveryPointInput): Request[CreateSnapshotFromVolumeRecoveryPointOutput, AWSError] = js.native
   def createSnapshotFromVolumeRecoveryPoint(
@@ -282,12 +296,12 @@ trait StorageGateway extends Service {
   ): Request[DeleteAutomaticTapeCreationPolicyOutput, AWSError] = js.native
   
   /**
-    * Deletes the bandwidth rate limits of a gateway. You can delete either the upload and download bandwidth rate limit, or you can delete both. If you delete only one of the limits, the other limit remains unchanged. To specify which gateway to work with, use the Amazon Resource Name (ARN) of the gateway in your request. This operation is supported for the stored volume, cached volume and tape gateway types.
+    * Deletes the bandwidth rate limits of a gateway. You can delete either the upload and download bandwidth rate limit, or you can delete both. If you delete only one of the limits, the other limit remains unchanged. To specify which gateway to work with, use the Amazon Resource Name (ARN) of the gateway in your request. This operation is supported only for the stored volume, cached volume, and tape gateway types.
     */
   def deleteBandwidthRateLimit(): Request[DeleteBandwidthRateLimitOutput, AWSError] = js.native
   def deleteBandwidthRateLimit(callback: js.Function2[/* err */ AWSError, /* data */ DeleteBandwidthRateLimitOutput, Unit]): Request[DeleteBandwidthRateLimitOutput, AWSError] = js.native
   /**
-    * Deletes the bandwidth rate limits of a gateway. You can delete either the upload and download bandwidth rate limit, or you can delete both. If you delete only one of the limits, the other limit remains unchanged. To specify which gateway to work with, use the Amazon Resource Name (ARN) of the gateway in your request. This operation is supported for the stored volume, cached volume and tape gateway types.
+    * Deletes the bandwidth rate limits of a gateway. You can delete either the upload and download bandwidth rate limit, or you can delete both. If you delete only one of the limits, the other limit remains unchanged. To specify which gateway to work with, use the Amazon Resource Name (ARN) of the gateway in your request. This operation is supported only for the stored volume, cached volume, and tape gateway types.
     */
   def deleteBandwidthRateLimit(params: DeleteBandwidthRateLimitInput): Request[DeleteBandwidthRateLimitOutput, AWSError] = js.native
   def deleteBandwidthRateLimit(
@@ -310,12 +324,12 @@ trait StorageGateway extends Service {
   ): Request[DeleteChapCredentialsOutput, AWSError] = js.native
   
   /**
-    * Deletes a file share from a file gateway. This operation is only supported for file gateways.
+    * Deletes a file share from an S3 File Gateway. This operation is only supported for S3 File Gateways.
     */
   def deleteFileShare(): Request[DeleteFileShareOutput, AWSError] = js.native
   def deleteFileShare(callback: js.Function2[/* err */ AWSError, /* data */ DeleteFileShareOutput, Unit]): Request[DeleteFileShareOutput, AWSError] = js.native
   /**
-    * Deletes a file share from a file gateway. This operation is only supported for file gateways.
+    * Deletes a file share from an S3 File Gateway. This operation is only supported for S3 File Gateways.
     */
   def deleteFileShare(params: DeleteFileShareInput): Request[DeleteFileShareOutput, AWSError] = js.native
   def deleteFileShare(
@@ -324,12 +338,12 @@ trait StorageGateway extends Service {
   ): Request[DeleteFileShareOutput, AWSError] = js.native
   
   /**
-    * Deletes a gateway. To specify which gateway to delete, use the Amazon Resource Name (ARN) of the gateway in your request. The operation deletes the gateway; however, it does not delete the gateway virtual machine (VM) from your host computer. After you delete a gateway, you cannot reactivate it. Completed snapshots of the gateway volumes are not deleted upon deleting the gateway, however, pending snapshots will not complete. After you delete a gateway, your next step is to remove it from your environment.  You no longer pay software charges after the gateway is deleted; however, your existing Amazon EBS snapshots persist and you will continue to be billed for these snapshots. You can choose to remove all remaining Amazon EBS snapshots by canceling your Amazon EC2 subscription.  If you prefer not to cancel your Amazon EC2 subscription, you can delete your snapshots using the Amazon EC2 console. For more information, see the AWS Storage Gateway detail page. 
+    * Deletes a gateway. To specify which gateway to delete, use the Amazon Resource Name (ARN) of the gateway in your request. The operation deletes the gateway; however, it does not delete the gateway virtual machine (VM) from your host computer. After you delete a gateway, you cannot reactivate it. Completed snapshots of the gateway volumes are not deleted upon deleting the gateway, however, pending snapshots will not complete. After you delete a gateway, your next step is to remove it from your environment.  You no longer pay software charges after the gateway is deleted; however, your existing Amazon EBS snapshots persist and you will continue to be billed for these snapshots. You can choose to remove all remaining Amazon EBS snapshots by canceling your Amazon EC2 subscription.  If you prefer not to cancel your Amazon EC2 subscription, you can delete your snapshots using the Amazon EC2 console. For more information, see the Storage Gateway detail page. 
     */
   def deleteGateway(): Request[DeleteGatewayOutput, AWSError] = js.native
   def deleteGateway(callback: js.Function2[/* err */ AWSError, /* data */ DeleteGatewayOutput, Unit]): Request[DeleteGatewayOutput, AWSError] = js.native
   /**
-    * Deletes a gateway. To specify which gateway to delete, use the Amazon Resource Name (ARN) of the gateway in your request. The operation deletes the gateway; however, it does not delete the gateway virtual machine (VM) from your host computer. After you delete a gateway, you cannot reactivate it. Completed snapshots of the gateway volumes are not deleted upon deleting the gateway, however, pending snapshots will not complete. After you delete a gateway, your next step is to remove it from your environment.  You no longer pay software charges after the gateway is deleted; however, your existing Amazon EBS snapshots persist and you will continue to be billed for these snapshots. You can choose to remove all remaining Amazon EBS snapshots by canceling your Amazon EC2 subscription.  If you prefer not to cancel your Amazon EC2 subscription, you can delete your snapshots using the Amazon EC2 console. For more information, see the AWS Storage Gateway detail page. 
+    * Deletes a gateway. To specify which gateway to delete, use the Amazon Resource Name (ARN) of the gateway in your request. The operation deletes the gateway; however, it does not delete the gateway virtual machine (VM) from your host computer. After you delete a gateway, you cannot reactivate it. Completed snapshots of the gateway volumes are not deleted upon deleting the gateway, however, pending snapshots will not complete. After you delete a gateway, your next step is to remove it from your environment.  You no longer pay software charges after the gateway is deleted; however, your existing Amazon EBS snapshots persist and you will continue to be billed for these snapshots. You can choose to remove all remaining Amazon EBS snapshots by canceling your Amazon EC2 subscription.  If you prefer not to cancel your Amazon EC2 subscription, you can delete your snapshots using the Amazon EC2 console. For more information, see the Storage Gateway detail page. 
     */
   def deleteGateway(params: DeleteGatewayInput): Request[DeleteGatewayOutput, AWSError] = js.native
   def deleteGateway(
@@ -338,12 +352,12 @@ trait StorageGateway extends Service {
   ): Request[DeleteGatewayOutput, AWSError] = js.native
   
   /**
-    * Deletes a snapshot of a volume. You can take snapshots of your gateway volumes on a scheduled or ad hoc basis. This API action enables you to delete a snapshot schedule for a volume. For more information, see Backing up your volumes. In the DeleteSnapshotSchedule request, you identify the volume by providing its Amazon Resource Name (ARN). This operation is only supported in stored and cached volume gateway types.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, go to DescribeSnapshots in the Amazon Elastic Compute Cloud API Reference. 
+    * Deletes a snapshot of a volume. You can take snapshots of your gateway volumes on a scheduled or ad hoc basis. This API action enables you to delete a snapshot schedule for a volume. For more information, see Backing up your volumes. In the DeleteSnapshotSchedule request, you identify the volume by providing its Amazon Resource Name (ARN). This operation is only supported for cached volume gateway types.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, go to DescribeSnapshots in the Amazon Elastic Compute Cloud API Reference. 
     */
   def deleteSnapshotSchedule(): Request[DeleteSnapshotScheduleOutput, AWSError] = js.native
   def deleteSnapshotSchedule(callback: js.Function2[/* err */ AWSError, /* data */ DeleteSnapshotScheduleOutput, Unit]): Request[DeleteSnapshotScheduleOutput, AWSError] = js.native
   /**
-    * Deletes a snapshot of a volume. You can take snapshots of your gateway volumes on a scheduled or ad hoc basis. This API action enables you to delete a snapshot schedule for a volume. For more information, see Backing up your volumes. In the DeleteSnapshotSchedule request, you identify the volume by providing its Amazon Resource Name (ARN). This operation is only supported in stored and cached volume gateway types.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, go to DescribeSnapshots in the Amazon Elastic Compute Cloud API Reference. 
+    * Deletes a snapshot of a volume. You can take snapshots of your gateway volumes on a scheduled or ad hoc basis. This API action enables you to delete a snapshot schedule for a volume. For more information, see Backing up your volumes. In the DeleteSnapshotSchedule request, you identify the volume by providing its Amazon Resource Name (ARN). This operation is only supported for cached volume gateway types.  To list or delete a snapshot, you must use the Amazon EC2 API. For more information, go to DescribeSnapshots in the Amazon Elastic Compute Cloud API Reference. 
     */
   def deleteSnapshotSchedule(params: DeleteSnapshotScheduleInput): Request[DeleteSnapshotScheduleOutput, AWSError] = js.native
   def deleteSnapshotSchedule(
@@ -408,12 +422,12 @@ trait StorageGateway extends Service {
   ): Request[DeleteVolumeOutput, AWSError] = js.native
   
   /**
-    * Returns information about the most recent High Availability monitoring test that was performed on the host in a cluster. If a test isn't performed, the status and start time in the response would be null.
+    * Returns information about the most recent high availability monitoring test that was performed on the host in a cluster. If a test isn't performed, the status and start time in the response would be null.
     */
   def describeAvailabilityMonitorTest(): Request[DescribeAvailabilityMonitorTestOutput, AWSError] = js.native
   def describeAvailabilityMonitorTest(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAvailabilityMonitorTestOutput, Unit]): Request[DescribeAvailabilityMonitorTestOutput, AWSError] = js.native
   /**
-    * Returns information about the most recent High Availability monitoring test that was performed on the host in a cluster. If a test isn't performed, the status and start time in the response would be null.
+    * Returns information about the most recent high availability monitoring test that was performed on the host in a cluster. If a test isn't performed, the status and start time in the response would be null.
     */
   def describeAvailabilityMonitorTest(params: DescribeAvailabilityMonitorTestInput): Request[DescribeAvailabilityMonitorTestOutput, AWSError] = js.native
   def describeAvailabilityMonitorTest(
@@ -422,12 +436,12 @@ trait StorageGateway extends Service {
   ): Request[DescribeAvailabilityMonitorTestOutput, AWSError] = js.native
   
   /**
-    * Returns the bandwidth rate limits of a gateway. By default, these limits are not set, which means no bandwidth rate limiting is in effect. This operation is supported for the stored volume, cached volume, and tape gateway types. This operation only returns a value for a bandwidth rate limit only if the limit is set. If no limits are set for the gateway, then this operation returns only the gateway ARN in the response body. To specify which gateway to describe, use the Amazon Resource Name (ARN) of the gateway in your request.
+    * Returns the bandwidth rate limits of a gateway. By default, these limits are not set, which means no bandwidth rate limiting is in effect. This operation is supported only for the stored volume, cached volume, and tape gateway types. To describe bandwidth rate limits for S3 file gateways, use DescribeBandwidthRateLimitSchedule. This operation returns a value for a bandwidth rate limit only if the limit is set. If no limits are set for the gateway, then this operation returns only the gateway ARN in the response body. To specify which gateway to describe, use the Amazon Resource Name (ARN) of the gateway in your request.
     */
   def describeBandwidthRateLimit(): Request[DescribeBandwidthRateLimitOutput, AWSError] = js.native
   def describeBandwidthRateLimit(callback: js.Function2[/* err */ AWSError, /* data */ DescribeBandwidthRateLimitOutput, Unit]): Request[DescribeBandwidthRateLimitOutput, AWSError] = js.native
   /**
-    * Returns the bandwidth rate limits of a gateway. By default, these limits are not set, which means no bandwidth rate limiting is in effect. This operation is supported for the stored volume, cached volume, and tape gateway types. This operation only returns a value for a bandwidth rate limit only if the limit is set. If no limits are set for the gateway, then this operation returns only the gateway ARN in the response body. To specify which gateway to describe, use the Amazon Resource Name (ARN) of the gateway in your request.
+    * Returns the bandwidth rate limits of a gateway. By default, these limits are not set, which means no bandwidth rate limiting is in effect. This operation is supported only for the stored volume, cached volume, and tape gateway types. To describe bandwidth rate limits for S3 file gateways, use DescribeBandwidthRateLimitSchedule. This operation returns a value for a bandwidth rate limit only if the limit is set. If no limits are set for the gateway, then this operation returns only the gateway ARN in the response body. To specify which gateway to describe, use the Amazon Resource Name (ARN) of the gateway in your request.
     */
   def describeBandwidthRateLimit(params: DescribeBandwidthRateLimitInput): Request[DescribeBandwidthRateLimitOutput, AWSError] = js.native
   def describeBandwidthRateLimit(
@@ -436,14 +450,14 @@ trait StorageGateway extends Service {
   ): Request[DescribeBandwidthRateLimitOutput, AWSError] = js.native
   
   /**
-    *  Returns information about the bandwidth rate limit schedule of a gateway. By default, gateways do not have bandwidth rate limit schedules, which means no bandwidth rate limiting is in effect. This operation is supported only in the volume and tape gateway types.  This operation returns information about a gateway's bandwidth rate limit schedule. A bandwidth rate limit schedule consists of one or more bandwidth rate limit intervals. A bandwidth rate limit interval defines a period of time on one or more days of the week, during which bandwidth rate limits are specified for uploading, downloading, or both.   A bandwidth rate limit interval consists of one or more days of the week, a start hour and minute, an ending hour and minute, and bandwidth rate limits for uploading and downloading   If no bandwidth rate limit schedule intervals are set for the gateway, this operation returns an empty response. To specify which gateway to describe, use the Amazon Resource Name (ARN) of the gateway in your request.
+    *  Returns information about the bandwidth rate limit schedule of a gateway. By default, gateways do not have bandwidth rate limit schedules, which means no bandwidth rate limiting is in effect. This operation is supported only for volume, tape and S3 file gateways. FSx file gateways do not support bandwidth rate limits. This operation returns information about a gateway's bandwidth rate limit schedule. A bandwidth rate limit schedule consists of one or more bandwidth rate limit intervals. A bandwidth rate limit interval defines a period of time on one or more days of the week, during which bandwidth rate limits are specified for uploading, downloading, or both.   A bandwidth rate limit interval consists of one or more days of the week, a start hour and minute, an ending hour and minute, and bandwidth rate limits for uploading and downloading   If no bandwidth rate limit schedule intervals are set for the gateway, this operation returns an empty response. To specify which gateway to describe, use the Amazon Resource Name (ARN) of the gateway in your request.
     */
   def describeBandwidthRateLimitSchedule(): Request[DescribeBandwidthRateLimitScheduleOutput, AWSError] = js.native
   def describeBandwidthRateLimitSchedule(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeBandwidthRateLimitScheduleOutput, Unit]
   ): Request[DescribeBandwidthRateLimitScheduleOutput, AWSError] = js.native
   /**
-    *  Returns information about the bandwidth rate limit schedule of a gateway. By default, gateways do not have bandwidth rate limit schedules, which means no bandwidth rate limiting is in effect. This operation is supported only in the volume and tape gateway types.  This operation returns information about a gateway's bandwidth rate limit schedule. A bandwidth rate limit schedule consists of one or more bandwidth rate limit intervals. A bandwidth rate limit interval defines a period of time on one or more days of the week, during which bandwidth rate limits are specified for uploading, downloading, or both.   A bandwidth rate limit interval consists of one or more days of the week, a start hour and minute, an ending hour and minute, and bandwidth rate limits for uploading and downloading   If no bandwidth rate limit schedule intervals are set for the gateway, this operation returns an empty response. To specify which gateway to describe, use the Amazon Resource Name (ARN) of the gateway in your request.
+    *  Returns information about the bandwidth rate limit schedule of a gateway. By default, gateways do not have bandwidth rate limit schedules, which means no bandwidth rate limiting is in effect. This operation is supported only for volume, tape and S3 file gateways. FSx file gateways do not support bandwidth rate limits. This operation returns information about a gateway's bandwidth rate limit schedule. A bandwidth rate limit schedule consists of one or more bandwidth rate limit intervals. A bandwidth rate limit interval defines a period of time on one or more days of the week, during which bandwidth rate limits are specified for uploading, downloading, or both.   A bandwidth rate limit interval consists of one or more days of the week, a start hour and minute, an ending hour and minute, and bandwidth rate limits for uploading and downloading   If no bandwidth rate limit schedule intervals are set for the gateway, this operation returns an empty response. To specify which gateway to describe, use the Amazon Resource Name (ARN) of the gateway in your request.
     */
   def describeBandwidthRateLimitSchedule(params: DescribeBandwidthRateLimitScheduleInput): Request[DescribeBandwidthRateLimitScheduleOutput, AWSError] = js.native
   def describeBandwidthRateLimitSchedule(
@@ -466,12 +480,12 @@ trait StorageGateway extends Service {
   ): Request[DescribeCacheOutput, AWSError] = js.native
   
   /**
-    * Returns a description of the gateway volumes specified in the request. This operation is only supported in the cached volume gateway types. The list of gateway volumes in the request must be from one gateway. In the response, AWS Storage Gateway returns volume information sorted by volume Amazon Resource Name (ARN).
+    * Returns a description of the gateway volumes specified in the request. This operation is only supported in the cached volume gateway types. The list of gateway volumes in the request must be from one gateway. In the response, Storage Gateway returns volume information sorted by volume Amazon Resource Name (ARN).
     */
   def describeCachediSCSIVolumes(): Request[DescribeCachediSCSIVolumesOutput, AWSError] = js.native
   def describeCachediSCSIVolumes(callback: js.Function2[/* err */ AWSError, /* data */ DescribeCachediSCSIVolumesOutput, Unit]): Request[DescribeCachediSCSIVolumesOutput, AWSError] = js.native
   /**
-    * Returns a description of the gateway volumes specified in the request. This operation is only supported in the cached volume gateway types. The list of gateway volumes in the request must be from one gateway. In the response, AWS Storage Gateway returns volume information sorted by volume Amazon Resource Name (ARN).
+    * Returns a description of the gateway volumes specified in the request. This operation is only supported in the cached volume gateway types. The list of gateway volumes in the request must be from one gateway. In the response, Storage Gateway returns volume information sorted by volume Amazon Resource Name (ARN).
     */
   def describeCachediSCSIVolumes(params: DescribeCachediSCSIVolumesInput): Request[DescribeCachediSCSIVolumesOutput, AWSError] = js.native
   def describeCachediSCSIVolumes(
@@ -492,6 +506,20 @@ trait StorageGateway extends Service {
     params: DescribeChapCredentialsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeChapCredentialsOutput, Unit]
   ): Request[DescribeChapCredentialsOutput, AWSError] = js.native
+  
+  /**
+    * Gets the file system association information. This operation is only supported for FSx File Gateways.
+    */
+  def describeFileSystemAssociations(): Request[DescribeFileSystemAssociationsOutput, AWSError] = js.native
+  def describeFileSystemAssociations(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFileSystemAssociationsOutput, Unit]): Request[DescribeFileSystemAssociationsOutput, AWSError] = js.native
+  /**
+    * Gets the file system association information. This operation is only supported for FSx File Gateways.
+    */
+  def describeFileSystemAssociations(params: DescribeFileSystemAssociationsInput): Request[DescribeFileSystemAssociationsOutput, AWSError] = js.native
+  def describeFileSystemAssociations(
+    params: DescribeFileSystemAssociationsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFileSystemAssociationsOutput, Unit]
+  ): Request[DescribeFileSystemAssociationsOutput, AWSError] = js.native
   
   /**
     * Returns metadata about a gateway such as its name, network interfaces, configured time zone, and the state (whether the gateway is running or not). To specify which gateway to describe, use the Amazon Resource Name (ARN) of the gateway in your request.
@@ -522,12 +550,12 @@ trait StorageGateway extends Service {
   ): Request[DescribeMaintenanceStartTimeOutput, AWSError] = js.native
   
   /**
-    * Gets a description for one or more Network File System (NFS) file shares from a file gateway. This operation is only supported for file gateways.
+    * Gets a description for one or more Network File System (NFS) file shares from an S3 File Gateway. This operation is only supported for S3 File Gateways.
     */
   def describeNFSFileShares(): Request[DescribeNFSFileSharesOutput, AWSError] = js.native
   def describeNFSFileShares(callback: js.Function2[/* err */ AWSError, /* data */ DescribeNFSFileSharesOutput, Unit]): Request[DescribeNFSFileSharesOutput, AWSError] = js.native
   /**
-    * Gets a description for one or more Network File System (NFS) file shares from a file gateway. This operation is only supported for file gateways.
+    * Gets a description for one or more Network File System (NFS) file shares from an S3 File Gateway. This operation is only supported for S3 File Gateways.
     */
   def describeNFSFileShares(params: DescribeNFSFileSharesInput): Request[DescribeNFSFileSharesOutput, AWSError] = js.native
   def describeNFSFileShares(
@@ -536,12 +564,12 @@ trait StorageGateway extends Service {
   ): Request[DescribeNFSFileSharesOutput, AWSError] = js.native
   
   /**
-    * Gets a description for one or more Server Message Block (SMB) file shares from a file gateway. This operation is only supported for file gateways.
+    * Gets a description for one or more Server Message Block (SMB) file shares from a S3 File Gateway. This operation is only supported for S3 File Gateways.
     */
   def describeSMBFileShares(): Request[DescribeSMBFileSharesOutput, AWSError] = js.native
   def describeSMBFileShares(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSMBFileSharesOutput, Unit]): Request[DescribeSMBFileSharesOutput, AWSError] = js.native
   /**
-    * Gets a description for one or more Server Message Block (SMB) file shares from a file gateway. This operation is only supported for file gateways.
+    * Gets a description for one or more Server Message Block (SMB) file shares from a S3 File Gateway. This operation is only supported for S3 File Gateways.
     */
   def describeSMBFileShares(params: DescribeSMBFileSharesInput): Request[DescribeSMBFileSharesOutput, AWSError] = js.native
   def describeSMBFileShares(
@@ -578,12 +606,12 @@ trait StorageGateway extends Service {
   ): Request[DescribeSnapshotScheduleOutput, AWSError] = js.native
   
   /**
-    * Returns the description of the gateway volumes specified in the request. The list of gateway volumes in the request must be from one gateway. In the response, AWS Storage Gateway returns volume information sorted by volume ARNs. This operation is only supported in stored volume gateway type.
+    * Returns the description of the gateway volumes specified in the request. The list of gateway volumes in the request must be from one gateway. In the response, Storage Gateway returns volume information sorted by volume ARNs. This operation is only supported in stored volume gateway type.
     */
   def describeStorediSCSIVolumes(): Request[DescribeStorediSCSIVolumesOutput, AWSError] = js.native
   def describeStorediSCSIVolumes(callback: js.Function2[/* err */ AWSError, /* data */ DescribeStorediSCSIVolumesOutput, Unit]): Request[DescribeStorediSCSIVolumesOutput, AWSError] = js.native
   /**
-    * Returns the description of the gateway volumes specified in the request. The list of gateway volumes in the request must be from one gateway. In the response, AWS Storage Gateway returns volume information sorted by volume ARNs. This operation is only supported in stored volume gateway type.
+    * Returns the description of the gateway volumes specified in the request. The list of gateway volumes in the request must be from one gateway. In the response, Storage Gateway returns volume information sorted by volume ARNs. This operation is only supported in stored volume gateway type.
     */
   def describeStorediSCSIVolumes(params: DescribeStorediSCSIVolumesInput): Request[DescribeStorediSCSIVolumesOutput, AWSError] = js.native
   def describeStorediSCSIVolumes(
@@ -592,12 +620,12 @@ trait StorageGateway extends Service {
   ): Request[DescribeStorediSCSIVolumesOutput, AWSError] = js.native
   
   /**
-    * Returns a description of specified virtual tapes in the virtual tape shelf (VTS). This operation is only supported in the tape gateway type. If a specific TapeARN is not specified, AWS Storage Gateway returns a description of all virtual tapes found in the VTS associated with your account.
+    * Returns a description of specified virtual tapes in the virtual tape shelf (VTS). This operation is only supported in the tape gateway type. If a specific TapeARN is not specified, Storage Gateway returns a description of all virtual tapes found in the VTS associated with your account.
     */
   def describeTapeArchives(): Request[DescribeTapeArchivesOutput, AWSError] = js.native
   def describeTapeArchives(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTapeArchivesOutput, Unit]): Request[DescribeTapeArchivesOutput, AWSError] = js.native
   /**
-    * Returns a description of specified virtual tapes in the virtual tape shelf (VTS). This operation is only supported in the tape gateway type. If a specific TapeARN is not specified, AWS Storage Gateway returns a description of all virtual tapes found in the VTS associated with your account.
+    * Returns a description of specified virtual tapes in the virtual tape shelf (VTS). This operation is only supported in the tape gateway type. If a specific TapeARN is not specified, Storage Gateway returns a description of all virtual tapes found in the VTS associated with your account.
     */
   def describeTapeArchives(params: DescribeTapeArchivesInput): Request[DescribeTapeArchivesOutput, AWSError] = js.native
   def describeTapeArchives(
@@ -648,12 +676,12 @@ trait StorageGateway extends Service {
   ): Request[DescribeUploadBufferOutput, AWSError] = js.native
   
   /**
-    * Returns a description of virtual tape library (VTL) devices for the specified tape gateway. In the response, AWS Storage Gateway returns VTL device information. This operation is only supported in the tape gateway type.
+    * Returns a description of virtual tape library (VTL) devices for the specified tape gateway. In the response, Storage Gateway returns VTL device information. This operation is only supported in the tape gateway type.
     */
   def describeVTLDevices(): Request[DescribeVTLDevicesOutput, AWSError] = js.native
   def describeVTLDevices(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVTLDevicesOutput, Unit]): Request[DescribeVTLDevicesOutput, AWSError] = js.native
   /**
-    * Returns a description of virtual tape library (VTL) devices for the specified tape gateway. In the response, AWS Storage Gateway returns VTL device information. This operation is only supported in the tape gateway type.
+    * Returns a description of virtual tape library (VTL) devices for the specified tape gateway. In the response, Storage Gateway returns VTL device information. This operation is only supported in the tape gateway type.
     */
   def describeVTLDevices(params: DescribeVTLDevicesInput): Request[DescribeVTLDevicesOutput, AWSError] = js.native
   def describeVTLDevices(
@@ -704,6 +732,20 @@ trait StorageGateway extends Service {
   ): Request[DisableGatewayOutput, AWSError] = js.native
   
   /**
+    * Disassociates an Amazon FSx file system from the specified gateway. After the disassociation process finishes, the gateway can no longer access the Amazon FSx file system. This operation is only supported in the FSx File Gateway type.
+    */
+  def disassociateFileSystem(): Request[DisassociateFileSystemOutput, AWSError] = js.native
+  def disassociateFileSystem(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateFileSystemOutput, Unit]): Request[DisassociateFileSystemOutput, AWSError] = js.native
+  /**
+    * Disassociates an Amazon FSx file system from the specified gateway. After the disassociation process finishes, the gateway can no longer access the Amazon FSx file system. This operation is only supported in the FSx File Gateway type.
+    */
+  def disassociateFileSystem(params: DisassociateFileSystemInput): Request[DisassociateFileSystemOutput, AWSError] = js.native
+  def disassociateFileSystem(
+    params: DisassociateFileSystemInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateFileSystemOutput, Unit]
+  ): Request[DisassociateFileSystemOutput, AWSError] = js.native
+  
+  /**
     * Adds a file gateway to an Active Directory domain. This operation is only supported for file gateways that support the SMB file protocol.
     */
   def joinDomain(): Request[JoinDomainOutput, AWSError] = js.native
@@ -734,12 +776,12 @@ trait StorageGateway extends Service {
   ): Request[ListAutomaticTapeCreationPoliciesOutput, AWSError] = js.native
   
   /**
-    * Gets a list of the file shares for a specific file gateway, or the list of file shares that belong to the calling user account. This operation is only supported for file gateways.
+    * Gets a list of the file shares for a specific S3 File Gateway, or the list of file shares that belong to the calling user account. This operation is only supported for S3 File Gateways.
     */
   def listFileShares(): Request[ListFileSharesOutput, AWSError] = js.native
   def listFileShares(callback: js.Function2[/* err */ AWSError, /* data */ ListFileSharesOutput, Unit]): Request[ListFileSharesOutput, AWSError] = js.native
   /**
-    * Gets a list of the file shares for a specific file gateway, or the list of file shares that belong to the calling user account. This operation is only supported for file gateways.
+    * Gets a list of the file shares for a specific S3 File Gateway, or the list of file shares that belong to the calling user account. This operation is only supported for S3 File Gateways.
     */
   def listFileShares(params: ListFileSharesInput): Request[ListFileSharesOutput, AWSError] = js.native
   def listFileShares(
@@ -748,12 +790,26 @@ trait StorageGateway extends Service {
   ): Request[ListFileSharesOutput, AWSError] = js.native
   
   /**
-    * Lists gateways owned by an AWS account in an AWS Region specified in the request. The returned list is ordered by gateway Amazon Resource Name (ARN). By default, the operation returns a maximum of 100 gateways. This operation supports pagination that allows you to optionally reduce the number of gateways returned in a response. If you have more gateways than are returned in a response (that is, the response returns only a truncated list of your gateways), the response contains a marker that you can specify in your next request to fetch the next page of gateways.
+    * Gets a list of FileSystemAssociationSummary objects. Each object contains a summary of a file system association. This operation is only supported for FSx File Gateways.
+    */
+  def listFileSystemAssociations(): Request[ListFileSystemAssociationsOutput, AWSError] = js.native
+  def listFileSystemAssociations(callback: js.Function2[/* err */ AWSError, /* data */ ListFileSystemAssociationsOutput, Unit]): Request[ListFileSystemAssociationsOutput, AWSError] = js.native
+  /**
+    * Gets a list of FileSystemAssociationSummary objects. Each object contains a summary of a file system association. This operation is only supported for FSx File Gateways.
+    */
+  def listFileSystemAssociations(params: ListFileSystemAssociationsInput): Request[ListFileSystemAssociationsOutput, AWSError] = js.native
+  def listFileSystemAssociations(
+    params: ListFileSystemAssociationsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListFileSystemAssociationsOutput, Unit]
+  ): Request[ListFileSystemAssociationsOutput, AWSError] = js.native
+  
+  /**
+    * Lists gateways owned by an Amazon Web Services account in an Amazon Web Services Region specified in the request. The returned list is ordered by gateway Amazon Resource Name (ARN). By default, the operation returns a maximum of 100 gateways. This operation supports pagination that allows you to optionally reduce the number of gateways returned in a response. If you have more gateways than are returned in a response (that is, the response returns only a truncated list of your gateways), the response contains a marker that you can specify in your next request to fetch the next page of gateways.
     */
   def listGateways(): Request[ListGatewaysOutput, AWSError] = js.native
   def listGateways(callback: js.Function2[/* err */ AWSError, /* data */ ListGatewaysOutput, Unit]): Request[ListGatewaysOutput, AWSError] = js.native
   /**
-    * Lists gateways owned by an AWS account in an AWS Region specified in the request. The returned list is ordered by gateway Amazon Resource Name (ARN). By default, the operation returns a maximum of 100 gateways. This operation supports pagination that allows you to optionally reduce the number of gateways returned in a response. If you have more gateways than are returned in a response (that is, the response returns only a truncated list of your gateways), the response contains a marker that you can specify in your next request to fetch the next page of gateways.
+    * Lists gateways owned by an Amazon Web Services account in an Amazon Web Services Region specified in the request. The returned list is ordered by gateway Amazon Resource Name (ARN). By default, the operation returns a maximum of 100 gateways. This operation supports pagination that allows you to optionally reduce the number of gateways returned in a response. If you have more gateways than are returned in a response (that is, the response returns only a truncated list of your gateways), the response contains a marker that you can specify in your next request to fetch the next page of gateways.
     */
   def listGateways(params: ListGatewaysInput): Request[ListGatewaysOutput, AWSError] = js.native
   def listGateways(
@@ -860,12 +916,12 @@ trait StorageGateway extends Service {
   ): Request[ListVolumesOutput, AWSError] = js.native
   
   /**
-    * Sends you notification through CloudWatch Events when all files written to your file share have been uploaded to Amazon S3. AWS Storage Gateway can send a notification through Amazon CloudWatch Events when all files written to your file share up to that point in time have been uploaded to Amazon S3. These files include files written to the file share up to the time that you make a request for notification. When the upload is done, Storage Gateway sends you notification through an Amazon CloudWatch Event. You can configure CloudWatch Events to send the notification through event targets such as Amazon SNS or AWS Lambda function. This operation is only supported for file gateways. For more information, see Getting file upload notification in the AWS Storage Gateway User Guide.
+    * Sends you notification through CloudWatch Events when all files written to your file share have been uploaded to S3. Amazon S3. Storage Gateway can send a notification through Amazon CloudWatch Events when all files written to your file share up to that point in time have been uploaded to Amazon S3. These files include files written to the file share up to the time that you make a request for notification. When the upload is done, Storage Gateway sends you notification through an Amazon CloudWatch Event. You can configure CloudWatch Events to send the notification through event targets such as Amazon SNS or Lambda function. This operation is only supported for S3 File Gateways. For more information, see Getting file upload notification in the Storage Gateway User Guide.
     */
   def notifyWhenUploaded(): Request[NotifyWhenUploadedOutput, AWSError] = js.native
   def notifyWhenUploaded(callback: js.Function2[/* err */ AWSError, /* data */ NotifyWhenUploadedOutput, Unit]): Request[NotifyWhenUploadedOutput, AWSError] = js.native
   /**
-    * Sends you notification through CloudWatch Events when all files written to your file share have been uploaded to Amazon S3. AWS Storage Gateway can send a notification through Amazon CloudWatch Events when all files written to your file share up to that point in time have been uploaded to Amazon S3. These files include files written to the file share up to the time that you make a request for notification. When the upload is done, Storage Gateway sends you notification through an Amazon CloudWatch Event. You can configure CloudWatch Events to send the notification through event targets such as Amazon SNS or AWS Lambda function. This operation is only supported for file gateways. For more information, see Getting file upload notification in the AWS Storage Gateway User Guide.
+    * Sends you notification through CloudWatch Events when all files written to your file share have been uploaded to S3. Amazon S3. Storage Gateway can send a notification through Amazon CloudWatch Events when all files written to your file share up to that point in time have been uploaded to Amazon S3. These files include files written to the file share up to the time that you make a request for notification. When the upload is done, Storage Gateway sends you notification through an Amazon CloudWatch Event. You can configure CloudWatch Events to send the notification through event targets such as Amazon SNS or Lambda function. This operation is only supported for S3 File Gateways. For more information, see Getting file upload notification in the Storage Gateway User Guide.
     */
   def notifyWhenUploaded(params: NotifyWhenUploadedInput): Request[NotifyWhenUploadedOutput, AWSError] = js.native
   def notifyWhenUploaded(
@@ -874,12 +930,12 @@ trait StorageGateway extends Service {
   ): Request[NotifyWhenUploadedOutput, AWSError] = js.native
   
   /**
-    * Refreshes the cache for the specified file share. This operation finds objects in the Amazon S3 bucket that were added, removed, or replaced since the gateway last listed the bucket's contents and cached the results. This operation is only supported in the file gateway type. You can subscribe to be notified through an Amazon CloudWatch event when your RefreshCache operation completes. For more information, see Getting notified about file operations in the AWS Storage Gateway User Guide. When this API is called, it only initiates the refresh operation. When the API call completes and returns a success code, it doesn't necessarily mean that the file refresh has completed. You should use the refresh-complete notification to determine that the operation has completed before you check for new files on the gateway file share. You can subscribe to be notified through an CloudWatch event when your RefreshCache operation completes. Throttle limit: This API is asynchronous so the gateway will accept no more than two refreshes at any time. We recommend using the refresh-complete CloudWatch event notification before issuing additional requests. For more information, see Getting notified about file operations in the AWS Storage Gateway User Guide. If you invoke the RefreshCache API when two requests are already being processed, any new request will cause an InvalidGatewayRequestException error because too many requests were sent to the server. For more information, see Getting notified about file operations in the AWS Storage Gateway User Guide.
+    * Refreshes the cached inventory of objects for the specified file share. This operation finds objects in the Amazon S3 bucket that were added, removed, or replaced since the gateway last listed the bucket's contents and cached the results. This operation does not import files into the S3 File Gateway cache storage. It only updates the cached inventory to reflect changes in the inventory of the objects in the S3 bucket. This operation is only supported in the S3 File Gateway types. You can subscribe to be notified through an Amazon CloudWatch event when your RefreshCache operation completes. For more information, see Getting notified about file operations in the Storage Gateway User Guide. This operation is Only supported for S3 File Gateways. When this API is called, it only initiates the refresh operation. When the API call completes and returns a success code, it doesn't necessarily mean that the file refresh has completed. You should use the refresh-complete notification to determine that the operation has completed before you check for new files on the gateway file share. You can subscribe to be notified through a CloudWatch event when your RefreshCache operation completes. Throttle limit: This API is asynchronous, so the gateway will accept no more than two refreshes at any time. We recommend using the refresh-complete CloudWatch event notification before issuing additional requests. For more information, see Getting notified about file operations in the Storage Gateway User Guide.    Wait at least 60 seconds between consecutive RefreshCache API requests.   RefreshCache does not evict cache entries if invoked consecutively within 60 seconds of a previous RefreshCache request.   If you invoke the RefreshCache API when two requests are already being processed, any new request will cause an InvalidGatewayRequestException error because too many requests were sent to the server.     The S3 bucket name does not need to be included when entering the list of folders in the FolderList parameter.  For more information, see Getting notified about file operations in the Storage Gateway User Guide.
     */
   def refreshCache(): Request[RefreshCacheOutput, AWSError] = js.native
   def refreshCache(callback: js.Function2[/* err */ AWSError, /* data */ RefreshCacheOutput, Unit]): Request[RefreshCacheOutput, AWSError] = js.native
   /**
-    * Refreshes the cache for the specified file share. This operation finds objects in the Amazon S3 bucket that were added, removed, or replaced since the gateway last listed the bucket's contents and cached the results. This operation is only supported in the file gateway type. You can subscribe to be notified through an Amazon CloudWatch event when your RefreshCache operation completes. For more information, see Getting notified about file operations in the AWS Storage Gateway User Guide. When this API is called, it only initiates the refresh operation. When the API call completes and returns a success code, it doesn't necessarily mean that the file refresh has completed. You should use the refresh-complete notification to determine that the operation has completed before you check for new files on the gateway file share. You can subscribe to be notified through an CloudWatch event when your RefreshCache operation completes. Throttle limit: This API is asynchronous so the gateway will accept no more than two refreshes at any time. We recommend using the refresh-complete CloudWatch event notification before issuing additional requests. For more information, see Getting notified about file operations in the AWS Storage Gateway User Guide. If you invoke the RefreshCache API when two requests are already being processed, any new request will cause an InvalidGatewayRequestException error because too many requests were sent to the server. For more information, see Getting notified about file operations in the AWS Storage Gateway User Guide.
+    * Refreshes the cached inventory of objects for the specified file share. This operation finds objects in the Amazon S3 bucket that were added, removed, or replaced since the gateway last listed the bucket's contents and cached the results. This operation does not import files into the S3 File Gateway cache storage. It only updates the cached inventory to reflect changes in the inventory of the objects in the S3 bucket. This operation is only supported in the S3 File Gateway types. You can subscribe to be notified through an Amazon CloudWatch event when your RefreshCache operation completes. For more information, see Getting notified about file operations in the Storage Gateway User Guide. This operation is Only supported for S3 File Gateways. When this API is called, it only initiates the refresh operation. When the API call completes and returns a success code, it doesn't necessarily mean that the file refresh has completed. You should use the refresh-complete notification to determine that the operation has completed before you check for new files on the gateway file share. You can subscribe to be notified through a CloudWatch event when your RefreshCache operation completes. Throttle limit: This API is asynchronous, so the gateway will accept no more than two refreshes at any time. We recommend using the refresh-complete CloudWatch event notification before issuing additional requests. For more information, see Getting notified about file operations in the Storage Gateway User Guide.    Wait at least 60 seconds between consecutive RefreshCache API requests.   RefreshCache does not evict cache entries if invoked consecutively within 60 seconds of a previous RefreshCache request.   If you invoke the RefreshCache API when two requests are already being processed, any new request will cause an InvalidGatewayRequestException error because too many requests were sent to the server.     The S3 bucket name does not need to be included when entering the list of folders in the FolderList parameter.  For more information, see Getting notified about file operations in the Storage Gateway User Guide.
     */
   def refreshCache(params: RefreshCacheInput): Request[RefreshCacheOutput, AWSError] = js.native
   def refreshCache(
@@ -958,12 +1014,12 @@ trait StorageGateway extends Service {
   ): Request[SetLocalConsolePasswordOutput, AWSError] = js.native
   
   /**
-    * Sets the password for the guest user smbguest. The smbguest user is the user when the authentication method for the file share is set to GuestAccess.
+    * Sets the password for the guest user smbguest. The smbguest user is the user when the authentication method for the file share is set to GuestAccess. This operation only supported for S3 File Gateways
     */
   def setSMBGuestPassword(): Request[SetSMBGuestPasswordOutput, AWSError] = js.native
   def setSMBGuestPassword(callback: js.Function2[/* err */ AWSError, /* data */ SetSMBGuestPasswordOutput, Unit]): Request[SetSMBGuestPasswordOutput, AWSError] = js.native
   /**
-    * Sets the password for the guest user smbguest. The smbguest user is the user when the authentication method for the file share is set to GuestAccess.
+    * Sets the password for the guest user smbguest. The smbguest user is the user when the authentication method for the file share is set to GuestAccess. This operation only supported for S3 File Gateways
     */
   def setSMBGuestPassword(params: SetSMBGuestPasswordInput): Request[SetSMBGuestPasswordOutput, AWSError] = js.native
   def setSMBGuestPassword(
@@ -1030,12 +1086,12 @@ trait StorageGateway extends Service {
   ): Request[UpdateAutomaticTapeCreationPolicyOutput, AWSError] = js.native
   
   /**
-    * Updates the bandwidth rate limits of a gateway. You can update both the upload and download bandwidth rate limit or specify only one of the two. If you don't set a bandwidth rate limit, the existing rate limit remains. This operation is supported for the stored volume, cached volume, and tape gateway types. By default, a gateway's bandwidth rate limits are not set. If you don't set any limit, the gateway does not have any limitations on its bandwidth usage and could potentially use the maximum available bandwidth. To specify which gateway to update, use the Amazon Resource Name (ARN) of the gateway in your request.
+    * Updates the bandwidth rate limits of a gateway. You can update both the upload and download bandwidth rate limit or specify only one of the two. If you don't set a bandwidth rate limit, the existing rate limit remains. This operation is supported only for the stored volume, cached volume, and tape gateway types. To update bandwidth rate limits for S3 file gateways, use UpdateBandwidthRateLimitSchedule. By default, a gateway's bandwidth rate limits are not set. If you don't set any limit, the gateway does not have any limitations on its bandwidth usage and could potentially use the maximum available bandwidth. To specify which gateway to update, use the Amazon Resource Name (ARN) of the gateway in your request.
     */
   def updateBandwidthRateLimit(): Request[UpdateBandwidthRateLimitOutput, AWSError] = js.native
   def updateBandwidthRateLimit(callback: js.Function2[/* err */ AWSError, /* data */ UpdateBandwidthRateLimitOutput, Unit]): Request[UpdateBandwidthRateLimitOutput, AWSError] = js.native
   /**
-    * Updates the bandwidth rate limits of a gateway. You can update both the upload and download bandwidth rate limit or specify only one of the two. If you don't set a bandwidth rate limit, the existing rate limit remains. This operation is supported for the stored volume, cached volume, and tape gateway types. By default, a gateway's bandwidth rate limits are not set. If you don't set any limit, the gateway does not have any limitations on its bandwidth usage and could potentially use the maximum available bandwidth. To specify which gateway to update, use the Amazon Resource Name (ARN) of the gateway in your request.
+    * Updates the bandwidth rate limits of a gateway. You can update both the upload and download bandwidth rate limit or specify only one of the two. If you don't set a bandwidth rate limit, the existing rate limit remains. This operation is supported only for the stored volume, cached volume, and tape gateway types. To update bandwidth rate limits for S3 file gateways, use UpdateBandwidthRateLimitSchedule. By default, a gateway's bandwidth rate limits are not set. If you don't set any limit, the gateway does not have any limitations on its bandwidth usage and could potentially use the maximum available bandwidth. To specify which gateway to update, use the Amazon Resource Name (ARN) of the gateway in your request.
     */
   def updateBandwidthRateLimit(params: UpdateBandwidthRateLimitInput): Request[UpdateBandwidthRateLimitOutput, AWSError] = js.native
   def updateBandwidthRateLimit(
@@ -1044,14 +1100,14 @@ trait StorageGateway extends Service {
   ): Request[UpdateBandwidthRateLimitOutput, AWSError] = js.native
   
   /**
-    *  Updates the bandwidth rate limit schedule for a specified gateway. By default, gateways do not have bandwidth rate limit schedules, which means no bandwidth rate limiting is in effect. Use this to initiate or update a gateway's bandwidth rate limit schedule. This operation is supported in the volume and tape gateway types. 
+    *  Updates the bandwidth rate limit schedule for a specified gateway. By default, gateways do not have bandwidth rate limit schedules, which means no bandwidth rate limiting is in effect. Use this to initiate or update a gateway's bandwidth rate limit schedule. This operation is supported only for volume, tape and S3 file gateways. FSx file gateways do not support bandwidth rate limits.
     */
   def updateBandwidthRateLimitSchedule(): Request[UpdateBandwidthRateLimitScheduleOutput, AWSError] = js.native
   def updateBandwidthRateLimitSchedule(
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateBandwidthRateLimitScheduleOutput, Unit]
   ): Request[UpdateBandwidthRateLimitScheduleOutput, AWSError] = js.native
   /**
-    *  Updates the bandwidth rate limit schedule for a specified gateway. By default, gateways do not have bandwidth rate limit schedules, which means no bandwidth rate limiting is in effect. Use this to initiate or update a gateway's bandwidth rate limit schedule. This operation is supported in the volume and tape gateway types. 
+    *  Updates the bandwidth rate limit schedule for a specified gateway. By default, gateways do not have bandwidth rate limit schedules, which means no bandwidth rate limiting is in effect. Use this to initiate or update a gateway's bandwidth rate limit schedule. This operation is supported only for volume, tape and S3 file gateways. FSx file gateways do not support bandwidth rate limits.
     */
   def updateBandwidthRateLimitSchedule(params: UpdateBandwidthRateLimitScheduleInput): Request[UpdateBandwidthRateLimitScheduleOutput, AWSError] = js.native
   def updateBandwidthRateLimitSchedule(
@@ -1072,6 +1128,20 @@ trait StorageGateway extends Service {
     params: UpdateChapCredentialsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateChapCredentialsOutput, Unit]
   ): Request[UpdateChapCredentialsOutput, AWSError] = js.native
+  
+  /**
+    * Updates a file system association. This operation is only supported in the FSx File Gateways.
+    */
+  def updateFileSystemAssociation(): Request[UpdateFileSystemAssociationOutput, AWSError] = js.native
+  def updateFileSystemAssociation(callback: js.Function2[/* err */ AWSError, /* data */ UpdateFileSystemAssociationOutput, Unit]): Request[UpdateFileSystemAssociationOutput, AWSError] = js.native
+  /**
+    * Updates a file system association. This operation is only supported in the FSx File Gateways.
+    */
+  def updateFileSystemAssociation(params: UpdateFileSystemAssociationInput): Request[UpdateFileSystemAssociationOutput, AWSError] = js.native
+  def updateFileSystemAssociation(
+    params: UpdateFileSystemAssociationInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateFileSystemAssociationOutput, Unit]
+  ): Request[UpdateFileSystemAssociationOutput, AWSError] = js.native
   
   /**
     * Updates a gateway's metadata, which includes the gateway's name and time zone. To specify which gateway to update, use the Amazon Resource Name (ARN) of the gateway in your request.  For gateways activated after September 2, 2015, the gateway's ARN contains the gateway ID rather than the gateway name. However, changing the name of the gateway has no effect on the gateway's ARN. 
@@ -1116,12 +1186,12 @@ trait StorageGateway extends Service {
   ): Request[UpdateMaintenanceStartTimeOutput, AWSError] = js.native
   
   /**
-    * Updates a Network File System (NFS) file share. This operation is only supported in the file gateway type.  To leave a file share field unchanged, set the corresponding input field to null.  Updates the following file share settings:   Default storage class for your S3 bucket   Metadata defaults for your S3 bucket   Allowed NFS clients for your file share   Squash settings   Write status of your file share  
+    * Updates a Network File System (NFS) file share. This operation is only supported in S3 File Gateways.  To leave a file share field unchanged, set the corresponding input field to null.  Updates the following file share settings:   Default storage class for your S3 bucket   Metadata defaults for your S3 bucket   Allowed NFS clients for your file share   Squash settings   Write status of your file share  
     */
   def updateNFSFileShare(): Request[UpdateNFSFileShareOutput, AWSError] = js.native
   def updateNFSFileShare(callback: js.Function2[/* err */ AWSError, /* data */ UpdateNFSFileShareOutput, Unit]): Request[UpdateNFSFileShareOutput, AWSError] = js.native
   /**
-    * Updates a Network File System (NFS) file share. This operation is only supported in the file gateway type.  To leave a file share field unchanged, set the corresponding input field to null.  Updates the following file share settings:   Default storage class for your S3 bucket   Metadata defaults for your S3 bucket   Allowed NFS clients for your file share   Squash settings   Write status of your file share  
+    * Updates a Network File System (NFS) file share. This operation is only supported in S3 File Gateways.  To leave a file share field unchanged, set the corresponding input field to null.  Updates the following file share settings:   Default storage class for your S3 bucket   Metadata defaults for your S3 bucket   Allowed NFS clients for your file share   Squash settings   Write status of your file share  
     */
   def updateNFSFileShare(params: UpdateNFSFileShareInput): Request[UpdateNFSFileShareOutput, AWSError] = js.native
   def updateNFSFileShare(
@@ -1130,12 +1200,12 @@ trait StorageGateway extends Service {
   ): Request[UpdateNFSFileShareOutput, AWSError] = js.native
   
   /**
-    * Updates a Server Message Block (SMB) file share. This operation is only supported for file gateways.  To leave a file share field unchanged, set the corresponding input field to null.   File gateways require AWS Security Token Service (AWS STS) to be activated to enable you to create a file share. Make sure that AWS STS is activated in the AWS Region you are creating your file gateway in. If AWS STS is not activated in this AWS Region, activate it. For information about how to activate AWS STS, see Activating and deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide. File gateways don't support creating hard or symbolic links on a file share. 
+    * Updates a Server Message Block (SMB) file share. This operation is only supported for S3 File Gateways.  To leave a file share field unchanged, set the corresponding input field to null.   File gateways require Security Token Service (Amazon Web Services STS) to be activated to enable you to create a file share. Make sure that Amazon Web Services STS is activated in the Amazon Web Services Region you are creating your file gateway in. If Amazon Web Services STS is not activated in this Amazon Web Services Region, activate it. For information about how to activate Amazon Web Services STS, see Activating and deactivating Amazon Web Services STS in an Amazon Web Services Region in the Identity and Access Management User Guide. File gateways don't support creating hard or symbolic links on a file share. 
     */
   def updateSMBFileShare(): Request[UpdateSMBFileShareOutput, AWSError] = js.native
   def updateSMBFileShare(callback: js.Function2[/* err */ AWSError, /* data */ UpdateSMBFileShareOutput, Unit]): Request[UpdateSMBFileShareOutput, AWSError] = js.native
   /**
-    * Updates a Server Message Block (SMB) file share. This operation is only supported for file gateways.  To leave a file share field unchanged, set the corresponding input field to null.   File gateways require AWS Security Token Service (AWS STS) to be activated to enable you to create a file share. Make sure that AWS STS is activated in the AWS Region you are creating your file gateway in. If AWS STS is not activated in this AWS Region, activate it. For information about how to activate AWS STS, see Activating and deactivating AWS STS in an AWS Region in the AWS Identity and Access Management User Guide. File gateways don't support creating hard or symbolic links on a file share. 
+    * Updates a Server Message Block (SMB) file share. This operation is only supported for S3 File Gateways.  To leave a file share field unchanged, set the corresponding input field to null.   File gateways require Security Token Service (Amazon Web Services STS) to be activated to enable you to create a file share. Make sure that Amazon Web Services STS is activated in the Amazon Web Services Region you are creating your file gateway in. If Amazon Web Services STS is not activated in this Amazon Web Services Region, activate it. For information about how to activate Amazon Web Services STS, see Activating and deactivating Amazon Web Services STS in an Amazon Web Services Region in the Identity and Access Management User Guide. File gateways don't support creating hard or symbolic links on a file share. 
     */
   def updateSMBFileShare(params: UpdateSMBFileShareInput): Request[UpdateSMBFileShareOutput, AWSError] = js.native
   def updateSMBFileShare(
@@ -1144,18 +1214,32 @@ trait StorageGateway extends Service {
   ): Request[UpdateSMBFileShareOutput, AWSError] = js.native
   
   /**
-    * Controls whether the shares on a gateway are visible in a net view or browse list.
+    * Controls whether the shares on an S3 File Gateway are visible in a net view or browse list. The operation is only supported for S3 File Gateways.
     */
   def updateSMBFileShareVisibility(): Request[UpdateSMBFileShareVisibilityOutput, AWSError] = js.native
   def updateSMBFileShareVisibility(callback: js.Function2[/* err */ AWSError, /* data */ UpdateSMBFileShareVisibilityOutput, Unit]): Request[UpdateSMBFileShareVisibilityOutput, AWSError] = js.native
   /**
-    * Controls whether the shares on a gateway are visible in a net view or browse list.
+    * Controls whether the shares on an S3 File Gateway are visible in a net view or browse list. The operation is only supported for S3 File Gateways.
     */
   def updateSMBFileShareVisibility(params: UpdateSMBFileShareVisibilityInput): Request[UpdateSMBFileShareVisibilityOutput, AWSError] = js.native
   def updateSMBFileShareVisibility(
     params: UpdateSMBFileShareVisibilityInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateSMBFileShareVisibilityOutput, Unit]
   ): Request[UpdateSMBFileShareVisibilityOutput, AWSError] = js.native
+  
+  /**
+    * Updates the list of Active Directory users and groups that have special permissions for SMB file shares on the gateway.
+    */
+  def updateSMBLocalGroups(): Request[UpdateSMBLocalGroupsOutput, AWSError] = js.native
+  def updateSMBLocalGroups(callback: js.Function2[/* err */ AWSError, /* data */ UpdateSMBLocalGroupsOutput, Unit]): Request[UpdateSMBLocalGroupsOutput, AWSError] = js.native
+  /**
+    * Updates the list of Active Directory users and groups that have special permissions for SMB file shares on the gateway.
+    */
+  def updateSMBLocalGroups(params: UpdateSMBLocalGroupsInput): Request[UpdateSMBLocalGroupsOutput, AWSError] = js.native
+  def updateSMBLocalGroups(
+    params: UpdateSMBLocalGroupsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateSMBLocalGroupsOutput, Unit]
+  ): Request[UpdateSMBLocalGroupsOutput, AWSError] = js.native
   
   /**
     * Updates the SMB security strategy on a file gateway. This action is only supported in file gateways.  This API is called Security level in the User Guide. A higher security level can affect performance of the gateway. 

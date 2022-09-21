@@ -8,6 +8,7 @@ trait GainOptions
   extends StObject
      with AudioNodeOptions {
   
+  /* standard dom */
   var gain: js.UndefOr[Double] = js.undefined
 }
 object GainOptions {

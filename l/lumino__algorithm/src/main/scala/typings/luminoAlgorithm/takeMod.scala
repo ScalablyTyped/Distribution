@@ -14,7 +14,7 @@ object takeMod {
   
   @JSImport("@lumino/algorithm/types/take", "TakeIterator")
   @js.native
-  class TakeIterator[T] protected ()
+  open class TakeIterator[T] protected ()
     extends StObject
        with IIterator[T] {
     /**
@@ -26,9 +26,9 @@ object takeMod {
       */
     def this(source: IIterator[T], count: Double) = this()
     
-    /* private */ var _count: js.Any = js.native
+    /* private */ var _count: Any = js.native
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
     /**
       * Get an iterator over the object's values.

@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("extract-files", "ReactNativeFile")
   @js.native
-  class ReactNativeFile protected () extends StObject {
+  open class ReactNativeFile protected () extends StObject {
     def this(options: ReactNativeFileOptions) = this()
     
     var name: js.UndefOr[String] = js.native
@@ -25,20 +25,12 @@ object mod {
     var uri: String = js.native
   }
   
-  inline def extractFiles[TFile](value: js.Any): Clone[TFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any]).asInstanceOf[Clone[TFile]]
-  inline def extractFiles[TFile](value: js.Any, path: String): Clone[TFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Clone[TFile]]
-  inline def extractFiles[TFile](
-    value: js.Any,
-    path: String,
-    isExtractableFile: js.Function1[/* value */ js.Any, /* is TFile */ Boolean]
-  ): Clone[TFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any], path.asInstanceOf[js.Any], isExtractableFile.asInstanceOf[js.Any])).asInstanceOf[Clone[TFile]]
-  inline def extractFiles[TFile](
-    value: js.Any,
-    path: Unit,
-    isExtractableFile: js.Function1[/* value */ js.Any, /* is TFile */ Boolean]
-  ): Clone[TFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any], path.asInstanceOf[js.Any], isExtractableFile.asInstanceOf[js.Any])).asInstanceOf[Clone[TFile]]
+  inline def extractFiles[TFile](value: Any): Clone[TFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any]).asInstanceOf[Clone[TFile]]
+  inline def extractFiles[TFile](value: Any, path: String): Clone[TFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Clone[TFile]]
+  inline def extractFiles[TFile](value: Any, path: String, isExtractableFile: js.Function1[/* value */ Any, /* is TFile */ Boolean]): Clone[TFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any], path.asInstanceOf[js.Any], isExtractableFile.asInstanceOf[js.Any])).asInstanceOf[Clone[TFile]]
+  inline def extractFiles[TFile](value: Any, path: Unit, isExtractableFile: js.Function1[/* value */ Any, /* is TFile */ Boolean]): Clone[TFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFiles")(value.asInstanceOf[js.Any], path.asInstanceOf[js.Any], isExtractableFile.asInstanceOf[js.Any])).asInstanceOf[Clone[TFile]]
   
-  inline def isExtractableFile(value: js.Any): /* is extract-files.extract-files.ExtractableFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtractableFile")(value.asInstanceOf[js.Any]).asInstanceOf[/* is extract-files.extract-files.ExtractableFile */ Boolean]
+  inline def isExtractableFile(value: Any): /* is extract-files.extract-files.ExtractableFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtractableFile")(value.asInstanceOf[js.Any]).asInstanceOf[/* is extract-files.extract-files.ExtractableFile */ Boolean]
   
   type ExtractableFile = File | Blob | ReactNativeFile
   

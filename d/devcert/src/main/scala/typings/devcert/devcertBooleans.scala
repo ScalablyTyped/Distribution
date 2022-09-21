@@ -11,7 +11,7 @@ object devcertBooleans {
   @js.native
   sealed trait `false`
     extends StObject
-       with IReturnCa[js.Any]
-       with IReturnCaPath[js.Any]
+       with IReturnCa[Any]
+       with IReturnCaPath[Any]
   inline def `false`: `false` = false.asInstanceOf[`false`]
 }

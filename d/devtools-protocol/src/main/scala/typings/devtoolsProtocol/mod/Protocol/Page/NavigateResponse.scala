@@ -18,7 +18,8 @@ trait NavigateResponse extends StObject {
   var frameId: FrameId
   
   /**
-    * Loader identifier.
+    * Loader identifier. This is omitted in case of same-document navigation,
+    * as the previously committed loaderId would not change.
     */
   var loaderId: js.UndefOr[LoaderId] = js.undefined
 }

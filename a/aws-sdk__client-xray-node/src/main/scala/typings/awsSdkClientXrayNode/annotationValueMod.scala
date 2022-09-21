@@ -8,5 +8,5 @@ object annotationValueMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/_AnnotationValue", "_AnnotationValue")
   @js.native
-  val AnnotationValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val AnnotationValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

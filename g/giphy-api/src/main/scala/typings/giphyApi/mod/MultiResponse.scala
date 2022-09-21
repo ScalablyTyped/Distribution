@@ -23,6 +23,6 @@ object MultiResponse {
     
     inline def setData(value: js.Array[GIFObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: GIFObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: GIFObject*): Self = StObject.set(x, "data", js.Array(value*))
   }
 }

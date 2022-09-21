@@ -10,7 +10,7 @@ trait EmailAuthor extends StObject {
   
   val Creator: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Style: typings.activexWord.Word.Style
   
@@ -22,7 +22,7 @@ object EmailAuthor {
   inline def apply(
     Application: Application,
     Creator: Double,
-    Parent: js.Any,
+    Parent: Any,
     Style: Style,
     WordDotEmailAuthor_typekey: EmailAuthor
   ): EmailAuthor = {
@@ -37,7 +37,7 @@ object EmailAuthor {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setStyle(value: Style): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     

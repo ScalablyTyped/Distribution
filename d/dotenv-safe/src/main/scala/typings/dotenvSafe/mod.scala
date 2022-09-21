@@ -109,7 +109,7 @@ object mod {
       
       inline def setMissing(value: js.Array[String]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
       
-      inline def setMissingVarargs(value: String*): Self = StObject.set(x, "missing", js.Array(value :_*))
+      inline def setMissingVarargs(value: String*): Self = StObject.set(x, "missing", js.Array(value*))
       
       inline def setSample(value: String): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
     }

@@ -54,7 +54,7 @@ object dropdownDividerMod {
   
   @JSImport("rbx/components/dropdown/dropdown-divider", "DropdownDivider")
   @js.native
-  val DropdownDivider: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val DropdownDivider: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait DropdownDividerProps extends StObject {

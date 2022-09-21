@@ -2,13 +2,12 @@ package typings.asynciterator
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.asynciterator.anon.AutoStart
+import typings.asynciterator.anon.BufferedIteratorOptionsde
 import typings.asynciterator.anon.End
-import typings.asynciterator.anon.MaxBufferSize
+import typings.asynciterator.anon.Limit
 import typings.asynciterator.taskschedulerMod.Task
 import typings.asynciterator.taskschedulerMod.TaskScheduler
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,19 +23,27 @@ object mod {
   /**
     Creates a new `ArrayIterator`.
     @param {Array} items The items that will be emitted.
+    @param {boolean} [options.autoStart=true] Whether buffering starts directly after construction
+    @param {boolean} [options.preserve=true] If false, the passed array can be safely modified
     */
-  class ArrayIterator[T] () extends AsyncIterator[T] {
-    def this(items: Iterable[T]) = this()
-    def this(items: Unit, hasAutoStart: AutoStart) = this()
-    def this(items: Iterable[T], hasAutoStart: AutoStart) = this()
+  open class ArrayIterator[T] () extends AsyncIterator[T] {
+    def this(items: js.Iterable[T]) = this()
+    def this(items: js.Iterable[T], hasAutoStartPreserve: AutoStart) = this()
+    def this(items: Unit, hasAutoStartPreserve: AutoStart) = this()
     
-    /* private */ var _buffer: js.Any = js.native
+    /* private */ var _buffer: Any = js.native
+    
+    /* protected */ var _index: Double = js.native
+    
+    /* protected */ var _sourceStarted: Boolean = js.native
+    
+    /* protected */ var _truncateThreshold: Double = js.native
   }
   
   @JSImport("asynciterator", "AsyncIterator")
   @js.native
   /** Creates a new `AsyncIterator`. */
-  class AsyncIterator[T] () extends EventEmitter {
+  open class AsyncIterator[T] () extends EventEmitter {
     def this(initialState: Double) = this()
     
     /**
@@ -51,14 +58,14 @@ object mod {
     /* protected */ def _changeState(newState: Double): Boolean = js.native
     /* protected */ def _changeState(newState: Double, eventAsync: Boolean): Boolean = js.native
     
-    /* protected */ def _destroy(cause: Unit, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
     /**
       Called by {@link module:asynciterator.AsyncIterator#destroy}.
       Implementers can override this, but this should not be called directly.
       @param {?Error} cause The reason why the iterator is destroyed.
       @param {Function} callback A callback function with an optional error argument.
       */
-    /* protected */ def _destroy(cause: Error, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+    /* protected */ def _destroy(cause: js.Error, callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = js.native
+    /* protected */ def _destroy(cause: Unit, callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     /**
       Ends the iterator and cleans up.
@@ -77,11 +84,11 @@ object mod {
       */
     /* protected */ def _endAsync(): Unit = js.native
     
-    /* protected */ var _properties: js.UndefOr[StringDictionary[js.Any]] = js.native
+    /* protected */ var _properties: js.UndefOr[StringDictionary[Any]] = js.native
     
-    /* protected */ var _propertyCallbacks: js.UndefOr[StringDictionary[js.Array[js.Function1[/* value */ js.Any, Unit]]]] = js.native
+    /* protected */ var _propertyCallbacks: js.UndefOr[StringDictionary[js.Array[js.Function1[/* value */ Any, Unit]]]] = js.native
     
-    /* private */ var _readable: js.Any = js.native
+    /* private */ var _readable: Any = js.native
     
     /* protected */ var _state: Double = js.native
     
@@ -120,7 +127,7 @@ object mod {
       @param {module:asynciterator.AsyncIterator} source The iterator to copy from
       @param {Array} propertyNames List of property names to copy
       */
-    def copyProperties(source: AsyncIterator[js.Any], propertyNames: js.Array[String]): Unit = js.native
+    def copyProperties(source: AsyncIterator[Any], propertyNames: js.Array[String]): Unit = js.native
     
     /**
       Destroy the iterator and stop it from generating new items.
@@ -134,7 +141,7 @@ object mod {
       @emits module:asynciterator.AsyncIterator.error Only if an error is passed.
       */
     def destroy(): Unit = js.native
-    def destroy(cause: Error): Unit = js.native
+    def destroy(cause: js.Error): Unit = js.native
     
     /**
       Gets whether the iterator has been destroyed.
@@ -158,6 +165,8 @@ object mod {
       */
     def ended: Boolean = js.native
     
+    def filter(filter: js.Function1[/* item */ T, Boolean]): AsyncIterator[T] = js.native
+    def filter(filter: js.Function1[/* item */ T, Boolean], self: Any): AsyncIterator[T] = js.native
     /**
       Return items from this iterator that match the filter.
       After this operation, only read the returned iterator instead of the current one.
@@ -165,8 +174,10 @@ object mod {
       @param {object?} self The `this` pointer for the filter function
       @returns {module:asynciterator.AsyncIterator} A new iterator that filters items from this iterator
       */
-    def filter(filter: js.Function1[/* item */ T, Boolean]): AsyncIterator[T] = js.native
-    def filter(filter: js.Function1[/* item */ T, Boolean], self: js.Any): AsyncIterator[T] = js.native
+    @JSName("filter")
+    def filter_K_T[K /* <: T */](filter: js.Function1[/* item */ T, /* is K */ Boolean]): AsyncIterator[K] = js.native
+    @JSName("filter")
+    def filter_K_T[K /* <: T */](filter: js.Function1[/* item */ T, /* is K */ Boolean], self: Any): AsyncIterator[K] = js.native
     
     /**
       The iterator emits a `readable` event when it might have new items available
@@ -201,7 +212,7 @@ object mod {
       Retrieves all properties of the iterator.
       @returns {object} An object with property names as keys.
       */
-    def getProperties(): StringDictionary[js.Any] = js.native
+    def getProperties(): StringDictionary[Any] = js.native
     
     /**
       Retrieves the property with the given name from the iterator.
@@ -223,8 +234,8 @@ object mod {
       @param {object?} self The `this` pointer for the mapping function
       @returns {module:asynciterator.AsyncIterator} A new iterator that maps the items from this iterator
       */
-    def map[D](map: js.Function1[/* item */ T, D]): AsyncIterator[D] = js.native
-    def map[D](map: js.Function1[/* item */ T, D], self: js.Any): AsyncIterator[D] = js.native
+    def map[D](map: MapFunction[T, D]): AsyncIterator[D] = js.native
+    def map[D](map: MapFunction[T, D], self: Any): AsyncIterator[D] = js.native
     
     /**
       Prepends the items after those of the current iterator.
@@ -277,7 +288,7 @@ object mod {
       Sets all of the given properties.
       @param {object} properties Key/value pairs of properties to set
       */
-    def setProperties(properties: StringDictionary[js.Any]): Unit = js.native
+    def setProperties(properties: StringDictionary[Any]): Unit = js.native
     
     /**
       Sets the property with the given name to the value.
@@ -312,6 +323,14 @@ object mod {
     def take(limit: Double): AsyncIterator[T] = js.native
     
     /**
+      Consume all remaining items of the iterator into an array that will be returned asynchronously.
+      @param {object} [options] Settings for array creation
+      @param {integer} [options.limit] The maximum number of items to place in the array.
+      */
+    def toArray(): js.Promise[js.Array[T]] = js.native
+    def toArray(options: Limit): js.Promise[js.Array[T]] = js.native
+    
+    /**
       Transforms items from this iterator.
       After this operation, only read the returned iterator instead of the current one.
       @param {object|Function} [options] Settings of the iterator, or the transformation function
@@ -328,6 +347,15 @@ object mod {
       @returns {module:asynciterator.AsyncIterator} A new iterator that maps the items from this iterator
       */
     def transform[D](options: TransformOptions[T, D]): AsyncIterator[D] = js.native
+    
+    /**
+      * Returns a new iterator containing all of the unique items in the original iterator.
+      * @param by - The derived value by which to determine uniqueness (e.g., stringification).
+      Defaults to the identity function.
+      * @returns An iterator with duplicates filtered out.
+      */
+    def uniq(): AsyncIterator[T] = js.native
+    def uniq(by: js.Function1[/* item */ T, Any]): AsyncIterator[T] = js.native
   }
   
   @JSImport("asynciterator", "BufferedIterator")
@@ -338,8 +366,8 @@ object mod {
     @param {integer} [options.maxBufferSize=4] The number of items to preload in the internal buffer
     @param {boolean} [options.autoStart=true] Whether buffering starts directly after construction
     */
-  class BufferedIterator[T] () extends AsyncIterator[T] {
-    def this(hasMaxBufferSizeAutoStart: MaxBufferSize) = this()
+  open class BufferedIterator[T] () extends AsyncIterator[T] {
+    def this(hasMaxBufferSizeAutoStart: BufferedIteratorOptions) = this()
     
     /**
       Writes beginning items and opens iterator resources.
@@ -350,7 +378,7 @@ object mod {
       */
     /* protected */ def _begin(done: js.Function0[Unit]): Unit = js.native
     
-    /* private */ var _buffer: js.Any = js.native
+    /* private */ var _buffer: Any = js.native
     
     /**
       Stops the iterator from generating new items,
@@ -390,7 +418,7 @@ object mod {
       */
     /* protected */ def _init(autoStart: Boolean): Unit = js.native
     
-    /* private */ var _maxBufferSize: js.Any = js.native
+    /* private */ var _maxBufferSize: Any = js.native
     
     /**
       Adds an item to the internal buffer.
@@ -413,6 +441,8 @@ object mod {
     
     /* protected */ var _reading: Boolean = js.native
     
+    /* protected */ var _sourceStarted: Boolean = js.native
+    
     /**
       The maximum number of items to preload in the internal buffer.
       A `BufferedIterator` tries to fill its buffer as far as possible.
@@ -433,7 +463,7 @@ object mod {
   
   @JSImport("asynciterator", "ClonedIterator")
   @js.native
-  class ClonedIterator[T] protected () extends TransformIterator[T, T] {
+  open class ClonedIterator[T] protected () extends TransformIterator[T, T] {
     /**
       Creates a new `ClonedIterator`.
       @param {module:asynciterator.AsyncIterator|Readable} [source] The source this iterator copies items from
@@ -444,8 +474,12 @@ object mod {
     
     /* protected */ def _init(): Unit = js.native
     
-    /* private */ var _readPosition: js.Any = js.native
+    /* private */ var _readPosition: Any = js.native
   }
+  
+  @JSImport("asynciterator", "DESTINATION")
+  @js.native
+  val DESTINATION: js.Symbol = js.native
   
   @JSImport("asynciterator", "DESTROYED")
   @js.native
@@ -458,7 +492,7 @@ object mod {
   @JSImport("asynciterator", "EmptyIterator")
   @js.native
   /** Creates a new `EmptyIterator`. */
-  class EmptyIterator[T] () extends AsyncIterator[T]
+  open class EmptyIterator[T] () extends AsyncIterator[T]
   
   @JSImport("asynciterator", "INIT")
   @js.native
@@ -473,19 +507,42 @@ object mod {
     @param {integer} [options.end=Infinity] The last number to emit
     @param {integer} [options.step=1] The increment between two numbers
     */
-  class IntegerIterator () extends AsyncIterator[Double] {
+  open class IntegerIterator () extends AsyncIterator[Double] {
     def this(hasStartStepEnd: End) = this()
     
-    /* private */ var _last: js.Any = js.native
+    /* private */ var _last: Any = js.native
     
-    /* private */ var _next: js.Any = js.native
+    /* private */ var _next: Any = js.native
     
-    /* private */ var _step: js.Any = js.native
+    /* private */ var _step: Any = js.native
+  }
+  
+  @JSImport("asynciterator", "LinkedList")
+  @js.native
+  open class LinkedList[V] ()
+    extends typings.asynciterator.linkedlistMod.LinkedList[V]
+  
+  @JSImport("asynciterator", "MappingIterator")
+  @js.native
+  open class MappingIterator[S, D] protected () extends AsyncIterator[D] {
+    /**
+      * Applies the given mapping to the source iterator.
+      */
+    def this(source: AsyncIterator[S]) = this()
+    def this(source: AsyncIterator[S], map: MapFunction[S, D]) = this()
+    def this(source: AsyncIterator[S], map: Unit, options: SourcedIteratorOptions) = this()
+    def this(source: AsyncIterator[S], map: MapFunction[S, D], options: SourcedIteratorOptions) = this()
+    
+    /* protected */ val _destroySource: Boolean = js.native
+    
+    /* protected */ def _map(item: S): D | Null = js.native
+    
+    /* protected */ val _source: InternalSource[S] = js.native
   }
   
   @JSImport("asynciterator", "MultiTransformIterator")
   @js.native
-  class MultiTransformIterator[S, D] protected () extends TransformIterator[S, D] {
+  open class MultiTransformIterator[S, D] protected () extends TransformIterator[S, D] {
     /**
       Creates a new `MultiTransformIterator`.
       @param {module:asynciterator.AsyncIterator|Readable} [source] The source this iterator generates items from
@@ -517,7 +574,7 @@ object mod {
       */
     /* protected */ def _createTransformer(item: S): AsyncIterator[D] = js.native
     
-    /* private */ var _transformerQueue: js.Any = js.native
+    /* private */ var _transformerQueue: Any = js.native
   }
   
   @JSImport("asynciterator", "OPEN")
@@ -542,7 +599,7 @@ object mod {
     @param {Array|module:asynciterator.AsyncIterator} [options.prepend] Items to insert before the source items
     @param {Array|module:asynciterator.AsyncIterator} [options.append]  Items to insert after the source items
     */
-  class SimpleTransformIterator[S, D] () extends TransformIterator[S, D] {
+  open class SimpleTransformIterator[S, D] () extends TransformIterator[S, D] {
     def this(source: SourceExpression[S]) = this()
     def this(
       source: Unit,
@@ -555,34 +612,34 @@ object mod {
     ) = this()
     def this(source: SourceExpression[S], options: TransformOptions[S, D]) = this()
     
-    /* private */ var _appender: js.Any = js.native
+    /* private */ var _appender: Any = js.native
     
-    /* private */ var _filter: js.Any = js.native
+    /* private */ var _filter: Any = js.native
     
     /* protected */ def _insert(inserter: Unit, done: js.Function0[Unit]): Unit = js.native
     /* protected */ def _insert(inserter: AsyncIterator[D], done: js.Function0[Unit]): Unit = js.native
     
-    /* private */ var _limit: js.Any = js.native
+    /* private */ var _limit: Any = js.native
     
-    /* private */ var _map: js.Any = js.native
+    /* private */ var _map: Any = js.native
     
-    /* private */ var _offset: js.Any = js.native
+    /* private */ var _offset: Any = js.native
     
-    /* private */ var _prepender: js.Any = js.native
+    /* private */ var _prepender: Any = js.native
     
     /* protected */ def _readAndTransformSimple(count: Double, next: js.Function0[Unit], done: js.Function0[Unit]): Unit = js.native
   }
   
   @JSImport("asynciterator", "SingletonIterator")
   @js.native
-  class SingletonIterator[T] protected () extends AsyncIterator[T] {
+  open class SingletonIterator[T] protected () extends AsyncIterator[T] {
     /**
       Creates a new `SingletonIterator`.
       @param {object} item The item that will be emitted.
       */
     def this(item: T) = this()
     
-    /* private */ var _item: js.Any = js.native
+    /* private */ var _item: Any = js.native
   }
   
   @JSImport("asynciterator", "TransformIterator")
@@ -597,7 +654,7 @@ object mod {
     @param {boolean} [options.destroySource=true] Whether the source should be destroyed when this transformed iterator is closed or destroyed
     @param {module:asynciterator.AsyncIterator} [options.source] The source this iterator generates items from
     */
-  class TransformIterator[S, D] () extends BufferedIterator[D] {
+  open class TransformIterator[S, D] () extends BufferedIterator[D] {
     def this(source: SourceExpression[S]) = this()
     def this(source: Unit, options: TransformIteratorOptions[S]) = this()
     def this(source: SourceExpression[S], options: TransformIteratorOptions[S]) = this()
@@ -610,7 +667,7 @@ object mod {
       */
     /* protected */ def _closeWhenDone(): Unit = js.native
     
-    /* protected */ var _createSource: js.UndefOr[js.Function0[AsyncIteratorOrPromise[S]] | Null] = js.native
+    /* protected */ var _createSource: js.UndefOr[js.Function0[MaybePromise[AsyncIterator[S]]] | Null] = js.native
     
     /* protected */ var _destroySource: Boolean = js.native
     
@@ -635,8 +692,6 @@ object mod {
     
     /* protected */ var _source: js.UndefOr[InternalSource[S]] = js.native
     
-    /* protected */ var _sourceStarted: Boolean = js.native
-    
     /**
       Generates items based on the item from the source.
       Implementers should add items through {@link BufferedIterator#_push}.
@@ -646,7 +701,7 @@ object mod {
       @param {function} done To be called when reading is complete
       @param {function} push A callback to push zero or more transformation results.
       */
-    /* protected */ def _transform(item: S, done: js.Function0[Unit], push: js.Function1[/* item */ D, Unit]): Unit = js.native
+    /* protected */ def _transform(item: S, done: js.Function0[Unit], push: js.Function1[/* i */ D, Unit]): Unit = js.native
     
     /**
       Validates whether the given iterator can be used as a source.
@@ -669,33 +724,73 @@ object mod {
   
   @JSImport("asynciterator", "UnionIterator")
   @js.native
-  class UnionIterator[T] protected () extends BufferedIterator[T] {
+  open class UnionIterator[T] protected () extends BufferedIterator[T] {
     /**
       Creates a new `UnionIterator`.
       @param {module:asynciterator.AsyncIterator|Array} [sources] The sources to read from
       @param {object} [options] Settings of the iterator
+      @param {boolean} [options.destroySource=true] Whether the sources should be destroyed when transformed iterator is closed or destroyed
       */
-    def this(sources: AsyncIteratorOrArray[AsyncIterator[T]]) = this()
-    def this(sources: AsyncIteratorOrArray[AsyncIterator[T]], options: BufferedIteratorOptions) = this()
+    def this(sources: AsyncIteratorOrArray[AsyncIterator[T] | MaybePromise[AsyncIterator[T]] | js.Promise[AsyncIterator[T]]]) = this()
+    def this(
+      sources: AsyncIteratorOrArray[AsyncIterator[T] | MaybePromise[AsyncIterator[T]] | js.Promise[AsyncIterator[T]]],
+      options: BufferedIteratorOptionsde
+    ) = this()
     
-    /* protected */ def _addSource(source: InternalSource[T]): Unit = js.native
+    /* protected */ def _addSource(source: MaybePromise[InternalSource[T]]): Unit = js.native
     
-    /* private */ var _currentSource: js.Any = js.native
+    /* private */ var _currentSource: Any = js.native
+    
+    /* protected */ var _destroySources: Boolean = js.native
     
     /* protected */ def _loadSources(): Unit = js.native
     
-    /* private */ var _pending: js.Any = js.native
+    /* private */ var _pending: Any = js.native
     
     /* protected */ def _removeEmptySources(): Unit = js.native
     
-    /* private */ var _sources: js.Any = js.native
+    /* private */ var _sources: Any = js.native
   }
   
-  inline def empty[T](): EmptyIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[EmptyIterator[T]]
+  @JSImport("asynciterator", "WrappingIterator")
+  @js.native
+  open class WrappingIterator[T] () extends AsyncIterator[T] {
+    def this(source: MaybePromise[IterableSource[T]]) = this()
+    def this(source: Unit, opts: SourcedIteratorOptions) = this()
+    def this(source: MaybePromise[IterableSource[T]], opts: SourcedIteratorOptions) = this()
+    
+    /* protected */ var _destroySource: Boolean = js.native
+    
+    /* protected */ var _source: InternalSource[T] | Null = js.native
+    
+    def source_=(value: IterableSource[T]): Unit = js.native
+  }
   
-  inline def fromArray[T](items: Iterable[T]): ArrayIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(items.asInstanceOf[js.Any]).asInstanceOf[ArrayIterator[T]]
+  inline def empty[T](): AsyncIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[AsyncIterator[T]]
+  
+  inline def fromArray[T](items: js.Iterable[T]): AsyncIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(items.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[T]]
+  
+  inline def fromIterable[T](source: js.Iterable[T]): AsyncIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[T]]
+  inline def fromIterable[T](source: js.Iterator[T]): AsyncIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterable")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[T]]
+  
+  inline def fromIterator[T](source: js.Iterable[T]): AsyncIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterator")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[T]]
+  inline def fromIterator[T](source: js.Iterator[T]): AsyncIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIterator")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[T]]
   
   inline def getTaskScheduler(): TaskScheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("getTaskScheduler")().asInstanceOf[TaskScheduler]
+  
+  inline def identity[S](item: S): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(item.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def isEventEmitter(`object`: Any): /* is node.events.EventEmitter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventEmitter")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is node.events.EventEmitter */ Boolean]
+  
+  inline def isFunction(`object`: Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
+  
+  inline def isIterable[T](`object`: StringDictionary[Any]): /* is std.Iterable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterable")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Iterable<T> */ Boolean]
+  
+  inline def isIterator[T](`object`: StringDictionary[Any]): /* is std.Iterator<T, any, undefined> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterator")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Iterator<T, any, undefined> */ Boolean]
+  
+  inline def isPromise[T](`object`: Any): /* is std.Promise<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<T> */ Boolean]
+  
+  inline def isSourceExpression[T](`object`: Any): /* is asynciterator.asynciterator.SourceExpression<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSourceExpression")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is asynciterator.asynciterator.SourceExpression<T> */ Boolean]
   
   inline def range(start: Double, end: Double): IntegerIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[IntegerIterator]
   inline def range(start: Double, end: Double, step: Double): IntegerIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[IntegerIterator]
@@ -704,18 +799,19 @@ object mod {
   
   inline def setTaskScheduler(scheduler: TaskScheduler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTaskScheduler")(scheduler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def single[T](item: T): SingletonIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("single")(item.asInstanceOf[js.Any]).asInstanceOf[SingletonIterator[T]]
+  inline def single[T](item: T): AsyncIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("single")(item.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[T]]
   
-  inline def union[T](sources: AsyncIteratorOrArray[AsyncIterator[T]]): UnionIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(sources.asInstanceOf[js.Any]).asInstanceOf[UnionIterator[T]]
+  inline def union[T](
+    sources: AsyncIteratorOrArray[AsyncIterator[T] | MaybePromise[AsyncIterator[T]] | js.Promise[AsyncIterator[T]]]
+  ): UnionIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(sources.asInstanceOf[js.Any]).asInstanceOf[UnionIterator[T]]
   
-  inline def wrap[T](source: js.Promise[EventEmitter]): TransformIterator[T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any]).asInstanceOf[TransformIterator[T, T]]
-  inline def wrap[T](source: js.Promise[EventEmitter], options: TransformIteratorOptions[T]): TransformIterator[T, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransformIterator[T, T]]
-  inline def wrap[T](source: EventEmitter): TransformIterator[T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any]).asInstanceOf[TransformIterator[T, T]]
-  inline def wrap[T](source: EventEmitter, options: TransformIteratorOptions[T]): TransformIterator[T, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransformIterator[T, T]]
+  inline def wrap[T](): AsyncIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")().asInstanceOf[AsyncIterator[T]]
+  inline def wrap[T](source: Null, options: TransformIteratorOptions[T]): AsyncIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator[T]]
+  inline def wrap[T](source: Unit, options: TransformIteratorOptions[T]): AsyncIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator[T]]
+  inline def wrap[T](source: MaybePromise[IterableSource[T]]): AsyncIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[T]]
+  inline def wrap[T](source: MaybePromise[IterableSource[T]], options: TransformIteratorOptions[T]): AsyncIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator[T]]
   
   type AsyncIteratorOrArray[T] = js.Array[T] | AsyncIterator[T]
-  
-  type AsyncIteratorOrPromise[T] = AsyncIterator[T] | js.Promise[AsyncIterator[T]]
   
   trait BufferedIteratorOptions extends StObject {
     
@@ -743,10 +839,13 @@ object mod {
   }
   
   @js.native
-  trait InternalSource[T] extends AsyncIterator[T] {
-    
-    var _destination: AsyncIterator[js.Any] = js.native
-  }
+  trait InternalSource[T] extends AsyncIterator[T]
+  
+  type IterableSource[T] = js.Array[T] | AsyncIterator[T] | EventEmitter | js.Iterator[T] | js.Iterable[T]
+  
+  type MapFunction[S, D] = js.Function1[/* item */ S, D | Null]
+  
+  type MaybePromise[T] = T | js.Promise[T]
   
   trait MultiTransformOptions[S, D]
     extends StObject
@@ -769,13 +868,31 @@ object mod {
     }
   }
   
-  type SourceExpression[T] = AsyncIteratorOrPromise[T] | js.Function0[AsyncIteratorOrPromise[T]]
+  type SourceExpression[T] = MaybePromise[AsyncIterator[T]] | js.Function0[MaybePromise[AsyncIterator[T]]]
+  
+  trait SourcedIteratorOptions extends StObject {
+    
+    var destroySource: js.UndefOr[Boolean] = js.undefined
+  }
+  object SourcedIteratorOptions {
+    
+    inline def apply(): SourcedIteratorOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SourcedIteratorOptions]
+    }
+    
+    extension [Self <: SourcedIteratorOptions](x: Self) {
+      
+      inline def setDestroySource(value: Boolean): Self = StObject.set(x, "destroySource", value.asInstanceOf[js.Any])
+      
+      inline def setDestroySourceUndefined: Self = StObject.set(x, "destroySource", js.undefined)
+    }
+  }
   
   trait TransformIteratorOptions[S]
     extends StObject
+       with SourcedIteratorOptions
        with BufferedIteratorOptions {
-    
-    var destroySource: js.UndefOr[Boolean] = js.undefined
     
     var optional: js.UndefOr[Boolean] = js.undefined
     
@@ -790,17 +907,13 @@ object mod {
     
     extension [Self <: TransformIteratorOptions[?], S](x: Self & TransformIteratorOptions[S]) {
       
-      inline def setDestroySource(value: Boolean): Self = StObject.set(x, "destroySource", value.asInstanceOf[js.Any])
-      
-      inline def setDestroySourceUndefined: Self = StObject.set(x, "destroySource", js.undefined)
-      
       inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
       inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
       inline def setSource(value: SourceExpression[S]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      inline def setSourceFunction0(value: () => AsyncIteratorOrPromise[S]): Self = StObject.set(x, "source", js.Any.fromFunction0(value))
+      inline def setSourceFunction0(value: () => MaybePromise[AsyncIterator[S]]): Self = StObject.set(x, "source", js.Any.fromFunction0(value))
       
       inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
@@ -826,7 +939,7 @@ object mod {
         js.Function3[
           /* item */ S, 
           /* done */ js.Function0[Unit], 
-          /* push */ js.Function1[/* item */ D, Unit], 
+          /* push */ js.Function1[/* i */ D, Unit], 
           Unit
         ]
       ] = js.undefined
@@ -844,7 +957,7 @@ object mod {
       
       inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
       
-      inline def setAppendVarargs(value: D*): Self = StObject.set(x, "append", js.Array(value :_*))
+      inline def setAppendVarargs(value: D*): Self = StObject.set(x, "append", js.Array(value*))
       
       inline def setFilter(value: /* item */ S => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -866,10 +979,10 @@ object mod {
       
       inline def setPrependUndefined: Self = StObject.set(x, "prepend", js.undefined)
       
-      inline def setPrependVarargs(value: D*): Self = StObject.set(x, "prepend", js.Array(value :_*))
+      inline def setPrependVarargs(value: D*): Self = StObject.set(x, "prepend", js.Array(value*))
       
       inline def setTransform(
-        value: (/* item */ S, /* done */ js.Function0[Unit], /* push */ js.Function1[/* item */ D, Unit]) => Unit
+        value: (/* item */ S, /* done */ js.Function0[Unit], /* push */ js.Function1[/* i */ D, Unit]) => Unit
       ): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)

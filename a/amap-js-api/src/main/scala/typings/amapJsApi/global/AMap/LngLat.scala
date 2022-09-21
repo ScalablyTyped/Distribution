@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("AMap.LngLat")
 @js.native
-class LngLat protected ()
+open class LngLat protected ()
   extends StObject
      with typings.amapJsApi.AMap.LngLat {
   /**

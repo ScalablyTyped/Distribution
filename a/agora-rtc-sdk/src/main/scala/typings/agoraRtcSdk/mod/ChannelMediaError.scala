@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("agora-rtc-sdk", "ChannelMediaError")
 @js.native
-class ChannelMediaError () extends StObject {
+open class ChannelMediaError () extends StObject {
   
   /**
     * The error code.
@@ -40,7 +40,7 @@ class ChannelMediaError () extends StObject {
   /**
     * Additional information.
     */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[Any] = js.native
   
   /**
     * The error message.

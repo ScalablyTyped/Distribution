@@ -1,8 +1,16 @@
 package typings.webpackBundleAnalyzer
 
-import typings.std.RegExp
+import org.scalablytyped.runtime.Instantiable1
+import typings.node.httpMod.IncomingMessage
+import typings.node.httpMod.Server
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
+import typings.webpack.mod.Compiler
+import typings.webpack.mod.Stats
+import typings.webpack.mod.StatsOptions
+import typings.webpack.mod.WebpackPluginInstance
 import typings.webpackBundleAnalyzer.mod.BundleAnalyzerPlugin.Options
-import typings.webpackBundleAnalyzer.mod.BundleAnalyzerPlugin.Stats.ToJsonOptionsObject
+import typings.webpackBundleAnalyzer.mod.BundleAnalyzerPlugin.Stats.ToJsonOptions
 import typings.webpackBundleAnalyzer.webpackBundleAnalyzerStrings.auto
 import typings.webpackBundleAnalyzer.webpackBundleAnalyzerStrings.disabled
 import typings.webpackBundleAnalyzer.webpackBundleAnalyzerStrings.error
@@ -21,22 +29,125 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackPluginInstance * / any */ @JSImport("webpack-bundle-analyzer", "BundleAnalyzerPlugin")
+  @JSImport("webpack-bundle-analyzer", "BundleAnalyzerPlugin")
   @js.native
-  class BundleAnalyzerPlugin () extends StObject {
+  open class BundleAnalyzerPlugin ()
+    extends StObject
+       with WebpackPluginInstance {
     def this(options: Options) = this()
     
+    /**
+    	 * The run point of the plugin, required method.
+    	 */
+    /* CompleteClass */
     @JSName("apply")
-    def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    override def apply(compiler: Compiler): Unit = js.native
+    
+    var compiler: js.UndefOr[Compiler] = js.native
+    
+    /** @async */
+    def generateJSONReport(stats: Stats): js.Promise[Unit] = js.native
+    
+    /** @async */
+    def generateStaticReport(stats: Stats): js.Promise[Unit] = js.native
+    
+    def generateStatsFile(stats: Stats): js.Promise[Unit] = js.native
+    
+    def getBundleDirFromCompiler(): Null | String = js.native
+    
+    var opts: Options = js.native
+    
+    var server: Null | (Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ]) = js.native
+    
+    /** @async */
+    def startAnalyzerServer(stats: Stats): js.Promise[Unit] = js.native
   }
   object BundleAnalyzerPlugin {
     
-    type ExcludeAssetsPattern = String | RegExp | ExcludeAssetsPatternFn
+    type ExcludeAssetsPattern = String | js.RegExp | ExcludeAssetsPatternFn
     
     type ExcludeAssetsPatternFn = js.Function1[/* assetName */ String, Boolean]
+    
+    /** The json report that will be produced if `analyzerMode: 'json'` */
+    type JsonReport = js.Array[JsonReportItem]
+    
+    trait JsonReportItem extends StObject {
+      
+      var concatenated: js.UndefOr[Boolean] = js.undefined
+      
+      var groups: js.UndefOr[js.Array[JsonReportItem]] = js.undefined
+      
+      /** in bytes */
+      var gzipSize: Double
+      
+      var id: js.UndefOr[Double | Null] = js.undefined
+      
+      var inaccurateSizes: js.UndefOr[Boolean] = js.undefined
+      
+      var isAsset: js.UndefOr[Boolean] = js.undefined
+      
+      var label: String
+      
+      /** in bytes */
+      var parsedSize: Double
+      
+      var path: js.UndefOr[String] = js.undefined
+      
+      /** in bytes */
+      var statSize: Double
+    }
+    object JsonReportItem {
+      
+      inline def apply(gzipSize: Double, label: String, parsedSize: Double, statSize: Double): JsonReportItem = {
+        val __obj = js.Dynamic.literal(gzipSize = gzipSize.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], parsedSize = parsedSize.asInstanceOf[js.Any], statSize = statSize.asInstanceOf[js.Any])
+        __obj.asInstanceOf[JsonReportItem]
+      }
+      
+      extension [Self <: JsonReportItem](x: Self) {
+        
+        inline def setConcatenated(value: Boolean): Self = StObject.set(x, "concatenated", value.asInstanceOf[js.Any])
+        
+        inline def setConcatenatedUndefined: Self = StObject.set(x, "concatenated", js.undefined)
+        
+        inline def setGroups(value: js.Array[JsonReportItem]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+        
+        inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+        
+        inline def setGroupsVarargs(value: JsonReportItem*): Self = StObject.set(x, "groups", js.Array(value*))
+        
+        inline def setGzipSize(value: Double): Self = StObject.set(x, "gzipSize", value.asInstanceOf[js.Any])
+        
+        inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        
+        inline def setIdNull: Self = StObject.set(x, "id", null)
+        
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        
+        inline def setInaccurateSizes(value: Boolean): Self = StObject.set(x, "inaccurateSizes", value.asInstanceOf[js.Any])
+        
+        inline def setInaccurateSizesUndefined: Self = StObject.set(x, "inaccurateSizes", js.undefined)
+        
+        inline def setIsAsset(value: Boolean): Self = StObject.set(x, "isAsset", value.asInstanceOf[js.Any])
+        
+        inline def setIsAssetUndefined: Self = StObject.set(x, "isAsset", js.undefined)
+        
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        
+        inline def setParsedSize(value: Double): Self = StObject.set(x, "parsedSize", value.asInstanceOf[js.Any])
+        
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        
+        inline def setStatSize(value: Double): Self = StObject.set(x, "statSize", value.asInstanceOf[js.Any])
+      }
+    }
     
     trait Options extends StObject {
       
@@ -122,7 +233,7 @@ object mod {
         * For example you can exclude sources of your modules from stats file with "source: false" option.
         * @default null
         */
-      var statsOptions: js.UndefOr[Null | ToJsonOptionsObject] = js.undefined
+      var statsOptions: js.UndefOr[Null | ToJsonOptions] = js.undefined
     }
     object Options {
       
@@ -157,7 +268,7 @@ object mod {
         
         inline def setExcludeAssetsUndefined: Self = StObject.set(x, "excludeAssets", js.undefined)
         
-        inline def setExcludeAssetsVarargs(value: ExcludeAssetsPattern*): Self = StObject.set(x, "excludeAssets", js.Array(value :_*))
+        inline def setExcludeAssetsVarargs(value: ExcludeAssetsPattern*): Self = StObject.set(x, "excludeAssets", js.Array(value*))
         
         inline def setGenerateStatsFile(value: Boolean): Self = StObject.set(x, "generateStatsFile", value.asInstanceOf[js.Any])
         
@@ -185,7 +296,7 @@ object mod {
         
         inline def setStatsFilenameUndefined: Self = StObject.set(x, "statsFilename", js.undefined)
         
-        inline def setStatsOptions(value: ToJsonOptionsObject): Self = StObject.set(x, "statsOptions", value.asInstanceOf[js.Any])
+        inline def setStatsOptions(value: ToJsonOptions): Self = StObject.set(x, "statsOptions", value.asInstanceOf[js.Any])
         
         inline def setStatsOptionsNull: Self = StObject.set(x, "statsOptions", null)
         
@@ -208,306 +319,13 @@ object mod {
       */
       type Preset = _Preset | Boolean
       
-      type StatsExcludeFilter = String | (js.Array[(js.Function1[/* assetName */ String, Boolean]) | RegExp | String]) | RegExp | (js.Function1[/* assetName */ String, Boolean])
+      type StatsExcludeFilter = String | (js.Array[(js.Function1[/* assetName */ String, Boolean]) | js.RegExp | String]) | js.RegExp | (js.Function1[/* assetName */ String, Boolean])
       
-      /* Rewritten from type alias, can be one of: 
-        - typings.webpackBundleAnalyzer.mod.BundleAnalyzerPlugin.Stats.Preset
-        - typings.webpackBundleAnalyzer.mod.BundleAnalyzerPlugin.Stats.ToJsonOptionsObject
-      */
-      type ToJsonOptions = _ToJsonOptions | Boolean
+      type ToJsonOptions = Preset | ToJsonOptionsObject
       
-      trait ToJsonOptionsObject
-        extends StObject
-           with _ToJsonOptions {
-        
-        /** fallback value for stats options when an option is not defined (has precedence over local webpack defaults) */
-        var all: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add asset Information */
-        var assets: js.UndefOr[Boolean] = js.undefined
-        
-        /** Sort assets by a field */
-        var assetsSort: js.UndefOr[String] = js.undefined
-        
-        /** Add built at time information */
-        var builtAt: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add information about cached (not built) modules */
-        var cached: js.UndefOr[Boolean] = js.undefined
-        
-        /** Show cached assets (setting this to `false` only shows emitted files) */
-        var cachedAssets: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add children information */
-        var children: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add information about the `namedChunkGroups` */
-        var chunkGroups: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add built modules information to chunk information */
-        var chunkModules: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add the origins of chunks and chunk merging info */
-        var chunkOrigins: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add chunk information (setting this to `false` allows for a less verbose output) */
-        var chunks: js.UndefOr[Boolean] = js.undefined
-        
-        /** Sort the chunks by a field */
-        var chunksSort: js.UndefOr[String] = js.undefined
-        
-        /** Context directory for request shortening */
-        var context: js.UndefOr[String] = js.undefined
-        
-        /** Display the distance from the entry point for each module */
-        var depth: js.UndefOr[Boolean] = js.undefined
-        
-        /** Display the entry points with the corresponding bundles */
-        var entrypoints: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add --env information */
-        var env: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add details to errors (like resolving log) */
-        var errorDetails: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add errors */
-        var errors: js.UndefOr[Boolean] = js.undefined
-        
-        /** See excludeModules */
-        var exclude: js.UndefOr[StatsExcludeFilter] = js.undefined
-        
-        /** Exclude assets from being displayed in stats */
-        var excludeAssets: js.UndefOr[StatsExcludeFilter] = js.undefined
-        
-        /** Exclude modules from being displayed in stats */
-        var excludeModules: js.UndefOr[StatsExcludeFilter] = js.undefined
-        
-        /** Add the hash of the compilation */
-        var hash: js.UndefOr[Boolean] = js.undefined
-        
-        /** Set the maximum number of modules to be shown */
-        var maxModules: js.UndefOr[Double] = js.undefined
-        
-        /** Show dependencies and origin of warnings/errors */
-        var moduleTrace: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add built modules information */
-        var modules: js.UndefOr[Boolean] = js.undefined
-        
-        /** Sort the modules by a field */
-        var modulesSort: js.UndefOr[String] = js.undefined
-        
-        /** Show performance hint when file size exceeds `performance.maxAssetSize` */
-        var performance: js.UndefOr[Boolean] = js.undefined
-        
-        /** Show the exports of the modules */
-        var providedExports: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add public path information */
-        var publicPath: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add information about the reasons why modules are included */
-        var reasons: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add the source code of modules */
-        var source: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add timing information */
-        var timings: js.UndefOr[Boolean] = js.undefined
-        
-        /** Show which exports of a module are used */
-        var usedExports: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add webpack version information */
-        var version: js.UndefOr[Boolean] = js.undefined
-        
-        /** Add warnings */
-        var warnings: js.UndefOr[Boolean] = js.undefined
-        
-        /** Filter warnings to be shown */
-        var warningsFilter: js.UndefOr[
-                String | RegExp | (js.Array[String | RegExp]) | (js.Function1[/* warning */ String, Boolean])
-              ] = js.undefined
-      }
-      object ToJsonOptionsObject {
-        
-        inline def apply(): ToJsonOptionsObject = {
-          val __obj = js.Dynamic.literal()
-          __obj.asInstanceOf[ToJsonOptionsObject]
-        }
-        
-        extension [Self <: ToJsonOptionsObject](x: Self) {
-          
-          inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
-          
-          inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
-          
-          inline def setAssets(value: Boolean): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
-          
-          inline def setAssetsSort(value: String): Self = StObject.set(x, "assetsSort", value.asInstanceOf[js.Any])
-          
-          inline def setAssetsSortUndefined: Self = StObject.set(x, "assetsSort", js.undefined)
-          
-          inline def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
-          
-          inline def setBuiltAt(value: Boolean): Self = StObject.set(x, "builtAt", value.asInstanceOf[js.Any])
-          
-          inline def setBuiltAtUndefined: Self = StObject.set(x, "builtAt", js.undefined)
-          
-          inline def setCached(value: Boolean): Self = StObject.set(x, "cached", value.asInstanceOf[js.Any])
-          
-          inline def setCachedAssets(value: Boolean): Self = StObject.set(x, "cachedAssets", value.asInstanceOf[js.Any])
-          
-          inline def setCachedAssetsUndefined: Self = StObject.set(x, "cachedAssets", js.undefined)
-          
-          inline def setCachedUndefined: Self = StObject.set(x, "cached", js.undefined)
-          
-          inline def setChildren(value: Boolean): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-          
-          inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-          
-          inline def setChunkGroups(value: Boolean): Self = StObject.set(x, "chunkGroups", value.asInstanceOf[js.Any])
-          
-          inline def setChunkGroupsUndefined: Self = StObject.set(x, "chunkGroups", js.undefined)
-          
-          inline def setChunkModules(value: Boolean): Self = StObject.set(x, "chunkModules", value.asInstanceOf[js.Any])
-          
-          inline def setChunkModulesUndefined: Self = StObject.set(x, "chunkModules", js.undefined)
-          
-          inline def setChunkOrigins(value: Boolean): Self = StObject.set(x, "chunkOrigins", value.asInstanceOf[js.Any])
-          
-          inline def setChunkOriginsUndefined: Self = StObject.set(x, "chunkOrigins", js.undefined)
-          
-          inline def setChunks(value: Boolean): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
-          
-          inline def setChunksSort(value: String): Self = StObject.set(x, "chunksSort", value.asInstanceOf[js.Any])
-          
-          inline def setChunksSortUndefined: Self = StObject.set(x, "chunksSort", js.undefined)
-          
-          inline def setChunksUndefined: Self = StObject.set(x, "chunks", js.undefined)
-          
-          inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-          
-          inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-          
-          inline def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
-          
-          inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
-          
-          inline def setEntrypoints(value: Boolean): Self = StObject.set(x, "entrypoints", value.asInstanceOf[js.Any])
-          
-          inline def setEntrypointsUndefined: Self = StObject.set(x, "entrypoints", js.undefined)
-          
-          inline def setEnv(value: Boolean): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
-          
-          inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
-          
-          inline def setErrorDetails(value: Boolean): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
-          
-          inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
-          
-          inline def setErrors(value: Boolean): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
-          
-          inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
-          
-          inline def setExclude(value: StatsExcludeFilter): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
-          
-          inline def setExcludeAssets(value: StatsExcludeFilter): Self = StObject.set(x, "excludeAssets", value.asInstanceOf[js.Any])
-          
-          inline def setExcludeAssetsFunction1(value: /* assetName */ String => Boolean): Self = StObject.set(x, "excludeAssets", js.Any.fromFunction1(value))
-          
-          inline def setExcludeAssetsUndefined: Self = StObject.set(x, "excludeAssets", js.undefined)
-          
-          inline def setExcludeAssetsVarargs(value: ((js.Function1[/* assetName */ String, Boolean]) | RegExp | String)*): Self = StObject.set(x, "excludeAssets", js.Array(value :_*))
-          
-          inline def setExcludeFunction1(value: /* assetName */ String => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
-          
-          inline def setExcludeModules(value: StatsExcludeFilter): Self = StObject.set(x, "excludeModules", value.asInstanceOf[js.Any])
-          
-          inline def setExcludeModulesFunction1(value: /* assetName */ String => Boolean): Self = StObject.set(x, "excludeModules", js.Any.fromFunction1(value))
-          
-          inline def setExcludeModulesUndefined: Self = StObject.set(x, "excludeModules", js.undefined)
-          
-          inline def setExcludeModulesVarargs(value: ((js.Function1[/* assetName */ String, Boolean]) | RegExp | String)*): Self = StObject.set(x, "excludeModules", js.Array(value :_*))
-          
-          inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
-          
-          inline def setExcludeVarargs(value: ((js.Function1[/* assetName */ String, Boolean]) | RegExp | String)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
-          
-          inline def setHash(value: Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
-          
-          inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
-          
-          inline def setMaxModules(value: Double): Self = StObject.set(x, "maxModules", value.asInstanceOf[js.Any])
-          
-          inline def setMaxModulesUndefined: Self = StObject.set(x, "maxModules", js.undefined)
-          
-          inline def setModuleTrace(value: Boolean): Self = StObject.set(x, "moduleTrace", value.asInstanceOf[js.Any])
-          
-          inline def setModuleTraceUndefined: Self = StObject.set(x, "moduleTrace", js.undefined)
-          
-          inline def setModules(value: Boolean): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
-          
-          inline def setModulesSort(value: String): Self = StObject.set(x, "modulesSort", value.asInstanceOf[js.Any])
-          
-          inline def setModulesSortUndefined: Self = StObject.set(x, "modulesSort", js.undefined)
-          
-          inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
-          
-          inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
-          
-          inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
-          
-          inline def setProvidedExports(value: Boolean): Self = StObject.set(x, "providedExports", value.asInstanceOf[js.Any])
-          
-          inline def setProvidedExportsUndefined: Self = StObject.set(x, "providedExports", js.undefined)
-          
-          inline def setPublicPath(value: Boolean): Self = StObject.set(x, "publicPath", value.asInstanceOf[js.Any])
-          
-          inline def setPublicPathUndefined: Self = StObject.set(x, "publicPath", js.undefined)
-          
-          inline def setReasons(value: Boolean): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
-          
-          inline def setReasonsUndefined: Self = StObject.set(x, "reasons", js.undefined)
-          
-          inline def setSource(value: Boolean): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
-          
-          inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
-          
-          inline def setTimings(value: Boolean): Self = StObject.set(x, "timings", value.asInstanceOf[js.Any])
-          
-          inline def setTimingsUndefined: Self = StObject.set(x, "timings", js.undefined)
-          
-          inline def setUsedExports(value: Boolean): Self = StObject.set(x, "usedExports", value.asInstanceOf[js.Any])
-          
-          inline def setUsedExportsUndefined: Self = StObject.set(x, "usedExports", js.undefined)
-          
-          inline def setVersion(value: Boolean): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
-          
-          inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
-          
-          inline def setWarnings(value: Boolean): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
-          
-          inline def setWarningsFilter(
-            value: String | RegExp | (js.Array[String | RegExp]) | (js.Function1[/* warning */ String, Boolean])
-          ): Self = StObject.set(x, "warningsFilter", value.asInstanceOf[js.Any])
-          
-          inline def setWarningsFilterFunction1(value: /* warning */ String => Boolean): Self = StObject.set(x, "warningsFilter", js.Any.fromFunction1(value))
-          
-          inline def setWarningsFilterUndefined: Self = StObject.set(x, "warningsFilter", js.undefined)
-          
-          inline def setWarningsFilterVarargs(value: (String | RegExp)*): Self = StObject.set(x, "warningsFilter", js.Array(value :_*))
-          
-          inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
-        }
-      }
+      type ToJsonOptionsObject = StatsOptions
       
-      trait _Preset
-        extends StObject
-           with _ToJsonOptions
-      
-      trait _ToJsonOptions extends StObject
+      trait _Preset extends StObject
     }
   }
 }

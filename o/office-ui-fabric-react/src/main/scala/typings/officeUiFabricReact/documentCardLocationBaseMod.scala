@@ -10,10 +10,9 @@ object documentCardLocationBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardLocation.base", "DocumentCardLocationBase")
   @js.native
-  class DocumentCardLocationBase protected ()
-    extends Component[IDocumentCardLocationProps, js.Any, js.Any] {
+  open class DocumentCardLocationBase protected () extends Component[IDocumentCardLocationProps, Any, Any] {
     def this(props: IDocumentCardLocationProps) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
   }
 }

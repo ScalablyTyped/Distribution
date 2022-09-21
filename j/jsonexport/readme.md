@@ -10,10 +10,10 @@ Makes easy to convert JSON to CSV
 | ------------------ | :-------------: |
 | Full name          | jsonexport |
 | Keywords           | export, json, to, 2, csv, converter, output, array, object, json-to-csv, json2csv, parse, stream, transform, big, files |
-| # releases         | 10 |
-| # dependents       | 46 |
-| # downloads        | 5915540 |
-| # stars            | 10 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1085817.6666666667 |
+| # stars            | 231.0 |
 
 ## Links
 - [Homepage](https://github.com/kauegimenes/jsonexport)

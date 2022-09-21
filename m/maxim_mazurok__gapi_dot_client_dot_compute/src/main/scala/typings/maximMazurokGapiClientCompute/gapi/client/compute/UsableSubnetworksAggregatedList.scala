@@ -18,7 +18,8 @@ trait UsableSubnetworksAggregatedList extends StObject {
   
   /**
     * [Output Only] This token allows you to get the next page of results for list requests. If the number of results is larger than maxResults, use the nextPageToken as a value for the
-    * query parameter pageToken in the next list request. Subsequent list requests will have their own nextPageToken to continue paging through the results.
+    * query parameter pageToken in the next list request. Subsequent list requests will have their own nextPageToken to continue paging through the results. In special cases listUsable
+    * may return 0 subnetworks and nextPageToken which still should be used to get the next page of results.
     */
   var nextPageToken: js.UndefOr[String] = js.undefined
   
@@ -45,7 +46,7 @@ object UsableSubnetworksAggregatedList {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: UsableSubnetwork*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: UsableSubnetwork*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -1,49 +1,63 @@
 package typings.reactBootstrapTypeahead.mod
 
 import typings.react.mod.LegacyRef
+import typings.react.mod.SyntheticEvent
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.both
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.combobox
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.list
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.listbox
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InputContainerPropsSingle[T /* <: TypeaheadModel */] extends StObject {
+trait InputContainerPropsSingle[T /* <: TypeaheadModel */]
+  extends StObject
+     with InputProps {
   
-  var `aria-activedescendant`: String
+  @JSName("aria-activedescendant")
+  var `aria-activedescendant_InputContainerPropsSingle`: String
   
-  var `aria-autocomplete`: list | both
+  @JSName("aria-autocomplete")
+  var `aria-autocomplete_InputContainerPropsSingle`: list | both
   
-  var `aria-expanded`: Boolean
+  @JSName("aria-expanded")
+  var `aria-expanded_InputContainerPropsSingle`: Boolean
   
-  var `aria-haspopup`: listbox
+  @JSName("aria-haspopup")
+  var `aria-haspopup_InputContainerPropsSingle`: listbox
   
-  var `aria-owns`: String
+  @JSName("aria-owns")
+  var `aria-owns_InputContainerPropsSingle`: String
   
-  var autoComplete: String
+  @JSName("autoComplete")
+  var autoComplete_InputContainerPropsSingle: String
   
-  var disabled: Boolean
+  @JSName("disabled")
+  var disabled_InputContainerPropsSingle: Boolean
+  
+  var inputClassName: String
   
   var inputRef: LegacyRef[HTMLInputElement]
   
-  def onBlur(e: Event): Unit
+  def onBlur(e: SyntheticEvent[Element, Event]): Unit
   
   def onChange(selected: js.Array[T]): Unit
   
-  def onClick(e: Event): Unit
+  @JSName("onClick")
+  def onClick_MInputContainerPropsSingle(e: SyntheticEvent[HTMLInputElement, Event]): Unit
   
-  def onFocus(e: Event): Unit
+  def onFocus(e: SyntheticEvent[Element, Event]): Unit
   
-  def onKeyDown(e: Event): Unit
+  def onKeyDown(e: SyntheticEvent[Element, Event]): Unit
   
-  var placeholder: String | Null
+  @JSName("role")
+  var role_InputContainerPropsSingle: combobox
   
-  var role: combobox
-  
-  var value: String
+  @JSName("value")
+  var value_InputContainerPropsSingle: String
 }
 object InputContainerPropsSingle {
   
@@ -54,14 +68,15 @@ object InputContainerPropsSingle {
     `aria-owns`: String,
     autoComplete: String,
     disabled: Boolean,
-    onBlur: Event => Unit,
+    inputClassName: String,
+    onBlur: SyntheticEvent[Element, Event] => Unit,
     onChange: js.Array[T] => Unit,
-    onClick: Event => Unit,
-    onFocus: Event => Unit,
-    onKeyDown: Event => Unit,
+    onClick: SyntheticEvent[HTMLInputElement, Event] => Unit,
+    onFocus: SyntheticEvent[Element, Event] => Unit,
+    onKeyDown: SyntheticEvent[Element, Event] => Unit,
     value: String
   ): InputContainerPropsSingle[T] = {
-    val __obj = js.Dynamic.literal(autoComplete = autoComplete.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onClick = js.Any.fromFunction1(onClick), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown), role = "combobox", value = value.asInstanceOf[js.Any], inputRef = null, placeholder = null)
+    val __obj = js.Dynamic.literal(autoComplete = autoComplete.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], inputClassName = inputClassName.asInstanceOf[js.Any], onBlur = js.Any.fromFunction1(onBlur), onChange = js.Any.fromFunction1(onChange), onClick = js.Any.fromFunction1(onClick), onFocus = js.Any.fromFunction1(onFocus), onKeyDown = js.Any.fromFunction1(onKeyDown), role = "combobox", value = value.asInstanceOf[js.Any], inputRef = null)
     __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
     __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
@@ -86,25 +101,23 @@ object InputContainerPropsSingle {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
+    inline def setInputClassName(value: String): Self = StObject.set(x, "inputClassName", value.asInstanceOf[js.Any])
+    
     inline def setInputRef(value: LegacyRef[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
     
     inline def setInputRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
     
     inline def setInputRefNull: Self = StObject.set(x, "inputRef", null)
     
-    inline def setOnBlur(value: Event => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     inline def setOnChange(value: js.Array[T] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    inline def setOnClick(value: Event => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: SyntheticEvent[HTMLInputElement, Event] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    inline def setOnFocus(value: Event => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
-    inline def setOnKeyDown(value: Event => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
-    
-    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
-    
-    inline def setPlaceholderNull: Self = StObject.set(x, "placeholder", null)
+    inline def setOnKeyDown(value: SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
     inline def setRole(value: combobox): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

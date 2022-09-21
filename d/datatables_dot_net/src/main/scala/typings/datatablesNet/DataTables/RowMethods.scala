@@ -54,14 +54,19 @@ trait RowMethods
   /**
     * Get the data for the selected row
     */
-  def data(): js.Array[js.Any] | js.Object = js.native
+  def data(): js.Array[Any] | js.Object = js.native
   /**
     * Set the data for the selected row
     *
     * @param d Data to use for the row.
     */
-  def data(d: js.Array[js.Any]): Api = js.native
+  def data(d: js.Array[Any]): Api = js.native
   def data(d: js.Object): Api = js.native
+  
+  /**
+    * Deselects this row.
+    */
+  def deselect(): Api = js.native
   
   /**
     * Get the id of the selected row. Since: 1.10.8
@@ -87,4 +92,9 @@ trait RowMethods
     * Delete the selected row from the DataTable.
     */
   def remove(): Node = js.native
+  
+  /**
+    * Selects this row.
+    */
+  def select(): Api = js.native
 }

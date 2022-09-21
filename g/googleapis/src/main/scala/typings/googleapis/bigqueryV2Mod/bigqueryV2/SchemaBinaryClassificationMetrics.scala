@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Evaluation metrics for binary classification models.
-  */
 trait SchemaBinaryClassificationMetrics extends StObject {
   
   /**
@@ -18,6 +15,16 @@ trait SchemaBinaryClassificationMetrics extends StObject {
     * Binary confusion matrix at multiple thresholds.
     */
   var binaryConfusionMatrixList: js.UndefOr[js.Array[SchemaBinaryConfusionMatrix]] = js.undefined
+  
+  /**
+    * Label representing the negative class.
+    */
+  var negativeLabel: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Label representing the positive class.
+    */
+  var positiveLabel: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBinaryClassificationMetrics {
   
@@ -36,6 +43,18 @@ object SchemaBinaryClassificationMetrics {
     
     inline def setBinaryConfusionMatrixListUndefined: Self = StObject.set(x, "binaryConfusionMatrixList", js.undefined)
     
-    inline def setBinaryConfusionMatrixListVarargs(value: SchemaBinaryConfusionMatrix*): Self = StObject.set(x, "binaryConfusionMatrixList", js.Array(value :_*))
+    inline def setBinaryConfusionMatrixListVarargs(value: SchemaBinaryConfusionMatrix*): Self = StObject.set(x, "binaryConfusionMatrixList", js.Array(value*))
+    
+    inline def setNegativeLabel(value: String): Self = StObject.set(x, "negativeLabel", value.asInstanceOf[js.Any])
+    
+    inline def setNegativeLabelNull: Self = StObject.set(x, "negativeLabel", null)
+    
+    inline def setNegativeLabelUndefined: Self = StObject.set(x, "negativeLabel", js.undefined)
+    
+    inline def setPositiveLabel(value: String): Self = StObject.set(x, "positiveLabel", value.asInstanceOf[js.Any])
+    
+    inline def setPositiveLabelNull: Self = StObject.set(x, "positiveLabel", null)
+    
+    inline def setPositiveLabelUndefined: Self = StObject.set(x, "positiveLabel", js.undefined)
   }
 }

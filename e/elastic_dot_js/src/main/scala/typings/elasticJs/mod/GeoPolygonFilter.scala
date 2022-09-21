@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "GeoPolygonFilter")
 @js.native
-class GeoPolygonFilter protected () extends StObject {
+open class GeoPolygonFilter protected () extends StObject {
   /*
     Filter results to those which are contained within the polygon of points.
     */
@@ -52,7 +52,7 @@ class GeoPolygonFilter protected () extends StObject {
     list of points.  If passed an array of GeoPoint
     objects it replaces all current values.
     */
-  def points(pointsArray: js.Array[js.Any]): GeoPolygonFilter = js.native
+  def points(pointsArray: js.Array[Any]): GeoPolygonFilter = js.native
   
   /*
     Returns the filter object.

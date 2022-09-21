@@ -32,7 +32,7 @@ object SearchDirectoryPeopleResponse {
     
     inline def setPeopleUndefined: Self = StObject.set(x, "people", js.undefined)
     
-    inline def setPeopleVarargs(value: Person*): Self = StObject.set(x, "people", js.Array(value :_*))
+    inline def setPeopleVarargs(value: Person*): Self = StObject.set(x, "people", js.Array(value*))
     
     inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     

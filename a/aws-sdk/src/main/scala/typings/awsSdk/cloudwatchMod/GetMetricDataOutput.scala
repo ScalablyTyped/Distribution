@@ -34,13 +34,13 @@ object GetMetricDataOutput {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "Messages", js.undefined)
     
-    inline def setMessagesVarargs(value: MessageData*): Self = StObject.set(x, "Messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: MessageData*): Self = StObject.set(x, "Messages", js.Array(value*))
     
     inline def setMetricDataResults(value: MetricDataResults): Self = StObject.set(x, "MetricDataResults", value.asInstanceOf[js.Any])
     
     inline def setMetricDataResultsUndefined: Self = StObject.set(x, "MetricDataResults", js.undefined)
     
-    inline def setMetricDataResultsVarargs(value: MetricDataResult*): Self = StObject.set(x, "MetricDataResults", js.Array(value :_*))
+    inline def setMetricDataResultsVarargs(value: MetricDataResult*): Self = StObject.set(x, "MetricDataResults", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

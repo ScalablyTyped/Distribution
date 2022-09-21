@@ -11,25 +11,25 @@ object scrollFollowMod {
   
   @JSImport("react-lazylog/build/ScrollFollow", JSImport.Default)
   @js.native
-  class default protected () extends ScrollFollow {
+  open class default protected () extends ScrollFollow {
     def this(props: ScrollFollowProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ScrollFollowProps, context: js.Any) = this()
+    def this(props: ScrollFollowProps, context: Any) = this()
   }
   
   @JSImport("react-lazylog/build/ScrollFollow", "ScrollFollow")
   @js.native
-  class ScrollFollow protected ()
-    extends Component[ScrollFollowProps, js.Object, js.Any] {
+  open class ScrollFollow protected ()
+    extends Component[ScrollFollowProps, js.Object, Any] {
     def this(props: ScrollFollowProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ScrollFollowProps, context: js.Any) = this()
+    def this(props: ScrollFollowProps, context: Any) = this()
   }
   
   trait ScrollFollowProps extends StObject {

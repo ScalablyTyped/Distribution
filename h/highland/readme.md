@@ -10,10 +10,10 @@ The high-level streams library
 | ------------------ | :-------------: |
 | Full name          | highland |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 452 |
-| # downloads        | 2777708 |
-| # stars            | 31 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 238109.33333333334 |
+| # stars            | 3401.0 |
 
 ## Links
 - [Homepage](http://highlandjs.org/)

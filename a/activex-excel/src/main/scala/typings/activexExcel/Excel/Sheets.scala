@@ -59,7 +59,7 @@ trait Sheets[TSheet] extends StObject {
   def Move(Before: Unit, After: Sheet): Unit = js.native
   def Move(Before: Sheet): Unit = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PrintOut[T /* <: js.UndefOr[Boolean] */](
     From: js.UndefOr[Double],
@@ -83,28 +83,28 @@ trait Sheets[TSheet] extends StObject {
   @JSName("VPageBreaks")
   val VPageBreaks_Original: VPageBreaks = js.native
   
-  var Visible: js.Any = js.native
+  var Visible: Any = js.native
   
-  def _Default(Index: js.Any): js.Any = js.native
+  def _Default(Index: Any): Any = js.native
   
   def _PrintOut(
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Preview: js.UndefOr[js.Any],
-    ActivePrinter: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    PrToFileName: js.UndefOr[js.Any]
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Preview: js.UndefOr[Any],
+    ActivePrinter: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    PrToFileName: js.UndefOr[Any]
   ): Unit = js.native
   
   def __PrintOut(
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Preview: js.UndefOr[js.Any],
-    ActivePrinter: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any]
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Preview: js.UndefOr[Any],
+    ActivePrinter: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any]
   ): Unit = js.native
 }

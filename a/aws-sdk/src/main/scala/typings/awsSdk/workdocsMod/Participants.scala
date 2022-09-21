@@ -29,12 +29,12 @@ object Participants {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: GroupMetadata*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: GroupMetadata*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setUsers(value: UserMetadataList): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
     inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
-    inline def setUsersVarargs(value: UserMetadata*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UserMetadata*): Self = StObject.set(x, "Users", js.Array(value*))
   }
 }

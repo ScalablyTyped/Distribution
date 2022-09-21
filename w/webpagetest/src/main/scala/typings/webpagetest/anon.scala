@@ -21,7 +21,7 @@ object anon {
       
       inline def setLocation(value: js.Array[typings.webpagetest.mod.Location]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      inline def setLocationVarargs(value: typings.webpagetest.mod.Location*): Self = StObject.set(x, "location", js.Array(value :_*))
+      inline def setLocationVarargs(value: typings.webpagetest.mod.Location*): Self = StObject.set(x, "location", js.Array(value*))
     }
   }
   

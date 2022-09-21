@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetMedicalTranscriptionJobResponse extends StObject {
   
   /**
-    * An object that contains the results of the medical transcription job.
+    * Provides detailed information about the specified medical transcription job, including job status and, if applicable, failure reason.
     */
   var MedicalTranscriptionJob: js.UndefOr[typings.awsSdk.transcribeserviceMod.MedicalTranscriptionJob] = js.undefined
 }

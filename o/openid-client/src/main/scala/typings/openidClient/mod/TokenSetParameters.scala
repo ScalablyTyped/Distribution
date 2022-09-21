@@ -7,42 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TokenSetParameters
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
-  /**
-    * The raw access token in JWT format
-    */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * When the token set was received the expires_at field was calculated based on current timestamp
-    * and the expires_in. When recalling a TokenSet instance just the expires_at should be passed in.
-    */
   var expires_at: js.UndefOr[Double] = js.undefined
   
-  /**
-    * The raw id token in JWT format
-    */
   var id_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * Refresh token, opaque string value
-    */
   var refresh_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * space-separated scope(s) used for the authentication request
-    */
   var scope: js.UndefOr[String] = js.undefined
   
-  /**
-    * State value passed in the authentication request
-    */
   var session_state: js.UndefOr[String] = js.undefined
   
-  /**
-    * Usually "Bearer"
-    */
   var token_type: js.UndefOr[String] = js.undefined
 }
 object TokenSetParameters {

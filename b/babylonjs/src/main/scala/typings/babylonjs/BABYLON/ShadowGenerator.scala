@@ -13,7 +13,7 @@ trait ShadowGenerator
   
   /* protected */ var _bias: Double = js.native
   
-  /* protected */ def _bindCustomEffectForRenderSubMeshForShadowMap(subMesh: SubMesh, effect: Effect, matriceNames: js.Any, mesh: AbstractMesh): Unit = js.native
+  /* protected */ def _bindCustomEffectForRenderSubMeshForShadowMap(subMesh: SubMesh, effect: Effect, mesh: AbstractMesh): Unit = js.native
   
   /* protected */ var _blurBoxOffset: Double = js.native
   
@@ -39,7 +39,9 @@ trait ShadowGenerator
   
   /* protected */ var _currentFaceIndexCache: Double = js.native
   
-  /* protected */ var _currentRenderID: Double = js.native
+  /* protected */ var _currentRenderId: Double = js.native
+  
+  /* protected */ var _currentSceneUBO: UniformBuffer = js.native
   
   /* protected */ var _darkness: Double = js.native
   
@@ -51,7 +53,7 @@ trait ShadowGenerator
   
   /* protected */ def _disposeRTTandPostProcesses(): Unit = js.native
   
-  /* protected */ var _effect: Effect = js.native
+  /* protected */ def _disposeSceneUBOs(): Unit = js.native
   
   /* protected */ var _filter: Double = js.native
   
@@ -63,7 +65,7 @@ trait ShadowGenerator
   
   /* protected */ def _initializeShadowMap(): Unit = js.native
   
-  /* protected */ def _isReadyCustomDefines(defines: js.Any, subMesh: SubMesh, useInstances: Boolean): Unit = js.native
+  /* protected */ def _isReadyCustomDefines(defines: Any, subMesh: SubMesh, useInstances: Boolean): Unit = js.native
   
   /* protected */ var _kernelBlurXPostprocess: Nullable[PostProcess] = js.native
   
@@ -77,7 +79,7 @@ trait ShadowGenerator
   
   /* protected */ var _normalBias: Double = js.native
   
-  /* private */ var _prepareShadowDefines: js.Any = js.native
+  /* private */ var _prepareShadowDefines: Any = js.native
   
   /* protected */ var _projectionMatrix: Matrix = js.native
   
@@ -93,6 +95,8 @@ trait ShadowGenerator
   
   /* protected */ var _scene: Scene = js.native
   
+  /* protected */ var _sceneUBOs: js.Array[UniformBuffer] = js.native
+  
   /* protected */ var _shadowMap: Nullable[RenderTargetTexture] = js.native
   
   /* protected */ var _shadowMap2: Nullable[RenderTargetTexture] = js.native
@@ -106,6 +110,8 @@ trait ShadowGenerator
   /* protected */ var _transparencyShadow: Boolean = js.native
   
   /* protected */ var _useKernelBlur: Boolean = js.native
+  
+  /* protected */ var _useUBO: Boolean = js.native
   
   /* protected */ def _validateFilter(filter: Double): Double = js.native
   
@@ -208,6 +214,7 @@ trait ShadowGenerator
     * When it is enabled, the strength of the shadow is taken equal to mesh.visibility
     * If you enabled an alpha texture on your material, the alpha value red from the texture is also combined to compute the strength:
     *          mesh.visibility * alphaTexture.a
+    * The texture used is the diffuse by default, but it can be set to the opacity by setting useOpacityTextureForTransparentShadow
     * Note that by definition transparencyShadow must be set to true for enableSoftTransparentShadow to work!
     */
   var enableSoftTransparentShadow: Boolean = js.native
@@ -278,11 +285,11 @@ trait ShadowGenerator
   def mapSize_=(size: Double): Unit = js.native
   
   /**
-    * Gets the normalBias: offset applied on the depth preventing acnea (along side the normal direction and proportinal to the light/normal angle).
+    * Gets the normalBias: offset applied on the depth preventing acnea (along side the normal direction and proportional to the light/normal angle).
     */
   def normalBias: Double = js.native
   /**
-    * Sets the normalBias: offset applied on the depth preventing acnea (along side the normal direction and proportinal to the light/normal angle).
+    * Sets the normalBias: offset applied on the depth preventing acnea (along side the normal direction and proportional to the light/normal angle).
     */
   def normalBias_=(normalBias: Double): Unit = js.native
   
@@ -313,7 +320,7 @@ trait ShadowGenerator
     * @param defines Defines of the material we want to update
     * @param lightIndex Index of the light in the enabled light list of the material
     */
-  def prepareDefines(defines: js.Any, lightIndex: Double): Unit = js.native
+  def prepareDefines(defines: Any, lightIndex: Double): Unit = js.native
   
   /**
     * Helper function to remove a mesh and its descendants from the list of shadow casters
@@ -401,6 +408,11 @@ trait ShadowGenerator
     * Only useful in filtered mode (useBlurExponentialShadowMap...)
     */
   def useKernelBlur_=(value: Boolean): Unit = js.native
+  
+  /**
+    * If this is true, use the opacity texture's alpha channel for transparent shadows instead of the diffuse one
+    */
+  var useOpacityTextureForTransparentShadow: Boolean = js.native
   
   /**
     * Gets if the current filter is set to "PCF" (percentage closer filtering).

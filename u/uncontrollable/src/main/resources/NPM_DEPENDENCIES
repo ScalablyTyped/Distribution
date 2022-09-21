@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "uncontrollable" : "7.1.1"
+      "uncontrollable" : "7.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "uncontrollable" : "7.1.1"
+      "uncontrollable" : "7.2.1"
     }
   ],
   "compile-devDependencies" : [

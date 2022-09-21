@@ -9,11 +9,11 @@ object paramTypesMod {
   
   @JSImport("@uirouter/core/lib/params/paramTypes", "ParamTypes")
   @js.native
-  class ParamTypes () extends StObject {
+  open class ParamTypes () extends StObject {
     
     def _flushTypeQueue(): Unit = js.native
     
-    /* private */ var defaultTypes: js.Any = js.native
+    /* private */ var defaultTypes: Any = js.native
     
     def dispose(): Unit = js.native
     
@@ -24,14 +24,14 @@ object paramTypesMod {
       *
       * End users should call [[UrlMatcherFactory.type]], which delegates to this method.
       */
-    def `type`(name: String): js.Any = js.native
-    def `type`(name: String, definition: Unit, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
-    def `type`(name: String, definition: ParamTypeDefinition): js.Any = js.native
-    def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
+    def `type`(name: String): Any = js.native
+    def `type`(name: String, definition: Unit, definitionFn: js.Function0[ParamTypeDefinition]): Any = js.native
+    def `type`(name: String, definition: ParamTypeDefinition): Any = js.native
+    def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): Any = js.native
     
-    var typeQueue: js.Array[js.Any] = js.native
+    var typeQueue: js.Array[Any] = js.native
     
-    var types: js.Any = js.native
+    var types: Any = js.native
   }
   /* static members */
   object ParamTypes {

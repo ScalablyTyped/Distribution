@@ -22,6 +22,6 @@ object GooglePrivacyDlpV2ListInfoTypesResponse {
     
     inline def setInfoTypesUndefined: Self = StObject.set(x, "infoTypes", js.undefined)
     
-    inline def setInfoTypesVarargs(value: GooglePrivacyDlpV2InfoTypeDescription*): Self = StObject.set(x, "infoTypes", js.Array(value :_*))
+    inline def setInfoTypesVarargs(value: GooglePrivacyDlpV2InfoTypeDescription*): Self = StObject.set(x, "infoTypes", js.Array(value*))
   }
 }

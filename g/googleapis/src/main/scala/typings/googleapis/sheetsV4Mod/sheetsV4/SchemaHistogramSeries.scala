@@ -4,16 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A histogram series containing the series color and data.
-  */
 trait SchemaHistogramSeries extends StObject {
   
   /**
-    * The color of the column representing this series in each bucket. This
-    * field is optional.
+    * The color of the column representing this series in each bucket. This field is optional. Deprecated: Use bar_color_style.
     */
   var barColor: js.UndefOr[SchemaColor] = js.undefined
+  
+  /**
+    * The color of the column representing this series in each bucket. This field is optional. If bar_color is also set, this field takes precedence.
+    */
+  var barColorStyle: js.UndefOr[SchemaColorStyle] = js.undefined
   
   /**
     * The data for this histogram series.
@@ -30,6 +31,10 @@ object SchemaHistogramSeries {
   extension [Self <: SchemaHistogramSeries](x: Self) {
     
     inline def setBarColor(value: SchemaColor): Self = StObject.set(x, "barColor", value.asInstanceOf[js.Any])
+    
+    inline def setBarColorStyle(value: SchemaColorStyle): Self = StObject.set(x, "barColorStyle", value.asInstanceOf[js.Any])
+    
+    inline def setBarColorStyleUndefined: Self = StObject.set(x, "barColorStyle", js.undefined)
     
     inline def setBarColorUndefined: Self = StObject.set(x, "barColor", js.undefined)
     

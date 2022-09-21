@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The workflow graph.
-  */
 trait SchemaWorkflowGraph extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaWorkflowGraph {
     
     inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    inline def setNodesVarargs(value: SchemaWorkflowNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: SchemaWorkflowNode*): Self = StObject.set(x, "nodes", js.Array(value*))
   }
 }

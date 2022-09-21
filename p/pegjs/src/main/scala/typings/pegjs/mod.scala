@@ -23,9 +23,9 @@ object mod {
   
   @JSImport("pegjs", "GrammarError")
   @js.native
-  def GrammarError: js.Any = js.native
+  def GrammarError: Any = js.native
   type GrammarError = PegjsError
-  inline def GrammarError_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GrammarError")(x.asInstanceOf[js.Any])
+  inline def GrammarError_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GrammarError")(x.asInstanceOf[js.Any])
   
   inline def generate(grammar: String): Parser_ = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any]).asInstanceOf[Parser_]
   inline def generate(grammar: String, options: OutputFormatAmdCommonjs): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -42,9 +42,9 @@ object mod {
     
     @JSImport("pegjs", "parser.SyntaxError")
     @js.native
-    def SyntaxError: js.Any = js.native
+    def SyntaxError: Any = js.native
     type SyntaxError = PegjsError
-    inline def SyntaxError_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SyntaxError")(x.asInstanceOf[js.Any])
+    inline def SyntaxError_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SyntaxError")(x.asInstanceOf[js.Any])
   }
   
   trait BuildOptionsBase extends StObject {
@@ -59,7 +59,7 @@ object mod {
     var optimize: js.UndefOr[speed | size] = js.undefined
     
     /** plugins to use */
-    var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var plugins: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** makes the parser trace its progress (default: `false`) */
     var trace: js.UndefOr[Boolean] = js.undefined
@@ -77,7 +77,7 @@ object mod {
       
       inline def setAllowedStartRulesUndefined: Self = StObject.set(x, "allowedStartRules", js.undefined)
       
-      inline def setAllowedStartRulesVarargs(value: String*): Self = StObject.set(x, "allowedStartRules", js.Array(value :_*))
+      inline def setAllowedStartRulesVarargs(value: String*): Self = StObject.set(x, "allowedStartRules", js.Array(value*))
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -87,11 +87,11 @@ object mod {
       
       inline def setOptimizeUndefined: Self = StObject.set(x, "optimize", js.undefined)
       
-      inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Any*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
       
@@ -136,7 +136,7 @@ object mod {
        with BuildOptionsBase {
     
     /** parser dependencies, the value is an object which maps variables used to access the dependencies in the parser to module IDs used to load them; valid only when `format` is set to `"amd"`, `"commonjs"`, or `"umd"` (default: `{}`) */
-    var dependencies: js.UndefOr[js.Any] = js.undefined
+    var dependencies: js.UndefOr[Any] = js.undefined
     
     /** format of the genreated parser (`"amd"`, `"bare"`, `"commonjs"`, `"globals"`, or `"umd"`); valid only when `output` is set to `"source"` (default: `"bare"`) */
     var format: amd | commonjs
@@ -153,7 +153,7 @@ object mod {
     
     extension [Self <: OutputFormatAmdCommonjs](x: Self) {
       
-      inline def setDependencies(value: js.Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
       inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
@@ -195,7 +195,7 @@ object mod {
        with BuildOptionsBase {
     
     /** name of a global variable into which the parser object is assigned to when no module loader is detected; valid only when `format` is set to `"globals"` or `"umd"` (default: `null`) */
-    var exportVar: js.UndefOr[js.Any] = js.undefined
+    var exportVar: js.UndefOr[Any] = js.undefined
     
     /** format of the genreated parser (`"amd"`, `"bare"`, `"commonjs"`, `"globals"`, or `"umd"`); valid only when `output` is set to `"source"` (default: `"bare"`) */
     var format: globals
@@ -212,7 +212,7 @@ object mod {
     
     extension [Self <: OutputFormatGlobals](x: Self) {
       
-      inline def setExportVar(value: js.Any): Self = StObject.set(x, "exportVar", value.asInstanceOf[js.Any])
+      inline def setExportVar(value: Any): Self = StObject.set(x, "exportVar", value.asInstanceOf[js.Any])
       
       inline def setExportVarUndefined: Self = StObject.set(x, "exportVar", js.undefined)
       
@@ -227,10 +227,10 @@ object mod {
        with BuildOptionsBase {
     
     /** parser dependencies, the value is an object which maps variables used to access the dependencies in the parser to module IDs used to load them; valid only when `format` is set to `"amd"`, `"commonjs"`, or `"umd"` (default: `{}`) */
-    var dependencies: js.UndefOr[js.Any] = js.undefined
+    var dependencies: js.UndefOr[Any] = js.undefined
     
     /** name of a global variable into which the parser object is assigned to when no module loader is detected; valid only when `format` is set to `"globals"` or `"umd"` (default: `null`) */
-    var exportVar: js.UndefOr[js.Any] = js.undefined
+    var exportVar: js.UndefOr[Any] = js.undefined
     
     /** format of the genreated parser (`"amd"`, `"bare"`, `"commonjs"`, `"globals"`, or `"umd"`); valid only when `output` is set to `"source"` (default: `"bare"`) */
     var format: umd
@@ -247,11 +247,11 @@ object mod {
     
     extension [Self <: OutputFormatUmd](x: Self) {
       
-      inline def setDependencies(value: js.Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
       inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      inline def setExportVar(value: js.Any): Self = StObject.set(x, "exportVar", value.asInstanceOf[js.Any])
+      inline def setExportVar(value: Any): Self = StObject.set(x, "exportVar", value.asInstanceOf[js.Any])
       
       inline def setExportVarUndefined: Self = StObject.set(x, "exportVar", js.undefined)
       
@@ -313,9 +313,9 @@ object mod {
       
       var column: Double
       
-      var expected: js.Array[js.Any]
+      var expected: js.Array[Any]
       
-      var found: js.Any
+      var found: Any
       
       var line: Double
       
@@ -331,8 +331,8 @@ object mod {
       
       inline def apply(
         column: Double,
-        expected: js.Array[js.Any],
-        found: js.Any,
+        expected: js.Array[Any],
+        found: Any,
         line: Double,
         location: typings.pegjs.mod.PEG.LocationRange,
         message: String,
@@ -347,11 +347,11 @@ object mod {
         
         inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        inline def setExpected(value: js.Array[js.Any]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+        inline def setExpected(value: js.Array[Any]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
         
-        inline def setExpectedVarargs(value: js.Any*): Self = StObject.set(x, "expected", js.Array(value :_*))
+        inline def setExpectedVarargs(value: Any*): Self = StObject.set(x, "expected", js.Array(value*))
         
-        inline def setFound(value: js.Any): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
+        inline def setFound(value: Any): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
         
         inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
         
@@ -390,11 +390,11 @@ object mod {
   
   trait ParserOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var startRule: js.UndefOr[String] = js.undefined
     
-    var tracer: js.UndefOr[js.Any] = js.undefined
+    var tracer: js.UndefOr[Any] = js.undefined
   }
   object ParserOptions {
     
@@ -409,7 +409,7 @@ object mod {
       
       inline def setStartRuleUndefined: Self = StObject.set(x, "startRule", js.undefined)
       
-      inline def setTracer(value: js.Any): Self = StObject.set(x, "tracer", value.asInstanceOf[js.Any])
+      inline def setTracer(value: Any): Self = StObject.set(x, "tracer", value.asInstanceOf[js.Any])
       
       inline def setTracerUndefined: Self = StObject.set(x, "tracer", js.undefined)
     }
@@ -418,10 +418,10 @@ object mod {
   @js.native
   trait Parser_ extends StObject {
     
-    var SyntaxError: js.Any = js.native
+    var SyntaxError: Any = js.native
     
-    def parse(input: String): js.Any = js.native
-    def parse(input: String, options: ParserOptions): js.Any = js.native
+    def parse(input: String): Any = js.native
+    def parse(input: String, options: ParserOptions): Any = js.native
   }
   
   trait PegjsError
@@ -430,12 +430,12 @@ object mod {
     
     var expected: js.UndefOr[js.Array[ExpectedItem]] = js.undefined
     
-    var found: js.UndefOr[js.Any] = js.undefined
+    var found: js.UndefOr[Any] = js.undefined
     
     var location: LocationRange
     
     @JSName("stack")
-    var stack_PegjsError: js.UndefOr[js.Any] = js.undefined
+    var stack_PegjsError: js.UndefOr[Any] = js.undefined
   }
   object PegjsError {
     
@@ -450,15 +450,15 @@ object mod {
       
       inline def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
       
-      inline def setExpectedVarargs(value: ExpectedItem*): Self = StObject.set(x, "expected", js.Array(value :_*))
+      inline def setExpectedVarargs(value: ExpectedItem*): Self = StObject.set(x, "expected", js.Array(value*))
       
-      inline def setFound(value: js.Any): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
+      inline def setFound(value: Any): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
       
       inline def setFoundUndefined: Self = StObject.set(x, "found", js.undefined)
       
       inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      inline def setStack(value: js.Any): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: Any): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
       inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }

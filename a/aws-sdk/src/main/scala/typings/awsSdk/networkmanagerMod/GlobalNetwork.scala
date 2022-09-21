@@ -9,22 +9,22 @@ trait GlobalNetwork extends StObject {
   /**
     * The date and time that the global network was created.
     */
-  var CreatedAt: js.UndefOr[DateTime] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the global network.
     */
-  var Description: js.UndefOr[String] = js.undefined
+  var Description: js.UndefOr[ConstrainedString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the global network.
     */
-  var GlobalNetworkArn: js.UndefOr[String] = js.undefined
+  var GlobalNetworkArn: js.UndefOr[typings.awsSdk.networkmanagerMod.GlobalNetworkArn] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: js.UndefOr[String] = js.undefined
+  var GlobalNetworkId: js.UndefOr[typings.awsSdk.networkmanagerMod.GlobalNetworkId] = js.undefined
   
   /**
     * The state of the global network.
@@ -45,19 +45,19 @@ object GlobalNetwork {
   
   extension [Self <: GlobalNetwork](x: Self) {
     
-    inline def setCreatedAt(value: DateTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ConstrainedString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    inline def setGlobalNetworkArn(value: String): Self = StObject.set(x, "GlobalNetworkArn", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkArn(value: GlobalNetworkArn): Self = StObject.set(x, "GlobalNetworkArn", value.asInstanceOf[js.Any])
     
     inline def setGlobalNetworkArnUndefined: Self = StObject.set(x, "GlobalNetworkArn", js.undefined)
     
-    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
     inline def setGlobalNetworkIdUndefined: Self = StObject.set(x, "GlobalNetworkId", js.undefined)
     
@@ -69,6 +69,6 @@ object GlobalNetwork {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

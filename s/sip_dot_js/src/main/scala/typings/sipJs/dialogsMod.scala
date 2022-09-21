@@ -18,7 +18,7 @@ object dialogsMod {
   
   @JSImport("sip.js/lib/core/dialogs", "Dialog")
   @js.native
-  class Dialog protected ()
+  open class Dialog protected ()
     extends typings.sipJs.dialogMod.Dialog {
     /**
       * Dialog constructor.
@@ -57,7 +57,7 @@ object dialogsMod {
   
   @JSImport("sip.js/lib/core/dialogs", "SessionDialog")
   @js.native
-  class SessionDialog protected ()
+  open class SessionDialog protected ()
     extends typings.sipJs.sessionDialogMod.SessionDialog {
     def this(initialTransaction: InviteClientTransaction, core: UserAgentCore, state: DialogState) = this()
     def this(initialTransaction: InviteServerTransaction, core: UserAgentCore, state: DialogState) = this()
@@ -77,7 +77,7 @@ object dialogsMod {
   
   @JSImport("sip.js/lib/core/dialogs", "SubscriptionDialog")
   @js.native
-  class SubscriptionDialog protected ()
+  open class SubscriptionDialog protected ()
     extends typings.sipJs.subscriptionDialogMod.SubscriptionDialog {
     def this(
       subscriptionEvent: String,

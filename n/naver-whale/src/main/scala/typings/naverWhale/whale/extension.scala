@@ -17,6 +17,13 @@ object `extension` {
   
   trait FetchProperties extends StObject {
     
+    /**
+      * Optional.
+      * Chrome 54+
+      * Find a view according to a tab id. If this field is omitted, returns all views.
+      */
+    var tabId: js.UndefOr[Double] = js.undefined
+    
     /** Optional. The type of view to get. If omitted, returns all views (including background pages and tabs). Valid values: 'tab', 'notification', 'popup'.  */
     var `type`: js.UndefOr[String] = js.undefined
     
@@ -31,6 +38,10 @@ object `extension` {
     }
     
     extension [Self <: FetchProperties](x: Self) {
+      
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -62,13 +73,13 @@ object `extension` {
   
   type OnRequestEvent = Event[
     (js.Function3[
-      /* request */ js.Any, 
+      /* request */ Any, 
       /* sender */ MessageSender, 
-      /* sendResponse */ js.Function1[/* response */ js.Any, Unit], 
+      /* sendResponse */ js.Function1[/* response */ Any, Unit], 
       Unit
     ]) | (js.Function2[
       /* sender */ MessageSender, 
-      /* sendResponse */ js.Function1[/* response */ js.Any, Unit], 
+      /* sendResponse */ js.Function1[/* response */ Any, Unit], 
       Unit
     ])
   ]

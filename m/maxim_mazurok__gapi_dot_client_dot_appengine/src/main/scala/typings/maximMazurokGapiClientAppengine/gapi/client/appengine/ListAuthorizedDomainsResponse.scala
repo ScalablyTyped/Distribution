@@ -25,7 +25,7 @@ object ListAuthorizedDomainsResponse {
     
     inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    inline def setDomainsVarargs(value: AuthorizedDomain*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: AuthorizedDomain*): Self = StObject.set(x, "domains", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

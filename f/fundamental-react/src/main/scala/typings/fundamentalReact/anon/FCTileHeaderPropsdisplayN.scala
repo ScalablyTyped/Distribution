@@ -2,7 +2,6 @@ package typings.fundamentalReact.anon
 
 import typings.fundamentalReact.fundamentalReactStrings.TileDotHeader
 import typings.fundamentalReact.tileMod.TileHeaderProps
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
@@ -13,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FCTileHeaderPropsdisplayN extends StObject {
   
-  def apply(props: PropsWithChildren[TileHeaderProps]): ReactElement | Null = js.native
-  def apply(props: PropsWithChildren[TileHeaderProps], context: js.Any): ReactElement | Null = js.native
+  def apply(props: TileHeaderProps): ReactElement | Null = js.native
+  def apply(props: TileHeaderProps, context: Any): ReactElement | Null = js.native
   
-  var contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
+  var contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
   
   var defaultProps: js.UndefOr[PartialTileHeaderProps] = js.native
   

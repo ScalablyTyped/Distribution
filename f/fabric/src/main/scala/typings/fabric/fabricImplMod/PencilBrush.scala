@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric/fabric-impl", "PencilBrush")
 @js.native
-class PencilBrush () extends BaseBrush {
+open class PencilBrush protected () extends BaseBrush {
+  /**
+    * Constructor
+    * @param {Canvas} canvas
+    */
+  def this(canvas: Canvas) = this()
   
   /**
     * Converts points to SVG path
@@ -23,4 +28,11 @@ class PencilBrush () extends BaseBrush {
     * @param pathData Path data
     */
   def createPath(pathData: String): Path = js.native
+  
+  /**
+    * Constructor
+    * @param {Canvas} canvas
+    * @return {PencilBrush} Instance of a pencil brush
+    */
+  def initialize(canvas: Canvas): PencilBrush = js.native
 }

@@ -33,6 +33,6 @@ object ListOTAUpdatesResponse {
     
     inline def setOtaUpdatesUndefined: Self = StObject.set(x, "otaUpdates", js.undefined)
     
-    inline def setOtaUpdatesVarargs(value: OTAUpdateSummary*): Self = StObject.set(x, "otaUpdates", js.Array(value :_*))
+    inline def setOtaUpdatesVarargs(value: OTAUpdateSummary*): Self = StObject.set(x, "otaUpdates", js.Array(value*))
   }
 }

@@ -25,12 +25,12 @@ object InventorySizeTargeting {
     
     inline def setExcludedInventorySizesUndefined: Self = StObject.set(x, "excludedInventorySizes", js.undefined)
     
-    inline def setExcludedInventorySizesVarargs(value: AdSize*): Self = StObject.set(x, "excludedInventorySizes", js.Array(value :_*))
+    inline def setExcludedInventorySizesVarargs(value: AdSize*): Self = StObject.set(x, "excludedInventorySizes", js.Array(value*))
     
     inline def setTargetedInventorySizes(value: js.Array[AdSize]): Self = StObject.set(x, "targetedInventorySizes", value.asInstanceOf[js.Any])
     
     inline def setTargetedInventorySizesUndefined: Self = StObject.set(x, "targetedInventorySizes", js.undefined)
     
-    inline def setTargetedInventorySizesVarargs(value: AdSize*): Self = StObject.set(x, "targetedInventorySizes", js.Array(value :_*))
+    inline def setTargetedInventorySizesVarargs(value: AdSize*): Self = StObject.set(x, "targetedInventorySizes", js.Array(value*))
   }
 }

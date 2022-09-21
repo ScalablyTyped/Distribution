@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("dav", "Calendar")
 @js.native
-class Calendar () extends DAVCollection[CalendarObject] {
+open class Calendar () extends DAVCollection[CalendarObject] {
   def this(options: CalendarOptions) = this()
   
   var components: js.Array[String] = js.native

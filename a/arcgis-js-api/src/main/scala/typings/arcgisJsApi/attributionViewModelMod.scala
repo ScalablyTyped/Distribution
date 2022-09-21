@@ -22,7 +22,7 @@ object attributionViewModelMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution-AttributionViewModel.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with AttributionViewModel {
     def this(properties: AttributionViewModelProperties) = this()

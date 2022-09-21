@@ -1,7 +1,7 @@
 
 # Scala.js typings for unique-random
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Generate random numbers that are consecutively unique
@@ -10,10 +10,10 @@ Generate random numbers that are consecutively unique
 | ------------------ | :-------------: |
 | Full name          | unique-random |
 | Keywords           | unique, random, number, single, generate, non-repeating, consecutively |
-| # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 1428136 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 171490.33333333334 |
+| # stars            | 98.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/unique-random#readme)

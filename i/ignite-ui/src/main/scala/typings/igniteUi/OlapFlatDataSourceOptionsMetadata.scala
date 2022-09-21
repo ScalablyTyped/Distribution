@@ -10,7 +10,7 @@ trait OlapFlatDataSourceOptionsMetadata
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Optional="false" Metadata used for the creation of the cube.

@@ -62,7 +62,7 @@ trait PartialManifest extends StObject {
     * App author information
     * @see[Not implemented anywhere in code]{@link https://github.com/chromium/chromium/blob/master/chrome/browser/chromeos/extensions/device_local_account_management_policy_provider.cc#L46}
     */
-  var author: js.UndefOr[Email | js.Any] = js.undefined
+  var author: js.UndefOr[Email | Any] = js.undefined
   
   /**
     * Allows inspection of page contents, not enabled on stable anyways except for whitelist.
@@ -279,7 +279,7 @@ trait PartialManifest extends StObject {
   var short_name: js.UndefOr[String] = js.undefined
   
   /** Doc missing. Declared as a feature, but unused. */
-  var signature: js.UndefOr[js.Any] = js.undefined
+  var signature: js.UndefOr[Any] = js.undefined
   
   /**
     * The sockets manifest property declares which permissions are available
@@ -378,11 +378,11 @@ object PartialManifest {
     
     inline def setAction_handlersUndefined: Self = StObject.set(x, "action_handlers", js.undefined)
     
-    inline def setAction_handlersVarargs(value: (ToStringLiteral[NEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]])*): Self = StObject.set(x, "action_handlers", js.Array(value :_*))
+    inline def setAction_handlersVarargs(value: (ToStringLiteral[NEWNOTE, NEW_NOTE, Exclude[NEW_NOTE, new_note_]])*): Self = StObject.set(x, "action_handlers", js.Array(value*))
     
     inline def setApp(value: Background): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    inline def setAuthor(value: Email | js.Any): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Email | Any): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
@@ -422,7 +422,7 @@ object PartialManifest {
     
     inline def setEvent_rulesUndefined: Self = StObject.set(x, "event_rules", js.undefined)
     
-    inline def setEvent_rulesVarargs(value: Actions*): Self = StObject.set(x, "event_rules", js.Array(value :_*))
+    inline def setEvent_rulesVarargs(value: Actions*): Self = StObject.set(x, "event_rules", js.Array(value*))
     
     inline def setExternally_connectable(value: Accepttlschannelid): Self = StObject.set(x, "externally_connectable", value.asInstanceOf[js.Any])
     
@@ -430,7 +430,7 @@ object PartialManifest {
     
     inline def setFile_browser_handlersUndefined: Self = StObject.set(x, "file_browser_handlers", js.undefined)
     
-    inline def setFile_browser_handlersVarargs(value: Defaulticon*): Self = StObject.set(x, "file_browser_handlers", js.Array(value :_*))
+    inline def setFile_browser_handlersVarargs(value: Defaulticon*): Self = StObject.set(x, "file_browser_handlers", js.Array(value*))
     
     inline def setFile_handlers(value: StringDictionary[Extensions]): Self = StObject.set(x, "file_handlers", value.asInstanceOf[js.Any])
     
@@ -448,7 +448,7 @@ object PartialManifest {
     
     inline def setImportUndefined: Self = StObject.set(x, "import", js.undefined)
     
-    inline def setImportVarargs(value: Id*): Self = StObject.set(x, "import", js.Array(value :_*))
+    inline def setImportVarargs(value: Id*): Self = StObject.set(x, "import", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
@@ -464,7 +464,7 @@ object PartialManifest {
     
     inline def setNacl_modulesUndefined: Self = StObject.set(x, "nacl_modules", js.undefined)
     
-    inline def setNacl_modulesVarargs(value: Mimetype*): Self = StObject.set(x, "nacl_modules", js.Array(value :_*))
+    inline def setNacl_modulesVarargs(value: Mimetype*): Self = StObject.set(x, "nacl_modules", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -480,19 +480,19 @@ object PartialManifest {
     
     inline def setOptional_permissionsUndefined: Self = StObject.set(x, "optional_permissions", js.undefined)
     
-    inline def setOptional_permissionsVarargs(value: (js.Array[UrlMatches] | OptionalPermission | String)*): Self = StObject.set(x, "optional_permissions", js.Array(value :_*))
+    inline def setOptional_permissionsVarargs(value: (js.Array[UrlMatches] | OptionalPermission | String)*): Self = StObject.set(x, "optional_permissions", js.Array(value*))
     
     inline def setPermissions(value: js.Array[Permission | String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: (Permission | String)*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: (Permission | String)*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setPlatforms(value: js.Array[Naclarch]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     
     inline def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
     
-    inline def setPlatformsVarargs(value: Naclarch*): Self = StObject.set(x, "platforms", js.Array(value :_*))
+    inline def setPlatformsVarargs(value: Naclarch*): Self = StObject.set(x, "platforms", js.Array(value*))
     
     inline def setRequirements(value: `3D`): Self = StObject.set(x, "requirements", value.asInstanceOf[js.Any])
     
@@ -506,7 +506,7 @@ object PartialManifest {
     
     inline def setShort_nameUndefined: Self = StObject.set(x, "short_name", js.undefined)
     
-    inline def setSignature(value: js.Any): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: Any): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
     inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     

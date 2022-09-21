@@ -71,7 +71,7 @@ object mod {
   
   @JSImport("ts3-nodejs-library/lib", "EventError")
   @js.native
-  class EventError protected ()
+  open class EventError protected ()
     extends typings.ts3NodejsLibrary.eventErrorMod.EventError {
     /**
       * @param message error message
@@ -160,7 +160,7 @@ object mod {
   
   @JSImport("ts3-nodejs-library/lib", "QueryProtocol")
   @js.native
-  val QueryProtocol: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TeamSpeak.QueryProtocol */ js.Any = js.native
+  val QueryProtocol: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TeamSpeak.QueryProtocol */ Any = js.native
   
   @JSImport("ts3-nodejs-library/lib", "ReasonIdentifier")
   @js.native
@@ -176,14 +176,14 @@ object mod {
   
   @JSImport("ts3-nodejs-library/lib", "ResponseError")
   @js.native
-  class ResponseError protected ()
+  open class ResponseError protected ()
     extends typings.ts3NodejsLibrary.responseErrorMod.ResponseError {
     def this(error: QueryErrorMessage, stack: String) = this()
   }
   
   @JSImport("ts3-nodejs-library/lib", "TeamSpeak")
   @js.native
-  class TeamSpeak protected ()
+  open class TeamSpeak protected ()
     extends typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak {
     def this(config: PartialConnectionParams) = this()
   }
@@ -237,12 +237,12 @@ object mod {
       * waits a set time of ms
       * @param time time in ms to wait
       */
-    inline def wait(time: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(time.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def wait(time: Double): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(time.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   }
   
   @JSImport("ts3-nodejs-library/lib", "TeamSpeakChannel")
   @js.native
-  class TeamSpeakChannel protected ()
+  open class TeamSpeakChannel protected ()
     extends typings.ts3NodejsLibrary.channelMod.TeamSpeakChannel {
     def this(parent: typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak, list: ChannelEntry) = this()
   }
@@ -263,7 +263,7 @@ object mod {
   
   @JSImport("ts3-nodejs-library/lib", "TeamSpeakChannelGroup")
   @js.native
-  class TeamSpeakChannelGroup protected ()
+  open class TeamSpeakChannelGroup protected ()
     extends typings.ts3NodejsLibrary.channelGroupMod.TeamSpeakChannelGroup {
     def this(parent: typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak, list: ChannelGroupEntry) = this()
   }
@@ -284,7 +284,7 @@ object mod {
   
   @JSImport("ts3-nodejs-library/lib", "TeamSpeakClient")
   @js.native
-  class TeamSpeakClient protected ()
+  open class TeamSpeakClient protected ()
     extends typings.ts3NodejsLibrary.clientMod.TeamSpeakClient {
     def this(parent: typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak, list: ClientEntry) = this()
   }
@@ -319,7 +319,7 @@ object mod {
   
   @JSImport("ts3-nodejs-library/lib", "TeamSpeakServer")
   @js.native
-  class TeamSpeakServer protected ()
+  open class TeamSpeakServer protected ()
     extends typings.ts3NodejsLibrary.serverMod.TeamSpeakServer {
     def this(parent: typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak, list: ServerEntry) = this()
   }
@@ -340,7 +340,7 @@ object mod {
   
   @JSImport("ts3-nodejs-library/lib", "TeamSpeakServerGroup")
   @js.native
-  class TeamSpeakServerGroup protected ()
+  open class TeamSpeakServerGroup protected ()
     extends typings.ts3NodejsLibrary.serverGroupMod.TeamSpeakServerGroup {
     def this(parent: typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak, list: ServerGroupEntry) = this()
   }

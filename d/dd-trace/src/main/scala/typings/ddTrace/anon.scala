@@ -1,9 +1,7 @@
 package typings.ddTrace
 
 import typings.ddTrace.ddTraceStrings.agent
-import typings.ddTrace.ddTraceStrings.browser
 import typings.ddTrace.ddTraceStrings.log
-import typings.ddTrace.mod.SamplingRule
 import typings.ddTrace.mod.TransportRequestParams
 import typings.ddTrace.mod.anyObject
 import typings.ddTrace.mod.plugins.ExecutionArgs
@@ -11,9 +9,6 @@ import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.opentracing.mod.Span
-import typings.std.Error
-import typings.std.Number
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +25,7 @@ object anon {
           /* span */ js.UndefOr[Span], 
           /* req */ js.UndefOr[ClientRequest], 
           /* res */ js.UndefOr[IncomingMessage], 
-          js.Any
+          Any
         ]
       ] = js.undefined
   }
@@ -44,7 +39,7 @@ object anon {
     extension [Self <: `0`](x: Self) {
       
       inline def setRequest(
-        value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[ClientRequest], /* res */ js.UndefOr[IncomingMessage]) => js.Any
+        value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[ClientRequest], /* res */ js.UndefOr[IncomingMessage]) => Any
       ): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
       
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
@@ -57,7 +52,7 @@ object anon {
       * Hook to execute just before the aws span finishes.
       */
     var request: js.UndefOr[
-        js.Function2[/* span */ js.UndefOr[Span], /* response */ js.UndefOr[anyObject], js.Any]
+        js.Function2[/* span */ js.UndefOr[Span], /* response */ js.UndefOr[anyObject], Any]
       ] = js.undefined
   }
   object `1` {
@@ -69,7 +64,7 @@ object anon {
     
     extension [Self <: `1`](x: Self) {
       
-      inline def setRequest(value: (/* span */ js.UndefOr[Span], /* response */ js.UndefOr[anyObject]) => js.Any): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
+      inline def setRequest(value: (/* span */ js.UndefOr[Span], /* response */ js.UndefOr[anyObject]) => Any): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
       
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     }
@@ -84,8 +79,8 @@ object anon {
         js.Function3[
           /* span */ js.UndefOr[Span], 
           /* req */ js.UndefOr[IncomingMessage | ClientRequest], 
-          /* res */ js.UndefOr[ServerResponse | IncomingMessage], 
-          js.Any
+          /* res */ js.UndefOr[ServerResponse[IncomingMessage] | IncomingMessage], 
+          Any
         ]
       ] = js.undefined
   }
@@ -99,7 +94,7 @@ object anon {
     extension [Self <: `2`](x: Self) {
       
       inline def setRequest(
-        value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[IncomingMessage | ClientRequest], /* res */ js.UndefOr[ServerResponse | IncomingMessage]) => js.Any
+        value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[IncomingMessage | ClientRequest], /* res */ js.UndefOr[ServerResponse[IncomingMessage] | IncomingMessage]) => Any
       ): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
       
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
@@ -111,12 +106,6 @@ object anon {
     var b3: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * List of origins to whitelist for distributed tracing. This is used to determine whether to propagate context from the browser for CORS.
-      * @default []
-      */
-    var distributedTracingOriginWhitelist: js.UndefOr[js.Array[String | RegExp]] = js.undefined
-    
-    /**
       * Whether to enable the experimental `getRumData` method.
       * @default false
       */
@@ -126,18 +115,20 @@ object anon {
       * Whether to write traces to log output, rather than send to an agent
       * @default false
       */
-    var exporter: js.UndefOr[log | browser | agent] = js.undefined
+    var exporter: js.UndefOr[log | agent] = js.undefined
     
     /**
-      * Whether to add an auto-generated `runtime-id` tag to spans and metrics.
+      * Configuration of the IAST. Can be a boolean as an alias to `iast.enabled`.
+      */
+    var iast: js.UndefOr[Boolean | Enabled] = js.undefined
+    
+    /**
+      * Whether to add an auto-generated `runtime-id` tag to metrics.
       * @default false
       */
     var runtimeId: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Configuration of the priority sampler. Supports a global config and rules by span name or service name. The first matching rule is applied, and if no rule matches it falls back to the global config or on the rates provided by the agent if there is no global config.
-      */
-    var sampler: js.UndefOr[Rules] = js.undefined
+    var traceparent: js.UndefOr[Boolean] = js.undefined
   }
   object B3 {
     
@@ -152,27 +143,25 @@ object anon {
       
       inline def setB3Undefined: Self = StObject.set(x, "b3", js.undefined)
       
-      inline def setDistributedTracingOriginWhitelist(value: js.Array[String | RegExp]): Self = StObject.set(x, "distributedTracingOriginWhitelist", value.asInstanceOf[js.Any])
-      
-      inline def setDistributedTracingOriginWhitelistUndefined: Self = StObject.set(x, "distributedTracingOriginWhitelist", js.undefined)
-      
-      inline def setDistributedTracingOriginWhitelistVarargs(value: (String | RegExp)*): Self = StObject.set(x, "distributedTracingOriginWhitelist", js.Array(value :_*))
-      
       inline def setEnableGetRumData(value: Boolean): Self = StObject.set(x, "enableGetRumData", value.asInstanceOf[js.Any])
       
       inline def setEnableGetRumDataUndefined: Self = StObject.set(x, "enableGetRumData", js.undefined)
       
-      inline def setExporter(value: log | browser | agent): Self = StObject.set(x, "exporter", value.asInstanceOf[js.Any])
+      inline def setExporter(value: log | agent): Self = StObject.set(x, "exporter", value.asInstanceOf[js.Any])
       
       inline def setExporterUndefined: Self = StObject.set(x, "exporter", js.undefined)
+      
+      inline def setIast(value: Boolean | Enabled): Self = StObject.set(x, "iast", value.asInstanceOf[js.Any])
+      
+      inline def setIastUndefined: Self = StObject.set(x, "iast", js.undefined)
       
       inline def setRuntimeId(value: Boolean): Self = StObject.set(x, "runtimeId", value.asInstanceOf[js.Any])
       
       inline def setRuntimeIdUndefined: Self = StObject.set(x, "runtimeId", js.undefined)
       
-      inline def setSampler(value: Rules): Self = StObject.set(x, "sampler", value.asInstanceOf[js.Any])
+      inline def setTraceparent(value: Boolean): Self = StObject.set(x, "traceparent", value.asInstanceOf[js.Any])
       
-      inline def setSamplerUndefined: Self = StObject.set(x, "sampler", js.undefined)
+      inline def setTraceparentUndefined: Self = StObject.set(x, "traceparent", js.undefined)
     }
   }
   
@@ -182,11 +171,64 @@ object anon {
     def debug(message: String): Unit = js.native
     
     def error(err: String): Unit = js.native
-    def error(err: Error): Unit = js.native
+    def error(err: js.Error): Unit = js.native
     
     def info(message: String): Unit = js.native
     
     def warn(message: String): Unit = js.native
+  }
+  
+  trait Enabled extends StObject {
+    
+    /**
+      * Whether to enable IAST.
+      * @default false
+      */
+    var enabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Controls how many request can be analyzing code vulnerabilities at the same time
+      * @default 2
+      */
+    var maxConcurrentRequests: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Controls how many code vulnerabilities can be detected in the same request
+      * @default 2
+      */
+    var maxContextOperations: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Controls the percentage of requests that iast will analyze
+      * @default 30
+      */
+    var requestSampling: js.UndefOr[Double] = js.undefined
+  }
+  object Enabled {
+    
+    inline def apply(): Enabled = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Enabled]
+    }
+    
+    extension [Self <: Enabled](x: Self) {
+      
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      
+      inline def setMaxConcurrentRequests(value: Double): Self = StObject.set(x, "maxConcurrentRequests", value.asInstanceOf[js.Any])
+      
+      inline def setMaxConcurrentRequestsUndefined: Self = StObject.set(x, "maxConcurrentRequests", js.undefined)
+      
+      inline def setMaxContextOperations(value: Double): Self = StObject.set(x, "maxContextOperations", value.asInstanceOf[js.Any])
+      
+      inline def setMaxContextOperationsUndefined: Self = StObject.set(x, "maxContextOperations", js.undefined)
+      
+      inline def setRequestSampling(value: Double): Self = StObject.set(x, "requestSampling", value.asInstanceOf[js.Any])
+      
+      inline def setRequestSamplingUndefined: Self = StObject.set(x, "requestSampling", js.undefined)
+    }
   }
   
   trait Execute extends StObject {
@@ -195,7 +237,25 @@ object anon {
         js.Function3[
           /* span */ js.UndefOr[typings.ddTrace.mod.Span], 
           /* args */ js.UndefOr[ExecutionArgs], 
-          /* res */ js.UndefOr[js.Any], 
+          /* res */ js.UndefOr[Any], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    var parse: js.UndefOr[
+        js.Function3[
+          /* span */ js.UndefOr[typings.ddTrace.mod.Span], 
+          /* source */ js.UndefOr[Any], 
+          /* document */ js.UndefOr[Any], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    var validate: js.UndefOr[
+        js.Function3[
+          /* span */ js.UndefOr[typings.ddTrace.mod.Span], 
+          /* document */ js.UndefOr[Any], 
+          /* errors */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -210,10 +270,22 @@ object anon {
     extension [Self <: Execute](x: Self) {
       
       inline def setExecute(
-        value: (/* span */ js.UndefOr[typings.ddTrace.mod.Span], /* args */ js.UndefOr[ExecutionArgs], /* res */ js.UndefOr[js.Any]) => Unit
+        value: (/* span */ js.UndefOr[typings.ddTrace.mod.Span], /* args */ js.UndefOr[ExecutionArgs], /* res */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
       
       inline def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
+      
+      inline def setParse(
+        value: (/* span */ js.UndefOr[typings.ddTrace.mod.Span], /* source */ js.UndefOr[Any], /* document */ js.UndefOr[Any]) => Unit
+      ): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
+      
+      inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+      
+      inline def setValidate(
+        value: (/* span */ js.UndefOr[typings.ddTrace.mod.Span], /* document */ js.UndefOr[Any], /* errors */ js.UndefOr[Any]) => Unit
+      ): Self = StObject.set(x, "validate", js.Any.fromFunction3(value))
+      
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   
@@ -249,13 +321,83 @@ object anon {
     }
   }
   
+  trait ObfuscatorKeyRegex extends StObject {
+    
+    /**
+      * Whether to enable AppSec.
+      * @default false
+      */
+    var enabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Specifies a regex that will redact sensitive data by its key in attack reports.
+      */
+    var obfuscatorKeyRegex: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Specifies a regex that will redact sensitive data by its value in attack reports.
+      */
+    var obfuscatorValueRegex: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Controls the maximum amount of traces sampled by AppSec attacks, per second.
+      * @default 100
+      */
+    var rateLimit: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Specifies a path to a custom rules file.
+      */
+    var rules: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Controls the maximum amount of time in microseconds the WAF is allowed to run synchronously for.
+      * @default 5000
+      */
+    var wafTimeout: js.UndefOr[Double] = js.undefined
+  }
+  object ObfuscatorKeyRegex {
+    
+    inline def apply(): ObfuscatorKeyRegex = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ObfuscatorKeyRegex]
+    }
+    
+    extension [Self <: ObfuscatorKeyRegex](x: Self) {
+      
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      
+      inline def setObfuscatorKeyRegex(value: String): Self = StObject.set(x, "obfuscatorKeyRegex", value.asInstanceOf[js.Any])
+      
+      inline def setObfuscatorKeyRegexUndefined: Self = StObject.set(x, "obfuscatorKeyRegex", js.undefined)
+      
+      inline def setObfuscatorValueRegex(value: String): Self = StObject.set(x, "obfuscatorValueRegex", value.asInstanceOf[js.Any])
+      
+      inline def setObfuscatorValueRegexUndefined: Self = StObject.set(x, "obfuscatorValueRegex", js.undefined)
+      
+      inline def setRateLimit(value: Double): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      
+      inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
+      
+      inline def setRules(value: String): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      
+      inline def setWafTimeout(value: Double): Self = StObject.set(x, "wafTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setWafTimeoutUndefined: Self = StObject.set(x, "wafTimeout", js.undefined)
+    }
+  }
+  
   trait Query extends StObject {
     
     /**
       * Hook to execute just before the query span finishes.
       */
     var query: js.UndefOr[
-        js.Function2[/* span */ js.UndefOr[Span], /* params */ js.UndefOr[TransportRequestParams], js.Any]
+        js.Function2[/* span */ js.UndefOr[Span], /* params */ js.UndefOr[TransportRequestParams], Any]
       ] = js.undefined
   }
   object Query {
@@ -267,7 +409,7 @@ object anon {
     
     extension [Self <: Query](x: Self) {
       
-      inline def setQuery(value: (/* span */ js.UndefOr[Span], /* params */ js.UndefOr[TransportRequestParams]) => js.Any): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
+      inline def setQuery(value: (/* span */ js.UndefOr[Span], /* params */ js.UndefOr[TransportRequestParams]) => Any): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
@@ -276,7 +418,7 @@ object anon {
   trait RateLimit extends StObject {
     
     /**
-      * Controls the ingestion rate limit between the agent and the backend.
+      * Controls the ingestion rate limit between the agent and the backend. Defaults to deferring the decision to the agent.
       */
     var rateLimit: js.UndefOr[Double] = js.undefined
     
@@ -304,6 +446,46 @@ object anon {
     }
   }
   
+  trait Receive extends StObject {
+    
+    /**
+      * Hook to execute just when the span is created.
+      */
+    var receive: js.UndefOr[js.Function2[/* span */ js.UndefOr[Span], /* request */ js.UndefOr[Any], Any]] = js.undefined
+    
+    /**
+      * Hook to execute just when the span is finished.
+      */
+    var reply: js.UndefOr[
+        js.Function3[
+          /* span */ js.UndefOr[Span], 
+          /* request */ js.UndefOr[Any], 
+          /* response */ js.UndefOr[Any], 
+          Any
+        ]
+      ] = js.undefined
+  }
+  object Receive {
+    
+    inline def apply(): Receive = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Receive]
+    }
+    
+    extension [Self <: Receive](x: Self) {
+      
+      inline def setReceive(value: (/* span */ js.UndefOr[Span], /* request */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "receive", js.Any.fromFunction2(value))
+      
+      inline def setReceiveUndefined: Self = StObject.set(x, "receive", js.undefined)
+      
+      inline def setReply(
+        value: (/* span */ js.UndefOr[Span], /* request */ js.UndefOr[Any], /* response */ js.UndefOr[Any]) => Any
+      ): Self = StObject.set(x, "reply", js.Any.fromFunction3(value))
+      
+      inline def setReplyUndefined: Self = StObject.set(x, "reply", js.undefined)
+    }
+  }
+  
   trait Request extends StObject {
     
     /**
@@ -313,8 +495,8 @@ object anon {
         js.Function3[
           /* span */ js.UndefOr[Span], 
           /* req */ js.UndefOr[IncomingMessage], 
-          /* res */ js.UndefOr[ServerResponse], 
-          js.Any
+          /* res */ js.UndefOr[ServerResponse[IncomingMessage]], 
+          Any
         ]
       ] = js.undefined
   }
@@ -328,54 +510,10 @@ object anon {
     extension [Self <: Request](x: Self) {
       
       inline def setRequest(
-        value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[IncomingMessage], /* res */ js.UndefOr[ServerResponse]) => js.Any
+        value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[IncomingMessage], /* res */ js.UndefOr[ServerResponse[IncomingMessage]]) => Any
       ): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
       
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
-    }
-  }
-  
-  trait Rules extends StObject {
-    
-    /**
-      * Global rate limit that is applied on the global sample rate and all rules.
-      * @default 100
-      */
-    var rateLimit: js.UndefOr[Number] = js.undefined
-    
-    /**
-      * Sampling rules to apply to priority sampling.
-      * @default []
-      */
-    var rules: js.UndefOr[js.Array[SamplingRule]] = js.undefined
-    
-    /**
-      * Sample rate to apply globally when no other rule is matched. Omit to fallback on the dynamic rates returned by the agent instead.
-      */
-    var sampleRate: js.UndefOr[Number] = js.undefined
-  }
-  object Rules {
-    
-    inline def apply(): Rules = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Rules]
-    }
-    
-    extension [Self <: Rules](x: Self) {
-      
-      inline def setRateLimit(value: Number): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
-      
-      inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
-      
-      inline def setRules(value: js.Array[SamplingRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
-      
-      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
-      
-      inline def setRulesVarargs(value: SamplingRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
-      
-      inline def setSampleRate(value: Number): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
-      
-      inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
     }
   }
 }

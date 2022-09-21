@@ -1,25 +1,48 @@
 package typings.octokitPluginPaginateRest.anon
 
-import typings.octokitTypes.anon.Defaultbranch
+import typings.octokitTypes.endpointsMod.ExtractOctokitResponse
+import typings.octokitTypes.endpointsMod.RequiredPreview
+import typings.octokitTypes.endpointsMod.ToOctokitParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `21` extends StObject {
   
-  var data: js.Array[Defaultbranch]
+  var parameters: (ToOctokitParameters[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/licenses']['get'] */ js.Any
+  ]) & RequiredPreview[Any]
+  
+  var response: ExtractOctokitResponse[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/licenses']['get'] */ js.Any
+  ]
 }
 object `21` {
   
-  inline def apply(data: js.Array[Defaultbranch]): `21` = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+  inline def apply(
+    parameters: (ToOctokitParameters[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/licenses']['get'] */ js.Any
+    ]) & RequiredPreview[Any],
+    response: ExtractOctokitResponse[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/licenses']['get'] */ js.Any
+    ]
+  ): `21` = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`21`]
   }
   
   extension [Self <: `21`](x: Self) {
     
-    inline def setData(value: js.Array[Defaultbranch]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setParameters(
+      value: (ToOctokitParameters[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/licenses']['get'] */ js.Any
+        ]) & RequiredPreview[Any]
+    ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Defaultbranch*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setResponse(
+      value: ExtractOctokitResponse[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.paths['/licenses']['get'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

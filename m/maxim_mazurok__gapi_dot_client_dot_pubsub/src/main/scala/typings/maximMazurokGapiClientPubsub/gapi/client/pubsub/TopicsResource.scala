@@ -1,13 +1,13 @@
 package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientPubsub.anon.Alt
-import typings.maximMazurokGapiClientPubsub.anon.AltCallback
-import typings.maximMazurokGapiClientPubsub.anon.CallbackFields
-import typings.maximMazurokGapiClientPubsub.anon.Fields
-import typings.maximMazurokGapiClientPubsub.anon.FieldsKey
+import typings.maximMazurokGapiClientPubsub.anon.Callback
 import typings.maximMazurokGapiClientPubsub.anon.Key
-import typings.maximMazurokGapiClientPubsub.anon.Oauthtoken
+import typings.maximMazurokGapiClientPubsub.anon.KeyName
+import typings.maximMazurokGapiClientPubsub.anon.NameOauthtoken
+import typings.maximMazurokGapiClientPubsub.anon.OauthtokenPrettyPrint
+import typings.maximMazurokGapiClientPubsub.anon.PageSize
+import typings.maximMazurokGapiClientPubsub.anon.PrettyPrint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TopicsResource extends StObject {
   
+  def create(request: Callback, body: Topic): Request[Topic] = js.native
   /** Creates the given topic with the given name. See the [resource name rules] (https://cloud.google.com/pubsub/docs/admin#resource_names). */
-  def create(request: AltCallback): Request[Topic] = js.native
-  def create(request: Alt, body: Topic): Request[Topic] = js.native
+  def create(request: KeyName): Request[Topic] = js.native
   
   /**
     * Deletes the topic with the given name. Returns `NOT_FOUND` if the topic does not exist. After a topic is deleted, a new topic may be created with the same name; this is an entirely
@@ -32,22 +32,22 @@ trait TopicsResource extends StObject {
   
   /** Gets the access control policy for a resource. Returns an empty policy if the resource exists and does not have a policy set. */
   def getIamPolicy(): Request[Policy] = js.native
-  def getIamPolicy(request: Fields): Request[Policy] = js.native
+  def getIamPolicy(request: Key): Request[Policy] = js.native
   
   /** Lists matching topics. */
   def list(): Request[ListTopicsResponse] = js.native
-  def list(request: Key): Request[ListTopicsResponse] = js.native
+  def list(request: PageSize): Request[ListTopicsResponse] = js.native
   
-  def patch(request: Alt, body: UpdateTopicRequest): Request[Topic] = js.native
+  def patch(request: Callback, body: UpdateTopicRequest): Request[Topic] = js.native
   /** Updates an existing topic. Note that certain properties of a topic are not modifiable. */
-  def patch(request: CallbackFields): Request[Topic] = js.native
+  def patch(request: NameOauthtoken): Request[Topic] = js.native
   
   /** Adds one or more messages to the topic. Returns `NOT_FOUND` if the topic does not exist. */
-  def publish(request: FieldsKey): Request[PublishResponse] = js.native
+  def publish(request: OauthtokenPrettyPrint): Request[PublishResponse] = js.native
   def publish(request: typings.maximMazurokGapiClientPubsub.anon.Topic, body: PublishRequest): Request[PublishResponse] = js.native
   
   /** Sets the access control policy on the specified resource. Replaces any existing policy. Can return `NOT_FOUND`, `INVALID_ARGUMENT`, and `PERMISSION_DENIED` errors. */
-  def setIamPolicy(request: Oauthtoken, body: SetIamPolicyRequest): Request[Policy] = js.native
+  def setIamPolicy(request: PrettyPrint, body: SetIamPolicyRequest): Request[Policy] = js.native
   
   var snapshots: SnapshotsResource = js.native
   
@@ -57,5 +57,5 @@ trait TopicsResource extends StObject {
     * Returns permissions that a caller has on the specified resource. If the resource does not exist, this will return an empty set of permissions, not a `NOT_FOUND` error. Note: This
     * operation is designed to be used for building permission-aware UIs and command-line tools, not for authorization checking. This operation may "fail open" without warning.
     */
-  def testIamPermissions(request: Oauthtoken, body: TestIamPermissionsRequest): Request[TestIamPermissionsResponse] = js.native
+  def testIamPermissions(request: PrettyPrint, body: TestIamPermissionsRequest): Request[TestIamPermissionsResponse] = js.native
 }

@@ -12,26 +12,26 @@ trait ScatterPlot
      with CoordinateGridMixin[ScatterPlot] {
   
   def canvas(): Selection_[
-    js.Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+    Any, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
     BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
   ] = js.native
   def canvas(
     t: Selection_[
-      js.Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ]
   ): ScatterPlot = js.native
   @JSName("canvas")
   var canvas_Original: IGetSet[
     Selection_[
-      js.Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
+      Any, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
     ], 
     ScatterPlot
   ] = js.native
@@ -67,10 +67,10 @@ trait ScatterPlot
   @JSName("excludedSize")
   var excludedSize_Original: IGetSet[Double, ScatterPlot] = js.native
   
-  def existenceAccessor(): Accessor[js.Any, Boolean] = js.native
-  def existenceAccessor(t: Accessor[js.Any, Boolean]): ScatterPlot = js.native
+  def existenceAccessor(): Accessor[Any, Boolean] = js.native
+  def existenceAccessor(t: Accessor[Any, Boolean]): ScatterPlot = js.native
   @JSName("existenceAccessor")
-  var existenceAccessor_Original: IGetSet[Accessor[js.Any, Boolean], ScatterPlot] = js.native
+  var existenceAccessor_Original: IGetSet[Accessor[Any, Boolean], ScatterPlot] = js.native
   
   def hiddenSize(): Double = js.native
   def hiddenSize(t: Double): ScatterPlot = js.native
@@ -89,9 +89,9 @@ trait ScatterPlot
   
   def resizeCanvas(): Unit = js.native
   
-  def symbol(): js.Any = js.native
+  def symbol(): Any = js.native
   def symbol(
-    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Symbol<any> */ js.Any
+    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Symbol<any> */ Any
   ): ScatterPlot = js.native
   
   def symbolSize(): Double = js.native
@@ -101,7 +101,7 @@ trait ScatterPlot
   
   @JSName("symbol")
   var symbol_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Symbol<any> */ js.Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Symbol<any> */ Any, 
     ScatterPlot
   ] = js.native
   

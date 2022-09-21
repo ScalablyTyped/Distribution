@@ -7,14 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FillLayer
   extends StObject
-     with LayerBase
-     with Layer {
+     with Layer
+     with AnyLayer {
   
-  var layout: js.UndefOr[FillLayout] = js.undefined
+  @JSName("layout")
+  var layout_FillLayer: js.UndefOr[FillLayout] = js.undefined
   
-  var paint: js.UndefOr[FillPaint] = js.undefined
+  @JSName("paint")
+  var paint_FillLayer: js.UndefOr[FillPaint] = js.undefined
   
-  var `type`: fill
+  @JSName("type")
+  var type_FillLayer: fill
 }
 object FillLayer {
   

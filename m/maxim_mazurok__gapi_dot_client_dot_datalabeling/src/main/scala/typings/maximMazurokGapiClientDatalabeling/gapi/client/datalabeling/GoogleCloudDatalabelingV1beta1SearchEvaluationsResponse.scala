@@ -25,7 +25,7 @@ object GoogleCloudDatalabelingV1beta1SearchEvaluationsResponse {
     
     inline def setEvaluationsUndefined: Self = StObject.set(x, "evaluations", js.undefined)
     
-    inline def setEvaluationsVarargs(value: GoogleCloudDatalabelingV1beta1Evaluation*): Self = StObject.set(x, "evaluations", js.Array(value :_*))
+    inline def setEvaluationsVarargs(value: GoogleCloudDatalabelingV1beta1Evaluation*): Self = StObject.set(x, "evaluations", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

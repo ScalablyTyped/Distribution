@@ -8,12 +8,25 @@ trait IdentityProvider
   extends StObject
      with Entity {
   
+  /**
+    * The client ID for the application. This is the client ID obtained when registering the application with the identity
+    * provider. Required. Not nullable.
+    */
   var clientId: js.UndefOr[NullableOption[String]] = js.undefined
   
+  /**
+    * The client secret for the application. This is the client secret obtained when registering the application with the
+    * identity provider. This is write-only. A read operation will return ****. Required. Not nullable.
+    */
   var clientSecret: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // The display name of the identity provider. Not nullable.
   var name: js.UndefOr[NullableOption[String]] = js.undefined
   
+  /**
+    * The identity provider type is a required field. For B2B scenario: Google, Facebook. For B2C scenario: Microsoft,
+    * Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo, QQ, WeChat, OpenIDConnect. Not nullable.
+    */
   var `type`: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object IdentityProvider {

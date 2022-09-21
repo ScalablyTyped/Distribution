@@ -16,38 +16,38 @@ object mod {
   
   @JSImport("react-offcanvas", "OffCanvas")
   @js.native
-  class OffCanvas protected ()
-    extends Component[OffCanvasProps, js.Object, js.Any] {
+  open class OffCanvas protected ()
+    extends Component[OffCanvasProps, js.Object, Any] {
     def this(props: OffCanvasProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: OffCanvasProps, context: js.Any) = this()
+    def this(props: OffCanvasProps, context: Any) = this()
   }
   
   @JSImport("react-offcanvas", "OffCanvasBody")
   @js.native
-  class OffCanvasBody protected ()
-    extends Component[OffCanvasBodyProps, js.Object, js.Any] {
+  open class OffCanvasBody protected ()
+    extends Component[OffCanvasBodyProps, js.Object, Any] {
     def this(props: OffCanvasBodyProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: OffCanvasBodyProps, context: js.Any) = this()
+    def this(props: OffCanvasBodyProps, context: Any) = this()
   }
   
   @JSImport("react-offcanvas", "OffCanvasMenu")
   @js.native
-  class OffCanvasMenu protected ()
-    extends Component[OffCanvasMenuProps, js.Object, js.Any] {
+  open class OffCanvasMenu protected ()
+    extends Component[OffCanvasMenuProps, js.Object, Any] {
     def this(props: OffCanvasMenuProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: OffCanvasMenuProps, context: js.Any) = this()
+    def this(props: OffCanvasMenuProps, context: Any) = this()
   }
   
   trait OffCanvasBodyProps extends StObject {

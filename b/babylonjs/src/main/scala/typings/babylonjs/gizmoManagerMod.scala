@@ -2,10 +2,14 @@ package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.anon.BoundingBoxGizmo
+import typings.babylonjs.anon.PositionGizmo
 import typings.babylonjs.gizmoMod.GizmoAxisCache
+import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.nodeMod.Node
 import typings.babylonjs.observableMod.Observable
+import typings.babylonjs.observableMod.Observer
+import typings.babylonjs.pointerEventsMod.PointerInfo
 import typings.babylonjs.sceneMod.IDisposable
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.sixDofDragBehaviorMod.SixDofDragBehavior
@@ -20,30 +24,30 @@ object gizmoManagerMod {
   
   @JSImport("babylonjs/Gizmos/gizmoManager", "GizmoManager")
   @js.native
-  class GizmoManager protected ()
+  open class GizmoManager protected ()
     extends StObject
        with IDisposable {
     /**
-      * Instatiates a gizmo manager
-      * @param scene the scene to overlay the gizmos on top of
+      * Instantiates a gizmo manager
+      * @param _scene the scene to overlay the gizmos on top of
       * @param thickness display gizmo axis thickness
       * @param utilityLayer the layer where gizmos are rendered
       * @param keepDepthUtilityLayer the layer where occluded gizmos are rendered
       */
-    def this(scene: Scene) = this()
-    def this(scene: Scene, thickness: Double) = this()
-    def this(scene: Scene, thickness: Double, utilityLayer: UtilityLayerRenderer) = this()
-    def this(scene: Scene, thickness: Unit, utilityLayer: UtilityLayerRenderer) = this()
-    def this(scene: Scene, thickness: Double, utilityLayer: Unit, keepDepthUtilityLayer: UtilityLayerRenderer) = this()
+    def this(_scene: Scene) = this()
+    def this(_scene: Scene, thickness: Double) = this()
+    def this(_scene: Scene, thickness: Double, utilityLayer: UtilityLayerRenderer) = this()
+    def this(_scene: Scene, thickness: Unit, utilityLayer: UtilityLayerRenderer) = this()
+    def this(_scene: Scene, thickness: Double, utilityLayer: Unit, keepDepthUtilityLayer: UtilityLayerRenderer) = this()
     def this(
-      scene: Scene,
+      _scene: Scene,
       thickness: Double,
       utilityLayer: UtilityLayerRenderer,
       keepDepthUtilityLayer: UtilityLayerRenderer
     ) = this()
-    def this(scene: Scene, thickness: Unit, utilityLayer: Unit, keepDepthUtilityLayer: UtilityLayerRenderer) = this()
+    def this(_scene: Scene, thickness: Unit, utilityLayer: Unit, keepDepthUtilityLayer: UtilityLayerRenderer) = this()
     def this(
-      scene: Scene,
+      _scene: Scene,
       thickness: Unit,
       utilityLayer: UtilityLayerRenderer,
       keepDepthUtilityLayer: UtilityLayerRenderer
@@ -51,28 +55,32 @@ object gizmoManagerMod {
     
     /**
       * Subscribes to pointer down events, for attaching and detaching mesh
-      * @param scene The sceme layer the observer will be added to
+      * @param scene The scene layer the observer will be added to
       */
-    /* private */ var _attachToMeshPointerObserver: js.Any = js.native
+    /* private */ var _attachToMeshPointerObserver: Any = js.native
     
-    /* private */ var _attachedMesh: js.Any = js.native
+    /* protected */ var _attachedMesh: Nullable[AbstractMesh] = js.native
     
-    /* private */ var _attachedNode: js.Any = js.native
+    /* protected */ var _attachedNode: Nullable[Node] = js.native
     
-    /* private */ var _boundingBoxColor: js.Any = js.native
+    /* protected */ var _boundingBoxColor: Color3 = js.native
     
-    /* private */ var _defaultKeepDepthUtilityLayer: js.Any = js.native
+    /* protected */ var _defaultKeepDepthUtilityLayer: UtilityLayerRenderer = js.native
     
-    /* private */ var _defaultUtilityLayer: js.Any = js.native
+    /* protected */ var _defaultUtilityLayer: UtilityLayerRenderer = js.native
     
     /** Node Caching for quick lookup */
-    /* private */ var _gizmoAxisCache: js.Any = js.native
+    /* private */ var _gizmoAxisCache: Any = js.native
     
-    /* private */ var _gizmosEnabled: js.Any = js.native
+    /* protected */ var _gizmosEnabled: PositionGizmo = js.native
     
-    /* private */ var _pointerObservers: js.Any = js.native
+    /* protected */ var _pointerObservers: js.Array[Observer[PointerInfo]] = js.native
     
-    /* private */ var _thickness: js.Any = js.native
+    /* protected */ var _scaleRatio: Double = js.native
+    
+    /* private */ var _scene: Any = js.native
+    
+    /* protected */ var _thickness: Double = js.native
     
     /**
       * Builds Gizmo Axis Cache to enable features such as hover state preservation and graying out other axis during manipulation
@@ -122,6 +130,9 @@ object gizmoManagerMod {
     /* CompleteClass */
     override def dispose(): Unit = js.native
     
+    /** When true (default), picking to attach a new mesh is enabled. This works in sync with inspector autopicking. */
+    var enableAutoPicking: Boolean = js.native
+    
     /**
       * Gizmo's created by the gizmo manager, gizmo will be null until gizmo has been enabled for the first time
       */
@@ -161,7 +172,11 @@ object gizmoManagerMod {
       */
     def scaleGizmoEnabled_=(value: Boolean): Unit = js.native
     
-    /* private */ var scene: js.Any = js.native
+    def scaleRatio: Double = js.native
+    /**
+      * Ratio for the scale of the gizmo (Default: 1)
+      */
+    def scaleRatio_=(value: Double): Unit = js.native
     
     /**
       * If pointer events should perform attaching/detaching a gizmo, if false this can be done manually via attachToMesh/attachToNode. (Default: true)

@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FormatProtectionUpdateData extends StObject {
   
   /**
+    * Specifies if Excel hides the formula for the cells in the range. A `null` value indicates that the entire range doesn't have a uniform formula hidden setting.
     *
-    * Specifies if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var formulaHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies if Excel locks the cells in the object. A `null` value indicates that the entire range doesn't have a uniform lock setting.
     *
-    * Specifies if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var locked: js.UndefOr[Boolean] = js.undefined

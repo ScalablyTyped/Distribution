@@ -1,7 +1,6 @@
 package typings.workboxCore
 
 import typings.std.CacheQueryOptions
-import typings.std.Error
 import typings.std.Event
 import typings.std.Request
 import typings.std.Response
@@ -80,7 +79,7 @@ object workboxPluginMod {
   trait CacheWillUpdateCallbackParamParam extends StObject {
     
     var event: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ Any
       ] = js.undefined
     
     var request: Request
@@ -97,7 +96,7 @@ object workboxPluginMod {
     extension [Self <: CacheWillUpdateCallbackParamParam](x: Self) {
       
       inline def setEvent(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ Any
       ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
@@ -120,7 +119,7 @@ object workboxPluginMod {
     var cachedResponse: js.UndefOr[Response] = js.undefined
     
     var event: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ Any
       ] = js.undefined
     
     var matchOptions: js.UndefOr[CacheQueryOptions] = js.undefined
@@ -143,7 +142,7 @@ object workboxPluginMod {
       inline def setCachedResponseUndefined: Self = StObject.set(x, "cachedResponse", js.undefined)
       
       inline def setEvent(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ Any
       ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
@@ -160,10 +159,10 @@ object workboxPluginMod {
   
   trait FetchDidFailCallbackParam extends StObject {
     
-    var error: Error
+    var error: js.Error
     
     var event: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ Any
       ] = js.undefined
     
     var originalRequest: Request
@@ -172,17 +171,17 @@ object workboxPluginMod {
   }
   object FetchDidFailCallbackParam {
     
-    inline def apply(error: Error, originalRequest: Request, request: Request): FetchDidFailCallbackParam = {
+    inline def apply(error: js.Error, originalRequest: Request, request: Request): FetchDidFailCallbackParam = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], originalRequest = originalRequest.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[FetchDidFailCallbackParam]
     }
     
     extension [Self <: FetchDidFailCallbackParam](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setEvent(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ Any
       ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)

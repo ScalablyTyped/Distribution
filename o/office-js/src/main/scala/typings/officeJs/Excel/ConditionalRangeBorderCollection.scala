@@ -14,9 +14,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the border objects that make up range border.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @js.native
@@ -25,9 +25,9 @@ trait ConditionalRangeBorderCollection
      with ClientObject {
   
   /**
-    *
     * Gets the bottom border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   val bottom: ConditionalRangeBorder = js.native
@@ -37,9 +37,9 @@ trait ConditionalRangeBorderCollection
   var context_ConditionalRangeBorderCollection: RequestContext = js.native
   
   /**
-    *
     * Number of border objects in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   val count: Double = js.native
@@ -47,44 +47,39 @@ trait ConditionalRangeBorderCollection
   /**
     * Gets a border object using its name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     *
-    * @param index Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
+    * @param index Index value of the border object to be retrieved. See `Excel.ConditionalRangeBorderIndex` for details.
+    */
+  def getItem(index: EdgeTop | EdgeBottom | EdgeLeft | EdgeRight): ConditionalRangeBorder = js.native
+  /**
+    * Gets a border object using its name.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    *
+    * @param index Index value of the border object to be retrieved. See `Excel.ConditionalRangeBorderIndex` for details.
     */
   def getItem(index: ConditionalRangeBorderIndex): ConditionalRangeBorder = js.native
   
   /**
     * Gets a border object using its index.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     *
     * @param index Index value of the object to be retrieved. Zero-indexed.
     */
   def getItemAt(index: Double): ConditionalRangeBorder = js.native
   
-  @JSName("getItem")
-  def getItem_EdgeBottom(index: EdgeBottom): ConditionalRangeBorder = js.native
-  @JSName("getItem")
-  def getItem_EdgeLeft(index: EdgeLeft): ConditionalRangeBorder = js.native
-  @JSName("getItem")
-  def getItem_EdgeRight(index: EdgeRight): ConditionalRangeBorder = js.native
-  /**
-    * Gets a border object using its name.
-    *
-    * [Api set: ExcelApi 1.6]
-    *
-    * @param index Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
-    */
-  @JSName("getItem")
-  def getItem_EdgeTop(index: EdgeTop): ConditionalRangeBorder = js.native
-  
   /** Gets the loaded child items in this collection. */
   val items: js.Array[ConditionalRangeBorder] = js.native
   
   /**
-    *
     * Gets the left border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   val left: ConditionalRangeBorder = js.native
@@ -101,9 +96,9 @@ trait ConditionalRangeBorderCollection
   def load(propertyNames: js.Array[String]): ConditionalRangeBorderCollection = js.native
   
   /**
-    *
     * Gets the right border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   val right: ConditionalRangeBorder = js.native
@@ -115,9 +110,9 @@ trait ConditionalRangeBorderCollection
   def toJSON(): ConditionalRangeBorderCollectionData = js.native
   
   /**
-    *
     * Gets the top border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   val top: ConditionalRangeBorder = js.native

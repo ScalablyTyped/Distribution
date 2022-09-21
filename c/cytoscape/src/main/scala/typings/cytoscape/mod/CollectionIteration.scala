@@ -34,7 +34,7 @@ trait CollectionIteration[TOut, TIn]
   def each(each: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ this.type, Unit | Boolean]): this.type = js.native
   def each(
     each: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ this.type, Unit | Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): this.type = js.native
   
   /**
@@ -59,7 +59,7 @@ trait CollectionIteration[TOut, TIn]
   def forEach(each: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ this.type, Unit | Boolean]): this.type = js.native
   def forEach(
     each: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ this.type, Unit | Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): this.type = js.native
   
   /**

@@ -12,5 +12,5 @@ object helperMod {
   
   type DistributiveOmit[T, U] = Pick[T, Exclude[/* keyof T */ String, U]]
   
-  type PropsOf[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any */] = LibraryManagedAttributes[C, ComponentProps[C]]
+  type PropsOf[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any */] = LibraryManagedAttributes[C, ComponentProps[C]]
 }

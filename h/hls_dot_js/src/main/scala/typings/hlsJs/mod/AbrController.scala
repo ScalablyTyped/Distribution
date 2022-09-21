@@ -1,73 +1,59 @@
 package typings.hlsJs.mod
 
+import typings.hlsJs.mod.Events.ERROR
+import typings.hlsJs.mod.Events.FRAG_BUFFERED
+import typings.hlsJs.mod.Events.FRAG_LOADED
+import typings.hlsJs.mod.Events.FRAG_LOADING
+import typings.hlsJs.mod.Events.LEVEL_LOADED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * (default: internal ABR controller)
-  * Customized Adaptive Bitrate Streaming Controller.
-  */
-trait AbrController extends StObject {
+@js.native
+trait AbrController
+  extends StObject
+     with ComponentAPI {
   
-  /**
-    * get: capping/max level value that could be used by ABR Controller
-    * set: capping/max level value that could be used by ABR Controller
-    */
-  var autoLevelCapping: Double
+  /* private */ var _abandonRulesCheck: Any = js.native
   
-  /**
-    *  accumulated handled events
-    */
-  var handledEvents: js.Array[String]
+  /* private */ var _nextAutoLevel: Any = js.native
   
-  /**
-    * current hls instance
-    */
-  var hls: Hls
+  /* private */ var bitrateTestDelay: Any = js.native
   
-  /**
-    * last fragments corresponding level
-    */
-  var lastLoadedFragLevel: Double
+  val bwEstimator: EwmaBandWidthEstimator = js.native
   
-  /**
-    * get: next auto-quality levele/force next auto-quality level that should be returned
-    * set: next auto-quality levele/force next auto-quality level that should be returned
-    *  - currently used for emergency switch down
-    */
-  var nextAutoLevel: Double
+  def clearTimer(): Unit = js.native
   
-  var useGenericHandler: Boolean
-}
-object AbrController {
+  /* private */ var findBestLevel: Any = js.native
   
-  inline def apply(
-    autoLevelCapping: Double,
-    handledEvents: js.Array[String],
-    hls: Hls,
-    lastLoadedFragLevel: Double,
-    nextAutoLevel: Double,
-    useGenericHandler: Boolean
-  ): AbrController = {
-    val __obj = js.Dynamic.literal(autoLevelCapping = autoLevelCapping.asInstanceOf[js.Any], handledEvents = handledEvents.asInstanceOf[js.Any], hls = hls.asInstanceOf[js.Any], lastLoadedFragLevel = lastLoadedFragLevel.asInstanceOf[js.Any], nextAutoLevel = nextAutoLevel.asInstanceOf[js.Any], useGenericHandler = useGenericHandler.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AbrController]
-  }
+  /* private */ var fragCurrent: Any = js.native
   
-  extension [Self <: AbrController](x: Self) {
-    
-    inline def setAutoLevelCapping(value: Double): Self = StObject.set(x, "autoLevelCapping", value.asInstanceOf[js.Any])
-    
-    inline def setHandledEvents(value: js.Array[String]): Self = StObject.set(x, "handledEvents", value.asInstanceOf[js.Any])
-    
-    inline def setHandledEventsVarargs(value: String*): Self = StObject.set(x, "handledEvents", js.Array(value :_*))
-    
-    inline def setHls(value: Hls): Self = StObject.set(x, "hls", value.asInstanceOf[js.Any])
-    
-    inline def setLastLoadedFragLevel(value: Double): Self = StObject.set(x, "lastLoadedFragLevel", value.asInstanceOf[js.Any])
-    
-    inline def setNextAutoLevel(value: Double): Self = StObject.set(x, "nextAutoLevel", value.asInstanceOf[js.Any])
-    
-    inline def setUseGenericHandler(value: Boolean): Self = StObject.set(x, "useGenericHandler", value.asInstanceOf[js.Any])
-  }
+  /* private */ var getNextABRAutoLevel: Any = js.native
+  
+  /* protected */ var hls: Hls = js.native
+  
+  /* private */ var lastLoadedFragLevel: Any = js.native
+  
+  def nextAutoLevel: Double = js.native
+  def nextAutoLevel_=(nextLevel: Double): Unit = js.native
+  
+  /* private */ var onCheck: Any = js.native
+  
+  /* protected */ def onError(event: ERROR, data: ErrorData): Unit = js.native
+  
+  /* protected */ def onFragBuffered(event: FRAG_BUFFERED, data: FragBufferedData): Unit = js.native
+  
+  /* protected */ def onFragLoaded(event: FRAG_LOADED, hasFragPart: FragLoadedData): Unit = js.native
+  
+  /* protected */ def onFragLoading(event: FRAG_LOADING, data: FragLoadingData): Unit = js.native
+  
+  /* protected */ def onLevelLoaded(event: LEVEL_LOADED, data: LevelLoadedData): Unit = js.native
+  
+  /* private */ var partCurrent: Any = js.native
+  
+  /* protected */ def registerListeners(): Unit = js.native
+  
+  /* private */ var timer: Any = js.native
+  
+  /* protected */ def unregisterListeners(): Unit = js.native
 }

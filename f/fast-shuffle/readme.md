@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-shuffle
 
-Typings are for version 1.0
+Typings are for version 4.5
 
 ## Library description:
 A fast implementation of a fisher-yates shuffle that does not mutate the source array.
@@ -9,11 +9,11 @@ A fast implementation of a fisher-yates shuffle that does not mutate the source 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | fast-shuffle |
-| Keywords           | knuth, fisher-yates, shuffle, deterministic, pure, seed, random, curried, ramda |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 5427 |
-| # stars            | 0 |
+| Keywords           | array, knuth, fisher-yates, shuffle, deterministic, pure, seed, random, curried |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 15908.666666666666 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/philihp/fast-shuffle)

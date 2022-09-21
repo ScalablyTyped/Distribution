@@ -1,49 +1,96 @@
 package typings.yandexMaps.mod
 
+import typings.std.GlobalEventHandlersEventMap
+import typings.yandexMaps.mod.^
+import typings.yandexMaps.mod.geometry.Point
+import typings.yandexMaps.yandexMapsStrings.islandsNumbersigngeolocationIcon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def ready(): js.Promise[scala.Unit] = typings.yandexMaps.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ready")().asInstanceOf[js.Promise[scala.Unit]]
-inline def ready(successCallback: js.Function0[js.Any | typings.yandexMaps.mod.IReadyobject]): js.Promise[scala.Unit] = typings.yandexMaps.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ready")(successCallback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[scala.Unit]]
+/**
+  * Processes geocoding requests. The request result can be provided in JSON format or as a GeoObjectCollection object.
+  * @param request The address for which coordinates need to be obtained (forward geocoding), or the coordinates for which the address needs to be determined (reverse geocoding).
+  * @param options Options.
+  */
+inline def geocode(request: String): js.Promise[IGeocodeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("geocode")(request.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IGeocodeResult]]
+inline def geocode(request: String, options: IGeocodeOptions): js.Promise[IGeocodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("geocode")(request.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IGeocodeResult]]
+inline def geocode(request: js.Array[Double]): js.Promise[IGeocodeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("geocode")(request.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IGeocodeResult]]
+inline def geocode(request: js.Array[Double], options: IGeocodeOptions): js.Promise[IGeocodeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("geocode")(request.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IGeocodeResult]]
+
+inline def ready(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")().asInstanceOf[js.Promise[Unit]]
+inline def ready(successCallback: js.Function0[Any | IReadyObject]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")(successCallback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+inline def ready(successCallback: js.Function0[Any | IReadyObject], errorCallback: js.Function0[Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def ready(
-  successCallback: js.Function0[js.Any | typings.yandexMaps.mod.IReadyobject],
-  errorCallback: js.Function0[js.Any]
-): js.Promise[scala.Unit] = (typings.yandexMaps.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ready")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def ready(
-  successCallback: js.Function0[js.Any | typings.yandexMaps.mod.IReadyobject],
-  errorCallback: js.Function0[js.Any],
+  successCallback: js.Function0[Any | IReadyObject],
+  errorCallback: js.Function0[Any],
   context: js.Object
-): js.Promise[scala.Unit] = (typings.yandexMaps.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ready")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def ready(
-  successCallback: js.Function0[js.Any | typings.yandexMaps.mod.IReadyobject],
-  errorCallback: scala.Unit,
-  context: js.Object
-): js.Promise[scala.Unit] = (typings.yandexMaps.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ready")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def ready(successCallback: scala.Unit, errorCallback: js.Function0[js.Any]): js.Promise[scala.Unit] = (typings.yandexMaps.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ready")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def ready(successCallback: scala.Unit, errorCallback: js.Function0[js.Any], context: js.Object): js.Promise[scala.Unit] = (typings.yandexMaps.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ready")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
-inline def ready(successCallback: scala.Unit, errorCallback: scala.Unit, context: js.Object): js.Promise[scala.Unit] = (typings.yandexMaps.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ready")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[scala.Unit]]
+): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def ready(successCallback: js.Function0[Any | IReadyObject], errorCallback: Unit, context: js.Object): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def ready(successCallback: Unit, errorCallback: js.Function0[Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def ready(successCallback: Unit, errorCallback: js.Function0[Any], context: js.Object): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+inline def ready(successCallback: Unit, errorCallback: Unit, context: js.Object): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(successCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 
-type IChildOnMap = typings.yandexMaps.mod.IChild[typings.yandexMaps.mod.IControlParent]
+/**
+  * Processes requests for search suggestions.
+  * Returns a promise object that is either rejected with an error,
+  * or confirmed by an array of objects in the format { displayName: "Mitishi, Moscow region", value: "Russia, Moscow region, Mitishi " }.
+  * The displayName field represents the toponym in a user-friendly way,
+  * and the value field represents the value which should be inserted into the search field after the user selects the suggestion.
+  * @param request Request string.
+  * @param options Options.
+  */
+inline def suggest(request: String): js.Promise[js.Array[ISuggestResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("suggest")(request.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ISuggestResult]]]
+inline def suggest(request: String, options: ISuggestOptions): js.Promise[js.Array[ISuggestResult]] = (^.asInstanceOf[js.Dynamic].applyDynamic("suggest")(request.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ISuggestResult]]]
 
-type IControl = typings.yandexMaps.mod.IChildOnMap
+/* Rewritten from type alias, can be one of: 
+  - typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonTwoColumnsItemContent
+  - typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonCarouselItemContent
+  - typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonAccordionItemContent
+  - java.lang.String
+*/
+type ClusterContentLayoutKey = _ClusterContentLayoutKey | String
 
-type ICopyrightsAccessor = typings.yandexMaps.mod.ICopyrightsProvider
+/* Rewritten from type alias, can be one of: 
+  - typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonTwoColumns
+  - typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonCarousel
+  - typings.yandexMaps.yandexMapsStrings.clusterNumbersignballoonAccordion
+  - java.lang.String
+*/
+type ClusterLayoutKey = _ClusterLayoutKey | String
 
-type IDomEventEmitter = typings.yandexMaps.mod.IEventEmitter
+type EventMap = GlobalEventHandlersEventMap
 
-type IExpandableControlLayout = typings.yandexMaps.mod.ILayout
+type IChildOnMap = IChild[IControlParent]
 
-type IGeometryEditorRootModel = typings.yandexMaps.mod.IGeometryEditorModel
+type IControl = IChildOnMap
 
-type IHintManager[T] = typings.yandexMaps.mod.IPopupManager[T]
+type ICopyrightsAccessor = ICopyrightsProvider
 
-type IMultiRouteReferencePoint = java.lang.String | js.Array[scala.Double] | typings.yandexMaps.mod.geometry.Point
+type IDomEventEmitter = IEventEmitter
 
-type ISearchControlLayout = typings.yandexMaps.mod.IExpandableControlLayout
+type IExpandableControlLayout = ILayout
 
-type ISelectableControlLayout = typings.yandexMaps.mod.ILayout
+type IGeometryEditorRootModel = IGeometryEditorModel
+
+type IHintManager[T] = IPopupManager[T]
+
+type IMultiRouteReferencePoint = String | js.Array[Double] | Point
+
+type ISearchControlLayout = IExpandableControlLayout
+
+type ISelectableControlLayout = ILayout
+
+//option.presetStorage
+//[number, number]
+//[[number, number], [number, number]]
+/* Rewritten from type alias, can be one of: 
+  - typings.yandexMaps.yandexMapsStrings.defaultNumbersignimage
+  - typings.yandexMaps.yandexMapsStrings.defaultNumbersignimageWithContent
+  - java.lang.String
+*/
+type IconLayoutKey = _IconLayoutKey | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.yandexMaps.yandexMapsStrings.defaultNumbersignopaque
@@ -53,7 +100,7 @@ type ISelectableControlLayout = typings.yandexMaps.mod.ILayout
   - typings.yandexMaps.yandexMapsStrings.defaultNumbersignsilent
   - java.lang.String
 */
-type InteractivityModelKey = typings.yandexMaps.mod._InteractivityModelKey | java.lang.String
+type InteractivityModelKey = _InteractivityModelKey | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.yandexMaps.yandexMapsStrings.defaultNumbersignplacemark
@@ -81,12 +128,24 @@ js.Promise[
   java.lang.String | typings.yandexMaps.mod.IClassConstructor[typings.yandexMaps.mod.IOverlay]
 ]]
 */
-type OverlayKey = typings.yandexMaps.mod._OverlayKey | typings.yandexMaps.mod.IClassConstructor[typings.yandexMaps.mod.IOverlay] | (js.Function3[
-/* geometry */ typings.yandexMaps.mod.IPixelLineStringGeometry, 
-/* data */ typings.yandexMaps.mod.IDataManager | js.Object, 
+type OverlayKey = _OverlayKey | IClassConstructor[IOverlay] | (js.Function3[
+/* geometry */ IPixelLineStringGeometry, 
+/* data */ IDataManager | js.Object, 
 /* options */ js.Object, 
-js.Promise[
-  java.lang.String | typings.yandexMaps.mod.IClassConstructor[typings.yandexMaps.mod.IOverlay]
-]]) | java.lang.String
+js.Promise[String | IClassConstructor[IOverlay]]]) | String
 
-type PresetKey = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.yandexMaps.mod.PresetWithTextKey
+  - typings.yandexMaps.mod.PresetWithTextStretchyKey
+  - typings.yandexMaps.mod.PresetDotKey
+  - typings.yandexMaps.mod.PresetCircleKey
+  - typings.yandexMaps.mod.PresetCircleDotKey
+  - typings.yandexMaps.mod.PresetWithIconKey
+  - typings.yandexMaps.mod.PresetWithIconCircleKey
+  - typings.yandexMaps.mod.PresetPictogramKey
+  - typings.yandexMaps.mod.PresetClusterKey
+  - java.lang.String
+*/
+type PresetKey = _PresetKey | PresetPictogramKey | String
+
+type PresetPictogramKey = islandsNumbersigngeolocationIcon

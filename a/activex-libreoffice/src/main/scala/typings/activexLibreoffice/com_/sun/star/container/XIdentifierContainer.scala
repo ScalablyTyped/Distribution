@@ -21,7 +21,7 @@ trait XIdentifierContainer
     * @throws com::sun::star::lang::IllegalArgumentException if the argument is not vailid for this container.
     * @throws com::sun::star::lang::WrappedTargetException If the implementation has internal reasons for exceptions, then wrap these in a {@link com.sun.star.
     */
-  def insert(aElement: js.Any): Double
+  def insert(aElement: Any): Double
   
   /**
     * removes the element with the specified identifier.
@@ -37,15 +37,15 @@ object XIdentifierContainer {
     ElementType: `type`,
     Identifiers: SafeArray[Double],
     acquire: () => Unit,
-    getByIdentifier: Double => js.Any,
+    getByIdentifier: Double => Any,
     getElementType: () => `type`,
     getIdentifiers: () => SafeArray[Double],
     hasElements: () => Boolean,
-    insert: js.Any => Double,
-    queryInterface: `type` => js.Any,
+    insert: Any => Double,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByIdentifier: Double => Unit,
-    replaceByIdentifer: (Double, js.Any) => Unit
+    replaceByIdentifer: (Double, Any) => Unit
   ): XIdentifierContainer = {
     val __obj = js.Dynamic.literal(ElementType = ElementType.asInstanceOf[js.Any], Identifiers = Identifiers.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getByIdentifier = js.Any.fromFunction1(getByIdentifier), getElementType = js.Any.fromFunction0(getElementType), getIdentifiers = js.Any.fromFunction0(getIdentifiers), hasElements = js.Any.fromFunction0(hasElements), insert = js.Any.fromFunction1(insert), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIdentifier = js.Any.fromFunction1(removeByIdentifier), replaceByIdentifer = js.Any.fromFunction2(replaceByIdentifer))
     __obj.asInstanceOf[XIdentifierContainer]
@@ -53,7 +53,7 @@ object XIdentifierContainer {
   
   extension [Self <: XIdentifierContainer](x: Self) {
     
-    inline def setInsert(value: js.Any => Double): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+    inline def setInsert(value: Any => Double): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
     
     inline def setRemoveByIdentifier(value: Double => Unit): Self = StObject.set(x, "removeByIdentifier", js.Any.fromFunction1(value))
   }

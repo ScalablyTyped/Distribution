@@ -13,6 +13,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(args: Interpolation[Unit]*): SerializedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[SerializedStyles]
-  inline def default(template: TemplateStringsArray, args: Interpolation[Unit]*): SerializedStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(template.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SerializedStyles]
+  inline def default(
+    args: (Interpolation[
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Props */ Any
+    ])*
+  ): SerializedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[SerializedStyles]
+  inline def default(
+    template: TemplateStringsArray,
+    args: (Interpolation[
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Props */ Any
+    ])*
+  ): SerializedStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(template.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[SerializedStyles]
 }

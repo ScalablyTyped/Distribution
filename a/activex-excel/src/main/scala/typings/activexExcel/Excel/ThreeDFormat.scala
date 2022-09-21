@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ThreeDFormat extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   var BevelBottomDepth: Double
   
@@ -59,7 +59,7 @@ trait ThreeDFormat extends StObject {
   
   var LightAngle: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Perspective: MsoTriState
   
@@ -100,7 +100,7 @@ trait ThreeDFormat extends StObject {
 object ThreeDFormat {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     BevelBottomDepth: Double,
     BevelBottomInset: Double,
     BevelBottomType: MsoBevelType,
@@ -121,7 +121,7 @@ object ThreeDFormat {
     IncrementRotationY: Double => Unit,
     IncrementRotationZ: Double => Unit,
     LightAngle: Double,
-    Parent: js.Any,
+    Parent: Any,
     Perspective: MsoTriState,
     PresetCamera: MsoPresetCamera,
     PresetExtrusionDirection: MsoPresetExtrusionDirection,
@@ -148,7 +148,7 @@ object ThreeDFormat {
   
   extension [Self <: ThreeDFormat](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setBevelBottomDepth(value: Double): Self = StObject.set(x, "BevelBottomDepth", value.asInstanceOf[js.Any])
     
@@ -190,7 +190,7 @@ object ThreeDFormat {
     
     inline def setLightAngle(value: Double): Self = StObject.set(x, "LightAngle", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPerspective(value: MsoTriState): Self = StObject.set(x, "Perspective", value.asInstanceOf[js.Any])
     

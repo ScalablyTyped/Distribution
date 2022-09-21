@@ -9,7 +9,7 @@ object scalarObservableMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<T> * / any */ @JSImport("rxjs-compat/observable/ScalarObservable", "ScalarObservable")
   @js.native
-  class ScalarObservable[T] () extends StObject
+  open class ScalarObservable[T] () extends StObject
   /* static members */
   object ScalarObservable {
     
@@ -17,10 +17,10 @@ object scalarObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create[T](value: T): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def create[T](value: T): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
     inline def create[T](
       value: T,
-      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+    ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
 }

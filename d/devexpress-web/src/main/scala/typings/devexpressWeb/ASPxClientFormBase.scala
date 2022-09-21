@@ -24,14 +24,14 @@ trait ASPxClientFormBase extends StObject {
     * @param element An object specifying the element whose visibility state should be changed.
     * @param isVisible true to display the element; false to hide the element.
     */
-  def SetVisibleCore(element: js.Any, isVisible: Boolean): Unit
+  def SetVisibleCore(element: Any, isVisible: Boolean): Unit
 }
 object ASPxClientFormBase {
   
   inline def apply(
     Close: () => Unit,
     FormClosed: ASPxClientEvent[ASPxClientEventHandler[ASPxClientFormBase]],
-    SetVisibleCore: (js.Any, Boolean) => Unit
+    SetVisibleCore: (Any, Boolean) => Unit
   ): ASPxClientFormBase = {
     val __obj = js.Dynamic.literal(Close = js.Any.fromFunction0(Close), FormClosed = FormClosed.asInstanceOf[js.Any], SetVisibleCore = js.Any.fromFunction2(SetVisibleCore))
     __obj.asInstanceOf[ASPxClientFormBase]
@@ -43,6 +43,6 @@ object ASPxClientFormBase {
     
     inline def setFormClosed(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientFormBase]]): Self = StObject.set(x, "FormClosed", value.asInstanceOf[js.Any])
     
-    inline def setSetVisibleCore(value: (js.Any, Boolean) => Unit): Self = StObject.set(x, "SetVisibleCore", js.Any.fromFunction2(value))
+    inline def setSetVisibleCore(value: (Any, Boolean) => Unit): Self = StObject.set(x, "SetVisibleCore", js.Any.fromFunction2(value))
   }
 }

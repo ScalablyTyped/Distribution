@@ -9,7 +9,7 @@ trait JobListEntry extends StObject {
   /**
     * The creation date for this job.
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The optional description of this specific job, for example Important Photos 2016-08-11.
@@ -50,7 +50,7 @@ object JobListEntry {
   
   extension [Self <: JobListEntry](x: Self) {
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     

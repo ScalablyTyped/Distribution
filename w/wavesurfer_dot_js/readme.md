@@ -1,7 +1,7 @@
 
 # Scala.js typings for wavesurfer_dot_js
 
-Typings are for version 3.3
+Typings are for version 6.0
 
 ## Library description:
 Interactive navigable audio visualization using Web Audio and Canvas
@@ -10,15 +10,13 @@ Interactive navigable audio visualization using Web Audio and Canvas
 | ------------------ | :-------------: |
 | Full name          | wavesurfer.js |
 | Keywords           | waveform, audio, music, player, webaudio, microphone, visualization |
-| # releases         | 16 |
-| # dependents       | 34 |
-| # downloads        | 1503681 |
-| # stars            | 5 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 314960.3333333333 |
+| # stars            | 6313.0 |
 
 ## Links
 - [Homepage](https://wavesurfer-js.org)
-- [Bugs](https://github.com/katspaugh/wavesurfer.js/issues)
-- [Repository](https://github.com/katspaugh/wavesurfer.js)
 - [Npm](https://www.npmjs.com/package/wavesurfer.js)
     
 

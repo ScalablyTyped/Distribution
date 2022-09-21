@@ -2,10 +2,10 @@ package typings.rcTable
 
 import typings.rcTable.columnGroupMod.ColumnGroupProps
 import typings.rcTable.columnMod.ColumnProps
-import typings.rcTable.footerCellMod.SummaryCellProps
 import typings.rcTable.interfaceMod.DefaultRecordType
-import typings.rcTable.rowMod.FooterRowProps
+import typings.rcTable.summaryMod.SummaryProps
 import typings.rcTable.tableMod.TableProps
+import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,16 +30,22 @@ object mod {
       * So HOC will not work on this.
       */
     /* was `typeof imported_Column.default` */
-    inline def Column[RecordType](_underscore: ColumnProps[RecordType]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def Column[RecordType](_underscore: ColumnProps[RecordType]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /**
       * This is a syntactic sugar for `columns` prop.
       * So HOC will not work on this.
       */
     /* was `typeof imported_ColumnGroup.default` */
-    inline def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ColumnGroup")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ColumnGroup")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Any]
     
+    /* was `typeof imported_Summary.default` */
     object Summary {
+      
+      /**
+        * Syntactic sugar. Do not support HOC.
+        */
+      inline def apply(hasChildren: SummaryProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
       
       @JSImport("rc-table", "default.Summary")
       @js.native
@@ -47,13 +53,17 @@ object mod {
       
       @JSImport("rc-table", "default.Summary.Cell")
       @js.native
-      def Cell: js.Function1[/* hasClassNameIndexChildrenColSpanRowSpanAlign */ SummaryCellProps, Element] = js.native
-      inline def Cell_=(x: js.Function1[/* hasClassNameIndexChildrenColSpanRowSpanAlign */ SummaryCellProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
+      def Cell: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof imported_Cell.default */ Any = js.native
+      inline def Cell_=(
+        x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof imported_Cell.default */ Any
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
       
       @JSImport("rc-table", "default.Summary.Row")
       @js.native
-      def Row: js.Function1[/* props */ FooterRowProps, Element] = js.native
-      inline def Row_=(x: js.Function1[/* props */ FooterRowProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Row")(x.asInstanceOf[js.Any])
+      def Row: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof imported_Row.default */ Any = js.native
+      inline def Row_=(
+        x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof imported_Row.default */ Any
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Row")(x.asInstanceOf[js.Any])
     }
     
     object defaultProps {
@@ -80,13 +90,13 @@ object mod {
     * This is a syntactic sugar for `columns` prop.
     * So HOC will not work on this.
     */
-  inline def Column[RecordType](_underscore: ColumnProps[RecordType]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def Column[RecordType](_underscore: ColumnProps[RecordType]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * This is a syntactic sugar for `columns` prop.
     * So HOC will not work on this.
     */
-  inline def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ColumnGroup")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ColumnGroup")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("rc-table", "INTERNAL_COL_DEFINE")
   @js.native
@@ -94,18 +104,27 @@ object mod {
   
   object Summary {
     
+    /**
+      * Syntactic sugar. Do not support HOC.
+      */
+    inline def apply(hasChildren: SummaryProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("rc-table", "Summary")
     @js.native
     val ^ : js.Any = js.native
     
     @JSImport("rc-table", "Summary.Cell")
     @js.native
-    def Cell: js.Function1[/* hasClassNameIndexChildrenColSpanRowSpanAlign */ SummaryCellProps, Element] = js.native
-    inline def Cell_=(x: js.Function1[/* hasClassNameIndexChildrenColSpanRowSpanAlign */ SummaryCellProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
+    def Cell: /* import warning: importer.ImportType#apply Failed type conversion: typeof imported_Cell.default */ js.Any = js.native
+    inline def Cell_=(
+      x: /* import warning: importer.ImportType#apply Failed type conversion: typeof imported_Cell.default */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
     
     @JSImport("rc-table", "Summary.Row")
     @js.native
-    def Row: js.Function1[/* props */ FooterRowProps, Element] = js.native
-    inline def Row_=(x: js.Function1[/* props */ FooterRowProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Row")(x.asInstanceOf[js.Any])
+    def Row: /* import warning: importer.ImportType#apply Failed type conversion: typeof imported_Row.default */ js.Any = js.native
+    inline def Row_=(
+      x: /* import warning: importer.ImportType#apply Failed type conversion: typeof imported_Row.default */ js.Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Row")(x.asInstanceOf[js.Any])
   }
 }

@@ -12,7 +12,7 @@ object panelBaseMod {
   
   @JSImport("js/PanelBase/PanelBase", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with PanelBase {
     def this(options: Options) = this()
@@ -27,7 +27,7 @@ object panelBaseMod {
     override def clear(): Unit = js.native
     
     /* CompleteClass */
-    var control: js.Any = js.native
+    var control: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native

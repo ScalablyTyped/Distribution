@@ -1,5 +1,6 @@
 package typings.xrm.Xrm.Controls
 
+import typings.xrm.xrmStrings.quickform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Control type for formContext.ui.quickForms.getControlType().
   */
-type ControlQuickFormType = typings.xrm.xrmStrings.quickform
+type ControlQuickFormType = quickform
 
 /**
   * Control types for {@link Controls.Control.getControlType Controls.Control.getControlType()}.
@@ -27,4 +28,4 @@ type ControlQuickFormType = typings.xrm.xrmStrings.quickform
   - typings.xrm.xrmStrings.timelinewall
   - typings.xrm.Xrm.Controls.ControlQuickFormType
 */
-type ControlType = typings.xrm.Xrm.Controls._ControlType | typings.xrm.Xrm.Controls.ControlQuickFormType
+type ControlType = _ControlType | ControlQuickFormType

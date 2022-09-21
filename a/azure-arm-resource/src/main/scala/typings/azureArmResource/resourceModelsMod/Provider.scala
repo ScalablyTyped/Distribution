@@ -51,6 +51,6 @@ object Provider {
     
     inline def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
     
-    inline def setResourceTypesVarargs(value: ProviderResourceType*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
+    inline def setResourceTypesVarargs(value: ProviderResourceType*): Self = StObject.set(x, "resourceTypes", js.Array(value*))
   }
 }

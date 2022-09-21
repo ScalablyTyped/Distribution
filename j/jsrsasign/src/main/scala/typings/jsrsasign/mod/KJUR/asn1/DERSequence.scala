@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("jsrsasign", "KJUR.asn1.DERSequence")
 @js.native
-class DERSequence ()
+open class DERSequence ()
   extends StObject
      with typings.jsrsasign.jsrsasign.KJUR.asn1.DERSequence {
   def this(params: ArrayParam[typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object]) = this()

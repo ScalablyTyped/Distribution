@@ -1,6 +1,6 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeJsonrpc.mod.ProgressType
+import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashcodeAction
 import typings.vscodeLanguageserverTypes.mod.CodeAction
@@ -11,16 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CodeActionRequest {
   
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "CodeActionRequest.method")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "CodeActionRequest.messageDirection")
+  @js.native
+  val messageDirection: MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "CodeActionRequest.method")
   @js.native
   val method: textDocumentSlashcodeAction = js.native
   
-  /** @deprecated Use CodeActionRequest.type */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "CodeActionRequest.resultType")
-  @js.native
-  val resultType: ProgressType[js.Array[Command | CodeAction]] = js.native
-  
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "CodeActionRequest.type")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "CodeActionRequest.type")
   @js.native
   val `type`: ProtocolRequestType[
     CodeActionParams, 

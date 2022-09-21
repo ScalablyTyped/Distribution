@@ -11,17 +11,17 @@ trait XAccessibleGroupPosition
   extends StObject
      with XInterface {
   
-  def getGroupPosition(accoject: js.Any): SafeArray[Double]
+  def getGroupPosition(accoject: Any): SafeArray[Double]
   
-  def getObjectLink(accoject: js.Any): String
+  def getObjectLink(accoject: Any): String
 }
 object XAccessibleGroupPosition {
   
   inline def apply(
     acquire: () => Unit,
-    getGroupPosition: js.Any => SafeArray[Double],
-    getObjectLink: js.Any => String,
-    queryInterface: `type` => js.Any,
+    getGroupPosition: Any => SafeArray[Double],
+    getObjectLink: Any => String,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAccessibleGroupPosition = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getGroupPosition = js.Any.fromFunction1(getGroupPosition), getObjectLink = js.Any.fromFunction1(getObjectLink), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -30,8 +30,8 @@ object XAccessibleGroupPosition {
   
   extension [Self <: XAccessibleGroupPosition](x: Self) {
     
-    inline def setGetGroupPosition(value: js.Any => SafeArray[Double]): Self = StObject.set(x, "getGroupPosition", js.Any.fromFunction1(value))
+    inline def setGetGroupPosition(value: Any => SafeArray[Double]): Self = StObject.set(x, "getGroupPosition", js.Any.fromFunction1(value))
     
-    inline def setGetObjectLink(value: js.Any => String): Self = StObject.set(x, "getObjectLink", js.Any.fromFunction1(value))
+    inline def setGetObjectLink(value: Any => String): Self = StObject.set(x, "getObjectLink", js.Any.fromFunction1(value))
   }
 }

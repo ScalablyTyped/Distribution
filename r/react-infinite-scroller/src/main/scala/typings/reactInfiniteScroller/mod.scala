@@ -3,6 +3,7 @@ package typings.reactInfiniteScroller
 import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.reactInfiniteScroller.mod.InfiniteScroll.InfiniteScroll
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -13,13 +14,13 @@ object mod {
   
   @JSImport("react-infinite-scroller", JSImport.Namespace)
   @js.native
-  class ^ () extends InfiniteScroll
+  open class ^ () extends InfiniteScroll
   
   object InfiniteScroll {
     
     @js.native
     trait InfiniteScroll
-      extends Component[InfiniteScrollProps, js.Object, js.Any] {
+      extends Component[InfiniteScrollProps, js.Object, Any] {
       
       def getParentElement(): js.UndefOr[HTMLElement | Null] = js.native
       def getParentElement(elem: HTMLElement): js.UndefOr[HTMLElement | Null] = js.native
@@ -36,7 +37,7 @@ object mod {
         * Name of the element that the component should render as.
         * Defaults to 'div'.
         */
-      var element: js.UndefOr[String] = js.undefined
+      var element: js.UndefOr[ReactNode | String] = js.undefined
       
       /**
         * Override method to return a different scroll listener if it's not the immediate parent of InfiniteScroll.
@@ -105,7 +106,7 @@ object mod {
       
       extension [Self <: InfiniteScrollProps](x: Self) {
         
-        inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+        inline def setElement(value: ReactNode | String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
         
         inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
         

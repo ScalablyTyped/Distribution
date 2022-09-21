@@ -10,10 +10,10 @@ object dvrMod {
   
   @JSImport("material-ui/svg-icons/device/dvr", JSImport.Default)
   @js.native
-  class default () extends DeviceDvr
+  open class default () extends DeviceDvr
   
   @JSImport("material-ui/svg-icons/device/dvr", "DeviceDvr")
   @js.native
-  class DeviceDvr ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceDvr ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

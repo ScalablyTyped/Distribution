@@ -4,19 +4,19 @@
 Typings are for version 3.0
 
 ## Library description:
-Customizable Slack-like emoji picker for React
+Emoji picker for the web
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | emoji-mart |
-| Keywords           | react, emoji, picker |
+| Keywords           | emoji, emoticons, emoji-picker, web-component, twemoji |
 | # releases         | 5 |
-| # dependents       | 92 |
-| # downloads        | 4758807 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1612559.0 |
+| # stars            | 5894.0 |
 
 ## Links
-- [Homepage](https://github.com/missive/emoji-mart)
+- [Homepage](https://missiveapp.com/open/emoji-mart)
 - [Bugs](https://github.com/missive/emoji-mart/issues)
 - [Repository](https://github.com/missive/emoji-mart)
 - [Npm](https://www.npmjs.com/package/emoji-mart)

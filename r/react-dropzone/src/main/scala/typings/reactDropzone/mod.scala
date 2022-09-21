@@ -9,10 +9,6 @@ import typings.react.mod.InputHTMLAttributes
 import typings.react.mod.RefAttributes
 import typings.react.mod.RefObject
 import typings.react.mod.global.JSX.Element
-import typings.reactDropzone.reactDropzoneStrings.`file-invalid-type`
-import typings.reactDropzone.reactDropzoneStrings.`file-too-large`
-import typings.reactDropzone.reactDropzoneStrings.`file-too-small`
-import typings.reactDropzone.reactDropzoneStrings.`too-many-files`
 import typings.std.DataTransferItem
 import typings.std.Event
 import typings.std.File
@@ -30,8 +26,44 @@ object mod {
   
   inline def default(props: DropzoneProps & RefAttributes[DropzoneRef]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
+  @js.native
+  sealed trait ErrorCode extends StObject
+  @JSImport("react-dropzone", "ErrorCode")
+  @js.native
+  object ErrorCode extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[ErrorCode & String] = js.native
+    
+    @js.native
+    sealed trait FileInvalidType
+      extends StObject
+         with ErrorCode
+    /* "file-invalid-type" */ val FileInvalidType: typings.reactDropzone.mod.ErrorCode.FileInvalidType & String = js.native
+    
+    @js.native
+    sealed trait FileTooLarge
+      extends StObject
+         with ErrorCode
+    /* "file-too-large" */ val FileTooLarge: typings.reactDropzone.mod.ErrorCode.FileTooLarge & String = js.native
+    
+    @js.native
+    sealed trait FileTooSmall
+      extends StObject
+         with ErrorCode
+    /* "file-too-small" */ val FileTooSmall: typings.reactDropzone.mod.ErrorCode.FileTooSmall & String = js.native
+    
+    @js.native
+    sealed trait TooManyFiles
+      extends StObject
+         with ErrorCode
+    /* "too-many-files" */ val TooManyFiles: typings.reactDropzone.mod.ErrorCode.TooManyFiles & String = js.native
+  }
+  
   inline def useDropzone(): DropzoneState = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropzone")().asInstanceOf[DropzoneState]
   inline def useDropzone(options: DropzoneOptions): DropzoneState = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropzone")(options.asInstanceOf[js.Any]).asInstanceOf[DropzoneState]
+  
+  type Accept = StringDictionary[js.Array[String]]
   
   type DropEvent = DragEvent[HTMLElement] | ChangeEvent[HTMLInputElement] | typings.std.DragEvent | Event
   
@@ -56,10 +88,12 @@ object mod {
     }
   }
   
-  /* Inlined std.Pick<react.react.HTMLProps<std.HTMLElement>, react-dropzone.react-dropzone.PropTypes> & {  accept :string | std.Array<string> | undefined,   minSize :number | undefined,   maxSize :number | undefined,   maxFiles :number | undefined,   preventDropOnDocument :boolean | undefined,   noClick :boolean | undefined,   noKeyboard :boolean | undefined,   noDrag :boolean | undefined,   noDragEventsBubbling :boolean | undefined,   disabled :boolean | undefined,   onDrop :<T extends std.File>(acceptedFiles : std.Array<T>, fileRejections : std.Array<react-dropzone.react-dropzone.FileRejection>, event : react-dropzone.react-dropzone.DropEvent): void | undefined,   onDropAccepted :<T extends std.File>(files : std.Array<T>, event : react-dropzone.react-dropzone.DropEvent): void | undefined,   onDropRejected :(fileRejections : std.Array<react-dropzone.react-dropzone.FileRejection>, event : react-dropzone.react-dropzone.DropEvent): void | undefined,   getFilesFromEvent :(event : react-dropzone.react-dropzone.DropEvent): std.Promise<std.Array<std.File | std.DataTransferItem>> | undefined,   onFileDialogCancel :(): void | undefined} */
+  /* Inlined std.Pick<react.react.HTMLProps<std.HTMLElement>, react-dropzone.react-dropzone.PropTypes> & {  accept :react-dropzone.react-dropzone.Accept | undefined,   minSize :number | undefined,   maxSize :number | undefined,   maxFiles :number | undefined,   preventDropOnDocument :boolean | undefined,   noClick :boolean | undefined,   noKeyboard :boolean | undefined,   noDrag :boolean | undefined,   noDragEventsBubbling :boolean | undefined,   disabled :boolean | undefined,   onDrop :<T extends std.File>(acceptedFiles : std.Array<T>, fileRejections : std.Array<react-dropzone.react-dropzone.FileRejection>, event : react-dropzone.react-dropzone.DropEvent): void | undefined,   onDropAccepted :<T extends std.File>(files : std.Array<T>, event : react-dropzone.react-dropzone.DropEvent): void | undefined,   onDropRejected :(fileRejections : std.Array<react-dropzone.react-dropzone.FileRejection>, event : react-dropzone.react-dropzone.DropEvent): void | undefined,   getFilesFromEvent :(event : react-dropzone.react-dropzone.DropEvent): std.Promise<std.Array<std.File | std.DataTransferItem>> | undefined,   onFileDialogCancel :(): void | undefined,   onFileDialogOpen :(): void | undefined,   onError :(err : std.Error): void | undefined,   validator :<T extends std.File>(file : T): react-dropzone.react-dropzone.FileError | std.Array<react-dropzone.react-dropzone.FileError> | null | undefined,   useFsAccessApi :boolean | undefined,   autoFocus :boolean | undefined} */
   trait DropzoneOptions extends StObject {
     
-    var accept: js.UndefOr[String | js.Array[String]] = js.undefined
+    var accept: js.UndefOr[Accept] = js.undefined
+    
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -104,9 +138,17 @@ object mod {
         js.Function2[/* fileRejections */ js.Array[FileRejection], /* event */ DropEvent, Unit]
       ] = js.undefined
     
+    var onError: js.UndefOr[js.Function1[/* err */ js.Error, Unit]] = js.undefined
+    
     var onFileDialogCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    var onFileDialogOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
     var preventDropOnDocument: js.UndefOr[Boolean] = js.undefined
+    
+    var useFsAccessApi: js.UndefOr[Boolean] = js.undefined
+    
+    var validator: js.UndefOr[js.Function1[/* file */ File, FileError | js.Array[FileError] | Null]] = js.undefined
   }
   object DropzoneOptions {
     
@@ -117,11 +159,13 @@ object mod {
     
     extension [Self <: DropzoneOptions](x: Self) {
       
-      inline def setAccept(value: String | js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: Accept): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
       inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      inline def setAcceptVarargs(value: String*): Self = StObject.set(x, "accept", js.Array(value :_*))
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -189,13 +233,29 @@ object mod {
       
       inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
+      inline def setOnError(value: /* err */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      
       inline def setOnFileDialogCancel(value: () => Unit): Self = StObject.set(x, "onFileDialogCancel", js.Any.fromFunction0(value))
       
       inline def setOnFileDialogCancelUndefined: Self = StObject.set(x, "onFileDialogCancel", js.undefined)
       
+      inline def setOnFileDialogOpen(value: () => Unit): Self = StObject.set(x, "onFileDialogOpen", js.Any.fromFunction0(value))
+      
+      inline def setOnFileDialogOpenUndefined: Self = StObject.set(x, "onFileDialogOpen", js.undefined)
+      
       inline def setPreventDropOnDocument(value: Boolean): Self = StObject.set(x, "preventDropOnDocument", value.asInstanceOf[js.Any])
       
       inline def setPreventDropOnDocumentUndefined: Self = StObject.set(x, "preventDropOnDocument", js.undefined)
+      
+      inline def setUseFsAccessApi(value: Boolean): Self = StObject.set(x, "useFsAccessApi", value.asInstanceOf[js.Any])
+      
+      inline def setUseFsAccessApiUndefined: Self = StObject.set(x, "useFsAccessApi", js.undefined)
+      
+      inline def setValidator(value: /* file */ File => FileError | js.Array[FileError] | Null): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
+      
+      inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
     }
   }
   
@@ -240,7 +300,7 @@ object mod {
   trait DropzoneRootProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var refKey: js.UndefOr[String] = js.undefined
   }
@@ -266,15 +326,13 @@ object mod {
     
     var acceptedFiles: js.Array[File] = js.native
     
-    var draggedFiles: js.Array[File] = js.native
-    
     var fileRejections: js.Array[FileRejection] = js.native
     
-    def getInputProps(): DropzoneInputProps = js.native
-    def getInputProps(props: DropzoneInputProps): DropzoneInputProps = js.native
+    def getInputProps[T /* <: DropzoneInputProps */](): T = js.native
+    def getInputProps[T /* <: DropzoneInputProps */](props: T): T = js.native
     
-    def getRootProps(): DropzoneRootProps = js.native
-    def getRootProps(props: DropzoneRootProps): DropzoneRootProps = js.native
+    def getRootProps[T /* <: DropzoneRootProps */](): T = js.native
+    def getRootProps[T /* <: DropzoneRootProps */](props: T): T = js.native
     
     var inputRef: RefObject[HTMLInputElement] = js.native
     
@@ -293,23 +351,20 @@ object mod {
   
   trait FileError extends StObject {
     
-    var code: `file-too-large` | `file-too-small` | `too-many-files` | `file-invalid-type`
+    var code: ErrorCode | String
     
     var message: String
   }
   object FileError {
     
-    inline def apply(
-      code: `file-too-large` | `file-too-small` | `too-many-files` | `file-invalid-type`,
-      message: String
-    ): FileError = {
+    inline def apply(code: ErrorCode | String, message: String): FileError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileError]
     }
     
     extension [Self <: FileError](x: Self) {
       
-      inline def setCode(value: `file-too-large` | `file-too-small` | `too-many-files` | `file-invalid-type`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: ErrorCode | String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -332,7 +387,7 @@ object mod {
       
       inline def setErrors(value: js.Array[FileError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: FileError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: FileError*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }

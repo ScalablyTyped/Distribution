@@ -2,6 +2,7 @@ package typings.reactStripeElements
 
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
+import typings.reactStripeElements.anon.ElementsCreateOptionschil
 import typings.reactStripeElements.mod.ReactStripeElements.ElementProps
 import typings.reactStripeElements.mod.ReactStripeElements.InjectOptions
 import typings.reactStripeElements.mod.ReactStripeElements.InjectedStripeProps
@@ -19,7 +20,6 @@ import typings.stripeV3.stripe.SetupIntentResponse
 import typings.stripeV3.stripe.StripeClientCheckoutOptions
 import typings.stripeV3.stripe.StripeRedirectResponse
 import typings.stripeV3.stripe.elements.Element
-import typings.stripeV3.stripe.elements.ElementsCreateOptions
 import typings.stripeV3.stripe.paymentMethod.paymentMethodType
 import typings.stripeV3.stripe.paymentRequest.StripePaymentRequest
 import typings.stripeV3.stripe.paymentRequest.StripePaymentRequestOptions
@@ -35,133 +35,133 @@ object mod {
   
   @JSImport("react-stripe-elements", "CardCVCElement")
   @js.native
-  class CardCVCElement_ protected () extends CardCvcElement {
+  open class CardCVCElement_ protected () extends CardCvcElement {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ElementProps, context: js.Any) = this()
+    def this(props: ElementProps, context: Any) = this()
   }
   
   @JSImport("react-stripe-elements", "CardCvcElement")
   @js.native
-  class CardCvcElement protected ()
-    extends Component[ElementProps, js.Object, js.Any] {
+  open class CardCvcElement protected ()
+    extends Component[ElementProps, js.Object, Any] {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ElementProps, context: js.Any) = this()
+    def this(props: ElementProps, context: Any) = this()
   }
   
   @JSImport("react-stripe-elements", "CardElement")
   @js.native
-  class CardElement protected ()
-    extends Component[ElementProps, js.Object, js.Any] {
+  open class CardElement protected ()
+    extends Component[ElementProps, js.Object, Any] {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ElementProps, context: js.Any) = this()
+    def this(props: ElementProps, context: Any) = this()
   }
   
   @JSImport("react-stripe-elements", "CardExpiryElement")
   @js.native
-  class CardExpiryElement protected ()
-    extends Component[ElementProps, js.Object, js.Any] {
+  open class CardExpiryElement protected ()
+    extends Component[ElementProps, js.Object, Any] {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ElementProps, context: js.Any) = this()
+    def this(props: ElementProps, context: Any) = this()
   }
   
   @JSImport("react-stripe-elements", "CardNumberElement")
   @js.native
-  class CardNumberElement protected ()
-    extends Component[ElementProps, js.Object, js.Any] {
+  open class CardNumberElement protected ()
+    extends Component[ElementProps, js.Object, Any] {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ElementProps, context: js.Any) = this()
+    def this(props: ElementProps, context: Any) = this()
   }
   
   @JSImport("react-stripe-elements", "Elements")
   @js.native
-  class Elements protected ()
-    extends Component[ElementsCreateOptions, js.Object, js.Any] {
-    def this(props: ElementsCreateOptions) = this()
+  open class Elements protected ()
+    extends Component[ElementsCreateOptionschil, js.Object, Any] {
+    def this(props: ElementsCreateOptionschil) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ElementsCreateOptions, context: js.Any) = this()
+    def this(props: ElementsCreateOptionschil, context: Any) = this()
   }
   
   @JSImport("react-stripe-elements", "IbanElement")
   @js.native
-  class IbanElement protected ()
-    extends Component[ElementProps, js.Object, js.Any] {
+  open class IbanElement protected ()
+    extends Component[ElementProps, js.Object, Any] {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ElementProps, context: js.Any) = this()
+    def this(props: ElementProps, context: Any) = this()
   }
   
   @JSImport("react-stripe-elements", "IdealBankElement")
   @js.native
-  class IdealBankElement protected ()
-    extends Component[ElementProps, js.Object, js.Any] {
+  open class IdealBankElement protected ()
+    extends Component[ElementProps, js.Object, Any] {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ElementProps, context: js.Any) = this()
+    def this(props: ElementProps, context: Any) = this()
   }
   
   @JSImport("react-stripe-elements", "PaymentRequestButtonElement")
   @js.native
-  class PaymentRequestButtonElement protected ()
-    extends Component[PaymentRequestButtonElementProps, js.Object, js.Any] {
+  open class PaymentRequestButtonElement protected ()
+    extends Component[PaymentRequestButtonElementProps, js.Object, Any] {
     def this(props: PaymentRequestButtonElementProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PaymentRequestButtonElementProps, context: js.Any) = this()
+    def this(props: PaymentRequestButtonElementProps, context: Any) = this()
   }
   
   @JSImport("react-stripe-elements", "PostalCodeElement")
   @js.native
-  class PostalCodeElement protected ()
-    extends Component[ElementProps, js.Object, js.Any] {
+  open class PostalCodeElement protected ()
+    extends Component[ElementProps, js.Object, Any] {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ElementProps, context: js.Any) = this()
+    def this(props: ElementProps, context: Any) = this()
   }
   
   @JSImport("react-stripe-elements", "StripeProvider")
   @js.native
-  class StripeProvider protected ()
-    extends Component[StripeProviderProps, js.Object, js.Any] {
+  open class StripeProvider protected ()
+    extends Component[StripeProviderProps, js.Object, Any] {
     def this(props: StripeProviderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: StripeProviderProps, context: js.Any) = this()
+    def this(props: StripeProviderProps, context: Any) = this()
   }
   
   inline def injectStripe[P /* <: js.Object */](WrappedComponent: ComponentType[P & InjectedStripeProps]): ComponentType[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("injectStripe")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
@@ -177,7 +177,7 @@ object mod {
       
       var className: js.UndefOr[String] = js.undefined
       
-      var elementRef: js.UndefOr[js.Function1[/* ref */ js.Any, Unit]] = js.undefined
+      var elementRef: js.UndefOr[js.Function1[/* ref */ Any, Unit]] = js.undefined
       
       var id: js.UndefOr[String] = js.undefined
       
@@ -202,7 +202,7 @@ object mod {
         
         inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        inline def setElementRef(value: /* ref */ js.Any => Unit): Self = StObject.set(x, "elementRef", js.Any.fromFunction1(value))
+        inline def setElementRef(value: /* ref */ Any => Unit): Self = StObject.set(x, "elementRef", js.Any.fromFunction1(value))
         
         inline def setElementRefUndefined: Self = StObject.set(x, "elementRef", js.undefined)
         
@@ -280,7 +280,7 @@ object mod {
       extends StObject
          with ElementProps {
       
-      var onClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+      var onClick: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
     }
     object PaymentRequestButtonElementProps {
       
@@ -291,7 +291,7 @@ object mod {
       
       extension [Self <: PaymentRequestButtonElementProps](x: Self) {
         
-        inline def setOnClick(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+        inline def setOnClick(value: /* event */ Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
         
         inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       }
@@ -334,6 +334,8 @@ object mod {
     @js.native
     trait StripeProps extends StObject {
       
+      var confirmAuBecsDebitPayment: js.Function1[/* clientSecret */ String, js.Promise[PaymentIntentResponse]] = js.native
+      
       var confirmCardPayment: js.Function1[/* clientSecret */ String, js.Promise[PaymentIntentResponse]] = js.native
       
       var confirmCardSetup: js.Function1[/* clientSecret */ String, js.Promise[SetupIntentResponse]] = js.native
@@ -343,6 +345,8 @@ object mod {
       var confirmSepaDebitPayment: js.Function1[/* clientSecret */ String, js.Promise[PaymentIntentResponse]] = js.native
       
       var confirmSepaDebitSetup: js.Function1[/* clientSecret */ String, js.Promise[SetupIntentResponse]] = js.native
+      
+      var confirmSofortPayment: js.Function1[/* clientSecret */ String, js.Promise[PaymentIntentResponse]] = js.native
       
       def createPaymentMethod(data: PaymentMethodData): js.Promise[PaymentMethodResponse] = js.native
       def createPaymentMethod(paymentMethodType: paymentMethodType): js.Promise[PaymentMethodResponse] = js.native
@@ -406,20 +410,20 @@ object mod {
     }
     
     /* Rewritten from type alias, can be one of: 
-      - typings.reactStripeElements.anon.apiKeystringstripeneverun
-      - typings.reactStripeElements.anon.apiKeyneverundefinedstrip
+      - typings.reactStripeElements.anon.childrenReactNodeundefine
+      - typings.reactStripeElements.anon.childrenReactNodeundefineApiKey
     */
     trait StripeProviderProps extends StObject
     object StripeProviderProps {
       
-      inline def apiKeyneverundefinedstrip(): typings.reactStripeElements.anon.apiKeyneverundefinedstrip = {
-        val __obj = js.Dynamic.literal(stripe = null)
-        __obj.asInstanceOf[typings.reactStripeElements.anon.apiKeyneverundefinedstrip]
+      inline def childrenReactNodeundefine(apiKey: String): typings.reactStripeElements.anon.childrenReactNodeundefine = {
+        val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.reactStripeElements.anon.childrenReactNodeundefine]
       }
       
-      inline def apiKeystringstripeneverun(apiKey: String): typings.reactStripeElements.anon.apiKeystringstripeneverun = {
-        val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any])
-        __obj.asInstanceOf[typings.reactStripeElements.anon.apiKeystringstripeneverun]
+      inline def childrenReactNodeundefineApiKey(): typings.reactStripeElements.anon.childrenReactNodeundefineApiKey = {
+        val __obj = js.Dynamic.literal(stripe = null)
+        __obj.asInstanceOf[typings.reactStripeElements.anon.childrenReactNodeundefineApiKey]
       }
     }
     

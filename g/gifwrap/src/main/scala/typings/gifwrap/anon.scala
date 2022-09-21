@@ -30,7 +30,7 @@ object anon {
       
       inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      inline def setColorsVarargs(value: Double*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: Double*): Self = StObject.set(x, "colors", js.Array(value*))
       
       inline def setIndexCount(value: Double): Self = StObject.set(x, "indexCount", value.asInstanceOf[js.Any])
       
@@ -38,7 +38,7 @@ object anon {
       
       inline def setPalettes(value: js.Array[GifPalette]): Self = StObject.set(x, "palettes", value.asInstanceOf[js.Any])
       
-      inline def setPalettesVarargs(value: GifPalette*): Self = StObject.set(x, "palettes", js.Array(value :_*))
+      inline def setPalettesVarargs(value: GifPalette*): Self = StObject.set(x, "palettes", js.Array(value*))
       
       inline def setUsesTransparency(value: Boolean): Self = StObject.set(x, "usesTransparency", value.asInstanceOf[js.Any])
     }

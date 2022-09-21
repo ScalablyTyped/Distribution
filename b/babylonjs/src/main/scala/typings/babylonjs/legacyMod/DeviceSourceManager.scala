@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "DeviceSourceManager")
 @js.native
-class DeviceSourceManager protected ()
+open class DeviceSourceManager protected ()
   extends typings.babylonjs.indexMod.DeviceSourceManager {
   /**
-    * Default Constructor
-    * @param engine engine to pull input element from
+    * Default constructor
+    * @param engine - Used to get canvas (if applicable)
     */
   def this(engine: typings.babylonjs.engineMod.Engine) = this()
 }

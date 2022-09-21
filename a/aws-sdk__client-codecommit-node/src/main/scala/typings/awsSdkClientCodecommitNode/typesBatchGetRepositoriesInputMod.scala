@@ -2,7 +2,6 @@ package typings.awsSdkClientCodecommitNode
 
 import typings.awsSdkClientCodecommitNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object typesBatchGetRepositoriesInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -38,11 +37,11 @@ object typesBatchGetRepositoriesInputMod {
     /**
       * <p>The names of the repositories to get information about.</p>
       */
-    var repositoryNames: js.Array[String] | Iterable[String]
+    var repositoryNames: js.Array[String] | js.Iterable[String]
   }
   object BatchGetRepositoriesInput {
     
-    inline def apply(repositoryNames: js.Array[String] | Iterable[String]): BatchGetRepositoriesInput = {
+    inline def apply(repositoryNames: js.Array[String] | js.Iterable[String]): BatchGetRepositoriesInput = {
       val __obj = js.Dynamic.literal(repositoryNames = repositoryNames.asInstanceOf[js.Any])
       __obj.asInstanceOf[BatchGetRepositoriesInput]
     }
@@ -54,7 +53,7 @@ object typesBatchGetRepositoriesInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -63,9 +62,9 @@ object typesBatchGetRepositoriesInputMod {
       
       inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      inline def setRepositoryNames(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "repositoryNames", value.asInstanceOf[js.Any])
+      inline def setRepositoryNames(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "repositoryNames", value.asInstanceOf[js.Any])
       
-      inline def setRepositoryNamesVarargs(value: String*): Self = StObject.set(x, "repositoryNames", js.Array(value :_*))
+      inline def setRepositoryNamesVarargs(value: String*): Self = StObject.set(x, "repositoryNames", js.Array(value*))
     }
   }
 }

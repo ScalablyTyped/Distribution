@@ -9,10 +9,10 @@ Angular provider for slim progress bars
 | ------------------ | :-------------: |
 | Full name          | ngprogress-lite |
 | Keywords           | ui, bar, ngprogress-lite, ngProgressLite, angular, progress |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 26714 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2558.3333333333335 |
+| # stars            | 397.0 |
 
 ## Links
 - [Homepage](https://github.com/voronianski/ngprogress-lite#readme)

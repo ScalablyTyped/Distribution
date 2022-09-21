@@ -16,7 +16,6 @@ import typings.devexpressUtils.devexpressUtilsStrings.loaded
 import typings.devexpressUtils.devexpressUtilsStrings.loading
 import typings.devexpressUtils.devexpressUtilsStrings.normal
 import typings.devexpressUtils.devexpressUtilsStrings.unloaded
-import typings.std.ArrayBuffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,7 +27,7 @@ object fontsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addFontToDocument(loadedFace: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFontToDocument")(loadedFace.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addFontToDocument(loadedFace: Record[String, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFontToDocument")(loadedFace.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def afterFontsLoaded(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterFontsLoaded")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -45,7 +44,7 @@ object fontsMod {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(fontFamily.asInstanceOf[js.Any], source.asInstanceOf[js.Any], fontFaceDescriptors.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def loadFont(
     fontFamily: String,
-    source: ArrayBuffer,
+    source: js.typedarray.ArrayBuffer,
     fontFaceDescriptors: IFontFaceDescriptors,
     callback: js.Function1[/* error */ String | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(fontFamily.asInstanceOf[js.Any], source.asInstanceOf[js.Any], fontFaceDescriptors.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

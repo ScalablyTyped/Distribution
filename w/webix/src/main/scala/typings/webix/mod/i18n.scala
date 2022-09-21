@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait i18n extends StObject {
   
-  var calendar: js.Any
+  var calendar: Any
   
-  var controls: js.Any
+  var controls: Any
   
   var dateFormat: String
   
-  def dateFormatDate(date: String): js.Any
+  def dateFormatDate(date: String): Any
   
-  def dateFormatStr(date: js.Any): String
+  def dateFormatStr(date: Any): String
   
   var decimalDelimiter: String
   
   var decimalSize: Double
   
-  var fileSize: js.Array[js.Any]
+  var fileSize: js.Array[Any]
   
   var fullDateFormat: String
   
-  def fullDateFormatDate(date: String): js.Any
+  def fullDateFormatDate(date: String): Any
   
   def fullDateFormatStr(date: Date): String
   
@@ -34,41 +34,41 @@ trait i18n extends StObject {
   
   def intFormat(num: Double): String
   
-  var locales: js.Any
+  var locales: Any
   
   var longDateFormat: String
   
-  def longDateFormatDate(date: String): js.Any
+  def longDateFormatDate(date: String): Any
   
-  def longDateFormatStr(date: js.Any): String
+  def longDateFormatStr(date: Any): String
   
   def numberFormat(number: Double): String
   
   var parseFormat: String
   
-  def parseFormatDate(date: String): js.Any
+  def parseFormatDate(date: String): Any
   
-  def parseFormatStr(date: js.Any): String
+  def parseFormatStr(date: Any): String
   
   var parseTimeFormat: String
   
-  def parseTimeFormatDate(date: String): js.Any
+  def parseTimeFormatDate(date: String): Any
   
-  def parseTimeFormatStr(date: js.Any): String
+  def parseTimeFormatStr(date: Any): String
   
   var price: String
   
   def priceFormat(number: Double): String
   
-  var priceSettings: js.Any
+  var priceSettings: Any
   
   def setLocale(name: String): Unit
   
   var timeFormat: String
   
-  def timeFormatDate(time: String): js.Any
+  def timeFormatDate(time: String): Any
   
-  def timeFormatStr(date: js.Any): String
+  def timeFormatStr(date: Any): String
 }
 object i18n {
   
@@ -78,27 +78,27 @@ object i18n {
   
   extension [Self <: i18n](x: Self) {
     
-    inline def setCalendar(value: js.Any): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+    inline def setCalendar(value: Any): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
-    inline def setControls(value: js.Any): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: Any): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
     inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
-    inline def setDateFormatDate(value: String => js.Any): Self = StObject.set(x, "dateFormatDate", js.Any.fromFunction1(value))
+    inline def setDateFormatDate(value: String => Any): Self = StObject.set(x, "dateFormatDate", js.Any.fromFunction1(value))
     
-    inline def setDateFormatStr(value: js.Any => String): Self = StObject.set(x, "dateFormatStr", js.Any.fromFunction1(value))
+    inline def setDateFormatStr(value: Any => String): Self = StObject.set(x, "dateFormatStr", js.Any.fromFunction1(value))
     
     inline def setDecimalDelimiter(value: String): Self = StObject.set(x, "decimalDelimiter", value.asInstanceOf[js.Any])
     
     inline def setDecimalSize(value: Double): Self = StObject.set(x, "decimalSize", value.asInstanceOf[js.Any])
     
-    inline def setFileSize(value: js.Array[js.Any]): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: js.Array[Any]): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
-    inline def setFileSizeVarargs(value: js.Any*): Self = StObject.set(x, "fileSize", js.Array(value :_*))
+    inline def setFileSizeVarargs(value: Any*): Self = StObject.set(x, "fileSize", js.Array(value*))
     
     inline def setFullDateFormat(value: String): Self = StObject.set(x, "fullDateFormat", value.asInstanceOf[js.Any])
     
-    inline def setFullDateFormatDate(value: String => js.Any): Self = StObject.set(x, "fullDateFormatDate", js.Any.fromFunction1(value))
+    inline def setFullDateFormatDate(value: String => Any): Self = StObject.set(x, "fullDateFormatDate", js.Any.fromFunction1(value))
     
     inline def setFullDateFormatStr(value: Date => String): Self = StObject.set(x, "fullDateFormatStr", js.Any.fromFunction1(value))
     
@@ -108,40 +108,40 @@ object i18n {
     
     inline def setIntFormat(value: Double => String): Self = StObject.set(x, "intFormat", js.Any.fromFunction1(value))
     
-    inline def setLocales(value: js.Any): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+    inline def setLocales(value: Any): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     
     inline def setLongDateFormat(value: String): Self = StObject.set(x, "longDateFormat", value.asInstanceOf[js.Any])
     
-    inline def setLongDateFormatDate(value: String => js.Any): Self = StObject.set(x, "longDateFormatDate", js.Any.fromFunction1(value))
+    inline def setLongDateFormatDate(value: String => Any): Self = StObject.set(x, "longDateFormatDate", js.Any.fromFunction1(value))
     
-    inline def setLongDateFormatStr(value: js.Any => String): Self = StObject.set(x, "longDateFormatStr", js.Any.fromFunction1(value))
+    inline def setLongDateFormatStr(value: Any => String): Self = StObject.set(x, "longDateFormatStr", js.Any.fromFunction1(value))
     
     inline def setNumberFormat(value: Double => String): Self = StObject.set(x, "numberFormat", js.Any.fromFunction1(value))
     
     inline def setParseFormat(value: String): Self = StObject.set(x, "parseFormat", value.asInstanceOf[js.Any])
     
-    inline def setParseFormatDate(value: String => js.Any): Self = StObject.set(x, "parseFormatDate", js.Any.fromFunction1(value))
+    inline def setParseFormatDate(value: String => Any): Self = StObject.set(x, "parseFormatDate", js.Any.fromFunction1(value))
     
-    inline def setParseFormatStr(value: js.Any => String): Self = StObject.set(x, "parseFormatStr", js.Any.fromFunction1(value))
+    inline def setParseFormatStr(value: Any => String): Self = StObject.set(x, "parseFormatStr", js.Any.fromFunction1(value))
     
     inline def setParseTimeFormat(value: String): Self = StObject.set(x, "parseTimeFormat", value.asInstanceOf[js.Any])
     
-    inline def setParseTimeFormatDate(value: String => js.Any): Self = StObject.set(x, "parseTimeFormatDate", js.Any.fromFunction1(value))
+    inline def setParseTimeFormatDate(value: String => Any): Self = StObject.set(x, "parseTimeFormatDate", js.Any.fromFunction1(value))
     
-    inline def setParseTimeFormatStr(value: js.Any => String): Self = StObject.set(x, "parseTimeFormatStr", js.Any.fromFunction1(value))
+    inline def setParseTimeFormatStr(value: Any => String): Self = StObject.set(x, "parseTimeFormatStr", js.Any.fromFunction1(value))
     
     inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
     inline def setPriceFormat(value: Double => String): Self = StObject.set(x, "priceFormat", js.Any.fromFunction1(value))
     
-    inline def setPriceSettings(value: js.Any): Self = StObject.set(x, "priceSettings", value.asInstanceOf[js.Any])
+    inline def setPriceSettings(value: Any): Self = StObject.set(x, "priceSettings", value.asInstanceOf[js.Any])
     
     inline def setSetLocale(value: String => Unit): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
     
     inline def setTimeFormat(value: String): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
     
-    inline def setTimeFormatDate(value: String => js.Any): Self = StObject.set(x, "timeFormatDate", js.Any.fromFunction1(value))
+    inline def setTimeFormatDate(value: String => Any): Self = StObject.set(x, "timeFormatDate", js.Any.fromFunction1(value))
     
-    inline def setTimeFormatStr(value: js.Any => String): Self = StObject.set(x, "timeFormatStr", js.Any.fromFunction1(value))
+    inline def setTimeFormatStr(value: Any => String): Self = StObject.set(x, "timeFormatStr", js.Any.fromFunction1(value))
   }
 }

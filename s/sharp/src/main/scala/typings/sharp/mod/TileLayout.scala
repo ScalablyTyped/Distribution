@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.sharp.sharpStrings.dz
   - typings.sharp.sharpStrings.iiif
+  - typings.sharp.sharpStrings.iiif3
   - typings.sharp.sharpStrings.zoomify
   - typings.sharp.sharpStrings.google
 */
@@ -18,6 +19,8 @@ object TileLayout {
   inline def google: typings.sharp.sharpStrings.google = "google".asInstanceOf[typings.sharp.sharpStrings.google]
   
   inline def iiif: typings.sharp.sharpStrings.iiif = "iiif".asInstanceOf[typings.sharp.sharpStrings.iiif]
+  
+  inline def iiif3: typings.sharp.sharpStrings.iiif3 = "iiif3".asInstanceOf[typings.sharp.sharpStrings.iiif3]
   
   inline def zoomify: typings.sharp.sharpStrings.zoomify = "zoomify".asInstanceOf[typings.sharp.sharpStrings.zoomify]
 }

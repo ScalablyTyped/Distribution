@@ -9,7 +9,7 @@ object global {
   
   @JSGlobal("FontFaceObserver")
   @js.native
-  class FontFaceObserver protected ()
+  open class FontFaceObserver protected ()
     extends StObject
        with typings.fontfaceobserver.FontFaceObserver {
     /**

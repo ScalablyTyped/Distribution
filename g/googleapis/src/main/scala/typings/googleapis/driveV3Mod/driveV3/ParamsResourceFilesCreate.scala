@@ -1,9 +1,5 @@
 package typings.googleapis.driveV3Mod.driveV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,21 +10,27 @@ trait ParamsResourceFilesCreate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * Deprecated. Creating files in multiple folders is no longer supported.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var enforceSingleParent: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether to ignore the domain's default visibility settings for the
-    * created file. Domain administrators can choose to make all uploaded files
-    * visible to the domain by default; this parameter bypasses that behavior
-    * for the request. Permissions are still inherited from parent folders.
+    * Whether to ignore the domain's default visibility settings for the created file. Domain administrators can choose to make all uploaded files visible to the domain by default; this parameter bypasses that behavior for the request. Permissions are still inherited from parent folders.
     */
   var ignoreDefaultVisibility: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether to set the 'keepForever' field in the new head revision. This is
-    * only applicable to files with binary content in Drive.
+    * A comma-separated list of IDs of labels to include in the labelInfo part of the response.
+    */
+  var includeLabels: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Specifies which additional view's permissions to include in the response. Only 'published' is supported.
+    */
+  var includePermissionsForView: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Whether to set the 'keepForever' field in the new head revision. This is only applicable to files with binary content in Google Drive. Only 200 revisions for the file can be kept forever. If the limit is reached, try deleting pinned revisions.
     */
   var keepRevisionForever: js.UndefOr[Boolean] = js.undefined
   
@@ -48,7 +50,12 @@ trait ParamsResourceFilesCreate
   var requestBody: js.UndefOr[SchemaFile] = js.undefined
   
   /**
-    * Whether the requesting application supports Team Drives.
+    * Whether the requesting application supports both My Drives and shared drives.
+    */
+  var supportsAllDrives: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Deprecated use supportsAllDrives instead.
     */
   var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
@@ -66,13 +73,21 @@ object ParamsResourceFilesCreate {
   
   extension [Self <: ParamsResourceFilesCreate](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setEnforceSingleParent(value: Boolean): Self = StObject.set(x, "enforceSingleParent", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setEnforceSingleParentUndefined: Self = StObject.set(x, "enforceSingleParent", js.undefined)
     
     inline def setIgnoreDefaultVisibility(value: Boolean): Self = StObject.set(x, "ignoreDefaultVisibility", value.asInstanceOf[js.Any])
     
     inline def setIgnoreDefaultVisibilityUndefined: Self = StObject.set(x, "ignoreDefaultVisibility", js.undefined)
+    
+    inline def setIncludeLabels(value: String): Self = StObject.set(x, "includeLabels", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeLabelsUndefined: Self = StObject.set(x, "includeLabels", js.undefined)
+    
+    inline def setIncludePermissionsForView(value: String): Self = StObject.set(x, "includePermissionsForView", value.asInstanceOf[js.Any])
+    
+    inline def setIncludePermissionsForViewUndefined: Self = StObject.set(x, "includePermissionsForView", js.undefined)
     
     inline def setKeepRevisionForever(value: Boolean): Self = StObject.set(x, "keepRevisionForever", value.asInstanceOf[js.Any])
     
@@ -89,6 +104,10 @@ object ParamsResourceFilesCreate {
     inline def setRequestBody(value: SchemaFile): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    
+    inline def setSupportsAllDrives(value: Boolean): Self = StObject.set(x, "supportsAllDrives", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsAllDrivesUndefined: Self = StObject.set(x, "supportsAllDrives", js.undefined)
     
     inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     

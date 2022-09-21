@@ -11,5 +11,5 @@ object getPositionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getPosition(evt: js.Any): XY = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(evt.asInstanceOf[js.Any]).asInstanceOf[XY]
+  inline def getPosition(evt: Any): XY = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(evt.asInstanceOf[js.Any]).asInstanceOf[XY]
 }

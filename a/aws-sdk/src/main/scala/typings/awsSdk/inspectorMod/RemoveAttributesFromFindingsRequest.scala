@@ -27,10 +27,10 @@ object RemoveAttributesFromFindingsRequest {
     
     inline def setAttributeKeys(value: UserAttributeKeyList): Self = StObject.set(x, "attributeKeys", value.asInstanceOf[js.Any])
     
-    inline def setAttributeKeysVarargs(value: AttributeKey*): Self = StObject.set(x, "attributeKeys", js.Array(value :_*))
+    inline def setAttributeKeysVarargs(value: AttributeKey*): Self = StObject.set(x, "attributeKeys", js.Array(value*))
     
     inline def setFindingArns(value: AddRemoveAttributesFindingArnList): Self = StObject.set(x, "findingArns", value.asInstanceOf[js.Any])
     
-    inline def setFindingArnsVarargs(value: Arn*): Self = StObject.set(x, "findingArns", js.Array(value :_*))
+    inline def setFindingArnsVarargs(value: Arn*): Self = StObject.set(x, "findingArns", js.Array(value*))
   }
 }

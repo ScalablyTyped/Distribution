@@ -22,6 +22,6 @@ object DescribeAssessmentTargetsRequest {
     
     inline def setAssessmentTargetArns(value: BatchDescribeArnList): Self = StObject.set(x, "assessmentTargetArns", value.asInstanceOf[js.Any])
     
-    inline def setAssessmentTargetArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentTargetArns", js.Array(value :_*))
+    inline def setAssessmentTargetArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentTargetArns", js.Array(value*))
   }
 }

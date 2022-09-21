@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateBuildInput extends StObject {
   
   /**
-    * A unique identifier for a build to update. You can use either the build ID or ARN value. 
+    * A unique identifier for the build to update. You can use either the build ID or ARN value. 
     */
   var BuildId: BuildIdOrArn
   

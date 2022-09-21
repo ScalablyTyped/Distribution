@@ -10,7 +10,11 @@ trait VideoDome
   extends StObject
      with TextureDome[VideoTexture] {
   
-  /* protected */ def _initTexture(urlsOrElement: HTMLVideoElement, scene: Scene, options: js.Any): VideoTexture = js.native
+  /* protected */ def _initTexture(urlsOrElement: HTMLVideoElement, scene: Scene, options: Any): VideoTexture = js.native
+  
+  /* private */ var _pointerObserver: Any = js.native
+  
+  /* private */ var _textureObserver: Any = js.native
   
   /**
     * Get the video mode of this dome

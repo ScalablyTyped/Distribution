@@ -1,9 +1,5 @@
 package typings.googleapis.storageV1beta2Mod.storageV1beta2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,7 @@ trait ParamsResourceObjectsCompose
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Name of the bucket containing the source objects. The destination object
-    * is stored in this bucket.
+    * Name of the bucket containing the source objects. The destination object is stored in this bucket.
     */
   var destinationBucket: js.UndefOr[String] = js.undefined
   
@@ -29,14 +19,12 @@ trait ParamsResourceObjectsCompose
   var destinationObject: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the object's current
-    * generation matches the given value.
+    * Makes the operation conditional on whether the object's current generation matches the given value.
     */
   var ifGenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the object's current
-    * metageneration matches the given value.
+    * Makes the operation conditional on whether the object's current metageneration matches the given value.
     */
   var ifMetagenerationMatch: js.UndefOr[String] = js.undefined
   
@@ -53,10 +41,6 @@ object ParamsResourceObjectsCompose {
   }
   
   extension [Self <: ParamsResourceObjectsCompose](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDestinationBucket(value: String): Self = StObject.set(x, "destinationBucket", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-datepicker
 
-Typings are for version 3.1
+Typings are for version 4.4
 
 ## Library description:
 A simple and reusable datepicker component for React
@@ -10,10 +10,10 @@ A simple and reusable datepicker component for React
 | ------------------ | :-------------: |
 | Full name          | react-datepicker |
 | Keywords           | react, datepicker, calendar, date, react-component |
-| # releases         | 31 |
-| # dependents       | 733 |
-| # downloads        | 35169121 |
-| # stars            | 21 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 5520883.0 |
+| # stars            | 6625.0 |
 
 ## Links
 - [Homepage](https://github.com/Hacker0x01/react-datepicker)

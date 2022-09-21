@@ -18,19 +18,19 @@ object stateRegistryMod {
   
   @JSImport("@uirouter/core/lib/state/stateRegistry", "StateRegistry")
   @js.native
-  class StateRegistry protected () extends StObject {
+  open class StateRegistry protected () extends StObject {
     /** @internal */
     def this(router: UIRouter) = this()
     
     /** @internal */
-    /* private */ var _deregisterTree: js.Any = js.native
+    /* private */ var _deregisterTree: Any = js.native
     
     /** @internal */
-    /* private */ var _registerRoot: js.Any = js.native
+    /* private */ var _registerRoot: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
-    /* private */ var builder: js.Any = js.native
+    /* private */ var builder: Any = js.native
     
     /**
       * Registers a [[BuilderFunction]] for a specific [[StateObject]] property (e.g., `parent`, `url`, or `path`).
@@ -143,12 +143,12 @@ object stateRegistryMod {
       */
     def root(): StateObject = js.native
     
-    /* private */ var router: js.Any = js.native
+    /* private */ var router: Any = js.native
     
     /** @internal */
     var stateQueue: StateQueueManager = js.native
     
-    /* private */ var states: js.Any = js.native
+    /* private */ var states: Any = js.native
   }
   
   type StateRegistryListener = js.Function2[/* event */ registered | deregistered, /* states */ js.Array[StateDeclaration], Unit]

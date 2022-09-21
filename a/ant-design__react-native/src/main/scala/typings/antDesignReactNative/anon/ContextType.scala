@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContextType
   extends StObject
      with Instantiable1[(/* props */ PickerProps) | (/* props */ ReadonlyPickerProps), ComponentDidMount]
-     with Instantiable2[/* props */ PickerProps, /* context */ js.Any, ComponentDidMount] {
+     with Instantiable2[/* props */ PickerProps, /* context */ Any, ComponentDidMount] {
   
   def Item(_props: ItemProps): Null = js.native
   
-  var contextType: js.UndefOr[Context[js.Any]] = js.native
+  var contextType: js.UndefOr[Context[Any]] = js.native
 }

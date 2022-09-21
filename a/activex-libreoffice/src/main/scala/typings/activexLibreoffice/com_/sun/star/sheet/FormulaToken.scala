@@ -12,7 +12,7 @@ trait FormulaToken extends StObject {
     * @see com.sun.star.sheet.NamedRange.TokenIndex
     * @see com.sun.star.sheet.DatabaseRange.TokenIndex
     */
-  var Data: js.Any
+  var Data: Any
   
   /**
     * is the OpCode of the token.
@@ -22,14 +22,14 @@ trait FormulaToken extends StObject {
 }
 object FormulaToken {
   
-  inline def apply(Data: js.Any, OpCode: Double): FormulaToken = {
+  inline def apply(Data: Any, OpCode: Double): FormulaToken = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], OpCode = OpCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormulaToken]
   }
   
   extension [Self <: FormulaToken](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
     inline def setOpCode(value: Double): Self = StObject.set(x, "OpCode", value.asInstanceOf[js.Any])
   }

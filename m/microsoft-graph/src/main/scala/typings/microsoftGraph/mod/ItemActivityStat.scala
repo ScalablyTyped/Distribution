@@ -59,7 +59,7 @@ object ItemActivityStat {
     
     inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
     
-    inline def setActivitiesVarargs(value: ItemActivity*): Self = StObject.set(x, "activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: ItemActivity*): Self = StObject.set(x, "activities", js.Array(value*))
     
     inline def setCreate(value: NullableOption[ItemActionStat]): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

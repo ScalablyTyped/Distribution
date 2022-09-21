@@ -14,7 +14,7 @@ trait MetricRule extends StObject {
   var metricCosts: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.MetricRule & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.MetricRule & TopLevel[Any]
   ] = js.undefined
   
   /** Selects the methods to which this rule applies. Refer to selector for syntax details. */
@@ -32,7 +32,7 @@ object MetricRule {
     inline def setMetricCosts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.MetricRule & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.MetricRule & TopLevel[Any]
     ): Self = StObject.set(x, "metricCosts", value.asInstanceOf[js.Any])
     
     inline def setMetricCostsUndefined: Self = StObject.set(x, "metricCosts", js.undefined)

@@ -29,7 +29,7 @@ object ClusterDbRevisionsMessage {
     
     inline def setClusterDbRevisionsUndefined: Self = StObject.set(x, "ClusterDbRevisions", js.undefined)
     
-    inline def setClusterDbRevisionsVarargs(value: ClusterDbRevision*): Self = StObject.set(x, "ClusterDbRevisions", js.Array(value :_*))
+    inline def setClusterDbRevisionsVarargs(value: ClusterDbRevision*): Self = StObject.set(x, "ClusterDbRevisions", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

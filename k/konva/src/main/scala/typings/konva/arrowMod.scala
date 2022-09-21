@@ -9,17 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object arrowMod {
   
-  @JSImport("konva/types/shapes/Arrow", "Arrow")
+  @JSImport("konva/lib/shapes/Arrow", "Arrow")
   @js.native
-  class Arrow () extends Line[ArrowConfig] {
+  open class Arrow () extends Line[ArrowConfig] {
     def this(config: ArrowConfig) = this()
     
-    def _sceneFunc(ctx: js.Any): Unit = js.native
+    def __fillStroke(ctx: Any): Unit = js.native
+    
+    def _sceneFunc(ctx: Any): Unit = js.native
     
     def pointerAtBeginning(): Boolean = js.native
     def pointerAtBeginning(v: Boolean): this.type = js.native
     @JSName("pointerAtBeginning")
     var pointerAtBeginning_Original: GetSet[Boolean, this.type] = js.native
+    
+    def pointerAtEnding(): Boolean = js.native
+    def pointerAtEnding(v: Boolean): this.type = js.native
+    @JSName("pointerAtEnding")
+    var pointerAtEnding_Original: GetSet[Boolean, this.type] = js.native
     
     def pointerLength(): Double = js.native
     def pointerLength(v: Double): this.type = js.native
@@ -38,9 +45,14 @@ object arrowMod {
     
     var pointerAtBeginning: js.UndefOr[Boolean] = js.undefined
     
+    var pointerAtEnding: js.UndefOr[Boolean] = js.undefined
+    
     var pointerLength: js.UndefOr[Double] = js.undefined
     
     var pointerWidth: js.UndefOr[Double] = js.undefined
+    
+    @JSName("points")
+    var points_ArrowConfig: js.Array[Double]
   }
   object ArrowConfig {
     
@@ -55,6 +67,10 @@ object arrowMod {
       
       inline def setPointerAtBeginningUndefined: Self = StObject.set(x, "pointerAtBeginning", js.undefined)
       
+      inline def setPointerAtEnding(value: Boolean): Self = StObject.set(x, "pointerAtEnding", value.asInstanceOf[js.Any])
+      
+      inline def setPointerAtEndingUndefined: Self = StObject.set(x, "pointerAtEnding", js.undefined)
+      
       inline def setPointerLength(value: Double): Self = StObject.set(x, "pointerLength", value.asInstanceOf[js.Any])
       
       inline def setPointerLengthUndefined: Self = StObject.set(x, "pointerLength", js.undefined)
@@ -62,6 +78,10 @@ object arrowMod {
       inline def setPointerWidth(value: Double): Self = StObject.set(x, "pointerWidth", value.asInstanceOf[js.Any])
       
       inline def setPointerWidthUndefined: Self = StObject.set(x, "pointerWidth", js.undefined)
+      
+      inline def setPoints(value: js.Array[Double]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      
+      inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value*))
     }
   }
 }

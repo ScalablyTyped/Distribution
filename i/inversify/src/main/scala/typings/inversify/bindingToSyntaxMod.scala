@@ -1,11 +1,11 @@
 package typings.inversify
 
-import typings.inversify.anon.Instantiable
+import org.scalablytyped.runtime.Instantiable1
 import typings.inversify.interfacesMod.interfaces.Abstract
 import typings.inversify.interfacesMod.interfaces.Binding
 import typings.inversify.interfacesMod.interfaces.BindingInWhenOnSyntax
 import typings.inversify.interfacesMod.interfaces.BindingWhenOnSyntax
-import typings.inversify.interfacesMod.interfaces.Context
+import typings.inversify.interfacesMod.interfaces.DynamicValue
 import typings.inversify.interfacesMod.interfaces.FactoryCreator
 import typings.inversify.interfacesMod.interfaces.Newable
 import typings.inversify.interfacesMod.interfaces.ProviderCreator
@@ -16,20 +16,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bindingToSyntaxMod {
   
-  @JSImport("inversify/dts/syntax/binding_to_syntax", "BindingToSyntax")
+  @JSImport("inversify/lib/syntax/binding_to_syntax", "BindingToSyntax")
   @js.native
-  class BindingToSyntax[T] protected ()
+  open class BindingToSyntax[T] protected ()
     extends StObject
        with typings.inversify.interfacesMod.interfaces.BindingToSyntax[T] {
     def this(binding: Binding[T]) = this()
     
-    /* private */ var _binding: js.Any = js.native
+    /* private */ var _binding: Any = js.native
     
     /* CompleteClass */
-    override def to(constructor: Instantiable[T]): BindingInWhenOnSyntax[T] = js.native
+    override def to(constructor: Instantiable1[/* args (repeated) */ scala.Nothing, T]): BindingInWhenOnSyntax[T] = js.native
     
     /* CompleteClass */
     override def toAutoFactory[T2](serviceIdentifier: ServiceIdentifier[T2]): BindingWhenOnSyntax[T] = js.native
+    
+    /* CompleteClass */
+    override def toAutoNamedFactory[T2](serviceIdentifier: ServiceIdentifier[T2]): BindingWhenOnSyntax[T] = js.native
     
     /* CompleteClass */
     override def toConstantValue(value: T): BindingWhenOnSyntax[T] = js.native
@@ -38,10 +41,10 @@ object bindingToSyntaxMod {
     override def toConstructor[T2](constructor: Newable[T2]): BindingWhenOnSyntax[T] = js.native
     
     /* CompleteClass */
-    override def toDynamicValue(func: js.Function1[/* context */ Context, T]): BindingInWhenOnSyntax[T] = js.native
+    override def toDynamicValue(func: DynamicValue[T]): BindingInWhenOnSyntax[T] = js.native
     
     /* CompleteClass */
-    override def toFactory[T2](factory: FactoryCreator[T2]): BindingWhenOnSyntax[T] = js.native
+    override def toFactory[T2, T3 /* <: js.Array[Any] */, T4 /* <: js.Array[Any] */](factory: FactoryCreator[T2, T3, T4]): BindingWhenOnSyntax[T] = js.native
     
     /* CompleteClass */
     override def toFunction(func: T): BindingWhenOnSyntax[T] = js.native

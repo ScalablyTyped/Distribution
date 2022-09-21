@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'x' | 'alpha'> */
 trait PreluInputs extends StObject {
   
-  var alpha: js.UndefOr[js.Any] = js.undefined
+  var alpha: js.UndefOr[scala.Any] = js.undefined
   
-  var x: js.UndefOr[js.Any] = js.undefined
+  var x: js.UndefOr[scala.Any] = js.undefined
 }
 object PreluInputs {
   
@@ -20,11 +20,11 @@ object PreluInputs {
   
   extension [Self <: PreluInputs](x: Self) {
     
-    inline def setAlpha(value: js.Any): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: scala.Any): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
     inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }

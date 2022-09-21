@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Defines a Cloud Organization `Policy` which is used to specify
-  * `Constraints` for configurations of Cloud Platform resources.
-  */
 trait SchemaOrgPolicy extends StObject {
   
   /**
@@ -16,24 +12,14 @@ trait SchemaOrgPolicy extends StObject {
   var booleanPolicy: js.UndefOr[SchemaBooleanPolicy] = js.undefined
   
   /**
-    * The name of the `Constraint` the `Policy` is configuring, for example,
-    * `constraints/serviceuser.services`.  Immutable after creation.
+    * The name of the `Constraint` the `Policy` is configuring, for example, `constraints/serviceuser.services`. A [list of available constraints](/resource-manager/docs/organization-policy/org-policy-constraints) is available. Immutable after creation.
     */
-  var constraint: js.UndefOr[String] = js.undefined
+  var constraint: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * An opaque tag indicating the current version of the `Policy`, used for
-    * concurrency control.  When the `Policy` is returned from either a
-    * `GetPolicy` or a `ListOrgPolicy` request, this `etag` indicates the
-    * version of the current `Policy` to use when executing a read-modify-write
-    * loop.  When the `Policy` is returned from a `GetEffectivePolicy` request,
-    * the `etag` will be unset.  When the `Policy` is used in a `SetOrgPolicy`
-    * method, use the `etag` value that was returned from a `GetOrgPolicy`
-    * request as part of a read-modify-write loop for concurrency control. Not
-    * setting the `etag`in a `SetOrgPolicy` request will result in an
-    * unconditional write of the `Policy`.
+    * An opaque tag indicating the current version of the `Policy`, used for concurrency control. When the `Policy` is returned from either a `GetPolicy` or a `ListOrgPolicy` request, this `etag` indicates the version of the current `Policy` to use when executing a read-modify-write loop. When the `Policy` is returned from a `GetEffectivePolicy` request, the `etag` will be unset. When the `Policy` is used in a `SetOrgPolicy` method, use the `etag` value that was returned from a `GetOrgPolicy` request as part of a read-modify-write loop for concurrency control. Not setting the `etag`in a `SetOrgPolicy` request will result in an unconditional write of the `Policy`.
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
     * List of values either allowed or disallowed.
@@ -41,23 +27,19 @@ trait SchemaOrgPolicy extends StObject {
   var listPolicy: js.UndefOr[SchemaListPolicy] = js.undefined
   
   /**
-    * Restores the default behavior of the constraint; independent of
-    * `Constraint` type.
+    * Restores the default behavior of the constraint; independent of `Constraint` type.
     */
   var restoreDefault: js.UndefOr[SchemaRestoreDefault] = js.undefined
   
   /**
-    * The time stamp the `Policy` was previously updated. This is set by the
-    * server, not specified by the caller, and represents the last time a call
-    * to `SetOrgPolicy` was made for that `Policy`. Any value set by the client
-    * will be ignored.
+    * The time stamp the `Policy` was previously updated. This is set by the server, not specified by the caller, and represents the last time a call to `SetOrgPolicy` was made for that `Policy`. Any value set by the client will be ignored.
     */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var updateTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Version of the `Policy`. Default version is 0;
     */
-  var version: js.UndefOr[Double] = js.undefined
+  var version: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaOrgPolicy {
   
@@ -74,9 +56,13 @@ object SchemaOrgPolicy {
     
     inline def setConstraint(value: String): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
+    inline def setConstraintNull: Self = StObject.set(x, "constraint", null)
+    
     inline def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
     
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
@@ -90,9 +76,13 @@ object SchemaOrgPolicy {
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
+    inline def setUpdateTimeNull: Self = StObject.set(x, "updateTime", null)
+    
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }

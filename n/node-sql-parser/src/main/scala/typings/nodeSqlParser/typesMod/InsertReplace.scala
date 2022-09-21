@@ -14,7 +14,7 @@ trait InsertReplace
   
   var db: String | Null
   
-  var table: js.Any
+  var table: Any
   
   var `type`: replace | insert
   
@@ -22,7 +22,7 @@ trait InsertReplace
 }
 object InsertReplace {
   
-  inline def apply(table: js.Any, `type`: replace | insert, values: js.Array[InsertReplaceValue]): InsertReplace = {
+  inline def apply(table: Any, `type`: replace | insert, values: js.Array[InsertReplaceValue]): InsertReplace = {
     val __obj = js.Dynamic.literal(table = table.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], columns = null, db = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertReplace]
@@ -34,18 +34,18 @@ object InsertReplace {
     
     inline def setColumnsNull: Self = StObject.set(x, "columns", null)
     
-    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
     inline def setDbNull: Self = StObject.set(x, "db", null)
     
-    inline def setTable(value: js.Any): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: Any): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     inline def setType(value: replace | insert): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setValues(value: js.Array[InsertReplaceValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: InsertReplaceValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: InsertReplaceValue*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

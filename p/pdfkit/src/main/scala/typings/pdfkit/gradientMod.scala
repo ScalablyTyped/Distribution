@@ -14,10 +14,10 @@ object gradientMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("pdfkit/js/gradient", "PDFGradient")
   @js.native
-  class PDFGradient protected ()
+  open class PDFGradient protected ()
     extends StObject
        with typings.pdfkit.PDFKit.PDFGradient {
-    def this(document: js.Any) = this()
+    def this(document: Any) = this()
   }
   @JSImport("pdfkit/js/gradient", "PDFGradient")
   @js.native
@@ -27,10 +27,10 @@ object gradientMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("pdfkit/js/gradient", "PDFLinearGradient")
   @js.native
-  class PDFLinearGradient protected ()
+  open class PDFLinearGradient protected ()
     extends StObject
        with typings.pdfkit.PDFKit.PDFLinearGradient {
-    def this(document: js.Any, x1: Double, y1: Double, x2: Double, y2: Double) = this()
+    def this(document: Any, x1: Double, y1: Double, x2: Double, y2: Double) = this()
   }
   @JSImport("pdfkit/js/gradient", "PDFLinearGradient")
   @js.native
@@ -40,10 +40,10 @@ object gradientMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("pdfkit/js/gradient", "PDFRadialGradiant")
   @js.native
-  class PDFRadialGradiant protected ()
+  open class PDFRadialGradiant protected ()
     extends StObject
        with PDFRadialGradient {
-    def this(document: js.Any, x1: Double, y1: Double, x2: Double, y2: Double) = this()
+    def this(document: Any, x1: Double, y1: Double, x2: Double, y2: Double) = this()
   }
   @JSImport("pdfkit/js/gradient", "PDFRadialGradiant")
   @js.native

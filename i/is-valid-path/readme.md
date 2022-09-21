@@ -10,10 +10,10 @@ Returns true if a file path does not contain any invalid characters.
 | ------------------ | :-------------: |
 | Full name          | is-valid-path |
 | Keywords           | bash, braces, character, check, exec, expression, extglob, file, filepath, glob, globbing, globstar, invalid, match, matches, path, pattern, regex, regexp, regular, string, test, valid, validate |
-| # releases         | 0 |
-| # dependents       | 126 |
-| # downloads        | 35627606 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4226572.666666667 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/is-valid-path)

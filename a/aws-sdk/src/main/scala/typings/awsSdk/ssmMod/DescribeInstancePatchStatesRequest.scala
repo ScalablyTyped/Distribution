@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeInstancePatchStatesRequest extends StObject {
   
   /**
-    * The ID of the instance whose patch state information should be retrieved.
+    * The ID of the managed node for which patch state information should be retrieved.
     */
   var InstanceIds: InstanceIdList
   
   /**
-    * The maximum number of instances to return (per page).
+    * The maximum number of managed nodes to return (per page).
     */
   var MaxResults: js.UndefOr[PatchComplianceMaxResults] = js.undefined
   
@@ -32,7 +32,7 @@ object DescribeInstancePatchStatesRequest {
     
     inline def setInstanceIds(value: InstanceIdList): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
-    inline def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value*))
     
     inline def setMaxResults(value: PatchComplianceMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

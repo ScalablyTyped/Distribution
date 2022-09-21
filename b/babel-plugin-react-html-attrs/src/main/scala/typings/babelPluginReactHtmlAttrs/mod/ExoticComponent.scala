@@ -20,7 +20,7 @@ trait ExoticComponent[P] extends StObject {
   /**
     * **NOTE**: Exotic components are not callable.
     */
-  def apply(props: P): (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | Null = js.native
+  def apply(props: P): (ReactElement[Any, String | JSXElementConstructor[Any]]) | Null = js.native
   
   @JSName("$$typeof")
   val DollarDollartypeof: js.Symbol = js.native

@@ -12,7 +12,7 @@ trait PutAutoScalingPolicyOutput extends StObject {
   var AutoScalingPolicy: js.UndefOr[AutoScalingPolicyDescription] = js.undefined
   
   /**
-    * The Amazon Resource Name of the cluster.
+    * The Amazon Resource Name (ARN) of the cluster.
     */
   var ClusterArn: js.UndefOr[ArnType] = js.undefined
   

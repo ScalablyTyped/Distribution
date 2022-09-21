@@ -9,7 +9,7 @@ object eventedMod {
   
   @JSImport("esri/core/Evented", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Evented
 }

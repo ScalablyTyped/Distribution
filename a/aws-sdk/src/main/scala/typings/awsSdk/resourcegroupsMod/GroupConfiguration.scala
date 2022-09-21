@@ -39,7 +39,7 @@ object GroupConfiguration {
     
     inline def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
     
-    inline def setConfigurationVarargs(value: GroupConfigurationItem*): Self = StObject.set(x, "Configuration", js.Array(value :_*))
+    inline def setConfigurationVarargs(value: GroupConfigurationItem*): Self = StObject.set(x, "Configuration", js.Array(value*))
     
     inline def setFailureReason(value: GroupConfigurationFailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object GroupConfiguration {
     
     inline def setProposedConfigurationUndefined: Self = StObject.set(x, "ProposedConfiguration", js.undefined)
     
-    inline def setProposedConfigurationVarargs(value: GroupConfigurationItem*): Self = StObject.set(x, "ProposedConfiguration", js.Array(value :_*))
+    inline def setProposedConfigurationVarargs(value: GroupConfigurationItem*): Self = StObject.set(x, "ProposedConfiguration", js.Array(value*))
     
     inline def setStatus(value: GroupConfigurationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

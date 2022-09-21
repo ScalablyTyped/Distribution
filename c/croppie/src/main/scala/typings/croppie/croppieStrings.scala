@@ -34,6 +34,10 @@ object croppieStrings {
   inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
+  sealed trait ctrl extends StObject
+  inline def ctrl: ctrl = "ctrl".asInstanceOf[ctrl]
+  
+  @js.native
   sealed trait html
     extends StObject
        with Type

@@ -33,7 +33,7 @@ object global {
       
       @JSGlobal("AMap.Geometry3D.Line")
       @js.native
-      class Line ()
+      open class Line ()
         extends StObject
            with typings.amapJsApiMap3d.AMap.Geometry3D.Line {
         
@@ -58,7 +58,7 @@ object global {
       
       @JSGlobal("AMap.Geometry3D.Mesh")
       @js.native
-      class Mesh ()
+      open class Mesh ()
         extends StObject
            with typings.amapJsApiMap3d.AMap.Geometry3D.Mesh {
         
@@ -83,7 +83,7 @@ object global {
       
       @JSGlobal("AMap.Geometry3D.Points")
       @js.native
-      class Points ()
+      open class Points ()
         extends StObject
            with typings.amapJsApiMap3d.AMap.Geometry3D.Points {
         
@@ -114,7 +114,7 @@ object global {
       
       @JSGlobal("AMap.Lights.AmbientLight")
       @js.native
-      class AmbientLight protected ()
+      open class AmbientLight protected ()
         extends StObject
            with typings.amapJsApiMap3d.AMap.Lights.AmbientLight {
         def this(color: js.Tuple3[Double, Double, Double], intensity: Double) = this()
@@ -128,7 +128,7 @@ object global {
       
       @JSGlobal("AMap.Lights.DirectionLight")
       @js.native
-      class DirectionLight protected ()
+      open class DirectionLight protected ()
         extends StObject
            with typings.amapJsApiMap3d.AMap.Lights.DirectionLight {
         def this(
@@ -153,7 +153,7 @@ object global {
     
     @JSGlobal("AMap.Object3D")
     @js.native
-    class Object3D ()
+    open class Object3D ()
       extends StObject
          with typings.amapJsApiMap3d.AMap.Object3D {
       
@@ -183,7 +183,7 @@ object global {
       
       @JSGlobal("AMap.Object3D.Line")
       @js.native
-      class Line ()
+      open class Line ()
         extends StObject
            with typings.amapJsApiMap3d.AMap.Object3D.Line {
         
@@ -215,7 +215,7 @@ object global {
       
       @JSGlobal("AMap.Object3D.Mesh")
       @js.native
-      class Mesh ()
+      open class Mesh ()
         extends StObject
            with typings.amapJsApiMap3d.AMap.Object3D.Mesh {
         
@@ -247,7 +247,7 @@ object global {
       
       @JSGlobal("AMap.Object3D.MeshAcceptLights")
       @js.native
-      class MeshAcceptLights ()
+      open class MeshAcceptLights ()
         extends StObject
            with typings.amapJsApiMap3d.AMap.Object3D.MeshAcceptLights {
         
@@ -283,7 +283,7 @@ object global {
       // inherit from WideLine
       @JSGlobal("AMap.Object3D.MeshLine")
       @js.native
-      class MeshLine protected ()
+      open class MeshLine protected ()
         extends StObject
            with typings.amapJsApiMap3d.AMap.Object3D.MeshLine {
         def this(options: Options) = this()
@@ -313,7 +313,7 @@ object global {
       
       @JSGlobal("AMap.Object3D.Points")
       @js.native
-      class Points ()
+      open class Points ()
         extends StObject
            with typings.amapJsApiMap3d.AMap.Object3D.Points {
         
@@ -351,7 +351,7 @@ object global {
       
       @JSGlobal("AMap.Object3D.Prism")
       @js.native
-      class Prism protected ()
+      open class Prism protected ()
         extends StObject
            with typings.amapJsApiMap3d.AMap.Object3D.MeshAcceptLights {
         def this(options: typings.amapJsApiMap3d.AMap.Object3D.Prism.Options) = this()
@@ -387,7 +387,7 @@ object global {
       
       @JSGlobal("AMap.Object3D.RoundPoints")
       @js.native
-      class RoundPoints ()
+      open class RoundPoints ()
         extends StObject
            with typings.amapJsApiMap3d.AMap.Object3D.RoundPoints {
         
@@ -428,7 +428,7 @@ object global {
       
       @JSGlobal("AMap.Object3D.ThinLine")
       @js.native
-      class ThinLine protected ()
+      open class ThinLine protected ()
         extends StObject
            with typings.amapJsApiMap3d.AMap.Object3D.Line {
         def this(options: typings.amapJsApiMap3d.AMap.Object3D.ThinLine.Options) = this()
@@ -461,7 +461,7 @@ object global {
       
       @JSGlobal("AMap.Object3D.Wall")
       @js.native
-      class Wall ()
+      open class Wall ()
         extends StObject
            with typings.amapJsApiMap3d.AMap.Object3D.MeshAcceptLights {
         
@@ -497,7 +497,7 @@ object global {
     
     @JSGlobal("AMap.Object3DGroup")
     @js.native
-    class Object3DGroup[C /* <: typings.amapJsApiMap3d.AMap.Object3D */] ()
+    open class Object3DGroup[C /* <: typings.amapJsApiMap3d.AMap.Object3D */] ()
       extends StObject
          with typings.amapJsApiMap3d.AMap.Object3DGroup[C] {
       
@@ -535,7 +535,7 @@ object global {
     
     @JSGlobal("AMap.Object3DLayer")
     @js.native
-    class Object3DLayer ()
+    open class Object3DLayer ()
       extends StObject
          with typings.amapJsApiMap3d.AMap.Object3DLayer {
       def this(options: typings.amapJsApiMap3d.AMap.Object3DLayer.Options) = this()
@@ -543,7 +543,7 @@ object global {
     
     @JSGlobal("AMap.Vector3")
     @js.native
-    class Vector3 protected ()
+    open class Vector3 protected ()
       extends StObject
          with typings.amapJsApiMap3d.AMap.Vector3 {
       def this(elements: js.Tuple3[Double, Double, Double]) = this()

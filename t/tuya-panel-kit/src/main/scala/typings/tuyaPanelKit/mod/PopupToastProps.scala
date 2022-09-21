@@ -8,6 +8,16 @@ trait PopupToastProps
   extends StObject
      with ModalProps {
   
+  /**
+    * @language zh-CN
+    * @description 文案内容
+    * @defaultValue ''
+    */
+  /**
+    * @language en-US
+    * @description Message
+    * @defaultValue ''
+    */
   var message: js.UndefOr[String] = js.undefined
 }
 object PopupToastProps {

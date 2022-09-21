@@ -10,10 +10,10 @@ Content-Range header formatter .
 | ------------------ | :-------------: |
 | Full name          | content-range |
 | Keywords           | content-range, header, formatter, parser |
-| # releases         | 1 |
-| # dependents       | 8 |
-| # downloads        | 189063 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 37497.0 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/gregberge/content-range#readme)

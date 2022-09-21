@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "PBRMaterial")
 @js.native
-class PBRMaterial protected ()
+open class PBRMaterial protected ()
   extends typings.babylonjs.materialsPbrIndexMod.PBRMaterial {
   /**
     * Instantiates a new PBRMaterial instance.
@@ -15,6 +15,7 @@ class PBRMaterial protected ()
     * @param name The material name
     * @param scene The scene the material will be use in.
     */
+  def this(name: String) = this()
   def this(name: String, scene: Scene) = this()
 }
 /* static members */
@@ -69,5 +70,5 @@ object PBRMaterial {
     * @param rootUrl - url for the scene object
     * @returns - PBRMaterial
     */
-  inline def Parse(source: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.pbrMaterialMod.PBRMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.pbrMaterialMod.PBRMaterial]
+  inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.pbrMaterialMod.PBRMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.pbrMaterialMod.PBRMaterial]
 }

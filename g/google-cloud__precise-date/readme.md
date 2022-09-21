@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__precise-date
 
-Typings are for version 2.0.3
+Typings are for version 3.0.1
 
 ## Library description:
 A simple utility for precise-dateing functions and classes.
@@ -10,10 +10,10 @@ A simple utility for precise-dateing functions and classes.
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/precise-date |
 | Keywords           | nano, date, time, precise |
-| # releases         | 11 |
-| # dependents       | 6 |
-| # downloads        | 22327489 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 3660757.3333333335 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/googleapis/nodejs-precise-date#readme)

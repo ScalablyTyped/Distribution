@@ -16,7 +16,7 @@ trait BindingConfig extends StObject {
   
   var destinationType: js.UndefOr[queue | exchange] = js.undefined
   
-  var options: js.UndefOr[js.Any] = js.undefined
+  var options: js.UndefOr[Any] = js.undefined
   
   var source: js.UndefOr[String] = js.undefined
 }
@@ -37,7 +37,7 @@ object BindingConfig {
     
     inline def setBindingKeysUndefined: Self = StObject.set(x, "bindingKeys", js.undefined)
     
-    inline def setBindingKeysVarargs(value: String*): Self = StObject.set(x, "bindingKeys", js.Array(value :_*))
+    inline def setBindingKeysVarargs(value: String*): Self = StObject.set(x, "bindingKeys", js.Array(value*))
     
     inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
@@ -47,7 +47,7 @@ object BindingConfig {
     
     inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     

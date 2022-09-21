@@ -1,7 +1,7 @@
 
 # Scala.js typings for urban-dictionary
 
-Typings are for version 2.2
+Typings are for version 3.0
 
 ## Library description:
 Simple Node.js module that provides easy methods of obtaining urbandictionary.com definitions.
@@ -10,10 +10,10 @@ Simple Node.js module that provides easy methods of obtaining urbandictionary.co
 | ------------------ | :-------------: |
 | Full name          | urban-dictionary |
 | Keywords           | urban, dictionary, node, nodejs, node.js, nightfallalicorn |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 20839 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4097.0 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](https://github.com/NightfallAlicorn/urban-dictionary#readme)

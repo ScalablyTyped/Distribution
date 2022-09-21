@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "EventManager")
 @js.native
-class EventManager () extends StObject {
+open class EventManager () extends StObject {
   def this(escapeShadowRoot: Boolean) = this()
   
   def addEventListener(

@@ -78,7 +78,7 @@ object mod {
       * remaining and the error that occurred (the value that the task promise
       * was rejected with)
       */
-    var progressCallback: js.UndefOr[js.Function2[/* retriesRemaining */ Double, /* error */ js.Any, Unit]] = js.undefined
+    var progressCallback: js.UndefOr[js.Function2[/* retriesRemaining */ Double, /* error */ Any, Unit]] = js.undefined
     
     /**
       * Number of times to attempt taskFn.
@@ -95,7 +95,7 @@ object mod {
       * @param value the resolved value when a poll succeeds
       * @default err => !!err
       */
-    var shouldContinue: js.UndefOr[js.Function2[/* reason */ js.Any, /* value */ js.UndefOr[T], Boolean]] = js.undefined
+    var shouldContinue: js.UndefOr[js.Function2[/* reason */ Any, /* value */ js.UndefOr[T], Boolean]] = js.undefined
     
     /**
       * `strategy: 'linear-backoff'` --
@@ -196,7 +196,7 @@ object mod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setProgressCallback(value: (/* retriesRemaining */ Double, /* error */ js.Any) => Unit): Self = StObject.set(x, "progressCallback", js.Any.fromFunction2(value))
+      inline def setProgressCallback(value: (/* retriesRemaining */ Double, /* error */ Any) => Unit): Self = StObject.set(x, "progressCallback", js.Any.fromFunction2(value))
       
       inline def setProgressCallbackUndefined: Self = StObject.set(x, "progressCallback", js.undefined)
       
@@ -204,7 +204,7 @@ object mod {
       
       inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
       
-      inline def setShouldContinue(value: (/* reason */ js.Any, /* value */ js.UndefOr[T]) => Boolean): Self = StObject.set(x, "shouldContinue", js.Any.fromFunction2(value))
+      inline def setShouldContinue(value: (/* reason */ Any, /* value */ js.UndefOr[T]) => Boolean): Self = StObject.set(x, "shouldContinue", js.Any.fromFunction2(value))
       
       inline def setShouldContinueUndefined: Self = StObject.set(x, "shouldContinue", js.undefined)
       

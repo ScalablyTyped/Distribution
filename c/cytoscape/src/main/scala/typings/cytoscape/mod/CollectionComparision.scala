@@ -18,21 +18,14 @@ trait CollectionComparision extends StObject {
   
   /**
     * Determine whether all elements in the specified collection are in the neighbourhood of the calling collection.
-    *
     * @param eles The other elements to compare to.
     */
   def allAreNeighbors(eles: CollectionArgument): Boolean = js.native
   
-  /**
-    * Determine whether all elements in the specified collection are in the neighbourhood of the calling collection.
-    *
-    * @param eles The other elements to compare to.
-    */
   def allAreNeighbours(eles: CollectionArgument): Boolean = js.native
   
   /**
     * Determine whether this collection contains any of the same elements as another collection.
-    *
     * @param eles The other elements to compare to.
     */
   def anySame(eles: CollectionArgument): Boolean = js.native
@@ -56,12 +49,9 @@ trait CollectionComparision extends StObject {
   ): Boolean = js.native
   def every(
     test: js.Function3[/* ele */ CollectionArgument, /* i */ Double, /* eles */ CollectionArgument, Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): Boolean = js.native
   
-  /**
-    * Determine whether this collection contains all of the elements of another collection.
-    */
   def has(eles: CollectionArgument): Boolean = js.native
   
   /**
@@ -71,10 +61,8 @@ trait CollectionComparision extends StObject {
     */
   def is(selector: Selector): Boolean = js.native
   
-  // http://js.cytoscape.org/#collection/comparison
   /**
     * Determine whether this collection contains exactly the same elements as another collection.
-    *
     * @param eles The other elements to compare to.
     */
   def same(eles: CollectionArgument): Boolean = js.native
@@ -93,6 +81,6 @@ trait CollectionComparision extends StObject {
   ): Boolean = js.native
   def some(
     test: js.Function3[/* ele */ CollectionArgument, /* i */ Double, /* eles */ CollectionArgument, Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): Boolean = js.native
 }

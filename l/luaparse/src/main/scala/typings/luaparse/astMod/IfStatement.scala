@@ -23,6 +23,6 @@ object IfStatement {
     
     inline def setClauses(value: js.Array[IfClause | ElseifClause | ElseClause]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
     
-    inline def setClausesVarargs(value: (IfClause | ElseifClause | ElseClause)*): Self = StObject.set(x, "clauses", js.Array(value :_*))
+    inline def setClausesVarargs(value: (IfClause | ElseifClause | ElseClause)*): Self = StObject.set(x, "clauses", js.Array(value*))
   }
 }

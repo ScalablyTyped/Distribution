@@ -37,6 +37,12 @@ trait NearByOptions extends StObject {
   var poi: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * products
+    * @default undefined
+    */
+  var products: js.UndefOr[Products] = js.undefined
+  
+  /**
     * maximum number of results
     * @default 8
     */
@@ -82,6 +88,10 @@ object NearByOptions {
     inline def setPoi(value: Boolean): Self = StObject.set(x, "poi", value.asInstanceOf[js.Any])
     
     inline def setPoiUndefined: Self = StObject.set(x, "poi", js.undefined)
+    
+    inline def setProducts(value: Products): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+    
+    inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     

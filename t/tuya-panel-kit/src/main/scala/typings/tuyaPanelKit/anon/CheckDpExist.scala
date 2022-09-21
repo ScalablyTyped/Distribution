@@ -18,7 +18,7 @@ trait CheckDpExist extends StObject {
   
   def deleteDeviceInfo(): js.Promise[Unit] = js.native
   
-  def formatDps(data: Record[Double, js.Any]): Record[String, js.Any] = js.native
+  def formatDps(data: Record[Double, Any]): Record[String, Any] = js.native
   
   def getBleManagerState(): js.Promise[Boolean] = js.native
   
@@ -45,15 +45,15 @@ trait CheckDpExist extends StObject {
   def getDpSchema(): js.Array[DpSchema] = js.native
   def getDpSchema(code: String): DpSchema = js.native
   
-  def getFunConfig(): Record[String, js.Any] = js.native
+  def getFunConfig(): Record[String, Any] = js.native
   
   /**
     * @deprecated
     */
-  def getGState(dp: String): js.Any = js.native
+  def getGState(dp: String): Any = js.native
   
-  def getState(): js.Any = js.native
-  def getState(dp: String): js.Any = js.native
+  def getState(): Any = js.native
+  def getState(dp: String): Any = js.native
   
   def getUnpackPanelInfo(): js.Promise[I18NLanMap] = js.native
   
@@ -80,12 +80,12 @@ trait CheckDpExist extends StObject {
   /**
     * @desc 下发 dp 点
     */
-  def putDeviceData(cmd: Record[String, js.Any]): js.Promise[Success] = js.native
+  def putDeviceData(cmd: Record[String, Any]): js.Promise[Success] = js.native
   
   /**
     * @desc 局域网下发 dp 点
     */
-  def putLocalDpData(cmd: Record[String, js.Any]): js.Promise[Unit] = js.native
+  def putLocalDpData(cmd: Record[String, Any]): js.Promise[Unit] = js.native
   
   def setDevState(state: Record[String, DpValue]): DevInfo[Record[String, DpType]] = js.native
   
@@ -94,7 +94,7 @@ trait CheckDpExist extends StObject {
   /**
     * @deprecated
     */
-  def setGState(dp: String, `val`: js.Any): js.Any = js.native
+  def setGState(dp: String, `val`: Any): Any = js.native
   
-  def setState(dp: String, `val`: js.Any): Record[String, js.Any] = js.native
+  def setState(dp: String, `val`: Any): Record[String, Any] = js.native
 }

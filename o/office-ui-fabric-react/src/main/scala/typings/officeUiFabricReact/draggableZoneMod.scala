@@ -14,7 +14,7 @@ object draggableZoneMod {
   
   @JSImport("office-ui-fabric-react/lib/utilities/DraggableZone", "DraggableZone")
   @js.native
-  class DraggableZone protected ()
+  open class DraggableZone protected ()
     extends typings.officeUiFabricReact.draggableZoneDraggableZoneMod.DraggableZone {
     def this(props: IDraggableZoneProps) = this()
   }

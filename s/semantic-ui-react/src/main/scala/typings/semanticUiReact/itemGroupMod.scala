@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandCollection
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
@@ -17,12 +17,12 @@ object itemGroupMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/views/Item/ItemGroup", JSImport.Default)
   @js.native
-  val default: StatelessComponent[ItemGroupProps] = js.native
+  val default: FC[ItemGroupProps] = js.native
   
   trait ItemGroupProps
     extends StObject
        with StrictItemGroupProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ItemGroupProps {
     
     inline def apply(): ItemGroupProps = {
@@ -34,7 +34,7 @@ object itemGroupMod extends Shortcut {
   trait StrictItemGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -69,7 +69,7 @@ object itemGroupMod extends Shortcut {
     
     extension [Self <: StrictItemGroupProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -93,7 +93,7 @@ object itemGroupMod extends Shortcut {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: SemanticShorthandItem[ItemProps]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SemanticShorthandItem[ItemProps]*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLink(value: Boolean): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
@@ -109,8 +109,8 @@ object itemGroupMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[ItemGroupProps]
+  type _To = FC[ItemGroupProps]
   
   /* This means you don't have to write `default`, but can instead just say `itemGroupMod.foo` */
-  override def _to: StatelessComponent[ItemGroupProps] = default
+  override def _to: FC[ItemGroupProps] = default
 }

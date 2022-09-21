@@ -12,7 +12,7 @@ trait ListIdentityProvidersResponse extends StObject {
   var NextToken: js.UndefOr[PaginationKeyType] = js.undefined
   
   /**
-    * A list of identity provider objects.
+    * A list of IdP objects.
     */
   var Providers: ProvidersListType
 }
@@ -31,6 +31,6 @@ object ListIdentityProvidersResponse {
     
     inline def setProviders(value: ProvidersListType): Self = StObject.set(x, "Providers", value.asInstanceOf[js.Any])
     
-    inline def setProvidersVarargs(value: ProviderDescription*): Self = StObject.set(x, "Providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: ProviderDescription*): Self = StObject.set(x, "Providers", js.Array(value*))
   }
 }

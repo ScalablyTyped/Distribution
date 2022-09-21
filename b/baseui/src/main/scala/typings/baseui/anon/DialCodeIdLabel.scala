@@ -1,6 +1,5 @@
 package typings.baseui.anon
 
-import typings.baseui.baseuiStrings.AD
 import typings.baseui.baseuiStrings.Andorra
 import typings.baseui.baseuiStrings.Plussign376
 import org.scalablytyped.runtime.StObject
@@ -9,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DialCodeIdLabel extends StObject {
   
-  var dialCode: Plussign376
+  val dialCode: Plussign376
   
-  var id: AD
+  val id: typings.baseui.baseuiStrings.AD
   
-  var label: Andorra
+  val label: Andorra
 }
 object DialCodeIdLabel {
   
@@ -26,7 +25,7 @@ object DialCodeIdLabel {
     
     inline def setDialCode(value: Plussign376): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
     
-    inline def setId(value: AD): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: typings.baseui.baseuiStrings.AD): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setLabel(value: Andorra): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }

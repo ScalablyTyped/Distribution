@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("park-miller", JSImport.Namespace)
+  @JSImport("park-miller", JSImport.Default)
   @js.native
-  class ^ protected ()
+  open class default protected ()
     extends StObject
        with ParkMiller {
     /**
@@ -16,7 +16,7 @@ object mod {
     	@param seed - [Initialization seed.](https://en.wikipedia.org/wiki/Random_seed)
     	@example
     	```
-    	import ParkMiller = require('park-miller');
+    	import ParkMiller from 'park-miller';
     	const random = new ParkMiller(10);
     	random.integer();
     	//=> 2027521326

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class SimpleDB ()
+open class SimpleDB ()
   extends typings.awsSdk.allMod.SimpleDB {
   def this(options: ClientConfiguration) = this()
 }

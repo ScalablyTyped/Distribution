@@ -1,8 +1,7 @@
 package typings.randomBytes
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object mod extends Shortcut {
       * @param size - Number of bytes to generate.
       * @param callback - Asynchronous callback function.
       */
-    def apply(size: Double, callback: js.Function2[/* error */ Error, /* bytes */ Buffer, Unit]): Unit = js.native
+    def apply(size: Double, callback: js.Function2[/* error */ js.Error, /* bytes */ Buffer, Unit]): Unit = js.native
     
     /**
       * Synchronously generates strong pseudo-random bytes.

@@ -2,6 +2,7 @@ package typings.vueCompilerCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.babelParser.mod.ParserPlugin
+import typings.std.Map
 import typings.std.Record
 import typings.std.Set
 import typings.vueCompilerCore.anon.VFor
@@ -9,7 +10,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent std.Required<@vue/compiler-core.@vue/compiler-core.TransformOptions> */
+/* Inlined parent std.Required<std.Omit<@vue/compiler-core.@vue/compiler-core.TransformOptions, 'filename' | keyof @vue/compiler-core.@vue/compiler-core.CompilerCompatOptions>> */
+/* Inlined parent @vue/compiler-core.@vue/compiler-core.CompilerCompatOptions */
 @js.native
 trait TransformContext extends StObject {
   
@@ -47,7 +49,11 @@ trait TransformContext extends StObject {
   
   var childIndex: Double = js.native
   
+  var compatConfig: js.UndefOr[CompilerCompatConfig] = js.native
+  
   var components: Set[String] = js.native
+  
+  var constantCache: Map[TemplateChildNode, ConstantTypes] = js.native
   
   var currentNode: RootNode | TemplateChildNode | Null = js.native
   
@@ -57,12 +63,16 @@ trait TransformContext extends StObject {
   
   var expressionPlugins: js.Array[ParserPlugin] = js.native
   
+  var filters: js.UndefOr[Set[String]] = js.native
+  
   def helper[T /* <: js.Symbol */](name: T): T = js.native
   
   def helperString(name: js.Symbol): String = js.native
   
-  var helpers: Set[js.Symbol] = js.native
+  var helpers: Map[js.Symbol, Double] = js.native
   
+  def hoist(exp: String): SimpleExpressionNode = js.native
+  def hoist(exp: ArrayExpression): SimpleExpressionNode = js.native
   def hoist(exp: JSChildNode): SimpleExpressionNode = js.native
   
   var hoistStatic: Boolean = js.native
@@ -71,7 +81,13 @@ trait TransformContext extends StObject {
   
   var identifiers: StringDictionary[js.UndefOr[Double]] = js.native
   
-  var imports: Set[ImportItem] = js.native
+  var imports: js.Array[ImportItem] = js.native
+  
+  var inSSR: Boolean = js.native
+  
+  var inVOnce: Boolean = js.native
+  
+  var `inline`: Boolean = js.native
   
   def isBuiltInComponent(tag: String): js.Symbol | Unit = js.native
   @JSName("isBuiltInComponent")
@@ -81,6 +97,8 @@ trait TransformContext extends StObject {
   @JSName("isCustomElement")
   var isCustomElement_Original: js.Function1[/* tag */ String, Boolean | Unit] = js.native
   
+  var isTS: Boolean = js.native
+  
   var nodeTransforms: js.Array[NodeTransform] = js.native
   
   def onError(error: CompilerError): Unit = js.native
@@ -89,9 +107,15 @@ trait TransformContext extends StObject {
   
   def onNodeRemoved(): Unit = js.native
   
+  def onWarn(warning: CompilerError): Unit = js.native
+  @JSName("onWarn")
+  var onWarn_Original: js.Function1[/* warning */ CompilerError, Unit] = js.native
+  
   var parent: ParentNode2 | Null = js.native
   
   var prefixIdentifiers: Boolean = js.native
+  
+  def removeHelper[T /* <: js.Symbol */](name: T): Unit = js.native
   
   def removeIdentifiers(exp: String): Unit = js.native
   def removeIdentifiers(exp: ExpressionNode): Unit = js.native
@@ -106,6 +130,10 @@ trait TransformContext extends StObject {
   var scopeId: String = js.native
   
   var scopes: VFor = js.native
+  
+  var selfName: String | Null = js.native
+  
+  var slotted: Boolean = js.native
   
   var ssr: Boolean = js.native
   

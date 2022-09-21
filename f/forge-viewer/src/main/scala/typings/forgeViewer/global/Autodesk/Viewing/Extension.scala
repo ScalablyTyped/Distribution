@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Autodesk.Viewing.Extension")
 @js.native
-class Extension protected ()
+open class Extension protected ()
   extends StObject
      with typings.forgeViewer.Autodesk.Viewing.Extension {
-  def this(viewer: typings.forgeViewer.Autodesk.Viewing.GuiViewer3D, options: js.Any) = this()
+  def this(viewer: typings.forgeViewer.Autodesk.Viewing.GuiViewer3D, options: Any) = this()
 }

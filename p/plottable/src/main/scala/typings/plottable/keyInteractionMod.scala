@@ -9,31 +9,31 @@ object keyInteractionMod {
   
   @JSImport("plottable/build/src/interactions/keyInteraction", "Key")
   @js.native
-  class Key () extends Interaction {
+  open class Key () extends Interaction {
     
-    /* private */ var _downedKeys: js.Any = js.native
+    /* private */ var _downedKeys: Any = js.native
     
-    /* private */ def _handleKeyDownEvent(keyCode: js.Any, event: js.Any): js.Any = js.native
+    /* private */ var _handleKeyDownEvent: Any = js.native
     
-    /* private */ def _handleKeyUpEvent(keyCode: js.Any): js.Any = js.native
+    /* private */ var _handleKeyUpEvent: Any = js.native
     
-    /* private */ var _keyDispatcher: js.Any = js.native
+    /* private */ var _keyDispatcher: Any = js.native
     
-    /* private */ var _keyDownCallback: js.Any = js.native
+    /* private */ var _keyDownCallback: Any = js.native
     
-    /* private */ var _keyPressCallbacks: js.Any = js.native
+    /* private */ var _keyPressCallbacks: Any = js.native
     
-    /* private */ var _keyReleaseCallbacks: js.Any = js.native
+    /* private */ var _keyReleaseCallbacks: Any = js.native
     
-    /* private */ var _keyUpCallback: js.Any = js.native
+    /* private */ var _keyUpCallback: Any = js.native
     
-    /* private */ var _mouseMoveCallback: js.Any = js.native
+    /* private */ var _mouseMoveCallback: Any = js.native
     
     /**
       * A Key Interaction listens to key events that occur while the Component is
       * moused over.
       */
-    /* private */ var _positionDispatcher: js.Any = js.native
+    /* private */ var _positionDispatcher: Any = js.native
     
     /**
       * Removes a callback that would be called when the key with the given keyCode is

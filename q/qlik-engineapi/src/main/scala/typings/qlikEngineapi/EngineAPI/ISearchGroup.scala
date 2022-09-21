@@ -67,11 +67,11 @@ object ISearchGroup {
     
     inline def setQItems(value: js.Array[ISearchGroupItem]): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
     
-    inline def setQItemsVarargs(value: ISearchGroupItem*): Self = StObject.set(x, "qItems", js.Array(value :_*))
+    inline def setQItemsVarargs(value: ISearchGroupItem*): Self = StObject.set(x, "qItems", js.Array(value*))
     
     inline def setQSearchTermsMatched(value: js.Array[Double]): Self = StObject.set(x, "qSearchTermsMatched", value.asInstanceOf[js.Any])
     
-    inline def setQSearchTermsMatchedVarargs(value: Double*): Self = StObject.set(x, "qSearchTermsMatched", js.Array(value :_*))
+    inline def setQSearchTermsMatchedVarargs(value: Double*): Self = StObject.set(x, "qSearchTermsMatched", js.Array(value*))
     
     inline def setQTotalNumberOfItems(value: Double): Self = StObject.set(x, "qTotalNumberOfItems", value.asInstanceOf[js.Any])
   }

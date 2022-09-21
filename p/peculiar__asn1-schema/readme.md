@@ -1,7 +1,7 @@
 
 # Scala.js typings for peculiar__asn1-schema
 
-Typings are for version 2.0.3
+Typings are for version 2.3.0
 
 ## Library description:
 Decorators for ASN.1 schemas building
@@ -10,10 +10,10 @@ Decorators for ASN.1 schemas building
 | ------------------ | :-------------: |
 | Full name          | @peculiar/asn1-schema |
 | Keywords           | asn, serialize, parse, convert, decorator |
-| # releases         | 10 |
-| # dependents       | 17 |
-| # downloads        | 199362 |
-| # stars            | 0 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 1607987.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/PeculiarVentures/asn1-schema/tree/master/packages/schema#readme)

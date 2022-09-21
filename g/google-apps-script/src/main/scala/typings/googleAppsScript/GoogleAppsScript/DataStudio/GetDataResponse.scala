@@ -28,7 +28,7 @@ trait GetDataResponse extends StObject {
   
   def addRow(row: js.Array[String]): GetDataResponse
   
-  def build(): js.Any
+  def build(): Any
   
   def setFields(fields: Fields): GetDataResponse
   
@@ -39,7 +39,7 @@ object GetDataResponse {
   inline def apply(
     addAllRows: js.Array[js.Array[String]] => GetDataResponse,
     addRow: js.Array[String] => GetDataResponse,
-    build: () => js.Any,
+    build: () => Any,
     setFields: Fields => GetDataResponse,
     setFiltersApplied: Boolean => GetDataResponse
   ): GetDataResponse = {
@@ -53,7 +53,7 @@ object GetDataResponse {
     
     inline def setAddRow(value: js.Array[String] => GetDataResponse): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
     
-    inline def setBuild(value: () => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => Any): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
     inline def setSetFields(value: Fields => GetDataResponse): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
     

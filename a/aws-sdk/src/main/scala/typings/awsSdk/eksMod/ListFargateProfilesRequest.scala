@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListFargateProfilesRequest extends StObject {
   
   /**
-    * The name of the Amazon EKS cluster that you would like to listFargate profiles in.
+    * The name of the Amazon EKS cluster that you would like to list Fargate profiles in.
     */
   var clusterName: String
   

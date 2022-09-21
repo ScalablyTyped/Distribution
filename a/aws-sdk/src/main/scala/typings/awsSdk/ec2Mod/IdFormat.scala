@@ -9,7 +9,7 @@ trait IdFormat extends StObject {
   /**
     * The date in UTC at which you are permanently switched over to using longer IDs. If a deadline is not yet available for this resource type, this field is not returned.
     */
-  var Deadline: js.UndefOr[DateTime] = js.undefined
+  var Deadline: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The type of resource.
@@ -30,7 +30,7 @@ object IdFormat {
   
   extension [Self <: IdFormat](x: Self) {
     
-    inline def setDeadline(value: DateTime): Self = StObject.set(x, "Deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: js.Date): Self = StObject.set(x, "Deadline", value.asInstanceOf[js.Any])
     
     inline def setDeadlineUndefined: Self = StObject.set(x, "Deadline", js.undefined)
     

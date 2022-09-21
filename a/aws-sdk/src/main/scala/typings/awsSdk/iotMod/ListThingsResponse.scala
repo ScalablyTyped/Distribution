@@ -33,6 +33,6 @@ object ListThingsResponse {
     
     inline def setThingsUndefined: Self = StObject.set(x, "things", js.undefined)
     
-    inline def setThingsVarargs(value: ThingAttribute*): Self = StObject.set(x, "things", js.Array(value :_*))
+    inline def setThingsVarargs(value: ThingAttribute*): Self = StObject.set(x, "things", js.Array(value*))
   }
 }

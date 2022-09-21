@@ -9,7 +9,7 @@ trait SketchMSStyleBorderOptions extends StObject {
   
   var _class: styleBorderOptions
   
-  var dashPattern: js.Array[js.Any]
+  var dashPattern: js.Array[Any]
   
   var isEnabled: Double
   
@@ -19,16 +19,16 @@ trait SketchMSStyleBorderOptions extends StObject {
 }
 object SketchMSStyleBorderOptions {
   
-  inline def apply(dashPattern: js.Array[js.Any], isEnabled: Double, lineCapStyle: Double, lineJoinStyle: Double): SketchMSStyleBorderOptions = {
+  inline def apply(dashPattern: js.Array[Any], isEnabled: Double, lineCapStyle: Double, lineJoinStyle: Double): SketchMSStyleBorderOptions = {
     val __obj = js.Dynamic.literal(_class = "styleBorderOptions", dashPattern = dashPattern.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], lineCapStyle = lineCapStyle.asInstanceOf[js.Any], lineJoinStyle = lineJoinStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSStyleBorderOptions]
   }
   
   extension [Self <: SketchMSStyleBorderOptions](x: Self) {
     
-    inline def setDashPattern(value: js.Array[js.Any]): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
+    inline def setDashPattern(value: js.Array[Any]): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
     
-    inline def setDashPatternVarargs(value: js.Any*): Self = StObject.set(x, "dashPattern", js.Array(value :_*))
+    inline def setDashPatternVarargs(value: Any*): Self = StObject.set(x, "dashPattern", js.Array(value*))
     
     inline def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     

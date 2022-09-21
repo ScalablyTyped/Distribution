@@ -16,7 +16,7 @@ object putTraceSegmentsCommandMod {
   
   @JSImport("@aws-sdk/client-xray-node/commands/PutTraceSegmentsCommand", "PutTraceSegmentsCommand")
   @js.native
-  class PutTraceSegmentsCommand protected ()
+  open class PutTraceSegmentsCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object putTraceSegmentsCommandMod {
     override val middlewareStack: MiddlewareStack[PutTraceSegmentsInput, PutTraceSegmentsOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: XRayResolvedConfiguration
     ): Handler[PutTraceSegmentsInput, PutTraceSegmentsOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: XRayResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[PutTraceSegmentsInput, PutTraceSegmentsOutput] = js.native
   }
 }

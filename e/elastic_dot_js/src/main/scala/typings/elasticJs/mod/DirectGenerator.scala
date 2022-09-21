@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /*
   A candidate generator that generates terms based on edit distance.
   */
-class DirectGenerator ()
+open class DirectGenerator ()
   extends StObject
      with Generator {
   
@@ -107,5 +107,5 @@ class DirectGenerator ()
     Retrieves the internal generator object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

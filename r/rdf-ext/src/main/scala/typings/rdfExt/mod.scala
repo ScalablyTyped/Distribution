@@ -3,7 +3,7 @@ package typings.rdfExt
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Stream
-import typings.rdfJs.mod.Sink
+import typings.rdfjsTypes.streamMod.Sink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("rdf-ext", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends typings.rdfExt.dataFactoryMod.^
   @JSImport("rdf-ext", JSImport.Namespace)
   @js.native
@@ -33,14 +33,14 @@ object mod {
   /* static member */
   @JSImport("rdf-ext", "asEvent")
   @js.native
-  def asEvent: js.Function1[/* p */ js.Any, EventEmitter] = js.native
-  inline def asEvent_=(x: js.Function1[/* p */ js.Any, EventEmitter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asEvent")(x.asInstanceOf[js.Any])
+  def asEvent: js.Function1[/* p */ Any, EventEmitter] = js.native
+  inline def asEvent_=(x: js.Function1[/* p */ Any, EventEmitter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asEvent")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("rdf-ext", "waitFor")
   @js.native
-  def waitFor: js.Function1[/* event */ js.Any, js.Promise[js.Any]] = js.native
-  inline def waitFor_=(x: js.Function1[/* event */ js.Any, js.Promise[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitFor")(x.asInstanceOf[js.Any])
+  def waitFor: js.Function1[/* event */ Any, js.Promise[Any]] = js.native
+  inline def waitFor_=(x: js.Function1[/* event */ Any, js.Promise[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitFor")(x.asInstanceOf[js.Any])
   
   type DataFactoryExt = typings.rdfExt.dataFactoryMod.^
   
@@ -50,7 +50,7 @@ object mod {
     
     def find(mediaType: String): Sink[InputStream, OutputStream]
     
-    def `import`(mediaType: String, input: js.Any, options: js.Any): js.Any
+    def `import`(mediaType: String, input: Any, options: Any): Any
     
     def list(): js.Array[String]
   }
@@ -58,7 +58,7 @@ object mod {
     
     inline def apply[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */](
       find: String => Sink[InputStream, OutputStream],
-      `import`: (String, js.Any, js.Any) => js.Any,
+      `import`: (String, Any, Any) => Any,
       list: () => js.Array[String]
     ): SinkMap[InputStream, OutputStream] = {
       val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find), list = js.Any.fromFunction0(list))
@@ -70,7 +70,7 @@ object mod {
       
       inline def setFind(value: String => Sink[InputStream, OutputStream]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
-      inline def setImport(value: (String, js.Any, js.Any) => js.Any): Self = StObject.set(x, "import", js.Any.fromFunction3(value))
+      inline def setImport(value: (String, Any, Any) => Any): Self = StObject.set(x, "import", js.Any.fromFunction3(value))
       
       inline def setList(value: () => js.Array[String]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
     }

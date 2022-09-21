@@ -140,7 +140,7 @@ object Polyline {
       
       inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setShowDir(value: Boolean): Self = StObject.set(x, "showDir", value.asInstanceOf[js.Any])
     }
@@ -219,7 +219,7 @@ object Polyline {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: LocationValue*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LocationValue*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setShowDir(value: Boolean): Self = StObject.set(x, "showDir", value.asInstanceOf[js.Any])
       

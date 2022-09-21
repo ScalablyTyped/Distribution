@@ -23,6 +23,8 @@ trait TextContent
   /**
     * The type of popup element displayed.
     *
+    * @default text
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-TextContent.html#type)
     */
   @JSName("type")

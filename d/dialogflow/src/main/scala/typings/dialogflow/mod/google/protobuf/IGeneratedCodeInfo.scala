@@ -26,6 +26,6 @@ object IGeneratedCodeInfo {
     
     inline def setAnnotationUndefined: Self = StObject.set(x, "annotation", js.undefined)
     
-    inline def setAnnotationVarargs(value: IAnnotation*): Self = StObject.set(x, "annotation", js.Array(value :_*))
+    inline def setAnnotationVarargs(value: IAnnotation*): Self = StObject.set(x, "annotation", js.Array(value*))
   }
 }

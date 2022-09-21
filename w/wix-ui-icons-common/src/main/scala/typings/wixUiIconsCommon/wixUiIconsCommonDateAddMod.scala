@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.dateAddMod.DateAddProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonDateAddMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/DateAdd", JSImport.Default)
   @js.native
-  val default: SFC[DateAddProps] = js.native
+  val default: FC[DateAddProps] = js.native
   
-  type _To = SFC[DateAddProps]
+  type _To = FC[DateAddProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonDateAddMod.foo` */
-  override def _to: SFC[DateAddProps] = default
+  override def _to: FC[DateAddProps] = default
 }

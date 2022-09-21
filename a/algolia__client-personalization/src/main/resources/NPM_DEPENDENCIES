@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@algolia/client-personalization" : "4.14.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@algolia/client-personalization" : "4.14.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("akumina-core", "Digispace.SiteContext")
 @js.native
-class SiteContext () extends StObject
+open class SiteContext () extends StObject
 object SiteContext {
   
   @JSImport("akumina-core", "Digispace.SiteContext")
@@ -36,7 +36,11 @@ object SiteContext {
   
   /** @return Resolves with Language ID */
   /* static member */
-  inline def GetSiteLocaleId(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSiteLocaleId")().asInstanceOf[JQueryDeferred[js.Any]]
+  inline def GetSiteLocaleId(): JQueryDeferred[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSiteLocaleId")().asInstanceOf[JQueryDeferred[Any]]
+  
+  /** Get Site Type developer|delivery */
+  /* static member */
+  inline def GetSiteType(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSiteType")().asInstanceOf[String]
   
   /* static member */
   @JSImport("akumina-core", "Digispace.SiteContext.IsDashBoardPage")
@@ -98,12 +102,24 @@ object SiteContext {
   def IsSandboxPage: Boolean = js.native
   inline def IsSandboxPage_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsSandboxPage")(x.asInstanceOf[js.Any])
   
+  /* static member */
+  @JSImport("akumina-core", "Digispace.SiteContext.IsSharePointOnline")
+  @js.native
+  def IsSharePointOnline: Boolean = js.native
+  inline def IsSharePointOnline_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsSharePointOnline")(x.asInstanceOf[js.Any])
+  
   /** Check if Current user is site Admin */
   /* static member */
   @JSImport("akumina-core", "Digispace.SiteContext.IsSiteAdmin")
   @js.native
   def IsSiteAdmin: Boolean = js.native
   inline def IsSiteAdmin_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsSiteAdmin")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("akumina-core", "Digispace.SiteContext.IsTimedOut")
+  @js.native
+  def IsTimedOut: Boolean = js.native
+  inline def IsTimedOut_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsTimedOut")(x.asInstanceOf[js.Any])
   
   /** Check if current page is a VPC */
   /* static member */
@@ -127,17 +143,23 @@ object SiteContext {
   inline def IsWorkspacePage_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsWorkspacePage")(x.asInstanceOf[js.Any])
   
   /* static member */
+  @JSImport("akumina-core", "Digispace.SiteContext.LicensingInformation")
+  @js.native
+  def LicensingInformation: Any = js.native
+  inline def LicensingInformation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LicensingInformation")(x.asInstanceOf[js.Any])
+  
+  /* static member */
   @JSImport("akumina-core", "Digispace.SiteContext.ListPermissionsMask")
   @js.native
-  def ListPermissionsMask: js.Any = js.native
-  inline def ListPermissionsMask_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ListPermissionsMask")(x.asInstanceOf[js.Any])
+  def ListPermissionsMask: Any = js.native
+  inline def ListPermissionsMask_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ListPermissionsMask")(x.asInstanceOf[js.Any])
   
   /** #MARK - not used as of now. */
   /* static member */
   @JSImport("akumina-core", "Digispace.SiteContext.LoadedWidgets")
   @js.native
-  def LoadedWidgets: js.Array[js.Any] = js.native
-  inline def LoadedWidgets_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LoadedWidgets")(x.asInstanceOf[js.Any])
+  def LoadedWidgets: js.Array[Any] = js.native
+  inline def LoadedWidgets_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LoadedWidgets")(x.asInstanceOf[js.Any])
   
   /** check if page not found */
   /* static member */
@@ -246,6 +268,12 @@ object SiteContext {
   @js.native
   def WebServerRelativeUrl: String = js.native
   inline def WebServerRelativeUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebServerRelativeUrl")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("akumina-core", "Digispace.SiteContext.WebTitle")
+  @js.native
+  def WebTitle: String = js.native
+  inline def WebTitle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WebTitle")(x.asInstanceOf[js.Any])
   
   /** WorkspaceDetails page absolute URL */
   /* static member */

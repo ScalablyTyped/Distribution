@@ -43,6 +43,29 @@ object anon {
     }
   }
   
+  trait Fn extends StObject {
+    
+    var fn: Any
+    
+    var visitor: js.UndefOr[Any] = js.undefined
+  }
+  object Fn {
+    
+    inline def apply(fn: Any): Fn = {
+      val __obj = js.Dynamic.literal(fn = fn.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Fn]
+    }
+    
+    extension [Self <: Fn](x: Self) {
+      
+      inline def setFn(value: Any): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      
+      inline def setVisitor(value: Any): Self = StObject.set(x, "visitor", value.asInstanceOf[js.Any])
+      
+      inline def setVisitorUndefined: Self = StObject.set(x, "visitor", js.undefined)
+    }
+  }
+  
   /* Inlined std.Partial<{  CLICK_TO_VIEW_ACTIONS :string,   COMPILED_ACTION :string,   EDITOR_ACTION :string,   PNG_ACTION :string,   SOURCE_ACTION :string,   SVG_ACTION :string}> */
   trait PartialCLICKTOVIEWACTIONS extends StObject {
     
@@ -136,6 +159,45 @@ object anon {
       inline def setPng(value: Boolean): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
       
       inline def setSvg(value: Boolean): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait TypeofexpressionInterpret extends StObject {
+    
+    def encode(ctx: Any, encode: Any): Any
+    
+    def event(ctx: Any, expr: Any): Any
+    
+    def handler(ctx: Any, expr: Any): Any
+    
+    def operator(ctx: Any, expr: Any): Any
+    
+    def parameter(ctx: Any, expr: Any): Any
+  }
+  object TypeofexpressionInterpret {
+    
+    inline def apply(
+      encode: (Any, Any) => Any,
+      event: (Any, Any) => Any,
+      handler: (Any, Any) => Any,
+      operator: (Any, Any) => Any,
+      parameter: (Any, Any) => Any
+    ): TypeofexpressionInterpret = {
+      val __obj = js.Dynamic.literal(encode = js.Any.fromFunction2(encode), event = js.Any.fromFunction2(event), handler = js.Any.fromFunction2(handler), operator = js.Any.fromFunction2(operator), parameter = js.Any.fromFunction2(parameter))
+      __obj.asInstanceOf[TypeofexpressionInterpret]
+    }
+    
+    extension [Self <: TypeofexpressionInterpret](x: Self) {
+      
+      inline def setEncode(value: (Any, Any) => Any): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
+      
+      inline def setEvent(value: (Any, Any) => Any): Self = StObject.set(x, "event", js.Any.fromFunction2(value))
+      
+      inline def setHandler(value: (Any, Any) => Any): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+      
+      inline def setOperator(value: (Any, Any) => Any): Self = StObject.set(x, "operator", js.Any.fromFunction2(value))
+      
+      inline def setParameter(value: (Any, Any) => Any): Self = StObject.set(x, "parameter", js.Any.fromFunction2(value))
     }
   }
 }

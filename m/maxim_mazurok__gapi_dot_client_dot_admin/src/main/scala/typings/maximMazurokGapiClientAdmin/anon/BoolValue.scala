@@ -14,14 +14,14 @@ trait BoolValue extends StObject {
   
   /**
     * Nested parameter value pairs associated with this parameter. Complex value type for a parameter are returned as a list of parameter values. For example, the address
-    * parameter may have a value as [{parameter: [{name: city, value: abc}]}]
+    * parameter may have a value as `[{parameter: [{name: city, value: abc}]}]`
     */
   var messageValue: js.UndefOr[Parameter] = js.undefined
   
   /** Integer values of the parameter. */
   var multiIntValue: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** List of messageValue objects. */
+  /** List of `messageValue` objects. */
   var multiMessageValue: js.UndefOr[js.Array[Parameter]] = js.undefined
   
   /** String values of the parameter. */
@@ -58,19 +58,19 @@ object BoolValue {
     
     inline def setMultiIntValueUndefined: Self = StObject.set(x, "multiIntValue", js.undefined)
     
-    inline def setMultiIntValueVarargs(value: String*): Self = StObject.set(x, "multiIntValue", js.Array(value :_*))
+    inline def setMultiIntValueVarargs(value: String*): Self = StObject.set(x, "multiIntValue", js.Array(value*))
     
     inline def setMultiMessageValue(value: js.Array[Parameter]): Self = StObject.set(x, "multiMessageValue", value.asInstanceOf[js.Any])
     
     inline def setMultiMessageValueUndefined: Self = StObject.set(x, "multiMessageValue", js.undefined)
     
-    inline def setMultiMessageValueVarargs(value: Parameter*): Self = StObject.set(x, "multiMessageValue", js.Array(value :_*))
+    inline def setMultiMessageValueVarargs(value: Parameter*): Self = StObject.set(x, "multiMessageValue", js.Array(value*))
     
     inline def setMultiValue(value: js.Array[String]): Self = StObject.set(x, "multiValue", value.asInstanceOf[js.Any])
     
     inline def setMultiValueUndefined: Self = StObject.set(x, "multiValue", js.undefined)
     
-    inline def setMultiValueVarargs(value: String*): Self = StObject.set(x, "multiValue", js.Array(value :_*))
+    inline def setMultiValueVarargs(value: String*): Self = StObject.set(x, "multiValue", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

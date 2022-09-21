@@ -501,11 +501,11 @@ object legendPropertiesMod {
     @JSImport("vega-lite/build/src/compile/legend/properties", "legendRules.values")
     @js.native
     def values: js.UndefOr[
-        js.Function1[/* params */ LegendRuleParams, js.UndefOr[js.Array[js.Any] | SignalRef]]
+        js.Function1[/* params */ LegendRuleParams, js.UndefOr[js.Array[Any] | SignalRef]]
       ] = js.native
     inline def values_=(
       x: js.UndefOr[
-          js.Function1[/* params */ LegendRuleParams, js.UndefOr[js.Array[js.Any] | SignalRef]]
+          js.Function1[/* params */ LegendRuleParams, js.UndefOr[js.Array[Any] | SignalRef]]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("values")(x.asInstanceOf[js.Any])
     
@@ -522,7 +522,7 @@ object legendPropertiesMod {
   
   inline def values_binned(
     legend: LegendInternal,
-    fieldOrDatumDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]
+    fieldOrDatumDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
   ): SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal]) = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(legend.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal])]
   
   trait LegendRuleParams extends StObject {

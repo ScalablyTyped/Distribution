@@ -44,7 +44,7 @@ object Advance {
     
     inline def setDjs(value: js.Array[DJ]): Self = StObject.set(x, "djs", value.asInstanceOf[js.Any])
     
-    inline def setDjsVarargs(value: DJ*): Self = StObject.set(x, "djs", js.Array(value :_*))
+    inline def setDjsVarargs(value: DJ*): Self = StObject.set(x, "djs", js.Array(value*))
     
     inline def setHistoryID(value: String): Self = StObject.set(x, "historyID", value.asInstanceOf[js.Any])
     

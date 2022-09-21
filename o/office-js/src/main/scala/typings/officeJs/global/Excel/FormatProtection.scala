@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the format protection of a range object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.FormatProtection")
 @js.native
-class FormatProtection ()
+open class FormatProtection ()
   extends StObject
      with typings.officeJs.Excel.FormatProtection {
   

@@ -12,7 +12,7 @@ object timerMod {
   
   @JSImport("app-builder-lib/out/util/timer", "DevTimer")
   @js.native
-  class DevTimer protected ()
+  open class DevTimer protected ()
     extends StObject
        with Timer {
     def this(label: String) = this()
@@ -22,9 +22,9 @@ object timerMod {
     
     def endAndGet(): String = js.native
     
-    /* private */ val label: js.Any = js.native
+    /* private */ val label: Any = js.native
     
-    /* private */ var start: js.Any = js.native
+    /* private */ var start: Any = js.native
   }
   
   inline def time(label: String): Timer = ^.asInstanceOf[js.Dynamic].applyDynamic("time")(label.asInstanceOf[js.Any]).asInstanceOf[Timer]

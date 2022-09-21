@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InterfaceDeclaration
   extends StObject
      with DeclarationStatement
-     with JSDocContainer
      with DeclarationWithTypeParameterChildren
      with HasJSDoc
+     with HasModifiers
      with ObjectTypeDeclaration {
   
   val heritageClauses: js.UndefOr[NodeArray[HeritageClause]] = js.native
@@ -19,6 +19,9 @@ trait InterfaceDeclaration
   val kind_InterfaceDeclaration: typings.typescript.mod.SyntaxKind.InterfaceDeclaration = js.native
   
   val members: NodeArray[TypeElement] = js.native
+  
+  @JSName("modifiers")
+  val modifiers_InterfaceDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
   
   @JSName("name")
   val name_InterfaceDeclaration: Identifier = js.native

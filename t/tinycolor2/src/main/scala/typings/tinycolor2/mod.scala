@@ -39,7 +39,7 @@ object mod extends Shortcut {
     *
     * @param color - the color as one of the valid color input format.
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Instance {
     def this(color: ColorInput) = this()
@@ -599,26 +599,7 @@ object mod extends Shortcut {
       */
     def toRgbString(): String = js.native
     
-    @JSName("toString")
-    def toString_hex(format: hex): String = js.native
-    @JSName("toString")
-    def toString_hex3(format: hex3): String = js.native
-    @JSName("toString")
-    def toString_hex4(format: hex4): String = js.native
-    @JSName("toString")
-    def toString_hex6(format: hex6): String = js.native
-    @JSName("toString")
-    def toString_hex8(format: hex8): String = js.native
-    @JSName("toString")
-    def toString_hsl(format: hsl): String = js.native
-    @JSName("toString")
-    def toString_hsv(format: hsv): String = js.native
-    @JSName("toString")
-    def toString_name(format: name): String = js.native
-    @JSName("toString")
-    def toString_prgb(format: prgb): String = js.native
-    @JSName("toString")
-    def toString_rgb(format: rgb): String = js.native
+    def toString(format: rgb | prgb | hex | hex6 | hex3 | hex4 | hex8 | name | hsl | hsv): String = js.native
     
     /**
       * Gets a triad based off of the current color.

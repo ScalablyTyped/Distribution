@@ -11,7 +11,7 @@ trait PubsubMessage extends StObject {
   var attributes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.PubsubMessage & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.PubsubMessage & TopLevel[Any]
   ] = js.undefined
   
   /** The message data field. If this field is empty, the message must contain at least one attribute. */
@@ -26,7 +26,7 @@ trait PubsubMessage extends StObject {
   /**
     * If non-empty, identifies related messages for which publish order should be respected. If a `Subscription` has `enable_message_ordering` set to `true`, messages published with the
     * same non-empty `ordering_key` value will be delivered to subscribers in the order in which they are received by the Pub/Sub system. All `PubsubMessage`s published in a given
-    * `PublishRequest` must specify the same `ordering_key` value.
+    * `PublishRequest` must specify the same `ordering_key` value. For more information, see [ordering messages](https://cloud.google.com/pubsub/docs/ordering).
     */
   var orderingKey: js.UndefOr[String] = js.undefined
   
@@ -45,7 +45,7 @@ object PubsubMessage {
     inline def setAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.PubsubMessage & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.PubsubMessage & TopLevel[Any]
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)

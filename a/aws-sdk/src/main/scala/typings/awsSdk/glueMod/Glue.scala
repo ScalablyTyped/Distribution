@@ -54,12 +54,12 @@ trait Glue extends Service {
   ): Request[BatchDeletePartitionResponse, AWSError] = js.native
   
   /**
-    * Deletes multiple tables at once.  After completing this operation, you no longer have access to the table versions and partitions that belong to the deleted table. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling BatchDeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
+    * Deletes multiple tables at once.  After completing this operation, you no longer have access to the table versions and partitions that belong to the deleted table. Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling BatchDeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
     */
   def batchDeleteTable(): Request[BatchDeleteTableResponse, AWSError] = js.native
   def batchDeleteTable(callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteTableResponse, Unit]): Request[BatchDeleteTableResponse, AWSError] = js.native
   /**
-    * Deletes multiple tables at once.  After completing this operation, you no longer have access to the table versions and partitions that belong to the deleted table. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling BatchDeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
+    * Deletes multiple tables at once.  After completing this operation, you no longer have access to the table versions and partitions that belong to the deleted table. Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling BatchDeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
     */
   def batchDeleteTable(params: BatchDeleteTableRequest): Request[BatchDeleteTableResponse, AWSError] = js.native
   def batchDeleteTable(
@@ -82,6 +82,20 @@ trait Glue extends Service {
   ): Request[BatchDeleteTableVersionResponse, AWSError] = js.native
   
   /**
+    * Retrieves information about a list of blueprints.
+    */
+  def batchGetBlueprints(): Request[BatchGetBlueprintsResponse, AWSError] = js.native
+  def batchGetBlueprints(callback: js.Function2[/* err */ AWSError, /* data */ BatchGetBlueprintsResponse, Unit]): Request[BatchGetBlueprintsResponse, AWSError] = js.native
+  /**
+    * Retrieves information about a list of blueprints.
+    */
+  def batchGetBlueprints(params: BatchGetBlueprintsRequest): Request[BatchGetBlueprintsResponse, AWSError] = js.native
+  def batchGetBlueprints(
+    params: BatchGetBlueprintsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetBlueprintsResponse, Unit]
+  ): Request[BatchGetBlueprintsResponse, AWSError] = js.native
+  
+  /**
     * Returns a list of resource metadata for a given list of crawler names. After calling the ListCrawlers operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
     */
   def batchGetCrawlers(): Request[BatchGetCrawlersResponse, AWSError] = js.native
@@ -94,6 +108,20 @@ trait Glue extends Service {
     params: BatchGetCrawlersRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetCrawlersResponse, Unit]
   ): Request[BatchGetCrawlersResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the details for the custom patterns specified by a list of names.
+    */
+  def batchGetCustomEntityTypes(): Request[BatchGetCustomEntityTypesResponse, AWSError] = js.native
+  def batchGetCustomEntityTypes(callback: js.Function2[/* err */ AWSError, /* data */ BatchGetCustomEntityTypesResponse, Unit]): Request[BatchGetCustomEntityTypesResponse, AWSError] = js.native
+  /**
+    * Retrieves the details for the custom patterns specified by a list of names.
+    */
+  def batchGetCustomEntityTypes(params: BatchGetCustomEntityTypesRequest): Request[BatchGetCustomEntityTypesResponse, AWSError] = js.native
+  def batchGetCustomEntityTypes(
+    params: BatchGetCustomEntityTypesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetCustomEntityTypesResponse, Unit]
+  ): Request[BatchGetCustomEntityTypesResponse, AWSError] = js.native
   
   /**
     * Returns a list of resource metadata for a given list of development endpoint names. After calling the ListDevEndpoints operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
@@ -194,18 +222,32 @@ trait Glue extends Service {
   ): Request[BatchUpdatePartitionResponse, AWSError] = js.native
   
   /**
-    * Cancels (stops) a task run. Machine learning task runs are asynchronous tasks that AWS Glue runs on your behalf as part of various machine learning workflows. You can cancel a machine learning task run at any time by calling CancelMLTaskRun with a task run's parent transform's TransformID and the task run's TaskRunId. 
+    * Cancels (stops) a task run. Machine learning task runs are asynchronous tasks that Glue runs on your behalf as part of various machine learning workflows. You can cancel a machine learning task run at any time by calling CancelMLTaskRun with a task run's parent transform's TransformID and the task run's TaskRunId. 
     */
   def cancelMLTaskRun(): Request[CancelMLTaskRunResponse, AWSError] = js.native
   def cancelMLTaskRun(callback: js.Function2[/* err */ AWSError, /* data */ CancelMLTaskRunResponse, Unit]): Request[CancelMLTaskRunResponse, AWSError] = js.native
   /**
-    * Cancels (stops) a task run. Machine learning task runs are asynchronous tasks that AWS Glue runs on your behalf as part of various machine learning workflows. You can cancel a machine learning task run at any time by calling CancelMLTaskRun with a task run's parent transform's TransformID and the task run's TaskRunId. 
+    * Cancels (stops) a task run. Machine learning task runs are asynchronous tasks that Glue runs on your behalf as part of various machine learning workflows. You can cancel a machine learning task run at any time by calling CancelMLTaskRun with a task run's parent transform's TransformID and the task run's TaskRunId. 
     */
   def cancelMLTaskRun(params: CancelMLTaskRunRequest): Request[CancelMLTaskRunResponse, AWSError] = js.native
   def cancelMLTaskRun(
     params: CancelMLTaskRunRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CancelMLTaskRunResponse, Unit]
   ): Request[CancelMLTaskRunResponse, AWSError] = js.native
+  
+  /**
+    * Cancels the statement.
+    */
+  def cancelStatement(): Request[CancelStatementResponse, AWSError] = js.native
+  def cancelStatement(callback: js.Function2[/* err */ AWSError, /* data */ CancelStatementResponse, Unit]): Request[CancelStatementResponse, AWSError] = js.native
+  /**
+    * Cancels the statement.
+    */
+  def cancelStatement(params: CancelStatementRequest): Request[CancelStatementResponse, AWSError] = js.native
+  def cancelStatement(
+    params: CancelStatementRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelStatementResponse, Unit]
+  ): Request[CancelStatementResponse, AWSError] = js.native
   
   /**
     * Validates the supplied schema. This call has no side effects, it simply validates using the supplied schema using DataFormat as the format. Since it does not take a schema set name, no compatibility checks are performed.
@@ -223,6 +265,20 @@ trait Glue extends Service {
   
   @JSName("config")
   var config_Glue: ConfigBase & ClientConfiguration = js.native
+  
+  /**
+    * Registers a blueprint with Glue.
+    */
+  def createBlueprint(): Request[CreateBlueprintResponse, AWSError] = js.native
+  def createBlueprint(callback: js.Function2[/* err */ AWSError, /* data */ CreateBlueprintResponse, Unit]): Request[CreateBlueprintResponse, AWSError] = js.native
+  /**
+    * Registers a blueprint with Glue.
+    */
+  def createBlueprint(params: CreateBlueprintRequest): Request[CreateBlueprintResponse, AWSError] = js.native
+  def createBlueprint(
+    params: CreateBlueprintRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateBlueprintResponse, Unit]
+  ): Request[CreateBlueprintResponse, AWSError] = js.native
   
   /**
     * Creates a classifier in the user's account. This can be a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field of the request is present.
@@ -267,6 +323,20 @@ trait Glue extends Service {
   ): Request[CreateCrawlerResponse, AWSError] = js.native
   
   /**
+    * Creates a custom pattern that is used to detect sensitive data across the columns and rows of your structured data. Each custom pattern you create specifies a regular expression and an optional list of context words. If no context words are passed only a regular expression is checked.
+    */
+  def createCustomEntityType(): Request[CreateCustomEntityTypeResponse, AWSError] = js.native
+  def createCustomEntityType(callback: js.Function2[/* err */ AWSError, /* data */ CreateCustomEntityTypeResponse, Unit]): Request[CreateCustomEntityTypeResponse, AWSError] = js.native
+  /**
+    * Creates a custom pattern that is used to detect sensitive data across the columns and rows of your structured data. Each custom pattern you create specifies a regular expression and an optional list of context words. If no context words are passed only a regular expression is checked.
+    */
+  def createCustomEntityType(params: CreateCustomEntityTypeRequest): Request[CreateCustomEntityTypeResponse, AWSError] = js.native
+  def createCustomEntityType(
+    params: CreateCustomEntityTypeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateCustomEntityTypeResponse, Unit]
+  ): Request[CreateCustomEntityTypeResponse, AWSError] = js.native
+  
+  /**
     * Creates a new database in a Data Catalog.
     */
   def createDatabase(): Request[CreateDatabaseResponse, AWSError] = js.native
@@ -309,12 +379,12 @@ trait Glue extends Service {
   ): Request[CreateJobResponse, AWSError] = js.native
   
   /**
-    * Creates an AWS Glue machine learning transform. This operation creates the transform and all the necessary parameters to train it. Call this operation as the first step in the process of using a machine learning transform (such as the FindMatches transform) for deduplicating data. You can provide an optional Description, in addition to the parameters that you want to use for your algorithm. You must also specify certain parameters for the tasks that AWS Glue runs on your behalf as part of learning from your data and creating a high-quality machine learning transform. These parameters include Role, and optionally, AllocatedCapacity, Timeout, and MaxRetries. For more information, see Jobs.
+    * Creates an Glue machine learning transform. This operation creates the transform and all the necessary parameters to train it. Call this operation as the first step in the process of using a machine learning transform (such as the FindMatches transform) for deduplicating data. You can provide an optional Description, in addition to the parameters that you want to use for your algorithm. You must also specify certain parameters for the tasks that Glue runs on your behalf as part of learning from your data and creating a high-quality machine learning transform. These parameters include Role, and optionally, AllocatedCapacity, Timeout, and MaxRetries. For more information, see Jobs.
     */
   def createMLTransform(): Request[CreateMLTransformResponse, AWSError] = js.native
   def createMLTransform(callback: js.Function2[/* err */ AWSError, /* data */ CreateMLTransformResponse, Unit]): Request[CreateMLTransformResponse, AWSError] = js.native
   /**
-    * Creates an AWS Glue machine learning transform. This operation creates the transform and all the necessary parameters to train it. Call this operation as the first step in the process of using a machine learning transform (such as the FindMatches transform) for deduplicating data. You can provide an optional Description, in addition to the parameters that you want to use for your algorithm. You must also specify certain parameters for the tasks that AWS Glue runs on your behalf as part of learning from your data and creating a high-quality machine learning transform. These parameters include Role, and optionally, AllocatedCapacity, Timeout, and MaxRetries. For more information, see Jobs.
+    * Creates an Glue machine learning transform. This operation creates the transform and all the necessary parameters to train it. Call this operation as the first step in the process of using a machine learning transform (such as the FindMatches transform) for deduplicating data. You can provide an optional Description, in addition to the parameters that you want to use for your algorithm. You must also specify certain parameters for the tasks that Glue runs on your behalf as part of learning from your data and creating a high-quality machine learning transform. These parameters include Role, and optionally, AllocatedCapacity, Timeout, and MaxRetries. For more information, see Jobs.
     */
   def createMLTransform(params: CreateMLTransformRequest): Request[CreateMLTransformResponse, AWSError] = js.native
   def createMLTransform(
@@ -335,6 +405,20 @@ trait Glue extends Service {
     params: CreatePartitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreatePartitionResponse, Unit]
   ): Request[CreatePartitionResponse, AWSError] = js.native
+  
+  /**
+    * Creates a specified partition index in an existing table.
+    */
+  def createPartitionIndex(): Request[CreatePartitionIndexResponse, AWSError] = js.native
+  def createPartitionIndex(callback: js.Function2[/* err */ AWSError, /* data */ CreatePartitionIndexResponse, Unit]): Request[CreatePartitionIndexResponse, AWSError] = js.native
+  /**
+    * Creates a specified partition index in an existing table.
+    */
+  def createPartitionIndex(params: CreatePartitionIndexRequest): Request[CreatePartitionIndexResponse, AWSError] = js.native
+  def createPartitionIndex(
+    params: CreatePartitionIndexRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreatePartitionIndexResponse, Unit]
+  ): Request[CreatePartitionIndexResponse, AWSError] = js.native
   
   /**
     * Creates a new registry which may be used to hold a collection of schemas.
@@ -379,18 +463,32 @@ trait Glue extends Service {
   ): Request[CreateScriptResponse, AWSError] = js.native
   
   /**
-    * Creates a new security configuration. A security configuration is a set of security properties that can be used by AWS Glue. You can use a security configuration to encrypt data at rest. For information about using security configurations in AWS Glue, see Encrypting Data Written by Crawlers, Jobs, and Development Endpoints.
+    * Creates a new security configuration. A security configuration is a set of security properties that can be used by Glue. You can use a security configuration to encrypt data at rest. For information about using security configurations in Glue, see Encrypting Data Written by Crawlers, Jobs, and Development Endpoints.
     */
   def createSecurityConfiguration(): Request[CreateSecurityConfigurationResponse, AWSError] = js.native
   def createSecurityConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ CreateSecurityConfigurationResponse, Unit]): Request[CreateSecurityConfigurationResponse, AWSError] = js.native
   /**
-    * Creates a new security configuration. A security configuration is a set of security properties that can be used by AWS Glue. You can use a security configuration to encrypt data at rest. For information about using security configurations in AWS Glue, see Encrypting Data Written by Crawlers, Jobs, and Development Endpoints.
+    * Creates a new security configuration. A security configuration is a set of security properties that can be used by Glue. You can use a security configuration to encrypt data at rest. For information about using security configurations in Glue, see Encrypting Data Written by Crawlers, Jobs, and Development Endpoints.
     */
   def createSecurityConfiguration(params: CreateSecurityConfigurationRequest): Request[CreateSecurityConfigurationResponse, AWSError] = js.native
   def createSecurityConfiguration(
     params: CreateSecurityConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateSecurityConfigurationResponse, Unit]
   ): Request[CreateSecurityConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Creates a new session.
+    */
+  def createSession(): Request[CreateSessionResponse, AWSError] = js.native
+  def createSession(callback: js.Function2[/* err */ AWSError, /* data */ CreateSessionResponse, Unit]): Request[CreateSessionResponse, AWSError] = js.native
+  /**
+    * Creates a new session.
+    */
+  def createSession(params: CreateSessionRequest): Request[CreateSessionResponse, AWSError] = js.native
+  def createSession(
+    params: CreateSessionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateSessionResponse, Unit]
+  ): Request[CreateSessionResponse, AWSError] = js.native
   
   /**
     * Creates a new table definition in the Data Catalog.
@@ -447,6 +545,20 @@ trait Glue extends Service {
     params: CreateWorkflowRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateWorkflowResponse, Unit]
   ): Request[CreateWorkflowResponse, AWSError] = js.native
+  
+  /**
+    * Deletes an existing blueprint.
+    */
+  def deleteBlueprint(): Request[DeleteBlueprintResponse, AWSError] = js.native
+  def deleteBlueprint(callback: js.Function2[/* err */ AWSError, /* data */ DeleteBlueprintResponse, Unit]): Request[DeleteBlueprintResponse, AWSError] = js.native
+  /**
+    * Deletes an existing blueprint.
+    */
+  def deleteBlueprint(params: DeleteBlueprintRequest): Request[DeleteBlueprintResponse, AWSError] = js.native
+  def deleteBlueprint(
+    params: DeleteBlueprintRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteBlueprintResponse, Unit]
+  ): Request[DeleteBlueprintResponse, AWSError] = js.native
   
   /**
     * Removes a classifier from the Data Catalog.
@@ -509,12 +621,12 @@ trait Glue extends Service {
   ): Request[DeleteConnectionResponse, AWSError] = js.native
   
   /**
-    * Removes a specified crawler from the AWS Glue Data Catalog, unless the crawler state is RUNNING.
+    * Removes a specified crawler from the Glue Data Catalog, unless the crawler state is RUNNING.
     */
   def deleteCrawler(): Request[DeleteCrawlerResponse, AWSError] = js.native
   def deleteCrawler(callback: js.Function2[/* err */ AWSError, /* data */ DeleteCrawlerResponse, Unit]): Request[DeleteCrawlerResponse, AWSError] = js.native
   /**
-    * Removes a specified crawler from the AWS Glue Data Catalog, unless the crawler state is RUNNING.
+    * Removes a specified crawler from the Glue Data Catalog, unless the crawler state is RUNNING.
     */
   def deleteCrawler(params: DeleteCrawlerRequest): Request[DeleteCrawlerResponse, AWSError] = js.native
   def deleteCrawler(
@@ -523,12 +635,26 @@ trait Glue extends Service {
   ): Request[DeleteCrawlerResponse, AWSError] = js.native
   
   /**
-    * Removes a specified database from a Data Catalog.  After completing this operation, you no longer have access to the tables (and all table versions and partitions that might belong to the tables) and the user-defined functions in the deleted database. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling DeleteDatabase, use DeleteTableVersion or BatchDeleteTableVersion, DeletePartition or BatchDeletePartition, DeleteUserDefinedFunction, and DeleteTable or BatchDeleteTable, to delete any resources that belong to the database. 
+    * Deletes a custom pattern by specifying its name.
+    */
+  def deleteCustomEntityType(): Request[DeleteCustomEntityTypeResponse, AWSError] = js.native
+  def deleteCustomEntityType(callback: js.Function2[/* err */ AWSError, /* data */ DeleteCustomEntityTypeResponse, Unit]): Request[DeleteCustomEntityTypeResponse, AWSError] = js.native
+  /**
+    * Deletes a custom pattern by specifying its name.
+    */
+  def deleteCustomEntityType(params: DeleteCustomEntityTypeRequest): Request[DeleteCustomEntityTypeResponse, AWSError] = js.native
+  def deleteCustomEntityType(
+    params: DeleteCustomEntityTypeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteCustomEntityTypeResponse, Unit]
+  ): Request[DeleteCustomEntityTypeResponse, AWSError] = js.native
+  
+  /**
+    * Removes a specified database from a Data Catalog.  After completing this operation, you no longer have access to the tables (and all table versions and partitions that might belong to the tables) and the user-defined functions in the deleted database. Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling DeleteDatabase, use DeleteTableVersion or BatchDeleteTableVersion, DeletePartition or BatchDeletePartition, DeleteUserDefinedFunction, and DeleteTable or BatchDeleteTable, to delete any resources that belong to the database. 
     */
   def deleteDatabase(): Request[DeleteDatabaseResponse, AWSError] = js.native
   def deleteDatabase(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDatabaseResponse, Unit]): Request[DeleteDatabaseResponse, AWSError] = js.native
   /**
-    * Removes a specified database from a Data Catalog.  After completing this operation, you no longer have access to the tables (and all table versions and partitions that might belong to the tables) and the user-defined functions in the deleted database. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling DeleteDatabase, use DeleteTableVersion or BatchDeleteTableVersion, DeletePartition or BatchDeletePartition, DeleteUserDefinedFunction, and DeleteTable or BatchDeleteTable, to delete any resources that belong to the database. 
+    * Removes a specified database from a Data Catalog.  After completing this operation, you no longer have access to the tables (and all table versions and partitions that might belong to the tables) and the user-defined functions in the deleted database. Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling DeleteDatabase, use DeleteTableVersion or BatchDeleteTableVersion, DeletePartition or BatchDeletePartition, DeleteUserDefinedFunction, and DeleteTable or BatchDeleteTable, to delete any resources that belong to the database. 
     */
   def deleteDatabase(params: DeleteDatabaseRequest): Request[DeleteDatabaseResponse, AWSError] = js.native
   def deleteDatabase(
@@ -565,12 +691,12 @@ trait Glue extends Service {
   ): Request[DeleteJobResponse, AWSError] = js.native
   
   /**
-    * Deletes an AWS Glue machine learning transform. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by AWS Glue. If you no longer need a transform, you can delete it by calling DeleteMLTransforms. However, any AWS Glue jobs that still reference the deleted transform will no longer succeed.
+    * Deletes an Glue machine learning transform. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by Glue. If you no longer need a transform, you can delete it by calling DeleteMLTransforms. However, any Glue jobs that still reference the deleted transform will no longer succeed.
     */
   def deleteMLTransform(): Request[DeleteMLTransformResponse, AWSError] = js.native
   def deleteMLTransform(callback: js.Function2[/* err */ AWSError, /* data */ DeleteMLTransformResponse, Unit]): Request[DeleteMLTransformResponse, AWSError] = js.native
   /**
-    * Deletes an AWS Glue machine learning transform. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by AWS Glue. If you no longer need a transform, you can delete it by calling DeleteMLTransforms. However, any AWS Glue jobs that still reference the deleted transform will no longer succeed.
+    * Deletes an Glue machine learning transform. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by Glue. If you no longer need a transform, you can delete it by calling DeleteMLTransforms. However, any Glue jobs that still reference the deleted transform will no longer succeed.
     */
   def deleteMLTransform(params: DeleteMLTransformRequest): Request[DeleteMLTransformResponse, AWSError] = js.native
   def deleteMLTransform(
@@ -593,12 +719,26 @@ trait Glue extends Service {
   ): Request[DeletePartitionResponse, AWSError] = js.native
   
   /**
-    * Delete the entire registry including schema and all of its versions. To get the status of the delete operation, you can call the GetRegistry API after the asynchronous call. Deleting a registry will disable all online operations for the registry such as the UpdateRegistry, CreateSchema, UpdateSchema, and RegisterSchemaVersion APIs. 
+    * Deletes a specified partition index from an existing table.
+    */
+  def deletePartitionIndex(): Request[DeletePartitionIndexResponse, AWSError] = js.native
+  def deletePartitionIndex(callback: js.Function2[/* err */ AWSError, /* data */ DeletePartitionIndexResponse, Unit]): Request[DeletePartitionIndexResponse, AWSError] = js.native
+  /**
+    * Deletes a specified partition index from an existing table.
+    */
+  def deletePartitionIndex(params: DeletePartitionIndexRequest): Request[DeletePartitionIndexResponse, AWSError] = js.native
+  def deletePartitionIndex(
+    params: DeletePartitionIndexRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeletePartitionIndexResponse, Unit]
+  ): Request[DeletePartitionIndexResponse, AWSError] = js.native
+  
+  /**
+    * Delete the entire registry including schema and all of its versions. To get the status of the delete operation, you can call the GetRegistry API after the asynchronous call. Deleting a registry will deactivate all online operations for the registry such as the UpdateRegistry, CreateSchema, UpdateSchema, and RegisterSchemaVersion APIs. 
     */
   def deleteRegistry(): Request[DeleteRegistryResponse, AWSError] = js.native
   def deleteRegistry(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRegistryResponse, Unit]): Request[DeleteRegistryResponse, AWSError] = js.native
   /**
-    * Delete the entire registry including schema and all of its versions. To get the status of the delete operation, you can call the GetRegistry API after the asynchronous call. Deleting a registry will disable all online operations for the registry such as the UpdateRegistry, CreateSchema, UpdateSchema, and RegisterSchemaVersion APIs. 
+    * Delete the entire registry including schema and all of its versions. To get the status of the delete operation, you can call the GetRegistry API after the asynchronous call. Deleting a registry will deactivate all online operations for the registry such as the UpdateRegistry, CreateSchema, UpdateSchema, and RegisterSchemaVersion APIs. 
     */
   def deleteRegistry(params: DeleteRegistryInput): Request[DeleteRegistryResponse, AWSError] = js.native
   def deleteRegistry(
@@ -621,12 +761,12 @@ trait Glue extends Service {
   ): Request[DeleteResourcePolicyResponse, AWSError] = js.native
   
   /**
-    * Deletes the entire schema set, including the schema set and all of its versions. To get the status of the delete operation, you can call GetSchema API after the asynchronous call. Deleting a registry will disable all online operations for the schema, such as the GetSchemaByDefinition, and RegisterSchemaVersion APIs.
+    * Deletes the entire schema set, including the schema set and all of its versions. To get the status of the delete operation, you can call GetSchema API after the asynchronous call. Deleting a registry will deactivate all online operations for the schema, such as the GetSchemaByDefinition, and RegisterSchemaVersion APIs.
     */
   def deleteSchema(): Request[DeleteSchemaResponse, AWSError] = js.native
   def deleteSchema(callback: js.Function2[/* err */ AWSError, /* data */ DeleteSchemaResponse, Unit]): Request[DeleteSchemaResponse, AWSError] = js.native
   /**
-    * Deletes the entire schema set, including the schema set and all of its versions. To get the status of the delete operation, you can call GetSchema API after the asynchronous call. Deleting a registry will disable all online operations for the schema, such as the GetSchemaByDefinition, and RegisterSchemaVersion APIs.
+    * Deletes the entire schema set, including the schema set and all of its versions. To get the status of the delete operation, you can call GetSchema API after the asynchronous call. Deleting a registry will deactivate all online operations for the schema, such as the GetSchemaByDefinition, and RegisterSchemaVersion APIs.
     */
   def deleteSchema(params: DeleteSchemaInput): Request[DeleteSchemaResponse, AWSError] = js.native
   def deleteSchema(
@@ -663,12 +803,26 @@ trait Glue extends Service {
   ): Request[DeleteSecurityConfigurationResponse, AWSError] = js.native
   
   /**
-    * Removes a table definition from the Data Catalog.  After completing this operation, you no longer have access to the table versions and partitions that belong to the deleted table. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling DeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
+    * Deletes the session.
+    */
+  def deleteSession(): Request[DeleteSessionResponse, AWSError] = js.native
+  def deleteSession(callback: js.Function2[/* err */ AWSError, /* data */ DeleteSessionResponse, Unit]): Request[DeleteSessionResponse, AWSError] = js.native
+  /**
+    * Deletes the session.
+    */
+  def deleteSession(params: DeleteSessionRequest): Request[DeleteSessionResponse, AWSError] = js.native
+  def deleteSession(
+    params: DeleteSessionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteSessionResponse, Unit]
+  ): Request[DeleteSessionResponse, AWSError] = js.native
+  
+  /**
+    * Removes a table definition from the Data Catalog.  After completing this operation, you no longer have access to the table versions and partitions that belong to the deleted table. Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling DeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
     */
   def deleteTable(): Request[DeleteTableResponse, AWSError] = js.native
   def deleteTable(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTableResponse, Unit]): Request[DeleteTableResponse, AWSError] = js.native
   /**
-    * Removes a table definition from the Data Catalog.  After completing this operation, you no longer have access to the table versions and partitions that belong to the deleted table. AWS Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling DeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
+    * Removes a table definition from the Data Catalog.  After completing this operation, you no longer have access to the table versions and partitions that belong to the deleted table. Glue deletes these "orphaned" resources asynchronously in a timely manner, at the discretion of the service. To ensure the immediate deletion of all related resources, before calling DeleteTable, use DeleteTableVersion or BatchDeleteTableVersion, and DeletePartition or BatchDeletePartition, to delete any resources that belong to the table. 
     */
   def deleteTable(params: DeleteTableRequest): Request[DeleteTableResponse, AWSError] = js.native
   def deleteTable(
@@ -731,6 +885,48 @@ trait Glue extends Service {
     params: DeleteWorkflowRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteWorkflowResponse, Unit]
   ): Request[DeleteWorkflowResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the details of a blueprint.
+    */
+  def getBlueprint(): Request[GetBlueprintResponse, AWSError] = js.native
+  def getBlueprint(callback: js.Function2[/* err */ AWSError, /* data */ GetBlueprintResponse, Unit]): Request[GetBlueprintResponse, AWSError] = js.native
+  /**
+    * Retrieves the details of a blueprint.
+    */
+  def getBlueprint(params: GetBlueprintRequest): Request[GetBlueprintResponse, AWSError] = js.native
+  def getBlueprint(
+    params: GetBlueprintRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetBlueprintResponse, Unit]
+  ): Request[GetBlueprintResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the details of a blueprint run.
+    */
+  def getBlueprintRun(): Request[GetBlueprintRunResponse, AWSError] = js.native
+  def getBlueprintRun(callback: js.Function2[/* err */ AWSError, /* data */ GetBlueprintRunResponse, Unit]): Request[GetBlueprintRunResponse, AWSError] = js.native
+  /**
+    * Retrieves the details of a blueprint run.
+    */
+  def getBlueprintRun(params: GetBlueprintRunRequest): Request[GetBlueprintRunResponse, AWSError] = js.native
+  def getBlueprintRun(
+    params: GetBlueprintRunRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetBlueprintRunResponse, Unit]
+  ): Request[GetBlueprintRunResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the details of blueprint runs for a specified blueprint.
+    */
+  def getBlueprintRuns(): Request[GetBlueprintRunsResponse, AWSError] = js.native
+  def getBlueprintRuns(callback: js.Function2[/* err */ AWSError, /* data */ GetBlueprintRunsResponse, Unit]): Request[GetBlueprintRunsResponse, AWSError] = js.native
+  /**
+    * Retrieves the details of blueprint runs for a specified blueprint.
+    */
+  def getBlueprintRuns(params: GetBlueprintRunsRequest): Request[GetBlueprintRunsResponse, AWSError] = js.native
+  def getBlueprintRuns(
+    params: GetBlueprintRunsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetBlueprintRunsResponse, Unit]
+  ): Request[GetBlueprintRunsResponse, AWSError] = js.native
   
   /**
     * Retrieves the status of a migration operation.
@@ -875,6 +1071,20 @@ trait Glue extends Service {
   ): Request[GetCrawlersResponse, AWSError] = js.native
   
   /**
+    * Retrieves the details of a custom pattern by specifying its name.
+    */
+  def getCustomEntityType(): Request[GetCustomEntityTypeResponse, AWSError] = js.native
+  def getCustomEntityType(callback: js.Function2[/* err */ AWSError, /* data */ GetCustomEntityTypeResponse, Unit]): Request[GetCustomEntityTypeResponse, AWSError] = js.native
+  /**
+    * Retrieves the details of a custom pattern by specifying its name.
+    */
+  def getCustomEntityType(params: GetCustomEntityTypeRequest): Request[GetCustomEntityTypeResponse, AWSError] = js.native
+  def getCustomEntityType(
+    params: GetCustomEntityTypeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetCustomEntityTypeResponse, Unit]
+  ): Request[GetCustomEntityTypeResponse, AWSError] = js.native
+  
+  /**
     * Retrieves the security configuration for a specified catalog.
     */
   def getDataCatalogEncryptionSettings(): Request[GetDataCatalogEncryptionSettingsResponse, AWSError] = js.native
@@ -933,12 +1143,12 @@ trait Glue extends Service {
   ): Request[GetDataflowGraphResponse, AWSError] = js.native
   
   /**
-    * Retrieves information about a specified development endpoint.  When you create a development endpoint in a virtual private cloud (VPC), AWS Glue returns only a private IP address, and the public IP address field is not populated. When you create a non-VPC development endpoint, AWS Glue returns only a public IP address. 
+    * Retrieves information about a specified development endpoint.  When you create a development endpoint in a virtual private cloud (VPC), Glue returns only a private IP address, and the public IP address field is not populated. When you create a non-VPC development endpoint, Glue returns only a public IP address. 
     */
   def getDevEndpoint(): Request[GetDevEndpointResponse, AWSError] = js.native
   def getDevEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ GetDevEndpointResponse, Unit]): Request[GetDevEndpointResponse, AWSError] = js.native
   /**
-    * Retrieves information about a specified development endpoint.  When you create a development endpoint in a virtual private cloud (VPC), AWS Glue returns only a private IP address, and the public IP address field is not populated. When you create a non-VPC development endpoint, AWS Glue returns only a public IP address. 
+    * Retrieves information about a specified development endpoint.  When you create a development endpoint in a virtual private cloud (VPC), Glue returns only a private IP address, and the public IP address field is not populated. When you create a non-VPC development endpoint, Glue returns only a public IP address. 
     */
   def getDevEndpoint(params: GetDevEndpointRequest): Request[GetDevEndpointResponse, AWSError] = js.native
   def getDevEndpoint(
@@ -947,12 +1157,12 @@ trait Glue extends Service {
   ): Request[GetDevEndpointResponse, AWSError] = js.native
   
   /**
-    * Retrieves all the development endpoints in this AWS account.  When you create a development endpoint in a virtual private cloud (VPC), AWS Glue returns only a private IP address and the public IP address field is not populated. When you create a non-VPC development endpoint, AWS Glue returns only a public IP address. 
+    * Retrieves all the development endpoints in this AWS account.  When you create a development endpoint in a virtual private cloud (VPC), Glue returns only a private IP address and the public IP address field is not populated. When you create a non-VPC development endpoint, Glue returns only a public IP address. 
     */
   def getDevEndpoints(): Request[GetDevEndpointsResponse, AWSError] = js.native
   def getDevEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ GetDevEndpointsResponse, Unit]): Request[GetDevEndpointsResponse, AWSError] = js.native
   /**
-    * Retrieves all the development endpoints in this AWS account.  When you create a development endpoint in a virtual private cloud (VPC), AWS Glue returns only a private IP address and the public IP address field is not populated. When you create a non-VPC development endpoint, AWS Glue returns only a public IP address. 
+    * Retrieves all the development endpoints in this AWS account.  When you create a development endpoint in a virtual private cloud (VPC), Glue returns only a private IP address and the public IP address field is not populated. When you create a non-VPC development endpoint, Glue returns only a public IP address. 
     */
   def getDevEndpoints(params: GetDevEndpointsRequest): Request[GetDevEndpointsResponse, AWSError] = js.native
   def getDevEndpoints(
@@ -1028,12 +1238,12 @@ trait Glue extends Service {
   ): Request[GetJobsResponse, AWSError] = js.native
   
   /**
-    * Gets details for a specific task run on a machine learning transform. Machine learning task runs are asynchronous tasks that AWS Glue runs on your behalf as part of various machine learning workflows. You can check the stats of any task run by calling GetMLTaskRun with the TaskRunID and its parent transform's TransformID.
+    * Gets details for a specific task run on a machine learning transform. Machine learning task runs are asynchronous tasks that Glue runs on your behalf as part of various machine learning workflows. You can check the stats of any task run by calling GetMLTaskRun with the TaskRunID and its parent transform's TransformID.
     */
   def getMLTaskRun(): Request[GetMLTaskRunResponse, AWSError] = js.native
   def getMLTaskRun(callback: js.Function2[/* err */ AWSError, /* data */ GetMLTaskRunResponse, Unit]): Request[GetMLTaskRunResponse, AWSError] = js.native
   /**
-    * Gets details for a specific task run on a machine learning transform. Machine learning task runs are asynchronous tasks that AWS Glue runs on your behalf as part of various machine learning workflows. You can check the stats of any task run by calling GetMLTaskRun with the TaskRunID and its parent transform's TransformID.
+    * Gets details for a specific task run on a machine learning transform. Machine learning task runs are asynchronous tasks that Glue runs on your behalf as part of various machine learning workflows. You can check the stats of any task run by calling GetMLTaskRun with the TaskRunID and its parent transform's TransformID.
     */
   def getMLTaskRun(params: GetMLTaskRunRequest): Request[GetMLTaskRunResponse, AWSError] = js.native
   def getMLTaskRun(
@@ -1042,12 +1252,12 @@ trait Glue extends Service {
   ): Request[GetMLTaskRunResponse, AWSError] = js.native
   
   /**
-    * Gets a list of runs for a machine learning transform. Machine learning task runs are asynchronous tasks that AWS Glue runs on your behalf as part of various machine learning workflows. You can get a sortable, filterable list of machine learning task runs by calling GetMLTaskRuns with their parent transform's TransformID and other optional parameters as documented in this section. This operation returns a list of historic runs and must be paginated.
+    * Gets a list of runs for a machine learning transform. Machine learning task runs are asynchronous tasks that Glue runs on your behalf as part of various machine learning workflows. You can get a sortable, filterable list of machine learning task runs by calling GetMLTaskRuns with their parent transform's TransformID and other optional parameters as documented in this section. This operation returns a list of historic runs and must be paginated.
     */
   def getMLTaskRuns(): Request[GetMLTaskRunsResponse, AWSError] = js.native
   def getMLTaskRuns(callback: js.Function2[/* err */ AWSError, /* data */ GetMLTaskRunsResponse, Unit]): Request[GetMLTaskRunsResponse, AWSError] = js.native
   /**
-    * Gets a list of runs for a machine learning transform. Machine learning task runs are asynchronous tasks that AWS Glue runs on your behalf as part of various machine learning workflows. You can get a sortable, filterable list of machine learning task runs by calling GetMLTaskRuns with their parent transform's TransformID and other optional parameters as documented in this section. This operation returns a list of historic runs and must be paginated.
+    * Gets a list of runs for a machine learning transform. Machine learning task runs are asynchronous tasks that Glue runs on your behalf as part of various machine learning workflows. You can get a sortable, filterable list of machine learning task runs by calling GetMLTaskRuns with their parent transform's TransformID and other optional parameters as documented in this section. This operation returns a list of historic runs and must be paginated.
     */
   def getMLTaskRuns(params: GetMLTaskRunsRequest): Request[GetMLTaskRunsResponse, AWSError] = js.native
   def getMLTaskRuns(
@@ -1056,12 +1266,12 @@ trait Glue extends Service {
   ): Request[GetMLTaskRunsResponse, AWSError] = js.native
   
   /**
-    * Gets an AWS Glue machine learning transform artifact and all its corresponding metadata. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by AWS Glue. You can retrieve their metadata by calling GetMLTransform.
+    * Gets an Glue machine learning transform artifact and all its corresponding metadata. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by Glue. You can retrieve their metadata by calling GetMLTransform.
     */
   def getMLTransform(): Request[GetMLTransformResponse, AWSError] = js.native
   def getMLTransform(callback: js.Function2[/* err */ AWSError, /* data */ GetMLTransformResponse, Unit]): Request[GetMLTransformResponse, AWSError] = js.native
   /**
-    * Gets an AWS Glue machine learning transform artifact and all its corresponding metadata. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by AWS Glue. You can retrieve their metadata by calling GetMLTransform.
+    * Gets an Glue machine learning transform artifact and all its corresponding metadata. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by Glue. You can retrieve their metadata by calling GetMLTransform.
     */
   def getMLTransform(params: GetMLTransformRequest): Request[GetMLTransformResponse, AWSError] = js.native
   def getMLTransform(
@@ -1070,12 +1280,12 @@ trait Glue extends Service {
   ): Request[GetMLTransformResponse, AWSError] = js.native
   
   /**
-    * Gets a sortable, filterable list of existing AWS Glue machine learning transforms. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by AWS Glue, and you can retrieve their metadata by calling GetMLTransforms.
+    * Gets a sortable, filterable list of existing Glue machine learning transforms. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by Glue, and you can retrieve their metadata by calling GetMLTransforms.
     */
   def getMLTransforms(): Request[GetMLTransformsResponse, AWSError] = js.native
   def getMLTransforms(callback: js.Function2[/* err */ AWSError, /* data */ GetMLTransformsResponse, Unit]): Request[GetMLTransformsResponse, AWSError] = js.native
   /**
-    * Gets a sortable, filterable list of existing AWS Glue machine learning transforms. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by AWS Glue, and you can retrieve their metadata by calling GetMLTransforms.
+    * Gets a sortable, filterable list of existing Glue machine learning transforms. Machine learning transforms are a special type of transform that use machine learning to learn the details of the transformation to be performed by learning from examples provided by humans. These transformations are then saved by Glue, and you can retrieve their metadata by calling GetMLTransforms.
     */
   def getMLTransforms(params: GetMLTransformsRequest): Request[GetMLTransformsResponse, AWSError] = js.native
   def getMLTransforms(
@@ -1168,12 +1378,12 @@ trait Glue extends Service {
   ): Request[GetRegistryResponse, AWSError] = js.native
   
   /**
-    * Retrieves the security configurations for the resource policies set on individual resources, and also the account-level policy. This operation also returns the Data Catalog resource policy. However, if you enabled metadata encryption in Data Catalog settings, and you do not have permission on the AWS KMS key, the operation can't return the Data Catalog resource policy.
+    * Retrieves the resource policies set on individual resources by Resource Access Manager during cross-account permission grants. Also retrieves the Data Catalog resource policy. If you enabled metadata encryption in Data Catalog settings, and you do not have permission on the KMS key, the operation can't return the Data Catalog resource policy.
     */
   def getResourcePolicies(): Request[GetResourcePoliciesResponse, AWSError] = js.native
   def getResourcePolicies(callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePoliciesResponse, Unit]): Request[GetResourcePoliciesResponse, AWSError] = js.native
   /**
-    * Retrieves the security configurations for the resource policies set on individual resources, and also the account-level policy. This operation also returns the Data Catalog resource policy. However, if you enabled metadata encryption in Data Catalog settings, and you do not have permission on the AWS KMS key, the operation can't return the Data Catalog resource policy.
+    * Retrieves the resource policies set on individual resources by Resource Access Manager during cross-account permission grants. Also retrieves the Data Catalog resource policy. If you enabled metadata encryption in Data Catalog settings, and you do not have permission on the KMS key, the operation can't return the Data Catalog resource policy.
     */
   def getResourcePolicies(params: GetResourcePoliciesRequest): Request[GetResourcePoliciesResponse, AWSError] = js.native
   def getResourcePolicies(
@@ -1280,6 +1490,34 @@ trait Glue extends Service {
   ): Request[GetSecurityConfigurationsResponse, AWSError] = js.native
   
   /**
+    * Retrieves the session.
+    */
+  def getSession(): Request[GetSessionResponse, AWSError] = js.native
+  def getSession(callback: js.Function2[/* err */ AWSError, /* data */ GetSessionResponse, Unit]): Request[GetSessionResponse, AWSError] = js.native
+  /**
+    * Retrieves the session.
+    */
+  def getSession(params: GetSessionRequest): Request[GetSessionResponse, AWSError] = js.native
+  def getSession(
+    params: GetSessionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetSessionResponse, Unit]
+  ): Request[GetSessionResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the statement.
+    */
+  def getStatement(): Request[GetStatementResponse, AWSError] = js.native
+  def getStatement(callback: js.Function2[/* err */ AWSError, /* data */ GetStatementResponse, Unit]): Request[GetStatementResponse, AWSError] = js.native
+  /**
+    * Retrieves the statement.
+    */
+  def getStatement(params: GetStatementRequest): Request[GetStatementResponse, AWSError] = js.native
+  def getStatement(
+    params: GetStatementRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetStatementResponse, Unit]
+  ): Request[GetStatementResponse, AWSError] = js.native
+  
+  /**
     * Retrieves the Table definition in a Data Catalog for a specified table.
     */
   def getTable(): Request[GetTableResponse, AWSError] = js.native
@@ -1378,6 +1616,52 @@ trait Glue extends Service {
   ): Request[GetTriggersResponse, AWSError] = js.native
   
   /**
+    * 
+    */
+  def getUnfilteredPartitionMetadata(): Request[GetUnfilteredPartitionMetadataResponse, AWSError] = js.native
+  def getUnfilteredPartitionMetadata(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetUnfilteredPartitionMetadataResponse, Unit]
+  ): Request[GetUnfilteredPartitionMetadataResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def getUnfilteredPartitionMetadata(params: GetUnfilteredPartitionMetadataRequest): Request[GetUnfilteredPartitionMetadataResponse, AWSError] = js.native
+  def getUnfilteredPartitionMetadata(
+    params: GetUnfilteredPartitionMetadataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetUnfilteredPartitionMetadataResponse, Unit]
+  ): Request[GetUnfilteredPartitionMetadataResponse, AWSError] = js.native
+  
+  /**
+    * 
+    */
+  def getUnfilteredPartitionsMetadata(): Request[GetUnfilteredPartitionsMetadataResponse, AWSError] = js.native
+  def getUnfilteredPartitionsMetadata(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetUnfilteredPartitionsMetadataResponse, Unit]
+  ): Request[GetUnfilteredPartitionsMetadataResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def getUnfilteredPartitionsMetadata(params: GetUnfilteredPartitionsMetadataRequest): Request[GetUnfilteredPartitionsMetadataResponse, AWSError] = js.native
+  def getUnfilteredPartitionsMetadata(
+    params: GetUnfilteredPartitionsMetadataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetUnfilteredPartitionsMetadataResponse, Unit]
+  ): Request[GetUnfilteredPartitionsMetadataResponse, AWSError] = js.native
+  
+  /**
+    * 
+    */
+  def getUnfilteredTableMetadata(): Request[GetUnfilteredTableMetadataResponse, AWSError] = js.native
+  def getUnfilteredTableMetadata(callback: js.Function2[/* err */ AWSError, /* data */ GetUnfilteredTableMetadataResponse, Unit]): Request[GetUnfilteredTableMetadataResponse, AWSError] = js.native
+  /**
+    * 
+    */
+  def getUnfilteredTableMetadata(params: GetUnfilteredTableMetadataRequest): Request[GetUnfilteredTableMetadataResponse, AWSError] = js.native
+  def getUnfilteredTableMetadata(
+    params: GetUnfilteredTableMetadataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetUnfilteredTableMetadataResponse, Unit]
+  ): Request[GetUnfilteredTableMetadataResponse, AWSError] = js.native
+  
+  /**
     * Retrieves a specified function definition from the Data Catalog.
     */
   def getUserDefinedFunction(): Request[GetUserDefinedFunctionResponse, AWSError] = js.native
@@ -1462,12 +1746,12 @@ trait Glue extends Service {
   ): Request[GetWorkflowRunsResponse, AWSError] = js.native
   
   /**
-    * Imports an existing Amazon Athena Data Catalog to AWS Glue
+    * Imports an existing Amazon Athena Data Catalog to Glue.
     */
   def importCatalogToGlue(): Request[ImportCatalogToGlueResponse, AWSError] = js.native
   def importCatalogToGlue(callback: js.Function2[/* err */ AWSError, /* data */ ImportCatalogToGlueResponse, Unit]): Request[ImportCatalogToGlueResponse, AWSError] = js.native
   /**
-    * Imports an existing Amazon Athena Data Catalog to AWS Glue
+    * Imports an existing Amazon Athena Data Catalog to Glue.
     */
   def importCatalogToGlue(params: ImportCatalogToGlueRequest): Request[ImportCatalogToGlueResponse, AWSError] = js.native
   def importCatalogToGlue(
@@ -1476,12 +1760,26 @@ trait Glue extends Service {
   ): Request[ImportCatalogToGlueResponse, AWSError] = js.native
   
   /**
-    * Retrieves the names of all crawler resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
+    * Lists all the blueprint names in an account.
+    */
+  def listBlueprints(): Request[ListBlueprintsResponse, AWSError] = js.native
+  def listBlueprints(callback: js.Function2[/* err */ AWSError, /* data */ ListBlueprintsResponse, Unit]): Request[ListBlueprintsResponse, AWSError] = js.native
+  /**
+    * Lists all the blueprint names in an account.
+    */
+  def listBlueprints(params: ListBlueprintsRequest): Request[ListBlueprintsResponse, AWSError] = js.native
+  def listBlueprints(
+    params: ListBlueprintsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListBlueprintsResponse, Unit]
+  ): Request[ListBlueprintsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the names of all crawler resources in this Amazon Web Services account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listCrawlers(): Request[ListCrawlersResponse, AWSError] = js.native
   def listCrawlers(callback: js.Function2[/* err */ AWSError, /* data */ ListCrawlersResponse, Unit]): Request[ListCrawlersResponse, AWSError] = js.native
   /**
-    * Retrieves the names of all crawler resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
+    * Retrieves the names of all crawler resources in this Amazon Web Services account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listCrawlers(params: ListCrawlersRequest): Request[ListCrawlersResponse, AWSError] = js.native
   def listCrawlers(
@@ -1490,12 +1788,40 @@ trait Glue extends Service {
   ): Request[ListCrawlersResponse, AWSError] = js.native
   
   /**
-    * Retrieves the names of all DevEndpoint resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
+    * Returns all the crawls of a specified crawler. Returns only the crawls that have occurred since the launch date of the crawler history feature, and only retains up to 12 months of crawls. Older crawls will not be returned. You may use this API to:   Retrive all the crawls of a specified crawler.   Retrieve all the crawls of a specified crawler within a limited count.   Retrieve all the crawls of a specified crawler in a specific time range.   Retrieve all the crawls of a specified crawler with a particular state, crawl ID, or DPU hour value.  
+    */
+  def listCrawls(): Request[ListCrawlsResponse, AWSError] = js.native
+  def listCrawls(callback: js.Function2[/* err */ AWSError, /* data */ ListCrawlsResponse, Unit]): Request[ListCrawlsResponse, AWSError] = js.native
+  /**
+    * Returns all the crawls of a specified crawler. Returns only the crawls that have occurred since the launch date of the crawler history feature, and only retains up to 12 months of crawls. Older crawls will not be returned. You may use this API to:   Retrive all the crawls of a specified crawler.   Retrieve all the crawls of a specified crawler within a limited count.   Retrieve all the crawls of a specified crawler in a specific time range.   Retrieve all the crawls of a specified crawler with a particular state, crawl ID, or DPU hour value.  
+    */
+  def listCrawls(params: ListCrawlsRequest): Request[ListCrawlsResponse, AWSError] = js.native
+  def listCrawls(
+    params: ListCrawlsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListCrawlsResponse, Unit]
+  ): Request[ListCrawlsResponse, AWSError] = js.native
+  
+  /**
+    * Lists all the custom patterns that have been created.
+    */
+  def listCustomEntityTypes(): Request[ListCustomEntityTypesResponse, AWSError] = js.native
+  def listCustomEntityTypes(callback: js.Function2[/* err */ AWSError, /* data */ ListCustomEntityTypesResponse, Unit]): Request[ListCustomEntityTypesResponse, AWSError] = js.native
+  /**
+    * Lists all the custom patterns that have been created.
+    */
+  def listCustomEntityTypes(params: ListCustomEntityTypesRequest): Request[ListCustomEntityTypesResponse, AWSError] = js.native
+  def listCustomEntityTypes(
+    params: ListCustomEntityTypesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListCustomEntityTypesResponse, Unit]
+  ): Request[ListCustomEntityTypesResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the names of all DevEndpoint resources in this Amazon Web Services account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listDevEndpoints(): Request[ListDevEndpointsResponse, AWSError] = js.native
   def listDevEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ ListDevEndpointsResponse, Unit]): Request[ListDevEndpointsResponse, AWSError] = js.native
   /**
-    * Retrieves the names of all DevEndpoint resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
+    * Retrieves the names of all DevEndpoint resources in this Amazon Web Services account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listDevEndpoints(params: ListDevEndpointsRequest): Request[ListDevEndpointsResponse, AWSError] = js.native
   def listDevEndpoints(
@@ -1504,12 +1830,12 @@ trait Glue extends Service {
   ): Request[ListDevEndpointsResponse, AWSError] = js.native
   
   /**
-    * Retrieves the names of all job resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
+    * Retrieves the names of all job resources in this Amazon Web Services account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listJobs(): Request[ListJobsResponse, AWSError] = js.native
   def listJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListJobsResponse, Unit]): Request[ListJobsResponse, AWSError] = js.native
   /**
-    * Retrieves the names of all job resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
+    * Retrieves the names of all job resources in this Amazon Web Services account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listJobs(params: ListJobsRequest): Request[ListJobsResponse, AWSError] = js.native
   def listJobs(
@@ -1518,12 +1844,12 @@ trait Glue extends Service {
   ): Request[ListJobsResponse, AWSError] = js.native
   
   /**
-    *  Retrieves a sortable, filterable list of existing AWS Glue machine learning transforms in this AWS account, or the resources with the specified tag. This operation takes the optional Tags field, which you can use as a filter of the responses so that tagged resources can be retrieved as a group. If you choose to use tag filtering, only resources with the tags are retrieved. 
+    *  Retrieves a sortable, filterable list of existing Glue machine learning transforms in this Amazon Web Services account, or the resources with the specified tag. This operation takes the optional Tags field, which you can use as a filter of the responses so that tagged resources can be retrieved as a group. If you choose to use tag filtering, only resources with the tags are retrieved. 
     */
   def listMLTransforms(): Request[ListMLTransformsResponse, AWSError] = js.native
   def listMLTransforms(callback: js.Function2[/* err */ AWSError, /* data */ ListMLTransformsResponse, Unit]): Request[ListMLTransformsResponse, AWSError] = js.native
   /**
-    *  Retrieves a sortable, filterable list of existing AWS Glue machine learning transforms in this AWS account, or the resources with the specified tag. This operation takes the optional Tags field, which you can use as a filter of the responses so that tagged resources can be retrieved as a group. If you choose to use tag filtering, only resources with the tags are retrieved. 
+    *  Retrieves a sortable, filterable list of existing Glue machine learning transforms in this Amazon Web Services account, or the resources with the specified tag. This operation takes the optional Tags field, which you can use as a filter of the responses so that tagged resources can be retrieved as a group. If you choose to use tag filtering, only resources with the tags are retrieved. 
     */
   def listMLTransforms(params: ListMLTransformsRequest): Request[ListMLTransformsResponse, AWSError] = js.native
   def listMLTransforms(
@@ -1574,12 +1900,40 @@ trait Glue extends Service {
   ): Request[ListSchemasResponse, AWSError] = js.native
   
   /**
-    * Retrieves the names of all trigger resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
+    * Retrieve a list of sessions.
+    */
+  def listSessions(): Request[ListSessionsResponse, AWSError] = js.native
+  def listSessions(callback: js.Function2[/* err */ AWSError, /* data */ ListSessionsResponse, Unit]): Request[ListSessionsResponse, AWSError] = js.native
+  /**
+    * Retrieve a list of sessions.
+    */
+  def listSessions(params: ListSessionsRequest): Request[ListSessionsResponse, AWSError] = js.native
+  def listSessions(
+    params: ListSessionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListSessionsResponse, Unit]
+  ): Request[ListSessionsResponse, AWSError] = js.native
+  
+  /**
+    * Lists statements for the session.
+    */
+  def listStatements(): Request[ListStatementsResponse, AWSError] = js.native
+  def listStatements(callback: js.Function2[/* err */ AWSError, /* data */ ListStatementsResponse, Unit]): Request[ListStatementsResponse, AWSError] = js.native
+  /**
+    * Lists statements for the session.
+    */
+  def listStatements(params: ListStatementsRequest): Request[ListStatementsResponse, AWSError] = js.native
+  def listStatements(
+    params: ListStatementsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListStatementsResponse, Unit]
+  ): Request[ListStatementsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the names of all trigger resources in this Amazon Web Services account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listTriggers(): Request[ListTriggersResponse, AWSError] = js.native
   def listTriggers(callback: js.Function2[/* err */ AWSError, /* data */ ListTriggersResponse, Unit]): Request[ListTriggersResponse, AWSError] = js.native
   /**
-    * Retrieves the names of all trigger resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
+    * Retrieves the names of all trigger resources in this Amazon Web Services account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listTriggers(params: ListTriggersRequest): Request[ListTriggersResponse, AWSError] = js.native
   def listTriggers(
@@ -1730,6 +2084,20 @@ trait Glue extends Service {
   ): Request[ResumeWorkflowRunResponse, AWSError] = js.native
   
   /**
+    * Executes the statement.
+    */
+  def runStatement(): Request[RunStatementResponse, AWSError] = js.native
+  def runStatement(callback: js.Function2[/* err */ AWSError, /* data */ RunStatementResponse, Unit]): Request[RunStatementResponse, AWSError] = js.native
+  /**
+    * Executes the statement.
+    */
+  def runStatement(params: RunStatementRequest): Request[RunStatementResponse, AWSError] = js.native
+  def runStatement(
+    params: RunStatementRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RunStatementResponse, Unit]
+  ): Request[RunStatementResponse, AWSError] = js.native
+  
+  /**
     * Searches a set of tables based on properties in the table metadata as well as on the parent database. You can search against text or filter conditions.  You can only get tables that you have access to based on the security policies defined in Lake Formation. You need at least a read-only access to the table for it to be returned. If you do not have access to all the columns in the table, these columns will not be searched against when returning the list of tables back to you. If you have access to the columns but not the data in the columns, those columns and the associated metadata for those columns will be included in the search. 
     */
   def searchTables(): Request[SearchTablesResponse, AWSError] = js.native
@@ -1742,6 +2110,20 @@ trait Glue extends Service {
     params: SearchTablesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SearchTablesResponse, Unit]
   ): Request[SearchTablesResponse, AWSError] = js.native
+  
+  /**
+    * Starts a new run of the specified blueprint.
+    */
+  def startBlueprintRun(): Request[StartBlueprintRunResponse, AWSError] = js.native
+  def startBlueprintRun(callback: js.Function2[/* err */ AWSError, /* data */ StartBlueprintRunResponse, Unit]): Request[StartBlueprintRunResponse, AWSError] = js.native
+  /**
+    * Starts a new run of the specified blueprint.
+    */
+  def startBlueprintRun(params: StartBlueprintRunRequest): Request[StartBlueprintRunResponse, AWSError] = js.native
+  def startBlueprintRun(
+    params: StartBlueprintRunRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartBlueprintRunResponse, Unit]
+  ): Request[StartBlueprintRunResponse, AWSError] = js.native
   
   /**
     * Starts a crawl using the specified crawler, regardless of what is scheduled. If the crawler is already running, returns a CrawlerRunningException.
@@ -1786,12 +2168,12 @@ trait Glue extends Service {
   ): Request[StartExportLabelsTaskRunResponse, AWSError] = js.native
   
   /**
-    * Enables you to provide additional labels (examples of truth) to be used to teach the machine learning transform and improve its quality. This API operation is generally used as part of the active learning workflow that starts with the StartMLLabelingSetGenerationTaskRun call and that ultimately results in improving the quality of your machine learning transform.  After the StartMLLabelingSetGenerationTaskRun finishes, AWS Glue machine learning will have generated a series of questions for humans to answer. (Answering these questions is often called 'labeling' in the machine learning workflows). In the case of the FindMatches transform, these questions are of the form, “What is the correct way to group these rows together into groups composed entirely of matching records?” After the labeling process is finished, users upload their answers/labels with a call to StartImportLabelsTaskRun. After StartImportLabelsTaskRun finishes, all future runs of the machine learning transform use the new and improved labels and perform a higher-quality transformation. By default, StartMLLabelingSetGenerationTaskRun continually learns from and combines all labels that you upload unless you set Replace to true. If you set Replace to true, StartImportLabelsTaskRun deletes and forgets all previously uploaded labels and learns only from the exact set that you upload. Replacing labels can be helpful if you realize that you previously uploaded incorrect labels, and you believe that they are having a negative effect on your transform quality. You can check on the status of your task run by calling the GetMLTaskRun operation. 
+    * Enables you to provide additional labels (examples of truth) to be used to teach the machine learning transform and improve its quality. This API operation is generally used as part of the active learning workflow that starts with the StartMLLabelingSetGenerationTaskRun call and that ultimately results in improving the quality of your machine learning transform.  After the StartMLLabelingSetGenerationTaskRun finishes, Glue machine learning will have generated a series of questions for humans to answer. (Answering these questions is often called 'labeling' in the machine learning workflows). In the case of the FindMatches transform, these questions are of the form, “What is the correct way to group these rows together into groups composed entirely of matching records?” After the labeling process is finished, users upload their answers/labels with a call to StartImportLabelsTaskRun. After StartImportLabelsTaskRun finishes, all future runs of the machine learning transform use the new and improved labels and perform a higher-quality transformation. By default, StartMLLabelingSetGenerationTaskRun continually learns from and combines all labels that you upload unless you set Replace to true. If you set Replace to true, StartImportLabelsTaskRun deletes and forgets all previously uploaded labels and learns only from the exact set that you upload. Replacing labels can be helpful if you realize that you previously uploaded incorrect labels, and you believe that they are having a negative effect on your transform quality. You can check on the status of your task run by calling the GetMLTaskRun operation. 
     */
   def startImportLabelsTaskRun(): Request[StartImportLabelsTaskRunResponse, AWSError] = js.native
   def startImportLabelsTaskRun(callback: js.Function2[/* err */ AWSError, /* data */ StartImportLabelsTaskRunResponse, Unit]): Request[StartImportLabelsTaskRunResponse, AWSError] = js.native
   /**
-    * Enables you to provide additional labels (examples of truth) to be used to teach the machine learning transform and improve its quality. This API operation is generally used as part of the active learning workflow that starts with the StartMLLabelingSetGenerationTaskRun call and that ultimately results in improving the quality of your machine learning transform.  After the StartMLLabelingSetGenerationTaskRun finishes, AWS Glue machine learning will have generated a series of questions for humans to answer. (Answering these questions is often called 'labeling' in the machine learning workflows). In the case of the FindMatches transform, these questions are of the form, “What is the correct way to group these rows together into groups composed entirely of matching records?” After the labeling process is finished, users upload their answers/labels with a call to StartImportLabelsTaskRun. After StartImportLabelsTaskRun finishes, all future runs of the machine learning transform use the new and improved labels and perform a higher-quality transformation. By default, StartMLLabelingSetGenerationTaskRun continually learns from and combines all labels that you upload unless you set Replace to true. If you set Replace to true, StartImportLabelsTaskRun deletes and forgets all previously uploaded labels and learns only from the exact set that you upload. Replacing labels can be helpful if you realize that you previously uploaded incorrect labels, and you believe that they are having a negative effect on your transform quality. You can check on the status of your task run by calling the GetMLTaskRun operation. 
+    * Enables you to provide additional labels (examples of truth) to be used to teach the machine learning transform and improve its quality. This API operation is generally used as part of the active learning workflow that starts with the StartMLLabelingSetGenerationTaskRun call and that ultimately results in improving the quality of your machine learning transform.  After the StartMLLabelingSetGenerationTaskRun finishes, Glue machine learning will have generated a series of questions for humans to answer. (Answering these questions is often called 'labeling' in the machine learning workflows). In the case of the FindMatches transform, these questions are of the form, “What is the correct way to group these rows together into groups composed entirely of matching records?” After the labeling process is finished, users upload their answers/labels with a call to StartImportLabelsTaskRun. After StartImportLabelsTaskRun finishes, all future runs of the machine learning transform use the new and improved labels and perform a higher-quality transformation. By default, StartMLLabelingSetGenerationTaskRun continually learns from and combines all labels that you upload unless you set Replace to true. If you set Replace to true, StartImportLabelsTaskRun deletes and forgets all previously uploaded labels and learns only from the exact set that you upload. Replacing labels can be helpful if you realize that you previously uploaded incorrect labels, and you believe that they are having a negative effect on your transform quality. You can check on the status of your task run by calling the GetMLTaskRun operation. 
     */
   def startImportLabelsTaskRun(params: StartImportLabelsTaskRunRequest): Request[StartImportLabelsTaskRunResponse, AWSError] = js.native
   def startImportLabelsTaskRun(
@@ -1814,12 +2196,12 @@ trait Glue extends Service {
   ): Request[StartJobRunResponse, AWSError] = js.native
   
   /**
-    * Starts a task to estimate the quality of the transform.  When you provide label sets as examples of truth, AWS Glue machine learning uses some of those examples to learn from them. The rest of the labels are used as a test to estimate quality. Returns a unique identifier for the run. You can call GetMLTaskRun to get more information about the stats of the EvaluationTaskRun.
+    * Starts a task to estimate the quality of the transform.  When you provide label sets as examples of truth, Glue machine learning uses some of those examples to learn from them. The rest of the labels are used as a test to estimate quality. Returns a unique identifier for the run. You can call GetMLTaskRun to get more information about the stats of the EvaluationTaskRun.
     */
   def startMLEvaluationTaskRun(): Request[StartMLEvaluationTaskRunResponse, AWSError] = js.native
   def startMLEvaluationTaskRun(callback: js.Function2[/* err */ AWSError, /* data */ StartMLEvaluationTaskRunResponse, Unit]): Request[StartMLEvaluationTaskRunResponse, AWSError] = js.native
   /**
-    * Starts a task to estimate the quality of the transform.  When you provide label sets as examples of truth, AWS Glue machine learning uses some of those examples to learn from them. The rest of the labels are used as a test to estimate quality. Returns a unique identifier for the run. You can call GetMLTaskRun to get more information about the stats of the EvaluationTaskRun.
+    * Starts a task to estimate the quality of the transform.  When you provide label sets as examples of truth, Glue machine learning uses some of those examples to learn from them. The rest of the labels are used as a test to estimate quality. Returns a unique identifier for the run. You can call GetMLTaskRun to get more information about the stats of the EvaluationTaskRun.
     */
   def startMLEvaluationTaskRun(params: StartMLEvaluationTaskRunRequest): Request[StartMLEvaluationTaskRunResponse, AWSError] = js.native
   def startMLEvaluationTaskRun(
@@ -1828,14 +2210,14 @@ trait Glue extends Service {
   ): Request[StartMLEvaluationTaskRunResponse, AWSError] = js.native
   
   /**
-    * Starts the active learning workflow for your machine learning transform to improve the transform's quality by generating label sets and adding labels. When the StartMLLabelingSetGenerationTaskRun finishes, AWS Glue will have generated a "labeling set" or a set of questions for humans to answer. In the case of the FindMatches transform, these questions are of the form, “What is the correct way to group these rows together into groups composed entirely of matching records?”  After the labeling process is finished, you can upload your labels with a call to StartImportLabelsTaskRun. After StartImportLabelsTaskRun finishes, all future runs of the machine learning transform will use the new and improved labels and perform a higher-quality transformation.
+    * Starts the active learning workflow for your machine learning transform to improve the transform's quality by generating label sets and adding labels. When the StartMLLabelingSetGenerationTaskRun finishes, Glue will have generated a "labeling set" or a set of questions for humans to answer. In the case of the FindMatches transform, these questions are of the form, “What is the correct way to group these rows together into groups composed entirely of matching records?”  After the labeling process is finished, you can upload your labels with a call to StartImportLabelsTaskRun. After StartImportLabelsTaskRun finishes, all future runs of the machine learning transform will use the new and improved labels and perform a higher-quality transformation.
     */
   def startMLLabelingSetGenerationTaskRun(): Request[StartMLLabelingSetGenerationTaskRunResponse, AWSError] = js.native
   def startMLLabelingSetGenerationTaskRun(
     callback: js.Function2[/* err */ AWSError, /* data */ StartMLLabelingSetGenerationTaskRunResponse, Unit]
   ): Request[StartMLLabelingSetGenerationTaskRunResponse, AWSError] = js.native
   /**
-    * Starts the active learning workflow for your machine learning transform to improve the transform's quality by generating label sets and adding labels. When the StartMLLabelingSetGenerationTaskRun finishes, AWS Glue will have generated a "labeling set" or a set of questions for humans to answer. In the case of the FindMatches transform, these questions are of the form, “What is the correct way to group these rows together into groups composed entirely of matching records?”  After the labeling process is finished, you can upload your labels with a call to StartImportLabelsTaskRun. After StartImportLabelsTaskRun finishes, all future runs of the machine learning transform will use the new and improved labels and perform a higher-quality transformation.
+    * Starts the active learning workflow for your machine learning transform to improve the transform's quality by generating label sets and adding labels. When the StartMLLabelingSetGenerationTaskRun finishes, Glue will have generated a "labeling set" or a set of questions for humans to answer. In the case of the FindMatches transform, these questions are of the form, “What is the correct way to group these rows together into groups composed entirely of matching records?”  After the labeling process is finished, you can upload your labels with a call to StartImportLabelsTaskRun. After StartImportLabelsTaskRun finishes, all future runs of the machine learning transform will use the new and improved labels and perform a higher-quality transformation.
     */
   def startMLLabelingSetGenerationTaskRun(params: StartMLLabelingSetGenerationTaskRunRequest): Request[StartMLLabelingSetGenerationTaskRunResponse, AWSError] = js.native
   def startMLLabelingSetGenerationTaskRun(
@@ -1900,6 +2282,20 @@ trait Glue extends Service {
   ): Request[StopCrawlerScheduleResponse, AWSError] = js.native
   
   /**
+    * Stops the session.
+    */
+  def stopSession(): Request[StopSessionResponse, AWSError] = js.native
+  def stopSession(callback: js.Function2[/* err */ AWSError, /* data */ StopSessionResponse, Unit]): Request[StopSessionResponse, AWSError] = js.native
+  /**
+    * Stops the session.
+    */
+  def stopSession(params: StopSessionRequest): Request[StopSessionResponse, AWSError] = js.native
+  def stopSession(
+    params: StopSessionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopSessionResponse, Unit]
+  ): Request[StopSessionResponse, AWSError] = js.native
+  
+  /**
     * Stops a specified trigger.
     */
   def stopTrigger(): Request[StopTriggerResponse, AWSError] = js.native
@@ -1928,12 +2324,12 @@ trait Glue extends Service {
   ): Request[StopWorkflowRunResponse, AWSError] = js.native
   
   /**
-    * Adds tags to a resource. A tag is a label you can assign to an AWS resource. In AWS Glue, you can tag only certain resources. For information about what resources you can tag, see AWS Tags in AWS Glue.
+    * Adds tags to a resource. A tag is a label you can assign to an Amazon Web Services resource. In Glue, you can tag only certain resources. For information about what resources you can tag, see Amazon Web Services Tags in Glue.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Adds tags to a resource. A tag is a label you can assign to an AWS resource. In AWS Glue, you can tag only certain resources. For information about what resources you can tag, see AWS Tags in AWS Glue.
+    * Adds tags to a resource. A tag is a label you can assign to an Amazon Web Services resource. In Glue, you can tag only certain resources. For information about what resources you can tag, see Amazon Web Services Tags in Glue.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -1954,6 +2350,20 @@ trait Glue extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
+  /**
+    * Updates a registered blueprint.
+    */
+  def updateBlueprint(): Request[UpdateBlueprintResponse, AWSError] = js.native
+  def updateBlueprint(callback: js.Function2[/* err */ AWSError, /* data */ UpdateBlueprintResponse, Unit]): Request[UpdateBlueprintResponse, AWSError] = js.native
+  /**
+    * Updates a registered blueprint.
+    */
+  def updateBlueprint(params: UpdateBlueprintRequest): Request[UpdateBlueprintResponse, AWSError] = js.native
+  def updateBlueprint(
+    params: UpdateBlueprintRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateBlueprintResponse, Unit]
+  ): Request[UpdateBlueprintResponse, AWSError] = js.native
   
   /**
     * Modifies an existing classifier (a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field is present).
@@ -2072,12 +2482,12 @@ trait Glue extends Service {
   ): Request[UpdateDevEndpointResponse, AWSError] = js.native
   
   /**
-    * Updates an existing job definition.
+    * Updates an existing job definition. The previous job definition is completely overwritten by this information.
     */
   def updateJob(): Request[UpdateJobResponse, AWSError] = js.native
   def updateJob(callback: js.Function2[/* err */ AWSError, /* data */ UpdateJobResponse, Unit]): Request[UpdateJobResponse, AWSError] = js.native
   /**
-    * Updates an existing job definition.
+    * Updates an existing job definition. The previous job definition is completely overwritten by this information.
     */
   def updateJob(params: UpdateJobRequest): Request[UpdateJobResponse, AWSError] = js.native
   def updateJob(

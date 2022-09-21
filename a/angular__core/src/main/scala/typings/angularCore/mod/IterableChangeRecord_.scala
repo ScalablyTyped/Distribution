@@ -9,7 +9,7 @@ trait IterableChangeRecord_[V]
      with IterableChangeRecord[V]
 object IterableChangeRecord_ {
   
-  inline def apply[V](item: V, trackById: js.Any): IterableChangeRecord_[V] = {
+  inline def apply[V](item: V, trackById: Any): IterableChangeRecord_[V] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], trackById = trackById.asInstanceOf[js.Any], currentIndex = null, previousIndex = null)
     __obj.asInstanceOf[IterableChangeRecord_[V]]
   }

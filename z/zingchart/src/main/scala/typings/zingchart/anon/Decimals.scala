@@ -14,7 +14,7 @@ trait Decimals extends StObject {
   /**
     * To set the font color. 'gray' | '#666699' | ...
     */
-  var `font-color`: js.UndefOr[js.Any] = js.undefined
+  var `font-color`: js.UndefOr[Any] = js.undefined
   
   /**
     * To set the font family. 'Arial' | 'Georgia' | ...
@@ -36,6 +36,16 @@ trait Decimals extends StObject {
     */
   var `font-weight`: js.UndefOr[String] = js.undefined
   
+  var fontColor: js.UndefOr[Any] = js.undefined
+  
+  var fontFamily: js.UndefOr[String] = js.undefined
+  
+  var fontSize: js.UndefOr[Double] = js.undefined
+  
+  var fontStyle: js.UndefOr[String] = js.undefined
+  
+  var fontWeight: js.UndefOr[String] = js.undefined
+  
   /**
     * To set the visibility of the object. true | false
     */
@@ -54,7 +64,7 @@ object Decimals {
     
     inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
     
-    inline def `setFont-color`(value: js.Any): Self = StObject.set(x, "font-color", value.asInstanceOf[js.Any])
+    inline def `setFont-color`(value: Any): Self = StObject.set(x, "font-color", value.asInstanceOf[js.Any])
     
     inline def `setFont-colorUndefined`: Self = StObject.set(x, "font-color", js.undefined)
     
@@ -73,6 +83,26 @@ object Decimals {
     inline def `setFont-weight`(value: String): Self = StObject.set(x, "font-weight", value.asInstanceOf[js.Any])
     
     inline def `setFont-weightUndefined`: Self = StObject.set(x, "font-weight", js.undefined)
+    
+    inline def setFontColor(value: Any): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
+    
+    inline def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
+    
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    
+    inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+    
+    inline def setFontWeight(value: String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

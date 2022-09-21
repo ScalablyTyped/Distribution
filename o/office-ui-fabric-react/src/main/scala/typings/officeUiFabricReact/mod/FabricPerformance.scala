@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "FabricPerformance")
 @js.native
-class FabricPerformance ()
+open class FabricPerformance ()
   extends typings.officeUiFabricReact.utilitiesMod.FabricPerformance
 /* static members */
 object FabricPerformance {
@@ -18,8 +18,8 @@ object FabricPerformance {
   
   @JSImport("office-ui-fabric-react", "FabricPerformance._timeoutId")
   @js.native
-  def _timeoutId: js.Any = js.native
-  inline def _timeoutId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_timeoutId")(x.asInstanceOf[js.Any])
+  def _timeoutId: Any = js.native
+  inline def _timeoutId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_timeoutId")(x.asInstanceOf[js.Any])
   
   /**
     * Measures execution time of the given syncronous function. If the same logic is executed multiple times,

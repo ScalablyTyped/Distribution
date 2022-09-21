@@ -44,9 +44,20 @@ trait WebScene
   /**
     * *This property only applies to local scenes.* Determines whether clipping using the [clippingArea](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#clippingArea) is enabled.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#clippingEnabled)
     */
   var clippingEnabled: Boolean = js.native
+  
+  /**
+    * When a web scene is configured as floor-aware, it has a floorInfo property defined.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#floorInfo)
+    */
+  var floorInfo: MapFloorInfo = js.native
   
   /**
     * The height model info of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html).
@@ -67,7 +78,7 @@ trait WebScene
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#load)
     */
-  def load(): js.Promise[js.Any] = js.native
+  def load(): js.Promise[Any] = js.native
   
   /**
     * Loads all the externally loadable resources associated with the webscene.
@@ -79,6 +90,8 @@ trait WebScene
   /**
     * The Error object returned if an error occurred while loading.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#loadError)
     */
   val loadError: Error = js.native
@@ -86,12 +99,16 @@ trait WebScene
   /**
     * Represents the status of a [load](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#load) operation.
     *
+    * @default not-loaded
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#loadStatus)
     */
   val loadStatus: `not-loaded` | loading | failed | typings.arcgisJsApi.arcgisJsApiStrings.loaded = js.native
   
   /**
     * Indicates whether the instance has loaded.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#loaded)
     */
@@ -144,17 +161,17 @@ trait WebScene
   var thumbnailUrl: String = js.native
   
   /**
-    * Converts an instance of [this class]() to its ArcGIS portal JSON representation.
+    * Converts an instance of this class to its ArcGIS portal JSON representation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#toJSON)
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /**
     * Update properties of the WebScene related to the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
     */
-  def updateFrom(view: SceneView): js.Promise[js.Any] = js.native
-  def updateFrom(view: SceneView, options: WebSceneUpdateFromOptions): js.Promise[js.Any] = js.native
+  def updateFrom(view: SceneView): js.Promise[Any] = js.native
+  def updateFrom(view: SceneView, options: WebSceneUpdateFromOptions): js.Promise[Any] = js.native
 }

@@ -10,5 +10,5 @@ object getWindowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(node: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(node: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

@@ -1,11 +1,10 @@
 package typings.pngjs2
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Writable
 import typings.pngjs2.pngjs2Strings.error
 import typings.pngjs2.pngjs2Strings.metadata
 import typings.pngjs2.pngjs2Strings.parsed
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object mod {
   
   @JSImport("pngjs2", "PNG")
   @js.native
-  class PNG () extends Writable {
+  open class PNG () extends Writable {
     def this(options: PNGOptions) = this()
     
     def bitblt(
@@ -35,7 +34,7 @@ object mod {
     
     def on(event: String, callback: js.Function): this.type = js.native
     @JSName("on")
-    def on_error(event: error, callback: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, callback: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_metadata(event: metadata, callback: js.Function1[/* metadata */ PNGMetadata, Unit]): this.type = js.native
     @JSName("on")
@@ -44,9 +43,9 @@ object mod {
     def pack(): PNG = js.native
     
     def parse(data: String): PNG = js.native
-    def parse(data: String, callback: js.Function2[/* err */ Error, /* data */ Buffer, Unit]): PNG = js.native
+    def parse(data: String, callback: js.Function2[/* err */ js.Error, /* data */ Buffer, Unit]): PNG = js.native
     def parse(data: Buffer): PNG = js.native
-    def parse(data: Buffer, callback: js.Function2[/* err */ Error, /* data */ Buffer, Unit]): PNG = js.native
+    def parse(data: Buffer, callback: js.Function2[/* err */ js.Error, /* data */ Buffer, Unit]): PNG = js.native
     
     var width: Double = js.native
   }
@@ -133,7 +132,7 @@ object mod {
     
     var deflateChunkSize: js.UndefOr[Double] = js.undefined
     
-    var deflateFactory: js.UndefOr[js.Any] = js.undefined
+    var deflateFactory: js.UndefOr[Any] = js.undefined
     
     var deflateLevel: js.UndefOr[Double] = js.undefined
     
@@ -168,7 +167,7 @@ object mod {
       
       inline def setDeflateChunkSizeUndefined: Self = StObject.set(x, "deflateChunkSize", js.undefined)
       
-      inline def setDeflateFactory(value: js.Any): Self = StObject.set(x, "deflateFactory", value.asInstanceOf[js.Any])
+      inline def setDeflateFactory(value: Any): Self = StObject.set(x, "deflateFactory", value.asInstanceOf[js.Any])
       
       inline def setDeflateFactoryUndefined: Self = StObject.set(x, "deflateFactory", js.undefined)
       
@@ -184,7 +183,7 @@ object mod {
       
       inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
-      inline def setFilterTypeVarargs(value: Double*): Self = StObject.set(x, "filterType", js.Array(value :_*))
+      inline def setFilterTypeVarargs(value: Double*): Self = StObject.set(x, "filterType", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

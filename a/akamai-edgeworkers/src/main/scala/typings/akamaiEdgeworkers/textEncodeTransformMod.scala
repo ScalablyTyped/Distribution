@@ -2,9 +2,6 @@ package typings.akamaiEdgeworkers
 
 import typings.akamaiEdgeworkers.streamsMod.ReadableStream
 import typings.akamaiEdgeworkers.streamsMod.WritableStream
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +11,7 @@ object textEncodeTransformMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("text-encode-transform", "TextDecoderStream")
   @js.native
-  class TextDecoderStreamCls ()
+  open class TextDecoderStreamCls ()
     extends StObject
        with TextDecoderStream {
     def this(label: String) = this()
@@ -43,7 +40,7 @@ object textEncodeTransformMod {
       * Returns a readable stream whose chunks are strings resulting from running encoding's decoder on the chunks written to writable.
       */
     /* CompleteClass */
-    override val readable: ReadableStream[js.Any] = js.native
+    override val readable: ReadableStream[Any] = js.native
     /* CompleteClass */
     @JSName("readable")
     override val readable_TextDecoderStream: ReadableStream[String] = js.native
@@ -63,7 +60,7 @@ object textEncodeTransformMod {
       * If the error mode is "fatal" and encoding's decoder returns error, both readable and writable will be errored with a TypeError.
       */
     /* CompleteClass */
-    override val writable: WritableStream[js.Any] = js.native
+    override val writable: WritableStream[Any] = js.native
     /* CompleteClass */
     @JSName("writable")
     override val writable_TextDecoderStream: WritableStream[BufferSource] = js.native
@@ -72,7 +69,7 @@ object textEncodeTransformMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("text-encode-transform", "TextEncoderStream")
   @js.native
-  class TextEncoderStreamCls ()
+  open class TextEncoderStreamCls ()
     extends StObject
        with TextEncoderStream {
     
@@ -86,10 +83,10 @@ object textEncodeTransformMod {
       * Returns a readable stream whose chunks are strings resulting from running encoding's decoder on the chunks written to writable.
       */
     /* CompleteClass */
-    override val readable: ReadableStream[js.Any] = js.native
+    override val readable: ReadableStream[Any] = js.native
     /* CompleteClass */
     @JSName("readable")
-    override val readable_TextEncoderStream: ReadableStream[Uint8Array] = js.native
+    override val readable_TextEncoderStream: ReadableStream[js.typedarray.Uint8Array] = js.native
     
     /**
       * Returns a writable stream which accepts [AllowShared] BufferSource chunks and runs them through encoding's decoder before making them available to readable.
@@ -106,20 +103,20 @@ object textEncodeTransformMod {
       * If the error mode is "fatal" and encoding's decoder returns error, both readable and writable will be errored with a TypeError.
       */
     /* CompleteClass */
-    override val writable: WritableStream[js.Any] = js.native
+    override val writable: WritableStream[Any] = js.native
     /* CompleteClass */
     @JSName("writable")
     override val writable_TextEncoderStream: WritableStream[String] = js.native
   }
   
-  type BufferSource = ArrayBufferView | ArrayBuffer
+  type BufferSource = js.typedarray.ArrayBufferView | js.typedarray.ArrayBuffer
   
   trait GenericTransformStream extends StObject {
     
     /**
       * Returns a readable stream whose chunks are strings resulting from running encoding's decoder on the chunks written to writable.
       */
-    val readable: ReadableStream[js.Any]
+    val readable: ReadableStream[Any]
     
     /**
       * Returns a writable stream which accepts [AllowShared] BufferSource chunks and runs them through encoding's decoder before making them available to readable.
@@ -135,20 +132,20 @@ object textEncodeTransformMod {
       *
       * If the error mode is "fatal" and encoding's decoder returns error, both readable and writable will be errored with a TypeError.
       */
-    val writable: WritableStream[js.Any]
+    val writable: WritableStream[Any]
   }
   object GenericTransformStream {
     
-    inline def apply(readable: ReadableStream[js.Any], writable: WritableStream[js.Any]): GenericTransformStream = {
+    inline def apply(readable: ReadableStream[Any], writable: WritableStream[Any]): GenericTransformStream = {
       val __obj = js.Dynamic.literal(readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericTransformStream]
     }
     
     extension [Self <: GenericTransformStream](x: Self) {
       
-      inline def setReadable(value: ReadableStream[js.Any]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      inline def setReadable(value: ReadableStream[Any]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
-      inline def setWritable(value: WritableStream[js.Any]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+      inline def setWritable(value: WritableStream[Any]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     }
   }
   
@@ -269,21 +266,25 @@ object textEncodeTransformMod {
        with TextEncoderCommon {
     
     @JSName("readable")
-    val readable_TextEncoderStream: ReadableStream[Uint8Array]
+    val readable_TextEncoderStream: ReadableStream[js.typedarray.Uint8Array]
     
     @JSName("writable")
     val writable_TextEncoderStream: WritableStream[String]
   }
   object TextEncoderStream {
     
-    inline def apply(encoding: String, readable: ReadableStream[Uint8Array], writable: WritableStream[String]): TextEncoderStream = {
+    inline def apply(
+      encoding: String,
+      readable: ReadableStream[js.typedarray.Uint8Array],
+      writable: WritableStream[String]
+    ): TextEncoderStream = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextEncoderStream]
     }
     
     extension [Self <: TextEncoderStream](x: Self) {
       
-      inline def setReadable(value: ReadableStream[Uint8Array]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      inline def setReadable(value: ReadableStream[js.typedarray.Uint8Array]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
       inline def setWritable(value: WritableStream[String]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     }

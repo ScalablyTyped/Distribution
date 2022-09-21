@@ -13,13 +13,13 @@ trait HTMLRenderStyle extends StObject {
   
   var renderingPriority: Double
   
-  var textBackgroundColor: js.Any
+  var textBackgroundColor: Any
   
-  var textColor: js.Any
+  var textColor: Any
   
   var textDecoration: String
   
-  var textDecorationColor: js.Any
+  var textDecorationColor: Any
   
   var textEffect: String
   
@@ -33,10 +33,10 @@ object HTMLRenderStyle {
     MSHTMLDotHTMLRenderStyle_typekey: HTMLRenderStyle,
     defaultTextSelection: String,
     renderingPriority: Double,
-    textBackgroundColor: js.Any,
-    textColor: js.Any,
+    textBackgroundColor: Any,
+    textColor: Any,
     textDecoration: String,
-    textDecorationColor: js.Any,
+    textDecorationColor: Any,
     textEffect: String,
     textLineThroughStyle: String,
     textUnderlineStyle: String
@@ -54,13 +54,13 @@ object HTMLRenderStyle {
     
     inline def setRenderingPriority(value: Double): Self = StObject.set(x, "renderingPriority", value.asInstanceOf[js.Any])
     
-    inline def setTextBackgroundColor(value: js.Any): Self = StObject.set(x, "textBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setTextBackgroundColor(value: Any): Self = StObject.set(x, "textBackgroundColor", value.asInstanceOf[js.Any])
     
-    inline def setTextColor(value: js.Any): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: Any): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
     inline def setTextDecoration(value: String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     
-    inline def setTextDecorationColor(value: js.Any): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
+    inline def setTextDecorationColor(value: Any): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
     
     inline def setTextEffect(value: String): Self = StObject.set(x, "textEffect", value.asInstanceOf[js.Any])
     

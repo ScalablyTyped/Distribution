@@ -253,6 +253,7 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLDListElement
 import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
+import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -272,11 +273,13 @@ import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
 import typings.std.HTMLMetaElement
+import typings.std.HTMLMeterElement
 import typings.std.HTMLModElement
 import typings.std.HTMLOListElement
 import typings.std.HTMLObjectElement
 import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
+import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
 import typings.std.HTMLParamElement
 import typings.std.HTMLPreElement
@@ -296,6 +299,7 @@ import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTemplateElement
 import typings.std.HTMLTextAreaElement
+import typings.std.HTMLTimeElement
 import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
@@ -364,7 +368,7 @@ object mod extends Shortcut {
   
   @JSImport("@emotion/styled-base", JSImport.Default)
   @js.native
-  val default: CreateStyled[js.Any] = js.native
+  val default: CreateStyled[Any] = js.native
   
   @js.native
   trait CreateStyled[Theme /* <: js.Object */] extends StObject {
@@ -719,8 +723,8 @@ object mod extends Shortcut {
     def apply[ExtraProps](tag: wbr, options: StyledOptions): CreateStyledComponentIntrinsic[wbr, ExtraProps, Theme] = js.native
     def apply[ExtraProps](tag: webview): CreateStyledComponentIntrinsic[webview, ExtraProps, Theme] = js.native
     def apply[ExtraProps](tag: webview, options: StyledOptions): CreateStyledComponentIntrinsic[webview, ExtraProps, Theme] = js.native
-    def apply[Tag /* <: ComponentType[js.Any] */, ExtraProps](tag: Tag): CreateStyledComponentExtrinsic[Tag, ExtraProps, Theme] = js.native
-    def apply[Tag /* <: ComponentType[js.Any] */, ExtraProps](tag: Tag, options: StyledOptions): CreateStyledComponentExtrinsic[Tag, ExtraProps, Theme] = js.native
+    def apply[Tag /* <: ComponentType[Any] */, ExtraProps](tag: Tag): CreateStyledComponentExtrinsic[Tag, ExtraProps, Theme] = js.native
+    def apply[Tag /* <: ComponentType[Any] */, ExtraProps](tag: Tag, options: StyledOptions): CreateStyledComponentExtrinsic[Tag, ExtraProps, Theme] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -744,15 +748,15 @@ object mod extends Shortcut {
   @js.native
   trait CreateStyledComponentBaseThemeless[InnerProps, ExtraProps]
     extends StObject
-       with CreateStyledComponentBase[InnerProps, ExtraProps, js.Any] {
+       with CreateStyledComponentBase[InnerProps, ExtraProps, Any] {
     
     def apply[StyleProps /* <: Omit[Overwrapped[InnerProps, StyleProps], ReactClassPropKeys] */, Theme /* <: js.Object */](styles: (Interpolation[WithTheme[StyleProps, Theme]])*): StyledComponent[InnerProps, StyleProps, Theme] = js.native
     def apply[StyleProps /* <: Omit[Overwrapped[InnerProps, StyleProps], ReactClassPropKeys] */, Theme /* <: js.Object */](template: TemplateStringsArray, styles: (Interpolation[WithTheme[StyleProps, Theme]])*): StyledComponent[InnerProps, StyleProps, Theme] = js.native
   }
   
-  type CreateStyledComponentExtrinsic[Tag /* <: ComponentType[js.Any] */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[PropsOf[Tag], ExtraProps, Theme]
+  type CreateStyledComponentExtrinsic[Tag /* <: ComponentType[Any] */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[PropsOf[Tag], ExtraProps, Theme]
   
-  type CreateStyledComponentIntrinsic[Tag /* <: /* keyof @emotion/styled-base.@emotion/styled-base.JSXInEl */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[
+  type CreateStyledComponentIntrinsic[Tag /* <: /* keyof @emotion/styled-base.@emotion/styled-base.JSXInEl */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ Any */, ExtraProps, Theme /* <: js.Object */] = CreateStyledComponentBase[
     /* import warning: importer.ImportType#apply Failed type conversion: @emotion/styled-base.@emotion/styled-base.JSXInEl[Tag] */ js.Any, 
     ExtraProps, 
     Theme
@@ -772,7 +776,7 @@ object mod extends Shortcut {
        with FunctionComponent[InnerProps & (Omit[StyleProps, theme]) & `0`[Theme]]
        with ComponentSelector {
     
-    def withComponent[Tag /* <: ComponentType[js.Any] */](tag: Tag): StyledComponent[PropsOf[Tag], StyleProps, Theme] = js.native
+    def withComponent[Tag /* <: ComponentType[Any] */](tag: Tag): StyledComponent[PropsOf[Tag], StyleProps, Theme] = js.native
     /**
       * @desc this method is type-unsafe
       */
@@ -824,7 +828,7 @@ object mod extends Shortcut {
     def withComponent_big(tag: big): StyledComponent[DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
     @JSName("withComponent")
     def withComponent_blockquote(tag: blockquote): StyledComponent[
-        DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement], 
+        DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement], 
         StyleProps, 
         Theme
       ] = js.native
@@ -887,12 +891,16 @@ object mod extends Shortcut {
     @JSName("withComponent")
     def withComponent_defs(tag: defs): StyledComponent[SVGProps[SVGDefsElement], StyleProps, Theme] = js.native
     @JSName("withComponent")
-    def withComponent_del(tag: del): StyledComponent[DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+    def withComponent_del(tag: del): StyledComponent[
+        DetailedHTMLProps[DelHTMLAttributes[HTMLModElement], HTMLModElement], 
+        StyleProps, 
+        Theme
+      ] = js.native
     @JSName("withComponent")
     def withComponent_desc(tag: desc): StyledComponent[SVGProps[SVGDescElement], StyleProps, Theme] = js.native
     @JSName("withComponent")
     def withComponent_details(tag: details): StyledComponent[
-        DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement], 
+        DetailedHTMLProps[DetailsHTMLAttributes[HTMLDetailsElement], HTMLDetailsElement], 
         StyleProps, 
         Theme
       ] = js.native
@@ -1135,7 +1143,11 @@ object mod extends Shortcut {
     @JSName("withComponent")
     def withComponent_metadata(tag: metadata): StyledComponent[SVGProps[SVGMetadataElement], StyleProps, Theme] = js.native
     @JSName("withComponent")
-    def withComponent_meter(tag: meter): StyledComponent[DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+    def withComponent_meter(tag: meter): StyledComponent[
+        DetailedHTMLProps[MeterHTMLAttributes[HTMLMeterElement], HTMLMeterElement], 
+        StyleProps, 
+        Theme
+      ] = js.native
     @JSName("withComponent")
     def withComponent_mpath(tag: mpath): StyledComponent[SVGProps[SVGElement], StyleProps, Theme] = js.native
     @JSName("withComponent")
@@ -1169,7 +1181,11 @@ object mod extends Shortcut {
         Theme
       ] = js.native
     @JSName("withComponent")
-    def withComponent_output(tag: output): StyledComponent[DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+    def withComponent_output(tag: output): StyledComponent[
+        DetailedHTMLProps[OutputHTMLAttributes[HTMLOutputElement], HTMLOutputElement], 
+        StyleProps, 
+        Theme
+      ] = js.native
     @JSName("withComponent")
     def withComponent_p(tag: p): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
@@ -1329,7 +1345,11 @@ object mod extends Shortcut {
         Theme
       ] = js.native
     @JSName("withComponent")
-    def withComponent_time(tag: time): StyledComponent[DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement], StyleProps, Theme] = js.native
+    def withComponent_time(tag: time): StyledComponent[
+        DetailedHTMLProps[TimeHTMLAttributes[HTMLTimeElement], HTMLTimeElement], 
+        StyleProps, 
+        Theme
+      ] = js.native
     @JSName("withComponent")
     def withComponent_title(tag: title): StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement], 
@@ -1413,8 +1433,8 @@ object mod extends Shortcut {
   
   type WithTheme[P, T] = (P & ThemeT[T]) | (P & ThemeExclude)
   
-  type _To = CreateStyled[js.Any]
+  type _To = CreateStyled[Any]
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: CreateStyled[js.Any] = default
+  override def _to: CreateStyled[Any] = default
 }

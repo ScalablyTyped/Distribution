@@ -163,10 +163,6 @@ object amapJsApiStrings {
   inline def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
   
   @js.native
-  sealed trait applet extends StObject
-  inline def applet: applet = "applet".asInstanceOf[applet]
-  
-  @js.native
   sealed trait area extends StObject
   inline def area: area = "area".asInstanceOf[area]
   
@@ -201,16 +197,16 @@ object amapJsApiStrings {
   inline def base: base = "base".asInstanceOf[base]
   
   @js.native
-  sealed trait basefont extends StObject
-  inline def basefont: basefont = "basefont".asInstanceOf[basefont]
-  
-  @js.native
   sealed trait bdi extends StObject
   inline def bdi: bdi = "bdi".asInstanceOf[bdi]
   
   @js.native
   sealed trait bdo extends StObject
   inline def bdo: bdo = "bdo".asInstanceOf[bdo]
+  
+  @js.native
+  sealed trait beforeinput extends StObject
+  inline def beforeinput: beforeinput = "beforeinput".asInstanceOf[beforeinput]
   
   @js.native
   sealed trait bevel
@@ -299,10 +295,6 @@ object amapJsApiStrings {
   inline def c: c = "c".asInstanceOf[c]
   
   @js.native
-  sealed trait cancel extends StObject
-  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
-  
-  @js.native
   sealed trait canplay extends StObject
   inline def canplay: canplay = "canplay".asInstanceOf[canplay]
   
@@ -368,6 +360,18 @@ object amapJsApiStrings {
   inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
+  sealed trait compositionend extends StObject
+  inline def compositionend: compositionend = "compositionend".asInstanceOf[compositionend]
+  
+  @js.native
+  sealed trait compositionstart extends StObject
+  inline def compositionstart: compositionstart = "compositionstart".asInstanceOf[compositionstart]
+  
+  @js.native
+  sealed trait compositionupdate extends StObject
+  inline def compositionupdate: compositionupdate = "compositionupdate".asInstanceOf[compositionupdate]
+  
+  @js.native
   sealed trait contextmenu extends StObject
   inline def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   
@@ -426,10 +430,6 @@ object amapJsApiStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait dir extends StObject
-  inline def dir: dir = "dir".asInstanceOf[dir]
-  
-  @js.native
   sealed trait div extends StObject
   inline def div: div = "div".asInstanceOf[div]
   
@@ -448,10 +448,6 @@ object amapJsApiStrings {
   @js.native
   sealed trait dragenter extends StObject
   inline def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
-  
-  @js.native
-  sealed trait dragexit extends StObject
-  inline def dragexit: dragexit = "dragexit".asInstanceOf[dragexit]
   
   @js.native
   sealed trait dragging extends StObject
@@ -538,10 +534,6 @@ object amapJsApiStrings {
   inline def focusout: focusout = "focusout".asInstanceOf[focusout]
   
   @js.native
-  sealed trait font extends StObject
-  inline def font: font = "font".asInstanceOf[font]
-  
-  @js.native
   sealed trait footer extends StObject
   inline def footer: footer = "footer".asInstanceOf[footer]
   
@@ -550,12 +542,8 @@ object amapJsApiStrings {
   inline def form: form = "form".asInstanceOf[form]
   
   @js.native
-  sealed trait frame extends StObject
-  inline def frame: frame = "frame".asInstanceOf[frame]
-  
-  @js.native
-  sealed trait frameset extends StObject
-  inline def frameset: frameset = "frameset".asInstanceOf[frameset]
+  sealed trait formdata extends StObject
+  inline def formdata: formdata = "formdata".asInstanceOf[formdata]
   
   @js.native
   sealed trait fullscreenchange extends StObject
@@ -762,10 +750,6 @@ object amapJsApiStrings {
   inline def marker: marker = "marker".asInstanceOf[marker]
   
   @js.native
-  sealed trait marquee extends StObject
-  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
-  
-  @js.native
   sealed trait menu extends StObject
   inline def menu: menu = "menu".asInstanceOf[menu]
   
@@ -906,10 +890,6 @@ object amapJsApiStrings {
   @js.native
   sealed trait p extends StObject
   inline def p: p = "p".asInstanceOf[p]
-  
-  @js.native
-  sealed trait param extends StObject
-  inline def param: param = "param".asInstanceOf[param]
   
   @js.native
   sealed trait paste extends StObject
@@ -1121,6 +1101,10 @@ object amapJsApiStrings {
   @js.native
   sealed trait slot extends StObject
   inline def slot: slot = "slot".asInstanceOf[slot]
+  
+  @js.native
+  sealed trait slotchange extends StObject
+  inline def slotchange: slotchange = "slotchange".asInstanceOf[slotchange]
   
   @js.native
   sealed trait small extends StObject
@@ -1339,6 +1323,22 @@ object amapJsApiStrings {
   @js.native
   sealed trait wbr extends StObject
   inline def wbr: wbr = "wbr".asInstanceOf[wbr]
+  
+  @js.native
+  sealed trait webkitanimationend extends StObject
+  inline def webkitanimationend: webkitanimationend = "webkitanimationend".asInstanceOf[webkitanimationend]
+  
+  @js.native
+  sealed trait webkitanimationiteration extends StObject
+  inline def webkitanimationiteration: webkitanimationiteration = "webkitanimationiteration".asInstanceOf[webkitanimationiteration]
+  
+  @js.native
+  sealed trait webkitanimationstart extends StObject
+  inline def webkitanimationstart: webkitanimationstart = "webkitanimationstart".asInstanceOf[webkitanimationstart]
+  
+  @js.native
+  sealed trait webkittransitionend extends StObject
+  inline def webkittransitionend: webkittransitionend = "webkittransitionend".asInstanceOf[webkittransitionend]
   
   @js.native
   sealed trait wheel extends StObject

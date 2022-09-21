@@ -29,6 +29,6 @@ object ListProductSetsResponse {
     
     inline def setProductSetsUndefined: Self = StObject.set(x, "productSets", js.undefined)
     
-    inline def setProductSetsVarargs(value: ProductSet*): Self = StObject.set(x, "productSets", js.Array(value :_*))
+    inline def setProductSetsVarargs(value: ProductSet*): Self = StObject.set(x, "productSets", js.Array(value*))
   }
 }

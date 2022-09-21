@@ -1,13 +1,12 @@
 package typings.msRest.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest", "BasicAuthenticationCredentials")
 @js.native
-class BasicAuthenticationCredentials protected ()
+open class BasicAuthenticationCredentials protected ()
   extends StObject
      with ServiceClientCredentials {
   def this(userName: String, password: String) = this()
@@ -20,5 +19,5 @@ class BasicAuthenticationCredentials protected ()
     * @param {function(error)}  callback  The callback function.
     */
   /* CompleteClass */
-  override def signRequest(webResource: WebResource, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  override def signRequest(webResource: WebResource, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
 }

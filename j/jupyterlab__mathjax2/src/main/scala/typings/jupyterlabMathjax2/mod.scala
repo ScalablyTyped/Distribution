@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("@jupyterlab/mathjax2", "MathJaxTypesetter")
   @js.native
-  class MathJaxTypesetter protected ()
+  open class MathJaxTypesetter protected ()
     extends StObject
        with ILatexTypesetter {
     /**
@@ -19,23 +19,23 @@ object mod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _config: js.Any = js.native
+    /* private */ var _config: Any = js.native
     
     /**
       * Initialize MathJax.
       */
-    /* private */ var _init: js.Any = js.native
+    /* private */ var _init: Any = js.native
     
-    /* private */ var _initPromise: js.Any = js.native
+    /* private */ var _initPromise: Any = js.native
     
-    /* private */ var _initialized: js.Any = js.native
+    /* private */ var _initialized: Any = js.native
     
     /**
       * Handle MathJax loading.
       */
-    /* private */ var _onLoad: js.Any = js.native
+    /* private */ var _onLoad: Any = js.native
     
-    /* private */ var _url: js.Any = js.native
+    /* private */ var _url: Any = js.native
     
     /**
       * Typeset a DOM element.

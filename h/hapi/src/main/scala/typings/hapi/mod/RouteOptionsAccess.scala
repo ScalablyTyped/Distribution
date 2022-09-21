@@ -87,7 +87,7 @@ object RouteOptionsAccess {
     
     inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
-    inline def setAccessVarargs(value: RouteOptionsAccessObject*): Self = StObject.set(x, "access", js.Array(value :_*))
+    inline def setAccessVarargs(value: RouteOptionsAccessObject*): Self = StObject.set(x, "access", js.Array(value*))
     
     inline def setEntity(value: RouteOptionsAccessEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
@@ -105,13 +105,13 @@ object RouteOptionsAccess {
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
     
     inline def setStrategies(value: js.Array[String]): Self = StObject.set(x, "strategies", value.asInstanceOf[js.Any])
     
     inline def setStrategiesUndefined: Self = StObject.set(x, "strategies", js.undefined)
     
-    inline def setStrategiesVarargs(value: String*): Self = StObject.set(x, "strategies", js.Array(value :_*))
+    inline def setStrategiesVarargs(value: String*): Self = StObject.set(x, "strategies", js.Array(value*))
     
     inline def setStrategy(value: String): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     

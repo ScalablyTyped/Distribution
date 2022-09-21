@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "WebXRPlaneDetector")
 @js.native
-class WebXRPlaneDetector protected ()
+open class WebXRPlaneDetector protected ()
   extends typings.babylonjs.indexMod.WebXRPlaneDetector {
   /**
     * construct a new Plane Detector

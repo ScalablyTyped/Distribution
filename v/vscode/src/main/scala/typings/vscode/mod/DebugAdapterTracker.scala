@@ -1,6 +1,5 @@
 package typings.vscode.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DebugAdapterTracker extends StObject {
   
   /**
-    * The debug adapter has sent a Debug Adapter Protocol message to VS Code.
+    * The debug adapter has sent a Debug Adapter Protocol message to the editor.
     */
-  var onDidSendMessage: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.undefined
+  var onDidSendMessage: js.UndefOr[js.Function1[/* message */ Any, Unit]] = js.undefined
   
   /**
     * An error with the debug adapter has occurred.
     */
-  var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
   
   /**
     * The debug adapter has exited with the given exit code or signal.
@@ -25,9 +24,9 @@ trait DebugAdapterTracker extends StObject {
   ] = js.undefined
   
   /**
-    * The debug adapter is about to receive a Debug Adapter Protocol message from VS Code.
+    * The debug adapter is about to receive a Debug Adapter Protocol message from the editor.
     */
-  var onWillReceiveMessage: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.undefined
+  var onWillReceiveMessage: js.UndefOr[js.Function1[/* message */ Any, Unit]] = js.undefined
   
   /**
     * A session with the debug adapter is about to be started.
@@ -48,11 +47,11 @@ object DebugAdapterTracker {
   
   extension [Self <: DebugAdapterTracker](x: Self) {
     
-    inline def setOnDidSendMessage(value: /* message */ js.Any => Unit): Self = StObject.set(x, "onDidSendMessage", js.Any.fromFunction1(value))
+    inline def setOnDidSendMessage(value: /* message */ Any => Unit): Self = StObject.set(x, "onDidSendMessage", js.Any.fromFunction1(value))
     
     inline def setOnDidSendMessageUndefined: Self = StObject.set(x, "onDidSendMessage", js.undefined)
     
-    inline def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
@@ -60,7 +59,7 @@ object DebugAdapterTracker {
     
     inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
-    inline def setOnWillReceiveMessage(value: /* message */ js.Any => Unit): Self = StObject.set(x, "onWillReceiveMessage", js.Any.fromFunction1(value))
+    inline def setOnWillReceiveMessage(value: /* message */ Any => Unit): Self = StObject.set(x, "onWillReceiveMessage", js.Any.fromFunction1(value))
     
     inline def setOnWillReceiveMessageUndefined: Self = StObject.set(x, "onWillReceiveMessage", js.undefined)
     

@@ -9,7 +9,7 @@ object mapEventMod {
   
   @JSImport("ol/MapEvent", JSImport.Default)
   @js.native
-  class default protected () extends MapEvent {
+  open class default protected () extends MapEvent {
     def this(`type`: String, map: typings.ol.pluggableMapMod.default) = this()
     def this(`type`: String, map: typings.ol.pluggableMapMod.default, opt_frameState: FrameState) = this()
   }

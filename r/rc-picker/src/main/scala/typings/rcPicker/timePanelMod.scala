@@ -15,11 +15,20 @@ object timePanelMod {
   
   inline def default[DateType](props: TimePanelProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  trait SharedTimeProps[DateType]
-    extends StObject
-       with DisabledTimes {
+  trait SharedTimeProps[DateType] extends StObject {
     
     var defaultValue: js.UndefOr[DateType] = js.undefined
+    
+    /** @deprecated Please use `disabledTime` instead. */
+    var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.undefined
+    
+    /** @deprecated Please use `disabledTime` instead. */
+    var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.undefined
+    
+    /** @deprecated Please use `disabledTime` instead. */
+    var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.undefined
+    
+    var disabledTime: js.UndefOr[js.Function1[/* date */ DateType, DisabledTimes]] = js.undefined
     
     var format: js.UndefOr[String] = js.undefined
     
@@ -53,6 +62,22 @@ object timePanelMod {
       inline def setDefaultValue(value: DateType): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      
+      inline def setDisabledHours(value: () => js.Array[Double]): Self = StObject.set(x, "disabledHours", js.Any.fromFunction0(value))
+      
+      inline def setDisabledHoursUndefined: Self = StObject.set(x, "disabledHours", js.undefined)
+      
+      inline def setDisabledMinutes(value: /* hour */ Double => js.Array[Double]): Self = StObject.set(x, "disabledMinutes", js.Any.fromFunction1(value))
+      
+      inline def setDisabledMinutesUndefined: Self = StObject.set(x, "disabledMinutes", js.undefined)
+      
+      inline def setDisabledSeconds(value: (/* hour */ Double, /* minute */ Double) => js.Array[Double]): Self = StObject.set(x, "disabledSeconds", js.Any.fromFunction2(value))
+      
+      inline def setDisabledSecondsUndefined: Self = StObject.set(x, "disabledSeconds", js.undefined)
+      
+      inline def setDisabledTime(value: /* date */ DateType => DisabledTimes): Self = StObject.set(x, "disabledTime", js.Any.fromFunction1(value))
+      
+      inline def setDisabledTimeUndefined: Self = StObject.set(x, "disabledTime", js.undefined)
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for get-uri
 
-Typings are for version 3.0.2
+Typings are for version 4.0.0
 
 ## Library description:
 Returns a `stream.Readable` from a URI string
@@ -10,10 +10,10 @@ Returns a `stream.Readable` from a URI string
 | ------------------ | :-------------: |
 | Full name          | get-uri |
 | Keywords           | uri, read, readstream, stream, get, http, https, ftp, file, data, protocol, url |
-| # releases         | 6 |
-| # dependents       | 33 |
-| # downloads        | 82680398 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8087666666666668E7 |
+| # stars            | 50.0 |
 
 ## Links
 - [Homepage](https://github.com/TooTallNate/node-get-uri#readme)

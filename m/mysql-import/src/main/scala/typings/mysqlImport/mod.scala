@@ -48,7 +48,7 @@ object mod {
     /**
       * Function to handle errors. The function will receive the Error. If not provided the error will be thrown.
       */
-    var onerror: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.undefined
+    var onerror: js.UndefOr[js.Function1[/* error */ Any, Unit]] = js.undefined
     
     /**
       * The password for the user.
@@ -78,7 +78,7 @@ object mod {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      inline def setOnerror(value: /* error */ js.Any => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+      inline def setOnerror(value: /* error */ Any => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
       
       inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       

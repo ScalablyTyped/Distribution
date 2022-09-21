@@ -29,12 +29,12 @@ object AlgorithmStatusDetails {
     
     inline def setImageScanStatusesUndefined: Self = StObject.set(x, "ImageScanStatuses", js.undefined)
     
-    inline def setImageScanStatusesVarargs(value: AlgorithmStatusItem*): Self = StObject.set(x, "ImageScanStatuses", js.Array(value :_*))
+    inline def setImageScanStatusesVarargs(value: AlgorithmStatusItem*): Self = StObject.set(x, "ImageScanStatuses", js.Array(value*))
     
     inline def setValidationStatuses(value: AlgorithmStatusItemList): Self = StObject.set(x, "ValidationStatuses", value.asInstanceOf[js.Any])
     
     inline def setValidationStatusesUndefined: Self = StObject.set(x, "ValidationStatuses", js.undefined)
     
-    inline def setValidationStatusesVarargs(value: AlgorithmStatusItem*): Self = StObject.set(x, "ValidationStatuses", js.Array(value :_*))
+    inline def setValidationStatusesVarargs(value: AlgorithmStatusItem*): Self = StObject.set(x, "ValidationStatuses", js.Array(value*))
   }
 }

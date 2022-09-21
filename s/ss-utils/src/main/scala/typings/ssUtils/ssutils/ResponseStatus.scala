@@ -27,7 +27,7 @@ object ResponseStatus {
     
     inline def setErrors(value: js.Array[ResponseError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: ResponseError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ResponseError*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

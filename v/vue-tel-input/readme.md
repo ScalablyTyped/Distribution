@@ -10,15 +10,15 @@ International Telephone Input with Vue
 | ------------------ | :-------------: |
 | Full name          | vue-tel-input |
 | Keywords           | vue, telephone, phone, vue-tel-input, phone input, telephone input, input, international phone |
-| # releases         | 61 |
-| # dependents       | 21 |
-| # downloads        | 1238970 |
-| # stars            | 0 |
+| # releases         | 41 |
+| # dependents       | 0.0 |
+| # downloads        | 252339.33333333334 |
+| # stars            | 554.0 |
 
 ## Links
-- [Homepage](https://educationlink.github.io/vue-tel-input/)
-- [Bugs](https://github.com/EducationLink/vue-tel-input/issues)
-- [Repository](https://github.com/EducationLink/vue-tel-input)
+- [Homepage](https://vue-tel-input.iamstevendao.com)
+- [Bugs](https://github.com/iamstevendao/vue-tel-input/issues)
+- [Repository](https://github.com/iamstevendao/vue-tel-input)
 - [Npm](https://www.npmjs.com/package/vue-tel-input)
     
 

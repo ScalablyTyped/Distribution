@@ -25,7 +25,7 @@ object ListMemberListResponse {
     
     inline def setMembers(value: js.Array[Modifyat]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    inline def setMembersVarargs(value: Modifyat*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: Modifyat*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setMessage(value: success): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

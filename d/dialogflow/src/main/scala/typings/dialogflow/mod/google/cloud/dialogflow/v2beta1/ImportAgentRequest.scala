@@ -6,7 +6,6 @@ import typings.dialogflow.dialogflowStrings.agentUri
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ImportAgentRequest.
   * @param [properties] Properties to set
   */
-class ImportAgentRequest ()
+open class ImportAgentRequest ()
   extends StObject
      with IImportAgentRequest {
   def this(properties: IImportAgentRequest) = this()
@@ -28,7 +27,7 @@ class ImportAgentRequest ()
   
   /** ImportAgentRequest agentContent. */
   @JSName("agentContent")
-  var agentContent_ImportAgentRequest: Uint8Array | String = js.native
+  var agentContent_ImportAgentRequest: js.typedarray.Uint8Array | String = js.native
   
   /** ImportAgentRequest agentUri. */
   @JSName("agentUri")
@@ -42,7 +41,7 @@ class ImportAgentRequest ()
     * Converts this ImportAgentRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object ImportAgentRequest {
   
@@ -59,6 +58,8 @@ object ImportAgentRequest {
   inline def create(): ImportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ImportAgentRequest]
   inline def create(properties: IImportAgentRequest): ImportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ImportAgentRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ImportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ImportAgentRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ImportAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ImportAgentRequest]
   /**
     * Decodes an ImportAgentRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -70,9 +71,8 @@ object ImportAgentRequest {
   /* static member */
   inline def decode(reader: Reader): ImportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ImportAgentRequest]
   inline def decode(reader: Reader, length: Double): ImportAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ImportAgentRequest]
-  inline def decode(reader: Uint8Array): ImportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ImportAgentRequest]
-  inline def decode(reader: Uint8Array, length: Double): ImportAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ImportAgentRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ImportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ImportAgentRequest]
   /**
     * Decodes an ImportAgentRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -82,7 +82,6 @@ object ImportAgentRequest {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): ImportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ImportAgentRequest]
-  inline def decodeDelimited(reader: Uint8Array): ImportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ImportAgentRequest]
   
   /**
     * Encodes the specified ImportAgentRequest message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.ImportAgentRequest.verify|verify} messages.
@@ -110,7 +109,7 @@ object ImportAgentRequest {
     * @returns ImportAgentRequest
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ImportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ImportAgentRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): ImportAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ImportAgentRequest]
   
   /**
     * Creates a plain object from an ImportAgentRequest message. Also converts values to other types if specified.
@@ -119,8 +118,8 @@ object ImportAgentRequest {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: ImportAgentRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ImportAgentRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ImportAgentRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ImportAgentRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies an ImportAgentRequest message.
@@ -128,5 +127,5 @@ object ImportAgentRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

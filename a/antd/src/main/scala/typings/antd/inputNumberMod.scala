@@ -1,7 +1,9 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.anon.Offset
+import typings.antd.anon.DownIcon
+import typings.antd.anon.`1`
+import typings.antd.anon.`2`
 import typings.antd.antdStrings.`additions removals`
 import typings.antd.antdStrings.`additions text`
 import typings.antd.antdStrings.`inline`
@@ -22,6 +24,7 @@ import typings.antd.antdStrings.dialog
 import typings.antd.antdStrings.done
 import typings.antd.antdStrings.email
 import typings.antd.antdStrings.enter
+import typings.antd.antdStrings.environment
 import typings.antd.antdStrings.execute
 import typings.antd.antdStrings.go
 import typings.antd.antdStrings.grammar
@@ -56,12 +59,18 @@ import typings.antd.antdStrings.text_
 import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.url
+import typings.antd.antdStrings.user
 import typings.antd.antdStrings.vertical
 import typings.antd.antdStrings.yes
 import typings.antd.configProviderSizeContextMod.SizeType
+import typings.antd.statusUtilsMod.InputStatus
+import typings.rcInputNumber.anon.Input
+import typings.rcInputNumber.anon.Offset
+import typings.rcInputNumber.miniDecimalMod.ValueType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -74,7 +83,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
-import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
@@ -83,9 +92,9 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
-import typings.react.mod.RefAttributes
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -95,6 +104,7 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
@@ -105,10 +115,10 @@ object inputNumberMod extends Shortcut {
   
   @JSImport("antd/lib/input-number", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[InputNumberProps & RefAttributes[js.Any]] = js.native
+  val default: (js.Function1[/* props */ `1` & InputNumberProps[ValueType], ReactElement]) & `2` = js.native
   
-  /* Inlined parent antd.antd/lib/_util/type.Omit<react.react.InputHTMLAttributes<std.HTMLInputElement>, antd.antd/lib/input-number.OmitAttrs> */
-  trait InputNumberProps extends StObject {
+  /* Inlined parent std.Omit<rc-input-number.rc-input-number.InputNumberProps<T>, 'prefix' | 'size' | 'controls'> */
+  trait InputNumberProps[T /* <: ValueType */] extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
     
@@ -116,15 +126,19 @@ object inputNumberMod extends Shortcut {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
+    var addonAfter: js.UndefOr[ReactNode] = js.undefined
+    
+    var addonBefore: js.UndefOr[ReactNode] = js.undefined
+    
     var alt: js.UndefOr[String] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -142,21 +156,21 @@ object inputNumberMod extends Shortcut {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -170,11 +184,11 @@ object inputNumberMod extends Shortcut {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -186,13 +200,13 @@ object inputNumberMod extends Shortcut {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text_ | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -202,7 +216,7 @@ object inputNumberMod extends Shortcut {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -226,7 +240,9 @@ object inputNumberMod extends Shortcut {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.undefined
+    var bordered: js.UndefOr[Boolean] = js.undefined
+    
+    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
@@ -240,6 +256,8 @@ object inputNumberMod extends Shortcut {
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
+    var controls: js.UndefOr[Boolean | DownIcon] = js.undefined
+    
     var crossOrigin: js.UndefOr[String] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
@@ -250,11 +268,13 @@ object inputNumberMod extends Shortcut {
     
     var defaultChecked: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[Double] = js.undefined
+    var defaultValue: js.UndefOr[T] = js.undefined
     
     var dir: js.UndefOr[String] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    var downHandler: js.UndefOr[ReactNode] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -272,7 +292,7 @@ object inputNumberMod extends Shortcut {
     
     var formTarget: js.UndefOr[String] = js.undefined
     
-    var formatter: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | String], String]] = js.undefined
+    var formatter: js.UndefOr[js.Function2[/* value */ js.UndefOr[T], /* info */ Input, String]] = js.undefined
     
     var height: js.UndefOr[Double | String] = js.undefined
     
@@ -280,7 +300,7 @@ object inputNumberMod extends Shortcut {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text_ | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -296,15 +316,17 @@ object inputNumberMod extends Shortcut {
     
     var itemType: js.UndefOr[String] = js.undefined
     
+    var keyboard: js.UndefOr[Boolean] = js.undefined
+    
     var lang: js.UndefOr[String] = js.undefined
     
     var list: js.UndefOr[String] = js.undefined
     
-    var max: js.UndefOr[Double] = js.undefined
+    var max: js.UndefOr[T] = js.undefined
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.undefined
+    var min: js.UndefOr[T] = js.undefined
     
     var minLength: js.UndefOr[Double] = js.undefined
     
@@ -330,7 +352,7 @@ object inputNumberMod extends Shortcut {
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | String], Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* value */ T | Null, Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
@@ -376,7 +398,7 @@ object inputNumberMod extends Shortcut {
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
-    var onInput: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
+    var onInput: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
     
     var onInvalid: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
@@ -450,7 +472,7 @@ object inputNumberMod extends Shortcut {
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
-    var onStep: js.UndefOr[js.Function2[/* value */ Double, /* info */ Offset, Unit]] = js.undefined
+    var onStep: js.UndefOr[js.Function2[/* value */ T, /* info */ Offset, Unit]] = js.undefined
     
     var onSubmit: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
@@ -474,7 +496,7 @@ object inputNumberMod extends Shortcut {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLInputElement]] = js.undefined
     
-    var parser: js.UndefOr[js.Function1[/* displayValue */ js.UndefOr[String], Double | String]] = js.undefined
+    var parser: js.UndefOr[js.Function1[/* displayValue */ js.UndefOr[String], T]] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
     
@@ -482,7 +504,7 @@ object inputNumberMod extends Shortcut {
     
     var precision: js.UndefOr[Double] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.undefined
+    var prefix: js.UndefOr[ReactNode] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -498,7 +520,7 @@ object inputNumberMod extends Shortcut {
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -510,7 +532,11 @@ object inputNumberMod extends Shortcut {
     
     var src: js.UndefOr[String] = js.undefined
     
-    var step: js.UndefOr[Double | String] = js.undefined
+    var status: js.UndefOr[InputStatus] = js.undefined
+    
+    var step: js.UndefOr[ValueType] = js.undefined
+    
+    var stringMode: js.UndefOr[Boolean] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -524,13 +550,15 @@ object inputNumberMod extends Shortcut {
     
     var translate: js.UndefOr[yes | no] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.undefined
+    var `type`: js.UndefOr[HTMLInputTypeAttribute] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
-    var value: js.UndefOr[Double] = js.undefined
+    var upHandler: js.UndefOr[ReactNode] = js.undefined
+    
+    var value: js.UndefOr[T | Null] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
     
@@ -538,12 +566,12 @@ object inputNumberMod extends Shortcut {
   }
   object InputNumberProps {
     
-    inline def apply(): InputNumberProps = {
+    inline def apply[T /* <: ValueType */](): InputNumberProps[T] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[InputNumberProps]
+      __obj.asInstanceOf[InputNumberProps[T]]
     }
     
-    extension [Self <: InputNumberProps](x: Self) {
+    extension [Self <: InputNumberProps[?], T /* <: ValueType */](x: Self & InputNumberProps[T]) {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -557,6 +585,14 @@ object inputNumberMod extends Shortcut {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
+      inline def setAddonAfter(value: ReactNode): Self = StObject.set(x, "addonAfter", value.asInstanceOf[js.Any])
+      
+      inline def setAddonAfterUndefined: Self = StObject.set(x, "addonAfter", js.undefined)
+      
+      inline def setAddonBefore(value: ReactNode): Self = StObject.set(x, "addonBefore", value.asInstanceOf[js.Any])
+      
+      inline def setAddonBeforeUndefined: Self = StObject.set(x, "addonBefore", js.undefined)
+      
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
       inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
@@ -565,7 +601,7 @@ object inputNumberMod extends Shortcut {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -573,7 +609,7 @@ object inputNumberMod extends Shortcut {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -609,7 +645,7 @@ object inputNumberMod extends Shortcut {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -621,7 +657,7 @@ object inputNumberMod extends Shortcut {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -629,7 +665,7 @@ object inputNumberMod extends Shortcut {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -637,7 +673,7 @@ object inputNumberMod extends Shortcut {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -665,15 +701,15 @@ object inputNumberMod extends Shortcut {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -697,7 +733,7 @@ object inputNumberMod extends Shortcut {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -707,7 +743,7 @@ object inputNumberMod extends Shortcut {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -727,7 +763,7 @@ object inputNumberMod extends Shortcut {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -775,7 +811,11 @@ object inputNumberMod extends Shortcut {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
+      
+      inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
+      
+      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -803,6 +843,10 @@ object inputNumberMod extends Shortcut {
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
+      inline def setControls(value: Boolean | DownIcon): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      
+      inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+      
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
@@ -823,7 +867,7 @@ object inputNumberMod extends Shortcut {
       
       inline def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
       
-      inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
@@ -834,6 +878,10 @@ object inputNumberMod extends Shortcut {
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
+      inline def setDownHandler(value: ReactNode): Self = StObject.set(x, "downHandler", value.asInstanceOf[js.Any])
+      
+      inline def setDownHandlerUndefined: Self = StObject.set(x, "downHandler", js.undefined)
       
       inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
@@ -867,7 +915,7 @@ object inputNumberMod extends Shortcut {
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      inline def setFormatter(value: /* value */ js.UndefOr[Double | String] => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: (/* value */ js.UndefOr[T], /* info */ Input) => String): Self = StObject.set(x, "formatter", js.Any.fromFunction2(value))
       
       inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
@@ -883,7 +931,7 @@ object inputNumberMod extends Shortcut {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -915,6 +963,10 @@ object inputNumberMod extends Shortcut {
       
       inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
       
+      inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+      
+      inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+      
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
@@ -923,7 +975,7 @@ object inputNumberMod extends Shortcut {
       
       inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: T): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
       inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
@@ -931,7 +983,7 @@ object inputNumberMod extends Shortcut {
       
       inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: T): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
       inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
@@ -971,7 +1023,7 @@ object inputNumberMod extends Shortcut {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -983,7 +1035,7 @@ object inputNumberMod extends Shortcut {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* value */ js.UndefOr[Double | String] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ T | Null => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1071,11 +1123,11 @@ object inputNumberMod extends Shortcut {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnInput(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: /* text */ String => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
@@ -1223,7 +1275,7 @@ object inputNumberMod extends Shortcut {
       
       inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
-      inline def setOnStep(value: (/* value */ Double, /* info */ Offset) => Unit): Self = StObject.set(x, "onStep", js.Any.fromFunction2(value))
+      inline def setOnStep(value: (/* value */ T, /* info */ Offset) => Unit): Self = StObject.set(x, "onStep", js.Any.fromFunction2(value))
       
       inline def setOnStepUndefined: Self = StObject.set(x, "onStep", js.undefined)
       
@@ -1271,7 +1323,7 @@ object inputNumberMod extends Shortcut {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setParser(value: /* displayValue */ js.UndefOr[String] => Double | String): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
+      inline def setParser(value: /* displayValue */ js.UndefOr[String] => T): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
       
       inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       
@@ -1287,7 +1339,7 @@ object inputNumberMod extends Shortcut {
       
       inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: ReactNode): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
@@ -1319,7 +1371,7 @@ object inputNumberMod extends Shortcut {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -1343,9 +1395,17 @@ object inputNumberMod extends Shortcut {
       
       inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      inline def setStep(value: Double | String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      
+      inline def setStep(value: ValueType): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
       inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      
+      inline def setStringMode(value: Boolean): Self = StObject.set(x, "stringMode", value.asInstanceOf[js.Any])
+      
+      inline def setStringModeUndefined: Self = StObject.set(x, "stringMode", js.undefined)
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -1371,7 +1431,7 @@ object inputNumberMod extends Shortcut {
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HTMLInputTypeAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -1383,7 +1443,13 @@ object inputNumberMod extends Shortcut {
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
-      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setUpHandler(value: ReactNode): Self = StObject.set(x, "upHandler", value.asInstanceOf[js.Any])
+      
+      inline def setUpHandlerUndefined: Self = StObject.set(x, "upHandler", js.undefined)
+      
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
@@ -1397,23 +1463,8 @@ object inputNumberMod extends Shortcut {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.antd.antdStrings.defaultValue
-    - typings.antd.antdStrings.onChange
-    - typings.antd.antdStrings.size
-  */
-  trait OmitAttrs extends StObject
-  object OmitAttrs {
-    
-    inline def defaultValue: typings.antd.antdStrings.defaultValue = "defaultValue".asInstanceOf[typings.antd.antdStrings.defaultValue]
-    
-    inline def onChange: typings.antd.antdStrings.onChange = "onChange".asInstanceOf[typings.antd.antdStrings.onChange]
-    
-    inline def size: typings.antd.antdStrings.size = "size".asInstanceOf[typings.antd.antdStrings.size]
-  }
-  
-  type _To = ForwardRefExoticComponent[InputNumberProps & RefAttributes[js.Any]]
+  type _To = (js.Function1[/* props */ `1` & InputNumberProps[ValueType], ReactElement]) & `2`
   
   /* This means you don't have to write `default`, but can instead just say `inputNumberMod.foo` */
-  override def _to: ForwardRefExoticComponent[InputNumberProps & RefAttributes[js.Any]] = default
+  override def _to: (js.Function1[/* props */ `1` & InputNumberProps[ValueType], ReactElement]) & `2` = default
 }

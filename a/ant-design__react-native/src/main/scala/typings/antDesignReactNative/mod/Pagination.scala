@@ -1,16 +1,16 @@
 package typings.antDesignReactNative.mod
 
-import typings.antDesignReactNative.anon.AntLocale
 import typings.antDesignReactNative.anon.Current
 import typings.antDesignReactNative.paginationMod.PaginationNativeProps
 import typings.antDesignReactNative.paginationMod.default
+import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "Pagination")
 @js.native
-class Pagination protected () extends default {
+open class Pagination protected () extends default {
   def this(props: PaginationNativeProps) = this()
 }
 /* static members */
@@ -20,10 +20,10 @@ object Pagination {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@ant-design/react-native", "Pagination.contextTypes")
+  @JSImport("@ant-design/react-native", "Pagination.contextType")
   @js.native
-  def contextTypes: AntLocale = js.native
-  inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  def contextType: Context[js.Object] = js.native
+  inline def contextType_=(x: Context[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   
   @JSImport("@ant-design/react-native", "Pagination.defaultProps")
   @js.native

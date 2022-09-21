@@ -5,7 +5,6 @@ import typings.vegaLite.specBaseMod.BoundsMixins
 import typings.vegaLite.specBaseMod.GenericCompositionLayoutWithColumns
 import typings.vegaLite.specBaseMod.ResolveMixins
 import typings.vegaLite.specMod.GenericSpec
-import typings.vegaLite.specMod.NormalizedSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ object specConcatMod {
   
   inline def isVConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean]
   
-  trait GenericConcatSpec[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */]
+  trait GenericConcatSpec[S /* <: GenericSpec[Any, Any, Any, Any] */]
     extends StObject
        with BaseSpec
        with GenericCompositionLayoutWithColumns
@@ -37,20 +36,20 @@ object specConcatMod {
   }
   object GenericConcatSpec {
     
-    inline def apply[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](concat: js.Array[S]): GenericConcatSpec[S] = {
+    inline def apply[S /* <: GenericSpec[Any, Any, Any, Any] */](concat: js.Array[S]): GenericConcatSpec[S] = {
       val __obj = js.Dynamic.literal(concat = concat.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericConcatSpec[S]]
     }
     
-    extension [Self <: GenericConcatSpec[?], S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](x: Self & GenericConcatSpec[S]) {
+    extension [Self <: GenericConcatSpec[?], S /* <: GenericSpec[Any, Any, Any, Any] */](x: Self & GenericConcatSpec[S]) {
       
       inline def setConcat(value: js.Array[S]): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
       
-      inline def setConcatVarargs(value: S*): Self = StObject.set(x, "concat", js.Array(value :_*))
+      inline def setConcatVarargs(value: S*): Self = StObject.set(x, "concat", js.Array(value*))
     }
   }
   
-  trait GenericHConcatSpec[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */]
+  trait GenericHConcatSpec[S /* <: GenericSpec[Any, Any, Any, Any] */]
     extends StObject
        with BaseSpec
        with OneDirectionalConcatLayout {
@@ -62,20 +61,20 @@ object specConcatMod {
   }
   object GenericHConcatSpec {
     
-    inline def apply[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](hconcat: js.Array[S]): GenericHConcatSpec[S] = {
+    inline def apply[S /* <: GenericSpec[Any, Any, Any, Any] */](hconcat: js.Array[S]): GenericHConcatSpec[S] = {
       val __obj = js.Dynamic.literal(hconcat = hconcat.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericHConcatSpec[S]]
     }
     
-    extension [Self <: GenericHConcatSpec[?], S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](x: Self & GenericHConcatSpec[S]) {
+    extension [Self <: GenericHConcatSpec[?], S /* <: GenericSpec[Any, Any, Any, Any] */](x: Self & GenericHConcatSpec[S]) {
       
       inline def setHconcat(value: js.Array[S]): Self = StObject.set(x, "hconcat", value.asInstanceOf[js.Any])
       
-      inline def setHconcatVarargs(value: S*): Self = StObject.set(x, "hconcat", js.Array(value :_*))
+      inline def setHconcatVarargs(value: S*): Self = StObject.set(x, "hconcat", js.Array(value*))
     }
   }
   
-  trait GenericVConcatSpec[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */]
+  trait GenericVConcatSpec[S /* <: GenericSpec[Any, Any, Any, Any] */]
     extends StObject
        with BaseSpec
        with OneDirectionalConcatLayout {
@@ -87,20 +86,20 @@ object specConcatMod {
   }
   object GenericVConcatSpec {
     
-    inline def apply[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](vconcat: js.Array[S]): GenericVConcatSpec[S] = {
+    inline def apply[S /* <: GenericSpec[Any, Any, Any, Any] */](vconcat: js.Array[S]): GenericVConcatSpec[S] = {
       val __obj = js.Dynamic.literal(vconcat = vconcat.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericVConcatSpec[S]]
     }
     
-    extension [Self <: GenericVConcatSpec[?], S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](x: Self & GenericVConcatSpec[S]) {
+    extension [Self <: GenericVConcatSpec[?], S /* <: GenericSpec[Any, Any, Any, Any] */](x: Self & GenericVConcatSpec[S]) {
       
       inline def setVconcat(value: js.Array[S]): Self = StObject.set(x, "vconcat", value.asInstanceOf[js.Any])
       
-      inline def setVconcatVarargs(value: S*): Self = StObject.set(x, "vconcat", js.Array(value :_*))
+      inline def setVconcatVarargs(value: S*): Self = StObject.set(x, "vconcat", js.Array(value*))
     }
   }
   
-  type NormalizedConcatSpec = GenericConcatSpec[NormalizedSpec] | GenericVConcatSpec[NormalizedSpec] | GenericHConcatSpec[NormalizedSpec]
+  type NormalizedConcatSpec = GenericConcatSpec[Any] | GenericVConcatSpec[Any] | GenericHConcatSpec[Any]
   
   trait OneDirectionalConcatLayout
     extends StObject

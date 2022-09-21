@@ -18,7 +18,7 @@ object templatingMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("meteor/templating", "Template")
   @js.native
-  class Template ()
+  open class Template ()
     extends StObject
        with typings.meteorTypings.Blaze.Template {
     def this(viewName: String) = this()
@@ -27,7 +27,7 @@ object templatingMod {
     
     /* CompleteClass */
     @JSName("$")
-    var $: js.Any = js.native
+    var $: Any = js.native
     
     /* CompleteClass */
     override def constructView(): View = js.native
@@ -80,7 +80,7 @@ object templatingMod {
   trait TemplateStatic
     extends StObject
        with typings.meteorTypings.Blaze.TemplateStatic
-       with /* index */ StringDictionary[js.Any | typings.meteorTypings.Blaze.Template] {
+       with /* index */ StringDictionary[Any | typings.meteorTypings.Blaze.Template] {
     
     var body: typings.meteorTypings.Blaze.Template = js.native
   }

@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.ravenJs.anon.ErrorrequestXMLHttpReques
 import typings.ravenJs.anon.Sentryclient
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,7 +61,7 @@ object mod extends Shortcut {
     
     var category: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var level: js.UndefOr[LogLevel] = js.undefined
     
@@ -84,7 +82,7 @@ object mod extends Shortcut {
       
       inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -145,11 +143,7 @@ object mod extends Shortcut {
     inline def warning: typings.ravenJs.ravenJsStrings.warning = "warning".asInstanceOf[typings.ravenJs.ravenJsStrings.warning]
   }
   
-  type RavenCallback = js.Function2[
-    /* data */ js.Any, 
-    /* orig */ js.UndefOr[js.Function1[/* data */ js.Any, js.Any]], 
-    js.Any | Unit
-  ]
+  type RavenCallback = js.Function2[/* data */ Any, /* orig */ js.UndefOr[js.Function1[/* data */ Any, Any]], Any | Unit]
   
   trait RavenInstrumentationOptions extends StObject {
     
@@ -186,13 +180,13 @@ object mod extends Shortcut {
     var autoBreadcrumbs: js.UndefOr[Boolean | AutoBreadcrumbOptions] = js.undefined
     
     /** A function that allows filtering or mutating breadcrumb payloads. Return false to throw away the breadcrumb. */
-    var breadcrumbCallback: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
+    var breadcrumbCallback: js.UndefOr[js.Function1[/* data */ Any, Any]] = js.undefined
     
     /** By default, Raven captures all unhandled promise rejections using standard `unhandledrejection` event. If you want to disable this behaviour, set this option to `false` */
     var captureUnhandledRejections: js.UndefOr[Boolean] = js.undefined
     
     /** A function which allows mutation of the data payload right before being sent to Sentry */
-    var dataCallback: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
+    var dataCallback: js.UndefOr[js.Function1[/* data */ Any, Any]] = js.undefined
     
     /**
       * If set to true, Raven.js outputs some light debugging information onto the console.
@@ -202,7 +196,7 @@ object mod extends Shortcut {
     /** The environment of the application you are monitoring with Sentry */
     var environment: js.UndefOr[String] = js.undefined
     
-    var extra: js.UndefOr[js.Any] = js.undefined
+    var extra: js.UndefOr[Any] = js.undefined
     
     /** `fetch` init parameters */
     var fetchParameters: js.UndefOr[StringDictionary[String | js.Function]] = js.undefined
@@ -214,13 +208,13 @@ object mod extends Shortcut {
     var headers: js.UndefOr[StringDictionary[String | js.Function]] = js.undefined
     
     /** List of messages to be filtered out before being sent to Sentry. */
-    var ignoreErrors: js.UndefOr[js.Array[RegExp | String]] = js.undefined
+    var ignoreErrors: js.UndefOr[js.Array[js.RegExp | String]] = js.undefined
     
     /** Similar to ignoreErrors, but will ignore errors from whole urls patching a regex pattern. */
-    var ignoreUrls: js.UndefOr[js.Array[RegExp | String]] = js.undefined
+    var ignoreUrls: js.UndefOr[js.Array[js.RegExp | String]] = js.undefined
     
     /** An array of regex patterns to indicate which urls are a part of your app. */
-    var includePaths: js.UndefOr[js.Array[RegExp | String]] = js.undefined
+    var includePaths: js.UndefOr[js.Array[js.RegExp | String]] = js.undefined
     
     /** Enables/disables instrumentation of globals. */
     var instrument: js.UndefOr[Boolean | RavenInstrumentationOptions] = js.undefined
@@ -249,13 +243,13 @@ object mod extends Shortcut {
     var sampleRate: js.UndefOr[Double] = js.undefined
     
     /** An array of strings representing keys that should be scrubbed from the payload sent to Sentry */
-    var sanitizeKeys: js.UndefOr[js.Array[RegExp | String]] = js.undefined
+    var sanitizeKeys: js.UndefOr[js.Array[js.RegExp | String]] = js.undefined
     
     /** The name of the server or device that the client is running on */
     var serverName: js.UndefOr[String] = js.undefined
     
     /** A callback function that allows you to apply your own filters to determine if the message should be sent to Sentry. */
-    var shouldSendCallback: js.UndefOr[js.Function1[/* data */ js.Any, Boolean]] = js.undefined
+    var shouldSendCallback: js.UndefOr[js.Function1[/* data */ Any, Boolean]] = js.undefined
     
     /** set to true to get the stack trace of your message */
     var stacktrace: js.UndefOr[Boolean] = js.undefined
@@ -267,7 +261,7 @@ object mod extends Shortcut {
     var transport: js.UndefOr[js.Function1[/* options */ RavenTransportOptions, Unit]] = js.undefined
     
     /** The inverse of ignoreUrls. Only report errors from whole urls matching a regex pattern. */
-    var whitelistUrls: js.UndefOr[js.Array[RegExp | String]] = js.undefined
+    var whitelistUrls: js.UndefOr[js.Array[js.RegExp | String]] = js.undefined
   }
   object RavenOptions {
     
@@ -290,7 +284,7 @@ object mod extends Shortcut {
       
       inline def setAutoBreadcrumbsUndefined: Self = StObject.set(x, "autoBreadcrumbs", js.undefined)
       
-      inline def setBreadcrumbCallback(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "breadcrumbCallback", js.Any.fromFunction1(value))
+      inline def setBreadcrumbCallback(value: /* data */ Any => Any): Self = StObject.set(x, "breadcrumbCallback", js.Any.fromFunction1(value))
       
       inline def setBreadcrumbCallbackUndefined: Self = StObject.set(x, "breadcrumbCallback", js.undefined)
       
@@ -298,7 +292,7 @@ object mod extends Shortcut {
       
       inline def setCaptureUnhandledRejectionsUndefined: Self = StObject.set(x, "captureUnhandledRejections", js.undefined)
       
-      inline def setDataCallback(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "dataCallback", js.Any.fromFunction1(value))
+      inline def setDataCallback(value: /* data */ Any => Any): Self = StObject.set(x, "dataCallback", js.Any.fromFunction1(value))
       
       inline def setDataCallbackUndefined: Self = StObject.set(x, "dataCallback", js.undefined)
       
@@ -310,7 +304,7 @@ object mod extends Shortcut {
       
       inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      inline def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
       inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
@@ -322,29 +316,29 @@ object mod extends Shortcut {
       
       inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
       
-      inline def setFingerprintVarargs(value: String*): Self = StObject.set(x, "fingerprint", js.Array(value :_*))
+      inline def setFingerprintVarargs(value: String*): Self = StObject.set(x, "fingerprint", js.Array(value*))
       
       inline def setHeaders(value: StringDictionary[String | js.Function]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setIgnoreErrors(value: js.Array[RegExp | String]): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
+      inline def setIgnoreErrors(value: js.Array[js.RegExp | String]): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
       
       inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
       
-      inline def setIgnoreErrorsVarargs(value: (RegExp | String)*): Self = StObject.set(x, "ignoreErrors", js.Array(value :_*))
+      inline def setIgnoreErrorsVarargs(value: (js.RegExp | String)*): Self = StObject.set(x, "ignoreErrors", js.Array(value*))
       
-      inline def setIgnoreUrls(value: js.Array[RegExp | String]): Self = StObject.set(x, "ignoreUrls", value.asInstanceOf[js.Any])
+      inline def setIgnoreUrls(value: js.Array[js.RegExp | String]): Self = StObject.set(x, "ignoreUrls", value.asInstanceOf[js.Any])
       
       inline def setIgnoreUrlsUndefined: Self = StObject.set(x, "ignoreUrls", js.undefined)
       
-      inline def setIgnoreUrlsVarargs(value: (RegExp | String)*): Self = StObject.set(x, "ignoreUrls", js.Array(value :_*))
+      inline def setIgnoreUrlsVarargs(value: (js.RegExp | String)*): Self = StObject.set(x, "ignoreUrls", js.Array(value*))
       
-      inline def setIncludePaths(value: js.Array[RegExp | String]): Self = StObject.set(x, "includePaths", value.asInstanceOf[js.Any])
+      inline def setIncludePaths(value: js.Array[js.RegExp | String]): Self = StObject.set(x, "includePaths", value.asInstanceOf[js.Any])
       
       inline def setIncludePathsUndefined: Self = StObject.set(x, "includePaths", js.undefined)
       
-      inline def setIncludePathsVarargs(value: (RegExp | String)*): Self = StObject.set(x, "includePaths", js.Array(value :_*))
+      inline def setIncludePathsVarargs(value: (js.RegExp | String)*): Self = StObject.set(x, "includePaths", js.Array(value*))
       
       inline def setInstrument(value: Boolean | RavenInstrumentationOptions): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
       
@@ -378,17 +372,17 @@ object mod extends Shortcut {
       
       inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
       
-      inline def setSanitizeKeys(value: js.Array[RegExp | String]): Self = StObject.set(x, "sanitizeKeys", value.asInstanceOf[js.Any])
+      inline def setSanitizeKeys(value: js.Array[js.RegExp | String]): Self = StObject.set(x, "sanitizeKeys", value.asInstanceOf[js.Any])
       
       inline def setSanitizeKeysUndefined: Self = StObject.set(x, "sanitizeKeys", js.undefined)
       
-      inline def setSanitizeKeysVarargs(value: (RegExp | String)*): Self = StObject.set(x, "sanitizeKeys", js.Array(value :_*))
+      inline def setSanitizeKeysVarargs(value: (js.RegExp | String)*): Self = StObject.set(x, "sanitizeKeys", js.Array(value*))
       
       inline def setServerName(value: String): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
       
       inline def setServerNameUndefined: Self = StObject.set(x, "serverName", js.undefined)
       
-      inline def setShouldSendCallback(value: /* data */ js.Any => Boolean): Self = StObject.set(x, "shouldSendCallback", js.Any.fromFunction1(value))
+      inline def setShouldSendCallback(value: /* data */ Any => Boolean): Self = StObject.set(x, "shouldSendCallback", js.Any.fromFunction1(value))
       
       inline def setShouldSendCallbackUndefined: Self = StObject.set(x, "shouldSendCallback", js.undefined)
       
@@ -404,15 +398,15 @@ object mod extends Shortcut {
       
       inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
       
-      inline def setWhitelistUrls(value: js.Array[RegExp | String]): Self = StObject.set(x, "whitelistUrls", value.asInstanceOf[js.Any])
+      inline def setWhitelistUrls(value: js.Array[js.RegExp | String]): Self = StObject.set(x, "whitelistUrls", value.asInstanceOf[js.Any])
       
       inline def setWhitelistUrlsUndefined: Self = StObject.set(x, "whitelistUrls", js.undefined)
       
-      inline def setWhitelistUrlsVarargs(value: (RegExp | String)*): Self = StObject.set(x, "whitelistUrls", js.Array(value :_*))
+      inline def setWhitelistUrlsVarargs(value: (js.RegExp | String)*): Self = StObject.set(x, "whitelistUrls", js.Array(value*))
     }
   }
   
-  type RavenPlugin = js.Function2[/* raven */ RavenStatic, /* repeated */ js.Any, RavenStatic]
+  type RavenPlugin = js.Function2[/* raven */ RavenStatic, /* repeated */ Any, RavenStatic]
   
   @js.native
   trait RavenStatic extends StObject {
@@ -427,7 +421,7 @@ object mod extends Shortcut {
       *
       * @return {Raven}
       */
-    def addPlugin(plugin: RavenPlugin, pluginArgs: js.Any*): RavenStatic = js.native
+    def addPlugin(plugin: RavenPlugin, pluginArgs: Any*): RavenStatic = js.native
     
     /**
       * Allow Raven to be configured as soon as it is loaded
@@ -447,8 +441,8 @@ object mod extends Shortcut {
       * @param {object} options A specific set of options for this error [optional]
       * @return {Raven}
       */
-    def captureException(ex: js.Any): RavenStatic = js.native
-    def captureException(ex: js.Any, options: RavenOptions): RavenStatic = js.native
+    def captureException(ex: Any): RavenStatic = js.native
+    def captureException(ex: Any, options: RavenOptions): RavenStatic = js.native
     
     /**
       * Manually send a message to Sentry
@@ -481,8 +475,8 @@ object mod extends Shortcut {
       * @param {function} func The callback to be immediately executed within the context
       * @param {array} args An array of arguments to be called with the callback [optional]
       */
-    def context(func: js.Function, args: js.Any*): Unit = js.native
-    def context(options: RavenOptions, func: js.Function, args: js.Any*): Unit = js.native
+    def context(func: js.Function, args: Any*): Unit = js.native
+    def context(options: RavenOptions, func: js.Function, args: Any*): Unit = js.native
     
     /** Get a copy of the current context. This cannot be mutated.*/
     def getContext(): js.Object = js.native
@@ -504,7 +498,7 @@ object mod extends Shortcut {
     def lastEventId(): String = js.native
     
     /** Get the latest raw exception that was captured by Raven.*/
-    def lastException(): Error = js.native
+    def lastException(): js.Error = js.native
     
     /**
       * Allow multiple versions of Raven to be installed.
@@ -570,7 +564,7 @@ object mod extends Shortcut {
       * @return {Raven}
       */
     def setUserContext(): RavenStatic = js.native
-    def setUserContext(user: StringDictionary[js.Any]): RavenStatic = js.native
+    def setUserContext(user: StringDictionary[Any]): RavenStatic = js.native
     
     /** Show Sentry user feedback dialog */
     def showReportDialog(): Unit = js.native
@@ -600,7 +594,7 @@ object mod extends Shortcut {
     
     var auth: Sentryclient
     
-    var data: js.Any
+    var data: Any
     
     def onError(error: ErrorrequestXMLHttpReques): Unit
     
@@ -612,7 +606,7 @@ object mod extends Shortcut {
     
     inline def apply(
       auth: Sentryclient,
-      data: js.Any,
+      data: Any,
       onError: ErrorrequestXMLHttpReques => Unit,
       onSuccess: () => Unit,
       url: String
@@ -625,7 +619,7 @@ object mod extends Shortcut {
       
       inline def setAuth(value: Sentryclient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setOnError(value: ErrorrequestXMLHttpReques => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       

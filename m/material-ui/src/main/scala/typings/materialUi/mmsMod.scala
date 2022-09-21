@@ -10,10 +10,10 @@ object mmsMod {
   
   @JSImport("material-ui/svg-icons/notification/mms", JSImport.Default)
   @js.native
-  class default () extends NotificationMms
+  open class default () extends NotificationMms
   
   @JSImport("material-ui/svg-icons/notification/mms", "NotificationMms")
   @js.native
-  class NotificationMms ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationMms ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

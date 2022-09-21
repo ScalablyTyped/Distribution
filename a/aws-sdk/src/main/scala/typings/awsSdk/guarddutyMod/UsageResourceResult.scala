@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UsageResourceResult extends StObject {
   
   /**
-    * The AWS resource that generated usage.
+    * The Amazon Web Services resource that generated usage.
     */
   var Resource: js.UndefOr[String] = js.undefined
   

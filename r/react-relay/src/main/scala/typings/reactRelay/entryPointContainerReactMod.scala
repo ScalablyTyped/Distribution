@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object entryPointContainerReactMod {
   
-  @JSImport("react-relay/lib/relay-experimental/EntryPointContainer.react", JSImport.Namespace)
+  @JSImport("react-relay/relay-hooks/EntryPointContainer.react", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def EntryPointContainer[TPreloadedEntryPoint /* <: PreloadedEntryPoint[js.Any] */](hasEntryPointReferenceProps: EntryPointReference[TPreloadedEntryPoint]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("EntryPointContainer")(hasEntryPointReferenceProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def EntryPointContainer[TPreloadedEntryPoint /* <: PreloadedEntryPoint[Any] */](hasEntryPointReferenceProps: EntryPointReference[TPreloadedEntryPoint]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("EntryPointContainer")(hasEntryPointReferenceProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  type GetComponentFromPreloadedEntryPoint[T] = js.Any
+  type GetComponentFromPreloadedEntryPoint[T] = Any
   
-  type GetRuntimePropsFromComponent[T] = js.Any
+  type GetRuntimePropsFromComponent[T] = Any
 }

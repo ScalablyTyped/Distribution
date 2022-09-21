@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BulletFormat2 extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   var Character: Double
   
@@ -19,7 +19,7 @@ trait BulletFormat2 extends StObject {
   /* private */ @JSName("Office.BulletFormat2_typekey")
   var OfficeDotBulletFormat2_typekey: BulletFormat2
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Picture(FileName: String): Unit
   
@@ -40,13 +40,13 @@ trait BulletFormat2 extends StObject {
 object BulletFormat2 {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Character: Double,
     Creator: Double,
     Font: Font2,
     Number: Double,
     OfficeDotBulletFormat2_typekey: BulletFormat2,
-    Parent: js.Any,
+    Parent: Any,
     Picture: String => Unit,
     RelativeSize: Double,
     StartValue: Double,
@@ -63,7 +63,7 @@ object BulletFormat2 {
   
   extension [Self <: BulletFormat2](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCharacter(value: Double): Self = StObject.set(x, "Character", value.asInstanceOf[js.Any])
     
@@ -75,7 +75,7 @@ object BulletFormat2 {
     
     inline def setOfficeDotBulletFormat2_typekey(value: BulletFormat2): Self = StObject.set(x, "Office.BulletFormat2_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPicture(value: String => Unit): Self = StObject.set(x, "Picture", js.Any.fromFunction1(value))
     

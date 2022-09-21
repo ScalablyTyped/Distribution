@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContainer.anon
 
-import typings.maximMazurokGapiClientContainer.gapi.client.container.SetLoggingServiceRequest
+import typings.maximMazurokGapiClientContainer.gapi.client.container.SetLocationsRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait PrettyPrintQuotaUser extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name (project, location, cluster) of the cluster to set logging. Specified in the format `projects/∗/locations/∗/clusters/ *`. */
+  /** The name (project, location, cluster) of the cluster to set locations. Specified in the format `projects/ *‍/locations/ *‍/clusters/ *`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait PrettyPrintQuotaUser extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: SetLoggingServiceRequest
+  var resource: SetLocationsRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait PrettyPrintQuotaUser extends StObject {
 }
 object PrettyPrintQuotaUser {
   
-  inline def apply(name: String, resource: SetLoggingServiceRequest): PrettyPrintQuotaUser = {
+  inline def apply(name: String, resource: SetLocationsRequest): PrettyPrintQuotaUser = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrintQuotaUser]
   }
@@ -94,7 +94,7 @@ object PrettyPrintQuotaUser {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SetLoggingServiceRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SetLocationsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

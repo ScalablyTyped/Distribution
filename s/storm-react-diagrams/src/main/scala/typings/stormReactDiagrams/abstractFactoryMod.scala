@@ -12,11 +12,11 @@ object abstractFactoryMod {
   
   @JSImport("storm-react-diagrams/dist/src/factories/AbstractFactory", "AbstractFactory")
   @js.native
-  abstract class AbstractFactory[T /* <: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener] */] protected () extends StObject {
+  abstract class AbstractFactory[T /* <: BaseModel[BaseEntity[BaseListener[Any]], BaseModelListener] */] protected () extends StObject {
     def this(name: String) = this()
     
     def getNewInstance(): T = js.native
-    def getNewInstance(initialConfig: js.Any): T = js.native
+    def getNewInstance(initialConfig: Any): T = js.native
     
     def getType(): String = js.native
     

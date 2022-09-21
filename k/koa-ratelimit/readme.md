@@ -10,10 +10,10 @@ Rate limiter middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-ratelimit |
 | Keywords           | koa, middleware, ratelimiter, ratelimit, rate |
-| # releases         | 5 |
-| # dependents       | 21 |
-| # downloads        | 224139 |
-| # stars            | 6 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 52258.666666666664 |
+| # stars            | 443.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/maxrequests#readme)

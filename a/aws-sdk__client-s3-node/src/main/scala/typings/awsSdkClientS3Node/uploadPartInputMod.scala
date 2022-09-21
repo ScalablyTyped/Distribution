@@ -8,5 +8,5 @@ object uploadPartInputMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/UploadPartInput", "UploadPartInput")
   @js.native
-  val UploadPartInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val UploadPartInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

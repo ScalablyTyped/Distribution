@@ -24,6 +24,6 @@ object GetContainerAPIMetadataResult {
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    inline def setMetadataVarargs(value: ContainerServiceMetadataEntry*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+    inline def setMetadataVarargs(value: ContainerServiceMetadataEntry*): Self = StObject.set(x, "metadata", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for spotify-web-api-node
 
-Typings are for version 4.0
+Typings are for version 5.0
 
 ## Library description:
 A Node.js wrapper for Spotify's Web API
@@ -10,10 +10,10 @@ A Node.js wrapper for Spotify's Web API
 | ------------------ | :-------------: |
 | Full name          | spotify-web-api-node |
 | Keywords           | spotify, echonest, music, api, wrapper, client, web api |
-| # releases         | 2 |
-| # dependents       | 76 |
-| # downloads        | 293662 |
-| # stars            | 23 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 91107.66666666667 |
+| # stars            | 2616.0 |
 
 ## Links
 - [Homepage](https://github.com/thelinmichael/spotify-web-api-node)

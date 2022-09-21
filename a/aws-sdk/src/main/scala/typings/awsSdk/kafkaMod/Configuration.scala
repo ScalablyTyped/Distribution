@@ -18,7 +18,7 @@ trait Configuration extends StObject {
     The time when the configuration was created.
     
     */
-  var CreationTime: timestampIso8601
+  var CreationTime: js.Date
   
   /**
     * 
@@ -59,7 +59,7 @@ object Configuration {
   
   inline def apply(
     Arn: string,
-    CreationTime: timestampIso8601,
+    CreationTime: js.Date,
     Description: string,
     KafkaVersions: listOfString,
     LatestRevision: ConfigurationRevision,
@@ -74,13 +74,13 @@ object Configuration {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    inline def setCreationTime(value: timestampIso8601): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setKafkaVersions(value: listOfString): Self = StObject.set(x, "KafkaVersions", value.asInstanceOf[js.Any])
     
-    inline def setKafkaVersionsVarargs(value: string*): Self = StObject.set(x, "KafkaVersions", js.Array(value :_*))
+    inline def setKafkaVersionsVarargs(value: string*): Self = StObject.set(x, "KafkaVersions", js.Array(value*))
     
     inline def setLatestRevision(value: ConfigurationRevision): Self = StObject.set(x, "LatestRevision", value.asInstanceOf[js.Any])
     

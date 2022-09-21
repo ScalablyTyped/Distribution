@@ -1,5 +1,6 @@
 package typings.cytoscape.mod
 
+import typings.cytoscape.mod.Css.TransitionTimingFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ trait LayoutPositionOptions extends StObject {
   var animationDuration: js.UndefOr[Double] = js.undefined
   
   // easing of animation, if enabled
-  var animationEasing: js.UndefOr[Double] = js.undefined
+  var animationEasing: js.UndefOr[TransitionTimingFunction] = js.undefined
   
   // collection of elements involved in the layout; set by cy.layout() or eles.layout(s)
   var eles: CollectionArgument
@@ -59,7 +60,7 @@ object LayoutPositionOptions {
     
     inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
-    inline def setAnimationEasing(value: Double): Self = StObject.set(x, "animationEasing", value.asInstanceOf[js.Any])
+    inline def setAnimationEasing(value: TransitionTimingFunction): Self = StObject.set(x, "animationEasing", value.asInstanceOf[js.Any])
     
     inline def setAnimationEasingUndefined: Self = StObject.set(x, "animationEasing", js.undefined)
     

@@ -8,7 +8,7 @@ object ffmpegWorkerMp4Mod {
   
   @JSImport("ffmpeg.js/ffmpeg-worker-mp4", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Worker {
     def this(someParam: String) = this()
@@ -80,7 +80,7 @@ object ffmpegWorkerMp4Mod {
       
       inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("rmc-tabs", "DefaultTabBar")
   @js.native
-  class DefaultTabBar protected ()
+  open class DefaultTabBar protected ()
     extends typings.rmcTabs.defaultTabBarMod.DefaultTabBar {
     def this(props: PropsType) = this()
   }
@@ -29,7 +29,7 @@ object mod {
   
   @JSImport("rmc-tabs", "Tabs")
   @js.native
-  class Tabs protected ()
+  open class Tabs protected ()
     extends typings.rmcTabs.tabsMod.Tabs {
     def this(props: typings.rmcTabs.tabsMod.PropsType) = this()
   }

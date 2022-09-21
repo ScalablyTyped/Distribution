@@ -1,6 +1,6 @@
 package typings.webpackErrorNotification
 
-import typings.std.Plugin
+import typings.webpack.mod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +15,18 @@ object mod {
     * `darwin` and `linux` are supported out of the box now.
     * You can also supply function(msg) {} as a strategy that will use your notification CLI tool of choice.
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with WebpackErrorNotificationPlugin {
     def this(strategy: Strategy) = this()
     def this(strategy: Unit, options: Options) = this()
     def this(strategy: Strategy, options: Options) = this()
+    
+    /* CompleteClass */
+    override def compilationDone(stats: Stats): Unit = js.native
+    
+    /* CompleteClass */
+    override def compileMessage(stats: Stats): String = js.native
   }
   
   trait Options extends StObject {
@@ -50,18 +56,26 @@ object mod {
   */
   type Strategy = _Strategy | (js.Function1[/* msg */ String, Unit])
   
-  @js.native
-  trait WebpackErrorNotificationPlugin
-    extends StObject
-       with Plugin {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ trait WebpackErrorNotificationPlugin extends StObject {
     
-    def compilationDone(
-      stats: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stats */ js.Any
-    ): Unit = js.native
+    def compilationDone(stats: Stats): Unit
     
-    def compileMessage(
-      stats: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Stats */ js.Any
-    ): String = js.native
+    def compileMessage(stats: Stats): String
+  }
+  object WebpackErrorNotificationPlugin {
+    
+    inline def apply(compilationDone: Stats => Unit, compileMessage: Stats => String): WebpackErrorNotificationPlugin = {
+      val __obj = js.Dynamic.literal(compilationDone = js.Any.fromFunction1(compilationDone), compileMessage = js.Any.fromFunction1(compileMessage))
+      __obj.asInstanceOf[WebpackErrorNotificationPlugin]
+    }
+    
+    extension [Self <: WebpackErrorNotificationPlugin](x: Self) {
+      
+      inline def setCompilationDone(value: Stats => Unit): Self = StObject.set(x, "compilationDone", js.Any.fromFunction1(value))
+      
+      inline def setCompileMessage(value: Stats => String): Self = StObject.set(x, "compileMessage", js.Any.fromFunction1(value))
+    }
   }
   
   trait _Strategy extends StObject

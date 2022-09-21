@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimePickerSettings extends StObject {
   
   //Events
-  var change: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var change: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var close: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
   var footer: js.UndefOr[Boolean] = js.undefined
   
@@ -24,9 +24,9 @@ trait TimePickerSettings extends StObject {
   
   var mode: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var open: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var select: js.UndefOr[js.Function2[/* e */ js.Any, /* type */ String, js.Any]] = js.undefined
+  var select: js.UndefOr[js.Function2[/* e */ Any, /* type */ String, Any]] = js.undefined
   
   var size: js.UndefOr[String] = js.undefined
   
@@ -45,11 +45,11 @@ object TimePickerSettings {
   
   extension [Self <: TimePickerSettings](x: Self) {
     
-    inline def setChange(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: /* e */ Any => Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    inline def setClose(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    inline def setClose(value: /* e */ Any => Any): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
     inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
@@ -77,11 +77,11 @@ object TimePickerSettings {
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setOpen(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: /* e */ Any => Any): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    inline def setSelect(value: (/* e */ js.Any, /* type */ String) => js.Any): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
+    inline def setSelect(value: (/* e */ Any, /* type */ String) => Any): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     

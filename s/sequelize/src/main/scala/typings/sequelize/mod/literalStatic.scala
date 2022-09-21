@@ -13,4 +13,4 @@ trait literalStatic
   *
   * @param val
   */
-Instantiable1[/* val */ js.Any, literal]
+Instantiable1[/* val */ Any, literal]

@@ -1,5 +1,6 @@
 package typings.msportalfxMock
 
+import typings.express.mod.Express
 import typings.msportalfxMock.armManagerMod.ArmManager.Manager
 import typings.msportalfxMock.httpsProxyMod.HttpsProxy.ExpressServer
 import typings.msportalfxMock.httpsProxyMod.HttpsProxy.ProxyServer
@@ -30,13 +31,13 @@ object armProxyMod {
       armEndpoint: String,
       serverPort: Double,
       armManager: Unit,
-      customRoutes: js.Function1[/* app */ typings.msportalfxMock.mod.Express, Unit]
+      customRoutes: js.Function1[/* app */ Express, Unit]
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(armEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], armManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
     inline def create(
       armEndpoint: String,
       serverPort: Double,
       armManager: Unit,
-      customRoutes: js.Function1[/* app */ typings.msportalfxMock.mod.Express, Unit],
+      customRoutes: js.Function1[/* app */ Express, Unit],
       enablePassthrough: Boolean
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(armEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], armManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any], enablePassthrough.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
     inline def create(
@@ -51,13 +52,13 @@ object armProxyMod {
       armEndpoint: String,
       serverPort: Double,
       armManager: Manager,
-      customRoutes: js.Function1[/* app */ typings.msportalfxMock.mod.Express, Unit]
+      customRoutes: js.Function1[/* app */ Express, Unit]
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(armEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], armManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
     inline def create(
       armEndpoint: String,
       serverPort: Double,
       armManager: Manager,
-      customRoutes: js.Function1[/* app */ typings.msportalfxMock.mod.Express, Unit],
+      customRoutes: js.Function1[/* app */ Express, Unit],
       enablePassthrough: Boolean
     ): Promise[ProxyServer] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(armEndpoint.asInstanceOf[js.Any], serverPort.asInstanceOf[js.Any], armManager.asInstanceOf[js.Any], customRoutes.asInstanceOf[js.Any], enablePassthrough.asInstanceOf[js.Any])).asInstanceOf[Promise[ProxyServer]]
     inline def create(
@@ -76,7 +77,7 @@ object armProxyMod {
       * @param enablePassthrough If to enable passthrough to actual arm.
       * @return A promise that completes when local proxy is setup.
       */
-    inline def dispose(proxy: ProxyServer): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(proxy.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+    inline def dispose(proxy: ProxyServer): Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dispose")(proxy.asInstanceOf[js.Any]).asInstanceOf[Promise[Any]]
     
     @js.native
     trait ArmExpressServer extends ExpressServer {

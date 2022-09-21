@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-md/progress" : "2.4.2"
+      "@react-md/progress" : "5.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-md/progress" : "2.4.2"
+      "@react-md/progress" : "5.1.3"
     }
   ],
   "compile-devDependencies" : [

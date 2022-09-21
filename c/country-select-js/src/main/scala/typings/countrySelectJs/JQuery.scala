@@ -15,9 +15,9 @@ trait JQuery extends StObject {
   /**
     * initialize the plugin with optional options.
     */
-  def countrySelect(): JQueryDeferred[js.Any] = js.native
+  def countrySelect(): JQueryDeferred[Any] = js.native
   def countrySelect(method: String, value: String): Unit = js.native
-  def countrySelect(options: Options): JQueryDeferred[js.Any] = js.native
+  def countrySelect(options: Options): JQueryDeferred[Any] = js.native
   /**
     * Remove the plugin from the input, and unbind any event listeners.
     */

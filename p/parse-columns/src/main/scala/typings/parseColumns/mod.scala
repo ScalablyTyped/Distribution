@@ -1,101 +1,67 @@
 package typings.parseColumns
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-  Parse text columns, like the output of Unix commands.
-  @param textColumns - Text columns to parse.
-  @example
-  ```
-  import {promisify} from 'util';
-  import * as childProcess from 'child_process';
-  import parseColumns = require('parse-columns');
-  const execFileP = promisify(childProcess.execFile);
-  (async () => {
-  	const {stdout} = await execFileP('df', ['-kP']);
-  	console.log(parseColumns(stdout, {
-  		transform: (item, header, columnIndex) => {
-  			// Coerce elements in column index 1 to 3 to a number
-  			if (columnIndex >= 1 && columnIndex <= 3) {
-  				return Number(item);
-  			}
-  			return item;
-  		}
-  	}));
-  	// [
-  	// 	{
-  	// 		Filesystem: '/dev/disk1',
-  	// 		'1024-blocks': 487350400,
-  	// 		Used: 467528020,
-  	// 		Available: 19566380,
-  	// 		Capacity: '96%',
-  	// 		'Mounted on': '/'
-  	// 	},
-  	// 	…
-  	// ]
-  })();
-  ```
-  */
-  inline def apply[ValuesType /* <: js.Any */](textColumns: String): js.Array[StringDictionary[ValuesType]] = ^.asInstanceOf[js.Dynamic].apply(textColumns.asInstanceOf[js.Any]).asInstanceOf[js.Array[StringDictionary[ValuesType]]]
-  inline def apply[ValuesType /* <: js.Any */](textColumns: String, options: Options[ValuesType]): js.Array[StringDictionary[ValuesType]] = (^.asInstanceOf[js.Dynamic].apply(textColumns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[StringDictionary[ValuesType]]]
-  
   @JSImport("parse-columns", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  trait Options[ValuesType /* <: js.Any */] extends StObject {
+  inline def default[Value](textColumns: String): js.Array[Record[String, Value]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(textColumns.asInstanceOf[js.Any]).asInstanceOf[js.Array[Record[String, Value]]]
+  inline def default[Value](textColumns: String, options: Options[Value]): js.Array[Record[String, Value]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(textColumns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Record[String, Value]]]
+  
+  trait Options[Value] extends StObject {
     
     /**
-    		Headers to use instead of the existing ones.
-    		*/
+    	Headers to use instead of the existing ones.
+    	*/
     val headers: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
-    		Separator to split columns on.
-    		@default ' '
-    		*/
+    	Separator to split columns on.
+    	@default ' '
+    	*/
     val separator: js.UndefOr[String] = js.undefined
     
     /**
-    		Transform elements.
-    		Useful for being able to cleanup or change the type of elements.
-    		*/
+    	Transform elements.
+    	Useful for being able to cleanup or change the type of elements.
+    	*/
     val transform: js.UndefOr[
         js.Function4[
           /* element */ String, 
           /* header */ String, 
           /* columnIndex */ Double, 
           /* rowIndex */ Double, 
-          ValuesType
+          Value
         ]
       ] = js.undefined
   }
   object Options {
     
-    inline def apply[ValuesType /* <: js.Any */](): Options[ValuesType] = {
+    inline def apply[Value](): Options[Value] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options[ValuesType]]
+      __obj.asInstanceOf[Options[Value]]
     }
     
-    extension [Self <: Options[?], ValuesType /* <: js.Any */](x: Self & Options[ValuesType]) {
+    extension [Self <: Options[?], Value](x: Self & Options[Value]) {
       
       inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
       inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
       inline def setTransform(
-        value: (/* element */ String, /* header */ String, /* columnIndex */ Double, /* rowIndex */ Double) => ValuesType
+        value: (/* element */ String, /* header */ String, /* columnIndex */ Double, /* rowIndex */ Double) => Value
       ): Self = StObject.set(x, "transform", js.Any.fromFunction4(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)

@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientProdTtSasportal.anon
 
-import typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasportal.SasPortalValidateInstallerRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,9 +34,6 @@ trait FieldsKey extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Request body */
-  var resource: SasPortalValidateInstallerRequest
-  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -46,8 +42,8 @@ trait FieldsKey extends StObject {
 }
 object FieldsKey {
   
-  inline def apply(resource: SasPortalValidateInstallerRequest): FieldsKey = {
-    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
+  inline def apply(): FieldsKey = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldsKey]
   }
   
@@ -88,8 +84,6 @@ object FieldsKey {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setResource(value: SasPortalValidateInstallerRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

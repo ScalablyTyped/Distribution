@@ -10,13 +10,13 @@ Dynamic Web TWAIN is a TWAIN/ICA/SANE-based scanning SDK software specifically d
 | ------------------ | :-------------: |
 | Full name          | dwt |
 | Keywords           | TWAIN, JavaScript, document, scanning, web, browser, cross-platform, scanner, document management, HTML5 scan, JavaScript scan, Web scan, HTML5 scanner, JavaScript scanner, web scanner, HTML5 scanning, JavaScript scanning, Web scanning, TWAIN, WIA, Web TWAIN, document scanning, SANE |
-| # releases         | 25 |
-| # dependents       | 2 |
-| # downloads        | 145768 |
-| # stars            | 0 |
+| # releases         | 36 |
+| # dependents       | 0.0 |
+| # downloads        | 33847.333333333336 |
+| # stars            | 40.0 |
 
 ## Links
-- [Homepage](https://www.dynamsoft.com/Products/WebTWAIN_Overview.aspx)
+- [Homepage](https://www.dynamsoft.com/web-twain/overview/)
 - [Bugs](https://github.com/Dynamsoft/Dynamic-Web-TWAIN/issues)
 - [Repository](https://github.com/Dynamsoft/Dynamic-Web-TWAIN)
 - [Npm](https://www.npmjs.com/package/dwt)

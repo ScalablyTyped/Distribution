@@ -17,6 +17,11 @@ trait PlotNetworkgraphLinkOptions extends StObject {
   var dashStyle: js.UndefOr[String] = js.undefined
   
   /**
+    * (Highcharts) Opacity of the link between two nodes.
+    */
+  var opacity: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Highcharts) Width (px) of the link between two nodes.
     */
   var width: js.UndefOr[Double] = js.undefined
@@ -37,6 +42,10 @@ object PlotNetworkgraphLinkOptions {
     inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

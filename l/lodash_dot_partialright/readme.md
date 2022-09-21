@@ -10,10 +10,10 @@ The lodash method `_.partialRight` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.partialright |
 | Keywords           | lodash-modularized, partialright |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 8713689 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 637861.3333333334 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

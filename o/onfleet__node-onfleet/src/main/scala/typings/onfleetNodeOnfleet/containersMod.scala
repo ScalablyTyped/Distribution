@@ -14,19 +14,29 @@ object containersMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Containers", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
-       with Container
+       with Container {
+    
+    /* CompleteClass */
+    override def get(id: String, group: organizations | teams | workers): js.Promise[OnfleetContainer] = js.native
+  }
   
-  @js.native
   trait Container extends StObject {
     
-    @JSName("get")
-    def get_organizations(id: String, group: organizations): js.Promise[OnfleetContainer] = js.native
-    @JSName("get")
-    def get_teams(id: String, group: teams): js.Promise[OnfleetContainer] = js.native
-    @JSName("get")
-    def get_workers(id: String, group: workers): js.Promise[OnfleetContainer] = js.native
+    def get(id: String, group: organizations | teams | workers): js.Promise[OnfleetContainer]
+  }
+  object Container {
+    
+    inline def apply(get: (String, organizations | teams | workers) => js.Promise[OnfleetContainer]): Container = {
+      val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
+      __obj.asInstanceOf[Container]
+    }
+    
+    extension [Self <: Container](x: Self) {
+      
+      inline def setGet(value: (String, organizations | teams | workers) => js.Promise[OnfleetContainer]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    }
   }
   
   trait OnfleetContainer extends StObject {
@@ -75,7 +85,7 @@ object containersMod {
       
       inline def setTasks(value: js.Array[String]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
       
-      inline def setTasksVarargs(value: String*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+      inline def setTasksVarargs(value: String*): Self = StObject.set(x, "tasks", js.Array(value*))
       
       inline def setTimeCreated(value: Double): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
       

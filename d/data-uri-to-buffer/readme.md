@@ -1,7 +1,7 @@
 
 # Scala.js typings for data-uri-to-buffer
 
-Typings are for version 3.0.1
+Typings are for version 4.0.0
 
 ## Library description:
 Generate a Buffer instance from a Data URI string
@@ -10,10 +10,10 @@ Generate a Buffer instance from a Data URI string
 | ------------------ | :-------------: |
 | Full name          | data-uri-to-buffer |
 | Keywords           | data, uri, datauri, data-uri, buffer, convert, rfc2397, 2397 |
-| # releases         | 5 |
-| # dependents       | 64 |
-| # downloads        | 97975775 |
-| # stars            | 5 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7382521666666668E7 |
+| # stars            | 79.0 |
 
 ## Links
 - [Homepage](https://github.com/TooTallNate/node-data-uri-to-buffer)

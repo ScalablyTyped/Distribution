@@ -12,12 +12,12 @@ trait CreateMonitoringScheduleRequest extends StObject {
   var MonitoringScheduleConfig: typings.awsSdk.sagemakerMod.MonitoringScheduleConfig
   
   /**
-    * The name of the monitoring schedule. The name must be unique within an AWS Region within an AWS account.
+    * The name of the monitoring schedule. The name must be unique within an Amazon Web Services Region within an Amazon Web Services account.
     */
   var MonitoringScheduleName: typings.awsSdk.sagemakerMod.MonitoringScheduleName
   
   /**
-    * (Optional) An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide.
+    * (Optional) An array of key-value pairs. For more information, see Using Cost Allocation Tags in the Amazon Web Services Billing and Cost Management User Guide.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
@@ -38,6 +38,6 @@ object CreateMonitoringScheduleRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

@@ -22,5 +22,5 @@ trait ContentScript extends StObject {
   var label: String = js.native
   
   def onMessage(): Unit = js.native
-  def onMessage(message: js.Any): Unit = js.native
+  def onMessage(message: Any): Unit = js.native
 }

@@ -11,7 +11,7 @@ object cascaderMod {
   
   @JSImport("rmc-cascader/lib/Cascader", JSImport.Default)
   @js.native
-  class default () extends Cascader
+  open class default () extends Cascader
   object default {
     
     /* static member */
@@ -49,17 +49,16 @@ object cascaderMod {
   }
   
   @js.native
-  trait Cascader
-    extends Component[ICascaderProps, js.Any, js.Any] {
+  trait Cascader extends Component[ICascaderProps, Any, Any] {
     
     @JSName("componentWillReceiveProps")
-    def componentWillReceiveProps_MCascader(nextProps: js.Any): Unit = js.native
+    def componentWillReceiveProps_MCascader(nextProps: Any): Unit = js.native
     
-    def getCols(): js.Any = js.native
+    def getCols(): Any = js.native
     
-    def getValue(d: js.Any, `val`: js.Any): js.Any = js.native
+    def getValue(d: Any, `val`: Any): Any = js.native
     
-    def onValueChange(value: js.Any, index: js.Any): Unit = js.native
+    def onValueChange(value: Any, index: Any): Unit = js.native
     
     @JSName("state")
     var state_Cascader: Value = js.native

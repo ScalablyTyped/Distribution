@@ -11,9 +11,9 @@ Pure JavaScript image gallery component for iOS and Android
 | Full name          | react-native-image-gallery |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 126452 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 11533.0 |
+| # stars            | 652.0 |
 
 ## Links
 - [Homepage](https://github.com/archriss/react-native-image-gallery#readme)

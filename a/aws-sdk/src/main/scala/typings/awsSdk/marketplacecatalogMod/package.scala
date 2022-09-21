@@ -5,15 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ARN = java.lang.String
+type ARN = String
 
-type Catalog = java.lang.String
+type Catalog = String
 
-type ChangeSetDescription = js.Array[typings.awsSdk.marketplacecatalogMod.ChangeSummary]
+type ChangeName = String
 
-type ChangeSetName = java.lang.String
+type ChangeSetDescription = js.Array[ChangeSummary]
 
-type ChangeSetSummaryList = js.Array[typings.awsSdk.marketplacecatalogMod.ChangeSetSummaryListItem]
+type ChangeSetName = String
+
+type ChangeSetSummaryList = js.Array[ChangeSetSummaryListItem]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PREPARING
@@ -23,61 +25,69 @@ type ChangeSetSummaryList = js.Array[typings.awsSdk.marketplacecatalogMod.Change
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type ChangeStatus = typings.awsSdk.marketplacecatalogMod._ChangeStatus | java.lang.String
+type ChangeStatus = _ChangeStatus | String
 
-type ChangeType = java.lang.String
+type ChangeType = String
 
-type ClientRequestToken = java.lang.String
+type ClientRequestToken = String
 
-type DateTimeISO8601 = java.lang.String
+type DateTimeISO8601 = String
 
-type EntitySummaryList = js.Array[typings.awsSdk.marketplacecatalogMod.EntitySummary]
+type EntityNameString = String
 
-type EntityType = java.lang.String
+type EntitySummaryList = js.Array[EntitySummary]
 
-type ErrorDetailList = js.Array[typings.awsSdk.marketplacecatalogMod.ErrorDetail]
+type EntityType = String
+
+type ErrorCodeString = String
+
+type ErrorDetailList = js.Array[ErrorDetail]
+
+type ExceptionMessageContent = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CLIENT_ERROR
   - typings.awsSdk.awsSdkStrings.SERVER_FAULT
   - java.lang.String
 */
-type FailureCode = typings.awsSdk.marketplacecatalogMod._FailureCode | java.lang.String
+type FailureCode = _FailureCode | String
 
-type FilterList = js.Array[typings.awsSdk.marketplacecatalogMod.Filter]
+type FilterList = js.Array[Filter]
 
-type FilterName = java.lang.String
+type FilterName = String
 
-type Identifier = java.lang.String
+type FilterValueContent = String
 
-type Json = java.lang.String
+type Identifier = String
 
-type MaxResultInteger = scala.Double
+type Json = String
 
-type NextToken = java.lang.String
+type MaxResultInteger = Double
 
-type RequestedChangeList = js.Array[typings.awsSdk.marketplacecatalogMod.Change]
+type NextToken = String
 
-type ResourceId = java.lang.String
+type RequestedChangeList = js.Array[Change]
 
-type ResourceIdList = js.Array[typings.awsSdk.marketplacecatalogMod.ResourceId]
+type ResourceId = String
 
-type SortBy = java.lang.String
+type ResourceIdList = js.Array[ResourceId]
+
+type SortBy = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASCENDING
   - typings.awsSdk.awsSdkStrings.DESCENDING
   - java.lang.String
 */
-type SortOrder = typings.awsSdk.marketplacecatalogMod._SortOrder | java.lang.String
+type SortOrder = _SortOrder | String
 
-type StringValue = java.lang.String
+type ValueList = js.Array[FilterValueContent]
 
-type ValueList = js.Array[typings.awsSdk.marketplacecatalogMod.StringValue]
+type VisibilityValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-09-17`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.marketplacecatalogMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

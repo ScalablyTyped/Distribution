@@ -10,10 +10,10 @@ object insertLinkMod {
   
   @JSImport("material-ui/svg-icons/editor/insert-link", JSImport.Default)
   @js.native
-  class default () extends EditorInsertLink
+  open class default () extends EditorInsertLink
   
   @JSImport("material-ui/svg-icons/editor/insert-link", "EditorInsertLink")
   @js.native
-  class EditorInsertLink ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorInsertLink ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DashboardStateExcelExportPosition")
 @js.native
-class DashboardStateExcelExportPosition ()
+open class DashboardStateExcelExportPosition ()
   extends StObject
      with typings.devexpressWeb.DashboardStateExcelExportPosition
 object DashboardStateExcelExportPosition {

@@ -17,7 +17,7 @@ object paddingMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/padding", "ZeroPadding2D")
   @js.native
-  class ZeroPadding2D () extends Layer {
+  open class ZeroPadding2D () extends Layer {
     def this(args: ZeroPadding2DLayerArgs) = this()
     
     val dataFormat: DataFormat = js.native

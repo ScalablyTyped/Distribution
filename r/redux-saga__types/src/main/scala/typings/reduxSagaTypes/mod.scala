@@ -1,7 +1,6 @@
 package typings.reduxSagaTypes
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.redux.mod.Action
 import typings.reduxSagaTypes.reduxSagaTypesBooleans.`false`
 import typings.reduxSagaTypes.reduxSagaTypesBooleans.`true`
 import typings.reduxSagaTypes.reduxSagaTypesStrings.`@@redux-sagaSlashCHANNEL_END`
@@ -13,15 +12,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  type ActionMatchingPattern[P /* <: ActionPattern[Action[js.Any]] */] = ActionMatchingSubPattern[
+  trait Action[T /* <: String */] extends StObject {
+    
+    var `type`: T
+  }
+  object Action {
+    
+    inline def apply[T /* <: String */](`type`: T): Action[T] = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Action[T]]
+    }
+    
+    extension [Self <: Action[?], T /* <: String */](x: Self & Action[T]) {
+      
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type ActionMatchingPattern[P /* <: ActionPattern[Action[String]] */] = ActionMatchingSubPattern[
     (/* import warning: importer.ImportType#apply Failed type conversion: P[number] */ js.Any) | P
   ]
   
-  type ActionMatchingSubPattern[P /* <: ActionSubPattern[Action[js.Any]] */] = Action[js.Any]
+  type ActionMatchingSubPattern[P /* <: ActionSubPattern[Action[String]] */] = Action[String]
   
-  type ActionPattern[Guard /* <: Action[js.Any] */] = ActionSubPattern[Guard] | js.Array[ActionSubPattern[Guard]]
+  type ActionPattern[Guard /* <: Action[String] */] = ActionSubPattern[Guard] | js.Array[ActionSubPattern[Guard]]
   
-  type ActionSubPattern[Guard /* <: Action[js.Any] */] = (GuardPredicate[Guard, Action[js.Any]]) | StringableActionCreator[Guard] | Predicate[Action[js.Any]] | ActionType
+  type ActionSubPattern[Guard /* <: Action[String] */] = (GuardPredicate[Guard, Action[String]]) | StringableActionCreator[Guard] | Predicate[Action[String]] | ActionType
   
   type ActionType = String | Double | js.Symbol
   
@@ -68,7 +85,7 @@ object mod {
   }
   
   @js.native
-  trait Channel[T] extends StObject {
+  trait Channel[T /* <: NotUndefined */] extends StObject {
     
     /**
       * Closes the channel which means no more puts will be allowed. All pending
@@ -139,7 +156,7 @@ object mod {
       
       inline def setPayload(value: CombinatorEffectDescriptor[E]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      inline def setPayloadVarargs(value: E*): Self = StObject.set(x, "payload", js.Array(value :_*))
+      inline def setPayloadVarargs(value: E*): Self = StObject.set(x, "payload", js.Array(value*))
       
       inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -165,17 +182,19 @@ object mod {
     }
   }
   
-  type Effect[T] = (SimpleEffect[T, js.Any]) | (CombinatorEffect[T, js.Any])
+  type Effect[T] = (SimpleEffect[T, Any]) | (CombinatorEffect[T, Any])
   
   type GuardPredicate[G /* <: T */, T] = js.Function1[/* arg */ T, /* is G */ Boolean]
+  
+  type NotUndefined = js.Object | Null
   
   type Pattern[T] = SubPattern[T] | js.Array[SubPattern[T]]
   
   type Predicate[T] = js.Function1[/* arg */ T, Boolean]
   
-  type Saga[Args /* <: js.Array[js.Any] */] = js.Function1[/* args */ Args, IterableIterator[js.Any]]
+  type Saga[Args /* <: js.Array[Any] */] = js.Function1[/* args */ Args, IterableIterator[Any]]
   
-  type SagaIterator = IterableIterator[StrictEffect[js.Any]]
+  type SagaIterator = IterableIterator[StrictEffect[Any]]
   
   trait SimpleEffect[T, P] extends StObject {
     
@@ -209,30 +228,19 @@ object mod {
     }
   }
   
-  trait StrictCombinatorEffect[T]
-    extends StObject
-       with CombinatorEffect[T, StrictEffect[T]]
-  object StrictCombinatorEffect {
-    
-    inline def apply[T](payload: CombinatorEffectDescriptor[StrictEffect[T]], `type`: T): StrictCombinatorEffect[T] = {
-      val __obj = js.Dynamic.literal(combinator = true, payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("@@redux-saga/IO")(true)
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[StrictCombinatorEffect[T]]
-    }
-  }
+  type StrictCombinatorEffect[T] = CombinatorEffect[T, StrictEffect[T]]
   
-  type StrictEffect[T] = (SimpleEffect[T, js.Any]) | StrictCombinatorEffect[T]
+  type StrictEffect[T] = (SimpleEffect[T, Any]) | Any
   
   @js.native
-  trait StringableActionCreator[A /* <: Action[js.Any] */] extends StObject {
+  trait StringableActionCreator[A /* <: Action[String] */] extends StObject {
     
-    def apply(args: js.Any*): A = js.native
+    def apply(args: Any*): A = js.native
   }
   
-  type SubPattern[T] = Predicate[T] | StringableActionCreator[Action[js.Any]] | ActionType
+  type SubPattern[T] = Predicate[T] | StringableActionCreator[Action[String]] | ActionType
   
-  trait Task extends StObject {
+  trait Task[T] extends StObject {
     
     /**
       * Cancels the task (If it is still running)
@@ -242,7 +250,7 @@ object mod {
     /**
       * Returns task thrown error. `undefined` if task is still running
       */
-    def error(): js.UndefOr[js.Any]
+    def error(): js.UndefOr[Any]
     
     /**
       * Returns true if the task has been cancelled
@@ -257,7 +265,7 @@ object mod {
     /**
       * Returns task return value. `undefined` if task is still running
       */
-    def result[T](): js.UndefOr[T]
+    def result[R](): js.UndefOr[R]
     
     def setContext[C /* <: js.Object */](props: Partial[C]): Unit
     
@@ -266,38 +274,38 @@ object mod {
       * - resolved with task's return value
       * - rejected with task's thrown error
       */
-    def toPromise[T](): js.Promise[T]
+    def toPromise[R](): js.Promise[R]
   }
   object Task {
     
-    inline def apply(
+    inline def apply[T](
       cancel: () => Unit,
-      error: () => js.UndefOr[js.Any],
+      error: () => js.UndefOr[Any],
       isCancelled: () => Boolean,
       isRunning: () => Boolean,
-      result: () => js.UndefOr[js.Any],
-      setContext: Partial[js.Any] => Unit,
-      toPromise: () => js.Promise[js.Any]
-    ): Task = {
+      result: () => js.UndefOr[Any],
+      setContext: Partial[Any] => Unit,
+      toPromise: () => js.Promise[Any]
+    ): Task[T] = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), error = js.Any.fromFunction0(error), isCancelled = js.Any.fromFunction0(isCancelled), isRunning = js.Any.fromFunction0(isRunning), result = js.Any.fromFunction0(result), setContext = js.Any.fromFunction1(setContext), toPromise = js.Any.fromFunction0(toPromise))
-      __obj.asInstanceOf[Task]
+      __obj.asInstanceOf[Task[T]]
     }
     
-    extension [Self <: Task](x: Self) {
+    extension [Self <: Task[?], T](x: Self & Task[T]) {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      inline def setError(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
+      inline def setError(value: () => js.UndefOr[Any]): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
       
       inline def setIsCancelled(value: () => Boolean): Self = StObject.set(x, "isCancelled", js.Any.fromFunction0(value))
       
       inline def setIsRunning(value: () => Boolean): Self = StObject.set(x, "isRunning", js.Any.fromFunction0(value))
       
-      inline def setResult(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "result", js.Any.fromFunction0(value))
+      inline def setResult(value: () => js.UndefOr[Any]): Self = StObject.set(x, "result", js.Any.fromFunction0(value))
       
-      inline def setSetContext(value: Partial[js.Any] => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+      inline def setSetContext(value: Partial[Any] => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
       
-      inline def setToPromise(value: () => js.Promise[js.Any]): Self = StObject.set(x, "toPromise", js.Any.fromFunction0(value))
+      inline def setToPromise(value: () => js.Promise[Any]): Self = StObject.set(x, "toPromise", js.Any.fromFunction0(value))
     }
   }
 }

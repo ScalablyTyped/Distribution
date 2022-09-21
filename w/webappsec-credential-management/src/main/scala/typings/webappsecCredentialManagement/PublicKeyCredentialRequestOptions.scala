@@ -38,7 +38,7 @@ object PublicKeyCredentialRequestOptions {
     
     inline def setAllowCredentialsUndefined: Self = StObject.set(x, "allowCredentials", js.undefined)
     
-    inline def setAllowCredentialsVarargs(value: PublicKeyCredentialDescriptor*): Self = StObject.set(x, "allowCredentials", js.Array(value :_*))
+    inline def setAllowCredentialsVarargs(value: PublicKeyCredentialDescriptor*): Self = StObject.set(x, "allowCredentials", js.Array(value*))
     
     inline def setChallenge(value: BufferSource): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     

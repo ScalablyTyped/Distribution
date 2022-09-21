@@ -1,7 +1,7 @@
 
 # Scala.js typings for saxes
 
-Typings are for version 5.0.1
+Typings are for version 6.0.0
 
 ## Library description:
 An evented streaming XML parser in JavaScript
@@ -10,10 +10,10 @@ An evented streaming XML parser in JavaScript
 | ------------------ | :-------------: |
 | Full name          | saxes |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 46 |
-| # downloads        | 197788155 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 6.6083335666666664E7 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](https://github.com/lddubeau/saxes#readme)

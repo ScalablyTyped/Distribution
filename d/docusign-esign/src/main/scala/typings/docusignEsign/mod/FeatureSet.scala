@@ -74,7 +74,7 @@ object FeatureSet {
     
     inline def setCurrencyFeatureSetPricesVarargs(
       value: (/* Information about the price and currency associated with the feature set. Reserved for internal DocuSign use only. */ CurrencyFeatureSetPrice)*
-    ): Self = StObject.set(x, "currencyFeatureSetPrices", js.Array(value :_*))
+    ): Self = StObject.set(x, "currencyFeatureSetPrices", js.Array(value*))
     
     inline def setEnvelopeFee(value: String): Self = StObject.set(x, "envelopeFee", value.asInstanceOf[js.Any])
     

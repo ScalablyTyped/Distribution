@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientXYDiagramPane")
 @js.native
-class ASPxClientXYDiagramPane ()
+open class ASPxClientXYDiagramPane ()
   extends StObject
      with typings.devexpressWeb.ASPxClientXYDiagramPane {
   

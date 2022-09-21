@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ResponsesObject
   extends StObject
-     with /* index */ StringDictionary[Response | js.Any] {
+     with /* index */ StringDictionary[Response | Any] {
   
   var default: Response
 }

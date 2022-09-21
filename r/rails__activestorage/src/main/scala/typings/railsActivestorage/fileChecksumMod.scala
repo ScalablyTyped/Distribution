@@ -1,6 +1,5 @@
 package typings.railsActivestorage
 
-import typings.std.Error
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,6 +13,6 @@ object fileChecksumMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(file: File, callback: js.Function2[/* error */ Error, /* checksum */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def create(file: File, callback: js.Function2[/* error */ js.Error, /* checksum */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

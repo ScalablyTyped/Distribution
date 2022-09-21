@@ -11,7 +11,7 @@ trait FileTypes extends StObject {
   
   def Add(FileType: MsoFileType): Unit = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   

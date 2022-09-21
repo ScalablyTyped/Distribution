@@ -35,7 +35,7 @@ object OnlineId {
   @JSGlobal("Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator")
   @js.native
   /** Creates an instance of the OnlineIdAuthenticator . */
-  class OnlineIdAuthenticator ()
+  open class OnlineIdAuthenticator ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator
   
@@ -62,7 +62,7 @@ object OnlineId {
   /** Provides the ability for an app to specify the service and policy that is used to authenticate a Live user to obtain identity properties and tickets. */
   @JSGlobal("Windows.Security.Authentication.OnlineId.OnlineIdServiceTicketRequest")
   @js.native
-  class OnlineIdServiceTicketRequest protected ()
+  open class OnlineIdServiceTicketRequest protected ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Authentication.OnlineId.OnlineIdServiceTicketRequest {
     /**

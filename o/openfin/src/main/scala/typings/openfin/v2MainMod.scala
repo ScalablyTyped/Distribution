@@ -20,14 +20,14 @@ object v2MainMod {
   
   @JSImport("openfin/_v2/main", "Application")
   @js.native
-  class Application protected ()
+  open class Application protected ()
     extends typings.openfin.applicationMod.Application {
     def this(wire: default, identity: Identity) = this()
   }
   
   @JSImport("openfin/_v2/main", "ChannelClient")
   @js.native
-  class ChannelClient protected ()
+  open class ChannelClient protected ()
     extends typings.openfin.clientMod.ChannelClient {
     def this(
       routingInfo: RoutingInfo,
@@ -38,49 +38,49 @@ object v2MainMod {
   
   @JSImport("openfin/_v2/main", "ChannelProvider")
   @js.native
-  class ChannelProvider protected ()
+  open class ChannelProvider protected ()
     extends typings.openfin.providerMod.ChannelProvider {
     def this(providerIdentity: ProviderIdentity, send: FnCall) = this()
   }
   
   @JSImport("openfin/_v2/main", "Fin")
   @js.native
-  class Fin protected ()
+  open class Fin protected ()
     extends typings.openfin.finMod.default {
     def this(wire: default) = this()
   }
   
   @JSImport("openfin/_v2/main", "Frame")
   @js.native
-  class Frame protected ()
+  open class Frame protected ()
     extends typings.openfin.frameFrameMod.Frame {
     def this(wire: default, identity: Identity) = this()
   }
   
   @JSImport("openfin/_v2/main", "Notification")
   @js.native
-  class Notification protected ()
+  open class Notification protected ()
     extends typings.openfin.notificationMod.Notification {
     def this(wire: default, options: NotificationOptions) = this()
   }
   
   @JSImport("openfin/_v2/main", "System")
   @js.native
-  class System protected ()
+  open class System protected ()
     extends typings.openfin.systemSystemMod.default {
     def this(wire: default) = this()
   }
   
   @JSImport("openfin/_v2/main", "View")
   @js.native
-  class View protected ()
+  open class View protected ()
     extends typings.openfin.viewViewMod.View {
     def this(wire: default, identity: Identity) = this()
   }
   
   @JSImport("openfin/_v2/main", "Window")
   @js.native
-  class Window protected ()
+  open class Window protected ()
     extends typings.openfin.windowWindowMod.Window {
     def this(wire: default, identity: Identity) = this()
   }

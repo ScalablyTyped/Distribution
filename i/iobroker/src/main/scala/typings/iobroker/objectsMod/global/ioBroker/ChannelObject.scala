@@ -6,10 +6,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChannelObject
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.iobroker.objectsMod.global.ioBroker._ObjectIdToObjectType because Already inherited */ trait ChannelObject
   extends StObject
      with BaseObject
-     with AnyObject {
+     with AdapterScopedObject
+     with AnyObject
+     with _InferGetObjectViewItemType[Any, Any] {
   
   @JSName("common")
   var common_ChannelObject: ChannelCommon
@@ -19,7 +22,7 @@ trait ChannelObject
 }
 object ChannelObject {
   
-  inline def apply(_id: String, common: ChannelCommon, native: Record[String, js.Any]): ChannelObject = {
+  inline def apply(_id: String, common: ChannelCommon, native: Record[String, Any]): ChannelObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("channel")
     __obj.asInstanceOf[ChannelObject]

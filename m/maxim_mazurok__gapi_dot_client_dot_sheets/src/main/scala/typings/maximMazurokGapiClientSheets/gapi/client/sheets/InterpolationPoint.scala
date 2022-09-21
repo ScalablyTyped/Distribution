@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InterpolationPoint extends StObject {
   
-  /** The color this interpolation point should use. */
+  /** The color this interpolation point should use. Deprecated: Use color_style. */
   var color: js.UndefOr[Color] = js.undefined
   
   /** The color this interpolation point should use. If color is also set, this field takes precedence. */

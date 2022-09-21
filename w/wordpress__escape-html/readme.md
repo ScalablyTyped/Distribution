@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__escape-html
 
-Typings are for version 1.10.0
+Typings are for version 2.17.0
 
 ## Library description:
 Escape HTML utils.
@@ -10,10 +10,10 @@ Escape HTML utils.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/escape-html |
 | Keywords           | wordpress, gutenberg, html |
-| # releases         | 14 |
-| # dependents       | 5 |
-| # downloads        | 1372900 |
-| # stars            | 0 |
+| # releases         | 47 |
+| # dependents       | 0.0 |
+| # downloads        | 295982.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/escape-html/README.md)

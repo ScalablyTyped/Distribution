@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Write a Cloud Audit log
-  */
 trait SchemaLogConfigCloudAuditOptions extends StObject {
   
   /**
-    * Information used by the Cloud Audit Logging pipeline.
+    * This is deprecated and has no effect. Do not use.
     */
   var authorizationLoggingOptions: js.UndefOr[SchemaAuthorizationLoggingOptions] = js.undefined
   
   /**
-    * The log_name to populate in the Cloud Audit Record.
+    * This is deprecated and has no effect. Do not use.
     */
-  var logName: js.UndefOr[String] = js.undefined
+  var logName: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLogConfigCloudAuditOptions {
   
@@ -33,6 +30,8 @@ object SchemaLogConfigCloudAuditOptions {
     inline def setAuthorizationLoggingOptionsUndefined: Self = StObject.set(x, "authorizationLoggingOptions", js.undefined)
     
     inline def setLogName(value: String): Self = StObject.set(x, "logName", value.asInstanceOf[js.Any])
+    
+    inline def setLogNameNull: Self = StObject.set(x, "logName", null)
     
     inline def setLogNameUndefined: Self = StObject.set(x, "logName", js.undefined)
   }

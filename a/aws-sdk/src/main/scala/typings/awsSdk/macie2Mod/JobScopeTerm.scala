@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JobScopeTerm extends StObject {
   
   /**
-    * A property-based condition that defines a property, operator, and one or more values for including or excluding an object from the job.
+    * A property-based condition that defines a property, operator, and one or more values for including or excluding objects from the job.
     */
   var simpleScopeTerm: js.UndefOr[SimpleScopeTerm] = js.undefined
   
   /**
-    * A tag-based condition that defines the operator and tag keys or tag key and value pairs for including or excluding an object from the job.
+    * A tag-based condition that defines the operator and tag keys or tag key and value pairs for including or excluding objects from the job.
     */
   var tagScopeTerm: js.UndefOr[TagScopeTerm] = js.undefined
 }

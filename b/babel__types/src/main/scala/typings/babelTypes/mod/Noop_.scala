@@ -5,10 +5,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Noop_
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.babelTypes.mod._Node because Already inherited */ trait Noop_
   extends StObject
      with BaseNode
-     with _Node {
+     with Miscellaneous {
   
   @JSName("type")
   var type_Noop_ : Noop

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.postmanCollection.mod.PropertyDefinition because Already inherited
 - typings.postmanCollection.mod.ScriptDefinition because var conflicts: description, disabled, id, name. Inlined `type`, src, exec */ @JSImport("postman-collection", "Script")
 @js.native
-class Script () extends Property[ScriptDefinition] {
+open class Script () extends Property[ScriptDefinition] {
   def this(options: String) = this()
   def this(options: js.Array[String]) = this()
   def this(options: ScriptDefinition) = this()
@@ -33,5 +33,5 @@ object Script {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isScript(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScript")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isScript(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScript")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

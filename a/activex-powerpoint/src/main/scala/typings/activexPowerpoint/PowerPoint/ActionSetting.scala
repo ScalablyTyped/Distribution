@@ -17,7 +17,7 @@ trait ActionSetting extends StObject {
   
   val Hyperlink: typings.activexPowerpoint.PowerPoint.Hyperlink
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.ActionSetting_typekey")
   var PowerPointDotActionSetting_typekey: ActionSetting
@@ -38,7 +38,7 @@ object ActionSetting {
     AnimateAction: MsoTriState,
     Application: Application,
     Hyperlink: Hyperlink,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotActionSetting_typekey: ActionSetting,
     Run: String,
     ShowAndReturn: MsoTriState,
@@ -62,7 +62,7 @@ object ActionSetting {
     
     inline def setHyperlink(value: Hyperlink): Self = StObject.set(x, "Hyperlink", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotActionSetting_typekey(value: ActionSetting): Self = StObject.set(x, "PowerPoint.ActionSetting_typekey", value.asInstanceOf[js.Any])
     

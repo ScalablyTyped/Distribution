@@ -11,7 +11,7 @@ trait Relationship[ResourceType] extends StObject {
   
   var href: String
   
-  var meta: js.UndefOr[js.Any] = js.undefined
+  var meta: js.UndefOr[Any] = js.undefined
   
   var next: js.UndefOr[String] = js.undefined
 }
@@ -26,11 +26,11 @@ object Relationship {
     
     inline def setData(value: js.Array[ResourceType]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: ResourceType*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ResourceType*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     

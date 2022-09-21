@@ -8,5 +8,5 @@ object invalidAuthorArnExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/InvalidAuthorArnException", "InvalidAuthorArnException")
   @js.native
-  val InvalidAuthorArnException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidAuthorArnException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

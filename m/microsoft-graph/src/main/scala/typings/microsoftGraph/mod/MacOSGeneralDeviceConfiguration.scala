@@ -66,7 +66,7 @@ object MacOSGeneralDeviceConfiguration {
     
     inline def setCompliantAppsListUndefined: Self = StObject.set(x, "compliantAppsList", js.undefined)
     
-    inline def setCompliantAppsListVarargs(value: AppListItem*): Self = StObject.set(x, "compliantAppsList", js.Array(value :_*))
+    inline def setCompliantAppsListVarargs(value: AppListItem*): Self = StObject.set(x, "compliantAppsList", js.Array(value*))
     
     inline def setEmailInDomainSuffixes(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "emailInDomainSuffixes", value.asInstanceOf[js.Any])
     
@@ -74,7 +74,7 @@ object MacOSGeneralDeviceConfiguration {
     
     inline def setEmailInDomainSuffixesUndefined: Self = StObject.set(x, "emailInDomainSuffixes", js.undefined)
     
-    inline def setEmailInDomainSuffixesVarargs(value: String*): Self = StObject.set(x, "emailInDomainSuffixes", js.Array(value :_*))
+    inline def setEmailInDomainSuffixesVarargs(value: String*): Self = StObject.set(x, "emailInDomainSuffixes", js.Array(value*))
     
     inline def setPasswordBlockSimple(value: Boolean): Self = StObject.set(x, "passwordBlockSimple", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ object libComboBoxMod {
   
   @JSImport("office-ui-fabric-react/lib/ComboBox", "ComboBox")
   @js.native
-  class ComboBox protected ()
+  open class ComboBox protected ()
     extends typings.officeUiFabricReact.comboBoxMod.ComboBox {
     def this(props: IComboBoxProps) = this()
   }
@@ -44,7 +44,7 @@ object libComboBoxMod {
   
   @JSImport("office-ui-fabric-react/lib/ComboBox", "VirtualizedComboBox")
   @js.native
-  class VirtualizedComboBox protected ()
+  open class VirtualizedComboBox protected ()
     extends typings.officeUiFabricReact.comboBoxMod.VirtualizedComboBox {
     def this(props: IComboBoxProps) = this()
   }

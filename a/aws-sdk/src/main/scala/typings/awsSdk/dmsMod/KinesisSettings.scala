@@ -37,12 +37,17 @@ trait KinesisSettings extends StObject {
   var MessageFormat: js.UndefOr[MessageFormatValue] = js.undefined
   
   /**
+    * Set this optional parameter to true to avoid adding a '0x' prefix to raw data in hexadecimal format. For example, by default, DMS adds a '0x' prefix to the LOB column type in hexadecimal format moving from an Oracle source to an Amazon Kinesis target. Use the NoHexPrefix endpoint setting to enable migration of RAW data type columns without adding the '0x' prefix.
+    */
+  var NoHexPrefix: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
     * Prefixes schema and table names to partition values, when the partition type is primary-key-type. Doing this increases data distribution among Kinesis shards. For example, suppose that a SysBench schema has thousands of tables and each table has only limited range for a primary key. In this case, the same primary key is sent from thousands of tables to the same shard, which causes throttling. The default is false.
     */
   var PartitionIncludeSchemaTable: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) for the AWS Identity and Access Management (IAM) role that AWS DMS uses to write to the Kinesis data stream.
+    * The Amazon Resource Name (ARN) for the IAM role that DMS uses to write to the Kinesis data stream. The role must allow the iam:PassRole action.
     */
   var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
   
@@ -83,6 +88,10 @@ object KinesisSettings {
     inline def setMessageFormat(value: MessageFormatValue): Self = StObject.set(x, "MessageFormat", value.asInstanceOf[js.Any])
     
     inline def setMessageFormatUndefined: Self = StObject.set(x, "MessageFormat", js.undefined)
+    
+    inline def setNoHexPrefix(value: BooleanOptional): Self = StObject.set(x, "NoHexPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setNoHexPrefixUndefined: Self = StObject.set(x, "NoHexPrefix", js.undefined)
     
     inline def setPartitionIncludeSchemaTable(value: BooleanOptional): Self = StObject.set(x, "PartitionIncludeSchemaTable", value.asInstanceOf[js.Any])
     

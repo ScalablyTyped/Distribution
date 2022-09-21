@@ -11,51 +11,62 @@ trait SpeechSynthesis
   extends StObject
      with EventTarget {
   
+  /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_voiceschanged(`type`: voiceschanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_voiceschanged(`type`: voiceschanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_voiceschanged(
     `type`: voiceschanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_voiceschanged(
     `type`: voiceschanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   def cancel(): Unit = js.native
   
+  /* standard dom */
   def getVoices(): js.Array[SpeechSynthesisVoice] = js.native
   
-  var onvoiceschanged: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
+  /* standard dom */
+  var onvoiceschanged: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
+  /* standard dom */
   def pause(): Unit = js.native
   
+  /* standard dom */
   val paused: scala.Boolean = js.native
   
+  /* standard dom */
   val pending: scala.Boolean = js.native
   
+  /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_voiceschanged(`type`: voiceschanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_voiceschanged(`type`: voiceschanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_voiceschanged(
     `type`: voiceschanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_voiceschanged(
     `type`: voiceschanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   def resume(): Unit = js.native
   
+  /* standard dom */
   def speak(utterance: SpeechSynthesisUtterance): Unit = js.native
   
+  /* standard dom */
   val speaking: scala.Boolean = js.native
 }

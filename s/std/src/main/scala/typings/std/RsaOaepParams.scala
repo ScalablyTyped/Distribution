@@ -8,9 +8,8 @@ trait RsaOaepParams
   extends StObject
      with Algorithm {
   
-  var label: js.UndefOr[
-    Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-  ] = js.undefined
+  /* standard dom */
+  var label: js.UndefOr[BufferSource] = js.undefined
 }
 object RsaOaepParams {
   
@@ -21,9 +20,7 @@ object RsaOaepParams {
   
   extension [Self <: RsaOaepParams](x: Self) {
     
-    inline def setLabel(
-      value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
-    ): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: BufferSource): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }

@@ -41,6 +41,6 @@ object ShowObjectFull {
     
     inline def setEpisodes(value: js.Array[EpisodeObjectSimplified]): Self = StObject.set(x, "episodes", value.asInstanceOf[js.Any])
     
-    inline def setEpisodesVarargs(value: EpisodeObjectSimplified*): Self = StObject.set(x, "episodes", js.Array(value :_*))
+    inline def setEpisodesVarargs(value: EpisodeObjectSimplified*): Self = StObject.set(x, "episodes", js.Array(value*))
   }
 }

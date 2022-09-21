@@ -15,12 +15,21 @@ trait DeleteObjectStoreEntriesRequest extends StObject {
   
   var objectStoreName: String
   
-  var securityOrigin: String
+  /**
+    * At least and at most one of securityOrigin, storageKey must be specified.
+    * Security origin.
+    */
+  var securityOrigin: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Storage key.
+    */
+  var storageKey: js.UndefOr[String] = js.undefined
 }
 object DeleteObjectStoreEntriesRequest {
   
-  inline def apply(databaseName: String, keyRange: KeyRange, objectStoreName: String, securityOrigin: String): DeleteObjectStoreEntriesRequest = {
-    val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], keyRange = keyRange.asInstanceOf[js.Any], objectStoreName = objectStoreName.asInstanceOf[js.Any], securityOrigin = securityOrigin.asInstanceOf[js.Any])
+  inline def apply(databaseName: String, keyRange: KeyRange, objectStoreName: String): DeleteObjectStoreEntriesRequest = {
+    val __obj = js.Dynamic.literal(databaseName = databaseName.asInstanceOf[js.Any], keyRange = keyRange.asInstanceOf[js.Any], objectStoreName = objectStoreName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteObjectStoreEntriesRequest]
   }
   
@@ -33,5 +42,11 @@ object DeleteObjectStoreEntriesRequest {
     inline def setObjectStoreName(value: String): Self = StObject.set(x, "objectStoreName", value.asInstanceOf[js.Any])
     
     inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityOriginUndefined: Self = StObject.set(x, "securityOrigin", js.undefined)
+    
+    inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
+    
+    inline def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
   }
 }

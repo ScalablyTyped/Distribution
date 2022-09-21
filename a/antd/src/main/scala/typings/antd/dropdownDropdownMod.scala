@@ -1,7 +1,7 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.anon.AdjustX
+import typings.antd.anon.AdjustY
 import typings.antd.antdStrings.click
 import typings.antd.antdStrings.contextMenu
 import typings.antd.antdStrings.hover
@@ -9,6 +9,7 @@ import typings.antd.dropdownButtonMod.DropdownButtonInterface
 import typings.react.mod.CSSProperties
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +25,7 @@ object dropdownDropdownMod extends Shortcut {
     
     var offset: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var overflow: js.UndefOr[AdjustX] = js.undefined
+    var overflow: js.UndefOr[AdjustY] = js.undefined
     
     var points: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
@@ -49,7 +50,7 @@ object dropdownDropdownMod extends Shortcut {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOverflow(value: AdjustX): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: AdjustY): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
       inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
@@ -75,13 +76,46 @@ object dropdownDropdownMod extends Shortcut {
     }
   }
   
-  trait DropDownProps extends StObject {
+  trait DropdownArrowOptions extends StObject {
+    
+    var pointAtCenter: js.UndefOr[Boolean] = js.undefined
+  }
+  object DropdownArrowOptions {
+    
+    inline def apply(): DropdownArrowOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DropdownArrowOptions]
+    }
+    
+    extension [Self <: DropdownArrowOptions](x: Self) {
+      
+      inline def setPointAtCenter(value: Boolean): Self = StObject.set(x, "pointAtCenter", value.asInstanceOf[js.Any])
+      
+      inline def setPointAtCenterUndefined: Self = StObject.set(x, "pointAtCenter", js.undefined)
+    }
+  }
+  
+  @js.native
+  trait DropdownInterface
+    extends StObject
+       with FunctionComponent[DropdownProps] {
+    
+    var Button: DropdownButtonInterface = js.native
+  }
+  
+  trait DropdownProps extends StObject {
     
     var align: js.UndefOr[Align] = js.undefined
     
-    var arrow: js.UndefOr[Boolean] = js.undefined
+    var arrow: js.UndefOr[Boolean | DropdownArrowOptions] = js.undefined
+    
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
+    
+    var destroyPopupOnHide: js.UndefOr[Boolean] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -93,7 +127,15 @@ object dropdownDropdownMod extends Shortcut {
     
     var mouseLeaveDelay: js.UndefOr[Double] = js.undefined
     
+    var onOpenChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
+    
+    /**
+      * @deprecated `onVisibleChange` is deprecated which will be removed in next major version. Please
+      *   use `onOpenChange` instead.
+      */
     var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
+    
+    var open: js.UndefOr[Boolean] = js.undefined
     
     var openClassName: js.UndefOr[String] = js.undefined
     
@@ -111,28 +153,44 @@ object dropdownDropdownMod extends Shortcut {
     
     var trigger: js.UndefOr[js.Array[click | hover | contextMenu]] = js.undefined
     
+    /**
+      * @deprecated `visible` is deprecated which will be removed in next major version. Please use
+      *   `open` instead.
+      */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
-  object DropDownProps {
+  object DropdownProps {
     
-    inline def apply(overlay: ReactElement | OverlayFunc): DropDownProps = {
+    inline def apply(overlay: ReactElement | OverlayFunc): DropdownProps = {
       val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DropDownProps]
+      __obj.asInstanceOf[DropdownProps]
     }
     
-    extension [Self <: DropDownProps](x: Self) {
+    extension [Self <: DropdownProps](x: Self) {
       
       inline def setAlign(value: Align): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      inline def setArrow(value: Boolean): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+      inline def setArrow(value: Boolean | DropdownArrowOptions): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       
       inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
+      
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setDestroyPopupOnHide(value: Boolean): Self = StObject.set(x, "destroyPopupOnHide", value.asInstanceOf[js.Any])
+      
+      inline def setDestroyPopupOnHideUndefined: Self = StObject.set(x, "destroyPopupOnHide", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -154,13 +212,21 @@ object dropdownDropdownMod extends Shortcut {
       
       inline def setMouseLeaveDelayUndefined: Self = StObject.set(x, "mouseLeaveDelay", js.undefined)
       
+      inline def setOnOpenChange(value: /* open */ Boolean => Unit): Self = StObject.set(x, "onOpenChange", js.Any.fromFunction1(value))
+      
+      inline def setOnOpenChangeUndefined: Self = StObject.set(x, "onOpenChange", js.undefined)
+      
       inline def setOnVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
       
       inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
       
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      
       inline def setOpenClassName(value: String): Self = StObject.set(x, "openClassName", value.asInstanceOf[js.Any])
       
       inline def setOpenClassNameUndefined: Self = StObject.set(x, "openClassName", js.undefined)
+      
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
       inline def setOverlay(value: ReactElement | OverlayFunc): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
@@ -190,20 +256,12 @@ object dropdownDropdownMod extends Shortcut {
       
       inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       
-      inline def setTriggerVarargs(value: (click | hover | contextMenu)*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+      inline def setTriggerVarargs(value: (click | hover | contextMenu)*): Self = StObject.set(x, "trigger", js.Array(value*))
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
       inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
-  }
-  
-  @js.native
-  trait DropdownInterface
-    extends StObject
-       with FunctionComponent[DropDownProps] {
-    
-    var Button: DropdownButtonInterface = js.native
   }
   
   type OverlayFunc = js.Function0[ReactElement]
@@ -215,6 +273,8 @@ object dropdownDropdownMod extends Shortcut {
     - typings.antd.antdStrings.bottomLeft
     - typings.antd.antdStrings.bottomCenter
     - typings.antd.antdStrings.bottomRight
+    - typings.antd.antdStrings.top
+    - typings.antd.antdStrings.bottom
   */
   trait Placement extends StObject
   

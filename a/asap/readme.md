@@ -10,10 +10,10 @@ High-priority task queue for Node.js and browsers
 | ------------------ | :-------------: |
 | Full name          | asap |
 | Keywords           | event, task, queue |
-| # releases         | 0 |
-| # dependents       | 161 |
-| # downloads        | 388569839 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.7122305333333336E7 |
+| # stars            | 581.0 |
 
 ## Links
 - [Homepage](https://github.com/kriskowal/asap#readme)

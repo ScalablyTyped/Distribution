@@ -15,6 +15,20 @@ trait IoTEvents extends Service {
   var config_IoTEvents: ConfigBase & ClientConfiguration = js.native
   
   /**
+    * Creates an alarm model to monitor an AWS IoT Events input attribute. You can use the alarm to get notified when the value is outside a specified range. For more information, see Create an alarm model in the AWS IoT Events Developer Guide.
+    */
+  def createAlarmModel(): Request[CreateAlarmModelResponse, AWSError] = js.native
+  def createAlarmModel(callback: js.Function2[/* err */ AWSError, /* data */ CreateAlarmModelResponse, Unit]): Request[CreateAlarmModelResponse, AWSError] = js.native
+  /**
+    * Creates an alarm model to monitor an AWS IoT Events input attribute. You can use the alarm to get notified when the value is outside a specified range. For more information, see Create an alarm model in the AWS IoT Events Developer Guide.
+    */
+  def createAlarmModel(params: CreateAlarmModelRequest): Request[CreateAlarmModelResponse, AWSError] = js.native
+  def createAlarmModel(
+    params: CreateAlarmModelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateAlarmModelResponse, Unit]
+  ): Request[CreateAlarmModelResponse, AWSError] = js.native
+  
+  /**
     * Creates a detector model.
     */
   def createDetectorModel(): Request[CreateDetectorModelResponse, AWSError] = js.native
@@ -41,6 +55,20 @@ trait IoTEvents extends Service {
     params: CreateInputRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateInputResponse, Unit]
   ): Request[CreateInputResponse, AWSError] = js.native
+  
+  /**
+    * Deletes an alarm model. Any alarm instances that were created based on this alarm model are also deleted. This action can't be undone.
+    */
+  def deleteAlarmModel(): Request[DeleteAlarmModelResponse, AWSError] = js.native
+  def deleteAlarmModel(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAlarmModelResponse, Unit]): Request[DeleteAlarmModelResponse, AWSError] = js.native
+  /**
+    * Deletes an alarm model. Any alarm instances that were created based on this alarm model are also deleted. This action can't be undone.
+    */
+  def deleteAlarmModel(params: DeleteAlarmModelRequest): Request[DeleteAlarmModelResponse, AWSError] = js.native
+  def deleteAlarmModel(
+    params: DeleteAlarmModelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteAlarmModelResponse, Unit]
+  ): Request[DeleteAlarmModelResponse, AWSError] = js.native
   
   /**
     * Deletes a detector model. Any active instances of the detector model are also deleted.
@@ -71,6 +99,20 @@ trait IoTEvents extends Service {
   ): Request[DeleteInputResponse, AWSError] = js.native
   
   /**
+    * Retrieves information about an alarm model. If you don't specify a value for the alarmModelVersion parameter, the latest version is returned.
+    */
+  def describeAlarmModel(): Request[DescribeAlarmModelResponse, AWSError] = js.native
+  def describeAlarmModel(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAlarmModelResponse, Unit]): Request[DescribeAlarmModelResponse, AWSError] = js.native
+  /**
+    * Retrieves information about an alarm model. If you don't specify a value for the alarmModelVersion parameter, the latest version is returned.
+    */
+  def describeAlarmModel(params: DescribeAlarmModelRequest): Request[DescribeAlarmModelResponse, AWSError] = js.native
+  def describeAlarmModel(
+    params: DescribeAlarmModelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAlarmModelResponse, Unit]
+  ): Request[DescribeAlarmModelResponse, AWSError] = js.native
+  
+  /**
     * Describes a detector model. If the version parameter is not specified, information about the latest version is returned.
     */
   def describeDetectorModel(): Request[DescribeDetectorModelResponse, AWSError] = js.native
@@ -83,6 +125,20 @@ trait IoTEvents extends Service {
     params: DescribeDetectorModelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDetectorModelResponse, Unit]
   ): Request[DescribeDetectorModelResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves runtime information about a detector model analysis.  After AWS IoT Events starts analyzing your detector model, you have up to 24 hours to retrieve the analysis results. 
+    */
+  def describeDetectorModelAnalysis(): Request[DescribeDetectorModelAnalysisResponse, AWSError] = js.native
+  def describeDetectorModelAnalysis(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDetectorModelAnalysisResponse, Unit]): Request[DescribeDetectorModelAnalysisResponse, AWSError] = js.native
+  /**
+    * Retrieves runtime information about a detector model analysis.  After AWS IoT Events starts analyzing your detector model, you have up to 24 hours to retrieve the analysis results. 
+    */
+  def describeDetectorModelAnalysis(params: DescribeDetectorModelAnalysisRequest): Request[DescribeDetectorModelAnalysisResponse, AWSError] = js.native
+  def describeDetectorModelAnalysis(
+    params: DescribeDetectorModelAnalysisRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDetectorModelAnalysisResponse, Unit]
+  ): Request[DescribeDetectorModelAnalysisResponse, AWSError] = js.native
   
   /**
     * Describes an input.
@@ -113,6 +169,50 @@ trait IoTEvents extends Service {
   ): Request[DescribeLoggingOptionsResponse, AWSError] = js.native
   
   /**
+    * Retrieves one or more analysis results of the detector model.  After AWS IoT Events starts analyzing your detector model, you have up to 24 hours to retrieve the analysis results. 
+    */
+  def getDetectorModelAnalysisResults(): Request[GetDetectorModelAnalysisResultsResponse, AWSError] = js.native
+  def getDetectorModelAnalysisResults(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDetectorModelAnalysisResultsResponse, Unit]
+  ): Request[GetDetectorModelAnalysisResultsResponse, AWSError] = js.native
+  /**
+    * Retrieves one or more analysis results of the detector model.  After AWS IoT Events starts analyzing your detector model, you have up to 24 hours to retrieve the analysis results. 
+    */
+  def getDetectorModelAnalysisResults(params: GetDetectorModelAnalysisResultsRequest): Request[GetDetectorModelAnalysisResultsResponse, AWSError] = js.native
+  def getDetectorModelAnalysisResults(
+    params: GetDetectorModelAnalysisResultsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDetectorModelAnalysisResultsResponse, Unit]
+  ): Request[GetDetectorModelAnalysisResultsResponse, AWSError] = js.native
+  
+  /**
+    * Lists all the versions of an alarm model. The operation returns only the metadata associated with each alarm model version.
+    */
+  def listAlarmModelVersions(): Request[ListAlarmModelVersionsResponse, AWSError] = js.native
+  def listAlarmModelVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListAlarmModelVersionsResponse, Unit]): Request[ListAlarmModelVersionsResponse, AWSError] = js.native
+  /**
+    * Lists all the versions of an alarm model. The operation returns only the metadata associated with each alarm model version.
+    */
+  def listAlarmModelVersions(params: ListAlarmModelVersionsRequest): Request[ListAlarmModelVersionsResponse, AWSError] = js.native
+  def listAlarmModelVersions(
+    params: ListAlarmModelVersionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAlarmModelVersionsResponse, Unit]
+  ): Request[ListAlarmModelVersionsResponse, AWSError] = js.native
+  
+  /**
+    * Lists the alarm models that you created. The operation returns only the metadata associated with each alarm model.
+    */
+  def listAlarmModels(): Request[ListAlarmModelsResponse, AWSError] = js.native
+  def listAlarmModels(callback: js.Function2[/* err */ AWSError, /* data */ ListAlarmModelsResponse, Unit]): Request[ListAlarmModelsResponse, AWSError] = js.native
+  /**
+    * Lists the alarm models that you created. The operation returns only the metadata associated with each alarm model.
+    */
+  def listAlarmModels(params: ListAlarmModelsRequest): Request[ListAlarmModelsResponse, AWSError] = js.native
+  def listAlarmModels(
+    params: ListAlarmModelsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAlarmModelsResponse, Unit]
+  ): Request[ListAlarmModelsResponse, AWSError] = js.native
+  
+  /**
     * Lists all the versions of a detector model. Only the metadata associated with each detector model version is returned.
     */
   def listDetectorModelVersions(): Request[ListDetectorModelVersionsResponse, AWSError] = js.native
@@ -139,6 +239,20 @@ trait IoTEvents extends Service {
     params: ListDetectorModelsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDetectorModelsResponse, Unit]
   ): Request[ListDetectorModelsResponse, AWSError] = js.native
+  
+  /**
+    *  Lists one or more input routings. 
+    */
+  def listInputRoutings(): Request[ListInputRoutingsResponse, AWSError] = js.native
+  def listInputRoutings(callback: js.Function2[/* err */ AWSError, /* data */ ListInputRoutingsResponse, Unit]): Request[ListInputRoutingsResponse, AWSError] = js.native
+  /**
+    *  Lists one or more input routings. 
+    */
+  def listInputRoutings(params: ListInputRoutingsRequest): Request[ListInputRoutingsResponse, AWSError] = js.native
+  def listInputRoutings(
+    params: ListInputRoutingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListInputRoutingsResponse, Unit]
+  ): Request[ListInputRoutingsResponse, AWSError] = js.native
   
   /**
     * Lists the inputs you have created.
@@ -183,6 +297,20 @@ trait IoTEvents extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Performs an analysis of your detector model. For more information, see Troubleshooting a detector model in the AWS IoT Events Developer Guide.
+    */
+  def startDetectorModelAnalysis(): Request[StartDetectorModelAnalysisResponse, AWSError] = js.native
+  def startDetectorModelAnalysis(callback: js.Function2[/* err */ AWSError, /* data */ StartDetectorModelAnalysisResponse, Unit]): Request[StartDetectorModelAnalysisResponse, AWSError] = js.native
+  /**
+    * Performs an analysis of your detector model. For more information, see Troubleshooting a detector model in the AWS IoT Events Developer Guide.
+    */
+  def startDetectorModelAnalysis(params: StartDetectorModelAnalysisRequest): Request[StartDetectorModelAnalysisResponse, AWSError] = js.native
+  def startDetectorModelAnalysis(
+    params: StartDetectorModelAnalysisRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartDetectorModelAnalysisResponse, Unit]
+  ): Request[StartDetectorModelAnalysisResponse, AWSError] = js.native
+  
+  /**
     * Adds to or modifies the tags of the given resource. Tags are metadata that can be used to manage a resource.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
@@ -209,6 +337,20 @@ trait IoTEvents extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
   ): Request[UntagResourceResponse, AWSError] = js.native
+  
+  /**
+    * Updates an alarm model. Any alarms that were created based on the previous version are deleted and then created again as new data arrives.
+    */
+  def updateAlarmModel(): Request[UpdateAlarmModelResponse, AWSError] = js.native
+  def updateAlarmModel(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAlarmModelResponse, Unit]): Request[UpdateAlarmModelResponse, AWSError] = js.native
+  /**
+    * Updates an alarm model. Any alarms that were created based on the previous version are deleted and then created again as new data arrives.
+    */
+  def updateAlarmModel(params: UpdateAlarmModelRequest): Request[UpdateAlarmModelResponse, AWSError] = js.native
+  def updateAlarmModel(
+    params: UpdateAlarmModelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateAlarmModelResponse, Unit]
+  ): Request[UpdateAlarmModelResponse, AWSError] = js.native
   
   /**
     * Updates a detector model. Detectors (instances) spawned by the previous version are deleted and then re-created as new inputs arrive.

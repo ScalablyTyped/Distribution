@@ -8,6 +8,7 @@ trait FocusEventInit
   extends StObject
      with UIEventInit {
   
+  /* standard dom */
   var relatedTarget: js.UndefOr[EventTarget | Null] = js.undefined
 }
 object FocusEventInit {

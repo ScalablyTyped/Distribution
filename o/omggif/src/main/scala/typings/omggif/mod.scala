@@ -1,8 +1,6 @@
 package typings.omggif
 
-import typings.node.Buffer
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
+import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,16 +9,20 @@ object mod {
   
   @JSImport("omggif", "GifReader")
   @js.native
-  class GifReader protected () extends StObject {
-    def this(buf: Buffer) = this()
+  open class GifReader protected () extends StObject {
+    /**
+      * @param buf - Uint8Array is a common choice.
+      * Can be any type that supports the bracket accessor: Array, Uint8Array, Node Buffer, etc.
+      */
+    def this(buf: GifBinary) = this()
     
     def decodeAndBlitFrameBGRA(frame_num: Double, pixels: js.Array[Double]): Unit = js.native
-    def decodeAndBlitFrameBGRA(frame_num: Double, pixels: Uint8Array): Unit = js.native
-    def decodeAndBlitFrameBGRA(frame_num: Double, pixels: Uint8ClampedArray): Unit = js.native
+    def decodeAndBlitFrameBGRA(frame_num: Double, pixels: js.typedarray.Uint8Array): Unit = js.native
+    def decodeAndBlitFrameBGRA(frame_num: Double, pixels: js.typedarray.Uint8ClampedArray): Unit = js.native
     
     def decodeAndBlitFrameRGBA(frame_num: Double, pixels: js.Array[Double]): Unit = js.native
-    def decodeAndBlitFrameRGBA(frame_num: Double, pixels: Uint8Array): Unit = js.native
-    def decodeAndBlitFrameRGBA(frame_num: Double, pixels: Uint8ClampedArray): Unit = js.native
+    def decodeAndBlitFrameRGBA(frame_num: Double, pixels: js.typedarray.Uint8Array): Unit = js.native
+    def decodeAndBlitFrameRGBA(frame_num: Double, pixels: js.typedarray.Uint8ClampedArray): Unit = js.native
     
     def frameInfo(frame_num: Double): Frame = js.native
     
@@ -35,22 +37,26 @@ object mod {
   
   @JSImport("omggif", "GifWriter")
   @js.native
-  class GifWriter protected () extends StObject {
-    def this(buf: Buffer, width: Double, height: Double) = this()
-    def this(buf: Buffer, width: Double, height: Double, gopts: GifOptions) = this()
+  open class GifWriter protected () extends StObject {
+    /**
+      * @param buf - Uint8Array is a common choice.
+      * Can be any type that supports the bracket accessor: Array, Uint8Array, Node Buffer, etc.
+      */
+    def this(buf: GifBinary, width: Double, height: Double) = this()
+    def this(buf: GifBinary, width: Double, height: Double, gopts: GifOptions) = this()
     
     def addFrame(x: Double, y: Double, w: Double, h: Double, indexed_pixels: js.Array[Double]): Double = js.native
     def addFrame(x: Double, y: Double, w: Double, h: Double, indexed_pixels: js.Array[Double], opts: FrameOptions): Double = js.native
     
     def end(): Double = js.native
     
-    def getOutputBuffer(): Buffer = js.native
+    def getOutputBuffer(): GifBinary = js.native
     
     def getOutputBufferPosition(): Double = js.native
     
     var height: Double = js.native
     
-    def setOutputBuffer(v: Buffer): Unit = js.native
+    def setOutputBuffer(v: GifBinary): Unit = js.native
     
     def setOutputBufferPosition(v: Double): Unit = js.native
     
@@ -172,11 +178,30 @@ object mod {
       
       inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
       
-      inline def setPaletteVarargs(value: Double*): Self = StObject.set(x, "palette", js.Array(value :_*))
+      inline def setPaletteVarargs(value: Double*): Self = StObject.set(x, "palette", js.Array(value*))
       
       inline def setTransparent(value: Double): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
       
       inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+    }
+  }
+  
+  trait GifBinary
+    extends StObject
+       with /* index */ NumberDictionary[Double] {
+    
+    val length: Double
+  }
+  object GifBinary {
+    
+    inline def apply(length: Double): GifBinary = {
+      val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GifBinary]
+    }
+    
+    extension [Self <: GifBinary](x: Self) {
+      
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -209,7 +234,7 @@ object mod {
       
       inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
       
-      inline def setPaletteVarargs(value: Double*): Self = StObject.set(x, "palette", js.Array(value :_*))
+      inline def setPaletteVarargs(value: Double*): Self = StObject.set(x, "palette", js.Array(value*))
     }
   }
 }

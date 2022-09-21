@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Breadcrumb")
 @js.native
-class Breadcrumb ()
+open class Breadcrumb ()
   extends typings.reactBootstrap.libMod.Breadcrumb
 object Breadcrumb {
   
@@ -18,7 +18,7 @@ object Breadcrumb {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Breadcrumb.Item")
   @js.native
-  class Item ()
+  open class Item ()
     extends typings.reactBootstrap.breadcrumbItemMod.^
   /* static member */
   @JSImport("react-bootstrap", "Breadcrumb.Item")

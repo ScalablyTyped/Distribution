@@ -9,7 +9,7 @@ object webSocketTunnelMod {
   
   @JSImport("guacamole-client/lib/WebSocketTunnel", "WebSocketTunnel")
   @js.native
-  class WebSocketTunnel protected () extends Tunnel {
+  open class WebSocketTunnel protected () extends Tunnel {
     /**
       * @param tunnelURL The URL of the WebSocket tunneling service.
       */

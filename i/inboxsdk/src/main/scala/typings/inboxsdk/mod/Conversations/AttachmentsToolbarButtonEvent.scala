@@ -19,6 +19,6 @@ object AttachmentsToolbarButtonEvent {
     
     inline def setAttachmentCardViews(value: js.Array[AttachmentCardView]): Self = StObject.set(x, "attachmentCardViews", value.asInstanceOf[js.Any])
     
-    inline def setAttachmentCardViewsVarargs(value: AttachmentCardView*): Self = StObject.set(x, "attachmentCardViews", js.Array(value :_*))
+    inline def setAttachmentCardViewsVarargs(value: AttachmentCardView*): Self = StObject.set(x, "attachmentCardViews", js.Array(value*))
   }
 }

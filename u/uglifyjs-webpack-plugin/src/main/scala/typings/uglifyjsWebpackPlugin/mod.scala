@@ -1,18 +1,16 @@
 package typings.uglifyjsWebpackPlugin
 
-import typings.std.Plugin
-import typings.std.RegExp
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("uglifyjs-webpack-plugin", JSImport.Namespace)
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("uglifyjs-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends StObject
-       with Plugin {
+  open class ^ () extends StObject {
     def this(options: UglifyJsPluginOptions) = this()
   }
   
@@ -20,7 +18,7 @@ object mod {
     
     var banner: js.UndefOr[Boolean | String | (js.Function1[/* fileName */ String, String])] = js.undefined
     
-    var condition: js.UndefOr[RegExp | (js.Function2[/* node */ js.Object, /* comment */ String, Boolean])] = js.undefined
+    var condition: js.UndefOr[js.RegExp | (js.Function2[/* node */ js.Object, /* comment */ String, Boolean])] = js.undefined
     
     var filename: js.UndefOr[String | (js.Function1[/* originalFileName */ String, String])] = js.undefined
   }
@@ -39,7 +37,7 @@ object mod {
       
       inline def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
       
-      inline def setCondition(value: RegExp | (js.Function2[/* node */ js.Object, /* comment */ String, Boolean])): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: js.RegExp | (js.Function2[/* node */ js.Object, /* comment */ String, Boolean])): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
       inline def setConditionFunction2(value: (/* node */ js.Object, /* comment */ String) => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction2(value))
       
@@ -144,19 +142,19 @@ object mod {
     
     var cache: js.UndefOr[Boolean | String] = js.undefined
     
-    var exclude: js.UndefOr[RegExp | js.Array[RegExp]] = js.undefined
+    var exclude: js.UndefOr[js.RegExp | js.Array[js.RegExp]] = js.undefined
     
     var extractComments: js.UndefOr[
-        Boolean | RegExp | (js.Function2[/* node */ js.Object, /* comment */ String, Boolean]) | ExtractCommentsOptions
+        Boolean | js.RegExp | (js.Function2[/* node */ js.Object, /* comment */ String, Boolean]) | ExtractCommentsOptions
       ] = js.undefined
     
-    var include: js.UndefOr[RegExp | js.Array[RegExp]] = js.undefined
+    var include: js.UndefOr[js.RegExp | js.Array[js.RegExp]] = js.undefined
     
     var parallel: js.UndefOr[Boolean | Double] = js.undefined
     
     var sourceMap: js.UndefOr[Boolean] = js.undefined
     
-    var test: js.UndefOr[RegExp | js.Array[RegExp]] = js.undefined
+    var test: js.UndefOr[js.RegExp | js.Array[js.RegExp]] = js.undefined
     
     var uglifyOptions: js.UndefOr[UglifyJsOptions] = js.undefined
     
@@ -175,25 +173,25 @@ object mod {
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      inline def setExclude(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.RegExp | js.Array[js.RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: RegExp*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: js.RegExp*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setExtractComments(
-        value: Boolean | RegExp | (js.Function2[/* node */ js.Object, /* comment */ String, Boolean]) | ExtractCommentsOptions
+        value: Boolean | js.RegExp | (js.Function2[/* node */ js.Object, /* comment */ String, Boolean]) | ExtractCommentsOptions
       ): Self = StObject.set(x, "extractComments", value.asInstanceOf[js.Any])
       
       inline def setExtractCommentsFunction2(value: (/* node */ js.Object, /* comment */ String) => Boolean): Self = StObject.set(x, "extractComments", js.Any.fromFunction2(value))
       
       inline def setExtractCommentsUndefined: Self = StObject.set(x, "extractComments", js.undefined)
       
-      inline def setInclude(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.RegExp | js.Array[js.RegExp]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: RegExp*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: js.RegExp*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setParallel(value: Boolean | Double): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
       
@@ -203,11 +201,11 @@ object mod {
       
       inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
       
-      inline def setTest(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: js.RegExp | js.Array[js.RegExp]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
       inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      inline def setTestVarargs(value: RegExp*): Self = StObject.set(x, "test", js.Array(value :_*))
+      inline def setTestVarargs(value: js.RegExp*): Self = StObject.set(x, "test", js.Array(value*))
       
       inline def setUglifyOptions(value: UglifyJsOptions): Self = StObject.set(x, "uglifyOptions", value.asInstanceOf[js.Any])
       

@@ -66,7 +66,7 @@ object MagicSuggest {
       *     See the following example:
       *     function (response) { var myjson = [{name: 'test', id: 1}]; response(myjson); return myjson; }
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * Additional parameters to the ajax call
@@ -132,7 +132,7 @@ object MagicSuggest {
     /**
       * Additional parameters passed out to the INPUT tag. Enables usage of AngularJS's custom tags for ex.
       */
-    var inputCfg: js.UndefOr[js.Any] = js.undefined
+    var inputCfg: js.UndefOr[Any] = js.undefined
     
     /**
       * The class that is applied to show that the field is invalid
@@ -222,7 +222,7 @@ object MagicSuggest {
     /**
       * A function used to define how the items will be presented in the combo
       */
-    var renderer: js.UndefOr[js.Function1[/* item */ js.Any, Unit]] = js.undefined
+    var renderer: js.UndefOr[js.Function1[/* item */ Any, Unit]] = js.undefined
     
     /**
       * Whether or not this field should be required
@@ -267,7 +267,7 @@ object MagicSuggest {
     /**
       * A function used to define how the items will be presented in the tag list
       */
-    var selectionRenderer: js.UndefOr[js.Function1[/* item */ js.Any, Unit]] = js.undefined
+    var selectionRenderer: js.UndefOr[js.Function1[/* item */ Any, Unit]] = js.undefined
     
     /**
       * Set to true to stack the selectioned items when positioned on the bottom
@@ -324,7 +324,7 @@ object MagicSuggest {
     /**
       * initial value for the field
       */
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
     
     /**
       * name of JSON object property that represents its underlying value
@@ -334,12 +334,12 @@ object MagicSuggest {
     /**
       * regular expression to validate the values against
       */
-    var vregex: js.UndefOr[js.Any] = js.undefined
+    var vregex: js.UndefOr[Any] = js.undefined
     
     /**
       * type to validate against
       */
-    var vtype: js.UndefOr[js.Any] = js.undefined
+    var vtype: js.UndefOr[Any] = js.undefined
   }
   object Configuration {
     
@@ -374,7 +374,7 @@ object MagicSuggest {
       
       inline def setClsUndefined: Self = StObject.set(x, "cls", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -426,7 +426,7 @@ object MagicSuggest {
       
       inline def setInfoMsgClsUndefined: Self = StObject.set(x, "infoMsgCls", js.undefined)
       
-      inline def setInputCfg(value: js.Any): Self = StObject.set(x, "inputCfg", value.asInstanceOf[js.Any])
+      inline def setInputCfg(value: Any): Self = StObject.set(x, "inputCfg", value.asInstanceOf[js.Any])
       
       inline def setInputCfgUndefined: Self = StObject.set(x, "inputCfg", js.undefined)
       
@@ -494,7 +494,7 @@ object MagicSuggest {
       
       inline def setQueryParamUndefined: Self = StObject.set(x, "queryParam", js.undefined)
       
-      inline def setRenderer(value: /* item */ js.Any => Unit): Self = StObject.set(x, "renderer", js.Any.fromFunction1(value))
+      inline def setRenderer(value: /* item */ Any => Unit): Self = StObject.set(x, "renderer", js.Any.fromFunction1(value))
       
       inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       
@@ -530,7 +530,7 @@ object MagicSuggest {
       
       inline def setSelectionPositionUndefined: Self = StObject.set(x, "selectionPosition", js.undefined)
       
-      inline def setSelectionRenderer(value: /* item */ js.Any => Unit): Self = StObject.set(x, "selectionRenderer", js.Any.fromFunction1(value))
+      inline def setSelectionRenderer(value: /* item */ Any => Unit): Self = StObject.set(x, "selectionRenderer", js.Any.fromFunction1(value))
       
       inline def setSelectionRendererUndefined: Self = StObject.set(x, "selectionRenderer", js.undefined)
       
@@ -574,7 +574,7 @@ object MagicSuggest {
       
       inline def setUseZebraStyleUndefined: Self = StObject.set(x, "useZebraStyle", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueField(value: String): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
       
@@ -582,11 +582,11 @@ object MagicSuggest {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setVregex(value: js.Any): Self = StObject.set(x, "vregex", value.asInstanceOf[js.Any])
+      inline def setVregex(value: Any): Self = StObject.set(x, "vregex", value.asInstanceOf[js.Any])
       
       inline def setVregexUndefined: Self = StObject.set(x, "vregex", js.undefined)
       
-      inline def setVtype(value: js.Any): Self = StObject.set(x, "vtype", value.asInstanceOf[js.Any])
+      inline def setVtype(value: Any): Self = StObject.set(x, "vtype", value.asInstanceOf[js.Any])
       
       inline def setVtypeUndefined: Self = StObject.set(x, "vtype", js.undefined)
     }
@@ -600,8 +600,8 @@ object MagicSuggest {
       * @param items - json object or array of json objects
       * @param isSilent - (optional) set to true to suppress 'selectionchange' event from being triggered
       */
-    def addToSelection(objs: js.Array[js.Any]): Unit = js.native
-    def addToSelection(objs: js.Array[js.Any], isSilent: Boolean): Unit = js.native
+    def addToSelection(objs: js.Array[Any]): Unit = js.native
+    def addToSelection(objs: js.Array[Any], isSilent: Boolean): Unit = js.native
     
     /**
       * Clears the current selection
@@ -633,7 +633,7 @@ object MagicSuggest {
     /**
       * Get current data
       */
-    def getData(): js.Any = js.native
+    def getData(): Any = js.native
     
     /**
       * Gets the data params for current ajax request
@@ -654,12 +654,12 @@ object MagicSuggest {
       * Retrieve an array of selected json objects
       * @return {Array}
       */
-    def getSelection(): js.Array[js.Any] = js.native
+    def getSelection(): js.Array[Any] = js.native
     
     /**
       * Retrieve an array of selected values
       */
-    def getValue(): js.Array[js.Any] = js.native
+    def getValue(): js.Array[Any] = js.native
     
     /**
       * Retrieve component enabled status
@@ -678,19 +678,19 @@ object MagicSuggest {
       * @param items - json object or array of json objects
       * @param isSilent - (optional) set to true to suppress 'selectionchange' event from being triggered
       */
-    def removeFromSelection(items: js.Any, isSilent: Boolean): Unit = js.native
+    def removeFromSelection(items: Any, isSilent: Boolean): Unit = js.native
     
     /**
       * Set up some combo data after it has been rendered
       * @param data
       */
-    def setData(data: js.Any): Unit = js.native
+    def setData(data: Any): Unit = js.native
     
     /**
       * Sets data params for subsequent ajax requests
       * @param params
       */
-    def setDataUrlParams(params: js.Any): Unit = js.native
+    def setDataUrlParams(params: Any): Unit = js.native
     
     /**
       * Sets the name for the input field so it can be fetched in the form
@@ -703,13 +703,13 @@ object MagicSuggest {
       * @param items
       * @param isSilent - (optional)
       */
-    def setSelection(items: js.Array[js.Any]): Unit = js.native
-    def setSelection(items: js.Array[js.Any], isSilet: Boolean): Unit = js.native
+    def setSelection(items: js.Array[Any]): Unit = js.native
+    def setSelection(items: js.Array[Any], isSilet: Boolean): Unit = js.native
     
     /**
       * Sets a value for the combo box. Value must be an array of values with data type matching valueField one.
       * @param data
       */
-    def setValue(values: js.Array[js.Any]): Unit = js.native
+    def setValue(values: js.Array[Any]): Unit = js.native
   }
 }

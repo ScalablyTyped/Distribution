@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContainer.anon
 
-import typings.maximMazurokGapiClientContainer.gapi.client.container.SetLabelsRequest
+import typings.maximMazurokGapiClientContainer.gapi.client.container.SetNetworkPolicyRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait AccesstokenAltCallback extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name (project, location, cluster id) of the cluster to set labels. Specified in the format `projects/∗/locations/∗/clusters/ *`. */
+  /** The name (project, location, cluster name) of the cluster to set networking policy. Specified in the format `projects/ *‍/locations/ *‍/clusters/ *`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait AccesstokenAltCallback extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: SetLabelsRequest
+  var resource: SetNetworkPolicyRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait AccesstokenAltCallback extends StObject {
 }
 object AccesstokenAltCallback {
   
-  inline def apply(name: String, resource: SetLabelsRequest): AccesstokenAltCallback = {
+  inline def apply(name: String, resource: SetNetworkPolicyRequest): AccesstokenAltCallback = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccesstokenAltCallback]
   }
@@ -94,7 +94,7 @@ object AccesstokenAltCallback {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SetLabelsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SetNetworkPolicyRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

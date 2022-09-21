@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the application object.
   *
+  * @remarks
   * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.Application")
 @js.native
-class Application ()
+open class Application ()
   extends StObject
      with typings.officeJs.Word.Application {
   

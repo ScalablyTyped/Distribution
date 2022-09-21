@@ -27,7 +27,7 @@ object ListBackendEnvironmentsResult {
     
     inline def setBackendEnvironments(value: BackendEnvironments): Self = StObject.set(x, "backendEnvironments", value.asInstanceOf[js.Any])
     
-    inline def setBackendEnvironmentsVarargs(value: BackendEnvironment*): Self = StObject.set(x, "backendEnvironments", js.Array(value :_*))
+    inline def setBackendEnvironmentsVarargs(value: BackendEnvironment*): Self = StObject.set(x, "backendEnvironments", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

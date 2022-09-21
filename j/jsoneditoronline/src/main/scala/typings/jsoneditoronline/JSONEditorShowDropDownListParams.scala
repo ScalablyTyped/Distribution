@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JSONEditorShowDropDownListParams extends StObject {
   
-  def callback(value: js.Any): Unit
+  def callback(value: Any): Unit
   
   var node: JSONEditorNode
   
@@ -25,7 +25,7 @@ trait JSONEditorShowDropDownListParams extends StObject {
 object JSONEditorShowDropDownListParams {
   
   inline def apply(
-    callback: js.Any => Unit,
+    callback: Any => Unit,
     node: JSONEditorNode,
     optionClassName: String,
     optionSelectedClassName: String,
@@ -40,7 +40,7 @@ object JSONEditorShowDropDownListParams {
   
   extension [Self <: JSONEditorShowDropDownListParams](x: Self) {
     
-    inline def setCallback(value: js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     inline def setNode(value: JSONEditorNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
@@ -52,7 +52,7 @@ object JSONEditorShowDropDownListParams {
     
     inline def setValues(value: js.Array[js.Object]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: js.Object*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Object*): Self = StObject.set(x, "values", js.Array(value*))
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

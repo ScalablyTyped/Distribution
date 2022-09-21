@@ -14,17 +14,17 @@ trait ASPxClientHtmlEditorCustomDialogClosedEventArgs
   /**
     * Gets an object associated with the closed dialog.
     */
-  var data: js.Any
+  var data: Any
 }
 object ASPxClientHtmlEditorCustomDialogClosedEventArgs {
   
-  inline def apply(data: js.Any, name: String, status: js.Any): ASPxClientHtmlEditorCustomDialogClosedEventArgs = {
+  inline def apply(data: Any, name: String, status: Any): ASPxClientHtmlEditorCustomDialogClosedEventArgs = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorCustomDialogClosedEventArgs]
   }
   
   extension [Self <: ASPxClientHtmlEditorCustomDialogClosedEventArgs](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

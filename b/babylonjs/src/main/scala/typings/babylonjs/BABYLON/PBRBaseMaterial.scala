@@ -11,40 +11,47 @@ trait PBRBaseMaterial
   
   /**
     * AKA Diffuse Color in other nomenclature.
+    * @hidden
     */
-  /* protected */ var _albedoColor: Color3 = js.native
+  var _albedoColor: Color3 = js.native
   
   /**
     * AKA Diffuse Texture in standard nomenclature.
+    * @hidden
     */
-  /* protected */ var _albedoTexture: Nullable[BaseTexture] = js.native
+  var _albedoTexture: Nullable[BaseTexture] = js.native
   
   /**
     * Defines the alpha limits in alpha test mode.
+    * @hidden
     */
-  /* protected */ var _alphaCutOff: Double = js.native
+  var _alphaCutOff: Double = js.native
   
   /**
     * The color of a material in ambient lighting.
+    * @hidden
     */
-  /* protected */ var _ambientColor: Color3 = js.native
+  var _ambientColor: Color3 = js.native
   
   /**
     * AKA Occlusion Texture in other nomenclature.
+    * @hidden
     */
-  /* protected */ var _ambientTexture: Nullable[BaseTexture] = js.native
+  var _ambientTexture: Nullable[BaseTexture] = js.native
   
   /**
     * Defines how much the AO map is occluding the analytical lights (point spot...).
     * 1 means it completely occludes it
     * 0 mean it has no impact
+    * @hidden
     */
-  /* protected */ var _ambientTextureImpactOnAnalyticalLights: Double = js.native
+  var _ambientTextureImpactOnAnalyticalLights: Double = js.native
   
   /**
     * AKA Occlusion Texture Intensity in other nomenclature.
+    * @hidden
     */
-  /* protected */ var _ambientTextureStrength: Double = js.native
+  var _ambientTextureStrength: Double = js.native
   
   /**
     * Attaches a new image processing configuration to the PBR Material.
@@ -54,83 +61,115 @@ trait PBRBaseMaterial
   
   /**
     * Stores surface normal data used to displace a mesh in a texture.
+    * @hidden
     */
-  /* protected */ var _bumpTexture: Nullable[BaseTexture] = js.native
+  var _bumpTexture: Nullable[BaseTexture] = js.native
   
-  /* private */ var _debugMode: js.Any = js.native
+  /* protected */ var _cacheHasRenderTargetTextures: Boolean = js.native
+  
+  /**
+    * @hidden
+    * This is reserved for the inspector.
+    * As the default viewing range might not be enough (if the ambient is really small for instance)
+    * You can use the factor to better multiply the final value.
+    */
+  /* private */ var _debugFactor: Any = js.native
+  
+  /**
+    * @hidden
+    * This is reserved for the inspector.
+    * Specify from where on screen the debug mode should start.
+    * The value goes from -1 (full screen) to 1 (not visible)
+    * It helps with side by side comparison against the final render
+    * This defaults to -1
+    */
+  /* private */ var _debugLimit: Any = js.native
+  
+  /* private */ var _debugMode: Any = js.native
   
   /**
     * Intensity of the direct lights e.g. the four lights available in your scene.
     * This impacts both the direct diffuse and specular highlights.
+    * @hidden
     */
-  /* protected */ var _directIntensity: Double = js.native
+  var _directIntensity: Double = js.native
   
   /**
     * Debug Control allowing disabling the bump map on this material.
+    * @hidden
     */
-  /* protected */ var _disableBumpMap: Boolean = js.native
+  var _disableBumpMap: Boolean = js.native
   
   /**
     * If sets to true, disables all the lights affecting the material.
+    * @hidden
     */
-  /* protected */ var _disableLighting: Boolean = js.native
+  var _disableLighting: Boolean = js.native
   
   /**
     * The color applied when light is emitted from a material.
+    * @hidden
     */
-  /* protected */ var _emissiveColor: Color3 = js.native
+  var _emissiveColor: Color3 = js.native
   
   /**
     * Intensity of the emissive part of the material.
     * This helps controlling the emissive effect without modifying the emissive color.
+    * @hidden
     */
-  /* protected */ var _emissiveIntensity: Double = js.native
+  var _emissiveIntensity: Double = js.native
   
   /**
     * Stores the emissive values in a texture.
+    * @hidden
     */
-  /* protected */ var _emissiveTexture: Nullable[BaseTexture] = js.native
+  var _emissiveTexture: Nullable[BaseTexture] = js.native
   
   /**
     * Enables specular anti aliasing in the PBR shader.
     * It will both interacts on the Geometry for analytical and IBL lighting.
     * It also prefilter the roughness map based on the bump values.
+    * @hidden
     */
-  /* protected */ var _enableSpecularAntiAliasing: Boolean = js.native
+  var _enableSpecularAntiAliasing: Boolean = js.native
   
   /**
-    * Specifies the environment BRDF texture used to comput the scale and offset roughness values
-    * from cos thetav and roughness:
+    * Specifies the environment BRDF texture used to compute the scale and offset roughness values
+    * from cos theta and roughness:
     * http://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf
+    * @hidden
     */
-  /* protected */ var _environmentBRDFTexture: Nullable[BaseTexture] = js.native
+  var _environmentBRDFTexture: Nullable[BaseTexture] = js.native
   
   /**
     * Intensity of the environment e.g. how much the environment will light the object
-    * either through harmonics for rough material or through the refelction for shiny ones.
+    * either through harmonics for rough material or through the reflection for shiny ones.
+    * @hidden
     */
-  /* protected */ var _environmentIntensity: Double = js.native
+  var _environmentIntensity: Double = js.native
   
   /**
     * Force the shader to compute irradiance in the fragment shader in order to take bump in account.
+    * @hidden
     */
-  /* protected */ var _forceIrradianceInFragment: Boolean = js.native
+  var _forceIrradianceInFragment: Boolean = js.native
   
   /**
     * Force normal to face away from face.
+    * @hidden
     */
-  /* protected */ var _forceNormalForward: Boolean = js.native
+  var _forceNormalForward: Boolean = js.native
   
   /**
     * Returns the texture used for reflections.
     * @returns - Reflection texture if present.  Otherwise, returns the environment texture.
     */
-  /* private */ var _getReflectionTexture: js.Any = js.native
+  /* private */ var _getReflectionTexture: Any = js.native
   
   /**
     * Sets the global ambient color for the material used in lighting calculations.
     */
-  /* private */ var _globalAmbientColor: js.Any = js.native
+  /* private */ var _globalAmbientColor: Any = js.native
   
   /**
     * Specifies whether or not there is a usable alpha channel for transparency.
@@ -145,44 +184,50 @@ trait PBRBaseMaterial
   /**
     * Keep track of the image processing observer to allow dispose and replace.
     */
-  /* private */ var _imageProcessingObserver: js.Any = js.native
+  /* private */ var _imageProcessingObserver: Any = js.native
   
   /**
     * If sets to true, x component of normal map value will be inverted (x = 1.0 - x).
+    * @hidden
     */
-  /* protected */ var _invertNormalMapX: Boolean = js.native
+  var _invertNormalMapX: Boolean = js.native
   
   /**
     * If sets to true, y component of normal map value will be inverted (y = 1.0 - y).
+    * @hidden
     */
-  /* protected */ var _invertNormalMapY: Boolean = js.native
+  var _invertNormalMapY: Boolean = js.native
   
   /**
     * Defines the  falloff type used in this material.
     * It by default is Physical.
+    * @hidden
     */
-  /* protected */ var _lightFalloff: Double = js.native
+  var _lightFalloff: Double = js.native
   
   /**
     * This stores the direct, emissive, environment, and specular light intensities into a Vector4.
     */
-  /* private */ var _lightingInfos: js.Any = js.native
+  /* private */ var _lightingInfos: Any = js.native
   
   /**
     * Stores the pre-calculated light information of a mesh in a texture.
+    * @hidden
     */
-  /* protected */ var _lightmapTexture: Nullable[BaseTexture] = js.native
+  var _lightmapTexture: Nullable[BaseTexture] = js.native
   
   /**
     * Number of Simultaneous lights allowed on the material.
+    * @hidden
     */
-  /* protected */ var _maxSimultaneousLights: Double = js.native
+  var _maxSimultaneousLights: Double = js.native
   
   /**
     * Specifies the metallic scalar of the metallic/roughness workflow.
     * Can also be used to scale the metalness values of the metallic texture.
+    * @hidden
     */
-  /* protected */ var _metallic: Nullable[Double] = js.native
+  var _metallic: Nullable[Double] = js.native
   
   /**
     * In metallic workflow, specifies an F0 factor to help configuring the material F0.
@@ -192,8 +237,9 @@ trait PBRBaseMaterial
     *
     * F0 = defaultF0 * metallicF0Factor * metallicReflectanceColor;
     * F90 = metallicReflectanceColor;
+    * @hidden
     */
-  /* protected */ var _metallicF0Factor: Double = js.native
+  var _metallicF0Factor: Double = js.native
   
   /**
     * In metallic workflow, specifies an F90 color to help configuring the material F90.
@@ -203,81 +249,100 @@ trait PBRBaseMaterial
     *
     * F0 = defaultF0 * metallicF0Factor * metallicReflectanceColor
     * F90 = metallicReflectanceColor;
+    * @hidden
     */
-  /* protected */ var _metallicReflectanceColor: Color3 = js.native
+  var _metallicReflectanceColor: Color3 = js.native
   
   /**
     * Defines to store metallicReflectanceColor in RGB and metallicF0Factor in A
     * This is multiply against the scalar values defined in the material.
+    * @hidden
     */
-  /* protected */ var _metallicReflectanceTexture: Nullable[BaseTexture] = js.native
+  var _metallicReflectanceTexture: Nullable[BaseTexture] = js.native
   
   /**
     * Used to switch from specular/glossiness to metallic/roughness workflow.
+    * @hidden
     */
-  /* protected */ var _metallicTexture: Nullable[BaseTexture] = js.native
+  var _metallicTexture: Nullable[BaseTexture] = js.native
   
   /**
     * AKA Glossiness in other nomenclature.
+    * @hidden
     */
-  /* protected */ var _microSurface: Double = js.native
+  var _microSurface: Double = js.native
   
   /**
     * Used to enable roughness/glossiness fetch from a separate channel depending on the current mode.
     * Gray Scale represents roughness in metallic mode and glossiness in specular mode.
+    * @hidden
     */
-  /* protected */ var _microSurfaceTexture: Nullable[BaseTexture] = js.native
+  var _microSurfaceTexture: Nullable[BaseTexture] = js.native
   
   /**
     * Stores the alpha values in a texture.
+    * @hidden
     */
-  /* protected */ var _opacityTexture: Nullable[BaseTexture] = js.native
+  var _opacityTexture: Nullable[BaseTexture] = js.native
   
   /**
     * Controls the scale bias of the parallax mode.
+    * @hidden
     */
-  /* protected */ var _parallaxScaleBias: Double = js.native
+  var _parallaxScaleBias: Double = js.native
   
-  /* private */ var _prepareDefines: js.Any = js.native
+  /* private */ var _prepareDefines: Any = js.native
   
-  /* private */ var _prepareEffect: js.Any = js.native
+  /* private */ var _prepareEffect: Any = js.native
   
-  /* private */ var _realTimeFiltering: js.Any = js.native
+  /* private */ var _realTimeFiltering: Any = js.native
   
-  /* private */ var _realTimeFilteringQuality: js.Any = js.native
+  /* private */ var _realTimeFilteringQuality: Any = js.native
   
-  /* protected */ var _rebuildInParallel: Boolean = js.native
+  /**
+    * Defines to store reflectanceColor in RGB
+    * This is multiplied against the scalar values defined in the material.
+    * If both _reflectanceTexture and _metallicReflectanceTexture textures are provided and _useOnlyMetallicFromMetallicReflectanceTexture
+    * is false, _metallicReflectanceTexture takes precedence and _reflectanceTexture is not used
+    * @hidden
+    */
+  var _reflectanceTexture: Nullable[BaseTexture] = js.native
   
   /**
     * The color applied when light is reflected from a material.
+    * @hidden
     */
-  /* protected */ var _reflectionColor: Color3 = js.native
+  var _reflectionColor: Color3 = js.native
   
   /**
     * Stores the reflection values in a texture.
+    * @hidden
     */
-  /* protected */ var _reflectionTexture: Nullable[BaseTexture] = js.native
+  var _reflectionTexture: Nullable[BaseTexture] = js.native
   
   /**
     * AKA Specular Color in other nomenclature.
+    * @hidden
     */
-  /* protected */ var _reflectivityColor: Color3 = js.native
+  var _reflectivityColor: Color3 = js.native
   
   /**
     * AKA Specular texture in other nomenclature.
+    * @hidden
     */
-  /* protected */ var _reflectivityTexture: Nullable[BaseTexture] = js.native
+  var _reflectivityTexture: Nullable[BaseTexture] = js.native
   
   /**
     * Stores the available render targets.
     */
-  /* private */ var _renderTargets: js.Any = js.native
+  /* private */ var _renderTargets: Any = js.native
   
   /**
     * Specifies the roughness scalar of the metallic/roughness workflow.
     * Can also be used to scale the roughness values of the metallic texture.
+    * @hidden
     */
-  /* protected */ var _roughness: Nullable[Double] = js.native
+  var _roughness: Nullable[Double] = js.native
   
   /**
     * Specifies whether or not the alpha value of the albedo texture should be used for alpha blending.
@@ -287,120 +352,147 @@ trait PBRBaseMaterial
   /**
     * This is a special control allowing the reduction of the specular highlights coming from the
     * four lights of the scene. Those highlights may not be needed in full environment lighting.
+    * @hidden
     */
-  /* protected */ var _specularIntensity: Double = js.native
+  var _specularIntensity: Double = js.native
   
   /**
     * If sets to true and backfaceCulling is false, normals will be flipped on the backside.
+    * @hidden
     */
-  /* protected */ var _twoSidedLighting: Boolean = js.native
+  var _twoSidedLighting: Boolean = js.native
   
   /**
     * If set to true, no lighting calculations will be applied.
     */
-  /* private */ var _unlit: js.Any = js.native
+  /* private */ var _unlit: Any = js.native
   
   /**
     * A fresnel is applied to the alpha of the model to ensure grazing angles edges are not alpha tested.
     * And/Or occlude the blended part. (alpha is converted to gamma to compute the fresnel)
+    * @hidden
     */
-  /* protected */ var _useAlphaFresnel: Boolean = js.native
+  var _useAlphaFresnel: Boolean = js.native
   
   /**
     * Specifies that the alpha is coming form the albedo channel alpha channel for alpha blending.
+    * @hidden
     */
-  /* protected */ var _useAlphaFromAlbedoTexture: Boolean = js.native
+  var _useAlphaFromAlbedoTexture: Boolean = js.native
   
   /**
     * Specifies if the ambient texture contains the ambient occlusion information in its red channel only.
+    * @hidden
     */
-  /* protected */ var _useAmbientInGrayScale: Boolean = js.native
+  var _useAmbientInGrayScale: Boolean = js.native
   
   /**
     * Specifies if the metallic texture contains the ambient occlusion information in its red channel.
+    * @hidden
     */
-  /* protected */ var _useAmbientOcclusionFromMetallicTextureRed: Boolean = js.native
+  var _useAmbientOcclusionFromMetallicTextureRed: Boolean = js.native
   
   /**
     * In case the reflectivity map does not contain the microsurface information in its alpha channel,
     * The material will try to infer what glossiness each pixel should be.
+    * @hidden
     */
-  /* protected */ var _useAutoMicroSurfaceFromReflectivityMap: Boolean = js.native
+  var _useAutoMicroSurfaceFromReflectivityMap: Boolean = js.native
   
   /**
     * This parameters will enable/disable Horizon occlusion to prevent normal maps to look shiny when the normal
     * makes the reflect vector face the model (under horizon).
+    * @hidden
     */
-  /* protected */ var _useHorizonOcclusion: Boolean = js.native
+  var _useHorizonOcclusion: Boolean = js.native
   
   /**
     * Specifies that the material will use the light map as a show map.
+    * @hidden
     */
-  /* protected */ var _useLightmapAsShadowmap: Boolean = js.native
+  var _useLightmapAsShadowmap: Boolean = js.native
   
   /**
     * A fresnel is applied to the alpha of the model to ensure grazing angles edges are not alpha tested.
     * And/Or occlude the blended part. (alpha stays linear to compute the fresnel)
+    * @hidden
     */
-  /* protected */ var _useLinearAlphaFresnel: Boolean = js.native
+  var _useLinearAlphaFresnel: Boolean = js.native
   
   /**
     * Enables the use of logarithmic depth buffers, which is good for wide depth buffers.
     */
-  /* private */ var _useLogarithmicDepth: js.Any = js.native
+  /* private */ var _useLogarithmicDepth: Any = js.native
   
   /**
     * Specifies if the metallic texture contains the metallness information in its blue channel.
+    * @hidden
     */
-  /* protected */ var _useMetallnessFromMetallicTextureBlue: Boolean = js.native
+  var _useMetallnessFromMetallicTextureBlue: Boolean = js.native
   
   /**
     * Specifies if the reflectivity texture contains the glossiness information in its alpha channel.
+    * @hidden
     */
-  /* protected */ var _useMicroSurfaceFromReflectivityMapAlpha: Boolean = js.native
+  var _useMicroSurfaceFromReflectivityMapAlpha: Boolean = js.native
   
   /**
     * Allows using an object space normal map (instead of tangent space).
+    * @hidden
     */
-  /* protected */ var _useObjectSpaceNormalMap: Boolean = js.native
+  var _useObjectSpaceNormalMap: Boolean = js.native
+  
+  /**
+    * Specifies that only the A channel from _metallicReflectanceTexture should be used.
+    * If false, both RGB and A channels will be used
+    * @hidden
+    */
+  var _useOnlyMetallicFromMetallicReflectanceTexture: Boolean = js.native
   
   /**
     * Allows using the bump map in parallax mode.
+    * @hidden
     */
-  /* protected */ var _useParallax: Boolean = js.native
+  var _useParallax: Boolean = js.native
   
   /**
     * Allows using the bump map in parallax occlusion mode.
+    * @hidden
     */
-  /* protected */ var _useParallaxOcclusion: Boolean = js.native
+  var _useParallaxOcclusion: Boolean = js.native
   
   /**
     * This parameters will enable/disable radiance occlusion by preventing the radiance to lit
     * too much the area relying on ambient texture to define their ambient occlusion.
+    * @hidden
     */
-  /* protected */ var _useRadianceOcclusion: Boolean = js.native
+  var _useRadianceOcclusion: Boolean = js.native
   
   /**
-    * Specifies that the material will keeps the reflection highlights over a transparent surface (only the most limunous ones).
-    * A car glass is a good exemple of that. When the street lights reflects on it you can not see what is behind.
+    * Specifies that the material will keeps the reflection highlights over a transparent surface (only the most luminous ones).
+    * A car glass is a good example of that. When the street lights reflects on it you can not see what is behind.
+    * @hidden
     */
-  /* protected */ var _useRadianceOverAlpha: Boolean = js.native
+  var _useRadianceOverAlpha: Boolean = js.native
   
   /**
     * Specifies if the metallic texture contains the roughness information in its alpha channel.
+    * @hidden
     */
-  /* protected */ var _useRoughnessFromMetallicTextureAlpha: Boolean = js.native
+  var _useRoughnessFromMetallicTextureAlpha: Boolean = js.native
   
   /**
     * Specifies if the metallic texture contains the roughness information in its green channel.
+    * @hidden
     */
-  /* protected */ var _useRoughnessFromMetallicTextureGreen: Boolean = js.native
+  var _useRoughnessFromMetallicTextureGreen: Boolean = js.native
   
   /**
-    * Specifies that the material will keeps the specular highlights over a transparent surface (only the most limunous ones).
-    * A car glass is a good exemple of that. When sun reflects on it you can not see what is behind.
+    * Specifies that the material will keeps the specular highlights over a transparent surface (only the most luminous ones).
+    * A car glass is a good example of that. When sun reflects on it you can not see what is behind.
+    * @hidden
     */
-  /* protected */ var _useSpecularOverAlpha: Boolean = js.native
+  var _useSpecularOverAlpha: Boolean = js.native
   
   /**
     * Defines the anisotropic parameters for the material.
@@ -413,32 +505,9 @@ trait PBRBaseMaterial
   val brdf: PBRBRDFConfiguration = js.native
   
   /**
-    * Initializes the uniform buffer layout for the shader.
-    */
-  def buildUniformLayout(): Unit = js.native
-  
-  /**
     * Defines the clear coat layer parameters for the material.
     */
   val clearCoat: PBRClearCoatConfiguration = js.native
-  
-  /**
-    * @hidden
-    * This is reserved for the inspector.
-    * As the default viewing range might not be enough (if the ambient is really small for instance)
-    * You can use the factor to better multiply the final value.
-    */
-  /* private */ var debugFactor: js.Any = js.native
-  
-  /**
-    * @hidden
-    * This is reserved for the inspector.
-    * Specify from where on screen the debug mode should start.
-    * The value goes from -1 (full screen) to 1 (not visible)
-    * It helps with side by side comparison against the final render
-    * This defaults to -1
-    */
-  /* private */ var debugLimit: js.Any = js.native
   
   /**
     * @hidden
@@ -454,19 +523,18 @@ trait PBRBaseMaterial
   val detailMap: DetailMapConfiguration = js.native
   
   /**
-    * Returns the animatable textures.
-    * @returns - Array of animatable textures.
+    * Defines the iridescence layer parameters for the material.
     */
-  def getAnimatables(): js.Array[IAnimatable] = js.native
+  val iridescence: PBRIridescenceConfiguration = js.native
   
   /**
     * Specifies if the material uses metallic roughness workflow.
-    * @returns boolean specifiying if the material uses metallic roughness workflow.
+    * @returns boolean specifying if the material uses metallic roughness workflow.
     */
   def isMetallicWorkflow(): Boolean = js.native
   
   /**
-    * Defines additionnal PrePass parameters for the material.
+    * Defines additional PrePass parameters for the material.
     */
   val prePassConfiguration: PrePassConfiguration = js.native
   
@@ -482,6 +550,11 @@ trait PBRBaseMaterial
   def realTimeFilteringQuality_=(n: Double): Unit = js.native
   
   def realTimeFiltering_=(b: Boolean): Unit = js.native
+  
+  /**
+    * Sets the required values to the prepass renderer.
+    */
+  def setPrePassRenderer(): Boolean = js.native
   
   /**
     * Defines the Sheen parameters for the material.

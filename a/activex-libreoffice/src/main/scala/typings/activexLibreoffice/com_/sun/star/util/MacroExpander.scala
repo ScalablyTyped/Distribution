@@ -26,7 +26,7 @@ object MacroExpander {
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,
     expandMacros: String => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit
   ): MacroExpander = {

@@ -1,6 +1,6 @@
 package typings.rcVirtualList
 
-import typings.node.NodeJS.Timeout
+import typings.rcVirtualList.anon.TypeofsetTimeout
 import typings.react.mod.Component
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
@@ -8,6 +8,7 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.RefObject
 import typings.std.Element
 import typings.std.HTMLDivElement
+import typings.std.ReturnType
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +18,10 @@ object scrollBarMod {
   
   @JSImport("rc-virtual-list/es/ScrollBar", JSImport.Default)
   @js.native
-  class default () extends ScrollBar
+  open class default () extends ScrollBar
   
   @js.native
-  trait ScrollBar
-    extends Component[ScrollBarProps, ScrollBarState, js.Any] {
+  trait ScrollBar extends Component[ScrollBarProps, ScrollBarState, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MScrollBar(): Unit = js.native
@@ -41,8 +41,6 @@ object scrollBarMod {
     def getSpinHeight(): Double = js.native
     
     def getTop(): Double = js.native
-    
-    def getVisible(): Boolean = js.native
     
     var moveRaf: Double = js.native
     
@@ -64,9 +62,11 @@ object scrollBarMod {
     
     var scrollbarRef: RefObject[HTMLDivElement] = js.native
     
+    def showScroll(): Boolean = js.native
+    
     var thumbRef: RefObject[HTMLDivElement] = js.native
     
-    var visibleTimeout: Timeout = js.native
+    var visibleTimeout: ReturnType[TypeofsetTimeout] = js.native
   }
   
   trait ScrollBarProps extends StObject {

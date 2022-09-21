@@ -10,15 +10,12 @@ A node module to get your node module started
 | ------------------ | :-------------: |
 | Full name          | init-package-json |
 | Keywords           | init, package.json, package, helper, wizard, wizerd, prompt, start |
-| # releases         | 2 |
-| # dependents       | 111 |
-| # downloads        | 66044839 |
-| # stars            | 2 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 8629485.666666666 |
+| # stars            | 257.0 |
 
 ## Links
-- [Homepage](https://github.com/npm/init-package-json#readme)
-- [Bugs](https://github.com/npm/init-package-json/issues)
-- [Repository](https://github.com/npm/init-package-json)
 - [Npm](https://www.npmjs.com/package/init-package-json)
     
 

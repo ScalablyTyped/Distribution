@@ -20,6 +20,12 @@ object jsonSchemaCompareStrings {
   inline def $comment: $comment = "$comment".asInstanceOf[$comment]
   
   @js.native
+  sealed trait $defs
+    extends StObject
+       with _JSONSchemaKeys
+  inline def $defs: $defs = "$defs".asInstanceOf[$defs]
+  
+  @js.native
   sealed trait $id
     extends StObject
        with _JSONSchemaKeys

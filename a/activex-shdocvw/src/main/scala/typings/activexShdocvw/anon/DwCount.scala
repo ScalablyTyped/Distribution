@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DwCount extends StObject {
   
-  val URL: js.Any
+  val URL: Any
   
   val dwCount: Double
 }
 object DwCount {
   
-  inline def apply(URL: js.Any, dwCount: Double): DwCount = {
+  inline def apply(URL: Any, dwCount: Double): DwCount = {
     val __obj = js.Dynamic.literal(URL = URL.asInstanceOf[js.Any], dwCount = dwCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[DwCount]
   }
@@ -21,6 +21,6 @@ object DwCount {
     
     inline def setDwCount(value: Double): Self = StObject.set(x, "dwCount", value.asInstanceOf[js.Any])
     
-    inline def setURL(value: js.Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

@@ -23,6 +23,6 @@ object PruneVolumesInfo {
     
     inline def setVolumesDeleted(value: js.Array[String]): Self = StObject.set(x, "VolumesDeleted", value.asInstanceOf[js.Any])
     
-    inline def setVolumesDeletedVarargs(value: String*): Self = StObject.set(x, "VolumesDeleted", js.Array(value :_*))
+    inline def setVolumesDeletedVarargs(value: String*): Self = StObject.set(x, "VolumesDeleted", js.Array(value*))
   }
 }

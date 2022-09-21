@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Exponential")
 @js.native
-class Exponential ()
+open class Exponential ()
   extends typings.ranjs.mod.dist.Exponential {
   def this(lambda: Double) = this()
 }

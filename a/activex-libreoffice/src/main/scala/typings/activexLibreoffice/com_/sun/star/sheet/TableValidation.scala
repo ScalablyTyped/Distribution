@@ -95,16 +95,16 @@ object TableValidation {
     getFormula2: () => String,
     getOperator: () => ConditionOperator,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
+    getPropertyValue: String => Any,
     getSourcePosition: () => CellAddress,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     setFormula1: String => Unit,
     setFormula2: String => Unit,
     setOperator: ConditionOperator => Unit,
-    setPropertyValue: (String, js.Any) => Unit,
+    setPropertyValue: (String, Any) => Unit,
     setSourcePosition: CellAddress => Unit
   ): TableValidation = {
     val __obj = js.Dynamic.literal(ErrorAlertStyle = ErrorAlertStyle.asInstanceOf[js.Any], ErrorMessage = ErrorMessage.asInstanceOf[js.Any], ErrorTitle = ErrorTitle.asInstanceOf[js.Any], Formula1 = Formula1.asInstanceOf[js.Any], Formula2 = Formula2.asInstanceOf[js.Any], IgnoreBlankCells = IgnoreBlankCells.asInstanceOf[js.Any], InputMessage = InputMessage.asInstanceOf[js.Any], InputTitle = InputTitle.asInstanceOf[js.Any], Operator = Operator.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ShowErrorMessage = ShowErrorMessage.asInstanceOf[js.Any], ShowInputMessage = ShowInputMessage.asInstanceOf[js.Any], ShowList = ShowList.asInstanceOf[js.Any], SourcePosition = SourcePosition.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getFormula1 = js.Any.fromFunction0(getFormula1), getFormula2 = js.Any.fromFunction0(getFormula2), getOperator = js.Any.fromFunction0(getOperator), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getSourcePosition = js.Any.fromFunction0(getSourcePosition), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setFormula1 = js.Any.fromFunction1(setFormula1), setFormula2 = js.Any.fromFunction1(setFormula2), setOperator = js.Any.fromFunction1(setOperator), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setSourcePosition = js.Any.fromFunction1(setSourcePosition))

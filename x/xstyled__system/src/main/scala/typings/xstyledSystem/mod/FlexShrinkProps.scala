@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.FlexShrink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FlexShrinkProps extends StObject {
   
-  val flexShrink: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ js.Any
-    ]
-  ] = js.undefined
+  val flexShrink: js.UndefOr[ResponsiveValue[FlexShrink]] = js.undefined
 }
 object FlexShrinkProps {
   
@@ -21,16 +18,10 @@ object FlexShrinkProps {
   
   extension [Self <: FlexShrinkProps](x: Self) {
     
-    inline def setFlexShrink(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ js.Any
-        ]
-    ): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
+    inline def setFlexShrink(value: ResponsiveValue[FlexShrink]): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
     
     inline def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
     
-    inline def setFlexShrinkVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexShrink */ js.Any)*
-    ): Self = StObject.set(x, "flexShrink", js.Array(value :_*))
+    inline def setFlexShrinkVarargs(value: FlexShrink*): Self = StObject.set(x, "flexShrink", js.Array(value*))
   }
 }

@@ -17,7 +17,7 @@ trait InventoryItem extends StObject {
   var Content: js.UndefOr[InventoryItemEntryList] = js.undefined
   
   /**
-    * MD5 hash of the inventory item type contents. The content hash is used to determine whether to update inventory information. The PutInventory API does not update the inventory item type contents if the MD5 hash has not changed since last update. 
+    * MD5 hash of the inventory item type contents. The content hash is used to determine whether to update inventory information. The PutInventory API doesn't update the inventory item type contents if the MD5 hash hasn't changed since last update. 
     */
   var ContentHash: js.UndefOr[InventoryItemContentHash] = js.undefined
   
@@ -59,7 +59,7 @@ object InventoryItem {
     
     inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    inline def setContentVarargs(value: InventoryItemEntry*): Self = StObject.set(x, "Content", js.Array(value :_*))
+    inline def setContentVarargs(value: InventoryItemEntry*): Self = StObject.set(x, "Content", js.Array(value*))
     
     inline def setContext(value: InventoryItemContentContext): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     

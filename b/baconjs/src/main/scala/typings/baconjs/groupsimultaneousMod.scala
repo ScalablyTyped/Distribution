@@ -15,7 +15,7 @@ object groupsimultaneousMod {
   
   inline def default[V](
     streams: (typings.baconjs.observableMod.default[V] | js.Array[typings.baconjs.observableMod.default[V]])*
-  ): EventStream[js.Array[js.Array[V]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(streams.asInstanceOf[js.Any]).asInstanceOf[EventStream[js.Array[js.Array[V]]]]
+  ): EventStream[js.Array[js.Array[V]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(streams.asInstanceOf[Seq[js.Any]]*).asInstanceOf[EventStream[js.Array[js.Array[V]]]]
   
   inline def groupSimultaneous[V](streams: js.Array[default[V]]): EventStream[js.Array[js.Array[V]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupSimultaneous_")(streams.asInstanceOf[js.Any]).asInstanceOf[EventStream[js.Array[js.Array[V]]]]
   inline def groupSimultaneous[V](streams: js.Array[default[V]], options: EventStreamOptions): EventStream[js.Array[js.Array[V]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupSimultaneous_")(streams.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Array[js.Array[V]]]]

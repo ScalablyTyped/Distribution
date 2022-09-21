@@ -25,7 +25,7 @@ object FinishingPunching {
     
     inline def `setPunching-locationsUndefined`: Self = StObject.set(x, "punching-locations", js.undefined)
     
-    inline def `setPunching-locationsVarargs`(value: Double*): Self = StObject.set(x, "punching-locations", js.Array(value :_*))
+    inline def `setPunching-locationsVarargs`(value: Double*): Self = StObject.set(x, "punching-locations", js.Array(value*))
     
     inline def `setPunching-offset`(value: Double): Self = StObject.set(x, "punching-offset", value.asInstanceOf[js.Any])
     

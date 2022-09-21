@@ -1,7 +1,7 @@
 
 # Scala.js typings for mdast-util-to-markdown
 
-Typings are for version 0.5.3
+Typings are for version 1.3.0
 
 ## Library description:
 mdast utility to serialize markdown
@@ -10,10 +10,10 @@ mdast utility to serialize markdown
 | ------------------ | :-------------: |
 | Full name          | mdast-util-to-markdown |
 | Keywords           | unist, mdast, mdast-util, util, utility, markdown, markup, serialize, stringify, compile, syntax, tree, ast |
-| # releases         | 21 |
-| # dependents       | 22 |
-| # downloads        | 7358313 |
-| # stars            | 0 |
+| # releases         | 37 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0683383E7 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/syntax-tree/mdast-util-to-markdown#readme)

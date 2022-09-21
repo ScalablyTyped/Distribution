@@ -10,39 +10,43 @@ trait IDBIndex extends StObject {
   
   /**
     * Retrieves the number of records matching the given key or key range in query.
-    * 
+    *
     * If successful, request's result will be the count.
     */
+  /* standard dom */
   def count(): IDBRequest[Double] = js.native
-  def count(key: IDBKeyRange): IDBRequest[Double] = js.native
-  def count(key: IDBValidKey): IDBRequest[Double] = js.native
+  def count(query: IDBKeyRange): IDBRequest[Double] = js.native
+  def count(query: IDBValidKey): IDBRequest[Double] = js.native
   
-  def get(key: IDBKeyRange): IDBRequest[js.UndefOr[js.Any]] = js.native
+  def get(query: IDBKeyRange): IDBRequest[Any] = js.native
   /**
     * Retrieves the value of the first record matching the given key or key range in query.
-    * 
+    *
     * If successful, request's result will be the value, or undefined if there was no matching record.
     */
-  def get(key: IDBValidKey): IDBRequest[js.UndefOr[js.Any]] = js.native
+  /* standard dom */
+  def get(query: IDBValidKey): IDBRequest[Any] = js.native
   
   /**
     * Retrieves the values of the records matching the given key or key range in query (up to count if given).
-    * 
+    *
     * If successful, request's result will be an Array of the values.
     */
-  def getAll(): IDBRequest[js.Array[js.Any]] = js.native
-  def getAll(query: Null, count: Double): IDBRequest[js.Array[js.Any]] = js.native
-  def getAll(query: Unit, count: Double): IDBRequest[js.Array[js.Any]] = js.native
-  def getAll(query: IDBKeyRange): IDBRequest[js.Array[js.Any]] = js.native
-  def getAll(query: IDBKeyRange, count: Double): IDBRequest[js.Array[js.Any]] = js.native
-  def getAll(query: IDBValidKey): IDBRequest[js.Array[js.Any]] = js.native
-  def getAll(query: IDBValidKey, count: Double): IDBRequest[js.Array[js.Any]] = js.native
+  /* standard dom */
+  def getAll(): IDBRequest[js.Array[Any]] = js.native
+  def getAll(query: Null, count: Double): IDBRequest[js.Array[Any]] = js.native
+  def getAll(query: Unit, count: Double): IDBRequest[js.Array[Any]] = js.native
+  def getAll(query: IDBKeyRange): IDBRequest[js.Array[Any]] = js.native
+  def getAll(query: IDBKeyRange, count: Double): IDBRequest[js.Array[Any]] = js.native
+  def getAll(query: IDBValidKey): IDBRequest[js.Array[Any]] = js.native
+  def getAll(query: IDBValidKey, count: Double): IDBRequest[js.Array[Any]] = js.native
   
   /**
     * Retrieves the keys of records matching the given key or key range in query (up to count if given).
-    * 
+    *
     * If successful, request's result will be an Array of the keys.
     */
+  /* standard dom */
   def getAllKeys(): IDBRequest[js.Array[IDBValidKey]] = js.native
   def getAllKeys(query: Null, count: Double): IDBRequest[js.Array[IDBValidKey]] = js.native
   def getAllKeys(query: Unit, count: Double): IDBRequest[js.Array[IDBValidKey]] = js.native
@@ -51,33 +55,35 @@ trait IDBIndex extends StObject {
   def getAllKeys(query: IDBValidKey): IDBRequest[js.Array[IDBValidKey]] = js.native
   def getAllKeys(query: IDBValidKey, count: Double): IDBRequest[js.Array[IDBValidKey]] = js.native
   
-  def getKey(key: IDBKeyRange): IDBRequest[js.UndefOr[IDBValidKey]] = js.native
+  def getKey(query: IDBKeyRange): IDBRequest[js.UndefOr[IDBValidKey]] = js.native
   /**
     * Retrieves the key of the first record matching the given key or key range in query.
-    * 
+    *
     * If successful, request's result will be the key, or undefined if there was no matching record.
     */
-  def getKey(key: IDBValidKey): IDBRequest[js.UndefOr[IDBValidKey]] = js.native
+  /* standard dom */
+  def getKey(query: IDBValidKey): IDBRequest[js.UndefOr[IDBValidKey]] = js.native
   
+  /* standard dom */
   val keyPath: java.lang.String | js.Array[java.lang.String] = js.native
   
+  /* standard dom */
   val multiEntry: scala.Boolean = js.native
   
-  /**
-    * Returns the name of the index.
-    */
+  /** Returns the name of the index. */
+  /* standard dom */
   var name: java.lang.String = js.native
   
-  /**
-    * Returns the IDBObjectStore the index belongs to.
-    */
+  /** Returns the IDBObjectStore the index belongs to. */
+  /* standard dom */
   val objectStore: IDBObjectStore = js.native
   
   /**
     * Opens a cursor over the records matching query, ordered by direction. If query is null, all records in index are matched.
-    * 
+    *
     * If successful, request's result will be an IDBCursorWithValue, or null if there were no matching records.
     */
+  /* standard dom */
   def openCursor(): IDBRequest[IDBCursorWithValue | Null] = js.native
   def openCursor(query: Null, direction: IDBCursorDirection): IDBRequest[IDBCursorWithValue | Null] = js.native
   def openCursor(query: Unit, direction: IDBCursorDirection): IDBRequest[IDBCursorWithValue | Null] = js.native
@@ -88,9 +94,10 @@ trait IDBIndex extends StObject {
   
   /**
     * Opens a cursor with key only flag set over the records matching query, ordered by direction. If query is null, all records in index are matched.
-    * 
+    *
     * If successful, request's result will be an IDBCursor, or null if there were no matching records.
     */
+  /* standard dom */
   def openKeyCursor(): IDBRequest[IDBCursor | Null] = js.native
   def openKeyCursor(query: Null, direction: IDBCursorDirection): IDBRequest[IDBCursor | Null] = js.native
   def openKeyCursor(query: Unit, direction: IDBCursorDirection): IDBRequest[IDBCursor | Null] = js.native
@@ -99,5 +106,6 @@ trait IDBIndex extends StObject {
   def openKeyCursor(query: IDBValidKey): IDBRequest[IDBCursor | Null] = js.native
   def openKeyCursor(query: IDBValidKey, direction: IDBCursorDirection): IDBRequest[IDBCursor | Null] = js.native
   
+  /* standard dom */
   val unique: scala.Boolean = js.native
 }

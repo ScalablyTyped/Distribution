@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeFleetCapacityOutput extends StObject {
   
   /**
-    * A collection of objects containing capacity information for each requested fleet ID. Leave this parameter empty to retrieve capacity information for all fleets.
+    * A collection of objects that contains capacity information for each requested fleet ID. Capacity objects are returned only for fleets that currently exist.
     */
   var FleetCapacity: js.UndefOr[FleetCapacityList] = js.undefined
   
   /**
-    * Token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
+    * A token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
     */
   var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
@@ -29,7 +29,7 @@ object DescribeFleetCapacityOutput {
     
     inline def setFleetCapacityUndefined: Self = StObject.set(x, "FleetCapacity", js.undefined)
     
-    inline def setFleetCapacityVarargs(value: FleetCapacity*): Self = StObject.set(x, "FleetCapacity", js.Array(value :_*))
+    inline def setFleetCapacityVarargs(value: FleetCapacity*): Self = StObject.set(x, "FleetCapacity", js.Array(value*))
     
     inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -2,6 +2,7 @@ package typings.mapboxGl.mod
 
 import typings.mapboxGl.mapboxGlStrings.raster
 import typings.mapboxGl.mapboxGlStrings.tms
+import typings.mapboxGl.mapboxGlStrings.webp
 import typings.mapboxGl.mapboxGlStrings.xyz
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,16 +11,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RasterSource
   extends StObject
      with Source
-     with AnySourceData
-     with AnySourceImpl {
+     with _AnySourceData
+     with _AnySourceImpl {
   
   var attribution: js.UndefOr[String] = js.undefined
   
   var bounds: js.UndefOr[js.Array[Double]] = js.undefined
   
+  var format: js.UndefOr[webp | String] = js.undefined
+  
+  var id: js.UndefOr[String] = js.undefined
+  
   var maxzoom: js.UndefOr[Double] = js.undefined
   
   var minzoom: js.UndefOr[Double] = js.undefined
+  
+  var name: js.UndefOr[String] = js.undefined
   
   var scheme: js.UndefOr[xyz | tms] = js.undefined
   
@@ -50,7 +57,15 @@ object RasterSource {
     
     inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+    inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value*))
+    
+    inline def setFormat(value: webp | String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setMaxzoom(value: Double): Self = StObject.set(x, "maxzoom", value.asInstanceOf[js.Any])
     
@@ -59,6 +74,10 @@ object RasterSource {
     inline def setMinzoom(value: Double): Self = StObject.set(x, "minzoom", value.asInstanceOf[js.Any])
     
     inline def setMinzoomUndefined: Self = StObject.set(x, "minzoom", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setScheme(value: xyz | tms): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
@@ -72,7 +91,7 @@ object RasterSource {
     
     inline def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
     
-    inline def setTilesVarargs(value: String*): Self = StObject.set(x, "tiles", js.Array(value :_*))
+    inline def setTilesVarargs(value: String*): Self = StObject.set(x, "tiles", js.Array(value*))
     
     inline def setType(value: raster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

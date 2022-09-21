@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-node", "SymbolicTensor")
 @js.native
-class SymbolicTensor protected ()
+open class SymbolicTensor protected ()
   extends typings.tensorflowTfjs.mod.SymbolicTensor {
   /**
     *

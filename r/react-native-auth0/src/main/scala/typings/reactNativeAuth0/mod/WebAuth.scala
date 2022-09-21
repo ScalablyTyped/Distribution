@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-auth0", "WebAuth")
 @js.native
-class WebAuth () extends StObject {
+open class WebAuth () extends StObject {
   
   def authorize(parameters: AuthorizeParams): js.Promise[Credentials] = js.native
   def authorize(parameters: AuthorizeParams, options: AuthorizeOptions): js.Promise[Credentials] = js.native
   
-  def clearSession(): js.Promise[js.Any] = js.native
-  def clearSession(parameters: ClearSessionParams): js.Promise[js.Any] = js.native
+  def clearSession(): js.Promise[Any] = js.native
+  def clearSession(parameters: ClearSessionParams): js.Promise[Any] = js.native
 }

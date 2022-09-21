@@ -4,14 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Tooltip/Tooltip.TooltipClassKey>> */
+/* Inlined std.Partial<@material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Tooltip/Tooltip.TooltipClassKey>> */
 trait PartialClassNameMapToolti extends StObject {
   
+  var arrow: js.UndefOr[String] = js.undefined
+  
   var popper: js.UndefOr[String] = js.undefined
+  
+  var popperArrow: js.UndefOr[String] = js.undefined
   
   var popperInteractive: js.UndefOr[String] = js.undefined
   
   var tooltip: js.UndefOr[String] = js.undefined
+  
+  var tooltipArrow: js.UndefOr[String] = js.undefined
   
   var tooltipPlacementBottom: js.UndefOr[String] = js.undefined
   
@@ -32,7 +38,15 @@ object PartialClassNameMapToolti {
   
   extension [Self <: PartialClassNameMapToolti](x: Self) {
     
+    inline def setArrow(value: String): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+    
+    inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
+    
     inline def setPopper(value: String): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+    
+    inline def setPopperArrow(value: String): Self = StObject.set(x, "popperArrow", value.asInstanceOf[js.Any])
+    
+    inline def setPopperArrowUndefined: Self = StObject.set(x, "popperArrow", js.undefined)
     
     inline def setPopperInteractive(value: String): Self = StObject.set(x, "popperInteractive", value.asInstanceOf[js.Any])
     
@@ -41,6 +55,10 @@ object PartialClassNameMapToolti {
     inline def setPopperUndefined: Self = StObject.set(x, "popper", js.undefined)
     
     inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipArrow(value: String): Self = StObject.set(x, "tooltipArrow", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipArrowUndefined: Self = StObject.set(x, "tooltipArrow", js.undefined)
     
     inline def setTooltipPlacementBottom(value: String): Self = StObject.set(x, "tooltipPlacementBottom", value.asInstanceOf[js.Any])
     

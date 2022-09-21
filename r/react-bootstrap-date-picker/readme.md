@@ -10,10 +10,10 @@ React-Bootstrap based date picker.
 | ------------------ | :-------------: |
 | Full name          | react-bootstrap-date-picker |
 | Keywords           | react, react-component, react-bootstrap, bootstrap, date picker, calendar, date, picker |
-| # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 326335 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 21819.666666666668 |
+| # stars            | 339.0 |
 
 ## Links
 - [Homepage](https://github.com/pushtell/react-bootstrap-date-picker#readme)

@@ -33,6 +33,6 @@ object ListParentsResponse {
     
     inline def setParentsUndefined: Self = StObject.set(x, "Parents", js.undefined)
     
-    inline def setParentsVarargs(value: Parent*): Self = StObject.set(x, "Parents", js.Array(value :_*))
+    inline def setParentsVarargs(value: Parent*): Self = StObject.set(x, "Parents", js.Array(value*))
   }
 }

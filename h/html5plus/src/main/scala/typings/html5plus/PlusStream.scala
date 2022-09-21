@@ -77,20 +77,20 @@ trait PlusStream extends StObject {
   def freetrafficBind(
     options: Unit,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def freetrafficBind(options: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def freetrafficBind(options: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def freetrafficBind(options: PlusStreamFreetrafficOptions): Unit = js.native
   def freetrafficBind(options: PlusStreamFreetrafficOptions, successCallback: js.Function0[Unit]): Unit = js.native
   def freetrafficBind(
     options: PlusStreamFreetrafficOptions,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def freetrafficBind(
     options: PlusStreamFreetrafficOptions,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   
   /**
@@ -99,12 +99,12 @@ trait PlusStream extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
   def freetrafficInfo(): Unit = js.native
-  def freetrafficInfo(successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def freetrafficInfo(successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def freetrafficInfo(
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def freetrafficInfo(successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def freetrafficInfo(successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 免流量是否生效
@@ -131,20 +131,20 @@ trait PlusStream extends StObject {
   def freetrafficRequest(
     options: Unit,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def freetrafficRequest(options: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def freetrafficRequest(options: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def freetrafficRequest(options: PlusStreamFreetrafficOptions): Unit = js.native
   def freetrafficRequest(options: PlusStreamFreetrafficOptions, successCallback: js.Function0[Unit]): Unit = js.native
   def freetrafficRequest(
     options: PlusStreamFreetrafficOptions,
     successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def freetrafficRequest(
     options: PlusStreamFreetrafficOptions,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   
   /**
@@ -154,20 +154,20 @@ trait PlusStream extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
   def list(): Unit = js.native
-  def list(options: js.Any): Unit = js.native
-  def list(options: js.Any, successCallback: js.Any): Unit = js.native
-  def list(options: js.Any, successCallback: js.Any, errorCallback: js.Any): Unit = js.native
-  def list(options: js.Any, successCallback: Unit, errorCallback: js.Any): Unit = js.native
-  def list(options: Unit, successCallback: js.Any): Unit = js.native
-  def list(options: Unit, successCallback: js.Any, errorCallback: js.Any): Unit = js.native
-  def list(options: Unit, successCallback: Unit, errorCallback: js.Any): Unit = js.native
+  def list(options: Any): Unit = js.native
+  def list(options: Any, successCallback: Any): Unit = js.native
+  def list(options: Any, successCallback: Any, errorCallback: Any): Unit = js.native
+  def list(options: Any, successCallback: Unit, errorCallback: Any): Unit = js.native
+  def list(options: Unit, successCallback: Any): Unit = js.native
+  def list(options: Unit, successCallback: Any, errorCallback: Any): Unit = js.native
+  def list(options: Unit, successCallback: Unit, errorCallback: Any): Unit = js.native
   
   /**
     * 免流量状态变化事件
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
-  var onfreetrafficStateChange: js.UndefOr[js.Any] = js.native
+  var onfreetrafficStateChange: js.UndefOr[Any] = js.native
   
   /**
     * 启动流应用
@@ -176,24 +176,24 @@ trait PlusStream extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/stream.html](http://www.html5plus.org/doc/zh_cn/stream.html)
     */
   def open(): Unit = js.native
-  def open(options: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def open(options: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def open(
     options: Unit,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def open(options: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def open(options: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def open(options: PlusStreamStreamOptions): Unit = js.native
-  def open(options: PlusStreamStreamOptions, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def open(options: PlusStreamStreamOptions, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def open(
     options: PlusStreamStreamOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def open(
     options: PlusStreamStreamOptions,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   
   /**

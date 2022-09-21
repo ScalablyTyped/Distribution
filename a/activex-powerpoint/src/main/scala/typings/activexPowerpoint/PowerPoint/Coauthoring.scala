@@ -16,7 +16,7 @@ trait Coauthoring extends StObject {
   
   val MergeMode: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PendingUpdates: Boolean
   
@@ -31,7 +31,7 @@ object Coauthoring {
     EndReview: () => Unit,
     FavorServerEditsDuringMerge: Boolean,
     MergeMode: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     PendingUpdates: Boolean,
     PowerPointDotCoauthoring_typekey: Coauthoring
   ): Coauthoring = {
@@ -52,7 +52,7 @@ object Coauthoring {
     
     inline def setMergeMode(value: Boolean): Self = StObject.set(x, "MergeMode", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPendingUpdates(value: Boolean): Self = StObject.set(x, "PendingUpdates", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ trait IgHtmlEditor
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Event fired after a toolbar item is clicked.
@@ -32,7 +32,7 @@ trait IgHtmlEditor
     * The html editor custom toolbars list.
     *
     */
-  var customToolbars: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var customToolbars: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Event is fired on keyboard cut action.
@@ -61,7 +61,7 @@ trait IgHtmlEditor
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Event is fired on keyboard paste action.
@@ -137,7 +137,7 @@ trait IgHtmlEditor
     * The html editor toolbars list.
     *
     */
-  var toolbarSettings: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var toolbarSettings: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Event is fired on keyboard undo action.
@@ -182,11 +182,11 @@ object IgHtmlEditor {
     
     inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
-    inline def setCustomToolbars(value: js.Array[js.Any]): Self = StObject.set(x, "customToolbars", value.asInstanceOf[js.Any])
+    inline def setCustomToolbars(value: js.Array[Any]): Self = StObject.set(x, "customToolbars", value.asInstanceOf[js.Any])
     
     inline def setCustomToolbarsUndefined: Self = StObject.set(x, "customToolbars", js.undefined)
     
-    inline def setCustomToolbarsVarargs(value: js.Any*): Self = StObject.set(x, "customToolbars", js.Array(value :_*))
+    inline def setCustomToolbarsVarargs(value: Any*): Self = StObject.set(x, "customToolbars", js.Array(value*))
     
     inline def setCut(value: (/* event */ Event, /* ui */ CutEventUIParam) => Unit): Self = StObject.set(x, "cut", js.Any.fromFunction2(value))
     
@@ -204,7 +204,7 @@ object IgHtmlEditor {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -260,11 +260,11 @@ object IgHtmlEditor {
     
     inline def setToolbarExpandingUndefined: Self = StObject.set(x, "toolbarExpanding", js.undefined)
     
-    inline def setToolbarSettings(value: js.Array[js.Any]): Self = StObject.set(x, "toolbarSettings", value.asInstanceOf[js.Any])
+    inline def setToolbarSettings(value: js.Array[Any]): Self = StObject.set(x, "toolbarSettings", value.asInstanceOf[js.Any])
     
     inline def setToolbarSettingsUndefined: Self = StObject.set(x, "toolbarSettings", js.undefined)
     
-    inline def setToolbarSettingsVarargs(value: js.Any*): Self = StObject.set(x, "toolbarSettings", js.Array(value :_*))
+    inline def setToolbarSettingsVarargs(value: Any*): Self = StObject.set(x, "toolbarSettings", js.Array(value*))
     
     inline def setUndo(value: (/* event */ Event, /* ui */ UndoEventUIParam) => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction2(value))
     

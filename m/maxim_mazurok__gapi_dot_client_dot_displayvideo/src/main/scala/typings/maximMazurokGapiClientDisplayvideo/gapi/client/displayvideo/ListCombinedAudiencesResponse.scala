@@ -25,7 +25,7 @@ object ListCombinedAudiencesResponse {
     
     inline def setCombinedAudiencesUndefined: Self = StObject.set(x, "combinedAudiences", js.undefined)
     
-    inline def setCombinedAudiencesVarargs(value: CombinedAudience*): Self = StObject.set(x, "combinedAudiences", js.Array(value :_*))
+    inline def setCombinedAudiencesVarargs(value: CombinedAudience*): Self = StObject.set(x, "combinedAudiences", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

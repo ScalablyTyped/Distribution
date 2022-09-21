@@ -2,7 +2,6 @@ package typings.grpcGrpcJs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.grpcGrpcJs.metadataMod.Metadata
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,7 +62,7 @@ object callCredentialsMod {
   
   type CallMetadataGenerator = js.Function2[
     /* options */ CallMetadataOptions, 
-    /* cb */ js.Function2[/* err */ Error | Null, /* metadata */ js.UndefOr[Metadata], Unit], 
+    /* cb */ js.Function2[/* err */ js.Error | Null, /* metadata */ js.UndefOr[Metadata], Unit], 
     Unit
   ]
   
@@ -105,13 +104,13 @@ object callCredentialsMod {
     
     def getRequestMetadata(
       url: String,
-      callback: js.Function2[/* err */ Error | Null, /* headers */ js.UndefOr[StringDictionary[String]], Unit]
+      callback: js.Function2[/* err */ js.Error | Null, /* headers */ js.UndefOr[StringDictionary[String]], Unit]
     ): Unit
   }
   object OldOAuth2Client {
     
     inline def apply(
-      getRequestMetadata: (String, js.Function2[/* err */ Error | Null, /* headers */ js.UndefOr[StringDictionary[String]], Unit]) => Unit
+      getRequestMetadata: (String, js.Function2[/* err */ js.Error | Null, /* headers */ js.UndefOr[StringDictionary[String]], Unit]) => Unit
     ): OldOAuth2Client = {
       val __obj = js.Dynamic.literal(getRequestMetadata = js.Any.fromFunction2(getRequestMetadata))
       __obj.asInstanceOf[OldOAuth2Client]
@@ -120,7 +119,7 @@ object callCredentialsMod {
     extension [Self <: OldOAuth2Client](x: Self) {
       
       inline def setGetRequestMetadata(
-        value: (String, js.Function2[/* err */ Error | Null, /* headers */ js.UndefOr[StringDictionary[String]], Unit]) => Unit
+        value: (String, js.Function2[/* err */ js.Error | Null, /* headers */ js.UndefOr[StringDictionary[String]], Unit]) => Unit
       ): Self = StObject.set(x, "getRequestMetadata", js.Any.fromFunction2(value))
     }
   }

@@ -17,5 +17,5 @@ trait GraphicConstructor
 Instantiable0[Graphic]
      with Instantiable1[/* properties */ GraphicProperties, Graphic] {
   
-  def fromJSON(json: js.Any): Graphic = js.native
+  def fromJSON(json: Any): Graphic = js.native
 }

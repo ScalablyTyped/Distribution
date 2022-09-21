@@ -17,75 +17,75 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Configurable template for a value filter to apply to a PivotField.
   The `condition` defines what criteria need to be set in order for the filter to operate.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 trait PivotValueFilter extends StObject {
   
   /**
-    *
     * The comparator is the static value to which other values are compared. The type of comparison is defined by the condition.
-    For example, if comparator is "50" and condition is "GreaterThan", all item values that are not greater than 50 will be removed by the filter.
+    For example, if comparator is "50" and condition is "greaterThan", all item values that are not greater than 50 will be removed by the filter.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var comparator: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies the condition for the filter, which defines the necessary filtering criteria.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var condition: ValueFilterCondition | Unknown_ | Equals | GreaterThan | GreaterThanOrEqualTo | LessThan | LessThanOrEqualTo | Between | TopN | BottomN
   
   /**
+    * If `true`, filter *excludes* items that meet criteria. The default is `false` (filter to include items that meet criteria).
     *
-    * If true, filter *excludes* items that meet criteria. The default is false (filter to include items that meet criteria).
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var exclusive: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The lower-bound of the range for the `between` filter condition.
     *
-    * The lower-bound of the range for the `Between` filter condition.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var lowerBound: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies if the filter is for the top/bottom N items, top/bottom N percent, or top/bottom N sum.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var selectionType: js.UndefOr[TopBottomSelectionType | Items | Percent | Sum] = js.undefined
   
   /**
+    * The "N" threshold number of items, percent, or sum to be filtered for a top/bottom filter condition.
     *
-    * The "N" threshold number of items, percent, or sum to be filtered for a Top/Bottom filter condition.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var threshold: js.UndefOr[Double] = js.undefined
   
   /**
+    * The upper-bound of the range for the `between` filter condition.
     *
-    * The upper-bound of the range for the `Between` filter condition.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var upperBound: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Name of the chosen "value" in the field by which to filter.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var value: String

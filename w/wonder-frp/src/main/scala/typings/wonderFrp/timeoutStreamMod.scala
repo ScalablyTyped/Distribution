@@ -10,10 +10,10 @@ object timeoutStreamMod {
   
   @JSImport("wonder-frp/dist/commonjs/stream/TimeoutStream", "TimeoutStream")
   @js.native
-  class TimeoutStream protected () extends BaseStream {
+  open class TimeoutStream protected () extends BaseStream {
     def this(time: Double, scheduler: Scheduler) = this()
     
-    /* private */ var _time: js.Any = js.native
+    /* private */ var _time: Any = js.native
   }
   /* static members */
   object TimeoutStream {

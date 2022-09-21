@@ -4,29 +4,17 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2", "dialogflow_v2.Resource$Projects$Agent$Intents")
 @js.native
-class ResourceProjectsAgentIntents protected () extends StObject {
+open class ResourceProjectsAgentIntents protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
-  /**
-    * dialogflow.projects.agent.intents.batchDelete
-    * @desc Deletes intents in the specified agent.  Operation <response:
-    * google.protobuf.Empty>
-    * @alias dialogflow.projects.agent.intents.batchDelete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.parent Required. The name of the agent to delete all entities types for. Format: `projects/<Project ID>/agent`.
-    * @param {().GoogleCloudDialogflowV2BatchDeleteIntentsRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def batchDelete(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchDelete(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
   def batchDelete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
@@ -37,8 +25,8 @@ class ResourceProjectsAgentIntents protected () extends StObject {
   ): Unit = js.native
   def batchDelete(
     params: ParamsResourceProjectsAgentIntentsBatchdelete,
-    options: BodyResponseCallback[SchemaGoogleLongrunningOperation],
-    callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
+    options: BodyResponseCallback[Readable | SchemaGoogleLongrunningOperation],
+    callback: BodyResponseCallback[Readable | SchemaGoogleLongrunningOperation]
   ): Unit = js.native
   def batchDelete(params: ParamsResourceProjectsAgentIntentsBatchdelete, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchDelete(
@@ -46,21 +34,78 @@ class ResourceProjectsAgentIntents protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
-  
   /**
-    * dialogflow.projects.agent.intents.batchUpdate
-    * @desc Updates/Creates multiple intents in the specified agent.  Operation
-    * <response: BatchUpdateIntentsResponse>
-    * @alias dialogflow.projects.agent.intents.batchUpdate
-    * @memberOf! ()
+    * Deletes intents in the specified agent. This method is a [long-running operation](https://cloud.google.com/dialogflow/es/docs/how/long-running-operations). The returned `Operation` type has the following method-specific fields: - `metadata`: An empty [Struct message](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#struct) - `response`: An [Empty message](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#empty) Note: You should always train an agent prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/es/docs/training).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dialogflow.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.parent Required. The name of the agent to update or create intents in. Format: `projects/<Project ID>/agent`.
-    * @param {().GoogleCloudDialogflowV2BatchUpdateIntentsRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dialogflow = google.dialogflow('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/dialogflow',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dialogflow.projects.agent.intents.batchDelete({
+    *     // Required. The name of the agent to delete all entities types for. Format: `projects//agent`.
+    *     parent: 'projects/my-project/agent',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "intents": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "done": false,
+    *   //   "error": {},
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "response": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def batchDelete(params: ParamsResourceProjectsAgentIntentsBatchdelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def batchDelete(
+    params: ParamsResourceProjectsAgentIntentsBatchdelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def batchUpdate(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchUpdate(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
   def batchUpdate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
@@ -71,8 +116,8 @@ class ResourceProjectsAgentIntents protected () extends StObject {
   ): Unit = js.native
   def batchUpdate(
     params: ParamsResourceProjectsAgentIntentsBatchupdate,
-    options: BodyResponseCallback[SchemaGoogleLongrunningOperation],
-    callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
+    options: BodyResponseCallback[Readable | SchemaGoogleLongrunningOperation],
+    callback: BodyResponseCallback[Readable | SchemaGoogleLongrunningOperation]
   ): Unit = js.native
   def batchUpdate(params: ParamsResourceProjectsAgentIntentsBatchupdate, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchUpdate(
@@ -80,24 +125,84 @@ class ResourceProjectsAgentIntents protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]
   ): Unit = js.native
+  /**
+    * Updates/Creates multiple intents in the specified agent. This method is a [long-running operation](https://cloud.google.com/dialogflow/es/docs/how/long-running-operations). The returned `Operation` type has the following method-specific fields: - `metadata`: An empty [Struct message](https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#struct) - `response`: BatchUpdateIntentsResponse Note: You should always train an agent prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/es/docs/training).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dialogflow.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const dialogflow = google.dialogflow('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/dialogflow',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dialogflow.projects.agent.intents.batchUpdate({
+    *     // Required. The name of the agent to update or create intents in. Format: `projects//agent`.
+    *     parent: 'projects/my-project/agent',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "intentBatchInline": {},
+    *       //   "intentBatchUri": "my_intentBatchUri",
+    *       //   "intentView": "my_intentView",
+    *       //   "languageCode": "my_languageCode",
+    *       //   "updateMask": "my_updateMask"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "done": false,
+    *   //   "error": {},
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "response": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def batchUpdate(params: ParamsResourceProjectsAgentIntentsBatchupdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def batchUpdate(
+    params: ParamsResourceProjectsAgentIntentsBatchupdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
   var context: APIRequestContext = js.native
   
-  /**
-    * dialogflow.projects.agent.intents.create
-    * @desc Creates an intent in the specified agent.
-    * @alias dialogflow.projects.agent.intents.create
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string=} params.intentView Optional. The resource view to apply to the returned intent.
-    * @param {string=} params.languageCode Optional. The language of training phrases, parameters and rich messages defined in `intent`. If not specified, the agent's default language is used. [Many languages](https://cloud.google.com/dialogflow-enterprise/docs/reference/language) are supported. Note: languages must be enabled in the agent before they can be used.
-    * @param {string} params.parent Required. The agent to create a intent for. Format: `projects/<Project ID>/agent`.
-    * @param {().GoogleCloudDialogflowV2Intent} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def create(): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent]): Unit = js.native
   def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
@@ -108,8 +213,8 @@ class ResourceProjectsAgentIntents protected () extends StObject {
   ): Unit = js.native
   def create(
     params: ParamsResourceProjectsAgentIntentsCreate,
-    options: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent],
-    callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent]
+    options: BodyResponseCallback[Readable | SchemaGoogleCloudDialogflowV2Intent],
+    callback: BodyResponseCallback[Readable | SchemaGoogleCloudDialogflowV2Intent]
   ): Unit = js.native
   def create(params: ParamsResourceProjectsAgentIntentsCreate, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
   def create(
@@ -117,20 +222,116 @@ class ResourceProjectsAgentIntents protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent]
   ): Unit = js.native
-  
   /**
-    * dialogflow.projects.agent.intents.delete
-    * @desc Deletes the specified intent and its direct or indirect followup
-    * intents.
-    * @alias dialogflow.projects.agent.intents.delete
-    * @memberOf! ()
+    * Creates an intent in the specified agent. Note: You should always train an agent prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/es/docs/training).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dialogflow.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.name Required. The name of the intent to delete. If this intent has direct or indirect followup intents, we also delete them. Format: `projects/<Project ID>/agent/intents/<Intent ID>`.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dialogflow = google.dialogflow('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/dialogflow',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dialogflow.projects.agent.intents.create({
+    *     // Optional. The resource view to apply to the returned intent.
+    *     intentView: 'placeholder-value',
+    *     // Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
+    *     languageCode: 'placeholder-value',
+    *     // Required. The agent to create a intent for. Format: `projects//agent`.
+    *     parent: 'projects/my-project/agent',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "action": "my_action",
+    *       //   "defaultResponsePlatforms": [],
+    *       //   "displayName": "my_displayName",
+    *       //   "endInteraction": false,
+    *       //   "events": [],
+    *       //   "followupIntentInfo": [],
+    *       //   "inputContextNames": [],
+    *       //   "isFallback": false,
+    *       //   "liveAgentHandoff": false,
+    *       //   "messages": [],
+    *       //   "mlDisabled": false,
+    *       //   "name": "my_name",
+    *       //   "outputContexts": [],
+    *       //   "parameters": [],
+    *       //   "parentFollowupIntentName": "my_parentFollowupIntentName",
+    *       //   "priority": 0,
+    *       //   "resetContexts": false,
+    *       //   "rootFollowupIntentName": "my_rootFollowupIntentName",
+    *       //   "trainingPhrases": [],
+    *       //   "webhookState": "my_webhookState"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "action": "my_action",
+    *   //   "defaultResponsePlatforms": [],
+    *   //   "displayName": "my_displayName",
+    *   //   "endInteraction": false,
+    *   //   "events": [],
+    *   //   "followupIntentInfo": [],
+    *   //   "inputContextNames": [],
+    *   //   "isFallback": false,
+    *   //   "liveAgentHandoff": false,
+    *   //   "messages": [],
+    *   //   "mlDisabled": false,
+    *   //   "name": "my_name",
+    *   //   "outputContexts": [],
+    *   //   "parameters": [],
+    *   //   "parentFollowupIntentName": "my_parentFollowupIntentName",
+    *   //   "priority": 0,
+    *   //   "resetContexts": false,
+    *   //   "rootFollowupIntentName": "my_rootFollowupIntentName",
+    *   //   "trainingPhrases": [],
+    *   //   "webhookState": "my_webhookState"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def create(params: ParamsResourceProjectsAgentIntentsCreate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def create(
+    params: ParamsResourceProjectsAgentIntentsCreate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def delete(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
@@ -141,8 +342,8 @@ class ResourceProjectsAgentIntents protected () extends StObject {
   ): Unit = js.native
   def delete(
     params: ParamsResourceProjectsAgentIntentsDelete,
-    options: BodyResponseCallback[SchemaGoogleProtobufEmpty],
-    callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
+    options: BodyResponseCallback[Readable | SchemaGoogleProtobufEmpty],
+    callback: BodyResponseCallback[Readable | SchemaGoogleProtobufEmpty]
   ): Unit = js.native
   def delete(params: ParamsResourceProjectsAgentIntentsDelete, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(
@@ -150,21 +351,64 @@ class ResourceProjectsAgentIntents protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]
   ): Unit = js.native
-  
   /**
-    * dialogflow.projects.agent.intents.get
-    * @desc Retrieves the specified intent.
-    * @alias dialogflow.projects.agent.intents.get
-    * @memberOf! ()
+    * Deletes the specified intent and its direct or indirect followup intents. Note: You should always train an agent prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/es/docs/training).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dialogflow.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.intentView Optional. The resource view to apply to the returned intent.
-    * @param {string=} params.languageCode Optional. The language to retrieve training phrases, parameters and rich messages for. If not specified, the agent's default language is used. [Many languages](https://cloud.google.com/dialogflow-enterprise/docs/reference/language) are supported. Note: languages must be enabled in the agent before they can be used.
-    * @param {string} params.name Required. The name of the intent. Format: `projects/<Project ID>/agent/intents/<Intent ID>`.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dialogflow = google.dialogflow('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/dialogflow',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dialogflow.projects.agent.intents.delete({
+    *     // Required. The name of the intent to delete. If this intent has direct or indirect followup intents, we also delete them. Format: `projects//agent/intents/`.
+    *     name: 'projects/my-project/agent/intents/my-intent',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {}
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceProjectsAgentIntentsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceProjectsAgentIntentsDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
@@ -175,8 +419,8 @@ class ResourceProjectsAgentIntents protected () extends StObject {
   ): Unit = js.native
   def get(
     params: ParamsResourceProjectsAgentIntentsGet,
-    options: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent],
-    callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent]
+    options: BodyResponseCallback[Readable | SchemaGoogleCloudDialogflowV2Intent],
+    callback: BodyResponseCallback[Readable | SchemaGoogleCloudDialogflowV2Intent]
   ): Unit = js.native
   def get(params: ParamsResourceProjectsAgentIntentsGet, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
   def get(
@@ -184,23 +428,89 @@ class ResourceProjectsAgentIntents protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent]
   ): Unit = js.native
-  
   /**
-    * dialogflow.projects.agent.intents.list
-    * @desc Returns the list of all intents in the specified agent.
-    * @alias dialogflow.projects.agent.intents.list
-    * @memberOf! ()
+    * Retrieves the specified intent.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dialogflow.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.intentView Optional. The resource view to apply to the returned intent.
-    * @param {string=} params.languageCode Optional. The language to list training phrases, parameters and rich messages for. If not specified, the agent's default language is used. [Many languages](https://cloud.google.com/dialogflow-enterprise/docs/reference/language) are supported. Note: languages must be enabled in the agent before they can be used.
-    * @param {integer=} params.pageSize Optional. The maximum number of items to return in a single page. By default 100 and at most 1000.
-    * @param {string=} params.pageToken Optional. The next_page_token value returned from a previous list request.
-    * @param {string} params.parent Required. The agent to list all intents from. Format: `projects/<Project ID>/agent`.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dialogflow = google.dialogflow('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/dialogflow',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dialogflow.projects.agent.intents.get({
+    *     // Optional. The resource view to apply to the returned intent.
+    *     intentView: 'placeholder-value',
+    *     // Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
+    *     languageCode: 'placeholder-value',
+    *     // Required. The name of the intent. Format: `projects//agent/intents/`.
+    *     name: 'projects/my-project/agent/intents/my-intent',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "action": "my_action",
+    *   //   "defaultResponsePlatforms": [],
+    *   //   "displayName": "my_displayName",
+    *   //   "endInteraction": false,
+    *   //   "events": [],
+    *   //   "followupIntentInfo": [],
+    *   //   "inputContextNames": [],
+    *   //   "isFallback": false,
+    *   //   "liveAgentHandoff": false,
+    *   //   "messages": [],
+    *   //   "mlDisabled": false,
+    *   //   "name": "my_name",
+    *   //   "outputContexts": [],
+    *   //   "parameters": [],
+    *   //   "parentFollowupIntentName": "my_parentFollowupIntentName",
+    *   //   "priority": 0,
+    *   //   "resetContexts": false,
+    *   //   "rootFollowupIntentName": "my_rootFollowupIntentName",
+    *   //   "trainingPhrases": [],
+    *   //   "webhookState": "my_webhookState"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceProjectsAgentIntentsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceProjectsAgentIntentsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaGoogleCloudDialogflowV2ListIntentsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2ListIntentsResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2ListIntentsResponse] = js.native
@@ -211,8 +521,8 @@ class ResourceProjectsAgentIntents protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceProjectsAgentIntentsList,
-    options: BodyResponseCallback[SchemaGoogleCloudDialogflowV2ListIntentsResponse],
-    callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2ListIntentsResponse]
+    options: BodyResponseCallback[Readable | SchemaGoogleCloudDialogflowV2ListIntentsResponse],
+    callback: BodyResponseCallback[Readable | SchemaGoogleCloudDialogflowV2ListIntentsResponse]
   ): Unit = js.native
   def list(params: ParamsResourceProjectsAgentIntentsList, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2ListIntentsResponse] = js.native
   def list(
@@ -220,23 +530,75 @@ class ResourceProjectsAgentIntents protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2ListIntentsResponse]
   ): Unit = js.native
-  
   /**
-    * dialogflow.projects.agent.intents.patch
-    * @desc Updates the specified intent.
-    * @alias dialogflow.projects.agent.intents.patch
-    * @memberOf! ()
+    * Returns the list of all intents in the specified agent.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dialogflow.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.intentView Optional. The resource view to apply to the returned intent.
-    * @param {string=} params.languageCode Optional. The language of training phrases, parameters and rich messages defined in `intent`. If not specified, the agent's default language is used. [Many languages](https://cloud.google.com/dialogflow-enterprise/docs/reference/language) are supported. Note: languages must be enabled in the agent before they can be used.
-    * @param {string} params.name The unique identifier of this intent. Required for Intents.UpdateIntent and Intents.BatchUpdateIntents methods. Format: `projects/<Project ID>/agent/intents/<Intent ID>`.
-    * @param {string=} params.updateMask Optional. The mask to control which fields get updated.
-    * @param {().GoogleCloudDialogflowV2Intent} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dialogflow = google.dialogflow('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/dialogflow',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dialogflow.projects.agent.intents.list({
+    *     // Optional. The resource view to apply to the returned intent.
+    *     intentView: 'placeholder-value',
+    *     // Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
+    *     languageCode: 'placeholder-value',
+    *     // Optional. The maximum number of items to return in a single page. By default 100 and at most 1000.
+    *     pageSize: 'placeholder-value',
+    *     // Optional. The next_page_token value returned from a previous list request.
+    *     pageToken: 'placeholder-value',
+    *     // Required. The agent to list all intents from. Format: `projects//agent` or `projects//locations//agent`. Alternatively, you can specify the environment to list intents for. Format: `projects//agent/environments/` or `projects//locations//agent/environments/`. Note: training phrases of the intents will not be returned for non-draft environment.
+    *     parent: 'projects/my-project/agent',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "intents": [],
+    *   //   "nextPageToken": "my_nextPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceProjectsAgentIntentsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceProjectsAgentIntentsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
   def patch(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
@@ -247,13 +609,124 @@ class ResourceProjectsAgentIntents protected () extends StObject {
   ): Unit = js.native
   def patch(
     params: ParamsResourceProjectsAgentIntentsPatch,
-    options: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent],
-    callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent]
+    options: BodyResponseCallback[Readable | SchemaGoogleCloudDialogflowV2Intent],
+    callback: BodyResponseCallback[Readable | SchemaGoogleCloudDialogflowV2Intent]
   ): Unit = js.native
   def patch(params: ParamsResourceProjectsAgentIntentsPatch, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
   def patch(
     params: ParamsResourceProjectsAgentIntentsPatch,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent]
+  ): Unit = js.native
+  /**
+    * Updates the specified intent. Note: You should always train an agent prior to sending it queries. See the [training documentation](https://cloud.google.com/dialogflow/es/docs/training).
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dialogflow.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const dialogflow = google.dialogflow('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/dialogflow',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dialogflow.projects.agent.intents.patch({
+    *     // Optional. The resource view to apply to the returned intent.
+    *     intentView: 'placeholder-value',
+    *     // Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
+    *     languageCode: 'placeholder-value',
+    *     // Optional. The unique identifier of this intent. Required for Intents.UpdateIntent and Intents.BatchUpdateIntents methods. Format: `projects//agent/intents/`.
+    *     name: 'projects/my-project/agent/intents/my-intent',
+    *     // Optional. The mask to control which fields get updated.
+    *     updateMask: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "action": "my_action",
+    *       //   "defaultResponsePlatforms": [],
+    *       //   "displayName": "my_displayName",
+    *       //   "endInteraction": false,
+    *       //   "events": [],
+    *       //   "followupIntentInfo": [],
+    *       //   "inputContextNames": [],
+    *       //   "isFallback": false,
+    *       //   "liveAgentHandoff": false,
+    *       //   "messages": [],
+    *       //   "mlDisabled": false,
+    *       //   "name": "my_name",
+    *       //   "outputContexts": [],
+    *       //   "parameters": [],
+    *       //   "parentFollowupIntentName": "my_parentFollowupIntentName",
+    *       //   "priority": 0,
+    *       //   "resetContexts": false,
+    *       //   "rootFollowupIntentName": "my_rootFollowupIntentName",
+    *       //   "trainingPhrases": [],
+    *       //   "webhookState": "my_webhookState"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "action": "my_action",
+    *   //   "defaultResponsePlatforms": [],
+    *   //   "displayName": "my_displayName",
+    *   //   "endInteraction": false,
+    *   //   "events": [],
+    *   //   "followupIntentInfo": [],
+    *   //   "inputContextNames": [],
+    *   //   "isFallback": false,
+    *   //   "liveAgentHandoff": false,
+    *   //   "messages": [],
+    *   //   "mlDisabled": false,
+    *   //   "name": "my_name",
+    *   //   "outputContexts": [],
+    *   //   "parameters": [],
+    *   //   "parentFollowupIntentName": "my_parentFollowupIntentName",
+    *   //   "priority": 0,
+    *   //   "resetContexts": false,
+    *   //   "rootFollowupIntentName": "my_rootFollowupIntentName",
+    *   //   "trainingPhrases": [],
+    *   //   "webhookState": "my_webhookState"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def patch(params: ParamsResourceProjectsAgentIntentsPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceProjectsAgentIntentsPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

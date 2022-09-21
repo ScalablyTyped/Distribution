@@ -35,8 +35,8 @@ object identity {
     * Gets an OAuth2 access token using the client ID and scopes specified in the oauth2 section of manifest.json.
     * @deprecated Unsupported on Firefox at this time.
     */
-  inline def getAuthToken(): js.Promise[js.Array[AccountInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthToken")().asInstanceOf[js.Promise[js.Array[AccountInfo]]]
-  inline def getAuthToken(details: GetAuthTokenDetails): js.Promise[js.Array[AccountInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthToken")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[AccountInfo]]]
+  inline def getAuthToken(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthToken")().asInstanceOf[js.Promise[String]]
+  inline def getAuthToken(details: GetAuthTokenDetails): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthToken")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   /**
     * Retrieves email address and obfuscated gaia id of the user signed into a profile.

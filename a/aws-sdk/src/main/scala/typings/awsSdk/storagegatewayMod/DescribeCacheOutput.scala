@@ -12,7 +12,7 @@ trait DescribeCacheOutput extends StObject {
   var CacheAllocatedInBytes: js.UndefOr[long] = js.undefined
   
   /**
-    * The file share's contribution to the overall percentage of the gateway's cache that has not been persisted to AWS. The sample is taken at the end of the reporting period.
+    * The file share's contribution to the overall percentage of the gateway's cache that has not been persisted to Amazon Web Services. The sample is taken at the end of the reporting period.
     */
   var CacheDirtyPercentage: js.UndefOr[double] = js.undefined
   
@@ -71,7 +71,7 @@ object DescribeCacheOutput {
     
     inline def setDiskIdsUndefined: Self = StObject.set(x, "DiskIds", js.undefined)
     
-    inline def setDiskIdsVarargs(value: DiskId*): Self = StObject.set(x, "DiskIds", js.Array(value :_*))
+    inline def setDiskIdsVarargs(value: DiskId*): Self = StObject.set(x, "DiskIds", js.Array(value*))
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

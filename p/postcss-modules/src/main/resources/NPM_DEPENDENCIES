@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-modules" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-modules" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

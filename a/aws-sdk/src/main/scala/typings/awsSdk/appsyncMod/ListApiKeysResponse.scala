@@ -12,7 +12,7 @@ trait ListApiKeysResponse extends StObject {
   var apiKeys: js.UndefOr[ApiKeys] = js.undefined
   
   /**
-    * An identifier to be passed in the next request to this operation to return the next set of items in the list.
+    * An identifier to pass in the next request to this operation to return the next set of items in the list.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListApiKeysResponse {
     
     inline def setApiKeysUndefined: Self = StObject.set(x, "apiKeys", js.undefined)
     
-    inline def setApiKeysVarargs(value: ApiKey*): Self = StObject.set(x, "apiKeys", js.Array(value :_*))
+    inline def setApiKeysVarargs(value: ApiKey*): Self = StObject.set(x, "apiKeys", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

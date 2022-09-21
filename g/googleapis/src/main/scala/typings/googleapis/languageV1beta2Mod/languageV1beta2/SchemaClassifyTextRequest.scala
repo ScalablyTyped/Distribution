@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The document classification request message.
-  */
 trait SchemaClassifyTextRequest extends StObject {
   
   /**
-    * Input document.
+    * Required. Input document.
     */
   var document: js.UndefOr[SchemaDocument] = js.undefined
 }

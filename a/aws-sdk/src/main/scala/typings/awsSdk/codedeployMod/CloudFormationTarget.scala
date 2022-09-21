@@ -14,7 +14,7 @@ trait CloudFormationTarget extends StObject {
   /**
     *  The date and time when the target application was updated by an AWS CloudFormation blue/green deployment. 
     */
-  var lastUpdatedAt: js.UndefOr[Time] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The lifecycle events of the AWS CloudFormation blue/green deployment to this target application. 
@@ -54,7 +54,7 @@ object CloudFormationTarget {
     
     inline def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
-    inline def setLastUpdatedAt(value: Time): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
@@ -62,7 +62,7 @@ object CloudFormationTarget {
     
     inline def setLifecycleEventsUndefined: Self = StObject.set(x, "lifecycleEvents", js.undefined)
     
-    inline def setLifecycleEventsVarargs(value: LifecycleEvent*): Self = StObject.set(x, "lifecycleEvents", js.Array(value :_*))
+    inline def setLifecycleEventsVarargs(value: LifecycleEvent*): Self = StObject.set(x, "lifecycleEvents", js.Array(value*))
     
     inline def setResourceType(value: CloudFormationResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientVerticalGridBatchEditRecordDeletingEventArgs")
 @js.native
-class ASPxClientVerticalGridBatchEditRecordDeletingEventArgs protected ()
+open class ASPxClientVerticalGridBatchEditRecordDeletingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientVerticalGridBatchEditRecordDeletingEventArgs {
   /**
@@ -17,10 +17,10 @@ class ASPxClientVerticalGridBatchEditRecordDeletingEventArgs protected ()
     * @param visibleIndex An integer value that specifies the processed record's visible index.
     * @param recordValues A hashtable that stores information about the processed record's cells.
     */
-  def this(visibleIndex: Double, recordValues: js.Any) = this()
+  def this(visibleIndex: Double, recordValues: Any) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
@@ -29,7 +29,7 @@ class ASPxClientVerticalGridBatchEditRecordDeletingEventArgs protected ()
     * Gets a hashtable that maintains information about deleted cells.
     */
   /* CompleteClass */
-  var recordValues: js.Any = js.native
+  var recordValues: Any = js.native
   
   /**
     * Gets the processed record's visible index.

@@ -12,7 +12,7 @@ trait DescribeConfigurationAggregatorsRequest extends StObject {
   var ConfigurationAggregatorNames: js.UndefOr[ConfigurationAggregatorNameList] = js.undefined
   
   /**
-    * The maximum number of configuration aggregators returned on each page. The default is maximum. If you specify 0, AWS Config uses the default.
+    * The maximum number of configuration aggregators returned on each page. The default is maximum. If you specify 0, Config uses the default.
     */
   var Limit: js.UndefOr[typings.awsSdk.configserviceMod.Limit] = js.undefined
   
@@ -34,7 +34,7 @@ object DescribeConfigurationAggregatorsRequest {
     
     inline def setConfigurationAggregatorNamesUndefined: Self = StObject.set(x, "ConfigurationAggregatorNames", js.undefined)
     
-    inline def setConfigurationAggregatorNamesVarargs(value: ConfigurationAggregatorName*): Self = StObject.set(x, "ConfigurationAggregatorNames", js.Array(value :_*))
+    inline def setConfigurationAggregatorNamesVarargs(value: ConfigurationAggregatorName*): Self = StObject.set(x, "ConfigurationAggregatorNames", js.Array(value*))
     
     inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

@@ -20,15 +20,15 @@ trait FoundationStatic extends StObject {
   def init(scope: JQuery, libraries: String, method: Options): JQuery = js.native
   def init(scope: JQuery, libraries: Options): JQuery = js.native
   
-  def init_lib(lib: js.Any, args: js.Any): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+  def init_lib(lib: Any, args: Any): js.Function1[/* repeated */ Any, Any] = js.native
   
-  var libs: js.Any = js.native
+  var libs: Any = js.native
   
   var media_queries: js.Object = js.native
   
   var name: String = js.native
   
-  def patch(lib: js.Any): Unit = js.native
+  def patch(lib: Any): Unit = js.native
   
   def set_namespace(): Unit = js.native
   

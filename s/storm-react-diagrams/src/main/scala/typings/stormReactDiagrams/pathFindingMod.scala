@@ -11,7 +11,7 @@ object pathFindingMod {
   
   @JSImport("storm-react-diagrams/dist/src/routing/PathFinding", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with PathFinding {
     def this(diagramEngine: DiagramEngine) = this()
@@ -34,7 +34,7 @@ object pathFindingMod {
       end: X,
       pathToStart: js.Array[js.Array[Double]],
       pathToEnd: js.Array[js.Array[Double]]
-    ): js.Any = js.native
+    ): Any = js.native
     
     /**
       * Using @link{#calculateDirectPath}'s result as input, we here
@@ -48,7 +48,7 @@ object pathFindingMod {
     var diagramEngine: DiagramEngine = js.native
     
     /* CompleteClass */
-    var instance: js.Any = js.native
+    var instance: Any = js.native
   }
   
   @JSImport("storm-react-diagrams/dist/src/routing/PathFinding", "ROUTING_SCALING_FACTOR")
@@ -73,7 +73,7 @@ object pathFindingMod {
       end: X,
       pathToStart: js.Array[js.Array[Double]],
       pathToEnd: js.Array[js.Array[Double]]
-    ): js.Any
+    ): Any
     
     /**
       * Using @link{#calculateDirectPath}'s result as input, we here
@@ -84,16 +84,16 @@ object pathFindingMod {
     
     var diagramEngine: DiagramEngine
     
-    var instance: js.Any
+    var instance: Any
   }
   object PathFinding {
     
     inline def apply(
       calculateDirectPath: (X, X) => js.Array[js.Array[Double]],
-      calculateDynamicPath: (js.Array[js.Array[Double]], X, X, js.Array[js.Array[Double]], js.Array[js.Array[Double]]) => js.Any,
+      calculateDynamicPath: (js.Array[js.Array[Double]], X, X, js.Array[js.Array[Double]], js.Array[js.Array[Double]]) => Any,
       calculateLinkStartEndCoords: (js.Array[js.Array[Double]], js.Array[js.Array[Double]]) => End,
       diagramEngine: DiagramEngine,
-      instance: js.Any
+      instance: Any
     ): PathFinding = {
       val __obj = js.Dynamic.literal(calculateDirectPath = js.Any.fromFunction2(calculateDirectPath), calculateDynamicPath = js.Any.fromFunction5(calculateDynamicPath), calculateLinkStartEndCoords = js.Any.fromFunction2(calculateLinkStartEndCoords), diagramEngine = diagramEngine.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any])
       __obj.asInstanceOf[PathFinding]
@@ -104,14 +104,14 @@ object pathFindingMod {
       inline def setCalculateDirectPath(value: (X, X) => js.Array[js.Array[Double]]): Self = StObject.set(x, "calculateDirectPath", js.Any.fromFunction2(value))
       
       inline def setCalculateDynamicPath(
-        value: (js.Array[js.Array[Double]], X, X, js.Array[js.Array[Double]], js.Array[js.Array[Double]]) => js.Any
+        value: (js.Array[js.Array[Double]], X, X, js.Array[js.Array[Double]], js.Array[js.Array[Double]]) => Any
       ): Self = StObject.set(x, "calculateDynamicPath", js.Any.fromFunction5(value))
       
       inline def setCalculateLinkStartEndCoords(value: (js.Array[js.Array[Double]], js.Array[js.Array[Double]]) => End): Self = StObject.set(x, "calculateLinkStartEndCoords", js.Any.fromFunction2(value))
       
       inline def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
       
-      inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.Project")
 @js.native
-class Project protected ()
+open class Project protected ()
   extends StObject
      with typings.paper.paper.Project {
   def this(element: String) = this()

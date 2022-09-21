@@ -9,7 +9,7 @@ trait IAnimation
   extends StObject
      with IContainer {
   
-  def start(): js.Any = js.native
+  def start(): Any = js.native
   
-  def stop(): js.Any = js.native
+  def stop(): Any = js.native
 }

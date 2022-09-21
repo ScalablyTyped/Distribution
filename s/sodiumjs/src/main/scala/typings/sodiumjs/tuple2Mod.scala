@@ -8,7 +8,7 @@ object tuple2Mod {
   
   @JSImport("sodiumjs/dist/typings/sodium/Tuple2", "Tuple2")
   @js.native
-  class Tuple2[A, B] protected () extends StObject {
+  open class Tuple2[A, B] protected () extends StObject {
     def this(a: A, b: B) = this()
     
     var a: A = js.native

@@ -48,7 +48,7 @@ object BuildGroup {
     
     inline def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
     
-    inline def setDependsOnVarargs(value: NonEmptyString*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
+    inline def setDependsOnVarargs(value: NonEmptyString*): Self = StObject.set(x, "dependsOn", js.Array(value*))
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
@@ -62,6 +62,6 @@ object BuildGroup {
     
     inline def setPriorBuildSummaryListUndefined: Self = StObject.set(x, "priorBuildSummaryList", js.undefined)
     
-    inline def setPriorBuildSummaryListVarargs(value: BuildSummary*): Self = StObject.set(x, "priorBuildSummaryList", js.Array(value :_*))
+    inline def setPriorBuildSummaryListVarargs(value: BuildSummary*): Self = StObject.set(x, "priorBuildSummaryList", js.Array(value*))
   }
 }

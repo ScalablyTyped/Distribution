@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "SubSurfaceSceneComponent")
 @js.native
-class SubSurfaceSceneComponent protected ()
+open class SubSurfaceSceneComponent protected ()
   extends typings.babylonjs.renderingIndexMod.SubSurfaceSceneComponent {
   /**
     * Creates a new instance of the component for the given scene

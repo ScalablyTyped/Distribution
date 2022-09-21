@@ -10,10 +10,10 @@ The lodash method `_.set` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.set |
 | Keywords           | lodash-modularized, set |
-| # releases         | 0 |
-| # dependents       | 956 |
-| # downloads        | 140120636 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6336150333333334E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

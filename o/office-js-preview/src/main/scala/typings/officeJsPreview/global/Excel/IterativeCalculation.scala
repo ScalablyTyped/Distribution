@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the iterative calculation settings.
   *
-  * Represents the Iterative Calculation settings.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.IterativeCalculation")
 @js.native
-class IterativeCalculation ()
+open class IterativeCalculation ()
   extends StObject
      with typings.officeJsPreview.Excel.IterativeCalculation {
   

@@ -1,74 +1,42 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.arrowBottom
-import typings.devextreme.devextremeStrings.arrowEastWest
-import typings.devextreme.devextremeStrings.arrowLeft
-import typings.devextreme.devextremeStrings.arrowNorthSouth
-import typings.devextreme.devextremeStrings.arrowRight
-import typings.devextreme.devextremeStrings.arrowTop
-import typings.devextreme.devextremeStrings.cardWithImageOnLeft
-import typings.devextreme.devextremeStrings.cardWithImageOnRight
-import typings.devextreme.devextremeStrings.cardWithImageOnTop
-import typings.devextreme.devextremeStrings.connector
-import typings.devextreme.devextremeStrings.containers
-import typings.devextreme.devextremeStrings.cross
-import typings.devextreme.devextremeStrings.custom
-import typings.devextreme.devextremeStrings.data
-import typings.devextreme.devextremeStrings.database
-import typings.devextreme.devextremeStrings.decision
-import typings.devextreme.devextremeStrings.delay
-import typings.devextreme.devextremeStrings.diamond
-import typings.devextreme.devextremeStrings.display
-import typings.devextreme.devextremeStrings.document
-import typings.devextreme.devextremeStrings.ellipse
-import typings.devextreme.devextremeStrings.flowchart
-import typings.devextreme.devextremeStrings.general
-import typings.devextreme.devextremeStrings.hardDisk
-import typings.devextreme.devextremeStrings.heart
-import typings.devextreme.devextremeStrings.horizontalContainer
-import typings.devextreme.devextremeStrings.icons
-import typings.devextreme.devextremeStrings.internalStorage
-import typings.devextreme.devextremeStrings.manualInput
-import typings.devextreme.devextremeStrings.manualOperation
-import typings.devextreme.devextremeStrings.merge
-import typings.devextreme.devextremeStrings.multipleDocuments
-import typings.devextreme.devextremeStrings.octagon
-import typings.devextreme.devextremeStrings.or
-import typings.devextreme.devextremeStrings.orgChart
-import typings.devextreme.devextremeStrings.paperTape
-import typings.devextreme.devextremeStrings.pentagon
-import typings.devextreme.devextremeStrings.predefinedProcess
-import typings.devextreme.devextremeStrings.preparation
-import typings.devextreme.devextremeStrings.process
-import typings.devextreme.devextremeStrings.rectangle
-import typings.devextreme.devextremeStrings.star
-import typings.devextreme.devextremeStrings.storedData
-import typings.devextreme.devextremeStrings.summingJunction
-import typings.devextreme.devextremeStrings.terminator
-import typings.devextreme.devextremeStrings.text
-import typings.devextreme.devextremeStrings.texts
-import typings.devextreme.devextremeStrings.triangle
-import typings.devextreme.devextremeStrings.verticalContainer
+import typings.devextreme.mod.DevExpress.ui.dxDiagram.DiagramShapeCategory
+import typings.devextreme.mod.DevExpress.ui.dxDiagram.DiagramShapeType
+import typings.devextreme.mod.DevExpress.ui.dxDiagram.DiagramToolboxDisplayMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Category extends StObject {
   
-  var category: js.UndefOr[general | flowchart | orgChart | containers | custom | String] = js.undefined
+  /**
+    * Specifies the category of shapes that are displayed in the context toolbox.
+    */
+  var category: js.UndefOr[DiagramShapeCategory | String] = js.undefined
   
-  var displayMode: js.UndefOr[icons | texts] = js.undefined
+  /**
+    * Specifies how shapes are displayed in the context toolbox.
+    */
+  var displayMode: js.UndefOr[DiagramToolboxDisplayMode] = js.undefined
   
+  /**
+    * Specifies the context toolbox&apos;s availability.
+    */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies the number of shape icons in a row.
+    */
   var shapeIconsPerRow: js.UndefOr[Double] = js.undefined
   
-  var shapes: js.UndefOr[
-    js.Array[
-      text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
-    ]
-  ] = js.undefined
+  /**
+    * Lists the shapes that are displayed in the context toolbox. The built-in shape types are shown in the Shape Types section.
+    */
+  var shapes: js.UndefOr[js.Array[DiagramShapeType | String]] = js.undefined
   
+  /**
+    * Specifies the context toolbox&apos;s width in pixels.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object Category {
@@ -80,11 +48,11 @@ object Category {
   
   extension [Self <: Category](x: Self) {
     
-    inline def setCategory(value: general | flowchart | orgChart | containers | custom | String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: DiagramShapeCategory | String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    inline def setDisplayMode(value: icons | texts): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
+    inline def setDisplayMode(value: DiagramToolboxDisplayMode): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     
     inline def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
     
@@ -96,17 +64,11 @@ object Category {
     
     inline def setShapeIconsPerRowUndefined: Self = StObject.set(x, "shapeIconsPerRow", js.undefined)
     
-    inline def setShapes(
-      value: js.Array[
-          text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
-        ]
-    ): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
+    inline def setShapes(value: js.Array[DiagramShapeType | String]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
     inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    inline def setShapesVarargs(
-      value: (text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String)*
-    ): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: (DiagramShapeType | String)*): Self = StObject.set(x, "shapes", js.Array(value*))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

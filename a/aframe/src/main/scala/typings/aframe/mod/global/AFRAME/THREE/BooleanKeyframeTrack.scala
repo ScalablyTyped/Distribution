@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.BooleanKeyframeTrack")
 @js.native
-class BooleanKeyframeTrack protected ()
+open class BooleanKeyframeTrack protected ()
   extends typings.three.mod.BooleanKeyframeTrack {
-  def this(name: String, times: js.Array[js.Any], values: js.Array[js.Any]) = this()
+  def this(name: String, times: js.Array[Any], values: js.Array[Any]) = this()
 }

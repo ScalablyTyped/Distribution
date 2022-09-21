@@ -9,7 +9,7 @@ trait Text extends StObject {
   /**
     * To set the word count. 5 | 20 | 100 | ...
     */
-  var count: js.UndefOr[js.Any] = js.undefined
+  var count: js.UndefOr[Any] = js.undefined
   
   /**
     * To set the word. "Flowers" | "Freesia" | "Peony" | ...
@@ -25,7 +25,7 @@ object Text {
   
   extension [Self <: Text](x: Self) {
     
-    inline def setCount(value: js.Any): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Any): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
     inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     

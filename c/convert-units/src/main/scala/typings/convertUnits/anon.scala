@@ -1,38 +1,41 @@
 package typings.convertUnits
 
-import typings.convertUnits.mod.measure
-import typings.convertUnits.mod.system
-import typings.convertUnits.mod.unit
+import typings.convertUnits.mod.Unit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Abbr[T /* <: unit */] extends StObject {
+  trait Abbr[T /* <: Unit */] extends StObject {
     
     var abbr: T
     
-    var measure: typings.convertUnits.mod.measure
+    var measure: typings.convertUnits.mod.Measure
     
-    var system: typings.convertUnits.mod.system
+    var system: typings.convertUnits.mod.System
     
     var unit: Name
   }
   object Abbr {
     
-    inline def apply[T /* <: unit */](abbr: T, measure: measure, system: system, unit: Name): Abbr[T] = {
+    inline def apply[T /* <: Unit */](
+      abbr: T,
+      measure: typings.convertUnits.mod.Measure,
+      system: typings.convertUnits.mod.System,
+      unit: Name
+    ): Abbr[T] = {
       val __obj = js.Dynamic.literal(abbr = abbr.asInstanceOf[js.Any], measure = measure.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
       __obj.asInstanceOf[Abbr[T]]
     }
     
-    extension [Self <: Abbr[?], T /* <: unit */](x: Self & Abbr[T]) {
+    extension [Self <: Abbr[?], T /* <: Unit */](x: Self & Abbr[T]) {
       
       inline def setAbbr(value: T): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       
-      inline def setMeasure(value: measure): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
+      inline def setMeasure(value: typings.convertUnits.mod.Measure): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
       
-      inline def setSystem(value: system): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+      inline def setSystem(value: typings.convertUnits.mod.System): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
       
       inline def setUnit(value: Name): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     }
@@ -42,7 +45,7 @@ object anon {
     
     var cutOffNumber: js.UndefOr[Double] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[unit]] = js.undefined
+    var exclude: js.UndefOr[js.Array[Unit]] = js.undefined
   }
   object CutOffNumber {
     
@@ -57,44 +60,50 @@ object anon {
       
       inline def setCutOffNumberUndefined: Self = StObject.set(x, "cutOffNumber", js.undefined)
       
-      inline def setExclude(value: js.Array[unit]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[Unit]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: unit*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: Unit*): Self = StObject.set(x, "exclude", js.Array(value*))
     }
   }
   
-  trait Measure[T /* <: unit */] extends StObject {
+  trait Measure[T /* <: Unit */] extends StObject {
     
     var abbr: T
     
-    var measure: typings.convertUnits.mod.measure
+    var measure: typings.convertUnits.mod.Measure
     
     var plural: String
     
     var singular: String
     
-    var system: typings.convertUnits.mod.system
+    var system: typings.convertUnits.mod.System
   }
   object Measure {
     
-    inline def apply[T /* <: unit */](abbr: T, measure: measure, plural: String, singular: String, system: system): Measure[T] = {
+    inline def apply[T /* <: Unit */](
+      abbr: T,
+      measure: typings.convertUnits.mod.Measure,
+      plural: String,
+      singular: String,
+      system: typings.convertUnits.mod.System
+    ): Measure[T] = {
       val __obj = js.Dynamic.literal(abbr = abbr.asInstanceOf[js.Any], measure = measure.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any], singular = singular.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any])
       __obj.asInstanceOf[Measure[T]]
     }
     
-    extension [Self <: Measure[?], T /* <: unit */](x: Self & Measure[T]) {
+    extension [Self <: Measure[?], T /* <: Unit */](x: Self & Measure[T]) {
       
       inline def setAbbr(value: T): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       
-      inline def setMeasure(value: measure): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
+      inline def setMeasure(value: typings.convertUnits.mod.Measure): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
       
       inline def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
       
       inline def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
       
-      inline def setSystem(value: system): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+      inline def setSystem(value: typings.convertUnits.mod.System): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     }
   }
   
@@ -172,34 +181,40 @@ object anon {
   
   trait System extends StObject {
     
-    var abbr: unit
+    var abbr: Unit
     
-    var measure: typings.convertUnits.mod.measure
+    var measure: typings.convertUnits.mod.Measure
     
     var plural: String
     
     var singular: String
     
-    var system: typings.convertUnits.mod.system
+    var system: typings.convertUnits.mod.System
   }
   object System {
     
-    inline def apply(abbr: unit, measure: measure, plural: String, singular: String, system: system): System = {
+    inline def apply(
+      abbr: Unit,
+      measure: typings.convertUnits.mod.Measure,
+      plural: String,
+      singular: String,
+      system: typings.convertUnits.mod.System
+    ): System = {
       val __obj = js.Dynamic.literal(abbr = abbr.asInstanceOf[js.Any], measure = measure.asInstanceOf[js.Any], plural = plural.asInstanceOf[js.Any], singular = singular.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any])
       __obj.asInstanceOf[System]
     }
     
     extension [Self <: System](x: Self) {
       
-      inline def setAbbr(value: unit): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
+      inline def setAbbr(value: Unit): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       
-      inline def setMeasure(value: measure): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
+      inline def setMeasure(value: typings.convertUnits.mod.Measure): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
       
       inline def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
       
       inline def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
       
-      inline def setSystem(value: system): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+      inline def setSystem(value: typings.convertUnits.mod.System): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     }
   }
 }

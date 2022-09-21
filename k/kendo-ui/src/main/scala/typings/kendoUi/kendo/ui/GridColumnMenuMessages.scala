@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GridColumnMenuMessages extends StObject {
   
+  @JSName("apply")
+  var apply: js.UndefOr[String] = js.undefined
+  
+  var buttonTitle: js.UndefOr[String] = js.undefined
+  
   var columns: js.UndefOr[String] = js.undefined
   
   var done: js.UndefOr[String] = js.undefined
@@ -13,6 +18,8 @@ trait GridColumnMenuMessages extends StObject {
   var filter: js.UndefOr[String] = js.undefined
   
   var lock: js.UndefOr[String] = js.undefined
+  
+  var reset: js.UndefOr[String] = js.undefined
   
   var setColumnPosition: js.UndefOr[String] = js.undefined
   
@@ -37,6 +44,14 @@ object GridColumnMenuMessages {
   
   extension [Self <: GridColumnMenuMessages](x: Self) {
     
+    inline def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+    
+    inline def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
+    
+    inline def setButtonTitle(value: String): Self = StObject.set(x, "buttonTitle", value.asInstanceOf[js.Any])
+    
+    inline def setButtonTitleUndefined: Self = StObject.set(x, "buttonTitle", js.undefined)
+    
     inline def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
@@ -52,6 +67,10 @@ object GridColumnMenuMessages {
     inline def setLock(value: String): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
     
     inline def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
+    
+    inline def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
     inline def setSetColumnPosition(value: String): Self = StObject.set(x, "setColumnPosition", value.asInstanceOf[js.Any])
     

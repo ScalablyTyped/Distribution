@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents an Office.js binding that is defined in the workbook.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 trait BindingLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait BindingLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the binding identifier.
     *
-    * Represents binding identifier.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Returns the type of the binding. See `Excel.BindingType` for details.
     *
-    * Returns the type of the binding. See Excel.BindingType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined

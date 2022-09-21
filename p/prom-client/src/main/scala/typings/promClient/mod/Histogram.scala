@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("prom-client", "Histogram")
 @js.native
-class Histogram[T /* <: String */] protected ()
+open class Histogram[T /* <: String */] protected ()
   extends StObject
      with Metric_[T] {
   /**
@@ -15,6 +15,12 @@ class Histogram[T /* <: String */] protected ()
   	 */
   def this(configuration: HistogramConfiguration[T]) = this()
   
+  /**
+  	 * Return the child for given labels
+  	 * @param labels Object with label keys and values
+  	 * @return Configured counter with given labels
+  	 */
+  def labels(labels: LabelValues[T]): Internal[T] = js.native
   /**
   	 * Return the child for given labels
   	 * @param values Label values
@@ -36,6 +42,11 @@ class Histogram[T /* <: String */] protected ()
   
   /**
   	 * Remove metrics for the given label values
+  	 * @param labels Object with label keys and values
+  	 */
+  def remove(labels: LabelValues[T]): Unit = js.native
+  /**
+  	 * Remove metrics for the given label values
   	 * @param values Label values
   	 */
   def remove(values: String*): Unit = js.native
@@ -46,12 +57,19 @@ class Histogram[T /* <: String */] protected ()
   def reset(): Unit = js.native
   
   /**
-  	 * Start a timer where the value in seconds will observed
+  	 * Start a timer. Calling the returned function will observe the duration in
+  	 * seconds in the histogram.
   	 * @param labels Object with label keys and values
-  	 * @return Function to invoke when timer should be stopped
+  	 * @return Function to invoke when timer should be stopped. The value it
+  	 * returns is the timed duration.
   	 */
-  def startTimer(): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit] = js.native
-  def startTimer(labels: LabelValues[T]): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit] = js.native
+  def startTimer(): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Double] = js.native
+  def startTimer(labels: LabelValues[T]): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Double] = js.native
+  
+  /**
+  	 * Initialize the metrics for the given combination of labels to zero
+  	 */
+  def zero(labels: LabelValues[T]): Unit = js.native
 }
 object Histogram {
   
@@ -75,7 +93,7 @@ object Histogram {
       
       inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
       
-      inline def setBucketsVarargs(value: Double*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+      inline def setBucketsVarargs(value: Double*): Self = StObject.set(x, "buckets", js.Array(value*))
     }
   }
   
@@ -88,9 +106,11 @@ object Histogram {
     def observe(value: Double): Unit
     
     /**
-    		 * Start a timer where the value in seconds will observed
+    		 * Start a timer. Calling the returned function will observe the
+    		 * duration in seconds in the histogram.
     		 * @param labels Object with label keys and values
-    		 * @return Function to invoke when timer should be stopped
+    		 * @return Function to invoke when timer should be stopped. The value it
+    		 * returns is the timed duration.
     		 */
     def startTimer(): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit]
   }

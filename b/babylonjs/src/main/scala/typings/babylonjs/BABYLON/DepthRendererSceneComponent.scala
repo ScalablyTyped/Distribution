@@ -8,15 +8,15 @@ trait DepthRendererSceneComponent
   extends StObject
      with ISceneComponent {
   
-  /* private */ var _gatherActiveCameraRenderTargets: js.Any
+  /* private */ var _gatherActiveCameraRenderTargets: Any
   
-  /* private */ var _gatherRenderTargets: js.Any
+  /* private */ var _gatherRenderTargets: Any
 }
 object DepthRendererSceneComponent {
   
   inline def apply(
-    _gatherActiveCameraRenderTargets: js.Any,
-    _gatherRenderTargets: js.Any,
+    _gatherActiveCameraRenderTargets: Any,
+    _gatherRenderTargets: Any,
     dispose: () => Unit,
     name: String,
     rebuild: () => Unit,
@@ -29,8 +29,8 @@ object DepthRendererSceneComponent {
   
   extension [Self <: DepthRendererSceneComponent](x: Self) {
     
-    inline def set_gatherActiveCameraRenderTargets(value: js.Any): Self = StObject.set(x, "_gatherActiveCameraRenderTargets", value.asInstanceOf[js.Any])
+    inline def set_gatherActiveCameraRenderTargets(value: Any): Self = StObject.set(x, "_gatherActiveCameraRenderTargets", value.asInstanceOf[js.Any])
     
-    inline def set_gatherRenderTargets(value: js.Any): Self = StObject.set(x, "_gatherRenderTargets", value.asInstanceOf[js.Any])
+    inline def set_gatherRenderTargets(value: Any): Self = StObject.set(x, "_gatherRenderTargets", value.asInstanceOf[js.Any])
   }
 }

@@ -45,7 +45,7 @@ trait Plugin
     * @return An event hash object with provided properties mixed-in.
     */
   def getEventHash(): PluginEventHash = js.native
-  def getEventHash(hash: js.Any): PluginEventHash = js.native
+  def getEventHash(hash: Any): PluginEventHash = js.native
   
   /**
     * Handles "statechanged" events on the plugin. No-op by default, override by

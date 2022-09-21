@@ -44,7 +44,7 @@ object GetFaceDetectionResponse {
     
     inline def setFacesUndefined: Self = StObject.set(x, "Faces", js.undefined)
     
-    inline def setFacesVarargs(value: FaceDetection*): Self = StObject.set(x, "Faces", js.Array(value :_*))
+    inline def setFacesVarargs(value: FaceDetection*): Self = StObject.set(x, "Faces", js.Array(value*))
     
     inline def setJobStatus(value: VideoJobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,6 @@ import typings.awsSdkClientS3Browser.typesQueueConfigurationMod.QueueConfigurati
 import typings.awsSdkClientS3Browser.typesQueueConfigurationMod.UnmarshalledQueueConfiguration
 import typings.awsSdkClientS3Browser.typesTopicConfigurationMod.TopicConfiguration
 import typings.awsSdkClientS3Browser.typesTopicConfigurationMod.UnmarshalledTopicConfiguration
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,17 +17,17 @@ object typesNotificationConfigurationMod {
     /**
       * _LambdaFunctionConfigurationList shape
       */
-    var LambdaFunctionConfigurations: js.UndefOr[js.Array[LambdaFunctionConfiguration] | Iterable[LambdaFunctionConfiguration]] = js.undefined
+    var LambdaFunctionConfigurations: js.UndefOr[js.Array[LambdaFunctionConfiguration] | js.Iterable[LambdaFunctionConfiguration]] = js.undefined
     
     /**
       * _QueueConfigurationList shape
       */
-    var QueueConfigurations: js.UndefOr[js.Array[QueueConfiguration] | Iterable[QueueConfiguration]] = js.undefined
+    var QueueConfigurations: js.UndefOr[js.Array[QueueConfiguration] | js.Iterable[QueueConfiguration]] = js.undefined
     
     /**
       * _TopicConfigurationList shape
       */
-    var TopicConfigurations: js.UndefOr[js.Array[TopicConfiguration] | Iterable[TopicConfiguration]] = js.undefined
+    var TopicConfigurations: js.UndefOr[js.Array[TopicConfiguration] | js.Iterable[TopicConfiguration]] = js.undefined
   }
   object NotificationConfiguration {
     
@@ -39,23 +38,23 @@ object typesNotificationConfigurationMod {
     
     extension [Self <: NotificationConfiguration](x: Self) {
       
-      inline def setLambdaFunctionConfigurations(value: js.Array[LambdaFunctionConfiguration] | Iterable[LambdaFunctionConfiguration]): Self = StObject.set(x, "LambdaFunctionConfigurations", value.asInstanceOf[js.Any])
+      inline def setLambdaFunctionConfigurations(value: js.Array[LambdaFunctionConfiguration] | js.Iterable[LambdaFunctionConfiguration]): Self = StObject.set(x, "LambdaFunctionConfigurations", value.asInstanceOf[js.Any])
       
       inline def setLambdaFunctionConfigurationsUndefined: Self = StObject.set(x, "LambdaFunctionConfigurations", js.undefined)
       
-      inline def setLambdaFunctionConfigurationsVarargs(value: LambdaFunctionConfiguration*): Self = StObject.set(x, "LambdaFunctionConfigurations", js.Array(value :_*))
+      inline def setLambdaFunctionConfigurationsVarargs(value: LambdaFunctionConfiguration*): Self = StObject.set(x, "LambdaFunctionConfigurations", js.Array(value*))
       
-      inline def setQueueConfigurations(value: js.Array[QueueConfiguration] | Iterable[QueueConfiguration]): Self = StObject.set(x, "QueueConfigurations", value.asInstanceOf[js.Any])
+      inline def setQueueConfigurations(value: js.Array[QueueConfiguration] | js.Iterable[QueueConfiguration]): Self = StObject.set(x, "QueueConfigurations", value.asInstanceOf[js.Any])
       
       inline def setQueueConfigurationsUndefined: Self = StObject.set(x, "QueueConfigurations", js.undefined)
       
-      inline def setQueueConfigurationsVarargs(value: QueueConfiguration*): Self = StObject.set(x, "QueueConfigurations", js.Array(value :_*))
+      inline def setQueueConfigurationsVarargs(value: QueueConfiguration*): Self = StObject.set(x, "QueueConfigurations", js.Array(value*))
       
-      inline def setTopicConfigurations(value: js.Array[TopicConfiguration] | Iterable[TopicConfiguration]): Self = StObject.set(x, "TopicConfigurations", value.asInstanceOf[js.Any])
+      inline def setTopicConfigurations(value: js.Array[TopicConfiguration] | js.Iterable[TopicConfiguration]): Self = StObject.set(x, "TopicConfigurations", value.asInstanceOf[js.Any])
       
       inline def setTopicConfigurationsUndefined: Self = StObject.set(x, "TopicConfigurations", js.undefined)
       
-      inline def setTopicConfigurationsVarargs(value: TopicConfiguration*): Self = StObject.set(x, "TopicConfigurations", js.Array(value :_*))
+      inline def setTopicConfigurationsVarargs(value: TopicConfiguration*): Self = StObject.set(x, "TopicConfigurations", js.Array(value*))
     }
   }
   
@@ -94,19 +93,19 @@ object typesNotificationConfigurationMod {
       
       inline def setLambdaFunctionConfigurationsUndefined: Self = StObject.set(x, "LambdaFunctionConfigurations", js.undefined)
       
-      inline def setLambdaFunctionConfigurationsVarargs(value: UnmarshalledLambdaFunctionConfiguration*): Self = StObject.set(x, "LambdaFunctionConfigurations", js.Array(value :_*))
+      inline def setLambdaFunctionConfigurationsVarargs(value: UnmarshalledLambdaFunctionConfiguration*): Self = StObject.set(x, "LambdaFunctionConfigurations", js.Array(value*))
       
       inline def setQueueConfigurations(value: js.Array[UnmarshalledQueueConfiguration]): Self = StObject.set(x, "QueueConfigurations", value.asInstanceOf[js.Any])
       
       inline def setQueueConfigurationsUndefined: Self = StObject.set(x, "QueueConfigurations", js.undefined)
       
-      inline def setQueueConfigurationsVarargs(value: UnmarshalledQueueConfiguration*): Self = StObject.set(x, "QueueConfigurations", js.Array(value :_*))
+      inline def setQueueConfigurationsVarargs(value: UnmarshalledQueueConfiguration*): Self = StObject.set(x, "QueueConfigurations", js.Array(value*))
       
       inline def setTopicConfigurations(value: js.Array[UnmarshalledTopicConfiguration]): Self = StObject.set(x, "TopicConfigurations", value.asInstanceOf[js.Any])
       
       inline def setTopicConfigurationsUndefined: Self = StObject.set(x, "TopicConfigurations", js.undefined)
       
-      inline def setTopicConfigurationsVarargs(value: UnmarshalledTopicConfiguration*): Self = StObject.set(x, "TopicConfigurations", js.Array(value :_*))
+      inline def setTopicConfigurationsVarargs(value: UnmarshalledTopicConfiguration*): Self = StObject.set(x, "TopicConfigurations", js.Array(value*))
     }
   }
 }

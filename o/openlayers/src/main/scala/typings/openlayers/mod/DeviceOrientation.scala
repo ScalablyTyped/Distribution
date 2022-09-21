@@ -60,7 +60,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api
   */
-class DeviceOrientation () extends Object {
+open class DeviceOrientation () extends Object {
   def this(opt_options: DeviceOrientationOptions) = this()
   
   /**

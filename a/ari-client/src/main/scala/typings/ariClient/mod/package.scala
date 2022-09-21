@@ -1,25 +1,33 @@
 package typings.ariClient.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.ariClient.ariClientStrings.APILoadError
+import typings.ariClient.ariClientStrings.ApplicationReplaced
+import typings.ariClient.ariClientStrings.WebSocketConnected
+import typings.ariClient.ariClientStrings.WebSocketMaxRetries
+import typings.ariClient.ariClientStrings.WebSocketReconnecting
+import typings.ariClient.ariClientStrings.pong
+import typings.ariClient.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def connect(baseUrl: java.lang.String, user: java.lang.String, pass: java.lang.String): js.Promise[typings.ariClient.mod.Client] = (typings.ariClient.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(baseUrl.asInstanceOf[js.Any], user.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ariClient.mod.Client]]
+inline def connect(baseUrl: String, user: String, pass: String): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(baseUrl.asInstanceOf[js.Any], user.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
 inline def connect(
-  baseUrl: java.lang.String,
-  user: java.lang.String,
-  pass: java.lang.String,
-  callback: js.Function2[/* err */ typings.std.Error, /* client */ typings.ariClient.mod.Client, scala.Unit]
-): js.Promise[typings.ariClient.mod.Client] = (typings.ariClient.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(baseUrl.asInstanceOf[js.Any], user.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.ariClient.mod.Client]]
+  baseUrl: String,
+  user: String,
+  pass: String,
+  callback: js.Function2[/* err */ js.Error, /* client */ Client, Unit]
+): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(baseUrl.asInstanceOf[js.Any], user.asInstanceOf[js.Any], pass.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
 
-type APILoadErrorEventType = typings.ariClient.ariClientStrings.APILoadError
+type APILoadErrorEventType = APILoadError
 
-type AnyEventType = typings.ariClient.mod.EventsEventType | typings.ariClient.mod.MessageEventType | typings.ariClient.mod.MissingParamsEventType | typings.ariClient.mod.EventEventType | typings.ariClient.mod.ContactInfoEventType | typings.ariClient.mod.PeerEventType | typings.ariClient.mod.DeviceStateChangedEventType | typings.ariClient.mod.PlaybackStartedEventType | typings.ariClient.mod.PlaybackContinuingEventType | typings.ariClient.mod.PlaybackFinishedEventType | typings.ariClient.mod.RecordingStartedEventType | typings.ariClient.mod.RecordingFinishedEventType | typings.ariClient.mod.RecordingFailedEventType | typings.ariClient.mod.ApplicationMoveFailedEventType | typings.ariClient.mod.ApplicationReplacedEventType | typings.ariClient.mod.BridgeCreatedEventType | typings.ariClient.mod.BridgeDestroyedEventType | typings.ariClient.mod.BridgeMergedEventType | typings.ariClient.mod.BridgeVideoSourceChangedEventType | typings.ariClient.mod.BridgeBlindTransferEventType | typings.ariClient.mod.BridgeAttendedTransferEventType | typings.ariClient.mod.ChannelCreatedEventType | typings.ariClient.mod.ChannelDestroyedEventType | typings.ariClient.mod.ChannelEnteredBridgeEventType | typings.ariClient.mod.ChannelLeftBridgeEventType | typings.ariClient.mod.ChannelStateChangeEventType | typings.ariClient.mod.ChannelDtmfReceivedEventType | typings.ariClient.mod.ChannelDialplanEventType | typings.ariClient.mod.ChannelCallerIdEventType | typings.ariClient.mod.ChannelUsereventEventType | typings.ariClient.mod.ChannelHangupRequestEventType | typings.ariClient.mod.ChannelVarsetEventType | typings.ariClient.mod.ChannelHoldEventType | typings.ariClient.mod.ChannelUnholdEventType | typings.ariClient.mod.ChannelTalkingStartedEventType | typings.ariClient.mod.ChannelTalkingFinishedEventType | typings.ariClient.mod.ContactStatusChangeEventType | typings.ariClient.mod.PeerStatusChangeEventType | typings.ariClient.mod.EndpointStateChangeEventType | typings.ariClient.mod.DialEventType | typings.ariClient.mod.StasisEndEventType | typings.ariClient.mod.StasisStartEventType | typings.ariClient.mod.TextMessageReceivedEventType | typings.ariClient.mod.ChannelConnectedLineEventType
+type AnyEventType = WebSocketConnectedEventType | WebSocketReconnectingEventType | WebSocketMaxRetriesEventType | PongEventType | APILoadErrorEventType | EventsEventType | MessageEventType | MissingParamsEventType | EventEventType | ContactInfoEventType | PeerEventType | DeviceStateChangedEventType | PlaybackStartedEventType | PlaybackContinuingEventType | PlaybackFinishedEventType | RecordingStartedEventType | RecordingFinishedEventType | RecordingFailedEventType | ApplicationMoveFailedEventType | ApplicationReplacedEventType | BridgeCreatedEventType | BridgeDestroyedEventType | BridgeMergedEventType | BridgeVideoSourceChangedEventType | BridgeBlindTransferEventType | BridgeAttendedTransferEventType | ChannelCreatedEventType | ChannelDestroyedEventType | ChannelEnteredBridgeEventType | ChannelLeftBridgeEventType | ChannelStateChangeEventType | ChannelDtmfReceivedEventType | ChannelDialplanEventType | ChannelCallerIdEventType | ChannelUsereventEventType | ChannelHangupRequestEventType | ChannelVarsetEventType | ChannelHoldEventType | ChannelUnholdEventType | ChannelTalkingStartedEventType | ChannelTalkingFinishedEventType | ContactStatusChangeEventType | PeerStatusChangeEventType | EndpointStateChangeEventType | DialEventType | StasisEndEventType | StasisStartEventType | TextMessageReceivedEventType | ChannelConnectedLineEventType
 
 type ApplicationMoveFailedEventType = typings.ariClient.ariClientStrings.ApplicationMoveFailed
 
-type ApplicationReplacedEventType = typings.ariClient.ariClientStrings.ApplicationReplaced
+type ApplicationReplacedEventType = ApplicationReplaced
 
 type BridgeAttendedTransferEventType = typings.ariClient.ariClientStrings.BridgeAttendedTransfer
 
@@ -69,7 +77,7 @@ type ContactInfoEventType = typings.ariClient.ariClientStrings.ContactInfo
 
 type ContactStatusChangeEventType = typings.ariClient.ariClientStrings.ContactStatusChange
 
-type Containers = org.scalablytyped.runtime.StringDictionary[js.Any]
+type Containers = StringDictionary[Any]
 
 type DeviceStateChangedEventType = typings.ariClient.ariClientStrings.DeviceStateChanged
 
@@ -81,7 +89,7 @@ type EventEventType = typings.ariClient.ariClientStrings.Event
 
 type EventsEventType = typings.ariClient.ariClientStrings.Events
 
-type IndexableObject = org.scalablytyped.runtime.StringDictionary[js.Any]
+type IndexableObject = StringDictionary[Any]
 
 type MessageEventType = typings.ariClient.ariClientStrings.Message
 
@@ -97,6 +105,8 @@ type PlaybackFinishedEventType = typings.ariClient.ariClientStrings.PlaybackFini
 
 type PlaybackStartedEventType = typings.ariClient.ariClientStrings.PlaybackStarted
 
+type PongEventType = pong
+
 type RecordingFailedEventType = typings.ariClient.ariClientStrings.RecordingFailed
 
 type RecordingFinishedEventType = typings.ariClient.ariClientStrings.RecordingFinished
@@ -108,3 +118,9 @@ type StasisEndEventType = typings.ariClient.ariClientStrings.StasisEnd
 type StasisStartEventType = typings.ariClient.ariClientStrings.StasisStart
 
 type TextMessageReceivedEventType = typings.ariClient.ariClientStrings.TextMessageReceived
+
+type WebSocketConnectedEventType = WebSocketConnected
+
+type WebSocketMaxRetriesEventType = WebSocketMaxRetries
+
+type WebSocketReconnectingEventType = WebSocketReconnecting

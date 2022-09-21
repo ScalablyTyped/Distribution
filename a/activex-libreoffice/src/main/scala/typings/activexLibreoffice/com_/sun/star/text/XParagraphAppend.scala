@@ -36,7 +36,7 @@ object XParagraphAppend {
     acquire: () => Unit,
     finishParagraph: PropertyValues => XTextRange,
     finishParagraphInsert: (PropertyValues, XTextRange) => XTextRange,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XParagraphAppend = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), finishParagraph = js.Any.fromFunction1(finishParagraph), finishParagraphInsert = js.Any.fromFunction2(finishParagraphInsert), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

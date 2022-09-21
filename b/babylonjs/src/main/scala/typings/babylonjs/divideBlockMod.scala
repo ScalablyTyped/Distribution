@@ -10,7 +10,7 @@ object divideBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/divideBlock", "DivideBlock")
   @js.native
-  class DivideBlock protected () extends NodeMaterialBlock {
+  open class DivideBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new DivideBlock
       * @param name defines the block name

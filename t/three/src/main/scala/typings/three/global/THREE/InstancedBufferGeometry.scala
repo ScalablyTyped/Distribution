@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.InstancedBufferGeometry")
 @js.native
-class InstancedBufferGeometry ()
+open class InstancedBufferGeometry ()
   extends typings.three.mod.InstancedBufferGeometry

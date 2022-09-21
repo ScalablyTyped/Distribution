@@ -32,15 +32,15 @@ trait XEnumeration
     * @throws NoSuchElementException if no more elements exist.
     * @throws com::sun::star::lang::WrappedTargetException If the implementation has internal reasons for exceptions, then wrap these in a {@link com.sun.star.
     */
-  def nextElement(): js.Any
+  def nextElement(): Any
 }
 object XEnumeration {
   
   inline def apply(
     acquire: () => Unit,
     hasMoreElements: () => Boolean,
-    nextElement: () => js.Any,
-    queryInterface: `type` => js.Any,
+    nextElement: () => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XEnumeration = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), hasMoreElements = js.Any.fromFunction0(hasMoreElements), nextElement = js.Any.fromFunction0(nextElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -51,6 +51,6 @@ object XEnumeration {
     
     inline def setHasMoreElements(value: () => Boolean): Self = StObject.set(x, "hasMoreElements", js.Any.fromFunction0(value))
     
-    inline def setNextElement(value: () => js.Any): Self = StObject.set(x, "nextElement", js.Any.fromFunction0(value))
+    inline def setNextElement(value: () => Any): Self = StObject.set(x, "nextElement", js.Any.fromFunction0(value))
   }
 }

@@ -11,6 +11,10 @@ object bunyanFormatStrings {
   inline def bunyan: bunyan = "bunyan".asInstanceOf[bunyan]
   
   @js.native
+  sealed trait inspect extends StObject
+  inline def inspect: inspect = "inspect".asInstanceOf[inspect]
+  
+  @js.native
   sealed trait json extends StObject
   inline def json: json = "json".asInstanceOf[json]
   

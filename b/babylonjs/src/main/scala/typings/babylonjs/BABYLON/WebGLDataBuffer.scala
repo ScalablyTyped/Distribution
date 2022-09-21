@@ -9,5 +9,5 @@ trait WebGLDataBuffer
   extends StObject
      with DataBuffer {
   
-  /* private */ var _buffer: js.Any = js.native
+  /* private */ var _buffer: Any = js.native
 }

@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ trait ReleaseReference extends StObject {
   /**
     * Gets links to access the release.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * Gets list of artifacts.
@@ -26,7 +25,7 @@ trait ReleaseReference extends StObject {
   /**
     * Gets date on which it got created.
     */
-  var createdOn: Date
+  var createdOn: js.Date
   
   /**
     * Gets description.
@@ -65,10 +64,10 @@ trait ReleaseReference extends StObject {
 object ReleaseReference {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     artifacts: js.Array[Artifact],
     createdBy: IdentityRef,
-    createdOn: Date,
+    createdOn: js.Date,
     description: String,
     id: Double,
     modifiedBy: IdentityRef,
@@ -86,11 +85,11 @@ object ReleaseReference {
     
     inline def setArtifacts(value: js.Array[Artifact]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
-    inline def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
+    inline def setArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "artifacts", js.Array(value*))
     
     inline def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -108,6 +107,6 @@ object ReleaseReference {
     
     inline def setWebAccessUri(value: String): Self = StObject.set(x, "webAccessUri", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

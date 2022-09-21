@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GoogleAnalyticsAdminV1alphaAccount extends StObject {
   
-  /** Country of business. Must be a non-deprecated code for a UN M.49 region. https: //unicode.org/cldr/charts/latest/supplem // ental/territory_containment_un_m_49.html */
-  var countryCode: js.UndefOr[String] = js.undefined
-  
   /** Output only. Time when this account was originally created. */
   var createTime: js.UndefOr[String] = js.undefined
   
@@ -21,6 +18,9 @@ trait GoogleAnalyticsAdminV1alphaAccount extends StObject {
   /** Output only. Resource name of this account. Format: accounts/{account} Example: "accounts/100" */
   var name: js.UndefOr[String] = js.undefined
   
+  /** Country of business. Must be a Unicode CLDR region code. */
+  var regionCode: js.UndefOr[String] = js.undefined
+  
   /** Output only. Time when account payload fields were last updated. */
   var updateTime: js.UndefOr[String] = js.undefined
 }
@@ -32,10 +32,6 @@ object GoogleAnalyticsAdminV1alphaAccount {
   }
   
   extension [Self <: GoogleAnalyticsAdminV1alphaAccount](x: Self) {
-    
-    inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
-    
-    inline def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
@@ -52,6 +48,10 @@ object GoogleAnalyticsAdminV1alphaAccount {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
+    
+    inline def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     

@@ -27,10 +27,10 @@ object PublicKey {
     
     inline def setExponent(value: js.Array[Double]): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
     
-    inline def setExponentVarargs(value: Double*): Self = StObject.set(x, "exponent", js.Array(value :_*))
+    inline def setExponentVarargs(value: Double*): Self = StObject.set(x, "exponent", js.Array(value*))
     
     inline def setModulus(value: js.Array[Double]): Self = StObject.set(x, "modulus", value.asInstanceOf[js.Any])
     
-    inline def setModulusVarargs(value: Double*): Self = StObject.set(x, "modulus", js.Array(value :_*))
+    inline def setModulusVarargs(value: Double*): Self = StObject.set(x, "modulus", js.Array(value*))
   }
 }

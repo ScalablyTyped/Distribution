@@ -5,36 +5,39 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a group of ink strokes.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 trait FloatingInkLoadOptions extends StObject {
   
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the ID of the FloatingInk object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the strokes of the FloatingInk object.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var inkStrokes: js.UndefOr[InkStrokeCollectionLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the PageContent parent of the FloatingInk object.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var pageContent: js.UndefOr[PageContentLoadOptions] = js.undefined

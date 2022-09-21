@@ -18,7 +18,7 @@ trait ASPxClientDashboardItemDataAxis extends StObject {
     * Returns the data point for the specified axis by unique values. An ASPxClientDashboardItemDataAxisPoint object representing the data point belonging to the specified axis.
     * @param uniqueValues A hierarchy of unique values identifying the required data point.
     */
-  def GetPointByUniqueValues(uniqueValues: js.Array[js.Any]): ASPxClientDashboardItemDataAxisPoint
+  def GetPointByUniqueValues(uniqueValues: js.Array[Any]): ASPxClientDashboardItemDataAxisPoint
   
   /**
     * Returns axis points corresponding to values of the last-level dimension.
@@ -40,7 +40,7 @@ object ASPxClientDashboardItemDataAxis {
   
   inline def apply(
     GetDimensions: () => js.Array[ASPxClientDashboardItemDataDimension],
-    GetPointByUniqueValues: js.Array[js.Any] => ASPxClientDashboardItemDataAxisPoint,
+    GetPointByUniqueValues: js.Array[Any] => ASPxClientDashboardItemDataAxisPoint,
     GetPoints: () => js.Array[ASPxClientDashboardItemDataAxisPoint],
     GetPointsByDimension: String => js.Array[ASPxClientDashboardItemDataAxisPoint],
     GetRootPoint: () => ASPxClientDashboardItemDataAxisPoint
@@ -53,7 +53,7 @@ object ASPxClientDashboardItemDataAxis {
     
     inline def setGetDimensions(value: () => js.Array[ASPxClientDashboardItemDataDimension]): Self = StObject.set(x, "GetDimensions", js.Any.fromFunction0(value))
     
-    inline def setGetPointByUniqueValues(value: js.Array[js.Any] => ASPxClientDashboardItemDataAxisPoint): Self = StObject.set(x, "GetPointByUniqueValues", js.Any.fromFunction1(value))
+    inline def setGetPointByUniqueValues(value: js.Array[Any] => ASPxClientDashboardItemDataAxisPoint): Self = StObject.set(x, "GetPointByUniqueValues", js.Any.fromFunction1(value))
     
     inline def setGetPoints(value: () => js.Array[ASPxClientDashboardItemDataAxisPoint]): Self = StObject.set(x, "GetPoints", js.Any.fromFunction0(value))
     

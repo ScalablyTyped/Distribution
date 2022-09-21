@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait KeyVersionSpec extends StObject {
   
-  /** Required. The algorithm to use for creating a managed Cloud KMS key for a for a simplified experience. All managed keys will be have their ProtectionLevel as `HSM`. */
+  /** The algorithm to use for creating a managed Cloud KMS key for a for a simplified experience. All managed keys will be have their ProtectionLevel as `HSM`. */
   var algorithm: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The resource name for an existing Cloud KMS CryptoKeyVersion in the format `projects/∗/locations/∗/keyRings/∗/cryptoKeys/∗/cryptoKeyVersions/ *`. This option enables full
+    * The resource name for an existing Cloud KMS CryptoKeyVersion in the format `projects/ *‍/locations/ *‍/keyRings/ *‍/cryptoKeys/ *‍/cryptoKeyVersions/ *`. This option enables full
     * flexibility in the key's capabilities and properties.
     */
   var cloudKmsKeyVersion: js.UndefOr[String] = js.undefined

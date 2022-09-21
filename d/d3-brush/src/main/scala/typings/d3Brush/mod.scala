@@ -10,6 +10,7 @@ import typings.d3Brush.d3BrushStrings.start
 import typings.d3Selection.mod.Selection_
 import typings.d3Selection.mod.TransitionLike
 import typings.d3Selection.mod.ValueFn
+import typings.std.Event
 import typings.std.SVGGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,14 +42,16 @@ object mod {
       * @param group A D3 selection of SVG G elements.
       * @param args Optional arguments to be passed in.
       */
-    def apply(group: Selection_[SVGGElement, Datum, js.Any, js.Any], args: js.Any*): Unit = js.native
+    def apply(group: Selection_[SVGGElement, Datum, Any, Any], args: Any*): Unit = js.native
     
     /**
       * Clear the active selection of the brush on the specified SVG G element(s) selection.
       *
       * @param group A D3 selection of SVG G elements.
+      * @param event
       */
-    def clear(group: Selection_[SVGGElement, Datum, js.Any, js.Any]): Unit = js.native
+    def clear(group: Selection_[SVGGElement, Datum, Any, Any]): Unit = js.native
+    def clear(group: Selection_[SVGGElement, Datum, Any, Any], event: Event): Unit = js.native
     
     /**
       * Returns the current extent accessor.
@@ -83,7 +86,7 @@ object mod {
     /**
       * Returns the current filter function.
       */
-    def filter(): js.ThisFunction2[/* this */ SVGGElement, /* event */ js.Any, /* d */ Datum, Boolean] = js.native
+    def filter(): js.ThisFunction2[/* this */ SVGGElement, /* event */ Any, /* d */ Datum, Boolean] = js.native
     /**
       * Sets the filter to the specified filter function and returns the brush.
       *
@@ -95,7 +98,7 @@ object mod {
       * in order, being passed the current event `event` and datum `d`, with the `this` context as the current DOM element.
       * The function returns a boolean value.
       */
-    def filter(filterFn: js.ThisFunction2[/* this */ SVGGElement, /* event */ js.Any, /* d */ Datum, Boolean]): this.type = js.native
+    def filter(filterFn: js.ThisFunction2[/* this */ SVGGElement, /* event */ Any, /* d */ Datum, Boolean]): this.type = js.native
     
     /**
       * Returns the current handle size, which defaults to six.
@@ -129,61 +132,38 @@ object mod {
     /**
       * Clear the active selection of the brush on the specified SVG G element(s) selection.
       *
-      * @param group A D3 selection of SVG G elements.
-      * @param selection Use null to clear the active brush selection.
+      * @param group A selection or a transition of SVG G elements
+      * @param selection The selection must be defined as an array of numbers, or null to clear the brush selection.
+      * For a two-dimensional brush, it must be defined as [[x0, y0], [x1, y1]], where x0 is the minimum x-value, y0 is the minimum y-value, x1 is the maximum x-value, and y1 is the maximum y-value.
+      * For an x-brush, it must be defined as [x0, x1]; for a y-brush, it must be defined as [y0, y1].
+      * The selection may also be specified as a function which returns such an array;
+      * if a function, it is invoked for each selected element, being passed the current datum d and index i, with the this context as the current DOM element.
+      * The returned array defines the brush selection for that element.
+      * @param event
       */
-    def move(group: Selection_[SVGGElement, Datum, js.Any, js.Any], selection: Null): Unit = js.native
-    /**
-      * Sets the active selection of the brush on the specified SVG G element(s) selection
-      * to the provided array.
-      *
-      * @param group A D3 selection of SVG G elements.
-      * @param selection An array specifying the new active brush selection. For a two-dimensional brush,
-      * it must be defined as [[x0, y0], [x1, y1]], where x0 is the minimum x-value, y0 is the minimum y-value,
-      * x1 is the maximum x-value, and y1 is the maximum y-value. For an x-brush, it must be defined as [x0, x1];
-      * for a y-brush, it must be defined as [y0, y1].
-      */
-    def move(group: Selection_[SVGGElement, Datum, js.Any, js.Any], selection: BrushSelection_): Unit = js.native
-    /**
-      * Sets the active selection of the brush on the specified SVG G element(s) selection
-      * based on the array returned by a value function invoked for each selection element.
-      *
-      * @param group A D3 selection of SVG G elements.
-      * @param selection A selection value function which is evaluated for each selected element,
-      * in order, being passed the current datum (d), the current index (i), and the current group (nodes),
-      * with this as the current DOM element. The function returns an array specifying the new active brush selection.
-      * For a two-dimensional brush, it must be defined as [[x0, y0], [x1, y1]], where x0 is the minimum x-value, y0 is the minimum y-value,
-      * x1 is the maximum x-value, and y1 is the maximum y-value. For an x-brush, it must be defined as [x0, x1];
-      * for a y-brush, it must be defined as [y0, y1].
-      */
+    def move(group: Selection_[SVGGElement, Datum, Any, Any]): Unit = js.native
+    def move(group: Selection_[SVGGElement, Datum, Any, Any], selection: Null, event: Event): Unit = js.native
+    def move(group: Selection_[SVGGElement, Datum, Any, Any], selection: BrushSelection_): Unit = js.native
+    def move(group: Selection_[SVGGElement, Datum, Any, Any], selection: BrushSelection_, event: Event): Unit = js.native
     def move(
-      group: Selection_[SVGGElement, Datum, js.Any, js.Any],
+      group: Selection_[SVGGElement, Datum, Any, Any],
       selection: ValueFn[SVGGElement, Datum, BrushSelection_]
     ): Unit = js.native
-    /**
-      * Sets the active selection of the brush on the specified SVG G element(s) transition
-      * to the provided array.
-      *
-      * @param group A D3 transition on SVG G elements.
-      * @param selection An array specifying the new active brush selection. For a two-dimensional brush,
-      * it must be defined as [[x0, y0], [x1, y1]], where x0 is the minimum x-value, y0 is the minimum y-value,
-      * x1 is the maximum x-value, and y1 is the maximum y-value. For an x-brush, it must be defined as [x0, x1];
-      * for a y-brush, it must be defined as [y0, y1].
-      */
+    def move(
+      group: Selection_[SVGGElement, Datum, Any, Any],
+      selection: ValueFn[SVGGElement, Datum, BrushSelection_],
+      event: Event
+    ): Unit = js.native
+    def move(group: TransitionLike[SVGGElement, Datum]): Unit = js.native
+    def move(group: TransitionLike[SVGGElement, Datum], selection: Null, event: Event): Unit = js.native
     def move(group: TransitionLike[SVGGElement, Datum], selection: BrushSelection_): Unit = js.native
-    /**
-      * Sets the active selection of the brush on the specified SVG G element(s) transition
-      * based on the array returned by a value function invoked for each transitioning element.
-      *
-      * @param group A D3 transition on SVG G elements.
-      * @param selection A selection value function which is evaluated for each selected element,
-      * in order, being passed the current datum (d), the current index (i), and the current group (nodes),
-      * with this as the current DOM element. The function returns an array specifying the new active brush selection.
-      * For a two-dimensional brush, it must be defined as [[x0, y0], [x1, y1]], where x0 is the minimum x-value, y0 is the minimum y-value,
-      * x1 is the maximum x-value, and y1 is the maximum y-value. For an x-brush, it must be defined as [x0, x1];
-      * for a y-brush, it must be defined as [y0, y1].
-      */
+    def move(group: TransitionLike[SVGGElement, Datum], selection: BrushSelection_, event: Event): Unit = js.native
     def move(group: TransitionLike[SVGGElement, Datum], selection: ValueFn[SVGGElement, Datum, BrushSelection_]): Unit = js.native
+    def move(
+      group: TransitionLike[SVGGElement, Datum],
+      selection: ValueFn[SVGGElement, Datum, BrushSelection_],
+      event: Event
+    ): Unit = js.native
     
     /**
       * Returns the first currently-assigned listener matching the specified typenames, if any.
@@ -194,9 +174,7 @@ object mod {
       * start (at the start of a brush gesture, such as on mousedown), brush (when the brush moves, such as on mousemove), or
       * end (at the end of a brush gesture, such as on mouseup.)
       */
-    def on(typenames: String): js.UndefOr[
-        js.ThisFunction2[/* this */ SVGGElement, /* event */ js.Any, /* d */ Datum, Unit]
-      ] = js.native
+    def on(typenames: String): js.UndefOr[js.ThisFunction2[/* this */ SVGGElement, /* event */ Any, /* d */ Datum, Unit]] = js.native
     /**
       * Sets the event listener for the specified typenames and returns the brush.
       * If an event listener was already registered for the same type and name,
@@ -213,7 +191,7 @@ object mod {
       */
     def on(
       typenames: String,
-      listener: js.ThisFunction2[/* this */ SVGGElement, /* event */ js.Any, /* d */ Datum, Unit]
+      listener: js.ThisFunction2[/* this */ SVGGElement, /* event */ Any, /* d */ Datum, Unit]
     ): this.type = js.native
     /**
       * Removes the current event listeners for the specified typenames, if any.
@@ -275,7 +253,7 @@ object mod {
     /**
       * The underlying input event, such as mousemove or touchmove.
       */
-    var sourceEvent: js.Any
+    var sourceEvent: Any
     
     /**
       * Applies the brush to the specified group, which must be a selection of SVG G elements.
@@ -289,7 +267,7 @@ object mod {
     /**
       * The BrushBehavior associated with the event
       */
-    def target(group: Selection_[SVGGElement, Datum, js.Any, js.Any], args: js.Any*): Unit
+    def target(group: Selection_[SVGGElement, Datum, Any, Any], args: Any*): Unit
     /**
       * The BrushBehavior associated with the event
       */
@@ -305,7 +283,7 @@ object mod {
     
     inline def apply[Datum](
       mode: drag | space | handle | center,
-      sourceEvent: js.Any,
+      sourceEvent: Any,
       target: BrushBehavior[Datum],
       `type`: start | brush | end | String
     ): D3BrushEvent[Datum] = {
@@ -322,7 +300,7 @@ object mod {
       
       inline def setSelectionNull: Self = StObject.set(x, "selection", null)
       
-      inline def setSourceEvent(value: js.Any): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
+      inline def setSourceEvent(value: Any): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
       
       inline def setTarget(value: BrushBehavior[Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

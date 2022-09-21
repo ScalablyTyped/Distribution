@@ -22,7 +22,7 @@ object unknownLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-UnknownLayer.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with UnknownLayer {
     def this(properties: UnknownLayerProperties) = this()

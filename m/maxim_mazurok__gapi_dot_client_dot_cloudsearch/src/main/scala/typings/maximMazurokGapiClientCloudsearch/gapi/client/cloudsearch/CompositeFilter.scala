@@ -29,6 +29,6 @@ object CompositeFilter {
     
     inline def setSubFiltersUndefined: Self = StObject.set(x, "subFilters", js.undefined)
     
-    inline def setSubFiltersVarargs(value: Filter*): Self = StObject.set(x, "subFilters", js.Array(value :_*))
+    inline def setSubFiltersVarargs(value: Filter*): Self = StObject.set(x, "subFilters", js.Array(value*))
   }
 }

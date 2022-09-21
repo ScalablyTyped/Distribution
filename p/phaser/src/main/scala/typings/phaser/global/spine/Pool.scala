@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.Pool")
 @js.native
-class Pool[T] protected ()
+open class Pool[T] protected ()
   extends StObject
      with typings.phaser.spine.Pool[T] {
   def this(instantiator: js.Function0[T]) = this()
@@ -22,10 +22,10 @@ class Pool[T] protected ()
   override def freeAll(items: ArrayLike[T]): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var instantiator: js.Any = js.native
+  var instantiator: Any = js.native
   
   /* private */ /* CompleteClass */
-  var items: js.Any = js.native
+  var items: Any = js.native
   
   /* CompleteClass */
   override def obtain(): T = js.native

@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IInspectorOptions extends StObject {
   
   /**
+    * Optional list of additional top level nodes
+    */
+  var additionalNodes: js.UndefOr[js.Array[IExplorerAdditionalNode]] = js.undefined
+  
+  /**
     * Display in embed mode (both panes on the right)
     */
   var embedMode: js.UndefOr[Boolean] = js.undefined
@@ -71,6 +76,12 @@ object IInspectorOptions {
   
   extension [Self <: IInspectorOptions](x: Self) {
     
+    inline def setAdditionalNodes(value: js.Array[IExplorerAdditionalNode]): Self = StObject.set(x, "additionalNodes", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalNodesUndefined: Self = StObject.set(x, "additionalNodes", js.undefined)
+    
+    inline def setAdditionalNodesVarargs(value: IExplorerAdditionalNode*): Self = StObject.set(x, "additionalNodes", js.Array(value*))
+    
     inline def setEmbedMode(value: Boolean): Self = StObject.set(x, "embedMode", value.asInstanceOf[js.Any])
     
     inline def setEmbedModeUndefined: Self = StObject.set(x, "embedMode", js.undefined)
@@ -87,7 +98,7 @@ object IInspectorOptions {
     
     inline def setExplorerExtensibilityUndefined: Self = StObject.set(x, "explorerExtensibility", js.undefined)
     
-    inline def setExplorerExtensibilityVarargs(value: IExplorerExtensibilityGroup*): Self = StObject.set(x, "explorerExtensibility", js.Array(value :_*))
+    inline def setExplorerExtensibilityVarargs(value: IExplorerExtensibilityGroup*): Self = StObject.set(x, "explorerExtensibility", js.Array(value*))
     
     inline def setGlobalRoot(value: HTMLElement): Self = StObject.set(x, "globalRoot", value.asInstanceOf[js.Any])
     

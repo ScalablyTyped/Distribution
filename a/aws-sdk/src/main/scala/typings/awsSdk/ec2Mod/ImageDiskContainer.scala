@@ -17,7 +17,7 @@ trait ImageDiskContainer extends StObject {
   var DeviceName: js.UndefOr[String] = js.undefined
   
   /**
-    * The format of the disk image being imported. Valid values: OVA | VHD | VHDX |VMDK 
+    * The format of the disk image being imported. Valid values: OVA | VHD | VHDX | VMDK | RAW 
     */
   var Format: js.UndefOr[String] = js.undefined
   

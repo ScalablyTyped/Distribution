@@ -12,7 +12,9 @@ trait Camera
      with _GoToTarget3D {
   
   /**
-    * The field of view of the camera in degrees.
+    * The diagonal field of view (fov) angle for the camera.
+    *
+    * @default 55
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Camera.html#fov)
     */
@@ -20,6 +22,8 @@ trait Camera
   
   /**
     * The compass heading of the camera in degrees.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Camera.html#heading)
     */
@@ -34,6 +38,8 @@ trait Camera
   
   /**
     * The tilt of the camera in degrees with respect to the surface as projected down from the camera position.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Camera.html#tilt)
     */

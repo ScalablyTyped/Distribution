@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ymaps.Balloon")
 @js.native
-class Balloon protected ()
+open class Balloon protected ()
   extends typings.yandexMaps.mod.Balloon {
   def this(map: typings.yandexMaps.mod.Map_) = this()
   def this(map: typings.yandexMaps.mod.Map_, options: IBalloonOptions) = this()

@@ -37,9 +37,24 @@ trait UpdateFlowSourceRequest extends StObject {
   var MaxBitrate: js.UndefOr[integer] = js.undefined
   
   /**
-    * The maximum latency in milliseconds. This parameter applies only to RIST-based and Zixi-based streams.
+    * The maximum latency in milliseconds. This parameter applies only to RIST-based, Zixi-based, and Fujitsu-based streams.
     */
   var MaxLatency: js.UndefOr[integer] = js.undefined
+  
+  /**
+    * The size of the buffer (in milliseconds) to use to sync incoming source data.
+    */
+  var MaxSyncBuffer: js.UndefOr[integer] = js.undefined
+  
+  /**
+    * The media streams that are associated with the source, and the parameters for those associations.
+    */
+  var MediaStreamSourceConfigurations: js.UndefOr[listOfMediaStreamSourceConfigurationRequest] = js.undefined
+  
+  /**
+    * The minimum latency in milliseconds for SRT-based streams. In streams that use the SRT protocol, this value that you set on your MediaConnect source or output represents the minimal potential latency of that connection. The latency of the stream is set to the highest number between the sender’s minimum latency and the receiver’s minimum latency.
+    */
+  var MinLatency: js.UndefOr[integer] = js.undefined
   
   /**
     * The protocol that is used by the source.
@@ -47,9 +62,29 @@ trait UpdateFlowSourceRequest extends StObject {
   var Protocol: js.UndefOr[typings.awsSdk.mediaconnectMod.Protocol] = js.undefined
   
   /**
+    * The port that the flow uses to send outbound requests to initiate connection with the sender.
+    */
+  var SenderControlPort: js.UndefOr[integer] = js.undefined
+  
+  /**
+    * The IP address that the flow communicates with to initiate connection with the sender.
+    */
+  var SenderIpAddress: js.UndefOr[string] = js.undefined
+  
+  /**
     * The ARN of the source that you want to update.
     */
   var SourceArn: string
+  
+  /**
+    * Source IP or domain name for SRT-caller protocol.
+    */
+  var SourceListenerAddress: js.UndefOr[string] = js.undefined
+  
+  /**
+    * Source port for SRT-caller protocol.
+    */
+  var SourceListenerPort: js.UndefOr[integer] = js.undefined
   
   /**
     * The stream ID that you want to use for this transport. This parameter applies only to Zixi-based streams.
@@ -57,7 +92,7 @@ trait UpdateFlowSourceRequest extends StObject {
   var StreamId: js.UndefOr[string] = js.undefined
   
   /**
-    * The name of the VPC Interface to configure this Source with.
+    * The name of the VPC interface to use for this source.
     */
   var VpcInterfaceName: js.UndefOr[string] = js.undefined
   
@@ -101,11 +136,41 @@ object UpdateFlowSourceRequest {
     
     inline def setMaxLatencyUndefined: Self = StObject.set(x, "MaxLatency", js.undefined)
     
+    inline def setMaxSyncBuffer(value: integer): Self = StObject.set(x, "MaxSyncBuffer", value.asInstanceOf[js.Any])
+    
+    inline def setMaxSyncBufferUndefined: Self = StObject.set(x, "MaxSyncBuffer", js.undefined)
+    
+    inline def setMediaStreamSourceConfigurations(value: listOfMediaStreamSourceConfigurationRequest): Self = StObject.set(x, "MediaStreamSourceConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setMediaStreamSourceConfigurationsUndefined: Self = StObject.set(x, "MediaStreamSourceConfigurations", js.undefined)
+    
+    inline def setMediaStreamSourceConfigurationsVarargs(value: MediaStreamSourceConfigurationRequest*): Self = StObject.set(x, "MediaStreamSourceConfigurations", js.Array(value*))
+    
+    inline def setMinLatency(value: integer): Self = StObject.set(x, "MinLatency", value.asInstanceOf[js.Any])
+    
+    inline def setMinLatencyUndefined: Self = StObject.set(x, "MinLatency", js.undefined)
+    
     inline def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
     inline def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
+    inline def setSenderControlPort(value: integer): Self = StObject.set(x, "SenderControlPort", value.asInstanceOf[js.Any])
+    
+    inline def setSenderControlPortUndefined: Self = StObject.set(x, "SenderControlPort", js.undefined)
+    
+    inline def setSenderIpAddress(value: string): Self = StObject.set(x, "SenderIpAddress", value.asInstanceOf[js.Any])
+    
+    inline def setSenderIpAddressUndefined: Self = StObject.set(x, "SenderIpAddress", js.undefined)
+    
     inline def setSourceArn(value: string): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
+    
+    inline def setSourceListenerAddress(value: string): Self = StObject.set(x, "SourceListenerAddress", value.asInstanceOf[js.Any])
+    
+    inline def setSourceListenerAddressUndefined: Self = StObject.set(x, "SourceListenerAddress", js.undefined)
+    
+    inline def setSourceListenerPort(value: integer): Self = StObject.set(x, "SourceListenerPort", value.asInstanceOf[js.Any])
+    
+    inline def setSourceListenerPortUndefined: Self = StObject.set(x, "SourceListenerPort", js.undefined)
     
     inline def setStreamId(value: string): Self = StObject.set(x, "StreamId", value.asInstanceOf[js.Any])
     

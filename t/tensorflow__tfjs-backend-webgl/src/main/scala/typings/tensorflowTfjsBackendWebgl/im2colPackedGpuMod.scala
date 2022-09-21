@@ -1,5 +1,8 @@
 package typings.tensorflowTfjsBackendWebgl
 
+import typings.tensorflowTfjsBackendWebgl.anon.NameString
+import typings.tensorflowTfjsBackendWebgl.anon.NameType
+import typings.tensorflowTfjsBackendWebgl.anon.Type
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import typings.tensorflowTfjsCore.convUtilMod.Conv2DInfo
 import org.scalablytyped.runtime.StObject
@@ -10,10 +13,16 @@ object im2colPackedGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/im2col_packed_gpu", "Im2ColPackedProgram")
   @js.native
-  class Im2ColPackedProgram protected ()
+  open class Im2ColPackedProgram protected ()
     extends StObject
        with GPGPUProgram {
-    def this(outputShape: js.Array[Double], inputShape: js.Array[Double], convInfo: Conv2DInfo) = this()
+    def this(outputShape: js.Array[Double], convInfo: Conv2DInfo) = this()
+    
+    @JSName("customUniforms")
+    var customUniforms_Im2ColPackedProgram: js.Array[NameType | Type | NameString] = js.native
+    
+    @JSName("enableShapeUniforms")
+    var enableShapeUniforms_Im2ColPackedProgram: Boolean = js.native
     
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native

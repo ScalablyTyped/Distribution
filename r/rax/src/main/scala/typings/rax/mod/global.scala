@@ -1,5 +1,116 @@
 package typings.rax.mod
 
+import typings.rax.HTMLWebViewElement
+import typings.std.HTMLAnchorElement
+import typings.std.HTMLAreaElement
+import typings.std.HTMLAudioElement
+import typings.std.HTMLBRElement
+import typings.std.HTMLBaseElement
+import typings.std.HTMLBodyElement
+import typings.std.HTMLButtonElement
+import typings.std.HTMLCanvasElement
+import typings.std.HTMLDListElement
+import typings.std.HTMLDataListElement
+import typings.std.HTMLDialogElement
+import typings.std.HTMLDivElement
+import typings.std.HTMLElement
+import typings.std.HTMLEmbedElement
+import typings.std.HTMLFieldSetElement
+import typings.std.HTMLFormElement
+import typings.std.HTMLHRElement
+import typings.std.HTMLHeadElement
+import typings.std.HTMLHeadingElement
+import typings.std.HTMLHtmlElement
+import typings.std.HTMLIFrameElement
+import typings.std.HTMLImageElement
+import typings.std.HTMLInputElement
+import typings.std.HTMLLIElement
+import typings.std.HTMLLabelElement
+import typings.std.HTMLLegendElement
+import typings.std.HTMLLinkElement
+import typings.std.HTMLMapElement
+import typings.std.HTMLMetaElement
+import typings.std.HTMLModElement
+import typings.std.HTMLOListElement
+import typings.std.HTMLObjectElement
+import typings.std.HTMLOptGroupElement
+import typings.std.HTMLOptionElement
+import typings.std.HTMLParagraphElement
+import typings.std.HTMLParamElement
+import typings.std.HTMLPreElement
+import typings.std.HTMLProgressElement
+import typings.std.HTMLQuoteElement
+import typings.std.HTMLScriptElement
+import typings.std.HTMLSelectElement
+import typings.std.HTMLSourceElement
+import typings.std.HTMLSpanElement
+import typings.std.HTMLStyleElement
+import typings.std.HTMLTableColElement
+import typings.std.HTMLTableDataCellElement
+import typings.std.HTMLTableElement
+import typings.std.HTMLTableHeaderCellElement
+import typings.std.HTMLTableRowElement
+import typings.std.HTMLTableSectionElement
+import typings.std.HTMLTextAreaElement
+import typings.std.HTMLTitleElement
+import typings.std.HTMLTrackElement
+import typings.std.HTMLUListElement
+import typings.std.HTMLVideoElement
+import typings.std.SVGCircleElement
+import typings.std.SVGClipPathElement
+import typings.std.SVGDefsElement
+import typings.std.SVGDescElement
+import typings.std.SVGElement
+import typings.std.SVGEllipseElement
+import typings.std.SVGFEBlendElement
+import typings.std.SVGFEColorMatrixElement
+import typings.std.SVGFEComponentTransferElement
+import typings.std.SVGFECompositeElement
+import typings.std.SVGFEConvolveMatrixElement
+import typings.std.SVGFEDiffuseLightingElement
+import typings.std.SVGFEDisplacementMapElement
+import typings.std.SVGFEDistantLightElement
+import typings.std.SVGFEDropShadowElement
+import typings.std.SVGFEFloodElement
+import typings.std.SVGFEFuncAElement
+import typings.std.SVGFEFuncBElement
+import typings.std.SVGFEFuncGElement
+import typings.std.SVGFEFuncRElement
+import typings.std.SVGFEGaussianBlurElement
+import typings.std.SVGFEImageElement
+import typings.std.SVGFEMergeElement
+import typings.std.SVGFEMergeNodeElement
+import typings.std.SVGFEMorphologyElement
+import typings.std.SVGFEOffsetElement
+import typings.std.SVGFEPointLightElement
+import typings.std.SVGFESpecularLightingElement
+import typings.std.SVGFESpotLightElement
+import typings.std.SVGFETileElement
+import typings.std.SVGFETurbulenceElement
+import typings.std.SVGFilterElement
+import typings.std.SVGForeignObjectElement
+import typings.std.SVGGElement
+import typings.std.SVGImageElement
+import typings.std.SVGLineElement
+import typings.std.SVGLinearGradientElement
+import typings.std.SVGMarkerElement
+import typings.std.SVGMaskElement
+import typings.std.SVGMetadataElement
+import typings.std.SVGPathElement
+import typings.std.SVGPatternElement
+import typings.std.SVGPolygonElement
+import typings.std.SVGPolylineElement
+import typings.std.SVGRadialGradientElement
+import typings.std.SVGRectElement
+import typings.std.SVGSVGElement
+import typings.std.SVGStopElement
+import typings.std.SVGSwitchElement
+import typings.std.SVGSymbolElement
+import typings.std.SVGTSpanElement
+import typings.std.SVGTextElement
+import typings.std.SVGTextPathElement
+import typings.std.SVGUseElement
+import typings.std.SVGViewElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +119,7 @@ object global {
   
   object JSX {
     
-    type Element = RaxElement[js.Any, js.Any]
+    type Element = RaxElement[Any, Any]
     
     trait ElementAttributesProperty extends StObject
     
@@ -16,7 +127,7 @@ object global {
     
     @js.native
     trait ElementClass
-      extends Component[js.Any, js.Object, js.Any]
+      extends Component[Any, js.Object, Any]
     
     type IntrinsicAttributes = Attributes
     
@@ -25,1305 +136,1131 @@ object global {
     trait IntrinsicElements extends StObject {
       
       // HTML
-      var a: DetailedHTMLProps[AnchorHTMLAttributes[typings.std.HTMLAnchorElement], typings.std.HTMLAnchorElement]
+      var a: DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]
       
-      var abbr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var abbr: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var ad: js.Any
+      var ad: Any
       
-      var address: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var `ad-custom`: Any
       
-      var animate: SVGProps[typings.std.SVGElement]
+      var address: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
+      
+      var animate: SVGProps[SVGElement]
       
       // TODO: It is SVGAnimateElement but is not in TypeScript's lib.dom.d.ts for now.
-      var animateMotion: SVGProps[typings.std.SVGElement]
+      var animateMotion: SVGProps[SVGElement]
       
-      var animateTransform: SVGProps[typings.std.SVGElement]
+      var animateTransform: SVGProps[SVGElement]
       
-      var area: DetailedHTMLProps[AreaHTMLAttributes[typings.std.HTMLAreaElement], typings.std.HTMLAreaElement]
+      var area: DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement]
       
-      var `aria-component`: js.Any
+      var `aria-component`: Any
       
-      var article: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var article: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var aside: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var aside: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var audio: DetailedHTMLProps[AudioHTMLAttributes[typings.std.HTMLAudioElement], typings.std.HTMLAudioElement]
+      var audio: DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement]
       
-      var b: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var b: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var base: DetailedHTMLProps[BaseHTMLAttributes[typings.std.HTMLBaseElement], typings.std.HTMLBaseElement]
+      var base: DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement]
       
-      var bdi: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var bdi: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var bdo: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var bdo: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var big: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var big: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var blockquote: DetailedHTMLProps[BlockquoteHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var blockquote: DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]
       
-      var body: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLBodyElement], typings.std.HTMLBodyElement]
+      var body: DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]
       
-      var br: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLBRElement], typings.std.HTMLBRElement]
+      var br: DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement]
       
-      var button: DetailedHTMLProps[ButtonHTMLAttributes[typings.std.HTMLButtonElement], typings.std.HTMLButtonElement]
+      var button: DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement]
       
-      var canvas: DetailedHTMLProps[CanvasHTMLAttributes[typings.std.HTMLCanvasElement], typings.std.HTMLCanvasElement]
+      var camera: Any
       
-      var caption: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var canvas: DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement]
       
-      var cell: js.Any
+      var caption: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
+      
+      var cell: Any
       
       // TODO: It is SVGAnimateTransformElement but is not in TypeScript's lib.dom.d.ts for now.
-      var circle: SVGProps[typings.std.SVGCircleElement]
+      var circle: SVGProps[SVGCircleElement]
       
-      var cite: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var cite: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var clipPath: SVGProps[typings.std.SVGClipPathElement]
+      var clipPath: SVGProps[SVGClipPathElement]
       
-      var code: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var code: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var col: DetailedHTMLProps[
-            ColHTMLAttributes[typings.std.HTMLTableColElement], 
-            typings.std.HTMLTableColElement
-          ]
+      var col: DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement]
       
-      var colgroup: DetailedHTMLProps[
-            ColgroupHTMLAttributes[typings.std.HTMLTableColElement], 
-            typings.std.HTMLTableColElement
-          ]
+      var colgroup: DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement]
       
-      var `contact-button`: js.Any
+      var `contact-button`: Any
       
-      var `cover-image`: js.Any
+      var `cover-image`: Any
       
-      var `cover-view`: js.Any
+      var `cover-view`: Any
       
-      var data: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var data: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var datalist: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLDataListElement], typings.std.HTMLDataListElement]
+      var datalist: DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement]
       
-      var dd: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var dd: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var defs: SVGProps[typings.std.SVGDefsElement]
+      var defs: SVGProps[SVGDefsElement]
       
-      var del: DetailedHTMLProps[DelHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var del: DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement]
       
-      var desc: SVGProps[typings.std.SVGDescElement]
+      var desc: SVGProps[SVGDescElement]
       
-      var details: DetailedHTMLProps[DetailsHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var details: DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement]
       
-      var dfn: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var dfn: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var dialog: DetailedHTMLProps[DialogHTMLAttributes[typings.std.HTMLDialogElement], typings.std.HTMLDialogElement]
+      var dialog: DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement]
       
-      var div: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLDivElement], typings.std.HTMLDivElement]
+      var div: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]
       
-      var dl: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLDListElement], typings.std.HTMLDListElement]
+      var dl: DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement]
       
-      var dt: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var dt: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var ellipse: SVGProps[typings.std.SVGEllipseElement]
+      var ellipse: SVGProps[SVGEllipseElement]
       
-      var em: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var em: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var embed: DetailedHTMLProps[EmbedHTMLAttributes[typings.std.HTMLEmbedElement], typings.std.HTMLEmbedElement]
+      var embed: DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement]
       
-      var feBlend: SVGProps[typings.std.SVGFEBlendElement]
+      var feBlend: SVGProps[SVGFEBlendElement]
       
-      var feColorMatrix: SVGProps[typings.std.SVGFEColorMatrixElement]
+      var feColorMatrix: SVGProps[SVGFEColorMatrixElement]
       
-      var feComponentTransfer: SVGProps[typings.std.SVGFEComponentTransferElement]
+      var feComponentTransfer: SVGProps[SVGFEComponentTransferElement]
       
-      var feComposite: SVGProps[typings.std.SVGFECompositeElement]
+      var feComposite: SVGProps[SVGFECompositeElement]
       
-      var feConvolveMatrix: SVGProps[typings.std.SVGFEConvolveMatrixElement]
+      var feConvolveMatrix: SVGProps[SVGFEConvolveMatrixElement]
       
-      var feDiffuseLighting: SVGProps[typings.std.SVGFEDiffuseLightingElement]
+      var feDiffuseLighting: SVGProps[SVGFEDiffuseLightingElement]
       
-      var feDisplacementMap: SVGProps[typings.std.SVGFEDisplacementMapElement]
+      var feDisplacementMap: SVGProps[SVGFEDisplacementMapElement]
       
-      var feDistantLight: SVGProps[typings.std.SVGFEDistantLightElement]
+      var feDistantLight: SVGProps[SVGFEDistantLightElement]
       
-      var feDropShadow: SVGProps[typings.std.SVGFEDropShadowElement]
+      var feDropShadow: SVGProps[SVGFEDropShadowElement]
       
-      var feFlood: SVGProps[typings.std.SVGFEFloodElement]
+      var feFlood: SVGProps[SVGFEFloodElement]
       
-      var feFuncA: SVGProps[typings.std.SVGFEFuncAElement]
+      var feFuncA: SVGProps[SVGFEFuncAElement]
       
-      var feFuncB: SVGProps[typings.std.SVGFEFuncBElement]
+      var feFuncB: SVGProps[SVGFEFuncBElement]
       
-      var feFuncG: SVGProps[typings.std.SVGFEFuncGElement]
+      var feFuncG: SVGProps[SVGFEFuncGElement]
       
-      var feFuncR: SVGProps[typings.std.SVGFEFuncRElement]
+      var feFuncR: SVGProps[SVGFEFuncRElement]
       
-      var feGaussianBlur: SVGProps[typings.std.SVGFEGaussianBlurElement]
+      var feGaussianBlur: SVGProps[SVGFEGaussianBlurElement]
       
-      var feImage: SVGProps[typings.std.SVGFEImageElement]
+      var feImage: SVGProps[SVGFEImageElement]
       
-      var feMerge: SVGProps[typings.std.SVGFEMergeElement]
+      var feMerge: SVGProps[SVGFEMergeElement]
       
-      var feMergeNode: SVGProps[typings.std.SVGFEMergeNodeElement]
+      var feMergeNode: SVGProps[SVGFEMergeNodeElement]
       
-      var feMorphology: SVGProps[typings.std.SVGFEMorphologyElement]
+      var feMorphology: SVGProps[SVGFEMorphologyElement]
       
-      var feOffset: SVGProps[typings.std.SVGFEOffsetElement]
+      var feOffset: SVGProps[SVGFEOffsetElement]
       
-      var fePointLight: SVGProps[typings.std.SVGFEPointLightElement]
+      var fePointLight: SVGProps[SVGFEPointLightElement]
       
-      var feSpecularLighting: SVGProps[typings.std.SVGFESpecularLightingElement]
+      var feSpecularLighting: SVGProps[SVGFESpecularLightingElement]
       
-      var feSpotLight: SVGProps[typings.std.SVGFESpotLightElement]
+      var feSpotLight: SVGProps[SVGFESpotLightElement]
       
-      var feTile: SVGProps[typings.std.SVGFETileElement]
+      var feTile: SVGProps[SVGFETileElement]
       
-      var feTurbulence: SVGProps[typings.std.SVGFETurbulenceElement]
+      var feTurbulence: SVGProps[SVGFETurbulenceElement]
       
-      var fieldset: DetailedHTMLProps[
-            FieldsetHTMLAttributes[typings.std.HTMLFieldSetElement], 
-            typings.std.HTMLFieldSetElement
-          ]
+      var fieldset: DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement]
       
-      var figcaption: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var figcaption: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var figure: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var figure: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var filter: SVGProps[typings.std.SVGFilterElement]
+      var filter: SVGProps[SVGFilterElement]
       
-      var footer: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var footer: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var foreignObject: SVGProps[typings.std.SVGForeignObjectElement]
+      var foreignObject: SVGProps[SVGForeignObjectElement]
       
-      var form: DetailedHTMLProps[FormHTMLAttributes[typings.std.HTMLFormElement], typings.std.HTMLFormElement]
+      var form: DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement]
       
-      var `functional-page-navigator`: js.Any
+      var `functional-page-navigator`: Any
       
-      var g: SVGProps[typings.std.SVGGElement]
+      var g: SVGProps[SVGGElement]
       
-      var h1: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
+      var h1: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
       
-      var h2: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
+      var h2: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
       
-      var h3: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
+      var h3: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
       
-      var h4: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
+      var h4: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
       
-      var h5: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
+      var h5: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
       
-      var h6: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
+      var h6: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]
       
-      var head: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadElement], typings.std.HTMLHeadElement]
+      var head: DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement]
       
-      var header: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var header: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var hgroup: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var hgroup: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var hr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHRElement], typings.std.HTMLHRElement]
+      var hr: DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement]
       
-      var html: DetailedHTMLProps[HtmlHTMLAttributes[typings.std.HTMLHtmlElement], typings.std.HTMLHtmlElement]
+      var html: DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement]
       
-      var i: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var i: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var icon: js.Any
+      var icon: Any
       
-      var iframe: DetailedHTMLProps[IframeHTMLAttributes[typings.std.HTMLIFrameElement], typings.std.HTMLIFrameElement]
+      var iframe: DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement]
       
-      var image: SVGProps[typings.std.SVGImageElement]
+      var image: SVGProps[SVGImageElement]
       
-      var img: DetailedHTMLProps[ImgHTMLAttributes[typings.std.HTMLImageElement], typings.std.HTMLImageElement]
+      var img: DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]
       
-      var indicator: js.Any
+      var indicator: Any
       
-      var input: DetailedHTMLProps[InputHTMLAttributes[typings.std.HTMLInputElement], typings.std.HTMLInputElement]
+      var input: DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]
       
-      var ins: DetailedHTMLProps[InsHTMLAttributes[typings.std.HTMLModElement], typings.std.HTMLModElement]
+      var ins: DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement]
       
-      var `ive-pusher`: js.Any
+      var kbd: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var kbd: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var keygen: DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement]
       
-      var keygen: DetailedHTMLProps[KeygenHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var label: DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement]
       
-      var label: DetailedHTMLProps[LabelHTMLAttributes[typings.std.HTMLLabelElement], typings.std.HTMLLabelElement]
+      var legend: DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement]
       
-      var legend: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLLegendElement], typings.std.HTMLLegendElement]
+      var li: DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement]
       
-      var li: DetailedHTMLProps[LiHTMLAttributes[typings.std.HTMLLIElement], typings.std.HTMLLIElement]
+      var lifestyle: Any
       
-      var lifestyle: js.Any
+      var line: SVGProps[SVGLineElement]
       
-      var line: SVGProps[typings.std.SVGLineElement]
+      var linearGradient: SVGProps[SVGLinearGradientElement]
       
-      var linearGradient: SVGProps[typings.std.SVGLinearGradientElement]
-      
-      var link: DetailedHTMLProps[LinkHTMLAttributes[typings.std.HTMLLinkElement], typings.std.HTMLLinkElement]
+      var link: DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement]
       
       // weex
-      var list: js.Any
+      var list: Any
       
-      var `live-player`: js.Any
+      var `live-player`: Any
       
-      var loading: js.Any
+      var `live-pusher`: Any
       
-      var main: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var loading: Any
       
-      var map: DetailedHTMLProps[MapHTMLAttributes[typings.std.HTMLMapElement], typings.std.HTMLMapElement]
+      var main: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var mark: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var map: DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement]
       
-      var marker: SVGProps[typings.std.SVGMarkerElement]
+      var mark: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var mask: SVGProps[typings.std.SVGMaskElement]
+      var marker: SVGProps[SVGMarkerElement]
       
-      var menu: DetailedHTMLProps[MenuHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var mask: SVGProps[SVGMaskElement]
       
-      var menuitem: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var `match-media`: Any
       
-      var meta: DetailedHTMLProps[MetaHTMLAttributes[typings.std.HTMLMetaElement], typings.std.HTMLMetaElement]
+      var menu: DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement]
       
-      var metadata: SVGProps[typings.std.SVGMetadataElement]
+      var menuitem: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var meter: DetailedHTMLProps[MeterHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var meta: DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement]
       
-      var `movable-area`: js.Any
+      var metadata: SVGProps[SVGMetadataElement]
       
-      var `movable-view`: js.Any
+      var meter: DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement]
       
-      var mpath: SVGProps[typings.std.SVGElement]
+      var `movable-area`: Any
       
-      var nav: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var `movable-view`: Any
       
-      var `navigation-bar`: js.Any
+      var mpath: SVGProps[SVGElement]
       
-      var navigator: js.Any
+      var nav: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var noindex: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var `navigation-bar`: Any
       
-      var noscript: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var navigator: Any
       
-      var `object`: DetailedHTMLProps[ObjectHTMLAttributes[typings.std.HTMLObjectElement], typings.std.HTMLObjectElement]
+      var noindex: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var ol: DetailedHTMLProps[OlHTMLAttributes[typings.std.HTMLOListElement], typings.std.HTMLOListElement]
+      var noscript: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var `open-data`: js.Any
+      var `object`: DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement]
       
-      var optgroup: DetailedHTMLProps[
-            OptgroupHTMLAttributes[typings.std.HTMLOptGroupElement], 
-            typings.std.HTMLOptGroupElement
-          ]
+      var `official-account`: Any
       
-      var option: DetailedHTMLProps[OptionHTMLAttributes[typings.std.HTMLOptionElement], typings.std.HTMLOptionElement]
+      var ol: DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement]
       
-      var output: DetailedHTMLProps[OutputHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var `open-data`: Any
       
-      var p: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLParagraphElement], typings.std.HTMLParagraphElement]
+      var optgroup: DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement]
       
-      var `page-meta`: js.Any
+      var option: DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement]
       
-      var param: DetailedHTMLProps[ParamHTMLAttributes[typings.std.HTMLParamElement], typings.std.HTMLParamElement]
+      var output: DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement]
       
-      var path: SVGProps[typings.std.SVGPathElement]
+      var p: DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]
       
-      var pattern: SVGProps[typings.std.SVGPatternElement]
+      var `page-meta`: Any
       
-      var picker: js.Any
+      var param: DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement]
       
-      var `picker-view`: js.Any
+      var path: SVGProps[SVGPathElement]
       
-      var picture: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var pattern: SVGProps[SVGPatternElement]
       
-      var polygon: SVGProps[typings.std.SVGPolygonElement]
+      var picker: Any
       
-      var polyline: SVGProps[typings.std.SVGPolylineElement]
+      var `picker-view`: Any
       
-      var pre: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLPreElement], typings.std.HTMLPreElement]
+      var `picker-view-column`: Any
       
-      var progress: DetailedHTMLProps[
-            ProgressHTMLAttributes[typings.std.HTMLProgressElement], 
-            typings.std.HTMLProgressElement
-          ]
+      var picture: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var q: DetailedHTMLProps[QuoteHTMLAttributes[typings.std.HTMLQuoteElement], typings.std.HTMLQuoteElement]
+      var polygon: SVGProps[SVGPolygonElement]
       
-      var radialGradient: SVGProps[typings.std.SVGRadialGradientElement]
+      var polyline: SVGProps[SVGPolylineElement]
       
-      var rect: SVGProps[typings.std.SVGRectElement]
+      var pre: DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement]
       
-      var `recycle-list`: js.Any
+      var progress: DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement]
       
-      var refresh: js.Any
+      var q: DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement]
       
-      var `rich-text`: js.Any
+      var radialGradient: SVGProps[SVGRadialGradientElement]
       
-      var richtext: js.Any
+      var radio: Any
       
-      var rp: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var `radio-group`: Any
       
-      var rt: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var rect: SVGProps[SVGRectElement]
       
-      var ruby: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var `recycle-list`: Any
       
-      var s: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var refresh: Any
       
-      var samp: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var `rich-text`: Any
       
-      var script: DetailedHTMLProps[ScriptHTMLAttributes[typings.std.HTMLScriptElement], typings.std.HTMLScriptElement]
+      var richtext: Any
       
-      var `scroll-view`: js.Any
+      var rp: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var scroller: js.Any
+      var rt: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var section: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var ruby: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var select: DetailedHTMLProps[SelectHTMLAttributes[typings.std.HTMLSelectElement], typings.std.HTMLSelectElement]
+      var s: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var slider: js.Any
+      var samp: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
+      
+      var script: DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement]
+      
+      var `scroll-view`: Any
+      
+      var scroller: Any
+      
+      var section: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
+      
+      var select: DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement]
+      
+      var slider: Any
       
       // MiniApp
-      var slot: js.Any
+      var slot: Any
       
-      var small: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var small: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var source: DetailedHTMLProps[SourceHTMLAttributes[typings.std.HTMLSourceElement], typings.std.HTMLSourceElement]
+      var source: DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement]
       
-      var span: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLSpanElement], typings.std.HTMLSpanElement]
+      var span: DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement]
       
-      var stop: SVGProps[typings.std.SVGStopElement]
+      var stop: SVGProps[SVGStopElement]
       
-      var strong: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var strong: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var style: DetailedHTMLProps[StyleHTMLAttributes[typings.std.HTMLStyleElement], typings.std.HTMLStyleElement]
+      var style: DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement]
       
-      var sub: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var sub: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var summary: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var summary: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var sup: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var sup: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
       // SVG
-      var svg: SVGProps[typings.std.SVGSVGElement]
+      var svg: SVGProps[SVGSVGElement]
       
-      var swiper: js.Any
+      var swiper: Any
       
-      var `swiper-item`: js.Any
+      var `swiper-item`: Any
       
-      var switch: SVGProps[typings.std.SVGSwitchElement]
+      var switch: SVGProps[SVGSwitchElement]
       
-      var symbol: SVGProps[typings.std.SVGSymbolElement]
+      var symbol: SVGProps[SVGSymbolElement]
       
-      var table: DetailedHTMLProps[TableHTMLAttributes[typings.std.HTMLTableElement], typings.std.HTMLTableElement]
+      var table: DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]
       
-      var tbody: DetailedHTMLProps[
-            HTMLAttributes[typings.std.HTMLTableSectionElement], 
-            typings.std.HTMLTableSectionElement
-          ]
+      var tbody: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]
       
-      var td: DetailedHTMLProps[
-            TdHTMLAttributes[typings.std.HTMLTableDataCellElement], 
-            typings.std.HTMLTableDataCellElement
-          ]
+      var td: DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement]
       
-      var text: SVGProps[typings.std.SVGTextElement]
+      var text: SVGProps[SVGTextElement]
       
-      var textPath: SVGProps[typings.std.SVGTextPathElement]
+      var textPath: SVGProps[SVGTextPathElement]
       
-      var textarea: DetailedHTMLProps[
-            TextareaHTMLAttributes[typings.std.HTMLTextAreaElement], 
-            typings.std.HTMLTextAreaElement
-          ]
+      var textarea: DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement]
       
-      var tfoot: DetailedHTMLProps[
-            HTMLAttributes[typings.std.HTMLTableSectionElement], 
-            typings.std.HTMLTableSectionElement
-          ]
+      var tfoot: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]
       
-      var th: DetailedHTMLProps[
-            ThHTMLAttributes[typings.std.HTMLTableHeaderCellElement], 
-            typings.std.HTMLTableHeaderCellElement
-          ]
+      var th: DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement]
       
-      var thead: DetailedHTMLProps[
-            HTMLAttributes[typings.std.HTMLTableSectionElement], 
-            typings.std.HTMLTableSectionElement
-          ]
+      var thead: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]
       
-      var time: DetailedHTMLProps[TimeHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var time: DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement]
       
-      var title: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLTitleElement], typings.std.HTMLTitleElement]
+      var title: DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement]
       
-      var tr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLTableRowElement], typings.std.HTMLTableRowElement]
+      var tr: DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement]
       
-      var track: DetailedHTMLProps[TrackHTMLAttributes[typings.std.HTMLTrackElement], typings.std.HTMLTrackElement]
+      var track: DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement]
       
-      var tspan: SVGProps[typings.std.SVGTSpanElement]
+      var tspan: SVGProps[SVGTSpanElement]
       
-      var u: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var u: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var ul: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLUListElement], typings.std.HTMLUListElement]
+      var ul: DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]
       
-      var use: SVGProps[typings.std.SVGUseElement]
+      var use: SVGProps[SVGUseElement]
       
-      var `var`: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var `var`: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var video: DetailedHTMLProps[VideoHTMLAttributes[typings.std.HTMLVideoElement], typings.std.HTMLVideoElement]
+      var video: DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]
       
-      var view: SVGProps[typings.std.SVGViewElement]
+      var view: SVGProps[SVGViewElement]
       
-      var waterfall: js.Any
+      var `voip-room`: Any
       
-      var wbr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
+      var waterfall: Any
       
-      var web: js.Any
+      var wbr: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]
       
-      var `web-view`: js.Any
+      var web: Any
       
-      var webview: DetailedHTMLProps[
-            WebViewHTMLAttributes[typings.rax.HTMLWebViewElement], 
-            typings.rax.HTMLWebViewElement
-          ]
+      var `web-view`: Any
+      
+      var webview: DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement]
     }
     object IntrinsicElements {
       
       inline def apply(
-        a: DetailedHTMLProps[AnchorHTMLAttributes[typings.std.HTMLAnchorElement], typings.std.HTMLAnchorElement],
-        abbr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        ad: js.Any,
-        address: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        animate: SVGProps[typings.std.SVGElement],
-        animateMotion: SVGProps[typings.std.SVGElement],
-        animateTransform: SVGProps[typings.std.SVGElement],
-        area: DetailedHTMLProps[AreaHTMLAttributes[typings.std.HTMLAreaElement], typings.std.HTMLAreaElement],
-        `aria-component`: js.Any,
-        article: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        aside: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        audio: DetailedHTMLProps[AudioHTMLAttributes[typings.std.HTMLAudioElement], typings.std.HTMLAudioElement],
-        b: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        base: DetailedHTMLProps[BaseHTMLAttributes[typings.std.HTMLBaseElement], typings.std.HTMLBaseElement],
-        bdi: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        bdo: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        big: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        blockquote: DetailedHTMLProps[BlockquoteHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        body: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLBodyElement], typings.std.HTMLBodyElement],
-        br: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLBRElement], typings.std.HTMLBRElement],
-        button: DetailedHTMLProps[ButtonHTMLAttributes[typings.std.HTMLButtonElement], typings.std.HTMLButtonElement],
-        canvas: DetailedHTMLProps[CanvasHTMLAttributes[typings.std.HTMLCanvasElement], typings.std.HTMLCanvasElement],
-        caption: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        cell: js.Any,
-        circle: SVGProps[typings.std.SVGCircleElement],
-        cite: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        clipPath: SVGProps[typings.std.SVGClipPathElement],
-        code: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        col: DetailedHTMLProps[
-              ColHTMLAttributes[typings.std.HTMLTableColElement], 
-              typings.std.HTMLTableColElement
-            ],
-        colgroup: DetailedHTMLProps[
-              ColgroupHTMLAttributes[typings.std.HTMLTableColElement], 
-              typings.std.HTMLTableColElement
-            ],
-        `contact-button`: js.Any,
-        `cover-image`: js.Any,
-        `cover-view`: js.Any,
-        data: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        datalist: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLDataListElement], typings.std.HTMLDataListElement],
-        dd: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        defs: SVGProps[typings.std.SVGDefsElement],
-        del: DetailedHTMLProps[DelHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        desc: SVGProps[typings.std.SVGDescElement],
-        details: DetailedHTMLProps[DetailsHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        dfn: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        dialog: DetailedHTMLProps[DialogHTMLAttributes[typings.std.HTMLDialogElement], typings.std.HTMLDialogElement],
-        div: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLDivElement], typings.std.HTMLDivElement],
-        dl: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLDListElement], typings.std.HTMLDListElement],
-        dt: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        ellipse: SVGProps[typings.std.SVGEllipseElement],
-        em: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        embed: DetailedHTMLProps[EmbedHTMLAttributes[typings.std.HTMLEmbedElement], typings.std.HTMLEmbedElement],
-        feBlend: SVGProps[typings.std.SVGFEBlendElement],
-        feColorMatrix: SVGProps[typings.std.SVGFEColorMatrixElement],
-        feComponentTransfer: SVGProps[typings.std.SVGFEComponentTransferElement],
-        feComposite: SVGProps[typings.std.SVGFECompositeElement],
-        feConvolveMatrix: SVGProps[typings.std.SVGFEConvolveMatrixElement],
-        feDiffuseLighting: SVGProps[typings.std.SVGFEDiffuseLightingElement],
-        feDisplacementMap: SVGProps[typings.std.SVGFEDisplacementMapElement],
-        feDistantLight: SVGProps[typings.std.SVGFEDistantLightElement],
-        feDropShadow: SVGProps[typings.std.SVGFEDropShadowElement],
-        feFlood: SVGProps[typings.std.SVGFEFloodElement],
-        feFuncA: SVGProps[typings.std.SVGFEFuncAElement],
-        feFuncB: SVGProps[typings.std.SVGFEFuncBElement],
-        feFuncG: SVGProps[typings.std.SVGFEFuncGElement],
-        feFuncR: SVGProps[typings.std.SVGFEFuncRElement],
-        feGaussianBlur: SVGProps[typings.std.SVGFEGaussianBlurElement],
-        feImage: SVGProps[typings.std.SVGFEImageElement],
-        feMerge: SVGProps[typings.std.SVGFEMergeElement],
-        feMergeNode: SVGProps[typings.std.SVGFEMergeNodeElement],
-        feMorphology: SVGProps[typings.std.SVGFEMorphologyElement],
-        feOffset: SVGProps[typings.std.SVGFEOffsetElement],
-        fePointLight: SVGProps[typings.std.SVGFEPointLightElement],
-        feSpecularLighting: SVGProps[typings.std.SVGFESpecularLightingElement],
-        feSpotLight: SVGProps[typings.std.SVGFESpotLightElement],
-        feTile: SVGProps[typings.std.SVGFETileElement],
-        feTurbulence: SVGProps[typings.std.SVGFETurbulenceElement],
-        fieldset: DetailedHTMLProps[
-              FieldsetHTMLAttributes[typings.std.HTMLFieldSetElement], 
-              typings.std.HTMLFieldSetElement
-            ],
-        figcaption: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        figure: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        filter: SVGProps[typings.std.SVGFilterElement],
-        footer: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        foreignObject: SVGProps[typings.std.SVGForeignObjectElement],
-        form: DetailedHTMLProps[FormHTMLAttributes[typings.std.HTMLFormElement], typings.std.HTMLFormElement],
-        `functional-page-navigator`: js.Any,
-        g: SVGProps[typings.std.SVGGElement],
-        h1: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement],
-        h2: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement],
-        h3: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement],
-        h4: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement],
-        h5: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement],
-        h6: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement],
-        head: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadElement], typings.std.HTMLHeadElement],
-        header: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        hgroup: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        hr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHRElement], typings.std.HTMLHRElement],
-        html: DetailedHTMLProps[HtmlHTMLAttributes[typings.std.HTMLHtmlElement], typings.std.HTMLHtmlElement],
-        i: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        icon: js.Any,
-        iframe: DetailedHTMLProps[IframeHTMLAttributes[typings.std.HTMLIFrameElement], typings.std.HTMLIFrameElement],
-        image: SVGProps[typings.std.SVGImageElement],
-        img: DetailedHTMLProps[ImgHTMLAttributes[typings.std.HTMLImageElement], typings.std.HTMLImageElement],
-        indicator: js.Any,
-        input: DetailedHTMLProps[InputHTMLAttributes[typings.std.HTMLInputElement], typings.std.HTMLInputElement],
-        ins: DetailedHTMLProps[InsHTMLAttributes[typings.std.HTMLModElement], typings.std.HTMLModElement],
-        `ive-pusher`: js.Any,
-        kbd: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        keygen: DetailedHTMLProps[KeygenHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        label: DetailedHTMLProps[LabelHTMLAttributes[typings.std.HTMLLabelElement], typings.std.HTMLLabelElement],
-        legend: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLLegendElement], typings.std.HTMLLegendElement],
-        li: DetailedHTMLProps[LiHTMLAttributes[typings.std.HTMLLIElement], typings.std.HTMLLIElement],
-        lifestyle: js.Any,
-        line: SVGProps[typings.std.SVGLineElement],
-        linearGradient: SVGProps[typings.std.SVGLinearGradientElement],
-        link: DetailedHTMLProps[LinkHTMLAttributes[typings.std.HTMLLinkElement], typings.std.HTMLLinkElement],
-        list: js.Any,
-        `live-player`: js.Any,
-        loading: js.Any,
-        main: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        map: DetailedHTMLProps[MapHTMLAttributes[typings.std.HTMLMapElement], typings.std.HTMLMapElement],
-        mark: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        marker: SVGProps[typings.std.SVGMarkerElement],
-        mask: SVGProps[typings.std.SVGMaskElement],
-        menu: DetailedHTMLProps[MenuHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        menuitem: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        meta: DetailedHTMLProps[MetaHTMLAttributes[typings.std.HTMLMetaElement], typings.std.HTMLMetaElement],
-        metadata: SVGProps[typings.std.SVGMetadataElement],
-        meter: DetailedHTMLProps[MeterHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        `movable-area`: js.Any,
-        `movable-view`: js.Any,
-        mpath: SVGProps[typings.std.SVGElement],
-        nav: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        `navigation-bar`: js.Any,
-        navigator: js.Any,
-        noindex: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        noscript: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        `object`: DetailedHTMLProps[ObjectHTMLAttributes[typings.std.HTMLObjectElement], typings.std.HTMLObjectElement],
-        ol: DetailedHTMLProps[OlHTMLAttributes[typings.std.HTMLOListElement], typings.std.HTMLOListElement],
-        `open-data`: js.Any,
-        optgroup: DetailedHTMLProps[
-              OptgroupHTMLAttributes[typings.std.HTMLOptGroupElement], 
-              typings.std.HTMLOptGroupElement
-            ],
-        option: DetailedHTMLProps[OptionHTMLAttributes[typings.std.HTMLOptionElement], typings.std.HTMLOptionElement],
-        output: DetailedHTMLProps[OutputHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        p: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLParagraphElement], typings.std.HTMLParagraphElement],
-        `page-meta`: js.Any,
-        param: DetailedHTMLProps[ParamHTMLAttributes[typings.std.HTMLParamElement], typings.std.HTMLParamElement],
-        path: SVGProps[typings.std.SVGPathElement],
-        pattern: SVGProps[typings.std.SVGPatternElement],
-        picker: js.Any,
-        `picker-view`: js.Any,
-        picture: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        polygon: SVGProps[typings.std.SVGPolygonElement],
-        polyline: SVGProps[typings.std.SVGPolylineElement],
-        pre: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLPreElement], typings.std.HTMLPreElement],
-        progress: DetailedHTMLProps[
-              ProgressHTMLAttributes[typings.std.HTMLProgressElement], 
-              typings.std.HTMLProgressElement
-            ],
-        q: DetailedHTMLProps[QuoteHTMLAttributes[typings.std.HTMLQuoteElement], typings.std.HTMLQuoteElement],
-        radialGradient: SVGProps[typings.std.SVGRadialGradientElement],
-        rect: SVGProps[typings.std.SVGRectElement],
-        `recycle-list`: js.Any,
-        refresh: js.Any,
-        `rich-text`: js.Any,
-        richtext: js.Any,
-        rp: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        rt: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        ruby: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        s: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        samp: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        script: DetailedHTMLProps[ScriptHTMLAttributes[typings.std.HTMLScriptElement], typings.std.HTMLScriptElement],
-        `scroll-view`: js.Any,
-        scroller: js.Any,
-        section: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        select: DetailedHTMLProps[SelectHTMLAttributes[typings.std.HTMLSelectElement], typings.std.HTMLSelectElement],
-        slider: js.Any,
-        slot: js.Any,
-        small: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        source: DetailedHTMLProps[SourceHTMLAttributes[typings.std.HTMLSourceElement], typings.std.HTMLSourceElement],
-        span: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLSpanElement], typings.std.HTMLSpanElement],
-        stop: SVGProps[typings.std.SVGStopElement],
-        strong: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        style: DetailedHTMLProps[StyleHTMLAttributes[typings.std.HTMLStyleElement], typings.std.HTMLStyleElement],
-        sub: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        summary: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        sup: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        svg: SVGProps[typings.std.SVGSVGElement],
-        swiper: js.Any,
-        `swiper-item`: js.Any,
-        switch: SVGProps[typings.std.SVGSwitchElement],
-        symbol: SVGProps[typings.std.SVGSymbolElement],
-        table: DetailedHTMLProps[TableHTMLAttributes[typings.std.HTMLTableElement], typings.std.HTMLTableElement],
-        tbody: DetailedHTMLProps[
-              HTMLAttributes[typings.std.HTMLTableSectionElement], 
-              typings.std.HTMLTableSectionElement
-            ],
-        td: DetailedHTMLProps[
-              TdHTMLAttributes[typings.std.HTMLTableDataCellElement], 
-              typings.std.HTMLTableDataCellElement
-            ],
-        text: SVGProps[typings.std.SVGTextElement],
-        textPath: SVGProps[typings.std.SVGTextPathElement],
-        textarea: DetailedHTMLProps[
-              TextareaHTMLAttributes[typings.std.HTMLTextAreaElement], 
-              typings.std.HTMLTextAreaElement
-            ],
-        tfoot: DetailedHTMLProps[
-              HTMLAttributes[typings.std.HTMLTableSectionElement], 
-              typings.std.HTMLTableSectionElement
-            ],
-        th: DetailedHTMLProps[
-              ThHTMLAttributes[typings.std.HTMLTableHeaderCellElement], 
-              typings.std.HTMLTableHeaderCellElement
-            ],
-        thead: DetailedHTMLProps[
-              HTMLAttributes[typings.std.HTMLTableSectionElement], 
-              typings.std.HTMLTableSectionElement
-            ],
-        time: DetailedHTMLProps[TimeHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        title: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLTitleElement], typings.std.HTMLTitleElement],
-        tr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLTableRowElement], typings.std.HTMLTableRowElement],
-        track: DetailedHTMLProps[TrackHTMLAttributes[typings.std.HTMLTrackElement], typings.std.HTMLTrackElement],
-        tspan: SVGProps[typings.std.SVGTSpanElement],
-        u: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        ul: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLUListElement], typings.std.HTMLUListElement],
-        use: SVGProps[typings.std.SVGUseElement],
-        `var`: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        video: DetailedHTMLProps[VideoHTMLAttributes[typings.std.HTMLVideoElement], typings.std.HTMLVideoElement],
-        view: SVGProps[typings.std.SVGViewElement],
-        waterfall: js.Any,
-        wbr: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement],
-        web: js.Any,
-        `web-view`: js.Any,
-        webview: DetailedHTMLProps[
-              WebViewHTMLAttributes[typings.rax.HTMLWebViewElement], 
-              typings.rax.HTMLWebViewElement
-            ]
+        a: DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement],
+        abbr: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        ad: Any,
+        `ad-custom`: Any,
+        address: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        animate: SVGProps[SVGElement],
+        animateMotion: SVGProps[SVGElement],
+        animateTransform: SVGProps[SVGElement],
+        area: DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement],
+        `aria-component`: Any,
+        article: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        aside: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        audio: DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement],
+        b: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        base: DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement],
+        bdi: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        bdo: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        big: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        blockquote: DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement],
+        body: DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement],
+        br: DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement],
+        button: DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement],
+        camera: Any,
+        canvas: DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement],
+        caption: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        cell: Any,
+        circle: SVGProps[SVGCircleElement],
+        cite: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        clipPath: SVGProps[SVGClipPathElement],
+        code: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        col: DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement],
+        colgroup: DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement],
+        `contact-button`: Any,
+        `cover-image`: Any,
+        `cover-view`: Any,
+        data: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        datalist: DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement],
+        dd: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        defs: SVGProps[SVGDefsElement],
+        del: DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement],
+        desc: SVGProps[SVGDescElement],
+        details: DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement],
+        dfn: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        dialog: DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement],
+        div: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement],
+        dl: DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement],
+        dt: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        ellipse: SVGProps[SVGEllipseElement],
+        em: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        embed: DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement],
+        feBlend: SVGProps[SVGFEBlendElement],
+        feColorMatrix: SVGProps[SVGFEColorMatrixElement],
+        feComponentTransfer: SVGProps[SVGFEComponentTransferElement],
+        feComposite: SVGProps[SVGFECompositeElement],
+        feConvolveMatrix: SVGProps[SVGFEConvolveMatrixElement],
+        feDiffuseLighting: SVGProps[SVGFEDiffuseLightingElement],
+        feDisplacementMap: SVGProps[SVGFEDisplacementMapElement],
+        feDistantLight: SVGProps[SVGFEDistantLightElement],
+        feDropShadow: SVGProps[SVGFEDropShadowElement],
+        feFlood: SVGProps[SVGFEFloodElement],
+        feFuncA: SVGProps[SVGFEFuncAElement],
+        feFuncB: SVGProps[SVGFEFuncBElement],
+        feFuncG: SVGProps[SVGFEFuncGElement],
+        feFuncR: SVGProps[SVGFEFuncRElement],
+        feGaussianBlur: SVGProps[SVGFEGaussianBlurElement],
+        feImage: SVGProps[SVGFEImageElement],
+        feMerge: SVGProps[SVGFEMergeElement],
+        feMergeNode: SVGProps[SVGFEMergeNodeElement],
+        feMorphology: SVGProps[SVGFEMorphologyElement],
+        feOffset: SVGProps[SVGFEOffsetElement],
+        fePointLight: SVGProps[SVGFEPointLightElement],
+        feSpecularLighting: SVGProps[SVGFESpecularLightingElement],
+        feSpotLight: SVGProps[SVGFESpotLightElement],
+        feTile: SVGProps[SVGFETileElement],
+        feTurbulence: SVGProps[SVGFETurbulenceElement],
+        fieldset: DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement],
+        figcaption: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        figure: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        filter: SVGProps[SVGFilterElement],
+        footer: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        foreignObject: SVGProps[SVGForeignObjectElement],
+        form: DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement],
+        `functional-page-navigator`: Any,
+        g: SVGProps[SVGGElement],
+        h1: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement],
+        h2: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement],
+        h3: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement],
+        h4: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement],
+        h5: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement],
+        h6: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement],
+        head: DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement],
+        header: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        hgroup: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        hr: DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement],
+        html: DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement],
+        i: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        icon: Any,
+        iframe: DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement],
+        image: SVGProps[SVGImageElement],
+        img: DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement],
+        indicator: Any,
+        input: DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement],
+        ins: DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement],
+        kbd: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        keygen: DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement],
+        label: DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement],
+        legend: DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement],
+        li: DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement],
+        lifestyle: Any,
+        line: SVGProps[SVGLineElement],
+        linearGradient: SVGProps[SVGLinearGradientElement],
+        link: DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement],
+        list: Any,
+        `live-player`: Any,
+        `live-pusher`: Any,
+        loading: Any,
+        main: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        map: DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement],
+        mark: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        marker: SVGProps[SVGMarkerElement],
+        mask: SVGProps[SVGMaskElement],
+        `match-media`: Any,
+        menu: DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement],
+        menuitem: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        meta: DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement],
+        metadata: SVGProps[SVGMetadataElement],
+        meter: DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement],
+        `movable-area`: Any,
+        `movable-view`: Any,
+        mpath: SVGProps[SVGElement],
+        nav: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        `navigation-bar`: Any,
+        navigator: Any,
+        noindex: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        noscript: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        `object`: DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement],
+        `official-account`: Any,
+        ol: DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement],
+        `open-data`: Any,
+        optgroup: DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement],
+        option: DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement],
+        output: DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement],
+        p: DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement],
+        `page-meta`: Any,
+        param: DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement],
+        path: SVGProps[SVGPathElement],
+        pattern: SVGProps[SVGPatternElement],
+        picker: Any,
+        `picker-view`: Any,
+        `picker-view-column`: Any,
+        picture: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        polygon: SVGProps[SVGPolygonElement],
+        polyline: SVGProps[SVGPolylineElement],
+        pre: DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement],
+        progress: DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement],
+        q: DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement],
+        radialGradient: SVGProps[SVGRadialGradientElement],
+        radio: Any,
+        `radio-group`: Any,
+        rect: SVGProps[SVGRectElement],
+        `recycle-list`: Any,
+        refresh: Any,
+        `rich-text`: Any,
+        richtext: Any,
+        rp: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        rt: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        ruby: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        s: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        samp: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        script: DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement],
+        `scroll-view`: Any,
+        scroller: Any,
+        section: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        select: DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement],
+        slider: Any,
+        slot: Any,
+        small: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        source: DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement],
+        span: DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement],
+        stop: SVGProps[SVGStopElement],
+        strong: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        style: DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement],
+        sub: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        summary: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        sup: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        svg: SVGProps[SVGSVGElement],
+        swiper: Any,
+        `swiper-item`: Any,
+        switch: SVGProps[SVGSwitchElement],
+        symbol: SVGProps[SVGSymbolElement],
+        table: DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement],
+        tbody: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement],
+        td: DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement],
+        text: SVGProps[SVGTextElement],
+        textPath: SVGProps[SVGTextPathElement],
+        textarea: DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement],
+        tfoot: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement],
+        th: DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement],
+        thead: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement],
+        time: DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement],
+        title: DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement],
+        tr: DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement],
+        track: DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement],
+        tspan: SVGProps[SVGTSpanElement],
+        u: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        ul: DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement],
+        use: SVGProps[SVGUseElement],
+        `var`: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        video: DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement],
+        view: SVGProps[SVGViewElement],
+        `voip-room`: Any,
+        waterfall: Any,
+        wbr: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement],
+        web: Any,
+        `web-view`: Any,
+        webview: DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement]
       ): IntrinsicElements = {
-        val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], ad = ad.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateMotion = animateMotion.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], big = big.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], cell = cell.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], indicator = indicator.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], keygen = keygen.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], lifestyle = lifestyle.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], menuitem = menuitem.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], mpath = mpath.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], navigator = navigator.asInstanceOf[js.Any], noindex = noindex.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], refresh = refresh.asInstanceOf[js.Any], richtext = richtext.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], scroller = scroller.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], slider = slider.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], swiper = swiper.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], waterfall = waterfall.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any], web = web.asInstanceOf[js.Any], webview = webview.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], ad = ad.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateMotion = animateMotion.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], big = big.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], cell = cell.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], indicator = indicator.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], keygen = keygen.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], lifestyle = lifestyle.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], menuitem = menuitem.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], mpath = mpath.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], navigator = navigator.asInstanceOf[js.Any], noindex = noindex.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], radio = radio.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], refresh = refresh.asInstanceOf[js.Any], richtext = richtext.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], scroller = scroller.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], slider = slider.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], swiper = swiper.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], waterfall = waterfall.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any], web = web.asInstanceOf[js.Any], webview = webview.asInstanceOf[js.Any])
+        __obj.updateDynamic("ad-custom")(`ad-custom`.asInstanceOf[js.Any])
         __obj.updateDynamic("aria-component")(`aria-component`.asInstanceOf[js.Any])
         __obj.updateDynamic("contact-button")(`contact-button`.asInstanceOf[js.Any])
         __obj.updateDynamic("cover-image")(`cover-image`.asInstanceOf[js.Any])
         __obj.updateDynamic("cover-view")(`cover-view`.asInstanceOf[js.Any])
         __obj.updateDynamic("functional-page-navigator")(`functional-page-navigator`.asInstanceOf[js.Any])
-        __obj.updateDynamic("ive-pusher")(`ive-pusher`.asInstanceOf[js.Any])
         __obj.updateDynamic("live-player")(`live-player`.asInstanceOf[js.Any])
+        __obj.updateDynamic("live-pusher")(`live-pusher`.asInstanceOf[js.Any])
+        __obj.updateDynamic("match-media")(`match-media`.asInstanceOf[js.Any])
         __obj.updateDynamic("movable-area")(`movable-area`.asInstanceOf[js.Any])
         __obj.updateDynamic("movable-view")(`movable-view`.asInstanceOf[js.Any])
         __obj.updateDynamic("navigation-bar")(`navigation-bar`.asInstanceOf[js.Any])
         __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+        __obj.updateDynamic("official-account")(`official-account`.asInstanceOf[js.Any])
         __obj.updateDynamic("open-data")(`open-data`.asInstanceOf[js.Any])
         __obj.updateDynamic("page-meta")(`page-meta`.asInstanceOf[js.Any])
         __obj.updateDynamic("picker-view")(`picker-view`.asInstanceOf[js.Any])
+        __obj.updateDynamic("picker-view-column")(`picker-view-column`.asInstanceOf[js.Any])
+        __obj.updateDynamic("radio-group")(`radio-group`.asInstanceOf[js.Any])
         __obj.updateDynamic("recycle-list")(`recycle-list`.asInstanceOf[js.Any])
         __obj.updateDynamic("rich-text")(`rich-text`.asInstanceOf[js.Any])
         __obj.updateDynamic("scroll-view")(`scroll-view`.asInstanceOf[js.Any])
         __obj.updateDynamic("swiper-item")(`swiper-item`.asInstanceOf[js.Any])
         __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
+        __obj.updateDynamic("voip-room")(`voip-room`.asInstanceOf[js.Any])
         __obj.updateDynamic("web-view")(`web-view`.asInstanceOf[js.Any])
         __obj.asInstanceOf[IntrinsicElements]
       }
       
       extension [Self <: IntrinsicElements](x: Self) {
         
-        inline def setA(
-          value: DetailedHTMLProps[AnchorHTMLAttributes[typings.std.HTMLAnchorElement], typings.std.HTMLAnchorElement]
-        ): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+        inline def setA(value: DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
         
-        inline def setAbbr(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
+        inline def setAbbr(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
         
-        inline def setAd(value: js.Any): Self = StObject.set(x, "ad", value.asInstanceOf[js.Any])
+        inline def setAd(value: Any): Self = StObject.set(x, "ad", value.asInstanceOf[js.Any])
         
-        inline def setAddress(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+        inline def `setAd-custom`(value: Any): Self = StObject.set(x, "ad-custom", value.asInstanceOf[js.Any])
         
-        inline def setAnimate(value: SVGProps[typings.std.SVGElement]): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+        inline def setAddress(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
-        inline def setAnimateMotion(value: SVGProps[typings.std.SVGElement]): Self = StObject.set(x, "animateMotion", value.asInstanceOf[js.Any])
+        inline def setAnimate(value: SVGProps[SVGElement]): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
         
-        inline def setAnimateTransform(value: SVGProps[typings.std.SVGElement]): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
+        inline def setAnimateMotion(value: SVGProps[SVGElement]): Self = StObject.set(x, "animateMotion", value.asInstanceOf[js.Any])
         
-        inline def setArea(
-          value: DetailedHTMLProps[AreaHTMLAttributes[typings.std.HTMLAreaElement], typings.std.HTMLAreaElement]
-        ): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+        inline def setAnimateTransform(value: SVGProps[SVGElement]): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
         
-        inline def `setAria-component`(value: js.Any): Self = StObject.set(x, "aria-component", value.asInstanceOf[js.Any])
+        inline def setArea(value: DetailedHTMLProps[AreaHTMLAttributes[HTMLAreaElement], HTMLAreaElement]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
         
-        inline def setArticle(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "article", value.asInstanceOf[js.Any])
+        inline def `setAria-component`(value: Any): Self = StObject.set(x, "aria-component", value.asInstanceOf[js.Any])
         
-        inline def setAside(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "aside", value.asInstanceOf[js.Any])
+        inline def setArticle(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "article", value.asInstanceOf[js.Any])
         
-        inline def setAudio(
-          value: DetailedHTMLProps[AudioHTMLAttributes[typings.std.HTMLAudioElement], typings.std.HTMLAudioElement]
-        ): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+        inline def setAside(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "aside", value.asInstanceOf[js.Any])
         
-        inline def setB(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+        inline def setAudio(value: DetailedHTMLProps[AudioHTMLAttributes[HTMLAudioElement], HTMLAudioElement]): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
         
-        inline def setBase(
-          value: DetailedHTMLProps[BaseHTMLAttributes[typings.std.HTMLBaseElement], typings.std.HTMLBaseElement]
-        ): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+        inline def setB(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
         
-        inline def setBdi(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
+        inline def setBase(value: DetailedHTMLProps[BaseHTMLAttributes[HTMLBaseElement], HTMLBaseElement]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
         
-        inline def setBdo(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "bdo", value.asInstanceOf[js.Any])
+        inline def setBdi(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
         
-        inline def setBig(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
+        inline def setBdo(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "bdo", value.asInstanceOf[js.Any])
         
-        inline def setBlockquote(
-          value: DetailedHTMLProps[BlockquoteHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]
-        ): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
+        inline def setBig(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "big", value.asInstanceOf[js.Any])
         
-        inline def setBody(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLBodyElement], typings.std.HTMLBodyElement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBlockquote(value: DetailedHTMLProps[BlockquoteHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "blockquote", value.asInstanceOf[js.Any])
         
-        inline def setBr(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLBRElement], typings.std.HTMLBRElement]): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+        inline def setBody(value: DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        inline def setButton(
-          value: DetailedHTMLProps[ButtonHTMLAttributes[typings.std.HTMLButtonElement], typings.std.HTMLButtonElement]
-        ): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+        inline def setBr(value: DetailedHTMLProps[HTMLAttributes[HTMLBRElement], HTMLBRElement]): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
         
-        inline def setCanvas(
-          value: DetailedHTMLProps[CanvasHTMLAttributes[typings.std.HTMLCanvasElement], typings.std.HTMLCanvasElement]
-        ): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+        inline def setButton(value: DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
         
-        inline def setCaption(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+        inline def setCamera(value: Any): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
         
-        inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+        inline def setCanvas(value: DetailedHTMLProps[CanvasHTMLAttributes[HTMLCanvasElement], HTMLCanvasElement]): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
         
-        inline def setCircle(value: SVGProps[typings.std.SVGCircleElement]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+        inline def setCaption(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
         
-        inline def setCite(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
+        inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
         
-        inline def setClipPath(value: SVGProps[typings.std.SVGClipPathElement]): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
+        inline def setCircle(value: SVGProps[SVGCircleElement]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
         
-        inline def setCode(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+        inline def setCite(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
         
-        inline def setCol(
-          value: DetailedHTMLProps[
-                  ColHTMLAttributes[typings.std.HTMLTableColElement], 
-                  typings.std.HTMLTableColElement
-                ]
-        ): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+        inline def setClipPath(value: SVGProps[SVGClipPathElement]): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
         
-        inline def setColgroup(
-          value: DetailedHTMLProps[
-                  ColgroupHTMLAttributes[typings.std.HTMLTableColElement], 
-                  typings.std.HTMLTableColElement
-                ]
-        ): Self = StObject.set(x, "colgroup", value.asInstanceOf[js.Any])
+        inline def setCode(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
-        inline def `setContact-button`(value: js.Any): Self = StObject.set(x, "contact-button", value.asInstanceOf[js.Any])
+        inline def setCol(value: DetailedHTMLProps[ColHTMLAttributes[HTMLTableColElement], HTMLTableColElement]): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
         
-        inline def `setCover-image`(value: js.Any): Self = StObject.set(x, "cover-image", value.asInstanceOf[js.Any])
+        inline def setColgroup(value: DetailedHTMLProps[ColgroupHTMLAttributes[HTMLTableColElement], HTMLTableColElement]): Self = StObject.set(x, "colgroup", value.asInstanceOf[js.Any])
         
-        inline def `setCover-view`(value: js.Any): Self = StObject.set(x, "cover-view", value.asInstanceOf[js.Any])
+        inline def `setContact-button`(value: Any): Self = StObject.set(x, "contact-button", value.asInstanceOf[js.Any])
         
-        inline def setData(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def `setCover-image`(value: Any): Self = StObject.set(x, "cover-image", value.asInstanceOf[js.Any])
         
-        inline def setDatalist(
-          value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLDataListElement], typings.std.HTMLDataListElement]
-        ): Self = StObject.set(x, "datalist", value.asInstanceOf[js.Any])
+        inline def `setCover-view`(value: Any): Self = StObject.set(x, "cover-view", value.asInstanceOf[js.Any])
         
-        inline def setDd(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
+        inline def setData(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        inline def setDefs(value: SVGProps[typings.std.SVGDefsElement]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
+        inline def setDatalist(value: DetailedHTMLProps[HTMLAttributes[HTMLDataListElement], HTMLDataListElement]): Self = StObject.set(x, "datalist", value.asInstanceOf[js.Any])
         
-        inline def setDel(value: DetailedHTMLProps[DelHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
+        inline def setDd(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
         
-        inline def setDesc(value: SVGProps[typings.std.SVGDescElement]): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+        inline def setDefs(value: SVGProps[SVGDefsElement]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
         
-        inline def setDetails(value: DetailedHTMLProps[DetailsHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+        inline def setDel(value: DetailedHTMLProps[DelHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
         
-        inline def setDfn(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "dfn", value.asInstanceOf[js.Any])
+        inline def setDesc(value: SVGProps[SVGDescElement]): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
         
-        inline def setDialog(
-          value: DetailedHTMLProps[DialogHTMLAttributes[typings.std.HTMLDialogElement], typings.std.HTMLDialogElement]
-        ): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
+        inline def setDetails(value: DetailedHTMLProps[DetailsHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
         
-        inline def setDiv(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLDivElement], typings.std.HTMLDivElement]): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
+        inline def setDfn(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "dfn", value.asInstanceOf[js.Any])
         
-        inline def setDl(
-          value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLDListElement], typings.std.HTMLDListElement]
-        ): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
+        inline def setDialog(value: DetailedHTMLProps[DialogHTMLAttributes[HTMLDialogElement], HTMLDialogElement]): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
         
-        inline def setDt(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
+        inline def setDiv(value: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
         
-        inline def setEllipse(value: SVGProps[typings.std.SVGEllipseElement]): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
+        inline def setDl(value: DetailedHTMLProps[HTMLAttributes[HTMLDListElement], HTMLDListElement]): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
         
-        inline def setEm(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
+        inline def setDt(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "dt", value.asInstanceOf[js.Any])
         
-        inline def setEmbed(
-          value: DetailedHTMLProps[EmbedHTMLAttributes[typings.std.HTMLEmbedElement], typings.std.HTMLEmbedElement]
-        ): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
+        inline def setEllipse(value: SVGProps[SVGEllipseElement]): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
         
-        inline def setFeBlend(value: SVGProps[typings.std.SVGFEBlendElement]): Self = StObject.set(x, "feBlend", value.asInstanceOf[js.Any])
+        inline def setEm(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "em", value.asInstanceOf[js.Any])
         
-        inline def setFeColorMatrix(value: SVGProps[typings.std.SVGFEColorMatrixElement]): Self = StObject.set(x, "feColorMatrix", value.asInstanceOf[js.Any])
+        inline def setEmbed(value: DetailedHTMLProps[EmbedHTMLAttributes[HTMLEmbedElement], HTMLEmbedElement]): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
         
-        inline def setFeComponentTransfer(value: SVGProps[typings.std.SVGFEComponentTransferElement]): Self = StObject.set(x, "feComponentTransfer", value.asInstanceOf[js.Any])
+        inline def setFeBlend(value: SVGProps[SVGFEBlendElement]): Self = StObject.set(x, "feBlend", value.asInstanceOf[js.Any])
         
-        inline def setFeComposite(value: SVGProps[typings.std.SVGFECompositeElement]): Self = StObject.set(x, "feComposite", value.asInstanceOf[js.Any])
+        inline def setFeColorMatrix(value: SVGProps[SVGFEColorMatrixElement]): Self = StObject.set(x, "feColorMatrix", value.asInstanceOf[js.Any])
         
-        inline def setFeConvolveMatrix(value: SVGProps[typings.std.SVGFEConvolveMatrixElement]): Self = StObject.set(x, "feConvolveMatrix", value.asInstanceOf[js.Any])
+        inline def setFeComponentTransfer(value: SVGProps[SVGFEComponentTransferElement]): Self = StObject.set(x, "feComponentTransfer", value.asInstanceOf[js.Any])
         
-        inline def setFeDiffuseLighting(value: SVGProps[typings.std.SVGFEDiffuseLightingElement]): Self = StObject.set(x, "feDiffuseLighting", value.asInstanceOf[js.Any])
+        inline def setFeComposite(value: SVGProps[SVGFECompositeElement]): Self = StObject.set(x, "feComposite", value.asInstanceOf[js.Any])
         
-        inline def setFeDisplacementMap(value: SVGProps[typings.std.SVGFEDisplacementMapElement]): Self = StObject.set(x, "feDisplacementMap", value.asInstanceOf[js.Any])
+        inline def setFeConvolveMatrix(value: SVGProps[SVGFEConvolveMatrixElement]): Self = StObject.set(x, "feConvolveMatrix", value.asInstanceOf[js.Any])
         
-        inline def setFeDistantLight(value: SVGProps[typings.std.SVGFEDistantLightElement]): Self = StObject.set(x, "feDistantLight", value.asInstanceOf[js.Any])
+        inline def setFeDiffuseLighting(value: SVGProps[SVGFEDiffuseLightingElement]): Self = StObject.set(x, "feDiffuseLighting", value.asInstanceOf[js.Any])
         
-        inline def setFeDropShadow(value: SVGProps[typings.std.SVGFEDropShadowElement]): Self = StObject.set(x, "feDropShadow", value.asInstanceOf[js.Any])
+        inline def setFeDisplacementMap(value: SVGProps[SVGFEDisplacementMapElement]): Self = StObject.set(x, "feDisplacementMap", value.asInstanceOf[js.Any])
         
-        inline def setFeFlood(value: SVGProps[typings.std.SVGFEFloodElement]): Self = StObject.set(x, "feFlood", value.asInstanceOf[js.Any])
+        inline def setFeDistantLight(value: SVGProps[SVGFEDistantLightElement]): Self = StObject.set(x, "feDistantLight", value.asInstanceOf[js.Any])
         
-        inline def setFeFuncA(value: SVGProps[typings.std.SVGFEFuncAElement]): Self = StObject.set(x, "feFuncA", value.asInstanceOf[js.Any])
+        inline def setFeDropShadow(value: SVGProps[SVGFEDropShadowElement]): Self = StObject.set(x, "feDropShadow", value.asInstanceOf[js.Any])
         
-        inline def setFeFuncB(value: SVGProps[typings.std.SVGFEFuncBElement]): Self = StObject.set(x, "feFuncB", value.asInstanceOf[js.Any])
+        inline def setFeFlood(value: SVGProps[SVGFEFloodElement]): Self = StObject.set(x, "feFlood", value.asInstanceOf[js.Any])
         
-        inline def setFeFuncG(value: SVGProps[typings.std.SVGFEFuncGElement]): Self = StObject.set(x, "feFuncG", value.asInstanceOf[js.Any])
+        inline def setFeFuncA(value: SVGProps[SVGFEFuncAElement]): Self = StObject.set(x, "feFuncA", value.asInstanceOf[js.Any])
         
-        inline def setFeFuncR(value: SVGProps[typings.std.SVGFEFuncRElement]): Self = StObject.set(x, "feFuncR", value.asInstanceOf[js.Any])
+        inline def setFeFuncB(value: SVGProps[SVGFEFuncBElement]): Self = StObject.set(x, "feFuncB", value.asInstanceOf[js.Any])
         
-        inline def setFeGaussianBlur(value: SVGProps[typings.std.SVGFEGaussianBlurElement]): Self = StObject.set(x, "feGaussianBlur", value.asInstanceOf[js.Any])
+        inline def setFeFuncG(value: SVGProps[SVGFEFuncGElement]): Self = StObject.set(x, "feFuncG", value.asInstanceOf[js.Any])
         
-        inline def setFeImage(value: SVGProps[typings.std.SVGFEImageElement]): Self = StObject.set(x, "feImage", value.asInstanceOf[js.Any])
+        inline def setFeFuncR(value: SVGProps[SVGFEFuncRElement]): Self = StObject.set(x, "feFuncR", value.asInstanceOf[js.Any])
         
-        inline def setFeMerge(value: SVGProps[typings.std.SVGFEMergeElement]): Self = StObject.set(x, "feMerge", value.asInstanceOf[js.Any])
+        inline def setFeGaussianBlur(value: SVGProps[SVGFEGaussianBlurElement]): Self = StObject.set(x, "feGaussianBlur", value.asInstanceOf[js.Any])
         
-        inline def setFeMergeNode(value: SVGProps[typings.std.SVGFEMergeNodeElement]): Self = StObject.set(x, "feMergeNode", value.asInstanceOf[js.Any])
+        inline def setFeImage(value: SVGProps[SVGFEImageElement]): Self = StObject.set(x, "feImage", value.asInstanceOf[js.Any])
         
-        inline def setFeMorphology(value: SVGProps[typings.std.SVGFEMorphologyElement]): Self = StObject.set(x, "feMorphology", value.asInstanceOf[js.Any])
+        inline def setFeMerge(value: SVGProps[SVGFEMergeElement]): Self = StObject.set(x, "feMerge", value.asInstanceOf[js.Any])
         
-        inline def setFeOffset(value: SVGProps[typings.std.SVGFEOffsetElement]): Self = StObject.set(x, "feOffset", value.asInstanceOf[js.Any])
+        inline def setFeMergeNode(value: SVGProps[SVGFEMergeNodeElement]): Self = StObject.set(x, "feMergeNode", value.asInstanceOf[js.Any])
         
-        inline def setFePointLight(value: SVGProps[typings.std.SVGFEPointLightElement]): Self = StObject.set(x, "fePointLight", value.asInstanceOf[js.Any])
+        inline def setFeMorphology(value: SVGProps[SVGFEMorphologyElement]): Self = StObject.set(x, "feMorphology", value.asInstanceOf[js.Any])
         
-        inline def setFeSpecularLighting(value: SVGProps[typings.std.SVGFESpecularLightingElement]): Self = StObject.set(x, "feSpecularLighting", value.asInstanceOf[js.Any])
+        inline def setFeOffset(value: SVGProps[SVGFEOffsetElement]): Self = StObject.set(x, "feOffset", value.asInstanceOf[js.Any])
         
-        inline def setFeSpotLight(value: SVGProps[typings.std.SVGFESpotLightElement]): Self = StObject.set(x, "feSpotLight", value.asInstanceOf[js.Any])
+        inline def setFePointLight(value: SVGProps[SVGFEPointLightElement]): Self = StObject.set(x, "fePointLight", value.asInstanceOf[js.Any])
         
-        inline def setFeTile(value: SVGProps[typings.std.SVGFETileElement]): Self = StObject.set(x, "feTile", value.asInstanceOf[js.Any])
+        inline def setFeSpecularLighting(value: SVGProps[SVGFESpecularLightingElement]): Self = StObject.set(x, "feSpecularLighting", value.asInstanceOf[js.Any])
         
-        inline def setFeTurbulence(value: SVGProps[typings.std.SVGFETurbulenceElement]): Self = StObject.set(x, "feTurbulence", value.asInstanceOf[js.Any])
+        inline def setFeSpotLight(value: SVGProps[SVGFESpotLightElement]): Self = StObject.set(x, "feSpotLight", value.asInstanceOf[js.Any])
         
-        inline def setFieldset(
-          value: DetailedHTMLProps[
-                  FieldsetHTMLAttributes[typings.std.HTMLFieldSetElement], 
-                  typings.std.HTMLFieldSetElement
-                ]
-        ): Self = StObject.set(x, "fieldset", value.asInstanceOf[js.Any])
+        inline def setFeTile(value: SVGProps[SVGFETileElement]): Self = StObject.set(x, "feTile", value.asInstanceOf[js.Any])
         
-        inline def setFigcaption(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "figcaption", value.asInstanceOf[js.Any])
+        inline def setFeTurbulence(value: SVGProps[SVGFETurbulenceElement]): Self = StObject.set(x, "feTurbulence", value.asInstanceOf[js.Any])
         
-        inline def setFigure(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "figure", value.asInstanceOf[js.Any])
+        inline def setFieldset(value: DetailedHTMLProps[FieldsetHTMLAttributes[HTMLFieldSetElement], HTMLFieldSetElement]): Self = StObject.set(x, "fieldset", value.asInstanceOf[js.Any])
         
-        inline def setFilter(value: SVGProps[typings.std.SVGFilterElement]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+        inline def setFigcaption(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "figcaption", value.asInstanceOf[js.Any])
         
-        inline def setFooter(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+        inline def setFigure(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "figure", value.asInstanceOf[js.Any])
         
-        inline def setForeignObject(value: SVGProps[typings.std.SVGForeignObjectElement]): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
+        inline def setFilter(value: SVGProps[SVGFilterElement]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
-        inline def setForm(
-          value: DetailedHTMLProps[FormHTMLAttributes[typings.std.HTMLFormElement], typings.std.HTMLFormElement]
-        ): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+        inline def setFooter(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
         
-        inline def `setFunctional-page-navigator`(value: js.Any): Self = StObject.set(x, "functional-page-navigator", value.asInstanceOf[js.Any])
+        inline def setForeignObject(value: SVGProps[SVGForeignObjectElement]): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
         
-        inline def setG(value: SVGProps[typings.std.SVGGElement]): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+        inline def setForm(value: DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
         
-        inline def setH1(
-          value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
-        ): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
+        inline def `setFunctional-page-navigator`(value: Any): Self = StObject.set(x, "functional-page-navigator", value.asInstanceOf[js.Any])
         
-        inline def setH2(
-          value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
-        ): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
+        inline def setG(value: SVGProps[SVGGElement]): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
         
-        inline def setH3(
-          value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
-        ): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
+        inline def setH1(value: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = StObject.set(x, "h1", value.asInstanceOf[js.Any])
         
-        inline def setH4(
-          value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
-        ): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
+        inline def setH2(value: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = StObject.set(x, "h2", value.asInstanceOf[js.Any])
         
-        inline def setH5(
-          value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
-        ): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
+        inline def setH3(value: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = StObject.set(x, "h3", value.asInstanceOf[js.Any])
         
-        inline def setH6(
-          value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadingElement], typings.std.HTMLHeadingElement]
-        ): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
+        inline def setH4(value: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = StObject.set(x, "h4", value.asInstanceOf[js.Any])
         
-        inline def setHead(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHeadElement], typings.std.HTMLHeadElement]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+        inline def setH5(value: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = StObject.set(x, "h5", value.asInstanceOf[js.Any])
         
-        inline def setHeader(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+        inline def setH6(value: DetailedHTMLProps[HTMLAttributes[HTMLHeadingElement], HTMLHeadingElement]): Self = StObject.set(x, "h6", value.asInstanceOf[js.Any])
         
-        inline def setHgroup(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "hgroup", value.asInstanceOf[js.Any])
+        inline def setHead(value: DetailedHTMLProps[HTMLAttributes[HTMLHeadElement], HTMLHeadElement]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
         
-        inline def setHr(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLHRElement], typings.std.HTMLHRElement]): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
+        inline def setHeader(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
         
-        inline def setHtml(
-          value: DetailedHTMLProps[HtmlHTMLAttributes[typings.std.HTMLHtmlElement], typings.std.HTMLHtmlElement]
-        ): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+        inline def setHgroup(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "hgroup", value.asInstanceOf[js.Any])
         
-        inline def setI(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+        inline def setHr(value: DetailedHTMLProps[HTMLAttributes[HTMLHRElement], HTMLHRElement]): Self = StObject.set(x, "hr", value.asInstanceOf[js.Any])
         
-        inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setHtml(value: DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement]): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
         
-        inline def setIframe(
-          value: DetailedHTMLProps[IframeHTMLAttributes[typings.std.HTMLIFrameElement], typings.std.HTMLIFrameElement]
-        ): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
+        inline def setI(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
         
-        inline def setImage(value: SVGProps[typings.std.SVGImageElement]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+        inline def setIcon(value: Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        inline def setImg(
-          value: DetailedHTMLProps[ImgHTMLAttributes[typings.std.HTMLImageElement], typings.std.HTMLImageElement]
-        ): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+        inline def setIframe(value: DetailedHTMLProps[IframeHTMLAttributes[HTMLIFrameElement], HTMLIFrameElement]): Self = StObject.set(x, "iframe", value.asInstanceOf[js.Any])
         
-        inline def setIndicator(value: js.Any): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+        inline def setImage(value: SVGProps[SVGImageElement]): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
         
-        inline def setInput(
-          value: DetailedHTMLProps[InputHTMLAttributes[typings.std.HTMLInputElement], typings.std.HTMLInputElement]
-        ): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+        inline def setImg(value: DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement]): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
         
-        inline def setIns(
-          value: DetailedHTMLProps[InsHTMLAttributes[typings.std.HTMLModElement], typings.std.HTMLModElement]
-        ): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
+        inline def setIndicator(value: Any): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
         
-        inline def `setIve-pusher`(value: js.Any): Self = StObject.set(x, "ive-pusher", value.asInstanceOf[js.Any])
+        inline def setInput(value: DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
         
-        inline def setKbd(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "kbd", value.asInstanceOf[js.Any])
+        inline def setIns(value: DetailedHTMLProps[InsHTMLAttributes[HTMLModElement], HTMLModElement]): Self = StObject.set(x, "ins", value.asInstanceOf[js.Any])
         
-        inline def setKeygen(value: DetailedHTMLProps[KeygenHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "keygen", value.asInstanceOf[js.Any])
+        inline def setKbd(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "kbd", value.asInstanceOf[js.Any])
         
-        inline def setLabel(
-          value: DetailedHTMLProps[LabelHTMLAttributes[typings.std.HTMLLabelElement], typings.std.HTMLLabelElement]
-        ): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setKeygen(value: DetailedHTMLProps[KeygenHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "keygen", value.asInstanceOf[js.Any])
         
-        inline def setLegend(
-          value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLLegendElement], typings.std.HTMLLegendElement]
-        ): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+        inline def setLabel(value: DetailedHTMLProps[LabelHTMLAttributes[HTMLLabelElement], HTMLLabelElement]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        inline def setLi(value: DetailedHTMLProps[LiHTMLAttributes[typings.std.HTMLLIElement], typings.std.HTMLLIElement]): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
+        inline def setLegend(value: DetailedHTMLProps[HTMLAttributes[HTMLLegendElement], HTMLLegendElement]): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
         
-        inline def setLifestyle(value: js.Any): Self = StObject.set(x, "lifestyle", value.asInstanceOf[js.Any])
+        inline def setLi(value: DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement]): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
         
-        inline def setLine(value: SVGProps[typings.std.SVGLineElement]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+        inline def setLifestyle(value: Any): Self = StObject.set(x, "lifestyle", value.asInstanceOf[js.Any])
         
-        inline def setLinearGradient(value: SVGProps[typings.std.SVGLinearGradientElement]): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
+        inline def setLine(value: SVGProps[SVGLineElement]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
         
-        inline def setLink(
-          value: DetailedHTMLProps[LinkHTMLAttributes[typings.std.HTMLLinkElement], typings.std.HTMLLinkElement]
-        ): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+        inline def setLinearGradient(value: SVGProps[SVGLinearGradientElement]): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
         
-        inline def setList(value: js.Any): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+        inline def setLink(value: DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
         
-        inline def `setLive-player`(value: js.Any): Self = StObject.set(x, "live-player", value.asInstanceOf[js.Any])
+        inline def setList(value: Any): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
         
-        inline def setLoading(value: js.Any): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+        inline def `setLive-player`(value: Any): Self = StObject.set(x, "live-player", value.asInstanceOf[js.Any])
         
-        inline def setMain(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+        inline def `setLive-pusher`(value: Any): Self = StObject.set(x, "live-pusher", value.asInstanceOf[js.Any])
         
-        inline def setMap(
-          value: DetailedHTMLProps[MapHTMLAttributes[typings.std.HTMLMapElement], typings.std.HTMLMapElement]
-        ): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+        inline def setLoading(value: Any): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
         
-        inline def setMark(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+        inline def setMain(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
         
-        inline def setMarker(value: SVGProps[typings.std.SVGMarkerElement]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+        inline def setMap(value: DetailedHTMLProps[MapHTMLAttributes[HTMLMapElement], HTMLMapElement]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
         
-        inline def setMask(value: SVGProps[typings.std.SVGMaskElement]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+        inline def setMark(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
         
-        inline def setMenu(value: DetailedHTMLProps[MenuHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+        inline def setMarker(value: SVGProps[SVGMarkerElement]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
         
-        inline def setMenuitem(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "menuitem", value.asInstanceOf[js.Any])
+        inline def setMask(value: SVGProps[SVGMaskElement]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
         
-        inline def setMeta(
-          value: DetailedHTMLProps[MetaHTMLAttributes[typings.std.HTMLMetaElement], typings.std.HTMLMetaElement]
-        ): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+        inline def `setMatch-media`(value: Any): Self = StObject.set(x, "match-media", value.asInstanceOf[js.Any])
         
-        inline def setMetadata(value: SVGProps[typings.std.SVGMetadataElement]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+        inline def setMenu(value: DetailedHTMLProps[MenuHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
         
-        inline def setMeter(value: DetailedHTMLProps[MeterHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
+        inline def setMenuitem(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "menuitem", value.asInstanceOf[js.Any])
         
-        inline def `setMovable-area`(value: js.Any): Self = StObject.set(x, "movable-area", value.asInstanceOf[js.Any])
+        inline def setMeta(value: DetailedHTMLProps[MetaHTMLAttributes[HTMLMetaElement], HTMLMetaElement]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
         
-        inline def `setMovable-view`(value: js.Any): Self = StObject.set(x, "movable-view", value.asInstanceOf[js.Any])
+        inline def setMetadata(value: SVGProps[SVGMetadataElement]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         
-        inline def setMpath(value: SVGProps[typings.std.SVGElement]): Self = StObject.set(x, "mpath", value.asInstanceOf[js.Any])
+        inline def setMeter(value: DetailedHTMLProps[MeterHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
         
-        inline def setNav(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
+        inline def `setMovable-area`(value: Any): Self = StObject.set(x, "movable-area", value.asInstanceOf[js.Any])
         
-        inline def `setNavigation-bar`(value: js.Any): Self = StObject.set(x, "navigation-bar", value.asInstanceOf[js.Any])
+        inline def `setMovable-view`(value: Any): Self = StObject.set(x, "movable-view", value.asInstanceOf[js.Any])
         
-        inline def setNavigator(value: js.Any): Self = StObject.set(x, "navigator", value.asInstanceOf[js.Any])
+        inline def setMpath(value: SVGProps[SVGElement]): Self = StObject.set(x, "mpath", value.asInstanceOf[js.Any])
         
-        inline def setNoindex(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "noindex", value.asInstanceOf[js.Any])
+        inline def setNav(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
         
-        inline def setNoscript(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
+        inline def `setNavigation-bar`(value: Any): Self = StObject.set(x, "navigation-bar", value.asInstanceOf[js.Any])
         
-        inline def setObject(
-          value: DetailedHTMLProps[ObjectHTMLAttributes[typings.std.HTMLObjectElement], typings.std.HTMLObjectElement]
-        ): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+        inline def setNavigator(value: Any): Self = StObject.set(x, "navigator", value.asInstanceOf[js.Any])
         
-        inline def setOl(
-          value: DetailedHTMLProps[OlHTMLAttributes[typings.std.HTMLOListElement], typings.std.HTMLOListElement]
-        ): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
+        inline def setNoindex(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "noindex", value.asInstanceOf[js.Any])
         
-        inline def `setOpen-data`(value: js.Any): Self = StObject.set(x, "open-data", value.asInstanceOf[js.Any])
+        inline def setNoscript(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
         
-        inline def setOptgroup(
-          value: DetailedHTMLProps[
-                  OptgroupHTMLAttributes[typings.std.HTMLOptGroupElement], 
-                  typings.std.HTMLOptGroupElement
-                ]
-        ): Self = StObject.set(x, "optgroup", value.asInstanceOf[js.Any])
+        inline def setObject(value: DetailedHTMLProps[ObjectHTMLAttributes[HTMLObjectElement], HTMLObjectElement]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
         
-        inline def setOption(
-          value: DetailedHTMLProps[OptionHTMLAttributes[typings.std.HTMLOptionElement], typings.std.HTMLOptionElement]
-        ): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+        inline def `setOfficial-account`(value: Any): Self = StObject.set(x, "official-account", value.asInstanceOf[js.Any])
         
-        inline def setOutput(value: DetailedHTMLProps[OutputHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+        inline def setOl(value: DetailedHTMLProps[OlHTMLAttributes[HTMLOListElement], HTMLOListElement]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
         
-        inline def setP(
-          value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLParagraphElement], typings.std.HTMLParagraphElement]
-        ): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+        inline def `setOpen-data`(value: Any): Self = StObject.set(x, "open-data", value.asInstanceOf[js.Any])
         
-        inline def `setPage-meta`(value: js.Any): Self = StObject.set(x, "page-meta", value.asInstanceOf[js.Any])
+        inline def setOptgroup(value: DetailedHTMLProps[OptgroupHTMLAttributes[HTMLOptGroupElement], HTMLOptGroupElement]): Self = StObject.set(x, "optgroup", value.asInstanceOf[js.Any])
         
-        inline def setParam(
-          value: DetailedHTMLProps[ParamHTMLAttributes[typings.std.HTMLParamElement], typings.std.HTMLParamElement]
-        ): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+        inline def setOption(value: DetailedHTMLProps[OptionHTMLAttributes[HTMLOptionElement], HTMLOptionElement]): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
         
-        inline def setPath(value: SVGProps[typings.std.SVGPathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setOutput(value: DetailedHTMLProps[OutputHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
         
-        inline def setPattern(value: SVGProps[typings.std.SVGPatternElement]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+        inline def setP(value: DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
         
-        inline def setPicker(value: js.Any): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+        inline def `setPage-meta`(value: Any): Self = StObject.set(x, "page-meta", value.asInstanceOf[js.Any])
         
-        inline def `setPicker-view`(value: js.Any): Self = StObject.set(x, "picker-view", value.asInstanceOf[js.Any])
+        inline def setParam(value: DetailedHTMLProps[ParamHTMLAttributes[HTMLParamElement], HTMLParamElement]): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
         
-        inline def setPicture(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+        inline def setPath(value: SVGProps[SVGPathElement]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        inline def setPolygon(value: SVGProps[typings.std.SVGPolygonElement]): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
+        inline def setPattern(value: SVGProps[SVGPatternElement]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
         
-        inline def setPolyline(value: SVGProps[typings.std.SVGPolylineElement]): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
+        inline def setPicker(value: Any): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
         
-        inline def setPre(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLPreElement], typings.std.HTMLPreElement]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+        inline def `setPicker-view`(value: Any): Self = StObject.set(x, "picker-view", value.asInstanceOf[js.Any])
         
-        inline def setProgress(
-          value: DetailedHTMLProps[
-                  ProgressHTMLAttributes[typings.std.HTMLProgressElement], 
-                  typings.std.HTMLProgressElement
-                ]
-        ): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+        inline def `setPicker-view-column`(value: Any): Self = StObject.set(x, "picker-view-column", value.asInstanceOf[js.Any])
         
-        inline def setQ(
-          value: DetailedHTMLProps[QuoteHTMLAttributes[typings.std.HTMLQuoteElement], typings.std.HTMLQuoteElement]
-        ): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+        inline def setPicture(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
         
-        inline def setRadialGradient(value: SVGProps[typings.std.SVGRadialGradientElement]): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
+        inline def setPolygon(value: SVGProps[SVGPolygonElement]): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
         
-        inline def setRect(value: SVGProps[typings.std.SVGRectElement]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+        inline def setPolyline(value: SVGProps[SVGPolylineElement]): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
         
-        inline def `setRecycle-list`(value: js.Any): Self = StObject.set(x, "recycle-list", value.asInstanceOf[js.Any])
+        inline def setPre(value: DetailedHTMLProps[HTMLAttributes[HTMLPreElement], HTMLPreElement]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
         
-        inline def setRefresh(value: js.Any): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+        inline def setProgress(value: DetailedHTMLProps[ProgressHTMLAttributes[HTMLProgressElement], HTMLProgressElement]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
         
-        inline def `setRich-text`(value: js.Any): Self = StObject.set(x, "rich-text", value.asInstanceOf[js.Any])
+        inline def setQ(value: DetailedHTMLProps[QuoteHTMLAttributes[HTMLQuoteElement], HTMLQuoteElement]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
         
-        inline def setRichtext(value: js.Any): Self = StObject.set(x, "richtext", value.asInstanceOf[js.Any])
+        inline def setRadialGradient(value: SVGProps[SVGRadialGradientElement]): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
         
-        inline def setRp(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "rp", value.asInstanceOf[js.Any])
+        inline def setRadio(value: Any): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
         
-        inline def setRt(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "rt", value.asInstanceOf[js.Any])
+        inline def `setRadio-group`(value: Any): Self = StObject.set(x, "radio-group", value.asInstanceOf[js.Any])
         
-        inline def setRuby(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "ruby", value.asInstanceOf[js.Any])
+        inline def setRect(value: SVGProps[SVGRectElement]): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
         
-        inline def setS(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+        inline def `setRecycle-list`(value: Any): Self = StObject.set(x, "recycle-list", value.asInstanceOf[js.Any])
         
-        inline def setSamp(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "samp", value.asInstanceOf[js.Any])
+        inline def setRefresh(value: Any): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
         
-        inline def setScript(
-          value: DetailedHTMLProps[ScriptHTMLAttributes[typings.std.HTMLScriptElement], typings.std.HTMLScriptElement]
-        ): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+        inline def `setRich-text`(value: Any): Self = StObject.set(x, "rich-text", value.asInstanceOf[js.Any])
         
-        inline def `setScroll-view`(value: js.Any): Self = StObject.set(x, "scroll-view", value.asInstanceOf[js.Any])
+        inline def setRichtext(value: Any): Self = StObject.set(x, "richtext", value.asInstanceOf[js.Any])
         
-        inline def setScroller(value: js.Any): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
+        inline def setRp(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "rp", value.asInstanceOf[js.Any])
         
-        inline def setSection(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+        inline def setRt(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "rt", value.asInstanceOf[js.Any])
         
-        inline def setSelect(
-          value: DetailedHTMLProps[SelectHTMLAttributes[typings.std.HTMLSelectElement], typings.std.HTMLSelectElement]
-        ): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+        inline def setRuby(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "ruby", value.asInstanceOf[js.Any])
         
-        inline def setSlider(value: js.Any): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
+        inline def setS(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
         
-        inline def setSlot(value: js.Any): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+        inline def setSamp(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "samp", value.asInstanceOf[js.Any])
         
-        inline def setSmall(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+        inline def setScript(value: DetailedHTMLProps[ScriptHTMLAttributes[HTMLScriptElement], HTMLScriptElement]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
         
-        inline def setSource(
-          value: DetailedHTMLProps[SourceHTMLAttributes[typings.std.HTMLSourceElement], typings.std.HTMLSourceElement]
-        ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def `setScroll-view`(value: Any): Self = StObject.set(x, "scroll-view", value.asInstanceOf[js.Any])
         
-        inline def setSpan(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLSpanElement], typings.std.HTMLSpanElement]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+        inline def setScroller(value: Any): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
         
-        inline def setStop(value: SVGProps[typings.std.SVGStopElement]): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+        inline def setSection(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
         
-        inline def setStrong(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+        inline def setSelect(value: DetailedHTMLProps[SelectHTMLAttributes[HTMLSelectElement], HTMLSelectElement]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
         
-        inline def setStyle(
-          value: DetailedHTMLProps[StyleHTMLAttributes[typings.std.HTMLStyleElement], typings.std.HTMLStyleElement]
-        ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+        inline def setSlider(value: Any): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
         
-        inline def setSub(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+        inline def setSlot(value: Any): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
         
-        inline def setSummary(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+        inline def setSmall(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
         
-        inline def setSup(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
+        inline def setSource(value: DetailedHTMLProps[SourceHTMLAttributes[HTMLSourceElement], HTMLSourceElement]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        inline def setSvg(value: SVGProps[typings.std.SVGSVGElement]): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+        inline def setSpan(value: DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement]): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
         
-        inline def setSwiper(value: js.Any): Self = StObject.set(x, "swiper", value.asInstanceOf[js.Any])
+        inline def setStop(value: SVGProps[SVGStopElement]): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
         
-        inline def `setSwiper-item`(value: js.Any): Self = StObject.set(x, "swiper-item", value.asInstanceOf[js.Any])
+        inline def setStrong(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
         
-        inline def setSwitch(value: SVGProps[typings.std.SVGSwitchElement]): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
+        inline def setStyle(value: DetailedHTMLProps[StyleHTMLAttributes[HTMLStyleElement], HTMLStyleElement]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        inline def setSymbol(value: SVGProps[typings.std.SVGSymbolElement]): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+        inline def setSub(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
         
-        inline def setTable(
-          value: DetailedHTMLProps[TableHTMLAttributes[typings.std.HTMLTableElement], typings.std.HTMLTableElement]
-        ): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+        inline def setSummary(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
         
-        inline def setTbody(
-          value: DetailedHTMLProps[
-                  HTMLAttributes[typings.std.HTMLTableSectionElement], 
-                  typings.std.HTMLTableSectionElement
-                ]
-        ): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
+        inline def setSup(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "sup", value.asInstanceOf[js.Any])
         
-        inline def setTd(
-          value: DetailedHTMLProps[
-                  TdHTMLAttributes[typings.std.HTMLTableDataCellElement], 
-                  typings.std.HTMLTableDataCellElement
-                ]
-        ): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
+        inline def setSvg(value: SVGProps[SVGSVGElement]): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
         
-        inline def setText(value: SVGProps[typings.std.SVGTextElement]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setSwiper(value: Any): Self = StObject.set(x, "swiper", value.asInstanceOf[js.Any])
         
-        inline def setTextPath(value: SVGProps[typings.std.SVGTextPathElement]): Self = StObject.set(x, "textPath", value.asInstanceOf[js.Any])
+        inline def `setSwiper-item`(value: Any): Self = StObject.set(x, "swiper-item", value.asInstanceOf[js.Any])
         
-        inline def setTextarea(
-          value: DetailedHTMLProps[
-                  TextareaHTMLAttributes[typings.std.HTMLTextAreaElement], 
-                  typings.std.HTMLTextAreaElement
-                ]
-        ): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
+        inline def setSwitch(value: SVGProps[SVGSwitchElement]): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
         
-        inline def setTfoot(
-          value: DetailedHTMLProps[
-                  HTMLAttributes[typings.std.HTMLTableSectionElement], 
-                  typings.std.HTMLTableSectionElement
-                ]
-        ): Self = StObject.set(x, "tfoot", value.asInstanceOf[js.Any])
+        inline def setSymbol(value: SVGProps[SVGSymbolElement]): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
         
-        inline def setTh(
-          value: DetailedHTMLProps[
-                  ThHTMLAttributes[typings.std.HTMLTableHeaderCellElement], 
-                  typings.std.HTMLTableHeaderCellElement
-                ]
-        ): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
+        inline def setTable(value: DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
         
-        inline def setThead(
-          value: DetailedHTMLProps[
-                  HTMLAttributes[typings.std.HTMLTableSectionElement], 
-                  typings.std.HTMLTableSectionElement
-                ]
-        ): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
+        inline def setTbody(value: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
         
-        inline def setTime(value: DetailedHTMLProps[TimeHTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+        inline def setTd(value: DetailedHTMLProps[TdHTMLAttributes[HTMLTableDataCellElement], HTMLTableDataCellElement]): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
         
-        inline def setTitle(
-          value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLTitleElement], typings.std.HTMLTitleElement]
-        ): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setText(value: SVGProps[SVGTextElement]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
-        inline def setTr(
-          value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLTableRowElement], typings.std.HTMLTableRowElement]
-        ): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+        inline def setTextPath(value: SVGProps[SVGTextPathElement]): Self = StObject.set(x, "textPath", value.asInstanceOf[js.Any])
         
-        inline def setTrack(
-          value: DetailedHTMLProps[TrackHTMLAttributes[typings.std.HTMLTrackElement], typings.std.HTMLTrackElement]
-        ): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+        inline def setTextarea(value: DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement]): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
         
-        inline def setTspan(value: SVGProps[typings.std.SVGTSpanElement]): Self = StObject.set(x, "tspan", value.asInstanceOf[js.Any])
+        inline def setTfoot(value: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]): Self = StObject.set(x, "tfoot", value.asInstanceOf[js.Any])
         
-        inline def setU(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+        inline def setTh(value: DetailedHTMLProps[ThHTMLAttributes[HTMLTableHeaderCellElement], HTMLTableHeaderCellElement]): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
         
-        inline def setUl(
-          value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLUListElement], typings.std.HTMLUListElement]
-        ): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
+        inline def setThead(value: DetailedHTMLProps[HTMLAttributes[HTMLTableSectionElement], HTMLTableSectionElement]): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
         
-        inline def setUse(value: SVGProps[typings.std.SVGUseElement]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+        inline def setTime(value: DetailedHTMLProps[TimeHTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
         
-        inline def setVar(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
+        inline def setTitle(value: DetailedHTMLProps[HTMLAttributes[HTMLTitleElement], HTMLTitleElement]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        inline def setVideo(
-          value: DetailedHTMLProps[VideoHTMLAttributes[typings.std.HTMLVideoElement], typings.std.HTMLVideoElement]
-        ): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+        inline def setTr(value: DetailedHTMLProps[HTMLAttributes[HTMLTableRowElement], HTMLTableRowElement]): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
         
-        inline def setView(value: SVGProps[typings.std.SVGViewElement]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+        inline def setTrack(value: DetailedHTMLProps[TrackHTMLAttributes[HTMLTrackElement], HTMLTrackElement]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
         
-        inline def setWaterfall(value: js.Any): Self = StObject.set(x, "waterfall", value.asInstanceOf[js.Any])
+        inline def setTspan(value: SVGProps[SVGTSpanElement]): Self = StObject.set(x, "tspan", value.asInstanceOf[js.Any])
         
-        inline def setWbr(value: DetailedHTMLProps[HTMLAttributes[typings.std.HTMLElement], typings.std.HTMLElement]): Self = StObject.set(x, "wbr", value.asInstanceOf[js.Any])
+        inline def setU(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
         
-        inline def setWeb(value: js.Any): Self = StObject.set(x, "web", value.asInstanceOf[js.Any])
+        inline def setUl(value: DetailedHTMLProps[HTMLAttributes[HTMLUListElement], HTMLUListElement]): Self = StObject.set(x, "ul", value.asInstanceOf[js.Any])
         
-        inline def `setWeb-view`(value: js.Any): Self = StObject.set(x, "web-view", value.asInstanceOf[js.Any])
+        inline def setUse(value: SVGProps[SVGUseElement]): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
         
-        inline def setWebview(
-          value: DetailedHTMLProps[
-                  WebViewHTMLAttributes[typings.rax.HTMLWebViewElement], 
-                  typings.rax.HTMLWebViewElement
-                ]
-        ): Self = StObject.set(x, "webview", value.asInstanceOf[js.Any])
+        inline def setVar(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
+        
+        inline def setVideo(value: DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+        
+        inline def setView(value: SVGProps[SVGViewElement]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+        
+        inline def `setVoip-room`(value: Any): Self = StObject.set(x, "voip-room", value.asInstanceOf[js.Any])
+        
+        inline def setWaterfall(value: Any): Self = StObject.set(x, "waterfall", value.asInstanceOf[js.Any])
+        
+        inline def setWbr(value: DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement]): Self = StObject.set(x, "wbr", value.asInstanceOf[js.Any])
+        
+        inline def setWeb(value: Any): Self = StObject.set(x, "web", value.asInstanceOf[js.Any])
+        
+        inline def `setWeb-view`(value: Any): Self = StObject.set(x, "web-view", value.asInstanceOf[js.Any])
+        
+        inline def setWebview(value: DetailedHTMLProps[WebViewHTMLAttributes[HTMLWebViewElement], HTMLWebViewElement]): Self = StObject.set(x, "webview", value.asInstanceOf[js.Any])
       }
     }
     
     // We can't recurse forever because `type` can't be self-referential;
     // let's assume it's reasonable to do a single Rax.lazy() around a single Rax.memo() / vice-versa
-    type LibraryManagedAttributes[C, P] = RaxManagedAttributes[js.Any | C, P]
+    type LibraryManagedAttributes[C, P] = RaxManagedAttributes[Any | C, P]
   }
 }

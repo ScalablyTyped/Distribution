@@ -54,7 +54,7 @@ object anon {
       
       inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      inline def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value*))
     }
   }
   
@@ -100,7 +100,7 @@ object anon {
       
       inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      inline def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value*))
     }
   }
   
@@ -188,7 +188,7 @@ object anon {
       
       inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      inline def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value*))
       
       inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
@@ -296,7 +296,7 @@ object anon {
       
       inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      inline def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Element*): Self = StObject.set(x, "tabs", js.Array(value*))
       
       inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       

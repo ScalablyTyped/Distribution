@@ -33,6 +33,6 @@ object BatchAssociateScramSecretRequest {
     
     inline def setSecretArnList(value: listOfString): Self = StObject.set(x, "SecretArnList", value.asInstanceOf[js.Any])
     
-    inline def setSecretArnListVarargs(value: string*): Self = StObject.set(x, "SecretArnList", js.Array(value :_*))
+    inline def setSecretArnListVarargs(value: string*): Self = StObject.set(x, "SecretArnList", js.Array(value*))
   }
 }

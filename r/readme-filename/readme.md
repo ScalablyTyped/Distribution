@@ -11,9 +11,9 @@ Get a project readme file name
 | Full name          | readme-filename |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 13807 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2670.6666666666665 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/ngryman/readme-filename#readme)

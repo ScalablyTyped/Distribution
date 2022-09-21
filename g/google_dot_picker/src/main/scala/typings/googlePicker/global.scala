@@ -1,6 +1,6 @@
 package typings.googlePicker
 
-import typings.googlePicker.google.picker.Picker
+import typings.googlePicker.google.picker.ViewId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,26 +11,21 @@ object global {
     
     object picker {
       
-      object Action {
+      @JSGlobal("google.picker.Action")
+      @js.native
+      object Action extends StObject {
         
-        @JSGlobal("google.picker.Action")
-        @js.native
-        val ^ : js.Any = js.native
+        @JSBracketAccess
+        def apply(value: String): js.UndefOr[typings.googlePicker.google.picker.Action & String] = js.native
         
-        @JSGlobal("google.picker.Action.CANCEL")
-        @js.native
-        def CANCEL: String = js.native
-        inline def CANCEL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCEL")(x.asInstanceOf[js.Any])
+        /* "cancel" */ val CANCEL: typings.googlePicker.google.picker.Action.CANCEL & String = js.native
         
-        @JSGlobal("google.picker.Action.PICKED")
-        @js.native
-        def PICKED: String = js.native
-        inline def PICKED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PICKED")(x.asInstanceOf[js.Any])
+        /* "picked" */ val PICKED: typings.googlePicker.google.picker.Action.PICKED & String = js.native
       }
       
       @JSGlobal("google.picker.DocsUploadView")
       @js.native
-      class DocsUploadView ()
+      open class DocsUploadView ()
         extends StObject
            with typings.googlePicker.google.picker.DocsUploadView {
         
@@ -38,7 +33,7 @@ object global {
         /* CompleteClass */
         override def setIncludeFolders(included: Boolean): typings.googlePicker.google.picker.DocsUploadView = js.native
         
-        // Sets the upload destination to the specified folder. This overrides ".setIncludeFolders" to false.
+        // Sets the upload destination to the specified folder. This overrides `.setIncludeFolders` to false.
         /* CompleteClass */
         override def setParent(parentId: String): typings.googlePicker.google.picker.DocsUploadView = js.native
       }
@@ -46,443 +41,222 @@ object global {
       @JSGlobal("google.picker.DocsView")
       @js.native
       // Constructor. The ViewId must be one of the Google Drive views. Default is ViewId.DOCS.
-      class DocsView ()
+      open class DocsView ()
         extends StObject
            with typings.googlePicker.google.picker.DocsView {
-        def this(viewId: String) = this()
+        def this(viewId: ViewId) = this()
       }
       
-      object DocsViewMode {
+      @JSGlobal("google.picker.DocsViewMode")
+      @js.native
+      object DocsViewMode extends StObject {
         
-        @JSGlobal("google.picker.DocsViewMode")
-        @js.native
-        val ^ : js.Any = js.native
+        @JSBracketAccess
+        def apply(value: String): js.UndefOr[typings.googlePicker.google.picker.DocsViewMode & String] = js.native
         
-        // Display documents in a thumbnail grid.
-        @JSGlobal("google.picker.DocsViewMode.GRID")
-        @js.native
-        def GRID: String = js.native
-        inline def GRID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRID")(x.asInstanceOf[js.Any])
+        /* "grid" */ val GRID: typings.googlePicker.google.picker.DocsViewMode.GRID & String = js.native
         
-        // Display documents in a detailed list.
-        @JSGlobal("google.picker.DocsViewMode.LIST")
-        @js.native
-        def LIST: String = js.native
-        inline def LIST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST")(x.asInstanceOf[js.Any])
+        /* "list" */ val LIST: typings.googlePicker.google.picker.DocsViewMode.LIST & String = js.native
       }
       
-      object Document {
+      @JSGlobal("google.picker.Document")
+      @js.native
+      object Document extends StObject {
         
-        @JSGlobal("google.picker.Document")
-        @js.native
-        val ^ : js.Any = js.native
+        @JSBracketAccess
+        def apply(value: String): js.UndefOr[typings.googlePicker.google.picker.Document & String] = js.native
         
-        @JSGlobal("google.picker.Document.ADDRESS_LINES")
-        @js.native
-        def ADDRESS_LINES: String = js.native
-        inline def ADDRESS_LINES_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADDRESS_LINES")(x.asInstanceOf[js.Any])
+        /* "addressLines" */ val ADDRESS_LINES: typings.googlePicker.google.picker.Document.ADDRESS_LINES & String = js.native
         
-        @JSGlobal("google.picker.Document.AUDIENCE")
-        @js.native
-        def AUDIENCE: String = js.native
-        inline def AUDIENCE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUDIENCE")(x.asInstanceOf[js.Any])
+        /* "audience" */ val AUDIENCE: typings.googlePicker.google.picker.Document.AUDIENCE & String = js.native
         
-        @JSGlobal("google.picker.Document.DESCRIPTION")
-        @js.native
-        def DESCRIPTION: String = js.native
-        inline def DESCRIPTION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DESCRIPTION")(x.asInstanceOf[js.Any])
+        /* "description" */ val DESCRIPTION: typings.googlePicker.google.picker.Document.DESCRIPTION & String = js.native
         
-        @JSGlobal("google.picker.Document.DURATION")
-        @js.native
-        def DURATION: String = js.native
-        inline def DURATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DURATION")(x.asInstanceOf[js.Any])
+        /* "duration" */ val DURATION: typings.googlePicker.google.picker.Document.DURATION & String = js.native
         
-        @JSGlobal("google.picker.Document.EMBEDDABLE_URL")
-        @js.native
-        def EMBEDDABLE_URL: String = js.native
-        inline def EMBEDDABLE_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EMBEDDABLE_URL")(x.asInstanceOf[js.Any])
+        /* "embedUrl" */ val EMBEDDABLE_URL: typings.googlePicker.google.picker.Document.EMBEDDABLE_URL & String = js.native
         
-        @JSGlobal("google.picker.Document.ICON_URL")
-        @js.native
-        def ICON_URL: String = js.native
-        inline def ICON_URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_URL")(x.asInstanceOf[js.Any])
+        /* "iconUrl" */ val ICON_URL: typings.googlePicker.google.picker.Document.ICON_URL & String = js.native
         
-        @JSGlobal("google.picker.Document.ID")
-        @js.native
-        def ID: String = js.native
-        inline def ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ID")(x.asInstanceOf[js.Any])
+        /* "id" */ val ID: typings.googlePicker.google.picker.Document.ID & String = js.native
         
-        @JSGlobal("google.picker.Document.IS_NEW")
-        @js.native
-        def IS_NEW: String = js.native
-        inline def IS_NEW_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IS_NEW")(x.asInstanceOf[js.Any])
+        /* "isNew" */ val IS_NEW: typings.googlePicker.google.picker.Document.IS_NEW & String = js.native
         
-        @JSGlobal("google.picker.Document.LAST_EDITED_UTC")
-        @js.native
-        def LAST_EDITED_UTC: String = js.native
-        inline def LAST_EDITED_UTC_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LAST_EDITED_UTC")(x.asInstanceOf[js.Any])
+        /* "lastEditedUtc" */ val LAST_EDITED_UTC: typings.googlePicker.google.picker.Document.LAST_EDITED_UTC & String = js.native
         
-        @JSGlobal("google.picker.Document.LATITUDE")
-        @js.native
-        def LATITUDE: String = js.native
-        inline def LATITUDE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LATITUDE")(x.asInstanceOf[js.Any])
+        /* "latitude" */ val LATITUDE: typings.googlePicker.google.picker.Document.LATITUDE & String = js.native
         
-        @JSGlobal("google.picker.Document.LONGITUDE")
-        @js.native
-        def LONGITUDE: String = js.native
-        inline def LONGITUDE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LONGITUDE")(x.asInstanceOf[js.Any])
+        /* "longitude" */ val LONGITUDE: typings.googlePicker.google.picker.Document.LONGITUDE & String = js.native
         
-        @JSGlobal("google.picker.Document.MIME_TYPE")
-        @js.native
-        def MIME_TYPE: String = js.native
-        inline def MIME_TYPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIME_TYPE")(x.asInstanceOf[js.Any])
+        /* "mimeType" */ val MIME_TYPE: typings.googlePicker.google.picker.Document.MIME_TYPE & String = js.native
         
-        @JSGlobal("google.picker.Document.NAME")
-        @js.native
-        def NAME: String = js.native
-        inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
+        /* "name" */ val NAME: typings.googlePicker.google.picker.Document.NAME & String = js.native
         
-        @JSGlobal("google.picker.Document.NUM_CHILDREN")
-        @js.native
-        def NUM_CHILDREN: String = js.native
-        inline def NUM_CHILDREN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUM_CHILDREN")(x.asInstanceOf[js.Any])
+        /* "numChildren" */ val NUM_CHILDREN: typings.googlePicker.google.picker.Document.NUM_CHILDREN & String = js.native
         
-        @JSGlobal("google.picker.Document.PARENT_ID")
-        @js.native
-        def PARENT_ID: String = js.native
-        inline def PARENT_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PARENT_ID")(x.asInstanceOf[js.Any])
+        /* "parentId" */ val PARENT_ID: typings.googlePicker.google.picker.Document.PARENT_ID & String = js.native
         
-        @JSGlobal("google.picker.Document.PHONE_NUMBERS")
-        @js.native
-        def PHONE_NUMBERS: String = js.native
-        inline def PHONE_NUMBERS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PHONE_NUMBERS")(x.asInstanceOf[js.Any])
+        /* "phoneNumbers" */ val PHONE_NUMBERS: typings.googlePicker.google.picker.Document.PHONE_NUMBERS & String = js.native
         
-        @JSGlobal("google.picker.Document.SERVICE_ID")
-        @js.native
-        def SERVICE_ID: String = js.native
-        inline def SERVICE_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SERVICE_ID")(x.asInstanceOf[js.Any])
+        /* "serviceId" */ val SERVICE_ID: typings.googlePicker.google.picker.Document.SERVICE_ID & String = js.native
         
-        @JSGlobal("google.picker.Document.THUMBNAILS")
-        @js.native
-        def THUMBNAILS: String = js.native
-        inline def THUMBNAILS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THUMBNAILS")(x.asInstanceOf[js.Any])
+        /* "thumbnails" */ val THUMBNAILS: typings.googlePicker.google.picker.Document.THUMBNAILS & String = js.native
         
-        @JSGlobal("google.picker.Document.TYPE")
-        @js.native
-        def TYPE: String = js.native
-        inline def TYPE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE")(x.asInstanceOf[js.Any])
+        /* "type" */ val TYPE: typings.googlePicker.google.picker.Document.TYPE & String = js.native
         
-        @JSGlobal("google.picker.Document.URL")
-        @js.native
-        def URL: String = js.native
-        inline def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
+        /* "url" */ val URL: typings.googlePicker.google.picker.Document.URL & String = js.native
       }
       
-      object Feature {
+      @JSGlobal("google.picker.Feature")
+      @js.native
+      object Feature extends StObject {
         
-        @JSGlobal("google.picker.Feature")
-        @js.native
-        val ^ : js.Any = js.native
+        @JSBracketAccess
+        def apply(value: String): js.UndefOr[typings.googlePicker.google.picker.Feature & String] = js.native
         
-        // Show only documents owned by the user when showing items from Google Drive.
-        @JSGlobal("google.picker.Feature.MINE_ONLY")
-        @js.native
-        def MINE_ONLY: String = js.native
-        inline def MINE_ONLY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MINE_ONLY")(x.asInstanceOf[js.Any])
+        /* "mineOnly" */ val MINE_ONLY: typings.googlePicker.google.picker.Feature.MINE_ONLY & String = js.native
         
-        // Allow user to choose more than one item.
-        @JSGlobal("google.picker.Feature.MULTISELECT_ENABLED")
-        @js.native
-        def MULTISELECT_ENABLED: String = js.native
-        inline def MULTISELECT_ENABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MULTISELECT_ENABLED")(x.asInstanceOf[js.Any])
+        /* "multiselectEnabled" */ val MULTISELECT_ENABLED: typings.googlePicker.google.picker.Feature.MULTISELECT_ENABLED & String = js.native
         
-        // Hide the navigation pane. If the navigation pane is hidden, users can only select from the first view chosen.
-        @JSGlobal("google.picker.Feature.NAV_HIDDEN")
-        @js.native
-        def NAV_HIDDEN: String = js.native
-        inline def NAV_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAV_HIDDEN")(x.asInstanceOf[js.Any])
+        /* "navHidden" */ val NAV_HIDDEN: typings.googlePicker.google.picker.Feature.NAV_HIDDEN & String = js.native
         
-        // For photo uploads, controls whether per-photo selection (as opposed to per-album) selection is enabled.
-        @JSGlobal("google.picker.Feature.SIMPLE_UPLOAD_ENABLED")
-        @js.native
-        def SIMPLE_UPLOAD_ENABLED: String = js.native
-        inline def SIMPLE_UPLOAD_ENABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIMPLE_UPLOAD_ENABLED")(x.asInstanceOf[js.Any])
+        /* "simpleUploadEnabled" */ val SIMPLE_UPLOAD_ENABLED: typings.googlePicker.google.picker.Feature.SIMPLE_UPLOAD_ENABLED & String = js.native
         
-        // Whether Team Drive items should be included in results.
-        @JSGlobal("google.picker.Feature.SUPPORT_TEAM_DRIVES")
-        @js.native
-        def SUPPORT_TEAM_DRIVES: String = js.native
-        inline def SUPPORT_TEAM_DRIVES_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUPPORT_TEAM_DRIVES")(x.asInstanceOf[js.Any])
+        /* "sdr" */ val SUPPORT_DRIVES: typings.googlePicker.google.picker.Feature.SUPPORT_DRIVES & String = js.native
+        
+        /* "std" */ val SUPPORT_TEAM_DRIVES: typings.googlePicker.google.picker.Feature.SUPPORT_TEAM_DRIVES & String = js.native
       }
       
       @JSGlobal("google.picker.PickerBuilder")
       @js.native
-      class PickerBuilder ()
+      open class PickerBuilder ()
         extends StObject
-           with typings.googlePicker.google.picker.PickerBuilder {
+           with typings.googlePicker.google.picker.PickerBuilder
+      
+      @JSGlobal("google.picker.Response")
+      @js.native
+      object Response extends StObject {
         
-        // Add a View to the navigation pane.
-        /* CompleteClass */
-        override def addView(viewOrId: js.Any): typings.googlePicker.google.picker.PickerBuilder = js.native
+        @JSBracketAccess
+        def apply(value: String): js.UndefOr[typings.googlePicker.google.picker.Response & String] = js.native
         
-        // Add a ViewGroup to the top-level navigation pane.
-        /* CompleteClass */
-        override def addViewGroup(viewGroup: js.Any): typings.googlePicker.google.picker.PickerBuilder = js.native
+        /* "action" */ val ACTION: typings.googlePicker.google.picker.Response.ACTION & String = js.native
         
-        // Construct the Picker object. The Picker object is returned.
-        /* CompleteClass */
-        override def build(): Picker = js.native
+        /* "docs" */ val DOCUMENTS: typings.googlePicker.google.picker.Response.DOCUMENTS & String = js.native
         
-        // Disable a picker feature.
-        /* CompleteClass */
-        override def disableFeature(feature: String): typings.googlePicker.google.picker.PickerBuilder = js.native
+        /* "parents" */ val PARENTS: typings.googlePicker.google.picker.Response.PARENTS & String = js.native
         
-        // Enable a picker feature.
-        /* CompleteClass */
-        override def enableFeature(feature: String): typings.googlePicker.google.picker.PickerBuilder = js.native
-        
-        // Get the relay URL, used for gadgets.rpc.
-        /* CompleteClass */
-        override def getRelayUrl(): String = js.native
-        
-        // Get the dialog title.
-        /* CompleteClass */
-        override def getTitle(): String = js.native
-        
-        // Disable the title bar from being shown. To re-enable, call setTitle with a non-empty title or undefined.
-        /* CompleteClass */
-        override def hideTitleBar(): typings.googlePicker.google.picker.PickerBuilder = js.native
-        
-        // Check if a picker Feature is enabled.
-        /* CompleteClass */
-        override def isFeatureEnabled(feature: String): Boolean = js.native
-        
-        // Sets the Google Drive App ID needed to allow application to access the user's files via the Google Drive API.
-        /* CompleteClass */
-        override def setAppId(appId: String): typings.googlePicker.google.picker.PickerBuilder = js.native
-        
-        // Set the callback method called when the user picks and item (or items), or cancels. The callback method receives a single callback object. The structure of the callback object is described in the JSON Guide.
-        /* CompleteClass */
-        override def setCallback(method: js.Function): typings.googlePicker.google.picker.PickerBuilder = js.native
-        
-        // Sets the Browser API key obtained from Google Developers Console. See the Developer's Guide for details on how to obtain the Browser API key.
-        /* CompleteClass */
-        override def setDeveloperKey(key: String): typings.googlePicker.google.picker.PickerBuilder = js.native
-        
-        // Set the document.
-        /* CompleteClass */
-        override def setDocument(document: String): typings.googlePicker.google.picker.PickerBuilder = js.native
-        
-        // ISO 639 language code. If the language is not supported, en-US is used. This method provides an alternative to setting the locale at google.load() time. See the Developer's Guide for a list of supported locales.
-        /* CompleteClass */
-        override def setLocale(locale: String): typings.googlePicker.google.picker.PickerBuilder = js.native
-        
-        // Sets the maximum number of items a user can pick.
-        /* CompleteClass */
-        override def setMaxItems(max: Double): typings.googlePicker.google.picker.PickerBuilder = js.native
-        
-        // Sets an OAuth token to use for authenticating the current user. Depending on the scope of the token, only certain views will display data. Valid scopes are Google Docs, Drive, Photos, YouTube.
-        /* CompleteClass */
-        override def setOAuthToken(token: String): typings.googlePicker.google.picker.PickerBuilder = js.native
-        
-        // Sets the origin of picker dialog. The origin should be set to the window.location.protocol + '//' + window.location.host of the top-most page, if your application is running in an iframe.
-        /* CompleteClass */
-        override def setOrigin(origin: String): typings.googlePicker.google.picker.PickerBuilder = js.native
-        
-        // Set the relay URL, used for gadgets.rpc.
-        /* CompleteClass */
-        override def setRelayUrl(url: String): typings.googlePicker.google.picker.PickerBuilder = js.native
-        
-        // Set the list of MIME types which will be selectable. Use commas to separate MIME types if more than one is required.
-        /* CompleteClass */
-        override def setSelectableMimeTypes(`type`: String): typings.googlePicker.google.picker.PickerBuilder = js.native
-        
-        // Set the preferred dialog size. The dialog will be auto-centered. It has a minimum size of (566,350) and a maximum size of (1051,650).
-        /* CompleteClass */
-        override def setSize(width: Double, height: Double): typings.googlePicker.google.picker.PickerBuilder = js.native
-        
-        // Set the dialog title.
-        /* CompleteClass */
-        override def setTitle(title: String): typings.googlePicker.google.picker.PickerBuilder = js.native
-        
-        // Specify an album ID for photo uploads. See Picasa Web Albums Data API documentation for more information about albums.
-        /* CompleteClass */
-        override def setUploadToAlbumId(albumId: String): typings.googlePicker.google.picker.PickerBuilder = js.native
-        
-        // Returns the URI generated by this builder.
-        /* CompleteClass */
-        override def toUri(): String = js.native
+        /* "viewToken" */ val VIEW: typings.googlePicker.google.picker.Response.VIEW & String = js.native
       }
       
-      object Response {
+      @JSGlobal("google.picker.ServiceId")
+      @js.native
+      object ServiceId extends StObject {
         
-        @JSGlobal("google.picker.Response")
-        @js.native
-        val ^ : js.Any = js.native
+        @JSBracketAccess
+        def apply(value: String): js.UndefOr[typings.googlePicker.google.picker.ServiceId & String] = js.native
         
-        @JSGlobal("google.picker.Response.ACTION")
-        @js.native
-        def ACTION: String = js.native
-        inline def ACTION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTION")(x.asInstanceOf[js.Any])
+        /* "docs" */ val DOCS: typings.googlePicker.google.picker.ServiceId.DOCS & String = js.native
         
-        @JSGlobal("google.picker.Response.DOCUMENTS")
-        @js.native
-        def DOCUMENTS: String = js.native
-        inline def DOCUMENTS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOCUMENTS")(x.asInstanceOf[js.Any])
+        /* "maps" */ val MAPS: typings.googlePicker.google.picker.ServiceId.MAPS & String = js.native
         
-        @JSGlobal("google.picker.Response.PARENTS")
-        @js.native
-        def PARENTS: String = js.native
-        inline def PARENTS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PARENTS")(x.asInstanceOf[js.Any])
+        /* "picasa" */ val PHOTOS: typings.googlePicker.google.picker.ServiceId.PHOTOS & String = js.native
         
-        @JSGlobal("google.picker.Response.VIEW")
-        @js.native
-        def VIEW: String = js.native
-        inline def VIEW_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIEW")(x.asInstanceOf[js.Any])
+        /* "search-api" */ val SEARCH_API: typings.googlePicker.google.picker.ServiceId.SEARCH_API & String = js.native
+        
+        /* "url" */ val URL: typings.googlePicker.google.picker.ServiceId.URL & String = js.native
+        
+        /* "youtube" */ val YOUTUBE: typings.googlePicker.google.picker.ServiceId.YOUTUBE & String = js.native
       }
       
-      object Type {
+      @JSGlobal("google.picker.Thumbnail")
+      @js.native
+      object Thumbnail extends StObject {
         
-        @JSGlobal("google.picker.Type")
-        @js.native
-        val ^ : js.Any = js.native
+        @JSBracketAccess
+        def apply(value: String): js.UndefOr[typings.googlePicker.google.picker.Thumbnail & String] = js.native
         
-        @JSGlobal("google.picker.Type.ALBUM")
-        @js.native
-        def ALBUM: String = js.native
-        inline def ALBUM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALBUM")(x.asInstanceOf[js.Any])
+        /* "height" */ val HEIGHT: typings.googlePicker.google.picker.Thumbnail.HEIGHT & String = js.native
         
-        @JSGlobal("google.picker.Type.DOCUMENT")
-        @js.native
-        def DOCUMENT: String = js.native
-        inline def DOCUMENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOCUMENT")(x.asInstanceOf[js.Any])
+        /* "url" */ val URL: typings.googlePicker.google.picker.Thumbnail.URL & String = js.native
         
-        @JSGlobal("google.picker.Type.LOCATION")
-        @js.native
-        def LOCATION: String = js.native
-        inline def LOCATION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LOCATION")(x.asInstanceOf[js.Any])
-        
-        @JSGlobal("google.picker.Type.PHOTO")
-        @js.native
-        def PHOTO: String = js.native
-        inline def PHOTO_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PHOTO")(x.asInstanceOf[js.Any])
-        
-        @JSGlobal("google.picker.Type.URL")
-        @js.native
-        def URL: String = js.native
-        inline def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
-        
-        @JSGlobal("google.picker.Type.VIDEO")
-        @js.native
-        def VIDEO: String = js.native
-        inline def VIDEO_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIDEO")(x.asInstanceOf[js.Any])
+        /* "width" */ val WIDTH: typings.googlePicker.google.picker.Thumbnail.WIDTH & String = js.native
       }
       
-      object ViewId {
+      @JSGlobal("google.picker.Type")
+      @js.native
+      object Type extends StObject {
         
-        @JSGlobal("google.picker.ViewId")
-        @js.native
-        val ^ : js.Any = js.native
+        @JSBracketAccess
+        def apply(value: String): js.UndefOr[typings.googlePicker.google.picker.Type & String] = js.native
         
-        @JSGlobal("google.picker.ViewId.DOCS")
-        @js.native
-        def DOCS: String = js.native
-        inline def DOCS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOCS")(x.asInstanceOf[js.Any])
+        /* "album" */ val ALBUM: typings.googlePicker.google.picker.Type.ALBUM & String = js.native
         
-        @JSGlobal("google.picker.ViewId.DOCS_IMAGES")
-        @js.native
-        def DOCS_IMAGES: String = js.native
-        inline def DOCS_IMAGES_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOCS_IMAGES")(x.asInstanceOf[js.Any])
+        /* "document" */ val DOCUMENT: typings.googlePicker.google.picker.Type.DOCUMENT & String = js.native
         
-        @JSGlobal("google.picker.ViewId.DOCS_IMAGES_AND_VIDEOS")
-        @js.native
-        def DOCS_IMAGES_AND_VIDEOS: String = js.native
-        inline def DOCS_IMAGES_AND_VIDEOS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOCS_IMAGES_AND_VIDEOS")(x.asInstanceOf[js.Any])
+        /* "location" */ val LOCATION: typings.googlePicker.google.picker.Type.LOCATION & String = js.native
         
-        @JSGlobal("google.picker.ViewId.DOCS_VIDEOS")
-        @js.native
-        def DOCS_VIDEOS: String = js.native
-        inline def DOCS_VIDEOS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOCS_VIDEOS")(x.asInstanceOf[js.Any])
+        /* "photo" */ val PHOTO: typings.googlePicker.google.picker.Type.PHOTO & String = js.native
         
-        @JSGlobal("google.picker.ViewId.DOCUMENTS")
-        @js.native
-        def DOCUMENTS: String = js.native
-        inline def DOCUMENTS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOCUMENTS")(x.asInstanceOf[js.Any])
+        /* "url" */ val URL: typings.googlePicker.google.picker.Type.URL & String = js.native
         
-        @JSGlobal("google.picker.ViewId.DRAWINGS")
-        @js.native
-        def DRAWINGS: String = js.native
-        inline def DRAWINGS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRAWINGS")(x.asInstanceOf[js.Any])
+        /* "video" */ val VIDEO: typings.googlePicker.google.picker.Type.VIDEO & String = js.native
+      }
+      
+      @JSGlobal("google.picker.ViewGroup")
+      @js.native
+      open class ViewGroup protected ()
+        extends StObject
+           with typings.googlePicker.google.picker.ViewGroup {
+        // Constructor. A ViewGroup is a visual grouping of Views in the navigation pane. The root item of the ViewGroup itself must be View.
+        def this(viewOrId: typings.googlePicker.google.picker.DocsView) = this()
+        def this(viewOrId: ViewId) = this()
+      }
+      
+      @JSGlobal("google.picker.ViewId")
+      @js.native
+      object ViewId extends StObject {
         
-        @JSGlobal("google.picker.ViewId.FOLDERS")
-        @js.native
-        def FOLDERS: String = js.native
-        inline def FOLDERS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOLDERS")(x.asInstanceOf[js.Any])
+        @JSBracketAccess
+        def apply(value: String): js.UndefOr[typings.googlePicker.google.picker.ViewId & String] = js.native
         
-        @JSGlobal("google.picker.ViewId.FORMS")
-        @js.native
-        def FORMS: String = js.native
-        inline def FORMS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORMS")(x.asInstanceOf[js.Any])
+        /* "all" */ val DOCS: typings.googlePicker.google.picker.ViewId.DOCS & String = js.native
         
-        @JSGlobal("google.picker.ViewId.IMAGE_SEARCH")
-        @js.native
-        def IMAGE_SEARCH: String = js.native
-        inline def IMAGE_SEARCH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMAGE_SEARCH")(x.asInstanceOf[js.Any])
+        /* "docs-images" */ val DOCS_IMAGES: typings.googlePicker.google.picker.ViewId.DOCS_IMAGES & String = js.native
         
-        @JSGlobal("google.picker.ViewId.MAPS")
-        @js.native
-        def MAPS: String = js.native
-        inline def MAPS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAPS")(x.asInstanceOf[js.Any])
+        /* "docs-images-and-videos" */ val DOCS_IMAGES_AND_VIDEOS: typings.googlePicker.google.picker.ViewId.DOCS_IMAGES_AND_VIDEOS & String = js.native
         
-        @JSGlobal("google.picker.ViewId.PDFS")
-        @js.native
-        def PDFS: String = js.native
-        inline def PDFS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PDFS")(x.asInstanceOf[js.Any])
+        /* "docs-videos" */ val DOCS_VIDEOS: typings.googlePicker.google.picker.ViewId.DOCS_VIDEOS & String = js.native
         
-        @JSGlobal("google.picker.ViewId.PHOTOS")
-        @js.native
-        def PHOTOS: String = js.native
-        inline def PHOTOS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PHOTOS")(x.asInstanceOf[js.Any])
+        /* "documents" */ val DOCUMENTS: typings.googlePicker.google.picker.ViewId.DOCUMENTS & String = js.native
         
-        @JSGlobal("google.picker.ViewId.PHOTO_ALBUMS")
-        @js.native
-        def PHOTO_ALBUMS: String = js.native
-        inline def PHOTO_ALBUMS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PHOTO_ALBUMS")(x.asInstanceOf[js.Any])
+        /* "drawings" */ val DRAWINGS: typings.googlePicker.google.picker.ViewId.DRAWINGS & String = js.native
         
-        @JSGlobal("google.picker.ViewId.PHOTO_UPLOAD")
-        @js.native
-        def PHOTO_UPLOAD: String = js.native
-        inline def PHOTO_UPLOAD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PHOTO_UPLOAD")(x.asInstanceOf[js.Any])
+        /* "folders" */ val FOLDERS: typings.googlePicker.google.picker.ViewId.FOLDERS & String = js.native
         
-        @JSGlobal("google.picker.ViewId.PRESENTATIONS")
-        @js.native
-        def PRESENTATIONS: String = js.native
-        inline def PRESENTATIONS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRESENTATIONS")(x.asInstanceOf[js.Any])
+        /* "forms" */ val FORMS: typings.googlePicker.google.picker.ViewId.FORMS & String = js.native
         
-        @JSGlobal("google.picker.ViewId.RECENTLY_PICKED")
-        @js.native
-        def RECENTLY_PICKED: String = js.native
-        inline def RECENTLY_PICKED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RECENTLY_PICKED")(x.asInstanceOf[js.Any])
+        /* "image-search" */ val IMAGE_SEARCH: typings.googlePicker.google.picker.ViewId.IMAGE_SEARCH & String = js.native
         
-        @JSGlobal("google.picker.ViewId.SPREADSHEETS")
-        @js.native
-        def SPREADSHEETS: String = js.native
-        inline def SPREADSHEETS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPREADSHEETS")(x.asInstanceOf[js.Any])
+        /* "pdfs" */ val PDFS: typings.googlePicker.google.picker.ViewId.PDFS & String = js.native
         
-        @JSGlobal("google.picker.ViewId.VIDEO_SEARCH")
-        @js.native
-        def VIDEO_SEARCH: String = js.native
-        inline def VIDEO_SEARCH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIDEO_SEARCH")(x.asInstanceOf[js.Any])
+        /* "photos" */ val PHOTOS: typings.googlePicker.google.picker.ViewId.PHOTOS & String = js.native
         
-        @JSGlobal("google.picker.ViewId.WEBCAM")
-        @js.native
-        def WEBCAM: String = js.native
-        inline def WEBCAM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEBCAM")(x.asInstanceOf[js.Any])
+        /* "photo-albums" */ val PHOTO_ALBUMS: typings.googlePicker.google.picker.ViewId.PHOTO_ALBUMS & String = js.native
         
-        @JSGlobal("google.picker.ViewId.YOUTUBE")
-        @js.native
-        def YOUTUBE: String = js.native
-        inline def YOUTUBE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YOUTUBE")(x.asInstanceOf[js.Any])
+        /* "photo-upload" */ val PHOTO_UPLOAD: typings.googlePicker.google.picker.ViewId.PHOTO_UPLOAD & String = js.native
+        
+        /* "presentations" */ val PRESENTATIONS: typings.googlePicker.google.picker.ViewId.PRESENTATIONS & String = js.native
+        
+        /* "recently-picked" */ val RECENTLY_PICKED: typings.googlePicker.google.picker.ViewId.RECENTLY_PICKED & String = js.native
+        
+        /* "spreadsheets" */ val SPREADSHEETS: typings.googlePicker.google.picker.ViewId.SPREADSHEETS & String = js.native
+        
+        /* "video-search" */ val VIDEO_SEARCH: typings.googlePicker.google.picker.ViewId.VIDEO_SEARCH & String = js.native
+        
+        /* "webcam" */ val WEBCAM: typings.googlePicker.google.picker.ViewId.WEBCAM & String = js.native
+        
+        /* "youtube" */ val YOUTUBE: typings.googlePicker.google.picker.ViewId.YOUTUBE & String = js.native
       }
     }
   }

@@ -10,5 +10,5 @@ trait ToggleButtonFactory
   extends Factory[
       ToggleButtonConstructor, 
       InstanceType[ToggleButtonConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[ToggleButtonConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

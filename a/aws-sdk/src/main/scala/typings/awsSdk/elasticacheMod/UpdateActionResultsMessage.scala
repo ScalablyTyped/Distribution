@@ -29,12 +29,12 @@ object UpdateActionResultsMessage {
     
     inline def setProcessedUpdateActionsUndefined: Self = StObject.set(x, "ProcessedUpdateActions", js.undefined)
     
-    inline def setProcessedUpdateActionsVarargs(value: ProcessedUpdateAction*): Self = StObject.set(x, "ProcessedUpdateActions", js.Array(value :_*))
+    inline def setProcessedUpdateActionsVarargs(value: ProcessedUpdateAction*): Self = StObject.set(x, "ProcessedUpdateActions", js.Array(value*))
     
     inline def setUnprocessedUpdateActions(value: UnprocessedUpdateActionList): Self = StObject.set(x, "UnprocessedUpdateActions", value.asInstanceOf[js.Any])
     
     inline def setUnprocessedUpdateActionsUndefined: Self = StObject.set(x, "UnprocessedUpdateActions", js.undefined)
     
-    inline def setUnprocessedUpdateActionsVarargs(value: UnprocessedUpdateAction*): Self = StObject.set(x, "UnprocessedUpdateActions", js.Array(value :_*))
+    inline def setUnprocessedUpdateActionsVarargs(value: UnprocessedUpdateAction*): Self = StObject.set(x, "UnprocessedUpdateActions", js.Array(value*))
   }
 }

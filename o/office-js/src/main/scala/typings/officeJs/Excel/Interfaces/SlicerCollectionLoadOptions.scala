@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of all the slicer objects in the workbook or a worksheet.
   *
-  * Represents a collection of all the slicer objects on the workbook or a worksheet.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 trait SlicerCollectionLoadOptions extends StObject {
@@ -19,93 +19,93 @@ trait SlicerCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Represents the caption of the slicer.
     *
-    * For EACH ITEM in the collection: Represents the caption of slicer.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var caption: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents the height, in points, of the slicer.
-    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
+    Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var height: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Represents the unique ID of the slicer.
     *
-    * For EACH ITEM in the collection: Represents the unique id of slicer.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Value is `true` if all filters currently applied on the slicer are cleared.
     *
-    * For EACH ITEM in the collection: True if all filters currently applied on the slicer are cleared.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var isFilterCleared: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents the distance, in points, from the left side of the slicer to the left of the worksheet.
-    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
+    Throws an `InvalidArgument` error when set with a negative value as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var left: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Represents the name of the slicer.
     *
-    * For EACH ITEM in the collection: Represents the name of slicer.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var sortBy: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: Constant value that represents the slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
     *
-    * For EACH ITEM in the collection: Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var style: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the slicer to the top of the worksheet.
-    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
+    Throws an `InvalidArgument` error when set with a negative value as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var top: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents the width, in points, of the slicer.
-    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
+    Throws an `InvalidArgument` error when set with a negative value or zero as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var width: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Represents the worksheet containing the slicer.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined

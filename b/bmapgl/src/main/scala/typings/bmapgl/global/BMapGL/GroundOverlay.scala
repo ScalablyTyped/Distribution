@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.GroundOverlay")
 @js.native
-class GroundOverlay protected ()
+open class GroundOverlay protected ()
   extends StObject
      with typings.bmapgl.BMapGL.GroundOverlay {
   def this(bounds: typings.bmapgl.BMapGL.Bounds) = this()

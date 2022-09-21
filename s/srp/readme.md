@@ -10,9 +10,9 @@ Secure Remote Password (SRP)
 | Full name          | srp |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 868 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 81.33333333333333 |
+| # stars            | 249.0 |
 
 ## Links
 - [Homepage](https://github.com/mozilla/node-srp#readme)

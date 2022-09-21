@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.ToggleButton")
 @js.native
-/* private */ class ToggleButton ()
+/* private */ open class ToggleButton ()
   extends StObject
      with typings.activexAccess.Access.ToggleButton

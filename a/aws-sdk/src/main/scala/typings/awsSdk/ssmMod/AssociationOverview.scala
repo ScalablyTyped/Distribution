@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociationOverview extends StObject {
   
   /**
-    * Returns the number of targets for the association status. For example, if you created an association with two instances, and one of them was successful, this would return the count of instances by status.
+    * Returns the number of targets for the association status. For example, if you created an association with two managed nodes, and one of them was successful, this would return the count of managed nodes by status.
     */
   var AssociationStatusAggregatedCount: js.UndefOr[typings.awsSdk.ssmMod.AssociationStatusAggregatedCount] = js.undefined
   

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.CalendarSharing")
 @js.native
-/* private */ class CalendarSharing ()
+/* private */ open class CalendarSharing ()
   extends StObject
      with typings.activexOutlook.Outlook.CalendarSharing {
   
@@ -46,7 +46,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotCalendarSharing_typekey: typings.activexOutlook.Outlook.CalendarSharing = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var RestrictToWorkingHours: Boolean = js.native

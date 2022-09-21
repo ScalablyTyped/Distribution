@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.KeyBinding")
 @js.native
-/* private */ class KeyBinding ()
+/* private */ open class KeyBinding ()
   extends StObject
      with typings.activexWord.Word.KeyBinding

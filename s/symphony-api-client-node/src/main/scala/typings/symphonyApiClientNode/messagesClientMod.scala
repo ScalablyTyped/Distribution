@@ -12,7 +12,7 @@ object messagesClientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def forwardMessage(conversationId: String, message: String, data: js.Any): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("forwardMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
+  inline def forwardMessage(conversationId: String, message: String, data: Any): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("forwardMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
   inline def getAttachment(streamId: String, attachmentId: String, messageId: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttachment")(streamId.asInstanceOf[js.Any], attachmentId.asInstanceOf[js.Any], messageId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
@@ -20,15 +20,15 @@ object messagesClientMod {
   
   inline def getMessages(streamId: String, since: Double, skip: Double, limit: Double): js.Promise[js.Array[Message]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMessages")(streamId.asInstanceOf[js.Any], since.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Message]]]
   
-  inline def sendMessage(conversationId: String, message: String, data: js.Any, format: String, sessionToken: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
+  inline def sendMessage(conversationId: String, message: String, data: Any, format: String, sessionToken: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
   inline def sendMessageWithAttachment(
     conversationId: String,
     message: String,
-    data: js.Any,
+    data: Any,
     fileName: String,
     fileType: String,
-    fileContent: js.Any,
+    fileContent: Any,
     format: String
   ): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessageWithAttachment")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], fileType.asInstanceOf[js.Any], fileContent.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
@@ -55,7 +55,7 @@ object messagesClientMod {
       
       inline def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -129,7 +129,7 @@ object messagesClientMod {
       
       inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
       
-      inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value*))
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

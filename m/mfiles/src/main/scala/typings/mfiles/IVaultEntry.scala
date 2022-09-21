@@ -8,7 +8,7 @@ trait IVaultEntry extends StObject {
   
   val Events: IVaultEntryEvents
   
-  def NotifyVaultEntry(ID: String, data1: js.Any, data2: js.Any): js.Any
+  def NotifyVaultEntry(ID: String, data1: Any, data2: Any): Any
   
   val Vault: IVault
   
@@ -20,7 +20,7 @@ object IVaultEntry {
   
   inline def apply(
     Events: IVaultEntryEvents,
-    NotifyVaultEntry: (String, js.Any, js.Any) => js.Any,
+    NotifyVaultEntry: (String, Any, Any) => Any,
     Vault: IVault,
     VaultCore: IVaultCore,
     VaultUI: IVaultUI
@@ -33,7 +33,7 @@ object IVaultEntry {
     
     inline def setEvents(value: IVaultEntryEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    inline def setNotifyVaultEntry(value: (String, js.Any, js.Any) => js.Any): Self = StObject.set(x, "NotifyVaultEntry", js.Any.fromFunction3(value))
+    inline def setNotifyVaultEntry(value: (String, Any, Any) => Any): Self = StObject.set(x, "NotifyVaultEntry", js.Any.fromFunction3(value))
     
     inline def setVault(value: IVault): Self = StObject.set(x, "Vault", value.asInstanceOf[js.Any])
     

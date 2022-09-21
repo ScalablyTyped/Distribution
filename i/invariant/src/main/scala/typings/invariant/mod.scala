@@ -15,8 +15,8 @@ object mod extends Shortcut {
   @js.native
   trait InvariantStatic extends StObject {
     
-    def apply(testValue: js.Any, format: String, extra: js.Any*): /* asserts testValue */ Boolean = js.native
-    def apply(testValue: `false`, format: String, extra: js.Any*): scala.Nothing = js.native
+    def apply(testValue: Any, format: String, extra: Any*): /* asserts testValue */ Boolean = js.native
+    def apply(testValue: `false`, format: String, extra: Any*): scala.Nothing = js.native
   }
   
   type _To = InvariantStatic

@@ -11,9 +11,9 @@ A scriptable browser like PhantomJS, based on Firefox
 | Full name          | slimerjs |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 85476 |
-| # stars            | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 8809.333333333334 |
+| # stars            | 2974.0 |
 
 ## Links
 - [Homepage](https://github.com/laurentj/slimerjs#readme)

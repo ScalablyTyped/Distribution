@@ -8,5 +8,5 @@ object smsmessageMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_SMSMessage", "_SMSMessage")
   @js.native
-  val SMSMessage: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SMSMessage: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

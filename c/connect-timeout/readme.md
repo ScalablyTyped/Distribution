@@ -10,9 +10,9 @@ Request timeout middleware for Connect/Express
 | Full name          | connect-timeout |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 122 |
-| # downloads        | 8375888 |
-| # stars            | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 742094.0 |
+| # stars            | 300.0 |
 
 ## Links
 - [Homepage](https://github.com/expressjs/timeout#readme)

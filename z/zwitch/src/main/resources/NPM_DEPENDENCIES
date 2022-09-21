@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "zwitch" : "2.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "zwitch" : "2.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

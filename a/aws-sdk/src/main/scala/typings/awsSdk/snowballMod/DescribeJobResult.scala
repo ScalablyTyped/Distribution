@@ -33,6 +33,6 @@ object DescribeJobResult {
     
     inline def setSubJobMetadataUndefined: Self = StObject.set(x, "SubJobMetadata", js.undefined)
     
-    inline def setSubJobMetadataVarargs(value: JobMetadata*): Self = StObject.set(x, "SubJobMetadata", js.Array(value :_*))
+    inline def setSubJobMetadataVarargs(value: JobMetadata*): Self = StObject.set(x, "SubJobMetadata", js.Array(value*))
   }
 }

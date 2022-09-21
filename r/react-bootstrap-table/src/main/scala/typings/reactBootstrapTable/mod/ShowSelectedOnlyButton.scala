@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap-table", "ShowSelectedOnlyButton")
 @js.native
-class ShowSelectedOnlyButton protected ()
-  extends Component[ShowSelectedButtonProps, js.Object, js.Any] {
+open class ShowSelectedOnlyButton protected ()
+  extends Component[ShowSelectedButtonProps, js.Object, Any] {
   def this(props: ShowSelectedButtonProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ShowSelectedButtonProps, context: js.Any) = this()
+  def this(props: ShowSelectedButtonProps, context: Any) = this()
 }

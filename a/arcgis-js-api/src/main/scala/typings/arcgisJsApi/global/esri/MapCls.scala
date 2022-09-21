@@ -13,10 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html)
   */
-class MapCls ()
+open class MapCls ()
   extends StObject
      with typings.arcgisJsApi.esri.Map {
   def this(properties: MapProperties) = this()
+  
+  /**
+    * Returns a table based on the given table ID.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-TablesMixin.html#findTableById)
+    */
+  /* CompleteClass */
+  override def findTableById(tableId: String): typings.arcgisJsApi.esri.Layer = js.native
   
   /**
     * A collection of [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) instances that are tables saved in a [Map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) and/or a [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html).

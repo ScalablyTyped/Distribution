@@ -1,7 +1,7 @@
 
 # Scala.js typings for has-own-prop
 
-Typings are for version 2.0.0
+Typings are for version 3.1.0
 
 ## Library description:
 A safer `.hasOwnProperty()`
@@ -10,10 +10,10 @@ A safer `.hasOwnProperty()`
 | ------------------ | :-------------: |
 | Full name          | has-own-prop |
 | Keywords           | object, has, own, property |
-| # releases         | 2 |
-| # dependents       | 29 |
-| # downloads        | 3499792 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1504675.0 |
+| # stars            | 31.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/has-own-prop#readme)

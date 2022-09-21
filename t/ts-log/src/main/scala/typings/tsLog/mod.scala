@@ -14,21 +14,21 @@ object mod {
   @js.native
   trait Logger
     extends StObject
-       with /* x */ StringDictionary[js.Any] {
+       with /* x */ StringDictionary[Any] {
     
-    def debug(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def debug(message: Unit, optionalParams: js.Any*): Unit = js.native
+    def debug(message: Any, optionalParams: Any*): Unit = js.native
+    def debug(message: Unit, optionalParams: Any*): Unit = js.native
     
-    def error(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def error(message: Unit, optionalParams: js.Any*): Unit = js.native
+    def error(message: Any, optionalParams: Any*): Unit = js.native
+    def error(message: Unit, optionalParams: Any*): Unit = js.native
     
-    def info(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def info(message: Unit, optionalParams: js.Any*): Unit = js.native
+    def info(message: Any, optionalParams: Any*): Unit = js.native
+    def info(message: Unit, optionalParams: Any*): Unit = js.native
     
-    def trace(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def trace(message: Unit, optionalParams: js.Any*): Unit = js.native
+    def trace(message: Any, optionalParams: Any*): Unit = js.native
+    def trace(message: Unit, optionalParams: Any*): Unit = js.native
     
-    def warn(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def warn(message: Unit, optionalParams: js.Any*): Unit = js.native
+    def warn(message: Any, optionalParams: Any*): Unit = js.native
+    def warn(message: Unit, optionalParams: Any*): Unit = js.native
   }
 }

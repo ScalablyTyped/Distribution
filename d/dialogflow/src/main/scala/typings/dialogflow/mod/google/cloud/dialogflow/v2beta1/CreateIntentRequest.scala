@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new CreateIntentRequest.
   * @param [properties] Properties to set
   */
-class CreateIntentRequest ()
+open class CreateIntentRequest ()
   extends StObject
      with ICreateIntentRequest {
   def this(properties: ICreateIntentRequest) = this()
@@ -37,7 +36,7 @@ class CreateIntentRequest ()
     * Converts this CreateIntentRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object CreateIntentRequest {
   
@@ -54,6 +53,8 @@ object CreateIntentRequest {
   inline def create(): CreateIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CreateIntentRequest]
   inline def create(properties: ICreateIntentRequest): CreateIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CreateIntentRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): CreateIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateIntentRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): CreateIntentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CreateIntentRequest]
   /**
     * Decodes a CreateIntentRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -65,9 +66,8 @@ object CreateIntentRequest {
   /* static member */
   inline def decode(reader: Reader): CreateIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateIntentRequest]
   inline def decode(reader: Reader, length: Double): CreateIntentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CreateIntentRequest]
-  inline def decode(reader: Uint8Array): CreateIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateIntentRequest]
-  inline def decode(reader: Uint8Array, length: Double): CreateIntentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CreateIntentRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): CreateIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateIntentRequest]
   /**
     * Decodes a CreateIntentRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -77,7 +77,6 @@ object CreateIntentRequest {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): CreateIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateIntentRequest]
-  inline def decodeDelimited(reader: Uint8Array): CreateIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateIntentRequest]
   
   /**
     * Encodes the specified CreateIntentRequest message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.CreateIntentRequest.verify|verify} messages.
@@ -105,7 +104,7 @@ object CreateIntentRequest {
     * @returns CreateIntentRequest
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): CreateIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CreateIntentRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): CreateIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CreateIntentRequest]
   
   /**
     * Creates a plain object from a CreateIntentRequest message. Also converts values to other types if specified.
@@ -114,8 +113,8 @@ object CreateIntentRequest {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: CreateIntentRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: CreateIntentRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: CreateIntentRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: CreateIntentRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a CreateIntentRequest message.
@@ -123,5 +122,5 @@ object CreateIntentRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

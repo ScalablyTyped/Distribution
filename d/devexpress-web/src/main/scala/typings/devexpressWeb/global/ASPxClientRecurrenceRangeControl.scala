@@ -1,7 +1,6 @@
 package typings.devexpressWeb.global
 
 import typings.devexpressWeb.ASPxClientEventHandler
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientRecurrenceRangeControl")
 @js.native
-class ASPxClientRecurrenceRangeControl ()
+open class ASPxClientRecurrenceRangeControl ()
   extends StObject
      with typings.devexpressWeb.ASPxClientRecurrenceRangeControl {
   
@@ -32,7 +31,7 @@ class ASPxClientRecurrenceRangeControl ()
     * Gets the recurrence end date.
     */
   /* CompleteClass */
-  override def GetEndDate(): Date = js.native
+  override def GetEndDate(): js.Date = js.native
   
   /**
     * Returns the control's height.
@@ -44,7 +43,7 @@ class ASPxClientRecurrenceRangeControl ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Gets how many times the appointment occurs.
@@ -56,7 +55,7 @@ class ASPxClientRecurrenceRangeControl ()
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Gets the type of the recurrence range.
@@ -107,7 +106,7 @@ class ASPxClientRecurrenceRangeControl ()
     * @param date A JavaScript Date object that specifies the end date for the recurrence.
     */
   /* CompleteClass */
-  override def SetEndDate(date: Date): Unit = js.native
+  override def SetEndDate(date: js.Date): Unit = js.native
   
   /**
     * Specifies the control's height.  Note that this method is not in effect for some controls.

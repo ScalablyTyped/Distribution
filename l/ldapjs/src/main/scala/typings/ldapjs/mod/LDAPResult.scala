@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ldapjs", "LDAPResult")
 @js.native
-class LDAPResult () extends LDAPMessage {
+open class LDAPResult () extends LDAPMessage {
   
-  var connection: js.Any = js.native
+  var connection: Any = js.native
   
   var errorMessage: String = js.native
   

@@ -14,7 +14,7 @@ trait RenderContext extends StObject {
   
   var CurrentLanguage: js.UndefOr[Double] = js.undefined
   
-  var CurrentSelectedItems: js.UndefOr[js.Any] = js.undefined
+  var CurrentSelectedItems: js.UndefOr[Any] = js.undefined
   
   var CurrentUICultureName: js.UndefOr[String] = js.undefined
   
@@ -44,7 +44,7 @@ trait RenderContext extends StObject {
   
   var Templates: js.UndefOr[typings.sharepoint.SPClientTemplates.Templates] = js.undefined
   
-  var onRefreshFailed: js.UndefOr[js.Any] = js.undefined
+  var onRefreshFailed: js.UndefOr[Any] = js.undefined
 }
 object RenderContext {
   
@@ -71,7 +71,7 @@ object RenderContext {
     
     inline def setCurrentLanguageUndefined: Self = StObject.set(x, "CurrentLanguage", js.undefined)
     
-    inline def setCurrentSelectedItems(value: js.Any): Self = StObject.set(x, "CurrentSelectedItems", value.asInstanceOf[js.Any])
+    inline def setCurrentSelectedItems(value: Any): Self = StObject.set(x, "CurrentSelectedItems", value.asInstanceOf[js.Any])
     
     inline def setCurrentSelectedItemsUndefined: Self = StObject.set(x, "CurrentSelectedItems", js.undefined)
     
@@ -89,7 +89,7 @@ object RenderContext {
     
     inline def setOnPostRenderUndefined: Self = StObject.set(x, "OnPostRender", js.undefined)
     
-    inline def setOnPostRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPostRender", js.Array(value :_*))
+    inline def setOnPostRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPostRender", js.Array(value*))
     
     inline def setOnPreRender(value: RenderCallback | js.Array[RenderCallback]): Self = StObject.set(x, "OnPreRender", value.asInstanceOf[js.Any])
     
@@ -97,9 +97,9 @@ object RenderContext {
     
     inline def setOnPreRenderUndefined: Self = StObject.set(x, "OnPreRender", js.undefined)
     
-    inline def setOnPreRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPreRender", js.Array(value :_*))
+    inline def setOnPreRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPreRender", js.Array(value*))
     
-    inline def setOnRefreshFailed(value: js.Any): Self = StObject.set(x, "onRefreshFailed", value.asInstanceOf[js.Any])
+    inline def setOnRefreshFailed(value: Any): Self = StObject.set(x, "onRefreshFailed", value.asInstanceOf[js.Any])
     
     inline def setOnRefreshFailedUndefined: Self = StObject.set(x, "onRefreshFailed", js.undefined)
     

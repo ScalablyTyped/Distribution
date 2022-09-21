@@ -18,7 +18,7 @@ object databaseMod {
   val ^ : js.Any = js.native
   
   inline def default[I /* <: IndexedModelClasses[
-    js.Any, 
+    Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -36,7 +36,7 @@ object databaseMod {
   ]]
   
   inline def createDatabase[I /* <: IndexedModelClasses[
-    js.Any, 
+    Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -54,7 +54,7 @@ object databaseMod {
   ]]
   
   trait Database[I /* <: IndexedModelClasses[
-    js.Any, 
+    Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -105,28 +105,28 @@ object databaseMod {
       *
       * @return a {@link UpdateResult} containing 0 to many {@link QueryResult.rows}.
       */
-    def update(updateSpec: UpdateSpec[js.Any], tx: Transaction, state: OrmState[I]): UpdateResult[I, js.Object]
+    def update(updateSpec: UpdateSpec[Any], tx: Transaction, state: OrmState[I]): UpdateResult[I, js.Object]
   }
   object Database {
     
     inline def apply[I /* <: IndexedModelClasses[
-        js.Any, 
+        Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
         ]
       ] */, Tables](
-      describe: js.Any => /* import warning: importer.ImportType#apply Failed type conversion: Tables[K] */ js.Any,
+      describe: Any => /* import warning: importer.ImportType#apply Failed type conversion: Tables[K] */ js.Any,
       getEmptyState: () => OrmState[I],
       query: (QuerySpec, OrmState[I]) => QueryResult[js.Object],
-      update: (UpdateSpec[js.Any], Transaction, OrmState[I]) => UpdateResult[I, js.Object]
+      update: (UpdateSpec[Any], Transaction, OrmState[I]) => UpdateResult[I, js.Object]
     ): Database[I, Tables] = {
       val __obj = js.Dynamic.literal(describe = js.Any.fromFunction1(describe), getEmptyState = js.Any.fromFunction0(getEmptyState), query = js.Any.fromFunction2(query), update = js.Any.fromFunction3(update))
       __obj.asInstanceOf[Database[I, Tables]]
     }
     
     extension [Self <: Database[?, ?], I /* <: IndexedModelClasses[
-        js.Any, 
+        Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -134,14 +134,14 @@ object databaseMod {
       ] */, Tables](x: Self & (Database[I, Tables])) {
       
       inline def setDescribe(
-        value: js.Any => /* import warning: importer.ImportType#apply Failed type conversion: Tables[K] */ js.Any
+        value: Any => /* import warning: importer.ImportType#apply Failed type conversion: Tables[K] */ js.Any
       ): Self = StObject.set(x, "describe", js.Any.fromFunction1(value))
       
       inline def setGetEmptyState(value: () => OrmState[I]): Self = StObject.set(x, "getEmptyState", js.Any.fromFunction0(value))
       
       inline def setQuery(value: (QuerySpec, OrmState[I]) => QueryResult[js.Object]): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
       
-      inline def setUpdate(value: (UpdateSpec[js.Any], Transaction, OrmState[I]) => UpdateResult[I, js.Object]): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+      inline def setUpdate(value: (UpdateSpec[Any], Transaction, OrmState[I]) => UpdateResult[I, js.Object]): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     }
   }
   
@@ -149,7 +149,7 @@ object databaseMod {
   trait DatabaseCreator extends StObject {
     
     def apply[I /* <: IndexedModelClasses[
-        js.Any, 
+        Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -179,7 +179,7 @@ object databaseMod {
       
       inline def setClauses(value: js.Array[QueryClause[js.Object]]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
       
-      inline def setClausesVarargs(value: QueryClause[js.Object]*): Self = StObject.set(x, "clauses", js.Array(value :_*))
+      inline def setClausesVarargs(value: QueryClause[js.Object]*): Self = StObject.set(x, "clauses", js.Array(value*))
       
       inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
@@ -222,7 +222,7 @@ object databaseMod {
       
       inline def setRows(value: js.Array[Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value*))
     }
   }
   
@@ -246,7 +246,7 @@ object databaseMod {
   type QueryType = /* "REDUX_ORM_FILTER" */ String
   
   trait SchemaSpec[I /* <: IndexedModelClasses[
-    js.Any, 
+    Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -260,7 +260,7 @@ object databaseMod {
   object SchemaSpec {
     
     inline def apply[I /* <: IndexedModelClasses[
-        js.Any, 
+        Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -275,7 +275,7 @@ object databaseMod {
     }
     
     extension [Self <: SchemaSpec[?], I /* <: IndexedModelClasses[
-        js.Any, 
+        Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -312,7 +312,7 @@ object databaseMod {
   }
   
   trait UpdateResult[I /* <: IndexedModelClasses[
-    js.Any, 
+    Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -328,7 +328,7 @@ object databaseMod {
   object UpdateResult {
     
     inline def apply[I /* <: IndexedModelClasses[
-        js.Any, 
+        Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -339,7 +339,7 @@ object databaseMod {
     }
     
     extension [Self <: UpdateResult[?, ?], I /* <: IndexedModelClasses[
-        js.Any, 
+        Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any

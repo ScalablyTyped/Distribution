@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutResourcePolicyRequest extends StObject {
   
   /**
-    * Allows you to specify if you want to use both resource-level and account/catalog-level resource policies. A resource-level policy is a policy attached to an individual resource such as a database or a table. The default value of NO indicates that resource-level policies cannot co-exist with an account-level policy. A value of YES means the use of both resource-level and account/catalog-level resource policies is allowed.
+    * If 'TRUE', indicates that you are using both methods to grant cross-account access to Data Catalog resources:   By directly updating the resource policy with PutResourePolicy    By using the Grant permissions command on the Amazon Web Services Management Console.   Must be set to 'TRUE' if you have already used the Management Console to grant cross-account access, otherwise the call fails. Default is 'FALSE'.
     */
   var EnableHybrid: js.UndefOr[EnableHybridValues] = js.undefined
   
   /**
-    * A value of MUST_EXIST is used to update a policy. A value of NOT_EXIST is used to create a new policy. If a value of NONE or a null value is used, the call will not depend on the existence of a policy.
+    * A value of MUST_EXIST is used to update a policy. A value of NOT_EXIST is used to create a new policy. If a value of NONE or a null value is used, the call does not depend on the existence of a policy.
     */
   var PolicyExistsCondition: js.UndefOr[ExistCondition] = js.undefined
   
@@ -27,7 +27,7 @@ trait PutResourcePolicyRequest extends StObject {
   var PolicyInJson: PolicyJsonString
   
   /**
-    * The ARN of the AWS Glue resource for the resource policy to be set. For more information about AWS Glue resource ARNs, see the AWS Glue ARN string pattern 
+    * Do not use. For internal use only.
     */
   var ResourceArn: js.UndefOr[GlueResourceArn] = js.undefined
 }

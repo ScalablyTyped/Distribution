@@ -44,7 +44,7 @@ object XFileDialog {
     acquire: () => Unit,
     getCurrentFilter: () => String,
     getPath: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setCurrentFilter: String => Unit,
     setFilters: (SeqEquiv[String], SeqEquiv[String]) => Unit,

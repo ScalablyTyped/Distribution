@@ -66,6 +66,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gestalt.gestaltStrings.`ellipsis-circle-outline`
   - typings.gestalt.gestaltStrings.envelope
   - typings.gestalt.gestaltStrings.eye
+  - typings.gestalt.gestaltStrings.`eye-hide`
   - typings.gestalt.gestaltStrings.facebook
   - typings.gestalt.gestaltStrings.`face-happy`
   - typings.gestalt.gestaltStrings.`face-sad`
@@ -91,6 +92,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gestalt.gestaltStrings.heart
   - typings.gestalt.gestaltStrings.`heart-outline`
   - typings.gestalt.gestaltStrings.`heart-broken`
+  - typings.gestalt.gestaltStrings.history
+  - typings.gestalt.gestaltStrings.`idea-pin`
   - typings.gestalt.gestaltStrings.impressum
   - typings.gestalt.gestaltStrings.`info-circle`
   - typings.gestalt.gestaltStrings.key
@@ -110,6 +113,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gestalt.gestaltStrings.megaphone
   - typings.gestalt.gestaltStrings.menu
   - typings.gestalt.gestaltStrings.minimize
+  - typings.gestalt.gestaltStrings.`music-on`
+  - typings.gestalt.gestaltStrings.`music-off`
   - typings.gestalt.gestaltStrings.move
   - typings.gestalt.gestaltStrings.mute
   - typings.gestalt.gestaltStrings.`overlay-text`
@@ -146,7 +151,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gestalt.gestaltStrings.`speech-ellipsis`
   - typings.gestalt.gestaltStrings.star
   - typings.gestalt.gestaltStrings.`star-half`
-  - typings.gestalt.gestaltStrings.`story-pin`
   - typings.gestalt.gestaltStrings.`switch-account`
   - typings.gestalt.gestaltStrings.tag
   - typings.gestalt.gestaltStrings.terms
@@ -168,7 +172,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.gestalt.gestaltStrings.`view-type-default`
   - typings.gestalt.gestaltStrings.`view-type-dense`
   - typings.gestalt.gestaltStrings.`view-type-list`
+  - typings.gestalt.gestaltStrings.visit
   - typings.gestalt.gestaltStrings.`workflow-status-all`
+  - typings.gestalt.gestaltStrings.`workflow-status-canceled`
   - typings.gestalt.gestaltStrings.`workflow-status-halted`
   - typings.gestalt.gestaltStrings.`workflow-status-in-progress`
   - typings.gestalt.gestaltStrings.`workflow-status-ok`
@@ -301,6 +307,8 @@ object Icons {
   
   inline def eye: typings.gestalt.gestaltStrings.eye = "eye".asInstanceOf[typings.gestalt.gestaltStrings.eye]
   
+  inline def `eye-hide`: typings.gestalt.gestaltStrings.`eye-hide` = "eye-hide".asInstanceOf[typings.gestalt.gestaltStrings.`eye-hide`]
+  
   inline def `face-happy`: typings.gestalt.gestaltStrings.`face-happy` = "face-happy".asInstanceOf[typings.gestalt.gestaltStrings.`face-happy`]
   
   inline def `face-sad`: typings.gestalt.gestaltStrings.`face-sad` = "face-sad".asInstanceOf[typings.gestalt.gestaltStrings.`face-sad`]
@@ -351,6 +359,10 @@ object Icons {
   
   inline def `heart-outline`: typings.gestalt.gestaltStrings.`heart-outline` = "heart-outline".asInstanceOf[typings.gestalt.gestaltStrings.`heart-outline`]
   
+  inline def history: typings.gestalt.gestaltStrings.history = "history".asInstanceOf[typings.gestalt.gestaltStrings.history]
+  
+  inline def `idea-pin`: typings.gestalt.gestaltStrings.`idea-pin` = "idea-pin".asInstanceOf[typings.gestalt.gestaltStrings.`idea-pin`]
+  
   inline def impressum: typings.gestalt.gestaltStrings.impressum = "impressum".asInstanceOf[typings.gestalt.gestaltStrings.impressum]
   
   inline def `info-circle`: typings.gestalt.gestaltStrings.`info-circle` = "info-circle".asInstanceOf[typings.gestalt.gestaltStrings.`info-circle`]
@@ -390,6 +402,10 @@ object Icons {
   inline def minimize: typings.gestalt.gestaltStrings.minimize = "minimize".asInstanceOf[typings.gestalt.gestaltStrings.minimize]
   
   inline def move: typings.gestalt.gestaltStrings.move = "move".asInstanceOf[typings.gestalt.gestaltStrings.move]
+  
+  inline def `music-off`: typings.gestalt.gestaltStrings.`music-off` = "music-off".asInstanceOf[typings.gestalt.gestaltStrings.`music-off`]
+  
+  inline def `music-on`: typings.gestalt.gestaltStrings.`music-on` = "music-on".asInstanceOf[typings.gestalt.gestaltStrings.`music-on`]
   
   inline def mute: typings.gestalt.gestaltStrings.mute = "mute".asInstanceOf[typings.gestalt.gestaltStrings.mute]
   
@@ -461,8 +477,6 @@ object Icons {
   
   inline def `star-half`: typings.gestalt.gestaltStrings.`star-half` = "star-half".asInstanceOf[typings.gestalt.gestaltStrings.`star-half`]
   
-  inline def `story-pin`: typings.gestalt.gestaltStrings.`story-pin` = "story-pin".asInstanceOf[typings.gestalt.gestaltStrings.`story-pin`]
-  
   inline def `switch-account`: typings.gestalt.gestaltStrings.`switch-account` = "switch-account".asInstanceOf[typings.gestalt.gestaltStrings.`switch-account`]
   
   inline def tag: typings.gestalt.gestaltStrings.tag = "tag".asInstanceOf[typings.gestalt.gestaltStrings.tag]
@@ -505,7 +519,11 @@ object Icons {
   
   inline def `view-type-list`: typings.gestalt.gestaltStrings.`view-type-list` = "view-type-list".asInstanceOf[typings.gestalt.gestaltStrings.`view-type-list`]
   
+  inline def visit: typings.gestalt.gestaltStrings.visit = "visit".asInstanceOf[typings.gestalt.gestaltStrings.visit]
+  
   inline def `workflow-status-all`: typings.gestalt.gestaltStrings.`workflow-status-all` = "workflow-status-all".asInstanceOf[typings.gestalt.gestaltStrings.`workflow-status-all`]
+  
+  inline def `workflow-status-canceled`: typings.gestalt.gestaltStrings.`workflow-status-canceled` = "workflow-status-canceled".asInstanceOf[typings.gestalt.gestaltStrings.`workflow-status-canceled`]
   
   inline def `workflow-status-halted`: typings.gestalt.gestaltStrings.`workflow-status-halted` = "workflow-status-halted".asInstanceOf[typings.gestalt.gestaltStrings.`workflow-status-halted`]
   

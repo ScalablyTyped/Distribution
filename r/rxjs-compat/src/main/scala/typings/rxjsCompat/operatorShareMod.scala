@@ -10,5 +10,5 @@ object operatorShareMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def share[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("share")().asInstanceOf[js.Any]
+  inline def share[T](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("share")().asInstanceOf[Any]
 }

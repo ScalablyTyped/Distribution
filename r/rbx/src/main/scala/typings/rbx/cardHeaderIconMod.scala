@@ -54,7 +54,7 @@ object cardHeaderIconMod {
   
   @JSImport("rbx/components/card/card-header-icon", "CardHeaderIcon")
   @js.native
-  val CardHeaderIcon: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val CardHeaderIcon: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait CardHeaderIconProps extends StObject {

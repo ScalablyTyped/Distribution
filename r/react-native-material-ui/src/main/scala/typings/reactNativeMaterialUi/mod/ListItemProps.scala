@@ -23,7 +23,7 @@ trait ListItemProps extends StObject {
   
   var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPressValue: js.UndefOr[js.Any] = js.undefined
+  var onPressValue: js.UndefOr[Any] = js.undefined
   
   var onRightElementPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -64,7 +64,7 @@ object ListItemProps {
     
     inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    inline def setOnPressValue(value: js.Any): Self = StObject.set(x, "onPressValue", value.asInstanceOf[js.Any])
+    inline def setOnPressValue(value: Any): Self = StObject.set(x, "onPressValue", value.asInstanceOf[js.Any])
     
     inline def setOnPressValueUndefined: Self = StObject.set(x, "onPressValue", js.undefined)
     

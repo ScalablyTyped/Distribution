@@ -15,18 +15,23 @@ trait FileWillRenameEvent extends StObject {
   val files: js.Array[NewUri] = js.native
   
   /**
-    * Allows to pause the event and to apply a [workspace edit](#WorkspaceEdit).
+    * A cancellation token.
+    */
+  val token: CancellationToken = js.native
+  
+  /**
+    * Allows to pause the event and to apply a {@link WorkspaceEdit workspace edit}.
     *
     * *Note:* This function can only be called during event dispatch and not
     * in an asynchronous manner:
     *
     * ```ts
     * workspace.onWillCreateFiles(event => {
-    *     // async, will *throw* an error
-    *     setTimeout(() => event.waitUntil(promise));
+    * 	// async, will *throw* an error
+    * 	setTimeout(() => event.waitUntil(promise));
     *
-    *     // sync, OK
-    *     event.waitUntil(promise);
+    * 	// sync, OK
+    * 	event.waitUntil(promise);
     * })
     * ```
     *
@@ -39,5 +44,5 @@ trait FileWillRenameEvent extends StObject {
     *
     * @param thenable A thenable that delays saving.
     */
-  def waitUntil(thenable: Thenable[js.Any | WorkspaceEdit]): Unit = js.native
+  def waitUntil(thenable: Thenable[Any | WorkspaceEdit]): Unit = js.native
 }

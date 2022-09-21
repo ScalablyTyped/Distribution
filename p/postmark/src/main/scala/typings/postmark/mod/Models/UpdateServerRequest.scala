@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark", "Models.UpdateServerRequest")
 @js.native
-class UpdateServerRequest protected ()
+open class UpdateServerRequest protected ()
   extends typings.postmark.modelsMod.UpdateServerRequest {
   def this(
     Name: js.UndefOr[String],
@@ -23,6 +23,7 @@ class UpdateServerRequest protected ()
     TrackOpens: js.UndefOr[Boolean],
     TrackLinks: js.UndefOr[typings.postmark.messageSupportingTypesMod.LinkTrackingOptions],
     IncludeBounceContentInHook: js.UndefOr[Boolean],
-    EnableSmtpApiErrorHooks: js.UndefOr[Boolean]
+    EnableSmtpApiErrorHooks: js.UndefOr[Boolean],
+    InboundDomain: js.UndefOr[String]
   ) = this()
 }

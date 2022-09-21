@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.Devices
 
-import typings.std.Date
 import typings.winrt.Windows.Devices.Geolocation.PositionStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +9,7 @@ object Geolocation {
   
   @JSGlobal("Windows.Devices.Geolocation.CivicAddress")
   @js.native
-  class CivicAddress ()
+  open class CivicAddress ()
     extends StObject
        with typings.winrt.Windows.Devices.Geolocation.CivicAddress {
     
@@ -27,12 +26,12 @@ object Geolocation {
     var state: String = js.native
     
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   @JSGlobal("Windows.Devices.Geolocation.Geocoordinate")
   @js.native
-  class Geocoordinate ()
+  open class Geocoordinate ()
     extends StObject
        with typings.winrt.Windows.Devices.Geolocation.Geocoordinate {
     
@@ -58,18 +57,18 @@ object Geolocation {
     var speed: Double = js.native
     
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   @JSGlobal("Windows.Devices.Geolocation.Geolocator")
   @js.native
-  class Geolocator ()
+  open class Geolocator ()
     extends StObject
        with typings.winrt.Windows.Devices.Geolocation.Geolocator
   
   @JSGlobal("Windows.Devices.Geolocation.Geoposition")
   @js.native
-  class Geoposition ()
+  open class Geoposition ()
     extends StObject
        with typings.winrt.Windows.Devices.Geolocation.Geoposition {
     
@@ -94,7 +93,7 @@ object Geolocation {
   
   @JSGlobal("Windows.Devices.Geolocation.PositionChangedEventArgs")
   @js.native
-  class PositionChangedEventArgs ()
+  open class PositionChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Devices.Geolocation.PositionChangedEventArgs {
     
@@ -124,7 +123,7 @@ object Geolocation {
   
   @JSGlobal("Windows.Devices.Geolocation.StatusChangedEventArgs")
   @js.native
-  class StatusChangedEventArgs ()
+  open class StatusChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Devices.Geolocation.StatusChangedEventArgs {
     

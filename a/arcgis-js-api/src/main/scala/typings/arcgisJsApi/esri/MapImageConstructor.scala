@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MapImageConstructor
   extends StObject
-     with Instantiable0[MapImage]
+     with /**
+  * Represents the data object for the dynamically generated map.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html)
+  */
+Instantiable0[MapImage]
      with Instantiable1[/* properties */ MapImageProperties, MapImage] {
   
-  def fromJSON(json: js.Any): MapImage = js.native
+  def fromJSON(json: Any): MapImage = js.native
 }

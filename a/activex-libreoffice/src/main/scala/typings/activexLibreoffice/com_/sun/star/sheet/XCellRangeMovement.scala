@@ -54,7 +54,7 @@ object XCellRangeMovement {
     copyRange: (CellAddress, CellRangeAddress) => Unit,
     insertCells: (CellRangeAddress, CellInsertMode) => Unit,
     moveRange: (CellAddress, CellRangeAddress) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeRange: (CellRangeAddress, CellDeleteMode) => Unit
   ): XCellRangeMovement = {

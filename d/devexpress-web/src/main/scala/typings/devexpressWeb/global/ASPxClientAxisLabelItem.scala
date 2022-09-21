@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientAxisLabelItem")
 @js.native
-class ASPxClientAxisLabelItem ()
+open class ASPxClientAxisLabelItem ()
   extends StObject
      with typings.devexpressWeb.ASPxClientAxisLabelItem {
   
@@ -23,7 +23,7 @@ class ASPxClientAxisLabelItem ()
     * Gets the axis value to which an axis label item corresponds.
     */
   /* CompleteClass */
-  var axisValue: js.Any = js.native
+  var axisValue: Any = js.native
   
   /**
     * Gets the internal representation of the axis value to which an axis label item corresponds.

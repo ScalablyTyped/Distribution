@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScpActionDefinition extends StObject {
   
   /**
-    *  The policy ID attached. 
+    * The policy ID attached. 
     */
   var PolicyId: typings.awsSdk.budgetsMod.PolicyId
   
   /**
-    *  A list of target IDs. 
+    * A list of target IDs. 
     */
   var TargetIds: typings.awsSdk.budgetsMod.TargetIds
 }
@@ -29,6 +29,6 @@ object ScpActionDefinition {
     
     inline def setTargetIds(value: TargetIds): Self = StObject.set(x, "TargetIds", value.asInstanceOf[js.Any])
     
-    inline def setTargetIdsVarargs(value: TargetId*): Self = StObject.set(x, "TargetIds", js.Array(value :_*))
+    inline def setTargetIdsVarargs(value: TargetId*): Self = StObject.set(x, "TargetIds", js.Array(value*))
   }
 }

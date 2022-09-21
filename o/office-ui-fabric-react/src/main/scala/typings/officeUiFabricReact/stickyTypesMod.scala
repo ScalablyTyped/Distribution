@@ -1,7 +1,5 @@
 package typings.officeUiFabricReact
 
-import typings.officeUiFabricReact.stickyStickyMod.Sticky
-import typings.react.mod.Props
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -37,9 +35,8 @@ object stickyTypesMod {
     /* 1 */ val Header: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Header & Double = js.native
   }
   
-  trait IStickyProps
-    extends StObject
-       with Props[Sticky] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.Props<Sticky> * / any */ trait IStickyProps extends StObject {
     
     /**
       * Gets ref to component interface.

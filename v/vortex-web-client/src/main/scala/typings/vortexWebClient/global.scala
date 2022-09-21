@@ -19,7 +19,7 @@ object global {
     
     @JSGlobal("DDS.DataCache")
     @js.native
-    class DataCache protected ()
+    open class DataCache protected ()
       extends StObject
          with typings.vortexWebClient.DDS_.DataCache {
       /**
@@ -34,12 +34,12 @@ object global {
         * @param depth - cache size
         * @param cache - cache data structure
         */
-      def this(depth: Double, cache: js.Any) = this()
+      def this(depth: Double, cache: Any) = this()
     }
     
     @JSGlobal("DDS.DataReader")
     @js.native
-    class DataReader protected ()
+    open class DataReader protected ()
       extends StObject
          with typings.vortexWebClient.DDS_.DataReader {
       /**
@@ -64,7 +64,7 @@ object global {
         * @returns listener handle
         */
       /* CompleteClass */
-      override def addListener(l: js.Function1[/* msg */ js.Any, Unit]): Double = js.native
+      override def addListener(l: js.Function1[/* msg */ Any, Unit]): Double = js.native
       
       /**
         * closes the DataReader
@@ -86,7 +86,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("DDS.DataReaderQos")
     @js.native
-    class DataReaderQos protected ()
+    open class DataReaderQos protected ()
       extends StObject
          with EntityQos {
       /**
@@ -103,7 +103,7 @@ object global {
     
     @JSGlobal("DDS.DataWriter")
     @js.native
-    class DataWriter protected ()
+    open class DataWriter protected ()
       extends StObject
          with typings.vortexWebClient.DDS_.DataWriter {
       /**
@@ -134,13 +134,13 @@ object global {
         * @param ds - data sample
         */
       /* CompleteClass */
-      override def write(ds: js.Any*): Unit = js.native
+      override def write(ds: Any*): Unit = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("DDS.DataWriterQos")
     @js.native
-    class DataWriterQos protected ()
+    open class DataWriterQos protected ()
       extends StObject
          with EntityQos {
       /**
@@ -157,7 +157,7 @@ object global {
     
     @JSGlobal("DDS.Durability")
     @js.native
-    class Durability ()
+    open class Durability ()
       extends StObject
          with Policy
     /* static members */
@@ -172,33 +172,33 @@ object global {
         */
       @JSGlobal("DDS.Durability.Persistent")
       @js.native
-      def Persistent: js.Any = js.native
-      inline def Persistent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Persistent")(x.asInstanceOf[js.Any])
+      def Persistent: Any = js.native
+      inline def Persistent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Persistent")(x.asInstanceOf[js.Any])
       
       /**
         * Transient - Transient durability policy
         */
       @JSGlobal("DDS.Durability.Transient")
       @js.native
-      def Transient: js.Any = js.native
+      def Transient: Any = js.native
       
       /**
         * TransientLocal - TransientLocal durability policy
         */
       @JSGlobal("DDS.Durability.TransientLocal")
       @js.native
-      def TransientLocal: js.Any = js.native
-      inline def TransientLocal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TransientLocal")(x.asInstanceOf[js.Any])
+      def TransientLocal: Any = js.native
+      inline def TransientLocal_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TransientLocal")(x.asInstanceOf[js.Any])
       
-      inline def Transient_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transient")(x.asInstanceOf[js.Any])
+      inline def Transient_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transient")(x.asInstanceOf[js.Any])
       
       /**
         * Volatile - Volatile durability policy
         */
       @JSGlobal("DDS.Durability.Volatile")
       @js.native
-      def Volatile: js.Any = js.native
-      inline def Volatile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Volatile")(x.asInstanceOf[js.Any])
+      def Volatile: Any = js.native
+      inline def Volatile_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Volatile")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("DDS.DurabilityKind")
@@ -219,7 +219,7 @@ object global {
     
     @JSGlobal("DDS.History")
     @js.native
-    class History ()
+    open class History ()
       extends StObject
          with Policy
     /* static members */
@@ -234,16 +234,16 @@ object global {
         */
       @JSGlobal("DDS.History.KeepAll")
       @js.native
-      def KeepAll: js.Any = js.native
-      inline def KeepAll_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepAll")(x.asInstanceOf[js.Any])
+      def KeepAll: Any = js.native
+      inline def KeepAll_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepAll")(x.asInstanceOf[js.Any])
       
       /**
         * KeepLast - KEEP_LAST qos policy
         */
       @JSGlobal("DDS.History.KeepLast")
       @js.native
-      def KeepLast: js.Any = js.native
-      inline def KeepLast_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepLast")(x.asInstanceOf[js.Any])
+      def KeepLast: Any = js.native
+      inline def KeepLast_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepLast")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("DDS.HistoryKind")
@@ -258,11 +258,11 @@ object global {
       /* 1 */ val KeepLast: typings.vortexWebClient.DDS_.HistoryKind.KeepLast & Double = js.native
     }
     
-    inline def Partition(policies: String*): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("Partition")(policies.asInstanceOf[js.Any]).asInstanceOf[Policy]
+    inline def Partition(policies: String*): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("Partition")(policies.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Policy]
     
     @JSGlobal("DDS.Reliability")
     @js.native
-    class Reliability ()
+    open class Reliability ()
       extends StObject
          with Policy
     /* static members */
@@ -277,16 +277,16 @@ object global {
         */
       @JSGlobal("DDS.Reliability.BestEffort")
       @js.native
-      def BestEffort: js.Any = js.native
-      inline def BestEffort_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BestEffort")(x.asInstanceOf[js.Any])
+      def BestEffort: Any = js.native
+      inline def BestEffort_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BestEffort")(x.asInstanceOf[js.Any])
       
       /**
         * Reliable - 'Reliable' reliability policy
         */
       @JSGlobal("DDS.Reliability.Reliable")
       @js.native
-      def Reliable: js.Any = js.native
-      inline def Reliable_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reliable")(x.asInstanceOf[js.Any])
+      def Reliable: Any = js.native
+      inline def Reliable_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reliable")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("DDS.ReliabilityKind")
@@ -305,7 +305,7 @@ object global {
     
     @JSGlobal("DDS.Topic")
     @js.native
-    class Topic protected ()
+    open class Topic protected ()
       extends StObject
          with typings.vortexWebClient.DDS_.Topic {
       /**
@@ -338,7 +338,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("DDS.TopicQos")
     @js.native
-    class TopicQos protected ()
+    open class TopicQos protected ()
       extends StObject
          with EntityQos {
       /**
@@ -377,7 +377,7 @@ object global {
         * maintains the connection with the server, re-establish the connection
         * if dropped and mediates the `DataReader` and `DataWriter` communication.
         */
-      class RuntimeCls ()
+      open class RuntimeCls ()
         extends StObject
            with Runtime
       
@@ -396,7 +396,7 @@ object global {
     
     @JSGlobal("dds.DataCache")
     @js.native
-    class DataCache protected ()
+    open class DataCache protected ()
       extends StObject
          with typings.vortexWebClient.dds.DataCache {
       /**
@@ -411,12 +411,12 @@ object global {
         * @param depth - cache size
         * @param cache - cache data structure
         */
-      def this(depth: Double, cache: js.Any) = this()
+      def this(depth: Double, cache: Any) = this()
     }
     
     @JSGlobal("dds.DataReader")
     @js.native
-    class DataReader protected ()
+    open class DataReader protected ()
       extends StObject
          with typings.vortexWebClient.dds.DataReader {
       /**
@@ -441,7 +441,7 @@ object global {
         * @returns listener handle
         */
       /* CompleteClass */
-      override def addListener(l: js.Function1[/* msg */ js.Any, Unit]): Double = js.native
+      override def addListener(l: js.Function1[/* msg */ Any, Unit]): Double = js.native
       
       /**
         * closes the DataReader
@@ -463,7 +463,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("dds.DataReaderQos")
     @js.native
-    class DataReaderQos protected ()
+    open class DataReaderQos protected ()
       extends StObject
          with EntityQos {
       /**
@@ -480,7 +480,7 @@ object global {
     
     @JSGlobal("dds.DataWriter")
     @js.native
-    class DataWriter protected ()
+    open class DataWriter protected ()
       extends StObject
          with typings.vortexWebClient.dds.DataWriter {
       /**
@@ -511,13 +511,13 @@ object global {
         * @param ds - data sample
         */
       /* CompleteClass */
-      override def write(ds: js.Any*): Unit = js.native
+      override def write(ds: Any*): Unit = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("dds.DataWriterQos")
     @js.native
-    class DataWriterQos protected ()
+    open class DataWriterQos protected ()
       extends StObject
          with EntityQos {
       /**
@@ -534,7 +534,7 @@ object global {
     
     @JSGlobal("dds.Durability")
     @js.native
-    class Durability ()
+    open class Durability ()
       extends StObject
          with Policy
     /* static members */
@@ -549,33 +549,33 @@ object global {
         */
       @JSGlobal("dds.Durability.Persistent")
       @js.native
-      def Persistent: js.Any = js.native
-      inline def Persistent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Persistent")(x.asInstanceOf[js.Any])
+      def Persistent: Any = js.native
+      inline def Persistent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Persistent")(x.asInstanceOf[js.Any])
       
       /**
         * Transient - Transient durability policy
         */
       @JSGlobal("dds.Durability.Transient")
       @js.native
-      def Transient: js.Any = js.native
+      def Transient: Any = js.native
       
       /**
         * TransientLocal - TransientLocal durability policy
         */
       @JSGlobal("dds.Durability.TransientLocal")
       @js.native
-      def TransientLocal: js.Any = js.native
-      inline def TransientLocal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TransientLocal")(x.asInstanceOf[js.Any])
+      def TransientLocal: Any = js.native
+      inline def TransientLocal_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TransientLocal")(x.asInstanceOf[js.Any])
       
-      inline def Transient_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transient")(x.asInstanceOf[js.Any])
+      inline def Transient_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Transient")(x.asInstanceOf[js.Any])
       
       /**
         * Volatile - Volatile durability policy
         */
       @JSGlobal("dds.Durability.Volatile")
       @js.native
-      def Volatile: js.Any = js.native
-      inline def Volatile_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Volatile")(x.asInstanceOf[js.Any])
+      def Volatile: Any = js.native
+      inline def Volatile_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Volatile")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("dds.DurabilityKind")
@@ -596,7 +596,7 @@ object global {
     
     @JSGlobal("dds.History")
     @js.native
-    class History ()
+    open class History ()
       extends StObject
          with Policy
     /* static members */
@@ -611,16 +611,16 @@ object global {
         */
       @JSGlobal("dds.History.KeepAll")
       @js.native
-      def KeepAll: js.Any = js.native
-      inline def KeepAll_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepAll")(x.asInstanceOf[js.Any])
+      def KeepAll: Any = js.native
+      inline def KeepAll_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepAll")(x.asInstanceOf[js.Any])
       
       /**
         * KeepLast - KEEP_LAST qos policy
         */
       @JSGlobal("dds.History.KeepLast")
       @js.native
-      def KeepLast: js.Any = js.native
-      inline def KeepLast_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepLast")(x.asInstanceOf[js.Any])
+      def KeepLast: Any = js.native
+      inline def KeepLast_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeepLast")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("dds.HistoryKind")
@@ -635,11 +635,11 @@ object global {
       /* 1 */ val KeepLast: typings.vortexWebClient.dds.HistoryKind.KeepLast & Double = js.native
     }
     
-    inline def Partition(policies: String*): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("Partition")(policies.asInstanceOf[js.Any]).asInstanceOf[Policy]
+    inline def Partition(policies: String*): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("Partition")(policies.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Policy]
     
     @JSGlobal("dds.Reliability")
     @js.native
-    class Reliability ()
+    open class Reliability ()
       extends StObject
          with Policy
     /* static members */
@@ -654,16 +654,16 @@ object global {
         */
       @JSGlobal("dds.Reliability.BestEffort")
       @js.native
-      def BestEffort: js.Any = js.native
-      inline def BestEffort_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BestEffort")(x.asInstanceOf[js.Any])
+      def BestEffort: Any = js.native
+      inline def BestEffort_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BestEffort")(x.asInstanceOf[js.Any])
       
       /**
         * Reliable - 'Reliable' reliability policy
         */
       @JSGlobal("dds.Reliability.Reliable")
       @js.native
-      def Reliable: js.Any = js.native
-      inline def Reliable_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reliable")(x.asInstanceOf[js.Any])
+      def Reliable: Any = js.native
+      inline def Reliable_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reliable")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("dds.ReliabilityKind")
@@ -682,7 +682,7 @@ object global {
     
     @JSGlobal("dds.Topic")
     @js.native
-    class Topic protected ()
+    open class Topic protected ()
       extends StObject
          with typings.vortexWebClient.dds.Topic {
       /**
@@ -715,7 +715,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("dds.TopicQos")
     @js.native
-    class TopicQos protected ()
+    open class TopicQos protected ()
       extends StObject
          with EntityQos {
       /**
@@ -754,7 +754,7 @@ object global {
         * maintains the connection with the server, re-establish the connection
         * if dropped and mediates the `DataReader` and `DataWriter` communication.
         */
-      class RuntimeCls ()
+      open class RuntimeCls ()
         extends StObject
            with Runtime
       

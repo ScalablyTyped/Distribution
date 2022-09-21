@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "TopBar")
 @js.native
-class TopBar protected ()
-  extends Component[TopBarProps, js.Object, js.Any] {
+open class TopBar protected ()
+  extends Component[TopBarProps, js.Object, Any] {
   def this(props: TopBarProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TopBarProps, context: js.Any) = this()
+  def this(props: TopBarProps, context: Any) = this()
 }
 /* static members */
 object TopBar {

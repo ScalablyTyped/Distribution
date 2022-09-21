@@ -12,5 +12,5 @@ trait JSDocNameReference
   @JSName("kind")
   val kind_JSDocNameReference: typings.typescript.mod.SyntaxKind.JSDocNameReference = js.native
   
-  val name: EntityName = js.native
+  val name: EntityName | JSDocMemberName = js.native
 }

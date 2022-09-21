@@ -1,6 +1,5 @@
 package typings.vis.mod
 
-import typings.std.Date
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.vis.anon.End
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vis", "Graph2d")
 @js.native
-class Graph2d protected () extends StObject {
+open class Graph2d protected () extends StObject {
   def this(container: HTMLElement, items: DataItemCollectionType) = this()
   def this(container: HTMLElement, items: DataItemCollectionType, groups: DataGroupCollectionType) = this()
   def this(container: HTMLElement, items: DataItemCollectionType, options: Graph2dOptions) = this()
@@ -30,20 +29,19 @@ class Graph2d protected () extends StObject {
   def fit(): Unit = js.native
   def fit(options: TimelineAnimationOptions): Unit = js.native
   
+  def focus(ids: Any | IdType): Unit = js.native
   def focus(ids: js.Array[IdType]): Unit = js.native
   def focus(ids: js.Array[IdType], options: TimelineAnimationOptions): Unit = js.native
-  def focus(ids: IdType): Unit = js.native
   def focus(ids: IdType, options: TimelineAnimationOptions): Unit = js.native
-  def focus(selection: js.Any): Unit = js.native
   
-  def getCurrentTime(): Date = js.native
+  def getCurrentTime(): js.Date = js.native
   
-  def getCustomTime(): Date = js.native
-  def getCustomTime(id: IdType): Date = js.native
+  def getCustomTime(): js.Date = js.native
+  def getCustomTime(id: IdType): js.Date = js.native
   
   def getEventProperties(event: Event): TimelineEventPropertiesResult = js.native
   
-  def getItemRange(): js.Any = js.native
+  def getItemRange(): Any = js.native
   
   def getLegend(): TimelineWindow = js.native
   
@@ -63,8 +61,8 @@ class Graph2d protected () extends StObject {
   
   def on(): Unit = js.native
   def on(event: String): Unit = js.native
-  def on(event: String, callback: js.Function1[/* properties */ js.Any, Unit]): Unit = js.native
-  def on(event: Unit, callback: js.Function1[/* properties */ js.Any, Unit]): Unit = js.native
+  def on(event: String, callback: js.Function1[/* properties */ Any, Unit]): Unit = js.native
+  def on(event: Unit, callback: js.Function1[/* properties */ Any, Unit]): Unit = js.native
   def on(event: TimelineEvents, callback: js.Function0[Unit]): Unit = js.native
   
   def redraw(): Unit = js.native
@@ -94,7 +92,6 @@ class Graph2d protected () extends StObject {
   def setSelection(ids: js.Array[IdType]): Unit = js.native
   def setSelection(ids: IdType): Unit = js.native
   
-  def setWindow(start: js.Any, date: js.Any): Unit = js.native
-  def setWindow(start: DateType, end: DateType): Unit = js.native
+  def setWindow(start: Any | DateType, end: Any | DateType): Unit = js.native
   def setWindow(start: DateType, end: DateType, options: TimelineAnimationOptions): Unit = js.native
 }

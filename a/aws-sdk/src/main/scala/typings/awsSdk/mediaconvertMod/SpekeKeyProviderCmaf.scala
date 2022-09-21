@@ -48,13 +48,13 @@ object SpekeKeyProviderCmaf {
     
     inline def setDashSignaledSystemIdsUndefined: Self = StObject.set(x, "DashSignaledSystemIds", js.undefined)
     
-    inline def setDashSignaledSystemIdsVarargs(value: stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12*): Self = StObject.set(x, "DashSignaledSystemIds", js.Array(value :_*))
+    inline def setDashSignaledSystemIdsVarargs(value: stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12*): Self = StObject.set(x, "DashSignaledSystemIds", js.Array(value*))
     
     inline def setHlsSignaledSystemIds(value: listOfStringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12): Self = StObject.set(x, "HlsSignaledSystemIds", value.asInstanceOf[js.Any])
     
     inline def setHlsSignaledSystemIdsUndefined: Self = StObject.set(x, "HlsSignaledSystemIds", js.undefined)
     
-    inline def setHlsSignaledSystemIdsVarargs(value: stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12*): Self = StObject.set(x, "HlsSignaledSystemIds", js.Array(value :_*))
+    inline def setHlsSignaledSystemIdsVarargs(value: stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12*): Self = StObject.set(x, "HlsSignaledSystemIds", js.Array(value*))
     
     inline def setResourceId(value: stringPatternW): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

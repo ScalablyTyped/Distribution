@@ -3,9 +3,11 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.all_
 import typings.reactNative.reactNativeStrings.balanced
 import typings.reactNative.reactNativeStrings.email
+import typings.reactNative.reactNativeStrings.full
 import typings.reactNative.reactNativeStrings.highQuality
 import typings.reactNative.reactNativeStrings.link
 import typings.reactNative.reactNativeStrings.none
+import typings.reactNative.reactNativeStrings.normal_
 import typings.reactNative.reactNativeStrings.phoneNumber
 import typings.reactNative.reactNativeStrings.simple
 import org.scalablytyped.runtime.StObject
@@ -13,6 +15,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TextPropsAndroid extends StObject {
+  
+  /**
+    * Hyphenation strategy
+    */
+  var android_hyphenationFrequency: js.UndefOr[normal_ | none | full] = js.undefined
   
   /**
     * Determines the types of data converted to clickable URLs in the text element.
@@ -44,6 +51,10 @@ object TextPropsAndroid {
   }
   
   extension [Self <: TextPropsAndroid](x: Self) {
+    
+    inline def setAndroid_hyphenationFrequency(value: normal_ | none | full): Self = StObject.set(x, "android_hyphenationFrequency", value.asInstanceOf[js.Any])
+    
+    inline def setAndroid_hyphenationFrequencyUndefined: Self = StObject.set(x, "android_hyphenationFrequency", js.undefined)
     
     inline def setDataDetectorType(value: phoneNumber | link | email | none | all_): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
     

@@ -11,6 +11,8 @@ trait PictureFillSymbolProperties
   /**
     * The height of the image in points.
     *
+    * @default 12
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#height)
     */
   var height: js.UndefOr[Double | String] = js.undefined
@@ -25,12 +27,16 @@ trait PictureFillSymbolProperties
   /**
     * The width of the image in points.
     *
+    * @default 12
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#width)
     */
   var width: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The offset on the x-axis in points.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#xoffset)
     */
@@ -39,6 +45,8 @@ trait PictureFillSymbolProperties
   /**
     * The scale factor on the x axis of the symbol.
     *
+    * @default 1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#xscale)
     */
   var xscale: js.UndefOr[Double] = js.undefined
@@ -46,12 +54,16 @@ trait PictureFillSymbolProperties
   /**
     * The offset on the y-axis in pixels or points.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#yoffset)
     */
   var yoffset: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The scale factor on the y axis of the symbol.
+    *
+    * @default 1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#yscale)
     */

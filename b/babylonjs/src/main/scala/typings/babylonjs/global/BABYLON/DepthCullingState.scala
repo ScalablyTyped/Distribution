@@ -8,7 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /**
   * Initializes the state.
+  * @param reset
   */
-class DepthCullingState ()
+open class DepthCullingState ()
   extends StObject
-     with typings.babylonjs.BABYLON.DepthCullingState
+     with typings.babylonjs.BABYLON.DepthCullingState {
+  def this(reset: Boolean) = this()
+}

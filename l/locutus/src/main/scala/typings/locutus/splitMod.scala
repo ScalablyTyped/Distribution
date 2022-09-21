@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object splitMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(delimiter: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(delimiter.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(delimiter: js.Any, string: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(delimiter.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(delimiter: Unit, string: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(delimiter.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(delimiter: Any): Any = ^.asInstanceOf[js.Dynamic].apply(delimiter.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(delimiter: Any, string: Any): Any = (^.asInstanceOf[js.Dynamic].apply(delimiter.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(delimiter: Unit, string: Any): Any = (^.asInstanceOf[js.Dynamic].apply(delimiter.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/strings/split", JSImport.Namespace)
   @js.native

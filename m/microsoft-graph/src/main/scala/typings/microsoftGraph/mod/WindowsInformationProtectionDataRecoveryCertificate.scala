@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WindowsInformationProtectionDataRecoveryCertificate extends StObject {
   
   // Data recovery Certificate
-  var certificate: js.UndefOr[NullableOption[Double]] = js.undefined
+  var certificate: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Data recovery Certificate description
   var description: js.UndefOr[NullableOption[String]] = js.undefined
@@ -27,7 +27,7 @@ object WindowsInformationProtectionDataRecoveryCertificate {
   
   extension [Self <: WindowsInformationProtectionDataRecoveryCertificate](x: Self) {
     
-    inline def setCertificate(value: NullableOption[Double]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: NullableOption[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     inline def setCertificateNull: Self = StObject.set(x, "certificate", null)
     

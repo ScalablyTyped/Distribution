@@ -10,10 +10,10 @@ The lodash method `_.tail` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.tail |
 | Keywords           | lodash-modularized, tail |
-| # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 104637739 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3017924.3333333335 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -7,6 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object googleapisStrings {
   
   @js.native
+  sealed trait ADDED extends StObject
+  inline def ADDED: ADDED = "ADDED".asInstanceOf[ADDED]
+  
+  @js.native
+  sealed trait CHANGED extends StObject
+  inline def CHANGED: CHANGED = "CHANGED".asInstanceOf[CHANGED]
+  
+  @js.native
+  sealed trait DELETED extends StObject
+  inline def DELETED: DELETED = "DELETED".asInstanceOf[DELETED]
+  
+  @js.native
   sealed trait alpha extends StObject
   inline def alpha: alpha = "alpha".asInstanceOf[alpha]
   
@@ -21,6 +33,14 @@ object googleapisStrings {
   @js.native
   sealed trait directory_v1 extends StObject
   inline def directory_v1: directory_v1 = "directory_v1".asInstanceOf[directory_v1]
+  
+  @js.native
+  sealed trait feat extends StObject
+  inline def feat: feat = "feat".asInstanceOf[feat]
+  
+  @js.native
+  sealed trait fix extends StObject
+  inline def fix: fix = "fix".asInstanceOf[fix]
   
   @js.native
   sealed trait reports_v1 extends StObject
@@ -45,22 +65,6 @@ object googleapisStrings {
   @js.native
   sealed trait v1Dot4 extends StObject
   inline def v1Dot4: v1Dot4 = "v1.4".asInstanceOf[v1Dot4]
-  
-  @js.native
-  sealed trait v1_1 extends StObject
-  inline def v1_1: v1_1 = "v1_1".asInstanceOf[v1_1]
-  
-  @js.native
-  sealed trait v1_2 extends StObject
-  inline def v1_2: v1_2 = "v1_2".asInstanceOf[v1_2]
-  
-  @js.native
-  sealed trait v1_3 extends StObject
-  inline def v1_3: v1_3 = "v1_3".asInstanceOf[v1_3]
-  
-  @js.native
-  sealed trait v1_4 extends StObject
-  inline def v1_4: v1_4 = "v1_4".asInstanceOf[v1_4]
   
   @js.native
   sealed trait v1alpha extends StObject
@@ -107,8 +111,16 @@ object googleapisStrings {
   inline def v1configuration: v1configuration = "v1configuration".asInstanceOf[v1configuration]
   
   @js.native
+  sealed trait v1dev extends StObject
+  inline def v1dev: v1dev = "v1dev".asInstanceOf[v1dev]
+  
+  @js.native
   sealed trait v1management extends StObject
   inline def v1management: v1management = "v1management".asInstanceOf[v1management]
+  
+  @js.native
+  sealed trait v1p1alpha1 extends StObject
+  inline def v1p1alpha1: v1p1alpha1 = "v1p1alpha1".asInstanceOf[v1p1alpha1]
   
   @js.native
   sealed trait v1p1beta1 extends StObject
@@ -123,6 +135,18 @@ object googleapisStrings {
   inline def v1p3beta1: v1p3beta1 = "v1p3beta1".asInstanceOf[v1p3beta1]
   
   @js.native
+  sealed trait v1p4beta1 extends StObject
+  inline def v1p4beta1: v1p4beta1 = "v1p4beta1".asInstanceOf[v1p4beta1]
+  
+  @js.native
+  sealed trait v1p5beta1 extends StObject
+  inline def v1p5beta1: v1p5beta1 = "v1p5beta1".asInstanceOf[v1p5beta1]
+  
+  @js.native
+  sealed trait v1p7beta1 extends StObject
+  inline def v1p7beta1: v1p7beta1 = "v1p7beta1".asInstanceOf[v1p7beta1]
+  
+  @js.native
   sealed trait v2 extends StObject
   inline def v2: v2 = "v2".asInstanceOf[v2]
   
@@ -131,16 +155,8 @@ object googleapisStrings {
   inline def v2Dot1: v2Dot1 = "v2.1".asInstanceOf[v2Dot1]
   
   @js.native
-  sealed trait v2Dot4 extends StObject
-  inline def v2Dot4: v2Dot4 = "v2.4".asInstanceOf[v2Dot4]
-  
-  @js.native
-  sealed trait v2_1 extends StObject
-  inline def v2_1: v2_1 = "v2_1".asInstanceOf[v2_1]
-  
-  @js.native
-  sealed trait v2_4 extends StObject
-  inline def v2_4: v2_4 = "v2_4".asInstanceOf[v2_4]
+  sealed trait v2alpha extends StObject
+  inline def v2alpha: v2alpha = "v2alpha".asInstanceOf[v2alpha]
   
   @js.native
   sealed trait v2alpha1 extends StObject
@@ -167,28 +183,20 @@ object googleapisStrings {
   inline def v3: v3 = "v3".asInstanceOf[v3]
   
   @js.native
-  sealed trait v3Dot1 extends StObject
-  inline def v3Dot1: v3Dot1 = "v3.1".asInstanceOf[v3Dot1]
-  
-  @js.native
-  sealed trait v3Dot2 extends StObject
-  inline def v3Dot2: v3Dot2 = "v3.2".asInstanceOf[v3Dot2]
-  
-  @js.native
   sealed trait v3Dot3 extends StObject
   inline def v3Dot3: v3Dot3 = "v3.3".asInstanceOf[v3Dot3]
   
   @js.native
-  sealed trait v3_1 extends StObject
-  inline def v3_1: v3_1 = "v3_1".asInstanceOf[v3_1]
+  sealed trait v3Dot4 extends StObject
+  inline def v3Dot4: v3Dot4 = "v3.4".asInstanceOf[v3Dot4]
   
   @js.native
-  sealed trait v3_2 extends StObject
-  inline def v3_2: v3_2 = "v3_2".asInstanceOf[v3_2]
+  sealed trait v3Dot5 extends StObject
+  inline def v3Dot5: v3Dot5 = "v3.5".asInstanceOf[v3Dot5]
   
   @js.native
-  sealed trait v3_3 extends StObject
-  inline def v3_3: v3_3 = "v3_3".asInstanceOf[v3_3]
+  sealed trait v3beta1 extends StObject
+  inline def v3beta1: v3beta1 = "v3beta1".asInstanceOf[v3beta1]
   
   @js.native
   sealed trait v3p1beta1 extends StObject
@@ -201,10 +209,6 @@ object googleapisStrings {
   @js.native
   sealed trait v4Dot1 extends StObject
   inline def v4Dot1: v4Dot1 = "v4.1".asInstanceOf[v4Dot1]
-  
-  @js.native
-  sealed trait v4_1 extends StObject
-  inline def v4_1: v4_1 = "v4_1".asInstanceOf[v4_1]
   
   @js.native
   sealed trait v5 extends StObject

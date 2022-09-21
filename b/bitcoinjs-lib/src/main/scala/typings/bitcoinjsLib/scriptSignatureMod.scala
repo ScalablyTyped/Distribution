@@ -1,13 +1,13 @@
 package typings.bitcoinjsLib
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scriptSignatureMod {
   
-  @JSImport("bitcoinjs-lib/types/script_signature", JSImport.Namespace)
+  @JSImport("bitcoinjs-lib/src/script_signature", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

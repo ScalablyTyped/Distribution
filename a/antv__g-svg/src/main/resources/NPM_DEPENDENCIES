@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@antv/g-svg" : "1.8.14"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@antv/g-svg" : "1.8.14"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

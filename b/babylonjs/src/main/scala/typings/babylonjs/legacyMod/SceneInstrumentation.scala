@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "SceneInstrumentation")
 @js.native
-class SceneInstrumentation protected ()
+open class SceneInstrumentation protected ()
   extends typings.babylonjs.indexMod.SceneInstrumentation {
   /**
     * Instantiates a new scene instrumentation.

@@ -71,22 +71,33 @@ object enterprise {
       var id: String
       
       /**
-        * Implements the WebCrypto's SubtleCrypto interface. The cryptographic operations, including key generation, are hardware-backed.
+        * Implements the WebCrypto's SubtleCrypto interface. The cryptographic operations, including key generation, are software-backed.
+        * Protection of the keys, and thus implementation of the non-extractable property, is done in software, so the keys are less protected than hardware-backed keys.
         * Only non-extractable RSASSA-PKCS1-V1_5 keys with modulusLength up to 2048 can be generated. Each key can be used for signing data at most once.
+        * Keys generated on a specific Token cannot be used with any other Tokens, nor can they be used with window.crypto.subtle. Equally, Key objects created with window.crypto.subtle cannot be used with this interface.
+        * @since Chrome 97.
+        */
+      var softwareBackedSubtleCrypto: SubtleCrypto
+      
+      /**
+        * Implements the WebCrypto's SubtleCrypto interface. The cryptographic operations, including key generation, are hardware-backed.
+        * Only non-extractable RSASSA-PKCS1-V1_5 keys with modulusLength up to 2048 and ECDSA with namedCurve P-256 can be generated. Each key can be used for signing data at most once.
         * Keys generated on a specific Token cannot be used with any other Tokens, nor can they be used with window.crypto.subtle. Equally, Key objects created with window.crypto.subtle cannot be used with this interface.
         */
       var subtleCrypto: SubtleCrypto
     }
     object Token {
       
-      inline def apply(id: String, subtleCrypto: SubtleCrypto): Token = {
-        val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], subtleCrypto = subtleCrypto.asInstanceOf[js.Any])
+      inline def apply(id: String, softwareBackedSubtleCrypto: SubtleCrypto, subtleCrypto: SubtleCrypto): Token = {
+        val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], softwareBackedSubtleCrypto = softwareBackedSubtleCrypto.asInstanceOf[js.Any], subtleCrypto = subtleCrypto.asInstanceOf[js.Any])
         __obj.asInstanceOf[Token]
       }
       
       extension [Self <: Token](x: Self) {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        
+        inline def setSoftwareBackedSubtleCrypto(value: SubtleCrypto): Self = StObject.set(x, "softwareBackedSubtleCrypto", value.asInstanceOf[js.Any])
         
         inline def setSubtleCrypto(value: SubtleCrypto): Self = StObject.set(x, "subtleCrypto", value.asInstanceOf[js.Any])
       }

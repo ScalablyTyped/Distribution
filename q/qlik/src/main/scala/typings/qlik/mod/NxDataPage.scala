@@ -29,10 +29,10 @@ object NxDataPage {
     
     inline def setQMatrix(value: js.Array[NxCellRows]): Self = StObject.set(x, "qMatrix", value.asInstanceOf[js.Any])
     
-    inline def setQMatrixVarargs(value: NxCellRows*): Self = StObject.set(x, "qMatrix", js.Array(value :_*))
+    inline def setQMatrixVarargs(value: NxCellRows*): Self = StObject.set(x, "qMatrix", js.Array(value*))
     
     inline def setQTails(value: js.Array[NxGroupTail]): Self = StObject.set(x, "qTails", value.asInstanceOf[js.Any])
     
-    inline def setQTailsVarargs(value: NxGroupTail*): Self = StObject.set(x, "qTails", js.Array(value :_*))
+    inline def setQTailsVarargs(value: NxGroupTail*): Self = StObject.set(x, "qTails", js.Array(value*))
   }
 }

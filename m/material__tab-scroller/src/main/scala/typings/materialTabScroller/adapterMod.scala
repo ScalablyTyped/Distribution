@@ -1,6 +1,6 @@
 package typings.materialTabScroller
 
-import typings.std.ClientRect
+import typings.std.DOMRect
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,12 +30,12 @@ object adapterMod {
     /**
       * Returns the bounding client rect of the scroll area element.
       */
-    def computeScrollAreaClientRect(): ClientRect
+    def computeScrollAreaClientRect(): DOMRect
     
     /**
       * Returns the bounding client rect of the scroll content element.
       */
-    def computeScrollContentClientRect(): ClientRect
+    def computeScrollContentClientRect(): DOMRect
     
     /**
       * Returns whether the event target matches given className.
@@ -97,8 +97,8 @@ object adapterMod {
       addClass: String => Unit,
       addScrollAreaClass: String => Unit,
       computeHorizontalScrollbarHeight: () => Double,
-      computeScrollAreaClientRect: () => ClientRect,
-      computeScrollContentClientRect: () => ClientRect,
+      computeScrollAreaClientRect: () => DOMRect,
+      computeScrollContentClientRect: () => DOMRect,
       eventTargetMatchesSelector: (EventTarget, String) => Boolean,
       getScrollAreaOffsetWidth: () => Double,
       getScrollAreaScrollLeft: () => Double,
@@ -121,9 +121,9 @@ object adapterMod {
       
       inline def setComputeHorizontalScrollbarHeight(value: () => Double): Self = StObject.set(x, "computeHorizontalScrollbarHeight", js.Any.fromFunction0(value))
       
-      inline def setComputeScrollAreaClientRect(value: () => ClientRect): Self = StObject.set(x, "computeScrollAreaClientRect", js.Any.fromFunction0(value))
+      inline def setComputeScrollAreaClientRect(value: () => DOMRect): Self = StObject.set(x, "computeScrollAreaClientRect", js.Any.fromFunction0(value))
       
-      inline def setComputeScrollContentClientRect(value: () => ClientRect): Self = StObject.set(x, "computeScrollContentClientRect", js.Any.fromFunction0(value))
+      inline def setComputeScrollContentClientRect(value: () => DOMRect): Self = StObject.set(x, "computeScrollContentClientRect", js.Any.fromFunction0(value))
       
       inline def setEventTargetMatchesSelector(value: (EventTarget, String) => Boolean): Self = StObject.set(x, "eventTargetMatchesSelector", js.Any.fromFunction2(value))
       

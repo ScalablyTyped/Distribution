@@ -1,19 +1,19 @@
 
 # Scala.js typings for jest-serializer
 
-Typings are for version 24.9.0
+Typings are for version 28.0.0
 
 ## Library description:
-Module for serializing and deserializing object into memory and disk. By default, the `v8` implementations are used, but if not present, it defaults to `JSON` implementation. Both serializers have the advantage of being able to serialize `Map`, `Set`, `un
+> DEPRECATED: Use `v8` APIs directly: https://nodejs.org/api/v8.html#serialization-api
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | jest-serializer |
 | Keywords           | - |
-| # releases         | 30 |
-| # dependents       | 47 |
-| # downloads        | 409914596 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 8.654315666666667E7 |
+| # stars            | 39523.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

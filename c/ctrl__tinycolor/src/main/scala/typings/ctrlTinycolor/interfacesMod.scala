@@ -104,7 +104,7 @@ object interfacesMod {
   
   type Numberify[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: number}
-    */ typings.ctrlTinycolor.ctrlTinycolorStrings.Numberify & TopLevel[js.Any]
+    */ typings.ctrlTinycolor.ctrlTinycolorStrings.Numberify & TopLevel[Any]
   
   trait RGB
     extends StObject

@@ -7,13 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object MailboxEnums {
   
   /**
+    * Specifies the type of custom action in a notification message.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.10]
+    */
+  @JSGlobal("Office.MailboxEnums.ActionType")
+  @js.native
+  object ActionType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.officeJs.Office.MailboxEnums.ActionType & String] = js.native
+    
+    /* "showTaskPane" */ val ShowTaskPane: typings.officeJs.Office.MailboxEnums.ActionType.ShowTaskPane & String = js.native
+  }
+  
+  /**
     * Specifies the formatting that applies to an attachment's content.
-    * 
+    *
+    * @remarks
     * [Api set: Mailbox 1.8]
     * 
-    * @remarks
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.AttachmentContentFormat")
   @js.native
@@ -34,11 +49,10 @@ object MailboxEnums {
   /**
     * Specifies whether an attachment was added to or removed from an item.
     * 
+    * @remarks
     * [Api set: Mailbox 1.8]
     * 
-    * @remarks
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.AttachmentStatus")
   @js.native
@@ -57,7 +71,7 @@ object MailboxEnums {
     *
     * @remarks
     * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.AttachmentType")
   @js.native
@@ -79,11 +93,10 @@ object MailboxEnums {
     * **Note**: The actual color depends on how the Outlook client renders it.
     * In this case, the colors noted on each preset are for the Outlook desktop client.
     * 
+    * @remarks
     * [Api set: Mailbox 1.8]
     * 
-    * @remarks
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.CategoryColor")
   @js.native
@@ -146,13 +159,34 @@ object MailboxEnums {
   }
   
   /**
-    * Specifies the day of week or type of day.
-    *
-    * [Api set: Mailbox 1.7]
+    * Specifies a message's compose type.
     *
     * @remarks
+    * [Api set: Mailbox 1.10]
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+    */
+  @JSGlobal("Office.MailboxEnums.ComposeType")
+  @js.native
+  object ComposeType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.officeJs.Office.MailboxEnums.ComposeType & String] = js.native
+    
+    /* "forward" */ val Forward: typings.officeJs.Office.MailboxEnums.ComposeType.Forward & String = js.native
+    
+    /* "newMail" */ val NewMail: typings.officeJs.Office.MailboxEnums.ComposeType.NewMail & String = js.native
+    
+    /* "reply" */ val Reply: typings.officeJs.Office.MailboxEnums.ComposeType.Reply & String = js.native
+  }
+  
+  /**
+    * Specifies the day of week or type of day.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.7]
     * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.Days")
   @js.native
@@ -183,13 +217,12 @@ object MailboxEnums {
   }
   
   /**
-    * This bit mask represents a delegate's permissions on a shared folder.
-    *
-    * [Api set: Mailbox 1.8]
+    * This bitmask represents a delegate's permissions on a shared folder.
     *
     * @remarks
+    * [Api set: Mailbox 1.8]
     * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.DelegatePermissions")
   @js.native
@@ -216,7 +249,7 @@ object MailboxEnums {
     *
     * @remarks
     * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.EntityType")
   @js.native
@@ -241,13 +274,50 @@ object MailboxEnums {
   }
   
   /**
-    * Specifies the notification message type for an appointment or message.
-    *
-    * [Api set: Mailbox 1.3]
+    * Action types supported by {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType.InfobarClicked}.
     *
     * @remarks
+    * [Api set: Mailbox 1.10]
+    */
+  @JSGlobal("Office.MailboxEnums.InfobarActionType")
+  @js.native
+  object InfobarActionType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.officeJs.Office.MailboxEnums.InfobarActionType & Double] = js.native
+    
+    /* 1 */ val Dismiss: typings.officeJs.Office.MailboxEnums.InfobarActionType.Dismiss & Double = js.native
+  }
+  
+  /**
+    * Type of notification allowed by {@link https://learn.microsoft.com/javascript/api/office/office.eventtype | Office.EventType.InfobarClicked}.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.10]
+    */
+  @JSGlobal("Office.MailboxEnums.InfobarType")
+  @js.native
+  object InfobarType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.officeJs.Office.MailboxEnums.InfobarType & Double] = js.native
+    
+    /* 2 */ val Error: typings.officeJs.Office.MailboxEnums.InfobarType.Error & Double = js.native
+    
+    /* 0 */ val Informational: typings.officeJs.Office.MailboxEnums.InfobarType.Informational & Double = js.native
+    
+    /* 3 */ val Insight: typings.officeJs.Office.MailboxEnums.InfobarType.Insight & Double = js.native
+    
+    /* 1 */ val ProgressIndicator: typings.officeJs.Office.MailboxEnums.InfobarType.ProgressIndicator & Double = js.native
+  }
+  
+  /**
+    * Specifies the notification message type for an appointment or message.
+    *
+    * @remarks
+    * [Api set: Mailbox 1.3]
     * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.ItemNotificationMessageType")
   @js.native
@@ -260,6 +330,8 @@ object MailboxEnums {
     
     /* "informationalMessage" */ val InformationalMessage: typings.officeJs.Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage & String = js.native
     
+    /* "insightMessage" */ val InsightMessage: typings.officeJs.Office.MailboxEnums.ItemNotificationMessageType.InsightMessage & String = js.native
+    
     /* "progressIndicator" */ val ProgressIndicator: typings.officeJs.Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator & String = js.native
   }
   
@@ -268,7 +340,7 @@ object MailboxEnums {
     *
     * @remarks
     * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.ItemType")
   @js.native
@@ -285,11 +357,10 @@ object MailboxEnums {
   /**
     * Specifies an appointment location's type.
     * 
+    * @remarks
     * [Api set: Mailbox 1.8]
     * 
-    * @remarks
-    * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.LocationType")
   @js.native
@@ -306,11 +377,10 @@ object MailboxEnums {
   /**
     * Specifies the month.
     * 
-    * [Api set: Mailbox 1.7]
-    *
     * @remarks
+    * [Api set: Mailbox 1.7]
     * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.Month")
   @js.native
@@ -362,13 +432,17 @@ object MailboxEnums {
   }
   
   /**
-    * Specifies the type of recipient for an appointment.
-    *
-    * [Api set: Mailbox 1.1]
+    * Specifies the type of recipient of a message or appointment.
     *
     * @remarks
+    * [Api set: Mailbox 1.1]
     * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * 
+    * **Important**: A `recipientType` property value isn't returned by the 
+    * {@link https://learn.microsoft.com/javascript/api/outlook/office.from?view=outlook-js-1.7#outlook-office-from-getasync-member(1) | Office.context.mailbox.item.from.getAsync} 
+    * and {@link https://learn.microsoft.com/javascript/api/outlook/office.organizer?view=outlook-js-1.7#outlook-office-organizer-getasync-member(1) | Office.context.mailbox.item.organizer.getAsync} methods.
+    * The email sender or appointment organizer is always a user whose email address is on the Exchange server.
     */
   @JSGlobal("Office.MailboxEnums.RecipientType")
   @js.native
@@ -389,11 +463,10 @@ object MailboxEnums {
   /**
     * Specifies the time zone applied to the recurrence.
     * 
-    * [Api set: Mailbox 1.7]
-    *
     * @remarks
+    * [Api set: Mailbox 1.7]
     * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.RecurrenceTimeZone")
   @js.native
@@ -678,11 +751,10 @@ object MailboxEnums {
   /**
     * Specifies the type of recurrence.
     * 
-    * [Api set: Mailbox 1.7]
-    *
     * @remarks
+    * [Api set: Mailbox 1.7]
     * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.RecurrenceType")
   @js.native
@@ -707,7 +779,7 @@ object MailboxEnums {
     *
     * @remarks
     * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.ResponseType")
   @js.native
@@ -730,11 +802,10 @@ object MailboxEnums {
   /**
     * Specifies the version of the REST API that corresponds to a REST-formatted item ID.
     *
-    * [Api set: Mailbox 1.3]
-    *
     * @remarks
+    * [Api set: Mailbox 1.3]
     * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.RestVersion")
   @js.native
@@ -753,11 +824,10 @@ object MailboxEnums {
   /**
     * Specifies the source of the selected data in an item (see `Office.mailbox.item.getSelectedDataAsync` for details).
     * 
-    * [Api set: Mailbox 1.2]
-    *
     * @remarks
+    * [Api set: Mailbox 1.2]
     * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     */
   @JSGlobal("Office.MailboxEnums.SourceProperty")
   @js.native
@@ -774,11 +844,10 @@ object MailboxEnums {
   /**
     * Specifies the week of the month.
     * 
-    * [Api set: Mailbox 1.7]
-    *
     * @remarks
+    * [Api set: Mailbox 1.7]
     * 
-    * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
   @JSGlobal("Office.MailboxEnums.WeekNumber")
   @js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for lingui__core
 
-Typings are for version 2.7
+Typings are for version 3.14.0
 
 ## Library description:
 I18n tools for javascript
@@ -10,10 +10,10 @@ I18n tools for javascript
 | ------------------ | :-------------: |
 | Full name          | @lingui/core |
 | Keywords           | i18n, i10n, i9n, internationalization, localization, translation |
-| # releases         | 38 |
-| # dependents       | 15 |
-| # downloads        | 4448586 |
-| # stars            | 0 |
+| # releases         | 53 |
+| # dependents       | 0.0 |
+| # downloads        | 421818.6666666667 |
+| # stars            | 3389.0 |
 
 ## Links
 - [Homepage](https://github.com/lingui/js-lingui#readme)
@@ -24,7 +24,7 @@ I18n tools for javascript
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

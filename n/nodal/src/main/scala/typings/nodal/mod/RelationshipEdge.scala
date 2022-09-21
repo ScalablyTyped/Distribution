@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodal", "RelationshipEdge")
 @js.native
-class RelationshipEdge protected () extends StObject {
+open class RelationshipEdge protected () extends StObject {
   def this(parent: RelationshipNode, child: RelationshipNode, options: IOptions) = this()
   
   var child: RelationshipNode = js.native

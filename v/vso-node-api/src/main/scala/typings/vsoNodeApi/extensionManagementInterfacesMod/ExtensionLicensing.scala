@@ -22,6 +22,6 @@ object ExtensionLicensing {
     
     inline def setOverrides(value: js.Array[LicensingOverride]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
-    inline def setOverridesVarargs(value: LicensingOverride*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: LicensingOverride*): Self = StObject.set(x, "overrides", js.Array(value*))
   }
 }

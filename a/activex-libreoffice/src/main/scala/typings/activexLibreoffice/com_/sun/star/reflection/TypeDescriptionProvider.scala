@@ -30,9 +30,9 @@ object TypeDescriptionProvider {
     addEventListener: XEventListener => Unit,
     createTypeDescriptionEnumeration: (String, SeqEquiv[TypeClass], TypeDescriptionSearchDepth) => XTypeDescriptionEnumeration,
     dispose: () => Unit,
-    getByHierarchicalName: String => js.Any,
+    getByHierarchicalName: String => Any,
     hasByHierarchicalName: String => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit
   ): TypeDescriptionProvider = {

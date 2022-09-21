@@ -18,7 +18,7 @@ trait MappedDataField extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Value: String
   
@@ -34,7 +34,7 @@ object MappedDataField {
     DataFieldName: String,
     Index: Double,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Value: String,
     WordDotMappedDataField_typekey: MappedDataField
   ): MappedDataField = {
@@ -57,7 +57,7 @@ object MappedDataField {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     

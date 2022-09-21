@@ -12,7 +12,7 @@ trait DeleteResourcePolicyRequest extends StObject {
   var PolicyHashCondition: js.UndefOr[HashString] = js.undefined
   
   /**
-    * The ARN of the AWS Glue resource for the resource policy to be deleted.
+    * The ARN of the Glue resource for the resource policy to be deleted.
     */
   var ResourceArn: js.UndefOr[GlueResourceArn] = js.undefined
 }

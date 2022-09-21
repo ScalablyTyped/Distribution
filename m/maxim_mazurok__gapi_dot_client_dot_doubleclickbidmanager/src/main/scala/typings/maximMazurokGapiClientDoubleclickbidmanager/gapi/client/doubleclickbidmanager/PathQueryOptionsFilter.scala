@@ -9,10 +9,10 @@ trait PathQueryOptionsFilter extends StObject {
   /** Dimension the filter is applied to. */
   var filter: js.UndefOr[String] = js.undefined
   
-  /** Indicates how the filter should be matched to the value. */
+  /** Match logic of the filter. */
   var `match`: js.UndefOr[String] = js.undefined
   
-  /** Value to filter on. */
+  /** Values to filter on. */
   var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PathQueryOptionsFilter {
@@ -36,6 +36,6 @@ object PathQueryOptionsFilter {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

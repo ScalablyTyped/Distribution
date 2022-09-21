@@ -10,10 +10,10 @@ Ansi codes, figlet fonts, and ascii art. 100% JS
 | ------------------ | :-------------: |
 | Full name          | ascii-art |
 | Keywords           | ascii, figlet, ansi, terminal, text, command-line, logging, log, xterm, shell, 256, rgb, formatting, tty, styles, style, str, string, cli, console, terminal, table, compositing, colors, colour, color, chalk |
-| # releases         | 17 |
-| # dependents       | 59 |
-| # downloads        | 94410 |
-| # stars            | 18 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 3490.3333333333335 |
+| # stars            | 548.0 |
 
 ## Links
 - [Homepage](https://github.com/khrome/ascii-art)

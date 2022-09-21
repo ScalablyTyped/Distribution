@@ -9,37 +9,58 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object configurationsMod {
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/configurations", JSImport.Namespace)
+  @JSImport("@aws-sdk/middleware-retry/dist-types/configurations", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/configurations", "CONFIG_MAX_ATTEMPTS")
+  @JSImport("@aws-sdk/middleware-retry/dist-types/configurations", "CONFIG_MAX_ATTEMPTS")
   @js.native
   val CONFIG_MAX_ATTEMPTS: /* "max_attempts" */ String = js.native
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/configurations", "CONFIG_RETRY_MODE")
+  @JSImport("@aws-sdk/middleware-retry/dist-types/configurations", "CONFIG_RETRY_MODE")
   @js.native
   val CONFIG_RETRY_MODE: /* "retry_mode" */ String = js.native
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/configurations", "ENV_MAX_ATTEMPTS")
+  @JSImport("@aws-sdk/middleware-retry/dist-types/configurations", "ENV_MAX_ATTEMPTS")
   @js.native
   val ENV_MAX_ATTEMPTS: /* "AWS_MAX_ATTEMPTS" */ String = js.native
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/configurations", "ENV_RETRY_MODE")
+  @JSImport("@aws-sdk/middleware-retry/dist-types/configurations", "ENV_RETRY_MODE")
   @js.native
   val ENV_RETRY_MODE: /* "AWS_RETRY_MODE" */ String = js.native
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/configurations", "NODE_MAX_ATTEMPT_CONFIG_OPTIONS")
+  @JSImport("@aws-sdk/middleware-retry/dist-types/configurations", "NODE_MAX_ATTEMPT_CONFIG_OPTIONS")
   @js.native
   val NODE_MAX_ATTEMPT_CONFIG_OPTIONS: LoadedConfigSelectors[Double] = js.native
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/configurations", "NODE_RETRY_MODE_CONFIG_OPTIONS")
+  @JSImport("@aws-sdk/middleware-retry/dist-types/configurations", "NODE_RETRY_MODE_CONFIG_OPTIONS")
   @js.native
   val NODE_RETRY_MODE_CONFIG_OPTIONS: LoadedConfigSelectors[String] = js.native
   
   inline def resolveRetryConfig[T](input: T & PreviouslyResolved & RetryInputConfig): T & RetryResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRetryConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & RetryResolvedConfig]
   
-  trait PreviouslyResolved extends StObject
+  trait PreviouslyResolved extends StObject {
+    
+    /**
+      * Specifies provider for retry algorithm to use.
+      * @internal
+      */
+    var retryMode: String | Provider[String]
+  }
+  object PreviouslyResolved {
+    
+    inline def apply(retryMode: String | Provider[String]): PreviouslyResolved = {
+      val __obj = js.Dynamic.literal(retryMode = retryMode.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PreviouslyResolved]
+    }
+    
+    extension [Self <: PreviouslyResolved](x: Self) {
+      
+      inline def setRetryMode(value: String | Provider[String]): Self = StObject.set(x, "retryMode", value.asInstanceOf[js.Any])
+      
+      inline def setRetryModeFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "retryMode", js.Any.fromFunction0(value))
+    }
+  }
   
   trait RetryInputConfig extends StObject {
     
@@ -76,16 +97,30 @@ object configurationsMod {
   
   trait RetryResolvedConfig extends StObject {
     
+    /**
+      * Resolved value for input config {@link RetryInputConfig.maxAttempts}
+      */
     def maxAttempts(): js.Promise[Double]
+    /**
+      * Resolved value for input config {@link RetryInputConfig.maxAttempts}
+      */
     @JSName("maxAttempts")
     var maxAttempts_Original: Provider[Double]
     
-    var retryStrategy: RetryStrategy
+    /**
+      * Resolved value for input config {@link RetryInputConfig.retryStrategy}
+      */
+    def retryStrategy(): js.Promise[RetryStrategy]
+    /**
+      * Resolved value for input config {@link RetryInputConfig.retryStrategy}
+      */
+    @JSName("retryStrategy")
+    var retryStrategy_Original: Provider[RetryStrategy]
   }
   object RetryResolvedConfig {
     
-    inline def apply(maxAttempts: () => js.Promise[Double], retryStrategy: RetryStrategy): RetryResolvedConfig = {
-      val __obj = js.Dynamic.literal(maxAttempts = js.Any.fromFunction0(maxAttempts), retryStrategy = retryStrategy.asInstanceOf[js.Any])
+    inline def apply(maxAttempts: () => js.Promise[Double], retryStrategy: () => js.Promise[RetryStrategy]): RetryResolvedConfig = {
+      val __obj = js.Dynamic.literal(maxAttempts = js.Any.fromFunction0(maxAttempts), retryStrategy = js.Any.fromFunction0(retryStrategy))
       __obj.asInstanceOf[RetryResolvedConfig]
     }
     
@@ -93,7 +128,7 @@ object configurationsMod {
       
       inline def setMaxAttempts(value: () => js.Promise[Double]): Self = StObject.set(x, "maxAttempts", js.Any.fromFunction0(value))
       
-      inline def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
+      inline def setRetryStrategy(value: () => js.Promise[RetryStrategy]): Self = StObject.set(x, "retryStrategy", js.Any.fromFunction0(value))
     }
   }
 }

@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the chart axis title formatting.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -22,9 +22,9 @@ trait ChartAxisTitleFormat
      with ClientObject {
   
   /**
-    *
     * Specifies the chart axis title's border format, which includes color, linestyle, and weight.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val border: ChartBorder = js.native
@@ -34,17 +34,17 @@ trait ChartAxisTitleFormat
   var context_ChartAxisTitleFormat: RequestContext = js.native
   
   /**
-    *
     * Specifies the chart axis title's fill formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val fill: ChartFill = js.native
   
   /**
+    * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.
     *
-    * Specifies the chart axis title's font attributes, such as font name, font size, color, etc. of chart axis title object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val font: ChartFont = js.native
@@ -62,14 +62,8 @@ trait ChartAxisTitleFormat
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartAxisTitleFormat): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartAxisTitleFormat): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

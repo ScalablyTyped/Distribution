@@ -1,16 +1,18 @@
 package typings.luxon
 
-import typings.luxon.mod.CalendarSystem
-import typings.luxon.mod.ConversionAccuracy
-import typings.luxon.mod.DurationUnit
-import typings.luxon.mod.HourCycle
-import typings.luxon.mod.NumberUnitLength
-import typings.luxon.mod.NumberingSystem
-import typings.luxon.mod.StringUnitLength
-import typings.luxon.mod.ToISOFormat
-import typings.luxon.mod.ToRelativeUnit
-import typings.luxon.mod.UnitLength
-import typings.luxon.mod.ZoneOffsetFormat
+import typings.luxon.datetimeMod.ConversionAccuracy
+import typings.luxon.datetimeMod.DateTimeFormatPresetValue
+import typings.luxon.datetimeMod.DateTimeUnit
+import typings.luxon.datetimeMod.ToRelativeUnit
+import typings.luxon.durationMod.DurationUnit
+import typings.luxon.durationMod.ToISOFormat
+import typings.luxon.miscMod.CalendarSystem
+import typings.luxon.miscMod.HourCycle
+import typings.luxon.miscMod.NumberUnitLength
+import typings.luxon.miscMod.NumberingSystem
+import typings.luxon.miscMod.StringUnitLength
+import typings.luxon.miscMod.UnitLength
+import typings.luxon.zoneMod.ZoneOffsetFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,6 +49,10 @@ object luxonStrings {
   @js.native
   sealed trait DATETIME_MED_WITH_SECONDS extends StObject
   inline def DATETIME_MED_WITH_SECONDS: DATETIME_MED_WITH_SECONDS = "DATETIME_MED_WITH_SECONDS".asInstanceOf[DATETIME_MED_WITH_SECONDS]
+  
+  @js.native
+  sealed trait DATETIME_MED_WITH_WEEKDAY extends StObject
+  inline def DATETIME_MED_WITH_WEEKDAY: DATETIME_MED_WITH_WEEKDAY = "DATETIME_MED_WITH_WEEKDAY".asInstanceOf[DATETIME_MED_WITH_WEEKDAY]
   
   @js.native
   sealed trait DATETIME_SHORT extends StObject
@@ -157,6 +163,10 @@ object luxonStrings {
   inline def chinese: chinese = "chinese".asInstanceOf[chinese]
   
   @js.native
+  sealed trait constructor extends StObject
+  inline def constructor: constructor = "constructor".asInstanceOf[constructor]
+  
+  @js.native
   sealed trait coptic
     extends StObject
        with CalendarSystem
@@ -165,13 +175,13 @@ object luxonStrings {
   @js.native
   sealed trait day
     extends StObject
+       with DateTimeUnit
        with DurationUnit
   inline def day: day = "day".asInstanceOf[day]
   
   @js.native
   sealed trait days
     extends StObject
-       with DurationUnit
        with ToRelativeUnit
   inline def days: days = "days".asInstanceOf[days]
   
@@ -216,6 +226,10 @@ object luxonStrings {
     extends StObject
        with CalendarSystem
   inline def ethiopic: ethiopic = "ethiopic".asInstanceOf[ethiopic]
+  
+  @js.native
+  sealed trait expandFormat extends StObject
+  inline def expandFormat: expandFormat = "expandFormat".asInstanceOf[expandFormat]
   
   @js.native
   sealed trait extended
@@ -342,13 +356,13 @@ object luxonStrings {
   @js.native
   sealed trait hour
     extends StObject
+       with DateTimeUnit
        with DurationUnit
   inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
   sealed trait hours
     extends StObject
-       with DurationUnit
        with ToRelativeUnit
   inline def hours: hours = "hours".asInstanceOf[hours]
   
@@ -455,6 +469,7 @@ object luxonStrings {
   @js.native
   sealed trait long
     extends StObject
+       with DateTimeFormatPresetValue
        with StringUnitLength
        with UnitLength
   inline def long: long = "long".asInstanceOf[long]
@@ -472,14 +487,9 @@ object luxonStrings {
   @js.native
   sealed trait millisecond
     extends StObject
+       with DateTimeUnit
        with DurationUnit
   inline def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
-  
-  @js.native
-  sealed trait milliseconds
-    extends StObject
-       with DurationUnit
-  inline def milliseconds: milliseconds = "milliseconds".asInstanceOf[milliseconds]
   
   @js.native
   sealed trait min extends StObject
@@ -492,13 +502,13 @@ object luxonStrings {
   @js.native
   sealed trait minute
     extends StObject
+       with DateTimeUnit
        with DurationUnit
   inline def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
   sealed trait minutes
     extends StObject
-       with DurationUnit
        with ToRelativeUnit
   inline def minutes: minutes = "minutes".asInstanceOf[minutes]
   
@@ -517,6 +527,7 @@ object luxonStrings {
   @js.native
   sealed trait month
     extends StObject
+       with DateTimeUnit
        with DurationUnit
   inline def month: month = "month".asInstanceOf[month]
   
@@ -531,7 +542,6 @@ object luxonStrings {
   @js.native
   sealed trait months
     extends StObject
-       with DurationUnit
        with ToRelativeUnit
   inline def months: months = "months".asInstanceOf[months]
   
@@ -550,12 +560,17 @@ object luxonStrings {
   inline def narrow: narrow = "narrow".asInstanceOf[narrow]
   
   @js.native
+  sealed trait now extends StObject
+  inline def now: now = "now".asInstanceOf[now]
+  
+  @js.native
   sealed trait numberingSystem extends StObject
   inline def numberingSystem: numberingSystem = "numberingSystem".asInstanceOf[numberingSystem]
   
   @js.native
   sealed trait numeric
     extends StObject
+       with DateTimeFormatPresetValue
        with NumberUnitLength
        with UnitLength
   inline def numeric: numeric = "numeric".asInstanceOf[numeric]
@@ -587,6 +602,10 @@ object luxonStrings {
   inline def outputCalendar: outputCalendar = "outputCalendar".asInstanceOf[outputCalendar]
   
   @js.native
+  sealed trait parseFormatForOpts extends StObject
+  inline def parseFormatForOpts: parseFormatForOpts = "parseFormatForOpts".asInstanceOf[parseFormatForOpts]
+  
+  @js.native
   sealed trait persian
     extends StObject
        with CalendarSystem
@@ -599,13 +618,13 @@ object luxonStrings {
   @js.native
   sealed trait quarter
     extends StObject
+       with DateTimeUnit
        with DurationUnit
   inline def quarter: quarter = "quarter".asInstanceOf[quarter]
   
   @js.native
   sealed trait quarters
     extends StObject
-       with DurationUnit
        with ToRelativeUnit
   inline def quarters: quarters = "quarters".asInstanceOf[quarters]
   
@@ -614,8 +633,8 @@ object luxonStrings {
   inline def reconfigure: reconfigure = "reconfigure".asInstanceOf[reconfigure]
   
   @js.native
-  sealed trait resolvedLocaleOpts extends StObject
-  inline def resolvedLocaleOpts: resolvedLocaleOpts = "resolvedLocaleOpts".asInstanceOf[resolvedLocaleOpts]
+  sealed trait resolvedLocaleOptions extends StObject
+  inline def resolvedLocaleOptions: resolvedLocaleOptions = "resolvedLocaleOptions".asInstanceOf[resolvedLocaleOptions]
   
   @js.native
   sealed trait roc
@@ -626,13 +645,13 @@ object luxonStrings {
   @js.native
   sealed trait second
     extends StObject
+       with DateTimeUnit
        with DurationUnit
   inline def second: second = "second".asInstanceOf[second]
   
   @js.native
   sealed trait seconds
     extends StObject
-       with DurationUnit
        with ToRelativeUnit
   inline def seconds: seconds = "seconds".asInstanceOf[seconds]
   
@@ -651,6 +670,7 @@ object luxonStrings {
   @js.native
   sealed trait short
     extends StObject
+       with DateTimeFormatPresetValue
        with StringUnitLength
        with UnitLength
        with ZoneOffsetFormat
@@ -781,6 +801,10 @@ object luxonStrings {
   inline def toUTC: toUTC = "toUTC".asInstanceOf[toUTC]
   
   @js.native
+  sealed trait toUnixInteger extends StObject
+  inline def toUnixInteger: toUnixInteger = "toUnixInteger".asInstanceOf[toUnixInteger]
+  
+  @js.native
   sealed trait until extends StObject
   inline def until: until = "until".asInstanceOf[until]
   
@@ -794,6 +818,7 @@ object luxonStrings {
   @js.native
   sealed trait week
     extends StObject
+       with DateTimeUnit
        with DurationUnit
   inline def week: week = "week".asInstanceOf[week]
   
@@ -820,7 +845,6 @@ object luxonStrings {
   @js.native
   sealed trait weeks
     extends StObject
-       with DurationUnit
        with ToRelativeUnit
   inline def weeks: weeks = "weeks".asInstanceOf[weeks]
   
@@ -831,13 +855,13 @@ object luxonStrings {
   @js.native
   sealed trait year
     extends StObject
+       with DateTimeUnit
        with DurationUnit
   inline def year: year = "year".asInstanceOf[year]
   
   @js.native
   sealed trait years
     extends StObject
-       with DurationUnit
        with ToRelativeUnit
   inline def years: years = "years".asInstanceOf[years]
   

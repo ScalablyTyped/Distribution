@@ -7,44 +7,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnomalyMonitor extends StObject {
   
   /**
-    *  The date when the monitor was created. 
+    * The date when the monitor was created. 
     */
   var CreationDate: js.UndefOr[YearMonthDay] = js.undefined
   
   /**
-    *  The value for evaluated dimensions. 
+    * The value for evaluated dimensions. 
     */
   var DimensionalValueCount: js.UndefOr[NonNegativeInteger] = js.undefined
   
   /**
-    *  The date when the monitor last evaluated for anomalies. 
+    * The date when the monitor last evaluated for anomalies. 
     */
   var LastEvaluatedDate: js.UndefOr[YearMonthDay] = js.undefined
   
   /**
-    *  The date when the monitor was last updated. 
+    * The date when the monitor was last updated. 
     */
   var LastUpdatedDate: js.UndefOr[YearMonthDay] = js.undefined
   
   /**
-    *  The Amazon Resource Name (ARN) value. 
+    * The Amazon Resource Name (ARN) value. 
     */
   var MonitorArn: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  The dimensions to evaluate. 
+    * The dimensions to evaluate. 
     */
   var MonitorDimension: js.UndefOr[typings.awsSdk.costexplorerMod.MonitorDimension] = js.undefined
   
   /**
-    *  The name of the monitor. 
+    * The name of the monitor. 
     */
   var MonitorName: GenericString
   
   var MonitorSpecification: js.UndefOr[Expression] = js.undefined
   
   /**
-    *  The possible type values. 
+    * The possible type values. 
     */
   var MonitorType: typings.awsSdk.costexplorerMod.MonitorType
 }

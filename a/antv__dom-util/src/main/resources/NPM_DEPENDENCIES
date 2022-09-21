@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@antv/dom-util" : "2.0.2"
+      "@antv/dom-util" : "2.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@antv/dom-util" : "2.0.2"
+      "@antv/dom-util" : "2.0.4"
     }
   ],
   "compile-devDependencies" : [

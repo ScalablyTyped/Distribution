@@ -10,10 +10,10 @@ object dataUsageMod {
   
   @JSImport("material-ui/svg-icons/device/data-usage", JSImport.Default)
   @js.native
-  class default () extends DeviceDataUsage
+  open class default () extends DeviceDataUsage
   
   @JSImport("material-ui/svg-icons/device/data-usage", "DeviceDataUsage")
   @js.native
-  class DeviceDataUsage ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceDataUsage ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

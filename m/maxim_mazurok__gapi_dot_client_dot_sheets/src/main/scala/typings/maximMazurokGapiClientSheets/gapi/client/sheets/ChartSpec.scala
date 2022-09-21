@@ -9,7 +9,7 @@ trait ChartSpec extends StObject {
   /** The alternative text that describes the chart. This is often used for accessibility. */
   var altText: js.UndefOr[String] = js.undefined
   
-  /** The background color of the entire chart. Not applicable to Org charts. */
+  /** The background color of the entire chart. Not applicable to Org charts. Deprecated: Use background_color_style. */
   var backgroundColor: js.UndefOr[Color] = js.undefined
   
   /** The background color of the entire chart. Not applicable to Org charts. If background_color is also set, this field takes precedence. */
@@ -57,7 +57,7 @@ trait ChartSpec extends StObject {
   /** The subtitle of the chart. */
   var subtitle: js.UndefOr[String] = js.undefined
   
-  /** The subtitle text format. Strikethrough and underline are not supported. */
+  /** The subtitle text format. Strikethrough, underline, and link are not supported. */
   var subtitleTextFormat: js.UndefOr[TextFormat] = js.undefined
   
   /** The subtitle text position. This field is optional. */
@@ -66,7 +66,7 @@ trait ChartSpec extends StObject {
   /** The title of the chart. */
   var title: js.UndefOr[String] = js.undefined
   
-  /** The title text format. Strikethrough and underline are not supported. */
+  /** The title text format. Strikethrough, underline, and link are not supported. */
   var titleTextFormat: js.UndefOr[TextFormat] = js.undefined
   
   /** The title text position. This field is optional. */
@@ -119,7 +119,7 @@ object ChartSpec {
     
     inline def setFilterSpecsUndefined: Self = StObject.set(x, "filterSpecs", js.undefined)
     
-    inline def setFilterSpecsVarargs(value: FilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value :_*))
+    inline def setFilterSpecsVarargs(value: FilterSpec*): Self = StObject.set(x, "filterSpecs", js.Array(value*))
     
     inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
     
@@ -153,7 +153,7 @@ object ChartSpec {
     
     inline def setSortSpecsUndefined: Self = StObject.set(x, "sortSpecs", js.undefined)
     
-    inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value :_*))
+    inline def setSortSpecsVarargs(value: SortSpec*): Self = StObject.set(x, "sortSpecs", js.Array(value*))
     
     inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     

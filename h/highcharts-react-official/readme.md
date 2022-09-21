@@ -1,7 +1,7 @@
 
 # Scala.js typings for highcharts-react-official
 
-Typings are for version 3.0.0
+Typings are for version 3.1.0
 
 ## Library description:
 Official minimal [Highcharts](https://www.highcharts.com/) wrapper for React.
@@ -10,10 +10,10 @@ Official minimal [Highcharts](https://www.highcharts.com/) wrapper for React.
 | ------------------ | :-------------: |
 | Full name          | highcharts-react-official |
 | Keywords           | highcharts, highstock, highmaps, react |
-| # releases         | 12 |
-| # dependents       | 30 |
-| # downloads        | 4604507 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1150382.0 |
+| # stars            | 839.0 |
 
 ## Links
 - [Homepage](https://github.com/highcharts/highcharts-react#readme)

@@ -9,7 +9,7 @@ trait ResumableFileObject extends StObject {
   /**
     * an object containing any custom resume data for the file
     */
-  var customResumeData: js.UndefOr[js.Any] = js.undefined
+  var customResumeData: js.UndefOr[Any] = js.undefined
   
   /**
     * filename
@@ -40,7 +40,7 @@ object ResumableFileObject {
   
   extension [Self <: ResumableFileObject](x: Self) {
     
-    inline def setCustomResumeData(value: js.Any): Self = StObject.set(x, "customResumeData", value.asInstanceOf[js.Any])
+    inline def setCustomResumeData(value: Any): Self = StObject.set(x, "customResumeData", value.asInstanceOf[js.Any])
     
     inline def setCustomResumeDataUndefined: Self = StObject.set(x, "customResumeData", js.undefined)
     

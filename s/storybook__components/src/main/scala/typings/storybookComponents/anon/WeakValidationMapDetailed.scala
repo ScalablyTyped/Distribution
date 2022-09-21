@@ -2,6 +2,7 @@ package typings.storybookComponents.anon
 
 import typings.react.anon.Html
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEventHandler
@@ -57,7 +58,7 @@ import typings.storybookComponents.storybookComponentsStrings.none
 import typings.storybookComponents.storybookComponentsStrings.numeric
 import typings.storybookComponents.storybookComponentsStrings.off
 import typings.storybookComponents.storybookComponentsStrings.on
-import typings.storybookComponents.storybookComponentsStrings.other
+import typings.storybookComponents.storybookComponentsStrings.other_
 import typings.storybookComponents.storybookComponentsStrings.page
 import typings.storybookComponents.storybookComponentsStrings.polite
 import typings.storybookComponents.storybookComponentsStrings.popup
@@ -76,7 +77,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react.react.WeakValidationMap<react.react.DetailedHTMLProps<react.react.FormHTMLAttributes<std.HTMLFormElement>, std.HTMLFormElement> & @emotion/styled-base.@emotion/styled-base/types/helper.Omit<std.Pick<react.react.DetailedHTMLProps<react.react.FormHTMLAttributes<std.HTMLFormElement>, std.HTMLFormElement>, 'color' | 'translate' | 'hidden' | 'defaultChecked' | 'defaultValue' | 'suppressContentEditableWarning' | 'suppressHydrationWarning' | 'accessKey' | 'className' | 'contentEditable' | 'contextMenu' | 'dir' | 'draggable' | 'id' | 'lang' | 'placeholder' | 'slot' | 'spellCheck' | 'style' | 'tabIndex' | 'title' | 'radioGroup' | 'role' | 'about' | 'datatype' | 'inlist' | 'prefix' | 'property' | 'resource' | 'typeof' | 'vocab' | 'autoCapitalize' | 'autoCorrect' | 'autoSave' | 'itemProp' | 'itemScope' | 'itemType' | 'itemID' | 'itemRef' | 'results' | 'security' | 'unselectable' | 'inputMode' | 'is' | 'aria-activedescendant' | 'aria-atomic' | 'aria-autocomplete' | 'aria-busy' | 'aria-checked' | 'aria-colcount' | 'aria-colindex' | 'aria-colspan' | 'aria-controls' | 'aria-current' | 'aria-describedby' | 'aria-details' | 'aria-disabled' | 'aria-dropeffect' | 'aria-errormessage' | 'aria-expanded' | 'aria-flowto' | 'aria-grabbed' | 'aria-haspopup' | 'aria-hidden' | 'aria-invalid' | 'aria-keyshortcuts' | 'aria-label' | 'aria-labelledby' | 'aria-level' | 'aria-live' | 'aria-modal' | 'aria-multiline' | 'aria-multiselectable' | 'aria-orientation' | 'aria-owns' | 'aria-placeholder' | 'aria-posinset' | 'aria-pressed' | 'aria-readonly' | 'aria-relevant' | 'aria-required' | 'aria-roledescription' | 'aria-rowcount' | 'aria-rowindex' | 'aria-rowspan' | 'aria-selected' | 'aria-setsize' | 'aria-sort' | 'aria-valuemax' | 'aria-valuemin' | 'aria-valuenow' | 'aria-valuetext' | 'children' | 'dangerouslySetInnerHTML' | 'onCopy' | 'onCopyCapture' | 'onCut' | 'onCutCapture' | 'onPaste' | 'onPasteCapture' | 'onCompositionEnd' | 'onCompositionEndCapture' | 'onCompositionStart' | 'onCompositionStartCapture' | 'onCompositionUpdate' | 'onCompositionUpdateCapture' | 'onFocus' | 'onFocusCapture' | 'onBlur' | 'onBlurCapture' | 'onChange' | 'onChangeCapture' | 'onBeforeInput' | 'onBeforeInputCapture' | 'onInput' | 'onInputCapture' | 'onReset' | 'onResetCapture' | 'onSubmit' | 'onSubmitCapture' | 'onInvalid' | 'onInvalidCapture' | 'onLoad' | 'onLoadCapture' | 'onError' | 'onErrorCapture' | 'onKeyDown' | 'onKeyDownCapture' | 'onKeyPress' | 'onKeyPressCapture' | 'onKeyUp' | 'onKeyUpCapture' | 'onAbort' | 'onAbortCapture' | 'onCanPlay' | 'onCanPlayCapture' | 'onCanPlayThrough' | 'onCanPlayThroughCapture' | 'onDurationChange' | 'onDurationChangeCapture' | 'onEmptied' | 'onEmptiedCapture' | 'onEncrypted' | 'onEncryptedCapture' | 'onEnded' | 'onEndedCapture' | 'onLoadedData' | 'onLoadedDataCapture' | 'onLoadedMetadata' | 'onLoadedMetadataCapture' | 'onLoadStart' | 'onLoadStartCapture' | 'onPause' | 'onPauseCapture' | 'onPlay' | 'onPlayCapture' | 'onPlaying' | 'onPlayingCapture' | 'onProgress' | 'onProgressCapture' | 'onRateChange' | 'onRateChangeCapture' | 'onSeeked' | 'onSeekedCapture' | 'onSeeking' | 'onSeekingCapture' | 'onStalled' | 'onStalledCapture' | 'onSuspend' | 'onSuspendCapture' | 'onTimeUpdate' | 'onTimeUpdateCapture' | 'onVolumeChange' | 'onVolumeChangeCapture' | 'onWaiting' | 'onWaitingCapture' | 'onAuxClick' | 'onAuxClickCapture' | 'onClick' | 'onClickCapture' | 'onContextMenu' | 'onContextMenuCapture' | 'onDoubleClick' | 'onDoubleClickCapture' | 'onDrag' | 'onDragCapture' | 'onDragEnd' | 'onDragEndCapture' | 'onDragEnter' | 'onDragEnterCapture' | 'onDragExit' | 'onDragExitCapture' | 'onDragLeave' | 'onDragLeaveCapture' | 'onDragOver' | 'onDragOverCapture' | 'onDragStart' | 'onDragStartCapture' | 'onDrop' | 'onDropCapture' | 'onMouseDown' | 'onMouseDownCapture' | 'onMouseEnter' | 'onMouseLeave' | 'onMouseMove' | 'onMouseMoveCapture' | 'onMouseOut' | 'onMouseOutCapture' | 'onMouseOver' | 'onMouseOverCapture' | 'onMouseUp' | 'onMouseUpCapture' | 'onSelect' | 'onSelectCapture' | 'onTouchCancel' | 'onTouchCancelCapture' | 'onTouchEnd' | 'onTouchEndCapture' | 'onTouchMove' | 'onTouchMoveCapture' | 'onTouchStart' | 'onTouchStartCapture' | 'onPointerDown' | 'onPointerDownCapture' | 'onPointerMove' | 'onPointerMoveCapture' | 'onPointerUp' | 'onPointerUpCapture' | 'onPointerCancel' | 'onPointerCancelCapture' | 'onPointerEnter' | 'onPointerEnterCapture' | 'onPointerLeave' | 'onPointerLeaveCapture' | 'onPointerOver' | 'onPointerOverCapture' | 'onPointerOut' | 'onPointerOutCapture' | 'onGotPointerCapture' | 'onGotPointerCaptureCapture' | 'onLostPointerCapture' | 'onLostPointerCaptureCapture' | 'onScroll' | 'onScrollCapture' | 'onWheel' | 'onWheelCapture' | 'onAnimationStart' | 'onAnimationStartCapture' | 'onAnimationEnd' | 'onAnimationEndCapture' | 'onAnimationIteration' | 'onAnimationIterationCapture' | 'onTransitionEnd' | 'onTransitionEndCapture' | 'css' | 'name' | 'method' | 'target' | 'acceptCharset' | 'action' | 'autoComplete' | 'encType' | 'noValidate'>, 'theme'> & @emotion/styled-base.anon.0<@storybook/theming.@storybook/theming.Theme>> */
+/* Inlined react.react.WeakValidationMap<react.react.DetailedHTMLProps<react.react.FormHTMLAttributes<std.HTMLFormElement>, std.HTMLFormElement> & @storybook/theming.@storybook/theming.DistributiveOmit<std.Pick<react.react.ClassAttributes<std.HTMLFormElement> & react.react.FormHTMLAttributes<std.HTMLFormElement>, keyof react.react.FormHTMLAttributes<std.HTMLFormElement>>, 'theme'> & @storybook/theming.anon.1<@storybook/theming.@storybook/theming.Theme>> */
 trait WeakValidationMapDetailed extends StObject {
   
   var about: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
@@ -89,11 +90,11 @@ trait WeakValidationMapDetailed extends StObject {
   
   var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list | both | Null]]] = js.undefined
   
-  var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   
@@ -111,21 +112,21 @@ trait WeakValidationMapDetailed extends StObject {
   
   var `aria-details`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-disabled`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-disabled`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-dropeffect`: js.UndefOr[Validator[js.UndefOr[none | copy | execute | link | move | popup | Null]]] = js.undefined
   
   var `aria-errormessage`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-expanded`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-expanded`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-flowto`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-grabbed`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-grabbed`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-haspopup`: js.UndefOr[Validator[js.UndefOr[menu | listbox | tree | grid | dialog | Boolean | Null]]] = js.undefined
   
-  var `aria-hidden`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-hidden`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-invalid`: js.UndefOr[Validator[js.UndefOr[grammar | spelling | Boolean | Null]]] = js.undefined
   
@@ -139,11 +140,11 @@ trait WeakValidationMapDetailed extends StObject {
   
   var `aria-live`: js.UndefOr[Validator[js.UndefOr[off | assertive | polite | Null]]] = js.undefined
   
-  var `aria-modal`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-modal`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
-  var `aria-multiline`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-multiline`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
-  var `aria-multiselectable`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-multiselectable`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-orientation`: js.UndefOr[Validator[js.UndefOr[horizontal | vertical | Null]]] = js.undefined
   
@@ -155,7 +156,7 @@ trait WeakValidationMapDetailed extends StObject {
   
   var `aria-pressed`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   
-  var `aria-readonly`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-readonly`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-relevant`: js.UndefOr[
     Validator[
@@ -165,7 +166,7 @@ trait WeakValidationMapDetailed extends StObject {
     ]
   ] = js.undefined
   
-  var `aria-required`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-required`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-roledescription`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
@@ -175,11 +176,11 @@ trait WeakValidationMapDetailed extends StObject {
   
   var `aria-rowspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-selected`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-selected`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-setsize`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-sort`: js.UndefOr[Validator[js.UndefOr[none | ascending | descending | other | Null]]] = js.undefined
+  var `aria-sort`: js.UndefOr[Validator[js.UndefOr[none | ascending | descending | other_ | Null]]] = js.undefined
   
   var `aria-valuemax`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
@@ -207,8 +208,6 @@ trait WeakValidationMapDetailed extends StObject {
   
   var contextMenu: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var css: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var dangerouslySetInnerHTML: js.UndefOr[Validator[js.UndefOr[Html | Null]]] = js.undefined
   
   var datatype: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
@@ -227,7 +226,7 @@ trait WeakValidationMapDetailed extends StObject {
   
   var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var inlist: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
+  var inlist: js.UndefOr[Validator[js.UndefOr[Any | Null]]] = js.undefined
   
   var inputMode: js.UndefOr[
     Validator[js.UndefOr[none | text | tel | url | email | numeric | decimal | search | Null]]
@@ -257,179 +256,87 @@ trait WeakValidationMapDetailed extends StObject {
   
   var onAbort: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onAbortCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onAnimationEnd: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onAnimationEndCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onAnimationIteration: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onAnimationIterationCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onAnimationStart: js.UndefOr[Validator[js.UndefOr[AnimationEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onAnimationStartCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onAuxClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onAuxClickCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onBeforeInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onBeforeInputCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onBlur: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onBlurCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onCanPlay: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onCanPlayCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onCanPlayThrough: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onCanPlayThroughCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onChange: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onChangeCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onClickCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onCompositionEnd: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onCompositionEndCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onCompositionStart: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onCompositionStartCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onCompositionUpdate: js.UndefOr[Validator[js.UndefOr[CompositionEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onCompositionUpdateCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onContextMenu: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onContextMenuCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onCopy: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onCopyCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onCut: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onCutCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onDoubleClick: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onDoubleClickCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onDrag: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onDragCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onDragEnd: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onDragEndCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onDragEnter: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onDragEnterCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onDragExit: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onDragExitCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onDragLeave: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onDragLeaveCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onDragOver: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onDragOverCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onDragStart: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onDragStartCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onDrop: js.UndefOr[Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onDropCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onDurationChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onDurationChangeCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onEmptied: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onEmptiedCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onEncrypted: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onEncryptedCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onEnded: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onEndedCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onError: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onErrorCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onFocus: js.UndefOr[Validator[js.UndefOr[FocusEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onFocusCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
-  var onGotPointerCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
-  var onGotPointerCaptureCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onInput: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onInputCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onInvalid: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onInvalidCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onKeyDown: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onKeyDownCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onKeyPress: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onKeyPressCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onKeyUp: js.UndefOr[Validator[js.UndefOr[KeyboardEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onKeyUpCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onLoad: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onLoadCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onLoadStart: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onLoadStartCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onLoadedData: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onLoadedDataCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onLoadedMetadata: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onLoadedMetadataCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
-  var onLostPointerCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
-  var onLostPointerCaptureCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onMouseDown: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onMouseDownCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onMouseEnter: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
@@ -437,143 +344,73 @@ trait WeakValidationMapDetailed extends StObject {
   
   var onMouseMove: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onMouseMoveCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onMouseOut: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onMouseOutCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onMouseOver: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onMouseOverCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onMouseUp: js.UndefOr[Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]] = js.undefined
-  
-  var onMouseUpCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onPaste: js.UndefOr[Validator[js.UndefOr[ClipboardEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onPasteCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onPause: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onPauseCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onPlay: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onPlayCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onPlaying: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onPlayingCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onPointerCancel: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onPointerCancelCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onPointerDown: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onPointerDownCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onPointerEnter: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onPointerEnterCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onPointerLeave: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onPointerLeaveCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onPointerMove: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onPointerMoveCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onPointerOut: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onPointerOutCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onPointerOver: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onPointerOverCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onPointerUp: js.UndefOr[Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onPointerUpCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onProgress: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onProgressCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onRateChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onRateChangeCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onReset: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onResetCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onScroll: js.UndefOr[Validator[js.UndefOr[Null | UIEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onScrollCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onSeeked: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onSeekedCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onSeeking: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onSeekingCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onSelect: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onSelectCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onStalled: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onStalledCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onSubmit: js.UndefOr[Validator[js.UndefOr[FormEventHandler[HTMLFormElement] | Null]]] = js.undefined
   
-  var onSubmitCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onSuspend: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onSuspendCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onTimeUpdate: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onTimeUpdateCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onTouchCancel: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onTouchCancelCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onTouchEnd: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onTouchEndCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onTouchMove: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onTouchMoveCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onTouchStart: js.UndefOr[Validator[js.UndefOr[Null | TouchEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onTouchStartCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onTransitionEnd: js.UndefOr[Validator[js.UndefOr[Null | TransitionEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onTransitionEndCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var onVolumeChange: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onVolumeChangeCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onWaiting: js.UndefOr[Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]] = js.undefined
   
-  var onWaitingCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
-  
   var onWheel: js.UndefOr[Validator[js.UndefOr[Null | WheelEventHandler[HTMLFormElement]]]] = js.undefined
-  
-  var onWheelCapture: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
   
   var placeholder: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
@@ -585,11 +422,13 @@ trait WeakValidationMapDetailed extends StObject {
   
   var ref: js.UndefOr[Validator[js.UndefOr[LegacyRef[HTMLFormElement] | Null]]] = js.undefined
   
+  var rel: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  
   var resource: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
   var results: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  var role: js.UndefOr[Validator[js.UndefOr[AriaRole | Null]]] = js.undefined
   
   var security: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
@@ -607,7 +446,7 @@ trait WeakValidationMapDetailed extends StObject {
   
   var target: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var theme: js.UndefOr[Validator[js.UndefOr[Null | typings.storybookTheming.typesMod.Theme]]] = js.undefined
+  var theme: js.UndefOr[Validator[js.UndefOr[Null | typings.storybookTheming.mod.Theme]]] = js.undefined
   
   var title: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
@@ -648,7 +487,7 @@ object WeakValidationMapDetailed {
     
     inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
     
-    inline def `setAria-atomic`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+    inline def `setAria-atomic`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
     
     inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
@@ -656,7 +495,7 @@ object WeakValidationMapDetailed {
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
-    inline def `setAria-busy`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+    inline def `setAria-busy`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
     
     inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
     
@@ -692,7 +531,7 @@ object WeakValidationMapDetailed {
     
     inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
     
-    inline def `setAria-disabled`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+    inline def `setAria-disabled`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
     
     inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
@@ -704,7 +543,7 @@ object WeakValidationMapDetailed {
     
     inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
     
-    inline def `setAria-expanded`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+    inline def `setAria-expanded`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
     
     inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
     
@@ -712,7 +551,7 @@ object WeakValidationMapDetailed {
     
     inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
     
-    inline def `setAria-grabbed`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+    inline def `setAria-grabbed`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
     
     inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
@@ -720,7 +559,7 @@ object WeakValidationMapDetailed {
     
     inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
-    inline def `setAria-hidden`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+    inline def `setAria-hidden`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
     
     inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
     
@@ -748,15 +587,15 @@ object WeakValidationMapDetailed {
     
     inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
     
-    inline def `setAria-modal`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+    inline def `setAria-modal`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
     
     inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
     
-    inline def `setAria-multiline`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+    inline def `setAria-multiline`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
     
     inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
     
-    inline def `setAria-multiselectable`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+    inline def `setAria-multiselectable`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
     
     inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
     
@@ -780,7 +619,7 @@ object WeakValidationMapDetailed {
     
     inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
     
-    inline def `setAria-readonly`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+    inline def `setAria-readonly`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
     
     inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
     
@@ -794,7 +633,7 @@ object WeakValidationMapDetailed {
     
     inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
     
-    inline def `setAria-required`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+    inline def `setAria-required`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
     
     inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
     
@@ -814,7 +653,7 @@ object WeakValidationMapDetailed {
     
     inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
     
-    inline def `setAria-selected`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+    inline def `setAria-selected`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
     
     inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
     
@@ -822,7 +661,7 @@ object WeakValidationMapDetailed {
     
     inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
     
-    inline def `setAria-sort`(value: Validator[js.UndefOr[none | ascending | descending | other | Null]]): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+    inline def `setAria-sort`(value: Validator[js.UndefOr[none | ascending | descending | other_ | Null]]): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
     
     inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
     
@@ -878,10 +717,6 @@ object WeakValidationMapDetailed {
     
     inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
     
-    inline def setCss(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
-    
-    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
-    
     inline def setDangerouslySetInnerHTML(value: Validator[js.UndefOr[Html | Null]]): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
     
     inline def setDangerouslySetInnerHTMLUndefined: Self = StObject.set(x, "dangerouslySetInnerHTML", js.undefined)
@@ -918,7 +753,7 @@ object WeakValidationMapDetailed {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setInlist(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+    inline def setInlist(value: Validator[js.UndefOr[Any | Null]]): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
     
@@ -972,71 +807,35 @@ object WeakValidationMapDetailed {
     
     inline def setOnAbort(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onAbort", value.asInstanceOf[js.Any])
     
-    inline def setOnAbortCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onAbortCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnAbortCaptureUndefined: Self = StObject.set(x, "onAbortCapture", js.undefined)
-    
     inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
     
     inline def setOnAnimationEnd(value: Validator[js.UndefOr[AnimationEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onAnimationEnd", value.asInstanceOf[js.Any])
-    
-    inline def setOnAnimationEndCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onAnimationEndCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnAnimationEndCaptureUndefined: Self = StObject.set(x, "onAnimationEndCapture", js.undefined)
     
     inline def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
     
     inline def setOnAnimationIteration(value: Validator[js.UndefOr[AnimationEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onAnimationIteration", value.asInstanceOf[js.Any])
     
-    inline def setOnAnimationIterationCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onAnimationIterationCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnAnimationIterationCaptureUndefined: Self = StObject.set(x, "onAnimationIterationCapture", js.undefined)
-    
     inline def setOnAnimationIterationUndefined: Self = StObject.set(x, "onAnimationIteration", js.undefined)
     
     inline def setOnAnimationStart(value: Validator[js.UndefOr[AnimationEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onAnimationStart", value.asInstanceOf[js.Any])
-    
-    inline def setOnAnimationStartCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onAnimationStartCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnAnimationStartCaptureUndefined: Self = StObject.set(x, "onAnimationStartCapture", js.undefined)
     
     inline def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
     
     inline def setOnAuxClick(value: Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onAuxClick", value.asInstanceOf[js.Any])
     
-    inline def setOnAuxClickCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onAuxClickCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnAuxClickCaptureUndefined: Self = StObject.set(x, "onAuxClickCapture", js.undefined)
-    
     inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
     
     inline def setOnBeforeInput(value: Validator[js.UndefOr[FormEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onBeforeInput", value.asInstanceOf[js.Any])
-    
-    inline def setOnBeforeInputCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onBeforeInputCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnBeforeInputCaptureUndefined: Self = StObject.set(x, "onBeforeInputCapture", js.undefined)
     
     inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
     
     inline def setOnBlur(value: Validator[js.UndefOr[FocusEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
     
-    inline def setOnBlurCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onBlurCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnBlurCaptureUndefined: Self = StObject.set(x, "onBlurCapture", js.undefined)
-    
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     inline def setOnCanPlay(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onCanPlay", value.asInstanceOf[js.Any])
     
-    inline def setOnCanPlayCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onCanPlayCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnCanPlayCaptureUndefined: Self = StObject.set(x, "onCanPlayCapture", js.undefined)
-    
     inline def setOnCanPlayThrough(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onCanPlayThrough", value.asInstanceOf[js.Any])
-    
-    inline def setOnCanPlayThroughCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onCanPlayThroughCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnCanPlayThroughCaptureUndefined: Self = StObject.set(x, "onCanPlayThroughCapture", js.undefined)
     
     inline def setOnCanPlayThroughUndefined: Self = StObject.set(x, "onCanPlayThrough", js.undefined)
     
@@ -1044,127 +843,63 @@ object WeakValidationMapDetailed {
     
     inline def setOnChange(value: Validator[js.UndefOr[FormEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
     
-    inline def setOnChangeCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onChangeCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnChangeCaptureUndefined: Self = StObject.set(x, "onChangeCapture", js.undefined)
-    
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     inline def setOnClick(value: Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
-    
-    inline def setOnClickCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onClickCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnClickCaptureUndefined: Self = StObject.set(x, "onClickCapture", js.undefined)
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     inline def setOnCompositionEnd(value: Validator[js.UndefOr[CompositionEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onCompositionEnd", value.asInstanceOf[js.Any])
     
-    inline def setOnCompositionEndCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onCompositionEndCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnCompositionEndCaptureUndefined: Self = StObject.set(x, "onCompositionEndCapture", js.undefined)
-    
     inline def setOnCompositionEndUndefined: Self = StObject.set(x, "onCompositionEnd", js.undefined)
     
     inline def setOnCompositionStart(value: Validator[js.UndefOr[CompositionEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onCompositionStart", value.asInstanceOf[js.Any])
-    
-    inline def setOnCompositionStartCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onCompositionStartCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnCompositionStartCaptureUndefined: Self = StObject.set(x, "onCompositionStartCapture", js.undefined)
     
     inline def setOnCompositionStartUndefined: Self = StObject.set(x, "onCompositionStart", js.undefined)
     
     inline def setOnCompositionUpdate(value: Validator[js.UndefOr[CompositionEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onCompositionUpdate", value.asInstanceOf[js.Any])
     
-    inline def setOnCompositionUpdateCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onCompositionUpdateCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnCompositionUpdateCaptureUndefined: Self = StObject.set(x, "onCompositionUpdateCapture", js.undefined)
-    
     inline def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
     
     inline def setOnContextMenu(value: Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onContextMenu", value.asInstanceOf[js.Any])
-    
-    inline def setOnContextMenuCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onContextMenuCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnContextMenuCaptureUndefined: Self = StObject.set(x, "onContextMenuCapture", js.undefined)
     
     inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
     
     inline def setOnCopy(value: Validator[js.UndefOr[ClipboardEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onCopy", value.asInstanceOf[js.Any])
     
-    inline def setOnCopyCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onCopyCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnCopyCaptureUndefined: Self = StObject.set(x, "onCopyCapture", js.undefined)
-    
     inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
     
     inline def setOnCut(value: Validator[js.UndefOr[ClipboardEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onCut", value.asInstanceOf[js.Any])
-    
-    inline def setOnCutCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onCutCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnCutCaptureUndefined: Self = StObject.set(x, "onCutCapture", js.undefined)
     
     inline def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
     
     inline def setOnDoubleClick(value: Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onDoubleClick", value.asInstanceOf[js.Any])
     
-    inline def setOnDoubleClickCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDoubleClickCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnDoubleClickCaptureUndefined: Self = StObject.set(x, "onDoubleClickCapture", js.undefined)
-    
     inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
     
     inline def setOnDrag(value: Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onDrag", value.asInstanceOf[js.Any])
     
-    inline def setOnDragCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDragCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragCaptureUndefined: Self = StObject.set(x, "onDragCapture", js.undefined)
-    
     inline def setOnDragEnd(value: Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onDragEnd", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragEndCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDragEndCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragEndCaptureUndefined: Self = StObject.set(x, "onDragEndCapture", js.undefined)
     
     inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
     inline def setOnDragEnter(value: Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onDragEnter", value.asInstanceOf[js.Any])
     
-    inline def setOnDragEnterCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDragEnterCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragEnterCaptureUndefined: Self = StObject.set(x, "onDragEnterCapture", js.undefined)
-    
     inline def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
     
     inline def setOnDragExit(value: Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onDragExit", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragExitCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDragExitCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragExitCaptureUndefined: Self = StObject.set(x, "onDragExitCapture", js.undefined)
     
     inline def setOnDragExitUndefined: Self = StObject.set(x, "onDragExit", js.undefined)
     
     inline def setOnDragLeave(value: Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onDragLeave", value.asInstanceOf[js.Any])
     
-    inline def setOnDragLeaveCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDragLeaveCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragLeaveCaptureUndefined: Self = StObject.set(x, "onDragLeaveCapture", js.undefined)
-    
     inline def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
     
     inline def setOnDragOver(value: Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onDragOver", value.asInstanceOf[js.Any])
     
-    inline def setOnDragOverCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDragOverCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragOverCaptureUndefined: Self = StObject.set(x, "onDragOverCapture", js.undefined)
-    
     inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
     
     inline def setOnDragStart(value: Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onDragStart", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragStartCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDragStartCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnDragStartCaptureUndefined: Self = StObject.set(x, "onDragStartCapture", js.undefined)
     
     inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
@@ -1172,119 +907,55 @@ object WeakValidationMapDetailed {
     
     inline def setOnDrop(value: Validator[js.UndefOr[DragEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onDrop", value.asInstanceOf[js.Any])
     
-    inline def setOnDropCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDropCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnDropCaptureUndefined: Self = StObject.set(x, "onDropCapture", js.undefined)
-    
     inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
     
     inline def setOnDurationChange(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onDurationChange", value.asInstanceOf[js.Any])
-    
-    inline def setOnDurationChangeCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onDurationChangeCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnDurationChangeCaptureUndefined: Self = StObject.set(x, "onDurationChangeCapture", js.undefined)
     
     inline def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
     
     inline def setOnEmptied(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onEmptied", value.asInstanceOf[js.Any])
     
-    inline def setOnEmptiedCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onEmptiedCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnEmptiedCaptureUndefined: Self = StObject.set(x, "onEmptiedCapture", js.undefined)
-    
     inline def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
     
     inline def setOnEncrypted(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onEncrypted", value.asInstanceOf[js.Any])
-    
-    inline def setOnEncryptedCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onEncryptedCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnEncryptedCaptureUndefined: Self = StObject.set(x, "onEncryptedCapture", js.undefined)
     
     inline def setOnEncryptedUndefined: Self = StObject.set(x, "onEncrypted", js.undefined)
     
     inline def setOnEnded(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onEnded", value.asInstanceOf[js.Any])
     
-    inline def setOnEndedCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onEndedCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnEndedCaptureUndefined: Self = StObject.set(x, "onEndedCapture", js.undefined)
-    
     inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
     
     inline def setOnError(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
-    
-    inline def setOnErrorCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onErrorCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnErrorCaptureUndefined: Self = StObject.set(x, "onErrorCapture", js.undefined)
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     inline def setOnFocus(value: Validator[js.UndefOr[FocusEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
     
-    inline def setOnFocusCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onFocusCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnFocusCaptureUndefined: Self = StObject.set(x, "onFocusCapture", js.undefined)
-    
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
-    inline def setOnGotPointerCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onGotPointerCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnGotPointerCaptureCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onGotPointerCaptureCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnGotPointerCaptureCaptureUndefined: Self = StObject.set(x, "onGotPointerCaptureCapture", js.undefined)
-    
-    inline def setOnGotPointerCaptureUndefined: Self = StObject.set(x, "onGotPointerCapture", js.undefined)
-    
     inline def setOnInput(value: Validator[js.UndefOr[FormEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
-    
-    inline def setOnInputCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onInputCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnInputCaptureUndefined: Self = StObject.set(x, "onInputCapture", js.undefined)
     
     inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
     
     inline def setOnInvalid(value: Validator[js.UndefOr[FormEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onInvalid", value.asInstanceOf[js.Any])
     
-    inline def setOnInvalidCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onInvalidCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnInvalidCaptureUndefined: Self = StObject.set(x, "onInvalidCapture", js.undefined)
-    
     inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
     
     inline def setOnKeyDown(value: Validator[js.UndefOr[KeyboardEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onKeyDown", value.asInstanceOf[js.Any])
-    
-    inline def setOnKeyDownCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onKeyDownCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnKeyDownCaptureUndefined: Self = StObject.set(x, "onKeyDownCapture", js.undefined)
     
     inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     
     inline def setOnKeyPress(value: Validator[js.UndefOr[KeyboardEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onKeyPress", value.asInstanceOf[js.Any])
     
-    inline def setOnKeyPressCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onKeyPressCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnKeyPressCaptureUndefined: Self = StObject.set(x, "onKeyPressCapture", js.undefined)
-    
     inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
     
     inline def setOnKeyUp(value: Validator[js.UndefOr[KeyboardEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onKeyUp", value.asInstanceOf[js.Any])
-    
-    inline def setOnKeyUpCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onKeyUpCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnKeyUpCaptureUndefined: Self = StObject.set(x, "onKeyUpCapture", js.undefined)
     
     inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
     
     inline def setOnLoad(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
     
-    inline def setOnLoadCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onLoadCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnLoadCaptureUndefined: Self = StObject.set(x, "onLoadCapture", js.undefined)
-    
     inline def setOnLoadStart(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onLoadStart", value.asInstanceOf[js.Any])
-    
-    inline def setOnLoadStartCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onLoadStartCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnLoadStartCaptureUndefined: Self = StObject.set(x, "onLoadStartCapture", js.undefined)
     
     inline def setOnLoadStartUndefined: Self = StObject.set(x, "onLoadStart", js.undefined)
     
@@ -1292,33 +963,13 @@ object WeakValidationMapDetailed {
     
     inline def setOnLoadedData(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onLoadedData", value.asInstanceOf[js.Any])
     
-    inline def setOnLoadedDataCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onLoadedDataCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnLoadedDataCaptureUndefined: Self = StObject.set(x, "onLoadedDataCapture", js.undefined)
-    
     inline def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
     
     inline def setOnLoadedMetadata(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onLoadedMetadata", value.asInstanceOf[js.Any])
     
-    inline def setOnLoadedMetadataCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onLoadedMetadataCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnLoadedMetadataCaptureUndefined: Self = StObject.set(x, "onLoadedMetadataCapture", js.undefined)
-    
     inline def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
     
-    inline def setOnLostPointerCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onLostPointerCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnLostPointerCaptureCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onLostPointerCaptureCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnLostPointerCaptureCaptureUndefined: Self = StObject.set(x, "onLostPointerCaptureCapture", js.undefined)
-    
-    inline def setOnLostPointerCaptureUndefined: Self = StObject.set(x, "onLostPointerCapture", js.undefined)
-    
     inline def setOnMouseDown(value: Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onMouseDown", value.asInstanceOf[js.Any])
-    
-    inline def setOnMouseDownCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onMouseDownCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnMouseDownCaptureUndefined: Self = StObject.set(x, "onMouseDownCapture", js.undefined)
     
     inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
@@ -1332,281 +983,141 @@ object WeakValidationMapDetailed {
     
     inline def setOnMouseMove(value: Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
     
-    inline def setOnMouseMoveCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onMouseMoveCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnMouseMoveCaptureUndefined: Self = StObject.set(x, "onMouseMoveCapture", js.undefined)
-    
     inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
     inline def setOnMouseOut(value: Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onMouseOut", value.asInstanceOf[js.Any])
-    
-    inline def setOnMouseOutCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onMouseOutCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnMouseOutCaptureUndefined: Self = StObject.set(x, "onMouseOutCapture", js.undefined)
     
     inline def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
     
     inline def setOnMouseOver(value: Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onMouseOver", value.asInstanceOf[js.Any])
     
-    inline def setOnMouseOverCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onMouseOverCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnMouseOverCaptureUndefined: Self = StObject.set(x, "onMouseOverCapture", js.undefined)
-    
     inline def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
     
     inline def setOnMouseUp(value: Validator[js.UndefOr[MouseEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onMouseUp", value.asInstanceOf[js.Any])
-    
-    inline def setOnMouseUpCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onMouseUpCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnMouseUpCaptureUndefined: Self = StObject.set(x, "onMouseUpCapture", js.undefined)
     
     inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
     
     inline def setOnPaste(value: Validator[js.UndefOr[ClipboardEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onPaste", value.asInstanceOf[js.Any])
     
-    inline def setOnPasteCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPasteCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnPasteCaptureUndefined: Self = StObject.set(x, "onPasteCapture", js.undefined)
-    
     inline def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
     
     inline def setOnPause(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onPause", value.asInstanceOf[js.Any])
-    
-    inline def setOnPauseCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPauseCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnPauseCaptureUndefined: Self = StObject.set(x, "onPauseCapture", js.undefined)
     
     inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
     
     inline def setOnPlay(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onPlay", value.asInstanceOf[js.Any])
     
-    inline def setOnPlayCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPlayCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnPlayCaptureUndefined: Self = StObject.set(x, "onPlayCapture", js.undefined)
-    
     inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
     
     inline def setOnPlaying(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onPlaying", value.asInstanceOf[js.Any])
-    
-    inline def setOnPlayingCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPlayingCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnPlayingCaptureUndefined: Self = StObject.set(x, "onPlayingCapture", js.undefined)
     
     inline def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
     
     inline def setOnPointerCancel(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onPointerCancel", value.asInstanceOf[js.Any])
     
-    inline def setOnPointerCancelCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerCancelCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerCancelCaptureUndefined: Self = StObject.set(x, "onPointerCancelCapture", js.undefined)
-    
     inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
     
     inline def setOnPointerDown(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onPointerDown", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerDownCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerDownCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerDownCaptureUndefined: Self = StObject.set(x, "onPointerDownCapture", js.undefined)
     
     inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
     
     inline def setOnPointerEnter(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onPointerEnter", value.asInstanceOf[js.Any])
     
-    inline def setOnPointerEnterCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerEnterCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerEnterCaptureUndefined: Self = StObject.set(x, "onPointerEnterCapture", js.undefined)
-    
     inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
     
     inline def setOnPointerLeave(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onPointerLeave", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerLeaveCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerLeaveCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerLeaveCaptureUndefined: Self = StObject.set(x, "onPointerLeaveCapture", js.undefined)
     
     inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
     
     inline def setOnPointerMove(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onPointerMove", value.asInstanceOf[js.Any])
     
-    inline def setOnPointerMoveCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerMoveCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerMoveCaptureUndefined: Self = StObject.set(x, "onPointerMoveCapture", js.undefined)
-    
     inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
     
     inline def setOnPointerOut(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onPointerOut", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerOutCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerOutCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerOutCaptureUndefined: Self = StObject.set(x, "onPointerOutCapture", js.undefined)
     
     inline def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
     
     inline def setOnPointerOver(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onPointerOver", value.asInstanceOf[js.Any])
     
-    inline def setOnPointerOverCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerOverCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerOverCaptureUndefined: Self = StObject.set(x, "onPointerOverCapture", js.undefined)
-    
     inline def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
     
     inline def setOnPointerUp(value: Validator[js.UndefOr[Null | PointerEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onPointerUp", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerUpCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onPointerUpCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnPointerUpCaptureUndefined: Self = StObject.set(x, "onPointerUpCapture", js.undefined)
     
     inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
     
     inline def setOnProgress(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onProgress", value.asInstanceOf[js.Any])
     
-    inline def setOnProgressCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onProgressCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnProgressCaptureUndefined: Self = StObject.set(x, "onProgressCapture", js.undefined)
-    
     inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
     
     inline def setOnRateChange(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onRateChange", value.asInstanceOf[js.Any])
-    
-    inline def setOnRateChangeCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onRateChangeCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnRateChangeCaptureUndefined: Self = StObject.set(x, "onRateChangeCapture", js.undefined)
     
     inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
     
     inline def setOnReset(value: Validator[js.UndefOr[FormEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onReset", value.asInstanceOf[js.Any])
     
-    inline def setOnResetCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onResetCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnResetCaptureUndefined: Self = StObject.set(x, "onResetCapture", js.undefined)
-    
     inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
     
     inline def setOnScroll(value: Validator[js.UndefOr[Null | UIEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
-    
-    inline def setOnScrollCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onScrollCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnScrollCaptureUndefined: Self = StObject.set(x, "onScrollCapture", js.undefined)
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
     inline def setOnSeeked(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onSeeked", value.asInstanceOf[js.Any])
     
-    inline def setOnSeekedCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onSeekedCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnSeekedCaptureUndefined: Self = StObject.set(x, "onSeekedCapture", js.undefined)
-    
     inline def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
     
     inline def setOnSeeking(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onSeeking", value.asInstanceOf[js.Any])
-    
-    inline def setOnSeekingCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onSeekingCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnSeekingCaptureUndefined: Self = StObject.set(x, "onSeekingCapture", js.undefined)
     
     inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
     
     inline def setOnSelect(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
     
-    inline def setOnSelectCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onSelectCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnSelectCaptureUndefined: Self = StObject.set(x, "onSelectCapture", js.undefined)
-    
     inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
     inline def setOnStalled(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onStalled", value.asInstanceOf[js.Any])
-    
-    inline def setOnStalledCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onStalledCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnStalledCaptureUndefined: Self = StObject.set(x, "onStalledCapture", js.undefined)
     
     inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
     
     inline def setOnSubmit(value: Validator[js.UndefOr[FormEventHandler[HTMLFormElement] | Null]]): Self = StObject.set(x, "onSubmit", value.asInstanceOf[js.Any])
     
-    inline def setOnSubmitCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onSubmitCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnSubmitCaptureUndefined: Self = StObject.set(x, "onSubmitCapture", js.undefined)
-    
     inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
     
     inline def setOnSuspend(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onSuspend", value.asInstanceOf[js.Any])
-    
-    inline def setOnSuspendCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onSuspendCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnSuspendCaptureUndefined: Self = StObject.set(x, "onSuspendCapture", js.undefined)
     
     inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
     
     inline def setOnTimeUpdate(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onTimeUpdate", value.asInstanceOf[js.Any])
     
-    inline def setOnTimeUpdateCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onTimeUpdateCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnTimeUpdateCaptureUndefined: Self = StObject.set(x, "onTimeUpdateCapture", js.undefined)
-    
     inline def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
     
     inline def setOnTouchCancel(value: Validator[js.UndefOr[Null | TouchEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onTouchCancel", value.asInstanceOf[js.Any])
-    
-    inline def setOnTouchCancelCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onTouchCancelCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnTouchCancelCaptureUndefined: Self = StObject.set(x, "onTouchCancelCapture", js.undefined)
     
     inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
     
     inline def setOnTouchEnd(value: Validator[js.UndefOr[Null | TouchEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onTouchEnd", value.asInstanceOf[js.Any])
     
-    inline def setOnTouchEndCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onTouchEndCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnTouchEndCaptureUndefined: Self = StObject.set(x, "onTouchEndCapture", js.undefined)
-    
     inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
     
     inline def setOnTouchMove(value: Validator[js.UndefOr[Null | TouchEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onTouchMove", value.asInstanceOf[js.Any])
-    
-    inline def setOnTouchMoveCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onTouchMoveCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnTouchMoveCaptureUndefined: Self = StObject.set(x, "onTouchMoveCapture", js.undefined)
     
     inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
     
     inline def setOnTouchStart(value: Validator[js.UndefOr[Null | TouchEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onTouchStart", value.asInstanceOf[js.Any])
     
-    inline def setOnTouchStartCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onTouchStartCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnTouchStartCaptureUndefined: Self = StObject.set(x, "onTouchStartCapture", js.undefined)
-    
     inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
     inline def setOnTransitionEnd(value: Validator[js.UndefOr[Null | TransitionEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onTransitionEnd", value.asInstanceOf[js.Any])
-    
-    inline def setOnTransitionEndCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onTransitionEndCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnTransitionEndCaptureUndefined: Self = StObject.set(x, "onTransitionEndCapture", js.undefined)
     
     inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
     
     inline def setOnVolumeChange(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onVolumeChange", value.asInstanceOf[js.Any])
     
-    inline def setOnVolumeChangeCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onVolumeChangeCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnVolumeChangeCaptureUndefined: Self = StObject.set(x, "onVolumeChangeCapture", js.undefined)
-    
     inline def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
     
     inline def setOnWaiting(value: Validator[js.UndefOr[Null | ReactEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onWaiting", value.asInstanceOf[js.Any])
     
-    inline def setOnWaitingCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onWaitingCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnWaitingCaptureUndefined: Self = StObject.set(x, "onWaitingCapture", js.undefined)
-    
     inline def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
     
     inline def setOnWheel(value: Validator[js.UndefOr[Null | WheelEventHandler[HTMLFormElement]]]): Self = StObject.set(x, "onWheel", value.asInstanceOf[js.Any])
-    
-    inline def setOnWheelCapture(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "onWheelCapture", value.asInstanceOf[js.Any])
-    
-    inline def setOnWheelCaptureUndefined: Self = StObject.set(x, "onWheelCapture", js.undefined)
     
     inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
     
@@ -1630,6 +1141,10 @@ object WeakValidationMapDetailed {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1638,7 +1153,7 @@ object WeakValidationMapDetailed {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setRole(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: Validator[js.UndefOr[AriaRole | Null]]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
@@ -1674,7 +1189,7 @@ object WeakValidationMapDetailed {
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def setTheme(value: Validator[js.UndefOr[Null | typings.storybookTheming.typesMod.Theme]]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: Validator[js.UndefOr[Null | typings.storybookTheming.mod.Theme]]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     

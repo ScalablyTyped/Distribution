@@ -14,37 +14,37 @@ trait Link extends StObject {
   /**
     * The date and time that the link was created.
     */
-  var CreatedAt: js.UndefOr[DateTime] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the link.
     */
-  var Description: js.UndefOr[String] = js.undefined
+  var Description: js.UndefOr[ConstrainedString] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: js.UndefOr[String] = js.undefined
+  var GlobalNetworkId: js.UndefOr[typings.awsSdk.networkmanagerMod.GlobalNetworkId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the link.
     */
-  var LinkArn: js.UndefOr[String] = js.undefined
+  var LinkArn: js.UndefOr[typings.awsSdk.networkmanagerMod.LinkArn] = js.undefined
   
   /**
     * The ID of the link.
     */
-  var LinkId: js.UndefOr[String] = js.undefined
+  var LinkId: js.UndefOr[typings.awsSdk.networkmanagerMod.LinkId] = js.undefined
   
   /**
     * The provider of the link.
     */
-  var Provider: js.UndefOr[String] = js.undefined
+  var Provider: js.UndefOr[ConstrainedString] = js.undefined
   
   /**
     * The ID of the site.
     */
-  var SiteId: js.UndefOr[String] = js.undefined
+  var SiteId: js.UndefOr[typings.awsSdk.networkmanagerMod.SiteId] = js.undefined
   
   /**
     * The state of the link.
@@ -59,7 +59,7 @@ trait Link extends StObject {
   /**
     * The type of the link.
     */
-  var Type: js.UndefOr[String] = js.undefined
+  var Type: js.UndefOr[ConstrainedString] = js.undefined
 }
 object Link {
   
@@ -74,31 +74,31 @@ object Link {
     
     inline def setBandwidthUndefined: Self = StObject.set(x, "Bandwidth", js.undefined)
     
-    inline def setCreatedAt(value: DateTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ConstrainedString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
     inline def setGlobalNetworkIdUndefined: Self = StObject.set(x, "GlobalNetworkId", js.undefined)
     
-    inline def setLinkArn(value: String): Self = StObject.set(x, "LinkArn", value.asInstanceOf[js.Any])
+    inline def setLinkArn(value: LinkArn): Self = StObject.set(x, "LinkArn", value.asInstanceOf[js.Any])
     
     inline def setLinkArnUndefined: Self = StObject.set(x, "LinkArn", js.undefined)
     
-    inline def setLinkId(value: String): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
+    inline def setLinkId(value: LinkId): Self = StObject.set(x, "LinkId", value.asInstanceOf[js.Any])
     
     inline def setLinkIdUndefined: Self = StObject.set(x, "LinkId", js.undefined)
     
-    inline def setProvider(value: String): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: ConstrainedString): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
     
     inline def setProviderUndefined: Self = StObject.set(x, "Provider", js.undefined)
     
-    inline def setSiteId(value: String): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
+    inline def setSiteId(value: SiteId): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
     
     inline def setSiteIdUndefined: Self = StObject.set(x, "SiteId", js.undefined)
     
@@ -110,9 +110,9 @@ object Link {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
-    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ConstrainedString): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }

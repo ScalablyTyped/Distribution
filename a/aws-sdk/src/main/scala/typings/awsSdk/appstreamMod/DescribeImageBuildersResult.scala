@@ -29,7 +29,7 @@ object DescribeImageBuildersResult {
     
     inline def setImageBuildersUndefined: Self = StObject.set(x, "ImageBuilders", js.undefined)
     
-    inline def setImageBuildersVarargs(value: ImageBuilder*): Self = StObject.set(x, "ImageBuilders", js.Array(value :_*))
+    inline def setImageBuildersVarargs(value: ImageBuilder*): Self = StObject.set(x, "ImageBuilders", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

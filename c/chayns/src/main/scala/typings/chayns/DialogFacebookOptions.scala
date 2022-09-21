@@ -31,7 +31,7 @@ object DialogFacebookOptions {
     
     inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    inline def setButtonVarargs(value: DialogFacebookButton*): Self = StObject.set(x, "button", js.Array(value :_*))
+    inline def setButtonVarargs(value: DialogFacebookButton*): Self = StObject.set(x, "button", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
@@ -43,7 +43,7 @@ object DialogFacebookOptions {
     
     inline def setPreSelected(value: js.Array[Double]): Self = StObject.set(x, "preSelected", value.asInstanceOf[js.Any])
     
-    inline def setPreSelectedVarargs(value: Double*): Self = StObject.set(x, "preSelected", js.Array(value :_*))
+    inline def setPreSelectedVarargs(value: Double*): Self = StObject.set(x, "preSelected", js.Array(value*))
     
     inline def setQuickfind(value: Double): Self = StObject.set(x, "quickfind", value.asInstanceOf[js.Any])
     

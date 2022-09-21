@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A group of one or more TestExecutions, built by taking a product of values
-  * over a pre-defined set of axes.
-  */
 trait SchemaTestMatrix extends StObject {
   
   /**
@@ -16,27 +12,34 @@ trait SchemaTestMatrix extends StObject {
   var clientInfo: js.UndefOr[SchemaClientInfo] = js.undefined
   
   /**
-    * Required. How the host machine(s) are configured.
+    * Required. The devices the tests are being executed on.
     */
   var environmentMatrix: js.UndefOr[SchemaEnvironmentMatrix] = js.undefined
   
   /**
-    * The number of times a TestExecution should be re-attempted if one or more
-    * of its test cases fail for any reason. The maximum number of reruns
-    * allowed is 10.  Default is 0, which implies no reruns.
+    * If true, only a single attempt at most will be made to run each execution/shard in the matrix. Flaky test attempts are not affected. Normally, 2 or more attempts are made if a potential infrastructure issue is detected. This feature is for latency sensitive workloads. The incidence of execution failures may be significantly greater for fail-fast matrices and support is more limited because of that expectation.
     */
-  var flakyTestAttempts: js.UndefOr[Double] = js.undefined
+  var failFast: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Output only. Describes why the matrix is considered invalid. Only useful
-    * for matrices in the INVALID state.
+    * The number of times a TestExecution should be re-attempted if one or more of its test cases fail for any reason. The maximum number of reruns allowed is 10. Default is 0, which implies no reruns.
     */
-  var invalidMatrixDetails: js.UndefOr[String] = js.undefined
+  var flakyTestAttempts: js.UndefOr[Double | Null] = js.undefined
+  
+  /**
+    * Output only. Describes why the matrix is considered invalid. Only useful for matrices in the INVALID state.
+    */
+  var invalidMatrixDetails: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Output Only. The overall outcome of the test. Only set when the test matrix state is FINISHED.
+    */
+  var outcomeSummary: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The cloud project that owns the test matrix.
     */
-  var projectId: js.UndefOr[String] = js.undefined
+  var projectId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Required. Where the results for the matrix are written.
@@ -44,21 +47,19 @@ trait SchemaTestMatrix extends StObject {
   var resultStorage: js.UndefOr[SchemaResultStorage] = js.undefined
   
   /**
-    * Output only. Indicates the current progress of the test matrix (e.g.,
-    * FINISHED).
+    * Output only. Indicates the current progress of the test matrix.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Output only. The list of test executions that the service creates for
-    * this matrix.
+    * Output only. The list of test executions that the service creates for this matrix.
     */
   var testExecutions: js.UndefOr[js.Array[SchemaTestExecution]] = js.undefined
   
   /**
     * Output only. Unique id set by the service.
     */
-  var testMatrixId: js.UndefOr[String] = js.undefined
+  var testMatrixId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Required. How to run the test.
@@ -68,7 +69,7 @@ trait SchemaTestMatrix extends StObject {
   /**
     * Output only. The time this test matrix was initially created.
     */
-  var timestamp: js.UndefOr[String] = js.undefined
+  var timestamp: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTestMatrix {
   
@@ -87,15 +88,33 @@ object SchemaTestMatrix {
     
     inline def setEnvironmentMatrixUndefined: Self = StObject.set(x, "environmentMatrix", js.undefined)
     
+    inline def setFailFast(value: Boolean): Self = StObject.set(x, "failFast", value.asInstanceOf[js.Any])
+    
+    inline def setFailFastNull: Self = StObject.set(x, "failFast", null)
+    
+    inline def setFailFastUndefined: Self = StObject.set(x, "failFast", js.undefined)
+    
     inline def setFlakyTestAttempts(value: Double): Self = StObject.set(x, "flakyTestAttempts", value.asInstanceOf[js.Any])
+    
+    inline def setFlakyTestAttemptsNull: Self = StObject.set(x, "flakyTestAttempts", null)
     
     inline def setFlakyTestAttemptsUndefined: Self = StObject.set(x, "flakyTestAttempts", js.undefined)
     
     inline def setInvalidMatrixDetails(value: String): Self = StObject.set(x, "invalidMatrixDetails", value.asInstanceOf[js.Any])
     
+    inline def setInvalidMatrixDetailsNull: Self = StObject.set(x, "invalidMatrixDetails", null)
+    
     inline def setInvalidMatrixDetailsUndefined: Self = StObject.set(x, "invalidMatrixDetails", js.undefined)
     
+    inline def setOutcomeSummary(value: String): Self = StObject.set(x, "outcomeSummary", value.asInstanceOf[js.Any])
+    
+    inline def setOutcomeSummaryNull: Self = StObject.set(x, "outcomeSummary", null)
+    
+    inline def setOutcomeSummaryUndefined: Self = StObject.set(x, "outcomeSummary", js.undefined)
+    
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    
+    inline def setProjectIdNull: Self = StObject.set(x, "projectId", null)
     
     inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
@@ -105,15 +124,19 @@ object SchemaTestMatrix {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
+    inline def setStateNull: Self = StObject.set(x, "state", null)
+    
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     inline def setTestExecutions(value: js.Array[SchemaTestExecution]): Self = StObject.set(x, "testExecutions", value.asInstanceOf[js.Any])
     
     inline def setTestExecutionsUndefined: Self = StObject.set(x, "testExecutions", js.undefined)
     
-    inline def setTestExecutionsVarargs(value: SchemaTestExecution*): Self = StObject.set(x, "testExecutions", js.Array(value :_*))
+    inline def setTestExecutionsVarargs(value: SchemaTestExecution*): Self = StObject.set(x, "testExecutions", js.Array(value*))
     
     inline def setTestMatrixId(value: String): Self = StObject.set(x, "testMatrixId", value.asInstanceOf[js.Any])
+    
+    inline def setTestMatrixIdNull: Self = StObject.set(x, "testMatrixId", null)
     
     inline def setTestMatrixIdUndefined: Self = StObject.set(x, "testMatrixId", js.undefined)
     
@@ -122,6 +145,8 @@ object SchemaTestMatrix {
     inline def setTestSpecificationUndefined: Self = StObject.set(x, "testSpecification", js.undefined)
     
     inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampNull: Self = StObject.set(x, "timestamp", null)
     
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }

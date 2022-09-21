@@ -8,7 +8,7 @@ trait DirtyFlagResult extends StObject {
   
   def forceDirty(): Unit
   
-  var isDirty: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any
+  var isDirty: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ Any
   
   def reset(): Unit
 }
@@ -16,7 +16,7 @@ object DirtyFlagResult {
   
   inline def apply(
     forceDirty: () => Unit,
-    isDirty: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any,
+    isDirty: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ Any,
     reset: () => Unit
   ): DirtyFlagResult = {
     val __obj = js.Dynamic.literal(forceDirty = js.Any.fromFunction0(forceDirty), isDirty = isDirty.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset))
@@ -28,7 +28,7 @@ object DirtyFlagResult {
     inline def setForceDirty(value: () => Unit): Self = StObject.set(x, "forceDirty", js.Any.fromFunction0(value))
     
     inline def setIsDirty(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ Any
     ): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))

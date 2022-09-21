@@ -1,7 +1,7 @@
 
 # Scala.js typings for text-mask-core
 
-Typings are for version 5.1
+Typings are for version 5.1.2
 
 ## Library description:
 Core of https://github.com/text-mask/text-mask
@@ -11,9 +11,9 @@ Core of https://github.com/text-mask/text-mask
 | Full name          | text-mask-core |
 | Keywords           | text mask, input mask, string mask, input formatting, text formatting, string formatting |
 | # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 4593646 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 428399.0 |
+| # stars            | 8134.0 |
 
 ## Links
 - [Homepage](https://github.com/text-mask/text-mask#readme)
@@ -24,7 +24,7 @@ Core of https://github.com/text-mask/text-mask
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

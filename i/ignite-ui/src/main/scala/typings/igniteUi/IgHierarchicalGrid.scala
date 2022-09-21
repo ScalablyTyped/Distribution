@@ -11,7 +11,7 @@ trait IgHierarchicalGrid
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * If this option is set to true, the height of the grid row will be calculated automatically based on the [avgRowHeight](ui.ighierarchicalgrid#options:avgRowHeight) and the visible virtual records. If no [avgRowHeight](ui.ighierarchicalgrid#options:avgRowHeight) is specified, it will be calculated automatically at runtime.
@@ -225,7 +225,7 @@ trait IgHierarchicalGrid
     * "array" DataSource as an array.
     * "object" DataSource as an object. For example a JSON object
     */
-  var dataSource: js.UndefOr[String | js.Array[js.Any] | js.Object] = js.undefined
+  var dataSource: js.UndefOr[String | js.Array[Any] | js.Object] = js.undefined
   
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of [$.ig.DataSource type](ig.datasource#options:settings.type).
@@ -727,7 +727,7 @@ object IgHierarchicalGrid {
     
     inline def setColumnLayoutsUndefined: Self = StObject.set(x, "columnLayouts", js.undefined)
     
-    inline def setColumnLayoutsVarargs(value: IgHierarchicalGridColumnLayout*): Self = StObject.set(x, "columnLayouts", js.Array(value :_*))
+    inline def setColumnLayoutsVarargs(value: IgHierarchicalGridColumnLayout*): Self = StObject.set(x, "columnLayouts", js.Array(value*))
     
     inline def setColumnVirtualization(value: Boolean): Self = StObject.set(x, "columnVirtualization", value.asInstanceOf[js.Any])
     
@@ -741,7 +741,7 @@ object IgHierarchicalGrid {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: IgHierarchicalGridColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: IgHierarchicalGridColumn*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setCreated(value: (/* event */ Event, /* ui */ CreatedEventUIParam) => Unit): Self = StObject.set(x, "created", js.Any.fromFunction2(value))
     
@@ -763,7 +763,7 @@ object IgHierarchicalGrid {
     
     inline def setDataRenderingUndefined: Self = StObject.set(x, "dataRendering", js.undefined)
     
-    inline def setDataSource(value: String | js.Array[js.Any] | js.Object): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: String | js.Array[Any] | js.Object): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
@@ -775,7 +775,7 @@ object IgHierarchicalGrid {
     
     inline def setDataSourceUrlUndefined: Self = StObject.set(x, "dataSourceUrl", js.undefined)
     
-    inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
     
     inline def setDefaultChildrenDataProperty(value: String): Self = StObject.set(x, "defaultChildrenDataProperty", value.asInstanceOf[js.Any])
     
@@ -821,7 +821,7 @@ object IgHierarchicalGrid {
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: IgHierarchicalGridFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: IgHierarchicalGridFeature*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setFixedFooters(value: Boolean): Self = StObject.set(x, "fixedFooters", value.asInstanceOf[js.Any])
     

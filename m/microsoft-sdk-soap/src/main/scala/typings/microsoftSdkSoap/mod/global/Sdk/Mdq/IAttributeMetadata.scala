@@ -49,7 +49,7 @@ trait IAttributeMetadata extends StObject {
   
   var AttributeTypeName: BigIntType | BooleanType | CalendarRulesType | CustomerType | DateTimeType | DecimalType | DoubleType | EntityNameType | ImageType | IntegerType | LookupType | ManagedPropertyType | MemoType | MoneyType | OwnerType | PartyListType | PicklistType | (`StateType    StatusType`) | StringType | UniqueidentifierType | VirtualType
   
-  var CalculationOf: js.Any
+  var CalculationOf: Any
   
   var CanBeSecuredForCreate: Boolean
   
@@ -61,11 +61,11 @@ trait IAttributeMetadata extends StObject {
   
   var ColumnNumber: scala.Double
   
-  var DefaultFormValue: js.Any
+  var DefaultFormValue: Any
   
-  var DefaultValue: js.Any
+  var DefaultValue: Any
   
-  var DeprecatedVersion: js.Any
+  var DeprecatedVersion: Any
   
   var Description: Label
   
@@ -73,13 +73,13 @@ trait IAttributeMetadata extends StObject {
   
   var EntityLogicalName: String
   
-  var Format: js.Any
+  var Format: Any
   
   var FormatName: String
   
-  var ImeMode: js.Any
+  var ImeMode: Any
   
-  var IntroducedVersion: js.Any
+  var IntroducedVersion: Any
   
   var IsAuditEnabled: Boolean
   
@@ -111,17 +111,17 @@ trait IAttributeMetadata extends StObject {
   
   var MaxLength: scala.Double
   
-  var MaxValue: js.Any
+  var MaxValue: Any
   
   var MetadataId: String
   
   var MinValue: scala.Double
   
-  var OptionSet: js.Any
+  var OptionSet: Any
   
-  var Precision: js.Any
+  var Precision: Any
   
-  var PrecisionSource: js.Any
+  var PrecisionSource: Any
   
   var RequiredLevel: ManagedProperty[String]
   
@@ -129,7 +129,7 @@ trait IAttributeMetadata extends StObject {
   
   var Targets: js.Array[String]
   
-  var YomiOf: js.Any
+  var YomiOf: Any
 }
 object IAttributeMetadata {
   
@@ -137,22 +137,22 @@ object IAttributeMetadata {
     AttributeOf: String,
     AttributeType: Customer | DateTime | Decimal | Double | EntityName | Integer | Lookup | typings.microsoftSdkSoap.microsoftSdkSoapStrings.ManagedProperty | Memo | Money | Owner | PartyList | Picklist | State | Status | Uniqueidentifier | Virtual,
     AttributeTypeName: BigIntType | BooleanType | CalendarRulesType | CustomerType | DateTimeType | DecimalType | DoubleType | EntityNameType | ImageType | IntegerType | LookupType | ManagedPropertyType | MemoType | MoneyType | OwnerType | PartyListType | PicklistType | (`StateType    StatusType`) | StringType | UniqueidentifierType | VirtualType,
-    CalculationOf: js.Any,
+    CalculationOf: Any,
     CanBeSecuredForCreate: Boolean,
     CanBeSecuredForRead: Boolean,
     CanBeSecuredForUpdate: Boolean,
     CanModifyAdditionalSettings: ManagedProperty[Boolean],
     ColumnNumber: scala.Double,
-    DefaultFormValue: js.Any,
-    DefaultValue: js.Any,
-    DeprecatedVersion: js.Any,
+    DefaultFormValue: Any,
+    DefaultValue: Any,
+    DeprecatedVersion: Any,
     Description: Label,
     DisplayName: Label,
     EntityLogicalName: String,
-    Format: js.Any,
+    Format: Any,
     FormatName: String,
-    ImeMode: js.Any,
-    IntroducedVersion: js.Any,
+    ImeMode: Any,
+    IntroducedVersion: Any,
     IsAuditEnabled: Boolean,
     IsCustomAttribute: Boolean,
     IsCustomizable: ManagedProperty[Boolean],
@@ -168,16 +168,16 @@ object IAttributeMetadata {
     LinkedAttributeId: String,
     LogicalName: String,
     MaxLength: scala.Double,
-    MaxValue: js.Any,
+    MaxValue: Any,
     MetadataId: String,
     MinValue: scala.Double,
-    OptionSet: js.Any,
-    Precision: js.Any,
-    PrecisionSource: js.Any,
+    OptionSet: Any,
+    Precision: Any,
+    PrecisionSource: Any,
     RequiredLevel: ManagedProperty[String],
     SchemaName: String,
     Targets: js.Array[String],
-    YomiOf: js.Any
+    YomiOf: Any
   ): IAttributeMetadata = {
     val __obj = js.Dynamic.literal(AttributeOf = AttributeOf.asInstanceOf[js.Any], AttributeType = AttributeType.asInstanceOf[js.Any], AttributeTypeName = AttributeTypeName.asInstanceOf[js.Any], CalculationOf = CalculationOf.asInstanceOf[js.Any], CanBeSecuredForCreate = CanBeSecuredForCreate.asInstanceOf[js.Any], CanBeSecuredForRead = CanBeSecuredForRead.asInstanceOf[js.Any], CanBeSecuredForUpdate = CanBeSecuredForUpdate.asInstanceOf[js.Any], CanModifyAdditionalSettings = CanModifyAdditionalSettings.asInstanceOf[js.Any], ColumnNumber = ColumnNumber.asInstanceOf[js.Any], DefaultFormValue = DefaultFormValue.asInstanceOf[js.Any], DefaultValue = DefaultValue.asInstanceOf[js.Any], DeprecatedVersion = DeprecatedVersion.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], DisplayName = DisplayName.asInstanceOf[js.Any], EntityLogicalName = EntityLogicalName.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], FormatName = FormatName.asInstanceOf[js.Any], ImeMode = ImeMode.asInstanceOf[js.Any], IntroducedVersion = IntroducedVersion.asInstanceOf[js.Any], IsAuditEnabled = IsAuditEnabled.asInstanceOf[js.Any], IsCustomAttribute = IsCustomAttribute.asInstanceOf[js.Any], IsCustomizable = IsCustomizable.asInstanceOf[js.Any], IsManaged = IsManaged.asInstanceOf[js.Any], IsPrimaryId = IsPrimaryId.asInstanceOf[js.Any], IsPrimaryName = IsPrimaryName.asInstanceOf[js.Any], IsRenameable = IsRenameable.asInstanceOf[js.Any], IsSecured = IsSecured.asInstanceOf[js.Any], IsValidForAdvancedFind = IsValidForAdvancedFind.asInstanceOf[js.Any], IsValidForCreate = IsValidForCreate.asInstanceOf[js.Any], IsValidForRead = IsValidForRead.asInstanceOf[js.Any], IsValidForUpdate = IsValidForUpdate.asInstanceOf[js.Any], LinkedAttributeId = LinkedAttributeId.asInstanceOf[js.Any], LogicalName = LogicalName.asInstanceOf[js.Any], MaxLength = MaxLength.asInstanceOf[js.Any], MaxValue = MaxValue.asInstanceOf[js.Any], MetadataId = MetadataId.asInstanceOf[js.Any], MinValue = MinValue.asInstanceOf[js.Any], OptionSet = OptionSet.asInstanceOf[js.Any], Precision = Precision.asInstanceOf[js.Any], PrecisionSource = PrecisionSource.asInstanceOf[js.Any], RequiredLevel = RequiredLevel.asInstanceOf[js.Any], SchemaName = SchemaName.asInstanceOf[js.Any], Targets = Targets.asInstanceOf[js.Any], YomiOf = YomiOf.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAttributeMetadata]
@@ -195,7 +195,7 @@ object IAttributeMetadata {
       value: BigIntType | BooleanType | CalendarRulesType | CustomerType | DateTimeType | DecimalType | DoubleType | EntityNameType | ImageType | IntegerType | LookupType | ManagedPropertyType | MemoType | MoneyType | OwnerType | PartyListType | PicklistType | (`StateType    StatusType`) | StringType | UniqueidentifierType | VirtualType
     ): Self = StObject.set(x, "AttributeTypeName", value.asInstanceOf[js.Any])
     
-    inline def setCalculationOf(value: js.Any): Self = StObject.set(x, "CalculationOf", value.asInstanceOf[js.Any])
+    inline def setCalculationOf(value: Any): Self = StObject.set(x, "CalculationOf", value.asInstanceOf[js.Any])
     
     inline def setCanBeSecuredForCreate(value: Boolean): Self = StObject.set(x, "CanBeSecuredForCreate", value.asInstanceOf[js.Any])
     
@@ -207,11 +207,11 @@ object IAttributeMetadata {
     
     inline def setColumnNumber(value: scala.Double): Self = StObject.set(x, "ColumnNumber", value.asInstanceOf[js.Any])
     
-    inline def setDefaultFormValue(value: js.Any): Self = StObject.set(x, "DefaultFormValue", value.asInstanceOf[js.Any])
+    inline def setDefaultFormValue(value: Any): Self = StObject.set(x, "DefaultFormValue", value.asInstanceOf[js.Any])
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
-    inline def setDeprecatedVersion(value: js.Any): Self = StObject.set(x, "DeprecatedVersion", value.asInstanceOf[js.Any])
+    inline def setDeprecatedVersion(value: Any): Self = StObject.set(x, "DeprecatedVersion", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: Label): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -219,13 +219,13 @@ object IAttributeMetadata {
     
     inline def setEntityLogicalName(value: String): Self = StObject.set(x, "EntityLogicalName", value.asInstanceOf[js.Any])
     
-    inline def setFormat(value: js.Any): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Any): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
     inline def setFormatName(value: String): Self = StObject.set(x, "FormatName", value.asInstanceOf[js.Any])
     
-    inline def setImeMode(value: js.Any): Self = StObject.set(x, "ImeMode", value.asInstanceOf[js.Any])
+    inline def setImeMode(value: Any): Self = StObject.set(x, "ImeMode", value.asInstanceOf[js.Any])
     
-    inline def setIntroducedVersion(value: js.Any): Self = StObject.set(x, "IntroducedVersion", value.asInstanceOf[js.Any])
+    inline def setIntroducedVersion(value: Any): Self = StObject.set(x, "IntroducedVersion", value.asInstanceOf[js.Any])
     
     inline def setIsAuditEnabled(value: Boolean): Self = StObject.set(x, "IsAuditEnabled", value.asInstanceOf[js.Any])
     
@@ -257,17 +257,17 @@ object IAttributeMetadata {
     
     inline def setMaxLength(value: scala.Double): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
     
-    inline def setMaxValue(value: js.Any): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Any): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
     
     inline def setMetadataId(value: String): Self = StObject.set(x, "MetadataId", value.asInstanceOf[js.Any])
     
     inline def setMinValue(value: scala.Double): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
     
-    inline def setOptionSet(value: js.Any): Self = StObject.set(x, "OptionSet", value.asInstanceOf[js.Any])
+    inline def setOptionSet(value: Any): Self = StObject.set(x, "OptionSet", value.asInstanceOf[js.Any])
     
-    inline def setPrecision(value: js.Any): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Any): Self = StObject.set(x, "Precision", value.asInstanceOf[js.Any])
     
-    inline def setPrecisionSource(value: js.Any): Self = StObject.set(x, "PrecisionSource", value.asInstanceOf[js.Any])
+    inline def setPrecisionSource(value: Any): Self = StObject.set(x, "PrecisionSource", value.asInstanceOf[js.Any])
     
     inline def setRequiredLevel(value: ManagedProperty[String]): Self = StObject.set(x, "RequiredLevel", value.asInstanceOf[js.Any])
     
@@ -275,8 +275,8 @@ object IAttributeMetadata {
     
     inline def setTargets(value: js.Array[String]): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
-    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "Targets", js.Array(value*))
     
-    inline def setYomiOf(value: js.Any): Self = StObject.set(x, "YomiOf", value.asInstanceOf[js.Any])
+    inline def setYomiOf(value: Any): Self = StObject.set(x, "YomiOf", value.asInstanceOf[js.Any])
   }
 }

@@ -17,7 +17,7 @@ trait VectorTileLayerCapabilities
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#capabilities)
     */
-  var exportTiles: js.Any
+  var exportTiles: Any
   
   /**
     * Indicates operations that can be performed on the service.
@@ -31,7 +31,7 @@ object VectorTileLayerCapabilities {
   inline def apply(
     constructor: js.Function,
     exportMap: VectorTileLayerCapabilitiesExportMap,
-    exportTiles: js.Any,
+    exportTiles: Any,
     hasOwnProperty: PropertyKey => Boolean,
     operations: VectorTileLayerCapabilitiesOperations,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -44,7 +44,7 @@ object VectorTileLayerCapabilities {
     
     inline def setExportMap(value: VectorTileLayerCapabilitiesExportMap): Self = StObject.set(x, "exportMap", value.asInstanceOf[js.Any])
     
-    inline def setExportTiles(value: js.Any): Self = StObject.set(x, "exportTiles", value.asInstanceOf[js.Any])
+    inline def setExportTiles(value: Any): Self = StObject.set(x, "exportTiles", value.asInstanceOf[js.Any])
     
     inline def setOperations(value: VectorTileLayerCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
   }

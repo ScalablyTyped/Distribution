@@ -22,7 +22,7 @@ trait SafariExtensionContextMenu extends StObject {
     * Returns a list of the context menu items from this extension.
     * Only menu items from your extension are returned.
     */
-  var contextMenuItems: js.Array[js.Any] = js.native
+  var contextMenuItems: js.Array[Any] = js.native
   
   /**
     * Inserts a menu item at a specific index in the contextual menu.

@@ -4,16 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asn1js", "LocalObjectIdentifierValueBlock")
 @js.native
-class LocalObjectIdentifierValueBlock () extends LocalValueBlock {
-  def this(params: LocalObjectIdentifierValueBlockParams) = this()
+trait LocalObjectIdentifierValueBlock
+  extends ValueBlock
+     with IStringConvertible {
   
-  /**
-    * Create "LocalObjectIdentifierValueBlock" class from string
-    * 
-    * @param {string} string Input string to convert from
-    * @returns {boolean}
-    */
-  def fromString(data: String): scala.Boolean = js.native
+  var value: js.Array[LocalSidValueBlock] = js.native
 }

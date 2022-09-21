@@ -12,7 +12,7 @@ trait AxisProps[T] extends StObject {
   
   var data: js.Array[T]
   
-  var formatLabel: js.UndefOr[js.Function2[/* value */ js.Any, /* index */ Double, Double | String]] = js.undefined
+  var formatLabel: js.UndefOr[js.Function2[/* value */ Any, /* index */ Double, Double | String]] = js.undefined
   
   var numberOfTicks: js.UndefOr[Double] = js.undefined
   
@@ -37,9 +37,9 @@ object AxisProps {
     
     inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
     
-    inline def setFormatLabel(value: (/* value */ js.Any, /* index */ Double) => Double | String): Self = StObject.set(x, "formatLabel", js.Any.fromFunction2(value))
+    inline def setFormatLabel(value: (/* value */ Any, /* index */ Double) => Double | String): Self = StObject.set(x, "formatLabel", js.Any.fromFunction2(value))
     
     inline def setFormatLabelUndefined: Self = StObject.set(x, "formatLabel", js.undefined)
     
@@ -47,7 +47,7 @@ object AxisProps {
     
     inline def setNumberOfTicksUndefined: Self = StObject.set(x, "numberOfTicks", js.undefined)
     
-    inline def setScale(value: () => (ScaleType[js.Any, js.Any]) | ScaleBand_[js.Any]): Self = StObject.set(x, "scale", js.Any.fromFunction0(value))
+    inline def setScale(value: () => (ScaleType[Any, Any]) | ScaleBand_[Any]): Self = StObject.set(x, "scale", js.Any.fromFunction0(value))
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     

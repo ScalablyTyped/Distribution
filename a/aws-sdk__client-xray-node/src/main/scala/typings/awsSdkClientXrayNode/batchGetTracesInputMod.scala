@@ -8,5 +8,5 @@ object batchGetTracesInputMod {
   
   @JSImport("@aws-sdk/client-xray-node/model/BatchGetTracesInput", "BatchGetTracesInput")
   @js.native
-  val BatchGetTracesInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val BatchGetTracesInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -13,7 +13,7 @@ trait GetProviderRes extends StObject {
   /**
     * 得到的服务供应商
     */
-  var provider: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var provider: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 服务类型
@@ -33,11 +33,11 @@ object GetProviderRes {
   
   extension [Self <: GetProviderRes](x: Self) {
     
-    inline def setProvider(value: js.Array[js.Any]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: js.Array[Any]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    inline def setProviderVarargs(value: js.Any*): Self = StObject.set(x, "provider", js.Array(value :_*))
+    inline def setProviderVarargs(value: Any*): Self = StObject.set(x, "provider", js.Array(value*))
     
     inline def setService(value: oauth | share | payment | push): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,7 @@ object ParameterObject {
     
     inline def setAttributes(value: ParameterAttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    inline def setAttributesVarargs(value: ParameterAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: ParameterAttribute*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setId(value: fieldNameString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

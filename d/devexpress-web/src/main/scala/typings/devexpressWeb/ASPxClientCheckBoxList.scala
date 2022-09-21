@@ -24,7 +24,7 @@ trait ASPxClientCheckBoxList
   /**
     * Returns an array of the check box list editor's selected items values.
     */
-  def GetSelectedValues(): js.Array[js.Any]
+  def GetSelectedValues(): js.Array[Any]
   
   /**
     * Selects all check box list items.
@@ -47,7 +47,7 @@ trait ASPxClientCheckBoxList
     * Selects items with the specified values within a check box list.
     * @param values An array of Object[] objects that are the item values.
     */
-  def SelectValues(values: js.Array[js.Any]): Unit
+  def SelectValues(values: js.Array[Any]): Unit
   
   /**
     * Occurs on the client side after a different item in the check box list has been selected (focus has been moved from one item to another).
@@ -76,7 +76,7 @@ trait ASPxClientCheckBoxList
     * Unselects items with the specified values within a check box list.
     * @param values An array of Object[] objects that are the item values.
     */
-  def UnselectValues(values: js.Array[js.Any]): Unit
+  def UnselectValues(values: js.Array[Any]): Unit
 }
 object ASPxClientCheckBoxList {
   
@@ -88,19 +88,19 @@ object ASPxClientCheckBoxList {
     GetEnabled: () => Boolean,
     GetErrorText: () => String,
     GetHeight: () => Double,
-    GetInputElement: () => js.Any,
+    GetInputElement: () => Any,
     GetIsValid: () => Boolean,
     GetItem: Double => ASPxClientListEditItem,
     GetItemCount: () => Double,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
     GetReadOnly: () => Boolean,
     GetSelectedIndex: () => Double,
     GetSelectedIndices: () => js.Array[Double],
     GetSelectedItem: () => ASPxClientListEditItem,
     GetSelectedItems: () => js.Array[ASPxClientListEditItem],
-    GetSelectedValues: () => js.Array[js.Any],
-    GetValue: () => js.Any,
+    GetSelectedValues: () => js.Array[Any],
+    GetValue: () => Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     GotFocus: ASPxClientEvent[ASPxClientEventHandler[ASPxClientEdit]],
@@ -110,7 +110,7 @@ object ASPxClientCheckBoxList {
     SelectAll: () => Unit,
     SelectIndices: js.Array[Double] => Unit,
     SelectItems: js.Array[ASPxClientListEditItem] => Unit,
-    SelectValues: js.Array[js.Any] => Unit,
+    SelectValues: js.Array[Any] => Unit,
     SelectedIndexChanged: ASPxClientEvent[ASPxClientListEditItemSelectedChangedEventHandler[ASPxClientCheckBoxList]],
     SendMessageToAssistiveTechnology: String => Unit,
     SetCaption: String => Unit,
@@ -122,13 +122,13 @@ object ASPxClientCheckBoxList {
     SetReadOnly: Boolean => Unit,
     SetSelectedIndex: Double => Unit,
     SetSelectedItem: ASPxClientListEditItem => Unit,
-    SetValue: js.Any => Unit,
+    SetValue: Any => Unit,
     SetVisible: Boolean => Unit,
     SetWidth: Double => Unit,
     UnselectAll: () => Unit,
     UnselectIndices: js.Array[Double] => Unit,
     UnselectItems: js.Array[ASPxClientListEditItem] => Unit,
-    UnselectValues: js.Array[js.Any] => Unit,
+    UnselectValues: js.Array[Any] => Unit,
     Validate: () => Unit,
     Validation: ASPxClientEvent[ASPxClientEditValidationEventHandler[ASPxClientEdit]],
     ValueChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientEdit]],
@@ -144,7 +144,7 @@ object ASPxClientCheckBoxList {
     
     inline def setGetSelectedItems(value: () => js.Array[ASPxClientListEditItem]): Self = StObject.set(x, "GetSelectedItems", js.Any.fromFunction0(value))
     
-    inline def setGetSelectedValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "GetSelectedValues", js.Any.fromFunction0(value))
+    inline def setGetSelectedValues(value: () => js.Array[Any]): Self = StObject.set(x, "GetSelectedValues", js.Any.fromFunction0(value))
     
     inline def setSelectAll(value: () => Unit): Self = StObject.set(x, "SelectAll", js.Any.fromFunction0(value))
     
@@ -152,7 +152,7 @@ object ASPxClientCheckBoxList {
     
     inline def setSelectItems(value: js.Array[ASPxClientListEditItem] => Unit): Self = StObject.set(x, "SelectItems", js.Any.fromFunction1(value))
     
-    inline def setSelectValues(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "SelectValues", js.Any.fromFunction1(value))
+    inline def setSelectValues(value: js.Array[Any] => Unit): Self = StObject.set(x, "SelectValues", js.Any.fromFunction1(value))
     
     inline def setSelectedIndexChanged(value: ASPxClientEvent[ASPxClientListEditItemSelectedChangedEventHandler[ASPxClientCheckBoxList]]): Self = StObject.set(x, "SelectedIndexChanged", value.asInstanceOf[js.Any])
     
@@ -162,6 +162,6 @@ object ASPxClientCheckBoxList {
     
     inline def setUnselectItems(value: js.Array[ASPxClientListEditItem] => Unit): Self = StObject.set(x, "UnselectItems", js.Any.fromFunction1(value))
     
-    inline def setUnselectValues(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "UnselectValues", js.Any.fromFunction1(value))
+    inline def setUnselectValues(value: js.Array[Any] => Unit): Self = StObject.set(x, "UnselectValues", js.Any.fromFunction1(value))
   }
 }

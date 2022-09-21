@@ -7,25 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Drive API
-  *
-  * Manages files in Drive including uploading, downloading, searching,
-  * detecting changes, and updating sharing permissions.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const drive = google.drive('v3');
-  *
-  * @namespace drive
-  * @type {Function}
-  * @version v3
-  * @variation v3
-  * @param {object=} options Options for Drive
-  */
 @JSImport("googleapis/build/src/apis/drive/v3", "drive_v3.Drive")
 @js.native
-class Drive protected () extends StObject {
+open class Drive protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   
@@ -38,6 +22,8 @@ class Drive protected () extends StObject {
   var comments: ResourceComments = js.native
   
   var context: APIRequestContext = js.native
+  
+  var drives: ResourceDrives = js.native
   
   var files: ResourceFiles = js.native
   

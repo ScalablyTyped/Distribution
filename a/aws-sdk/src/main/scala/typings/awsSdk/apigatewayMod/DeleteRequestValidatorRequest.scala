@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteRequestValidatorRequest extends StObject {
   
   /**
-    * [Required] The identifier of the RequestValidator to be deleted.
+    * The identifier of the RequestValidator to be deleted.
     */
   var requestValidatorId: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }

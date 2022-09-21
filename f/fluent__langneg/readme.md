@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluent__langneg
 
-Typings are for version 0.3
+Typings are for version 0.6.2
 
 ## Library description:
 Language Negotiation API for Fluent
@@ -10,10 +10,10 @@ Language Negotiation API for Fluent
 | ------------------ | :-------------: |
 | Full name          | @fluent/langneg |
 | Keywords           | localization, l10n, internationalization, i18n, locale, language, language-negotiation |
-| # releases         | 4 |
-| # dependents       | 6 |
-| # downloads        | 74403 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 11267.0 |
+| # stars            | 751.0 |
 
 ## Links
 - [Homepage](https://projectfluent.org)
@@ -24,7 +24,7 @@ Language Negotiation API for Fluent
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

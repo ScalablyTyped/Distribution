@@ -6,19 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `4` extends StObject {
   
-  var workspaceFolders: js.UndefOr[ChangeNotifications] = js.undefined
+  /**
+    * The code action kind values the client supports. When this
+    * property exists the client also guarantees that it will
+    * handle values outside its set gracefully and falls back
+    * to a default value when unknown.
+    */
+  var valueSet: js.Array[typings.vscodeLanguageserverTypes.mod.CodeActionKind]
 }
 object `4` {
   
-  inline def apply(): `4` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(valueSet: js.Array[typings.vscodeLanguageserverTypes.mod.CodeActionKind]): `4` = {
+    val __obj = js.Dynamic.literal(valueSet = valueSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[`4`]
   }
   
   extension [Self <: `4`](x: Self) {
     
-    inline def setWorkspaceFolders(value: ChangeNotifications): Self = StObject.set(x, "workspaceFolders", value.asInstanceOf[js.Any])
+    inline def setValueSet(value: js.Array[typings.vscodeLanguageserverTypes.mod.CodeActionKind]): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
     
-    inline def setWorkspaceFoldersUndefined: Self = StObject.set(x, "workspaceFolders", js.undefined)
+    inline def setValueSetVarargs(value: typings.vscodeLanguageserverTypes.mod.CodeActionKind*): Self = StObject.set(x, "valueSet", js.Array(value*))
   }
 }

@@ -6,32 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Get running processes.
-  @returns List of running processes.
-  @example
-  ```
-  import psList = require('ps-list');
-  (async () => {
-  	console.log(await psList());
-  	//=> [{pid: 3213, name: 'node', cmd: 'node test.js', ppid: 1, uid: 501, cpu: 0.1, memory: 1.5}, …]
-  })();
-  ```
-  */
-  inline def apply(): js.Promise[js.Array[ProcessDescriptor]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.Array[ProcessDescriptor]]]
-  inline def apply(options: Options): js.Promise[js.Array[ProcessDescriptor]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ProcessDescriptor]]]
-  
   @JSImport("ps-list", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(): js.Promise[js.Array[ProcessDescriptor]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[js.Array[ProcessDescriptor]]]
+  inline def default(options: Options): js.Promise[js.Array[ProcessDescriptor]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ProcessDescriptor]]]
+  
   trait Options extends StObject {
     
     /**
-    		Include other users' processes as well as your own.
-    		On Windows this has no effect and will always be the users' own processes.
-    		@default true
-    		*/
+    	Include other users' processes as well as your own.
+    	On Windows this has no effect and will always be the users' own processes.
+    	@default true
+    	*/
     val all: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
@@ -52,18 +40,18 @@ object mod {
   trait ProcessDescriptor extends StObject {
     
     /**
-    		Not supported on Windows.
-    		*/
+    	Not supported on Windows.
+    	*/
     val cmd: js.UndefOr[String] = js.undefined
     
     /**
-    		Not supported on Windows.
-    		*/
+    	Not supported on Windows.
+    	*/
     val cpu: js.UndefOr[Double] = js.undefined
     
     /**
-    		Not supported on Windows.
-    		*/
+    	Not supported on Windows.
+    	*/
     val memory: js.UndefOr[Double] = js.undefined
     
     val name: String
@@ -73,8 +61,8 @@ object mod {
     val ppid: Double
     
     /**
-    		Not supported on Windows.
-    		*/
+    	Not supported on Windows.
+    	*/
     val uid: js.UndefOr[Double] = js.undefined
   }
   object ProcessDescriptor {

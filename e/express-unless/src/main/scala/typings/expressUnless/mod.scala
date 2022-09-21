@@ -1,19 +1,86 @@
 package typings.expressUnless
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressUnless.anon.Method
-import typings.std.RegExp
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def apply(options: js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], Boolean]): typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def apply(options: Options): typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): typings.express.mod.RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.express.mod.RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def apply(
+    middleware: typings.express.mod.RequestHandler[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ],
+    options: Options
+  ): typings.express.mod.RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = (^.asInstanceOf[js.Dynamic].apply(middleware.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.express.mod.RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def apply(
+    options: js.Function1[
+      /* req */ Request_[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ], 
+      Boolean
+    ]
+  ): typings.express.mod.RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.express.mod.RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def apply(options: Options): typings.express.mod.RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.express.mod.RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("express-unless", JSImport.Namespace)
   @js.native
@@ -22,7 +89,16 @@ object mod {
   trait Options extends StObject {
     
     var custom: js.UndefOr[
-        js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], Boolean]
+        js.Function1[
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          Boolean
+        ]
       ] = js.undefined
     
     var ext: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -42,7 +118,15 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setCustom(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => Boolean): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
+      inline def setCustom(
+        value: /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ] => Boolean
+      ): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
       
       inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
@@ -50,19 +134,19 @@ object mod {
       
       inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       
-      inline def setExtVarargs(value: String*): Self = StObject.set(x, "ext", js.Array(value :_*))
+      inline def setExtVarargs(value: String*): Self = StObject.set(x, "ext", js.Array(value*))
       
       inline def setMethod(value: String | js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
+      inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value*))
       
       inline def setPath(value: pathFilter | js.Array[pathFilter]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: pathFilter*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: pathFilter*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setUseOriginalUrl(value: Boolean): Self = StObject.set(x, "useOriginalUrl", value.asInstanceOf[js.Any])
       
@@ -72,12 +156,12 @@ object mod {
   
   @js.native
   trait RequestHandler
-    extends typings.expressServeStaticCore.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query] {
+    extends typings.expressServeStaticCore.mod.RequestHandler {
     
     var unless: js.UndefOr[
-        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof unless */ js.Any
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof unless */ Any
       ] = js.native
   }
   
-  type pathFilter = String | RegExp | Method
+  type pathFilter = String | js.RegExp | Method
 }

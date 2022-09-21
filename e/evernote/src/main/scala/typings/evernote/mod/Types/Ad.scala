@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.Ad")
 @js.native
-class Ad () extends StObject {
+open class Ad () extends StObject {
   def this(args: AdvertiserName) = this()
   
   var advertiserName: js.UndefOr[String] = js.native

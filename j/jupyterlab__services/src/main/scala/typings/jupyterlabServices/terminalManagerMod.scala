@@ -9,7 +9,6 @@ import typings.jupyterlabServices.terminalTerminalMod.ITerminalConnection
 import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoPolling.pollMod.Poll.Standby
 import typings.luminoSignaling.mod.ISignal
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,34 +24,34 @@ object terminalManagerMod {
   /**
     * Construct a new terminal manager.
     */
-  class TerminalManager () extends BaseManager {
+  open class TerminalManager () extends BaseManager {
     def this(options: IOptions) = this()
     
-    /* private */ var _connectionFailure: js.Any = js.native
+    /* private */ var _connectionFailure: Any = js.native
     
-    /* private */ var _isReady: js.Any = js.native
+    /* private */ var _isReady: Any = js.native
     
-    /* private */ def _models: js.Any = js.native
+    /* private */ def _models: Any = js.native
     
-    /* private */ var _names: js.Any = js.native
+    /* private */ var _names: Any = js.native
     
     /**
       * Handle a session terminating.
       */
-    /* private */ var _onDisposed: js.Any = js.native
+    /* private */ var _onDisposed: Any = js.native
     
     /**
       * Handle a session starting.
       */
-    /* private */ var _onStarted: js.Any = js.native
+    /* private */ var _onStarted: Any = js.native
     
-    /* private */ var _pollModels: js.Any = js.native
+    /* private */ var _pollModels: Any = js.native
     
-    /* private */ var _ready: js.Any = js.native
+    /* private */ var _ready: Any = js.native
     
-    /* private */ var _runningChanged: js.Any = js.native
+    /* private */ var _runningChanged: Any = js.native
     
-    /* private */ var _terminalConnections: js.Any = js.native
+    /* private */ var _terminalConnections: Any = js.native
     
     def connectTo(options: OmitIOptionsserverSettingModel): ITerminalConnection = js.native
     
@@ -60,7 +59,7 @@ object terminalManagerMod {
       * A signal emitted when there is a connection failure.
       */
     @JSName("connectionFailure")
-    def connectionFailure_MTerminalManager: ISignal[this.type, Error] = js.native
+    def connectionFailure_MTerminalManager: ISignal[this.type, js.Error] = js.native
     
     /**
       * Whether the terminal service is available.
@@ -148,7 +147,9 @@ object terminalManagerMod {
     /**
       * Create a new terminal session.
       *
-      * @returns A promise that resolves with the terminal instance.
+      * @param options - The options used to create the terminal.
+      *
+      * @returns A promise that resolves with the terminal connection instance.
       *
       * #### Notes
       * The manager `serverSettings` will be used unless overridden in the
@@ -157,15 +158,15 @@ object terminalManagerMod {
     /**
       * Create a new terminal session.
       *
-      * @param options - The options used to create the session.
+      * @param options - The options used to create the terminal.
       *
-      * @returns A promise that resolves with the terminal instance.
+      * @returns A promise that resolves with the terminal connection instance.
       *
       * #### Notes
       * The manager `serverSettings` will be always be used.
       */
     def startNew(): js.Promise[ITerminalConnection] = js.native
-    def startNew(options: typings.jupyterlabServices.terminalTerminalMod.ITerminalConnection.IOptions): js.Promise[ITerminalConnection] = js.native
+    def startNew(options: typings.jupyterlabServices.terminalTerminalMod.ITerminal.IOptions): js.Promise[ITerminalConnection] = js.native
   }
   object TerminalManager {
     

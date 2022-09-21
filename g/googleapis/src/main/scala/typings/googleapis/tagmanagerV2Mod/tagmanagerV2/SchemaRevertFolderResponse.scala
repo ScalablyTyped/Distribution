@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The result of reverting folder changes in a workspace.
-  */
 trait SchemaRevertFolderResponse extends StObject {
   
   /**
-    * Folder as it appears in the latest container version since the last
-    * workspace synchronization operation. If no folder is present, that means
-    * the folder was deleted in the latest container version.
+    * Folder as it appears in the latest container version since the last workspace synchronization operation. If no folder is present, that means the folder was deleted in the latest container version.
     */
   var folder: js.UndefOr[SchemaFolder] = js.undefined
 }

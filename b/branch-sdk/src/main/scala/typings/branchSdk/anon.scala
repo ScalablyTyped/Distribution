@@ -45,7 +45,7 @@ object anon {
   trait Dictcustomkey
     extends StObject
        with // Custom data
-  /* custom_key */ StringDictionary[js.Any] {
+  /* custom_key */ StringDictionary[Any] {
     
     /**
       * When a user returns to the browser after going to the app, take them to this URL. iOS only; Android coming soon
@@ -676,7 +676,7 @@ object anon {
       
       inline def setTildekeywordUndefined: Self = StObject.set(x, "~keyword", js.undefined)
       
-      inline def setTildekeywordVarargs(value: String*): Self = StObject.set(x, "~keyword", js.Array(value :_*))
+      inline def setTildekeywordVarargs(value: String*): Self = StObject.set(x, "~keyword", js.Array(value*))
       
       inline def setTwitter_image_url(value: String): Self = StObject.set(x, "twitter_image_url", value.asInstanceOf[js.Any])
       

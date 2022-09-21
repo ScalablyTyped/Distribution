@@ -22,7 +22,7 @@ object featureLayerViewMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with FeatureLayerView {
     def this(properties: FeatureLayerViewProperties) = this()

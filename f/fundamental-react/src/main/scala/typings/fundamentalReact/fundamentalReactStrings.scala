@@ -103,6 +103,10 @@ object fundamentalReactStrings {
   inline def List: List = "List".asInstanceOf[List]
   
   @js.native
+  sealed trait ListDotByline extends StObject
+  inline def ListDotByline: ListDotByline = "List.Byline".asInstanceOf[ListDotByline]
+  
+  @js.native
   sealed trait ListDotFooter extends StObject
   inline def ListDotFooter: ListDotFooter = "List.Footer".asInstanceOf[ListDotFooter]
   

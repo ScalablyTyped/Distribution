@@ -19,6 +19,6 @@ object IdentityData {
     
     inline def setIdentityIds(value: js.Array[String]): Self = StObject.set(x, "identityIds", value.asInstanceOf[js.Any])
     
-    inline def setIdentityIdsVarargs(value: String*): Self = StObject.set(x, "identityIds", js.Array(value :_*))
+    inline def setIdentityIdsVarargs(value: String*): Self = StObject.set(x, "identityIds", js.Array(value*))
   }
 }

@@ -15,10 +15,9 @@ object searchMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Search", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[SearchProps, ComponentState, js.Any] {
+  open class default protected () extends Component[SearchProps, ComponentState, Any] {
     def this(props: SearchProps) = this()
-    def this(props: SearchProps, context: js.Any) = this()
+    def this(props: SearchProps, context: Any) = this()
   }
   object default extends Shortcut {
     
@@ -29,10 +28,9 @@ object searchMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Search", "default.Result")
     @js.native
-    class Result protected ()
-      extends Component[SearchResultProps, ComponentState, js.Any] {
+    open class Result protected () extends Component[SearchResultProps, ComponentState, Any] {
       def this(props: SearchResultProps) = this()
-      def this(props: SearchResultProps, context: js.Any) = this()
+      def this(props: SearchResultProps, context: Any) = this()
     }
     
     type _To = SearchComponent

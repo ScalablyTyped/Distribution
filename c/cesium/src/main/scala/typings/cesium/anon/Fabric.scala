@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Fabric extends StObject {
   
-  var fabric: js.Any
+  var fabric: Any
   
   var magnificationFilter: js.UndefOr[TextureMagnificationFilter] = js.undefined
   
@@ -16,18 +16,18 @@ trait Fabric extends StObject {
   
   var strict: js.UndefOr[Boolean] = js.undefined
   
-  var translucent: js.UndefOr[Boolean | (js.Function1[/* material */ typings.cesium.mod.Material, Boolean])] = js.undefined
+  var translucent: js.UndefOr[Boolean | (js.Function1[/* repeated */ Any, Any])] = js.undefined
 }
 object Fabric {
   
-  inline def apply(fabric: js.Any): Fabric = {
+  inline def apply(fabric: Any): Fabric = {
     val __obj = js.Dynamic.literal(fabric = fabric.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fabric]
   }
   
   extension [Self <: Fabric](x: Self) {
     
-    inline def setFabric(value: js.Any): Self = StObject.set(x, "fabric", value.asInstanceOf[js.Any])
+    inline def setFabric(value: Any): Self = StObject.set(x, "fabric", value.asInstanceOf[js.Any])
     
     inline def setMagnificationFilter(value: TextureMagnificationFilter): Self = StObject.set(x, "magnificationFilter", value.asInstanceOf[js.Any])
     
@@ -41,9 +41,9 @@ object Fabric {
     
     inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
-    inline def setTranslucent(value: Boolean | (js.Function1[/* material */ typings.cesium.mod.Material, Boolean])): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+    inline def setTranslucent(value: Boolean | (js.Function1[/* repeated */ Any, Any])): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
-    inline def setTranslucentFunction1(value: /* material */ typings.cesium.mod.Material => Boolean): Self = StObject.set(x, "translucent", js.Any.fromFunction1(value))
+    inline def setTranslucentFunction1(value: /* repeated */ Any => Any): Self = StObject.set(x, "translucent", js.Any.fromFunction1(value))
     
     inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
   }

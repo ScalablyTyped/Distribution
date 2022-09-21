@@ -1,14 +1,14 @@
 package typings.rxjs
 
-import typings.rxjs.typesMod.OperatorFunction
-import typings.rxjs.typesMod.SchedulerLike
+import typings.rxjs.internalTypesMod.OperatorFunction
+import typings.rxjs.internalTypesMod.SchedulerLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bufferTimeMod {
   
-  @JSImport("rxjs/internal/operators/bufferTime", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/operators/bufferTime", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

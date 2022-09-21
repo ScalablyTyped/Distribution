@@ -1,7 +1,7 @@
 
 # Scala.js typings for vast-client
 
-Typings are for version 2.1
+Typings are for version 3.0
 
 ## Library description:
 JavaScript VAST Client
@@ -10,10 +10,10 @@ JavaScript VAST Client
 | ------------------ | :-------------: |
 | Full name          | vast-client |
 | Keywords           | vast, ad, advertising, iab, in-stream, video |
-| # releases         | 26 |
-| # dependents       | 8 |
-| # downloads        | 292826 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 24840.333333333332 |
+| # stars            | 316.0 |
 
 ## Links
 - [Homepage](https://github.com/dailymotion/vast-client-js#readme)

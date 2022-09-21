@@ -11,7 +11,7 @@ object unnecessaryBindRuleMod {
   
   @JSImport("tslint/lib/rules/unnecessaryBindRule", "Rule")
   @js.native
-  class Rule protected () extends OptionallyTypedRule {
+  open class Rule protected () extends OptionallyTypedRule {
     def this(options: IOptions) = this()
   }
   /* static members */

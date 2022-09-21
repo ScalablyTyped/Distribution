@@ -11,71 +11,49 @@ object speechV1 {
   
   @JSImport("googleapis", "speech_v1.Resource$Operations")
   @js.native
-  class ResourceOperations protected ()
+  open class ResourceOperations protected ()
     extends typings.googleapis.speechV1Mod.speechV1.ResourceOperations {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "speech_v1.Resource$Projects")
   @js.native
-  class ResourceProjects protected ()
+  open class ResourceProjects protected ()
     extends typings.googleapis.speechV1Mod.speechV1.ResourceProjects {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "speech_v1.Resource$Projects$Locations")
   @js.native
-  class ResourceProjectsLocations protected ()
+  open class ResourceProjectsLocations protected ()
     extends typings.googleapis.speechV1Mod.speechV1.ResourceProjectsLocations {
     def this(context: APIRequestContext) = this()
   }
   
-  @JSImport("googleapis", "speech_v1.Resource$Projects$Locations$Operations")
+  @JSImport("googleapis", "speech_v1.Resource$Projects$Locations$Customclasses")
   @js.native
-  class ResourceProjectsLocationsOperations protected ()
-    extends typings.googleapis.speechV1Mod.speechV1.ResourceProjectsLocationsOperations {
+  open class ResourceProjectsLocationsCustomclasses protected ()
+    extends typings.googleapis.speechV1Mod.speechV1.ResourceProjectsLocationsCustomclasses {
     def this(context: APIRequestContext) = this()
   }
   
-  @JSImport("googleapis", "speech_v1.Resource$Projects$Operations")
+  @JSImport("googleapis", "speech_v1.Resource$Projects$Locations$Phrasesets")
   @js.native
-  class ResourceProjectsOperations protected ()
-    extends typings.googleapis.speechV1Mod.speechV1.ResourceProjectsOperations {
-    def this(context: APIRequestContext) = this()
-  }
-  
-  @JSImport("googleapis", "speech_v1.Resource$Projects$Operations$Manualrecognitiontasks")
-  @js.native
-  class ResourceProjectsOperationsManualrecognitiontasks protected ()
-    extends typings.googleapis.speechV1Mod.speechV1.ResourceProjectsOperationsManualrecognitiontasks {
+  open class ResourceProjectsLocationsPhrasesets protected ()
+    extends typings.googleapis.speechV1Mod.speechV1.ResourceProjectsLocationsPhrasesets {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "speech_v1.Resource$Speech")
   @js.native
-  class ResourceSpeech protected ()
+  open class ResourceSpeech protected ()
     extends typings.googleapis.speechV1Mod.speechV1.ResourceSpeech {
     def this(context: APIRequestContext) = this()
   }
   
-  /**
-    * Cloud Speech-to-Text API
-    *
-    * Converts audio to text by applying powerful neural network models.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const speech = google.speech('v1');
-    *
-    * @namespace speech
-    * @type {Function}
-    * @version v1
-    * @variation v1
-    * @param {object=} options Options for Speech
-    */
   @JSImport("googleapis", "speech_v1.Speech")
   @js.native
-  class Speech protected ()
+  open class Speech protected ()
     extends typings.googleapis.speechV1Mod.speechV1.Speech {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()

@@ -10,10 +10,10 @@ Memory leak testing for node. Javascript memory footprinting using your favorite
 | ------------------ | :-------------: |
 | Full name          | leakage |
 | Keywords           | memory leak, testing, node, javascript, v8, heap |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 50712 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 121.66666666666667 |
+| # stars            | 1546.0 |
 
 ## Links
 - [Homepage](https://github.com/andywer/leakage#readme)

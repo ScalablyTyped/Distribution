@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Response extends IncomingMessage {
   
-  var body: js.Any = js.native
+  var body: Any = js.native
   
   // Buffer, string, stream.Readable, or a plain object if `json` was truthy
   var caseless: Caseless = js.native

@@ -10,7 +10,7 @@ object Controls {
   
   @JSGlobal("CUI.Controls.Button")
   @js.native
-  class Button protected ()
+  open class Button protected ()
     extends StObject
        with typings.sharepoint.CUI.Controls.Button {
     def this(
@@ -20,13 +20,13 @@ object Controls {
     ) = this()
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     /* CompleteClass */
-    override def createComponentForDisplayModeInternal(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayModeInternal(displayMode: String): Any = js.native
     
     /* CompleteClass */
-    override def createDOMElementForDisplayMode(displayMode: String): js.Any = js.native
+    override def createDOMElementForDisplayMode(displayMode: String): Any = js.native
     
     /* CompleteClass */
     override def deselect(): scala.Unit = js.native
@@ -67,22 +67,22 @@ object Controls {
     override def get_root(): typings.sharepoint.CUI.Root = js.native
     
     /* CompleteClass */
-    override def handleMouseBlur(e: FocusEvent): js.Any = js.native
+    override def handleMouseBlur(e: FocusEvent): Any = js.native
     
     /* CompleteClass */
-    override def handleMouseFocus(e: FocusEvent): js.Any = js.native
+    override def handleMouseFocus(e: FocusEvent): Any = js.native
     
     /* CompleteClass */
-    override def handleTabBlur(e: FocusEvent): js.Any = js.native
+    override def handleTabBlur(e: FocusEvent): Any = js.native
     
     /* CompleteClass */
-    override def handleTabFocus(e: FocusEvent): js.Any = js.native
+    override def handleTabFocus(e: FocusEvent): Any = js.native
     
     /* CompleteClass */
     override def onClick(e: Event): scala.Unit = js.native
     
     /* CompleteClass */
-    override def onEnabledChanged(enabled: Boolean): js.Any = js.native
+    override def onEnabledChanged(enabled: Boolean): Any = js.native
     
     /* CompleteClass */
     override def onMenuClosed(): scala.Unit = js.native
@@ -96,12 +96,12 @@ object Controls {
   
   @JSGlobal("CUI.Controls.CheckBox")
   @js.native
-  class CheckBox ()
+  open class CheckBox ()
     extends StObject
        with typings.sharepoint.CUI.Controls.ToggleButton {
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     //#region Methods
     /**
@@ -126,18 +126,18 @@ object Controls {
   
   @JSGlobal("CUI.Controls.CheckBoxCommandProperties")
   @js.native
-  class CheckBoxCommandProperties ()
+  open class CheckBoxCommandProperties ()
     extends StObject
        with typings.sharepoint.CUI.Controls.CheckBoxCommandProperties
   
   @JSGlobal("CUI.Controls.ColorPicker")
   @js.native
-  class ColorPicker ()
+  open class ColorPicker ()
     extends StObject
        with typings.sharepoint.CUI.Controls.ColorPicker {
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     //#region Methods
     /**
@@ -162,18 +162,18 @@ object Controls {
   
   @JSGlobal("CUI.Controls.ColorPickerCommandProperties")
   @js.native
-  class ColorPickerCommandProperties ()
+  open class ColorPickerCommandProperties ()
     extends StObject
        with typings.sharepoint.CUI.Controls.ColorPickerCommandProperties
   
   @JSGlobal("CUI.Controls.ComboBox")
   @js.native
-  class ComboBox ()
+  open class ComboBox ()
     extends StObject
        with typings.sharepoint.CUI.MenuLauncher {
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     //#region Methods
     /**
@@ -198,7 +198,7 @@ object Controls {
   
   @JSGlobal("CUI.Controls.ContextMenuControlProperties")
   @js.native
-  class ContextMenuControlProperties ()
+  open class ContextMenuControlProperties ()
     extends StObject
        with typings.sharepoint.CUI.ControlProperties {
     
@@ -283,18 +283,18 @@ object Controls {
   
   @JSGlobal("CUI.Controls.DropDown")
   @js.native
-  class DropDown protected ()
+  open class DropDown protected ()
     extends StObject
        with typings.sharepoint.CUI.MenuLauncher {
     def this(
       root: typings.sharepoint.CUI.Root,
       id: String,
       properties: typings.sharepoint.CUI.ControlProperties,
-      menu: js.Any
+      menu: Any
     ) = this()
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     //#region Methods
     /**
@@ -319,7 +319,7 @@ object Controls {
   
   @JSGlobal("CUI.Controls.DropDownCommandProperties")
   @js.native
-  class DropDownCommandProperties ()
+  open class DropDownCommandProperties ()
     extends StObject
        with typings.sharepoint.CUI.Controls.DropDownCommandProperties {
     
@@ -332,12 +332,12 @@ object Controls {
   
   @JSGlobal("CUI.Controls.FlyoutAnchor")
   @js.native
-  class FlyoutAnchor ()
+  open class FlyoutAnchor ()
     extends StObject
        with typings.sharepoint.CUI.MenuLauncher {
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     //#region Methods
     /**
@@ -362,12 +362,12 @@ object Controls {
   
   @JSGlobal("CUI.Controls.GalleryButton")
   @js.native
-  class GalleryButton ()
+  open class GalleryButton ()
     extends StObject
        with typings.sharepoint.CUI.Controls.GalleryButton {
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     //#region Methods
     /**
@@ -392,18 +392,18 @@ object Controls {
   
   @JSGlobal("CUI.Controls.GalleryButtonCommandProperties")
   @js.native
-  class GalleryButtonCommandProperties ()
+  open class GalleryButtonCommandProperties ()
     extends StObject
        with typings.sharepoint.CUI.Controls.GalleryButtonCommandProperties
   
   @JSGlobal("CUI.Controls.InsertTable")
   @js.native
-  class InsertTable ()
+  open class InsertTable ()
     extends StObject
        with typings.sharepoint.CUI.Control {
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     //#region Methods
     /**
@@ -428,18 +428,18 @@ object Controls {
   
   @JSGlobal("CUI.Controls.InsertTableCommandProperties")
   @js.native
-  class InsertTableCommandProperties ()
+  open class InsertTableCommandProperties ()
     extends StObject
        with typings.sharepoint.CUI.Controls.InsertTableCommandProperties
   
   @JSGlobal("CUI.Controls.JewelMenuLauncher")
   @js.native
-  class JewelMenuLauncher ()
+  open class JewelMenuLauncher ()
     extends StObject
        with typings.sharepoint.CUI.MenuLauncher {
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     //#region Methods
     /**
@@ -464,12 +464,12 @@ object Controls {
   
   @JSGlobal("CUI.Controls.Label")
   @js.native
-  class Label ()
+  open class Label ()
     extends StObject
        with typings.sharepoint.CUI.Control {
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     //#region Methods
     /**
@@ -494,18 +494,18 @@ object Controls {
   
   @JSGlobal("CUI.Controls.LabelCommandProperties")
   @js.native
-  class LabelCommandProperties ()
+  open class LabelCommandProperties ()
     extends StObject
        with typings.sharepoint.CUI.Controls.LabelCommandProperties
   
   @JSGlobal("CUI.Controls.MRUSplitButton")
   @js.native
-  class MRUSplitButton ()
+  open class MRUSplitButton ()
     extends StObject
        with typings.sharepoint.CUI.MenuLauncher {
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     //#region Methods
     /**
@@ -530,12 +530,12 @@ object Controls {
   
   @JSGlobal("CUI.Controls.Separator")
   @js.native
-  class Separator ()
+  open class Separator ()
     extends StObject
        with typings.sharepoint.CUI.Control {
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     //#region Methods
     /**
@@ -560,12 +560,12 @@ object Controls {
   
   @JSGlobal("CUI.Controls.Spinner")
   @js.native
-  class Spinner ()
+  open class Spinner ()
     extends StObject
        with typings.sharepoint.CUI.Control {
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     //#region Methods
     /**
@@ -590,18 +590,18 @@ object Controls {
   
   @JSGlobal("CUI.Controls.SpinnerCommandProperties")
   @js.native
-  class SpinnerCommandProperties ()
+  open class SpinnerCommandProperties ()
     extends StObject
        with typings.sharepoint.CUI.Controls.SpinnerCommandProperties
   
   @JSGlobal("CUI.Controls.SplitButton")
   @js.native
-  class SplitButton ()
+  open class SplitButton ()
     extends StObject
        with typings.sharepoint.CUI.MenuLauncher {
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     //#region Methods
     /**
@@ -626,12 +626,12 @@ object Controls {
   
   @JSGlobal("CUI.Controls.TextBox")
   @js.native
-  class TextBox ()
+  open class TextBox ()
     extends StObject
        with typings.sharepoint.CUI.Control {
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     //#region Methods
     /**
@@ -656,18 +656,18 @@ object Controls {
   
   @JSGlobal("CUI.Controls.TextBoxCommandProperties")
   @js.native
-  class TextBoxCommandProperties ()
+  open class TextBoxCommandProperties ()
     extends StObject
        with typings.sharepoint.CUI.Controls.TextBoxCommandProperties
   
   @JSGlobal("CUI.Controls.ToggleButton")
   @js.native
-  class ToggleButton ()
+  open class ToggleButton ()
     extends StObject
        with typings.sharepoint.CUI.Controls.ToggleButton {
     
     /* CompleteClass */
-    override def createComponentForDisplayMode(displayMode: String): js.Any = js.native
+    override def createComponentForDisplayMode(displayMode: String): Any = js.native
     
     //#region Methods
     /**
@@ -692,7 +692,7 @@ object Controls {
   
   @JSGlobal("CUI.Controls.ToggleButtonCommandProperties")
   @js.native
-  class ToggleButtonCommandProperties ()
+  open class ToggleButtonCommandProperties ()
     extends StObject
        with typings.sharepoint.CUI.Controls.ToggleButtonCommandProperties
 }

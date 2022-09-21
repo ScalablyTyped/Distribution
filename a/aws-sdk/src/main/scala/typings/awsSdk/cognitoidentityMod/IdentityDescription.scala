@@ -9,7 +9,7 @@ trait IdentityDescription extends StObject {
   /**
     * Date on which the identity was created.
     */
-  var CreationDate: js.UndefOr[DateType] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A unique identifier in the format REGION:GUID.
@@ -19,7 +19,7 @@ trait IdentityDescription extends StObject {
   /**
     * Date on which the identity was last modified.
     */
-  var LastModifiedDate: js.UndefOr[DateType] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The provider names.
@@ -35,7 +35,7 @@ object IdentityDescription {
   
   extension [Self <: IdentityDescription](x: Self) {
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -43,7 +43,7 @@ object IdentityDescription {
     
     inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     
-    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
@@ -51,6 +51,6 @@ object IdentityDescription {
     
     inline def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
     
-    inline def setLoginsVarargs(value: IdentityProviderName*): Self = StObject.set(x, "Logins", js.Array(value :_*))
+    inline def setLoginsVarargs(value: IdentityProviderName*): Self = StObject.set(x, "Logins", js.Array(value*))
   }
 }

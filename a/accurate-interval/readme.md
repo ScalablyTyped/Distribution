@@ -10,15 +10,12 @@ Create an accurate interval that does not skew over time.
 | ------------------ | :-------------: |
 | Full name          | accurate-interval |
 | Keywords           | accurate, timeout, skew, interval, setInterval, setTimeout, timer |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 19236 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1301.6666666666667 |
+| # stars            | 16.0 |
 
 ## Links
-- [Homepage](https://github.com/klyngbaek/accurate-interval#readme)
-- [Bugs](https://github.com/klyngbaek/accurate-interval/issues)
-- [Repository](https://github.com/klyngbaek/accurate-interval)
 - [Npm](https://www.npmjs.com/package/accurate-interval)
     
 

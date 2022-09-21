@@ -1,7 +1,5 @@
 package typings.oracledb.mod
 
-import typings.node.streamMod.Readable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,8 +65,8 @@ trait Connection extends StObject {
   
   /**
     * The client information for end-to-end application tracing.
-    * This is a write-only property. Displaying connection.clientInfo will show a value of null. 
-    * 
+    * This is a write-only property. Displaying connection.clientInfo will show a value of null.
+    *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#endtoend
     * @since 4.1
     */
@@ -126,7 +124,7 @@ trait Connection extends StObject {
     * This setting does not change the session user or the current user, nor does it give the session user any additional system or object privileges for the session.
     * The value of currentSchema will be empty until it has been explicitly set.
     * This property is an efficient alternative to ALTER SESSION SET CURRENT_SCHEMA.
-    * 
+    *
     * @since 4.0
     */
   var currentSchema: js.UndefOr[String] = js.native
@@ -134,7 +132,7 @@ trait Connection extends StObject {
   /**
     * The database operation information for end-to-end application tracing.
     * This is a write-only property. Displaying connection.dbOp will show a value of null.
-    * 
+    *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#endtoend
     * @since 4.1
     */
@@ -269,12 +267,12 @@ trait Connection extends StObject {
     * Returns a DbObject prototype object representing the named Oracle Database object or collection.
     * When the definition of a type changes in the database, such as might occur in a development environment,
     * you should fully close connections to clear the object caches used by node-oracledb and the Oracle client libraries.
-    * 
+    *
     * For example, when using a pool you could use await connection.close({drop: true}), or restart the pool.
     * Then getDbObjectClass() can be called again to get the updated type information.
-    * 
+    *
     * @param className The name of the Oracle object or collection.
-    * 
+    *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#objects
     * @since 4.0
     */
@@ -364,8 +362,8 @@ trait Connection extends StObject {
   def ping(): js.Promise[Unit] = js.native
   def ping(callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
   
-  def queryStream(sql: String): Readable = js.native
-  def queryStream(sql: String, bindParams: BindParameters): Readable = js.native
+  def queryStream[T](sql: String): QueryStream[T] = js.native
+  def queryStream[T](sql: String, bindParams: BindParameters): QueryStream[T] = js.native
   /**
     * This function provides query streaming support. The parameters are the same as execute() except
     * a callback is not used. Instead this function returns a stream used to fetch data.
@@ -384,7 +382,7 @@ trait Connection extends StObject {
     * @since 1.8
     * @see https://oracle.github.io/node-oracledb/doc/api.html#streamingresults
     */
-  def queryStream(sql: String, bindParams: BindParameters, options: ExecuteOptions): Readable = js.native
+  def queryStream[T](sql: String, bindParams: BindParameters, options: ExecuteOptions): QueryStream[T] = js.native
   
   def release(): js.Promise[Unit] = js.native
   def release(callback: js.Function1[/* error */ DBError, Unit]): Unit = js.native
@@ -416,39 +414,39 @@ trait Connection extends StObject {
   
   /**
     * Used to shut down a database instance. This is the flexible version of oracledb.shutdown(), allowing more control over behavior.
-    * 
+    *
     * This method must be called twice. The first call blocks new connections. SQL statements such as await ALTER DATABASE CLOSE NORMAL
     * and ALTER DATABASE DISMOUNT can then be used to close and unmount the database instance. Alternatively database administration can
     * be performed. Finally, a second call connection.shutdown(oracledb.SHUTDOWN_MODE_FINAL) is required to fully close the database instance.
-    * 
+    *
     * If the initial connection.shutdown() shutdownMode mode oracledb.SHUTDOWN_MODE_ABORT is used, then connection.shutdown() does not need to be called a second time.
-    * 
+    *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#startupshutdown
     * @since 5.0
     */
   def shutdown(): js.Promise[Unit] = js.native
-  def shutdown(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def shutdown(cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   def shutdown(mode: Double): js.Promise[Unit] = js.native
-  def shutdown(mode: Double, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def shutdown(mode: Double, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Used to start up a database instance. This is the flexible version of oracledb.startup(), allowing more control over behavior.
-    * 
+    *
     * The connection must be a standalone connection, not a pooled connection.
-    * 
+    *
     * This function starts the database in an unmounted state. SQL statements such as ALTER DATABASE MOUNT and ALTER DATABASE OPEN
     * can then be executed to completely open the database instance. Database recovery commands could also be executed at this time.
-    * 
+    *
     * The connection used must have the privilege set to oracledb.SYSPRELIM, along with either oracledb.SYSDBA or oracledb.SYSOPER.
     * For example oracledb.SYSDBA | oracledb.SYSPRELIM.
-    * 
+    *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#startupshutdown
     * @since 5.0
     */
   def startup(): js.Promise[Unit] = js.native
-  def startup(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def startup(cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   def startup(opts: StartupOptions): js.Promise[Unit] = js.native
-  def startup(opts: StartupOptions, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def startup(opts: StartupOptions, cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * The number of statements to be cached in the statement cache of the connection.
@@ -459,23 +457,23 @@ trait Connection extends StObject {
   /**
     * Register a JavaScript callback method to be invoked when data is changed in the database by any committed transaction,
     * or when there are Advanced Queuing messages to be dequeued.
-    * 
+    *
     * For notifications to work, the connection must be created with events mode true, which is the default.
     * The database must be able to connect to the node-oracledb machine for notifications to be received.
     * Typically this means that the machine running node-oracledb needs a fixed IP address.
-    * 
+    *
     * If there is any problem sending a notification, then the callback method will not be invoked.
     * The connection.subscribe() method may be called multiple times with the same name, as long as the same connection is used.
     * In this case, the second and subsequent invocations ignore all options properties other than sql and binds.
     * Instead, the new SQL statement is registered to the same subscription, and the same JavaScript notification callback is used.
     * For performance reasons this can be preferable to creating a new subscription for each query.
-    * 
+    *
     * AQ notifications were added in node-oracledb 4.0.
     * The result callback parameter was added in node-oracledb 4.0.
-    * 
+    *
     * @param name For Continuous Query Notification this is an arbitrary name given to the subscription. For Advanced Queuing notifications this must be the queue name.
-    * @param options Options that control the subscription. 
-    * 
+    * @param options Options that control the subscription.
+    *
     * @since 2.3
     */
   def subscribe(name: String, options: SubscribeOptions): js.Promise[Subscription] = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.PictureFormat")
 @js.native
-/* private */ class PictureFormat ()
+/* private */ open class PictureFormat ()
   extends StObject
      with typings.activexWord.Word.PictureFormat {
   
@@ -49,7 +49,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def IncrementContrast(Increment: Double): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var TransparencyColor: Double = js.native

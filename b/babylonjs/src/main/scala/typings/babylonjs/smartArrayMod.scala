@@ -8,7 +8,7 @@ object smartArrayMod {
   
   @JSImport("babylonjs/Misc/smartArray", "SmartArray")
   @js.native
-  class SmartArray[T] protected ()
+  open class SmartArray[T] protected ()
     extends StObject
        with ISmartArrayLike[T] {
     /**
@@ -23,7 +23,7 @@ object smartArrayMod {
       * Concats the active data with a given array.
       * @param array defines the data to concatenate with.
       */
-    def concat(array: js.Any): Unit = js.native
+    def concat(array: Any): Unit = js.native
     
     /**
       * Returns whether an element is part of the active data.
@@ -88,27 +88,27 @@ object smartArrayMod {
     
     @JSImport("babylonjs/Misc/smartArray", "SmartArray._GlobalId")
     @js.native
-    def _GlobalId: js.Any = js.native
-    inline def _GlobalId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GlobalId")(x.asInstanceOf[js.Any])
+    def _GlobalId: Any = js.native
+    inline def _GlobalId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GlobalId")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Misc/smartArray", "SmartArrayNoDuplicate")
   @js.native
-  class SmartArrayNoDuplicate[T] protected () extends SmartArray[T] {
+  open class SmartArrayNoDuplicate[T] protected () extends SmartArray[T] {
     /**
       * Instantiates a Smart Array.
       * @param capacity defines the default capacity of the array.
       */
     def this(capacity: Double) = this()
     
-    /* private */ var _duplicateId: js.Any = js.native
+    /* private */ var _duplicateId: Any = js.native
     
     /**
       * Concats the active data with a given array.
-      * This ensures no dupplicate will be present in the result.
+      * This ensures no duplicate will be present in the result.
       * @param array defines the data to concatenate with.
       */
-    def concatWithNoDuplicate(array: js.Any): Unit = js.native
+    def concatWithNoDuplicate(array: Any): Unit = js.native
     
     /**
       * Pushes a value at the end of the active data.
@@ -142,7 +142,7 @@ object smartArrayMod {
       
       inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }

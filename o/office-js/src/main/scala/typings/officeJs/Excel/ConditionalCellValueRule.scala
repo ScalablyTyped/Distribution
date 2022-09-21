@@ -14,33 +14,33 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a cell value conditional format rule.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 trait ConditionalCellValueRule extends StObject {
   
   /**
+    * The formula, if required, on which to evaluate the conditional format rule.
     *
-    * The formula, if required, to evaluate the conditional format rule on.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var formula1: String
   
   /**
+    * The formula, if required, on which to evaluate the conditional format rule.
     *
-    * The formula, if required, to evaluate the conditional format rule on.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var formula2: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * The operator of the cell value conditional format.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var operator: ConditionalCellValueOperator | Invalid | Between | NotBetween | EqualTo | NotEqualTo | GreaterThan | LessThan | GreaterThanOrEqual | LessThanOrEqual

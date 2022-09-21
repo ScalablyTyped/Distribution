@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ConsensusNotifyPeerConnected.
   * @param [properties] Properties to set
   */
-class ConsensusNotifyPeerConnected ()
+open class ConsensusNotifyPeerConnected ()
   extends StObject
      with IConsensusNotifyPeerConnected {
   def this(properties: IConsensusNotifyPeerConnected) = this()
@@ -24,7 +23,7 @@ class ConsensusNotifyPeerConnected ()
     * Converts this ConsensusNotifyPeerConnected to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object ConsensusNotifyPeerConnected {
@@ -41,6 +40,8 @@ object ConsensusNotifyPeerConnected {
   inline def create(): ConsensusNotifyPeerConnected = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ConsensusNotifyPeerConnected]
   inline def create(properties: IConsensusNotifyPeerConnected): ConsensusNotifyPeerConnected = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyPeerConnected]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ConsensusNotifyPeerConnected = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyPeerConnected]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ConsensusNotifyPeerConnected = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusNotifyPeerConnected]
   /**
     * Decodes a ConsensusNotifyPeerConnected message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -51,9 +52,8 @@ object ConsensusNotifyPeerConnected {
     */
   inline def decode(reader: Reader): ConsensusNotifyPeerConnected = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyPeerConnected]
   inline def decode(reader: Reader, length: Double): ConsensusNotifyPeerConnected = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusNotifyPeerConnected]
-  inline def decode(reader: Uint8Array): ConsensusNotifyPeerConnected = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyPeerConnected]
-  inline def decode(reader: Uint8Array, length: Double): ConsensusNotifyPeerConnected = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusNotifyPeerConnected]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ConsensusNotifyPeerConnected = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyPeerConnected]
   /**
     * Decodes a ConsensusNotifyPeerConnected message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -62,7 +62,6 @@ object ConsensusNotifyPeerConnected {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): ConsensusNotifyPeerConnected = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyPeerConnected]
-  inline def decodeDelimited(reader: Uint8Array): ConsensusNotifyPeerConnected = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyPeerConnected]
   
   /**
     * Encodes the specified ConsensusNotifyPeerConnected message. Does not implicitly {@link ConsensusNotifyPeerConnected.verify|verify} messages.
@@ -87,7 +86,7 @@ object ConsensusNotifyPeerConnected {
     * @param object Plain object
     * @returns ConsensusNotifyPeerConnected
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ConsensusNotifyPeerConnected = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyPeerConnected]
+  inline def fromObject(`object`: StringDictionary[Any]): ConsensusNotifyPeerConnected = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyPeerConnected]
   
   /**
     * Creates a plain object from a ConsensusNotifyPeerConnected message. Also converts values to other types if specified.
@@ -95,13 +94,13 @@ object ConsensusNotifyPeerConnected {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: ConsensusNotifyPeerConnected): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ConsensusNotifyPeerConnected, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ConsensusNotifyPeerConnected): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ConsensusNotifyPeerConnected, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ConsensusNotifyPeerConnected message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

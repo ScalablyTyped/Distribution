@@ -1,7 +1,7 @@
 
 # Scala.js typings for canonicalize
 
-Typings are for version 1.0.5
+Typings are for version 1.0.8
 
 ## Library description:
 JSON canonicalize function
@@ -10,10 +10,10 @@ JSON canonicalize function
 | ------------------ | :-------------: |
 | Full name          | canonicalize |
 | Keywords           | json, canonical, canonicalize, signing, crypto |
-| # releases         | 4 |
-| # dependents       | 32 |
-| # downloads        | 9886766 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 774012.3333333334 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/erdtman/canonicalize#readme)

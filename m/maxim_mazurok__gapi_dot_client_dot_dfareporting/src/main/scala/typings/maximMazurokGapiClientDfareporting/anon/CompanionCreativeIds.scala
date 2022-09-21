@@ -140,13 +140,13 @@ object CompanionCreativeIds {
     
     inline def setCompanionCreativeIdsUndefined: Self = StObject.set(x, "companionCreativeIds", js.undefined)
     
-    inline def setCompanionCreativeIdsVarargs(value: String*): Self = StObject.set(x, "companionCreativeIds", js.Array(value :_*))
+    inline def setCompanionCreativeIdsVarargs(value: String*): Self = StObject.set(x, "companionCreativeIds", js.Array(value*))
     
     inline def setCreativeFieldIds(value: String | js.Array[String]): Self = StObject.set(x, "creativeFieldIds", value.asInstanceOf[js.Any])
     
     inline def setCreativeFieldIdsUndefined: Self = StObject.set(x, "creativeFieldIds", js.undefined)
     
-    inline def setCreativeFieldIdsVarargs(value: String*): Self = StObject.set(x, "creativeFieldIds", js.Array(value :_*))
+    inline def setCreativeFieldIdsVarargs(value: String*): Self = StObject.set(x, "creativeFieldIds", js.Array(value*))
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -156,7 +156,7 @@ object CompanionCreativeIds {
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
@@ -188,7 +188,7 @@ object CompanionCreativeIds {
     
     inline def setRenderingIdsUndefined: Self = StObject.set(x, "renderingIds", js.undefined)
     
-    inline def setRenderingIdsVarargs(value: String*): Self = StObject.set(x, "renderingIds", js.Array(value :_*))
+    inline def setRenderingIdsVarargs(value: String*): Self = StObject.set(x, "renderingIds", js.Array(value*))
     
     inline def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
     
@@ -198,7 +198,7 @@ object CompanionCreativeIds {
     
     inline def setSizeIdsUndefined: Self = StObject.set(x, "sizeIds", js.undefined)
     
-    inline def setSizeIdsVarargs(value: String*): Self = StObject.set(x, "sizeIds", js.Array(value :_*))
+    inline def setSizeIdsVarargs(value: String*): Self = StObject.set(x, "sizeIds", js.Array(value*))
     
     inline def setSortField(value: String): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
     
@@ -216,7 +216,7 @@ object CompanionCreativeIds {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

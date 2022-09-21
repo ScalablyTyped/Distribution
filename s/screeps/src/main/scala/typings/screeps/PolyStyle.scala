@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PolyStyle extends StObject {
   
   /**
-    * Fill color in any web format, default is #ffffff(white).
+    * Fill color in any web format, default is undefined (no fill).
     */
   var fill: js.UndefOr[String] = js.undefined
   
   /**
-    * Either undefined (solid line), dashed, or dotted.Default is undefined.
+    * Either undefined (solid line), dashed, or dotted. Default is undefined.
     */
   var lineStyle: js.UndefOr[dashed | dotted | solid] = js.undefined
   
@@ -25,7 +25,7 @@ trait PolyStyle extends StObject {
   var opacity: js.UndefOr[Double] = js.undefined
   
   /**
-    * Stroke color in any web format, default is undefined (no stroke).
+    * Stroke color in any web format, default is #ffffff (white).
     */
   var stroke: js.UndefOr[String] = js.undefined
   

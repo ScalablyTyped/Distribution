@@ -22,7 +22,7 @@ object XSQLQueryComposerFactory {
   inline def apply(
     acquire: () => Unit,
     createQueryComposer: () => XSQLQueryComposer,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSQLQueryComposerFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createQueryComposer = js.Any.fromFunction0(createQueryComposer), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

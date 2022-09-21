@@ -8,31 +8,31 @@ object anon {
   
   trait Asm extends StObject {
     
-    var asm: js.Any
+    var asm: Any
     
-    var attachments: js.Array[js.Any]
+    var attachments: js.Array[Any]
     
     var batch_id: String
     
-    var categories: js.Array[js.Any]
+    var categories: js.Array[Any]
     
     var content: String
     
-    var custom_args: js.Array[js.Any]
+    var custom_args: js.Array[Any]
     
-    var from: js.Any
+    var from: Any
     
-    var headers: js.Array[js.Any]
+    var headers: js.Array[Any]
     
     var ip_pool_name: String
     
-    var mail_settings: js.Any
+    var mail_settings: Any
     
-    var personalizations: js.Array[js.Any]
+    var personalizations: js.Array[Any]
     
-    var reply_to: js.Any
+    var reply_to: Any
     
-    var sections: js.Array[js.Any]
+    var sections: js.Array[Any]
     
     var send_at: Double
     
@@ -40,28 +40,28 @@ object anon {
     
     var template_id: String
     
-    var tracking_settings: js.Any
+    var tracking_settings: Any
   }
   object Asm {
     
     inline def apply(
-      asm: js.Any,
-      attachments: js.Array[js.Any],
+      asm: Any,
+      attachments: js.Array[Any],
       batch_id: String,
-      categories: js.Array[js.Any],
+      categories: js.Array[Any],
       content: String,
-      custom_args: js.Array[js.Any],
-      from: js.Any,
-      headers: js.Array[js.Any],
+      custom_args: js.Array[Any],
+      from: Any,
+      headers: js.Array[Any],
       ip_pool_name: String,
-      mail_settings: js.Any,
-      personalizations: js.Array[js.Any],
-      reply_to: js.Any,
-      sections: js.Array[js.Any],
+      mail_settings: Any,
+      personalizations: js.Array[Any],
+      reply_to: Any,
+      sections: js.Array[Any],
       send_at: Double,
       subject: String,
       template_id: String,
-      tracking_settings: js.Any
+      tracking_settings: Any
     ): Asm = {
       val __obj = js.Dynamic.literal(asm = asm.asInstanceOf[js.Any], attachments = attachments.asInstanceOf[js.Any], batch_id = batch_id.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], custom_args = custom_args.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ip_pool_name = ip_pool_name.asInstanceOf[js.Any], mail_settings = mail_settings.asInstanceOf[js.Any], personalizations = personalizations.asInstanceOf[js.Any], reply_to = reply_to.asInstanceOf[js.Any], sections = sections.asInstanceOf[js.Any], send_at = send_at.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], template_id = template_id.asInstanceOf[js.Any], tracking_settings = tracking_settings.asInstanceOf[js.Any])
       __obj.asInstanceOf[Asm]
@@ -69,43 +69,43 @@ object anon {
     
     extension [Self <: Asm](x: Self) {
       
-      inline def setAsm(value: js.Any): Self = StObject.set(x, "asm", value.asInstanceOf[js.Any])
+      inline def setAsm(value: Any): Self = StObject.set(x, "asm", value.asInstanceOf[js.Any])
       
-      inline def setAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: js.Array[Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
-      inline def setAttachmentsVarargs(value: js.Any*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: Any*): Self = StObject.set(x, "attachments", js.Array(value*))
       
       inline def setBatch_id(value: String): Self = StObject.set(x, "batch_id", value.asInstanceOf[js.Any])
       
-      inline def setCategories(value: js.Array[js.Any]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: js.Array[Any]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      inline def setCategoriesVarargs(value: js.Any*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: Any*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setCustom_args(value: js.Array[js.Any]): Self = StObject.set(x, "custom_args", value.asInstanceOf[js.Any])
+      inline def setCustom_args(value: js.Array[Any]): Self = StObject.set(x, "custom_args", value.asInstanceOf[js.Any])
       
-      inline def setCustom_argsVarargs(value: js.Any*): Self = StObject.set(x, "custom_args", js.Array(value :_*))
+      inline def setCustom_argsVarargs(value: Any*): Self = StObject.set(x, "custom_args", js.Array(value*))
       
-      inline def setFrom(value: js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Array[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: Any*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setIp_pool_name(value: String): Self = StObject.set(x, "ip_pool_name", value.asInstanceOf[js.Any])
       
-      inline def setMail_settings(value: js.Any): Self = StObject.set(x, "mail_settings", value.asInstanceOf[js.Any])
+      inline def setMail_settings(value: Any): Self = StObject.set(x, "mail_settings", value.asInstanceOf[js.Any])
       
-      inline def setPersonalizations(value: js.Array[js.Any]): Self = StObject.set(x, "personalizations", value.asInstanceOf[js.Any])
+      inline def setPersonalizations(value: js.Array[Any]): Self = StObject.set(x, "personalizations", value.asInstanceOf[js.Any])
       
-      inline def setPersonalizationsVarargs(value: js.Any*): Self = StObject.set(x, "personalizations", js.Array(value :_*))
+      inline def setPersonalizationsVarargs(value: Any*): Self = StObject.set(x, "personalizations", js.Array(value*))
       
-      inline def setReply_to(value: js.Any): Self = StObject.set(x, "reply_to", value.asInstanceOf[js.Any])
+      inline def setReply_to(value: Any): Self = StObject.set(x, "reply_to", value.asInstanceOf[js.Any])
       
-      inline def setSections(value: js.Array[js.Any]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+      inline def setSections(value: js.Array[Any]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
       
-      inline def setSectionsVarargs(value: js.Any*): Self = StObject.set(x, "sections", js.Array(value :_*))
+      inline def setSectionsVarargs(value: Any*): Self = StObject.set(x, "sections", js.Array(value*))
       
       inline def setSend_at(value: Double): Self = StObject.set(x, "send_at", value.asInstanceOf[js.Any])
       
@@ -113,78 +113,72 @@ object anon {
       
       inline def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
       
-      inline def setTracking_settings(value: js.Any): Self = StObject.set(x, "tracking_settings", value.asInstanceOf[js.Any])
+      inline def setTracking_settings(value: Any): Self = StObject.set(x, "tracking_settings", value.asInstanceOf[js.Any])
     }
   }
   
   trait Bcc extends StObject {
     
-    var bcc: js.Any
+    var bcc: Any
     
-    var bypass_list_management: js.Any
+    var bypass_list_management: Any
     
-    var footer: js.Any
+    var footer: Any
     
-    var sandbox_mode: js.Any
+    var sandbox_mode: Any
     
-    var spam_check: js.Any
+    var spam_check: Any
   }
   object Bcc {
     
-    inline def apply(
-      bcc: js.Any,
-      bypass_list_management: js.Any,
-      footer: js.Any,
-      sandbox_mode: js.Any,
-      spam_check: js.Any
-    ): Bcc = {
+    inline def apply(bcc: Any, bypass_list_management: Any, footer: Any, sandbox_mode: Any, spam_check: Any): Bcc = {
       val __obj = js.Dynamic.literal(bcc = bcc.asInstanceOf[js.Any], bypass_list_management = bypass_list_management.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], sandbox_mode = sandbox_mode.asInstanceOf[js.Any], spam_check = spam_check.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bcc]
     }
     
     extension [Self <: Bcc](x: Self) {
       
-      inline def setBcc(value: js.Any): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
+      inline def setBcc(value: Any): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
-      inline def setBypass_list_management(value: js.Any): Self = StObject.set(x, "bypass_list_management", value.asInstanceOf[js.Any])
+      inline def setBypass_list_management(value: Any): Self = StObject.set(x, "bypass_list_management", value.asInstanceOf[js.Any])
       
-      inline def setFooter(value: js.Any): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: Any): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      inline def setSandbox_mode(value: js.Any): Self = StObject.set(x, "sandbox_mode", value.asInstanceOf[js.Any])
+      inline def setSandbox_mode(value: Any): Self = StObject.set(x, "sandbox_mode", value.asInstanceOf[js.Any])
       
-      inline def setSpam_check(value: js.Any): Self = StObject.set(x, "spam_check", value.asInstanceOf[js.Any])
+      inline def setSpam_check(value: Any): Self = StObject.set(x, "spam_check", value.asInstanceOf[js.Any])
     }
   }
   
   trait Cc extends StObject {
     
-    var bcc: js.Any
+    var bcc: Any
     
-    var cc: js.Any
+    var cc: Any
     
-    var custom_args: js.Any
+    var custom_args: Any
     
-    var headers: js.Any
+    var headers: Any
     
     var send_at: Double
     
     var subject: String
     
-    var substitutions: js.Any
+    var substitutions: Any
     
-    var to: js.Any
+    var to: Any
   }
   object Cc {
     
     inline def apply(
-      bcc: js.Any,
-      cc: js.Any,
-      custom_args: js.Any,
-      headers: js.Any,
+      bcc: Any,
+      cc: Any,
+      custom_args: Any,
+      headers: Any,
       send_at: Double,
       subject: String,
-      substitutions: js.Any,
-      to: js.Any
+      substitutions: Any,
+      to: Any
     ): Cc = {
       val __obj = js.Dynamic.literal(bcc = bcc.asInstanceOf[js.Any], cc = cc.asInstanceOf[js.Any], custom_args = custom_args.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], send_at = send_at.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], substitutions = substitutions.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cc]
@@ -192,50 +186,50 @@ object anon {
     
     extension [Self <: Cc](x: Self) {
       
-      inline def setBcc(value: js.Any): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
+      inline def setBcc(value: Any): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
-      inline def setCc(value: js.Any): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
+      inline def setCc(value: Any): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
       
-      inline def setCustom_args(value: js.Any): Self = StObject.set(x, "custom_args", value.asInstanceOf[js.Any])
+      inline def setCustom_args(value: Any): Self = StObject.set(x, "custom_args", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setSend_at(value: Double): Self = StObject.set(x, "send_at", value.asInstanceOf[js.Any])
       
       inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      inline def setSubstitutions(value: js.Any): Self = StObject.set(x, "substitutions", value.asInstanceOf[js.Any])
+      inline def setSubstitutions(value: Any): Self = StObject.set(x, "substitutions", value.asInstanceOf[js.Any])
       
-      inline def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
   trait Clicktracking extends StObject {
     
-    var click_tracking: js.Any
+    var click_tracking: Any
     
-    var ganalytics: js.Any
+    var ganalytics: Any
     
-    var open_tracking: js.Any
+    var open_tracking: Any
     
-    var subscription_tracking: js.Any
+    var subscription_tracking: Any
   }
   object Clicktracking {
     
-    inline def apply(click_tracking: js.Any, ganalytics: js.Any, open_tracking: js.Any, subscription_tracking: js.Any): Clicktracking = {
+    inline def apply(click_tracking: Any, ganalytics: Any, open_tracking: Any, subscription_tracking: Any): Clicktracking = {
       val __obj = js.Dynamic.literal(click_tracking = click_tracking.asInstanceOf[js.Any], ganalytics = ganalytics.asInstanceOf[js.Any], open_tracking = open_tracking.asInstanceOf[js.Any], subscription_tracking = subscription_tracking.asInstanceOf[js.Any])
       __obj.asInstanceOf[Clicktracking]
     }
     
     extension [Self <: Clicktracking](x: Self) {
       
-      inline def setClick_tracking(value: js.Any): Self = StObject.set(x, "click_tracking", value.asInstanceOf[js.Any])
+      inline def setClick_tracking(value: Any): Self = StObject.set(x, "click_tracking", value.asInstanceOf[js.Any])
       
-      inline def setGanalytics(value: js.Any): Self = StObject.set(x, "ganalytics", value.asInstanceOf[js.Any])
+      inline def setGanalytics(value: Any): Self = StObject.set(x, "ganalytics", value.asInstanceOf[js.Any])
       
-      inline def setOpen_tracking(value: js.Any): Self = StObject.set(x, "open_tracking", value.asInstanceOf[js.Any])
+      inline def setOpen_tracking(value: Any): Self = StObject.set(x, "open_tracking", value.asInstanceOf[js.Any])
       
-      inline def setSubscription_tracking(value: js.Any): Self = StObject.set(x, "subscription_tracking", value.asInstanceOf[js.Any])
+      inline def setSubscription_tracking(value: Any): Self = StObject.set(x, "subscription_tracking", value.asInstanceOf[js.Any])
     }
   }
   
@@ -275,20 +269,20 @@ object anon {
   
   trait Email extends StObject {
     
-    var email: js.Any
+    var email: Any
     
     var enable: Boolean
   }
   object Email {
     
-    inline def apply(email: js.Any, enable: Boolean): Email = {
+    inline def apply(email: Any, enable: Boolean): Email = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], enable = enable.asInstanceOf[js.Any])
       __obj.asInstanceOf[Email]
     }
     
     extension [Self <: Email](x: Self) {
       
-      inline def setEmail(value: js.Any): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: Any): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     }

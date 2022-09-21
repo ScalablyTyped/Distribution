@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sjcl", "SjclElGamalSecretKey")
 @js.native
-class SjclElGamalSecretKey () extends SjclECCSecretKey {
+open class SjclElGamalSecretKey () extends SjclECCSecretKey {
   
   def dh(pk: SjclECCPublicKey): BitArray_ = js.native
   

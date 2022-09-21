@@ -1,11 +1,8 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.draggerMod.DraggerProps
 import typings.antd.uploadInterfaceMod.UploadProps
-import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,18 +12,14 @@ object uploadUploadMod extends Shortcut {
   
   @JSImport("antd/lib/upload/Upload", JSImport.Default)
   @js.native
-  val default: CompoundedComponent = js.native
+  val default: ForwardRefExoticComponent[UploadProps[Any] & RefAttributes[Any]] = js.native
   
+  @JSImport("antd/lib/upload/Upload", "LIST_IGNORE")
   @js.native
-  trait CompoundedComponent
-    extends StObject
-       with ForwardRefExoticComponent[PropsWithChildren[UploadProps[js.Any]] & RefAttributes[js.Any]] {
-    
-    var Dragger: FC[DraggerProps] = js.native
-  }
+  val LIST_IGNORE: String = js.native
   
-  type _To = CompoundedComponent
+  type _To = ForwardRefExoticComponent[UploadProps[Any] & RefAttributes[Any]]
   
   /* This means you don't have to write `default`, but can instead just say `uploadUploadMod.foo` */
-  override def _to: CompoundedComponent = default
+  override def _to: ForwardRefExoticComponent[UploadProps[Any] & RefAttributes[Any]] = default
 }

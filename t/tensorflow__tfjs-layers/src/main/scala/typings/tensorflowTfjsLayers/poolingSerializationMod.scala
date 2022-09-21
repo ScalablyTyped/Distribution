@@ -86,13 +86,13 @@ object poolingSerializationMod {
       
       inline def setPool_sizeUndefined: Self = StObject.set(x, "pool_size", js.undefined)
       
-      inline def setPool_sizeVarargs(value: Double*): Self = StObject.set(x, "pool_size", js.Array(value :_*))
+      inline def setPool_sizeVarargs(value: Double*): Self = StObject.set(x, "pool_size", js.Array(value*))
       
       inline def setStrides(value: js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
       
       inline def setStridesUndefined: Self = StObject.set(x, "strides", js.undefined)
       
-      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value*))
     }
   }
   

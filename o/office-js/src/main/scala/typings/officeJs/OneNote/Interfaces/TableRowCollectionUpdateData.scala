@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the TableRowCollection object, for use in "tableRowCollection.set({ ... })". */
+/** An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`. */
 trait TableRowCollectionUpdateData extends StObject {
   
   var items: js.UndefOr[js.Array[TableRowData]] = js.undefined
@@ -22,6 +22,6 @@ object TableRowCollectionUpdateData {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: TableRowData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: TableRowData*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

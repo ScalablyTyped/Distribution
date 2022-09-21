@@ -3,6 +3,7 @@ package typings.three
 import typings.three.colorMod.Color
 import typings.three.materialMod.Material
 import typings.three.materialMod.MaterialParameters
+import typings.three.utilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,20 +12,28 @@ object shadowMaterialMod {
   
   @JSImport("three/src/materials/ShadowMaterial", "ShadowMaterial")
   @js.native
-  class ShadowMaterial () extends Material {
+  open class ShadowMaterial () extends Material {
     def this(parameters: ShadowMaterialParameters) = this()
     
     /**
-    	 * @default new THREE.Color( 0x000000 )
-    	 */
+      * @default new THREE.Color( 0x000000 )
+      */
     var color: Color = js.native
+    
+    /**
+      * Whether the material is affected by fog. Default is true.
+      * @default fog
+      */
+    var fog: Boolean = js.native
   }
   
   trait ShadowMaterialParameters
     extends StObject
        with MaterialParameters {
     
-    var color: js.UndefOr[Color | String | Double] = js.undefined
+    var color: js.UndefOr[ColorRepresentation] = js.undefined
+    
+    var fog: js.UndefOr[Boolean] = js.undefined
   }
   object ShadowMaterialParameters {
     
@@ -35,9 +44,13 @@ object shadowMaterialMod {
     
     extension [Self <: ShadowMaterialParameters](x: Self) {
       
-      inline def setColor(value: Color | String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ColorRepresentation): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setFog(value: Boolean): Self = StObject.set(x, "fog", value.asInstanceOf[js.Any])
+      
+      inline def setFogUndefined: Self = StObject.set(x, "fog", js.undefined)
     }
   }
 }

@@ -11,7 +11,7 @@ trait GoogleActionsV2DialogSpec extends StObject {
     * Holds helper specific dialog specs if any. For example:
     * ConfirmationDialogSpec for confirmation helper.
     */
-  var `extension`: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var `extension`: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
 }
 object GoogleActionsV2DialogSpec {
   
@@ -22,7 +22,7 @@ object GoogleActionsV2DialogSpec {
   
   extension [Self <: GoogleActionsV2DialogSpec](x: Self) {
     
-    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
   }

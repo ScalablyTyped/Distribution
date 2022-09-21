@@ -11,7 +11,7 @@ object mod extends Shortcut {
   
   @JSImport("signals", JSImport.Namespace)
   @js.native
-  val ^ : SignalWrapper[js.Any] = js.native
+  val ^ : SignalWrapper[Any] = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("signals", "Signal")
@@ -21,9 +21,9 @@ object mod extends Shortcut {
     * <br />- inspired by Robert Penner's AS3 Signals.
     * @author Miller Medeiros
     */
-  class SignalCls ()
+  open class SignalCls ()
     extends StObject
-       with Signal[js.Any]
+       with Signal[Any]
   
   @js.native
   trait Signal[T]
@@ -55,8 +55,8 @@ object mod extends Shortcut {
       *        Listeners with same priority level will be executed at the same order as they were added. (default = 0)
       */
     def add(listener: js.Function1[/* repeated */ T, Unit]): SignalBinding[T] = js.native
-    def add(listener: js.Function1[/* repeated */ T, Unit], listenerContext: js.Any): SignalBinding[T] = js.native
-    def add(listener: js.Function1[/* repeated */ T, Unit], listenerContext: js.Any, priority: Number): SignalBinding[T] = js.native
+    def add(listener: js.Function1[/* repeated */ T, Unit], listenerContext: Any): SignalBinding[T] = js.native
+    def add(listener: js.Function1[/* repeated */ T, Unit], listenerContext: Any, priority: Number): SignalBinding[T] = js.native
     def add(listener: js.Function1[/* repeated */ T, Unit], listenerContext: Unit, priority: Number): SignalBinding[T] = js.native
     
     /**
@@ -69,8 +69,8 @@ object mod extends Shortcut {
       *                 Listeners with same priority level will be executed at the same order as they were added. (default = 0)
       */
     def addOnce(listener: js.Function1[/* repeated */ T, Unit]): SignalBinding[T] = js.native
-    def addOnce(listener: js.Function1[/* repeated */ T, Unit], listenerContext: js.Any): SignalBinding[T] = js.native
-    def addOnce(listener: js.Function1[/* repeated */ T, Unit], listenerContext: js.Any, priority: Number): SignalBinding[T] = js.native
+    def addOnce(listener: js.Function1[/* repeated */ T, Unit], listenerContext: Any): SignalBinding[T] = js.native
+    def addOnce(listener: js.Function1[/* repeated */ T, Unit], listenerContext: Any, priority: Number): SignalBinding[T] = js.native
     def addOnce(listener: js.Function1[/* repeated */ T, Unit], listenerContext: Unit, priority: Number): SignalBinding[T] = js.native
     
     /**
@@ -104,7 +104,7 @@ object mod extends Shortcut {
       * Check if listener was attached to Signal.
       */
     def has(listener: js.Function1[/* repeated */ T, Unit]): Boolean = js.native
-    def has(listener: js.Function1[/* repeated */ T, Unit], context: js.Any): Boolean = js.native
+    def has(listener: js.Function1[/* repeated */ T, Unit], context: Any): Boolean = js.native
     
     /**
       * If Signal should keep record of previously dispatched parameters and automatically
@@ -116,7 +116,7 @@ object mod extends Shortcut {
       * Remove a single listener from the dispatch queue.
       */
     def remove(listener: js.Function1[/* repeated */ T, Unit]): js.Function = js.native
-    def remove(listener: js.Function1[/* repeated */ T, Unit], context: js.Any): js.Function = js.native
+    def remove(listener: js.Function1[/* repeated */ T, Unit], context: Any): js.Function = js.native
     
     def removeAll(): Unit = js.native
   }
@@ -126,12 +126,12 @@ object mod extends Shortcut {
     
     var active: Boolean = js.native
     
-    var context: js.Any = js.native
+    var context: Any = js.native
     
     def detach(): js.Function = js.native
     
-    def execute(): js.Any = js.native
-    def execute(paramsArr: js.Array[js.Any]): js.Any = js.native
+    def execute(): Any = js.native
+    def execute(paramsArr: js.Array[Any]): Any = js.native
     
     def getListener(): js.Function1[/* repeated */ T, Unit] = js.native
     
@@ -141,7 +141,7 @@ object mod extends Shortcut {
     
     def isOnce(): Boolean = js.native
     
-    var params: js.Any = js.native
+    var params: Any = js.native
   }
   
   trait SignalWrapper[T] extends StObject {
@@ -161,8 +161,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = SignalWrapper[js.Any]
+  type _To = SignalWrapper[Any]
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: SignalWrapper[js.Any] = ^
+  override def _to: SignalWrapper[Any] = ^
 }

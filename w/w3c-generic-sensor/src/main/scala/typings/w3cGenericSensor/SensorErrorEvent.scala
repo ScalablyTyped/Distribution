@@ -1,6 +1,5 @@
 package typings.w3cGenericSensor
 
-import typings.std.Error
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,5 +10,5 @@ trait SensorErrorEvent
   extends StObject
      with Event {
   
-  val error: Error = js.native
+  val error: js.Error = js.native
 }

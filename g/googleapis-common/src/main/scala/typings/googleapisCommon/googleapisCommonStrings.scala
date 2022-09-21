@@ -55,6 +55,10 @@ object googleapisCommonStrings {
   inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
+  sealed trait stream extends StObject
+  inline def stream: stream = "stream".asInstanceOf[stream]
+  
+  @js.native
   sealed trait string
     extends StObject
        with SchemaType

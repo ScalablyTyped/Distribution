@@ -1,28 +1,31 @@
 package typings.agoraRtcSdk.anon
 
-import typings.agoraRtcSdk.agoraRtcSdkStrings.error
+import typings.agoraRtcSdk.agoraRtcSdkStrings.liveStreamingStarted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Type extends StObject {
   
-  var reason: js.Any
+  var `type`: liveStreamingStarted
   
-  var `type`: error
+  /**
+    * The CDN streaming URL.
+    */
+  var url: String
 }
 object Type {
   
-  inline def apply(reason: js.Any): Type = {
-    val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("error")
+  inline def apply(url: String): Type = {
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("liveStreamingStarted")
     __obj.asInstanceOf[Type]
   }
   
   extension [Self <: Type](x: Self) {
     
-    inline def setReason(value: js.Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setType(value: liveStreamingStarted): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

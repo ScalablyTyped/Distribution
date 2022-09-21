@@ -10,15 +10,12 @@ compute the bounding box of geojson features
 | ------------------ | :-------------: |
 | Full name          | @mapbox/geojson-extent |
 | Keywords           | geojson, extent, browser, geo, boundingbox, bounds |
-| # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 3583198 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 420673.3333333333 |
+| # stars            | 65.0 |
 
 ## Links
-- [Homepage](https://github.com/mapbox/geojson-extent)
-- [Bugs](https://github.com/mapbox/geojson-extent/issues)
-- [Repository](https://github.com/mapbox/geojson-extent)
 - [Npm](https://www.npmjs.com/package/%40mapbox%2Fgeojson-extent)
     
 

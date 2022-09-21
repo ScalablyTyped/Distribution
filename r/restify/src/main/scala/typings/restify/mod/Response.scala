@@ -1,13 +1,14 @@
 package typings.restify.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Response extends ServerResponse {
+trait Response extends ServerResponse[IncomingMessage] {
   
   /**
     * sets the cache-control header. `type` defaults to _public_,
@@ -51,17 +52,22 @@ trait Response extends ServerResponse {
   def get(name: String): String = js.native
   
   /**
+    * retrieves all headers off the response.
+    */
+  def getHeaders(): Any = js.native
+  
+  /**
     * sets headers on the response.
     * @param    key  the name of the header
     * @param    value the value of the header
     */
-  def header(key: String): js.Any = js.native
-  def header(key: String, value: js.Any): js.Any = js.native
+  def header(key: String): Any = js.native
+  def header(key: String, value: Any): Any = js.native
   
   /**
     * pass through to getHeaders.
     */
-  def headers(): js.Any = js.native
+  def headers(): Any = js.native
   
   /** A unique request id (x-request-id). */
   var id: String = js.native
@@ -73,8 +79,8 @@ trait Response extends ServerResponse {
     * @param    body    value to json.stringify
     * @param    [headers] headers to set on the response
     */
-  def json(body: js.Any): js.Any = js.native
-  def json(body: js.Any, headers: StringDictionary[String]): js.Any = js.native
+  def json(body: Any): Any = js.native
+  def json(body: Any, headers: StringDictionary[String]): Any = js.native
   /**
     * short hand method for:
     *     res.contentType = 'json';
@@ -83,8 +89,8 @@ trait Response extends ServerResponse {
     * @param    body    value to json.stringify
     * @param    [headers] headers to set on the response
     */
-  def json(code: Double, body: js.Any): js.Any = js.native
-  def json(code: Double, body: js.Any, headers: StringDictionary[String]): js.Any = js.native
+  def json(code: Double, body: Any): Any = js.native
+  def json(code: Double, body: Any, headers: StringDictionary[String]): Any = js.native
   
   /**
     * sets the link heaader.
@@ -129,17 +135,17 @@ trait Response extends ServerResponse {
     * @param    [headers]  any add'l headers to set
     * @returns  the response object
     */
-  def send(): js.Any = js.native
-  def send(body: js.Any): js.Any = js.native
-  def send(body: js.Any, headers: StringDictionary[String]): js.Any = js.native
-  def send(body: Unit, headers: StringDictionary[String]): js.Any = js.native
-  def send(code: Double): js.Any = js.native
-  def send(code: Double, body: js.Any): js.Any = js.native
-  def send(code: Double, body: js.Any, headers: StringDictionary[String]): js.Any = js.native
-  def send(code: Double, body: Unit, headers: StringDictionary[String]): js.Any = js.native
-  def send(code: Unit, body: js.Any): js.Any = js.native
-  def send(code: Unit, body: js.Any, headers: StringDictionary[String]): js.Any = js.native
-  def send(code: Unit, body: Unit, headers: StringDictionary[String]): js.Any = js.native
+  def send(): Any = js.native
+  def send(body: Any): Any = js.native
+  def send(body: Any, headers: StringDictionary[String]): Any = js.native
+  def send(body: Unit, headers: StringDictionary[String]): Any = js.native
+  def send(code: Double): Any = js.native
+  def send(code: Double, body: Any): Any = js.native
+  def send(code: Double, body: Any, headers: StringDictionary[String]): Any = js.native
+  def send(code: Double, body: Unit, headers: StringDictionary[String]): Any = js.native
+  def send(code: Unit, body: Any): Any = js.native
+  def send(code: Unit, body: Any, headers: StringDictionary[String]): Any = js.native
+  def send(code: Unit, body: Unit, headers: StringDictionary[String]): Any = js.native
   
   /**
     * sends the response object. pass through to internal __send that skips
@@ -149,17 +155,17 @@ trait Response extends ServerResponse {
     * @param    [headers]  any add'l headers to set
     * @returns  the response object
     */
-  def sendRaw(): js.Any = js.native
-  def sendRaw(body: js.Any): js.Any = js.native
-  def sendRaw(body: js.Any, headers: StringDictionary[String]): js.Any = js.native
-  def sendRaw(body: Unit, headers: StringDictionary[String]): js.Any = js.native
-  def sendRaw(code: Double): js.Any = js.native
-  def sendRaw(code: Double, body: js.Any): js.Any = js.native
-  def sendRaw(code: Double, body: js.Any, headers: StringDictionary[String]): js.Any = js.native
-  def sendRaw(code: Double, body: Unit, headers: StringDictionary[String]): js.Any = js.native
-  def sendRaw(code: Unit, body: js.Any): js.Any = js.native
-  def sendRaw(code: Unit, body: js.Any, headers: StringDictionary[String]): js.Any = js.native
-  def sendRaw(code: Unit, body: Unit, headers: StringDictionary[String]): js.Any = js.native
+  def sendRaw(): Any = js.native
+  def sendRaw(body: Any): Any = js.native
+  def sendRaw(body: Any, headers: StringDictionary[String]): Any = js.native
+  def sendRaw(body: Unit, headers: StringDictionary[String]): Any = js.native
+  def sendRaw(code: Double): Any = js.native
+  def sendRaw(code: Double, body: Any): Any = js.native
+  def sendRaw(code: Double, body: Any, headers: StringDictionary[String]): Any = js.native
+  def sendRaw(code: Double, body: Unit, headers: StringDictionary[String]): Any = js.native
+  def sendRaw(code: Unit, body: Any): Any = js.native
+  def sendRaw(code: Unit, body: Any, headers: StringDictionary[String]): Any = js.native
+  def sendRaw(code: Unit, body: Unit, headers: StringDictionary[String]): Any = js.native
   
   /**
     * sets a header on the response.

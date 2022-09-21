@@ -12,7 +12,7 @@ trait SnapshotDiskContainer extends StObject {
   var Description: js.UndefOr[String] = js.undefined
   
   /**
-    * The format of the disk image being imported. Valid values: VHD | VMDK 
+    * The format of the disk image being imported. Valid values: VHD | VMDK | RAW 
     */
   var Format: js.UndefOr[String] = js.undefined
   

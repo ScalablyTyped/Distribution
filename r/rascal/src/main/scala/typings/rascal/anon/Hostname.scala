@@ -22,7 +22,7 @@ trait Hostname extends StObject {
   
   var slashes: Boolean
   
-  var socketOptions: TimeoutNumber
+  var socketOptions: Timeout
   
   var user: String
 }
@@ -37,7 +37,7 @@ object Hostname {
     protocol: String,
     retry: Factor,
     slashes: Boolean,
-    socketOptions: TimeoutNumber,
+    socketOptions: Timeout,
     user: String
   ): Hostname = {
     val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], management = management.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], retry = retry.asInstanceOf[js.Any], slashes = slashes.asInstanceOf[js.Any], socketOptions = socketOptions.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
@@ -62,7 +62,7 @@ object Hostname {
     
     inline def setSlashes(value: Boolean): Self = StObject.set(x, "slashes", value.asInstanceOf[js.Any])
     
-    inline def setSocketOptions(value: TimeoutNumber): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
+    inline def setSocketOptions(value: Timeout): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
     
     inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }

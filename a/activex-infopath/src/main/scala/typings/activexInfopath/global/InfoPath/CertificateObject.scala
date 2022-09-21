@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.CertificateObject")
 @js.native
-/* private */ class CertificateObject ()
+/* private */ open class CertificateObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.CertificateObject {
   

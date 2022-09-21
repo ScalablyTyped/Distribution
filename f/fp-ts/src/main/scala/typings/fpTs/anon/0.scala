@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `0` extends StObject {
   
-  val `0`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, any> */ js.Any
+  val `0`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, any> */ Any
 }
 object `0` {
   
   inline def apply(
-    `0`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, any> */ js.Any
+    `0`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, any> */ Any
   ): `0` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
@@ -21,7 +21,7 @@ object `0` {
   extension [Self <: `0`](x: Self) {
     
     inline def set0(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, any> */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, any> */ Any
     ): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
   }
 }

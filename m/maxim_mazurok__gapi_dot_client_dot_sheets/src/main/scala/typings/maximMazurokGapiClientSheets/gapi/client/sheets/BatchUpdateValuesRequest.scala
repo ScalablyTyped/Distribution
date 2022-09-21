@@ -18,11 +18,11 @@ trait BatchUpdateValuesRequest extends StObject {
   
   /**
     * Determines how dates, times, and durations in the response should be rendered. This is ignored if response_value_render_option is FORMATTED_VALUE. The default dateTime render option
-    * is DateTimeRenderOption.SERIAL_NUMBER.
+    * is SERIAL_NUMBER.
     */
   var responseDateTimeRenderOption: js.UndefOr[String] = js.undefined
   
-  /** Determines how values in the response should be rendered. The default render option is ValueRenderOption.FORMATTED_VALUE. */
+  /** Determines how values in the response should be rendered. The default render option is FORMATTED_VALUE. */
   var responseValueRenderOption: js.UndefOr[String] = js.undefined
   
   /** How the input data should be interpreted. */
@@ -41,7 +41,7 @@ object BatchUpdateValuesRequest {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: ValueRange*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ValueRange*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setIncludeValuesInResponse(value: Boolean): Self = StObject.set(x, "includeValuesInResponse", value.asInstanceOf[js.Any])
     

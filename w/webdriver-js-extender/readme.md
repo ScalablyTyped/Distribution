@@ -1,7 +1,7 @@
 
 # Scala.js typings for webdriver-js-extender
 
-Typings are for version 2.1.0
+Typings are for version 2.2.0
 
 ## Library description:
 A plugin which adds additional commands to selenium's javascript implementation of the webdriver client side API
@@ -10,10 +10,10 @@ A plugin which adds additional commands to selenium's javascript implementation 
 | ------------------ | :-------------: |
 | Full name          | webdriver-js-extender |
 | Keywords           | testing, webdriver, webdriverjs, selenium, appium |
-| # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 53982549 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5003968.666666667 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/angular/webdriver-js-extender#readme)

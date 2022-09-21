@@ -68,7 +68,7 @@ trait EmbeddedTableChartBuilder extends StObject {
   
   def setNumHeaders(headers: Integer): EmbeddedChartBuilder = js.native
   
-  def setOption(option: String, value: js.Any): EmbeddedChartBuilder = js.native
+  def setOption(option: String, value: Any): EmbeddedChartBuilder = js.native
   
   def setPosition(anchorRowPos: Integer, anchorColPos: Integer, offsetX: Integer, offsetY: Integer): EmbeddedChartBuilder = js.native
   

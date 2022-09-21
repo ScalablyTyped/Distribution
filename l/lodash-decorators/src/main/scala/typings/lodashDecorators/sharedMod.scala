@@ -11,28 +11,28 @@ object sharedMod {
   
   trait ApplicateOptions extends StObject {
     
-    var args: js.Array[js.Any]
+    var args: js.Array[Any]
     
     var config: DecoratorConfig
     
     var instance: js.UndefOr[js.Object] = js.undefined
     
-    var target: js.Any
+    var target: Any
     
-    var value: js.Any
+    var value: Any
   }
   object ApplicateOptions {
     
-    inline def apply(args: js.Array[js.Any], config: DecoratorConfig, target: js.Any, value: js.Any): ApplicateOptions = {
+    inline def apply(args: js.Array[Any], config: DecoratorConfig, target: Any, value: Any): ApplicateOptions = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplicateOptions]
     }
     
     extension [Self <: ApplicateOptions](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setConfig(value: DecoratorConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -40,9 +40,9 @@ object sharedMod {
       
       inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

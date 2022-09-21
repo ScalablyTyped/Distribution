@@ -9,10 +9,12 @@ trait BlurPostProcess
   extends StObject
      with PostProcess {
   
+  /* private */ var _blockCompilation: Any = js.native
+  
   /**
     * Calculates the value of a Gaussian distribution with sigma 3 at a given point.
     * @param x The point on the Gaussian distribution to sample.
-    * @return the value of the Gaussian function at x.
+    * @returns the value of the Gaussian function at x.
     */
   /* protected */ def _gaussianWeight(x: Double): Double = js.native
   
@@ -20,7 +22,7 @@ trait BlurPostProcess
     * Generates a string that can be used as a floating point number in GLSL.
     * @param x Value to print.
     * @param decimalFigures Number of decimal places to print the number to (excluding trailing 0s).
-    * @return GLSL float string.
+    * @returns GLSL float string.
     */
   /* protected */ def _glslFloat(x: Double): String = js.native
   /* protected */ def _glslFloat(x: Double, decimalFigures: Double): String = js.native
@@ -36,13 +38,13 @@ trait BlurPostProcess
     * want to minimize kernel changes, having gaps between physical kernels is helpful in that regard.
     * The gaps between physical kernels are compensated for in the weighting of the samples
     * @param idealKernel Ideal blur kernel.
-    * @return Nearest best kernel.
+    * @returns Nearest best kernel.
     */
   /* protected */ def _nearestBestKernel(idealKernel: Double): Double = js.native
   
   /* protected */ var _packedFloat: Boolean = js.native
   
-  /* private */ var _staticDefines: js.Any = js.native
+  /* private */ var _staticDefines: Any = js.native
   
   /* protected */ def _updateParameters(): Unit = js.native
   /* protected */ def _updateParameters(onCompiled: js.Function1[/* effect */ Effect, Unit]): Unit = js.native
@@ -51,8 +53,6 @@ trait BlurPostProcess
     onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]
   ): Unit = js.native
   /* protected */ def _updateParameters(onCompiled: Unit, onError: js.Function2[/* effect */ Effect, /* errors */ String, Unit]): Unit = js.native
-  
-  /* private */ var blockCompilation: js.Any = js.native
   
   /** The direction in which to blur the image. */
   var direction: Vector2 = js.native
@@ -67,11 +67,11 @@ trait BlurPostProcess
   def kernel_=(v: Double): Unit = js.native
   
   /**
-    * Gets wether or not the blur is unpacking/repacking floats
+    * Gets whether or not the blur is unpacking/repacking floats
     */
   def packedFloat: Boolean = js.native
   /**
-    * Sets wether or not the blur needs to unpack/repack floats
+    * Sets whether or not the blur needs to unpack/repack floats
     */
   def packedFloat_=(v: Boolean): Unit = js.native
   
@@ -88,7 +88,7 @@ trait BlurPostProcess
     defines: js.UndefOr[Nullable[String]],
     uniforms: js.UndefOr[Nullable[js.Array[String]]],
     samplers: js.UndefOr[Nullable[js.Array[String]]],
-    indexParameters: js.UndefOr[js.Any],
+    indexParameters: js.UndefOr[Any],
     onCompiled: js.UndefOr[js.Function1[/* effect */ Effect, Unit]],
     onError: js.UndefOr[js.Function2[/* effect */ Effect, /* errors */ String, Unit]]
   ): Unit = js.native

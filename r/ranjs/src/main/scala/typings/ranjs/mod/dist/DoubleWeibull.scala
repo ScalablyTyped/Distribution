@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ranjs", "dist.DoubleWeibull")
 @js.native
-class DoubleWeibull ()
+open class DoubleWeibull ()
   extends StObject
      with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.DoubleWeibull] {
   def this(lambda: Double) = this()

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ThrottleSettings extends StObject {
   
   /**
-    * The API request burst limit, the maximum rate limit over a time ranging from one to a few seconds, depending upon whether the underlying token bucket is at its full capacity.
+    * The API target request burst rate limit. This allows more requests through for a period of time than the target rate limit.
     */
   var burstLimit: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The API request steady-state rate limit.
+    * The API target request rate limit.
     */
   var rateLimit: js.UndefOr[Double] = js.undefined
 }

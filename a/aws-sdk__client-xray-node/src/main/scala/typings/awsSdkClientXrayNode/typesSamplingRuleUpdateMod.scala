@@ -1,7 +1,6 @@
 package typings.awsSdkClientXrayNode
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object typesSamplingRuleUpdateMod {
     /**
       * <p>Matches attributes derived from the request.</p>
       */
-    var Attributes: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var Attributes: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * <p>The percentage of matching requests to instrument, after the reservoir is exhausted.</p>
@@ -79,7 +78,7 @@ object typesSamplingRuleUpdateMod {
     
     extension [Self <: SamplingRuleUpdate](x: Self) {
       
-      inline def setAttributes(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       

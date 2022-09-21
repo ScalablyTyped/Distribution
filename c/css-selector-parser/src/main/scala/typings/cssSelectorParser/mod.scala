@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("css-selector-parser", "CssSelectorParser")
   @js.native
-  class CssSelectorParser () extends StObject {
+  open class CssSelectorParser () extends StObject {
     
     /* protected */ var attrEqualityMods: StringDictionary[`true`] = js.native
     

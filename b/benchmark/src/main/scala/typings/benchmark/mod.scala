@@ -1,7 +1,6 @@
 package typings.benchmark
 
 import typings.benchmark.anon.Name
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object mod {
   
   @JSImport("benchmark", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Benchmark {
     def this(fn: String) = this()
@@ -29,7 +28,7 @@ object mod {
   
   @JSImport("benchmark", "Deferred")
   @js.native
-  class Deferred protected () extends StObject {
+  open class Deferred protected () extends StObject {
     def this(clone: Benchmark) = this()
     
     var benchmark: Benchmark = js.native
@@ -45,7 +44,7 @@ object mod {
   
   @JSImport("benchmark", "Event")
   @js.native
-  class Event protected () extends StObject {
+  open class Event protected () extends StObject {
     def this(`type`: String) = this()
     def this(`type`: js.Object) = this()
     
@@ -55,7 +54,7 @@ object mod {
     
     var currentTarget: js.Object = js.native
     
-    var result: js.Any = js.native
+    var result: Any = js.native
     
     var target: Target = js.native
     
@@ -66,8 +65,9 @@ object mod {
   
   @JSImport("benchmark", "Suite")
   @js.native
-  class Suite () extends StObject {
+  open class Suite () extends StObject {
     def this(name: String) = this()
+    def this(options: Options_) = this()
     def this(name: String, options: Options_) = this()
     def this(name: Unit, options: Options_) = this()
     
@@ -89,15 +89,15 @@ object mod {
     
     def each(callback: js.Function): Suite = js.native
     
-    def emit(`type`: String): js.Any = js.native
-    def emit(`type`: js.Object): js.Any = js.native
+    def emit(`type`: String): Any = js.native
+    def emit(`type`: js.Object): Any = js.native
     
     def filter(callback: String): Suite = js.native
     def filter(callback: js.Function): Suite = js.native
     
     def forEach(callback: js.Function): Suite = js.native
     
-    def indexOf(value: js.Any): Double = js.native
+    def indexOf(value: Any): Double = js.native
     
     def join(): String = js.native
     def join(separator: String): String = js.native
@@ -106,8 +106,10 @@ object mod {
     
     def listeners(`type`: String): js.Array[js.Function] = js.native
     
-    def map(callback: String): js.Array[js.Any] = js.native
-    def map(callback: js.Function): js.Array[js.Any] = js.native
+    def map(callback: String): js.Array[Any] = js.native
+    def map(callback: js.Function): js.Array[Any] = js.native
+    
+    var name: js.UndefOr[String] = js.native
     
     def off(): Suite = js.native
     def off(`type`: String): Suite = js.native
@@ -129,7 +131,7 @@ object mod {
     
     def reset(): Suite = js.native
     
-    def reverse(): js.Array[js.Any] = js.native
+    def reverse(): js.Array[Any] = js.native
     
     def run(): Suite = js.native
     def run(options: Options_): Suite = js.native
@@ -138,13 +140,13 @@ object mod {
     
     def shift(): Benchmark = js.native
     
-    def slice(start: Double, deleteCount: Double, values: js.Any*): js.Array[js.Any] = js.native
-    def slice(start: Double, end: Double): js.Array[js.Any] = js.native
+    def slice(start: Double, deleteCount: Double, values: Any*): js.Array[Any] = js.native
+    def slice(start: Double, end: Double): js.Array[Any] = js.native
     
-    def sort(compareFn: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): js.Array[js.Any] = js.native
+    def sort(compareFn: js.Function2[/* a */ Any, /* b */ Any, Double]): js.Array[Any] = js.native
     
-    def splice(start: Double): js.Array[js.Any] = js.native
-    def splice(start: Double, deleteCount: Double): js.Array[js.Any] = js.native
+    def splice(start: Double): js.Array[Any] = js.native
+    def splice(start: Double, deleteCount: Double): js.Array[Any] = js.native
     
     def unshift(benchmark: Benchmark): Double = js.native
   }
@@ -161,41 +163,41 @@ object mod {
     inline def options_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   }
   
-  inline def each(obj: js.Array[js.Any], callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def each(obj: js.Array[js.Any], callback: js.Function, thisArg: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def each(obj: js.Array[Any], callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def each(obj: js.Array[Any], callback: js.Function, thisArg: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /* static member */
   inline def each(obj: js.Object, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def each(obj: js.Object, callback: js.Function, thisArg: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def each(obj: js.Object, callback: js.Function, thisArg: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def filter[T](arr: js.Array[T], callback: js.Function1[/* value */ T, js.Any]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def filter[T](arr: js.Array[T], callback: js.Function1[/* value */ T, js.Any], thisArg: js.Any): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def filter[T](arr: js.Array[T], callback: js.Function1[/* value */ T, Any]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def filter[T](arr: js.Array[T], callback: js.Function1[/* value */ T, Any], thisArg: Any): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   /* static member */
   inline def filter[T](arr: js.Array[T], filter: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def filter[T](arr: js.Array[T], filter: String, thisArg: js.Any): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def filter[T](arr: js.Array[T], filter: String, thisArg: Any): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   /* static member */
-  inline def forEach[T](arr: js.Array[T], callback: js.Function1[/* value */ T, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def forEach[T](arr: js.Array[T], callback: js.Function1[/* value */ T, js.Any], thisArg: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEach[T](arr: js.Array[T], callback: js.Function1[/* value */ T, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEach[T](arr: js.Array[T], callback: js.Function1[/* value */ T, Any], thisArg: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   inline def forOwn(obj: js.Object, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forOwn")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def forOwn(obj: js.Object, callback: js.Function, thisArg: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forOwn")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forOwn(obj: js.Object, callback: js.Function, thisArg: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forOwn")(obj.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   inline def formatNumber(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(num.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def has(obj: js.Object, path: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   /* static member */
-  inline def has(obj: js.Object, path: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def has(obj: js.Object, path: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
   inline def indexOf[T](arr: js.Array[T], value: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(arr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def indexOf[T](arr: js.Array[T], value: T, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(arr.asInstanceOf[js.Any], value.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  inline def invoke(benches: js.Array[Benchmark], name: String, args: js.Any*): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(benches.asInstanceOf[js.Any], name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  inline def invoke(benches: js.Array[Benchmark], name: js.Object, args: js.Any*): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(benches.asInstanceOf[js.Any], name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def invoke(benches: js.Array[Benchmark], name: String, args: Any*): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")((List(benches.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[Any]]
+  inline def invoke(benches: js.Array[Benchmark], name: js.Object, args: Any*): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")((List(benches.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[Any]]
   
   /* static member */
   inline def join(obj: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -205,7 +207,7 @@ object mod {
   
   /* static member */
   inline def map[T, K](arr: js.Array[T], callback: js.Function1[/* value */ T, K]): js.Array[K] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[K]]
-  inline def map[T, K](arr: js.Array[T], callback: js.Function1[/* value */ T, K], thisArg: js.Any): js.Array[K] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[K]]
+  inline def map[T, K](arr: js.Array[T], callback: js.Function1[/* value */ T, K], thisArg: Any): js.Array[K] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[K]]
   
   /* static member */
   @JSImport("benchmark", "options")
@@ -221,7 +223,7 @@ object mod {
   
   /* static member */
   inline def reduce[T, K](arr: js.Array[T], callback: js.Function2[/* accumulator */ K, /* value */ T, K]): K = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[K]
-  inline def reduce[T, K](arr: js.Array[T], callback: js.Function2[/* accumulator */ K, /* value */ T, K], thisArg: js.Any): K = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[K]
+  inline def reduce[T, K](arr: js.Array[T], callback: js.Function2[/* accumulator */ K, /* value */ T, K], thisArg: Any): K = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[K]
   
   /* static member */
   inline def runInContext(context: js.Object): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("runInContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.Function]
@@ -255,10 +257,10 @@ object mod {
     
     var cycles: Double = js.native
     
-    def emit(`type`: String): js.Any = js.native
-    def emit(`type`: js.Object): js.Any = js.native
+    def emit(`type`: String): Any = js.native
+    def emit(`type`: js.Object): Any = js.native
     
-    var error: Error = js.native
+    var error: js.Error = js.native
     
     var fn: js.Function | String = js.native
     
@@ -268,7 +270,7 @@ object mod {
     
     def listeners(`type`: String): js.Array[js.Function] = js.native
     
-    var name: String = js.native
+    var name: js.UndefOr[String] = js.native
     
     def off(): Benchmark = js.native
     def off(`type`: String): Benchmark = js.native
@@ -489,7 +491,7 @@ object mod {
     
     var rme: Double
     
-    var sample: js.Array[js.Any]
+    var sample: js.Array[Any]
     
     var sem: Double
     
@@ -502,7 +504,7 @@ object mod {
       mean: Double,
       moe: Double,
       rme: Double,
-      sample: js.Array[js.Any],
+      sample: js.Array[Any],
       sem: Double,
       variance: Double
     ): Stats = {
@@ -520,9 +522,9 @@ object mod {
       
       inline def setRme(value: Double): Self = StObject.set(x, "rme", value.asInstanceOf[js.Any])
       
-      inline def setSample(value: js.Array[js.Any]): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
+      inline def setSample(value: js.Array[Any]): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
       
-      inline def setSampleVarargs(value: js.Any*): Self = StObject.set(x, "sample", js.Array(value :_*))
+      inline def setSampleVarargs(value: Any*): Self = StObject.set(x, "sample", js.Array(value*))
       
       inline def setSem(value: Double): Self = StObject.set(x, "sem", value.asInstanceOf[js.Any])
       

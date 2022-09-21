@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TryStatement
   extends StObject
-     with Statement {
+     with Statement
+     with HasJSDoc {
   
   val catchClause: js.UndefOr[CatchClause] = js.native
   

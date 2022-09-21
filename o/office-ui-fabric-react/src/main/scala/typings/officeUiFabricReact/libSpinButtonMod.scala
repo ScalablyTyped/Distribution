@@ -26,7 +26,7 @@ object libSpinButtonMod {
   
   @JSImport("office-ui-fabric-react/lib/SpinButton", "SpinButton")
   @js.native
-  class SpinButton protected ()
+  open class SpinButton protected ()
     extends typings.officeUiFabricReact.spinButtonMod.SpinButton {
     def this(props: ISpinButtonProps) = this()
   }

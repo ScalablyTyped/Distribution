@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IArguments
   extends StObject
-     with /* index */ NumberDictionary[js.Any] {
+     with /* index */ NumberDictionary[Any] {
   
   var callee: Function
   

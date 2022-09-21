@@ -22,7 +22,7 @@ trait StreamDescriptionSummary extends StObject {
   var EnhancedMonitoring: EnhancedMonitoringList
   
   /**
-    * The GUID for the customer-managed AWS KMS key to use for encryption. This value can be a globally unique identifier, a fully specified ARN to either an alias or a key, or an alias name prefixed by "alias/".You can also use a master key owned by Kinesis Data Streams by specifying the alias aws/kinesis.   Key ARN example: arn:aws:kms:us-east-1:123456789012:key/12345678-1234-1234-1234-123456789012    Alias ARN example:  arn:aws:kms:us-east-1:123456789012:alias/MyAliasName    Globally unique key ID example: 12345678-1234-1234-1234-123456789012    Alias name example: alias/MyAliasName    Master key owned by Kinesis Data Streams: alias/aws/kinesis   
+    * The GUID for the customer-managed Amazon Web Services KMS key to use for encryption. This value can be a globally unique identifier, a fully specified ARN to either an alias or a key, or an alias name prefixed by "alias/".You can also use a master key owned by Kinesis Data Streams by specifying the alias aws/kinesis.   Key ARN example: arn:aws:kms:us-east-1:123456789012:key/12345678-1234-1234-1234-123456789012    Alias ARN example:  arn:aws:kms:us-east-1:123456789012:alias/MyAliasName    Globally unique key ID example: 12345678-1234-1234-1234-123456789012    Alias name example: alias/MyAliasName    Master key owned by Kinesis Data Streams: alias/aws/kinesis   
     */
   var KeyId: js.UndefOr[typings.awsSdk.kinesisMod.KeyId] = js.undefined
   
@@ -44,7 +44,12 @@ trait StreamDescriptionSummary extends StObject {
   /**
     * The approximate time that the stream was created.
     */
-  var StreamCreationTimestamp: Timestamp
+  var StreamCreationTimestamp: js.Date
+  
+  /**
+    *  Specifies the capacity mode to which you want to set your data stream. Currently, in Kinesis Data Streams, you can choose between an on-demand ycapacity mode and a provisioned capacity mode for your data streams. 
+    */
+  var StreamModeDetails: js.UndefOr[typings.awsSdk.kinesisMod.StreamModeDetails] = js.undefined
   
   /**
     * The name of the stream being described.
@@ -63,7 +68,7 @@ object StreamDescriptionSummary {
     OpenShardCount: ShardCountObject,
     RetentionPeriodHours: RetentionPeriodHours,
     StreamARN: StreamARN,
-    StreamCreationTimestamp: Timestamp,
+    StreamCreationTimestamp: js.Date,
     StreamName: StreamName,
     StreamStatus: StreamStatus
   ): StreamDescriptionSummary = {
@@ -83,7 +88,7 @@ object StreamDescriptionSummary {
     
     inline def setEnhancedMonitoring(value: EnhancedMonitoringList): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
     
-    inline def setEnhancedMonitoringVarargs(value: EnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value :_*))
+    inline def setEnhancedMonitoringVarargs(value: EnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value*))
     
     inline def setKeyId(value: KeyId): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
@@ -95,7 +100,11 @@ object StreamDescriptionSummary {
     
     inline def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     
-    inline def setStreamCreationTimestamp(value: Timestamp): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
+    inline def setStreamCreationTimestamp(value: js.Date): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setStreamModeDetails(value: StreamModeDetails): Self = StObject.set(x, "StreamModeDetails", value.asInstanceOf[js.Any])
+    
+    inline def setStreamModeDetailsUndefined: Self = StObject.set(x, "StreamModeDetails", js.undefined)
     
     inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     

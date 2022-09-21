@@ -29,7 +29,7 @@ trait BarBorderRadius extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-bar.data.itemStyle.barBorderRadius
     */
-  var barBorderRadius: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+  var barBorderRadius: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
   /**
     * The bodrder width of bar. defaults to have no border.
@@ -115,11 +115,11 @@ object BarBorderRadius {
     
     inline def setBarBorderColorUndefined: Self = StObject.set(x, "barBorderColor", js.undefined)
     
-    inline def setBarBorderRadius(value: js.Array[js.Any] | Double): Self = StObject.set(x, "barBorderRadius", value.asInstanceOf[js.Any])
+    inline def setBarBorderRadius(value: js.Array[Any] | Double): Self = StObject.set(x, "barBorderRadius", value.asInstanceOf[js.Any])
     
     inline def setBarBorderRadiusUndefined: Self = StObject.set(x, "barBorderRadius", js.undefined)
     
-    inline def setBarBorderRadiusVarargs(value: js.Any*): Self = StObject.set(x, "barBorderRadius", js.Array(value :_*))
+    inline def setBarBorderRadiusVarargs(value: Any*): Self = StObject.set(x, "barBorderRadius", js.Array(value*))
     
     inline def setBarBorderWidth(value: Double): Self = StObject.set(x, "barBorderWidth", value.asInstanceOf[js.Any])
     

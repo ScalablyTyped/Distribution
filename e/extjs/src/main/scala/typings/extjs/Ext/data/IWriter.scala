@@ -18,7 +18,7 @@ trait IWriter
     * @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
     */
   var getRecordData: js.UndefOr[
-    js.Function2[/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation], js.Any]
+    js.Function2[/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation], Any]
   ] = js.undefined
   
   /** [Config Option] (String) */
@@ -49,7 +49,7 @@ object IWriter {
     
     inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
-    inline def setGetRecordData(value: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => js.Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction2(value))
+    inline def setGetRecordData(value: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction2(value))
     
     inline def setGetRecordDataUndefined: Self = StObject.set(x, "getRecordData", js.undefined)
     

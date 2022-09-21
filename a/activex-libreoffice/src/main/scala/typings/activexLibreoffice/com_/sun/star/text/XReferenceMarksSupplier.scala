@@ -28,7 +28,7 @@ object XReferenceMarksSupplier {
     ReferenceMarks: XNameAccess,
     acquire: () => Unit,
     getReferenceMarks: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XReferenceMarksSupplier = {
     val __obj = js.Dynamic.literal(ReferenceMarks = ReferenceMarks.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getReferenceMarks = js.Any.fromFunction0(getReferenceMarks), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -7,14 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "DateTimeParseException")
 @js.native
-class DateTimeParseException ()
+open class DateTimeParseException ()
   extends StObject
      with Error {
   def this(message: String) = this()
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
 }

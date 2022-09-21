@@ -297,7 +297,7 @@ object CompilerOptions {
     
     inline def setLibUndefined: Self = StObject.set(x, "lib", js.undefined)
     
-    inline def setLibVarargs(value: String*): Self = StObject.set(x, "lib", js.Array(value :_*))
+    inline def setLibVarargs(value: String*): Self = StObject.set(x, "lib", js.Array(value*))
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
@@ -427,7 +427,7 @@ object CompilerOptions {
     
     inline def setRootDirsUndefined: Self = StObject.set(x, "rootDirs", js.undefined)
     
-    inline def setRootDirsVarargs(value: String*): Self = StObject.set(x, "rootDirs", js.Array(value :_*))
+    inline def setRootDirsVarargs(value: String*): Self = StObject.set(x, "rootDirs", js.Array(value*))
     
     inline def setSkipDefaultLibCheck(value: Boolean): Self = StObject.set(x, "skipDefaultLibCheck", value.asInstanceOf[js.Any])
     
@@ -489,13 +489,13 @@ object CompilerOptions {
     
     inline def setTypeRootsUndefined: Self = StObject.set(x, "typeRoots", js.undefined)
     
-    inline def setTypeRootsVarargs(value: String*): Self = StObject.set(x, "typeRoots", js.Array(value :_*))
+    inline def setTypeRootsVarargs(value: String*): Self = StObject.set(x, "typeRoots", js.Array(value*))
     
     inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setUseDefineForClassFields(value: Boolean): Self = StObject.set(x, "useDefineForClassFields", value.asInstanceOf[js.Any])
     

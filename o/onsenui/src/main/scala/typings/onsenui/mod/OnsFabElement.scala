@@ -14,11 +14,11 @@ trait OnsFabElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
   /**
     * @description A boolean value that specifies if the button is disabled or not.
@@ -38,6 +38,11 @@ trait OnsFabElement
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   
   /**
+    * @description If this property is defined, the button will have a ripple effect when tapped.
+    */
+  var ripple: Boolean = js.native
+  
+  /**
     * @description Show the floating action button.
     */
   def show(): Unit = js.native
@@ -48,7 +53,7 @@ trait OnsFabElement
   def toggle(): Unit = js.native
   
   /**
-    * @description Weher the dialog is visible or not.
+    * @description Whether the dialog is visible or not.
     */
   var visible: Boolean = js.native
 }

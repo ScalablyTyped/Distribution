@@ -12,7 +12,7 @@ trait WriteOptions
   
   var fs: js.UndefOr[js.Object] = js.undefined
   
-  var replacer: js.UndefOr[js.Any] = js.undefined
+  var replacer: js.UndefOr[Any] = js.undefined
   
   var spaces: js.UndefOr[Double | String] = js.undefined
 }
@@ -33,7 +33,7 @@ object WriteOptions {
     
     inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
     
-    inline def setReplacer(value: js.Any): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
+    inline def setReplacer(value: Any): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
     
     inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
     

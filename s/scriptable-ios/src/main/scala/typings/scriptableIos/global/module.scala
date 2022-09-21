@@ -40,8 +40,8 @@ object module {
     */
   @JSGlobal("module.exports")
   @js.native
-  def exports: js.Any = js.native
-  inline def exports_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
+  def exports: Any = js.native
+  inline def exports_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
   
   /**
     * _Path to file containing the module._

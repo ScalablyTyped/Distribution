@@ -8,8 +8,10 @@ trait HmacImportParams
   extends StObject
      with Algorithm {
   
+  /* standard dom */
   var hash: HashAlgorithmIdentifier
   
+  /* standard dom */
   var length: js.UndefOr[Double] = js.undefined
 }
 object HmacImportParams {

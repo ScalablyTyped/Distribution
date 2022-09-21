@@ -5,4 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type CB = js.Function1[/* d */ js.Any, scala.Unit]
+type CB = js.Function1[/* d */ Any, Unit]

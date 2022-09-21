@@ -5,12 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides options for a question for the `ConfirmPrompt`.
-  *
-  * @template T
-  * The type of the answers.
-  */
 trait ConfirmQuestion[T /* <: Answers */]
   extends StObject
      with Question[T] {

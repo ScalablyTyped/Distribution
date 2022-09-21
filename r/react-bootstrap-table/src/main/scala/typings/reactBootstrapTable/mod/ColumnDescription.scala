@@ -24,13 +24,7 @@ trait ColumnDescription[TRow /* <: js.Object */] extends StObject {
     * Custom className setting for this column.
     * Comes from TableHeader.columnClassName property.
     */
-  var className: String | (js.Function4[
-    /* cell */ js.Any, 
-    /* row */ TRow, 
-    /* rowIndex */ Double, 
-    /* columnIndex */ Double, 
-    String
-  ])
+  var className: String | (js.Function4[/* cell */ Any, /* row */ TRow, /* rowIndex */ Double, /* columnIndex */ Double, String])
   
   /**
     * Custom title to display for this column.
@@ -42,7 +36,7 @@ trait ColumnDescription[TRow /* <: js.Object */] extends StObject {
     * Custom editor settings to use when editing the data in this column.
     * Comes from TableHeader.customEditor property.
     */
-  var customEditor: CustomEditor[TRow, js.Any]
+  var customEditor: CustomEditor[TRow, Any]
   
   /**
     * Custom attributes (e.g. {'data-attr': 'test'}) to use for cells that are being edited in this column.
@@ -54,14 +48,14 @@ trait ColumnDescription[TRow /* <: js.Object */] extends StObject {
     * Custom className setting for this column when a cell in the column is being edited.
     * Comes from TableHeader.editColumnClassName property.
     */
-  var editClassName: String | (js.Function2[/* cell */ js.Any, /* row */ TRow, String])
+  var editClassName: String | (js.Function2[/* cell */ Any, /* row */ TRow, String])
   
   /**
     * Setting for whether the data in this column can be edited.
     * Comes from TableHeader.editable property.
     */
-  var editable: Boolean | (Editable[TRow, js.Any]) | (js.Function4[
-    /* cell */ js.Any, 
+  var editable: Boolean | (Editable[TRow, Any]) | (js.Function4[
+    /* cell */ Any, 
     /* row */ TRow, 
     /* rowIndex */ Double, 
     /* columnIndex */ Double, 
@@ -90,19 +84,19 @@ trait ColumnDescription[TRow /* <: js.Object */] extends StObject {
     * Filter function for the column.
     * Comes from TableHeader.filterValue property.
     */
-  def filterValue(cell: js.Any, row: TRow): js.Any
+  def filterValue(cell: Any, row: TRow): Any
   
   /**
     * Column data format function.
     * Comes from TableHeader.dataFormat property.
     */
-  def format(cell: js.Any, row: TRow, formatExtraData: js.Any, rowIndex: Double): String | ReactElement
+  def format(cell: Any, row: TRow, formatExtraData: Any, rowIndex: Double): String | ReactElement
   
   /**
     * The formatExtraData setting for the column.
     * Comes from TableHeader.formatExtraData property.
     */
-  var formatExtraData: js.Any
+  var formatExtraData: Any
   
   /**
     * Flag to indicate whether this column should be visible or not.
@@ -120,7 +114,7 @@ trait ColumnDescription[TRow /* <: js.Object */] extends StObject {
     * Custom className setting for this column when a cell in the column contains invalid data.
     * Comes from TableHeader.invalidEditColumnClassName property.
     */
-  var invalidEditColumnClassName: String | (js.Function2[/* cell */ js.Any, /* row */ TRow, String])
+  var invalidEditColumnClassName: String | (js.Function2[/* cell */ Any, /* row */ TRow, String])
   
   /**
     * Name of the column.
@@ -144,13 +138,13 @@ trait ColumnDescription[TRow /* <: js.Object */] extends StObject {
     * Custom sort function to use for this column.
     * Comes from TableHeader.sortFunc property.
     */
-  def sortFunc(a: TRow, b: TRow, order: SortOrder, sortField: /* keyof TRow */ String, extraData: js.Any): Double
+  def sortFunc(a: TRow, b: TRow, order: SortOrder, sortField: /* keyof TRow */ String, extraData: Any): Double
   
   /**
     * Extra data to be provided to the search function for this column.
     * Comes from TableHeader.sortFuncExtraData property.
     */
-  var sortFuncExtraData: js.Any
+  var sortFuncExtraData: Any
   
   /**
     * CSS style properties to use for cells in this column.
@@ -175,19 +169,13 @@ object ColumnDescription {
   inline def apply[TRow /* <: js.Object */](
     align: DataAlignType,
     attrs: CustomAttrs,
-    className: String | (js.Function4[
-      /* cell */ js.Any, 
-      /* row */ TRow, 
-      /* rowIndex */ Double, 
-      /* columnIndex */ Double, 
-      String
-    ]),
+    className: String | (js.Function4[/* cell */ Any, /* row */ TRow, /* rowIndex */ Double, /* columnIndex */ Double, String]),
     columnTitle: Boolean,
-    customEditor: CustomEditor[TRow, js.Any],
+    customEditor: CustomEditor[TRow, Any],
     editAttrs: CustomAttrs,
-    editClassName: String | (js.Function2[/* cell */ js.Any, /* row */ TRow, String]),
-    editable: Boolean | (Editable[TRow, js.Any]) | (js.Function4[
-      /* cell */ js.Any, 
+    editClassName: String | (js.Function2[/* cell */ Any, /* row */ TRow, String]),
+    editable: Boolean | (Editable[TRow, Any]) | (js.Function4[
+      /* cell */ Any, 
       /* row */ TRow, 
       /* rowIndex */ Double, 
       /* columnIndex */ Double, 
@@ -196,17 +184,17 @@ object ColumnDescription {
     expandable: Boolean,
     `export`: Boolean,
     filterFormatted: Boolean,
-    filterValue: (js.Any, TRow) => js.Any,
-    format: (js.Any, TRow, js.Any, Double) => String | ReactElement,
-    formatExtraData: js.Any,
+    filterValue: (Any, TRow) => Any,
+    format: (Any, TRow, Any, Double) => String | ReactElement,
+    formatExtraData: Any,
     hidden: Boolean,
     hiddenOnInsert: Boolean,
-    invalidEditColumnClassName: String | (js.Function2[/* cell */ js.Any, /* row */ TRow, String]),
+    invalidEditColumnClassName: String | (js.Function2[/* cell */ Any, /* row */ TRow, String]),
     name: /* keyof TRow */ String,
     searchable: Boolean,
     sort: Boolean,
-    sortFunc: (TRow, TRow, SortOrder, /* keyof TRow */ String, js.Any) => Double,
-    sortFuncExtraData: js.Any,
+    sortFunc: (TRow, TRow, SortOrder, /* keyof TRow */ String, Any) => Double,
+    sortFuncExtraData: Any,
     style: CSSProperties,
     text: String | Double | Boolean | ReactElement,
     width: String
@@ -223,32 +211,24 @@ object ColumnDescription {
     inline def setAttrs(value: CustomAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     inline def setClassName(
-      value: String | (js.Function4[
-          /* cell */ js.Any, 
-          /* row */ TRow, 
-          /* rowIndex */ Double, 
-          /* columnIndex */ Double, 
-          String
-        ])
+      value: String | (js.Function4[/* cell */ Any, /* row */ TRow, /* rowIndex */ Double, /* columnIndex */ Double, String])
     ): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    inline def setClassNameFunction4(
-      value: (/* cell */ js.Any, /* row */ TRow, /* rowIndex */ Double, /* columnIndex */ Double) => String
-    ): Self = StObject.set(x, "className", js.Any.fromFunction4(value))
+    inline def setClassNameFunction4(value: (/* cell */ Any, /* row */ TRow, /* rowIndex */ Double, /* columnIndex */ Double) => String): Self = StObject.set(x, "className", js.Any.fromFunction4(value))
     
     inline def setColumnTitle(value: Boolean): Self = StObject.set(x, "columnTitle", value.asInstanceOf[js.Any])
     
-    inline def setCustomEditor(value: CustomEditor[TRow, js.Any]): Self = StObject.set(x, "customEditor", value.asInstanceOf[js.Any])
+    inline def setCustomEditor(value: CustomEditor[TRow, Any]): Self = StObject.set(x, "customEditor", value.asInstanceOf[js.Any])
     
     inline def setEditAttrs(value: CustomAttrs): Self = StObject.set(x, "editAttrs", value.asInstanceOf[js.Any])
     
-    inline def setEditClassName(value: String | (js.Function2[/* cell */ js.Any, /* row */ TRow, String])): Self = StObject.set(x, "editClassName", value.asInstanceOf[js.Any])
+    inline def setEditClassName(value: String | (js.Function2[/* cell */ Any, /* row */ TRow, String])): Self = StObject.set(x, "editClassName", value.asInstanceOf[js.Any])
     
-    inline def setEditClassNameFunction2(value: (/* cell */ js.Any, /* row */ TRow) => String): Self = StObject.set(x, "editClassName", js.Any.fromFunction2(value))
+    inline def setEditClassNameFunction2(value: (/* cell */ Any, /* row */ TRow) => String): Self = StObject.set(x, "editClassName", js.Any.fromFunction2(value))
     
     inline def setEditable(
-      value: Boolean | (Editable[TRow, js.Any]) | (js.Function4[
-          /* cell */ js.Any, 
+      value: Boolean | (Editable[TRow, Any]) | (js.Function4[
+          /* cell */ Any, 
           /* row */ TRow, 
           /* rowIndex */ Double, 
           /* columnIndex */ Double, 
@@ -257,7 +237,7 @@ object ColumnDescription {
     ): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     inline def setEditableFunction4(
-      value: (/* cell */ js.Any, /* row */ TRow, /* rowIndex */ Double, /* columnIndex */ Double) => Boolean | String | EditValidatorObject
+      value: (/* cell */ Any, /* row */ TRow, /* rowIndex */ Double, /* columnIndex */ Double) => Boolean | String | EditValidatorObject
     ): Self = StObject.set(x, "editable", js.Any.fromFunction4(value))
     
     inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
@@ -266,19 +246,19 @@ object ColumnDescription {
     
     inline def setFilterFormatted(value: Boolean): Self = StObject.set(x, "filterFormatted", value.asInstanceOf[js.Any])
     
-    inline def setFilterValue(value: (js.Any, TRow) => js.Any): Self = StObject.set(x, "filterValue", js.Any.fromFunction2(value))
+    inline def setFilterValue(value: (Any, TRow) => Any): Self = StObject.set(x, "filterValue", js.Any.fromFunction2(value))
     
-    inline def setFormat(value: (js.Any, TRow, js.Any, Double) => String | ReactElement): Self = StObject.set(x, "format", js.Any.fromFunction4(value))
+    inline def setFormat(value: (Any, TRow, Any, Double) => String | ReactElement): Self = StObject.set(x, "format", js.Any.fromFunction4(value))
     
-    inline def setFormatExtraData(value: js.Any): Self = StObject.set(x, "formatExtraData", value.asInstanceOf[js.Any])
+    inline def setFormatExtraData(value: Any): Self = StObject.set(x, "formatExtraData", value.asInstanceOf[js.Any])
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     inline def setHiddenOnInsert(value: Boolean): Self = StObject.set(x, "hiddenOnInsert", value.asInstanceOf[js.Any])
     
-    inline def setInvalidEditColumnClassName(value: String | (js.Function2[/* cell */ js.Any, /* row */ TRow, String])): Self = StObject.set(x, "invalidEditColumnClassName", value.asInstanceOf[js.Any])
+    inline def setInvalidEditColumnClassName(value: String | (js.Function2[/* cell */ Any, /* row */ TRow, String])): Self = StObject.set(x, "invalidEditColumnClassName", value.asInstanceOf[js.Any])
     
-    inline def setInvalidEditColumnClassNameFunction2(value: (/* cell */ js.Any, /* row */ TRow) => String): Self = StObject.set(x, "invalidEditColumnClassName", js.Any.fromFunction2(value))
+    inline def setInvalidEditColumnClassNameFunction2(value: (/* cell */ Any, /* row */ TRow) => String): Self = StObject.set(x, "invalidEditColumnClassName", js.Any.fromFunction2(value))
     
     inline def setName(value: /* keyof TRow */ String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -286,9 +266,9 @@ object ColumnDescription {
     
     inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    inline def setSortFunc(value: (TRow, TRow, SortOrder, /* keyof TRow */ String, js.Any) => Double): Self = StObject.set(x, "sortFunc", js.Any.fromFunction5(value))
+    inline def setSortFunc(value: (TRow, TRow, SortOrder, /* keyof TRow */ String, Any) => Double): Self = StObject.set(x, "sortFunc", js.Any.fromFunction5(value))
     
-    inline def setSortFuncExtraData(value: js.Any): Self = StObject.set(x, "sortFuncExtraData", value.asInstanceOf[js.Any])
+    inline def setSortFuncExtraData(value: Any): Self = StObject.set(x, "sortFuncExtraData", value.asInstanceOf[js.Any])
     
     inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

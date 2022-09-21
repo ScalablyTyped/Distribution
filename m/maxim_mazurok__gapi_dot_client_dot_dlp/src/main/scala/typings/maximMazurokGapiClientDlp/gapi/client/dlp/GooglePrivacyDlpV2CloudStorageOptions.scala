@@ -8,13 +8,13 @@ trait GooglePrivacyDlpV2CloudStorageOptions extends StObject {
   
   /**
     * Max number of bytes to scan from a file. If a scanned file's size is bigger than this value then the rest of the bytes are omitted. Only one of bytes_limit_per_file and
-    * bytes_limit_per_file_percent can be specified.
+    * bytes_limit_per_file_percent can be specified. Cannot be set if de-identification is requested.
     */
   var bytesLimitPerFile: js.UndefOr[String] = js.undefined
   
   /**
     * Max percentage of bytes to scan from a file. The rest are omitted. The number of bytes scanned is rounded down. Must be between 0 and 100, inclusively. Both 0 and 100 means no
-    * limit. Defaults to 0. Only one of bytes_limit_per_file and bytes_limit_per_file_percent can be specified.
+    * limit. Defaults to 0. Only one of bytes_limit_per_file and bytes_limit_per_file_percent can be specified. Cannot be set if de-identification is requested.
     */
   var bytesLimitPerFilePercent: js.UndefOr[Double] = js.undefined
   
@@ -61,7 +61,7 @@ object GooglePrivacyDlpV2CloudStorageOptions {
     
     inline def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
     
-    inline def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
+    inline def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value*))
     
     inline def setFilesLimitPercent(value: Double): Self = StObject.set(x, "filesLimitPercent", value.asInstanceOf[js.Any])
     

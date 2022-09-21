@@ -3,7 +3,6 @@ package typings.playerframework.PlayerFramework
 import typings.playerframework.PlayerFramework.Plugins.PlaylistPlugin
 import typings.std.HTMLElement
 import typings.std.HTMLMediaElement
-import typings.std.MSMediaKeys
 import typings.std.MediaError
 import typings.winrt.Windows.Media.MediaExtensionManager
 import typings.winrt.Windows.Media.Protection.MediaProtectionManager
@@ -58,7 +57,7 @@ trait MediaPlayer extends StObject {
   /**
     * Gets the audio tracks for the current media source.
     **/
-  var audioTracks: js.Array[js.Any] = js.native
+  var audioTracks: js.Array[Any] = js.native
   
   /**
     * Gets or sets a value that indicates whether to automatically start buffering the current media source.
@@ -93,7 +92,7 @@ trait MediaPlayer extends StObject {
   /**
     * Gets the buffered time ranges for the current media source.
     **/
-  var buffered: js.Array[js.Any] = js.native
+  var buffered: js.Array[Any] = js.native
   
   /**
     * Returns a value that specifies whether the player can play a given media type.
@@ -106,7 +105,7 @@ trait MediaPlayer extends StObject {
   /**
     * Gets the caption and subtitle tracks for the current media source.
     **/
-  var captionTracks: js.Array[js.Any] = js.native
+  var captionTracks: js.Array[Any] = js.native
   
   /**
     * Raises the captionsinvoked event used to indicate that closed options should be toggled on/off or
@@ -122,13 +121,13 @@ trait MediaPlayer extends StObject {
   /**
     * Gets or sets the current audio track.
     **/
-  var currentAudioTrack: js.Any = js.native
+  var currentAudioTrack: Any = js.native
   
   //TODO: (type: AudioTrack, read / write)
   /**
     * Gets or sets the current caption / subtitle track.
     **/
-  var currentCaptionTrack: js.Any = js.native
+  var currentCaptionTrack: Any = js.native
   
   //TODO: (type: TextTrack, read / write)
   /**
@@ -718,7 +717,7 @@ trait MediaPlayer extends StObject {
     * Sets the MSMediaKeys to be used for decrypting media data.
     * @param mediaKeys The media keys to use for decrypting media data.
     **/
-  def msSetMediaKeys(mediaKeys: MSMediaKeys): Unit = js.native
+  def msSetMediaKeys(mediaKeys: Any): Unit = js.native
   
   /**
     * Sets the media protection manager for a given media pipeline.
@@ -788,7 +787,7 @@ trait MediaPlayer extends StObject {
   /**
     * Gets the played time ranges for the current media source.
     **/
-  var played: js.Array[js.Any] = js.native
+  var played: js.Array[Any] = js.native
   
   /**
     * Gets or sets the current state of the player.
@@ -804,7 +803,7 @@ trait MediaPlayer extends StObject {
   /*
     * Gets the plugins associated with the player.
     **/
-  var plugins: js.Array[js.Any] = js.native
+  var plugins: js.Array[Any] = js.native
   
   //TODO: (type: ?, read - only)
   /*
@@ -865,7 +864,7 @@ trait MediaPlayer extends StObject {
   /**
     * Gets the seekable time ranges of the current media source.
     **/
-  var seekable: js.Any = js.native
+  var seekable: Any = js.native
   
   //TODO: (type: TimeRanges, read - only)
   /**
@@ -896,7 +895,7 @@ trait MediaPlayer extends StObject {
   /**
     * Gets or sets the media sources to be considered.
     **/
-  var sources: js.Array[js.Any] = js.native
+  var sources: js.Array[Any] = js.native
   
   //TODO: (type: Array, read / write)
   /**
@@ -927,13 +926,13 @@ trait MediaPlayer extends StObject {
   /**
     * Gets the text tracks for the current media source.
     **/
-  var textTracks: js.Any = js.native
+  var textTracks: Any = js.native
   
   // TODO: (type: TextTrackList, read - only)
   /**
     * Gets or sets the tracks for the player.
     **/
-  var tracks: js.Array[js.Any] = js.native
+  var tracks: js.Array[Any] = js.native
   
   /**
     * Updates the player and its plugins with the specified media source(e.g.the current playlist item).

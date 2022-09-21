@@ -52,7 +52,7 @@ object XScenario {
     apply: () => Unit,
     getIsScenario: () => Boolean,
     getScenarioComment: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setScenarioComment: String => Unit
   ): XScenario = {

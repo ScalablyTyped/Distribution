@@ -1,7 +1,6 @@
 package typings.gulpNgAnnotate
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,10 @@ object mod extends Shortcut {
   @js.native
   val ^ : NgAnnotate = js.native
   
-  type NgAnnotate = js.Function1[/* option */ js.UndefOr[Option], ReadWriteStream]
+  type NgAnnotate = js.Function1[
+    /* option */ js.UndefOr[Option], 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+  ]
   
   //TODO: Should be on ng-annotate module
   trait Option extends StObject {
@@ -35,7 +37,7 @@ object mod extends Shortcut {
     /**
       * Load a user plugin with the provided path
       */
-    var plugin: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var plugin: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Restrict matching further or to expand matching
@@ -78,11 +80,11 @@ object mod extends Shortcut {
       
       inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      inline def setPlugin(value: js.Array[js.Any]): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: js.Array[Any]): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
       inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
       
-      inline def setPluginVarargs(value: js.Any*): Self = StObject.set(x, "plugin", js.Array(value :_*))
+      inline def setPluginVarargs(value: Any*): Self = StObject.set(x, "plugin", js.Array(value*))
       
       inline def setRegexp(value: String): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,7 @@ object mod extends Shortcut {
       
       inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
       
-      inline def setRenameVarargs(value: RenameOption*): Self = StObject.set(x, "rename", js.Array(value :_*))
+      inline def setRenameVarargs(value: RenameOption*): Self = StObject.set(x, "rename", js.Array(value*))
       
       inline def setSingle_quotes(value: Boolean): Self = StObject.set(x, "single_quotes", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,5 @@
 package typings.sawtoothSdk.protobufMod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ITransactionReceipt extends StObject {
   
   /** TransactionReceipt data */
-  var data: js.UndefOr[js.Array[Uint8Array] | Null] = js.undefined
+  var data: js.UndefOr[js.Array[js.typedarray.Uint8Array] | Null] = js.undefined
   
   /** TransactionReceipt events */
   var events: js.UndefOr[js.Array[IEvent] | Null] = js.undefined
@@ -28,13 +27,13 @@ object ITransactionReceipt {
   
   extension [Self <: ITransactionReceipt](x: Self) {
     
-    inline def setData(value: js.Array[Uint8Array]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataNull: Self = StObject.set(x, "data", null)
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: Uint8Array*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.typedarray.Uint8Array*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setEvents(value: js.Array[IEvent]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
@@ -42,7 +41,7 @@ object ITransactionReceipt {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: IEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: IEvent*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setStateChanges(value: js.Array[IStateChange]): Self = StObject.set(x, "stateChanges", value.asInstanceOf[js.Any])
     
@@ -50,7 +49,7 @@ object ITransactionReceipt {
     
     inline def setStateChangesUndefined: Self = StObject.set(x, "stateChanges", js.undefined)
     
-    inline def setStateChangesVarargs(value: IStateChange*): Self = StObject.set(x, "stateChanges", js.Array(value :_*))
+    inline def setStateChangesVarargs(value: IStateChange*): Self = StObject.set(x, "stateChanges", js.Array(value*))
     
     inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     

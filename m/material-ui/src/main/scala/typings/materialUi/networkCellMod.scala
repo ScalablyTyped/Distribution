@@ -10,10 +10,10 @@ object networkCellMod {
   
   @JSImport("material-ui/svg-icons/device/network-cell", JSImport.Default)
   @js.native
-  class default () extends DeviceNetworkCell
+  open class default () extends DeviceNetworkCell
   
   @JSImport("material-ui/svg-icons/device/network-cell", "DeviceNetworkCell")
   @js.native
-  class DeviceNetworkCell ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceNetworkCell ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

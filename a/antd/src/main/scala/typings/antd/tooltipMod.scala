@@ -1,10 +1,11 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.anon.AdjustY
+import typings.antd.anon.AdjustXAdjustY
 import typings.antd.colorsMod.PresetColorType
 import typings.antd.placementsMod.AdjustOverflow
 import typings.antd.typeMod.LiteralUnion
+import typings.rcMotion.cssmotionMod.CSSMotionProps
 import typings.rcTooltip.anon.KeepParent
 import typings.rcTrigger.interfaceMod.ActionType
 import typings.rcTrigger.interfaceMod.AlignType
@@ -23,26 +24,15 @@ object tooltipMod extends Shortcut {
   
   @JSImport("antd/lib/tooltip", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[
-    (TooltipPropsWithOverlay & RefAttributes[js.Any]) | (TooltipPropsWithTitle & RefAttributes[js.Any])
-  ] = js.native
+  val default: ForwardRefExoticComponent[TooltipProps & RefAttributes[Any]] = js.native
   
-  /* Inlined parent std.Partial<std.Omit<rc-tooltip.rc-tooltip/es/Tooltip.TooltipProps, 'children'>> */
-  trait AbstractTooltipProps extends StObject {
-    
-    var afterVisibleChange: js.UndefOr[js.Function0[Unit]] = js.undefined
-    
-    var align: js.UndefOr[AlignType] = js.undefined
-    
-    var animation: js.UndefOr[AnimationType] = js.undefined
-    
-    var arrowContent: js.UndefOr[ReactNode] = js.undefined
+  trait AbstractTooltipProps
+    extends StObject
+       with LegacyTooltipProps {
     
     var arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined
     
     var autoAdjustOverflow: js.UndefOr[Boolean | AdjustOverflow] = js.undefined
-    
-    var builtinPlacements: js.UndefOr[BuildInPlacements] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
@@ -50,47 +40,14 @@ object tooltipMod extends Shortcut {
     
     var color: js.UndefOr[LiteralUnion[PresetColorType, String]] = js.undefined
     
-    var defaultVisible: js.UndefOr[Boolean] = js.undefined
-    
-    var destroyTooltipOnHide: js.UndefOr[Boolean | KeepParent] = js.undefined
-    
     var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
-    
-    var getTooltipContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
-    
-    var id: js.UndefOr[String] = js.undefined
-    
-    var mouseEnterDelay: js.UndefOr[Double] = js.undefined
-    
-    var mouseLeaveDelay: js.UndefOr[Double] = js.undefined
-    
-    var onPopupAlign: js.UndefOr[js.Function2[/* element */ HTMLElement, /* align */ AlignType, Unit]] = js.undefined
-    
-    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
     var openClassName: js.UndefOr[String] = js.undefined
     
-    var overlay: js.UndefOr[js.Function0[ReactNode] | ReactNode] = js.undefined
-    
-    var overlayClassName: js.UndefOr[String] = js.undefined
-    
-    var overlayInnerStyle: js.UndefOr[CSSProperties] = js.undefined
-    
-    var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
-    
-    var placement: js.UndefOr[TooltipPlacement] = js.undefined
-    
-    var popupVisible: js.UndefOr[Boolean] = js.undefined
-    
-    var prefixCls: js.UndefOr[String] = js.undefined
+    @JSName("placement")
+    var placement_AbstractTooltipProps: js.UndefOr[TooltipPlacement] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
-    
-    var transitionName: js.UndefOr[String] = js.undefined
-    
-    var trigger: js.UndefOr[ActionType | js.Array[ActionType]] = js.undefined
-    
-    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object AbstractTooltipProps {
     
@@ -101,7 +58,137 @@ object tooltipMod extends Shortcut {
     
     extension [Self <: AbstractTooltipProps](x: Self) {
       
-      inline def setAfterVisibleChange(value: () => Unit): Self = StObject.set(x, "afterVisibleChange", js.Any.fromFunction0(value))
+      inline def setArrowPointAtCenter(value: Boolean): Self = StObject.set(x, "arrowPointAtCenter", value.asInstanceOf[js.Any])
+      
+      inline def setArrowPointAtCenterUndefined: Self = StObject.set(x, "arrowPointAtCenter", js.undefined)
+      
+      inline def setAutoAdjustOverflow(value: Boolean | AdjustOverflow): Self = StObject.set(x, "autoAdjustOverflow", value.asInstanceOf[js.Any])
+      
+      inline def setAutoAdjustOverflowUndefined: Self = StObject.set(x, "autoAdjustOverflow", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setColor(value: LiteralUnion[PresetColorType, String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setGetPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
+      
+      inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
+      
+      inline def setOpenClassName(value: String): Self = StObject.set(x, "openClassName", value.asInstanceOf[js.Any])
+      
+      inline def setOpenClassNameUndefined: Self = StObject.set(x, "openClassName", js.undefined)
+      
+      inline def setPlacement(value: TooltipPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    }
+  }
+  
+  /* Inlined parent std.Partial<std.Omit<rc-tooltip.rc-tooltip/es/Tooltip.TooltipProps, 'children' | 'visible' | 'defaultVisible' | 'onVisibleChange' | 'afterVisibleChange'>> */
+  trait LegacyTooltipProps extends StObject {
+    
+    var afterOpenChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
+    
+    /**
+      * @deprecated `afterVisibleChange` is deprecated which will be removed in next major version.
+      *   Please use `afterOpenChange` instead.
+      */
+    var afterVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
+    
+    var align: js.UndefOr[AlignType] = js.undefined
+    
+    var animation: js.UndefOr[AnimationType] = js.undefined
+    
+    var arrowContent: js.UndefOr[ReactNode] = js.undefined
+    
+    var builtinPlacements: js.UndefOr[BuildInPlacements] = js.undefined
+    
+    var defaultOpen: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * @deprecated `defaultVisible` is deprecated which will be removed in next major version. Please
+      *   use `defaultOpen` instead.
+      */
+    var defaultVisible: js.UndefOr[Boolean] = js.undefined
+    
+    var destroyTooltipOnHide: js.UndefOr[Boolean | KeepParent] = js.undefined
+    
+    var getTooltipContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
+    
+    var id: js.UndefOr[String] = js.undefined
+    
+    var motion: js.UndefOr[CSSMotionProps] = js.undefined
+    
+    var mouseEnterDelay: js.UndefOr[Double] = js.undefined
+    
+    var mouseLeaveDelay: js.UndefOr[Double] = js.undefined
+    
+    var onOpenChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
+    
+    var onPopupAlign: js.UndefOr[js.Function2[/* element */ HTMLElement, /* align */ AlignType, Unit]] = js.undefined
+    
+    /**
+      * @deprecated `onVisibleChange` is deprecated which will be removed in next major version. Please
+      *   use `onOpenChange` instead.
+      */
+    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
+    
+    var open: js.UndefOr[Boolean] = js.undefined
+    
+    var overlay: js.UndefOr[js.Function0[ReactNode] | ReactNode] = js.undefined
+    
+    var overlayClassName: js.UndefOr[String] = js.undefined
+    
+    var overlayInnerStyle: js.UndefOr[CSSProperties] = js.undefined
+    
+    var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
+    
+    var placement: js.UndefOr[String] = js.undefined
+    
+    var popupVisible: js.UndefOr[Boolean] = js.undefined
+    
+    var prefixCls: js.UndefOr[String] = js.undefined
+    
+    var showArrow: js.UndefOr[Boolean] = js.undefined
+    
+    var transitionName: js.UndefOr[String] = js.undefined
+    
+    var trigger: js.UndefOr[ActionType | js.Array[ActionType]] = js.undefined
+    
+    /**
+      * @deprecated `visible` is deprecated which will be removed in next major version. Please use
+      *   `open` instead.
+      */
+    var visible: js.UndefOr[Boolean] = js.undefined
+    
+    var zIndex: js.UndefOr[Double] = js.undefined
+  }
+  object LegacyTooltipProps {
+    
+    inline def apply(): LegacyTooltipProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[LegacyTooltipProps]
+    }
+    
+    extension [Self <: LegacyTooltipProps](x: Self) {
+      
+      inline def setAfterOpenChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "afterOpenChange", js.Any.fromFunction1(value))
+      
+      inline def setAfterOpenChangeUndefined: Self = StObject.set(x, "afterOpenChange", js.undefined)
+      
+      inline def setAfterVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "afterVisibleChange", js.Any.fromFunction1(value))
       
       inline def setAfterVisibleChangeUndefined: Self = StObject.set(x, "afterVisibleChange", js.undefined)
       
@@ -117,29 +204,13 @@ object tooltipMod extends Shortcut {
       
       inline def setArrowContentUndefined: Self = StObject.set(x, "arrowContent", js.undefined)
       
-      inline def setArrowPointAtCenter(value: Boolean): Self = StObject.set(x, "arrowPointAtCenter", value.asInstanceOf[js.Any])
-      
-      inline def setArrowPointAtCenterUndefined: Self = StObject.set(x, "arrowPointAtCenter", js.undefined)
-      
-      inline def setAutoAdjustOverflow(value: Boolean | AdjustOverflow): Self = StObject.set(x, "autoAdjustOverflow", value.asInstanceOf[js.Any])
-      
-      inline def setAutoAdjustOverflowUndefined: Self = StObject.set(x, "autoAdjustOverflow", js.undefined)
-      
       inline def setBuiltinPlacements(value: BuildInPlacements): Self = StObject.set(x, "builtinPlacements", value.asInstanceOf[js.Any])
       
       inline def setBuiltinPlacementsUndefined: Self = StObject.set(x, "builtinPlacements", js.undefined)
       
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setDefaultOpen(value: Boolean): Self = StObject.set(x, "defaultOpen", value.asInstanceOf[js.Any])
       
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      inline def setColor(value: LiteralUnion[PresetColorType, String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-      
-      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setDefaultOpenUndefined: Self = StObject.set(x, "defaultOpen", js.undefined)
       
       inline def setDefaultVisible(value: Boolean): Self = StObject.set(x, "defaultVisible", value.asInstanceOf[js.Any])
       
@@ -149,10 +220,6 @@ object tooltipMod extends Shortcut {
       
       inline def setDestroyTooltipOnHideUndefined: Self = StObject.set(x, "destroyTooltipOnHide", js.undefined)
       
-      inline def setGetPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
-      
-      inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
-      
       inline def setGetTooltipContainer(value: /* node */ HTMLElement => HTMLElement): Self = StObject.set(x, "getTooltipContainer", js.Any.fromFunction1(value))
       
       inline def setGetTooltipContainerUndefined: Self = StObject.set(x, "getTooltipContainer", js.undefined)
@@ -160,6 +227,10 @@ object tooltipMod extends Shortcut {
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setMotion(value: CSSMotionProps): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
+      
+      inline def setMotionUndefined: Self = StObject.set(x, "motion", js.undefined)
       
       inline def setMouseEnterDelay(value: Double): Self = StObject.set(x, "mouseEnterDelay", value.asInstanceOf[js.Any])
       
@@ -169,6 +240,10 @@ object tooltipMod extends Shortcut {
       
       inline def setMouseLeaveDelayUndefined: Self = StObject.set(x, "mouseLeaveDelay", js.undefined)
       
+      inline def setOnOpenChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onOpenChange", js.Any.fromFunction1(value))
+      
+      inline def setOnOpenChangeUndefined: Self = StObject.set(x, "onOpenChange", js.undefined)
+      
       inline def setOnPopupAlign(value: (/* element */ HTMLElement, /* align */ AlignType) => Unit): Self = StObject.set(x, "onPopupAlign", js.Any.fromFunction2(value))
       
       inline def setOnPopupAlignUndefined: Self = StObject.set(x, "onPopupAlign", js.undefined)
@@ -177,9 +252,9 @@ object tooltipMod extends Shortcut {
       
       inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
       
-      inline def setOpenClassName(value: String): Self = StObject.set(x, "openClassName", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      inline def setOpenClassNameUndefined: Self = StObject.set(x, "openClassName", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
       inline def setOverlay(value: js.Function0[ReactNode] | ReactNode): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
@@ -199,7 +274,7 @@ object tooltipMod extends Shortcut {
       
       inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
-      inline def setPlacement(value: TooltipPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
@@ -211,9 +286,9 @@ object tooltipMod extends Shortcut {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
       
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setShowArrowUndefined: Self = StObject.set(x, "showArrow", js.undefined)
       
       inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
       
@@ -223,11 +298,15 @@ object tooltipMod extends Shortcut {
       
       inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       
-      inline def setTriggerVarargs(value: ActionType*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+      inline def setTriggerVarargs(value: ActionType*): Self = StObject.set(x, "trigger", js.Array(value*))
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
       inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -237,7 +316,7 @@ object tooltipMod extends Shortcut {
     
     var offset: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.undefined
     
-    var overflow: js.UndefOr[AdjustY] = js.undefined
+    var overflow: js.UndefOr[AdjustXAdjustY] = js.undefined
     
     var points: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
@@ -262,7 +341,7 @@ object tooltipMod extends Shortcut {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOverflow(value: AdjustY): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: AdjustXAdjustY): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
       inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
@@ -354,7 +433,7 @@ object tooltipMod extends Shortcut {
        with TooltipProps {
     
     @JSName("overlay")
-    var overlay_TooltipPropsWithOverlay: ReactNode | RenderFunction
+    var overlay_TooltipPropsWithOverlay: js.UndefOr[ReactNode | RenderFunction] = js.undefined
     
     var title: js.UndefOr[ReactNode | RenderFunction] = js.undefined
   }
@@ -414,12 +493,8 @@ object tooltipMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[
-    (TooltipPropsWithOverlay & RefAttributes[js.Any]) | (TooltipPropsWithTitle & RefAttributes[js.Any])
-  ]
+  type _To = ForwardRefExoticComponent[TooltipProps & RefAttributes[Any]]
   
   /* This means you don't have to write `default`, but can instead just say `tooltipMod.foo` */
-  override def _to: ForwardRefExoticComponent[
-    (TooltipPropsWithOverlay & RefAttributes[js.Any]) | (TooltipPropsWithTitle & RefAttributes[js.Any])
-  ] = default
+  override def _to: ForwardRefExoticComponent[TooltipProps & RefAttributes[Any]] = default
 }

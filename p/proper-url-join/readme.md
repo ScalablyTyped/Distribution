@@ -1,7 +1,7 @@
 
 # Scala.js typings for proper-url-join
 
-Typings are for version 2.0
+Typings are for version 2.1
 
 ## Library description:
 Like `path.join` but for a URL
@@ -10,10 +10,10 @@ Like `path.join` but for a URL
 | ------------------ | :-------------: |
 | Full name          | proper-url-join |
 | Keywords           | url, join, path, pathname, normalize |
-| # releases         | 5 |
-| # dependents       | 18 |
-| # downloads        | 612035 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 79457.66666666667 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/moxystudio/js-proper-url-join)

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zipkin", "TraceId")
 @js.native
-class TraceId () extends StObject {
+open class TraceId () extends StObject {
   def this(args: Debug) = this()
   
   def isDebug(): Boolean = js.native

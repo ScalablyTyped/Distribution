@@ -13,7 +13,7 @@ object sharedWorkerServerConnectorMod {
   - typings.samchon.icommunicatorMod.ICommunicator because Already inherited
   - typings.samchon.iserverconnectorMod.IServerConnector because var conflicts: onClose. Inlined onConnect, connect */ @JSImport("samchon/protocol/communicator/server_connector/SharedWorkerServerConnector", "SharedWorkerServerConnector")
   @js.native
-  class SharedWorkerServerConnector protected () extends SharedWorkerCommunicator {
+  open class SharedWorkerServerConnector protected () extends SharedWorkerCommunicator {
     /**
       * Construct from *listener*.
       *

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "AdvancedTimer")
 @js.native
-class AdvancedTimer[T] protected ()
+open class AdvancedTimer[T] protected ()
   extends typings.babylonjs.legacyMod.AdvancedTimer[T] {
   /**
     * Will construct a new advanced timer based on the options provided. Timer will not start until start() is called.

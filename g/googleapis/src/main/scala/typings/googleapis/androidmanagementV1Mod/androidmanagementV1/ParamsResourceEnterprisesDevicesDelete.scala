@@ -1,9 +1,5 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,7 @@ trait ParamsResourceEnterprisesDevicesDelete
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The name of the device in the form
-    * enterprises/{enterpriseId}/devices/{deviceId}.
+    * The name of the device in the form enterprises/{enterpriseId\}/devices/{deviceId\}.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -27,6 +17,11 @@ trait ParamsResourceEnterprisesDevicesDelete
     * Optional flags that control the device wiping behavior.
     */
   var wipeDataFlags: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * Optional. A short message displayed to the user before wiping the work profile on personal devices. This has no effect on company owned devices. The maximum message length is 200 characters.
+    */
+  var wipeReasonMessage: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceEnterprisesDevicesDelete {
   
@@ -37,10 +32,6 @@ object ParamsResourceEnterprisesDevicesDelete {
   
   extension [Self <: ParamsResourceEnterprisesDevicesDelete](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -49,6 +40,10 @@ object ParamsResourceEnterprisesDevicesDelete {
     
     inline def setWipeDataFlagsUndefined: Self = StObject.set(x, "wipeDataFlags", js.undefined)
     
-    inline def setWipeDataFlagsVarargs(value: String*): Self = StObject.set(x, "wipeDataFlags", js.Array(value :_*))
+    inline def setWipeDataFlagsVarargs(value: String*): Self = StObject.set(x, "wipeDataFlags", js.Array(value*))
+    
+    inline def setWipeReasonMessage(value: String): Self = StObject.set(x, "wipeReasonMessage", value.asInstanceOf[js.Any])
+    
+    inline def setWipeReasonMessageUndefined: Self = StObject.set(x, "wipeReasonMessage", js.undefined)
   }
 }

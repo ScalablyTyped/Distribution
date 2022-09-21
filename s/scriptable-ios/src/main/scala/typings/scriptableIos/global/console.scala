@@ -23,7 +23,7 @@ object console {
     * @param message - Message to log to the console.
     * @see https://docs.scriptable.app/console/#error
     */
-  inline def error(message: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def error(message: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * _Logs a message to the console._
@@ -34,7 +34,7 @@ object console {
     * @param message - Message to log to the console.
     * @see https://docs.scriptable.app/console/#log
     */
-  inline def log(message: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def log(message: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * _Logs a warning message to the console._
@@ -45,5 +45,5 @@ object console {
     * @param message - Message to log to the console.
     * @see https://docs.scriptable.app/console/#warn
     */
-  inline def warn(message: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def warn(message: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

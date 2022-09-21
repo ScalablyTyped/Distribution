@@ -3,6 +3,7 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.devtoolsProtocolStrings.SignedExchange
 import typings.devtoolsProtocol.devtoolsProtocolStrings.other_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.parser
+import typings.devtoolsProtocol.devtoolsProtocolStrings.preflight_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.preload
 import typings.devtoolsProtocol.devtoolsProtocolStrings.script_
 import typings.devtoolsProtocol.mod.Protocol.Runtime.StackTrace
@@ -25,6 +26,11 @@ trait Initiator extends StObject {
   var lineNumber: js.UndefOr[Double] = js.undefined
   
   /**
+    * Set if another request triggered this request (e.g. preflight).
+    */
+  var requestId: js.UndefOr[RequestId] = js.undefined
+  
+  /**
     * Initiator JavaScript stack trace, set for Script only.
     */
   var stack: js.UndefOr[StackTrace] = js.undefined
@@ -32,7 +38,7 @@ trait Initiator extends StObject {
   /**
     * Type of this initiator. (InitiatorType enum)
     */
-  var `type`: parser | script_ | preload | SignedExchange | other_
+  var `type`: parser | script_ | preload | SignedExchange | preflight_ | other_
   
   /**
     * Initiator URL, set for Parser type or for Script type (when script is importing module) or for SignedExchange type.
@@ -41,7 +47,7 @@ trait Initiator extends StObject {
 }
 object Initiator {
   
-  inline def apply(`type`: parser | script_ | preload | SignedExchange | other_): Initiator = {
+  inline def apply(`type`: parser | script_ | preload | SignedExchange | preflight_ | other_): Initiator = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Initiator]
@@ -57,11 +63,15 @@ object Initiator {
     
     inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
     
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    
     inline def setStack(value: StackTrace): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
-    inline def setType(value: parser | script_ | preload | SignedExchange | other_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: parser | script_ | preload | SignedExchange | preflight_ | other_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

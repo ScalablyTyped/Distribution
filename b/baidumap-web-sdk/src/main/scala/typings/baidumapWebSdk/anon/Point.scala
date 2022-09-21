@@ -10,7 +10,7 @@ trait Point extends StObject {
   
   var point: typings.baidumapWebSdk.BMap.Point
   
-  var target: js.Any
+  var target: Any
   
   var `type`: String
   
@@ -21,7 +21,7 @@ object Point {
   inline def apply(
     pixel: typings.baidumapWebSdk.BMap.Pixel,
     point: typings.baidumapWebSdk.BMap.Point,
-    target: js.Any,
+    target: Any,
     `type`: String,
     zoom: Double
   ): Point = {
@@ -36,7 +36,7 @@ object Point {
     
     inline def setPoint(value: typings.baidumapWebSdk.BMap.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

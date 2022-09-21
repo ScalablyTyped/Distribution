@@ -25,7 +25,7 @@ object ListHoldsResponse {
     
     inline def setHoldsUndefined: Self = StObject.set(x, "holds", js.undefined)
     
-    inline def setHoldsVarargs(value: Hold*): Self = StObject.set(x, "holds", js.Array(value :_*))
+    inline def setHoldsVarargs(value: Hold*): Self = StObject.set(x, "holds", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

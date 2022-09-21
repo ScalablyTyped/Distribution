@@ -54,7 +54,7 @@ object loaderMod {
   
   @JSImport("rbx/elements/other/loader", "Loader")
   @js.native
-  val Loader: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Loader: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait LoaderProps extends StObject {

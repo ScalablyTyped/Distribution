@@ -1,7 +1,7 @@
 
 # Scala.js typings for fortawesome__fontawesome-common-types
 
-Typings are for version 0.2.32
+Typings are for version 6.2.0
 
 ## Library description:
 The iconic font, CSS, and SVG framework
@@ -10,14 +10,14 @@ The iconic font, CSS, and SVG framework
 | ------------------ | :-------------: |
 | Full name          | @fortawesome/fontawesome-common-types |
 | Keywords           | font, awesome, fontawesome, icon, svg, bootstrap |
-| # releases         | 38 |
-| # dependents       | 24 |
-| # downloads        | 38224029 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 6621930.0 |
+| # stars            | 70007.0 |
 
 ## Links
 - [Homepage](https://fontawesome.com)
-- [Bugs](http://github.com/FortAwesome/Font-Awesome/issues)
+- [Bugs](https://github.com/FortAwesome/Font-Awesome/issues)
 - [Repository](https://github.com/FortAwesome/Font-Awesome)
 - [Npm](https://www.npmjs.com/package/%40fortawesome%2Ffontawesome-common-types)
     

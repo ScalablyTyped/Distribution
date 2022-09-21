@@ -12,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "DropdownItem")
 @js.native
-class DropdownItem protected ()
-  extends Component[DropdownItemProps, ComponentState, js.Any] {
+open class DropdownItem protected () extends Component[DropdownItemProps, ComponentState, Any] {
   def this(props: DropdownItemProps) = this()
-  def this(props: DropdownItemProps, context: js.Any) = this()
+  def this(props: DropdownItemProps, context: Any) = this()
 }
 object DropdownItem {
   

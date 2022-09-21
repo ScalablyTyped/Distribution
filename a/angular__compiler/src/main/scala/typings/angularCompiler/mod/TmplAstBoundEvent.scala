@@ -1,51 +1,74 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.astMod.ParsedEventType
-import typings.angularCompiler.r3AstMod.BoundEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "TmplAstBoundEvent")
 @js.native
-class TmplAstBoundEvent protected ()
-  extends typings.angularCompiler.compilerMod.TmplAstBoundEvent {
+open class TmplAstBoundEvent protected ()
+  extends StObject
+     with TmplAstNode {
   def this(
     name: String,
     `type`: ParsedEventType,
-    handler: typings.angularCompiler.astMod.AST,
+    handler: AST,
     target: String,
     phase: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    handlerSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan,
+    handlerSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
     `type`: ParsedEventType,
-    handler: typings.angularCompiler.astMod.AST,
+    handler: AST,
     target: String,
     phase: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    handlerSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan,
+    handlerSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
     `type`: ParsedEventType,
-    handler: typings.angularCompiler.astMod.AST,
+    handler: AST,
     target: Null,
     phase: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    handlerSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan,
+    handlerSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan
   ) = this()
   def this(
     name: String,
     `type`: ParsedEventType,
-    handler: typings.angularCompiler.astMod.AST,
+    handler: AST,
     target: Null,
     phase: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    handlerSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan,
+    handlerSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan
   ) = this()
+  
+  var handler: AST = js.native
+  
+  var handlerSpan: ParseSourceSpan = js.native
+  
+  val keySpan: ParseSourceSpan = js.native
+  
+  var name: String = js.native
+  
+  var phase: String | Null = js.native
+  
+  /* CompleteClass */
+  var sourceSpan: ParseSourceSpan = js.native
+  
+  var target: String | Null = js.native
+  
+  var `type`: ParsedEventType = js.native
+  
+  /* CompleteClass */
+  override def visit[Result](visitor: Visitor3[Result]): Result = js.native
 }
 /* static members */
 object TmplAstBoundEvent {
@@ -54,5 +77,5 @@ object TmplAstBoundEvent {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromParsedEvent(event: typings.angularCompiler.astMod.ParsedEvent): BoundEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedEvent")(event.asInstanceOf[js.Any]).asInstanceOf[BoundEvent]
+  inline def fromParsedEvent(event: ParsedEvent): TmplAstBoundEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedEvent")(event.asInstanceOf[js.Any]).asInstanceOf[TmplAstBoundEvent]
 }

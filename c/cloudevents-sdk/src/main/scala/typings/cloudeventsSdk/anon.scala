@@ -13,38 +13,38 @@ object anon {
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
-    var binary: js.Any
+    var binary: Any
     
-    var structured: js.Any
+    var structured: Any
   }
   object Dictkey {
     
-    inline def apply(binary: js.Any, structured: js.Any): Dictkey = {
+    inline def apply(binary: Any, structured: Any): Dictkey = {
       val __obj = js.Dynamic.literal(binary = binary.asInstanceOf[js.Any], structured = structured.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictkey]
     }
     
     extension [Self <: Dictkey](x: Self) {
       
-      inline def setBinary(value: js.Any): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: Any): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      inline def setStructured(value: js.Any): Self = StObject.set(x, "structured", value.asInstanceOf[js.Any])
+      inline def setStructured(value: Any): Self = StObject.set(x, "structured", value.asInstanceOf[js.Any])
     }
   }
   
   trait Dictx
     extends StObject
-       with /* x */ NumberDictionary[NumberDictionary[js.Any]] {
+       with /* x */ NumberDictionary[NumberDictionary[Any]] {
     
-    var `null`: NumberDictionary[js.Any]
+    var `null`: NumberDictionary[Any]
     
-    var undefined: NumberDictionary[js.Any]
+    var undefined: NumberDictionary[Any]
   }
   object Dictx {
     
-    inline def apply(`null`: NumberDictionary[js.Any], undefined: NumberDictionary[js.Any]): Dictx = {
+    inline def apply(`null`: NumberDictionary[Any], undefined: NumberDictionary[Any]): Dictx = {
       val __obj = js.Dynamic.literal(undefined = undefined.asInstanceOf[js.Any])
       __obj.updateDynamic("null")(`null`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictx]
@@ -52,15 +52,15 @@ object anon {
     
     extension [Self <: Dictx](x: Self) {
       
-      inline def setNull(value: NumberDictionary[js.Any]): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
+      inline def setNull(value: NumberDictionary[Any]): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
       
-      inline def setUndefined(value: NumberDictionary[js.Any]): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+      inline def setUndefined(value: NumberDictionary[Any]): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
     }
   }
   
   trait Id extends StObject {
     
-    var id: js.Any
+    var id: Any
     
     var specversion: String
     
@@ -68,14 +68,14 @@ object anon {
   }
   object Id {
     
-    inline def apply(id: js.Any, specversion: String, time: String): Id = {
+    inline def apply(id: Any, specversion: String, time: String): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], specversion = specversion.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
     extension [Self <: Id](x: Self) {
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setSpecversion(value: String): Self = StObject.set(x, "specversion", value.asInstanceOf[js.Any])
       
@@ -112,11 +112,11 @@ object anon {
     
     var name: String
     
-    def parser(v: js.Any): js.Any
+    def parser(v: Any): Any
   }
   object Name {
     
-    inline def apply(name: String, parser: js.Any => js.Any): Name = {
+    inline def apply(name: String, parser: Any => Any): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parser = js.Any.fromFunction1(parser))
       __obj.asInstanceOf[Name]
     }
@@ -125,7 +125,7 @@ object anon {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setParser(value: js.Any => js.Any): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
+      inline def setParser(value: Any => Any): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
     }
   }
   
@@ -141,7 +141,7 @@ object anon {
     
     var url: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[js.Any] = js.undefined
+    var version: js.UndefOr[Any] = js.undefined
   }
   object Url {
     
@@ -156,7 +156,7 @@ object anon {
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      inline def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
       inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }

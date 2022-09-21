@@ -11,9 +11,9 @@ Like lodash isEqualWith but for shallow equal.
 | Full name          | shallowequal |
 | Keywords           | shallowequal, shallow, equal, isequal, compare, isequalwith |
 | # releases         | 0 |
-| # dependents       | 855 |
-| # downloads        | 181416447 |
-| # stars            | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 3.0262742666666668E7 |
+| # stars            | 162.0 |
 
 ## Links
 - [Homepage](https://github.com/dashed/shallowequal#readme)

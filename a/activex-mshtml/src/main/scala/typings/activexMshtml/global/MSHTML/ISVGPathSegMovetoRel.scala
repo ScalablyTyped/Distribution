@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.ISVGPathSegMovetoRel")
 @js.native
-/* private */ class ISVGPathSegMovetoRel ()
+/* private */ open class ISVGPathSegMovetoRel ()
   extends StObject
      with typings.activexMshtml.MSHTML.ISVGPathSegMovetoRel {
   

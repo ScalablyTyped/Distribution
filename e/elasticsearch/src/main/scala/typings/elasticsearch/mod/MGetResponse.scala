@@ -21,6 +21,6 @@ object MGetResponse {
     
     inline def setDocsUndefined: Self = StObject.set(x, "docs", js.undefined)
     
-    inline def setDocsVarargs(value: GetResponse[T]*): Self = StObject.set(x, "docs", js.Array(value :_*))
+    inline def setDocsVarargs(value: GetResponse[T]*): Self = StObject.set(x, "docs", js.Array(value*))
   }
 }

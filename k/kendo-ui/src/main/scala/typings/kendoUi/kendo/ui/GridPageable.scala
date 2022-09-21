@@ -20,7 +20,7 @@ trait GridPageable extends StObject {
   
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  var pageSizes: js.UndefOr[Boolean | js.Any] = js.undefined
+  var pageSizes: js.UndefOr[Boolean | Any] = js.undefined
   
   var position: js.UndefOr[String] = js.undefined
   
@@ -67,7 +67,7 @@ object GridPageable {
     
     inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    inline def setPageSizes(value: Boolean | js.Any): Self = StObject.set(x, "pageSizes", value.asInstanceOf[js.Any])
+    inline def setPageSizes(value: Boolean | Any): Self = StObject.set(x, "pageSizes", value.asInstanceOf[js.Any])
     
     inline def setPageSizesUndefined: Self = StObject.set(x, "pageSizes", js.undefined)
     

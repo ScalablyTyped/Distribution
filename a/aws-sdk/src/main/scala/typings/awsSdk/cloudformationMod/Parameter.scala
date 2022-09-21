@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Parameter extends StObject {
   
   /**
-    * The key associated with the parameter. If you don't specify a key and value for a particular parameter, AWS CloudFormation uses the default value that is specified in your template.
+    * The key associated with the parameter. If you don't specify a key and value for a particular parameter, CloudFormation uses the default value that's specified in your template.
     */
   var ParameterKey: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterKey] = js.undefined
   
@@ -17,7 +17,7 @@ trait Parameter extends StObject {
   var ParameterValue: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterValue] = js.undefined
   
   /**
-    * Read-only. The value that corresponds to a Systems Manager parameter key. This field is returned only for  SSM parameter types in the template.
+    * Read-only. The value that corresponds to a SSM parameter key. This field is returned only for  SSM  parameter types in the template.
     */
   var ResolvedValue: js.UndefOr[ParameterValue] = js.undefined
   

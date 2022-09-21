@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-tag-names
 
-Typings are for version 1.1
+Typings are for version 2.0.1
 
 ## Library description:
 List of known HTML tag names
@@ -11,9 +11,9 @@ List of known HTML tag names
 | Full name          | html-tag-names |
 | Keywords           | html, tag, name, element, tagname, w3c, whatwg |
 | # releases         | 3 |
-| # dependents       | 23 |
-| # downloads        | 10791481 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 368768.6666666667 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/html-tag-names#readme)
@@ -24,7 +24,7 @@ List of known HTML tag names
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

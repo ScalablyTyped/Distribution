@@ -31,7 +31,7 @@ trait XMultiComponentFactory
     * @param Context context the component instance gets its deployment values from
     * @returns component instance
     */
-  def createInstanceWithArgumentsAndContext(ServiceSpecifier: String, Arguments: SeqEquiv[js.Any], Context: XComponentContext): XInterface
+  def createInstanceWithArgumentsAndContext(ServiceSpecifier: String, Arguments: SeqEquiv[Any], Context: XComponentContext): XInterface
   
   /**
     * Creates an instance of a component which supports the services specified by the factory.
@@ -52,10 +52,10 @@ object XMultiComponentFactory {
   inline def apply(
     AvailableServiceNames: SafeArray[String],
     acquire: () => Unit,
-    createInstanceWithArgumentsAndContext: (String, SeqEquiv[js.Any], XComponentContext) => XInterface,
+    createInstanceWithArgumentsAndContext: (String, SeqEquiv[Any], XComponentContext) => XInterface,
     createInstanceWithContext: (String, XComponentContext) => XInterface,
     getAvailableServiceNames: () => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XMultiComponentFactory = {
     val __obj = js.Dynamic.literal(AvailableServiceNames = AvailableServiceNames.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), createInstanceWithArgumentsAndContext = js.Any.fromFunction3(createInstanceWithArgumentsAndContext), createInstanceWithContext = js.Any.fromFunction2(createInstanceWithContext), getAvailableServiceNames = js.Any.fromFunction0(getAvailableServiceNames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -66,7 +66,7 @@ object XMultiComponentFactory {
     
     inline def setAvailableServiceNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableServiceNames", value.asInstanceOf[js.Any])
     
-    inline def setCreateInstanceWithArgumentsAndContext(value: (String, SeqEquiv[js.Any], XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithArgumentsAndContext", js.Any.fromFunction3(value))
+    inline def setCreateInstanceWithArgumentsAndContext(value: (String, SeqEquiv[Any], XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithArgumentsAndContext", js.Any.fromFunction3(value))
     
     inline def setCreateInstanceWithContext(value: (String, XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithContext", js.Any.fromFunction2(value))
     

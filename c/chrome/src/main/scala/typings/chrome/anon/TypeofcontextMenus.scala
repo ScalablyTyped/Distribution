@@ -12,8 +12,8 @@ trait TypeofcontextMenus extends StObject {
   
   var ACTION_MENU_TOP_LEVEL_LIMIT: Double = js.native
   
-  def create(createProperties: CreateProperties): Unit = js.native
-  def create(createProperties: CreateProperties, callback: js.Function0[Unit]): Unit = js.native
+  def create(createProperties: CreateProperties): Double | String = js.native
+  def create(createProperties: CreateProperties, callback: js.Function0[Unit]): Double | String = js.native
   
   var onClicked: MenuClickedEvent = js.native
   

@@ -1,6 +1,5 @@
 package typings.xlsx.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,10 +22,10 @@ trait CellObject extends StObject {
   var l: js.UndefOr[Hyperlink] = js.undefined
   
   /** Rich text encoding (if applicable) */
-  var r: js.UndefOr[js.Any] = js.undefined
+  var r: js.UndefOr[Any] = js.undefined
   
   /** The style/theme of the cell (if applicable) */
-  var s: js.UndefOr[js.Any] = js.undefined
+  var s: js.UndefOr[Any] = js.undefined
   
   /**
     * The Excel Data Type of the cell.
@@ -35,7 +34,7 @@ trait CellObject extends StObject {
   var t: ExcelDataType
   
   /** The raw value of the cell.  Can be omitted if a formula is specified */
-  var v: js.UndefOr[String | Double | Boolean | Date] = js.undefined
+  var v: js.UndefOr[String | Double | Boolean | js.Date] = js.undefined
   
   /** Formatted text (if applicable) */
   var w: js.UndefOr[String] = js.undefined
@@ -68,17 +67,17 @@ object CellObject {
     
     inline def setLUndefined: Self = StObject.set(x, "l", js.undefined)
     
-    inline def setR(value: js.Any): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Any): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
-    inline def setS(value: js.Any): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: Any): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
     inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
     
     inline def setT(value: ExcelDataType): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
-    inline def setV(value: String | Double | Boolean | Date): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: String | Double | Boolean | js.Date): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
     inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a maintenance trigger. */
 @JSGlobal("Windows.ApplicationModel.Background.MaintenanceTrigger")
 @js.native
-class MaintenanceTrigger protected ()
+open class MaintenanceTrigger protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.MaintenanceTrigger {
   /**

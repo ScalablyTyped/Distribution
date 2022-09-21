@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BootstrapGridViewCellInfo extends StObject {
   
-  /* protected */ val instance: js.Any
+  /* protected */ val instance: Any
   
   val rowVisibleIndex: Double
 }
 object BootstrapGridViewCellInfo {
   
-  inline def apply(instance: js.Any, rowVisibleIndex: Double): BootstrapGridViewCellInfo = {
+  inline def apply(instance: Any, rowVisibleIndex: Double): BootstrapGridViewCellInfo = {
     val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any], rowVisibleIndex = rowVisibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapGridViewCellInfo]
   }
   
   extension [Self <: BootstrapGridViewCellInfo](x: Self) {
     
-    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     inline def setRowVisibleIndex(value: Double): Self = StObject.set(x, "rowVisibleIndex", value.asInstanceOf[js.Any])
   }

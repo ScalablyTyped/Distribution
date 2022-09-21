@@ -315,7 +315,7 @@ object uno {
       acquire: () => Unit,
       addReference: XReference => Unit,
       queryAdapted: () => XInterface,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeReference: XReference => Unit
     ): XAdapter = {
@@ -365,7 +365,7 @@ object uno {
       * interface when it calls the method {@link XInterface.queryInterface()} .
       * @see XAggregation.setDelegator
       */
-    def queryAggregation(aType: `type`): js.Any
+    def queryAggregation(aType: `type`): Any
     
     /**
       * sets the object to which all calls to the method {@link XInterface.queryInterface()} have to be forwarded.
@@ -378,8 +378,8 @@ object uno {
     
     inline def apply(
       acquire: () => Unit,
-      queryAggregation: `type` => js.Any,
-      queryInterface: `type` => js.Any,
+      queryAggregation: `type` => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setDelegator: XInterface => Unit
     ): XAggregation = {
@@ -389,7 +389,7 @@ object uno {
     
     extension [Self <: XAggregation](x: Self) {
       
-      inline def setQueryAggregation(value: `type` => js.Any): Self = StObject.set(x, "queryAggregation", js.Any.fromFunction1(value))
+      inline def setQueryAggregation(value: `type` => Any): Self = StObject.set(x, "queryAggregation", js.Any.fromFunction1(value))
       
       inline def setSetDelegator(value: XInterface => Unit): Self = StObject.set(x, "setDelegator", js.Any.fromFunction1(value))
     }
@@ -422,7 +422,7 @@ object uno {
       * @param Name name of value
       * @returns value
       */
-    def getValueByName(Name: String): js.Any
+    def getValueByName(Name: String): Any
   }
   object XComponentContext {
     
@@ -430,8 +430,8 @@ object uno {
       ServiceManager: XMultiComponentFactory,
       acquire: () => Unit,
       getServiceManager: () => XMultiComponentFactory,
-      getValueByName: String => js.Any,
-      queryInterface: `type` => js.Any,
+      getValueByName: String => Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XComponentContext = {
       val __obj = js.Dynamic.literal(ServiceManager = ServiceManager.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getServiceManager = js.Any.fromFunction0(getServiceManager), getValueByName = js.Any.fromFunction1(getValueByName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -442,7 +442,7 @@ object uno {
       
       inline def setGetServiceManager(value: () => XMultiComponentFactory): Self = StObject.set(x, "getServiceManager", js.Any.fromFunction0(value))
       
-      inline def setGetValueByName(value: String => js.Any): Self = StObject.set(x, "getValueByName", js.Any.fromFunction1(value))
+      inline def setGetValueByName(value: String => Any): Self = StObject.set(x, "getValueByName", js.Any.fromFunction1(value))
       
       inline def setServiceManager(value: XMultiComponentFactory): Self = StObject.set(x, "ServiceManager", value.asInstanceOf[js.Any])
     }
@@ -462,14 +462,14 @@ object uno {
       * @param Name name of value
       * @returns value
       */
-    def getValueByName(Name: String): js.Any
+    def getValueByName(Name: String): Any
   }
   object XCurrentContext {
     
     inline def apply(
       acquire: () => Unit,
-      getValueByName: String => js.Any,
-      queryInterface: `type` => js.Any,
+      getValueByName: String => Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XCurrentContext = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getValueByName = js.Any.fromFunction1(getValueByName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -478,7 +478,7 @@ object uno {
     
     extension [Self <: XCurrentContext](x: Self) {
       
-      inline def setGetValueByName(value: String => js.Any): Self = StObject.set(x, "getValueByName", js.Any.fromFunction1(value))
+      inline def setGetValueByName(value: String => Any): Self = StObject.set(x, "getValueByName", js.Any.fromFunction1(value))
     }
   }
   
@@ -540,7 +540,7 @@ object uno {
       * @param aType a UNO interface type, for which an object reference shall be obtained.
       * @returns an interface reference in case the requested interface is supported by the object, a void any otherwise.
       */
-    def queryInterface(aType: `type`): js.Any
+    def queryInterface(aType: `type`): Any
     
     /**
       * decreases the reference counter by one.
@@ -553,7 +553,7 @@ object uno {
   }
   object XInterface {
     
-    inline def apply(acquire: () => Unit, queryInterface: `type` => js.Any, release: () => Unit): XInterface = {
+    inline def apply(acquire: () => Unit, queryInterface: `type` => Any, release: () => Unit): XInterface = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
       __obj.asInstanceOf[XInterface]
     }
@@ -562,7 +562,7 @@ object uno {
       
       inline def setAcquire(value: () => Unit): Self = StObject.set(x, "acquire", js.Any.fromFunction0(value))
       
-      inline def setQueryInterface(value: `type` => js.Any): Self = StObject.set(x, "queryInterface", js.Any.fromFunction1(value))
+      inline def setQueryInterface(value: `type` => Any): Self = StObject.set(x, "queryInterface", js.Any.fromFunction1(value))
       
       inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
     }
@@ -595,7 +595,7 @@ object uno {
     inline def apply(
       acquire: () => Unit,
       getRegisteredObject: String => XInterface,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       registerObject: (String, XInterface) => Unit,
       release: () => Unit,
       revokeObject: String => Unit
@@ -632,7 +632,7 @@ object uno {
   }
   object XReference {
     
-    inline def apply(acquire: () => Unit, dispose: () => Unit, queryInterface: `type` => js.Any, release: () => Unit): XReference = {
+    inline def apply(acquire: () => Unit, dispose: () => Unit, queryInterface: `type` => Any, release: () => Unit): XReference = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), dispose = js.Any.fromFunction0(dispose), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
       __obj.asInstanceOf[XReference]
     }
@@ -657,7 +657,7 @@ object uno {
     
     inline def apply(
       acquire: () => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       releaseOnNotification: () => Boolean
     ): XUnloadingPreference = {
@@ -711,7 +711,7 @@ object uno {
     inline def apply(
       acquire: () => Unit,
       queryAdapter: () => XAdapter,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XWeak = {
       val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryAdapter = js.Any.fromFunction0(queryAdapter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

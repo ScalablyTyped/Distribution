@@ -9,7 +9,7 @@ object nodeCryptoMod {
   
   @JSImport("google-auth-library/build/src/crypto/node/crypto", "NodeCrypto")
   @js.native
-  class NodeCrypto ()
+  open class NodeCrypto ()
     extends StObject
        with Crypto
 }

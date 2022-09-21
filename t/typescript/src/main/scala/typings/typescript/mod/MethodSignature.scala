@@ -14,12 +14,16 @@ trait MethodSignature
   extends StObject
      with SignatureDeclarationBase
      with HasJSDoc
+     with HasModifiers
      with SignatureDeclaration {
   
-  var _typeElementBrand: js.Any = js.native
+  var _typeElementBrand: Any = js.native
   
   @JSName("kind")
   val kind_MethodSignature: typings.typescript.mod.SyntaxKind.MethodSignature = js.native
+  
+  @JSName("modifiers")
+  val modifiers_MethodSignature: js.UndefOr[NodeArray[Modifier]] = js.native
   
   @JSName("name")
   val name_MethodSignature: PropertyName = js.native

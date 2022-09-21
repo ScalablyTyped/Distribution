@@ -204,7 +204,7 @@ object pagerConfigurationMod {
     extension [Self <: PagerConfiguration[?], TElement](x: Self & PagerConfiguration[TElement]) {
       
       inline def setAjaxError(
-        value: (/* config */ TablesorterConfigurationStore[TElement], /* request */ jqXHR[js.Any], /* ajaxSettings */ AjaxSettings[js.Any], /* thrownError */ String) => String
+        value: (/* config */ TablesorterConfigurationStore[TElement], /* request */ jqXHR[Any], /* ajaxSettings */ AjaxSettings[Any], /* thrownError */ String) => String
       ): Self = StObject.set(x, "ajaxError", js.Any.fromFunction4(value))
       
       inline def setAjaxErrorUndefined: Self = StObject.set(x, "ajaxError", js.undefined)
@@ -214,11 +214,7 @@ object pagerConfigurationMod {
       inline def setAjaxObjectUndefined: Self = StObject.set(x, "ajaxObject", js.undefined)
       
       inline def setAjaxProcessing(
-        value: (/* data */ js.Any, TElement, /* request */ jqXHR[js.Any]) => PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[
-              Double, 
-              JQuery[HTMLElement] | js.Array[js.Array[js.Any]], 
-              js.UndefOr[js.Array[String]]
-            ])
+        value: (/* data */ Any, TElement, /* request */ jqXHR[Any]) => PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[Double, JQuery[HTMLElement] | js.Array[js.Array[Any]], js.UndefOr[js.Array[String]]])
       ): Self = StObject.set(x, "ajaxProcessing", js.Any.fromFunction3(value))
       
       inline def setAjaxProcessingUndefined: Self = StObject.set(x, "ajaxProcessing", js.undefined)
@@ -285,7 +281,7 @@ object pagerConfigurationMod {
       
       inline def setOutput(value: String | PagerOutputProcessor[TElement]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      inline def setOutputFunction2(value: (TElement, /* pager */ js.Any) => String): Self = StObject.set(x, "output", js.Any.fromFunction2(value))
+      inline def setOutputFunction2(value: (TElement, /* pager */ Any) => String): Self = StObject.set(x, "output", js.Any.fromFunction2(value))
       
       inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       

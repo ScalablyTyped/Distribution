@@ -1,8 +1,7 @@
 package typings.npmRegistryFetch
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.node.NodeJS.ReadWriteStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.Agent
 import typings.node.streamMod.Stream
 import typings.nodeFetch.mod.Response
@@ -38,8 +37,8 @@ object mod {
       * response as JSON, and returns it as its final value. This is a utility
       * shorthand for `fetch(url).then(res => res.json())`.
       */
-    inline def apply(url: String): js.Promise[Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Record[String, js.Any]]]
-    inline def apply(url: String, opts: Options): js.Promise[Record[String, js.Any]] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Record[String, js.Any]]]
+    inline def apply(url: String): js.Promise[Record[String, Any]] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Record[String, Any]]]
+    inline def apply(url: String, opts: Options): js.Promise[Record[String, Any]] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Record[String, Any]]]
     
     @JSImport("npm-registry-fetch", "json")
     @js.native
@@ -53,8 +52,8 @@ object mod {
       * stream (unlike default `JSONStreams`), has a valid `Symbol.asyncIterator`
       * implementation.
       */
-    inline def stream(url: String, jsonPath: String): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(url.asInstanceOf[js.Any], jsonPath.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
-    inline def stream(url: String, jsonPath: String, opts: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(url.asInstanceOf[js.Any], jsonPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+    inline def stream(url: String, jsonPath: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(url.asInstanceOf[js.Any], jsonPath.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def stream(url: String, jsonPath: String, opts: Options): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stream")(url.asInstanceOf[js.Any], jsonPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   inline def pickRegistry(spec: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pickRegistry")(spec.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -215,7 +214,7 @@ object mod {
     */
   trait FetchOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     /**
       * An `Agent` instance to be shared across requests. This allows
@@ -379,7 +378,7 @@ object mod {
       * `JSONStream.parse`, and can be used to transform stream data before
       * output.
       */
-    var mapJSON: js.UndefOr[js.Function1[/* v */ js.Any, js.Any]] = js.undefined
+    var mapJSON: js.UndefOr[js.Function1[/* v */ Any, Any]] = js.undefined
     
     /**
       * Maximum number of sockets to keep open during requests. Has no effect
@@ -530,7 +529,7 @@ object mod {
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value*))
       
       inline def setCache(value: String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -576,7 +575,7 @@ object mod {
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      inline def setMapJSON(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "mapJSON", js.Any.fromFunction1(value))
+      inline def setMapJSON(value: /* v */ Any => Any): Self = StObject.set(x, "mapJSON", js.Any.fromFunction1(value))
       
       inline def setMapJSONUndefined: Self = StObject.set(x, "mapJSON", js.undefined)
       

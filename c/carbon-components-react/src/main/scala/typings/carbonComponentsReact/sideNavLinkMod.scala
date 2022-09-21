@@ -34,7 +34,7 @@ object sideNavLinkMod {
   
   trait SideNavLinkPropsBase
     extends StObject
-       with RenderIconProps[js.Any]
+       with RenderIconProps[Any]
        with RequiresChildrenProps[String]
        with SideNavSharedProps
        with SideNavSizingProps {

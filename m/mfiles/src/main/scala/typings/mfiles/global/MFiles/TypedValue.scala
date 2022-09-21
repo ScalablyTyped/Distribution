@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MFiles.TypedValue")
 @js.native
-class TypedValue ()
+open class TypedValue ()
   extends StObject
      with ITypedValue {
   
@@ -73,7 +73,7 @@ class TypedValue ()
   override def Serialize(): js.Array[Double] = js.native
   
   /* CompleteClass */
-  override def SetValue(DataType: MFDataType, Value: js.Any): Unit = js.native
+  override def SetValue(DataType: MFDataType, Value: Any): Unit = js.native
   
   /* CompleteClass */
   override def SetValueToLookup(Lookup: ILookup): Unit = js.native
@@ -88,5 +88,5 @@ class TypedValue ()
   override def Unserialize(Bytes: js.Array[Double], ReadFromOldSerializingFormat: Boolean): Unit = js.native
   
   /* CompleteClass */
-  var Value: js.Any = js.native
+  var Value: Any = js.native
 }

@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DensifyParametersConstructor
   extends StObject
-     with Instantiable0[DensifyParameters]
+     with /**
+  * Input parameters for the densify() method on the GeometryService.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DensifyParameters.html)
+  */
+Instantiable0[DensifyParameters]
      with Instantiable1[/* properties */ DensifyParametersProperties, DensifyParameters]

@@ -1,0 +1,17 @@
+package typings.typedoc.modelsMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("typedoc/dist/lib/models", "DeclarationReflection")
+@js.native
+open class DeclarationReflection protected ()
+  extends typings.typedoc.modelsReflectionsMod.DeclarationReflection {
+  def this(name: String, kind: typings.typedoc.kindMod.ReflectionKind) = this()
+  def this(
+    name: String,
+    kind: typings.typedoc.kindMod.ReflectionKind,
+    parent: typings.typedoc.abstractMod.Reflection
+  ) = this()
+}

@@ -16,5 +16,5 @@ trait JQuery extends StObject {
     *            the options for the event (these are event-specific)
     */
   def simulate(`type`: String): Unit = js.native
-  def simulate(`type`: String, options: js.Any): Unit = js.native
+  def simulate(`type`: String, options: Any): Unit = js.native
 }

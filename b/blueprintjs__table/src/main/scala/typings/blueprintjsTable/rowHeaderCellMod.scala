@@ -11,10 +11,10 @@ object rowHeaderCellMod {
   
   @JSImport("@blueprintjs/table/lib/esm/headers/rowHeaderCell", "RowHeaderCell")
   @js.native
-  class RowHeaderCell protected ()
+  open class RowHeaderCell protected ()
     extends AbstractPureComponent2[IRowHeaderCellProps, js.Object, js.Object] {
     def this(props: IRowHeaderCellProps) = this()
-    def this(props: IRowHeaderCellProps, context: js.Any) = this()
+    def this(props: IRowHeaderCellProps, context: Any) = this()
   }
   
   trait IRowHeaderCellProps
@@ -65,4 +65,6 @@ object rowHeaderCellMod {
       inline def setNameRendererUndefined: Self = StObject.set(x, "nameRenderer", js.undefined)
     }
   }
+  
+  type RowHeaderCellProps = IRowHeaderCellProps
 }

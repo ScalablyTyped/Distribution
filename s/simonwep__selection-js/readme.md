@@ -1,7 +1,7 @@
 
 # Scala.js typings for simonwep__selection-js
 
-Typings are for version 1.7.1
+Typings are for version 2.1.2
 
 ## Library description:
 Simple, lightweight and modern library library for making visual DOM Selections.
@@ -10,10 +10,10 @@ Simple, lightweight and modern library library for making visual DOM Selections.
 | ------------------ | :-------------: |
 | Full name          | @simonwep/selection-js |
 | Keywords           | selection, selecting, js-utility, user-selection, ui, user-interface, ui-library |
-| # releases         | 27 |
-| # dependents       | 2 |
-| # downloads        | 73484 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 13924.0 |
+| # stars            | 1646.0 |
 
 ## Links
 - [Homepage](https://github.com/Simonwep/selection#readme)

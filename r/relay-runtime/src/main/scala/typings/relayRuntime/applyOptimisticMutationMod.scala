@@ -48,7 +48,7 @@ object applyOptimisticMutationMod {
       
       inline def setConfigsUndefined: Self = StObject.set(x, "configs", js.undefined)
       
-      inline def setConfigsVarargs(value: DeclarativeMutationConfig*): Self = StObject.set(x, "configs", js.Array(value :_*))
+      inline def setConfigsVarargs(value: DeclarativeMutationConfig*): Self = StObject.set(x, "configs", js.Array(value*))
       
       inline def setMutation(value: GraphQLTaggedNode): Self = StObject.set(x, "mutation", value.asInstanceOf[js.Any])
       

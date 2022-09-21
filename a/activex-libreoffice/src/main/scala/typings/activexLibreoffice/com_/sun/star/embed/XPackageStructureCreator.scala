@@ -25,7 +25,7 @@ object XPackageStructureCreator {
   inline def apply(
     acquire: () => Unit,
     convertToPackage: (String, XOutputStream) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XPackageStructureCreator = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), convertToPackage = js.Any.fromFunction2(convertToPackage), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

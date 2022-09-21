@@ -9,7 +9,7 @@ trait GetImportResponse extends StObject {
   /**
     * A timestamp for the date and time that the import job was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.undefined
+  var createdDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A string that describes why an import job failed to complete.
@@ -50,7 +50,7 @@ object GetImportResponse {
   
   extension [Self <: GetImportResponse](x: Self) {
     
-    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
@@ -58,7 +58,7 @@ object GetImportResponse {
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
-    inline def setFailureReasonVarargs(value: String*): Self = StObject.set(x, "failureReason", js.Array(value :_*))
+    inline def setFailureReasonVarargs(value: String*): Self = StObject.set(x, "failureReason", js.Array(value*))
     
     inline def setImportId(value: String): Self = StObject.set(x, "importId", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,7 @@ trait QuerySource extends StObject {
   /** A short name or alias for the source. This value can be used with the 'source' operator. */
   var shortName: js.UndefOr[String] = js.undefined
   
-  /** Name of the source */
+  /** The name of the source */
   var source: js.UndefOr[Source] = js.undefined
 }
 object QuerySource {
@@ -35,7 +35,7 @@ object QuerySource {
     
     inline def setOperatorsUndefined: Self = StObject.set(x, "operators", js.undefined)
     
-    inline def setOperatorsVarargs(value: QueryOperator*): Self = StObject.set(x, "operators", js.Array(value :_*))
+    inline def setOperatorsVarargs(value: QueryOperator*): Self = StObject.set(x, "operators", js.Array(value*))
     
     inline def setShortName(value: String): Self = StObject.set(x, "shortName", value.asInstanceOf[js.Any])
     

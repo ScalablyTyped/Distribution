@@ -10,10 +10,10 @@ Create and load persistent GitHub authentication tokens for command-line apps
 | ------------------ | :-------------: |
 | Full name          | ghauth |
 | Keywords           | github, auth, frozenpizza |
-| # releases         | 4 |
-| # dependents       | 70 |
-| # downloads        | 588587 |
-| # stars            | 5 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 60597.666666666664 |
+| # stars            | 182.0 |
 
 ## Links
 - [Homepage](https://github.com/rvagg/ghauth)

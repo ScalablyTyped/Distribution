@@ -1,6 +1,5 @@
 package typings.railsActivestorage
 
-import typings.std.Error
 import typings.std.File
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
@@ -15,11 +14,11 @@ object mod {
   
   @JSImport("@rails/activestorage", "DirectUpload")
   @js.native
-  class DirectUpload protected () extends StObject {
+  open class DirectUpload protected () extends StObject {
     def this(file: File, url: String) = this()
     def this(file: File, url: String, delegate: DirectUploadDelegate) = this()
     
-    def create(callback: js.Function2[/* error */ Error, /* blob */ Blob, Unit]): Unit = js.native
+    def create(callback: js.Function2[/* error */ js.Error, /* blob */ Blob, Unit]): Unit = js.native
     
     var file: File = js.native
     

@@ -45,7 +45,7 @@ object SketchUpdateEvent {
     
     inline def setGraphics(value: js.Array[Graphic]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
     
-    inline def setGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "graphics", js.Array(value :_*))
+    inline def setGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "graphics", js.Array(value*))
     
     inline def setState(value: start | active | complete): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

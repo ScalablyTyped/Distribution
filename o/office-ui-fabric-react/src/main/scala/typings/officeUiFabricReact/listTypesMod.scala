@@ -146,7 +146,7 @@ object listTypesMod {
       
       inline def setPages(value: js.Array[IPage[T]]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      inline def setPagesVarargs(value: IPage[T]*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: IPage[T]*): Self = StObject.set(x, "pages", js.Array(value*))
       
       inline def setRootRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
       
@@ -201,11 +201,11 @@ object listTypesMod {
       
       inline def setPageElements(value: js.Array[Element]): Self = StObject.set(x, "pageElements", value.asInstanceOf[js.Any])
       
-      inline def setPageElementsVarargs(value: Element*): Self = StObject.set(x, "pageElements", js.Array(value :_*))
+      inline def setPageElementsVarargs(value: Element*): Self = StObject.set(x, "pageElements", js.Array(value*))
       
       inline def setPages(value: js.Array[IPage[T]]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      inline def setPagesVarargs(value: IPage[T]*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: IPage[T]*): Self = StObject.set(x, "pages", js.Array(value*))
       
       inline def setSurfaceRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "surfaceRef", value.asInstanceOf[js.Any])
       
@@ -270,7 +270,7 @@ object listTypesMod {
       * Method called by the list to derive the page style object. For spacer pages, the list will derive
       * the height and passed in heights will be ignored.
       */
-    var getPageStyle: js.UndefOr[js.Function1[/* page */ IPage[T], js.Any]] = js.undefined
+    var getPageStyle: js.UndefOr[js.Function1[/* page */ IPage[T], Any]] = js.undefined
     
     /**
       * Whether to disable scroll state updates. This causes the isScrolling arg in onRenderCell to always be undefined.
@@ -356,6 +356,13 @@ object listTypesMod {
       */
     var renderedWindowsBehind: js.UndefOr[Double] = js.undefined
     
+    /**
+      * The role to assign to the list root element.
+      * Use this to override the default assignment of 'list' to the root and 'listitem' to the cells.
+      */
+    @JSName("role")
+    var role_IListProps: js.UndefOr[String] = js.undefined
+    
     /** Index in items array to start rendering from. Defaults to 0. */
     var startIndex: js.UndefOr[Double] = js.undefined
     
@@ -406,7 +413,7 @@ object listTypesMod {
       
       inline def setGetPageSpecificationUndefined: Self = StObject.set(x, "getPageSpecification", js.undefined)
       
-      inline def setGetPageStyle(value: /* page */ IPage[T] => js.Any): Self = StObject.set(x, "getPageStyle", js.Any.fromFunction1(value))
+      inline def setGetPageStyle(value: /* page */ IPage[T] => Any): Self = StObject.set(x, "getPageStyle", js.Any.fromFunction1(value))
       
       inline def setGetPageStyleUndefined: Self = StObject.set(x, "getPageStyle", js.undefined)
       
@@ -418,7 +425,7 @@ object listTypesMod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setOnPageAdded(value: /* page */ IPage[T] => Unit): Self = StObject.set(x, "onPageAdded", js.Any.fromFunction1(value))
       
@@ -474,6 +481,10 @@ object listTypesMod {
       
       inline def setRenderedWindowsBehindUndefined: Self = StObject.set(x, "renderedWindowsBehind", js.undefined)
       
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      
       inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
       
       inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
@@ -490,7 +501,7 @@ object listTypesMod {
   
   trait IPage[T] extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var height: Double
     
@@ -526,7 +537,7 @@ object listTypesMod {
     
     extension [Self <: IPage[?], T](x: Self & IPage[T]) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -546,7 +557,7 @@ object listTypesMod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -567,6 +578,12 @@ object listTypesMod {
       * The allocation data for the page.
       */
     var page: IPage[T]
+    
+    /**
+      * The role being assigned to the rendered page element by the list.
+      */
+    @JSName("role")
+    var role_IPageProps: js.UndefOr[String] = js.undefined
   }
   object IPageProps {
     
@@ -578,6 +595,10 @@ object listTypesMod {
     extension [Self <: IPageProps[?], T](x: Self & IPageProps[T]) {
       
       inline def setPage(value: IPage[T]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     }
   }
   
@@ -586,7 +607,7 @@ object listTypesMod {
     /**
       * Data to pass through to the page when rendering.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * The estimated pixel height of the page.
@@ -612,7 +633,7 @@ object listTypesMod {
     
     extension [Self <: IPageSpecification](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       

@@ -16,12 +16,16 @@ trait SketchUpdateUpdateOptions
   /**
     * Indicates if the `rotation` operation will be enabled when updating graphics.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update)
     */
   var enableRotation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if the `scale` operation will be enabled when updating graphics.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update)
     */
@@ -30,12 +34,16 @@ trait SketchUpdateUpdateOptions
   /**
     * Indicates if z-values can be modified when updating the graphic.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update)
     */
   var enableZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether more than one selection can be made at once.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update)
     */
@@ -50,6 +58,8 @@ trait SketchUpdateUpdateOptions
   
   /**
     * Indicates if the graphic being updated can be toggled between `transform` and `reshape` update options.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update)
     */

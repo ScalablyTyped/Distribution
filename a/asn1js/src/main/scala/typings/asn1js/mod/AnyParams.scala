@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* Inlined std.Partial<asn1js.asn1js.IAny> */
 trait AnyParams extends StObject {
   
   var name: js.UndefOr[String] = js.undefined

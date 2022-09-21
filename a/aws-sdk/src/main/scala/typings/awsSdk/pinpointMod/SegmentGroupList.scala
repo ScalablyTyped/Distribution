@@ -29,7 +29,7 @@ object SegmentGroupList {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: SegmentGroup*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: SegmentGroup*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setInclude(value: Include): Self = StObject.set(x, "Include", value.asInstanceOf[js.Any])
     

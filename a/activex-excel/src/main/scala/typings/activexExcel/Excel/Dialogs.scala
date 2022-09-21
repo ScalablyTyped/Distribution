@@ -17,7 +17,7 @@ trait Dialogs extends StObject {
   
   def Item(Index: XlBuiltInDialog): Dialog = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Default(Index: XlBuiltInDialog): Dialog = js.native
 }

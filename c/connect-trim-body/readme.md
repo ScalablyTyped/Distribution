@@ -10,10 +10,10 @@ Connect/Express middleware to trim all parameters in request body. Works recursi
 | ------------------ | :-------------: |
 | Full name          | connect-trim-body |
 | Keywords           | trim, sanitize, body, connect, express |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1712 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 56.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/samora/connect-trim-body)

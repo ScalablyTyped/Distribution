@@ -14,7 +14,7 @@ trait ServerInfoProperties extends StObject {
   var adminTokenServiceUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * Version of the ArcGIS Server deployed on this server.
+    * Version of the ArcGIS Server or Portal deployed on the server.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#currentVersion)
     */
@@ -54,6 +54,13 @@ trait ServerInfoProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#tokenServiceUrl)
     */
   var tokenServiceUrl: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Indicates whether the server is configured to work with web tier authentication.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-ServerInfo.html#webTierAuth)
+    */
+  var webTierAuth: js.UndefOr[Boolean] = js.undefined
 }
 object ServerInfoProperties {
   
@@ -91,5 +98,9 @@ object ServerInfoProperties {
     inline def setTokenServiceUrl(value: String): Self = StObject.set(x, "tokenServiceUrl", value.asInstanceOf[js.Any])
     
     inline def setTokenServiceUrlUndefined: Self = StObject.set(x, "tokenServiceUrl", js.undefined)
+    
+    inline def setWebTierAuth(value: Boolean): Self = StObject.set(x, "webTierAuth", value.asInstanceOf[js.Any])
+    
+    inline def setWebTierAuthUndefined: Self = StObject.set(x, "webTierAuth", js.undefined)
   }
 }

@@ -10,13 +10,13 @@ Testing with karma using browserstack following open-wc recommendations
 | ------------------ | :-------------: |
 | Full name          | @open-wc/testing-karma-bs |
 | Keywords           | testing, karma, browserstack, config |
-| # releases         | 206 |
-| # dependents       | 0 |
-| # downloads        | 95973 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 2855.0 |
+| # stars            | 1836.0 |
 
 ## Links
-- [Homepage](https://github.com/open-wc/open-wc/tree/master/packages/testing-karma-bs)
+- [Homepage](https://github.com/open-wc/open-wc#readme)
 - [Bugs](https://github.com/open-wc/open-wc/issues)
 - [Repository](https://github.com/open-wc/open-wc)
 - [Npm](https://www.npmjs.com/package/%40open-wc%2Ftesting-karma-bs)

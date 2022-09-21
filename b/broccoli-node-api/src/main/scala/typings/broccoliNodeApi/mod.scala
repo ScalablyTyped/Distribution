@@ -25,7 +25,7 @@ object mod {
       
       inline def setChangedNodes(value: js.Array[Boolean]): Self = StObject.set(x, "changedNodes", value.asInstanceOf[js.Any])
       
-      inline def setChangedNodesVarargs(value: Boolean*): Self = StObject.set(x, "changedNodes", js.Array(value :_*))
+      inline def setChangedNodesVarargs(value: Boolean*): Self = StObject.set(x, "changedNodes", js.Array(value*))
     }
   }
   
@@ -373,7 +373,7 @@ object mod {
       
       inline def setInputNodes(value: js.Array[InputNode]): Self = StObject.set(x, "inputNodes", value.asInstanceOf[js.Any])
       
-      inline def setInputNodesVarargs(value: InputNode*): Self = StObject.set(x, "inputNodes", js.Array(value :_*))
+      inline def setInputNodesVarargs(value: InputNode*): Self = StObject.set(x, "inputNodes", js.Array(value*))
       
       inline def setNeedsCache(value: Boolean): Self = StObject.set(x, "needsCache", value.asInstanceOf[js.Any])
       

@@ -6,18 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.ReflectionType, 'type'> */
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ trait ReflectionType
-  extends StObject
-     with SomeType {
+trait ReflectionType extends StObject {
   
-  var declaration: js.UndefOr[ModelToObject[typings.typedoc.reflectionsDeclarationMod.DeclarationReflection]] = js.undefined
+  var declaration: js.UndefOr[ModelToObject[typings.typedoc.declarationMod.DeclarationReflection]] = js.undefined
   
-  var `type`: (ModelToObject[/* "reflection" */ String]) | (/* "reflection" */ String)
+  var `type`: ToSerialized[/* "reflection" */ String]
 }
 object ReflectionType {
   
-  inline def apply(`type`: (ModelToObject[/* "reflection" */ String]) | (/* "reflection" */ String)): ReflectionType = {
+  inline def apply(`type`: ToSerialized[/* "reflection" */ String]): ReflectionType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReflectionType]
@@ -25,14 +22,14 @@ object ReflectionType {
   
   extension [Self <: ReflectionType](x: Self) {
     
-    inline def setDeclaration(value: ModelToObject[typings.typedoc.reflectionsDeclarationMod.DeclarationReflection]): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
+    inline def setDeclaration(value: ModelToObject[typings.typedoc.declarationMod.DeclarationReflection]): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     
     inline def setDeclarationUndefined: Self = StObject.set(x, "declaration", js.undefined)
     
-    inline def setDeclarationVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "declaration", js.Array(value :_*))
+    inline def setDeclarationVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "declaration", js.Array(value*))
     
-    inline def setType(value: (ModelToObject[/* "reflection" */ String]) | (/* "reflection" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ToSerialized[/* "reflection" */ String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

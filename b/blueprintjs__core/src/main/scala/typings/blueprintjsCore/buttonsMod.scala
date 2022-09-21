@@ -1,10 +1,11 @@
 package typings.blueprintjsCore
 
 import typings.blueprintjsCore.abstractButtonMod.AbstractButton
-import typings.blueprintjsCore.abstractButtonMod.IButtonProps
-import typings.blueprintjsCore.refsMod.IRefObject
+import typings.blueprintjsCore.abstractButtonMod.AnchorButtonProps
+import typings.blueprintjsCore.abstractButtonMod.ButtonProps
 import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.ButtonHTMLAttributes
+import typings.react.mod.Ref
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
@@ -15,14 +16,20 @@ object buttonsMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/button/buttons", "AnchorButton")
   @js.native
-  class AnchorButton protected () extends AbstractButton[AnchorHTMLAttributes[HTMLAnchorElement]] {
-    def this(props: IButtonProps & AnchorHTMLAttributes[HTMLAnchorElement]) = this()
-    def this(props: IButtonProps & AnchorHTMLAttributes[HTMLAnchorElement], context: js.Any) = this()
+  open class AnchorButton protected () extends AbstractButton[HTMLAnchorElement] {
+    def this(props: ButtonProps[HTMLAnchorElement] & (AnchorHTMLAttributes[HTMLAnchorElement] | ButtonHTMLAttributes[HTMLButtonElement])) = this()
+    def this(
+      props: ButtonProps[HTMLAnchorElement] & (AnchorHTMLAttributes[HTMLAnchorElement] | ButtonHTMLAttributes[HTMLButtonElement]),
+      context: Any
+    ) = this()
     
-    /* protected */ @JSName("buttonRef")
-    var buttonRef_AnchorButton: HTMLAnchorElement | IRefObject[HTMLAnchorElement] | Null = js.native
+    @JSName("buttonRef")
+    var buttonRef_AnchorButton: HTMLAnchorElement | Null = js.native
     
-    /* protected */ var handleRef: IRefObject[HTMLAnchorElement] | (js.Function1[/* ref */ HTMLAnchorElement | Null, Unit]) = js.native
+    @JSName("componentDidUpdate")
+    def componentDidUpdate_MAnchorButton(prevProps: AnchorButtonProps): Unit = js.native
+    
+    /* protected */ var handleRef: Ref[HTMLAnchorElement] = js.native
   }
   /* static members */
   object AnchorButton {
@@ -39,14 +46,20 @@ object buttonsMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/button/buttons", "Button")
   @js.native
-  class Button protected () extends AbstractButton[ButtonHTMLAttributes[HTMLButtonElement]] {
-    def this(props: IButtonProps & ButtonHTMLAttributes[HTMLButtonElement]) = this()
-    def this(props: IButtonProps & ButtonHTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+  open class Button protected () extends AbstractButton[HTMLButtonElement] {
+    def this(props: ButtonProps[HTMLButtonElement] & (AnchorHTMLAttributes[HTMLAnchorElement] | ButtonHTMLAttributes[HTMLButtonElement])) = this()
+    def this(
+      props: ButtonProps[HTMLButtonElement] & (AnchorHTMLAttributes[HTMLAnchorElement] | ButtonHTMLAttributes[HTMLButtonElement]),
+      context: Any
+    ) = this()
     
-    /* protected */ @JSName("buttonRef")
-    var buttonRef_Button: HTMLButtonElement | IRefObject[HTMLButtonElement] | Null = js.native
+    @JSName("buttonRef")
+    var buttonRef_Button: HTMLButtonElement | Null = js.native
     
-    /* protected */ var handleRef: IRefObject[HTMLButtonElement] | (js.Function1[/* ref */ HTMLButtonElement | Null, Unit]) = js.native
+    @JSName("componentDidUpdate")
+    def componentDidUpdate_MButton(prevProps: ButtonProps[HTMLButtonElement]): Unit = js.native
+    
+    /* protected */ var handleRef: Ref[HTMLButtonElement] = js.native
   }
   /* static members */
   object Button {

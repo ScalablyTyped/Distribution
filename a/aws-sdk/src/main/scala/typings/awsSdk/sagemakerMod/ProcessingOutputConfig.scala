@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProcessingOutputConfig extends StObject {
   
   /**
-    * The AWS Key Management Service (AWS KMS) key that Amazon SageMaker uses to encrypt the processing job output. KmsKeyId can be an ID of a KMS key, ARN of a KMS key, alias of a KMS key, or alias of a KMS key. The KmsKeyId is applied to all outputs.
+    * The Amazon Web Services Key Management Service (Amazon Web Services KMS) key that Amazon SageMaker uses to encrypt the processing job output. KmsKeyId can be an ID of a KMS key, ARN of a KMS key, alias of a KMS key, or alias of a KMS key. The KmsKeyId is applied to all outputs.
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.undefined
   
   /**
-    * Output configuration information for a processing job.
+    * An array of outputs configuring the data to upload from the processing container.
     */
   var Outputs: ProcessingOutputs
 }
@@ -31,6 +31,6 @@ object ProcessingOutputConfig {
     
     inline def setOutputs(value: ProcessingOutputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
-    inline def setOutputsVarargs(value: ProcessingOutput*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: ProcessingOutput*): Self = StObject.set(x, "Outputs", js.Array(value*))
   }
 }

@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Program
   extends StObject
-     with BaseNode
-     with Node {
+     with BaseNode {
   
   var body: js.Array[Directive | Statement | ModuleDeclaration]
   
@@ -32,13 +31,13 @@ object Program {
     
     inline def setBody(value: js.Array[Directive | Statement | ModuleDeclaration]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setBodyVarargs(value: (Directive | Statement | ModuleDeclaration)*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: (Directive | Statement | ModuleDeclaration)*): Self = StObject.set(x, "body", js.Array(value*))
     
     inline def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value*))
     
     inline def setSourceType(value: script | module): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     

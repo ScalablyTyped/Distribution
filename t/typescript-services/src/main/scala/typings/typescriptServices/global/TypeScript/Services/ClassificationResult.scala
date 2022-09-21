@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.ClassificationResult")
 @js.native
-class ClassificationResult ()
+open class ClassificationResult ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.ClassificationResult {
   

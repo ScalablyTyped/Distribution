@@ -212,7 +212,7 @@ object RaphaelShapeDescriptor {
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    inline def setTransformVarargs(value: RaphaelTransformSegment*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: RaphaelTransformSegment*): Self = StObject.set(x, "transform", js.Array(value*))
     
     inline def setType(value: RaphaelShapeType | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

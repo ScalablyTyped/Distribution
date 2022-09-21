@@ -42,34 +42,34 @@ object BTN {
     
     inline def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     
-    inline def setAUDVarargs(value: String*): Self = StObject.set(x, "AUD", js.Array(value :_*))
+    inline def setAUDVarargs(value: String*): Self = StObject.set(x, "AUD", js.Array(value*))
     
     inline def setBTN(value: js.Array[String]): Self = StObject.set(x, "BTN", value.asInstanceOf[js.Any])
     
-    inline def setBTNVarargs(value: String*): Self = StObject.set(x, "BTN", js.Array(value :_*))
+    inline def setBTNVarargs(value: String*): Self = StObject.set(x, "BTN", js.Array(value*))
     
     inline def setILS(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "ILS", value.asInstanceOf[js.Any])
     
-    inline def setILSVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "ILS", js.Array(value :_*))
+    inline def setILSVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "ILS", js.Array(value*))
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value*))
     
     inline def setKRW(value: js.Array[String]): Self = StObject.set(x, "KRW", value.asInstanceOf[js.Any])
     
-    inline def setKRWVarargs(value: String*): Self = StObject.set(x, "KRW", js.Array(value :_*))
+    inline def setKRWVarargs(value: String*): Self = StObject.set(x, "KRW", js.Array(value*))
     
     inline def setTHB(value: js.Array[String]): Self = StObject.set(x, "THB", value.asInstanceOf[js.Any])
     
-    inline def setTHBVarargs(value: String*): Self = StObject.set(x, "THB", js.Array(value :_*))
+    inline def setTHBVarargs(value: String*): Self = StObject.set(x, "THB", js.Array(value*))
     
     inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value*))
     
     inline def setXAF(value: js.Array[scala.Nothing]): Self = StObject.set(x, "XAF", value.asInstanceOf[js.Any])
     
-    inline def setXAFVarargs(value: scala.Nothing*): Self = StObject.set(x, "XAF", js.Array(value :_*))
+    inline def setXAFVarargs(value: scala.Nothing*): Self = StObject.set(x, "XAF", js.Array(value*))
   }
 }

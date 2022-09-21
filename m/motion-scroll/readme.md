@@ -10,10 +10,10 @@ scroll to an element or a position with easing
 | ------------------ | :-------------: |
 | Full name          | motion-scroll |
 | Keywords           | scroll, element, easing, window |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 7788 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3249.6666666666665 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/ninjabonsai/motion-scroll#readme)

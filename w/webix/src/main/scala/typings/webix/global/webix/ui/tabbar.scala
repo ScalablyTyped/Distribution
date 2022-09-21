@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.tabbar because var conflicts: $allowsClear, $compareValue_Original, $height, $prepareValue_Original, $renderIcon_Original, $render_Original, $scope, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.tabbar")
+- typings.webix.webix.ui.tabbar because var conflicts: $allowsClear, $compareValue_Original, $height, $prepareValue_Original, $renderIcon_Original, $render_Original, $scope, $setNode, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.tabbar")
 @js.native
-class tabbar ()
+open class tabbar ()
   extends typings.webix.mod.ui.tabbar

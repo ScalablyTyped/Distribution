@@ -4,6 +4,7 @@ import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.AriaAttributes
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
@@ -48,6 +49,7 @@ import typings.react.reactStrings.text
 import typings.react.reactStrings.url
 import typings.react.reactStrings.yes
 import typings.reactMdList.listItemChildrenMod.ListItemChildrenProps
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
@@ -144,6 +146,7 @@ object getListItemHeightMod {
       * This is configured by the `$rmd-list-item-disabled-opacity` variable.
       *
       * Note: This does nothing if the `disabled` prop is not enabled.
+      * @remarks \@since 2.4.3
       */
     var disabledOpacity: js.UndefOr[Boolean] = js.undefined
     
@@ -154,11 +157,11 @@ object getListItemHeightMod {
       *
       * Conversions:
       *
-      * - height !== "auto" -> height
-      * - secondaryText or left/right addon is media/media-large  -> "extra-large"
-      * - left/right addon is avatar -> "large"
-      * - left/right addon is icon -> "medium"
-      * - no addons and no secondary text -> "normal"
+      * - height !== "auto" -&gt; height
+      * - secondaryText or left/right addon is media/media-large  -&gt; "extra-large"
+      * - left/right addon is avatar -&gt; "large"
+      * - left/right addon is icon -&gt; "medium"
+      * - no addons and no secondary text -&gt; "normal"
       */
     var height: js.UndefOr[ListItemHeight] = js.undefined
     
@@ -166,7 +169,7 @@ object getListItemHeightMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -272,6 +275,7 @@ object getListItemHeightMod {
     // Keyboard Events
     var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLLIElement]] = js.undefined
     
+    /** @deprecated */
     var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLLIElement]] = js.undefined
     
     var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLLIElement]] = js.undefined
@@ -382,7 +386,7 @@ object getListItemHeightMod {
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -482,7 +486,7 @@ object getListItemHeightMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -512,7 +516,7 @@ object getListItemHeightMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -572,7 +576,7 @@ object getListItemHeightMod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLLIElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -672,7 +676,7 @@ object getListItemHeightMod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLLIElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLLIElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -888,7 +892,7 @@ object getListItemHeightMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       

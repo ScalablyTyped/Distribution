@@ -18,7 +18,7 @@ trait IButtonGroup
     * @param component Object
     */
   @JSName("onBeforeAdd")
-  var onBeforeAdd_IButtonGroup: js.UndefOr[js.Function1[/* component */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onBeforeAdd_IButtonGroup: js.UndefOr[js.Function1[/* component */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IButtonGroup {
   
@@ -37,7 +37,7 @@ object IButtonGroup {
     
     inline def setDefaultButtonUIUndefined: Self = StObject.set(x, "defaultButtonUI", js.undefined)
     
-    inline def setOnBeforeAdd(value: /* component */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onBeforeAdd", js.Any.fromFunction1(value))
+    inline def setOnBeforeAdd(value: /* component */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onBeforeAdd", js.Any.fromFunction1(value))
     
     inline def setOnBeforeAddUndefined: Self = StObject.set(x, "onBeforeAdd", js.undefined)
   }

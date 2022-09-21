@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents an icon set criteria for conditional formatting.
   *
-  * Represents an IconSet criteria for conditional formatting.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 trait IconSetConditionalFormatLoadOptions extends StObject {
@@ -19,33 +19,33 @@ trait IconSetConditionalFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * An array of criteria and icon sets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when set.
     *
-    * An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when set.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var criteria: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * If `true`, reverses the icon orders for the icon set. Note that this cannot be set if custom icons are used.
     *
-    * If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var reverseIconOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * If `true`, hides the values and only shows icons.
     *
-    * If true, hides the values and only shows icons.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var showIconOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * If set, displays the icon set option for the conditional format.
     *
-    * If set, displays the IconSet option for the conditional format.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var style: js.UndefOr[Boolean] = js.undefined

@@ -13,20 +13,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ResultanycontextReadonlyC extends StObject {
   
-  def array(): js.Array[js.Any] = js.native
-  def array(options: OnlyFirstError): js.Array[js.Any] = js.native
+  def array(): js.Array[Any] = js.native
+  def array(options: OnlyFirstError): js.Array[Any] = js.native
   
   var context: ReadonlyContext = js.native
   
-  /* private */ val errors: js.Any = js.native
+  /* private */ val errors: Any = js.native
   
   def formatWith[T2](formatter: ErrorFormatter[T2]): Result[T2] = js.native
   
-  /* private */ var formatter: js.Any = js.native
+  /* private */ var formatter: Any = js.native
   
   def isEmpty(): Boolean = js.native
   
-  def mapped(): Record[String, js.Any] = js.native
+  def mapped(): Record[String, Any] = js.native
   
   def `throw`(): Unit = js.native
 }

@@ -36,6 +36,8 @@ trait Ground
   /**
     * Indicates whether the instance has loaded.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#loaded)
     */
   val loaded: Boolean = js.native
@@ -50,6 +52,8 @@ trait Ground
   /**
     * Opacity of the ground, including surface default color and the basemap (without reference layers).
     *
+    * @default 1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#opacity)
     */
   var opacity: Double = js.native
@@ -57,7 +61,7 @@ trait Ground
   def queryElevation(geometry: Multipoint): js.Promise[ElevationQueryResult] = js.native
   def queryElevation(geometry: Multipoint, options: GroundQueryElevationOptions): js.Promise[ElevationQueryResult] = js.native
   /**
-    * Queries the ground layer services for elevation values for the given geometry.
+    * Query the ground layer services for elevation values for the given geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#queryElevation)
     */
@@ -68,6 +72,8 @@ trait Ground
   
   /**
     * The color of the ground surface, displayed underneath the basemap.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#surfaceColor)
     */

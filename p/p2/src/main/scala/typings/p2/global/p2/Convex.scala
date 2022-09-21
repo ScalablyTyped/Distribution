@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.Convex")
 @js.native
-class Convex ()
+open class Convex ()
   extends typings.p2.mod.Convex {
   def this(options: ConvexOptions) = this()
 }

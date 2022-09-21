@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-autosuggest
 
-Typings are for version 10.0
+Typings are for version 10.1
 
 ## Library description:
 WAI-ARIA compliant React autosuggest component
@@ -10,10 +10,10 @@ WAI-ARIA compliant React autosuggest component
 | ------------------ | :-------------: |
 | Full name          | react-autosuggest |
 | Keywords           | autosuggest, autocomplete, auto-suggest, auto-complete, auto suggest, auto complete, react autosuggest, react autocomplete, react auto-suggest, react auto-complete, react auto suggest, react auto complete, react-autosuggest, react-autocomplete, react-auto-suggest, react-auto-complete, react-component |
-| # releases         | 7 |
-| # dependents       | 321 |
-| # downloads        | 17227458 |
-| # stars            | 14 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1500249.3333333333 |
+| # stars            | 5838.0 |
 
 ## Links
 - [Homepage](https://github.com/moroshko/react-autosuggest#readme)

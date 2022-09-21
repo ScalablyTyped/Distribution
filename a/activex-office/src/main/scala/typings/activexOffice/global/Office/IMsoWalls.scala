@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoWalls")
 @js.native
-/* private */ class IMsoWalls ()
+/* private */ open class IMsoWalls ()
   extends StObject
      with typings.activexOffice.Office.IMsoWalls {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Border: typings.activexOffice.Office.IMsoBorder = js.native
   
   /* CompleteClass */
-  override def ClearFormats(): js.Any = js.native
+  override def ClearFormats(): Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
@@ -39,19 +39,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotIMsoWalls_typekey: typings.activexOffice.Office.IMsoWalls = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Paste(): Unit = js.native
   
   /* CompleteClass */
-  var PictureType: js.Any = js.native
+  var PictureType: Any = js.native
   
   /* CompleteClass */
-  var PictureUnit: js.Any = js.native
+  var PictureUnit: Any = js.native
   
   /* CompleteClass */
-  override def Select(): js.Any = js.native
+  override def Select(): Any = js.native
   
   /* CompleteClass */
   var Thickness: Double = js.native

@@ -9,7 +9,7 @@ object periodSelectorMod {
   
   @JSImport("amcharts/PeriodSelector", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with PeriodSelector {
     
@@ -71,7 +71,7 @@ object periodSelectorMod {
       * Example: {period:"DD", count:10, label:"10 days", selected:false}.
       */
     /* CompleteClass */
-    var periods: js.Array[js.Any] = js.native
+    var periods: js.Array[Any] = js.native
     
     /**
       * Text displayed next to predefined period buttons. Zoom:
@@ -89,7 +89,7 @@ object periodSelectorMod {
       * Removes event listener from chart object.
       */
     /* CompleteClass */
-    override def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit = js.native
+    override def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: Any): Unit = js.native
     
     /**
       * Specifies whether predefined period buttons should select a period from the beginning or the end of the data.
@@ -164,7 +164,7 @@ object periodSelectorMod {
       * "selected" is a boolean which specifies if this button is selected when chart is initialized or not.
       * Example: {period:"DD", count:10, label:"10 days", selected:false}.
       */
-    var periods: js.Array[js.Any]
+    var periods: js.Array[Any]
     
     /**
       * Text displayed next to predefined period buttons. Zoom:
@@ -179,7 +179,7 @@ object periodSelectorMod {
     /**
       * Removes event listener from chart object.
       */
-    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit
+    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: Any): Unit
     
     /**
       * Specifies whether predefined period buttons should select a period from the beginning or the end of the data.
@@ -206,10 +206,10 @@ object periodSelectorMod {
       hideOutOfScopePeriods: Boolean,
       inputFieldWidth: Double,
       inputFieldsEnabled: Boolean,
-      periods: js.Array[js.Any],
+      periods: js.Array[Any],
       periodsText: String,
       position: String,
-      removeListener: (typings.amcharts.amChartMod.default, String, js.Any) => Unit,
+      removeListener: (typings.amcharts.amChartMod.default, String, Any) => Unit,
       selectFromStart: Boolean,
       toText: String,
       width: Double
@@ -232,15 +232,15 @@ object periodSelectorMod {
       
       inline def setInputFieldsEnabled(value: Boolean): Self = StObject.set(x, "inputFieldsEnabled", value.asInstanceOf[js.Any])
       
-      inline def setPeriods(value: js.Array[js.Any]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
+      inline def setPeriods(value: js.Array[Any]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
       
       inline def setPeriodsText(value: String): Self = StObject.set(x, "periodsText", value.asInstanceOf[js.Any])
       
-      inline def setPeriodsVarargs(value: js.Any*): Self = StObject.set(x, "periods", js.Array(value :_*))
+      inline def setPeriodsVarargs(value: Any*): Self = StObject.set(x, "periods", js.Array(value*))
       
       inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      inline def setRemoveListener(value: (typings.amcharts.amChartMod.default, String, js.Any) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
+      inline def setRemoveListener(value: (typings.amcharts.amChartMod.default, String, Any) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction3(value))
       
       inline def setSelectFromStart(value: Boolean): Self = StObject.set(x, "selectFromStart", value.asInstanceOf[js.Any])
       

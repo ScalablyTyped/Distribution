@@ -11,9 +11,9 @@ trait ImageEditorImageRenderedEvent
   
   var canvas: js.UndefOr[HTMLElement] = js.undefined
   
-  var ctx: js.UndefOr[js.Any] = js.undefined
+  var ctx: js.UndefOr[Any] = js.undefined
   
-  var image: js.UndefOr[js.Any] = js.undefined
+  var image: js.UndefOr[Any] = js.undefined
 }
 object ImageEditorImageRenderedEvent {
   
@@ -28,11 +28,11 @@ object ImageEditorImageRenderedEvent {
     
     inline def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
     
-    inline def setCtx(value: js.Any): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: Any): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
     inline def setCtxUndefined: Self = StObject.set(x, "ctx", js.undefined)
     
-    inline def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }

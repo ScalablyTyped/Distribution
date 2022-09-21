@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFileManagerCommandConsts")
 @js.native
-class ASPxClientFileManagerCommandConsts ()
+open class ASPxClientFileManagerCommandConsts ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFileManagerCommandConsts
 object ASPxClientFileManagerCommandConsts {

@@ -23,7 +23,7 @@ object ReturnTypeGetComputedStyleForNodeResponse {
     
     inline def setParamsType(value: js.Array[GetComputedStyleForNodeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: GetComputedStyleForNodeRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetComputedStyleForNodeRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: GetComputedStyleForNodeResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object hsvMod {
   
-  @JSImport("konva/types/filters/HSV", "HSV")
+  @JSImport("konva/lib/filters/HSV", "HSV")
   @js.native
   val HSV: Filter = js.native
 }

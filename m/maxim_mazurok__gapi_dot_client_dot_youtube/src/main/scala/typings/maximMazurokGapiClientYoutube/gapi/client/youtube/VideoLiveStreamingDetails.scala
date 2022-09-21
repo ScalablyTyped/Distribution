@@ -13,10 +13,10 @@ trait VideoLiveStreamingDetails extends StObject {
     */
   var activeLiveChatId: js.UndefOr[String] = js.undefined
   
-  /** The time that the broadcast actually ended. The value is specified in ISO 8601 format. This value will not be available until the broadcast is over. */
+  /** The time that the broadcast actually ended. This value will not be available until the broadcast is over. */
   var actualEndTime: js.UndefOr[String] = js.undefined
   
-  /** The time that the broadcast actually started. The value is specified in ISO 8601 format. This value will not be available until the broadcast begins. */
+  /** The time that the broadcast actually started. This value will not be available until the broadcast begins. */
   var actualStartTime: js.UndefOr[String] = js.undefined
   
   /**
@@ -26,13 +26,10 @@ trait VideoLiveStreamingDetails extends StObject {
     */
   var concurrentViewers: js.UndefOr[String] = js.undefined
   
-  /**
-    * The time that the broadcast is scheduled to end. The value is specified in ISO 8601 format. If the value is empty or the property is not present, then the broadcast is scheduled to
-    * continue indefinitely.
-    */
+  /** The time that the broadcast is scheduled to end. If the value is empty or the property is not present, then the broadcast is scheduled to contiue indefinitely. */
   var scheduledEndTime: js.UndefOr[String] = js.undefined
   
-  /** The time that the broadcast is scheduled to begin. The value is specified in ISO 8601 format. */
+  /** The time that the broadcast is scheduled to begin. */
   var scheduledStartTime: js.UndefOr[String] = js.undefined
 }
 object VideoLiveStreamingDetails {

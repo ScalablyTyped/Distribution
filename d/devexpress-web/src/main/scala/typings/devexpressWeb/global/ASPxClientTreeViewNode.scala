@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeViewNode")
 @js.native
-class ASPxClientTreeViewNode ()
+open class ASPxClientTreeViewNode ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeViewNode {
   
@@ -41,7 +41,7 @@ class ASPxClientTreeViewNode ()
     * Gets the HTML object that contains the current node.
     */
   /* CompleteClass */
-  override def GetHtmlElement(): js.Any = js.native
+  override def GetHtmlElement(): Any = js.native
   
   /**
     * Returns the URL pointing to the image displayed within the node.

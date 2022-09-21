@@ -14,6 +14,8 @@ trait BaseTileLayerProperties
   /**
     * The spatial reference of the layer.
     *
+    * @default {@link module:esri/geometry/SpatialReference#WebMercator SpatialReference.WebMercator}
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseTileLayer.html#spatialReference)
     */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined

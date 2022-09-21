@@ -55,6 +55,8 @@ trait CompilerOptions
   
   var esModuleInterop: js.UndefOr[Boolean] = js.undefined
   
+  var exactOptionalPropertyTypes: js.UndefOr[Boolean] = js.undefined
+  
   var experimentalDecorators: js.UndefOr[Boolean] = js.undefined
   
   var forceConsistentCasingInFileNames: js.UndefOr[Boolean] = js.undefined
@@ -91,7 +93,11 @@ trait CompilerOptions
   
   var module: js.UndefOr[ModuleKind] = js.undefined
   
+  var moduleDetection: js.UndefOr[ModuleDetectionKind] = js.undefined
+  
   var moduleResolution: js.UndefOr[ModuleResolutionKind] = js.undefined
+  
+  var moduleSuffixes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
   var newLine: js.UndefOr[NewLineKind] = js.undefined
   
@@ -107,6 +113,8 @@ trait CompilerOptions
   
   var noImplicitAny: js.UndefOr[Boolean] = js.undefined
   
+  var noImplicitOverride: js.UndefOr[Boolean] = js.undefined
+  
   var noImplicitReturns: js.UndefOr[Boolean] = js.undefined
   
   var noImplicitThis: js.UndefOr[Boolean] = js.undefined
@@ -114,6 +122,8 @@ trait CompilerOptions
   var noImplicitUseStrict: js.UndefOr[Boolean] = js.undefined
   
   var noLib: js.UndefOr[Boolean] = js.undefined
+  
+  var noPropertyAccessFromIndexSignature: js.UndefOr[Boolean] = js.undefined
   
   var noResolve: js.UndefOr[Boolean] = js.undefined
   
@@ -136,6 +146,8 @@ trait CompilerOptions
   var preserveConstEnums: js.UndefOr[Boolean] = js.undefined
   
   var preserveSymlinks: js.UndefOr[Boolean] = js.undefined
+  
+  var preserveValueImports: js.UndefOr[Boolean] = js.undefined
   
   var project: js.UndefOr[java.lang.String] = js.undefined
   
@@ -185,6 +197,8 @@ trait CompilerOptions
   var types: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
   var useDefineForClassFields: js.UndefOr[Boolean] = js.undefined
+  
+  var useUnknownInCatchVariables: js.UndefOr[Boolean] = js.undefined
 }
 object CompilerOptions {
   
@@ -287,6 +301,10 @@ object CompilerOptions {
     
     inline def setEsModuleInteropUndefined: Self = StObject.set(x, "esModuleInterop", js.undefined)
     
+    inline def setExactOptionalPropertyTypes(value: Boolean): Self = StObject.set(x, "exactOptionalPropertyTypes", value.asInstanceOf[js.Any])
+    
+    inline def setExactOptionalPropertyTypesUndefined: Self = StObject.set(x, "exactOptionalPropertyTypes", js.undefined)
+    
     inline def setExperimentalDecorators(value: Boolean): Self = StObject.set(x, "experimentalDecorators", value.asInstanceOf[js.Any])
     
     inline def setExperimentalDecoratorsUndefined: Self = StObject.set(x, "experimentalDecorators", js.undefined)
@@ -343,7 +361,7 @@ object CompilerOptions {
     
     inline def setLibUndefined: Self = StObject.set(x, "lib", js.undefined)
     
-    inline def setLibVarargs(value: java.lang.String*): Self = StObject.set(x, "lib", js.Array(value :_*))
+    inline def setLibVarargs(value: java.lang.String*): Self = StObject.set(x, "lib", js.Array(value*))
     
     inline def setLocale(value: java.lang.String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
@@ -359,9 +377,19 @@ object CompilerOptions {
     
     inline def setModule(value: ModuleKind): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
+    inline def setModuleDetection(value: ModuleDetectionKind): Self = StObject.set(x, "moduleDetection", value.asInstanceOf[js.Any])
+    
+    inline def setModuleDetectionUndefined: Self = StObject.set(x, "moduleDetection", js.undefined)
+    
     inline def setModuleResolution(value: ModuleResolutionKind): Self = StObject.set(x, "moduleResolution", value.asInstanceOf[js.Any])
     
     inline def setModuleResolutionUndefined: Self = StObject.set(x, "moduleResolution", js.undefined)
+    
+    inline def setModuleSuffixes(value: js.Array[java.lang.String]): Self = StObject.set(x, "moduleSuffixes", value.asInstanceOf[js.Any])
+    
+    inline def setModuleSuffixesUndefined: Self = StObject.set(x, "moduleSuffixes", js.undefined)
+    
+    inline def setModuleSuffixesVarargs(value: java.lang.String*): Self = StObject.set(x, "moduleSuffixes", js.Array(value*))
     
     inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
     
@@ -393,6 +421,10 @@ object CompilerOptions {
     
     inline def setNoImplicitAnyUndefined: Self = StObject.set(x, "noImplicitAny", js.undefined)
     
+    inline def setNoImplicitOverride(value: Boolean): Self = StObject.set(x, "noImplicitOverride", value.asInstanceOf[js.Any])
+    
+    inline def setNoImplicitOverrideUndefined: Self = StObject.set(x, "noImplicitOverride", js.undefined)
+    
     inline def setNoImplicitReturns(value: Boolean): Self = StObject.set(x, "noImplicitReturns", value.asInstanceOf[js.Any])
     
     inline def setNoImplicitReturnsUndefined: Self = StObject.set(x, "noImplicitReturns", js.undefined)
@@ -408,6 +440,10 @@ object CompilerOptions {
     inline def setNoLib(value: Boolean): Self = StObject.set(x, "noLib", value.asInstanceOf[js.Any])
     
     inline def setNoLibUndefined: Self = StObject.set(x, "noLib", js.undefined)
+    
+    inline def setNoPropertyAccessFromIndexSignature(value: Boolean): Self = StObject.set(x, "noPropertyAccessFromIndexSignature", value.asInstanceOf[js.Any])
+    
+    inline def setNoPropertyAccessFromIndexSignatureUndefined: Self = StObject.set(x, "noPropertyAccessFromIndexSignature", js.undefined)
     
     inline def setNoResolve(value: Boolean): Self = StObject.set(x, "noResolve", value.asInstanceOf[js.Any])
     
@@ -453,6 +489,10 @@ object CompilerOptions {
     
     inline def setPreserveSymlinksUndefined: Self = StObject.set(x, "preserveSymlinks", js.undefined)
     
+    inline def setPreserveValueImports(value: Boolean): Self = StObject.set(x, "preserveValueImports", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveValueImportsUndefined: Self = StObject.set(x, "preserveValueImports", js.undefined)
+    
     inline def setProject(value: java.lang.String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
@@ -477,7 +517,7 @@ object CompilerOptions {
     
     inline def setRootDirsUndefined: Self = StObject.set(x, "rootDirs", js.undefined)
     
-    inline def setRootDirsVarargs(value: java.lang.String*): Self = StObject.set(x, "rootDirs", js.Array(value :_*))
+    inline def setRootDirsVarargs(value: java.lang.String*): Self = StObject.set(x, "rootDirs", js.Array(value*))
     
     inline def setSkipDefaultLibCheck(value: Boolean): Self = StObject.set(x, "skipDefaultLibCheck", value.asInstanceOf[js.Any])
     
@@ -543,16 +583,20 @@ object CompilerOptions {
     
     inline def setTypeRootsUndefined: Self = StObject.set(x, "typeRoots", js.undefined)
     
-    inline def setTypeRootsVarargs(value: java.lang.String*): Self = StObject.set(x, "typeRoots", js.Array(value :_*))
+    inline def setTypeRootsVarargs(value: java.lang.String*): Self = StObject.set(x, "typeRoots", js.Array(value*))
     
     inline def setTypes(value: js.Array[java.lang.String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setUseDefineForClassFields(value: Boolean): Self = StObject.set(x, "useDefineForClassFields", value.asInstanceOf[js.Any])
     
     inline def setUseDefineForClassFieldsUndefined: Self = StObject.set(x, "useDefineForClassFields", js.undefined)
+    
+    inline def setUseUnknownInCatchVariables(value: Boolean): Self = StObject.set(x, "useUnknownInCatchVariables", value.asInstanceOf[js.Any])
+    
+    inline def setUseUnknownInCatchVariablesUndefined: Self = StObject.set(x, "useUnknownInCatchVariables", js.undefined)
   }
 }

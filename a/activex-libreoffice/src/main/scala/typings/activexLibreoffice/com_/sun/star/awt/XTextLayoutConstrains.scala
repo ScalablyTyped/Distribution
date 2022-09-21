@@ -23,7 +23,7 @@ object XTextLayoutConstrains {
     acquire: () => Unit,
     getColumnsAndLines: (js.Array[Double], js.Array[Double]) => Unit,
     getMinimumSize: (Double, Double) => Size,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTextLayoutConstrains = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getColumnsAndLines = js.Any.fromFunction2(getColumnsAndLines), getMinimumSize = js.Any.fromFunction2(getMinimumSize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

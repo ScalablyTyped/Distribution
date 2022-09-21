@@ -229,7 +229,7 @@ object NodeDef {
     
     inline def setOutputLabelsUndefined: Self = StObject.set(x, "outputLabels", js.undefined)
     
-    inline def setOutputLabelsVarargs(value: String*): Self = StObject.set(x, "outputLabels", js.Array(value :_*))
+    inline def setOutputLabelsVarargs(value: String*): Self = StObject.set(x, "outputLabels", js.Array(value*))
     
     inline def setOutputs(value: Double): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     

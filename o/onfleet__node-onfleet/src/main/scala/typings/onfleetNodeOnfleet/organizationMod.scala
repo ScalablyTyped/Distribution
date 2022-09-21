@@ -9,7 +9,7 @@ object organizationMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Organization", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Organization
   
@@ -89,7 +89,7 @@ object organizationMod {
       
       inline def setDelegatees(value: js.Array[String]): Self = StObject.set(x, "delegatees", value.asInstanceOf[js.Any])
       
-      inline def setDelegateesVarargs(value: String*): Self = StObject.set(x, "delegatees", js.Array(value :_*))
+      inline def setDelegateesVarargs(value: String*): Self = StObject.set(x, "delegatees", js.Array(value*))
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -113,6 +113,6 @@ object organizationMod {
     def get(): js.Promise[js.Array[OnfleetOrganization]] = js.native
     def get(id: String): js.Promise[OnfleetOrganization | Delegatee] = js.native
     
-    def insertTask(id: String, obj: Tasks): js.Promise[js.Any] = js.native
+    def insertTask(id: String, obj: Tasks): js.Promise[Any] = js.native
   }
 }

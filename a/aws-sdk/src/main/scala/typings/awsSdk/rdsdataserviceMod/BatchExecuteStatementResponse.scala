@@ -24,6 +24,6 @@ object BatchExecuteStatementResponse {
     
     inline def setUpdateResultsUndefined: Self = StObject.set(x, "updateResults", js.undefined)
     
-    inline def setUpdateResultsVarargs(value: UpdateResult*): Self = StObject.set(x, "updateResults", js.Array(value :_*))
+    inline def setUpdateResultsVarargs(value: UpdateResult*): Self = StObject.set(x, "updateResults", js.Array(value*))
   }
 }

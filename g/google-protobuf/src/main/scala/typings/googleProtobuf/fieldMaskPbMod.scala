@@ -6,7 +6,6 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object fieldMaskPbMod {
   
   @JSImport("google-protobuf/google/protobuf/field_mask_pb", "FieldMask")
   @js.native
-  class FieldMask () extends Message {
+  open class FieldMask () extends Message {
     
     def addPaths(value: String): String = js.native
     def addPaths(value: String, index: Double): String = js.native
@@ -33,7 +32,7 @@ object fieldMaskPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): FieldMask = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FieldMask]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): FieldMask = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FieldMask]
     
     inline def deserializeBinaryFromReader(message: FieldMask, reader: BinaryReader): FieldMask = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[FieldMask]
     
@@ -67,7 +66,7 @@ object fieldMaskPbMod {
         
         inline def setPathsList(value: js.Array[String]): Self = StObject.set(x, "pathsList", value.asInstanceOf[js.Any])
         
-        inline def setPathsListVarargs(value: String*): Self = StObject.set(x, "pathsList", js.Array(value :_*))
+        inline def setPathsListVarargs(value: String*): Self = StObject.set(x, "pathsList", js.Array(value*))
       }
     }
   }

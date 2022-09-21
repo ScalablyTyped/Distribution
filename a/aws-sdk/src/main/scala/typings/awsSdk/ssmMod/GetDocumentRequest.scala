@@ -17,7 +17,7 @@ trait GetDocumentRequest extends StObject {
   var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
-    * The name of the Systems Manager document.
+    * The name of the SSM document.
     */
   var Name: DocumentARN
   

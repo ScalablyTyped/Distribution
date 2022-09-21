@@ -17,7 +17,7 @@ trait NewItemAlertRuleAction extends StObject {
   /* private */ @JSName("Outlook.NewItemAlertRuleAction_typekey")
   var OutlookDotNewItemAlertRuleAction_typekey: NewItemAlertRuleAction
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -31,7 +31,7 @@ object NewItemAlertRuleAction {
     Class: OlObjectClass,
     Enabled: Boolean,
     OutlookDotNewItemAlertRuleAction_typekey: NewItemAlertRuleAction,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     Text: String
   ): NewItemAlertRuleAction = {
@@ -52,7 +52,7 @@ object NewItemAlertRuleAction {
     
     inline def setOutlookDotNewItemAlertRuleAction_typekey(value: NewItemAlertRuleAction): Self = StObject.set(x, "Outlook.NewItemAlertRuleAction_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

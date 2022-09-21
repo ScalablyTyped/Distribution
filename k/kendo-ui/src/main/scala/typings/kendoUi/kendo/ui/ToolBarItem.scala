@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ToolBarItem extends StObject {
   
-  var attributes: js.UndefOr[js.Any] = js.undefined
+  var attributes: js.UndefOr[Any] = js.undefined
   
   var buttons: js.UndefOr[js.Array[ToolBarItemButton]] = js.undefined
   
@@ -61,7 +61,7 @@ object ToolBarItem {
   
   extension [Self <: ToolBarItem](x: Self) {
     
-    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
@@ -69,7 +69,7 @@ object ToolBarItem {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setButtonsVarargs(value: ToolBarItemButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: ToolBarItemButton*): Self = StObject.set(x, "buttons", js.Array(value*))
     
     inline def setClick(value: js.Function): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
@@ -103,7 +103,7 @@ object ToolBarItem {
     
     inline def setMenuButtonsUndefined: Self = StObject.set(x, "menuButtons", js.undefined)
     
-    inline def setMenuButtonsVarargs(value: ToolBarItemMenuButton*): Self = StObject.set(x, "menuButtons", js.Array(value :_*))
+    inline def setMenuButtonsVarargs(value: ToolBarItemMenuButton*): Self = StObject.set(x, "menuButtons", js.Array(value*))
     
     inline def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     

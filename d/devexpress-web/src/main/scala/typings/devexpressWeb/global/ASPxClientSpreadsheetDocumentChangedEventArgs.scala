@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the ASPxClientSpreadsheetDocumentChangedEventArgs class.
   */
-class ASPxClientSpreadsheetDocumentChangedEventArgs ()
+open class ASPxClientSpreadsheetDocumentChangedEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientEventArgs

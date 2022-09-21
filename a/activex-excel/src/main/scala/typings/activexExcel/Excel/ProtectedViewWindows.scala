@@ -28,7 +28,7 @@ trait ProtectedViewWindows extends StObject {
   def Open(Filename: String, Password: Unit, AddToMru: Boolean, RepairMode: Boolean): ProtectedViewWindow = js.native
   def Open(Filename: String, Password: Unit, AddToMru: Unit, RepairMode: Boolean): ProtectedViewWindow = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): ProtectedViewWindow = js.native
+  def _Default(Index: Any): ProtectedViewWindow = js.native
 }

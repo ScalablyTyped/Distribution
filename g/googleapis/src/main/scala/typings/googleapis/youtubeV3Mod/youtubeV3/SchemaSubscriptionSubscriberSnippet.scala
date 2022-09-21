@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Basic details about a subscription&#39;s subscriber including title,
-  * description, channel ID and thumbnails.
-  */
 trait SchemaSubscriptionSubscriberSnippet extends StObject {
   
   /**
     * The channel ID of the subscriber.
     */
-  var channelId: js.UndefOr[String] = js.undefined
+  var channelId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The description of the subscriber.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Thumbnails for this subscriber.
@@ -28,7 +24,7 @@ trait SchemaSubscriptionSubscriberSnippet extends StObject {
   /**
     * The title of the subscriber.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSubscriptionSubscriberSnippet {
   
@@ -41,9 +37,13 @@ object SchemaSubscriptionSubscriberSnippet {
     
     inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
+    inline def setChannelIdNull: Self = StObject.set(x, "channelId", null)
+    
     inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
@@ -52,6 +52,8 @@ object SchemaSubscriptionSubscriberSnippet {
     inline def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

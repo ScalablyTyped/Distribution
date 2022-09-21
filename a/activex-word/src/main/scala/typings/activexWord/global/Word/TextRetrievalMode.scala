@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TextRetrievalMode")
 @js.native
-/* private */ class TextRetrievalMode ()
+/* private */ open class TextRetrievalMode ()
   extends StObject
      with typings.activexWord.Word.TextRetrievalMode {
   
@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var IncludeHiddenText: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var ViewType: WdViewType = js.native

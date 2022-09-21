@@ -10,7 +10,7 @@ trait GoogleActionsV2OrdersCart extends StObject {
   /**
     * Extension to the cart based on the type of order.
     */
-  var `extension`: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var `extension`: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   /**
     * Optional id for this cart. Included as part of the
@@ -54,7 +54,7 @@ object GoogleActionsV2OrdersCart {
   
   extension [Self <: GoogleActionsV2OrdersCart](x: Self) {
     
-    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
@@ -66,7 +66,7 @@ object GoogleActionsV2OrdersCart {
     
     inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    inline def setLineItemsVarargs(value: GoogleActionsV2OrdersLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: GoogleActionsV2OrdersLineItem*): Self = StObject.set(x, "lineItems", js.Array(value*))
     
     inline def setMerchant(value: GoogleActionsV2OrdersMerchant): Self = StObject.set(x, "merchant", value.asInstanceOf[js.Any])
     
@@ -80,12 +80,12 @@ object GoogleActionsV2OrdersCart {
     
     inline def setOtherItemsUndefined: Self = StObject.set(x, "otherItems", js.undefined)
     
-    inline def setOtherItemsVarargs(value: GoogleActionsV2OrdersLineItem*): Self = StObject.set(x, "otherItems", js.Array(value :_*))
+    inline def setOtherItemsVarargs(value: GoogleActionsV2OrdersLineItem*): Self = StObject.set(x, "otherItems", js.Array(value*))
     
     inline def setPromotions(value: js.Array[GoogleActionsV2OrdersPromotion]): Self = StObject.set(x, "promotions", value.asInstanceOf[js.Any])
     
     inline def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
     
-    inline def setPromotionsVarargs(value: GoogleActionsV2OrdersPromotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
+    inline def setPromotionsVarargs(value: GoogleActionsV2OrdersPromotion*): Self = StObject.set(x, "promotions", js.Array(value*))
   }
 }

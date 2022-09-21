@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.Router")
 @js.native
-class Router ()
+open class Router ()
   extends StObject
      with typings.kendoUi.kendo.Router {
   def this(options: RouterOptions) = this()

@@ -18,50 +18,50 @@ object global {
     
     @JSGlobal("FixedDataTable.Cell")
     @js.native
-    class Cell protected ()
+    open class Cell protected ()
       extends typings.fixedDataTable.mod.Cell {
       def this(props: CellProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: CellProps, context: js.Any) = this()
+      def this(props: CellProps, context: Any) = this()
     }
     
     @JSGlobal("FixedDataTable.Column")
     @js.native
-    class Column protected ()
+    open class Column protected ()
       extends typings.fixedDataTable.mod.Column {
       def this(props: ColumnProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: ColumnProps, context: js.Any) = this()
+      def this(props: ColumnProps, context: Any) = this()
     }
     
     @JSGlobal("FixedDataTable.ColumnGroup")
     @js.native
-    class ColumnGroup protected ()
+    open class ColumnGroup protected ()
       extends typings.fixedDataTable.mod.ColumnGroup {
       def this(props: ColumnGroupProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: ColumnGroupProps, context: js.Any) = this()
+      def this(props: ColumnGroupProps, context: Any) = this()
     }
     
     @JSGlobal("FixedDataTable.Table")
     @js.native
-    class Table protected ()
+    open class Table protected ()
       extends typings.fixedDataTable.mod.Table {
       def this(props: TableProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: TableProps, context: js.Any) = this()
+      def this(props: TableProps, context: Any) = this()
     }
     
     @JSGlobal("FixedDataTable.version")

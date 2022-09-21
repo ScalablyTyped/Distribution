@@ -14,14 +14,14 @@ object paneMod {
   
   @JSImport("react-sortable-pane/lib/pane", "Pane")
   @js.native
-  class Pane protected ()
-    extends Component[PaneProps, js.Object, js.Any] {
+  open class Pane protected ()
+    extends Component[PaneProps, js.Object, Any] {
     def this(props: PaneProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: PaneProps, context: js.Any) = this()
+    def this(props: PaneProps, context: Any) = this()
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MPane(prevProps: PaneProps): Unit = js.native
@@ -74,7 +74,7 @@ object paneMod {
   
   trait PaneProps
     extends StObject
-       with /* otherProps */ StringDictionary[js.Any] {
+       with /* otherProps */ StringDictionary[Any] {
     
     var children: js.UndefOr[String | ReactNode] = js.undefined
     

@@ -9,10 +9,10 @@ Package for formatting JSON data in a coloured YAML-style, perfect for CLI outpu
 | ------------------ | :-------------: |
 | Full name          | prettyjson |
 | Keywords           | json, cli, formatting, colors |
-| # releases         | 0 |
-| # dependents       | 754 |
-| # downloads        | 26560445 |
-| # stars            | 55 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 3370038.3333333335 |
+| # stars            | 462.0 |
 
 ## Links
 - [Homepage](http://rafeca.com/prettyjson)

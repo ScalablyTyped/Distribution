@@ -10,7 +10,7 @@ object integrationsListMod {
   
   @JSImport("ionic/commands/integrations/list", "IntegrationsListCommand")
   @js.native
-  class IntegrationsListCommand protected () extends Command {
+  open class IntegrationsListCommand protected () extends Command {
     def this(namespace: INamespace) = this()
   }
 }

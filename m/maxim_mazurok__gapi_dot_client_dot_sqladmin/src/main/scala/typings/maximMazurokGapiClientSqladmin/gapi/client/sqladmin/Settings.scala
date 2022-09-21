@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Settings extends StObject {
   
   /**
-    * The activation policy specifies when the instance is activated; it is applicable only when the instance state is RUNNABLE. Valid values: *ALWAYS*: The instance is on, and remains so
-    * even in the absence of connection requests. *NEVER*: The instance is off; it is not activated, even if a connection request arrives.
+    * The activation policy specifies when the instance is activated; it is applicable only when the instance state is RUNNABLE. Valid values: * `ALWAYS`: The instance is on, and remains
+    * so even in the absence of connection requests. * `NEVER`: The instance is off; it is not activated, even if a connection request arrives.
     */
   var activationPolicy: js.UndefOr[String] = js.undefined
   
@@ -20,8 +20,9 @@ trait Settings extends StObject {
   var authorizedGaeApplications: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Availability type. Potential values: *ZONAL*: The instance serves data from only one zone. Outages in that zone affect data accessibility. *REGIONAL*: The instance can serve data
-    * from more than one zone in a region (it is highly available). For more information, see Overview of the High Availability Configuration.
+    * Availability type. Potential values: * `ZONAL`: The instance serves data from only one zone. Outages in that zone affect data accessibility. * `REGIONAL`: The instance can serve
+    * data from more than one zone in a region (it is highly available)./ For more information, see [Overview of the High Availability
+    * Configuration](https://cloud.google.com/sql/docs/mysql/high-availability).
     */
   var availabilityType: js.UndefOr[String] = js.undefined
   
@@ -32,6 +33,13 @@ trait Settings extends StObject {
   var collation: js.UndefOr[String] = js.undefined
   
   /**
+    * Specifies if connections must use Cloud SQL connectors. Option values include the following: * `NOT_REQUIRED`: Cloud SQL instances can be connected without Cloud SQL Connectors. *
+    * `REQUIRED`: Only allow connections that use Cloud SQL Connectors. Note that using REQUIRED disables all existing authorized networks. If this field is not specified when creating a
+    * new instance, NOT_REQUIRED is used. If this field is not specified when patching or updating an existing instance, it is left unchanged in the instance.
+    */
+  var connectorEnforcement: js.UndefOr[String] = js.undefined
+  
+  /**
     * Configuration specific to read replica instances. Indicates whether database flags for crash-safe replication are enabled. This property was only applicable to First Generation
     * instances.
     */
@@ -40,14 +48,17 @@ trait Settings extends StObject {
   /** The size of data disk, in GB. The data disk size minimum is 10GB. */
   var dataDiskSizeGb: js.UndefOr[String] = js.undefined
   
-  /** The type of data disk: PD_SSD (default) or PD_HDD. Not used for First Generation instances. */
+  /** The type of data disk: `PD_SSD` (default) or `PD_HDD`. Not used for First Generation instances. */
   var dataDiskType: js.UndefOr[String] = js.undefined
   
   /** The database flags passed to the instance at startup. */
   var databaseFlags: js.UndefOr[js.Array[DatabaseFlags]] = js.undefined
   
-  /** Configuration specific to read replica instances. Indicates whether replication is enabled or not. */
+  /** Configuration specific to read replica instances. Indicates whether replication is enabled or not. WARNING: Changing this restarts the instance. */
   var databaseReplicationEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /** Configuration to protect against accidental instance deletion. */
+  var deletionProtectionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Deny maintenance periods */
   var denyMaintenancePeriods: js.UndefOr[js.Array[DenyMaintenancePeriod]] = js.undefined
@@ -61,7 +72,7 @@ trait Settings extends StObject {
     */
   var ipConfiguration: js.UndefOr[IpConfiguration] = js.undefined
   
-  /** This is always *sql#settings*. */
+  /** This is always `sql#settings`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /**
@@ -73,10 +84,13 @@ trait Settings extends StObject {
   /** The maintenance window for this instance. This specifies when the instance can be restarted for maintenance purposes. */
   var maintenanceWindow: js.UndefOr[MaintenanceWindow] = js.undefined
   
-  /** The pricing plan for this instance. This can be either *PER_USE* or *PACKAGE*. Only *PER_USE* is supported for Second Generation instances. */
+  /** The local user password validation policy of the instance. */
+  var passwordValidationPolicy: js.UndefOr[PasswordValidationPolicy] = js.undefined
+  
+  /** The pricing plan for this instance. This can be either `PER_USE` or `PACKAGE`. Only `PER_USE` is supported for Second Generation instances. */
   var pricingPlan: js.UndefOr[String] = js.undefined
   
-  /** The type of replication this instance uses. This can be either *ASYNCHRONOUS* or *SYNCHRONOUS*. (Deprecated_ This property was only applicable to First Generation instances. */
+  /** The type of replication this instance uses. This can be either `ASYNCHRONOUS` or `SYNCHRONOUS`. (Deprecated) This property was only applicable to First Generation instances. */
   var replicationType: js.UndefOr[String] = js.undefined
   
   /**
@@ -85,20 +99,23 @@ trait Settings extends StObject {
     */
   var settingsVersion: js.UndefOr[String] = js.undefined
   
+  /** SQL Server specific audit configuration. */
+  var sqlServerAuditConfig: js.UndefOr[SqlServerAuditConfig] = js.undefined
+  
   /** Configuration to increase storage size automatically. The default value is true. */
   var storageAutoResize: js.UndefOr[Boolean] = js.undefined
   
   /** The maximum size to which storage capacity can be automatically increased. The default value is 0, which specifies that there is no limit. */
   var storageAutoResizeLimit: js.UndefOr[String] = js.undefined
   
-  /** The tier (or machine type) for this instance, for example *db-n1-standard-1* (MySQL instances) or *db-custom-1-3840* (PostgreSQL instances). */
+  /** The tier (or machine type) for this instance, for example `db-custom-1-3840`. WARNING: Changing this restarts the instance. */
   var tier: js.UndefOr[String] = js.undefined
   
   /** User-provided labels, represented as a dictionary where each label is a single key value pair. */
   var userLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSqladmin.maximMazurokGapiClientSqladminStrings.Settings & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSqladmin.maximMazurokGapiClientSqladminStrings.Settings & TopLevel[Any]
   ] = js.undefined
 }
 object Settings {
@@ -122,7 +139,7 @@ object Settings {
     
     inline def setAuthorizedGaeApplicationsUndefined: Self = StObject.set(x, "authorizedGaeApplications", js.undefined)
     
-    inline def setAuthorizedGaeApplicationsVarargs(value: String*): Self = StObject.set(x, "authorizedGaeApplications", js.Array(value :_*))
+    inline def setAuthorizedGaeApplicationsVarargs(value: String*): Self = StObject.set(x, "authorizedGaeApplications", js.Array(value*))
     
     inline def setAvailabilityType(value: String): Self = StObject.set(x, "availabilityType", value.asInstanceOf[js.Any])
     
@@ -135,6 +152,10 @@ object Settings {
     inline def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     
     inline def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
+    
+    inline def setConnectorEnforcement(value: String): Self = StObject.set(x, "connectorEnforcement", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorEnforcementUndefined: Self = StObject.set(x, "connectorEnforcement", js.undefined)
     
     inline def setCrashSafeReplicationEnabled(value: Boolean): Self = StObject.set(x, "crashSafeReplicationEnabled", value.asInstanceOf[js.Any])
     
@@ -152,17 +173,21 @@ object Settings {
     
     inline def setDatabaseFlagsUndefined: Self = StObject.set(x, "databaseFlags", js.undefined)
     
-    inline def setDatabaseFlagsVarargs(value: DatabaseFlags*): Self = StObject.set(x, "databaseFlags", js.Array(value :_*))
+    inline def setDatabaseFlagsVarargs(value: DatabaseFlags*): Self = StObject.set(x, "databaseFlags", js.Array(value*))
     
     inline def setDatabaseReplicationEnabled(value: Boolean): Self = StObject.set(x, "databaseReplicationEnabled", value.asInstanceOf[js.Any])
     
     inline def setDatabaseReplicationEnabledUndefined: Self = StObject.set(x, "databaseReplicationEnabled", js.undefined)
     
+    inline def setDeletionProtectionEnabled(value: Boolean): Self = StObject.set(x, "deletionProtectionEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setDeletionProtectionEnabledUndefined: Self = StObject.set(x, "deletionProtectionEnabled", js.undefined)
+    
     inline def setDenyMaintenancePeriods(value: js.Array[DenyMaintenancePeriod]): Self = StObject.set(x, "denyMaintenancePeriods", value.asInstanceOf[js.Any])
     
     inline def setDenyMaintenancePeriodsUndefined: Self = StObject.set(x, "denyMaintenancePeriods", js.undefined)
     
-    inline def setDenyMaintenancePeriodsVarargs(value: DenyMaintenancePeriod*): Self = StObject.set(x, "denyMaintenancePeriods", js.Array(value :_*))
+    inline def setDenyMaintenancePeriodsVarargs(value: DenyMaintenancePeriod*): Self = StObject.set(x, "denyMaintenancePeriods", js.Array(value*))
     
     inline def setInsightsConfig(value: InsightsConfig): Self = StObject.set(x, "insightsConfig", value.asInstanceOf[js.Any])
     
@@ -184,6 +209,10 @@ object Settings {
     
     inline def setMaintenanceWindowUndefined: Self = StObject.set(x, "maintenanceWindow", js.undefined)
     
+    inline def setPasswordValidationPolicy(value: PasswordValidationPolicy): Self = StObject.set(x, "passwordValidationPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setPasswordValidationPolicyUndefined: Self = StObject.set(x, "passwordValidationPolicy", js.undefined)
+    
     inline def setPricingPlan(value: String): Self = StObject.set(x, "pricingPlan", value.asInstanceOf[js.Any])
     
     inline def setPricingPlanUndefined: Self = StObject.set(x, "pricingPlan", js.undefined)
@@ -195,6 +224,10 @@ object Settings {
     inline def setSettingsVersion(value: String): Self = StObject.set(x, "settingsVersion", value.asInstanceOf[js.Any])
     
     inline def setSettingsVersionUndefined: Self = StObject.set(x, "settingsVersion", js.undefined)
+    
+    inline def setSqlServerAuditConfig(value: SqlServerAuditConfig): Self = StObject.set(x, "sqlServerAuditConfig", value.asInstanceOf[js.Any])
+    
+    inline def setSqlServerAuditConfigUndefined: Self = StObject.set(x, "sqlServerAuditConfig", js.undefined)
     
     inline def setStorageAutoResize(value: Boolean): Self = StObject.set(x, "storageAutoResize", value.asInstanceOf[js.Any])
     
@@ -211,7 +244,7 @@ object Settings {
     inline def setUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSqladmin.maximMazurokGapiClientSqladminStrings.Settings & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSqladmin.maximMazurokGapiClientSqladminStrings.Settings & TopLevel[Any]
     ): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
     
     inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)

@@ -20,7 +20,7 @@ trait Write extends StObject {
     * have exactly as many entries as there are entries in columns above. Sending multiple lists is equivalent to sending multiple `Mutation`s, each containing one `values` entry and
     * repeating table and columns. Individual values in each list are encoded as described here.
     */
-  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var values: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
 }
 object Write {
   
@@ -35,16 +35,16 @@ object Write {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     
-    inline def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Array[Any]*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

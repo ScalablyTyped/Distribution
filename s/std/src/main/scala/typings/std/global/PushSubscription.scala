@@ -1,5 +1,6 @@
 package typings.std.global
 
+import typings.std.EpochTimeStamp
 import typings.std.PushEncryptionKeyName
 import typings.std.PushSubscriptionJSON
 import org.scalablytyped.runtime.StObject
@@ -9,25 +10,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("PushSubscription")
 @js.native
-class PushSubscription ()
+/* standard dom */
+open class PushSubscription ()
   extends StObject
      with typings.std.PushSubscription {
   
+  /* standard dom */
   /* CompleteClass */
   override val endpoint: java.lang.String = js.native
   
+  /* standard dom */
   /* CompleteClass */
-  override val expirationTime: Double | Null = js.native
+  override val expirationTime: EpochTimeStamp | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
-  override def getKey(name: PushEncryptionKeyName): typings.std.ArrayBuffer | Null = js.native
+  override def getKey(name: PushEncryptionKeyName): js.typedarray.ArrayBuffer | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val options: typings.std.PushSubscriptionOptions = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override def toJSON(): PushSubscriptionJSON = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override def unsubscribe(): js.Promise[scala.Boolean] = js.native
 }

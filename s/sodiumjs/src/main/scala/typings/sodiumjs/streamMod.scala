@@ -19,7 +19,7 @@ object streamMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/Stream", "Stream")
   @js.native
-  class Stream[A] () extends StObject {
+  open class Stream[A] () extends StObject {
     def this(vertex: Vertex) = this()
     
     /**
@@ -261,7 +261,7 @@ object streamMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/Stream", "StreamLoop")
   @js.native
-  class StreamLoop[A] () extends StreamWithSend[A] {
+  open class StreamLoop[A] () extends StreamWithSend[A] {
     
     var assigned__ : Boolean = js.native
     
@@ -276,7 +276,7 @@ object streamMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/Stream", "StreamWithSend")
   @js.native
-  class StreamWithSend[A] () extends Stream[A] {
+  open class StreamWithSend[A] () extends Stream[A] {
     def this(vertex: Vertex) = this()
     
     def send_(a: A): Unit = js.native

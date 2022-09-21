@@ -10,10 +10,10 @@ featured command line args parser
 | ------------------ | :-------------: |
 | Full name          | node-getopt |
 | Keywords           | getopt, arg, parser |
-| # releases         | 0 |
-| # dependents       | 220 |
-| # downloads        | 1067031 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 153734.33333333334 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/jiangmiao/node-getopt)

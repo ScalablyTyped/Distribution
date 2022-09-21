@@ -10,10 +10,10 @@ A tiny script for generating attractive random colors
 | ------------------ | :-------------: |
 | Full name          | randomcolor |
 | Keywords           | attractive, random, color, generator |
-| # releases         | 4 |
-| # dependents       | 182 |
-| # downloads        | 2955302 |
-| # stars            | 14 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 462104.3333333333 |
+| # stars            | 5838.0 |
 
 ## Links
 - [Homepage](https://randomcolor.lllllllllllllllll.com/)

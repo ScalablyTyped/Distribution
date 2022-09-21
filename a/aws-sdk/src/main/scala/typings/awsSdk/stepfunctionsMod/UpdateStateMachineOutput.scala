@@ -9,17 +9,17 @@ trait UpdateStateMachineOutput extends StObject {
   /**
     * The date and time the state machine was updated.
     */
-  var updateDate: Timestamp
+  var updateDate: js.Date
 }
 object UpdateStateMachineOutput {
   
-  inline def apply(updateDate: Timestamp): UpdateStateMachineOutput = {
+  inline def apply(updateDate: js.Date): UpdateStateMachineOutput = {
     val __obj = js.Dynamic.literal(updateDate = updateDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateStateMachineOutput]
   }
   
   extension [Self <: UpdateStateMachineOutput](x: Self) {
     
-    inline def setUpdateDate(value: Timestamp): Self = StObject.set(x, "updateDate", value.asInstanceOf[js.Any])
+    inline def setUpdateDate(value: js.Date): Self = StObject.set(x, "updateDate", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,19 @@
 package typings.reachRouter.mod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.reachRouter.anon.Default
+import typings.reachRouter.anon.Dictparam
+import typings.reachRouter.anon.State
+import typings.reachRouter.mod.^
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.PropsWithoutRef
+import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
+import typings.std.Exclude
+import typings.std.HTMLAnchorElement
+import typings.std.Partial
+import typings.std.Pick
+import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,45 +21,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 inline def Link[TState](
   // TODO: Define this as ...params: Parameters<Link<TState>> when only TypeScript >= 3.1 support is needed.
-props: typings.react.mod.PropsWithoutRef[typings.reachRouter.mod.LinkProps[TState]] & typings.react.mod.RefAttributes[typings.std.HTMLAnchorElement]
-): typings.std.ReturnType[typings.reachRouter.mod.Link[TState]] = typings.reachRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Link")(props.asInstanceOf[js.Any]).asInstanceOf[typings.std.ReturnType[typings.reachRouter.mod.Link[TState]]]
-type Link[TState] = typings.react.mod.ForwardRefExoticComponent[
-typings.react.mod.PropsWithoutRef[typings.reachRouter.mod.LinkProps[TState]] & typings.react.mod.RefAttributes[typings.std.HTMLAnchorElement]]
+props: PropsWithoutRef[LinkProps[TState]] & RefAttributes[HTMLAnchorElement]
+): ReturnType[typings.reachRouter.mod.Link[TState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(props.asInstanceOf[js.Any]).asInstanceOf[ReturnType[typings.reachRouter.mod.Link[TState]]]
+type Link[TState] = ForwardRefExoticComponent[PropsWithoutRef[LinkProps[TState]] & RefAttributes[HTMLAnchorElement]]
 
-inline def createHistory(source: typings.reachRouter.mod.HistorySource): typings.reachRouter.mod.History = typings.reachRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createHistory")(source.asInstanceOf[js.Any]).asInstanceOf[typings.reachRouter.mod.History]
+inline def createHistory(source: HistorySource): History = ^.asInstanceOf[js.Dynamic].applyDynamic("createHistory")(source.asInstanceOf[js.Any]).asInstanceOf[History]
 
-inline def createMemorySource(initialPath: java.lang.String): typings.reachRouter.mod.HistorySource = typings.reachRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMemorySource")(initialPath.asInstanceOf[js.Any]).asInstanceOf[typings.reachRouter.mod.HistorySource]
+inline def createMemorySource(initialPath: String): HistorySource = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemorySource")(initialPath.asInstanceOf[js.Any]).asInstanceOf[HistorySource]
 
-inline def globalHistory: typings.reachRouter.mod.History = typings.reachRouter.mod.^.asInstanceOf[js.Dynamic].selectDynamic("globalHistory").asInstanceOf[typings.reachRouter.mod.History]
+inline def globalHistory: History = ^.asInstanceOf[js.Dynamic].selectDynamic("globalHistory").asInstanceOf[History]
 
-inline def isRedirect(error: js.Any): /* is @reach/router.@reach/router.RedirectRequest */ scala.Boolean = typings.reachRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(error.asInstanceOf[js.Any]).asInstanceOf[/* is @reach/router.@reach/router.RedirectRequest */ scala.Boolean]
+inline def isRedirect(error: Any): /* is @reach/router.@reach/router.RedirectRequest */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(error.asInstanceOf[js.Any]).asInstanceOf[/* is @reach/router.@reach/router.RedirectRequest */ Boolean]
 
-inline def navigate: typings.reachRouter.mod.NavigateFn = typings.reachRouter.mod.^.asInstanceOf[js.Dynamic].selectDynamic("navigate").asInstanceOf[typings.reachRouter.mod.NavigateFn]
+inline def navigate: NavigateFn = ^.asInstanceOf[js.Dynamic].selectDynamic("navigate").asInstanceOf[NavigateFn]
 
-inline def redirectTo(uri: java.lang.String): scala.Unit = typings.reachRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("redirectTo")(uri.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def redirectTo(uri: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("redirectTo")(uri.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def useLocation(): typings.reachRouter.mod.WindowLocation[typings.history.mod.LocationState] = typings.reachRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useLocation")().asInstanceOf[typings.reachRouter.mod.WindowLocation[typings.history.mod.LocationState]]
+inline def useLocation(): WindowLocation[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocation")().asInstanceOf[WindowLocation[Any]]
 
-inline def useMatch(pathname: java.lang.String): scala.Null | typings.reachRouter.anon.Dictparam = typings.reachRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useMatch")(pathname.asInstanceOf[js.Any]).asInstanceOf[scala.Null | typings.reachRouter.anon.Dictparam]
+inline def useMatch(pathname: String): Null | Dictparam = ^.asInstanceOf[js.Dynamic].applyDynamic("useMatch")(pathname.asInstanceOf[js.Any]).asInstanceOf[Null | Dictparam]
 
-inline def useNavigate(): typings.reachRouter.mod.NavigateFn = typings.reachRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useNavigate")().asInstanceOf[typings.reachRouter.mod.NavigateFn]
+inline def useNavigate(): NavigateFn = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigate")().asInstanceOf[NavigateFn]
 
-inline def useParams(): js.Any = typings.reachRouter.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useParams")().asInstanceOf[js.Any]
+inline def useParams[TParams /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+{[ Param in keyof TParams ]:? string}
+  */ typings.reachRouter.reachRouterStrings.useParams & TopLevel[Any] */](): TParams = ^.asInstanceOf[js.Dynamic].applyDynamic("useParams")().asInstanceOf[TParams]
 
-type HistoryListener = js.Function1[/* parameter */ typings.reachRouter.mod.HistoryListenerParameter, scala.Unit]
+type HistoryListener = js.Function1[/* parameter */ HistoryListenerParameter, Unit]
 
-type HistoryLocation = typings.reachRouter.mod.WindowLocation[typings.history.mod.LocationState] & typings.reachRouter.anon.State
+type HistoryLocation = WindowLocation[Any] & State
 
-type HistoryUnsubscribe = js.Function0[scala.Unit]
+type HistoryUnsubscribe = js.Function0[Unit]
 
-type LocationProviderRenderFn = js.Function1[/* context */ typings.reachRouter.mod.LocationContext, typings.react.mod.ReactNode]
+type LocationProviderRenderFn = js.Function1[/* context */ LocationContext, ReactNode]
 
-type MatchRenderFn[TParams] = js.Function1[
-/* props */ typings.reachRouter.mod.MatchRenderProps[TParams], 
-typings.react.mod.ReactNode]
+type MatchRenderFn[TParams] = js.Function1[/* props */ MatchRenderProps[TParams], ReactNode]
 
-type Omit[T, K] = typings.std.Pick[T, typings.std.Exclude[/* keyof T */ java.lang.String, K]]
+type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
 
-type RouteComponentProps[TParams] = typings.std.Partial[TParams] & typings.reachRouter.anon.Default
+type RouteComponentProps[TParams] = Partial[TParams] & Default
 
-type WindowLocation[S] = typings.std.Location & typings.history.mod.Location[S]
+type WindowLocation[S] = (/* import warning: importer.ImportType#apply Failed type conversion: std.Window['location'] */ js.Any) & HLocation[S]

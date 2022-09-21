@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "hast-util-parse-selector" : "3.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "hast-util-parse-selector" : "3.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

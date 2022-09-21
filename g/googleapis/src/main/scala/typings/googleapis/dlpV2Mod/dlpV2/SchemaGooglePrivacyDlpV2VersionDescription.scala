@@ -1,0 +1,40 @@
+package typings.googleapis.dlpV2Mod.dlpV2
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaGooglePrivacyDlpV2VersionDescription extends StObject {
+  
+  /**
+    * Description of the version.
+    */
+  var description: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Name of the version
+    */
+  var version: js.UndefOr[String | Null] = js.undefined
+}
+object SchemaGooglePrivacyDlpV2VersionDescription {
+  
+  inline def apply(): SchemaGooglePrivacyDlpV2VersionDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaGooglePrivacyDlpV2VersionDescription]
+  }
+  
+  extension [Self <: SchemaGooglePrivacyDlpV2VersionDescription](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
+}

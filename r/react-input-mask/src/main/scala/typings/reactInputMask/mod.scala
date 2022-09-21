@@ -1,12 +1,9 @@
 package typings.reactInputMask
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.InputHTMLAttributes
 import typings.react.mod.Ref
 import typings.std.HTMLInputElement
-import typings.std.Record
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,25 +12,50 @@ object mod {
   
   @JSImport("react-input-mask", JSImport.Default)
   @js.native
-  class default protected () extends ReactInputMask {
+  open class default protected () extends ReactInputMask {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   
   @JSImport("react-input-mask", "ReactInputMask")
   @js.native
-  class ReactInputMask protected ()
-    extends Component[Props, js.Object, js.Any] {
+  open class ReactInputMask protected ()
+    extends Component[Props, js.Object, Any] {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
+  }
+  
+  trait BeforeMaskedStateChangeStates extends StObject {
+    
+    var currentState: InputState
+    
+    var nextState: InputState
+    
+    var previousState: InputState
+  }
+  object BeforeMaskedStateChangeStates {
+    
+    inline def apply(currentState: InputState, nextState: InputState, previousState: InputState): BeforeMaskedStateChangeStates = {
+      val __obj = js.Dynamic.literal(currentState = currentState.asInstanceOf[js.Any], nextState = nextState.asInstanceOf[js.Any], previousState = previousState.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BeforeMaskedStateChangeStates]
+    }
+    
+    extension [Self <: BeforeMaskedStateChangeStates](x: Self) {
+      
+      inline def setCurrentState(value: InputState): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
+      
+      inline def setNextState(value: InputState): Self = StObject.set(x, "nextState", value.asInstanceOf[js.Any])
+      
+      inline def setPreviousState(value: InputState): Self = StObject.set(x, "previousState", value.asInstanceOf[js.Any])
+    }
   }
   
   trait InputState extends StObject {
@@ -59,49 +81,6 @@ object mod {
     }
   }
   
-  trait MaskOptions extends StObject {
-    
-    var alwaysShowMask: Boolean
-    
-    var formatChars: Record[String, String]
-    
-    var mask: String | (js.Array[String | RegExp])
-    
-    var maskChar: String
-    
-    var permanents: js.Array[Double]
-  }
-  object MaskOptions {
-    
-    inline def apply(
-      alwaysShowMask: Boolean,
-      formatChars: Record[String, String],
-      mask: String | (js.Array[String | RegExp]),
-      maskChar: String,
-      permanents: js.Array[Double]
-    ): MaskOptions = {
-      val __obj = js.Dynamic.literal(alwaysShowMask = alwaysShowMask.asInstanceOf[js.Any], formatChars = formatChars.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], maskChar = maskChar.asInstanceOf[js.Any], permanents = permanents.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MaskOptions]
-    }
-    
-    extension [Self <: MaskOptions](x: Self) {
-      
-      inline def setAlwaysShowMask(value: Boolean): Self = StObject.set(x, "alwaysShowMask", value.asInstanceOf[js.Any])
-      
-      inline def setFormatChars(value: Record[String, String]): Self = StObject.set(x, "formatChars", value.asInstanceOf[js.Any])
-      
-      inline def setMask(value: String | (js.Array[String | RegExp])): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
-      
-      inline def setMaskChar(value: String): Self = StObject.set(x, "maskChar", value.asInstanceOf[js.Any])
-      
-      inline def setMaskVarargs(value: (String | RegExp)*): Self = StObject.set(x, "mask", js.Array(value :_*))
-      
-      inline def setPermanents(value: js.Array[Double]): Self = StObject.set(x, "permanents", value.asInstanceOf[js.Any])
-      
-      inline def setPermanentsVarargs(value: Double*): Self = StObject.set(x, "permanents", js.Array(value :_*))
-    }
-  }
-  
   trait Props
     extends StObject
        with InputHTMLAttributes[HTMLInputElement] {
@@ -113,29 +92,14 @@ object mod {
     
     /**
       * In case you need to implement more complex masking behavior, you can provide
-      * beforeMaskedValueChange function to change masked value and cursor position
+      * beforeMaskedStateChange function to change masked value and cursor position
       * before it will be applied to the input.
+      *
+      * * previousState: Input state before change. Only defined on change event.
+      * * currentState: Current raw input state. Not defined during component render.
+      * * nextState: Input state with applied mask. Contains value and selection fields.
       */
-    var beforeMaskedValueChange: js.UndefOr[
-        js.Function4[
-          /* newState */ InputState, 
-          /* oldState */ InputState, 
-          /* userInput */ String, 
-          /* maskOptions */ MaskOptions, 
-          InputState
-        ]
-      ] = js.undefined
-    
-    /**
-      * Defines format characters with characters as keys and corresponding RegExp string as values. Default ones:
-      * ```
-      * {
-      *   "9": "[0-9]",
-      *   "a": "[A-Za-z]",
-      *   "*": "[A-Za-z0-9]"
-      * }```
-      */
-    var formatChars: js.UndefOr[StringDictionary[String]] = js.undefined
+    var beforeMaskedStateChange: js.UndefOr[js.Function1[/* states */ BeforeMaskedStateChangeStates, InputState]] = js.undefined
     
     /**
       * Use inputRef instead of ref if you need input node to manage focus, selection, etc.
@@ -151,16 +115,16 @@ object mod {
       * Any character can be escaped with backslash, which usually will appear as double backslash in JS strings.
       * For example, German phone mask with unremoveable prefix +49 will look like `mask="+4\\9 99 999 99"` or `mask={"+4\\\\9 99 999 99"}`
       */
-    var mask: String | (js.Array[String | RegExp])
+    var mask: String | (js.Array[String | js.RegExp])
     
     /**
       * Character to cover unfilled editable parts of mask. Default character is "_". If set to null, unfilled parts will be empty, like in ordinary input.
       */
-    var maskChar: js.UndefOr[String | Null] = js.undefined
+    var maskPlaceholder: js.UndefOr[String | Null] = js.undefined
   }
   object Props {
     
-    inline def apply(mask: String | (js.Array[String | RegExp])): Props = {
+    inline def apply(mask: String | (js.Array[String | js.RegExp])): Props = {
       val __obj = js.Dynamic.literal(mask = mask.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
@@ -171,15 +135,9 @@ object mod {
       
       inline def setAlwaysShowMaskUndefined: Self = StObject.set(x, "alwaysShowMask", js.undefined)
       
-      inline def setBeforeMaskedValueChange(
-        value: (/* newState */ InputState, /* oldState */ InputState, /* userInput */ String, /* maskOptions */ MaskOptions) => InputState
-      ): Self = StObject.set(x, "beforeMaskedValueChange", js.Any.fromFunction4(value))
+      inline def setBeforeMaskedStateChange(value: /* states */ BeforeMaskedStateChangeStates => InputState): Self = StObject.set(x, "beforeMaskedStateChange", js.Any.fromFunction1(value))
       
-      inline def setBeforeMaskedValueChangeUndefined: Self = StObject.set(x, "beforeMaskedValueChange", js.undefined)
-      
-      inline def setFormatChars(value: StringDictionary[String]): Self = StObject.set(x, "formatChars", value.asInstanceOf[js.Any])
-      
-      inline def setFormatCharsUndefined: Self = StObject.set(x, "formatChars", js.undefined)
+      inline def setBeforeMaskedStateChangeUndefined: Self = StObject.set(x, "beforeMaskedStateChange", js.undefined)
       
       inline def setInputRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
       
@@ -189,15 +147,15 @@ object mod {
       
       inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
-      inline def setMask(value: String | (js.Array[String | RegExp])): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: String | (js.Array[String | js.RegExp])): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      inline def setMaskChar(value: String): Self = StObject.set(x, "maskChar", value.asInstanceOf[js.Any])
+      inline def setMaskPlaceholder(value: String): Self = StObject.set(x, "maskPlaceholder", value.asInstanceOf[js.Any])
       
-      inline def setMaskCharNull: Self = StObject.set(x, "maskChar", null)
+      inline def setMaskPlaceholderNull: Self = StObject.set(x, "maskPlaceholder", null)
       
-      inline def setMaskCharUndefined: Self = StObject.set(x, "maskChar", js.undefined)
+      inline def setMaskPlaceholderUndefined: Self = StObject.set(x, "maskPlaceholder", js.undefined)
       
-      inline def setMaskVarargs(value: (String | RegExp)*): Self = StObject.set(x, "mask", js.Array(value :_*))
+      inline def setMaskVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "mask", js.Array(value*))
     }
   }
   

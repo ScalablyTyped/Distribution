@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-firebase", "RNFirebase.notifications.IOSAttachment")
 @js.native
-class IOSAttachment () extends StObject {
+open class IOSAttachment () extends StObject {
   
   var identifier: String = js.native
   

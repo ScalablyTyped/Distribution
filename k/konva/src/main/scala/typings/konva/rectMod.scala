@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object rectMod {
   
-  @JSImport("konva/types/shapes/Rect", "Rect")
+  @JSImport("konva/lib/shapes/Rect", "Rect")
   @js.native
-  class Rect () extends Shape[RectConfig] {
+  open class Rect () extends Shape[RectConfig] {
     def this(config: RectConfig) = this()
     
-    def _sceneFunc(context: js.Any): Unit = js.native
+    def _sceneFunc(context: Any): Unit = js.native
     
     def cornerRadius(): Double | js.Array[Double] = js.native
     def cornerRadius(v: js.Array[Double]): this.type = js.native
@@ -42,7 +42,7 @@ object rectMod {
       
       inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
       
-      inline def setCornerRadiusVarargs(value: Double*): Self = StObject.set(x, "cornerRadius", js.Array(value :_*))
+      inline def setCornerRadiusVarargs(value: Double*): Self = StObject.set(x, "cornerRadius", js.Array(value*))
     }
   }
 }

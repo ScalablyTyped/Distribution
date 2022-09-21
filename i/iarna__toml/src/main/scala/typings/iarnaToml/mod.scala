@@ -1,9 +1,8 @@
 package typings.iarnaToml
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.ReadableStream
 import typings.node.streamMod.Transform
-import typings.std.Date
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object mod {
   @js.native
   val stringify: FuncStringify = js.native
   
-  type AnyJson = Boolean | Double | String | JsonMap | Date | JsonArray | js.Array[JsonArray]
+  type AnyJson = Boolean | Double | String | JsonMap | js.Date | JsonArray | js.Array[JsonArray]
   
   @js.native
   trait FuncParse extends StObject {
@@ -38,7 +37,7 @@ object mod {
     /**
       * Given a readable stream, parse it as it feeds us data. Return a promise of the resulting object.
       */
-    def stream(readable: ReadableStream): js.Promise[JsonMap] = js.native
+    def stream(readable: ReadableStream[Any]): js.Promise[JsonMap] = js.native
   }
   
   @js.native
@@ -64,7 +63,7 @@ object mod {
     def value(any: AnyJson): String = js.native
   }
   
-  type JsonArray = js.Array[Boolean | Date | Double | JsonMap | String]
+  type JsonArray = js.Array[Boolean | js.Date | Double | JsonMap | String]
   
   trait JsonMap
     extends StObject

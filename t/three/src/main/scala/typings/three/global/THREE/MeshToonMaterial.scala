@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.MeshToonMaterial")
 @js.native
-class MeshToonMaterial ()
+open class MeshToonMaterial ()
   extends typings.three.mod.MeshToonMaterial {
   def this(parameters: MeshToonMaterialParameters) = this()
 }

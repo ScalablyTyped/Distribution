@@ -10,10 +10,10 @@ object flipToFrontMod {
   
   @JSImport("material-ui/svg-icons/action/flip-to-front", JSImport.Default)
   @js.native
-  class default () extends ActionFlipToFront
+  open class default () extends ActionFlipToFront
   
   @JSImport("material-ui/svg-icons/action/flip-to-front", "ActionFlipToFront")
   @js.native
-  class ActionFlipToFront ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionFlipToFront ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

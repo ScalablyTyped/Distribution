@@ -1,9 +1,5 @@
 package typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +9,12 @@ trait ParamsResourceProjectsSubscriptionsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * Maximum number of subscriptions to return.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The value returned by the last `ListSubscriptionsResponse`; indicates
-    * that this is a continuation of a prior `ListSubscriptions` call, and that
-    * the system should return the next page of data.
+    * The value returned by the last `ListSubscriptionsResponse`; indicates that this is a continuation of a prior `ListSubscriptions` call, and that the system should return the next page of data.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
@@ -42,10 +31,6 @@ object ParamsResourceProjectsSubscriptionsList {
   }
   
   extension [Self <: ParamsResourceProjectsSubscriptionsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

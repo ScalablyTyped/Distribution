@@ -29,7 +29,7 @@ object ListHandshakesForAccountResponse {
     
     inline def setHandshakesUndefined: Self = StObject.set(x, "Handshakes", js.undefined)
     
-    inline def setHandshakesVarargs(value: Handshake*): Self = StObject.set(x, "Handshakes", js.Array(value :_*))
+    inline def setHandshakesVarargs(value: Handshake*): Self = StObject.set(x, "Handshakes", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

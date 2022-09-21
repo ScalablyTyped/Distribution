@@ -9,7 +9,7 @@ trait Assignment extends StObject {
   /**
     *  The date and time the Worker accepted the assignment.
     */
-  var AcceptTime: js.UndefOr[Timestamp] = js.undefined
+  var AcceptTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The Worker's answers submitted for the HIT contained in a QuestionFormAnswers document, if the Worker provides an answer. If the Worker does not provide any answers, Answer may contain a QuestionFormAnswers document, or Answer may be empty.
@@ -19,7 +19,7 @@ trait Assignment extends StObject {
   /**
     *  If the Worker has submitted results and the Requester has approved the results, ApprovalTime is the date and time the Requester approved the results. This value is omitted from the assignment if the Requester has not yet approved the results.
     */
-  var ApprovalTime: js.UndefOr[Timestamp] = js.undefined
+  var ApprovalTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  A unique identifier for the assignment.
@@ -34,12 +34,12 @@ trait Assignment extends StObject {
   /**
     *  If results have been submitted, AutoApprovalTime is the date and time the results of the assignment results are considered Approved automatically if they have not already been explicitly approved or rejected by the Requester. This value is derived from the auto-approval delay specified by the Requester in the HIT. This value is omitted from the assignment if the Worker has not yet submitted results.
     */
-  var AutoApprovalTime: js.UndefOr[Timestamp] = js.undefined
+  var AutoApprovalTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The date and time of the deadline for the assignment. This value is derived from the deadline specification for the HIT and the date and time the Worker accepted the HIT.
     */
-  var Deadline: js.UndefOr[Timestamp] = js.undefined
+  var Deadline: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The ID of the HIT.
@@ -49,7 +49,7 @@ trait Assignment extends StObject {
   /**
     *  If the Worker has submitted results and the Requester has rejected the results, RejectionTime is the date and time the Requester rejected the results.
     */
-  var RejectionTime: js.UndefOr[Timestamp] = js.undefined
+  var RejectionTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The feedback string included with the call to the ApproveAssignment operation or the RejectAssignment operation, if the Requester approved or rejected the assignment and specified feedback.
@@ -59,7 +59,7 @@ trait Assignment extends StObject {
   /**
     *  If the Worker has submitted results, SubmitTime is the date and time the assignment was submitted. This value is omitted from the assignment if the Worker has not yet submitted results.
     */
-  var SubmitTime: js.UndefOr[Timestamp] = js.undefined
+  var SubmitTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The ID of the Worker who accepted the HIT.
@@ -75,7 +75,7 @@ object Assignment {
   
   extension [Self <: Assignment](x: Self) {
     
-    inline def setAcceptTime(value: Timestamp): Self = StObject.set(x, "AcceptTime", value.asInstanceOf[js.Any])
+    inline def setAcceptTime(value: js.Date): Self = StObject.set(x, "AcceptTime", value.asInstanceOf[js.Any])
     
     inline def setAcceptTimeUndefined: Self = StObject.set(x, "AcceptTime", js.undefined)
     
@@ -83,7 +83,7 @@ object Assignment {
     
     inline def setAnswerUndefined: Self = StObject.set(x, "Answer", js.undefined)
     
-    inline def setApprovalTime(value: Timestamp): Self = StObject.set(x, "ApprovalTime", value.asInstanceOf[js.Any])
+    inline def setApprovalTime(value: js.Date): Self = StObject.set(x, "ApprovalTime", value.asInstanceOf[js.Any])
     
     inline def setApprovalTimeUndefined: Self = StObject.set(x, "ApprovalTime", js.undefined)
     
@@ -95,11 +95,11 @@ object Assignment {
     
     inline def setAssignmentStatusUndefined: Self = StObject.set(x, "AssignmentStatus", js.undefined)
     
-    inline def setAutoApprovalTime(value: Timestamp): Self = StObject.set(x, "AutoApprovalTime", value.asInstanceOf[js.Any])
+    inline def setAutoApprovalTime(value: js.Date): Self = StObject.set(x, "AutoApprovalTime", value.asInstanceOf[js.Any])
     
     inline def setAutoApprovalTimeUndefined: Self = StObject.set(x, "AutoApprovalTime", js.undefined)
     
-    inline def setDeadline(value: Timestamp): Self = StObject.set(x, "Deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: js.Date): Self = StObject.set(x, "Deadline", value.asInstanceOf[js.Any])
     
     inline def setDeadlineUndefined: Self = StObject.set(x, "Deadline", js.undefined)
     
@@ -107,7 +107,7 @@ object Assignment {
     
     inline def setHITIdUndefined: Self = StObject.set(x, "HITId", js.undefined)
     
-    inline def setRejectionTime(value: Timestamp): Self = StObject.set(x, "RejectionTime", value.asInstanceOf[js.Any])
+    inline def setRejectionTime(value: js.Date): Self = StObject.set(x, "RejectionTime", value.asInstanceOf[js.Any])
     
     inline def setRejectionTimeUndefined: Self = StObject.set(x, "RejectionTime", js.undefined)
     
@@ -115,7 +115,7 @@ object Assignment {
     
     inline def setRequesterFeedbackUndefined: Self = StObject.set(x, "RequesterFeedback", js.undefined)
     
-    inline def setSubmitTime(value: Timestamp): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
+    inline def setSubmitTime(value: js.Date): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
     
     inline def setSubmitTimeUndefined: Self = StObject.set(x, "SubmitTime", js.undefined)
     

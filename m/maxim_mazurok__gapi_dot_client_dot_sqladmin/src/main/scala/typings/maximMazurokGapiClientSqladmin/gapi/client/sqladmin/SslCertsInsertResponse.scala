@@ -9,7 +9,7 @@ trait SslCertsInsertResponse extends StObject {
   /** The new client certificate and private key. */
   var clientCert: js.UndefOr[SslCertDetail] = js.undefined
   
-  /** This is always *sql#sslCertsInsert*. */
+  /** This is always `sql#sslCertsInsert`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The operation to track the ssl certs insert request. */

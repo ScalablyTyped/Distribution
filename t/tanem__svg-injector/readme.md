@@ -1,7 +1,7 @@
 
 # Scala.js typings for tanem__svg-injector
 
-Typings are for version 8.1.0
+Typings are for version 10.1.33
 
 ## Library description:
 Fast, caching, dynamic inline SVG DOM injection library.
@@ -10,10 +10,10 @@ Fast, caching, dynamic inline SVG DOM injection library.
 | ------------------ | :-------------: |
 | Full name          | @tanem/svg-injector |
 | Keywords           | dom, html, images, img, javascript, scalable-vector-graphics, svg, typescript |
-| # releases         | 100 |
-| # dependents       | 6 |
-| # downloads        | 3328190 |
-| # stars            | 0 |
+| # releases         | 61 |
+| # dependents       | 0.0 |
+| # downloads        | 591096.0 |
+| # stars            | 77.0 |
 
 ## Links
 - [Homepage](https://github.com/tanem/svg-injector)

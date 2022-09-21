@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_storage
 
-Typings are for version 1.0.20201118
+Typings are for version 1.0.20220806
 
 ## Library description:
 TypeScript typings for Cloud Storage JSON API v1
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Storage JSON API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.storage |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 1 |
-| # downloads        | 2253 |
-| # stars            | 0 |
+| # releases         | 131 |
+| # dependents       | 0.0 |
+| # downloads        | 1436.6666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

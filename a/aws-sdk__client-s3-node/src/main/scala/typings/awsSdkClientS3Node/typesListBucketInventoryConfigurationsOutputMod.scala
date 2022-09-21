@@ -52,7 +52,7 @@ object typesListBucketInventoryConfigurationsOutputMod {
       
       inline def setInventoryConfigurationListUndefined: Self = StObject.set(x, "InventoryConfigurationList", js.undefined)
       
-      inline def setInventoryConfigurationListVarargs(value: UnmarshalledInventoryConfiguration*): Self = StObject.set(x, "InventoryConfigurationList", js.Array(value :_*))
+      inline def setInventoryConfigurationListVarargs(value: UnmarshalledInventoryConfiguration*): Self = StObject.set(x, "InventoryConfigurationList", js.Array(value*))
       
       inline def setIsTruncated(value: Boolean): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
       

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // API: http://vitaly-t.github.io/pg-promise/PromiseAdapter.html
 @JSImport("pg-promise", "PromiseAdapter")
 @js.native
-class PromiseAdapter protected () extends StObject {
+open class PromiseAdapter protected () extends StObject {
   def this(api: IPromiseConfig) = this()
 }

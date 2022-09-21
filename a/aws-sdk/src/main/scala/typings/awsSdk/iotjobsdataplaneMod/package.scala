@@ -1,29 +1,30 @@
 package typings.awsSdk.iotjobsdataplaneMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ApproximateSecondsBeforeTimedOut = scala.Double
+type ApproximateSecondsBeforeTimedOut = Double
 
-type DescribeJobExecutionJobId = java.lang.String
+type DescribeJobExecutionJobId = String
 
-type DetailsKey = java.lang.String
+type DetailsKey = String
 
-type DetailsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iotjobsdataplaneMod.DetailsValue]
+type DetailsMap = StringDictionary[DetailsValue]
 
-type DetailsValue = java.lang.String
+type DetailsValue = String
 
-type ExecutionNumber = scala.Double
+type ExecutionNumber = Double
 
-type ExpectedVersion = scala.Double
+type ExpectedVersion = Double
 
-type IncludeExecutionState = scala.Boolean
+type IncludeExecutionState = Boolean
 
-type IncludeJobDocument = scala.Boolean
+type IncludeJobDocument = Boolean
 
-type JobDocument = java.lang.String
+type JobDocument = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.QUEUED
@@ -36,27 +37,27 @@ type JobDocument = java.lang.String
   - typings.awsSdk.awsSdkStrings.CANCELED
   - java.lang.String
 */
-type JobExecutionStatus = typings.awsSdk.iotjobsdataplaneMod._JobExecutionStatus | java.lang.String
+type JobExecutionStatus = _JobExecutionStatus | String
 
-type JobExecutionSummaryList = js.Array[typings.awsSdk.iotjobsdataplaneMod.JobExecutionSummary]
+type JobExecutionSummaryList = js.Array[JobExecutionSummary]
 
-type JobId = java.lang.String
+type JobId = String
 
-type LastUpdatedAt = scala.Double
+type LastUpdatedAt = Double
 
-type QueuedAt = scala.Double
+type QueuedAt = Double
 
-type StartedAt = scala.Double
+type StartedAt = Double
 
-type StepTimeoutInMinutes = scala.Double
+type StepTimeoutInMinutes = Double
 
-type ThingName = java.lang.String
+type ThingName = String
 
-type VersionNumber = scala.Double
+type VersionNumber = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-09-29`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.iotjobsdataplaneMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

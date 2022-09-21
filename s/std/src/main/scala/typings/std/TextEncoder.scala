@@ -10,14 +10,12 @@ trait TextEncoder
   extends StObject
      with TextEncoderCommon {
   
-  /**
-    * Returns the result of running UTF-8's encoder.
-    */
-  def encode(): Uint8Array = js.native
-  def encode(input: java.lang.String): Uint8Array = js.native
+  /** Returns the result of running UTF-8's encoder. */
+  /* standard dom */
+  def encode(): js.typedarray.Uint8Array = js.native
+  def encode(input: java.lang.String): js.typedarray.Uint8Array = js.native
   
-  /**
-    * Runs the UTF-8 encoder on source, stores the result of that operation into destination, and returns the progress made as a dictionary whereby read is the number of converted code units of source and written is the number of bytes modified in destination.
-    */
-  def encodeInto(source: java.lang.String, destination: Uint8Array): TextEncoderEncodeIntoResult = js.native
+  /** Runs the UTF-8 encoder on source, stores the result of that operation into destination, and returns the progress made as an object wherein read is the number of converted code units of source and written is the number of bytes modified in destination. */
+  /* standard dom */
+  def encodeInto(source: java.lang.String, destination: js.typedarray.Uint8Array): TextEncoderEncodeIntoResult = js.native
 }

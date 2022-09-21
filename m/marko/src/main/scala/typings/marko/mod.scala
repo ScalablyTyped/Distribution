@@ -12,7 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createOut(globalData: js.Any): AsyncStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createOut")(globalData.asInstanceOf[js.Any]).asInstanceOf[AsyncStream]
+  inline def createOut(globalData: Any): AsyncStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createOut")(globalData.asInstanceOf[js.Any]).asInstanceOf[AsyncStream]
   
   inline def load(templatePath: String): Template = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(templatePath.asInstanceOf[js.Any]).asInstanceOf[Template]
   inline def load(templatePath: String, options: TemplateOptions): Template = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(templatePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Template]

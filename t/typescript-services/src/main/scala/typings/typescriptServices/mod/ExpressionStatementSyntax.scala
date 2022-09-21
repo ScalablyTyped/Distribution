@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "ExpressionStatementSyntax")
 @js.native
-class ExpressionStatementSyntax protected ()
+open class ExpressionStatementSyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.ExpressionStatementSyntax {
   def this(expression: IExpressionSyntax, semicolonToken: ISyntaxToken, parsedInStrictMode: Boolean) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): ISyntaxElement = js.native

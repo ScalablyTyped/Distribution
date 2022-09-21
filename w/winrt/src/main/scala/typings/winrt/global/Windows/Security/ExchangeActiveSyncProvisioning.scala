@@ -17,7 +17,7 @@ object ExchangeActiveSyncProvisioning {
   
   @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation")
   @js.native
-  class EasClientDeviceInformation ()
+  open class EasClientDeviceInformation ()
     extends StObject
        with typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation {
     
@@ -42,7 +42,7 @@ object ExchangeActiveSyncProvisioning {
   
   @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasClientSecurityPolicy")
   @js.native
-  class EasClientSecurityPolicy ()
+  open class EasClientSecurityPolicy ()
     extends StObject
        with typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasClientSecurityPolicy {
     
@@ -81,7 +81,7 @@ object ExchangeActiveSyncProvisioning {
   
   @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults")
   @js.native
-  class EasComplianceResults ()
+  open class EasComplianceResults ()
     extends StObject
        with typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults {
     

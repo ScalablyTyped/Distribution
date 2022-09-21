@@ -7,41 +7,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Action extends StObject {
   
   /**
-    *  A system-generated universally unique identifier (UUID) for the action. 
+    * A system-generated universally unique identifier (UUID) for the action. 
     */
   var ActionId: typings.awsSdk.budgetsMod.ActionId
   
   /**
-    *  The trigger threshold of the action. 
+    * The trigger threshold of the action. 
     */
   var ActionThreshold: typings.awsSdk.budgetsMod.ActionThreshold
   
   /**
-    *  The type of action. This defines the type of tasks that can be carried out by this action. This field also determines the format for definition. 
+    * The type of action. This defines the type of tasks that can be carried out by this action. This field also determines the format for definition. 
     */
   var ActionType: typings.awsSdk.budgetsMod.ActionType
   
   /**
-    *  This specifies if the action needs manual or automatic approval. 
+    * This specifies if the action needs manual or automatic approval. 
     */
   var ApprovalModel: typings.awsSdk.budgetsMod.ApprovalModel
   
   var BudgetName: typings.awsSdk.budgetsMod.BudgetName
   
   /**
-    *  Where you specify all of the type-specific parameters. 
+    * Where you specify all of the type-specific parameters. 
     */
   var Definition: typings.awsSdk.budgetsMod.Definition
   
   /**
-    *  The role passed for action execution and reversion. Roles and actions must be in the same account. 
+    * The role passed for action execution and reversion. Roles and actions must be in the same account. 
     */
   var ExecutionRoleArn: RoleArn
   
   var NotificationType: typings.awsSdk.budgetsMod.NotificationType
   
   /**
-    *  The status of action. 
+    * The status of the action. 
     */
   var Status: ActionStatus
   
@@ -87,6 +87,6 @@ object Action {
     
     inline def setSubscribers(value: Subscribers): Self = StObject.set(x, "Subscribers", value.asInstanceOf[js.Any])
     
-    inline def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value :_*))
+    inline def setSubscribersVarargs(value: Subscriber*): Self = StObject.set(x, "Subscribers", js.Array(value*))
   }
 }

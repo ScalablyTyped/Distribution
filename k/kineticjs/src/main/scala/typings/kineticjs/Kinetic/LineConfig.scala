@@ -13,11 +13,11 @@ trait LineConfig
   
   var lineCap: js.UndefOr[String] = js.undefined
   
-  var points: js.Any
+  var points: Any
 }
 object LineConfig {
   
-  inline def apply(points: js.Any): LineConfig = {
+  inline def apply(points: Any): LineConfig = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineConfig]
   }
@@ -28,12 +28,12 @@ object LineConfig {
     
     inline def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
     
-    inline def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value :_*))
+    inline def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value*))
     
     inline def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
     
     inline def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
     
-    inline def setPoints(value: js.Any): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: Any): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
   }
 }

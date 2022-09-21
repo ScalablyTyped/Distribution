@@ -1,21 +1,30 @@
 package typings.bookshelf.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PivotOptions extends js.Object {
-  var query: js.UndefOr[js.Function | js.Any] = js.undefined
+trait PivotOptions extends StObject {
+  
+  var query: js.UndefOr[js.Function | Any] = js.undefined
+  
   var require: js.UndefOr[Boolean] = js.undefined
 }
-
 object PivotOptions {
-  @scala.inline
-  def apply(query: js.Function | js.Any = null, require: js.UndefOr[Boolean] = js.undefined): PivotOptions = {
+  
+  inline def apply(): PivotOptions = {
     val __obj = js.Dynamic.literal()
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(require)) __obj.updateDynamic("require")(require.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotOptions]
   }
+  
+  extension [Self <: PivotOptions](x: Self) {
+    
+    inline def setQuery(value: js.Function | Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    
+    inline def setRequire(value: Boolean): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+    
+    inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
+  }
 }
-

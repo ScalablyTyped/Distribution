@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-map-gl", "TransitionInterpolator")
 @js.native
-class TransitionInterpolator () extends StObject
+open class TransitionInterpolator () extends StObject

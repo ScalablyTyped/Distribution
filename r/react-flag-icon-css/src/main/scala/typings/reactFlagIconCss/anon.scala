@@ -15,7 +15,9 @@ object anon {
     
     val customCodes: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val themeStyles: js.UndefOr[StringDictionary[(Properties[String | `0`]) & (PropertiesHyphen[String | `0`])]] = js.undefined
+    val themeStyles: js.UndefOr[
+        StringDictionary[(Properties[String | `0`, String]) & (PropertiesHyphen[String | `0`, String])]
+      ] = js.undefined
     
     val useCssModules: js.UndefOr[Boolean] = js.undefined
   }
@@ -32,7 +34,9 @@ object anon {
       
       inline def setCustomCodesUndefined: Self = StObject.set(x, "customCodes", js.undefined)
       
-      inline def setThemeStyles(value: StringDictionary[(Properties[String | `0`]) & (PropertiesHyphen[String | `0`])]): Self = StObject.set(x, "themeStyles", value.asInstanceOf[js.Any])
+      inline def setThemeStyles(
+        value: StringDictionary[(Properties[String | `0`, String]) & (PropertiesHyphen[String | `0`, String])]
+      ): Self = StObject.set(x, "themeStyles", value.asInstanceOf[js.Any])
       
       inline def setThemeStylesUndefined: Self = StObject.set(x, "themeStyles", js.undefined)
       

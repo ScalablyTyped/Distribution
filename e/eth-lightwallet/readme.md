@@ -10,15 +10,12 @@ A lightweight ethereum javascript wallet.
 | ------------------ | :-------------: |
 | Full name          | eth-lightwallet |
 | Keywords           | ethereum, blockchain, transactions, contracts, wallet |
-| # releases         | 2 |
-| # dependents       | 44 |
-| # downloads        | 139513 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14749.666666666666 |
+| # stars            | 1182.0 |
 
 ## Links
-- [Homepage](https://github.com/ConsenSys/eth-lightwallet#readme)
-- [Bugs](https://github.com/ConsenSys/eth-lightwallet/issues)
-- [Repository](https://github.com/ConsenSys/eth-lightwallet)
 - [Npm](https://www.npmjs.com/package/eth-lightwallet)
     
 

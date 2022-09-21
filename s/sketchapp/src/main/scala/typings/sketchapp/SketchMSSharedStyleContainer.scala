@@ -22,7 +22,7 @@ object SketchMSSharedStyleContainer {
     
     inline def setObjects(value: js.Array[SketchMSSharedStyle]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
-    inline def setObjectsVarargs(value: SketchMSSharedStyle*): Self = StObject.set(x, "objects", js.Array(value :_*))
+    inline def setObjectsVarargs(value: SketchMSSharedStyle*): Self = StObject.set(x, "objects", js.Array(value*))
     
     inline def set_class(value: sharedStyleContainer): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }

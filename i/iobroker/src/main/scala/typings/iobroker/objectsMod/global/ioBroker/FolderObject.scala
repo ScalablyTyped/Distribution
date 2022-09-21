@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FolderObject
   extends StObject
      with BaseObject
-     with AnyObject {
+     with AdapterScopedObject
+     with AnyObject
+     with _InferGetObjectViewItemType[Any, Any] {
   
   // Nothing is set in stone here, so start with allowing every property
   @JSName("common")
@@ -20,7 +22,7 @@ trait FolderObject
 }
 object FolderObject {
   
-  inline def apply(_id: String, common: OtherCommon, native: Record[String, js.Any]): FolderObject = {
+  inline def apply(_id: String, common: OtherCommon, native: Record[String, Any]): FolderObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("folder")
     __obj.asInstanceOf[FolderObject]

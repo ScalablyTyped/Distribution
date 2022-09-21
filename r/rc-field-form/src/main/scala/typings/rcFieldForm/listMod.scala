@@ -69,7 +69,7 @@ object listMod extends Shortcut {
         ]
       ] = js.undefined
     
-    var initialValue: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var initialValue: js.UndefOr[js.Array[Any]] = js.undefined
     
     var name: NamePath
     
@@ -92,27 +92,27 @@ object listMod extends Shortcut {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setInitialValue(value: js.Array[js.Any]): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+      inline def setInitialValue(value: js.Array[Any]): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
       
       inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
       
-      inline def setInitialValueVarargs(value: js.Any*): Self = StObject.set(x, "initialValue", js.Array(value :_*))
+      inline def setInitialValueVarargs(value: Any*): Self = StObject.set(x, "initialValue", js.Array(value*))
       
       inline def setName(value: NamePath): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value :_*))
+      inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value*))
       
       inline def setRules(value: js.Array[ValidatorRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
       inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      inline def setRulesVarargs(value: ValidatorRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: ValidatorRule*): Self = StObject.set(x, "rules", js.Array(value*))
       
       inline def setValidateTrigger(value: String | js.Array[String] | `false`): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
       
       inline def setValidateTriggerUndefined: Self = StObject.set(x, "validateTrigger", js.undefined)
       
-      inline def setValidateTriggerVarargs(value: String*): Self = StObject.set(x, "validateTrigger", js.Array(value :_*))
+      inline def setValidateTriggerVarargs(value: String*): Self = StObject.set(x, "validateTrigger", js.Array(value*))
     }
   }
   

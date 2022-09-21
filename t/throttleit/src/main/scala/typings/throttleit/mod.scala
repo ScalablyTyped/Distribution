@@ -22,6 +22,6 @@ object mod {
   @js.native
   trait AnyFunction extends StObject {
     
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(args: Any*): Any = js.native
   }
 }

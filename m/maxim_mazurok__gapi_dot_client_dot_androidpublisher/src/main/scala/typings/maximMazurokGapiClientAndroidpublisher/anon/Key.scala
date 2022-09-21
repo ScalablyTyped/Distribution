@@ -28,9 +28,6 @@ trait Key extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Language localization code (a BCP-47 language tag; for example, "de-AT" for Austrian German). */
-  var language: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
@@ -43,6 +40,9 @@ trait Key extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Identifier of the track. */
+  var track: String
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -51,8 +51,8 @@ trait Key extends StObject {
 }
 object Key {
   
-  inline def apply(editId: String, language: String, packageName: String): Key = {
-    val __obj = js.Dynamic.literal(editId = editId.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any])
+  inline def apply(editId: String, packageName: String, track: String): Key = {
+    val __obj = js.Dynamic.literal(editId = editId.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
   
@@ -84,8 +84,6 @@ object Key {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
@@ -99,6 +97,8 @@ object Key {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setTrack(value: String): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

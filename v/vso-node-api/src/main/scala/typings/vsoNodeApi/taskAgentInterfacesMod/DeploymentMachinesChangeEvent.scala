@@ -23,6 +23,6 @@ object DeploymentMachinesChangeEvent {
     
     inline def setMachines(value: js.Array[DeploymentMachine]): Self = StObject.set(x, "machines", value.asInstanceOf[js.Any])
     
-    inline def setMachinesVarargs(value: DeploymentMachine*): Self = StObject.set(x, "machines", js.Array(value :_*))
+    inline def setMachinesVarargs(value: DeploymentMachine*): Self = StObject.set(x, "machines", js.Array(value*))
   }
 }

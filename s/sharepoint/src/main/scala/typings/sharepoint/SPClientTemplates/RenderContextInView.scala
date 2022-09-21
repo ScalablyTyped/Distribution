@@ -43,14 +43,14 @@ trait RenderContextInView
   
   var IsClientRendering: Boolean
   
-  var LastRowIndexSelected: js.Any
+  var LastRowIndexSelected: Any
   
   // not in View
-  var LastSelectableRowIdx: js.Any
+  var LastSelectableRowIdx: Any
   
-  var LastSelectedItemIID: js.Any
+  var LastSelectedItemIID: Any
   
-  var LastSelectedItemId: js.Any
+  var LastSelectedItemId: Any
   
   var ListData: ListDataInView
   
@@ -64,9 +64,9 @@ trait RenderContextInView
   
   var NavigateForFormsPages: Boolean
   
-  var NewWOPIDocumentEnabled: js.Any
+  var NewWOPIDocumentEnabled: Any
   
-  var NewWOPIDocumentUrl: js.Any
+  var NewWOPIDocumentUrl: Any
   
   var OfficialFileName: String
   
@@ -80,9 +80,9 @@ trait RenderContextInView
   
   var RegionalSettingsTimeZoneBias: String
   
-  var RowFocusTimerID: js.Any
+  var RowFocusTimerID: Any
   
-  var SelectAllCbx: js.Any
+  var SelectAllCbx: Any
   
   var SendToLocationName: String
   
@@ -92,9 +92,9 @@ trait RenderContextInView
   
   var StateInitDone: Boolean
   
-  var TableCbxFocusHandler: js.Any
+  var TableCbxFocusHandler: Any
   
-  var TableMouseOverHandler: js.Any
+  var TableMouseOverHandler: Any
   
   var TotalListItems: Double
   
@@ -109,9 +109,9 @@ trait RenderContextInView
   
   var ctxId: Double
   
-  var ctxType: js.Any
+  var ctxType: Any
   
-  var dictSel: js.Any
+  var dictSel: Any
   
   /** Absolute path for the list display form */
   var displayFormUrl: String
@@ -121,13 +121,13 @@ trait RenderContextInView
   
   var enteringGridMode: Boolean
   
-  var existingServerFilterHash: js.Any
+  var existingServerFilterHash: Any
   
   var heroId: String
   
   var imagesPath: String
   
-  var inGridFullRender: js.Any
+  var inGridFullRender: Any
   
   // not in View
   var inGridMode: Boolean
@@ -136,7 +136,7 @@ trait RenderContextInView
   
   var isModerated: Boolean
   
-  var isPortalTemplate: js.Any
+  var isPortalTemplate: Any
   
   var isVersions: Double
   
@@ -169,15 +169,15 @@ trait RenderContextInView
   // not in View
   var overrideFilterQstring: String
   
-  var queryString: js.Any
+  var queryString: Any
   
   var recursiveView: Boolean
   
   var rootFolder: String
   
-  var rootFolderForDisplay: js.Any
+  var rootFolderForDisplay: Any
   
-  var serverUrl: js.Any
+  var serverUrl: Any
   
   var verEnabled: Double
   
@@ -206,50 +206,50 @@ object RenderContextInView {
     HttpRoot: String,
     IsAppWeb: Boolean,
     IsClientRendering: Boolean,
-    LastRowIndexSelected: js.Any,
-    LastSelectableRowIdx: js.Any,
-    LastSelectedItemIID: js.Any,
-    LastSelectedItemId: js.Any,
+    LastRowIndexSelected: Any,
+    LastSelectableRowIdx: Any,
+    LastSelectedItemIID: Any,
+    LastSelectedItemId: Any,
     ListData: ListDataInView,
     ListDataJSONItemsKey: String,
     ListSchema: ListSchemaInView,
     ListTitle: String,
     ModerationStatus: Double,
     NavigateForFormsPages: Boolean,
-    NewWOPIDocumentEnabled: js.Any,
-    NewWOPIDocumentUrl: js.Any,
+    NewWOPIDocumentEnabled: Any,
+    NewWOPIDocumentUrl: Any,
     OfficialFileName: String,
     OfficialFileNames: String,
     PortalUrl: String,
     RecycleBinEnabled: Double,
     RegionalSettingsTimeZoneBias: String,
-    RowFocusTimerID: js.Any,
-    SelectAllCbx: js.Any,
+    RowFocusTimerID: Any,
+    SelectAllCbx: Any,
     SendToLocationName: String,
     SendToLocationUrl: String,
     SiteTitle: String,
     StateInitDone: Boolean,
-    TableCbxFocusHandler: js.Any,
-    TableMouseOverHandler: js.Any,
+    TableCbxFocusHandler: Any,
+    TableMouseOverHandler: Any,
     TotalListItems: Double,
     WorkflowAssociated: Boolean,
     WriteSecurity: String,
     bInitialRender: Boolean,
     clvp: HTMLElement,
     ctxId: Double,
-    ctxType: js.Any,
-    dictSel: js.Any,
+    ctxType: Any,
+    dictSel: Any,
     displayFormUrl: String,
     editFormUrl: String,
     enteringGridMode: Boolean,
-    existingServerFilterHash: js.Any,
+    existingServerFilterHash: Any,
     heroId: String,
     imagesPath: String,
-    inGridFullRender: js.Any,
+    inGridFullRender: Any,
     inGridMode: Boolean,
     isForceCheckout: Boolean,
     isModerated: Boolean,
-    isPortalTemplate: js.Any,
+    isPortalTemplate: Any,
     isVersions: Double,
     isWebEditorPreview: Double,
     isXslView: Boolean,
@@ -263,11 +263,11 @@ object RenderContextInView {
     noGroupCollapse: Boolean,
     overrideDeleteConfirmation: String,
     overrideFilterQstring: String,
-    queryString: js.Any,
+    queryString: Any,
     recursiveView: Boolean,
     rootFolder: String,
-    rootFolderForDisplay: js.Any,
-    serverUrl: js.Any,
+    rootFolderForDisplay: Any,
+    serverUrl: Any,
     verEnabled: Double,
     view: String,
     viewTitle: String,
@@ -297,13 +297,13 @@ object RenderContextInView {
     
     inline def setCtxId(value: Double): Self = StObject.set(x, "ctxId", value.asInstanceOf[js.Any])
     
-    inline def setCtxType(value: js.Any): Self = StObject.set(x, "ctxType", value.asInstanceOf[js.Any])
+    inline def setCtxType(value: Any): Self = StObject.set(x, "ctxType", value.asInstanceOf[js.Any])
     
     inline def setCurrentUserId(value: Double): Self = StObject.set(x, "CurrentUserId", value.asInstanceOf[js.Any])
     
     inline def setCurrentUserIsSiteAdmin(value: Boolean): Self = StObject.set(x, "CurrentUserIsSiteAdmin", value.asInstanceOf[js.Any])
     
-    inline def setDictSel(value: js.Any): Self = StObject.set(x, "dictSel", value.asInstanceOf[js.Any])
+    inline def setDictSel(value: Any): Self = StObject.set(x, "dictSel", value.asInstanceOf[js.Any])
     
     inline def setDisplayFormUrl(value: String): Self = StObject.set(x, "displayFormUrl", value.asInstanceOf[js.Any])
     
@@ -313,7 +313,7 @@ object RenderContextInView {
     
     inline def setEnteringGridMode(value: Boolean): Self = StObject.set(x, "enteringGridMode", value.asInstanceOf[js.Any])
     
-    inline def setExistingServerFilterHash(value: js.Any): Self = StObject.set(x, "existingServerFilterHash", value.asInstanceOf[js.Any])
+    inline def setExistingServerFilterHash(value: Any): Self = StObject.set(x, "existingServerFilterHash", value.asInstanceOf[js.Any])
     
     inline def setExternalDataList(value: Boolean): Self = StObject.set(x, "ExternalDataList", value.asInstanceOf[js.Any])
     
@@ -327,7 +327,7 @@ object RenderContextInView {
     
     inline def setImagesPath(value: String): Self = StObject.set(x, "imagesPath", value.asInstanceOf[js.Any])
     
-    inline def setInGridFullRender(value: js.Any): Self = StObject.set(x, "inGridFullRender", value.asInstanceOf[js.Any])
+    inline def setInGridFullRender(value: Any): Self = StObject.set(x, "inGridFullRender", value.asInstanceOf[js.Any])
     
     inline def setInGridMode(value: Boolean): Self = StObject.set(x, "inGridMode", value.asInstanceOf[js.Any])
     
@@ -339,7 +339,7 @@ object RenderContextInView {
     
     inline def setIsModerated(value: Boolean): Self = StObject.set(x, "isModerated", value.asInstanceOf[js.Any])
     
-    inline def setIsPortalTemplate(value: js.Any): Self = StObject.set(x, "isPortalTemplate", value.asInstanceOf[js.Any])
+    inline def setIsPortalTemplate(value: Any): Self = StObject.set(x, "isPortalTemplate", value.asInstanceOf[js.Any])
     
     inline def setIsVersions(value: Double): Self = StObject.set(x, "isVersions", value.asInstanceOf[js.Any])
     
@@ -347,13 +347,13 @@ object RenderContextInView {
     
     inline def setIsXslView(value: Boolean): Self = StObject.set(x, "isXslView", value.asInstanceOf[js.Any])
     
-    inline def setLastRowIndexSelected(value: js.Any): Self = StObject.set(x, "LastRowIndexSelected", value.asInstanceOf[js.Any])
+    inline def setLastRowIndexSelected(value: Any): Self = StObject.set(x, "LastRowIndexSelected", value.asInstanceOf[js.Any])
     
-    inline def setLastSelectableRowIdx(value: js.Any): Self = StObject.set(x, "LastSelectableRowIdx", value.asInstanceOf[js.Any])
+    inline def setLastSelectableRowIdx(value: Any): Self = StObject.set(x, "LastSelectableRowIdx", value.asInstanceOf[js.Any])
     
-    inline def setLastSelectedItemIID(value: js.Any): Self = StObject.set(x, "LastSelectedItemIID", value.asInstanceOf[js.Any])
+    inline def setLastSelectedItemIID(value: Any): Self = StObject.set(x, "LastSelectedItemIID", value.asInstanceOf[js.Any])
     
-    inline def setLastSelectedItemId(value: js.Any): Self = StObject.set(x, "LastSelectedItemId", value.asInstanceOf[js.Any])
+    inline def setLastSelectedItemId(value: Any): Self = StObject.set(x, "LastSelectedItemId", value.asInstanceOf[js.Any])
     
     inline def setLeavingGridMode(value: Boolean): Self = StObject.set(x, "leavingGridMode", value.asInstanceOf[js.Any])
     
@@ -381,9 +381,9 @@ object RenderContextInView {
     
     inline def setNewFormUrl(value: String): Self = StObject.set(x, "newFormUrl", value.asInstanceOf[js.Any])
     
-    inline def setNewWOPIDocumentEnabled(value: js.Any): Self = StObject.set(x, "NewWOPIDocumentEnabled", value.asInstanceOf[js.Any])
+    inline def setNewWOPIDocumentEnabled(value: Any): Self = StObject.set(x, "NewWOPIDocumentEnabled", value.asInstanceOf[js.Any])
     
-    inline def setNewWOPIDocumentUrl(value: js.Any): Self = StObject.set(x, "NewWOPIDocumentUrl", value.asInstanceOf[js.Any])
+    inline def setNewWOPIDocumentUrl(value: Any): Self = StObject.set(x, "NewWOPIDocumentUrl", value.asInstanceOf[js.Any])
     
     inline def setNoGroupCollapse(value: Boolean): Self = StObject.set(x, "noGroupCollapse", value.asInstanceOf[js.Any])
     
@@ -397,7 +397,7 @@ object RenderContextInView {
     
     inline def setPortalUrl(value: String): Self = StObject.set(x, "PortalUrl", value.asInstanceOf[js.Any])
     
-    inline def setQueryString(value: js.Any): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: Any): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
     inline def setRecursiveView(value: Boolean): Self = StObject.set(x, "recursiveView", value.asInstanceOf[js.Any])
     
@@ -407,25 +407,25 @@ object RenderContextInView {
     
     inline def setRootFolder(value: String): Self = StObject.set(x, "rootFolder", value.asInstanceOf[js.Any])
     
-    inline def setRootFolderForDisplay(value: js.Any): Self = StObject.set(x, "rootFolderForDisplay", value.asInstanceOf[js.Any])
+    inline def setRootFolderForDisplay(value: Any): Self = StObject.set(x, "rootFolderForDisplay", value.asInstanceOf[js.Any])
     
-    inline def setRowFocusTimerID(value: js.Any): Self = StObject.set(x, "RowFocusTimerID", value.asInstanceOf[js.Any])
+    inline def setRowFocusTimerID(value: Any): Self = StObject.set(x, "RowFocusTimerID", value.asInstanceOf[js.Any])
     
-    inline def setSelectAllCbx(value: js.Any): Self = StObject.set(x, "SelectAllCbx", value.asInstanceOf[js.Any])
+    inline def setSelectAllCbx(value: Any): Self = StObject.set(x, "SelectAllCbx", value.asInstanceOf[js.Any])
     
     inline def setSendToLocationName(value: String): Self = StObject.set(x, "SendToLocationName", value.asInstanceOf[js.Any])
     
     inline def setSendToLocationUrl(value: String): Self = StObject.set(x, "SendToLocationUrl", value.asInstanceOf[js.Any])
     
-    inline def setServerUrl(value: js.Any): Self = StObject.set(x, "serverUrl", value.asInstanceOf[js.Any])
+    inline def setServerUrl(value: Any): Self = StObject.set(x, "serverUrl", value.asInstanceOf[js.Any])
     
     inline def setSiteTitle(value: String): Self = StObject.set(x, "SiteTitle", value.asInstanceOf[js.Any])
     
     inline def setStateInitDone(value: Boolean): Self = StObject.set(x, "StateInitDone", value.asInstanceOf[js.Any])
     
-    inline def setTableCbxFocusHandler(value: js.Any): Self = StObject.set(x, "TableCbxFocusHandler", value.asInstanceOf[js.Any])
+    inline def setTableCbxFocusHandler(value: Any): Self = StObject.set(x, "TableCbxFocusHandler", value.asInstanceOf[js.Any])
     
-    inline def setTableMouseOverHandler(value: js.Any): Self = StObject.set(x, "TableMouseOverHandler", value.asInstanceOf[js.Any])
+    inline def setTableMouseOverHandler(value: Any): Self = StObject.set(x, "TableMouseOverHandler", value.asInstanceOf[js.Any])
     
     inline def setTotalListItems(value: Double): Self = StObject.set(x, "TotalListItems", value.asInstanceOf[js.Any])
     

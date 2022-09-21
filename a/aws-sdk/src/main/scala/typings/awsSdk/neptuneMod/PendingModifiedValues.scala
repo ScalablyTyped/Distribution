@@ -47,12 +47,12 @@ trait PendingModifiedValues extends StObject {
   var Iops: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The license model for the DB instance. Valid values: license-included | bring-your-own-license | general-public-license 
+    * Not supported by Neptune.
     */
   var LicenseModel: js.UndefOr[String] = js.undefined
   
   /**
-    * Contains the pending or currently-in-progress change of the master credentials for the DB instance.
+    * Not supported by Neptune.
     */
   var MasterUserPassword: js.UndefOr[String] = js.undefined
   

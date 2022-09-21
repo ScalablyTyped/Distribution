@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SalesforceKnowledgeArticleConfiguration extends StObject {
   
   /**
-    * Provides configuration information for custom Salesforce knowledge articles.
+    * Configuration information for custom Salesforce knowledge articles.
     */
   var CustomKnowledgeArticleTypeConfigurations: js.UndefOr[SalesforceCustomKnowledgeArticleTypeConfigurationList] = js.undefined
   
@@ -17,7 +17,7 @@ trait SalesforceKnowledgeArticleConfiguration extends StObject {
   var IncludedStates: SalesforceKnowledgeArticleStateList
   
   /**
-    * Provides configuration information for standard Salesforce knowledge articles.
+    * Configuration information for standard Salesforce knowledge articles.
     */
   var StandardKnowledgeArticleTypeConfiguration: js.UndefOr[SalesforceStandardKnowledgeArticleTypeConfiguration] = js.undefined
 }
@@ -34,11 +34,11 @@ object SalesforceKnowledgeArticleConfiguration {
     
     inline def setCustomKnowledgeArticleTypeConfigurationsUndefined: Self = StObject.set(x, "CustomKnowledgeArticleTypeConfigurations", js.undefined)
     
-    inline def setCustomKnowledgeArticleTypeConfigurationsVarargs(value: SalesforceCustomKnowledgeArticleTypeConfiguration*): Self = StObject.set(x, "CustomKnowledgeArticleTypeConfigurations", js.Array(value :_*))
+    inline def setCustomKnowledgeArticleTypeConfigurationsVarargs(value: SalesforceCustomKnowledgeArticleTypeConfiguration*): Self = StObject.set(x, "CustomKnowledgeArticleTypeConfigurations", js.Array(value*))
     
     inline def setIncludedStates(value: SalesforceKnowledgeArticleStateList): Self = StObject.set(x, "IncludedStates", value.asInstanceOf[js.Any])
     
-    inline def setIncludedStatesVarargs(value: SalesforceKnowledgeArticleState*): Self = StObject.set(x, "IncludedStates", js.Array(value :_*))
+    inline def setIncludedStatesVarargs(value: SalesforceKnowledgeArticleState*): Self = StObject.set(x, "IncludedStates", js.Array(value*))
     
     inline def setStandardKnowledgeArticleTypeConfiguration(value: SalesforceStandardKnowledgeArticleTypeConfiguration): Self = StObject.set(x, "StandardKnowledgeArticleTypeConfiguration", value.asInstanceOf[js.Any])
     

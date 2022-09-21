@@ -2,6 +2,8 @@ package typings.carbonComponentsReact
 
 import org.scalablytyped.runtime.Shortcut
 import typings.carbonComponentsReact.carbonComponentsReactStrings.end
+import typings.carbonComponentsReact.carbonComponentsReactStrings.lg
+import typings.carbonComponentsReact.carbonComponentsReactStrings.md
 import typings.carbonComponentsReact.carbonComponentsReactStrings.sm
 import typings.carbonComponentsReact.carbonComponentsReactStrings.start
 import typings.carbonComponentsReact.carbonComponentsReactStrings.xl
@@ -26,7 +28,7 @@ object accordionAccordionMod extends Shortcut {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[sm | xl] = js.undefined
+    var size: js.UndefOr[sm | md | lg | xl] = js.undefined
   }
   object AccordionProps {
     
@@ -45,7 +47,7 @@ object accordionAccordionMod extends Shortcut {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setSize(value: sm | xl): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: sm | md | lg | xl): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }

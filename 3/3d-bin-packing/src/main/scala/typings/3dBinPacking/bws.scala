@@ -12,43 +12,43 @@ object bws {
       extends StObject
          with WrapperArray {
       
-      /* private */ def constructResult(): js.Any
+      /* private */ def constructResult(): Any
       
       /**
         * @brief Get optimization result.
         *
         * @return result map.
         */
-      def getResult(): js.Any
+      def getResult(): Any
       
       /* protected */ var instanceArray: InstanceArray
       
       def less(obj: GAWrapperArray): Boolean
       
-      /* private */ var price: js.Any
+      /* private */ var price: Any
       
-      /* protected */ var result: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ js.Any
+      /* protected */ var result: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ Any
       
       /**
         * @brief Validity of this sequence list.
         */
-      /* private */ var valid: js.Any
+      /* private */ var valid: Any
     }
     object GAWrapperArray {
       
       inline def apply(
         CHILD_TAG: () => String,
         TAG: () => String,
-        constructResult: () => js.Any,
-        createChild: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Wrapper,
+        constructResult: () => Any,
+        createChild: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Wrapper,
         getPrice: () => Double,
-        getResult: () => js.Any,
+        getResult: () => Any,
         getUtilization: () => Double,
         instanceArray: InstanceArray,
         less: GAWrapperArray => Boolean,
-        price: js.Any,
-        result: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ js.Any,
-        valid: js.Any
+        price: Any,
+        result: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ Any,
+        valid: Any
       ): GAWrapperArray = {
         val __obj = js.Dynamic.literal(CHILD_TAG = js.Any.fromFunction0(CHILD_TAG), TAG = js.Any.fromFunction0(TAG), constructResult = js.Any.fromFunction0(constructResult), createChild = js.Any.fromFunction1(createChild), getPrice = js.Any.fromFunction0(getPrice), getResult = js.Any.fromFunction0(getResult), getUtilization = js.Any.fromFunction0(getUtilization), instanceArray = instanceArray.asInstanceOf[js.Any], less = js.Any.fromFunction1(less), price = price.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
         __obj.asInstanceOf[GAWrapperArray]
@@ -56,21 +56,21 @@ object bws {
       
       extension [Self <: GAWrapperArray](x: Self) {
         
-        inline def setConstructResult(value: () => js.Any): Self = StObject.set(x, "constructResult", js.Any.fromFunction0(value))
+        inline def setConstructResult(value: () => Any): Self = StObject.set(x, "constructResult", js.Any.fromFunction0(value))
         
-        inline def setGetResult(value: () => js.Any): Self = StObject.set(x, "getResult", js.Any.fromFunction0(value))
+        inline def setGetResult(value: () => Any): Self = StObject.set(x, "getResult", js.Any.fromFunction0(value))
         
         inline def setInstanceArray(value: InstanceArray): Self = StObject.set(x, "instanceArray", value.asInstanceOf[js.Any])
         
         inline def setLess(value: GAWrapperArray => Boolean): Self = StObject.set(x, "less", js.Any.fromFunction1(value))
         
-        inline def setPrice(value: js.Any): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+        inline def setPrice(value: Any): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
         
         inline def setResult(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ js.Any
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ Any
         ): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
         
-        inline def setValid(value: js.Any): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+        inline def setValid(value: Any): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       }
     }
     
@@ -204,7 +204,7 @@ object bws {
         * @inheritdoc
         */
       def createChild(
-        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
       ): Instance
     }
     object InstanceArray {
@@ -212,7 +212,7 @@ object bws {
       inline def apply(
         CHILD_TAG: () => String,
         TAG: () => String,
-        createChild: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Instance
+        createChild: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Instance
       ): InstanceArray = {
         val __obj = js.Dynamic.literal(CHILD_TAG = js.Any.fromFunction0(CHILD_TAG), TAG = js.Any.fromFunction0(TAG), createChild = js.Any.fromFunction1(createChild))
         __obj.asInstanceOf[InstanceArray]
@@ -223,7 +223,7 @@ object bws {
         inline def setCHILD_TAG(value: () => String): Self = StObject.set(x, "CHILD_TAG", js.Any.fromFunction0(value))
         
         inline def setCreateChild(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Instance
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Instance
         ): Self = StObject.set(x, "createChild", js.Any.fromFunction1(value))
         
         inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
@@ -265,15 +265,15 @@ object bws {
         * @inheritdoc
         */
       def construct(
-        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
       ): Unit
       
       /**
         * Repeated count of the {@link instance}.
         */
-      /* private */ var count: js.Any
+      /* private */ var count: Any
       
-      /* private */ def createInstance(xml: js.Any): js.Any
+      /* private */ def createInstance(xml: Any): Any
       
       def getCount(): Double
       
@@ -282,9 +282,9 @@ object bws {
       /**
         * A duplicated Instance.
         */
-      /* private */ var instance: js.Any
+      /* private */ var instance: Any
       
-      def key(): js.Any
+      def key(): Any
       
       def setCount(`val`: Double): Unit
       
@@ -303,7 +303,7 @@ object bws {
       /**
         * @inheritdoc
         */
-      def toXML(): js.Any
+      def toXML(): Any
     }
     object InstanceForm {
       
@@ -314,16 +314,16 @@ object bws {
         $name: String,
         $width: String,
         TAG: () => String,
-        construct: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit,
-        count: js.Any,
-        createInstance: js.Any => js.Any,
+        construct: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Unit,
+        count: Any,
+        createInstance: Any => Any,
         getCount: () => Double,
         getInstance: () => Instance,
-        instance: js.Any,
-        key: () => js.Any,
+        instance: Any,
+        key: () => Any,
         setCount: Double => Unit,
         toInstanceArray: () => InstanceArray,
-        toXML: () => js.Any
+        toXML: () => Any
       ): InstanceForm = {
         val __obj = js.Dynamic.literal($count = $count.asInstanceOf[js.Any], $height = $height.asInstanceOf[js.Any], $length = $length.asInstanceOf[js.Any], $name = $name.asInstanceOf[js.Any], $width = $width.asInstanceOf[js.Any], TAG = js.Any.fromFunction0(TAG), construct = js.Any.fromFunction1(construct), count = count.asInstanceOf[js.Any], createInstance = js.Any.fromFunction1(createInstance), getCount = js.Any.fromFunction0(getCount), getInstance = js.Any.fromFunction0(getInstance), instance = instance.asInstanceOf[js.Any], key = js.Any.fromFunction0(key), setCount = js.Any.fromFunction1(setCount), toInstanceArray = js.Any.fromFunction0(toInstanceArray), toXML = js.Any.fromFunction0(toXML))
         __obj.asInstanceOf[InstanceForm]
@@ -342,20 +342,20 @@ object bws {
         inline def set$width(value: String): Self = StObject.set(x, "$width", value.asInstanceOf[js.Any])
         
         inline def setConstruct(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Unit
         ): Self = StObject.set(x, "construct", js.Any.fromFunction1(value))
         
-        inline def setCount(value: js.Any): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+        inline def setCount(value: Any): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
-        inline def setCreateInstance(value: js.Any => js.Any): Self = StObject.set(x, "createInstance", js.Any.fromFunction1(value))
+        inline def setCreateInstance(value: Any => Any): Self = StObject.set(x, "createInstance", js.Any.fromFunction1(value))
         
         inline def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
         
         inline def setGetInstance(value: () => Instance): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
         
-        inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+        inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
         
-        inline def setKey(value: () => js.Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
+        inline def setKey(value: () => Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
         
         inline def setSetCount(value: Double => Unit): Self = StObject.set(x, "setCount", js.Any.fromFunction1(value))
         
@@ -363,7 +363,7 @@ object bws {
         
         inline def setToInstanceArray(value: () => InstanceArray): Self = StObject.set(x, "toInstanceArray", js.Any.fromFunction0(value))
         
-        inline def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
+        inline def setToXML(value: () => Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
       }
     }
     
@@ -380,7 +380,7 @@ object bws {
       def TAG(): String
       
       def createChild(
-        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
       ): InstanceForm
       
       /**
@@ -395,7 +395,7 @@ object bws {
       inline def apply(
         CHILD_TAG: () => String,
         TAG: () => String,
-        createChild: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => InstanceForm,
+        createChild: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => InstanceForm,
         toInstanceArray: () => InstanceArray
       ): InstanceFormArray = {
         val __obj = js.Dynamic.literal(CHILD_TAG = js.Any.fromFunction0(CHILD_TAG), TAG = js.Any.fromFunction0(TAG), createChild = js.Any.fromFunction1(createChild), toInstanceArray = js.Any.fromFunction0(toInstanceArray))
@@ -407,7 +407,7 @@ object bws {
         inline def setCHILD_TAG(value: () => String): Self = StObject.set(x, "CHILD_TAG", js.Any.fromFunction0(value))
         
         inline def setCreateChild(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => InstanceForm
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => InstanceForm
         ): Self = StObject.set(x, "createChild", js.Any.fromFunction1(value))
         
         inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
@@ -447,7 +447,7 @@ object bws {
         * @inheritdoc
         */
       def construct(
-        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
       ): Unit
       
       /**
@@ -509,7 +509,7 @@ object bws {
       /**
         * @inheritdoc
         */
-      def toXML(): js.Any
+      def toXML(): Any
       
       /**
         * Candidate wrappers who can contain instances.
@@ -520,14 +520,14 @@ object bws {
       
       inline def apply(
         TAG: () => String,
-        construct: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit,
+        construct: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Unit,
         getInstanceArray: () => InstanceArray,
         getWrapperArray: () => WrapperArray,
         initGenes: () => GAWrapperArray,
         instanceArray: InstanceArray,
         optimize: () => WrapperArray,
         repack: WrapperArray => WrapperArray,
-        toXML: () => js.Any,
+        toXML: () => Any,
         wrapperArray: WrapperArray
       ): Packer = {
         val __obj = js.Dynamic.literal(TAG = js.Any.fromFunction0(TAG), construct = js.Any.fromFunction1(construct), getInstanceArray = js.Any.fromFunction0(getInstanceArray), getWrapperArray = js.Any.fromFunction0(getWrapperArray), initGenes = js.Any.fromFunction0(initGenes), instanceArray = instanceArray.asInstanceOf[js.Any], optimize = js.Any.fromFunction0(optimize), repack = js.Any.fromFunction1(repack), toXML = js.Any.fromFunction0(toXML), wrapperArray = wrapperArray.asInstanceOf[js.Any])
@@ -537,7 +537,7 @@ object bws {
       extension [Self <: Packer](x: Self) {
         
         inline def setConstruct(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Unit
         ): Self = StObject.set(x, "construct", js.Any.fromFunction1(value))
         
         inline def setGetInstanceArray(value: () => InstanceArray): Self = StObject.set(x, "getInstanceArray", js.Any.fromFunction0(value))
@@ -554,7 +554,7 @@ object bws {
         
         inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
         
-        inline def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
+        inline def setToXML(value: () => Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
         
         inline def setWrapperArray(value: WrapperArray): Self = StObject.set(x, "wrapperArray", value.asInstanceOf[js.Any])
       }
@@ -571,7 +571,7 @@ object bws {
       def TAG(): String
       
       def construct(
-        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
       ): Unit
       
       def getInstanceFormArray(): InstanceFormArray
@@ -581,31 +581,31 @@ object bws {
       /**
         * Form of Instances to pack.
         */
-      /* private */ var instanceFormArray: js.Any
+      /* private */ var instanceFormArray: Any
       
       def optimize(): WrapperArray
       
       def toPacker(): Packer
       
-      def toXML(): js.Any
+      def toXML(): Any
       
       /**
         * Type of Wrappers to be used.
         */
-      /* private */ var wrapperArray: js.Any
+      /* private */ var wrapperArray: Any
     }
     object PackerForm {
       
       inline def apply(
         TAG: () => String,
-        construct: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit,
+        construct: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Unit,
         getInstanceFormArray: () => InstanceFormArray,
         getWrapperArray: () => WrapperArray,
-        instanceFormArray: js.Any,
+        instanceFormArray: Any,
         optimize: () => WrapperArray,
         toPacker: () => Packer,
-        toXML: () => js.Any,
-        wrapperArray: js.Any
+        toXML: () => Any,
+        wrapperArray: Any
       ): PackerForm = {
         val __obj = js.Dynamic.literal(TAG = js.Any.fromFunction0(TAG), construct = js.Any.fromFunction1(construct), getInstanceFormArray = js.Any.fromFunction0(getInstanceFormArray), getWrapperArray = js.Any.fromFunction0(getWrapperArray), instanceFormArray = instanceFormArray.asInstanceOf[js.Any], optimize = js.Any.fromFunction0(optimize), toPacker = js.Any.fromFunction0(toPacker), toXML = js.Any.fromFunction0(toXML), wrapperArray = wrapperArray.asInstanceOf[js.Any])
         __obj.asInstanceOf[PackerForm]
@@ -614,14 +614,14 @@ object bws {
       extension [Self <: PackerForm](x: Self) {
         
         inline def setConstruct(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Unit
         ): Self = StObject.set(x, "construct", js.Any.fromFunction1(value))
         
         inline def setGetInstanceFormArray(value: () => InstanceFormArray): Self = StObject.set(x, "getInstanceFormArray", js.Any.fromFunction0(value))
         
         inline def setGetWrapperArray(value: () => WrapperArray): Self = StObject.set(x, "getWrapperArray", js.Any.fromFunction0(value))
         
-        inline def setInstanceFormArray(value: js.Any): Self = StObject.set(x, "instanceFormArray", value.asInstanceOf[js.Any])
+        inline def setInstanceFormArray(value: Any): Self = StObject.set(x, "instanceFormArray", value.asInstanceOf[js.Any])
         
         inline def setOptimize(value: () => WrapperArray): Self = StObject.set(x, "optimize", js.Any.fromFunction0(value))
         
@@ -629,9 +629,9 @@ object bws {
         
         inline def setToPacker(value: () => Packer): Self = StObject.set(x, "toPacker", js.Any.fromFunction0(value))
         
-        inline def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
+        inline def setToXML(value: () => Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
         
-        inline def setWrapperArray(value: js.Any): Self = StObject.set(x, "wrapperArray", value.asInstanceOf[js.Any])
+        inline def setWrapperArray(value: Any): Self = StObject.set(x, "wrapperArray", value.asInstanceOf[js.Any])
       }
     }
     
@@ -658,7 +658,7 @@ object bws {
       /**
         * Key of a Product is its name.
         */
-      def key(): js.Any
+      def key(): Any
       
       /**
         * Length of the Product, length on the Z-axis in 3D.
@@ -675,7 +675,7 @@ object bws {
       /**
         * @inheritdoc
         */
-      def toXML(): js.Any
+      def toXML(): Any
       
       /**
         * Width of the Product, length on the X-axis in 3D.
@@ -693,14 +693,14 @@ object bws {
         getVolume: () => Double,
         getWidth: () => Double,
         height: Double,
-        key: () => js.Any,
+        key: () => Any,
         length: Double,
         name: String,
         setHeight: Double => Unit,
         setLength: Double => Unit,
         setName: String => Unit,
         setWidth: Double => Unit,
-        toXML: () => js.Any,
+        toXML: () => Any,
         width: Double
       ): Product = {
         val __obj = js.Dynamic.literal(TAG = js.Any.fromFunction0(TAG), TYPE = js.Any.fromFunction0(TYPE), getHeight = js.Any.fromFunction0(getHeight), getLength = js.Any.fromFunction0(getLength), getName = js.Any.fromFunction0(getName), getVolume = js.Any.fromFunction0(getVolume), getWidth = js.Any.fromFunction0(getWidth), height = height.asInstanceOf[js.Any], key = js.Any.fromFunction0(key), length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], setHeight = js.Any.fromFunction1(setHeight), setLength = js.Any.fromFunction1(setLength), setName = js.Any.fromFunction1(setName), setWidth = js.Any.fromFunction1(setWidth), toXML = js.Any.fromFunction0(toXML), width = width.asInstanceOf[js.Any])
@@ -711,7 +711,7 @@ object bws {
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        inline def setKey(value: () => js.Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
+        inline def setKey(value: () => Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
         
         inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
@@ -719,7 +719,7 @@ object bws {
         
         inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
         
-        inline def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
+        inline def setToXML(value: () => Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
         
         inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       }
@@ -765,7 +765,7 @@ object bws {
         * @inheritdoc
         */
       def construct(
-        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
       ): Unit
       
       /**
@@ -863,7 +863,7 @@ object bws {
       /**
         * @inheritdoc
         */
-      def toXML(): js.Any
+      def toXML(): Any
       
       /**
         * A wrapper wrapping the {@link instance}.
@@ -893,7 +893,7 @@ object bws {
         $position: String,
         TAG: () => String,
         changeWrapperOrientation: Double => Unit,
-        construct: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit,
+        construct: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Unit,
         createInstance: String => Instance,
         estimateOrientation: (Double, Double, Double) => Unit,
         getInstance: () => Instance,
@@ -910,7 +910,7 @@ object bws {
         orientation: Double,
         setOrientation: Double => Unit,
         setPosition: (Double, Double, Double) => Unit,
-        toXML: () => js.Any,
+        toXML: () => Any,
         wrapper: Wrapper,
         x: Double,
         y: Double,
@@ -931,7 +931,7 @@ object bws {
         inline def setChangeWrapperOrientation(value: Double => Unit): Self = StObject.set(x, "changeWrapperOrientation", js.Any.fromFunction1(value))
         
         inline def setConstruct(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Unit
         ): Self = StObject.set(x, "construct", js.Any.fromFunction1(value))
         
         inline def setCreateInstance(value: String => Instance): Self = StObject.set(x, "createInstance", js.Any.fromFunction1(value))
@@ -968,7 +968,7 @@ object bws {
         
         inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
         
-        inline def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
+        inline def setToXML(value: () => Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
         
         inline def setWrapper(value: Wrapper): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
         
@@ -1038,7 +1038,7 @@ object bws {
         * @inheritdoc
         */
       def createChild(
-        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
       ): Wrap
       
       def equals(obj: Wrapper): Boolean
@@ -1104,7 +1104,7 @@ object bws {
       /**
         * Key of a Wrapper is its name.
         */
-      def key(): js.Any
+      def key(): Any
       
       /**
         * Length of the Wrapper, length on the Z-axis in 3D.
@@ -1144,7 +1144,7 @@ object bws {
       /**
         * @inheritdoc
         */
-      def toXML(): js.Any
+      def toXML(): Any
       
       /**
         * Width of the Wrapper, length on the X-axis in 3D.
@@ -1166,7 +1166,7 @@ object bws {
         TAG: () => String,
         TYPE: () => String,
         containable: Instance => Boolean,
-        createChild: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Wrap,
+        createChild: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Wrap,
         equals_ : Wrapper => Boolean,
         getContainableHeight: () => Double,
         getContainableLength: () => Double,
@@ -1181,7 +1181,7 @@ object bws {
         getVolume: () => Double,
         getWidth: () => Double,
         height: Double,
-        key: () => js.Any,
+        key: () => Any,
         length: Double,
         name: String,
         price: Double,
@@ -1192,7 +1192,7 @@ object bws {
         setThickness: Double => Unit,
         setWidth: Double => Unit,
         thickness: Double,
-        toXML: () => js.Any,
+        toXML: () => Any,
         width: Double
       ): Wrapper = {
         val __obj = js.Dynamic.literal($height = $height.asInstanceOf[js.Any], $length = $length.asInstanceOf[js.Any], $name = $name.asInstanceOf[js.Any], $price = $price.asInstanceOf[js.Any], $scale = $scale.asInstanceOf[js.Any], $spaceUtilization = $spaceUtilization.asInstanceOf[js.Any], $thickness = $thickness.asInstanceOf[js.Any], $width = $width.asInstanceOf[js.Any], CHILD_TAG = js.Any.fromFunction0(CHILD_TAG), TAG = js.Any.fromFunction0(TAG), TYPE = js.Any.fromFunction0(TYPE), containable = js.Any.fromFunction1(containable), createChild = js.Any.fromFunction1(createChild), getContainableHeight = js.Any.fromFunction0(getContainableHeight), getContainableLength = js.Any.fromFunction0(getContainableLength), getContainableVolume = js.Any.fromFunction0(getContainableVolume), getContainableWidth = js.Any.fromFunction0(getContainableWidth), getHeight = js.Any.fromFunction0(getHeight), getLength = js.Any.fromFunction0(getLength), getName = js.Any.fromFunction0(getName), getPrice = js.Any.fromFunction0(getPrice), getThickness = js.Any.fromFunction0(getThickness), getUtilization = js.Any.fromFunction0(getUtilization), getVolume = js.Any.fromFunction0(getVolume), getWidth = js.Any.fromFunction0(getWidth), height = height.asInstanceOf[js.Any], key = js.Any.fromFunction0(key), length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], setHeight = js.Any.fromFunction1(setHeight), setLength = js.Any.fromFunction1(setLength), setName = js.Any.fromFunction1(setName), setPrice = js.Any.fromFunction1(setPrice), setThickness = js.Any.fromFunction1(setThickness), setWidth = js.Any.fromFunction1(setWidth), thickness = thickness.asInstanceOf[js.Any], toXML = js.Any.fromFunction0(toXML), width = width.asInstanceOf[js.Any])
@@ -1223,7 +1223,7 @@ object bws {
         inline def setContainable(value: Instance => Boolean): Self = StObject.set(x, "containable", js.Any.fromFunction1(value))
         
         inline def setCreateChild(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Wrap
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Wrap
         ): Self = StObject.set(x, "createChild", js.Any.fromFunction1(value))
         
         inline def setEquals_(value: Wrapper => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
@@ -1244,7 +1244,7 @@ object bws {
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        inline def setKey(value: () => js.Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
+        inline def setKey(value: () => Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
         
         inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
@@ -1260,7 +1260,7 @@ object bws {
         
         inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
         
-        inline def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
+        inline def setToXML(value: () => Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
         
         inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       }
@@ -1283,7 +1283,7 @@ object bws {
         * @inheritdoc
         */
       def createChild(
-        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any
+        xml: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any
       ): Wrapper
       
       /**
@@ -1301,7 +1301,7 @@ object bws {
       inline def apply(
         CHILD_TAG: () => String,
         TAG: () => String,
-        createChild: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Wrapper,
+        createChild: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Wrapper,
         getPrice: () => Double,
         getUtilization: () => Double
       ): WrapperArray = {
@@ -1314,7 +1314,7 @@ object bws {
         inline def setCHILD_TAG(value: () => String): Self = StObject.set(x, "CHILD_TAG", js.Any.fromFunction0(value))
         
         inline def setCreateChild(
-          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Wrapper
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ Any => Wrapper
         ): Self = StObject.set(x, "createChild", js.Any.fromFunction1(value))
         
         inline def setGetPrice(value: () => Double): Self = StObject.set(x, "getPrice", js.Any.fromFunction0(value))
@@ -1376,7 +1376,7 @@ object bws {
       /**
         * Key of a WrapperGroup is dependent on its sample.
         */
-      def key(): js.Any = js.native
+      def key(): Any = js.native
       
       /**
         * <p> Run optimization in level of the group. </p>
@@ -1407,7 +1407,7 @@ object bws {
         * @return Instances failed to {@link Wrap wrap} by overloading.
         * @see boxologic
         */
-      /* private */ def pack(instanceArray: js.Any): js.Any = js.native
+      /* private */ def pack(instanceArray: Any): Any = js.native
       
       /**
         * <p> A sample, standard of the WrapperGroup. </p>

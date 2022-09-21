@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ToggleTableCellAlignTopCenterCommand")
 @js.native
-class ToggleTableCellAlignTopCenterCommand ()
+open class ToggleTableCellAlignTopCenterCommand ()
   extends StObject
      with typings.devexpressWeb.ToggleTableCellAlignTopCenterCommand {
   

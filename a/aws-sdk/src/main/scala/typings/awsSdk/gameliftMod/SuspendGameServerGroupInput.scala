@@ -29,6 +29,6 @@ object SuspendGameServerGroupInput {
     
     inline def setSuspendActions(value: GameServerGroupActions): Self = StObject.set(x, "SuspendActions", value.asInstanceOf[js.Any])
     
-    inline def setSuspendActionsVarargs(value: GameServerGroupAction*): Self = StObject.set(x, "SuspendActions", js.Array(value :_*))
+    inline def setSuspendActionsVarargs(value: GameServerGroupAction*): Self = StObject.set(x, "SuspendActions", js.Array(value*))
   }
 }

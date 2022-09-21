@@ -14,7 +14,7 @@ object pipelineSchedulesMod {
   
   @JSImport("gitlab/dist/types/core/services/PipelineSchedules", "PipelineSchedules")
   @js.native
-  class PipelineSchedules () extends BaseService {
+  open class PipelineSchedules () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[GetResponse] = js.native

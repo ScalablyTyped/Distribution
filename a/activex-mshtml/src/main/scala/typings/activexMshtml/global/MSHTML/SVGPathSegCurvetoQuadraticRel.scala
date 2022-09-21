@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGPathSegCurvetoQuadraticRel")
 @js.native
-/* private */ class SVGPathSegCurvetoQuadraticRel ()
+/* private */ open class SVGPathSegCurvetoQuadraticRel ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGPathSegCurvetoQuadraticRel {
   

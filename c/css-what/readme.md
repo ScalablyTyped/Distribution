@@ -1,7 +1,7 @@
 
 # Scala.js typings for css-what
 
-Typings are for version 3.4.2
+Typings are for version 6.1.0
 
 ## Library description:
 a CSS selector parser
@@ -10,15 +10,12 @@ a CSS selector parser
 | ------------------ | :-------------: |
 | Full name          | css-what |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 76 |
-| # downloads        | 522674566 |
-| # stars            | 1 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0446424233333333E8 |
+| # stars            | 187.0 |
 
 ## Links
-- [Homepage](https://github.com/fb55/css-what#readme)
-- [Bugs](https://github.com/fb55/css-what/issues)
-- [Repository](https://github.com/fb55/css-what)
 - [Npm](https://www.npmjs.com/package/css-what)
     
 

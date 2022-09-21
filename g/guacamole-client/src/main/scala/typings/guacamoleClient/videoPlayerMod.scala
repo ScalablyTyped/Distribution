@@ -12,7 +12,7 @@ object videoPlayerMod {
   
   @JSImport("guacamole-client/lib/VideoPlayer", "VideoPlayer")
   @js.native
-  class VideoPlayer () extends StObject {
+  open class VideoPlayer () extends StObject {
     
     /**
       * Notifies this Guacamole.VideoPlayer that all video up to the current

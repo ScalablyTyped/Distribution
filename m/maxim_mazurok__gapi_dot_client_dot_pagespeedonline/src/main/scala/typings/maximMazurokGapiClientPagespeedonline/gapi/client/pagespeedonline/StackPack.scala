@@ -11,7 +11,7 @@ trait StackPack extends StObject {
   var descriptions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.StackPack & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.StackPack & TopLevel[Any]
   ] = js.undefined
   
   /** The stack pack icon data uri. */
@@ -35,7 +35,7 @@ object StackPack {
     inline def setDescriptions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.StackPack & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.StackPack & TopLevel[Any]
     ): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     
     inline def setDescriptionsUndefined: Self = StObject.set(x, "descriptions", js.undefined)

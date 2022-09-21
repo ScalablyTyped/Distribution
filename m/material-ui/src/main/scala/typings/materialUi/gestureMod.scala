@@ -10,10 +10,10 @@ object gestureMod {
   
   @JSImport("material-ui/svg-icons/content/gesture", JSImport.Default)
   @js.native
-  class default () extends ContentGesture
+  open class default () extends ContentGesture
   
   @JSImport("material-ui/svg-icons/content/gesture", "ContentGesture")
   @js.native
-  class ContentGesture ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentGesture ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

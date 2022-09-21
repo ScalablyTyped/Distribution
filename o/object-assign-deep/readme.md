@@ -10,15 +10,12 @@ Allows deep cloning of plain objects that contain primitives, nested plain objec
 | ------------------ | :-------------: |
 | Full name          | object-assign-deep |
 | Keywords           | object, assign, deep, extend, clone, copy, merge, object, array |
-| # releases         | 0 |
-| # dependents       | 88 |
-| # downloads        | 1507980 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 105335.33333333333 |
+| # stars            | 67.0 |
 
 ## Links
-- [Homepage](https://github.com/saikojosh/Object-Assign-Deep#readme)
-- [Bugs](https://github.com/saikojosh/Object-Assign-Deep/issues)
-- [Repository](https://github.com/saikojosh/Object-Assign-Deep)
 - [Npm](https://www.npmjs.com/package/object-assign-deep)
     
 

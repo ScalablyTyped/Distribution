@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NotyStatic extends StObject {
   
-  def apply(notyOptions: NotyOptions): js.Any = js.native
+  def apply(notyOptions: NotyOptions): Any = js.native
   
-  def clearQueue(): js.Any = js.native
+  def clearQueue(): Any = js.native
   
-  def close(id: js.Any): js.Any = js.native
+  def close(id: Any): Any = js.native
   
-  def closeAll(): js.Any = js.native
+  def closeAll(): Any = js.native
   
   var defaults: NotyOptions = js.native
   
-  def get(id: js.Any): js.Any = js.native
+  def get(id: Any): Any = js.native
   
-  def setText(id: js.Any, text: String): js.Any = js.native
+  def setText(id: Any, text: String): Any = js.native
   
-  def setType(id: js.Any, `type`: String): js.Any = js.native
+  def setType(id: Any, `type`: String): Any = js.native
 }

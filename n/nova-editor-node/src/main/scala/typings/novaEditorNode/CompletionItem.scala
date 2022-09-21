@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/// https://novadocs.panic.com/api-reference/completion-item/
+/// https://docs.nova.app/api-reference/completion-item/
 trait CompletionItem extends StObject {
   
   var additionalTextEdits: js.UndefOr[js.Array[TextEdit]] = js.undefined
@@ -23,9 +23,9 @@ trait CompletionItem extends StObject {
   
   var insertTextFormat: js.UndefOr[InsertTextFormat] = js.undefined
   
-  var kind: CompletionItemKind
+  val kind: CompletionItemKind
   
-  var label: String
+  val label: String
   
   var range: js.UndefOr[Range] = js.undefined
 }
@@ -42,7 +42,7 @@ object CompletionItem {
     
     inline def setAdditionalTextEditsUndefined: Self = StObject.set(x, "additionalTextEdits", js.undefined)
     
-    inline def setAdditionalTextEditsVarargs(value: TextEdit*): Self = StObject.set(x, "additionalTextEdits", js.Array(value :_*))
+    inline def setAdditionalTextEditsVarargs(value: TextEdit*): Self = StObject.set(x, "additionalTextEdits", js.Array(value*))
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

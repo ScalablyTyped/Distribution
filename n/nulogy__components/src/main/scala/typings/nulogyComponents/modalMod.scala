@@ -8,5 +8,5 @@ object modalMod {
   
   @JSImport("@nulogy/components/src/Modal", "Modal")
   @js.native
-  val Modal: js.Any = js.native
+  val Modal: Any = js.native
 }

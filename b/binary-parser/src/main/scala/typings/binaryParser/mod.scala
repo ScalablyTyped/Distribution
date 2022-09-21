@@ -13,8 +13,7 @@ import typings.binaryParser.mod.Parser.Next
 import typings.binaryParser.mod.Parser.Options
 import typings.binaryParser.mod.Parser.Parsed
 import typings.binaryParser.mod.Parser.StringOptions
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import typings.std.ObjectConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +24,7 @@ object mod {
   @js.native
   trait Parser[O /* <: js.UndefOr[js.Object] */] extends StObject {
     
-    def array[N /* <: String */, Q /* <: ArrayOptions */](name: N, options: Q): Next[O, N, js.Array[js.Any | Double | js.Object]] = js.native
+    def array[N /* <: String */, Q /* <: ArrayOptions */](name: N, options: Q): Next[O, N, js.Array[Any | Double | js.Object]] = js.native
     
     def bit1[N /* <: String */](name: N): Next[O, N, Double] = js.native
     def bit1[N /* <: String */](name: N, options: Options): Next[O, N, Double] = js.native
@@ -125,7 +124,7 @@ object mod {
     
     def buffer[N /* <: String */](name: N, options: BufferOptions): Next[O, N, Buffer] = js.native
     
-    def choice[N /* <: String */, Q /* <: ChoiceOptions */](name: N, options: Q): Next[O, N, js.Any | js.Object] = js.native
+    def choice[N /* <: String */, Q /* <: ChoiceOptions */](name: N, options: Q): Next[O, N, Any | js.Object] = js.native
     
     def compile(): Unit = js.native
     
@@ -191,7 +190,7 @@ object mod {
     def parse(buffer: Buffer): Parsed[O] = js.native
     def parse(
       buffer: Buffer,
-      callback: js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[js.Any], Unit]
+      callback: js.Function2[/* err */ js.UndefOr[js.Error], /* result */ js.UndefOr[Any], Unit]
     ): Parsed[O] = js.native
     
     def seek(length: Double): Parser[O] = js.native
@@ -236,7 +235,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("binary-parser", "Parser")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends StObject
          with Parser[Unit]
     
@@ -248,17 +247,17 @@ object mod {
       extends StObject
          with Options {
       
-      var length: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])] = js.undefined
+      var length: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[Any], Double])] = js.undefined
       
-      var lengthInBytes: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])] = js.undefined
+      var lengthInBytes: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[Any], Double])] = js.undefined
       
       var readUntil: js.UndefOr[String | (js.Function2[/* item */ Double, /* buffer */ Buffer, Boolean])] = js.undefined
       
-      var `type`: String | Parser[js.Any]
+      var `type`: String | Parser[Any]
     }
     object ArrayOptions {
       
-      inline def apply(`type`: String | Parser[js.Any]): ArrayOptions = {
+      inline def apply(`type`: String | Parser[Any]): ArrayOptions = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[ArrayOptions]
@@ -266,9 +265,9 @@ object mod {
       
       extension [Self <: ArrayOptions](x: Self) {
         
-        inline def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        inline def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
-        inline def setLengthInBytes(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "lengthInBytes", value.asInstanceOf[js.Any])
+        inline def setLengthInBytes(value: Double | String | (js.ThisFunction0[/* this */ Parser[Any], Double])): Self = StObject.set(x, "lengthInBytes", value.asInstanceOf[js.Any])
         
         inline def setLengthInBytesUndefined: Self = StObject.set(x, "lengthInBytes", js.undefined)
         
@@ -280,7 +279,7 @@ object mod {
         
         inline def setReadUntilUndefined: Self = StObject.set(x, "readUntil", js.undefined)
         
-        inline def setType(value: String | Parser[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String | Parser[Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -291,7 +290,7 @@ object mod {
       @JSName("clone")
       var clone_FBufferOptions: js.UndefOr[Boolean] = js.undefined
       
-      var length: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])] = js.undefined
+      var length: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[Any], Double])] = js.undefined
       
       var readUntil: js.UndefOr[String | (js.Function2[/* item */ Double, /* buffer */ Buffer, Boolean])] = js.undefined
     }
@@ -308,7 +307,7 @@ object mod {
         
         inline def setClone_Undefined: Self = StObject.set(x, "clone", js.undefined)
         
-        inline def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        inline def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
         inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
         
@@ -324,17 +323,17 @@ object mod {
       extends StObject
          with Options {
       
-      var choices: NumberDictionary[Parser[js.Any] | String]
+      var choices: NumberDictionary[Parser[Any] | String]
       
-      var defaultChoice: js.UndefOr[Parser[js.Any] | String] = js.undefined
+      var defaultChoice: js.UndefOr[Parser[Any] | String] = js.undefined
       
-      var tag: String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])
+      var tag: String | (js.ThisFunction0[/* this */ Parser[Any], Double])
     }
     object ChoiceOptions {
       
       inline def apply(
-        choices: NumberDictionary[Parser[js.Any] | String],
-        tag: String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])
+        choices: NumberDictionary[Parser[Any] | String],
+        tag: String | (js.ThisFunction0[/* this */ Parser[Any], Double])
       ): ChoiceOptions = {
         val __obj = js.Dynamic.literal(choices = choices.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
         __obj.asInstanceOf[ChoiceOptions]
@@ -342,17 +341,17 @@ object mod {
       
       extension [Self <: ChoiceOptions](x: Self) {
         
-        inline def setChoices(value: NumberDictionary[Parser[js.Any] | String]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+        inline def setChoices(value: NumberDictionary[Parser[Any] | String]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
         
-        inline def setDefaultChoice(value: Parser[js.Any] | String): Self = StObject.set(x, "defaultChoice", value.asInstanceOf[js.Any])
+        inline def setDefaultChoice(value: Parser[Any] | String): Self = StObject.set(x, "defaultChoice", value.asInstanceOf[js.Any])
         
         inline def setDefaultChoiceUndefined: Self = StObject.set(x, "defaultChoice", js.undefined)
         
-        inline def setTag(value: String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+        inline def setTag(value: String | (js.ThisFunction0[/* this */ Parser[Any], Double])): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       }
     }
     
-    type Data = Double | String | (js.Array[Double | Parser[js.Any]]) | Parser[js.Any] | Buffer
+    type Data = Double | String | (js.Array[Double | Parser[Any]]) | Parser[Any] | Buffer
     
     /* Rewritten from type alias, can be one of: 
       - typings.binaryParser.binaryParserStrings.little
@@ -370,11 +369,11 @@ object mod {
       extends StObject
          with Options {
       
-      var `type`: Parser[js.Any]
+      var `type`: Parser[Any]
     }
     object NestOptions {
       
-      inline def apply(`type`: Parser[js.Any]): NestOptions = {
+      inline def apply(`type`: Parser[Any]): NestOptions = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[NestOptions]
@@ -382,16 +381,16 @@ object mod {
       
       extension [Self <: NestOptions](x: Self) {
         
-        inline def setType(value: Parser[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: Parser[Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
-    type Next[O /* <: js.UndefOr[js.Object] */, N /* <: String */, T /* <: js.Any */] = Parser[
+    type Next[O /* <: js.UndefOr[js.Object] */, N /* <: String */, T /* <: Any */] = Parser[
         Valid[
           O, 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ name in N ]: T}
-      */ typings.binaryParser.binaryParserStrings.Next & TopLevel[js.Any]
+      */ typings.binaryParser.binaryParserStrings.Next & TopLevel[Any]
         ]
       ]
     
@@ -399,7 +398,7 @@ object mod {
       
       var assert: js.UndefOr[String | Double | (js.Function1[/* value */ Data, Boolean])] = js.undefined
       
-      var formatter: js.UndefOr[js.Function1[/* value */ Data, js.Any]] = js.undefined
+      var formatter: js.UndefOr[js.Function1[/* value */ Data, Any]] = js.undefined
     }
     object Options {
       
@@ -416,7 +415,7 @@ object mod {
         
         inline def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
         
-        inline def setFormatter(value: /* value */ Data => js.Any): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+        inline def setFormatter(value: /* value */ Data => Any): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
         
         inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       }
@@ -432,7 +431,7 @@ object mod {
       
       var greedy: js.UndefOr[Boolean] = js.undefined
       
-      var length: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])] = js.undefined
+      var length: js.UndefOr[Double | String | (js.ThisFunction0[/* this */ Parser[Any], Double])] = js.undefined
       
       var stripNull: js.UndefOr[Boolean] = js.undefined
       
@@ -455,7 +454,7 @@ object mod {
         
         inline def setGreedyUndefined: Self = StObject.set(x, "greedy", js.undefined)
         
-        inline def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[js.Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        inline def setLength(value: Double | String | (js.ThisFunction0[/* this */ Parser[Any], Double])): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
         inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
         

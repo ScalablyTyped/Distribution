@@ -20,7 +20,7 @@ trait IResult extends StObject {
   
   var rowCount: Double
   
-  var rows: js.Array[js.Any]
+  var rows: js.Array[Any]
 }
 object IResult {
   
@@ -31,7 +31,7 @@ object IResult {
     fields: js.Array[IColumn],
     rowAsArray: Boolean,
     rowCount: Double,
-    rows: js.Array[js.Any]
+    rows: js.Array[Any]
   ): IResult = {
     val __obj = js.Dynamic.literal(_parsers = _parsers.asInstanceOf[js.Any], _types = _types.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], rowAsArray = rowAsArray.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResult]
@@ -43,19 +43,19 @@ object IResult {
     
     inline def setFields(value: js.Array[IColumn]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: IColumn*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: IColumn*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setRowAsArray(value: Boolean): Self = StObject.set(x, "rowAsArray", value.asInstanceOf[js.Any])
     
     inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    inline def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Any*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def set_parsers(value: js.Array[js.Function]): Self = StObject.set(x, "_parsers", value.asInstanceOf[js.Any])
     
-    inline def set_parsersVarargs(value: js.Function*): Self = StObject.set(x, "_parsers", js.Array(value :_*))
+    inline def set_parsersVarargs(value: js.Function*): Self = StObject.set(x, "_parsers", js.Array(value*))
     
     inline def set_types(value: Binary): Self = StObject.set(x, "_types", value.asInstanceOf[js.Any])
   }

@@ -84,7 +84,7 @@ object IListObjectDef {
     
     inline def setQExpressionsUndefined: Self = StObject.set(x, "qExpressions", js.undefined)
     
-    inline def setQExpressionsVarargs(value: INxListObjectExpressionDef*): Self = StObject.set(x, "qExpressions", js.Array(value :_*))
+    inline def setQExpressionsVarargs(value: INxListObjectExpressionDef*): Self = StObject.set(x, "qExpressions", js.Array(value*))
     
     inline def setQFrequencyMode(value: FrequencyModeType): Self = StObject.set(x, "qFrequencyMode", value.asInstanceOf[js.Any])
     
@@ -92,7 +92,7 @@ object IListObjectDef {
     
     inline def setQInitialDataFetch(value: js.Array[INxPage]): Self = StObject.set(x, "qInitialDataFetch", value.asInstanceOf[js.Any])
     
-    inline def setQInitialDataFetchVarargs(value: INxPage*): Self = StObject.set(x, "qInitialDataFetch", js.Array(value :_*))
+    inline def setQInitialDataFetchVarargs(value: INxPage*): Self = StObject.set(x, "qInitialDataFetch", js.Array(value*))
     
     inline def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
     

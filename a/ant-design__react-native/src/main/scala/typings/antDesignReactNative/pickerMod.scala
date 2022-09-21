@@ -1,6 +1,5 @@
 package typings.antDesignReactNative
 
-import typings.antDesignReactNative.anon.AntLocale
 import typings.antDesignReactNative.anon.Cascader
 import typings.antDesignReactNative.anon.Format
 import typings.antDesignReactNative.libStyleMod.WithThemeStyles
@@ -8,6 +7,8 @@ import typings.antDesignReactNative.pickerPropsTypeMod.PickerData
 import typings.antDesignReactNative.pickerPropsTypeMod.PickerPropsType
 import typings.antDesignReactNative.pickerStyleMod.PickerStyle
 import typings.react.mod.Component
+import typings.react.mod.Context
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +22,7 @@ object pickerMod {
   
   @JSImport("@ant-design/react-native/lib/picker", JSImport.Default)
   @js.native
-  class default () extends Picker
+  open class default () extends Picker
   /* static members */
   object default {
     
@@ -29,10 +30,10 @@ object pickerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@ant-design/react-native/lib/picker", "default.contextTypes")
+    @JSImport("@ant-design/react-native/lib/picker", "default.contextType")
     @js.native
-    def contextTypes: AntLocale = js.native
-    inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextType: Context[js.Object] = js.native
+    inline def contextType_=(x: Context[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/picker", "default.defaultProps")
     @js.native
@@ -43,61 +44,62 @@ object pickerMod {
   inline def getDefaultProps(): Format = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProps")().asInstanceOf[Format]
   
   @js.native
-  trait Picker
-    extends Component[PickerProps, js.Any, js.Any] {
+  trait Picker extends Component[PickerProps, Any, Any] {
     
-    def fixOnOk(cascader: js.Any): Unit = js.native
+    def fixOnOk(cascader: Any): Unit = js.native
     
     def getCascade(
       cascade: Boolean,
       data: js.Array[js.Array[PickerData] | PickerData],
       cols: Double,
-      itemStyle: js.Any,
-      indicatorStyle: js.Any
+      itemStyle: Any,
+      indicatorStyle: Any
     ): Cascader = js.native
     def getCascade(
       cascade: Boolean,
       data: js.Array[js.Array[PickerData] | PickerData],
       cols: Unit,
-      itemStyle: js.Any,
-      indicatorStyle: js.Any
+      itemStyle: Any,
+      indicatorStyle: Any
     ): Cascader = js.native
     def getCascade(
       cascade: Unit,
       data: js.Array[js.Array[PickerData] | PickerData],
       cols: Double,
-      itemStyle: js.Any,
-      indicatorStyle: js.Any
+      itemStyle: Any,
+      indicatorStyle: Any
     ): Cascader = js.native
     def getCascade(
       cascade: Unit,
       data: js.Array[js.Array[PickerData] | PickerData],
       cols: Unit,
-      itemStyle: js.Any,
-      indicatorStyle: js.Any
+      itemStyle: Any,
+      indicatorStyle: Any
     ): Cascader = js.native
     
     def getPickerCol(): js.Array[Element] = js.native
     
     def getSel(): js.UndefOr[String] = js.native
     
-    def onOk(v: js.Any): Unit = js.native
+    def onOk(v: Any): Unit = js.native
     
-    def onPickerChange(v: js.Any): Unit = js.native
+    def onPickerChange(v: Any): Unit = js.native
     
     def onVisibleChange(visible: Boolean): Unit = js.native
     
-    /* private */ var scrollValue: js.Any = js.native
+    /* private */ var scrollValue: Any = js.native
     
-    def setCasecadeScrollValue(v: js.Any): Unit = js.native
+    def setCasecadeScrollValue(v: Any): Unit = js.native
     
-    def setScrollValue(v: js.Any): Unit = js.native
+    def setScrollValue(v: Any): Unit = js.native
   }
   
   trait PickerProps
     extends StObject
        with PickerPropsType
        with WithThemeStyles[PickerStyle] {
+    
+    var children: ReactNode
     
     var pickerPrefixCls: js.UndefOr[String] = js.undefined
     
@@ -111,6 +113,10 @@ object pickerMod {
     }
     
     extension [Self <: PickerProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setPickerPrefixCls(value: String): Self = StObject.set(x, "pickerPrefixCls", value.asInstanceOf[js.Any])
       

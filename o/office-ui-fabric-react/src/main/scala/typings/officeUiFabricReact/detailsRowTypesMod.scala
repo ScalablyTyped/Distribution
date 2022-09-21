@@ -127,7 +127,7 @@ object detailsRowTypesMod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setGroupNestingDepth(value: Double): Self = StObject.set(x, "groupNestingDepth", value.asInstanceOf[js.Any])
       
@@ -212,6 +212,9 @@ object detailsRowTypesMod {
       */
     var componentRef: js.UndefOr[IRefObject[IDetailsRow]] = js.undefined
     
+    /** whether or not row should be rendered in disabled state */
+    var disabled: js.UndefOr[Boolean] = js.undefined
+    
     /**
       * Handling drag and drop events
       */
@@ -230,9 +233,15 @@ object detailsRowTypesMod {
       */
     var eventsToRegister: js.UndefOr[js.Array[EventName]] = js.undefined
     
+    /**
+      * Offset used to calculate the aria-rowindex value based on itemIndex
+      * @defaultvalue 2
+      */
+    var flatIndexOffset: js.UndefOr[Double] = js.undefined
+    
     var getCellValueKey: js.UndefOr[
         js.Function3[
-          /* item */ js.UndefOr[js.Any], 
+          /* item */ js.UndefOr[Any], 
           /* index */ js.UndefOr[Double], 
           /* column */ js.UndefOr[IColumn], 
           String
@@ -242,17 +251,27 @@ object detailsRowTypesMod {
     /**
       * Callback for getting the row aria-describedby
       */
-    var getRowAriaDescribedBy: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
+    var getRowAriaDescribedBy: js.UndefOr[js.Function1[/* item */ Any, String]] = js.undefined
+    
+    /**
+      * Callback for getting the row aria description
+      */
+    var getRowAriaDescription: js.UndefOr[js.Function1[/* item */ Any, String]] = js.undefined
     
     /**
       * Callback for getting the row aria label
       */
-    var getRowAriaLabel: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
+    var getRowAriaLabel: js.UndefOr[js.Function1[/* item */ Any, String]] = js.undefined
     
     /**
       * Nesting depth of a grouping
       */
     var groupNestingDepth: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Id for row
+      */
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * How much to indent
@@ -262,7 +281,7 @@ object detailsRowTypesMod {
     /**
       * Data source for this component
       */
-    var item: js.Any
+    var item: Any
     
     /**
       * Index of the collection of items of the DetailsList
@@ -286,7 +305,7 @@ object detailsRowTypesMod {
     
     var onRenderItemColumn: js.UndefOr[
         js.Function3[
-          /* item */ js.UndefOr[js.Any], 
+          /* item */ js.UndefOr[Any], 
           /* index */ js.UndefOr[Double], 
           /* column */ js.UndefOr[IColumn], 
           ReactNode
@@ -297,6 +316,9 @@ object detailsRowTypesMod {
       * Callback for will mount for parent
       */
     var onWillUnmount: js.UndefOr[js.Function1[/* row */ js.UndefOr[DetailsRowBase], Unit]] = js.undefined
+    
+    /** Role for the row. */
+    var role: js.UndefOr[String] = js.undefined
     
     /**
       * DOM element into which to render row field
@@ -352,7 +374,7 @@ object detailsRowTypesMod {
   }
   object IDetailsRowBaseProps {
     
-    inline def apply(item: js.Any, itemIndex: Double): IDetailsRowBaseProps = {
+    inline def apply(item: Any, itemIndex: Double): IDetailsRowBaseProps = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], itemIndex = itemIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDetailsRowBaseProps]
     }
@@ -391,7 +413,7 @@ object detailsRowTypesMod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
@@ -402,6 +424,10 @@ object detailsRowTypesMod {
       inline def setComponentRefFunction1(value: /* ref */ IDetailsRow | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
       inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setDragDropEvents(value: IDragDropEvents): Self = StObject.set(x, "dragDropEvents", value.asInstanceOf[js.Any])
       
@@ -419,19 +445,27 @@ object detailsRowTypesMod {
       
       inline def setEventsToRegisterUndefined: Self = StObject.set(x, "eventsToRegister", js.undefined)
       
-      inline def setEventsToRegisterVarargs(value: EventName*): Self = StObject.set(x, "eventsToRegister", js.Array(value :_*))
+      inline def setEventsToRegisterVarargs(value: EventName*): Self = StObject.set(x, "eventsToRegister", js.Array(value*))
+      
+      inline def setFlatIndexOffset(value: Double): Self = StObject.set(x, "flatIndexOffset", value.asInstanceOf[js.Any])
+      
+      inline def setFlatIndexOffsetUndefined: Self = StObject.set(x, "flatIndexOffset", js.undefined)
       
       inline def setGetCellValueKey(
-        value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => String
+        value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => String
       ): Self = StObject.set(x, "getCellValueKey", js.Any.fromFunction3(value))
       
       inline def setGetCellValueKeyUndefined: Self = StObject.set(x, "getCellValueKey", js.undefined)
       
-      inline def setGetRowAriaDescribedBy(value: /* item */ js.Any => String): Self = StObject.set(x, "getRowAriaDescribedBy", js.Any.fromFunction1(value))
+      inline def setGetRowAriaDescribedBy(value: /* item */ Any => String): Self = StObject.set(x, "getRowAriaDescribedBy", js.Any.fromFunction1(value))
       
       inline def setGetRowAriaDescribedByUndefined: Self = StObject.set(x, "getRowAriaDescribedBy", js.undefined)
       
-      inline def setGetRowAriaLabel(value: /* item */ js.Any => String): Self = StObject.set(x, "getRowAriaLabel", js.Any.fromFunction1(value))
+      inline def setGetRowAriaDescription(value: /* item */ Any => String): Self = StObject.set(x, "getRowAriaDescription", js.Any.fromFunction1(value))
+      
+      inline def setGetRowAriaDescriptionUndefined: Self = StObject.set(x, "getRowAriaDescription", js.undefined)
+      
+      inline def setGetRowAriaLabel(value: /* item */ Any => String): Self = StObject.set(x, "getRowAriaLabel", js.Any.fromFunction1(value))
       
       inline def setGetRowAriaLabelUndefined: Self = StObject.set(x, "getRowAriaLabel", js.undefined)
       
@@ -439,11 +473,15 @@ object detailsRowTypesMod {
       
       inline def setGroupNestingDepthUndefined: Self = StObject.set(x, "groupNestingDepth", js.undefined)
       
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
       inline def setIndentWidth(value: Double): Self = StObject.set(x, "indentWidth", value.asInstanceOf[js.Any])
       
       inline def setIndentWidthUndefined: Self = StObject.set(x, "indentWidth", js.undefined)
       
-      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
       inline def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
       
@@ -462,7 +500,7 @@ object detailsRowTypesMod {
       inline def setOnRenderDetailsCheckboxUndefined: Self = StObject.set(x, "onRenderDetailsCheckbox", js.undefined)
       
       inline def setOnRenderItemColumn(
-        value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => ReactNode
+        value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => ReactNode
       ): Self = StObject.set(x, "onRenderItemColumn", js.Any.fromFunction3(value))
       
       inline def setOnRenderItemColumnUndefined: Self = StObject.set(x, "onRenderItemColumn", js.undefined)
@@ -470,6 +508,10 @@ object detailsRowTypesMod {
       inline def setOnWillUnmount(value: /* row */ js.UndefOr[DetailsRowBase] => Unit): Self = StObject.set(x, "onWillUnmount", js.Any.fromFunction1(value))
       
       inline def setOnWillUnmountUndefined: Self = StObject.set(x, "onWillUnmount", js.undefined)
+      
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
       inline def setRowFieldsAs(value: ComponentType[IDetailsRowFieldsProps]): Self = StObject.set(x, "rowFieldsAs", value.asInstanceOf[js.Any])
       
@@ -537,7 +579,7 @@ object detailsRowTypesMod {
     
     inline def apply(
       columns: js.Array[IColumn],
-      item: js.Any,
+      item: Any,
       itemIndex: Double,
       selection: ISelection[IObjectWithKey],
       selectionMode: SelectionMode
@@ -550,7 +592,7 @@ object detailsRowTypesMod {
       
       inline def setColumns(value: js.Array[IColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: IColumn*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setSelection(value: ISelection[IObjectWithKey]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
@@ -558,7 +600,7 @@ object detailsRowTypesMod {
     }
   }
   
-  /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.types.IDetailsRowProps, 'theme'>> & {  isSelected :boolean | undefined,   anySelected :boolean | undefined,   canSelect :boolean | undefined,   droppingClassName :string | undefined,   isCheckVisible :boolean | undefined,   isRowHeader :boolean | undefined,   checkboxCellClassName :string | undefined,   className :string | undefined,   compact :boolean | undefined,   cellStyleProps :office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.types.ICellStyleProps | undefined,   enableUpdateAnimations :boolean | undefined} */
+  /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.types.IDetailsRowProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.types.IDetailsRowProps, 'disabled'> & {  isSelected :boolean | undefined,   anySelected :boolean | undefined,   canSelect :boolean | undefined,   droppingClassName :string | undefined,   isCheckVisible :boolean | undefined,   isRowHeader :boolean | undefined,   checkboxCellClassName :string | undefined,   className :string | undefined,   compact :boolean | undefined,   cellStyleProps :office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.types.ICellStyleProps | undefined,   enableUpdateAnimations :boolean | undefined} */
   trait IDetailsRowStyleProps extends StObject {
     
     /** Whether there are any rows in the list selected */
@@ -577,6 +619,8 @@ object detailsRowTypesMod {
     
     /** Is list in compact mode */
     var compact: js.UndefOr[Boolean] = js.undefined
+    
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Class name of when this becomes a drop target. */
     var droppingClassName: js.UndefOr[String] = js.undefined
@@ -627,6 +671,10 @@ object detailsRowTypesMod {
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
       inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setDroppingClassName(value: String): Self = StObject.set(x, "droppingClassName", value.asInstanceOf[js.Any])
       

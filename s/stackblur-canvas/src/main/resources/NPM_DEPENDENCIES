@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "stackblur-canvas" : "2.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "stackblur-canvas" : "2.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

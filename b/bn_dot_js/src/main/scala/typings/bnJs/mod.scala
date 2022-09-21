@@ -1,36 +1,44 @@
 package typings.bnJs
 
+import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.bnJs.anon.A
+import typings.bnJs.anon.Div
 import typings.bnJs.bnJsNumbers.`-1`
 import typings.bnJs.bnJsNumbers.`0`
 import typings.bnJs.bnJsNumbers.`1`
+import typings.bnJs.bnJsNumbers.`26`
+import typings.bnJs.bnJsStrings.div
 import typings.bnJs.bnJsStrings.hex
-import typings.node.Buffer
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
+object mod extends Shortcut {
   
   @JSImport("bn.js", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with BN {
     def this(number: String) = this()
     def this(number: js.Array[Double]) = this()
+    def this(number: js.typedarray.Uint8Array) = this()
     def this(number: Double) = this()
     def this(number: BN) = this()
     def this(number: Buffer) = this()
-    def this(number: Uint8Array) = this()
     def this(number: String, base: Double) = this()
     def this(number: String, base: hex) = this()
     def this(number: String, endian: Endianness) = this()
     def this(number: js.Array[Double], base: Double) = this()
     def this(number: js.Array[Double], base: hex) = this()
     def this(number: js.Array[Double], endian: Endianness) = this()
+    def this(number: js.typedarray.Uint8Array, base: Double) = this()
+    def this(number: js.typedarray.Uint8Array, base: hex) = this()
+    def this(number: js.typedarray.Uint8Array, endian: Endianness) = this()
     def this(number: Double, base: Double) = this()
     def this(number: Double, base: hex) = this()
     def this(number: Double, endian: Endianness) = this()
@@ -40,15 +48,15 @@ object mod {
     def this(number: Buffer, base: Double) = this()
     def this(number: Buffer, base: hex) = this()
     def this(number: Buffer, endian: Endianness) = this()
-    def this(number: Uint8Array, base: Double) = this()
-    def this(number: Uint8Array, base: hex) = this()
-    def this(number: Uint8Array, endian: Endianness) = this()
     def this(number: String, base: Double, endian: Endianness) = this()
     def this(number: String, base: Unit, endian: Endianness) = this()
     def this(number: String, base: hex, endian: Endianness) = this()
     def this(number: js.Array[Double], base: Double, endian: Endianness) = this()
     def this(number: js.Array[Double], base: Unit, endian: Endianness) = this()
     def this(number: js.Array[Double], base: hex, endian: Endianness) = this()
+    def this(number: js.typedarray.Uint8Array, base: Double, endian: Endianness) = this()
+    def this(number: js.typedarray.Uint8Array, base: Unit, endian: Endianness) = this()
+    def this(number: js.typedarray.Uint8Array, base: hex, endian: Endianness) = this()
     def this(number: Double, base: Double, endian: Endianness) = this()
     def this(number: Double, base: Unit, endian: Endianness) = this()
     def this(number: Double, base: hex, endian: Endianness) = this()
@@ -58,44 +66,15 @@ object mod {
     def this(number: Buffer, base: Double, endian: Endianness) = this()
     def this(number: Buffer, base: Unit, endian: Endianness) = this()
     def this(number: Buffer, base: hex, endian: Endianness) = this()
-    def this(number: Uint8Array, base: Double, endian: Endianness) = this()
-    def this(number: Uint8Array, base: Unit, endian: Endianness) = this()
-    def this(number: Uint8Array, base: hex, endian: Endianness) = this()
   }
   @JSImport("bn.js", JSImport.Namespace)
   @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-    * @description returns true if the supplied object is a BN.js instance
-    */
-  /* static member */
-  inline def isBN(b: js.Any): /* is bn.js.bn.js.BN */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBN")(b.asInstanceOf[js.Any]).asInstanceOf[/* is bn.js.bn.js.BN */ Boolean]
-  
-  /**
-    * @description returns the maximum of 2 BN instances.
-    */
-  /* static member */
-  inline def max(left: BN, right: BN): BN = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BN]
-  
-  /**
-    * @description returns the minimum of 2 BN instances.
-    */
-  /* static member */
-  inline def min(left: BN, right: BN): BN = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BN]
-  
-  /**
-    * @description  create a reduction context  with the Montgomery trick.
-    */
-  /* static member */
-  inline def mont(num: BN): ReductionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("mont")(num.asInstanceOf[js.Any]).asInstanceOf[ReductionContext]
-  
-  /**
-    * @description  create a reduction context
-    */
-  /* static member */
-  inline def red(reductionContext: BN): ReductionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("red")(reductionContext.asInstanceOf[js.Any]).asInstanceOf[ReductionContext]
-  inline def red(reductionContext: IPrimeName): ReductionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("red")(reductionContext.asInstanceOf[js.Any]).asInstanceOf[ReductionContext]
+  val ^ : js.Object & (Instantiable3[
+    /* number */ Double | String | js.Array[Double] | js.typedarray.Uint8Array | Buffer | BN, 
+    /* base */ js.UndefOr[Double | hex], 
+    /* endian */ js.UndefOr[Endianness], 
+    BN
+  ]) = js.native
   
   @js.native
   trait BN extends StObject {
@@ -159,6 +138,14 @@ object mod {
       * @description  rounded division
       */
     def divRound(b: BN): BN = js.native
+    
+    /**
+      * @description division with remainder
+      */
+    def divmod(b: BN): Div = js.native
+    def divmod(b: BN, mode: div | typings.bnJs.bnJsStrings.mod): Div = js.native
+    def divmod(b: BN, mode: div | typings.bnJs.bnJsStrings.mod, positive: Boolean): Div = js.native
+    def divmod(b: BN, mode: Unit, positive: Boolean): Div = js.native
     
     /**
       * @description divide
@@ -376,10 +363,15 @@ object mod {
     def mod(b: BN): BN = js.native
     
     /**
-      * @see API consistency https://github.com/indutny/bn.js/pull/130
+      * @deprecated
       * @description reduct
       */
     def modn(b: Double): Double = js.native
+    
+    /**
+      * @description reduct
+      */
+    def modrn(b: Double): Double = js.native
     
     /**
       * @description multiply
@@ -454,28 +446,17 @@ object mod {
     def toArray(endian: Endianness): js.Array[Double] = js.native
     def toArray(endian: Endianness, length: Double): js.Array[Double] = js.native
     
+    def toArrayLike(ArrayType: js.Array[Any]): js.Array[Any] = js.native
+    def toArrayLike(ArrayType: js.Array[Any], endian: Unit, length: Double): js.Array[Any] = js.native
+    def toArrayLike(ArrayType: js.Array[Any], endian: Endianness): js.Array[Any] = js.native
+    def toArrayLike(ArrayType: js.Array[Any], endian: Endianness, length: Double): js.Array[Any] = js.native
     /**
       * @description convert to an instance of `type`, which must behave like an Array
       */
-    def toArrayLike(ArrayType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Buffer */ js.Any): Buffer = js.native
-    def toArrayLike(
-      ArrayType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Buffer */ js.Any,
-      endian: Unit,
-      length: Double
-    ): Buffer = js.native
-    def toArrayLike(
-      ArrayType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Buffer */ js.Any,
-      endian: Endianness
-    ): Buffer = js.native
-    def toArrayLike(
-      ArrayType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Buffer */ js.Any,
-      endian: Endianness,
-      length: Double
-    ): Buffer = js.native
-    def toArrayLike(ArrayType: js.Array[js.Any]): js.Array[js.Any] = js.native
-    def toArrayLike(ArrayType: js.Array[js.Any], endian: Unit, length: Double): js.Array[js.Any] = js.native
-    def toArrayLike(ArrayType: js.Array[js.Any], endian: Endianness): js.Array[js.Any] = js.native
-    def toArrayLike(ArrayType: js.Array[js.Any], endian: Endianness, length: Double): js.Array[js.Any] = js.native
+    def toArrayLike(ArrayType: BufferConstructor): Buffer = js.native
+    def toArrayLike(ArrayType: BufferConstructor, endian: Unit, length: Double): Buffer = js.native
+    def toArrayLike(ArrayType: BufferConstructor, endian: Endianness): Buffer = js.native
+    def toArrayLike(ArrayType: BufferConstructor, endian: Endianness, length: Double): Buffer = js.native
     
     /**
       * @description  convert to Node.js Buffer (if available). For compatibility with browserify and similar tools, use this instead: a.toArrayLike(Buffer, endian, length)
@@ -558,6 +539,105 @@ object mod {
       */
     def zeroBits(): Double = js.native
   }
+  /* static member */
+  @JSImport("bn.js", "BN")
+  @js.native
+  def BN: Instantiable3[
+    /* number */ Double | String | js.Array[Double] | js.typedarray.Uint8Array | Buffer | BN, 
+    /* base */ js.UndefOr[Double | hex], 
+    /* endian */ js.UndefOr[Endianness], 
+    BN
+  ] = js.native
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("bn.js", "BN")
+  @js.native
+  open class BNCls protected ()
+    extends StObject
+       with BN {
+    def this(number: String) = this()
+    def this(number: js.Array[Double]) = this()
+    def this(number: js.typedarray.Uint8Array) = this()
+    def this(number: Double) = this()
+    def this(number: BN) = this()
+    def this(number: Buffer) = this()
+    def this(number: String, base: Double) = this()
+    def this(number: String, base: hex) = this()
+    def this(number: js.Array[Double], base: Double) = this()
+    def this(number: js.Array[Double], base: hex) = this()
+    def this(number: js.typedarray.Uint8Array, base: Double) = this()
+    def this(number: js.typedarray.Uint8Array, base: hex) = this()
+    def this(number: Double, base: Double) = this()
+    def this(number: Double, base: hex) = this()
+    def this(number: BN, base: Double) = this()
+    def this(number: BN, base: hex) = this()
+    def this(number: Buffer, base: Double) = this()
+    def this(number: Buffer, base: hex) = this()
+    def this(number: String, base: Double, endian: Endianness) = this()
+    def this(number: String, base: Unit, endian: Endianness) = this()
+    def this(number: String, base: hex, endian: Endianness) = this()
+    def this(number: js.Array[Double], base: Double, endian: Endianness) = this()
+    def this(number: js.Array[Double], base: Unit, endian: Endianness) = this()
+    def this(number: js.Array[Double], base: hex, endian: Endianness) = this()
+    def this(number: js.typedarray.Uint8Array, base: Double, endian: Endianness) = this()
+    def this(number: js.typedarray.Uint8Array, base: Unit, endian: Endianness) = this()
+    def this(number: js.typedarray.Uint8Array, base: hex, endian: Endianness) = this()
+    def this(number: Double, base: Double, endian: Endianness) = this()
+    def this(number: Double, base: Unit, endian: Endianness) = this()
+    def this(number: Double, base: hex, endian: Endianness) = this()
+    def this(number: BN, base: Double, endian: Endianness) = this()
+    def this(number: BN, base: Unit, endian: Endianness) = this()
+    def this(number: BN, base: hex, endian: Endianness) = this()
+    def this(number: Buffer, base: Double, endian: Endianness) = this()
+    def this(number: Buffer, base: Unit, endian: Endianness) = this()
+    def this(number: Buffer, base: hex, endian: Endianness) = this()
+  }
+  
+  inline def BN_=(
+    x: Instantiable3[
+      /* number */ Double | String | js.Array[Double] | js.typedarray.Uint8Array | Buffer | BN, 
+      /* base */ js.UndefOr[Double | hex], 
+      /* endian */ js.UndefOr[Endianness], 
+      BN
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BN")(x.asInstanceOf[js.Any])
+  
+  /**
+    * @description returns true if the supplied object is a BN.js instance
+    */
+  /* static member */
+  inline def isBN(b: Any): /* is bn.js.bn.js.BN */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBN")(b.asInstanceOf[js.Any]).asInstanceOf[/* is bn.js.bn.js.BN */ Boolean]
+  
+  /**
+    * @description returns the maximum of 2 BN instances.
+    */
+  /* static member */
+  inline def max(left: BN, right: BN): BN = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BN]
+  
+  /**
+    * @description returns the minimum of 2 BN instances.
+    */
+  /* static member */
+  inline def min(left: BN, right: BN): BN = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BN]
+  
+  /**
+    * @description  create a reduction context  with the Montgomery trick.
+    */
+  /* static member */
+  inline def mont(num: BN): ReductionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("mont")(num.asInstanceOf[js.Any]).asInstanceOf[ReductionContext]
+  
+  /**
+    * @description  create a reduction context
+    */
+  /* static member */
+  inline def red(reductionContext: BN): ReductionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("red")(reductionContext.asInstanceOf[js.Any]).asInstanceOf[ReductionContext]
+  inline def red(reductionContext: IPrimeName): ReductionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("red")(reductionContext.asInstanceOf[js.Any]).asInstanceOf[ReductionContext]
+  
+  /* static member */
+  @JSImport("bn.js", "wordSize")
+  @js.native
+  def wordSize: `26` = js.native
+  inline def wordSize_=(x: `26`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wordSize")(x.asInstanceOf[js.Any])
   
   /* Rewritten from type alias, can be one of: 
     - typings.bnJs.bnJsStrings.le
@@ -619,8 +699,7 @@ object mod {
   }
   
   /**
-    * Big-Number class with additionnal methods that are using modular
-    * operation.
+    * BN operations in a reduction context.
     */
   @js.native
   trait RedBN
@@ -635,17 +714,17 @@ object mod {
     /**
       * @description modular addition
       */
-    def redAdd(b: BN): RedBN = js.native
+    def redAdd(b: RedBN): RedBN = js.native
     
     /**
       * @description in-place modular addition
       */
-    def redIAdd(b: BN): RedBN = js.native
+    def redIAdd(b: RedBN): RedBN = js.native
     
     /**
       * @description in-place modular multiplication
       */
-    def redIMul(b: BN): RedBN = js.native
+    def redIMul(b: RedBN): RedBN = js.native
     
     /**
       * @description in-place modular square
@@ -655,7 +734,7 @@ object mod {
     /**
       * @description in-place modular subtraction
       */
-    def redISub(b: BN): RedBN = js.native
+    def redISub(b: RedBN): RedBN = js.native
     
     /**
       * @description modular inverse of the number
@@ -665,7 +744,7 @@ object mod {
     /**
       * @description modular multiplication
       */
-    def redMul(b: BN): RedBN = js.native
+    def redMul(b: RedBN): RedBN = js.native
     
     /**
       * @description modular negation
@@ -695,12 +774,12 @@ object mod {
     /**
       * @description modular subtraction
       */
-    def redSub(b: BN): RedBN = js.native
+    def redSub(b: RedBN): RedBN = js.native
   }
   
   trait ReductionContext
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var m: Double
     
@@ -720,4 +799,19 @@ object mod {
       inline def setPrime(value: MPrime): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
     }
   }
+  
+  type _To = js.Object & (Instantiable3[
+    /* number */ Double | String | js.Array[Double] | js.typedarray.Uint8Array | Buffer | BN, 
+    /* base */ js.UndefOr[Double | hex], 
+    /* endian */ js.UndefOr[Endianness], 
+    BN
+  ])
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: js.Object & (Instantiable3[
+    /* number */ Double | String | js.Array[Double] | js.typedarray.Uint8Array | Buffer | BN, 
+    /* base */ js.UndefOr[Double | hex], 
+    /* endian */ js.UndefOr[Endianness], 
+    BN
+  ]) = ^
 }

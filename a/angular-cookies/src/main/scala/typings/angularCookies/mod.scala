@@ -1,7 +1,6 @@
 package typings.angularCookies
 
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +41,7 @@ object mod extends Shortcut {
           * String of the form "Wdy, DD Mon YYYY HH:MM:SS GMT" or a Date object
           * indicating the exact date/time this cookie will expire.
           */
-        var expires: js.UndefOr[String | Date] = js.undefined
+        var expires: js.UndefOr[String | js.Date] = js.undefined
         
         /**
           * The cookie will be available only for this path and its sub-paths.
@@ -74,7 +73,7 @@ object mod extends Shortcut {
           
           inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
           
-          inline def setExpires(value: String | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+          inline def setExpires(value: String | js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
           
           inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
           
@@ -125,17 +124,17 @@ object mod extends Shortcut {
         
         def get(key: String): String = js.native
         
-        def getAll(): js.Any = js.native
+        def getAll(): Any = js.native
         
-        def getObject(key: String): js.Any = js.native
+        def getObject(key: String): Any = js.native
         @JSName("getObject")
         def getObject_T_T[T](key: String): T = js.native
         
         def put(key: String, value: String): Unit = js.native
         def put(key: String, value: String, options: ICookiesOptions): Unit = js.native
         
-        def putObject(key: String, value: js.Any): Unit = js.native
-        def putObject(key: String, value: js.Any, options: ICookiesOptions): Unit = js.native
+        def putObject(key: String, value: Any): Unit = js.native
+        def putObject(key: String, value: Any, options: ICookiesOptions): Unit = js.native
         
         def remove(key: String): Unit = js.native
         def remove(key: String, options: ICookiesOptions): Unit = js.native

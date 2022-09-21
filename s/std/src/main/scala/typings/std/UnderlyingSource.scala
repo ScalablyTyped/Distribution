@@ -6,12 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UnderlyingSource[R] extends StObject {
   
-  var cancel: js.UndefOr[ReadableStreamErrorCallback] = js.undefined
+  /* standard dom */
+  var cancel: js.UndefOr[UnderlyingSourceCancelCallback] = js.undefined
   
-  var pull: js.UndefOr[ReadableStreamDefaultControllerCallback[R]] = js.undefined
+  /* standard dom */
+  var pull: js.UndefOr[UnderlyingSourcePullCallback[R]] = js.undefined
   
-  var start: js.UndefOr[ReadableStreamDefaultControllerCallback[R]] = js.undefined
+  /* standard dom */
+  var start: js.UndefOr[UnderlyingSourceStartCallback[R]] = js.undefined
   
+  /* standard dom */
   var `type`: Unit
 }
 object UnderlyingSource {
@@ -24,15 +28,15 @@ object UnderlyingSource {
   
   extension [Self <: UnderlyingSource[?], R](x: Self & UnderlyingSource[R]) {
     
-    inline def setCancel(value: /* reason */ js.Any => Unit | js.Thenable[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+    inline def setCancel(value: /* reason */ js.UndefOr[Any] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
     inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    inline def setPull(value: /* controller */ ReadableStreamDefaultController[R] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "pull", js.Any.fromFunction1(value))
+    inline def setPull(value: /* controller */ ReadableStreamController[R] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "pull", js.Any.fromFunction1(value))
     
     inline def setPullUndefined: Self = StObject.set(x, "pull", js.undefined)
     
-    inline def setStart(value: /* controller */ ReadableStreamDefaultController[R] => Unit | js.Thenable[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* controller */ ReadableStreamController[R] => Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     

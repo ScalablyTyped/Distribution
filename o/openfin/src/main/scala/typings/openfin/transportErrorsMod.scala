@@ -9,14 +9,16 @@ object transportErrorsMod {
   
   @JSImport("openfin/_v2/transport/transport-errors", "DisconnectedError")
   @js.native
-  class DisconnectedError protected ()
+  open class DisconnectedError protected ()
     extends StObject
        with Error {
     def this(readyState: Double) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -25,79 +27,91 @@ object transportErrorsMod {
   
   @JSImport("openfin/_v2/transport/transport-errors", "DuplicateCorrelationError")
   @js.native
-  class DuplicateCorrelationError ()
+  open class DuplicateCorrelationError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("openfin/_v2/transport/transport-errors", "NoAckError")
   @js.native
-  class NoAckError ()
+  open class NoAckError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("openfin/_v2/transport/transport-errors", "NotImplementedError")
   @js.native
-  class NotImplementedError ()
+  open class NotImplementedError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("openfin/_v2/transport/transport-errors", "NotSupportedError")
   @js.native
-  class NotSupportedError ()
+  open class NotSupportedError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("openfin/_v2/transport/transport-errors", "RuntimeError")
   @js.native
-  class RuntimeError protected ()
+  open class RuntimeError protected ()
     extends StObject
        with Error {
-    def this(data: js.Any) = this()
+    def this(data: Any) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("openfin/_v2/transport/transport-errors", "UnexpectedActionError")
   @js.native
-  class UnexpectedActionError ()
+  open class UnexpectedActionError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

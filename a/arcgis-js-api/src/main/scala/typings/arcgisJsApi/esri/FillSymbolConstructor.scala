@@ -17,5 +17,5 @@ trait FillSymbolConstructor
 Instantiable0[FillSymbol]
      with Instantiable1[/* properties */ FillSymbolProperties, FillSymbol] {
   
-  def fromJSON(json: js.Any): FillSymbol = js.native
+  def fromJSON(json: Any): FillSymbol = js.native
 }

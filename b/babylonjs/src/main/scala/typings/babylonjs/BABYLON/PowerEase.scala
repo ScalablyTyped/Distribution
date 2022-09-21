@@ -14,7 +14,7 @@ trait PowerEase
 object PowerEase {
   
   inline def apply(
-    _easingMode: js.Any,
+    _easingMode: Any,
     ease: Double => Double,
     easeInCore: Double => Double,
     getEasingMode: () => Double,

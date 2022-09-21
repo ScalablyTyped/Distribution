@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ListPaymentRefundsRequest")
 @js.native
-class ListPaymentRefundsRequest () extends StObject {
+open class ListPaymentRefundsRequest () extends StObject {
   
   /**
     * Timestamp for the beginning of the requested reporting period, in RFC 3339 format.

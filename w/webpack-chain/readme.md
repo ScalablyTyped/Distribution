@@ -10,15 +10,12 @@ Typings are for version 6.5.1
 | ------------------ | :-------------: |
 | Full name          | webpack-chain |
 | Keywords           | webpack, config, chain, fluent, api |
-| # releases         | 13 |
-| # dependents       | 405 |
-| # downloads        | 37649920 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 5067172.0 |
+| # stars            | 2951.0 |
 
 ## Links
-- [Homepage](https://github.com/neutrinojs/webpack-chain#readme)
-- [Bugs](https://github.com/neutrinojs/webpack-chain/issues)
-- [Repository](https://github.com/neutrinojs/webpack-chain)
 - [Npm](https://www.npmjs.com/package/webpack-chain)
     
 

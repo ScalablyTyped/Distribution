@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
-import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.LocationList
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.Channel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,8 +14,8 @@ trait UpdateMaskUploadType extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The ID of the DV360 advertiser to which the location lists belongs. */
-  var advertiserId: String
+  /** The ID of the advertiser that owns the created channel. */
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
@@ -23,17 +23,20 @@ trait UpdateMaskUploadType extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /** Output only. The unique ID of the channel. Assigned by the system. */
+  var channelId: String
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Output only. The unique ID of the location list. Assigned by the system. */
-  var locationListId: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
+  
+  /** The ID of the partner that owns the created channel. */
+  var partnerId: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -42,7 +45,7 @@ trait UpdateMaskUploadType extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: LocationList
+  var resource: Channel
   
   /** Required. The mask to control which fields to update. */
   var updateMask: js.UndefOr[String] = js.undefined
@@ -55,8 +58,8 @@ trait UpdateMaskUploadType extends StObject {
 }
 object UpdateMaskUploadType {
   
-  inline def apply(advertiserId: String, locationListId: String, resource: LocationList): UpdateMaskUploadType = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], locationListId = locationListId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(channelId: String, partnerId: String, resource: Channel): UpdateMaskUploadType = {
+    val __obj = js.Dynamic.literal(channelId = channelId.asInstanceOf[js.Any], partnerId = partnerId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMaskUploadType]
   }
   
@@ -72,6 +75,8 @@ object UpdateMaskUploadType {
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
+    
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
@@ -79,6 +84,8 @@ object UpdateMaskUploadType {
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -88,11 +95,11 @@ object UpdateMaskUploadType {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setLocationListId(value: String): Self = StObject.set(x, "locationListId", value.asInstanceOf[js.Any])
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    
+    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -102,7 +109,7 @@ object UpdateMaskUploadType {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: LocationList): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Channel): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

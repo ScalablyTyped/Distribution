@@ -11,9 +11,9 @@ provides access to the windows registry through the REG tool
 | Full name          | winreg |
 | Keywords           | windows, registry |
 | # releases         | 0 |
-| # dependents       | 108 |
-| # downloads        | 4927883 |
-| # stars            | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 601737.0 |
+| # stars            | 198.0 |
 
 ## Links
 - [Homepage](http://fresc81.github.io/node-winreg)

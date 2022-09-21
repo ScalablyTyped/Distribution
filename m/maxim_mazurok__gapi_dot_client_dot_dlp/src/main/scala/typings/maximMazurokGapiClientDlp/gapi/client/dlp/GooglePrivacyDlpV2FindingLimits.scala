@@ -31,7 +31,7 @@ object GooglePrivacyDlpV2FindingLimits {
     
     inline def setMaxFindingsPerInfoTypeUndefined: Self = StObject.set(x, "maxFindingsPerInfoType", js.undefined)
     
-    inline def setMaxFindingsPerInfoTypeVarargs(value: GooglePrivacyDlpV2InfoTypeLimit*): Self = StObject.set(x, "maxFindingsPerInfoType", js.Array(value :_*))
+    inline def setMaxFindingsPerInfoTypeVarargs(value: GooglePrivacyDlpV2InfoTypeLimit*): Self = StObject.set(x, "maxFindingsPerInfoType", js.Array(value*))
     
     inline def setMaxFindingsPerItem(value: Double): Self = StObject.set(x, "maxFindingsPerItem", value.asInstanceOf[js.Any])
     

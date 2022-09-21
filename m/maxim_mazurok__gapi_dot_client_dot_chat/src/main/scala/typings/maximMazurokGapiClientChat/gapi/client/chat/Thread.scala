@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Thread extends StObject {
   
-  /** Resource name, in the form "spaces/∗/threads/ *". Example: spaces/AAAAMpdlehY/threads/UMxbHmzDlr4 */
+  /** Resource name, in the form "spaces/ *‍/threads/ *". Example: spaces/AAAAAAAAAAA/threads/TTTTTTTTTTT */
   var name: js.UndefOr[String] = js.undefined
 }
 object Thread {

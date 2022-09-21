@@ -3,8 +3,6 @@ package typings.fuzzaldrinPlus
 import typings.fuzzaldrinPlus.anon.TagClass
 import typings.fuzzaldrinPlus.fuzzaldrinPlusStrings.Backslash
 import typings.fuzzaldrinPlus.fuzzaldrinPlusStrings.Slash
-import typings.std.RegExp
-import typings.std.Symbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,10 +15,10 @@ object mod {
   
   @JSImport("fuzzaldrin-plus", "Query")
   @js.native
-  class Query () extends StObject {
+  open class Query () extends StObject {
     
     @JSName("$$__internal")
-    var DollarDollar__internal: Symbol = js.native
+    var DollarDollar__internal: js.Symbol = js.native
   }
   
   inline def filter[T](data: js.Array[T], query: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(data.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
@@ -75,7 +73,7 @@ object mod {
     
     var allowErrors: js.UndefOr[Boolean] = js.undefined
     
-    var optCharRegEx: js.UndefOr[RegExp] = js.undefined
+    var optCharRegEx: js.UndefOr[js.RegExp] = js.undefined
     
     var pathSeparator: js.UndefOr[Slash | Backslash | String] = js.undefined
     
@@ -100,7 +98,7 @@ object mod {
       
       inline def setAllowErrorsUndefined: Self = StObject.set(x, "allowErrors", js.undefined)
       
-      inline def setOptCharRegEx(value: RegExp): Self = StObject.set(x, "optCharRegEx", value.asInstanceOf[js.Any])
+      inline def setOptCharRegEx(value: js.RegExp): Self = StObject.set(x, "optCharRegEx", value.asInstanceOf[js.Any])
       
       inline def setOptCharRegExUndefined: Self = StObject.set(x, "optCharRegEx", js.undefined)
       

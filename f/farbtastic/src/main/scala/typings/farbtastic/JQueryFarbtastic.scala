@@ -9,7 +9,7 @@ object JQueryFarbtastic {
   
   type Callback = CallbackFunction | Placeholder
   
-  type CallbackFunction = js.Function1[/* color */ String, js.Any]
+  type CallbackFunction = js.Function1[/* color */ String, Any]
   
   @js.native
   trait Farbtastic extends StObject {
@@ -47,7 +47,7 @@ object JQueryFarbtastic {
       
       inline def setCallback(value: Callback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      inline def setCallbackFunction1(value: /* color */ String => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallbackFunction1(value: /* color */ String => Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       

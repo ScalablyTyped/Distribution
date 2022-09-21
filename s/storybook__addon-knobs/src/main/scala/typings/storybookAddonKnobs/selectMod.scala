@@ -1,6 +1,5 @@
 package typings.storybookAddonKnobs
 
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import typings.std.Extract
@@ -19,8 +18,8 @@ object selectMod {
   /* Inlined react.react.FunctionComponent<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Select.SelectTypeProps<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Select.SelectTypeKnobValue>> & {  serialize :(value : @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Select.SelectTypeKnobValue): @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Select.SelectTypeKnobValue,   deserialize :(value : @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Select.SelectTypeKnobValue): @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Select.SelectTypeKnobValue} */
   object default {
     
-    inline def apply(props: PropsWithChildren[SelectTypeProps[SelectTypeKnobValue]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildren[SelectTypeProps[SelectTypeKnobValue]], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: SelectTypeProps[SelectTypeKnobValue]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: SelectTypeProps[SelectTypeKnobValue], context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Select", JSImport.Default)
     @js.native
@@ -28,8 +27,8 @@ object selectMod {
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Select", "default.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Select", "default.defaultProps")
     @js.native
@@ -74,11 +73,11 @@ object selectMod {
       
       inline def setOptions(value: SelectTypeOptionsProp[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: T*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: T*): Self = StObject.set(x, "options", js.Array(value*))
     }
   }
   
-  type SelectTypeKnobValue = js.UndefOr[String | Double | Boolean | Null | js.Array[PropertyKey]]
+  type SelectTypeKnobValue = js.UndefOr[String | Double | Boolean | Null | js.Array[PropertyKey] | (Record[String, Any])]
   
   type SelectTypeOptionsProp[T /* <: SelectTypeKnobValue */] = (Record[
     (Extract[T, PropertyKey]) | PropertyKey, 

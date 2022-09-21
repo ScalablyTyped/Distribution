@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection")
 @js.native
-class CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection () extends StObject {
+open class CatalogCustomAttributeDefinitionSelectionConfigCustomAttributeSelection () extends StObject {
   
   /**
     * Selection name, unique within `allowed_selections`.

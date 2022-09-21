@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric/fabric-impl", "Gradient")
 @js.native
-class Gradient protected ()
+open class Gradient protected ()
   extends StObject
      with IGradientOptions {
   /**
@@ -36,7 +36,7 @@ class Gradient protected ()
     * Adds another colorStop
     * @param colorStop Object with offset and color
     */
-  def addColorStop(colorStop: js.Any): Gradient = js.native
+  def addColorStop(colorStop: Any): Gradient = js.native
   
   /**
     * Returns an instance of CanvasGradient
@@ -47,15 +47,15 @@ class Gradient protected ()
   /**
     * Returns object representation of a gradient
     */
-  def toObject(): js.Any = js.native
-  def toObject(propertiesToInclude: js.Any): js.Any = js.native
+  def toObject(): Any = js.native
+  def toObject(propertiesToInclude: Any): Any = js.native
   
   /**
     * Returns SVG representation of an gradient
     * @param {Object} object Object to create a gradient for
     * @return {String} SVG representation of an gradient (linear/radial)
     */
-  def toSVG(`object`: js.Any): String = js.native
+  def toSVG(`object`: Any): String = js.native
 }
 /* static members */
 object Gradient {
@@ -63,16 +63,6 @@ object Gradient {
   @JSImport("fabric/fabric-impl", "Gradient")
   @js.native
   val ^ : js.Any = js.native
-  
-  /**
-    * Returns {@link fabric.Gradient} instance from its object representation
-    * @static
-    * @memberOf fabric.Gradient
-    * @param {Object} obj
-    * @param {Object} [options] Options object
-    */
-  inline def forObject(obj: js.Any): Gradient = ^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Gradient]
-  inline def forObject(obj: js.Any, options: IGradientOptions): Gradient = (^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Gradient]
   
   /**
     * Returns {@link fabric.Gradient} instance from an SVG element

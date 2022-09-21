@@ -12,7 +12,7 @@ object toastContainerNativeMod {
   
   @JSImport("antd-mobile-rn/lib/toast/ToastContainer.native", JSImport.Default)
   @js.native
-  class default protected () extends ToastContainer {
+  open class default protected () extends ToastContainer {
     def this(props: ToastProps) = this()
   }
   /* static members */
@@ -29,8 +29,7 @@ object toastContainerNativeMod {
   }
   
   @js.native
-  trait ToastContainer
-    extends Component[ToastProps, js.Any, js.Any] {
+  trait ToastContainer extends Component[ToastProps, Any, Any] {
     
     var anim: CompositeAnimation | Null = js.native
     

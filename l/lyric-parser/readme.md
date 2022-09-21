@@ -10,10 +10,10 @@ lyric-parser base on javascript
 | ------------------ | :-------------: |
 | Full name          | lyric-parser |
 | Keywords           | lyric, parser |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 7969 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 705.3333333333334 |
+| # stars            | 505.0 |
 
 ## Links
 - [Homepage](https://github.com/ustbhuangyi/lyric-parser#readme)

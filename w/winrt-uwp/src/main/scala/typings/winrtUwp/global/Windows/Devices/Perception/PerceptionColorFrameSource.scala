@@ -30,7 +30,7 @@ object PerceptionColorFrameSource {
     * @return When the method completes, it asynchronously returns a list of color frame sources.
     */
   /* static member */
-  inline def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+  inline def findAllAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
   
   /**
     * Finds an color frame source by looking up its unique ID.

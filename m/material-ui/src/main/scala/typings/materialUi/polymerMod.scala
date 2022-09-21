@@ -10,10 +10,10 @@ object polymerMod {
   
   @JSImport("material-ui/svg-icons/action/polymer", JSImport.Default)
   @js.native
-  class default () extends ActionPolymer
+  open class default () extends ActionPolymer
   
   @JSImport("material-ui/svg-icons/action/polymer", "ActionPolymer")
   @js.native
-  class ActionPolymer ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionPolymer ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

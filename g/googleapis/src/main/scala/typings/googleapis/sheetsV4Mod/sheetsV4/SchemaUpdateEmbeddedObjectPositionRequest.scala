@@ -4,33 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Update an embedded object&#39;s position (such as a moving or resizing a
-  * chart or image).
-  */
 trait SchemaUpdateEmbeddedObjectPositionRequest extends StObject {
   
   /**
-    * The fields of OverlayPosition that should be updated when setting a new
-    * position. Used only if newPosition.overlayPosition is set, in which case
-    * at least one field must be specified.  The root
-    * `newPosition.overlayPosition` is implied and should not be specified. A
-    * single `&quot;*&quot;` can be used as short-hand for listing every field.
+    * The fields of OverlayPosition that should be updated when setting a new position. Used only if newPosition.overlayPosition is set, in which case at least one field must be specified. The root `newPosition.overlayPosition` is implied and should not be specified. A single `"*"` can be used as short-hand for listing every field.
     */
-  var fields: js.UndefOr[String] = js.undefined
+  var fields: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * An explicit position to move the embedded object to. If
-    * newPosition.sheetId is set, a new sheet with that ID will be created. If
-    * newPosition.newSheet is set to true, a new sheet will be created with an
-    * ID that will be chosen for you.
+    * An explicit position to move the embedded object to. If newPosition.sheetId is set, a new sheet with that ID will be created. If newPosition.newSheet is set to true, a new sheet will be created with an ID that will be chosen for you.
     */
   var newPosition: js.UndefOr[SchemaEmbeddedObjectPosition] = js.undefined
   
   /**
     * The ID of the object to moved.
     */
-  var objectId: js.UndefOr[Double] = js.undefined
+  var objectId: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaUpdateEmbeddedObjectPositionRequest {
   
@@ -43,6 +32,8 @@ object SchemaUpdateEmbeddedObjectPositionRequest {
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
+    inline def setFieldsNull: Self = StObject.set(x, "fields", null)
+    
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
     inline def setNewPosition(value: SchemaEmbeddedObjectPosition): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
@@ -50,6 +41,8 @@ object SchemaUpdateEmbeddedObjectPositionRequest {
     inline def setNewPositionUndefined: Self = StObject.set(x, "newPosition", js.undefined)
     
     inline def setObjectId(value: Double): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    
+    inline def setObjectIdNull: Self = StObject.set(x, "objectId", null)
     
     inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }

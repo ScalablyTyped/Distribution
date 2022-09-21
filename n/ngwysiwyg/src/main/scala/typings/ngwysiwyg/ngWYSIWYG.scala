@@ -27,7 +27,7 @@ object ngWYSIWYG {
       
       inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
       
-      inline def setToolbarVarargs(value: Toolbar*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
+      inline def setToolbarVarargs(value: Toolbar*): Self = StObject.set(x, "toolbar", js.Array(value*))
     }
   }
   
@@ -48,7 +48,7 @@ object ngWYSIWYG {
       
       inline def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

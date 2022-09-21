@@ -14,12 +14,12 @@ object followCameraMod {
   
   @JSImport("babylonjs/Cameras/followCamera", "ArcFollowCamera")
   @js.native
-  class ArcFollowCamera protected () extends TargetCamera {
+  open class ArcFollowCamera protected () extends TargetCamera {
     /**
       * Instantiates a new ArcFollowCamera
       * @see https://doc.babylonjs.com/features/cameras#follow-camera
       * @param name Define the name of the camera
-      * @param alpha Define the rotation angle of the camera around the logitudinal axis
+      * @param alpha Define the rotation angle of the camera around the longitudinal axis
       * @param beta Define the rotation angle of the camera around the elevation axis
       * @param radius Define the radius of the camera from its target point
       * @param target Define the target of the camera
@@ -38,12 +38,12 @@ object followCameraMod {
       scene: Scene
     ) = this()
     
-    /* private */ var _cartesianCoordinates: js.Any = js.native
+    /* private */ var _cartesianCoordinates: Any = js.native
     
-    /* private */ var _follow: js.Any = js.native
+    /* private */ var _follow: Any = js.native
     
     /** Define the camera target (the mesh it should follow) */
-    /* private */ var _meshTarget: js.Any = js.native
+    /* private */ var _meshTarget: Any = js.native
     
     /** The longitudinal angle of the camera */
     var alpha: Double = js.native
@@ -53,11 +53,17 @@ object followCameraMod {
     
     /** The radius of the camera from its target */
     var radius: Double = js.native
+    
+    /**
+      * Sets the mesh to follow with this camera.
+      * @param target the target to follow
+      */
+    def setMeshTarget(target: Nullable[AbstractMesh]): Unit = js.native
   }
   
   @JSImport("babylonjs/Cameras/followCamera", "FollowCamera")
   @js.native
-  class FollowCamera protected () extends TargetCamera {
+  open class FollowCamera protected () extends TargetCamera {
     /**
       * Instantiates the follow camera.
       * @see https://doc.babylonjs.com/features/cameras#follow-camera
@@ -66,12 +72,14 @@ object followCameraMod {
       * @param scene Define the scene the camera belong to
       * @param lockedTarget Define the target of the camera
       */
+    def this(name: String, position: Vector3) = this()
     def this(name: String, position: Vector3, scene: Scene) = this()
+    def this(name: String, position: Vector3, scene: Unit, lockedTarget: Nullable[AbstractMesh]) = this()
     def this(name: String, position: Vector3, scene: Scene, lockedTarget: Nullable[AbstractMesh]) = this()
     
-    /* private */ var _checkLimits: js.Any = js.native
+    /* private */ var _checkLimits: Any = js.native
     
-    /* private */ var _follow: js.Any = js.native
+    /* private */ var _follow: Any = js.native
     
     /**
       * Define how fast the camera can accelerate to follow it s target.
@@ -80,7 +88,7 @@ object followCameraMod {
     
     /**
       * Define a height offset between the camera and the object it follows.
-      * It can help following an object from the top (like a car chaing a plane)
+      * It can help following an object from the top (like a car chasing a plane)
       */
     var heightOffset: Double = js.native
     

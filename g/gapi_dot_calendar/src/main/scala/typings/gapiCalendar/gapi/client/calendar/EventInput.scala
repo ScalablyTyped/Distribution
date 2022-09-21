@@ -77,13 +77,13 @@ object EventInput {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: FileUrl*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: FileUrl*): Self = StObject.set(x, "attachments", js.Array(value*))
     
     inline def setAttendees(value: js.Array[AdditionalGuests]): Self = StObject.set(x, "attendees", value.asInstanceOf[js.Any])
     
     inline def setAttendeesUndefined: Self = StObject.set(x, "attendees", js.undefined)
     
-    inline def setAttendeesVarargs(value: AdditionalGuests*): Self = StObject.set(x, "attendees", js.Array(value :_*))
+    inline def setAttendeesVarargs(value: AdditionalGuests*): Self = StObject.set(x, "attendees", js.Array(value*))
     
     inline def setColorId(value: String): Self = StObject.set(x, "colorId", value.asInstanceOf[js.Any])
     
@@ -127,7 +127,7 @@ object EventInput {
     
     inline def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
     
-    inline def setRecurrenceVarargs(value: String*): Self = StObject.set(x, "recurrence", js.Array(value :_*))
+    inline def setRecurrenceVarargs(value: String*): Self = StObject.set(x, "recurrence", js.Array(value*))
     
     inline def setReminders(value: Overrides): Self = StObject.set(x, "reminders", value.asInstanceOf[js.Any])
     

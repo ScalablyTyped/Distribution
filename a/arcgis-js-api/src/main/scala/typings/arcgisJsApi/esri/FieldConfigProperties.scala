@@ -1,7 +1,7 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.`text-area`
-import typings.arcgisJsApi.arcgisJsApiStrings.`text-box`
+import typings.arcgisJsApi.anon.CodedValueDomainPropertie
+import typings.arcgisJsApi.anon.RangeDomainPropertiestype
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,21 +20,16 @@ trait FieldConfigProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html#domain)
     */
-  var domain: js.UndefOr[CodedValueDomainProperties | RangeDomainProperties] = js.undefined
+  var domain: js.UndefOr[CodedValueDomainPropertie | RangeDomainPropertiestype] = js.undefined
   
   /**
     * Indicates whether the field can be edited.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html#editable)
     */
   var editable: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * The type of editor to use for `string` field types.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html#editorType)
-    */
-  var editorType: js.UndefOr[`text-box` | `text-area`] = js.undefined
   
   /**
     * This property is rendered as a tooltip in the [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html) widget.
@@ -45,6 +40,8 @@ trait FieldConfigProperties extends StObject {
   
   /**
     * Indicates whether date fields should display input for editing time.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html#includeTime)
     */
@@ -60,12 +57,16 @@ trait FieldConfigProperties extends StObject {
   /**
     * Restricts the input length.
     *
+    * @default -1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html#maxLength)
     */
   var maxLength: js.UndefOr[Double] = js.undefined
   
   /**
     * Restricts the input length.
+    *
+    * @default -1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html#minLength)
     */
@@ -81,19 +82,23 @@ trait FieldConfigProperties extends StObject {
   /**
     * Indicates whether the field is required.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html#required)
     */
   var required: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A reference to an [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a boolean value.
+    * A reference to the [name](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#name) of an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression defined in the [expressionInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html#expressionInfos) of the FeatureForm.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html#requiredExpression)
     */
   var requiredExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * A reference to an [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a boolean value.
+    * A reference to the [name](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#name) of an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression defined in the [expressionInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html#expressionInfos) of the FeatureForm.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html#visibilityExpression)
     */
@@ -112,17 +117,13 @@ object FieldConfigProperties {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setDomain(value: CodedValueDomainProperties | RangeDomainProperties): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: CodedValueDomainPropertie | RangeDomainPropertiestype): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
     inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
     inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
-    
-    inline def setEditorType(value: `text-box` | `text-area`): Self = StObject.set(x, "editorType", value.asInstanceOf[js.Any])
-    
-    inline def setEditorTypeUndefined: Self = StObject.set(x, "editorType", js.undefined)
     
     inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     

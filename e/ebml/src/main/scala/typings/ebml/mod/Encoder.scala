@@ -2,7 +2,7 @@ package typings.ebml.mod
 
 import typings.ebml.anon.PickTagStackItemend
 import typings.ebml.mod.Encoder.TagStackItem
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import typings.std.ReturnType
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ebml", "Encoder")
 @js.native
-class Encoder () extends Transform {
+open class Encoder () extends Transform {
   def this(opts: TransformOptions) = this()
   
   var buffer: Buffer = js.native
@@ -81,7 +81,7 @@ object Encoder {
       
       inline def setChildren(value: js.Array[TagStackItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: TagStackItem*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: TagStackItem*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

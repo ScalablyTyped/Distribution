@@ -23,117 +23,117 @@ object mod {
   
   @JSImport("@aws-sdk/client-xray-node", "BatchGetTracesCommand")
   @js.native
-  class BatchGetTracesCommand protected ()
+  open class BatchGetTracesCommand protected ()
     extends typings.awsSdkClientXrayNode.batchGetTracesCommandMod.BatchGetTracesCommand {
     def this(input: BatchGetTracesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "CreateSamplingRuleCommand")
   @js.native
-  class CreateSamplingRuleCommand protected ()
+  open class CreateSamplingRuleCommand protected ()
     extends typings.awsSdkClientXrayNode.createSamplingRuleCommandMod.CreateSamplingRuleCommand {
     def this(input: CreateSamplingRuleInput) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "DeleteSamplingRuleCommand")
   @js.native
-  class DeleteSamplingRuleCommand protected ()
+  open class DeleteSamplingRuleCommand protected ()
     extends typings.awsSdkClientXrayNode.deleteSamplingRuleCommandMod.DeleteSamplingRuleCommand {
     def this(input: DeleteSamplingRuleInput) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "GetEncryptionConfigCommand")
   @js.native
-  class GetEncryptionConfigCommand protected ()
+  open class GetEncryptionConfigCommand protected ()
     extends typings.awsSdkClientXrayNode.getEncryptionConfigCommandMod.GetEncryptionConfigCommand {
     def this(input: GetEncryptionConfigInput) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "GetSamplingRulesCommand")
   @js.native
-  class GetSamplingRulesCommand protected ()
+  open class GetSamplingRulesCommand protected ()
     extends typings.awsSdkClientXrayNode.getSamplingRulesCommandMod.GetSamplingRulesCommand {
     def this(input: GetSamplingRulesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "GetSamplingStatisticSummariesCommand")
   @js.native
-  class GetSamplingStatisticSummariesCommand protected ()
+  open class GetSamplingStatisticSummariesCommand protected ()
     extends typings.awsSdkClientXrayNode.getSamplingStatisticSummariesCommandMod.GetSamplingStatisticSummariesCommand {
     def this(input: GetSamplingStatisticSummariesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "GetSamplingTargetsCommand")
   @js.native
-  class GetSamplingTargetsCommand protected ()
+  open class GetSamplingTargetsCommand protected ()
     extends typings.awsSdkClientXrayNode.getSamplingTargetsCommandMod.GetSamplingTargetsCommand {
     def this(input: GetSamplingTargetsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "GetServiceGraphCommand")
   @js.native
-  class GetServiceGraphCommand protected ()
+  open class GetServiceGraphCommand protected ()
     extends typings.awsSdkClientXrayNode.getServiceGraphCommandMod.GetServiceGraphCommand {
     def this(input: GetServiceGraphInput) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "GetTraceGraphCommand")
   @js.native
-  class GetTraceGraphCommand protected ()
+  open class GetTraceGraphCommand protected ()
     extends typings.awsSdkClientXrayNode.getTraceGraphCommandMod.GetTraceGraphCommand {
     def this(input: GetTraceGraphInput) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "GetTraceSummariesCommand")
   @js.native
-  class GetTraceSummariesCommand protected ()
+  open class GetTraceSummariesCommand protected ()
     extends typings.awsSdkClientXrayNode.getTraceSummariesCommandMod.GetTraceSummariesCommand {
     def this(input: GetTraceSummariesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "PutEncryptionConfigCommand")
   @js.native
-  class PutEncryptionConfigCommand protected ()
+  open class PutEncryptionConfigCommand protected ()
     extends typings.awsSdkClientXrayNode.putEncryptionConfigCommandMod.PutEncryptionConfigCommand {
     def this(input: PutEncryptionConfigInput) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "PutTelemetryRecordsCommand")
   @js.native
-  class PutTelemetryRecordsCommand protected ()
+  open class PutTelemetryRecordsCommand protected ()
     extends typings.awsSdkClientXrayNode.putTelemetryRecordsCommandMod.PutTelemetryRecordsCommand {
     def this(input: PutTelemetryRecordsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "PutTraceSegmentsCommand")
   @js.native
-  class PutTraceSegmentsCommand protected ()
+  open class PutTraceSegmentsCommand protected ()
     extends typings.awsSdkClientXrayNode.putTraceSegmentsCommandMod.PutTraceSegmentsCommand {
     def this(input: PutTraceSegmentsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "UpdateSamplingRuleCommand")
   @js.native
-  class UpdateSamplingRuleCommand protected ()
+  open class UpdateSamplingRuleCommand protected ()
     extends typings.awsSdkClientXrayNode.updateSamplingRuleCommandMod.UpdateSamplingRuleCommand {
     def this(input: UpdateSamplingRuleInput) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "XRay")
   @js.native
-  class XRay protected ()
+  open class XRay protected ()
     extends typings.awsSdkClientXrayNode.xrayMod.XRay {
     def this(configuration: XRayConfiguration) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "XRayClient")
   @js.native
-  class XRayClient protected ()
+  open class XRayClient protected ()
     extends typings.awsSdkClientXrayNode.xrayclientMod.XRayClient {
     def this(configuration: XRayConfiguration) = this()
   }
   
   @JSImport("@aws-sdk/client-xray-node", "configurationProperties")
   @js.native
-  val configurationProperties: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ConfigurationDefinition<XRayResolvableConfiguration, XRayResolvedConfiguration> */ js.Any = js.native
+  val configurationProperties: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ConfigurationDefinition<XRayResolvableConfiguration, XRayResolvedConfiguration> */ Any = js.native
 }

@@ -11,21 +11,21 @@ trait Symbol3DStyleOrigin
      with Object {
   
   /**
-    * name of the symbol in the style referenced by styleName or styleUrl.
+    * name of the symbol in the style referenced by styleName or styleUrl
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
     */
   var name: String
   
   /**
-    * a well-known esri-provided style, such as `EsriThematicShapesStyle`.
+    * a well-known esri-provided style, such as `EsriThematicShapesStyle`
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
     */
   var styleName: js.UndefOr[String] = js.undefined
   
   /**
-    * url to a style definition.
+    * url to a style definition
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
     */

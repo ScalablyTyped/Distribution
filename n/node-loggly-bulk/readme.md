@@ -10,10 +10,10 @@ A client implementation for Loggly cloud Logging-as-a-Service API
 | ------------------ | :-------------: |
 | Full name          | node-loggly-bulk |
 | Keywords           | cloud computing, api, logging, loggly |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 16590121 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 792256.6666666666 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/loggly/node-loggly-bulk#readme)

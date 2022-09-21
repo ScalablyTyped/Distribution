@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PutObjectOptions extends StObject {
   
-  // user meta, will send with x-oss-meta- prefix string e.g.: { uid: 123, pid: 110 }
   var callback: js.UndefOr[ObjectCallback] = js.undefined
   
   var headers: js.UndefOr[js.Object] = js.undefined
   
-  // custom mime, will send with Content-Type entity header
+  /** user meta, will send with x-oss-meta- prefix string e.g.: { uid: 123, pid: 110 } */
   var meta: js.UndefOr[UserMeta] = js.undefined
   
-  // the operation timeout
+  /** custom mime, will send with Content-Type entity header */
   var mime: js.UndefOr[String] = js.undefined
   
+  /** the operation timeout */
   var timeout: js.UndefOr[Double] = js.undefined
 }
 object PutObjectOptions {

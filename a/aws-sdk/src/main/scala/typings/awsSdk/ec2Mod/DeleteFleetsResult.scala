@@ -29,12 +29,12 @@ object DeleteFleetsResult {
     
     inline def setSuccessfulFleetDeletionsUndefined: Self = StObject.set(x, "SuccessfulFleetDeletions", js.undefined)
     
-    inline def setSuccessfulFleetDeletionsVarargs(value: DeleteFleetSuccessItem*): Self = StObject.set(x, "SuccessfulFleetDeletions", js.Array(value :_*))
+    inline def setSuccessfulFleetDeletionsVarargs(value: DeleteFleetSuccessItem*): Self = StObject.set(x, "SuccessfulFleetDeletions", js.Array(value*))
     
     inline def setUnsuccessfulFleetDeletions(value: DeleteFleetErrorSet): Self = StObject.set(x, "UnsuccessfulFleetDeletions", value.asInstanceOf[js.Any])
     
     inline def setUnsuccessfulFleetDeletionsUndefined: Self = StObject.set(x, "UnsuccessfulFleetDeletions", js.undefined)
     
-    inline def setUnsuccessfulFleetDeletionsVarargs(value: DeleteFleetErrorItem*): Self = StObject.set(x, "UnsuccessfulFleetDeletions", js.Array(value :_*))
+    inline def setUnsuccessfulFleetDeletionsVarargs(value: DeleteFleetErrorItem*): Self = StObject.set(x, "UnsuccessfulFleetDeletions", js.Array(value*))
   }
 }

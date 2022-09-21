@@ -1,34 +1,77 @@
 package typings.awsSdk.detectiveMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccountId = java.lang.String
+type AccountId = String
 
-type AccountIdList = js.Array[typings.awsSdk.detectiveMod.AccountId]
+type AccountIdExtendedList = js.Array[AccountId]
 
-type AccountList = js.Array[typings.awsSdk.detectiveMod.Account]
+type AccountIdList = js.Array[AccountId]
 
-type EmailAddress = java.lang.String
+type AccountList = js.Array[Account]
 
-type EmailMessage = java.lang.String
+type AdministratorList = js.Array[Administrator]
 
-type GraphArn = java.lang.String
+type Boolean = scala.Boolean
 
-type GraphList = js.Array[typings.awsSdk.detectiveMod.Graph]
+type ByteValue = Double
 
-type MemberDetailList = js.Array[typings.awsSdk.detectiveMod.MemberDetail]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DETECTIVE_CORE
+  - typings.awsSdk.awsSdkStrings.EKS_AUDIT
+  - java.lang.String
+*/
+type DatasourcePackage = _DatasourcePackage | String
+
+type DatasourcePackageIngestDetails = StringDictionary[DatasourcePackageIngestDetail]
+
+type DatasourcePackageIngestHistory = StringDictionary[LastIngestStateChangeDates]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.STARTED
+  - typings.awsSdk.awsSdkStrings.STOPPED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type DatasourcePackageIngestState = _DatasourcePackageIngestState | String
+
+type DatasourcePackageIngestStates = StringDictionary[DatasourcePackageIngestState]
+
+type DatasourcePackageList = js.Array[DatasourcePackage]
+
+type EmailAddress = String
+
+type EmailMessage = String
+
+type GraphArn = String
+
+type GraphArnList = js.Array[GraphArn]
+
+type GraphList = js.Array[Graph]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INVITATION
+  - typings.awsSdk.awsSdkStrings.ORGANIZATION
+  - java.lang.String
+*/
+type InvitationType = _InvitationType | String
+
+type LastIngestStateChangeDates = StringDictionary[TimestampForCollection]
+
+type MemberDetailList = js.Array[MemberDetail]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.VOLUME_TOO_HIGH
   - typings.awsSdk.awsSdkStrings.VOLUME_UNKNOWN
   - java.lang.String
 */
-type MemberDisabledReason = typings.awsSdk.detectiveMod._MemberDisabledReason | java.lang.String
+type MemberDisabledReason = _MemberDisabledReason | String
 
-type MemberResultsLimit = scala.Double
+type MemberResultsLimit = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INVITED
@@ -38,21 +81,35 @@ type MemberResultsLimit = scala.Double
   - typings.awsSdk.awsSdkStrings.ACCEPTED_BUT_DISABLED
   - java.lang.String
 */
-type MemberStatus = typings.awsSdk.detectiveMod._MemberStatus | java.lang.String
+type MemberStatus = _MemberStatus | String
 
-type PaginationToken = java.lang.String
+type MembershipDatasourcesList = js.Array[MembershipDatasources]
 
-type Percentage = scala.Double
+type PaginationToken = String
 
-type Timestamp = typings.std.Date
+type Percentage = Double
 
-type UnprocessedAccountList = js.Array[typings.awsSdk.detectiveMod.UnprocessedAccount]
+type TagKey = String
 
-type UnprocessedReason = java.lang.String
+type TagKeyList = js.Array[TagKey]
+
+type TagMap = StringDictionary[TagValue]
+
+type TagValue = String
+
+type Timestamp = js.Date
+
+type UnprocessedAccountList = js.Array[UnprocessedAccount]
+
+type UnprocessedGraphList = js.Array[UnprocessedGraph]
+
+type UnprocessedReason = String
+
+type VolumeUsageByDatasourcePackage = StringDictionary[DatasourcePackageUsageInfo]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-10-26`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.detectiveMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

@@ -1,5 +1,8 @@
 package typings.atlassianConnectJs
 
+import typings.atlassianConnectJs.AP.customContent.InterceptableEvent
+import typings.atlassianConnectJs.AP.navigator.NavigatorTargetConfluence
+import typings.atlassianConnectJs.AP.navigator.NavigatorTargetJira
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,6 +42,13 @@ object atlassianConnectJsStrings {
   inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
+  sealed trait addonModule
+    extends StObject
+       with NavigatorTargetConfluence
+       with NavigatorTargetJira
+  inline def addonModule: addonModule = "addonModule".asInstanceOf[addonModule]
+  
+  @js.native
   sealed trait auto extends StObject
   inline def auto: auto = "auto".asInstanceOf[auto]
   
@@ -51,8 +61,57 @@ object atlassianConnectJsStrings {
   inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
+  sealed trait confluenceDotcustomcontentDotcancel
+    extends StObject
+       with InterceptableEvent
+  inline def confluenceDotcustomcontentDotcancel: confluenceDotcustomcontentDotcancel = "confluence.customcontent.cancel".asInstanceOf[confluenceDotcustomcontentDotcancel]
+  
+  @js.native
+  sealed trait confluenceDotcustomcontentDotsubmit
+    extends StObject
+       with InterceptableEvent
+  inline def confluenceDotcustomcontentDotsubmit: confluenceDotcustomcontentDotsubmit = "confluence.customcontent.submit".asInstanceOf[confluenceDotcustomcontentDotsubmit]
+  
+  @js.native
+  sealed trait confluenceDotcustomcontentDotsubmitError
+    extends StObject
+       with InterceptableEvent
+  inline def confluenceDotcustomcontentDotsubmitError: confluenceDotcustomcontentDotsubmitError = "confluence.customcontent.submitError".asInstanceOf[confluenceDotcustomcontentDotsubmitError]
+  
+  @js.native
+  sealed trait confluenceDotcustomcontentDotsubmitSuccess
+    extends StObject
+       with InterceptableEvent
+  inline def confluenceDotcustomcontentDotsubmitSuccess: confluenceDotcustomcontentDotsubmitSuccess = "confluence.customcontent.submitSuccess".asInstanceOf[confluenceDotcustomcontentDotsubmitSuccess]
+  
+  @js.native
+  sealed trait contentedit
+    extends StObject
+       with NavigatorTargetConfluence
+  inline def contentedit: contentedit = "contentedit".asInstanceOf[contentedit]
+  
+  @js.native
+  sealed trait contentlist
+    extends StObject
+       with NavigatorTargetConfluence
+  inline def contentlist: contentlist = "contentlist".asInstanceOf[contentlist]
+  
+  @js.native
+  sealed trait contentview
+    extends StObject
+       with NavigatorTargetConfluence
+  inline def contentview: contentview = "contentview".asInstanceOf[contentview]
+  
+  @js.native
   sealed trait current extends StObject
   inline def current: current = "current".asInstanceOf[current]
+  
+  @js.native
+  sealed trait dashboard
+    extends StObject
+       with NavigatorTargetConfluence
+       with NavigatorTargetJira
+  inline def dashboard: dashboard = "dashboard".asInstanceOf[dashboard]
   
   @js.native
   sealed trait error extends StObject
@@ -65,6 +124,12 @@ object atlassianConnectJsStrings {
   @js.native
   sealed trait info extends StObject
   inline def info: info = "info".asInstanceOf[info]
+  
+  @js.native
+  sealed trait issue
+    extends StObject
+       with NavigatorTargetJira
+  inline def issue: issue = "issue".asInstanceOf[issue]
   
   @js.native
   sealed trait large extends StObject
@@ -83,8 +148,39 @@ object atlassianConnectJsStrings {
   inline def page: page = "page".asInstanceOf[page]
   
   @js.native
+  sealed trait projectAdminSummary
+    extends StObject
+       with NavigatorTargetJira
+  inline def projectAdminSummary: projectAdminSummary = "projectAdminSummary".asInstanceOf[projectAdminSummary]
+  
+  @js.native
+  sealed trait projectAdminTabPanel
+    extends StObject
+       with NavigatorTargetJira
+  inline def projectAdminTabPanel: projectAdminTabPanel = "projectAdminTabPanel".asInstanceOf[projectAdminTabPanel]
+  
+  @js.native
+  sealed trait site
+    extends StObject
+       with NavigatorTargetConfluence
+       with NavigatorTargetJira
+  inline def site: site = "site".asInstanceOf[site]
+  
+  @js.native
   sealed trait small extends StObject
   inline def small: small = "small".asInstanceOf[small]
+  
+  @js.native
+  sealed trait spacetools
+    extends StObject
+       with NavigatorTargetConfluence
+  inline def spacetools: spacetools = "spacetools".asInstanceOf[spacetools]
+  
+  @js.native
+  sealed trait spaceview
+    extends StObject
+       with NavigatorTargetConfluence
+  inline def spaceview: spaceview = "spaceview".asInstanceOf[spaceview]
   
   @js.native
   sealed trait submit extends StObject
@@ -93,6 +189,13 @@ object atlassianConnectJsStrings {
   @js.native
   sealed trait success extends StObject
   inline def success: success = "success".asInstanceOf[success]
+  
+  @js.native
+  sealed trait userProfile
+    extends StObject
+       with NavigatorTargetConfluence
+       with NavigatorTargetJira
+  inline def userProfile: userProfile = "userProfile".asInstanceOf[userProfile]
   
   @js.native
   sealed trait `version-at-save` extends StObject

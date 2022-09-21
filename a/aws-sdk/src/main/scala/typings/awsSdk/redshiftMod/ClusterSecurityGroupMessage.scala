@@ -29,7 +29,7 @@ object ClusterSecurityGroupMessage {
     
     inline def setClusterSecurityGroupsUndefined: Self = StObject.set(x, "ClusterSecurityGroups", js.undefined)
     
-    inline def setClusterSecurityGroupsVarargs(value: ClusterSecurityGroup*): Self = StObject.set(x, "ClusterSecurityGroups", js.Array(value :_*))
+    inline def setClusterSecurityGroupsVarargs(value: ClusterSecurityGroup*): Self = StObject.set(x, "ClusterSecurityGroups", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

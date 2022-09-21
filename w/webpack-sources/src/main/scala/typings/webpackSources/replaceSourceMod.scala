@@ -17,7 +17,7 @@ object replaceSourceMod {
     */
   @JSImport("webpack-sources/lib/ReplaceSource", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ReplaceSource {
+  open class ^ protected () extends ReplaceSource {
     /**
       * The ReplaceSource supports "identity" mappings for child source.
       * When original source matches generated source for a mapping it's assumed to be mapped char by char allowing to split mappings at replacements/insertions.

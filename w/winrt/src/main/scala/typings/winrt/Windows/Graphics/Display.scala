@@ -69,7 +69,7 @@ object Display {
   
   trait DisplayProperties extends StObject
   
-  type DisplayPropertiesEventHandler = js.Function1[/* sender */ js.Any, Unit]
+  type DisplayPropertiesEventHandler = js.Function1[/* sender */ Any, Unit]
   
   trait IDisplayPropertiesStatics extends StObject {
     
@@ -83,15 +83,15 @@ object Display {
     
     var nativeOrientation: DisplayOrientations
     
-    var oncolorprofilechanged: js.Any
+    var oncolorprofilechanged: Any
     
-    var ondisplaycontentsinvalidated: js.Any
+    var ondisplaycontentsinvalidated: Any
     
-    var onlogicaldpichanged: js.Any
+    var onlogicaldpichanged: Any
     
-    var onorientationchanged: js.Any
+    var onorientationchanged: Any
     
-    var onstereoenabledchanged: js.Any
+    var onstereoenabledchanged: Any
     
     var resolutionScale: ResolutionScale
     
@@ -105,11 +105,11 @@ object Display {
       getColorProfileAsync: () => IAsyncOperation[IRandomAccessStream],
       logicalDpi: Double,
       nativeOrientation: DisplayOrientations,
-      oncolorprofilechanged: js.Any,
-      ondisplaycontentsinvalidated: js.Any,
-      onlogicaldpichanged: js.Any,
-      onorientationchanged: js.Any,
-      onstereoenabledchanged: js.Any,
+      oncolorprofilechanged: Any,
+      ondisplaycontentsinvalidated: Any,
+      onlogicaldpichanged: Any,
+      onorientationchanged: Any,
+      onstereoenabledchanged: Any,
       resolutionScale: ResolutionScale,
       stereoEnabled: Boolean
     ): IDisplayPropertiesStatics = {
@@ -129,15 +129,15 @@ object Display {
       
       inline def setNativeOrientation(value: DisplayOrientations): Self = StObject.set(x, "nativeOrientation", value.asInstanceOf[js.Any])
       
-      inline def setOncolorprofilechanged(value: js.Any): Self = StObject.set(x, "oncolorprofilechanged", value.asInstanceOf[js.Any])
+      inline def setOncolorprofilechanged(value: Any): Self = StObject.set(x, "oncolorprofilechanged", value.asInstanceOf[js.Any])
       
-      inline def setOndisplaycontentsinvalidated(value: js.Any): Self = StObject.set(x, "ondisplaycontentsinvalidated", value.asInstanceOf[js.Any])
+      inline def setOndisplaycontentsinvalidated(value: Any): Self = StObject.set(x, "ondisplaycontentsinvalidated", value.asInstanceOf[js.Any])
       
-      inline def setOnlogicaldpichanged(value: js.Any): Self = StObject.set(x, "onlogicaldpichanged", value.asInstanceOf[js.Any])
+      inline def setOnlogicaldpichanged(value: Any): Self = StObject.set(x, "onlogicaldpichanged", value.asInstanceOf[js.Any])
       
-      inline def setOnorientationchanged(value: js.Any): Self = StObject.set(x, "onorientationchanged", value.asInstanceOf[js.Any])
+      inline def setOnorientationchanged(value: Any): Self = StObject.set(x, "onorientationchanged", value.asInstanceOf[js.Any])
       
-      inline def setOnstereoenabledchanged(value: js.Any): Self = StObject.set(x, "onstereoenabledchanged", value.asInstanceOf[js.Any])
+      inline def setOnstereoenabledchanged(value: Any): Self = StObject.set(x, "onstereoenabledchanged", value.asInstanceOf[js.Any])
       
       inline def setResolutionScale(value: ResolutionScale): Self = StObject.set(x, "resolutionScale", value.asInstanceOf[js.Any])
       

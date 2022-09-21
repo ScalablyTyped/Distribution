@@ -109,7 +109,7 @@ object ImportJobResponse {
     
     inline def setFailuresUndefined: Self = StObject.set(x, "Failures", js.undefined)
     
-    inline def setFailuresVarargs(value: string*): Self = StObject.set(x, "Failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: string*): Self = StObject.set(x, "Failures", js.Array(value*))
     
     inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

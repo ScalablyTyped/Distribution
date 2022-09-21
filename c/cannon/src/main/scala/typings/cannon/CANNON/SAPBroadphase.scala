@@ -15,5 +15,5 @@ trait SAPBroadphase
   
   var axisIndex: Double = js.native
   
-  var axisList: js.Array[js.Any] = js.native
+  var axisList: js.Array[Any] = js.native
 }

@@ -1,7 +1,6 @@
 package typings.powerappsComponentFramework.ComponentFramework
 
 import typings.powerappsComponentFramework.ComponentFramework.UserSettingApi.Types.DayOfWeek
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,12 +28,12 @@ object UserSettingApi {
     /**
       * @example "/Date(253402300799999)/"
       */
-    var maxSupportedDateTime: Date
+    var maxSupportedDateTime: js.Date
     
     /**
       * @example "/Date(-62135568000000)/"
       */
-    var minSupportedDateTime: Date
+    var minSupportedDateTime: js.Date
     
     /**
       * @example  2029
@@ -46,8 +45,8 @@ object UserSettingApi {
     inline def apply(
       algorithmType: Double,
       calendarType: Double,
-      maxSupportedDateTime: Date,
-      minSupportedDateTime: Date,
+      maxSupportedDateTime: js.Date,
+      minSupportedDateTime: js.Date,
       twoDigitYearMax: Double
     ): Calendar = {
       val __obj = js.Dynamic.literal(algorithmType = algorithmType.asInstanceOf[js.Any], calendarType = calendarType.asInstanceOf[js.Any], maxSupportedDateTime = maxSupportedDateTime.asInstanceOf[js.Any], minSupportedDateTime = minSupportedDateTime.asInstanceOf[js.Any], twoDigitYearMax = twoDigitYearMax.asInstanceOf[js.Any])
@@ -60,9 +59,9 @@ object UserSettingApi {
       
       inline def setCalendarType(value: Double): Self = StObject.set(x, "calendarType", value.asInstanceOf[js.Any])
       
-      inline def setMaxSupportedDateTime(value: Date): Self = StObject.set(x, "maxSupportedDateTime", value.asInstanceOf[js.Any])
+      inline def setMaxSupportedDateTime(value: js.Date): Self = StObject.set(x, "maxSupportedDateTime", value.asInstanceOf[js.Any])
       
-      inline def setMinSupportedDateTime(value: Date): Self = StObject.set(x, "minSupportedDateTime", value.asInstanceOf[js.Any])
+      inline def setMinSupportedDateTime(value: js.Date): Self = StObject.set(x, "minSupportedDateTime", value.asInstanceOf[js.Any])
       
       inline def setTwoDigitYearMax(value: Double): Self = StObject.set(x, "twoDigitYearMax", value.asInstanceOf[js.Any])
     }
@@ -224,15 +223,15 @@ object UserSettingApi {
       
       inline def setAbbreviatedDayNames(value: js.Array[String]): Self = StObject.set(x, "abbreviatedDayNames", value.asInstanceOf[js.Any])
       
-      inline def setAbbreviatedDayNamesVarargs(value: String*): Self = StObject.set(x, "abbreviatedDayNames", js.Array(value :_*))
+      inline def setAbbreviatedDayNamesVarargs(value: String*): Self = StObject.set(x, "abbreviatedDayNames", js.Array(value*))
       
       inline def setAbbreviatedMonthGenitiveNames(value: js.Array[String]): Self = StObject.set(x, "abbreviatedMonthGenitiveNames", value.asInstanceOf[js.Any])
       
-      inline def setAbbreviatedMonthGenitiveNamesVarargs(value: String*): Self = StObject.set(x, "abbreviatedMonthGenitiveNames", js.Array(value :_*))
+      inline def setAbbreviatedMonthGenitiveNamesVarargs(value: String*): Self = StObject.set(x, "abbreviatedMonthGenitiveNames", js.Array(value*))
       
       inline def setAbbreviatedMonthNames(value: js.Array[String]): Self = StObject.set(x, "abbreviatedMonthNames", value.asInstanceOf[js.Any])
       
-      inline def setAbbreviatedMonthNamesVarargs(value: String*): Self = StObject.set(x, "abbreviatedMonthNames", js.Array(value :_*))
+      inline def setAbbreviatedMonthNamesVarargs(value: String*): Self = StObject.set(x, "abbreviatedMonthNames", js.Array(value*))
       
       inline def setAmDesignator(value: String): Self = StObject.set(x, "amDesignator", value.asInstanceOf[js.Any])
       
@@ -244,7 +243,7 @@ object UserSettingApi {
       
       inline def setDayNames(value: js.Array[String]): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
       
-      inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
+      inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value*))
       
       inline def setFirstDayOfWeek(value: DayOfWeek): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
       
@@ -258,11 +257,11 @@ object UserSettingApi {
       
       inline def setMonthGenitiveNames(value: js.Array[String]): Self = StObject.set(x, "monthGenitiveNames", value.asInstanceOf[js.Any])
       
-      inline def setMonthGenitiveNamesVarargs(value: String*): Self = StObject.set(x, "monthGenitiveNames", js.Array(value :_*))
+      inline def setMonthGenitiveNamesVarargs(value: String*): Self = StObject.set(x, "monthGenitiveNames", js.Array(value*))
       
       inline def setMonthNames(value: js.Array[String]): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
       
-      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value*))
       
       inline def setPmDesignator(value: String): Self = StObject.set(x, "pmDesignator", value.asInstanceOf[js.Any])
       
@@ -272,7 +271,7 @@ object UserSettingApi {
       
       inline def setShortestDayNames(value: js.Array[String]): Self = StObject.set(x, "shortestDayNames", value.asInstanceOf[js.Any])
       
-      inline def setShortestDayNamesVarargs(value: String*): Self = StObject.set(x, "shortestDayNames", js.Array(value :_*))
+      inline def setShortestDayNamesVarargs(value: String*): Self = StObject.set(x, "shortestDayNames", js.Array(value*))
       
       inline def setSortableDateTimePattern(value: String): Self = StObject.set(x, "sortableDateTimePattern", value.asInstanceOf[js.Any])
       
@@ -464,7 +463,7 @@ object UserSettingApi {
       
       inline def setCurrencyGroupSizes(value: js.Array[Double]): Self = StObject.set(x, "currencyGroupSizes", value.asInstanceOf[js.Any])
       
-      inline def setCurrencyGroupSizesVarargs(value: Double*): Self = StObject.set(x, "currencyGroupSizes", js.Array(value :_*))
+      inline def setCurrencyGroupSizesVarargs(value: Double*): Self = StObject.set(x, "currencyGroupSizes", js.Array(value*))
       
       inline def setCurrencyNegativePattern(value: Double): Self = StObject.set(x, "currencyNegativePattern", value.asInstanceOf[js.Any])
       
@@ -476,7 +475,7 @@ object UserSettingApi {
       
       inline def setNativeDigits(value: js.Array[String]): Self = StObject.set(x, "nativeDigits", value.asInstanceOf[js.Any])
       
-      inline def setNativeDigitsVarargs(value: String*): Self = StObject.set(x, "nativeDigits", js.Array(value :_*))
+      inline def setNativeDigitsVarargs(value: String*): Self = StObject.set(x, "nativeDigits", js.Array(value*))
       
       inline def setNegativeInfinitySymbol(value: String): Self = StObject.set(x, "negativeInfinitySymbol", value.asInstanceOf[js.Any])
       
@@ -490,7 +489,7 @@ object UserSettingApi {
       
       inline def setNumberGroupSizes(value: js.Array[Double]): Self = StObject.set(x, "numberGroupSizes", value.asInstanceOf[js.Any])
       
-      inline def setNumberGroupSizesVarargs(value: Double*): Self = StObject.set(x, "numberGroupSizes", js.Array(value :_*))
+      inline def setNumberGroupSizesVarargs(value: Double*): Self = StObject.set(x, "numberGroupSizes", js.Array(value*))
       
       inline def setNumberNegativePattern(value: Double): Self = StObject.set(x, "numberNegativePattern", value.asInstanceOf[js.Any])
       
@@ -504,7 +503,7 @@ object UserSettingApi {
       
       inline def setPercentGroupSizes(value: js.Array[Double]): Self = StObject.set(x, "percentGroupSizes", value.asInstanceOf[js.Any])
       
-      inline def setPercentGroupSizesVarargs(value: Double*): Self = StObject.set(x, "percentGroupSizes", js.Array(value :_*))
+      inline def setPercentGroupSizesVarargs(value: Double*): Self = StObject.set(x, "percentGroupSizes", js.Array(value*))
       
       inline def setPercentNegativePattern(value: Double): Self = StObject.set(x, "percentNegativePattern", value.asInstanceOf[js.Any])
       

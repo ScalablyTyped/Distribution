@@ -1,7 +1,7 @@
 
 # Scala.js typings for sanctuary
 
-Typings are for version 3.0
+Typings are for version 3.1
 
 ## Library description:
 Refuge from unsafe JavaScript
@@ -10,15 +10,12 @@ Refuge from unsafe JavaScript
 | ------------------ | :-------------: |
 | Full name          | sanctuary |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 79 |
-| # downloads        | 3215959 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 33993.666666666664 |
+| # stars            | 2910.0 |
 
 ## Links
-- [Homepage](https://github.com/sanctuary-js/sanctuary#readme)
-- [Bugs](https://github.com/sanctuary-js/sanctuary/issues)
-- [Repository](https://github.com/sanctuary-js/sanctuary)
 - [Npm](https://www.npmjs.com/package/sanctuary)
     
 

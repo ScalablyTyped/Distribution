@@ -20,6 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteStrict
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteLax
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteUnspecifiedTreatedAsLax
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.SamePartyFromCrossPartyContext
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.SamePartyConflictsWithOtherAttributes
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.NameValuePairExceedsMaxSize
 */
 trait SetCookieBlockedReason extends StObject
 object SetCookieBlockedReason {
@@ -28,7 +31,13 @@ object SetCookieBlockedReason {
   
   inline def InvalidPrefix: typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidPrefix = "InvalidPrefix".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.InvalidPrefix]
   
+  inline def NameValuePairExceedsMaxSize: typings.devtoolsProtocol.devtoolsProtocolStrings.NameValuePairExceedsMaxSize = "NameValuePairExceedsMaxSize".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.NameValuePairExceedsMaxSize]
+  
   inline def OverwriteSecure: typings.devtoolsProtocol.devtoolsProtocolStrings.OverwriteSecure = "OverwriteSecure".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.OverwriteSecure]
+  
+  inline def SamePartyConflictsWithOtherAttributes: typings.devtoolsProtocol.devtoolsProtocolStrings.SamePartyConflictsWithOtherAttributes = "SamePartyConflictsWithOtherAttributes".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SamePartyConflictsWithOtherAttributes]
+  
+  inline def SamePartyFromCrossPartyContext: typings.devtoolsProtocol.devtoolsProtocolStrings.SamePartyFromCrossPartyContext = "SamePartyFromCrossPartyContext".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SamePartyFromCrossPartyContext]
   
   inline def SameSiteLax: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteLax = "SameSiteLax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteLax]
   

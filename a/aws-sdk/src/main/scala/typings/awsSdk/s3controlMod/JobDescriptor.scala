@@ -14,7 +14,7 @@ trait JobDescriptor extends StObject {
   /**
     * A timestamp indicating when this job was created.
     */
-  var CreationTime: js.UndefOr[JobCreationTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description for this job, if one was provided in this job's Create Job request.
@@ -25,6 +25,11 @@ trait JobDescriptor extends StObject {
     * If the specified job failed, this field contains information describing the failure.
     */
   var FailureReasons: js.UndefOr[JobFailureList] = js.undefined
+  
+  /**
+    * The attribute of the JobDescriptor containing details about the job's generated manifest.
+    */
+  var GeneratedManifestDescriptor: js.UndefOr[S3GeneratedManifestDescriptor] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for this job.
@@ -40,6 +45,11 @@ trait JobDescriptor extends StObject {
     * The configuration information for the specified job's manifest object.
     */
   var Manifest: js.UndefOr[JobManifest] = js.undefined
+  
+  /**
+    * The manifest generator that was used to generate a job manifest for this job.
+    */
+  var ManifestGenerator: js.UndefOr[JobManifestGenerator] = js.undefined
   
   /**
     * The operation that the specified job is configured to run on the objects listed in the manifest.
@@ -62,7 +72,7 @@ trait JobDescriptor extends StObject {
   var Report: js.UndefOr[JobReport] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) for the AWS Identity and Access Management (IAM) role assigned to run the tasks for this job.
+    * The Amazon Resource Name (ARN) for the Identity and Access Management (IAM) role assigned to run the tasks for this job.
     */
   var RoleArn: js.UndefOr[IAMRoleArn] = js.undefined
   
@@ -84,12 +94,12 @@ trait JobDescriptor extends StObject {
   /**
     * The timestamp when this job was suspended, if it has been suspended.
     */
-  var SuspendedDate: js.UndefOr[typings.awsSdk.s3controlMod.SuspendedDate] = js.undefined
+  var SuspendedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A timestamp indicating when this job terminated. A job's termination date is the date and time when it succeeded, failed, or was canceled.
     */
-  var TerminationDate: js.UndefOr[JobTerminationDate] = js.undefined
+  var TerminationDate: js.UndefOr[js.Date] = js.undefined
 }
 object JobDescriptor {
   
@@ -104,7 +114,7 @@ object JobDescriptor {
     
     inline def setConfirmationRequiredUndefined: Self = StObject.set(x, "ConfirmationRequired", js.undefined)
     
-    inline def setCreationTime(value: JobCreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -116,7 +126,11 @@ object JobDescriptor {
     
     inline def setFailureReasonsUndefined: Self = StObject.set(x, "FailureReasons", js.undefined)
     
-    inline def setFailureReasonsVarargs(value: JobFailure*): Self = StObject.set(x, "FailureReasons", js.Array(value :_*))
+    inline def setFailureReasonsVarargs(value: JobFailure*): Self = StObject.set(x, "FailureReasons", js.Array(value*))
+    
+    inline def setGeneratedManifestDescriptor(value: S3GeneratedManifestDescriptor): Self = StObject.set(x, "GeneratedManifestDescriptor", value.asInstanceOf[js.Any])
+    
+    inline def setGeneratedManifestDescriptorUndefined: Self = StObject.set(x, "GeneratedManifestDescriptor", js.undefined)
     
     inline def setJobArn(value: JobArn): Self = StObject.set(x, "JobArn", value.asInstanceOf[js.Any])
     
@@ -127,6 +141,10 @@ object JobDescriptor {
     inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
     inline def setManifest(value: JobManifest): Self = StObject.set(x, "Manifest", value.asInstanceOf[js.Any])
+    
+    inline def setManifestGenerator(value: JobManifestGenerator): Self = StObject.set(x, "ManifestGenerator", value.asInstanceOf[js.Any])
+    
+    inline def setManifestGeneratorUndefined: Self = StObject.set(x, "ManifestGenerator", js.undefined)
     
     inline def setManifestUndefined: Self = StObject.set(x, "Manifest", js.undefined)
     
@@ -162,11 +180,11 @@ object JobDescriptor {
     
     inline def setSuspendedCauseUndefined: Self = StObject.set(x, "SuspendedCause", js.undefined)
     
-    inline def setSuspendedDate(value: SuspendedDate): Self = StObject.set(x, "SuspendedDate", value.asInstanceOf[js.Any])
+    inline def setSuspendedDate(value: js.Date): Self = StObject.set(x, "SuspendedDate", value.asInstanceOf[js.Any])
     
     inline def setSuspendedDateUndefined: Self = StObject.set(x, "SuspendedDate", js.undefined)
     
-    inline def setTerminationDate(value: JobTerminationDate): Self = StObject.set(x, "TerminationDate", value.asInstanceOf[js.Any])
+    inline def setTerminationDate(value: js.Date): Self = StObject.set(x, "TerminationDate", value.asInstanceOf[js.Any])
     
     inline def setTerminationDateUndefined: Self = StObject.set(x, "TerminationDate", js.undefined)
   }

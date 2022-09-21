@@ -9,7 +9,7 @@ trait OrderByElement extends StObject {
   /**
     * The field on which to order.
     */
-  var fieldName: String
+  var fieldName: OrderByElementFieldName
   
   /**
     * Ordering direction.
@@ -18,14 +18,14 @@ trait OrderByElement extends StObject {
 }
 object OrderByElement {
   
-  inline def apply(fieldName: String): OrderByElement = {
+  inline def apply(fieldName: OrderByElementFieldName): OrderByElement = {
     val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderByElement]
   }
   
   extension [Self <: OrderByElement](x: Self) {
     
-    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: OrderByElementFieldName): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
     inline def setSortOrder(value: orderString): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     

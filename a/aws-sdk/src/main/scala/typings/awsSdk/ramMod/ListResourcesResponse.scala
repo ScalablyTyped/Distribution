@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListResourcesResponse extends StObject {
   
   /**
-    * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+    * If present, this value indicates that more output is available than is included in the current response. Use this value in the NextToken request parameter in a subsequent call to the operation to get the next part of the output. You should repeat this until the NextToken response element comes back as null. This indicates that this is the last page of results.
     */
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Information about the resources.
+    * An array of objects that contain information about the resources.
     */
   var resources: js.UndefOr[ResourceList] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListResourcesResponse {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "resources", js.Array(value*))
   }
 }

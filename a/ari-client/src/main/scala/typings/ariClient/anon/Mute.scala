@@ -29,7 +29,7 @@ object Mute {
     
     inline def setChannel(value: String | js.Array[String]): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    inline def setChannelVarargs(value: String*): Self = StObject.set(x, "channel", js.Array(value :_*))
+    inline def setChannelVarargs(value: String*): Self = StObject.set(x, "channel", js.Array(value*))
     
     inline def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
     

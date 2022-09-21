@@ -11,28 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ActiveXObject extends StObject {
   
-  @JSName("on")
-  def on_ondataavailable(
+  def on(
     obj: DOMDocument60,
-    event: ondataavailable,
+    event: ondataavailable | onreadystatechange,
     handler: js.ThisFunction1[/* this */ DOMDocument60, /* parameter */ js.Object, Unit]
   ): Unit = js.native
-  @JSName("on")
-  def on_ondataavailable(
+  def on(
     obj: FreeThreadedDOMDocument60,
-    event: ondataavailable,
-    handler: js.ThisFunction1[/* this */ FreeThreadedDOMDocument60, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_onreadystatechange(
-    obj: DOMDocument60,
-    event: onreadystatechange,
-    handler: js.ThisFunction1[/* this */ DOMDocument60, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_onreadystatechange(
-    obj: FreeThreadedDOMDocument60,
-    event: onreadystatechange,
+    event: ondataavailable | onreadystatechange,
     handler: js.ThisFunction1[/* this */ FreeThreadedDOMDocument60, /* parameter */ js.Object, Unit]
   ): Unit = js.native
 }

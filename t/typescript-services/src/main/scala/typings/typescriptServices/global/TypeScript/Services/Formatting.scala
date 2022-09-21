@@ -112,7 +112,7 @@ object Formatting {
   
   @JSGlobal("TypeScript.Services.Formatting.Formatter")
   @js.native
-  class Formatter protected ()
+  open class Formatter protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.Formatter {
     def this(
@@ -126,64 +126,64 @@ object Formatting {
     ) = this()
     
     /* private */ /* CompleteClass */
-    override def RecordRuleEdits(rule: js.Any, t1: js.Any, t2: js.Any): js.Any = js.native
+    override def RecordRuleEdits(rule: Any, t1: Any, t2: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    var _edits: js.Any = js.native
+    var _edits: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _indentationNodeContextPool: js.Any = js.native
+    var _indentationNodeContextPool: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _lastTriviaWasNewLine: js.Any = js.native
+    var _lastTriviaWasNewLine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _parent: js.Any = js.native
+    var _parent: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _position: js.Any = js.native
+    var _position: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _snapshot: js.Any = js.native
+    var _snapshot: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _textSpan: js.Any = js.native
+    var _textSpan: Any = js.native
     
     /* CompleteClass */
     override def edits(): js.Array[typings.typescriptServices.TypeScript.Services.Formatting.TextEditInfo] = js.native
     
     /* private */ /* CompleteClass */
-    override def findCommonParents(parent1: js.Any, parent2: js.Any): js.Any = js.native
+    override def findCommonParents(parent1: Any, parent2: Any): Any = js.native
     
     /* CompleteClass */
     override def forceIndentNextToken(tokenStart: Double): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def forceRecomputeIndentationOfParent(tokenStart: js.Any, newLineAdded: js.Any): js.Any = js.native
+    override def forceRecomputeIndentationOfParent(tokenStart: Any, newLineAdded: Any): Any = js.native
     
     /* CompleteClass */
     override def forceSkipIndentingNextToken(tokenStart: Double): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def formatPair(t1: js.Any, t1Parent: js.Any, t2: js.Any, t2Parent: js.Any): js.Any = js.native
+    override def formatPair(t1: Any, t1Parent: Any, t2: Any, t2Parent: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    var formattingContext: js.Any = js.native
+    var formattingContext: Any = js.native
     
     /* private */ /* CompleteClass */
-    var formattingRequestKind: js.Any = js.native
+    var formattingRequestKind: Any = js.native
     
     /* private */ /* CompleteClass */
-    override def getCommentIndentationAmount(token: js.Any): js.Any = js.native
+    override def getCommentIndentationAmount(token: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def getLineNumber(span: js.Any): js.Any = js.native
+    override def getLineNumber(span: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def getNodeIndentation(node: js.Any, newLineInsertedByFormatting: js.Any): js.Any = js.native
+    override def getNodeIndentation(node: Any, newLineInsertedByFormatting: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def getTokenIndentationAmount(token: js.Any): js.Any = js.native
+    override def getTokenIndentationAmount(token: Any): Any = js.native
     
     /* CompleteClass */
     override def indentToken(token: ISyntaxToken, indentationAmount: Double, commentIndentationAmount: Double): Unit = js.native
@@ -201,54 +201,49 @@ object Formatting {
     override def position(): Double = js.native
     
     /* private */ /* CompleteClass */
-    var previousTokenParent: js.Any = js.native
+    var previousTokenParent: Any = js.native
     
     /* private */ /* CompleteClass */
-    var previousTokenSpan: js.Any = js.native
+    var previousTokenSpan: Any = js.native
     
     /* private */ /* CompleteClass */
-    override def processToken(token: js.Any): js.Any = js.native
+    override def processToken(token: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def processTrivia(triviaList: js.Any, fullStart: js.Any): js.Any = js.native
+    override def processTrivia(triviaList: Any, fullStart: Any): Any = js.native
     
     /* CompleteClass */
     override def recordEdit(position: Double, length: Double, replaceWith: String): Unit = js.native
     
     /* private */ /* CompleteClass */
     override def recordIndentationEditsForMultiLineComment(
-      trivia: js.Any,
-      fullStart: js.Any,
-      indentationString: js.Any,
-      leadingWhiteSpace: js.Any,
-      firstLineAlreadyIndented: js.Any
-    ): js.Any = js.native
+      trivia: Any,
+      fullStart: Any,
+      indentationString: Any,
+      leadingWhiteSpace: Any,
+      firstLineAlreadyIndented: Any
+    ): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def recordIndentationEditsForSegment(
-      segment: js.Any,
-      fullStart: js.Any,
-      indentationColumns: js.Any,
-      whiteSpaceColumnsInFirstSegment: js.Any
-    ): js.Any = js.native
+    override def recordIndentationEditsForSegment(segment: Any, fullStart: Any, indentationColumns: Any, whiteSpaceColumnsInFirstSegment: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def recordIndentationEditsForSingleLineOrSkippedText(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any = js.native
+    override def recordIndentationEditsForSingleLineOrSkippedText(trivia: Any, fullStart: Any, indentationString: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def recordIndentationEditsForToken(token: js.Any, indentationString: js.Any, commentIndentationString: js.Any): js.Any = js.native
+    override def recordIndentationEditsForToken(token: Any, indentationString: Any, commentIndentationString: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def recordIndentationEditsForWhitespace(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any = js.native
+    override def recordIndentationEditsForWhitespace(trivia: Any, fullStart: Any, indentationString: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    var rulesProvider: js.Any = js.native
+    var rulesProvider: Any = js.native
     
     /* private */ /* CompleteClass */
-    var scriptHasErrors: js.Any = js.native
+    var scriptHasErrors: Any = js.native
     
     /* private */ /* CompleteClass */
-    override def shouldIndentBlockInParent(parent: js.Any): js.Any = js.native
+    override def shouldIndentBlockInParent(parent: Any): Any = js.native
     
     /* CompleteClass */
     override def snapshot(): ITextSnapshot = js.native
@@ -257,172 +252,172 @@ object Formatting {
     override def textSpan(): TextSpan = js.native
     
     /* private */ /* CompleteClass */
-    override def trimWhitespace(line: js.Any, token: js.Any): js.Any = js.native
+    override def trimWhitespace(line: Any, token: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def trimWhitespaceInLineRange(startLine: js.Any, endLine: js.Any, token: js.Any): js.Any = js.native
+    override def trimWhitespaceInLineRange(startLine: Any, endLine: Any, token: Any): Any = js.native
     
     /* CompleteClass */
-    override def visitArgumentList(node: ArgumentListSyntax): js.Any = js.native
+    override def visitArgumentList(node: ArgumentListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitArrayLiteralExpression(node: ArrayLiteralExpressionSyntax): js.Any = js.native
+    override def visitArrayLiteralExpression(node: ArrayLiteralExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitArrayType(node: ArrayTypeSyntax): js.Any = js.native
+    override def visitArrayType(node: ArrayTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitBinaryExpression(node: BinaryExpressionSyntax): js.Any = js.native
+    override def visitBinaryExpression(node: BinaryExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitBlock(node: BlockSyntax): js.Any = js.native
+    override def visitBlock(node: BlockSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitBreakStatement(node: BreakStatementSyntax): js.Any = js.native
+    override def visitBreakStatement(node: BreakStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCallSignature(node: CallSignatureSyntax): js.Any = js.native
+    override def visitCallSignature(node: CallSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCaseSwitchClause(node: CaseSwitchClauseSyntax): js.Any = js.native
+    override def visitCaseSwitchClause(node: CaseSwitchClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCastExpression(node: CastExpressionSyntax): js.Any = js.native
+    override def visitCastExpression(node: CastExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCatchClause(node: CatchClauseSyntax): js.Any = js.native
+    override def visitCatchClause(node: CatchClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitClassDeclaration(node: ClassDeclarationSyntax): js.Any = js.native
+    override def visitClassDeclaration(node: ClassDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConditionalExpression(node: ConditionalExpressionSyntax): js.Any = js.native
+    override def visitConditionalExpression(node: ConditionalExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstraint(node: ConstraintSyntax): js.Any = js.native
+    override def visitConstraint(node: ConstraintSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstructSignature(node: ConstructSignatureSyntax): js.Any = js.native
+    override def visitConstructSignature(node: ConstructSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstructorDeclaration(node: ConstructorDeclarationSyntax): js.Any = js.native
+    override def visitConstructorDeclaration(node: ConstructorDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstructorType(node: ConstructorTypeSyntax): js.Any = js.native
+    override def visitConstructorType(node: ConstructorTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitContinueStatement(node: ContinueStatementSyntax): js.Any = js.native
+    override def visitContinueStatement(node: ContinueStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDebuggerStatement(node: DebuggerStatementSyntax): js.Any = js.native
+    override def visitDebuggerStatement(node: DebuggerStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDefaultSwitchClause(node: DefaultSwitchClauseSyntax): js.Any = js.native
+    override def visitDefaultSwitchClause(node: DefaultSwitchClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDeleteExpression(node: DeleteExpressionSyntax): js.Any = js.native
+    override def visitDeleteExpression(node: DeleteExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDoStatement(node: DoStatementSyntax): js.Any = js.native
+    override def visitDoStatement(node: DoStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitElementAccessExpression(node: ElementAccessExpressionSyntax): js.Any = js.native
+    override def visitElementAccessExpression(node: ElementAccessExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitElseClause(node: ElseClauseSyntax): js.Any = js.native
+    override def visitElseClause(node: ElseClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEmptyStatement(node: EmptyStatementSyntax): js.Any = js.native
+    override def visitEmptyStatement(node: EmptyStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEnumDeclaration(node: EnumDeclarationSyntax): js.Any = js.native
+    override def visitEnumDeclaration(node: EnumDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEnumElement(node: EnumElementSyntax): js.Any = js.native
+    override def visitEnumElement(node: EnumElementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEqualsValueClause(node: EqualsValueClauseSyntax): js.Any = js.native
+    override def visitEqualsValueClause(node: EqualsValueClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitExportAssignment(node: ExportAssignmentSyntax): js.Any = js.native
+    override def visitExportAssignment(node: ExportAssignmentSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitExpressionStatement(node: ExpressionStatementSyntax): js.Any = js.native
+    override def visitExpressionStatement(node: ExpressionStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitExternalModuleReference(node: ExternalModuleReferenceSyntax): js.Any = js.native
+    override def visitExternalModuleReference(node: ExternalModuleReferenceSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFinallyClause(node: FinallyClauseSyntax): js.Any = js.native
+    override def visitFinallyClause(node: FinallyClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitForInStatement(node: ForInStatementSyntax): js.Any = js.native
+    override def visitForInStatement(node: ForInStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitForStatement(node: ForStatementSyntax): js.Any = js.native
+    override def visitForStatement(node: ForStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionDeclaration(node: FunctionDeclarationSyntax): js.Any = js.native
+    override def visitFunctionDeclaration(node: FunctionDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionExpression(node: FunctionExpressionSyntax): js.Any = js.native
+    override def visitFunctionExpression(node: FunctionExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionPropertyAssignment(node: FunctionPropertyAssignmentSyntax): js.Any = js.native
+    override def visitFunctionPropertyAssignment(node: FunctionPropertyAssignmentSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionType(node: FunctionTypeSyntax): js.Any = js.native
+    override def visitFunctionType(node: FunctionTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitGenericType(node: GenericTypeSyntax): js.Any = js.native
+    override def visitGenericType(node: GenericTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitGetAccessor(node: GetAccessorSyntax): js.Any = js.native
+    override def visitGetAccessor(node: GetAccessorSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitHeritageClause(node: HeritageClauseSyntax): js.Any = js.native
+    override def visitHeritageClause(node: HeritageClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitIfStatement(node: IfStatementSyntax): js.Any = js.native
+    override def visitIfStatement(node: IfStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitImportDeclaration(node: ImportDeclarationSyntax): js.Any = js.native
+    override def visitImportDeclaration(node: ImportDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitIndexMemberDeclaration(node: IndexMemberDeclarationSyntax): js.Any = js.native
+    override def visitIndexMemberDeclaration(node: IndexMemberDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitIndexSignature(node: IndexSignatureSyntax): js.Any = js.native
+    override def visitIndexSignature(node: IndexSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitInterfaceDeclaration(node: InterfaceDeclarationSyntax): js.Any = js.native
+    override def visitInterfaceDeclaration(node: InterfaceDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitInvocationExpression(node: InvocationExpressionSyntax): js.Any = js.native
+    override def visitInvocationExpression(node: InvocationExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitLabeledStatement(node: LabeledStatementSyntax): js.Any = js.native
+    override def visitLabeledStatement(node: LabeledStatementSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitList(list: ISyntaxList): Unit = js.native
     
     /* CompleteClass */
-    override def visitMemberAccessExpression(node: MemberAccessExpressionSyntax): js.Any = js.native
+    override def visitMemberAccessExpression(node: MemberAccessExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitMemberFunctionDeclaration(node: MemberFunctionDeclarationSyntax): js.Any = js.native
+    override def visitMemberFunctionDeclaration(node: MemberFunctionDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitMemberVariableDeclaration(node: MemberVariableDeclarationSyntax): js.Any = js.native
+    override def visitMemberVariableDeclaration(node: MemberVariableDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitMethodSignature(node: MethodSignatureSyntax): js.Any = js.native
+    override def visitMethodSignature(node: MethodSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitModuleDeclaration(node: ModuleDeclarationSyntax): js.Any = js.native
+    override def visitModuleDeclaration(node: ModuleDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitModuleNameModuleReference(node: ModuleNameModuleReferenceSyntax): js.Any = js.native
+    override def visitModuleNameModuleReference(node: ModuleNameModuleReferenceSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitNode(node: SyntaxNode): Unit = js.native
@@ -431,16 +426,16 @@ object Formatting {
     override def visitNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
     
     /* CompleteClass */
-    override def visitObjectCreationExpression(node: ObjectCreationExpressionSyntax): js.Any = js.native
+    override def visitObjectCreationExpression(node: ObjectCreationExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitObjectLiteralExpression(node: ObjectLiteralExpressionSyntax): js.Any = js.native
+    override def visitObjectLiteralExpression(node: ObjectLiteralExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitObjectType(node: ObjectTypeSyntax): js.Any = js.native
+    override def visitObjectType(node: ObjectTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitOmittedExpression(node: OmittedExpressionSyntax): js.Any = js.native
+    override def visitOmittedExpression(node: OmittedExpressionSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitOptionalNode(node: SyntaxNode): Unit = js.native
@@ -449,100 +444,100 @@ object Formatting {
     override def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def visitOptionalToken(token: js.Any): js.Any = js.native
+    override def visitOptionalToken(token: Any): Any = js.native
     
     /* CompleteClass */
-    override def visitParameter(node: ParameterSyntax): js.Any = js.native
+    override def visitParameter(node: ParameterSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitParameterList(node: ParameterListSyntax): js.Any = js.native
+    override def visitParameterList(node: ParameterListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitParenthesizedArrowFunctionExpression(node: ParenthesizedArrowFunctionExpressionSyntax): js.Any = js.native
+    override def visitParenthesizedArrowFunctionExpression(node: ParenthesizedArrowFunctionExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitParenthesizedExpression(node: ParenthesizedExpressionSyntax): js.Any = js.native
+    override def visitParenthesizedExpression(node: ParenthesizedExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitPostfixUnaryExpression(node: PostfixUnaryExpressionSyntax): js.Any = js.native
+    override def visitPostfixUnaryExpression(node: PostfixUnaryExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitPrefixUnaryExpression(node: PrefixUnaryExpressionSyntax): js.Any = js.native
+    override def visitPrefixUnaryExpression(node: PrefixUnaryExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitPropertySignature(node: PropertySignatureSyntax): js.Any = js.native
+    override def visitPropertySignature(node: PropertySignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitQualifiedName(node: QualifiedNameSyntax): js.Any = js.native
+    override def visitQualifiedName(node: QualifiedNameSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitReturnStatement(node: ReturnStatementSyntax): js.Any = js.native
+    override def visitReturnStatement(node: ReturnStatementSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitSeparatedList(list: ISeparatedSyntaxList): Unit = js.native
     
     /* CompleteClass */
-    override def visitSetAccessor(node: SetAccessorSyntax): js.Any = js.native
+    override def visitSetAccessor(node: SetAccessorSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSimpleArrowFunctionExpression(node: SimpleArrowFunctionExpressionSyntax): js.Any = js.native
+    override def visitSimpleArrowFunctionExpression(node: SimpleArrowFunctionExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSimplePropertyAssignment(node: SimplePropertyAssignmentSyntax): js.Any = js.native
+    override def visitSimplePropertyAssignment(node: SimplePropertyAssignmentSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSourceUnit(node: SourceUnitSyntax): js.Any = js.native
+    override def visitSourceUnit(node: SourceUnitSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSwitchStatement(node: SwitchStatementSyntax): js.Any = js.native
+    override def visitSwitchStatement(node: SwitchStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitThrowStatement(node: ThrowStatementSyntax): js.Any = js.native
+    override def visitThrowStatement(node: ThrowStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitToken(token: ISyntaxToken): js.Any = js.native
+    override def visitToken(token: ISyntaxToken): Any = js.native
     
     /* CompleteClass */
     override def visitTokenInSpan(token: ISyntaxToken): Unit = js.native
     
     /* CompleteClass */
-    override def visitTryStatement(node: TryStatementSyntax): js.Any = js.native
+    override def visitTryStatement(node: TryStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeAnnotation(node: TypeAnnotationSyntax): js.Any = js.native
+    override def visitTypeAnnotation(node: TypeAnnotationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeArgumentList(node: TypeArgumentListSyntax): js.Any = js.native
+    override def visitTypeArgumentList(node: TypeArgumentListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeOfExpression(node: TypeOfExpressionSyntax): js.Any = js.native
+    override def visitTypeOfExpression(node: TypeOfExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeParameter(node: TypeParameterSyntax): js.Any = js.native
+    override def visitTypeParameter(node: TypeParameterSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeParameterList(node: TypeParameterListSyntax): js.Any = js.native
+    override def visitTypeParameterList(node: TypeParameterListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeQuery(node: TypeQuerySyntax): js.Any = js.native
+    override def visitTypeQuery(node: TypeQuerySyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVariableDeclaration(node: VariableDeclarationSyntax): js.Any = js.native
+    override def visitVariableDeclaration(node: VariableDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVariableDeclarator(node: VariableDeclaratorSyntax): js.Any = js.native
+    override def visitVariableDeclarator(node: VariableDeclaratorSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVariableStatement(node: VariableStatementSyntax): js.Any = js.native
+    override def visitVariableStatement(node: VariableStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVoidExpression(node: VoidExpressionSyntax): js.Any = js.native
+    override def visitVoidExpression(node: VoidExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitWhileStatement(node: WhileStatementSyntax): js.Any = js.native
+    override def visitWhileStatement(node: WhileStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitWithStatement(node: WithStatementSyntax): js.Any = js.native
+    override def visitWithStatement(node: WithStatementSyntax): Any = js.native
   }
   object Formatter {
     
@@ -564,7 +559,7 @@ object Formatting {
   
   @JSGlobal("TypeScript.Services.Formatting.FormattingContext")
   @js.native
-  class FormattingContext protected ()
+  open class FormattingContext protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext {
     def this(snapshot: ITextSnapshot, formattingRequestKind: FormattingRequestKind) = this()
@@ -594,10 +589,10 @@ object Formatting {
     var contextNode: typings.typescriptServices.TypeScript.Services.Formatting.IndentationNodeContext = js.native
     
     /* private */ /* CompleteClass */
-    var contextNodeAllOnSameLine: js.Any = js.native
+    var contextNodeAllOnSameLine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var contextNodeBlockIsOnOneLine: js.Any = js.native
+    var contextNodeBlockIsOnOneLine: Any = js.native
     
     /* CompleteClass */
     var currentTokenParent: typings.typescriptServices.TypeScript.Services.Formatting.IndentationNodeContext = js.native
@@ -609,10 +604,10 @@ object Formatting {
     var formattingRequestKind: FormattingRequestKind = js.native
     
     /* private */ /* CompleteClass */
-    var nextNodeAllOnSameLine: js.Any = js.native
+    var nextNodeAllOnSameLine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var nextNodeBlockIsOnOneLine: js.Any = js.native
+    var nextNodeBlockIsOnOneLine: Any = js.native
     
     /* CompleteClass */
     var nextTokenParent: typings.typescriptServices.TypeScript.Services.Formatting.IndentationNodeContext = js.native
@@ -621,10 +616,10 @@ object Formatting {
     var nextTokenSpan: typings.typescriptServices.TypeScript.Services.Formatting.TokenSpan = js.native
     
     /* private */ /* CompleteClass */
-    var snapshot: js.Any = js.native
+    var snapshot: Any = js.native
     
     /* private */ /* CompleteClass */
-    var tokensAreOnSameLine: js.Any = js.native
+    var tokensAreOnSameLine: Any = js.native
     
     /* CompleteClass */
     override def updateContext(
@@ -638,7 +633,7 @@ object Formatting {
   
   @JSGlobal("TypeScript.Services.Formatting.FormattingManager")
   @js.native
-  class FormattingManager protected ()
+  open class FormattingManager protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.FormattingManager {
     def this(
@@ -667,19 +662,19 @@ object Formatting {
     override def formatSelection(minChar: Double, limChar: Double): js.Array[typings.typescriptServices.TypeScript.Services.TextEdit] = js.native
     
     /* private */ /* CompleteClass */
-    override def formatSpan(span: js.Any, formattingRequestKind: js.Any): js.Any = js.native
+    override def formatSpan(span: Any, formattingRequestKind: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    var options: js.Any = js.native
+    var options: Any = js.native
     
     /* private */ /* CompleteClass */
-    var rulesProvider: js.Any = js.native
+    var rulesProvider: Any = js.native
     
     /* private */ /* CompleteClass */
-    var snapshot: js.Any = js.native
+    var snapshot: Any = js.native
     
     /* private */ /* CompleteClass */
-    var syntaxTree: js.Any = js.native
+    var syntaxTree: Any = js.native
   }
   
   @JSGlobal("TypeScript.Services.Formatting.FormattingRequestKind")
@@ -706,7 +701,7 @@ object Formatting {
   
   @JSGlobal("TypeScript.Services.Formatting.IndentationNodeContext")
   @js.native
-  class IndentationNodeContext protected ()
+  open class IndentationNodeContext protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.IndentationNodeContext {
     def this(
@@ -718,25 +713,25 @@ object Formatting {
     ) = this()
     
     /* private */ /* CompleteClass */
-    var _childIndentationAmountDelta: js.Any = js.native
+    var _childIndentationAmountDelta: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _depth: js.Any = js.native
+    var _depth: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _fullStart: js.Any = js.native
+    var _fullStart: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _hasSkippedOrMissingTokenChild: js.Any = js.native
+    var _hasSkippedOrMissingTokenChild: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _indentationAmount: js.Any = js.native
+    var _indentationAmount: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _node: js.Any = js.native
+    var _node: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _parent: js.Any = js.native
+    var _parent: Any = js.native
     
     /* CompleteClass */
     override def childIndentationAmountDelta(): Double = js.native
@@ -786,13 +781,13 @@ object Formatting {
   
   @JSGlobal("TypeScript.Services.Formatting.IndentationNodeContextPool")
   @js.native
-  class IndentationNodeContextPool ()
+  open class IndentationNodeContextPool ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.IndentationNodeContextPool
   
   @JSGlobal("TypeScript.Services.Formatting.IndentationTrackingWalker")
   @js.native
-  class IndentationTrackingWalker protected ()
+  open class IndentationTrackingWalker protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.IndentationTrackingWalker {
     def this(
@@ -804,40 +799,40 @@ object Formatting {
     ) = this()
     
     /* private */ /* CompleteClass */
-    var _indentationNodeContextPool: js.Any = js.native
+    var _indentationNodeContextPool: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _lastTriviaWasNewLine: js.Any = js.native
+    var _lastTriviaWasNewLine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _parent: js.Any = js.native
+    var _parent: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _position: js.Any = js.native
+    var _position: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _snapshot: js.Any = js.native
+    var _snapshot: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _textSpan: js.Any = js.native
+    var _textSpan: Any = js.native
     
     /* CompleteClass */
     override def forceIndentNextToken(tokenStart: Double): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def forceRecomputeIndentationOfParent(tokenStart: js.Any, newLineAdded: js.Any): js.Any = js.native
+    override def forceRecomputeIndentationOfParent(tokenStart: Any, newLineAdded: Any): Any = js.native
     
     /* CompleteClass */
     override def forceSkipIndentingNextToken(tokenStart: Double): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def getCommentIndentationAmount(token: js.Any): js.Any = js.native
+    override def getCommentIndentationAmount(token: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def getNodeIndentation(node: js.Any, newLineInsertedByFormatting: js.Any): js.Any = js.native
+    override def getNodeIndentation(node: Any, newLineInsertedByFormatting: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def getTokenIndentationAmount(token: js.Any): js.Any = js.native
+    override def getTokenIndentationAmount(token: Any): Any = js.native
     
     /* CompleteClass */
     override def indentToken(token: ISyntaxToken, indentationAmount: Double, commentIndentationAmount: Double): Unit = js.native
@@ -855,7 +850,7 @@ object Formatting {
     override def position(): Double = js.native
     
     /* private */ /* CompleteClass */
-    override def shouldIndentBlockInParent(parent: js.Any): js.Any = js.native
+    override def shouldIndentBlockInParent(parent: Any): Any = js.native
     
     /* CompleteClass */
     override def snapshot(): ITextSnapshot = js.native
@@ -864,166 +859,166 @@ object Formatting {
     override def textSpan(): TextSpan = js.native
     
     /* CompleteClass */
-    override def visitArgumentList(node: ArgumentListSyntax): js.Any = js.native
+    override def visitArgumentList(node: ArgumentListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitArrayLiteralExpression(node: ArrayLiteralExpressionSyntax): js.Any = js.native
+    override def visitArrayLiteralExpression(node: ArrayLiteralExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitArrayType(node: ArrayTypeSyntax): js.Any = js.native
+    override def visitArrayType(node: ArrayTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitBinaryExpression(node: BinaryExpressionSyntax): js.Any = js.native
+    override def visitBinaryExpression(node: BinaryExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitBlock(node: BlockSyntax): js.Any = js.native
+    override def visitBlock(node: BlockSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitBreakStatement(node: BreakStatementSyntax): js.Any = js.native
+    override def visitBreakStatement(node: BreakStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCallSignature(node: CallSignatureSyntax): js.Any = js.native
+    override def visitCallSignature(node: CallSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCaseSwitchClause(node: CaseSwitchClauseSyntax): js.Any = js.native
+    override def visitCaseSwitchClause(node: CaseSwitchClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCastExpression(node: CastExpressionSyntax): js.Any = js.native
+    override def visitCastExpression(node: CastExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCatchClause(node: CatchClauseSyntax): js.Any = js.native
+    override def visitCatchClause(node: CatchClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitClassDeclaration(node: ClassDeclarationSyntax): js.Any = js.native
+    override def visitClassDeclaration(node: ClassDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConditionalExpression(node: ConditionalExpressionSyntax): js.Any = js.native
+    override def visitConditionalExpression(node: ConditionalExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstraint(node: ConstraintSyntax): js.Any = js.native
+    override def visitConstraint(node: ConstraintSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstructSignature(node: ConstructSignatureSyntax): js.Any = js.native
+    override def visitConstructSignature(node: ConstructSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstructorDeclaration(node: ConstructorDeclarationSyntax): js.Any = js.native
+    override def visitConstructorDeclaration(node: ConstructorDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstructorType(node: ConstructorTypeSyntax): js.Any = js.native
+    override def visitConstructorType(node: ConstructorTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitContinueStatement(node: ContinueStatementSyntax): js.Any = js.native
+    override def visitContinueStatement(node: ContinueStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDebuggerStatement(node: DebuggerStatementSyntax): js.Any = js.native
+    override def visitDebuggerStatement(node: DebuggerStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDefaultSwitchClause(node: DefaultSwitchClauseSyntax): js.Any = js.native
+    override def visitDefaultSwitchClause(node: DefaultSwitchClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDeleteExpression(node: DeleteExpressionSyntax): js.Any = js.native
+    override def visitDeleteExpression(node: DeleteExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDoStatement(node: DoStatementSyntax): js.Any = js.native
+    override def visitDoStatement(node: DoStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitElementAccessExpression(node: ElementAccessExpressionSyntax): js.Any = js.native
+    override def visitElementAccessExpression(node: ElementAccessExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitElseClause(node: ElseClauseSyntax): js.Any = js.native
+    override def visitElseClause(node: ElseClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEmptyStatement(node: EmptyStatementSyntax): js.Any = js.native
+    override def visitEmptyStatement(node: EmptyStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEnumDeclaration(node: EnumDeclarationSyntax): js.Any = js.native
+    override def visitEnumDeclaration(node: EnumDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEnumElement(node: EnumElementSyntax): js.Any = js.native
+    override def visitEnumElement(node: EnumElementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEqualsValueClause(node: EqualsValueClauseSyntax): js.Any = js.native
+    override def visitEqualsValueClause(node: EqualsValueClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitExportAssignment(node: ExportAssignmentSyntax): js.Any = js.native
+    override def visitExportAssignment(node: ExportAssignmentSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitExpressionStatement(node: ExpressionStatementSyntax): js.Any = js.native
+    override def visitExpressionStatement(node: ExpressionStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitExternalModuleReference(node: ExternalModuleReferenceSyntax): js.Any = js.native
+    override def visitExternalModuleReference(node: ExternalModuleReferenceSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFinallyClause(node: FinallyClauseSyntax): js.Any = js.native
+    override def visitFinallyClause(node: FinallyClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitForInStatement(node: ForInStatementSyntax): js.Any = js.native
+    override def visitForInStatement(node: ForInStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitForStatement(node: ForStatementSyntax): js.Any = js.native
+    override def visitForStatement(node: ForStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionDeclaration(node: FunctionDeclarationSyntax): js.Any = js.native
+    override def visitFunctionDeclaration(node: FunctionDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionExpression(node: FunctionExpressionSyntax): js.Any = js.native
+    override def visitFunctionExpression(node: FunctionExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionPropertyAssignment(node: FunctionPropertyAssignmentSyntax): js.Any = js.native
+    override def visitFunctionPropertyAssignment(node: FunctionPropertyAssignmentSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionType(node: FunctionTypeSyntax): js.Any = js.native
+    override def visitFunctionType(node: FunctionTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitGenericType(node: GenericTypeSyntax): js.Any = js.native
+    override def visitGenericType(node: GenericTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitGetAccessor(node: GetAccessorSyntax): js.Any = js.native
+    override def visitGetAccessor(node: GetAccessorSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitHeritageClause(node: HeritageClauseSyntax): js.Any = js.native
+    override def visitHeritageClause(node: HeritageClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitIfStatement(node: IfStatementSyntax): js.Any = js.native
+    override def visitIfStatement(node: IfStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitImportDeclaration(node: ImportDeclarationSyntax): js.Any = js.native
+    override def visitImportDeclaration(node: ImportDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitIndexMemberDeclaration(node: IndexMemberDeclarationSyntax): js.Any = js.native
+    override def visitIndexMemberDeclaration(node: IndexMemberDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitIndexSignature(node: IndexSignatureSyntax): js.Any = js.native
+    override def visitIndexSignature(node: IndexSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitInterfaceDeclaration(node: InterfaceDeclarationSyntax): js.Any = js.native
+    override def visitInterfaceDeclaration(node: InterfaceDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitInvocationExpression(node: InvocationExpressionSyntax): js.Any = js.native
+    override def visitInvocationExpression(node: InvocationExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitLabeledStatement(node: LabeledStatementSyntax): js.Any = js.native
+    override def visitLabeledStatement(node: LabeledStatementSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitList(list: ISyntaxList): Unit = js.native
     
     /* CompleteClass */
-    override def visitMemberAccessExpression(node: MemberAccessExpressionSyntax): js.Any = js.native
+    override def visitMemberAccessExpression(node: MemberAccessExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitMemberFunctionDeclaration(node: MemberFunctionDeclarationSyntax): js.Any = js.native
+    override def visitMemberFunctionDeclaration(node: MemberFunctionDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitMemberVariableDeclaration(node: MemberVariableDeclarationSyntax): js.Any = js.native
+    override def visitMemberVariableDeclaration(node: MemberVariableDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitMethodSignature(node: MethodSignatureSyntax): js.Any = js.native
+    override def visitMethodSignature(node: MethodSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitModuleDeclaration(node: ModuleDeclarationSyntax): js.Any = js.native
+    override def visitModuleDeclaration(node: ModuleDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitModuleNameModuleReference(node: ModuleNameModuleReferenceSyntax): js.Any = js.native
+    override def visitModuleNameModuleReference(node: ModuleNameModuleReferenceSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitNode(node: SyntaxNode): Unit = js.native
@@ -1032,16 +1027,16 @@ object Formatting {
     override def visitNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
     
     /* CompleteClass */
-    override def visitObjectCreationExpression(node: ObjectCreationExpressionSyntax): js.Any = js.native
+    override def visitObjectCreationExpression(node: ObjectCreationExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitObjectLiteralExpression(node: ObjectLiteralExpressionSyntax): js.Any = js.native
+    override def visitObjectLiteralExpression(node: ObjectLiteralExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitObjectType(node: ObjectTypeSyntax): js.Any = js.native
+    override def visitObjectType(node: ObjectTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitOmittedExpression(node: OmittedExpressionSyntax): js.Any = js.native
+    override def visitOmittedExpression(node: OmittedExpressionSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitOptionalNode(node: SyntaxNode): Unit = js.native
@@ -1050,105 +1045,105 @@ object Formatting {
     override def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def visitOptionalToken(token: js.Any): js.Any = js.native
+    override def visitOptionalToken(token: Any): Any = js.native
     
     /* CompleteClass */
-    override def visitParameter(node: ParameterSyntax): js.Any = js.native
+    override def visitParameter(node: ParameterSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitParameterList(node: ParameterListSyntax): js.Any = js.native
+    override def visitParameterList(node: ParameterListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitParenthesizedArrowFunctionExpression(node: ParenthesizedArrowFunctionExpressionSyntax): js.Any = js.native
+    override def visitParenthesizedArrowFunctionExpression(node: ParenthesizedArrowFunctionExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitParenthesizedExpression(node: ParenthesizedExpressionSyntax): js.Any = js.native
+    override def visitParenthesizedExpression(node: ParenthesizedExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitPostfixUnaryExpression(node: PostfixUnaryExpressionSyntax): js.Any = js.native
+    override def visitPostfixUnaryExpression(node: PostfixUnaryExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitPrefixUnaryExpression(node: PrefixUnaryExpressionSyntax): js.Any = js.native
+    override def visitPrefixUnaryExpression(node: PrefixUnaryExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitPropertySignature(node: PropertySignatureSyntax): js.Any = js.native
+    override def visitPropertySignature(node: PropertySignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitQualifiedName(node: QualifiedNameSyntax): js.Any = js.native
+    override def visitQualifiedName(node: QualifiedNameSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitReturnStatement(node: ReturnStatementSyntax): js.Any = js.native
+    override def visitReturnStatement(node: ReturnStatementSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitSeparatedList(list: ISeparatedSyntaxList): Unit = js.native
     
     /* CompleteClass */
-    override def visitSetAccessor(node: SetAccessorSyntax): js.Any = js.native
+    override def visitSetAccessor(node: SetAccessorSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSimpleArrowFunctionExpression(node: SimpleArrowFunctionExpressionSyntax): js.Any = js.native
+    override def visitSimpleArrowFunctionExpression(node: SimpleArrowFunctionExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSimplePropertyAssignment(node: SimplePropertyAssignmentSyntax): js.Any = js.native
+    override def visitSimplePropertyAssignment(node: SimplePropertyAssignmentSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSourceUnit(node: SourceUnitSyntax): js.Any = js.native
+    override def visitSourceUnit(node: SourceUnitSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSwitchStatement(node: SwitchStatementSyntax): js.Any = js.native
+    override def visitSwitchStatement(node: SwitchStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitThrowStatement(node: ThrowStatementSyntax): js.Any = js.native
+    override def visitThrowStatement(node: ThrowStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitToken(token: ISyntaxToken): js.Any = js.native
+    override def visitToken(token: ISyntaxToken): Any = js.native
     
     /* CompleteClass */
     override def visitTokenInSpan(token: ISyntaxToken): Unit = js.native
     
     /* CompleteClass */
-    override def visitTryStatement(node: TryStatementSyntax): js.Any = js.native
+    override def visitTryStatement(node: TryStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeAnnotation(node: TypeAnnotationSyntax): js.Any = js.native
+    override def visitTypeAnnotation(node: TypeAnnotationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeArgumentList(node: TypeArgumentListSyntax): js.Any = js.native
+    override def visitTypeArgumentList(node: TypeArgumentListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeOfExpression(node: TypeOfExpressionSyntax): js.Any = js.native
+    override def visitTypeOfExpression(node: TypeOfExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeParameter(node: TypeParameterSyntax): js.Any = js.native
+    override def visitTypeParameter(node: TypeParameterSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeParameterList(node: TypeParameterListSyntax): js.Any = js.native
+    override def visitTypeParameterList(node: TypeParameterListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeQuery(node: TypeQuerySyntax): js.Any = js.native
+    override def visitTypeQuery(node: TypeQuerySyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVariableDeclaration(node: VariableDeclarationSyntax): js.Any = js.native
+    override def visitVariableDeclaration(node: VariableDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVariableDeclarator(node: VariableDeclaratorSyntax): js.Any = js.native
+    override def visitVariableDeclarator(node: VariableDeclaratorSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVariableStatement(node: VariableStatementSyntax): js.Any = js.native
+    override def visitVariableStatement(node: VariableStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVoidExpression(node: VoidExpressionSyntax): js.Any = js.native
+    override def visitVoidExpression(node: VoidExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitWhileStatement(node: WhileStatementSyntax): js.Any = js.native
+    override def visitWhileStatement(node: WhileStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitWithStatement(node: WithStatementSyntax): js.Any = js.native
+    override def visitWithStatement(node: WithStatementSyntax): Any = js.native
   }
   
   @JSGlobal("TypeScript.Services.Formatting.MultipleTokenIndenter")
   @js.native
-  class MultipleTokenIndenter protected ()
+  open class MultipleTokenIndenter protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.MultipleTokenIndenter {
     def this(
@@ -1160,25 +1155,25 @@ object Formatting {
     ) = this()
     
     /* private */ /* CompleteClass */
-    var _edits: js.Any = js.native
+    var _edits: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _indentationNodeContextPool: js.Any = js.native
+    var _indentationNodeContextPool: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _lastTriviaWasNewLine: js.Any = js.native
+    var _lastTriviaWasNewLine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _parent: js.Any = js.native
+    var _parent: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _position: js.Any = js.native
+    var _position: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _snapshot: js.Any = js.native
+    var _snapshot: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _textSpan: js.Any = js.native
+    var _textSpan: Any = js.native
     
     /* CompleteClass */
     override def edits(): js.Array[typings.typescriptServices.TypeScript.Services.Formatting.TextEditInfo] = js.native
@@ -1187,19 +1182,19 @@ object Formatting {
     override def forceIndentNextToken(tokenStart: Double): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def forceRecomputeIndentationOfParent(tokenStart: js.Any, newLineAdded: js.Any): js.Any = js.native
+    override def forceRecomputeIndentationOfParent(tokenStart: Any, newLineAdded: Any): Any = js.native
     
     /* CompleteClass */
     override def forceSkipIndentingNextToken(tokenStart: Double): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def getCommentIndentationAmount(token: js.Any): js.Any = js.native
+    override def getCommentIndentationAmount(token: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def getNodeIndentation(node: js.Any, newLineInsertedByFormatting: js.Any): js.Any = js.native
+    override def getNodeIndentation(node: Any, newLineInsertedByFormatting: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def getTokenIndentationAmount(token: js.Any): js.Any = js.native
+    override def getTokenIndentationAmount(token: Any): Any = js.native
     
     /* CompleteClass */
     override def indentToken(token: ISyntaxToken, indentationAmount: Double, commentIndentationAmount: Double): Unit = js.native
@@ -1221,32 +1216,27 @@ object Formatting {
     
     /* private */ /* CompleteClass */
     override def recordIndentationEditsForMultiLineComment(
-      trivia: js.Any,
-      fullStart: js.Any,
-      indentationString: js.Any,
-      leadingWhiteSpace: js.Any,
-      firstLineAlreadyIndented: js.Any
-    ): js.Any = js.native
+      trivia: Any,
+      fullStart: Any,
+      indentationString: Any,
+      leadingWhiteSpace: Any,
+      firstLineAlreadyIndented: Any
+    ): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def recordIndentationEditsForSegment(
-      segment: js.Any,
-      fullStart: js.Any,
-      indentationColumns: js.Any,
-      whiteSpaceColumnsInFirstSegment: js.Any
-    ): js.Any = js.native
+    override def recordIndentationEditsForSegment(segment: Any, fullStart: Any, indentationColumns: Any, whiteSpaceColumnsInFirstSegment: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def recordIndentationEditsForSingleLineOrSkippedText(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any = js.native
+    override def recordIndentationEditsForSingleLineOrSkippedText(trivia: Any, fullStart: Any, indentationString: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def recordIndentationEditsForToken(token: js.Any, indentationString: js.Any, commentIndentationString: js.Any): js.Any = js.native
+    override def recordIndentationEditsForToken(token: Any, indentationString: Any, commentIndentationString: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def recordIndentationEditsForWhitespace(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any = js.native
+    override def recordIndentationEditsForWhitespace(trivia: Any, fullStart: Any, indentationString: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def shouldIndentBlockInParent(parent: js.Any): js.Any = js.native
+    override def shouldIndentBlockInParent(parent: Any): Any = js.native
     
     /* CompleteClass */
     override def snapshot(): ITextSnapshot = js.native
@@ -1255,166 +1245,166 @@ object Formatting {
     override def textSpan(): TextSpan = js.native
     
     /* CompleteClass */
-    override def visitArgumentList(node: ArgumentListSyntax): js.Any = js.native
+    override def visitArgumentList(node: ArgumentListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitArrayLiteralExpression(node: ArrayLiteralExpressionSyntax): js.Any = js.native
+    override def visitArrayLiteralExpression(node: ArrayLiteralExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitArrayType(node: ArrayTypeSyntax): js.Any = js.native
+    override def visitArrayType(node: ArrayTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitBinaryExpression(node: BinaryExpressionSyntax): js.Any = js.native
+    override def visitBinaryExpression(node: BinaryExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitBlock(node: BlockSyntax): js.Any = js.native
+    override def visitBlock(node: BlockSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitBreakStatement(node: BreakStatementSyntax): js.Any = js.native
+    override def visitBreakStatement(node: BreakStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCallSignature(node: CallSignatureSyntax): js.Any = js.native
+    override def visitCallSignature(node: CallSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCaseSwitchClause(node: CaseSwitchClauseSyntax): js.Any = js.native
+    override def visitCaseSwitchClause(node: CaseSwitchClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCastExpression(node: CastExpressionSyntax): js.Any = js.native
+    override def visitCastExpression(node: CastExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCatchClause(node: CatchClauseSyntax): js.Any = js.native
+    override def visitCatchClause(node: CatchClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitClassDeclaration(node: ClassDeclarationSyntax): js.Any = js.native
+    override def visitClassDeclaration(node: ClassDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConditionalExpression(node: ConditionalExpressionSyntax): js.Any = js.native
+    override def visitConditionalExpression(node: ConditionalExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstraint(node: ConstraintSyntax): js.Any = js.native
+    override def visitConstraint(node: ConstraintSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstructSignature(node: ConstructSignatureSyntax): js.Any = js.native
+    override def visitConstructSignature(node: ConstructSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstructorDeclaration(node: ConstructorDeclarationSyntax): js.Any = js.native
+    override def visitConstructorDeclaration(node: ConstructorDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstructorType(node: ConstructorTypeSyntax): js.Any = js.native
+    override def visitConstructorType(node: ConstructorTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitContinueStatement(node: ContinueStatementSyntax): js.Any = js.native
+    override def visitContinueStatement(node: ContinueStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDebuggerStatement(node: DebuggerStatementSyntax): js.Any = js.native
+    override def visitDebuggerStatement(node: DebuggerStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDefaultSwitchClause(node: DefaultSwitchClauseSyntax): js.Any = js.native
+    override def visitDefaultSwitchClause(node: DefaultSwitchClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDeleteExpression(node: DeleteExpressionSyntax): js.Any = js.native
+    override def visitDeleteExpression(node: DeleteExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDoStatement(node: DoStatementSyntax): js.Any = js.native
+    override def visitDoStatement(node: DoStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitElementAccessExpression(node: ElementAccessExpressionSyntax): js.Any = js.native
+    override def visitElementAccessExpression(node: ElementAccessExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitElseClause(node: ElseClauseSyntax): js.Any = js.native
+    override def visitElseClause(node: ElseClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEmptyStatement(node: EmptyStatementSyntax): js.Any = js.native
+    override def visitEmptyStatement(node: EmptyStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEnumDeclaration(node: EnumDeclarationSyntax): js.Any = js.native
+    override def visitEnumDeclaration(node: EnumDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEnumElement(node: EnumElementSyntax): js.Any = js.native
+    override def visitEnumElement(node: EnumElementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEqualsValueClause(node: EqualsValueClauseSyntax): js.Any = js.native
+    override def visitEqualsValueClause(node: EqualsValueClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitExportAssignment(node: ExportAssignmentSyntax): js.Any = js.native
+    override def visitExportAssignment(node: ExportAssignmentSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitExpressionStatement(node: ExpressionStatementSyntax): js.Any = js.native
+    override def visitExpressionStatement(node: ExpressionStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitExternalModuleReference(node: ExternalModuleReferenceSyntax): js.Any = js.native
+    override def visitExternalModuleReference(node: ExternalModuleReferenceSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFinallyClause(node: FinallyClauseSyntax): js.Any = js.native
+    override def visitFinallyClause(node: FinallyClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitForInStatement(node: ForInStatementSyntax): js.Any = js.native
+    override def visitForInStatement(node: ForInStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitForStatement(node: ForStatementSyntax): js.Any = js.native
+    override def visitForStatement(node: ForStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionDeclaration(node: FunctionDeclarationSyntax): js.Any = js.native
+    override def visitFunctionDeclaration(node: FunctionDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionExpression(node: FunctionExpressionSyntax): js.Any = js.native
+    override def visitFunctionExpression(node: FunctionExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionPropertyAssignment(node: FunctionPropertyAssignmentSyntax): js.Any = js.native
+    override def visitFunctionPropertyAssignment(node: FunctionPropertyAssignmentSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionType(node: FunctionTypeSyntax): js.Any = js.native
+    override def visitFunctionType(node: FunctionTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitGenericType(node: GenericTypeSyntax): js.Any = js.native
+    override def visitGenericType(node: GenericTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitGetAccessor(node: GetAccessorSyntax): js.Any = js.native
+    override def visitGetAccessor(node: GetAccessorSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitHeritageClause(node: HeritageClauseSyntax): js.Any = js.native
+    override def visitHeritageClause(node: HeritageClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitIfStatement(node: IfStatementSyntax): js.Any = js.native
+    override def visitIfStatement(node: IfStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitImportDeclaration(node: ImportDeclarationSyntax): js.Any = js.native
+    override def visitImportDeclaration(node: ImportDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitIndexMemberDeclaration(node: IndexMemberDeclarationSyntax): js.Any = js.native
+    override def visitIndexMemberDeclaration(node: IndexMemberDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitIndexSignature(node: IndexSignatureSyntax): js.Any = js.native
+    override def visitIndexSignature(node: IndexSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitInterfaceDeclaration(node: InterfaceDeclarationSyntax): js.Any = js.native
+    override def visitInterfaceDeclaration(node: InterfaceDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitInvocationExpression(node: InvocationExpressionSyntax): js.Any = js.native
+    override def visitInvocationExpression(node: InvocationExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitLabeledStatement(node: LabeledStatementSyntax): js.Any = js.native
+    override def visitLabeledStatement(node: LabeledStatementSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitList(list: ISyntaxList): Unit = js.native
     
     /* CompleteClass */
-    override def visitMemberAccessExpression(node: MemberAccessExpressionSyntax): js.Any = js.native
+    override def visitMemberAccessExpression(node: MemberAccessExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitMemberFunctionDeclaration(node: MemberFunctionDeclarationSyntax): js.Any = js.native
+    override def visitMemberFunctionDeclaration(node: MemberFunctionDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitMemberVariableDeclaration(node: MemberVariableDeclarationSyntax): js.Any = js.native
+    override def visitMemberVariableDeclaration(node: MemberVariableDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitMethodSignature(node: MethodSignatureSyntax): js.Any = js.native
+    override def visitMethodSignature(node: MethodSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitModuleDeclaration(node: ModuleDeclarationSyntax): js.Any = js.native
+    override def visitModuleDeclaration(node: ModuleDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitModuleNameModuleReference(node: ModuleNameModuleReferenceSyntax): js.Any = js.native
+    override def visitModuleNameModuleReference(node: ModuleNameModuleReferenceSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitNode(node: SyntaxNode): Unit = js.native
@@ -1423,16 +1413,16 @@ object Formatting {
     override def visitNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
     
     /* CompleteClass */
-    override def visitObjectCreationExpression(node: ObjectCreationExpressionSyntax): js.Any = js.native
+    override def visitObjectCreationExpression(node: ObjectCreationExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitObjectLiteralExpression(node: ObjectLiteralExpressionSyntax): js.Any = js.native
+    override def visitObjectLiteralExpression(node: ObjectLiteralExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitObjectType(node: ObjectTypeSyntax): js.Any = js.native
+    override def visitObjectType(node: ObjectTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitOmittedExpression(node: OmittedExpressionSyntax): js.Any = js.native
+    override def visitOmittedExpression(node: OmittedExpressionSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitOptionalNode(node: SyntaxNode): Unit = js.native
@@ -1441,105 +1431,105 @@ object Formatting {
     override def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def visitOptionalToken(token: js.Any): js.Any = js.native
+    override def visitOptionalToken(token: Any): Any = js.native
     
     /* CompleteClass */
-    override def visitParameter(node: ParameterSyntax): js.Any = js.native
+    override def visitParameter(node: ParameterSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitParameterList(node: ParameterListSyntax): js.Any = js.native
+    override def visitParameterList(node: ParameterListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitParenthesizedArrowFunctionExpression(node: ParenthesizedArrowFunctionExpressionSyntax): js.Any = js.native
+    override def visitParenthesizedArrowFunctionExpression(node: ParenthesizedArrowFunctionExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitParenthesizedExpression(node: ParenthesizedExpressionSyntax): js.Any = js.native
+    override def visitParenthesizedExpression(node: ParenthesizedExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitPostfixUnaryExpression(node: PostfixUnaryExpressionSyntax): js.Any = js.native
+    override def visitPostfixUnaryExpression(node: PostfixUnaryExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitPrefixUnaryExpression(node: PrefixUnaryExpressionSyntax): js.Any = js.native
+    override def visitPrefixUnaryExpression(node: PrefixUnaryExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitPropertySignature(node: PropertySignatureSyntax): js.Any = js.native
+    override def visitPropertySignature(node: PropertySignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitQualifiedName(node: QualifiedNameSyntax): js.Any = js.native
+    override def visitQualifiedName(node: QualifiedNameSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitReturnStatement(node: ReturnStatementSyntax): js.Any = js.native
+    override def visitReturnStatement(node: ReturnStatementSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitSeparatedList(list: ISeparatedSyntaxList): Unit = js.native
     
     /* CompleteClass */
-    override def visitSetAccessor(node: SetAccessorSyntax): js.Any = js.native
+    override def visitSetAccessor(node: SetAccessorSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSimpleArrowFunctionExpression(node: SimpleArrowFunctionExpressionSyntax): js.Any = js.native
+    override def visitSimpleArrowFunctionExpression(node: SimpleArrowFunctionExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSimplePropertyAssignment(node: SimplePropertyAssignmentSyntax): js.Any = js.native
+    override def visitSimplePropertyAssignment(node: SimplePropertyAssignmentSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSourceUnit(node: SourceUnitSyntax): js.Any = js.native
+    override def visitSourceUnit(node: SourceUnitSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSwitchStatement(node: SwitchStatementSyntax): js.Any = js.native
+    override def visitSwitchStatement(node: SwitchStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitThrowStatement(node: ThrowStatementSyntax): js.Any = js.native
+    override def visitThrowStatement(node: ThrowStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitToken(token: ISyntaxToken): js.Any = js.native
+    override def visitToken(token: ISyntaxToken): Any = js.native
     
     /* CompleteClass */
     override def visitTokenInSpan(token: ISyntaxToken): Unit = js.native
     
     /* CompleteClass */
-    override def visitTryStatement(node: TryStatementSyntax): js.Any = js.native
+    override def visitTryStatement(node: TryStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeAnnotation(node: TypeAnnotationSyntax): js.Any = js.native
+    override def visitTypeAnnotation(node: TypeAnnotationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeArgumentList(node: TypeArgumentListSyntax): js.Any = js.native
+    override def visitTypeArgumentList(node: TypeArgumentListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeOfExpression(node: TypeOfExpressionSyntax): js.Any = js.native
+    override def visitTypeOfExpression(node: TypeOfExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeParameter(node: TypeParameterSyntax): js.Any = js.native
+    override def visitTypeParameter(node: TypeParameterSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeParameterList(node: TypeParameterListSyntax): js.Any = js.native
+    override def visitTypeParameterList(node: TypeParameterListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeQuery(node: TypeQuerySyntax): js.Any = js.native
+    override def visitTypeQuery(node: TypeQuerySyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVariableDeclaration(node: VariableDeclarationSyntax): js.Any = js.native
+    override def visitVariableDeclaration(node: VariableDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVariableDeclarator(node: VariableDeclaratorSyntax): js.Any = js.native
+    override def visitVariableDeclarator(node: VariableDeclaratorSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVariableStatement(node: VariableStatementSyntax): js.Any = js.native
+    override def visitVariableStatement(node: VariableStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVoidExpression(node: VoidExpressionSyntax): js.Any = js.native
+    override def visitVoidExpression(node: VoidExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitWhileStatement(node: WhileStatementSyntax): js.Any = js.native
+    override def visitWhileStatement(node: WhileStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitWithStatement(node: WithStatementSyntax): js.Any = js.native
+    override def visitWithStatement(node: WithStatementSyntax): Any = js.native
   }
   
   @JSGlobal("TypeScript.Services.Formatting.Rule")
   @js.native
-  class Rule protected ()
+  open class Rule protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.Rule {
     def this(
@@ -1580,7 +1570,7 @@ object Formatting {
   
   @JSGlobal("TypeScript.Services.Formatting.RuleDescriptor")
   @js.native
-  class RuleDescriptor protected ()
+  open class RuleDescriptor protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.RuleDescriptor {
     def this(LeftTokenRange: TokenRange, RightTokenRange: TokenRange) = this()
@@ -1624,7 +1614,7 @@ object Formatting {
   
   @JSGlobal("TypeScript.Services.Formatting.RuleOperation")
   @js.native
-  class RuleOperation ()
+  open class RuleOperation ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.RuleOperation {
     
@@ -1652,7 +1642,7 @@ object Formatting {
   
   @JSGlobal("TypeScript.Services.Formatting.RuleOperationContext")
   @js.native
-  class RuleOperationContext protected ()
+  open class RuleOperationContext protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.RuleOperationContext {
     def this(funcs: (js.Function1[
@@ -1667,7 +1657,7 @@ object Formatting {
     override def IsAny(): Boolean = js.native
     
     /* private */ /* CompleteClass */
-    var customContextChecks: js.Any = js.native
+    var customContextChecks: Any = js.native
   }
   object RuleOperationContext {
     
@@ -1684,7 +1674,7 @@ object Formatting {
   
   @JSGlobal("TypeScript.Services.Formatting.Rules")
   @js.native
-  class Rules ()
+  open class Rules ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.Rules {
     
@@ -1953,7 +1943,7 @@ object Formatting {
     var TypeScriptOpenBraceLeftTokenRange: TokenRange = js.native
     
     /* CompleteClass */
-    override def getRuleName(rule: typings.typescriptServices.TypeScript.Services.Formatting.Rule): js.Any = js.native
+    override def getRuleName(rule: typings.typescriptServices.TypeScript.Services.Formatting.Rule): Any = js.native
   }
   object Rules {
     
@@ -2045,7 +2035,7 @@ object Formatting {
   
   @JSGlobal("TypeScript.Services.Formatting.RulesBucket")
   @js.native
-  class RulesBucket ()
+  open class RulesBucket ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.RulesBucket {
     
@@ -2063,12 +2053,12 @@ object Formatting {
     override def Rules(): js.Array[typings.typescriptServices.TypeScript.Services.Formatting.Rule] = js.native
     
     /* private */ /* CompleteClass */
-    var rules: js.Any = js.native
+    var rules: Any = js.native
   }
   
   @JSGlobal("TypeScript.Services.Formatting.RulesBucketConstructionState")
   @js.native
-  class RulesBucketConstructionState ()
+  open class RulesBucketConstructionState ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.RulesBucketConstructionState {
     
@@ -2079,17 +2069,17 @@ object Formatting {
     override def IncreaseInsertionIndex(maskPosition: RulesPosition): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var rulesInsertionIndexBitmap: js.Any = js.native
+    var rulesInsertionIndexBitmap: Any = js.native
   }
   
   @JSGlobal("TypeScript.Services.Formatting.RulesMap")
   @js.native
-  class RulesMap ()
+  open class RulesMap ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.RulesMap {
     
     /* private */ /* CompleteClass */
-    override def FillRule(rule: js.Any, rulesBucketConstructionStateList: js.Any): js.Any = js.native
+    override def FillRule(rule: Any, rulesBucketConstructionStateList: Any): Any = js.native
     
     /* CompleteClass */
     override def FillRules(
@@ -2103,7 +2093,7 @@ object Formatting {
     override def GetRule(context: typings.typescriptServices.TypeScript.Services.Formatting.FormattingContext): typings.typescriptServices.TypeScript.Services.Formatting.Rule = js.native
     
     /* private */ /* CompleteClass */
-    override def GetRuleBucketIndex(row: js.Any, column: js.Any): js.Any = js.native
+    override def GetRuleBucketIndex(row: Any, column: Any): Any = js.native
     
     /* CompleteClass */
     override def Initialize(rules: js.Array[typings.typescriptServices.TypeScript.Services.Formatting.Rule]): js.Array[typings.typescriptServices.TypeScript.Services.Formatting.RulesBucket] = js.native
@@ -2146,16 +2136,16 @@ object Formatting {
   
   @JSGlobal("TypeScript.Services.Formatting.RulesProvider")
   @js.native
-  class RulesProvider protected ()
+  open class RulesProvider protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.RulesProvider {
     def this(logger: ILogger) = this()
     
     /* private */ /* CompleteClass */
-    var activeRules: js.Any = js.native
+    var activeRules: Any = js.native
     
     /* private */ /* CompleteClass */
-    override def createActiveRules(options: js.Any): js.Any = js.native
+    override def createActiveRules(options: Any): Any = js.native
     
     /* CompleteClass */
     override def ensureUpToDate(options: typings.typescriptServices.TypeScript.Services.FormatCodeOptions): Unit = js.native
@@ -2170,23 +2160,23 @@ object Formatting {
     override def getRulesMap(): typings.typescriptServices.TypeScript.Services.Formatting.RulesMap = js.native
     
     /* private */ /* CompleteClass */
-    var globalRules: js.Any = js.native
+    var globalRules: Any = js.native
     
     /* private */ /* CompleteClass */
-    var logger: js.Any = js.native
+    var logger: Any = js.native
     
     /* private */ /* CompleteClass */
-    var options: js.Any = js.native
+    var options: Any = js.native
     
     /* private */ /* CompleteClass */
-    var rulesMap: js.Any = js.native
+    var rulesMap: Any = js.native
   }
   
   object Shared {
     
     @JSGlobal("TypeScript.Services.Formatting.Shared.TokenAllAccess")
     @js.native
-    class TokenAllAccess ()
+    open class TokenAllAccess ()
       extends StObject
          with typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenAllAccess {
       
@@ -2199,7 +2189,7 @@ object Formatting {
     
     @JSGlobal("TypeScript.Services.Formatting.Shared.TokenRange")
     @js.native
-    class TokenRange protected ()
+    open class TokenRange protected ()
       extends StObject
          with typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRange {
       def this(tokenAccess: ITokenAccess) = this()
@@ -2326,7 +2316,7 @@ object Formatting {
     
     @JSGlobal("TypeScript.Services.Formatting.Shared.TokenRangeAccess")
     @js.native
-    class TokenRangeAccess protected ()
+    open class TokenRangeAccess protected ()
       extends StObject
          with typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenRangeAccess {
       def this(from: SyntaxKind, to: SyntaxKind, except: js.Array[SyntaxKind]) = this()
@@ -2338,12 +2328,12 @@ object Formatting {
       override def GetTokens(): js.Array[SyntaxKind] = js.native
       
       /* private */ /* CompleteClass */
-      var tokens: js.Any = js.native
+      var tokens: Any = js.native
     }
     
     @JSGlobal("TypeScript.Services.Formatting.Shared.TokenSingleValueAccess")
     @js.native
-    class TokenSingleValueAccess protected ()
+    open class TokenSingleValueAccess protected ()
       extends StObject
          with typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenSingleValueAccess {
       def this(token: SyntaxKind) = this()
@@ -2360,7 +2350,7 @@ object Formatting {
     
     @JSGlobal("TypeScript.Services.Formatting.Shared.TokenValuesAccess")
     @js.native
-    class TokenValuesAccess protected ()
+    open class TokenValuesAccess protected ()
       extends StObject
          with typings.typescriptServices.TypeScript.Services.Formatting.Shared.TokenValuesAccess {
       def this(tks: js.Array[SyntaxKind]) = this()
@@ -2372,13 +2362,13 @@ object Formatting {
       override def GetTokens(): js.Array[SyntaxKind] = js.native
       
       /* private */ /* CompleteClass */
-      var tokens: js.Any = js.native
+      var tokens: Any = js.native
     }
   }
   
   @JSGlobal("TypeScript.Services.Formatting.SingleTokenIndenter")
   @js.native
-  class SingleTokenIndenter protected ()
+  open class SingleTokenIndenter protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.SingleTokenIndenter {
     def this(
@@ -2390,52 +2380,52 @@ object Formatting {
     ) = this()
     
     /* private */ /* CompleteClass */
-    var _indentationNodeContextPool: js.Any = js.native
+    var _indentationNodeContextPool: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _lastTriviaWasNewLine: js.Any = js.native
+    var _lastTriviaWasNewLine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _parent: js.Any = js.native
+    var _parent: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _position: js.Any = js.native
+    var _position: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _snapshot: js.Any = js.native
+    var _snapshot: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _textSpan: js.Any = js.native
+    var _textSpan: Any = js.native
     
     /* CompleteClass */
     override def forceIndentNextToken(tokenStart: Double): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def forceRecomputeIndentationOfParent(tokenStart: js.Any, newLineAdded: js.Any): js.Any = js.native
+    override def forceRecomputeIndentationOfParent(tokenStart: Any, newLineAdded: Any): Any = js.native
     
     /* CompleteClass */
     override def forceSkipIndentingNextToken(tokenStart: Double): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def getCommentIndentationAmount(token: js.Any): js.Any = js.native
+    override def getCommentIndentationAmount(token: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def getNodeIndentation(node: js.Any, newLineInsertedByFormatting: js.Any): js.Any = js.native
+    override def getNodeIndentation(node: Any, newLineInsertedByFormatting: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def getTokenIndentationAmount(token: js.Any): js.Any = js.native
+    override def getTokenIndentationAmount(token: Any): Any = js.native
     
     /* CompleteClass */
     override def indentToken(token: ISyntaxToken, indentationAmount: Double, commentIndentationAmount: Double): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var indentationAmount: js.Any = js.native
+    var indentationAmount: Any = js.native
     
     /* CompleteClass */
     override def indentationNodeContextPool(): typings.typescriptServices.TypeScript.Services.Formatting.IndentationNodeContextPool = js.native
     
     /* private */ /* CompleteClass */
-    var indentationPosition: js.Any = js.native
+    var indentationPosition: Any = js.native
     
     /* CompleteClass */
     var options: FormattingOptions = js.native
@@ -2447,7 +2437,7 @@ object Formatting {
     override def position(): Double = js.native
     
     /* private */ /* CompleteClass */
-    override def shouldIndentBlockInParent(parent: js.Any): js.Any = js.native
+    override def shouldIndentBlockInParent(parent: Any): Any = js.native
     
     /* CompleteClass */
     override def snapshot(): ITextSnapshot = js.native
@@ -2456,166 +2446,166 @@ object Formatting {
     override def textSpan(): TextSpan = js.native
     
     /* CompleteClass */
-    override def visitArgumentList(node: ArgumentListSyntax): js.Any = js.native
+    override def visitArgumentList(node: ArgumentListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitArrayLiteralExpression(node: ArrayLiteralExpressionSyntax): js.Any = js.native
+    override def visitArrayLiteralExpression(node: ArrayLiteralExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitArrayType(node: ArrayTypeSyntax): js.Any = js.native
+    override def visitArrayType(node: ArrayTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitBinaryExpression(node: BinaryExpressionSyntax): js.Any = js.native
+    override def visitBinaryExpression(node: BinaryExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitBlock(node: BlockSyntax): js.Any = js.native
+    override def visitBlock(node: BlockSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitBreakStatement(node: BreakStatementSyntax): js.Any = js.native
+    override def visitBreakStatement(node: BreakStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCallSignature(node: CallSignatureSyntax): js.Any = js.native
+    override def visitCallSignature(node: CallSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCaseSwitchClause(node: CaseSwitchClauseSyntax): js.Any = js.native
+    override def visitCaseSwitchClause(node: CaseSwitchClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCastExpression(node: CastExpressionSyntax): js.Any = js.native
+    override def visitCastExpression(node: CastExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitCatchClause(node: CatchClauseSyntax): js.Any = js.native
+    override def visitCatchClause(node: CatchClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitClassDeclaration(node: ClassDeclarationSyntax): js.Any = js.native
+    override def visitClassDeclaration(node: ClassDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConditionalExpression(node: ConditionalExpressionSyntax): js.Any = js.native
+    override def visitConditionalExpression(node: ConditionalExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstraint(node: ConstraintSyntax): js.Any = js.native
+    override def visitConstraint(node: ConstraintSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstructSignature(node: ConstructSignatureSyntax): js.Any = js.native
+    override def visitConstructSignature(node: ConstructSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstructorDeclaration(node: ConstructorDeclarationSyntax): js.Any = js.native
+    override def visitConstructorDeclaration(node: ConstructorDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitConstructorType(node: ConstructorTypeSyntax): js.Any = js.native
+    override def visitConstructorType(node: ConstructorTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitContinueStatement(node: ContinueStatementSyntax): js.Any = js.native
+    override def visitContinueStatement(node: ContinueStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDebuggerStatement(node: DebuggerStatementSyntax): js.Any = js.native
+    override def visitDebuggerStatement(node: DebuggerStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDefaultSwitchClause(node: DefaultSwitchClauseSyntax): js.Any = js.native
+    override def visitDefaultSwitchClause(node: DefaultSwitchClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDeleteExpression(node: DeleteExpressionSyntax): js.Any = js.native
+    override def visitDeleteExpression(node: DeleteExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitDoStatement(node: DoStatementSyntax): js.Any = js.native
+    override def visitDoStatement(node: DoStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitElementAccessExpression(node: ElementAccessExpressionSyntax): js.Any = js.native
+    override def visitElementAccessExpression(node: ElementAccessExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitElseClause(node: ElseClauseSyntax): js.Any = js.native
+    override def visitElseClause(node: ElseClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEmptyStatement(node: EmptyStatementSyntax): js.Any = js.native
+    override def visitEmptyStatement(node: EmptyStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEnumDeclaration(node: EnumDeclarationSyntax): js.Any = js.native
+    override def visitEnumDeclaration(node: EnumDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEnumElement(node: EnumElementSyntax): js.Any = js.native
+    override def visitEnumElement(node: EnumElementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitEqualsValueClause(node: EqualsValueClauseSyntax): js.Any = js.native
+    override def visitEqualsValueClause(node: EqualsValueClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitExportAssignment(node: ExportAssignmentSyntax): js.Any = js.native
+    override def visitExportAssignment(node: ExportAssignmentSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitExpressionStatement(node: ExpressionStatementSyntax): js.Any = js.native
+    override def visitExpressionStatement(node: ExpressionStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitExternalModuleReference(node: ExternalModuleReferenceSyntax): js.Any = js.native
+    override def visitExternalModuleReference(node: ExternalModuleReferenceSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFinallyClause(node: FinallyClauseSyntax): js.Any = js.native
+    override def visitFinallyClause(node: FinallyClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitForInStatement(node: ForInStatementSyntax): js.Any = js.native
+    override def visitForInStatement(node: ForInStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitForStatement(node: ForStatementSyntax): js.Any = js.native
+    override def visitForStatement(node: ForStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionDeclaration(node: FunctionDeclarationSyntax): js.Any = js.native
+    override def visitFunctionDeclaration(node: FunctionDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionExpression(node: FunctionExpressionSyntax): js.Any = js.native
+    override def visitFunctionExpression(node: FunctionExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionPropertyAssignment(node: FunctionPropertyAssignmentSyntax): js.Any = js.native
+    override def visitFunctionPropertyAssignment(node: FunctionPropertyAssignmentSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitFunctionType(node: FunctionTypeSyntax): js.Any = js.native
+    override def visitFunctionType(node: FunctionTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitGenericType(node: GenericTypeSyntax): js.Any = js.native
+    override def visitGenericType(node: GenericTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitGetAccessor(node: GetAccessorSyntax): js.Any = js.native
+    override def visitGetAccessor(node: GetAccessorSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitHeritageClause(node: HeritageClauseSyntax): js.Any = js.native
+    override def visitHeritageClause(node: HeritageClauseSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitIfStatement(node: IfStatementSyntax): js.Any = js.native
+    override def visitIfStatement(node: IfStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitImportDeclaration(node: ImportDeclarationSyntax): js.Any = js.native
+    override def visitImportDeclaration(node: ImportDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitIndexMemberDeclaration(node: IndexMemberDeclarationSyntax): js.Any = js.native
+    override def visitIndexMemberDeclaration(node: IndexMemberDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitIndexSignature(node: IndexSignatureSyntax): js.Any = js.native
+    override def visitIndexSignature(node: IndexSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitInterfaceDeclaration(node: InterfaceDeclarationSyntax): js.Any = js.native
+    override def visitInterfaceDeclaration(node: InterfaceDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitInvocationExpression(node: InvocationExpressionSyntax): js.Any = js.native
+    override def visitInvocationExpression(node: InvocationExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitLabeledStatement(node: LabeledStatementSyntax): js.Any = js.native
+    override def visitLabeledStatement(node: LabeledStatementSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitList(list: ISyntaxList): Unit = js.native
     
     /* CompleteClass */
-    override def visitMemberAccessExpression(node: MemberAccessExpressionSyntax): js.Any = js.native
+    override def visitMemberAccessExpression(node: MemberAccessExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitMemberFunctionDeclaration(node: MemberFunctionDeclarationSyntax): js.Any = js.native
+    override def visitMemberFunctionDeclaration(node: MemberFunctionDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitMemberVariableDeclaration(node: MemberVariableDeclarationSyntax): js.Any = js.native
+    override def visitMemberVariableDeclaration(node: MemberVariableDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitMethodSignature(node: MethodSignatureSyntax): js.Any = js.native
+    override def visitMethodSignature(node: MethodSignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitModuleDeclaration(node: ModuleDeclarationSyntax): js.Any = js.native
+    override def visitModuleDeclaration(node: ModuleDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitModuleNameModuleReference(node: ModuleNameModuleReferenceSyntax): js.Any = js.native
+    override def visitModuleNameModuleReference(node: ModuleNameModuleReferenceSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitNode(node: SyntaxNode): Unit = js.native
@@ -2624,16 +2614,16 @@ object Formatting {
     override def visitNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
     
     /* CompleteClass */
-    override def visitObjectCreationExpression(node: ObjectCreationExpressionSyntax): js.Any = js.native
+    override def visitObjectCreationExpression(node: ObjectCreationExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitObjectLiteralExpression(node: ObjectLiteralExpressionSyntax): js.Any = js.native
+    override def visitObjectLiteralExpression(node: ObjectLiteralExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitObjectType(node: ObjectTypeSyntax): js.Any = js.native
+    override def visitObjectType(node: ObjectTypeSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitOmittedExpression(node: OmittedExpressionSyntax): js.Any = js.native
+    override def visitOmittedExpression(node: OmittedExpressionSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitOptionalNode(node: SyntaxNode): Unit = js.native
@@ -2642,100 +2632,100 @@ object Formatting {
     override def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
     
     /* private */ /* CompleteClass */
-    override def visitOptionalToken(token: js.Any): js.Any = js.native
+    override def visitOptionalToken(token: Any): Any = js.native
     
     /* CompleteClass */
-    override def visitParameter(node: ParameterSyntax): js.Any = js.native
+    override def visitParameter(node: ParameterSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitParameterList(node: ParameterListSyntax): js.Any = js.native
+    override def visitParameterList(node: ParameterListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitParenthesizedArrowFunctionExpression(node: ParenthesizedArrowFunctionExpressionSyntax): js.Any = js.native
+    override def visitParenthesizedArrowFunctionExpression(node: ParenthesizedArrowFunctionExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitParenthesizedExpression(node: ParenthesizedExpressionSyntax): js.Any = js.native
+    override def visitParenthesizedExpression(node: ParenthesizedExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitPostfixUnaryExpression(node: PostfixUnaryExpressionSyntax): js.Any = js.native
+    override def visitPostfixUnaryExpression(node: PostfixUnaryExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitPrefixUnaryExpression(node: PrefixUnaryExpressionSyntax): js.Any = js.native
+    override def visitPrefixUnaryExpression(node: PrefixUnaryExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitPropertySignature(node: PropertySignatureSyntax): js.Any = js.native
+    override def visitPropertySignature(node: PropertySignatureSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitQualifiedName(node: QualifiedNameSyntax): js.Any = js.native
+    override def visitQualifiedName(node: QualifiedNameSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitReturnStatement(node: ReturnStatementSyntax): js.Any = js.native
+    override def visitReturnStatement(node: ReturnStatementSyntax): Any = js.native
     
     /* CompleteClass */
     override def visitSeparatedList(list: ISeparatedSyntaxList): Unit = js.native
     
     /* CompleteClass */
-    override def visitSetAccessor(node: SetAccessorSyntax): js.Any = js.native
+    override def visitSetAccessor(node: SetAccessorSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSimpleArrowFunctionExpression(node: SimpleArrowFunctionExpressionSyntax): js.Any = js.native
+    override def visitSimpleArrowFunctionExpression(node: SimpleArrowFunctionExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSimplePropertyAssignment(node: SimplePropertyAssignmentSyntax): js.Any = js.native
+    override def visitSimplePropertyAssignment(node: SimplePropertyAssignmentSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSourceUnit(node: SourceUnitSyntax): js.Any = js.native
+    override def visitSourceUnit(node: SourceUnitSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitSwitchStatement(node: SwitchStatementSyntax): js.Any = js.native
+    override def visitSwitchStatement(node: SwitchStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitThrowStatement(node: ThrowStatementSyntax): js.Any = js.native
+    override def visitThrowStatement(node: ThrowStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitToken(token: ISyntaxToken): js.Any = js.native
+    override def visitToken(token: ISyntaxToken): Any = js.native
     
     /* CompleteClass */
     override def visitTokenInSpan(token: ISyntaxToken): Unit = js.native
     
     /* CompleteClass */
-    override def visitTryStatement(node: TryStatementSyntax): js.Any = js.native
+    override def visitTryStatement(node: TryStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeAnnotation(node: TypeAnnotationSyntax): js.Any = js.native
+    override def visitTypeAnnotation(node: TypeAnnotationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeArgumentList(node: TypeArgumentListSyntax): js.Any = js.native
+    override def visitTypeArgumentList(node: TypeArgumentListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeOfExpression(node: TypeOfExpressionSyntax): js.Any = js.native
+    override def visitTypeOfExpression(node: TypeOfExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeParameter(node: TypeParameterSyntax): js.Any = js.native
+    override def visitTypeParameter(node: TypeParameterSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeParameterList(node: TypeParameterListSyntax): js.Any = js.native
+    override def visitTypeParameterList(node: TypeParameterListSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitTypeQuery(node: TypeQuerySyntax): js.Any = js.native
+    override def visitTypeQuery(node: TypeQuerySyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVariableDeclaration(node: VariableDeclarationSyntax): js.Any = js.native
+    override def visitVariableDeclaration(node: VariableDeclarationSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVariableDeclarator(node: VariableDeclaratorSyntax): js.Any = js.native
+    override def visitVariableDeclarator(node: VariableDeclaratorSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVariableStatement(node: VariableStatementSyntax): js.Any = js.native
+    override def visitVariableStatement(node: VariableStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitVoidExpression(node: VoidExpressionSyntax): js.Any = js.native
+    override def visitVoidExpression(node: VoidExpressionSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitWhileStatement(node: WhileStatementSyntax): js.Any = js.native
+    override def visitWhileStatement(node: WhileStatementSyntax): Any = js.native
     
     /* CompleteClass */
-    override def visitWithStatement(node: WithStatementSyntax): js.Any = js.native
+    override def visitWithStatement(node: WithStatementSyntax): Any = js.native
   }
   object SingleTokenIndenter {
     
@@ -2754,7 +2744,7 @@ object Formatting {
   
   @JSGlobal("TypeScript.Services.Formatting.SnapshotPoint")
   @js.native
-  class SnapshotPoint protected ()
+  open class SnapshotPoint protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.SnapshotPoint {
     def this(snapshot: ITextSnapshot, position: Double) = this()
@@ -2774,7 +2764,7 @@ object Formatting {
   
   @JSGlobal("TypeScript.Services.Formatting.TextEditInfo")
   @js.native
-  class TextEditInfo protected ()
+  open class TextEditInfo protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.TextEditInfo {
     def this(position: Double, length: Double, replaceWith: String) = this()
@@ -2791,7 +2781,7 @@ object Formatting {
   
   @JSGlobal("TypeScript.Services.Formatting.TextSnapshot")
   @js.native
-  class TextSnapshot protected ()
+  open class TextSnapshot protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.TextSnapshot {
     def this(snapshot: ISimpleText) = this()
@@ -2800,7 +2790,7 @@ object Formatting {
     override def getLineFromLineNumber(lineNumber: Double): ITextSnapshotLine = js.native
     
     /* private */ /* CompleteClass */
-    override def getLineFromLineNumberWorker(lineNumber: js.Any): js.Any = js.native
+    override def getLineFromLineNumberWorker(lineNumber: Any): Any = js.native
     
     /* CompleteClass */
     override def getLineFromPosition(position: Double): ITextSnapshotLine = js.native
@@ -2812,33 +2802,33 @@ object Formatting {
     override def getText(span: TextSpan): String = js.native
     
     /* private */ /* CompleteClass */
-    var lines: js.Any = js.native
+    var lines: Any = js.native
     
     /* private */ /* CompleteClass */
-    var snapshot: js.Any = js.native
+    var snapshot: Any = js.native
   }
   
   @JSGlobal("TypeScript.Services.Formatting.TextSnapshotLine")
   @js.native
-  class TextSnapshotLine protected ()
+  open class TextSnapshotLine protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.TextSnapshotLine {
     def this(_snapshot: ITextSnapshot, _lineNumber: Double, _start: Double, _end: Double, _lineBreak: String) = this()
     
     /* private */ /* CompleteClass */
-    var _end: js.Any = js.native
+    var _end: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _lineBreak: js.Any = js.native
+    var _lineBreak: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _lineNumber: js.Any = js.native
+    var _lineNumber: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _snapshot: js.Any = js.native
+    var _snapshot: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _start: js.Any = js.native
+    var _start: Any = js.native
     
     /* CompleteClass */
     override def end(): typings.typescriptServices.TypeScript.Services.Formatting.SnapshotPoint = js.native
@@ -2873,19 +2863,19 @@ object Formatting {
   
   @JSGlobal("TypeScript.Services.Formatting.TokenSpan")
   @js.native
-  class TokenSpan protected ()
+  open class TokenSpan protected ()
     extends StObject
        with typings.typescriptServices.TypeScript.Services.Formatting.TokenSpan {
     def this(kind: SyntaxKind, start: Double, length: Double) = this()
     
     /* private */ /* CompleteClass */
-    var _kind: js.Any = js.native
+    var _kind: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _length: js.Any = js.native
+    var _length: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _start: js.Any = js.native
+    var _start: Any = js.native
     
     /* CompleteClass */
     override def containsPosition(position: Double): Boolean = js.native

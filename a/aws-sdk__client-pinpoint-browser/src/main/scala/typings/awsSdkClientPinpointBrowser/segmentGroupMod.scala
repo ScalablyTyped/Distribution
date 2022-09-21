@@ -8,5 +8,5 @@ object segmentGroupMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_SegmentGroup", "_SegmentGroup")
   @js.native
-  val SegmentGroup: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SegmentGroup: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

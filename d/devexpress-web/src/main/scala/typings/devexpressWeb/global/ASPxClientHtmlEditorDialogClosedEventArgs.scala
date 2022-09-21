@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorDialogClosedEventArgs")
 @js.native
-class ASPxClientHtmlEditorDialogClosedEventArgs ()
+open class ASPxClientHtmlEditorDialogClosedEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorDialogCloseEventArgs {
   
@@ -29,5 +29,5 @@ class ASPxClientHtmlEditorDialogClosedEventArgs ()
     * Gets a string that contains specific information (if any) passed from the client side for server-side processing.
     */
   /* CompleteClass */
-  var parameter: js.Any = js.native
+  var parameter: Any = js.native
 }

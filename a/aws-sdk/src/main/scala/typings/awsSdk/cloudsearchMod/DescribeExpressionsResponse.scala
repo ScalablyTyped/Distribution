@@ -22,6 +22,6 @@ object DescribeExpressionsResponse {
     
     inline def setExpressions(value: ExpressionStatusList): Self = StObject.set(x, "Expressions", value.asInstanceOf[js.Any])
     
-    inline def setExpressionsVarargs(value: ExpressionStatus*): Self = StObject.set(x, "Expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: ExpressionStatus*): Self = StObject.set(x, "Expressions", js.Array(value*))
   }
 }

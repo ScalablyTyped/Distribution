@@ -1,8 +1,6 @@
 package typings.devextreme.mod.DevExpress.data
 
-import typings.devextreme.mod.global.JQueryPromise
-import typings.devextreme.mod.global.Promise
-import typings.std.Date
+import typings.devextreme.mod.DevExpress.core.utils.DxPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,105 +9,105 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Query extends StObject {
   
   /**
-    * [descr:Query.aggregate(seed, step, finalize)]
+    * Calculates a custom summary for all data items.
     */
-  def aggregate(seed: js.Any, step: js.Function, finalize: js.Function): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+  def aggregate(seed: Any, step: js.Function, finalize: js.Function): DxPromise[Any] = js.native
   /**
-    * [descr:Query.aggregate(step)]
+    * Calculates a custom summary for all data items.
     */
-  def aggregate(step: js.Function): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+  def aggregate(step: js.Function): DxPromise[Any] = js.native
   
   /**
-    * [descr:Query.avg()]
+    * Calculates the average of all values. Applies only to numeric arrays.
     */
-  def avg(): Promise[Double] & JQueryPromise[Double] = js.native
+  def avg(): DxPromise[Double] = js.native
   /**
-    * [descr:Query.avg(getter)]
+    * Calculates the average of all values found using a getter.
     */
-  def avg(getter: js.Any): Promise[Double] & JQueryPromise[Double] = js.native
+  def avg(getter: Any): DxPromise[Double] = js.native
   
   /**
-    * [descr:Query.count()]
+    * Calculates the number of data items.
     */
-  def count(): Promise[Double] & JQueryPromise[Double] = js.native
+  def count(): DxPromise[Double] = js.native
   
   /**
-    * [descr:Query.enumerate()]
+    * Executes the Query. This is an asynchronous alternative to the toArray() method.
     */
-  def enumerate(): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+  def enumerate(): DxPromise[Any] = js.native
   
   /**
-    * [descr:Query.filter(criteria)]
+    * Filters data items using a filter expression.
     */
-  def filter(criteria: js.Array[js.Any]): Query = js.native
+  def filter(criteria: js.Array[Any]): Query = js.native
   /**
-    * [descr:Query.filter(predicate)]
+    * Filters data items using a custom function.
     */
   def filter(predicate: js.Function): Query = js.native
   
   /**
-    * [descr:Query.groupBy(getter)]
+    * Groups data items by the specified getter.
     */
-  def groupBy(getter: js.Any): Query = js.native
+  def groupBy(getter: Any): Query = js.native
   
   /**
-    * [descr:Query.max()]
+    * Calculates the maximum value. Applies only to numeric arrays.
     */
-  def max(): (Promise[Double | Date]) & (JQueryPromise[Double | Date]) = js.native
+  def max(): DxPromise[Double | js.Date] = js.native
   /**
-    * [descr:Query.max(getter)]
+    * Calculates the maximum of all values found using a getter.
     */
-  def max(getter: js.Any): (Promise[Double | Date]) & (JQueryPromise[Double | Date]) = js.native
+  def max(getter: Any): DxPromise[Double | js.Date] = js.native
   
   /**
-    * [descr:Query.min()]
+    * Calculates the minimum value. Applies only to numeric arrays.
     */
-  def min(): (Promise[Double | Date]) & (JQueryPromise[Double | Date]) = js.native
+  def min(): DxPromise[Double | js.Date] = js.native
   /**
-    * [descr:Query.min(getter)]
+    * Calculates the minumum of all values found using a getter.
     */
-  def min(getter: js.Any): (Promise[Double | Date]) & (JQueryPromise[Double | Date]) = js.native
+  def min(getter: Any): DxPromise[Double | js.Date] = js.native
   
   /**
-    * [descr:Query.select(getter)]
+    * Selects individual fields from data objects.
     */
-  def select(getter: js.Any): Query = js.native
+  def select(getters: Any*): Query = js.native
   
   /**
-    * [descr:Query.slice(skip, take)]
+    * Gets a specified number of data items starting from a given index.
     */
   def slice(skip: Double): Query = js.native
   def slice(skip: Double, take: Double): Query = js.native
   
   /**
-    * [descr:Query.sortBy(getter)]
+    * Sorts data items by the specified getter in ascending order.
     */
-  def sortBy(getter: js.Any): Query = js.native
+  def sortBy(getter: Any): Query = js.native
   /**
-    * [descr:Query.sortBy(getter, desc)]
+    * Sorts data items by the specified getter in the specified sorting order.
     */
-  def sortBy(getter: js.Any, desc: Boolean): Query = js.native
+  def sortBy(getter: Any, desc: Boolean): Query = js.native
   
   /**
-    * [descr:Query.sum()]
+    * Calculates the sum of all values.
     */
-  def sum(): Promise[Double] & JQueryPromise[Double] = js.native
+  def sum(): DxPromise[Double] = js.native
   /**
-    * [descr:Query.sum(getter)]
+    * Calculates the sum of all values found using a getter.
     */
-  def sum(getter: js.Any): Promise[Double] & JQueryPromise[Double] = js.native
+  def sum(getter: Any): DxPromise[Double] = js.native
   
   /**
-    * [descr:Query.thenBy(getter)]
+    * Sorts data items by one more getter in ascending order.
     */
-  def thenBy(getter: js.Any): Query = js.native
+  def thenBy(getter: Any): Query = js.native
   /**
-    * [descr:Query.thenBy(getter, desc)]
+    * Sorts data items by one more getter in the specified sorting order.
     */
-  def thenBy(getter: js.Any, desc: Boolean): Query = js.native
+  def thenBy(getter: Any, desc: Boolean): Query = js.native
   
   /**
-    * [descr:Query.toArray()]
+    * Gets data items associated with the Query. This is a synchronous alternative to the enumerate() method.
     */
-  def toArray(): js.Array[js.Any] = js.native
+  def toArray(): js.Array[Any] = js.native
 }

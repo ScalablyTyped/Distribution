@@ -10,26 +10,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodal", "APIConstructor")
 @js.native
-class APIConstructor () extends StObject {
+open class APIConstructor () extends StObject {
   
   def error(message: String, details: String): Meta = js.native
   
-  def format(obj: js.Any): Data = js.native
-  def format(obj: js.Any, arrInterface: js.Array[String]): Data = js.native
+  def format(obj: Any): Data = js.native
+  def format(obj: Any, arrInterface: js.Array[String]): Data = js.native
   
-  def meta(total: Double, count: Double, offset: Double, error: js.Any): Count = js.native
-  def meta(total: Double, count: Double, offset: Double, error: js.Any, summary: String): Count = js.native
-  def meta(total: Double, count: Double, offset: Double, error: js.Any, summary: String, resource: js.Any): Count = js.native
-  def meta(total: Double, count: Double, offset: Double, error: js.Any, summary: Null, resource: js.Any): Count = js.native
-  def meta(total: Double, count: Double, offset: Double, error: js.Any, summary: Unit, resource: js.Any): Count = js.native
+  def meta(total: Double, count: Double, offset: Double, error: Any): Count = js.native
+  def meta(total: Double, count: Double, offset: Double, error: Any, summary: String): Count = js.native
+  def meta(total: Double, count: Double, offset: Double, error: Any, summary: String, resource: Any): Count = js.native
+  def meta(total: Double, count: Double, offset: Double, error: Any, summary: Null, resource: Any): Count = js.native
+  def meta(total: Double, count: Double, offset: Double, error: Any, summary: Unit, resource: Any): Count = js.native
   
-  def resourceFromArray(arr: js.Array[js.Any]): Fields = js.native
+  def resourceFromArray(arr: js.Array[Any]): Fields = js.native
   
-  def resourceFromModelArray(modelArray: js.Any, arrInterface: js.Any): js.Any = js.native
+  def resourceFromModelArray(modelArray: Any, arrInterface: Any): Any = js.native
   
-  def response(itemArray: js.Any, arrInterface: js.Any): Data = js.native
-  def response(itemArray: js.Any, arrInterface: js.Any, useResource: Boolean): Data = js.native
+  def response(itemArray: Any, arrInterface: Any): Data = js.native
+  def response(itemArray: Any, arrInterface: Any, useResource: Boolean): Data = js.native
   
-  def spoof(obj: js.Any): Data = js.native
-  def spoof(obj: js.Any, useResource: Boolean): Data = js.native
+  def spoof(obj: Any): Data = js.native
+  def spoof(obj: Any, useResource: Boolean): Data = js.native
 }

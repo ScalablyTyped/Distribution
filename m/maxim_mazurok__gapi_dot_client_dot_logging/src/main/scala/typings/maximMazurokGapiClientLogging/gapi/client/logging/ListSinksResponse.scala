@@ -32,6 +32,6 @@ object ListSinksResponse {
     
     inline def setSinksUndefined: Self = StObject.set(x, "sinks", js.undefined)
     
-    inline def setSinksVarargs(value: LogSink*): Self = StObject.set(x, "sinks", js.Array(value :_*))
+    inline def setSinksVarargs(value: LogSink*): Self = StObject.set(x, "sinks", js.Array(value*))
   }
 }

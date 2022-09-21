@@ -1,6 +1,5 @@
 package typings.optionalJs
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +8,13 @@ object mod {
   
   @JSImport("optional-js", JSImport.Default)
   @js.native
-  /* private */ class default[T] ()
+  /* private */ open class default[T] ()
     extends StObject
        with Optional[T] {
     /* private */ def this(value: T) = this()
     
     /* private */ /* CompleteClass */
-    override val _value: js.Any = js.native
+    override val _value: Any = js.native
     
     /**
       * If a value is present, and the value matches the given predicate, return an Optional describing the value,
@@ -129,7 +128,7 @@ object mod {
       * @throws Error if no value is present and the exception supplying function is null
       */
     /* CompleteClass */
-    override def orElseThrow(exceptionSupplier: js.Function0[Error]): T = js.native
+    override def orElseThrow(exceptionSupplier: js.Function0[js.Error]): T = js.native
   }
   /* static members */
   object default {
@@ -168,7 +167,7 @@ object mod {
   
   trait Optional[T] extends StObject {
     
-    /* private */ val _value: js.Any
+    /* private */ val _value: Any
     
     /**
       * If a value is present, and the value matches the given predicate, return an Optional describing the value,
@@ -271,23 +270,23 @@ object mod {
       * @return the value, if present
       * @throws Error if no value is present and the exception supplying function is null
       */
-    def orElseThrow(exceptionSupplier: js.Function0[Error]): T
+    def orElseThrow(exceptionSupplier: js.Function0[js.Error]): T
   }
   object Optional {
     
     inline def apply[T](
-      _value: js.Any,
+      _value: Any,
       filter: js.Function1[/* value */ T, Boolean] => Optional[T],
-      flatMap: js.Function1[/* value */ T, js.UndefOr[Optional[js.Any] | Null]] => Optional[js.Any],
+      flatMap: js.Function1[/* value */ T, js.UndefOr[Optional[Any] | Null]] => Optional[Any],
       get: () => T,
       ifPresent: js.Function1[/* value */ T, Unit] => Unit,
       ifPresentOrElse: (js.Function1[/* value */ T, Unit], js.Function0[Unit]) => Unit,
       isPresent: () => Boolean,
-      map: js.Function1[/* value */ T, js.UndefOr[js.Any | Null]] => Optional[js.Any],
+      map: js.Function1[/* value */ T, js.UndefOr[Any | Null]] => Optional[Any],
       or: js.Function0[Optional[T]] => Optional[T],
       orElse: T => T,
       orElseGet: js.Function0[T] => T,
-      orElseThrow: js.Function0[Error] => T
+      orElseThrow: js.Function0[js.Error] => T
     ): Optional[T] = {
       val __obj = js.Dynamic.literal(_value = _value.asInstanceOf[js.Any], filter = js.Any.fromFunction1(filter), flatMap = js.Any.fromFunction1(flatMap), get = js.Any.fromFunction0(get), ifPresent = js.Any.fromFunction1(ifPresent), ifPresentOrElse = js.Any.fromFunction2(ifPresentOrElse), isPresent = js.Any.fromFunction0(isPresent), map = js.Any.fromFunction1(map), or = js.Any.fromFunction1(or), orElse = js.Any.fromFunction1(orElse), orElseGet = js.Any.fromFunction1(orElseGet), orElseThrow = js.Any.fromFunction1(orElseThrow))
       __obj.asInstanceOf[Optional[T]]
@@ -297,7 +296,7 @@ object mod {
       
       inline def setFilter(value: js.Function1[/* value */ T, Boolean] => Optional[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      inline def setFlatMap(value: js.Function1[/* value */ T, js.UndefOr[Optional[js.Any] | Null]] => Optional[js.Any]): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
+      inline def setFlatMap(value: js.Function1[/* value */ T, js.UndefOr[Optional[Any] | Null]] => Optional[Any]): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
       
       inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
@@ -307,7 +306,7 @@ object mod {
       
       inline def setIsPresent(value: () => Boolean): Self = StObject.set(x, "isPresent", js.Any.fromFunction0(value))
       
-      inline def setMap(value: js.Function1[/* value */ T, js.UndefOr[js.Any | Null]] => Optional[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Function1[/* value */ T, js.UndefOr[Any | Null]] => Optional[Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
       inline def setOr(value: js.Function0[Optional[T]] => Optional[T]): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
       
@@ -315,9 +314,9 @@ object mod {
       
       inline def setOrElseGet(value: js.Function0[T] => T): Self = StObject.set(x, "orElseGet", js.Any.fromFunction1(value))
       
-      inline def setOrElseThrow(value: js.Function0[Error] => T): Self = StObject.set(x, "orElseThrow", js.Any.fromFunction1(value))
+      inline def setOrElseThrow(value: js.Function0[js.Error] => T): Self = StObject.set(x, "orElseThrow", js.Any.fromFunction1(value))
       
-      inline def set_value(value: js.Any): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
+      inline def set_value(value: Any): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     }
   }
 }

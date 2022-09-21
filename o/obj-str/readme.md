@@ -1,7 +1,7 @@
 
 # Scala.js typings for obj-str
 
-Typings are for version 1.0
+Typings are for version 1.1.0
 
 ## Library description:
 A tiny library for serializing Object values to Strings.
@@ -10,10 +10,10 @@ A tiny library for serializing Object values to Strings.
 | ------------------ | :-------------: |
 | Full name          | obj-str |
 | Keywords           | react, preact, classes, classname, classnames, object, object-keys, object-string, object-values, serialize |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 237768 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 24146.666666666668 |
+| # stars            | 202.0 |
 
 ## Links
 - [Homepage](https://github.com/lukeed/obj-str#readme)
@@ -24,7 +24,7 @@ A tiny library for serializing Object values to Strings.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

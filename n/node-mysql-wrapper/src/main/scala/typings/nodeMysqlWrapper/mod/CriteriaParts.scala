@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("node-mysql-wrapper", "CriteriaParts")
 @js.native
-class CriteriaParts protected ()
+open class CriteriaParts protected ()
   extends StObject
      with ICriteriaParts {
   def this(
-    rawCriteriaObject: js.Any,
+    rawCriteriaObject: Any,
     tables: js.Array[TableToSearchPart],
     noDatabaseProperties: js.Array[String],
     whereClause: String
@@ -20,7 +20,7 @@ class CriteriaParts protected ()
   var noDatabaseProperties: js.Array[String] = js.native
   
   /* CompleteClass */
-  var rawCriteriaObject: js.Any = js.native
+  var rawCriteriaObject: Any = js.native
   
   /* CompleteClass */
   override def selectFromClause[T](_table: Table[T]): String = js.native

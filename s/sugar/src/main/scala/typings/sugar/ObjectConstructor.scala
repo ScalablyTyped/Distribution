@@ -67,31 +67,31 @@ trait ObjectConstructor
   
   def isArguments(instance: js.Object): Boolean = js.native
   
-  def isArray(instance: js.Any): /* is sugar.Array<any> */ Boolean = js.native
+  def isArray(instance: Any): /* is sugar.Array<any> */ Boolean = js.native
   
-  def isBoolean(instance: js.Any): /* is boolean */ Boolean = js.native
+  def isBoolean(instance: Any): /* is boolean */ Boolean = js.native
   
-  def isDate(instance: js.Any): /* is sugar.Date */ Boolean = js.native
+  def isDate(instance: Any): /* is sugar.Date */ Boolean = js.native
   
   def isEmpty(instance: js.Object): Boolean = js.native
   
   def isEqual(instance: js.Object, obj: js.Object): Boolean = js.native
   
-  def isError(instance: js.Any): /* is std.Error */ Boolean = js.native
+  def isError(instance: Any): /* is std.Error */ Boolean = js.native
   
-  def isFunction(instance: js.Any): /* is sugar.Function */ Boolean = js.native
+  def isFunction(instance: Any): /* is sugar.Function */ Boolean = js.native
   
-  def isMap(instance: js.Any): /* is std.Map<any, any> */ Boolean = js.native
+  def isMap(instance: Any): /* is std.Map<any, any> */ Boolean = js.native
   
-  def isNumber(instance: js.Any): /* is number */ Boolean = js.native
+  def isNumber(instance: Any): /* is number */ Boolean = js.native
   
   def isObject(instance: js.Object): Boolean = js.native
   
-  def isRegExp(instance: js.Any): /* is sugar.RegExp */ Boolean = js.native
+  def isRegExp(instance: Any): /* is sugar.RegExp */ Boolean = js.native
   
-  def isSet(instance: js.Any): /* is std.Set<any> */ Boolean = js.native
+  def isSet(instance: Any): /* is std.Set<any> */ Boolean = js.native
   
-  def isString(instance: js.Any): /* is string */ Boolean = js.native
+  def isString(instance: Any): /* is string */ Boolean = js.native
   
   def keys[T](instance: js.Object): Array[T] = js.native
   
@@ -154,7 +154,7 @@ trait ObjectConstructor
   def reduce[T](
     instance: js.Object,
     reduceFn: js.Function4[/* acc */ T, /* val */ T, /* key */ java.lang.String, /* obj */ js.Object, Unit],
-    init: js.Any
+    init: Any
   ): T = js.native
   
   def reject(instance: js.Object, find: java.lang.String): js.Object = js.native
@@ -183,7 +183,7 @@ trait ObjectConstructor
   def sum[T, U](instance: js.Object, map: java.lang.String): Double = js.native
   def sum[T, U](instance: js.Object, map: mapFn[T, U]): Double = js.native
   
-  def tap(instance: js.Object, tapFn: js.Function1[/* obj */ js.Object, js.Any]): js.Object = js.native
+  def tap(instance: js.Object, tapFn: js.Function1[/* obj */ js.Object, Any]): js.Object = js.native
   
   def toQueryString[T, U](instance: js.Object): js.Object = js.native
   def toQueryString[T, U](instance: js.Object, options: QueryStringOptions[T, U]): js.Object = js.native

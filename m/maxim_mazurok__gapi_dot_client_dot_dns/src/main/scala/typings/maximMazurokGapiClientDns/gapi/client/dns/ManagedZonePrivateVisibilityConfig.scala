@@ -28,6 +28,6 @@ object ManagedZonePrivateVisibilityConfig {
     
     inline def setNetworksUndefined: Self = StObject.set(x, "networks", js.undefined)
     
-    inline def setNetworksVarargs(value: ManagedZonePrivateVisibilityConfigNetwork*): Self = StObject.set(x, "networks", js.Array(value :_*))
+    inline def setNetworksVarargs(value: ManagedZonePrivateVisibilityConfigNetwork*): Self = StObject.set(x, "networks", js.Array(value*))
   }
 }

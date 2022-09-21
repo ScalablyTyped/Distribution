@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod extends Shortcut {
   
-  @JSImport("ua-string", JSImport.Namespace)
+  @JSImport("ua-string", JSImport.Default)
   @js.native
-  val ^ : String = js.native
+  val default: String = js.native
   
   type _To = String
   
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: String = ^
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: String = default
 }

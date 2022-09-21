@@ -29,11 +29,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ojComboboxOneSettableProperties[K, D]
   extends StObject
-     with editableValueSettableProperties[js.Any, js.Any, String] {
+     with editableValueSettableProperties[Any, Any, String] {
   
-  var asyncValidators: js.Array[AsyncValidator[js.Any]]
+  var asyncValidators: js.Array[AsyncValidator[Any]]
   
-  var converter: Converter[js.Any] | RegisteredConverter | Null
+  var converter: Converter[Any] | RegisteredConverter | Null
   
   var filterOnOpen: none | typings.oracleOraclejet.oracleOraclejetStrings.rawValue
   
@@ -60,14 +60,14 @@ trait ojComboboxOneSettableProperties[K, D]
   @JSName("translations")
   var translations_ojComboboxOneSettableProperties: FilterFurther
   
-  var validators: (js.Array[Validator[js.Any] | RegisteredValidator]) | Null
+  var validators: (js.Array[Validator[Any] | RegisteredValidator]) | Null
   
   var valueOption: LabelValue
 }
 object ojComboboxOneSettableProperties {
   
   inline def apply[K, D](
-    asyncValidators: js.Array[AsyncValidator[js.Any]],
+    asyncValidators: js.Array[AsyncValidator[Any]],
     disabled: Boolean,
     displayOptions: ConverterHint,
     filterOnOpen: none | rawValue,
@@ -82,7 +82,7 @@ object ojComboboxOneSettableProperties {
     required: Boolean,
     translations: FilterFurther,
     valid: valid | pending | invalidHidden | invalidShown,
-    value: js.Any,
+    value: Any,
     valueOption: LabelValue
   ): ojComboboxOneSettableProperties[K, D] = {
     val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], filterOnOpen = filterOnOpen.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], minLength = minLength.asInstanceOf[js.Any], optionsKeys = optionsKeys.asInstanceOf[js.Any], pickerAttributes = pickerAttributes.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueOption = valueOption.asInstanceOf[js.Any], converter = null, describedBy = null, options = null, placeholder = null, rawValue = null, validators = null)
@@ -91,11 +91,11 @@ object ojComboboxOneSettableProperties {
   
   extension [Self <: ojComboboxOneSettableProperties[?, ?], K, D](x: Self & (ojComboboxOneSettableProperties[K, D])) {
     
-    inline def setAsyncValidators(value: js.Array[AsyncValidator[js.Any]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
+    inline def setAsyncValidators(value: js.Array[AsyncValidator[Any]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     
-    inline def setAsyncValidatorsVarargs(value: AsyncValidator[js.Any]*): Self = StObject.set(x, "asyncValidators", js.Array(value :_*))
+    inline def setAsyncValidatorsVarargs(value: AsyncValidator[Any]*): Self = StObject.set(x, "asyncValidators", js.Array(value*))
     
-    inline def setConverter(value: Converter[js.Any] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+    inline def setConverter(value: Converter[Any] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     
     inline def setConverterNull: Self = StObject.set(x, "converter", null)
     
@@ -121,7 +121,7 @@ object ojComboboxOneSettableProperties {
     
     inline def setOptionsVarargs(
       value: (typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup)*
-    ): Self = StObject.set(x, "options", js.Array(value :_*))
+    ): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPickerAttributes(value: Class): Self = StObject.set(x, "pickerAttributes", value.asInstanceOf[js.Any])
     
@@ -139,11 +139,11 @@ object ojComboboxOneSettableProperties {
     
     inline def setTranslations(value: FilterFurther): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
-    inline def setValidators(value: js.Array[Validator[js.Any] | RegisteredValidator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: js.Array[Validator[Any] | RegisteredValidator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     inline def setValidatorsNull: Self = StObject.set(x, "validators", null)
     
-    inline def setValidatorsVarargs(value: (Validator[js.Any] | RegisteredValidator)*): Self = StObject.set(x, "validators", js.Array(value :_*))
+    inline def setValidatorsVarargs(value: (Validator[Any] | RegisteredValidator)*): Self = StObject.set(x, "validators", js.Array(value*))
     
     inline def setValueOption(value: LabelValue): Self = StObject.set(x, "valueOption", value.asInstanceOf[js.Any])
   }

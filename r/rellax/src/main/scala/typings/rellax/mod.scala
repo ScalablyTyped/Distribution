@@ -22,7 +22,7 @@ object mod extends Shortcut {
     * @param el Single element or string with selector of elements
     * @param options Options
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with RellaxInstance {
     def this(el: String) = this()
@@ -128,7 +128,7 @@ object mod extends Shortcut {
       
       inline def setElms(value: NodeListOf[Element] | js.Array[Element]): Self = StObject.set(x, "elms", value.asInstanceOf[js.Any])
       
-      inline def setElmsVarargs(value: Element*): Self = StObject.set(x, "elms", js.Array(value :_*))
+      inline def setElmsVarargs(value: Element*): Self = StObject.set(x, "elms", js.Array(value*))
       
       inline def setOptions(value: RellaxOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

@@ -26,6 +26,6 @@ object CreateTimeSeriesRequest {
     
     inline def setTimeSeriesUndefined: Self = StObject.set(x, "timeSeries", js.undefined)
     
-    inline def setTimeSeriesVarargs(value: TimeSeries*): Self = StObject.set(x, "timeSeries", js.Array(value :_*))
+    inline def setTimeSeriesVarargs(value: TimeSeries*): Self = StObject.set(x, "timeSeries", js.Array(value*))
   }
 }

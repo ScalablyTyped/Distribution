@@ -12,7 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Header(props: js.Any): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Header")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Header(props: Any): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Header")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def moveLabels(columns: js.Array[Column], event: DndMoveEvent): js.Array[Column] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveLabels")(columns.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Array[Column]]
   

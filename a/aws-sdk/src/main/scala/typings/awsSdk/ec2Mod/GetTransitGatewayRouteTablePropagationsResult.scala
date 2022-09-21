@@ -33,6 +33,6 @@ object GetTransitGatewayRouteTablePropagationsResult {
     
     inline def setTransitGatewayRouteTablePropagationsUndefined: Self = StObject.set(x, "TransitGatewayRouteTablePropagations", js.undefined)
     
-    inline def setTransitGatewayRouteTablePropagationsVarargs(value: TransitGatewayRouteTablePropagation*): Self = StObject.set(x, "TransitGatewayRouteTablePropagations", js.Array(value :_*))
+    inline def setTransitGatewayRouteTablePropagationsVarargs(value: TransitGatewayRouteTablePropagation*): Self = StObject.set(x, "TransitGatewayRouteTablePropagations", js.Array(value*))
   }
 }

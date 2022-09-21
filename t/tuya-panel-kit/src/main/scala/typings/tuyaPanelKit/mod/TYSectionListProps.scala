@@ -13,14 +13,56 @@ trait TYSectionListProps
   extends StObject
      with SectionListProps[SectionDataProps, DefaultSectionT] {
   
-  var contentContainStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  
+  /**
+    * @language zh-CN
+    * @description 头部样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Header style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var headerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 列表项实例
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description List item instance
+    * @defaultValue null
+    */
   var sectionListRef: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 分割线样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Separator style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var separatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否使用 ART 实现版本
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Whether to use ART implementation version
+    * @defaultValue false
+    */
   var useART: js.UndefOr[Boolean] = js.undefined
 }
 object TYSectionListProps {
@@ -31,12 +73,6 @@ object TYSectionListProps {
   }
   
   extension [Self <: TYSectionListProps](x: Self) {
-    
-    inline def setContentContainStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentContainStyle", value.asInstanceOf[js.Any])
-    
-    inline def setContentContainStyleNull: Self = StObject.set(x, "contentContainStyle", null)
-    
-    inline def setContentContainStyleUndefined: Self = StObject.set(x, "contentContainStyle", js.undefined)
     
     inline def setHeaderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
     

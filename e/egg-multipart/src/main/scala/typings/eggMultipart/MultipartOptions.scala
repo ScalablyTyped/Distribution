@@ -1,21 +1,22 @@
 package typings.eggMultipart
 
 import typings.eggMultipart.anon.FieldNameSize
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MultipartOptions extends StObject {
   
+  var autoFields: js.UndefOr[Boolean] = js.undefined
+  
   var checkFile: js.UndefOr[
     js.Function5[
       /* fieldname */ String, 
-      /* file */ js.Any, 
+      /* file */ Any, 
       /* filename */ String, 
       /* encoding */ String, 
       /* mimetype */ String, 
-      Unit | Error
+      Unit | js.Error
     ]
   ] = js.undefined
   
@@ -35,8 +36,12 @@ object MultipartOptions {
   
   extension [Self <: MultipartOptions](x: Self) {
     
+    inline def setAutoFields(value: Boolean): Self = StObject.set(x, "autoFields", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFieldsUndefined: Self = StObject.set(x, "autoFields", js.undefined)
+    
     inline def setCheckFile(
-      value: (/* fieldname */ String, /* file */ js.Any, /* filename */ String, /* encoding */ String, /* mimetype */ String) => Unit | Error
+      value: (/* fieldname */ String, /* file */ Any, /* filename */ String, /* encoding */ String, /* mimetype */ String) => Unit | js.Error
     ): Self = StObject.set(x, "checkFile", js.Any.fromFunction5(value))
     
     inline def setCheckFileUndefined: Self = StObject.set(x, "checkFile", js.undefined)

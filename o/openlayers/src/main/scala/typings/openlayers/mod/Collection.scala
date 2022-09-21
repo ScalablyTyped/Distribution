@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * @api stable
   */
-class Collection[T] () extends Object {
+open class Collection[T] () extends Object {
   def this(opt_array: js.Array[T]) = this()
   
   /**
@@ -46,11 +46,8 @@ class Collection[T] () extends Object {
     * @template S
     * @api stable
     */
-  def forEach(f: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], js.Any]): Unit = js.native
-  def forEach(
-    f: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], js.Any],
-    opt_this: js.Any
-  ): Unit = js.native
+  def forEach(f: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], Any]): Unit = js.native
+  def forEach(f: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], Any], opt_this: Any): Unit = js.native
   
   /**
     * Get a reference to the underlying Array object. Warning: if the array
@@ -139,7 +136,7 @@ object Collection {
     */
   @JSImport("openlayers", "Collection.Event")
   @js.native
-  class Event protected ()
+  open class Event protected ()
     extends typings.openlayers.mod.events.Event {
     /**
       * @classdesc
@@ -150,13 +147,13 @@ object Collection {
       * @param opt_element Element.
       */
     def this(`type`: EventType) = this()
-    def this(`type`: EventType, opt_element: js.Any) = this()
+    def this(`type`: EventType, opt_element: Any) = this()
     
     /**
       * The element that is added to or removed from the collection.
       * @api stable
       */
-    var element: js.Any = js.native
+    var element: Any = js.native
   }
   
   type EventType = String

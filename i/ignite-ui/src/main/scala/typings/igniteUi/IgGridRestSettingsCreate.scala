@@ -10,7 +10,7 @@ trait IgGridRestSettingsCreate
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies whether create requests will be sent in batches

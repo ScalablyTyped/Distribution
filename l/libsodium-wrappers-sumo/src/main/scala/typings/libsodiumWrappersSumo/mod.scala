@@ -17,7 +17,6 @@ import typings.libsodiumWrappers.mod.StringSecretBox
 import typings.libsodiumWrappers.mod.Uint8ArrayOutputFormat
 import typings.libsodiumWrappers.mod.base64Variants
 import typings.libsodiumWrappersSumo.libsodiumWrappersSumoBooleans.`true`
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +39,7 @@ object mod {
   @js.native
   val SODIUM_VERSION_STRING: String = js.native
   
-  inline def add(a: Uint8Array, b: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def add(a: js.typedarray.Uint8Array, b: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("libsodium-wrappers-sumo", "base64_variants")
   @js.native
@@ -58,640 +57,640 @@ object mod {
     /* 3 */ val URLSAFE_NO_PADDING: typings.libsodiumWrappers.mod.base64Variants.URLSAFE_NO_PADDING & Double = js.native
   }
   
-  inline def compare(b1: Uint8Array, b2: Uint8Array): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(b1.asInstanceOf[js.Any], b2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compare(b1: js.typedarray.Uint8Array, b2: js.typedarray.Uint8Array): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(b1.asInstanceOf[js.Any], b2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_aead_chacha20poly1305_ABYTES")
   @js.native
   val cryptoAeadChacha20poly1305ABYTES: Double = js.native
   
   inline def cryptoAeadChacha20poly1305Decrypt(
-    secret_nonce: String | Uint8Array | Null,
-    ciphertext: String | Uint8Array,
-    additional_data: String | Uint8Array | Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    secret_nonce: String | js.typedarray.Uint8Array | Null,
+    ciphertext: String | js.typedarray.Uint8Array,
+    additional_data: String | js.typedarray.Uint8Array | Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: js.UndefOr[Uint8ArrayOutputFormat | Null]
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoAeadChacha20poly1305Decrypt(
     secret_nonce: String,
     ciphertext: String,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305Decrypt(
+    secret_nonce: String,
+    ciphertext: String,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Decrypt(
     secret_nonce: String,
     ciphertext: String,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Decrypt(
     secret_nonce: String,
-    ciphertext: String,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Decrypt(
     secret_nonce: String,
-    ciphertext: Uint8Array,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Decrypt(
     secret_nonce: String,
-    ciphertext: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Decrypt(
-    secret_nonce: String,
-    ciphertext: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: String,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305Decrypt(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: String,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305Decrypt(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: String,
+    additional_data: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305Decrypt(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305Decrypt(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305Decrypt(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Decrypt(
     secret_nonce: Null,
     ciphertext: String,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305Decrypt(
+    secret_nonce: Null,
+    ciphertext: String,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Decrypt(
     secret_nonce: Null,
     ciphertext: String,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Decrypt(
     secret_nonce: Null,
-    ciphertext: String,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Decrypt(
-    secret_nonce: Null,
-    ciphertext: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Decrypt(
     secret_nonce: Null,
-    ciphertext: Uint8Array,
-    additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Decrypt(
     secret_nonce: Null,
-    ciphertext: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Decrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: String,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Decrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: String,
+    ciphertext: js.typedarray.Uint8Array,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Decrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: String,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Decrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Decrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Decrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def cryptoAeadChacha20poly1305DecryptDetached(
-    secret_nonce: String | Uint8Array | Null,
-    ciphertext: String | Uint8Array,
-    mac: Uint8Array,
-    additional_data: String | Uint8Array | Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    secret_nonce: String | js.typedarray.Uint8Array | Null,
+    ciphertext: String | js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: String | js.typedarray.Uint8Array | Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: js.UndefOr[Uint8ArrayOutputFormat | Null]
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoAeadChacha20poly1305DecryptDetached(
     secret_nonce: String,
     ciphertext: String,
-    mac: Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305DecryptDetached(
-    secret_nonce: String,
-    ciphertext: String,
-    mac: Uint8Array,
-    additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305DecryptDetached(
     secret_nonce: String,
     ciphertext: String,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305DecryptDetached(
     secret_nonce: String,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    additional_data: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305DecryptDetached(
     secret_nonce: String,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305DecryptDetached(
     secret_nonce: String,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305DecryptDetached(
-    secret_nonce: Null,
-    ciphertext: String,
-    mac: Uint8Array,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305DecryptDetached(
-    secret_nonce: Null,
-    ciphertext: String,
-    mac: Uint8Array,
+    secret_nonce: String,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305DecryptDetached(
-    secret_nonce: Null,
+    secret_nonce: js.typedarray.Uint8Array,
     ciphertext: String,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305DecryptDetached(
-    secret_nonce: Null,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305DecryptDetached(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305DecryptDetached(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    additional_data: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305DecryptDetached(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305DecryptDetached(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305DecryptDetached(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305DecryptDetached(
     secret_nonce: Null,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305DecryptDetached(
     secret_nonce: Null,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305DecryptDetached(
-    secret_nonce: Uint8Array,
+    secret_nonce: Null,
     ciphertext: String,
-    mac: Uint8Array,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305DecryptDetached(
-    secret_nonce: Uint8Array,
-    ciphertext: String,
-    mac: Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305DecryptDetached(
-    secret_nonce: Uint8Array,
-    ciphertext: String,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305DecryptDetached(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
+    secret_nonce: Null,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305DecryptDetached(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
+    secret_nonce: Null,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305DecryptDetached(
+    secret_nonce: Null,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305DecryptDetached(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def cryptoAeadChacha20poly1305Encrypt(
-    message: String | Uint8Array,
-    additional_data: String | Uint8Array | Null,
-    secret_nonce: String | Uint8Array | Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    message: String | js.typedarray.Uint8Array,
+    additional_data: String | js.typedarray.Uint8Array | Null,
+    secret_nonce: String | js.typedarray.Uint8Array | Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: js.UndefOr[Uint8ArrayOutputFormat | Null]
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoAeadChacha20poly1305Encrypt(
     message: String,
     additional_data: String,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305Encrypt(
+    message: String,
+    additional_data: String,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Encrypt(
     message: String,
     additional_data: String,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Encrypt(
     message: String,
-    additional_data: String,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305Encrypt(
+    message: String,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305Encrypt(
+    message: String,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Encrypt(
     message: String,
     additional_data: Null,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305Encrypt(
+    message: String,
+    additional_data: Null,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Encrypt(
     message: String,
     additional_data: Null,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Encrypt(
-    message: String,
-    additional_data: Null,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Encrypt(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Encrypt(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Encrypt(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Encrypt(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
     additional_data: String,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Encrypt(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: String,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305Encrypt(
+    message: js.typedarray.Uint8Array,
     additional_data: String,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Encrypt(
-    message: Uint8Array,
-    additional_data: String,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Encrypt(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305Encrypt(
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305Encrypt(
+    message: js.typedarray.Uint8Array,
     additional_data: Null,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305Encrypt(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: Null,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305Encrypt(
+    message: js.typedarray.Uint8Array,
     additional_data: Null,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Encrypt(
-    message: Uint8Array,
-    additional_data: Null,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Encrypt(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Encrypt(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Encrypt(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def cryptoAeadChacha20poly1305EncryptDetached(
-    message: String | Uint8Array,
-    additional_data: String | Uint8Array | Null,
-    secret_nonce: String | Uint8Array | Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    message: String | js.typedarray.Uint8Array,
+    additional_data: String | js.typedarray.Uint8Array | Null,
+    secret_nonce: String | js.typedarray.Uint8Array | Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: js.UndefOr[Uint8ArrayOutputFormat | Null]
   ): CryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[CryptoBox]
   inline def cryptoAeadChacha20poly1305EncryptDetached(
     message: String,
     additional_data: String,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305EncryptDetached(
+    message: String,
+    additional_data: String,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305EncryptDetached(
     message: String,
     additional_data: String,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305EncryptDetached(
     message: String,
-    additional_data: String,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305EncryptDetached(
+    message: String,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305EncryptDetached(
+    message: String,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305EncryptDetached(
     message: String,
     additional_data: Null,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305EncryptDetached(
+    message: String,
+    additional_data: Null,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305EncryptDetached(
     message: String,
     additional_data: Null,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305EncryptDetached(
-    message: String,
-    additional_data: Null,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305EncryptDetached(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305EncryptDetached(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305EncryptDetached(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305EncryptDetached(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
     additional_data: String,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305EncryptDetached(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: String,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305EncryptDetached(
+    message: js.typedarray.Uint8Array,
     additional_data: String,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305EncryptDetached(
-    message: Uint8Array,
-    additional_data: String,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305EncryptDetached(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305EncryptDetached(
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305EncryptDetached(
+    message: js.typedarray.Uint8Array,
     additional_data: Null,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305EncryptDetached(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: Null,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305EncryptDetached(
+    message: js.typedarray.Uint8Array,
     additional_data: Null,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305EncryptDetached(
-    message: Uint8Array,
-    additional_data: Null,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305EncryptDetached(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305EncryptDetached(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305EncryptDetached(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   
@@ -700,633 +699,633 @@ object mod {
   val cryptoAeadChacha20poly1305IetfABYTES: Double = js.native
   
   inline def cryptoAeadChacha20poly1305IetfDecrypt(
-    secret_nonce: String | Uint8Array | Null,
-    ciphertext: String | Uint8Array,
-    additional_data: String | Uint8Array | Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    secret_nonce: String | js.typedarray.Uint8Array | Null,
+    ciphertext: String | js.typedarray.Uint8Array,
+    additional_data: String | js.typedarray.Uint8Array | Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: js.UndefOr[Uint8ArrayOutputFormat | Null]
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoAeadChacha20poly1305IetfDecrypt(
     secret_nonce: String,
     ciphertext: String,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfDecrypt(
+    secret_nonce: String,
+    ciphertext: String,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecrypt(
     secret_nonce: String,
     ciphertext: String,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecrypt(
     secret_nonce: String,
-    ciphertext: String,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecrypt(
     secret_nonce: String,
-    ciphertext: Uint8Array,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecrypt(
     secret_nonce: String,
-    ciphertext: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecrypt(
-    secret_nonce: String,
-    ciphertext: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: String,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfDecrypt(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: String,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfDecrypt(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: String,
+    additional_data: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfDecrypt(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfDecrypt(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfDecrypt(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecrypt(
     secret_nonce: Null,
     ciphertext: String,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfDecrypt(
+    secret_nonce: Null,
+    ciphertext: String,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecrypt(
     secret_nonce: Null,
     ciphertext: String,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecrypt(
     secret_nonce: Null,
-    ciphertext: String,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfDecrypt(
-    secret_nonce: Null,
-    ciphertext: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecrypt(
     secret_nonce: Null,
-    ciphertext: Uint8Array,
-    additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecrypt(
     secret_nonce: Null,
-    ciphertext: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfDecrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: String,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfDecrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: String,
+    ciphertext: js.typedarray.Uint8Array,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfDecrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: String,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfDecrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfDecrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfDecrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
-    secret_nonce: String | Uint8Array | Null,
-    ciphertext: String | Uint8Array,
-    mac: Uint8Array,
-    additional_data: String | Uint8Array | Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    secret_nonce: String | js.typedarray.Uint8Array | Null,
+    ciphertext: String | js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: String | js.typedarray.Uint8Array | Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: js.UndefOr[Uint8ArrayOutputFormat | Null]
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
     secret_nonce: String,
     ciphertext: String,
-    mac: Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
-    secret_nonce: String,
-    ciphertext: String,
-    mac: Uint8Array,
-    additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
     secret_nonce: String,
     ciphertext: String,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
     secret_nonce: String,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    additional_data: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
     secret_nonce: String,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
     secret_nonce: String,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
-    secret_nonce: Null,
-    ciphertext: String,
-    mac: Uint8Array,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
-    secret_nonce: Null,
-    ciphertext: String,
-    mac: Uint8Array,
+    secret_nonce: String,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
-    secret_nonce: Null,
+    secret_nonce: js.typedarray.Uint8Array,
     ciphertext: String,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
-    secret_nonce: Null,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    additional_data: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
     secret_nonce: Null,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
     secret_nonce: Null,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
-    secret_nonce: Uint8Array,
+    secret_nonce: Null,
     ciphertext: String,
-    mac: Uint8Array,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
-    secret_nonce: Uint8Array,
-    ciphertext: String,
-    mac: Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
-    secret_nonce: Uint8Array,
-    ciphertext: String,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
+    secret_nonce: Null,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
+    secret_nonce: Null,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
+    secret_nonce: Null,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfDecryptDetached(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def cryptoAeadChacha20poly1305IetfEncrypt(
-    message: String | Uint8Array,
-    additional_data: String | Uint8Array | Null,
-    secret_nonce: String | Uint8Array | Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    message: String | js.typedarray.Uint8Array,
+    additional_data: String | js.typedarray.Uint8Array | Null,
+    secret_nonce: String | js.typedarray.Uint8Array | Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: js.UndefOr[Uint8ArrayOutputFormat | Null]
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoAeadChacha20poly1305IetfEncrypt(
     message: String,
     additional_data: String,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfEncrypt(
+    message: String,
+    additional_data: String,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfEncrypt(
     message: String,
     additional_data: String,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfEncrypt(
     message: String,
-    additional_data: String,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfEncrypt(
+    message: String,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfEncrypt(
+    message: String,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfEncrypt(
     message: String,
     additional_data: Null,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfEncrypt(
+    message: String,
+    additional_data: Null,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfEncrypt(
     message: String,
     additional_data: Null,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfEncrypt(
-    message: String,
-    additional_data: Null,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfEncrypt(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfEncrypt(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfEncrypt(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfEncrypt(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
     additional_data: String,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfEncrypt(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: String,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfEncrypt(
+    message: js.typedarray.Uint8Array,
     additional_data: String,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfEncrypt(
-    message: Uint8Array,
-    additional_data: String,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfEncrypt(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfEncrypt(
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfEncrypt(
+    message: js.typedarray.Uint8Array,
     additional_data: Null,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadChacha20poly1305IetfEncrypt(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: Null,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadChacha20poly1305IetfEncrypt(
+    message: js.typedarray.Uint8Array,
     additional_data: Null,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfEncrypt(
-    message: Uint8Array,
-    additional_data: Null,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfEncrypt(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfEncrypt(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfEncrypt(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
-    message: String | Uint8Array,
-    additional_data: String | Uint8Array | Null,
-    secret_nonce: String | Uint8Array | Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    message: String | js.typedarray.Uint8Array,
+    additional_data: String | js.typedarray.Uint8Array | Null,
+    secret_nonce: String | js.typedarray.Uint8Array | Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: js.UndefOr[Uint8ArrayOutputFormat | Null]
   ): CryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[CryptoBox]
   inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
     message: String,
     additional_data: String,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
+    message: String,
+    additional_data: String,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
     message: String,
     additional_data: String,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
     message: String,
-    additional_data: String,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
+    message: String,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
+    message: String,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
     message: String,
     additional_data: Null,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
+    message: String,
+    additional_data: Null,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
     message: String,
     additional_data: Null,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
-    message: String,
-    additional_data: Null,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
     additional_data: String,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: String,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
+    message: js.typedarray.Uint8Array,
     additional_data: String,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
-    additional_data: String,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
+    message: js.typedarray.Uint8Array,
     additional_data: Null,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: Null,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
+    message: js.typedarray.Uint8Array,
     additional_data: Null,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
-    additional_data: Null,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadChacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   
@@ -1334,9 +1333,9 @@ object mod {
   @js.native
   val cryptoAeadChacha20poly1305IetfKEYBYTES: Double = js.native
   
-  inline def cryptoAeadChacha20poly1305IetfKeygen(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_keygen")().asInstanceOf[Uint8Array]
+  inline def cryptoAeadChacha20poly1305IetfKeygen(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_keygen")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoAeadChacha20poly1305IetfKeygen(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305IetfKeygen(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoAeadChacha20poly1305IetfKeygen(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_ietf_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_aead_chacha20poly1305_ietf_MESSAGEBYTES_MAX")
   @js.native
@@ -1354,9 +1353,9 @@ object mod {
   @js.native
   val cryptoAeadChacha20poly1305KEYBYTES: Double = js.native
   
-  inline def cryptoAeadChacha20poly1305Keygen(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_keygen")().asInstanceOf[Uint8Array]
+  inline def cryptoAeadChacha20poly1305Keygen(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_keygen")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoAeadChacha20poly1305Keygen(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoAeadChacha20poly1305Keygen(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoAeadChacha20poly1305Keygen(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_chacha20poly1305_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_aead_chacha20poly1305_MESSAGEBYTES_MAX")
   @js.native
@@ -1375,633 +1374,633 @@ object mod {
   val cryptoAeadXchacha20poly1305IetfABYTES: Double = js.native
   
   inline def cryptoAeadXchacha20poly1305IetfDecrypt(
-    secret_nonce: String | Uint8Array | Null,
-    ciphertext: String | Uint8Array,
-    additional_data: String | Uint8Array | Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    secret_nonce: String | js.typedarray.Uint8Array | Null,
+    ciphertext: String | js.typedarray.Uint8Array,
+    additional_data: String | js.typedarray.Uint8Array | Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: js.UndefOr[Uint8ArrayOutputFormat | Null]
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoAeadXchacha20poly1305IetfDecrypt(
     secret_nonce: String,
     ciphertext: String,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfDecrypt(
+    secret_nonce: String,
+    ciphertext: String,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecrypt(
     secret_nonce: String,
     ciphertext: String,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecrypt(
     secret_nonce: String,
-    ciphertext: String,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecrypt(
     secret_nonce: String,
-    ciphertext: Uint8Array,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecrypt(
     secret_nonce: String,
-    ciphertext: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecrypt(
-    secret_nonce: String,
-    ciphertext: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: String,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfDecrypt(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: String,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfDecrypt(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: String,
+    additional_data: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfDecrypt(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfDecrypt(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfDecrypt(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecrypt(
     secret_nonce: Null,
     ciphertext: String,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfDecrypt(
+    secret_nonce: Null,
+    ciphertext: String,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecrypt(
     secret_nonce: Null,
     ciphertext: String,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecrypt(
     secret_nonce: Null,
-    ciphertext: String,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfDecrypt(
-    secret_nonce: Null,
-    ciphertext: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecrypt(
     secret_nonce: Null,
-    ciphertext: Uint8Array,
-    additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecrypt(
     secret_nonce: Null,
-    ciphertext: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfDecrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: String,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfDecrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: String,
+    ciphertext: js.typedarray.Uint8Array,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfDecrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: String,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfDecrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfDecrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfDecrypt(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
-    secret_nonce: String | Uint8Array | Null,
-    ciphertext: String | Uint8Array,
-    mac: Uint8Array,
-    additional_data: String | Uint8Array | Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    secret_nonce: String | js.typedarray.Uint8Array | Null,
+    ciphertext: String | js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: String | js.typedarray.Uint8Array | Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: js.UndefOr[Uint8ArrayOutputFormat | Null]
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
     secret_nonce: String,
     ciphertext: String,
-    mac: Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
-    secret_nonce: String,
-    ciphertext: String,
-    mac: Uint8Array,
-    additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
     secret_nonce: String,
     ciphertext: String,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
     secret_nonce: String,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    additional_data: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
     secret_nonce: String,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
     secret_nonce: String,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
-    secret_nonce: Null,
-    ciphertext: String,
-    mac: Uint8Array,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
-    secret_nonce: Null,
-    ciphertext: String,
-    mac: Uint8Array,
+    secret_nonce: String,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
-    secret_nonce: Null,
+    secret_nonce: js.typedarray.Uint8Array,
     ciphertext: String,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
-    secret_nonce: Null,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    additional_data: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
+    secret_nonce: js.typedarray.Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
     secret_nonce: Null,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    additional_data: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
     secret_nonce: Null,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
-    secret_nonce: Uint8Array,
+    secret_nonce: Null,
     ciphertext: String,
-    mac: Uint8Array,
-    additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
-    secret_nonce: Uint8Array,
-    ciphertext: String,
-    mac: Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
-    secret_nonce: Uint8Array,
-    ciphertext: String,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
+    secret_nonce: Null,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
+    secret_nonce: Null,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
+    secret_nonce: Null,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
     additional_data: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfDecryptDetached(
-    secret_nonce: Uint8Array,
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    additional_data: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_decrypt_detached")(secret_nonce.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def cryptoAeadXchacha20poly1305IetfEncrypt(
-    message: String | Uint8Array,
-    additional_data: String | Uint8Array | Null,
-    secret_nonce: String | Uint8Array | Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    message: String | js.typedarray.Uint8Array,
+    additional_data: String | js.typedarray.Uint8Array | Null,
+    secret_nonce: String | js.typedarray.Uint8Array | Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: js.UndefOr[Uint8ArrayOutputFormat | Null]
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoAeadXchacha20poly1305IetfEncrypt(
     message: String,
     additional_data: String,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
+    message: String,
+    additional_data: String,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfEncrypt(
     message: String,
     additional_data: String,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfEncrypt(
     message: String,
-    additional_data: String,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
+    message: String,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
+    message: String,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfEncrypt(
     message: String,
     additional_data: Null,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
+    message: String,
+    additional_data: Null,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfEncrypt(
     message: String,
     additional_data: Null,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfEncrypt(
-    message: String,
-    additional_data: Null,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
     additional_data: String,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfEncrypt(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: String,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
+    message: js.typedarray.Uint8Array,
     additional_data: String,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfEncrypt(
-    message: Uint8Array,
-    additional_data: String,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfEncrypt(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
+    message: js.typedarray.Uint8Array,
     additional_data: Null,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoAeadXchacha20poly1305IetfEncrypt(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: Null,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
+    message: js.typedarray.Uint8Array,
     additional_data: Null,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
-    message: Uint8Array,
-    additional_data: Null,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfEncrypt(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
-    message: String | Uint8Array,
-    additional_data: String | Uint8Array | Null,
-    secret_nonce: String | Uint8Array | Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    message: String | js.typedarray.Uint8Array,
+    additional_data: String | js.typedarray.Uint8Array | Null,
+    secret_nonce: String | js.typedarray.Uint8Array | Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: js.UndefOr[Uint8ArrayOutputFormat | Null]
   ): CryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[CryptoBox]
   inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
     message: String,
     additional_data: String,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
+    message: String,
+    additional_data: String,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
     message: String,
     additional_data: String,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
     message: String,
-    additional_data: String,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
+    message: String,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
+    message: String,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
     message: String,
     additional_data: Null,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
+    message: String,
+    additional_data: Null,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
     message: String,
     additional_data: Null,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
-    message: String,
-    additional_data: Null,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
-    message: String,
-    additional_data: Uint8Array,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
     additional_data: String,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: String,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
+    message: js.typedarray.Uint8Array,
     additional_data: String,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
-    additional_data: String,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: String,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
+    message: js.typedarray.Uint8Array,
+    additional_data: js.typedarray.Uint8Array,
+    secret_nonce: Null,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
+    message: js.typedarray.Uint8Array,
     additional_data: Null,
     secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    additional_data: Null,
+    secret_nonce: js.typedarray.Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
+  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
+    message: js.typedarray.Uint8Array,
     additional_data: Null,
     secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
-    additional_data: Null,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: String,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: Null,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
-    outputFormat: StringOutputFormat
-  ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
-  inline def cryptoAeadXchacha20poly1305IetfEncryptDetached(
-    message: Uint8Array,
-    additional_data: Uint8Array,
-    secret_nonce: Uint8Array,
-    public_nonce: Uint8Array,
-    key: Uint8Array,
+    public_nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_encrypt_detached")(message.asInstanceOf[js.Any], additional_data.asInstanceOf[js.Any], secret_nonce.asInstanceOf[js.Any], public_nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   
@@ -2009,9 +2008,9 @@ object mod {
   @js.native
   val cryptoAeadXchacha20poly1305IetfKEYBYTES: Double = js.native
   
-  inline def cryptoAeadXchacha20poly1305IetfKeygen(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_keygen")().asInstanceOf[Uint8Array]
+  inline def cryptoAeadXchacha20poly1305IetfKeygen(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_keygen")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoAeadXchacha20poly1305IetfKeygen(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoAeadXchacha20poly1305IetfKeygen(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoAeadXchacha20poly1305IetfKeygen(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_aead_xchacha20poly1305_ietf_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_aead_xchacha20poly1305_ietf_MESSAGEBYTES_MAX")
   @js.native
@@ -2025,23 +2024,31 @@ object mod {
   @js.native
   val cryptoAeadXchacha20poly1305IetfNSECBYTES: Double = js.native
   
-  inline def cryptoAuth(message: String, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoAuth(message: String, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAuth(message: String, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoAuth(message: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoAuth(message: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAuth(message: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoAuth(message: String, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoAuth(message: String, key: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAuth(message: String, key: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoAuth(message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoAuth(message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAuth(
+    message: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_auth_BYTES")
   @js.native
   val cryptoAuthBYTES: Double = js.native
   
-  inline def cryptoAuthHmacsha256(message: String, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoAuthHmacsha256(message: String, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAuthHmacsha256(message: String, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoAuthHmacsha256(message: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoAuthHmacsha256(message: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAuthHmacsha256(message: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoAuthHmacsha256(message: String, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoAuthHmacsha256(message: String, key: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAuthHmacsha256(message: String, key: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoAuthHmacsha256(message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoAuthHmacsha256(message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAuthHmacsha256(
+    message: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_auth_hmacsha256_BYTES")
   @js.native
@@ -2051,19 +2058,23 @@ object mod {
   @js.native
   val cryptoAuthHmacsha256KEYBYTES: Double = js.native
   
-  inline def cryptoAuthHmacsha256Keygen(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256_keygen")().asInstanceOf[Uint8Array]
+  inline def cryptoAuthHmacsha256Keygen(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256_keygen")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoAuthHmacsha256Keygen(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoAuthHmacsha256Keygen(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoAuthHmacsha256Keygen(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoAuthHmacsha256Verify(tag: Uint8Array, message: String, key: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256_verify")(tag.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def cryptoAuthHmacsha256Verify(tag: Uint8Array, message: Uint8Array, key: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256_verify")(tag.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoAuthHmacsha256Verify(tag: js.typedarray.Uint8Array, message: String, key: js.typedarray.Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256_verify")(tag.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoAuthHmacsha256Verify(tag: js.typedarray.Uint8Array, message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha256_verify")(tag.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def cryptoAuthHmacsha512(message: String, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoAuthHmacsha512(message: String, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAuthHmacsha512(message: String, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoAuthHmacsha512(message: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoAuthHmacsha512(message: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoAuthHmacsha512(message: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoAuthHmacsha512(message: String, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoAuthHmacsha512(message: String, key: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAuthHmacsha512(message: String, key: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoAuthHmacsha512(message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoAuthHmacsha512(message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoAuthHmacsha512(
+    message: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_auth_hmacsha512256_BYTES")
   @js.native
@@ -2081,39 +2092,55 @@ object mod {
   @js.native
   val cryptoAuthHmacsha512KEYBYTES: Double = js.native
   
-  inline def cryptoAuthHmacsha512Keygen(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512_keygen")().asInstanceOf[Uint8Array]
+  inline def cryptoAuthHmacsha512Keygen(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512_keygen")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoAuthHmacsha512Keygen(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoAuthHmacsha512Keygen(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoAuthHmacsha512Keygen(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoAuthHmacsha512Verify(tag: Uint8Array, message: String, key: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512_verify")(tag.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def cryptoAuthHmacsha512Verify(tag: Uint8Array, message: Uint8Array, key: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512_verify")(tag.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoAuthHmacsha512Verify(tag: js.typedarray.Uint8Array, message: String, key: js.typedarray.Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512_verify")(tag.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoAuthHmacsha512Verify(tag: js.typedarray.Uint8Array, message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_hmacsha512_verify")(tag.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_auth_KEYBYTES")
   @js.native
   val cryptoAuthKEYBYTES: Double = js.native
   
-  inline def cryptoAuthKeygen(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_keygen")().asInstanceOf[Uint8Array]
+  inline def cryptoAuthKeygen(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_keygen")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoAuthKeygen(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoAuthKeygen(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoAuthKeygen(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoAuthVerify(tag: Uint8Array, message: String, key: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_verify")(tag.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def cryptoAuthVerify(tag: Uint8Array, message: Uint8Array, key: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_verify")(tag.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoAuthVerify(tag: js.typedarray.Uint8Array, message: String, key: js.typedarray.Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_verify")(tag.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoAuthVerify(tag: js.typedarray.Uint8Array, message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_auth_verify")(tag.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_box_BEFORENMBYTES")
   @js.native
   val cryptoBoxBEFORENMBYTES: Double = js.native
   
-  inline def cryptoBoxBeforenm(publicKey: Uint8Array, privateKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_beforenm")(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoBoxBeforenm(publicKey: Uint8Array, privateKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_beforenm")(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoBoxBeforenm(publicKey: Uint8Array, privateKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_beforenm")(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoBoxBeforenm(publicKey: js.typedarray.Uint8Array, privateKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_beforenm")(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoBoxBeforenm(
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_beforenm")(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoBoxBeforenm(
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_beforenm")(publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_box_curve25519xchacha20poly1305_BEFORENMBYTES")
   @js.native
   val cryptoBoxCurve25519xchacha20poly1305BEFORENMBYTES: Double = js.native
   
-  inline def cryptoBoxCurve25519xchacha20poly1305Keypair(publicKey: Uint8Array, secretKey: Uint8Array): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
-  inline def cryptoBoxCurve25519xchacha20poly1305Keypair(publicKey: Uint8Array, secretKey: Uint8Array, outputFormat: StringOutputFormat): StringKeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringKeyPair]
-  inline def cryptoBoxCurve25519xchacha20poly1305Keypair(publicKey: Uint8Array, secretKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+  inline def cryptoBoxCurve25519xchacha20poly1305Keypair(publicKey: js.typedarray.Uint8Array, secretKey: js.typedarray.Uint8Array): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+  inline def cryptoBoxCurve25519xchacha20poly1305Keypair(
+    publicKey: js.typedarray.Uint8Array,
+    secretKey: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringKeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringKeyPair]
+  inline def cryptoBoxCurve25519xchacha20poly1305Keypair(
+    publicKey: js.typedarray.Uint8Array,
+    secretKey: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_keypair")(publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_box_curve25519xchacha20poly1305_MACBYTES")
   @js.native
@@ -2143,23 +2170,35 @@ object mod {
   @js.native
   val cryptoBoxCurve25519xchacha20poly1305SEEDBYTES: Double = js.native
   
-  inline def cryptoBoxCurve25519xchacha20poly1305Seal(message: Uint8Array, publicKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoBoxCurve25519xchacha20poly1305Seal(message: Uint8Array, publicKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoBoxCurve25519xchacha20poly1305Seal(message: Uint8Array, publicKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoBoxCurve25519xchacha20poly1305Seal(message: js.typedarray.Uint8Array, publicKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoBoxCurve25519xchacha20poly1305Seal(
+    message: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoBoxCurve25519xchacha20poly1305Seal(
+    message: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoBoxCurve25519xchacha20poly1305SealOpen(ciphertext: Uint8Array, publicKey: Uint8Array, secretKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_seal_open")(ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   inline def cryptoBoxCurve25519xchacha20poly1305SealOpen(
-    ciphertext: Uint8Array,
-    publicKey: Uint8Array,
-    secretKey: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    secretKey: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_seal_open")(ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoBoxCurve25519xchacha20poly1305SealOpen(
+    ciphertext: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    secretKey: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_seal_open")(ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoBoxCurve25519xchacha20poly1305SealOpen(
-    ciphertext: Uint8Array,
-    publicKey: Uint8Array,
-    secretKey: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    secretKey: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_seal_open")(ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_curve25519xchacha20poly1305_seal_open")(ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_box_curve25519xsalsa20poly1305_BEFORENMBYTES")
   @js.native
@@ -2189,79 +2228,118 @@ object mod {
   @js.native
   val cryptoBoxCurve25519xsalsa20poly1305SEEDBYTES: Double = js.native
   
-  inline def cryptoBoxDetached(message: String, nonce: Uint8Array, publicKey: Uint8Array, privateKey: Uint8Array): CryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[CryptoBox]
   inline def cryptoBoxDetached(
     message: String,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array
+  ): CryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[CryptoBox]
+  inline def cryptoBoxDetached(
+    message: String,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoBoxDetached(
     message: String,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
   ): CryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[CryptoBox]
-  inline def cryptoBoxDetached(message: Uint8Array, nonce: Uint8Array, publicKey: Uint8Array, privateKey: Uint8Array): CryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[CryptoBox]
   inline def cryptoBoxDetached(
-    message: Uint8Array,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array
+  ): CryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[CryptoBox]
+  inline def cryptoBoxDetached(
+    message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoBox]
   inline def cryptoBoxDetached(
-    message: Uint8Array,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
   ): CryptoBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[CryptoBox]
   
-  inline def cryptoBoxEasy(message: String, nonce: Uint8Array, publicKey: Uint8Array, privateKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   inline def cryptoBoxEasy(
     message: String,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoBoxEasy(
+    message: String,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoBoxEasy(
     message: String,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoBoxEasy(message: Uint8Array, nonce: Uint8Array, publicKey: Uint8Array, privateKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoBoxEasy(
-    message: Uint8Array,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoBoxEasy(
+    message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoBoxEasy(
-    message: Uint8Array,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoBoxEasyAfternm(message: String, nonce: Uint8Array, sharedKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy_afternm")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoBoxEasyAfternm(message: String, nonce: Uint8Array, sharedKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy_afternm")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoBoxEasyAfternm(message: String, nonce: Uint8Array, sharedKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy_afternm")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoBoxEasyAfternm(message: Uint8Array, nonce: Uint8Array, sharedKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy_afternm")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoBoxEasyAfternm(message: Uint8Array, nonce: Uint8Array, sharedKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy_afternm")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoBoxEasyAfternm(message: String, nonce: js.typedarray.Uint8Array, sharedKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy_afternm")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoBoxEasyAfternm(
-    message: Uint8Array,
-    nonce: Uint8Array,
-    sharedKey: Uint8Array,
+    message: String,
+    nonce: js.typedarray.Uint8Array,
+    sharedKey: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy_afternm")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoBoxEasyAfternm(
+    message: String,
+    nonce: js.typedarray.Uint8Array,
+    sharedKey: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy_afternm")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy_afternm")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoBoxEasyAfternm(
+    message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    sharedKey: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy_afternm")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoBoxEasyAfternm(
+    message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    sharedKey: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy_afternm")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoBoxEasyAfternm(
+    message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    sharedKey: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_easy_afternm")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   inline def cryptoBoxKeypair(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_keypair")().asInstanceOf[KeyPair]
   inline def cryptoBoxKeypair(outputFormat: StringOutputFormat): StringKeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_keypair")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[StringKeyPair]
@@ -2281,93 +2359,122 @@ object mod {
   
   inline def cryptoBoxOpenDetached(
     ciphertext: String,
-    mac: Uint8Array,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    mac: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoBoxOpenDetached(
     ciphertext: String,
-    mac: Uint8Array,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoBoxOpenDetached(
     ciphertext: String,
-    mac: Uint8Array,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoBoxOpenDetached(
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoBoxOpenDetached(
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoBoxOpenDetached(
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoBoxOpenEasy(ciphertext: String, nonce: Uint8Array, publicKey: Uint8Array, privateKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   inline def cryptoBoxOpenEasy(
     ciphertext: String,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoBoxOpenEasy(
+    ciphertext: String,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoBoxOpenEasy(
     ciphertext: String,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoBoxOpenEasy(ciphertext: Uint8Array, nonce: Uint8Array, publicKey: Uint8Array, privateKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoBoxOpenEasy(
-    ciphertext: Uint8Array,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoBoxOpenEasy(
+    ciphertext: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoBoxOpenEasy(
-    ciphertext: Uint8Array,
-    nonce: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoBoxOpenEasyAfternm(ciphertext: String, nonce: Uint8Array, sharedKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy_afternm")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoBoxOpenEasyAfternm(ciphertext: String, nonce: Uint8Array, sharedKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy_afternm")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoBoxOpenEasyAfternm(ciphertext: String, nonce: Uint8Array, sharedKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy_afternm")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoBoxOpenEasyAfternm(ciphertext: Uint8Array, nonce: Uint8Array, sharedKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy_afternm")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoBoxOpenEasyAfternm(ciphertext: Uint8Array, nonce: Uint8Array, sharedKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy_afternm")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoBoxOpenEasyAfternm(ciphertext: String, nonce: js.typedarray.Uint8Array, sharedKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy_afternm")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoBoxOpenEasyAfternm(
-    ciphertext: Uint8Array,
-    nonce: Uint8Array,
-    sharedKey: Uint8Array,
+    ciphertext: String,
+    nonce: js.typedarray.Uint8Array,
+    sharedKey: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy_afternm")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoBoxOpenEasyAfternm(
+    ciphertext: String,
+    nonce: js.typedarray.Uint8Array,
+    sharedKey: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy_afternm")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy_afternm")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoBoxOpenEasyAfternm(
+    ciphertext: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    sharedKey: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy_afternm")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoBoxOpenEasyAfternm(
+    ciphertext: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    sharedKey: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy_afternm")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoBoxOpenEasyAfternm(
+    ciphertext: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    sharedKey: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_open_easy_afternm")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], sharedKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_box_PUBLICKEYBYTES")
   @js.native
@@ -2385,59 +2492,131 @@ object mod {
   @js.native
   val cryptoBoxSEEDBYTES: Double = js.native
   
-  inline def cryptoBoxSeal(message: String, publicKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoBoxSeal(message: String, publicKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoBoxSeal(message: String, publicKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoBoxSeal(message: Uint8Array, publicKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoBoxSeal(message: Uint8Array, publicKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoBoxSeal(message: Uint8Array, publicKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoBoxSeal(message: String, publicKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoBoxSeal(message: String, publicKey: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoBoxSeal(message: String, publicKey: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoBoxSeal(message: js.typedarray.Uint8Array, publicKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoBoxSeal(
+    message: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoBoxSeal(
+    message: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal")(message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoBoxSealOpen(ciphertext: String, publicKey: Uint8Array, privateKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal_open")(ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoBoxSealOpen(ciphertext: String, publicKey: js.typedarray.Uint8Array, privateKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal_open")(ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoBoxSealOpen(
     ciphertext: String,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal_open")(ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoBoxSealOpen(
     ciphertext: String,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal_open")(ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoBoxSealOpen(ciphertext: Uint8Array, publicKey: Uint8Array, privateKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal_open")(ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal_open")(ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoBoxSealOpen(
-    ciphertext: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal_open")(ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoBoxSealOpen(
+    ciphertext: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal_open")(ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoBoxSealOpen(
-    ciphertext: Uint8Array,
-    publicKey: Uint8Array,
-    privateKey: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal_open")(ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seal_open")(ciphertext.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoBoxSeedKeypair(seed: Uint8Array): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seed_keypair")(seed.asInstanceOf[js.Any]).asInstanceOf[KeyPair]
-  inline def cryptoBoxSeedKeypair(seed: Uint8Array, outputFormat: StringOutputFormat): StringKeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seed_keypair")(seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringKeyPair]
-  inline def cryptoBoxSeedKeypair(seed: Uint8Array, outputFormat: Uint8ArrayOutputFormat): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seed_keypair")(seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+  inline def cryptoBoxSeedKeypair(seed: js.typedarray.Uint8Array): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seed_keypair")(seed.asInstanceOf[js.Any]).asInstanceOf[KeyPair]
+  inline def cryptoBoxSeedKeypair(seed: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): StringKeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seed_keypair")(seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringKeyPair]
+  inline def cryptoBoxSeedKeypair(seed: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_box_seed_keypair")(seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+  
+  inline def cryptoCoreEd25519Add(p: js.typedarray.Uint8Array, q: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_add")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519Add(p: js.typedarray.Uint8Array, q: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_add")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreEd25519Add(p: js.typedarray.Uint8Array, q: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_add")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_core_ed25519_BYTES")
   @js.native
   val cryptoCoreEd25519BYTES: Double = js.native
   
+  inline def cryptoCoreEd25519FromHash(r: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_from_hash")(r.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519FromHash(r: String, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_from_hash")(r.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreEd25519FromHash(r: String, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_from_hash")(r.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519FromHash(r: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_from_hash")(r.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519FromHash(r: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_from_hash")(r.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreEd25519FromHash(r: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_from_hash")(r.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def cryptoCoreEd25519FromUniform(r: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_from_uniform")(r.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519FromUniform(r: String, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_from_uniform")(r.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreEd25519FromUniform(r: String, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_from_uniform")(r.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519FromUniform(r: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_from_uniform")(r.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519FromUniform(r: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_from_uniform")(r.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreEd25519FromUniform(r: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_from_uniform")(r.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
   @JSImport("libsodium-wrappers-sumo", "crypto_core_ed25519_HASHBYTES")
   @js.native
   val cryptoCoreEd25519HASHBYTES: Double = js.native
+  
+  inline def cryptoCoreEd25519IsValidPoint(repr: js.typedarray.Uint8Array): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_is_valid_point")(repr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_core_ed25519_NONREDUCEDSCALARBYTES")
   @js.native
   val cryptoCoreEd25519NONREDUCEDSCALARBYTES: Double = js.native
   
+  inline def cryptoCoreEd25519Random(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_random")().asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519Random(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_random")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cryptoCoreEd25519Random(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_random")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  
   @JSImport("libsodium-wrappers-sumo", "crypto_core_ed25519_SCALARBYTES")
   @js.native
   val cryptoCoreEd25519SCALARBYTES: Double = js.native
+  
+  inline def cryptoCoreEd25519ScalarAdd(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519ScalarAdd(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreEd25519ScalarAdd(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def cryptoCoreEd25519ScalarComplement(s: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_complement")(s.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519ScalarComplement(s: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_complement")(s.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreEd25519ScalarComplement(s: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_complement")(s.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def cryptoCoreEd25519ScalarInvert(s: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_invert")(s.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519ScalarInvert(s: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_invert")(s.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreEd25519ScalarInvert(s: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_invert")(s.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def cryptoCoreEd25519ScalarMul(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_mul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519ScalarMul(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_mul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreEd25519ScalarMul(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_mul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def cryptoCoreEd25519ScalarNegate(s: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_negate")(s.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519ScalarNegate(s: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_negate")(s.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreEd25519ScalarNegate(s: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_negate")(s.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def cryptoCoreEd25519ScalarRandom(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_random")().asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519ScalarRandom(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_random")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cryptoCoreEd25519ScalarRandom(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_random")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def cryptoCoreEd25519ScalarReduce(sample: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_reduce")(sample.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519ScalarReduce(sample: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_reduce")(sample.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreEd25519ScalarReduce(sample: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_reduce")(sample.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def cryptoCoreEd25519ScalarSub(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519ScalarSub(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreEd25519ScalarSub(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_scalar_sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def cryptoCoreEd25519Sub(p: js.typedarray.Uint8Array, q: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_sub")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreEd25519Sub(p: js.typedarray.Uint8Array, q: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_sub")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreEd25519Sub(p: js.typedarray.Uint8Array, q: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ed25519_sub")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_core_ed25519_UNIFORMBYTES")
   @js.native
@@ -2475,84 +2654,84 @@ object mod {
   @js.native
   val cryptoCoreHsalsa20OUTPUTBYTES: Double = js.native
   
-  inline def cryptoCoreRistretto255Add(p: Uint8Array, q: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_add")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoCoreRistretto255Add(p: Uint8Array, q: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_add")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoCoreRistretto255Add(p: Uint8Array, q: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_add")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255Add(p: js.typedarray.Uint8Array, q: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_add")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreRistretto255Add(p: js.typedarray.Uint8Array, q: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_add")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreRistretto255Add(p: js.typedarray.Uint8Array, q: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_add")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_core_ristretto255_BYTES")
   @js.native
   val cryptoCoreRistretto255BYTES: Double = js.native
   
-  inline def cryptoCoreRistretto255FromHash(r: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_from_hash")(r.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  inline def cryptoCoreRistretto255FromHash(r: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_from_hash")(r.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoCoreRistretto255FromHash(r: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_from_hash")(r.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255FromHash(r: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_from_hash")(r.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreRistretto255FromHash(r: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_from_hash")(r.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreRistretto255FromHash(r: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_from_hash")(r.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_core_ristretto255_HASHBYTES")
   @js.native
   val cryptoCoreRistretto255HASHBYTES: Double = js.native
   
   inline def cryptoCoreRistretto255IsValidPoint(point: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_is_valid_point")(point.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def cryptoCoreRistretto255IsValidPoint(point: Uint8Array): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_is_valid_point")(point.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def cryptoCoreRistretto255IsValidPoint(point: js.typedarray.Uint8Array): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_is_valid_point")(point.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_core_ristretto255_NONREDUCEDSCALARBYTES")
   @js.native
   val cryptoCoreRistretto255NONREDUCEDSCALARBYTES: Double = js.native
   
-  inline def cryptoCoreRistretto255Random(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_random")().asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255Random(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_random")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoCoreRistretto255Random(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_random")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoCoreRistretto255Random(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_random")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255Random(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_random")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_core_ristretto255_SCALARBYTES")
   @js.native
   val cryptoCoreRistretto255SCALARBYTES: Double = js.native
   
-  inline def cryptoCoreRistretto255ScalarAdd(x: Uint8Array, y: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoCoreRistretto255ScalarAdd(x: Uint8Array, y: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoCoreRistretto255ScalarAdd(x: Uint8Array, y: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255ScalarAdd(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreRistretto255ScalarAdd(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreRistretto255ScalarAdd(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoCoreRistretto255ScalarComplement(scalar: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_complement")(scalar.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255ScalarComplement(scalar: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_complement")(scalar.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoCoreRistretto255ScalarComplement(scalar: String, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_complement")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoCoreRistretto255ScalarComplement(scalar: String, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_complement")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoCoreRistretto255ScalarComplement(scalar: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_complement")(scalar.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  inline def cryptoCoreRistretto255ScalarComplement(scalar: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_complement")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoCoreRistretto255ScalarComplement(scalar: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_complement")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255ScalarComplement(scalar: String, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_complement")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreRistretto255ScalarComplement(scalar: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_complement")(scalar.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreRistretto255ScalarComplement(scalar: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_complement")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreRistretto255ScalarComplement(scalar: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_complement")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoCoreRistretto255ScalarInvert(scalar: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_invert")(scalar.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255ScalarInvert(scalar: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_invert")(scalar.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoCoreRistretto255ScalarInvert(scalar: String, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_invert")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoCoreRistretto255ScalarInvert(scalar: String, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_invert")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoCoreRistretto255ScalarInvert(scalar: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_invert")(scalar.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  inline def cryptoCoreRistretto255ScalarInvert(scalar: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_invert")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoCoreRistretto255ScalarInvert(scalar: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_invert")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255ScalarInvert(scalar: String, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_invert")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreRistretto255ScalarInvert(scalar: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_invert")(scalar.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreRistretto255ScalarInvert(scalar: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_invert")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreRistretto255ScalarInvert(scalar: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_invert")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoCoreRistretto255ScalarMul(x: Uint8Array, y: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_mul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoCoreRistretto255ScalarMul(x: Uint8Array, y: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_mul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoCoreRistretto255ScalarMul(x: Uint8Array, y: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_mul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255ScalarMul(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_mul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreRistretto255ScalarMul(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_mul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreRistretto255ScalarMul(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_mul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoCoreRistretto255ScalarNegate(scalar: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_negate")(scalar.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255ScalarNegate(scalar: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_negate")(scalar.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoCoreRistretto255ScalarNegate(scalar: String, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_negate")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoCoreRistretto255ScalarNegate(scalar: String, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_negate")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoCoreRistretto255ScalarNegate(scalar: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_negate")(scalar.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  inline def cryptoCoreRistretto255ScalarNegate(scalar: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_negate")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoCoreRistretto255ScalarNegate(scalar: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_negate")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255ScalarNegate(scalar: String, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_negate")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreRistretto255ScalarNegate(scalar: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_negate")(scalar.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreRistretto255ScalarNegate(scalar: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_negate")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreRistretto255ScalarNegate(scalar: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_negate")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoCoreRistretto255ScalarRandom(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_random")().asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255ScalarRandom(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_random")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoCoreRistretto255ScalarRandom(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_random")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoCoreRistretto255ScalarRandom(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_random")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255ScalarRandom(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_random")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoCoreRistretto255ScalarReduce(secret: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_reduce")(secret.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255ScalarReduce(secret: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_reduce")(secret.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoCoreRistretto255ScalarReduce(secret: String, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_reduce")(secret.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoCoreRistretto255ScalarReduce(secret: String, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_reduce")(secret.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoCoreRistretto255ScalarReduce(secret: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_reduce")(secret.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  inline def cryptoCoreRistretto255ScalarReduce(secret: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_reduce")(secret.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoCoreRistretto255ScalarReduce(secret: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_reduce")(secret.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255ScalarReduce(secret: String, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_reduce")(secret.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreRistretto255ScalarReduce(secret: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_reduce")(secret.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreRistretto255ScalarReduce(secret: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_reduce")(secret.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreRistretto255ScalarReduce(secret: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_reduce")(secret.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoCoreRistretto255ScalarSub(x: Uint8Array, y: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoCoreRistretto255ScalarSub(x: Uint8Array, y: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoCoreRistretto255ScalarSub(x: Uint8Array, y: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255ScalarSub(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreRistretto255ScalarSub(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreRistretto255ScalarSub(x: js.typedarray.Uint8Array, y: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_scalar_sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoCoreRistretto255Sub(p: Uint8Array, q: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_sub")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoCoreRistretto255Sub(p: Uint8Array, q: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_sub")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoCoreRistretto255Sub(p: Uint8Array, q: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_sub")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoCoreRistretto255Sub(p: js.typedarray.Uint8Array, q: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_sub")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoCoreRistretto255Sub(p: js.typedarray.Uint8Array, q: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_sub")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoCoreRistretto255Sub(p: js.typedarray.Uint8Array, q: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_core_ristretto255_sub")(p.asInstanceOf[js.Any], q.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_core_salsa2012_CONSTBYTES")
   @js.native
@@ -2586,26 +2765,71 @@ object mod {
   @js.native
   val cryptoCoreSalsa20OUTPUTBYTES: Double = js.native
   
-  inline def cryptoGenerichash(hash_length: Double, message: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichash(hash_length: Double, message: String, key: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoGenerichash(hash_length: Double, message: String): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoGenerichash(hash_length: Double, message: String, key: String): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoGenerichash(hash_length: Double, message: String, key: String, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoGenerichash(hash_length: Double, message: String, key: String, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoGenerichash(hash_length: Double, message: String, key: String, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoGenerichash(hash_length: Double, message: String, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoGenerichash(
+    hash_length: Double,
+    message: String,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoGenerichash(
+    hash_length: Double,
+    message: String,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoGenerichash(hash_length: Double, message: String, key: Null, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoGenerichash(hash_length: Double, message: String, key: Null, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichash(hash_length: Double, message: String, key: Unit, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichash(hash_length: Double, message: String, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichash(hash_length: Double, message: String, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoGenerichash(hash_length: Double, message: String, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichash(hash_length: Double, message: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichash(hash_length: Double, message: Uint8Array, key: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichash(hash_length: Double, message: Uint8Array, key: String, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoGenerichash(hash_length: Double, message: Uint8Array, key: String, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichash(hash_length: Double, message: Uint8Array, key: Null, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoGenerichash(hash_length: Double, message: Uint8Array, key: Null, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichash(hash_length: Double, message: Uint8Array, key: Unit, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichash(hash_length: Double, message: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichash(hash_length: Double, message: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoGenerichash(hash_length: Double, message: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoGenerichash(hash_length: Double, message: String, key: Null, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoGenerichash(hash_length: Double, message: String, key: Unit, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoGenerichash(hash_length: Double, message: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoGenerichash(hash_length: Double, message: js.typedarray.Uint8Array, key: String): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoGenerichash(
+    hash_length: Double,
+    message: js.typedarray.Uint8Array,
+    key: String,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoGenerichash(
+    hash_length: Double,
+    message: js.typedarray.Uint8Array,
+    key: String,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoGenerichash(hash_length: Double, message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoGenerichash(
+    hash_length: Double,
+    message: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoGenerichash(
+    hash_length: Double,
+    message: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoGenerichash(
+    hash_length: Double,
+    message: js.typedarray.Uint8Array,
+    key: Null,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoGenerichash(
+    hash_length: Double,
+    message: js.typedarray.Uint8Array,
+    key: Null,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoGenerichash(
+    hash_length: Double,
+    message: js.typedarray.Uint8Array,
+    key: Unit,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash")(hash_length.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_generichash_BYTES")
   @js.native
@@ -2651,47 +2875,64 @@ object mod {
   @js.native
   val cryptoGenerichashBlake2bSALTBYTES: Double = js.native
   
-  inline def cryptoGenerichashBlake2bSaltPersonal(subkey_len: Double, key: String, id: Uint8Array, ctx: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichashBlake2bSaltPersonal(subkey_len: Double, key: String, id: Uint8Array, ctx: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoGenerichashBlake2bSaltPersonal(subkey_len: Double, key: String, id: js.typedarray.Uint8Array, ctx: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoGenerichashBlake2bSaltPersonal(
     subkey_len: Double,
     key: String,
-    id: Uint8Array,
-    ctx: Uint8Array,
-    outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichashBlake2bSaltPersonal(subkey_len: Double, key: Null, id: Uint8Array, ctx: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichashBlake2bSaltPersonal(subkey_len: Double, key: Null, id: Uint8Array, ctx: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoGenerichashBlake2bSaltPersonal(
-    subkey_len: Double,
-    key: Null,
-    id: Uint8Array,
-    ctx: Uint8Array,
-    outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichashBlake2bSaltPersonal(subkey_len: Double, key: Uint8Array, id: Uint8Array, ctx: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoGenerichashBlake2bSaltPersonal(
-    subkey_len: Double,
-    key: Uint8Array,
-    id: Uint8Array,
-    ctx: Uint8Array,
+    id: js.typedarray.Uint8Array,
+    ctx: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoGenerichashBlake2bSaltPersonal(
     subkey_len: Double,
-    key: Uint8Array,
-    id: Uint8Array,
-    ctx: Uint8Array,
+    key: String,
+    id: js.typedarray.Uint8Array,
+    ctx: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoGenerichashBlake2bSaltPersonal(
+    subkey_len: Double,
+    key: js.typedarray.Uint8Array,
+    id: js.typedarray.Uint8Array,
+    ctx: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoGenerichashBlake2bSaltPersonal(
+    subkey_len: Double,
+    key: js.typedarray.Uint8Array,
+    id: js.typedarray.Uint8Array,
+    ctx: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoGenerichashBlake2bSaltPersonal(
+    subkey_len: Double,
+    key: js.typedarray.Uint8Array,
+    id: js.typedarray.Uint8Array,
+    ctx: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoGenerichashBlake2bSaltPersonal(subkey_len: Double, key: Null, id: js.typedarray.Uint8Array, ctx: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoGenerichashBlake2bSaltPersonal(
+    subkey_len: Double,
+    key: Null,
+    id: js.typedarray.Uint8Array,
+    ctx: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoGenerichashBlake2bSaltPersonal(
+    subkey_len: Double,
+    key: Null,
+    id: js.typedarray.Uint8Array,
+    ctx: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_blake2b_salt_personal")(subkey_len.asInstanceOf[js.Any], key.asInstanceOf[js.Any], id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoGenerichashFinal(state_address: StateAddress, hash_length: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_final")(state_address.asInstanceOf[js.Any], hash_length.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoGenerichashFinal(state_address: StateAddress, hash_length: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_final")(state_address.asInstanceOf[js.Any], hash_length.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoGenerichashFinal(state_address: StateAddress, hash_length: Double, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_final")(state_address.asInstanceOf[js.Any], hash_length.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoGenerichashFinal(state_address: StateAddress, hash_length: Double, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_final")(state_address.asInstanceOf[js.Any], hash_length.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoGenerichashFinal(state_address: StateAddress, hash_length: Double, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_final")(state_address.asInstanceOf[js.Any], hash_length.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   inline def cryptoGenerichashInit(key: String, hash_length: Double): StateAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_init")(key.asInstanceOf[js.Any], hash_length.asInstanceOf[js.Any])).asInstanceOf[StateAddress]
+  inline def cryptoGenerichashInit(key: js.typedarray.Uint8Array, hash_length: Double): StateAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_init")(key.asInstanceOf[js.Any], hash_length.asInstanceOf[js.Any])).asInstanceOf[StateAddress]
   inline def cryptoGenerichashInit(key: Null, hash_length: Double): StateAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_init")(key.asInstanceOf[js.Any], hash_length.asInstanceOf[js.Any])).asInstanceOf[StateAddress]
-  inline def cryptoGenerichashInit(key: Uint8Array, hash_length: Double): StateAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_init")(key.asInstanceOf[js.Any], hash_length.asInstanceOf[js.Any])).asInstanceOf[StateAddress]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_generichash_KEYBYTES")
   @js.native
@@ -2705,65 +2946,65 @@ object mod {
   @js.native
   val cryptoGenerichashKEYBYTESMIN: Double = js.native
   
-  inline def cryptoGenerichashKeygen(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_keygen")().asInstanceOf[Uint8Array]
+  inline def cryptoGenerichashKeygen(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_keygen")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoGenerichashKeygen(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoGenerichashKeygen(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoGenerichashKeygen(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   inline def cryptoGenerichashUpdate(state_address: StateAddress, message_chunk: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_update")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def cryptoGenerichashUpdate(state_address: StateAddress, message_chunk: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_update")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoGenerichashUpdate(state_address: StateAddress, message_chunk: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_generichash_update")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def cryptoHash(message: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash")(message.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoHash(message: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash")(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoHash(message: String, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoHash(message: String, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoHash(message: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash")(message.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  inline def cryptoHash(message: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoHash(message: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoHash(message: String, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoHash(message: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash")(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoHash(message: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoHash(message: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_hash_BYTES")
   @js.native
   val cryptoHashBYTES: Double = js.native
   
-  inline def cryptoHashSha256(message: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256")(message.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoHashSha256(message: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256")(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoHashSha256(message: String, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoHashSha256(message: String, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoHashSha256(message: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256")(message.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  inline def cryptoHashSha256(message: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoHashSha256(message: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoHashSha256(message: String, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoHashSha256(message: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256")(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoHashSha256(message: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoHashSha256(message: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_hash_sha256_BYTES")
   @js.native
   val cryptoHashSha256BYTES: Double = js.native
   
-  inline def cryptoHashSha256Final(stateAddress: StateAddress): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256_final")(stateAddress.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cryptoHashSha256Final(stateAddress: StateAddress): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256_final")(stateAddress.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoHashSha256Final(stateAddress: StateAddress, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256_final")(stateAddress.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoHashSha256Final(stateAddress: StateAddress, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256_final")(stateAddress.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoHashSha256Final(stateAddress: StateAddress, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256_final")(stateAddress.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoHashSha256Final_Uint8Array(stateAddress: StateAddress): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256_final")(stateAddress.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoHashSha256Final_String(stateAddress: StateAddress): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256_final")(stateAddress.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def cryptoHashSha256Init(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256_init")().asInstanceOf[Double]
   
-  inline def cryptoHashSha256Update(stateAddress: StateAddress, message: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256_update")(stateAddress.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoHashSha256Update(stateAddress: StateAddress, message: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha256_update")(stateAddress.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def cryptoHashSha512(message: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512")(message.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoHashSha512(message: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512")(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoHashSha512(message: String, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoHashSha512(message: String, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoHashSha512(message: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512")(message.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  inline def cryptoHashSha512(message: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoHashSha512(message: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoHashSha512(message: String, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoHashSha512(message: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512")(message.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoHashSha512(message: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoHashSha512(message: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512")(message.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_hash_sha512_BYTES")
   @js.native
   val cryptoHashSha512BYTES: Double = js.native
   
-  inline def cryptoHashSha512Final(stateAddress: StateAddress): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512_final")(stateAddress.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cryptoHashSha512Final(stateAddress: StateAddress): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512_final")(stateAddress.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoHashSha512Final(stateAddress: StateAddress, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512_final")(stateAddress.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoHashSha512Final(stateAddress: StateAddress, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512_final")(stateAddress.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoHashSha512Final(stateAddress: StateAddress, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512_final")(stateAddress.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoHashSha512Final_Uint8Array(stateAddress: StateAddress): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512_final")(stateAddress.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoHashSha512Final_String(stateAddress: StateAddress): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512_final")(stateAddress.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def cryptoHashSha512Init(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512_init")().asInstanceOf[Double]
   
-  inline def cryptoHashSha512Update(stateAddress: StateAddress, message: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512_update")(stateAddress.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoHashSha512Update(stateAddress: StateAddress, message: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_hash_sha512_update")(stateAddress.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_kdf_BYTES_MAX")
   @js.native
@@ -2793,41 +3034,45 @@ object mod {
   @js.native
   val cryptoKdfCONTEXTBYTES: Double = js.native
   
-  inline def cryptoKdfDeriveFromKey(subkey_len: Double, subkey_id: Double, ctx: String, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kdf_derive_from_key")(subkey_len.asInstanceOf[js.Any], subkey_id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoKdfDeriveFromKey(subkey_len: Double, subkey_id: Double, ctx: String, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kdf_derive_from_key")(subkey_len.asInstanceOf[js.Any], subkey_id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoKdfDeriveFromKey(
     subkey_len: Double,
     subkey_id: Double,
     ctx: String,
-    key: Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kdf_derive_from_key")(subkey_len.asInstanceOf[js.Any], subkey_id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoKdfDeriveFromKey(
     subkey_len: Double,
     subkey_id: Double,
     ctx: String,
-    key: Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kdf_derive_from_key")(subkey_len.asInstanceOf[js.Any], subkey_id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kdf_derive_from_key")(subkey_len.asInstanceOf[js.Any], subkey_id.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_kdf_KEYBYTES")
   @js.native
   val cryptoKdfKEYBYTES: Double = js.native
   
-  inline def cryptoKdfKeygen(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kdf_keygen")().asInstanceOf[Uint8Array]
+  inline def cryptoKdfKeygen(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kdf_keygen")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoKdfKeygen(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kdf_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoKdfKeygen(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kdf_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoKdfKeygen(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kdf_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoKxClientSessionKeys(clientPublicKey: Uint8Array, clientSecretKey: Uint8Array, serverPublicKey: Uint8Array): CryptoKX = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_client_session_keys")(clientPublicKey.asInstanceOf[js.Any], clientSecretKey.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any])).asInstanceOf[CryptoKX]
   inline def cryptoKxClientSessionKeys(
-    clientPublicKey: Uint8Array,
-    clientSecretKey: Uint8Array,
-    serverPublicKey: Uint8Array,
+    clientPublicKey: js.typedarray.Uint8Array,
+    clientSecretKey: js.typedarray.Uint8Array,
+    serverPublicKey: js.typedarray.Uint8Array
+  ): CryptoKX = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_client_session_keys")(clientPublicKey.asInstanceOf[js.Any], clientSecretKey.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any])).asInstanceOf[CryptoKX]
+  inline def cryptoKxClientSessionKeys(
+    clientPublicKey: js.typedarray.Uint8Array,
+    clientSecretKey: js.typedarray.Uint8Array,
+    serverPublicKey: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoKX = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_client_session_keys")(clientPublicKey.asInstanceOf[js.Any], clientSecretKey.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoKX]
   inline def cryptoKxClientSessionKeys(
-    clientPublicKey: Uint8Array,
-    clientSecretKey: Uint8Array,
-    serverPublicKey: Uint8Array,
+    clientPublicKey: js.typedarray.Uint8Array,
+    clientSecretKey: js.typedarray.Uint8Array,
+    serverPublicKey: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
   ): CryptoKX = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_client_session_keys")(clientPublicKey.asInstanceOf[js.Any], clientSecretKey.asInstanceOf[js.Any], serverPublicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[CryptoKX]
   
@@ -2851,50 +3096,58 @@ object mod {
   @js.native
   val cryptoKxSESSIONKEYBYTES: Double = js.native
   
-  inline def cryptoKxSeedKeypair(seed: Uint8Array): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_seed_keypair")(seed.asInstanceOf[js.Any]).asInstanceOf[KeyPair]
-  inline def cryptoKxSeedKeypair(seed: Uint8Array, outputFormat: StringOutputFormat): StringKeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_seed_keypair")(seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringKeyPair]
-  inline def cryptoKxSeedKeypair(seed: Uint8Array, outputFormat: Uint8ArrayOutputFormat): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_seed_keypair")(seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+  inline def cryptoKxSeedKeypair(seed: js.typedarray.Uint8Array): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_seed_keypair")(seed.asInstanceOf[js.Any]).asInstanceOf[KeyPair]
+  inline def cryptoKxSeedKeypair(seed: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): StringKeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_seed_keypair")(seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringKeyPair]
+  inline def cryptoKxSeedKeypair(seed: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_seed_keypair")(seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
   
-  inline def cryptoKxServerSessionKeys(serverPublicKey: Uint8Array, serverSecretKey: Uint8Array, clientPublicKey: Uint8Array): CryptoKX = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_server_session_keys")(serverPublicKey.asInstanceOf[js.Any], serverSecretKey.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any])).asInstanceOf[CryptoKX]
   inline def cryptoKxServerSessionKeys(
-    serverPublicKey: Uint8Array,
-    serverSecretKey: Uint8Array,
-    clientPublicKey: Uint8Array,
+    serverPublicKey: js.typedarray.Uint8Array,
+    serverSecretKey: js.typedarray.Uint8Array,
+    clientPublicKey: js.typedarray.Uint8Array
+  ): CryptoKX = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_server_session_keys")(serverPublicKey.asInstanceOf[js.Any], serverSecretKey.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any])).asInstanceOf[CryptoKX]
+  inline def cryptoKxServerSessionKeys(
+    serverPublicKey: js.typedarray.Uint8Array,
+    serverSecretKey: js.typedarray.Uint8Array,
+    clientPublicKey: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): StringCryptoKX = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_server_session_keys")(serverPublicKey.asInstanceOf[js.Any], serverSecretKey.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringCryptoKX]
   inline def cryptoKxServerSessionKeys(
-    serverPublicKey: Uint8Array,
-    serverSecretKey: Uint8Array,
-    clientPublicKey: Uint8Array,
+    serverPublicKey: js.typedarray.Uint8Array,
+    serverSecretKey: js.typedarray.Uint8Array,
+    clientPublicKey: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
   ): CryptoKX = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_kx_server_session_keys")(serverPublicKey.asInstanceOf[js.Any], serverSecretKey.asInstanceOf[js.Any], clientPublicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[CryptoKX]
   
-  inline def cryptoOnetimeauth(message: String, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoOnetimeauth(message: String, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoOnetimeauth(message: String, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoOnetimeauth(message: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoOnetimeauth(message: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoOnetimeauth(message: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoOnetimeauth(message: String, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoOnetimeauth(message: String, key: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoOnetimeauth(message: String, key: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoOnetimeauth(message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoOnetimeauth(message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoOnetimeauth(
+    message: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_onetimeauth_BYTES")
   @js.native
   val cryptoOnetimeauthBYTES: Double = js.native
   
-  inline def cryptoOnetimeauthFinal(stateAddress: StateAddress): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_final")(stateAddress.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoOnetimeauthFinal(stateAddress: StateAddress): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_final")(stateAddress.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoOnetimeauthFinal(stateAddress: StateAddress, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_final")(stateAddress.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoOnetimeauthFinal(stateAddress: StateAddress, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_final")(stateAddress.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoOnetimeauthFinal(stateAddress: StateAddress, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_final")(stateAddress.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   inline def cryptoOnetimeauthInit(): StateAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_init")().asInstanceOf[StateAddress]
   inline def cryptoOnetimeauthInit(key: String): StateAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_init")(key.asInstanceOf[js.Any]).asInstanceOf[StateAddress]
-  inline def cryptoOnetimeauthInit(key: Uint8Array): StateAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_init")(key.asInstanceOf[js.Any]).asInstanceOf[StateAddress]
+  inline def cryptoOnetimeauthInit(key: js.typedarray.Uint8Array): StateAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_init")(key.asInstanceOf[js.Any]).asInstanceOf[StateAddress]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_onetimeauth_KEYBYTES")
   @js.native
   val cryptoOnetimeauthKEYBYTES: Double = js.native
   
-  inline def cryptoOnetimeauthKeygen(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_keygen")().asInstanceOf[Uint8Array]
+  inline def cryptoOnetimeauthKeygen(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_keygen")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoOnetimeauthKeygen(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoOnetimeauthKeygen(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoOnetimeauthKeygen(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_onetimeauth_poly1305_BYTES")
   @js.native
@@ -2905,23 +3158,23 @@ object mod {
   val cryptoOnetimeauthPoly1305KEYBYTES: Double = js.native
   
   inline def cryptoOnetimeauthUpdate(stateAddress: StateAddress, message_chunk: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_update")(stateAddress.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def cryptoOnetimeauthUpdate(stateAddress: StateAddress, message_chunk: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_update")(stateAddress.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoOnetimeauthUpdate(stateAddress: StateAddress, message_chunk: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_update")(stateAddress.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def cryptoOnetimeauthVerify(hash: Uint8Array, message: String, key: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_verify")(hash.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def cryptoOnetimeauthVerify(hash: Uint8Array, message: Uint8Array, key: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_verify")(hash.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoOnetimeauthVerify(hash: js.typedarray.Uint8Array, message: String, key: js.typedarray.Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_verify")(hash.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoOnetimeauthVerify(hash: js.typedarray.Uint8Array, message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_onetimeauth_verify")(hash.asInstanceOf[js.Any], message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def cryptoPwhash(
     keyLength: Double,
     password: String,
-    salt: Uint8Array,
+    salt: js.typedarray.Uint8Array,
     opsLimit: Double,
     memLimit: Double,
     algorithm: Double
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoPwhash(
     keyLength: Double,
     password: String,
-    salt: Uint8Array,
+    salt: js.typedarray.Uint8Array,
     opsLimit: Double,
     memLimit: Double,
     algorithm: Double,
@@ -2930,24 +3183,24 @@ object mod {
   inline def cryptoPwhash(
     keyLength: Double,
     password: String,
-    salt: Uint8Array,
+    salt: js.typedarray.Uint8Array,
     opsLimit: Double,
     memLimit: Double,
     algorithm: Double,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoPwhash(
     keyLength: Double,
-    password: Uint8Array,
-    salt: Uint8Array,
+    password: js.typedarray.Uint8Array,
+    salt: js.typedarray.Uint8Array,
     opsLimit: Double,
     memLimit: Double,
     algorithm: Double
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoPwhash(
     keyLength: Double,
-    password: Uint8Array,
-    salt: Uint8Array,
+    password: js.typedarray.Uint8Array,
+    salt: js.typedarray.Uint8Array,
     opsLimit: Double,
     memLimit: Double,
     algorithm: Double,
@@ -2955,13 +3208,13 @@ object mod {
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoPwhash(
     keyLength: Double,
-    password: Uint8Array,
-    salt: Uint8Array,
+    password: js.typedarray.Uint8Array,
+    salt: js.typedarray.Uint8Array,
     opsLimit: Double,
     memLimit: Double,
     algorithm: Double,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_pwhash_ALG_ARGON2I13")
   @js.native
@@ -3075,11 +3328,17 @@ object mod {
   @js.native
   val cryptoPwhashSTRPREFIX: String = js.native
   
-  inline def cryptoPwhashScryptsalsa208sha256(keyLength: Double, password: String, salt: Uint8Array, opsLimit: Double, memLimit: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   inline def cryptoPwhashScryptsalsa208sha256(
     keyLength: Double,
     password: String,
-    salt: Uint8Array,
+    salt: js.typedarray.Uint8Array,
+    opsLimit: Double,
+    memLimit: Double
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoPwhashScryptsalsa208sha256(
+    keyLength: Double,
+    password: String,
+    salt: js.typedarray.Uint8Array,
     opsLimit: Double,
     memLimit: Double,
     outputFormat: StringOutputFormat
@@ -3087,28 +3346,34 @@ object mod {
   inline def cryptoPwhashScryptsalsa208sha256(
     keyLength: Double,
     password: String,
-    salt: Uint8Array,
+    salt: js.typedarray.Uint8Array,
     opsLimit: Double,
     memLimit: Double,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoPwhashScryptsalsa208sha256(keyLength: Double, password: Uint8Array, salt: Uint8Array, opsLimit: Double, memLimit: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoPwhashScryptsalsa208sha256(
     keyLength: Double,
-    password: Uint8Array,
-    salt: Uint8Array,
+    password: js.typedarray.Uint8Array,
+    salt: js.typedarray.Uint8Array,
+    opsLimit: Double,
+    memLimit: Double
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoPwhashScryptsalsa208sha256(
+    keyLength: Double,
+    password: js.typedarray.Uint8Array,
+    salt: js.typedarray.Uint8Array,
     opsLimit: Double,
     memLimit: Double,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoPwhashScryptsalsa208sha256(
     keyLength: Double,
-    password: Uint8Array,
-    salt: Uint8Array,
+    password: js.typedarray.Uint8Array,
+    salt: js.typedarray.Uint8Array,
     opsLimit: Double,
     memLimit: Double,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256")(keyLength.asInstanceOf[js.Any], password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_pwhash_scryptsalsa208sha256_BYTES_MAX")
   @js.native
@@ -3118,7 +3383,7 @@ object mod {
   @js.native
   val cryptoPwhashScryptsalsa208sha256BYTESMIN: Double = js.native
   
-  inline def cryptoPwhashScryptsalsa208sha256Ll(password: String, salt: String, opsLimit: Double, r: Double, p: Double, keyLength: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoPwhashScryptsalsa208sha256Ll(password: String, salt: String, opsLimit: Double, r: Double, p: Double, keyLength: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoPwhashScryptsalsa208sha256Ll(
     password: String,
     salt: String,
@@ -3136,11 +3401,18 @@ object mod {
     p: Double,
     keyLength: Double,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoPwhashScryptsalsa208sha256Ll(password: String, salt: Uint8Array, opsLimit: Double, r: Double, p: Double, keyLength: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoPwhashScryptsalsa208sha256Ll(
     password: String,
-    salt: Uint8Array,
+    salt: js.typedarray.Uint8Array,
+    opsLimit: Double,
+    r: Double,
+    p: Double,
+    keyLength: Double
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoPwhashScryptsalsa208sha256Ll(
+    password: String,
+    salt: js.typedarray.Uint8Array,
     opsLimit: Double,
     r: Double,
     p: Double,
@@ -3149,16 +3421,23 @@ object mod {
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoPwhashScryptsalsa208sha256Ll(
     password: String,
-    salt: Uint8Array,
+    salt: js.typedarray.Uint8Array,
     opsLimit: Double,
     r: Double,
     p: Double,
     keyLength: Double,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoPwhashScryptsalsa208sha256Ll(password: Uint8Array, salt: String, opsLimit: Double, r: Double, p: Double, keyLength: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoPwhashScryptsalsa208sha256Ll(
-    password: Uint8Array,
+    password: js.typedarray.Uint8Array,
+    salt: String,
+    opsLimit: Double,
+    r: Double,
+    p: Double,
+    keyLength: Double
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoPwhashScryptsalsa208sha256Ll(
+    password: js.typedarray.Uint8Array,
     salt: String,
     opsLimit: Double,
     r: Double,
@@ -3167,18 +3446,25 @@ object mod {
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoPwhashScryptsalsa208sha256Ll(
-    password: Uint8Array,
+    password: js.typedarray.Uint8Array,
     salt: String,
     opsLimit: Double,
     r: Double,
     p: Double,
     keyLength: Double,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoPwhashScryptsalsa208sha256Ll(password: Uint8Array, salt: Uint8Array, opsLimit: Double, r: Double, p: Double, keyLength: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoPwhashScryptsalsa208sha256Ll(
-    password: Uint8Array,
-    salt: Uint8Array,
+    password: js.typedarray.Uint8Array,
+    salt: js.typedarray.Uint8Array,
+    opsLimit: Double,
+    r: Double,
+    p: Double,
+    keyLength: Double
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoPwhashScryptsalsa208sha256Ll(
+    password: js.typedarray.Uint8Array,
+    salt: js.typedarray.Uint8Array,
     opsLimit: Double,
     r: Double,
     p: Double,
@@ -3186,14 +3472,14 @@ object mod {
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoPwhashScryptsalsa208sha256Ll(
-    password: Uint8Array,
-    salt: Uint8Array,
+    password: js.typedarray.Uint8Array,
+    salt: js.typedarray.Uint8Array,
     opsLimit: Double,
     r: Double,
     p: Double,
     keyLength: Double,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_ll")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], r.asInstanceOf[js.Any], p.asInstanceOf[js.Any], keyLength.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_pwhash_scryptsalsa208sha256_MEMLIMIT_INTERACTIVE")
   @js.native
@@ -3240,28 +3526,36 @@ object mod {
   val cryptoPwhashScryptsalsa208sha256STRPREFIX: String = js.native
   
   inline def cryptoPwhashScryptsalsa208sha256Str(password: String, opsLimit: Double, memLimit: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_str")(password.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoPwhashScryptsalsa208sha256Str(password: Uint8Array, opsLimit: Double, memLimit: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_str")(password.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoPwhashScryptsalsa208sha256Str(password: js.typedarray.Uint8Array, opsLimit: Double, memLimit: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_str")(password.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def cryptoPwhashScryptsalsa208sha256StrVerify(hashed_password: String, password: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_str_verify")(hashed_password.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def cryptoPwhashScryptsalsa208sha256StrVerify(hashed_password: String, password: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_str_verify")(hashed_password.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoPwhashScryptsalsa208sha256StrVerify(hashed_password: String, password: js.typedarray.Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_scryptsalsa208sha256_str_verify")(hashed_password.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def cryptoPwhashStr(password: String, opsLimit: Double, memLimit: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str")(password.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoPwhashStr(password: Uint8Array, opsLimit: Double, memLimit: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str")(password.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoPwhashStr(password: js.typedarray.Uint8Array, opsLimit: Double, memLimit: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str")(password.asInstanceOf[js.Any], opsLimit.asInstanceOf[js.Any], memLimit.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def cryptoPwhashStrVerify(hashed_password: String, password: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str_verify")(hashed_password.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def cryptoPwhashStrVerify(hashed_password: String, password: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str_verify")(hashed_password.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoPwhashStrVerify(hashed_password: String, password: js.typedarray.Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_pwhash_str_verify")(hashed_password.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def cryptoScalarmult(privateKey: Uint8Array, publicKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult")(privateKey.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoScalarmult(privateKey: Uint8Array, publicKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult")(privateKey.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoScalarmult(privateKey: Uint8Array, publicKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult")(privateKey.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoScalarmult(privateKey: js.typedarray.Uint8Array, publicKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult")(privateKey.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoScalarmult(
+    privateKey: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult")(privateKey.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoScalarmult(
+    privateKey: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult")(privateKey.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_scalarmult_BYTES")
   @js.native
   val cryptoScalarmultBYTES: Double = js.native
   
-  inline def cryptoScalarmultBase(privateKey: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_base")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  inline def cryptoScalarmultBase(privateKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_base")(privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoScalarmultBase(privateKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_base")(privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoScalarmultBase(privateKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_base")(privateKey.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoScalarmultBase(privateKey: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_base")(privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoScalarmultBase(privateKey: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_base")(privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_scalarmult_curve25519_BYTES")
   @js.native
@@ -3271,21 +3565,49 @@ object mod {
   @js.native
   val cryptoScalarmultCurve25519SCALARBYTES: Double = js.native
   
+  inline def cryptoScalarmultEd25519(n: js.typedarray.Uint8Array, p: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519")(n.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoScalarmultEd25519(n: js.typedarray.Uint8Array, p: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519")(n.asInstanceOf[js.Any], p.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoScalarmultEd25519(n: js.typedarray.Uint8Array, p: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519")(n.asInstanceOf[js.Any], p.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
   @JSImport("libsodium-wrappers-sumo", "crypto_scalarmult_ed25519_BYTES")
   @js.native
   val cryptoScalarmultEd25519BYTES: Double = js.native
+  
+  inline def cryptoScalarmultEd25519Base(scalar: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519_base")(scalar.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoScalarmultEd25519Base(scalar: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519_base")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoScalarmultEd25519Base(scalar: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519_base")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def cryptoScalarmultEd25519BaseNoclamp(scalar: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519_base_noclamp")(scalar.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoScalarmultEd25519BaseNoclamp(scalar: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519_base_noclamp")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoScalarmultEd25519BaseNoclamp(scalar: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519_base_noclamp")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def cryptoScalarmultEd25519Noclamp(n: js.typedarray.Uint8Array, p: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519_noclamp")(n.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoScalarmultEd25519Noclamp(n: js.typedarray.Uint8Array, p: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519_noclamp")(n.asInstanceOf[js.Any], p.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoScalarmultEd25519Noclamp(n: js.typedarray.Uint8Array, p: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ed25519_noclamp")(n.asInstanceOf[js.Any], p.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_scalarmult_ed25519_SCALARBYTES")
   @js.native
   val cryptoScalarmultEd25519SCALARBYTES: Double = js.native
   
-  inline def cryptoScalarmultRistretto255(scalar: Uint8Array, point: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ristretto255")(scalar.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoScalarmultRistretto255(scalar: js.typedarray.Uint8Array, element: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ristretto255")(scalar.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoScalarmultRistretto255(
+    scalar: js.typedarray.Uint8Array,
+    element: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ristretto255")(scalar.asInstanceOf[js.Any], element.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoScalarmultRistretto255(
+    scalar: js.typedarray.Uint8Array,
+    element: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ristretto255")(scalar.asInstanceOf[js.Any], element.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_scalarmult_ristretto255_BYTES")
   @js.native
   val cryptoScalarmultRistretto255BYTES: Double = js.native
   
-  inline def cryptoScalarmultRistretto255Base(scalar: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ristretto255_base")(scalar.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoScalarmultRistretto255Base(scalar: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ristretto255_base")(scalar.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoScalarmultRistretto255Base(scalar: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ristretto255_base")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoScalarmultRistretto255Base(scalar: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_scalarmult_ristretto255_base")(scalar.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_scalarmult_ristretto255_SCALARBYTES")
   @js.native
@@ -3295,27 +3617,67 @@ object mod {
   @js.native
   val cryptoScalarmultSCALARBYTES: Double = js.native
   
-  inline def cryptoSecretboxDetached(message: String, nonce: Uint8Array, key: Uint8Array): SecretBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[SecretBox]
-  inline def cryptoSecretboxDetached(message: String, nonce: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): StringSecretBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringSecretBox]
-  inline def cryptoSecretboxDetached(message: String, nonce: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): SecretBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[SecretBox]
-  inline def cryptoSecretboxDetached(message: Uint8Array, nonce: Uint8Array, key: Uint8Array): SecretBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[SecretBox]
-  inline def cryptoSecretboxDetached(message: Uint8Array, nonce: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): StringSecretBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringSecretBox]
-  inline def cryptoSecretboxDetached(message: Uint8Array, nonce: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): SecretBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[SecretBox]
+  inline def cryptoSecretboxDetached(message: String, nonce: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): SecretBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[SecretBox]
+  inline def cryptoSecretboxDetached(
+    message: String,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringSecretBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringSecretBox]
+  inline def cryptoSecretboxDetached(
+    message: String,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): SecretBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[SecretBox]
+  inline def cryptoSecretboxDetached(message: js.typedarray.Uint8Array, nonce: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): SecretBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[SecretBox]
+  inline def cryptoSecretboxDetached(
+    message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringSecretBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringSecretBox]
+  inline def cryptoSecretboxDetached(
+    message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): SecretBox = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_detached")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[SecretBox]
   
-  inline def cryptoSecretboxEasy(message: String, nonce: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSecretboxEasy(message: String, nonce: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSecretboxEasy(message: String, nonce: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSecretboxEasy(message: Uint8Array, nonce: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSecretboxEasy(message: Uint8Array, nonce: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSecretboxEasy(message: Uint8Array, nonce: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoSecretboxEasy(message: String, nonce: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSecretboxEasy(
+    message: String,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSecretboxEasy(
+    message: String,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSecretboxEasy(message: js.typedarray.Uint8Array, nonce: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSecretboxEasy(
+    message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSecretboxEasy(
+    message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_easy")(message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_secretbox_KEYBYTES")
   @js.native
   val cryptoSecretboxKEYBYTES: Double = js.native
   
-  inline def cryptoSecretboxKeygen(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_keygen")().asInstanceOf[Uint8Array]
+  inline def cryptoSecretboxKeygen(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_keygen")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoSecretboxKeygen(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoSecretboxKeygen(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoSecretboxKeygen(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_secretbox_MACBYTES")
   @js.native
@@ -3329,43 +3691,77 @@ object mod {
   @js.native
   val cryptoSecretboxNONCEBYTES: Double = js.native
   
-  inline def cryptoSecretboxOpenDetached(ciphertext: String, mac: Uint8Array, nonce: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   inline def cryptoSecretboxOpenDetached(
     ciphertext: String,
-    mac: Uint8Array,
-    nonce: Uint8Array,
-    key: Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSecretboxOpenDetached(
+    ciphertext: String,
+    mac: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoSecretboxOpenDetached(
     ciphertext: String,
-    mac: Uint8Array,
-    nonce: Uint8Array,
-    key: Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSecretboxOpenDetached(ciphertext: Uint8Array, mac: Uint8Array, nonce: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoSecretboxOpenDetached(
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSecretboxOpenDetached(
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoSecretboxOpenDetached(
-    ciphertext: Uint8Array,
-    mac: Uint8Array,
-    nonce: Uint8Array,
-    key: Uint8Array,
+    ciphertext: js.typedarray.Uint8Array,
+    mac: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_detached")(ciphertext.asInstanceOf[js.Any], mac.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoSecretboxOpenEasy(ciphertext: String, nonce: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSecretboxOpenEasy(ciphertext: String, nonce: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSecretboxOpenEasy(ciphertext: String, nonce: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSecretboxOpenEasy(ciphertext: Uint8Array, nonce: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSecretboxOpenEasy(ciphertext: Uint8Array, nonce: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSecretboxOpenEasy(ciphertext: Uint8Array, nonce: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoSecretboxOpenEasy(ciphertext: String, nonce: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSecretboxOpenEasy(
+    ciphertext: String,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSecretboxOpenEasy(
+    ciphertext: String,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSecretboxOpenEasy(
+    ciphertext: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSecretboxOpenEasy(
+    ciphertext: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSecretboxOpenEasy(
+    ciphertext: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretbox_open_easy")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_secretbox_xchacha20poly1305_KEYBYTES")
   @js.native
@@ -3407,19 +3803,19 @@ object mod {
   @js.native
   val cryptoSecretstreamXchacha20poly1305HEADERBYTES: Double = js.native
   
-  inline def cryptoSecretstreamXchacha20poly1305InitPull(header: Uint8Array, key: Uint8Array): StateAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_init_pull")(header.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[StateAddress]
+  inline def cryptoSecretstreamXchacha20poly1305InitPull(header: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): StateAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_init_pull")(header.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[StateAddress]
   
-  inline def cryptoSecretstreamXchacha20poly1305InitPush(key: Uint8Array): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_init_push")(key.asInstanceOf[js.Any]).asInstanceOf[Header]
-  inline def cryptoSecretstreamXchacha20poly1305InitPush(key: Uint8Array, outputFormat: StringOutputFormat): State = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_init_push")(key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[State]
-  inline def cryptoSecretstreamXchacha20poly1305InitPush(key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Header = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_init_push")(key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Header]
+  inline def cryptoSecretstreamXchacha20poly1305InitPush(key: js.typedarray.Uint8Array): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_init_push")(key.asInstanceOf[js.Any]).asInstanceOf[Header]
+  inline def cryptoSecretstreamXchacha20poly1305InitPush(key: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): State = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_init_push")(key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[State]
+  inline def cryptoSecretstreamXchacha20poly1305InitPush(key: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): Header = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_init_push")(key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Header]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_secretstream_xchacha20poly1305_KEYBYTES")
   @js.native
   val cryptoSecretstreamXchacha20poly1305KEYBYTES: Double = js.native
   
-  inline def cryptoSecretstreamXchacha20poly1305Keygen(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_keygen")().asInstanceOf[Uint8Array]
+  inline def cryptoSecretstreamXchacha20poly1305Keygen(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_keygen")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoSecretstreamXchacha20poly1305Keygen(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoSecretstreamXchacha20poly1305Keygen(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoSecretstreamXchacha20poly1305Keygen(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_secretstream_xchacha20poly1305_MESSAGEBYTES_MAX")
   @js.native
@@ -3429,29 +3825,69 @@ object mod {
   inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: String, ad: String): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
   inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: String, ad: String, outputFormat: StringOutputFormat): StringMessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringMessageTag]
   inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: String, ad: String, outputFormat: Uint8ArrayOutputFormat): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
+  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: String, ad: js.typedarray.Uint8Array): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
+  inline def cryptoSecretstreamXchacha20poly1305Pull(
+    state_address: StateAddress,
+    cipher: String,
+    ad: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringMessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringMessageTag]
+  inline def cryptoSecretstreamXchacha20poly1305Pull(
+    state_address: StateAddress,
+    cipher: String,
+    ad: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
   inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: String, ad: Null, outputFormat: StringOutputFormat): StringMessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringMessageTag]
   inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: String, ad: Null, outputFormat: Uint8ArrayOutputFormat): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
   inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: String, ad: Unit, outputFormat: Uint8ArrayOutputFormat): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
-  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: String, ad: Uint8Array): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
-  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: String, ad: Uint8Array, outputFormat: StringOutputFormat): StringMessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringMessageTag]
-  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: String, ad: Uint8Array, outputFormat: Uint8ArrayOutputFormat): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
-  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: Uint8Array): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
-  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: Uint8Array, ad: String): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
-  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: Uint8Array, ad: String, outputFormat: StringOutputFormat): StringMessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringMessageTag]
-  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: Uint8Array, ad: String, outputFormat: Uint8ArrayOutputFormat): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
-  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: Uint8Array, ad: Null, outputFormat: StringOutputFormat): StringMessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringMessageTag]
-  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: Uint8Array, ad: Null, outputFormat: Uint8ArrayOutputFormat): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
-  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: Uint8Array, ad: Unit, outputFormat: Uint8ArrayOutputFormat): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
-  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: Uint8Array, ad: Uint8Array): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
-  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: Uint8Array, ad: Uint8Array, outputFormat: StringOutputFormat): StringMessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringMessageTag]
+  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: js.typedarray.Uint8Array): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
+  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: js.typedarray.Uint8Array, ad: String): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
   inline def cryptoSecretstreamXchacha20poly1305Pull(
     state_address: StateAddress,
-    cipher: Uint8Array,
-    ad: Uint8Array,
+    cipher: js.typedarray.Uint8Array,
+    ad: String,
+    outputFormat: StringOutputFormat
+  ): StringMessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringMessageTag]
+  inline def cryptoSecretstreamXchacha20poly1305Pull(
+    state_address: StateAddress,
+    cipher: js.typedarray.Uint8Array,
+    ad: String,
+    outputFormat: Uint8ArrayOutputFormat
+  ): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
+  inline def cryptoSecretstreamXchacha20poly1305Pull(state_address: StateAddress, cipher: js.typedarray.Uint8Array, ad: js.typedarray.Uint8Array): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
+  inline def cryptoSecretstreamXchacha20poly1305Pull(
+    state_address: StateAddress,
+    cipher: js.typedarray.Uint8Array,
+    ad: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): StringMessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringMessageTag]
+  inline def cryptoSecretstreamXchacha20poly1305Pull(
+    state_address: StateAddress,
+    cipher: js.typedarray.Uint8Array,
+    ad: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
+  inline def cryptoSecretstreamXchacha20poly1305Pull(
+    state_address: StateAddress,
+    cipher: js.typedarray.Uint8Array,
+    ad: Null,
+    outputFormat: StringOutputFormat
+  ): StringMessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringMessageTag]
+  inline def cryptoSecretstreamXchacha20poly1305Pull(
+    state_address: StateAddress,
+    cipher: js.typedarray.Uint8Array,
+    ad: Null,
+    outputFormat: Uint8ArrayOutputFormat
+  ): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
+  inline def cryptoSecretstreamXchacha20poly1305Pull(
+    state_address: StateAddress,
+    cipher: js.typedarray.Uint8Array,
+    ad: Unit,
     outputFormat: Uint8ArrayOutputFormat
   ): MessageTag = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_pull")(state_address.asInstanceOf[js.Any], cipher.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[MessageTag]
   
-  inline def cryptoSecretstreamXchacha20poly1305Push(state_address: StateAddress, message_chunk: String, ad: String, tag: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoSecretstreamXchacha20poly1305Push(state_address: StateAddress, message_chunk: String, ad: String, tag: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoSecretstreamXchacha20poly1305Push(
     state_address: StateAddress,
     message_chunk: String,
@@ -3465,8 +3901,23 @@ object mod {
     ad: String,
     tag: Double,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSecretstreamXchacha20poly1305Push(state_address: StateAddress, message_chunk: String, ad: Null, tag: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSecretstreamXchacha20poly1305Push(state_address: StateAddress, message_chunk: String, ad: js.typedarray.Uint8Array, tag: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSecretstreamXchacha20poly1305Push(
+    state_address: StateAddress,
+    message_chunk: String,
+    ad: js.typedarray.Uint8Array,
+    tag: Double,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSecretstreamXchacha20poly1305Push(
+    state_address: StateAddress,
+    message_chunk: String,
+    ad: js.typedarray.Uint8Array,
+    tag: Double,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSecretstreamXchacha20poly1305Push(state_address: StateAddress, message_chunk: String, ad: Null, tag: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoSecretstreamXchacha20poly1305Push(
     state_address: StateAddress,
     message_chunk: String,
@@ -3480,67 +3931,57 @@ object mod {
     ad: Null,
     tag: Double,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSecretstreamXchacha20poly1305Push(state_address: StateAddress, message_chunk: String, ad: Uint8Array, tag: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSecretstreamXchacha20poly1305Push(state_address: StateAddress, message_chunk: js.typedarray.Uint8Array, ad: String, tag: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoSecretstreamXchacha20poly1305Push(
     state_address: StateAddress,
-    message_chunk: String,
-    ad: Uint8Array,
-    tag: Double,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSecretstreamXchacha20poly1305Push(
-    state_address: StateAddress,
-    message_chunk: String,
-    ad: Uint8Array,
-    tag: Double,
-    outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSecretstreamXchacha20poly1305Push(state_address: StateAddress, message_chunk: Uint8Array, ad: String, tag: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSecretstreamXchacha20poly1305Push(
-    state_address: StateAddress,
-    message_chunk: Uint8Array,
+    message_chunk: js.typedarray.Uint8Array,
     ad: String,
     tag: Double,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoSecretstreamXchacha20poly1305Push(
     state_address: StateAddress,
-    message_chunk: Uint8Array,
+    message_chunk: js.typedarray.Uint8Array,
     ad: String,
     tag: Double,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSecretstreamXchacha20poly1305Push(state_address: StateAddress, message_chunk: Uint8Array, ad: Null, tag: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoSecretstreamXchacha20poly1305Push(
     state_address: StateAddress,
-    message_chunk: Uint8Array,
+    message_chunk: js.typedarray.Uint8Array,
+    ad: js.typedarray.Uint8Array,
+    tag: Double
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSecretstreamXchacha20poly1305Push(
+    state_address: StateAddress,
+    message_chunk: js.typedarray.Uint8Array,
+    ad: js.typedarray.Uint8Array,
+    tag: Double,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSecretstreamXchacha20poly1305Push(
+    state_address: StateAddress,
+    message_chunk: js.typedarray.Uint8Array,
+    ad: js.typedarray.Uint8Array,
+    tag: Double,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSecretstreamXchacha20poly1305Push(state_address: StateAddress, message_chunk: js.typedarray.Uint8Array, ad: Null, tag: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSecretstreamXchacha20poly1305Push(
+    state_address: StateAddress,
+    message_chunk: js.typedarray.Uint8Array,
     ad: Null,
     tag: Double,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoSecretstreamXchacha20poly1305Push(
     state_address: StateAddress,
-    message_chunk: Uint8Array,
+    message_chunk: js.typedarray.Uint8Array,
     ad: Null,
     tag: Double,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSecretstreamXchacha20poly1305Push(state_address: StateAddress, message_chunk: Uint8Array, ad: Uint8Array, tag: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSecretstreamXchacha20poly1305Push(
-    state_address: StateAddress,
-    message_chunk: Uint8Array,
-    ad: Uint8Array,
-    tag: Double,
-    outputFormat: StringOutputFormat
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSecretstreamXchacha20poly1305Push(
-    state_address: StateAddress,
-    message_chunk: Uint8Array,
-    ad: Uint8Array,
-    tag: Double,
-    outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_push")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any], ad.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   inline def cryptoSecretstreamXchacha20poly1305Rekey(state_address: StateAddress): `true` = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_secretstream_xchacha20poly1305_rekey")(state_address.asInstanceOf[js.Any]).asInstanceOf[`true`]
   
@@ -3560,12 +4001,16 @@ object mod {
   @js.native
   val cryptoSecretstreamXchacha20poly1305TAGREKEY: Double = js.native
   
-  inline def cryptoShorthash(message: String, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoShorthash(message: String, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoShorthash(message: String, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoShorthash(message: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoShorthash(message: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoShorthash(message: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoShorthash(message: String, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoShorthash(message: String, key: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoShorthash(message: String, key: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoShorthash(message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoShorthash(message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoShorthash(
+    message: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_shorthash_BYTES")
   @js.native
@@ -3575,9 +4020,9 @@ object mod {
   @js.native
   val cryptoShorthashKEYBYTES: Double = js.native
   
-  inline def cryptoShorthashKeygen(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_keygen")().asInstanceOf[Uint8Array]
+  inline def cryptoShorthashKeygen(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_keygen")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoShorthashKeygen(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoShorthashKeygen(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoShorthashKeygen(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_shorthash_siphash24_BYTES")
   @js.native
@@ -3587,12 +4032,16 @@ object mod {
   @js.native
   val cryptoShorthashSiphash24KEYBYTES: Double = js.native
   
-  inline def cryptoShorthashSiphashx24(message: String, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_siphashx24")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoShorthashSiphashx24(message: String, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_siphashx24")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoShorthashSiphashx24(message: String, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_siphashx24")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoShorthashSiphashx24(message: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_siphashx24")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoShorthashSiphashx24(message: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_siphashx24")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoShorthashSiphashx24(message: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_siphashx24")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoShorthashSiphashx24(message: String, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_siphashx24")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoShorthashSiphashx24(message: String, key: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_siphashx24")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoShorthashSiphashx24(message: String, key: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_siphashx24")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoShorthashSiphashx24(message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_siphashx24")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoShorthashSiphashx24(message: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_siphashx24")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoShorthashSiphashx24(
+    message: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_shorthash_siphashx24")(message.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_shorthash_siphashx24_BYTES")
   @js.native
@@ -3602,23 +4051,39 @@ object mod {
   @js.native
   val cryptoShorthashSiphashx24KEYBYTES: Double = js.native
   
-  inline def cryptoSign(message: String, privateKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSign(message: String, privateKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSign(message: String, privateKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSign(message: Uint8Array, privateKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSign(message: Uint8Array, privateKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSign(message: Uint8Array, privateKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoSign(message: String, privateKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSign(message: String, privateKey: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSign(message: String, privateKey: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSign(message: js.typedarray.Uint8Array, privateKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSign(
+    message: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSign(
+    message: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_sign_BYTES")
   @js.native
   val cryptoSignBYTES: Double = js.native
   
-  inline def cryptoSignDetached(message: String, privateKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_detached")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSignDetached(message: String, privateKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_detached")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSignDetached(message: String, privateKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_detached")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSignDetached(message: Uint8Array, privateKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_detached")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSignDetached(message: Uint8Array, privateKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_detached")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSignDetached(message: Uint8Array, privateKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_detached")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoSignDetached(message: String, privateKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_detached")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSignDetached(message: String, privateKey: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_detached")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSignDetached(message: String, privateKey: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_detached")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSignDetached(message: js.typedarray.Uint8Array, privateKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_detached")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSignDetached(
+    message: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_detached")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSignDetached(
+    message: js.typedarray.Uint8Array,
+    privateKey: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_detached")(message.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_sign_ed25519_BYTES")
   @js.native
@@ -3632,9 +4097,9 @@ object mod {
   @js.native
   val cryptoSignEd25519PUBLICKEYBYTES: Double = js.native
   
-  inline def cryptoSignEd25519PkToCurve25519(edPk: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_pk_to_curve25519")(edPk.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  inline def cryptoSignEd25519PkToCurve25519(edPk: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_pk_to_curve25519")(edPk.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSignEd25519PkToCurve25519(edPk: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_pk_to_curve25519")(edPk.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoSignEd25519PkToCurve25519(edPk: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_pk_to_curve25519")(edPk.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSignEd25519PkToCurve25519(edPk: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_pk_to_curve25519")(edPk.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSignEd25519PkToCurve25519(edPk: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_pk_to_curve25519")(edPk.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_sign_ed25519_SECRETKEYBYTES")
   @js.native
@@ -3644,23 +4109,35 @@ object mod {
   @js.native
   val cryptoSignEd25519SEEDBYTES: Double = js.native
   
-  inline def cryptoSignEd25519SkToCurve25519(edSk: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_curve25519")(edSk.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  inline def cryptoSignEd25519SkToCurve25519(edSk: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_curve25519")(edSk.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSignEd25519SkToCurve25519(edSk: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_curve25519")(edSk.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoSignEd25519SkToCurve25519(edSk: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_curve25519")(edSk.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSignEd25519SkToCurve25519(edSk: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_curve25519")(edSk.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSignEd25519SkToCurve25519(edSk: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_curve25519")(edSk.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoSignEd25519SkToPk(privateKey: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_pk")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  inline def cryptoSignEd25519SkToPk(privateKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_pk")(privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSignEd25519SkToPk(privateKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_pk")(privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoSignEd25519SkToPk(privateKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_pk")(privateKey.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSignEd25519SkToPk(privateKey: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_pk")(privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSignEd25519SkToPk(privateKey: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_pk")(privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoSignEd25519SkToSeed(privateKey: Uint8Array): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_seed")(privateKey.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  inline def cryptoSignEd25519SkToSeed(privateKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_seed")(privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSignEd25519SkToSeed(privateKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_seed")(privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoSignEd25519SkToSeed(privateKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_seed")(privateKey.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSignEd25519SkToSeed(privateKey: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_seed")(privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSignEd25519SkToSeed(privateKey: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_ed25519_sk_to_seed")(privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoSignFinalCreate(state_address: StateAddress, privateKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_final_create")(state_address.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSignFinalCreate(state_address: StateAddress, privateKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_final_create")(state_address.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSignFinalCreate(state_address: StateAddress, privateKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_final_create")(state_address.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoSignFinalCreate(state_address: StateAddress, privateKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_final_create")(state_address.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSignFinalCreate(
+    state_address: StateAddress,
+    privateKey: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_final_create")(state_address.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSignFinalCreate(
+    state_address: StateAddress,
+    privateKey: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_final_create")(state_address.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoSignFinalVerify(state_address: StateAddress, signature: Uint8Array, publicKey: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_final_verify")(state_address.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoSignFinalVerify(
+    state_address: StateAddress,
+    signature: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_final_verify")(state_address.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def cryptoSignInit(): StateAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_init")().asInstanceOf[StateAddress]
   
@@ -3672,12 +4149,20 @@ object mod {
   @js.native
   val cryptoSignMESSAGEBYTESMAX: Double = js.native
   
-  inline def cryptoSignOpen(signedMessage: String, publicKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_open")(signedMessage.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSignOpen(signedMessage: String, publicKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_open")(signedMessage.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSignOpen(signedMessage: String, publicKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_open")(signedMessage.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSignOpen(signedMessage: Uint8Array, publicKey: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_open")(signedMessage.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoSignOpen(signedMessage: Uint8Array, publicKey: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_open")(signedMessage.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoSignOpen(signedMessage: Uint8Array, publicKey: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_open")(signedMessage.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoSignOpen(signedMessage: String, publicKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_open")(signedMessage.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSignOpen(signedMessage: String, publicKey: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_open")(signedMessage.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSignOpen(signedMessage: String, publicKey: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_open")(signedMessage.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSignOpen(signedMessage: js.typedarray.Uint8Array, publicKey: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_open")(signedMessage.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoSignOpen(
+    signedMessage: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_open")(signedMessage.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoSignOpen(
+    signedMessage: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_open")(signedMessage.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_sign_PUBLICKEYBYTES")
   @js.native
@@ -3691,19 +4176,33 @@ object mod {
   @js.native
   val cryptoSignSEEDBYTES: Double = js.native
   
-  inline def cryptoSignSeedKeypair(seed: Uint8Array): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_seed_keypair")(seed.asInstanceOf[js.Any]).asInstanceOf[KeyPair]
-  inline def cryptoSignSeedKeypair(seed: Uint8Array, outputFormat: StringOutputFormat): StringKeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_seed_keypair")(seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringKeyPair]
-  inline def cryptoSignSeedKeypair(seed: Uint8Array, outputFormat: Uint8ArrayOutputFormat): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_seed_keypair")(seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+  inline def cryptoSignSeedKeypair(seed: js.typedarray.Uint8Array): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_seed_keypair")(seed.asInstanceOf[js.Any]).asInstanceOf[KeyPair]
+  inline def cryptoSignSeedKeypair(seed: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): StringKeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_seed_keypair")(seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[StringKeyPair]
+  inline def cryptoSignSeedKeypair(seed: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_seed_keypair")(seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
   
   inline def cryptoSignUpdate(state_address: StateAddress, message_chunk: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_update")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def cryptoSignUpdate(state_address: StateAddress, message_chunk: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_update")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def cryptoSignUpdate(state_address: StateAddress, message_chunk: js.typedarray.Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_update")(state_address.asInstanceOf[js.Any], message_chunk.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def cryptoSignVerifyDetached(signature: Uint8Array, message: String, publicKey: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_verify_detached")(signature.asInstanceOf[js.Any], message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def cryptoSignVerifyDetached(signature: Uint8Array, message: Uint8Array, publicKey: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_verify_detached")(signature.asInstanceOf[js.Any], message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoSignVerifyDetached(signature: js.typedarray.Uint8Array, message: String, publicKey: js.typedarray.Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_verify_detached")(signature.asInstanceOf[js.Any], message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cryptoSignVerifyDetached(
+    signature: js.typedarray.Uint8Array,
+    message: js.typedarray.Uint8Array,
+    publicKey: js.typedarray.Uint8Array
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_sign_verify_detached")(signature.asInstanceOf[js.Any], message.asInstanceOf[js.Any], publicKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def cryptoStreamChacha20(outLength: Double, key: Uint8Array, nonce: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20")(outLength.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoStreamChacha20(outLength: Double, key: Uint8Array, nonce: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20")(outLength.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoStreamChacha20(outLength: Double, key: Uint8Array, nonce: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20")(outLength.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def cryptoStreamChacha20(outLength: Double, key: js.typedarray.Uint8Array, nonce: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20")(outLength.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoStreamChacha20(
+    outLength: Double,
+    key: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20")(outLength.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoStreamChacha20(
+    outLength: Double,
+    key: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20")(outLength.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_stream_chacha20_ietf_KEYBYTES")
   @js.native
@@ -3717,56 +4216,85 @@ object mod {
   @js.native
   val cryptoStreamChacha20IetfNONCEBYTES: Double = js.native
   
-  inline def cryptoStreamChacha20IetfXor(input_message: String, nonce: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoStreamChacha20IetfXor(input_message: String, nonce: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoStreamChacha20IetfXor(input_message: String, nonce: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoStreamChacha20IetfXor(input_message: Uint8Array, nonce: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoStreamChacha20IetfXor(input_message: Uint8Array, nonce: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoStreamChacha20IetfXor(input_message: String, nonce: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoStreamChacha20IetfXor(
-    input_message: Uint8Array,
-    nonce: Uint8Array,
-    key: Uint8Array,
+    input_message: String,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoStreamChacha20IetfXor(
+    input_message: String,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoStreamChacha20IetfXor(
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoStreamChacha20IetfXor(
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoStreamChacha20IetfXor(
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoStreamChacha20IetfXorIc(input_message: String, nonce: Uint8Array, nonce_increment: Double, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   inline def cryptoStreamChacha20IetfXorIc(
     input_message: String,
-    nonce: Uint8Array,
+    nonce: js.typedarray.Uint8Array,
     nonce_increment: Double,
-    key: Uint8Array,
+    key: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoStreamChacha20IetfXorIc(
+    input_message: String,
+    nonce: js.typedarray.Uint8Array,
+    nonce_increment: Double,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoStreamChacha20IetfXorIc(
     input_message: String,
-    nonce: Uint8Array,
+    nonce: js.typedarray.Uint8Array,
     nonce_increment: Double,
-    key: Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoStreamChacha20IetfXorIc(input_message: Uint8Array, nonce: Uint8Array, nonce_increment: Double, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoStreamChacha20IetfXorIc(
-    input_message: Uint8Array,
-    nonce: Uint8Array,
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
     nonce_increment: Double,
-    key: Uint8Array,
+    key: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoStreamChacha20IetfXorIc(
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    nonce_increment: Double,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoStreamChacha20IetfXorIc(
-    input_message: Uint8Array,
-    nonce: Uint8Array,
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
     nonce_increment: Double,
-    key: Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_ietf_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_stream_chacha20_KEYBYTES")
   @js.native
   val cryptoStreamChacha20KEYBYTES: Double = js.native
   
-  inline def cryptoStreamChacha20Keygen(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_keygen")().asInstanceOf[Uint8Array]
+  inline def cryptoStreamChacha20Keygen(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_keygen")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoStreamChacha20Keygen(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoStreamChacha20Keygen(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoStreamChacha20Keygen(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_stream_chacha20_MESSAGEBYTES_MAX")
   @js.native
@@ -3776,56 +4304,85 @@ object mod {
   @js.native
   val cryptoStreamChacha20NONCEBYTES: Double = js.native
   
-  inline def cryptoStreamChacha20Xor(input_message: String, nonce: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoStreamChacha20Xor(input_message: String, nonce: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoStreamChacha20Xor(input_message: String, nonce: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoStreamChacha20Xor(input_message: Uint8Array, nonce: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoStreamChacha20Xor(input_message: Uint8Array, nonce: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoStreamChacha20Xor(input_message: String, nonce: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoStreamChacha20Xor(
-    input_message: Uint8Array,
-    nonce: Uint8Array,
-    key: Uint8Array,
+    input_message: String,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoStreamChacha20Xor(
+    input_message: String,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoStreamChacha20Xor(
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoStreamChacha20Xor(
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoStreamChacha20Xor(
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoStreamChacha20XorIc(input_message: String, nonce: Uint8Array, nonce_increment: Double, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   inline def cryptoStreamChacha20XorIc(
     input_message: String,
-    nonce: Uint8Array,
+    nonce: js.typedarray.Uint8Array,
     nonce_increment: Double,
-    key: Uint8Array,
+    key: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoStreamChacha20XorIc(
+    input_message: String,
+    nonce: js.typedarray.Uint8Array,
+    nonce_increment: Double,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoStreamChacha20XorIc(
     input_message: String,
-    nonce: Uint8Array,
+    nonce: js.typedarray.Uint8Array,
     nonce_increment: Double,
-    key: Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoStreamChacha20XorIc(input_message: Uint8Array, nonce: Uint8Array, nonce_increment: Double, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoStreamChacha20XorIc(
-    input_message: Uint8Array,
-    nonce: Uint8Array,
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
     nonce_increment: Double,
-    key: Uint8Array,
+    key: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoStreamChacha20XorIc(
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    nonce_increment: Double,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoStreamChacha20XorIc(
-    input_message: Uint8Array,
-    nonce: Uint8Array,
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
     nonce_increment: Double,
-    key: Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_chacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_stream_KEYBYTES")
   @js.native
   val cryptoStreamKEYBYTES: Double = js.native
   
-  inline def cryptoStreamKeygen(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_keygen")().asInstanceOf[Uint8Array]
+  inline def cryptoStreamKeygen(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_keygen")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoStreamKeygen(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoStreamKeygen(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoStreamKeygen(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_stream_MESSAGEBYTES_MAX")
   @js.native
@@ -3875,9 +4432,9 @@ object mod {
   @js.native
   val cryptoStreamXchacha20KEYBYTES: Double = js.native
   
-  inline def cryptoStreamXchacha20Keygen(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_keygen")().asInstanceOf[Uint8Array]
+  inline def cryptoStreamXchacha20Keygen(): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_keygen")().asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoStreamXchacha20Keygen(outputFormat: StringOutputFormat): String = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def cryptoStreamXchacha20Keygen(outputFormat: Uint8ArrayOutputFormat): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def cryptoStreamXchacha20Keygen(outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_keygen")(outputFormat.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_stream_xchacha20_MESSAGEBYTES_MAX")
   @js.native
@@ -3887,48 +4444,77 @@ object mod {
   @js.native
   val cryptoStreamXchacha20NONCEBYTES: Double = js.native
   
-  inline def cryptoStreamXchacha20Xor(input_message: String, nonce: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoStreamXchacha20Xor(input_message: String, nonce: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def cryptoStreamXchacha20Xor(input_message: String, nonce: Uint8Array, key: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoStreamXchacha20Xor(input_message: Uint8Array, nonce: Uint8Array, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoStreamXchacha20Xor(input_message: Uint8Array, nonce: Uint8Array, key: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoStreamXchacha20Xor(input_message: String, nonce: js.typedarray.Uint8Array, key: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoStreamXchacha20Xor(
-    input_message: Uint8Array,
-    nonce: Uint8Array,
-    key: Uint8Array,
+    input_message: String,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoStreamXchacha20Xor(
+    input_message: String,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoStreamXchacha20Xor(
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoStreamXchacha20Xor(
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: StringOutputFormat
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def cryptoStreamXchacha20Xor(
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    key: js.typedarray.Uint8Array,
+    outputFormat: Uint8ArrayOutputFormat
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def cryptoStreamXchacha20XorIc(input_message: String, nonce: Uint8Array, nonce_increment: Double, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   inline def cryptoStreamXchacha20XorIc(
     input_message: String,
-    nonce: Uint8Array,
+    nonce: js.typedarray.Uint8Array,
     nonce_increment: Double,
-    key: Uint8Array,
+    key: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoStreamXchacha20XorIc(
+    input_message: String,
+    nonce: js.typedarray.Uint8Array,
+    nonce_increment: Double,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoStreamXchacha20XorIc(
     input_message: String,
-    nonce: Uint8Array,
+    nonce: js.typedarray.Uint8Array,
     nonce_increment: Double,
-    key: Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def cryptoStreamXchacha20XorIc(input_message: Uint8Array, nonce: Uint8Array, nonce_increment: Double, key: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   inline def cryptoStreamXchacha20XorIc(
-    input_message: Uint8Array,
-    nonce: Uint8Array,
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
     nonce_increment: Double,
-    key: Uint8Array,
+    key: js.typedarray.Uint8Array
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def cryptoStreamXchacha20XorIc(
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
+    nonce_increment: Double,
+    key: js.typedarray.Uint8Array,
     outputFormat: StringOutputFormat
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def cryptoStreamXchacha20XorIc(
-    input_message: Uint8Array,
-    nonce: Uint8Array,
+    input_message: js.typedarray.Uint8Array,
+    nonce: js.typedarray.Uint8Array,
     nonce_increment: Double,
-    key: Uint8Array,
+    key: js.typedarray.Uint8Array,
     outputFormat: Uint8ArrayOutputFormat
-  ): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("crypto_stream_xchacha20_xor_ic")(input_message.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], nonce_increment.asInstanceOf[js.Any], key.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   @JSImport("libsodium-wrappers-sumo", "crypto_stream_xsalsa20_KEYBYTES")
   @js.native
@@ -4006,32 +4592,32 @@ object mod {
   @js.native
   val crypto_StreamChacha20IETFNONCEBYTES: Double = js.native
   
-  inline def fromBase64(input: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("from_base64")(input.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  inline def fromBase64(input: String, variant: base64Variants): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("from_base64")(input.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def fromBase64(input: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("from_base64")(input.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def fromBase64(input: String, variant: base64Variants): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("from_base64")(input.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def fromHex(input: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("from_hex")(input.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def fromHex(input: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("from_hex")(input.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def fromString(str: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("from_string")(str.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def fromString(str: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("from_string")(str.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def increment(bytes: Uint8Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(bytes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def increment(bytes: js.typedarray.Uint8Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(bytes.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def isZero(bytes: Uint8Array): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is_zero")(bytes.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isZero(bytes: js.typedarray.Uint8Array): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is_zero")(bytes.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def memcmp(b1: Uint8Array, b2: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("memcmp")(b1.asInstanceOf[js.Any], b2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def memcmp(b1: js.typedarray.Uint8Array, b2: js.typedarray.Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("memcmp")(b1.asInstanceOf[js.Any], b2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def memzero(bytes: Uint8Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("memzero")(bytes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def memzero(bytes: js.typedarray.Uint8Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("memzero")(bytes.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def outputFormats(): js.Array[Uint8ArrayOutputFormat | StringOutputFormat] = ^.asInstanceOf[js.Dynamic].applyDynamic("output_formats")().asInstanceOf[js.Array[Uint8ArrayOutputFormat | StringOutputFormat]]
   
-  inline def pad(buf: Uint8Array, blocksize: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(buf.asInstanceOf[js.Any], blocksize.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def pad(buf: js.typedarray.Uint8Array, blocksize: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(buf.asInstanceOf[js.Any], blocksize.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def randombytesBuf(length: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_buf")(length.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def randombytesBuf(length: Double): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_buf")(length.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   inline def randombytesBuf(length: Double, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_buf")(length.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def randombytesBuf(length: Double, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_buf")(length.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def randombytesBuf(length: Double, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_buf")(length.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def randombytesBufDeterministic(length: Double, seed: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_buf_deterministic")(length.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
-  inline def randombytesBufDeterministic(length: Double, seed: Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_buf_deterministic")(length.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def randombytesBufDeterministic(length: Double, seed: Uint8Array, outputFormat: Uint8ArrayOutputFormat): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_buf_deterministic")(length.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def randombytesBufDeterministic(length: Double, seed: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_buf_deterministic")(length.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  inline def randombytesBufDeterministic(length: Double, seed: js.typedarray.Uint8Array, outputFormat: StringOutputFormat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_buf_deterministic")(length.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def randombytesBufDeterministic(length: Double, seed: js.typedarray.Uint8Array, outputFormat: Uint8ArrayOutputFormat): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_buf_deterministic")(length.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], outputFormat.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   inline def randombytesClose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("randombytes_close")().asInstanceOf[Unit]
   
@@ -4051,13 +4637,13 @@ object mod {
   
   inline def toBase64(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("to_base64")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def toBase64(input: String, variant: base64Variants): String = (^.asInstanceOf[js.Dynamic].applyDynamic("to_base64")(input.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def toBase64(input: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("to_base64")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def toBase64(input: Uint8Array, variant: base64Variants): String = (^.asInstanceOf[js.Dynamic].applyDynamic("to_base64")(input.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toBase64(input: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("to_base64")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toBase64(input: js.typedarray.Uint8Array, variant: base64Variants): String = (^.asInstanceOf[js.Dynamic].applyDynamic("to_base64")(input.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def toHex(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("to_hex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def toHex(input: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("to_hex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toHex(input: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("to_hex")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def toString(bytes: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("to_string")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toString(bytes: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("to_string")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def unpad(buf: Uint8Array, blocksize: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("unpad")(buf.asInstanceOf[js.Any], blocksize.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def unpad(buf: js.typedarray.Uint8Array, blocksize: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("unpad")(buf.asInstanceOf[js.Any], blocksize.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 }

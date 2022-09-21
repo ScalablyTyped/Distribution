@@ -11,9 +11,9 @@ Switches between unfetch & node-fetch for client & server.
 | Full name          | isomorphic-unfetch |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 439 |
-| # downloads        | 14583429 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 6001382.0 |
+| # stars            | 5351.0 |
 
 ## Links
 - [Homepage](https://github.com/developit/unfetch#readme)

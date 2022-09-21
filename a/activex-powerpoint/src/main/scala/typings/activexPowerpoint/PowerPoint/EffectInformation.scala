@@ -19,7 +19,7 @@ trait EffectInformation extends StObject {
   
   val Dim: ColorFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PlaySettings: typings.activexPowerpoint.PowerPoint.PlaySettings
   
@@ -39,7 +39,7 @@ object EffectInformation {
     Application: Application,
     BuildByLevelEffect: MsoAnimateByLevel,
     Dim: ColorFormat,
-    Parent: js.Any,
+    Parent: Any,
     PlaySettings: PlaySettings,
     PowerPointDotEffectInformation_typekey: EffectInformation,
     SoundEffect: SoundEffect,
@@ -64,7 +64,7 @@ object EffectInformation {
     
     inline def setDim(value: ColorFormat): Self = StObject.set(x, "Dim", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPlaySettings(value: PlaySettings): Self = StObject.set(x, "PlaySettings", value.asInstanceOf[js.Any])
     

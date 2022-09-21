@@ -1,85 +1,130 @@
 package typings.devextreme.mod.DevExpress.data
 
 import typings.devextreme.anon.Filter
-import typings.devextreme.mod.global.JQueryPromise
-import typings.devextreme.mod.global.Promise
+import typings.devextreme.anon.Index
+import typings.devextreme.anon.keyinEventNameFunctionInserted
+import typings.devextreme.mod.DevExpress.core.DeepPartial
+import typings.devextreme.mod.DevExpress.core.utils.DxExtendedPromise
+import typings.devextreme.mod.DevExpress.core.utils.DxPromise
+import typings.devextreme.mod.DevExpress.data.Store.EventName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Store extends StObject {
-  
-  def byKey(key: String): Promise[js.Any] & JQueryPromise[js.Any] = js.native
-  /**
-    * [descr:Store.byKey(key)]
-    */
-  def byKey(key: js.Any): Promise[js.Any] & JQueryPromise[js.Any] = js.native
-  def byKey(key: Double): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+trait Store[TItem, TKey] extends StObject {
   
   /**
-    * [descr:Store.insert(values)]
+    * Gets a data item with a specific key.
     */
-  def insert(values: js.Any): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+  def byKey(key: TKey): DxPromise[TItem] = js.native
+  def byKey(key: TKey, extraOptions: LoadOptions[TItem]): DxPromise[TItem] = js.native
   
   /**
-    * [descr:Store.key()]
+    * Adds a data item to the store.
     */
-  def key(): js.Any = js.native
+  def insert(values: TItem): DxExtendedPromise[TItem] = js.native
   
   /**
-    * [descr:Store.keyOf(obj)]
+    * Gets the key property (or properties) as specified in the key property.
     */
-  def keyOf(obj: js.Any): js.Any = js.native
+  def key(): String | js.Array[String] = js.native
   
   /**
-    * [descr:Store.load()]
+    * Gets a data item&apos;s key value.
     */
-  def load(): Promise[js.Any] & JQueryPromise[js.Any] = js.native
-  /**
-    * [descr:Store.load(options)]
-    */
-  def load(options: LoadOptions): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+  def keyOf(obj: TItem): TKey = js.native
   
   /**
-    * [descr:Store.off(eventName)]
+    * Starts loading data.
     */
-  def off(eventName: String): this.type = js.native
+  def load(): DxExtendedPromise[js.Array[TItem]] = js.native
   /**
-    * [descr:Store.off(eventName, eventHandler)]
+    * Starts loading data.
     */
-  def off(eventName: String, eventHandler: js.Function): this.type = js.native
+  def load(options: LoadOptions[TItem]): DxExtendedPromise[js.Array[TItem]] = js.native
   
   /**
-    * [descr:Store.on(eventName, eventHandler)]
+    * Detaches all event handlers from a single event.
     */
-  def on(eventName: String, eventHandler: js.Function): this.type = js.native
+  def off(eventName: EventName): this.type = js.native
   /**
-    * [descr:Store.on(events)]
+    * Detaches a particular event handler from a single event.
     */
-  def on(events: js.Any): this.type = js.native
+  def off(eventName: EventName, eventHandler: js.Function): this.type = js.native
   
   /**
-    * [descr:Store.push(changes)]
+    * Subscribes to an event.
     */
-  def push(changes: js.Array[js.Any]): Unit = js.native
-  
-  def remove(key: String): Promise[Unit] & JQueryPromise[Unit] = js.native
+  def on(eventName: EventName, eventHandler: js.Function): this.type = js.native
   /**
-    * [descr:Store.remove(key)]
+    * Subscribes to events.
     */
-  def remove(key: js.Any): Promise[Unit] & JQueryPromise[Unit] = js.native
-  def remove(key: Double): Promise[Unit] & JQueryPromise[Unit] = js.native
+  def on(events: keyinEventNameFunctionInserted): this.type = js.native
   
   /**
-    * [descr:Store.totalCount(options)]
+    * Pushes data changes to the store and notifies the DataSource.
     */
-  def totalCount(obj: Filter): Promise[Double] & JQueryPromise[Double] = js.native
+  def push(changes: js.Array[Index[TItem, TKey]]): Unit = js.native
   
-  def update(key: String, values: js.Any): Promise[js.Any] & JQueryPromise[js.Any] = js.native
   /**
-    * [descr:Store.update(key, values)]
+    * Removes a data item with a specific key from the store.
     */
-  def update(key: js.Any, values: js.Any): Promise[js.Any] & JQueryPromise[js.Any] = js.native
-  def update(key: Double, values: js.Any): Promise[js.Any] & JQueryPromise[js.Any] = js.native
+  def remove(key: TKey): DxPromise[Unit] = js.native
+  
+  /**
+    * Gets the total count of items the load() function returns.
+    */
+  def totalCount(obj: Filter[TItem]): DxPromise[Double] = js.native
+  
+  /**
+    * Updates a data item with a specific key.
+    */
+  def update(key: TKey, values: DeepPartial[TItem]): DxExtendedPromise[TItem] = js.native
+}
+object Store {
+  
+  /**
+    * @deprecated Attention! This type is for internal purposes only. If you used it previously, please submit a ticket to our {@link https://supportcenter.devexpress.com/ticket/create Support Center}. We will check if there is an alternative solution.
+    */
+  /* Rewritten from type alias, can be one of: 
+    - typings.devextreme.devextremeStrings.loaded
+    - typings.devextreme.devextremeStrings.loading
+    - typings.devextreme.devextremeStrings.inserted
+    - typings.devextreme.devextremeStrings.inserting
+    - typings.devextreme.devextremeStrings.updated
+    - typings.devextreme.devextremeStrings.updating
+    - typings.devextreme.devextremeStrings.push
+    - typings.devextreme.devextremeStrings.removed
+    - typings.devextreme.devextremeStrings.removing
+    - typings.devextreme.devextremeStrings.modified
+    - typings.devextreme.devextremeStrings.modifying
+  */
+  trait EventName extends StObject
+  object EventName {
+    
+    inline def inserted: typings.devextreme.devextremeStrings.inserted = "inserted".asInstanceOf[typings.devextreme.devextremeStrings.inserted]
+    
+    inline def inserting: typings.devextreme.devextremeStrings.inserting = "inserting".asInstanceOf[typings.devextreme.devextremeStrings.inserting]
+    
+    inline def loaded: typings.devextreme.devextremeStrings.loaded = "loaded".asInstanceOf[typings.devextreme.devextremeStrings.loaded]
+    
+    inline def loading: typings.devextreme.devextremeStrings.loading = "loading".asInstanceOf[typings.devextreme.devextremeStrings.loading]
+    
+    inline def modified: typings.devextreme.devextremeStrings.modified = "modified".asInstanceOf[typings.devextreme.devextremeStrings.modified]
+    
+    inline def modifying: typings.devextreme.devextremeStrings.modifying = "modifying".asInstanceOf[typings.devextreme.devextremeStrings.modifying]
+    
+    inline def push: typings.devextreme.devextremeStrings.push = "push".asInstanceOf[typings.devextreme.devextremeStrings.push]
+    
+    inline def removed: typings.devextreme.devextremeStrings.removed = "removed".asInstanceOf[typings.devextreme.devextremeStrings.removed]
+    
+    inline def removing: typings.devextreme.devextremeStrings.removing = "removing".asInstanceOf[typings.devextreme.devextremeStrings.removing]
+    
+    inline def updated: typings.devextreme.devextremeStrings.updated = "updated".asInstanceOf[typings.devextreme.devextremeStrings.updated]
+    
+    inline def updating: typings.devextreme.devextremeStrings.updating = "updating".asInstanceOf[typings.devextreme.devextremeStrings.updating]
+  }
+  
+  type Options[TItem, TKey] = StoreOptions[TItem, TKey]
 }

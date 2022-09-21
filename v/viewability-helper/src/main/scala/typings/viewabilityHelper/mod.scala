@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("viewability-helper", "ViewabilityHelper")
   @js.native
-  class ViewabilityHelper protected () extends StObject {
+  open class ViewabilityHelper protected () extends StObject {
     def this(element: Element, callback: js.Function0[Unit]) = this()
     def this(element: HTMLElement, callback: js.Function0[Unit]) = this()
     def this(element: Element, callback: js.Function0[Unit], options: Options) = this()
@@ -21,7 +21,7 @@ object mod {
   
   trait Options extends StObject {
     
-    var callbackParams: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var callbackParams: js.UndefOr[js.Array[Any]] = js.undefined
     
     var intersectionPercentage: js.UndefOr[Double] = js.undefined
     
@@ -42,11 +42,11 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setCallbackParams(value: js.Array[js.Any]): Self = StObject.set(x, "callbackParams", value.asInstanceOf[js.Any])
+      inline def setCallbackParams(value: js.Array[Any]): Self = StObject.set(x, "callbackParams", value.asInstanceOf[js.Any])
       
       inline def setCallbackParamsUndefined: Self = StObject.set(x, "callbackParams", js.undefined)
       
-      inline def setCallbackParamsVarargs(value: js.Any*): Self = StObject.set(x, "callbackParams", js.Array(value :_*))
+      inline def setCallbackParamsVarargs(value: Any*): Self = StObject.set(x, "callbackParams", js.Array(value*))
       
       inline def setIntersectionPercentage(value: Double): Self = StObject.set(x, "intersectionPercentage", value.asInstanceOf[js.Any])
       
@@ -64,7 +64,7 @@ object mod {
       
       inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
       
-      inline def setThresholdVarargs(value: Double*): Self = StObject.set(x, "threshold", js.Array(value :_*))
+      inline def setThresholdVarargs(value: Double*): Self = StObject.set(x, "threshold", js.Array(value*))
       
       inline def setUnobserve(value: Boolean): Self = StObject.set(x, "unobserve", value.asInstanceOf[js.Any])
       

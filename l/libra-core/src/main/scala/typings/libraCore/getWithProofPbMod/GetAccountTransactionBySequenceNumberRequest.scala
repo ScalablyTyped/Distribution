@@ -6,27 +6,26 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetAccountTransactionBySequenceNumberRequest")
 @js.native
-class GetAccountTransactionBySequenceNumberRequest () extends Message {
+open class GetAccountTransactionBySequenceNumberRequest () extends Message {
   
-  def getAccount(): Uint8Array | String = js.native
+  def getAccount(): js.typedarray.Uint8Array | String = js.native
   
   def getAccount_asB64(): String = js.native
   
-  def getAccount_asU8(): Uint8Array = js.native
+  def getAccount_asU8(): js.typedarray.Uint8Array = js.native
   
   def getFetchEvents(): Boolean = js.native
   
   def getSequenceNumber(): String = js.native
   
   def setAccount(value: String): Unit = js.native
-  def setAccount(value: Uint8Array): Unit = js.native
+  def setAccount(value: js.typedarray.Uint8Array): Unit = js.native
   
   def setFetchEvents(value: Boolean): Unit = js.native
   
@@ -39,7 +38,7 @@ object GetAccountTransactionBySequenceNumberRequest {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): GetAccountTransactionBySequenceNumberRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetAccountTransactionBySequenceNumberRequest]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): GetAccountTransactionBySequenceNumberRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetAccountTransactionBySequenceNumberRequest]
   
   inline def deserializeBinaryFromReader(message: GetAccountTransactionBySequenceNumberRequest, reader: BinaryReader): GetAccountTransactionBySequenceNumberRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetAccountTransactionBySequenceNumberRequest]
   
@@ -60,7 +59,7 @@ object GetAccountTransactionBySequenceNumberRequest {
   
   trait AsObject extends StObject {
     
-    var account: Uint8Array | String
+    var account: js.typedarray.Uint8Array | String
     
     var fetchEvents: Boolean
     
@@ -68,14 +67,14 @@ object GetAccountTransactionBySequenceNumberRequest {
   }
   object AsObject {
     
-    inline def apply(account: Uint8Array | String, fetchEvents: Boolean, sequenceNumber: String): AsObject = {
+    inline def apply(account: js.typedarray.Uint8Array | String, fetchEvents: Boolean, sequenceNumber: String): AsObject = {
       val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], fetchEvents = fetchEvents.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
     }
     
     extension [Self <: AsObject](x: Self) {
       
-      inline def setAccount(value: Uint8Array | String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+      inline def setAccount(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
       inline def setFetchEvents(value: Boolean): Self = StObject.set(x, "fetchEvents", value.asInstanceOf[js.Any])
       

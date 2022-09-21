@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(fn: js.Function1[/* str */ String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(fn: js.Function1[/* str */ String, Any]): Unit = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("stdin", JSImport.Namespace)
   @js.native

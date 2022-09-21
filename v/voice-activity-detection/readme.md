@@ -11,9 +11,9 @@ Mic input activity detection
 | Full name          | voice-activity-detection |
 | Keywords           | voice, voice activity, mic |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 9900 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2831.0 |
+| # stars            | 96.0 |
 
 ## Links
 - [Homepage](https://github.com/Jam3/voice-activity-detection)

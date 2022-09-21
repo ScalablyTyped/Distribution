@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark/dist/client/models", "TemplatesPushRequest")
 @js.native
-class TemplatesPushRequest protected ()
+open class TemplatesPushRequest protected ()
   extends typings.postmark.templateMod.TemplatesPushRequest {
   def this(SourceServerID: Double, DestinationServerID: Double, PerformChanges: Boolean) = this()
 }

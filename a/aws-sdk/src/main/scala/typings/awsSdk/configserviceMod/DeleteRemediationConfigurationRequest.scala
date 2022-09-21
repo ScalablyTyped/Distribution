@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteRemediationConfigurationRequest extends StObject {
   
   /**
-    * The name of the AWS Config rule for which you want to delete remediation configuration.
+    * The name of the Config rule for which you want to delete remediation configuration.
     */
   var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
   

@@ -1,13 +1,16 @@
 package typings.nodeRedNodeTestHelper
 
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.cors.mod.CorsOptions
 import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.node.httpsMod.ServerOptions
+import typings.node.nodeHttpMod.IncomingMessage
+import typings.node.nodeHttpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.nodeRedNodeTestHelper.nodeRedNodeTestHelperBooleans.`false`
 import typings.nodeRedRuntime.anon.Authenticate
 import typings.nodeRedRuntime.anon.Console
@@ -18,6 +21,7 @@ import typings.nodeRedRuntime.anon.Origin
 import typings.nodeRedRuntime.anon.Pass
 import typings.nodeRedRuntime.anon.Path
 import typings.nodeRedRuntime.anon.Strategy
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +54,24 @@ object anon {
       
       inline def setWiresUndefined: Self = StObject.set(x, "wires", js.undefined)
       
-      inline def setWiresVarargs(value: js.Array[String]*): Self = StObject.set(x, "wires", js.Array(value :_*))
+      inline def setWiresVarargs(value: js.Array[String]*): Self = StObject.set(x, "wires", js.Array(value*))
+    }
+  }
+  
+  trait NodeTestHelper extends StObject {
+    
+    var NodeTestHelper: Instantiable0[typings.nodeRedNodeTestHelper.mod.NodeTestHelper]
+  }
+  object NodeTestHelper {
+    
+    inline def apply(NodeTestHelper: Instantiable0[typings.nodeRedNodeTestHelper.mod.NodeTestHelper]): NodeTestHelper = {
+      val __obj = js.Dynamic.literal(NodeTestHelper = NodeTestHelper.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NodeTestHelper]
+    }
+    
+    extension [Self <: NodeTestHelper](x: Self) {
+      
+      inline def setNodeTestHelper(value: Instantiable0[typings.nodeRedNodeTestHelper.mod.NodeTestHelper]): Self = StObject.set(x, "NodeTestHelper", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,8 +110,14 @@ object anon {
     
     var httpNodeMiddleware: js.UndefOr[
         js.Function3[
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-          /* res */ Response_[js.Any], 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          /* res */ Response_[Any, Record[String, Any]], 
           /* next */ NextFunction, 
           Unit
         ]
@@ -108,7 +135,15 @@ object anon {
     
     var httpStaticAuth: js.UndefOr[Pass] = js.undefined
     
-    var https: js.UndefOr[ServerOptions] = js.undefined
+    var https: js.UndefOr[
+        ServerOptions[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[typings.node.httpMod.IncomingMessage]
+          ]
+        ]
+      ] = js.undefined
     
     var logging: js.UndefOr[Console] = js.undefined
     
@@ -225,7 +260,13 @@ object anon {
       inline def setHttpNodeCorsUndefined: Self = StObject.set(x, "httpNodeCors", js.undefined)
       
       inline def setHttpNodeMiddleware(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction) => Unit
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]], /* next */ NextFunction) => Unit
       ): Self = StObject.set(x, "httpNodeMiddleware", js.Any.fromFunction3(value))
       
       inline def setHttpNodeMiddlewareUndefined: Self = StObject.set(x, "httpNodeMiddleware", js.undefined)
@@ -254,7 +295,15 @@ object anon {
       
       inline def setHttpStaticUndefined: Self = StObject.set(x, "httpStatic", js.undefined)
       
-      inline def setHttps(value: ServerOptions): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+      inline def setHttps(
+        value: ServerOptions[
+              Instantiable1[/* socket */ Socket, IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                ServerResponse[typings.node.httpMod.IncomingMessage]
+              ]
+            ]
+      ): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
       
       inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
       
@@ -278,7 +327,7 @@ object anon {
       
       inline def setPaletteCategoriesUndefined: Self = StObject.set(x, "paletteCategories", js.undefined)
       
-      inline def setPaletteCategoriesVarargs(value: String*): Self = StObject.set(x, "paletteCategories", js.Array(value :_*))
+      inline def setPaletteCategoriesVarargs(value: String*): Self = StObject.set(x, "paletteCategories", js.Array(value*))
       
       inline def setSafeMode(value: Boolean): Self = StObject.set(x, "safeMode", value.asInstanceOf[js.Any])
       
@@ -387,7 +436,7 @@ object anon {
       
       inline def setWiresUndefined: Self = StObject.set(x, "wires", js.undefined)
       
-      inline def setWiresVarargs(value: js.Array[String]*): Self = StObject.set(x, "wires", js.Array(value :_*))
+      inline def setWiresVarargs(value: js.Array[String]*): Self = StObject.set(x, "wires", js.Array(value*))
       
       inline def setZ(value: String): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
       

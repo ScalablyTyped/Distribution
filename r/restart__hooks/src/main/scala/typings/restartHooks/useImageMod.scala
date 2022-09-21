@@ -15,25 +15,19 @@ object useImageMod {
   
   inline def default(): State = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[State]
   inline def default(imageOrUrl: String): State = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any]).asInstanceOf[State]
+  inline def default(imageOrUrl: String, crossOrigin: anonymous | `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
   inline def default(imageOrUrl: String, crossOrigin: String): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  inline def default(imageOrUrl: Null, crossOrigin: anonymous | `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
   inline def default(imageOrUrl: Null, crossOrigin: String): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  inline def default(imageOrUrl: Unit, crossOrigin: anonymous | `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
   inline def default(imageOrUrl: Unit, crossOrigin: String): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
   inline def default(imageOrUrl: HTMLImageElement): State = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any]).asInstanceOf[State]
+  inline def default(imageOrUrl: HTMLImageElement, crossOrigin: anonymous | `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
   inline def default(imageOrUrl: HTMLImageElement, crossOrigin: String): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  
-  inline def default_anonymous(imageOrUrl: String, crossOrigin: anonymous): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  inline def default_anonymous(imageOrUrl: Null, crossOrigin: anonymous): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  inline def default_anonymous(imageOrUrl: Unit, crossOrigin: anonymous): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  inline def default_anonymous(imageOrUrl: HTMLImageElement, crossOrigin: anonymous): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  
-  inline def default_usecredentials(imageOrUrl: String, crossOrigin: `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  inline def default_usecredentials(imageOrUrl: Null, crossOrigin: `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  inline def default_usecredentials(imageOrUrl: Unit, crossOrigin: `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  inline def default_usecredentials(imageOrUrl: HTMLImageElement, crossOrigin: `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
   
   trait State extends StObject {
     
-    var error: js.Any | Null
+    var error: Any | Null
     
     var image: HTMLImageElement | Null
   }
@@ -46,7 +40,7 @@ object useImageMod {
     
     extension [Self <: State](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorNull: Self = StObject.set(x, "error", null)
       

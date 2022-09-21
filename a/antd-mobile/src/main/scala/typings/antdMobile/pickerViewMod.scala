@@ -1,26 +1,20 @@
 package typings.antdMobile
 
-import typings.antdMobile.anon.Cols
+import org.scalablytyped.runtime.Shortcut
+import typings.antdMobile.pickerViewPickerViewMod.PickerViewProps
+import typings.react.mod.NamedExoticComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object pickerViewMod {
+object pickerViewMod extends Shortcut {
   
-  @JSImport("antd-mobile/lib/picker-view", JSImport.Default)
+  @JSImport("antd-mobile/es/components/picker-view", JSImport.Default)
   @js.native
-  class default ()
-    extends typings.antdMobile.pickerViewPickerViewMod.default
-  /* static members */
-  object default {
-    
-    @JSImport("antd-mobile/lib/picker-view", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("antd-mobile/lib/picker-view", "default.defaultProps")
-    @js.native
-    def defaultProps: Cols = js.native
-    inline def defaultProps_=(x: Cols): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  val default: NamedExoticComponent[PickerViewProps] = js.native
+  
+  type _To = NamedExoticComponent[PickerViewProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `pickerViewMod.foo` */
+  override def _to: NamedExoticComponent[PickerViewProps] = default
 }

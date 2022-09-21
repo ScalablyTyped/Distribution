@@ -104,7 +104,7 @@ trait ShapeRange extends StObject {
   
   def IncrementTop(Increment: Double): Unit = js.native
   
-  def Item(Index: js.Any): Shape = js.native
+  def Item(Index: Any): Shape = js.native
   
   var LayoutInCell: Double = js.native
   
@@ -122,7 +122,7 @@ trait ShapeRange extends StObject {
   
   val Nodes: ShapeNodes = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ParentGroup: Shape = js.native
   
@@ -157,7 +157,7 @@ trait ShapeRange extends StObject {
   def ScaleWidth(Factor: Double, RelativeToOriginalSize: MsoTriState, Scale: MsoScaleFrom): Unit = js.native
   
   def Select(): Unit = js.native
-  def Select(Replace: js.Any): Unit = js.native
+  def Select(Replace: Any): Unit = js.native
   
   def SetShapesDefaultProperties(): Unit = js.native
   
@@ -187,7 +187,7 @@ trait ShapeRange extends StObject {
   
   val VerticalFlip: MsoTriState = js.native
   
-  val Vertices: js.Any = js.native
+  val Vertices: Any = js.native
   
   var Visible: MsoTriState = js.native
   

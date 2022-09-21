@@ -29,7 +29,7 @@ object LineBreakHyphenationOptions {
     
     inline def setAHyphenationOptions(value: PropertyValues): Self = StObject.set(x, "aHyphenationOptions", value.asInstanceOf[js.Any])
     
-    inline def setAHyphenationOptionsVarargs(value: PropertyValue*): Self = StObject.set(x, "aHyphenationOptions", js.Array(value :_*))
+    inline def setAHyphenationOptionsVarargs(value: PropertyValue*): Self = StObject.set(x, "aHyphenationOptions", js.Array(value*))
     
     inline def setHyphenIndex(value: Double): Self = StObject.set(x, "hyphenIndex", value.asInstanceOf[js.Any])
     

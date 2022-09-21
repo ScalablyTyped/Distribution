@@ -9,7 +9,23 @@ trait Diagnostic extends StObject {
   /**
     * The diagnostic's code, which usually appear in the user interface.
     */
-  var code: js.UndefOr[Double | String] = js.undefined
+  var code: js.UndefOr[integer | String] = js.undefined
+  
+  /**
+    * An optional property to describe the error code.
+    * Requires the code field (above) to be present/not null.
+    *
+    * @since 3.16.0
+    */
+  var codeDescription: js.UndefOr[CodeDescription] = js.undefined
+  
+  /**
+    * A data entry field that is preserved between a `textDocument/publishDiagnostics`
+    * notification and `textDocument/codeAction` request.
+    *
+    * @since 3.16.0
+    */
+  var data: js.UndefOr[LSPAny] = js.undefined
   
   /**
     * The diagnostic's message. It usually appears in the user interface
@@ -42,6 +58,8 @@ trait Diagnostic extends StObject {
   
   /**
     * Additional metadata about the diagnostic.
+    *
+    * @since 3.15.0
     */
   var tags: js.UndefOr[js.Array[DiagnosticTag]] = js.undefined
 }
@@ -78,24 +96,6 @@ object Diagnostic {
     source: Unit,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  inline def create(range: Range, message: String, severity: Unit, code: Double): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  inline def create(range: Range, message: String, severity: Unit, code: Double, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  inline def create(
-    range: Range,
-    message: String,
-    severity: Unit,
-    code: Double,
-    source: String,
-    relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  inline def create(
-    range: Range,
-    message: String,
-    severity: Unit,
-    code: Double,
-    source: Unit,
-    relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
   inline def create(range: Range, message: String, severity: Unit, code: Unit, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
   inline def create(
     range: Range,
@@ -110,6 +110,24 @@ object Diagnostic {
     message: String,
     severity: Unit,
     code: Unit,
+    source: Unit,
+    relatedInformation: js.Array[DiagnosticRelatedInformation]
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(range: Range, message: String, severity: Unit, code: integer): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(range: Range, message: String, severity: Unit, code: integer, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(
+    range: Range,
+    message: String,
+    severity: Unit,
+    code: integer,
+    source: String,
+    relatedInformation: js.Array[DiagnosticRelatedInformation]
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(
+    range: Range,
+    message: String,
+    severity: Unit,
+    code: integer,
     source: Unit,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
@@ -132,24 +150,6 @@ object Diagnostic {
     source: Unit,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  inline def create(range: Range, message: String, severity: DiagnosticSeverity, code: Double): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  inline def create(range: Range, message: String, severity: DiagnosticSeverity, code: Double, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  inline def create(
-    range: Range,
-    message: String,
-    severity: DiagnosticSeverity,
-    code: Double,
-    source: String,
-    relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
-  inline def create(
-    range: Range,
-    message: String,
-    severity: DiagnosticSeverity,
-    code: Double,
-    source: Unit,
-    relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
   inline def create(range: Range, message: String, severity: DiagnosticSeverity, code: Unit, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
   inline def create(
     range: Range,
@@ -167,17 +167,43 @@ object Diagnostic {
     source: Unit,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(range: Range, message: String, severity: DiagnosticSeverity, code: integer): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(range: Range, message: String, severity: DiagnosticSeverity, code: integer, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(
+    range: Range,
+    message: String,
+    severity: DiagnosticSeverity,
+    code: integer,
+    source: String,
+    relatedInformation: js.Array[DiagnosticRelatedInformation]
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  inline def create(
+    range: Range,
+    message: String,
+    severity: DiagnosticSeverity,
+    code: integer,
+    source: Unit,
+    relatedInformation: js.Array[DiagnosticRelatedInformation]
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
   
   /**
     * Checks whether the given literal conforms to the [Diagnostic](#Diagnostic) interface.
     */
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean]
   
   extension [Self <: Diagnostic](x: Self) {
     
-    inline def setCode(value: Double | String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: integer | String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCodeDescription(value: CodeDescription): Self = StObject.set(x, "codeDescription", value.asInstanceOf[js.Any])
+    
+    inline def setCodeDescriptionUndefined: Self = StObject.set(x, "codeDescription", js.undefined)
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    
+    inline def setData(value: LSPAny): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
@@ -187,7 +213,7 @@ object Diagnostic {
     
     inline def setRelatedInformationUndefined: Self = StObject.set(x, "relatedInformation", js.undefined)
     
-    inline def setRelatedInformationVarargs(value: DiagnosticRelatedInformation*): Self = StObject.set(x, "relatedInformation", js.Array(value :_*))
+    inline def setRelatedInformationVarargs(value: DiagnosticRelatedInformation*): Self = StObject.set(x, "relatedInformation", js.Array(value*))
     
     inline def setSeverity(value: DiagnosticSeverity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
@@ -201,6 +227,6 @@ object Diagnostic {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: DiagnosticTag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: DiagnosticTag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

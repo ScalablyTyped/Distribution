@@ -8,13 +8,13 @@ object mod {
   
   @JSImport("tokgen", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with TokenGenerator {
     def this(options: Options) = this()
   }
   
-  type Callback = js.Function2[/* error */ js.Any, /* token */ String, Unit]
+  type Callback = js.Function2[/* error */ Any, /* token */ String, Unit]
   
   type Options = Double | String | OptionsObject
   

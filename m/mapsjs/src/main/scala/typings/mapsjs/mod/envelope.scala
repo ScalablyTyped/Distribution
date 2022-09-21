@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapsjs", "envelope")
 @js.native
-class envelope protected () extends StObject {
+open class envelope protected () extends StObject {
   def this(minX: Double, minY: Double, maxX: Double, maxY: Double) = this()
   
   /**

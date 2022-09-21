@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CoordinateConversionViewModelConstructor
   extends StObject
-     with Instantiable0[CoordinateConversionViewModel]
+     with /**
+  * Provides the logic for the [CoordinateConversion](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-CoordinateConversionViewModel.html)
+  */
+Instantiable0[CoordinateConversionViewModel]
      with Instantiable1[
       /* properties */ CoordinateConversionViewModelProperties, 
       CoordinateConversionViewModel

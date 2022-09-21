@@ -1,23 +1,65 @@
 package typings.tuyaPanelKit.mod
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StringDictionary
+import typings.std.InstanceType
+import typings.tuyaPanelKit.anon.ActiveStyle
+import typings.tuyaPanelKit.anon.DpId
+import typings.tuyaPanelKit.anon.OmitNavigationContainerPr
+import typings.tuyaPanelKit.mod.^
+import typings.tuyaPanelKit.stackTypesMod.StackNavigationOptions
+import typings.tuyaPanelKit.themeMod.GlobalTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def createNavigator[P, S](createNavigatorParam: typings.tuyaPanelKit.mod.NavigationParam): typings.tuyaPanelKit.mod.NavigationComponentClass[P, S] = typings.tuyaPanelKit.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createNavigator")(createNavigatorParam.asInstanceOf[js.Any]).asInstanceOf[typings.tuyaPanelKit.mod.NavigationComponentClass[P, S]]
+inline def Strings: InstanceType[
+Instantiable1[
+  /* import warning: RewrittenClass.unapply cls was tparam LanMap */ /* config */ Any, 
+  I18NCore[
+    I18NLanMap, 
+    /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: RewrittenClass.unapply cls was tparam LanMap * / any[keyof / * import warning: RewrittenClass.unapply cls was tparam LanMap * / any] */ js.Any
+  ]
+]] = ^.asInstanceOf[js.Dynamic].selectDynamic("Strings").asInstanceOf[InstanceType[
+Instantiable1[
+  /* import warning: RewrittenClass.unapply cls was tparam LanMap */ /* config */ Any, 
+  I18NCore[
+    I18NLanMap, 
+    /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: RewrittenClass.unapply cls was tparam LanMap * / any[keyof / * import warning: RewrittenClass.unapply cls was tparam LanMap * / any] */ js.Any
+  ]
+]]]
+inline def Strings_=(
+  x: InstanceType[
+  Instantiable1[
+    /* import warning: RewrittenClass.unapply cls was tparam LanMap */ /* config */ Any, 
+    I18NCore[
+      I18NLanMap, 
+      /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: RewrittenClass.unapply cls was tparam LanMap * / any[keyof / * import warning: RewrittenClass.unapply cls was tparam LanMap * / any] */ js.Any
+    ]
+  ]
+]
+): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Strings")(x.asInstanceOf[js.Any])
 
-inline def defaultTheme: typings.tuyaPanelKit.themeMod.GlobalTheme = typings.tuyaPanelKit.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultTheme").asInstanceOf[typings.tuyaPanelKit.themeMod.GlobalTheme]
-inline def defaultTheme_=(x: typings.tuyaPanelKit.themeMod.GlobalTheme): scala.Unit = typings.tuyaPanelKit.mod.^.asInstanceOf[js.Dynamic].updateDynamic("defaultTheme")(x.asInstanceOf[js.Any])
+inline def createNavigator[P, S](createNavigatorParam: NavigationParam): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createNavigator")(createNavigatorParam.asInstanceOf[js.Any]).asInstanceOf[Any]
+inline def createNavigator[P, S](createNavigatorParam: NavigationParam, navigationContainerProps: OmitNavigationContainerPr): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createNavigator")(createNavigatorParam.asInstanceOf[js.Any], navigationContainerProps.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-type DpValue = scala.Boolean | scala.Double | java.lang.String
+inline def defaultTheme: GlobalTheme = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultTheme").asInstanceOf[GlobalTheme]
+inline def defaultTheme_=(x: GlobalTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTheme")(x.asInstanceOf[js.Any])
 
-type GotoDpAlarmData = js.Array[typings.tuyaPanelKit.anon.DpId]
+inline def useTheme(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[js.Object]
 
-type LinearGradientBackgroundOffset = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type DialogAlertProps = DialogProps
 
-type ScreenOptions = typings.tuyaPanelKit.stackTypesMod.StackNavigationOptions | (js.Function1[
-/* props */ typings.tuyaPanelKit.anon.NavigationRoute, 
-typings.tuyaPanelKit.stackTypesMod.StackNavigationOptions])
+type DpValue = Boolean | Double | String
 
-type TabBarArr = org.scalablytyped.runtime.NumberDictionary[typings.tuyaPanelKit.anon.AccessibilityLabel]
+type GotoDpAlarmData = js.Array[DpId]
+
+type LinearGradientBackgroundOffset = StringDictionary[String]
+
+type ScreenOptions = StackNavigationOptions | (js.Function1[/* props */ typings.tuyaPanelKit.anon.NavigationRoute, StackNavigationOptions])
+
+type StringType = StringDictionary[String]
+
+type TabBarArr = NumberDictionary[ActiveStyle]

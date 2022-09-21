@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateClassificationJobRequest extends StObject {
   
   /**
+    * An array of unique identifiers, one for each allow list for the job to use when it analyzes data.
+    */
+  var allowListIds: js.UndefOr[listOfString] = js.undefined
+  
+  /**
     * A unique, case-sensitive token that you provide to ensure the idempotency of the request.
     */
   var clientToken: string
   
   /**
-    * The custom data identifiers to use for data analysis and classification.
+    * An array of unique identifiers, one for each custom data identifier for the job to use when it analyzes data. To use only managed data identifiers, don't specify a value for this property and specify a value other than NONE for the managedDataIdentifierSelector property.
     */
   var customDataIdentifierIds: js.UndefOr[listOfString] = js.undefined
   
@@ -22,7 +27,7 @@ trait CreateClassificationJobRequest extends StObject {
   var description: js.UndefOr[string] = js.undefined
   
   /**
-    * Specifies whether to analyze all existing, eligible objects immediately after the job is created.
+    * For a recurring job, specifies whether to analyze all existing, eligible objects immediately after the job is created (true). To analyze only those objects that are created or changed after you create the job and before the job's first scheduled run, set this value to false. If you configure the job to run only once, don't specify a value for this property.
     */
   var initialRun: js.UndefOr[boolean] = js.undefined
   
@@ -30,6 +35,16 @@ trait CreateClassificationJobRequest extends StObject {
     * The schedule for running the job. Valid values are: ONE_TIME - Run the job only once. If you specify this value, don't specify a value for the scheduleFrequency property. SCHEDULED - Run the job on a daily, weekly, or monthly basis. If you specify this value, use the scheduleFrequency property to define the recurrence pattern for the job.
     */
   var jobType: JobType
+  
+  /**
+    * An array of unique identifiers, one for each managed data identifier for the job to include (use) or exclude (not use) when it analyzes data. Inclusion or exclusion depends on the managed data identifier selection type that you specify for the job (managedDataIdentifierSelector). To retrieve a list of valid values for this property, use the ListManagedDataIdentifiers operation.
+    */
+  var managedDataIdentifierIds: js.UndefOr[listOfString] = js.undefined
+  
+  /**
+    * The selection type to apply when determining which managed data identifiers the job uses to analyze data. Valid values are: ALL - Use all the managed data identifiers that Amazon Macie provides. If you specify this value, don't specify any values for the managedDataIdentifierIds property. EXCLUDE - Use all the managed data identifiers that Macie provides except the managed data identifiers specified by the managedDataIdentifierIds property. INCLUDE - Use only the managed data identifiers specified by the managedDataIdentifierIds property. NONE - Don't use any managed data identifiers. If you specify this value, specify at least one custom data identifier for the job (customDataIdentifierIds) and don't specify any values for the managedDataIdentifierIds property. If you don't specify a value for this property, the job uses all managed data identifiers. If you don't specify a value for this property or you specify ALL or EXCLUDE for a recurring job, the job also uses new managed data identifiers as they are released.
+    */
+  var managedDataIdentifierSelector: js.UndefOr[ManagedDataIdentifierSelector] = js.undefined
   
   /**
     * A custom name for the job. The name can contain as many as 500 characters.
@@ -42,7 +57,7 @@ trait CreateClassificationJobRequest extends StObject {
   var s3JobDefinition: S3JobDefinition
   
   /**
-    * The sampling depth, as a percentage, to apply when processing objects. This value determines the percentage of eligible objects that the job analyzes. If this value is less than 100, Amazon Macie selects the objects to analyze at random, up to the specified percentage, and analyzes all the data in those objects.
+    * The sampling depth, as a percentage, for the job to apply when processing objects. This value determines the percentage of eligible objects that the job analyzes. If this value is less than 100, Amazon Macie selects the objects to analyze at random, up to the specified percentage, and analyzes all the data in those objects.
     */
   var samplingPercentage: js.UndefOr[integer] = js.undefined
   
@@ -65,13 +80,19 @@ object CreateClassificationJobRequest {
   
   extension [Self <: CreateClassificationJobRequest](x: Self) {
     
+    inline def setAllowListIds(value: listOfString): Self = StObject.set(x, "allowListIds", value.asInstanceOf[js.Any])
+    
+    inline def setAllowListIdsUndefined: Self = StObject.set(x, "allowListIds", js.undefined)
+    
+    inline def setAllowListIdsVarargs(value: string*): Self = StObject.set(x, "allowListIds", js.Array(value*))
+    
     inline def setClientToken(value: string): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
     inline def setCustomDataIdentifierIds(value: listOfString): Self = StObject.set(x, "customDataIdentifierIds", value.asInstanceOf[js.Any])
     
     inline def setCustomDataIdentifierIdsUndefined: Self = StObject.set(x, "customDataIdentifierIds", js.undefined)
     
-    inline def setCustomDataIdentifierIdsVarargs(value: string*): Self = StObject.set(x, "customDataIdentifierIds", js.Array(value :_*))
+    inline def setCustomDataIdentifierIdsVarargs(value: string*): Self = StObject.set(x, "customDataIdentifierIds", js.Array(value*))
     
     inline def setDescription(value: string): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -82,6 +103,16 @@ object CreateClassificationJobRequest {
     inline def setInitialRunUndefined: Self = StObject.set(x, "initialRun", js.undefined)
     
     inline def setJobType(value: JobType): Self = StObject.set(x, "jobType", value.asInstanceOf[js.Any])
+    
+    inline def setManagedDataIdentifierIds(value: listOfString): Self = StObject.set(x, "managedDataIdentifierIds", value.asInstanceOf[js.Any])
+    
+    inline def setManagedDataIdentifierIdsUndefined: Self = StObject.set(x, "managedDataIdentifierIds", js.undefined)
+    
+    inline def setManagedDataIdentifierIdsVarargs(value: string*): Self = StObject.set(x, "managedDataIdentifierIds", js.Array(value*))
+    
+    inline def setManagedDataIdentifierSelector(value: ManagedDataIdentifierSelector): Self = StObject.set(x, "managedDataIdentifierSelector", value.asInstanceOf[js.Any])
+    
+    inline def setManagedDataIdentifierSelectorUndefined: Self = StObject.set(x, "managedDataIdentifierSelector", js.undefined)
     
     inline def setName(value: string): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

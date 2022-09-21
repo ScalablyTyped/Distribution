@@ -8,5 +8,5 @@ object cancelKeyDeletionInputMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/CancelKeyDeletionInput", "CancelKeyDeletionInput")
   @js.native
-  val CancelKeyDeletionInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val CancelKeyDeletionInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

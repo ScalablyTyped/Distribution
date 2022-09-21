@@ -1,6 +1,6 @@
 package typings.mqttPacket.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,12 +20,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mqttPacket.mod.IPingrespPacket
   - typings.mqttPacket.mod.IDisconnectPacket
   - typings.mqttPacket.mod.IPubrecPacket
+  - typings.mqttPacket.mod.IAuthPacket
 */
 trait Packet extends StObject
 object Packet {
   
-  inline def IConnackPacket(returnCode: Double, sessionPresent: Boolean): typings.mqttPacket.mod.IConnackPacket = {
-    val __obj = js.Dynamic.literal(cmd = "connack", returnCode = returnCode.asInstanceOf[js.Any], sessionPresent = sessionPresent.asInstanceOf[js.Any])
+  inline def IAuthPacket(reasonCode: Double): typings.mqttPacket.mod.IAuthPacket = {
+    val __obj = js.Dynamic.literal(cmd = "auth", reasonCode = reasonCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.mqttPacket.mod.IAuthPacket]
+  }
+  
+  inline def IConnackPacket(sessionPresent: Boolean): typings.mqttPacket.mod.IConnackPacket = {
+    val __obj = js.Dynamic.literal(cmd = "connack", sessionPresent = sessionPresent.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mqttPacket.mod.IConnackPacket]
   }
   

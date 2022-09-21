@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("git", "Ref")
 @js.native
-class Ref () extends StObject
+open class Ref () extends StObject

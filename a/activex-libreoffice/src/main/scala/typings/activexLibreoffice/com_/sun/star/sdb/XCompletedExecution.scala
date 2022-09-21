@@ -24,7 +24,7 @@ object XCompletedExecution {
   inline def apply(
     acquire: () => Unit,
     executeWithCompletion: XInteractionHandler => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCompletedExecution = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), executeWithCompletion = js.Any.fromFunction1(executeWithCompletion), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

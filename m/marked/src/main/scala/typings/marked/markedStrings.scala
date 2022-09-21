@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object markedStrings {
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
+  sealed trait block extends StObject
+  inline def block: block = "block".asInstanceOf[block]
+  
+  @js.native
   sealed trait blockquote extends StObject
   inline def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
-  
-  @js.native
-  sealed trait blockquote_end extends StObject
-  inline def blockquote_end: blockquote_end = "blockquote_end".asInstanceOf[blockquote_end]
-  
-  @js.native
-  sealed trait blockquote_start extends StObject
-  inline def blockquote_start: blockquote_start = "blockquote_start".asInstanceOf[blockquote_start]
   
   @js.native
   sealed trait br extends StObject
@@ -33,6 +33,10 @@ object markedStrings {
   @js.native
   sealed trait codespan extends StObject
   inline def codespan: codespan = "codespan".asInstanceOf[codespan]
+  
+  @js.native
+  sealed trait `def` extends StObject
+  inline def `def`: `def` = "def".asInstanceOf[`def`]
   
   @js.native
   sealed trait del extends StObject
@@ -67,6 +71,10 @@ object markedStrings {
   inline def indented: indented = "indented".asInstanceOf[indented]
   
   @js.native
+  sealed trait `inline` extends StObject
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @js.native
   sealed trait left extends StObject
   inline def left: left = "left".asInstanceOf[left]
   
@@ -75,12 +83,12 @@ object markedStrings {
   inline def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait list_item extends StObject
-  inline def list_item: list_item = "list_item".asInstanceOf[list_item]
+  sealed trait list extends StObject
+  inline def list: list = "list".asInstanceOf[list]
   
   @js.native
-  sealed trait list_start extends StObject
-  inline def list_start: list_start = "list_start".asInstanceOf[list_start]
+  sealed trait list_item extends StObject
+  inline def list_item: list_item = "list_item".asInstanceOf[list_item]
   
   @js.native
   sealed trait paragraph extends StObject

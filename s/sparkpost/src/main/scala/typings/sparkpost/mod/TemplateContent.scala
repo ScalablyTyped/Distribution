@@ -14,7 +14,7 @@ trait TemplateContent extends StObject {
   var from: Address | String
   
   /**  JSON dictionary containing headers other than “Subject”, “From”, “To”, and “Reply-To”. */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   /** HTML content for the email’s text/html MIME part */
   var html: String
@@ -39,7 +39,7 @@ object TemplateContent {
     
     inline def setFrom(value: Address | String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     

@@ -7,15 +7,14 @@ import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.EventHandlers
 import typings.officeJsPreview.OfficeExtension.LoadOption
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to per file and add-in (task-pane or content) combination.
   *
+  * @remarks
   * [Api set: ExcelApi 1.4]
   */
 @js.native
@@ -26,32 +25,35 @@ trait SettingCollection
   /**
     * Sets or adds the specified setting to the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     *
-    * @param key The Key of the new setting.
-    * @param value The Value for the new setting.
+    * @param key The key of the new setting.
+    * @param value The value for the new setting.
     */
   def add(key: String, value: String): Setting = js.native
-  def add(key: String, value: js.Any): Setting = js.native
-  def add(key: String, value: js.Array[js.Any]): Setting = js.native
+  def add(key: String, value: js.Array[Any]): Setting = js.native
+  def add(key: String, value: js.Date): Setting = js.native
+  def add(key: String, value: Any): Setting = js.native
   def add(key: String, value: Boolean): Setting = js.native
   def add(key: String, value: Double): Setting = js.native
-  def add(key: String, value: Date): Setting = js.native
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_SettingCollection: RequestContext = js.native
   
   /**
-    * Gets the number of Settings in the collection.
+    * Gets the number of settings in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a Setting entry via the key.
+    * Gets a setting entry via the key.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     *
     * @param key Key of the setting.
@@ -59,8 +61,10 @@ trait SettingCollection
   def getItem(key: String): Setting = js.native
   
   /**
-    * Gets a Setting entry via the key. If the Setting does not exist, will return a null object.
+    * Gets a setting entry via the key. If the setting does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     *
     * @param key The key of the setting.
@@ -82,9 +86,9 @@ trait SettingCollection
   def load(propertyNames: js.Array[String]): SettingCollection = js.native
   
   /**
+    * Occurs when the settings in the document are changed.
     *
-    * Occurs when the Settings in the document are changed.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     *
     * @eventproperty

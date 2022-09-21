@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutProtocolsListRequest extends StObject {
   
   /**
-    * The details of the AWS Firewall Manager protocols list to be created.
+    * The details of the Firewall Manager protocols list to be created.
     */
   var ProtocolsList: ProtocolsListData
   
@@ -31,6 +31,6 @@ object PutProtocolsListRequest {
     
     inline def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
     
-    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value*))
   }
 }

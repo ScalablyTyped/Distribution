@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Instruction")
 @js.native
-class Instruction ()
+open class Instruction ()
   extends StObject
      with typings.fridaGum.Instruction {
   

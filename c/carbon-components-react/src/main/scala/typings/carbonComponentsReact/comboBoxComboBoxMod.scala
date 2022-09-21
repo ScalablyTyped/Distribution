@@ -22,6 +22,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.dialog
 import typings.carbonComponentsReact.carbonComponentsReactStrings.done
 import typings.carbonComponentsReact.carbonComponentsReactStrings.email
 import typings.carbonComponentsReact.carbonComponentsReactStrings.enter
+import typings.carbonComponentsReact.carbonComponentsReactStrings.environment
 import typings.carbonComponentsReact.carbonComponentsReactStrings.execute
 import typings.carbonComponentsReact.carbonComponentsReactStrings.go
 import typings.carbonComponentsReact.carbonComponentsReactStrings.grammar
@@ -56,22 +57,24 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.text
 import typings.carbonComponentsReact.carbonComponentsReactStrings.time
 import typings.carbonComponentsReact.carbonComponentsReactStrings.tree
 import typings.carbonComponentsReact.carbonComponentsReactStrings.url
+import typings.carbonComponentsReact.carbonComponentsReactStrings.user
 import typings.carbonComponentsReact.carbonComponentsReactStrings.vertical
 import typings.carbonComponentsReact.carbonComponentsReactStrings.yes
+import typings.carbonComponentsReact.listBoxListBoxSelectionMod.ListBoxSelectionTranslationKey
 import typings.carbonComponentsReact.listBoxMenuIconMod.ListBoxMenuIconTranslationKey
 import typings.carbonComponentsReact.listBoxPropTypesMod.ListBoxSize
 import typings.carbonComponentsReact.listBoxPropTypesMod.ListBoxType
-import typings.carbonComponentsReact.listBoxSelectionMod.ListBoxSelectionTranslationKey
+import typings.carbonComponentsReact.typingsSharedMod.FCReturn
+import typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps
 import typings.carbonComponentsReact.typingsSharedMod.VerticalDirection
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
-import typings.react.mod.Component
-import typings.react.mod.ComponentType
 import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
@@ -80,6 +83,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.JSXElementConstructor
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
@@ -88,6 +92,7 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -99,24 +104,26 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.std.Element
 import typings.std.Event
 import typings.std.Extract
+import typings.std.HTMLButtonElement
 import typings.std.HTMLInputElement
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object comboBoxComboBoxMod {
   
-  @JSImport("carbon-components-react/lib/components/ComboBox/ComboBox", JSImport.Default)
+  @JSImport("carbon-components-react/lib/components/ComboBox/ComboBox", JSImport.Namespace)
   @js.native
-  class default[T] ()
-    extends Component[ComboBoxProps[T, Extract[T, js.Object]], js.Object, js.Any]
+  val ^ : js.Any = js.native
   
-  type ComboBox[T] = Component[ComboBoxProps[T, Extract[T, js.Object]], js.Object, js.Any]
+  inline def default[T](props: ForwardRefProps[HTMLInputElement, ComboBoxProps[T, Extract[T, js.Object]]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   /* Inlined parent std.Omit<carbon-components-react.carbon-components-react/typings/shared.ReactInputAttr<std.HTMLInputElement>, carbon-components-react.carbon-components-react/lib/components/ComboBox/ComboBox.ExcludedAttributes> */
-  /* Inlined parent carbon-components-react.carbon-components-react/typings/shared.InternationalProps<carbon-components-react.carbon-components-react/lib/components/ListBox/ListBoxMenuIcon.ListBoxMenuIconTranslationKey | carbon-components-react.carbon-components-react/lib/components/ListBox/ListBoxSelection.ListBoxSelectionTranslationKey> */
+  /* Inlined parent carbon-components-react.carbon-components-react/typings/shared.InternationalProps<carbon-components-react.carbon-components-react/lib/components/ListBox/ListBoxMenuIcon.ListBoxMenuIconTranslationKey | carbon-components-react.carbon-components-react/lib/components/ListBox/ListBoxSelection.ListBoxSelectionTranslationKey, std.Record<string, unknown>> */
   trait ComboBoxProps[ItemType, CustomElementProps] extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
@@ -129,11 +136,11 @@ object comboBoxComboBoxMod {
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none_ | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -151,21 +158,21 @@ object comboBoxComboBoxMod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none_ | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -179,11 +186,11 @@ object comboBoxComboBoxMod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -195,13 +202,13 @@ object comboBoxComboBoxMod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -211,7 +218,7 @@ object comboBoxComboBoxMod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -237,7 +244,7 @@ object comboBoxComboBoxMod {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.undefined
+    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
@@ -267,7 +274,7 @@ object comboBoxComboBoxMod {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var downshiftProps: js.UndefOr[js.Any] = js.undefined
+    var downshiftProps: js.UndefOr[Any] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -296,7 +303,7 @@ object comboBoxComboBoxMod {
     
     var initialSelectedItem: js.UndefOr[ItemType] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none_ | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -314,7 +321,7 @@ object comboBoxComboBoxMod {
     
     var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemToElement: js.UndefOr[ComponentType[CustomElementProps]] = js.undefined
+    var itemToElement: js.UndefOr[JSXElementConstructor[CustomElementProps]] = js.undefined
     
     var itemToString: js.UndefOr[js.Function1[/* item */ js.UndefOr[ItemType | Null], String]] = js.undefined
     
@@ -484,6 +491,8 @@ object comboBoxComboBoxMod {
     
     var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
+    var onToggleClick: js.UndefOr[js.Function1[/* evt */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Unit]] = js.undefined
+    
     var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
     
     var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLInputElement]] = js.undefined
@@ -502,7 +511,7 @@ object comboBoxComboBoxMod {
     
     var pattern: js.UndefOr[String] = js.undefined
     
-    var placeholder: String
+    var placeholder: js.UndefOr[String] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
@@ -518,7 +527,7 @@ object comboBoxComboBoxMod {
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -551,8 +560,9 @@ object comboBoxComboBoxMod {
     var translate: js.UndefOr[yes | no] = js.undefined
     
     var translateWithId: js.UndefOr[
-        js.Function1[
+        js.Function2[
           /* messageId */ ListBoxMenuIconTranslationKey | ListBoxSelectionTranslationKey, 
+          /* args */ js.UndefOr[Record[String, Any]], 
           String
         ]
       ] = js.undefined
@@ -567,12 +577,16 @@ object comboBoxComboBoxMod {
     
     var vocab: js.UndefOr[String] = js.undefined
     
+    var warn: js.UndefOr[Boolean] = js.undefined
+    
+    var warnText: js.UndefOr[ReactNode] = js.undefined
+    
     var width: js.UndefOr[Double | String] = js.undefined
   }
   object ComboBoxProps {
     
-    inline def apply[ItemType, CustomElementProps](id: String, items: js.Array[ItemType], placeholder: String): ComboBoxProps[ItemType, CustomElementProps] = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any])
+    inline def apply[ItemType, CustomElementProps](id: String, items: js.Array[ItemType]): ComboBoxProps[ItemType, CustomElementProps] = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComboBoxProps[ItemType, CustomElementProps]]
     }
     
@@ -598,7 +612,7 @@ object comboBoxComboBoxMod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -606,7 +620,7 @@ object comboBoxComboBoxMod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -642,7 +656,7 @@ object comboBoxComboBoxMod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -654,7 +668,7 @@ object comboBoxComboBoxMod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -662,7 +676,7 @@ object comboBoxComboBoxMod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -670,7 +684,7 @@ object comboBoxComboBoxMod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -698,15 +712,15 @@ object comboBoxComboBoxMod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -730,7 +744,7 @@ object comboBoxComboBoxMod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -740,7 +754,7 @@ object comboBoxComboBoxMod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -760,7 +774,7 @@ object comboBoxComboBoxMod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -812,7 +826,7 @@ object comboBoxComboBoxMod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -860,7 +874,7 @@ object comboBoxComboBoxMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -874,7 +888,7 @@ object comboBoxComboBoxMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDownshiftProps(value: js.Any): Self = StObject.set(x, "downshiftProps", value.asInstanceOf[js.Any])
+      inline def setDownshiftProps(value: Any): Self = StObject.set(x, "downshiftProps", value.asInstanceOf[js.Any])
       
       inline def setDownshiftPropsUndefined: Self = StObject.set(x, "downshiftProps", js.undefined)
       
@@ -928,7 +942,7 @@ object comboBoxComboBoxMod {
       
       inline def setInitialSelectedItemUndefined: Self = StObject.set(x, "initialSelectedItem", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -964,7 +978,9 @@ object comboBoxComboBoxMod {
       
       inline def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
       
-      inline def setItemToElement(value: ComponentType[CustomElementProps]): Self = StObject.set(x, "itemToElement", value.asInstanceOf[js.Any])
+      inline def setItemToElement(value: scala.Nothing | JSXElementConstructor[CustomElementProps]): Self = StObject.set(x, "itemToElement", value.asInstanceOf[js.Any])
+      
+      inline def setItemToElementFunction1(value: CustomElementProps => ReactElement | Null): Self = StObject.set(x, "itemToElement", js.Any.fromFunction1(value))
       
       inline def setItemToElementUndefined: Self = StObject.set(x, "itemToElement", js.undefined)
       
@@ -978,7 +994,7 @@ object comboBoxComboBoxMod {
       
       inline def setItems(value: js.Array[ItemType]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: ItemType*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: ItemType*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
@@ -1040,7 +1056,7 @@ object comboBoxComboBoxMod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1140,7 +1156,7 @@ object comboBoxComboBoxMod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1304,6 +1320,10 @@ object comboBoxComboBoxMod {
       
       inline def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
       
+      inline def setOnToggleClick(value: /* evt */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onToggleClick", js.Any.fromFunction1(value))
+      
+      inline def setOnToggleClickUndefined: Self = StObject.set(x, "onToggleClick", js.undefined)
+      
       inline def setOnTouchCancel(value: TouchEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
       
       inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
@@ -1342,6 +1362,8 @@ object comboBoxComboBoxMod {
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
@@ -1370,7 +1392,7 @@ object comboBoxComboBoxMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -1436,7 +1458,9 @@ object comboBoxComboBoxMod {
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      inline def setTranslateWithId(value: /* messageId */ ListBoxMenuIconTranslationKey | ListBoxSelectionTranslationKey => String): Self = StObject.set(x, "translateWithId", js.Any.fromFunction1(value))
+      inline def setTranslateWithId(
+        value: (/* messageId */ ListBoxMenuIconTranslationKey | ListBoxSelectionTranslationKey, /* args */ js.UndefOr[Record[String, Any]]) => String
+      ): Self = StObject.set(x, "translateWithId", js.Any.fromFunction2(value))
       
       inline def setTranslateWithIdUndefined: Self = StObject.set(x, "translateWithId", js.undefined)
       
@@ -1456,11 +1480,19 @@ object comboBoxComboBoxMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+      
+      inline def setWarn(value: Boolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      
+      inline def setWarnText(value: ReactNode): Self = StObject.set(x, "warnText", value.asInstanceOf[js.Any])
+      
+      inline def setWarnTextUndefined: Self = StObject.set(x, "warnText", js.undefined)
+      
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
       
       inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -1471,7 +1503,6 @@ object comboBoxComboBoxMod {
   /* Rewritten from type alias, can be one of: 
     - typings.carbonComponentsReact.carbonComponentsReactStrings.id
     - typings.carbonComponentsReact.carbonComponentsReactStrings.onChange
-    - typings.carbonComponentsReact.carbonComponentsReactStrings.placeholder
     - typings.carbonComponentsReact.carbonComponentsReactStrings.ref
     - typings.carbonComponentsReact.carbonComponentsReactStrings.size
   */
@@ -1481,8 +1512,6 @@ object comboBoxComboBoxMod {
     inline def id: typings.carbonComponentsReact.carbonComponentsReactStrings.id = "id".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.id]
     
     inline def onChange: typings.carbonComponentsReact.carbonComponentsReactStrings.onChange = "onChange".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.onChange]
-    
-    inline def placeholder: typings.carbonComponentsReact.carbonComponentsReactStrings.placeholder = "placeholder".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.placeholder]
     
     inline def ref: typings.carbonComponentsReact.carbonComponentsReactStrings.ref = "ref".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.ref]
     

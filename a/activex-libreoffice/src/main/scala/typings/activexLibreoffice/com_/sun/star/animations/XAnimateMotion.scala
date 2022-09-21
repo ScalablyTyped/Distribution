@@ -17,13 +17,13 @@ trait XAnimateMotion
      with XAnimate {
   
   /** Specifies the origin of motion for the animation. The values and semantics of this attribute are dependent upon the used animation engine. */
-  var Origin: js.Any
+  var Origin: Any
   
   /**
     * Specifies an optional path. ;  If a path is used, the {@link From} , {@link To} and {@link By} members are ignored. The value type of the path depends
     * on the used rendering system. Possible types maybe a svg:d path encoded in a string.
     */
-  var Path: js.Any
+  var Path: Any
 }
 object XAnimateMotion {
   
@@ -33,36 +33,36 @@ object XAnimateMotion {
     Additive: Double,
     AttributeName: String,
     AutoReverse: Boolean,
-    Begin: js.Any,
-    By: js.Any,
+    Begin: Any,
+    By: Any,
     CalcMode: Double,
     Decelerate: Double,
-    Duration: js.Any,
-    End: js.Any,
-    EndSync: js.Any,
+    Duration: Any,
+    End: Any,
+    EndSync: Any,
     Fill: Double,
     FillDefault: Double,
     Formula: String,
-    From: js.Any,
+    From: Any,
     KeyTimes: SafeArray[Double],
-    Origin: js.Any,
+    Origin: Any,
     Parent: XInterface,
-    Path: js.Any,
-    RepeatCount: js.Any,
-    RepeatDuration: js.Any,
+    Path: Any,
+    RepeatCount: Any,
+    RepeatDuration: Any,
     Restart: Double,
     RestartDefault: Double,
     SubItem: Double,
-    Target: js.Any,
+    Target: Any,
     TimeFilter: SafeArray[TimeFilterPair],
-    To: js.Any,
+    To: Any,
     Type: Double,
     UserData: SafeArray[NamedValue],
     ValueType: Double,
-    Values: SafeArray[js.Any],
+    Values: SafeArray[Any],
     acquire: () => Unit,
     getParent: () => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setParent: XInterface => Unit
   ): XAnimateMotion = {
@@ -72,8 +72,8 @@ object XAnimateMotion {
   
   extension [Self <: XAnimateMotion](x: Self) {
     
-    inline def setOrigin(value: js.Any): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Any): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
     
-    inline def setPath(value: js.Any): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Any): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
   }
 }

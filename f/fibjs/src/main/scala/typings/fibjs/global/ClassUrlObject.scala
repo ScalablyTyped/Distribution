@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   *
   */
-class ClassUrlObject ()
+open class ClassUrlObject ()
   extends StObject
      with typings.fibjs.ClassUrlObject {
   /**

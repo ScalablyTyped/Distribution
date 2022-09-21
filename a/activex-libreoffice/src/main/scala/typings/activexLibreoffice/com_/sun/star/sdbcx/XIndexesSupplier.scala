@@ -30,7 +30,7 @@ object XIndexesSupplier {
     Indexes: XNameAccess,
     acquire: () => Unit,
     getIndexes: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XIndexesSupplier = {
     val __obj = js.Dynamic.literal(Indexes = Indexes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getIndexes = js.Any.fromFunction0(getIndexes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

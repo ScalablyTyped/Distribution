@@ -13,10 +13,10 @@ object mod {
   
   @JSImport("react-github-button", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ReactGitHubButtonProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ReactGitHubButtonProps, js.Object, Any]
   
-  type GitHubButton = Component[ReactGitHubButtonProps, js.Object, js.Any]
+  type GitHubButton = Component[ReactGitHubButtonProps, js.Object, Any]
   
   trait ReactGitHubButtonProps extends StObject {
     

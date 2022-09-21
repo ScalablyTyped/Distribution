@@ -12,7 +12,7 @@ trait LambdaFunctionAssociations extends StObject {
   var Items: js.UndefOr[LambdaFunctionAssociationList] = js.undefined
   
   /**
-    * The number of Lambda function associations for this cache behavior.
+    * The number of Lambda@Edge function associations for this cache behavior.
     */
   var Quantity: integer
 }
@@ -29,7 +29,7 @@ object LambdaFunctionAssociations {
     
     inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    inline def setItemsVarargs(value: LambdaFunctionAssociation*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: LambdaFunctionAssociation*): Self = StObject.set(x, "Items", js.Array(value*))
     
     inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }

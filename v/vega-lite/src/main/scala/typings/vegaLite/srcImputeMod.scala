@@ -25,7 +25,7 @@ object srcImputeMod {
       *
       * If there is no impute grouping, this property _must_ be specified.
       */
-    var keyvals: js.UndefOr[js.Array[js.Any] | ImputeSequence] = js.undefined
+    var keyvals: js.UndefOr[js.Array[Any] | ImputeSequence] = js.undefined
     
     /**
       * The imputation method to use for the field value of imputed data objects.
@@ -38,7 +38,7 @@ object srcImputeMod {
     /**
       * The field value to use when the imputation `method` is `"value"`.
       */
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object ImputeParams {
     
@@ -53,17 +53,17 @@ object srcImputeMod {
       
       inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
       
-      inline def setKeyvals(value: js.Array[js.Any] | ImputeSequence): Self = StObject.set(x, "keyvals", value.asInstanceOf[js.Any])
+      inline def setKeyvals(value: js.Array[Any] | ImputeSequence): Self = StObject.set(x, "keyvals", value.asInstanceOf[js.Any])
       
       inline def setKeyvalsUndefined: Self = StObject.set(x, "keyvals", js.undefined)
       
-      inline def setKeyvalsVarargs(value: js.Any*): Self = StObject.set(x, "keyvals", js.Array(value :_*))
+      inline def setKeyvalsVarargs(value: Any*): Self = StObject.set(x, "keyvals", js.Array(value*))
       
       inline def setMethod(value: ImputeMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }

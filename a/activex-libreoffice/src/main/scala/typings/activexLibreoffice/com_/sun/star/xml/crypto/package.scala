@@ -1,28 +1,30 @@
 package typings.activexLibreoffice.com_.sun.star.xml.crypto
 
+import typings.activexLibreoffice.com_.sun.star.security.EncryptionException
+import typings.activexLibreoffice.com_.sun.star.security.SignatureException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 /** @since LibreOffice 4.0 */
-type NSSInitializer = typings.activexLibreoffice.com_.sun.star.xml.crypto.XNSSInitializer
+type NSSInitializer = XNSSInitializer
 
 /** Service of {@link SEInitializer} */
-type SEInitializer = typings.activexLibreoffice.com_.sun.star.xml.crypto.XSEInitializer
+type SEInitializer = XSEInitializer
 
 /** Service of {@link XSecurityEnvironment} */
-type SecurityEnvironment = typings.activexLibreoffice.com_.sun.star.xml.crypto.XSecurityEnvironment
+type SecurityEnvironment = XSecurityEnvironment
 
-type XMLEncryptionException = typings.activexLibreoffice.com_.sun.star.security.EncryptionException
+type XMLEncryptionException = EncryptionException
 
 /** Service of {@link XMLEncryptionTemplate} */
-type XMLEncryptionTemplate = typings.activexLibreoffice.com_.sun.star.xml.crypto.XXMLEncryptionTemplate
+type XMLEncryptionTemplate = XXMLEncryptionTemplate
 
 /** Service of {@link XMLSecurityContext} */
-type XMLSecurityContext = typings.activexLibreoffice.com_.sun.star.xml.crypto.XXMLSecurityContext
+type XMLSecurityContext = XXMLSecurityContext
 
-type XMLSignatureException = typings.activexLibreoffice.com_.sun.star.security.SignatureException
+type XMLSignatureException = SignatureException
 
 /** Service of {@link XMLSignatureTemplate} */
-type XMLSignatureTemplate = typings.activexLibreoffice.com_.sun.star.xml.crypto.XXMLSignatureTemplate
+type XMLSignatureTemplate = XXMLSignatureTemplate

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region 交互反馈 https://docs.alipay.com/mini/api/ui-feedback
 trait AlertOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /** 按钮文字，默认确定 */
   var buttonText: String

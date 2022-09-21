@@ -33,6 +33,6 @@ object ListProvisioningArtifactsOutput {
     
     inline def setProvisioningArtifactDetailsUndefined: Self = StObject.set(x, "ProvisioningArtifactDetails", js.undefined)
     
-    inline def setProvisioningArtifactDetailsVarargs(value: ProvisioningArtifactDetail*): Self = StObject.set(x, "ProvisioningArtifactDetails", js.Array(value :_*))
+    inline def setProvisioningArtifactDetailsVarargs(value: ProvisioningArtifactDetail*): Self = StObject.set(x, "ProvisioningArtifactDetails", js.Array(value*))
   }
 }

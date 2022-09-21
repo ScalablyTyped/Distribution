@@ -31,8 +31,8 @@ object readlineMod {
     
     def setPrompt(prompt: String, length: Double): Unit = js.native
     
-    def write(data: js.Any): Unit = js.native
-    def write(data: js.Any, key: js.Any): Unit = js.native
+    def write(data: Any): Unit = js.native
+    def write(data: Any, key: Any): Unit = js.native
   }
   
   trait ReadLineOptions extends StObject {

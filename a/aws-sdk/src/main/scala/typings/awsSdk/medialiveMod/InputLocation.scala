@@ -14,7 +14,7 @@ trait InputLocation extends StObject {
   /**
     * Uniform Resource Identifier - This should be a path to a file accessible to the Live system (eg. a http:// URI) depending on the output type. For example, a RTMP destination should have a uri simliar to: "rtmp://fmsserver/live".
     */
-  var Uri: string
+  var Uri: stringMax2048
   
   /**
     * Documentation update needed
@@ -23,7 +23,7 @@ trait InputLocation extends StObject {
 }
 object InputLocation {
   
-  inline def apply(Uri: string): InputLocation = {
+  inline def apply(Uri: stringMax2048): InputLocation = {
     val __obj = js.Dynamic.literal(Uri = Uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputLocation]
   }
@@ -34,7 +34,7 @@ object InputLocation {
     
     inline def setPasswordParamUndefined: Self = StObject.set(x, "PasswordParam", js.undefined)
     
-    inline def setUri(value: string): Self = StObject.set(x, "Uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: stringMax2048): Self = StObject.set(x, "Uri", value.asInstanceOf[js.Any])
     
     inline def setUsername(value: string): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     

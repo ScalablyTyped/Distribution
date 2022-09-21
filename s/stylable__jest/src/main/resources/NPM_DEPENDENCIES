@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@stylable/jest" : "3.6.2"
+      "@stylable/jest" : "5.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@stylable/jest" : "3.6.2"
+      "@stylable/jest" : "5.2.1"
     }
   ],
   "compile-devDependencies" : [

@@ -15,12 +15,12 @@ object PullHelpers {
   
   @JSGlobal("TypeScript.PullHelpers.OtherPullDeclsWalker")
   @js.native
-  class OtherPullDeclsWalker ()
+  open class OtherPullDeclsWalker ()
     extends StObject
        with typings.typescriptServices.TypeScript.PullHelpers.OtherPullDeclsWalker {
     
     /* private */ /* CompleteClass */
-    var currentlyWalkingOtherDecls: js.Any = js.native
+    var currentlyWalkingOtherDecls: Any = js.native
     
     /* CompleteClass */
     override def walkOtherPullDecls(
@@ -34,12 +34,12 @@ object PullHelpers {
   inline def diagnosticFromDecl(
     decl: typings.typescriptServices.TypeScript.PullDecl,
     diagnosticKey: String,
-    _arguments: js.Array[js.Any]
+    _arguments: js.Array[Any]
   ): typings.typescriptServices.TypeScript.Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnosticFromDecl")(decl.asInstanceOf[js.Any], diagnosticKey.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Diagnostic]
   inline def diagnosticFromDecl(
     decl: typings.typescriptServices.TypeScript.PullDecl,
     diagnosticKey: String,
-    _arguments: js.Array[js.Any],
+    _arguments: js.Array[Any],
     additionalLocations: js.Array[typings.typescriptServices.TypeScript.Location]
   ): typings.typescriptServices.TypeScript.Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("diagnosticFromDecl")(decl.asInstanceOf[js.Any], diagnosticKey.asInstanceOf[js.Any], _arguments.asInstanceOf[js.Any], additionalLocations.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Diagnostic]
   inline def diagnosticFromDecl(

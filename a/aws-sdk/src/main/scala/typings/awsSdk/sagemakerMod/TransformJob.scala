@@ -19,7 +19,7 @@ trait TransformJob extends StObject {
   /**
     * A timestamp that shows when the transform Job was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   var DataProcessing: js.UndefOr[typings.awsSdk.sagemakerMod.DataProcessing] = js.undefined
   
@@ -65,7 +65,7 @@ trait TransformJob extends StObject {
   /**
     * Indicates when the transform job has been completed, or has stopped or failed. You are billed for the time interval between this time and the value of TransformStartTime.
     */
-  var TransformEndTime: js.UndefOr[Timestamp] = js.undefined
+  var TransformEndTime: js.UndefOr[js.Date] = js.undefined
   
   var TransformInput: js.UndefOr[typings.awsSdk.sagemakerMod.TransformInput] = js.undefined
   
@@ -91,7 +91,7 @@ trait TransformJob extends StObject {
   /**
     * Indicates when the transform job starts on ML instances. You are billed for the time interval between this time and the value of TransformEndTime.
     */
-  var TransformStartTime: js.UndefOr[Timestamp] = js.undefined
+  var TransformStartTime: js.UndefOr[js.Date] = js.undefined
 }
 object TransformJob {
   
@@ -110,7 +110,7 @@ object TransformJob {
     
     inline def setBatchStrategyUndefined: Self = StObject.set(x, "BatchStrategy", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -154,9 +154,9 @@ object TransformJob {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
-    inline def setTransformEndTime(value: Timestamp): Self = StObject.set(x, "TransformEndTime", value.asInstanceOf[js.Any])
+    inline def setTransformEndTime(value: js.Date): Self = StObject.set(x, "TransformEndTime", value.asInstanceOf[js.Any])
     
     inline def setTransformEndTimeUndefined: Self = StObject.set(x, "TransformEndTime", js.undefined)
     
@@ -184,7 +184,7 @@ object TransformJob {
     
     inline def setTransformResourcesUndefined: Self = StObject.set(x, "TransformResources", js.undefined)
     
-    inline def setTransformStartTime(value: Timestamp): Self = StObject.set(x, "TransformStartTime", value.asInstanceOf[js.Any])
+    inline def setTransformStartTime(value: js.Date): Self = StObject.set(x, "TransformStartTime", value.asInstanceOf[js.Any])
     
     inline def setTransformStartTimeUndefined: Self = StObject.set(x, "TransformStartTime", js.undefined)
   }

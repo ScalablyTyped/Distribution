@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Desktop[TAsComponent /* <: ElementType[js.Any] */] extends StObject {
+trait Desktop[TAsComponent /* <: ElementType[Any] */] extends StObject {
   
   var as: js.UndefOr[TAsComponent] = js.undefined
   
@@ -24,12 +24,12 @@ trait Desktop[TAsComponent /* <: ElementType[js.Any] */] extends StObject {
 }
 object Desktop {
   
-  inline def apply[TAsComponent /* <: ElementType[js.Any] */](): Desktop[TAsComponent] = {
+  inline def apply[TAsComponent /* <: ElementType[Any] */](): Desktop[TAsComponent] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Desktop[TAsComponent]]
   }
   
-  extension [Self <: Desktop[?], TAsComponent /* <: ElementType[js.Any] */](x: Self & Desktop[TAsComponent]) {
+  extension [Self <: Desktop[?], TAsComponent /* <: ElementType[Any] */](x: Self & Desktop[TAsComponent]) {
     
     inline def setAs(value: TAsComponent): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListKeysResponse extends StObject {
   
   /**
-    * A list of customer master keys (CMKs).
+    * A list of KMS keys.
     */
   var Keys: js.UndefOr[KeyList] = js.undefined
   
@@ -34,7 +34,7 @@ object ListKeysResponse {
     
     inline def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
     
-    inline def setKeysVarargs(value: KeyListEntry*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: KeyListEntry*): Self = StObject.set(x, "Keys", js.Array(value*))
     
     inline def setNextMarker(value: MarkerType): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

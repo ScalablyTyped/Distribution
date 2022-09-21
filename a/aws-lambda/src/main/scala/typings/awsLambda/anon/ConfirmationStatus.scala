@@ -1,9 +1,9 @@
 package typings.awsLambda.anon
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.awsLambda.awsLambdaStrings.Confirmed_
 import typings.awsLambda.awsLambdaStrings.Denied
 import typings.awsLambda.awsLambdaStrings.None
+import typings.awsLambda.lexMod.LexEventSlots
 import typings.awsLambda.lexMod.LexSlotDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait ConfirmationStatus extends StObject {
   
   var slotDetails: LexSlotDetails
   
-  var slots: StringDictionary[String | Null]
+  var slots: LexEventSlots
 }
 object ConfirmationStatus {
   
@@ -25,7 +25,7 @@ object ConfirmationStatus {
     confirmationStatus: None | Confirmed_ | Denied,
     name: String,
     slotDetails: LexSlotDetails,
-    slots: StringDictionary[String | Null]
+    slots: LexEventSlots
   ): ConfirmationStatus = {
     val __obj = js.Dynamic.literal(confirmationStatus = confirmationStatus.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], slotDetails = slotDetails.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmationStatus]
@@ -39,6 +39,6 @@ object ConfirmationStatus {
     
     inline def setSlotDetails(value: LexSlotDetails): Self = StObject.set(x, "slotDetails", value.asInstanceOf[js.Any])
     
-    inline def setSlots(value: StringDictionary[String | Null]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: LexEventSlots): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
   }
 }

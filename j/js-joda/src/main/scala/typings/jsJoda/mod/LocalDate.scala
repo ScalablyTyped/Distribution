@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "LocalDate")
 @js.native
-/* private */ class LocalDate () extends ChronoLocalDate {
+/* private */ open class LocalDate () extends ChronoLocalDate {
   
   def atStartOfDay(): LocalDateTime = js.native
   def atStartOfDay(zone: ZoneId): ZonedDateTime = js.native
@@ -29,8 +29,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   def dayOfWeek(): DayOfWeek = js.native
   
   def dayOfYear(): Double = js.native
-  
-  def equals(otherDate: js.Any): Boolean = js.native
   
   def getLong(field: TemporalField): Double = js.native
   

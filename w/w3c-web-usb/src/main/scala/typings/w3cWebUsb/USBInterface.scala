@@ -32,7 +32,7 @@ object USBInterface {
     
     inline def setAlternates(value: js.Array[USBAlternateInterface]): Self = StObject.set(x, "alternates", value.asInstanceOf[js.Any])
     
-    inline def setAlternatesVarargs(value: USBAlternateInterface*): Self = StObject.set(x, "alternates", js.Array(value :_*))
+    inline def setAlternatesVarargs(value: USBAlternateInterface*): Self = StObject.set(x, "alternates", js.Array(value*))
     
     inline def setClaimed(value: Boolean): Self = StObject.set(x, "claimed", value.asInstanceOf[js.Any])
     

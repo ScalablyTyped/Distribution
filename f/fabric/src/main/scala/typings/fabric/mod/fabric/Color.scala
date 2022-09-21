@@ -1,6 +1,5 @@
 package typings.fabric.mod.fabric
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The purpose of Color is to abstract and encapsulate common color operations;
   * @param color optional in hex or rgb(a) format
   */
-class Color ()
+open class Color ()
   extends typings.fabric.fabricImplMod.Color {
   def this(color: String) = this()
 }
@@ -66,8 +65,8 @@ object Color {
     */
   @JSImport("fabric", "fabric.Color.reHSLa")
   @js.native
-  def reHSLa: RegExp = js.native
-  inline def reHSLa_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reHSLa")(x.asInstanceOf[js.Any])
+  def reHSLa: js.RegExp = js.native
+  inline def reHSLa_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reHSLa")(x.asInstanceOf[js.Any])
   
   /**
     * Regex matching color in HEX format (ex: #FF5544CC, #FF5555, 010155, aff)
@@ -77,8 +76,8 @@ object Color {
     */
   @JSImport("fabric", "fabric.Color.reHex")
   @js.native
-  def reHex: RegExp = js.native
-  inline def reHex_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reHex")(x.asInstanceOf[js.Any])
+  def reHex: js.RegExp = js.native
+  inline def reHex_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reHex")(x.asInstanceOf[js.Any])
   
   /**
     * Regex matching color in RGB or RGBA formats (ex: rgb(0, 0, 0), rgba(255, 100, 10, 0.5), rgba( 255 , 100 , 10 , 0.5 ), rgb(1,1,1), rgba(100%, 60%, 10%, 0.5))
@@ -88,8 +87,8 @@ object Color {
     */
   @JSImport("fabric", "fabric.Color.reRGBa")
   @js.native
-  def reRGBa: RegExp = js.native
-  inline def reRGBa_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reRGBa")(x.asInstanceOf[js.Any])
+  def reRGBa: js.RegExp = js.native
+  inline def reRGBa_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reRGBa")(x.asInstanceOf[js.Any])
   
   /**
     * Returns array represenatation (ex: [100, 100, 200, 1]) of a color that's in HEX format

@@ -24,7 +24,7 @@ trait Events extends StObject {
     * })
     */
   @JSName("on")
-  def on_end(`type`: end, callback: js.Function1[/* error */ js.Any, Unit]): Events = js.native
+  def on_end(`type`: end, callback: js.Function1[/* error */ Any, Unit]): Events = js.native
   /**
     * Map Event
     *
@@ -54,7 +54,7 @@ trait Events extends StObject {
     * })
     */
   @JSName("on")
-  def on_reduce(`type`: reduce, callback: js.Function2[/* result */ js.Any, /* tile */ Tile, Unit]): Events = js.native
+  def on_reduce(`type`: reduce, callback: js.Function2[/* result */ Any, /* tile */ Tile, Unit]): Events = js.native
   /**
     * Start Event
     *

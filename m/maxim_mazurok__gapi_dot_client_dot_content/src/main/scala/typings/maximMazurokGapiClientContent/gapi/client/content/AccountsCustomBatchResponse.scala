@@ -9,7 +9,7 @@ trait AccountsCustomBatchResponse extends StObject {
   /** The result of the execution of the batch requests. */
   var entries: js.UndefOr[js.Array[AccountsCustomBatchResponseEntry]] = js.undefined
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#accountsCustomBatchResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#accountsCustomBatchResponse`". */
   var kind: js.UndefOr[String] = js.undefined
 }
 object AccountsCustomBatchResponse {
@@ -25,7 +25,7 @@ object AccountsCustomBatchResponse {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    inline def setEntriesVarargs(value: AccountsCustomBatchResponseEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: AccountsCustomBatchResponseEntry*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -1,8 +1,11 @@
 package typings.puppeteerCore
 
+import typings.node.childProcessMod.ChildProcess
 import typings.puppeteerCore.anon.PreferredRevision
-import typings.puppeteerCore.connectionMod.Connection
+import typings.puppeteerCore.anon.SlowMo
+import typings.puppeteerCore.commonConnectionMod.Connection
 import typings.puppeteerCore.launchOptionsMod.LaunchOptions
+import typings.puppeteerCore.productMod.Product
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,31 +14,29 @@ object browserRunnerMod {
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/node/BrowserRunner", "BrowserRunner")
   @js.native
-  class BrowserRunner protected () extends StObject {
-    def this(executablePath: String, processArguments: js.Array[String]) = this()
-    def this(executablePath: String, processArguments: js.Array[String], tempDirectory: String) = this()
-    
-    /* private */ var _closed: js.Any = js.native
-    
-    /* private */ var _executablePath: js.Any = js.native
-    
-    /* private */ var _listeners: js.Any = js.native
-    
-    /* private */ var _processArguments: js.Any = js.native
-    
-    /* private */ var _processClosing: js.Any = js.native
-    
-    /* private */ var _tempDirectory: js.Any = js.native
+  open class BrowserRunner protected () extends StObject {
+    def this(product: Product, executablePath: String, processArguments: js.Array[String], userDataDir: String) = this()
+    def this(
+      product: Product,
+      executablePath: String,
+      processArguments: js.Array[String],
+      userDataDir: String,
+      isTempUserDataDir: Boolean
+    ) = this()
     
     def close(): js.Promise[Unit] = js.native
     
-    var connection: js.Any = js.native
+    var connection: js.UndefOr[Connection] = js.native
     
     def kill(): Unit = js.native
     
-    var proc: js.Any = js.native
+    /* private */ var `private`: Any = js.native
     
-    def setupConnection(options: PreferredRevision): js.Promise[Connection] = js.native
+    var proc: js.UndefOr[ChildProcess] = js.native
+    
+    def setupConnection(options: SlowMo): js.Promise[Connection] = js.native
+    
+    def setupWebDriverBiDiConnection(options: PreferredRevision): js.Promise[typings.puppeteerCore.connectionMod.Connection] = js.native
     
     def start(options: LaunchOptions): Unit = js.native
   }

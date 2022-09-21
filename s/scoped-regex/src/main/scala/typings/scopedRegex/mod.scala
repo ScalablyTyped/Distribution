@@ -1,45 +1,24 @@
 package typings.scopedRegex
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-  	Regular expression for matching [scoped npm package names](https://docs.npmjs.com/misc/scope).
-  	@returns A `RegExp` for matching scoped package names.
-  	@example
-  	```
-  	import scopedRegex = require('scoped-regex');
-  	scopedRegex({exact: true}).test('@sindresorhus/df');
-  	//=> true
-  	'foo @sindresorhus/df bar'.match(scopedRegex());
-  	//=> ['@sindresorhus/df']
-  	```
-  	*/
-  inline def apply(): RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RegExp]
-  inline def apply(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
-  
   @JSImport("scoped-regex", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function scopedRegex(options?: scopedRegex.Options): RegExp;
-  // export = scopedRegex;
-  @JSImport("scoped-regex", "default")
-  @js.native
-  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof scopedRegex */ js.Any = js.native
-  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof scopedRegex */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default(): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.RegExp]
+  inline def default(options: Options): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.RegExp]
   
   trait Options extends StObject {
     
     /**
-    		Only match an exact string. By default, it matches any scoped package names in a string. Useful with `RegExp#test()` to check if a string is a scoped package name.
-    		@default false
-    		*/
+    	Only match an exact string. By default, it matches any scoped package names in a string. Useful with `RegExp#test()` to check if a string is a scoped package name.
+    	@default false
+    	*/
     val exact: js.UndefOr[Boolean] = js.undefined
   }
   object Options {

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TreeListColumn extends StObject {
   
-  var attributes: js.UndefOr[js.Any] = js.undefined
+  var attributes: js.UndefOr[Any] = js.undefined
   
-  var columns: js.UndefOr[js.Any] = js.undefined
+  var columns: js.UndefOr[Any] = js.undefined
   
   var command: js.UndefOr[js.Array[TreeListColumnCommandItem]] = js.undefined
   
@@ -29,11 +29,13 @@ trait TreeListColumn extends StObject {
   
   var format: js.UndefOr[String] = js.undefined
   
-  var headerAttributes: js.UndefOr[js.Any] = js.undefined
+  var headerAttributes: js.UndefOr[Any] = js.undefined
   
   var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
+  var includeChildren: js.UndefOr[Boolean] = js.undefined
   
   var lockable: js.UndefOr[Boolean] = js.undefined
   
@@ -42,6 +44,8 @@ trait TreeListColumn extends StObject {
   var menu: js.UndefOr[Boolean] = js.undefined
   
   var minScreenWidth: js.UndefOr[Double] = js.undefined
+  
+  var selectable: js.UndefOr[Boolean] = js.undefined
   
   var sortable: js.UndefOr[Boolean | TreeListColumnSortable] = js.undefined
   
@@ -60,11 +64,11 @@ object TreeListColumn {
   
   extension [Self <: TreeListColumn](x: Self) {
     
-    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
@@ -72,7 +76,7 @@ object TreeListColumn {
     
     inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    inline def setCommandVarargs(value: TreeListColumnCommandItem*): Self = StObject.set(x, "command", js.Array(value :_*))
+    inline def setCommandVarargs(value: TreeListColumnCommandItem*): Self = StObject.set(x, "command", js.Array(value*))
     
     inline def setEditable(value: js.Function): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
@@ -106,7 +110,7 @@ object TreeListColumn {
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setHeaderAttributes(value: js.Any): Self = StObject.set(x, "headerAttributes", value.asInstanceOf[js.Any])
+    inline def setHeaderAttributes(value: Any): Self = StObject.set(x, "headerAttributes", value.asInstanceOf[js.Any])
     
     inline def setHeaderAttributesUndefined: Self = StObject.set(x, "headerAttributes", js.undefined)
     
@@ -117,6 +121,10 @@ object TreeListColumn {
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setIncludeChildren(value: Boolean): Self = StObject.set(x, "includeChildren", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeChildrenUndefined: Self = StObject.set(x, "includeChildren", js.undefined)
     
     inline def setLockable(value: Boolean): Self = StObject.set(x, "lockable", value.asInstanceOf[js.Any])
     
@@ -133,6 +141,10 @@ object TreeListColumn {
     inline def setMinScreenWidth(value: Double): Self = StObject.set(x, "minScreenWidth", value.asInstanceOf[js.Any])
     
     inline def setMinScreenWidthUndefined: Self = StObject.set(x, "minScreenWidth", js.undefined)
+    
+    inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
     inline def setSortable(value: Boolean | TreeListColumnSortable): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
     

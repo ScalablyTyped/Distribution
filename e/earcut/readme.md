@@ -10,10 +10,10 @@ The fastest and smallest JavaScript polygon triangulation library for your WebGL
 | ------------------ | :-------------: |
 | Full name          | earcut |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 159 |
-| # downloads        | 19118859 |
-| # stars            | 5 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3649847.0 |
+| # stars            | 1691.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/earcut#readme)

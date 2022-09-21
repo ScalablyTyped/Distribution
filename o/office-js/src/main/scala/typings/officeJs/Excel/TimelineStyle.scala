@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a `TimelineStyle`, which defines style elements by region in the timeline.
   *
-  * Represents a Timeline style, which defines style elements by region in the Timeline.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @js.native
@@ -26,17 +26,19 @@ trait TimelineStyle
   var context_TimelineStyle: RequestContext = js.native
   
   /**
-    * Deletes the TableStyle.
+    * Deletes the table style.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   
   /**
-    * Creates a duplicate of this TimelineStyle with copies of all the style elements.
+    * Creates a duplicate of this timeline style with copies of all the style elements.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
-    * @returns The new TimelineStyle object that has been duplicated from this TimelineStyle.
+    * @returns The new `TimelineStyle` object that has been duplicated from this timeline style.
     */
   def duplicate(): TimelineStyle = js.native
   
@@ -52,29 +54,23 @@ trait TimelineStyle
   def load(propertyNames: js.Array[String]): TimelineStyle = js.native
   
   /**
+    * Specifies the name of the timeline style.
     *
-    * Gets the name of the TimelineStyle.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var name: String = js.native
   
   /**
+    * Specifies if this `TimelineStyle` object is read-only.
     *
-    * Specifies if this TimelineStyle object is read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   val readOnly: Boolean = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.TimelineStyle): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("readmore-js", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Readmore {
     def this(element: String) = this()

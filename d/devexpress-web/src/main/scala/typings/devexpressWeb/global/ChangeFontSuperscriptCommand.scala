@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFontSuperscriptCommand")
 @js.native
-class ChangeFontSuperscriptCommand ()
+open class ChangeFontSuperscriptCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFontSuperscriptCommand {
   

@@ -29,7 +29,7 @@ object ListCreatedArtifactsResult {
     
     inline def setCreatedArtifactListUndefined: Self = StObject.set(x, "CreatedArtifactList", js.undefined)
     
-    inline def setCreatedArtifactListVarargs(value: CreatedArtifact*): Self = StObject.set(x, "CreatedArtifactList", js.Array(value :_*))
+    inline def setCreatedArtifactListVarargs(value: CreatedArtifact*): Self = StObject.set(x, "CreatedArtifactList", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

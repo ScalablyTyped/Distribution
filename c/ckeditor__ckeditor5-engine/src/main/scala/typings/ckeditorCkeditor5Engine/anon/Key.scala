@@ -1,6 +1,5 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,14 +8,14 @@ trait Key extends StObject {
   
   var key: String
   
-  var name: String
+  var name: js.UndefOr[String] = js.undefined
   
-  var value: String | RegExp | js.Function
+  var values: js.Array[String]
 }
 object Key {
   
-  inline def apply(key: String, name: String, value: String | RegExp | js.Function): Key = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(key: String, values: js.Array[String]): Key = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
   
@@ -26,6 +25,10 @@ object Key {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: String | RegExp | js.Function): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

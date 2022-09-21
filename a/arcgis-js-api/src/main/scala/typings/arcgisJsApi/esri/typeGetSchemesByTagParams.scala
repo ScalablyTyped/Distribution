@@ -2,7 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`point-cloud-class`
 import typings.arcgisJsApi.arcgisJsApiStrings.dark
-import typings.arcgisJsApi.arcgisJsApiStrings.default
+import typings.arcgisJsApi.arcgisJsApiStrings.default_
 import typings.arcgisJsApi.arcgisJsApiStrings.light
 import typings.arcgisJsApi.arcgisJsApiStrings.mesh
 import typings.arcgisJsApi.arcgisJsApiStrings.multipatch
@@ -44,7 +44,7 @@ trait typeGetSchemesByTagParams
   /**
     * The geometry type of the features to visualize.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemesByTag)
+    * [Read more...](global.html#geometryType)
     */
   var geometryType: point | multipoint | polyline | polygon | mesh | multipatch
   
@@ -58,9 +58,11 @@ trait typeGetSchemesByTagParams
   /**
     * Determines whether to return a standardized  unique value scheme for point cloud class renderers (i.e.
     *
+    * @default default
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemesByTag)
     */
-  var theme: js.UndefOr[`point-cloud-class` | default] = js.undefined
+  var theme: js.UndefOr[`point-cloud-class` | default_] = js.undefined
   
   /**
     * The SceneView instance in which the scheme will be used.
@@ -102,7 +104,7 @@ object typeGetSchemesByTagParams {
     
     inline def setExcludedTagsUndefined: Self = StObject.set(x, "excludedTags", js.undefined)
     
-    inline def setExcludedTagsVarargs(value: String*): Self = StObject.set(x, "excludedTags", js.Array(value :_*))
+    inline def setExcludedTagsVarargs(value: String*): Self = StObject.set(x, "excludedTags", js.Array(value*))
     
     inline def setGeometryType(value: point | multipoint | polyline | polygon | mesh | multipatch): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
@@ -110,9 +112,9 @@ object typeGetSchemesByTagParams {
     
     inline def setIncludedTagsUndefined: Self = StObject.set(x, "includedTags", js.undefined)
     
-    inline def setIncludedTagsVarargs(value: String*): Self = StObject.set(x, "includedTags", js.Array(value :_*))
+    inline def setIncludedTagsVarargs(value: String*): Self = StObject.set(x, "includedTags", js.Array(value*))
     
-    inline def setTheme(value: `point-cloud-class` | default): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: `point-cloud-class` | default_): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     

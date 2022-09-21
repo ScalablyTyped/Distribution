@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DataAccessPages extends StObject {
   
-  def apply(var_0: js.Any): DataAccessPage = js.native
+  def apply(var_0: Any): DataAccessPage = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native
   
@@ -15,7 +15,7 @@ trait DataAccessPages extends StObject {
   
   def IsMemberSafe(dispid: Double): Boolean = js.native
   
-  def Item(var_0: js.Any): DataAccessPage = js.native
+  def Item(var_0: Any): DataAccessPage = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

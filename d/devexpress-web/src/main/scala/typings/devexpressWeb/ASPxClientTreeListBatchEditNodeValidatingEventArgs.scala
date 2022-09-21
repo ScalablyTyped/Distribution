@@ -19,11 +19,11 @@ trait ASPxClientTreeListBatchEditNodeValidatingEventArgs
   /**
     * Provides validation information of a validated node.
     */
-  var validationInfo: js.Any
+  var validationInfo: Any
 }
 object ASPxClientTreeListBatchEditNodeValidatingEventArgs {
   
-  inline def apply(nodeKey: String, validationInfo: js.Any): ASPxClientTreeListBatchEditNodeValidatingEventArgs = {
+  inline def apply(nodeKey: String, validationInfo: Any): ASPxClientTreeListBatchEditNodeValidatingEventArgs = {
     val __obj = js.Dynamic.literal(nodeKey = nodeKey.asInstanceOf[js.Any], validationInfo = validationInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListBatchEditNodeValidatingEventArgs]
   }
@@ -32,6 +32,6 @@ object ASPxClientTreeListBatchEditNodeValidatingEventArgs {
     
     inline def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
     
-    inline def setValidationInfo(value: js.Any): Self = StObject.set(x, "validationInfo", value.asInstanceOf[js.Any])
+    inline def setValidationInfo(value: Any): Self = StObject.set(x, "validationInfo", value.asInstanceOf[js.Any])
   }
 }

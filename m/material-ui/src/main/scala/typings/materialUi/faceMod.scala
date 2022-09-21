@@ -10,10 +10,10 @@ object faceMod {
   
   @JSImport("material-ui/svg-icons/action/face", JSImport.Default)
   @js.native
-  class default () extends ActionFace
+  open class default () extends ActionFace
   
   @JSImport("material-ui/svg-icons/action/face", "ActionFace")
   @js.native
-  class ActionFace ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionFace ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

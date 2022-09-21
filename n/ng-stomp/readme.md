@@ -10,10 +10,10 @@ STOMP for AngularJS
 | ------------------ | :-------------: |
 | Full name          | ng-stomp |
 | Keywords           | AngularJS, STOMP, websocket |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 30805 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1513.3333333333333 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/beevelop/ng-stomp)

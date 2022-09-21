@@ -15,7 +15,7 @@ trait AggregateContactManager extends StObject {
     * @param contact The aggregate contact from which to extract the list of raw contacts.
     * @return The list of individual (raw) contacts from the specified aggregate contact.
     */
-  def findRawContactsAsync(contact: Contact): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+  def findRawContactsAsync(contact: Contact): IPromiseWithIAsyncOperation[IVectorView[Any]]
   
   /**
     * Asynchronously attempts to link contacts together to make an aggregate contact.
@@ -43,7 +43,7 @@ trait AggregateContactManager extends StObject {
 object AggregateContactManager {
   
   inline def apply(
-    findRawContactsAsync: Contact => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
+    findRawContactsAsync: Contact => IPromiseWithIAsyncOperation[IVectorView[Any]],
     tryLinkContactsAsync: (Contact, Contact) => IPromiseWithIAsyncOperation[Contact],
     trySetPreferredSourceForPictureAsync: (Contact, Contact) => IPromiseWithIAsyncOperation[Boolean],
     unlinkRawContactAsync: Contact => IPromiseWithIAsyncAction
@@ -54,7 +54,7 @@ object AggregateContactManager {
   
   extension [Self <: AggregateContactManager](x: Self) {
     
-    inline def setFindRawContactsAsync(value: Contact => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findRawContactsAsync", js.Any.fromFunction1(value))
+    inline def setFindRawContactsAsync(value: Contact => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "findRawContactsAsync", js.Any.fromFunction1(value))
     
     inline def setTryLinkContactsAsync(value: (Contact, Contact) => IPromiseWithIAsyncOperation[Contact]): Self = StObject.set(x, "tryLinkContactsAsync", js.Any.fromFunction2(value))
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Devices.ZoomSettings")
 @js.native
 /** Initializes a new instance of the ZoomSettings class. */
-class ZoomSettings ()
+open class ZoomSettings ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Devices.ZoomSettings {
   

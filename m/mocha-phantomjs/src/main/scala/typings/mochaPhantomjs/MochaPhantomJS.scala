@@ -1,6 +1,5 @@
 package typings.mochaPhantomjs
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +12,11 @@ trait MochaPhantomJS extends StObject {
   
   var mochaStartWait: Double
   
-  var output: js.Any
+  var output: Any
   
   def run(): Unit
   
-  var startTime: Date
+  var startTime: js.Date
   
   var url: String
 }
@@ -27,9 +26,9 @@ object MochaPhantomJS {
     columns: Double,
     customizeMocha: MochaPhantomJSOptions => Unit,
     mochaStartWait: Double,
-    output: js.Any,
+    output: Any,
     run: () => Unit,
-    startTime: Date,
+    startTime: js.Date,
     url: String
   ): MochaPhantomJS = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], customizeMocha = js.Any.fromFunction1(customizeMocha), mochaStartWait = mochaStartWait.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], run = js.Any.fromFunction0(run), startTime = startTime.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
@@ -44,11 +43,11 @@ object MochaPhantomJS {
     
     inline def setMochaStartWait(value: Double): Self = StObject.set(x, "mochaStartWait", value.asInstanceOf[js.Any])
     
-    inline def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
     inline def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

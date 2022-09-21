@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EndAngle extends StObject {
   
+  /**
+    * Specifies the end angle of the circular gauge&apos;s arc.
+    */
   var endAngle: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the start angle of the circular gauge&apos;s arc.
+    */
   var startAngle: js.UndefOr[Double] = js.undefined
 }
 object EndAngle {

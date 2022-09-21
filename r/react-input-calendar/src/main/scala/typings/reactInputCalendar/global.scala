@@ -12,14 +12,12 @@ object global {
   /* was `typeof reactInputCalendar.ReactInputCalendar` */
   @JSGlobal("ReactInputCalendar")
   @js.native
-  class ReactInputCalendar_ ()
-    extends Component[ReactInputCalendarProps, ReactInputCalendarState, js.Any]
+  open class ReactInputCalendar_ () extends Component[ReactInputCalendarProps, ReactInputCalendarState, Any]
   
   object reactInputCalendar {
     
     @JSGlobal("reactInputCalendar.ReactInputCalendar")
     @js.native
-    class ReactInputCalendar ()
-      extends Component[ReactInputCalendarProps, ReactInputCalendarState, js.Any]
+    open class ReactInputCalendar () extends Component[ReactInputCalendarProps, ReactInputCalendarState, Any]
   }
 }

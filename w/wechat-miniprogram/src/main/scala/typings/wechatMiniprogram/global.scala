@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram
 
-import typings.std.ArrayBuffer
 import typings.std.Record
 import typings.wechatMiniprogram.DB.DatabaseCommand
 import typings.wechatMiniprogram.DB.IGeo
@@ -60,7 +59,7 @@ object global {
       */
     @JSGlobal("DB.APIBaseContract")
     @js.native
-    class APIBaseContract[PromiseReturn, CallbackReturn, Param /* <: IAPIParam[js.Any] */, Context] ()
+    open class APIBaseContract[PromiseReturn, CallbackReturn, Param /* <: IAPIParam[Any] */, Context] ()
       extends StObject
          with typings.wechatMiniprogram.DB.APIBaseContract[PromiseReturn, CallbackReturn, Param, Context] {
       
@@ -82,13 +81,13 @@ object global {
     
     @JSGlobal("DB.Batch")
     @js.native
-    class Batch ()
+    open class Batch ()
       extends StObject
          with typings.wechatMiniprogram.DB.Batch
     
     @JSGlobal("DB.CollectionReference")
     @js.native
-    class CollectionReference protected ()
+    open class CollectionReference protected ()
       extends StObject
          with typings.wechatMiniprogram.DB.CollectionReference {
       /* private */ def this(name: String, database: typings.wechatMiniprogram.DB.Database) = this()
@@ -99,7 +98,7 @@ object global {
       */
     @JSGlobal("DB.Database")
     @js.native
-    /* private */ class Database ()
+    /* private */ open class Database ()
       extends StObject
          with typings.wechatMiniprogram.DB.Database {
       
@@ -127,13 +126,13 @@ object global {
     
     @JSGlobal("DB.DatabaseAggregateCommand")
     @js.native
-    class DatabaseAggregateCommand ()
+    open class DatabaseAggregateCommand ()
       extends StObject
          with typings.wechatMiniprogram.DB.DatabaseAggregateCommand
     
     @JSGlobal("DB.DatabaseLogicCommand")
     @js.native
-    class DatabaseLogicCommand ()
+    open class DatabaseLogicCommand ()
       extends StObject
          with typings.wechatMiniprogram.DB.DatabaseLogicCommand {
       
@@ -152,27 +151,24 @@ object global {
     
     @JSGlobal("DB.DatabaseProjectionCommand")
     @js.native
-    class DatabaseProjectionCommand ()
+    open class DatabaseProjectionCommand ()
       extends StObject
          with typings.wechatMiniprogram.DB.DatabaseProjectionCommand
     
     @JSGlobal("DB.DatabaseQueryCommand")
     @js.native
-    class DatabaseQueryCommand ()
+    open class DatabaseQueryCommand ()
       extends StObject
          with typings.wechatMiniprogram.DB.DatabaseQueryCommand {
       
       /* CompleteClass */
-      override def all(`val`: js.Array[js.Any]): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
+      override def all(`val`: js.Array[Any]): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
       
       /* CompleteClass */
       override def and(expressions: typings.wechatMiniprogram.DB.DatabaseLogicCommand*): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
       
       /* CompleteClass */
-      override def elemMatch(`val`: js.Any): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
-      
-      /* CompleteClass */
-      override def eq(`val`: js.Any): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
+      override def elemMatch(`val`: Any): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
       
       /* CompleteClass */
       override def exists(`val`: Boolean): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
@@ -187,28 +183,28 @@ object global {
       override def geoWithin(options: IGeoWithinCommandOptions): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
       
       /* CompleteClass */
-      override def gt(`val`: js.Any): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
+      override def gt(`val`: Any): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
       
       /* CompleteClass */
-      override def gte(`val`: js.Any): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
+      override def gte(`val`: Any): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
       
       /* CompleteClass */
-      override def in(`val`: js.Array[js.Any]): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
+      override def in(`val`: js.Array[Any]): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
       
       /* CompleteClass */
-      override def lt(`val`: js.Any): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
+      override def lt(`val`: Any): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
       
       /* CompleteClass */
-      override def lte(`val`: js.Any): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
+      override def lte(`val`: Any): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
       
       /* CompleteClass */
       override def mod(divisor: Double, remainder: Double): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
       
       /* CompleteClass */
-      override def neq(`val`: js.Any): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
+      override def neq(`val`: Any): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
       
       /* CompleteClass */
-      override def nin(`val`: js.Array[js.Any]): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
+      override def nin(`val`: js.Array[Any]): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
       
       /* CompleteClass */
       override def nor(expressions: typings.wechatMiniprogram.DB.DatabaseLogicCommand*): typings.wechatMiniprogram.DB.DatabaseLogicCommand = js.native
@@ -225,13 +221,13 @@ object global {
     
     @JSGlobal("DB.DatabaseUpdateCommand")
     @js.native
-    class DatabaseUpdateCommand ()
+    open class DatabaseUpdateCommand ()
       extends StObject
          with typings.wechatMiniprogram.DB.DatabaseUpdateCommand
     
     @JSGlobal("DB.DocumentReference")
     @js.native
-    class DocumentReference protected ()
+    open class DocumentReference protected ()
       extends StObject
          with typings.wechatMiniprogram.DB.DocumentReference {
       /* private */ def this(docId: String, database: typings.wechatMiniprogram.DB.Database) = this()
@@ -308,7 +304,7 @@ object global {
       var longitude: Double = js.native
       
       /* CompleteClass */
-      override def toJSON(): Record[String, js.Any] = js.native
+      override def toJSON(): Record[String, Any] = js.native
     }
     
     @JSGlobal("DB.GeoPolygon")
@@ -393,13 +389,13 @@ object global {
     
     @JSGlobal("DB.Query")
     @js.native
-    class Query ()
+    open class Query ()
       extends StObject
          with typings.wechatMiniprogram.DB.Query
     
     @JSGlobal("DB.RealtimeListener")
     @js.native
-    class RealtimeListener ()
+    open class RealtimeListener ()
       extends StObject
          with typings.wechatMiniprogram.DB.RealtimeListener {
       
@@ -482,11 +478,11 @@ object global {
       extends StObject
          with typings.wechatMiniprogram.ICloud.CDN {
       def this(target: String) = this()
-      def this(target: ArrayBuffer) = this()
+      def this(target: js.typedarray.ArrayBuffer) = this()
       def this(target: ICDNFilePathSpec) = this()
       
       /* CompleteClass */
-      var target: String | ArrayBuffer | ICDNFilePathSpec = js.native
+      var target: String | js.typedarray.ArrayBuffer | ICDNFilePathSpec = js.native
     }
     
     // === end ===
@@ -502,7 +498,7 @@ object global {
   
   @JSGlobal("InternalSymbol")
   @js.native
-  class InternalSymbol ()
+  open class InternalSymbol ()
     extends StObject
        with typings.wechatMiniprogram.InternalSymbol
   
@@ -528,12 +524,14 @@ object global {
   
   @JSGlobal("console")
   @js.native
-  val console: Console = js.native
+  def console: Console = js.native
+  inline def console_=(x: Console): Unit = js.Dynamic.global.updateDynamic("console")(x.asInstanceOf[js.Any])
   
+  /** `module.exports` 的引用 */
   @JSGlobal("exports")
   @js.native
-  def exports: js.Any = js.native
-  inline def exports_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("exports")(x.asInstanceOf[js.Any])
+  def exports: Any = js.native
+  inline def exports_=(x: Any): Unit = js.Dynamic.global.updateDynamic("exports")(x.asInstanceOf[js.Any])
   
   @JSGlobal("getApp")
   @js.native
@@ -551,77 +549,93 @@ object global {
   def getCurrentPages: GetCurrentPages = js.native
   inline def getCurrentPages_=(x: GetCurrentPages): Unit = js.Dynamic.global.updateDynamic("getCurrentPages")(x.asInstanceOf[js.Any])
   
+  /** 当前模块对象 */
   object module {
     
     @JSGlobal("module")
     @js.native
     val ^ : js.Any = js.native
     
+    /** 模块向外暴露的对象，使用 `require` 引用该模块时可以获取 */
     @JSGlobal("module.exports")
     @js.native
-    def exports: js.Any = js.native
-    inline def exports_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
+    def exports: Any = js.native
+    inline def exports_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
   }
   
-  inline def require(module: String): js.Any = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  /** 引入模块。返回模块通过 `module.exports` 或 `exports` 暴露的接口。 */
+  inline def require(/** 需要引入模块文件相对于当前文件的相对路径，或 npm 模块名，或 npm 模块路径。不支持绝对路径 */
+  module: String): Any = js.Dynamic.global.applyDynamic("require")(module.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  /** 插件引入当前使用者小程序。返回使用者小程序通过 [插件配置中 `export` 暴露的接口](https://developers.weixin.qq.com/miniprogram/dev/framework/plugin/using.html#%E5%AF%BC%E5%87%BA%E5%88%B0%E6%8F%92%E4%BB%B6)。
+    *
+    * 该接口只在插件中存在
+    *
+    * 最低基础库： `2.11.1` */
+  inline def requireMiniProgram(): Any = js.Dynamic.global.applyDynamic("requireMiniProgram")().asInstanceOf[Any]
+  
+  /** 引入插件。返回插件通过 `main` 暴露的接口。 */
+  inline def requirePlugin(/** 需要引入的插件的 alias */
+  module: String): Any = js.Dynamic.global.applyDynamic("requirePlugin")(module.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** [number setInterval(function callback, number delay, any rest)](https://developers.weixin.qq.com/miniprogram/dev/api/base/timer/setInterval.html)
     *
     * 设定一个定时器。按照指定的周期（以毫秒计）来执行注册的回调函数 */
   inline def setInterval(/** 回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, js.Any]): Double = js.Dynamic.global.applyDynamic("setInterval")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
+  callback: js.Function1[/* repeated */ Any, Any]): Double = js.Dynamic.global.applyDynamic("setInterval")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def setInterval(
     /** 回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, js.Any],
+  callback: js.Function1[/* repeated */ Any, Any],
     /** 执行回调函数之间的时间间隔，单位 ms。 */
   delay: Double
   ): Double = (js.Dynamic.global.applyDynamic("setInterval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def setInterval(
     /** 回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, js.Any],
+  callback: js.Function1[/* repeated */ Any, Any],
     /** 执行回调函数之间的时间间隔，单位 ms。 */
   delay: Double,
     /** param1, param2, ..., paramN 等附加参数，它们会作为参数传递给回调函数。 */
-  rest: js.Any
+  rest: Any
   ): Double = (js.Dynamic.global.applyDynamic("setInterval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def setInterval(
     /** 回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, js.Any],
+  callback: js.Function1[/* repeated */ Any, Any],
     /** 执行回调函数之间的时间间隔，单位 ms。 */
   delay: Unit,
     /** param1, param2, ..., paramN 等附加参数，它们会作为参数传递给回调函数。 */
-  rest: js.Any
+  rest: Any
   ): Double = (js.Dynamic.global.applyDynamic("setInterval")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /** [number setTimeout(function callback, number delay, any rest)](https://developers.weixin.qq.com/miniprogram/dev/api/base/timer/setTimeout.html)
     *
     * 设定一个定时器。在定时到期以后执行注册的回调函数 */
   inline def setTimeout(/** 回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, js.Any]): Double = js.Dynamic.global.applyDynamic("setTimeout")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
+  callback: js.Function1[/* repeated */ Any, Any]): Double = js.Dynamic.global.applyDynamic("setTimeout")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def setTimeout(
     /** 回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, js.Any],
+  callback: js.Function1[/* repeated */ Any, Any],
     /** 延迟的时间，函数的调用会在该延迟之后发生，单位 ms。 */
   delay: Double
   ): Double = (js.Dynamic.global.applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def setTimeout(
     /** 回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, js.Any],
+  callback: js.Function1[/* repeated */ Any, Any],
     /** 延迟的时间，函数的调用会在该延迟之后发生，单位 ms。 */
   delay: Double,
     /** param1, param2, ..., paramN 等附加参数，它们会作为参数传递给回调函数。 */
-  rest: js.Any
+  rest: Any
   ): Double = (js.Dynamic.global.applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def setTimeout(
     /** 回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, js.Any],
+  callback: js.Function1[/* repeated */ Any, Any],
     /** 延迟的时间，函数的调用会在该延迟之后发生，单位 ms。 */
   delay: Unit,
     /** param1, param2, ..., paramN 等附加参数，它们会作为参数传递给回调函数。 */
-  rest: js.Any
+  rest: Any
   ): Double = (js.Dynamic.global.applyDynamic("setTimeout")(callback.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSGlobal("wx")
   @js.native
-  val wx: Wx = js.native
+  def wx: Wx = js.native
+  inline def wx_=(x: Wx): Unit = js.Dynamic.global.updateDynamic("wx")(x.asInstanceOf[js.Any])
 }

@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Page extends StObject {
   
-  /** The Markdown content of the page. You can use (== include {path} ==) to include content from a Markdown file. */
+  /**
+    * The Markdown content of the page. You can use (== include {path} ==) to include content from a Markdown file. The content can be used to produce the documentation page such as HTML
+    * format page.
+    */
   var content: js.UndefOr[String] = js.undefined
   
   /**
@@ -40,6 +43,6 @@ object Page {
     
     inline def setSubpagesUndefined: Self = StObject.set(x, "subpages", js.undefined)
     
-    inline def setSubpagesVarargs(value: Page*): Self = StObject.set(x, "subpages", js.Array(value :_*))
+    inline def setSubpagesVarargs(value: Page*): Self = StObject.set(x, "subpages", js.Array(value*))
   }
 }

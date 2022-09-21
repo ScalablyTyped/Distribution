@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-ui", "RippleFeedback")
 @js.native
-class RippleFeedback protected ()
-  extends Component[RippleFeedbackProps, js.Any, js.Any] {
+open class RippleFeedback protected () extends Component[RippleFeedbackProps, Any, Any] {
   def this(props: RippleFeedbackProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: RippleFeedbackProps, context: js.Any) = this()
+  def this(props: RippleFeedbackProps, context: Any) = this()
 }

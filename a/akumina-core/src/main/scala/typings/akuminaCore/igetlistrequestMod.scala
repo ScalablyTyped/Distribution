@@ -9,7 +9,7 @@ object igetlistrequestMod {
   
   trait IGetListRequest extends StObject {
     
-    var PageManager: js.UndefOr[js.Any] = js.undefined
+    var PageManager: js.UndefOr[Any] = js.undefined
     
     var additionalSelectFields: String
     
@@ -29,15 +29,15 @@ object igetlistrequestMod {
     
     var listName: String
     
-    var orderBy: js.UndefOr[js.Any] = js.undefined
+    var orderBy: js.UndefOr[Any] = js.undefined
     
     var personaCheckRequired: Boolean
     
     var postData: js.Object
     
-    var preloadCallback: js.UndefOr[js.Any] = js.undefined
+    var preloadCallback: js.UndefOr[Any] = js.undefined
     
-    var queryFilter: js.UndefOr[js.Any] = js.undefined
+    var queryFilter: js.UndefOr[Any] = js.undefined
     
     var rowLimit: Double
     
@@ -88,11 +88,11 @@ object igetlistrequestMod {
       
       inline def setListName(value: String): Self = StObject.set(x, "listName", value.asInstanceOf[js.Any])
       
-      inline def setOrderBy(value: js.Any): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+      inline def setOrderBy(value: Any): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
       
       inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
       
-      inline def setPageManager(value: js.Any): Self = StObject.set(x, "PageManager", value.asInstanceOf[js.Any])
+      inline def setPageManager(value: Any): Self = StObject.set(x, "PageManager", value.asInstanceOf[js.Any])
       
       inline def setPageManagerUndefined: Self = StObject.set(x, "PageManager", js.undefined)
       
@@ -100,11 +100,11 @@ object igetlistrequestMod {
       
       inline def setPostData(value: js.Object): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
       
-      inline def setPreloadCallback(value: js.Any): Self = StObject.set(x, "preloadCallback", value.asInstanceOf[js.Any])
+      inline def setPreloadCallback(value: Any): Self = StObject.set(x, "preloadCallback", value.asInstanceOf[js.Any])
       
       inline def setPreloadCallbackUndefined: Self = StObject.set(x, "preloadCallback", js.undefined)
       
-      inline def setQueryFilter(value: js.Any): Self = StObject.set(x, "queryFilter", value.asInstanceOf[js.Any])
+      inline def setQueryFilter(value: Any): Self = StObject.set(x, "queryFilter", value.asInstanceOf[js.Any])
       
       inline def setQueryFilterUndefined: Self = StObject.set(x, "queryFilter", js.undefined)
       

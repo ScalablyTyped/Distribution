@@ -1,7 +1,7 @@
 
 # Scala.js typings for tail
 
-Typings are for version 2.0
+Typings are for version 2.2
 
 ## Library description:
 tail a file in node
@@ -10,10 +10,10 @@ tail a file in node
 | ------------------ | :-------------: |
 | Full name          | tail |
 | Keywords           | tail, file, logs |
-| # releases         | 6 |
-| # dependents       | 200 |
-| # downloads        | 8968015 |
-| # stars            | 12 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 915839.6666666666 |
+| # stars            | 408.0 |
 
 ## Links
 - [Homepage](https://www.lucagrulla.com/node-tail)

@@ -10,8 +10,8 @@ object tabMod {
   
   @JSImport("muicss/lib/react/tab", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TabProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TabProps, js.Object, Any]
   
-  type Tab = Component[TabProps, js.Object, js.Any]
+  type Tab = Component[TabProps, js.Object, Any]
 }

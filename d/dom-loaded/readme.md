@@ -1,7 +1,7 @@
 
 # Scala.js typings for dom-loaded
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Check when the DOM has loaded like `DOMContentLoaded`
@@ -9,11 +9,11 @@ Check when the DOM has loaded like `DOMContentLoaded`
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | dom-loaded |
-| Keywords           | browser, dom, document, ready, doc, complete, check, wait, domcontentloaded, readystate |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 44160 |
-| # stars            | 0 |
+| Keywords           | browser, dom, document, ready, complete, check, wait, domcontentloaded, readystate |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2849.3333333333335 |
+| # stars            | 99.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/dom-loaded#readme)

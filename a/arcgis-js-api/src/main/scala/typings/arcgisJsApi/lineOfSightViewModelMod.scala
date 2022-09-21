@@ -22,7 +22,7 @@ object lineOfSightViewModelMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LineOfSight-LineOfSightViewModel.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with LineOfSightViewModel {
     def this(properties: LineOfSightViewModelProperties) = this()

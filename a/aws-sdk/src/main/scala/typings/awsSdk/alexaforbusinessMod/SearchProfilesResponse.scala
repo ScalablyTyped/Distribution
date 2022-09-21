@@ -38,7 +38,7 @@ object SearchProfilesResponse {
     
     inline def setProfilesUndefined: Self = StObject.set(x, "Profiles", js.undefined)
     
-    inline def setProfilesVarargs(value: ProfileData*): Self = StObject.set(x, "Profiles", js.Array(value :_*))
+    inline def setProfilesVarargs(value: ProfileData*): Self = StObject.set(x, "Profiles", js.Array(value*))
     
     inline def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     

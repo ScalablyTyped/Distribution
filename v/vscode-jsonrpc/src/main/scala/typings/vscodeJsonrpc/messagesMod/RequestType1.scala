@@ -4,14 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-jsonrpc/lib/messages", "RequestType1")
+@JSImport("vscode-jsonrpc/lib/common/messages", "RequestType1")
 @js.native
-class RequestType1[P1, R, E, RO] protected () extends AbstractMessageType {
+open class RequestType1[P1, R, E] protected () extends AbstractMessageSignature {
   def this(method: String) = this()
+  def this(method: String, _parameterStructures: ParameterStructures) = this()
+  
+  /* private */ var _parameterStructures: Any = js.native
   
   /**
     * Clients must not use this property. It is here to ensure correct typing.
     */
   @JSName("_")
-  val _underscore: js.UndefOr[js.Tuple5[P1, R, E, RO, _EM]] = js.native
+  val _underscore: js.UndefOr[js.Tuple4[P1, R, E, _EM]] = js.native
+  
+  @JSName("parameterStructures")
+  def parameterStructures_MRequestType1: ParameterStructures = js.native
 }

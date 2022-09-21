@@ -25,7 +25,7 @@ object PartitionResponse {
     
     inline def setPartitionsUndefined: Self = StObject.set(x, "partitions", js.undefined)
     
-    inline def setPartitionsVarargs(value: Partition*): Self = StObject.set(x, "partitions", js.Array(value :_*))
+    inline def setPartitionsVarargs(value: Partition*): Self = StObject.set(x, "partitions", js.Array(value*))
     
     inline def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     

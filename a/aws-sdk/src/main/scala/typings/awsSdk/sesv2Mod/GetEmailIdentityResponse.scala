@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetEmailIdentityResponse extends StObject {
   
   /**
+    * The configuration set used by default when sending from this identity.
+    */
+  var ConfigurationSetName: js.UndefOr[typings.awsSdk.sesv2Mod.ConfigurationSetName] = js.undefined
+  
+  /**
     * An object that contains information about the DKIM attributes for the identity.
     */
   var DkimAttributes: js.UndefOr[typings.awsSdk.sesv2Mod.DkimAttributes] = js.undefined
@@ -17,7 +22,7 @@ trait GetEmailIdentityResponse extends StObject {
   var FeedbackForwardingStatus: js.UndefOr[Enabled] = js.undefined
   
   /**
-    * The email identity type.
+    * The email identity type. Note: the MANAGED_DOMAIN identity type is not supported.
     */
   var IdentityType: js.UndefOr[typings.awsSdk.sesv2Mod.IdentityType] = js.undefined
   
@@ -50,6 +55,10 @@ object GetEmailIdentityResponse {
   
   extension [Self <: GetEmailIdentityResponse](x: Self) {
     
+    inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    
+    inline def setConfigurationSetNameUndefined: Self = StObject.set(x, "ConfigurationSetName", js.undefined)
+    
     inline def setDkimAttributes(value: DkimAttributes): Self = StObject.set(x, "DkimAttributes", value.asInstanceOf[js.Any])
     
     inline def setDkimAttributesUndefined: Self = StObject.set(x, "DkimAttributes", js.undefined)
@@ -74,7 +83,7 @@ object GetEmailIdentityResponse {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVerifiedForSendingStatus(value: Enabled): Self = StObject.set(x, "VerifiedForSendingStatus", value.asInstanceOf[js.Any])
     

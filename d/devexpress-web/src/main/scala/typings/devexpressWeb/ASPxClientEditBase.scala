@@ -24,7 +24,7 @@ trait ASPxClientEditBase
   /**
     * Returns the editor's value.
     */
-  def GetValue(): js.Any
+  def GetValue(): Any
   
   /**
     * Specifies the text displayed in the editor caption.
@@ -42,7 +42,7 @@ trait ASPxClientEditBase
     * Changes the editor's value.
     * @param value An object representing the data to be assigned to the editor's edit value.
     */
-  def SetValue(value: js.Any): Unit
+  def SetValue(value: Any): Unit
 }
 object ASPxClientEditBase {
   
@@ -52,9 +52,9 @@ object ASPxClientEditBase {
     GetClientVisible: () => Boolean,
     GetEnabled: () => Boolean,
     GetHeight: () => Double,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
-    GetValue: () => js.Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
+    GetValue: () => Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     InCallback: () => Boolean,
@@ -64,7 +64,7 @@ object ASPxClientEditBase {
     SetClientVisible: Boolean => Unit,
     SetEnabled: Boolean => Unit,
     SetHeight: Double => Unit,
-    SetValue: js.Any => Unit,
+    SetValue: Any => Unit,
     SetVisible: Boolean => Unit,
     SetWidth: Double => Unit,
     name: String
@@ -79,12 +79,12 @@ object ASPxClientEditBase {
     
     inline def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     
     inline def setSetCaption(value: String => Unit): Self = StObject.set(x, "SetCaption", js.Any.fromFunction1(value))
     
     inline def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
     
-    inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: Any => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
   }
 }

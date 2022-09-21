@@ -26,6 +26,15 @@ trait ExportAssetsRequest extends StObject {
     * will be used. Due to delays in resource data collection and indexing, there is a volatile window during which running the same query may get different results.
     */
   var readTime: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A list of relationship types to export, for example: `INSTANCE_TO_INSTANCEGROUP`. This field should only be specified if content_type=RELATIONSHIP. * If specified: it snapshots
+    * specified relationships. It returns an error if any of the [relationship_types] doesn't belong to the supported relationship types of the [asset_types] or if any of the
+    * [asset_types] doesn't belong to the source types of the [relationship_types]. * Otherwise: it snapshots the supported relationships for all [asset_types] or returns an error if any
+    * of the [asset_types] has no relationship support. An unspecified asset types field means all supported asset_types. See [Introduction to Cloud Asset
+    * Inventory](https://cloud.google.com/asset-inventory/docs/overview) for all supported asset types and relationship types.
+    */
+  var relationshipTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ExportAssetsRequest {
   
@@ -40,7 +49,7 @@ object ExportAssetsRequest {
     
     inline def setAssetTypesUndefined: Self = StObject.set(x, "assetTypes", js.undefined)
     
-    inline def setAssetTypesVarargs(value: String*): Self = StObject.set(x, "assetTypes", js.Array(value :_*))
+    inline def setAssetTypesVarargs(value: String*): Self = StObject.set(x, "assetTypes", js.Array(value*))
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
@@ -53,5 +62,11 @@ object ExportAssetsRequest {
     inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
     inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    
+    inline def setRelationshipTypes(value: js.Array[String]): Self = StObject.set(x, "relationshipTypes", value.asInstanceOf[js.Any])
+    
+    inline def setRelationshipTypesUndefined: Self = StObject.set(x, "relationshipTypes", js.undefined)
+    
+    inline def setRelationshipTypesVarargs(value: String*): Self = StObject.set(x, "relationshipTypes", js.Array(value*))
   }
 }

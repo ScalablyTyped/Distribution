@@ -1,6 +1,6 @@
 package typings.schemaRegistry
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,17 +9,17 @@ object mod {
   
   @JSImport("schema-registry", "LivingAvroSchema")
   @js.native
-  class LivingAvroSchema protected () extends RegistryClient {
+  open class LivingAvroSchema protected () extends RegistryClient {
     def this(subject: String, version: String, config: RegistryClientConfig) = this()
     
     def fetch(): RegistryRequest = js.native
     def fetch(poll: Boolean): RegistryRequest = js.native
     
-    def fromBuffer(buffer: Buffer): js.Any = js.native
+    def fromBuffer(buffer: Buffer): Any = js.native
     
-    def on(args: js.Any*): Unit = js.native
+    def on(args: Any*): Unit = js.native
     
-    def removeListener(args: js.Any*): Unit = js.native
+    def removeListener(args: Any*): Unit = js.native
     
     def stop(): Unit = js.native
     
@@ -28,7 +28,7 @@ object mod {
   
   @JSImport("schema-registry", "RegistryClient")
   @js.native
-  class RegistryClient protected () extends StObject {
+  open class RegistryClient protected () extends StObject {
     def this(config: RegistryClientConfig) = this()
     
     def checkSubjectRegistration(subject: String, schema: js.Object): RegistryRequest = js.native
@@ -72,7 +72,7 @@ object mod {
     
     var id: Double
     
-    var schema: js.Any
+    var schema: Any
     
     var subject: String
     
@@ -80,7 +80,7 @@ object mod {
   }
   object AvroSchemaResponseInterface {
     
-    inline def apply(id: Double, schema: js.Any, subject: String, version: Double): AvroSchemaResponseInterface = {
+    inline def apply(id: Double, schema: Any, subject: String, version: Double): AvroSchemaResponseInterface = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[AvroSchemaResponseInterface]
     }
@@ -89,7 +89,7 @@ object mod {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
       inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       

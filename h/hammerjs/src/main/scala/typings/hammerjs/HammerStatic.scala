@@ -2,6 +2,15 @@ package typings.hammerjs
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
+import typings.hammerjs.hammerjsNumbers.`16`
+import typings.hammerjs.hammerjsNumbers.`1`
+import typings.hammerjs.hammerjsNumbers.`24`
+import typings.hammerjs.hammerjsNumbers.`2`
+import typings.hammerjs.hammerjsNumbers.`30`
+import typings.hammerjs.hammerjsNumbers.`32`
+import typings.hammerjs.hammerjsNumbers.`4`
+import typings.hammerjs.hammerjsNumbers.`6`
+import typings.hammerjs.hammerjsNumbers.`8`
 import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.SVGElement
@@ -21,32 +30,35 @@ trait HammerStatic
   
   var AttrRecognizer: AttrRecognizerStatic = js.native
   
-  var DIRECTION_ALL: Double = js.native
+  // DIRECTION_UP | DIRECTION_DOWN
+  var DIRECTION_ALL: `30` = js.native
   
-  var DIRECTION_DOWN: Double = js.native
+  var DIRECTION_DOWN: `16` = js.native
   
-  var DIRECTION_HORIZONTAL: Double = js.native
+  var DIRECTION_HORIZONTAL: `6` = js.native
   
-  var DIRECTION_LEFT: Double = js.native
+  var DIRECTION_LEFT: `2` = js.native
   
-  var DIRECTION_NONE: Double = js.native
+  var DIRECTION_NONE: `1` = js.native
   
-  var DIRECTION_RIGHT: Double = js.native
+  var DIRECTION_RIGHT: `4` = js.native
   
-  var DIRECTION_UP: Double = js.native
+  var DIRECTION_UP: `8` = js.native
   
-  var DIRECTION_VERTICAL: Double = js.native
+  // DIRECTION_LEFT | DIRECTION_RIGHT
+  var DIRECTION_VERTICAL: `24` = js.native
   
-  var INPUT_CANCEL: Double = js.native
+  var INPUT_CANCEL: `8` = js.native
   
-  var INPUT_END: Double = js.native
+  var INPUT_END: `4` = js.native
   
-  var INPUT_MOVE: Double = js.native
+  var INPUT_MOVE: `2` = js.native
   
-  var INPUT_START: Double = js.native
+  var INPUT_START: `1` = js.native
   
   var Input: HammerInput = js.native
   
+  // DIRECTION_HORIZONTAL | DIRECTION_VERTICAL
   var Manager: HammerManagerConstructor = js.native
   
   var MouseInput: typings.hammerjs.MouseInput = js.native
@@ -63,19 +75,20 @@ trait HammerStatic
   
   var Rotate: RotateRecognizerStatic = js.native
   
-  var STATE_BEGAN: Double = js.native
+  var STATE_BEGAN: `2` = js.native
   
-  var STATE_CANCELLED: Double = js.native
+  // same as STATE_ENDED
+  var STATE_CANCELLED: `16` = js.native
   
-  var STATE_CHANGED: Double = js.native
+  var STATE_CHANGED: `4` = js.native
   
-  var STATE_ENDED: Double = js.native
+  var STATE_ENDED: `8` = js.native
   
-  var STATE_FAILED: Double = js.native
+  var STATE_FAILED: `32` = js.native
   
-  var STATE_POSSIBLE: Double = js.native
+  var STATE_POSSIBLE: `1` = js.native
   
-  var STATE_RECOGNIZED: Double = js.native
+  var STATE_RECOGNIZED: `8` = js.native
   
   var SingleTouchInput: typings.hammerjs.SingleTouchInput = js.native
   
@@ -91,21 +104,21 @@ trait HammerStatic
   
   var VERSION: Double = js.native
   
-  def bindFn(fn: js.Function, context: js.Any): js.Function = js.native
+  def bindFn(fn: js.Function, context: Any): js.Function = js.native
   
   var defaults: HammerDefaults = js.native
   
-  def each(obj: js.Any, iterator: js.Function, context: js.Any): Unit = js.native
+  def each(obj: Any, iterator: js.Function, context: Any): Unit = js.native
   
-  def extend(dest: js.Any, src: js.Any, merge: Boolean): js.Any = js.native
+  def extend(dest: Any, src: Any, merge: Boolean): Any = js.native
   
-  def inherit(child: js.Function, base: js.Function, properties: js.Any): js.Any = js.native
+  def inherit(child: js.Function, base: js.Function, properties: Any): Any = js.native
   
-  def merge(dest: js.Any, src: js.Any): js.Any = js.native
+  def merge(dest: Any, src: Any): Any = js.native
   
   def off(target: EventTarget, types: String, handler: js.Function): Unit = js.native
   
   def on(target: EventTarget, types: String, handler: js.Function): Unit = js.native
   
-  def prefixed(obj: js.Any, property: String): String = js.native
+  def prefixed(obj: Any, property: String): String = js.native
 }

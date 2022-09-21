@@ -20,6 +20,8 @@ trait SceneViewEnvironment
   /**
     * Indicates whether atmosphere visualization is enabled.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
   var atmosphereEnabled: js.UndefOr[Boolean] = js.undefined
@@ -32,18 +34,31 @@ trait SceneViewEnvironment
   var background: js.UndefOr[Background] = js.undefined
   
   /**
-    * Lighting conditions of the scene.
+    * Indicates the type of lighting in the scene.
+    *
+    * @default SunLighting
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var lighting: js.UndefOr[SceneViewEnvironmentLighting] = js.undefined
+  var lighting: js.UndefOr[SunLighting | VirtualLighting] = js.undefined
   
   /**
     * Indicates whether stars visualization is enabled.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
   var starsEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates the type of weather visualization in the scene.
+    *
+    * @default SunnyWeather
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
+    */
+  var weather: js.UndefOr[SunnyWeather | CloudyWeather | RainyWeather | SnowyWeather | FoggyWeather] = js.undefined
 }
 object SceneViewEnvironment {
   
@@ -51,9 +66,7 @@ object SceneViewEnvironment {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewEnvironment]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], SceneViewEnvironment]])
+    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, SceneViewEnvironment]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], SceneViewEnvironment]])
   ): SceneViewEnvironment = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewEnvironment]
@@ -73,12 +86,16 @@ object SceneViewEnvironment {
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setLighting(value: SceneViewEnvironmentLighting): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
+    inline def setLighting(value: SunLighting | VirtualLighting): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
     
     inline def setLightingUndefined: Self = StObject.set(x, "lighting", js.undefined)
     
     inline def setStarsEnabled(value: Boolean): Self = StObject.set(x, "starsEnabled", value.asInstanceOf[js.Any])
     
     inline def setStarsEnabledUndefined: Self = StObject.set(x, "starsEnabled", js.undefined)
+    
+    inline def setWeather(value: SunnyWeather | CloudyWeather | RainyWeather | SnowyWeather | FoggyWeather): Self = StObject.set(x, "weather", value.asInstanceOf[js.Any])
+    
+    inline def setWeatherUndefined: Self = StObject.set(x, "weather", js.undefined)
   }
 }

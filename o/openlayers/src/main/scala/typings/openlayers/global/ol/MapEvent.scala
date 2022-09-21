@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ol.MapEvent")
 @js.native
-class MapEvent protected ()
+open class MapEvent protected ()
   extends typings.openlayers.mod.MapEvent {
   /**
     * @classdesc

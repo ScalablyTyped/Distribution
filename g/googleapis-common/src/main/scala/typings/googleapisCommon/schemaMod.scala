@@ -281,6 +281,8 @@ object schemaMod {
     var sampleUrl: String
     
     var scopes: js.Array[String]
+    
+    var supportsMediaDownload: js.UndefOr[Boolean] = js.undefined
   }
   object SchemaMethod {
     
@@ -316,7 +318,7 @@ object schemaMod {
       
       inline def setParameterOrderUndefined: Self = StObject.set(x, "parameterOrder", js.undefined)
       
-      inline def setParameterOrderVarargs(value: String*): Self = StObject.set(x, "parameterOrder", js.Array(value :_*))
+      inline def setParameterOrderVarargs(value: String*): Self = StObject.set(x, "parameterOrder", js.Array(value*))
       
       inline def setParameters(value: StringDictionary[SchemaParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
@@ -332,7 +334,11 @@ object schemaMod {
       
       inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
+      
+      inline def setSupportsMediaDownload(value: Boolean): Self = StObject.set(x, "supportsMediaDownload", value.asInstanceOf[js.Any])
+      
+      inline def setSupportsMediaDownloadUndefined: Self = StObject.set(x, "supportsMediaDownload", js.undefined)
     }
   }
   
@@ -384,9 +390,9 @@ object schemaMod {
       
       inline def setEnumDescription(value: js.Array[String]): Self = StObject.set(x, "enumDescription", value.asInstanceOf[js.Any])
       
-      inline def setEnumDescriptionVarargs(value: String*): Self = StObject.set(x, "enumDescription", js.Array(value :_*))
+      inline def setEnumDescriptionVarargs(value: String*): Self = StObject.set(x, "enumDescription", js.Array(value*))
       
-      inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value*))
       
       inline def setFormat(value: ParameterFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -469,7 +475,7 @@ object schemaMod {
       
       inline def setItems(value: js.Array[Schema]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: Schema*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Schema*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     }

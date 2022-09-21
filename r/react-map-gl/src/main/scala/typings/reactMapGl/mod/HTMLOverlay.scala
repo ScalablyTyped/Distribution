@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-map-gl", "HTMLOverlay")
 @js.native
-class HTMLOverlay protected () extends BaseControl[HTMLOverlayProps, HTMLDivElement] {
+open class HTMLOverlay protected () extends BaseControl[HTMLOverlayProps, HTMLDivElement] {
   def this(props: HTMLOverlayProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLOverlayProps, context: js.Any) = this()
+  def this(props: HTMLOverlayProps, context: Any) = this()
 }

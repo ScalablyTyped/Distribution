@@ -33,6 +33,6 @@ object ListTapePoolsOutput {
     
     inline def setPoolInfosUndefined: Self = StObject.set(x, "PoolInfos", js.undefined)
     
-    inline def setPoolInfosVarargs(value: PoolInfo*): Self = StObject.set(x, "PoolInfos", js.Array(value :_*))
+    inline def setPoolInfosVarargs(value: PoolInfo*): Self = StObject.set(x, "PoolInfos", js.Array(value*))
   }
 }

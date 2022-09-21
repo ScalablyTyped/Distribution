@@ -3,7 +3,6 @@ package typings.awsSdkClientS3Browser
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.STANDARD
 import typings.awsSdkClientS3Browser.typesOwnerMod.Owner
 import typings.awsSdkClientS3Browser.typesOwnerMod.UnmarshalledOwner
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ object typesObjectVersionMod {
     /**
       * <p>Date and time the object was last modified.</p>
       */
-    var LastModified: js.UndefOr[Date | String | Double] = js.undefined
+    var LastModified: js.UndefOr[js.Date | String | Double] = js.undefined
     
     /**
       * _Owner shape
@@ -73,7 +72,7 @@ object typesObjectVersionMod {
       
       inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
       
-      inline def setLastModified(value: Date | String | Double): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: js.Date | String | Double): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
       inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
       
@@ -103,7 +102,7 @@ object typesObjectVersionMod {
       * <p>Date and time the object was last modified.</p>
       */
     @JSName("LastModified")
-    var LastModified_UnmarshalledObjectVersion: js.UndefOr[Date] = js.undefined
+    var LastModified_UnmarshalledObjectVersion: js.UndefOr[js.Date] = js.undefined
     
     /**
       * _Owner shape
@@ -120,7 +119,7 @@ object typesObjectVersionMod {
     
     extension [Self <: UnmarshalledObjectVersion](x: Self) {
       
-      inline def setLastModified(value: Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+      inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       
       inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
       

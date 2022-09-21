@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ParagraphFormat2")
 @js.native
-/* private */ class ParagraphFormat2 ()
+/* private */ open class ParagraphFormat2 ()
   extends StObject
      with typings.activexOffice.Office.ParagraphFormat2 {
   
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Alignment: MsoParagraphAlignment = js.native
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var BaselineAlignment: MsoBaselineAlignment = js.native
@@ -59,7 +59,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotParagraphFormat2_typekey: typings.activexOffice.Office.ParagraphFormat2 = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var RightIndent: Double = js.native

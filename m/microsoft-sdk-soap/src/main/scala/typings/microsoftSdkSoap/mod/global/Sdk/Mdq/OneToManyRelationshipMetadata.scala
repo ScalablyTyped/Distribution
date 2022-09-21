@@ -10,15 +10,15 @@ trait OneToManyRelationshipMetadata extends StObject {
   
   var CascadeConfiguration: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.CascadeConfiguration
   
-  var HasChanged: js.Any
+  var HasChanged: Any
   
-  var IntroducedVersion: js.Any
+  var IntroducedVersion: Any
   
   var IsCustomRelationship: Boolean
   
   var IsCustomizable: ManagedProperty[Boolean]
   
-  var IsHierarchical: js.Any
+  var IsHierarchical: Any
   
   var IsManaged: Boolean
   
@@ -38,18 +38,18 @@ trait OneToManyRelationshipMetadata extends StObject {
   
   var SchemaName: String
   
-  var SecurityTypes: js.Any
+  var SecurityTypes: Any
 }
 object OneToManyRelationshipMetadata {
   
   inline def apply(
     AssociatedMenuConfiguration: AssociatedMenuConfiguration,
     CascadeConfiguration: CascadeConfiguration,
-    HasChanged: js.Any,
-    IntroducedVersion: js.Any,
+    HasChanged: Any,
+    IntroducedVersion: Any,
     IsCustomRelationship: Boolean,
     IsCustomizable: ManagedProperty[Boolean],
-    IsHierarchical: js.Any,
+    IsHierarchical: Any,
     IsManaged: Boolean,
     IsValidForAdvancedFind: Boolean,
     MetadataId: String,
@@ -59,7 +59,7 @@ object OneToManyRelationshipMetadata {
     ReferencingEntity: String,
     RelationshipType: String,
     SchemaName: String,
-    SecurityTypes: js.Any
+    SecurityTypes: Any
   ): OneToManyRelationshipMetadata = {
     val __obj = js.Dynamic.literal(AssociatedMenuConfiguration = AssociatedMenuConfiguration.asInstanceOf[js.Any], CascadeConfiguration = CascadeConfiguration.asInstanceOf[js.Any], HasChanged = HasChanged.asInstanceOf[js.Any], IntroducedVersion = IntroducedVersion.asInstanceOf[js.Any], IsCustomRelationship = IsCustomRelationship.asInstanceOf[js.Any], IsCustomizable = IsCustomizable.asInstanceOf[js.Any], IsHierarchical = IsHierarchical.asInstanceOf[js.Any], IsManaged = IsManaged.asInstanceOf[js.Any], IsValidForAdvancedFind = IsValidForAdvancedFind.asInstanceOf[js.Any], MetadataId = MetadataId.asInstanceOf[js.Any], ReferencedAttribute = ReferencedAttribute.asInstanceOf[js.Any], ReferencedEntity = ReferencedEntity.asInstanceOf[js.Any], ReferencingAttribute = ReferencingAttribute.asInstanceOf[js.Any], ReferencingEntity = ReferencingEntity.asInstanceOf[js.Any], RelationshipType = RelationshipType.asInstanceOf[js.Any], SchemaName = SchemaName.asInstanceOf[js.Any], SecurityTypes = SecurityTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[OneToManyRelationshipMetadata]
@@ -71,15 +71,15 @@ object OneToManyRelationshipMetadata {
     
     inline def setCascadeConfiguration(value: CascadeConfiguration): Self = StObject.set(x, "CascadeConfiguration", value.asInstanceOf[js.Any])
     
-    inline def setHasChanged(value: js.Any): Self = StObject.set(x, "HasChanged", value.asInstanceOf[js.Any])
+    inline def setHasChanged(value: Any): Self = StObject.set(x, "HasChanged", value.asInstanceOf[js.Any])
     
-    inline def setIntroducedVersion(value: js.Any): Self = StObject.set(x, "IntroducedVersion", value.asInstanceOf[js.Any])
+    inline def setIntroducedVersion(value: Any): Self = StObject.set(x, "IntroducedVersion", value.asInstanceOf[js.Any])
     
     inline def setIsCustomRelationship(value: Boolean): Self = StObject.set(x, "IsCustomRelationship", value.asInstanceOf[js.Any])
     
     inline def setIsCustomizable(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsCustomizable", value.asInstanceOf[js.Any])
     
-    inline def setIsHierarchical(value: js.Any): Self = StObject.set(x, "IsHierarchical", value.asInstanceOf[js.Any])
+    inline def setIsHierarchical(value: Any): Self = StObject.set(x, "IsHierarchical", value.asInstanceOf[js.Any])
     
     inline def setIsManaged(value: Boolean): Self = StObject.set(x, "IsManaged", value.asInstanceOf[js.Any])
     
@@ -99,6 +99,6 @@ object OneToManyRelationshipMetadata {
     
     inline def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
-    inline def setSecurityTypes(value: js.Any): Self = StObject.set(x, "SecurityTypes", value.asInstanceOf[js.Any])
+    inline def setSecurityTypes(value: Any): Self = StObject.set(x, "SecurityTypes", value.asInstanceOf[js.Any])
   }
 }

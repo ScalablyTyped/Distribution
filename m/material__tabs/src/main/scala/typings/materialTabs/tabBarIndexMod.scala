@@ -1,10 +1,10 @@
 package typings.materialTabs
 
+import typings.materialBase.Element
 import typings.materialTabs.anon.CHANGEEVENT
 import typings.materialTabs.anon.PartialMDCTabBarAdapter
 import typings.materialTabs.anon.UPGRADED
 import typings.materialTabs.tabBarAdapterMod.MDCTabBarAdapter
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +13,13 @@ object tabBarIndexMod {
   
   @JSImport("@material/tabs/tab-bar/index", "MDCTabBar")
   @js.native
-  class MDCTabBar protected ()
+  open class MDCTabBar protected ()
     extends typings.materialTabs.tabBarComponentMod.MDCTabBar {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTabs.tabBarFoundationMod.MDCTabBarFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -29,12 +29,12 @@ object tabBarIndexMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialTabs.tabBarComponentMod.MDCTabBar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabs.tabBarComponentMod.MDCTabBar]
+    inline def attachTo(root: typings.std.Element): typings.materialTabs.tabBarComponentMod.MDCTabBar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabs.tabBarComponentMod.MDCTabBar]
   }
   
   @JSImport("@material/tabs/tab-bar/index", "MDCTabBarFoundation")
   @js.native
-  class MDCTabBarFoundation ()
+  open class MDCTabBarFoundation ()
     extends typings.materialTabs.tabBarFoundationMod.MDCTabBarFoundation {
     def this(adapter: PartialMDCTabBarAdapter) = this()
   }

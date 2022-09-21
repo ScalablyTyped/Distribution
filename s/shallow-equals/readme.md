@@ -11,9 +11,9 @@ Determine if an array or object is equivalent with another, *not* recursively
 | Full name          | shallow-equals |
 | Keywords           | shallow, equals, compare, equality, check, test |
 | # releases         | 0 |
-| # dependents       | 56 |
-| # downloads        | 1017365 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 161896.33333333334 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/hughsk/shallow-equals)

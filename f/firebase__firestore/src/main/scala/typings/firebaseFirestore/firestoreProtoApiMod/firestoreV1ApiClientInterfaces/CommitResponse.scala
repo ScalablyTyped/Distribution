@@ -1,21 +1,32 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommitResponse extends js.Object {
+trait CommitResponse extends StObject {
+  
   var commitTime: js.UndefOr[String] = js.undefined
+  
   var writeResults: js.UndefOr[js.Array[WriteResult]] = js.undefined
 }
-
 object CommitResponse {
-  @scala.inline
-  def apply(commitTime: String = null, writeResults: js.Array[WriteResult] = null): CommitResponse = {
+  
+  inline def apply(): CommitResponse = {
     val __obj = js.Dynamic.literal()
-    if (commitTime != null) __obj.updateDynamic("commitTime")(commitTime.asInstanceOf[js.Any])
-    if (writeResults != null) __obj.updateDynamic("writeResults")(writeResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitResponse]
   }
+  
+  extension [Self <: CommitResponse](x: Self) {
+    
+    inline def setCommitTime(value: String): Self = StObject.set(x, "commitTime", value.asInstanceOf[js.Any])
+    
+    inline def setCommitTimeUndefined: Self = StObject.set(x, "commitTime", js.undefined)
+    
+    inline def setWriteResults(value: js.Array[WriteResult]): Self = StObject.set(x, "writeResults", value.asInstanceOf[js.Any])
+    
+    inline def setWriteResultsUndefined: Self = StObject.set(x, "writeResults", js.undefined)
+    
+    inline def setWriteResultsVarargs(value: WriteResult*): Self = StObject.set(x, "writeResults", js.Array(value*))
+  }
 }
-

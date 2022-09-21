@@ -28,13 +28,13 @@ trait DataColumn
      with XColumnUpdate {
   
   /** contains the original value of the column. */
-  var OriginalValue: js.Any
+  var OriginalValue: Any
   
   /**
     * contains the column's value. This could be a constraint property, to veto modifications, if a new value does not fit into rules defined for the
     * column.
     */
-  var Value: js.Any
+  var Value: Any
 }
 object DataColumn {
   
@@ -74,7 +74,7 @@ object DataColumn {
     Label: String,
     Long: Double,
     Name: String,
-    OriginalValue: js.Any,
+    OriginalValue: Any,
     Position: Double,
     Precision: Double,
     PropertySetInfo: XPropertySetInfo,
@@ -89,7 +89,7 @@ object DataColumn {
     Timestamp: DateTime,
     Type: Double,
     TypeName: String,
-    Value: js.Any,
+    Value: Any,
     Width: Double,
     acquire: () => Unit,
     addPropertyChangeListener: (String, XPropertyChangeListener) => Unit,
@@ -108,19 +108,19 @@ object DataColumn {
     getFloat: () => Double,
     getInt: () => Double,
     getLong: () => Double,
-    getObject: XNameAccess => js.Any,
+    getObject: XNameAccess => Any,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
+    getPropertyValue: String => Any,
     getRef: () => XRef,
     getShort: () => Double,
     getString: () => String,
     getTime: () => Time,
     getTimestamp: () => DateTime,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-    setPropertyValue: (String, js.Any) => Unit,
+    setPropertyValue: (String, Any) => Unit,
     updateBinaryStream: (XInputStream, Double) => Unit,
     updateBoolean: Boolean => Unit,
     updateByte: Double => Unit,
@@ -132,8 +132,8 @@ object DataColumn {
     updateInt: Double => Unit,
     updateLong: Double => Unit,
     updateNull: () => Unit,
-    updateNumericObject: (js.Any, Double) => Unit,
-    updateObject: js.Any => Unit,
+    updateNumericObject: (Any, Double) => Unit,
+    updateObject: Any => Unit,
     updateShort: Double => Unit,
     updateString: String => Unit,
     updateTime: Time => Unit,
@@ -146,8 +146,8 @@ object DataColumn {
   
   extension [Self <: DataColumn](x: Self) {
     
-    inline def setOriginalValue(value: js.Any): Self = StObject.set(x, "OriginalValue", value.asInstanceOf[js.Any])
+    inline def setOriginalValue(value: Any): Self = StObject.set(x, "OriginalValue", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

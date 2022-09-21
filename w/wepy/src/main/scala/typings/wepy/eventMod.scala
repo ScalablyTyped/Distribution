@@ -8,10 +8,10 @@ object eventMod {
   
   @JSImport("wepy/event", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with event {
-    def this(name: String, source: js.Any, `type`: js.Any) = this()
+    def this(name: String, source: Any, `type`: Any) = this()
     
     /* CompleteClass */
     @JSName("$destroy")
@@ -19,7 +19,7 @@ object eventMod {
     
     /* CompleteClass */
     @JSName("$transfor")
-    override def $transfor(wxevent: js.Array[js.Any]): Unit = js.native
+    override def $transfor(wxevent: js.Array[Any]): Unit = js.native
     
     /* CompleteClass */
     var active: Boolean = js.native
@@ -31,13 +31,13 @@ object eventMod {
     def $destroy(): Unit
     
     @JSName("$transfor")
-    def $transfor(wxevent: js.Array[js.Any]): Unit
+    def $transfor(wxevent: js.Array[Any]): Unit
     
     var active: Boolean
   }
   object event {
     
-    inline def apply($destroy: () => Unit, $transfor: js.Array[js.Any] => Unit, active: Boolean): event = {
+    inline def apply($destroy: () => Unit, $transfor: js.Array[Any] => Unit, active: Boolean): event = {
       val __obj = js.Dynamic.literal($destroy = js.Any.fromFunction0($destroy), $transfor = js.Any.fromFunction1($transfor), active = active.asInstanceOf[js.Any])
       __obj.asInstanceOf[event]
     }
@@ -46,7 +46,7 @@ object eventMod {
       
       inline def set$destroy(value: () => Unit): Self = StObject.set(x, "$destroy", js.Any.fromFunction0(value))
       
-      inline def set$transfor(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "$transfor", js.Any.fromFunction1(value))
+      inline def set$transfor(value: js.Array[Any] => Unit): Self = StObject.set(x, "$transfor", js.Any.fromFunction1(value))
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }

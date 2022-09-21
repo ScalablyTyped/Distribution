@@ -8,5 +8,5 @@ object tooltipMod {
   
   @JSImport("@nulogy/components/src/Tooltip", "Tooltip")
   @js.native
-  val Tooltip: js.Any = js.native
+  val Tooltip: Any = js.native
 }

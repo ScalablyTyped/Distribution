@@ -1,7 +1,7 @@
 
 # Scala.js typings for snake-case
 
-Typings are for version 3.0.3
+Typings are for version 3.0.4
 
 ## Library description:
 Transform into a lower case string with underscores between words
@@ -10,10 +10,10 @@ Transform into a lower case string with underscores between words
 | ------------------ | :-------------: |
 | Full name          | snake-case |
 | Keywords           | snake, case, underscore, lower, convert, transform, identifier, python |
-| # releases         | 6 |
-| # dependents       | 158 |
-| # downloads        | 87572024 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9971586333333332E7 |
+| # stars            | 1767.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/snake-case#readme)

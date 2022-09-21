@@ -32,7 +32,7 @@ object GitPullRequestIterationChanges {
     
     inline def setChangeEntries(value: js.Array[GitPullRequestChange]): Self = StObject.set(x, "changeEntries", value.asInstanceOf[js.Any])
     
-    inline def setChangeEntriesVarargs(value: GitPullRequestChange*): Self = StObject.set(x, "changeEntries", js.Array(value :_*))
+    inline def setChangeEntriesVarargs(value: GitPullRequestChange*): Self = StObject.set(x, "changeEntries", js.Array(value*))
     
     inline def setNextSkip(value: Double): Self = StObject.set(x, "nextSkip", value.asInstanceOf[js.Any])
     

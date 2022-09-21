@@ -9,13 +9,15 @@ object mod {
   
   @JSImport("error-subclass", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -32,5 +34,5 @@ object mod {
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  type ErrorSubclass = Error
+  type ErrorSubclass = js.Error
 }

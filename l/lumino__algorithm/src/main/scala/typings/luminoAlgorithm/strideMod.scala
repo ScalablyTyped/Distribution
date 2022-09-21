@@ -14,7 +14,7 @@ object strideMod {
   
   @JSImport("@lumino/algorithm/types/stride", "StrideIterator")
   @js.native
-  class StrideIterator[T] protected ()
+  open class StrideIterator[T] protected ()
     extends StObject
        with IIterator[T] {
     /**
@@ -27,9 +27,9 @@ object strideMod {
       */
     def this(source: IIterator[T], step: Double) = this()
     
-    /* private */ var _source: js.Any = js.native
+    /* private */ var _source: Any = js.native
     
-    /* private */ var _step: js.Any = js.native
+    /* private */ var _step: Any = js.native
     
     /**
       * Get an iterator over the object's values.

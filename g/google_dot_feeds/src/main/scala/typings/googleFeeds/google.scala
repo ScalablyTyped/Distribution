@@ -16,7 +16,7 @@ object google {
       def findFeeds(query: String, callback: js.Function1[/* result */ findResult, Unit]): Unit = js.native
       def findFeeds(query: Unit, callback: js.Function1[/* result */ findResult, Unit]): Unit = js.native
       
-      def getElementsByTagNameNS(node: String, ns: String, localName: String): js.Array[js.Any] = js.native
+      def getElementsByTagNameNS(node: String, ns: String, localName: String): js.Array[Any] = js.native
       
       def includeHistoricalEntries(): Unit = js.native
       

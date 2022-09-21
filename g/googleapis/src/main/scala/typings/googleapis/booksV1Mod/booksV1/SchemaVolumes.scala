@@ -14,13 +14,12 @@ trait SchemaVolumes extends StObject {
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Total number of volumes found. This might be greater than the number of
-    * volumes returned in this response if results have been paginated.
+    * Total number of volumes found. This might be greater than the number of volumes returned in this response if results have been paginated.
     */
-  var totalItems: js.UndefOr[Double] = js.undefined
+  var totalItems: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaVolumes {
   
@@ -35,13 +34,17 @@ object SchemaVolumes {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaVolume*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaVolume*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
+    
+    inline def setTotalItemsNull: Self = StObject.set(x, "totalItems", null)
     
     inline def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
   }

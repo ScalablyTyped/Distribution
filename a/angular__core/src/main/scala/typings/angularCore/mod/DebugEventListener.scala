@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/core", "DebugEventListener")
 @js.native
-class DebugEventListener protected () extends StObject {
+open class DebugEventListener protected () extends StObject {
   def this(name: String, callback: js.Function) = this()
   
   var callback: js.Function = js.native

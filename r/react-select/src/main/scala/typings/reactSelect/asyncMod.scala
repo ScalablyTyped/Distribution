@@ -1,72 +1,43 @@
 package typings.reactSelect
 
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
-import typings.react.mod.ComponentType
-import typings.reactSelect.srcAsyncMod.AsyncComponentProps
-import typings.reactSelect.srcAsyncMod.Props
-import typings.reactSelect.typesMod.OptionTypeBase
+import typings.react.mod.ReactElement
+import typings.react.mod.RefAttributes
+import typings.reactSelect.reactSelectBooleans.`false`
+import typings.reactSelect.reactSelectStrings.cacheOptions
+import typings.reactSelect.reactSelectStrings.defaultOptions
+import typings.reactSelect.reactSelectStrings.isLoading
+import typings.reactSelect.reactSelectStrings.loadOptions
+import typings.reactSelect.typesMod.GroupBase
+import typings.reactSelect.useAsyncMod.AsyncManagedPropKeys
+import typings.reactSelect.useAsyncMod.AsyncProps
+import typings.reactSelect.useStateManagerMod.StateManagerProps
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncMod {
   
-  @JSImport("react-select/async", JSImport.Namespace)
+  @JSImport("react-select/dist/declarations/src/Async", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-select/async", JSImport.Default)
+  @JSImport("react-select/dist/declarations/src/Async", JSImport.Default)
   @js.native
-  class default[OptionType /* <: OptionTypeBase */] protected ()
-    extends typings.reactSelect.srcAsyncMod.default[OptionType] {
-    def this(props: Props[OptionType]) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: Props[OptionType], context: js.Any) = this()
-  }
-  /* static members */
-  object default {
-    
-    @JSImport("react-select/async", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("react-select/async", "default.defaultProps")
-    @js.native
-    def defaultProps: Props[js.Any] = js.native
-    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  val default: AsyncSelect = js.native
   
-  @JSImport("react-select/async", "Async")
-  @js.native
-  class Async[OptionType /* <: OptionTypeBase */] protected ()
-    extends typings.reactSelect.srcAsyncMod.Async[OptionType] {
-    def this(props: Props[OptionType]) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: Props[OptionType], context: js.Any) = this()
-  }
-  /* static members */
-  object Async {
-    
-    @JSImport("react-select/async", "Async")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("react-select/async", "Async.defaultProps")
-    @js.native
-    def defaultProps: Props[js.Any] = js.native
-    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  inline def useAsync[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */, AdditionalProps](
+    hasPropsDefaultOptionsCacheOptionsPropsLoadOptionsPropsOptionsPropsIsLoadingPropsOnInputChangeFilterOptionRestSelectProps: (AsyncProps[Option, IsMulti, Group]) & AdditionalProps
+  ): (StateManagerProps[Option, IsMulti, Group]) & (Omit[
+    AdditionalProps, 
+    defaultOptions | cacheOptions | loadOptions | isLoading | AsyncManagedPropKeys
+  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("useAsync")(hasPropsDefaultOptionsCacheOptionsPropsLoadOptionsPropsOptionsPropsIsLoadingPropsOnInputChangeFilterOptionRestSelectProps.asInstanceOf[js.Any]).asInstanceOf[(StateManagerProps[Option, IsMulti, Group]) & (Omit[
+    AdditionalProps, 
+    defaultOptions | cacheOptions | loadOptions | isLoading | AsyncManagedPropKeys
+  ])]
   
-  @JSImport("react-select/async", "defaultProps")
-  @js.native
-  val defaultProps: Props[js.Any] = js.native
-  
-  inline def makeAsyncSelect[T /* <: ComponentType[js.Any] */](SelectComponent: T): ComponentClass[AsyncComponentProps[T], ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAsyncSelect")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[AsyncComponentProps[T], ComponentState]]
+  type AsyncSelect = js.Function1[
+    /* props */ (AsyncProps[Any, `false`, GroupBase[Any]]) & (RefAttributes[typings.reactSelect.selectMod.default[Any, `false`, GroupBase[Any]]]), 
+    ReactElement
+  ]
 }

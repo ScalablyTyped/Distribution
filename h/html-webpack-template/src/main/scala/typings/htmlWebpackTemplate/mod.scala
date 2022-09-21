@@ -12,7 +12,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : String = js.native
   
-  type Attributes = StringDictionary[js.Any]
+  type Attributes = StringDictionary[Any]
   
   /** @deprecated use Options */
   type Config = Options
@@ -107,7 +107,7 @@ object mod extends Shortcut {
       
       inline def setAppMountIdsUndefined: Self = StObject.set(x, "appMountIds", js.undefined)
       
-      inline def setAppMountIdsVarargs(value: String*): Self = StObject.set(x, "appMountIds", js.Array(value :_*))
+      inline def setAppMountIdsVarargs(value: String*): Self = StObject.set(x, "appMountIds", js.Array(value*))
       
       inline def setBaseHref(value: String): Self = StObject.set(x, "baseHref", value.asInstanceOf[js.Any])
       
@@ -129,7 +129,7 @@ object mod extends Shortcut {
       
       inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "links", js.Array(value*))
       
       inline def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
       
@@ -139,7 +139,7 @@ object mod extends Shortcut {
       
       inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
       
-      inline def setScriptsVarargs(value: Script*): Self = StObject.set(x, "scripts", js.Array(value :_*))
+      inline def setScriptsVarargs(value: Script*): Self = StObject.set(x, "scripts", js.Array(value*))
       
       inline def setWindow(value: js.Object): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       

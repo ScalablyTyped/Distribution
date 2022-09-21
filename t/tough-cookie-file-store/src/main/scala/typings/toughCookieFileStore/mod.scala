@@ -11,32 +11,19 @@ object mod {
   
   @JSImport("tough-cookie-file-store", "FileCookieStore")
   @js.native
-  class FileCookieStore protected () extends Store {
+  open class FileCookieStore protected () extends Store {
     def this(filePath: String) = this()
-    
-    def checkExpired(): Boolean = js.native
-    def checkExpired(domain: String): Boolean = js.native
-    def checkExpired(domain: String, path: String): Boolean = js.native
-    def checkExpired(domain: String, path: String, key: String): Boolean = js.native
-    def checkExpired(domain: String, path: Null, key: String): Boolean = js.native
-    def checkExpired(domain: Null, path: String): Boolean = js.native
-    def checkExpired(domain: Null, path: String, key: String): Boolean = js.native
-    def checkExpired(domain: Null, path: Null, key: String): Boolean = js.native
     
     var filePath: String = js.native
     
     def findCookies(
       domain: String,
       path: String,
-      cb: js.Function2[/* err */ Null, /* cookies */ js.Array[Cookie], Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* cookie */ js.Array[Cookie], Unit]
     ): Unit = js.native
     
     var idx: StringDictionary[StringDictionary[StringDictionary[Cookie]]] = js.native
     
-    def inspect(): String = js.native
-    
-    def isEmpty(): Boolean = js.native
-    
-    def isExpired(): Boolean = js.native
+    def removeAllCookies(cb: js.Function1[/* err */ js.Error | Null, Unit]): Unit = js.native
   }
 }

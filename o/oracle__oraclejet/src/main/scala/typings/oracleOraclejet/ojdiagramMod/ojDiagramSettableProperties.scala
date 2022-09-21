@@ -156,13 +156,13 @@ object ojDiagramSettableProperties {
     
     inline def setHiddenCategories(value: js.Array[String]): Self = StObject.set(x, "hiddenCategories", value.asInstanceOf[js.Any])
     
-    inline def setHiddenCategoriesVarargs(value: String*): Self = StObject.set(x, "hiddenCategories", js.Array(value :_*))
+    inline def setHiddenCategoriesVarargs(value: String*): Self = StObject.set(x, "hiddenCategories", js.Array(value*))
     
     inline def setHighlightMatch(value: any | all): Self = StObject.set(x, "highlightMatch", value.asInstanceOf[js.Any])
     
     inline def setHighlightedCategories(value: js.Array[String]): Self = StObject.set(x, "highlightedCategories", value.asInstanceOf[js.Any])
     
-    inline def setHighlightedCategoriesVarargs(value: String*): Self = StObject.set(x, "highlightedCategories", js.Array(value :_*))
+    inline def setHighlightedCategoriesVarargs(value: String*): Self = StObject.set(x, "highlightedCategories", js.Array(value*))
     
     inline def setHoverBehavior(value: dim | none): Self = StObject.set(x, "hoverBehavior", value.asInstanceOf[js.Any])
     
@@ -206,7 +206,7 @@ object ojDiagramSettableProperties {
     
     inline def setSelectionRendererNull: Self = StObject.set(x, "selectionRenderer", null)
     
-    inline def setSelectionVarargs(value: (K1 | K2)*): Self = StObject.set(x, "selection", js.Array(value :_*))
+    inline def setSelectionVarargs(value: (K1 | K2)*): Self = StObject.set(x, "selection", js.Array(value*))
     
     inline def setStyleDefaults(value: AnimationDuration): Self = StObject.set(x, "styleDefaults", value.asInstanceOf[js.Any])
     

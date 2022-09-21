@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `15` extends StObject {
   
-  var filter: js.UndefOr[js.Any | String] = js.undefined
+  var filter: js.UndefOr[Any | String] = js.undefined
 }
 object `15` {
   
@@ -17,7 +17,7 @@ object `15` {
   
   extension [Self <: `15`](x: Self) {
     
-    inline def setFilter(value: js.Any | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Any | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }

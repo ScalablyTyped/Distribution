@@ -18,7 +18,7 @@ trait ITemplateScope extends StObject {
   var fields: IFieldArray
   
   //the form controller the field is in
-  var form: js.Any
+  var form: Any
   
   //The object passed as options.formState to the formly-form directive. Use this to share state between fields.
   var formState: js.Object
@@ -30,7 +30,7 @@ trait ITemplateScope extends StObject {
   var index: Double
   
   //the model of the form (or the model specified by the field if it was specified).
-  var model: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var model: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var options: ITemplateScopeOptions
   
@@ -45,7 +45,7 @@ object ITemplateScope {
   inline def apply(
     fc: IFormController | js.Array[IFormController],
     fields: IFieldArray,
-    form: js.Any,
+    form: Any,
     formState: js.Object,
     id: String,
     index: Double,
@@ -61,13 +61,13 @@ object ITemplateScope {
     
     inline def setFc(value: IFormController | js.Array[IFormController]): Self = StObject.set(x, "fc", value.asInstanceOf[js.Any])
     
-    inline def setFcVarargs(value: IFormController*): Self = StObject.set(x, "fc", js.Array(value :_*))
+    inline def setFcVarargs(value: IFormController*): Self = StObject.set(x, "fc", js.Array(value*))
     
     inline def setFields(value: IFieldArray): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: (IFieldConfigurationObject | IFieldGroup)*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: (IFieldConfigurationObject | IFieldGroup)*): Self = StObject.set(x, "fields", js.Array(value*))
     
-    inline def setForm(value: js.Any): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: Any): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     inline def setFormState(value: js.Object): Self = StObject.set(x, "formState", value.asInstanceOf[js.Any])
     
@@ -75,7 +75,7 @@ object ITemplateScope {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setModel(value: StringDictionary[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: StringDictionary[Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     

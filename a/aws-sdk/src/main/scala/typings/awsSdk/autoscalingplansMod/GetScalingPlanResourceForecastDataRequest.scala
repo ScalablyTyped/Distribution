@@ -9,7 +9,7 @@ trait GetScalingPlanResourceForecastDataRequest extends StObject {
   /**
     * The exclusive end time of the time range for the forecast data to get. The maximum time duration between the start and end time is seven days.  Although this parameter can accept a date and time that is more than two days in the future, the availability of forecast data has limits. AWS Auto Scaling only issues forecasts for periods of two days in advance.
     */
-  var EndTime: TimestampType
+  var EndTime: js.Date
   
   /**
     * The type of forecast data to get.    LoadForecast: The load metric forecast.     CapacityForecast: The capacity forecast.     ScheduledActionMinCapacity: The minimum capacity for each scheduled scaling action. This data is calculated as the larger of two values: the capacity forecast or the minimum capacity in the scaling instruction.    ScheduledActionMaxCapacity: The maximum capacity for each scheduled scaling action. The calculation used is determined by the predictive scaling maximum capacity behavior setting in the scaling instruction.  
@@ -17,12 +17,12 @@ trait GetScalingPlanResourceForecastDataRequest extends StObject {
   var ForecastDataType: typings.awsSdk.autoscalingplansMod.ForecastDataType
   
   /**
-    * The ID of the resource. This string consists of the resource type and unique identifier.    Auto Scaling group - The resource type is autoScalingGroup and the unique identifier is the name of the Auto Scaling group. Example: autoScalingGroup/my-asg.   ECS service - The resource type is service and the unique identifier is the cluster name and service name. Example: service/default/sample-webapp.   Spot Fleet request - The resource type is spot-fleet-request and the unique identifier is the Spot Fleet request ID. Example: spot-fleet-request/sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE.   DynamoDB table - The resource type is table and the unique identifier is the resource ID. Example: table/my-table.   DynamoDB global secondary index - The resource type is index and the unique identifier is the resource ID. Example: table/my-table/index/my-table-index.   Aurora DB cluster - The resource type is cluster and the unique identifier is the cluster name. Example: cluster:my-db-cluster.  
+    * The ID of the resource. This string consists of a prefix (autoScalingGroup) followed by the name of a specified Auto Scaling group (my-asg). Example: autoScalingGroup/my-asg. 
     */
   var ResourceId: XmlString
   
   /**
-    * The scalable dimension for the resource.
+    * The scalable dimension for the resource. The only valid value is autoscaling:autoScalingGroup:DesiredCapacity. 
     */
   var ScalableDimension: typings.awsSdk.autoscalingplansMod.ScalableDimension
   
@@ -32,31 +32,31 @@ trait GetScalingPlanResourceForecastDataRequest extends StObject {
   var ScalingPlanName: typings.awsSdk.autoscalingplansMod.ScalingPlanName
   
   /**
-    * The version number of the scaling plan.
+    * The version number of the scaling plan. Currently, the only valid value is 1.
     */
   var ScalingPlanVersion: typings.awsSdk.autoscalingplansMod.ScalingPlanVersion
   
   /**
-    * The namespace of the AWS service.
+    * The namespace of the AWS service. The only valid value is autoscaling. 
     */
   var ServiceNamespace: typings.awsSdk.autoscalingplansMod.ServiceNamespace
   
   /**
     * The inclusive start time of the time range for the forecast data to get. The date and time can be at most 56 days before the current date and time. 
     */
-  var StartTime: TimestampType
+  var StartTime: js.Date
 }
 object GetScalingPlanResourceForecastDataRequest {
   
   inline def apply(
-    EndTime: TimestampType,
+    EndTime: js.Date,
     ForecastDataType: ForecastDataType,
     ResourceId: XmlString,
     ScalableDimension: ScalableDimension,
     ScalingPlanName: ScalingPlanName,
     ScalingPlanVersion: ScalingPlanVersion,
     ServiceNamespace: ServiceNamespace,
-    StartTime: TimestampType
+    StartTime: js.Date
   ): GetScalingPlanResourceForecastDataRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], ForecastDataType = ForecastDataType.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any], ScalableDimension = ScalableDimension.asInstanceOf[js.Any], ScalingPlanName = ScalingPlanName.asInstanceOf[js.Any], ScalingPlanVersion = ScalingPlanVersion.asInstanceOf[js.Any], ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScalingPlanResourceForecastDataRequest]
@@ -64,7 +64,7 @@ object GetScalingPlanResourceForecastDataRequest {
   
   extension [Self <: GetScalingPlanResourceForecastDataRequest](x: Self) {
     
-    inline def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setForecastDataType(value: ForecastDataType): Self = StObject.set(x, "ForecastDataType", value.asInstanceOf[js.Any])
     
@@ -78,6 +78,6 @@ object GetScalingPlanResourceForecastDataRequest {
     
     inline def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

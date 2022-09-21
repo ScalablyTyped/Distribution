@@ -1,6 +1,6 @@
 package typings.kendoUi.kendo.ui
 
-import typings.std.Date
+import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,13 +17,17 @@ trait SchedulerView extends StObject {
   
   var columnWidth: js.UndefOr[Double] = js.undefined
   
+  var content: js.UndefOr[JQuery] = js.undefined
+  
   var dateHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
   var dayTemplate: js.UndefOr[String | js.Function] = js.undefined
   
   var editable: js.UndefOr[Boolean | SchedulerViewEditable] = js.undefined
   
-  var endTime: js.UndefOr[Date] = js.undefined
+  var endDate: js.UndefOr[js.Function0[js.Date]] = js.undefined
+  
+  var endTime: js.UndefOr[js.Date] = js.undefined
   
   var eventHeight: js.UndefOr[Double | String] = js.undefined
   
@@ -45,6 +49,8 @@ trait SchedulerView extends StObject {
   
   var minorTimeHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
+  var months: js.UndefOr[Double] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
   
   var selected: js.UndefOr[Boolean] = js.undefined
@@ -57,9 +63,13 @@ trait SchedulerView extends StObject {
   
   var slotTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var startTime: js.UndefOr[Date] = js.undefined
+  var startDate: js.UndefOr[js.Function0[js.Date]] = js.undefined
+  
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
+  
+  var tooltipTemplate: js.UndefOr[String | js.Function] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
@@ -96,6 +106,10 @@ object SchedulerView {
     
     inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
+    inline def setContent(value: JQuery): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
     inline def setDateHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "dateHeaderTemplate", value.asInstanceOf[js.Any])
     
     inline def setDateHeaderTemplateUndefined: Self = StObject.set(x, "dateHeaderTemplate", js.undefined)
@@ -108,7 +122,11 @@ object SchedulerView {
     
     inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
-    inline def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: () => js.Date): Self = StObject.set(x, "endDate", js.Any.fromFunction0(value))
+    
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -152,6 +170,10 @@ object SchedulerView {
     
     inline def setMinorTimeHeaderTemplateUndefined: Self = StObject.set(x, "minorTimeHeaderTemplate", js.undefined)
     
+    inline def setMonths(value: Double): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+    
+    inline def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -176,13 +198,21 @@ object SchedulerView {
     
     inline def setSlotTemplateUndefined: Self = StObject.set(x, "slotTemplate", js.undefined)
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: () => js.Date): Self = StObject.set(x, "startDate", js.Any.fromFunction0(value))
+    
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTooltipTemplate(value: String | js.Function): Self = StObject.set(x, "tooltipTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipTemplateUndefined: Self = StObject.set(x, "tooltipTemplate", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

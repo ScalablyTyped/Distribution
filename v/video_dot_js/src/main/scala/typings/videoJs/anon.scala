@@ -5,7 +5,10 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.CanPlayTypeResult
 import typings.std.Element
+import typings.videoJs.mod.videojs.Child
+import typings.videoJs.mod.videojs.ClickableComponentOptions
 import typings.videoJs.mod.videojs.Component
 import typings.videoJs.mod.videojs.Component.ReadyCallback
 import typings.videoJs.mod.videojs.ComponentOptions
@@ -29,18 +32,16 @@ import typings.videoJs.videoJsStrings.ModalDialog
 import typings.videoJs.videoJsStrings.MouseTimeDisplay
 import typings.videoJs.videoJsStrings.Spacer
 import typings.videoJs.videoJsStrings.TimeTooltip
-import typings.videoJs.videoJsStrings._empty
 import typings.videoJs.videoJsStrings.button_
 import typings.videoJs.videoJsStrings.clickablecomponent_
 import typings.videoJs.videoJsStrings.component_
-import typings.videoJs.videoJsStrings.maybe
+import typings.videoJs.videoJsStrings.hide
 import typings.videoJs.videoJsStrings.menu_
 import typings.videoJs.videoJsStrings.menubutton_
 import typings.videoJs.videoJsStrings.menuitem_
 import typings.videoJs.videoJsStrings.modaldialog_
 import typings.videoJs.videoJsStrings.mouseTimeDisplay_
 import typings.videoJs.videoJsStrings.player_
-import typings.videoJs.videoJsStrings.problably
 import typings.videoJs.videoJsStrings.spacer_
 import typings.videoJs.videoJsStrings.timeTooltip_
 import org.scalablytyped.runtime.StObject
@@ -110,7 +111,7 @@ object anon {
     *        A Video.js player instance.
     */
   Instantiable1[/* player */ Player, Plugin]
-       with Instantiable2[/* player */ Player, /* options */ js.Any, Plugin] {
+       with Instantiable2[/* player */ Player, /* options */ Any, Plugin] {
     
     /**
       * The name of the base plugin class as it is registered.
@@ -171,7 +172,7 @@ object anon {
       * @return Whether or not a plugin is a basic plugin.
       */
     def isBasic(plugin: String): Boolean = js.native
-    def isBasic(plugin: js.Function0[js.Any]): Boolean = js.native
+    def isBasic(plugin: js.Function0[Any]): Boolean = js.native
     
     def registerPlugin[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Plugin */ js.Any */](name: String, plugin: T): js.Function0[T] = js.native
     /**
@@ -203,7 +204,7 @@ object anon {
       *
       * @return
       */
-    def apply(): js.Array[js.Any] = js.native
+    def apply(): js.Array[Any] = js.native
     
     /**
       * Clears the internal history tracking, but does not prevent further history
@@ -235,8 +236,8 @@ object anon {
     *        Callback function to call when the `HTML5` Tech is ready.
     */
   Instantiable0[Tech]
-       with Instantiable1[/* options */ js.Any, Tech]
-       with Instantiable2[(/* options */ js.Any) | (/* options */ Unit), /* ready */ ReadyCallback, Tech] {
+       with Instantiable1[/* options */ Any, Tech]
+       with Instantiable2[(/* options */ Any) | (/* options */ Unit), /* ready */ ReadyCallback, Tech] {
     
     /**
       * Check if the tech can support the given source
@@ -246,19 +247,22 @@ object anon {
       *        The options passed to the tech
       * @return 'probably', 'maybe', or '' (empty string)
       */
-    def canPlaySource(srcObj: js.Any, options: js.Any): problably | maybe | _empty = js.native
+    def canPlaySource(srcObj: Any, options: Any): CanPlayTypeResult = js.native
     
     /**
-      * Check if the type is supported by this tech.
+      * Check if the tech can support the given mime-type.
       *
       * The base tech does not support any type, but source handlers might
       * overwrite this.
       *
       * @param type
-      *        The media type to check
-      * @return Returns the native video element's response
+      *         The mimetype to check for support
+      *
+      * @return 'probably', 'maybe', or '' (empty string)
+      *
+      * @see [Spec]{@link https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/canPlayType}
       */
-    def canPlayType(`type`: String): String = js.native
+    def canPlayType(`type`: String): CanPlayTypeResult = js.native
     
     /**
       * Get a `Tech` from the shared list by name.
@@ -281,7 +285,7 @@ object anon {
       *         - True if it is a tech
       *         - False if it is not
       */
-    def isTech(component: js.Any): Boolean = js.native
+    def isTech(component: Any): Boolean = js.native
     
     /**
       * Registers a `Tech` into a shared list for videojs.
@@ -292,7 +296,7 @@ object anon {
       * @param tech
       *        The `Tech` class to register.
       */
-    def registerTech(name: String, tech: js.Any): Unit = js.native
+    def registerTech(name: String, tech: Any): Unit = js.native
     
     /**
       * A functional mixin for techs that want to use the Source Handler pattern.
@@ -310,11 +314,7 @@ object anon {
   
   trait Children extends StObject {
     
-    var children: js.UndefOr[
-        js.Array[
-          /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias video.js.video.js.videojs.Child */ js.Object
-        ]
-      ] = js.undefined
+    var children: js.UndefOr[js.Array[Child]] = js.undefined
     
     var name: String
   }
@@ -327,17 +327,11 @@ object anon {
     
     extension [Self <: Children](x: Self) {
       
-      inline def setChildren(
-        value: js.Array[
-              /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias video.js.video.js.videojs.Child */ js.Object
-            ]
-      ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Child]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(
-        value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias video.js.video.js.videojs.Child */ js.Object)*
-      ): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Child*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -372,7 +366,6 @@ object anon {
           Component
         ] {
     
-    def getComponent(name: String): /* import warning: importer.ImportType#apply Failed type conversion: typeof Component */ js.Any = js.native
     /**
       * Get a `Component` based on the name it was registered with.
       *
@@ -380,56 +373,11 @@ object anon {
       *        The Name of the component to get.
       *
       * @return The `Component` that got registered under the given name.
-      *
-      * @deprecated In `videojs` 6 this will not return `Component`s that were not
-      *             registered using {@link Component.registerComponent}. Currently we
-      *             check the global `videojs` object for a `Component` name and
-      *             return that if it exists.
       */
-    @JSName("getComponent")
-    def getComponent_Button(name: Button): /* import warning: importer.ImportType#apply Failed type conversion: typeof Button */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_ClickableComponent(name: ClickableComponent): /* import warning: importer.ImportType#apply Failed type conversion: typeof ClickableComponent */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_Component(name: typings.videoJs.videoJsStrings.Component): /* import warning: importer.ImportType#apply Failed type conversion: typeof Component */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_Menu(name: Menu): /* import warning: importer.ImportType#apply Failed type conversion: typeof Menu */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_MenuButton(name: MenuButton): /* import warning: importer.ImportType#apply Failed type conversion: typeof MenuButton */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_MenuItem(name: MenuItem): /* import warning: importer.ImportType#apply Failed type conversion: typeof MenuItem */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_ModalDialog(name: ModalDialog): /* import warning: importer.ImportType#apply Failed type conversion: typeof ModalDialog */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_MouseTimeDisplay(name: MouseTimeDisplay): /* import warning: importer.ImportType#apply Failed type conversion: typeof MouseTimeDisplay */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_Player(name: typings.videoJs.videoJsStrings.Player): /* import warning: importer.ImportType#apply Failed type conversion: typeof Player */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_Spacer(name: Spacer): /* import warning: importer.ImportType#apply Failed type conversion: typeof Spacer */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_TimeTooltip(name: TimeTooltip): /* import warning: importer.ImportType#apply Failed type conversion: typeof TimeToolTip */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_button(name: button_): /* import warning: importer.ImportType#apply Failed type conversion: typeof Button */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_clickablecomponent(name: clickablecomponent_): /* import warning: importer.ImportType#apply Failed type conversion: typeof ClickableComponent */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_component(name: component_): /* import warning: importer.ImportType#apply Failed type conversion: typeof Component */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_menu(name: menu_): /* import warning: importer.ImportType#apply Failed type conversion: typeof Menu */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_menubutton(name: menubutton_): /* import warning: importer.ImportType#apply Failed type conversion: typeof MenuButton */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_menuitem(name: menuitem_): /* import warning: importer.ImportType#apply Failed type conversion: typeof MenuItem */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_modaldialog(name: modaldialog_): /* import warning: importer.ImportType#apply Failed type conversion: typeof ModalDialog */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_mouseTimeDisplay(name: mouseTimeDisplay_): /* import warning: importer.ImportType#apply Failed type conversion: typeof MouseTimeDisplay */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_player(name: player_): /* import warning: importer.ImportType#apply Failed type conversion: typeof Player */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_spacer(name: spacer_): /* import warning: importer.ImportType#apply Failed type conversion: typeof Spacer */ js.Any = js.native
-    @JSName("getComponent")
-    def getComponent_timeTooltip(name: timeTooltip_): /* import warning: importer.ImportType#apply Failed type conversion: typeof TimeToolTip */ js.Any = js.native
+    def getComponent(
+      name: Button | ClickableComponent | typings.videoJs.videoJsStrings.Component | Menu | MenuButton | MenuItem | ModalDialog | MouseTimeDisplay | typings.videoJs.videoJsStrings.Player | Spacer | TimeTooltip | button_ | clickablecomponent_ | component_ | menu_ | menubutton_ | menuitem_ | modaldialog_ | mouseTimeDisplay_ | player_ | spacer_ | timeTooltip_
+    ): /* import warning: importer.ImportType#apply Failed type conversion: typeof Button */ js.Any = js.native
+    def getComponent(name: String): /* import warning: importer.ImportType#apply Failed type conversion: typeof Component */ js.Any = js.native
     
     /**
       * Register a `Component` with `videojs` given the name and the component.
@@ -449,7 +397,7 @@ object anon {
       *
       * @return The `Component` that was registered.
       */
-    def registerComponent(name: String, ComponentToRegister: js.Any): js.Any = js.native
+    def registerComponent(name: String, ComponentToRegister: Any): Any = js.native
   }
   
   @js.native
@@ -475,7 +423,7 @@ object anon {
       * @return An object containing all of the settings
       *         for a player tag
       */
-    def getTagSettings(tag: Element): js.Any = js.native
+    def getTagSettings(tag: Element): Any = js.native
   }
   
   @js.native
@@ -512,7 +460,7 @@ object anon {
   Instantiable1[/* player */ Player, typings.videoJs.mod.videojs.ClickableComponent]
        with Instantiable2[
           /* player */ Player, 
-          /* options */ ComponentOptions, 
+          /* options */ ClickableComponentOptions, 
           typings.videoJs.mod.videojs.ClickableComponent
         ]
   
@@ -666,6 +614,121 @@ object anon {
     */
   Instantiable1[/* player */ Player, TimeToolTip]
        with Instantiable2[/* player */ Player, /* options */ ComponentOptions, TimeToolTip]
+  
+  trait LiveTolerance extends StObject {
+    
+    var liveTolerance: js.UndefOr[Double] = js.undefined
+    
+    var trackingThreshold: js.UndefOr[Double] = js.undefined
+  }
+  object LiveTolerance {
+    
+    inline def apply(): LiveTolerance = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[LiveTolerance]
+    }
+    
+    extension [Self <: LiveTolerance](x: Self) {
+      
+      inline def setLiveTolerance(value: Double): Self = StObject.set(x, "liveTolerance", value.asInstanceOf[js.Any])
+      
+      inline def setLiveToleranceUndefined: Self = StObject.set(x, "liveTolerance", js.undefined)
+      
+      inline def setTrackingThreshold(value: Double): Self = StObject.set(x, "trackingThreshold", value.asInstanceOf[js.Any])
+      
+      inline def setTrackingThresholdUndefined: Self = StObject.set(x, "trackingThreshold", js.undefined)
+    }
+  }
+  
+  trait NavigationUI extends StObject {
+    
+    var navigationUI: hide
+  }
+  object NavigationUI {
+    
+    inline def apply(): NavigationUI = {
+      val __obj = js.Dynamic.literal(navigationUI = "hide")
+      __obj.asInstanceOf[NavigationUI]
+    }
+    
+    extension [Self <: NavigationUI](x: Self) {
+      
+      inline def setNavigationUI(value: hide): Self = StObject.set(x, "navigationUI", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Options extends StObject {
+    
+    var options: NavigationUI
+  }
+  object Options {
+    
+    inline def apply(options: NavigationUI): Options = {
+      val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Options]
+    }
+    
+    extension [Self <: Options](x: Self) {
+      
+      inline def setOptions(value: NavigationUI): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Partial<video.js.video.js.videojs.Breakpoint> */
+  trait PartialBreakpoint extends StObject {
+    
+    var huge: js.UndefOr[Double] = js.undefined
+    
+    var large: js.UndefOr[Double] = js.undefined
+    
+    var medium: js.UndefOr[Double] = js.undefined
+    
+    var small: js.UndefOr[Double] = js.undefined
+    
+    var tiny: js.UndefOr[Double] = js.undefined
+    
+    var xlarge: js.UndefOr[Double] = js.undefined
+    
+    var xsmall: js.UndefOr[Double] = js.undefined
+  }
+  object PartialBreakpoint {
+    
+    inline def apply(): PartialBreakpoint = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialBreakpoint]
+    }
+    
+    extension [Self <: PartialBreakpoint](x: Self) {
+      
+      inline def setHuge(value: Double): Self = StObject.set(x, "huge", value.asInstanceOf[js.Any])
+      
+      inline def setHugeUndefined: Self = StObject.set(x, "huge", js.undefined)
+      
+      inline def setLarge(value: Double): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+      
+      inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+      
+      inline def setMedium(value: Double): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+      
+      inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+      
+      inline def setSmall(value: Double): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      
+      inline def setTiny(value: Double): Self = StObject.set(x, "tiny", value.asInstanceOf[js.Any])
+      
+      inline def setTinyUndefined: Self = StObject.set(x, "tiny", js.undefined)
+      
+      inline def setXlarge(value: Double): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
+      
+      inline def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
+      
+      inline def setXsmall(value: Double): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
+      
+      inline def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
+    }
+  }
   
   @js.native
   trait TypeofComponent

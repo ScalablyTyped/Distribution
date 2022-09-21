@@ -10,7 +10,7 @@ trait SurfaceMouseenterEvent
   
   var element: js.UndefOr[typings.kendoUi.kendo.drawing.Element] = js.undefined
   
-  var originalEvent: js.UndefOr[js.Any] = js.undefined
+  var originalEvent: js.UndefOr[Any] = js.undefined
 }
 object SurfaceMouseenterEvent {
   
@@ -25,7 +25,7 @@ object SurfaceMouseenterEvent {
     
     inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    inline def setOriginalEvent(value: js.Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     
     inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
   }

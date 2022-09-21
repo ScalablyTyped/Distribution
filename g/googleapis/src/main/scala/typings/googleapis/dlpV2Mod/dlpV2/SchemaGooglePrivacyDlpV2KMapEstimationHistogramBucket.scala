@@ -4,41 +4,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A KMapEstimationHistogramBucket message with the following values:
-  * min_anonymity: 3   max_anonymity: 5   frequency: 42 means that there are 42
-  * records whose quasi-identifier values correspond to 3, 4 or 5 people in the
-  * overlying population. An important particular case is when min_anonymity =
-  * max_anonymity = 1: the frequency field then corresponds to the number of
-  * uniquely identifiable records.
-  */
 trait SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket extends StObject {
   
   /**
     * Number of records within these anonymity bounds.
     */
-  var bucketSize: js.UndefOr[String] = js.undefined
+  var bucketSize: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Total number of distinct quasi-identifier tuple values in this bucket.
     */
-  var bucketValueCount: js.UndefOr[String] = js.undefined
+  var bucketValueCount: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Sample of quasi-identifier tuple values in this bucket. The total number
-    * of classes returned per bucket is capped at 20.
+    * Sample of quasi-identifier tuple values in this bucket. The total number of classes returned per bucket is capped at 20.
     */
   var bucketValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2KMapEstimationQuasiIdValues]] = js.undefined
   
   /**
     * Always greater than or equal to min_anonymity.
     */
-  var maxAnonymity: js.UndefOr[String] = js.undefined
+  var maxAnonymity: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Always positive.
     */
-  var minAnonymity: js.UndefOr[String] = js.undefined
+  var minAnonymity: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket {
   
@@ -51,9 +42,13 @@ object SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket {
     
     inline def setBucketSize(value: String): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
     
+    inline def setBucketSizeNull: Self = StObject.set(x, "bucketSize", null)
+    
     inline def setBucketSizeUndefined: Self = StObject.set(x, "bucketSize", js.undefined)
     
     inline def setBucketValueCount(value: String): Self = StObject.set(x, "bucketValueCount", value.asInstanceOf[js.Any])
+    
+    inline def setBucketValueCountNull: Self = StObject.set(x, "bucketValueCount", null)
     
     inline def setBucketValueCountUndefined: Self = StObject.set(x, "bucketValueCount", js.undefined)
     
@@ -61,13 +56,17 @@ object SchemaGooglePrivacyDlpV2KMapEstimationHistogramBucket {
     
     inline def setBucketValuesUndefined: Self = StObject.set(x, "bucketValues", js.undefined)
     
-    inline def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2KMapEstimationQuasiIdValues*): Self = StObject.set(x, "bucketValues", js.Array(value :_*))
+    inline def setBucketValuesVarargs(value: SchemaGooglePrivacyDlpV2KMapEstimationQuasiIdValues*): Self = StObject.set(x, "bucketValues", js.Array(value*))
     
     inline def setMaxAnonymity(value: String): Self = StObject.set(x, "maxAnonymity", value.asInstanceOf[js.Any])
+    
+    inline def setMaxAnonymityNull: Self = StObject.set(x, "maxAnonymity", null)
     
     inline def setMaxAnonymityUndefined: Self = StObject.set(x, "maxAnonymity", js.undefined)
     
     inline def setMinAnonymity(value: String): Self = StObject.set(x, "minAnonymity", value.asInstanceOf[js.Any])
+    
+    inline def setMinAnonymityNull: Self = StObject.set(x, "minAnonymity", null)
     
     inline def setMinAnonymityUndefined: Self = StObject.set(x, "minAnonymity", js.undefined)
   }

@@ -277,19 +277,19 @@ object JQuery {
         
         inline def setCreateBordersUndefined: Self = StObject.set(x, "createBorders", js.undefined)
         
-        inline def setCreateBordersVarargs(value: CardinalDirection*): Self = StObject.set(x, "createBorders", js.Array(value :_*))
+        inline def setCreateBordersVarargs(value: CardinalDirection*): Self = StObject.set(x, "createBorders", js.Array(value*))
         
         inline def setCreateDragbars(value: js.Array[CardinalDirection]): Self = StObject.set(x, "createDragbars", value.asInstanceOf[js.Any])
         
         inline def setCreateDragbarsUndefined: Self = StObject.set(x, "createDragbars", js.undefined)
         
-        inline def setCreateDragbarsVarargs(value: CardinalDirection*): Self = StObject.set(x, "createDragbars", js.Array(value :_*))
+        inline def setCreateDragbarsVarargs(value: CardinalDirection*): Self = StObject.set(x, "createDragbars", js.Array(value*))
         
         inline def setCreateHandles(value: js.Array[CardinalDirection | IntermediateDirection]): Self = StObject.set(x, "createHandles", value.asInstanceOf[js.Any])
         
         inline def setCreateHandlesUndefined: Self = StObject.set(x, "createHandles", js.undefined)
         
-        inline def setCreateHandlesVarargs(value: (CardinalDirection | IntermediateDirection)*): Self = StObject.set(x, "createHandles", js.Array(value :_*))
+        inline def setCreateHandlesVarargs(value: (CardinalDirection | IntermediateDirection)*): Self = StObject.set(x, "createHandles", js.Array(value*))
         
         inline def setDragEdges(value: Boolean): Self = StObject.set(x, "dragEdges", value.asInstanceOf[js.Any])
         

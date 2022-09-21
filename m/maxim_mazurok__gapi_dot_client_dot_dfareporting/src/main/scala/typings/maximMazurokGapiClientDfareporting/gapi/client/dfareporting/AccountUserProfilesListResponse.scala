@@ -28,7 +28,7 @@ object AccountUserProfilesListResponse {
     
     inline def setAccountUserProfilesUndefined: Self = StObject.set(x, "accountUserProfiles", js.undefined)
     
-    inline def setAccountUserProfilesVarargs(value: AccountUserProfile*): Self = StObject.set(x, "accountUserProfiles", js.Array(value :_*))
+    inline def setAccountUserProfilesVarargs(value: AccountUserProfile*): Self = StObject.set(x, "accountUserProfiles", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

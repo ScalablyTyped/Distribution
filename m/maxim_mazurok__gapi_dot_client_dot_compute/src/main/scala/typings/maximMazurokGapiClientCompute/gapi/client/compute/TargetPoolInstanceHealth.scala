@@ -24,7 +24,7 @@ object TargetPoolInstanceHealth {
     
     inline def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
     
-    inline def setHealthStatusVarargs(value: HealthStatus*): Self = StObject.set(x, "healthStatus", js.Array(value :_*))
+    inline def setHealthStatusVarargs(value: HealthStatus*): Self = StObject.set(x, "healthStatus", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

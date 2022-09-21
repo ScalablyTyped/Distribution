@@ -31,6 +31,6 @@ object ListStreamKeysResponse {
     
     inline def setStreamKeys(value: StreamKeyList): Self = StObject.set(x, "streamKeys", value.asInstanceOf[js.Any])
     
-    inline def setStreamKeysVarargs(value: StreamKeySummary*): Self = StObject.set(x, "streamKeys", js.Array(value :_*))
+    inline def setStreamKeysVarargs(value: StreamKeySummary*): Self = StObject.set(x, "streamKeys", js.Array(value*))
   }
 }

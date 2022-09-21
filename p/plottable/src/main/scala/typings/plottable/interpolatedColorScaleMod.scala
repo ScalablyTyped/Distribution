@@ -14,26 +14,26 @@ object interpolatedColorScaleMod {
     *
     * @param {string} [scaleType="linear"] One of "linear"/"log"/"sqrt"/"pow".
     */
-  class InterpolatedColor () extends Scale[Double, String] {
+  open class InterpolatedColor () extends Scale[Double, String] {
     def this(scaleType: String) = this()
     
-    /* private */ var _colorRange: js.Any = js.native
+    /* private */ var _colorRange: Any = js.native
     
-    /* private */ var _colorScale: js.Any = js.native
+    /* private */ var _colorScale: Any = js.native
     
     /**
       * Generates the converted QuantitativeScale.
       */
-    /* private */ def _d3InterpolatedScale(): js.Any = js.native
+    /* private */ var _d3InterpolatedScale: Any = js.native
     
-    /* private */ var _d3Scale: js.Any = js.native
+    /* private */ var _d3Scale: Any = js.native
     
     /**
       * Generates the d3 interpolator for colors.
       */
-    /* private */ def _interpolateColors(): js.Any = js.native
+    /* private */ var _interpolateColors: Any = js.native
     
-    /* private */ def _resetScale(): js.Any = js.native
+    /* private */ var _resetScale: Any = js.native
   }
   /* static members */
   object InterpolatedColor {

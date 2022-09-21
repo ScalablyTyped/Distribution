@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("GoToHeaderCommand")
 @js.native
-class GoToHeaderCommand ()
+open class GoToHeaderCommand ()
   extends StObject
      with typings.devexpressWeb.GoToHeaderCommand {
   

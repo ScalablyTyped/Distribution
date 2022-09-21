@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 信息展示窗体
   * @param options 选项
   */
-class InfoWindow[ExtraData] ()
+open class InfoWindow[ExtraData] ()
   extends StObject
      with typings.amapJsApi.AMap.InfoWindow[ExtraData] {
-  def this(options: Options[js.Any]) = this()
+  def this(options: Options[Any]) = this()
 }

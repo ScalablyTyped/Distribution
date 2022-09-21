@@ -2,6 +2,7 @@ package typings.grpcGrpcJs
 
 import typings.grpcGrpcJs.callStreamMod.Call
 import typings.grpcGrpcJs.channelMod.Channel
+import typings.grpcGrpcJs.channelOptionsMod.ChannelOptions
 import typings.grpcGrpcJs.filterMod.BaseFilter
 import typings.grpcGrpcJs.filterMod.FilterFactory
 import org.scalablytyped.runtime.StObject
@@ -12,23 +13,51 @@ object compressionFilterMod {
   
   @JSImport("@grpc/grpc-js/build/src/compression-filter", "CompressionFilter")
   @js.native
-  class CompressionFilter () extends BaseFilter {
+  open class CompressionFilter protected () extends BaseFilter {
+    def this(channelOptions: ChannelOptions, sharedFilterConfig: SharedCompressionFilterConfig) = this()
     
-    /* private */ var receiveCompression: js.Any = js.native
+    /* private */ var currentCompressionAlgorithm: Any = js.native
     
-    /* private */ var sendCompression: js.Any = js.native
+    /* private */ var receiveCompression: Any = js.native
+    
+    /* private */ var sendCompression: Any = js.native
+    
+    /* private */ var sharedFilterConfig: Any = js.native
   }
   
   @JSImport("@grpc/grpc-js/build/src/compression-filter", "CompressionFilterFactory")
   @js.native
-  class CompressionFilterFactory protected ()
+  open class CompressionFilterFactory protected ()
     extends StObject
        with FilterFactory[CompressionFilter] {
-    def this(channel: Channel) = this()
+    def this(channel: Channel, options: ChannelOptions) = this()
     
-    /* private */ val channel: js.Any = js.native
+    /* private */ val channel: Any = js.native
     
     /* CompleteClass */
     override def createFilter(callStream: Call): CompressionFilter = js.native
+    
+    /* private */ val options: Any = js.native
+    
+    /* private */ var sharedFilterConfig: Any = js.native
+  }
+  
+  trait SharedCompressionFilterConfig extends StObject {
+    
+    var serverSupportedEncodingHeader: js.UndefOr[String] = js.undefined
+  }
+  object SharedCompressionFilterConfig {
+    
+    inline def apply(): SharedCompressionFilterConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SharedCompressionFilterConfig]
+    }
+    
+    extension [Self <: SharedCompressionFilterConfig](x: Self) {
+      
+      inline def setServerSupportedEncodingHeader(value: String): Self = StObject.set(x, "serverSupportedEncodingHeader", value.asInstanceOf[js.Any])
+      
+      inline def setServerSupportedEncodingHeaderUndefined: Self = StObject.set(x, "serverSupportedEncodingHeader", js.undefined)
+    }
   }
 }

@@ -19,12 +19,12 @@ trait ColumnSortingEventUIParam extends StObject {
   /**
     * Gets sorting expressions.
     */
-  var newExpressions: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var newExpressions: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets a reference to GridSorting.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object ColumnSortingEventUIParam {
   
@@ -43,13 +43,13 @@ object ColumnSortingEventUIParam {
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    inline def setNewExpressions(value: js.Array[js.Any]): Self = StObject.set(x, "newExpressions", value.asInstanceOf[js.Any])
+    inline def setNewExpressions(value: js.Array[Any]): Self = StObject.set(x, "newExpressions", value.asInstanceOf[js.Any])
     
     inline def setNewExpressionsUndefined: Self = StObject.set(x, "newExpressions", js.undefined)
     
-    inline def setNewExpressionsVarargs(value: js.Any*): Self = StObject.set(x, "newExpressions", js.Array(value :_*))
+    inline def setNewExpressionsVarargs(value: Any*): Self = StObject.set(x, "newExpressions", js.Array(value*))
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

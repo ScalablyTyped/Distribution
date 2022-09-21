@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A color that can either be fully opaque or fully transparent.
-  */
 trait SchemaOptionalColor extends StObject {
   
   /**
-    * If set, this will be used as an opaque color. If unset, this represents a
-    * transparent color.
+    * If set, this will be used as an opaque color. If unset, this represents a transparent color.
     */
   var opaqueColor: js.UndefOr[SchemaOpaqueColor] = js.undefined
 }

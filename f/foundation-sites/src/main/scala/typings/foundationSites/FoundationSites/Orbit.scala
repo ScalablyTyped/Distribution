@@ -14,7 +14,5 @@ trait Orbit extends StObject {
   def changeSlide(isLTR: Boolean, chosenSlide: JQuery): Unit = js.native
   def changeSlide(isLTR: Boolean, chosenSlide: JQuery, idx: Double): Unit = js.native
   
-  def destroy(): Unit = js.native
-  
   def geoSync(): Unit = js.native
 }

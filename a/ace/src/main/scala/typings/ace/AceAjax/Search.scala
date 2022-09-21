@@ -21,7 +21,7 @@ trait Search extends StObject {
   /**
     * [Returns an object containing all the search options.]{: #Search.getOptions}
     **/
-  def getOptions(): js.Any
+  def getOptions(): Any
   
   /**
     * Searches for `options.needle` in `input`, and, if found, replaces it with `replacement`.
@@ -36,23 +36,23 @@ trait Search extends StObject {
     * Sets the search options via the `options` parameter.
     * @param options An object containing all the new search properties
     **/
-  def set(options: js.Any): Search
+  def set(options: Any): Search
   
   /**
     * Sets the search options via the `options` parameter.
     * @param An object containing all the search propertie
     **/
-  def setOptions(An: js.Any): Unit
+  def setOptions(An: Any): Unit
 }
 object Search {
   
   inline def apply(
     find: IEditSession => Range,
     findAll: IEditSession => js.Array[Range],
-    getOptions: () => js.Any,
+    getOptions: () => Any,
     replace: (String, String) => String,
-    set: js.Any => Search,
-    setOptions: js.Any => Unit
+    set: Any => Search,
+    setOptions: Any => Unit
   ): Search = {
     val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find), findAll = js.Any.fromFunction1(findAll), getOptions = js.Any.fromFunction0(getOptions), replace = js.Any.fromFunction2(replace), set = js.Any.fromFunction1(set), setOptions = js.Any.fromFunction1(setOptions))
     __obj.asInstanceOf[Search]
@@ -64,12 +64,12 @@ object Search {
     
     inline def setFindAll(value: IEditSession => js.Array[Range]): Self = StObject.set(x, "findAll", js.Any.fromFunction1(value))
     
-    inline def setGetOptions(value: () => js.Any): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
+    inline def setGetOptions(value: () => Any): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
     
     inline def setReplace(value: (String, String) => String): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
     
-    inline def setSet(value: js.Any => Search): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: Any => Search): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
-    inline def setSetOptions(value: js.Any => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: Any => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
   }
 }

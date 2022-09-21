@@ -10,10 +10,10 @@ object bubbleChartMod {
   
   @JSImport("material-ui/svg-icons/editor/bubble-chart", JSImport.Default)
   @js.native
-  class default () extends EditorBubbleChart
+  open class default () extends EditorBubbleChart
   
   @JSImport("material-ui/svg-icons/editor/bubble-chart", "EditorBubbleChart")
   @js.native
-  class EditorBubbleChart ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorBubbleChart ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

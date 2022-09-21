@@ -146,4 +146,21 @@ object webglTypesMod {
       inline def setStencilUndefined: Self = StObject.set(x, "stencil", js.undefined)
     }
   }
+  
+  trait WebGLParallelCompilationExtension extends StObject {
+    
+    var COMPLETION_STATUS_KHR: Double
+  }
+  object WebGLParallelCompilationExtension {
+    
+    inline def apply(COMPLETION_STATUS_KHR: Double): WebGLParallelCompilationExtension = {
+      val __obj = js.Dynamic.literal(COMPLETION_STATUS_KHR = COMPLETION_STATUS_KHR.asInstanceOf[js.Any])
+      __obj.asInstanceOf[WebGLParallelCompilationExtension]
+    }
+    
+    extension [Self <: WebGLParallelCompilationExtension](x: Self) {
+      
+      inline def setCOMPLETION_STATUS_KHR(value: Double): Self = StObject.set(x, "COMPLETION_STATUS_KHR", value.asInstanceOf[js.Any])
+    }
+  }
 }

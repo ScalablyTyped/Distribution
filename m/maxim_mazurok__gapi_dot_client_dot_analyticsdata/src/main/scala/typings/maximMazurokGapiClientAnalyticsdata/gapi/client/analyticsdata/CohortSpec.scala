@@ -6,13 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CohortSpec extends StObject {
   
-  /** Settings of a cohort report. */
+  /** Optional settings for a cohort report. */
   var cohortReportSettings: js.UndefOr[CohortReportSettings] = js.undefined
   
-  /** The definition for the cohorts. */
+  /**
+    * Defines the selection criteria to group users into cohorts. Most cohort reports define only a single cohort. If multiple cohorts are specified, each cohort can be recognized in the
+    * report by their name.
+    */
   var cohorts: js.UndefOr[js.Array[Cohort]] = js.undefined
   
-  /** The data ranges of cohorts. */
+  /** Cohort reports follow cohorts over an extended reporting date range. This range specifies an offset duration to follow the cohorts over. */
   var cohortsRange: js.UndefOr[CohortsRange] = js.undefined
 }
 object CohortSpec {
@@ -36,6 +39,6 @@ object CohortSpec {
     
     inline def setCohortsUndefined: Self = StObject.set(x, "cohorts", js.undefined)
     
-    inline def setCohortsVarargs(value: Cohort*): Self = StObject.set(x, "cohorts", js.Array(value :_*))
+    inline def setCohortsVarargs(value: Cohort*): Self = StObject.set(x, "cohorts", js.Array(value*))
   }
 }

@@ -14,7 +14,7 @@ trait ClientCertificate extends StObject {
   /**
     * The timestamp when the client certificate was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.undefined
+  var createdDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The description of the client certificate.
@@ -24,7 +24,7 @@ trait ClientCertificate extends StObject {
   /**
     * The timestamp when the client certificate will expire.
     */
-  var expirationDate: js.UndefOr[Timestamp] = js.undefined
+  var expirationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The PEM-encoded public key of the client certificate, which can be used to configure certificate authentication in the integration endpoint .
@@ -49,7 +49,7 @@ object ClientCertificate {
     
     inline def setClientCertificateIdUndefined: Self = StObject.set(x, "clientCertificateId", js.undefined)
     
-    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     
@@ -57,7 +57,7 @@ object ClientCertificate {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     

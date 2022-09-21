@@ -88,15 +88,15 @@ object fsMod {
   inline def read(fd: Double, buffer: ClassBuffer, offset: Unit, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def read(fd: Double, buffer: ClassBuffer, offset: Unit, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def readFile(fname: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(fname.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def readFile(fname: String, encoding: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(fname.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def readFile(fname: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(fname.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def readFile(fname: String, encoding: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(fname.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def readLines(fname: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readLines")(fname.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-  inline def readLines(fname: String, maxlines: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readLines")(fname.asInstanceOf[js.Any], maxlines.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def readLines(fname: String): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readLines")(fname.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+  inline def readLines(fname: String, maxlines: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readLines")(fname.asInstanceOf[js.Any], maxlines.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
   inline def readTextFile(fname: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readTextFile")(fname.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def readdir(path: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def readdir(path: String): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   inline def readlink(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   

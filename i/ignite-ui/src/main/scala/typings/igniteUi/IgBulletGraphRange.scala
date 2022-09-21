@@ -10,7 +10,7 @@ trait IgBulletGraphRange
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets or sets the brush to use to fill the range.

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.AutoFilter")
 @js.native
-/* private */ class AutoFilter ()
+/* private */ open class AutoFilter ()
   extends StObject
      with typings.activexExcel.Excel.AutoFilter {
   
@@ -36,7 +36,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Filters_Original: Filters = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Range(Address: String): typings.activexExcel.Excel.Range = js.native

@@ -38,6 +38,6 @@ object ListVPCAssociationAuthorizationsResponse {
     
     inline def setVPCs(value: VPCs): Self = StObject.set(x, "VPCs", value.asInstanceOf[js.Any])
     
-    inline def setVPCsVarargs(value: VPC*): Self = StObject.set(x, "VPCs", js.Array(value :_*))
+    inline def setVPCsVarargs(value: VPC*): Self = StObject.set(x, "VPCs", js.Array(value*))
   }
 }

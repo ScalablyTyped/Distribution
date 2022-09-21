@@ -22,6 +22,6 @@ object GetSamplingTargetsRequest {
     
     inline def setSamplingStatisticsDocuments(value: SamplingStatisticsDocumentList): Self = StObject.set(x, "SamplingStatisticsDocuments", value.asInstanceOf[js.Any])
     
-    inline def setSamplingStatisticsDocumentsVarargs(value: SamplingStatisticsDocument*): Self = StObject.set(x, "SamplingStatisticsDocuments", js.Array(value :_*))
+    inline def setSamplingStatisticsDocumentsVarargs(value: SamplingStatisticsDocument*): Self = StObject.set(x, "SamplingStatisticsDocuments", js.Array(value*))
   }
 }

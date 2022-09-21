@@ -1172,10 +1172,10 @@ object component {
     var ListSourceType: typings.activexLibreoffice.com_.sun.star.form.ListSourceType = js.native
     
     /** The selected value, if there is at most one. */
-    var SelectedValue: js.Any = js.native
+    var SelectedValue: Any = js.native
     
     /** The selected values. */
-    var SelectedValues: SafeArray[js.Any] = js.native
+    var SelectedValues: SafeArray[Any] = js.native
     
     /**
       * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
@@ -1846,7 +1846,7 @@ object component {
        with FormComponents
        with XTabControllerModel {
     
-    def getPropertyValues(aPropertyNames: SeqEquiv[String]): SafeArray[js.Any] = js.native
+    def getPropertyValues(aPropertyNames: SeqEquiv[String]): SafeArray[Any] = js.native
   }
   
   /**
@@ -2056,7 +2056,7 @@ object component {
     /** specifies the value of the component. */
     var HiddenValue: String = js.native
     
-    def getPropertyValues(aPropertyNames: SeqEquiv[String]): SafeArray[js.Any] = js.native
+    def getPropertyValues(aPropertyNames: SeqEquiv[String]): SafeArray[Any] = js.native
   }
   
   /**

@@ -2,60 +2,29 @@ package typings.babylonjs
 
 import typings.babylonjs.deviceEnumsMod.DeviceType
 import typings.babylonjs.engineMod.Engine
+import typings.babylonjs.inputInterfacesMod.IDeviceInputSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deviceInputIndexMod {
   
-  @JSImport("babylonjs/DeviceInput/index", "DeviceInputSystem")
-  @js.native
-  /* private */ class DeviceInputSystem ()
-    extends typings.babylonjs.deviceInputSystemMod.DeviceInputSystem
-  /* static members */
-  object DeviceInputSystem {
-    
-    @JSImport("babylonjs/DeviceInput/index", "DeviceInputSystem")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * Creates a new DeviceInputSystem instance
-      * @param engine Engine to pull input element from
-      * @returns The new instance
-      */
-    inline def Create(engine: Engine): typings.babylonjs.deviceInputSystemMod.DeviceInputSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("Create")(engine.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.deviceInputSystemMod.DeviceInputSystem]
-    
-    @JSImport("babylonjs/DeviceInput/index", "DeviceInputSystem._MAX_KEYCODES")
-    @js.native
-    def _MAX_KEYCODES: js.Any = js.native
-    inline def _MAX_KEYCODES_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_KEYCODES")(x.asInstanceOf[js.Any])
-    
-    @JSImport("babylonjs/DeviceInput/index", "DeviceInputSystem._MAX_POINTER_INPUTS")
-    @js.native
-    def _MAX_POINTER_INPUTS: js.Any = js.native
-    inline def _MAX_POINTER_INPUTS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_POINTER_INPUTS")(x.asInstanceOf[js.Any])
-  }
-  
   @JSImport("babylonjs/DeviceInput/index", "DeviceSource")
   @js.native
-  class DeviceSource[T /* <: DeviceType */] protected ()
-    extends typings.babylonjs.deviceSourceManagerMod.DeviceSource[T] {
+  open class DeviceSource[T /* <: DeviceType */] protected ()
+    extends typings.babylonjs.deviceSourceMod.DeviceSource[T] {
     /**
       * Default Constructor
-      * @param deviceInputSystem Reference to DeviceInputSystem
-      * @param deviceType Type of device
-      * @param deviceSlot "Slot" or index that device is referenced in
+      * @param deviceInputSystem - Reference to DeviceInputSystem
+      * @param deviceType - Type of device
+      * @param deviceSlot - "Slot" or index that device is referenced in
       */
+    def this(deviceInputSystem: IDeviceInputSystem, /** Type of device */
+    deviceType: T) = this()
     def this(
-      deviceInputSystem: typings.babylonjs.deviceInputSystemMod.DeviceInputSystem,
+      deviceInputSystem: IDeviceInputSystem,
       /** Type of device */
-    deviceType: DeviceType
-    ) = this()
-    def this(
-      deviceInputSystem: typings.babylonjs.deviceInputSystemMod.DeviceInputSystem,
-      /** Type of device */
-    deviceType: DeviceType,
+    deviceType: T,
       /** "Slot" or index that device is referenced in */
     deviceSlot: Double
     ) = this()
@@ -63,11 +32,11 @@ object deviceInputIndexMod {
   
   @JSImport("babylonjs/DeviceInput/index", "DeviceSourceManager")
   @js.native
-  class DeviceSourceManager protected ()
+  open class DeviceSourceManager protected ()
     extends typings.babylonjs.deviceSourceManagerMod.DeviceSourceManager {
     /**
-      * Default Constructor
-      * @param engine engine to pull input element from
+      * Default constructor
+      * @param engine - Used to get canvas (if applicable)
       */
     def this(engine: Engine) = this()
   }
@@ -78,6 +47,8 @@ object deviceInputIndexMod {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.babylonjs.deviceEnumsMod.DeviceType & Double] = js.native
+    
+    /* 7 */ val DualSense: typings.babylonjs.deviceEnumsMod.DeviceType.DualSense & Double = js.native
     
     /* 4 */ val DualShock: typings.babylonjs.deviceEnumsMod.DeviceType.DualShock & Double = js.native
     
@@ -92,6 +63,58 @@ object deviceInputIndexMod {
     /* 3 */ val Touch: typings.babylonjs.deviceEnumsMod.DeviceType.Touch & Double = js.native
     
     /* 5 */ val Xbox: typings.babylonjs.deviceEnumsMod.DeviceType.Xbox & Double = js.native
+  }
+  
+  @JSImport("babylonjs/DeviceInput/index", "DualSenseInput")
+  @js.native
+  object DualSenseInput extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.babylonjs.deviceEnumsMod.DualSenseInput & Double] = js.native
+    
+    /* 1 */ val Circle: typings.babylonjs.deviceEnumsMod.DualSenseInput.Circle & Double = js.native
+    
+    /* 8 */ val Create: typings.babylonjs.deviceEnumsMod.DualSenseInput.Create & Double = js.native
+    
+    /* 0 */ val Cross: typings.babylonjs.deviceEnumsMod.DualSenseInput.Cross & Double = js.native
+    
+    /* 13 */ val DPadDown: typings.babylonjs.deviceEnumsMod.DualSenseInput.DPadDown & Double = js.native
+    
+    /* 14 */ val DPadLeft: typings.babylonjs.deviceEnumsMod.DualSenseInput.DPadLeft & Double = js.native
+    
+    /* 15 */ val DPadRight: typings.babylonjs.deviceEnumsMod.DualSenseInput.DPadRight & Double = js.native
+    
+    /* 12 */ val DPadUp: typings.babylonjs.deviceEnumsMod.DualSenseInput.DPadUp & Double = js.native
+    
+    /* 16 */ val Home: typings.babylonjs.deviceEnumsMod.DualSenseInput.Home & Double = js.native
+    
+    /* 4 */ val L1: typings.babylonjs.deviceEnumsMod.DualSenseInput.L1 & Double = js.native
+    
+    /* 6 */ val L2: typings.babylonjs.deviceEnumsMod.DualSenseInput.L2 & Double = js.native
+    
+    /* 10 */ val L3: typings.babylonjs.deviceEnumsMod.DualSenseInput.L3 & Double = js.native
+    
+    /* 18 */ val LStickXAxis: typings.babylonjs.deviceEnumsMod.DualSenseInput.LStickXAxis & Double = js.native
+    
+    /* 19 */ val LStickYAxis: typings.babylonjs.deviceEnumsMod.DualSenseInput.LStickYAxis & Double = js.native
+    
+    /* 9 */ val Options: typings.babylonjs.deviceEnumsMod.DualSenseInput.Options & Double = js.native
+    
+    /* 5 */ val R1: typings.babylonjs.deviceEnumsMod.DualSenseInput.R1 & Double = js.native
+    
+    /* 7 */ val R2: typings.babylonjs.deviceEnumsMod.DualSenseInput.R2 & Double = js.native
+    
+    /* 11 */ val R3: typings.babylonjs.deviceEnumsMod.DualSenseInput.R3 & Double = js.native
+    
+    /* 20 */ val RStickXAxis: typings.babylonjs.deviceEnumsMod.DualSenseInput.RStickXAxis & Double = js.native
+    
+    /* 21 */ val RStickYAxis: typings.babylonjs.deviceEnumsMod.DualSenseInput.RStickYAxis & Double = js.native
+    
+    /* 2 */ val Square: typings.babylonjs.deviceEnumsMod.DualSenseInput.Square & Double = js.native
+    
+    /* 17 */ val TouchPad: typings.babylonjs.deviceEnumsMod.DualSenseInput.TouchPad & Double = js.native
+    
+    /* 3 */ val Triangle: typings.babylonjs.deviceEnumsMod.DualSenseInput.Triangle & Double = js.native
   }
   
   @JSImport("babylonjs/DeviceInput/index", "DualShockInput")
@@ -146,6 +169,38 @@ object deviceInputIndexMod {
     /* 3 */ val Triangle: typings.babylonjs.deviceEnumsMod.DualShockInput.Triangle & Double = js.native
   }
   
+  @JSImport("babylonjs/DeviceInput/index", "NativePointerInput")
+  @js.native
+  object NativePointerInput extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typings.babylonjs.deviceEnumsMod.NativePointerInput & Double] = js.native
+    
+    /* 5 */ val BrowserBack: typings.babylonjs.deviceEnumsMod.NativePointerInput.BrowserBack & Double = js.native
+    
+    /* 6 */ val BrowserForward: typings.babylonjs.deviceEnumsMod.NativePointerInput.BrowserForward & Double = js.native
+    
+    /* 10 */ val DeltaHorizontal: typings.babylonjs.deviceEnumsMod.NativePointerInput.DeltaHorizontal & Double = js.native
+    
+    /* 11 */ val DeltaVertical: typings.babylonjs.deviceEnumsMod.NativePointerInput.DeltaVertical & Double = js.native
+    
+    /* 0 */ val Horizontal: typings.babylonjs.deviceEnumsMod.NativePointerInput.Horizontal & Double = js.native
+    
+    /* 2 */ val LeftClick: typings.babylonjs.deviceEnumsMod.NativePointerInput.LeftClick & Double = js.native
+    
+    /* 3 */ val MiddleClick: typings.babylonjs.deviceEnumsMod.NativePointerInput.MiddleClick & Double = js.native
+    
+    /* 7 */ val MouseWheelX: typings.babylonjs.deviceEnumsMod.NativePointerInput.MouseWheelX & Double = js.native
+    
+    /* 8 */ val MouseWheelY: typings.babylonjs.deviceEnumsMod.NativePointerInput.MouseWheelY & Double = js.native
+    
+    /* 9 */ val MouseWheelZ: typings.babylonjs.deviceEnumsMod.NativePointerInput.MouseWheelZ & Double = js.native
+    
+    /* 4 */ val RightClick: typings.babylonjs.deviceEnumsMod.NativePointerInput.RightClick & Double = js.native
+    
+    /* 1 */ val Vertical: typings.babylonjs.deviceEnumsMod.NativePointerInput.Vertical & Double = js.native
+  }
+  
   @JSImport("babylonjs/DeviceInput/index", "PointerInput")
   @js.native
   object PointerInput extends StObject {
@@ -162,6 +217,14 @@ object deviceInputIndexMod {
     /* 2 */ val LeftClick: typings.babylonjs.deviceEnumsMod.PointerInput.LeftClick & Double = js.native
     
     /* 3 */ val MiddleClick: typings.babylonjs.deviceEnumsMod.PointerInput.MiddleClick & Double = js.native
+    
+    /* 7 */ val MouseWheelX: typings.babylonjs.deviceEnumsMod.PointerInput.MouseWheelX & Double = js.native
+    
+    /* 8 */ val MouseWheelY: typings.babylonjs.deviceEnumsMod.PointerInput.MouseWheelY & Double = js.native
+    
+    /* 9 */ val MouseWheelZ: typings.babylonjs.deviceEnumsMod.PointerInput.MouseWheelZ & Double = js.native
+    
+    /* 12 */ val Move: typings.babylonjs.deviceEnumsMod.PointerInput.Move & Double = js.native
     
     /* 4 */ val RightClick: typings.babylonjs.deviceEnumsMod.PointerInput.RightClick & Double = js.native
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Particle")
 @js.native
-class Particle protected ()
+open class Particle protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Particle {
   /**
@@ -95,7 +95,10 @@ class Particle protected ()
   /* CompleteClass */
   var _currentVelocityGradient: Nullable[typings.babylonjs.BABYLON.FactorGradient] = js.native
   
-  /** @hidden */
+  /**
+    * @param subEmitter
+    * @hidden
+    */
   /* CompleteClass */
   override def _inheritParticleInfoToSubEmitter(subEmitter: typings.babylonjs.BABYLON.SubEmitter): Unit = js.native
   
@@ -113,6 +116,10 @@ class Particle protected ()
   
   /** @hidden */
   /* CompleteClass */
+  var _initialSpriteCellLoop: Boolean = js.native
+  
+  /** @hidden */
+  /* CompleteClass */
   var _initialStartSpriteCellID: Double = js.native
   
   /** @hidden */
@@ -126,6 +133,9 @@ class Particle protected ()
   /** @hidden */
   /* CompleteClass */
   override def _reset(): Unit = js.native
+  
+  /* private */ /* CompleteClass */
+  var _updateCellInfoFromSystem: Any = js.native
   
   /**
     * The current age of the particle.
@@ -223,9 +233,6 @@ class Particle protected ()
     */
   /* CompleteClass */
   override def updateCellIndex(): Unit = js.native
-  
-  /* private */ /* CompleteClass */
-  var updateCellInfoFromSystem: js.Any = js.native
 }
 /* static members */
 object Particle {
@@ -236,6 +243,6 @@ object Particle {
   
   @JSGlobal("BABYLON.Particle._Count")
   @js.native
-  def _Count: js.Any = js.native
-  inline def _Count_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Count")(x.asInstanceOf[js.Any])
+  def _Count: Any = js.native
+  inline def _Count_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Count")(x.asInstanceOf[js.Any])
 }

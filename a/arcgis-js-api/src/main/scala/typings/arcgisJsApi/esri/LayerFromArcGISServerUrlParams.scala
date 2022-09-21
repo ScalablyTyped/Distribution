@@ -15,7 +15,7 @@ trait LayerFromArcGISServerUrlParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fromArcGISServerUrl)
     */
-  var properties: js.UndefOr[js.Any] = js.undefined
+  var properties: js.UndefOr[Any] = js.undefined
   
   /**
     * The ArcGIS Server URL used to create the layer.
@@ -38,7 +38,7 @@ object LayerFromArcGISServerUrlParams {
   
   extension [Self <: LayerFromArcGISServerUrlParams](x: Self) {
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     

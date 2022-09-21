@@ -12,61 +12,61 @@ object rootContainerMod {
   
   @JSImport("playable/dist/src/modules/root-container/root-container", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with RootContainer {
     def this(hasEventEmitterConfig: ConfigEventEmitter) = this()
     
     /* private */ /* CompleteClass */
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _broadcastFocusEnter: js.Any = js.native
+    var _broadcastFocusEnter: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _broadcastFocusLeave: js.Any = js.native
+    var _broadcastFocusLeave: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _broadcastMouseEnter: js.Any = js.native
+    var _broadcastMouseEnter: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _broadcastMouseLeave: js.Any = js.native
+    var _broadcastMouseLeave: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _broadcastMouseMove: js.Any = js.native
+    var _broadcastMouseMove: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _disableFocusInterceptors: js.Any = js.native
+    var _disableFocusInterceptors: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _disengageFocusSource: js.Any = js.native
+    var _disengageFocusSource: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _disengageFocusWithin: js.Any = js.native
+    var _disengageFocusWithin: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _elementQueries: js.Any = js.native
+    var _elementQueries: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _enableFocusInterceptors: js.Any = js.native
+    var _enableFocusInterceptors: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initUI: js.Any = js.native
+    var _initUI: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _onResized: js.Any = js.native
+    var _onResized: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _resizeObserver: js.Any = js.native
+    var _resizeObserver: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: Any = js.native
     
     /* CompleteClass */
     override def appendComponentElement(element: HTMLElement): Unit = js.native
@@ -146,39 +146,39 @@ object rootContainerMod {
     extends StObject
        with IRootContainer {
     
-    /* private */ var _bindCallbacks: js.Any
+    /* private */ var _bindCallbacks: Any
     
-    /* private */ var _bindEvents: js.Any
+    /* private */ var _bindEvents: Any
     
-    /* private */ var _broadcastFocusEnter: js.Any
+    /* private */ var _broadcastFocusEnter: Any
     
-    /* private */ var _broadcastFocusLeave: js.Any
+    /* private */ var _broadcastFocusLeave: Any
     
-    /* private */ var _broadcastMouseEnter: js.Any
+    /* private */ var _broadcastMouseEnter: Any
     
-    /* private */ var _broadcastMouseLeave: js.Any
+    /* private */ var _broadcastMouseLeave: Any
     
-    /* private */ var _broadcastMouseMove: js.Any
+    /* private */ var _broadcastMouseMove: Any
     
-    /* private */ var _disableFocusInterceptors: js.Any
+    /* private */ var _disableFocusInterceptors: Any
     
-    /* private */ var _disengageFocusSource: js.Any
+    /* private */ var _disengageFocusSource: Any
     
-    /* private */ var _disengageFocusWithin: js.Any
+    /* private */ var _disengageFocusWithin: Any
     
-    /* private */ var _elementQueries: js.Any
+    /* private */ var _elementQueries: Any
     
-    /* private */ var _enableFocusInterceptors: js.Any
+    /* private */ var _enableFocusInterceptors: Any
     
-    /* private */ var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: Any
     
-    /* private */ var _initUI: js.Any
+    /* private */ var _initUI: Any
     
-    /* private */ var _onResized: js.Any
+    /* private */ var _onResized: Any
     
-    /* private */ var _resizeObserver: js.Any
+    /* private */ var _resizeObserver: Any
     
-    /* private */ var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: Any
     
     /**
       * Method for attaching player node to your container
@@ -200,23 +200,23 @@ object rootContainerMod {
   object RootContainer {
     
     inline def apply(
-      _bindCallbacks: js.Any,
-      _bindEvents: js.Any,
-      _broadcastFocusEnter: js.Any,
-      _broadcastFocusLeave: js.Any,
-      _broadcastMouseEnter: js.Any,
-      _broadcastMouseLeave: js.Any,
-      _broadcastMouseMove: js.Any,
-      _disableFocusInterceptors: js.Any,
-      _disengageFocusSource: js.Any,
-      _disengageFocusWithin: js.Any,
-      _elementQueries: js.Any,
-      _enableFocusInterceptors: js.Any,
-      _eventEmitter: js.Any,
-      _initUI: js.Any,
-      _onResized: js.Any,
-      _resizeObserver: js.Any,
-      _unbindEvents: js.Any,
+      _bindCallbacks: Any,
+      _bindEvents: Any,
+      _broadcastFocusEnter: Any,
+      _broadcastFocusLeave: Any,
+      _broadcastMouseEnter: Any,
+      _broadcastMouseLeave: Any,
+      _broadcastMouseMove: Any,
+      _disableFocusInterceptors: Any,
+      _disengageFocusSource: Any,
+      _disengageFocusWithin: Any,
+      _elementQueries: Any,
+      _enableFocusInterceptors: Any,
+      _eventEmitter: Any,
+      _initUI: Any,
+      _onResized: Any,
+      _resizeObserver: Any,
+      _unbindEvents: Any,
       appendComponentElement: HTMLElement => Unit,
       attachToElement: Element => Unit,
       destroy: () => Unit,
@@ -244,39 +244,39 @@ object rootContainerMod {
       
       inline def setView(value: typings.playable.rootContainerViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      inline def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
+      inline def set_bindCallbacks(value: Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
       
-      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      inline def set_broadcastFocusEnter(value: js.Any): Self = StObject.set(x, "_broadcastFocusEnter", value.asInstanceOf[js.Any])
+      inline def set_broadcastFocusEnter(value: Any): Self = StObject.set(x, "_broadcastFocusEnter", value.asInstanceOf[js.Any])
       
-      inline def set_broadcastFocusLeave(value: js.Any): Self = StObject.set(x, "_broadcastFocusLeave", value.asInstanceOf[js.Any])
+      inline def set_broadcastFocusLeave(value: Any): Self = StObject.set(x, "_broadcastFocusLeave", value.asInstanceOf[js.Any])
       
-      inline def set_broadcastMouseEnter(value: js.Any): Self = StObject.set(x, "_broadcastMouseEnter", value.asInstanceOf[js.Any])
+      inline def set_broadcastMouseEnter(value: Any): Self = StObject.set(x, "_broadcastMouseEnter", value.asInstanceOf[js.Any])
       
-      inline def set_broadcastMouseLeave(value: js.Any): Self = StObject.set(x, "_broadcastMouseLeave", value.asInstanceOf[js.Any])
+      inline def set_broadcastMouseLeave(value: Any): Self = StObject.set(x, "_broadcastMouseLeave", value.asInstanceOf[js.Any])
       
-      inline def set_broadcastMouseMove(value: js.Any): Self = StObject.set(x, "_broadcastMouseMove", value.asInstanceOf[js.Any])
+      inline def set_broadcastMouseMove(value: Any): Self = StObject.set(x, "_broadcastMouseMove", value.asInstanceOf[js.Any])
       
-      inline def set_disableFocusInterceptors(value: js.Any): Self = StObject.set(x, "_disableFocusInterceptors", value.asInstanceOf[js.Any])
+      inline def set_disableFocusInterceptors(value: Any): Self = StObject.set(x, "_disableFocusInterceptors", value.asInstanceOf[js.Any])
       
-      inline def set_disengageFocusSource(value: js.Any): Self = StObject.set(x, "_disengageFocusSource", value.asInstanceOf[js.Any])
+      inline def set_disengageFocusSource(value: Any): Self = StObject.set(x, "_disengageFocusSource", value.asInstanceOf[js.Any])
       
-      inline def set_disengageFocusWithin(value: js.Any): Self = StObject.set(x, "_disengageFocusWithin", value.asInstanceOf[js.Any])
+      inline def set_disengageFocusWithin(value: Any): Self = StObject.set(x, "_disengageFocusWithin", value.asInstanceOf[js.Any])
       
-      inline def set_elementQueries(value: js.Any): Self = StObject.set(x, "_elementQueries", value.asInstanceOf[js.Any])
+      inline def set_elementQueries(value: Any): Self = StObject.set(x, "_elementQueries", value.asInstanceOf[js.Any])
       
-      inline def set_enableFocusInterceptors(value: js.Any): Self = StObject.set(x, "_enableFocusInterceptors", value.asInstanceOf[js.Any])
+      inline def set_enableFocusInterceptors(value: Any): Self = StObject.set(x, "_enableFocusInterceptors", value.asInstanceOf[js.Any])
       
-      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      inline def set_onResized(value: js.Any): Self = StObject.set(x, "_onResized", value.asInstanceOf[js.Any])
+      inline def set_onResized(value: Any): Self = StObject.set(x, "_onResized", value.asInstanceOf[js.Any])
       
-      inline def set_resizeObserver(value: js.Any): Self = StObject.set(x, "_resizeObserver", value.asInstanceOf[js.Any])
+      inline def set_resizeObserver(value: Any): Self = StObject.set(x, "_resizeObserver", value.asInstanceOf[js.Any])
       
-      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
     }
   }
 }

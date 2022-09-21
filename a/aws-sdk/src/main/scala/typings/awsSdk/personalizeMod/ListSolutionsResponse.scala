@@ -33,6 +33,6 @@ object ListSolutionsResponse {
     
     inline def setSolutionsUndefined: Self = StObject.set(x, "solutions", js.undefined)
     
-    inline def setSolutionsVarargs(value: SolutionSummary*): Self = StObject.set(x, "solutions", js.Array(value :_*))
+    inline def setSolutionsVarargs(value: SolutionSummary*): Self = StObject.set(x, "solutions", js.Array(value*))
   }
 }

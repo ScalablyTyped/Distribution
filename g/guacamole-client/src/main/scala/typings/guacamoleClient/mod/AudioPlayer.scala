@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "AudioPlayer")
 @js.native
-class AudioPlayer ()
+open class AudioPlayer ()
   extends typings.guacamoleClient.audioPlayerMod.AudioPlayer
 /* static members */
 object AudioPlayer {

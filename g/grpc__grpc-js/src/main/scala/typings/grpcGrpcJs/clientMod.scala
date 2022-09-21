@@ -12,14 +12,14 @@ import typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
 import typings.grpcGrpcJs.channelMod.Channel
 import typings.grpcGrpcJs.clientInterceptorsMod.Interceptor
 import typings.grpcGrpcJs.clientInterceptorsMod.InterceptorProvider
+import typings.grpcGrpcJs.compressionAlgorithmsMod.CompressionAlgorithms
 import typings.grpcGrpcJs.makeClientMod.ClientMethodDefinition
 import typings.grpcGrpcJs.metadataMod.Metadata
 import typings.grpcGrpcJs.serverCallMod.ServerDuplexStream
 import typings.grpcGrpcJs.serverCallMod.ServerReadableStream
 import typings.grpcGrpcJs.serverCallMod.ServerUnaryCall
 import typings.grpcGrpcJs.serverCallMod.ServerWritableStream
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,13 +28,13 @@ object clientMod {
   
   @JSImport("@grpc/grpc-js/build/src/client", "Client")
   @js.native
-  class Client protected () extends StObject {
+  open class Client protected () extends StObject {
     def this(address: String, credentials: ChannelCredentials) = this()
     def this(address: String, credentials: ChannelCredentials, options: ClientOptions) = this()
     
-    /* private */ var checkMetadataAndOptions: js.Any = js.native
+    /* private */ var checkMetadataAndOptions: Any = js.native
     
-    /* private */ var checkOptionalUnaryResponseArguments: js.Any = js.native
+    /* private */ var checkOptionalUnaryResponseArguments: Any = js.native
     
     def close(): Unit = js.native
     
@@ -156,13 +156,10 @@ object clientMod {
       callback: UnaryCallback[ResponseType]
     ): ClientUnaryCall = js.native
     
-    def waitForReady(deadline: Deadline, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+    def waitForReady(deadline: Deadline, callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = js.native
   }
   
-  type CallInvocationTransformer = js.Function1[
-    /* callProperties */ CallProperties[js.Any, js.Any], 
-    CallProperties[js.Any, js.Any]
-  ]
+  type CallInvocationTransformer = js.Function1[/* callProperties */ CallProperties[Any, Any], CallProperties[Any, Any]]
   
   trait CallOptions extends StObject {
     
@@ -177,7 +174,7 @@ object clientMod {
     var interceptors: js.UndefOr[js.Array[Interceptor]] = js.undefined
     
     var parent: js.UndefOr[
-        (ServerUnaryCall[js.Any, js.Any]) | (ServerReadableStream[js.Any, js.Any]) | (ServerWritableStream[js.Any, js.Any]) | (ServerDuplexStream[js.Any, js.Any])
+        (ServerUnaryCall[Any, Any]) | (ServerReadableStream[Any, Any]) | (ServerWritableStream[Any, Any]) | (ServerDuplexStream[Any, Any])
       ] = js.undefined
     
     var propagate_flags: js.UndefOr[Double] = js.undefined
@@ -207,16 +204,16 @@ object clientMod {
       
       inline def setInterceptor_providersUndefined: Self = StObject.set(x, "interceptor_providers", js.undefined)
       
-      inline def setInterceptor_providersVarargs(value: InterceptorProvider*): Self = StObject.set(x, "interceptor_providers", js.Array(value :_*))
+      inline def setInterceptor_providersVarargs(value: InterceptorProvider*): Self = StObject.set(x, "interceptor_providers", js.Array(value*))
       
       inline def setInterceptors(value: js.Array[Interceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
       
       inline def setInterceptorsUndefined: Self = StObject.set(x, "interceptors", js.undefined)
       
-      inline def setInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
+      inline def setInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "interceptors", js.Array(value*))
       
       inline def setParent(
-        value: (ServerUnaryCall[js.Any, js.Any]) | (ServerReadableStream[js.Any, js.Any]) | (ServerWritableStream[js.Any, js.Any]) | (ServerDuplexStream[js.Any, js.Any])
+        value: (ServerUnaryCall[Any, Any]) | (ServerReadableStream[Any, Any]) | (ServerWritableStream[Any, Any]) | (ServerDuplexStream[Any, Any])
       ): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
       inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
@@ -294,8 +291,20 @@ object clientMod {
     
     var channelOverride: js.UndefOr[Channel] = js.undefined
     
+    @JSName("grpc-node.max_session_memory")
+    var `grpc-nodeDotmax_session_memory`: js.UndefOr[Double] = js.undefined
+    
     @JSName("grpc.default_authority")
     var grpcDotdefault_authority: js.UndefOr[String] = js.undefined
+    
+    @JSName("grpc.default_compression_algorithm")
+    var grpcDotdefault_compression_algorithm: js.UndefOr[CompressionAlgorithms] = js.undefined
+    
+    @JSName("grpc.dns_min_time_between_resolutions_ms")
+    var grpcDotdns_min_time_between_resolutions_ms: js.UndefOr[Double] = js.undefined
+    
+    @JSName("grpc.enable_channelz")
+    var grpcDotenable_channelz: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.enable_http_proxy")
     var grpcDotenable_http_proxy: js.UndefOr[Double] = js.undefined
@@ -308,6 +317,9 @@ object clientMod {
     
     @JSName("grpc.initial_reconnect_backoff_ms")
     var grpcDotinitial_reconnect_backoff_ms: js.UndefOr[Double] = js.undefined
+    
+    @JSName("grpc.keepalive_permit_without_calls")
+    var grpcDotkeepalive_permit_without_calls: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.keepalive_time_ms")
     var grpcDotkeepalive_time_ms: js.UndefOr[Double] = js.undefined
@@ -355,7 +367,7 @@ object clientMod {
     
     extension [Self <: ClientOptions](x: Self) {
       
-      inline def setCallInvocationTransformer(value: /* callProperties */ CallProperties[js.Any, js.Any] => CallProperties[js.Any, js.Any]): Self = StObject.set(x, "callInvocationTransformer", js.Any.fromFunction1(value))
+      inline def setCallInvocationTransformer(value: /* callProperties */ CallProperties[Any, Any] => CallProperties[Any, Any]): Self = StObject.set(x, "callInvocationTransformer", js.Any.fromFunction1(value))
       
       inline def setCallInvocationTransformerUndefined: Self = StObject.set(x, "callInvocationTransformer", js.undefined)
       
@@ -367,9 +379,25 @@ object clientMod {
       
       inline def setChannelOverrideUndefined: Self = StObject.set(x, "channelOverride", js.undefined)
       
+      inline def `setGrpc-nodeDotmax_session_memory`(value: Double): Self = StObject.set(x, "grpc-node.max_session_memory", value.asInstanceOf[js.Any])
+      
+      inline def `setGrpc-nodeDotmax_session_memoryUndefined`: Self = StObject.set(x, "grpc-node.max_session_memory", js.undefined)
+      
       inline def setGrpcDotdefault_authority(value: String): Self = StObject.set(x, "grpc.default_authority", value.asInstanceOf[js.Any])
       
       inline def setGrpcDotdefault_authorityUndefined: Self = StObject.set(x, "grpc.default_authority", js.undefined)
+      
+      inline def setGrpcDotdefault_compression_algorithm(value: CompressionAlgorithms): Self = StObject.set(x, "grpc.default_compression_algorithm", value.asInstanceOf[js.Any])
+      
+      inline def setGrpcDotdefault_compression_algorithmUndefined: Self = StObject.set(x, "grpc.default_compression_algorithm", js.undefined)
+      
+      inline def setGrpcDotdns_min_time_between_resolutions_ms(value: Double): Self = StObject.set(x, "grpc.dns_min_time_between_resolutions_ms", value.asInstanceOf[js.Any])
+      
+      inline def setGrpcDotdns_min_time_between_resolutions_msUndefined: Self = StObject.set(x, "grpc.dns_min_time_between_resolutions_ms", js.undefined)
+      
+      inline def setGrpcDotenable_channelz(value: Double): Self = StObject.set(x, "grpc.enable_channelz", value.asInstanceOf[js.Any])
+      
+      inline def setGrpcDotenable_channelzUndefined: Self = StObject.set(x, "grpc.enable_channelz", js.undefined)
       
       inline def setGrpcDotenable_http_proxy(value: Double): Self = StObject.set(x, "grpc.enable_http_proxy", value.asInstanceOf[js.Any])
       
@@ -386,6 +414,10 @@ object clientMod {
       inline def setGrpcDotinitial_reconnect_backoff_ms(value: Double): Self = StObject.set(x, "grpc.initial_reconnect_backoff_ms", value.asInstanceOf[js.Any])
       
       inline def setGrpcDotinitial_reconnect_backoff_msUndefined: Self = StObject.set(x, "grpc.initial_reconnect_backoff_ms", js.undefined)
+      
+      inline def setGrpcDotkeepalive_permit_without_calls(value: Double): Self = StObject.set(x, "grpc.keepalive_permit_without_calls", value.asInstanceOf[js.Any])
+      
+      inline def setGrpcDotkeepalive_permit_without_callsUndefined: Self = StObject.set(x, "grpc.keepalive_permit_without_calls", js.undefined)
       
       inline def setGrpcDotkeepalive_time_ms(value: Double): Self = StObject.set(x, "grpc.keepalive_time_ms", value.asInstanceOf[js.Any])
       
@@ -435,13 +467,13 @@ object clientMod {
       
       inline def setInterceptor_providersUndefined: Self = StObject.set(x, "interceptor_providers", js.undefined)
       
-      inline def setInterceptor_providersVarargs(value: InterceptorProvider*): Self = StObject.set(x, "interceptor_providers", js.Array(value :_*))
+      inline def setInterceptor_providersVarargs(value: InterceptorProvider*): Self = StObject.set(x, "interceptor_providers", js.Array(value*))
       
       inline def setInterceptors(value: js.Array[Interceptor]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
       
       inline def setInterceptorsUndefined: Self = StObject.set(x, "interceptors", js.undefined)
       
-      inline def setInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "interceptors", js.Array(value :_*))
+      inline def setInterceptorsVarargs(value: Interceptor*): Self = StObject.set(x, "interceptors", js.Array(value*))
     }
   }
   

@@ -29,10 +29,10 @@ object BatchCreateVariableRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setVariableEntries(value: VariableEntryList): Self = StObject.set(x, "variableEntries", value.asInstanceOf[js.Any])
     
-    inline def setVariableEntriesVarargs(value: VariableEntry*): Self = StObject.set(x, "variableEntries", js.Array(value :_*))
+    inline def setVariableEntriesVarargs(value: VariableEntry*): Self = StObject.set(x, "variableEntries", js.Array(value*))
   }
 }

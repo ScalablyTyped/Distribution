@@ -9,12 +9,12 @@ trait AppointmentDeletedEventUIParam extends StObject {
   /**
     * Gets the id of the deleted appointment.
     */
-  var appointmentId: js.UndefOr[js.Any] = js.undefined
+  var appointmentId: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the scheduler.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object AppointmentDeletedEventUIParam {
   
@@ -25,11 +25,11 @@ object AppointmentDeletedEventUIParam {
   
   extension [Self <: AppointmentDeletedEventUIParam](x: Self) {
     
-    inline def setAppointmentId(value: js.Any): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
+    inline def setAppointmentId(value: Any): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     
     inline def setAppointmentIdUndefined: Self = StObject.set(x, "appointmentId", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

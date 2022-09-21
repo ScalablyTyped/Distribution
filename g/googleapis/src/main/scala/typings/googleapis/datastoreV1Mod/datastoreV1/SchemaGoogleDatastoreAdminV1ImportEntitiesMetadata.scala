@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Metadata for ImportEntities operations.
-  */
 trait SchemaGoogleDatastoreAdminV1ImportEntitiesMetadata extends StObject {
   
   /**
@@ -20,10 +17,9 @@ trait SchemaGoogleDatastoreAdminV1ImportEntitiesMetadata extends StObject {
   var entityFilter: js.UndefOr[SchemaGoogleDatastoreAdminV1EntityFilter] = js.undefined
   
   /**
-    * The location of the import metadata file. This will be the same value as
-    * the google.datastore.admin.v1.ExportEntitiesResponse.output_url field.
+    * The location of the import metadata file. This will be the same value as the google.datastore.admin.v1.ExportEntitiesResponse.output_url field.
     */
-  var inputUrl: js.UndefOr[String] = js.undefined
+  var inputUrl: js.UndefOr[String | Null] = js.undefined
   
   /**
     * An estimate of the number of bytes processed.
@@ -53,6 +49,8 @@ object SchemaGoogleDatastoreAdminV1ImportEntitiesMetadata {
     inline def setEntityFilterUndefined: Self = StObject.set(x, "entityFilter", js.undefined)
     
     inline def setInputUrl(value: String): Self = StObject.set(x, "inputUrl", value.asInstanceOf[js.Any])
+    
+    inline def setInputUrlNull: Self = StObject.set(x, "inputUrl", null)
     
     inline def setInputUrlUndefined: Self = StObject.set(x, "inputUrl", js.undefined)
     

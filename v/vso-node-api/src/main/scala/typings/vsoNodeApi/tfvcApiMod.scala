@@ -1,6 +1,6 @@
 package typings.vsoNodeApi
 
-import typings.node.NodeJS.ReadableStream
+import typings.std.ReadableStream
 import typings.vsoNodeApi.clientApiBasesMod.ClientApiBase
 import typings.vsoNodeApi.tfvcInterfacesMod.AssociatedWorkItem
 import typings.vsoNodeApi.tfvcInterfacesMod.TfvcBranch
@@ -30,7 +30,7 @@ object tfvcApiMod {
   
   @JSImport("vso-node-api/TfvcApi", "TfvcApi")
   @js.native
-  class TfvcApi protected () extends ITfvcApi {
+  open class TfvcApi protected () extends ITfvcApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
@@ -243,7 +243,7 @@ object tfvcApiMod {
       scopePath: js.UndefOr[String],
       recursionLevel: js.UndefOr[VersionControlRecursionType],
       versionDescriptor: js.UndefOr[TfvcVersionDescriptor]
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     
     def getItemText(
       path: String,
@@ -253,7 +253,7 @@ object tfvcApiMod {
       scopePath: js.UndefOr[String],
       recursionLevel: js.UndefOr[VersionControlRecursionType],
       versionDescriptor: js.UndefOr[TfvcVersionDescriptor]
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     
     def getItemZip(
       path: String,
@@ -263,7 +263,7 @@ object tfvcApiMod {
       scopePath: js.UndefOr[String],
       recursionLevel: js.UndefOr[VersionControlRecursionType],
       versionDescriptor: js.UndefOr[TfvcVersionDescriptor]
-    ): js.Promise[ReadableStream] = js.native
+    ): js.Promise[ReadableStream[Any]] = js.native
     
     def getItems(): js.Promise[js.Array[TfvcItem]] = js.native
     def getItems(project: String): js.Promise[js.Array[TfvcItem]] = js.native
@@ -412,8 +412,8 @@ object tfvcApiMod {
     def getItemsBatch(itemRequestData: TfvcItemRequestData): js.Promise[js.Array[js.Array[TfvcItem]]] = js.native
     def getItemsBatch(itemRequestData: TfvcItemRequestData, project: String): js.Promise[js.Array[js.Array[TfvcItem]]] = js.native
     
-    def getItemsBatchZip(itemRequestData: TfvcItemRequestData): js.Promise[ReadableStream] = js.native
-    def getItemsBatchZip(itemRequestData: TfvcItemRequestData, project: String): js.Promise[ReadableStream] = js.native
+    def getItemsBatchZip(itemRequestData: TfvcItemRequestData): js.Promise[ReadableStream[Any]] = js.native
+    def getItemsBatchZip(itemRequestData: TfvcItemRequestData, project: String): js.Promise[ReadableStream[Any]] = js.native
     
     def getLabel(labelId: String, requestData: TfvcLabelRequestData): js.Promise[TfvcLabel] = js.native
     def getLabel(labelId: String, requestData: TfvcLabelRequestData, project: String): js.Promise[TfvcLabel] = js.native

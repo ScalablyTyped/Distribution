@@ -19,11 +19,11 @@ trait FactoryProvider
   /**
     * An injection token. (Typically an instance of `Type` or `InjectionToken`, but can be `any`).
     */
-  var provide: js.Any
+  var provide: Any
 }
 object FactoryProvider {
   
-  inline def apply(provide: js.Any, useFactory: js.Function): FactoryProvider = {
+  inline def apply(provide: Any, useFactory: js.Function): FactoryProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any], useFactory = useFactory.asInstanceOf[js.Any])
     __obj.asInstanceOf[FactoryProvider]
   }
@@ -34,6 +34,6 @@ object FactoryProvider {
     
     inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
-    inline def setProvide(value: js.Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+    inline def setProvide(value: Any): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
   }
 }

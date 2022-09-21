@@ -1,5 +1,7 @@
 package typings.datejs
 
+import typings.datejs.anon.Partialmillisecondnumbers
+import typings.datejs.anon.Partialmillisecondsnumber
 import typings.datejs.sugarpak.IAddOrientation
 import typings.datejs.sugarpak.IDateLiteral
 import typings.datejs.sugarpak.IDatePartComparer
@@ -16,7 +18,7 @@ trait Date extends StObject {
   
   /** Adds(or subtracts) to the value of the year, month, day, hour, minute, second, millisecond of the date instance using given configuration object. Positive and Negative values allowed. */
   def add(): Date = js.native
-  def add(config: IDateJSLiteral): Date = js.native
+  def add(config: Partialmillisecondsnumber): Date = js.native
   def add(n: Double): IAddOrientation = js.native
   
   /** Adds the specified number of days to this instance.The number can be positive or negative. */
@@ -130,7 +132,7 @@ trait Date extends StObject {
   def second(): IOrientation = js.native
   
   /** Set the value of year, month, day, hour, minute, second, millisecond of date instance using given configuration object. */
-  def set(config: IDateJSLiteral): Date = js.native
+  def set(config: Partialmillisecondnumbers): Date = js.native
   
   /** Resets the time of this Date object to the current time('now'). */
   def setTimeToNow(): Date = js.native

@@ -1,8 +1,8 @@
 package typings.aframe.anon
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.three.animationClipMod.MorphTarget
 import typings.three.boneMod.Bone
-import typings.three.geometryMod.MorphTarget
 import typings.three.mod.AnimationClip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,9 +19,9 @@ trait TypeofAnimationClip
   
   def findByName(clipArray: js.Array[typings.three.animationClipMod.AnimationClip], name: String): typings.three.animationClipMod.AnimationClip = js.native
   
-  def parse(json: js.Any): typings.three.animationClipMod.AnimationClip = js.native
+  def parse(json: Any): typings.three.animationClipMod.AnimationClip = js.native
   
-  def parseAnimation(animation: js.Any, bones: js.Array[Bone]): typings.three.animationClipMod.AnimationClip = js.native
+  def parseAnimation(animation: Any, bones: js.Array[Bone]): typings.three.animationClipMod.AnimationClip = js.native
   
-  def toJSON(clip: typings.three.animationClipMod.AnimationClip): js.Any = js.native
+  def toJSON(clip: typings.three.animationClipMod.AnimationClip): Any = js.native
 }

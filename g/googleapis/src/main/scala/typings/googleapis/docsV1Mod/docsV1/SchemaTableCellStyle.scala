@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The style of a TableCell.  Inherited table cell styles are represented as
-  * unset fields in this message. A table cell style can inherit from the
-  * table&#39;s style.
-  */
 trait SchemaTableCellStyle extends StObject {
   
   /**
@@ -39,13 +34,12 @@ trait SchemaTableCellStyle extends StObject {
   /**
     * The column span of the cell. This property is read-only.
     */
-  var columnSpan: js.UndefOr[Double] = js.undefined
+  var columnSpan: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The alignment of the content in the table cell. The default alignment
-    * matches the alignment for newly created table cells in the Docs editor.
+    * The alignment of the content in the table cell. The default alignment matches the alignment for newly created table cells in the Docs editor.
     */
-  var contentAlignment: js.UndefOr[String] = js.undefined
+  var contentAlignment: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The bottom padding of the cell.
@@ -70,7 +64,7 @@ trait SchemaTableCellStyle extends StObject {
   /**
     * The row span of the cell. This property is read-only.
     */
-  var rowSpan: js.UndefOr[Double] = js.undefined
+  var rowSpan: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaTableCellStyle {
   
@@ -103,9 +97,13 @@ object SchemaTableCellStyle {
     
     inline def setColumnSpan(value: Double): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
     
+    inline def setColumnSpanNull: Self = StObject.set(x, "columnSpan", null)
+    
     inline def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
     
     inline def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setContentAlignmentNull: Self = StObject.set(x, "contentAlignment", null)
     
     inline def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
     
@@ -126,6 +124,8 @@ object SchemaTableCellStyle {
     inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     
     inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+    
+    inline def setRowSpanNull: Self = StObject.set(x, "rowSpan", null)
     
     inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
   }

@@ -4,75 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * KeyRange represents a range of rows in a table or index.  A range has a
-  * start key and an end key. These keys can be open or closed, indicating if
-  * the range includes rows with that key.  Keys are represented by lists,
-  * where the ith value in the list corresponds to the ith component of the
-  * table or index primary key. Individual values are encoded as described
-  * here.  For example, consider the following table definition:      CREATE
-  * TABLE UserEvents (       UserName STRING(MAX),       EventDate STRING(10)
-  * ) PRIMARY KEY(UserName, EventDate);  The following keys name rows in this
-  * table:      &quot;Bob&quot;, &quot;2014-09-23&quot;  Since the `UserEvents`
-  * table&#39;s `PRIMARY KEY` clause names two columns, each `UserEvents` key
-  * has two elements; the first is the `UserName`, and the second is the
-  * `EventDate`.  Key ranges with multiple components are interpreted
-  * lexicographically by component using the table or index key&#39;s declared
-  * sort order. For example, the following range returns all events for user
-  * `&quot;Bob&quot;` that occurred in the year 2015: &quot;start_closed&quot;:
-  * [&quot;Bob&quot;, &quot;2015-01-01&quot;]     &quot;end_closed&quot;:
-  * [&quot;Bob&quot;, &quot;2015-12-31&quot;]  Start and end keys can omit
-  * trailing key components. This affects the inclusion and exclusion of rows
-  * that exactly match the provided key components: if the key is closed, then
-  * rows that exactly match the provided components are included; if the key is
-  * open, then rows that exactly match are not included.  For example, the
-  * following range includes all events for `&quot;Bob&quot;` that occurred
-  * during and after the year 2000:      &quot;start_closed&quot;:
-  * [&quot;Bob&quot;, &quot;2000-01-01&quot;]     &quot;end_closed&quot;:
-  * [&quot;Bob&quot;]  The next example retrieves all events for
-  * `&quot;Bob&quot;`:      &quot;start_closed&quot;: [&quot;Bob&quot;]
-  * &quot;end_closed&quot;: [&quot;Bob&quot;]  To retrieve events before the
-  * year 2000:      &quot;start_closed&quot;: [&quot;Bob&quot;]
-  * &quot;end_open&quot;: [&quot;Bob&quot;, &quot;2000-01-01&quot;]  The
-  * following range includes all rows in the table: &quot;start_closed&quot;:
-  * []     &quot;end_closed&quot;: []  This range returns all users whose
-  * `UserName` begins with any character from A to C: &quot;start_closed&quot;:
-  * [&quot;A&quot;]     &quot;end_open&quot;: [&quot;D&quot;]  This range
-  * returns all users whose `UserName` begins with B: &quot;start_closed&quot;:
-  * [&quot;B&quot;]     &quot;end_open&quot;: [&quot;C&quot;]  Key ranges honor
-  * column sort order. For example, suppose a table is defined as follows:
-  * CREATE TABLE DescendingSortedTable {       Key INT64,       ...     )
-  * PRIMARY KEY(Key DESC);  The following range retrieves all rows with key
-  * values between 1 and 100 inclusive:      &quot;start_closed&quot;:
-  * [&quot;100&quot;]     &quot;end_closed&quot;: [&quot;1&quot;]  Note that
-  * 100 is passed as the start, and 1 is passed as the end, because `Key` is a
-  * descending column in the schema.
-  */
 trait SchemaKeyRange extends StObject {
   
   /**
-    * If the end is closed, then the range includes all rows whose first
-    * `len(end_closed)` key columns exactly match `end_closed`.
+    * If the end is closed, then the range includes all rows whose first `len(end_closed)` key columns exactly match `end_closed`.
     */
-  var endClosed: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var endClosed: js.UndefOr[js.Array[Any] | Null] = js.undefined
   
   /**
-    * If the end is open, then the range excludes rows whose first
-    * `len(end_open)` key columns exactly match `end_open`.
+    * If the end is open, then the range excludes rows whose first `len(end_open)` key columns exactly match `end_open`.
     */
-  var endOpen: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var endOpen: js.UndefOr[js.Array[Any] | Null] = js.undefined
   
   /**
-    * If the start is closed, then the range includes all rows whose first
-    * `len(start_closed)` key columns exactly match `start_closed`.
+    * If the start is closed, then the range includes all rows whose first `len(start_closed)` key columns exactly match `start_closed`.
     */
-  var startClosed: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var startClosed: js.UndefOr[js.Array[Any] | Null] = js.undefined
   
   /**
-    * If the start is open, then the range excludes rows whose first
-    * `len(start_open)` key columns exactly match `start_open`.
+    * If the start is open, then the range excludes rows whose first `len(start_open)` key columns exactly match `start_open`.
     */
-  var startOpen: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var startOpen: js.UndefOr[js.Array[Any] | Null] = js.undefined
 }
 object SchemaKeyRange {
   
@@ -83,28 +35,36 @@ object SchemaKeyRange {
   
   extension [Self <: SchemaKeyRange](x: Self) {
     
-    inline def setEndClosed(value: js.Array[js.Any]): Self = StObject.set(x, "endClosed", value.asInstanceOf[js.Any])
+    inline def setEndClosed(value: js.Array[Any]): Self = StObject.set(x, "endClosed", value.asInstanceOf[js.Any])
+    
+    inline def setEndClosedNull: Self = StObject.set(x, "endClosed", null)
     
     inline def setEndClosedUndefined: Self = StObject.set(x, "endClosed", js.undefined)
     
-    inline def setEndClosedVarargs(value: js.Any*): Self = StObject.set(x, "endClosed", js.Array(value :_*))
+    inline def setEndClosedVarargs(value: Any*): Self = StObject.set(x, "endClosed", js.Array(value*))
     
-    inline def setEndOpen(value: js.Array[js.Any]): Self = StObject.set(x, "endOpen", value.asInstanceOf[js.Any])
+    inline def setEndOpen(value: js.Array[Any]): Self = StObject.set(x, "endOpen", value.asInstanceOf[js.Any])
+    
+    inline def setEndOpenNull: Self = StObject.set(x, "endOpen", null)
     
     inline def setEndOpenUndefined: Self = StObject.set(x, "endOpen", js.undefined)
     
-    inline def setEndOpenVarargs(value: js.Any*): Self = StObject.set(x, "endOpen", js.Array(value :_*))
+    inline def setEndOpenVarargs(value: Any*): Self = StObject.set(x, "endOpen", js.Array(value*))
     
-    inline def setStartClosed(value: js.Array[js.Any]): Self = StObject.set(x, "startClosed", value.asInstanceOf[js.Any])
+    inline def setStartClosed(value: js.Array[Any]): Self = StObject.set(x, "startClosed", value.asInstanceOf[js.Any])
+    
+    inline def setStartClosedNull: Self = StObject.set(x, "startClosed", null)
     
     inline def setStartClosedUndefined: Self = StObject.set(x, "startClosed", js.undefined)
     
-    inline def setStartClosedVarargs(value: js.Any*): Self = StObject.set(x, "startClosed", js.Array(value :_*))
+    inline def setStartClosedVarargs(value: Any*): Self = StObject.set(x, "startClosed", js.Array(value*))
     
-    inline def setStartOpen(value: js.Array[js.Any]): Self = StObject.set(x, "startOpen", value.asInstanceOf[js.Any])
+    inline def setStartOpen(value: js.Array[Any]): Self = StObject.set(x, "startOpen", value.asInstanceOf[js.Any])
+    
+    inline def setStartOpenNull: Self = StObject.set(x, "startOpen", null)
     
     inline def setStartOpenUndefined: Self = StObject.set(x, "startOpen", js.undefined)
     
-    inline def setStartOpenVarargs(value: js.Any*): Self = StObject.set(x, "startOpen", js.Array(value :_*))
+    inline def setStartOpenVarargs(value: Any*): Self = StObject.set(x, "startOpen", js.Array(value*))
   }
 }

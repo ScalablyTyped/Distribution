@@ -1,7 +1,6 @@
 package typings.awsSdkUtilErrorConstructor
 
 import typings.awsSdkTypes.responseMod.ResponseMetadata
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def initServiceException(error: Error, option: ServiceExceptionOption): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("initServiceException")(error.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def initServiceException(error: js.Error, option: ServiceExceptionOption): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("initServiceException")(error.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait ServiceExceptionOption extends StObject {
     
@@ -29,7 +28,7 @@ object mod {
     var operationName: js.UndefOr[String] = js.undefined
     
     /** parsed exception object normalized according to its API model */
-    var rawException: js.UndefOr[js.Any] = js.undefined
+    var rawException: js.UndefOr[Any] = js.undefined
   }
   object ServiceExceptionOption {
     
@@ -54,7 +53,7 @@ object mod {
       
       inline def setOperationNameUndefined: Self = StObject.set(x, "operationName", js.undefined)
       
-      inline def setRawException(value: js.Any): Self = StObject.set(x, "rawException", value.asInstanceOf[js.Any])
+      inline def setRawException(value: Any): Self = StObject.set(x, "rawException", value.asInstanceOf[js.Any])
       
       inline def setRawExceptionUndefined: Self = StObject.set(x, "rawException", js.undefined)
     }

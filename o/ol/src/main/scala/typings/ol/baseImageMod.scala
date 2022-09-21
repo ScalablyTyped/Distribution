@@ -9,7 +9,7 @@ object baseImageMod {
   
   @JSImport("ol/layer/BaseImage", JSImport.Default)
   @js.native
-  class default () extends BaseImageLayer {
+  open class default () extends BaseImageLayer {
     def this(opt_options: Options) = this()
   }
   

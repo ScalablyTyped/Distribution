@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotificationConfiguration extends StObject {
   
   /**
-    * Describes the AWS Lambda functions to invoke and the events for which to invoke them.
+    * Enables delivery of events to Amazon EventBridge.
+    */
+  var EventBridgeConfiguration: js.UndefOr[typings.awsSdk.s3Mod.EventBridgeConfiguration] = js.undefined
+  
+  /**
+    * Describes the Lambda functions to invoke and the events for which to invoke them.
     */
   var LambdaFunctionConfigurations: js.UndefOr[LambdaFunctionConfigurationList] = js.undefined
   
@@ -30,22 +35,26 @@ object NotificationConfiguration {
   
   extension [Self <: NotificationConfiguration](x: Self) {
     
+    inline def setEventBridgeConfiguration(value: EventBridgeConfiguration): Self = StObject.set(x, "EventBridgeConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setEventBridgeConfigurationUndefined: Self = StObject.set(x, "EventBridgeConfiguration", js.undefined)
+    
     inline def setLambdaFunctionConfigurations(value: LambdaFunctionConfigurationList): Self = StObject.set(x, "LambdaFunctionConfigurations", value.asInstanceOf[js.Any])
     
     inline def setLambdaFunctionConfigurationsUndefined: Self = StObject.set(x, "LambdaFunctionConfigurations", js.undefined)
     
-    inline def setLambdaFunctionConfigurationsVarargs(value: LambdaFunctionConfiguration*): Self = StObject.set(x, "LambdaFunctionConfigurations", js.Array(value :_*))
+    inline def setLambdaFunctionConfigurationsVarargs(value: LambdaFunctionConfiguration*): Self = StObject.set(x, "LambdaFunctionConfigurations", js.Array(value*))
     
     inline def setQueueConfigurations(value: QueueConfigurationList): Self = StObject.set(x, "QueueConfigurations", value.asInstanceOf[js.Any])
     
     inline def setQueueConfigurationsUndefined: Self = StObject.set(x, "QueueConfigurations", js.undefined)
     
-    inline def setQueueConfigurationsVarargs(value: QueueConfiguration*): Self = StObject.set(x, "QueueConfigurations", js.Array(value :_*))
+    inline def setQueueConfigurationsVarargs(value: QueueConfiguration*): Self = StObject.set(x, "QueueConfigurations", js.Array(value*))
     
     inline def setTopicConfigurations(value: TopicConfigurationList): Self = StObject.set(x, "TopicConfigurations", value.asInstanceOf[js.Any])
     
     inline def setTopicConfigurationsUndefined: Self = StObject.set(x, "TopicConfigurations", js.undefined)
     
-    inline def setTopicConfigurationsVarargs(value: TopicConfiguration*): Self = StObject.set(x, "TopicConfigurations", js.Array(value :_*))
+    inline def setTopicConfigurationsVarargs(value: TopicConfiguration*): Self = StObject.set(x, "TopicConfigurations", js.Array(value*))
   }
 }

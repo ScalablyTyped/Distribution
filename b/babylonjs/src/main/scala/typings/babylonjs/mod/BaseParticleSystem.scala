@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "BaseParticleSystem")
 @js.native
-class BaseParticleSystem protected ()
+open class BaseParticleSystem protected ()
   extends typings.babylonjs.legacyMod.BaseParticleSystem {
   /**
     * Instantiates a particle system.

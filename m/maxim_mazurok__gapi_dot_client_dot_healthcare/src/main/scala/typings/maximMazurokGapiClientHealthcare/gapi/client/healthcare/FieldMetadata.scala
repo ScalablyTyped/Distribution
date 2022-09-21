@@ -12,8 +12,8 @@ trait FieldMetadata extends StObject {
   /**
     * List of paths to FHIR fields to be redacted. Each path is a period-separated list where each component is either a field name or FHIR type name, for example: Patient, HumanName. For
     * "choice" types (those defined in the FHIR spec with the form: field[x]) we use two separate components. For example, "deceasedAge.unit" is matched by "Deceased.Age.unit". Supported
-    * types are: AdministrativeGenderCode, Code, Date, DateTime, Decimal, HumanName, Id, LanguageCode, Markdown, Oid, String, Uri, Uuid, Xhtml. Base64Binary is also supported, but may
-    * only be kept as-is or have all the content removed.
+    * types are: AdministrativeGenderCode, Base64Binary, Boolean, Code, Date, DateTime, Decimal, HumanName, Id, Instant, Integer, LanguageCode, Markdown, Oid, PositiveInt, String,
+    * UnsignedInt, Uri, Uuid, Xhtml.
     */
   var paths: js.UndefOr[js.Array[String]] = js.undefined
 }
@@ -34,6 +34,6 @@ object FieldMetadata {
     
     inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value*))
   }
 }

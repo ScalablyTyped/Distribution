@@ -25,7 +25,10 @@ trait Key extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. Resource name of the trigger to execute a hybrid inspect on, for example `projects/dlp-test-project/jobTriggers/53234423`. */
+  /**
+    * Required. Resource name of organization and storedInfoType to be updated, for example `organizations/433245324/storedInfoTypes/432452342` or
+    * projects/project-id/storedInfoTypes/432452342.
+    */
   var name: String
   
   /** OAuth 2.0 token for the current user. */

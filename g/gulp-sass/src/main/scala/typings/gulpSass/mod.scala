@@ -2,9 +2,7 @@ package typings.gulpSass
 
 import org.scalablytyped.runtime.Shortcut
 import typings.gulpSass.anon.Duration
-import typings.node.NodeJS.ReadWriteStream
 import typings.nodeSass.mod.Options
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +11,24 @@ object mod extends Shortcut {
   
   @JSImport("gulp-sass", JSImport.Namespace)
   @js.native
-  val ^ : Sass = js.native
+  val ^ : GulpSassFactory = js.native
+  
+  type Compiler = Any
+  
+  @js.native
+  trait GulpSass extends StObject {
+    
+    def apply(): Any = js.native
+    def apply(opts: GulpSassOptions): Any = js.native
+    
+    def logError(): Unit = js.native
+    def logError(error: String): Unit = js.native
+    
+    def sync(): Any = js.native
+    def sync(options: GulpSassOptions): Any = js.native
+  }
+  
+  type GulpSassFactory = js.Function1[/* compiler */ Compiler, GulpSass]
   
   trait GulpSassOptions
     extends StObject
@@ -21,9 +36,9 @@ object mod extends Shortcut {
     
     var errLogToConsole: js.UndefOr[Boolean] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* err */ Error, js.Any]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* err */ js.Error, Any]] = js.undefined
     
-    var onSuccess: js.UndefOr[js.Function1[/* css */ String, js.Any]] = js.undefined
+    var onSuccess: js.UndefOr[js.Function1[/* css */ String, Any]] = js.undefined
     
     var sync: js.UndefOr[Boolean] = js.undefined
   }
@@ -40,11 +55,11 @@ object mod extends Shortcut {
       
       inline def setErrLogToConsoleUndefined: Self = StObject.set(x, "errLogToConsole", js.undefined)
       
-      inline def setOnError(value: /* err */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* err */ js.Error => Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnSuccess(value: /* css */ String => js.Any): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+      inline def setOnSuccess(value: /* css */ String => Any): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
       
       inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
       
@@ -54,28 +69,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait Sass extends StObject {
-    
-    def apply(): ReadWriteStream = js.native
-    def apply(opts: GulpSassOptions): ReadWriteStream = js.native
-    
-    def logError(): Unit = js.native
-    def logError(error: String): Unit = js.native
-    
-    def sync(): ReadWriteStream = js.native
-    def sync(options: GulpSassOptions): ReadWriteStream = js.native
-  }
-  
   trait SassOptions
     extends StObject
        with Options {
     
-    var error: js.UndefOr[js.Function1[/* err */ Error, js.Any]] = js.undefined
+    var error: js.UndefOr[js.Function1[/* err */ js.Error, Any]] = js.undefined
     
     var imagePaths: js.UndefOr[js.Array[String]] = js.undefined
     
-    var success: js.UndefOr[js.Function1[/* results */ SassResults, js.Any]] = js.undefined
+    var success: js.UndefOr[js.Function1[/* results */ SassResults, Any]] = js.undefined
   }
   object SassOptions {
     
@@ -86,7 +88,7 @@ object mod extends Shortcut {
     
     extension [Self <: SassOptions](x: Self) {
       
-      inline def setError(value: /* err */ Error => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* err */ js.Error => Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -94,9 +96,9 @@ object mod extends Shortcut {
       
       inline def setImagePathsUndefined: Self = StObject.set(x, "imagePaths", js.undefined)
       
-      inline def setImagePathsVarargs(value: String*): Self = StObject.set(x, "imagePaths", js.Array(value :_*))
+      inline def setImagePathsVarargs(value: String*): Self = StObject.set(x, "imagePaths", js.Array(value*))
       
-      inline def setSuccess(value: /* results */ SassResults => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* results */ SassResults => Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
       inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
@@ -127,8 +129,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Sass
+  type _To = GulpSassFactory
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Sass = ^
+  override def _to: GulpSassFactory = ^
 }

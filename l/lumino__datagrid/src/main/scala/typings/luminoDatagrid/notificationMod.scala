@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object notificationMod {
   
-  @JSImport("@lumino/datagrid/lib/notification", "Notification")
+  @JSImport("@lumino/datagrid/types/notification", "Notification")
   @js.native
-  class Notification protected () extends Widget {
+  open class Notification protected () extends Widget {
     /**
       * Construct a new notification.
       *
@@ -25,13 +25,13 @@ object notificationMod {
     /**
       * Handle the `'mousedown'` event for the notification.
       */
-    /* private */ var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: Any = js.native
     
-    /* private */ var _message: js.Any = js.native
+    /* private */ var _message: Any = js.native
     
-    /* private */ var _placement: js.Any = js.native
+    /* private */ var _placement: Any = js.native
     
-    /* private */ var _target: js.Any = js.native
+    /* private */ var _target: Any = js.native
     
     /**
       * Handle the DOM events for the notification.

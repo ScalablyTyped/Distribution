@@ -30,9 +30,9 @@ trait PersonalResultSuggestion
 object PersonalResultSuggestion {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_highlightedTitle: () => String,
     get_isBestBet: () => Boolean,
     get_title: () => String,

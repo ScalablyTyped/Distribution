@@ -11,14 +11,11 @@ A dependency-free CSS-driven plain JavaScript modal written in ECMAScript 2015.
 | Full name          | vanilla-modal |
 | Keywords           | modal, ecmascript, harmony, es6, es2015 |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 52989 |
-| # stars            | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 3182.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/thephuse/vanilla-modal)
-- [Bugs](https://github.com/thephuse/vanilla-modal/issues)
-- [Repository](https://github.com/thephuse/vanilla-modal)
 - [Npm](https://www.npmjs.com/package/vanilla-modal)
     
 

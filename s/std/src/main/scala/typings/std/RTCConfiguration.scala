@@ -6,18 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RTCConfiguration extends StObject {
   
+  /* standard dom */
   var bundlePolicy: js.UndefOr[RTCBundlePolicy] = js.undefined
   
+  /* standard dom */
   var certificates: js.UndefOr[js.Array[RTCCertificate]] = js.undefined
   
+  /* standard dom */
   var iceCandidatePoolSize: js.UndefOr[Double] = js.undefined
   
+  /* standard dom */
   var iceServers: js.UndefOr[js.Array[RTCIceServer]] = js.undefined
   
+  /* standard dom */
   var iceTransportPolicy: js.UndefOr[RTCIceTransportPolicy] = js.undefined
   
-  var peerIdentity: js.UndefOr[java.lang.String] = js.undefined
-  
+  /* standard dom */
   var rtcpMuxPolicy: js.UndefOr[RTCRtcpMuxPolicy] = js.undefined
 }
 object RTCConfiguration {
@@ -37,7 +41,7 @@ object RTCConfiguration {
     
     inline def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
     
-    inline def setCertificatesVarargs(value: RTCCertificate*): Self = StObject.set(x, "certificates", js.Array(value :_*))
+    inline def setCertificatesVarargs(value: RTCCertificate*): Self = StObject.set(x, "certificates", js.Array(value*))
     
     inline def setIceCandidatePoolSize(value: Double): Self = StObject.set(x, "iceCandidatePoolSize", value.asInstanceOf[js.Any])
     
@@ -47,15 +51,11 @@ object RTCConfiguration {
     
     inline def setIceServersUndefined: Self = StObject.set(x, "iceServers", js.undefined)
     
-    inline def setIceServersVarargs(value: RTCIceServer*): Self = StObject.set(x, "iceServers", js.Array(value :_*))
+    inline def setIceServersVarargs(value: RTCIceServer*): Self = StObject.set(x, "iceServers", js.Array(value*))
     
     inline def setIceTransportPolicy(value: RTCIceTransportPolicy): Self = StObject.set(x, "iceTransportPolicy", value.asInstanceOf[js.Any])
     
     inline def setIceTransportPolicyUndefined: Self = StObject.set(x, "iceTransportPolicy", js.undefined)
-    
-    inline def setPeerIdentity(value: java.lang.String): Self = StObject.set(x, "peerIdentity", value.asInstanceOf[js.Any])
-    
-    inline def setPeerIdentityUndefined: Self = StObject.set(x, "peerIdentity", js.undefined)
     
     inline def setRtcpMuxPolicy(value: RTCRtcpMuxPolicy): Self = StObject.set(x, "rtcpMuxPolicy", value.asInstanceOf[js.Any])
     

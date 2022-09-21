@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CancelOperationRequest extends StObject {
   
-  /** The name (project, location, operation id) of the operation to cancel. Specified in the format `projects/∗/locations/∗/operations/ *`. */
+  /** The name (project, location, operation id) of the operation to cancel. Specified in the format `projects/ *‍/locations/ *‍/operations/ *`. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Deprecated. The server-assigned `name` of the operation. This field has been deprecated and replaced by the name field. */
   var operationId: js.UndefOr[String] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name
-    * field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated
+    * and replaced by the name field.
     */
   var projectId: js.UndefOr[String] = js.undefined
   

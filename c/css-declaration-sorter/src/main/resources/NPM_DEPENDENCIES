@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "css-declaration-sorter" : "6.3.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "css-declaration-sorter" : "6.3.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

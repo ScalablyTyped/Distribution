@@ -8,7 +8,7 @@ trait DataTable extends StObject {
   
   val Application: typings.activexExcel.Excel.Application
   
-  var AutoScaleFont: js.Any
+  var AutoScaleFont: Any
   
   val Border: typings.activexExcel.Excel.Border
   
@@ -29,7 +29,7 @@ trait DataTable extends StObject {
   
   var HasBorderVertical: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Select(): Unit
   
@@ -39,7 +39,7 @@ object DataTable {
   
   inline def apply(
     Application: Application,
-    AutoScaleFont: js.Any,
+    AutoScaleFont: Any,
     Border: Border,
     Creator: XlCreator,
     Delete: () => Unit,
@@ -49,7 +49,7 @@ object DataTable {
     HasBorderHorizontal: Boolean,
     HasBorderOutline: Boolean,
     HasBorderVertical: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     Select: () => Unit,
     ShowLegendKey: Boolean
   ): DataTable = {
@@ -62,7 +62,7 @@ object DataTable {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    inline def setAutoScaleFont(value: js.Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
+    inline def setAutoScaleFont(value: Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
     
     inline def setBorder(value: Border): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object DataTable {
     
     inline def setHasBorderVertical(value: Boolean): Self = StObject.set(x, "HasBorderVertical", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     

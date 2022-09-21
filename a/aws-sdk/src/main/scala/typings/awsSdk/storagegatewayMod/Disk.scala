@@ -61,7 +61,7 @@ object Disk {
     
     inline def setDiskAttributeListUndefined: Self = StObject.set(x, "DiskAttributeList", js.undefined)
     
-    inline def setDiskAttributeListVarargs(value: DiskAttribute*): Self = StObject.set(x, "DiskAttributeList", js.Array(value :_*))
+    inline def setDiskAttributeListVarargs(value: DiskAttribute*): Self = StObject.set(x, "DiskAttributeList", js.Array(value*))
     
     inline def setDiskId(value: DiskId): Self = StObject.set(x, "DiskId", value.asInstanceOf[js.Any])
     

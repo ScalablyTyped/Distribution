@@ -1,35 +1,53 @@
 package typings.babylonjs.BABYLON
 
+import typings.babylonjs.anon.RotationMesh
 import typings.babylonjs.anon.SnapDistance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.babylonjs.BABYLON.IDisposable because Already inherited
+- typings.babylonjs.BABYLON.IGizmo because Already inherited
+- typings.babylonjs.BABYLON.IPlaneRotationGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined dragBehavior, snapDistance, onSnapObservable, angle, isEnabled */ @js.native
 trait PlaneRotationGizmo
   extends StObject
      with Gizmo {
   
-  /* private */ var _coloredMaterial: js.Any = js.native
+  /* protected */ var _angles: Vector3 = js.native
   
-  /** Create Geometry for Gizmo */
-  /* private */ var _createGizmoMesh: js.Any = js.native
+  /* protected */ var _coloredMaterial: StandardMaterial = js.native
   
-  /* private */ var _disableMaterial: js.Any = js.native
+  /**
+    * Create Geometry for Gizmo
+    * @param parentMesh
+    * @param thickness
+    * @param tessellation
+    */
+  /* protected */ def _createGizmoMesh(parentMesh: AbstractMesh, thickness: Double, tessellation: Double): RotationMesh = js.native
   
-  /* private */ var _dragging: js.Any = js.native
+  /* protected */ var _disableMaterial: StandardMaterial = js.native
   
-  /* private */ var _gizmoMesh: js.Any = js.native
+  /* protected */ var _dragging: Boolean = js.native
   
-  /* private */ var _hoverMaterial: js.Any = js.native
+  /* protected */ var _gizmoMesh: Mesh = js.native
   
-  /* private */ var _isEnabled: js.Any = js.native
+  /* protected */ var _hoverMaterial: StandardMaterial = js.native
   
-  /* private */ var _parent: js.Any = js.native
+  /* protected */ var _isEnabled: Boolean = js.native
   
-  /* private */ var _pointerObserver: js.Any = js.native
+  /* protected */ var _parent: Nullable[RotationGizmo] = js.native
   
-  /* private */ var _rotationCircle: js.Any = js.native
+  /* protected */ var _pointerObserver: Nullable[Observer[PointerInfo]] = js.native
+  
+  /* protected */ var _rotationDisplayPlane: Mesh = js.native
+  
+  /* protected */ var _rotationShaderMaterial: ShaderMaterial = js.native
+  
+  /**
+    * Accumulated relative angle value for rotation on the axis. Reset to 0 when a dragStart occurs
+    */
+  var angle: Double = js.native
   
   /**
     * Drag behavior responsible for the gizmos dragging interactions
@@ -41,6 +59,9 @@ trait PlaneRotationGizmo
     * If the gizmo is enabled
     */
   def isEnabled_=(value: Boolean): Unit = js.native
+  /** If the gizmo is enabled */
+  @JSName("isEnabled")
+  var isEnabled_FPlaneRotationGizmo: Boolean = js.native
   
   /**
     * Event that fires each time the gizmo snaps to a new location.
@@ -48,14 +69,8 @@ trait PlaneRotationGizmo
     */
   var onSnapObservable: Observable[SnapDistance] = js.native
   
-  /* private */ var setupRotationCircle: js.Any = js.native
-  
   /**
     * Rotation distance in radians that the gizmo will snap to (Default: 0)
     */
   var snapDistance: Double = js.native
-  
-  /* private */ var updateRotationCircle: js.Any = js.native
-  
-  /* private */ var updateRotationPath: js.Any = js.native
 }

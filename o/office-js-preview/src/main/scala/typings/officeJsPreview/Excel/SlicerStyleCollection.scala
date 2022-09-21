@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of `SlicerStyle` objects.
   *
-  * Represents a collection of SlicerStyle objects.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @js.native
@@ -22,13 +22,14 @@ trait SlicerStyleCollection
      with ClientObject {
   
   /**
-    * Creates a blank SlicerStyle with the specified name.
+    * Creates a blank slicer style with the specified name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param name The unique name for the new SlicerStyle. Will throw an invalid argument exception if the name is already in use.
-    * @param makeUniqueName Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.
-    * @returns The newly created SlicerStyle.
+    * @param name The unique name for the new slicer style. Will throw an `InvalidArgument` exception if the name is already in use.
+    * @param makeUniqueName Optional. Defaults to `false`. If `true`, will append numbers to the name in order to make it unique, if needed.
+    * @returns The newly created `SlicerStyle`.
     */
   def add(name: String): SlicerStyle = js.native
   def add(name: String, makeUniqueName: Boolean): SlicerStyle = js.native
@@ -40,35 +41,40 @@ trait SlicerStyleCollection
   /**
     * Gets the number of slicer styles in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets the default SlicerStyle for the parent object's scope.
+    * Gets the default `SlicerStyle` for the parent object's scope.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
-    * @returns The SlicerStyle object that is the current default SlicerStyle.
+    * @returns The `SlicerStyle` object that is the current default slicer style.
     */
   def getDefault(): SlicerStyle = js.native
   
   /**
-    * Gets a SlicerStyle by name.
+    * Gets a `SlicerStyle` by name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param name Name of the SlicerStyle to be retrieved.
-    * @returns The SlicerStyle object whose name matches the input.
+    * @param name Name of the slicer style to be retrieved.
+    * @returns The `SlicerStyle` object whose name matches the input.
     */
   def getItem(name: String): SlicerStyle = js.native
   
   /**
-    * Gets a SlicerStyle by name. If the SlicerStyle does not exist, will return a null object.
+    * Gets a `SlicerStyle` by name. If the slicer style doesn't exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param name Name of the SlicerStyle to be retrieved.
-    * @returns The SlicerStyle object whose name matches the input.
+    * @param name Name of the slicer style to be retrieved.
+    * @returns The `SlicerStyle` object whose name matches the input.
     */
   def getItemOrNullObject(name: String): SlicerStyle = js.native
   
@@ -88,11 +94,12 @@ trait SlicerStyleCollection
   
   def setDefault(newDefaultStyle: String): Unit = js.native
   /**
-    * Sets the default SlicerStyle for use in the parent object's scope.
+    * Sets the default slicer style for use in the parent object's scope.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     *
-    * @param newDefaultStyle The SlicerStyle object or name of the SlicerStyle object that should be the new default.
+    * @param newDefaultStyle The `SlicerStyle` object, or name of the `SlicerStyle` object, that should be the new default.
     */
   def setDefault(newDefaultStyle: SlicerStyle): Unit = js.native
   

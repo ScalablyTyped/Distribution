@@ -1,6 +1,5 @@
 package typings.tcpPing
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +10,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def ping(options: Options, callback: js.Function2[/* error */ Error, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ping")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ping(options: Options, callback: js.Function2[/* error */ js.Error, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ping")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def probe(
     address: String,
     port: Double,
-    callback: js.Function2[/* error */ Error, /* result */ Boolean, Unit]
+    callback: js.Function2[/* error */ js.Error, /* result */ Boolean, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("probe")(address.asInstanceOf[js.Any], port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Options extends StObject {
@@ -103,34 +102,32 @@ object mod {
       
       inline def setResults(value: js.Array[Results]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      inline def setResultsVarargs(value: Results*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: Results*): Self = StObject.set(x, "results", js.Array(value*))
     }
   }
   
   trait Results extends StObject {
     
-    var error: js.UndefOr[Error] = js.undefined
+    var err: js.UndefOr[js.Error] = js.undefined
     
-    var seq: js.UndefOr[Double] = js.undefined
+    var seq: Double
     
     var time: js.UndefOr[Double] = js.undefined
   }
   object Results {
     
-    inline def apply(): Results = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(seq: Double): Results = {
+      val __obj = js.Dynamic.literal(seq = seq.asInstanceOf[js.Any])
       __obj.asInstanceOf[Results]
     }
     
     extension [Self <: Results](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
       
       inline def setSeq(value: Double): Self = StObject.set(x, "seq", value.asInstanceOf[js.Any])
-      
-      inline def setSeqUndefined: Self = StObject.set(x, "seq", js.undefined)
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       

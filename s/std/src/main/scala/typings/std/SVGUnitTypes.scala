@@ -7,10 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** A commonly used set of constants used for reflecting gradientUnits, patternContentUnits and other similar attributes. */
 trait SVGUnitTypes extends StObject {
   
+  /* standard dom */
   val SVG_UNIT_TYPE_OBJECTBOUNDINGBOX: Double
   
+  /* standard dom */
   val SVG_UNIT_TYPE_UNKNOWN: Double
   
+  /* standard dom */
   val SVG_UNIT_TYPE_USERSPACEONUSE: Double
 }
 object SVGUnitTypes {

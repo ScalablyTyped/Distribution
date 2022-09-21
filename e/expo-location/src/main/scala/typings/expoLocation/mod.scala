@@ -1,7 +1,6 @@
 package typings.expoLocation
 
 import typings.expoLocation.anon.PickLocationGeocodedLocat
-import typings.expoLocation.anon.Remove
 import typings.expoLocation.locationTypesMod.LocationAccuracy
 import typings.expoLocation.locationTypesMod.LocationActivityType
 import typings.expoLocation.locationTypesMod.LocationCallback
@@ -20,6 +19,8 @@ import typings.expoLocation.locationTypesMod.LocationProviderStatus
 import typings.expoLocation.locationTypesMod.LocationRegion
 import typings.expoLocation.locationTypesMod.LocationSubscription
 import typings.expoLocation.locationTypesMod.LocationTaskOptions
+import typings.expoModulesCore.permissionsHookMod.PermissionHookOptions
+import typings.expoModulesCore.permissionsInterfaceMod.PermissionResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -70,7 +71,7 @@ object mod {
   
   @JSImport("expo-location", "EventEmitter")
   @js.native
-  val EventEmitter: typings.unimodulesCore.mod.EventEmitter = js.native
+  val EventEmitter: typings.expoModulesCore.mod.EventEmitter = js.native
   
   @JSImport("expo-location", "GeofencingEventType")
   @js.native
@@ -167,13 +168,13 @@ object mod {
   object PermissionStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.unimodulesPermissionsInterface.mod.PermissionStatus & String] = js.native
+    def apply(value: String): js.UndefOr[typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus & String] = js.native
     
-    /* "denied" */ val DENIED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.DENIED & String = js.native
+    /* "denied" */ val DENIED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.DENIED & String = js.native
     
-    /* "granted" */ val GRANTED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.GRANTED & String = js.native
+    /* "granted" */ val GRANTED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.GRANTED & String = js.native
     
-    /* "undetermined" */ val UNDETERMINED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.UNDETERMINED & String = js.native
+    /* "undetermined" */ val UNDETERMINED: typings.expoModulesCore.permissionsInterfaceMod.PermissionStatus.UNDETERMINED & String = js.native
   }
   
   inline def enableNetworkProviderAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("enableNetworkProviderAsync")().asInstanceOf[js.Promise[Unit]]
@@ -181,10 +182,14 @@ object mod {
   inline def geocodeAsync(address: String): js.Promise[js.Array[LocationGeocodedLocation]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeAsync")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LocationGeocodedLocation]]]
   inline def geocodeAsync(address: String, options: LocationGeocodingOptions): js.Promise[js.Array[LocationGeocodedLocation]] = (^.asInstanceOf[js.Dynamic].applyDynamic("geocodeAsync")(address.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[LocationGeocodedLocation]]]
   
+  inline def getBackgroundPermissionsAsync(): js.Promise[PermissionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundPermissionsAsync")().asInstanceOf[js.Promise[PermissionResponse]]
+  
   inline def getCurrentPositionAsync(): js.Promise[LocationObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPositionAsync")().asInstanceOf[js.Promise[LocationObject]]
   inline def getCurrentPositionAsync(options: LocationOptions): js.Promise[LocationObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentPositionAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocationObject]]
   
   inline def getCurrentWatchId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("_getCurrentWatchId")().asInstanceOf[Double]
+  
+  inline def getForegroundPermissionsAsync(): js.Promise[LocationPermissionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getForegroundPermissionsAsync")().asInstanceOf[js.Promise[LocationPermissionResponse]]
   
   inline def getHeadingAsync(): js.Promise[LocationHeadingObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHeadingAsync")().asInstanceOf[js.Promise[LocationHeadingObject]]
   
@@ -205,12 +210,14 @@ object mod {
   
   inline def isBackgroundLocationAvailableAsync(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isBackgroundLocationAvailableAsync")().asInstanceOf[js.Promise[Boolean]]
   
+  inline def requestBackgroundPermissionsAsync(): js.Promise[PermissionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestBackgroundPermissionsAsync")().asInstanceOf[js.Promise[PermissionResponse]]
+  
+  inline def requestForegroundPermissionsAsync(): js.Promise[LocationPermissionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestForegroundPermissionsAsync")().asInstanceOf[js.Promise[LocationPermissionResponse]]
+  
   inline def requestPermissionsAsync(): js.Promise[LocationPermissionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPermissionsAsync")().asInstanceOf[js.Promise[LocationPermissionResponse]]
   
   inline def reverseGeocodeAsync(location: PickLocationGeocodedLocat): js.Promise[js.Array[LocationGeocodedAddress]] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocodeAsync")(location.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LocationGeocodedAddress]]]
   inline def reverseGeocodeAsync(location: PickLocationGeocodedLocat, options: LocationGeocodingOptions): js.Promise[js.Array[LocationGeocodedAddress]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocodeAsync")(location.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[LocationGeocodedAddress]]]
-  
-  inline def setApiKey(apiKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setGoogleApiKey(apiKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGoogleApiKey")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -224,7 +231,45 @@ object mod {
   
   inline def stopLocationUpdatesAsync(taskName: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("stopLocationUpdatesAsync")(taskName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
+  inline def useBackgroundPermissions(): js.Tuple3[
+    PermissionResponse | Null, 
+    js.Function0[js.Promise[PermissionResponse]], 
+    js.Function0[js.Promise[PermissionResponse]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useBackgroundPermissions")().asInstanceOf[js.Tuple3[
+    PermissionResponse | Null, 
+    js.Function0[js.Promise[PermissionResponse]], 
+    js.Function0[js.Promise[PermissionResponse]]
+  ]]
+  inline def useBackgroundPermissions(options: PermissionHookOptions[js.Object]): js.Tuple3[
+    PermissionResponse | Null, 
+    js.Function0[js.Promise[PermissionResponse]], 
+    js.Function0[js.Promise[PermissionResponse]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useBackgroundPermissions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[
+    PermissionResponse | Null, 
+    js.Function0[js.Promise[PermissionResponse]], 
+    js.Function0[js.Promise[PermissionResponse]]
+  ]]
+  
+  inline def useForegroundPermissions(): js.Tuple3[
+    LocationPermissionResponse | Null, 
+    js.Function0[js.Promise[LocationPermissionResponse]], 
+    js.Function0[js.Promise[LocationPermissionResponse]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForegroundPermissions")().asInstanceOf[js.Tuple3[
+    LocationPermissionResponse | Null, 
+    js.Function0[js.Promise[LocationPermissionResponse]], 
+    js.Function0[js.Promise[LocationPermissionResponse]]
+  ]]
+  inline def useForegroundPermissions(options: PermissionHookOptions[js.Object]): js.Tuple3[
+    LocationPermissionResponse | Null, 
+    js.Function0[js.Promise[LocationPermissionResponse]], 
+    js.Function0[js.Promise[LocationPermissionResponse]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useForegroundPermissions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[
+    LocationPermissionResponse | Null, 
+    js.Function0[js.Promise[LocationPermissionResponse]], 
+    js.Function0[js.Promise[LocationPermissionResponse]]
+  ]]
+  
   inline def watchHeadingAsync(callback: LocationHeadingCallback): js.Promise[LocationSubscription] = ^.asInstanceOf[js.Dynamic].applyDynamic("watchHeadingAsync")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocationSubscription]]
   
-  inline def watchPositionAsync(options: LocationOptions, callback: LocationCallback): js.Promise[Remove] = (^.asInstanceOf[js.Dynamic].applyDynamic("watchPositionAsync")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Remove]]
+  inline def watchPositionAsync(options: LocationOptions, callback: LocationCallback): js.Promise[LocationSubscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("watchPositionAsync")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LocationSubscription]]
 }

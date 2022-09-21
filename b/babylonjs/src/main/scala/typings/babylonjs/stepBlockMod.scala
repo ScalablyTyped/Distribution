@@ -10,7 +10,7 @@ object stepBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/stepBlock", "StepBlock")
   @js.native
-  class StepBlock protected () extends NodeMaterialBlock {
+  open class StepBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new StepBlock
       * @param name defines the block name

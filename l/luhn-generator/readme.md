@@ -11,9 +11,9 @@ A generator of numbers that passes the validation of Luhn algorithm or Luhn form
 | Full name          | luhn-generator |
 | Keywords           | luhn, generator, modulus 10, mod 10, algorithm, formula, checksum |
 | # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 82199 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19584.666666666668 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/rromanovsky/luhn-generator)

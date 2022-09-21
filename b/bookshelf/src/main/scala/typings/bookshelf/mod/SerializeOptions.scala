@@ -1,28 +1,37 @@
 package typings.bookshelf.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SerializeOptions extends js.Object {
+trait SerializeOptions extends StObject {
+  
   var omitPivot: js.UndefOr[Boolean] = js.undefined
+  
   var shallow: js.UndefOr[Boolean] = js.undefined
+  
   /** @default true */
   var visibility: js.UndefOr[Boolean] = js.undefined
 }
-
 object SerializeOptions {
-  @scala.inline
-  def apply(
-    omitPivot: js.UndefOr[Boolean] = js.undefined,
-    shallow: js.UndefOr[Boolean] = js.undefined,
-    visibility: js.UndefOr[Boolean] = js.undefined
-  ): SerializeOptions = {
+  
+  inline def apply(): SerializeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(omitPivot)) __obj.updateDynamic("omitPivot")(omitPivot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SerializeOptions]
   }
+  
+  extension [Self <: SerializeOptions](x: Self) {
+    
+    inline def setOmitPivot(value: Boolean): Self = StObject.set(x, "omitPivot", value.asInstanceOf[js.Any])
+    
+    inline def setOmitPivotUndefined: Self = StObject.set(x, "omitPivot", js.undefined)
+    
+    inline def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
+    
+    inline def setShallowUndefined: Self = StObject.set(x, "shallow", js.undefined)
+    
+    inline def setVisibility(value: Boolean): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+  }
 }
-

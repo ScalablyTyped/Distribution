@@ -29,7 +29,7 @@ object SearchEntitiesResponse {
     
     inline def setDescriptionsUndefined: Self = StObject.set(x, "descriptions", js.undefined)
     
-    inline def setDescriptionsVarargs(value: EntityDescription*): Self = StObject.set(x, "descriptions", js.Array(value :_*))
+    inline def setDescriptionsVarargs(value: EntityDescription*): Self = StObject.set(x, "descriptions", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -2,6 +2,7 @@ package typings.babylonjs
 
 import typings.babylonjs.internalTextureMod.InternalTexture
 import typings.babylonjs.postProcessMod.PostProcess
+import typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -12,19 +13,19 @@ object postProcessManagerMod {
   
   @JSImport("babylonjs/PostProcesses/postProcessManager", "PostProcessManager")
   @js.native
-  class PostProcessManager protected () extends StObject {
+  open class PostProcessManager protected () extends StObject {
     /**
       * Creates a new instance PostProcess
       * @param scene The scene that the post process is associated with.
       */
     def this(scene: Scene) = this()
     
-    /* private */ var _buildIndexBuffer: js.Any = js.native
+    /* private */ var _buildIndexBuffer: Any = js.native
     
     /**
       * Finalize the result of the output of the postprocesses.
       * @param doNotPresent If true the result will not be displayed to the screen.
-      * @param targetTexture The target texture to render to.
+      * @param targetTexture The render target wrapper to render to.
       * @param faceIndex The index of the face to bind the target texture to.
       * @param postProcesses The array of post processes to render.
       * @param forceFullscreenViewport force gl.viewport to be full screen eg. 0,0,textureWidth,textureHeight (default: false)
@@ -68,44 +69,44 @@ object postProcessManagerMod {
       postProcesses: Unit,
       forceFullscreenViewport: Boolean
     ): Unit = js.native
-    def _finalizeFrame(doNotPresent: Boolean, targetTexture: InternalTexture): Unit = js.native
-    def _finalizeFrame(doNotPresent: Boolean, targetTexture: InternalTexture, faceIndex: Double): Unit = js.native
+    def _finalizeFrame(doNotPresent: Boolean, targetTexture: RenderTargetWrapper): Unit = js.native
+    def _finalizeFrame(doNotPresent: Boolean, targetTexture: RenderTargetWrapper, faceIndex: Double): Unit = js.native
     def _finalizeFrame(
       doNotPresent: Boolean,
-      targetTexture: InternalTexture,
+      targetTexture: RenderTargetWrapper,
       faceIndex: Double,
       postProcesses: js.Array[PostProcess]
     ): Unit = js.native
     def _finalizeFrame(
       doNotPresent: Boolean,
-      targetTexture: InternalTexture,
+      targetTexture: RenderTargetWrapper,
       faceIndex: Double,
       postProcesses: js.Array[PostProcess],
       forceFullscreenViewport: Boolean
     ): Unit = js.native
     def _finalizeFrame(
       doNotPresent: Boolean,
-      targetTexture: InternalTexture,
+      targetTexture: RenderTargetWrapper,
       faceIndex: Double,
       postProcesses: Unit,
       forceFullscreenViewport: Boolean
     ): Unit = js.native
     def _finalizeFrame(
       doNotPresent: Boolean,
-      targetTexture: InternalTexture,
+      targetTexture: RenderTargetWrapper,
       faceIndex: Unit,
       postProcesses: js.Array[PostProcess]
     ): Unit = js.native
     def _finalizeFrame(
       doNotPresent: Boolean,
-      targetTexture: InternalTexture,
+      targetTexture: RenderTargetWrapper,
       faceIndex: Unit,
       postProcesses: js.Array[PostProcess],
       forceFullscreenViewport: Boolean
     ): Unit = js.native
     def _finalizeFrame(
       doNotPresent: Boolean,
-      targetTexture: InternalTexture,
+      targetTexture: RenderTargetWrapper,
       faceIndex: Unit,
       postProcesses: Unit,
       forceFullscreenViewport: Boolean
@@ -141,56 +142,56 @@ object postProcessManagerMod {
       postProcesses: Unit,
       forceFullscreenViewport: Boolean
     ): Unit = js.native
-    def _finalizeFrame(doNotPresent: Unit, targetTexture: InternalTexture): Unit = js.native
-    def _finalizeFrame(doNotPresent: Unit, targetTexture: InternalTexture, faceIndex: Double): Unit = js.native
+    def _finalizeFrame(doNotPresent: Unit, targetTexture: RenderTargetWrapper): Unit = js.native
+    def _finalizeFrame(doNotPresent: Unit, targetTexture: RenderTargetWrapper, faceIndex: Double): Unit = js.native
     def _finalizeFrame(
       doNotPresent: Unit,
-      targetTexture: InternalTexture,
+      targetTexture: RenderTargetWrapper,
       faceIndex: Double,
       postProcesses: js.Array[PostProcess]
     ): Unit = js.native
     def _finalizeFrame(
       doNotPresent: Unit,
-      targetTexture: InternalTexture,
+      targetTexture: RenderTargetWrapper,
       faceIndex: Double,
       postProcesses: js.Array[PostProcess],
       forceFullscreenViewport: Boolean
     ): Unit = js.native
     def _finalizeFrame(
       doNotPresent: Unit,
-      targetTexture: InternalTexture,
+      targetTexture: RenderTargetWrapper,
       faceIndex: Double,
       postProcesses: Unit,
       forceFullscreenViewport: Boolean
     ): Unit = js.native
     def _finalizeFrame(
       doNotPresent: Unit,
-      targetTexture: InternalTexture,
+      targetTexture: RenderTargetWrapper,
       faceIndex: Unit,
       postProcesses: js.Array[PostProcess]
     ): Unit = js.native
     def _finalizeFrame(
       doNotPresent: Unit,
-      targetTexture: InternalTexture,
+      targetTexture: RenderTargetWrapper,
       faceIndex: Unit,
       postProcesses: js.Array[PostProcess],
       forceFullscreenViewport: Boolean
     ): Unit = js.native
     def _finalizeFrame(
       doNotPresent: Unit,
-      targetTexture: InternalTexture,
+      targetTexture: RenderTargetWrapper,
       faceIndex: Unit,
       postProcesses: Unit,
       forceFullscreenViewport: Boolean
     ): Unit = js.native
     
-    /* private */ var _indexBuffer: js.Any = js.native
+    /* private */ var _indexBuffer: Any = js.native
     
-    /* private */ var _prepareBuffers: js.Any = js.native
+    /* private */ var _prepareBuffers: Any = js.native
     
     /**
       * Prepares a frame to be run through a post process.
-      * @param sourceTexture The input texture to the post procesess. (default: null)
+      * @param sourceTexture The input texture to the post processes. (default: null)
       * @param postProcesses An array of post processes to be run. (default: null)
       * @returns True if the post processes were able to be run.
       * @hidden
@@ -206,15 +207,15 @@ object postProcessManagerMod {
       */
     def _rebuild(): Unit = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
-    /* private */ var _vertexBuffers: js.Any = js.native
+    /* private */ var _vertexBuffers: Any = js.native
     
     /**
       * Manually render a set of post processes to a texture.
       * Please note, the frame buffer won't be unbound after the call in case you have more render to do.
       * @param postProcesses An array of post processes to be run.
-      * @param targetTexture The target texture to render to.
+      * @param targetTexture The render target wrapper to render to.
       * @param forceFullscreenViewport force gl.viewport to be full screen eg. 0,0,textureWidth,textureHeight
       * @param faceIndex defines the face to render to if a cubemap is defined as the target
       * @param lodLevel defines which lod of the texture to render to
@@ -326,28 +327,28 @@ object postProcessManagerMod {
       lodLevel: Unit,
       doNotBindFrambuffer: Boolean
     ): Unit = js.native
-    def directRender(postProcesses: js.Array[PostProcess], targetTexture: Nullable[InternalTexture]): Unit = js.native
+    def directRender(postProcesses: js.Array[PostProcess], targetTexture: Nullable[RenderTargetWrapper]): Unit = js.native
     def directRender(
       postProcesses: js.Array[PostProcess],
-      targetTexture: Nullable[InternalTexture],
+      targetTexture: Nullable[RenderTargetWrapper],
       forceFullscreenViewport: Boolean
     ): Unit = js.native
     def directRender(
       postProcesses: js.Array[PostProcess],
-      targetTexture: Nullable[InternalTexture],
+      targetTexture: Nullable[RenderTargetWrapper],
       forceFullscreenViewport: Boolean,
       faceIndex: Double
     ): Unit = js.native
     def directRender(
       postProcesses: js.Array[PostProcess],
-      targetTexture: Nullable[InternalTexture],
+      targetTexture: Nullable[RenderTargetWrapper],
       forceFullscreenViewport: Boolean,
       faceIndex: Double,
       lodLevel: Double
     ): Unit = js.native
     def directRender(
       postProcesses: js.Array[PostProcess],
-      targetTexture: Nullable[InternalTexture],
+      targetTexture: Nullable[RenderTargetWrapper],
       forceFullscreenViewport: Boolean,
       faceIndex: Double,
       lodLevel: Double,
@@ -355,7 +356,7 @@ object postProcessManagerMod {
     ): Unit = js.native
     def directRender(
       postProcesses: js.Array[PostProcess],
-      targetTexture: Nullable[InternalTexture],
+      targetTexture: Nullable[RenderTargetWrapper],
       forceFullscreenViewport: Boolean,
       faceIndex: Double,
       lodLevel: Unit,
@@ -363,14 +364,14 @@ object postProcessManagerMod {
     ): Unit = js.native
     def directRender(
       postProcesses: js.Array[PostProcess],
-      targetTexture: Nullable[InternalTexture],
+      targetTexture: Nullable[RenderTargetWrapper],
       forceFullscreenViewport: Boolean,
       faceIndex: Unit,
       lodLevel: Double
     ): Unit = js.native
     def directRender(
       postProcesses: js.Array[PostProcess],
-      targetTexture: Nullable[InternalTexture],
+      targetTexture: Nullable[RenderTargetWrapper],
       forceFullscreenViewport: Boolean,
       faceIndex: Unit,
       lodLevel: Double,
@@ -378,7 +379,7 @@ object postProcessManagerMod {
     ): Unit = js.native
     def directRender(
       postProcesses: js.Array[PostProcess],
-      targetTexture: Nullable[InternalTexture],
+      targetTexture: Nullable[RenderTargetWrapper],
       forceFullscreenViewport: Boolean,
       faceIndex: Unit,
       lodLevel: Unit,
@@ -386,20 +387,20 @@ object postProcessManagerMod {
     ): Unit = js.native
     def directRender(
       postProcesses: js.Array[PostProcess],
-      targetTexture: Nullable[InternalTexture],
+      targetTexture: Nullable[RenderTargetWrapper],
       forceFullscreenViewport: Unit,
       faceIndex: Double
     ): Unit = js.native
     def directRender(
       postProcesses: js.Array[PostProcess],
-      targetTexture: Nullable[InternalTexture],
+      targetTexture: Nullable[RenderTargetWrapper],
       forceFullscreenViewport: Unit,
       faceIndex: Double,
       lodLevel: Double
     ): Unit = js.native
     def directRender(
       postProcesses: js.Array[PostProcess],
-      targetTexture: Nullable[InternalTexture],
+      targetTexture: Nullable[RenderTargetWrapper],
       forceFullscreenViewport: Unit,
       faceIndex: Double,
       lodLevel: Double,
@@ -407,7 +408,7 @@ object postProcessManagerMod {
     ): Unit = js.native
     def directRender(
       postProcesses: js.Array[PostProcess],
-      targetTexture: Nullable[InternalTexture],
+      targetTexture: Nullable[RenderTargetWrapper],
       forceFullscreenViewport: Unit,
       faceIndex: Double,
       lodLevel: Unit,
@@ -415,14 +416,14 @@ object postProcessManagerMod {
     ): Unit = js.native
     def directRender(
       postProcesses: js.Array[PostProcess],
-      targetTexture: Nullable[InternalTexture],
+      targetTexture: Nullable[RenderTargetWrapper],
       forceFullscreenViewport: Unit,
       faceIndex: Unit,
       lodLevel: Double
     ): Unit = js.native
     def directRender(
       postProcesses: js.Array[PostProcess],
-      targetTexture: Nullable[InternalTexture],
+      targetTexture: Nullable[RenderTargetWrapper],
       forceFullscreenViewport: Unit,
       faceIndex: Unit,
       lodLevel: Double,
@@ -430,7 +431,7 @@ object postProcessManagerMod {
     ): Unit = js.native
     def directRender(
       postProcesses: js.Array[PostProcess],
-      targetTexture: Nullable[InternalTexture],
+      targetTexture: Nullable[RenderTargetWrapper],
       forceFullscreenViewport: Unit,
       faceIndex: Unit,
       lodLevel: Unit,

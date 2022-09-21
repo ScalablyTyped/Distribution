@@ -4,28 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The inspectTemplate contains a configuration (set of types of sensitive
-  * data to be detected) to be used anywhere you otherwise would normally
-  * specify InspectConfig. See
-  * https://cloud.google.com/dlp/docs/concepts-templates to learn more.
-  */
 trait SchemaGooglePrivacyDlpV2InspectTemplate extends StObject {
   
   /**
-    * The creation timestamp of a inspectTemplate, output only field.
+    * Output only. The creation timestamp of an inspectTemplate.
     */
-  var createTime: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Short description (max 256 chars).
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Display name (max 256 chars).
     */
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The core content of the template. Configuration of the scanning process.
@@ -33,16 +27,14 @@ trait SchemaGooglePrivacyDlpV2InspectTemplate extends StObject {
   var inspectConfig: js.UndefOr[SchemaGooglePrivacyDlpV2InspectConfig] = js.undefined
   
   /**
-    * The template name. Output only.  The template will have one of the
-    * following formats: `projects/PROJECT_ID/inspectTemplates/TEMPLATE_ID` OR
-    * `organizations/ORGANIZATION_ID/inspectTemplates/TEMPLATE_ID`
+    * Output only. The template name. The template will have one of the following formats: `projects/PROJECT_ID/inspectTemplates/TEMPLATE_ID` OR `organizations/ORGANIZATION_ID/inspectTemplates/TEMPLATE_ID`;
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The last update timestamp of a inspectTemplate, output only field.
+    * Output only. The last update timestamp of an inspectTemplate.
     */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var updateTime: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2InspectTemplate {
   
@@ -55,13 +47,19 @@ object SchemaGooglePrivacyDlpV2InspectTemplate {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
+    inline def setCreateTimeNull: Self = StObject.set(x, "createTime", null)
+    
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
@@ -71,9 +69,13 @@ object SchemaGooglePrivacyDlpV2InspectTemplate {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeNull: Self = StObject.set(x, "updateTime", null)
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }

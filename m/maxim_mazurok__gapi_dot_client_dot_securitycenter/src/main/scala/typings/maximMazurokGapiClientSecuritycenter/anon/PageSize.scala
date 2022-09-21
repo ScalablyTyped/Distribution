@@ -32,12 +32,12 @@ trait PageSize extends StObject {
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The value returned by the last `ListSourcesResponse`; indicates that this is a continuation of a prior `ListSources` call, and that the system should return the next page of
-    * data.
+    * The value returned by the last `ListNotificationConfigsResponse`; indicates that this is a continuation of a prior `ListNotificationConfigs` call, and that the system should
+    * return the next page of data.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** Required. Resource name of the parent of sources to list. Its format should be "organizations/[organization_id]". */
+  /** Required. Name of the organization to list notification configs. Its format is "organizations/[organization_id]" or "projects/[project_id]". */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

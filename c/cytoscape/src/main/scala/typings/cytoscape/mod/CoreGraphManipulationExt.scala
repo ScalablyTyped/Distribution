@@ -33,5 +33,5 @@ trait CoreGraphManipulationExt extends StObject {
     */
   def scratch(): Scratchpad = js.native
   def scratch(namespace: String): Scratchpad = js.native
-  def scratch(namespace: String, value: js.Any): this.type = js.native
+  def scratch(namespace: String, value: Any): this.type = js.native
 }

@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofDateTimePicker extends StObject {
   
   /* static member */
-  var Locale: js.Any
+  var Locale: Any
   
   /* static member */
   var fn: DateTimePicker
 }
 object TypeofDateTimePicker {
   
-  inline def apply(Locale: js.Any, fn: DateTimePicker): TypeofDateTimePicker = {
+  inline def apply(Locale: Any, fn: DateTimePicker): TypeofDateTimePicker = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofDateTimePicker]
   }
@@ -24,6 +24,6 @@ object TypeofDateTimePicker {
     
     inline def setFn(value: DateTimePicker): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

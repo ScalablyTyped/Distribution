@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "VariableNameTable")
 @js.native
-class VariableNameTable ()
+open class VariableNameTable ()
   extends typings.wonderJs.variableNameTableMod.VariableNameTable
 /* static members */
 object VariableNameTable {

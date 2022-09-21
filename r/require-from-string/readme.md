@@ -11,9 +11,9 @@ Require module from string
 | Full name          | require-from-string |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 376 |
-| # downloads        | 136991162 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 7.046677166666667E7 |
+| # stars            | 267.0 |
 
 ## Links
 - [Homepage](https://github.com/floatdrop/require-from-string#readme)

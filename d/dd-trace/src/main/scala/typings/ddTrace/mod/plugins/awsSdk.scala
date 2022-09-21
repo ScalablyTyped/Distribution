@@ -1,5 +1,6 @@
 package typings.ddTrace.mod.plugins
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.ddTrace.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait awsSdk
   extends StObject
-     with Instrumentation {
+     with Instrumentation
+     with /**
+  * Configuration for individual services to enable/disable them. Message
+  * queue services can also configure the producer and consumer individually
+  * by passing an object with a `producer` and `consumer` properties. The
+  * list of valid service keys is in the service-specific section of
+  * https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Config.html
+  */
+/* key */ StringDictionary[js.UndefOr[Boolean | js.Object]] {
   
   /**
     * Hooks to run before spans are finished.

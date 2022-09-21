@@ -17,7 +17,7 @@ trait LegendEntries extends StObject {
   
   def Item(Index: Double): LegendEntry = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): LegendEntry = js.native
+  def _Default(Index: Any): LegendEntry = js.native
 }

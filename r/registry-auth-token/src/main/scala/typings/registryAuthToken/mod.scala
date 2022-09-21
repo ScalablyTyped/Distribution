@@ -10,18 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /**
+    * Retrieves the auth token to use for a given registry URL
     *
-    * @param registryUrl - Either the registry url used
-    * for matching or a configuration object describing the contents of the .npmrc file
+    * @param registryUrl - Either the registry url used for matching, or a configuration
+    * object describing the contents of the .npmrc file
     * @param [options] - a configuration object describing the
     * contents of the .npmrc file.  If an `npmrc` config object was passed in as the
     * first parameter, this parameter is ignored.
     * @returns The `NpmCredentials` object or undefined if no match found.
     */
-  inline def apply(registryUrl: String): NpmCredentials = ^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any]).asInstanceOf[NpmCredentials]
-  inline def apply(registryUrl: String, options: AuthOptions): NpmCredentials = (^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NpmCredentials]
-  inline def apply(registryUrl: AuthOptions): NpmCredentials = ^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any]).asInstanceOf[NpmCredentials]
-  inline def apply(registryUrl: AuthOptions, options: AuthOptions): NpmCredentials = (^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NpmCredentials]
+  inline def apply(registryUrl: String): js.UndefOr[NpmCredentials] = ^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NpmCredentials]]
+  inline def apply(registryUrl: String, options: AuthOptions): js.UndefOr[NpmCredentials] = (^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NpmCredentials]]
+  inline def apply(registryUrl: AuthOptions): js.UndefOr[NpmCredentials] = ^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NpmCredentials]]
+  inline def apply(registryUrl: AuthOptions, options: AuthOptions): js.UndefOr[NpmCredentials] = (^.asInstanceOf[js.Dynamic].apply(registryUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NpmCredentials]]
   
   @JSImport("registry-auth-token", JSImport.Namespace)
   @js.native
@@ -39,7 +40,7 @@ object mod {
     var npmrc: js.UndefOr[DictregistryUrls] = js.undefined
     
     /**
-      * Wether or not url's path parts are recursively trimmed from the registry
+      * Whether or not url's path parts are recursively trimmed from the registry
       * url when searching for tokens
       */
     var recursive: js.UndefOr[Boolean] = js.undefined

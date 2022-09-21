@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("two.js", "Ellipse")
 @js.native
-class Ellipse protected () extends Path {
+open class Ellipse protected () extends Path {
   def this(x: Double, y: Double, width: Double, height: Double) = this()
 }

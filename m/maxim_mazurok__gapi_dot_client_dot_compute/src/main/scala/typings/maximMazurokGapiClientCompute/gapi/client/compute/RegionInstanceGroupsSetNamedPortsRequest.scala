@@ -33,6 +33,6 @@ object RegionInstanceGroupsSetNamedPortsRequest {
     
     inline def setNamedPortsUndefined: Self = StObject.set(x, "namedPorts", js.undefined)
     
-    inline def setNamedPortsVarargs(value: NamedPort*): Self = StObject.set(x, "namedPorts", js.Array(value :_*))
+    inline def setNamedPortsVarargs(value: NamedPort*): Self = StObject.set(x, "namedPorts", js.Array(value*))
   }
 }

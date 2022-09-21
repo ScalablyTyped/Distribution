@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-charts-wrapper", "LineChart")
 @js.native
-class LineChart protected ()
-  extends Component[LineChartProps, js.Object, js.Any] {
+open class LineChart protected ()
+  extends Component[LineChartProps, js.Object, Any] {
   def this(props: LineChartProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: LineChartProps, context: js.Any) = this()
+  def this(props: LineChartProps, context: Any) = this()
 }

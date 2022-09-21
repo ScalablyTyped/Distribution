@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLSelectionObject")
 @js.native
-/* private */ class IHTMLSelectionObject ()
+/* private */ open class IHTMLSelectionObject ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLSelectionObject {
   
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def clear(): Unit = js.native
   
   /* CompleteClass */
-  override def createRange(): js.Any = js.native
+  override def createRange(): Any = js.native
   
   /* CompleteClass */
   override def empty(): Unit = js.native

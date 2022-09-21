@@ -40,7 +40,7 @@ trait PageToken extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** If set, list only matters with that specific state. The default is listing matters of all states. */
+  /** If set, lists only matters with the specified state. The default lists matters of all states. */
   var state: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -49,7 +49,7 @@ trait PageToken extends StObject {
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
   
-  /** Specifies which parts of the matter to return in response. */
+  /** Specifies how much information about the matter to return in response. */
   var view: js.UndefOr[String] = js.undefined
 }
 object PageToken {

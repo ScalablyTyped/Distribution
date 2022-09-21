@@ -12,12 +12,12 @@ trait GetComplianceDetailsByConfigRuleRequest extends StObject {
   var ComplianceTypes: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceTypes] = js.undefined
   
   /**
-    * The name of the AWS Config rule for which you want compliance information.
+    * The name of the Config rule for which you want compliance information.
     */
   var ConfigRuleName: StringWithCharLimit64
   
   /**
-    * The maximum number of evaluation results returned on each page. The default is 10. You cannot specify a number greater than 100. If you specify 0, AWS Config uses the default.
+    * The maximum number of evaluation results returned on each page. The default is 10. You cannot specify a number greater than 100. If you specify 0, Config uses the default.
     */
   var Limit: js.UndefOr[typings.awsSdk.configserviceMod.Limit] = js.undefined
   
@@ -39,7 +39,7 @@ object GetComplianceDetailsByConfigRuleRequest {
     
     inline def setComplianceTypesUndefined: Self = StObject.set(x, "ComplianceTypes", js.undefined)
     
-    inline def setComplianceTypesVarargs(value: ComplianceType*): Self = StObject.set(x, "ComplianceTypes", js.Array(value :_*))
+    inline def setComplianceTypesVarargs(value: ComplianceType*): Self = StObject.set(x, "ComplianceTypes", js.Array(value*))
     
     inline def setConfigRuleName(value: StringWithCharLimit64): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     

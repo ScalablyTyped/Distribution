@@ -27,7 +27,7 @@ object activationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/activations", "Elu")
   @js.native
-  class Elu () extends Activation
+  open class Elu () extends Activation
   /* static members */
   object Elu {
     
@@ -39,7 +39,7 @@ object activationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/activations", "HardSigmoid")
   @js.native
-  class HardSigmoid () extends Activation
+  open class HardSigmoid () extends Activation
   /* static members */
   object HardSigmoid {
     
@@ -51,7 +51,7 @@ object activationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/activations", "Linear")
   @js.native
-  class Linear () extends Activation
+  open class Linear () extends Activation
   /* static members */
   object Linear {
     
@@ -63,7 +63,7 @@ object activationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/activations", "LogSoftmax")
   @js.native
-  class LogSoftmax () extends Activation
+  open class LogSoftmax () extends Activation
   /* static members */
   object LogSoftmax {
     
@@ -73,9 +73,21 @@ object activationsMod {
     val className: /* "logSoftmax" */ String = js.native
   }
   
+  @JSImport("@tensorflow/tfjs-layers/dist/activations", "Mish")
+  @js.native
+  open class Mish () extends Activation
+  /* static members */
+  object Mish {
+    
+    /** @nocollapse */
+    @JSImport("@tensorflow/tfjs-layers/dist/activations", "Mish.className")
+    @js.native
+    val className: /* "mish" */ String = js.native
+  }
+  
   @JSImport("@tensorflow/tfjs-layers/dist/activations", "Relu")
   @js.native
-  class Relu () extends Activation
+  open class Relu () extends Activation
   /* static members */
   object Relu {
     
@@ -87,7 +99,7 @@ object activationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/activations", "Relu6")
   @js.native
-  class Relu6 () extends Activation
+  open class Relu6 () extends Activation
   /* static members */
   object Relu6 {
     
@@ -99,7 +111,7 @@ object activationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/activations", "Selu")
   @js.native
-  class Selu () extends Activation
+  open class Selu () extends Activation
   /* static members */
   object Selu {
     
@@ -111,7 +123,7 @@ object activationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/activations", "Sigmoid")
   @js.native
-  class Sigmoid () extends Activation
+  open class Sigmoid () extends Activation
   /* static members */
   object Sigmoid {
     
@@ -123,7 +135,7 @@ object activationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/activations", "Softmax")
   @js.native
-  class Softmax () extends Activation
+  open class Softmax () extends Activation
   /* static members */
   object Softmax {
     
@@ -135,7 +147,7 @@ object activationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/activations", "Softplus")
   @js.native
-  class Softplus () extends Activation
+  open class Softplus () extends Activation
   /* static members */
   object Softplus {
     
@@ -147,7 +159,7 @@ object activationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/activations", "Softsign")
   @js.native
-  class Softsign () extends Activation
+  open class Softsign () extends Activation
   /* static members */
   object Softsign {
     
@@ -159,7 +171,7 @@ object activationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/activations", "Swish")
   @js.native
-  class Swish () extends Activation
+  open class Swish () extends Activation
   /* static members */
   object Swish {
     
@@ -171,7 +183,7 @@ object activationsMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/activations", "Tanh")
   @js.native
-  class Tanh () extends Activation
+  open class Tanh () extends Activation
   /* static members */
   object Tanh {
     

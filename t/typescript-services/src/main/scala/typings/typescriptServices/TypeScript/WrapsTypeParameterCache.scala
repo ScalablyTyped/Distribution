@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WrapsTypeParameterCache extends StObject {
   
-  /* private */ var _wrapsTypeParameterCache: js.Any
+  /* private */ var _wrapsTypeParameterCache: Any
   
   def getWrapsTypeParameter(typeParameterArgumentMap: TypeArgumentMap): Double
   
@@ -15,7 +15,7 @@ trait WrapsTypeParameterCache extends StObject {
 object WrapsTypeParameterCache {
   
   inline def apply(
-    _wrapsTypeParameterCache: js.Any,
+    _wrapsTypeParameterCache: Any,
     getWrapsTypeParameter: TypeArgumentMap => Double,
     setWrapsTypeParameter: (TypeArgumentMap, Double) => Unit
   ): WrapsTypeParameterCache = {
@@ -29,6 +29,6 @@ object WrapsTypeParameterCache {
     
     inline def setSetWrapsTypeParameter(value: (TypeArgumentMap, Double) => Unit): Self = StObject.set(x, "setWrapsTypeParameter", js.Any.fromFunction2(value))
     
-    inline def set_wrapsTypeParameterCache(value: js.Any): Self = StObject.set(x, "_wrapsTypeParameterCache", value.asInstanceOf[js.Any])
+    inline def set_wrapsTypeParameterCache(value: Any): Self = StObject.set(x, "_wrapsTypeParameterCache", value.asInstanceOf[js.Any])
   }
 }

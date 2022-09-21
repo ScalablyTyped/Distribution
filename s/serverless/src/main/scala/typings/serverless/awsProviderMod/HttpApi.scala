@@ -8,13 +8,15 @@ trait HttpApi extends StObject {
   
   var authorizers: js.UndefOr[Authorizers] = js.undefined
   
-  var cors: js.UndefOr[Boolean] = js.undefined
+  var cors: js.UndefOr[Boolean | HttpApiCors] = js.undefined
   
   var id: js.UndefOr[String] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
   var payload: js.UndefOr[String] = js.undefined
+  
+  var useProviderTags: js.UndefOr[Boolean] = js.undefined
 }
 object HttpApi {
   
@@ -29,7 +31,7 @@ object HttpApi {
     
     inline def setAuthorizersUndefined: Self = StObject.set(x, "authorizers", js.undefined)
     
-    inline def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+    inline def setCors(value: Boolean | HttpApiCors): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     
     inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
     
@@ -44,5 +46,9 @@ object HttpApi {
     inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    
+    inline def setUseProviderTags(value: Boolean): Self = StObject.set(x, "useProviderTags", value.asInstanceOf[js.Any])
+    
+    inline def setUseProviderTagsUndefined: Self = StObject.set(x, "useProviderTags", js.undefined)
   }
 }

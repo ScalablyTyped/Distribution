@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.azdata.mod.ComponentProperties because Already inherited
-- typings.azdata.mod.DivContainerProperties because var conflicts: CSSStyles, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined overflowY, yOffsetChange, clickable */ @js.native
+- typings.azdata.mod.DivContainerProperties because var conflicts: CSSStyles, ariaHidden, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined overflowY, yOffsetChange, clickable */ @js.native
 trait DivContainer
   extends StObject
      with Container[DivLayout, DivItemLayout] {
@@ -21,19 +21,15 @@ trait DivContainer
   /**
     * An event called when the div is clicked
     */
-  def onDidClick(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable = js.native
-  def onDidClick(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onDidClick(
-    listener: js.Function1[/* e */ js.Any, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onDidClick(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidClick(listener: js.Function1[/* e */ Any, Any]): Disposable = js.native
+  def onDidClick(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable = js.native
+  def onDidClick(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidClick(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   /**
     * An event called when the div is clicked
     */
   @JSName("onDidClick")
-  var onDidClick_Original: Event[js.Any] = js.native
+  var onDidClick_Original: Event[Any] = js.native
   
   /**
     * Matches the overflow-y CSS property and its available values.

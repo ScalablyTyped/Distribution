@@ -33,7 +33,7 @@ object IClientBlockListRequest {
     
     inline def setBlockIdsUndefined: Self = StObject.set(x, "blockIds", js.undefined)
     
-    inline def setBlockIdsVarargs(value: String*): Self = StObject.set(x, "blockIds", js.Array(value :_*))
+    inline def setBlockIdsVarargs(value: String*): Self = StObject.set(x, "blockIds", js.Array(value*))
     
     inline def setHeadId(value: String): Self = StObject.set(x, "headId", value.asInstanceOf[js.Any])
     
@@ -53,6 +53,6 @@ object IClientBlockListRequest {
     
     inline def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
     
-    inline def setSortingVarargs(value: IClientSortControls*): Self = StObject.set(x, "sorting", js.Array(value :_*))
+    inline def setSortingVarargs(value: IClientSortControls*): Self = StObject.set(x, "sorting", js.Array(value*))
   }
 }

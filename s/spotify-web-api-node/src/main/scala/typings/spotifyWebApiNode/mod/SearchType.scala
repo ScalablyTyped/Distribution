@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.spotifyWebApiNode.spotifyWebApiNodeStrings.artist
   - typings.spotifyWebApiNode.spotifyWebApiNodeStrings.playlist
   - typings.spotifyWebApiNode.spotifyWebApiNodeStrings.track
+  - typings.spotifyWebApiNode.spotifyWebApiNodeStrings.show
+  - typings.spotifyWebApiNode.spotifyWebApiNodeStrings.episode
 */
 trait SearchType extends StObject
 object SearchType {
@@ -17,7 +19,11 @@ object SearchType {
   
   inline def artist: typings.spotifyWebApiNode.spotifyWebApiNodeStrings.artist = "artist".asInstanceOf[typings.spotifyWebApiNode.spotifyWebApiNodeStrings.artist]
   
+  inline def episode: typings.spotifyWebApiNode.spotifyWebApiNodeStrings.episode = "episode".asInstanceOf[typings.spotifyWebApiNode.spotifyWebApiNodeStrings.episode]
+  
   inline def playlist: typings.spotifyWebApiNode.spotifyWebApiNodeStrings.playlist = "playlist".asInstanceOf[typings.spotifyWebApiNode.spotifyWebApiNodeStrings.playlist]
+  
+  inline def show: typings.spotifyWebApiNode.spotifyWebApiNodeStrings.show = "show".asInstanceOf[typings.spotifyWebApiNode.spotifyWebApiNodeStrings.show]
   
   inline def track: typings.spotifyWebApiNode.spotifyWebApiNodeStrings.track = "track".asInstanceOf[typings.spotifyWebApiNode.spotifyWebApiNodeStrings.track]
 }

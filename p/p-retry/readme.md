@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-retry
 
-Typings are for version 4.2.0
+Typings are for version 5.1.1
 
 ## Library description:
 Retry a promise-returning or async function
@@ -10,10 +10,10 @@ Retry a promise-returning or async function
 | ------------------ | :-------------: |
 | Full name          | p-retry |
 | Keywords           | promise, retry, retries, operation, failed, rejected, try, exponential, backoff, attempt, async, await, promises, concurrently, concurrency, parallel, bluebird |
-| # releases         | 4 |
-| # dependents       | 231 |
-| # downloads        | 310029344 |
-| # stars            | 3 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 5.0509534666666664E7 |
+| # stars            | 544.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-retry#readme)

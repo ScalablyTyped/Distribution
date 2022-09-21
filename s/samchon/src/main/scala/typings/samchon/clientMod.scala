@@ -45,7 +45,7 @@ object clientMod {
     /**
       * @hidden
       */
-    /* private */ var communicator_ : js.Any = js.native
+    /* private */ var communicator_ : Any = js.native
     
     /**
       * Factory method creating {@link Service} object.
@@ -112,7 +112,7 @@ object clientMod {
     /**
       * @hidden
       */
-    /* private */ var no_ : js.Any = js.native
+    /* private */ var no_ : Any = js.native
     
     /**
       * Sending message.
@@ -137,11 +137,11 @@ object clientMod {
     /**
       * @hidden
       */
-    /* private */ var service_ : js.Any = js.native
+    /* private */ var service_ : Any = js.native
     
     /**
       * @hidden
       */
-    /* private */ var user_ : js.Any = js.native
+    /* private */ var user_ : Any = js.native
   }
 }

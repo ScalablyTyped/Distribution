@@ -10,10 +10,10 @@ The lodash method `_.shuffle` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.shuffle |
 | Keywords           | lodash-modularized, shuffle |
-| # releases         | 0 |
-| # dependents       | 82 |
-| # downloads        | 6776105 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 522004.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

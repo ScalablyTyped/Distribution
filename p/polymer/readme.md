@@ -10,10 +10,10 @@ Pre-processor for the Harp APF
 | ------------------ | :-------------: |
 | Full name          | polymer |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 10836 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 567.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/polymer)

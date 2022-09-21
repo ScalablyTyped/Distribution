@@ -14,7 +14,7 @@ trait XDeath extends StObject {
   
   var exchange: String
   
-  var `original-expiration`: js.UndefOr[js.Any] = js.undefined
+  var `original-expiration`: js.UndefOr[Any] = js.undefined
   
   var queue: String
   
@@ -45,7 +45,7 @@ object XDeath {
     
     inline def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
     
-    inline def `setOriginal-expiration`(value: js.Any): Self = StObject.set(x, "original-expiration", value.asInstanceOf[js.Any])
+    inline def `setOriginal-expiration`(value: Any): Self = StObject.set(x, "original-expiration", value.asInstanceOf[js.Any])
     
     inline def `setOriginal-expirationUndefined`: Self = StObject.set(x, "original-expiration", js.undefined)
     
@@ -55,7 +55,7 @@ object XDeath {
     
     inline def `setRouting-keys`(value: js.Array[String]): Self = StObject.set(x, "routing-keys", value.asInstanceOf[js.Any])
     
-    inline def `setRouting-keysVarargs`(value: String*): Self = StObject.set(x, "routing-keys", js.Array(value :_*))
+    inline def `setRouting-keysVarargs`(value: String*): Self = StObject.set(x, "routing-keys", js.Array(value*))
     
     inline def setTime(value: _empty): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }

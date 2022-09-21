@@ -124,6 +124,12 @@ object detectBrowserStrings {
   inline def `Windows 98`: `Windows 98` = ("Windows 98").asInstanceOf[`Windows 98`]
   
   @js.native
+  sealed trait `Windows CE`
+    extends StObject
+       with OperatingSystem
+  inline def `Windows CE`: `Windows CE` = ("Windows CE").asInstanceOf[`Windows CE`]
+  
+  @js.native
   sealed trait `Windows ME`
     extends StObject
        with OperatingSystem
@@ -214,6 +220,12 @@ object detectBrowserStrings {
   inline def crios: crios = "crios".asInstanceOf[crios]
   
   @js.native
+  sealed trait curl
+    extends StObject
+       with Browser
+  inline def curl: curl = "curl".asInstanceOf[curl]
+  
+  @js.native
   sealed trait edge
     extends StObject
        with Browser
@@ -292,6 +304,12 @@ object detectBrowserStrings {
   inline def miui: miui = "miui".asInstanceOf[miui]
   
   @js.native
+  sealed trait netfront
+    extends StObject
+       with Browser
+  inline def netfront: netfront = "netfront".asInstanceOf[netfront]
+  
+  @js.native
   sealed trait node
     extends StObject
        with DetectedInfoType
@@ -314,6 +332,12 @@ object detectBrowserStrings {
     extends StObject
        with Browser
   inline def phantomjs: phantomjs = "phantomjs".asInstanceOf[phantomjs]
+  
+  @js.native
+  sealed trait pie
+    extends StObject
+       with Browser
+  inline def pie: pie = "pie".asInstanceOf[pie]
   
   @js.native
   sealed trait `react-native`

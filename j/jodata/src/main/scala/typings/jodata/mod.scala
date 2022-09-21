@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("jodata", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with jo {
     def this(baseUri: String) = this()
@@ -19,7 +19,7 @@ object mod {
   
   @JSImport("jodata", "Concat")
   @js.native
-  class Concat protected ()
+  open class Concat protected ()
     extends StObject
        with typings.jodata.jo.Concat {
     def this(value1: String, value2: String) = this()
@@ -36,7 +36,7 @@ object mod {
   
   @JSImport("jodata", "FilterClause")
   @js.native
-  class FilterClause ()
+  open class FilterClause ()
     extends StObject
        with typings.jodata.jo.FilterClause {
     def this(property: String) = this()
@@ -44,7 +44,7 @@ object mod {
   
   @JSImport("jodata", "PrecedenceGroup")
   @js.native
-  class PrecedenceGroup protected ()
+  open class PrecedenceGroup protected ()
     extends StObject
        with typings.jodata.jo.PrecedenceGroup {
     def this(filterClause: typings.jodata.jo.FilterClause) = this()

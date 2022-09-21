@@ -15,13 +15,14 @@ object pbrMaterialMod {
   
   @JSImport("babylonjs/Materials/PBR/pbrMaterial", "PBRMaterial")
   @js.native
-  class PBRMaterial protected () extends PBRBaseMaterial {
+  open class PBRMaterial protected () extends PBRBaseMaterial {
     /**
       * Instantiates a new PBRMaterial instance.
       *
       * @param name The material name
       * @param scene The scene the material will be use in.
       */
+    def this(name: String) = this()
     def this(name: String, scene: Scene) = this()
     
     /**
@@ -32,7 +33,7 @@ object pbrMaterialMod {
     /**
       * AKA Diffuse Texture in standard nomenclature.
       */
-    var albedoTexture: BaseTexture = js.native
+    var albedoTexture: Nullable[BaseTexture] = js.native
     
     /**
       * Defines the alpha limits in alpha test mode.
@@ -47,7 +48,7 @@ object pbrMaterialMod {
     /**
       * AKA Occlusion Texture in other nomenclature.
       */
-    var ambientTexture: BaseTexture = js.native
+    var ambientTexture: Nullable[BaseTexture] = js.native
     
     /**
       * Defines how much the AO map is occluding the analytical lights (point spot...).
@@ -64,10 +65,10 @@ object pbrMaterialMod {
     /**
       * Stores surface normal data used to displace a mesh in a texture.
       */
-    var bumpTexture: BaseTexture = js.native
+    var bumpTexture: Nullable[BaseTexture] = js.native
     
     /**
-      * The color grading curves provide additional color adjustmnent that is applied after any color grading transform (3D LUT).
+      * The color grading curves provide additional color adjustment that is applied after any color grading transform (3D LUT).
       * They allow basic adjustment of saturation and small exposure adjustments, along with color filter tinting to provide white balance adjustment or more stylistic effects.
       * These are similar to controls found in many professional imaging or colorist software. The global controls are applied to the entire image. For advanced tuning, extra controls are provided to adjust the shadow, midtone and highlight areas of the image;
       * corresponding to low luminance, medium luminance, and high luminance areas respectively.
@@ -75,16 +76,16 @@ object pbrMaterialMod {
     def cameraColorCurves: Nullable[ColorCurves] = js.native
     
     /**
-      * Gets wether the color curves effect is enabled.
+      * Gets whether the color curves effect is enabled.
       */
     def cameraColorCurvesEnabled: Boolean = js.native
     /**
-      * Sets wether the color curves effect is enabled.
+      * Sets whether the color curves effect is enabled.
       */
     def cameraColorCurvesEnabled_=(value: Boolean): Unit = js.native
     
     /**
-      * The color grading curves provide additional color adjustmnent that is applied after any color grading transform (3D LUT).
+      * The color grading curves provide additional color adjustment that is applied after any color grading transform (3D LUT).
       * They allow basic adjustment of saturation and small exposure adjustments, along with color filter tinting to provide white balance adjustment or more stylistic effects.
       * These are similar to controls found in many professional imaging or colorist software. The global controls are applied to the entire image. For advanced tuning, extra controls are provided to adjust the shadow, midtone and highlight areas of the image;
       * corresponding to low luminance, medium luminance, and high luminance areas respectively.
@@ -92,11 +93,11 @@ object pbrMaterialMod {
     def cameraColorCurves_=(value: Nullable[ColorCurves]): Unit = js.native
     
     /**
-      * Gets wether the color grading effect is enabled.
+      * Gets whether the color grading effect is enabled.
       */
     def cameraColorGradingEnabled: Boolean = js.native
     /**
-      * Gets wether the color grading effect is enabled.
+      * Gets whether the color grading effect is enabled.
       */
     def cameraColorGradingEnabled_=(value: Boolean): Unit = js.native
     
@@ -132,11 +133,11 @@ object pbrMaterialMod {
     def cameraExposure_=(value: Double): Unit = js.native
     
     /**
-      * Gets wether tonemapping is enabled or not.
+      * Gets whether tonemapping is enabled or not.
       */
     def cameraToneMappingEnabled: Boolean = js.native
     /**
-      * Sets wether tonemapping is enabled or not
+      * Sets whether tonemapping is enabled or not
       */
     def cameraToneMappingEnabled_=(value: Boolean): Unit = js.native
     
@@ -170,7 +171,7 @@ object pbrMaterialMod {
     /**
       * Stores the emissive values in a texture.
       */
-    var emissiveTexture: BaseTexture = js.native
+    var emissiveTexture: Nullable[BaseTexture] = js.native
     
     /**
       * Enables specular anti aliasing in the PBR shader.
@@ -191,7 +192,7 @@ object pbrMaterialMod {
     
     /**
       * Intensity of the environment e.g. how much the environment will light the object
-      * either through harmonics for rough material or through the refelction for shiny ones.
+      * either through harmonics for rough material or through the reflection for shiny ones.
       */
     var environmentIntensity: Double = js.native
     
@@ -251,10 +252,10 @@ object pbrMaterialMod {
     /**
       * Stores the pre-calculated light information of a mesh in a texture.
       */
-    var lightmapTexture: BaseTexture = js.native
+    var lightmapTexture: Nullable[BaseTexture] = js.native
     
     /**
-      * This parameters will make the material used its opacity to control how much it is refracting aginst not.
+      * This parameters will make the material used its opacity to control how much it is refracting against not.
       * Materials half opaque for instance using refraction could benefit from this control.
       */
     def linkRefractionWithTransparency: Boolean = js.native
@@ -295,14 +296,15 @@ object pbrMaterialMod {
     
     /**
       * Defines to store metallicReflectanceColor in RGB and metallicF0Factor in A
-      * This is multiply against the scalar values defined in the material.
+      * This is multiplied against the scalar values defined in the material.
+      * If useOnlyMetallicFromMetallicReflectanceTexture is true, don't use the RGB channels, only A
       */
     var metallicReflectanceTexture: Nullable[BaseTexture] = js.native
     
     /**
       * Used to switch from specular/glossiness to metallic/roughness workflow.
       */
-    var metallicTexture: BaseTexture = js.native
+    var metallicTexture: Nullable[BaseTexture] = js.native
     
     /**
       * AKA Glossiness in other nomenclature.
@@ -313,17 +315,25 @@ object pbrMaterialMod {
       * Used to enable roughness/glossiness fetch from a separate channel depending on the current mode.
       * Gray Scale represents roughness in metallic mode and glossiness in specular mode.
       */
-    var microSurfaceTexture: BaseTexture = js.native
+    var microSurfaceTexture: Nullable[BaseTexture] = js.native
     
     /**
       * Stores the alpha values in a texture. Use luminance if texture.getAlphaFromRGB is true.
       */
-    var opacityTexture: BaseTexture = js.native
+    var opacityTexture: Nullable[BaseTexture] = js.native
     
     /**
       * Controls the scale bias of the parallax mode.
       */
     var parallaxScaleBias: Double = js.native
+    
+    /**
+      * Defines to store reflectanceColor in RGB
+      * This is multiplied against the scalar values defined in the material.
+      * If both reflectanceTexture and metallicReflectanceTexture textures are provided and useOnlyMetallicFromMetallicReflectanceTexture
+      * is false, metallicReflectanceTexture takes priority and reflectanceTexture is not used
+      */
+    var reflectanceTexture: Nullable[BaseTexture] = js.native
     
     /**
       * The color reflected from the material.
@@ -343,7 +353,7 @@ object pbrMaterialMod {
     /**
       * AKA Specular texture in other nomenclature.
       */
-    var reflectivityTexture: BaseTexture = js.native
+    var reflectivityTexture: Nullable[BaseTexture] = js.native
     
     /**
       * Stores the refracted light information in a texture.
@@ -444,6 +454,12 @@ object pbrMaterialMod {
     var useObjectSpaceNormalMap: Boolean = js.native
     
     /**
+      * Specifies that only the A channel from metallicReflectanceTexture should be used.
+      * If false, both RGB and A channels will be used
+      */
+    var useOnlyMetallicFromMetallicReflectanceTexture: Boolean = js.native
+    
+    /**
       * Allows using the bump map in parallax mode.
       */
     var useParallax: Boolean = js.native
@@ -454,14 +470,14 @@ object pbrMaterialMod {
     var useParallaxOcclusion: Boolean = js.native
     
     /**
-      * BJS is using an harcoded light falloff based on a manually sets up range.
-      * In PBR, one way to represents the fallof is to use the inverse squared root algorythm.
+      * BJS is using an hardcoded light falloff based on a manually sets up range.
+      * In PBR, one way to represents the falloff is to use the inverse squared root algorithm.
       * This parameter can help you switch back to the BJS mode in order to create scenes using both materials.
       */
     def usePhysicalLightFalloff: Boolean = js.native
     /**
-      * BJS is using an harcoded light falloff based on a manually sets up range.
-      * In PBR, one way to represents the fallof is to use the inverse squared root algorythm.
+      * BJS is using an hardcoded light falloff based on a manually sets up range.
+      * In PBR, one way to represents the falloff is to use the inverse squared root algorithm.
       * This parameter can help you switch back to the BJS mode in order to create scenes using both materials.
       */
     def usePhysicalLightFalloff_=(value: Boolean): Unit = js.native
@@ -473,8 +489,8 @@ object pbrMaterialMod {
     var useRadianceOcclusion: Boolean = js.native
     
     /**
-      * Specifies that the material will keeps the reflection highlights over a transparent surface (only the most limunous ones).
-      * A car glass is a good exemple of that. When the street lights reflects on it you can not see what is behind.
+      * Specifies that the material will keeps the reflection highlights over a transparent surface (only the most luminous ones).
+      * A car glass is a good example of that. When the street lights reflects on it you can not see what is behind.
       */
     var useRadianceOverAlpha: Boolean = js.native
     
@@ -489,8 +505,8 @@ object pbrMaterialMod {
     var useRoughnessFromMetallicTextureGreen: Boolean = js.native
     
     /**
-      * Specifies that the material will keep the specular highlights over a transparent surface (only the most limunous ones).
-      * A car glass is a good exemple of that. When sun reflects on it you can not see what is behind.
+      * Specifies that the material will keep the specular highlights over a transparent surface (only the most luminous ones).
+      * A car glass is a good example of that. When sun reflects on it you can not see what is behind.
       */
     var useSpecularOverAlpha: Boolean = js.native
   }
@@ -546,6 +562,6 @@ object pbrMaterialMod {
       * @param rootUrl - url for the scene object
       * @returns - PBRMaterial
       */
-    inline def Parse(source: js.Any, scene: Scene, rootUrl: String): PBRMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[PBRMaterial]
+    inline def Parse(source: Any, scene: Scene, rootUrl: String): PBRMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[PBRMaterial]
   }
 }

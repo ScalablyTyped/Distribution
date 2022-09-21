@@ -51,4 +51,8 @@ object classValidatorStrings {
     extends StObject
        with UUIDVersion
   inline def all: all = "all".asInstanceOf[all]
+  
+  @js.native
+  sealed trait any extends StObject
+  inline def any: any = "any".asInstanceOf[any]
 }

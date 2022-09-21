@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InventoryDeletionStatusItem extends StObject {
   
   /**
-    * The deletion ID returned by the DeleteInventory action.
+    * The deletion ID returned by the DeleteInventory operation.
     */
   var DeletionId: js.UndefOr[UUID] = js.undefined
   
   /**
     * The UTC timestamp when the delete operation started.
     */
-  var DeletionStartTime: js.UndefOr[InventoryDeletionStartTime] = js.undefined
+  var DeletionStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Information about the delete operation. For more information about this summary, see Understanding the delete inventory summary in the AWS Systems Manager User Guide.
+    * Information about the delete operation. For more information about this summary, see Understanding the delete inventory summary in the Amazon Web Services Systems Manager User Guide.
     */
   var DeletionSummary: js.UndefOr[InventoryDeletionSummary] = js.undefined
   
@@ -34,7 +34,7 @@ trait InventoryDeletionStatusItem extends StObject {
   /**
     * The UTC timestamp of when the last status report.
     */
-  var LastStatusUpdateTime: js.UndefOr[InventoryDeletionLastStatusUpdateTime] = js.undefined
+  var LastStatusUpdateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the inventory data type.
@@ -54,7 +54,7 @@ object InventoryDeletionStatusItem {
     
     inline def setDeletionIdUndefined: Self = StObject.set(x, "DeletionId", js.undefined)
     
-    inline def setDeletionStartTime(value: InventoryDeletionStartTime): Self = StObject.set(x, "DeletionStartTime", value.asInstanceOf[js.Any])
+    inline def setDeletionStartTime(value: js.Date): Self = StObject.set(x, "DeletionStartTime", value.asInstanceOf[js.Any])
     
     inline def setDeletionStartTimeUndefined: Self = StObject.set(x, "DeletionStartTime", js.undefined)
     
@@ -70,7 +70,7 @@ object InventoryDeletionStatusItem {
     
     inline def setLastStatusUndefined: Self = StObject.set(x, "LastStatus", js.undefined)
     
-    inline def setLastStatusUpdateTime(value: InventoryDeletionLastStatusUpdateTime): Self = StObject.set(x, "LastStatusUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastStatusUpdateTime(value: js.Date): Self = StObject.set(x, "LastStatusUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setLastStatusUpdateTimeUndefined: Self = StObject.set(x, "LastStatusUpdateTime", js.undefined)
     

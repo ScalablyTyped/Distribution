@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Appear extends StObject {
   
-  var appear: js.Any
+  var appear: Any
   
   var enter: Duration
   
@@ -16,14 +16,14 @@ trait Appear extends StObject {
 }
 object Appear {
   
-  inline def apply(appear: js.Any, enter: Duration, leave: Duration, update: Duration): Appear = {
+  inline def apply(appear: Any, enter: Duration, leave: Duration, update: Duration): Appear = {
     val __obj = js.Dynamic.literal(appear = appear.asInstanceOf[js.Any], enter = enter.asInstanceOf[js.Any], leave = leave.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
     __obj.asInstanceOf[Appear]
   }
   
   extension [Self <: Appear](x: Self) {
     
-    inline def setAppear(value: js.Any): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
+    inline def setAppear(value: Any): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     
     inline def setEnter(value: Duration): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     

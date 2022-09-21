@@ -10,10 +10,10 @@ The lodash method `_.multiply` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.multiply |
 | Keywords           | lodash-modularized, multiply |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1943 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 78.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

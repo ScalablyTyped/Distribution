@@ -1,6 +1,5 @@
 package typings.xmlchars
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +16,11 @@ object ed3Mod {
   
   @JSImport("xmlchars/xmlns/1.0/ed3", "NC_NAME_CHAR_RE")
   @js.native
-  val NC_NAME_CHAR_RE: RegExp = js.native
+  val NC_NAME_CHAR_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xmlns/1.0/ed3", "NC_NAME_RE")
   @js.native
-  val NC_NAME_RE: RegExp = js.native
+  val NC_NAME_RE: js.RegExp = js.native
   
   @JSImport("xmlchars/xmlns/1.0/ed3", "NC_NAME_START_CHAR")
   @js.native
@@ -29,7 +28,7 @@ object ed3Mod {
   
   @JSImport("xmlchars/xmlns/1.0/ed3", "NC_NAME_START_CHAR_RE")
   @js.native
-  val NC_NAME_START_CHAR_RE: RegExp = js.native
+  val NC_NAME_START_CHAR_RE: js.RegExp = js.native
   
   inline def isNCNameChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNCNameChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

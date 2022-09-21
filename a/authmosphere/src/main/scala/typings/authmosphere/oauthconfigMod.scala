@@ -164,7 +164,7 @@ object oauthconfigMod {
       
       inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
     }
   }
   
@@ -174,5 +174,5 @@ object oauthconfigMod {
   
   type RefreshGrantConfig = CredentialsConfig & GrantConfigBase & RefreshToken
   
-  type TokenCacheOAuthConfig = (ClientCredentialsGrantConfig | PasswordCredentialsGrantConfig) & TokenInfoEndpoint
+  type TokenCacheOAuthConfig = (ClientCredentialsGrantConfig & TokenInfoEndpoint) | (PasswordCredentialsGrantConfig & TokenInfoEndpoint)
 }

@@ -102,6 +102,6 @@ object StateInline {
     
     inline def setTokens(value: js.Array[ContentToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    inline def setTokensVarargs(value: ContentToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: ContentToken*): Self = StObject.set(x, "tokens", js.Array(value*))
   }
 }

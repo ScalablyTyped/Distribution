@@ -11,9 +11,8 @@ import typings.antDesignReactNative.antDesignReactNativeStrings.ios
 import typings.antDesignReactNative.antDesignReactNativeStrings.middle
 import typings.antDesignReactNative.antDesignReactNativeStrings.top
 import typings.antDesignReactNative.antDesignReactNativeStrings.up
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.ReactType
-import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
@@ -141,11 +140,19 @@ object listPropsTypeMod {
   
   trait ListPropsType extends StObject {
     
-    var children: js.UndefOr[`false` | Element | js.Array[Element]] = js.undefined
+    var children: js.UndefOr[`false` | ReactElement | js.Array[ReactElement]] = js.undefined
     
-    var renderFooter: js.UndefOr[js.Function0[ReactType[js.Any]] | String | Element] = js.undefined
+    var renderFooter: js.UndefOr[
+        (js.Function0[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+        ]) | String | ReactElement
+      ] = js.undefined
     
-    var renderHeader: js.UndefOr[js.Function0[ReactType[js.Any]] | String | Element] = js.undefined
+    var renderHeader: js.UndefOr[
+        (js.Function0[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+        ]) | String | ReactElement
+      ] = js.undefined
   }
   object ListPropsType {
     
@@ -156,21 +163,33 @@ object listPropsTypeMod {
     
     extension [Self <: ListPropsType](x: Self) {
       
-      inline def setChildren(value: `false` | Element | js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: `false` | ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
       
-      inline def setRenderFooter(value: js.Function0[ReactType[js.Any]] | String | Element): Self = StObject.set(x, "renderFooter", value.asInstanceOf[js.Any])
+      inline def setRenderFooter(
+        value: (js.Function0[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+            ]) | String | ReactElement
+      ): Self = StObject.set(x, "renderFooter", value.asInstanceOf[js.Any])
       
-      inline def setRenderFooterFunction0(value: () => ReactType[js.Any]): Self = StObject.set(x, "renderFooter", js.Any.fromFunction0(value))
+      inline def setRenderFooterFunction0(
+        value: () => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ): Self = StObject.set(x, "renderFooter", js.Any.fromFunction0(value))
       
       inline def setRenderFooterUndefined: Self = StObject.set(x, "renderFooter", js.undefined)
       
-      inline def setRenderHeader(value: js.Function0[ReactType[js.Any]] | String | Element): Self = StObject.set(x, "renderHeader", value.asInstanceOf[js.Any])
+      inline def setRenderHeader(
+        value: (js.Function0[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+            ]) | String | ReactElement
+      ): Self = StObject.set(x, "renderHeader", value.asInstanceOf[js.Any])
       
-      inline def setRenderHeaderFunction0(value: () => ReactType[js.Any]): Self = StObject.set(x, "renderHeader", js.Any.fromFunction0(value))
+      inline def setRenderHeaderFunction0(
+        value: () => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ): Self = StObject.set(x, "renderHeader", js.Any.fromFunction0(value))
       
       inline def setRenderHeaderUndefined: Self = StObject.set(x, "renderHeader", js.undefined)
     }

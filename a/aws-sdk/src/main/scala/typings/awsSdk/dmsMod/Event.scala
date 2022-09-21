@@ -9,7 +9,7 @@ trait Event extends StObject {
   /**
     * The date of the event.
     */
-  var Date: js.UndefOr[TStamp] = js.undefined
+  var Date: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The event categories available for the specified source type.
@@ -27,7 +27,7 @@ trait Event extends StObject {
   var SourceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | endpoint | replication-task
+    *  The type of DMS resource that generates events.  Valid values: replication-instance | endpoint | replication-task
     */
   var SourceType: js.UndefOr[typings.awsSdk.dmsMod.SourceType] = js.undefined
 }
@@ -40,7 +40,7 @@ object Event {
   
   extension [Self <: Event](x: Self) {
     
-    inline def setDate(value: TStamp): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
     
@@ -48,7 +48,7 @@ object Event {
     
     inline def setEventCategoriesUndefined: Self = StObject.set(x, "EventCategories", js.undefined)
     
-    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value :_*))
+    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

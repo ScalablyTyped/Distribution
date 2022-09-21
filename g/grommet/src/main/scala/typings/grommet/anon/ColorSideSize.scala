@@ -9,14 +9,14 @@ trait ColorSideSize extends StObject {
   
   var color: js.UndefOr[ColorType] = js.undefined
   
-  var side: js.UndefOr[String] = js.undefined
+  var side: String
   
-  var size: js.UndefOr[String] = js.undefined
+  var size: String
 }
 object ColorSideSize {
   
-  inline def apply(): ColorSideSize = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(side: String, size: String): ColorSideSize = {
+    val __obj = js.Dynamic.literal(side = side.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorSideSize]
   }
   
@@ -28,10 +28,6 @@ object ColorSideSize {
     
     inline def setSide(value: String): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     
-    inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
-    
     inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-    
-    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

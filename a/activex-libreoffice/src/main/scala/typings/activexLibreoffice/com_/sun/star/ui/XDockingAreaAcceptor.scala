@@ -59,7 +59,7 @@ object XDockingAreaAcceptor {
     ContainerWindow: XWindow,
     acquire: () => Unit,
     getContainerWindow: () => XWindow,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     requestDockingAreaSpace: Rectangle => Boolean,
     setDockingAreaSpace: Rectangle => Unit

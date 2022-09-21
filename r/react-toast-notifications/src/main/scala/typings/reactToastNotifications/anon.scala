@@ -8,6 +8,7 @@ import typings.reactToastNotifications.mod.RemoveAllToasts
 import typings.reactToastNotifications.mod.RemoveToast
 import typings.reactToastNotifications.mod.ToastContainerProps
 import typings.reactToastNotifications.mod.ToastProps
+import typings.reactToastNotifications.mod.UpdateOptions
 import typings.reactToastNotifications.mod.UpdateToast
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,9 +33,9 @@ object anon {
     inline def apply(
       addToast: (/* content */ ReactNode, /* options */ js.UndefOr[Options], /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit,
       removeAllToasts: () => Unit,
-      removeToast: (/* id */ String, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit,
+      removeToast: (/* id */ String, /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit,
       toastStack: js.Array[Appearance],
-      updateToast: (/* id */ String, /* options */ js.UndefOr[Options], /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit
+      updateToast: (/* id */ String, /* options */ js.UndefOr[UpdateOptions], /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit
     ): AddToast = {
       val __obj = js.Dynamic.literal(addToast = js.Any.fromFunction3(addToast), removeAllToasts = js.Any.fromFunction0(removeAllToasts), removeToast = js.Any.fromFunction2(removeToast), toastStack = toastStack.asInstanceOf[js.Any], updateToast = js.Any.fromFunction3(updateToast))
       __obj.asInstanceOf[AddToast]
@@ -48,14 +49,14 @@ object anon {
       
       inline def setRemoveAllToasts(value: () => Unit): Self = StObject.set(x, "removeAllToasts", js.Any.fromFunction0(value))
       
-      inline def setRemoveToast(value: (/* id */ String, /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit): Self = StObject.set(x, "removeToast", js.Any.fromFunction2(value))
+      inline def setRemoveToast(value: (/* id */ String, /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit): Self = StObject.set(x, "removeToast", js.Any.fromFunction2(value))
       
       inline def setToastStack(value: js.Array[Appearance]): Self = StObject.set(x, "toastStack", value.asInstanceOf[js.Any])
       
-      inline def setToastStackVarargs(value: Appearance*): Self = StObject.set(x, "toastStack", js.Array(value :_*))
+      inline def setToastStackVarargs(value: Appearance*): Self = StObject.set(x, "toastStack", js.Array(value*))
       
       inline def setUpdateToast(
-        value: (/* id */ String, /* options */ js.UndefOr[Options], /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit
+        value: (/* id */ String, /* options */ js.UndefOr[UpdateOptions], /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit
       ): Self = StObject.set(x, "updateToast", js.Any.fromFunction3(value))
     }
   }

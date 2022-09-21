@@ -10,28 +10,28 @@ object guideLineLayerMod {
   
   @JSImport("plottable/build/src/components/guideLineLayer", "GuideLineLayer")
   @js.native
-  class GuideLineLayer[D] protected () extends Component {
+  open class GuideLineLayer[D] protected () extends Component {
     def this(orientation: String) = this()
     
-    /* private */ var _guideLine: js.Any = js.native
+    /* private */ var _guideLine: Any = js.native
     
     /* protected */ def _isVertical(): Boolean = js.native
     
-    /* private */ var _mode: js.Any = js.native
+    /* private */ var _mode: Any = js.native
     
-    /* private */ var _orientation: js.Any = js.native
+    /* private */ var _orientation: Any = js.native
     
-    /* private */ var _pixelPosition: js.Any = js.native
+    /* private */ var _pixelPosition: Any = js.native
     
-    /* private */ var _scale: js.Any = js.native
+    /* private */ var _scale: Any = js.native
     
-    /* private */ var _scaleUpdateCallback: js.Any = js.native
+    /* private */ var _scaleUpdateCallback: Any = js.native
     
     /* protected */ def _setPixelPositionWithoutChangingMode(pixelPosition: Double): Unit = js.native
     
-    /* private */ def _syncPixelPositionAndValue(): js.Any = js.native
+    /* private */ var _syncPixelPositionAndValue: Any = js.native
     
-    /* private */ var _value: js.Any = js.native
+    /* private */ var _value: Any = js.native
     
     /**
       * Gets the position of the guide line in pixel-space.

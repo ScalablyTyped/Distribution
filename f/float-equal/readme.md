@@ -1,7 +1,7 @@
 
 # Scala.js typings for float-equal
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Check if two floats are almost equal
@@ -11,9 +11,9 @@ Check if two floats are almost equal
 | Full name          | float-equal |
 | Keywords           | float, number, epsilon, equal, same, almost, compare, comparison, round, near, tolerance, upperbound |
 | # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 23899 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3392.0 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/float-equal#readme)

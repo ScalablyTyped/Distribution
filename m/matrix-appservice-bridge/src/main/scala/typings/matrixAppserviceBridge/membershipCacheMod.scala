@@ -8,7 +8,7 @@ object membershipCacheMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/membership-cache", "MembershipCache")
   @js.native
-  class MembershipCache () extends StObject {
+  open class MembershipCache () extends StObject {
     
     /**
       * Gets the *cached* state of a user's membership for a room.
@@ -45,9 +45,9 @@ object membershipCacheMod {
       */
     def isUserRegistered(userId: String): Boolean = js.native
     
-    /* private */ var membershipMap: js.Any = js.native
+    /* private */ var membershipMap: Any = js.native
     
-    /* private */ var registeredUsers: js.Any = js.native
+    /* private */ var registeredUsers: Any = js.native
     
     /**
       * Set the *cached* state of a user's membership for a room.

@@ -3,6 +3,7 @@ package typings.antDesignReactNative
 import typings.antDesignReactNative.anon.DrawerWidth
 import typings.antDesignReactNative.drawerPropsTypeMod.DrawerProps
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ object drawerMod {
   
   @JSImport("@ant-design/react-native/lib/drawer", JSImport.Default)
   @js.native
-  class default () extends Drawer
+  open class default () extends Drawer
   /* static members */
   object default {
     
@@ -26,8 +27,7 @@ object drawerMod {
   }
   
   @js.native
-  trait Drawer
-    extends Component[DrawerNativeProps, js.Any, js.Any] {
+  trait Drawer extends Component[DrawerNativeProps, Any, Any] {
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MDrawer(nextProps: DrawerNativeProps): Unit = js.native
@@ -35,19 +35,25 @@ object drawerMod {
     @JSName("componentDidMount")
     def componentDidMount_MDrawer(): Unit = js.native
     
-    var drawer: typings.bang88ReactNativeDrawerLayout.mod.default | Null = js.native
+    var drawer: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DrawerLayout */ Any) | Null = js.native
     
     def onOpenChange(isOpen: Boolean): Unit = js.native
   }
   
-  trait DrawerNativeProps
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DrawerLayoutProps * / any ]:? / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DrawerLayoutProps * / any[P]} */ trait DrawerNativeProps
     extends StObject
        with DrawerProps {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var drawerBackgroundColor: js.UndefOr[String] = js.undefined
     
     var drawerRef: js.UndefOr[
-        js.Function1[/* el */ typings.bang88ReactNativeDrawerLayout.mod.default | Null, Unit]
+        js.Function1[
+          /* el */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DrawerLayout */ Any) | Null, 
+          Unit
+        ]
       ] = js.undefined
     
     var drawerWidth: js.UndefOr[Double] = js.undefined
@@ -61,11 +67,17 @@ object drawerMod {
     
     extension [Self <: DrawerNativeProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setDrawerBackgroundColor(value: String): Self = StObject.set(x, "drawerBackgroundColor", value.asInstanceOf[js.Any])
       
       inline def setDrawerBackgroundColorUndefined: Self = StObject.set(x, "drawerBackgroundColor", js.undefined)
       
-      inline def setDrawerRef(value: /* el */ typings.bang88ReactNativeDrawerLayout.mod.default | Null => Unit): Self = StObject.set(x, "drawerRef", js.Any.fromFunction1(value))
+      inline def setDrawerRef(
+        value: /* el */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DrawerLayout */ Any) | Null => Unit
+      ): Self = StObject.set(x, "drawerRef", js.Any.fromFunction1(value))
       
       inline def setDrawerRefUndefined: Self = StObject.set(x, "drawerRef", js.undefined)
       

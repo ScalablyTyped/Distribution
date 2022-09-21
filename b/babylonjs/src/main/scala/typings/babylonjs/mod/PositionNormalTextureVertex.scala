@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param normal the normal of the vertex (defaut: 0,1,0)
   * @param uv the uv of the vertex (default: 0,0)
   */
-class PositionNormalTextureVertex ()
+open class PositionNormalTextureVertex ()
   extends typings.babylonjs.legacyMod.PositionNormalTextureVertex {
   def this(/** the position of the vertex (defaut: 0,0,0) */
   position: typings.babylonjs.mathVectorMod.Vector3) = this()

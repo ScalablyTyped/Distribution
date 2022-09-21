@@ -55,13 +55,13 @@ object SelectQuery {
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    inline def setGroupVarargs(value: Grouping*): Self = StObject.set(x, "group", js.Array(value :_*))
+    inline def setGroupVarargs(value: Grouping*): Self = StObject.set(x, "group", js.Array(value*))
     
     inline def setHaving(value: js.Array[Expression]): Self = StObject.set(x, "having", value.asInstanceOf[js.Any])
     
     inline def setHavingUndefined: Self = StObject.set(x, "having", js.undefined)
     
-    inline def setHavingVarargs(value: Expression*): Self = StObject.set(x, "having", js.Array(value :_*))
+    inline def setHavingVarargs(value: Expression*): Self = StObject.set(x, "having", js.Array(value*))
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
@@ -75,7 +75,7 @@ object SelectQuery {
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    inline def setOrderVarargs(value: Ordering*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: Ordering*): Self = StObject.set(x, "order", js.Array(value*))
     
     inline def setQueryType(value: SELECT): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     
@@ -85,6 +85,6 @@ object SelectQuery {
     
     inline def setVariables(value: js.Array[Variable | Wildcard]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    inline def setVariablesVarargs(value: (Variable | Wildcard)*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: (Variable | Wildcard)*): Self = StObject.set(x, "variables", js.Array(value*))
   }
 }

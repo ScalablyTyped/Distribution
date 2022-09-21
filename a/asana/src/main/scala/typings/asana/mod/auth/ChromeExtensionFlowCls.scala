@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("asana", "auth.ChromeExtensionFlow")
 @js.native
-class ChromeExtensionFlowCls protected ()
+open class ChromeExtensionFlowCls protected ()
   extends StObject
      with ChromeExtensionFlow {
   /**
@@ -20,7 +20,7 @@ class ChromeExtensionFlowCls protected ()
     *     `Asana.auth.ChromeExtensionFlow.runReceiver();`.
     * @constructor
     */
-  def this(options: js.Any) = this()
+  def this(options: Any) = this()
   
   /**
     * @return {String} The URL to redirect to that will receive the
@@ -82,5 +82,5 @@ class ChromeExtensionFlowCls protected ()
     * @return
     */
   /* CompleteClass */
-  override def startAuthorization(authUrl: String, state: String): js.Any = js.native
+  override def startAuthorization(authUrl: String, state: String): Any = js.native
 }

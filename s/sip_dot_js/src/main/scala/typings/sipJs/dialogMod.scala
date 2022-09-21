@@ -15,7 +15,7 @@ object dialogMod {
   
   @JSImport("sip.js/lib/core/dialogs/dialog", "Dialog")
   @js.native
-  class Dialog protected () extends StObject {
+  open class Dialog protected () extends StObject {
     /**
       * Dialog constructor.
       * @param core - User agent core.

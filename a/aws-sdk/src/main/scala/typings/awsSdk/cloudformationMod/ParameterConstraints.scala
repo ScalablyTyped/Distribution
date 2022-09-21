@@ -24,6 +24,6 @@ object ParameterConstraints {
     
     inline def setAllowedValuesUndefined: Self = StObject.set(x, "AllowedValues", js.undefined)
     
-    inline def setAllowedValuesVarargs(value: AllowedValue*): Self = StObject.set(x, "AllowedValues", js.Array(value :_*))
+    inline def setAllowedValuesVarargs(value: AllowedValue*): Self = StObject.set(x, "AllowedValues", js.Array(value*))
   }
 }

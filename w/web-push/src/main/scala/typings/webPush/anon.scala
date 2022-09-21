@@ -1,6 +1,6 @@
 package typings.webPush
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.webPush.mod.Headers
 import typings.webPush.webPushStrings.POST
 import org.scalablytyped.runtime.StObject
@@ -118,7 +118,7 @@ object anon {
     }
   }
   
-  /* Inlined web-push.web-push.RequestDetails & {  body :node.Buffer} */
+  /* Inlined web-push.web-push.RequestDetails & {  body :node.buffer.<global>.Buffer} */
   trait RequestDetailsbodyBuffer extends StObject {
     
     var body: (Buffer | Null) & Buffer

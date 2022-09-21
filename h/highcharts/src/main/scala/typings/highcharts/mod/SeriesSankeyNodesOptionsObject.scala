@@ -31,7 +31,9 @@ trait SeriesSankeyNodesOptionsObject extends StObject {
     * node. The options are the same as the ones for series.sankey.dataLabels.
     */
   var dataLabels: js.UndefOr[
-    SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject | (js.Array[SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject])
+    SeriesArcDiagramDataLabelsOptionsObject | SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject | (js.Array[
+      SeriesArcDiagramDataLabelsOptionsObject | SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject
+    ])
   ] = js.undefined
   
   /**
@@ -56,6 +58,9 @@ trait SeriesSankeyNodesOptionsObject extends StObject {
     * (Highcharts) Layout for the node's children. If `hanging`, this node's
     * children will hang below their parent, allowing a tighter packing of
     * nodes in the diagram.
+    *
+    * Note: Since @next version, the `hanging` layout is set by default for
+    * children of a parent using `hanging` layout.
     */
   var layout: js.UndefOr[SeriesOrganizationNodesLayoutValue] = js.undefined
   
@@ -75,15 +80,22 @@ trait SeriesSankeyNodesOptionsObject extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts) In a horizontal layout, the vertical offset of a node in
-    * terms of weight. Positive values shift the node downwards, negative shift
-    * it upwards. In a vertical layout, like organization chart, the offset is
-    * horizontal.
+    * (Highcharts) The horizontal offset of a node. Positive values shift the
+    * node right, negative shift it left.
     *
     * If a percantage string is given, the node is offset by the percentage of
-    * the node size plus `nodePadding`.
+    * the node size.
     */
-  var offset: js.UndefOr[Double | String] = js.undefined
+  var offsetHorizontal: js.UndefOr[Double | String] = js.undefined
+  
+  /**
+    * (Highcharts) The vertical offset of a node. Positive values shift the
+    * node down, negative shift it up.
+    *
+    * If a percantage string is given, the node is offset by the percentage of
+    * the node size.
+    */
+  var offsetVertical: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts) The job title for the node card, will be inserted by the
@@ -113,12 +125,16 @@ object SeriesSankeyNodesOptionsObject {
     inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
     inline def setDataLabels(
-      value: SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject | (js.Array[SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject])
+      value: SeriesArcDiagramDataLabelsOptionsObject | SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject | (js.Array[
+          SeriesArcDiagramDataLabelsOptionsObject | SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject
+        ])
     ): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDataLabelsVarargs(value: (SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject)*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(
+      value: (SeriesArcDiagramDataLabelsOptionsObject | SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject)*
+    ): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -144,9 +160,13 @@ object SeriesSankeyNodesOptionsObject {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOffset(value: Double | String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffsetHorizontal(value: Double | String): Self = StObject.set(x, "offsetHorizontal", value.asInstanceOf[js.Any])
     
-    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetHorizontalUndefined: Self = StObject.set(x, "offsetHorizontal", js.undefined)
+    
+    inline def setOffsetVertical(value: Double | String): Self = StObject.set(x, "offsetVertical", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetVerticalUndefined: Self = StObject.set(x, "offsetVertical", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

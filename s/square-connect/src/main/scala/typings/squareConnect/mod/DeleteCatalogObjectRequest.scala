@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "DeleteCatalogObjectRequest")
 @js.native
-class DeleteCatalogObjectRequest () extends StObject
+open class DeleteCatalogObjectRequest () extends StObject

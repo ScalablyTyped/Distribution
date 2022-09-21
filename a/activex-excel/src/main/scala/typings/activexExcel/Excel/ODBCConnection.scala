@@ -30,7 +30,7 @@ trait ODBCConnection extends StObject {
   /* private */ @JSName("Excel.ODBCConnection_typekey")
   var ExcelDotODBCConnection_typekey: ODBCConnection = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Refresh(): Unit = js.native
   

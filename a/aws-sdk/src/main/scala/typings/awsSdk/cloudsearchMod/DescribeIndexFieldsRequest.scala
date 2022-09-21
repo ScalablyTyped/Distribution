@@ -40,6 +40,6 @@ object DescribeIndexFieldsRequest {
     
     inline def setFieldNamesUndefined: Self = StObject.set(x, "FieldNames", js.undefined)
     
-    inline def setFieldNamesVarargs(value: DynamicFieldName*): Self = StObject.set(x, "FieldNames", js.Array(value :_*))
+    inline def setFieldNamesVarargs(value: DynamicFieldName*): Self = StObject.set(x, "FieldNames", js.Array(value*))
   }
 }

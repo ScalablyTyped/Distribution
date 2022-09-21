@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceTypeSpecification extends StObject {
   
   /**
-    * The bid price for each EC2 Spot instance type as defined by InstanceType. Expressed in USD.
+    * The bid price for each EC2 Spot Instance type as defined by InstanceType. Expressed in USD.
     */
   var BidPrice: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * The bid price, as a percentage of On-Demand price, for each EC2 Spot instance as defined by InstanceType. Expressed as a number (for example, 20 specifies 20%).
+    * The bid price, as a percentage of On-Demand price, for each EC2 Spot Instance as defined by InstanceType. Expressed as a number (for example, 20 specifies 20%).
     */
   var BidPriceAsPercentageOfOnDemandPrice: js.UndefOr[NonNegativeDouble] = js.undefined
   
@@ -22,7 +22,12 @@ trait InstanceTypeSpecification extends StObject {
   var Configurations: js.UndefOr[ConfigurationList] = js.undefined
   
   /**
-    * The configuration of Amazon Elastic Block Storage (EBS) attached to each instance as defined by InstanceType.
+    * The custom AMI ID to use for the instance type.
+    */
+  var CustomAmiId: js.UndefOr[XmlStringMaxLen256] = js.undefined
+  
+  /**
+    * The configuration of Amazon Elastic Block Store (Amazon EBS) attached to each instance as defined by InstanceType.
     */
   var EbsBlockDevices: js.UndefOr[EbsBlockDeviceList] = js.undefined
   
@@ -62,13 +67,17 @@ object InstanceTypeSpecification {
     
     inline def setConfigurationsUndefined: Self = StObject.set(x, "Configurations", js.undefined)
     
-    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: Configuration*): Self = StObject.set(x, "Configurations", js.Array(value*))
+    
+    inline def setCustomAmiId(value: XmlStringMaxLen256): Self = StObject.set(x, "CustomAmiId", value.asInstanceOf[js.Any])
+    
+    inline def setCustomAmiIdUndefined: Self = StObject.set(x, "CustomAmiId", js.undefined)
     
     inline def setEbsBlockDevices(value: EbsBlockDeviceList): Self = StObject.set(x, "EbsBlockDevices", value.asInstanceOf[js.Any])
     
     inline def setEbsBlockDevicesUndefined: Self = StObject.set(x, "EbsBlockDevices", js.undefined)
     
-    inline def setEbsBlockDevicesVarargs(value: EbsBlockDevice*): Self = StObject.set(x, "EbsBlockDevices", js.Array(value :_*))
+    inline def setEbsBlockDevicesVarargs(value: EbsBlockDevice*): Self = StObject.set(x, "EbsBlockDevices", js.Array(value*))
     
     inline def setEbsOptimized(value: BooleanObject): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
     

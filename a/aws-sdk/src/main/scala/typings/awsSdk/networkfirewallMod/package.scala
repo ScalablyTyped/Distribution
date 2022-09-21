@@ -1,15 +1,17 @@
 package typings.awsSdk.networkfirewallMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.DROP_TO_ALERT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ActionName = java.lang.String
+type ActionName = String
 
-type AddressDefinition = java.lang.String
+type AddressDefinition = String
 
-type Addresses = js.Array[typings.awsSdk.networkfirewallMod.Address]
+type Addresses = js.Array[Address]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -18,38 +20,48 @@ type Addresses = js.Array[typings.awsSdk.networkfirewallMod.Address]
   - typings.awsSdk.awsSdkStrings.READY
   - java.lang.String
 */
-type AttachmentStatus = typings.awsSdk.networkfirewallMod._AttachmentStatus | java.lang.String
+type AttachmentStatus = _AttachmentStatus | String
 
-type AvailabilityZone = java.lang.String
+type AvailabilityZone = String
 
-type AzSubnet = java.lang.String
+type AzSubnet = String
 
-type AzSubnets = js.Array[typings.awsSdk.networkfirewallMod.AzSubnet]
+type AzSubnets = js.Array[AzSubnet]
 
 type Boolean = scala.Boolean
 
-type CollectionMemberString = java.lang.String
+type CIDRCount = Double
+
+type CollectionMemberString = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
   - typings.awsSdk.awsSdkStrings.IN_SYNC
+  - typings.awsSdk.awsSdkStrings.CAPACITY_CONSTRAINED
   - java.lang.String
 */
-type ConfigurationSyncState = typings.awsSdk.networkfirewallMod._ConfigurationSyncState | java.lang.String
+type ConfigurationSyncState = _ConfigurationSyncState | String
 
-type CustomActions = js.Array[typings.awsSdk.networkfirewallMod.CustomAction]
+type CustomActions = js.Array[CustomAction]
 
-type Description = java.lang.String
+type Description = String
 
-type Destination = java.lang.String
+type Destination = String
 
-type DimensionValue = java.lang.String
+type DimensionValue = String
 
-type Dimensions = js.Array[typings.awsSdk.networkfirewallMod.Dimension]
+type Dimensions = js.Array[Dimension]
 
-type EndpointId = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CUSTOMER_KMS
+  - typings.awsSdk.awsSdkStrings.AWS_OWNED_KMS_KEY
+  - java.lang.String
+*/
+type EncryptionType = _EncryptionType | String
 
-type FirewallPolicies = js.Array[typings.awsSdk.networkfirewallMod.FirewallPolicyMetadata]
+type EndpointId = String
+
+type FirewallPolicies = js.Array[FirewallPolicyMetadata]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROVISIONING
@@ -57,30 +69,42 @@ type FirewallPolicies = js.Array[typings.awsSdk.networkfirewallMod.FirewallPolic
   - typings.awsSdk.awsSdkStrings.READY
   - java.lang.String
 */
-type FirewallStatusValue = typings.awsSdk.networkfirewallMod._FirewallStatusValue | java.lang.String
+type FirewallStatusValue = _FirewallStatusValue | String
 
-type Firewalls = js.Array[typings.awsSdk.networkfirewallMod.FirewallMetadata]
+type Firewalls = js.Array[FirewallMetadata]
 
-type Flags = js.Array[typings.awsSdk.networkfirewallMod.TCPFlag]
+type Flags = js.Array[TCPFlag]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALLOWLIST
   - typings.awsSdk.awsSdkStrings.DENYLIST
   - java.lang.String
 */
-type GeneratedRulesType = typings.awsSdk.networkfirewallMod._GeneratedRulesType | java.lang.String
+type GeneratedRulesType = _GeneratedRulesType | String
 
-type HashMapKey = java.lang.String
+type HashMapKey = String
 
-type HashMapValue = java.lang.String
+type HashMapValue = String
 
-type IPSets = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.networkfirewallMod.IPSet]
+type IPSetArn = String
 
-type Keyword = java.lang.String
+type IPSetMetadataMap = StringDictionary[IPSetMetadata]
 
-type LogDestinationConfigs = js.Array[typings.awsSdk.networkfirewallMod.LogDestinationConfig]
+type IPSetReferenceMap = StringDictionary[IPSetReference]
 
-type LogDestinationMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.networkfirewallMod.HashMapValue]
+type IPSetReferenceName = String
+
+type IPSets = StringDictionary[IPSet]
+
+type KeyId = String
+
+type Keyword = String
+
+type LastUpdateTime = js.Date
+
+type LogDestinationConfigs = js.Array[LogDestinationConfig]
+
+type LogDestinationMap = StringDictionary[HashMapValue]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.S3
@@ -88,79 +112,105 @@ type LogDestinationMap = org.scalablytyped.runtime.StringDictionary[typings.awsS
   - typings.awsSdk.awsSdkStrings.KinesisDataFirehose
   - java.lang.String
 */
-type LogDestinationType = typings.awsSdk.networkfirewallMod._LogDestinationType | java.lang.String
+type LogDestinationType = _LogDestinationType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALERT
   - typings.awsSdk.awsSdkStrings.FLOW
   - java.lang.String
 */
-type LogType = typings.awsSdk.networkfirewallMod._LogType | java.lang.String
+type LogType = _LogType | String
 
-type PaginationMaxResults = scala.Double
+type NumberOfAssociations = Double
 
-type PaginationToken = java.lang.String
+type OverrideAction = DROP_TO_ALERT | String
+
+type PaginationMaxResults = Double
+
+type PaginationToken = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
   - typings.awsSdk.awsSdkStrings.IN_SYNC
+  - typings.awsSdk.awsSdkStrings.CAPACITY_CONSTRAINED
   - java.lang.String
 */
-type PerObjectSyncStatus = typings.awsSdk.networkfirewallMod._PerObjectSyncStatus | java.lang.String
+type PerObjectSyncStatus = _PerObjectSyncStatus | String
 
-type PolicyString = java.lang.String
+type PolicyString = String
 
-type Port = java.lang.String
+type Port = String
 
-type PortRangeBound = scala.Double
+type PortRangeBound = Double
 
-type PortRanges = js.Array[typings.awsSdk.networkfirewallMod.PortRange]
+type PortRanges = js.Array[PortRange]
 
-type PortSets = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.networkfirewallMod.PortSet]
+type PortSets = StringDictionary[PortSet]
 
-type Priority = scala.Double
+type Priority = Double
 
-type ProtocolNumber = scala.Double
+type ProtocolNumber = Double
 
-type ProtocolNumbers = js.Array[typings.awsSdk.networkfirewallMod.ProtocolNumber]
+type ProtocolNumbers = js.Array[ProtocolNumber]
 
-type ResourceArn = java.lang.String
+type ResourceArn = String
 
-type ResourceId = java.lang.String
+type ResourceId = String
 
-type ResourceName = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.MANAGED
+  - typings.awsSdk.awsSdkStrings.ACCOUNT
+  - java.lang.String
+*/
+type ResourceManagedStatus = _ResourceManagedStatus | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AWS_MANAGED_THREAT_SIGNATURES
+  - typings.awsSdk.awsSdkStrings.AWS_MANAGED_DOMAIN_LISTS
+  - java.lang.String
+*/
+type ResourceManagedType = _ResourceManagedType | String
+
+type ResourceName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - typings.awsSdk.awsSdkStrings.DELETING
   - java.lang.String
 */
-type ResourceStatus = typings.awsSdk.networkfirewallMod._ResourceStatus | java.lang.String
+type ResourceStatus = _ResourceStatus | String
 
-type RuleCapacity = scala.Double
+type RuleCapacity = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STATELESS
   - typings.awsSdk.awsSdkStrings.STATEFUL
   - java.lang.String
 */
-type RuleGroupType = typings.awsSdk.networkfirewallMod._RuleGroupType | java.lang.String
+type RuleGroupType = _RuleGroupType | String
 
-type RuleGroups = js.Array[typings.awsSdk.networkfirewallMod.RuleGroupMetadata]
+type RuleGroups = js.Array[RuleGroupMetadata]
 
-type RuleOptions = js.Array[typings.awsSdk.networkfirewallMod.RuleOption]
+type RuleOptions = js.Array[RuleOption]
 
-type RuleTargets = js.Array[typings.awsSdk.networkfirewallMod.CollectionMemberString]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DEFAULT_ACTION_ORDER
+  - typings.awsSdk.awsSdkStrings.STRICT_ORDER
+  - java.lang.String
+*/
+type RuleOrder = _RuleOrder | String
 
-type RuleVariableName = java.lang.String
+type RuleTargets = js.Array[CollectionMemberString]
 
-type RulesString = java.lang.String
+type RuleVariableName = String
 
-type Setting = java.lang.String
+type RulesString = String
 
-type Settings = js.Array[typings.awsSdk.networkfirewallMod.Setting]
+type Setting = String
 
-type Source = java.lang.String
+type Settings = js.Array[Setting]
+
+type Source = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PASS
@@ -168,16 +218,18 @@ type Source = java.lang.String
   - typings.awsSdk.awsSdkStrings.ALERT
   - java.lang.String
 */
-type StatefulAction = typings.awsSdk.networkfirewallMod._StatefulAction | java.lang.String
+type StatefulAction = _StatefulAction | String
+
+type StatefulActions = js.Array[CollectionMemberString]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FORWARD
   - typings.awsSdk.awsSdkStrings.ANY
   - java.lang.String
 */
-type StatefulRuleDirection = typings.awsSdk.networkfirewallMod._StatefulRuleDirection | java.lang.String
+type StatefulRuleDirection = _StatefulRuleDirection | String
 
-type StatefulRuleGroupReferences = js.Array[typings.awsSdk.networkfirewallMod.StatefulRuleGroupReference]
+type StatefulRuleGroupReferences = js.Array[StatefulRuleGroupReference]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IP
@@ -201,21 +253,21 @@ type StatefulRuleGroupReferences = js.Array[typings.awsSdk.networkfirewallMod.St
   - typings.awsSdk.awsSdkStrings.DHCP
   - java.lang.String
 */
-type StatefulRuleProtocol = typings.awsSdk.networkfirewallMod._StatefulRuleProtocol | java.lang.String
+type StatefulRuleProtocol = _StatefulRuleProtocol | String
 
-type StatefulRules = js.Array[typings.awsSdk.networkfirewallMod.StatefulRule]
+type StatefulRules = js.Array[StatefulRule]
 
-type StatelessActions = js.Array[typings.awsSdk.networkfirewallMod.CollectionMemberString]
+type StatelessActions = js.Array[CollectionMemberString]
 
-type StatelessRuleGroupReferences = js.Array[typings.awsSdk.networkfirewallMod.StatelessRuleGroupReference]
+type StatelessRuleGroupReferences = js.Array[StatelessRuleGroupReference]
 
-type StatelessRules = js.Array[typings.awsSdk.networkfirewallMod.StatelessRule]
+type StatelessRules = js.Array[StatelessRule]
 
-type SubnetMappings = js.Array[typings.awsSdk.networkfirewallMod.SubnetMapping]
+type SubnetMappings = js.Array[SubnetMapping]
 
-type SyncStateConfig = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.networkfirewallMod.PerObjectStatus]
+type SyncStateConfig = StringDictionary[PerObjectStatus]
 
-type SyncStates = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.networkfirewallMod.SyncState]
+type SyncStates = StringDictionary[SyncState]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FIN
@@ -228,42 +280,42 @@ type SyncStates = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.netw
   - typings.awsSdk.awsSdkStrings.CWR
   - java.lang.String
 */
-type TCPFlag = typings.awsSdk.networkfirewallMod._TCPFlag | java.lang.String
+type TCPFlag = _TCPFlag | String
 
-type TCPFlags = js.Array[typings.awsSdk.networkfirewallMod.TCPFlagField]
+type TCPFlags = js.Array[TCPFlagField]
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.networkfirewallMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.networkfirewallMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type TagsPaginationMaxResults = scala.Double
+type TagsPaginationMaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TLS_SNI
   - typings.awsSdk.awsSdkStrings.HTTP_HOST
   - java.lang.String
 */
-type TargetType = typings.awsSdk.networkfirewallMod._TargetType | java.lang.String
+type TargetType = _TargetType | String
 
-type TargetTypes = js.Array[typings.awsSdk.networkfirewallMod.TargetType]
+type TargetTypes = js.Array[TargetType]
 
-type UpdateToken = java.lang.String
+type UpdateToken = String
 
-type VariableDefinition = java.lang.String
+type VariableDefinition = String
 
-type VariableDefinitionList = js.Array[typings.awsSdk.networkfirewallMod.VariableDefinition]
+type VariableDefinitionList = js.Array[VariableDefinition]
 
-type VpcId = java.lang.String
+type VpcId = String
 
-type VpcIds = js.Array[typings.awsSdk.networkfirewallMod.VpcId]
+type VpcIds = js.Array[VpcId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2020-11-12`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.networkfirewallMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

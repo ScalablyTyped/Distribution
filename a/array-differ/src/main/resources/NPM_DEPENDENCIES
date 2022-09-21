@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "array-differ" : "3.0.0"
+      "array-differ" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "array-differ" : "3.0.0"
+      "array-differ" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

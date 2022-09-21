@@ -10,10 +10,10 @@ The lodash method `_.invoke` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.invoke |
 | Keywords           | lodash-modularized, invoke |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 339272 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 90451.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

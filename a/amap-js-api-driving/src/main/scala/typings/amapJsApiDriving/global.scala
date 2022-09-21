@@ -15,7 +15,7 @@ object global {
       * 驾车路线规划服务
       * @param options 自定义选项
       */
-    class Driving ()
+    open class Driving ()
       extends StObject
          with typings.amapJsApiDriving.AMap.Driving {
       def this(options: Options) = this()

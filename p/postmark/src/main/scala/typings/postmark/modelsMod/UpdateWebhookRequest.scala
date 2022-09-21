@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark/dist/client/models", "UpdateWebhookRequest")
 @js.native
-class UpdateWebhookRequest ()
+open class UpdateWebhookRequest ()
   extends typings.postmark.webhookMod.UpdateWebhookRequest {
   def this(url: String) = this()
   def this(url: String, triggers: WebhookRequestTriggers) = this()

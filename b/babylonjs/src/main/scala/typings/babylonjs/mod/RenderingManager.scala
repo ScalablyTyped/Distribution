@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "RenderingManager")
 @js.native
-class RenderingManager protected ()
+open class RenderingManager protected ()
   extends typings.babylonjs.legacyMod.RenderingManager {
   /**
     * Instantiates a new rendering group for a particular scene

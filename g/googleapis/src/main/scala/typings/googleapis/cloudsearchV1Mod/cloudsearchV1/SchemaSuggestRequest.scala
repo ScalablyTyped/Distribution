@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request of suggest API.
-  */
 trait SchemaSuggestRequest extends StObject {
   
   /**
-    * The sources to use for suggestions. If not specified, all data sources
-    * from the current search application are used.
+    * The sources to use for suggestions. If not specified, the data sources are taken from the current search application. NOTE: Suggestions are only supported for the following sources: * Third-party data sources * PredefinedSource.PERSON * PredefinedSource.GOOGLE_DRIVE
     */
   var dataSourceRestrictions: js.UndefOr[js.Array[SchemaDataSourceRestriction]] = js.undefined
   
   /**
-    * Partial query for the completion suggestion.
+    * Partial query for which autocomplete suggestions will be shown. For example, if the query is "sea", then the server might return "season", "search", "seagull" and so on.
     */
-  var query: js.UndefOr[String] = js.undefined
+  var query: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Request options, such as the search application and user timezone.
@@ -38,9 +34,11 @@ object SchemaSuggestRequest {
     
     inline def setDataSourceRestrictionsUndefined: Self = StObject.set(x, "dataSourceRestrictions", js.undefined)
     
-    inline def setDataSourceRestrictionsVarargs(value: SchemaDataSourceRestriction*): Self = StObject.set(x, "dataSourceRestrictions", js.Array(value :_*))
+    inline def setDataSourceRestrictionsVarargs(value: SchemaDataSourceRestriction*): Self = StObject.set(x, "dataSourceRestrictions", js.Array(value*))
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryNull: Self = StObject.set(x, "query", null)
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     

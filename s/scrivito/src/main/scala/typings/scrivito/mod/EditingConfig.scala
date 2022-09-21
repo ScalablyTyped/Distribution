@@ -15,7 +15,9 @@ trait EditingConfig extends StObject {
   
   var hideInSelectionDialogs: js.UndefOr[Boolean] = js.undefined
   
-  var initialContent: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var initialContent: js.UndefOr[Record[String, Any]] = js.undefined
+  
+  var initialize: js.UndefOr[js.Function1[/* instance */ Obj, Unit]] = js.undefined
   
   var initializeCopy: js.UndefOr[js.Function1[/* originalInstance */ Obj, Unit]] = js.undefined
   
@@ -56,13 +58,17 @@ object EditingConfig {
     
     inline def setHideInSelectionDialogsUndefined: Self = StObject.set(x, "hideInSelectionDialogs", js.undefined)
     
-    inline def setInitialContent(value: Record[String, js.Any]): Self = StObject.set(x, "initialContent", value.asInstanceOf[js.Any])
+    inline def setInitialContent(value: Record[String, Any]): Self = StObject.set(x, "initialContent", value.asInstanceOf[js.Any])
     
     inline def setInitialContentUndefined: Self = StObject.set(x, "initialContent", js.undefined)
+    
+    inline def setInitialize(value: /* instance */ Obj => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
     inline def setInitializeCopy(value: /* originalInstance */ Obj => Unit): Self = StObject.set(x, "initializeCopy", js.Any.fromFunction1(value))
     
     inline def setInitializeCopyUndefined: Self = StObject.set(x, "initializeCopy", js.undefined)
+    
+    inline def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
     
     inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
@@ -70,11 +76,11 @@ object EditingConfig {
     
     inline def setPropertiesGroupsUndefined: Self = StObject.set(x, "propertiesGroups", js.undefined)
     
-    inline def setPropertiesGroupsVarargs(value: PropertiesGroup*): Self = StObject.set(x, "propertiesGroups", js.Array(value :_*))
+    inline def setPropertiesGroupsVarargs(value: PropertiesGroup*): Self = StObject.set(x, "propertiesGroups", js.Array(value*))
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
@@ -92,6 +98,6 @@ object EditingConfig {
     
     inline def setValidationsUndefined: Self = StObject.set(x, "validations", js.undefined)
     
-    inline def setValidationsVarargs(value: Validation*): Self = StObject.set(x, "validations", js.Array(value :_*))
+    inline def setValidationsVarargs(value: Validation*): Self = StObject.set(x, "validations", js.Array(value*))
   }
 }

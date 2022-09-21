@@ -1,11 +1,14 @@
 package typings.awsSdk.inspectorMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.EN_US
+import typings.awsSdk.awsSdkStrings.`ec2-instance`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AddRemoveAttributesFindingArnList = js.Array[typings.awsSdk.inspectorMod.Arn]
+type AddRemoveAttributesFindingArnList = js.Array[Arn]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HEALTHY
@@ -13,7 +16,7 @@ type AddRemoveAttributesFindingArnList = js.Array[typings.awsSdk.inspectorMod.Ar
   - typings.awsSdk.awsSdkStrings.UNKNOWN
   - java.lang.String
 */
-type AgentHealth = typings.awsSdk.inspectorMod._AgentHealth | java.lang.String
+type AgentHealth = _AgentHealth | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IDLE
@@ -24,39 +27,39 @@ type AgentHealth = typings.awsSdk.inspectorMod._AgentHealth | java.lang.String
   - typings.awsSdk.awsSdkStrings.UNKNOWN
   - java.lang.String
 */
-type AgentHealthCode = typings.awsSdk.inspectorMod._AgentHealthCode | java.lang.String
+type AgentHealthCode = _AgentHealthCode | String
 
-type AgentHealthCodeList = js.Array[typings.awsSdk.inspectorMod.AgentHealthCode]
+type AgentHealthCodeList = js.Array[AgentHealthCode]
 
-type AgentHealthList = js.Array[typings.awsSdk.inspectorMod.AgentHealth]
+type AgentHealthList = js.Array[AgentHealth]
 
-type AgentId = java.lang.String
+type AgentId = String
 
-type AgentIdList = js.Array[typings.awsSdk.inspectorMod.AgentId]
+type AgentIdList = js.Array[AgentId]
 
-type AgentPreviewList = js.Array[typings.awsSdk.inspectorMod.AgentPreview]
+type AgentPreviewList = js.Array[AgentPreview]
 
-type AgentVersion = java.lang.String
+type AgentVersion = String
 
-type AmiId = java.lang.String
+type AmiId = String
 
-type Arn = java.lang.String
+type Arn = String
 
-type ArnCount = scala.Double
+type ArnCount = Double
 
-type AssessmentRulesPackageArnList = js.Array[typings.awsSdk.inspectorMod.Arn]
+type AssessmentRulesPackageArnList = js.Array[Arn]
 
-type AssessmentRunAgentList = js.Array[typings.awsSdk.inspectorMod.AssessmentRunAgent]
+type AssessmentRunAgentList = js.Array[AssessmentRunAgent]
 
-type AssessmentRunDuration = scala.Double
+type AssessmentRunDuration = Double
 
-type AssessmentRunFindingCounts = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.inspectorMod.FindingCount]
+type AssessmentRunFindingCounts = StringDictionary[FindingCount]
 
-type AssessmentRunList = js.Array[typings.awsSdk.inspectorMod.AssessmentRun]
+type AssessmentRunList = js.Array[AssessmentRun]
 
-type AssessmentRunName = java.lang.String
+type AssessmentRunName = String
 
-type AssessmentRunNotificationList = js.Array[typings.awsSdk.inspectorMod.AssessmentRunNotification]
+type AssessmentRunNotificationList = js.Array[AssessmentRunNotification]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUCCESS
@@ -65,7 +68,7 @@ type AssessmentRunNotificationList = js.Array[typings.awsSdk.inspectorMod.Assess
   - typings.awsSdk.awsSdkStrings.INTERNAL_ERROR
   - java.lang.String
 */
-type AssessmentRunNotificationSnsStatusCode = typings.awsSdk.inspectorMod._AssessmentRunNotificationSnsStatusCode | java.lang.String
+type AssessmentRunNotificationSnsStatusCode = _AssessmentRunNotificationSnsStatusCode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATED
@@ -83,45 +86,45 @@ type AssessmentRunNotificationSnsStatusCode = typings.awsSdk.inspectorMod._Asses
   - typings.awsSdk.awsSdkStrings.CANCELED
   - java.lang.String
 */
-type AssessmentRunState = typings.awsSdk.inspectorMod._AssessmentRunState | java.lang.String
+type AssessmentRunState = _AssessmentRunState | String
 
-type AssessmentRunStateChangeList = js.Array[typings.awsSdk.inspectorMod.AssessmentRunStateChange]
+type AssessmentRunStateChangeList = js.Array[AssessmentRunStateChange]
 
-type AssessmentRunStateList = js.Array[typings.awsSdk.inspectorMod.AssessmentRunState]
+type AssessmentRunStateList = js.Array[AssessmentRunState]
 
-type AssessmentTargetList = js.Array[typings.awsSdk.inspectorMod.AssessmentTarget]
+type AssessmentTargetList = js.Array[AssessmentTarget]
 
-type AssessmentTargetName = java.lang.String
+type AssessmentTargetName = String
 
-type AssessmentTemplateList = js.Array[typings.awsSdk.inspectorMod.AssessmentTemplate]
+type AssessmentTemplateList = js.Array[AssessmentTemplate]
 
-type AssessmentTemplateName = java.lang.String
+type AssessmentTemplateName = String
 
-type AssessmentTemplateRulesPackageArnList = js.Array[typings.awsSdk.inspectorMod.Arn]
+type AssessmentTemplateRulesPackageArnList = js.Array[Arn]
 
-type AssetType = typings.awsSdk.awsSdkStrings.`ec2-instance` | java.lang.String
+type AssetType = `ec2-instance` | String
 
-type AttributeKey = java.lang.String
+type AttributeKey = String
 
-type AttributeList = js.Array[typings.awsSdk.inspectorMod.Attribute]
+type AttributeList = js.Array[Attribute]
 
-type AttributeValue = java.lang.String
+type AttributeValue = String
 
-type AutoScalingGroup = java.lang.String
+type AutoScalingGroup = String
 
-type AutoScalingGroupList = js.Array[typings.awsSdk.inspectorMod.AutoScalingGroup]
+type AutoScalingGroupList = js.Array[AutoScalingGroup]
 
-type BatchDescribeArnList = js.Array[typings.awsSdk.inspectorMod.Arn]
+type BatchDescribeArnList = js.Array[Arn]
 
-type BatchDescribeExclusionsArnList = js.Array[typings.awsSdk.inspectorMod.Arn]
+type BatchDescribeExclusionsArnList = js.Array[Arn]
 
-type Bool = scala.Boolean
+type Bool = Boolean
 
-type EventSubscriptionList = js.Array[typings.awsSdk.inspectorMod.EventSubscription]
+type EventSubscriptionList = js.Array[EventSubscription]
 
-type ExclusionMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.inspectorMod.Exclusion]
+type ExclusionMap = StringDictionary[Exclusion]
 
-type ExclusionPreviewList = js.Array[typings.awsSdk.inspectorMod.ExclusionPreview]
+type ExclusionPreviewList = js.Array[ExclusionPreview]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INVALID_ARN
@@ -132,19 +135,19 @@ type ExclusionPreviewList = js.Array[typings.awsSdk.inspectorMod.ExclusionPrevie
   - typings.awsSdk.awsSdkStrings.INTERNAL_ERROR
   - java.lang.String
 */
-type FailedItemErrorCode = typings.awsSdk.inspectorMod._FailedItemErrorCode | java.lang.String
+type FailedItemErrorCode = _FailedItemErrorCode | String
 
-type FailedItems = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.inspectorMod.FailedItemDetails]
+type FailedItems = StringDictionary[FailedItemDetails]
 
-type FilterRulesPackageArnList = js.Array[typings.awsSdk.inspectorMod.Arn]
+type FilterRulesPackageArnList = js.Array[Arn]
 
-type FindingCount = scala.Double
+type FindingCount = Double
 
-type FindingId = java.lang.String
+type FindingId = String
 
-type FindingList = js.Array[typings.awsSdk.inspectorMod.Finding]
+type FindingList = js.Array[Finding]
 
-type Hostname = java.lang.String
+type Hostname = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASSESSMENT_RUN_STARTED
@@ -154,65 +157,65 @@ type Hostname = java.lang.String
   - typings.awsSdk.awsSdkStrings.OTHER
   - java.lang.String
 */
-type InspectorEvent = typings.awsSdk.inspectorMod._InspectorEvent | java.lang.String
+type InspectorEvent = _InspectorEvent | String
 
-type IocConfidence = scala.Double
+type IocConfidence = Double
 
-type Ipv4Address = java.lang.String
+type Ipv4Address = String
 
-type Ipv4AddressList = js.Array[typings.awsSdk.inspectorMod.Ipv4Address]
+type Ipv4AddressList = js.Array[Ipv4Address]
 
-type Ipv6Addresses = js.Array[typings.awsSdk.inspectorMod.Text]
+type Ipv6Addresses = js.Array[Text]
 
-type KernelVersion = java.lang.String
+type KernelVersion = String
 
-type ListEventSubscriptionsMaxResults = scala.Double
+type ListEventSubscriptionsMaxResults = Double
 
-type ListMaxResults = scala.Double
+type ListMaxResults = Double
 
-type ListParentArnList = js.Array[typings.awsSdk.inspectorMod.Arn]
+type ListParentArnList = js.Array[Arn]
 
-type ListReturnedArnList = js.Array[typings.awsSdk.inspectorMod.Arn]
+type ListReturnedArnList = js.Array[Arn]
 
-type Locale = typings.awsSdk.awsSdkStrings.EN_US | java.lang.String
+type Locale = EN_US | String
 
-type Long = scala.Double
+type Long = Double
 
-type Message = java.lang.String
+type Message = String
 
-type MessageType = java.lang.String
+type MessageType = String
 
-type NamePattern = java.lang.String
+type NamePattern = String
 
-type NetworkInterfaces = js.Array[typings.awsSdk.inspectorMod.NetworkInterface]
+type NetworkInterfaces = js.Array[NetworkInterface]
 
-type NumericSeverity = scala.Double
+type NumericSeverity = Double
 
-type NumericVersion = scala.Double
+type NumericVersion = Double
 
-type OperatingSystem = java.lang.String
+type OperatingSystem = String
 
-type PaginationToken = java.lang.String
+type PaginationToken = String
 
-type PreviewAgentsMaxResults = scala.Double
+type PreviewAgentsMaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WORK_IN_PROGRESS
   - typings.awsSdk.awsSdkStrings.COMPLETED
   - java.lang.String
 */
-type PreviewStatus = typings.awsSdk.inspectorMod._PreviewStatus | java.lang.String
+type PreviewStatus = _PreviewStatus | String
 
-type PrivateIpAddresses = js.Array[typings.awsSdk.inspectorMod.PrivateIp]
+type PrivateIpAddresses = js.Array[PrivateIp]
 
-type ProviderName = java.lang.String
+type ProviderName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HTML
   - typings.awsSdk.awsSdkStrings.PDF
   - java.lang.String
 */
-type ReportFileFormat = typings.awsSdk.inspectorMod._ReportFileFormat | java.lang.String
+type ReportFileFormat = _ReportFileFormat | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WORK_IN_PROGRESS
@@ -220,41 +223,41 @@ type ReportFileFormat = typings.awsSdk.inspectorMod._ReportFileFormat | java.lan
   - typings.awsSdk.awsSdkStrings.COMPLETED
   - java.lang.String
 */
-type ReportStatus = typings.awsSdk.inspectorMod._ReportStatus | java.lang.String
+type ReportStatus = _ReportStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FINDING
   - typings.awsSdk.awsSdkStrings.FULL
   - java.lang.String
 */
-type ReportType = typings.awsSdk.inspectorMod._ReportType | java.lang.String
+type ReportType = _ReportType | String
 
-type ResourceGroupList = js.Array[typings.awsSdk.inspectorMod.ResourceGroup]
+type ResourceGroupList = js.Array[ResourceGroup]
 
-type ResourceGroupTags = js.Array[typings.awsSdk.inspectorMod.ResourceGroupTag]
+type ResourceGroupTags = js.Array[ResourceGroupTag]
 
-type RuleName = java.lang.String
+type RuleName = String
 
-type RuleNameList = js.Array[typings.awsSdk.inspectorMod.RuleName]
+type RuleNameList = js.Array[RuleName]
 
-type RulesPackageList = js.Array[typings.awsSdk.inspectorMod.RulesPackage]
+type RulesPackageList = js.Array[RulesPackage]
 
-type RulesPackageName = java.lang.String
+type RulesPackageName = String
 
-type ScopeList = js.Array[typings.awsSdk.inspectorMod.Scope]
+type ScopeList = js.Array[Scope]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INSTANCE_ID
   - typings.awsSdk.awsSdkStrings.RULES_PACKAGE_ARN
   - java.lang.String
 */
-type ScopeType = typings.awsSdk.inspectorMod._ScopeType | java.lang.String
+type ScopeType = _ScopeType | String
 
-type ScopeValue = java.lang.String
+type ScopeValue = String
 
-type SecurityGroups = js.Array[typings.awsSdk.inspectorMod.SecurityGroup]
+type SecurityGroups = js.Array[SecurityGroup]
 
-type ServiceName = java.lang.String
+type ServiceName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Low_
@@ -264,42 +267,42 @@ type ServiceName = java.lang.String
   - typings.awsSdk.awsSdkStrings.Undefined_
   - java.lang.String
 */
-type Severity = typings.awsSdk.inspectorMod._Severity | java.lang.String
+type Severity = _Severity | String
 
-type SeverityList = js.Array[typings.awsSdk.inspectorMod.Severity]
+type SeverityList = js.Array[Severity]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.START_EVALUATION
   - typings.awsSdk.awsSdkStrings.SKIP_EVALUATION
   - java.lang.String
 */
-type StopAction = typings.awsSdk.inspectorMod._StopAction | java.lang.String
+type StopAction = _StopAction | String
 
-type SubscriptionList = js.Array[typings.awsSdk.inspectorMod.Subscription]
+type SubscriptionList = js.Array[Subscription]
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagList = js.Array[typings.awsSdk.inspectorMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type Tags = js.Array[typings.awsSdk.inspectorMod.Tag]
+type Tags = js.Array[Tag]
 
-type TelemetryMetadataList = js.Array[typings.awsSdk.inspectorMod.TelemetryMetadata]
+type TelemetryMetadataList = js.Array[TelemetryMetadata]
 
-type Text = java.lang.String
+type Text = String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
-type UUID = java.lang.String
+type UUID = String
 
-type Url = java.lang.String
+type Url = String
 
-type UserAttributeKeyList = js.Array[typings.awsSdk.inspectorMod.AttributeKey]
+type UserAttributeKeyList = js.Array[AttributeKey]
 
-type UserAttributeList = js.Array[typings.awsSdk.inspectorMod.Attribute]
+type UserAttributeList = js.Array[Attribute]
 
-type Version = java.lang.String
+type Version = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2015-08-18`
@@ -307,4 +310,4 @@ type Version = java.lang.String
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.inspectorMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

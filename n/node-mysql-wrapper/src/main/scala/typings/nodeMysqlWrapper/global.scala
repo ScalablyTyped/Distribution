@@ -43,7 +43,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Mongo.Collection")
     @js.native
-    class CollectionCls[T] protected ()
+    open class CollectionCls[T] protected ()
       extends StObject
          with Collection[T] {
       def this(name: String) = this()
@@ -59,7 +59,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Mongo.Cursor")
     @js.native
-    class CursorCls[T] ()
+    open class CursorCls[T] ()
       extends StObject
          with Cursor[T]
     
@@ -72,7 +72,7 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("Mongo.ObjectID")
     @js.native
-    class ObjectIDCls protected ()
+    open class ObjectIDCls protected ()
       extends StObject
          with ObjectID {
       def this(hexString: String) = this()

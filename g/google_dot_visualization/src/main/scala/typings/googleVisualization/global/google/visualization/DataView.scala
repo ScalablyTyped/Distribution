@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.visualization.DataView")
 @js.native
-class DataView protected ()
+open class DataView protected ()
   extends StObject
      with typings.googleVisualization.google.visualization.DataView {
   def this(data: typings.googleVisualization.google.visualization.DataTable) = this()

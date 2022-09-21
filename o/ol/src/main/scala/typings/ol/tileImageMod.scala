@@ -1,5 +1,6 @@
 package typings.ol
 
+import org.scalablytyped.runtime.Instantiable6
 import org.scalablytyped.runtime.StringDictionary
 import typings.ol.olTileMod.LoadFunction
 import typings.ol.olTileMod.Tile
@@ -8,6 +9,7 @@ import typings.ol.pluggableMapMod.FrameState
 import typings.ol.projMod.ProjectionLike
 import typings.ol.sourceSourceMod.AttributionLike
 import typings.ol.stateMod.State
+import typings.ol.tileStateMod.TileState
 import typings.ol.tilecoordMod.TileCoord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +19,7 @@ object tileImageMod {
   
   @JSImport("ol/source/TileImage", JSImport.Default)
   @js.native
-  class default protected () extends TileImage {
+  open class default protected () extends TileImage {
     def this(options: Options) = this()
   }
   
@@ -29,7 +31,7 @@ object tileImageMod {
     
     var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[Null | String] = js.undefined
     
     var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
@@ -43,7 +45,17 @@ object tileImageMod {
     
     var state: js.UndefOr[State] = js.undefined
     
-    var tileClass: js.UndefOr[typings.ol.imageTileMod.default] = js.undefined
+    var tileClass: js.UndefOr[
+        Instantiable6[
+          /* tileCoord */ TileCoord, 
+          /* state */ TileState, 
+          /* src */ String, 
+          /* crossOrigin */ String, 
+          /* tileLoadFunction */ LoadFunction, 
+          /* opt_options */ js.UndefOr[typings.ol.olTileMod.Options], 
+          typings.ol.imageTileMod.default
+        ]
+      ] = js.undefined
     
     var tileGrid: js.UndefOr[typings.ol.tilegridTileGridMod.default] = js.undefined
     
@@ -82,13 +94,15 @@ object tileImageMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       
       inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -116,7 +130,17 @@ object tileImageMod {
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      inline def setTileClass(value: typings.ol.imageTileMod.default): Self = StObject.set(x, "tileClass", value.asInstanceOf[js.Any])
+      inline def setTileClass(
+        value: Instantiable6[
+              /* tileCoord */ TileCoord, 
+              /* state */ TileState, 
+              /* src */ String, 
+              /* crossOrigin */ String, 
+              /* tileLoadFunction */ LoadFunction, 
+              /* opt_options */ js.UndefOr[typings.ol.olTileMod.Options], 
+              typings.ol.imageTileMod.default
+            ]
+      ): Self = StObject.set(x, "tileClass", value.asInstanceOf[js.Any])
       
       inline def setTileClassUndefined: Self = StObject.set(x, "tileClass", js.undefined)
       
@@ -150,7 +174,7 @@ object tileImageMod {
       
       inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
       
-      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
       
       inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
       
@@ -188,7 +212,15 @@ object tileImageMod {
     
     /* protected */ var tileCacheForProjection: StringDictionary[typings.ol.tileCacheMod.default] = js.native
     
-    /* protected */ var tileClass: typings.ol.imageTileMod.default = js.native
+    /* protected */ var tileClass: Instantiable6[
+        /* tileCoord */ TileCoord, 
+        /* state */ TileState, 
+        /* src */ String, 
+        /* crossOrigin */ String, 
+        /* tileLoadFunction */ LoadFunction, 
+        /* opt_options */ js.UndefOr[typings.ol.olTileMod.Options], 
+        typings.ol.imageTileMod.default
+      ] = js.native
     
     /* protected */ var tileGridForProjection: StringDictionary[typings.ol.tilegridTileGridMod.default] = js.native
   }

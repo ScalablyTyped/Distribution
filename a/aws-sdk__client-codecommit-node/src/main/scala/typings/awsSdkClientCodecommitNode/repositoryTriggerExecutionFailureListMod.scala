@@ -8,5 +8,5 @@ object repositoryTriggerExecutionFailureListMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/_RepositoryTriggerExecutionFailureList", "_RepositoryTriggerExecutionFailureList")
   @js.native
-  val RepositoryTriggerExecutionFailureList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val RepositoryTriggerExecutionFailureList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

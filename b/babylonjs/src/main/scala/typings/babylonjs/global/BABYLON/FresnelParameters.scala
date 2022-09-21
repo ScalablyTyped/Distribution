@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options provide your own settings to optionally to override defaults
   */
-class FresnelParameters ()
+open class FresnelParameters ()
   extends StObject
      with typings.babylonjs.BABYLON.FresnelParameters {
   def this(options: IFresnelParametersCreationOptions) = this()

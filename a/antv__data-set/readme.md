@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__data-set
 
-Typings are for version 0.11.7
+Typings are for version 0.11.8
 
 ## Library description:
 data set with state management
@@ -10,10 +10,10 @@ data set with state management
 | ------------------ | :-------------: |
 | Full name          | @antv/data-set |
 | Keywords           | antv, data-set, dataSet |
-| # releases         | 12 |
-| # dependents       | 442 |
-| # downloads        | 1332574 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 120574.33333333333 |
+| # stars            | 232.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/data-set)

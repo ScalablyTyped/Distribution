@@ -2,21 +2,28 @@ package typings.antDesignProLayout
 
 import typings.antDesignProLayout.anon.Breadcrumb
 import typings.antDesignProLayout.anon.Locale
-import typings.antDesignProLayout.anon.Tip
-import typings.antDesignProLayout.basicLayoutMod.BasicLayoutProps
+import typings.antDesignProLayout.anon.PageContainerPropsprefixe
+import typings.antDesignProLayout.anon.ReadonlyArrayRoute
 import typings.antDesignProLayout.footerMod.FooterProps
 import typings.antDesignProLayout.footerToolbarMod.FooterToolbarProps
 import typings.antDesignProLayout.getPageTitleMod.GetPageTitleProps
 import typings.antDesignProLayout.gridContentMod.GridContentProps
-import typings.antDesignProLayout.libSettingDrawerMod.SettingDrawerProps
+import typings.antDesignProLayout.headerMod.HeaderViewProps
 import typings.antDesignProLayout.pageContainerMod.PageContainerProps
+import typings.antDesignProLayout.pageHeaderMod.PageHeaderProps
+import typings.antDesignProLayout.proLayoutMod.ProLayoutProps
 import typings.antDesignProLayout.routeContextMod.RouteContextType
+import typings.antDesignProLayout.settingDrawerMod.SettingDrawerProps
+import typings.antDesignProLayout.siderMenuSiderMenuMod.PrivateSiderMenuProps
 import typings.antDesignProLayout.topNavHeaderMod.TopNavHeaderProps
 import typings.antDesignProLayout.typingsMod.MenuDataItem
 import typings.antDesignProLayout.typingsMod.MessageDescriptor
-import typings.antDesignProLayout.typingsMod.Route
+import typings.antDesignProLayout.waterMarkMod.WaterMarkProps
+import typings.antd.breadcrumbBreadcrumbMod.BreadcrumbProps
+import typings.antd.spinMod.SpinProps
 import typings.react.mod.Context
 import typings.react.mod.FC
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,23 +34,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * 🌃 Powerful and easy to use beautiful layout
-    * 🏄‍ Support multiple topics and layout types
-    * @param props
-    */
   @JSImport("@ant-design/pro-layout", JSImport.Default)
   @js.native
-  val default: FC[BasicLayoutProps] = js.native
-  
-  /**
-    * 🌃 Powerful and easy to use beautiful layout
-    * 🏄‍ Support multiple topics and layout types
-    * @param props
-    */
-  @JSImport("@ant-design/pro-layout", "BasicLayout")
-  @js.native
-  val BasicLayout: FC[BasicLayoutProps] = js.native
+  val default: FC[ProLayoutProps] = js.native
   
   @JSImport("@ant-design/pro-layout", "DefaultFooter")
   @js.native
@@ -51,8 +44,7 @@ object mod {
   
   @JSImport("@ant-design/pro-layout", "DefaultHeader")
   @js.native
-  class DefaultHeader ()
-    extends typings.antDesignProLayout.headerMod.default
+  val DefaultHeader: FC[HeaderViewProps & PrivateSiderMenuProps] = js.native
   
   @JSImport("@ant-design/pro-layout", "FooterToolbar")
   @js.native
@@ -61,6 +53,7 @@ object mod {
   /**
     * This component can support contentWidth so you don't need to calculate the width
     * contentWidth=Fixed, width will is 1200
+    *
     * @param props
     */
   @JSImport("@ant-design/pro-layout", "GridContent")
@@ -71,22 +64,34 @@ object mod {
   @js.native
   val PageContainer: FC[PageContainerProps] = js.native
   
-  @JSImport("@ant-design/pro-layout", "PageHeaderWrapper")
+  @JSImport("@ant-design/pro-layout", "PageHeader")
   @js.native
-  val PageHeaderWrapper: FC[PageContainerProps] = js.native
+  val PageHeader: FC[PageHeaderProps] = js.native
   
   @JSImport("@ant-design/pro-layout", "PageLoading")
   @js.native
-  val PageLoading: FC[Tip] = js.native
+  val PageLoading: FC[SpinProps & Any] = js.native
+  
+  /**
+    * 配置与面包屑相同，只是增加了自动根据路由计算面包屑的功能。此功能必须要在 ProLayout 中使用。
+    *
+    * @param props
+    * @returns
+    */
+  @JSImport("@ant-design/pro-layout", "ProBreadcrumb")
+  @js.native
+  val ProBreadcrumb: FC[BreadcrumbProps] = js.native
+  
+  @JSImport("@ant-design/pro-layout", "ProLayout")
+  @js.native
+  val ProLayout: FC[ProLayoutProps] = js.native
+  
+  inline def ProPageHeader(props: PageContainerPropsprefixe): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ProPageHeader")(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   @JSImport("@ant-design/pro-layout", "RouteContext")
   @js.native
   val RouteContext: Context[RouteContextType] = js.native
   
-  /**
-    * 可视化配置组件
-    * @param props
-    */
   @JSImport("@ant-design/pro-layout", "SettingDrawer")
   @js.native
   val SettingDrawer: FC[SettingDrawerProps] = js.native
@@ -95,43 +100,47 @@ object mod {
   @js.native
   val TopNavHeader: FC[TopNavHeaderProps] = js.native
   
-  inline def getMenuData(routes: js.Array[Route]): Breadcrumb = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any]).asInstanceOf[Breadcrumb]
+  @JSImport("@ant-design/pro-layout", "WaterMark")
+  @js.native
+  val WaterMark: FC[WaterMarkProps] = js.native
+  
+  inline def getMenuData(routes: ReadonlyArrayRoute): Breadcrumb = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any]).asInstanceOf[Breadcrumb]
   inline def getMenuData(
-    routes: js.Array[Route],
+    routes: ReadonlyArrayRoute,
     menu: Unit,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String]
   ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
   inline def getMenuData(
-    routes: js.Array[Route],
+    routes: ReadonlyArrayRoute,
     menu: Unit,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String],
     menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
   ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], menuDataRender.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
   inline def getMenuData(
-    routes: js.Array[Route],
+    routes: ReadonlyArrayRoute,
     menu: Unit,
     formatMessage: Unit,
     menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
   ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], menuDataRender.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
-  inline def getMenuData(routes: js.Array[Route], menu: Locale): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
+  inline def getMenuData(routes: ReadonlyArrayRoute, menu: Locale): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
   inline def getMenuData(
-    routes: js.Array[Route],
+    routes: ReadonlyArrayRoute,
     menu: Locale,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String]
   ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
   inline def getMenuData(
-    routes: js.Array[Route],
+    routes: ReadonlyArrayRoute,
     menu: Locale,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String],
     menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
   ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], menuDataRender.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
   inline def getMenuData(
-    routes: js.Array[Route],
+    routes: ReadonlyArrayRoute,
     menu: Locale,
     formatMessage: Unit,
     menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
   ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("getMenuData")(routes.asInstanceOf[js.Any], menu.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], menuDataRender.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
   
   inline def getPageTitle(props: GetPageTitleProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPageTitle")(props.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def getPageTitle(props: GetPageTitleProps, ignoreTile: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPageTitle")(props.asInstanceOf[js.Any], ignoreTile.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getPageTitle(props: GetPageTitleProps, ignoreTitle: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPageTitle")(props.asInstanceOf[js.Any], ignoreTitle.asInstanceOf[js.Any])).asInstanceOf[String]
 }

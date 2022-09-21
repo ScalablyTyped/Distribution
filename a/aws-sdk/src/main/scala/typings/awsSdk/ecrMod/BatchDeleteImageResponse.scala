@@ -29,12 +29,12 @@ object BatchDeleteImageResponse {
     
     inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    inline def setFailuresVarargs(value: ImageFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: ImageFailure*): Self = StObject.set(x, "failures", js.Array(value*))
     
     inline def setImageIds(value: ImageIdentifierList): Self = StObject.set(x, "imageIds", value.asInstanceOf[js.Any])
     
     inline def setImageIdsUndefined: Self = StObject.set(x, "imageIds", js.undefined)
     
-    inline def setImageIdsVarargs(value: ImageIdentifier*): Self = StObject.set(x, "imageIds", js.Array(value :_*))
+    inline def setImageIdsVarargs(value: ImageIdentifier*): Self = StObject.set(x, "imageIds", js.Array(value*))
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Core.TimedTextSubformat")
 @js.native
 /** Initializes a new instance of the TimedTextSubformat class. */
-class TimedTextSubformat ()
+open class TimedTextSubformat ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.TimedTextSubformat {
   

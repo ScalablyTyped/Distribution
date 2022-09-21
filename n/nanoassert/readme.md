@@ -10,10 +10,10 @@ Nanoscale assertion module
 | ------------------ | :-------------: |
 | Full name          | nanoassert |
 | Keywords           | assert, unassert, power-assert, tiny, nano, pico |
-| # releases         | 0 |
-| # dependents       | 137 |
-| # downloads        | 3206131 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 612494.0 |
+| # stars            | 30.0 |
 
 ## Links
 - [Homepage](https://github.com/emilbayes/nanoassert#readme)

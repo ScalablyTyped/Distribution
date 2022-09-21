@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutLoggingOptionsRequest extends StObject {
   
   /**
-    * The new values of the AWS IoT Analytics logging options.
+    * The new values of the IoT Analytics logging options.
     */
   var loggingOptions: LoggingOptions
 }

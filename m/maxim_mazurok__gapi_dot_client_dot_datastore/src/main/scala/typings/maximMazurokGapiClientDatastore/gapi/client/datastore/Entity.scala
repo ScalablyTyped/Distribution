@@ -20,7 +20,7 @@ trait Entity extends StObject {
   var properties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.datastore.gapi.client.datastore.Value}
-    */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.Entity & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.Entity & TopLevel[Any]
   ] = js.undefined
 }
 object Entity {
@@ -39,7 +39,7 @@ object Entity {
     inline def setProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.datastore.gapi.client.datastore.Value}
-      */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.Entity & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.Entity & TopLevel[Any]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)

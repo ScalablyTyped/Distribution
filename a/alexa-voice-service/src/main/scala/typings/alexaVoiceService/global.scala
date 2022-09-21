@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("AVS")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.alexaVoiceService.mod.^ {
       def this(params: AVSParams) = this()
     }
@@ -44,7 +44,7 @@ object global {
     
     @JSGlobal("AVS.Player")
     @js.native
-    class Player ()
+    open class Player ()
       extends typings.alexaVoiceService.mod.Player
     object Player {
       

@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ScrollViewOptions extends StObject {
   
+  var ARIATemplate: js.UndefOr[String] = js.undefined
+  
   var autoBind: js.UndefOr[Boolean] = js.undefined
   
   var bounceVelocityThreshold: js.UndefOr[Double] = js.undefined
@@ -15,7 +17,7 @@ trait ScrollViewOptions extends StObject {
   
   var contentHeight: js.UndefOr[Double | String] = js.undefined
   
-  var dataSource: js.UndefOr[DataSource | js.Any] = js.undefined
+  var dataSource: js.UndefOr[DataSource | Any] = js.undefined
   
   var duration: js.UndefOr[Double] = js.undefined
   
@@ -23,9 +25,15 @@ trait ScrollViewOptions extends StObject {
   
   var enablePager: js.UndefOr[Boolean] = js.undefined
   
+  var messages: js.UndefOr[ScrollViewMessages] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
   
+  var navigatable: js.UndefOr[Boolean] = js.undefined
+  
   var page: js.UndefOr[Double] = js.undefined
+  
+  var pageable: js.UndefOr[Boolean | ScrollViewPageable] = js.undefined
   
   var refresh: js.UndefOr[js.Function1[/* e */ ScrollViewRefreshEvent, Unit]] = js.undefined
   
@@ -41,6 +49,10 @@ object ScrollViewOptions {
   }
   
   extension [Self <: ScrollViewOptions](x: Self) {
+    
+    inline def setARIATemplate(value: String): Self = StObject.set(x, "ARIATemplate", value.asInstanceOf[js.Any])
+    
+    inline def setARIATemplateUndefined: Self = StObject.set(x, "ARIATemplate", js.undefined)
     
     inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
@@ -58,7 +70,7 @@ object ScrollViewOptions {
     
     inline def setContentHeightUndefined: Self = StObject.set(x, "contentHeight", js.undefined)
     
-    inline def setDataSource(value: DataSource | js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: DataSource | Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -74,13 +86,25 @@ object ScrollViewOptions {
     
     inline def setEnablePagerUndefined: Self = StObject.set(x, "enablePager", js.undefined)
     
+    inline def setMessages(value: ScrollViewMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
+    inline def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
+    
+    inline def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
+    
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setPageable(value: Boolean | ScrollViewPageable): Self = StObject.set(x, "pageable", value.asInstanceOf[js.Any])
+    
+    inline def setPageableUndefined: Self = StObject.set(x, "pageable", js.undefined)
     
     inline def setRefresh(value: /* e */ ScrollViewRefreshEvent => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction1(value))
     

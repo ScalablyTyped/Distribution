@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sdk.Query.Guids")
 @js.native
-class Guids protected () extends ValueBase {
+open class Guids protected () extends ValueBase {
   def this(args: js.Array[String]) = this()
   
   /**

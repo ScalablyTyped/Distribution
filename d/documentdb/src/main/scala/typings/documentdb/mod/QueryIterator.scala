@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("documentdb", "QueryIterator")
 @js.native
-class QueryIterator[TResultRow] protected () extends StObject {
+open class QueryIterator[TResultRow] protected () extends StObject {
   def this(
     documentclient: DocumentClient,
     query: DocumentQuery,

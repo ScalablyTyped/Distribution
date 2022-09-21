@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.FormNameRuleCondition")
 @js.native
-/* private */ class FormNameRuleCondition ()
+/* private */ open class FormNameRuleCondition ()
   extends StObject
      with typings.activexOutlook.Outlook.FormNameRuleCondition {
   
@@ -25,14 +25,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var Enabled: Boolean = js.native
   
   /* CompleteClass */
-  var FormName: js.Any = js.native
+  var FormName: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Outlook.FormNameRuleCondition_typekey")
   var OutlookDotFormNameRuleCondition_typekey: typings.activexOutlook.Outlook.FormNameRuleCondition = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

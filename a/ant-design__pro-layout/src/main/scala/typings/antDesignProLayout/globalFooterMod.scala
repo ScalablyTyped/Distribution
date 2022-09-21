@@ -3,19 +3,19 @@ package typings.antDesignProLayout
 import typings.antDesignProLayout.anon.BlankTarget
 import typings.antDesignProLayout.typingsMod.WithFalse
 import typings.react.mod.CSSProperties
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalFooterMod {
   
-  @JSImport("@ant-design/pro-layout/lib/GlobalFooter", JSImport.Namespace)
+  @JSImport("@ant-design/pro-layout/es/components/GlobalFooter", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasClassNamePrefixClsLinksCopyrightStyle: GlobalFooterProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNamePrefixClsLinksCopyrightStyle.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def GlobalFooter(hasClassNamePrefixClsLinksCopyrightStyle: GlobalFooterProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("GlobalFooter")(hasClassNamePrefixClsLinksCopyrightStyle.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   trait GlobalFooterProps extends StObject {
     
@@ -50,7 +50,7 @@ object globalFooterMod {
       
       inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      inline def setLinksVarargs(value: BlankTarget*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: BlankTarget*): Self = StObject.set(x, "links", js.Array(value*))
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       

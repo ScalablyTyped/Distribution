@@ -34,7 +34,7 @@ trait BusinessCardView extends StObject {
   /* private */ @JSName("Outlook.BusinessCardView_typekey")
   var OutlookDotBusinessCardView_typekey: BusinessCardView
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Reset(): Unit
   
@@ -68,7 +68,7 @@ object BusinessCardView {
     LockUserChanges: Boolean,
     Name: String,
     OutlookDotBusinessCardView_typekey: BusinessCardView,
-    Parent: js.Any,
+    Parent: Any,
     Reset: () => Unit,
     Save: () => Unit,
     SaveOption: OlViewSaveOption,
@@ -111,7 +111,7 @@ object BusinessCardView {
     
     inline def setOutlookDotBusinessCardView_typekey(value: BusinessCardView): Self = StObject.set(x, "Outlook.BusinessCardView_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     

@@ -10,7 +10,7 @@ trait Href extends StObject {
   
   var href: String
   
-  var ooffset: js.Array[Double]
+  var offset: js.Array[Double]
   
   var shape: js.UndefOr[IShape | IGeometryJson] = js.undefined
   
@@ -18,8 +18,8 @@ trait Href extends StObject {
 }
 object Href {
   
-  inline def apply(href: String, ooffset: js.Array[Double], size: js.Array[Double]): Href = {
-    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], ooffset = ooffset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+  inline def apply(href: String, offset: js.Array[Double], size: js.Array[Double]): Href = {
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Href]
   }
   
@@ -27,9 +27,9 @@ object Href {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    inline def setOoffset(value: js.Array[Double]): Self = StObject.set(x, "ooffset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    inline def setOoffsetVarargs(value: Double*): Self = StObject.set(x, "ooffset", js.Array(value :_*))
+    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
     
     inline def setShape(value: IShape | IGeometryJson): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
@@ -37,6 +37,6 @@ object Href {
     
     inline def setSize(value: js.Array[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value*))
   }
 }

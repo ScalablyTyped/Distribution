@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ProviderCallback[T] extends StObject {
   
-  def apply(queryString: String, success: js.Function0[js.Any], error: js.Function0[js.Any]): T = js.native
+  def apply(queryString: String, success: js.Function0[Any], error: js.Function0[Any]): T = js.native
   def apply(
     queryString: String,
-    success: js.Function0[js.Any],
-    error: js.Function0[js.Any],
+    success: js.Function0[Any],
+    error: js.Function0[Any],
     isSingleElement: Boolean
   ): T = js.native
   def apply(
     queryString: String,
-    success: js.Function0[js.Any],
-    error: js.Function0[js.Any],
+    success: js.Function0[Any],
+    error: js.Function0[Any],
     isSingleElement: Boolean,
     forceSingleElement: Boolean
   ): T = js.native
   def apply(
     queryString: String,
-    success: js.Function0[js.Any],
-    error: js.Function0[js.Any],
+    success: js.Function0[Any],
+    error: js.Function0[Any],
     isSingleElement: Unit,
     forceSingleElement: Boolean
   ): T = js.native

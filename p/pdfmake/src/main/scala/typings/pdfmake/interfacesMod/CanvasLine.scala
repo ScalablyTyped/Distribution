@@ -1,8 +1,6 @@
 package typings.pdfmake.interfacesMod
 
 import typings.pdfmake.pdfmakeStrings.line
-import typings.pdfmake.pdfmakeStrings.round
-import typings.pdfmake.pdfmakeStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,16 +10,25 @@ trait CanvasLine
      with CanvasLineElement
      with CanvasElement {
   
-  var lineCap: js.UndefOr[round | square] = js.undefined
+  /**
+    * Line end type.
+    *
+    * Defaults to `butt`.
+    */
+  var lineCap: js.UndefOr[CanvasLineCap] = js.undefined
   
   var `type`: line
   
+  /** Horizontal line start position from the left in `pt`. */
   var x1: Double
   
+  /** Horizontal line end position from the left in `pt`. */
   var x2: Double
   
+  /** Vertical line start position from the top in `pt`. */
   var y1: Double
   
+  /** Vertical line end position from the top in `pt`. */
   var y2: Double
 }
 object CanvasLine {
@@ -34,7 +41,7 @@ object CanvasLine {
   
   extension [Self <: CanvasLine](x: Self) {
     
-    inline def setLineCap(value: round | square): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
+    inline def setLineCap(value: CanvasLineCap): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
     
     inline def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
     

@@ -70,7 +70,7 @@ trait INumber
     */
   @JSName("setSpinDownEnabled")
   var setSpinDownEnabled_INumber: js.UndefOr[
-    js.Function2[/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* enabled */ js.UndefOr[Any], /* internal */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Method] Sets whether the spinner up button is enabled
@@ -79,7 +79,7 @@ trait INumber
     */
   @JSName("setSpinUpEnabled")
   var setSpinUpEnabled_INumber: js.UndefOr[
-    js.Function2[/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any], Unit]
+    js.Function2[/* enabled */ js.UndefOr[Any], /* internal */ js.UndefOr[Any], Unit]
   ] = js.undefined
   
   /** [Config Option] (Number) */
@@ -161,11 +161,11 @@ object INumber {
     
     inline def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
     
-    inline def setSetSpinDownEnabled(value: (/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setSpinDownEnabled", js.Any.fromFunction2(value))
+    inline def setSetSpinDownEnabled(value: (/* enabled */ js.UndefOr[Any], /* internal */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setSpinDownEnabled", js.Any.fromFunction2(value))
     
     inline def setSetSpinDownEnabledUndefined: Self = StObject.set(x, "setSpinDownEnabled", js.undefined)
     
-    inline def setSetSpinUpEnabled(value: (/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "setSpinUpEnabled", js.Any.fromFunction2(value))
+    inline def setSetSpinUpEnabled(value: (/* enabled */ js.UndefOr[Any], /* internal */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setSpinUpEnabled", js.Any.fromFunction2(value))
     
     inline def setSetSpinUpEnabledUndefined: Self = StObject.set(x, "setSpinUpEnabled", js.undefined)
     

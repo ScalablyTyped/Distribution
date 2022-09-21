@@ -23,7 +23,7 @@ object TargetingValueDayPartTargeting {
     
     inline def setDayPartsUndefined: Self = StObject.set(x, "dayParts", js.undefined)
     
-    inline def setDayPartsVarargs(value: TargetingValueDayPartTargetingDayPart*): Self = StObject.set(x, "dayParts", js.Array(value :_*))
+    inline def setDayPartsVarargs(value: TargetingValueDayPartTargetingDayPart*): Self = StObject.set(x, "dayParts", js.Array(value*))
     
     inline def setTimeZoneType(value: String): Self = StObject.set(x, "timeZoneType", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,6 @@
 package typings.vanillaSwipe
 
+import org.scalablytyped.runtime.TopLevel
 import typings.std.Event
 import typings.std.HTMLElement
 import typings.vanillaSwipe.vanillaSwipeNumbers.`0`
@@ -10,9 +11,101 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesMod {
   
+  @js.native
+  sealed trait Axis extends StObject
+  @JSImport("vanilla-swipe/lib/types", "Axis")
+  @js.native
+  object Axis extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[Axis & String] = js.native
+    
+    @js.native
+    sealed trait X
+      extends StObject
+         with Axis
+    /* "x" */ val X: typings.vanillaSwipe.typesMod.Axis.X & String = js.native
+    
+    @js.native
+    sealed trait Y
+      extends StObject
+         with Axis
+    /* "y" */ val Y: typings.vanillaSwipe.typesMod.Axis.Y & String = js.native
+  }
+  
+  @js.native
+  sealed trait Direction extends StObject
+  @JSImport("vanilla-swipe/lib/types", "Direction")
+  @js.native
+  object Direction extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[Direction & String] = js.native
+    
+    @js.native
+    sealed trait BOTTOM
+      extends StObject
+         with Direction
+    /* "BOTTOM" */ val BOTTOM: typings.vanillaSwipe.typesMod.Direction.BOTTOM & String = js.native
+    
+    @js.native
+    sealed trait LEFT
+      extends StObject
+         with Direction
+    /* "LEFT" */ val LEFT: typings.vanillaSwipe.typesMod.Direction.LEFT & String = js.native
+    
+    @js.native
+    sealed trait NONE
+      extends StObject
+         with Direction
+    /* "NONE" */ val NONE: typings.vanillaSwipe.typesMod.Direction.NONE & String = js.native
+    
+    @js.native
+    sealed trait RIGHT
+      extends StObject
+         with Direction
+    /* "RIGHT" */ val RIGHT: typings.vanillaSwipe.typesMod.Direction.RIGHT & String = js.native
+    
+    @js.native
+    sealed trait TOP
+      extends StObject
+         with Direction
+    /* "TOP" */ val TOP: typings.vanillaSwipe.typesMod.Direction.TOP & String = js.native
+  }
+  
+  @js.native
+  sealed trait TraceDirectionKey extends StObject
+  @JSImport("vanilla-swipe/lib/types", "TraceDirectionKey")
+  @js.native
+  object TraceDirectionKey extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[TraceDirectionKey & String] = js.native
+    
+    @js.native
+    sealed trait NEGATIVE
+      extends StObject
+         with TraceDirectionKey
+    /* "NEGATIVE" */ val NEGATIVE: typings.vanillaSwipe.typesMod.TraceDirectionKey.NEGATIVE & String = js.native
+    
+    @js.native
+    sealed trait NONE
+      extends StObject
+         with TraceDirectionKey
+    /* "NONE" */ val NONE: typings.vanillaSwipe.typesMod.TraceDirectionKey.NONE & String = js.native
+    
+    @js.native
+    sealed trait POSITIVE
+      extends StObject
+         with TraceDirectionKey
+    /* "POSITIVE" */ val POSITIVE: typings.vanillaSwipe.typesMod.TraceDirectionKey.POSITIVE & String = js.native
+  }
+  
   trait ConstructorProps extends StObject {
     
     var delta: js.UndefOr[Double | `10`] = js.undefined
+    
+    var directionDelta: js.UndefOr[Double | `0`] = js.undefined
     
     var element: js.UndefOr[HTMLElement | Null] = js.undefined
     
@@ -48,6 +141,10 @@ object typesMod {
       inline def setDelta(value: Double | `10`): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
       inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+      
+      inline def setDirectionDelta(value: Double | `0`): Self = StObject.set(x, "directionDelta", value.asInstanceOf[js.Any])
+      
+      inline def setDirectionDeltaUndefined: Self = StObject.set(x, "directionDelta", js.undefined)
       
       inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -109,11 +206,15 @@ object typesMod {
     
     var deltaY: Double
     
-    var directionX: String
+    var directionX: Direction
     
-    var directionY: String
+    var directionY: Direction
     
     var duration: Double
+    
+    var positionX: js.UndefOr[Double] = js.undefined
+    
+    var positionY: js.UndefOr[Double] = js.undefined
     
     var velocity: Double
   }
@@ -124,8 +225,8 @@ object typesMod {
       absY: Double,
       deltaX: Double,
       deltaY: Double,
-      directionX: String,
-      directionY: String,
+      directionX: Direction,
+      directionY: Direction,
       duration: Double,
       velocity: Double
     ): EventData = {
@@ -143,11 +244,19 @@ object typesMod {
       
       inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
       
-      inline def setDirectionX(value: String): Self = StObject.set(x, "directionX", value.asInstanceOf[js.Any])
+      inline def setDirectionX(value: Direction): Self = StObject.set(x, "directionX", value.asInstanceOf[js.Any])
       
-      inline def setDirectionY(value: String): Self = StObject.set(x, "directionY", value.asInstanceOf[js.Any])
+      inline def setDirectionY(value: Direction): Self = StObject.set(x, "directionY", value.asInstanceOf[js.Any])
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      
+      inline def setPositionX(value: Double): Self = StObject.set(x, "positionX", value.asInstanceOf[js.Any])
+      
+      inline def setPositionXUndefined: Self = StObject.set(x, "positionX", js.undefined)
+      
+      inline def setPositionY(value: Double): Self = StObject.set(x, "positionY", value.asInstanceOf[js.Any])
+      
+      inline def setPositionYUndefined: Self = StObject.set(x, "positionY", js.undefined)
       
       inline def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
     }
@@ -184,11 +293,11 @@ object typesMod {
       
       inline def setTraceX(value: Trace): Self = StObject.set(x, "traceX", value.asInstanceOf[js.Any])
       
-      inline def setTraceXVarargs(value: Double*): Self = StObject.set(x, "traceX", js.Array(value :_*))
+      inline def setTraceXVarargs(value: Double*): Self = StObject.set(x, "traceX", js.Array(value*))
       
       inline def setTraceY(value: Trace): Self = StObject.set(x, "traceY", value.asInstanceOf[js.Any])
       
-      inline def setTraceYVarargs(value: Double*): Self = StObject.set(x, "traceY", js.Array(value :_*))
+      inline def setTraceYVarargs(value: Double*): Self = StObject.set(x, "traceY", js.Array(value*))
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -197,4 +306,8 @@ object typesMod {
   }
   
   type Trace = js.Array[Double]
+  
+  type TraceDirection = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in vanilla-swipe.vanilla-swipe/lib/types.TraceDirectionKey | string ]: std.Array<number>}
+    */ typings.vanillaSwipe.vanillaSwipeStrings.TraceDirection & TopLevel[Any]
 }

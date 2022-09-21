@@ -10,10 +10,10 @@ Easily get the CWD (current working directory) of a project based on package.jso
 | ------------------ | :-------------: |
 | Full name          | cwd |
 | Keywords           | current, cwd, dir, directory, file, filepath, path, paths, process, process.cwd, resolve, resolved, working |
-| # releases         | 0 |
-| # dependents       | 90 |
-| # downloads        | 13087743 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1772516.3333333333 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/cwd)

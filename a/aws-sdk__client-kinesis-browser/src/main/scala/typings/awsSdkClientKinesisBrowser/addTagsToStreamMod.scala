@@ -8,5 +8,5 @@ object addTagsToStreamMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/AddTagsToStream", "AddTagsToStream")
   @js.native
-  val AddTagsToStream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val AddTagsToStream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

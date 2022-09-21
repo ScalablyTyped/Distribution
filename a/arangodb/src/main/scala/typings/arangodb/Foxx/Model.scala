@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Model extends StObject {
   
-  var forClient: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
+  var forClient: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
   
-  var fromClient: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
+  var fromClient: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
   
   var schema: Schema
 }
@@ -21,11 +21,11 @@ object Model {
   
   extension [Self <: Model](x: Self) {
     
-    inline def setForClient(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "forClient", js.Any.fromFunction1(value))
+    inline def setForClient(value: /* value */ Any => Any): Self = StObject.set(x, "forClient", js.Any.fromFunction1(value))
     
     inline def setForClientUndefined: Self = StObject.set(x, "forClient", js.undefined)
     
-    inline def setFromClient(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "fromClient", js.Any.fromFunction1(value))
+    inline def setFromClient(value: /* value */ Any => Any): Self = StObject.set(x, "fromClient", js.Any.fromFunction1(value))
     
     inline def setFromClientUndefined: Self = StObject.set(x, "fromClient", js.undefined)
     

@@ -1,13 +1,12 @@
 package typings.fabric.fabricImplMod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "Shadow")
 @js.native
-class Shadow ()
+open class Shadow ()
   extends StObject
      with IShadowOptions {
   def this(options: String) = this()
@@ -21,7 +20,7 @@ class Shadow ()
     * Returns object representation of a shadow
     * @return {Object} Object representation of a shadow instance
     */
-  def toObject(): js.Any = js.native
+  def toObject(): Any = js.native
   
   /**
     * Returns SVG representation of a shadow
@@ -45,6 +44,6 @@ object Shadow {
     */
   @JSImport("fabric/fabric-impl", "Shadow.reOffsetsAndBlur")
   @js.native
-  def reOffsetsAndBlur: RegExp = js.native
-  inline def reOffsetsAndBlur_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reOffsetsAndBlur")(x.asInstanceOf[js.Any])
+  def reOffsetsAndBlur: js.RegExp = js.native
+  inline def reOffsetsAndBlur_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reOffsetsAndBlur")(x.asInstanceOf[js.Any])
 }

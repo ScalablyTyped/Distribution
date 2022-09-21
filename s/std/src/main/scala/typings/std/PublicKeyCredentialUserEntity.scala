@@ -8,8 +8,10 @@ trait PublicKeyCredentialUserEntity
   extends StObject
      with PublicKeyCredentialEntity {
   
+  /* standard dom */
   var displayName: java.lang.String
   
+  /* standard dom */
   var id: BufferSource
 }
 object PublicKeyCredentialUserEntity {

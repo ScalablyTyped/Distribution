@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LaunchTemplateTagSpecification extends StObject {
   
   /**
-    * The type of resource.
+    * The type of resource to tag.
     */
   var ResourceType: js.UndefOr[typings.awsSdk.ec2Mod.ResourceType] = js.undefined
   
@@ -33,6 +33,6 @@ object LaunchTemplateTagSpecification {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

@@ -10,10 +10,10 @@ object callReceivedMod {
   
   @JSImport("material-ui/svg-icons/communication/call-received", JSImport.Default)
   @js.native
-  class default () extends CommunicationCallReceived
+  open class default () extends CommunicationCallReceived
   
   @JSImport("material-ui/svg-icons/communication/call-received", "CommunicationCallReceived")
   @js.native
-  class CommunicationCallReceived ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationCallReceived ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

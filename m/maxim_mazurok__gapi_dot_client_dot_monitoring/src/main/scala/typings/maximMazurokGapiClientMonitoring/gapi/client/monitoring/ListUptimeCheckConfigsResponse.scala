@@ -39,6 +39,6 @@ object ListUptimeCheckConfigsResponse {
     
     inline def setUptimeCheckConfigsUndefined: Self = StObject.set(x, "uptimeCheckConfigs", js.undefined)
     
-    inline def setUptimeCheckConfigsVarargs(value: UptimeCheckConfig*): Self = StObject.set(x, "uptimeCheckConfigs", js.Array(value :_*))
+    inline def setUptimeCheckConfigsVarargs(value: UptimeCheckConfig*): Self = StObject.set(x, "uptimeCheckConfigs", js.Array(value*))
   }
 }

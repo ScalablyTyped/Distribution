@@ -22,6 +22,6 @@ object ManagedPropertyBundle {
     
     inline def setManagedPropertyUndefined: Self = StObject.set(x, "managedProperty", js.undefined)
     
-    inline def setManagedPropertyVarargs(value: ManagedProperty*): Self = StObject.set(x, "managedProperty", js.Array(value :_*))
+    inline def setManagedPropertyVarargs(value: ManagedProperty*): Self = StObject.set(x, "managedProperty", js.Array(value*))
   }
 }

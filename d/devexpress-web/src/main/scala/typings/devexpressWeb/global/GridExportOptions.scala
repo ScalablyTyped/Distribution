@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("GridExportOptions")
 @js.native
-class GridExportOptions ()
+open class GridExportOptions ()
   extends StObject
      with typings.devexpressWeb.GridExportOptions {
   

@@ -29,12 +29,12 @@ object EnableFastSnapshotRestoresResult {
     
     inline def setSuccessfulUndefined: Self = StObject.set(x, "Successful", js.undefined)
     
-    inline def setSuccessfulVarargs(value: EnableFastSnapshotRestoreSuccessItem*): Self = StObject.set(x, "Successful", js.Array(value :_*))
+    inline def setSuccessfulVarargs(value: EnableFastSnapshotRestoreSuccessItem*): Self = StObject.set(x, "Successful", js.Array(value*))
     
     inline def setUnsuccessful(value: EnableFastSnapshotRestoreErrorSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
     
     inline def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
     
-    inline def setUnsuccessfulVarargs(value: EnableFastSnapshotRestoreErrorItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
+    inline def setUnsuccessfulVarargs(value: EnableFastSnapshotRestoreErrorItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value*))
   }
 }

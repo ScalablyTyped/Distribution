@@ -29,7 +29,7 @@ trait SendDataPoint extends StObject {
   /**
     * Time of the data point.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.sesMod.Timestamp] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
 }
 object SendDataPoint {
   
@@ -56,7 +56,7 @@ object SendDataPoint {
     
     inline def setRejectsUndefined: Self = StObject.set(x, "Rejects", js.undefined)
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }

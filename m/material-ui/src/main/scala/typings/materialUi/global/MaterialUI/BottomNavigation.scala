@@ -11,11 +11,11 @@ object BottomNavigation {
   
   @JSGlobal("__MaterialUI.BottomNavigation.BottomNavigation")
   @js.native
-  class BottomNavigation ()
-    extends Component[BottomNavigationProps, js.Object, js.Any]
+  open class BottomNavigation ()
+    extends Component[BottomNavigationProps, js.Object, Any]
   
   @JSGlobal("__MaterialUI.BottomNavigation.BottomNavigationItem")
   @js.native
-  class BottomNavigationItem ()
-    extends Component[BottomNavigationItemProps, js.Object, js.Any]
+  open class BottomNavigationItem ()
+    extends Component[BottomNavigationItemProps, js.Object, Any]
 }

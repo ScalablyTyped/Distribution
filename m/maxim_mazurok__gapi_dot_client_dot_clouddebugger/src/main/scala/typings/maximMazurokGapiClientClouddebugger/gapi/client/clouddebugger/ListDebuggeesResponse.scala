@@ -25,6 +25,6 @@ object ListDebuggeesResponse {
     
     inline def setDebuggeesUndefined: Self = StObject.set(x, "debuggees", js.undefined)
     
-    inline def setDebuggeesVarargs(value: Debuggee*): Self = StObject.set(x, "debuggees", js.Array(value :_*))
+    inline def setDebuggeesVarargs(value: Debuggee*): Self = StObject.set(x, "debuggees", js.Array(value*))
   }
 }

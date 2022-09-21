@@ -1,7 +1,7 @@
 
 # Scala.js typings for rsmq
 
-Typings are for version 0.12.2
+Typings are for version 0.12.4
 
 ## Library description:
 A really simple message queue based on Redis
@@ -10,10 +10,10 @@ A really simple message queue based on Redis
 | ------------------ | :-------------: |
 | Full name          | rsmq |
 | Keywords           | queue, messagequeue, jobs, message-queue, redis |
-| # releases         | 3 |
-| # dependents       | 47 |
-| # downloads        | 1286359 |
-| # stars            | 20 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 134151.33333333334 |
+| # stars            | 1601.0 |
 
 ## Links
 - [Homepage](https://github.com/smrchy/rsmq#readme)

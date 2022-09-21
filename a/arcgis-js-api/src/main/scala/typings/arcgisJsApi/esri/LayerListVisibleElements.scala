@@ -11,7 +11,7 @@ trait LayerListVisibleElements
      with Object {
   
   /**
-    * Indicates whether to the status indicators will be displayed.
+    * Indicates whether the status indicators will be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#VisibleElements)
     */

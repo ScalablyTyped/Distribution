@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCrosshairGroupHeaderElement")
 @js.native
-class ASPxClientCrosshairGroupHeaderElement ()
+open class ASPxClientCrosshairGroupHeaderElement ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCrosshairGroupHeaderElement

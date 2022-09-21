@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "Listeners")
 @js.native
-class Listeners[EventData /* <: Target */] protected () extends StObject {
+open class Listeners[EventData /* <: Target */] protected () extends Observable[EventData] {
+  /**
+    * Objects of the type `Listeners` provide methods to manage listeners and trigger events. They
+    * encapsulate the tabris event system in a way that is more convenient to use with TypeScript,
+    * `async`/`await` and RxJS.
+    */
   def this(target: TargetType[EventData], `type`: String) = this()
   
   // tslint:disable-next-line:callable-types
@@ -65,8 +70,8 @@ class Listeners[EventData /* <: Target */] protected () extends StObject {
   
   /**
     * The event type. This value will be set in the `type` field of the event object given to the listener.
-    * It is the same value used by the [on](NativeObject#ontype-listener-context) and
-    * [trigger](http://docs.tabris.com/latest/api/NativeObject.html#triggertype) methods.
+    * It is the same value used by the [on](${doc:NativeObjectUrl}#ontype-listener-context) and
+    * [trigger](${doc:NativeObjectUrl}#triggertype) methods.
     */
   val `type`: String = js.native
 }

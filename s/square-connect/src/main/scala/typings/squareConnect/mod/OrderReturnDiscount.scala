@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "OrderReturnDiscount")
 @js.native
-class OrderReturnDiscount () extends StObject {
+open class OrderReturnDiscount () extends StObject {
   
   /**
     * The total declared monetary amount of the discount. `amount_money` is not set for percentage-based discounts.

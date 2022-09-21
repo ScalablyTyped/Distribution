@@ -6,11 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(`val`: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def apply(`val`: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def apply(`val`: Double): Boolean = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
   @JSImport("is-alphanumerical", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def isAlphanumerical(character: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlphanumerical")(character.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAlphanumerical(character: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlphanumerical")(character.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

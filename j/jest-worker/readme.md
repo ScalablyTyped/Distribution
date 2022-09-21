@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-worker
 
-Typings are for version 24.9.0
+Typings are for version 29.0.3
 
 ## Library description:
 Module for executing heavy tasks under forked processes in parallel, by providing a `Promise` based interface, minimum overhead, and bound workers.
@@ -10,10 +10,10 @@ Module for executing heavy tasks under forked processes in parallel, by providin
 | ------------------ | :-------------: |
 | Full name          | jest-worker |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 169 |
-| # downloads        | 800503066 |
-| # stars            | 0 |
+| # releases         | 63 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6942225533333334E8 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

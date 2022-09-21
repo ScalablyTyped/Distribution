@@ -1,6 +1,5 @@
 package typings.googleMaps.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ trait TimeZoneRequest extends StObject {
     * That is, if you specify a past timestamp, the API does not take into account the possibility that
     * the location was previously in a different time zone.
     */
-  var timestamp: js.UndefOr[Date | Double] = js.undefined
+  var timestamp: js.UndefOr[js.Date | Double] = js.undefined
 }
 object TimeZoneRequest {
   
@@ -42,7 +41,7 @@ object TimeZoneRequest {
     
     inline def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date | Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date | Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }

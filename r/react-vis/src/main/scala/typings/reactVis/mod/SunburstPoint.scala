@@ -36,7 +36,7 @@ object SunburstPoint {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: SunburstPoint*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: SunburstPoint*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setColor(value: Double | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -22,10 +22,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-ga", "OutboundLink")
   @js.native
-  class OutboundLink_ protected ()
-    extends Component[OutboundLinkProps & HTMLProps[HTMLAnchorElement], ComponentState, js.Any] {
+  open class OutboundLink_ protected () extends Component[OutboundLinkProps & HTMLProps[HTMLAnchorElement], ComponentState, Any] {
     def this(props: OutboundLinkProps & HTMLProps[HTMLAnchorElement]) = this()
-    def this(props: OutboundLinkProps & HTMLProps[HTMLAnchorElement], context: js.Any) = this()
+    def this(props: OutboundLinkProps & HTMLProps[HTMLAnchorElement], context: Any) = this()
   }
   
   @JSImport("react-ga", "OutboundLink")
@@ -41,8 +40,8 @@ object mod {
   inline def exception(fieldsObject: FieldsObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exception")(fieldsObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def exception(fieldsObject: FieldsObject, trackerNames: TrackerNames): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exception")(fieldsObject.asInstanceOf[js.Any], trackerNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def ga(): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ga")().asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
-  inline def ga(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ga")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def ga(): js.Function1[/* repeated */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ga")().asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
+  inline def ga(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ga")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   inline def initialize(trackers: js.Array[Tracker]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(trackers.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def initialize(trackers: js.Array[Tracker], options: InitializeOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(trackers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -379,7 +378,7 @@ object mod {
     }
   }
   
-  type FieldsObject = StringDictionary[js.Any]
+  type FieldsObject = StringDictionary[Any]
   
   trait GaOptions extends StObject {
     
@@ -618,7 +617,7 @@ object mod {
       
       inline def setTrackerNamesUndefined: Self = StObject.set(x, "trackerNames", js.undefined)
       
-      inline def setTrackerNamesVarargs(value: String*): Self = StObject.set(x, "trackerNames", js.Array(value :_*))
+      inline def setTrackerNamesVarargs(value: String*): Self = StObject.set(x, "trackerNames", js.Array(value*))
     }
   }
   
@@ -626,38 +625,38 @@ object mod {
   trait Plugin_ extends StObject {
     
     def execute(pluginName: String, action: String, actionTypeOrPayload: String): Unit = js.native
-    def execute(pluginName: String, action: String, actionTypeOrPayload: String, payload: js.Any): Unit = js.native
-    def execute(pluginName: String, action: String, actionTypeOrPayload: js.Any): Unit = js.native
-    def execute(pluginName: String, action: String, actionTypeOrPayload: js.Any, payload: js.Any): Unit = js.native
+    def execute(pluginName: String, action: String, actionTypeOrPayload: String, payload: Any): Unit = js.native
+    def execute(pluginName: String, action: String, actionTypeOrPayload: Any): Unit = js.native
+    def execute(pluginName: String, action: String, actionTypeOrPayload: Any, payload: Any): Unit = js.native
     
     def require(name: String): Unit = js.native
-    def require(name: String, options: js.Any): Unit = js.native
-    def require(name: String, options: js.Any, trackerName: String): Unit = js.native
+    def require(name: String, options: Any): Unit = js.native
+    def require(name: String, options: Any, trackerName: String): Unit = js.native
     def require(name: String, options: Unit, trackerName: String): Unit = js.native
   }
   
   trait TestModeAPI_ extends StObject {
     
-    var calls: js.Array[js.Array[js.Any]]
+    var calls: js.Array[js.Array[Any]]
     
-    def ga(args: js.Any*): js.Any
+    def ga(args: Any*): Any
     
     var resetCalls: js.Function
   }
   object TestModeAPI_ {
     
-    inline def apply(calls: js.Array[js.Array[js.Any]], ga: /* repeated */ js.Any => js.Any, resetCalls: js.Function): TestModeAPI_ = {
+    inline def apply(calls: js.Array[js.Array[Any]], ga: /* repeated */ Any => Any, resetCalls: js.Function): TestModeAPI_ = {
       val __obj = js.Dynamic.literal(calls = calls.asInstanceOf[js.Any], ga = js.Any.fromFunction1(ga), resetCalls = resetCalls.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestModeAPI_]
     }
     
     extension [Self <: TestModeAPI_](x: Self) {
       
-      inline def setCalls(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+      inline def setCalls(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
       
-      inline def setCallsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "calls", js.Array(value :_*))
+      inline def setCallsVarargs(value: js.Array[Any]*): Self = StObject.set(x, "calls", js.Array(value*))
       
-      inline def setGa(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "ga", js.Any.fromFunction1(value))
+      inline def setGa(value: /* repeated */ Any => Any): Self = StObject.set(x, "ga", js.Any.fromFunction1(value))
       
       inline def setResetCalls(value: js.Function): Self = StObject.set(x, "resetCalls", value.asInstanceOf[js.Any])
     }

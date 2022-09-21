@@ -15,10 +15,9 @@ object ratingMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Rating", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[RatingProps, ComponentState, js.Any] {
+  open class default protected () extends Component[RatingProps, ComponentState, Any] {
     def this(props: RatingProps) = this()
-    def this(props: RatingProps, context: js.Any) = this()
+    def this(props: RatingProps, context: Any) = this()
   }
   object default extends Shortcut {
     
@@ -29,10 +28,9 @@ object ratingMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Rating", "default.Icon")
     @js.native
-    class Icon protected ()
-      extends Component[RatingIconProps, ComponentState, js.Any] {
+    open class Icon protected () extends Component[RatingIconProps, ComponentState, Any] {
       def this(props: RatingIconProps) = this()
-      def this(props: RatingIconProps, context: js.Any) = this()
+      def this(props: RatingIconProps, context: Any) = this()
     }
     
     type _To = RatingComponent

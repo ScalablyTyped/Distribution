@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UnitInvoice extends StObject {
   
-  /** Additional charges for a unit, e.g. shipping costs. */
+  /** Additional charges for a unit, for example, shipping costs. */
   var additionalCharges: js.UndefOr[js.Array[UnitInvoiceAdditionalCharge]] = js.undefined
   
-  /** [required] Pre-tax or post-tax price of the unit depending on the locality of the order. */
+  /**
+    * [required] Pre-tax or post-tax price of one unit depending on the locality of the order. *Note:* Invoicing works on a per unit basis. The `unitPrice` is the price of a single unit,
+    * and will be multiplied by the number of entries in `shipmentUnitId`.
+    */
   var unitPrice: js.UndefOr[Price] = js.undefined
   
   /** Tax amounts to apply to the unit price. */
@@ -28,7 +31,7 @@ object UnitInvoice {
     
     inline def setAdditionalChargesUndefined: Self = StObject.set(x, "additionalCharges", js.undefined)
     
-    inline def setAdditionalChargesVarargs(value: UnitInvoiceAdditionalCharge*): Self = StObject.set(x, "additionalCharges", js.Array(value :_*))
+    inline def setAdditionalChargesVarargs(value: UnitInvoiceAdditionalCharge*): Self = StObject.set(x, "additionalCharges", js.Array(value*))
     
     inline def setUnitPrice(value: Price): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
     
@@ -36,7 +39,7 @@ object UnitInvoice {
     
     inline def setUnitPriceTaxesUndefined: Self = StObject.set(x, "unitPriceTaxes", js.undefined)
     
-    inline def setUnitPriceTaxesVarargs(value: UnitInvoiceTaxLine*): Self = StObject.set(x, "unitPriceTaxes", js.Array(value :_*))
+    inline def setUnitPriceTaxesVarargs(value: UnitInvoiceTaxLine*): Self = StObject.set(x, "unitPriceTaxes", js.Array(value*))
     
     inline def setUnitPriceUndefined: Self = StObject.set(x, "unitPrice", js.undefined)
   }

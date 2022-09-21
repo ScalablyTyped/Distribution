@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object strategyInterfaceMod {
   
-  type StrategyInterface[StrategyOptions /* <: js.Array[js.Any] */, AuthOptions /* <: js.Array[js.Any] */, Authentication /* <: js.Object */] = js.Function1[/* args */ StrategyOptions, AuthInterface[AuthOptions, Authentication]]
+  type StrategyInterface[StrategyOptions /* <: js.Array[Any] */, AuthOptions /* <: js.Array[Any] */, Authentication /* <: js.Object */] = js.Function1[/* args */ StrategyOptions, AuthInterface[AuthOptions, Authentication]]
 }

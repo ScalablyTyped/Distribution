@@ -6,32 +6,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NotificationOptions extends StObject {
   
+  /* standard dom */
   var actions: js.UndefOr[js.Array[NotificationAction]] = js.undefined
   
+  /* standard dom */
   var badge: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var body: js.UndefOr[java.lang.String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  /* standard dom */
+  var data: js.UndefOr[Any] = js.undefined
   
+  /* standard dom */
   var dir: js.UndefOr[NotificationDirection] = js.undefined
   
+  /* standard dom */
   var icon: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var image: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var lang: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var renotify: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var requireInteraction: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var silent: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard dom */
   var tag: js.UndefOr[java.lang.String] = js.undefined
   
-  var timestamp: js.UndefOr[Double] = js.undefined
+  /* standard dom */
+  var timestamp: js.UndefOr[EpochTimeStamp] = js.undefined
   
+  /* standard dom */
   var vibrate: js.UndefOr[VibratePattern] = js.undefined
 }
 object NotificationOptions {
@@ -47,7 +61,7 @@ object NotificationOptions {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: NotificationAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: NotificationAction*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setBadge(value: java.lang.String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
@@ -57,7 +71,7 @@ object NotificationOptions {
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -93,7 +107,7 @@ object NotificationOptions {
     
     inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: EpochTimeStamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
@@ -101,6 +115,6 @@ object NotificationOptions {
     
     inline def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
     
-    inline def setVibrateVarargs(value: Double*): Self = StObject.set(x, "vibrate", js.Array(value :_*))
+    inline def setVibrateVarargs(value: Double*): Self = StObject.set(x, "vibrate", js.Array(value*))
   }
 }

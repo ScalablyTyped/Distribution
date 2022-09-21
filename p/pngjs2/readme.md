@@ -10,15 +10,12 @@ PNG encoder/decoder in pure JS, supporting any bit size & interlace, async & syn
 | ------------------ | :-------------: |
 | Full name          | pngjs2 |
 | Keywords           | PNG, decoder, encoder, js-png, node-png, parser, png, png-js, png-parse, pngjs |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 460766 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 23708.333333333332 |
+| # stars            | 539.0 |
 
 ## Links
-- [Homepage](https://github.com/lukeapage/pngjs2)
-- [Bugs](https://github.com/lukeapage/pngjs2/issues)
-- [Repository](https://github.com/lukeapage/pngjs2)
 - [Npm](https://www.npmjs.com/package/pngjs2)
     
 

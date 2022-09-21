@@ -25,12 +25,12 @@ object Move {
     
     inline def setAddedParentsUndefined: Self = StObject.set(x, "addedParents", js.undefined)
     
-    inline def setAddedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "addedParents", js.Array(value :_*))
+    inline def setAddedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "addedParents", js.Array(value*))
     
     inline def setRemovedParents(value: js.Array[TargetReference]): Self = StObject.set(x, "removedParents", value.asInstanceOf[js.Any])
     
     inline def setRemovedParentsUndefined: Self = StObject.set(x, "removedParents", js.undefined)
     
-    inline def setRemovedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "removedParents", js.Array(value :_*))
+    inline def setRemovedParentsVarargs(value: TargetReference*): Self = StObject.set(x, "removedParents", js.Array(value*))
   }
 }

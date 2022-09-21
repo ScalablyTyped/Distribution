@@ -9,8 +9,6 @@ trait EditMessageTextOptions
      with EditMessageCaptionOptions {
   
   var disable_web_page_preview: js.UndefOr[Boolean] = js.undefined
-  
-  var parse_mode: js.UndefOr[ParseMode] = js.undefined
 }
 object EditMessageTextOptions {
   
@@ -24,9 +22,5 @@ object EditMessageTextOptions {
     inline def setDisable_web_page_preview(value: Boolean): Self = StObject.set(x, "disable_web_page_preview", value.asInstanceOf[js.Any])
     
     inline def setDisable_web_page_previewUndefined: Self = StObject.set(x, "disable_web_page_preview", js.undefined)
-    
-    inline def setParse_mode(value: ParseMode): Self = StObject.set(x, "parse_mode", value.asInstanceOf[js.Any])
-    
-    inline def setParse_modeUndefined: Self = StObject.set(x, "parse_mode", js.undefined)
   }
 }

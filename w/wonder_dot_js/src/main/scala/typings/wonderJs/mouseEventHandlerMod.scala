@@ -13,9 +13,9 @@ object mouseEventHandlerMod {
   
   @JSImport("wonder.js/dist/es2015/event/handler/MouseEventHandler", "MouseEventHandler")
   @js.native
-  class MouseEventHandler () extends PointEventHandler {
+  open class MouseEventHandler () extends PointEventHandler {
     
-    /* protected */ def addEngineHandler(eventName: EEventName, handler: js.Function1[/* event */ MouseEvent, Unit]): js.Any = js.native
+    /* protected */ def addEngineHandler(eventName: EEventName, handler: js.Function1[/* event */ MouseEvent, Unit]): Any = js.native
     
     /* protected */ def createEventObject(dom: HTMLElement, event: IMouseEventData, eventName: EEventName): MouseEvent = js.native
   }
@@ -26,6 +26,6 @@ object mouseEventHandlerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
+    inline def getInstance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[Any]
   }
 }

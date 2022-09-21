@@ -14,7 +14,7 @@ object colorMod {
   
   @JSImport("@storybook/addon-knobs/dist/components/types/Color", JSImport.Default)
   @js.native
-  class default () extends ColorType
+  open class default () extends ColorType
   /* static members */
   object default {
     
@@ -38,8 +38,7 @@ object colorMod {
   }
   
   @js.native
-  trait ColorType
-    extends Component[ColorTypeProps, ColorTypeState, js.Any] {
+  trait ColorType extends Component[ColorTypeProps, ColorTypeState, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MColorType(): Unit = js.native
@@ -47,9 +46,9 @@ object colorMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MColorType(): Unit = js.native
     
-    /* private */ var handleChange: js.Any = js.native
+    /* private */ var handleChange: Any = js.native
     
-    /* private */ var handleClick: js.Any = js.native
+    /* private */ var handleClick: Any = js.native
     
     def handleWindowMouseDown(e: MouseEvent): Unit = js.native
     

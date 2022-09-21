@@ -10,15 +10,12 @@ Emit event periodically (even when app is in the background)
 | ------------------ | :-------------: |
 | Full name          | react-native-background-timer |
 | Keywords           | react-native, background, timer, android, ios |
-| # releases         | 7 |
-| # dependents       | 17 |
-| # downloads        | 988107 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 141543.0 |
+| # stars            | 1368.0 |
 
 ## Links
-- [Homepage](https://github.com/ocetnik/react-native-background-timer#readme)
-- [Bugs](https://github.com/ocetnik/react-native-background-timer/issues)
-- [Repository](https://github.com/ocetnik/react-native-background-timer)
 - [Npm](https://www.npmjs.com/package/react-native-background-timer)
     
 

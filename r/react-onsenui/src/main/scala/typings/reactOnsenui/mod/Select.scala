@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "Select")
 @js.native
-class Select protected ()
-  extends Component[Autofocus, js.Any] {
+open class Select protected () extends Component[Autofocus, Any] {
   def this(props: HTMLAttributesidclassName & Autofocus) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & Autofocus, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & Autofocus, context: Any) = this()
 }

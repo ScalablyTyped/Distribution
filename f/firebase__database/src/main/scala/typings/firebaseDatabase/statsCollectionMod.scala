@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object statsCollectionMod {
   
-  @JSImport("@firebase/database/dist/src/core/stats/StatsCollection", "StatsCollection")
+  @JSImport("@firebase/database/dist/node-esm/src/core/stats/StatsCollection", "StatsCollection")
   @js.native
-  class StatsCollection () extends StObject {
+  open class StatsCollection () extends StObject {
     
-    /* private */ var counters_ : js.Any = js.native
+    /* private */ var counters_ : Any = js.native
     
     def get(): StringDictionary[Double] = js.native
     

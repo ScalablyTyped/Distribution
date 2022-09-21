@@ -19,13 +19,13 @@ trait LayerList
   var iconClass: String = js.native
   
   /**
-    * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html).
+    * A function that executes each time a [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) is created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#listItemCreatedFunction)
     */
-  def listItemCreatedFunction(event: js.Any): Unit = js.native
+  def listItemCreatedFunction(event: Any): scala.Unit = js.native
   /**
-    * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html).
+    * A function that executes each time a [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) is created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#listItemCreatedFunction)
     */
@@ -34,6 +34,8 @@ trait LayerList
   
   /**
     * Indicates whether more than one list item may be selected by the user at a single time.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#multipleSelectionEnabled)
     */
@@ -59,24 +61,19 @@ trait LayerList
   /**
     * Indicates whether list items may be selected by the user.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#selectionEnabled)
     */
   var selectionEnabled: Boolean = js.native
-  
-  /**
-    * Option for enabling status indicators, which indicate whether or not each layer is loading resources.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#statusIndicatorsVisible)
-    */
-  var statusIndicatorsVisible: Boolean = js.native
   
   /**
     * Triggers the [trigger-action](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#event-trigger-action) event and executes the given [action](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html) or [action toggle](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#triggerAction)
     */
-  def triggerAction(action: ActionButton, item: ListItem): Unit = js.native
-  def triggerAction(action: ActionToggle, item: ListItem): Unit = js.native
+  def triggerAction(action: ActionButton, item: ListItem): scala.Unit = js.native
+  def triggerAction(action: ActionToggle, item: ListItem): scala.Unit = js.native
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).

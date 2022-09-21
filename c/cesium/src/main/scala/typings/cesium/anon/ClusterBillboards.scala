@@ -17,6 +17,8 @@ trait ClusterBillboards extends StObject {
   var minimumClusterSize: js.UndefOr[Double] = js.undefined
   
   var pixelRange: js.UndefOr[Double] = js.undefined
+  
+  var show: js.UndefOr[Boolean] = js.undefined
 }
 object ClusterBillboards {
   
@@ -50,5 +52,9 @@ object ClusterBillboards {
     inline def setPixelRange(value: Double): Self = StObject.set(x, "pixelRange", value.asInstanceOf[js.Any])
     
     inline def setPixelRangeUndefined: Self = StObject.set(x, "pixelRange", js.undefined)
+    
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

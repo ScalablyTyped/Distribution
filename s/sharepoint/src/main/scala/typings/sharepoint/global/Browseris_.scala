@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Browseris")
 @js.native
-class Browseris_ ()
+open class Browseris_ ()
   extends StObject
      with Browseris {
   

@@ -17,6 +17,11 @@ trait CreateApplicationRequest extends StObject {
   var ApplicationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationDescription] = js.undefined
   
   /**
+    * Use the STREAMING mode to create a Kinesis Data Analytics Studio notebook. To create a Kinesis Data Analytics Studio notebook, use the INTERACTIVE mode.
+    */
+  var ApplicationMode: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationMode] = js.undefined
+  
+  /**
     * The name of your application (for example, sample-app).
     */
   var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName
@@ -27,7 +32,7 @@ trait CreateApplicationRequest extends StObject {
   var CloudWatchLoggingOptions: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CloudWatchLoggingOptions] = js.undefined
   
   /**
-    * The runtime environment for the application (SQL-1.0, FLINK-1_6, or FLINK-1_8).
+    * The runtime environment for the application (SQL-1_0, FLINK-1_6, FLINK-1_8, or FLINK-1_11).
     */
   var RuntimeEnvironment: typings.awsSdk.kinesisanalyticsv2Mod.RuntimeEnvironment
   
@@ -62,13 +67,17 @@ object CreateApplicationRequest {
     
     inline def setApplicationDescriptionUndefined: Self = StObject.set(x, "ApplicationDescription", js.undefined)
     
+    inline def setApplicationMode(value: ApplicationMode): Self = StObject.set(x, "ApplicationMode", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationModeUndefined: Self = StObject.set(x, "ApplicationMode", js.undefined)
+    
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
     inline def setCloudWatchLoggingOptions(value: CloudWatchLoggingOptions): Self = StObject.set(x, "CloudWatchLoggingOptions", value.asInstanceOf[js.Any])
     
     inline def setCloudWatchLoggingOptionsUndefined: Self = StObject.set(x, "CloudWatchLoggingOptions", js.undefined)
     
-    inline def setCloudWatchLoggingOptionsVarargs(value: CloudWatchLoggingOption*): Self = StObject.set(x, "CloudWatchLoggingOptions", js.Array(value :_*))
+    inline def setCloudWatchLoggingOptionsVarargs(value: CloudWatchLoggingOption*): Self = StObject.set(x, "CloudWatchLoggingOptions", js.Array(value*))
     
     inline def setRuntimeEnvironment(value: RuntimeEnvironment): Self = StObject.set(x, "RuntimeEnvironment", value.asInstanceOf[js.Any])
     
@@ -78,6 +87,6 @@ object CreateApplicationRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

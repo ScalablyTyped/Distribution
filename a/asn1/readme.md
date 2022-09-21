@@ -10,10 +10,10 @@ Contains parsers and serializers for ASN.1 (currently BER only)
 | ------------------ | :-------------: |
 | Full name          | asn1 |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 181 |
-| # downloads        | 858257500 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 8.907406933333333E7 |
+| # stars            | 61.0 |
 
 ## Links
 - [Homepage](https://github.com/joyent/node-asn1#readme)

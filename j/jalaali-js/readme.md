@@ -10,15 +10,12 @@ Converts Gregorian and Jalaali calendars to each other
 | ------------------ | :-------------: |
 | Full name          | jalaali-js |
 | Keywords           | jalaali, jalali, persian, khorshidi, shamsi, calendar, date |
-| # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 327087 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 147993.33333333334 |
+| # stars            | 232.0 |
 
 ## Links
-- [Homepage](https://github.com/jalaali/jalaali-js)
-- [Bugs](https://github.com/jalaali/jalaali-js/issues)
-- [Repository](https://github.com/jalaali/jalaali-js)
 - [Npm](https://www.npmjs.com/package/jalaali-js)
     
 

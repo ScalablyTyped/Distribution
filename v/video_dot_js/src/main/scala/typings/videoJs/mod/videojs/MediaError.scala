@@ -76,11 +76,11 @@ trait MediaError extends StObject {
     * up on the `Player` error overlay.
     *
     */
-  var status: js.Array[js.Any]
+  var status: js.Array[Any]
 }
 object MediaError {
   
-  inline def apply(code: Double, message: String, status: js.Array[js.Any]): MediaError = {
+  inline def apply(code: Double, message: String, status: js.Array[Any]): MediaError = {
     val __obj = js.Dynamic.literal(MEDIA_ERR_ABORTED = 1, MEDIA_ERR_CUSTOM = 0, MEDIA_ERR_DECODE = 3, MEDIA_ERR_ENCRYPTED = 5, MEDIA_ERR_NETWORK = 2, MEDIA_ERR_SRC_NOT_SUPPORTED = 4, code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaError]
   }
@@ -103,8 +103,8 @@ object MediaError {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setStatus(value: js.Array[js.Any]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: js.Array[Any]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setStatusVarargs(value: js.Any*): Self = StObject.set(x, "status", js.Array(value :_*))
+    inline def setStatusVarargs(value: Any*): Self = StObject.set(x, "status", js.Array(value*))
   }
 }

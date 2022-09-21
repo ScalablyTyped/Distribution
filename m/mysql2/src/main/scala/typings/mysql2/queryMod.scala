@@ -8,7 +8,6 @@ import typings.mysql2.mysql2Strings.fields
 import typings.mysql2.mysql2Strings.result
 import typings.mysql2.okPacketMod.OkPacket
 import typings.mysql2.rowDataPacketMod.RowDataPacket
-import typings.node.NodeJS.ErrnoException
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,7 +17,7 @@ object queryMod {
   
   @JSImport("mysql2/typings/mysql/lib/protocol/sequences/Query", JSImport.Namespace)
   @js.native
-  class ^ () extends Query
+  open class ^ () extends Query
   
   @js.native
   trait Query
@@ -30,19 +29,19 @@ object queryMod {
       * @param firstByte The first byte of the packet
       * @param parser The packet parser
       */
-    def determinePacket(firstByte: Double, parser: js.Any): js.Any = js.native
+    def determinePacket(firstByte: Double, parser: Any): Any = js.native
     
     def on(event: String, listener: js.Function): this.type = js.native
     @JSName("on")
-    def on_end(event: end, listener: js.Function0[js.Any]): this.type = js.native
+    def on_end(event: end, listener: js.Function0[Any]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ QueryError, js.Any]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ QueryError, Any]): this.type = js.native
     @JSName("on")
-    def on_fields(event: fields, listener: js.Function2[/* fields */ FieldPacket, /* index */ Double, js.Any]): this.type = js.native
+    def on_fields(event: fields, listener: js.Function2[/* fields */ FieldPacket, /* index */ Double, Any]): this.type = js.native
     @JSName("on")
     def on_result(
       event: result,
-      listener: js.Function2[/* result */ RowDataPacket | OkPacket, /* index */ Double, js.Any]
+      listener: js.Function2[/* result */ RowDataPacket | OkPacket, /* index */ Double, Any]
     ): this.type = js.native
     
     /**
@@ -63,17 +62,15 @@ object queryMod {
     def stream(options: StreamOptions): Readable = js.native
   }
   
-  trait QueryError
-    extends StObject
-       with ErrnoException {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException * / any */ trait QueryError extends StObject {
     
     /**
       * Either a MySQL server error (e.g. 'ER_ACCESS_DENIED_ERROR'),
       * a node.js error (e.g. 'ECONNREFUSED') or an internal error
       * (e.g. 'PROTOCOL_CONNECTION_LOST').
       */
-    @JSName("code")
-    var code_QueryError: String
+    var code: String
     
     /**
       * Boolean, indicating if this error is terminal to the connection object.
@@ -97,8 +94,8 @@ object queryMod {
   }
   object QueryError {
     
-    inline def apply(code: String, fatal: Boolean, message: String, name: String): QueryError = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    inline def apply(code: String, fatal: Boolean): QueryError = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryError]
     }
     
@@ -128,7 +125,13 @@ object queryMod {
       * Either a boolean or string. If true, tables will be nested objects. If string (e.g. '_'), tables will be
       * nested as tableName_fieldName
       */
-    var nestTables: js.UndefOr[js.Any] = js.undefined
+    var nestTables: js.UndefOr[Any] = js.undefined
+    
+    /**
+      * This overrides the same option set at the connection level.
+      * 
+      */
+    var rowsAsArray: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The SQL for the query
@@ -163,12 +166,12 @@ object queryMod {
       *
       * You can find which field function you need to use by looking at: RowDataPacket.prototype._typeCast
       */
-    var typeCast: js.UndefOr[js.Any] = js.undefined
+    var typeCast: js.UndefOr[Any] = js.undefined
     
     /**
       * The values for the query
       */
-    var values: js.UndefOr[js.Any | js.Array[js.Any] | StringDictionary[js.Any]] = js.undefined
+    var values: js.UndefOr[Any | js.Array[Any] | StringDictionary[Any]] = js.undefined
   }
   object QueryOptions {
     
@@ -179,9 +182,13 @@ object queryMod {
     
     extension [Self <: QueryOptions](x: Self) {
       
-      inline def setNestTables(value: js.Any): Self = StObject.set(x, "nestTables", value.asInstanceOf[js.Any])
+      inline def setNestTables(value: Any): Self = StObject.set(x, "nestTables", value.asInstanceOf[js.Any])
       
       inline def setNestTablesUndefined: Self = StObject.set(x, "nestTables", js.undefined)
+      
+      inline def setRowsAsArray(value: Boolean): Self = StObject.set(x, "rowsAsArray", value.asInstanceOf[js.Any])
+      
+      inline def setRowsAsArrayUndefined: Self = StObject.set(x, "rowsAsArray", js.undefined)
       
       inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
       
@@ -189,15 +196,15 @@ object queryMod {
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      inline def setTypeCast(value: js.Any): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
+      inline def setTypeCast(value: Any): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
       
       inline def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
       
-      inline def setValues(value: js.Any | js.Array[js.Any] | StringDictionary[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Any | js.Array[Any] | StringDictionary[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -211,7 +218,7 @@ object queryMod {
     /**
       * The object mode of the stream (Default: true)
       */
-    var objectMode: js.UndefOr[js.Any] = js.undefined
+    var objectMode: js.UndefOr[Any] = js.undefined
   }
   object StreamOptions {
     
@@ -226,7 +233,7 @@ object queryMod {
       
       inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
-      inline def setObjectMode(value: js.Any): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      inline def setObjectMode(value: Any): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
       inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
     }

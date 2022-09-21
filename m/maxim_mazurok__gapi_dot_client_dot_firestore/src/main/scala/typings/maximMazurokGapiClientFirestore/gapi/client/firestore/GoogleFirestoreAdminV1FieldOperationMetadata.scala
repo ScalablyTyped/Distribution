@@ -26,6 +26,9 @@ trait GoogleFirestoreAdminV1FieldOperationMetadata extends StObject {
   
   /** The state of the operation. */
   var state: js.UndefOr[String] = js.undefined
+  
+  /** Describes the deltas of TTL configuration. */
+  var ttlConfigDelta: js.UndefOr[GoogleFirestoreAdminV1TtlConfigDelta] = js.undefined
 }
 object GoogleFirestoreAdminV1FieldOperationMetadata {
   
@@ -48,7 +51,7 @@ object GoogleFirestoreAdminV1FieldOperationMetadata {
     
     inline def setIndexConfigDeltasUndefined: Self = StObject.set(x, "indexConfigDeltas", js.undefined)
     
-    inline def setIndexConfigDeltasVarargs(value: GoogleFirestoreAdminV1IndexConfigDelta*): Self = StObject.set(x, "indexConfigDeltas", js.Array(value :_*))
+    inline def setIndexConfigDeltasVarargs(value: GoogleFirestoreAdminV1IndexConfigDelta*): Self = StObject.set(x, "indexConfigDeltas", js.Array(value*))
     
     inline def setProgressBytes(value: GoogleFirestoreAdminV1Progress): Self = StObject.set(x, "progressBytes", value.asInstanceOf[js.Any])
     
@@ -65,5 +68,9 @@ object GoogleFirestoreAdminV1FieldOperationMetadata {
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setTtlConfigDelta(value: GoogleFirestoreAdminV1TtlConfigDelta): Self = StObject.set(x, "ttlConfigDelta", value.asInstanceOf[js.Any])
+    
+    inline def setTtlConfigDeltaUndefined: Self = StObject.set(x, "ttlConfigDelta", js.undefined)
   }
 }

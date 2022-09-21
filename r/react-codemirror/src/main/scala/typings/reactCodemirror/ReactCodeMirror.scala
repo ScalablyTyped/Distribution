@@ -1,35 +1,13 @@
 package typings.reactCodemirror
 
-import typings.codemirror.mod.Editor
-import typings.codemirror.mod.EditorChange
-import typings.codemirror.mod.EditorConfiguration
-import typings.codemirror.mod.ScrollInfo
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
-import typings.react.mod.Props
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactCodeMirror {
   
-  @js.native
-  trait ReactCodeMirror
-    extends Component[ReactCodeMirrorProps, js.Object, js.Any] {
-    
-    /** Focuses the CodeMirror instance. */
-    def focus(): Unit = js.native
-    
-    /** Returns the CodeMirror instance, if available. */
-    def getCodeMirror(): Editor = js.native
-  }
-  
-  type ReactCodeMirrorClass = ComponentClass[ReactCodeMirrorProps, ComponentState]
-  
-  trait ReactCodeMirrorProps
-    extends StObject
-       with Props[typings.reactCodemirror.ReactCodeMirror.ReactCodeMirror] {
+  trait ReactCodeMirrorProps extends StObject {
     
     /** Automatically focuses the editor when it is mounted (default false) */
     var autoFocus: js.UndefOr[Boolean] = js.undefined
@@ -37,12 +15,20 @@ object ReactCodeMirror {
     /** Automatically persist changes to underlying textarea (default false) */
     var autoSave: js.UndefOr[Boolean] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /** Adds a custom CSS class to the editor */
     var className: js.UndefOr[String] = js.undefined
     
     /** Provides a specific CodeMirror instance (defaults to `require('codemirror')`) */
     var codeMirrorInstance: js.UndefOr[
-        js.Function2[/* host */ js.Any, /* options */ js.UndefOr[EditorConfiguration], Editor]
+        js.Function2[
+          /* host */ Any, 
+          /* options */ js.UndefOr[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.EditorConfiguration */ Any
+          ], 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.Editor */ Any
+        ]
       ] = js.undefined
     
     /** Provides the default (not changed tracked) value to the editor */
@@ -52,19 +38,37 @@ object ReactCodeMirror {
     var name: js.UndefOr[String] = js.undefined
     
     /** Called when a change is made */
-    var onChange: js.UndefOr[js.Function2[/* newValue */ String, /* change */ EditorChange, js.Any]] = js.undefined
+    var onChange: js.UndefOr[
+        js.Function2[
+          /* newValue */ String, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.EditorChange */ /* change */ Any, 
+          Any
+        ]
+      ] = js.undefined
     
     /** Called when the cursor is moved */
-    var onCursorActivity: js.UndefOr[js.Function1[/* codemirror */ Editor, js.Any]] = js.undefined
+    var onCursorActivity: js.UndefOr[
+        js.Function1[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.Editor */ /* codemirror */ Any, 
+          Any
+        ]
+      ] = js.undefined
     
     /** Called when the editor is focused or loses focus */
-    var onFocusChange: js.UndefOr[js.Function1[/* focused */ Boolean, js.Any]] = js.undefined
+    var onFocusChange: js.UndefOr[js.Function1[/* focused */ Boolean, Any]] = js.undefined
     
     /** Called when the editor is scrolled */
-    var onScroll: js.UndefOr[js.Function1[/* scrollInfo */ ScrollInfo, js.Any]] = js.undefined
+    var onScroll: js.UndefOr[
+        js.Function1[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.ScrollInfo */ /* scrollInfo */ Any, 
+          Any
+        ]
+      ] = js.undefined
     
     /** Options passed to the CodeMirror instance */
-    var options: js.UndefOr[EditorConfiguration] = js.undefined
+    var options: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.EditorConfiguration */ Any
+      ] = js.undefined
     
     /** (DEPRECATED), use `name` */
     var path: js.UndefOr[String] = js.undefined
@@ -92,11 +96,19 @@ object ReactCodeMirror {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setCodeMirrorInstance(value: (/* host */ js.Any, /* options */ js.UndefOr[EditorConfiguration]) => Editor): Self = StObject.set(x, "codeMirrorInstance", js.Any.fromFunction2(value))
+      inline def setCodeMirrorInstance(
+        value: (/* host */ Any, /* options */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.EditorConfiguration */ Any
+            ]) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.Editor */ Any
+      ): Self = StObject.set(x, "codeMirrorInstance", js.Any.fromFunction2(value))
       
       inline def setCodeMirrorInstanceUndefined: Self = StObject.set(x, "codeMirrorInstance", js.undefined)
       
@@ -108,23 +120,31 @@ object ReactCodeMirror {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnChange(value: (/* newValue */ String, /* change */ EditorChange) => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(
+        value: (/* newValue */ String, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.EditorChange */ /* change */ Any) => Any
+      ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnCursorActivity(value: /* codemirror */ Editor => js.Any): Self = StObject.set(x, "onCursorActivity", js.Any.fromFunction1(value))
+      inline def setOnCursorActivity(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.Editor */ /* codemirror */ Any => Any
+      ): Self = StObject.set(x, "onCursorActivity", js.Any.fromFunction1(value))
       
       inline def setOnCursorActivityUndefined: Self = StObject.set(x, "onCursorActivity", js.undefined)
       
-      inline def setOnFocusChange(value: /* focused */ Boolean => js.Any): Self = StObject.set(x, "onFocusChange", js.Any.fromFunction1(value))
+      inline def setOnFocusChange(value: /* focused */ Boolean => Any): Self = StObject.set(x, "onFocusChange", js.Any.fromFunction1(value))
       
       inline def setOnFocusChangeUndefined: Self = StObject.set(x, "onFocusChange", js.undefined)
       
-      inline def setOnScroll(value: /* scrollInfo */ ScrollInfo => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      inline def setOnScroll(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.ScrollInfo */ /* scrollInfo */ Any => Any
+      ): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      inline def setOptions(value: EditorConfiguration): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodeMirror.EditorConfiguration */ Any
+      ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       

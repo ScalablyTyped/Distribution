@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GetInitialResizeGroupState extends StObject {
   
-  def getInitialResizeGroupState(data: js.Any): IResizeGroupState = js.native
+  def getInitialResizeGroupState(data: Any): IResizeGroupState = js.native
   
   def getNextState(
     props: IResizeGroupProps,
@@ -23,5 +23,5 @@ trait GetInitialResizeGroupState extends StObject {
     newContainerDimension: Double
   ): js.UndefOr[IResizeGroupState] = js.native
   
-  def shouldRenderDataForMeasurement(dataToMeasure: js.Any): Boolean = js.native
+  def shouldRenderDataForMeasurement(dataToMeasure: Any): Boolean = js.native
 }

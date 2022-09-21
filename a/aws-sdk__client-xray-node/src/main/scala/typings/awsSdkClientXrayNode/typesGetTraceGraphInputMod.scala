@@ -2,7 +2,6 @@ package typings.awsSdkClientXrayNode
 
 import typings.awsSdkClientXrayNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object typesGetTraceGraphInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -43,11 +42,11 @@ object typesGetTraceGraphInputMod {
     /**
       * <p>Trace IDs of requests for which to generate a service graph.</p>
       */
-    var TraceIds: js.Array[String] | Iterable[String]
+    var TraceIds: js.Array[String] | js.Iterable[String]
   }
   object GetTraceGraphInput {
     
-    inline def apply(TraceIds: js.Array[String] | Iterable[String]): GetTraceGraphInput = {
+    inline def apply(TraceIds: js.Array[String] | js.Iterable[String]): GetTraceGraphInput = {
       val __obj = js.Dynamic.literal(TraceIds = TraceIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetTraceGraphInput]
     }
@@ -59,7 +58,7 @@ object typesGetTraceGraphInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -72,9 +71,9 @@ object typesGetTraceGraphInputMod {
       
       inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      inline def setTraceIds(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "TraceIds", value.asInstanceOf[js.Any])
+      inline def setTraceIds(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "TraceIds", value.asInstanceOf[js.Any])
       
-      inline def setTraceIdsVarargs(value: String*): Self = StObject.set(x, "TraceIds", js.Array(value :_*))
+      inline def setTraceIdsVarargs(value: String*): Self = StObject.set(x, "TraceIds", js.Array(value*))
     }
   }
 }

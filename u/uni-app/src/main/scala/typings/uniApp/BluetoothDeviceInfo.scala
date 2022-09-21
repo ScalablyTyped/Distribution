@@ -14,12 +14,12 @@ trait BluetoothDeviceInfo extends StObject {
   /**
     * 当前蓝牙设备的广播数据段中的ManufacturerData数据段 （注意：vConsole 无法打印出 ArrayBuffer 类型数据）
     */
-  var advertisData: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var advertisData: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 当前蓝牙设备的广播数据段中的ServiceUUIDs数据段
     */
-  var advertisServiceUUIDs: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var advertisServiceUUIDs: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 用于区分设备的 id
@@ -39,7 +39,7 @@ trait BluetoothDeviceInfo extends StObject {
   /**
     * 当前蓝牙设备的广播数据段中的ServiceData数据段
     */
-  var serviceData: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var serviceData: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object BluetoothDeviceInfo {
   
@@ -50,17 +50,17 @@ object BluetoothDeviceInfo {
   
   extension [Self <: BluetoothDeviceInfo](x: Self) {
     
-    inline def setAdvertisData(value: js.Array[js.Any]): Self = StObject.set(x, "advertisData", value.asInstanceOf[js.Any])
+    inline def setAdvertisData(value: js.Array[Any]): Self = StObject.set(x, "advertisData", value.asInstanceOf[js.Any])
     
     inline def setAdvertisDataUndefined: Self = StObject.set(x, "advertisData", js.undefined)
     
-    inline def setAdvertisDataVarargs(value: js.Any*): Self = StObject.set(x, "advertisData", js.Array(value :_*))
+    inline def setAdvertisDataVarargs(value: Any*): Self = StObject.set(x, "advertisData", js.Array(value*))
     
-    inline def setAdvertisServiceUUIDs(value: js.Array[js.Any]): Self = StObject.set(x, "advertisServiceUUIDs", value.asInstanceOf[js.Any])
+    inline def setAdvertisServiceUUIDs(value: js.Array[Any]): Self = StObject.set(x, "advertisServiceUUIDs", value.asInstanceOf[js.Any])
     
     inline def setAdvertisServiceUUIDsUndefined: Self = StObject.set(x, "advertisServiceUUIDs", js.undefined)
     
-    inline def setAdvertisServiceUUIDsVarargs(value: js.Any*): Self = StObject.set(x, "advertisServiceUUIDs", js.Array(value :_*))
+    inline def setAdvertisServiceUUIDsVarargs(value: Any*): Self = StObject.set(x, "advertisServiceUUIDs", js.Array(value*))
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
@@ -78,10 +78,10 @@ object BluetoothDeviceInfo {
     
     inline def setRSSIUndefined: Self = StObject.set(x, "RSSI", js.undefined)
     
-    inline def setServiceData(value: js.Array[js.Any]): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
+    inline def setServiceData(value: js.Array[Any]): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
     
     inline def setServiceDataUndefined: Self = StObject.set(x, "serviceData", js.undefined)
     
-    inline def setServiceDataVarargs(value: js.Any*): Self = StObject.set(x, "serviceData", js.Array(value :_*))
+    inline def setServiceDataVarargs(value: Any*): Self = StObject.set(x, "serviceData", js.Array(value*))
   }
 }

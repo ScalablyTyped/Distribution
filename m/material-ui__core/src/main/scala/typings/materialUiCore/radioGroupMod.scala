@@ -1,20 +1,19 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.radioGroupRadioGroupMod.RadioGroupProps
-import typings.react.mod.ComponentType
+import typings.materialUiCore.useRadioGroupMod.RadioGroupState
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object radioGroupMod extends Shortcut {
+object radioGroupMod {
   
-  @JSImport("@material-ui/core/RadioGroup", JSImport.Default)
+  @JSImport("@material-ui/core/RadioGroup", JSImport.Namespace)
   @js.native
-  val default: ComponentType[RadioGroupProps] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ComponentType[RadioGroupProps]
+  inline def default(props: RadioGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  /* This means you don't have to write `default`, but can instead just say `radioGroupMod.foo` */
-  override def _to: ComponentType[RadioGroupProps] = default
+  inline def useRadioGroup(): js.UndefOr[RadioGroupState] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRadioGroup")().asInstanceOf[js.UndefOr[RadioGroupState]]
 }

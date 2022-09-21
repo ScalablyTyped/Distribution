@@ -19,9 +19,8 @@ object mod {
   
   inline def resetLoggers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetLoggers")().asInstanceOf[Unit]
   
-  inline def setLogger_error(`type`: error, fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def setLogger_info(`type`: info, fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def setLogger_warn(`type`: warn, fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setLogger(
+    `type`: info | warn | error,
+    fn: js.Function2[/* message */ js.UndefOr[Any], /* repeated */ Any, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

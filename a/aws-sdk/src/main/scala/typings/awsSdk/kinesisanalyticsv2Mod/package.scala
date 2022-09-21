@@ -1,13 +1,26 @@
 package typings.awsSdk.kinesisanalyticsv2Mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ApplicationDescription = java.lang.String
+type ApplicationDescription = String
 
-type ApplicationName = java.lang.String
+type ApplicationMaintenanceWindowEndTime = String
+
+type ApplicationMaintenanceWindowStartTime = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.STREAMING
+  - typings.awsSdk.awsSdkStrings.INTERACTIVE
+  - java.lang.String
+*/
+type ApplicationMode = _ApplicationMode | String
+
+type ApplicationName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SKIP_RESTORE_FROM_SNAPSHOT
@@ -15,7 +28,7 @@ type ApplicationName = java.lang.String
   - typings.awsSdk.awsSdkStrings.RESTORE_FROM_CUSTOM_SNAPSHOT
   - java.lang.String
 */
-type ApplicationRestoreType = typings.awsSdk.kinesisanalyticsv2Mod._ApplicationRestoreType | java.lang.String
+type ApplicationRestoreType = _ApplicationRestoreType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DELETING
@@ -26,59 +39,81 @@ type ApplicationRestoreType = typings.awsSdk.kinesisanalyticsv2Mod._ApplicationR
   - typings.awsSdk.awsSdkStrings.UPDATING
   - typings.awsSdk.awsSdkStrings.AUTOSCALING
   - typings.awsSdk.awsSdkStrings.FORCE_STOPPING
+  - typings.awsSdk.awsSdkStrings.ROLLING_BACK
+  - typings.awsSdk.awsSdkStrings.MAINTENANCE
+  - typings.awsSdk.awsSdkStrings.ROLLED_BACK
   - java.lang.String
 */
-type ApplicationStatus = typings.awsSdk.kinesisanalyticsv2Mod._ApplicationStatus | java.lang.String
+type ApplicationStatus = _ApplicationStatus | String
 
-type ApplicationSummaries = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationSummary]
+type ApplicationSummaries = js.Array[ApplicationSummary]
 
-type ApplicationVersionId = scala.Double
+type ApplicationVersionId = Double
 
-type AuthorizedUrl = java.lang.String
+type ApplicationVersionSummaries = js.Array[ApplicationVersionSummary]
 
-type BooleanObject = scala.Boolean
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.UDF
+  - typings.awsSdk.awsSdkStrings.DEPENDENCY_JAR
+  - java.lang.String
+*/
+type ArtifactType = _ArtifactType | String
 
-type BucketARN = java.lang.String
+type AuthorizedUrl = String
 
-type CheckpointInterval = scala.Double
+type BasePath = String
 
-type CloudWatchLoggingOptionDescriptions = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.CloudWatchLoggingOptionDescription]
+type BooleanObject = Boolean
 
-type CloudWatchLoggingOptionUpdates = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.CloudWatchLoggingOptionUpdate]
+type BucketARN = String
 
-type CloudWatchLoggingOptions = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.CloudWatchLoggingOption]
+type CheckpointInterval = Double
+
+type CloudWatchLoggingOptionDescriptions = js.Array[CloudWatchLoggingOptionDescription]
+
+type CloudWatchLoggingOptionUpdates = js.Array[CloudWatchLoggingOptionUpdate]
+
+type CloudWatchLoggingOptions = js.Array[CloudWatchLoggingOption]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PLAINTEXT
   - typings.awsSdk.awsSdkStrings.ZIPFILE
   - java.lang.String
 */
-type CodeContentType = typings.awsSdk.kinesisanalyticsv2Mod._CodeContentType | java.lang.String
+type CodeContentType = _CodeContentType | String
 
-type CodeMD5 = java.lang.String
+type CodeMD5 = String
 
-type CodeSize = scala.Double
+type CodeSize = Double
+
+type ConditionalToken = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEFAULT
   - typings.awsSdk.awsSdkStrings.CUSTOM
   - java.lang.String
 */
-type ConfigurationType = typings.awsSdk.kinesisanalyticsv2Mod._ConfigurationType | java.lang.String
+type ConfigurationType = _ConfigurationType | String
 
-type FileKey = java.lang.String
+type CustomArtifactsConfigurationDescriptionList = js.Array[CustomArtifactConfigurationDescription]
 
-type Id = java.lang.String
+type CustomArtifactsConfigurationList = js.Array[CustomArtifactConfiguration]
 
-type InAppStreamName = java.lang.String
+type DatabaseARN = String
 
-type InAppStreamNames = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.InAppStreamName]
+type FileKey = String
 
-type InAppTableName = java.lang.String
+type Id = String
 
-type InputDescriptions = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.InputDescription]
+type InAppStreamName = String
 
-type InputParallelismCount = scala.Double
+type InAppStreamNames = js.Array[InAppStreamName]
+
+type InAppTableName = String
+
+type InputDescriptions = js.Array[InputDescription]
+
+type InputParallelismCount = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOW
@@ -86,19 +121,21 @@ type InputParallelismCount = scala.Double
   - typings.awsSdk.awsSdkStrings.LAST_STOPPED_POINT
   - java.lang.String
 */
-type InputStartingPosition = typings.awsSdk.kinesisanalyticsv2Mod._InputStartingPosition | java.lang.String
+type InputStartingPosition = _InputStartingPosition | String
 
-type InputUpdates = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.InputUpdate]
+type InputUpdates = js.Array[InputUpdate]
 
-type Inputs = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.Input]
+type Inputs = js.Array[Input]
 
-type JobPlanDescription = java.lang.String
+type JobPlanDescription = String
 
-type KinesisAnalyticsARN = java.lang.String
+type KinesisAnalyticsARN = String
 
-type ListApplicationsInputLimit = scala.Double
+type ListApplicationVersionsInputLimit = Double
 
-type ListSnapshotsInputLimit = scala.Double
+type ListApplicationsInputLimit = Double
+
+type ListSnapshotsInputLimit = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INFO
@@ -107,9 +144,15 @@ type ListSnapshotsInputLimit = scala.Double
   - typings.awsSdk.awsSdkStrings.DEBUG
   - java.lang.String
 */
-type LogLevel = typings.awsSdk.kinesisanalyticsv2Mod._LogLevel | java.lang.String
+type LogLevel = _LogLevel | String
 
-type LogStreamARN = java.lang.String
+type LogStreamARN = String
+
+type MavenArtifactId = String
+
+type MavenGroupId = String
+
+type MavenVersion = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.APPLICATION
@@ -118,95 +161,98 @@ type LogStreamARN = java.lang.String
   - typings.awsSdk.awsSdkStrings.PARALLELISM
   - java.lang.String
 */
-type MetricsLevel = typings.awsSdk.kinesisanalyticsv2Mod._MetricsLevel | java.lang.String
+type MetricsLevel = _MetricsLevel | String
 
-type MinPauseBetweenCheckpoints = scala.Double
+type MinPauseBetweenCheckpoints = Double
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type ObjectVersion = java.lang.String
+type ObjectVersion = String
 
-type OutputDescriptions = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.OutputDescription]
+type OutputDescriptions = js.Array[OutputDescription]
 
-type OutputUpdates = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.OutputUpdate]
+type OutputUpdates = js.Array[OutputUpdate]
 
-type Outputs = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.Output]
+type Outputs = js.Array[Output]
 
-type Parallelism = scala.Double
+type Parallelism = Double
 
-type ParallelismPerKPU = scala.Double
+type ParallelismPerKPU = Double
 
-type ParsedInputRecord = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.ParsedInputRecordField]
+type ParsedInputRecord = js.Array[ParsedInputRecordField]
 
-type ParsedInputRecordField = java.lang.String
+type ParsedInputRecordField = String
 
-type ParsedInputRecords = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.ParsedInputRecord]
+type ParsedInputRecords = js.Array[ParsedInputRecord]
 
-type ProcessedInputRecord = java.lang.String
+type ProcessedInputRecord = String
 
-type ProcessedInputRecords = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.ProcessedInputRecord]
+type ProcessedInputRecords = js.Array[ProcessedInputRecord]
 
-type PropertyGroups = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.PropertyGroup]
+type PropertyGroups = js.Array[PropertyGroup]
 
-type PropertyKey = java.lang.String
+type PropertyKey = String
 
-type PropertyMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.kinesisanalyticsv2Mod.PropertyValue]
+type PropertyMap = StringDictionary[PropertyValue]
 
-type PropertyValue = java.lang.String
+type PropertyValue = String
 
-type RawInputRecord = java.lang.String
+type RawInputRecord = String
 
-type RawInputRecords = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.RawInputRecord]
+type RawInputRecords = js.Array[RawInputRecord]
 
-type RecordColumnDelimiter = java.lang.String
+type RecordColumnDelimiter = String
 
-type RecordColumnMapping = java.lang.String
+type RecordColumnMapping = String
 
-type RecordColumnName = java.lang.String
+type RecordColumnName = String
 
-type RecordColumnSqlType = java.lang.String
+type RecordColumnSqlType = String
 
-type RecordColumns = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.RecordColumn]
+type RecordColumns = js.Array[RecordColumn]
 
-type RecordEncoding = java.lang.String
+type RecordEncoding = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.JSON
   - typings.awsSdk.awsSdkStrings.CSV
   - java.lang.String
 */
-type RecordFormatType = typings.awsSdk.kinesisanalyticsv2Mod._RecordFormatType | java.lang.String
+type RecordFormatType = _RecordFormatType | String
 
-type RecordRowDelimiter = java.lang.String
+type RecordRowDelimiter = String
 
-type RecordRowPath = java.lang.String
+type RecordRowPath = String
 
-type ReferenceDataSourceDescriptions = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.ReferenceDataSourceDescription]
+type ReferenceDataSourceDescriptions = js.Array[ReferenceDataSourceDescription]
 
-type ReferenceDataSourceUpdates = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.ReferenceDataSourceUpdate]
+type ReferenceDataSourceUpdates = js.Array[ReferenceDataSourceUpdate]
 
-type ReferenceDataSources = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.ReferenceDataSource]
+type ReferenceDataSources = js.Array[ReferenceDataSource]
 
-type ResourceARN = java.lang.String
+type ResourceARN = String
 
-type RoleARN = java.lang.String
+type RoleARN = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`SQL-1_0`
   - typings.awsSdk.awsSdkStrings.`FLINK-1_6`
   - typings.awsSdk.awsSdkStrings.`FLINK-1_8`
+  - typings.awsSdk.awsSdkStrings.`ZEPPELIN-FLINK-1_0`
   - typings.awsSdk.awsSdkStrings.`FLINK-1_11`
+  - typings.awsSdk.awsSdkStrings.`FLINK-1_13`
+  - typings.awsSdk.awsSdkStrings.`ZEPPELIN-FLINK-2_0`
   - java.lang.String
 */
-type RuntimeEnvironment = typings.awsSdk.kinesisanalyticsv2Mod._RuntimeEnvironment | java.lang.String
+type RuntimeEnvironment = _RuntimeEnvironment | String
 
-type SecurityGroupId = java.lang.String
+type SecurityGroupId = String
 
-type SecurityGroupIds = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.SecurityGroupId]
+type SecurityGroupIds = js.Array[SecurityGroupId]
 
-type SessionExpirationDurationInSeconds = scala.Double
+type SessionExpirationDurationInSeconds = Double
 
-type SnapshotName = java.lang.String
+type SnapshotName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -215,43 +261,48 @@ type SnapshotName = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type SnapshotStatus = typings.awsSdk.kinesisanalyticsv2Mod._SnapshotStatus | java.lang.String
+type SnapshotStatus = _SnapshotStatus | String
 
-type SnapshotSummaries = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.SnapshotDetails]
+type SnapshotSummaries = js.Array[SnapshotDetails]
 
-type SqlRunConfigurations = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.SqlRunConfiguration]
+type SqlRunConfigurations = js.Array[SqlRunConfiguration]
 
-type SubnetId = java.lang.String
+type SubnetId = String
 
-type SubnetIds = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.SubnetId]
+type SubnetIds = js.Array[SubnetId]
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeys = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.TagKey]
+type TagKeys = js.Array[TagKey]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type Tags = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.Tag]
+type Tags = js.Array[Tag]
 
-type TextContent = java.lang.String
+type TextContent = String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
-type UrlType = typings.awsSdk.awsSdkStrings.FLINK_DASHBOARD_URL | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FLINK_DASHBOARD_URL
+  - typings.awsSdk.awsSdkStrings.ZEPPELIN_UI_URL
+  - java.lang.String
+*/
+type UrlType = _UrlType | String
 
-type VpcConfigurationDescriptions = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.VpcConfigurationDescription]
+type VpcConfigurationDescriptions = js.Array[VpcConfigurationDescription]
 
-type VpcConfigurationUpdates = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.VpcConfigurationUpdate]
+type VpcConfigurationUpdates = js.Array[VpcConfigurationUpdate]
 
-type VpcConfigurations = js.Array[typings.awsSdk.kinesisanalyticsv2Mod.VpcConfiguration]
+type VpcConfigurations = js.Array[VpcConfiguration]
 
-type VpcId = java.lang.String
+type VpcId = String
 
-type ZipFileContent = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.kinesisanalyticsv2Mod.Blob | java.lang.String
+type ZipFileContent = Buffer | js.typedarray.Uint8Array | Blob | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-05-23`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.kinesisanalyticsv2Mod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

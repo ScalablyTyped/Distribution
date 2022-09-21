@@ -10,10 +10,10 @@ Simple to use getTimezoneOffset based ISO8601 localizer with source written in T
 | ------------------ | :-------------: |
 | Full name          | iso8601-localizer |
 | Keywords           | js, iso8601-localizer, iso8601, localizer, typescript |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 727 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 63.666666666666664 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/avielfedida/ISO8601-Localizer)

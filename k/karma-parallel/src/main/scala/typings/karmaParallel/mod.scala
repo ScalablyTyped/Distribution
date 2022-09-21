@@ -3,7 +3,6 @@ package typings.karmaParallel
 import typings.karmaParallel.karmaParallelStrings.`description-length`
 import typings.karmaParallel.karmaParallelStrings.`round-robin`
 import typings.karmaParallel.karmaParallelStrings.custom
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +41,7 @@ object mod {
       *  It is also useful for some programmatic reporters such as junit reporters that need to operate on a single set of test outputs and not once for each shard.
       * Set to null to disable aggregated reporting
       */
-    var aggregatedReporterTest: js.UndefOr[(js.Function1[/* reporter */ js.Object, Boolean]) | RegExp | Null] = js.undefined
+    var aggregatedReporterTest: js.UndefOr[(js.Function1[/* reporter */ js.Object, Boolean]) | js.RegExp | Null] = js.undefined
     
     /**
       * Custom function that will determine if a describe block should run in the current executor.
@@ -74,7 +73,7 @@ object mod {
     
     extension [Self <: ParallelOptions](x: Self) {
       
-      inline def setAggregatedReporterTest(value: (js.Function1[/* reporter */ js.Object, Boolean]) | RegExp): Self = StObject.set(x, "aggregatedReporterTest", value.asInstanceOf[js.Any])
+      inline def setAggregatedReporterTest(value: (js.Function1[/* reporter */ js.Object, Boolean]) | js.RegExp): Self = StObject.set(x, "aggregatedReporterTest", value.asInstanceOf[js.Any])
       
       inline def setAggregatedReporterTestFunction1(value: /* reporter */ js.Object => Boolean): Self = StObject.set(x, "aggregatedReporterTest", js.Any.fromFunction1(value))
       

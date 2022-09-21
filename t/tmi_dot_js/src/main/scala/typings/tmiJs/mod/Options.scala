@@ -33,7 +33,7 @@ object Options {
     
     inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setConnection(value: MaxReconnectAttempts): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,7 @@ trait ClassMessage
     * @readonly
     * @type Value
     */
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   /**
     * 
@@ -70,7 +70,7 @@ trait ClassMessage
     * 
     * 
     */
-  def json(): js.Any = js.native
+  def json(): Any = js.native
   /**
     * 
     * @brief 以 JSON 编码写入给定的数据
@@ -80,7 +80,7 @@ trait ClassMessage
     * 
     * 
     */
-  def json(data: js.Any): js.Any = js.native
+  def json(data: Any): Any = js.native
   
   /**
     * class prop 
@@ -113,7 +113,7 @@ trait ClassMessage
     * @readonly
     * @type NArray
     */
-  var params: js.Array[js.Any] = js.native
+  var params: js.Array[Any] = js.native
   
   /**
     * 

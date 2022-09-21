@@ -8,7 +8,6 @@ import typings.phaser.Phaser.Types.Input.HitAreaCallback
 import typings.phaser.Phaser.Types.Input.InputPluginContainer
 import typings.phaser.Phaser.Types.Input.InteractiveObject
 import typings.phaser.Phaser.Types.Input.Keyboard.KeyComboConfig
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +28,7 @@ object Input {
     * @param hitArea The hit area for this Interactive Object. Typically a geometry shape, like a Rectangle or Circle.
     * @param hitAreaCallback The 'contains' check callback that the hit area shape will use for all hit tests.
     */
-  inline def CreateInteractiveObject(gameObject: GameObject, hitArea: js.Any, hitAreaCallback: HitAreaCallback): InteractiveObject = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateInteractiveObject")(gameObject.asInstanceOf[js.Any], hitArea.asInstanceOf[js.Any], hitAreaCallback.asInstanceOf[js.Any])).asInstanceOf[InteractiveObject]
+  inline def CreateInteractiveObject(gameObject: GameObject, hitArea: Any, hitAreaCallback: HitAreaCallback): InteractiveObject = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateInteractiveObject")(gameObject.asInstanceOf[js.Any], hitArea.asInstanceOf[js.Any], hitAreaCallback.asInstanceOf[js.Any])).asInstanceOf[InteractiveObject]
   
   /**
     * Creates a new Pixel Perfect Handler function.
@@ -38,7 +37,7 @@ object Input {
     * @param textureManager A reference to the Texture Manager.
     * @param alphaTolerance The alpha level that the pixel should be above to be included as a successful interaction.
     */
-  inline def CreatePixelPerfectHandler(textureManager: TextureManager, alphaTolerance: integer): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePixelPerfectHandler")(textureManager.asInstanceOf[js.Any], alphaTolerance.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def CreatePixelPerfectHandler(textureManager: TextureManager, alphaTolerance: Double): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("CreatePixelPerfectHandler")(textureManager.asInstanceOf[js.Any], alphaTolerance.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
   object Events {
     
@@ -49,7 +48,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.BOOT")
     @js.native
-    val BOOT: js.Any = js.native
+    val BOOT: Any = js.native
     
     /**
       * The Input Plugin Destroy Event.
@@ -58,7 +57,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DESTROY")
     @js.native
-    val DESTROY: js.Any = js.native
+    val DESTROY: Any = js.native
     
     /**
       * The Pointer Drag Input Event.
@@ -73,7 +72,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DRAG")
     @js.native
-    val DRAG: js.Any = js.native
+    val DRAG: Any = js.native
     
     /**
       * The Pointer Drag End Input Event.
@@ -86,7 +85,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DRAG_END")
     @js.native
-    val DRAG_END: js.Any = js.native
+    val DRAG_END: Any = js.native
     
     /**
       * The Pointer Drag Enter Input Event.
@@ -101,7 +100,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DRAG_ENTER")
     @js.native
-    val DRAG_ENTER: js.Any = js.native
+    val DRAG_ENTER: Any = js.native
     
     /**
       * The Pointer Drag Leave Input Event.
@@ -116,7 +115,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DRAG_LEAVE")
     @js.native
-    val DRAG_LEAVE: js.Any = js.native
+    val DRAG_LEAVE: Any = js.native
     
     /**
       * The Pointer Drag Over Input Event.
@@ -134,7 +133,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DRAG_OVER")
     @js.native
-    val DRAG_OVER: js.Any = js.native
+    val DRAG_OVER: Any = js.native
     
     /**
       * The Pointer Drag Start Input Event.
@@ -149,7 +148,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DRAG_START")
     @js.native
-    val DRAG_START: js.Any = js.native
+    val DRAG_START: Any = js.native
     
     /**
       * The Pointer Drop Input Event.
@@ -162,7 +161,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.DROP")
     @js.native
-    val DROP: js.Any = js.native
+    val DROP: Any = js.native
     
     /**
       * The Game Object Down Input Event.
@@ -187,7 +186,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DOWN")
     @js.native
-    val GAMEOBJECT_DOWN: js.Any = js.native
+    val GAMEOBJECT_DOWN: Any = js.native
     
     /**
       * The Game Object Drag Event.
@@ -202,7 +201,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DRAG")
     @js.native
-    val GAMEOBJECT_DRAG: js.Any = js.native
+    val GAMEOBJECT_DRAG: Any = js.native
     
     /**
       * The Game Object Drag End Event.
@@ -217,7 +216,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DRAG_END")
     @js.native
-    val GAMEOBJECT_DRAG_END: js.Any = js.native
+    val GAMEOBJECT_DRAG_END: Any = js.native
     
     /**
       * The Game Object Drag Enter Event.
@@ -232,7 +231,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DRAG_ENTER")
     @js.native
-    val GAMEOBJECT_DRAG_ENTER: js.Any = js.native
+    val GAMEOBJECT_DRAG_ENTER: Any = js.native
     
     /**
       * The Game Object Drag Leave Event.
@@ -247,7 +246,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DRAG_LEAVE")
     @js.native
-    val GAMEOBJECT_DRAG_LEAVE: js.Any = js.native
+    val GAMEOBJECT_DRAG_LEAVE: Any = js.native
     
     /**
       * The Game Object Drag Over Event.
@@ -265,7 +264,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DRAG_OVER")
     @js.native
-    val GAMEOBJECT_DRAG_OVER: js.Any = js.native
+    val GAMEOBJECT_DRAG_OVER: Any = js.native
     
     /**
       * The Game Object Drag Start Event.
@@ -283,7 +282,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DRAG_START")
     @js.native
-    val GAMEOBJECT_DRAG_START: js.Any = js.native
+    val GAMEOBJECT_DRAG_START: Any = js.native
     
     /**
       * The Game Object Drop Event.
@@ -298,7 +297,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_DROP")
     @js.native
-    val GAMEOBJECT_DROP: js.Any = js.native
+    val GAMEOBJECT_DROP: Any = js.native
     
     /**
       * The Game Object Move Input Event.
@@ -323,7 +322,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_MOVE")
     @js.native
-    val GAMEOBJECT_MOVE: js.Any = js.native
+    val GAMEOBJECT_MOVE: Any = js.native
     
     /**
       * The Game Object Out Input Event.
@@ -348,7 +347,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_OUT")
     @js.native
-    val GAMEOBJECT_OUT: js.Any = js.native
+    val GAMEOBJECT_OUT: Any = js.native
     
     /**
       * The Game Object Over Input Event.
@@ -373,7 +372,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_OVER")
     @js.native
-    val GAMEOBJECT_OVER: js.Any = js.native
+    val GAMEOBJECT_OVER: Any = js.native
     
     /**
       * The Game Object Pointer Down Event.
@@ -397,7 +396,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_POINTER_DOWN")
     @js.native
-    val GAMEOBJECT_POINTER_DOWN: js.Any = js.native
+    val GAMEOBJECT_POINTER_DOWN: Any = js.native
     
     /**
       * The Game Object Pointer Move Event.
@@ -421,7 +420,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_POINTER_MOVE")
     @js.native
-    val GAMEOBJECT_POINTER_MOVE: js.Any = js.native
+    val GAMEOBJECT_POINTER_MOVE: Any = js.native
     
     /**
       * The Game Object Pointer Out Event.
@@ -445,7 +444,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_POINTER_OUT")
     @js.native
-    val GAMEOBJECT_POINTER_OUT: js.Any = js.native
+    val GAMEOBJECT_POINTER_OUT: Any = js.native
     
     /**
       * The Game Object Pointer Over Event.
@@ -469,7 +468,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_POINTER_OVER")
     @js.native
-    val GAMEOBJECT_POINTER_OVER: js.Any = js.native
+    val GAMEOBJECT_POINTER_OVER: Any = js.native
     
     /**
       * The Game Object Pointer Up Event.
@@ -493,7 +492,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_POINTER_UP")
     @js.native
-    val GAMEOBJECT_POINTER_UP: js.Any = js.native
+    val GAMEOBJECT_POINTER_UP: Any = js.native
     
     /**
       * The Game Object Pointer Wheel Event.
@@ -517,7 +516,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_POINTER_WHEEL")
     @js.native
-    val GAMEOBJECT_POINTER_WHEEL: js.Any = js.native
+    val GAMEOBJECT_POINTER_WHEEL: Any = js.native
     
     /**
       * The Game Object Up Input Event.
@@ -542,7 +541,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_UP")
     @js.native
-    val GAMEOBJECT_UP: js.Any = js.native
+    val GAMEOBJECT_UP: Any = js.native
     
     /**
       * The Game Object Wheel Input Event.
@@ -567,7 +566,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAMEOBJECT_WHEEL")
     @js.native
-    val GAMEOBJECT_WHEEL: js.Any = js.native
+    val GAMEOBJECT_WHEEL: Any = js.native
     
     /**
       * The Input Plugin Game Out Event.
@@ -579,7 +578,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAME_OUT")
     @js.native
-    val GAME_OUT: js.Any = js.native
+    val GAME_OUT: Any = js.native
     
     /**
       * The Input Plugin Game Over Event.
@@ -591,7 +590,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.GAME_OVER")
     @js.native
-    val GAME_OVER: js.Any = js.native
+    val GAME_OVER: Any = js.native
     
     /**
       * The Input Manager Boot Event.
@@ -600,7 +599,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.MANAGER_BOOT")
     @js.native
-    val MANAGER_BOOT: js.Any = js.native
+    val MANAGER_BOOT: Any = js.native
     
     /**
       * The Input Manager Process Event.
@@ -610,7 +609,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.MANAGER_PROCESS")
     @js.native
-    val MANAGER_PROCESS: js.Any = js.native
+    val MANAGER_PROCESS: Any = js.native
     
     /**
       * The Input Manager Update Event.
@@ -619,7 +618,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.MANAGER_UPDATE")
     @js.native
-    val MANAGER_UPDATE: js.Any = js.native
+    val MANAGER_UPDATE: Any = js.native
     
     /**
       * The Input Manager Pointer Lock Change Event.
@@ -628,7 +627,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTERLOCK_CHANGE")
     @js.native
-    val POINTERLOCK_CHANGE: js.Any = js.native
+    val POINTERLOCK_CHANGE: Any = js.native
     
     /**
       * The Pointer Down Input Event.
@@ -648,7 +647,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTER_DOWN")
     @js.native
-    val POINTER_DOWN: js.Any = js.native
+    val POINTER_DOWN: Any = js.native
     
     /**
       * The Pointer Down Outside Input Event.
@@ -668,7 +667,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTER_DOWN_OUTSIDE")
     @js.native
-    val POINTER_DOWN_OUTSIDE: js.Any = js.native
+    val POINTER_DOWN_OUTSIDE: Any = js.native
     
     /**
       * The Pointer Move Input Event.
@@ -688,7 +687,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTER_MOVE")
     @js.native
-    val POINTER_MOVE: js.Any = js.native
+    val POINTER_MOVE: Any = js.native
     
     /**
       * The Pointer Out Input Event.
@@ -708,7 +707,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTER_OUT")
     @js.native
-    val POINTER_OUT: js.Any = js.native
+    val POINTER_OUT: Any = js.native
     
     /**
       * The Pointer Over Input Event.
@@ -728,7 +727,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTER_OVER")
     @js.native
-    val POINTER_OVER: js.Any = js.native
+    val POINTER_OVER: Any = js.native
     
     /**
       * The Pointer Up Input Event.
@@ -748,7 +747,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTER_UP")
     @js.native
-    val POINTER_UP: js.Any = js.native
+    val POINTER_UP: Any = js.native
     
     /**
       * The Pointer Up Outside Input Event.
@@ -768,7 +767,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTER_UP_OUTSIDE")
     @js.native
-    val POINTER_UP_OUTSIDE: js.Any = js.native
+    val POINTER_UP_OUTSIDE: Any = js.native
     
     /**
       * The Pointer Wheel Input Event.
@@ -788,7 +787,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.POINTER_WHEEL")
     @js.native
-    val POINTER_WHEEL: js.Any = js.native
+    val POINTER_WHEEL: Any = js.native
     
     /**
       * The Input Plugin Pre-Update Event.
@@ -798,7 +797,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.PRE_UPDATE")
     @js.native
-    val PRE_UPDATE: js.Any = js.native
+    val PRE_UPDATE: Any = js.native
     
     /**
       * The Input Plugin Shutdown Event.
@@ -807,7 +806,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.SHUTDOWN")
     @js.native
-    val SHUTDOWN: js.Any = js.native
+    val SHUTDOWN: Any = js.native
     
     /**
       * The Input Plugin Start Event.
@@ -817,7 +816,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.START")
     @js.native
-    val START: js.Any = js.native
+    val START: Any = js.native
     
     /**
       * The Input Plugin Update Event.
@@ -827,7 +826,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Events.UPDATE")
     @js.native
-    val UPDATE: js.Any = js.native
+    val UPDATE: Any = js.native
   }
   
   object Gamepad {
@@ -838,7 +837,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Gamepad.Axis")
     @js.native
-    class Axis protected ()
+    open class Axis protected ()
       extends StObject
          with typings.phaser.Phaser.Input.Gamepad.Axis {
       /**
@@ -846,7 +845,7 @@ object Input {
         * @param pad A reference to the Gamepad that this Axis belongs to.
         * @param index The index of this Axis.
         */
-      def this(pad: typings.phaser.Phaser.Input.Gamepad.Gamepad, index: integer) = this()
+      def this(pad: typings.phaser.Phaser.Input.Gamepad.Gamepad, index: Double) = this()
       
       /**
         * Destroys this Axis instance and releases external references it holds.
@@ -870,7 +869,7 @@ object Input {
         * The index of this Axis.
         */
       /* CompleteClass */
-      var index: integer = js.native
+      var index: Double = js.native
       
       /**
         * A reference to the Gamepad that this Axis belongs to.
@@ -898,7 +897,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Gamepad.Button")
     @js.native
-    class Button protected ()
+    open class Button protected ()
       extends StObject
          with typings.phaser.Phaser.Input.Gamepad.Button {
       /**
@@ -906,7 +905,7 @@ object Input {
         * @param pad A reference to the Gamepad that this Button belongs to.
         * @param index The index of this Button.
         */
-      def this(pad: typings.phaser.Phaser.Input.Gamepad.Gamepad, index: integer) = this()
+      def this(pad: typings.phaser.Phaser.Input.Gamepad.Gamepad, index: Double) = this()
       
       /**
         * Destroys this Button instance and releases external references it holds.
@@ -924,7 +923,7 @@ object Input {
         * The index of this Button.
         */
       /* CompleteClass */
-      var index: integer = js.native
+      var index: Double = js.native
       
       /**
         * A reference to the Gamepad that this Button belongs to.
@@ -998,7 +997,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Gamepad.Events.BUTTON_DOWN")
       @js.native
-      val BUTTON_DOWN: js.Any = js.native
+      val BUTTON_DOWN: Any = js.native
       
       /**
         * The Gamepad Button Up Event.
@@ -1011,7 +1010,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Gamepad.Events.BUTTON_UP")
       @js.native
-      val BUTTON_UP: js.Any = js.native
+      val BUTTON_UP: Any = js.native
       
       /**
         * The Gamepad Connected Event.
@@ -1027,7 +1026,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Gamepad.Events.CONNECTED")
       @js.native
-      val CONNECTED: js.Any = js.native
+      val CONNECTED: Any = js.native
       
       /**
         * The Gamepad Disconnected Event.
@@ -1038,7 +1037,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Gamepad.Events.DISCONNECTED")
       @js.native
-      val DISCONNECTED: js.Any = js.native
+      val DISCONNECTED: Any = js.native
       
       /**
         * The Gamepad Button Down Event.
@@ -1054,7 +1053,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Gamepad.Events.GAMEPAD_BUTTON_DOWN")
       @js.native
-      val GAMEPAD_BUTTON_DOWN: js.Any = js.native
+      val GAMEPAD_BUTTON_DOWN: Any = js.native
       
       /**
         * The Gamepad Button Up Event.
@@ -1070,7 +1069,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Gamepad.Events.GAMEPAD_BUTTON_UP")
       @js.native
-      val GAMEPAD_BUTTON_UP: js.Any = js.native
+      val GAMEPAD_BUTTON_UP: Any = js.native
     }
     
     /**
@@ -1080,7 +1079,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Gamepad.Gamepad")
     @js.native
-    class Gamepad protected ()
+    open class Gamepad protected ()
       extends StObject
          with typings.phaser.Phaser.Input.Gamepad.Gamepad {
       /**
@@ -1118,6 +1117,9 @@ object Input {
       * to the gamepads you can poll its buttons and axis sticks. See the properties and methods available on
       * the `Gamepad` class for more details.
       * 
+      * As of September 2020 Chrome, and likely other browsers, will soon start to require that games requesting
+      * access to the Gamepad API are running under SSL. They will actively block API access if they are not.
+      * 
       * For more information about Gamepad support in browsers see the following resources:
       * 
       * https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API
@@ -1127,7 +1129,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Gamepad.GamepadPlugin")
     @js.native
-    class GamepadPlugin protected ()
+    open class GamepadPlugin protected ()
       extends StObject
          with typings.phaser.Phaser.Input.Gamepad.GamepadPlugin {
       /**
@@ -1153,7 +1155,7 @@ object Input {
     */
   @JSImport("phaser", "Input.InputManager")
   @js.native
-  class InputManager protected ()
+  open class InputManager protected ()
     extends StObject
        with typings.phaser.Phaser.Input.InputManager {
     /**
@@ -1192,10 +1194,17 @@ object Input {
     * capture settings and more.
     * 
     * Please also see the Input examples and tutorials for further information.
+    * 
+    * **Incorrect input coordinates with Angular**
+    * 
+    * If you are using Phaser within Angular, and use nglf or the router, to make the component in which the Phaser game resides
+    * change state (i.e. appear or disappear) then you'll need to notify the Scale Manager about this, as Angular will mess with
+    * the DOM in a way in which Phaser can't detect directly. Call `this.scale.updateBounds()` as part of your game init in order
+    * to refresh the canvas DOM bounds values, which Phaser uses for input point position calculations.
     */
   @JSImport("phaser", "Input.InputPlugin")
   @js.native
-  class InputPlugin protected ()
+  open class InputPlugin protected ()
     extends StObject
        with typings.phaser.Phaser.Input.InputPlugin {
     /**
@@ -1215,7 +1224,7 @@ object Input {
       * Returns the input plugin object from the cache based on the given key.
       * @param key The key of the input plugin to get.
       */
-    inline def getCore(key: String): InputPluginContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("getCore")(key.asInstanceOf[js.Any]).asInstanceOf[InputPluginContainer]
+    inline def getPlugin(key: String): InputPluginContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlugin")(key.asInstanceOf[js.Any]).asInstanceOf[InputPluginContainer]
     
     /**
       * Installs all of the registered Input Plugins into the given target.
@@ -1256,7 +1265,7 @@ object Input {
       * @param duration The duration, in ms, within which the key must have been pressed down. Default 50.
       */
     inline def DownDuration(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("DownDuration")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    inline def DownDuration(key: typings.phaser.Phaser.Input.Keyboard.Key, duration: integer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("DownDuration")(key.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def DownDuration(key: typings.phaser.Phaser.Input.Keyboard.Key, duration: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("DownDuration")(key.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     object Events {
       
@@ -1280,7 +1289,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Keyboard.Events.ANY_KEY_DOWN")
       @js.native
-      val ANY_KEY_DOWN: js.Any = js.native
+      val ANY_KEY_DOWN: Any = js.native
       
       /**
         * The Global Key Up Event.
@@ -1295,7 +1304,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Keyboard.Events.ANY_KEY_UP")
       @js.native
-      val ANY_KEY_UP: js.Any = js.native
+      val ANY_KEY_UP: Any = js.native
       
       /**
         * The Key Combo Match Event.
@@ -1314,7 +1323,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Keyboard.Events.COMBO_MATCH")
       @js.native
-      val COMBO_MATCH: js.Any = js.native
+      val COMBO_MATCH: Any = js.native
       
       /**
         * The Key Down Event.
@@ -1333,7 +1342,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Keyboard.Events.DOWN")
       @js.native
-      val DOWN: js.Any = js.native
+      val DOWN: Any = js.native
       
       /**
         * The Key Down Event.
@@ -1358,7 +1367,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Keyboard.Events.KEY_DOWN")
       @js.native
-      val KEY_DOWN: js.Any = js.native
+      val KEY_DOWN: Any = js.native
       
       /**
         * The Key Up Event.
@@ -1376,7 +1385,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Keyboard.Events.KEY_UP")
       @js.native
-      val KEY_UP: js.Any = js.native
+      val KEY_UP: Any = js.native
       
       /**
         * The Key Up Event.
@@ -1395,7 +1404,7 @@ object Input {
         */
       @JSImport("phaser", "Input.Keyboard.Events.UP")
       @js.native
-      val UP: js.Any = js.native
+      val UP: Any = js.native
     }
     
     /**
@@ -1426,7 +1435,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Keyboard.Key")
     @js.native
-    class Key protected ()
+    open class Key protected ()
       extends StObject
          with typings.phaser.Phaser.Input.Keyboard.Key {
       /**
@@ -1434,7 +1443,7 @@ object Input {
         * @param plugin The Keyboard Plugin instance that owns this Key object.
         * @param keyCode The keycode of this key.
         */
-      def this(plugin: typings.phaser.Phaser.Input.Keyboard.KeyboardPlugin, keyCode: integer) = this()
+      def this(plugin: typings.phaser.Phaser.Input.Keyboard.KeyboardPlugin, keyCode: Double) = this()
     }
     
     /**
@@ -1451,804 +1460,804 @@ object Input {
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.A")
       @js.native
-      def A: integer = js.native
+      def A: Double = js.native
       
       /**
         * The ALT key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.ALT")
       @js.native
-      def ALT: integer = js.native
-      inline def ALT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT")(x.asInstanceOf[js.Any])
+      def ALT: Double = js.native
+      inline def ALT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALT")(x.asInstanceOf[js.Any])
       
-      inline def A_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("A")(x.asInstanceOf[js.Any])
+      inline def A_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("A")(x.asInstanceOf[js.Any])
       
       /**
         * The B key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.B")
       @js.native
-      def B: integer = js.native
+      def B: Double = js.native
       
       /**
         * The BACKSPACE key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.BACKSPACE")
       @js.native
-      def BACKSPACE: integer = js.native
-      inline def BACKSPACE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKSPACE")(x.asInstanceOf[js.Any])
+      def BACKSPACE: Double = js.native
+      inline def BACKSPACE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKSPACE")(x.asInstanceOf[js.Any])
       
       /**
         * The BACKTICK key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.BACKTICK")
       @js.native
-      def BACKTICK: integer = js.native
-      inline def BACKTICK_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKTICK")(x.asInstanceOf[js.Any])
+      def BACKTICK: Double = js.native
+      inline def BACKTICK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKTICK")(x.asInstanceOf[js.Any])
       
       /**
         * The BACK_SLASH key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.BACK_SLASH")
       @js.native
-      def BACK_SLASH: integer = js.native
-      inline def BACK_SLASH_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACK_SLASH")(x.asInstanceOf[js.Any])
+      def BACK_SLASH: Double = js.native
+      inline def BACK_SLASH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACK_SLASH")(x.asInstanceOf[js.Any])
       
       /**
         * The BRACKET_LEFT_FIREFOX key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.BRACKET_LEFT_FIREFOX")
       @js.native
-      def BRACKET_LEFT_FIREFOX: integer = js.native
-      inline def BRACKET_LEFT_FIREFOX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BRACKET_LEFT_FIREFOX")(x.asInstanceOf[js.Any])
+      def BRACKET_LEFT_FIREFOX: Double = js.native
+      inline def BRACKET_LEFT_FIREFOX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BRACKET_LEFT_FIREFOX")(x.asInstanceOf[js.Any])
       
       /**
         * The BRACKET_RIGHT_FIREFOX key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.BRACKET_RIGHT_FIREFOX")
       @js.native
-      def BRACKET_RIGHT_FIREFOX: integer = js.native
-      inline def BRACKET_RIGHT_FIREFOX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BRACKET_RIGHT_FIREFOX")(x.asInstanceOf[js.Any])
+      def BRACKET_RIGHT_FIREFOX: Double = js.native
+      inline def BRACKET_RIGHT_FIREFOX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BRACKET_RIGHT_FIREFOX")(x.asInstanceOf[js.Any])
       
-      inline def B_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("B")(x.asInstanceOf[js.Any])
+      inline def B_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("B")(x.asInstanceOf[js.Any])
       
       /**
         * The C key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.C")
       @js.native
-      def C: integer = js.native
+      def C: Double = js.native
       
       /**
         * The CAPS_LOCK key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.CAPS_LOCK")
       @js.native
-      def CAPS_LOCK: integer = js.native
-      inline def CAPS_LOCK_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAPS_LOCK")(x.asInstanceOf[js.Any])
+      def CAPS_LOCK: Double = js.native
+      inline def CAPS_LOCK_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAPS_LOCK")(x.asInstanceOf[js.Any])
       
       /**
         * The CLOSED_BRACKET key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.CLOSED_BRACKET")
       @js.native
-      def CLOSED_BRACKET: integer = js.native
-      inline def CLOSED_BRACKET_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED_BRACKET")(x.asInstanceOf[js.Any])
+      def CLOSED_BRACKET: Double = js.native
+      inline def CLOSED_BRACKET_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED_BRACKET")(x.asInstanceOf[js.Any])
       
       /**
         * The COLON key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.COLON")
       @js.native
-      def COLON: integer = js.native
-      inline def COLON_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COLON")(x.asInstanceOf[js.Any])
+      def COLON: Double = js.native
+      inline def COLON_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COLON")(x.asInstanceOf[js.Any])
       
       /**
         * The COMMA key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.COMMA")
       @js.native
-      def COMMA: integer = js.native
-      inline def COMMA_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMA")(x.asInstanceOf[js.Any])
+      def COMMA: Double = js.native
+      inline def COMMA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMA")(x.asInstanceOf[js.Any])
       
       /**
         * The COMMA_FIREFOX key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.COMMA_FIREFOX")
       @js.native
-      def COMMA_FIREFOX: integer = js.native
-      inline def COMMA_FIREFOX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMA_FIREFOX")(x.asInstanceOf[js.Any])
+      def COMMA_FIREFOX: Double = js.native
+      inline def COMMA_FIREFOX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMA_FIREFOX")(x.asInstanceOf[js.Any])
       
       /**
         * The COMMA_FIREFOX_WINDOWS key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.COMMA_FIREFOX_WINDOWS")
       @js.native
-      def COMMA_FIREFOX_WINDOWS: integer = js.native
-      inline def COMMA_FIREFOX_WINDOWS_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMA_FIREFOX_WINDOWS")(x.asInstanceOf[js.Any])
+      def COMMA_FIREFOX_WINDOWS: Double = js.native
+      inline def COMMA_FIREFOX_WINDOWS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("COMMA_FIREFOX_WINDOWS")(x.asInstanceOf[js.Any])
       
       /**
         * The CTRL key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.CTRL")
       @js.native
-      def CTRL: integer = js.native
-      inline def CTRL_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CTRL")(x.asInstanceOf[js.Any])
+      def CTRL: Double = js.native
+      inline def CTRL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CTRL")(x.asInstanceOf[js.Any])
       
-      inline def C_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("C")(x.asInstanceOf[js.Any])
+      inline def C_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("C")(x.asInstanceOf[js.Any])
       
       /**
         * The D key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.D")
       @js.native
-      def D: integer = js.native
+      def D: Double = js.native
       
       /**
         * The DELETE key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.DELETE")
       @js.native
-      def DELETE: integer = js.native
-      inline def DELETE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELETE")(x.asInstanceOf[js.Any])
+      def DELETE: Double = js.native
+      inline def DELETE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DELETE")(x.asInstanceOf[js.Any])
       
       /**
         * The DOWN key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.DOWN")
       @js.native
-      def DOWN: integer = js.native
-      inline def DOWN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOWN")(x.asInstanceOf[js.Any])
+      def DOWN: Double = js.native
+      inline def DOWN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOWN")(x.asInstanceOf[js.Any])
       
-      inline def D_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("D")(x.asInstanceOf[js.Any])
+      inline def D_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("D")(x.asInstanceOf[js.Any])
       
       /**
         * The E key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.E")
       @js.native
-      def E: integer = js.native
+      def E: Double = js.native
       
       /**
         * The EIGHT key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.EIGHT")
       @js.native
-      def EIGHT: integer = js.native
-      inline def EIGHT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EIGHT")(x.asInstanceOf[js.Any])
+      def EIGHT: Double = js.native
+      inline def EIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EIGHT")(x.asInstanceOf[js.Any])
       
       /**
         * The END key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.END")
       @js.native
-      def END: integer = js.native
-      inline def END_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
+      def END: Double = js.native
+      inline def END_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
       
       /**
         * The ENTER key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.ENTER")
       @js.native
-      def ENTER: integer = js.native
-      inline def ENTER_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENTER")(x.asInstanceOf[js.Any])
+      def ENTER: Double = js.native
+      inline def ENTER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENTER")(x.asInstanceOf[js.Any])
       
       /**
         * The ESC key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.ESC")
       @js.native
-      def ESC: integer = js.native
-      inline def ESC_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ESC")(x.asInstanceOf[js.Any])
+      def ESC: Double = js.native
+      inline def ESC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ESC")(x.asInstanceOf[js.Any])
       
-      inline def E_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("E")(x.asInstanceOf[js.Any])
+      inline def E_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("E")(x.asInstanceOf[js.Any])
       
       /**
         * The F key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.F")
       @js.native
-      def F: integer = js.native
+      def F: Double = js.native
       
       /**
         * The F1 key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.F1")
       @js.native
-      def F1: integer = js.native
+      def F1: Double = js.native
       
       /**
         * The F10 key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.F10")
       @js.native
-      def F10: integer = js.native
-      inline def F10_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F10")(x.asInstanceOf[js.Any])
+      def F10: Double = js.native
+      inline def F10_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F10")(x.asInstanceOf[js.Any])
       
       /**
         * The F11 key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.F11")
       @js.native
-      def F11: integer = js.native
-      inline def F11_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F11")(x.asInstanceOf[js.Any])
+      def F11: Double = js.native
+      inline def F11_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F11")(x.asInstanceOf[js.Any])
       
       /**
         * The F12 key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.F12")
       @js.native
-      def F12: integer = js.native
-      inline def F12_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F12")(x.asInstanceOf[js.Any])
+      def F12: Double = js.native
+      inline def F12_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F12")(x.asInstanceOf[js.Any])
       
-      inline def F1_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F1")(x.asInstanceOf[js.Any])
+      inline def F1_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F1")(x.asInstanceOf[js.Any])
       
       /**
         * The F2 key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.F2")
       @js.native
-      def F2: integer = js.native
-      inline def F2_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F2")(x.asInstanceOf[js.Any])
+      def F2: Double = js.native
+      inline def F2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F2")(x.asInstanceOf[js.Any])
       
       /**
         * The F3 key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.F3")
       @js.native
-      def F3: integer = js.native
-      inline def F3_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F3")(x.asInstanceOf[js.Any])
+      def F3: Double = js.native
+      inline def F3_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F3")(x.asInstanceOf[js.Any])
       
       /**
         * The F4 key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.F4")
       @js.native
-      def F4: integer = js.native
-      inline def F4_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F4")(x.asInstanceOf[js.Any])
+      def F4: Double = js.native
+      inline def F4_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F4")(x.asInstanceOf[js.Any])
       
       /**
         * The F5 key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.F5")
       @js.native
-      def F5: integer = js.native
-      inline def F5_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F5")(x.asInstanceOf[js.Any])
+      def F5: Double = js.native
+      inline def F5_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F5")(x.asInstanceOf[js.Any])
       
       /**
         * The F6 key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.F6")
       @js.native
-      def F6: integer = js.native
-      inline def F6_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F6")(x.asInstanceOf[js.Any])
+      def F6: Double = js.native
+      inline def F6_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F6")(x.asInstanceOf[js.Any])
       
       /**
         * The F7 key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.F7")
       @js.native
-      def F7: integer = js.native
-      inline def F7_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F7")(x.asInstanceOf[js.Any])
+      def F7: Double = js.native
+      inline def F7_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F7")(x.asInstanceOf[js.Any])
       
       /**
         * The F8 key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.F8")
       @js.native
-      def F8: integer = js.native
-      inline def F8_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F8")(x.asInstanceOf[js.Any])
+      def F8: Double = js.native
+      inline def F8_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F8")(x.asInstanceOf[js.Any])
       
       /**
         * The F9 key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.F9")
       @js.native
-      def F9: integer = js.native
-      inline def F9_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F9")(x.asInstanceOf[js.Any])
+      def F9: Double = js.native
+      inline def F9_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F9")(x.asInstanceOf[js.Any])
       
       /**
         * The FIVE key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.FIVE")
       @js.native
-      def FIVE: integer = js.native
-      inline def FIVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FIVE")(x.asInstanceOf[js.Any])
+      def FIVE: Double = js.native
+      inline def FIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FIVE")(x.asInstanceOf[js.Any])
       
       /**
         * The FORWARD_SLASH key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.FORWARD_SLASH")
       @js.native
-      def FORWARD_SLASH: integer = js.native
-      inline def FORWARD_SLASH_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORWARD_SLASH")(x.asInstanceOf[js.Any])
+      def FORWARD_SLASH: Double = js.native
+      inline def FORWARD_SLASH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORWARD_SLASH")(x.asInstanceOf[js.Any])
       
       /**
         * The FOUR key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.FOUR")
       @js.native
-      def FOUR: integer = js.native
-      inline def FOUR_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOUR")(x.asInstanceOf[js.Any])
+      def FOUR: Double = js.native
+      inline def FOUR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOUR")(x.asInstanceOf[js.Any])
       
-      inline def F_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F")(x.asInstanceOf[js.Any])
+      inline def F_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("F")(x.asInstanceOf[js.Any])
       
       /**
         * The G key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.G")
       @js.native
-      def G: integer = js.native
-      inline def G_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("G")(x.asInstanceOf[js.Any])
+      def G: Double = js.native
+      inline def G_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("G")(x.asInstanceOf[js.Any])
       
       /**
         * The H key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.H")
       @js.native
-      def H: integer = js.native
+      def H: Double = js.native
       
       /**
         * The HOME key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.HOME")
       @js.native
-      def HOME: integer = js.native
-      inline def HOME_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOME")(x.asInstanceOf[js.Any])
+      def HOME: Double = js.native
+      inline def HOME_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HOME")(x.asInstanceOf[js.Any])
       
-      inline def H_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("H")(x.asInstanceOf[js.Any])
+      inline def H_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("H")(x.asInstanceOf[js.Any])
       
       /**
         * The I key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.I")
       @js.native
-      def I: integer = js.native
+      def I: Double = js.native
       
       /**
         * The INSERT key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.INSERT")
       @js.native
-      def INSERT: integer = js.native
-      inline def INSERT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INSERT")(x.asInstanceOf[js.Any])
+      def INSERT: Double = js.native
+      inline def INSERT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INSERT")(x.asInstanceOf[js.Any])
       
-      inline def I_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("I")(x.asInstanceOf[js.Any])
+      inline def I_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("I")(x.asInstanceOf[js.Any])
       
       /**
         * The J key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.J")
       @js.native
-      def J: integer = js.native
-      inline def J_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("J")(x.asInstanceOf[js.Any])
+      def J: Double = js.native
+      inline def J_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("J")(x.asInstanceOf[js.Any])
       
       /**
         * The K key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.K")
       @js.native
-      def K: integer = js.native
-      inline def K_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("K")(x.asInstanceOf[js.Any])
+      def K: Double = js.native
+      inline def K_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("K")(x.asInstanceOf[js.Any])
       
       /**
         * The L key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.L")
       @js.native
-      def L: integer = js.native
+      def L: Double = js.native
       
       /**
         * The LEFT key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.LEFT")
       @js.native
-      def LEFT: integer = js.native
-      inline def LEFT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
+      def LEFT: Double = js.native
+      inline def LEFT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEFT")(x.asInstanceOf[js.Any])
       
-      inline def L_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("L")(x.asInstanceOf[js.Any])
+      inline def L_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("L")(x.asInstanceOf[js.Any])
       
       /**
         * The M key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.M")
       @js.native
-      def M: integer = js.native
+      def M: Double = js.native
       
       /**
         * The MINUS key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.MINUS")
       @js.native
-      def MINUS: integer = js.native
-      inline def MINUS_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MINUS")(x.asInstanceOf[js.Any])
+      def MINUS: Double = js.native
+      inline def MINUS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MINUS")(x.asInstanceOf[js.Any])
       
-      inline def M_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("M")(x.asInstanceOf[js.Any])
+      inline def M_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("M")(x.asInstanceOf[js.Any])
       
       /**
         * The N key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.N")
       @js.native
-      def N: integer = js.native
+      def N: Double = js.native
       
       /**
         * The NINE key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.NINE")
       @js.native
-      def NINE: integer = js.native
-      inline def NINE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NINE")(x.asInstanceOf[js.Any])
+      def NINE: Double = js.native
+      inline def NINE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NINE")(x.asInstanceOf[js.Any])
       
       /**
         * The Numpad Addition (+) key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.NUMPAD_ADD")
       @js.native
-      def NUMPAD_ADD: integer = js.native
-      inline def NUMPAD_ADD_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_ADD")(x.asInstanceOf[js.Any])
+      def NUMPAD_ADD: Double = js.native
+      inline def NUMPAD_ADD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_ADD")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_EIGHT key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.NUMPAD_EIGHT")
       @js.native
-      def NUMPAD_EIGHT: integer = js.native
-      inline def NUMPAD_EIGHT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_EIGHT")(x.asInstanceOf[js.Any])
+      def NUMPAD_EIGHT: Double = js.native
+      inline def NUMPAD_EIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_EIGHT")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_FIVE key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.NUMPAD_FIVE")
       @js.native
-      def NUMPAD_FIVE: integer = js.native
-      inline def NUMPAD_FIVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_FIVE")(x.asInstanceOf[js.Any])
+      def NUMPAD_FIVE: Double = js.native
+      inline def NUMPAD_FIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_FIVE")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_FOUR key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.NUMPAD_FOUR")
       @js.native
-      def NUMPAD_FOUR: integer = js.native
-      inline def NUMPAD_FOUR_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_FOUR")(x.asInstanceOf[js.Any])
+      def NUMPAD_FOUR: Double = js.native
+      inline def NUMPAD_FOUR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_FOUR")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_NINE key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.NUMPAD_NINE")
       @js.native
-      def NUMPAD_NINE: integer = js.native
-      inline def NUMPAD_NINE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_NINE")(x.asInstanceOf[js.Any])
+      def NUMPAD_NINE: Double = js.native
+      inline def NUMPAD_NINE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_NINE")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_ONE key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.NUMPAD_ONE")
       @js.native
-      def NUMPAD_ONE: integer = js.native
-      inline def NUMPAD_ONE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_ONE")(x.asInstanceOf[js.Any])
+      def NUMPAD_ONE: Double = js.native
+      inline def NUMPAD_ONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_ONE")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_SEVEN key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.NUMPAD_SEVEN")
       @js.native
-      def NUMPAD_SEVEN: integer = js.native
-      inline def NUMPAD_SEVEN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_SEVEN")(x.asInstanceOf[js.Any])
+      def NUMPAD_SEVEN: Double = js.native
+      inline def NUMPAD_SEVEN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_SEVEN")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_SIX key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.NUMPAD_SIX")
       @js.native
-      def NUMPAD_SIX: integer = js.native
-      inline def NUMPAD_SIX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_SIX")(x.asInstanceOf[js.Any])
+      def NUMPAD_SIX: Double = js.native
+      inline def NUMPAD_SIX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_SIX")(x.asInstanceOf[js.Any])
       
       /**
         * The Numpad Subtraction (-) key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.NUMPAD_SUBTRACT")
       @js.native
-      def NUMPAD_SUBTRACT: integer = js.native
-      inline def NUMPAD_SUBTRACT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_SUBTRACT")(x.asInstanceOf[js.Any])
+      def NUMPAD_SUBTRACT: Double = js.native
+      inline def NUMPAD_SUBTRACT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_SUBTRACT")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_THREE key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.NUMPAD_THREE")
       @js.native
-      def NUMPAD_THREE: integer = js.native
-      inline def NUMPAD_THREE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_THREE")(x.asInstanceOf[js.Any])
+      def NUMPAD_THREE: Double = js.native
+      inline def NUMPAD_THREE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_THREE")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_TWO key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.NUMPAD_TWO")
       @js.native
-      def NUMPAD_TWO: integer = js.native
-      inline def NUMPAD_TWO_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_TWO")(x.asInstanceOf[js.Any])
+      def NUMPAD_TWO: Double = js.native
+      inline def NUMPAD_TWO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_TWO")(x.asInstanceOf[js.Any])
       
       /**
         * The NUMPAD_ZERO key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.NUMPAD_ZERO")
       @js.native
-      def NUMPAD_ZERO: integer = js.native
-      inline def NUMPAD_ZERO_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_ZERO")(x.asInstanceOf[js.Any])
+      def NUMPAD_ZERO: Double = js.native
+      inline def NUMPAD_ZERO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMPAD_ZERO")(x.asInstanceOf[js.Any])
       
-      inline def N_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("N")(x.asInstanceOf[js.Any])
+      inline def N_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("N")(x.asInstanceOf[js.Any])
       
       /**
         * The O key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.O")
       @js.native
-      def O: integer = js.native
+      def O: Double = js.native
       
       /**
         * The ONE key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.ONE")
       @js.native
-      def ONE: integer = js.native
-      inline def ONE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+      def ONE: Double = js.native
+      inline def ONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
       
       /**
         * The OPEN_BRACKET key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.OPEN_BRACKET")
       @js.native
-      def OPEN_BRACKET: integer = js.native
-      inline def OPEN_BRACKET_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN_BRACKET")(x.asInstanceOf[js.Any])
+      def OPEN_BRACKET: Double = js.native
+      inline def OPEN_BRACKET_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN_BRACKET")(x.asInstanceOf[js.Any])
       
-      inline def O_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("O")(x.asInstanceOf[js.Any])
+      inline def O_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("O")(x.asInstanceOf[js.Any])
       
       /**
         * The P key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.P")
       @js.native
-      def P: integer = js.native
+      def P: Double = js.native
       
       /**
         * The PAGE_DOWN key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.PAGE_DOWN")
       @js.native
-      def PAGE_DOWN: integer = js.native
-      inline def PAGE_DOWN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAGE_DOWN")(x.asInstanceOf[js.Any])
+      def PAGE_DOWN: Double = js.native
+      inline def PAGE_DOWN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAGE_DOWN")(x.asInstanceOf[js.Any])
       
       /**
         * The PAGE_UP key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.PAGE_UP")
       @js.native
-      def PAGE_UP: integer = js.native
-      inline def PAGE_UP_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAGE_UP")(x.asInstanceOf[js.Any])
+      def PAGE_UP: Double = js.native
+      inline def PAGE_UP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAGE_UP")(x.asInstanceOf[js.Any])
       
       /**
         * The PAUSE key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.PAUSE")
       @js.native
-      def PAUSE: integer = js.native
-      inline def PAUSE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSE")(x.asInstanceOf[js.Any])
+      def PAUSE: Double = js.native
+      inline def PAUSE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSE")(x.asInstanceOf[js.Any])
       
       /**
         * The PERIOD key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.PERIOD")
       @js.native
-      def PERIOD: integer = js.native
-      inline def PERIOD_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PERIOD")(x.asInstanceOf[js.Any])
+      def PERIOD: Double = js.native
+      inline def PERIOD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PERIOD")(x.asInstanceOf[js.Any])
       
       /**
         * The PLUS key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.PLUS")
       @js.native
-      def PLUS: integer = js.native
-      inline def PLUS_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLUS")(x.asInstanceOf[js.Any])
+      def PLUS: Double = js.native
+      inline def PLUS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLUS")(x.asInstanceOf[js.Any])
       
       /**
         * The PRINT_SCREEN key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.PRINT_SCREEN")
       @js.native
-      def PRINT_SCREEN: integer = js.native
-      inline def PRINT_SCREEN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRINT_SCREEN")(x.asInstanceOf[js.Any])
+      def PRINT_SCREEN: Double = js.native
+      inline def PRINT_SCREEN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRINT_SCREEN")(x.asInstanceOf[js.Any])
       
-      inline def P_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("P")(x.asInstanceOf[js.Any])
+      inline def P_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("P")(x.asInstanceOf[js.Any])
       
       /**
         * The Q key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.Q")
       @js.native
-      def Q: integer = js.native
+      def Q: Double = js.native
       
       /**
         * The QUOTES key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.QUOTES")
       @js.native
-      def QUOTES: integer = js.native
-      inline def QUOTES_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUOTES")(x.asInstanceOf[js.Any])
+      def QUOTES: Double = js.native
+      inline def QUOTES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUOTES")(x.asInstanceOf[js.Any])
       
-      inline def Q_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Q")(x.asInstanceOf[js.Any])
+      inline def Q_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Q")(x.asInstanceOf[js.Any])
       
       /**
         * The R key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.R")
       @js.native
-      def R: integer = js.native
+      def R: Double = js.native
       
       /**
         * The RIGHT key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.RIGHT")
       @js.native
-      def RIGHT: integer = js.native
-      inline def RIGHT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
+      def RIGHT: Double = js.native
+      inline def RIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
       
-      inline def R_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("R")(x.asInstanceOf[js.Any])
+      inline def R_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("R")(x.asInstanceOf[js.Any])
       
       /**
         * The S key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.S")
       @js.native
-      def S: integer = js.native
+      def S: Double = js.native
       
       /**
         * The SEMICOLON key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.SEMICOLON")
       @js.native
-      def SEMICOLON: integer = js.native
-      inline def SEMICOLON_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEMICOLON")(x.asInstanceOf[js.Any])
+      def SEMICOLON: Double = js.native
+      inline def SEMICOLON_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEMICOLON")(x.asInstanceOf[js.Any])
       
       /**
         * The SEMICOLON_FIREFOX key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.SEMICOLON_FIREFOX")
       @js.native
-      def SEMICOLON_FIREFOX: integer = js.native
-      inline def SEMICOLON_FIREFOX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEMICOLON_FIREFOX")(x.asInstanceOf[js.Any])
+      def SEMICOLON_FIREFOX: Double = js.native
+      inline def SEMICOLON_FIREFOX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEMICOLON_FIREFOX")(x.asInstanceOf[js.Any])
       
       /**
         * The SEVEN key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.SEVEN")
       @js.native
-      def SEVEN: integer = js.native
-      inline def SEVEN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEVEN")(x.asInstanceOf[js.Any])
+      def SEVEN: Double = js.native
+      inline def SEVEN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEVEN")(x.asInstanceOf[js.Any])
       
       /**
         * The SHIFT key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.SHIFT")
       @js.native
-      def SHIFT: integer = js.native
-      inline def SHIFT_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHIFT")(x.asInstanceOf[js.Any])
+      def SHIFT: Double = js.native
+      inline def SHIFT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHIFT")(x.asInstanceOf[js.Any])
       
       /**
         * The SIX key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.SIX")
       @js.native
-      def SIX: integer = js.native
-      inline def SIX_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIX")(x.asInstanceOf[js.Any])
+      def SIX: Double = js.native
+      inline def SIX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIX")(x.asInstanceOf[js.Any])
       
       /**
         * The SPACE key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.SPACE")
       @js.native
-      def SPACE: integer = js.native
-      inline def SPACE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACE")(x.asInstanceOf[js.Any])
+      def SPACE: Double = js.native
+      inline def SPACE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACE")(x.asInstanceOf[js.Any])
       
-      inline def S_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("S")(x.asInstanceOf[js.Any])
+      inline def S_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("S")(x.asInstanceOf[js.Any])
       
       /**
         * The T key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.T")
       @js.native
-      def T: integer = js.native
+      def T: Double = js.native
       
       /**
         * The TAB key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.TAB")
       @js.native
-      def TAB: integer = js.native
-      inline def TAB_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB")(x.asInstanceOf[js.Any])
+      def TAB: Double = js.native
+      inline def TAB_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB")(x.asInstanceOf[js.Any])
       
       /**
         * The THREE key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.THREE")
       @js.native
-      def THREE: integer = js.native
-      inline def THREE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THREE")(x.asInstanceOf[js.Any])
+      def THREE: Double = js.native
+      inline def THREE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THREE")(x.asInstanceOf[js.Any])
       
       /**
         * The TWO key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.TWO")
       @js.native
-      def TWO: integer = js.native
-      inline def TWO_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWO")(x.asInstanceOf[js.Any])
+      def TWO: Double = js.native
+      inline def TWO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWO")(x.asInstanceOf[js.Any])
       
-      inline def T_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("T")(x.asInstanceOf[js.Any])
+      inline def T_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("T")(x.asInstanceOf[js.Any])
       
       /**
         * The U key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.U")
       @js.native
-      def U: integer = js.native
+      def U: Double = js.native
       
       /**
         * The UP key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.UP")
       @js.native
-      def UP: integer = js.native
-      inline def UP_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UP")(x.asInstanceOf[js.Any])
+      def UP: Double = js.native
+      inline def UP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UP")(x.asInstanceOf[js.Any])
       
-      inline def U_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("U")(x.asInstanceOf[js.Any])
+      inline def U_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("U")(x.asInstanceOf[js.Any])
       
       /**
         * The V key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.V")
       @js.native
-      def V: integer = js.native
-      inline def V_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("V")(x.asInstanceOf[js.Any])
+      def V: Double = js.native
+      inline def V_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("V")(x.asInstanceOf[js.Any])
       
       /**
         * The W key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.W")
       @js.native
-      def W: integer = js.native
-      inline def W_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("W")(x.asInstanceOf[js.Any])
+      def W: Double = js.native
+      inline def W_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("W")(x.asInstanceOf[js.Any])
       
       /**
         * The X key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.X")
       @js.native
-      def X: integer = js.native
-      inline def X_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("X")(x.asInstanceOf[js.Any])
+      def X: Double = js.native
+      inline def X_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("X")(x.asInstanceOf[js.Any])
       
       /**
         * The Y key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.Y")
       @js.native
-      def Y: integer = js.native
-      inline def Y_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Y")(x.asInstanceOf[js.Any])
+      def Y: Double = js.native
+      inline def Y_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Y")(x.asInstanceOf[js.Any])
       
       /**
         * The Z key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.Z")
       @js.native
-      def Z: integer = js.native
+      def Z: Double = js.native
       
       /**
         * The ZERO key.
         */
       @JSImport("phaser", "Input.Keyboard.KeyCodes.ZERO")
       @js.native
-      def ZERO: integer = js.native
-      inline def ZERO_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+      def ZERO: Double = js.native
+      inline def ZERO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
       
-      inline def Z_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Z")(x.asInstanceOf[js.Any])
+      inline def Z_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Z")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -2280,7 +2289,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Keyboard.KeyCombo")
     @js.native
-    class KeyCombo protected ()
+    open class KeyCombo protected ()
       extends StObject
          with typings.phaser.Phaser.Input.Keyboard.KeyCombo {
       /**
@@ -2292,7 +2301,7 @@ object Input {
       def this(keyboardPlugin: typings.phaser.Phaser.Input.Keyboard.KeyboardPlugin, keys: String) = this()
       def this(
         keyboardPlugin: typings.phaser.Phaser.Input.Keyboard.KeyboardPlugin,
-        keys: js.Array[js.Object | integer]
+        keys: js.Array[Double | js.Object]
       ) = this()
       def this(
         keyboardPlugin: typings.phaser.Phaser.Input.Keyboard.KeyboardPlugin,
@@ -2301,7 +2310,7 @@ object Input {
       ) = this()
       def this(
         keyboardPlugin: typings.phaser.Phaser.Input.Keyboard.KeyboardPlugin,
-        keys: js.Array[js.Object | integer],
+        keys: js.Array[Double | js.Object],
         config: KeyComboConfig
       ) = this()
       
@@ -2309,7 +2318,7 @@ object Input {
         * The current keyCode the combo is waiting for.
         */
       /* CompleteClass */
-      var current: integer = js.native
+      var current: Double = js.native
       
       /**
         * If the combo matches, will it delete itself?
@@ -2333,13 +2342,13 @@ object Input {
         * The current index of the key being waited for in the 'keys' string.
         */
       /* CompleteClass */
-      var index: integer = js.native
+      var index: Double = js.native
       
       /**
         * An array of the keycodes that comprise this combo.
         */
       /* CompleteClass */
-      var keyCodes: js.Array[js.Any] = js.native
+      var keyCodes: js.Array[Any] = js.native
       
       /**
         * A reference to the Keyboard Manager
@@ -2357,7 +2366,7 @@ object Input {
         * The max delay in ms between each key press. Above this the combo is reset. 0 means disabled.
         */
       /* CompleteClass */
-      var maxKeyDelay: integer = js.native
+      var maxKeyDelay: Double = js.native
       
       /**
         * How far complete is this combo? A value between 0 and 1.
@@ -2406,7 +2415,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Keyboard.KeyboardManager")
     @js.native
-    class KeyboardManager protected ()
+    open class KeyboardManager protected ()
       extends StObject
          with typings.phaser.Phaser.Input.Keyboard.KeyboardManager {
       /**
@@ -2454,7 +2463,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Keyboard.KeyboardPlugin")
     @js.native
-    class KeyboardPlugin protected ()
+    open class KeyboardPlugin protected ()
       extends StObject
          with typings.phaser.Phaser.Input.Keyboard.KeyboardPlugin {
       /**
@@ -2471,7 +2480,7 @@ object Input {
       * @param duration The duration, in ms, within which the key must have been released. Default 50.
       */
     inline def UpDuration(key: typings.phaser.Phaser.Input.Keyboard.Key): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("UpDuration")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    inline def UpDuration(key: typings.phaser.Phaser.Input.Keyboard.Key, duration: integer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("UpDuration")(key.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def UpDuration(key: typings.phaser.Phaser.Input.Keyboard.Key, duration: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("UpDuration")(key.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   /**
@@ -2479,32 +2488,32 @@ object Input {
     */
   @JSImport("phaser", "Input.MOUSE_DOWN")
   @js.native
-  def MOUSE_DOWN: integer = js.native
-  inline def MOUSE_DOWN_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_DOWN")(x.asInstanceOf[js.Any])
+  def MOUSE_DOWN: Double = js.native
+  inline def MOUSE_DOWN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_DOWN")(x.asInstanceOf[js.Any])
   
   /**
     * The mouse pointer is being moved.
     */
   @JSImport("phaser", "Input.MOUSE_MOVE")
   @js.native
-  def MOUSE_MOVE: integer = js.native
-  inline def MOUSE_MOVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_MOVE")(x.asInstanceOf[js.Any])
+  def MOUSE_MOVE: Double = js.native
+  inline def MOUSE_MOVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_MOVE")(x.asInstanceOf[js.Any])
   
   /**
     * The mouse pointer is released.
     */
   @JSImport("phaser", "Input.MOUSE_UP")
   @js.native
-  def MOUSE_UP: integer = js.native
-  inline def MOUSE_UP_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_UP")(x.asInstanceOf[js.Any])
+  def MOUSE_UP: Double = js.native
+  inline def MOUSE_UP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_UP")(x.asInstanceOf[js.Any])
   
   /**
     * The mouse wheel changes.
     */
   @JSImport("phaser", "Input.MOUSE_WHEEL")
   @js.native
-  def MOUSE_WHEEL: integer = js.native
-  inline def MOUSE_WHEEL_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_WHEEL")(x.asInstanceOf[js.Any])
+  def MOUSE_WHEEL: Double = js.native
+  inline def MOUSE_WHEEL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MOUSE_WHEEL")(x.asInstanceOf[js.Any])
   
   object Mouse {
     
@@ -2517,7 +2526,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Mouse.MouseManager")
     @js.native
-    class MouseManager protected ()
+    open class MouseManager protected ()
       extends StObject
          with typings.phaser.Phaser.Input.Mouse.MouseManager {
       /**
@@ -2525,12 +2534,6 @@ object Input {
         * @param inputManager A reference to the Input Manager.
         */
       def this(inputManager: typings.phaser.Phaser.Input.InputManager) = this()
-      
-      /**
-        * If true the DOM mouse events will have event.preventDefault applied to them, if false they will propagate fully.
-        */
-      /* CompleteClass */
-      var capture: Boolean = js.native
       
       /**
         * Destroys this Mouse Manager instance.
@@ -2555,6 +2558,16 @@ object Input {
         */
       /* CompleteClass */
       var enabled: Boolean = js.native
+      
+      /**
+        * Are the event listeners hooked into `window.top` or `window`?
+        * 
+        * This is set during the `boot` sequence. If the browser does not have access to `window.top`,
+        * such as in cross-origin iframe environments, this property gets set to `false` and the events
+        * are hooked into `window` instead.
+        */
+      /* CompleteClass */
+      override val isTop: Boolean = js.native
       
       /**
         * If the mouse has been pointer locked successfully this will be set to true.
@@ -2641,6 +2654,30 @@ object Input {
       var pointerLockChange: js.Function = js.native
       
       /**
+        * If `true` the DOM `mousedown` event will have `preventDefault` set.
+        */
+      /* CompleteClass */
+      var preventDefaultDown: Boolean = js.native
+      
+      /**
+        * If `true` the DOM `mousemove` event will have `preventDefault` set.
+        */
+      /* CompleteClass */
+      var preventDefaultMove: Boolean = js.native
+      
+      /**
+        * If `true` the DOM `mouseup` event will have `preventDefault` set.
+        */
+      /* CompleteClass */
+      var preventDefaultUp: Boolean = js.native
+      
+      /**
+        * If `true` the DOM `wheel` event will have `preventDefault` set.
+        */
+      /* CompleteClass */
+      var preventDefaultWheel: Boolean = js.native
+      
+      /**
         * If the browser supports pointer lock, this will request that the pointer lock is released. If
         * the browser successfully enters a locked state, a 'POINTER_LOCK_CHANGE_EVENT' will be
         * dispatched - from the game's input manager - with an `isPointerLocked` property.
@@ -2659,6 +2696,12 @@ object Input {
         * 
         * It is important to note that pointer lock can only be enabled after an 'engagement gesture',
         * see: https://w3c.github.io/pointerlock/#dfn-engagement-gesture.
+        * 
+        * Note for Firefox: There is a bug in certain Firefox releases that cause native DOM events like
+        * `mousemove` to fire continuously when in pointer lock mode. You can get around this by setting
+        * `this.preventDefaultMove` to `false` in this class. You may also need to do the same for
+        * `preventDefaultDown` and/or `preventDefaultUp`. Please test combinations of these if you encounter
+        * the error.
         */
       /* CompleteClass */
       override def requestPointerLock(): Unit = js.native
@@ -2682,7 +2725,7 @@ object Input {
         * Typically the canvas to which the game is rendering, but can be any interactive DOM element.
         */
       /* CompleteClass */
-      var target: js.Any = js.native
+      var target: Any = js.native
     }
   }
   
@@ -2691,8 +2734,8 @@ object Input {
     */
   @JSImport("phaser", "Input.POINTER_LOCK_CHANGE")
   @js.native
-  def POINTER_LOCK_CHANGE: integer = js.native
-  inline def POINTER_LOCK_CHANGE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POINTER_LOCK_CHANGE")(x.asInstanceOf[js.Any])
+  def POINTER_LOCK_CHANGE: Double = js.native
+  inline def POINTER_LOCK_CHANGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POINTER_LOCK_CHANGE")(x.asInstanceOf[js.Any])
   
   /**
     * A Pointer object encapsulates both mouse and touch input within Phaser.
@@ -2710,7 +2753,7 @@ object Input {
     */
   @JSImport("phaser", "Input.Pointer")
   @js.native
-  class Pointer protected ()
+  open class Pointer protected ()
     extends StObject
        with typings.phaser.Phaser.Input.Pointer {
     /**
@@ -2718,7 +2761,7 @@ object Input {
       * @param manager A reference to the Input Manager.
       * @param id The internal ID of this Pointer.
       */
-    def this(manager: typings.phaser.Phaser.Input.InputManager, id: integer) = this()
+    def this(manager: typings.phaser.Phaser.Input.InputManager, id: Double) = this()
   }
   
   /**
@@ -2726,32 +2769,32 @@ object Input {
     */
   @JSImport("phaser", "Input.TOUCH_CANCEL")
   @js.native
-  def TOUCH_CANCEL: integer = js.native
-  inline def TOUCH_CANCEL_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_CANCEL")(x.asInstanceOf[js.Any])
+  def TOUCH_CANCEL: Double = js.native
+  inline def TOUCH_CANCEL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_CANCEL")(x.asInstanceOf[js.Any])
   
   /**
     * A touch pointer has been started.
     */
   @JSImport("phaser", "Input.TOUCH_END")
   @js.native
-  def TOUCH_END: integer = js.native
-  inline def TOUCH_END_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_END")(x.asInstanceOf[js.Any])
+  def TOUCH_END: Double = js.native
+  inline def TOUCH_END_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_END")(x.asInstanceOf[js.Any])
   
   /**
     * A touch pointer has been started.
     */
   @JSImport("phaser", "Input.TOUCH_MOVE")
   @js.native
-  def TOUCH_MOVE: integer = js.native
-  inline def TOUCH_MOVE_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_MOVE")(x.asInstanceOf[js.Any])
+  def TOUCH_MOVE: Double = js.native
+  inline def TOUCH_MOVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_MOVE")(x.asInstanceOf[js.Any])
   
   /**
     * A touch pointer has been started.
     */
   @JSImport("phaser", "Input.TOUCH_START")
   @js.native
-  def TOUCH_START: integer = js.native
-  inline def TOUCH_START_=(x: integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_START")(x.asInstanceOf[js.Any])
+  def TOUCH_START: Double = js.native
+  inline def TOUCH_START_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_START")(x.asInstanceOf[js.Any])
   
   object Touch {
     
@@ -2764,7 +2807,7 @@ object Input {
       */
     @JSImport("phaser", "Input.Touch.TouchManager")
     @js.native
-    class TouchManager protected ()
+    open class TouchManager protected ()
       extends StObject
          with typings.phaser.Phaser.Input.Touch.TouchManager {
       /**
@@ -2893,7 +2936,7 @@ object Input {
         * Typically the canvas to which the game is rendering, but can be any interactive DOM element.
         */
       /* CompleteClass */
-      var target: js.Any = js.native
+      var target: Any = js.native
     }
   }
 }

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  inline def apply(global: global): String = ^.asInstanceOf[js.Dynamic].apply(global.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(): String | Null = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String | Null]
+  inline def apply(global: global): String | Null = ^.asInstanceOf[js.Dynamic].apply(global.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   @JSImport("git-config-path", JSImport.Namespace)
   @js.native

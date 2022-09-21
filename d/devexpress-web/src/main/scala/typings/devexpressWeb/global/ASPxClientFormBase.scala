@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFormBase")
 @js.native
-class ASPxClientFormBase ()
+open class ASPxClientFormBase ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFormBase {
   
@@ -32,5 +32,5 @@ class ASPxClientFormBase ()
     * @param isVisible true to display the element; false to hide the element.
     */
   /* CompleteClass */
-  override def SetVisibleCore(element: js.Any, isVisible: Boolean): Unit = js.native
+  override def SetVisibleCore(element: Any, isVisible: Boolean): Unit = js.native
 }

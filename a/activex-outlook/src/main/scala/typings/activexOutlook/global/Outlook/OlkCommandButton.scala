@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkCommandButton")
 @js.native
-/* private */ class OlkCommandButton ()
+/* private */ open class OlkCommandButton ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkCommandButton {
   

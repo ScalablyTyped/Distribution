@@ -19,12 +19,12 @@ trait AssessmentRun extends StObject {
   /**
     * The assessment run completion time that corresponds to the rules packages evaluation completion time or failure.
     */
-  var completedAt: js.UndefOr[Timestamp] = js.undefined
+  var completedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time when StartAssessmentRun was called.
     */
-  var createdAt: Timestamp
+  var createdAt: js.Date
   
   /**
     * A Boolean value (true or false) that specifies whether the process of collecting data from the agents is completed.
@@ -59,7 +59,7 @@ trait AssessmentRun extends StObject {
   /**
     * The time when StartAssessmentRun was called.
     */
-  var startedAt: js.UndefOr[Timestamp] = js.undefined
+  var startedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state of the assessment run.
@@ -69,7 +69,7 @@ trait AssessmentRun extends StObject {
   /**
     * The last time when the assessment run's state changed.
     */
-  var stateChangedAt: Timestamp
+  var stateChangedAt: js.Date
   
   /**
     * A list of the assessment run state changes.
@@ -86,7 +86,7 @@ object AssessmentRun {
   inline def apply(
     arn: Arn,
     assessmentTemplateArn: Arn,
-    createdAt: Timestamp,
+    createdAt: js.Date,
     dataCollected: Bool,
     durationInSeconds: AssessmentRunDuration,
     findingCounts: AssessmentRunFindingCounts,
@@ -94,7 +94,7 @@ object AssessmentRun {
     notifications: AssessmentRunNotificationList,
     rulesPackageArns: AssessmentRulesPackageArnList,
     state: AssessmentRunState,
-    stateChangedAt: Timestamp,
+    stateChangedAt: js.Date,
     stateChanges: AssessmentRunStateChangeList,
     userAttributesForFindings: UserAttributeList
   ): AssessmentRun = {
@@ -108,11 +108,11 @@ object AssessmentRun {
     
     inline def setAssessmentTemplateArn(value: Arn): Self = StObject.set(x, "assessmentTemplateArn", value.asInstanceOf[js.Any])
     
-    inline def setCompletedAt(value: Timestamp): Self = StObject.set(x, "completedAt", value.asInstanceOf[js.Any])
+    inline def setCompletedAt(value: js.Date): Self = StObject.set(x, "completedAt", value.asInstanceOf[js.Any])
     
     inline def setCompletedAtUndefined: Self = StObject.set(x, "completedAt", js.undefined)
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setDataCollected(value: Bool): Self = StObject.set(x, "dataCollected", value.asInstanceOf[js.Any])
     
@@ -124,26 +124,26 @@ object AssessmentRun {
     
     inline def setNotifications(value: AssessmentRunNotificationList): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
     
-    inline def setNotificationsVarargs(value: AssessmentRunNotification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+    inline def setNotificationsVarargs(value: AssessmentRunNotification*): Self = StObject.set(x, "notifications", js.Array(value*))
     
     inline def setRulesPackageArns(value: AssessmentRulesPackageArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
     
-    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
+    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value*))
     
-    inline def setStartedAt(value: Timestamp): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: js.Date): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
     inline def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
     
     inline def setState(value: AssessmentRunState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setStateChangedAt(value: Timestamp): Self = StObject.set(x, "stateChangedAt", value.asInstanceOf[js.Any])
+    inline def setStateChangedAt(value: js.Date): Self = StObject.set(x, "stateChangedAt", value.asInstanceOf[js.Any])
     
     inline def setStateChanges(value: AssessmentRunStateChangeList): Self = StObject.set(x, "stateChanges", value.asInstanceOf[js.Any])
     
-    inline def setStateChangesVarargs(value: AssessmentRunStateChange*): Self = StObject.set(x, "stateChanges", js.Array(value :_*))
+    inline def setStateChangesVarargs(value: AssessmentRunStateChange*): Self = StObject.set(x, "stateChanges", js.Array(value*))
     
     inline def setUserAttributesForFindings(value: UserAttributeList): Self = StObject.set(x, "userAttributesForFindings", value.asInstanceOf[js.Any])
     
-    inline def setUserAttributesForFindingsVarargs(value: Attribute*): Self = StObject.set(x, "userAttributesForFindings", js.Array(value :_*))
+    inline def setUserAttributesForFindingsVarargs(value: Attribute*): Self = StObject.set(x, "userAttributesForFindings", js.Array(value*))
   }
 }

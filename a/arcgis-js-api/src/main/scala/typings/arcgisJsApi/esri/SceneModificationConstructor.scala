@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SceneModificationConstructor
   extends StObject
-     with Instantiable0[SceneModification]
+     with /**
+  * The SceneModification is used to perform a client-side geometric modifications.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SceneModification.html)
+  */
+Instantiable0[SceneModification]
      with Instantiable1[/* properties */ SceneModificationProperties, SceneModification] {
   
-  def fromJSON(json: js.Any): SceneModification = js.native
+  def fromJSON(json: Any): SceneModification = js.native
 }

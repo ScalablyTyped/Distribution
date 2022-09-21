@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("http-cache-semantics", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with CachePolicy {
     def this(req: Request, res: Response) = this()

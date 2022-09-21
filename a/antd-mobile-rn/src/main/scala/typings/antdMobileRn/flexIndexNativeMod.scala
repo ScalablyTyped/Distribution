@@ -9,7 +9,7 @@ object flexIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/flex/index.native", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.antdMobileRn.flexNativeMod.default
   /* static members */
   object default {
@@ -20,8 +20,8 @@ object flexIndexNativeMod {
     
     @JSImport("antd-mobile-rn/lib/flex/index.native", "default.Item")
     @js.native
-    def Item: js.Any = js.native
-    inline def Item_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    def Item: Any = js.native
+    inline def Item_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/flex/index.native", "default.defaultProps")
     @js.native

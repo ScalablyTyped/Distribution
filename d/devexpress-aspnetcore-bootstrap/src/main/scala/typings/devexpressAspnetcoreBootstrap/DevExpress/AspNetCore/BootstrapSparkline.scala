@@ -20,9 +20,9 @@ trait BootstrapSparkline
   
   def exportTo(fileName: String, format: String): Unit = js.native
   
-  def getDataSource(): js.Any = js.native
+  def getDataSource(): Any = js.native
   
-  def getInstance(): js.Any = js.native
+  def getInstance(): Any = js.native
   
   def off(
     eventName: Unit,
@@ -204,7 +204,7 @@ trait BootstrapSparkline
   
   def print(): Unit = js.native
   
-  def setDataSource(dataSource: js.Any): Unit = js.native
+  def setDataSource(dataSource: Any): Unit = js.native
   
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
 }

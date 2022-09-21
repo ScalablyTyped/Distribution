@@ -19,7 +19,7 @@ object displayMod {
   
   @JSImport("guacamole-client/lib/Display", "Display")
   @js.native
-  class Display () extends StObject {
+  open class Display () extends StObject {
     
     /**
       * Add the specified arc to the current path.

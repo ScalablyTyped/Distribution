@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "PhysicsJoint")
 @js.native
-class PhysicsJoint protected ()
+open class PhysicsJoint protected ()
   extends typings.babylonjs.indexMod.PhysicsJoint {
   /**
     * Initializes the physics joint

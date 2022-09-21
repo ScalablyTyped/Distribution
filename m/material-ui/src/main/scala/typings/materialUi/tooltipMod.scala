@@ -4,7 +4,8 @@ import typings.materialUi.MaterialUI.propTypes.tooltipHorizontal
 import typings.materialUi.MaterialUI.propTypes.vertical
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,22 +14,22 @@ object tooltipMod {
   
   @JSImport("material-ui/internal/Tooltip", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TooltipProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TooltipProps, js.Object, Any]
   
-  @js.native
-  trait Tooltip
-    extends Component[TooltipProps, js.Object, js.Any]
+  type Tooltip = Component[TooltipProps, js.Object, Any]
   
-  trait TooltipProps
-    extends StObject
-       with Props[Tooltip] {
+  trait TooltipProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var horizontalPosition: js.UndefOr[tooltipHorizontal] = js.undefined
     
-    var label: js.Any
+    var label: Any
+    
+    var ref: js.UndefOr[LegacyRef[Tooltip]] = js.undefined
     
     var show: js.UndefOr[Boolean] = js.undefined
     
@@ -40,12 +41,16 @@ object tooltipMod {
   }
   object TooltipProps {
     
-    inline def apply(label: js.Any): TooltipProps = {
+    inline def apply(label: Any): TooltipProps = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipProps]
     }
     
     extension [Self <: TooltipProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -55,7 +60,15 @@ object tooltipMod {
       
       inline def setHorizontalPositionUndefined: Self = StObject.set(x, "horizontalPosition", js.undefined)
       
-      inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setRef(value: LegacyRef[Tooltip]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Tooltip | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
       inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       

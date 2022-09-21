@@ -16,6 +16,11 @@ trait StatusBarProps
   var animated: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Sets the color of the status bar text.
+    */
+  var barStyle: js.UndefOr[Null | StatusBarStyle] = js.undefined
+  
+  /**
     * If the status bar is hidden.
     */
   var hidden: js.UndefOr[Boolean] = js.undefined
@@ -32,6 +37,12 @@ object StatusBarProps {
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
     inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    
+    inline def setBarStyle(value: StatusBarStyle): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
+    
+    inline def setBarStyleNull: Self = StObject.set(x, "barStyle", null)
+    
+    inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     

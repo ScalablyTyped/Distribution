@@ -1,7 +1,7 @@
 
 # Scala.js typings for rgb-hex
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Convert RGB(A) color to HEX
@@ -10,15 +10,12 @@ Convert RGB(A) color to HEX
 | ------------------ | :-------------: |
 | Full name          | rgb-hex |
 | Keywords           | rgb, hex, color, colour, convert, conversion, converter |
-| # releases         | 2 |
-| # dependents       | 67 |
-| # downloads        | 13852540 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1091772.0 |
+| # stars            | 90.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/rgb-hex#readme)
-- [Bugs](https://github.com/sindresorhus/rgb-hex/issues)
-- [Repository](https://github.com/sindresorhus/rgb-hex)
 - [Npm](https://www.npmjs.com/package/rgb-hex)
     
 

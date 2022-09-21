@@ -11,9 +11,9 @@ Range aka interval object. Supports exclusive and infinite ranges. Comes with an
 | Full name          | strange |
 | Keywords           | range, ranges, interval, interval-tree, bst, integer, integers, sort, bounds, math |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 122384 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8865.0 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/moll/js-strange)

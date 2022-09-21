@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/angularjs", "PathNode")
 @js.native
-class PathNode protected ()
+open class PathNode protected ()
   extends typings.uirouterCore.mod.PathNode {
   /** Creates a copy of a PathNode */
   def this(node: typings.uirouterCore.pathNodeMod.PathNode) = this()

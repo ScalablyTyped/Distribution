@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("IncrementParagraphLeftIndentCommand")
 @js.native
-class IncrementParagraphLeftIndentCommand ()
+open class IncrementParagraphLeftIndentCommand ()
   extends StObject
      with typings.devexpressWeb.IncrementParagraphLeftIndentCommand {
   

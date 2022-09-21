@@ -16,10 +16,9 @@ object menuMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/collections/Menu", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[MenuProps, ComponentState, js.Any] {
+  open class default protected () extends Component[MenuProps, ComponentState, Any] {
     def this(props: MenuProps) = this()
-    def this(props: MenuProps, context: js.Any) = this()
+    def this(props: MenuProps, context: Any) = this()
   }
   object default extends Shortcut {
     
@@ -30,19 +29,17 @@ object menuMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/collections/Menu", "default.Header")
     @js.native
-    class Header protected ()
-      extends Component[MenuHeaderProps, ComponentState, js.Any] {
+    open class Header protected () extends Component[MenuHeaderProps, ComponentState, Any] {
       def this(props: MenuHeaderProps) = this()
-      def this(props: MenuHeaderProps, context: js.Any) = this()
+      def this(props: MenuHeaderProps, context: Any) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/collections/Menu", "default.Item")
     @js.native
-    class Item protected ()
-      extends Component[MenuItemProps, ComponentState, js.Any] {
+    open class Item protected () extends Component[MenuItemProps, ComponentState, Any] {
       def this(props: MenuItemProps) = this()
-      def this(props: MenuItemProps, context: js.Any) = this()
+      def this(props: MenuItemProps, context: Any) = this()
     }
     
     type _To = MenuComponent

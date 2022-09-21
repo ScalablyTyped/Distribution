@@ -10,10 +10,10 @@ A simple Node.js client for Firebase
 | ------------------ | :-------------: |
 | Full name          | firebase-client |
 | Keywords           | firebase, rest, api, client |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 4416 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 183.33333333333334 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/jpstevens/firebase-client)

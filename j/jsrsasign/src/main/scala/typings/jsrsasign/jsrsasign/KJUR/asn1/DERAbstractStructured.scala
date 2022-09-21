@@ -38,7 +38,7 @@ object DERAbstractStructured {
     
     inline def setAsn1Array(value: js.Array[ASN1Object]): Self = StObject.set(x, "asn1Array", value.asInstanceOf[js.Any])
     
-    inline def setAsn1ArrayVarargs(value: ASN1Object*): Self = StObject.set(x, "asn1Array", js.Array(value :_*))
+    inline def setAsn1ArrayVarargs(value: ASN1Object*): Self = StObject.set(x, "asn1Array", js.Array(value*))
     
     inline def setSetByASN1ObjectArray(value: js.Array[ASN1Object] => String): Self = StObject.set(x, "setByASN1ObjectArray", js.Any.fromFunction1(value))
   }

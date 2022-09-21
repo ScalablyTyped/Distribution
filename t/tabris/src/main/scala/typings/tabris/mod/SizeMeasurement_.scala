@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "SizeMeasurement")
 @js.native
-/* private */ class SizeMeasurement_ () extends NativeObject {
+/**
+  * Allows to measure Text.
+  */
+/* private */ open class SizeMeasurement_ () extends NativeObject {
   
   /**
     * Measures the given text. The method returns a `Promise` which resolves to an array of `{width:

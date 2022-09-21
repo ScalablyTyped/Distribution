@@ -10,10 +10,10 @@ object playlistAddCheckMod {
   
   @JSImport("material-ui/svg-icons/av/playlist-add-check", JSImport.Default)
   @js.native
-  class default () extends AvPlaylistAddCheck
+  open class default () extends AvPlaylistAddCheck
   
   @JSImport("material-ui/svg-icons/av/playlist-add-check", "AvPlaylistAddCheck")
   @js.native
-  class AvPlaylistAddCheck ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvPlaylistAddCheck ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

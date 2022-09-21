@@ -18,6 +18,24 @@ trait GanttPointOptionsObject extends StObject {
   var collapsed: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Gantt) Individual color for the point. By default
+    * the color is pulled from the global `colors` array.
+    *
+    * In styled mode, the `color` option doesn't take effect. Instead, use
+    * `colorIndex`.
+    */
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  
+  /**
+    * (Highcharts, Gantt) A specific color index to use for the point, so its
+    * graphic representations are given the class name `highcharts-color-{n}`.
+    * In styled mode this will change the color of the graphic. In non-styled
+    * mode, the color by is set by the `fill` attribute, so the change in class
+    * name won't have a visual effect by default.
+    */
+  var colorIndex: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Gantt) Progress indicator, how much of the task completed. If it is a
     * number, the `fill` will be applied automatically.
     */
@@ -28,7 +46,7 @@ trait GanttPointOptionsObject extends StObject {
     * functionality. Here you can add additional data for your own event
     * callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
   
   /**
     * (Gantt) The ID of the point (task) that this point depends on in Gantt
@@ -128,11 +146,19 @@ object GanttPointOptionsObject {
     
     inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
+    inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorIndex(value: Double): Self = StObject.set(x, "colorIndex", value.asInstanceOf[js.Any])
+    
+    inline def setColorIndexUndefined: Self = StObject.set(x, "colorIndex", js.undefined)
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
     inline def setCompleted(value: Double | XrangePointPartialFillOptionsObject): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
     inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
     
-    inline def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
@@ -142,7 +168,7 @@ object GanttPointOptionsObject {
     
     inline def setDependencyUndefined: Self = StObject.set(x, "dependency", js.undefined)
     
-    inline def setDependencyVarargs(value: (String | XrangePointConnectorsOptionsObject)*): Self = StObject.set(x, "dependency", js.Array(value :_*))
+    inline def setDependencyVarargs(value: (String | XrangePointConnectorsOptionsObject)*): Self = StObject.set(x, "dependency", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

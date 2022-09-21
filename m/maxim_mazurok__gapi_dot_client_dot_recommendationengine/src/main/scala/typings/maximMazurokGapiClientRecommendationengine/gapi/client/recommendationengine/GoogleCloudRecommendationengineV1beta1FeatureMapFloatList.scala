@@ -22,6 +22,6 @@ object GoogleCloudRecommendationengineV1beta1FeatureMapFloatList {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

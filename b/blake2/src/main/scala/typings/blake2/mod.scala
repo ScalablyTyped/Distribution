@@ -1,7 +1,7 @@
 package typings.blake2
 
-import typings.node.Buffer
-import typings.node.cryptoMod.HexBase64Latin1Encoding
+import typings.node.bufferMod.global.Buffer
+import typings.node.cryptoMod.BinaryToTextEncoding
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
@@ -16,28 +16,28 @@ object mod {
   
   @JSImport("blake2", "Hash")
   @js.native
-  class Hash protected () extends Transform {
+  open class Hash protected () extends Transform {
     def this(algorithm: Blake2Algorithm) = this()
     def this(algorithm: Blake2Algorithm, options: Blake2Options) = this()
     
     def copy(): this.type = js.native
     
     def digest(): Buffer = js.native
-    def digest(encoding: HexBase64Latin1Encoding): String = js.native
+    def digest(encoding: BinaryToTextEncoding): String = js.native
     
     def update(buf: Buffer): this.type = js.native
   }
   
   @JSImport("blake2", "KeyedHash")
   @js.native
-  class KeyedHash protected () extends Transform {
+  open class KeyedHash protected () extends Transform {
     def this(algorithm: Blake2Algorithm, key: Buffer) = this()
     def this(algorithm: Blake2Algorithm, key: Buffer, options: Blake2Options) = this()
     
     def copy(): this.type = js.native
     
     def digest(): Buffer = js.native
-    def digest(encoding: HexBase64Latin1Encoding): String = js.native
+    def digest(encoding: BinaryToTextEncoding): String = js.native
     
     def update(buf: Buffer): this.type = js.native
   }

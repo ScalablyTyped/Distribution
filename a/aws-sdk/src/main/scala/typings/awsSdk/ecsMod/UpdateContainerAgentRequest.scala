@@ -12,7 +12,7 @@ trait UpdateContainerAgentRequest extends StObject {
   var cluster: js.UndefOr[String] = js.undefined
   
   /**
-    * The container instance ID or full ARN entries for the container instance on which you would like to update the Amazon ECS container agent.
+    * The container instance ID or full ARN entries for the container instance where you would like to update the Amazon ECS container agent.
     */
   var containerInstance: String
 }

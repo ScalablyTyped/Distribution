@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Indexes")
 @js.native
-/* private */ class Indexes ()
+/* private */ open class Indexes ()
   extends StObject
      with typings.activexWord.Word.Indexes

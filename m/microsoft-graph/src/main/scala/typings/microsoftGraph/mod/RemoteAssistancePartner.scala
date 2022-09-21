@@ -14,7 +14,10 @@ trait RemoteAssistancePartner
   // Timestamp of the last request sent to Intune by the TEM partner.
   var lastConnectionDateTime: js.UndefOr[String] = js.undefined
   
-  // TBD. Possible values are: notOnboarded, onboarding, onboarded.
+  /**
+    * A friendly description of the current TeamViewer connector status. Possible values are: notOnboarded, onboarding,
+    * onboarded.
+    */
   var onboardingStatus: js.UndefOr[RemoteAssistanceOnboardingStatus] = js.undefined
   
   // URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.

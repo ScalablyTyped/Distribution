@@ -12,12 +12,12 @@ trait GlobalReplicationGroupMember extends StObject {
   var AutomaticFailover: js.UndefOr[AutomaticFailoverStatus] = js.undefined
   
   /**
-    * The replication group id of the Global Datastore member.
+    * The replication group id of the Global datastore member.
     */
   var ReplicationGroupId: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS region of the Global Datastore member.
+    * The Amazon region of the Global datastore member.
     */
   var ReplicationGroupRegion: js.UndefOr[String] = js.undefined
   

@@ -1,6 +1,5 @@
 package typings.wavEncoder
 
-import typings.std.ArrayBuffer
 import typings.wavEncoder.mod.AudioData
 import typings.wavEncoder.mod.Options
 import org.scalablytyped.runtime.StObject
@@ -12,10 +11,10 @@ object anon {
   @js.native
   trait Call extends StObject {
     
-    def apply(audioData: AudioData): js.Promise[ArrayBuffer] = js.native
-    def apply(audioData: AudioData, opts: Options): js.Promise[ArrayBuffer] = js.native
+    def apply(audioData: AudioData): js.Promise[js.typedarray.ArrayBuffer] = js.native
+    def apply(audioData: AudioData, opts: Options): js.Promise[js.typedarray.ArrayBuffer] = js.native
     
-    def sync(audioData: AudioData): ArrayBuffer = js.native
-    def sync(audioData: AudioData, opts: Options): ArrayBuffer = js.native
+    def sync(audioData: AudioData): js.typedarray.ArrayBuffer = js.native
+    def sync(audioData: AudioData, opts: Options): js.typedarray.ArrayBuffer = js.native
   }
 }

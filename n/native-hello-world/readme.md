@@ -10,10 +10,10 @@ Native “Hello, world!” addon, useful for testing
 | ------------------ | :-------------: |
 | Full name          | native-hello-world |
 | Keywords           | hello, world, native, addon, c, c++ |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 1822 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 444.6666666666667 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/sonicdoe/native-hello-world#readme)

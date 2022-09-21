@@ -11,7 +11,7 @@ trait IgToolbarButton
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Event fired after the toolbar button is activated.

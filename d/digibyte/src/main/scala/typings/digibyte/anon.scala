@@ -29,18 +29,18 @@ object anon {
   
   trait Reverse extends StObject {
     
-    def reverse(a: js.Any): js.Any
+    def reverse(a: Any): Any
   }
   object Reverse {
     
-    inline def apply(reverse: js.Any => js.Any): Reverse = {
+    inline def apply(reverse: Any => Any): Reverse = {
       val __obj = js.Dynamic.literal(reverse = js.Any.fromFunction1(reverse))
       __obj.asInstanceOf[Reverse]
     }
     
     extension [Self <: Reverse](x: Self) {
       
-      inline def setReverse(value: js.Any => js.Any): Self = StObject.set(x, "reverse", js.Any.fromFunction1(value))
+      inline def setReverse(value: Any => Any): Self = StObject.set(x, "reverse", js.Any.fromFunction1(value))
     }
   }
 }

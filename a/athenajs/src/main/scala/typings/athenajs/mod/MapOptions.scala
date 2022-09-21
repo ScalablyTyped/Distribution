@@ -1,13 +1,12 @@
 package typings.athenajs.mod
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MapOptions extends StObject {
   
-  var buffer: js.UndefOr[ArrayBuffer] = js.undefined
+  var buffer: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
   
   var height: Double
   
@@ -32,7 +31,7 @@ object MapOptions {
   
   extension [Self <: MapOptions](x: Self) {
     
-    inline def setBuffer(value: ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     

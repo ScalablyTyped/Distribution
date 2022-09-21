@@ -25,7 +25,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("xhr-mock", "default.RealXMLHttpRequest")
     @js.native
-    class RealXMLHttpRequest ()
+    open class RealXMLHttpRequest ()
       extends StObject
          with XMLHttpRequest
     
@@ -37,11 +37,11 @@ object mod {
   
   @JSImport("xhr-mock", "MockRequest")
   @js.native
-  class MockRequest () extends default
+  open class MockRequest () extends default
   
   @JSImport("xhr-mock", "MockResponse")
   @js.native
-  class MockResponse ()
+  open class MockResponse ()
     extends typings.xhrMock.mockResponseMod.default
   
   inline def delay(mock: MockFunction): MockFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(mock.asInstanceOf[js.Any]).asInstanceOf[MockFunction]

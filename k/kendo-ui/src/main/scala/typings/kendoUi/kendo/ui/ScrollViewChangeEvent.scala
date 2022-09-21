@@ -11,7 +11,7 @@ trait ScrollViewChangeEvent
   
   var currentPage: js.UndefOr[Double] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var element: js.UndefOr[JQuery] = js.undefined
   
@@ -30,7 +30,7 @@ object ScrollViewChangeEvent {
     
     inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for queue-microtask
 
-Typings are for version 1.2.1
+Typings are for version 1.2.3
 
 ## Library description:
 fast, tiny `queueMicrotask` shim for modern engines
@@ -10,10 +10,10 @@ fast, tiny `queueMicrotask` shim for modern engines
 | ------------------ | :-------------: |
 | Full name          | queue-microtask |
 | Keywords           | asap, immediate, micro task, microtask, nextTick, process.nextTick, queue micro task, queue microtask, queue-microtask, queueMicrotask, setImmediate, task |
-| # releases         | 12 |
-| # dependents       | 19 |
-| # downloads        | 3091022 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 7.5794327E7 |
+| # stars            | 161.0 |
 
 ## Links
 - [Homepage](https://github.com/feross/queue-microtask)

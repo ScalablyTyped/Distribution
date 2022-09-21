@@ -26,6 +26,6 @@ object InlineData {
     
     inline def setValues(value: InlineDataset): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: (Boolean | Double | js.Object | String)*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: (Boolean | Double | js.Object | String)*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

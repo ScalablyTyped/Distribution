@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitlab/dist/types/core/services", "IssueDiscussions")
 @js.native
-class IssueDiscussions protected ()
+open class IssueDiscussions protected ()
   extends typings.gitlab.issueDiscussionsMod.IssueDiscussions {
   def this(options: BaseServiceOptions) = this()
 }

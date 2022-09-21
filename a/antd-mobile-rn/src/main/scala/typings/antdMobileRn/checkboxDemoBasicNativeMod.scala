@@ -9,11 +9,10 @@ object checkboxDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/checkbox/demo/basic.native", JSImport.Default)
   @js.native
-  class default protected () extends BasicCheckboxExample {
-    def this(props: js.Any, context: js.Any) = this()
+  open class default protected () extends BasicCheckboxExample {
+    def this(props: Any, context: Any) = this()
   }
   
   @js.native
-  trait BasicCheckboxExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait BasicCheckboxExample extends Component[Any, Any, Any]
 }

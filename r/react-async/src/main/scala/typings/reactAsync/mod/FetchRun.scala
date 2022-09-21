@@ -2,7 +2,6 @@ package typings.reactAsync.mod
 
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
-import typings.std.Error
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,7 @@ trait FetchRun[T] extends StObject {
   
   var counter: Double = js.native
   
-  var initialValue: js.UndefOr[T | Error] = js.native
+  var initialValue: js.UndefOr[T | js.Error] = js.native
   
   var promise: js.Promise[T] = js.native
   
@@ -30,5 +29,5 @@ trait FetchRun[T] extends StObject {
   
   var setData: js.Function2[/* data */ T, /* callback */ js.UndefOr[js.Function0[Unit]], T] = js.native
   
-  var setError: js.Function2[/* error */ Error, /* callback */ js.UndefOr[js.Function0[Unit]], Error] = js.native
+  var setError: js.Function2[/* error */ js.Error, /* callback */ js.UndefOr[js.Function0[Unit]], js.Error] = js.native
 }

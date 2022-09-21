@@ -5,7 +5,7 @@ import typings.browserfs.fileSystemMod.FileSystemOptions
 import typings.browserfs.keyValueFilesystemMod.SimpleSyncStore
 import typings.browserfs.keyValueFilesystemMod.SyncKeyValueFileSystem
 import typings.browserfs.keyValueFilesystemMod.SyncKeyValueStore
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object inMemoryMod {
   
   @JSImport("browserfs/dist/node/backend/InMemory", JSImport.Default)
   @js.native
-  class default () extends SyncKeyValueFileSystem
+  open class default () extends SyncKeyValueFileSystem
   /* static members */
   object default {
     
@@ -25,7 +25,7 @@ object inMemoryMod {
     /**
       * Creates an InMemoryFileSystem instance.
       */
-    inline def Create(options: js.Any, cb: BFSCallback[InMemoryFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Create(options: Any, cb: BFSCallback[InMemoryFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/InMemory", "default.Name")
     @js.native
@@ -38,7 +38,7 @@ object inMemoryMod {
   
   @JSImport("browserfs/dist/node/backend/InMemory", "InMemoryStore")
   @js.native
-  class InMemoryStore ()
+  open class InMemoryStore ()
     extends StObject
        with SyncKeyValueStore
        with SimpleSyncStore {
@@ -52,7 +52,7 @@ object inMemoryMod {
     /* CompleteClass */
     override def put(key: String, data: Buffer, overwrite: Boolean): Boolean = js.native
     
-    /* private */ var store: js.Any = js.native
+    /* private */ var store: Any = js.native
   }
   
   type InMemoryFileSystem = SyncKeyValueFileSystem

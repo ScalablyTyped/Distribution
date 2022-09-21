@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("breeze.EntityQuery")
 @js.native
-class EntityQuery ()
+open class EntityQuery ()
   extends StObject
      with typings.breeze.breeze.EntityQuery {
   def this(resourceName: String) = this()

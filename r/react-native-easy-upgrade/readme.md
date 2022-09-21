@@ -10,10 +10,10 @@ Easy to upgrade your react-native app
 | ------------------ | :-------------: |
 | Full name          | react-native-easy-upgrade |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 688 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 62.333333333333336 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-org/react-native-easy-upgrade#readme)

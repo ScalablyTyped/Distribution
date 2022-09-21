@@ -2,7 +2,6 @@ package typings.gulpProtractor
 
 import org.scalablytyped.runtime.Shortcut
 import typings.gulp.mod.TaskCallback
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,14 +15,18 @@ object mod extends Shortcut {
   @js.native
   trait IGulpProtractor extends StObject {
     
+    def getProtractorCli(): String = js.native
+    
     def getProtractorDir(): String = js.native
     
-    def protractor(): ReadWriteStream = js.native
-    def protractor(options: IOptions): ReadWriteStream = js.native
+    def protractor(): Any = js.native
+    def protractor(options: IOptions): Any = js.native
     
     var webdriver_standalone: TaskCallback = js.native
     
     var webdriver_update: TaskCallback = js.native
+    
+    var webdriver_update_specific: TaskCallback = js.native
   }
   
   trait IOptions extends StObject {
@@ -47,7 +50,7 @@ object mod extends Shortcut {
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
       

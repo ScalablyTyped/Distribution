@@ -2,13 +2,12 @@ package typings.swaggerNodeRunner
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.NextFunction
-import typings.expressServeStaticCore.mod.global.Express.Application
-import typings.expressServeStaticCore.mod.global.Express.Request
-import typings.expressServeStaticCore.mod.global.Express.Response
+import typings.expressServeStaticCore.Express.Application
+import typings.expressServeStaticCore.Express.Request
+import typings.expressServeStaticCore.Express.Response
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.restify.mod.Server
-import typings.std.Error
 import typings.swaggerNodeRunner.anon.Register
 import typings.swaggerNodeRunner.anon.Swagger
 import typings.swaggerNodeRunner.anon.SwaggerMetadata
@@ -23,7 +22,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def create(config: Config, cb: js.Function2[/* err */ js.UndefOr[Error], /* runner */ Runner, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(config: Config, cb: js.Function2[/* err */ js.UndefOr[js.Error], /* runner */ Runner, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Config extends StObject {
     
@@ -37,7 +36,7 @@ object mod {
       *
       * @se @link{https://github.com/apigee-127/bagpipes|Github Source}
       */
-    var bagpipes: js.UndefOr[js.Any] = js.undefined
+    var bagpipes: js.UndefOr[Any] = js.undefined
     
     /**
       *  Sets `NODE_CONFIG_DIR` env if not set yet
@@ -113,7 +112,7 @@ object mod {
       
       inline def setAppRoot(value: String): Self = StObject.set(x, "appRoot", value.asInstanceOf[js.Any])
       
-      inline def setBagpipes(value: js.Any): Self = StObject.set(x, "bagpipes", value.asInstanceOf[js.Any])
+      inline def setBagpipes(value: Any): Self = StObject.set(x, "bagpipes", value.asInstanceOf[js.Any])
       
       inline def setBagpipesUndefined: Self = StObject.set(x, "bagpipes", js.undefined)
       
@@ -125,7 +124,7 @@ object mod {
       
       inline def setControllersDirsUndefined: Self = StObject.set(x, "controllersDirs", js.undefined)
       
-      inline def setControllersDirsVarargs(value: String*): Self = StObject.set(x, "controllersDirs", js.Array(value :_*))
+      inline def setControllersDirsVarargs(value: String*): Self = StObject.set(x, "controllersDirs", js.Array(value*))
       
       inline def setDefaultPipe(value: String): Self = StObject.set(x, "defaultPipe", value.asInstanceOf[js.Any])
       
@@ -135,13 +134,13 @@ object mod {
       
       inline def setFittingsDirsUndefined: Self = StObject.set(x, "fittingsDirs", js.undefined)
       
-      inline def setFittingsDirsVarargs(value: String*): Self = StObject.set(x, "fittingsDirs", js.Array(value :_*))
+      inline def setFittingsDirsVarargs(value: String*): Self = StObject.set(x, "fittingsDirs", js.Array(value*))
       
       inline def setMockControllersDirs(value: js.Array[String]): Self = StObject.set(x, "mockControllersDirs", value.asInstanceOf[js.Any])
       
       inline def setMockControllersDirsUndefined: Self = StObject.set(x, "mockControllersDirs", js.undefined)
       
-      inline def setMockControllersDirsVarargs(value: String*): Self = StObject.set(x, "mockControllersDirs", js.Array(value :_*))
+      inline def setMockControllersDirsVarargs(value: String*): Self = StObject.set(x, "mockControllersDirs", js.Array(value*))
       
       inline def setMockMode(value: Boolean): Self = StObject.set(x, "mockMode", value.asInstanceOf[js.Any])
       
@@ -285,26 +284,26 @@ object mod {
       * Nested Key Value description for _backpipes_ module
       * @see {@link https://github.com/apigee-127/bagpipes#pipes|Github Source}
       */
-    var bagpipes: StringDictionary[js.Any] = js.native
+    var bagpipes: StringDictionary[Any] = js.native
     
     var config: ConfigInternal = js.native
     
     /** Create new Connect middleware */
     def connectMiddleware(): ConnectMiddleware = js.native
     
-    def defaultErrorHandler(): js.Any = js.native
+    def defaultErrorHandler(): Any = js.native
     
     /** Create new Express middleware */
     def expressMiddleware(): ExpressMiddleware = js.native
     
     /** Fetch a _bagpipe_ pipe */
-    def getPipe(req: Swagger): js.Any = js.native
+    def getPipe(req: Swagger): Any = js.native
     
     /** Create new Hapi middleware */
     def hapiMiddleware(): HapiMiddleware = js.native
     
     /** Resolves path (relative to `config.appRoot`) */
-    def resolveAppPath(to: js.Any*): String = js.native
+    def resolveAppPath(to: Any*): String = js.native
     
     /** Create new Restify middleware */
     def restifyMiddleware(): RestifyMiddleware = js.native
@@ -352,15 +351,15 @@ object mod {
   
   type SwaggerSecurityHandlers = StringDictionary[SwaggerToolsSecurityHandler]
   
-  type SwaggerToolsMiddleware = js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ js.Any, js.Any]
+  type SwaggerToolsMiddleware = js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Any]
   
   type SwaggerToolsSecurityHandler = js.Function4[
-    /* request */ js.Any, 
-    /* securityDefinition */ js.Any, 
-    /* scopes */ js.Any, 
+    /* request */ Any, 
+    /* securityDefinition */ Any, 
+    /* scopes */ Any, 
     /* callback */ js.Function2[
-      /* err */ js.UndefOr[Error | SwaggerToolsSecurityHandlerCallbackError], 
-      /* result */ js.UndefOr[js.Any], 
+      /* err */ js.UndefOr[js.Error | SwaggerToolsSecurityHandlerCallbackError], 
+      /* result */ js.UndefOr[Any], 
       Unit
     ], 
     Unit

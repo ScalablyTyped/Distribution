@@ -29,7 +29,7 @@ object DescribeInstanceStatusResult {
     
     inline def setInstanceStatusesUndefined: Self = StObject.set(x, "InstanceStatuses", js.undefined)
     
-    inline def setInstanceStatusesVarargs(value: InstanceStatus*): Self = StObject.set(x, "InstanceStatuses", js.Array(value :_*))
+    inline def setInstanceStatusesVarargs(value: InstanceStatus*): Self = StObject.set(x, "InstanceStatuses", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

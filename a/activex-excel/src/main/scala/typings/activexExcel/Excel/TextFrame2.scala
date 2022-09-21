@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TextFrame2 extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   var AutoSize: MsoAutoSize
   
@@ -46,7 +46,7 @@ trait TextFrame2 extends StObject {
   
   var Orientation: MsoTextOrientation
   
-  val Parent: js.Any
+  val Parent: Any
   
   var PathFormat: MsoPathFormat
   
@@ -67,7 +67,7 @@ trait TextFrame2 extends StObject {
 object TextFrame2 {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     AutoSize: MsoAutoSize,
     Column: TextColumn2,
     Creator: Double,
@@ -81,7 +81,7 @@ object TextFrame2 {
     MarginTop: Double,
     NoTextRotation: MsoTriState,
     Orientation: MsoTextOrientation,
-    Parent: js.Any,
+    Parent: Any,
     PathFormat: MsoPathFormat,
     Ruler: Ruler2,
     TextRange: TextRange2,
@@ -98,7 +98,7 @@ object TextFrame2 {
   
   extension [Self <: TextFrame2](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setAutoSize(value: MsoAutoSize): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
     
@@ -126,7 +126,7 @@ object TextFrame2 {
     
     inline def setOrientation(value: MsoTextOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPathFormat(value: MsoPathFormat): Self = StObject.set(x, "PathFormat", value.asInstanceOf[js.Any])
     

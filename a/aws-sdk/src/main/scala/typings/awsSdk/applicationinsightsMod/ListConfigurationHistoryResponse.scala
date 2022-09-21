@@ -29,7 +29,7 @@ object ListConfigurationHistoryResponse {
     
     inline def setEventListUndefined: Self = StObject.set(x, "EventList", js.undefined)
     
-    inline def setEventListVarargs(value: ConfigurationEvent*): Self = StObject.set(x, "EventList", js.Array(value :_*))
+    inline def setEventListVarargs(value: ConfigurationEvent*): Self = StObject.set(x, "EventList", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

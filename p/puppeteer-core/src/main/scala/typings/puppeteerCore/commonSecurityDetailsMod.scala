@@ -8,28 +8,18 @@ object commonSecurityDetailsMod {
   
   @JSImport("puppeteer-core/lib/esm/puppeteer/common/SecurityDetails", "SecurityDetails")
   @js.native
-  class SecurityDetails protected () extends StObject {
+  open class SecurityDetails protected () extends StObject {
     /**
       * @internal
       */
     def this(securityPayload: typings.devtoolsProtocol.mod.Protocol.Network.SecurityDetails) = this()
     
-    /* private */ var _issuer: js.Any = js.native
-    
-    /* private */ var _protocol: js.Any = js.native
-    
-    /* private */ var _sanList: js.Any = js.native
-    
-    /* private */ var _subjectName: js.Any = js.native
-    
-    /* private */ var _validFrom: js.Any = js.native
-    
-    /* private */ var _validTo: js.Any = js.native
-    
     /**
       * @returns The name of the issuer of the certificate.
       */
     def issuer(): String = js.native
+    
+    /* private */ var `private`: Any = js.native
     
     /**
       * @returns The security protocol being used, e.g. "TLS 1.2".

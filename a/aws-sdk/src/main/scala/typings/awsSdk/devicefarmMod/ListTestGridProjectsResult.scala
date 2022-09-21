@@ -33,6 +33,6 @@ object ListTestGridProjectsResult {
     
     inline def setTestGridProjectsUndefined: Self = StObject.set(x, "testGridProjects", js.undefined)
     
-    inline def setTestGridProjectsVarargs(value: TestGridProject*): Self = StObject.set(x, "testGridProjects", js.Array(value :_*))
+    inline def setTestGridProjectsVarargs(value: TestGridProject*): Self = StObject.set(x, "testGridProjects", js.Array(value*))
   }
 }

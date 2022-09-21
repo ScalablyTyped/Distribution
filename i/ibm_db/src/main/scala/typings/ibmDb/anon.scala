@@ -8,45 +8,45 @@ object anon {
   
   trait Outparams extends StObject {
     
-    var outparams: js.Any
+    var outparams: Any
     
-    var result: js.Array[js.Any]
+    var result: js.Array[Any]
   }
   object Outparams {
     
-    inline def apply(outparams: js.Any, result: js.Array[js.Any]): Outparams = {
+    inline def apply(outparams: Any, result: js.Array[Any]): Outparams = {
       val __obj = js.Dynamic.literal(outparams = outparams.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[Outparams]
     }
     
     extension [Self <: Outparams](x: Self) {
       
-      inline def setOutparams(value: js.Any): Self = StObject.set(x, "outparams", value.asInstanceOf[js.Any])
+      inline def setOutparams(value: Any): Self = StObject.set(x, "outparams", value.asInstanceOf[js.Any])
       
-      inline def setResult(value: js.Array[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Array[Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      inline def setResultVarargs(value: js.Any*): Self = StObject.set(x, "result", js.Array(value :_*))
+      inline def setResultVarargs(value: Any*): Self = StObject.set(x, "result", js.Array(value*))
     }
   }
   
   trait Params extends StObject {
     
-    var params: js.Array[js.Any]
+    var params: js.Array[Any]
     
     var sql: String
   }
   object Params {
     
-    inline def apply(params: js.Array[js.Any], sql: String): Params = {
+    inline def apply(params: js.Array[Any], sql: String): Params = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any])
       __obj.asInstanceOf[Params]
     }
     
     extension [Self <: Params](x: Self) {
       
-      inline def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      inline def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: Any*): Self = StObject.set(x, "params", js.Array(value*))
       
       inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     }

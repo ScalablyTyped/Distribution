@@ -18,7 +18,7 @@ object linkMod {
   - typings.ionic.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @JSImport("ionic/commands/link", "LinkCommand")
   @js.native
-  class LinkCommand protected () extends Command {
+  open class LinkCommand protected () extends Command {
     def this(namespace: INamespace) = this()
     
     def chooseApp(apps: js.Array[App]): js.Promise[String] = js.native
@@ -31,9 +31,9 @@ object linkMod {
     
     def formatRepoName(fullName: String): String = js.native
     
-    /* private */ var getAppClient: js.Any = js.native
+    /* private */ var getAppClient: Any = js.native
     
-    /* private */ var getUserClient: js.Any = js.native
+    /* private */ var getUserClient: Any = js.native
     
     def linkApp(app: App, runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@emotion/weak-memoize" : "0.2.5"
+      "@emotion/weak-memoize" : "0.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@emotion/weak-memoize" : "0.2.5"
+      "@emotion/weak-memoize" : "0.3.0"
     }
   ],
   "compile-devDependencies" : [

@@ -8,7 +8,7 @@ trait Font2 extends StObject {
   
   var Allcaps: MsoTriState
   
-  val Application: js.Any
+  val Application: Any
   
   var AutorotateNumbers: MsoTriState
   
@@ -53,7 +53,7 @@ trait Font2 extends StObject {
   /* private */ @JSName("Office.Font2_typekey")
   var OfficeDotFont2_typekey: Font2
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Reflection: ReflectionFormat
   
@@ -85,7 +85,7 @@ object Font2 {
   
   inline def apply(
     Allcaps: MsoTriState,
-    Application: js.Any,
+    Application: Any,
     AutorotateNumbers: MsoTriState,
     BaselineOffset: Double,
     Bold: MsoTriState,
@@ -107,7 +107,7 @@ object Font2 {
     NameFarEast: String,
     NameOther: String,
     OfficeDotFont2_typekey: Font2,
-    Parent: js.Any,
+    Parent: Any,
     Reflection: ReflectionFormat,
     Shadow: ShadowFormat,
     Size: Double,
@@ -131,7 +131,7 @@ object Font2 {
     
     inline def setAllcaps(value: MsoTriState): Self = StObject.set(x, "Allcaps", value.asInstanceOf[js.Any])
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setAutorotateNumbers(value: MsoTriState): Self = StObject.set(x, "AutorotateNumbers", value.asInstanceOf[js.Any])
     
@@ -175,7 +175,7 @@ object Font2 {
     
     inline def setOfficeDotFont2_typekey(value: Font2): Self = StObject.set(x, "Office.Font2_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReflection(value: ReflectionFormat): Self = StObject.set(x, "Reflection", value.asInstanceOf[js.Any])
     

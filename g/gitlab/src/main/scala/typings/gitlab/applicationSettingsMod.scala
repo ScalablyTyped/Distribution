@@ -13,7 +13,7 @@ object applicationSettingsMod {
   
   @JSImport("gitlab/dist/types/core/services/ApplicationSettings", "ApplicationSettings")
   @js.native
-  class ApplicationSettings () extends BaseService {
+  open class ApplicationSettings () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(): js.Promise[GetResponse] = js.native

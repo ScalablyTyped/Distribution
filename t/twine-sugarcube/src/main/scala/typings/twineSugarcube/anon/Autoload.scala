@@ -1,8 +1,8 @@
 package typings.twineSugarcube.anon
 
-import typings.twineSugarcube.configMod.SaveDetails
 import typings.twineSugarcube.configMod.SaveObjectHander
 import typings.twineSugarcube.extensionsMod.global.Array
+import typings.twineSugarcube.saveMod.SaveDetails
 import typings.twineSugarcube.saveMod.SaveObject
 import typings.twineSugarcube.twineSugarcubeBooleans.`true`
 import typings.twineSugarcube.twineSugarcubeStrings.prompt
@@ -90,6 +90,7 @@ trait Autoload extends StObject {
     * @see SaveObject
     * @default undefined
     * @since 2.0.0
+    * @deprecated since 2.36.0 in favor of the Save Events API.
     * @example
     * Config.saves.onLoad = function (save) {
     * // code
@@ -105,6 +106,7 @@ trait Autoload extends StObject {
     * @default undefined
     * @since 2.0.0
     * @since 2.33.0: Added save operation details object parameter to the callback function.
+    * @deprecated since 2.36.0 in favor of the Save Events API.
     * @example
     * Config.saves.onSave = function (save) {
     * // code
@@ -123,6 +125,18 @@ trait Autoload extends StObject {
   var slots: Double
   
   /**
+    * Determines whether saving to disk is enabled on mobile devices — i.e., smartphones, tablets, etc.
+    *
+    * WARNING: Mobile browsers can be fickle, so saving to disk may not work as expected in all browsers.
+    * @default true
+    * @since 2.34.0
+    * @example
+    * // To disable saving to disk on mobile devices.
+    * Config.saves.tryDiskOnMobile = false;
+    */
+  var tryDiskOnMobile: Boolean
+  
+  /**
     * Sets the version property of saves.
     *
     * **NOTE**: This setting is only used to set the version property of saves. Thus, it is only truly useful if you plan
@@ -136,12 +150,12 @@ trait Autoload extends StObject {
     * // As a string
     * Config.saves.version = "v3";
     */
-  var version: js.Any
+  var version: Any
 }
 object Autoload {
   
-  inline def apply(id: String, slots: Double, version: js.Any): Autoload = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], autoload = null, autosave = null, isAllowed = null, onLoad = null, onSave = null)
+  inline def apply(id: String, slots: Double, tryDiskOnMobile: Boolean, version: Any): Autoload = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], slots = slots.asInstanceOf[js.Any], tryDiskOnMobile = tryDiskOnMobile.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], autoload = null, autosave = null, isAllowed = null, onLoad = null, onSave = null)
     __obj.asInstanceOf[Autoload]
   }
   
@@ -175,6 +189,8 @@ object Autoload {
     
     inline def setSlots(value: Double): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
-    inline def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setTryDiskOnMobile(value: Boolean): Self = StObject.set(x, "tryDiskOnMobile", value.asInstanceOf[js.Any])
+    
+    inline def setVersion(value: Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

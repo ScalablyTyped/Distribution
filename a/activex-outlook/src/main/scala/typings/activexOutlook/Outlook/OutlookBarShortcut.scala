@@ -15,13 +15,13 @@ trait OutlookBarShortcut extends StObject {
   /* private */ @JSName("Outlook.OutlookBarShortcut_typekey")
   var OutlookDotOutlookBarShortcut_typekey: OutlookBarShortcut
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
-  def SetIcon(Icon: js.Any): Unit
+  def SetIcon(Icon: Any): Unit
   
-  val Target: js.Any
+  val Target: Any
 }
 object OutlookBarShortcut {
   
@@ -30,10 +30,10 @@ object OutlookBarShortcut {
     Class: OlObjectClass,
     Name: String,
     OutlookDotOutlookBarShortcut_typekey: OutlookBarShortcut,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
-    SetIcon: js.Any => Unit,
-    Target: js.Any
+    SetIcon: Any => Unit,
+    Target: Any
   ): OutlookBarShortcut = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any], SetIcon = js.Any.fromFunction1(SetIcon), Target = Target.asInstanceOf[js.Any])
     __obj.updateDynamic("Outlook.OutlookBarShortcut_typekey")(OutlookDotOutlookBarShortcut_typekey.asInstanceOf[js.Any])
@@ -50,12 +50,12 @@ object OutlookBarShortcut {
     
     inline def setOutlookDotOutlookBarShortcut_typekey(value: OutlookBarShortcut): Self = StObject.set(x, "Outlook.OutlookBarShortcut_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    inline def setSetIcon(value: js.Any => Unit): Self = StObject.set(x, "SetIcon", js.Any.fromFunction1(value))
+    inline def setSetIcon(value: Any => Unit): Self = StObject.set(x, "SetIcon", js.Any.fromFunction1(value))
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

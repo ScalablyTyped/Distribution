@@ -7,11 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstancesStartWithEncryptionKeyRequest extends StObject {
   
   /**
-    * Array of disks associated with this instance that are protected with a customer-supplied encryption key.
-    *
-    * In order to start the instance, the disk url and its corresponding key must be provided.
-    *
-    * If the disk is not protected with a customer-supplied encryption key it should not be specified.
+    * Array of disks associated with this instance that are protected with a customer-supplied encryption key. In order to start the instance, the disk url and its corresponding key must
+    * be provided. If the disk is not protected with a customer-supplied encryption key it should not be specified.
     */
   var disks: js.UndefOr[js.Array[CustomerEncryptionKeyProtectedDisk]] = js.undefined
 }
@@ -28,6 +25,6 @@ object InstancesStartWithEncryptionKeyRequest {
     
     inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    inline def setDisksVarargs(value: CustomerEncryptionKeyProtectedDisk*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: CustomerEncryptionKeyProtectedDisk*): Self = StObject.set(x, "disks", js.Array(value*))
   }
 }

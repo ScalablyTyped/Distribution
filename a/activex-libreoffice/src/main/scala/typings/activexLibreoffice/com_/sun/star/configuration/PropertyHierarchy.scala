@@ -72,20 +72,20 @@ object PropertyHierarchy {
     addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     firePropertiesChangeEvent: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
     getHierarchicalPropertySetInfo: () => XHierarchicalPropertySetInfo,
-    getHierarchicalPropertyValue: String => js.Any,
-    getHierarchicalPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
+    getHierarchicalPropertyValue: String => Any,
+    getHierarchicalPropertyValues: SeqEquiv[String] => SafeArray[Any],
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
-    getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
-    queryInterface: `type` => js.Any,
+    getPropertyValue: String => Any,
+    getPropertyValues: SeqEquiv[String] => SafeArray[Any],
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertiesChangeListener: XPropertiesChangeListener => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-    setHierarchicalPropertyValue: (String, js.Any) => Unit,
-    setHierarchicalPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit,
-    setPropertyValue: (String, js.Any) => Unit,
-    setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit
+    setHierarchicalPropertyValue: (String, Any) => Unit,
+    setHierarchicalPropertyValues: (SeqEquiv[String], SeqEquiv[Any]) => Unit,
+    setPropertyValue: (String, Any) => Unit,
+    setPropertyValues: (SeqEquiv[String], SeqEquiv[Any]) => Unit
   ): PropertyHierarchy = {
     val __obj = js.Dynamic.literal(HierarchicalPropertySetInfo = HierarchicalPropertySetInfo.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getHierarchicalPropertySetInfo = js.Any.fromFunction0(getHierarchicalPropertySetInfo), getHierarchicalPropertyValue = js.Any.fromFunction1(getHierarchicalPropertyValue), getHierarchicalPropertyValues = js.Any.fromFunction1(getHierarchicalPropertyValues), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setHierarchicalPropertyValue = js.Any.fromFunction2(setHierarchicalPropertyValue), setHierarchicalPropertyValues = js.Any.fromFunction2(setHierarchicalPropertyValues), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues))
     __obj.asInstanceOf[PropertyHierarchy]

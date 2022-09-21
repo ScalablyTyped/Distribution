@@ -10,7 +10,7 @@ trait IgGridRowSelectorsLocale
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Deselect all text for the select/deselect all overlay.

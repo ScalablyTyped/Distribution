@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object uikitStrings {
   
   @js.native
+  sealed trait bottom extends StObject
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
+  
+  @js.native
   sealed trait `bottom-center` extends StObject
   inline def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
   
@@ -23,12 +27,36 @@ object uikitStrings {
   inline def danger: danger = "danger".asInstanceOf[danger]
   
   @js.native
+  sealed trait `delayed-fade` extends StObject
+  inline def `delayed-fade`: `delayed-fade` = "delayed-fade".asInstanceOf[`delayed-fade`]
+  
+  @js.native
+  sealed trait dynamic extends StObject
+  inline def dynamic: dynamic = "dynamic".asInstanceOf[dynamic]
+  
+  @js.native
+  sealed trait fade extends StObject
+  inline def fade: fade = "fade".asInstanceOf[fade]
+  
+  @js.native
   sealed trait primary extends StObject
   inline def primary: primary = "primary".asInstanceOf[primary]
   
   @js.native
+  sealed trait slide extends StObject
+  inline def slide: slide = "slide".asInstanceOf[slide]
+  
+  @js.native
+  sealed trait static extends StObject
+  inline def static: static = "static".asInstanceOf[static]
+  
+  @js.native
   sealed trait success extends StObject
   inline def success: success = "success".asInstanceOf[success]
+  
+  @js.native
+  sealed trait top extends StObject
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait `top-center` extends StObject

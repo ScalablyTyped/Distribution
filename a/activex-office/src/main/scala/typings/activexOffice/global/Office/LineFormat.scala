@@ -13,12 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.LineFormat")
 @js.native
-/* private */ class LineFormat ()
+/* private */ open class LineFormat ()
   extends StObject
      with typings.activexOffice.Office.LineFormat {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var BackColor: typings.activexOffice.Office.ColorFormat = js.native
@@ -58,7 +58,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotLineFormat_typekey: typings.activexOffice.Office.LineFormat = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Pattern: MsoPatternType = js.native

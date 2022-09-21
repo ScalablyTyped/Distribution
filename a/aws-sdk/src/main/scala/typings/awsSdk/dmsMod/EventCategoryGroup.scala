@@ -12,7 +12,7 @@ trait EventCategoryGroup extends StObject {
   var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
   
   /**
-    *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | replication-server | security-group | replication-task
+    *  The type of DMS resource that generates events.  Valid values: replication-instance | replication-server | security-group | replication-task
     */
   var SourceType: js.UndefOr[String] = js.undefined
 }
@@ -29,7 +29,7 @@ object EventCategoryGroup {
     
     inline def setEventCategoriesUndefined: Self = StObject.set(x, "EventCategories", js.undefined)
     
-    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value :_*))
+    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value*))
     
     inline def setSourceType(value: String): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     

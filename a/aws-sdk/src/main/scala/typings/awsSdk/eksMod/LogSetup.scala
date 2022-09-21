@@ -33,6 +33,6 @@ object LogSetup {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: LogType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: LogType*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

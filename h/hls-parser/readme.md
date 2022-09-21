@@ -1,7 +1,7 @@
 
 # Scala.js typings for hls-parser
 
-Typings are for version 0.5
+Typings are for version 0.8
 
 ## Library description:
 A simple library to read/write HLS playlists
@@ -10,10 +10,10 @@ A simple library to read/write HLS playlists
 | ------------------ | :-------------: |
 | Full name          | hls-parser |
 | Keywords           | HLS, media, video, audio, streaming |
-| # releases         | 16 |
-| # dependents       | 10 |
-| # downloads        | 511568 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 38114.333333333336 |
+| # stars            | 104.0 |
 
 ## Links
 - [Homepage](https://github.com/kuu/hls-parser#readme)

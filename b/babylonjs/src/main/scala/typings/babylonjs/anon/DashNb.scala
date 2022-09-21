@@ -38,6 +38,6 @@ object DashNb {
     
     inline def setPoints(value: js.Array[Vector3]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: Vector3*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Vector3*): Self = StObject.set(x, "points", js.Array(value*))
   }
 }

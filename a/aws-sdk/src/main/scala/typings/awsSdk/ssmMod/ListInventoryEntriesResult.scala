@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListInventoryEntriesResult extends StObject {
   
   /**
-    * The time that inventory information was collected for the instance(s).
+    * The time that inventory information was collected for the managed node(s).
     */
   var CaptureTime: js.UndefOr[InventoryItemCaptureTime] = js.undefined
   
   /**
-    * A list of inventory items on the instance(s).
+    * A list of inventory items on the managed node(s).
     */
   var Entries: js.UndefOr[InventoryItemEntryList] = js.undefined
   
   /**
-    * The instance ID targeted by the request to query inventory information.
+    * The managed node ID targeted by the request to query inventory information.
     */
   var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
   
@@ -27,7 +27,7 @@ trait ListInventoryEntriesResult extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
-    * The inventory schema version used by the instance(s).
+    * The inventory schema version used by the managed node(s).
     */
   var SchemaVersion: js.UndefOr[InventoryItemSchemaVersion] = js.undefined
   
@@ -53,7 +53,7 @@ object ListInventoryEntriesResult {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "Entries", js.undefined)
     
-    inline def setEntriesVarargs(value: InventoryItemEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: InventoryItemEntry*): Self = StObject.set(x, "Entries", js.Array(value*))
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

@@ -13,7 +13,7 @@ object activityIndicatorIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/activity-indicator/index.native", JSImport.Default)
   @js.native
-  class default () extends RNActivityIndicator
+  open class default () extends RNActivityIndicator
   /* static members */
   object default {
     
@@ -55,8 +55,7 @@ object activityIndicatorIndexNativeMod {
   }
   
   @js.native
-  trait RNActivityIndicator
-    extends Component[ActivityIndicatorNativeProps, js.Any, js.Any] {
+  trait RNActivityIndicator extends Component[ActivityIndicatorNativeProps, Any, Any] {
     
     def _renderSpinner(): Element = js.native
     

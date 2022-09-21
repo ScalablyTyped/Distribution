@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /*
   A query that returns all documents.
   */
-class MatchAllQuery ()
+open class MatchAllQuery ()
   extends StObject
      with Query {
   
@@ -27,5 +27,5 @@ class MatchAllQuery ()
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

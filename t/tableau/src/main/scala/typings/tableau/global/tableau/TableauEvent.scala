@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.TableauEvent")
 @js.native
-class TableauEvent ()
+open class TableauEvent ()
   extends StObject
      with typings.tableau.tableau.TableauEvent {
   

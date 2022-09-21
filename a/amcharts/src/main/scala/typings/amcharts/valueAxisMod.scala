@@ -2,7 +2,6 @@ package typings.amcharts
 
 import typings.amcharts.anon.DD
 import typings.amcharts.anon.EndValue
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object valueAxisMod {
   
   @JSImport("amcharts/ValueAxis", JSImport.Default)
   @js.native
-  class default () extends ValueAxis
+  open class default () extends ValueAxis
   
   @js.native
   trait ValueAxis
@@ -89,7 +88,7 @@ object valueAxisMod {
       */
     var integersOnly: Boolean = js.native
     
-    def labelFunction(valueText: String, data: Date, valueAxis: ValueAxis): String = js.native
+    def labelFunction(valueText: String, data: js.Date, valueAxis: ValueAxis): String = js.native
     /**
       * You can use this function to format Value axis labels.
       * This function is called and these parameters are passed: labelFunction(value, valueText, valueAxis);
@@ -120,7 +119,7 @@ object valueAxisMod {
       * If your value axis is date-based, you can specify maximum date of the axis.
       * Can be set as date object, timestamp number or string if dataDateFormat is set.
       */
-    var maximumData: Date = js.native
+    var maximumData: js.Date = js.native
     
     /**
       * Read-only. Minimum value of the axis.
@@ -143,7 +142,7 @@ object valueAxisMod {
       * If your value axis is date-based, you can specify minimum date of the axis.
       * Can be set as date object, timestamp number or string if dataDateFormat is set.
       */
-    var minimumDate: Date = js.native
+    var minimumDate: js.Date = js.native
     
     /**
       * Works with radar charts only.
@@ -170,7 +169,7 @@ object valueAxisMod {
     /**
       * Removes event listener from chart object.
       */
-    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit = js.native
+    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: Any): Unit = js.native
     
     /**
       * Specifies if value axis should be reversed (smaller values on top).

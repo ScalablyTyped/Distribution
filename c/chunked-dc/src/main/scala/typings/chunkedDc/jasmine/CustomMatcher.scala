@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CustomMatcher extends StObject {
   
-  def compare(actual: js.Any, expected: js.Any): CustomMatcherResult = js.native
-  def compare[T](actual: T, expected: T): CustomMatcherResult = js.native
+  def compare(actual: scala.Any, expected: scala.Any): CustomMatcherResult = js.native
+  @JSName("compare")
+  def compare_T[T](actual: T, expected: T): CustomMatcherResult = js.native
 }

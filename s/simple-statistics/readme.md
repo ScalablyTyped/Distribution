@@ -1,7 +1,7 @@
 
 # Scala.js typings for simple-statistics
 
-Typings are for version 6.1.1
+Typings are for version 7.7.6
 
 ## Library description:
 Simple Statistics
@@ -10,10 +10,10 @@ Simple Statistics
 | ------------------ | :-------------: |
 | Full name          | simple-statistics |
 | Keywords           | descriptive, linear, math, probability, regression, statistics |
-| # releases         | 16 |
-| # dependents       | 128 |
-| # downloads        | 3114230 |
-| # stars            | 22 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 363965.3333333333 |
+| # stars            | 2777.0 |
 
 ## Links
 - [Homepage](https://github.com/simple-statistics/simple-statistics#readme)

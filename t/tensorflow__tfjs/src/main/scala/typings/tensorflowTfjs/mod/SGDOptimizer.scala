@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs", "SGDOptimizer")
 @js.native
-class SGDOptimizer protected ()
+open class SGDOptimizer protected ()
   extends typings.tensorflowTfjsCore.mod.SGDOptimizer {
   def this(learningRate: Double) = this()
 }

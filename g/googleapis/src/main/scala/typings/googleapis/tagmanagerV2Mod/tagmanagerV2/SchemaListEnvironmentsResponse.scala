@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * List Environments Response.
-  */
 trait SchemaListEnvironmentsResponse extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaListEnvironmentsResponse extends StObject {
   /**
     * Continuation token for fetching the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListEnvironmentsResponse {
   
@@ -32,9 +29,11 @@ object SchemaListEnvironmentsResponse {
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    inline def setEnvironmentVarargs(value: SchemaEnvironment*): Self = StObject.set(x, "environment", js.Array(value :_*))
+    inline def setEnvironmentVarargs(value: SchemaEnvironment*): Self = StObject.set(x, "environment", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

@@ -16,10 +16,10 @@ trait OnPostPop extends StObject {
   
   def onPostPush(): Unit = js.native
   
-  def renderPage(route: js.Any): Element = js.native
-  def renderPage(route: js.Any, navigator: Navigator): Element = js.native
+  def renderPage(route: Any): Element = js.native
+  def renderPage(route: Any, navigator: Navigator): Element = js.native
   
-  var routeConfig: js.Any = js.native
+  var routeConfig: Any = js.native
   
   var swipePop: js.UndefOr[js.Function0[Unit]] = js.native
   

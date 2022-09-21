@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchClearValuesByDataFilterResponse extends StObject {
   
   /**
-    * The ranges that were cleared, in A1 notation. If the requests are for an unbounded range or a ranger larger than the bounds of the sheet, this is the actual ranges that were
-    * cleared, bounded to the sheet's limits.
+    * The ranges that were cleared, in [A1 notation](/sheets/api/guides/concepts#cell). If the requests are for an unbounded range or a ranger larger than the bounds of the sheet, this is
+    * the actual ranges that were cleared, bounded to the sheet's limits.
     */
   var clearedRanges: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -28,7 +28,7 @@ object BatchClearValuesByDataFilterResponse {
     
     inline def setClearedRangesUndefined: Self = StObject.set(x, "clearedRanges", js.undefined)
     
-    inline def setClearedRangesVarargs(value: String*): Self = StObject.set(x, "clearedRanges", js.Array(value :_*))
+    inline def setClearedRangesVarargs(value: String*): Self = StObject.set(x, "clearedRanges", js.Array(value*))
     
     inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     

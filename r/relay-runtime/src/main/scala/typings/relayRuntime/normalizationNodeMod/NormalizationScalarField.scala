@@ -8,7 +8,7 @@ trait NormalizationScalarField
   extends StObject
      with NormalizationField {
   
-  // 'ScalarField';
+  // "ScalarField";
   val alias: js.UndefOr[String | Null] = js.undefined
   
   val args: js.UndefOr[js.Array[NormalizationArgument] | Null] = js.undefined
@@ -40,7 +40,7 @@ object NormalizationScalarField {
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: NormalizationArgument*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: NormalizationArgument*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

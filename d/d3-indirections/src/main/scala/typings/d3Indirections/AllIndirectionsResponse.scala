@@ -25,6 +25,6 @@ object AllIndirectionsResponse {
     
     inline def setResult(value: js.Array[Indirection]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    inline def setResultVarargs(value: Indirection*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: Indirection*): Self = StObject.set(x, "result", js.Array(value*))
   }
 }

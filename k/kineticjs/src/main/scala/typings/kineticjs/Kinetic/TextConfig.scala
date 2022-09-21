@@ -25,9 +25,9 @@ trait TextConfig
   
   var text: String
   
-  var textFill: js.UndefOr[js.Any] = js.undefined
+  var textFill: js.UndefOr[Any] = js.undefined
   
-  var textStroke: js.UndefOr[js.Any] = js.undefined
+  var textStroke: js.UndefOr[Any] = js.undefined
   
   var textStrokeWidth: js.UndefOr[Double] = js.undefined
 }
@@ -70,11 +70,11 @@ object TextConfig {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def setTextFill(value: js.Any): Self = StObject.set(x, "textFill", value.asInstanceOf[js.Any])
+    inline def setTextFill(value: Any): Self = StObject.set(x, "textFill", value.asInstanceOf[js.Any])
     
     inline def setTextFillUndefined: Self = StObject.set(x, "textFill", js.undefined)
     
-    inline def setTextStroke(value: js.Any): Self = StObject.set(x, "textStroke", value.asInstanceOf[js.Any])
+    inline def setTextStroke(value: Any): Self = StObject.set(x, "textStroke", value.asInstanceOf[js.Any])
     
     inline def setTextStrokeUndefined: Self = StObject.set(x, "textStroke", js.undefined)
     

@@ -1,65 +1,66 @@
 package typings.awsSdk.iot1clickprojectsMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AttributeDefaultValue = java.lang.String
+type AttributeDefaultValue = String
 
-type AttributeName = java.lang.String
+type AttributeName = String
 
-type AttributeValue = java.lang.String
+type AttributeValue = String
 
-type DefaultPlacementAttributeMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iot1clickprojectsMod.AttributeDefaultValue]
+type DefaultPlacementAttributeMap = StringDictionary[AttributeDefaultValue]
 
-type Description = java.lang.String
+type Description = String
 
-type DeviceCallbackKey = java.lang.String
+type DeviceCallbackKey = String
 
-type DeviceCallbackOverrideMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iot1clickprojectsMod.DeviceCallbackValue]
+type DeviceCallbackOverrideMap = StringDictionary[DeviceCallbackValue]
 
-type DeviceCallbackValue = java.lang.String
+type DeviceCallbackValue = String
 
-type DeviceId = java.lang.String
+type DeviceId = String
 
-type DeviceMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iot1clickprojectsMod.DeviceId]
+type DeviceMap = StringDictionary[DeviceId]
 
-type DeviceTemplateMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iot1clickprojectsMod.DeviceTemplate]
+type DeviceTemplateMap = StringDictionary[DeviceTemplate]
 
-type DeviceTemplateName = java.lang.String
+type DeviceTemplateName = String
 
-type DeviceType = java.lang.String
+type DeviceType = String
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type NextToken = java.lang.String
+type NextToken = String
 
-type PlacementAttributeMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iot1clickprojectsMod.AttributeValue]
+type PlacementAttributeMap = StringDictionary[AttributeValue]
 
-type PlacementName = java.lang.String
+type PlacementName = String
 
-type PlacementSummaryList = js.Array[typings.awsSdk.iot1clickprojectsMod.PlacementSummary]
+type PlacementSummaryList = js.Array[PlacementSummary]
 
-type ProjectArn = java.lang.String
+type ProjectArn = String
 
-type ProjectName = java.lang.String
+type ProjectName = String
 
-type ProjectSummaryList = js.Array[typings.awsSdk.iot1clickprojectsMod.ProjectSummary]
+type ProjectSummaryList = js.Array[ProjectSummary]
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.iot1clickprojectsMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iot1clickprojectsMod.TagValue]
+type TagMap = StringDictionary[TagValue]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type Time = typings.std.Date
+type Time = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-05-14`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.iot1clickprojectsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

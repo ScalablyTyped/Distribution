@@ -1,5 +1,6 @@
 package typings.node.inspectorMod
 
+import typings.node.inspectorMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,33 +9,53 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Deactivate the inspector. Blocks until there are no active connections.
   */
-inline def close(): scala.Unit = typings.node.inspectorMod.^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[scala.Unit]
+inline def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
 
-// Top Level API
 /**
-  * Activate inspector on host and port. Equivalent to node --inspect=[[host:]port], but can be done programatically after node has started.
-  * If wait is true, will block until a client has connected to the inspect port and flow control has been passed to the debugger client.
-  * @param port Port to listen on for inspector connections. Optional, defaults to what was specified on the CLI.
-  * @param host Host to listen on for inspector connections. Optional, defaults to what was specified on the CLI.
-  * @param wait Block until a client has connected. Optional, defaults to false.
+  * Activate inspector on host and port. Equivalent to`node --inspect=[[host:]port]`, but can be done programmatically after node has
+  * started.
+  *
+  * If wait is `true`, will block until a client has connected to the inspect port
+  * and flow control has been passed to the debugger client.
+  *
+  * See the `security warning` regarding the `host`parameter usage.
+  * @param [port='what was specified on the CLI'] Port to listen on for inspector connections. Optional.
+  * @param [host='what was specified on the CLI'] Host to listen on for inspector connections. Optional.
+  * @param [wait=false] Block until a client has connected. Optional.
   */
-inline def open(): scala.Unit = typings.node.inspectorMod.^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[scala.Unit]
-inline def open(port: scala.Double): scala.Unit = typings.node.inspectorMod.^.asInstanceOf[js.Dynamic].applyDynamic("open")(port.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def open(port: scala.Double, host: java.lang.String): scala.Unit = (typings.node.inspectorMod.^.asInstanceOf[js.Dynamic].applyDynamic("open")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def open(port: scala.Double, host: java.lang.String, wait: scala.Boolean): scala.Unit = (typings.node.inspectorMod.^.asInstanceOf[js.Dynamic].applyDynamic("open")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def open(port: scala.Double, host: scala.Unit, wait: scala.Boolean): scala.Unit = (typings.node.inspectorMod.^.asInstanceOf[js.Dynamic].applyDynamic("open")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def open(port: scala.Unit, host: java.lang.String): scala.Unit = (typings.node.inspectorMod.^.asInstanceOf[js.Dynamic].applyDynamic("open")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def open(port: scala.Unit, host: java.lang.String, wait: scala.Boolean): scala.Unit = (typings.node.inspectorMod.^.asInstanceOf[js.Dynamic].applyDynamic("open")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def open(port: scala.Unit, host: scala.Unit, wait: scala.Boolean): scala.Unit = (typings.node.inspectorMod.^.asInstanceOf[js.Dynamic].applyDynamic("open")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def open(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[Unit]
+inline def open(port: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(port.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def open(port: Double, host: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def open(port: Double, host: String, wait: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def open(port: Double, host: Unit, wait: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def open(port: Unit, host: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def open(port: Unit, host: String, wait: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def open(port: Unit, host: Unit, wait: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 /**
   * Return the URL of the active inspector, or `undefined` if there is none.
+  *
+  * ```console
+  * $ node --inspect -p 'inspector.url()'
+  * Debugger listening on ws://127.0.0.1:9229/166e272e-7a30-4d09-97ce-f1c012b43c34
+  * For help, see: https://nodejs.org/en/docs/inspector
+  * ws://127.0.0.1:9229/166e272e-7a30-4d09-97ce-f1c012b43c34
+  *
+  * $ node --inspect=localhost:3000 -p 'inspector.url()'
+  * Debugger listening on ws://localhost:3000/51cf8d0e-3c36-4c59-8efd-54519839e56a
+  * For help, see: https://nodejs.org/en/docs/inspector
+  * ws://localhost:3000/51cf8d0e-3c36-4c59-8efd-54519839e56a
+  *
+  * $ node -p 'inspector.url()'
+  * undefined
+  * ```
   */
-inline def url(): js.UndefOr[java.lang.String] = typings.node.inspectorMod.^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[js.UndefOr[java.lang.String]]
+inline def url(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[js.UndefOr[String]]
 
 /**
-  * Blocks until a client (existing or connected later) has sent
-  * `Runtime.runIfWaitingForDebugger` command.
+  * Blocks until a client (existing or connected later) has sent`Runtime.runIfWaitingForDebugger` command.
+  *
   * An exception will be thrown if there is no active inspector.
+  * @since v12.7.0
   */
-inline def waitForDebugger(): scala.Unit = typings.node.inspectorMod.^.asInstanceOf[js.Dynamic].applyDynamic("waitForDebugger")().asInstanceOf[scala.Unit]
+inline def waitForDebugger(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDebugger")().asInstanceOf[Unit]

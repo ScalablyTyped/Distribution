@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptInPhoneNumberInput extends StObject {
   
   /**
-    * The phone number to opt in.
+    * The phone number to opt in. Use E.164 format.
     */
   var phoneNumber: PhoneNumber
 }

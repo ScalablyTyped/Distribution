@@ -1,5 +1,6 @@
 package typings.nodeZendesk.mod.Users
 
+import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,4 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.nodeZendesk.anon.Ids
   - typings.nodeZendesk.anon.Externalids
 */
-type UpdateIdPayload = typings.nodeZendesk.mod.Users._UpdateIdPayload | js.Array[typings.nodeZendesk.mod.ZendeskID] | java.lang.String
+type UpdateIdPayload = _UpdateIdPayload | js.Array[ZendeskID] | String

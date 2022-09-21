@@ -10,7 +10,7 @@ trait OptionsBase extends StObject {
   var factory: js.UndefOr[Factory] = js.undefined
   
   // a factory used to create view models.
-  var options: js.UndefOr[js.Any] = js.undefined
+  var options: js.UndefOr[Any] = js.undefined
   
   var path: js.UndefOr[String] = js.undefined
   
@@ -30,7 +30,7 @@ object OptionsBase {
     
     inline def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     

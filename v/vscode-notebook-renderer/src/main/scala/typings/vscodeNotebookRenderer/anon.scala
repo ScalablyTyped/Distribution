@@ -6,20 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait OutputId extends StObject {
+  trait IsTrusted extends StObject {
     
-    var outputId: String
+    /**
+      * When true, the user has explicitly trusted the contents of the workspace.
+      */
+    val isTrusted: Boolean
   }
-  object OutputId {
+  object IsTrusted {
     
-    inline def apply(outputId: String): OutputId = {
-      val __obj = js.Dynamic.literal(outputId = outputId.asInstanceOf[js.Any])
-      __obj.asInstanceOf[OutputId]
+    inline def apply(isTrusted: Boolean): IsTrusted = {
+      val __obj = js.Dynamic.literal(isTrusted = isTrusted.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IsTrusted]
     }
     
-    extension [Self <: OutputId](x: Self) {
+    extension [Self <: IsTrusted](x: Self) {
       
-      inline def setOutputId(value: String): Self = StObject.set(x, "outputId", value.asInstanceOf[js.Any])
+      inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     }
   }
 }

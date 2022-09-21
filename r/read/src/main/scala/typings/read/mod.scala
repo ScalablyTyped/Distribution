@@ -8,7 +8,7 @@ object mod {
   
   inline def apply(
     options: Options,
-    callback: js.Function3[/* error */ js.Any, /* result */ String, /* isDefault */ Boolean, js.Any]
+    callback: js.Function3[/* error */ Any, /* result */ String, /* isDefault */ Boolean, Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("read", JSImport.Namespace)
@@ -21,9 +21,9 @@ object mod {
     
     var edit: js.UndefOr[Boolean] = js.undefined
     
-    var input: js.UndefOr[js.Any] = js.undefined
+    var input: js.UndefOr[Any] = js.undefined
     
-    var output: js.UndefOr[js.Any] = js.undefined
+    var output: js.UndefOr[Any] = js.undefined
     
     var prompt: js.UndefOr[String] = js.undefined
     
@@ -52,11 +52,11 @@ object mod {
       
       inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
       
-      inline def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
       inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      inline def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
       inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       

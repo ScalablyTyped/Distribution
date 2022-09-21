@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CreateCatalogImageRequest")
 @js.native
-class CreateCatalogImageRequest () extends StObject {
+open class CreateCatalogImageRequest () extends StObject {
   
   /**
     * A unique string that identifies this CreateCatalogImage request.

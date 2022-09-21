@@ -16,21 +16,21 @@ trait pivot
   var $divider: String = js.native
   
   @JSName("$$")
-  var DollarDollar: js.Any = js.native
+  var DollarDollar: Any = js.native
   
-  def add(obj: js.Any): String | Double = js.native
-  def add(obj: js.Any, index: Double): String | Double = js.native
+  def add(obj: Any): String | Double = js.native
+  def add(obj: Any, index: Double): String | Double = js.native
   
-  def addOperation(name: String, operation: WebixCallback, options: js.Any): Unit = js.native
+  def addOperation(name: String, operation: WebixCallback, options: Any): Unit = js.native
   
-  def addTotalOperation(name: String, operation: WebixCallback, options: js.Any): Unit = js.native
+  def addTotalOperation(name: String, operation: WebixCallback, options: Any): Unit = js.native
   
   def attachEvent(`type`: pivotEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: pivotEventName, functor: WebixCallback, id: String): String | Double = js.native
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   def clearAll(): Unit = js.native
   def clearAll(soft: Boolean): Unit = js.native
@@ -62,14 +62,14 @@ trait pivot
   def filter(text: WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: WebixTemplate, value: Unit, preserve: Boolean): Unit = js.native
   
-  def find(criterion: WebixCallback): js.Any = js.native
-  def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
+  def find(criterion: WebixCallback): Any = js.native
+  def find(criterion: WebixCallback, first: Boolean): Any = js.native
   
-  def getConfigWindow(): js.Any = js.native
+  def getConfigWindow(): Any = js.native
   
-  def getFields(): js.Any = js.native
+  def getFields(): Any = js.native
   
-  def getFilterView(): js.Any = js.native
+  def getFilterView(): Any = js.native
   
   def getFirstId(): Double | String = js.native
   
@@ -79,8 +79,8 @@ trait pivot
   def getIndexById(id: String): Double = js.native
   def getIndexById(id: Double): Double = js.native
   
-  def getItem(id: String): js.Any = js.native
-  def getItem(id: Double): js.Any = js.native
+  def getItem(id: String): Any = js.native
+  def getItem(id: Double): Any = js.native
   
   def getLastId(): Double | String = js.native
   
@@ -90,51 +90,51 @@ trait pivot
   def getPrevId(id: String, step: Double): String | Double = js.native
   def getPrevId(id: Double, step: Double): String | Double = js.native
   
-  def getStructure(): js.Any = js.native
+  def getStructure(): Any = js.native
   
   def hasEvent(name: String): Boolean = js.native
   
   def innerId(id: String): Double | String = js.native
   def innerId(id: Double): Double | String = js.native
   
-  def load(url: String): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: String): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[js.Any] = js.native
-  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def load(url: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String): js.Promise[Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[Any] = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
-  var operations: js.Any = js.native
+  var operations: Any = js.native
   
-  def parse(data: js.Any, `type`: String): Unit = js.native
+  def parse(data: Any, `type`: String): Unit = js.native
   
   def refresh(): Unit = js.native
   def refresh(id: String): Unit = js.native
   def refresh(id: Double): Unit = js.native
   
   def remove(id: String): Unit = js.native
-  def remove(id: js.Array[js.Any]): Unit = js.native
+  def remove(id: js.Array[Any]): Unit = js.native
   def remove(id: Double): Unit = js.native
   
   def render(): Unit = js.native
   
-  def setStructure(config: js.Any): Unit = js.native
+  def setStructure(config: Any): Unit = js.native
   
   def sort(by: String): Unit = js.native
   def sort(by: String, dir: String): Unit = js.native
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sort(by: String, dir: Unit, as: String): Unit = js.native
   
-  def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
   
-  def ui(view: js.Any): baseview = js.native
+  def ui(view: Any): baseview = js.native
   
   def unblockEvent(): Unit = js.native
   
-  def updateItem(id: String, data: js.Any): Unit = js.native
-  def updateItem(id: Double, data: js.Any): Unit = js.native
+  def updateItem(id: String, data: Any): Unit = js.native
+  def updateItem(id: Double, data: Any): Unit = js.native
   
-  var waitData: js.Promise[js.Any] = js.native
+  var waitData: js.Promise[Any] = js.native
   
-  def waitSave(handler: WebixCallback): js.Promise[js.Any] = js.native
+  def waitSave(handler: WebixCallback): js.Promise[Any] = js.native
 }

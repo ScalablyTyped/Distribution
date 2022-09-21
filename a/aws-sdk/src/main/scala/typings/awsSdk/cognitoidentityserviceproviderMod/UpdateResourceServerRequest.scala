@@ -43,7 +43,7 @@ object UpdateResourceServerRequest {
     
     inline def setScopesUndefined: Self = StObject.set(x, "Scopes", js.undefined)
     
-    inline def setScopesVarargs(value: ResourceServerScopeType*): Self = StObject.set(x, "Scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: ResourceServerScopeType*): Self = StObject.set(x, "Scopes", js.Array(value*))
     
     inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }

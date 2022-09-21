@@ -13,8 +13,6 @@ trait Int64
      with _Arm64CallArgument
      with _ArmCallArgument
      with _MipsCallArgument
-     with _NativeArgumentValue
-     with _NativeReturnValue
      with _X86CallArgument {
   
   def add(v: String): Int64 = js.native

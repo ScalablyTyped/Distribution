@@ -12,7 +12,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Switchery")
   @js.native
-  class Switchery protected ()
+  open class Switchery protected ()
     extends StObject
        with typings.switchery.mod.Switchery {
     def this(node: Node) = this()

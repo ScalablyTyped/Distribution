@@ -39,7 +39,7 @@ object DescribeWorkspaceImagesRequest {
     
     inline def setImageIdsUndefined: Self = StObject.set(x, "ImageIds", js.undefined)
     
-    inline def setImageIdsVarargs(value: WorkspaceImageId*): Self = StObject.set(x, "ImageIds", js.Array(value :_*))
+    inline def setImageIdsVarargs(value: WorkspaceImageId*): Self = StObject.set(x, "ImageIds", js.Array(value*))
     
     inline def setImageType(value: ImageType): Self = StObject.set(x, "ImageType", value.asInstanceOf[js.Any])
     

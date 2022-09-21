@@ -1,5 +1,9 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`above-and-below`
+import typings.arcgisJsApi.arcgisJsApiStrings.`centered-on`
+import typings.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
+import typings.arcgisJsApi.arcgisJsApiStrings.extremes
 import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -18,6 +22,15 @@ trait univariateColorSizeCreateVisualVariablesParamsColorOptions
   var colorScheme: js.UndefOr[ColorScheme] = js.undefined
   
   /**
+    * Only applies to the `above-and-below` theme.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
+    */
+  var isContinuous: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Provides options for setting a title to a field when an expression is provided instead of a field name.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
@@ -27,9 +40,11 @@ trait univariateColorSizeCreateVisualVariablesParamsColorOptions
   /**
     * Determines which values will be emphasized in the continuous ramp and the map.
     *
+    * @default high-to-low
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
     */
-  var theme: js.UndefOr[String] = js.undefined
+  var theme: js.UndefOr[`high-to-low` | `above-and-below` | `centered-on` | extremes] = js.undefined
 }
 object univariateColorSizeCreateVisualVariablesParamsColorOptions {
   
@@ -48,11 +63,15 @@ object univariateColorSizeCreateVisualVariablesParamsColorOptions {
     
     inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
     
+    inline def setIsContinuous(value: Boolean): Self = StObject.set(x, "isContinuous", value.asInstanceOf[js.Any])
+    
+    inline def setIsContinuousUndefined: Self = StObject.set(x, "isContinuous", js.undefined)
+    
     inline def setLegendOptions(value: univariateColorSizeCreateVisualVariablesParamsColorOptionsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
     inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
-    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: `high-to-low` | `above-and-below` | `centered-on` | extremes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }

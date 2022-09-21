@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetRootNodeOptions extends StObject {
   
+  /* standard dom */
   var composed: js.UndefOr[scala.Boolean] = js.undefined
 }
 object GetRootNodeOptions {

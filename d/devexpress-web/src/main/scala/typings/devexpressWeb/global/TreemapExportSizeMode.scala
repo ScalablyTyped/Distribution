@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("TreemapExportSizeMode")
 @js.native
-class TreemapExportSizeMode ()
+open class TreemapExportSizeMode ()
   extends StObject
      with typings.devexpressWeb.TreemapExportSizeMode
 object TreemapExportSizeMode {

@@ -9,6 +9,9 @@ trait IamPolicyAnalysisQuery extends StObject {
   /** Optional. Specifies roles or permissions for analysis. This is optional. */
   var accessSelector: js.UndefOr[AccessSelector] = js.undefined
   
+  /** Optional. The hypothetical context for IAM conditions evaluation. */
+  var conditionContext: js.UndefOr[ConditionContext] = js.undefined
+  
   /** Optional. Specifies an identity for analysis. */
   var identitySelector: js.UndefOr[IdentitySelector] = js.undefined
   
@@ -38,6 +41,10 @@ object IamPolicyAnalysisQuery {
     inline def setAccessSelector(value: AccessSelector): Self = StObject.set(x, "accessSelector", value.asInstanceOf[js.Any])
     
     inline def setAccessSelectorUndefined: Self = StObject.set(x, "accessSelector", js.undefined)
+    
+    inline def setConditionContext(value: ConditionContext): Self = StObject.set(x, "conditionContext", value.asInstanceOf[js.Any])
+    
+    inline def setConditionContextUndefined: Self = StObject.set(x, "conditionContext", js.undefined)
     
     inline def setIdentitySelector(value: IdentitySelector): Self = StObject.set(x, "identitySelector", value.asInstanceOf[js.Any])
     

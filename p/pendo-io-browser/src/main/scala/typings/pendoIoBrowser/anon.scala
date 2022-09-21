@@ -47,11 +47,11 @@ object anon {
       
       inline def setAuto(value: js.Array[Guide]): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
-      inline def setAutoVarargs(value: Guide*): Self = StObject.set(x, "auto", js.Array(value :_*))
+      inline def setAutoVarargs(value: Guide*): Self = StObject.set(x, "auto", js.Array(value*))
       
       inline def setOverride(value: js.Array[Guide]): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       
-      inline def setOverrideVarargs(value: Guide*): Self = StObject.set(x, "override", js.Array(value :_*))
+      inline def setOverrideVarargs(value: Guide*): Self = StObject.set(x, "override", js.Array(value*))
     }
   }
   
@@ -65,20 +65,13 @@ object anon {
     
     var position: String
     
-    var variables: js.Any
+    var variables: Any
     
     var width: Double
   }
   object AutoHeight {
     
-    inline def apply(
-      autoHeight: Boolean,
-      css: String,
-      height: Double,
-      position: String,
-      variables: js.Any,
-      width: Double
-    ): AutoHeight = {
+    inline def apply(autoHeight: Boolean, css: String, height: Double, position: String, variables: Any, width: Double): AutoHeight = {
       val __obj = js.Dynamic.literal(autoHeight = autoHeight.asInstanceOf[js.Any], css = css.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutoHeight]
     }
@@ -93,7 +86,7 @@ object anon {
       
       inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      inline def setVariables(value: js.Any): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: Any): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
@@ -101,7 +94,7 @@ object anon {
   
   trait Badge extends StObject {
     
-    var badge: js.Any
+    var badge: Any
     
     var device: Desktop
     
@@ -114,7 +107,7 @@ object anon {
   }
   object Badge {
     
-    inline def apply(badge: js.Any, device: Desktop, launcher: Keywords, priority: Double, `type`: String): Badge = {
+    inline def apply(badge: Any, device: Desktop, launcher: Keywords, priority: Double, `type`: String): Badge = {
       val __obj = js.Dynamic.literal(badge = badge.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], launcher = launcher.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Badge]
@@ -122,7 +115,7 @@ object anon {
     
     extension [Self <: Badge](x: Self) {
       
-      inline def setBadge(value: js.Any): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: Any): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
       inline def setDevice(value: Desktop): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -199,20 +192,20 @@ object anon {
   
   trait Filters extends StObject {
     
-    var filters: js.Array[js.Any]
+    var filters: js.Array[Any]
   }
   object Filters {
     
-    inline def apply(filters: js.Array[js.Any]): Filters = {
+    inline def apply(filters: js.Array[Any]): Filters = {
       val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
       __obj.asInstanceOf[Filters]
     }
     
     extension [Self <: Filters](x: Self) {
       
-      inline def setFilters(value: js.Array[js.Any]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[Any]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      inline def setFiltersVarargs(value: js.Any*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: Any*): Self = StObject.set(x, "filters", js.Array(value*))
     }
   }
   
@@ -231,7 +224,7 @@ object anon {
       
       inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
       
-      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+      inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value*))
     }
   }
   

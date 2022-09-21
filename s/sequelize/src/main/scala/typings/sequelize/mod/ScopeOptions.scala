@@ -16,19 +16,19 @@ trait ScopeOptions extends StObject {
     * any arguments, or an array, where the first element is the name of the method, and consecutive elements
     * are arguments to that method. Pass null to remove all scopes, including the default.
     */
-  var method: String | js.Array[js.Any]
+  var method: String | js.Array[Any]
 }
 object ScopeOptions {
   
-  inline def apply(method: String | js.Array[js.Any]): ScopeOptions = {
+  inline def apply(method: String | js.Array[Any]): ScopeOptions = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopeOptions]
   }
   
   extension [Self <: ScopeOptions](x: Self) {
     
-    inline def setMethod(value: String | js.Array[js.Any]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String | js.Array[Any]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    inline def setMethodVarargs(value: js.Any*): Self = StObject.set(x, "method", js.Array(value :_*))
+    inline def setMethodVarargs(value: Any*): Self = StObject.set(x, "method", js.Array(value*))
   }
 }

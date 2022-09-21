@@ -4,7 +4,6 @@ import typings.reactNativeEasyUpgrade.anon.AllowedInMetered
 import typings.reactNativeEasyUpgrade.anon.HasNewVersion
 import typings.reactNativeEasyUpgrade.anon.PartialOptions
 import typings.reactNativeEasyUpgrade.anon.VERSIONCODE
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object mod {
   
   @JSImport("react-native-easy-upgrade", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with AppUpgrade {
     def this(options: PartialOptions) = this()
@@ -69,7 +68,7 @@ object mod {
   
   trait Options extends StObject {
     
-    def downloadApkEnd(path: String): js.Any
+    def downloadApkEnd(path: String): Any
     
     var downloadApkName: String
     
@@ -83,21 +82,21 @@ object mod {
     
     var iOSAppLookupUrl: String
     
-    def onError(err: Error): js.Any
+    def onError(err: js.Error): Any
     
     var shouldCheckApkHasDownloaded: Boolean
   }
   object Options {
     
     inline def apply(
-      downloadApkEnd: String => js.Any,
+      downloadApkEnd: String => Any,
       downloadApkName: String,
       downloadDescription: String,
       downloadDestDirectory: String,
       downloadTitle: String,
       iOSAppId: String,
       iOSAppLookupUrl: String,
-      onError: Error => js.Any,
+      onError: js.Error => Any,
       shouldCheckApkHasDownloaded: Boolean
     ): Options = {
       val __obj = js.Dynamic.literal(downloadApkEnd = js.Any.fromFunction1(downloadApkEnd), downloadApkName = downloadApkName.asInstanceOf[js.Any], downloadDescription = downloadDescription.asInstanceOf[js.Any], downloadDestDirectory = downloadDestDirectory.asInstanceOf[js.Any], downloadTitle = downloadTitle.asInstanceOf[js.Any], iOSAppId = iOSAppId.asInstanceOf[js.Any], iOSAppLookupUrl = iOSAppLookupUrl.asInstanceOf[js.Any], onError = js.Any.fromFunction1(onError), shouldCheckApkHasDownloaded = shouldCheckApkHasDownloaded.asInstanceOf[js.Any])
@@ -106,7 +105,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setDownloadApkEnd(value: String => js.Any): Self = StObject.set(x, "downloadApkEnd", js.Any.fromFunction1(value))
+      inline def setDownloadApkEnd(value: String => Any): Self = StObject.set(x, "downloadApkEnd", js.Any.fromFunction1(value))
       
       inline def setDownloadApkName(value: String): Self = StObject.set(x, "downloadApkName", value.asInstanceOf[js.Any])
       
@@ -120,7 +119,7 @@ object mod {
       
       inline def setIOSAppLookupUrl(value: String): Self = StObject.set(x, "iOSAppLookupUrl", value.asInstanceOf[js.Any])
       
-      inline def setOnError(value: Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: js.Error => Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setShouldCheckApkHasDownloaded(value: Boolean): Self = StObject.set(x, "shouldCheckApkHasDownloaded", value.asInstanceOf[js.Any])
     }

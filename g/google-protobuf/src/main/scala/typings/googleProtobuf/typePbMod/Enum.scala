@@ -7,14 +7,13 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.googleProtobuf.sourceContextPbMod.SourceContext
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/type_pb", "Enum")
 @js.native
-class Enum () extends Message {
+open class Enum () extends Message {
   
   def addEnumvalue(): EnumValue = js.native
   def addEnumvalue(value: Unit, index: Double): EnumValue = js.native
@@ -62,7 +61,7 @@ object Enum {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): Enum = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Enum]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): Enum = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Enum]
   
   inline def deserializeBinaryFromReader(message: Enum, reader: BinaryReader): Enum = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Enum]
   
@@ -109,13 +108,13 @@ object Enum {
       
       inline def setEnumvalueList(value: js.Array[typings.googleProtobuf.typePbMod.EnumValue.AsObject]): Self = StObject.set(x, "enumvalueList", value.asInstanceOf[js.Any])
       
-      inline def setEnumvalueListVarargs(value: typings.googleProtobuf.typePbMod.EnumValue.AsObject*): Self = StObject.set(x, "enumvalueList", js.Array(value :_*))
+      inline def setEnumvalueListVarargs(value: typings.googleProtobuf.typePbMod.EnumValue.AsObject*): Self = StObject.set(x, "enumvalueList", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setOptionsList(value: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject]): Self = StObject.set(x, "optionsList", value.asInstanceOf[js.Any])
       
-      inline def setOptionsListVarargs(value: typings.googleProtobuf.typePbMod.Option.AsObject*): Self = StObject.set(x, "optionsList", js.Array(value :_*))
+      inline def setOptionsListVarargs(value: typings.googleProtobuf.typePbMod.Option.AsObject*): Self = StObject.set(x, "optionsList", js.Array(value*))
       
       inline def setSourceContext(value: typings.googleProtobuf.sourceContextPbMod.SourceContext.AsObject): Self = StObject.set(x, "sourceContext", value.asInstanceOf[js.Any])
       

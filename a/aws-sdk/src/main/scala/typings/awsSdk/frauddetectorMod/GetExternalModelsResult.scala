@@ -29,7 +29,7 @@ object GetExternalModelsResult {
     
     inline def setExternalModelsUndefined: Self = StObject.set(x, "externalModels", js.undefined)
     
-    inline def setExternalModelsVarargs(value: ExternalModel*): Self = StObject.set(x, "externalModels", js.Array(value :_*))
+    inline def setExternalModelsVarargs(value: ExternalModel*): Self = StObject.set(x, "externalModels", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

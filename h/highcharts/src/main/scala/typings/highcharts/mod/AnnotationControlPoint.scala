@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("highcharts", "AnnotationControlPoint")
 @js.native
-class AnnotationControlPoint protected () extends StObject {
+open class AnnotationControlPoint protected () extends StObject {
   /**
     * A control point class which is a connection between controllable
     * transform methods and a user actions.

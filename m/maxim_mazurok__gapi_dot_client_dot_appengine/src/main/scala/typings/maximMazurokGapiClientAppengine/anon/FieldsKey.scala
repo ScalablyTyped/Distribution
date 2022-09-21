@@ -50,7 +50,7 @@ trait FieldsKey extends StObject {
   /** Part of `name`. See documentation of `appsId`. */
   var servicesId: String
   
-  /** Standard field mask for the set of fields to be updated. */
+  /** Required. Standard field mask for the set of fields to be updated. */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

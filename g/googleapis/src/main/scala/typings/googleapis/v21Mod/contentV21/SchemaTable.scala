@@ -7,24 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaTable extends StObject {
   
   /**
-    * Headers of the table&#39;s columns. Optional: if not set then the table
-    * has only one dimension.
+    * Headers of the table's columns. Optional: if not set then the table has only one dimension.
     */
   var columnHeaders: js.UndefOr[SchemaHeaders] = js.undefined
   
   /**
     * Name of the table. Required for subtables, ignored for the main table.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Headers of the table&#39;s rows. Required.
+    * Headers of the table's rows. Required.
     */
   var rowHeaders: js.UndefOr[SchemaHeaders] = js.undefined
   
   /**
-    * The list of rows that constitute the table. Must have the same length as
-    * rowHeaders. Required.
+    * The list of rows that constitute the table. Must have the same length as `rowHeaders`. Required.
     */
   var rows: js.UndefOr[js.Array[SchemaRow]] = js.undefined
 }
@@ -43,6 +41,8 @@ object SchemaTable {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setRowHeaders(value: SchemaHeaders): Self = StObject.set(x, "rowHeaders", value.asInstanceOf[js.Any])
@@ -53,6 +53,6 @@ object SchemaTable {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: SchemaRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: SchemaRow*): Self = StObject.set(x, "rows", js.Array(value*))
   }
 }

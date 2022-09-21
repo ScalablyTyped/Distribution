@@ -10,6 +10,8 @@ trait IndicesGetTemplateParams
   
   var flatSettings: js.UndefOr[Boolean] = js.undefined
   
+  var includeTypeName: js.UndefOr[Boolean] = js.undefined
+  
   var local: js.UndefOr[Boolean] = js.undefined
   
   var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
@@ -29,6 +31,10 @@ object IndicesGetTemplateParams {
     
     inline def setFlatSettingsUndefined: Self = StObject.set(x, "flatSettings", js.undefined)
     
+    inline def setIncludeTypeName(value: Boolean): Self = StObject.set(x, "includeTypeName", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeTypeNameUndefined: Self = StObject.set(x, "includeTypeName", js.undefined)
+    
     inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
@@ -41,6 +47,6 @@ object IndicesGetTemplateParams {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value*))
   }
 }

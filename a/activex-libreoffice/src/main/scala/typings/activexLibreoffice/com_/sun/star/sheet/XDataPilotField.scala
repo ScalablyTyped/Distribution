@@ -33,7 +33,7 @@ object XDataPilotField {
     Items: XIndexAccess,
     acquire: () => Unit,
     getItems: () => XIndexAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDataPilotField = {
     val __obj = js.Dynamic.literal(Items = Items.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getItems = js.Any.fromFunction0(getItems), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
